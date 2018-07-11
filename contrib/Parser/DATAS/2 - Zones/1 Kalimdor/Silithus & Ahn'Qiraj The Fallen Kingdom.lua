@@ -55,16 +55,30 @@ _.Zones =
 						["qg"] = 15194,	-- Hermit Ortell
 						["sourceQuests"] = { 8279 },	-- The Twilight Lexicon
 					}),
-					qg({13136, 11732, 11730, 11723, 11733, 11734, 11724, 11698, 11731, 11722, 11728, 11729, 11726},	-- Hive'Ashi Drone, Hive'Regal Spitfire, Hive'Regal Ambusher, Hive'Ashi Sandstalker, Hive'Regal Slavemaker, Hive'Regal Hive Lord, Hive'Ashi Swarmer, Hive'Ashi Stinger, Hive'Regal Burrower, Hive'Ashi Defender, Hive'Zora Reaver, Hive'Zora Hive Sister, Hive'Zora Tunneler
-						i(20461, {	-- Brann Bronzebeard's Lost Letter
-							q(8308, {	-- Brann Bronzebeard's Lost Letter
-								["groups"] = {
-									i(20723),	-- Brann's Trusty Pick
-								},
-								["description"] = "This quest may have been removed in 7.3.5 — if you get this quest, please let us know on Discord!",
-							}),
-						})
-					),
+					{
+						["qgs"] = {
+							13136,	-- Hive'Ashi Drone
+							11732,	-- Hive'Regal Spitfire
+							11730,	-- Hive'Regal Ambusher
+							11723,	-- Hive'Ashi Sandstalker
+							11733,	-- Hive'Regal Slavemaker
+							11734,	-- Hive'Regal Hive Lord
+							11724,	-- Hive'Ashi Swarmer
+							11698,	-- Hive'Ashi Stinger
+							11731,	-- Hive'Regal Burrower
+							11722,	-- Hive'Ashi Defender
+							11728,	-- Hive'Zora Reaver
+							11729,	-- Hive'Zora Hive Sister
+							11726,	-- Hive'Zora Tunneler
+						},
+						["groups"] = {
+							i(20723),	-- Brann's Trusty Pick
+						},
+						["itemID"] = 20461,	-- Brann Bronzebeard's Lost Letter
+						["questID"] = 8308,	-- Brann Bronzebeard's Lost Letter
+						["description"] = "This quest only appears to be available while on 'Dearest Natalia' or after having turned it in, but before picking up 'Breaking the Code' and 'Glyph Chasing.'  If you see it show up at any other point, please let us know on Discord!",
+						["sourceQuests"] = { 8304 },	-- Dearest Natalia
+					},
 					q(  8310, {	-- Breaking the Code
 						["groups"] = {
 						},

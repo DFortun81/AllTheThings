@@ -12,7 +12,7 @@ _.Achievements =
 						a(ach(5322)),	-- In Service of the Alliance (10)
 						a(ach(5268)),	-- In Service of the Alliance (1)
 					})),
-					a(ach(5324, {	-- In Service of the Horde (25)
+					h(ach(5324, {	-- In Service of the Horde (25)
 						h(ach(5323)),	-- In Service of the Horde (10)
 						h(ach(5269)),	-- In Service of the Horde (1)
 					})),
