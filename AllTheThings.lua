@@ -1723,17 +1723,19 @@ local function OpenMiniList(field, id, label)
 					
 					-- Check to see if this group already exists in the header
 					local found = false;
-					for i,g in ipairs(app.HolidayHeader.g) do
-						if g.achievementID == group.achievementID 
-							and g.u == group.u 
-							and g.races == group.races 
-							and g.classes == group.classes then
-							group = group.g[1];
-							app.HolidayHeader.progress = app.HolidayHeader.progress + (group.progress or 0);
-							app.HolidayHeader.total = app.HolidayHeader.total + (group.total or 0);
-							tinsert(g.g, group);
-							found = true;
-							break;
+					if group.g and #group.g > 0 then
+						for i,g in ipairs(app.HolidayHeader.g) do
+							if g.achievementID == group.achievementID 
+								and g.u == group.u 
+								and g.races == group.races 
+								and g.classes == group.classes then
+								group = group.g[1];
+								app.HolidayHeader.progress = app.HolidayHeader.progress + (group.progress or 0);
+								app.HolidayHeader.total = app.HolidayHeader.total + (group.total or 0);
+								tinsert(g.g, group);
+								found = true;
+								break;
+							end
 						end
 					end
 					
