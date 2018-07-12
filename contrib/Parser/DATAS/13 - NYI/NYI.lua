@@ -7,7 +7,6 @@ _.NeverImplemented =
 	un(1, i(22230)),	-- Frightmaw Hide (Cloak)
 	un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
 	un(1, i(54655)),	-- Stormshroud Armor (Leather)
-----
 	un(1, i(138489)), 	-- Kargath's Sacrified Hands
 	un(1, i(77588)),	-- Replica High Warlord's Quickblade
 	un(1, i(77586)),	-- Replica High Warlord's Spellblade
@@ -17,62 +16,62 @@ _.NeverImplemented =
 	un(1, i(32190)),	-- Chancellor's Spellblade
 	un(1, i(32183)),	-- Chancellor's Maul
 	un(1, i(77587)),	-- Replica High Warlord's Destroyer
-	i(129738), -- Verus
-	i(147204), -- Black Apron - TEST
-	i(23388), -- Tranquillen Tabard
-	i(49086), -- Relentless Gladiator's Tabard [Elite Rating]
-	i(157650), -- Tracker's Spear
-	i(157648), -- Oakenstaff Protector
-	i(157620), -- Halberd of Ferocity
-	i(150613), -- Survivalist's Hunting Spear
-	i(150611), -- Guardian's Oaken Spear
-	i(150584), -- Pike of Feral Rage
-	i(141611), -- Fel Barbed Spear [This version wasn't added]
-	i(140716), -- Guardian's Oaken Spear
-	i(140689), -- Pike of Feral Rage
-	i(129899), -- The Eagle Spear
-	i(119408), -- Foereaver Polearm [This version wasn't added]
-	i(115297), -- Spectral Polearm
-	i(32184), -- Chancellor's Painsaw
-	i(7188), --  Stormwind Guard Shield [This is used by NPC's]
-	i(18303), -- Nimble Buckler
-	i(18342), -- Quel'dorei Guard [NPC Shield I believe]
-	i(20502), -- Ironbark Shield [NPC Shield]
+	un(1, i(129738)), -- Verus
+	un(1, i(147204)), -- Black Apron - TEST
+	un(1, i(23388)), -- Tranquillen Tabard
+	un(1, i(49086)), -- Relentless Gladiator's Tabard [Elite Rating]
+	un(1, i(157650)), -- Tracker's Spear
+	un(1, i(157648)), -- Oakenstaff Protector
+	un(1, i(157620)), -- Halberd of Ferocity
+	un(1, i(150613)), -- Survivalist's Hunting Spear
+	un(1, i(150611)), -- Guardian's Oaken Spear
+	un(1, i(150584)), -- Pike of Feral Rage
+	un(1, i(141611)), -- Fel Barbed Spear [This version wasn't added]
+	un(1, i(140716)), -- Guardian's Oaken Spear
+	un(1, i(140689)), -- Pike of Feral Rage
+	un(1, i(129899)), -- The Eagle Spear
+	un(1, i(119408)), -- Foereaver Polearm [This version wasn't added]
+	un(1, i(115297)), -- Spectral Polearm
+	un(1, i(32184)), -- Chancellor's Painsaw
+	un(1, i(7188)), --  Stormwind Guard Shield [This is used by NPC's]
+	un(1, i(18303)), -- Nimble Buckler
+	un(1, i(18342)), -- Quel'dorei Guard [NPC Shield I believe]
+	un(1, i(20502)), -- Ironbark Shield [NPC Shield]
 	un(1, i(110591)), -- Flintlocke's Blasthammer
-	i(151377), -- Arne Test Heirloom - Bloodied Arcanite Reaper
-	i(157751), -- Drape of New Beginnings
-	i(134693), -- Enveloping Cape
-	i(134699), -- Enveloping Drape
-	i(153829), -- Mountainsage Cloak of Destruction
-	i(134609), -- Scorching Cape
-	i(134617), -- Scorching Drape
-	i(150489), -- Shroud of Forgiveness
-	i(150714), -- Travel-Worn Shawl
-	i(134579), -- Vanguard Cape
-	i(134605), -- Vanguard Cloak
-	i(134013), -- Chef's Hat [Likely the cosmetic effect from when you use the toy]
+	un(1, i(151377)), -- Arne Test Heirloom - Bloodied Arcanite Reaper
+	un(1, i(157751)), -- Drape of New Beginnings
+	un(1, i(134693)), -- Enveloping Cape
+	un(1, i(134699)), -- Enveloping Drape
+	un(1, i(153829)), -- Mountainsage Cloak of Destruction
+	un(1, i(134609)), -- Scorching Cape
+	un(1, i(134617)), -- Scorching Drape
+	un(1, i(150489)), -- Shroud of Forgiveness
+	un(1, i(150714)), -- Travel-Worn Shawl
+	un(1, i(134579)), -- Vanguard Cape
+	un(1, i(134605)), -- Vanguard Cloak
+	un(1, i(134013)), -- Chef's Hat [Likely the cosmetic effect from when you use the toy]
 	-- LIKELY PART OF 110 TRIAL SET
-	i(153826), -- Mountainsage Cord
-	i(153821), -- Mountainsage Handwraps
-	i(153822), -- Mountainsage Hood
-	i(153823), -- Mountainsage Leggings
-	i(153824), -- Mountainsage Robe
-	i(153820), -- Mountainsage Sandals
-	i(153825), -- Mountainsage Shoulderpads
-	i(153827), -- Mountainsage Wristwraps
-	i(150651), -- Mountainsage Cord
-	i(150646), -- Mountainsage Handwraps
-	i(150647), -- Mountainsage Hood
-	i(150648), -- Mountainsage Leggings
-	i(150649), -- Mountainsage Robe
-	i(150645), -- Mountainsage Sandals
-	i(150650), -- Mountainsage Shoulderpads
-	i(150652), -- Mountainsage Wristwraps
+	un(1, i(153826)), -- Mountainsage Cord
+	un(1, i(153821)), -- Mountainsage Handwraps
+	un(1, i(153822)), -- Mountainsage Hood
+	un(1, i(153823)), -- Mountainsage Leggings
+	un(1, i(153824)), -- Mountainsage Robe
+	un(1, i(153820)), -- Mountainsage Sandals
+	un(1, i(153825)), -- Mountainsage Shoulderpads
+	un(1, i(153827)), -- Mountainsage Wristwraps
+	un(1, i(150651)), -- Mountainsage Cord
+	un(1, i(150646)), -- Mountainsage Handwraps
+	un(1, i(150647)), -- Mountainsage Hood
+	un(1, i(150648)), -- Mountainsage Leggings
+	un(1, i(150649)), -- Mountainsage Robe
+	un(1, i(150645)), -- Mountainsage Sandals
+	un(1, i(150650)), -- Mountainsage Shoulderpads
+	un(1, i(150652)), -- Mountainsage Wristwraps
 	
-	i(150715), -- Illidari Warglaive
-	i(142526), -- Glaive of the Fallen
-	i(134110), -- Hidden Helm
-	i(134111), -- Hidden Cloak
+	un(1, i(150715)), -- Illidari Warglaive
+	un(1, i(142526)), -- Glaive of the Fallen
+	un(1, i(134110)), -- Hidden Helm
+	un(1, i(134111)), -- Hidden Cloak
 	un(1, i(3738)),	-- Brewing Rod
 	un(1, i(1216)),	-- Frost Bracers
 	un(1, i(32482)),	-- Touch of Victory
@@ -190,31 +189,6 @@ _.NeverImplemented =
 	un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
 	un(1, i(17142)),	-- Shard of the Defiler
 	un(1, i(140011)),	-- Duskwatch Adjudicator's Pauldrons
---[[	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- 
-	un(1, i()),	-- --]]
-	
-	
-	
 	un(1, i(44972)), -- Alarming Clockbot (NOT IN USE)
 	un(1, i(24137)), -- PH Plate Ramparts Reward
 	un(1, i(33964)), -- Helm of the Stormcaller - Never Added
@@ -223,7 +197,7 @@ _.NeverImplemented =
 	un(1, i(8195)),	-- Nightscape Cloak										(Pattern never actually went live)
 	un(1, i(8388)),	-- Pattern: Nightscape Cloak							(Never added in Game)	
 	un(1, i(8627)),	-- Reins of the Nightsaber								(Never added in Game)
-	un(1, a(model(6447, i(8628)))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
+	un(1, a(model(6447, i(8628))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
 	un(1, a(model(6443, i(8630, {		-- Reins of the Bengal Tiger 			(Never added in Game)
 		{ ["mountID"]= 10790 }	
 	})))),							
@@ -338,7 +312,7 @@ _.NeverImplemented =
 	un(1, i(48924)),	-- Liadrin's Handguards of Conquest
 	un(1, i(48925)),	-- Liadrin's Legguards of Conquest
 	un(1, i(48926)),	-- Liadrin's Shoulderguards of Conquest
-	un(15, i(49278)), -- Goblin Rocket Pack
+	un(15, i(49278))), -- Goblin Rocket Pack
 	un(1, i(52548)),	-- Initiate's Tunic
 	un(1, i(53879)), 	-- Rugged Work Shirt
 	un(1, i(53880)), 	-- Super Girly Shirt
@@ -453,12 +427,18 @@ _.NeverImplemented =
 	i(52446),
 	i(62898),
 	
-i(112935, { -- Tusks of Mannoroth [Normal]
-	["groups"] = {
-	},
-	["description"] = "|CFFFF0000If you had this item drop in SoO normal please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well.",
+un(1, i(105393, { -- Tusks of Mannoroth [Heroic Warforged]
+	["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag 105393",
+})),
+un(1, i(104646, {  -- Tusks of Mannoroth [Mythic]
+	["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 104646",
+})),	
+un(1, i(105642, { -- Tusks of Mannoroth [Mythic Warforged]
+	["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
+})),
+i(112935, { -- Tusks of Mannoroth [Mythic Warforged]     ** LUCETIA NOTE: Do Not Remove or mark this item with any unobtainable tag.   Due to the way bonusID's work it kills the sourceID on normal set when it's also used  in Mythic**
+	["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 112935",
 }),
-	
 
 ------------------------------------------------------------
 --			R E T R I E V I N G 			D A T A 	  --

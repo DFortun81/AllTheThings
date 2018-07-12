@@ -17,6 +17,9 @@ i(139300, 1, 80594);	-- Finely-Tailored Green Holiday Hat
 i(139299, 1, 80593);	-- Finely-Tailored Red Holiday Hat
 i(41755, 1, 20156);		-- The Fire Extinguisher
 i(86559, 1, 44498);		-- Frying Pan
+i(68194, 1, 34777);		-- Oggleflint's Inspirer
+i(1958, 1, 510);		-- Petrified Shinbone
+
 
 ------------------------------
 -- S T E I N S   /   M U G S--
@@ -71,6 +74,14 @@ i(25978, 1, 10687);		-- Seth's Graphite Fishing Pole
 i(88535, 1, 45845);		-- Sharpened Tuskarr Spear
 i(120163, 1, 67918);	-- Thruk's Fishing Rod
 i(133755, 1, 76909);	-- Underlight Angler
+
+-------------------
+-- F I S H I E S --
+-------------------
+
+i(44703, 1, 21571);		-- Dark Herring
+i(19808, 1, 7794);		-- Rockhide Strongfish
+i(6360, 1,  2358);		-- Steelscale Crushfish
 
 --------------------------------------------
 -- H I D D E N      A P P E A R A N C E S --
