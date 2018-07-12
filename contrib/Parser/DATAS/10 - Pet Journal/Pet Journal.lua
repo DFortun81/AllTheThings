@@ -54,7 +54,7 @@ _.PetJournal =
 		p(198), 	-- Pengu
 		p(1755), 	-- Plump Jelly
 		p(1568), 	-- Puddle Terror
-		p(328), 	-- Purple Puffer
+		un(10, p(328)), 	-- Purple Puffer
 		p(1448), 	-- Sea Calf
 		p(340), 	-- Sea Pony
 		p(1754), 	-- Sewer-Pipe Jelly
@@ -101,7 +101,7 @@ _.PetJournal =
 		p(74),		-- Albino Snake
 		p(724),		-- Alpine Foxling
 		p(725),		-- Alpine Foxling Kit
-		p(1363),	-- Alterac Brew-Pup
+		un(35, p(1363)),	-- Alterac Brew-Pup
 		p(716),		-- Amethyst Spiderling
 		p(2122),	-- Antoran Bile Larva
 		p(558),		-- Arctic Fox Kit
@@ -114,7 +114,7 @@ _.PetJournal =
 		p(411),		-- Baby Ape
 		un(3, p(202)),	-- Baby Blizzard Bear
 		p(1884),	-- Baby Elderhorn
-		p(156),		-- Bananas
+		un(10, p(156)),		-- Bananas
 		p(2047),	-- Ban-Fu, Cub of Ban-Lu
 		p(2123),	-- Bile Larva
 		p(75),		-- Black Kingsnake
@@ -205,7 +205,7 @@ _.PetJournal =
 		p(1198),	-- Mountain Panda
 		p(286),		-- Mr. Grubbs
 		p(1594),	-- Mudback Calf
-		p(303),		-- Nightsaber Cub
+		un(10, p(303)),		-- Nightsaber Cub
 		p(1727),	-- Nursery Spider
 		p(236),		-- Obsidian Hatchling
 		p(43),		-- Orange Tabby Cat
@@ -383,7 +383,7 @@ _.PetJournal =
 		p(744),		-- Resilient Roach
 		p(424),		-- Roach
 		p(496),		-- Rusty Snail
-		p(665),		-- Sand Scarab
+		un(10, p(665)),		-- Sand Scarab
 		p(717),		-- Savory Beetle
 		p(512),		-- Scarab Hatchling
 		un(20, p(289)),		-- Scooter the Snail
@@ -480,10 +480,10 @@ _.PetJournal =
 		p(1429),	-- Autumnal Sproutling
 		p(2086), 	-- Blazehound
 		p(1517),	-- Blazing Cindercrawler
-		p(1248),	-- Blossoming Ancient
+		un(35, p(1248)),	-- Blossoming Ancient
 		p(2082), 	-- Bound Stream
 		p(1777),	-- Broot
-		p(1117),	-- Cinder Kitten
+		un(35, p(1117)),	-- Cinder Kitten
 		p(2087), 	-- Cinderweb Recluse
 		p(244),		-- Core Hound Pup
 		p(2091), 	-- Corrupted Blood
@@ -514,11 +514,11 @@ _.PetJournal =
 		p(1333),	-- Jademist Dancer
 		p(199),		-- Kirin Tor Familiar
 		p(423),		-- Lava Crab
-		p(297),		-- Lil' Ragnaros
+		un(35, p(297)),		-- Lil' Ragnaros
 		p(1177),	-- Living Sandling
 		p(337),		-- Lumpy
 		p(1955),	-- Magma Rageling
-		p(1451),	-- Molten Corgi
+		un(31, p(1451)),	-- Molten Corgi
 		p(1932),	-- Nightmare Lasher
 		p(1933),	-- Nightmare Treant
 		p(1432),	-- Nightshade Sproutling
@@ -583,7 +583,7 @@ _.PetJournal =
 		p(1572),	-- Brilliant Bloodfeather
 		p(325),		-- Brilliant Kaliri
 		p(1540),	-- Brilliant Spore
-		p(316),		-- Cenarion Hatchling
+		un(35, p(316)),		-- Cenarion Hatchling
 		p(1586),	-- Cerulean Moth
 		p(1303),	-- Chi-Chi, Hatchling of Chi-Ji
 		p(849),		-- Chi-Ji Kite
@@ -600,7 +600,7 @@ _.PetJournal =
 		p(1062),	-- Darkmoon Glowfly
 		p(1975),	-- Direbeak Hatchling
 		p(2118), 	-- Docile Skyfin
-		p(169),		-- Dragon Kite
+		un(10, p(169)),		-- Dragon Kite
 		p(537),		-- Dragonbone Hatchling
 		un(6, p(1386)),	-- Dread Hatchling
 		p(1588),	-- Dusty Sporewing
@@ -631,11 +631,11 @@ _.PetJournal =
 		p(68),		-- Great Horned Owl
 		p(50),		-- Green Wing Macaw
 		p(464),		-- Grey Moth
-		p(245),		-- Gryphon Hatchling
+		un(2, p(245)),		-- Gryphon Hatchling
 		un(7, p(311)),	-- Guardian Cub
 		p(67),		-- Hawk Owl
 		p(645),		-- Highlands Turkey
-		p(130),		-- Hippogryph Hatchling
+		un(35, p(130)),		-- Hippogryph Hatchling
 		p(1762),	-- Hog-Nosed Bat
 		h(p(332)),	-- Horde Balloon (Horde)
 		p(49),		-- Hyacinth Macaw
@@ -696,7 +696,7 @@ _.PetJournal =
 		p(167),		-- Tiny Sporebat
 		p(206),		-- Tirisfal Batling
 		p(525),		-- Turkey
-		p(241),		-- Tuskarr Kite
+		un(10, p(241)),		-- Tuskarr Kite
 		p(1464),	-- Twilight Wasp
 		p(1538),	-- Umbrafen Spore
 		p(1737),	-- Vale Flitter
@@ -734,7 +734,7 @@ _.PetJournal =
 		p(1229),	-- Fiendish Imp
 		p(514),		-- Flayer Youngling
 		p(2114),	-- Globe Yeti
-		p(333),		-- Gregarious Grell
+		un(10, p(333)),	-- Gregarious Grell
 		un(4, p(1602)),	-- Grommloc
 		p(1725),	-- Grumpling
 		un(4, p(228)),	-- Grunty
@@ -763,7 +763,7 @@ _.PetJournal =
 		un(3, p(217)),	-- Murkimus the Gladiator
 		un(4, p(107)),	-- Murky
 		p(1495),	-- Ore Eater
-		p(248),		-- Pandaren Monk
+		un(35, p(248)),		-- Pandaren Monk
 		p(122),		-- Peddlefeet
 		p(513),		-- Qiraji Guardling
 		p(2135), 	-- Rebellious Imp
@@ -788,7 +788,7 @@ _.PetJournal =
 		p(1160),	-- Arcane Eye
 		p(2131),	-- Arcane Gorger
 		p(1964),	-- Blood Boil
-		p(1466),	-- Brightpaw
+		un(35, p(1466)),	-- Brightpaw
 		p(1888),	-- Celestial Calf
 		p(1633),	-- Chaos Pup
 		p(1232),	-- Coilfang Stalker
@@ -808,7 +808,7 @@ _.PetJournal =
 		p(1700),	-- Enchanted Torch
 		p(1764),	-- Energized Manafiend
 		p(1773),	-- Erudite Manafiend
-		p(183),		-- Ethereal Soul-Trader
+		un(10, p(183)),		-- Ethereal Soul-Trader
 		p(1717),	-- Extinguished Eye
 		p(1719),	-- Eye of Inquisition
 		p(1576),	-- Eye of Observation
@@ -818,7 +818,7 @@ _.PetJournal =
 		p(342),		-- Festival Lantern
 		p(1245),	-- Filthling
 		p(2120), 	-- Grasping Manifestation
-		p(1174),	-- Gusting Grimoire
+		un(10, p(1174)),	-- Gusting Grimoire
 		p(1346),	-- Harmonious Porcupette
 		p(1718),	-- Hateful Eye
 		p(1926),	-- Hungering Claw
@@ -849,11 +849,11 @@ _.PetJournal =
 		p(1958),	-- Sanctum Cub
 		p(846),		-- Sapphire Cub
 		p(1601),	-- Servant of Demidos
-		p(2062),	-- Shadow
+		un(35, p(2062)),	-- Shadow
 		p(229),		-- Shimmering Wyrmling
 		un(3, p(1127)),	-- Spectral Cub
 		p(1185),	-- Spectral Porcupette
-		p(242),		-- Spectral Tiger Cub
+		un(10, p(242)),		-- Spectral Tiger Cub
 		p(1969),	-- Stardust
 		p(1478),	-- Syd the Squid
 		p(251),		-- Toxic Wasteling
@@ -890,7 +890,7 @@ _.PetJournal =
 		p(1961),	-- G0-R41-0N Ultratonk
 		p(1387),	-- Iron Starlette
 		p(1806),	-- Knockoff Blingtron
-		p(285),		-- Landro's Lil' XT
+		un(10, p(285)),		-- Landro's Lil' XT
 		p(1412),	-- Lifelike Mechanical Frostboar
 		p(95),		-- Lifelike Toad
 		p(1320),	-- Lil' Bling
@@ -913,7 +913,7 @@ _.PetJournal =
 		p(1636),	-- Race MiniZep
 		p(1256),	-- Rascal-Bot
 		p(471),		-- Robo-Chick
-		p(168),		-- Rocket Chicken
+		un(10, p(168)),	-- Rocket Chicken
 		p(1957),	-- Runeforged Servitor
 		p(1467),	-- Sky-Bo
 		p(1183),	-- Son of Animus
@@ -937,7 +937,7 @@ _.PetJournal =
 		p(321),		-- Creepy Crate
 		p(1521),	-- Cursed Birman
 		p(1967),	-- Drudge Ghoul
-		p(348),		-- Eye of the Legion
+		un(10, p(348)),	-- Eye of the Legion
 		un(6, p(346)),	-- Fetish Shaman
 		p(266),		-- Fossilized Hatchling
 		p(1625),	-- Fragment of Anger
@@ -957,8 +957,8 @@ _.PetJournal =
 		p(628),		-- Infected Fawn
 		p(627),		-- Infected Squirrel
 		p(453),		-- Infested Bear Cub
-		p(302),		-- Landro's Lichling
-		p(249),		-- Lil' K.T.
+		un(10, p(302)),	-- Landro's Lichling
+		un(10, p(249)),		-- Lil' K.T.
 		p(458),		-- Lost of Lordaeron
 		p(1351),	-- Macabre Marionette
 		p(1145),	-- Mr. Bigglesworth
