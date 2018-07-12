@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+-- TODO: (Oxlotus) Use 'bubbleDown' tech for each of the Honoring/Extinguishing achievements so it's not duplicated over and over.
 _.WorldEvents =
 {
 	n(-3, { -- Holiday
@@ -229,15 +230,7 @@ _.WorldEvents =
 											},
 											{
 												["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
-												["criteriaID"] = 11,		-- Stonetalon Mountains [Criteria]
-												["questID"] = 11856, 		-- Honor the Flame [Stonetalon Mountains]
-												["qg"] = 25940,				-- Stonetalon Flame Warden
-												["maps"] = { 81 }, 			-- Stonetalon Mountains
-												["races"] = ALLIANCE_ONLY,
-											},
-											{
-												["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
-												["criteriaID"] = 12,		-- Tanaris [Criteria]
+												["criteriaID"] = 11,		-- Tanaris [Criteria]
 												["questID"] = 11833, 		-- Honor the Flame [Tanaris]
 												["qg"] = 25916,				-- Tanaris Flame Warden
 												["maps"] = { 161 }, 		-- Tanaris
@@ -245,7 +238,7 @@ _.WorldEvents =
 											},
 											{
 												["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
-												["criteriaID"] = 13,		-- Teldrassil [Criteria]
+												["criteriaID"] = 12,		-- Teldrassil [Criteria]
 												["questID"] = 11824, 		-- Honor the Flame [Teldrassil]
 												["qg"] = 25906,				-- The Teldrassil Flame Warden
 												["maps"] = { 41 }, 			-- Teldrassil
@@ -253,7 +246,7 @@ _.WorldEvents =
 											},
 											{
 												["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
-												["criteriaID"] = 14,		-- Un'goro Crater [Criteria]
+												["criteriaID"] = 13,		-- Un'goro Crater [Criteria]
 												["questID"] = 28932, 		-- Honor the Flame [Un'goro Crater]
 												["qg"] = 51606,				-- Un'Goro Crater Flame Warden
 												["maps"] = { 201 }, 		-- Un'goro Crater
@@ -261,7 +254,7 @@ _.WorldEvents =
 											},
 											{
 												["achievementID"] = 1023,	-- Flame Warden of Kalimdor [Achievement]
-												["criteriaID"] = 15,		-- Winterspring [Criteria]
+												["criteriaID"] = 14,		-- Winterspring [Criteria]
 												["questID"] = 11834, 		-- Honor the Flame [Winterspring]
 												["qg"] = 25917,				-- Winterspring Flame Warden
 												["maps"] = { 281 }, 		-- Winterspring
