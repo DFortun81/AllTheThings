@@ -645,7 +645,7 @@ _.Instances =
 							i(11816), 	-- Angerforge's Battle Axe
 							i(11932), 	-- Guiding Stave of Wisdom
 							i(11817), 	-- Lord General's Sword
-							i(12557), 	-- Ebonsteel Spaulders
+							desc(i(12557), "Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!"), 	-- Ebonsteel Spaulders
 							i(11820), 	-- Royal Decorated Armor
 							i(11821), 	-- Warstrife Leggings
 							i(11810),	-- Force of Will
