@@ -4,7 +4,7 @@
 _.WorldEvents =
 {
 	n(-3, { -- Holiday
-		["groups"] = bubbleDown({["u"] = 26}, {	-- Example of how you can apply a field (or set of fields) to every field below it
+		["groups"] = bubbleDown({["u"] = 26,}, {
 			n(-58, { -- Hallow's End
 				n(-4, { -- Achievements
 					["groups"] = {
@@ -2079,7 +2079,7 @@ _.WorldEvents =
 									["u"] = 26,
 								}),
 							},
-							["description"] = "In order to summon |cFFFFD700Arachnis|r you will need to do the dailies in your Garrison.  Once you have gotten enough |cFFFFD700Spooky Supplies|r you can then purchase from Izzy Hollyfizzle the |cFFFFD700Creepy Crawlers|r and this will cause |cFFFFD700Arachnis|r to spawn.  This rare can be spawned year round." -- Stop changing this								
+							["description"] = "In order to summon |cFFFFD700Arachnis|r you will need to do the dailies in your Garrison. Once you have gotten enough |cFFFFD700Spooky Supplies|r you can then purchase from Izzy Hollyfizzle the |cFFFFD700Creepy Crawlers|r and this will cause |cFFFFD700Arachnis|r to spawn.  This rare can be spawned year round." -- Stop changing this								
 						}),
 					},
 					["maps"] = { 971, 973, 974, 975, 991, 976, 980, 981, 982, 976, 990 }, -- Lunarfall [971-991]; Frostwall [976-990]
@@ -2097,7 +2097,7 @@ _.WorldEvents =
 								})),
 							},
 							["races"] = HORDE_ONLY,
-							["maps"] = { 20 }, -- Tirisfal Glades [Lucetia Note: These vendors are here despite being in Undercity.  Subject to change in BfA with Undercity destruction]
+							["maps"] = { 20 }, -- Tirisfal Glades [Lucetia Note: These vendors are here despite being in Undercity. Subject to change in BfA with Undercity destruction]
 						}),
 						n(53728, { -- Dorothy <Candy & Toy Vendor>
 							["groups"] = {
@@ -2135,7 +2135,7 @@ _.WorldEvents =
 								})),
 							},
 							["races"] = HORDE_ONLY,
-							["maps"] = { 20 }, -- Tirisfal Glades [These vendors are here despite being in Undercity.  Subject to change in BfA with Undercity destruction]
+							["maps"] = { 20 }, -- Tirisfal Glades [These vendors are here despite being in Undercity. Subject to change in BfA with Undercity destruction]
 						}),
 					},
 					["u"] = 26, -- Hallow's End
