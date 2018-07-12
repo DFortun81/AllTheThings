@@ -56,7 +56,8 @@ _.Mounts =
 		i(142234),	-- Vicious War Bear (Alliance)*
 		i(142235),	-- Vicious War Bear (Horde)*
 		i(140350),	-- Vicious War Elekk*
-		i(152869),  -- Vicious War Fox*
+		i(152869),  -- Vicious War Fox (Horde)*
+		i(152870),	-- Vicious War Fox (Alliance)*
 		i(124540),	-- Vicious War Kodo*
 		i(142237),	-- Vicious War Lion*
 		i(124089),	-- Vicious War Mechanostrider*

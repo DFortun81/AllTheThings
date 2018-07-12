@@ -2560,6 +2560,11 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 							i(140353),	-- Vicious Gilnean Warhorse
 							i(142234),	-- Vicious War Bear
 							i(140350),	-- Vicious War Elekk
+							i(152870, {	-- Vicious War Fox
+								["groups"] = {
+								},
+								["mountID"] = 242896, -- Vicious War Fox
+							}),
 							i(142237),	-- Vicious War Lion
 							i(124089),	-- Vicious War Mechanostrider
 							i(116777),	-- Vicious War Ram
