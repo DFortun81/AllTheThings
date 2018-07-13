@@ -118,12 +118,13 @@ _.Zones =
 						},
 						["sourceQuests"] = {13890},
 					})),
-					i(16408, { -- Befouled Water Glove
-						["groups"] = {
-							qh(1918), -- The Befouled Element
-						},
-						["qg"] = 12759, -- Tideress
-					}),
+					{
+						["qg"] = 12759,	-- Tideress
+						["races"] = HORDE_ONLY,
+						["itemID"] = 16408,	-- Befouled Water Globe
+						["questID"] = 1918,	-- The Befouled Element
+						["sourceQuests"] = { 25 },	-- Simmer Down Now
+					},
 					qg(12757, qh(  216)),	-- Between a Rock and a Thistlefur (No Prereq)
 					qdg(qg(34122, qh(26894))),	-- Blackfathom Deeps (No Prereq)
 					qdg(qg(3845, qa(26897))),	-- Blackfathom Deeps (No Prereq)

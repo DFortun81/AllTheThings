@@ -7,7 +7,7 @@ _.Zones =
 		m(281, {	-- Winterspring
 			["groups"] = {			
 				n( -3, {	-- Holidays										
-					n(-47, {     -- Lunar Festival
+					n(-47, {    	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
 								q(8726, {	-- Brightspear the Elder			
@@ -34,55 +34,55 @@ _.Zones =
 								}),
 							}),
 						},
-						["achievementID"] = 913, -- To Honor One's Elders
+						["achievementID"] = 913,	-- To Honor One's Elders
 						["u"] = 17,
 					}),
 --[[					
-					n(-50, {     -- Love is in the Air
+					n(-50, {    	-- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1693,    -- Fool For Love
+						["achievementID"] = 1693,   	-- Fool For Love
 						["u"] = 18,
 					}),
 --]]					
-					n(-51, {     -- Noblegarden
+					n(-51, {    	-- Noblegarden
 						["groups"] = {
 							n(-17, { 	-- Quests
 								qg(20102, qa(13484)),	-- Spring Collectors 
 								qg(20102, qh(13483)),	-- Spring Gatherers
 							}),
 						},
-						["achievementID"] = 2798, -- Noble Gardener
+						["achievementID"] = 2798,	-- Noble Gardener
 						["u"] = 19,
 					}),				
-					n(-56, {     -- Brewfest
+					n(-56, {    	-- Brewfest
 						["groups"] = {
 							n(-17, { 	-- Quests
 								qg(20102, qh(11446)),	-- Brewfest!
 							}),
 						},
-						["achievementID"] = 1683, -- Brewmaster
+						["achievementID"] = 1683,	-- Brewmaster
 						["u"] = 24,
 					}),					
-					n(-60, {     -- Pilgrim's Bounty
+					n(-60, {    	-- Pilgrim's Bounty
 						["groups"]  = {
 							n(-17, { 	-- Quests
 								qg(20102, qh(14036)),	-- Pilgrim's Bounty
 								qg(20102, qa(14022)),	-- Pilgrim's Bounty
 							}),
 						},
-						["achievementID"] = 3478, -- Pilgrim
+						["achievementID"] = 3478,	-- Pilgrim
 						["u"] = 28,
 					}),
 --[[					
-					n(-61, {     -- Feast of Winter Veil
+					n(-61, {    	-- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests
 							}),
 						},
-						["achievementID"] = 1691, -- Merrymaker
+						["achievementID"] = 1691,	-- Merrymaker
 						["u"] = 29,
 					}),	
 --]]					
@@ -91,11 +91,11 @@ _.Zones =
 					p(487),  	-- Alpine Chipmunk
 					p(441),  	-- Alpine Hare
 					p(1163), 	-- Anodized Robo Cub
-					desc(p(634), "Can most commonly be found in Frostwhisper Gorge in southern Winterspring."), -- Crystal Spider
+					desc(p(634), "Can most commonly be found in Frostwhisper Gorge in southern Winterspring."),	-- Crystal Spider
 					p(633),  	-- Mountain Skunk
 					p(472),  	-- Rabid Nut Varmint 5000
 					p(471),  	-- Robo-Chick
-					desc(p(69), "Starts spawning December 21st. Stops spawning March 20th"), -- Snowy Owl
+					desc(p(69), "Starts spawning December 21st. Stops spawning March 20th"),	-- Snowy Owl
 					qg(66466, q(31897, {	-- Grand Master Trixxy (NON-DAILY version)
 						i(89125),	-- Sack of Pet Supplies
 					})),
@@ -106,213 +106,383 @@ _.Zones =
 					qg(66466, qa(31975)),	-- The Returning Champion
 				}),
 				n(-17, {	-- Quests
-					qg(49537, q(28782, { -- A Bird of Legend (CHECK QG in game)
-						i(67168),
-						i(67185),
-						i(67202),
-						i(67225),
-						i(67218),
-					})),
---[[					
-					qg(51677, qa(29035)),	-- A Cub's Cravings (MOUNT daily - Winterspring Frostsaber)
-					qg(49436, q(28719)),	-- A Little Gamy
-					qg(49436, q(28637)),	-- A Taste for Bear
-					qg(10305, q(8798)),	-- A Yeti of Your Own
-					qg(10929, q(28837)),	-- Altered Beasts
-					qg(10305, q(28629)),	-- Are We There, Yeti?
---]]					
-					qg(48722, q(28614, { -- Bearzerker
-						i(67166),
-						i(67183),
-						i(67200),
-					})),
-					qp164(qg(11184, q(44952, {	-- Blackrock Depths: Jewel of the Depths (DUNGEON quest in addition to PROFESSION)
-						i(142357, {	-- Plans: Dawn's Edge
-							i(12774),	-- Dawn's Edge
+					ach(4940, {	-- Winterspring Quests
+						crit(1, {	-- The Winterfall Furbolg
+							q(28522, {	-- Winterfall Activity
+								["g"] = {
+									i(21318),	-- Earth Warder's Gloves
+									i(21319),	-- Gloves of the Pathfinder
+									i(21320),	-- Vest of the Den Watcher
+									i(21322),	-- Ursa's Embrace
+								},
+								["qg"] = 11556,	-- Salfa
+							}),
+							q(28464, {	-- Falling to Corruption
+								["qg"] = 9298,	-- Donova Snowden
+							}),
+							o(207179, {	-- Winterfall Cauldron	
+								q(28467, {	-- Mystery Goo
+									["sourceQuests"] = { 28464 },	-- Falling to Corruption
+								}),
+							}),
+							q(28469, {	-- Winterfall Runners
+								["qg"] = 9298,	-- Donova Snowden
+								["sourceQuests"] = { 28467 },	-- Mystery Goo
+							}),
+							q(28470, {	-- High Chief Winterfall
+								["g"] = {
+									i(67210),	-- Wand of Sudden Changes
+									i(67159),	-- Furbolg Fur Bracers
+									i(67176),	-- Princess Zoe's Old Hunting Gloves
+									i(67193),	-- Ambush Armguards
+								},
+								["qg"] = 9298,	-- Donova Snowden
+								["sourceQuests"] = { 28469 },	-- Winterfall Runners
+							}),
+							q(28530, {	-- Scalding Signs
+								["qg"] = 9298,	-- Donova Snowden
+								["sourceQuests"] = { 28467 },	-- Mystery Goo
+							}),
+							q(28460, {	-- Threat of the Winterfall
+								["g"] = {
+									i(67158),	-- Donova's Fuzzy Robe
+									i(67175),	-- Hot Spring Sandals
+									i(67192),	-- Snowden Legwraps
+									i(67209),	-- Winterfall Belt
+								},
+								["qg"] = 9598,	-- Donova Snowden
+								["sourceQuests"] = { 28524, 28544, 28545, 28768 },	-- Delivery for Donova, Hero's Call: Winterspring!, Warchief's Command: Winterspring!, or Winterspring!
+							}),
+							{
+								["qg"] = 10738,	-- High Chief Winterfall
+								["itemID"] = 12842,	-- Crudely-Written Log
+								["questID"] = 28471,	-- The Final Piece
+							},
+							q(28472, {	-- Words of the High Chief (awarded criteria)
+								["qg"] = 9298,	-- Donova Snowden
+								["isBreadcrumb"] = true,	-- for "The Ruins of Kel'Theril
+								["sourceQuests"] = { 28471 },	-- The Final Piece
+							}),
 						}),
-					}))),
---[[					
-					qg(11118, qh(28858)),	-- Blasted Lands: The Other Side of the World
-					qg(11118, qa(28857)),	-- Blasted Lands: The Other Side of the World
-					qg(51677, qa(29037)),	-- Borrowing' From the Winterfall (MOUNT daily - Winterspring Frostsaber)
-					qg(48965, q(28618)),	-- Boulder Delivery
---					q(28516),	-- Centuries of Suffering (NEVER IMPLEMENTED or LEGACY)
-					qg(50263, q(28830)),	-- Chips off the Old Block
---]]					
-					qg(48965, q(28625, { -- Chop Chop
-						i(67163),
-						i(67180),
-						i(67197),
-					})),
---					qg(51677, qa(29040)),	-- Cub's First Toy (MOUNT daily - Winterspring Frostsaber)
-					qg(50263, q(28831, { -- Damn You, Frostilicus
-						i(67172),
-						i(67189),
-						i(67206),
-						i(67221),
-					})),
---[[					
-					qg(11556, q(28524)),	-- Delivery for Donova
-					qg(48659, q(28535)),	-- Descendants of the High Elves
-					qg(48658, q(28534)),	-- Descendants of the Highborne
---]]					
-					qg(10307, q(28540, { -- Doin' De E'ko Magic
-						i(67162),
-						i(67179),
-						i(67212),
-						i(67196),
-					})),
---[[					
-					qg(10305, q(28630)),	-- Echo Three
-					qg(11079, q(28676)),	-- Exterminators at Work
-					qg(9298, q(28464)),	-- Falling to Corruption
-					qg(48965, q(28632)),	-- Fresh From The Hills
-					qg(49396, q(28640)),	-- Fresh Frostsabers
-					qg(10618, qa( 4970)),	-- Frostsaber Provisions
-					qg(10618, qa(29032)),	-- Get Them While They're Young
-					qg(11191, q(28609)),	-- Hammer Time
---]]					
-					qg(9298, q(28470, { -- High Chief Winterfall
-						i(67210),
-						i(67159),
-						i(67176),
-						i(67193),
-					})),
---					qg(51677, qa(29038)),	-- Hunting Practice (MOUNT daily - Winterspring Frostsaber)
-					qg(48965, q(28628, { -- Ice Delivery
-						i(67181),
-						i(67164),
-						i(67214),
-						i(67198),
-					})),
---[[					
-					qg(10920, q(28537)),	-- In Pursuit of Shades
-					qg(11192, q(28624)),	-- Kilram's Boast
-					qg(48659, q(28518)),	-- Legacy of the High Elves
-					qg(10929, q(28839)),	-- Magic Prehistoric
-					qg(16416, q(9266)),	-- Making Amends
-					qg(11556, q(28523)),	-- More Beads for Salfa
-					o(207179, {	-- Winterfall Cauldron	
-						q(28467),	-- Mystery Goo
-					}),
-					qg(11079, q(28701)),	-- Out of Harm's Way
---]]					
-					qg(48660, q(28519, { -- Pain of the Blood Elves
-						i(67161),
-						i(67195),
-						i(67178),
-						i(67211),
-						i(157021),	-- Staff of Haunted Memory 
-					})),
---					qg(49396, q(28641)),	-- Pride of the Dinner Table
-					qg(48658, q(28513, { -- Pride of the Highborne
-						i(67160),
-					})),
---[[					
-					qg(10618, qa( 5981)),	-- Rampaging Giants
-					qg(50263, q(28829)),	-- Razor Beak and Antlers Pointy
-					qg(48965, q(28610)),	-- Rubble Trouble
-					qg(9298, q(28530)),	-- Scalding Signs
-					qg(49537, q(28745)),	-- Screechy Keen
-					qg(11193, q(28627)),	-- Seril's Boast
---]]					
-					qg(49396, q(28742, { -- Shy-Rotam
-						i(67169),
-						i(67186),
-						i(67219),
-						i(67203),
-						i(67226),
-					})),
---[[					
-					qg(49399, q(28707)),	-- Spray it Again
-					qg(49407, q(28706)),	-- Spray it Forward
---]]					
-					qg(49400, q(28710, { -- Spray it One More Time
-						i(67171),
-						i(67188),
-					})),
---[[					
-					qg(48965, q(28674)),	-- Starfall Village
-					qg(49407, q(28703)),	-- Step Into My Barrow
---					q(28656),	-- Strange Life Forces (CHECK IN GAME -- not sure if you need to specifically kill furbolgs for Juju Frenzy debuff or if you can get any E'ko buff to trigger this quest)
-					qg(10929, q(28841)),	-- The Arcane Storm Within
-					qg(48660, q(28536)),	-- The Curse of Zin-Malor
-					n(10738, {	-- High Chief Winterfall
-						i(12842, {	-- Crudely-Written Log
-							q(28471),	-- The Final Piece
+						crit(2, {	-- Ruins of Kel'theril
+							q(28479, {	-- The Ruins of Kel'Theril
+								["qg"] = 10920,	-- Kelek Skykeeper
+								["description"] = "This quest can be obtained in Felwood with no prerequisite quests.",
+								["sourceQuests"] = { 28472 },	-- Words of the High Chief
+							}),
+							q(28513, {	-- Pride of the Highborne
+								["g"] = {
+									i(67177),	-- Amulet of the Kaldorei Spirit
+									i(67160),	-- Dagger of Suffering
+									i(67194),	-- Zin-Malor Ring
+								},
+								["qg"] = 48658,	-- Kaldorei Spirit
+								["sourceQuests"] = { 28479 },	-- The Ruins of Kel'Theril
+							}),
+							q(28534, {	-- Descendants of the Highborne
+								["qg"] = 48658,	-- Kaldorei Spirit
+								["sourceQuests"] = { 28513 },	-- Pride of Highborne
+							}),
+							q(28518, {	-- Legacy of the High Elves
+								["qg"] = 48659,	-- Quel'dorei Spirit
+								["sourceQuests"] = { 28534 },	-- Descendants of the Highborne
+							}),
+							q(28535, {	-- Descendants of the High Elves
+								["qg"] = 48659,	-- Quel'dorei Spirit
+								["sourceQuests"] = { 28518 },	-- Legacy of the High Elves
+							}),
+							q(28519, {	-- Pain of the Blood Elves
+								["g"] = {
+									i(67161),	-- Dagger of Wretched Spectres
+									i(67195),	-- Mace of the Sin'dorei Spirit
+									i(67178),	-- Blade of Wretched Spirits
+									i(157021),	-- Staff of Haunted Memory 
+									i(67211),	-- Orb of Kel'theril
+								},
+								["qg"] = 48660,	-- Sin'dorei Spirit
+								["sourceQuests"] = { 28535 },	-- Descendants of the High Elves
+							}),
+							q(28536, {	-- The Curse of Zin-Malor
+								["qg"] = 48660,	-- Sin'dorei Spirit
+								["sourceQuests"] = { 28519 },	-- Pain of the Blood Elves
+							}),
+							q(28537, {	-- In Pursuit of Shades
+								["qg"] = 10920,	-- Kelek Skykeeper
+								["sourceQuests"] = { 28536 },	-- The Curse of Zin-Malor
+							}),
+							q(28848, {	-- Trailing the Spiritspeaker
+								["qg"] = 10920,	-- Kelek Skykeeper
+								["sourceQuests"] = { 28537 },	-- In Pursuit of Shades
+							}),
+						}),
+						crit(3, {	-- Superior Weapons
+							q(28609, {	-- Hammer Time
+								["qg"] = 11191,	-- Lilith the Lithe
+							}),
+							q(28610, {	-- Rubble Trouble
+								["qg"] = 48965,	-- Deez Rocksnitch
+								["sourceQuests"] = { 28609 },	-- Hammer Time
+							}),
+							q(28618, {	-- Boulder Delivery
+								["qg"] = 48965,	-- Deez Rocksnitch
+								["sourceQuests"] = { 28610 },	-- Rubble Trouble
+							}),
+							q(28624, {	-- Kilram's Boast
+								["qg"] = 11192,	-- Kilram
+								["sourceQuests"] = { 28618 },	-- Boulder Delivery
+							}),
+							q(28625, {	-- Chop Chop
+								["g"] = {
+									i(67213),	-- Frostleaf Band
+									i(67163),	-- Chop Chop Boots
+									i(67180),	-- Treant-Bark Shoes
+									i(67197),	-- Rocksnitch Helmet
+								},
+								["qg"] = 48965,	-- Deez Rocksnitch
+								["sourceQuests"] = { 28624 },	-- Kilram's Boast
+							}),
+							q(28626, {	-- Tree Delivery
+								["qg"] = 48965,	-- Deez Rocksnitch
+								["sourceQuests"] = { 28625 },	-- Chop Chop
+							}),
+							q(28627, {	-- Seril's Boast
+								["qg"] = 11193,	-- Seril Scourgebane
+								["sourceQuests"] = { 28626 },	-- Tree Delivery
+							}),
+							q(28632, {	-- Fresh From The Hills
+								["qg"] = 48965,	-- Deez Rocksnitch
+								["sourceQuests"] = { 28627 },	-- Seril's Boast
+							}),
+							q(28628, {	-- Ice Delivery (awarded criteria)
+								["g"] = {
+									i(67181),	-- Kilram's Killer
+									i(67164),	-- Lilith the Lithe's Little Hammer
+									i(67214),	-- Scourgebane's Slicer
+									i(67198),	-- Scourgebane's Sword
+								},
+								["qg"] = 48965,	-- Deez Rocksnitch
+								["sourceQuests"] = { 28632 },	-- Fresh From the Hills
+							}),
+						}),
+						crit(4, {	-- Spray It and Slay It
+							q(28674, {	-- Starfall Village
+								["qg"] = 48965,	-- Deez Rocksnitch
+								["isBreadcrumb"] = true,	-- for Exterminators at Work & Out of Harm's Way
+								["sourceQuests"] = { 28628, 28722 },	-- Ice Delivery & Yetiphobia
+							}),
+							q(28676, {	-- Exterminators at Work
+								["qg"] = 11079,	-- Wynd Nightchaser
+								["sourceQuests"] = { 28674 },	-- Starfall Village
+							}),
+							q(28701, {	-- Out of Harm's Way
+								["qg"] = 11079,	-- Wynd Nightchaser
+								["sourceQuests"] = { 28674 },	-- Starfall Village
+							}),
+							q(28703, {	-- Step Into My Barrow
+								["qg"] = 49407,	-- Rinno Curtainfire
+							}),
+							q(28706, {	-- Spray it Forward
+								["qg"] = 49407,	-- Rinno Curtainfire
+							}),
+							q(28707, {	-- Spray it Again
+								["qg"] = 49399,	-- 
+								["sourceQuests"] = { 28706 },	-- Spray it Forward
+							}),
+							q(28710, {	-- Spray it One More Time
+								["g"] = {
+									i(67205),	-- Ring of Pesticide
+									i(67171),	-- Curtainfire Mantle
+									i(67188),	-- Fumigator's Legguards
+								},
+								["qg"] = 49400,	-- Marcy Curtainfire
+								["sourceQuests"] = { 28707 },	-- Spray it Again
+							}),
+						}),
+						crit(5, {	-- The Hub of Goodgrub's Grub
+						}),
+						crit(6, {	-- Yeti Surprise!
+							q(28630, {	-- Echo Three
+								["qg"] = 10305,	-- Umi Rumplesnicker
+								["sourceQuests"] = { 28627 },	-- Seril's Boast
+							}),
+							q(28629, {	-- Are We There, Yeti?
+								["qg"] = 10305,	-- Umi Rumplesnicker
+								["sourceQuests"] = { 28627 },	-- Seril's Boast
+							}),
+							q(28631, {	-- The Perfect Horns
+								["qg"] = 10305,	-- Umi Rumplesnicker
+								["sourceQuests"] = { 28627 },	-- Seril's Boast
+							}),
+							q(28722, {	-- Yetiphobia
+								["g"] = {
+									i(67223),	-- Umi's Masterful Shooter
+									i(67165),	-- Everlook Snow Shoes
+									i(67182),	-- Helm of Yetiphobia
+									i(67199),	-- Prankster's Fingers
+									i(67215),	-- Amusing Pauldrons
+									i(15778, {	-- Mechanical Yeti
+										["f"] = 55,	-- Consumables
+									}),
+								},
+								["qg"] = 10305,	-- Umi Rumplesnicker
+								["sourceQuests"] = { 28629, 28630, 28631 },	-- Are We There, Yeti?, Echo Three, & The Perfect Horns
+							}),
+						}),
+						crit(7, {	-- Jadrag's Fate
+						}),
+						crit(8, {	-- Umbranse's Deliverance
+							q(28847, {	-- The Pursuit of Umbranse
+								["qg"] = 50366,	-- Nymn
+								["sourceQuests"] = { 28537, 28722 },	-- In Pursuit of Shades & Yetiphobia
+							}),
 						}),
 					}),
-					qg(10929, q(28838)),	-- The Owlbeasts' Defense
-					qg(49537, q(28638)),	-- The Owls Have It
-					qg(10305, q(28631)),	-- The Perfect Horns
-					qg(50366, q(28847)),	-- The Pursuit of Umbranse
-					qg(11555, q(8481)),	-- The Root of All Evil					
-					qg(10920, q(28479)),	-- The Ruins of Kel'Theril
-					qg(11118, q(28856)),	-- The Sands of Silithus
---]]					
-					qg(10618, qa(29034, { -- They Grow Up So Fast (MOUNT final quest - Winterspring Frostsaber)
-						i(13086), -- Reins of the Winterspring Frostsaber
-					})),
-					qg(9298, q(28460, { -- Threat of the Winterfall
-						i(67158),
-						i(67175),
-						i(67192),
-						i(67209),
-					})),
---[[					
-					qg(10920, q(28848)),	-- Trailing the Spiritspeaker
-					qg(48965, q(28626)),	-- Tree Delivery
-					qg(48723, q(28615)),	-- Turning the Earth
---]]					
-					qg(10929, q(28842, { -- Umbranse's Deliverance
-						i(67222),
-						i(67174),
-						i(67191),
-						i(67208),
-					})),
-					qg(49436, q(28639, { -- Ursius
-						i(67167),
-						i(67184),
-						i(67217),
-						i(67201),
-						i(67224),
-					})),
---					qg(49402, q(28718)),	-- Where There's Smoke, There's Delicious Meat
-					qg(11556, q(28522, { -- Winterfall Activity
-						i(21318),
-						i(21319),
-						i(21320),
-						i(21322),
-					})),
---					q(28462),	-- Winterfall Firewater (LEGACY - removed with Cata)
+					n(-168, {	-- Other Quests
+						qa(28857, {	-- Blasted Lands: The Other Side of the World
+							["qg"] = 11118,	-- Innkeeper Vizzie
+							["isBreadcrumb"] = true,	-- for "Minor Distractions"
+						}),
+						qh(28858, {	-- Blasted Lands: The Other Side of the World
+							["qg"] = 11118,	-- Innkeeper Vizzie
+							["isBreadcrumb"] = true,	-- for "Futile Pride"
+						}),
+						q(28524, {	-- Delivery for Donova
+							["qg"] = 11556,	-- Salfa
+							["isBreadcrumb"] = true,	-- for "Threat of the Winterfall"
+						}),
+						q(28856, {	-- The Sands of Silithus
+							["qg"] = 11118,	-- Innkeeper Vizzie
+							["isBreadcrumb"] = true,	-- for "Securing the Supply Lines"
+						}),
+					}),
+					ach(5443, {	-- E'ko Madness
+						crit(1),	-- Winterspring Furbolg
+						crit(2),	-- Wildkin
+						crit(3),	-- Shardtooth Bears
+						crit(4),	-- Frostmaul Giants
+						crit(5),	-- Frostsabers
+						crit(6),	-- Chillwind Chimaera
+						crit(7),	-- Ice Thistle Yeti
+						n(-17, {	-- Quests
+							q(28540, {	-- Doin' De E'ko Magic
+								["g"] = {
+									i(67162),	-- E'ko Gatherer's Belt
+									i(67179),	-- Heart Grippers
+									i(67212),	-- Bear Hunter's Belt
+									i(67196),	-- Witch Doctor's Spaulders
+								},
+								["qg"] = 10307,	-- Witch Doctor Mau'ari
+							}),
+							q(28656),	-- Strange Life Forces (CHECK IN GAME -- not sure if you need to specifically kill furbolgs for Juju Frenzy debuff or if you can get any E'ko buff to trigger this quest -- also not sure if there are prereqs)
+
+						}),
+					}),
+					faction(576, {	-- Timbermaw Hold
+						["g"] = {
+							qr(q(28523, {	-- More Beads for Salfa
+								["qg"] = 11556,	-- Salfa
+								["sourceQuests"] = { 28522 },	-- Winterfall Activity
+							})),
+						},
+						["collectible"] = false,
+					}),
+					
+					
+					
 --[[
-					qg(10618, qa( 5201)),	-- Winterfall Intrusion
-					qg(9298, q(28469)),	-- Winterfall Runners
---]]					
-					qg(10929, q(28840, { -- Winterwater
-						i(67173),
-						i(67190),
-						i(67207),
-					})),
---					qg(9298, q(28472)),	-- Words of the High Chief
-					qg(10305, q(28722, { -- Yetiphobia
-						i(67223),
-						i(67165),
-						i(67182),
-						i(67199),
-						i(67215),
-					})),
-					qg(49396, q(28828, { -- You Gotta Have Eggs
-						i(67220),
-						i(67170),
-						i(67187),
-						i(67204),
-					})),
+								["qg"] = ,	-- 
+								["sourceQuests"] = {  },	-- 
+							}),
+--]]
+					
+					
+					
+							qg(49537, q(28782, {	-- A Bird of Legend (CHECK QG in game)
+								i(67168),
+								i(67185),
+								i(67202),
+								i(67225),
+								i(67218),
+							})),
+							qg(51677, qa(29035)),	-- A Cub's Cravings (MOUNT daily - Winterspring Frostsaber)
+							qg(49436, q(28719)),	-- A Little Gamy
+							qg(49436, q(28637)),	-- A Taste for Bear
+							qg(10305, q(8798)),	-- A Yeti of Your Own
+							qg(10929, q(28837)),	-- Altered Beasts
+							qg(48722, q(28614, {	-- Bearzerker
+								i(67166),
+								i(67183),
+								i(67200),
+							})),
+							qp164(qg(11184, q(44952, {	-- Blackrock Depths: Jewel of the Depths (DUNGEON quest in addition to PROFESSION)
+								i(142357, {	-- Plans: Dawn's Edge
+									i(12774),	-- Dawn's Edge
+								}),
+							}))),
+							qg(51677, qa(29037)),	-- Borrowing' From the Winterfall (MOUNT daily - Winterspring Frostsaber)
+		--					q(28516),	-- Centuries of Suffering (NEVER IMPLEMENTED or LEGACY)
+							qg(50263, q(28830)),	-- Chips off the Old Block
+							qg(51677, qa(29040)),	-- Cub's First Toy (MOUNT daily - Winterspring Frostsaber)
+							qg(50263, q(28831, {	-- Damn You, Frostilicus
+								i(67172),
+								i(67189),
+								i(67206),
+								i(67221),
+							})),
+							qg(49396, q(28640)),	-- Fresh Frostsabers
+							qg(10618, qa( 4970)),	-- Frostsaber Provisions
+							qg(10618, qa(29032)),	-- Get Them While They're Young
+							qg(51677, qa(29038)),	-- Hunting Practice (MOUNT daily - Winterspring Frostsaber)
+							qg(10929, q(28839)),	-- Magic Prehistoric
+							qg(16416, q(9266)),	-- Making Amends
+							qg(49396, q(28641)),	-- Pride of the Dinner Table
+							qg(10618, qa( 5981)),	-- Rampaging Giants
+							qg(50263, q(28829)),	-- Razor Beak and Antlers Pointy
+							qg(49537, q(28745)),	-- Screechy Keen
+							qg(49396, q(28742, {	-- Shy-Rotam
+								i(67169),
+								i(67186),
+								i(67219),
+								i(67203),
+								i(67226),
+							})),
+							qg(10929, q(28841)),	-- The Arcane Storm Within
+							qg(10929, q(28838)),	-- The Owlbeasts' Defense
+							qg(49537, q(28638)),	-- The Owls Have It
+							qg(11555, q(8481)),	-- The Root of All Evil					
+							qg(10618, qa(29034, {	-- They Grow Up So Fast (MOUNT final quest - Winterspring Frostsaber)
+								i(13086),	-- Reins of the Winterspring Frostsaber
+							})),
+							qg(48723, q(28615)),	-- Turning the Earth
+							qg(10929, q(28842, {	-- Umbranse's Deliverance
+								i(67222),
+								i(67174),
+								i(67191),
+								i(67208),
+							})),
+							qg(49436, q(28639, {	-- Ursius
+								i(67167),
+								i(67184),
+								i(67217),
+								i(67201),
+								i(67224),
+							})),
+							qg(49402, q(28718)),	-- Where There's Smoke, There's Delicious Meat
+--							q(28462),	-- Winterfall Firewater (LEGACY - removed with Cata)
+							qg(10618, qa( 5201)),	-- Winterfall Intrusion
+							qg(10929, q(28840, {	-- Winterwater
+								i(67173),
+								i(67190),
+								i(67207),
+							})),
+							qg(49396, q(28828, {	-- You Gotta Have Eggs
+								i(67220),
+								i(67170),
+								i(67187),
+								i(67204),
+							})),
 				}),
 				n(-16, {	-- Rares
-					n(7524, {	-- Anguished Highborne
-						dr(2.0, i(16223)),	-- Formula: Enchant Weapon - Icy Chill
-					}),
 					n(51045, { 		-- Arcanus
 						dr(	11	, i(	10276	)), --	Emerald Sabatons
 						dr(	4	, i(	10096	)), --	Councillor's Cuffs
@@ -424,9 +594,6 @@ _.Zones =
 						dr(	1	, i(	10077	)), --	Lord's Breastplate
 						dr(	1	, i(	10126	)), --	Ornate Bracers
 					}), 
-					n(7428, {		-- Frostmaul Giant
-						un(7, dr(0.6, i(13495))),	-- Recipe: Greater Frost Protection Potion
-					}),
 					o(240616, {		-- Frozen Supplies
 						["groups"] = {	
 							i(122224)		-- Music Roll: Mountains
@@ -711,7 +878,7 @@ _.Zones =
 					}), 
 					o(272487, { 	-- Oddly-Colored Egg
 						["groups"] = {
-							i(142223), -- Pet
+							i(142223),	-- Sun Darter Hatchling (PET!)
 						},
 						["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
 						["modelScale"] = 2,
@@ -822,9 +989,6 @@ _.Zones =
 						dr(	1.1	, i(	10184	)), --	Swashbuckler's Bracers
 						dr(	1	, i(	10203	)), --	Overlord's Chestplate
 					}), 
-					n(7523, {	-- Suffering Highborne
-						dr(0.4, i(16223)),	-- Formula: Enchant Weapon - Icy Chill
-					}),
 					n(51028, { 		-- The Deep Tunneler
 						dr(	7	, i(	20768, { dr(1.5, i(20769)) } )), --	Oozing Bag <Disgusting Oozling>
 						dr(	6	, i(	10184	)), --	Swashbuckler's Bracers
@@ -854,8 +1018,14 @@ _.Zones =
 						dr(	1	, i(	10203	)), --	Overlord's Chestplate
 					}),
 				}),
-				n(0, { 		-- Zone Drop
+				n(  0, {	-- Zone Drop
+					n(7524, {	-- Anguished Highborne
+						dr(2.0, i(16223)),	-- Formula: Enchant Weapon - Icy Chill
+					}),
 					dr(0.01, i(34535)),	-- Azure Whelpling
+					n(7523, {	-- Suffering Highborne
+						dr(0.4, i(16223)),	-- Formula: Enchant Weapon - Icy Chill
+					}),
 				}),
 				n( -2, {	-- Vendors
 					n(50129, {	-- Daleohm <Blacksmithing Supplies>
@@ -919,7 +1089,9 @@ _.Zones =
 								un(34, i(15795)),	-- Emerald Mist Gauntlets
 							}),
 						}),
-						n(-16, {	-- Rares (Legacy)
+						-- n(-16, {	-- Rares (Legacy)
+						-- }),
+						n(  0, {	-- Zone Drop (Legacy)
 							n(7449, { 	-- Chillwind Ravager
 								un(7, i(20697)), 	-- Crystalline Threaded Cape
 							}),
@@ -927,9 +1099,10 @@ _.Zones =
 								un(2, i(14493)),	-- Pattern: Robe of Winter Night
 								un(2, i(13497)),	-- Recipe: Greater Arcane Protection Potion
 							}),
+							n(7428, {		-- Frostmaul Giant
+								un(7, dr(0.6, i(13495))),	-- Recipe: Greater Frost Protection Potion
+							}),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 					},
 					["u"] = 12,
 				}),
