@@ -323,10 +323,10 @@ local function createGeneralFrame(parent)
 
 	-- This creates the "Play Fanfare when I Collect Rare Things" Checkbox --
 	local playRareFindSound = createCheckBox("Play Fanfare when I Collect Rare Things", child, function(self)
-			app.SetDataMember("playRareFindSound", self:GetChecked());
+			app.SetDataMember("PlayRareFindSound", self:GetChecked());
 		end, 
 		function(self) 
-			self:SetChecked(app.GetDataMember("playRareFindSound", true));
+			self:SetChecked(app.GetDataMember("PlayRareFindSound", true));
 		end,
 		function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
@@ -338,10 +338,10 @@ local function createGeneralFrame(parent)
 	
 	-- This creates the "Play Fanfare when I complete a group" Checkbox --
 	local playCompleteSound = createCheckBox("Play Fanfare when I complete a group", child, function(self)
-			app.SetDataMember("playCompleteSound", self:GetChecked());
+			app.SetDataMember("PlayCompleteSound", self:GetChecked());
 		end, 
 		function(self) 
-			self:SetChecked(app.GetDataMember("playCompleteSound", true));
+			self:SetChecked(app.GetDataMember("PlayCompleteSound", true));
 		end,
 		function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
