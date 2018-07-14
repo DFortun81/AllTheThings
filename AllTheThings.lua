@@ -1725,7 +1725,7 @@ local function OpenMiniList(field, id, label)
 					local found = false;
 					if group.g and #group.g > 0 then
 						for i,g in ipairs(app.HolidayHeader.g) do
-							if g.achievementID == group.achievementID 
+							if g.g and g.achievementID == group.achievementID 
 								and g.u == group.u 
 								and g.races == group.races 
 								and g.classes == group.classes then
