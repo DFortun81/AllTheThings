@@ -5,7 +5,56 @@ _.Zones =
 {
 	m(13, { 	-- Kalimdor
 		m(281, {	-- Winterspring
-			["groups"] = {			
+			["groups"] = {
+				faction(576, {	-- Timbermaw Hold
+					["g"] = {
+						qr(q(28523, {	-- More Beads for Salfa
+							["qg"] = 11556,	-- Salfa
+							["sourceQuests"] = { 28522 },	-- Winterfall Activity
+						})),
+						q(28614, {	-- Bearzerker
+							["g"] = {
+								i(67216),	-- Firewater Amulet
+								i(67166),	-- Belt of Bloating
+								i(67183),	-- Bearzerker's Spaulders
+								i(67200),	-- Burndl's Bundled Boots
+							},
+							["qg"] = 48722,	-- Burndl
+						}),
+						q(28615, {	-- Turning the Earth
+							["qg"] = 48723,	-- Tanrir
+						}),
+					},
+					["collectible"] = false,
+				}),
+				faction(589, {	-- Wintersaber Trainers
+					qa(29032, {	-- Get Them While They're Young
+						["qg"] = 10618,	-- Rivern Frostwind
+					}),
+					qa(29037, {	-- 'Borrowing' From the Winterfall
+						["qg"] = 51677,	-- Winterspring Cub
+						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
+					}),
+					qa(29035, {	-- A Cub's Cravings
+						["qg"] = 51677,	-- Winterspring Cub
+						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
+					}),
+					qa(29040, {	-- Cub's First Toy
+						["qg"] = 51677,	-- Winterspring Cub
+						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
+					}),
+					qa(29038, {	-- Hunting Practice
+						["qg"] = 51677,	-- Winterspring Cub
+						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
+					}),
+					qa(29034, {	-- They Grow Up So Fast
+						["g"] = {
+							i(13086),	-- Reins of the Winterspring Frostsaber (MOUNT!)
+						},
+						["qg"] = 10618,	-- Rivern Frostwind
+						["sourceQuests"] = { 29032 },	-- Get Them While They're Young
+					}),
+				}),
 				n( -3, {	-- Holidays										
 					n(-47, {    	-- Lunar Festival
 						["groups"] = {
@@ -160,7 +209,7 @@ _.Zones =
 							},
 							q(28472, {	-- Words of the High Chief (awarded criteria)
 								["qg"] = 9298,	-- Donova Snowden
-								["isBreadcrumb"] = true,	-- for "The Ruins of Kel'Theril
+								["isBreadcrumb"] = true,	-- for "The Ruins of Kel'Theril"
 								["sourceQuests"] = { 28471 },	-- The Final Piece
 							}),
 						}),
@@ -265,20 +314,15 @@ _.Zones =
 							}),
 						}),
 						crit(4, {	-- Spray It and Slay It
-							q(28674, {	-- Starfall Village
-								["qg"] = 48965,	-- Deez Rocksnitch
-								["isBreadcrumb"] = true,	-- for Exterminators at Work & Out of Harm's Way
-								["sourceQuests"] = { 28628, 28722 },	-- Ice Delivery & Yetiphobia
-							}),
 							q(28676, {	-- Exterminators at Work
 								["qg"] = 11079,	-- Wynd Nightchaser
 								["sourceQuests"] = { 28674 },	-- Starfall Village
 							}),
-							q(28701, {	-- Out of Harm's Way
+							q(28701, {	-- Out of Harm's Way (may not be required for criteria)
 								["qg"] = 11079,	-- Wynd Nightchaser
 								["sourceQuests"] = { 28674 },	-- Starfall Village
 							}),
-							q(28703, {	-- Step Into My Barrow
+							q(28703, {	-- Step Into My Barrow (may not be required for criteria)
 								["qg"] = 49407,	-- Rinno Curtainfire
 							}),
 							q(28706, {	-- Spray it Forward
@@ -299,6 +343,65 @@ _.Zones =
 							}),
 						}),
 						crit(5, {	-- The Hub of Goodgrub's Grub
+							q(28637, {	-- A Taste for Bear
+								["qg"] = 49436,	-- Francis Morcott
+							}),
+							q(28719, {	-- A Little Gamy
+								["sourceQuests"] = { 28637 },	-- A Taste for Bear
+							}),
+							q(28639, {	-- Ursius
+								["g"] = {
+									i(67167),	-- Shardtooth Gloves
+									i(67184),	-- Ursius's Cap
+									i(67217),	-- Bracers of Considerable Influence
+									i(67201),	-- Bear Oiled Chainmail
+									i(67224),	-- Morcott's Bow
+								},
+								["sourceQuests"] = { 28719 },	-- A Little Gamy
+							}),
+							q(28638, {	-- The Owls Have It
+								["qg"] = 49537,	-- Jeb Guthrie
+							}),
+							q(28745, {	-- Screechy Keen
+								["sourceQuests"] = { 28638 },	-- The Owls Have It
+							}),
+							q(28782, {	-- A Bird of Legend (CHECK QG in game)
+								["g"] = {
+									i(67168),	-- Gloves of the Infernal Nocturnal
+									i(67185),	-- Hell-Hoot Mantle
+									i(67202),	-- Vest of the Smoking Pit
+									i(67225),	-- Hoot-Hunter's Leggings
+									i(67218),	-- Legend Eater Boots
+								},
+								["sourceQuests"] = { 28745 },	-- Screechy Keen
+							}),
+							q(28640, {	-- Fresh Frostsabers
+								["qg"] = 49396,	-- Jez Goodgrub
+								["sourceQuests"] = { 28718 },	-- Where There's Smoke, There's Delicious Meat
+							}),
+							q(28641, {	-- Pride of the Dinner Table
+								["sourceQuests"] = { 28640 },	-- Fresh Frostsabers
+							}),
+							q(28742, {	-- Shy-Rotam
+								["g"] = {
+									i(67169),	-- Shy Breastplate
+									i(67186),	-- Shy Shrug
+									i(67219),	-- Breastplate of the Fifth Hunter
+									i(67203),	-- Frostsaber Helm
+									i(67226),	-- Corpse Dragger's Shield
+								},
+								["sourceQuests"] = { 28641 },	-- Pride of the Dinner Table
+							}),
+							q(28828, {	-- You Gotta Have Eggs
+								["g"] = {
+									i(67220),	-- Goodgrub Cloak
+									i(67170),	-- Gourmand's Sash
+									i(67187),	-- Snow Nest Bracers
+									i(67204),	-- Chillwind Scale Armguards
+									i(67227),	-- Chimaera Heart Pendant
+								},
+								["qg"] = 49396,	-- Jez Goodgrub
+							}),
 						}),
 						crit(6, {	-- Yeti Surprise!
 							q(28630, {	-- Echo Three
@@ -329,15 +432,72 @@ _.Zones =
 							}),
 						}),
 						crit(7, {	-- Jadrag's Fate
+							q(28829, {	-- Razor Beak and Antlers Pointy
+								["qg"] = 50263,	-- Jadrag the Slicer
+							}),
+							q(28830, {	-- Chips off the Old Block
+								["qg"] = 50263,	-- Jadrag the Slicer
+								["sourceQuests"] = { 28829 },	-- Razor Beak and Antlers Pointy
+							}),
+							q(28831, {	-- Damn You, Frostilicus
+								["g"] = {
+									i(67172),	-- Cowl of Whistling Winds
+									i(67189),	-- Frostilicus's Hide
+									i(67206),	-- Owl Wing Belt
+									i(67221),	-- Breastplate of the Poetic Orc
+								},
+								["qg"] = 50263,	-- Jadrag the Slicer
+								["sourceQuests"] = { 28829 },	-- Razor Beak and Antlers Pointy
+							}),
 						}),
 						crit(8, {	-- Umbranse's Deliverance
 							q(28847, {	-- The Pursuit of Umbranse
 								["qg"] = 50366,	-- Nymn
 								["sourceQuests"] = { 28537, 28722 },	-- In Pursuit of Shades & Yetiphobia
 							}),
+							q(28837, {	-- Altered Beasts
+								["qg"] = 10929,	-- Haleh
+								["sourceQuests"] = { 28847 },	-- The Pursuit of Umbranse
+							}),
+							q(28838, {	-- The Owlbeasts' Defense
+								["qg"] = 10929,	-- Haleh
+								["sourceQuests"] = { 28837 },	-- Altered Beasts
+							}),
+							q(28839, {	-- Magic Prehistoric
+								["sourceQuests"] = { 28838 },	-- The Owlbeast's Defense
+							}),
+							q(28840, {	-- Winterwater
+								["g"] = {
+									i(67173),	-- Haleh's Warm Legwraps
+									i(67190),	-- Ice Avatar Legguards
+									i(67207),	-- Winterwater Cloak
+								},
+								["sourceQuests"] = { 28839 },	-- Magic Prehistoric
+							}),
+							q(28841, {	-- The Arcane Storm Within
+								["qg"] = 10929,	-- Haleh
+								["sourceQuests"] = { 28840 },	-- Winterwater
+							}),
+							q(28842, {	-- Umbranse's Deliverance
+								["g"] = {
+									i(67222),	-- Umbranse's Staff
+									i(67174),	-- Bracers of Mazthoril
+									i(67191),	-- Dreamcatcher Helm
+									i(67208),	-- Nam's Gauntlets
+								},
+								["qg"] = 10929,	-- Haleh
+								["sourceQuests"] = { 28840 },	-- Winterwater
+							}),
 						}),
 					}),
 					n(-168, {	-- Other Quests
+						q(44952, {	-- Blackrock Depths: Jewel of the Depths
+							["g"] = {
+								i(142357),	-- Plans: Dawn's Edge
+							},
+							["qg"] = 11184,	-- Wixxrak
+							["requiredSkill"] = 164,	-- Blacksmithing
+						}),
 						qa(28857, {	-- Blasted Lands: The Other Side of the World
 							["qg"] = 11118,	-- Innkeeper Vizzie
 							["isBreadcrumb"] = true,	-- for "Minor Distractions"
@@ -350,137 +510,34 @@ _.Zones =
 							["qg"] = 11556,	-- Salfa
 							["isBreadcrumb"] = true,	-- for "Threat of the Winterfall"
 						}),
+						q(28540, {	-- Doin' De E'ko Magic
+							["g"] = {
+								i(67162),	-- E'ko Gatherer's Belt
+								i(67179),	-- Heart Grippers
+								i(67212),	-- Bear Hunter's Belt
+								i(67196),	-- Witch Doctor's Spaulders
+							},
+							["qg"] = 10307,	-- Witch Doctor Mau'ari
+						}),
+						qr(q(9266, {	-- Making Amends (Goblin rep repair quest)
+							["qg"] = 16416,	-- Bronn Fitzwrench
+						})),
+						q(28674, {	-- Starfall Village
+							["qg"] = 48965,	-- Deez Rocksnitch
+							["isBreadcrumb"] = true,	-- for Exterminators at Work & Out of Harm's Way
+							["sourceQuests"] = { 28628, 28722 },	-- Ice Delivery & Yetiphobia
+						}),
+						q(28656),	-- Strange Life Forces
 						q(28856, {	-- The Sands of Silithus
 							["qg"] = 11118,	-- Innkeeper Vizzie
 							["isBreadcrumb"] = true,	-- for "Securing the Supply Lines"
 						}),
-					}),
-					ach(5443, {	-- E'ko Madness
-						crit(1),	-- Winterspring Furbolg
-						crit(2),	-- Wildkin
-						crit(3),	-- Shardtooth Bears
-						crit(4),	-- Frostmaul Giants
-						crit(5),	-- Frostsabers
-						crit(6),	-- Chillwind Chimaera
-						crit(7),	-- Ice Thistle Yeti
-						n(-17, {	-- Quests
-							q(28540, {	-- Doin' De E'ko Magic
-								["g"] = {
-									i(67162),	-- E'ko Gatherer's Belt
-									i(67179),	-- Heart Grippers
-									i(67212),	-- Bear Hunter's Belt
-									i(67196),	-- Witch Doctor's Spaulders
-								},
-								["qg"] = 10307,	-- Witch Doctor Mau'ari
-							}),
-							q(28656),	-- Strange Life Forces (CHECK IN GAME -- not sure if you need to specifically kill furbolgs for Juju Frenzy debuff or if you can get any E'ko buff to trigger this quest -- also not sure if there are prereqs)
-
+						q(28718, {	-- Where There's Smoke, There's Delicious Meat
+							["qg"] = 49402,	-- Sana Curtainfire
+							["isBreadcrumb"] = true,	-- for "Fresh Frostsabers"
+							["sourceQuests"] = { 28710 },	-- Spray it One More Time
 						}),
 					}),
-					faction(576, {	-- Timbermaw Hold
-						["g"] = {
-							qr(q(28523, {	-- More Beads for Salfa
-								["qg"] = 11556,	-- Salfa
-								["sourceQuests"] = { 28522 },	-- Winterfall Activity
-							})),
-						},
-						["collectible"] = false,
-					}),
-					
-					
-					
---[[
-								["qg"] = ,	-- 
-								["sourceQuests"] = {  },	-- 
-							}),
---]]
-					
-					
-					
-							qg(49537, q(28782, {	-- A Bird of Legend (CHECK QG in game)
-								i(67168),
-								i(67185),
-								i(67202),
-								i(67225),
-								i(67218),
-							})),
-							qg(51677, qa(29035)),	-- A Cub's Cravings (MOUNT daily - Winterspring Frostsaber)
-							qg(49436, q(28719)),	-- A Little Gamy
-							qg(49436, q(28637)),	-- A Taste for Bear
-							qg(10305, q(8798)),	-- A Yeti of Your Own
-							qg(10929, q(28837)),	-- Altered Beasts
-							qg(48722, q(28614, {	-- Bearzerker
-								i(67166),
-								i(67183),
-								i(67200),
-							})),
-							qp164(qg(11184, q(44952, {	-- Blackrock Depths: Jewel of the Depths (DUNGEON quest in addition to PROFESSION)
-								i(142357, {	-- Plans: Dawn's Edge
-									i(12774),	-- Dawn's Edge
-								}),
-							}))),
-							qg(51677, qa(29037)),	-- Borrowing' From the Winterfall (MOUNT daily - Winterspring Frostsaber)
-		--					q(28516),	-- Centuries of Suffering (NEVER IMPLEMENTED or LEGACY)
-							qg(50263, q(28830)),	-- Chips off the Old Block
-							qg(51677, qa(29040)),	-- Cub's First Toy (MOUNT daily - Winterspring Frostsaber)
-							qg(50263, q(28831, {	-- Damn You, Frostilicus
-								i(67172),
-								i(67189),
-								i(67206),
-								i(67221),
-							})),
-							qg(49396, q(28640)),	-- Fresh Frostsabers
-							qg(10618, qa( 4970)),	-- Frostsaber Provisions
-							qg(10618, qa(29032)),	-- Get Them While They're Young
-							qg(51677, qa(29038)),	-- Hunting Practice (MOUNT daily - Winterspring Frostsaber)
-							qg(10929, q(28839)),	-- Magic Prehistoric
-							qg(16416, q(9266)),	-- Making Amends
-							qg(49396, q(28641)),	-- Pride of the Dinner Table
-							qg(10618, qa( 5981)),	-- Rampaging Giants
-							qg(50263, q(28829)),	-- Razor Beak and Antlers Pointy
-							qg(49537, q(28745)),	-- Screechy Keen
-							qg(49396, q(28742, {	-- Shy-Rotam
-								i(67169),
-								i(67186),
-								i(67219),
-								i(67203),
-								i(67226),
-							})),
-							qg(10929, q(28841)),	-- The Arcane Storm Within
-							qg(10929, q(28838)),	-- The Owlbeasts' Defense
-							qg(49537, q(28638)),	-- The Owls Have It
-							qg(11555, q(8481)),	-- The Root of All Evil					
-							qg(10618, qa(29034, {	-- They Grow Up So Fast (MOUNT final quest - Winterspring Frostsaber)
-								i(13086),	-- Reins of the Winterspring Frostsaber
-							})),
-							qg(48723, q(28615)),	-- Turning the Earth
-							qg(10929, q(28842, {	-- Umbranse's Deliverance
-								i(67222),
-								i(67174),
-								i(67191),
-								i(67208),
-							})),
-							qg(49436, q(28639, {	-- Ursius
-								i(67167),
-								i(67184),
-								i(67217),
-								i(67201),
-								i(67224),
-							})),
-							qg(49402, q(28718)),	-- Where There's Smoke, There's Delicious Meat
---							q(28462),	-- Winterfall Firewater (LEGACY - removed with Cata)
-							qg(10618, qa( 5201)),	-- Winterfall Intrusion
-							qg(10929, q(28840, {	-- Winterwater
-								i(67173),
-								i(67190),
-								i(67207),
-							})),
-							qg(49396, q(28828, {	-- You Gotta Have Eggs
-								i(67220),
-								i(67170),
-								i(67187),
-								i(67204),
-							})),
 				}),
 				n(-16, {	-- Rares
 					n(51045, { 		-- Arcanus
@@ -1067,11 +1124,21 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							q(8798, {	-- A Yeti of Your Own
+								["g"] = {
+									un(8, recipe(26011)),	-- Tranquil Mechanical Yeti
+								},
+								["qg"] = 10305,	-- Umi Rumplesnicker
+								["description"] = "The quest that teaches this recipe was removed, but Engineers who learned it before can still craft this pet.  Tranquil Mechanical Yeti can also be found inside Blingtron boxes.",
+							}),
+							q(28516),	-- Centuries of Suffering
+							qa(4970),	-- Frostsaber Provisions
 							q( 5121, {	-- High Chief Winterfall
 								un(34, i(15784)),	-- Crystal Breeze Mantle
 								un(34, i(15786)),	-- Fempulse Jerkin
 								un(34, i(15787)),	-- Willow Band Hauberk
 							}),
+							qg(10618, qa( 5981)),	-- Rampaging Giants
 							q( 4810, {	-- Return to Tinkee
 								un(34, i(15862)),	-- Blitzcleaver
 								un(34, i(15863)),	-- Grave Scepter
@@ -1088,6 +1155,8 @@ _.Zones =
 								un(34, i(15792)),	-- Plow Wood Spaulders
 								un(34, i(15795)),	-- Emerald Mist Gauntlets
 							}),
+							q( 28462),	-- Winterfall Firewater (removed with Cata)
+							qg(10618, qa( 5201)),	-- Winterfall Intrusion
 						}),
 						-- n(-16, {	-- Rares (Legacy)
 						-- }),
