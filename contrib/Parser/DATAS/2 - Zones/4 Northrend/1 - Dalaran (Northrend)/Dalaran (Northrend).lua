@@ -1551,7 +1551,6 @@ _.Zones =
 				n(-17, { 	-- Quests
 --[[				
 					qa( 20439),	-- A Meeting With The Magister
-					qh( 32413),	-- A Return to Krasarang
 					qh( 29400),	-- A Season for Celebration
 					qa( 20438),	-- A Suitable Disguise
 					qh( 24556),	-- A Suitable Disguise
@@ -1651,6 +1650,9 @@ _.Zones =
 					q(12521),	-- Where in the World is Hemet Nesingwary?
 					q(24588),	-- XT-002 Deconstructor Must Die!
 --]]
+					qh(32413, {	-- A Return to Krasarang
+						["qg"] = 68586, -- Grand Magister Rommath
+					}),
 					q(13631,  {  -- All Is Well That Ends Well - Ulduar
 						i(46320),
 						i(46321),

@@ -20,7 +20,8 @@ _.Zones =
 					qa( 31254),	-- The Road to Kun-Lai
 					qh( 31255),	-- The Road to Kun-Lai
 					q(38936),	-- The Road to Kun-Lai
-					q(31285),	-- The Spring Drifter	
+					q(31285),	-- The Spring Drifter
+					q(32861),	-- Cloak of Virtue - removed from game
 --]]					
 					nlq({ 	-- Legacy Quests
 						q(33104, { -- A Pandaren Legend
@@ -32,14 +33,6 @@ _.Zones =
 								un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
 								un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
 							}),
-						}),
-						q(32861, { -- Cloak of Virtue
-							un(4, i(98149)),	-- Cranewing Cloak
-							un(4, i(98150)),	-- Jadefire Drape
-							un(4, i(98335)),	-- Oxhoof Greatcloak
-							un(4, i(98146)),	-- Oxhorn Bladebreaker
-							un(4, i(98147)),	-- Tigerclaw Cape
-							un(4, i(98148)),	-- Tigerfang Wrap
 						}),
 					}),
 				}),

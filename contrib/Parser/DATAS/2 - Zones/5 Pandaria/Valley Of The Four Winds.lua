@@ -121,7 +121,7 @@ _.Zones =
 					q(32046),	-- Candy Bucket
 					q(32048),	-- Candy Bucket
 ]]--
-					sq({33021,33139}, qg(64231, q(33022, {	-- Catch and Carry
+					sq(33021, qg(64231, q(33022, {	-- Catch and Carry
 						un(1, i(101631)),	-- Recipe: Noodle Cart Kit
 						recipe(145038),	-- Noodle Cart Kit
 						un(1, i(101728)),	-- Recipe: Grand Noodle Cart Kit
@@ -242,8 +242,8 @@ _.Zones =
 					q(30626),	-- Retreat!
 ]]--
 					sq(33107, qg(64231, q(33021))),	-- Secrets Lost, Forever?
-					sq(33107, qg(64231, q(33139))),	-- Secrets Lost, Forever?
 --[[
+					q(33139),	-- Secrets Lost, Forever? - Removed
 					q(30057),	-- Seeing Orange
 					q(30337),	-- Simian Sabotage
 					q(29600),	-- Snap Judgment
