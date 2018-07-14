@@ -353,8 +353,12 @@ _.WorldDrops =
 					un(7, i(18671)),	-- Baron Charr's Sceptre
 					i(1926),	-- Weighted Sap
 					un(7, i(1938)),	-- Block Mallet
-					i(1958),	-- cannot be transmogged Petrified Shinbone
-					i(19808),	-- cannot be transmogged Rockhide Strongfish
+					i(1958, { -- Petrified Shinbone
+						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+					}),
+					i(19808, {  -- Rockhide Strongfish
+						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+					}),
 					i(2075),	-- Heavy Mace
 					i(2079),	-- Sergeant's Warhammer
 					i(2194),	-- Diamond Hammer
@@ -370,8 +374,12 @@ _.WorldDrops =
 					un(7, i(4439)),	-- Bruiser Club
 					i(4569),	-- Staunch Hammer
 					un(7, i(5256)),	-- Kovork's Rattle
-					i(6360),	-- cannot be transmogged Steelscale Crushfish
-					i(68194),	-- cannot be transmogged Oggleflint's Inspirer
+					i(6360, { -- Steelscale Crushfish
+						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+					}),
+					i(68194, {	-- Oggleflint's Inspirer
+						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+					}),
 					i(7736),	-- Fight Club
 					i(7752),	-- Dreamslayer
 					i(789),		-- Stout Battlehammer

@@ -703,21 +703,27 @@ _.WorldEvents =
 								d(1, { -- Normal
 									n(98696, { -- Illysanna Ravencrest
 										["groups"] = {
-											un(29, ig(139300)),	-- Finely-Tailored Green Holiday Hat
+											un(29, i(139300, {	-- Finely-Tailored Green Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 										}
 									}),
 								}),
 								d(2, { -- Heroic
 									n(98696, { -- Illysanna Ravencrest
 										["groups"] = {
-											un(29, ig(139300)),	-- Finely-Tailored Green Holiday Hat
+											un(29, i(139300, {	-- Finely-Tailored Green Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 										}
 									}),
 								}),
 								d(23, { -- Mythic
 									n(98696, { -- Illysanna Ravencrest
 										["groups"] = {
-											un(29, ig(139300)),	-- Finely-Tailored Green Holiday Hat
+											un(29, i(139300, {	-- Finely-Tailored Green Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 										}
 									}),
 								}),
@@ -726,21 +732,27 @@ _.WorldEvents =
 								d(1, { -- Normal
 									n(91797, { -- King Deepbeard
 										["groups"] = {
-											un(29, ig(139300)),	-- Finely-Tailored Green Holiday Hat
+											un(29, i(139300, {	-- Finely-Tailored Green Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 										}
 									}),
 								}),
 								d(2, { -- Heroic
 									n(91797, { -- King Deepbeard
 										["groups"] = {
-											un(29, ig(139300)),	-- Finely-Tailored Green Holiday Hat
+											un(29, i(139300, {	-- Finely-Tailored Green Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 										}
 									}),
 								}),
 								d(23, { -- Mythic
 									n(91797, { -- King Deepbeard
 										["groups"] = {
-											un(29, ig(139300)),	-- Finely-Tailored Green Holiday Hat
+											un(29, i(139300, {	-- Finely-Tailored Green Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 										}
 									}),
 								}),
@@ -749,21 +761,27 @@ _.WorldEvents =
 								d(1, { -- Normal
 									n(104217, { -- Talixae Flamewreath
 										["groups"] = {
-											un(29, ig(139299)), -- Finely-Tailored Red Holiday Hat
+											un(29, i(139299, { -- Finely-Tailored Red Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 										}
 									}),
 								}),
 								d(2, { -- Heroic
 									n(104217, { -- Talixae Flamewreath
 										["groups"] = {
-											un(29, ig(139299)), -- Finely-Tailored Red Holiday Hat
+											un(29, i(139299, { -- Finely-Tailored Red Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 										}
 									}),
 								}),
 								d(23, { -- Mythic
 									n(104217, { -- Talixae Flamewreath
 										["groups"] = {
-											un(29, ig(139299)), -- Finely-Tailored Red Holiday Hat
+											un(29, i(139299, { -- Finely-Tailored Red Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 										}
 									}),
 								}),
@@ -772,7 +790,9 @@ _.WorldEvents =
 								d(1, { -- Normal
 									n(122316, { -- Saprish
 										["groups"] = {
-											un(29, ig(139299)), -- Finely-Tailored Red Holiday Hat
+											un(29, i(139299, { -- Finely-Tailored Red Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 										}
 									}),
 								}),
@@ -786,7 +806,9 @@ _.WorldEvents =
 								d(23, { -- Mythic
 									n(122316, { -- Saprish
 										["groups"] = {
-											un(29, ig(139299)), -- Finely-Tailored Red Holiday Hat
+											un(29, i(139299, { -- Finely-Tailored Red Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 										}
 									}),
 								}),
@@ -796,28 +818,36 @@ _.WorldEvents =
 									d(17, { -- LFR
 										n(125075, { -- Varimathras
 											["groups"] = {
-												un(29, ig(139300)), -- Finely-Tailored Green Holiday Hat
+												un(29, i(139299, { -- Finely-Tailored Red Holiday Hat
+													["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+												})),
 											},
 										}),
 									}),
 									d(14, { -- Normal
 										n(125075, { -- Varimathras
 											["groups"] = {
-												un(29, ig(139300)), -- Finely-Tailored Green Holiday Hat
+												un(29, i(139299, { -- Finely-Tailored Red Holiday Hat
+													["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+												})),
 											},
 										}),
 									}),
 									d(15, { -- Heroic
 										n(125075, { -- Varimathras
 											["groups"] = {
-												un(29, ig(139300)), -- Finely-Tailored Green Holiday Hat
+												un(29, i(139300, {	-- Finely-Tailored Green Holiday Hat
+													["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+												})),
 											},
 										}),
 									}),
 									d(16, { -- Mythic
 										n(125075, { -- Varimathras
 											["groups"] = {
-												un(29, ig(139300)), -- Finely-Tailored Green Holiday Hat
+												un(29, i(139300, {	-- Finely-Tailored Green Holiday Hat
+													["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+												})),
 											},
 										}),
 									}),
@@ -828,28 +858,36 @@ _.WorldEvents =
 									d(17, { -- LFR
 										n(101002, { -- Krosus
 											["groups"] = {
-												un(29, ig(139299)), -- Finely-Tailored Red Holiday Hat
+												un(29, i(139299, { -- Finely-Tailored Red Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 											},
 										}),
 									}),
 									d(14, { -- Normal
 										n(101002, { -- Krosus
 											["groups"] = {
-												un(29, ig(139299)), -- Finely-Tailored Red Holiday Hat
+												un(29, i(139299, { -- Finely-Tailored Red Holiday Hat
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											})),
 											},
 										}),
 									}),
 									d(15, { -- Heroic
 										n(101002, { -- Krosus
 											["groups"] = {
-												un(29, ig(139299)), -- Finely-Tailored Red Holiday Hat
+												un(29, i(139299, { -- Finely-Tailored Red Holiday Hat
+													["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+												})),
 											},
 										}),
 									}),
 									d(16, { -- Mythic
 										n(101002, { -- Krosus
 											["groups"] = {
-												un(29, ig(139299)), -- Finely-Tailored Red Holiday Hat
+												un(29, i(139299, { -- Finely-Tailored Red Holiday Hat
+													["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+												})),
 											},
 										}),
 									}),

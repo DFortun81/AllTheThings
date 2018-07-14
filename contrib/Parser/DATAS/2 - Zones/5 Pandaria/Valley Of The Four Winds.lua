@@ -1714,8 +1714,12 @@ _.Zones =
 							i(86425),	-- Cooking School Bell
 							i(88801),	-- Flippable Table
 							i(86468),	-- Apron
-							i(86559),	-- Frying Pan (cannot be transmogged)
-							i(86558),	-- Rolling Pin (cannot be transmogged)
+							i(86559, {	-- Frying Pan
+								["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+							}),
+							i(86558, {	-- Rolling Pin
+								["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+							}),
 						}),
 					}),
 					n(64465, {	-- Noodles <Cooking Supplies>

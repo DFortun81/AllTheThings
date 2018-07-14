@@ -365,7 +365,9 @@ _.Zones =
 						i(41846),
 					}),
 					q(12859, {	-- This Just In: Fire Still Hot!
-						i(41755), -- The Fire Extinguisher
+						i(41755, { -- The Fire Extinguisher
+							["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+						}),
 					}),
 					q(12516,  {  -- Too Much of a Good Thing
 						i(39785),
