@@ -261,7 +261,9 @@ _.WorldEvents =
 				},
 				["itemID"] = 105751,
 			},
-			un(31, i(142000, { -- Rhinestone Sunglasses
+			un(9, i(142000, { -- Rhinestone Sunglasses
+				["groups"] = {
+				},
 				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.  NOTE: You will not be able to transmog this item",
 			})),
 			i(14617),	-- Sawbones Shirt
