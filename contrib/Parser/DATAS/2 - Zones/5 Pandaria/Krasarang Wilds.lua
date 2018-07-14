@@ -788,40 +788,57 @@ _.Zones =
 				n(-2, {		-- Vendor
 					na(69059, {	-- Agent Malley <Operation: Shieldwall Quartermaster>
 						i(93231),	-- Grand Commendation of Operation: Shieldwall
-						i(93272),	-- Sabatons of the Sullied Shore
-						i(93273),	-- Sea-Soaked Sollerets
-						i(93274),	-- Greatboots of Flashing Light
-						i(93275),	-- Totem-Binder Boots
-						i(93276),	-- Odlaw's Everwalkers
-						i(93277),	-- Statue Summoner's Treads
-						i(93278),	-- Crab-Leather Tabi
-						i(93279),	-- Shieldwarden Slippers
-						i(93280),	-- Sandals of Oiled Silk
-						i(93332),	-- Girdle of Crushing Strength
-						i(93333),	-- Waistplate of Immobility
-						i(93334),	-- Divide's Loyal Clasp
-						i(93335),	-- Chain of Flaming Arrows
-						i(93336),	-- Links of Bonded Blood
-						i(93337),	-- Prevenge's Swashbuckling Cinch
-						i(93338),	-- Soothing Straps
-						i(93339),	-- Bon-iy's Unbreakable Cord
-						i(93340),	-- Sash of Bouncing Power
 						i(93168),	-- Grand Armored Gryphon Mount
+						i(93347),	-- Arcane Badge of the Shieldwall
+						i(93258),	-- Arrowflight Medallion
+						i(93244),	-- Band of the Shieldwall
+						i(93339),	-- Bon-iy's Unbreakable Cord
+						i(93335),	-- Chain of Flaming Arrows
+						i(93246),	-- Circle of the shieldwall
+						i(93278),	-- Crab-Leather Tabi
+						i(93346),	-- Deadeye Badge of the Shieldwall
+						i(93334),	-- Divide's Loyal Clasp
+						i(93350),	-- Durable Badge of the Shieldwall
+						i(93332),	-- Girdle of Crushing Strength
+						i(93274),	-- Greatboots of Flashing Light
+						i(93260),	-- Heartwarmer Medallion
+						i(93261),	-- Helmbreaker Medallion
+						i(93349),	--  Knightly Badge of the Shieldwall
+						i(93336),	-- Links of Bonded Blood
+						i(93245),	-- Loop of the Shieldwall
+						i(93348),	-- Mending Badge of the Shieldwall
+						i(93276),	-- Odlaw's Everwalkers
+						i(93337),	-- Prevenge's Swashbuckling Cinch
+						i(93272),	-- Sabatons of the Sullied Shore
+						i(93280),	-- Sandals of Oiled Silk
+						i(93340),	-- Sash of Bouncing Power
+						i(93273),	-- Sea-Soaked Sollerets
+						i(93247),	-- Seal of the Shieldwall
+						i(93279),	-- Shieldwarden Slippers
+						i(93259),	-- Shock-Charger Medallion
+						i(93243),	-- Signet of the Shieldwall
+						i(93338),	-- Soothing Straps
+						i(93277),	-- Statue Summoner's Treads
+						i(93275),	-- Totem-Binder Boots
+						i(93262),	-- Vaporshield Medallion
+						i(93333),	-- Waistplate of Immobility
 					}),
 					n(63721, {	-- Nat Pagle <The Anglers Quartermaster>
 						i(93225),	-- Grand Commendation of the Anglers
+						i(81354),	-- Reins of the Azure Water Strider Mount
 						i(85505),	-- Recipe: Krasarang Fritters
 						i(85502),	-- Recipe: Viseclaw Soup
-						i(81354),	-- Reins of the Azure Water Strider Mount
-						i(85447),	-- Tiny Goldfish Pet
-						i(85500),	-- Angler's Fishing Raft Toy
-						i(86596),	-- Nat's Fishing Chair Toy
-						i(107950),	-- Bipsi's Bobbing Berg -- Mage only! Also NOT A yet!
-						i(84660),	-- Pandaren Fishing Pole -- NOT MOGGABLE
-						i(84661),	-- Dragon Fishing Pole -- NOT MOGGABLE
-						i(88710),	-- Nat's Hat -- NOT MOGGABLE
-						i(88535),	-- Sharpened Tuskarr Pole -- NOT MOGGABLE
 						i(89401),	-- Angler's Tabard
+						i(85500),	-- Angler's Fishing Raft Toy
+						i(107950, {	-- Bipsi's Bobbing Berg -- Mage only! Also NOT A yet!
+							["classes"] = { 8 },
+						}),
+						i(84661),	-- Dragon Fishing Pole -- NOT MOGGABLE
+						i(86596),	-- Nat's Fishing Chair Toy
+						i(88710),	-- Nat's Hat -- NOT MOGGABLE
+						i(84660),	-- Pandaren Fishing Pole -- NOT MOGGABLE
+						i(88535),	-- Sharpened Tuskarr Pole -- NOT MOGGABLE
+						i(85447),	-- Tiny Goldfish Pet
 					}),
 					nh(67751, {	-- Ongrom Black Tooth <Collector of Commissions>
 						i(91838, {  -- Lion's Landing Commission
@@ -847,25 +864,40 @@ _.Zones =
 					}),
 					nh(69060, {	-- Tuskripper Grukna <Dominance Offensive Quartermaster>
 						i(93232),	-- Grand Commendation of the Dominance Offensive
-						i(93263),	-- Groundbreaker Sabatons
-						i(93264),	-- Cragchewer Sollerets
-						i(93265),	-- Scar Swallower Greatboots
+						i(93169),	-- Grand Armored Wyvern
+						i(93329),	-- Bambrick's Striking Strap
+						i(93271),	-- Beach-Born Sandals
+						i(93327),	-- Bloodbinder Links
 						i(93266),	-- Boots of the Healing Steam
+						i(93330),	-- Chang's Changing Cord
+						i(93264),	-- Cragchewer Sollerets
+						i(93255),	-- Cutstitcher Medallion
+						i(93325),	-- Divide's Greatheart Clasp
+						i(93342),	-- Dominator's Arcane Badge
+						i(93249),	-- Dominator's Band
+						i(93251),	-- Dominator's Circle
+						i(93341),	-- Dominator's Deadeye Badge
+						i(93345),	-- Dominator's Durable Badge
+						i(93344),	-- Dominator's Knightly Badge
+						i(93250),	-- Dominator's Loop
+						i(93343),	-- Dominator's Mending Badge
+						i(93252),	-- Dominator's Seal
+						i(93248),	-- Dominator's Signet
 						i(93267),	-- Greaves of Manifest Destiny
+						i(93263),	-- Groundbreaker Sabatons
+						i(93324),	-- Immovable Waistplate
+						i(93323),	-- Kwon's Crushing Girdle
+						i(93257),	-- Medallion of Mystefying Vapors
+						i(93328),	-- Prevenge's Dagger-Carrier
+						i(93331),	-- Sash of Surehandedness
+						i(93265),	-- Scar Swallower Greatboots
+						i(93326),	-- Shigi's Chain of Cheerful Summons
+						i(93256),	-- Skullrender Medallion
+						i(93270),	-- Slippers of Soothing Balm
+						i(93254),	-- Static-Caster's Medallion
 						i(93268),	-- Treads of Rejuvenating Mists
 						i(93269),	-- Troll-Toe Tabi
-						i(93270),	-- Slippers of Soothing Balm
-						i(93271),	-- Beach-Born Sandals
-						i(93323),	-- Kwon's Crushing Girdle
-						i(93324),	-- Immovable Waistplate
-						i(93325),	-- Divide's Greatheart Clasp
-						i(93326),	-- Shigi's Chain of Cheerful Summons
-						i(93327),	-- Bloodbinder Links
-						i(93328),	-- Prevenge's Dagger-Carrier
-						i(93329),	-- Bambrick's Striking Strap
-						i(93330),	-- Chang's Changing Cord
-						i(93331),	-- Sash of Surehandedness
-						i(93169),	-- Grand Armored Wyvern
+						i(93253),	-- Woundripper Medallion
 					}),
 				}),
 				n(-38, { -- Profession
