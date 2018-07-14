@@ -60,6 +60,11 @@ _.Zones =
 							i(90547),	-- Lantern of Hope
 						},
 						["qg"] = 59138, -- Koro Mistwalker
+						["sourceQuests"] = {
+							30270,	-- Blinding the Riverblades
+							30669,	-- The Murksweats
+							30694,	-- Tread Lightly
+						},
 					}),
 					qh(32127, {	-- All Dead, All Dead
 						["qg"] = 67767, -- Brolic
@@ -211,12 +216,14 @@ _.Zones =
 					}),
 					qh(30124, {	-- Blind Them!
 						["qg"] = 58114, -- Kor Bloodtust
+						["sourceQuests"] = { 30179 }, -- Poisoned!
 					}),
 					qa(30384, {	-- Blind Them!
 						["qg"] = 58735, -- Lyalia
 					}),
 					q(30270, {	-- Blinding the Riverblades
 						["qg"] = 59138, -- Koro Mistwalker
+						["sourceQuests"] = { 30269 }, -- Unsafe Passage
 					}),
 					q(30084, {	-- Borderlands
 						["qg"] = 57744,	-- Mei Barrelbottom
@@ -446,6 +453,10 @@ _.Zones =
 					}),
 					qh(30130, {	-- Herbal Remedies
 						["qg"] = 58113,	-- Sunwalker Dezco
+						["sourceQuests"] = {
+							30123,	-- Skitterer Skew
+							30124,	-- Blind Them!
+						},
 					}),
 					qh(32135, {	-- Hero Killer
 						["qg"] = 67628,	-- Shademaster Kiryn
@@ -547,7 +558,10 @@ _.Zones =
 					}),
 					qh(30131, {	-- Life
 						["qg"] = 58113, -- Sunwalker Dezco
-						["sourceQuests"] = { 30128 }, -- The Pools of Youth
+						["sourceQuests"] = {
+							30128,	-- The Pools of Youth
+							30130,	-- Herbal Remedies
+						},
 					}),
 					q(30678, {	-- Like Bombing Fish In A Barrel
 						["qg"] = 60136, -- Fiznix
@@ -678,6 +692,7 @@ _.Zones =
 							i(81511),	-- Dojani Bracers
 						},
 						["qg"] = 56112, -- Kang Bramblestaff 
+						["sourceQuests"] = { 30132, 30464 }, -- Going West (two versions)
 					}),
 					qa(30355, {	-- Re-Reclaim
 						["groups"] = {
@@ -739,6 +754,11 @@ _.Zones =
 					}),
 					q(30271, {	-- Sha Can Awe
 						["qgs"] = { 59188, 59189, 59608 } , -- 3 phased versions of Anduin Wrynn
+						["sourceQuests"] = {
+							30270,	-- Blinding the Riverblades
+							30669,	-- The Murksweats
+							30694,	-- Tread Lightly
+						},
 					}),
 					qa(32115, {	-- Shackles of the Past
 						["qg"] = 68275, -- Hilda Hornswaggle
@@ -755,6 +775,7 @@ _.Zones =
 					}),
 					qh(30123, {	-- Skitterer Stew
 						["qg"] = 56112, -- Kang Bramblestaff
+						["sourceQuests"] = { 30179 }, -- Poisoned!
 					}),
 					q(30700, {	-- Snapclaw
 						["qg"] = 59586, -- Angler Shen
@@ -777,6 +798,11 @@ _.Zones =
 					}),
 					q(30272, {	-- Striking the Rain
 						["qg"] = 59138, -- Koro Mistwalker
+						["sourceQuests"] = {
+							30270,	-- Blinding the Riverblades
+							30669,	-- The Murksweats
+							30694,	-- Tread Lightly
+						},
 					}),
 					q(30718, {	-- Students of Chi-Ji
 						["qg"] = 60506, -- Thelonius
@@ -833,6 +859,7 @@ _.Zones =
 					}),
 					qh(30229, {	-- The Greater Danger
 						["qg"] = 58114, -- Kor Bloodtusk
+						["sourceQuests"] = { 30132, 30464 }, -- Going West (two versions)
 					}),
 					qa(32335, {	-- The Greatest Prank
 						["qg"] = 68538, -- The Monkey King
@@ -890,6 +917,11 @@ _.Zones =
 							i(81466),	-- Dojani Chestpiece
 						},
 						["qg"] = 58630, -- Ambassador Han
+						["sourceQuests"] = {
+							30230,	-- Re-Reclaim
+							30229,	-- The Greater Danger
+							30163,	-- For the Tribe
+						},
 					}),
 					qa(30361, {	-- The Mantid
 						["groups"] = {
@@ -910,7 +942,10 @@ _.Zones =
 					}),
 					qh(30129, {	-- The Mogu Agenda
 						["qg"] = 56112, -- Kang Bramblestaff
-						["sourceQuests"] = { 30127 }, -- Threat of Dojan
+						["sourceQuests"] = {
+							30123,	-- Skitterer Skew
+							30124,	-- Blind Them!
+						},
 					}),
 					qa(32321, {	-- The Monkey King
 						["qg"] = 68004, -- Anduin Wrynn
@@ -925,6 +960,7 @@ _.Zones =
 							i(81561),	-- Murkscale Band
 						},
 						["qg"] = 58609, -- Anduin Wrynn
+						["sourceQuests"] = { 30269 }, -- Unsafe Passage
 					}),
 					qa(32157, {	-- The Only Good Goblin...
 						["qg"] = 67386, -- Sky Admiral Rogers
@@ -1001,6 +1037,11 @@ _.Zones =
 							i(84295),	-- Imperial Lotus Cloak
 						},
 						["qg"] = 58745, -- Lorekeeper Vaeldrin
+						["sourceQuests"] = {
+							30230,	-- Re-Reclaim
+							30229,	-- The Greater Danger
+							30163,	-- For the Tribe
+						},
 					}),
 					qh(30164, {	-- The Stoneplow Convoy
 						["qg"] = 58607, -- Sunwalker Dezco
@@ -1042,6 +1083,10 @@ _.Zones =
 					}),
 					qh(30127, {	-- Threat from Dojan
 						["qg"] = 58114, -- Kor Bloodtusk
+						["sourceQuests"] = {
+							30123,	-- Skitterer Skew
+							30124,	-- Blind Them!
+						},
 					}),
 					qa(30349, {	-- Threat from Dojan
 						["groups"] = {
@@ -1079,6 +1124,7 @@ _.Zones =
 							i(84280),	-- Mistwalker Armored Legguards
 						},
 						["qg"] = 59138, -- Koro Mistwalker
+						["sourceQuests"] = { 30269 }, -- Unsafe Passage
 					}),
 					q(30733, {	-- Tukka-Tuk
 						["qg"] = 60506, -- Thelonius
@@ -1094,6 +1140,7 @@ _.Zones =
 					}),
 					q(30269, {	-- Unsafe Passage
 						["qg"] = 58547, -- Koro Mistwalker
+						["sourceQuests"] = { 30461, 30133 }, -- Into the Wilds
 					}),
 					qh(32328, {	-- Victorious Return
 						["qg"] = 68077, -- Fanlyr Silverthorn
