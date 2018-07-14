@@ -27,10 +27,18 @@ profession(755, { -- Jewelcrafting
 	tier(4, { -- Cataclysm
 		i(52492),	-- Carnelian Spikes
 		i(52493),	-- The Perforator
-		i(52487),	-- Jeweler's Amber Monocle
-		i(52485),	-- Jeweler's Ruby Monocle
-		i(52486),	-- Jeweler's Sapphire Monocle
-		i(52489),	-- Rhinestone Sunglasses
+		i(52487,  {	-- Jeweler's Amber Monocle
+			["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+		}),
+		i(52485, {	-- Jeweler's Ruby Monocle
+			["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+		}),
+		i(52486, {	-- Jeweler's Sapphire Monocle
+			["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+		}),
+		un(15, i(52489, {	-- Rhinestone Sunglasses
+			["description"] = "To learn this specific item you will need to buy the Black Market AH version",
+		})),
 	}),
 	tier(7, { -- Legion
 		i(151587),	-- Empyrial Cosmic Crown

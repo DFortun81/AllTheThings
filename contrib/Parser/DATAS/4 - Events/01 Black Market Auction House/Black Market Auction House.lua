@@ -261,6 +261,9 @@ _.WorldEvents =
 				},
 				["itemID"] = 105751,
 			},
+			un(31, i(142000, { -- Rhinestone Sunglasses
+				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.  NOTE: You will not be able to transmog this item",
+			})),
 			i(14617),	-- Sawbones Shirt
 			un(9, i(44924)),	-- Sun-Lute of the Phoenix King 
 			i(141995, { --  Unclaimed Black Market Container
