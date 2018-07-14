@@ -823,7 +823,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qh(451, { 	-- A Recipe for Death
 								un(34, i(3582)),	-- Acidproof Cloak
 								un(34, i(3451)),	-- Nightglow Concoction
@@ -878,7 +878,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 				m(684, {	-- Ruins of Gilneas
 					n(-17, { -- Quests

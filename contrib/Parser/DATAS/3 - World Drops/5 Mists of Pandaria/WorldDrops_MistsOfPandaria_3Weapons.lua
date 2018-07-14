@@ -70,7 +70,7 @@ _.WorldDrops =
 					i(87508),	-- Lhakaz's Missing Ribspreader
 					i(87514),	-- Sharpened Multi-Prong Dagger
 					i(88149),	-- The Gloaming Blade
-					i(93625),	-- Miniature Winter Veil Tree
+					un(7, i(93625)),	-- Miniature Winter Veil Tree
 					i(94096),	-- Discarded Strikeblade
 					i(94102),	-- Chiseled Fangs
 					i(94215),	-- Saurjaw Dagger

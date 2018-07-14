@@ -100,180 +100,33 @@ u(7750, 2);		-- Mantle of Woe
 u(7751, 2);		-- Vorrel's Boots
 u(7756, 2);		-- Dog Training Gloves
 u(10330, 2);	-- Scarlet Leggings
-u(12583, 2);	-- Blackhand Doomsaw
-u(12587, 2);	-- Eye of Rend
-u(12588, 2);	-- Bonespike Shoulder
-u(12589, 2);	-- Dustfeather Sash
-u(12590, 2);	-- Felstriker
-u(12592, 2);	-- Blackblade of Shahram
-u(12602, 2);	-- Draconian Deflector
-u(12603, 2);	-- Nightbrace Tunic
-u(12604, 2);	-- Starfire Tiara
-u(12605, 2);	-- Serpentine Skuller
-u(12606, 2);	-- Crystallized Girdle
-u(12609, 2);	-- Polychromatic Visionwrap
-u(12709, 2);	-- Finkle's Skinner
-u(12752, 2);	-- Cap of the Scarlet Savant
-u(12756, 2);	-- Leggings of Arcana
-u(12757, 2);	-- Breastplate of Bloodthirst
-u(12895, 2);	-- Breastplate of the Chromatic Flight
-u(12903, 2);	-- Legguards of the Chromatic Defier
-u(12905, 2);	-- Wildfire Cape
-u(12927, 2);	-- Truestrike Shooulders
-u(12935, 2);	-- Warmaster Legguards
-u(12936, 2);	-- Battleborn Armbraces
-u(12939, 2);	-- Dal'Rend's Tribal Guardian
-u(12940, 2);	-- Dal'Rend's Sacred Charge
-u(12945, 2);	-- Legplates of the Chromatic Defier
-u(12952, 2);	-- Gyth's Skull
-u(12953, 2);	-- Dragoneye Coif
-u(12960, 2);	-- Tribal War Feathers
-u(12963, 2);	-- Blademaster Leggings
-u(12964, 2);	-- Tristam Legguards
-u(12965, 2);	-- Spiritshroud Leggings
-u(12966, 2);	-- Blackmist Armguards
-u(12967, 2);	-- Bloodmoon Cloak
-u(12968, 2);	-- Frostwaver Cape
-u(12969, 2);	-- Seeping Willow
-u(13142, 2);	-- Brigam Girdle
-u(13314, 2);	-- Alanna's Embrace
 u(13315, 2); 	-- Testament of Hope
-u(13398, 2);	-- Boots of the Shrieker
-u(13498, 2);	-- Handcrafted Mastersmith Leggings
-u(13502, 2);	-- Handcrafted Mastersmith Girdle
-u(13937, 2);	-- Headmaster's Charge
-u(13938, 2);	-- Bonecreeper Stylus
-u(13944, 2);	-- Tombstone Breastplate
-u(13951, 2);	-- Vigorsteel Vambraces
-u(13952, 2);	-- Iceblade  Hacker
-u(13953, 2);	-- Silent Fang
-u(13955, 2);	-- Stoneform Shoulders
-u(13956, 2);	-- Clutch of Andros
-u(13957, 2);	-- Gargoyle Slashers
-u(13964, 2);	-- Witchblade
-u(13967, 2);	-- Windreaver Greaves
-u(13969, 2);	-- Loomoguard Armbraces
-u(13982, 2);	-- Warblade of Caer Darrow
-u(13983, 2);	-- Gravestone War Axe
-u(13984, 2);	-- Darrowspike
-u(13986, 2);	-- Crown of Caer Darrow
-u(14002, 2);	-- Darrowshire Strongguard
-u(14024, 2);	-- Frightalon
-u(14340, 2);	-- Freezing Lich Robes
-u(14487, 2);	-- Bonechill Hammer
-u(14502, 2);	-- Frostbite Girdle
-u(14503, 2);	-- Death's Clutch
-u(14522, 2);	-- Maelstrom Leggings
-u(14525, 2);	-- Boneclenched Gauntlets
-u(14528, 2);	-- Rattlecage Buckler
-u(14531, 2);	-- Frightskull Shaft
-u(14537, 2);	-- Corpselight Greaves
-u(14538, 2);	-- Deadwalker Mantle
-u(14539, 2);	-- Bone Ring Helm
-u(14541, 2);	-- Barovian Family Sword
-u(14545, 2);	-- Ghostloom Leggings
-u(14548, 2);	-- Royal Cap Spaulders
-u(14576, 2);	-- Ebon Hilt of Marduk
-u(14577, 2);	-- Skullsmoke Pants
-u(14611, 2);	-- Bloodmail Hauberk
-u(14612, 2);	-- Bloodmail Legguards
-u(14614, 2);	-- Bloodmail Belt
-u(14615, 2);	-- Bloodmail Gauntlets
-u(14616, 2);	-- Bloodmail Boots
-u(14620, 2);	-- Deathbone Girdle
-u(14621, 2);	-- Deathbone Sabatons
-u(14622, 2);	-- Deathbone Gauntlets
-u(14623, 2);	-- Deathbone Legguards
-u(14624, 2);	-- Deathbone Chestplate
-u(14626, 2);	-- Necropile Robe
-u(14629, 2);	-- Necropile Cuffs
-u(14631, 2);	-- Necropile Boots
-u(14632, 2);	-- Necropile Leggings
-u(14633, 2);	-- Necropile Mantle
-u(14636, 2);	-- Cadaverous Belt
-u(14637, 2);	-- Cadaverous Armor
-u(14638, 2);	-- Cadaverous Leggings
-u(14640, 2);	-- Cadaverous Gloves
-u(14641, 2);	-- Cadaverous Walkers
 u(15109, 2);	-- Staff of Soran'ruk
-u(15805, 2);	-- Penelope's Rose
-u(15806, 2);	-- Mirah's Song
-u(15853, 2);	-- Windreaper
-u(15854, 2);	-- Dancing Sliver
-u(16666, 2);	-- Vest of Elements
-u(16667, 2);	-- Coif of Elements
 u(16668, 2);	-- Kilt of Elements
-u(16669, 2);	-- Pauldrons of Elements
 u(16670, 2);	-- Boots of Elements
-u(16674, 2);	-- Beaststalker's Tunic
 u(16675, 2);	-- Beaststalker's Boots
-u(16677, 2);	-- Beaststalker's Cap
 u(16678, 2);	-- Beaststalker's Pants
 u(16679, 2);	-- Beaststalker's Mantle
 u(16682, 2);	-- Magister's Boots
-u(16684, 2);	-- Magister's Gloves
-u(16686, 2);	-- Magister's Crown
 u(16687, 2);	-- Magister's Leggings
-u(16688, 2);	-- Magister's Robe
-u(16689, 2);	-- Magister's Mantle
-u(16690, 2);	-- Devout Robe
 u(16691, 2);	-- Devout Sandals
 u(16692, 2);	-- Devout Gloves
-u(16693, 2);	-- Devout Crown
 u(16694, 2);	-- Devout Skirt
-u(16695, 2);	-- Devout Mantle
-u(16698, 2);	-- Dreadmist Mask
 u(16699, 2);	-- Dreadmist Leggings
-u(16700, 2);	-- Dreadmist Robe
-u(16701, 2);	-- Dreadmist Mantle
 u(16704, 2);	-- Dreadmist Sandals
-u(16706, 2);	-- Wildheart Vest
-u(16707, 2);	-- Shadowcraft Cap
 u(16708, 2);	-- Shadowcraft Spaulders
 u(16709, 2);	-- Shadowcraft Pants
-u(16710, 2);	-- Shadowcraft Bracers
-u(16711, 2);	-- Shadowcraft Boots
 u(16715, 2);	-- Wildheart Boots
-u(16716, 2);	-- Wildheart Belt
 u(16718, 2);	-- Wildheart Spaulders
 u(16719, 2);	-- Wildheart Kilt
-u(16720, 2);	-- Wildheart Cowl
-u(16721, 2);	-- Shadowcraft Tunic
-u(16722, 2);	-- Lightforge Bracers
 u(16725, 2);	-- Lightforge Boots
-u(16726, 2);	-- Lightforge Breastplate
-u(16727, 2);	-- Lightforge Helm
 u(16728, 2);	-- Lightforge Legplates
-u(16729, 2);	-- Lightforge Spaulders
-u(16730, 2);	-- Breastplate of Valor
-u(16731, 2);	-- Helm of Valor
 u(16732, 2);	-- Legplates of Valor
-u(16733, 2); 	-- Spaulders of Valor
-u(16734, 2);	-- Boots of Valor
-u(18047, 2);	-- Flame Walkers
-u(18048, 2);	-- Mastersmith's Hammer
-u(18102, 2);	-- Dragonrider Boots
-u(18104, 2);	-- Feralsurge Girdle
 u(18410, 2); 	-- Sprinter's Sword
 u(18411, 2); 	-- Spry Boots
 u(18420, 2); 	-- Bonecrusher
 u(18421, 2); 	-- Backwood Helm
 u(18424, 2); 	-- Sedge Boots
-u(18680, 2);	-- Ancient Bone Bow
-u(18681, 2);	-- Burial Shawl
-u(18682, 2);	-- Ghoul Skin Leggings
-u(18683, 2);	-- Hammer of the Vesper
-u(18686, 2);	-- Bone Golem Shoulders
-u(18689, 2);	-- Phantasmal Cloak
-u(18690, 2);	-- Wraithplate Leggings
-u(18692, 2);	-- Death Knight Sabatons
-u(18693, 2);	-- Shivery Handwraps
-u(18694, 2);	-- Shadowy Mail Greaves
-u(18695, 2);	-- Spellbound Tome
-u(18696, 2);	-- Intricately Runed Shield
-u(18758, 2);	-- Specter's Blade
-u(18759, 2);	-- Malicious Axe
-u(18761, 2);	-- Oblivion's Touch
 u(19507, 2);	-- Inquisitor's Shawl
 u(19508, 2);	-- Branded Leather Bracers
 u(19509, 2);	-- Dusty Mail Boots
@@ -302,85 +155,8 @@ u(19845, 2);	-- Zandalar Illusionist's Mantle
 u(19846, 2);	-- Zandalar Illusionist's Wraps
 u(19848, 2);	-- Zandalar Demoniac's Wraps
 u(19849, 2);	-- Zandalar Demoniac's Mantle
-u(19852, 2);	-- Ancient Hakkari Manslayer
-u(19853, 2);	-- Gurubashi Dwarf Destroyer
-u(19854, 2);	-- Zin'rokh, Destroyer of Worlds
-u(19855, 2);	-- Bloodsoaked Legplates
-u(19857, 2);	-- Cloak of Consumption
-u(19859, 2);	-- Fang of the Faceless
-u(19861, 2);	-- Touch of Chaos
-u(19862, 2);	-- Aegis of the Blood God
-u(19864, 2);	-- Bloodcaller
-u(19865, 2);	-- Warblade of the Hakkari
-u(19866, 2);	-- Warblade of the Hakkari
-u(19867, 2);	-- Bloodlord's Defender
-u(19869, 2);	-- Blooddrenched Grips
-u(19870, 2);	-- Hakkari Loa Cloak
-u(19874, 2);	-- Halberd of Smithing
-u(19877, 2);	-- Animist's Leggings
-u(19878, 2);	-- Bloodsoaked Pauldrons
-u(19886, 2);	-- The Hexxer's Cover
-u(19888, 2);	-- Bloodstained Legplates
-u(19889, 2);	-- Overlord's Embrace
-u(19890, 2);	-- Jin'do's Hexxer
-u(19891, 2);	-- Jin'do's Bag of Whammies
-u(19892, 2);	-- Animist's Boots
-u(19894, 2);	-- Bloodsoaked Gauntlets
-u(19895, 2);	-- Bloodtinged Kilt
-u(19896, 2);	-- Thekal's Grasp
-u(19897, 2);	-- Betrayer's Boots
-u(19899, 2);	-- Ritualistic Legguards
-u(19900, 2);	-- Zulian Stone Axe
-u(19901, 2);	-- Zulian Slicer
-u(19903, 2);	-- Fang of Venoxis
-u(19904, 2);	-- Runed Bloodstained Hauberk
-u(19906, 2);	-- Blooddrenched Footpads
-u(19907, 2);	-- Zulian Tigerhide Cloak
-u(19908, 2);	-- Sceptre of Smiting
-u(19909, 2);	-- Will of Arlokk
-u(19910, 2);	-- Arlokk's Grasp
-u(19913, 2);	-- Bloodsoaked Greaves
-u(19915, 2);	-- Zulian Defender
-u(19918, 2);	-- Jeklik's Crusher
-u(19919, 2);	-- Bloodstained Greaves
-u(19921, 2);	-- Zulian Hacker
-u(19922, 2);	-- Arlokk's Hoodoo Stick
-u(19927, 2);	-- Mar'li's Touch
-u(19928, 2);	-- Animist's Spaulders
-u(19929, 2);	-- Bloodtinged Gloves
-u(19944, 2);	-- Nat Pagle's Fish Terminator
-u(19945, 2);	-- Foror's Eyepatch
-u(19946, 2);	-- Tigule's Harpoon
-u(19961, 2);	-- Gri'lek's Grinder
-u(19962, 2);	-- Gri'lek Carver
-u(19963, 2);	-- Pitchfork of Madness
-u(19964, 2);	-- Renataki's Soul Conduit
-u(19965, 2);	-- Wushoolay's Poker
-u(19967, 2);	-- Thoughtblighter
-u(19968, 2);	-- Fiery Retributer
-u(19993, 2);	-- Hoodoo Hunting Bow
-u(20032, 2);	-- Flowing Ritual Robes
 u(20033, 2);	-- Zandalar Demoniac's Robe
 u(20034, 2);	-- Zandalar Illusionist's Robe
-u(20038, 2);	-- Mandokir's Sting
-u(20257, 2);	-- Seafury Gauntlets
-u(20258, 2);	-- Zulian Ceremonial Staff
-u(20259, 2);	-- Shadow Panther Hide Gloves
-u(20260, 2);	-- Seafury Leggings
-u(20261, 2);	-- Shadow Panther Hide Belt
-u(20262, 2);	-- Seafury Boots
-u(20263, 2);	-- Gurubashi Helm
-u(20264, 2);	-- Peacekeeper Gauntlets
-u(20265, 2);	-- Peacekeeper Bots
-u(20266, 2);	-- Peacekeeper Leggings
-u(20654, 2); 	-- Amethyst War Staff
-u(20657, 2);	-- Crystal Tipped Stiletto
-u(20660, 2); 	-- Stonecutting Glaive
-u(20663, 2); 	-- Deep Stike Bow
-u(20666, 2); 	-- Hardened Steel Warhammer
-u(20669, 2); 	-- Darkstone Claymore
-u(20672, 2); 	-- Sparkling Crystal Wand
-u(20675, 2);	-- Soulrender
 u(21994, 2);	-- Belt of Heroism
 u(21995, 2);	-- Boots of Heroism
 u(21996, 2);	-- Bracers of Heroism
@@ -453,25 +229,9 @@ u(22110, 2);	-- Feralheart Gloves
 u(22111, 2);	-- Feralheart Kilt
 u(22112, 2);	-- Feralheart Spaulders
 u(22113, 2);	-- Feralheart Vest
-u(22225, 2);	-- Dragonskin Cowl
-u(22247, 2);	-- Faith Healer's Boots
-u(22253, 2);	-- Tome of the Lost
-u(22267, 2);	-- Spellweaver's Turban
-u(22269, 2);	-- Shadow Prowler's Cloak
 u(22301, 2);	-- Ironweave Robe
-u(22302, 2);	-- Ironweave Cowl
-u(22303, 2);	-- Ironweave Pants
-u(22311, 2);	-- Ironweave Boots
 u(22328, 2);	-- Legplates of Vigilance
 u(22329, 2);	-- Scepter of Interminable Focus
-u(22332, 2);	-- Blade of Necromancy
-u(22333, 2);	-- Hammer of Divine Might
-u(22335, 2);	-- Lord Valthalak's Staff of Command
-u(22336, 2);	-- Draconian Aegis of the Legion
-u(22337, 2);	-- Shroud of Domination
-u(22342, 2);	-- Leggings of Torment
-u(22343, 2);	-- Handguards of Savagery
-u(22394, 2);	-- Staff of Metanoia
 u(22589, 2); 	-- Atiesh, Greatstaff of the Guardian (Mage)
 u(22630, 2);	-- Atiesh, Greatstaff of the Guardian (Warlock)
 u(22631, 2);	-- Atiesh, Greatstaff of the Guardian (Priest)
@@ -481,14 +241,6 @@ u(22699, 2);	-- Icebane Leggings
 u(22700, 2);	-- Glacial Leggings
 u(22701, 2);	-- Polar Leggings
 u(22702, 2);	-- Icy Scale Leggings
-u(22711, 2);	-- Cloak of the Hakkari Worshipers
-u(22712, 2);	-- Might of the Tribe
-u(22713, 2);	-- Zulian Scepter of Rites
-u(22714, 2);	-- Sacrificial Gauntlets
-u(22715, 2);	-- Gloves of the Tormented
-u(22716, 2);	-- Belt of Untapped Power
-u(22718, 2);	-- Blooddrenched Mask
-u(22720, 2);	-- Zulian Headdress
 u(22798, 2);	-- Might of Menethil
 u(22799, 2);	-- Soulseeker
 u(22800, 2);	-- Brimstone Staff
@@ -553,9 +305,6 @@ u(23075, 2);	-- Death's Bargain
 u(23124, 2);	-- Staff of Balzaphon
 u(23125, 2);	-- Chains of the Lich
 u(23126, 2);	-- Waistband of Balzaphon
-u(23132, 2);	-- Lord Blackwood's Blade
-u(23139, 2);	-- Lord Blackwood's Buckler
-u(23156, 2);	-- Blackwood's Thigh
 u(23168, 2);	-- Scorn's Focal Dagger
 u(23170, 2);	-- the Frozen Clutch
 u(23171, 2);	-- the Axe of Severing
@@ -862,20 +611,13 @@ u(62040, 2); 	-- Ancient Bloodmoon Cloak
 u(65914, 2);	-- Vishas' Hood
 u(65916, 2);	-- Houndmaster's Belt
 u(65917, 2);	-- Monk's Leggings
-u(65925, 2);	-- Lucien's Boots
-u(65934, 2);	-- Staff of the Second Orb
 u(65940, 2);	-- Strapping Belt
 u(65942, 2);	-- Shield of the Righteous Cause
 u(65943, 2);	-- Shrug of the Crazed
-u(65950, 2);	-- Shackles of Punishment
-u(65958, 2);	-- Vaelan's Claw
 u(65964, 2);	-- Gloves of the "Pure"
 u(65967, 2);	-- Breastplate of the Scarlet Monastery
-u(65974, 2);	-- Discipline Rod
-u(65982, 2);	-- Sword of Nefarian's Hand
 u(65988, 2);	-- Helm of the Awakened
 u(65990, 2);	-- Cloak of the False Champion
-u(66001, 2); 	-- Aeyla's Staff
 u(66005, 2);	-- Interrogator's Shackles
 u(66014, 2);	-- Vishas' Hood
 u(66015, 2);	-- Houndmaster's Belt
@@ -1037,137 +779,6 @@ u(41186, 5);		-- Corroded Saronite Edge
 u(41187, 5);		-- Corroded Saronite Woundbringer
 u(41189, 5);		-- Chestplate of Conquest
 u(41190, 5);		-- Legplates of Conquest
-
---------------------------------------------------------------------------------------------------------------------------------------------
---                      7 The source of this item has been removed, but the item is Bind on Equip or a cageable pet.                      --
---------------------------------------------------------------------------------------------------------------------------------------------
--- Template: u(, 7);	--
-
-u(1521, 7);		-- Lumbering Ogre Axe  						(Dustbelcher Lords - Badlands - 2719)
-u(1539, 7);		-- Gnarled Hermit's Staff 			(13) 	(Geopriest Gukk'rok - Southern Barrens - 5863)
-u(1604, 7);		-- Chromatic Sword							(Scale Belly - The Cape of Stranglethorn - 1552)
-u(1917, 7);		-- Jeweled Dagger  							(Morgaine the Sly - Elwynn Forest - 99)
-u(1936, 7);		-- Goblin Screwdriver 				(56) 	(Goblin Engineer - Deadmines - 622)
-u(1943, 7);		-- Goblin Mail Leggings  					(Goblin Shipbuilder - Deadmines - 3947)
-u(1944, 7);		-- Metalworking Gloves 				(130) 	(Goblin Craftsman - Deadmines - 1731)
-u(1945, 7);		-- Woodworking Gloves 						(Goblin Woodcarver - Deadmines - 641)
-u(2035, 7);		-- Sword of the Night Sky 					(Heggin Stonewhisker (Horde Only) - Southern Barrens - 5847)
-u(2105, 7);		-- Thug Shirt								(Former Starting Shirt for orc, troll, undead rogues)
-u(2620, 7);		-- Augural Shroud 							(Nether Sorceress - Desolace - 4684)
-u(2621, 7);		-- Cowl of Necromancy 						(Shadowforge Darkweaver - Badlands - 2740)
-u(2622, 7);		-- Nimar's Tribal Headdress 		(35) 	(Nimar the Slayer - Arathi Highlands - 2606)
-u(2623, 7);		-- Holy Diadem 								(Caretaker Alaric/Caretaker Nevlin/Caretaker Weston(Horde only) - Arathi Highlands - 2782/2780/2781)
-u(2624, 7);		-- Thinking Cap 							(Dustbelcher Shaman - Badlands - 2718)
-u(2899, 7);		-- Wendigo Collar 							(Old Icebeard - Dun Morogh - 1271)
-u(3000, 7);		-- Brood Mother Carapace 					(Mother Fang - Elwynn Forest - 471)
-u(3223, 7);		-- Frostmane Scepter 						(Great Father Arctikus - Dun Morogh - 1260)
-u(3283, 7);		-- Battle Chain Tunic						(Bjarn - Dun Morogh - 1130)
-u(3330, 7);		-- Dargol's Hauberk					(5) 	(Captain Dargol - Tirisfal Glades - 1658)
-u(3341, 7);		-- Gauntlets of Ogre Strength 		(9) 	(Boulderfist Enforcer - Arathi Highlands - 2564)
-u(3392, 7);		-- Ringed Helm 								(Garneg Charskul - Wetlands - 2108)
-u(3569, 7);		-- Vicar's Robe 							(Death's Head Priest - Razorfen Kraul - 4517)
-u(4303, 7);		-- Cranial Thumper 							(Deeb - Tirisfal Glades - 1911)
-u(4436, 7);		-- Jewel-Encrusted Sash 					(Dalaran Spellscribe (Horde only) - Silverpine Forest - 1920)
-u(4437, 7);		-- Channeler's Staff 						(Dalaran Spellscribe(Horde only) - Silverpine Forest - 1920)
-u(4439, 7);		-- Bruiser Club 							(Rot Hide Bruiser - Silverpine Forest - 1944)
-u(4445, 7);		-- Flesh Carver 							(Snarlmane - Silverpine Forest - 1948)
-u(4463, 7);		-- Beaded Raptor Collar 			(16) 	(Razormaw Matriarch - Wetlands - 1140)
-u(4478, 7);		-- Iridescent Scale Leggings 		(14) 	(Scale Belly - The Cape of Stranglethorn - 4478)
-u(4767, 7);		-- Coppercloth Gloves 						(Ambermill Miner (Horde Only) - Silverpine Forest - 3578)
-u(4861, 7);		-- Sleek Feathered Tunic 			(65) 	(Mazzranache - Mulgore - 3068)
-u(5028, 7);		-- Lord Sakrasis' Scepter 			(28) 	(Lord Sakrasis' - The Cape of Stranglethorn - 2541)
-u(5181, 7);		-- Vibrant Silk Cape 				(18) 	(Singer - Arathi Highlands - 2600)
-u(5256, 7);		-- Kovork's Rattle 					(6) 	(Kovork - Arathi Highlands - 2603)
-u(5257, 7);		-- Dark Hooded Cape 						(Nimar the Slayer - Arathi Highlands - 2606)
-u(5608, 7);		-- Living Cowl 								(Tangled Horror - Swamp of Sorrows - 766)
-u(5624, 7);		-- Circlet of the Order 					(Stormgarde Defender - Arathi Highlands - 2584)
-u(5742, 7);		-- Gemstone Dagger 					(7) 	(Geomancer Flintdagger - Arathi Highlands - 2609)
-u(5744, 7);		-- Pale Skinner 					(8) 	(Fedfennel - Elwynn Forest - 472)
-u(5749, 7);		-- Scythe Axe 						(6) 	(Ma'ruk Wyrmscale - Wetlands - 2090)
-u(5750, 7);		-- Warchief's Girdle 				(6) 	(Ma'ruk Wyrmscale - Wetlands - 2090)
-u(5751, 7);		-- Webwing Cloak 					(11) 	(Pridewing Patriarch - Stonetalon Mountains - 4015)
-u(5752, 7);		-- Wyvern Tailspike 						(Pridewing Patriarch - Stonetalon Mountains - 4015)
-u(5969, 7);		-- Regent's Cloak 							(Ravenclaw Regent - Silverpine Forest - 2283)
-u(5975, 7);		-- Ruffian Belt 							(Rot Hide Bruiser - Silverpine Forest - 1944)
-u(6198, 7);		-- Jurassic Wristguards 			(19) 	(Razormaw Matriarch - Wetlands - 1140)
-u(6200, 7);		-- Garneg's War Belt 				(9) 	(Garneg Charskull - Wetlands - 2108)
-u(6333, 7);		-- Spikelash Dagger 				(6) 	(Lady Vespira - Darkshore - 7016)
-u(6628, 7);		-- Raven's Claws  							(Ravenclaw Regent - Silverpine Forest - 2283)
-u(9375, 7);		-- Expert Goldmaker's Helmet 				(Digmaster Shovelphlange - Badlands - 7057)
-u(9378, 7);		-- Shovelphlange's Mining Axe 				(Digmaster Shovelphlange - Badlands - 7057)
-u(9382, 7);		-- Tromping Miner's Boots 					(Digmaster Shovelphlange - Badlands - 7057)
-u(10553, 7);	-- Foreman Vest 					(23)	(Gibblewilt - Dun Morogh - 8503)
-u(10554, 7);	-- Foreman Pants					(16)	(Gibblewilt - Dun Morogh - 8503)
-u(16039, 7);	-- Ta'Kierthan Songblade 			(14) 	(Lord Darkscythe - Eastern Plaguelands - 10826)
-u(16671, 7);	-- Bindings of Elements 					(Crypt Beast - Strat BD - 10413)(Risen Monk - Strat FD - 11043)(Splintered Skeleton - Scholo - 10478)
-u(16672, 7);	-- Gauntlets of Elements 					(Pyroguard Emberseer - UBRS - 9816)
-u(16673, 7);	-- Cord of Elements 						(Rage Talon Flamescale - UBRS) (Scarshield Warlock, Firebrand Pyromancer, Quartermaster Zigris, Firebrand Invoker, Bloodaxe Evoker, Smolderthorn Witch Doctor  - LBRS)
-u(16676, 7);	-- Beaststalker's Gloves 					(War Master Voone - LBRS)
-u(16680, 7);	-- Beaststalker's Belt 						(Rage Talon Dragon Guard - UBRS) (Firebrand Grunt, Bloodaxe Raider, Firebrand Legionnaire, Smolderthorn Headhunter, Quartermaster Zigris, Scarshield Raider - LBRS)
-u(16681, 7);	-- Beaststalker's Bindings 					(Rage Talon Dragonspawn - UBRS) (Crimson Defender, Ghoul Ravener, Fleshflayer Ghoul - Stratholme)
-u(16683, 7);	-- Magister's Bindings 						(Rage Talon Fire Tongue - UBRS) (Quartermaster Zigris, Firebrand Pyromancer, Scarshield Spellbinder, Firebrand Invoker, Bloodaxe Evoker - LBRS)
-u(16684, 7);	-- Magister's Gloves 						(Doctor Theolen Krastinov - Scholomance)
-u(16685, 7);	-- Magister's Belt 							(Smolderthorn Mystic - LBRS) (Scholomance Adept - Scholomance) (Thuzadin Shadowcaster, Crimson Conjurer, Crimson Battle Mage, Thuzadin Necromancer, Crimson Sorcerer - Stratholme)
-u(16696, 7);	-- Devout Belt 								(Blackhand Summoner - UBRS) (Firebrand Darkweaver, Smolderthorn Shadow Priest, Bloodaxe Summoner, Scarshield Spellbinder, Quartermaster Zigris, Firebrand Dreadweaver - LBRS)
-u(16697, 7);	-- Devout Bracers 							(Thuzadin Shadowcaster, Crimson Initiate, Crimson Conjurer, Thuzadin Necromancer, Crimson Priest - Stratholme)
-u(16702, 7);	-- Dreadmist Belt 							(Crimson Conjuror, Thuzadin Shadowcaster, Thuzadin Necromancer - Stratholme) (Scholomance Necromancer - Scholomance)
-u(16703, 7);	-- Dreadmist Bracers 						(Blackhand Dreadweaver - UBRS) (Firebrand Darkweaver, Scarshield Warlock, Bloodaxe Summoner, Quartermaster Zigris, Smolderthorn Seer, Firebrand Dreadwaver - LBRS)
-u(16705, 7);	-- Dreadmist Wraps 							(Lorekeeper Polkelt - Scholomance)
-u(16710, 7);	-- Shadowcraft Bracers 						(Plague Ghoul - Stratholme) (Risen Construct, Scholomance Occultist, Instructor Malicia - Scholomance)
-u(16712, 7);	-- Shadowcraft Gloves 						(Shadow Hunter Vosh'gajin - LBRS)
-u(16713, 7);	-- Shadowcraft Belt 						(Blackhand Assassin - UBRS)(Quartermaster Zigris, Firebrand Grunt, Firebrand Legionnaire, Scarshield Legionnaire, Bloodaxe Warmonger, Smolderthorn Shadow Hunter - LBRS)
-u(16714, 7);	-- Wildheart Bracers 						(Diseased Ghoul - Scholomance) (Crimson Inquisitor, Wailing Banshee, Shrieking Banshee - Stratholme)
-u(16716, 7);	-- Wildheart Belt 							(The Ravenian, Spectral Researcher, Scholomance Handler, Spectral Teacher - Scholomance) (Scarshield Raider, Bloodaxe Raider, Quartermaster Zigris - LBRS)
-u(16717, 7);	-- Wildheart Gloves 						(The Unforgiven - Stratholme)
-u(16722, 7);	-- Lightforge Bracers 						(Risen Warrior, Risen Protector, Lord Alexei Barov - Scholomance)
-u(16723, 7);	-- Lightforge Belt 							(Crimson Gallant, Crimson Guardsman, Rockwing Screecher, Rockwing Gargoyle - Stratholme)
-u(16724, 7);	-- Lightforge Gauntlets 					(Timmy the Cruel - Stratholme)
-u(16735, 7);	-- Bracers of Valor 						(Blackhand Iron Guard - UBRS) (Smolderthron Axe Thrower, Quartermaster Zigris, Firebrand Legionnaire, Scarshield Legionnaire, Firebrand Grunt, Bloodaxe Warmonger - LBRS)
-u(16736, 7);	-- Belt of Valor 							(Bile Spewer, Patchwork Horror, Venom Belcher - Stratholme) (Smolderthorn Berserker - LBRS)
-u(16737, 7);	-- Gauntlets of Valor 						(Ramstein the Gorger - Stratholme)
-u(17054, 7);	-- Joonho's Mercy 							(General Fangferror - Azshara - 6650)
-u(17055, 7);	-- Changuk Smasher 							(Omgorn the Lost - Tanaris - 8201)
-u(17922, 7);	-- Lionfur Armor 							(The Rake - Mulgore - 5807)
-u(18671, 7);	-- Baron Charr's Sceptre 					(Baron Charr - Un'Goro Crater - 14461)
-u(18672, 7); 	-- Elemental Ember 							(Baron Charr - Un'Goro Crater - 14461)
-u(18673, 7);	-- Avalanchion's Stony Hide 				(Avalanchion - Azshara (Elemental Invasion) - 44372)
-u(18676, 7);	-- Sash of the Windreaver 					(The Windreaver - Silithus (Elemental Invasion) - 14454)
-u(18677, 7);	-- Zephyr Cloak 							(The Windreaver - Silithus (Elemental Invasion) - 14454)
-u(19921, 7);	-- Zulian Hacker							(Zul Gurub Mob Drop)
-u(20258, 7);	-- Zulian Ceremonial Staff					(Zul Gurub Mob Drop)
-u(20259, 7);	-- Shadow Panther Hide Gloves				(Zul Gurub Mob Drop)
-u(20261, 7);	-- Shadow Panther Hide Belt					(Zul Gurub Mob Drop)
-u(20263, 7);	-- Gurubashi Helm 							(Zul Gurub Mob Drop)
-u(20652, 7);	-- Abyssal Cloth Slippers					(Azure Templar - Silithus)
-u(20653, 7);	-- Abyssal Plate Gauntlets 					(Azure Templar - Silithus)
-u(20655, 7);	-- Abyssal Cloth Handwraps 					(Crimson Templar - Silithus)
-u(20656, 7);	-- Abyssal Mail	Sabatons 					(Crimson Templar - Silithus)
-u(20658, 7);	-- Abyssal Leather Boots  					(Hoary Templar - Silithus)
-u(20659, 7);	-- Abyssal Mail Handguards 					(Hoary Templar - Silithus)
-u(20661, 7);	-- Abyssal Leather Gloves 					(Earthen Templar - Silithus)
-u(20662, 7);	-- Abyssal Plate Greaves 					(Earthen Templar - Silithus)
-u(20664, 7);	-- Abyssal Cloth Sash						(The Duke of Cynders - Silithus)
-u(20665, 7);	-- Abyssal Leather Leggings 				(The Duke of Cynders - Silithus)
-u(20667, 7);	-- Abyssal Leather Belt 					(The Duke of Fathoms - Silithus)
-u(20668, 7);	-- Abyssal Mail Legguards 					(The Duke of Fathoms - Silithus)
-u(20670, 7);	-- Abyssal Mail Clutch 						(The Duke of Shards - Silithus)
-u(20671, 7);	-- Abyssal Plate Legguards 					(The Duke of Shards - Silithus)
-u(20673, 7);	-- Abyssal Plate Girdle 					(The Duke of Zephyrs - Silithus)
-u(20674, 7);	-- Abyssal Cloth Pants 						(The Duke of Zephyrs - Silithus)
-u(20693, 7);	-- Weighted Cloak 							(Bag of Spoils - Quest Abyssal Contacts - Silithus)
-u(20694, 7);	-- Glowing Black Orb 						(Bag of Spoils - Quest Abyssal Contacts - Silithus)
-u(20696, 7);	-- Crystal Spiked Maul 						(Sack of Spoils -- Quest Signet of the Dukes - Silithus)
-u(20697, 7);	-- Crystalline Threaded Cape 				(Chillwind Ravager - Winterspring)
-u(20720, 7);	-- Dark Whisper Blade 						(Chest of Spoils - Quest Scepter of the Council - Silithus)
-u(20722, 7); 	-- Crystal Slugthrower 						(Chest of Spoils - Quest Scepter of the Council - Silithus)
-u(38513, 7);	-- Boarhide Leggings 				(36) 	(Gruff Swiftbite - Elwynn Forest)
-u(45052, 7);	-- Gruffscale Leggings 						(Gruff - Ungoro Crater)
-u(66540, 7); 	-- Miniature Winter Veil Tree				(You're A Mean One Quest -- Ironforge)
-u(72068, 7);	-- Guardian Cub								(Former Store Cageable Pet)
-u(93625, 7); 	-- Miniature Winter Veil Tree				(You're A Mean One Quest -- Ironforge)
-u(117371, 7);	-- Winter Veil Tree							(Stolen Presents)
-u(118574, 7);	-- Hatespark the Tiny						(Wow anniversary molten core)
-u(120952, 7);	-- Slarkhide 								(Added in WOD only to Big Crate of Salvage)
 
 -----------------------------------------------------
 --                PVP GEAR SECTION:                --

@@ -53,6 +53,7 @@ _.Instances =
 								i(109791),	-- Sharpeye Greaves
 								i(109790),	-- Streamslither Boots
 								i(109794),	-- Verdant Plate Treads
+								un(3, i(118755)),	-- Dripping Willow [Only available during pre WoD level 90 version]
 							})),
 							cr(76021, e(1227, {	-- Kyrak
 								i(118724),	-- Finkle's Flenser
@@ -76,6 +77,7 @@ _.Instances =
 								i(109934),	-- Spaulders of Burning Focus
 								i(109939),	-- Streamslither Spaulders
 								i(109944),	-- Verdant Plate Spaulders
+								un(3, i(118756)),	-- Finkle's Shanker [Only available during pre WoD level 90 version]
 							})),
 							cr(79912, e(1228, { -- Commander Tharbek
 								ig(21524),	-- Red Winter Hat
@@ -121,6 +123,10 @@ _.Instances =
 								i(109853),	-- Sharpeye Gauntlets
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
+								un(3, i(118751)),	-- Nightbrace Chestguard [Only available during pre WoD level 90 version]
+								un(3, i(118754)),	-- Polychromatic Dreamwrap [Only available during pre WoD level 90 version]
+								un(3, i(118757)),	-- Tharbek's Terrible Charge [Only available during pre WoD level 90 version]
+								un(3, i(118758)),	-- Tharbek's Horrific Posessor [Only available during pre WoD level 90 version]
 							})),
 							n(77927, {	-- Son of the Beast
 								i(120340),	-- Son of the Beast's Bloody Paw

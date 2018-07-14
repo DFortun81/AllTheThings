@@ -1006,9 +1006,9 @@ _.WorldEvents =
 									un(29, i(128649)), -- Illusion: Winter's Grasp
 									un(29, i(118572)), -- Illusion: Flames of Ragnaros
 									-- Appearances
-									un(2, i(66540)), -- Miniature Winter Veil Tree (Level 85)
-									un(2, i(93625)), -- Miniature Winter Veil Tree (Level 90)
-									un(2, i(117371)), -- Miniature Winter Veil Tree (Level 1-110)
+									un(7, i(66540)), -- Miniature Winter Veil Tree (Level 85)
+									un(7, i(93625)), -- Miniature Winter Veil Tree (Level 90)
+									un(7, i(117371)), -- Miniature Winter Veil Tree (Level 1-110)
 									un(29, i(143898)), -- Miniature Winter Veil Tree (Level 1 - Cosmetic)
 								},
 							}),
@@ -1149,9 +1149,9 @@ _.WorldEvents =
 									un(29, i(128649)), -- Illusion: Winter's Grasp
 									un(29, i(118572)), -- Illusion: Flames of Ragnaros
 									-- Appearances
-									un(2, i(66540)), -- Miniature Winter Veil Tree (Level 85)
-									un(2, i(93625)), -- Miniature Winter Veil Tree (Level 90)
-									un(2, i(117371)), -- Miniature Winter Veil Tree (Level 1-110)
+									un(7, i(66540)), -- Miniature Winter Veil Tree (Level 85)
+									un(7, i(93625)), -- Miniature Winter Veil Tree (Level 90)
+									un(7, i(117371)), -- Miniature Winter Veil Tree (Level 1-110)
 									un(29, i(143898)), -- Miniature Winter Veil Tree (Level 1 - Cosmetic)
 								},
 								["lvl"] = 101,

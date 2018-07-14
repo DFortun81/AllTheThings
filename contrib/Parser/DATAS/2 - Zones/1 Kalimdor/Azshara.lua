@@ -924,9 +924,7 @@ _.Zones =
 						dr(	1.1	, i(	6542	)), --	Willow Cape
 						dr(	1	, i(	6557	)), --	Bard's Boots
 						dr(	1	, i(	9757	)), --	Gypsy Tunic
-						nld({     -- Legacy
-							i(17054), 	-- Joonho's Mercy
-						}),							
+						un(7, i(17054)), 	-- Joonho's Mercy				
 					}), 
 					n(6649, { 		-- Lady Sesspira
 						dr(	9	, i(	6547	)), --	Soldier's Gauntlets
@@ -1071,7 +1069,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 852,

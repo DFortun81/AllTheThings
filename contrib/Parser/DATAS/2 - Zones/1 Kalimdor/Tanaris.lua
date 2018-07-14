@@ -890,9 +890,7 @@ _.Zones =
 						dr(	1.1	, i(	10069	)), --	Righteous Bracers
 						dr(	1	, i(	10076	)), --	Lord's Armguards
 						dr(	1	, i(	10127	)), --	Revenant Bracers
-						nld({     -- Legacy
-							i(17055),	-- Changuk Smasher
-						}),							
+						un(7, i(17055)),	-- Changuk Smasher							
 					}), 
 					n(39183, { 		-- Scorpitar
 						dr(	6	, i(	7540	)), --	Champion's Helmet
@@ -1885,7 +1883,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qr(q(8181, {	-- Confront Yeh'kinya
 								un(34, i(20218)),	-- Faded Hakkari Cloak
 								un(34, i(20219)),	-- Tattered Hakkari Cape
@@ -1903,6 +1901,10 @@ _.Zones =
 								un(34, i(6726)),	-- Razzeric's Customized Seatbelt
 								un(34, i(6727)),	-- Razzeric's Racing Grips
 							}),
+							q(8366, {	-- Southsea Shakedown
+								un(34, i(20640)),	-- Southsea Head Bucket
+								un(34, i(20641)),	-- Southsea Mojo Boots
+							}),
 							q( 5863, {	-- The Dunemaul Compound
 								un(34, i(16738)),	-- Witherseed Gloves
 								un(34, i(16739)),	-- Rugwood Mantle
@@ -1913,7 +1915,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 851,

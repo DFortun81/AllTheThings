@@ -152,7 +152,7 @@ _.GearSets =
 			un(11, i(22304)), -- Hands
 			un(11, i(22306)), -- Belt
 			i(22303), -- Legs
-			i(22311), -- Feet
+			un(2, i(22311)), -- Feet
 		}),
 		gs(1471, { -- Light-Woven Triumvirate Regalia
 			["groups"] = {

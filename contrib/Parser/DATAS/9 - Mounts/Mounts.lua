@@ -847,10 +847,10 @@ _.Mounts =
 		un(2, ach(416, {		-- Scarab Lord
 			un(2, i(21176)),		-- Black Qiraji Resonating Crystal
 		})),
-		un(2, ach(881, {		-- Swift Razzashi Raptor
+		un(12, ach(881, {		-- Swift Razzashi Raptor
 			un(9, i(19872)),	-- Swift Razzashi Raptor
 		})),
-		un(2, ach(880, {		-- Swift Zulian Tiger
+		un(12, ach(880, {		-- Swift Zulian Tiger
 			un(9, i(19902)),		-- Swift Zulian Tiger
 		})),
 		un(2, ach(9496, {		-- Warlord's Deathwheel

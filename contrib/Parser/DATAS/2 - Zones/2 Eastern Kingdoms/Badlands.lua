@@ -974,7 +974,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qa(719, {	-- A Dwarf and His Tools
 								un(34, i(4978)),	-- Ryedol's Hammer
 							}),
@@ -994,6 +994,12 @@ _.Zones =
 								un(34, i(15858)),	-- Freewind Gloves
 								un(34, i(15859)),	-- Seapost Girdle
 							})),
+							qh(793, {	-- Broken Alliances
+								un(34, i(11193)),	-- Blazewind Breastplate
+								un(34, i(11194)),	-- Prismscale Hauberk
+								un(34, i(11195)),	-- Warforged Chestplate
+								un(34, i(11196)),	-- Mindburst Medallion
+							}),
 							qdg({
 								["questID"] = 715,	-- Liquid Stone
 								["qg"] = 2920,	-- Quest Giver: Lucien Tosselwrench
@@ -1035,6 +1041,12 @@ _.Zones =
 								un(34, i(12108)),	-- Basaltscale Armor
 								un(34, i(12111)),	-- Lavaplate Gauntlets
 							})),
+							qa(717, {	-- Tremors of the Earth
+								un(34, i(11193)),	-- Blazewind Breastplate
+								un(34, i(11194)),	-- Prismscale Hauberk
+								un(34, i(11195)),	-- Warforged Chestplate
+								un(34, i(11196)),	-- Mindburst Medallion
+							}),
 							qdg({
 								["questID"] = 2202,	-- Uldaman Reagent Run
 								["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
@@ -1060,7 +1072,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["lvl"] = 40,	

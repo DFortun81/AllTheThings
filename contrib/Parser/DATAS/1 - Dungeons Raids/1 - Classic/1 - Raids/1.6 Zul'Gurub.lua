@@ -325,68 +325,69 @@ _.Instances = { tier(1, {	-- Classic
 				un(2, i(19702)),	-- Vilebranch Coin
 				un(2, i(19703)),	-- Witherbark Coin
 				un(2, i(19698)),	-- Zulian Coin
-				i(19908),	-- Sceptre of Smiting
-				i(20258),	-- Zulian Ceremonial Staff
-				i(20259),	-- Shadow Panther Hide Gloves
-				i(19921),	-- Zulian Hacker
-				i(20261),	-- Shadow Panther Hide Belt
-				i(20263),	-- Gurubashi Helm
+				un(2, i(19908)),	-- Sceptre of Smiting
+				un(7, i(20258)),	-- Zulian Ceremonial Staff
+				un(7, i(20259)),	-- Shadow Panther Hide Gloves
+				un(7, i(19921)),	-- Zulian Hacker
+				un(7, i(20261)),	-- Shadow Panther Hide Belt
+				un(7, i(20263)),	-- Gurubashi Helm
 			}),
 			n(14517, { -- High Priestess Jeklik
-				i(19915),	-- Zulian Defender
-				i(19918),	-- Jeklik's Crusher
-				i(19928),	-- Animist's Spaulders
-				i(20262),	-- Seafury Boots
-				i(20265),	-- Peacekeeper Bots
-				i(22711),	-- Cloak of the Hakkari Worshipers
-				i(22712),	-- Might of the Tribe
-				i(22713),	-- Zulian Scepter of Rites
-				i(22714),	-- Sacrificial Gauntlets
-				i(22715),	-- Gloves of the Tormented
-				i(22716),	-- Belt of Untapped Power
-				i(22718),	-- Blooddrenched Mask
-				i(22720),	-- Zulian Headdress
+				un(2, i(19915)),	-- Zulian Defender
+				un(2, i(19918)),	-- Jeklik's Crusher
+				un(2, i(19928)),	-- Animist's Spaulders
+				un(2, i(20262)),	-- Seafury Boots
+				un(2, i(20265)),	-- Peacekeeper Bots
+				un(2, i(22711)),	-- Cloak of the Hakkari Worshipers
+				un(2, i(22712)),	-- Might of the Tribe
+				un(2, i(22713)),	-- Zulian Scepter of Rites
+				un(2, i(22714)),	-- Sacrificial Gauntlets
+				un(2, i(22715)),	-- Gloves of the Tormented
+				un(2, i(22716)),	-- Belt of Untapped Power
+				un(2, i(22718)),	-- Blooddrenched Mask
+				un(2, i(22720)),	-- Zulian Headdress
 			}),
 			n(14510, { -- High Priestess Mar'li
-				i(19919),	-- Bloodstained Greaves
-				i(19927),	-- Mar'li's Touch
-				i(20032),	-- Flowing Ritual Robes
-				i(22711),	-- Cloak of the Hakkari Worshipers
-				i(22712),	-- Might of the Tribe
-				i(22713),	-- Zulian Scepter of Rites
-				i(22714),	-- Sacrificial Gauntlets
-				i(22715),	-- Gloves of the Tormented
-				i(22716),	-- Belt of Untapped Power
-				i(22718),	-- Blooddrenched Mask
-				i(22720),	-- Zulian Headdress
+				un(2, i(19919)),	-- Bloodstained Greaves
+				un(2, i(19927)),	-- Mar'li's Touch
+				un(2, i(20032)),	-- Flowing Ritual Robes
+				un(2, i(22711)),	-- Cloak of the Hakkari Worshipers
+				un(2, i(22712)),	-- Might of the Tribe
+				un(2, i(22713)),	-- Zulian Scepter of Rites
+				un(2, i(22714)),	-- Sacrificial Gauntlets
+				un(2, i(22715)),	-- Gloves of the Tormented
+				un(2, i(22716)),	-- Belt of Untapped Power
+				un(2, i(22718)),	-- Blooddrenched Mask
+				un(2, i(22720)),	-- Zulian Headdress
 			}),
 			n(14507, { -- High Priest Venoxis
-				i(19900),	-- Zulian Stone Axe
-				i(19903),	-- Fang of Venoxis
-				i(19904),	-- Runed Bloodstained Hauberk
-				i(19906),	-- Blooddrenched Footpads
-				i(19907),	-- Zulian Tigerhide Cloak
-				i(22711),	-- Cloak of the Hakkari Worshipers
-				i(22712),	-- Might of the Tribe
-				i(22713),	-- Zulian Scepter of Rites
-				i(22714),	-- Sacrificial Gauntlets
-				i(22715),	-- Gloves of the Tormented
-				i(22716),	-- Belt of Untapped Power
-				i(22718),	-- Blooddrenched Mask
-				i(22720),	-- Zulian Headdress
+				un(2, i(19900)),	-- Zulian Stone Axe
+				un(2, i(19903)),	-- Fang of Venoxis
+				un(2, i(19904)),	-- Runed Bloodstained Hauberk
+				un(2, i(19906)),	-- Blooddrenched Footpads
+				un(2, i(19907)),	-- Zulian Tigerhide Cloak
+				un(2, i(22711)),	-- Cloak of the Hakkari Worshipers
+				un(2, i(22712)),	-- Might of the Tribe
+				un(2, i(22713)),	-- Zulian Scepter of Rites
+				un(2, i(22714)),	-- Sacrificial Gauntlets
+				un(2, i(22715)),	-- Gloves of the Tormented
+				un(2, i(22716)),	-- Belt of Untapped Power
+				un(2, i(22718)),	-- Blooddrenched Mask
+				un(2, i(22720)),	-- Zulian Headdress
 			}),
 			n(11382, { -- Bloodlord Mandokir
-				un(12, ach(881)),	-- Swift Razzashi Raptor
-				i(19865),	-- Warblade of the Hakkari
-				i(19867),	-- Bloodlord's Defender
-				i(19869),	-- Blooddrenched Grips
-				i(19870),	-- Hakkari Loa Cloak
-				i(19874),	-- Halberd of Smithing
-				i(19877),	-- Animist's Leggings
-				i(19878),	-- Bloodsoaked Pauldrons
-				i(19895),	-- Bloodtinged Kilt
-				i(20038),	-- Mandokir's Sting
-				i(19872),	-- Swift Razzashi Raptor
+				un(2, i(19865)),	-- Warblade of the Hakkari
+				un(2, i(19867)),	-- Bloodlord's Defender
+				un(2, i(19869)),	-- Blooddrenched Grips
+				un(2, i(19870)),	-- Hakkari Loa Cloak
+				un(2, i(19874)),	-- Halberd of Smithing
+				un(2, i(19877)),	-- Animist's Leggings
+				un(2, i(19878)),	-- Bloodsoaked Pauldrons
+				un(2, i(19895)),	-- Bloodtinged Kilt
+				un(2, i(20038)),	-- Mandokir's Sting
+				un(9, i(19872, {	-- Swift Razzashi Raptor
+					un(12, ach(881)),	-- Swift Razzashi Raptor
+				})),
 			}),
 			un(7, i(19931, {	-- Gurubashi Mojo Madness
 				un(2, recipe(24266)),	-- Gurubashi Mojo Madness
@@ -412,68 +413,69 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			})),
 			n(14509, { -- High Priest Thekal
-				un(12, ach(880)),	-- Swift Zulian Tiger
-				i(19896),	-- Thekal's Grasp
-				i(19897),	-- Betrayer's Boots
-				i(19899),	-- Ritualistic Legguards
-				i(19901),	-- Zulian Slicer
-				i(20260),	-- Seafury Leggings
-				i(20266),	-- Peacekeeper Leggings
-				i(22711),	-- Cloak of the Hakkari Worshipers
-				i(22712),	-- Might of the Tribe
-				i(22713),	-- Zulian Scepter of Rites
-				i(22714),	-- Sacrificial Gauntlets
-				i(22715),	-- Gloves of the Tormented
-				i(22716),	-- Belt of Untapped Power
-				i(22718),	-- Blooddrenched Mask
-				i(22720),	-- Zulian Headdress
-				i(19902),	-- Swift Zulian Tiger
+				un(2, i(19896)),	-- Thekal's Grasp
+				un(2, i(19897)),	-- Betrayer's Boots
+				un(2, i(19899)),	-- Ritualistic Legguards
+				un(2, i(19901)),	-- Zulian Slicer
+				un(2, i(20260)),	-- Seafury Leggings
+				un(2, i(20266)),	-- Peacekeeper Leggings
+				un(2, i(22711)),	-- Cloak of the Hakkari Worshipers
+				un(2, i(22712)),	-- Might of the Tribe
+				un(2, i(22713)),	-- Zulian Scepter of Rites
+				un(2, i(22714)),	-- Sacrificial Gauntlets
+				un(2, i(22715)),	-- Gloves of the Tormented
+				un(2, i(22716)),	-- Belt of Untapped Power
+				un(2, i(22718)),	-- Blooddrenched Mask
+				un(2, i(22720)),	-- Zulian Headdress
+				un(9, i(19902, {	-- Swift Zulian Tiger
+					un(12, ach(880)),	-- Swift Zulian Tiger
+				})),
 			}),
 			n(15114, { -- Gahz'ranka
-				i(19946),	-- Tigule's Harpoon
-				i(19944),	-- Nat Pagle's Fish Terminator
-				i(19945),	-- Foror's Eyepatch
+				un(2, i(19946)),	-- Tigule's Harpoon
+				un(2, i(19944)),	-- Nat Pagle's Fish Terminator
+				un(2, i(19945)),	-- Foror's Eyepatch
 			}),
 			n(14515, { -- High Priestess Arlokk
-				i(19909),	-- Will of Arlokk
-				i(19910),	-- Arlokk's Grasp
-				i(19913),	-- Bloodsoaked Greaves
-				i(19922),	-- Arlokk's Hoodoo Stick
-				i(22711),	-- Cloak of the Hakkari Worshipers
-				i(22712),	-- Might of the Tribe
-				i(22713),	-- Zulian Scepter of Rites
-				i(22714),	-- Sacrificial Gauntlets
-				i(22715),	-- Gloves of the Tormented
-				i(22716),	-- Belt of Untapped Power
-				i(22718),	-- Blooddrenched Mask
-				i(22720),	-- Zulian Headdress
+				un(2, i(19909)),	-- Will of Arlokk
+				un(2, i(19910)),	-- Arlokk's Grasp
+				un(2, i(19913)),	-- Bloodsoaked Greaves
+				un(2, i(19922)),	-- Arlokk's Hoodoo Stick
+				un(2, i(22711)),	-- Cloak of the Hakkari Worshipers
+				un(2, i(22712)),	-- Might of the Tribe
+				un(2, i(22713)),	-- Zulian Scepter of Rites
+				un(2, i(22714)),	-- Sacrificial Gauntlets
+				un(2, i(22715)),	-- Gloves of the Tormented
+				un(2, i(22716)),	-- Belt of Untapped Power
+				un(2, i(22718)),	-- Blooddrenched Mask
+				un(2, i(22720)),	-- Zulian Headdress
 			}),
 			n(11380, { -- Jin'do the Hexxer
-				i(19884),	-- Jin'do's Judgement					
-				i(19886),	-- The Hexxer's Cover
-				i(19888),	-- Bloodstained Legplates
-				i(19889),	-- Overlord's Embrace
-				i(19890),	-- Jin'do's Hexxer
-				i(19891),	-- Jin'do's Bag of Whammies
-				i(19892),	-- Animist's Boots
-				i(19929),	-- Bloodtinged Gloves
-				i(19894),	-- Bloodsoaked Gauntlets
+				un(2, i(19884)),	-- Jin'do's Judgement					
+				un(2, i(19886)),	-- The Hexxer's Cover
+				un(2, i(19888)),	-- Bloodstained Legplates
+				un(2, i(19889)),	-- Overlord's Embrace
+				un(2, i(19890)),	-- Jin'do's Hexxer
+				un(2, i(19891)),	-- Jin'do's Bag of Whammies
+				un(2, i(19892)),	-- Animist's Boots
+				un(2, i(19929)),	-- Bloodtinged Gloves
+				un(2, i(19894)),	-- Bloodsoaked Gauntlets
 			}),
 			n(14834, { -- Hakkar the Soulflayer
 				un(12, ach(688)),	-- Zul'Gurub
-				i(19852),	-- Ancient Hakkari Manslayer
-				i(19853),	-- Gurubashi Dwarf Destroyer
-				i(19854),	-- Zin'rokh, Destroyer of Worlds
-				i(19855),	-- Bloodsoaked Legplates
-				i(19857),	-- Cloak of Consumption
-				i(19859),	-- Fang of the Faceless
-				i(19861),	-- Touch of Chaos
-				i(19862),	-- Aegis of the Blood God
-				i(19864),	-- Bloodcaller
-				i(19865),	-- Warblade of the Hakkari
-				i(19866),	-- Warblade of the Hakkari
-				i(20257),	-- Seafury Gauntlets
-				i(20264),	-- Peacekeeper Gauntlets
+				un(2, i(19852)),	-- Ancient Hakkari Manslayer
+				un(2, i(19853)),	-- Gurubashi Dwarf Destroyer
+				un(2, i(19854)),	-- Zin'rokh, Destroyer of Worlds
+				un(2, i(19855)),	-- Bloodsoaked Legplates
+				un(2, i(19857)),	-- Cloak of Consumption
+				un(2, i(19859)),	-- Fang of the Faceless
+				un(2, i(19861)),	-- Touch of Chaos
+				un(2, i(19862)),	-- Aegis of the Blood God
+				un(2, i(19864)),	-- Bloodcaller
+				un(2, i(19865)),	-- Warblade of the Hakkari
+				un(2, i(19866)),	-- Warblade of the Hakkari
+				un(2, i(20257)),	-- Seafury Gauntlets
+				un(2, i(20264)),	-- Peacekeeper Gauntlets
 			}),
 		},
 		["u"] = 12,

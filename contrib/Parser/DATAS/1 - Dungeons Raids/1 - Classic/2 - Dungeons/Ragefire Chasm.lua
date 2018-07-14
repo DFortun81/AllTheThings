@@ -22,7 +22,15 @@ _.Instances =
 							i(131711), 	-- Stone Guard Greaves
 							i(131712), 	-- Scaled Vest of the Shaman
 						})),
-						qg(61716, qh(30983)), -- The Dark Shaman
+						qg(61716, qh(30983, { -- The Dark Shaman
+							un(34,  i(49541)), 	-- Robes of the Doomed Ritual
+							un(34,  i(66022)), 	-- Ragefire Leggings
+							un(34,  i(66031)), 	-- Hide Vest of the Shaman
+							un(34,  i(66045)), 	-- Stone Guard Greaves
+							un(34,  i(66040)), 	-- Searing Belt
+							un(34, i(131614)), 	-- Chasm Linked Pants
+							un(34, i(131613)), 	-- Scaled Vest of the Shaman 
+						})),
 					}),
 					cr(61408, e(694, {	-- Adarogg
 						i( 82880), 	-- Fang of Adarogg
@@ -53,7 +61,7 @@ _.Instances =
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {
-							n(-17, {	-- Quests (Legacy)
+							nlq({	-- Quests (Legacy)
 								qh(5724, {	-- Returning the Lost Satchel
 									un(34, i(15452)),	-- Featherbead Bracers
 									un(34, i(15453)),	-- Savannah Bracers
@@ -73,7 +81,6 @@ _.Instances =
 								}),
 							}),
 						},
-						["u"] = 12,
 					}),
 				},
 				["lvl"] = 10,

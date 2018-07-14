@@ -809,6 +809,17 @@ _.Zones =
 						q(9724),	-- Warning the Cenarion Circle
 						qa( 10079),	-- When This Mine's a-Rockin'
 						qa( 10344),	-- Wing Commander Gryphongar
+						qa(10895, {	-- Zeth'Gor Must Burn!
+							i(28057),	-- Bonechewer Berserker's Vest
+							i(28052),	-- Goldweave Tunic
+							i(28050),	-- Sacred Feather Vest
+							i(28055),	-- Gilded Crimson Chestplate
+							i(28051),	-- Jerkin of the Untamed Spirit
+						}),
+						qh(10792, {	-- Zeth'Gor Must Burn!
+							i(27732),	-- Infiltrator's Cloak
+							i(27731),	-- Vindicator's Cloak
+						}),
 						nlq({ 	-- Legacy Quests
 							qh(9447, { -- Administering the Salve
 								i(25496), -- Mag'har Bow [Set to unobtainable]

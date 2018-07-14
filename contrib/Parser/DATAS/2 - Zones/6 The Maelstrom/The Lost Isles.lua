@@ -543,6 +543,17 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 				}),
+				n(-40, {	-- Legacy
+					["groups"]	= {
+						nlq({	-- Quests (Legacy)
+							qh(24936, {	-- Body And Soul
+								un(34, i(52911)),	-- Yngwie's Vest
+								un(34, i(52957)),	-- Oomlot Staff
+								un(34, i(52935)),	-- Pygmy Cloak
+							}),
+						}),
+					},
+				}),	
 			},
 			["description"] = "|cff66ccffThe Lost Isles are a chain of islands to the south of Azshara that the Bilgewater Cartel goblins reached after their shipwreck. Things get interesting when the orc ship Draka's Fury also crashes. This is a phased area that only leveling goblins can reach.|r",
 			["icon"] = "Interface\\Icons\\achievement_femalegoblinhead",

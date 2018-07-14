@@ -1065,7 +1065,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qh(6283, {	-- Bloodfury Bloodline
 								un(34, i(16990)),	-- Spritekin Cloak
 								un(34, i(16987)),	-- Screecher Belt
@@ -1101,7 +1101,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),						
 					},
-					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 847,

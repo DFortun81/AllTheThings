@@ -846,10 +846,21 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
+							qa(7723, {	-- Curse These Fat Fingers
+								un(34, i(19126)),	-- Slagplate Gauntlets
+							}),
+							qa(7724, {	-- Fiery Menace!
+								un(34, i(19125)),	-- Seared Mail Girdle
+							}),
 							qh(4450, {	-- Ledger from Tanaris
 								un(34, i(11860)),	-- Charged Lightning Rod
 								un(34, i(11861)),	-- Girdle of Reprisal
+							}),
+							q(3566, {	-- Rise, Obsidion!
+								un(34, i(10740)),	-- Centurion Legplates
+								un(34, i(10741)),	-- Lordrec Helmet
+								un(34, i(10739)),	-- Ring of Fortitude
 							}),
 							q( 7728, {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
 								un(34, i(19124)),	-- Slagplate Leggings
@@ -878,7 +889,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["lvl"] = 40,	

@@ -150,7 +150,7 @@ _.Instances =
 						})),
 						n(-40, {	-- Legacy
 							["groups"] = {
-								n(-17, {	-- Quests (Legacy)
+								nlq({	-- Quests (Legacy)
 									qa(214, { 	-- Red Silk Bandanas
 										un(34, i(6094)),	-- Piercing Axe
 										un(34, i(2089)), 	-- Scrimshaw Dagger
@@ -176,16 +176,16 @@ _.Instances =
 										["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",		
 									}),
 									n(1731, { 	-- Goblin Craftsman 
-										i(1944), 	-- Metalworking Gloves
+										un(7, i(1944)), 	-- Metalworking Gloves
 									}),
 									n( 622, { 	-- Goblin Engineer 
-										i(1936), 	-- Goblin Screwdriver
+										un(7, i(1936)), 	-- Goblin Screwdriver
 									}),
 									n(3947, { 	-- Goblin Shipbuilder 
-										i(1943), 	-- Goblin Mail Leggings
+										un(7, i(1943)), 	-- Goblin Mail Leggings
 									}),
 									n( 641, { 	-- Goblin Woodcarver 
-										i(1945), 	-- Woodworking Gloves
+										un(7, i(1945)), 	-- Woodworking Gloves
 									}),
 								}),
 								n(643, { 	-- Sneed
@@ -195,19 +195,20 @@ _.Instances =
 									un(2, i(7230)),	-- Smite's Mighty Hammer
 								}),
 								n(647, { 	-- Captain Greenskin
-									["groups"] = {
-										i(10403),	-- Blackened Defias Belt
-									},	
-									["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
+									i(10403, {	-- Blackened Defias Belt
+										["groups"] = {
+										},	
+										["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
+									}),
 								}),
 								n(639, { 	-- Edwin Van Cleef
-									["groups"] = {	
-										i(10399),	-- Blackened Defias Armor
-									},	
-									["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",	
+									i(10399, {	-- Blackened Defias Armor
+										["groups"] = {
+										},	
+										["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",	
+									}),
 								}),
 							},
-							["u"] = 12,
 						}),
 					}),
 				},

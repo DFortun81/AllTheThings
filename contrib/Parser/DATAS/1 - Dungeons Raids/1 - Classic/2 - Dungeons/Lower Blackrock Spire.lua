@@ -36,37 +36,29 @@ _.Instances =
 					n(  0, {	-- Zone Drop
 						n(9259, {		-- Firebrand Grunt <Firebrand Legion>
 							dr(1.6, i(15749)),	-- Pattern: Volcanic Breastplate
-							nld({     -- Legacy
-								un(7, i(16680)), 	-- Beaststalker's Belt
-								un(7, i(16735)),	-- Bracers of Valor
-								un(7, i(16713)),	-- Shadowcraft Belt
-							}),																				
+							un(7, i(16680)), 	-- Beaststalker's Belt
+							un(7, i(16735)),	-- Bracers of Valor
+							un(7, i(16713)),	-- Shadowcraft Belt																	
 						}),
-						n(9262, {	-- Firebrand Invoker <Firebrand Legion>
+						n(9262, {		-- Firebrand Invoker <Firebrand Legion>
 							dr(11, i(13494)),	-- Recipe: Greater Fire Protection Potion
 						}),
 						n(9260, {		-- Firebrand Legionnaire <Firebrand Legion>
 							dr(8.0, i(15775)),	-- Pattern: Volcanic Shoulders
-							nld({     -- Legacy
-								un(7, i(16680)), 	-- Beaststalker's Belt
-								un(7, i(16735)),	-- Bracers of Valor
-								un(7, i(16713)),	-- Shadowcraft Belt
-							}),																				
+							un(7, i(16680)), 	-- Beaststalker's Belt
+							un(7, i(16735)),	-- Bracers of Valor
+							un(7, i(16713)),	-- Shadowcraft Belt																		
 						}),
 						n(9264, {		-- Firebrand Pyromancer <Firebrand Legion>
 							dr(6.0, i(14513)),	-- Pattern: Robe of the Archmage
 							dr(7.0, i(13494)),	-- Recipe: Greater Fire Protection Potion
-							nld({     -- Legacy
-								un(7, i(16673)), 	-- Cord of Elements
-								un(7, i(16683)),	-- Magister's Bindings
-							}),																				
+							un(7, i(16673)), 	-- Cord of Elements
+							un(7, i(16683)),	-- Magister's Bindings														
 						}),
 						n(9257, {		-- Scarshield Warlock
 							["groups"] = {	
-								nld({     -- Legacy
-									un(7, i(16673)), 	-- Cord of Elements
-									un(7, i(16703)),	-- Dreadmist Bracers
-								}),																				
+								un(7, i(16673)), 	-- Cord of Elements
+								un(7, i(16703)),	-- Dreadmist Bracers																				
 								n(10263, {	-- Burning Felguard
 									["groups"] = {	
 										i(13181),	-- Demonskin Gloves
@@ -118,9 +110,7 @@ _.Instances =
 						i( 12626),	-- Funeral Cuffs
 						i( 13255),	-- Trueaim Gauntlets
 						i(151413),	-- Smolderthorn Greatbelt
-						nld({	-- Legacy
-							un(7, i(16712)), 	-- Shadowcraft Gloves
-						}),																				
+						un(7, i(16712)), 	-- Shadowcraft Gloves																				
 					})),
 					n( 16080, {			-- Mor Greyhoof Summonable Read Description
 						["groups"] = {
@@ -138,9 +128,7 @@ _.Instances =
 						i(13177),	-- Talisman of Evasion
 						i(13179),	-- Brazecore Armguards
 						i(22231),	-- Kayser's Boots of Precision
-						nld({     -- Legacy
-							un(7, i(16676)),	-- Beaststalker's Gloves
-						}),																				
+						un(7, i(16676)),	-- Beaststalker's Gloves																			
 					})),
 					n(  9596, {			-- Bannok Grimaxe
 						["groups"] = {	
@@ -182,16 +170,14 @@ _.Instances =
 						i(151416),	-- Dark Horde Grunt's Legplates
 						i(151415),	-- Veteran Spearman's Chain Boots
 						i( 12835),	-- Plans: Radiant Breastplate
-						nld({     -- Legacy
-							un(7, i(16680)),	-- Beaststalker's Belt
-							un(7, i(16735)),	-- Bracers of Valor
-							un(7, i(16673)),	-- Cord of Elements
-							un(7, i(16696)),	-- Devout Belt
-							un(7, i(16703)),	-- Dreadmist Bracers
-							un(7, i(16683)),	-- Magister's Bindings
-							un(7, i(16713)),	-- Shadowcraft Belt
-							un(7, i(16716)),	-- Wildheart Belt
-						}),																				
+						un(7, i(16680)),	-- Beaststalker's Belt
+						un(7, i(16735)),	-- Bracers of Valor
+						un(7, i(16673)),	-- Cord of Elements
+						un(7, i(16696)),	-- Devout Belt
+						un(7, i(16703)),	-- Dreadmist Bracers
+						un(7, i(16683)),	-- Magister's Bindings
+						un(7, i(16713)),	-- Shadowcraft Belt
+						un(7, i(16716)),	-- Wildheart Belt																		
 					})),
 					cr(10220, e(394, {	-- Halycon
 						i(13212),	-- Halcyon's Spiked Collar
@@ -228,7 +214,6 @@ _.Instances =
 						["groups"] = {
 							-- n(-17, {	-- Quests (Legacy)
 							-- }),
-							un(12, ach(2188)),	-- Leeeeeeeeeeeeeroy!
 							n(  0, {	-- Zone Drop (Legacy)
 								n(9693, { 	-- Bloodaxe Evoker
 									un(7, i(16673)), 	-- Cord of Elements
@@ -296,7 +281,6 @@ _.Instances =
 								}),
 							}),
 						},
-						["u"] = 12,
 					}),
 				},
 				["lvl"] = 50,

@@ -308,15 +308,8 @@ _.Zones =
 						dr(	1	, i(	68752	)), --	Imbued Infantry Belt
 						dr(	1	, i(	68753	)), --	Imbued Infantry Bracers
 						dr(	1	, i(	68760	)), --	Imbued Infantry Gauntlets
-						nld({     -- Legacy
-							i(17922),	-- Lionfur Armor
-						}),							
-					}), 
-					nld({     -- Legacy
-						n(3068, { 	-- Mazzranache
-							i(4861),	-- Sleek Feathered Tunic
-						}),
-					}),							
+						un(7, i(17922)),	-- Lionfur Armor						
+					}), 						
 				}),
 				nh( -2, {	-- Vendors
 					n(3685, {	-- Harb Clawhoof <Kodo Mounts>
@@ -339,16 +332,18 @@ _.Zones =
 					["groups"] = {
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qh(765,  {  -- Supervisor Fizsprocket
 								un(34, i(4974)),
 								un(34, i(4964)),
 							}),
 						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
+						n(-16, {	-- Rares (Legacy)
+							n(3068, { 	-- Mazzranache
+								un(7, i(4861)),	-- Sleek Feathered Tunic
+							}),
+						}),
 					},
-					["u"] = 12,
 				}),
 				m(890, {	-- Camp Narache
 					["groups"] = {

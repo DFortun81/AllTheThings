@@ -17,32 +17,31 @@ _.WorldDrops =
 					i(13113),	-- Feathermoon Headdress
 					i(13127),	-- Frostreaver Crown
 					i(13128),	-- High Bergg Helm
-	--				i(134110), 	-- hidden helm
 					i(1624),	-- Skullsplitter Helm
 					i(18698),	-- Tattered Leather Hood
-					i(20263),	-- Gurubashi Helm
+					un(7, i(20263)),	-- Gurubashi Helm
 					i(21803),	-- Helm of the Holy Avenger
 					i(21804),	-- Coif of Elemental Fury
 					i(2245),	-- Helm of Narv
-					i(2620),	-- Augural Shroud
-					i(2621),	-- Cowl of Necromancy
-					i(2622),	-- Nimar's Tribal Headdress
-					i(2623),	-- Holy Diadem
-					i(2624),	-- Thinking Cap
+					un(7, i(2620)),	-- Augural Shroud
+					un(7, i(2621)),	-- Cowl of Necromancy
+					un(7, i(2622)),	-- Nimar's Tribal Headdress
+					un(7, i(2623)),	-- Holy Diadem
+					un(7, i(2624)),	-- Thinking Cap
 					i(2721),	-- Holy Shroud
 					i(2955),	-- First Mate Hat
 					i(3011),	-- Feathered Headdress
 					i(3020),	-- Enduring Cap
 					i(3075),	-- Eye of Flame
 					i(3345),	-- Silk Wizard Hat
-					i(3392),	-- Ringed Helm
+					un(7, i(3392)),	-- Ringed Helm
 					un(7, i(4724)),	-- Humbert's Helm
-					i(5608),	-- Living Cowl
-					i(5624),	-- Circlet of the Order
+					un(7, i(5608)),	-- Living Cowl
+					un(7, i(5624)),	-- Circlet of the Order
 					un(7, i(5753)),	-- Ruffled Chaplet
 					i(5819),	-- Sunblaze Coif
 					un(7, i(6204)),	-- Tribal Worg Helm
-					i(9375),	-- Expert Goldminer's Helmet
+					un(7, i(9375)),	-- Expert Goldminer's Helmet
 					i(9420),	-- Adventurer's Pith Helmet
 					i(9429),	-- Miner's Hat of the Deep
 					i(9431),	-- Papal Fez
@@ -58,7 +57,6 @@ _.WorldDrops =
 					i(13131),	-- Sparkleshell Mantle
 					i(13132),	-- Skeletal Shoulders
 					i(13133),	-- Drakesfire Epaulets
-	--				i(134112),	-- hidden shoulder
 					i(14552),	-- Stockade Pauldrons
 					i(18699),	-- Icy Tomb Spaulders
 					i(18742),	-- Stratholme Militia Shoulderguard
@@ -103,7 +101,6 @@ _.WorldDrops =
 					i(13109),	-- Blackflame Cape
 					i(13121),	-- Wing of the Whelpling
 					i(13122),	-- Dark Phantom Cape
---					i(134111),	-- Hidden Cloak
 					un(7, i(1355)),	-- Buckskin Cape
 					i(14123),	-- Ritual Cape
 					i(14161),	-- Pagan Cape
@@ -191,12 +188,12 @@ _.WorldDrops =
 					i(15681),	-- Triumphant Cloak
 					i(17061),	-- Juno's Shadow
 					i(18339),	-- Eidolon Cloak
-					i(18677),	-- Zephyr Cloak
+					un(7, i(18677)),	-- Zephyr Cloak
 					i(18743),	-- Gracious Cape
 					i(1930),	-- Stonemason Cloak
 					i(2059),	-- Sentry Cloak
-					i(20693),	-- Weighted Cloak
-					i(20697),	-- Crystalline Threaded Cape
+					un(7, i(20693)),	-- Weighted Cloak
+					un(7, i(20697)),	-- Crystalline Threaded Cape
 					un(7, i(2241)), -- Desperado Cape
 					desc(un(7, i(22782)), "Added in WOD only to Big Crate of Salvage"),	-- Sin'dorei Cloak of Warding
 					un(7, i(2284)),	-- Rat Cloth Cloak
@@ -225,10 +222,10 @@ _.WorldDrops =
 					i(4798),	-- Heavy Runed Cloak
 					i(4799),	-- Antiquated Cloak
 					un(7, i(5111)),	-- Rathorian's Cape
-					i(5181),	-- Vibrant Silk Cape
-					i(5257),	-- Dark Hooded Cape
-					i(5751),	-- Webwing Cloak
-					i(5969),	-- Regent's Cloak
+					un(7, i(5181)),	-- Vibrant Silk Cape
+					un(7, i(5257)),	-- Dark Hooded Cape
+					un(7, i(5751)),	-- Webwing Cloak
+					un(7, i(5969)),	-- Regent's Cloak
 					un(7, i(5971)), -- Feathered Cape
 					un(7, i(6179)),	-- Privateer's Cape
 					i(6378),	-- Seer's Cape
@@ -302,7 +299,7 @@ _.WorldDrops =
 					i(10581),	-- Death's Head Vestment
 					i(10583),	-- Quillward Harness
 					i(120166),	-- Gorestained Garb
-					desc(i(120952), "Added in WOD only to Big Crate of Salvage"),	-- Slarkhide
+					desc(un(7, i(120952)), "Added in WOD only to Big Crate of Salvage"),	-- Slarkhide
 					un(7, i(1211)), -- Gnoll War Harness
 					i(12542),	-- Funeral Pyre Vestment
 					i(1297),	-- Robes of the Shadowcaster
@@ -320,7 +317,7 @@ _.WorldDrops =
 					i(1715),	-- Polished Jazeraint Armor
 					i(1716),	-- Robe of the Magi
 					i(1717),	-- Double Link Tunic
-					i(17922),	-- Lionfur Armor
+					un(7, i(17922)),	-- Lionfur Armor
 					i(1981),	-- Icemail Jerkin
 					i(1997),	-- Pressed Felt Robe
 					un(7, i(2016)),	-- Dusty Chain Armor
@@ -332,17 +329,17 @@ _.WorldDrops =
 					i(24808),	-- Unyielding Chain Vest
 					un(7, i(2566)), -- Sacrificial Robes
 					i(2800),	-- Black Velvet Robes
-					i(3000),	-- Brood Mother Carapace
+					un(7, i(3000)),	-- Brood Mother Carapace
 					un(7, i(3019)), -- Noble's Robe
 					i(3053),	-- Humbert's Chestpiece
-					i(3330),	-- Dargol's Hauberk
+					un(7, i(3330)),	-- Dargol's Hauberk
 					i(3416),	-- Martyr's Chain
-					i(3569),	-- Vicar's Robe
+					un(7, i(3569)),	-- Vicar's Robe
 					un(7, i(4448)),	-- Husk of Naraxis
 					un(7, i(4476)),	-- Beastwalker Robe
 					i(4781),	-- Whispering Vest
 					i(4782),	-- Solstice Robe
-					i(4861),	-- Sleek Feathered Tunic
+					un(7, i(4861)),	-- Sleek Feathered Tunic
 					un(7, i(5755)),	-- Onyx Shredder Plate (Added during WoD to Salvage Crates)
 					un(7, i(6180)), -- Slarkskin
 					un(7, i(6195)), -- Wax-Polished Armor
@@ -366,7 +363,7 @@ _.WorldDrops =
 					i(18231),	-- Sleeveless T-Shirt
 					un(7, i(20897)), -- Lookout's Tunic (Starter Shirt Blood Elf Rogues)
 					un(7, i(20901)), -- Warder's Shirt (Starter Shirt Blood Elf Hunters)
-					i(2105),	-- Thug Shirt
+					un(7, i(2105)),	 -- Thug Shirt
 					un(7, i(23345)), -- Scout's Shirt (Starter Shirt Draenei Hunters and Shamans)
 					un(7, i(23473)), -- Recruit's Shirt	(Starter Shirt Draenei Warriors)
 					un(7, i(23476)), -- Squire's Shirt	(Starter Shirt Draenei Paladins)
@@ -444,7 +441,7 @@ _.WorldDrops =
 					i(4794),	-- Wolf Bracers
 					i(4795),	-- Bear Bracers
 					i(4796),	-- Owl Bracers
-					i(6198),	-- Jurassic Wristguards
+					un(7, i(6198)),	-- Jurassic Wristguards
 					un(7, i(897)),		-- Madwolf Bracers
 					i(9428),	-- Unearthed Bands
 					i(9432),	-- Skullplate Bracers
@@ -464,30 +461,30 @@ _.WorldDrops =
 					i(132743),	-- Slither-Scale Gauntlets
 					i(14551),	-- Edgemaster's Handguards
 					i(1659),	-- Engineering Gloves
-					i(16672),	-- Gauntlets of Elements
-					i(16676),	-- Beaststalker's Gloves
-					i(16684),	-- Magister's Gloves
-					i(16692),	-- Devout Gloves
-					i(16705),	-- Dreadmist Wraps
-					i(16712),	-- Shadowcraft Gloves
-					i(16717),	-- Wildheart Gloves
-					i(16724),	-- Lightforge Gauntlets
-					i(16737),	-- Gauntlets of Valor
+					un(7, i(16672)),	-- Gauntlets of Elements
+					un(7, i(16676)),	-- Beaststalker's Gloves
+					un(7, i(16684)),	-- Magister's Gloves
+					un(7, i(16692)),	-- Devout Gloves
+					un(7, i(16705)),	-- Dreadmist Wraps
+					un(7, i(16712)),	-- Shadowcraft Gloves
+					un(7, i(16717)),	-- Wildheart Gloves
+					un(7, i(16724)),	-- Lightforge Gauntlets
+					un(7, i(16737)),	-- Gauntlets of Valor
 					i(17007),	-- Stonerender Gauntlets
 					i(18344),	-- Stonebark Gauntlets
 					i(18744),	-- Plaguebat Fur Gloves
-					i(1944),	-- Metalworking Gloves
-					i(1945),	-- Woodworking Gloves
+					un(7, i(1944)),	-- Metalworking Gloves
+					un(7, i(1945)),	-- Woodworking Gloves
 					i(1978),	-- Wolfclaw Gloves
 					i(2167),	-- Foreman's Gloves
 					un(7, i(2274)), -- Sapper's Gloves
 					i(2564),	-- Elven Spirit Claws
 					i(31126),	-- Gloves of Ferocity
-					i(3341),	-- Gauntlets of Ogre Strength
+					un(7, i(3341)),	-- Gauntlets of Ogre Strength
 					un(7, i(4465)),	-- Felstrom's Gauntlets
-					i(4767),	-- Coppercloth Gloves
+					un(7, i(4767)),	-- Coppercloth Gloves
 					un(7, i(4768)),	-- Adept's Gloves
-					i(6628),	-- Raven's Claws
+					un(7, i(6628)),	-- Raven's Claws
 					i(720),		-- Brawler Gloves
 					i(867),		-- Gloves of Holy Might
 					un(7, i(892)),		-- Gnoll Casting Gloves
@@ -510,15 +507,15 @@ _.WorldDrops =
 					i(13144),	-- Serenity Belt
 					i(13145),	-- Enormous Ogre Belt
 					i(14553),	-- Sash of Mercy
-					i(16673),	-- Cord of Elements
-					i(16680),	-- Beaststalker's Belt
-					i(16685),	-- Magister's Belt
-					i(16696),	-- Devout Belt
-					i(16702),	-- Dreadmist Belt
-					i(16713),	-- Shadowcraft Belt
-					i(16716),	-- Wildheart Belt
-					i(16723),	-- Lightforge Belt
-					i(16736),	-- Belt of Valor
+					un(7, i(16673)),	-- Cord of Elements
+					un(7, i(16680)),	-- Beaststalker's Belt
+					un(7, i(16685)),	-- Magister's Belt
+					un(7, i(16696)),	-- Devout Belt
+					un(7, i(16702)),	-- Dreadmist Belt
+					un(7, i(16713)),	-- Shadowcraft Belt
+					un(7, i(16716)),	-- Wildheart Belt
+					un(7, i(16723)),	-- Lightforge Belt
+					un(7, i(16736)),	-- Belt of Valor
 					i(16802),	-- Arcanist Belt
 					i(16806),	-- Felheart Belt
 					i(16817),	-- Girdle of Prophecy
@@ -528,24 +525,24 @@ _.WorldDrops =
 					i(16851),	-- Giantstalker's Belt
 					i(16858),	-- Lawbringer Belt
 					i(16864),	-- Belt of Might
-					i(18676),	-- Sash of the Windreaver
+					un(7, i(18676)),	-- Sash of the Windreaver
 					i(18702),	-- Belt of the Ordained
 					un(7, i(2283)), -- Rat Cloth Belt
-					i(2899),	-- Wendigo Collar
+					un(7, i(2899)),	-- Wendigo Collar
 					i(2911),	-- Keller's Girdle
 					un(7, i(3229)), -- Tarantula Silk Sash
 					un(7, i(3429)),	-- Guardsman Belt
-					i(4436),	-- Jewel-Encrusted Sash
-					i(4463),	-- Beaded Raptor Collar
+					un(7, i(4436)),	-- Jewel-Encrusted Sash
+					un(7, i(4463)),	-- Beaded Raptor Collar
 					un(7, i(4785)),	-- Brimstone Belt
 					i(4786),	-- Wise Man's Belt
 					i(4827),	-- Wizard's Belt
 					i(4828),	-- Nightwind Belt
 					i(4829),	-- Dreamer's Belt
 					i(5425),	-- RuneChain Girdle
-					i(5750),	-- Warchief's Girdle
-					i(5975),	-- Ruffian Belt
-					i(6200),	-- Garneg's War Belt
+					un(7, i(5750)),	-- Warchief's Girdle
+					un(7, i(5975)),	-- Ruffian Belt
+					un(7, i(6200)),	-- Garneg's War Belt
 					un(7, i(832)), -- Silver Defias Belt
 					i(9405),	-- Girdle of Golem Strength	
 				}),
@@ -566,16 +563,16 @@ _.WorldDrops =
 					i(18298),	-- Unbridled Leggings
 					i(18736),	-- Plaguehound Leggings
 					i(18745),	-- Sacred Cloth Leggings
-					i(1943),	-- Goblin Mail Leggings
+					un(7, i(1943)),	-- Goblin Mail Leggings
 					i(2166),	-- Foreman's Leggings
 					un(7, i(2233)),	-- Shadow Weaver Leggings
 					i(2277),	-- Necromancer Leggings
 					un(7, i(3022)),	-- Bluegill Breeches
 					un(7, i(3563)),	-- Seafarer's Pantaloons
-					i(38513),	-- Boarhide Leggings
+					un(7, i(38513)),	-- Boarhide Leggings
 					un(7, i(4434)),	-- Scarecrow Trousers
-					i(4478),	-- Iridescent Scale Leggings
-					i(45052),	-- Gruffscale Leggings
+					un(7, i(4478)),	-- Iridescent Scale Leggings
+					un(7, i(45052)),	-- Gruffscale Leggings
 					un(7, i(4723)),	-- Humbert's Pants
 					i(4800),	-- Mighty Chain Pants
 					i(4816),	-- Legionnaire's Leggings
@@ -621,7 +618,7 @@ _.WorldDrops =
 					i(4789),	-- Stable Boots
 					un(7, i(5968)),	-- Rugged Boots (Added during WoD to Salvage Crates)
 					i(7754),	-- Harbinger Boots
-					i(9382),	-- Tromping Miner's Boots
+					un(7, i(9382)),	-- Tromping Miner's Boots
 					i(9510),	-- Caverndeep Trudgers
 				}),
 			}),	

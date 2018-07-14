@@ -116,10 +116,10 @@ _.Zones =
 					})),
 --					qg(, qa(25734)),	-- Down In Thelgen Rock
 					qg(41086, qa(25727, { -- Drungeld Glowerglare
-						i(59072),
-						i(59071),
-						i(59070),
-						i(131439),
+						i(59072),	-- Addled Blotter Bracers
+						i(59071),	-- Bad Belt
+						i(59070),	-- Surveyor's Leggings
+						i(131438),	-- Bad Waistguard
 					})),
 --[[
 					qg(, qa(25725)),	-- Fenbush Berries
@@ -336,11 +336,9 @@ _.Zones =
 						dr(01.4, i(6605)),	-- Dervish Gloves
 						dr(01.1, i(6591)),	-- Battleforge Wristguards
 						dr(01.1, i(6601)),	-- Dervish Boots
-						dr(01.1, i(9806)),	-- Superior Gloves	
-						nld({     -- Legacy
-							i(6200), 	-- Garneg's War Belt
-							i(3392), 	-- Ringed Helm
-						}),									
+						dr(01.1, i(9806)),	-- Superior Gloves
+						un(7, i(6200)), 	-- Garneg's War Belt
+						un(7, i(3392)), 	-- Ringed Helm								
 					}), 
 					n(44227, { 	-- Gazz the Loch-Hunter
 						dr(09.0, i(6563)),	-- Shimmering Bracers
@@ -466,11 +464,9 @@ _.Zones =
 						dr(01.1, i(6580)),	-- Defender Tunic
 						dr(01.1, i(9772)),	-- Greenweave Leggings
 						dr(01.0, i(6576)),	-- Defender Girdle
-						dr(01.0, i(9812)),	-- Fortified Cloak	
-						nld({     -- Legacy
-							i(5749),	-- Scythe Axe
-							i(5750), 	-- Warchief's Girdle
-						}),							
+						dr(01.0, i(9812)),	-- Fortified Cloak
+						un(7, i(5749)),		-- Scythe Axe
+						un(7, i(5750)), 	-- Warchief's Girdle						
 					}), 
 					n(14424, { 	-- Mirelow
 						dr(08.0, i(9811)),	-- Fortified Bracers
@@ -539,11 +535,9 @@ _.Zones =
 						dr(01.6, i(9796)),	-- Ivycloth Mantle
 						dr(01.5, i(6591)),	-- Battleforge Wristguards
 						dr(01.5, i(6602)),	-- Dervish Bracers
-						dr(01.3, i(9807)),	-- Superior Shoulders	
-						nld({     -- Legacy
-							i(4463),	-- Beaded Raptor Collar
-							i(6198), 	-- Jurassic Wristguards
-						}),								
+						dr(01.3, i(9807)),	-- Superior Shoulders
+						un(7, i(4463)),		-- Beaded Raptor Collar
+						un(7, i(6198)), 	-- Jurassic Wristguards							
 					}), 
 					o(202083, {	-- Razormaw Matriarch's Nest
 						["groups"] = {
@@ -728,11 +722,11 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qa(471, {	-- Apprentice's Duties
 								un(34, i(2545)),	-- Malleable Chain Leggings
 								un(34, i(3561)),	-- Resilient Poncho
-	--							i(3681),	-- Recipe: Crocolisk Gumbo (not unobtainable)
+								-- i(3681),	-- Recipe: Crocolisk Gumbo (not unobtainable)
 							}),
 							qa(275, {	-- Blisters on The Land
 								un(34, i(3558)),	-- Fen Keeper Robe
@@ -807,7 +801,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["lvl"] = 20,	

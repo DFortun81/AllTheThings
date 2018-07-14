@@ -34,7 +34,7 @@ _.WorldEvents =
 			un(35, i(128424)), -- Brightpaw
 			un(35, i(70099)), -- Cenarion Hatchling
 			un(35, i(92707)), -- Cinder Kitten
-			un(2, i(72068)), -- Guardian Cub
+			un(7, i(72068)), -- Guardian Cub
 			un(2, i(49662, { -- Gryphon Hatchling
 				["groups"] = {
 				},

@@ -659,7 +659,7 @@ _.Zones =
 				}),
 				n( -40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qa(231, {	-- A Daughter's Love
 								un(34, i(2000)),	-- Archeus
 							}),
@@ -676,6 +676,10 @@ _.Zones =
 								un(34, i(2953)),	-- Watch Master's Cloak
 								un(34, i(1282)),	-- Sparkmetal Coif
 								un(34, i(7344)),	-- Torch of Holy Flame
+							}),
+							qh(1383, {	-- Nothing But The Truth
+								un(34, i(6832)),	-- Cloak of Blight
+								un(34, i(11265)),	-- Cragwood Maul
 							}),
 							qa( 98, {	-- The Legend of Stalvan
 								un(34, i(2044)),	-- Crescent of Forlorn Spirits
@@ -769,7 +773,6 @@ _.Zones =
 							})),
 						}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["lvl"] = 20,	

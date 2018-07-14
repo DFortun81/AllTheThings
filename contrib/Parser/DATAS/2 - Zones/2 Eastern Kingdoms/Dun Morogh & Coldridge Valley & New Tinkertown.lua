@@ -441,10 +441,8 @@ _.Zones =
 				n(-16, {	-- Rares	
 					n(1130, { 	-- Bjarn
 						dr(01.4, i(6337)),	-- Infantry Leggings
-						dr(01.2, i(6269)),	-- Pioneer Trousers					
-						nld({     -- Legacy
-							i(3283),	-- Battle Chain Tunic
-						}),					
+						dr(01.2, i(6269)),	-- Pioneer Trousers
+						un(7, i(3283)),	-- Battle Chain Tunic					
 					}),
 					n(1119, { 	-- Hammerspine
 						dr(20.0, i(68743)),	-- Imbued Infantry Cloak
@@ -464,10 +462,8 @@ _.Zones =
 						dr(01.2, i(68757)),	-- Imbued Pioneer Gloves
 						dr(01.1, i(68761)),	-- Imbued Infantry Boots
 						dr(01.0, i(68754)),	-- Imbued Disciple's Boots
-						dr(01.0, i(68760)),	-- Imbued Infantry Gauntlets					
-						nld({	-- Legacy
-							un(7, i(2254)),	-- Icepane Warhammer
-						}),
+						dr(01.0, i(68760)),	-- Imbued Infantry Gauntlets
+						un(7, i(2254)),	-- Icepane Warhammer
 					}), 			
 --					n(1137, { 	-- Edan the Howler	}), 
 				}),
@@ -495,7 +491,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qa(417, {	-- A Pilot's Revenge
 								un(34, i(2218)),	-- Craftsman's Dagger
 								un(34, i(1009)),	-- Compact Hammer
@@ -523,7 +519,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 				m(866, {	-- Coldridge Valley
 					["groups"] = {	
@@ -818,7 +813,7 @@ _.Zones =
 						}),
 						n(-40, {	-- Legacy
 							["groups"] = {
-								n(-17, {	-- Quests (Legacy)
+								nlq({	-- Quests (Legacy)
 									qa(31138, {		-- The Arts of a Monk
 										["groups"] = {
 											un(34, i(59042)), 	-- Electro-Staff
@@ -829,17 +824,16 @@ _.Zones =
 								}),
 								n(-16, {	-- Rares (Legacy)
 									n(8503, { -- Gibblewilt
-										i(10554),	-- Foreman Pants
-										i(10553),	-- Foreman Vest
+										un(7, i(10554)),	-- Foreman Pants
+										un(7, i(10553)),	-- Foreman Vest
 									}),	
 									n(1260,	{ 	-- Great Father Arktikus
-										i(3223),	-- Frostmane Scepter
+										un(7, i(3223)),	-- Frostmane Scepter
 									}),
 								}),
 								--n(  0, {	-- Zone Drop (Legacy)
 								--}),
 							},
-							["u"] = 12,
 						}),
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",

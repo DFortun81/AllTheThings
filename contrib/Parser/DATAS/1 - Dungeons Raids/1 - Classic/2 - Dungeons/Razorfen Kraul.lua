@@ -178,7 +178,7 @@ _.Instances =
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {
-							n(-17, {	-- Quests (Legacy)
+							nlq({	-- Quests (Legacy)
 								qa(1142, {	-- Mortality Wanes
 									un(34, i(6751)),	-- Mourning Shawl
 									un(34, i(6752)),	-- Lancer Boots
@@ -198,7 +198,6 @@ _.Instances =
 								}),
 							}),
 						},
-						["u"] = 12,
 					}),
 				},
 				["lvl"] = 25,

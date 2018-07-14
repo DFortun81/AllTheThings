@@ -7,116 +7,117 @@ _.GearSets =
 Notation of what is missing from Blizzard's localization
 	- Zul'Gurub
 	- DMF Dungeon 2 Sets
+Finish adding unobtainable flags once Unobtainables files is cleaned out
 --]]
 	n(-5352, { -- Tier Sets
 		n(-3186, { -- Tier 0 (Dungeon Set 1) [Unobtainable]
 			["groups"] = {
 				n(-3200, { -- Vestments of the Devout
 					["groups"] = {
-						i(16693),	-- Devout Crown
-						i(16695),	-- Devout Mantle
-						i(16690),	-- Devout Robe
-						i(16697),	-- Devout Bracers
-						i(16692),	-- Devout Gloves
-						i(16696),	-- Devout Belt
-						i(16694),	-- Devout Skirt
-						i(16691),	-- Devout Sandals
+						un(2, i(16693)),	-- Devout Crown
+						un(2, i(16695)),	-- Devout Mantle
+						un(2, i(16690)),	-- Devout Robe
+						un(7, i(16697)),	-- Devout Bracers
+						un(7, i(16692)),	-- Devout Gloves
+						un(7, i(16696)),	-- Devout Belt
+						un(2, i(16694)),	-- Devout Skirt
+						un(2, i(16691)),	-- Devout Sandals
 					},
 				}),
 				n(-3201, { -- Magister's Regalia
 					["groups"] = {
-						i(16686),	-- Magister's Crown
-						i(16689),	-- Magister's Mantle
-						i(16688),	-- Magister's Robes
-						i(16683),	-- Magister's Bindings
-						i(16684),	-- Magister's Gloves
-						i(16685),	-- Magister's Belt
-						i(16687),	-- Magister's Leggings
-						i(16682),	-- Magister's Boots
+						un(2, i(16686)),	-- Magister's Crown
+						un(2, i(16689)),	-- Magister's Mantle
+						un(2, i(16688)),	-- Magister's Robes
+						un(7, i(16683)),	-- Magister's Bindings
+						un(7, i(16684)),	-- Magister's Gloves
+						un(7, i(16685)),	-- Magister's Belt
+						un(2, i(16687)),	-- Magister's Leggings
+						un(2, i(16682)),	-- Magister's Boots
 					},
 				}),
 				n(-3202, { -- Dreadmist Rainment
 					["groups"] = {
-						i(16698),	-- Dreadmist Mask
-						i(16701),	-- Dreadmist Mantle
-						i(16700),	-- Dreadmist Robe
-						i(16703),	-- Dreadmist Bracers
-						i(16705),	-- Dreadmist Wraps
-						i(16702),	-- Dreadmist Belt
-						i(16699),	-- Dreadmist Leggings
-						i(16704),	-- Dreadmist Sandals
+						un(2, i(16698)),	-- Dreadmist Mask
+						un(2, i(16701)),	-- Dreadmist Mantle
+						un(2, i(16700)),	-- Dreadmist Robe
+						un(7, i(16703)),	-- Dreadmist Bracers
+						un(7, i(16705)),	-- Dreadmist Wraps
+						un(7, i(16702)),	-- Dreadmist Belt
+						un(2, i(16699)),	-- Dreadmist Leggings
+						un(2, i(16704)),	-- Dreadmist Sandals
 					},
 				}),
 				n(-3203, { -- Wildheart Rainment
 					["groups"] = {
-						i(16720),	-- Wildheart Cowl
-						i(16718),	-- Wildheart Spaulders
-						i(16706),	-- Wildheart Vest
-						i(16714),	-- Wildheart Bracers
-						i(16717),	-- Wildheart Gloves
-						i(16716),	-- Wildheart Belt
-						i(16719),	-- Wildheart Kilt
-						i(16715),	-- Wildheart Boots
+						un(2, i(16720)),	-- Wildheart Cowl
+						un(2, i(16718)),	-- Wildheart Spaulders
+						un(2, i(16706)),	-- Wildheart Vest
+						un(7, i(16714)),	-- Wildheart Bracers
+						un(7, i(16717)),	-- Wildheart Gloves
+						un(7, i(16716)),	-- Wildheart Belt
+						un(2, i(16719)),	-- Wildheart Kilt
+						un(2, i(16715)),	-- Wildheart Boots
 					},
 				}),
 				n(-3204, { -- Shadowcraft Armor
 					["groups"] = {
-						i(16707),	-- Shadowcraft Cap
-						i(16708),	-- Shadowcraft Spaulders
-						i(16721),	-- Shadowcraft Tunic
-						i(16710),	-- Shadowcraft Bracers
-						i(16712),	-- Shadowcraft Gloves
-						i(16713),	-- Shadowcraft Belt
-						i(16709),	-- Shadowcraft Pants
-						i(16711),	-- Shadowcraft Boots
+						un(2, i(16707)),	-- Shadowcraft Cap
+						un(2, i(16708)),	-- Shadowcraft Spaulders
+						un(2, i(16721)),	-- Shadowcraft Tunic
+						un(7, i(16710)),	-- Shadowcraft Bracers
+						un(7, i(16712)),	-- Shadowcraft Gloves
+						un(7, i(16713)),	-- Shadowcraft Belt
+						un(2, i(16709)),	-- Shadowcraft Pants
+						un(2, i(16711)),	-- Shadowcraft Boots
 					},
 				}),
 				n(-3205, { -- Beaststalker Armor
 					["groups"] = {
-						i(16677),	-- Beaststalker's Cap
-						i(16679),	-- Beaststalker's Mantle
-						i(16674),	-- Beaststalker's Tunic
-						i(16681),	-- Beaststalker's Bindings
-						i(16676),	-- Beaststalker's Gloves
-						i(16680),	-- Beaststalker's Belt
-						i(16678),	-- Beaststalker's Pants
-						i(16675),	-- Beaststalker's Boots
+						un(2, i(16677)),	-- Beaststalker's Cap
+						un(2, i(16679)),	-- Beaststalker's Mantle
+						un(2, i(16674)),	-- Beaststalker's Tunic
+						un(7, i(16681)),	-- Beaststalker's Bindings
+						un(7, i(16676)),	-- Beaststalker's Gloves
+						un(7, i(16680)),	-- Beaststalker's Belt
+						un(2, i(16678)),	-- Beaststalker's Pants
+						un(2, i(16675)),	-- Beaststalker's Boots
 					},
 				}),
 				n(-3206, { -- The Elements
 					["groups"] = {
-						i(16667),	-- Coif of Elements
-						i(16669),	-- Pauldrons of Elements
-						i(16666),	-- Vest of Elements
-						i(16671),	-- Bindings of Elements
-						i(16672),	-- Gauntlets of Elements
-						i(16673),	-- Cord of Elements
-						i(16668),	-- Kilt of Elements
-						i(16670),	-- Boots of Elements
+						un(2, i(16667)),	-- Coif of Elements
+						un(2, i(16669)),	-- Pauldrons of Elements
+						un(2, i(16666)),	-- Vest of Elements
+						un(7, i(16671)),	-- Bindings of Elements
+						un(7, i(16672)),	-- Gauntlets of Elements
+						un(7, i(16673)),	-- Cord of Elements
+						un(2, i(16668)),	-- Kilt of Elements
+						un(2, i(16670)),	-- Boots of Elements
 					},
 				}),
 				n(-3207, { -- Lightforge Armor
 					["groups"] = {
-						i(16727),	-- Lightforge Helm
-						i(16729),	-- Lightforge Spaulders
-						i(16726),	-- Lightforge Breastplate
-						i(16722),	-- Lightforge Bracers
-						i(16724),	-- Lightforge Gauntlets
-						i(16723),	-- Lightforge Belt
-						i(16728),	-- Lightforge Legplates
-						i(16725),	-- Lightforge Boots
+						un(2, i(16727)),	-- Lightforge Helm
+						un(2, i(16729)),	-- Lightforge Spaulders
+						un(2, i(16726)),	-- Lightforge Breastplate
+						un(7, i(16722)),	-- Lightforge Bracers
+						un(7, i(16724)),	-- Lightforge Gauntlets
+						un(7, i(16723)),	-- Lightforge Belt
+						un(2, i(16728)),	-- Lightforge Legplates
+						un(2, i(16725)),	-- Lightforge Boots
 					},
 				}),
 				n(-3208, { -- Battlegear of Valor
 					["groups"] = {
-						i(16731),	-- Helm of Valor
-						i(16733),	-- Spaulders of Valor
-						i(16730),	-- Breastplate of Valor
-						i(16735),	-- Bracers of Valor
-						i(16737),	-- Gauntlets of Valor
-						i(16736),	-- Belt of Valor
-						i(16732),	-- Legplates of Valor
-						i(16734),	-- Boots of Valor
+						un(2, i(16731)),	-- Helm of Valor
+						un(2, i(16733)),	-- Spaulders of Valor
+						un(2, i(16730)),	-- Breastplate of Valor
+						un(7, i(16735)),	-- Bracers of Valor
+						un(7, i(16737)),	-- Gauntlets of Valor
+						un(7, i(16736)),	-- Belt of Valor
+						un(2, i(16732)),	-- Legplates of Valor
+						un(2, i(16734)),	-- Boots of Valor
 					},
 				}),
 			},

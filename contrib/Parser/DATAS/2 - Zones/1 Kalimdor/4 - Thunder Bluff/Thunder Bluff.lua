@@ -951,7 +951,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qh(2968, {	-- A Future Task
 								un(34, i(34421)),	-- Cave Crawler's Mail Treads
 								un(34, i(34422)),	-- Tempered Thorium Boots
@@ -965,6 +965,9 @@ _.Zones =
 								un(34, i(4197)),	-- Berylline Pads
 								un(34, i(6742)),	-- Stonefist Girdle
 								un(34, i(6725)),	-- Marbled Buckler
+							}),
+							qh(1845, {	-- Brutal Helm
+								un(34, i(7130)),	-- Brutal Helm
 							}),
 							qdg(qh(1049, {	-- Compendium of the Fallen
 								un(34, i( 7747)),	-- Vile Protector
@@ -980,7 +983,6 @@ _.Zones =
 							})),
 						}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_tauren",

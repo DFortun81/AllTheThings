@@ -362,9 +362,7 @@ _.Zones =
 						dr(	1.1	, i(	10168	)), --	Templar Crown
 						dr(	1.1	, i(	10170	)), --	Templar Pauldrons
 						dr(	1	, i(	10165	)), --	Templar Gauntlets
-						nld({     	-- Legacy
-							i(45052), 	-- Gruffscale Leggings
-						}),							
+						un(7, i(45052)), 	-- Gruffscale Leggings							
 					}), 
 					n(6584, { 		-- King Mosh
 						dr(	4	, i(	10110	)), --	Wanderer's Gloves
@@ -528,7 +526,12 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
+							q(4491, {	-- A Little Help From My Friends
+								un(34, i(11910)),	-- Bejeweled Legguards
+								un(34, i(11911)),	-- Treetop Leggings
+								un(34, i(11913)),	-- Clayridge Helm
+							}),
 							q(3962, {	-- It's Dangerous to Go Alone
 								un(34, i(11902)),	-- Linken's Sword of Mastery
 								un(34, i(11904)),	-- Spirit of Aquementas
@@ -550,7 +553,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 854,

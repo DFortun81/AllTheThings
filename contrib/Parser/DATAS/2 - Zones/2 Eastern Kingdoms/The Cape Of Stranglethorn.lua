@@ -837,9 +837,7 @@ _.Zones =
 						dr(01.1, i(9835)),	-- Scaled Leather Tunic
 						dr(01.0, i(10289)),	-- Durable Hat
 						dr(01.0, i(7406)),	-- Infiltrator Cord
-						nld({     -- Legacy
-							i(5028),	-- Lord Sakrasis' Scepter	
-						}),
+						un(7, i(5028)),	-- Lord Sakrasis' Scepter
 					}), 
 					n(14490, { 	-- Rippa
 						dr(04.0, i(7533)),	-- Cabalist Cloak
@@ -915,10 +913,8 @@ _.Zones =
 						dr(01.1, i(7412)),	-- Infiltrator Gloves
 						dr(01.0, i(9853)),	-- Conjurer's Cinch
 						dr(01.0, i(7422)),	-- Phalanx Girdle
-						nld({     -- Legacy
-							i(4478),	-- Iridescent Scale Leggings	
-							i(1604),	-- Chromatic Sword								
-						}),						
+						un(7, i(4478)),	-- Iridescent Scale Leggings	
+						un(7, i(1604)),	-- Chromatic Sword			
 					}), 
 					n(14492, { 	-- Verifonix
 						dr(28.0, i(9867)),	-- Renegade Cloak
@@ -962,12 +958,7 @@ _.Zones =
 						i(2955),	-- First Mate Hat
 						i(48126),	-- Razzashi Hatchling
 						i(8494),	-- Parrot Cage (Hyacinth Macaw)
-					}),		
---[[					nld({    -- Legacy
-						n(1493, {	-- Mok'rash the Cleaver
-							i(3985),	-- Monogrammed Sash
-						}),
-					}),--]]
+					}),
 				}),
 				n( -2, {	-- Vendors
 					n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
@@ -1048,7 +1039,7 @@ _.Zones =
 					}),
 				}),
 				n(-40, {	-- Legacy
-				  	n(-17, {	-- Quests (Legacy)
+				  	nlq({	-- Quests (Legacy)
 						q( 617, {	-- Akiris by the Bundle
 							un(34, i(4117)),	-- Scorching Sash
 						}),

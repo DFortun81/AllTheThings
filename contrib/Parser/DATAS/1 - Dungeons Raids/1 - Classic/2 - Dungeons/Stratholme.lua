@@ -85,9 +85,7 @@ _.Instances =
 							i( 13405),	-- Wailing Nightbane Pauldrons
 							i( 13409),	-- Tearfall Bracers
 							i(151404),	-- Gauntlets of Purged Sanity
-							nld({	-- Legacy
-								i(16717),	-- Wildheart Gloves
-							}),
+							un(7, i(16717)),	-- Wildheart Gloves
 						})),
 						n( 11143, {			-- Postmaster Malown
 							["groups"] = {
@@ -106,9 +104,7 @@ _.Instances =
 							i(151403),	-- Fetid Stranglers
 							i( 13403),	-- Grimgore Noose
 							i( 13402),	-- Timmy's Galoshes
-							nld({	-- Legacy
-								i(16724),	-- Lightforge Gauntlets
-							}),
+							un(7, i(16724)),	-- Lightforge Gauntlets
 						})),
 						cr(10997, e(446, { 	-- Willey Hopebreaker
 							--i(22406),	-- Redemption (Journal says only from The Unforgiven)
@@ -142,7 +138,7 @@ _.Instances =
 						})),
 						n(-40, {	-- Legacy
 							["groups"] = {
-								n(-17, {	-- Quests (Legacy)
+								nlq({	-- Quests (Legacy)
 									q(5282, { 	-- The Restless Souls (2)
 										un(34, i(13315)),	-- Testament of Hope
 									}),
@@ -205,7 +201,6 @@ _.Instances =
 									}),
 								}),
 							},
-							["u"] = 12,
 						}),
 					}),
 					q(35574, {	-- Side Entrance (Dead)
@@ -311,9 +306,7 @@ _.Instances =
 							i(13374),	-- Soulstealer Mantle
 							i(13373),	-- Band of Flesh
 							i(13515),	-- Ramstein's Lightning Bolts
-							nld({ 	-- Legacy
-								i(16737),	-- Gauntlets of Valor
-							}),
+							un(7, i(16737)),	-- Gauntlets of Valor
 						})),
 						cr(45412, e(456, { 	-- Lord Aurius Rivendare
 							ach(729),	-- Deathcharger's Reins
@@ -334,13 +327,14 @@ _.Instances =
 						})),
 						n(-40, {	-- Legacy
 							["groups"] = {
-								n(-17, {	-- Quests (Legacy)
+								nlq({	-- Quests (Legacy)
 									q(9737, { 	-- True Masters of the Light
 										["groups"] = {
 											{
 											["mountID"] = 34767, 	-- Thalassian Charger
+											["u"] = 34,
 											},
-											i(25549),	-- Blood Knight Tabard
+											-- i(25549),	-- Blood Knight Tabard (not unobtainable, new quest out of Orgrimmar)
 										},
 										["classes"] = {2},
 										["races"] = {10},
@@ -389,7 +383,6 @@ _.Instances =
 									}),
 								}),
 							},
-							["u"] = 12,
 						}),
 					}),
 				},

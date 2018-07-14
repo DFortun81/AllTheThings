@@ -1240,9 +1240,7 @@ _.Zones =
 						dr(01.1, i(7430)),	-- Twilight Robe
 						dr(01.0, i(7488)),	-- Captain's Circlet
 						dr(01.0, i(7487)),	-- Captain's Leggings
-						nld({     -- Legacy
-							i(16039),	-- Ta'Kierthan Songblade
-						}),
+						un(7, i(16039)),	-- Ta'Kierthan Songblade
 					}),
 					n(10828, { 	-- Lynnia Abbendis
 						dr(05.0, i(7491)),	-- Captain's Shoulderguards
@@ -1511,7 +1509,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qr(q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
 								un(34, i(22657)),	-- Amulet of the Dawn
 								un(34, i(22667)),	-- Bracers of Hope
@@ -1572,6 +1570,10 @@ _.Zones =
 								un(34, i(22690)),	-- Leggings of the Plague Hunter
 								un(34, i(22689)),	-- Sanctified Leather Helm
 							})),
+							q(4971, {	-- A Matter of Time
+								un(34, i(15812)),	-- Orchid Amice
+								un(34, i(15813)),	-- Gold Link Belt
+							}),
 							qg(16376, q(9237, {	-- Glacial Cloak [Quest]
 								un(34, i(22658)),	-- Glacial Cloak
 							})),
@@ -1581,6 +1583,14 @@ _.Zones =
 							}),
 							q( 5942, {	-- Hidden Treasures
 								un(34, i(15857)),	-- Magebane Scion
+							}),
+							qdg({
+								["questID"] = 5243,	-- Houses of the Holy
+								["qg"]	= 11036, -- Leonid Barthalomew the Revered
+								["groups"] = {
+									un(34, i(13216)),	-- Crown of the Penitent
+									un(34, i(13217)),	-- Band of the Penitent
+								},
 							}),
 							q( 5265, {	-- The Argent Hold
 								un(34, i(13246)),	-- Argent Avenger
@@ -1609,7 +1619,6 @@ _.Zones =
 							}),
 						}),					
 					},
-					["u"] = 12,
 				}),
 				m(502, {	-- The Scarlet Enclave
 					["groups"] = {
@@ -1768,14 +1777,13 @@ _.Zones =
 						--[[					
 						n(-40, {	-- Legacy
 							["groups"] = {
-								n(-17, {	-- Quests (Legacy)
+								nlq({	-- Quests (Legacy)
 								}),
 								--n(-16, {	-- Rares (Legacy)
 								--}),
 								--n(  0, {	-- Zone Drop (Legacy)
 								--}),
 							},
-							["u"] = 12,
 						}),
 						--]]
 						n(-16, {	-- Rares

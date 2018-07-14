@@ -63,6 +63,7 @@ _.Instances =
 						i(69555),	-- Boots of the Ursine
 						nld({	-- Legacy
 							un(2, i(33285)),	-- Fury of the Ursine
+							un(2, i(33286)),	-- Mojo-Mender's Mask
 						}),
 						o(186648, {	-- Hazlek's Trunk
 							["groups"] = {

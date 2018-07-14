@@ -376,9 +376,7 @@ _.Zones =
 						dr(1, i(6543)),		-- Willow Bracers
 						dr(0.9, i(9763)),	-- Cadet Leggings
 						dr(0.9, i(6512)),	-- Disciple's Robe
-						nld({     -- Legacy
-							i(4303),	-- Cranial Thumper
-						}),							
+						un(7, i(4303)),	-- Cranial Thumper							
 					}), 
 					o(240624, {	-- Faerie Dragon Nest
 						["groups"] = {
@@ -685,7 +683,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qh(5650, {	-- Garments of Darkness
 								["groups"] = {
 									un(34, i(16607)),	-- Garments of Darkness
@@ -711,7 +709,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 				--[[
 				m(892, {	-- Deathknell

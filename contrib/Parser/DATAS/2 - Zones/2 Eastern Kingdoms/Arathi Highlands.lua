@@ -647,10 +647,8 @@ _.Zones =
 						dr(01.5, i(9797)),	-- Ivycloth Pants
 						dr(01.4, i(6594)),	-- Battleforge Girdle
 						dr(01.3, i(6612)),	-- Sage's Boots
-						dr(01.1, i(9823)),	-- Durable Gloves	
-						nld({    	-- Legacy
-							i(5742),	-- Gemstone Dagger
-						}),							
+						dr(01.1, i(9823)),	-- Durable Gloves
+						un(7, i(5742)),		-- Gemstone Dagger							
 					}), 
 					n(51067, { 	-- Glint
 						dr(12.0, i(6611)),	-- Sage's Sash
@@ -709,10 +707,8 @@ _.Zones =
 						dr(01.1, i(9822)),	-- Durable Cape
 						dr(01.1, i(6613)),	-- Sage's Bracers
 						dr(01.0, i(6594)),	-- Battleforge Girdle
-						dr(01.0, i(6605)),	-- Dervish Gloves	
-						nld({    	-- Legacy
-							i(5256),	-- Kovork's Rattle
-						}),							
+						dr(01.0, i(6605)),	-- Dervish Gloves
+						un(7, i(5256)),	-- Kovork's Rattle						
 					}), 
 					n(2604, { 	-- Molok the Crusher
 						dr(07.0, i(9817)),	-- Fortified Spaulders
@@ -780,11 +776,9 @@ _.Zones =
 						dr(01.0, i(6594)),	-- Battleforge Girdle
 						dr(01.0, i(6605)),	-- Dervish Gloves
 						dr(01.0, i(9797)),	-- Ivycloth Pants
-						dr(01.0, i(9831)),	-- Scaled Cloak	
-						nld({    	-- Legacy
-							i(5257),	-- Dark Hooded Cape
-							i(2622),	-- Nimar's Tribal Headdress								
-						}),						
+						dr(01.0, i(9831)),	-- Scaled Cloak
+						un(7, i(5257)),	-- Dark Hooded Cape
+						un(7, i(2622)),	-- Nimar's Tribal Headdress						
 					}), 
 					n(2779, { 	-- Prince Nazjak
 						dr(06.0, i(6600)),	-- Dervish Belt
@@ -957,10 +951,8 @@ _.Zones =
 						dr(01.0, i(9838)),	-- Banded Cloak
 						dr(01.0, i(6597)),	-- Battleforge Shoulderguards
 						dr(01.0, i(9822)),	-- Durable Cape
-						dr(01.0, i(9791)),	-- Ivycloth Tunic	
-						nld({    	-- Legacy
-							i(5181), 	-- Vibrant Silk Cape
-						}),							
+						dr(01.0, i(9791)),	-- Ivycloth Tunic
+						un(7, i(5181)), 	-- Vibrant Silk Cape							
 					}), 
 					n(51040, { 	-- Snuffles
 						dr(10.0, i(6593)),	-- Battleforge Cloak
@@ -1125,7 +1117,11 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
+							qh(679, {	-- Call to Arms
+								un(34, i(9520)),	-- Silent Hunter
+								un(34, i(9521)),	-- Skullsplitter
+							}),
 							q(  662, {	-- Deep Sea Salvage
 								un(34, i(4511)),	-- Black Water Hammer
 							}),
@@ -1173,7 +1169,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["lvl"] = 25,	

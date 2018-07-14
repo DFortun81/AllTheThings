@@ -877,9 +877,7 @@ _.Zones =
 						dr(	1.1	, i(	6550	)), --	Soldier's Wristguards
 						dr(	1	, i(	9765	)), --	Cadet Vest
 						dr(	1	, i(	9749	)), --	Simple Blouse
-						nld({     -- Legacy
-							un(7, i(7559)),	-- Runic Cane
-						}),		
+						un(7, i(7559)),	-- Runic Cane		
 					}), 
 					n(5865, { 		-- Dishu
 						dr(	11	, i(	6268	)), --	Pioneer Tunic
@@ -929,10 +927,8 @@ _.Zones =
 						dr(	1.6	, i(	6539	)), --	Willow Belt
 						dr(	1.5	, i(	6550	)), --	Soldier's Wristguards
 						dr(	1.4	, i(	6537	)), --	Willow Boots
-						nld({     -- Legacy
-							un(7, i(4768)), -- Adept's Gloves
-							un(7, i(4771)),	-- Harvest Cloak
-						}),		
+						un(7, i(4768)), -- Adept's Gloves
+						un(7, i(4771)),	-- Harvest Cloak		
 					}), 
 					n(5836, { 		-- Engineer Whirleygig
 						dr(	7	, i(	6547	)), --	Soldier's Gauntlets
@@ -1033,10 +1029,8 @@ _.Zones =
 						dr(	1.2	, i(	6553	)), --	Bard's Trousers
 						dr(	1.2	, i(	9788	)), --	Raider's Belt
 						dr(	1.1	, i(	9766	)), --	Greenweave Sash
-						nld({     -- Legacy
-							un(7, i(5183)),	-- Pulsating Hydra Heart
-							un(7, i(5182)), -- Shiver Blade
-						}),		
+						un(7, i(5183)),	-- Pulsating Hydra Heart
+						un(7, i(5182)), -- Shiver Blade	
 					}), 
 					n(5828, { 		-- Humar the Pridelord
 						dr(	9	, i(	6545	)), --	Soldier's Armor
@@ -1090,11 +1084,9 @@ _.Zones =
 						dr(	1	, i(	9776	)), --	Bandit Boots
 						dr(	1	, i(	6583	)), --	Scouting Bracers
 						dr(	1	, i(	6564	)), --	Shimmering Cloak
-						dr(	1	, i(	9787	)), --	Raider's Gauntlets	
-						nld({     -- Legacy
-							un(7, i(5111)),	-- Rathorian's Cape		
-							un(7, i(5112)), -- Ritual Blade
-						}),							
+						dr(	1	, i(	9787	)), --	Raider's Gauntlets
+						un(7, i(5111)),	-- Rathorian's Cape		
+						un(7, i(5112)), -- Ritual Blade							
 					}), 
 					n(5841, { 		-- Rocklance
 						dr(	8	, i(	9747	)), --	Simple Britches
@@ -1223,9 +1215,7 @@ _.Zones =
 						dr(	1.3	, i(	6539	)), --	Willow Belt
 						dr(	1.2	, i(	9785	)), --	Raider's Bracers
 						dr(	1.1	, i(	6554	)), --	Bard's Gloves
-						nld({     -- Legacy
-							un(7, i(1355)), 	-- Buckskin Cape						
-						}),	
+						un(7, i(1355)), 	-- Buckskin Cape
 					}), 
 					n(5831, { 		-- Swiftmane
 						dr(	24	, i(	6548	)), --	Soldier's Girdle
@@ -1371,7 +1361,10 @@ _.Zones =
 					["groups"] = {
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
+							qh(1848, {	-- Brutal Hauberk
+								un(34, i(7133)),	-- Brutal Hauberk
+							}),
 							qh(855, {	-- Centaur Bracers
 								un(34, i(5346)),	-- Orcish Battle Bow
 								un(34, i(5344)),	-- Pointed Axe
@@ -1415,9 +1408,11 @@ _.Zones =
 								un(34, i(5357)),	-- Ward of the Vale
 								un(34, i(5355)),	-- Beastmaster's Girdle
 							}),
-							qh(3301, {	-- Mura Runetotem
-								un(34, i(10820)),	-- Jackseed Belt
-								un(34, i(10821)),	-- Sower's Cloak
+							qh(3301, {	-- Mura Runetotem [This quest was repurposed and made obsolete twice]
+								un(34, i(10820)),	-- Jackseed Belt [WotLK version of quest]
+								un(34, i(10821)),	-- Sower's Cloak [WotLK version of quest]
+								un(34, i(59556)),	-- Shield of Inner Glow [Cata version of quest]
+								un(34, i(59557)),	-- Belt of Unwanted Aid [Cata version of quest]
 							}),
 							q( 865, {	-- Raptor Horns
 								un(34, i(5343)),	-- Barkeeper's Cloak
@@ -1463,7 +1458,6 @@ _.Zones =
 						--n(-16, {	-- Rares (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 750,

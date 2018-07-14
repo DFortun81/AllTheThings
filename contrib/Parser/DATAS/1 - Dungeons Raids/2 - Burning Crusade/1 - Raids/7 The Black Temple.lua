@@ -405,8 +405,8 @@ _.Instances =
 								i(150442),	-- Helm of Soothing Currents
 								i(150516),	-- Helm of the Illidari Shatterer
 								i(150571),	-- Gronnstalker's Spaulders
-								i(150935),	-- Illidari Shoulderpads
-							 -- i(150771),	-- Illidari Shoulderpads (this version is not in DJ)
+								h(i(150935)),	-- Illidari Shoulderpads (Horde DH only)
+								a(i(150771)),	-- Illidari Shoulderpads (Alliance DH only)
 								i(150556),	-- Lightbringer Shoulderguards
 								i(150558),	-- Mantle of the Malefic
 								i(150568),	-- Mantle of the Tempest
@@ -426,8 +426,8 @@ _.Instances =
 								i(150536),	-- Cowl of the Illidari High Lord
 								i(150483),	-- Cloak of the Illidari Council
 								i(150572),	-- Gronnstalker's Leggings
-								i(150933),	-- Illidari Leggings
-							 -- i(150773),	-- Illidari Leggings (this version is not in DJ)
+								h(i(150933)),	-- Illidari Leggings (Horde DH only)
+								a(i(150773)),	-- Illidari Leggings (Alliance DH only)
 								i(150567),	-- Leggings of Absolution
 								i(150580),	-- Leggings of the Malefic
 								i(150570),	-- Leggings of the Tempest
@@ -457,8 +457,8 @@ _.Instances =
 								i(150436),	-- Cursed Vision of Sargeras
 								i(150534),	-- Faceplate of the Impenetrable
 								i(150553),	-- Gronnstalker's Chestguard
-								i(150934),	-- Illidari Robe
-							 -- i(150772),	-- Illidari Robe (this version is not in DJ)
+								h(i(150934)),	-- Illidari Robe (Horde DH only)
+								a(i(150772)),	-- Illidari Robe (Alliance DH only)
 								i(150770),	-- Jerkin of the Broken Sage
 								i(150552),	-- Lightbringer Chestguard
 								i(150551),	-- Onslaught Chestguard

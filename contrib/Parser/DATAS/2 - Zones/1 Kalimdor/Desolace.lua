@@ -1044,7 +1044,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							q( 6027, {	-- Book of the Ancients
 								un(34, i(16791)),	-- Silkstream Cuffs
 								un(34, i(16793)),	-- Arcmetal Shoulders
@@ -1121,7 +1121,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 848,

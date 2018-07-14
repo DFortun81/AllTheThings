@@ -887,7 +887,7 @@ END OF MICRO-HOLIDAY --]]
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							q(8361, { 	-- Abyssal Contacts
 								un(2, i(20603, { 	-- Bag of Spoils
 									un(7, i(20694)), 	-- Glowing Black Orb
@@ -991,9 +991,9 @@ END OF MICRO-HOLIDAY --]]
 							}),
 							n(15205, {	-- Baron Kazum
 								["groups"] = {
-									un(7, i(20686)),	-- Abyssal Cloth Amice
-									un(7, i(20687)),	-- Abyssal Plate Vambraces
-									un(7, i(20688)),	-- Earthen Guard
+									un(2, i(20686)),	-- Abyssal Cloth Amice
+									un(2, i(20687)),	-- Abyssal Plate Vambraces
+									un(2, i(20688)),	-- Earthen Guard
 								},
 								["description"] = "Summoning Baron Kazum requires a full Twilight Trappings set, a Twilight Cultist Medallion of Station, and a Twilight Cultist Ring of Lordship.",
 							}),
@@ -1048,7 +1048,6 @@ END OF MICRO-HOLIDAY --]]
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),						
 					},
-					["u"] = 12,
 				}),
 				m(772, {	-- Ahn'Qiraj: The Fallen Kingdom
 					["groups"] = {		

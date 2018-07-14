@@ -197,7 +197,7 @@ _.NeverImplemented =
 	un(1, i(8195)),	-- Nightscape Cloak										(Pattern never actually went live)
 	un(1, i(8388)),	-- Pattern: Nightscape Cloak							(Never added in Game)	
 	un(1, i(8627)),	-- Reins of the Nightsaber								(Never added in Game)
-	un(1, a(model(6447, i(8628))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
+	un(1, a(model(6447, i(8628)))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
 	un(1, a(model(6443, i(8630, {		-- Reins of the Bengal Tiger 			(Never added in Game)
 		{ ["mountID"]= 10790 }	
 	})))),							
@@ -312,7 +312,7 @@ _.NeverImplemented =
 	un(1, i(48924)),	-- Liadrin's Handguards of Conquest
 	un(1, i(48925)),	-- Liadrin's Legguards of Conquest
 	un(1, i(48926)),	-- Liadrin's Shoulderguards of Conquest
-	un(15, i(49278))), -- Goblin Rocket Pack
+	un(15, i(49278)), -- Goblin Rocket Pack
 	un(1, i(52548)),	-- Initiate's Tunic
 	un(1, i(53879)), 	-- Rugged Work Shirt
 	un(1, i(53880)), 	-- Super Girly Shirt

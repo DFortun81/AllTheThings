@@ -918,9 +918,7 @@ _.Zones =
 						dr(	1.4	, i(	68757	)), --	Imbued Pioneer Gloves
 						dr(	1.3	, i(	68760	)), --	Imbued Infantry Gauntlets
 						dr(	1	, i(	6550	)), --	Soldier's Wristguards
-						nld({    	-- Legacy
-							i(6333),	-- Spikelash Dagger						
-						}),							
+						un(7, i(6333)),	-- Spikelash Dagger								
 					}), 
 					n(2191, { 		-- Licillin
 						dr(	14	, i(	9756	)), --	Gypsy Trousers
@@ -1022,7 +1020,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qa( 993, {	-- A Lost Master
 								un(34, i(5387)),	-- Enchanted Moonstalker Cloak
 							}),
@@ -1093,7 +1091,6 @@ _.Zones =
 							}),
 						}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 844,

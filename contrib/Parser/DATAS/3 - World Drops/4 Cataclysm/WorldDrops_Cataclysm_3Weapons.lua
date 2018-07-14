@@ -79,7 +79,7 @@ _.WorldDrops =
 					i(55441),	-- Blackwolf Spellblade
 					i(55442),	-- Sorrowmurk Spellblade
 					i(55790),	-- Toxidunk Dagger
-					i(66540),	-- Miniature Winter Veil Tree
+					un(7, i(66540)),	-- Miniature Winter Veil Tree
 					i(66880),	-- Potentate's Letter Opener
 					i(66956),	-- Trek's Shiv
 					i(66968),	-- Lhakaz's Swiftblade

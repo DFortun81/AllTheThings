@@ -79,7 +79,7 @@ _.Instances =
 					}),
 					n(-40, { -- Legacy
 						["groups"] = {
-							n(-17, {	-- Quests (Legacy)
+							nlq({	-- Quests (Legacy)
 								q(4771, { 	-- Dawn's Gambit
 									un(2, i(15854)), 	-- Dancing Sliver
 									un(2, i(15853)), 	-- Windreaper
@@ -230,7 +230,7 @@ _.Instances =
 								un(2, i(14621)),	-- Deathbone Sabatons
 								un(2, i(18682)),	-- Ghoul Skin Leggings
 								un(2, i(18683)),	-- Hammer of the Vesper
-								un(2, i(16684)),	-- Magister's Gloves
+								un(7, i(16684)),	-- Magister's Gloves
 								un(2, i(14631)),	-- Necropile Boots
 								un(2, i(14629)),	-- Necropile Cuffs
 								un(2, i(14632)),	-- Necropile Leggings
@@ -393,7 +393,6 @@ _.Instances =
 								un(2, i(13964)),	-- Witchblade
 							}),
 						},
-						["u"] = 12,
 					}),
 				},
 				["lvl"] = 33,

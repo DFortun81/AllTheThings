@@ -958,6 +958,12 @@ _.Zones =
 								un(34, i(10637)),	-- Brewer's Gloves
 								un(34, i(10638)),	-- Long Draping Cape
 							}),
+							qh(1962, {	-- Spellfire Robes
+								["groups"] = {
+									un(34, i(7510)),	-- Lesser Spellfire Robes
+								},
+								["classes"] = { 8 },	-- Mage
+							}),
 							qh(1882, {	-- The Balnir Farmstead
 								["groups"] = {
 									un(34, i(7507)),	-- Arcane Orb
@@ -980,7 +986,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["lvl"] = 1,

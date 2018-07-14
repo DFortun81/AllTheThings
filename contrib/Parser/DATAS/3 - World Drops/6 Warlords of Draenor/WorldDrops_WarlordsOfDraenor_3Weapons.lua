@@ -81,7 +81,7 @@ _.WorldDrops =
 					i(116615),	-- Ancestral Spellblade
 					i(116631),	-- Howling Dagger
 					i(116632),	-- Oshu'gun Spellblade
-					i(117371),	-- Miniature Winter Veil Tree
+					un(7, i(117371)),	-- Miniature Winter Veil Tree
 					i(118783),	-- Rykard's Reliable Ribcutter
 					i(118784),	-- Sliver of Na'the
 					i(118785),	-- Void Bound Knife

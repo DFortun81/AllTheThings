@@ -1019,7 +1019,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qa(1393, { -- Galen's Escape
 								un(34, i(6828)),	-- Visionary Buckler
 							}),
@@ -1032,7 +1032,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["lvl"] = 40,	

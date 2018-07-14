@@ -353,10 +353,8 @@ _.Zones =
 						dr(01.2, i(68752)),	-- Imbued Infantry Belt
 						dr(01.2, i(68750)),	-- Imbued Pioneer Belt
 						dr(01.0, i(68747)),	-- Imbued Disciple's Sash
-						dr(01.0, i(68753)),	-- Imbued Infantry Bracers	
-						nld({     -- Legacy
-							i(5744),	-- Pale Skinner						
-						}),						
+						dr(01.0, i(68753)),	-- Imbued Infantry Bracers
+						un(7, i(5744)),	-- Pale Skinner		
 					}), 
 					n(100, {	-- Gruff Swiftbite
 						dr(17.0, i(68744)),	-- Imbued Pioneer Cloak
@@ -370,10 +368,8 @@ _.Zones =
 						dr(01.3, i(68752)),	-- Imbued Infantry Belt
 						dr(01.2, i(68749)),	-- Imbued Disciple's Bracers
 						dr(01.2, i(68748)),	-- Imbued Disciple's Cloak
-						dr(01.1, i(68753)),	-- Imbued Infantry Bracers					
-						nld({     -- Legacy
-							i(38513), 	-- Boarhide Leggings					
-						}),						
+						dr(01.1, i(68753)),	-- Imbued Infantry Bracers
+						un(7, i(38513)), 	-- Boarhide Leggings,						
 					}), 
 					n(99, { 	-- Morgaine the Sly
 						dr(13.0, i(68743)),	-- Imbued Infantry Cloak
@@ -389,10 +385,8 @@ _.Zones =
 						dr(01.2, i(68751)),	-- Imbued Pioneer Bracers
 						dr(01.1, i(68748)),	-- Imbued Disciple's Cloak
 						dr(01.0, i(68754)),	-- Imbued Disciple's Boots
-						dr(01.0, i(68761)),	-- Imbued Infantry Boots	
-						nld({     -- Legacy
-							i(1917), 	-- Jeweled Dagger					
-						}),
+						dr(01.0, i(68761)),	-- Imbued Infantry Boots
+						un(7, i(1917)), 	-- Jeweled Dagger
 					}), 
 					n(471, { 	-- Mother Fang
 						dr(39.0, i(68743)),	-- Imbued Infantry Cloak
@@ -410,9 +404,7 @@ _.Zones =
 						dr(01.0, i(68747)),	-- Imbued Disciple's Sash
 						dr(01.0, i(68759)),	-- Imbued Gypsy Cloak
 						dr(01.0, i(68760)),	-- Imbued Infantry Gauntlets
-						nld({     -- Legacy
-							i(3000),	-- Brood Mother Carapace						
-						}),					
+						un(7, i(3000)),	-- Brood Mother Carapace					
 					}), 
 					n(61, { 	-- Thuros Lightfingers
 						dr(16.0, i(68744)),	-- Imbued Pioneer Cloak
@@ -490,7 +482,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qa(1667, {	-- Dead-tooth Jack
 								["groups"] = {
 									un(34, i(6979)),	-- Haggard's Axe
@@ -513,7 +505,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 				m(864, {	-- Northshire
 					["groups"] = {
@@ -703,7 +694,7 @@ _.Zones =
 							["groups"] = {
 								--n(  0, {	-- Zone Drop (Legacy)
 								--}),
-								n(-17, {	-- Quests (Legacy)
+								nlq({	-- Quests (Legacy)
 									qa(346, {	-- Return to Kristoff
 										un(34, i(6095)),	-- Wandering Boots
 									}),
@@ -711,7 +702,6 @@ _.Zones =
 								--n(-16, {	-- Rares (Legacy)
 								--}),
 							},
-							["u"] = 12,
 						}),
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",

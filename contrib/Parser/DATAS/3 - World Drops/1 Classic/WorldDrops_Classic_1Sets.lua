@@ -10,7 +10,7 @@ _.WorldDrops =
 				i(3292),	-- Ancestral Tunic
 				i(3291),	-- Ancestral Woollies
 				i(3282),	-- Battle Chain Pants
-				i(3283),	-- Battle Chain Tunic
+				un(7, i(3283)),	-- Battle Chain Tunic
 				i(120950),	-- Battle Chain Vest
 				i(14090),	-- Beaded Britches
 				i(14091),	-- Beaded Robe
@@ -28,8 +28,8 @@ _.WorldDrops =
 				i(68749),	-- Imbued Disciple's Bracers
 				i(68755),	-- Imbued Disciple's Gloves
 				i(68747),	-- Imbued Disciple's Sash
-				i(10554),	-- Foreman Pants
-				i(10553),	-- Foreman Vest
+				un(7, i(10554)),	-- Foreman Pants
+				un(7, i(10553)),	-- Foreman Vest
 				i(15304),	-- Grizzly Jerkin
 				i(15303),	-- Grizzly Pants
 				i(9756),	-- Gypsy Trousers
@@ -1683,8 +1683,8 @@ _.WorldDrops =
 				i(14325),	-- Resplendent Epaulets
 				i(14326),	-- Resplendent Robes
 				i(14327),	-- Resplendent Belt
-				i(20259),	-- Shadow Panther Hide Gloves
-				i(20261),	-- Shadow Panther Hide Belt
+				un(7, i(20259)),	-- Shadow Panther Hide Gloves
+				un(7, i(20261)),	-- Shadow Panther Hide Belt
 				i(15434),	-- Supreme Sash
 				i(15435),	-- Supreme Shoes
 				i(15436),	-- Supreme Bracers

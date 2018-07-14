@@ -965,9 +965,7 @@ _.Zones =
 						dr(	1	, i(	9857	)), --	Archer's Bracers
 						dr(	1	, i(	9826	)), --	Durable Robe
 						dr(	1	, i(	7353	)), --	Elder's Padded Armor
-						nld({     -- Legacy
-							i(1539),	-- Gnarled Hermit's Staff
-						}),											
+						un(7, i(1539)),	-- Gnarled Hermit's Staff								
 					}), 
 					n(5859, { 		-- Hagg Taurenbane
 						dr(	4	, i(	9859	)), --	Archer's Cap
@@ -1049,9 +1047,7 @@ _.Zones =
 						dr(	1	, i(	9852	)), --	Conjurer's Robe
 						dr(	1	, i(	7357	)), --	Elder's Hat
 						dr(	1	, i(	7438	)), --	Twilight Belt
-						nld({     -- Legacy
-							i(2035),	-- Sword of the Night Sky
-						}),						
+						un(7, i(2035)),	-- Sword of the Night Sky					
 					}), 
 					nh(5848, { 		-- Malgin Barleybrew
 						dr(	4	, i(	9860	)), --	Archer's Cloak
@@ -1266,7 +1262,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qh(913, {	-- Cry of the Thunderhawk
 								un(34, i(5302)),	-- Cobalt Buckler
 								un(34, i(5306)),	-- Wind Rider Staff
@@ -1282,7 +1278,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["achievementID"] = 4996,

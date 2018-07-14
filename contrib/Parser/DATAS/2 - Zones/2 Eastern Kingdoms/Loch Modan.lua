@@ -112,12 +112,15 @@ _.Zones =
 					qg(1073, qa(27078)),	-- Gor'kresh
 					qg(6577, qa(27034)),	-- He's That Age
 --]]
-					desc(qa(13661), "After turning in all six Stolen Explorers' League Documents, this quest will pop up.", { -- Heartfelt Appreciation
-						i(58993),	-- Old Dwarven Hammer
-						i(58991),	-- Star Shooter
-						i(156932),	-- Surveyor's Staff 
-						i(58992),	-- Uncovered Breastplate
-						i(131300),	-- Uncovered Chestguard
+					qa(13661, {	-- Heartfelt Appreciation
+						["groups"] = {	
+							i(58993),	-- Old Dwarven Hammer
+							i(58991),	-- Star Shooter
+							i(156932),	-- Surveyor's Staff 
+							i(58992),	-- Uncovered Breastplate
+							i(131300),	-- Uncovered Chestguard
+						},
+						["description"] = "After turning in all six Stolen Explorers' League Documents, this quest will pop up.",
 					}),
 --[[					
 					qg(1154, qa(27028)),	-- Hornet Hunting
@@ -703,7 +706,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
+						nlq({	-- Quests (Legacy)
 							qa(283, { -- A Dark Threat Looms
 								un(34, i(2907)),	-- Dwarven Tree Chopper
 								un(34, i(2908)),	-- Thornblade 
@@ -723,6 +726,9 @@ _.Zones =
 								un(34, i(59001)),	-- Ill-Worn Belt
 								un(34, i(59002)),	-- Unabashed Vest
 								un(32, i(3572)),	-- Daryl's Shortsword
+							}),
+							qa(704, {	-- Agmond's Fate
+								un(34, i(4980)),	-- Prospector Gloves
 							}),
 							qa(2038, { -- Bingles' Missing Supplies
 								un(34, i(58975)),	-- Gnomish All-Purpose Ray Gun
@@ -810,7 +816,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
 				}),
 			},
 			["lvl"] = 10,	
