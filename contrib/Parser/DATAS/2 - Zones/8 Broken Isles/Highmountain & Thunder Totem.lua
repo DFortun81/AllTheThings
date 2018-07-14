@@ -868,7 +868,11 @@ _.Zones =
 							}),
 							n(-189, { -- Skinning
 							  q(40134, {	-- Highmountain Hides
-								["groups"] = { i(130064) },	-- Deadeye Monocle
+								["groups"] = { 
+									i(130064, { 	-- Deadeye Monocle
+										["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+									}),
+								},
 								["requiredSkill"] = 393
 							  }),
 							}),

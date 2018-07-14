@@ -9,21 +9,32 @@ end
 i(7509, 1, 2859);		-- Manaweave Robe (Ghostlands)
 i(24339, 1, 9500);		-- Stung
 i(49888, 1, 24432); 	-- Shadow's Edge
-i(128827, 1, 76173);	-- Xal'atath, Blade of the Black Empire
 i(20637, 1, 8133);		-- Acid Inscribed Pauldrons
 i(5197, 1, 1989);		-- Cookie's Tenderizer
-i(130064, 1, 74444);	-- Deadeye Monocle	
-i(139300, 1, 80594);	-- Finely-Tailored Green Holiday Hat
-i(139299, 1, 80593);	-- Finely-Tailored Red Holiday Hat
 i(41755, 1, 20156);		-- The Fire Extinguisher
 i(86559, 1, 44498);		-- Frying Pan
+i(86558, 1, 44497);		-- Rolling Pin
 i(68194, 1, 34777);		-- Oggleflint's Inspirer
 i(1958, 1, 510);		-- Petrified Shinbone
 
+-----------------------
+-- C O S M E T I C S --
+-----------------------
 
-------------------------------
--- S T E I N S   /   M U G S--
-------------------------------
+i(130064, 1, 74444);	-- Deadeye Monocle	
+i(139300, 1, 80594);	-- Finely-Tailored Green Holiday Hat
+i(139299, 1, 80593);	-- Finely-Tailored Red Holiday Hat
+i(52489, 1, 25733);		-- Rhinestone Sunglasses [Non Equip]
+i(142000, 1, 82990);	-- Rhinestone Sunglasses [BoP]
+i(52486, 1, 25730);		-- Jeweler's Sapphire Monocle
+i(52488, 1, 25732);		-- Jeweler's Sapphire Monocle
+i(52485, 1, 25729);		-- Jeweler's Ruby Monocle
+i(52487, 1, 25731);		-- Jeweler's Amber Monocle
+
+
+-------------------------------
+-- S T E I N S   /   M U G S --
+-------------------------------
 
 i(18044, 1, 7222); 		-- Hurley's Tankard
 i(12791, 1, 4544); 		-- Barman Shanker
@@ -81,7 +92,9 @@ i(133755, 1, 76909);	-- Underlight Angler
 
 i(44703, 1, 21571);		-- Dark Herring
 i(19808, 1, 7794);		-- Rockhide Strongfish
-i(6360, 1,  2358);		-- Steelscale Crushfish
+i(6360, 1, 2358);		-- Steelscale Crushfish
+i(34486, 1, 15994);		-- Old Crafty
+i(34484, 1, 15992);		-- Old Ironjaw
 
 --------------------------------------------
 -- H I D D E N      A P P E A R A N C E S --

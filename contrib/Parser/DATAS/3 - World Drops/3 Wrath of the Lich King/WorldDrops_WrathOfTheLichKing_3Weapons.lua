@@ -107,7 +107,9 @@ _.WorldDrops =
 					i(43613),	-- The Dusk Blade
 					i(44310),	-- Namlak's Supernumerary Sticker
 					i(44505),	-- Dustbringer
-					i(44703),	-- Dark Herring -- Cannot Be Transmogged
+					i(44703, {	-- Dark Herring
+						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+					}),
 					i(49227),	-- Skoll's Fang
 				}),
 				n(-348, { -- Fist Weapons	
