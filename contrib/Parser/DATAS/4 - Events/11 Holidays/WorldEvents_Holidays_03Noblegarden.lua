@@ -3,47 +3,251 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	n(-3, { 	-- Holiday
-		["groups"] = {
-			n(-51, { 	-- Noblegarden
-				["groups"] = {
-					n(-2, { -- Vendors
-						h(n(32837, { -- Noblegarden Merchant
-							un(19, i(44791, { -- Noblegarden Chocolate
-								un(19, i(74282)),	-- Black Spring Circlet
-								un(19, i(151804)),	-- Black Tuxedo Pants
-								un(19, i(151806)),	-- Elegant Dress
-								un(19, i(116258)),	-- Mystical Spring Bouquet
-								un(19, i(141532)),	-- Noblegarden Bunny
-								un(19, i(74283)),	-- Pink Spring Circlet
-								un(19, i(44803)),	-- Spring Circlet
-								un(19, i(44794)),	-- Spring Rabbit's Foot
-								un(19, i(44800)),	-- Spring Robes
-								un(19, i(72145)),	-- Swift Springstrider
-								un(19, i(6833)),	-- White Tuxedo Shirt
-							})),
-						})),
-						a(n(32836, { -- Noblegarden Vendor
-							un(19, i(44791, { -- Noblegarden Chocolate
-								un(19, i(74282)),	-- Black Spring Circlet
-								un(19, i(151804)),	-- Black Tuxedo Pants
-								un(19, i(151806)),	-- Elegant Dress
-								un(19, i(116258)),	-- Mystical Spring Bouquet
-								un(19, i(141532)),	-- Noblegarden Bunny
-								un(19, i(74283)),	-- Pink Spring Circlet
-								un(19, i(44803)),	-- Spring Circlet
-								un(19, i(44794)),	-- Spring Rabbit's Foot
-								un(19, i(44800)),	-- Spring Robes
-								un(19, i(72145)),	-- Swift Springstrider
-								un(19, i(6833)),	-- White Tuxedo Shirt
-							})),
-						})),
+	n(-3, { -- Holiday
+		["groups"] = bubbleDown({["u"] = 19}, { -- Noblegarden
+			n(-51, { -- Noblegarden
+				n(-4, { -- Achievements
+					ach(2798, { -- Noble Gardener
+						["groups"] = {
+							un(19, title(122)), -- the Noble
+							ach(2676, { -- I Found One!
+								["groups"] = {},
+							}),
+							ach(2417, { -- Chocolate Lover
+								["groups"] = {
+									ach(2418, { -- Chocoholic
+										["groups"] = {},
+									}),
+								},
+							}),
+							ach(2436, { -- Desert Rose
+								["groups"] = {
+									crit(1), -- The Badlands
+									crit(2), -- Desolace
+									crit(3), -- Silithus
+									crit(4), -- Tanaris
+									crit(5), -- Thousand Needles
+								},
+							}),
+							ach(2576, { -- Blushing Bride
+								["groups"] = {},
+							}),
+							ach(2416, { -- Hard Boiled
+								["groups"] = {},
+							}),
+							ach(2419, { -- Spring Fling (Alliance)
+								["groups"] = {
+									crit(1), -- Azure Watch
+									crit(2), -- Dolanaar
+									crit(3), -- Goldshire
+									crit(4), -- Kharanos
+								},
+								["races"] = ALLIANCE_ONLY,
+							}),
+							ach(2497, { -- Spring Fling (Horde)
+								["groups"] = {
+									crit(1), -- Bloodhoof Village
+									crit(2), -- Brill
+									crit(3), -- Falconwing Square
+									crit(4), -- Razor Hill
+								},
+								["races"] = HORDE_ONLY,
+							}),
+							ach(2421, { -- Noble Garden (Alliance)
+								["groups"] = {},
+								["races"] = ALLIANCE_ONLY,
+							}),
+							ach(2420, { -- Noble Garden (Horde)
+								["groups"] = {},
+								["races"] = HORDE_ONLY,
+							}),
+							ach(2422, { -- Shake Your Bunny-Maker
+								["groups"] = {
+									crit(1), -- Blood Elf
+									crit(2), -- Draenei
+									crit(3), -- Dwarf
+									crit(4), -- Gnome
+									crit(5), -- Goblin
+									crit(6), -- Human
+									crit(7), -- Night Elf
+									crit(8), -- Orc
+									crit(9), -- Tauren
+									crit(10), -- Troll
+									crit(11), -- Undead
+									crit(12), -- Worgen
+								},
+							}),
+						},
 					}),
-				},
-				["achievementID"] = 2798, -- Noble Gardener
-				["u"] = 19,
+					ach(248, { -- Sunday's Finest
+						["groups"] = {
+							i(45072, { -- Brightly Colored Egg
+								["groups"] = {
+									i(6833), -- White Tuxedo Shirt
+									i(151804), -- Black Tuxedo Pants
+								},
+							}),
+						},
+					}),
+					ach(249, { -- Dressed for the Occasion
+						["groups"] = {
+							i(45072, { -- Brightly Colored Egg
+								["groups"] = {
+									i(151806), -- Elegant Dress
+								},
+							}),
+						},
+					}),
+				}),
+				n(-17, { -- Quests
+					-- ALLIANCE QUESTS --
+					["groups"] = bubbleDown({["races"] = ALLIANCE_ONLY}, { -- Alliance-only Quests
+						q(13484, { -- Spring Collectors
+							["groups"] = {},
+							["qgs"] = {
+								18927, -- Human Commoner
+								19148, -- Dwarf Commoner
+								19171, -- Draenei Commoner
+								19172, -- Gnome Commoner
+								19173, -- Night Elf Commoner
+								20102, -- Goblin Commoner
+							},
+							["maps"] = {
+								11, -- Northern Barrens
+								161, -- Tanaris
+								281, -- Winterspring
+								301, -- Stormwind City
+								341, -- Ironforge
+								381, -- Darnassus
+								471, -- The Exodar
+								479, -- Netherstorm
+								481, -- Shattrath City
+								495, -- The Storm Peaks
+								673, -- The Cape of Stranglethorn
+								928, -- Isle of Thunder
+							},
+						}),
+						q(13480, { -- The Great Egg Hunt (Alliance)
+							["groups"] = {},
+							["qg"] = 32799, -- Spring Collector
+							["maps"] = {
+								27, -- Dun Morogh
+								30, -- Elwynn Forest
+								41, -- Teldrassil
+								464, -- Azuremyst Isle
+							},
+							["isDaily"] = true,
+						}),
+						q(13502, { -- A Tisket, a Tasket, a Noblegarden Basket (Alliance)
+							["groups"] = {
+								un(19, i(45067)), -- Egg Basket
+							},
+							["qg"] = 32836, -- Noblegarden Vendor
+							["maps"] = {
+								27, -- Dun Morogh
+								30, -- Elwynn Forest
+								41, -- Teldrassil
+								464, -- Azuremyst Isle
+							},
+						}),
+					}),
+					-- HORDE QUESTS --
+					["groups"] = bubbleDown({["races"] = HORDE_ONLY}, { -- Horde-only Quests
+						q(13483, { -- Spring Gatherers
+							["groups"] = {},
+							["qgs"] = {
+								19169, -- Blood Elf Commoner
+								19175, -- Orc Commoner
+								19176, -- Tauren Commoner
+								19177, -- Troll Commoner
+								19178, -- Forsaken Commoner
+								20102, -- Goblin Commoner
+							},
+							["maps"] = {
+								11,		-- Northern Barrens
+								161,	-- Tanaris
+								281,	-- Winterspring
+								321,	-- Orgrimmar
+								362,	-- Thunder Bluff
+								382,	-- Undercity
+								462,	-- Eversong Woods
+								479,	-- Netherstorm
+								481,	-- Shattrath City
+								495,	-- The Storm Peaks
+								673,	-- The Cape of Stranglethorn
+							},
+						}),
+						q(13479, { -- The Great Egg Hunt (Horde)
+							["groups"] = {},
+							["qg"] = 32798, -- Spring Gatherer
+							["maps"] = {
+								4, -- Durotar
+								9, -- Mulgore
+								20, -- Tirisfal Glades
+								462, -- Eversong Woods
+							},
+							["isDaily"] = true,
+						}),
+						q(13503, { -- A Tisket, a Tasket, a Noblegarden Basket (Horde)
+							["groups"] = {
+								un(19, i(45067)), -- Egg Basket
+							},
+							["qg"] = 32837, -- Noblegarden Merchant
+							["maps"] = {
+								4, -- Durotar
+								9, -- Mulgore
+								20, -- Tirisfal Glades
+								462, -- Eversong Woods
+							},
+						}),
+					}),
+				}),
+				n(-2, { -- Vendors
+					n(32836, { -- Noblegarden Vendor
+						["groups"] = {
+							un(19, i(44791, { -- Noblegarden Chocolate
+								-- Appearances --
+								un(19, i(74282)),	-- Black Spring Circlet
+								un(19, i(151804)),	-- Black Tuxedo Pants
+								un(19, i(151806)),	-- Elegant Dress
+								un(19, i(74283)),	-- Pink Spring Circlet
+								un(19, i(44803)),	-- Spring Circlet
+								un(19, i(44800)),	-- Spring Robes
+								un(19, i(6833)),	-- White Tuxedo Shirt
+								-- Pets --
+								un(19, i(141532)),	-- Noblegarden Bunny
+								un(19, i(116258)),	-- Mystical Spring Bouquet
+								un(19, i(44794)),	-- Spring Rabbit's Foot
+								-- Mounts --
+								un(19, i(72145)),	-- Swift Springstrider
+							})),
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(32837, { -- Noblegarden Merchant
+						["groups"] = {
+							un(19, i(44791, { -- Noblegarden Chocolate
+								-- Appearances --
+								un(19, i(74282)),	-- Black Spring Circlet
+								un(19, i(151804)),	-- Black Tuxedo Pants
+								un(19, i(151806)),	-- Elegant Dress
+								un(19, i(74283)),	-- Pink Spring Circlet
+								un(19, i(44803)),	-- Spring Circlet
+								un(19, i(44800)),	-- Spring Robes
+								un(19, i(6833)),	-- White Tuxedo Shirt
+								-- Pets --
+								un(19, i(141532)),	-- Noblegarden Bunny
+								un(19, i(116258)),	-- Mystical Spring Bouquet
+								un(19, i(44794)),	-- Spring Rabbit's Foot
+								-- Mounts --
+								un(19, i(72145)),	-- Swift Springstrider
+							})),
+						},
+						["races"] = HORDE_ONLY,
+					}),
+				}),
 			}),
-		},
+		}),
 		["icon"] = "Interface\\Icons\\INV_Helm_Cloth_WitchHat_B_01",
 	}),
 };
