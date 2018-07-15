@@ -41,6 +41,13 @@ _.Zones =
 						})
 					},
 				}),
+				n(-4, { -- Achievement
+					["groups"] = {
+						ach(10398, { -- Drum Circle
+							["description"] = "You need 5 people jumping on the drum on lower floor of Thunder Totem. Can NOT be completed while you are on 'Assault on Thunder Totem'."
+						}),
+					},
+				}),
 				n(-25, { 	-- Pet Battle
 					p(487), 	-- Alpine Chipmonk
 					p(1743), 	-- Black-Footed Fox Kit

@@ -1181,6 +1181,13 @@ _.Zones =
 								["sourceQuests"] = { 46511 }, -- We're Treasure Hunters
 							}),
 						}),
+						q(46175, { -- Rolling Thunder
+							["groups"] = {
+								ach(11607, { -- They See Me Rolling
+									["description"] = "This achievement is only active with this World Quest.  If you take damage on your barrel you can let it regenerate before turning in."
+								}),
+							},
+						}),
 						q(46317, { -- Talon's Call
 							["groups"] = {
 							},
@@ -1188,6 +1195,7 @@ _.Zones =
 							["sourceQuests"] = { 46246 }, -- Strike Them Down
 							["classes"] = { 11 },  -- Druid
 						}),
+					
 					}),
 					-- Druid Champions of Legionfall Quest Chain Parts
 					{
