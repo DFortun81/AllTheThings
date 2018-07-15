@@ -928,8 +928,13 @@ _.Mounts =
 		un(2, ach(12134, {	-- Dominant Gladiator: Legion Season 6
 			un(2, i(141848)),	-- Dominant Gladiator's Storm Dragon
 		})),
-		ach(12168, {	-- Gladiator: Legion Season 7
-			i(153493),	-- Demonic Gladiator's Storm Dragon
-		}),
+		un(2, ach(12168, {	-- Gladiator: Legion Season 7
+			["groups"] = {
+				i(153493, {	-- Demonic Gladiator's Storm Dragon
+					["mountID"] = 243201,
+				}),
+			},
+			["collectible"] = false,
+		})),
 	}),
 };
