@@ -996,7 +996,6 @@ _.Zones =
 					q(40540),	-- Come at Me, Brul
 					q(41157),	-- Corrupted Studies
 					q(41166),	-- Dark Secrets
-					q(44177),	-- Dark Secrets and Shady Deals
 					q(41169),	-- Darkheart Thicket: Through the Fog
 					q(47767),	-- Death Metal Knight
 					q(41165),	-- Deciphering Demonology
@@ -1078,7 +1077,6 @@ _.Zones =
 					q(42431),	-- The Brood of Nithogg
 					q(40541),	-- The Charge Within
 					q(45524),	-- The Forgotten Heir
-					q(46340),	-- The Gates Are Closed
 					q(41802),	-- The Gates of Valor
 					q(42193),	-- The Gjallarhorn
 					q(41849),	-- The Iron Fist
@@ -1102,12 +1100,29 @@ _.Zones =
 					q(40143),	-- Unfinished Treatise on the Properties of Stormscale
 					q(38642),	-- Vrykul Longboat
 					q(38472),	-- Whitewater Typhoon
-					q(40868),	-- Wibbly-Wobbly, Timey-Wimey
 					q(38626),	-- Worg Pack
 					q(38627),	-- Worgen Stalkers (Horde Only)
 					qh( 38361),	-- Wrath of the Blightcaller
 					SOON™
 					--]]
+					q(44177, {	-- Dark Secrets and Shady Deals
+						["qg"] = 112959, -- Fleet Admiral Tethys
+						["classes"] = { 4 },
+					}),
+					q(46340, {
+						["qg"] = 93628, -- Eyir
+					}),
+					q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
+						["groups"] = {
+							sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
+						},
+						["qg"] = 102198, -- Fargo Flintlocke
+						["requiredSkill"] = 202,
+						["sourceQuests"] = {
+							40866,	-- The Shell, You Say?
+							40867,	-- Bubble Baubles
+						},
+					}),
 				}),
 				n(-16, { -- Rares
 					n(91874, { 		-- Bladesquall

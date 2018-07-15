@@ -1119,7 +1119,6 @@ _.Zones =
 									q(39762),	-- Feltotem Warlock
 									q(39430),	-- Flasking for a Favor
 									q(41822),	-- Following his Hoofsteps
-									q(38518),	-- From One Master to Another
 									q(46783),	-- Further Advancement
 									q(46149),	-- Furthering Knowledge
 									q(41987),	-- Garn
@@ -1237,7 +1236,6 @@ _.Zones =
 									q(40958),	-- Tactical Matters
 									q(40184),	-- Tauren Tanning
 									q(42526),	-- Tech It Up A Notch
-									q(39334),	-- Thanks for Flasking
 									q(44263),	-- The Arcway
 									q(38833),	-- The Art of Demonsteel
 									q(45564),	-- The Burning Birds
@@ -1262,7 +1260,6 @@ _.Zones =
 									q(41192),	-- The Right Path
 									q(42401),	-- The Scent of Magic
 									q(40316),	-- The Screeching Crag
-									q(40385),	-- The Spear in the Shadow
 									q(45726),	-- The Tainted Marsh
 									q(40954),	-- The Unseen Path
 									q(44055),	-- They Have A Pitlord
@@ -1291,7 +1288,6 @@ _.Zones =
 									q(44233),	-- Walk This Way
 									q(41820),	-- Walk Without Rhythm
 									q(39880),	-- Waste Not
-									q(40415),	-- Well Spent Time
 									q(38786),	-- Where Respect is Due
 									q(41832),	-- White Water Terror
 									q(45179),	-- Win the Crowd
@@ -1303,6 +1299,26 @@ _.Zones =
 									q(38514),	-- You Are Not Worthy
 						  SOON™
 						  --]]
+						q(38518, {	-- From One Master to Another
+							["qg"] = 92242, -- Barm Stonebreaker
+							["sourceQuests"] = {
+								39680,	-- Between the Hammer...
+								39726,	-- ... And the Anvil
+							},
+						}),
+						q(39334, {	-- Thanks for Flasking
+							["qg"] = 92242, -- Barm Stonebreaker
+							["sourceQuests"] = { 39430 }, -- Flasking for a Favor
+						}),
+						q(40385, {	-- The Spear in the Shadow
+							["qgs"] = { 110821, 110986 }, -- Apata Highmountain
+							["classes"] = { 3 },
+							["sourceQuests"] = { 39427 }, -- The Eagle Spirit's Blessing
+						}),
+						q(40415, {	-- Well Spent Time
+							["qg"] = 98948, -- Hrul Sharphoof
+							["requiredSkill"] = 165,
+						}),
 				}),	
 				n(-16, { 	-- Rares
 					{

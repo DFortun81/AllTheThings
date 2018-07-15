@@ -346,7 +346,6 @@ _.Zones =
 					qg(, qh(24982)),	-- The New Forsaken
 					qg(, qh(24980)),	-- The Scarlet Palisade
 					qg(, qh(11971)),	-- The Spinner of Summer Tales
-					qg(, q(41957)),	-- The Vindicator's Plea
 					qg(, qh(25011)),	-- To Bigger and Better Things
 					qg(, qh(11923)),	-- Torch Catching
 					qg(, qh(11922)),	-- Torch Tossing
@@ -358,6 +357,10 @@ _.Zones =
 					qg(, qh(14059)),	-- We're Out of Cranberry Chutney Again?
 					qg(, qh(29428)),	-- What Now?
 --]]
+					qart(q(41957, {	-- The Vindicator's Plea
+						["qgs"] = { 101314, 110564 }, -- Alonsus Faol (2 versions)
+						["classes"] = { 5 },
+					})),
 				}),
 				n(-16, {	-- Rares
 					n(1911, { 	-- Deeb

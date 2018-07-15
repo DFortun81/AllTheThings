@@ -1532,18 +1532,24 @@ _.Zones =
 							}),
 							q(37659), -- The Captain's Foot Locker
 							qa(40794, {	-- Fate of the Queen's Reprisal [Alliance]
-								i(121482),	-- Cloak of the Greywatch
-								i(138857),	-- SI:7 Standard Issue Vest
-								i(138856),	-- Alliance Auxillary Hauberk
-								i(138855),	-- Alliance Crusader's Breastplate
-								i(138858),	-- Stormwind Clergy Vestments
+								["groups"] = {
+									i(121482),	-- Cloak of the Greywatch
+									i(138857),	-- SI:7 Standard Issue Vest
+									i(138856),	-- Alliance Auxillary Hauberk
+									i(138855),	-- Alliance Crusader's Breastplate
+									i(138858),	-- Stormwind Clergy Vestments
+								},
+								["qg"] = 239328,
 							}),
 							qh(42244, {	-- Fate of the Queen's Reprisal [Horde]
-								i(138859),	-- Royal Apothecary Robe
-								i(121488),	-- Royal Apothecary Drape
-								i(138862),	-- Decorated Deathstalker Jerkin
-								i(138861),	-- Troll Auxillary Chainmail
-								i(138860),	-- Kor'kron Breastplate
+								["groups"] = {
+									i(138859),	-- Royal Apothecary Robe
+									i(121488),	-- Royal Apothecary Drape
+									i(138862),	-- Decorated Deathstalker Jerkin
+									i(138861),	-- Troll Auxillary Chainmail
+									i(138860),	-- Kor'kron Breastplate
+								},
+								["qg"] = 239328,
 							}),
 						}),
 					}),
@@ -1557,10 +1563,19 @@ _.Zones =
 						}),
 					}),  
 					n(-38, { 	 -- Professions
+						n(-180, { -- Alchemy
+							q(39390, {	-- A Mysterious Text
+								["qg"] = 243392, -- Alchemy Book
+								["sourceQuests"] = { 39566 }, -- The Search for Knowledge
+							}),
+						}),
 						n(-182, { -- Enchanting
 							q(40169), -- Crossroads Rendezvous
 							q(39923), -- Down to the Core
-							q(39907), -- Elven Enchantments
+							q(39907, {	-- Elven Enchantments
+								["qg"] = 107139, -- Enchantress Ilanya
+								["sourceQuests"] = { 39918 }, -- The Absent Priestess
+							}),
 						}),
 						n(-183, { -- Engineering
 							qp202(qg(102196, q(40876))),	-- 'Locke, Stock and Barrel
@@ -1651,7 +1666,6 @@ _.Zones =
 					q(40195),	-- A Daring Rescue
 					q(40206),	-- A Debt Paid
 					q(40524),	-- A Familiar Ring to It
-					q(39390),	-- A Mysterious Text
 					q(38951),	-- A Needle Need
 					q(37492),	-- A Rather Long Walk
 					q(37965),	-- A Tainted Vintage
@@ -1686,13 +1700,11 @@ _.Zones =
 					q(40058),	-- Defense Symbology
 					q(41172),	-- Echoes of My Ancestors
 					q(41178),	-- Explosive Results
-					q(43378),	-- Eye of Azshara: Looking Through the Lens
 					q(40208),	-- Eye of Azshara: Scales of the Sea
 					q(38961),	-- Eye of Azshara: The Depraved Nightfallen
 					q(37526),	-- Farondis Murder Flag
 					q(38014),	-- Feasting on the Dragon
 					q(41167),	-- Fel Fragments
-					qa( 45127),	-- Fel-Crossed Lovers
 					q(42069),	-- Felbats
 					q(42171),	-- Final Exit
 					q(40527),	-- Finishing Touches
@@ -1720,15 +1732,11 @@ _.Zones =
 					q(39389),	-- It Hungers for Blood
 					q(40856),	-- It'll Cost You
 					q(40556),	-- Jabrul Needs You
-					qh( 46326),	-- Jorach's Calling
-					qa( 45836),	-- Jorach's Calling
 					q(38443),	-- Journey to the Repose
 					q(40873),	-- Keep Yer Powder Dry
 					q(42214),	-- Knocked for a Loop
 					q(42689),	-- Knowing Our Enemy
-					q(38959),	-- Left Behind
 					q(42691),	-- Leyworm Lure
-					q(38960),	-- Lining Them Up
 					q(40187),	-- Links in the Chain
 					q(38785),	-- Living Leystone Sample
 					q(45073),	-- Loot and Plunder!
@@ -1813,12 +1821,59 @@ _.Zones =
 					q(41185),	-- The Keys to Success
 					q(40859),	-- The Latest Fashion: Headguns!
 ]]--
+					q(43378, {	-- Eye of Azshara: Looking Through the Lens
+						["qg"] = 110687, -- Yalia Sagewhisper
+						["classes"] = { 5 },
+					}),
+					qa(45127, {	-- Fel-Crossed Lovers
+						["qg"] = 116189, -- Levia Laurence
+					}),
+					qa(45836, {	-- Jorach's Calling
+						["qg"] = 119821, -- Princess Tess Greymane
+						["classes"] = { 4 },
+					}),
+					qh(46326, {	-- Jorach's Calling
+						["qg"] = 119822, -- Lilian Voss
+						["classes"] = { 4 },
+					}),
+					q(38959, {	-- Left Behind
+						["qg"] = 93967, -- Lyndras
+						["sourceQuests"] = { 38957 }, -- Taking Inspiration
+					}),
+					q(38960, {	-- Lining Them Up
+						["qg"] = 93967, -- Lyndras
+						["sourceQuests"] = { 38957 }, -- Taking Inspiration
+					}),
 					qg(89341, q(37727, {	-- The Magister of Mixology
 						i(133814),	-- Recipe: Faronaar Fizz [Rank 1]
 					})),
 					sq(37727, qg(89341, q(37728))),	-- Presentation is Everything
+					q(40858, {	-- The Missing Pieces
+						["groups"] = {
+							sp(201584),	-- Schematic: Auto-Hammer
+						},
+						["qg"] = 102195, -- Fargo Flintlocke
+						["sourceQuests"] = { 40856 }, -- It'll Cost You
+						["requiredSkill"] = 202,
+					}),
+					q(40210, {	-- Time Well Spent
+						["qg"] = 98964, -- Celea
+						["sourceQuests"] = {
+							40203,	-- Strength of the Past
+							40204,	-- Evolution of the Past
+							40205,	-- Respect for the Past
+							40207,	-- Scales of the Arcane
+							40208,	-- Eye of Azshara: Scales of the Sea
+							40209,	-- Scales of the Earth
+						},
+						["requiredSkill"] = 165,
+					}),
+					q(40547, {	-- To Dalaran, With Love
+						["qg"] = 100521, -- Jabrul
+						["requiredSkill"] = 755,
+						["sourceQuests"] = { 40556 }, -- Jabrul Needs You
+					}),
 --[[
-					q(40858),	-- The Missing Pieces
 					q(42407),	-- The Nature of the Beast
 					qh( 46322),	-- The Pirate's Bay
 					qa( 45833),	-- The Pirate's Bay
@@ -1833,15 +1888,12 @@ _.Zones =
 					q(41171),	-- The Reliquary Calls
 					q(37660),	-- The Scythe of Souls
 					q(41770),	-- The Skies Above
-					q(42422),	-- The Wardens
 					q(38950),	-- The Wayward Tailor
 					q(43581),	-- The Wisdom of Patience
 					q(42887),	-- This Is Retribution
 					q(37963),	-- Those Beyond Redemption
-					q(40210),	-- Time Well Spent
 					q(43942),	-- Timeworn Artifact
 					q(37779),	-- Tip the Scales
-					q(40547),	-- To Dalaran, With Love
 					q(42886),	-- To Faronaar
 					q(43489),	-- To Felblaze Ingress
 					q(40061),	-- To Know Your Enemy

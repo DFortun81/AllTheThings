@@ -37,6 +37,10 @@ _.ClassHalls =
 					sp(219663) -- Heroic Weapons [No item associated]
 				}),
 				--]]
+				q(46071, {	-- The Hammer of Dalaran
+					["qg"] = 90250, -- Lord Grayson Shadowbreaker
+					["sourceQuests"] = { 46070 }, -- Preparations Underway
+				}),
 			}),
 			n(93787, { -- Scouting Map
 				["groups"] = {

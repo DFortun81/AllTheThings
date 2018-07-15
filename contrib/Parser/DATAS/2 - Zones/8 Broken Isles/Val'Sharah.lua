@@ -1051,11 +1051,13 @@ _.Zones =
 							i(141550),	-- Sabatons of the Receding Nightmare
 							i(141549),	-- Treads of the Receding Nightmare
 						}),
-						q(40890,  {  -- The Tears of Elune
-							i(130001), -- Shaladrassil Cuirass
-							i(129993), -- Shaladrassil Tunic
-							i(129985), -- Shaladrassil Vestments
-							i(130012), -- Shaladrassil Chestguard
+						o(248534, {	-- The Tears of Elune
+							q(40890,  {  -- The Tears of Elune
+								i(130001), -- Shaladrassil Cuirass
+								i(129993), -- Shaladrassil Tunic
+								i(129985), -- Shaladrassil Vestments
+								i(130012), -- Shaladrassil Chestguard
+							}),
 						}),
 					}),  
 					n(-168, { -- Other Quests
@@ -1106,6 +1108,18 @@ _.Zones =
 							q(42883),	-- All Grell Broke Loose
 							q(42884),	-- Grassroots Effort
 							q(42857),	-- Moist Around the Hedges
+						}),
+						q(39338, {	-- Return the Filter
+							["qg"] = 93974, -- Leyweaver Erenyi
+							["sourceQuests"] = { 44112 }, -- Trading for Dreams
+						}),
+						q(39729, {	-- The Knowledge of Black Rook
+							["qg"] = 96763, -- Saris Swifthammer
+							["requiredSkill"] = 164,
+							["sourceQuests"] = {
+								39680,	-- Between the Hammer...
+								39726,	-- ... And the Anvil
+							},
 						}),
 					}),
 				}),

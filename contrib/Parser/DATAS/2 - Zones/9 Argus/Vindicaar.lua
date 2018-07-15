@@ -677,6 +677,9 @@ _.Zones =
 						["requiredSkill"] = 164, -- Blacksmithing
 						["sourceQuests"] = { 47743 }, -- The Child of Light and Shadow
 					}),
+					q(49445, {	-- The Prime Exchange
+						["qg"] = 129674, -- Maras
+					}),
 					q(48069, { -- The Wrench Calls
 						["groups"] = {
 						},

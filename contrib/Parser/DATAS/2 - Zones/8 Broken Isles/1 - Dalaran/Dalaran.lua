@@ -255,7 +255,13 @@ _.Zones =
 						},
 						["u"] = 22,
 					}),
-				}),
+--[[
+					q(43259),	-- Beware of the Crooked Tree
+					q(43055),	-- Candy Bucket
+					qa(43056),	-- Candy Bucket
+					qh(43057),	-- Candy Bucket
+]]--
+					}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {
 						p(1778),	-- Dust Bunny
@@ -375,19 +381,13 @@ _.Zones =
 									i(153501),	-- Cache of Antoran Treasures [Heroic]
 								},
 							},
+							--[[
+							q(47663, {	-- A Timely Summons from Shattrath
+								["qg"] = 111246, -- Archmage Timear
+							}),
+							]]--
 						},
 					}),
-					{
-						["questID"] = 44400,	-- Assault on Violet Hold: Purple Pain
-						["qg"] = 113813,	-- Quest Giver: Lieutenant Sinclari
-						["groups"] = {
-							i(141359),	-- Violet Guardian's Corona
-							i(141358),	-- Violet Guardian's Cowl
-							i(141356),	-- Violet Guardian's Faceguard
-							i(141357),	-- Violet Guardian's Helm
-						},
-					},
-					
 --[[					
 					n(-34, {	-- World Quests
 						q(42442),	-- Fight Night: Amalia
@@ -413,825 +413,2670 @@ _.Zones =
 						q(41674),	-- Work Order: Word of Intellect
 					}),
 --]]					
-					qp202(qg(93539, q(40871))),	-- 'Locke and Load
-					qart(qg(102478, q(41541, {	-- A Beastly Expedition 
+					
+					n(-180, {	-- Alchemy
+						["groups"] = {
+							q(39329, {	-- A Dormant Burner
+								["qg"] = 92458,	-- Deucus Valdera
+								["sourceQuests"] = { 39328 }, -- Ancient Knowledge
+							}),
+							q(39339, {	-- A Fragile Crucible
+								["qg"] = 92458, -- Deucus Valdera
+							}),
+							q(39333, {	-- An Imprecise Burette
+								["qg"] = 101492, -- Ms. Xiulan
+								["sourceQuests"] = { 39342 }, -- The Price of the Black Market
+							}),
+							q(39343),	-- Bendy Glass Tubes
+							q(39349, {	-- Black Rook Hold: Heavy, But Helpful
+								["qg"] = 92183, -- Alard Schmied
+							}),
+							qa(39645, {	-- Calibration Experts
+								["qg"] = 92458, -- Deucus Valdera
+							}),
+							qh(39345, {	-- Calibration Experts
+								["qg"] = 92458, -- Deucus Valdera
+							}),
+							q(39347, {	-- Channeling Our Efforts
+								["qg"] = 92458, -- Deucus Valdera
+							}),
+							q(39331, {	-- Eye of Azshara: Put a Cork in It
+								["qg"] = 92458, -- Deucus Valdera
+							}),
+							q(39430, {	-- Flasking for a Favor
+								["qg"] = 92458, -- Deucus Valdera
+							}),
+							q(39337, {	-- Forlorn Filter
+								["qg"] = 92458, -- Deucus Valdera
+							}),
+							q(39332, {	-- Furbolg Firewater
+								["qg"] = 92458, -- Deucus Valdera
+								["sourceQuests"] = { 39331 }, -- Eye of Azshara: Put a Cork in it
+							}),
+							q(39325, {	-- Get Your Mix On
+								["qg"] = 92458, -- Deucus Valdera
+								-- rewards 201697
+							}),
+							q(39344, {	-- Going Underground
+								["qg"] = 92458, -- Deucus Valdera
+							}),
+							q(39348, {	-- Halls of Valor: The Prime Ingredient
+								["qg"] = 92183, -- Alard Schmied
+							}),
+							q(42081, {	-- In With the New
+								["qg"] = 92183, -- Alard Schmied
+							}),
+							q(39330, {	-- Ley Hunting
+								["qg"] = 92458, -- Deucus Valdera
+								["sourceQuests"] = { 39329 }, -- A Dormant Burner
+							}),
+							q(39350, {	-- Maw of Souls: A Hope in Helheim
+								["qg"] = 92183, -- Alard Schmied
+							}),
+							q(39326, {	-- Missing Shipments
+								["qg"] = 92458, -- Deucus Valdera
+								["sourceQuests"] = { 39325 }, -- Get Your Mix On
+							}),
+							q(39335, {	-- Neltharion's Lair: Potent Powder
+								["qg"] = 92458, -- Deucus Valdera
+							}),
+							q(39351, {	-- The Emerald Nightmare: Rage Fire
+								["qg"] = 92183, -- Alard Schmied
+								["sourceQuests"] = {
+									39348,	-- Halls of Valor: The Prime Ingredient
+									39349,	-- Black Rook Hold: Heavy, But Helpful
+									39350,	-- Maw of Souls: A Hope in Helheim
+								},
+							}),
+							qa(39566, {	-- The Search for Knowledge
+								["qg"] = 92458, -- Deucus Valdera
+							}),
+							q(39327, {	-- There's a Scribe for That
+								["qg"] = 92458, -- Deucus Valdera
+								["sourceQuests"] = { 39390 }, -- A Mysterious Text
+							}),
+							q(39341, {	-- Vault of the Wardens: Demon's Bile
+								["qg"] = 92458, -- Deucus Valdera
+								["sourceQuests"] = { 39340 }, -- Lining the Crucible
+							}),
+							q(39336, {	-- We Need More Powder!
+								["qg"] = 92458, -- Deucus Valdera
+								["sourceQuests"] = { 39335 }, -- Neltharion's Lair: Potent Powder
+							}),
+						},
+						["requiredSkill"] = 171,
+					}),
+					n(-181, {	-- Blacksmithing
+						["groups"] = {
+							q(38564, {	-- A Sweet Bargain
+								["qg"] = 92183, -- Alard Schmied
+								["sourceQuests"] = { 
+									38518,	-- From One Master to Another
+									39729,	-- The Knowledge of Black Rock
+								},
+							}),
+							q(44449, {	-- Advanced Quenching
+								["qg"] = 92183, -- Alard Schmied
+								["sourceQuests"] = {
+									38522,	-- Not Just Weapons and Armor
+									38564,	-- A Sweet Bargain
+								},
+							}),
+							q(38506, {	-- Chicken Scratch
+								["qg"] = 92194, -- Timofey Oshenko
+								["sourceQuests"] = { 38505 }, -- Engineers: Not COMPLETELY Useless
+							}),
+							q(38505, {	-- Engineers: Not COMPLETELY Useless
+								["qg"] = 92183, -- Alard Schmied
+								["sourceQuests"] = {
+									38501,	-- Hatecoil Hammerwork
+									38502,	-- The Methods of the Nightfallen
+								},
+							}),
+							q(38524, {	-- Felsmith Nal'ryssa
+								["qg"] = 92183, -- Alard Schmied
+								["sourceQuests"] = {
+									38523,	-- Leystone Hoofplates
+									44449,	-- Advanced Quenching
+								},
+							}),
+							q(38563, {	-- Flower-Pickers and Potion-Quaffers
+								["qg"] = 92183, -- Alard Schmied
+								["sourceQuests"] = {
+									38500,	-- Leysmithing Mastery
+									35515,	-- Nature Provides
+								},
+							}),
+							q(38501, {	-- Hatecoil Hammerwork
+								["qg"] = 97261, -- Alard Schmied
+							}),
+							q(39702, {	-- Legend of Black Rook Hold
+								["qg"] = 92183, -- Alard Schmied
+							}),
+							q(38500, {	-- Leysmithing Mastery
+								["qg"] = 92183, -- Alard Schmied
+								["sourceQuests"] = { 38507 }, -- Secrets of Leysmithing
+							}),
+							q(38523, {	-- Leystone Hoofplates
+								["qg"] = 92183, -- Alard Schmied
+								["sourceQuests"] = {
+									38522,	-- Not Just Weapons and Armor
+									38564,	-- A Sweet Bargain
+								},
+							}),
+							q(38522, {	-- Not Just Weapons and Armor
+								["groups"] = {
+									sp(191331),	-- Recipe: Leystone Hoofplates
+								},
+								["qg"] = 92183, -- Alard Schmied
+								["sourceQuests"] = {
+									38518,	-- From One Master to Another
+									39729,	-- The Knowledge of Black Rook
+								},
+							}),
+							q(38507, {	-- Secrets of Leysmithing
+								["qg"] = 92195, -- Professor Pallin
+								["sourceQuests"] = { 38506 }, -- Chicken Scratch
+							}),
+							q(38499, {	-- Strange New Ores
+								["groups"] = {
+									sp(201699),	-- Legion Blacksmith
+								},
+								["qg"] = 92183, -- Alard Schmied
+							}),
+							q(38513, {	-- The Highmountain Smiths
+								["qg"] = 92183, -- Alard Schmied
+								["sourceQuests"] = { 38563 }, -- Flower-Pickers and Potion-Quaffers
+							}),
+							q(38502, {	-- The Methods of the Nightfallen
+								["qg"] = 97261, -- Alard Schmied
+							}),
+							q(39681, {	-- The Properties of Leystone
+								["groups"] = {
+									sp(191237),	-- Introduction to Leystone Smithing
+								},
+								["qg"] = 92183, -- Alard Schmied
+								["sourceQuests"] = { 38499 }, -- Strange New Ores
+							}),
+						},
+						["requiredSkill"] = 164,
+					}),
+					n(-182, {	-- Enchanting
+						["groups"] = {
+							q(39883, {	-- Cloaked in Tradition
+								["qg"] = 98017, -- Guron Twaintail
+								-- rewards 208686 (3 cloak enchants)
+								["sourceQuests"] = { 
+									39879,	-- Strong Like the Earth
+									39880,	-- Waste Not
+								},
+							}),
+							q(39891, {	-- Cursed, But Convenient
+								["qg"] = 93531, -- Enchanter Nalthanis
+								-- available after all other enchanting quests are complete. Need good source IDs here
+							}),
+							q(39881, {	-- Fey Enchantments
+								["qg"] = 93531, -- Enchanter Nalthanis
+							}),
+							q(39876, {	-- Helping the Hunters
+								["qg"] = 93530, -- Ildine Sorrowspear
+								["sourceQuests"] = { 39875 }, -- The Last Few
+							}),
+							q(39920, {	-- On Azure Wings
+								["qg"] = 93531, -- Enchanter Nalthanis
+								["sourceQuests"] = { 39907 }, -- Elven Enchantments
+							}),
+							q(39874, {	-- Some Enchanted Evening
+								["groups"] = {
+									sp(201698),	-- Legion Enchanter
+								},
+								["qg"] = 93531, -- Enchanter Nalthanis
+							}),
+							q(39875, {	-- The Last Few
+								["qg"] = 93530, -- Ildine Sorrowspear
+								["sourceQuests"] = { 39874 }, -- Some Enchanted Evening
+							}),
+							q(39878, {	-- Thunder Struck
+								["qg"] = 93531, -- Enchanter Nalthanis
+								["sourceQuests"] = { 40048 }, -- Strings of the Puppet Masters
+							}),
+						},
+						["requiredSkill"] = 333,
+					}),
+					n(-183, {	-- Engineering
+						["groups"] = {
+							q(40871, {	-- 'Locke and Load
+								["qg"] = 93539,
+							}),
+							q(48056, {	-- A Harsh Mistress
+								["qg"] = 93539, -- Hobart Grapplehammer
+							}),
+							q(40863, {	-- Always the Last Thing
+								["qg"] = 93520, -- Didi the Wrench
+								["sourceQuests"] = { 40858 }, -- The Missing Pieces
+							}),	
+							q(40878, {	-- Assault on Violet Hold: Cheating Death
+								["qg"] = 93520, -- Didi the Wrench
+								-- grants 201613
+							}),
+							q(40545, {	-- Aww Scrap!
+								["qg"] = 93539, -- Hobart Grapplehammer
+								-- rewards 201700
+							}),
+							q(46119, {	-- Boon of the Builder
+								["qg"] = 93539, -- Hobart Grapplehammer
+							}),
+							q(40882, {	-- Court of Stars: Revamping the Recoil
+								["qg"] = 93539, -- Hobart Grapplehammer
+								-- rewards 133671, 133672, 133673, 133674
+							}),
+							q(40854, {	-- Endless Possibilities
+								["qg"] = 102193, -- Filgo Scrapbottom
+								["sourceQuests"] = { 40545 }, -- Aww Scrap!
+							}),
+							q(48065, {	-- Extraterrestrial Exploration
+								["qg"] = 93520, -- Didi the Wrench
+								["sourceQuests"] = { 48069 }, -- The Wrench Calls
+								-- rewards 248661
+							}),
+							q(40869, {	-- Fire and Forget
+								["qg"] = 93539, -- Hobart Grapplehammer
+								-- rewards 201603
+							}),
+							q(40877, {	-- Halls of Valor: Trigger Happy
+								["qg"] = 93539, -- Hobart Grapplehammer
+								-- rewards 201612
+							}),
+							q(40870, {	-- Here Comes the BOOM!
+								["qg"] = 93520, -- Didi the Wrench
+								-- rewards 201605
+							}),
+							q(40865, {	-- It's Not Rocket Science
+								["qg"] = 93539, -- Hobart Grapplehammer
+							}),
+							q(40879, {	-- It's On With Automatons
+								["groups"] = {
+									sp(201614),	-- Schematic: Reaves Module: Piloted Combat Mode
+								},
+								["qg"] = 93520, -- Didi the Wrench
+							}),
+							q(40864, {	-- Modular Modifications
+								["groups"] = {
+									sp(201593),	-- Schematics: Reaves Module: Repair Mode
+								},
+								["qg"] = 93520, -- Didi the Wrench
+								["sourceQuests"] = { 40863 }, -- Always the Last Thing
+							}),
+							q(40855, {	-- Our Man in Azsuna
+								["qg"] = 93520, -- Didi the Wrench
+							}),
+							q(40860, {	-- Resupplying the Line
+								["qg"] = 93539, -- Hobart Grapplehammer
+							}),
+							q(46128, {	-- Time for a Recharge
+								["groups"] = {
+									sp(235779),	-- Schematic: Rechargeable Reaves Battery
+								},
+								["qg"] = 93539, -- Hobart Grapplehammer
+							}),
+						},
+						["requiredSkill"] = 202,
+					}),
+					n(-184, {	-- Herbalism
+						["groups"] = {
+							q(40019, {	-- An Empathetic Herb
+								["qg"] = 92464, -- Kuhuine Tenderstride
+								["sourceQuests"] = { 40018 }, -- Dreamleaf Sample
+							}),
+							q(40026, {	-- Chase the Culprit
+								["qg"] = 92464, -- Kuhuine Tenderstride
+								["sourceQuests"] = { 40025 }, -- Teeny Bite Marks
+								-- rewards 193422
+							}),
+							q(40016, {	-- Desperation Breeds Ingenuity
+								["qg"] = 92464, -- Kuhuine Tenderstride
+								-- rewards 193416
+								["sourceQuests"] = { 40015 }, -- Ragged Strips of Silk
+							}),
+							--q(40017),	-- A Slip of the Hand -- given automatically by herbing
+							--q(40013),	-- Aethril Sample -- given by i(129117)
+							--q(40018)	-- Dreamleaf Sample -- started by i(129118)
+							q(40041, {	-- Felwort Analysis
+								["qg"] = 92464, -- Kuhuine Tenderstride
+								-- rewards 193431
+							}),
+							--q(40040)	-- Felwort Sample -- granted by i(129122)
+							q(40033, {	-- Fjarnskaggl
+								["qg"] = 92464, -- Kuhuine Tenderstride
+								-- rewards 193426
+								["sourceQuests"] = { 40032 }, -- The Missing Page
+							}),
+							--q(40029)	-- Fjarnskaggl Sample -- granted by i(129120)
+							--q(40024)	-- Foxflower Sample -- granted by i(129119)
+							--q(40038)	-- Insane Ramblings -- granted by i(129143)
+							--q(40036)	-- Jeweled Spade Handle -- granted by i(129140)
+							--q(40015),	-- Ragged Strips of Silk -- granted by i(129135)
+							--q(40030),	-- Ram's-Horn Trowel -- granted by i(129138)
+							--q(40034),	-- Starlight Rosedust -- granted by i(129121)
+							--q(40025),	-- Teeny Bite Marks -- granted by i(129137)
+							q(40039, {	-- Tharillon's Fall
+								["groups"] = {
+									sp(193429),	-- Herbalism Technique: Starlight Rose (Rank 3)
+								},
+								["qg"] = 92464, -- Kuhuine Tenderstride
+								["sourceQuests"] = { 40038 }, -- Insane Ramblings
+							}),
+							q(40042, {	-- The Emerald Nightmare: Felwort Mastery
+								["groups"] = {
+									sp(193432),	-- Herbalism Technique: Felwort (Rank 3)
+								},
+								["qg"] = 92464, -- Kuhuine Tenderstride
+							}),
+							q(40035, {	-- The Gentlest Touch
+								["qg"] = 92464, -- Kuhuine Tenderstride
+								["sourceQuests"] = { 40034 }, -- Starlight Rosedust
+							}),
+							--q(40032),	-- The Missing Page -- granted by i(129142)
+							--q(40028),	-- The Pied Picker -- granted by i(129278)
+							q(40031, {	-- Vrykul Herblore
+								["groups"] = {
+									sp(193425),	-- Herbalism Technique: Fjarnskaggl (Rank 2)
+								},
+								["qg"] = 92464, -- Kuhuine Tenderstride
+								["sourceQuests"] = { 40030 }, -- Ram's-Horn Trowel
+							}),
+						},
+						["requiredSkill"] = 182,
+					}),
+					n(-185, {	-- Inscription
+						["groups"] = {						
+							q(39961, {	-- An Embarrassing Revelation
+								["qg"] = 244651, -- Steamy Romance Novel
+							}),
+							q(39950, {	-- An Odd Trinket
+								["qg"] = 97359, -- Raethan
+								["sourceQuests"] = { 39949 }, -- Once a Scribe Like You
+							}),
+							q(39328, {	-- Ancient Knowledge
+								["qg"] = 92458, -- Deucus Valdera
+								["sourceQuests"] = { 39327 }, -- There's a Scribe for That
+							}),
+							q(40052, {	-- Ancient Vrykul Mastered
+								["qg"] = 97748, -- Nicholo Swiftfuse
+								["sourceQuests"] = { 39947 }, -- Not So Complex?
+							}),
+							q(39957, {	-- Demon Ink
+								["qg"] = 92195, -- Professor Pallin
+								-- rewards 193479
+								["sourceQuests"] = { 39953 }, -- Halls of Valor: Vision of Valor
+							}),
+							--q(39942),	-- Aethrem Crystal -- given by i(136909)
+							--q(40062),	-- Bulging Nightmare Pod -- granted by i(136912)
+							q(39932, {	-- Fish Ink
+								["qg"] = 92195, -- Professor Pallin
+							}),
+							--q(40065)	-- Fjarnsk -- granted by i(136916)
+							q(39953, {	-- Halls of Valor: Vision of Valor
+								["qg"] = 92195, -- Professor Pallin
+							}),
+							q(39954, {	-- Mass Milling Techniques
+								["groups"] = {
+									sp(210810),	-- Recipe: Mass Mill Yseralline Seeds
+								},
+								["qg"] = 92195, -- Professor Pallin
+							}),
+							q(39944, {	-- Mysterious Messages
+								["qg"] = 92195, -- Professor Pallin
+							}),
+							q(39949, {	-- Once a Scribe Like You
+								["qg"] = 97359, -- Raethan
+								["sourceQuests"] = { 39948 }, -- The Ink Flows
+							}),
+							q(40056, {	-- Our New Allies
+								["qg"] = 92195, -- Professor Pallin
+								["classes"] = { 12 },
+							}),
+							q(39934, {	-- Our New Allies
+								["qg"] = 92195, -- Professor Pallin
+							}),
+							--q(39951),	-- Roseate Essence -- granted by i(136917)
+							--q(39952)	-- Sallow Essence -- granted by i(136918)
+							q(39847, {	-- Sign This
+								["groups"] = {
+									sp(201703),	-- Legion Scribe
+								},
+								["qg"] = 92195, -- Professor Pallin
+							}),
+							q(39931, {	-- Smashing Herbs
+								["groups"] = {
+									sp(192962),	-- Recipe: Class Glyph
+								},
+								["qg"] = 92195, -- Professor Pallin
+								["sourceQuests"] = { 39847 }, -- Sign This
+							}),
+							qa(43726, {	-- Tales of the Broken Isles
+								["qg"] = 97362, -- Dazzik "Proudmoore"
+							}),
+							q(39943, {	-- The Burdens of Hunting
+								["groups"] = {
+									sp(193748),	-- Recipe: Glyph of Tattered Wings
+								},
+								["qgs"] = {
+									97734,	-- Zaria Shadowheart
+									98026,	-- Baric Stormrunner
+								},
+								["sourceQuests"] = {
+									39938,	-- Containing the Demon Within
+									39940,	-- Runes of Power
+									39941,	-- Control is Key
+									40060,	-- Containing the Demon Within
+									40063,	-- Control is Key
+								},
+							}),
+							q(39933, {	-- The Card Shark
+								["groups"] = {
+									sp(193005),	-- Recipe: Prophecy Tarot
+								},
+								["qg"] = 92195, -- Professor Pallin
+								["sourceQuests"] = { 39932 }, -- Fish Ink
+							}),
+							q(39948, {	-- The Ink Flows
+								["qg"] = 92195, -- Professor Pallin
+							}),
+							qh(39959, {	-- The Plot Thickens
+								["qg"] = 92195, -- Professor Pallin
+							}),
+							qa(39955, {	-- The Plot Thickens
+								["qg"] = 92195, -- Professor Pallin
+							}),
+							qa(43929, {	-- Vantus Mastery
+								["groups"] = {
+									i(137783),	-- Vantus Rune Technique: Gul'dan (Rank 3)
+								},
+								["qg"] = 90417, -- Archmage Khadgar
+							}),
+							--q(40064),	-- Woody Seed Cluster -- granted by i(136915)
+						},
+						["requiredSkill"] = 773,
+					}),
+					n(-186, {	-- Jewelcrafting
+						["groups"] = {
+							q(40524, {	-- A Familiar Ring to It
+								["qg"] = 93527,	-- Timothy Jones
+							}),
+							q(40562, {	-- A Personal Touch
+								["qg"] = 93543, -- Sminx Glasseye
+							}),
+							q(40530, {	-- An Eye for Detail
+								["qg"] = 93526, -- Tiffany Cartier
+								["sourceQuests"] = { 40529 }, -- Truly Outrageous
+							}),
+							q(40559, {	-- Black Rook Hold: The Raven's Wisdom
+								["qg"] = 93527, -- Timothy Jones
+								-- rewards 199783
+							}),
+							q(40540, {	-- Come at Me, Brul
+								["qg"] = 93526, -- Tiffany Cartier
+							}),
+							q(40523, {	-- Facet-nating Friends
+								["qg"] = 93526, -- Tiffany Cartier
+								-- rewards 201704
+							}),
+							q(40561, {	-- Halls of Valor: Jewel of the Heavens
+								["qg"] = 93527, -- Timothy Jones
+								-- rewards 199785
+							}),
+							q(40539, {	-- Hidden Intentions
+								["qg"] = 100939, -- Clive Cozen
+								-- rewards 200151
+							}),
+							q(40556, {	-- Jabrul Needs You
+								["qg"] = 246250, -- Letter From Jabrul
+							}),
+							q(40538, {	-- Lapidary Lessons
+								["groups"] = {
+									sp(198797),	-- Design: Versatile Maelstrom Sapphire
+								},
+								["qg"] = 93526, -- Tiffany Cartier
+							}),
+							q(40534, {	-- Making the Cut
+								["groups"] = {
+									sp(198130),	-- Design: Masterful Queen's Opal
+								},
+							}),
+							q(40533, {	-- Making the Cut
+								["groups"] = {
+									sp(198129),	-- Design: Quick Azsunite
+								},
+							}),
+							q(40532, {	-- Making the Cut
+								["groups"] = {
+									sp(198085),	-- Design: Deadly Deep Amber
+								},
+							}),
+							q(40560, {	-- Maw of Souls: Spiriting Away
+								["groups"] = {
+									sp(199784),	-- Design: Prophetic Band
+								},
+								["qg"] = 93527, -- Timothy Jones
+							}),
+							q(40535, {	-- Raising the Drogbar
+								["qg"] = 93526, -- Tiffany Cartier
+							}),
+							q(40531, {	-- Swift Vengeance
+								["qg"] = 93526, -- Tiffany Cartier
+								["sourceQuests"] = { 40530 }, -- An Eye for Detail
+							}),
+							q(40529, {	-- Truly Outrageous
+								["groups"] = {
+									sp(197931),	-- Design: Versatile Skystone
+								},
+								["qg"] = 93526, -- Tiffany Cartier
+								["sourceQuests"] = { 40523 }, -- Facet-nating Friends
+							}),
+						},
+						["requiredSkill"] = 755,
+					}),
+					n(-187, {	-- Leatherworking
+						["groups"] = {
+							q(40206, {	-- A Debt Paid
+								["qg"] = 98931, -- Thanid Glowergold
+								["sourceQuests"] = { 40199 }, -- Leather Legwork
+							}),
+							q(40196, {	-- Adventuring Anxieties
+								["qg"] = 93523, -- Namha Moonwater
+							}),
+							qh(40241, {	-- Battle Bonds
+								["qg"] = 93523, -- Namha Moonwater
+							}),
+							qa(40200, {	-- Battle Bonds
+								["qg"] = 93523, -- Namha Moonwater
+							}),
+							q(40181, {	-- Black Rook Bandit
+								["qg"] = 98931, -- Thanid Glowergold
+								-- rewards 194891
+							}),
+							q(41889, {	-- Dazed of the Past
+								["qg"] = 93523, -- Namha Moonwater
+								["sourceQuests"] = { 40197 }, -- The Necessary Materials
+								-- rewards 196574
+							}),
+							q(40211, {	-- Demon Flesh
+								["qg"] = 93523, -- Namha Moonwater
+							}),
+							q(40176, {	-- From Head to Toe
+								["qg"] = 93523, -- Namha Moonwater
+								-- rewards 194813
+							}),
+							q(40193, {	-- Getting the Kinks Out
+								["qg"] = 98931, -- Thanid Glowergold
+							}),
+							q(40190, {	-- Hardening the Hide
+								["qg"] = 9352, -- Diane Cannings
+							}),
+							q(40177, {	-- Leather Lady
+								["qg"] = 93523, -- Namha Moonwater
+							}),
+							q(40199, {	-- Leather Legwork
+								["groups"] = {
+									sp(195101),	-- Recipe List: Artisan Azsunian Leatherworking
+								},
+								["qg"] = 98931, -- Thanid Glowergold
+							}),
+							q(40187, {	-- Links in the Chain
+								["qg"] = 98931, -- Thanid Glowergold
+							}),
+							q(40180, {	-- Mail Men
+								["qg"] = 93523, -- Namha Moonwater
+							}),
+							q(40215, {	-- Mounting Made Easy
+								["groups"] = {
+									i(141850),	-- Recipe: Elderhorn Riding Harness
+								},
+								["qg"] = 93523, -- Namha Moonwater
+							}),
+							q(40198, {	-- Rats!
+								["groups"] = {
+									sp(195098),	-- Recipe List: Artisan Highmountain Leatherworking
+								},
+								["qg"] = 93522, -- Diane Cannings
+							}),
+							q(39958, {	-- Skin Deep
+								["groups"] = {
+									sp(201705),	-- Legion Leatherworker
+								},
+								["qg"] = 93523, -- Namha Moonwater
+							}),
+							q(40179, {	-- Stormheim Savagery
+								["groups"] = {
+									sp(194862),	-- Recipe List: Warhide Armor
+								},
+								["qg"] = 93522, -- Diane Cannings
+							}),
+							q(40184, {	-- Tauren Tanning
+								["qg"] = 93522, -- Diane Cannings
+							}),
+							q(40202, {	-- The Final Lessons
+								["qg"] = 93522, -- Diane Cannings
+								["sourceQuests"] = { 40198 }, -- Rats!
+							}),
+							q(40197, {	-- The Necessary Materials
+								["qg"] = 93523, -- Namha Moonwater
+								["sourceQuests"] = { 40196 }, -- Adventuring Anxieties
+							}),
+							q(40182, {	-- Too Good To Pass Up
+								["groups"] = {
+									sp(194892),	-- Recipe: Battlebound Hauberk
+								},
+								["qg"] = 98931, -- Thanid Glowergold
+							}),
+							q(40178, {	-- Vestment Opportunity
+								["groups"] = { 
+									sp(194830),	-- Recipe: Warhide Jerkin
+								},
+								["qg"] = 93522, -- Diane Cannings
+							}),
+						},
+						["requiredSkill"] = 165,
+					}),
+					n(-188, {	-- Mining
+						["groups"] = {
+							--q(38795)	-- Felslate Deposit Sample -- granted by i(124496)
+							--q(38796)	-- Felslate Seam Sample -- granted by i(124497)
+							q(39830, {	-- Hellfire Citadel: Hellfire and Brimstone
+								["groups"] = {
+									sp(191971),	-- Mining Technique: Infernal Brimstone
+								},
+								["qg"] = 93189, -- Mama Diggs
+								["classes"] = { 1, 3 },
+							}),
+							q(38807, {	-- Infernal Brimstone Analysis
+								["groups"] = {
+									sp(191969),	-- Mining Technique: Infernal Brimstone
+								},
+								["qg"] = 93189, -- Mama Diggs
+								["classes"] = { 2, 3 },
+							}),
+							--q(38806)	-- Infernal Brimstone Sample -- granted by i(124502)
+							q(39790, {	-- Infernal Brimstone Theory
+								["qg"] = 93189, -- Mama Diggs
+								["sourceQuests"] = { 38807 }, -- Infernal Brimstone Analysis
+							}),
+							--q(38777)	-- Leystone Deposit Sample -- granted by i(124489)
+							--q(38784)	-- Leystone Seam Sample -- granted by i(124490)
+							--q(38797)	-- Living Felslate Sample -- granted by i(124498)
+							--q(38785)	-- Living Leystone Sample -- granted by i(124491)
+							q(38901, {	-- The Felsmiths
+								["qg"] = 93189, -- Mama Diggs
+							}),
+							q(38888, {	-- The Highmountain Tauren
+								["qg"] = 93189, -- Mama Diggs
+							}),
+						},
+						["requiredSkill"] = 186,
+					}),
+					n(-189, {	-- Skinning
+						["groups"] = {
+							--q(40156)	-- Felhide Sample -- granted by i(129863)
+							--q(40136)	-- Immaculate Stonehide Leather -- granted by i(129866)
+							--q(40151)	-- Immaculate Stormscale -- granted by i(129867)							
+							q(40132, {	-- In One Piece
+								["groups"] = {
+									sp(194817),	-- Skinning Technique: Stonehide Leather (Rank 1)
+								},
+								["qg"] = 93541, -- Kondal Huntersworn
+								["sourceQuests"] = { 40131 }, -- Stonehide Leather Sample
+							}),
+							q(40137, {	-- Leather for Ske'rit
+								["qg"] = 93541, -- Kondal Huntsworn
+								["sourceQuests"] = { 40136 }, -- Immaculate Stonehide Leather
+							}),
+							q(40152, {	-- Scales for Ske'rit
+								["qg"] = 93541, -- Kondal Huntsworn
+								["sourceQuests"] = { 40151 }, -- Immaculate Stormscale
+							}),
+							--q(40131),	-- Stonehide Leather Sample -- granted by i(129860)
+							--q(40141),	-- Stormscale Sample -- granted by i(129862)
+							q(40159, {	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
+								["groups"] = {
+									sp(194825),	-- Skinning Technique: Felhide (Rank 3)
+								},
+								["qg"] = 93541, -- Kondal Huntsworn
+							}),
+							--q(40143),	-- Unfinished Treatise on the Properties of Stormscale -- granted by i(129865)
+							
+						},
+						["requiredSkill"] = 393,
+					}),
+					n(-190, {	-- Tailoring
+						["groups"] = {
+							q(38951, {	-- A Needle Need
+								["qg"] = 93967, -- Lyndras
+							}),
+							q(38953, {	-- Advanced Needlework
+								["qg"] = 93967, -- Lyndras
+								["sourceQuests"] = { 38952 }, -- Meticulous Precision
+							}),
+							q(38965, {	-- Assault on Violet Hold: Into the Hold
+								["qg"] = 96444, -- Violet Hold Guard
+								["sourceQuests"] = { 39667 }, -- Where's Lyndras: Leyflame Larceny
+							}),
+							q(38946, {	-- Consult the Locals
+								["qg"] = 93542, -- Tanithria
+								["sourceQuests"] = { 38945 }, -- This Should Be Simple... Right?
+							}),
+							q(38961, {	-- Eye of Azshara: The Depraved Nightfallen
+								["groups"] = {
+									sp(186022),	-- Silkweave Gloves
+								},
+								["qg"] = 93967, -- Lyndras
+								["sourceQuests"] = { 38963 }, -- The Final Lesson?
+							}),
+							q(38948, {	-- Hard Times
+								["qg"] = 93967, -- Lyndras
+							}),
+							q(38952, {	-- Meticulous Precision
+								["qg"] = 93542, -- Tanithria
+								["sourceQuests"] = { 38951 }, -- A Needle Need
+							}),
+							q(38966, {	-- Secret Silkweaving Methods
+								["groups"] = {
+									sp(186025),	-- Advanced Silkweaving
+								},
+								["qg"] = 93542, -- Tanithria
+								["sourceQuests"] = { 38965 }, -- Assault on Violet Hod: Into the Hold
+							}),
+							q(38955, {	-- Sew Far, Sew Good
+								["groups"] = {
+									sp(186390),	-- Silkweave Satchel
+								},
+								["qg"] = 93967, -- Lyndras
+								["sourceQuests"] = { 38954 }, -- Where's Lyndras?
+							}),
+							q(38944, {	-- Sew It Begins
+								["groups"] = {
+									sp(201708),	-- Legion Tailor
+								},
+								["qg"] = 93542, -- Tanithria
+							}),
+							q(38949, {	-- So You Think You Can Sew
+								["qg"] = 93967, -- Lyndras
+								["sourceQuests"] = {
+									38947,	-- Runic Catgut
+									38948,	-- Hard Times
+								},
+							}),
+							q(38957, {	-- Taking Inspiration
+								["groups"] = {
+									sp(186020),	-- Silkweave Pantaloons
+								},
+								["qg"] = 93967, -- Lyndras
+								["sourceQuests"] = { 38956 }, -- Where's Lyndras Again?
+							}),
+							q(38963, {	-- The Final Lesson?
+								["groups"] = {
+									sp(186023),	-- Silkweave Hood
+								},
+								["qg"] = 93967, -- Lyndras
+								["sourceQuests"] = {
+									38959,	-- Left Behind
+									38960,	-- Lining Them Up
+								},
+							}),
+							q(38967, {	-- The Nightborne Connection
+								["qg"] = 93542, -- Tanithria
+								["sourceQuests"] = { 38962 }, -- The Path to Suramar City
+							}),
+							q(38962, {	-- The Path to Suramar City
+								["qg"] = 93542, -- Tanithria
+								["sourceQuests"] = { 38966 }, -- Secret Silkweaving Methods
+							}),
+							q(38958, {	-- The Right Color
+								["groups"] = {
+									sp(186021),	-- Silkweave Slippers
+								},
+								["qg"] = 93525, -- Ainderu Summerleaf
+							}),
+							q(38950, {	-- The Wayward Tailor
+								["qg"] = 93967, -- Lyndras
+								["sourceQuests"] = { 38949 }, -- So You Think You Can Sew
+							}),
+							q(38945, {	-- This Should Be Simple... Right?
+								["groups"] = {
+									sp(186017),	-- Introduction to Silkweaving
+								},
+								["qg"] = 93542, -- Tanithria
+							}),
+							q(38956, {	-- Where's Lyndras Again?
+								["qg"] = 93542, -- Tanithria
+							}),
+							q(38964, {	-- Where's Lyndras Now?
+								["qg"] = 93542, -- Tanithria
+								["sourceQuests"] = { 38961 }, -- Eye of Azshara: The Depraved Nightfallen
+							}),
+							q(39605, {	-- Where's Lyndras: Downward Spiral
+								["sourceQuests"] = {
+									38964,	-- Where's Lyndras Now?
+									39602,	-- Where's Lyndras: Sewer Sleuthing
+								},
+							}),
+							o(243899, q(39667, {	-- Where's Lyndras: Leyflame Larceny
+								["sourceQuests"] = { 39605 }, -- Where's Lyndras: Downward Spiral
+							})),
+							qh(39602, {	-- Where's Lyndras: Sewer Sleuthing
+								["qg"] = 93542, -- Tanithria
+								["sourceQuests"] = { 38964 }, -- Where's Lyndras Now?
+							}),
+							q(38954, {	-- Where's Lyndras?
+								["qg"] = 93542, -- Tanithria
+							}),
+						},
+						["requiredSkill"] = 197,
+					}),
+					n(-191, {	-- Archaeology
+						["groups"] = {
+							q(41189, {	-- A New Lead
+								["qg"] = 93538, -- Dariness the Learned
+							}),
+							q(41183, {	-- Academic Exploration
+								["qg"] = 93538, -- Dariness the Learned
+							}),
+							q(41167, {	-- Fel Fragments
+								["qg"] = 93538, -- Dariness the Learned
+							}),
+							q(41158, {	-- Fragments of the Fjords
+								["qg"] = 93538, -- Dariness the Learned
+							}),
+							q(41177, {	-- Goblin Archaeology
+								["qg"] = 93538, -- Dariness the Learned
+							}),
+							q(41186, {	-- History of Highmountain
+								["qg"] = 93538, -- Dariness the Learned
+							}),
+							q(41164, {	-- One Step Closer
+								["qg"] = 93538, -- Dariness the Learned
+							}),
+							q(41161, {	-- Out of the Frying Pan
+								["qg"] = 93538, -- Dariness the Learned
+							}),
+							q(41171, {	-- The Reliquary Calls
+								["qg"] = 93538, -- Dariness the Learned
+							}),
+							q(41192, {	-- The Right Path
+								["qg"] = 93538, -- Dariness the Learned
+							}),
+							q(41180, {	-- Unspeakable Power
+								["qg"] = 93538, -- Dariness the Learned
+							}),
+							q(41174, {	-- Worth Its Weight
+								["qg"] = 93538, -- Dariness the Learned
+							}),
+						},
+						["requiredSkill"] = 794,
+					}),
+					n(-192, {	-- Cooking
+						["groups"] = {
+							q(40990, {	-- A Good Recipe List
+								["qg"] = 101846, -- Nomi
+								["sourceQuests"] = { 
+									40988,	-- Too Many Cooks
+									40989,	-- The Prodigal Sous Chef
+								},
+							}),
+							q(40991, {	-- Opening the Test Kitchen
+								["qg"] = 101846, -- Nomi
+								["sourceQuests"] = { 40990 }, -- A Good Recipe List
+							}),
+							q(44581, {	-- Spicing Things Up
+								["groups"] = {
+									i(133826),	-- Recipe: Dried Mackerel Strips
+								},
+								["qg"] = 101846, -- Nomi
+							}),
+							q(40989, {	-- The Prodigal Sous Chef
+								["groups"] = {
+									i(133826),	-- Recipe: Dried Mackerel Strips
+								},
+								["qg"] = 102546, -- Nomi
+							}),
+							q(40988, {	-- Too Many Cooks
+								["groups"] = {
+									i(133826),	-- Recipe: Dried Mackerel Strips
+								},
+								["qg"] = 102546, -- Nomi
+							}),
+						},
+						["requiredSkill"] = 185,
+					}),
+					n(-193, {	-- First Aid
 						["groups"] = {
 						},
-						["classes"] = {3},
-					}))),
-					qg(114946, q(44720)),	-- A Call to Action 
-					qp165(qg(98931, q(40206))),	-- A Debt Paid
-					qart(qg(93775, qh( 41052, {	-- A Desperate Plea
+						["requiredSkill"] = 129,
+					}),
+					n(-194, {	-- Fishing
 						["groups"] = {
+							q(41010, {	-- Fish Frenzy
+								["qg"] = 102639, -- Nat Pagle
+							}),
+							--q(40960),	-- Luminous Pearl -- granted by i(133887) from fishing
+							q(40961, {	-- The Dalaran Fountain
+								["qg"] = 90417, -- Archmage Khadgar
+								["sourceQuests"] = { 40960 }, -- Luminous Pearl
+							}),
 						},
-						["classes"] = {1},
-					}))),					
-					qp171(qg(92458, q(39329))),	-- A Dormant Burner
-					qg(90417, q(44009, {	-- A Falling Star
-						["groups"] = {
+						["requiredSkill"] = 356,
+					}),
+					qart(q(41541, {	-- A Beastly Expedition 
+						["qgs"] = { 102478, 107317, 107973 }, -- Emmarel Shadewarden (3 different versions)
+						["classes"] = { 3 },
+					})),
+					q(44720, {	-- A Call to Action
+						["qgs"] = {
+							114946,	-- Muninn
+							119531,	-- Muninn
 						},
-						["classes"] = {1,3,4,5,6,7,8,9,10,11,12},
-					})),							
-					qc2(qg(90417, q(44257))),	-- A Falling Star		
-					qp755(qg(93527, q(40524))),	-- A Familiar Ring to It
-					qc2(qg(92183, q(46083))),	-- A Few Things First
-					qc2(qg(117438, q(45645))),	-- A Fool's Errand
-					qp171(qg(92458, q(39339))),	-- A Fragile Crucible
-					qart(qg(90418, qa( 45865, {	-- A Gift From the Six
-						["groups"] = {
-						},
-						["classes"] = {1,3,4,6,12},	-- Arms Warrior, Survival Hunter, Subtlety Rogue, Frost Death Knight, Havoc Demon Hunter
-					}))),										
-					qart(qg(90418, qa( 45864, {	-- A Gift From the Six
-						["groups"] = {
-						},
-						["classes"] = {2,5,7,10,11},	-- Holy Paladin, Holy Priest, Resto Shaman, Mistweaver Monk, Resto Druid
-					}))),										
-					qart(qg(90418, qa( 45862, {	-- A Gift From the Six
-						["groups"] = {
-						},
-						["classes"] = {2,4,7,8,9},	-- Retribution Paladin, Assassination Rogue, Enhancement Shaman, Arcane Mage, Demonology Warlock
-					}))),										
-					qart(qg(90418, qa( 45842, {	-- A Gift From the Six
-						["groups"] = {
-						},
+					}), 
+					qart(qh( 41052, {	-- A Desperate Plea
+						["qg"] = 93775,	-- Eitrigg
+						["classes"] = { 1 },
+					})),
+					q(44009, {	-- A Falling Star
+						["qg"] = 90417, -- Archmage Khadgar
+						["classes"] = { 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12},
+					}),							
+					q(44257, {	-- A Falling Star
+						["qg"] = 90417,	-- Archmage Khadgar
+						["classes"] = { 2 },
+					}),
+					q(46083, {	-- A Few Things First
+						["qg"] = 92183, -- Alard Schmied
+						["classes"] = { 2 },
+						["sourceQuests"] = { 46071 }, -- The Hammer of Dalaran
+					}),
+					q(45645, {	-- A Fool's Errand
+						["qg"] = 117438, -- Doloria
+						["classes"] = { 2 },
+					}),
+					qart(qa(45865, {	-- A Gift From the Six
+						["qg"] = 90418, -- Archmage Modera
+						["classes"] = { 1, 3, 4, 6, 12 },
+					})),										
+					qart(qa(45864, {	-- A Gift From the Six
+						["qg"] = 90418, -- Archmage Modera
+						["classes"] = { 2, 5, 7, 10, 11 },
+					})),										
+					qart(qa(45862, {	-- A Gift From the Six
+						["qg"] = 90418, -- Archmage Modera
+						["classes"] = { 2, 4, 7, 8, 9 },
+					})),										
+					qart(qa(45842, {	-- A Gift From the Six
+						["qg"] = 90418, -- Archmage Modera
 --						["classes"] = {}, -- need info
-					}))),										
-					qart(qg(90418, qa( 45866, {	-- A Gift From the Six
-						["groups"] = {
-						},
-						["classes"] = {3,5,8,9,11},	-- Marksmanship Hunter, Shadow Priest, Frost Mage, Affliction Warlock, Balance Druid
-					}))),										
-					qart(qg(90418, qa( 45861, {	-- A Gift From the Six
-						["groups"] = {
-						},
-						["classes"] = {1,4,6,7,8,11},	-- Fury Warrior, Outlaw Rogue, Unholy DK, Elemental Shaman, Fire Mage, Feral Druid 
-					}))),										
-					qart(qg(90418, qa( 45863, {	-- A Gift From the Six
-						["groups"] = {
-						},
+					})),										
+					qart(qa(45866, {	-- A Gift From the Six
+						["qg"] = 90418, -- Archmage Modera
+						["classes"] = { 3, 5, 8, 9, 11 },
+					})),										
+					qart(qa(45861, {	-- A Gift From the Six
+						["qg"] = 90418, -- Archmage Modera
+						["classes"] = { 1, 4, 6, 7, 8, 11 },
+					})),										
+					qart(qa(45863, {	-- A Gift From the Six
+						["qg"] = 90418, -- Archmage Modera
 --						["classes"] = {}, -- need info
-					}))),										
-					qart(qg(105081, q(41632, {	-- A Gift of Time
-						["groups"] = {
+					})),										
+					qart(q(41632, {	-- A Gift of Time
+						["qg"] = 105081, -- Archmage Kalec
+						["classes"] = { 5 },
+					})),	
+					q(44099, {	-- A Mutual Friend
+						["qg"] = 112693, -- Black Harvest Acolyte
+						["classes"] = { 9 },
+					}),
+					q(42006, {	-- A New Threat
+						["qg"] = 105081, -- Archmage Kalec
+						["classes"] = { 8 },
+						["sourceQuests"] = { 
+							42001,	-- Aluneth, Greatstaff of the Magna
+							42003,	-- Kept Secret, Kept Safe
 						},
-						["classes"] = {5},
-					}))),	
-					qp185(qg(101846, q(40990))),	-- A Good Recipe List
-					qp202(qg(93539, q(48056))),	-- A Harsh Mistress
-					qc9(qg(112693, q(44099))),	-- A Mutual Friend (need to figure out where black harvest acolyte spawns)
-					q(39390),	-- A Mysterious Text
-					q(38951),	-- A Needle Need
-					q(41189),	-- A New Lead
-					q(42006),	-- A New Threat
-					q(41626),	-- A New Threat
-					q(40715),	-- A Pact of Necessity
-					q(44178),	-- A Particularly Potent Potion
-					q(40562),	-- A Personal Touch
+					}),
+					q(41626, {	-- A New Threat
+						["qg"] = 105081, -- Archmage Kalec
+						["classes"] = { 5 },
+						["sourceQuests"] = { 41625 }, -- The Light's Wrath
+					}),
+					q(40715, {	-- A Pact of Necessity
+						["qg"] = 101441, -- Duke Lankral
+						["classes"] = { 6 }, -- Death Knight
+						["sourceQuests"] = { 40714 }, -- The Call to War
+					}),
+					q(44178, {	-- A Particularly Potent Potion
+						["qg"] = 102594, -- Marin Noggenfogger
+						["classes"] = { 4 },
+					}),
 					qart(q(40930, {	-- Apocalypse
-						["groups"] = {
-						},
-						["classes"] = {6}, -- Death Knight
+						["classes"] = { 6 }, -- Death Knight
 					})),
-					q(46177),	-- A Portal Away
-					qh( 39746),	-- A Ring Unbroken
-					qa( 38035),	-- A Royal Summons
-					q(43441),	-- A Second Weapon
-					q(44252),	-- A Sheath For Every Blade
-					q(42866),	-- A Sign From The Sky
-					q(37448),	-- A Simple Plan
-					q(40017),	-- A Slip of the Hand
-					q(38564),	-- A Sweet Bargain
-					{
-						["questID"] = 40643,	-- A Summons From Moonglade
-						["qg"] = 101061,	-- Quest Giver: Archdruid Hamuul Runetotem
-						["classes"] = {11},	-- Druid Only
-					},
-					q(44159),	-- A Ticket for Marin
-					q(47663),	-- A Timely Summons from Shattrath
-					q(49472),	-- A Titanic Effort
-					q(49473),	-- A Titanic Effort
-					qa( 45841),	-- A Triumphant Report
-					q(40840),	-- A Worthy Blade
-					q(41183),	-- Academic Exploration
-					q(38953),	-- Advanced Needlework
-					q(44449),	-- Advanced Quenching
-					q(40196),	-- Adventuring Anxieties
-					q(39942),	-- Aethrem Crystal
-					q(40013),	-- Aethril Sample
-					qa( 47041),	-- Affliction: The Twisted Twin
-					q(44406),	-- Aggra's Guidance
-					q(42001),	-- Aluneth, Greatstaff of the Magna
-					q(40863),	-- Always the Last Thing
-					q(39961),	-- An Embarrassing Revelation
-					q(40019),	-- An Empathetic Herb
-					q(39903),	-- An Enchanting Home
-					q(43153),	-- An Eye for a Scepter
-					q(40530),	-- An Eye for Detail
-					qa( 42814),	-- An Important Mission
-					qa( 46065),	-- An Impossible Foe
-					q(39333),	-- An Imprecise Burette
-					q(39950),	-- An Odd Trinket
-					q(40267),	-- An Unexpected Message
-					q(40157),	-- An Unseemly Task
-					q(38710),	-- An Urgent Gathering
-					q(45437),	-- An Urgent Situation
-					q(45991),	-- An Urgent Warning
-					q(39328),	-- Ancient Knowledge
-					q(40052),	-- Ancient Vrykul Mastered
-					q(44034),	-- Another Worthy Blade
-					q(45482),	-- Arcane: Fate of the Tideskorn
-					qa( 42423),	-- Archmage Vargoth's Retreat
-					q(46730),	-- Armies of Legionfall
-					q(46000),	-- Arming Dalaran
-					qg(105467, q(44914, {	-- Arms: The Thieving Apprentice (QG in Dalaran, second QG ID 115081, both QGs are Archmage Kalec)
-						["groups"] = {
+					q(46177, {	-- A Portal Away
+						["qg"] = 116048,
+					}),
+					qh(39746, {	-- A Ring Unbroken
+						["qg"] = 91731, -- Thrall
+						["classes"] = { 7 },
+					}),
+					qa(38035, {	-- A Royal Summons
+						["qg"] = 96644, -- Sky Admiral Rogers
+						["sourceQuests"] = { 39735, 44700 }, -- Stormheim (2 versions)
+					}),
+					q(43441, {	-- A Second Weapon
+						["qgs"] = {
+							102700,	-- Meryl Felstorm 
+							109222,	-- Meryl Felstorm (alliance)
 						},
-						["classes"] = {1},
-					})),
---[[ commented out until we get COORDINATES.
-					qg(105081, q(44914, {	-- Arms: The Thieving Apprentice (QG in Dalaran, second QG ID 115467, both QGs are Archmage Kalec)
+						["classes"] = { 8 },
+					}),
+					q(44252, {	-- A Sheath For Every Blade
+						["qg"] = 105986, -- Kelsey Steelspark
+						["classes"] = { 4 },
+					}),
+					q(42866, {	-- A Sign From The Sky
+						["qg"] = 90259, -- Lord Maxwell Tyrosus
+						["classes"] = { 2 },
+					}),
+					q(37448, {	-- A Simple Plan
+						["qg"] = 110953, -- Master Mathias Shaw
+						["classes"] = { 4 },
+					}),
+					q(40643, {	-- A Summons From Moonglade
+						["qg"] = 101061,  -- Archdruid Hamuul Runetotem
+						["classes"] = { 11 },
+					}),
+					i(140774, { -- Vault Ticket
 						["groups"] = {
+							q(44159, {	-- A Ticket for Marin
+								["classes"] = { 4 },
+							}),
 						},
-						["classes"] = {1},
-					})),
---]]					
-					q(41804),	-- Ask and You Shall Receive					
-					q(40247),	-- Asking a Favor
-					q(41803),	-- Asking a Favor
+						["isWeekly"] = true,
+					}),
+					q(40840, {	-- A Worthy Blade
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+					}),
+					qa(47041, {	-- Affliction: The Twisted Twin
+						["qgs"] = { 90463, 115468 }, -- Archmage Karlain (2 versions)
+						["classes"] = { 9 },
+					}),
+					q(44406, {	-- Aggra's Guidance
+						["qgs"] = { 96528, 106519 }, -- Farseer Nobundo (2 versions)
+						["classes"] = { 7 },
+					}),
+					q(42001, {	-- Aluneth, Greatstaff of the Magna
+						["qg"] = 102700, -- Meryl Felstorm
+						["classes"] = { 8 },
+					}),
+					q(39903, {	-- An Enchanting Home
+						["qg"] = 93531, -- Enchanter Nalthanis
+					}),
+					qa(42814, {	-- An Important Mission
+						["qg"] = 108961, -- Sergeant Dalton
+						["classes"] = { 1 },
+					}),
+					qa(46065, {	-- An Impossible Foe
+						["qg"] = 117871, -- War Councilor Victoria
+					}),
+					q(40267, {	-- An Unexpected Message
+						["qg"] = 102700, -- Meryl Felstorm
+						["classes"] = { 8 },
+					}),
+					q(40157, {	-- An Unseemly Task
+						["qg"] = 93541, -- Kondal Huntsworn
+					}),
+					q(38710, {	-- An Urgent Gathering
+						["qg"] = 92909, -- Lord Maxwell Tyrosus
+						["classes"] = { 2 },
+					}),
+					q(45437, {	-- An Urgent Situation
+						["classes"] = { 8 },
+					}),
+					q(45991, {	-- An Urgent Warning
+						["qg"] = 118424, -- Injured Bandit
+						["classes"] = { 4 },
+					}),
+					q(44034, {	-- Another Worthy Blade
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+					}),
+					q(45482, {	-- Arcane: Fate of the Tideskorn
+						["qgs"] = { 90417, 115464 }, -- Archmage Khadgar (2 versions)
+						["classes"] = { 8 },
+					}),
+					qa(42423, {	-- Archmage Vargoth's Retreat
+						["qg"] = 90431, -- Archmage Ansirem Runeweaver
+						["sourceQuests"] = { 42416 }, -- The Council is in Session
+					}),
+					q(46730, {	-- Armies of Legionfall
+						["qg"] = 120215, -- Archmage Khadgar
+					}),
+					q(46000, {	-- Arming Dalaran
+						["qg"] = 119001, -- Sin'dorei Archmage
+						["sourceQuests"] = { 45586 }, -- Shield Amplification
+					}),
+					q(44914, {	-- Arms: The Thieving Apprentice
+						["qgs"] = { 105081, 115467 }, -- Archmage Kalec (2 versions)
+						["classes"] = { 1 },
+						["sourceQuests"] = { 47032 }, -- Legion Threat: Azshara
+					}),
+					q(41804, {	-- Ask and You Shall Receive
+						["qg"] = 90417, -- Archmage Khadgar
+						["classes"] = { 12 },
+					}),
+					q(40247, {	-- Asking a Favor
+						["qgs"] = { 99247, 108572 }, -- Kayn Sunfury (2 versions)
+						["classes"] = { 12 },
+					}),
+					q(41803, {	-- Asking a Favor
+						["qgs"] = { 99254, 108571 }, -- Altruis the Sufferer
+						["classes"] = { 12 },
+					}),
+					q(47051, {	-- Assassination: Fate of the Tideskorn
+						["qgs"] = { 90417, 115464 }, -- Archmage Khadgar (2 versions)
+					}),
+					q(46734, {	-- Assault on Broken Shore
+						["qg"] = 120215, -- Archmage Khadgar
+						["sourceQuests"] = { 46730 }, -- Armies of the Legionfall
+					}),
+					q(44400, {	-- Assault on Violet Hold: Purple Pain
+						["groups"] = {
+							i(141359),	-- Violet Guardian's Corona
+							i(141358),	-- Violet Guardian's Cowl
+							i(141357),	-- Violet Guardian's Helm
+							i(141356),	-- Violet Guardian's Faceguard
+						},
+						["qg"] = 113813, -- Lieutenant Sinclari
+					}),
+					q(43487, {	-- Assault on Violet Hold: The Fel Lexicon
+						["qg"] = 110571, -- Delas Moonfang
+						["classes"] = { 2 },
+						["sourceQuests"] = {
+							43486,	-- Cracking the Codex
+							49812,	-- Delas in Dalaran
+						},
+					}),
+					qa(44782, {	-- Away From Prying Eyes
+						["qg"] = 90417, -- Archmage Khadgar
+						["sourceQuests"] = {
+							44781,	-- The Council's Call
+							45050,	-- Infiltration Plans
+							45052,	-- Depleted Nether Crystal
+							45053,	-- Thief's Instructions
+							45054,	-- "Ancient" Elven War Orders
+							45059,	-- Fel Infused Totem Fragment
+							45060,	-- Damaged Kirin Tor Insignia
+							45061,	-- Scrolls of the Faldrottin
+							47000,	-- The Council's Call
+						},
+					}),
+					q(44766, {	-- Backup Plan
+						["qg"] = 118242, -- Aethas Sunreaver
+						["classes"] = { 8 },
+						["sourceQuests"] = { 45437 }, -- An Urgent Situation
+					}),
+					qa(47037, {	-- Balance: The Twisted Twin
+						["qgs"] = { 90463, 115468 }, -- Archmage Karlain (2 versions)
+						["classes"] = { 11 },
+					}),
+					qa(46327, {	-- Bargaining with Shadows
+						["qg"] = 90418, -- Archmage Modera
+					}),
+					qa(47018, {	-- Beast Mastery: Rumblings Near Feltotem
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera (2 versions)
+						["classes"] = { 3 },
+					}),
+					q(45415, {	-- Between Worlds
+						["qg"] = 117042, -- Prophet Velen
+						["sourceQuests"] = { 45414 }, -- Confirming Suspcions
+					}),
+					q(40857, {	-- Bits and Pieces
+						["qg"] = 93538, -- Bariness the Learned
+						["sourceQuests"] = {
+							41158,	-- Fragments of the Fjords
+							41161,	-- Out of the Frying Pan
+							41164,	-- One Step Closer
+							41167,	-- Fel Fragments
+						},
+					}),
+					q(42678, {	-- Black Rook Hold: Into Black Rook Hold
+						["qg"] = 110164, -- Valeera Sanguinar
+						["classes"] = { 4 },
+						["sourceQuests"] = {
+							43251,	-- In Search of the Eye
+							43252,	-- Eternal Unrest
+						},
+					}),
+					q(40710, {	-- Blade in Twilight
+						["qgs"] = { 101314, 110564 }, -- Alonsus Faol (2 versions)
+						["classes"] = { 5 },
+					}),
+					q(43468, {	-- Blood for the Wolfe
+						["qg"] = 98102, -- Valeera Sanguinar
+						["classes"] = { 4 },
+					}),
+					q(43488, {	-- Blood of Our Enemy
+						["qg"] = 110571, -- Delas Moonfang
+						["classes"] = { 2 },
+					}),
+					q(44760, {	-- Blood On Your Hands
+						["qg"] = 115264, -- Illnea Bloodthorn
+					}),
+					qa(47025, {	-- Blood: Aid of the Illidari
+						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver (2 versions)
+						["classes"] = { 6 },
+						["sourceQuests"] = { 47030 }, -- Legion Threat: Dalaran Infiltration
+					}),
+					qa(47024, {	-- Brewmaster: Aid of the Illidari
+						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver (2 versions)
+						["classes"] = { 10 },
+						["sourceQuests"] = { 47030 }, -- Legion Threat: Dalaran Infiltration
+					}),
+					q(44004, {	-- Bringer of the Light
+						["groups"] = {
+							i(140614),	-- Amice of Steadfast Allies
+							i(140610),	-- Wristwraps of the Grieving Prophet
+							i(140615),	-- Felstalking Shoulders
+							i(140613),	-- Bracers of Lost Lineage
+							i(140616),	-- Annihilator's Mantle
+							i(140612),	-- Bracers of the Fallen
+							i(140617),	-- Rakeesh's Pauldron
+							i(140611),	-- Fel Commander's Vambraces
+						},
+						["qg"] = 112130, -- Archmage Khadgar
+					}),
+					q(41121, {	-- By Any Means
+						["qg"] = 103156, -- Altruis the Sufferer
+						["classes"] = { 12 },
+					}),
+					q(39051, {	-- By Any Means
+						["qg"] = 94902, -- Kayn Sunfury
+						["classes"] = { 12 },
+					}),
+					q(39047, {	-- Call of the Illidari
+						["qg"] = 99343, -- Kor'vas Bloodthorn
+						["classes"] = { 12 },
+					}),
+					q(39261, {	-- Call of the Illidari
+						["qg"] = 99343, -- Kor'vas Bloodthorn
+						["classes"] = { 12 },
+					}),
+					q(40392, {	-- Call of the Marksman
+						["qgs"] = { 103415, 103741 }, -- Courier Larkspur (2 versions)
+						["classes"] = { 3 },
+						["sourceQuests"] = { 41540 }, -- Rendezvous with the Courier
+					}),
+					q(40832, {	-- Call of The Uncrowned
+						["qg"] = 102018, -- Ravenholdt Courier
+						["classes"] = { 4 },
+					}),
+					q(44181, {	-- Champion: Fleet Admiral Tethys
+						["qg"] = 94159, -- Fleet Admiral Tethys
+						["classes"] = { 4 },
+					}),
+					q(43262, {	-- Champion: Garona Halforcen
+						["qg"] = 94141, -- Garona Halforcen
+						["classes"] = { 4 },
+					}),
+					qh(46058, {	-- Champion: Lilian Voss
+						["qg"] = 98099, -- Lilian Voss
+						["classes"] = { 4 },
+					}),
+					q(44183, {	-- Champion: Lord Jorach Ravenholdt
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+					}),
+					q(44180, {	-- Champion: Marin Noggenfogger
+						["qg"] = 102594, -- Marin Noggenfogger
+						["classes"] = { 4 },
+					}),
+					q(43724, {	-- Champion: Master Mathias Shaw
+						["qg"] = 110953, -- Master Mathias Shaw
+						["classes"] = { 4 },
+					}),
+					q(43723, {	-- Champion: Taoshi
+						["qg"] = 98100, -- Taoshi
+						["classes"] = { 4 },
+					}),
+					qa(46059, {	-- Champion: Tess Greymane
+						["qg"] = 94138, -- Princess Tess Greymane
+						["classes"] = { 4 },
+					}),
+					q(46724, {	-- Champion: The Great Akazamzarak
+						["qg"] = 103092, -- The Great Akazamzarak
+						["sourceQuests"] = { 46723 }, -- Down the Rabbit Hole
+					}),
+					q(42800, {	-- Champion: Valeera Sanguinar
+						["qg"] = 98102, -- Valeera Sanguinar
+						["classes"] = { 4 },
+					}),
+					q(43261, {	-- Champion: Vanessa VanCleef
+						["qg"] = 102636, -- Vanessa VanCleef
+						["classes"] = { 4 },
+					}),
+					q(48021, {	-- Chromie
+						["qgs"] = {
+							90417,	-- Archmage Khadgar
+							122926,	-- Image of Chromie
+						}
+					}),
+					qh(42539, {	-- Cloak and Dagger
+						["qg"] = 250671, -- Notes on the Veiled Hand
+						["classes"] = { 4 },
+						["sourceQuests"] = { 42503 }, -- Codebreaker
+					}),
+					q(41921, {	-- Closing In
+						["qg"] = 98102, -- Valeera Sanguinar
+						["classes"] = { 4 },
+					}),
+					qh(42503, {	-- Codebreaker
+						["qg"] = 94138, -- Princess Tess Greymane
+						["classes"] = { 4 },
+						["sourceQuests"] = { 
+							42501,	-- Finishing the Job
+							42502,	-- No Sanctuary
+						},
+					}),
+					q(47605, {	-- Coins of Air
+						["qg"] = 123087, -- Al'Abas
+						["classes"] = { 4 },
+					}),
+					q(45414, {	-- Confirming Suspicions
+						["qg"] = 116880, -- Kor'vas Bloodthorn
+						["sourceQuests"] = { 45413 }, -- Gathering Information
+					}),
+					q(43841, {	-- Convincin' Old Yancey
+						["qg"] = 94159, -- Fleet Admiral Tethys
+						["classes"] = { 4 },
+					}),
+					-- q(44275)	-- Court of Stars -- mission board
+					q(43486, {	-- Cracking the Codex
+						["qg"] = 90251, -- Aponi Brightmane
+						["classes"] = { 2 },
+					}),
+					q(43394, {	-- Crossing Legion Lines
+						["qg"] = 111044, -- Lord Maxwell Tyrosus
+						["classes"] = { 5 },
+					}),
+					q(45239, {	-- Cubic Coalescing
+						["qg"] = 93538, -- Dariness the Learned
+						["sourceQuests"] = { 45238 }, -- Return to Karazhan: Cubic Cynosure
+					}),
+					--q(45159)	-- Cubic Conundrum -granted by i(142559) in nighthold
+					q(45160, {	-- Cubic Currents
+						["qg"] = 93538, -- Dariness the Learned
+						["sourceQuests"] = { 45159 }, -- Cubic Conundrum
+					}),
+					q(45125, {	-- Dabbling in the Demonic
+						["qg"] = 116714, -- Ritssyn Flamescowl
+					}),
+					q(42477, {	-- Daio the Decrepit
+						["qgs"] = { 102700, 109222 }, -- Meryl Felstorm (2 versions)
+						["classes"] = { 8 },
+					}),
+					qa(45843, {	-- Dark Omens
+						["qg"] = 116880, -- Kor'vas Bloodthorn
+					}),
+					q(42125, {	-- Dark Whispers
+						["qg"] = 106610, -- Calydus
+						["classes"] = { 9 },
+						["sourceQuests"] = {
+							40623,	-- The Dark Riders
+							41155,	-- The Dark Riders
+							42168,	-- Looking into the Darkness
+						},
+					}),
+					-- q(44272)	-- Darkheart Thicket -- mission board
+					-- q(44273)	-- Darkheart Thicket -- mission board
+					q(46293, {	-- Deadmines, Part Three?
+						["qg"] = 96479, -- Breanni
+					}),
+					q(42680, {	-- Deciphering the Letter
+						["groups"] = { 
+							i(139746),	-- Wristbands of the Uncrowned
+						},
+						["qg"] = 98102, -- Valeera Sanguinar
+						["classes"] = { 4 },
+						["sourceQuests"] = { 42678 }, -- Black Rook Hold: Into Black Rook Hold
+					}),
+					q(40996, {	-- Delegation
+						["qg"] = 102594, -- Marin Noggenfogger
+						["classes"] = { 4 },
+					}),
+					--q(47079)	-- Delivering Lost Knowledge -- removed?
+					q(43384, {	-- Demonic Runes
+						["qg"] = 110571, -- Delas Moonfang
+						["classes"] = { 5 },
+					}),
+					q(47049, {	-- Demonology: Fate of the Tideskorn
+						["qgs"] = { 90417, 115464 }, -- Archmage Khadgar (2 versions)
+						["classes"] = { 9 },
+					}),
+					--q(45173)	-- Desperate Times -- mission board
+					qa(45560, {	-- Destruction: Rumblings Near Feltotem
+						["qg"] = 90418, -- Archmage Modera
+						["classes"] = { 9 },
+						["sourceQuests"] = {
+							47031,	-- Legion Threat: Highmountain
+							47035,	-- Legion Threat: The Missing Mage
+						},
+					}),
+					qa(47020, {	-- Discipline: Rumblings Near Feltotem
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera
+						["classes"] = { 5 },
+						["sourceQuests"] = {
+							47031,	-- Legion Threat: Highmountain
+							47035,	-- Legion Threat: The Missing Mage
+						},
+					}),
+					q(46723, {	-- Down the Rabbit Hole
+						["groups"] = {
+							i(147838),	-- Akazamzarak's Spare Hat
+						},
+						["qg"] = 103092, -- The Great Akazamzarak
+						["classes"] = { 8 },
+					}),
+					q(41220, {	-- Down to Azsuna (breadcrumb?)
+						["qg"] = 86563, -- Archmage Khadgar
+						["sourceQuests"] = { 39718 }, -- Paradise Lost
+					}),
+					q(46103, {	-- Dread Infiltrators
+						["qg"] = 119259, -- Apothecary Keever
+						["classes"] = { 4 },
+					}),
+					q(42911, {	-- Drowned Mana
+						["qg"] = 108825, -- Conjurer Margoss
+					}),
+					qa(45123, {	-- Elemental: The Folly of Levia Laurence
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera (2 versions)
+						["classes"] = { 7 },
+					}),
+					q(44412, {	-- Enemies Everywhere
+						["groups"] = {
+							i(141348),	-- Wondrous Wisdomball
+						},
+						["qg"] = 90417, -- Archmage Khadgar
+					}),
+					q(47050, {	-- Enhancement: Fate of the Tideskorn
+						["qgs"] = { 90417, 115464 }, -- Archmage Khadgar (2 versions)
+						["classes"] = { 7 },
+					}),
+					q(41807, {	-- Establishing a Connection
+						["qg"] = 99262, -- Jace Darkweaver
+						["classes"] = { 12 },
+					}),
+					q(42869, {	-- Eternal Vigil
+						["qg"] = 102799, -- Kor'vas Bloodthorn
+						["classes"] = { 12 },
+					}),
+					q(43945, {	-- Expanding Your Horizons
+						["qg"] = 99531, -- Aggra
+						["classes"] = { 7 },
+						["sourceQuests"] = { 44406 }, -- Aggra's Guidance
+					}),
+					q(43478, {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642, -- Fizzi Liverzapper
+					}),
+					q(43476, {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642, -- Fizzi Liverzapper
+					}),
+					q(43473, {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642, -- Fizzi Liverzapper
+					}),
+					--q(44271)	-- Eye of Azshara -- mission board
+					--q(44270)	-- Eye of Azshara -- mission board
+					q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
+						["groups"] = {
+							i(140622),	-- Hardshell Greatbelt
+							i(140623),	-- Brightscale Waistguard
+							i(140624),	-- Bitterbrine Binding
+							i(140625),	-- Waistband of the Hatecoil Oracles
+						},
+						["qg"] = 106780, -- Tidestone of Golganneth
+						["sourceQuests"] = { 38286 }, -- Eye of Azshara: Wrath of Azshara
+					}),
+					q(43852, {	-- Fancy Lads and Buccaneers
+						["qg"] = 94159, -- Fleet Admiral Tethys
+						["classes"] = { 4 },
+						["sourceQuests"] = { 43841 }, -- Convincin' Old Yancey
+					}),
+					q(41924, {	-- Fangs of the Devourer
+						["qg"] = 105464, -- Val'zuun
+						["classes"] = { 4 },
+					}),
+					--q(44486)	-- Fel-Ravaged Tome -- granted by i(141360) in Vault of the Wardens
+					q(41035, {	-- Felstorm's Plea
+						["classes"] = { 8 },
+					}),
+					qa(47059, {	-- Feral: The Folly of Levia Laurence
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera (2 versions)
+						["classes"] = { 11 },
+					}),
+					q(45615, {	-- Finders Keepers
+						["qg"] = 103092, -- The Great Akazamzarak
+						["classes"] = { 8 },
+					}),
+					q(42452, {	-- Finding Ebonchill
+						["qgs"] = { 102700, 109222 }, -- Meryl Felstorm (2 versions)
+						["classes"] = { 8 },
+					}),
+					q(43100, {	-- Finding the Scepter
+						["qg"] = 101097, -- Calydus
+						["classes"] = { 9 },
+					}),
+					q(42501, {	-- Finishing the Job
+						["qg"] = 94138, -- Princess Tess Greymane
+						["classes"] = { 4 },
+					}),
+					qa(47055, {	-- Fire: The Folly of Levia Laurence
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera (2 versions)
+						["classes"] = { 8 },
+					}),
+					qa(41778, {	-- Firing Up the Forge
+						["qg"] = 90463, -- Archmage Karlain
+					}),
+					q(42424, {	-- Following In His Footsteps
+						["qg"] = 107423, -- Archmage Kalec
+						["classes"] = { 8 },
+						["sourceQuests"] = { 42423 }, -- Archmage Vargoth's Retreat
+					}),
+					q(45917, {	-- Following the Scent
+						["qg"] = 116714, -- Ritssyn Flamescowl
+					}),
+					qh(44203, {	-- For the Cause
+						["qg"] = 113213, -- Master Mathias Shaw
+						["classes"] = { 4 },
+						["isDaily"] = true,
+					}),
+					qa(44202, {	-- For the Cause
+						["qg"] = 113213, -- Master Mathias Shaw
+						["classes"] = { 4 },
+						["isDaily"] = true,
+					}),
+					q(39763, {	-- For Whom the Fel Tolls
+						["qg"] = 97360, -- Matthew Rabis
+						["classes"] = { 2, 3, 9 },
+						["races"] = { 3, 9 },
+						["sourceQuests"] = { 39790 }, -- Infernal Brimstone Theory
+					}),
+					q(47046, {	-- Frost: The Thieving Apprentice
+						["qgs"] = { 105467, 115081 }, -- Archmage Kalec (2 versions)
+						["classes"] = { 6 },
+					}),
+					qa(45182, {	-- Frost: The Twisted Twin
+						["qgs"] = { 90463, 115468 }, -- Archmage Karlain (2 versions)
+						["classes"] = { 8 },
+					}),
+					q(46779, {	-- Further Advancement
+						["qg"] = 98092, -- Nikki the Gossip
+						["classes"] = { 4 },
+					}),
+					qa(47056, {	-- Fury: The Folly of Levia Laurence
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera (2 versions)
+						["classes"] = { 1 },
+					}),
+					q(45413, {	-- Gathering Information
+						["qg"] = 116880, -- Kor'vas Bloodthorn
+						["sourceQuests"] = {
+							45412,	-- Protection: Aid of the Illidari
+							46314,	-- Vengeance: Seeking Kor'vas
+							47022,	-- Protection: Aid of the Illidari
+							47023,	-- Guardian: Aid of the Illidari
+							47024,	-- Brewmaster: Aid of the Illidari
+							47025,	-- Blood: Aid of the Illidari
+						}
+					}),
+					q(40144, {	-- Glielle
+						["qg"] = 93541, -- Kondal Huntsworn
+					}),
+					q(44337, {	-- Goddess Watch Over You
+						["qg"] = 113686, -- Archmage Khadgar
+					}),
+					q(44338, {	-- Goddess Watch Over You
+						["qg"] = 113686, -- Archmage Khadgar
+					}),
+					q(46744, {	-- Greater Power for Greater Threats -- removed?
+						["qgs"] = { 90417, 116302 }, -- Archmage Khadgar (2 versions, dalaran/broken shore)
+						["isBreadcrumb"] = true,
+					}),
+					q(42175, {	-- Growing Power
+						["qg"] = 112688, -- Meryl Felstorm
+						["classes"] = { 8 },
+					}),
+					qa(47023, {	-- Guardian: Aid of the Illidari
+						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver (2 versions)
+						["classes"] = { 11 },
+						["sourceQuests"] = { 47030 }, -- Legion Threat: Dalaran Infiltration
+					}),
+					q(47043, {	-- Havoc: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115081, Havoc DH only)
+						["qgs"] = { 105467, 115081 }, -- Archmage Kalec (2 versions)
+						["classes"] = { 12 },
+					}),
+					qh(46178, {	-- Hiding In Plain Sight
+						["groups"] = {
+							-- rewards spell 240982 (mount: shadowblade's murderous omen)
+						},
+						["qg"] = 98099, -- Lilian Voss
+						["classes"] = { 4 },
+					}),
+					qa(46089, {	-- Hiding In Plain Sight
+						["groups"] = {
+							-- rewards spell 240982 (mount: shadowblade's murderous omen)
+						},
+						["qg"] = 98099, -- Lilian Voss
+						["classes"] = { 4 },
+					}),
+					q(47607, {	-- High Fash-Djinn
+						["qg"] = 123087, -- Al'Abas
+						["classes"] = { 4 },
+					}),
+					qa(47006, {	-- Holy: The Bradensbrook Investigation
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera (2 versions)
+						["classes"] = { 2 },
+						["sourceQuests"] = { 47027 }, -- Legion Threat: Val'sharah
+					}),
+					qa(46078, {	-- Holy: The Bradensbrook Investigation
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera (2 versions)
+						["classes"] = { 5 },
+						["sourceQuests"] = { 47027 }, -- Legion Threat: Val'sharah
+					}),
+					q(40950, {	-- Honoring Success
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+					}),
+					q(42774, {	-- Hope Prevails
+						["qg"] = 108776, -- Lord Maxwell Tyrosus
+						["classes"] = { 2 },
+					}),
+					q(41966, {	-- House Call
+						["qg"] = 105602, -- Vindicator Boros
+						["classes"] = { 5 },
+					}),
+					q(41009, {	-- Hunter to Hunter
+						["qg"] = 106879, -- Grif Wildheart
+						["classes"] = { 3 },
+						["sourceQuests"] = { 40419 }, -- Rescue Mission
+					}),
+					q(40952, {	-- Hunter to Hunter
+						["qg"] = 102570, -- Grif Wildheart
+						["classes"] = { 3 },
+						["sourceQuests"] = { 40419 }, -- Rescue Mission
+					}),
+					q(47595, {	-- I Don't Need Them, But I'll Take Them
+						["classes"] = { 4 },
+					}),
+					q(47594, {	-- I'll Take Those, Thanks!
+						["qg"] = 103792, -- Griftah
+						["classes"] = { 4 },
+					}),
+					qa(44821, {	-- In Dire Need
+						["qg"] = 115465, -- Archmage Modera
+						["sourceQuests"] = { 44782 }, -- Away From Prying Eyes
+					}),
+					q(44448, {	-- In the House of Light and Shadow
+						["qg"] = 90417, -- Archmage Khadgar
+						["sourceQuests"] = {
+							44337, -- Goddess Watch Over You
+							44338, -- Goddess Watch Over You
+						},
+					}),
+					q(47604, {	-- In the Land of Magic
+						["qg"] = 123087, -- Al'Abas
+						["classes"] = { 4 },
+					}),
+					q(40995, {	-- Injection of Power
+						["qg"] = 102594, -- Marin Noggenfogger
+						["classes"] = { 4 },
+					}),
+					q(45992, {	-- Investigate the Broken Shore
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+					}),
+					qa(45906, {	-- Jarod's Gift
+						["qg"] = 90418, -- Archmage Modera
+						["sourceQuests"] = { 46035 }, -- End of the Risen Threat
+					}),
+					q(38907, {	-- Keepers of the Hammer
+						["qg"] = 97666, -- Warbrave Oro
+						["sourceQuests"] = { 39733 }, -- The Lone Mountain
+					}),
+					q(44555, {	-- Khadgar's Discovery
+						["description"] = "Automatically given to you in Dalaran upon reaching lvl 110.";
+					}),
+					q(39985, {	-- Khadgar's Discovery
+						["description"] = "Automatically given to you in Dalaran upon reaching lvl 110.";
+					}),
+					qa(45905, {	-- Kruul's Gift
+						["qg"] = 90431, -- Archmage Ansirem Runeweaver
+						["sourceQuests"] = { 45416 }, -- The Highlord's Return
+					}),
+					q(46074, {	-- Leather to Legendary
+						["qg"] = 92183, -- Alard Schmied
+						["classes"] = { 2 },
+						["sourceQuests"] = { 46083 }, -- A Few Things First
+					}),
+					q(40997, {	-- Lethal Efficiency
+						["qg"] = 98092, -- Nikki the Gossip
+						["classes"] = { 4 },
+					}),
+					q(38500, {	-- Leysmithing Mastery
+						["qg"] = 92183, -- Alard Schmied
+						["sourceQuests"] = { 38507 }, -- Secrets of Leysmithing
+					}),
+					q(39340, {	-- Lining the Crucible
+						["qg"] = 92458, -- Deucus Valdera
+						["sourceQuests"] = { 39339 }, -- A Fragile Crucible
+					}),
+					q(42168, {	-- Looking into the Darkness
+						["qg"] = 106610, -- Calydus
+						["classes"] = { 9 },
+						["sourceQuests"] = {
+							40611,	-- The Fate of Deadwind
+							42128,	-- Ritual Reagents
+						},
+					}),
+					i(134859, { -- Lost Mail
+						["groups"] = {
+							q(41368),	-- Lost Mail
+						},
+					}),
+					i(135479, { -- Lost Mail (Lost Mail have two different item and quest IDs, but no info on why)
+						["groups"] = {
+							q(41411),	-- Lost Mail
+						},
+					}),
+					q(47606, {	-- Loyalty Is Its Own Reward
+						["qg"] = 123087, -- Al'Abas
+						["classes"] = { 4 },
+					}),
+					q(39986, {	-- Magic Message
+						["qg"] = 90417, -- Archmage Khadgar
+						["sourceQuests"] = {
+							39985,	-- Khadgar's Discovery
+							44555,	-- Khadgar's Discovery
+						},
+					}),
+					q(40819, {	-- Making Arrangements
+						["qgs"] = { 99247, 108572 }, -- Kayn Sunfury
+						["classes"] = { 12 },
+					}),
+					q(41120, {	-- Making Arrangements
+						["qgs"] = { 99254, 108571 }, -- Altruis  the Sufferer
+						["classes"] = { 12 },
+					}),
+					qa(38206, {	-- Making the Rounds
+						["qg"] = 96644, -- Sky Admiral Rogers
+						["sourceQuests"] = { 38035 }, -- A Royal Summons
+					}),
+					qa(47039, {	-- Marksmanship: The Twisted Twin
+						["qgs"] = { 90463, 115468 }, -- Archmage Karlain (2 versions)
+						["classes"] = { 3 },
+					}),
+					q(48376, {	-- Mass Primal Obliterum
+						["qg"] = 114719, -- Trader Caelen
+					}),
+					--q(44267)	-- Maw of Souls -- mission board
+					q(43253, {	-- Maw of Souls: Ancient Vrykul Legends
+						["qg"] = 98102, -- Valeera Sanguinar
+						["classes"] = { 4 },
+						["sourceQuests"] = {
+							42684,	-- Throwing SI:7 Off the Trail
+							43468,	-- Blood for the Wolfe
+						},
+					}),
+					qa(46260, {	-- Meld Into the Shadows
+						["qg"] = 117259, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+						["sourceQuests"] = {
+							45628,	-- This Time, Leave a Trail
+							45629,	-- This Time, Leave a Trail
+						},
+					}),
+					q(45185, {	-- Message from the Shadows
+						["qg"] = 116175, -- Karam Magespear
+					}),
+					qa(47005, {	-- Mistweaver: The Bradensbrook Investigation
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera
+						["classes"] = { 10 },
+						["sourceQuests"] = { 47027 }, -- Legion Threat: Val'sharah
+					}),
+					q(42594, {	-- Move Like No Other
+						["qg"] = 107968, -- Archmage Lan'dalock
+						["classes"] = { 12 },
+						["sourceQuests"] = { 42593 }, -- The Arcane Way
+					}),
+					q(44116, {	-- Mystery at Citrine Bay
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+					}),
+					q(38515, {	-- Nature Provides
+						["qg"] = 92183, -- Alard Schmied
+						["sourceQuests"] = { 38507 }, -- Secrets of Leysmithing
+					}),
+					qa(45909, {	-- Navarrogg's Gift
+						["qg"] = 90418, -- Archmage Modera
+						["sourceQuests"] = { 45627 }, -- Feltotem's Fall
+					}),
+					q(40384, {	-- Needs of the Hunters
+						["qg"] = 100786, -- Snowfeather
+						["classes"] = { 3 },
+					}),
+					--q(44265)	-- Neltharion's Lair -- mission board
+					--q(44264)	-- Neltharion's Lair -- mission board
+					--q(43554)	-- Neltharion's Lair -- mission board
+					q(42185, {	-- Never Hunt Alone -- actually started in an instanced version of Ulduar
+						["qg"] = 106558, -- Mimiron
+						["classes"] = { 3 },
+					}),
+					q(42502, {	-- No Sanctuary
+						["qg"] = 94138, -- Princess Tess Greymane
+						["classes"] = { 4 },
+					}),
+					q(42730, {	-- Noggenfogger's Reasonable Request
+						["qg"] = 98102, -- Valeera Sanguinar
+						["classes"] = { 4 },
+					}),
+					q(46722, {	-- Nothing Up My Sleeve
+						["qg"] = 103092, -- The Great Akazamzarak
+						["classes"] = { 8 },
+					}),
+					--q(44269)	-- Odyn's Challenge -- mission board
+					--q(44268)	-- Odyn's Challenge -- mission board
+					--q(43509)	-- Odyn's Challenge -- mission board
+					q(43250, {	-- Off to Court
+						["qg"] = 98102, -- Valeera Sanguinar
+						["classes"] = { 4 },
+						["sourceQuests"] = { 43249 }, -- The Raven's Eye
+					}),
+					q(45644, {	-- Oh Doloria, My Sweet Doloria
+						["qg"] = 118009, -- Maximillian of Northshire
+						["classes"] = { 2 },
+						["sourceQuests"] = { 45568 }, -- They Stole Excaliberto!
+					}),
+					q(40953, {	-- On Eagle's Wings
+						["qg"] = 102478, -- Emmarel Shadwarden
+						["classes"] = { 3 },
+						["sourceQuests"] = { 
+							40952,	-- Hunter to Hunter
+							41008,	-- Hunter to Hunter
+							41009,	-- Hunter to Hunter
+						}
+					}),
+					q(44215, {	-- One More Thing...
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+					}),
+					q(45193, {	-- One Step Behind
+						["qg"] = 116175, -- Karam Magespear
+					}),
+					q(41967, {	-- Out of the Darkness
+						["qg"] = 105603, -- Defender Barrem
+						["classes"] = { 5 }
+					}),
+					qa(47058, {	-- Outlaw: The Folly of Levia Laurence
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera (2 versions)
+						["classes"] = { 4 },
+					}),
+					q(40183, {	-- Over Your Head
+						["groups"] = {
+							sp(194898),	-- Recipe: Broken Isles Helms
+						},
+						["qg"] = 93523, -- Namha Moonwater
+						["sourceQuests"] = { 39958 }, -- Skin Deep
+					}),
+					q(39718, {	-- Paradise Lost
+						["isBreadcrumb"] = true,
+					}),
+					q(37666, {	-- Picking a Fight
+						["qg"] = 110793, -- Taoshi
+						["classes"] = { 4 },
+						["sourceQuests"] = { 43508 }, -- The Captive Spymaster
+					}),
+					q(40201, {	-- Playthings
+						["groups"] = { 
+							sp(196443),	-- Recipe: Pet Bed
+						},
+						["qg"] = 93523, -- Namha Moonwater
+						["sourceQuests"] = { 
+							40200,	-- Battle Bonds (alliance)
+							40241,	-- Battle Bonds (horde)
+						},
+					}),
+					q(40821, {	-- Power Overwhelming
+						["qg"] = 101097, -- Calydus
+						["classes"] = { 9 },
+						["sourceQuests"] = { 40731 }, -- The Heart of the Dreadscar
+					}),
+					q(41542, {	-- Preparation for the Hunt
+						["qgs"] = { 102478, 107317, 107973 }, -- Emmarel Shadewarden (3 versions)
+						["classes"] = { 3 },
+					}),
+					q(48375, {	-- Primal Obliterum
+						["qg"] = 114719, -- Trader Caelen
+					}),
+					qa(47022, {	-- Protection: Aid of the Illidari
+						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver (2 versions)
+						["classes"] = { 2 },
+						["sourceQuests"] = { 47030 }, -- Legion Threat: Dalaran Infiltration
+					}),
+					qa(45412, {	-- Protection: Aid of the Illidari
+						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver (2 versions)
+						["classes"] = { 1 },
+						["sourceQuests"] = { 47030 }, -- Legion Threat: Dalaran Infiltration
+					}),
+					q(43470, {	-- Pruning the Garden
+						["qg"] = 98100, -- Taoshi
+						["classes"] = { 4 },
+					}),
+					qa(45910, {	-- Raest's Gift
+						["qg"] = 90463, -- Archmage Karlain
+						["sourceQuests"] = { 46127 }, -- Thwarting the Twins
+					}),
+					q(40823, {	-- Rebuilding the Council
+						["qg"] = 101097, -- Calydus
+						["classes"] = { 9 },
+					}),
+					q(45251, {	-- Redundancy
+						["qg"] = 118242, -- Aethas Sunreaver
+						["classes"] = { 8 },
+					}),
+					q(41540, {	-- Rendezvous with the Courier
+						["qgs"] = { 102478, 107317, 107973 }, -- Emmarel Shadewarden
+						["classes"] = { 3 },
+					}),
+					q(40419, {	-- Rescue Mission
+						["qg"] = 100190, -- Vareesa Windrunner
+						["classes"] = { 3 },
+						["sourceQuests"] = {
+							40400,	-- Clandestine Operation (alliance)
+							40402,	-- Clandestine Operation (horde)
+							40403,	-- Clandestine Operation (horde v2)
+						},
+					}),
+					qa(47004, {	-- Restoration: The Bradensbrook Investigation
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera
+						["classes"] = { 11 },
+						["sourceQuests"] = { 47027 }, -- Legion Threat: Val'sharah
+					}),
+					qa(47003, {	-- Restoration: The Bradensbrook Investigation
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera
+						["classes"] = { 7 },
+						["sourceQuests"] = { 47027 }, -- Legion Threat: Val'sharah
+					}),
+					q(47052, {	-- Retribution: Fate of the Tideskorn
+						["qg"] = 90417, -- Archmage Khadgar
+						["classes"] = { 2 },
+					}),
+					q(46290, {	-- Return of the Archmage
+						["qg"] = 118242, -- Aethas Sunreaver
+						["classes"] = { 8 },
+						["sourceQuests"] = { 46000 }, -- Arming Dalaran
+					}),
+					q(41806, {	-- Return to Jace
+						["qg"] = 90417, -- Archmage Khadgar
+						["classes"] = { 12 },
+					}),
+					q(45238, {	-- Return to Karazhan: Cubic Cynosure
+						["qg"] = 93538, -- Dariness the Learned
+						["sourceQuests"] = { 45160 }, -- Cubic Currents
+					}),
+					--q(44917)	-- Return to Karazhan: The Tower of Power -- mission board
+					q(41221, {	-- Return to Mardum
+						["qg"] = 109295, -- Matron Mother Malevolence
+						["classes"] = { 12 },
+					}),
+					q(41033, {	-- Return to Mardum
+						["qg"] = 109295, -- Matron Mother Malevolence
+						["classes"] = { 12 },
+					}),
+					qa(42815, {	-- Return to the Broken Shore
+						["qg"] = 96183, -- Danath Trollbane
+						["classes"] = { 1 },
+						["sourceQuests"] = { 42814 }, -- An Important Mission
+					}),
+					qh(38904, {	-- Return to the Broken Shore
+						["qg"] = 93773, -- High Overlord Saurfang
+						["classes"] = { 1 },
+						["sourceQuests"] = { 41052 }, -- A Desperate Plea
+					}),
+					q(43007, {	-- Return to the Chamber of Shadows
+						["qg"] = 112679, -- Valeera Sanguinar
+						["classes"] = { 4 },
+					}),
+					q(40994, {	-- Right Tools for the Job
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+					}),
+					q(39905, {	-- Ringing True
+						["groups"] = { 
+							sp(208718),	-- Formula List: Ring Enchantments
+						},
+						["qg"] = 90317, -- Jace Darkweaver
+					}),
+					q(42663, {	-- Rise, Champions
+						["qg"] = 102700, -- Meryl Felstorm
+						["classes"] = { 8 },
+						["sourceQuests"] = { 42175 }, -- Growing Power
+					}),
+					q(42608, {	-- Rise, Champions
+						["qg"] = 101097, -- Calydus
+						["classes"] = { 9 },
+					}),
+					q(42139, {	-- Rise, Champions
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+						["sourceQuests"] = { 43007 }, -- Return to the Chamber of Shadows
+					}),
+					q(42128, {	-- Ritual Reagents
+						["qg"] = 101097, -- Calydus
+						["classes"] = { 9 },
+						["sourceQuests"] = {
+							40606,	-- To Point the Way
+							42952,	-- Tracking Down the Skull
+						},
+					}),
+					q(43254, {	-- Ritual Ruination
+						["qg"] = 109838, -- Calydus
+						["classes"] = { 9 },
+					}),
+					q(45192, {	-- Runes of Rending
+						["qg"] = 116175, -- Karam Magespear
+					}),
+					q(38947, {	-- Runic Catgut
+						["qg"] = 93967, -- Lyndras
+					}),
+					q(44204, {	-- Seal their Fates
+						["qg"] = 110820, -- Scythe
+						["classes"] = { 4 },
+					}),
+					q(47864, {	-- Sealing Fate: Additional Marks of Honor
+						["qg"] = 111243, --  Archmage Lan'Dalock
+						["isWeekly"] = true,
+					}),
+					q(43894, {	-- Sealing Fate: Extraneous Order Resources
+						["qg"] = 111243, --  Archmage Lan'Dalock
+						["isWeekly"] = true,
+					}),
+					q(43895, {	-- Sealing Fate: Gold
+						["qg"] = 111243, --  Archmage Lan'Dalock
+						["isWeekly"] = true,
+					}),
+					q(43897, {	-- Sealing Fate: Immense Fortune of Gold
+						["qg"] = 111243, --  Archmage Lan'Dalock
+						["isWeekly"] = true,
+					}),
+					q(47851, {	-- Sealing Fate: Marks of Honor
+						["qg"] = 111243, --  Archmage Lan'Dalock
+						["isWeekly"] = true,
+					}),
+					q(43892, {	-- Sealing Fate: Order Resources
+						["qg"] = 111243, --  Archmage Lan'Dalock
+						["isWeekly"] = true,
+					}),
+					q(43896, {	-- Sealing Fate: Piles of Gold
+						["qg"] = 111243, --  Archmage Lan'Dalock
+						["isWeekly"] = true,
+					}),
+					q(47865, {	-- Sealing Fate: Piles of Marks of Honor
+						["qg"] = 111243, --  Archmage Lan'Dalock
+						["isWeekly"] = true,
+					}),
+					q(43893, {	-- Sealing Fate: Stashed Order Resources
+						["qg"] = 111243, --  Archmage Lan'Dalock
+						["isWeekly"] = true,
+					}),
+					q(45187, {	-- Secrets in the Underbelly
+						["qg"] = 116175, -- Karam Magespear
+					}),
+					q(42872, {	-- Securing the Way
+						["qg"] = 109196, -- Jace Darkweaver
+						["classes"] = { 12 },
+					}),
+					q(42000, {	-- Seeker of Truth
+						["qgs"] = { 90259, 90369 }, -- Lord Maxwell Tyrosus (2 versions)
+						["classes"] = { 2 },
+					}),
+					q(42770, {	-- Seeking Guidance
+						["qgs"] = { 90259, 90369 }, -- Lord Maxwell Tyrosus
+						["classes"] = { 2 },
+					}),
+					q(45630, {	-- Servant to No One
+						["qg"] = 103092, -- The Great Akazamzarak
+						["classes"] = { 8 },
+					}),
+					q(40146, {	-- Seymour and Agnes
+						["qg"] = 93541, -- Kondal Huntsworn
+					}),
+					qa(47042, {	-- Shadow: The Twisted Twin
+						["qgs"] = { 90463, 115468 }, -- Archmage Karlain
+						["classes"] = { 5 },
+					}),
+					q(47592, {	-- Shine Bright Like a Diamond
+						["qg"] = 103792, -- Griftah
+						["classes"] = { 4 },
+					}),
+					q(40880, {	-- Short Circuit
+						["groups"] = {
+							sp(201615),	-- Schematic: Blingtron's Circuit Design Tutorial
+						},
+						["qg"] = 93520, -- Didi the Wrench
+					}),
+					q(42017, {	-- Shrine of the Truthguard
+						["qg"] = 105813, -- Orik Trueheart
+						["classes"] = { 2 },
+					}),
+					o(246154, { -- Broken Toy Box
+						q(40558, {	-- Socket to Me
+							["groups"] = {
+								sp(200410),	-- Design: JewelCraft
+							},
+						}),
+					}),
+					--q(47148) -- Something Different -- granted when entering a brawl. weekly?
+					q(40014, {	-- Spayed by the Spade
+						["groups"] = {
+							sp(193415),	-- Herbalism Technique: Aethril (Rank 1)
+						},
+						["qg"] = 92464, -- Kuhuine Tenderstride
+						["sourceQuests"] = { 40013 }, -- Aethril Sample
+					}),
+					q(43829, {	-- Spy vs. Spy
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+						["sourceQuests"] = { 43958 }, -- A Body of Evidence
+					}),
+					q(41574, {	-- Stolen Thunder
+						["qg"] = 104381, -- Grif Wildheart
+						["classes"] = { 3 },
+						["sourceQuests"] = { 41541 }, -- A Beastly Expedition
+					}),
+					--q(44411),	-- Strange Humming Crystal -- granted by i(141349)
+					q(47048, {
+						["qgs"] = { 105467, 115081 }, -- Archmage Kalec
+						["classes"] = { 4 },					 
+					}),
+					q(47047, {
+						["qgs"] = { 105467, 115081 }, -- Archmage Kalec
+						["classes"] = { 3 },					 
+					}),
+					q(42703, {	-- Technical Wizardry
+						["qg"] = 102700, -- Meryl Felstorm
+						["classes"] = { 2 },
+						["sourceQuests"] = { 42663 }, -- Rise, Champions
+					}),
+					q(39346, {	-- Testing the Calibration
+						["qg"] = 92458, -- Deucus Valdera
+						["sourceQuests"] = {
+							39345,	-- Calibration Experts
+							39645,	-- Calibration Experts
+						},
+					}),
+					q(45916, {	-- The Acolyte Imperiled
+						["qg"] = 116714, -- Ritssyn Flamescowl
+					}),
+					o(251991, {
+						q(43349, {	-- The Aegis of Aggramar
+							["groups"] = {
+								i(130016),	-- Valor-Bound Legplates
+								i(129997),	-- Valor-Bound Legwraps
+								i(129989),	-- Valor-Bound Trousers
+								i(130005),	-- Valor-Bound Greaves
+							},
+						}),
+					}),
+					q(42593, {	-- The Arcane Way
+						["qg"] = 98632, -- Matron Mother Malevolence
+						["classes"] = { 12 },
+					}),
+					--q(44263),	-- The Arcway -- mission board
+					q(44172, {	-- The Arena Calls
+						["qg"] = 111246, -- Archmage Timear
+						["isWeekly"] = true,
+					}),
+					q(43373, {	-- The Best and Brightest
+						["qg"] = 110557, -- Prophet Velen
+						["classes"] = { 5 },
+					}),
+					q(43014, {	-- The Big Bad Wolfe
+						["qg"] = 98092, -- Nikki the Gossip
+						["classes"] = { 4 },
+						["sourceQuests"] = { 43013 }, -- The School of Roguery
+					}),
+					q(44041, {	-- The Bloody Truth
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+						["sourceQuests"] = { 43829 }, -- Spy vs. Spy
+					}),
+					q(39817, {	-- The Brimstone's Secret
+						["qg"] = 97360, -- Matthew Rabis
+						["sourceQuests"] = { 39763 }, -- For Whom the Fel Tolls
+					}),
+					q(42377, {	-- The Brother's Trail
+						["qg"] = 106337, -- Travard
+						["classes"] = { 2 },
+					}),
+					q(40714, {	-- The Call To War
+						["classes"] = { 6 },
+						["description"] = "Automatically given to you when you arrive in Dalaran.",
+					}),
+					q(41114),	-- The Champion's Return -- no qg info
+					q(40142, {	-- The Core of the Stormscale
+						["groups"] = {
+							sp(194820),	-- Skinning Technique: Stormscale (Rank 1)
+						},
+						["qg"] = 93541, -- Kondal Huntsworn
+					}),
+					qa(42416, {	-- The Council is in Session
+						["qg"] = 107351, -- Archmage Khadgar
+						["classes"] = { 8 },
+						["sourceQuests"] = { 42222 }, -- Empyrean Society Report
+					}),
+					i(154880, { -- Cursed Shard
+						q(49474, {	-- The Cursed Shard
+							["isBreadcrumb"] = true,
+						}),
+					}),
+					q(42476, {	-- The Deadwind Site
+						["qg"] = 102700, -- Meryl Felstorm
+						["classes"] = { 8 },
+					}),
+					q(40849, {	-- The Dreadblades
+						["qg"] = 102120, -- Fleet Admiral Tethys
+						["classes"] = { 4 },
+					}),
+					q(41036, {	-- The Dreadlord's Prize
+						["groups"] = {
+							sp(204287),	-- Teleport: Hall of the Guardian
+						},
+						["qg"] = 102700, -- Meryl Felstorm
+						["classes"] = { 8 },
+						["sourceQuests"] = { 41035 }, -- Felstorm's Plea
+					}),
+					q(39427, {	-- The Eagle Spirit's Blessing
+						["qg"] = 104382, -- Apata Highmountain
+						["classes"] = { 3 },
+						["sourceQuests"] = { 41542 }, -- Preparation for the Hunt
+					}),
+					--q(42005),	-- The End of the Saga -- starts in Howling Fjord
+					q(45420, {	-- The Eye of Aman'Thul
+						["groups"] = {
+							sp(233377),	-- Gaze of Aman'Thul
+						},
+						["qg"] = 106522, -- Archmage Khadgar
+						["sourceQuests"] = { 45417 }, -- The Nighthold: Lord of the Shadow Council
+					}),
+					q(44375, {	-- The Final Blade
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+					}),
+					q(40839, {	-- The Final Shadow
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+						["sourceQuests"] = { 40832 }, -- Call of the Uncrowned
+					}),
+					q(45904, {	-- The God-Queen's Gift
+						["qg"] = 90417, -- Archmage Khadgar
+					}),
+					--q(14166),	-- The Grateful Dead -- Day of the Dead event quest
+					q(41112, {	-- The Great Akazamzarak
+						["qg"] = 102700, -- Meryl Felstorm
+						["classes"] = { 8 },
+						["sourceQuests"] = { 41125 }, -- Unlocked Potential
+					}),
+					q(41119, {	-- The Hunt
+						["qg"] = 103156, -- Altruis the Sufferer
+						["classes"] = { 12 },
+					}),
+					q(39247, {	-- The Hunt
+						["qg"] = 94902, -- Kayn Sunfury
+						["classes"] = { 12 },
+					}),
+					q(41415, {	-- The Hunter's Call
+						["qg"] = 102478, -- Emmarel Shadewarden
+						["classes"] = { 3 },
+					}),
+					qa(45902, {	-- The Imp Mother's Gift
+						["qg"] = 90418, -- Archmage Modera
+					}),
+					q(40938, {	-- The Light and the Void
+						["qg"] = 101313, -- Prophet Velen
+						["classes"] = { 5 },
+					}),
+					q(41625, {	-- The Light's Wrath
+						["qgs"] = { 101314, 110564 }, -- Alonsus Faol (2 versions)
+						["classes"] = { 5 },
+					}),
+					q(39733, {	-- The Lone Mountain -- granted by order hall scouting map
+						["isBreadcrumb"] = true,
+					}),
+					--q(44276),	-- The Lord of Black Rook Hold -- granted by mission board
+					--q(44277),	-- The Lord of Black Rook Hold -- granted by mission board
+					q(42479, {	-- The Mage Hunter
+						["qgs"] = { 102700, 109222 }, -- Meryl Felstorm
+						["classes"] = { 8 },
+					}),
+					qa(46200, {	-- The Matter Resolved... For Now...
+						["qg"] = 118954, -- Night Elf Warrior
+					}),
+					q(42231, {	-- The Mysterious Paladin
+						["qgs"] = { 90259, 90369 }, -- Lord Maxwell Tyrosus
+						["classes"] = { 2 },
+					}),
+					q(47603, {	-- The Mysterious, Magnificent Al'Abas
+						["qg"] = 123087, -- Al'Abas
+						["classes"] = { 4 },
+					}),
+					q(40729, {	-- The New Blood
+						["qg"] = 101456, -- Ritssyn Flamescowl
+						["classes"] = { 9 },
+						["sourceQuests"] = { 40716 }, -- The Sixth
+					}),
+					q(42011, {	-- The Nexus Vault
+						["sourceQuests"] = { 42010 }, -- Arcane Unleashed
+						["classes"] = { 8 },
+					}),
+					q(41631, {	-- The Nexus Vault
+						["sourceQuests"] = { 41630 }, -- Unleashing Judgment
+						["classes"] = { 5 },
+					}),
+					q(45207, {	-- The Nightborne Apprentice
+						["qg"] = 118242, -- Aethas Sunreaver
+						["classes"] = { 8 },
+						["sourceQuests"] = { 46338 }, -- A Creative Solution
+					}),
+					q(45177, {	-- The Nighthold
+						["qg"] = 113857, -- Light's Heart
+					}),
+					q(41113, {	-- The Only Way to Travel
+						["qg"] = 103092, -- The Great Akazamzarak
+						["classes"] = { 8 },
+						["sourceQuests"] = { 41112 }, -- The Great Akazamzarak
+					}),
+					qh(46322, {	-- The Pirate's Bay
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+					}),
+					qa(45833, {	-- The Pirate's Bay
+						["qg"] = 101513, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+					}),
+					q(40816, {	-- The Power to Survive
+						["qg"] = 99254, -- Altruis the Sufferer
+						["classes"] = { 12 },
+					}),
+					q(40814, {	-- The Power to Survive
+						["qg"] = 99247, -- Kayn Sunfury
+						["classes"] = { 12 },
+					}),
+					q(39342, {	-- The Price of the Black Market
+						["qg"] = 101492, -- Ms. Xiulan
+					}),
+					q(43249, {	-- The Raven's Eye
+						["qg"] = 98102, -- Valeera Sanguinar
+						["classes"] = { 4 },
+						["sourceQuests"] = { 43253 }, -- Maw of Souls: Ancient Vrykul Legends
+					}),
+					q(43013, {	-- The School of Roguery
+						["qg"] = 98092, -- Nikki the Gossip
+						["classes"] = { 4 },
+						["sourceQuests"] = { 42140 }, -- A More Wretched Hive of Scum and Villainy
+					}),
+					q(38376, {	-- The Search for the Highlord
+						["qg"] = 90369, -- Lord Maxwell Tyrosus
+						["classes"] = { 2 },
+					}),
+					q(41919, {	-- The Shadows Reveal
+						["qg"] = 98102, -- Valeera Sanguinar
+						["classes"] = { 4 },
+					}),
+					q(42120, {	-- The Silver Hand
+						["qg"] = 106337, -- Travard
+						["classes"] = { 2 },
+						["sourceQuests"] = { 42377 }, -- The Brother's Trail
+					}),
+					q(40716, {	-- The Sixth
+						["qg"] = 103506, -- Ritssyn Flamescowl
+						["classes"] = { 9 },
+					}),
+					q(40037, {	-- The Spade's Blade
+						["groups"] = {
+							sp(193428),	-- Herbalism Technique: Starlight Rose (Rank 2)
+						},
+						["qg"] = 92464, -- Kuhuine Tenderstride
+						["sourceQuests"] = { 40036 }, -- Jeweled Spade Handle
+					}),
+					q(41124, {	-- The Tirisgarde Reborn
+						["qg"] = 102700, -- Meryl Felstorm
+						["classes"] = { 8 },
+					}),
+					--q(39731),	-- The Tranquil Forest -- granted by scouting map
+					q(44174, {	-- The Very Best
+						["qg"] = 111246, -- Archmage Timear
+						["isWeekly"] = true,
+					}),
+					qh(38307, {	-- The Warchief Beckons
+						["qg"] = 96683, -- Nathanos Blightcaller
+						["sourceQuests"] = {
+							39864,	-- Stormheim
+							44701,	-- Stormheim
+						},
+					}),
+					qa(45188, {	-- The Wisdom of the Council
+						["qg"] = 116308, -- Karam Magespear
+					}),
+					q(44175, {	-- The World Awaits
+						["qg"] = 111246, -- Archmage Timear
+						["isWeekly"] = true,
+					}),
+					q(43479, {	-- The World is Not Enough
+						["qg"] = 98100, -- Taoshi
+						["classes"] = { 4 },
+						["sourceQuests"] = { 43470 }, -- Pruning the Garden
+					}),
+					q(44310, {	-- Thrice the Power	
+						["qgs"] = { 102700, 109222 }, -- Maryl Felstorm (2 versions)
+						["classes"] = { 8 },
+					}),				
+					q(42684, {	-- Throwing SI:7 Off the Trail
+						["qg"] = 98102, -- Valeera Sanguinar
+						["classes"] = { 4 },
+					}),
+					q(43331, {	-- Time to Collect
+						["groups"] = {
+							i(140595),	-- Rax's Silk Pajama Bottoms
+							i(140594),	-- Snaggle's Favorite Pants
+							i(140593),	-- Rax's Polished Greaves
+							i(140592),	-- Mook Battlepants
+							i(140599),	-- Pretty Silk Gloves
+							i(140598),	-- Snaggle's Best Gloves
+							i(140597),	-- Rax's Piloting Handgrips
+							i(140596),	-- Reinforced Mook Handguards
+						},
+						["qg"] = 110018, -- Gazrix Gearlock
+					}),
+					--q(45172),	-- To Battle! -- granted by mission board
+					q(42002, {	-- To Northrend
+						["qg"] = 105689, -- Orik Trueheart
+						["classes"] = { 2 },
+						["sourceQuests"] = { 42000 }, -- Seeker of Truth
+					}),
+					qa(46810),	-- To the Forge It Goes...
+					qh(46946),	-- To the Forge It Goes...
+					q(39987, {	-- Trail of Echoes
+						["qg"] = 90417, -- Archmage Khadgar
+						["sourceQuests"] = { 39986 }, -- Magic Message
+					}),
+					q(41922, {	-- Traitor!
+						["qg"] = 98102, -- Valeera Sanguinar
+						["classes"] = { 4 },
+					}),
+					q(43535, {	-- Translation: Danger!
+						["qg"] = 110571, -- Delas Moonfang
+						["classes"] = { 1, 2, 5 },
+					}),
+					q(39861, {	-- Tying Up Loose Ends
+						["qg"] = 91172, -- Archmage Khadgar
+						["sourceQuests"] = { 39731 }, -- The Tranquil Forest
+					}),
+					q(37494, {	-- Under Cover of Darkness
+						["qg"] = 98100, -- Taoshi
+						["classes"] = { 4 },
+						["sourceQuests"] = { 37448 }, -- A Simple Plan
+					}),
+					qa(47057, {	-- Unholy: The Folly of Levia Laurence
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera
+						["classes"] = { 6 },
+					}),
+					q(43341, {	-- Uniting the Isles
+						["qg"] = 90417, -- Archmage Khadgar
+					}),
+					q(45727, {	-- Uniting the Isles
+						["qg"] = 90417, -- Archmage Khadgar
+					}),
+					q(41125, {	-- Unlocked Potential
+						["qg"] = 102700, -- Meryl Felstorm
+						["classes"] = { 8 },
+						["sourceQuests"] = { 41114 },
+					}),
+					--q(43556),	-- Vault of the Wardens -- granted by mission board
+					--q(44260),	-- Vault of the Wardens -- granted by mission board
+					--q(44261),	-- Vault of the Wardens -- granted by mission board
+					q(43379, {	-- Velen's Vision
+						["qg"] = 110557, -- Prophet Velen
+						["classes"] = { 5 },
+					}),
+					q(40249, {	-- Vengeance Will Be Ours
+						["qg"] = 99247, -- Kayn Sunfury
+						["classes"] = { 12 },
+					}),
+					q(41863, {	-- Vengeance Will Be Ours
+						["qg"] = 99254, -- Altruis the Sufferer
+						["classes"] = { 12 },
+					}),
+					qa(46314, {	-- Vengeance: Seeking Kor'vas
+						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver
+						["classes"] = { 12 },
+						["sourceQuests"] = { 47030 }, -- Legion Threat: Dalaran Infiltration
+					}),
+					--q(44259),	-- Violet Hold -- granted by mission board
+					--q(44058),	-- Volpin the Elusive -- starts from all order halls
+					q(47591, {	-- Wanna Buy a Lamp?
+						["qg"] = 103792, -- Griftah
+						["classes"] = { 4 },
+					}),
+					q(38576, {	-- We Meet at Light's Hope
+						["qgs"] = { 106209, 106834 }, -- Lord Maxwell Tyrosus
+						["classes"] = { 2 },
+						["sourceQuests"] = { 38376 }, -- The Search for the Highlord
+					}),
+					q(40408, {	-- Weapons of Legend
+						["qg"] = 90369, -- Lord Maxwell Tyrosus
+						["classes"] = { 2 },
+						["sourceQuests"] = { 38710 }, -- An Urgent Gathering
+					}),
+					q(40618, {	-- Weapons of Legend
+						["qg"] = 102478, -- Emmarel Shadewarden
+						["classes"] = { 3 },
+						["sourceQuests"] = {
+							40384,	-- Needs of the Hunters
+							41415,	-- The Hunter's Call
+						},
+					}),
+					qh(48054, {	-- Weigh Anchor
+						["groups"] = {
+							sp(248582),	-- Plans: Felslate Anchor
+						},
+						["qg"] = 106655, -- Arcanomancer Vridiel
+					}),
+					qa(48053, {	-- Weigh Anchor
+						["groups"] = {
+							sp(248582),	-- Plans: Felslate Anchor
+						},
+						["qg"] = 92183, -- Alard Schmied
+					}),
+					q(43015, {	-- What Winstone Suggests
+						["qg"] = 98092, -- Nikki the Gossip
+						["classes"] = { 4 },
+						["sourceQuests"] = { 43014 }, -- The Big Bad Wolfe
+					}),
+					q(45813, {	-- Where Art Thou, My Sweet
+						["groups"] = {
+							sp(234259),	-- Follower: Maximillian of Northshire
+						},
+						["qg"] = 118088, -- Maximillian of Northshire
+						["classes"] = { 2 },
+					}),
+					q(43469, {	-- Where In the World is Mathias?
+						["qg"] = 98100, -- Taoshi
+						["classes"] = { 4 },
+						["sourceQuests"] = { 43470 }, -- Pruning the Garden
+					}),
+					qa(45190, {	-- Where it's Thinnest
+						["qg"] = 90463, -- Archmage Karlain
+					}),
+					q(46206, {	-- Whispers of a Frightened World
+						["description"] = "Automatically given to you by Magni Bronzebeard in Dalaran",
+					}),
+					q(47330, {	-- Whispers of a Frightened World
+						["qg"] = 90417, -- Archmage Khadgar
+					}),
+					--q(45179),	-- Win the Crowd -- granted by mission board
+					qa(47019, {	-- Windwalker: Rumblings Near Feltotem
+						["qgs"] = { 90418, 115465 }, -- Archmage Modera
+						["classes"] = { 10 },
+						["sourceQuests"] = {
+							47031,	-- Legion Threat: Highmountain
+							47035,	-- Legion Threat: The Missing Mage
+						},
+					}),
+					q(44195, {	-- Workorders for Armaments
+						["qg"] = 110348, -- Mal
+						["classes"] = { 4 },
+					}),
+					q(45908, {	-- Xylem's Gift
+						["qg"] = 105081, -- Archmage Kalec
+					}),
+					q(44006, {	-- Your Fullest Potential
+						["qg"] = 99531, -- Aggra
+						["classes"] = { 7 },
+					}),														
+				}),
+--[[
+					The following quests have been removed from the game:
 					q(41006),	-- Assassinate That Guy
-					q(47051),	-- Assassination: Fate of the Tideskorn
-					q(46734),	-- Assault on Broken Shore
-					q(40878),	-- Assault on Violet Hold: Cheating Death
-					q(38965),	-- Assault on Violet Hold: Into the Hold
-					q(43487),	-- Assault on Violet Hold: The Fel Lexicon
-					qa( 44782),	-- Away From Prying Eyes
-					q(40545),	-- Aww Scrap!
-					q(44766),	-- Backup Plan
-					qa( 47037),	-- Balance: The Twisted Twin
-					qa( 46327),	-- Bargaining with Shadows
-					qh( 40241),	-- Battle Bonds
-					qa( 40200),	-- Battle Bonds
 					q(41408),	-- Battle: Pandaren Cuisine - Elling Trias
 					q(41405),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
 					q(41406),	-- Battle: Pandaren Cuisine - Torg Slowflame
 					q(41400),	-- Battle: Pandaren Cuisine!
-					qa( 47018),	-- Beast Mastery: Rumblings Near Feltotem
-					q(39343),	-- Bendy Glass Tubes
-					q(45415),	-- Between Worlds
-					q(43259),	-- Beware of the Crooked Tree
-					q(40857),	-- Bits and Pieces
-					q(40181),	-- Black Rook Bandit
-					q(39349),	-- Black Rook Hold: Heavy, But Helpful
-					q(42678),	-- Black Rook Hold: Into Black Rook Hold
-					q(40559),	-- Black Rook Hold: The Raven's Wisdom
-					q(40710),	-- Blade in Twilight
-					q(43468),	-- Blood for the Wolfe
-					q(43488),	-- Blood of Our Enemy
-					q(44760),	-- Blood On Your Hands
-					qa( 47025),	-- Blood: Aid of the Illidari
-					q(46119),	-- Boon of the Builder
-					qa( 47024),	-- Brewmaster: Aid of the Illidari
-					q(44004),	-- Bringer of the Light
-					q(40062),	-- Bulging Nightmare Pod
-					q(41121),	-- By Any Means
-					q(39051),	-- By Any Means
-					qa( 39645),	-- Calibration Experts
-					qh( 39345),	-- Calibration Experts
-					q(39047),	-- Call of the Illidari
-					q(39261),	-- Call of the Illidari
-					q(40392),	-- Call of the Marksman
-					q(40832),	-- Call of The Uncrowned
-					q(43055),	-- Candy Bucket
-					qa( 43056),	-- Candy Bucket
-					qh( 43057),	-- Candy Bucket
-					q(41750),	-- Champion: Calydus
-					q(44181),	-- Champion: Fleet Admiral Tethys
-					q(43262),	-- Champion: Garona Halforcen
-					qh( 46058),	-- Champion: Lilian Voss
-					q(44183),	-- Champion: Lord Jorach Ravenholdt
-					q(44180),	-- Champion: Marin Noggenfogger
-					q(43724),	-- Champion: Master Mathias Shaw
-					q(43723),	-- Champion: Taoshi
-					qa( 46059),	-- Champion: Tess Greymane
-					q(46724),	-- Champion: The Great Akazamzarak
-					q(42800),	-- Champion: Valeera Sanguinar
-					q(43261),	-- Champion: Vanessa VanCleef
-					q(39347),	-- Channeling Our Efforts
-					q(40026),	-- Chase the Culprit
-					q(38506),	-- Chicken Scratch
-					q(48021),	-- Chromie
-					qh( 42539),	-- Cloak and Dagger
-					q(39883),	-- Cloaked in Tradition
-					q(41921),	-- Closing In
-					qh( 42503),	-- Codebreaker
-					q(47605),	-- Coins of Air
-					q(40540),	-- Come at Me, Brul
-					q(45414),	-- Confirming Suspicions
-					q(38946),	-- Consult the Locals
-					q(43841),	-- Convincin' Old Yancey
-					q(44275),	-- Court of Stars
-					q(40882),	-- Court of Stars: Revamping the Recoil
-					q(43486),	-- Cracking the Codex
-					q(43394),	-- Crossing Legion Lines
-					q(45239),	-- Cubic Coalescing
-					q(45159),	-- Cubic Conundrum
-					q(45160),	-- Cubic Currents
-					q(44488),	-- Cursed Tome
-					q(39891),	-- Cursed, But Convenient
-					q(45125),	-- Dabbling in the Demonic
-					q(42477),	-- Daio the Decrepit
-					qa( 45843),	-- Dark Omens
-					q(44177),	-- Dark Secrets and Shady Deals
-					q(42125),	-- Dark Whispers
-					q(44272),	-- Darkheart Thicket
-					q(44273),	-- Darkheart Thicket
-					q(41889),	-- Dazed of the Past
-					q(46293),	-- Deadmines, Part Three?
-					q(42680),	-- Deciphering the Letter
-					q(40996),	-- Delegation
-					q(47079),	-- Delivering Lost Knowledge
-					q(40211),	-- Demon Flesh
-					q(39957),	-- Demon Ink
-					q(43384),	-- Demonic Runes
-					q(47049),	-- Demonology: Fate of the Tideskorn
-					q(45173),	-- Desperate Times
-					q(40016),	-- Desperation Breeds Ingenuity
-					qa( 45560),	-- Destruction: Rumblings Near Feltotem
-					qa( 47020),	-- Discipline: Rumblings Near Feltotem
-					q(46723),	-- Down the Rabbit Hole
-					q(41220),	-- Down to Azsuna
-					q(46103),	-- Dread Infiltrators
-					q(40018),	-- Dreamleaf Sample
-					q(42911),	-- Drowned Mana
-					qa( 45123),	-- Elemental: The Folly of Levia Laurence
-					q(39907),	-- Elven Enchantments
-					qa( 46035),	-- End of the Risen Threat
-					q(40854),	-- Endless Possibilities
-					q(44412),	-- Enemies Everywhere
-					q(38505),	-- Engineers: Not COMPLETELY Useless
-					q(47050),	-- Enhancement: Fate of the Tideskorn
-					q(41807),	-- Establishing a Connection
-					q(42869),	-- Eternal Vigil
-					q(43945),	-- Expanding Your Horizons
 					q(43474),	-- Experimental Potion: Test Subjects Needed
-					q(43478),	-- Experimental Potion: Test Subjects Needed
 					q(43475),	-- Experimental Potion: Test Subjects Needed
-					q(43476),	-- Experimental Potion: Test Subjects Needed
-					q(43473),	-- Experimental Potion: Test Subjects Needed
 					q(43477),	-- Experimental Potion: Test Subjects Needed
-					q(48065),	-- Extraterrestrial Exploration
-					q(44271),	-- Eye of Azshara
-					q(44270),	-- Eye of Azshara
-					q(43378),	-- Eye of Azshara: Looking Through the Lens
-					q(39331),	-- Eye of Azshara: Put a Cork in It
-					q(38961),	-- Eye of Azshara: The Depraved Nightfallen
-					q(42213),	-- Eye of Azshara: The Tidestone of Golganneth
-					q(40523),	-- Facet-nating Friends
-					q(43852),	-- Fancy Lads and Buccaneers
-					q(41924),	-- Fangs of the Devourer
-					qh( 42244),	-- Fate of the Queen's Reprisal
-					qa( 40794),	-- Fate of the Queen's Reprisal
-					q(41167),	-- Fel Fragments
-					qa( 45127),	-- Fel-Crossed Lovers
-					q(44486),	-- Fel-Ravaged Tome
-					q(40156),	-- Felhide Sample
-					q(38795),	-- Felslate Deposit Sample
-					q(38796),	-- Felslate Seam Sample
-					q(38524),	-- Felsmith Nal'ryssa
-					q(41035),	-- Felstorm's Plea
-					qa( 45627),	-- Feltotem's Fall
-					q(40041),	-- Felwort Analysis
-					q(40040),	-- Felwort Sample
-					qa( 47059),	-- Feral: The Folly of Levia Laurence
-					q(39881),	-- Fey Enchantments
-					q(45615),	-- Finders Keepers
-					q(42452),	-- Finding Ebonchill
-					q(43100),	-- Finding the Scepter
-					q(42501),	-- Finishing the Job
-					q(40869),	-- Fire and Forget
 					q(42189),	-- Fire Mage - Flavor Event 01
 					q(42192),	-- Fire Mage - Flavor Event 02
 					q(42212),	-- Fire Mage - Flavor Event 03
-					qa( 47055),	-- Fire: The Folly of Levia Laurence
-					qa( 41778),	-- Firing Up the Forge
-					q(41010),	-- Fish Frenzy
-					q(39932),	-- Fish Ink
-					q(40065),	-- Fjarnsk
-					q(40033),	-- Fjarnskaggl
-					q(40029),	-- Fjarnskaggl Sample
-					q(39430),	-- Flasking for a Favor
-					q(38563),	-- Flower-Pickers and Potion-Quaffers
-					q(42424),	-- Following In His Footsteps
-					q(45917),	-- Following the Scent
-					qh( 44203),	-- For the Cause
-					qa( 44202),	-- For the Cause
-					q(39763),	-- For Whom the Fel Tolls
-					q(39337),	-- Forlorn Filter
-					q(40024),	-- Foxflower Sample
-					q(41158),	-- Fragments of the Fjords
-					q(40176),	-- From Head to Toe
-					q(38518),	-- From One Master to Another
-					qg(105467, q(47046, {	-- Frost: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115081, Frost DK only)
-						["groups"] = {
-						},
-						["classes"] = {6},					 
-					})),
---[[ commented out until we get COORDINATES.					
-					qg(105081, q(47046, {	-- Frost: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115467, Frost DK only)
-						["groups"] = {
-						},
-						["classes"] = {6},				
-					})),
-				}),
---]]
-					qa( 45182),	-- Frost: The Twisted Twin
-					q(39332),	-- Furbolg Firewater
-					q(46779),	-- Further Advancement
 					q(46148),	-- Furthering Knowledge
-					qa( 47056),	-- Fury: The Folly of Levia Laurence
-					q(45413),	-- Gathering Information
-					q(39325),	-- Get Your Mix On
-					q(40193),	-- Getting the Kinks Out
-					q(40144),	-- Glielle
-					q(41177),	-- Goblin Archaeology
-					q(44337),	-- Goddess Watch Over You
-					q(44338),	-- Goddess Watch Over You
-					q(39344),	-- Going Underground
-					q(46744),	-- Greater Power for Greater Threats
-					q(42175),	-- Growing Power
-					qa( 47023),	-- Guardian: Aid of the Illidari
-					q(40561),	-- Halls of Valor: Jewel of the Heavens
-					q(39348),	-- Halls of Valor: The Prime Ingredient
-					q(40877),	-- Halls of Valor: Trigger Happy
-					q(39953),	-- Halls of Valor: Vision of Valor
-					q(38948),	-- Hard Times
-					q(40190),	-- Hardening the Hide
-					q(38501),	-- Hatecoil Hammerwork
-					qg(105467, q(47043, {	-- Havoc: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115081, Havoc DH only)
-						["groups"] = {
-						},
-						["classes"] = {12},					 
-					})),
---[[ commented out until we get COORDINATES.					
-					qg(105081, q(47043, {	-- Havoc: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115467, Havoc DH only)
-						["groups"] = {
-						},
-						["classes"] = {12},					 
-					})),
---]]	
-					q(39830),	-- Hellfire Citadel: Hellfire and Brimstone
-					q(39876),	-- Helping the Hunters
-					q(40870),	-- Here Comes the BOOM!
-					q(40539),	-- Hidden Intentions
-					qh( 46178),	-- Hiding In Plain Sight
-					qa( 46089),	-- Hiding In Plain Sight
-					q(47607),	-- High Fash-Djinn
-					q(41186),	-- History of Highmountain
-					qa( 47006),	-- Holy: The Bradensbrook Investigation
-					qa( 46078),	-- Holy: The Bradensbrook Investigation
-					q(40950),	-- Honoring Success
-					q(42774),	-- Hope Prevails
-					q(41966),	-- House Call
-					q(41009),	-- Hunter to Hunter
-					q(40952),	-- Hunter to Hunter
-					q(47595),	-- I Don't Need Them, But I'll Take Them
-					q(47594),	-- I'll Take Those, Thanks!
-					q(40136),	-- Immaculate Stonehide Leather
-					q(40151),	-- Immaculate Stormscale
-					qa( 44821),	-- In Dire Need
-					q(40132),	-- In One Piece
-					q(45570),	-- In Safer Hands
-					q(44663),	-- In the Blink of an Eye
-					q(44184),	-- In the Blink of an Eye
-					q(44448),	-- In the House of Light and Shadow
-					q(47604),	-- In the Land of Magic
-					q(42081),	-- In With the New
-					q(38807),	-- Infernal Brimstone Analysis
-					q(38806),	-- Infernal Brimstone Sample
-					q(39790),	-- Infernal Brimstone Theory
-					q(40995),	-- Injection of Power
-					q(40038),	-- Insane Ramblings
-					q(45992),	-- Investigate the Broken Shore
-					q(40865),	-- It's Not Rocket Science
-					q(40879),	-- It's On With Automatons
-					q(40556),	-- Jabrul Needs You
-					qa( 45906),	-- Jarod's Gift
-					q(40036),	-- Jeweled Spade Handle
-					qa( 45836),	-- Jorach's Calling
-					qh( 46326),	-- Jorach's Calling
-					q(38907),	-- Keepers of the Hammer
-					q(44555),	-- Khadgar's Discovery
-					q(39985),	-- Khadgar's Discovery
-					qa( 45905),	-- Kruul's Gift
-					q(40538),	-- Lapidary Lessons
-					q(40137),	-- Leather for Ske'rit
-					q(40177),	-- Leather Lady
-					q(40199),	-- Leather Legwork
-					q(46074),	-- Leather to Legendary
-					q(38959),	-- Left Behind
-					q(39702),	-- Legend of Black Rook Hold
-					q(47032),	-- Legion Threat: Azshara
-					qa( 47030),	-- Legion Threat: Dalaran Infiltration
-					qa( 47031),	-- Legion Threat: Highmountain
-					q(47033),	-- Legion Threat: Suramar
-					qa( 47035),	-- Legion Threat: The Missing Mage
-					qa( 47034),	-- Legion Threat: The Necromancer
-					qa( 47027),	-- Legion Threat: Val'sharah
-					q(40997),	-- Lethal Efficiency
-					q(39330),	-- Ley Hunting
-					q(38500),	-- Leysmithing Mastery
-					q(38777),	-- Leystone Deposit Sample
-					q(38523),	-- Leystone Hoofplates
-					q(38784),	-- Leystone Seam Sample
-					q(39340),	-- Lining the Crucible
-					q(38960),	-- Lining Them Up
-					q(40187),	-- Links in the Chain
-					q(38797),	-- Living Felslate Sample
-					q(38785),	-- Living Leystone Sample
-					q(42168),	-- Looking into the Darkness
-					q(41368),	-- Lost Mail
-					q(41411),	-- Lost Mail
-					q(47606),	-- Loyalty Is Its Own Reward
-					q(40960),	-- Luminous Pearl
-					q(39986),	-- Magic Message
-					q(40180),	-- Mail Men
-					q(40819),	-- Making Arrangements
-					q(41120),	-- Making Arrangements
-					q(40534),	-- Making the Cut
-					q(40533),	-- Making the Cut
-					q(40532),	-- Making the Cut
-					qa( 38206),	-- Making the Rounds
-					qa( 47039),	-- Marksmanship: The Twisted Twin
-					q(39954),	-- Mass Milling Techniques
-					q(48376),	-- Mass Primal Obliterum
-					q(44267),	-- Maw of Souls
-					q(39350),	-- Maw of Souls: A Hope in Helheim
-					q(43253),	-- Maw of Souls: Ancient Vrykul Legends
-					q(40560),	-- Maw of Souls: Spiriting Away
-					qh( 46827),	-- Meld Into the Shadows
-					qa( 46260),	-- Meld Into the Shadows
-					q(45185),	-- Message from the Shadows
-					q(38952),	-- Meticulous Precision
-					q(39326),	-- Missing Shipments
-					qa( 47005),	-- Mistweaver: The Bradensbrook Investigation
-					q(40864),	-- Modular Modifications
-					q(40215),	-- Mounting Made Easy
-					q(42594),	-- Move Like No Other
-					q(39944),	-- Mysterious Messages
-					q(44116),	-- Mystery at Citrine Bay
-					q(38515),	-- Nature Provides
-					qa( 45909),	-- Navarrogg's Gift
-					q(40384),	-- Needs of the Hunters
-					q(44265),	-- Neltharion's Lair
-					q(44264),	-- Neltharion's Lair
-					q(43554),	-- Neltharion's Lair
-					q(39335),	-- Neltharion's Lair: Potent Powder
-					q(42185),	-- Never Hunt Alone
-					q(42502),	-- No Sanctuary
-					q(42730),	-- Noggenfogger's Reasonable Request
-					q(38522),	-- Not Just Weapons and Armor
-					q(46722),	-- Nothing Up My Sleeve
-					q(44269),	-- Odyn's Challenge
-					q(44268),	-- Odyn's Challenge
-					q(43509),	-- Odyn's Challenge
-					q(43250),	-- Off to Court
-					q(45644),	-- Oh Doloria, My Sweet Doloria
 					q(41263),	-- Oh! So Powerful!
-					q(40881),	-- Oil Rags to Riches
-					q(39920),	-- On Azure Wings
-					q(40953),	-- On Eagle's Wings
-					q(39949),	-- Once a Scribe Like You
-					q(44215),	-- One More Thing...
-					q(45193),	-- One Step Behind
-					q(41164),	-- One Step Closer
-					q(40991),	-- Opening the Test Kitchen
-					q(40855),	-- Our Man in Azsuna
-					q(40056),	-- Our New Allies
-					q(39934),	-- Our New Allies
-					q(41967),	-- Out of the Darkness
-					q(41161),	-- Out of the Frying Pan
-					qa( 47058),	-- Outlaw: The Folly of Levia Laurence
-					q(40183),	-- Over Your Head
-					q(39718),	-- Paradise Lost
-					q(37666),	-- Picking a Fight
-					q(40201),	-- Playthings
-					q(40821),	-- Power Overwhelming
-					q(41542),	-- Preparation for the Hunt
-					q(48375),	-- Primal Obliterum
-					qa( 47022),	-- Protection: Aid of the Illidari
-					qa( 45412),	-- Protection: Aid of the Illidari
-					q(43470),	-- Pruning the Garden
-					qa( 45910),	-- Raest's Gift
-					q(40015),	-- Ragged Strips of Silk
-					q(40535),	-- Raising the Drogbar
-					q(40030),	-- Ram's-Horn Trowel
-					q(40198),	-- Rats!
-					q(40823),	-- Rebuilding the Council
-					q(45251),	-- Redundancy
-					q(41540),	-- Rendezvous with the Courier
-					q(40419),	-- Rescue Mission
-					qa( 47004),	-- Restoration: The Bradensbrook Investigation
-					qa( 47003),	-- Restoration: The Bradensbrook Investigation
-					q(40860),	-- Resupplying the Line
-					q(47052),	-- Retribution: Fate of the Tideskorn
-					q(46290),	-- Return of the Archmage
-					q(42074),	-- Return of the Light
-					q(39338),	-- Return the Filter
-					q(41806),	-- Return to Jace
-					q(45238),	-- Return to Karazhan: Cubic Cynosure
-					q(44917),	-- Return to Karazhan: The Tower of Power
-					q(41221),	-- Return to Mardum
-					q(41033),	-- Return to Mardum
-					qa( 42815),	-- Return to the Broken Shore
-					qh( 38904),	-- Return to the Broken Shore
-					q(43007),	-- Return to the Chamber of Shadows
-					q(40994),	-- Right Tools for the Job
-					q(39905),	-- Ringing True
-					q(42663),	-- Rise, Champions
-					q(42608),	-- Rise, Champions
-					q(42139),	-- Rise, Champions
-					q(42128),	-- Ritual Reagents
-					q(43254),	-- Ritual Ruination
-					q(39951),	-- Roseate Essence
-					q(45192),	-- Runes of Rending
-					q(38947),	-- Runic Catgut
-					q(39952),	-- Sallow Essence
-					q(40152),	-- Scales for Ske'rit
-					q(44204),	-- Seal their Fates
-					q(47864),	-- Sealing Fate: Additional Marks of Honor
-					q(43894),	-- Sealing Fate: Extraneous Order Resources
-					q(43895),	-- Sealing Fate: Gold
-					q(43897),	-- Sealing Fate: Immense Fortune of Gold
-					q(47851),	-- Sealing Fate: Marks of Honor
-					q(43892),	-- Sealing Fate: Order Resources
-					q(43896),	-- Sealing Fate: Piles of Gold
-					q(47865),	-- Sealing Fate: Piles of Marks of Honor
-					q(43893),	-- Sealing Fate: Stashed Order Resources
-					q(38966),	-- Secret Silkweaving Methods
-					q(45187),	-- Secrets in the Underbelly
-					q(38507),	-- Secrets of Leysmithing
-					q(42872),	-- Securing the Way
-					q(42000),	-- Seeker of Truth
-					q(42770),	-- Seeking Guidance
-					q(45630),	-- Servant to No One
-					q(38955),	-- Sew Far, Sew Good
-					q(38944),	-- Sew It Begins
-					q(40146),	-- Seymour and Agnes
-					qa( 47042),	-- Shadow: The Twisted Twin
-					q(47592),	-- Shine Bright Like a Diamond
-					q(40880),	-- Short Circuit
-					q(42017),	-- Shrine of the Truthguard
-					q(39847),	-- Sign This
-					q(40140),	-- Ske'rit's Leather Handbook
-					q(40155),	-- Ske'rit's Scale-Skinning Suggestions
-					q(39958),	-- Skin Deep
-					q(39931),	-- Smashing Herbs
-					q(38949),	-- So You Think You Can Sew
-					q(40558),	-- Socket to Me
-					q(39874),	-- Some Enchanted Evening
-					q(47148),	-- Something Different
-					q(40014),	-- Spayed by the Spade
-					q(44581),	-- Spicing Things Up
-					q(43829),	-- Spy vs. Spy
-					q(40034),	-- Starlight Rosedust
-					q(41574),	-- Stolen Thunder
-					q(40131),	-- Stonehide Leather Sample
-					qa( 44700),	-- Stormheim
-					qh( 39864),	-- Stormheim
-					qa( 39735),	-- Stormheim
-					qh( 44701),	-- Stormheim
-					q(40179),	-- Stormheim Savagery
-					q(40141),	-- Stormscale Sample
-					q(44411),	-- Strange Humming Crystal
-					q(38499),	-- Strange New Ores
-					qg(105467, q(47048, {	-- Subtlety: The Thieving Apprentice (QG in Dalaran, additional QG 115081 Archmage Kalec, Subtlety Rogue only)
-						["groups"] = {
-						},
-						["classes"] = {4},					 
-					})),					
---[[ commented out until we get COORDINATES.					
-					qg(105081, q(47048, {	-- Subtlety: The Thieving Apprentice (QG in Dalaran, additional QG 115467 Archmage Kalec, Subtlety Rogue only)
-						["groups"] = {
-						},
-						["classes"] = {4},					 
-					})),
---]]					
-					qg(105467, q(47047, {	-- Survival: The Thieving Apprentice (QG in Dalaran, additional QG 115081 Archmage Kalec, Survival Hunter only)
-						["groups"] = {
-						},
-						["classes"] = {3},					 
-					})),
---[[ commented out until we get COORDINATES.					
-					qg(105081, q(47047, {	-- Survival: The Thieving Apprentice (QG in Dalaran, additional QG 115467 Archmage Kalec, Survival Hunter only)
-						["groups"] = {
-						},
-						["classes"] = {3},					 
-					})),
---]]					
-					q(40531),	-- Swift Vengeance
-					q(38957),	-- Taking Inspiration
-					qa( 43726),	-- Tales of the Broken Isles
-					q(40184),	-- Tauren Tanning
-					q(42703),	-- Technical Wizardry
-					q(40025),	-- Teeny Bite Marks
-					q(39346),	-- Testing the Calibration
-					q(39334),	-- Thanks for Flasking
-					q(40039),	-- Tharillon's Fall
-					q(45916),	-- The Acolyte Imperiled
-					q(43349),	-- The Aegis of Aggramar
-					q(42593),	-- The Arcane Way
-					q(44263),	-- The Arcway
-					q(44172),	-- The Arena Calls
-					q(43373),	-- The Best and Brightest
-					q(43014),	-- The Big Bad Wolfe
-					q(44041),	-- The Bloody Truth
-					q(39817),	-- The Brimstone's Secret
-					q(42377),	-- The Brother's Trail
-					q(39943),	-- The Burdens of Hunting
-					q(40714),	-- The Call To War
-					q(39933),	-- The Card Shark
-					q(41114),	-- The Champion's Return
-					q(40142),	-- The Core of the Stormscale
-					qa( 42416),	-- The Council is in Session
-					q(47000),	-- The Council's Call
-					q(49474),	-- The Cursed Shard
-					q(40961),	-- The Dalaran Fountain
-					q(42476),	-- The Deadwind Site
-					q(40849),	-- The Dreadblades
-					q(41036),	-- The Dreadlord's Prize
-					q(39427),	-- The Eagle Spirit's Blessing
-					q(40042),	-- The Emerald Nightmare: Felwort Mastery
-					q(39351),	-- The Emerald Nightmare: Rage Fire
-					q(40159),	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
-					q(42005),	-- The End of the Saga
-					q(45420),	-- The Eye of Aman'Thul
-					q(38901),	-- The Felsmiths
-					q(44375),	-- The Final Blade
-					q(38963),	-- The Final Lesson?
-					q(40202),	-- The Final Lessons
-					q(40839),	-- The Final Shadow
-					qa( 11997),	-- The Frozen Flame
-					q(46340),	-- The Gates Are Closed
-					q(40035),	-- The Gentlest Touch
 					q(46273),	-- The Giver of Quests
-					q(45904),	-- The God-Queen's Gift
-					q(14166),	-- The Grateful Dead
-					q(41112),	-- The Great Akazamzarak
-					q(46071),	-- The Hammer of Dalaran
-					q(40731),	-- The Heart of the Dreadscar
-					qa( 45416),	-- The Highlord's Return
-					q(38513),	-- The Highmountain Smiths
-					q(38888),	-- The Highmountain Tauren
-					q(41119),	-- The Hunt
-					q(39247),	-- The Hunt
-					q(41415),	-- The Hunter's Call
-					qa( 45902),	-- The Imp Mother's Gift
-					q(37689),	-- The Imposter
-					q(39948),	-- The Ink Flows
-					q(43179),	-- The Kirin Tor of Dalaran
-					q(39729),	-- The Knowledge of Black Rook
-					q(39875),	-- The Last Few
-					q(40938),	-- The Light and the Void
-					q(41625),	-- The Light's Wrath
-					q(39733),	-- The Lone Mountain
-					q(44276),	-- The Lord of Black Rook Hold
-					q(44277),	-- The Lord of Black Rook Hold
-					q(42479),	-- The Mage Hunter
-					qa( 46200),	-- The Matter Resolved... For Now...
-					q(38502),	-- The Methods of the Nightfallen
-					q(40032),	-- The Missing Page
-					q(40858),	-- The Missing Pieces
-					q(42231),	-- The Mysterious Paladin
-					q(47603),	-- The Mysterious, Magnificent Al'Abas
-					q(40197),	-- The Necessary Materials
-					q(40729),	-- The New Blood
-					q(42011),	-- The Nexus Vault
-					q(41631),	-- The Nexus Vault
-					q(45207),	-- The Nightborne Apprentice
-					q(38967),	-- The Nightborne Connection
-					q(45177),	-- The Nighthold
-					q(41113),	-- The Only Way to Travel
-					q(38962),	-- The Path to Suramar City
-					q(40028),	-- The Pied Picker
-					qh( 46322),	-- The Pirate's Bay
-					qa( 45833),	-- The Pirate's Bay
-					qh( 39959),	-- The Plot Thickens
-					qa( 39955),	-- The Plot Thickens
-					q(40712),	-- The Power Possessed
-					q(41156),	-- The Power Possessed
-					q(40816),	-- The Power to Survive
-					q(40814),	-- The Power to Survive
-					q(39342),	-- The Price of the Black Market
-					q(49445),	-- The Prime Exchange
-					q(40989),	-- The Prodigal Sous Chef
-					q(39681),	-- The Properties of Leystone
-					q(43249),	-- The Raven's Eye
-					q(41171),	-- The Reliquary Calls
-					q(38958),	-- The Right Color
-					q(41192),	-- The Right Path
-					q(43013),	-- The School of Roguery
-					qa( 39566),	-- The Search for Knowledge
-					q(38376),	-- The Search for the Highlord
-					q(41919),	-- The Shadows Reveal
-					q(42120),	-- The Silver Hand
-					q(40716),	-- The Sixth
-					q(40037),	-- The Spade's Blade
-					q(40385),	-- The Spear in the Shadow
+					q(44115),	-- Welcome to Legion!
+					q(43473),	-- Experimental Potion: Test Subjects Needed
+					q(43474),	-- Experimental Potion: Test Subjects Needed
+					q(43475),	-- Experimental Potion: Test Subjects Needed
+					q(43477),	-- Experimental Potion: Test Subjects Needed
+					q(43478),	-- Experimental Potion: Test Subjects Needed
+					q(49472)	-- A Titanic Effort
+					q(49473)	-- A Titanic Effort
 					q(47793),	-- The Spoiled Sample
-					q(40890),	-- The Tears of Elune
-					q(41124),	-- The Tirisgarde Reborn
-					q(40684),	-- The Tome of Blighted Implements
-					q(43984),	-- The Tome Opens Again
-					q(39731),	-- The Tranquil Forest
-					qa( 42504),	-- The Unseen Blade
-					qh( 42627),	-- The Unseen Blade
-					q(44174),	-- The Very Best
-					q(41957),	-- The Vindicator's Plea
-					qh( 38307),	-- The Warchief Beckons
-					q(42422),	-- The Wardens
-					q(38950),	-- The Wayward Tailor
-					qa( 45188),	-- The Wisdom of the Council
-					q(44175),	-- The World Awaits
-					q(43479),	-- The World is Not Enough
-					q(48069),	-- The Wrench Calls
-					q(39327),	-- There's a Scribe for That
-					q(38945),	-- This Should Be Simple... Right?
-					q(44310),	-- Thrice the Power					
-					q(42684),	-- Throwing SI:7 Off the Trail
-					q(39878),	-- Thunder Struck
-					qa( 46127),	-- Thwarting the Twins
-					q(46128),	-- Time for a Recharge
-					q(43331),	-- Time to Collect
-					q(40210),	-- Time Well Spent
-					q(45172),	-- To Battle!
-					q(40547),	-- To Dalaran, With Love
-					q(42002),	-- To Northrend
-					qa( 46810),	-- To the Forge It Goes...
-					qh( 46946),	-- To the Forge It Goes...
-					q(40182),	-- Too Good To Pass Up
-					q(40988),	-- Too Many Cooks
-					q(48457),	-- Tracking Quest
-					q(39987),	-- Trail of Echoes
-					q(41922),	-- Traitor!
-					q(43535),	-- Translation: Danger!
-					q(40529),	-- Truly Outrageous
-					q(39861),	-- Tying Up Loose Ends
-					q(40495),	-- Ulthalesh, the Deadwind Harvester
-					q(37494),	-- Under Cover of Darkness
-					q(40143),	-- Unfinished Treatise on the Properties of Stormscale
-					qa( 47057),	-- Unholy: The Folly of Levia Laurence
-					q(43341),	-- Uniting the Isles
-					q(45727),	-- Uniting the Isles
-					q(41125),	-- Unlocked Potential
 					q(47791),	-- Unsettled Power
 					q(47790),	-- Unsettled Power
-					q(41180),	-- Unspeakable Power
-					qa( 43929),	-- Vantus Mastery
-					q(43556),	-- Vault of the Wardens
-					q(44260),	-- Vault of the Wardens
-					q(44261),	-- Vault of the Wardens
-					q(39341),	-- Vault of the Wardens: Demon's Bile
-					q(43379),	-- Velen's Vision
-					q(40249),	-- Vengeance Will Be Ours
-					q(41863),	-- Vengeance Will Be Ours
-					qa( 46314),	-- Vengeance: Seeking Kor'vas
-					q(40178),	-- Vestment Opportunity
-					q(44259),	-- Violet Hold
-					q(44058),	-- Volpin the Elusive
-					q(40031),	-- Vrykul Herblore
-					q(47591),	-- Wanna Buy a Lamp?
-					q(44487),	-- Waterlogged Tome
-					q(38576),	-- We Meet at Light's Hope
-					q(39336),	-- We Need More Powder!
-					q(40408),	-- Weapons of Legend
-					q(40618),	-- Weapons of Legend
-					qg(106655, qh(48054)),	-- Weigh Anchor (Blacksmithing)
-					qa( 48053),	-- Weigh Anchor
-					q(44115),	-- Welcome to Legion!
-					q(40415),	-- Well Spent Time
-					q(43015),	-- What Winstone Suggests
-					q(45813),	-- Where Art Thou, My Sweet
-					q(43469),	-- Where In the World is Mathias?
-					qa( 45190),	-- Where it's Thinnest
-					q(38956),	-- Where's Lyndras Again?
-					q(38964),	-- Where's Lyndras Now?
-					q(39605),	-- Where's Lyndras: Downward Spiral
-					q(39667),	-- Where's Lyndras: Leyflame Larceny
-					qh( 39602),	-- Where's Lyndras: Sewer Sleuthing
-					q(38954),	-- Where's Lyndras?
-					q(46206),	-- Whispers of a Frightened World
-					q(47330),	-- Whispers of a Frightened World
-					q(46835),	-- Whispers of a Frightened World Tracking
-					q(40868),	-- Wibbly-Wobbly, Timey-Wimey
-					q(45179),	-- Win the Crowd
-					qa( 47019),	-- Windwalker: Rumblings Near Feltotem
-					q(40064),	-- Woody Seed Cluster
-					q(44195),	-- Workorders for Armaments
-					q(41174),	-- Worth Its Weight
-					q(45908),	-- Xylem's Gift
-					q(44006),	-- Your Fullest Potential														
-				}),	
+]]--
 				n(-16, { 	-- Rares 
 					o(244965, { -- Sheddle's Chest
 						["groups"] = {
@@ -6218,34 +8063,7 @@ _.Zones =
 					}),
 					n(-17, { --  Quests
 						["groups"] = {
-							--[[ STUCK RETRIEVING DATA
-							q(43473, { -- Experimental Potion: Test Subjects Needed
-								["groups"] = {
-								},
-								["qg"] = 110642, -- Fizzi Liverzapper
-							}),
-							q(43475, { -- Experimental Potion: Test Subjects Needed
-								["groups"] = {
-								},
-								["qg"] = 110642, -- Fizzi Liverzapper
-							}),
-							q(43478, { -- Experimental Potion: Test Subjects Needed
-								["groups"] = {
-								},
-								["qg"] = 110642, -- Fizzi Liverzapper
-							}),
-							--]]
-							q(43474, { -- Experimental Potion: Test Subjects Needed
-								["groups"] = {
-								},
-								["qg"] = 110642, -- Fizzi Liverzapper
-							}),
 							q(43476, { -- Experimental Potion: Test Subjects Needed
-								["groups"] = {
-								},
-								["qg"] = 110642, -- Fizzi Liverzapper
-							}),
-							q(43477, { -- Experimental Potion: Test Subjects Needed
 								["groups"] = {
 								},
 								["qg"] = 110642, -- Fizzi Liverzapper
@@ -6350,4 +8168,4 @@ _.Zones =
 			["description"] = "|cff66ccffDalaran moves to the Broken Isles as the mages of the Kirin Tor want to keep close to the events of the Burning Legion's third invasion from the Tomb of Sargeras, the fallen Titan and ravager of Worlds. The floating city receives several upgrades and can be found floating in the southern Broken Isles, south of Suramar and southeast of Azsuna. |r",				
 		}),
 	}),
-};
+};;

@@ -29,6 +29,9 @@ _.Zones =
 						i(117499),
 						i(117500),
 					}),
+					q(44488, {	-- Cursed Tome
+						["qg"] = 258980, -- Cursed Tome
+					}),
 					qa(33837,  {  -- Darkness Falls
 						i(113175),
 						i(113174),

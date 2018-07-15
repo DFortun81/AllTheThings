@@ -51,7 +51,9 @@ _.ClassHalls =
 				q(46237),	-- Bloodbringer's Missive
 				q(41784),	-- Borrowed Time
 				q(44228),	-- Champion Armaments
-				q(41750),	-- Champion: Calydus
+				q(41750, {	-- Champion: Calydus
+					["qg"] = 101097, -- Calydus
+				}),
 				q(41756),	-- Champion: Eredar Twins
 				q(41753),	-- Champion: Jubeka Shadowbreaker
 				q(46316),	-- Champion: Kanrethad Ebonlocke
@@ -112,7 +114,14 @@ _.ClassHalls =
 				q(42601),	-- Tech It Up A Notch
 				q(44263),	-- The Arcway
 				q(46242),	-- The Dreadlord's Calling
-				q(40731),	-- The Heart of the Dreadscar
+				q(40731, {	-- The Heart of the Dreadscar
+					["qg"] = 101097, -- Calydus
+					["sourceQuests"] = {
+						40712,	-- The Power Possessed
+						41156,	-- The Power Possessed
+						42125,	-- Dark Whispers
+					},
+				}),
 				q(44276),	-- The Lord of Black Rook Hold
 				q(44277),	-- The Lord of Black Rook Hold
 				qa( 46241),	-- The Minions of Hel'nurath
@@ -120,13 +129,24 @@ _.ClassHalls =
 				q(40824),	-- The Path of the Dreadscar
 				q(41156),	-- The Power Possessed
 				q(40712),	-- The Power Possessed
-				q(40684),	-- The Tome of Blighted Implements
-				q(43984),	-- The Tome Opens Again
+				q(40684, {	-- The Tome of Blighted Implements
+					["qg"] = 101097, -- Calydus
+					["sourceQuests"] = {
+						40685,	-- Into the Mouth of the Nether
+						40729,	-- The New Blood
+					},
+				}),
+				q(43984, {	-- The Tome Opens Again
+					["qg"] = 101097, -- Calydus
+				}),
 				q(46243),	-- The Wrathsteed of Xoroth
 				q(45172),	-- To Battle!
 				q(45027),	-- To the Broken Shore
 				q(42602),	-- Troops in the Field
-				qart(qg(101097, q(40495))),	-- Ulthalesh, the Deadwind Harvester
+				qart(q(40495, {	-- Ulthalesh, the Deadwind Harvester
+						["qg"] = 101097, -- Calydus
+						["sourceQuests"] = { 42939 }, -- Tracking Down Uthalesh
+				})),
 				q(44227),	-- Unleashing our Wrath
 				q(44682),	-- Unparalleled Power
 				q(44260),	-- Vault of the Wardens

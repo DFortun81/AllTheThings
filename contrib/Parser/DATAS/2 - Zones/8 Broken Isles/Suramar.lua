@@ -963,8 +963,26 @@ _.Zones =
 					q(42395),	-- Signaling Trouble
 					q(38649),	-- Silence in the City
 					q(42836),	-- Silkwing Sabotage
-					q(40140),	-- Ske'rit's Leather Handbook
-					q(40155),	-- Ske'rit's Scale-Skinning Suggestions
+					q(40140, {	-- Ske'rit's Leather Handbook
+						["groups"] = {
+							sp(194819),	-- Skinning Technique: Stonehide Leather (Rank 3)
+						},
+						["qg"] = 98720, -- Ske'rit
+						["sourceQuests"] = {
+							40138,	-- Trial of the Crusader: Hides of Legend
+							40139,	-- Halls of Valor: The Hide of Fenryr
+						},
+					}),
+					q(40155, {	-- Ske'rit's Scale-Skinning Suggestions
+						["groups"] = {
+							sp(194822),	-- Skinning Technique: Stormscale (Rank 3)
+						},
+						["qg"] = 98720, -- Ske'rit
+						["sourceQuests"] = {
+							40153,	-- Return to Karazhan: Scales of Legend
+							40154,	-- Eye of Azshara: The Scales of Serpentrix
+						},
+					}),
 					q(38526),	-- Smith Under Fire
 					q(44727),	-- Smuggled!
 					q(40348),	-- Something in the Water

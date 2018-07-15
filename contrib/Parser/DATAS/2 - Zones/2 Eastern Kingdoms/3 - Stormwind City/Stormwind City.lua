@@ -702,13 +702,19 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa( 8763)),	-- The Hero of the Day
 					qg(, qh( 8799)),	-- The Hero of the Day
 					qg(, qa(43471)),	-- The Historians
-					qg(, q(37689)),	-- The Imposter
 					qg(, qa( 7497)),	-- The Journey Has Just Begun
 					qg(, qa(26183)),	-- The King's Cider
 					qg(, q(29547)),	-- The King's Command
 					qg(, qa(25157)),	-- The Latest Fashion!
 					qg(, qa(40519)),	-- The Legion Returns
 --]]					
+					q(37689, {	-- The Imposter
+						["groups"] = {
+							i(139739),	-- Chestguard of the Uncrowned
+						},
+						["qg"] = 111049, -- Master Mathias Shaw
+						["classes"] = { 4 },
+					}),
 					qg(107574, qa( 7782, {		-- The Lord of Blackrock
 						i(19366),	-- Master Dragonslayer's Orb
 					})),

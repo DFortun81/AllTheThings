@@ -18,8 +18,8 @@ _.Zones =
 					qg(66522, qh(31980)),	-- The Returning Champion
 					qg(66522, qa(31976)),	-- The Returning Champion
 				}),
---[[
-				n(-17, { 	-- Quests				
+				n(-17, { 	-- Quests
+--[[			
 					qart(qg(100729, q(40933, {	-- A Grisly Task
 						["groups"] = {
 						},
@@ -155,16 +155,6 @@ _.Zones =
 						["classes"] = {9},
 					}))),
 					qg(114310, q(44733)),	-- The Power of Corruption
-					qart(qg(101282, q(40712, {	-- The Power Possessed (map blank
-						["groups"] = {
-						},
-						["classes"] = {9},
-					}))),
-					qart(qg(101282, q(41156, {	-- The Power Possessed (map blank
-						["groups"] = {
-						},
-						["classes"] = {9},
-					}))),
 					o(254007, {	-- Executioner's Altar
 						qart(q(44154, {	-- The Rite of the Executioner
 							["groups"] = {
@@ -181,6 +171,24 @@ _.Zones =
 						})),
 					}),
 --]]					
+					q(40712, {	-- The Power Possessed
+						["qg"] = 101282, -- Revil Kost
+						["classes"] = { 9 },
+						["sourceQuests"] = {
+							40623,	-- The Dark Riders
+							41155,	-- The Dark Riders
+							42168,	-- Looking into the Darkness
+						},
+					}),
+					q(41156, {	-- The Power Possessed
+						["qg"] = 101282, -- Revil Kost
+						["classes"] = { 9 },
+						["sourceQuests"] = {
+							40623,	-- The Dark Riders
+							41155,	-- The Dark Riders
+							42168,	-- Looking into the Darkness
+						},
+					}),
 					ql(q(30113, {	-- Victory in the Depths
 						["groups"] = {
 							i(77947),	-- The Sleeper
@@ -190,12 +198,10 @@ _.Zones =
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 30109 },	-- Blood of the Betrayer
 					})),
---[[
-					o(258978, {	-- Waterlogged Tome
-						q(44487),	-- Waterlogged Tome
-					}),
+					o(258978, 	-- Waterlogged Tome
+						q(44487)	-- Waterlogged Tome
+					),
 				}),
---]]			
 				n(-16, {	-- Rares
 					n(7371, {	-- Deadwind Mauler
 						dr(0.5, i(16246)),	-- Formula: Enchant Bracer - Superior Strength

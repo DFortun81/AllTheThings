@@ -288,17 +288,16 @@ _.Zones =
 					qg(256, qa(  114)),	-- The Escape
 					qg(240, qa(   62)),	-- The Fargodeep Mine
 					qg(240, qa(   76)),	-- The Jasperlode Mine
-					qart(qg(107979, qa(42504, {	-- The Unseen Blade
-						["groups"] = {
-						},
-						["classes"] = {4}, -- Rogue
-					}))),
-					qart(qg(107979, qh(42627, {	-- The Unseen Blade
-						["groups"] = {
-						},
-						["classes"] = {4}, -- Rogue (wowhead also lists hunter?????)
-					}))),
 --]]					
+
+					qart(qa(42504, {	-- The Unseen Blade
+						["qg"] = 107979, -- Garona Halforcen
+						["classes"] = { 4 },
+					})),
+					qart(qh(42627, {	-- The Unseen Blade
+						["qg"] = 107979, -- Garona Halforcen
+						["classes"] = { 4 },
+					})),
 					o(156561, {	-- Wanted Poster (add'l object QG 68)
 						qa(  176, { -- Wanted: "Hogger"
 							i(  6085),	-- Footman Tunic

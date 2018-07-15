@@ -1195,7 +1195,6 @@ _.Zones =
 							["sourceQuests"] = { 46246 }, -- Strike Them Down
 							["classes"] = { 11 },  -- Druid
 						}),
-					
 					}),
 					-- Druid Champions of Legionfall Quest Chain Parts
 					{
@@ -1229,6 +1228,42 @@ _.Zones =
 						["classes"]= { 11 },	-- Druid
 						["lvl"] = 110,
 					},
+					q(47032, {	-- Legion Threat: Azshara
+						["qg"] = 116302, -- Archmage Khadgar
+					}),
+					qa(47030, {	-- Legion Threat: Dalaran Infiltration
+						["qg"] = 116302, -- Archmage Khadgar
+					}),
+					qa(47031, {	-- Legion Threat: Highmountain
+						["qg"] = 116302, -- Archmage Khadgar
+					}),
+					q(47033, {	-- Legion Threat: Suramar
+						["qg"] = 116302, -- Archmage Khadgar
+					}),
+					qa(47035, {	-- Legion Threat: The Missing Mage
+						["qg"] = 116302, -- Archmage Khadgar
+					}),
+					qa(47034, {	-- Legion Threat: The Necromancer
+						["qg"] = 116302, -- Archmage Khadgar
+					}),
+					qa(47027, {	-- Legion Threat: Val'sharah
+						["qg"] = 116302, -- Archmage Khadgar
+					}),
+					qh(46827, {	-- Meld Into the Shadows
+						["qg"] = 117259, -- Lord Jorach Ravenholdt
+						["classes"] = { 4 },
+					}),
+					q(42074, {	-- Return of the Light
+						["qg"] = 106011, -- Jace Darkweaver
+						["classes"] = { 5 },
+					}),
+					q(47000, {	-- The Council's Call
+						["qg"] = 116302, -- Archmage Khadgar
+						["sourceQuests"] = {
+							45030,	-- The Fel-Etched Bone
+							46765,	-- The Broken Shore: Investigating the Legion
+						},
+					}),
 					--[[
 					n(-34, {	-- World Quests
 						q(46209),	-- A Flare In The Dark
@@ -1467,13 +1502,6 @@ _.Zones =
 					q(45634),	-- Kvaldir on Call
 					q(45614),	-- Lady Remor'za
 					q(46688),	-- Leather of the Ancients
-					q(47032),	-- Legion Threat: Azshara
-					qa( 47030),	-- Legion Threat: Dalaran Infiltration
-					qa( 47031),	-- Legion Threat: Highmountain
-					q(47033),	-- Legion Threat: Suramar
-					qa( 47035),	-- Legion Threat: The Missing Mage
-					qa( 47034),	-- Legion Threat: The Necromancer
-					qa( 47027),	-- Legion Threat: Val'sharah
 					q(46286),	-- Legionfall Supplies
 					q(46333),	-- Livin' on the Ledge
 					qa( 47112),	-- Lost Souls
@@ -1488,7 +1516,6 @@ _.Zones =
 					q(44267),	-- Maw of Souls
 					q(43253),	-- Maw of Souls: Ancient Vrykul Legends
 					q(43574),	-- Maw of Souls: Maul of the Dead
-					qh( 46827),	-- Meld Into the Shadows
 					qa( 46260),	-- Meld Into the Shadows
 					q(45185),	-- Message from the Shadows
 					q(45345),	-- Mischievous Sprites
@@ -1529,7 +1556,6 @@ _.Zones =
 					q(38794),	-- Rethu's Sacrifice
 					q(46267),	-- Return of the Battlelord
 					q(42449),	-- Return of the Four Horsemen
-					q(42074),	-- Return of the Light
 					q(46266),	-- Return of the Slayer
 					q(45331),	-- Return to Acherus
 					q(44917),	-- Return to Karazhan: The Tower of Power
@@ -1575,7 +1601,6 @@ _.Zones =
 					q(40987),	-- The Call of Vengeance
 					q(40935),	-- The Call of Vengeance
 					q(46773),	-- The Command Center
-					q(47000),	-- The Council's Call
 					q(40740),	-- The Dead and the Damned
 					q(47127),	-- The Deceiver
 					q(47126),	-- The Deceiver
