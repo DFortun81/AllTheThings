@@ -659,7 +659,7 @@ _.Zones =
 								},
 								["qg"] = 25702,	-- Mordle Cogspinner
 								["sourceQuest"] = 11708,
-								["isBreadcrumb"] = true,
+								--["isBreadcrumb"] = true,
 							}),
 							q(11571, {	--  Learning to Communicate
 								["groups"] = {
