@@ -659,7 +659,7 @@ _.Zones =
 								},
 								["qg"] = 25702,	-- Mordle Cogspinner
 								["sourceQuest"] = 11708,
-								--["isBreadcrumb"] = true,
+								["isBreadcrumb"] = true,
 							}),
 							q(11571, {	--  Learning to Communicate
 								["groups"] = {
@@ -1173,13 +1173,13 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25736,	-- Supply Master Taz'ishi
-								--["isBreadcrumb"] = true,
+								["isBreadcrumb"] = true,
 							}),
 							q(11571, {	--  Learning to Communicate
 								["groups"] = {
 								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
-								["sourceQuests"] = {11704},
+								["sourceQuests"] = { 11704 },
 							}),
 							q(11559, {	--  Winterfin Commerce
 								["groups"] = {
