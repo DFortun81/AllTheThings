@@ -520,11 +520,11 @@ _.Zones =
 							qa(28749, {	-- The Battle for Andorhal
 								["qg"] = 49635, -- War-Mage Erallier
 							}),
-							i(59143, { -- Weather-Beaten Coin
-								q(26617, { -- An Old Sea Dog
-									["qg"] = 43454 -- "Good-Boy" Bruce
-								}),
-							}),
+							{
+								["qg"] = 43454,	-- "Good-Boy" Bruce
+								["itemID"] = 59143,	-- Weather-Beaten Coin
+								["questID"] = 26617,	-- An Old Sea Dog
+							},
 							q(1036, {   -- Avast Ye, Scallywag
 								["qg"] = 2545, -- "Pretty Boy" Duncan
 							}),

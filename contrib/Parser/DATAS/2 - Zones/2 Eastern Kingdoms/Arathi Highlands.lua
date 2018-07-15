@@ -417,7 +417,7 @@ _.Zones =
 							i( 59177),	-- Captain Nials' Belt
 							i(131477),	-- Boots of the Refuge Captain
 							i(131478),	-- Battle Rider Belt
-						})
+						}),
 					}),
 					qa(26035, {	-- Worth Its Weight in Gold
 						["groups"] = {

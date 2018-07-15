@@ -724,18 +724,25 @@ _.Zones =
 						-- sz(775, 6, { -- Black Tooth Hovel
 						-- }),
 						sz(775, 7, { -- Blackrock Stronghold
-							i(142344, {	-- Broken Axe Blade
-								["groups"] = {
-									q(44926, {	-- A Familiar Axe to Grind
-										q(44927, {	-- Worth Its Weight in Steel
-											i(142346, {	-- Plans: Bleakwood Hew
-												i(12769),	-- Bleakwood Hew
-											}),
-										}),
-									}),
+							{
+								["qgs"] = {
+									48201,	-- Blackrock Sergeant
+									7027,	-- Blackrock Slayer
+									7025,	-- Blackrock Soldier
+									48120,	-- Firegut Reaver
+									48118,	-- Smolderthorn Shaman
 								},
+								["itemID"] = 142344,	-- Broken Axe Blade
+								["questID"] = 44926,	-- A Familiar Axe to Grind
 								["requiredSkill"] = 164,	-- Blacksmithing
-								["description"] = "The Broken Axe Blade is dropped by the mobs in and around Blackrock Stronghold in Burning Steppes.|r",
+							},
+							q(44927, {	-- Worth Its Weight in Steel
+								["g"] = {
+									i(142346),	-- Plans: Bleakwood Hew
+								},
+								["qg"] = 115805,	-- Hoddruc Bladebender
+								["sourceQuests"] = { 44926 },	-- A Familiar Axe to Grind
+								["requiredSkill"] = 164,	-- Blacksmithing
 							}),
 						}),
 						-- sz(775, 8, { -- The Whelping Downs

@@ -48,11 +48,12 @@ _.Zones =
 						["qg"] = 15295,	-- Well Watcher Solanian
 						["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 					}),
-					n(15298, {	-- Tainted Arcane Wraith
-						i(20483, {	-- Tainted Arcane Sliver
-							qh(8338),	-- Tainted Arcane Sliver
-						}),
-					}),
+					{
+						["qg"] = 15298,	-- Tainted Arcane Wraith
+						["races"] = HORDE_ONLY,
+						["itemID"] = 20483,	-- Tainted Arcane Sliver
+						["questID"] = 8338,	-- Tainted Arcane Sliver
+					},
 					qh(37442, {	-- The Shrine of Dath'Remar
 						["groups"] = {
 						},

@@ -366,15 +366,13 @@ _.Zones =
 						["qg"] = 13840,	-- Warmaster Laggrond
 						["sourceQuests"] = { 7165 },	-- Earned Reverence
 					})),
-					i( 61310, {	-- Arcane Remnant
-						qh(27480, {	-- Ley Energies
-							["groups"] = {
-							},
-							["qg"] = 45728,	-- Arcane Remnant
-							["sourceQuests"] = { 27483 },
-							["description"] = "This quest is part of a chain that begins in Silverpine Forest.  The quest counts towards Loremaster, but not the Hillsbrad or Silverpine zone quest achievements.",
-						}),
-					}),
+					{
+						["qg"] = 45728,	-- Arcane Remnant
+						["itemID"] = 61310,	-- Arcane Remnant
+						["questID"] = 27480,	-- Ley Energies
+						["description"] = "This quest is part of a chain that begins in Silverpine Forest.  The quest counts towards Loremaster, but not the Hillsbrad or Silverpine zone quest achievements.",
+						["sourceQuests"] = { 27483 },	-- Practical Vengeance
+					},
 					qh(28206, {	-- Little Girl Lost
 						["groups"] = {
 						},
@@ -393,16 +391,17 @@ _.Zones =
 						["qg"] = 13817,	-- Voggah Deathgrip
 						["sourceQuests"] = { 28587 },	-- Aid of the Frostwolf
 					}),
-					i( 63090, {	-- Muckgill's Flipper
-						qh(28154, {	-- Muckgill's Flipper or Something...
-							["groups"] = {
-								i(65691),	-- Floppy Shoulderguards
-								i(65669),	-- Keyton's Sash
-								i(131691),	-- Keyton's Mail Pauldrons
-							},
-							["qg"] = 47759,	-- Muckgill
-						}),
-					}),
+					{
+						["qg"] = 47759,	-- Muckgill
+						["races"] = HORDE_ONLY,
+						["itemID"] = 63090,	-- Muckgill's Flipper
+						["questID"] = 28154,	-- Muckgill's Flipper or Something...
+						["g"] = {
+							i(65691),	-- Floppy Shoulderguards
+							i(65669),	-- Keyton's Sash
+							i(131691),	-- Keyton's Mail Pauldrons
+						},
+					},
 					qh(28192, {	-- No One Here Gets Out Alive
 						["groups"] = {
 						},
@@ -438,46 +437,22 @@ _.Zones =
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 30116 },	-- Sharpening Your Fangs
 					})),
-					i( 63686, {	-- Daggerspine Attack Plans
-						qh(28345, {	-- Preemptive Strike
-							["groups"] = {
-								i(65716),	-- Daggerspine Ball
-								i(65698),	-- Daggerspine Dagger
-								i(65677),	-- Preemptive Staff
-							},
-							["qg"] = 2370,	-- Daggerspine Screamer
-						}),
-					}),
-					i( 63686, {	-- Daggerspine Attack Plans
-						qh(28345, {	-- Preemptive Strike
-							["groups"] = {
-								i(65716),	-- Daggerspine Ball
-								i(65698),	-- Daggerspine Dagger
-								i(65677),	-- Preemptive Staff
-							},
-							["qg"] = 2371,	-- Daggerspine Siren
-						}),
-					}),
-					i( 63686, {	-- Daggerspine Attack Plans
-						qh(28345, {	-- Preemptive Strike
-							["groups"] = {
-								i(65716),	-- Daggerspine Ball
-								i(65698),	-- Daggerspine Dagger
-								i(65677),	-- Preemptive Staff
-							},
-							["qg"] = 2369,	-- Daggerspine Shorehunter
-						}),
-					}),
-					i( 63686, {	-- Daggerspine Attack Plans
-						qh(28345, {	-- Preemptive Strike
-							["groups"] = {
-								i(65716),	-- Daggerspine Ball
-								i(65698),	-- Daggerspine Dagger
-								i(65677),	-- Preemptive Staff
-							},
-							["qg"] = 2368,	-- Daggerspine Shorestalker
-						}),
-					}),
+					{
+						["qgs"] = {
+							2370,	-- Daggerspine Screamer
+							2369,	-- Daggerspine Shorehunter
+							2368,	-- Daggerspine Shorestalker
+							2371,	-- Daggerspine Siren
+						},
+						["races"] = HORDE_ONLY,
+						["itemID"] = 63686,	-- Daggerspine Attack Plans
+						["questID"] = 28345,	-- Preemptive Strike
+						["g"] = {
+							i(65716),	-- Daggerspine Ball
+							i(65698),	-- Daggerspine Dagger
+							i(65677),	-- Preemptive Staff
+						},
+					},
 					qh(28230, {	-- Protocol
 						["groups"] = {
 						},
@@ -576,13 +551,12 @@ _.Zones =
 						["qg"] = 49687,	-- Brazie the Botanist
 						["sourceQuests"] = { 28748 },	-- Lawn of the Dead
 					}),
-					i( 63250, {	-- The Battle for Hillsbrad
-						qh(28196, {	-- The Battle for Hillsbrad
-							["groups"] = {
-							},
-							["qg"] = 47789,	-- Clerk Horrace Whitesteed
-						}),
-					}),
+					{
+						["qg"] = 47789,	-- Clerk Horrace Whitesteed
+						["races"] = HORDE_ONLY,
+						["itemID"] = 63250,	-- The Battle for Hillsbrad
+						["questID"] = 28196,	-- The Battle for Hillsbrad
+					},
 					qpvp(qa(7141, {	-- The Battle of Alterac
 						["groups"] = {
 						},

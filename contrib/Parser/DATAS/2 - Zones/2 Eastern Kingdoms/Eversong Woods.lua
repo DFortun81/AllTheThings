@@ -93,13 +93,12 @@ _.Zones =
 						["qg"] = 15399,	-- Lieutenant Dawnrunner
 						["sourceQuests"] = { 9359 },	-- Farstrider Retreat
 					}),
-					i( 23249, {	-- Amani Invasion Plans
-						qh(9360, {	-- Amani Invasion
-							["groups"] = {
-							},
-							["qg"] = 15407,	-- Chieftain Zul'Marosh
-						}),
-					}),
+					{
+						["qg"] = 15407,	-- Chieftain Zul'Marosh
+						["races"] = HORDE_ONLY,
+						["itemID"] = 23249,	-- Amani Invasion Plans
+						["questID"] = 9360,	-- Amani Invasion
+					},
 					qh( 8473, {	-- A Somber Task
 						["groups"] = {
 						},
@@ -112,41 +111,18 @@ _.Zones =
 						["qg"] = 15401,	-- Ley-Keeper Velania
 						["sourceQuests"] = { 9119 },	-- Malfunction at the West Sanctum
 					}),
-					i( 21776, {	-- Captain Kelisendra's Lost Rutters
-						qh(8887, {	-- Captain Kelisendra's Lost Rutters
-							["groups"] = {
-							},
-							["qg"] = 15670,	-- Grimscale Forager
-						}),
-					}),
-					i( 21776, {	-- Captain Kelisendra's Lost Rutters
-						qh(8887, {	-- Captain Kelisendra's Lost Rutters
-							["groups"] = {
-							},
-							["qg"] = 15668,	-- Grimscale Murloc
-						}),
-					}),
-					i( 21776, {	-- Captain Kelisendra's Lost Rutters
-						qh(8887, {	-- Captain Kelisendra's Lost Rutters
-							["groups"] = {
-							},
-							["qg"] = 15669,	-- Grimscale Oracle
-						}),
-					}),
-					i( 21776, {	-- Captain Kelisendra's Lost Rutters
-						qh(8887, {	-- Captain Kelisendra's Lost Rutters
-							["groups"] = {
-							},
-							["qg"] = 15950,	-- Grimscale Seer
-						}),
-					}),
-					i( 21776, {	-- Captain Kelisendra's Lost Rutters
-						qh(8887, {	-- Captain Kelisendra's Lost Rutters
-							["groups"] = {
-							},
-							["qg"] = 15937,	-- Mmmrrrggglll 
-						}),
-					}),
+					{
+						["qgs"] = {
+							15670,	-- Grimscale Forager
+							15668,	-- Grimscale Murloc
+							15669,	-- Grimscale Oracle
+							15950,	-- Grimscale Seer
+							15937,	-- Mmmrrrggglll 
+						},
+						["races"] = HORDE_ONLY,
+						["itemID"] = 21776,	-- Captain Kelisendra's Lost Rutters
+						["questID"] = 8887,	-- Captain Kelisendra's Lost Rutters
+					},
 					qh( 8894, {	-- Cleaning up the Grounds
 						["groups"] = {
 						},
@@ -240,14 +216,13 @@ _.Zones =
 						},
 						["qg"] = 15921,	-- Captain Kelisendra
 					}),
-					i( 20765, {	-- Incriminating Documents
-						qh(8482, {	-- Incriminating Documents
-							["groups"] = {
-							},
-							["qg"] = 15968,	-- Darnassian Scout
-							["sourceQuests"] = { 9352 },	-- Darnassian Intrusions
-						}),
-					}),
+					{
+						["qg"] = 15968,	-- Darnassian Scout
+						["races"] = HORDE_ONLY,
+						["itemID"] = 20765,	-- Incriminating Documents
+						["questID"] = 8482,	-- Incriminating Documents
+						["sourceQuests"] = { 9352 },	-- Darnassian Intrusions
+					},
 					q( 32668, {	-- Learn To Ride
 						["groups"] = {
 						},
@@ -276,13 +251,12 @@ _.Zones =
 						},
 						["qg"] = 16210,	-- Magistrix Landra Dawnstrider
 					}),
-					i( 23228, {	-- Old Whitebark's Pendant
-						qh(8474, {	-- Old Whitebark's Pendant
-							["groups"] = {
-							},
-							["qg"] = 15409,	-- Old Whitebark
-						}),
-					}),
+					{
+						["qg"] = 15409,	-- Old Whitebark
+						["races"] = HORDE_ONLY,
+						["itemID"] = 23228,	-- Old Whitebark's Pendant
+						["questID"] = 8474,	-- Old Whitebark's Pendant
+					},
 					qh( 9705, {	-- Package Recovery
 						["groups"] = {
 						},

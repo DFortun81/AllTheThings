@@ -380,20 +380,15 @@ _.Zones =
 						["qg"] = 16197,	-- Arcanist Vandril					
 						["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 }, -- Horde, not Blood Elf
 					}),
-					i( 22597, {	-- The Lady's Necklace
-						qh(9175, {	-- The Lady's Necklace
-							["groups"] = {
-							},
-							["qg"] = 16315,	-- Deatholme Acolyte
-						}),
-					}),
-					i( 22597, {	-- The Lady's Necklace
-						qh(9175, {	-- The Lady's Necklace
-							["groups"] = {
-							},
-							["qg"] = 16314,	-- Fallen Ranger
-						}),
-					}),
+					{
+						["qgs"] = {
+							16315,	-- Deatholme Acolyte
+							16314,	-- Fallen Ranger
+						},
+						["races"] = HORDE_ONLY,
+						["itemID"] = 22597,	-- The Lady's Necklace
+						["questID"] = 9175,	-- The Lady's Necklace
+					},
 					qh( 9149, {	-- The Plagued Coast
 						["groups"] = {
 							i(28150)	-- Renzithen's Dusty Cloak

@@ -385,14 +385,15 @@ _.Zones =
 								["qg"] = 45729,	-- Tarenar Sunstrike
 								["sourceQuests"] = {27524}, -- "Blind Fury"
 							}),
-							i(61378, {	-- The Baroness' Missive
-								q(27551, {	-- The Baroness' Missive
-									["groups"] = {
-									},
-									["qgs"] = {45868,45867}, 
-									["sourceQuests"] = {27525}, -- "Guardians of Stratholme"
-								}),
-							}),
+							{
+								["qgs"] = {
+									45868,	-- Karthis Darkrune
+									45867,	-- Omasum Blighthoof
+								},
+								["itemID"] = 61378,	-- The Baroness' Missive
+								["questID"] = 27551,	-- The Baroness' Missive
+								["sourceQuests"] = { 27525 },	-- Guardians of Stratholme
+							},
  							q(27526, {	-- Gidwin's Fate Revealed
 								["groups"] = {
 								},

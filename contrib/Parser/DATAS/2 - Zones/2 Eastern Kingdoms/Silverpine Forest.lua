@@ -201,14 +201,13 @@ _.Zones =
 						["qg"] = 44365,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27098 },	-- Lordaeron
 					}),
-					i( 61505, {	-- Partially Digested Head
-						qh(27574, {	-- I Never Forget a Face
-							["groups"] = {
-							},
-							["qg"] = 45896,	-- Marsh Crocolisk
-							["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r"							
-						}),
-					}),
+					{
+						["qg"] = 45896,	-- Marsh Crocolisk
+						["races"] = HORDE_ONLY,
+						["itemID"] = 61505,	-- Partially Digested Head
+						["questID"] = 27574,	-- I Never Forget a Faces
+						["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r"
+					},
 					qh(26998, {	-- Iterating Upon Success
 						["groups"] = {
 							i(131629),	-- Maggot-Ridden Greaves
