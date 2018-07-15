@@ -126,9 +126,9 @@ _.Craftables =
 			i(52486, {	-- Jeweler's Sapphire Monocle
 				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 			}),
-			i(52489, {	-- Rhinestone Sunglasses
-				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-			}),
+			un(15, i(52489, {	-- Rhinestone Sunglasses
+				["description"] = "To learn this specific item you will need to buy the Black Market AH version",
+			})),
 		}),
 		n(-187, { -- Leatherworking
 			n(-322, { 	-- Cloak
