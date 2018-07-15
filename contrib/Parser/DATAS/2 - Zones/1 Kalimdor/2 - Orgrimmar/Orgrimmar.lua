@@ -1736,8 +1736,13 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					--[[n(12795, {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
-					}),]]
+					n(12795, {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
+						i(18427),	-- Sergeant's Cloak
+						i(16341),	-- Sergeant's Cloak
+						i(18461),	-- Sergeant's Cloak
+						i(28377),	-- Sergeant's Heavy Cloak
+						i(28378),	-- Sergeant's Heavy Cape
+					}),
 					n(50323, {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
 						i(64905),	-- Bilgewater Shroud
 						i(64906),	-- Bilgewater Cape
