@@ -1258,7 +1258,7 @@ _.Zones =
 							}),
 							q(38955, {	-- Sew Far, Sew Good
 								["groups"] = {
-									recipe(186391),	-- Silkweave Satchel
+									recipe(186388),	-- Silkweave Satchel
 								},
 								["qg"] = 93967, -- Lyndras
 								["sourceQuests"] = { 38954 }, -- Where's Lyndras?
