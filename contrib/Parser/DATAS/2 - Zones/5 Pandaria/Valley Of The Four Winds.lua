@@ -577,7 +577,12 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares
 					n(51059, { 		-- Blackhoof
-						dr(19, i(86565)),
+						{
+							["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+							["criteriaID"] = 5,		-- Battle Horn [Criteria]
+							["itemID"] = 86565,	-- Battle Horn [Item]
+							["dr"] = 19,
+						},
 						dr(12, {
 							i(87595),
 							i(87596),
@@ -613,10 +618,10 @@ _.Zones =
 						}),
 					}),
 					n(64004, { 		-- Ghostly Pandaren Fisherman
+						["description"] = "|cff66ccffSpeak with the Ghostly Pandaren Fisherman to get the toy.|r",
 						["groups"] = {
 							i(85973), 	-- Ancient Pandaren Fishing Charm Toy
 						},
-					["description"] = "|cff66ccffSpeak with the Ghostly Pandaren Fisherman to get the toy.|r",
 					}),
 					n(50351, { 		-- Jonn-Dar
 						dr(11, {
@@ -632,6 +637,9 @@ _.Zones =
 							i(87597),
 							i(87602),
 						}),
+					}),
+					o(226956, {		-- Mysterious Fruit Pile
+						i(110505),		-- Mesmerizing Fruit Hat [Not a toy, but should be.]
 					}),
 					n(50364, { 		-- Nal'lak the Ripper
 						dr(11, {
@@ -682,6 +690,13 @@ _.Zones =
 						}),
 					}),
 					n(50766, { 		-- Sele'na
+						{
+							["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+							["criteriaID"] = 8,		-- Overgrown Lilypad [Criteria]
+							["itemID"] = 86580,		-- Overgrown Lilypad / Wilted Lilypad [Item]
+							["description"] = "This item used to be the Overgrown Lilypad. This item instead is required for the Bigger Bag achievement in its place.",
+							["dr"] = 20,
+						},
 						dr(12, i(87595)),
 						dr(11, {
 							i(87596),
@@ -716,10 +731,13 @@ _.Zones =
 							i(87601),
 							i(87600),
 						}),
+						{
+							["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+							["criteriaID"] = 4,		-- Crystal of Insanity [Criteria]
+							["itemID"] = 86569,	-- Crystal of Insanity [Item]
+							["dr"] = 9,
+						},
 					}),
-				--	o(226956, 		-- Mysterious Fruit Pile
-				--		i(110505),		-- Should be a toy
-				--	}),
 				}),
 				n(-2, {		-- Vendors
 					n(58713, {	-- Anthea Ironpaw <Master of the Wok>

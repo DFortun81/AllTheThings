@@ -427,6 +427,10 @@ _.Zones =
 						i(87626),	-- Suna's Shattered Locket
 						i(87624),	-- Yaungol Mist-Shaman's Amulet
 						i(87622),	-- Yoke of Niuzao
+						{
+							["itemID"] = 87219,	-- Huge Bag of Herbs [Item]
+							["dr"] = 9.0,
+						},
 					}),
 					n(50344, { 		-- Norlaxx
 						dr(9, i(87220, {

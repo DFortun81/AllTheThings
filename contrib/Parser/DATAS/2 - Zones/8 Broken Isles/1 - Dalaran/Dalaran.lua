@@ -413,7 +413,6 @@ _.Zones =
 						q(41674),	-- Work Order: Word of Intellect
 					}),
 --]]					
-					
 					n(-180, {	-- Alchemy
 						["groups"] = {
 							q(39329, {	-- A Dormant Burner
@@ -427,7 +426,6 @@ _.Zones =
 								["qg"] = 101492, -- Ms. Xiulan
 								["sourceQuests"] = { 39342 }, -- The Price of the Black Market
 							}),
-							q(39343),	-- Bendy Glass Tubes
 							q(39349, {	-- Black Rook Hold: Heavy, But Helpful
 								["qg"] = 92183, -- Alard Schmied
 							}),
@@ -454,8 +452,10 @@ _.Zones =
 								["sourceQuests"] = { 39331 }, -- Eye of Azshara: Put a Cork in it
 							}),
 							q(39325, {	-- Get Your Mix On
+								["groups"] = {
+									recipe(195095),	-- Alchemy (lvl 800)
+								},
 								["qg"] = 92458, -- Deucus Valdera
-								-- rewards 201697
 							}),
 							q(39344, {	-- Going Underground
 								["qg"] = 92458, -- Deucus Valdera
@@ -558,6 +558,9 @@ _.Zones =
 								["sourceQuests"] = { 38507 }, -- Secrets of Leysmithing
 							}),
 							q(38523, {	-- Leystone Hoofplates
+								["groups"] = {
+									recipe(182999),	-- Recipe: Leystone Hoofplates
+								},
 								["qg"] = 92183, -- Alard Schmied
 								["sourceQuests"] = {
 									38522,	-- Not Just Weapons and Armor
@@ -566,7 +569,7 @@ _.Zones =
 							}),
 							q(38522, {	-- Not Just Weapons and Armor
 								["groups"] = {
-									sp(191331),	-- Recipe: Leystone Hoofplates
+									recipe(182999),	-- Recipe: Leystone Hoofplates
 								},
 								["qg"] = 92183, -- Alard Schmied
 								["sourceQuests"] = {
@@ -580,7 +583,7 @@ _.Zones =
 							}),
 							q(38499, {	-- Strange New Ores
 								["groups"] = {
-									sp(201699),	-- Legion Blacksmith
+									recipe(195097), -- Blacksmithing (lvl 800)
 								},
 								["qg"] = 92183, -- Alard Schmied
 							}),
@@ -593,7 +596,8 @@ _.Zones =
 							}),
 							q(39681, {	-- The Properties of Leystone
 								["groups"] = {
-									sp(191237),	-- Introduction to Leystone Smithing
+									recipe(182928), -- Leystone Armguards (Rank 1)
+									recipe(182929),	-- Leystone Waistguard (Rank 1)
 								},
 								["qg"] = 92183, -- Alard Schmied
 								["sourceQuests"] = { 38499 }, -- Strange New Ores
@@ -604,8 +608,12 @@ _.Zones =
 					n(-182, {	-- Enchanting
 						["groups"] = {
 							q(39883, {	-- Cloaked in Tradition
+								["groups"] = {
+									recipe(190875),	-- Word of Agility (Rank 1)
+									recipe(190876),	-- Word of Intellect (Rank 1)
+									recipe(190874),	-- Word of Strength (Rank 1)
+								},
 								["qg"] = 98017, -- Guron Twaintail
-								-- rewards 208686 (3 cloak enchants)
 								["sourceQuests"] = { 
 									39879,	-- Strong Like the Earth
 									39880,	-- Waste Not
@@ -628,7 +636,7 @@ _.Zones =
 							}),
 							q(39874, {	-- Some Enchanted Evening
 								["groups"] = {
-									sp(201698),	-- Legion Enchanter
+									recipe(195096),	-- Enchanting (lvl 800)
 								},
 								["qg"] = 93531, -- Enchanter Nalthanis
 							}),
@@ -649,60 +657,84 @@ _.Zones =
 								["qg"] = 93539,
 							}),
 							q(48056, {	-- A Harsh Mistress
+								["groups"] = {
+									recipe(247717),	-- Gravitational Reduction Slippers
+								},
 								["qg"] = 93539, -- Hobart Grapplehammer
 							}),
 							q(40863, {	-- Always the Last Thing
+								["groups"] = {
+									recipe(198982),	-- Reaves Battery
+								},
 								["qg"] = 93520, -- Didi the Wrench
 								["sourceQuests"] = { 40858 }, -- The Missing Pieces
 							}),	
 							q(40878, {	-- Assault on Violet Hold: Cheating Death
+								["groups"] = {
+									recipe(198985),	-- Reaves Module: Failure Detection Mode
+								},
 								["qg"] = 93520, -- Didi the Wrench
-								-- grants 201613
 							}),
 							q(40545, {	-- Aww Scrap!
+								["groups"] = {
+									recipe(195112),	-- Engineering (lvl 800)
+								},
 								["qg"] = 93539, -- Hobart Grapplehammer
-								-- rewards 201700
 							}),
 							q(46119, {	-- Boon of the Builder
 								["qg"] = 93539, -- Hobart Grapplehammer
 							}),
 							q(40882, {	-- Court of Stars: Revamping the Recoil
+								["groups"] = {
+									i(133671),	-- Schematic: Semi-Automagic Cranial Cannon
+									i(133672),	-- Schematic: Sawed-Off Cranial Cannon
+									i(133673),	-- Schematic: Double-Barreled Cranial Cannon
+									i(133674),	-- Schematic: Ironsight Cranial Cannon
+								},
 								["qg"] = 93539, -- Hobart Grapplehammer
-								-- rewards 133671, 133672, 133673, 133674
 							}),
-							q(40854, {	-- Endless Possibilities
+							q(40854, {	-- Endless Possibilities -- underbelly
 								["qg"] = 102193, -- Filgo Scrapbottom
 								["sourceQuests"] = { 40545 }, -- Aww Scrap!
 							}),
 							q(48065, {	-- Extraterrestrial Exploration
+								["groups"] = {
+									recipe(247744),	-- Wormhole Generator: Argus
+								},
 								["qg"] = 93520, -- Didi the Wrench
 								["sourceQuests"] = { 48069 }, -- The Wrench Calls
-								-- rewards 248661
 							}),
 							q(40869, {	-- Fire and Forget
+								["groups"] = {
+									recipe(198974),	-- Pump-Action Bandage Gun (Rank 1)
+								},
 								["qg"] = 93539, -- Hobart Grapplehammer
-								-- rewards 201603
 							}),
 							q(40877, {	-- Halls of Valor: Trigger Happy
+								["groups"] = {
+									recipe(198981),	-- Trigger
+								},
 								["qg"] = 93539, -- Hobart Grapplehammer
-								-- rewards 201612
 							}),
 							q(40870, {	-- Here Comes the BOOM!
+								["groups"] = {
+									recipe(198987),	-- Reaves Module: Fireworks Display Mode
+								},
 								["qg"] = 93520, -- Didi the Wrench
-								-- rewards 201605
 							}),
 							q(40865, {	-- It's Not Rocket Science
 								["qg"] = 93539, -- Hobart Grapplehammer
 							}),
 							q(40879, {	-- It's On With Automatons
 								["groups"] = {
-									sp(201614),	-- Schematic: Reaves Module: Piloted Combat Mode
+									recipe(198990),	-- Reaves Module: Piloted Combat Mode
 								},
 								["qg"] = 93520, -- Didi the Wrench
 							}),
 							q(40864, {	-- Modular Modifications
 								["groups"] = {
-									sp(201593),	-- Schematics: Reaves Module: Repair Mode
+									recipe(198984),	-- Reaves Module: Repair Mode
+									recipe(198988),	-- Reaves Module: Snack Distrubition Mode
 								},
 								["qg"] = 93520, -- Didi the Wrench
 								["sourceQuests"] = { 40863 }, -- Always the Last Thing
@@ -715,7 +747,7 @@ _.Zones =
 							}),
 							q(46128, {	-- Time for a Recharge
 								["groups"] = {
-									sp(235779),	-- Schematic: Rechargeable Reaves Battery
+									recipe(235775),	-- Rechargeable Reaves Battery
 								},
 								["qg"] = 93539, -- Hobart Grapplehammer
 							}),
@@ -725,50 +757,49 @@ _.Zones =
 					n(-184, {	-- Herbalism
 						["groups"] = {
 							q(40019, {	-- An Empathetic Herb
+								["groups"] = {
+									recipe(193295),	-- Dreamleaf (Rank 1)
+								},
 								["qg"] = 92464, -- Kuhuine Tenderstride
 								["sourceQuests"] = { 40018 }, -- Dreamleaf Sample
 							}),
 							q(40026, {	-- Chase the Culprit
+								["groups"] = {
+									recipe(193299),	-- Foxflower (Rank 2)
+								},
 								["qg"] = 92464, -- Kuhuine Tenderstride
 								["sourceQuests"] = { 40025 }, -- Teeny Bite Marks
-								-- rewards 193422
 							}),
 							q(40016, {	-- Desperation Breeds Ingenuity
+								["groups"] = {
+									recipe(193293),	-- Aethril (Rank 2)
+								},
 								["qg"] = 92464, -- Kuhuine Tenderstride
-								-- rewards 193416
 								["sourceQuests"] = { 40015 }, -- Ragged Strips of Silk
 							}),
-							--q(40017),	-- A Slip of the Hand -- given automatically by herbing
-							--q(40013),	-- Aethril Sample -- given by i(129117)
-							--q(40018)	-- Dreamleaf Sample -- started by i(129118)
 							q(40041, {	-- Felwort Analysis
+								["groups"] = {
+									recipe(193308),	-- Felwort (Rank 2)
+								},
 								["qg"] = 92464, -- Kuhuine Tenderstride
-								-- rewards 193431
 							}),
-							--q(40040)	-- Felwort Sample -- granted by i(129122)
 							q(40033, {	-- Fjarnskaggl
+								["groups"] = {
+									recipe(193303),	-- Fjarnskaggl (Rank 3)
+								},
 								["qg"] = 92464, -- Kuhuine Tenderstride
-								-- rewards 193426
 								["sourceQuests"] = { 40032 }, -- The Missing Page
 							}),
-							--q(40029)	-- Fjarnskaggl Sample -- granted by i(129120)
-							--q(40024)	-- Foxflower Sample -- granted by i(129119)
-							--q(40038)	-- Insane Ramblings -- granted by i(129143)
-							--q(40036)	-- Jeweled Spade Handle -- granted by i(129140)
-							--q(40015),	-- Ragged Strips of Silk -- granted by i(129135)
-							--q(40030),	-- Ram's-Horn Trowel -- granted by i(129138)
-							--q(40034),	-- Starlight Rosedust -- granted by i(129121)
-							--q(40025),	-- Teeny Bite Marks -- granted by i(129137)
 							q(40039, {	-- Tharillon's Fall
 								["groups"] = {
-									sp(193429),	-- Herbalism Technique: Starlight Rose (Rank 3)
+									recipe(193306),	-- Starlight Rose (Rank 3)
 								},
 								["qg"] = 92464, -- Kuhuine Tenderstride
 								["sourceQuests"] = { 40038 }, -- Insane Ramblings
 							}),
 							q(40042, {	-- The Emerald Nightmare: Felwort Mastery
 								["groups"] = {
-									sp(193432),	-- Herbalism Technique: Felwort (Rank 3)
+									recipe(193309),	-- Felwort (Rank 3)
 								},
 								["qg"] = 92464, -- Kuhuine Tenderstride
 							}),
@@ -776,11 +807,9 @@ _.Zones =
 								["qg"] = 92464, -- Kuhuine Tenderstride
 								["sourceQuests"] = { 40034 }, -- Starlight Rosedust
 							}),
-							--q(40032),	-- The Missing Page -- granted by i(129142)
-							--q(40028),	-- The Pied Picker -- granted by i(129278)
 							q(40031, {	-- Vrykul Herblore
 								["groups"] = {
-									sp(193425),	-- Herbalism Technique: Fjarnskaggl (Rank 2)
+									recipe(193302),	-- Fjarnskaggl (Rank 2)
 								},
 								["qg"] = 92464, -- Kuhuine Tenderstride
 								["sourceQuests"] = { 40030 }, -- Ram's-Horn Trowel
@@ -794,6 +823,9 @@ _.Zones =
 								["qg"] = 244651, -- Steamy Romance Novel
 							}),
 							q(39950, {	-- An Odd Trinket
+								["groups"] = {
+									recipe(192855),	-- Prophecy Tarot (Rank 2)
+								},
 								["qg"] = 97359, -- Raethan
 								["sourceQuests"] = { 39949 }, -- Once a Scribe Like You
 							}),
@@ -806,8 +838,10 @@ _.Zones =
 								["sourceQuests"] = { 39947 }, -- Not So Complex?
 							}),
 							q(39957, {	-- Demon Ink
+								["groups"] = {
+									recipe(191659),	-- Darkmoon Card of the Legion (Rank 1)
+								},
 								["qg"] = 92195, -- Professor Pallin
-								-- rewards 193479
 								["sourceQuests"] = { 39953 }, -- Halls of Valor: Vision of Valor
 							}),
 							--q(39942),	-- Aethrem Crystal -- given by i(136909)
@@ -821,7 +855,7 @@ _.Zones =
 							}),
 							q(39954, {	-- Mass Milling Techniques
 								["groups"] = {
-									sp(210810),	-- Recipe: Mass Mill Yseralline Seeds
+									recipe(210116),	-- Mass mill Yseralline Seeds
 								},
 								["qg"] = 92195, -- Professor Pallin
 							}),
@@ -843,14 +877,28 @@ _.Zones =
 							--q(39952)	-- Sallow Essence -- granted by i(136918)
 							q(39847, {	-- Sign This
 								["groups"] = {
-									sp(201703),	-- Legion Scribe
+									recipe(195115),	-- Inscription (lvl 800)
 								},
 								["qg"] = 92195, -- Professor Pallin
 							}),
 							q(39931, {	-- Smashing Herbs
+--[[
+								None of the recipe IDs appear to exist to anymore despite the quest still being active
 								["groups"] = {
-									sp(192962),	-- Recipe: Class Glyph
+									recipe(192969),	-- 
+									recipe(192975),	-- 
+									recipe(192970),	-- 
+									recipe(192971),	-- 
+									recipe(192972),	-- 
+									recipe(192973),	-- 
+									recipe(192974),	-- 
+									recipe(192976),	-- 
+									recipe(192978),	-- 
+									recipe(192979),	-- 
+									recipe(192980),	-- 
+									recipe(192981),	-- 
 								},
+]]--
 								["qg"] = 92195, -- Professor Pallin
 								["sourceQuests"] = { 39847 }, -- Sign This
 							}),
@@ -859,7 +907,7 @@ _.Zones =
 							}),
 							q(39943, {	-- The Burdens of Hunting
 								["groups"] = {
-									sp(193748),	-- Recipe: Glyph of Tattered Wings
+									--recipe(192582),	-- Glyph of Tattered Wings -- removed?
 								},
 								["qgs"] = {
 									97734,	-- Zaria Shadowheart
@@ -875,7 +923,7 @@ _.Zones =
 							}),
 							q(39933, {	-- The Card Shark
 								["groups"] = {
-									sp(193005),	-- Recipe: Prophecy Tarot
+									recipe(192854),	-- Prophecy Tarot (Rank 1)
 								},
 								["qg"] = 92195, -- Professor Pallin
 								["sourceQuests"] = { 39932 }, -- Fish Ink
@@ -912,51 +960,59 @@ _.Zones =
 								["sourceQuests"] = { 40529 }, -- Truly Outrageous
 							}),
 							q(40559, {	-- Black Rook Hold: The Raven's Wisdom
+								["groups"] = {
+									recipe(195864),	-- Dawnlight Band (Rank 1)
+								},
 								["qg"] = 93527, -- Timothy Jones
-								-- rewards 199783
 							}),
 							q(40540, {	-- Come at Me, Brul
 								["qg"] = 93526, -- Tiffany Cartier
 							}),
 							q(40523, {	-- Facet-nating Friends
+								["groups"] = {
+									recipe(195116),	-- Jewelcrafting (lvl 800)
+								},
 								["qg"] = 93526, -- Tiffany Cartier
-								-- rewards 201704
 							}),
 							q(40561, {	-- Halls of Valor: Jewel of the Heavens
+								["groups"] = {
+									recipe(195863),	-- Maelstrom Band (Rank 1)
+								},
 								["qg"] = 93527, -- Timothy Jones
-								-- rewards 199785
 							}),
 							q(40539, {	-- Hidden Intentions
+								["groups"] = {
+									recipe(195881),	-- Jeweled Lockpick
+								},
 								["qg"] = 100939, -- Clive Cozen
-								-- rewards 200151
 							}),
 							q(40556, {	-- Jabrul Needs You
 								["qg"] = 246250, -- Letter From Jabrul
 							}),
 							q(40538, {	-- Lapidary Lessons
 								["groups"] = {
-									sp(198797),	-- Design: Versatile Maelstrom Sapphire
+									recipe(195854), -- Versatile Maelstrom Sapphire
 								},
 								["qg"] = 93526, -- Tiffany Cartier
 							}),
 							q(40534, {	-- Making the Cut
 								["groups"] = {
-									sp(198130),	-- Design: Masterful Queen's Opal
+									recipe(195851),	-- Masterful Queen's Opal
 								},
 							}),
 							q(40533, {	-- Making the Cut
 								["groups"] = {
-									sp(198129),	-- Design: Quick Azsunite
+									recipe(195849),	-- Quick Azsunite
 								},
 							}),
 							q(40532, {	-- Making the Cut
 								["groups"] = {
-									sp(198085),	-- Design: Deadly Deep Amber
+									recipe(195848),	-- Deadly Deep Amber
 								},
 							}),
 							q(40560, {	-- Maw of Souls: Spiriting Away
 								["groups"] = {
-									sp(199784),	-- Design: Prophetic Band
+									recipe(195862),	-- Prophetic Band (Rank 1)
 								},
 								["qg"] = 93527, -- Timothy Jones
 							}),
@@ -969,7 +1025,7 @@ _.Zones =
 							}),
 							q(40529, {	-- Truly Outrageous
 								["groups"] = {
-									sp(197931),	-- Design: Versatile Skystone
+									recipe(195850),	-- Versatile Skystone
 								},
 								["qg"] = 93526, -- Tiffany Cartier
 								["sourceQuests"] = { 40523 }, -- Facet-nating Friends
@@ -993,20 +1049,28 @@ _.Zones =
 								["qg"] = 93523, -- Namha Moonwater
 							}),
 							q(40181, {	-- Black Rook Bandit
+								["groups"] = {
+									recipe(194736),	-- Battlebound Girdle (Rank 1)
+									recipe(194738),	-- Battlebound Leggings (Rank 1)
+								},
 								["qg"] = 98931, -- Thanid Glowergold
-								-- rewards 194891
 							}),
 							q(41889, {	-- Dazed of the Past
+								["groups"] = {
+									recipe(196648),	-- Stonehide Leather Barding
+								},
 								["qg"] = 93523, -- Namha Moonwater
 								["sourceQuests"] = { 40197 }, -- The Necessary Materials
-								-- rewards 196574
 							}),
 							q(40211, {	-- Demon Flesh
 								["qg"] = 93523, -- Namha Moonwater
 							}),
 							q(40176, {	-- From Head to Toe
+								["groups"] = {
+									recipe(194701),	-- Warhide Footpads (Rank 1)
+									recipe(194741),	-- Battlebound Treads (Rank 1)
+								},
 								["qg"] = 93523, -- Namha Moonwater
-								-- rewards 194813
 							}),
 							q(40193, {	-- Getting the Kinks Out
 								["qg"] = 98931, -- Thanid Glowergold
@@ -1019,7 +1083,8 @@ _.Zones =
 							}),
 							q(40199, {	-- Leather Legwork
 								["groups"] = {
-									sp(195101),	-- Recipe List: Artisan Azsunian Leatherworking
+									recipe(194745),	-- Battlebound Spaulders (Rank 2)
+									recipe(194749),	-- Battlebound Treads (Rank 2)
 								},
 								["qg"] = 98931, -- Thanid Glowergold
 							}),
@@ -1037,19 +1102,21 @@ _.Zones =
 							}),
 							q(40198, {	-- Rats!
 								["groups"] = {
-									sp(195098),	-- Recipe List: Artisan Highmountain Leatherworking
+									recipe(194705),	-- Warhide Shoulderguard (Rank 2)
+									recipe(194709),	-- Warhide Footpads (Rank 2)
 								},
 								["qg"] = 93522, -- Diane Cannings
 							}),
 							q(39958, {	-- Skin Deep
 								["groups"] = {
-									sp(201705),	-- Legion Leatherworker
+									recipe(195119),	-- Leatherworking (lvl 800)
 								},
 								["qg"] = 93523, -- Namha Moonwater
 							}),
 							q(40179, {	-- Stormheim Savagery
 								["groups"] = {
-									sp(194862),	-- Recipe List: Warhide Armor
+									recipe(194696),	-- Warhide Belt (Rank 1)
+									recipe(194698),	-- Warhide Pants (Rank 1)
 								},
 								["qg"] = 93522, -- Diane Cannings
 							}),
@@ -1066,13 +1133,13 @@ _.Zones =
 							}),
 							q(40182, {	-- Too Good To Pass Up
 								["groups"] = {
-									sp(194892),	-- Recipe: Battlebound Hauberk
+									recipe(194742),	-- Battlebound Hauberk (Rank 1)
 								},
 								["qg"] = 98931, -- Thanid Glowergold
 							}),
 							q(40178, {	-- Vestment Opportunity
 								["groups"] = { 
-									sp(194830),	-- Recipe: Warhide Jerkin
+									recipe(194702),	-- Warhide Jerkin (Rank 1)
 								},
 								["qg"] = 93522, -- Diane Cannings
 							}),
@@ -1085,14 +1152,14 @@ _.Zones =
 							--q(38796)	-- Felslate Seam Sample -- granted by i(124497)
 							q(39830, {	-- Hellfire Citadel: Hellfire and Brimstone
 								["groups"] = {
-									sp(191971),	-- Mining Technique: Infernal Brimstone
+									recipe(191970),	-- Infernal Brimstone (Rank 3)
 								},
 								["qg"] = 93189, -- Mama Diggs
 								["classes"] = { 1, 3 },
 							}),
 							q(38807, {	-- Infernal Brimstone Analysis
 								["groups"] = {
-									sp(191969),	-- Mining Technique: Infernal Brimstone
+									recipe(184505),	-- Infernal Brimstone (Rank 2)
 								},
 								["qg"] = 93189, -- Mama Diggs
 								["classes"] = { 2, 3 },
@@ -1122,7 +1189,7 @@ _.Zones =
 							--q(40151)	-- Immaculate Stormscale -- granted by i(129867)							
 							q(40132, {	-- In One Piece
 								["groups"] = {
-									sp(194817),	-- Skinning Technique: Stonehide Leather (Rank 1)
+									recipe(194161),	-- Stonehide Leather (Rank 1)
 								},
 								["qg"] = 93541, -- Kondal Huntersworn
 								["sourceQuests"] = { 40131 }, -- Stonehide Leather Sample
@@ -1139,7 +1206,7 @@ _.Zones =
 							--q(40141),	-- Stormscale Sample -- granted by i(129862)
 							q(40159, {	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
 								["groups"] = {
-									sp(194825),	-- Skinning Technique: Felhide (Rank 3)
+									recipe(194169),	-- Felhide (Rank 3)
 								},
 								["qg"] = 93541, -- Kondal Huntsworn
 							}),
@@ -1167,7 +1234,7 @@ _.Zones =
 							}),
 							q(38961, {	-- Eye of Azshara: The Depraved Nightfallen
 								["groups"] = {
-									sp(186022),	-- Silkweave Gloves
+									recipe(185923),	-- Silkweave Gloves (Rank 1)
 								},
 								["qg"] = 93967, -- Lyndras
 								["sourceQuests"] = { 38963 }, -- The Final Lesson?
@@ -1181,21 +1248,24 @@ _.Zones =
 							}),
 							q(38966, {	-- Secret Silkweaving Methods
 								["groups"] = {
-									sp(186025),	-- Advanced Silkweaving
+									recipe(185937),	-- Silkweave Pantaloons (Rank 2)
+									recipe(185938),	-- Silkweave Hood (Rank 2)
+									recipe(185939),	-- Silkweave Gloves (Rank 2)
+									recipe(185940),	-- Silkweave Slippers (Rank 2)
 								},
 								["qg"] = 93542, -- Tanithria
 								["sourceQuests"] = { 38965 }, -- Assault on Violet Hod: Into the Hold
 							}),
 							q(38955, {	-- Sew Far, Sew Good
 								["groups"] = {
-									sp(186390),	-- Silkweave Satchel
+									recipe(186391),	-- Silkweave Satchel
 								},
 								["qg"] = 93967, -- Lyndras
 								["sourceQuests"] = { 38954 }, -- Where's Lyndras?
 							}),
 							q(38944, {	-- Sew It Begins
 								["groups"] = {
-									sp(201708),	-- Legion Tailor
+									recipe(195126),	-- Tailoring (lvl 800)
 								},
 								["qg"] = 93542, -- Tanithria
 							}),
@@ -1208,14 +1278,14 @@ _.Zones =
 							}),
 							q(38957, {	-- Taking Inspiration
 								["groups"] = {
-									sp(186020),	-- Silkweave Pantaloons
+									recipe(185921),	-- Silkweave Pantaloons (Rank 1)
 								},
 								["qg"] = 93967, -- Lyndras
 								["sourceQuests"] = { 38956 }, -- Where's Lyndras Again?
 							}),
 							q(38963, {	-- The Final Lesson?
 								["groups"] = {
-									sp(186023),	-- Silkweave Hood
+									recipe(185922),	-- Silkweave Hood (Rank 1)
 								},
 								["qg"] = 93967, -- Lyndras
 								["sourceQuests"] = {
@@ -1233,7 +1303,7 @@ _.Zones =
 							}),
 							q(38958, {	-- The Right Color
 								["groups"] = {
-									sp(186021),	-- Silkweave Slippers
+									recipe(185924),	-- Silkweave Slippers (Rank 1)
 								},
 								["qg"] = 93525, -- Ainderu Summerleaf
 							}),
@@ -1243,7 +1313,8 @@ _.Zones =
 							}),
 							q(38945, {	-- This Should Be Simple... Right?
 								["groups"] = {
-									sp(186017),	-- Introduction to Silkweaving
+									recipe(185920),	-- Silkweave Epaulets
+									recipe(185919),	-- Silkweave Cinch
 								},
 								["qg"] = 93542, -- Tanithria
 							}),
@@ -1347,11 +1418,6 @@ _.Zones =
 							}),
 						},
 						["requiredSkill"] = 185,
-					}),
-					n(-193, {	-- First Aid
-						["groups"] = {
-						},
-						["requiredSkill"] = 129,
 					}),
 					n(-194, {	-- Fishing
 						["groups"] = {

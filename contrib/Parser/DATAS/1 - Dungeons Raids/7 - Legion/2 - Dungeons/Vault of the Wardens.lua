@@ -8,8 +8,16 @@ _.Instances =
 		["groups"] = {
 			inst(707, { 	-- Vault of the Wardens
 				["groups"] = {
+					n(-17, {
+						i(127877, {	-- Bendy Glass Tubes
+							["groups"] = {
+								q(39343),	-- Vault of the Wardens: Bendy Glass Tubes
+							},
+							["qg"] = 105824,	-- Grimoira
+							["requiredSkill"] = 171,	-- Alchemy
+						}),
+					}),
 					d(1, {		-- Normal
-						
 						["groups"] = {
 							cr(95885, e(1467, {	-- Tirathon Saltheril
 								i(137502),
@@ -62,7 +70,6 @@ _.Instances =
 						}
 					}),
 					d(2, {		-- Heroic
-						
 						["groups"] = {
 							cr(95885, e(1467, {	-- Tirathon Saltheril
 								i(137502),
@@ -115,7 +122,6 @@ _.Instances =
 						}
 					}),
 					d(23, {		-- Mythic
-						
 						["groups"] = {
 							cr(95885, e(1467, {	-- Tirathon Saltheril
 								i(137502),

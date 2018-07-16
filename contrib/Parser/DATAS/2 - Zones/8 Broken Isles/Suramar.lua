@@ -1414,6 +1414,17 @@ _.Zones =
 					}),
 				}),
 				n(-38, { -- Profession
+					n(-184, { -- Herbalism
+						i(129121, {	-- Starlight Rosedust
+							q(40034), -- Starlight Rosedust
+						}),
+						i(129140, {	-- Jeweled Spade Handle
+							q(40036), -- Jeweled Spade Handle
+						}),
+						i(129143, { -- Scribbled Ramblings
+							q(40038), -- Insame Ramblings
+						}),
+					}),
 					prof(185, { -- Cooking
 						{
 							["itemID"] = 141011,	-- Recipe: Surf

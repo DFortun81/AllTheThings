@@ -1366,6 +1366,24 @@ _.Zones =
 					}),
 				}),
 				n(-38, { -- Profession
+					n(-184, { -- Herbalism
+						i(129120, {	-- Fjarnskaggl Sample
+							q(40029, { -- Fjarnskaggl Sample
+								sp(193424),	-- Herbalism Technique: Fjarnskaggl (Rank 1)
+							}),
+						}),
+						i(129138, {	-- Ram's-Horn Trowel
+							q(40030), -- Ram's-Horn Trowl
+						}),
+						i(129142, { -- Runed Journal Page
+							q(40032), -- The Missing Page
+						}),
+						i(129122, {	-- Felwort Sample
+							q(40040, { --Felwort Sample
+								sp(193430), -- Herbalism Technique: Felwort (Rank 1)
+							}),
+						}),
+					}),
 					prof(356, { -- Fishing
 						n(-100001, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",

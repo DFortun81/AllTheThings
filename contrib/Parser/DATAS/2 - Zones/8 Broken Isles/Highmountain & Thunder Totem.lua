@@ -1570,6 +1570,26 @@ _.Zones =
 					prof(185, { -- Cooking
 						desc(i(133820), "Can drop from any Drogbar."), 	-- Recipe: Drogbar-Style Salmon
 					}),
+					n(-184, { -- Herbalism
+						i(129119, {	-- Foxflower Sample
+							q(40024, { -- Foxflower Sample
+								sp(193421),	-- Herbalism Technique: Foxflower (Rank 1)
+							}),
+						}),
+						i(129137, {	-- Nibbled Foxflower Stem
+							q(40025) -- Teeny Bite Marks
+						}),
+						i(129278, { -- Foxflower Scent Gland
+							q(40028, { -- The Pied Picker
+								sp(193423),	-- Herbalism Technique: Foxflower (Rank 3)
+							}),
+						}),
+						i(129122, {	-- Felwort Sample
+							q(40040, { --Felwort Sample
+								sp(193430), -- Herbalism Technique: Felwort (Rank 1)
+							}),
+						}),
+					}),
 					prof(393, { -- Skinning
 						n(97449, { 		-- Bristlemaul
 							["groups"] = {

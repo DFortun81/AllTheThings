@@ -662,8 +662,13 @@ _.Zones =
 							i(87616),
 							i(87619),
 						}),
+						{
+							["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+							["criteriaID"] = 6,		-- Forager's Gloves [Criteria]
+							["itemID"] = 86566,	-- Forager's Gloves [Item]
+							["dr"] = 11,
+						},
 						dr(11, {
-							i(86566),
 							i(87618),
 						}),
 						dr(10, {
@@ -675,7 +680,12 @@ _.Zones =
 						dr(9, i(87621)),
 					}),
 					n(50789, { 		-- Nessos the Oracle
-						dr(29, i(86584)),	-- Toy
+						{
+							["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+							["criteriaID"] = 9,		-- Hardened Shell [Criteria]
+							["itemID"] = 86584,		-- Hardened Shell [Item]
+							["dr"] = 29,
+						},
 						dr(22, i(87615)),
 						dr(11, i(87621)),
 						dr(10, {

@@ -1581,9 +1581,20 @@ _.Zones =
 							qp202(qg(102196, q(40876))),	-- 'Locke, Stock and Barrel
 						}),
 						n(-184, { -- Herbalism
-							q(40013), -- Aethril Sample
-							q(40015), -- Ragged Strips of Silk
-							q(40017), -- A Slip of the Hand
+							i(129117, {	-- Aethril Sample
+								q(40013), -- Aethril Sample
+							}),
+							i(129135, {	-- Ragged Strips of Silk
+								q(40015), -- Ragged Strips of Silk
+							}),
+							q(40017, { -- A Slip of the Hand
+								sp(193417),	-- Herbalism Technique: Aethril (Rank 3)
+							}),
+							i(129122, {	-- Felwort Sample
+								q(40040, { --Felwort Sample
+									sp(193430), -- Herbalism Technique: Felwort (Rank 1)
+								}),
+							}),
 						}),
 						n(-185, { -- Inscription
 							q(39938), -- Containing the Demon Within
