@@ -302,7 +302,9 @@ end
 bubbleDown = function(data, t)
 	for i, group in ipairs(t) do
 		for key, value in pairs(data) do
-			group[key] = value;
+			if not group[key] then
+				group[key] = value;
+			end
 		end
 		if group.groups then bubbleDown(data, group.groups); end
 		if group.g then bubbleDown(data, group.g); end
