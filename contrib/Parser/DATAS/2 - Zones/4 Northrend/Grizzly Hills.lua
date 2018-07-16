@@ -532,13 +532,14 @@ _.Zones =
 								["qg"] = 26604,	-- Mack Fearsen
 								["sourceQuests"] = {12484},
 							}),
-							q(12037, {	--  Search and Rescue
+							qdg(q(12037, {	--  Search and Rescue
 								["qg"] = 26604,	-- Mack Fearsen
 								["sourceQuests"] = {12029},
-							}),
+							})),
 							q(12038, {	--  Seared Scourge
 								["qg"] = 26604,	-- Mack Fearsen
 								["sourceQuests"] = {12029},
+								["isDaily"] = true,
 							}),
 							qdg(q(12238, {	--  Cleansing Drak'Tharon
 								["qg"] = 26787,	-- Image of Drakuru
@@ -723,6 +724,7 @@ _.Zones =
 								["qg"] = 26377,	-- Squire Percy
 							}),
 							q(12770, {	--  Reallocating Resources [A]
+								-- NOTE: This quest is mutually exclusive with 12789 (Into the Breach) from Dragonblight
 								["qg"] = 26212,	-- Captain Gryan Stoutmantle
 							}),
 						}),
