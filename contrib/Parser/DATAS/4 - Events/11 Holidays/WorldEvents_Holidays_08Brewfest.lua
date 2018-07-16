@@ -4,7 +4,7 @@
 _.WorldEvents =
 {
 	n(-3, { -- Holiday
-		["groups"] = bubbleDown({["u"] = 24}, {
+		["groups"] = bubbleDown({["u"] = 24}, { -- Brewfest
 			n(-56, { -- Brewfest
 				n(-4, { -- Achievement
 					ach(1683, { -- Brewmaster
