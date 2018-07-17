@@ -266,7 +266,7 @@ _.Zones =
 								i(98177),	-- Druid F,G - Rogue - Monk B,W - DH
 								i(98175),	-- Druid F,G - Rogue - Monk B,W - DH
 								i(98176),	-- Druid F,G - Rogue - Monk B,W - DH
-								i(98173),	-- Druid F,G - Rogue - Monk B,W - DH
+								i(98173),	-- Tidesplitter Jerkin*
 								i(98178),	-- Druid F,G - Rogue - Monk B,W - DH
 								i(98179),	-- Druid F,G - Rogue - Monk B,W - DH
 								i(98226),	-- Mage - Pal H - Druid B,R - Priest - Shaman Ele,R - Lock - Monk M

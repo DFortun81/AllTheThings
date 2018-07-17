@@ -236,6 +236,7 @@ _.Zones =
 								i(89437),	-- Greenstone Sabatons
 								i(89505),	-- Greenstone Seal
 								i(89435),	-- Greenstone Vambraces
+								i(89477),	-- Hozen-Crafted Boots*
 								i(92853),	-- Hozen-Speed Bindings
 								i(92852),	-- Hozen-Speed Boots
 								i(92851),	-- Hozen-Speed Britches
@@ -358,6 +359,7 @@ _.Zones =
 								i(89437),	-- Greenstone Sabatons
 								i(89505),	-- Greenstone Seal
 								i(89435),	-- Greenstone Vambraces
+								i(89477),	-- Hozen-Crafted Boots*
 								i(92853),	-- Hozen-Speed Bindings
 								i(92852),	-- Hozen-Speed Boots
 								i(92851),	-- Hozen-Speed Britches
