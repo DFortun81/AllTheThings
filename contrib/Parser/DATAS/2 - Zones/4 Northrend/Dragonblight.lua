@@ -1116,7 +1116,7 @@ _.Zones =
 										i(38042),	-- Scourge Ghoul Collar
 									},
 								}),
-								q(12442, {	-- Wanted: Onslaught Commander Iustus [A]
+								qa(12442, {	-- Wanted: Onslaught Commander Iustus [A]
 									["groups"] = {
 										i(38115),	-- Sabatons of the Enforcer
 										i(38054),	-- Paingiver Wristguards
