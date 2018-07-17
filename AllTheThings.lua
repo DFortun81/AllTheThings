@@ -6468,7 +6468,7 @@ function app:GetDataCache()
 			db = {};
 			db.lvl = 98;
 			db.expanded = false;
-			db.text = GetCategoryInfo(15275);
+			db.text = GetCategoryInfo(15304);
 			db.icon = "Interface\\Icons\\achievement_level_110";
 			db.g = app.Categories.ClassHalls;
 			table.insert(g, db);

@@ -760,7 +760,7 @@ _.Zones =
 								["sourceQuests"] = {12329},
 							}),
 						-- Need Header for "Heartwood Trading Post"
-							q(12027, {	-- Mr. Floppy's Perilous Adventure [A]
+							qa(12027, {	-- Mr. Floppy's Perilous Adventure [A]
 								["groups"] = {
 									i(38714),	-- Path-Cutter's Cord
 									i(39018),	-- Boots of Safe Travel
