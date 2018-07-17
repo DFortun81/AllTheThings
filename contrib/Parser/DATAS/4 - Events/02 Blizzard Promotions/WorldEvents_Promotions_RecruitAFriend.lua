@@ -25,7 +25,9 @@ _.WorldEvents =
 				i(34519), 	-- Silver Pig
 				p(231),		-- Jade Tiger
 				n(-548, {	-- China Only
-					ach(3636)	-- Jade Tiger
+					ach(3636, {	-- Jade Tiger
+						["collectible"] = false,
+					}),
 				}),
 				i(49664), 	-- Zipao Tiger
 			}),
