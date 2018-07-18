@@ -8451,6 +8451,12 @@ app.events.VARIABLES_LOADED = function()
 		app.SetPortraitTexture = _G["SetPortraitTextureFromCreatureDisplayID"];
 		app.GetCurrentMapID = function()
 			local uiMapID = C_Map.GetBestMapForUnit("player");
+			
+			-- Onyxia's Lair fix
+			local text_to_mapID = app.L("ZONE_TEXT_TO_MAP_ID");
+			local otherMapID = text_to_mapID[GetRealZoneText()] or text_to_mapID[GetSubZoneText()];
+			if otherMapID then uiMapID = otherMapID; end
+			
 			print("Current UI Map ID: ", uiMapID);
 			return app.BFAToLegionMapID(uiMapID);
 		end
