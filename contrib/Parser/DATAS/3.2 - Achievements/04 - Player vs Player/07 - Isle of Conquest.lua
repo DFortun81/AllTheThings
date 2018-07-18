@@ -1,0 +1,92 @@
+--------------------------------------------------
+--   G R O U P    F I N D E R    M O D U L E    --
+--------------------------------------------------
+
+_.Achievements = 
+{
+	n(-9958, { -- Player vs Player
+		["groups"] = {
+			n(-9988, { -- Isle of Conquest
+				["groups"] = {
+					ach(3777, {	-- Isle of Conquest Veteran
+						ach(3776),	-- Isle of Conquest Victory
+					}),
+					ach(3845, {	-- Isle of Conquest All-Star
+						crit(1),	-- Destroy a vehicle
+						crit(2),	-- Assault a base
+						crit(3),	-- Defend a base
+						crit(4),	-- Kill a player
+					}),
+					a(ach(3851, {	-- Mine (Alliance)
+						a(ach(3846)),	-- Resource Glut
+					})),
+					h(ach(4177, {	-- Mine (Horde)
+						h(ach(4176)),	-- Resource Glut
+					})),
+					ach(3847, {	-- Four Car Garage
+						crit(1),	-- Glaive Thrower
+						crit(2),	-- Siege Engine
+						crit(3),	-- Demolisher
+						crit(4),	-- Catapult
+					}),
+					ach(3848),	-- A-bomb-inable
+					ach(3849),	-- A-bomb-ination
+					ach(3850, {	-- Mowed Down
+						crit(1),	-- Vehicles killed
+						crit(2),	-- Players killed
+					}),
+					ach(3852),	-- Cut the Blue Wire... No the Red Wire!
+					ach(3853, {	-- All Over the Isle
+						crit(1),	-- Workshop
+						crit(2),	-- Hangar
+						crit(3),	-- Docks
+						crit(4),	-- Horde Keep
+						crit(5),	-- Alliance Keep
+					}),
+					ach(3854),	-- Back Door Job
+					a(ach(3856, {	-- Demolition Derby (Alliance)
+						crit(1),	-- Glaive Thrower
+						crit(2),	-- Demolisher
+						crit(3),	-- Catapult
+						crit(4),	-- Siege Engine
+					})),
+					h(ach(4256, {	-- Demolition Derby (Horde)
+						crit(1),	-- Glaive Thrower
+						crit(2),	-- Demolisher
+						crit(3),	-- Catapult
+						crit(4),	-- Siege Engine
+					})),
+					ach(3855),	-- Glaive Grave
+					a(ach(3857, {	-- Master of Isle of Conquest (Alliance)
+						a(i(49052)),	-- Tabard of Conquest (Alliance)
+						crit(1),	-- Isle of Conquest Veteran
+						crit(2),	-- Mine
+						crit(3),	-- Four Car Garage
+						crit(4),	-- A-bomb-inable
+						crit(5),	-- A-bomb-ination
+						crit(6),	-- Mowed Down
+						crit(7),	-- Cut the Blue Wire... No the Red Wire!
+						crit(8),	-- All Over the Isle
+						crit(9),	-- Back Door Job
+						crit(10),	-- Demolition Derby
+						crit(11),	-- Glaive Grave
+					})),
+					h(ach(3957, {	-- Master of Isle of Conquest (Horde)
+						h(i(49054)),	-- Tabard of Conquest (Horde)
+						crit(1),	-- Isle of Conquest Veteran
+						crit(2),	-- Mine
+						crit(3),	-- Four Car Garage
+						crit(4),	-- A-bomb-inable
+						crit(5),	-- A-bomb-ination
+						crit(6),	-- Mowed Down
+						crit(7),	-- Cut the Blue Wire... No the Red Wire!
+						crit(8),	-- All Over the Isle
+						crit(9),	-- Back Door Job
+						crit(10),	-- Demolition Derby
+						crit(11),	-- Glaive Grave
+					})),
+				},
+			}),
+		},
+	}),
+};

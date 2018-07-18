@@ -6453,7 +6453,7 @@ function app:GetDataCache()
 			db.text = DUNGEONS_BUTTON;
 			table.insert(g, db);
 		end
-		
+		--[[ DISABLED DUE TO API CHANGES IN BfA; WILL RE-ENABLE ONCE FIXED
 		-- Achievements
 		if app.Categories.Achievements then
 			db = app.CreateAchievement(4496, app.Categories.Achievements);	-- It's Over Nine Thousand
@@ -6462,7 +6462,7 @@ function app:GetDataCache()
 			db.text = TRACKER_HEADER_ACHIEVEMENTS;
 			table.insert(g, db);
 		end
-		
+		--]]
 		-- Class Halls
 		if app.Categories.ClassHalls then
 			db = {};
@@ -6514,7 +6514,7 @@ function app:GetDataCache()
 			db.collectible = false;
 			table.insert(g, db);
 		end
-		
+		--[[ DISABLED DUE TO API CHANGES IN BfA; WILL RE-ENABLE ONCE FIXED
 		-- Professions
 		if app.Categories.Professions then
 			db = app.CreateAchievement(10583, {});
@@ -6525,7 +6525,7 @@ function app:GetDataCache()
 			db.collectible = false;
 			table.insert(g, db);
 		end
-		
+		--]]
 		-- Gear Sets
 		if app.Categories.GearSets then
 			db = app.CreateAchievement(11761, app.Categories.GearSets);
