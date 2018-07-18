@@ -575,7 +575,7 @@ _.Zones =
 					}),
 					nh(19772, {	-- Spirit Sage Gartok
 						["groups"] = {
-							item(28558, { -- Spirit Shard
+							currency(1704, { -- Spirit Shard
 								["groups"] = {
 									i(28559),	-- Exorcist's Plate Helm
 									i(28560),	-- Exorcist's Lamellar Helm
@@ -594,7 +594,7 @@ _.Zones =
 					}),
 					na(19773, {	-- Spirit Sage Zran
 						["groups"] = {
-							item(28558, { -- Spirit Shard
+							currency(1704, { -- Spirit Shard
 								["groups"] = {
 									i(28559),	-- Exorcist's Plate Helm
 									i(28560),	-- Exorcist's Lamellar Helm

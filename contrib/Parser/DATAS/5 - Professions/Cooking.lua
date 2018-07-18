@@ -1,5 +1,5 @@
 -- Cooking - Skill ID 185 / Spell ID 2550
-profession(185, { -- Cooking
+profession(2548, { -- Cooking
 	n(-37, {	-- Discovery
 		["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
 		["groups"] = {

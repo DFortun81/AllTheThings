@@ -303,6 +303,7 @@ _.ClassHalls =
 					["groups"] = {
 						i(147537), 	-- A Tiny Set of Warglaives Toy
 						i(143727), 	-- Champion's Salute Toy
+						i(133670),  -- Slayer's Tabard
 						i(140560),	-- Warglaive of the Fel Hammer
 						gs(548, { 	-- Battlegear of the Shattered Abyss
 							i(139718), -- Head

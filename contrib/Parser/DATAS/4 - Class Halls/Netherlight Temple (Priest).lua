@@ -22,7 +22,6 @@ _.ClassHalls =
 				["modelScale"] = 1.5,
 			}),
 			n(-17, { -- Quests
-				--[[
 				n(-100001, { -- Artifact
 					qh(40705, { -- Priestly Matters	
 						["groups"] = {
@@ -143,7 +142,6 @@ _.ClassHalls =
 						},
 					}),
 				}),
-				--]]
 				qg(110564, q(43390, {	-- Forgotten Shadows
 					["groups"] = {
 					},

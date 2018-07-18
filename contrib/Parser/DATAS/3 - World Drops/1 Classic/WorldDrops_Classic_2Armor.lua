@@ -329,7 +329,7 @@ _.WorldDrops =
 					i(24808),	-- Unyielding Chain Vest
 					un(7, i(2566)), -- Sacrificial Robes
 					i(2800),	-- Black Velvet Robes
-					un(7, i(3000)),	-- Brood Mother Carapace
+					i(3000),	-- Brood Mother Carapace
 					un(7, i(3019)), -- Noble's Robe
 					i(3053),	-- Humbert's Chestpiece
 					un(7, i(3330)),	-- Dargol's Hauberk
@@ -569,9 +569,9 @@ _.WorldDrops =
 					i(2277),	-- Necromancer Leggings
 					un(7, i(3022)),	-- Bluegill Breeches
 					un(7, i(3563)),	-- Seafarer's Pantaloons
-					un(7, i(38513)),	-- Boarhide Leggings
+					i(38513),	-- Boarhide Leggings
 					un(7, i(4434)),	-- Scarecrow Trousers
-					un(7, i(4478)),	-- Iridescent Scale Leggings
+					i(4478),	-- Iridescent Scale Leggings
 					un(7, i(45052)),	-- Gruffscale Leggings
 					un(7, i(4723)),	-- Humbert's Pants
 					i(4800),	-- Mighty Chain Pants

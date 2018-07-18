@@ -368,7 +368,7 @@ _.Zones =
 						dr(01.2, i(68749)),	-- Imbued Disciple's Bracers
 						dr(01.2, i(68748)),	-- Imbued Disciple's Cloak
 						dr(01.1, i(68753)),	-- Imbued Infantry Bracers
-						un(7, i(38513)), 	-- Boarhide Leggings,						
+						i(38513), 	-- Boarhide Leggings,						
 					}), 
 					n(99, { 	-- Morgaine the Sly
 						dr(13.0, i(68743)),	-- Imbued Infantry Cloak
@@ -385,7 +385,7 @@ _.Zones =
 						dr(01.1, i(68748)),	-- Imbued Disciple's Cloak
 						dr(01.0, i(68754)),	-- Imbued Disciple's Boots
 						dr(01.0, i(68761)),	-- Imbued Infantry Boots
-						un(7, i(1917)), 	-- Jeweled Dagger
+						i(1917), 	-- Jeweled Dagger
 					}), 
 					n(471, { 	-- Mother Fang
 						dr(39.0, i(68743)),	-- Imbued Infantry Cloak
@@ -403,7 +403,7 @@ _.Zones =
 						dr(01.0, i(68747)),	-- Imbued Disciple's Sash
 						dr(01.0, i(68759)),	-- Imbued Gypsy Cloak
 						dr(01.0, i(68760)),	-- Imbued Infantry Gauntlets
-						un(7, i(3000)),	-- Brood Mother Carapace					
+						i(3000),	-- Brood Mother Carapace					
 					}), 
 					n(61, { 	-- Thuros Lightfingers
 						dr(16.0, i(68744)),	-- Imbued Pioneer Cloak

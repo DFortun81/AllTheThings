@@ -913,8 +913,8 @@ _.Zones =
 						dr(01.1, i(7412)),	-- Infiltrator Gloves
 						dr(01.0, i(9853)),	-- Conjurer's Cinch
 						dr(01.0, i(7422)),	-- Phalanx Girdle
-						un(7, i(4478)),	-- Iridescent Scale Leggings	
-						un(7, i(1604)),	-- Chromatic Sword			
+						i(4478),	-- Iridescent Scale Leggings	
+						i(1604),	-- Chromatic Sword			
 					}), 
 					n(14492, { 	-- Verifonix
 						dr(28.0, i(9867)),	-- Renegade Cloak

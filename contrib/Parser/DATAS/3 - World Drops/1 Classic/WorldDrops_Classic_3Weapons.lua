@@ -165,7 +165,7 @@ _.WorldDrops =
 					i(15245),	-- Vorpal Dagger
 					i(15246),	-- Demon Blade
 					i(15247),	-- Bloodstrike Dagger
-					un(7, i(1917)),	-- Jeweled Dagger
+					i(1917),	-- Jeweled Dagger
 					i(1935),	-- Assassin's Blade
 					un(7, i(1936)),	-- Goblin Screwdriver
 					un(7, i(2020)),	-- Hollowfang Blade
@@ -745,7 +745,7 @@ _.WorldDrops =
 					i(15257),	-- Shin Blade
 					i(15258),	-- Divine Warblade
 					un(7, i(16039)),	-- Ta'Kierthan Songblade
-					un(7, i(1604)),	-- Chromatic Sword
+					i(1604),	-- Chromatic Sword
 					i(1625),	-- Exquisite Flamberge
 					i(1975),	-- Pysan's Old Greatsword
 					i(1982),	-- Nightblade
