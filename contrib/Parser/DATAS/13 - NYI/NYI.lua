@@ -216,7 +216,6 @@ _.NeverImplemented =
 	})))),
 	un(1, model(17890, i(25596))), 	-- Peep's Whistle	 					(Never added in Game)
 	un(15, i(31279)),	-- Enchanted Illidari Tabard [Temp Quest Item]
-	un(1, i(39263)),	-- Dissevered Leggings 									(Patchwerk 10 Man Normal, was never available to players.)
 	un(1, i(48730)),	-- Sunstrider's Gauntlets of Conquest
 	un(1, i(48731)),	-- Sunstrider's Hood of Conquest
 	un(1, i(48732)),	-- Sunstrider's Leggings of Conquest

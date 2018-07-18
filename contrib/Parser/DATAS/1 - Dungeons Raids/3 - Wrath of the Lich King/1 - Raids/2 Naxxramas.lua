@@ -209,7 +209,7 @@ _.Instances =
 									i(39275),	-- Contagion Gloves
 									i(39262),	-- Gauntlets of Combined Strength
 									i(39261),	-- Tainted Girdle of Mending
-									un(1, i(39263)),	-- Dissevered Leggings
+									i(39263),	-- Dissevered Leggings
 									i(39273),	-- Sullen Cloth Boots
 								},
 								["description"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!"
@@ -385,7 +385,7 @@ _.Instances =
 									i(39298),	-- Waistguard of the Tutor
 									i(39217),	-- Avenging Combat Leggings
 									i(39293),	-- Blackened Legplates of Feugen
-									un(1, i(39263)),	-- Dissevered Leggings
+									i(39263),	-- Dissevered Leggings
 									i(39224),	-- Leggings of Discord
 									i(39280),	-- Leggings of Innumerable Barbs
 									i(39309),	-- Leggings of the Instructor
