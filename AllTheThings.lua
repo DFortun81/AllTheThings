@@ -8457,7 +8457,7 @@ app.events.VARIABLES_LOADED = function()
 			local otherMapID = text_to_mapID[GetRealZoneText()] or text_to_mapID[GetSubZoneText()];
 			if otherMapID then uiMapID = otherMapID; end
 			
-			print("Current UI Map ID: ", uiMapID);
+			-- print("Current UI Map ID: ", uiMapID);
 			return app.BFAToLegionMapID(uiMapID);
 		end
 		app.GetMapName = function(mapID)
