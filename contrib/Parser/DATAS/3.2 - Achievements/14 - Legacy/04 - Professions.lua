@@ -4,57 +4,31 @@
 
 _.Achievements = 
 {
-	n(-9960, { -- Professions
+	n(-9968, { -- Legacy
 		["groups"] = {
-			n(-9973, { -- First Aid
-				["description"] = "WARNING! All First Aid achievements will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH THEM BEFORE THEN!",
+			n(-9960, { -- Professions
 				["groups"] = {
 					ach(10599, {	-- Legion Medic (800)
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
 						["groups"] = {
-							ach(131, {	-- Journeyman Medic (150)
-								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-							}),
-							ach(132, {	-- Expert Medic (225)
-								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-							}),
-							ach(133, {	-- Artisan Medic (300)
-								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-							}),					
-							ach(134, {	-- Master Medic (375)
-								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-							}),					
-							ach(135, {	-- Grand Master Medic (450)
-								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-							}),					
-							ach(4918, {	-- Illustrious Grand Master Medic (525)
-								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-							}),					
-							ach(6838, {	-- Zen Master Medic (600)
-								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-							}),					
-							ach(9505, {	-- Draenor Medic (700)
-								["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-							}),					
+							ach(131),	-- Journeyman Medic (150)
+							ach(132),	-- Expert Medic (225)
+							ach(133),	-- Artisan Medic (300)				
+							ach(134),	-- Master Medic (375)			
+							ach(135),	-- Grand Master Medic (450)			
+							ach(4918),	-- Illustrious Grand Master Medic (525)				
+							ach(6838),	-- Zen Master Medic (600)				
+							ach(9505),	-- Draenor Medic (700)				
 						},
 					}),			
-					ach(137, {	-- Stocking Up
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-					}),					
-					ach(5480, {	-- Preparing for Disaster
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-					}),					
-					ach(141, {	-- Ultimate Triage
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
-					}),					
+					ach(137),	-- Stocking Up			
+					ach(5480),	-- Preparing for Disaster				
+					ach(141),	-- Ultimate Triage				
 					ach(11138, {	-- Is There a Medic in the Zone? (10 of 16)
-						["description"] = "See Field Medic for all 16 items and suggested locations.\nWARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+						["description"] = "See Field Medic for all 16 items and suggested locations.",
 					}),
 					ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
-						["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
 						["groups"] = {
 							title(340, {	-- TITLE: Field Medic!
-								["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!\nNOTE: You should use Premade Group Finder. You have much better odds in a group.\n\nWARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
 								["groups"] = {
 									{
 										["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -170,10 +144,39 @@ _.Achievements =
 									},
 								},
 							}),
-						},	
+						},
 					}),
-				},
+					ach(10580, {	-- Heroic Skills to Pay the Bills(800)
+						crit(1),	-- Legion Fisherman
+						crit(2),	-- Legion Medic
+						crit(3),	-- Legion Cook
+						crit(4),	-- Legion Archaeologist
+						ach(9506, {	-- Savage Skills to Pay the Bills (700)
+							crit(1),	-- Draenor Fisherman
+							crit(2),	-- Draenor Medic
+							crit(3),	-- Draenor Cook
+							crit(4),	-- Draenor Archaeologist
+						}),
+						ach(6836, {	-- Serious Skills to Pay the Bills (600)
+							crit(1),	-- Zen Master Fisherman
+							crit(2),	-- Zen Master Medic
+							crit(3),	-- Zen Master Cook
+							crit(4),	-- Zen Master Archaeologist
+						}),
+						ach(4915, {	-- More Skills to Pay the Bills (525)
+							crit(1),	-- Illustrious Grand Master Fisherman
+							crit(2),	-- Illustrious Grand Master Medic
+							crit(3),	-- Illustrious Grand Master Cook
+							crit(4),	-- Illustrious Grand Master Archaeologist
+						}),
+						ach(730, {	-- Skills to Pay the Bills (450)
+							crit(1),	-- Grand Master Fisherman
+							crit(2),	-- Grand Master First Aid
+							crit(3),	-- Grand Master Cook
+						}),
+					}),
+				},	
 			}),
 		},	
-	}),
+	}),		
 };
