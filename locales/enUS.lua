@@ -2312,7 +2312,7 @@ AllTheThings.Locales.enUS = {
 
 	-- This is necessary to have because Blizzard does not always have the correct map ID at the time of zone change.
 	["ZONE_TEXT_TO_MAP_ID"] = {
-		["Onyxia's Lair"] = 248,
+		[C_Map.GetMapInfo(248).name or "Onyxia's Lair"] = 248,
 		["The Trial of Style"] = -777,
 	};
 
