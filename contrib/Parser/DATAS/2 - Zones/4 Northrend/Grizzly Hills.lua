@@ -110,7 +110,7 @@ _.Zones =
 								["qg"] = 26875,	-- Lieutenant Dumont
 								["sourceQuests"] = {12294},
 							}),
-							q(12307, {	-- Wolfsbane Root [A]
+							qa(12307, {	-- Wolfsbane Root [A]
 								["groups"] = {
 									i(39062),	-- Herbalist's Pauldrons
 									i(39105),	-- Girdle of Growing Vines
@@ -233,7 +233,7 @@ _.Zones =
 								["qg"] = 26226,	-- Brugar Stoneshear
 								["sourceQuests"] = {12003},
 							}),
-							q(12014, {	-- Steady as a Rock? [A]
+							qa(12014, {	-- Steady as a Rock? [A]
 								["groups"] = {
 									i(38717),	-- Dusty Miner's Leggings
 									i(39021),	-- Ectoplasm Stained Wristguards
