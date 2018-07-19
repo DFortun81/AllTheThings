@@ -138,6 +138,16 @@ _.Instances =
 										i(78815),	-- Time Lord's Leggings
 										i(78803),	-- Blackfang Battleweave Legguards
 									}),
+									i(78497),	-- Breathstealer Band
+									i(78498),	-- Hardheart Ring
+									i(78495),	-- Infinite Loop
+									i(78494),	-- Seal of Primordial Shadow
+									i(78496),	-- Signet of Suturing
+									i(77982),	-- Bone-Link Fetish
+									i(77980),	-- Cunning of the Cruel
+									i(77983),	-- Indomitable Pride
+									i(77979),	-- Vial of Shadows
+									i(77981),	-- Windward Heart
 								},
 								["crs"] = {
 									55265, -- Morchok
@@ -162,16 +172,6 @@ _.Instances =
 									i(78376),	-- Sporebeard Gauntlets
 									i(78385),	-- Girdle of Shattered Stone
 									i(78386),	-- Pillarfoot Greaves
-									i(78497),	-- Breathstealer Band
-									i(78498),	-- Hardheart Ring
-									i(78495),	-- Infinite Loop
-									i(78494),	-- Seal of Primordial Shadow
-									i(78496),	-- Signet of Suturing
-									i(77982),	-- Bone-Link Fetish
-									i(77980),	-- Cunning of the Cruel
-									i(77983),	-- Indomitable Pride
-									i(77979),	-- Vial of Shadows
-									i(77981),	-- Windward Heart
 								})),
 								cr(55308, e(324, {	-- Warlord Zon'ozz
 									i(78399),	-- Finger of Zon'ozz
@@ -181,17 +181,6 @@ _.Instances =
 									i(78395),	-- Belt of Flayed Skin
 									i(78398),	-- Cord of the Slain Champion
 									i(78396),	-- Treads of Crushed Flesh
-									i(78497),	-- Breathstealer Band
-									i(78498),	-- Hardheart Ring
-									i(78495),	-- Infinite Loop
-									i(78494),	-- Seal of Primordial Shadow
-									i(78496),	-- Signet of Suturing
-									i(77982),	-- Bone-Link Fetish
-									i(77980),	-- Cunning of the Cruel
-									i(77983),	-- Indomitable Pride
-									i(77969),	-- Seal of the Seven Signs
-									i(77979),	-- Vial of Shadows
-									i(77981),	-- Windward Heart
 								})),
 								cr(55312, e(325, {	-- Yor'sahj the Unsleeping
 									i(152979),	-- Puddle of Black Liquid (PET!)
@@ -201,18 +190,6 @@ _.Instances =
 									i( 78412),	-- Heartblood Wristplates
 									i( 78408),	-- Interrogator's Bloody Footpads
 									i( 78411),	-- Mindstrainer Treads
-									i( 78497),	-- Breathstealer Band
-									i( 78498),	-- Hardheart Ring
-									i( 78495),	-- Infinite Loop
-									i( 78494),	-- Seal of Primordial Shadow
-									i( 78496),	-- Signet of Suturing
-									i( 77982),	-- Bone-Link Fetish
-									i( 77980),	-- Cunning of the Cruel
-									i( 77983),	-- Indomitable Pride
-									i( 77971),	-- Insignia of the Corrupted Mind
-									i( 77970),	-- Soulshifter Vortex
-									i( 77979),	-- Vial of Shadows
-									i( 77981),	-- Windward Heart
 								})),
 								cr(55689, e(317, {	-- Hagara the Stormbinder
 									i(78426),	-- Lightning Rod
@@ -221,18 +198,6 @@ _.Instances =
 									i(78428),	-- Girdle of the Grotesque
 									i(78424),	-- Runescriven Demon Collar
 									i(78423),	-- Treads of Dormant Dreams
-									i(78497),	-- Breathstealer Band
-									i(78498),	-- Hardheart Ring
-									i(78495),	-- Infinite Loop
-									i(78427),	-- Ring of the Riven
-									i(78494),	-- Seal of Primordial Shadow
-									i(78421),	-- Signet of Grasping Mouths
-									i(78496),	-- Signet of Suturing
-									i(77982),	-- Bone-Link Fetish
-									i(77980),	-- Cunning of the Cruel
-									i(77983),	-- Indomitable Pride
-									i(77979),	-- Vial of Shadows
-									i(77981),	-- Windward Heart
 								})),
 							}),
 							ach(6107, {	-- Fall of Deathwing	
@@ -244,18 +209,6 @@ _.Instances =
 									i(78444),	-- Dragonfracture Belt
 									i(78439),	-- Stillheart Warboots
 									i(78442),	-- Treads of Sordid Screams
-									i(78497),	-- Breathstealer Band
-									i(78440),	-- Curled Twilight Claw
-									i(77972),	-- Creche of the Final Dragon
-									i(78498),	-- Hardheart Ring
-									i(78495),	-- Infinite Loop
-									i(78494),	-- Seal of Primordial Shadow
-									i(78496),	-- Signet of Suturing
-									i(77982),	-- Bone-Link Fetish
-									i(77980),	-- Cunning of the Cruel
-									i(77983),	-- Indomitable Pride
-									i(77979),	-- Vial of Shadows
-									i(77981),	-- Windward Heart
 								})),
 								cr(56427, e(332, {	-- Warmaster Blackthorn
 									i(78453),	-- Ataraxis, Cudgel of the Warmaster
@@ -266,17 +219,6 @@ _.Instances =
 									i(78455),	-- Belt of the Beloved Companion
 									i(78460),	-- Goriona's Collar
 									i(78457),	-- Janglespur Jackboots
-									i(78497),	-- Breathstealer Band
-									i(78498),	-- Hardheart Ring
-									i(78495),	-- Infinite Loop
-									i(78494),	-- Seal of Primordial Shadow
-									i(78496),	-- Signet of Suturing
-									i(77982),	-- Bone-Link Fetish
-									i(77980),	-- Cunning of the Cruel
-									i(77983),	-- Indomitable Pride
-									i(77973),	-- Starcatcher Compass
-									i(77979),	-- Vial of Shadows
-									i(77981),	-- Windward Heart
 								})),
 								cr(53879, e(318, {	-- Spine of Deathwing
 									i(152980),	-- Elementium Back Plate (PET!)
