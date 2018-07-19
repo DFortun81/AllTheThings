@@ -295,7 +295,7 @@ _.Instances =
 						},
 						["description"] = "The droprates are really really low. Spend the time you would otherwise waste in here complaining about it on the forums instead.\n\n - Crieve",
 					}),
-					d(4, {	-- Normal
+					d(1, {	-- Normal [Lucetia Note: Do not change the dungeon # here unless you let Crieve or myself know]
 						["ignoreBonus"] = true,
 						["difficulties"] = { 3, 4 },
 						["groups"] = {
