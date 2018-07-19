@@ -1506,6 +1506,15 @@ AllTheThings.Locales.enUS = {
 		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,		-- Mage Tower
 		[-10049] = BROKENSHORE_BUILDING_COMMANDCENTER,	-- Command Center
 		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR, -- Nether Disruptor
+		[-10051] = select(1,GetCategoryInfo(92)),		-- Character
+		[-10052] = select(1,GetCategoryInfo(15284),		-- Battle for Azeroth
+		[-10053] = select(1,GetCategoryInfo(15285),		-- Battle Dungeon
+		[-10054] = select(1,GetCategoryInfo(15286),		-- Battle Raid
+		[-10055] = select(1,GetCategoryInfo(15301),		-- Expansion Features
+		[-10056] = select(1,GetCategoryInfo(15307),		-- Island Expeditions
+		[-10057] = select(1,GetCategoryInfo(15308),		-- War Effort
+		[-10058] = select(1,GetCategoryInfo(15283),		-- World
+		[-10059] = select(1,GetCategoryInfo(15302),		-- Pandaria Scenarios
 
 		[-100001] = ITEM_QUALITY6_DESC, 				-- Artifact
 

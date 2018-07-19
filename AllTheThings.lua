@@ -6453,7 +6453,7 @@ function app:GetDataCache()
 			db.text = DUNGEONS_BUTTON;
 			table.insert(g, db);
 		end
-		--[[ DISABLED DUE TO API CHANGES IN BfA; WILL RE-ENABLE ONCE FIXED
+		
 		-- Achievements
 		if app.Categories.Achievements then
 			db = app.CreateAchievement(4496, app.Categories.Achievements);	-- It's Over Nine Thousand
