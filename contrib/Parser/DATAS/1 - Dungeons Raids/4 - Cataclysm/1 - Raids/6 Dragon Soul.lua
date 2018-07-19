@@ -181,15 +181,17 @@ _.Instances =
 									i(78395),	-- Belt of Flayed Skin
 									i(78398),	-- Cord of the Slain Champion
 									i(78396),	-- Treads of Crushed Flesh
+									i(77969),	-- Seal of the Signs [Dropped for Lucetia]
 								})),
 								cr(55312, e(325, {	-- Yor'sahj the Unsleeping
 									i(152979),	-- Puddle of Black Liquid (PET!)
-									i( 78409),	-- Experimental Specimen Slicer
-									i( 78407),	-- Spire of Coagulated Globules
-									i( 78410),	-- Scalpel of Unrelenting Agony (not listed on drop table on wowhead)
-									i( 78412),	-- Heartblood Wristplates
-									i( 78408),	-- Interrogator's Bloody Footpads
-									i( 78411),	-- Mindstrainer Treads
+									i(78409),	-- Experimental Specimen Slicer
+									i(78407),	-- Spire of Coagulated Globules
+									i(78410),	-- Scalpel of Unrelenting Agony (not listed on drop table on wowhead)
+									i(78412),	-- Heartblood Wristplates
+									i(78408),	-- Interrogator's Bloody Footpads
+									i(78411),	-- Mindstrainer Treads
+									i(77971), 	-- Insignia of the Corrupted Mind
 								})),
 								cr(55689, e(317, {	-- Hagara the Stormbinder
 									i(78426),	-- Lightning Rod
@@ -198,6 +200,8 @@ _.Instances =
 									i(78428),	-- Girdle of the Grotesque
 									i(78424),	-- Runescriven Demon Collar
 									i(78423),	-- Treads of Dormant Dreams
+									i(78427),	-- Ring of the Raven
+									i(78421),	-- Signet of Grasping Mouths
 								})),
 							}),
 							ach(6107, {	-- Fall of Deathwing	
@@ -209,6 +213,7 @@ _.Instances =
 									i(78444),	-- Dragonfracture Belt
 									i(78439),	-- Stillheart Warboots
 									i(78442),	-- Treads of Sordid Screams
+									i(77972),	-- Creche of the Final Dragon
 								})),
 								cr(56427, e(332, {	-- Warmaster Blackthorn
 									i(78453),	-- Ataraxis, Cudgel of the Warmaster
