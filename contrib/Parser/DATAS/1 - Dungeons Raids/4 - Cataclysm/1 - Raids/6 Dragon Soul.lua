@@ -11,216 +11,8 @@ _.Instances =
 					d(7, {	-- LFR
 						["ignoreBonus"] = true,
 						["groups"] = {
-							ach(6106, {	-- Siege of Wyrmrest Temple
-								cr(55265, e(311, {	-- Morchok
-									i(78379),	-- Hand of Morchok
-									i(78383),	-- Vagaries of Time (not listed on drop table on wowhead)
-									i(78382),	-- Petrified Fungal Heart
-									i(78378),	-- Brackenshell Shoulderplates
-									i(78381),	-- Mosswrought Shoulderguards
-									i(78375),	-- Underdweller's Spaulders
-									i(78380),	-- Robe of Glowing Stone
-									i(78384),	-- Mycosynth Wristguards
-									i(78377),	-- Rockhide Bracers
-									i(78376),	-- Sporebeard Gauntlets
-									i(78385),	-- Girdle of Shattered Stone
-									i(78386),	-- Pillarfoot Greaves
-									i(78497),	-- Breathstealer Band
-									i(78498),	-- Hardheart Ring
-									i(78495),	-- Infinite Loop
-									i(78494),	-- Seal of Primordial Shadow
-									i(78496),	-- Signet of Suturing
-									i(77982),	-- Bone-Link Fetish
-									i(77980),	-- Cunning of the Cruel
-									i(77983),	-- Indomitable Pride
-									i(77979),	-- Vial of Shadows
-									i(77981),	-- Windward Heart
-								})),
-								cr(55308, e(324, {	-- Warlord Zon'ozz
-									i(78866, {	-- Gauntlets of the Corrupted Conqueror
-										i(78770),	-- Gauntlets of Radiant Glory
-										i(78768),	-- Gloves of Radiant Glory
-										i(78772),	-- Handguards of Radiant Glory
-										i(78777),	-- Gloves of Dying Light
-										i(78778),	-- Handwraps of Dying Light
-										i(78776),	-- Gloves of the Faceless Shroud
-									}),
-									i(78867, {	-- Gauntlets of the Corrupted Protector
-										i(78769),	-- Wyrmstalker's Gloves
-										i(78761),	-- Spiritwalker's Gloves
-										i(78762),	-- Spiritwalker's Grips
-										i(78767),	-- Spiritwalker's Handwraps
-										i(78763),	-- Colossal Dragonplate Gauntlets
-										i(78764),	-- Colossal Dragonplate Handguards
-									}),
-									i(78865, {	-- Gauntlets of the Corrupted Vanquisher
-										i(78765),	-- Necrotic Boneplate Gauntlets
-										i(78773),	-- Necrotic Boneplate Handguards
-										i(78771),	-- Deep Earth Gloves
-										i(78779),	-- Deep Earth Grips
-										i(78775),	-- Deep Earth Handwraps
-										i(78766),	-- Time Lord's Gloves
-										i(78774),	-- Blackfang Battleweave Gloves
-									}),									
-									i(78399),	-- Finger of Zon'ozz
-									i(78394),	-- Horrifying Horn Arbalest (not listed on drop table on wowhead)
-									i(78397),	-- Graveheart Bracers
-									i(78400),	-- Grotesquely Writhing Bracers
-									i(78395),	-- Belt of Flayed Skin
-									i(78398),	-- Cord of the Slain Champion
-									i(78396),	-- Treads of Crushed Flesh
-									i(78497),	-- Breathstealer Band
-									i(78498),	-- Hardheart Ring
-									i(78495),	-- Infinite Loop
-									i(78494),	-- Seal of Primordial Shadow
-									i(78496),	-- Signet of Suturing
-									i(77982),	-- Bone-Link Fetish
-									i(77980),	-- Cunning of the Cruel
-									i(77983),	-- Indomitable Pride
-									i(77969),	-- Seal of the Seven Signs
-									i(77979),	-- Vial of Shadows
-									i(77981),	-- Windward Heart
-								})),
-								cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-									i( 78872, {	-- Leggings of the Corrupted Conqueror
-										i(78812),	-- Greaves of Radiant Glory
-										i(78810),	-- Legguards of Radiant Glory
-										i(78807),	-- Legplates of Radiant Glory
-										i(78817),	-- Leggings of Dying Light
-										i(78814),	-- Legwraps of Dying Light
-										i(78816),	-- Leggings of the Faceless Shroud
-									}),
-									i( 78873, {	-- Leggings of the Corrupted Protector
-										i(78804),	-- Wyrmstalker's Legguards
-										i(78806),	-- Spiritwalker's Kilt
-										i(78799),	-- Spiritwalker's Legguards
-										i(78813),	-- Spiritwalker's Legwraps
-										i(78800),	-- Colossal Dragonplate Legguards
-										i(78801),	-- Colossal Dragonplate Legplates
-									}),
-									i( 78871, {	-- Leggings of the Corrupted Vanquisher
-										i(78802),	-- Necrotic Boneplate Greaves
-										i(78811),	-- Necrotic Boneplate Legguards
-										i(78809),	-- Deep Earth Leggings
-										i(78808),	-- Deep Earth Legguards
-										i(78805),	-- Deep Earth Legwraps
-										i(78815),	-- Time Lord's Leggings
-										i(78803),	-- Blackfang Battleweave Legguards
-									}),
-									i(152979),	-- Puddle of Black Liquid (PET!)
-									i( 78409),	-- Experimental Specimen Slicer
-									i( 78407),	-- Spire of Coagulated Globules
-									i( 78410),	-- Scalpel of Unrelenting Agony (not listed on drop table on wowhead)
-									i( 78412),	-- Heartblood Wristplates
-									i( 78408),	-- Interrogator's Bloody Footpads
-									i( 78411),	-- Mindstrainer Treads
-									i( 78497),	-- Breathstealer Band
-									i( 78498),	-- Hardheart Ring
-									i( 78495),	-- Infinite Loop
-									i( 78494),	-- Seal of Primordial Shadow
-									i( 78496),	-- Signet of Suturing
-									i( 77982),	-- Bone-Link Fetish
-									i( 77980),	-- Cunning of the Cruel
-									i( 77983),	-- Indomitable Pride
-									i( 77971),	-- Insignia of the Corrupted Mind
-									i( 77970),	-- Soulshifter Vortex
-									i( 77979),	-- Vial of Shadows
-									i( 77981),	-- Windward Heart
-								})),
-								cr(55689, e(317, {	-- Hagara the Stormbinder
-									i(78875, {	-- Shoulders of the Corrupted Conqueror
-										i(78841),	-- Mantle of Radiant Glory
-										i(78837),	-- Pauldrons of Radiant Glory
-										i(78840),	-- Shoulderguards of Radiant Glory
-										i(78842),	-- Mantle of Dying Light
-										i(78845),	-- Mantle of Dying Light
-										i(78844),	-- Mantle of the Faceless Shroud
-									}),
-									i(78876, {	-- Shoulders of the Corrupted Protector
-										i(78832),	-- Wyrmstalker's Spaulders
-										i(78834),	-- Spiritwalker's Mantle
-										i(78836),	-- Spiritwalker's Shoulderwraps
-										i(78828),	-- Spiritwalker's Spaulders
-										i(78830),	-- Colossal Dragonplate Pauldrons
-										i(78829),	-- Colossal Dragonplate Shoulderguards
-									}),
-									i(78874, {	-- Shoulders of the Corrupted Vanquisher
-										i(78831),	-- Necrotic Boneplate Pauldrons
-										i(78846),	-- Necrotic Boneplate Shoulderguards
-										i(78835),	-- Deep Earth Mantle
-										i(78839),	-- Deep Earth Shoulderwraps
-										i(78838),	-- Deep Earth Spaulders
-										i(78843),	-- Time Lord's Mantle
-										i(78833),	-- Blackfang Battleweave Spaulders
-									}),
-									i(78426),	-- Lightning Rod
-									i(78422),	-- Electrowing Dagger
-									i(78425),	-- Bracers of the Banished
-									i(78428),	-- Girdle of the Grotesque
-									i(78424),	-- Runescriven Demon Collar
-									i(78423),	-- Treads of Dormant Dreams
-									i(78497),	-- Breathstealer Band
-									i(78498),	-- Hardheart Ring
-									i(78495),	-- Infinite Loop
-									i(78427),	-- Ring of the Riven
-									i(78494),	-- Seal of Primordial Shadow
-									i(78421),	-- Signet of Grasping Mouths
-									i(78496),	-- Signet of Suturing
-									i(77982),	-- Bone-Link Fetish
-									i(77980),	-- Cunning of the Cruel
-									i(77983),	-- Indomitable Pride
-									i(77979),	-- Vial of Shadows
-									i(77981),	-- Windward Heart
-								})),
-							}),
-							ach(6107, {	-- Fall of Deathwing	
-								cr(55294, e(331, {	-- Ultraxion
-									i(78863, {	-- Chest of the Corrupted Conqueror
-										i(78822),	-- Battleplate of Radiant Glory
-										i(78821),	-- Breastplate of Radiant Glory
-										i(78827),	-- Chestguard of Radiant Glory
-										i(78823),	-- Robes of Dying Light
-										i(78826),	-- Robes of Dying Light
-										i(78825),	-- Robes of the Faceless Shroud
-									}),
-									i(78864, {	-- Chest of the Corrupted Protector
-										i(78756),	-- Wyrmstalker's Tunic
-										i(78819),	-- Spiritwalker's Cuirass
-										i(78818),	-- Spiritwalker's Hauberk
-										i(78820),	-- Spiritwalker's Tunic
-										i(78752),	-- Colossal Dragonplate Battleplate
-										i(78753),	-- Colossal Dragonplate Chestguard
-									}),
-									i(78862, {	-- Chest of the Corrupted Vanquisher
-										i(78754),	-- Necrotic Boneplate Breastplate
-										i(78758),	-- Necrotic Boneplate Chestguard
-										i(78760),	-- Deep Earth Raiment
-										i(78755),	-- Deep Earth Robes
-										i(78757),	-- Deep Earth Vestment
-										i(78824),	-- Time Lord's Robes
-										i(78759),	-- Blackfang Battleweave Tunic
-									}),
-									i(78437),	-- Morningstar of Heroic Will
-									i(78441),	-- Ledger of Revolting Rituals
-									i(78443),	-- Imperfect Specimens 27 and 28
-									i(78438),	-- Bracers of Looming Darkness
-									i(78444),	-- Dragonfracture Belt
-									i(78439),	-- Stillheart Warboots
-									i(78442),	-- Treads of Sordid Screams
-									i(78497),	-- Breathstealer Band
-									i(78440),	-- Curled Twilight Claw
-									i(77972),	-- Creche of the Final Dragon
-									i(78498),	-- Hardheart Ring
-									i(78495),	-- Infinite Loop
-									i(78494),	-- Seal of Primordial Shadow
-									i(78496),	-- Signet of Suturing
-									i(77982),	-- Bone-Link Fetish
-									i(77980),	-- Cunning of the Cruel
-									i(77983),	-- Indomitable Pride
-									i(77979),	-- Vial of Shadows
-									i(77981),	-- Windward Heart
-								})),
-								cr(56427, e(332, {	-- Warmaster Blackthorn
+							n(-1, {	-- Common Boss Drops
+								["groups"] = {
 									i(78869, {	-- Crown of the Corrupted Conqueror
 										i(78790),	-- Faceguard of Radiant Glory
 										i(78787),	-- Headguard of Radiant Glory
@@ -246,6 +38,226 @@ _.Instances =
 										i(78796),	-- Time Lord's Hoodd
 										i(78794),	-- Blackfang Battleweave Helmet
 									}),
+									i(78875, {	-- Shoulders of the Corrupted Conqueror
+										i(78841),	-- Mantle of Radiant Glory
+										i(78837),	-- Pauldrons of Radiant Glory
+										i(78840),	-- Shoulderguards of Radiant Glory
+										i(78842),	-- Mantle of Dying Light
+										i(78845),	-- Mantle of Dying Light
+										i(78844),	-- Mantle of the Faceless Shroud
+									}),
+									i(78876, {	-- Shoulders of the Corrupted Protector
+										i(78832),	-- Wyrmstalker's Spaulders
+										i(78834),	-- Spiritwalker's Mantle
+										i(78836),	-- Spiritwalker's Shoulderwraps
+										i(78828),	-- Spiritwalker's Spaulders
+										i(78830),	-- Colossal Dragonplate Pauldrons
+										i(78829),	-- Colossal Dragonplate Shoulderguards
+									}),
+									i(78874, {	-- Shoulders of the Corrupted Vanquisher
+										i(78831),	-- Necrotic Boneplate Pauldrons
+										i(78846),	-- Necrotic Boneplate Shoulderguards
+										i(78835),	-- Deep Earth Mantle
+										i(78839),	-- Deep Earth Shoulderwraps
+										i(78838),	-- Deep Earth Spaulders
+										i(78843),	-- Time Lord's Mantle
+										i(78833),	-- Blackfang Battleweave Spaulders
+									}),
+									i(78863, {	-- Chest of the Corrupted Conqueror
+										i(78822),	-- Battleplate of Radiant Glory
+										i(78821),	-- Breastplate of Radiant Glory
+										i(78827),	-- Chestguard of Radiant Glory
+										i(78823),	-- Robes of Dying Light
+										i(78826),	-- Robes of Dying Light
+										i(78825),	-- Robes of the Faceless Shroud
+									}),
+									i(78864, {	-- Chest of the Corrupted Protector
+										i(78756),	-- Wyrmstalker's Tunic
+										i(78819),	-- Spiritwalker's Cuirass
+										i(78818),	-- Spiritwalker's Hauberk
+										i(78820),	-- Spiritwalker's Tunic
+										i(78752),	-- Colossal Dragonplate Battleplate
+										i(78753),	-- Colossal Dragonplate Chestguard
+									}),
+									i(78862, {	-- Chest of the Corrupted Vanquisher
+										i(78754),	-- Necrotic Boneplate Breastplate
+										i(78758),	-- Necrotic Boneplate Chestguard
+										i(78760),	-- Deep Earth Raiment
+										i(78755),	-- Deep Earth Robes
+										i(78757),	-- Deep Earth Vestment
+										i(78824),	-- Time Lord's Robes
+										i(78759),	-- Blackfang Battleweave Tunic
+									}),
+									i(78866, {	-- Gauntlets of the Corrupted Conqueror
+										i(78770),	-- Gauntlets of Radiant Glory
+										i(78768),	-- Gloves of Radiant Glory
+										i(78772),	-- Handguards of Radiant Glory
+										i(78777),	-- Gloves of Dying Light
+										i(78778),	-- Handwraps of Dying Light
+										i(78776),	-- Gloves of the Faceless Shroud
+									}),
+									i(78867, {	-- Gauntlets of the Corrupted Protector
+										i(78769),	-- Wyrmstalker's Gloves
+										i(78761),	-- Spiritwalker's Gloves
+										i(78762),	-- Spiritwalker's Grips
+										i(78767),	-- Spiritwalker's Handwraps
+										i(78763),	-- Colossal Dragonplate Gauntlets
+										i(78764),	-- Colossal Dragonplate Handguards
+									}),
+									i(78865, {	-- Gauntlets of the Corrupted Vanquisher
+										i(78765),	-- Necrotic Boneplate Gauntlets
+										i(78773),	-- Necrotic Boneplate Handguards
+										i(78771),	-- Deep Earth Gloves
+										i(78779),	-- Deep Earth Grips
+										i(78775),	-- Deep Earth Handwraps
+										i(78766),	-- Time Lord's Gloves
+										i(78774),	-- Blackfang Battleweave Gloves
+									}),			
+									i(78872, {	-- Leggings of the Corrupted Conqueror
+										i(78812),	-- Greaves of Radiant Glory
+										i(78810),	-- Legguards of Radiant Glory
+										i(78807),	-- Legplates of Radiant Glory
+										i(78817),	-- Leggings of Dying Light
+										i(78814),	-- Legwraps of Dying Light
+										i(78816),	-- Leggings of the Faceless Shroud
+									}),
+									i(78873, {	-- Leggings of the Corrupted Protector
+										i(78804),	-- Wyrmstalker's Legguards
+										i(78806),	-- Spiritwalker's Kilt
+										i(78799),	-- Spiritwalker's Legguards
+										i(78813),	-- Spiritwalker's Legwraps
+										i(78800),	-- Colossal Dragonplate Legguards
+										i(78801),	-- Colossal Dragonplate Legplates
+									}),
+									i(78871, {	-- Leggings of the Corrupted Vanquisher
+										i(78802),	-- Necrotic Boneplate Greaves
+										i(78811),	-- Necrotic Boneplate Legguards
+										i(78809),	-- Deep Earth Leggings
+										i(78808),	-- Deep Earth Legguards
+										i(78805),	-- Deep Earth Legwraps
+										i(78815),	-- Time Lord's Leggings
+										i(78803),	-- Blackfang Battleweave Legguards
+									}),
+								},
+								["crs"] = {
+									55265, -- Morchok
+									55308, -- Warlord Zon'ozz
+									55312, -- Yor'sahj the Unsleeping
+									55689, -- Hagara the Stormbinder
+									55294, -- Ultraxion
+									56427, -- Warmaster Blackhorn
+								},
+							}),
+							ach(6106, {	-- Siege of Wyrmrest Temple
+								cr(55265, e(311, {	-- Morchok
+									i(78379),	-- Hand of Morchok
+									i(78383),	-- Vagaries of Time
+									i(78382),	-- Petrified Fungal Heart
+									i(78378),	-- Brackenshell Shoulderplates
+									i(78381),	-- Mosswrought Shoulderguards
+									i(78375),	-- Underdweller's Spaulders
+									i(78380),	-- Robe of Glowing Stone
+									i(78384),	-- Mycosynth Wristguards
+									i(78377),	-- Rockhide Bracers
+									i(78376),	-- Sporebeard Gauntlets
+									i(78385),	-- Girdle of Shattered Stone
+									i(78386),	-- Pillarfoot Greaves
+									i(78497),	-- Breathstealer Band
+									i(78498),	-- Hardheart Ring
+									i(78495),	-- Infinite Loop
+									i(78494),	-- Seal of Primordial Shadow
+									i(78496),	-- Signet of Suturing
+									i(77982),	-- Bone-Link Fetish
+									i(77980),	-- Cunning of the Cruel
+									i(77983),	-- Indomitable Pride
+									i(77979),	-- Vial of Shadows
+									i(77981),	-- Windward Heart
+								})),
+								cr(55308, e(324, {	-- Warlord Zon'ozz
+									i(78399),	-- Finger of Zon'ozz
+									i(78394),	-- Horrifying Horn Arbalest (not listed on drop table on wowhead)
+									i(78397),	-- Graveheart Bracers
+									i(78400),	-- Grotesquely Writhing Bracers
+									i(78395),	-- Belt of Flayed Skin
+									i(78398),	-- Cord of the Slain Champion
+									i(78396),	-- Treads of Crushed Flesh
+									i(78497),	-- Breathstealer Band
+									i(78498),	-- Hardheart Ring
+									i(78495),	-- Infinite Loop
+									i(78494),	-- Seal of Primordial Shadow
+									i(78496),	-- Signet of Suturing
+									i(77982),	-- Bone-Link Fetish
+									i(77980),	-- Cunning of the Cruel
+									i(77983),	-- Indomitable Pride
+									i(77969),	-- Seal of the Seven Signs
+									i(77979),	-- Vial of Shadows
+									i(77981),	-- Windward Heart
+								})),
+								cr(55312, e(325, {	-- Yor'sahj the Unsleeping
+									i(152979),	-- Puddle of Black Liquid (PET!)
+									i( 78409),	-- Experimental Specimen Slicer
+									i( 78407),	-- Spire of Coagulated Globules
+									i( 78410),	-- Scalpel of Unrelenting Agony (not listed on drop table on wowhead)
+									i( 78412),	-- Heartblood Wristplates
+									i( 78408),	-- Interrogator's Bloody Footpads
+									i( 78411),	-- Mindstrainer Treads
+									i( 78497),	-- Breathstealer Band
+									i( 78498),	-- Hardheart Ring
+									i( 78495),	-- Infinite Loop
+									i( 78494),	-- Seal of Primordial Shadow
+									i( 78496),	-- Signet of Suturing
+									i( 77982),	-- Bone-Link Fetish
+									i( 77980),	-- Cunning of the Cruel
+									i( 77983),	-- Indomitable Pride
+									i( 77971),	-- Insignia of the Corrupted Mind
+									i( 77970),	-- Soulshifter Vortex
+									i( 77979),	-- Vial of Shadows
+									i( 77981),	-- Windward Heart
+								})),
+								cr(55689, e(317, {	-- Hagara the Stormbinder
+									i(78426),	-- Lightning Rod
+									i(78422),	-- Electrowing Dagger
+									i(78425),	-- Bracers of the Banished
+									i(78428),	-- Girdle of the Grotesque
+									i(78424),	-- Runescriven Demon Collar
+									i(78423),	-- Treads of Dormant Dreams
+									i(78497),	-- Breathstealer Band
+									i(78498),	-- Hardheart Ring
+									i(78495),	-- Infinite Loop
+									i(78427),	-- Ring of the Riven
+									i(78494),	-- Seal of Primordial Shadow
+									i(78421),	-- Signet of Grasping Mouths
+									i(78496),	-- Signet of Suturing
+									i(77982),	-- Bone-Link Fetish
+									i(77980),	-- Cunning of the Cruel
+									i(77983),	-- Indomitable Pride
+									i(77979),	-- Vial of Shadows
+									i(77981),	-- Windward Heart
+								})),
+							}),
+							ach(6107, {	-- Fall of Deathwing	
+								cr(55294, e(331, {	-- Ultraxion
+									i(78437),	-- Morningstar of Heroic Will
+									i(78441),	-- Ledger of Revolting Rituals
+									i(78443),	-- Imperfect Specimens 27 and 28
+									i(78438),	-- Bracers of Looming Darkness
+									i(78444),	-- Dragonfracture Belt
+									i(78439),	-- Stillheart Warboots
+									i(78442),	-- Treads of Sordid Screams
+									i(78497),	-- Breathstealer Band
+									i(78440),	-- Curled Twilight Claw
+									i(77972),	-- Creche of the Final Dragon
+									i(78498),	-- Hardheart Ring
+									i(78495),	-- Infinite Loop
+									i(78494),	-- Seal of Primordial Shadow
+									i(78496),	-- Signet of Suturing
+									i(77982),	-- Bone-Link Fetish
+									i(77980),	-- Cunning of the Cruel
+									i(77983),	-- Indomitable Pride
+									i(77979),	-- Vial of Shadows
+									i(77981),	-- Windward Heart
+								})),
+								cr(56427, e(332, {	-- Warmaster Blackthorn
 									i(78453),	-- Ataraxis, Cudgel of the Warmaster
 									i(78459),	-- Visage of the Destroyer
 									i(78456),	-- Blackhorn's Mighty Bulwark
@@ -293,7 +305,6 @@ _.Instances =
 								})),
 							}),	
 						},
-						["description"] = "The droprates are really really low. Spend the time you would otherwise waste in here complaining about it on the forums instead.\n\n - Crieve",
 					}),
 					d(1, {	-- Normal [Lucetia Note: Do not change the dungeon # here unless you let Crieve or myself know]
 						["ignoreBonus"] = true,
@@ -316,439 +327,51 @@ _.Instances =
 							}),
 							n(  0, {	-- Zone Drop
 								["groups"] = {
-									n(57333, {	-- Acidic Globule	
-										dr(0.3, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.4, i(78885)),	-- Dragoncarver Belt
-										dr(0.5, i(77938)),	-- Dragonfire Orb
-										dr(0.4, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.4, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.5, i(78882)),	-- Nightblind Cinch
-										dr(0.5, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.4, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.5, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.5, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.5, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(1.0, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.4, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.6, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.6, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(1.5, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.5, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.5, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.4, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.6, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.8, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.6, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.5, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.6, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.5, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.5, i(78879)),	-- Sash of Relentless Truth
-										dr(0.6, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.7, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.5, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57160, {	-- Ancient Water Lord	
-										dr(0.5, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.4, i(78885)),	-- Dragoncarver Belt
-										dr(0.5, i(77938)),	-- Dragonfire Orb
-										dr(0.4, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.4, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.4, i(78882)),	-- Nightblind Cinch
-										dr(0.6, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.4, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.5, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.5, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.5, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.5, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.5, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.6, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.7, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.5, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.7, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.5, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.4, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.5, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.5, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.5, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.4, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.4, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.5, i(78879)),	-- Sash of Relentless Truth
-										dr(0.5, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.5, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.5, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57890, {	-- Claw of Go'rath	
-										dr(0.5, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.7, i(78885)),	-- Dragoncarver Belt
-										dr(0.7, i(77938)),	-- Dragonfire Orb
-										dr(0.8, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.8, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.5, i(78882)),	-- Nightblind Cinch
-										dr(0.5, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.6, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.6, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.7, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.8, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.6, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.9, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.9, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.8, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.8, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.7, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.8, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.7, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.8, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.9, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.7, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.6, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.7, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.5, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.6, i(78879)),	-- Sash of Relentless Truth
-										dr(0.6, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.7, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.6, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57384, {	-- Cobalt Globule <Blood of Shu'ma>	
-										dr(0.7, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.7, i(78885)),	-- Dragoncarver Belt
-										dr(0.6, i(77938)),	-- Dragonfire Orb
-										dr(0.6, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.7, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.5, i(78882)),	-- Nightblind Cinch
-										dr(0.6, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.8, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.8, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(1.0, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.7, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.9, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.7, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.8, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.6, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.7, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.7, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.7, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.6, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.7, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.6, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.7, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.7, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.7, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.6, i(78879)),	-- Sash of Relentless Truth
-										dr(0.6, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.5, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.5, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57386, {	-- Crimson Globule <Blood of Shu'ma>	
-										dr(0.7, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.6, i(78885)),	-- Dragoncarver Belt
-										dr(0.5, i(77938)),	-- Dragonfire Orb
-										dr(0.4, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.8, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.7, i(78882)),	-- Nightblind Cinch
-										dr(0.6, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.6, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.7, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.6, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.6, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.8, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.6, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.8, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.7, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.9, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.6, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.7, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.6, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.8, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.7, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(1.0, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(1.4, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.6, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.7, i(78879)),	-- Sash of Relentless Truth
-										dr(0.6, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.6, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.6, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57382, {	-- Dark Globule <Blood of Shu'ma>	
-										dr(0.9, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.8, i(78885)),	-- Dragoncarver Belt
-										dr(0.6, i(77938)),	-- Dragonfire Orb
-										dr(0.8, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.8, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.7, i(78882)),	-- Nightblind Cinch
-										dr(1.0, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.8, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.8, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.9, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.9, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(1.0, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(1.3, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.8, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.7, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.9, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.8, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.8, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.9, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.9, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.8, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.8, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(1.0, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.9, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.7, i(78879)),	-- Sash of Relentless Truth
-										dr(0.8, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.6, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.9, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57158, {	-- Earthen Destroyer	
-										dr(0.7, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.6, i(78885)),	-- Dragoncarver Belt
-										dr(0.9, i(77938)),	-- Dragonfire Orb
-										dr(0.8, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.6, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.7, i(78882)),	-- Nightblind Cinch
-										dr(0.8, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.7, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.8, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.8, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.9, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.8, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.9, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.7, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.8, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.9, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.9, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.7, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.9, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.8, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.8, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.7, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.9, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.7, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.6, i(78879)),	-- Sash of Relentless Truth
-										dr(0.8, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.7, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(1.0, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57159, {	-- Earthen Soldier	
-										dr(0.6, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.6, i(78885)),	-- Dragoncarver Belt
-										dr(0.7, i(77938)),	-- Dragonfire Orb
-										dr(0.4, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.6, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.6, i(78882)),	-- Nightblind Cinch
-										dr(0.5, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.4, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.8, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.5, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.7, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.6, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.7, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.6, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.5, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.6, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.4, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(7.0, i(72000)),	-- Pattern: World Mender's Pants
-										dr(1.0, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.7, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.7, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.6, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.7, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.7, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.5, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.6, i(78879)),	-- Sash of Relentless Truth
-										dr(0.5, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.4, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.5, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57875, {	-- Eye of Go'rath	
-										dr(0.7, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.5, i(78885)),	-- Dragoncarver Belt
-										dr(0.6, i(77938)),	-- Dragonfire Orb
-										dr(0.6, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.6, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.7, i(78882)),	-- Nightblind Cinch
-										dr(0.8, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.6, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.6, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.8, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.7, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.9, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.8, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.8, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.6, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.6, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.7, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.7, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.6, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.8, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.5, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.8, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.7, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.8, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.6, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.6, i(78879)),	-- Sash of Relentless Truth
-										dr(0.6, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.9, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.7, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57877, {	-- Flail of Go'rath	
-										dr(0.9, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.8, i(78885)),	-- Dragoncarver Belt
-										dr(1.1, i(77938)),	-- Dragonfire Orb
-										dr(0.9, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.9, i(78887)),	-- Girdle of Soulful Mending
-										dr(1.0, i(78882)),	-- Nightblind Cinch
-										dr(1.0, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(1.2, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(1.0, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(1.2, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(1.0, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(1.0, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(1.2, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(1.0, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(1.1, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(1.1, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(1.1, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(1.0, i(72000)),	-- Pattern: World Mender's Pants
-										dr(1.1, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(1.1, i(72013)),	-- Plans: Foundations of Courage
-										dr(1.0, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(1.1, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.9, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(1.0, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(1.1, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.9, i(78879)),	-- Sash of Relentless Truth
-										dr(0.9, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.8, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.9, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57387, {	-- Glowing Globule <Blood of Shu'ma>	
-										dr(0.7, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.5, i(78885)),	-- Dragoncarver Belt
-										dr(0.8, i(77938)),	-- Dragonfire Orb
-										dr(0.6, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.7, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.8, i(78882)),	-- Nightblind Cinch
-										dr(0.8, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.9, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(1.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.7, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.7, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.7, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(1.1, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.8, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(1.0, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(1.0, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(1.1, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(1.1, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.8, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(1.0, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.7, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.9, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.9, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(1.0, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.7, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.7, i(78879)),	-- Sash of Relentless Truth
-										dr(0.9, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.7, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.7, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57821, {	-- Lieutenant Shara	
-										dr(0.8, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.8, i(78885)),	-- Dragoncarver Belt
-										dr(0.7, i(77938)),	-- Dragonfire Orb
-										dr(1.0, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.8, i(78887)),	-- Girdle of Soulful Mending
-										dr(1.2, i(78882)),	-- Nightblind Cinch
-										dr(0.7, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.9, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.6, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.7, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.8, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.5, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.6, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.7, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.8, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.8, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.6, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.7, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.5, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.7, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.6, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.8, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.8, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.8, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.9, i(78879)),	-- Sash of Relentless Truth
-										dr(1.0, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.9, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(1.0, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57388, {	-- Shadowed Globule <Blood of Shu'ma>	
-										dr(0.8, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.8, i(78885)),	-- Dragoncarver Belt
-										dr(0.9, i(77938)),	-- Dragonfire Orb
-										dr(1.0, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.8, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.8, i(78882)),	-- Nightblind Cinch
-										dr(0.9, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(1.4, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.9, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(1.0, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.8, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(1.0, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.8, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(1.1, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(1.0, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.9, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(1.2, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(1.4, i(72000)),	-- Pattern: World Mender's Pants
-										dr(1.0, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(1.3, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.9, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.8, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(1.0, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.9, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.9, i(77192)),	-- Ruinblaster Shotgun
-										dr(1.0, i(78879)),	-- Sash of Relentless Truth
-										dr(0.8, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.9, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.8, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57280, {	-- Twilight Siege Captain	
-										dr(0.20, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.11, i(78885)),	-- Dragoncarver Belt
-										dr(0.06, i(77938)),	-- Dragonfire Orb
-										dr(0.14, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.15, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.20, i(78882)),	-- Nightblind Cinch
-										dr(0.06, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.12, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.12, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.30, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.19, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.10, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.06, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.17, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.17, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.08, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.13, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.15, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.08, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.15, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.11, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.30, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.16, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.16, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.13, i(78879)),	-- Sash of Relentless Truth
-										dr(0.19, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.30, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.05, i(78889)),	-- Waistplate of the Desecrated Future
-									}),
+									i(78886),	-- Belt of Ghostly Graces
+									i(78885),	-- Dragoncarver Belt
+									i(77938),	-- Dragonfire Orb
+									i(78884),	-- Girdle of Fungal Dreams
+									i(78887),	-- Girdle of Soulful Mending
+									i(78882),	-- Nightblind Cinch
+									i(72006),	-- Pattern: Bladeshadow Leggings
+									i(72010),	-- Pattern: Bladeshadow Wristguards
+									i(72008),	-- Pattern: Bracers of Flowing Serenity
+									i(72011),	-- Pattern: Bracers of the Hunter-Killer
+									i(72004),	-- Pattern: Bracers of Unconquered Power
+									i(72005),	-- Pattern: Deathscale Leggings
+									i(72003),	-- Pattern: Dreamwraps of the Light
+									i(72002),	-- Pattern: Lavaquake Legwraps
+									i(71999),	-- Pattern: Leggings of Nature's Champion
+									i(72007),	-- Pattern: Rended Earth Leggings
+									i(72009),	-- Pattern: Thundering Deathscale Wristguards
+									i(72000),	-- Pattern: World Mender's Pants
+									i(72015),	-- Plans: Bracers of Destructive Strength
+									i(72013),	-- Plans: Foundations of Courage
+									i(72001),	-- Plans: Pyrium Legplates of Purified Evil
+									i(72014),	-- Plans: Soul Redeemer Bracers
+									i(72016),	-- Plans: Titanguard Wristplates
+									i(72012),	-- Plans: Unstoppable Destroyer's Legplates
+									i(77192),	-- Ruinblaster Shotgun
+									i(78879),	-- Sash of Relentless Truth
+									i(78878),	-- Spine of the Thousand Cuts
+									i(78888),	-- Waistguard of Bleeding Bone
+									i(78889),	-- Waistplate of the Desecrated Future
+								},
+								["crs"] = {
+									57333,	-- Acidic Globule
+									57160,	-- Ancient Water Lord
+									57890,	-- Claw of Go'rath
+									57384,	-- Cobalt Globule <Blood of Shu'ma>
+									57386,	-- Crimson Globule <Blood of Shu'ma>
+									57382,	-- Dark Globule <Blood of Shu'ma>
+									57158,	-- Earthen Destroyer
+									57159,	-- Earthen Soldier
+									57875,	-- Eye of Go'rath
+									57877,	-- Flail of Go'rath
+									57387,	-- Glowing Globule <Blood of Shu'ma>
+									57821,	-- Lieutenant Shara
+									57388,	-- Shadowed Globule <Blood of Shu'ma>
+									57280,	-- Twilight Siege Captain
 								},
 							}),
 							cr(55265, e(311, {	-- Morchok
@@ -1062,439 +685,51 @@ _.Instances =
 							}),
 							n(  0, {	-- Zone Drop
 								["groups"] = {
-									n(57333, {	-- Acidic Globule	
-										dr(0.3, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.4, i(78885)),	-- Dragoncarver Belt
-										dr(0.5, i(77938)),	-- Dragonfire Orb
-										dr(0.4, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.4, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.5, i(78882)),	-- Nightblind Cinch
-										dr(0.5, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.4, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.5, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.5, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.5, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(1.0, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.4, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.6, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.6, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(1.5, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.5, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.5, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.4, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.6, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.8, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.6, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.5, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.6, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.5, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.5, i(78879)),	-- Sash of Relentless Truth
-										dr(0.6, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.7, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.5, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57160, {	-- Ancient Water Lord	
-										dr(0.5, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.4, i(78885)),	-- Dragoncarver Belt
-										dr(0.5, i(77938)),	-- Dragonfire Orb
-										dr(0.4, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.4, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.4, i(78882)),	-- Nightblind Cinch
-										dr(0.6, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.4, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.5, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.5, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.5, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.5, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.5, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.6, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.7, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.5, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.7, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.5, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.4, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.5, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.5, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.5, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.4, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.4, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.5, i(78879)),	-- Sash of Relentless Truth
-										dr(0.5, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.5, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.5, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57890, {	-- Claw of Go'rath	
-										dr(0.5, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.7, i(78885)),	-- Dragoncarver Belt
-										dr(0.7, i(77938)),	-- Dragonfire Orb
-										dr(0.8, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.8, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.5, i(78882)),	-- Nightblind Cinch
-										dr(0.5, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.6, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.6, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.7, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.8, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.6, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.9, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.9, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.8, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.8, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.7, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.8, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.7, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.8, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.9, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.7, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.6, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.7, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.5, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.6, i(78879)),	-- Sash of Relentless Truth
-										dr(0.6, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.7, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.6, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57384, {	-- Cobalt Globule <Blood of Shu'ma>	
-										dr(0.7, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.7, i(78885)),	-- Dragoncarver Belt
-										dr(0.6, i(77938)),	-- Dragonfire Orb
-										dr(0.6, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.7, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.5, i(78882)),	-- Nightblind Cinch
-										dr(0.6, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.8, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.8, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(1.0, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.7, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.9, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.7, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.8, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.6, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.7, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.7, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.7, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.6, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.7, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.6, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.7, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.7, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.7, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.6, i(78879)),	-- Sash of Relentless Truth
-										dr(0.6, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.5, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.5, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57386, {	-- Crimson Globule <Blood of Shu'ma>	
-										dr(0.7, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.6, i(78885)),	-- Dragoncarver Belt
-										dr(0.5, i(77938)),	-- Dragonfire Orb
-										dr(0.4, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.8, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.7, i(78882)),	-- Nightblind Cinch
-										dr(0.6, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.6, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.7, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.6, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.6, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.8, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.6, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.8, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.7, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.9, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.6, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.7, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.6, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.8, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.7, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(1.0, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(1.4, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.6, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.7, i(78879)),	-- Sash of Relentless Truth
-										dr(0.6, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.6, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.6, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57382, {	-- Dark Globule <Blood of Shu'ma>	
-										dr(0.9, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.8, i(78885)),	-- Dragoncarver Belt
-										dr(0.6, i(77938)),	-- Dragonfire Orb
-										dr(0.8, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.8, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.7, i(78882)),	-- Nightblind Cinch
-										dr(1.0, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.8, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.8, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.9, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.9, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(1.0, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(1.3, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.8, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.7, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.9, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.8, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.8, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.9, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.9, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.8, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.8, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(1.0, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.9, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.7, i(78879)),	-- Sash of Relentless Truth
-										dr(0.8, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.6, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.9, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57158, {	-- Earthen Destroyer	
-										dr(0.7, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.6, i(78885)),	-- Dragoncarver Belt
-										dr(0.9, i(77938)),	-- Dragonfire Orb
-										dr(0.8, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.6, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.7, i(78882)),	-- Nightblind Cinch
-										dr(0.8, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.7, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.8, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.8, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.9, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.8, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.9, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.7, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.8, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.9, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.9, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.7, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.9, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.8, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.8, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.7, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.9, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.7, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.6, i(78879)),	-- Sash of Relentless Truth
-										dr(0.8, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.7, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(1.0, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57159, {	-- Earthen Soldier	
-										dr(0.6, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.6, i(78885)),	-- Dragoncarver Belt
-										dr(0.7, i(77938)),	-- Dragonfire Orb
-										dr(0.4, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.6, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.6, i(78882)),	-- Nightblind Cinch
-										dr(0.5, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.4, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.8, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.5, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.7, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.6, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.7, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.6, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.5, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.6, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.4, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(7.0, i(72000)),	-- Pattern: World Mender's Pants
-										dr(1.0, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.7, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.7, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.6, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.7, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.7, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.5, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.6, i(78879)),	-- Sash of Relentless Truth
-										dr(0.5, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.4, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.5, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57875, {	-- Eye of Go'rath	
-										dr(0.7, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.5, i(78885)),	-- Dragoncarver Belt
-										dr(0.6, i(77938)),	-- Dragonfire Orb
-										dr(0.6, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.6, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.7, i(78882)),	-- Nightblind Cinch
-										dr(0.8, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.6, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.6, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.8, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.7, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.9, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.8, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.8, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.6, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.6, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.7, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.7, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.6, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.8, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.5, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.8, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.7, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.8, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.6, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.6, i(78879)),	-- Sash of Relentless Truth
-										dr(0.6, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.9, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.7, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57877, {	-- Flail of Go'rath	
-										dr(0.9, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.8, i(78885)),	-- Dragoncarver Belt
-										dr(1.1, i(77938)),	-- Dragonfire Orb
-										dr(0.9, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.9, i(78887)),	-- Girdle of Soulful Mending
-										dr(1.0, i(78882)),	-- Nightblind Cinch
-										dr(1.0, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(1.2, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(1.0, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(1.2, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(1.0, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(1.0, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(1.2, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(1.0, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(1.1, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(1.1, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(1.1, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(1.0, i(72000)),	-- Pattern: World Mender's Pants
-										dr(1.1, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(1.1, i(72013)),	-- Plans: Foundations of Courage
-										dr(1.0, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(1.1, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.9, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(1.0, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(1.1, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.9, i(78879)),	-- Sash of Relentless Truth
-										dr(0.9, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.8, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.9, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57387, {	-- Glowing Globule <Blood of Shu'ma>	
-										dr(0.7, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.5, i(78885)),	-- Dragoncarver Belt
-										dr(0.8, i(77938)),	-- Dragonfire Orb
-										dr(0.6, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.7, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.8, i(78882)),	-- Nightblind Cinch
-										dr(0.8, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.9, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(1.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.7, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.7, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.7, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(1.1, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.8, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(1.0, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(1.0, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(1.1, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(1.1, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.8, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(1.0, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.7, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.9, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.9, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(1.0, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.7, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.7, i(78879)),	-- Sash of Relentless Truth
-										dr(0.9, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.7, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.7, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57821, {	-- Lieutenant Shara	
-										dr(0.8, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.8, i(78885)),	-- Dragoncarver Belt
-										dr(0.7, i(77938)),	-- Dragonfire Orb
-										dr(1.0, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.8, i(78887)),	-- Girdle of Soulful Mending
-										dr(1.2, i(78882)),	-- Nightblind Cinch
-										dr(0.7, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.9, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.7, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.6, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.7, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.8, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.5, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.6, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.7, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.8, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.8, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.6, i(72000)),	-- Pattern: World Mender's Pants
-										dr(0.7, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.5, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.7, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.6, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.8, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.8, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.8, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.9, i(78879)),	-- Sash of Relentless Truth
-										dr(1.0, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.9, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(1.0, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57388, {	-- Shadowed Globule <Blood of Shu'ma>	
-										dr(0.8, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.8, i(78885)),	-- Dragoncarver Belt
-										dr(0.9, i(77938)),	-- Dragonfire Orb
-										dr(1.0, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.8, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.8, i(78882)),	-- Nightblind Cinch
-										dr(0.9, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(1.4, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.9, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(1.0, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.8, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(1.0, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.8, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(1.1, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(1.0, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.9, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(1.2, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(1.4, i(72000)),	-- Pattern: World Mender's Pants
-										dr(1.0, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(1.3, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.9, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.8, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(1.0, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.9, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.9, i(77192)),	-- Ruinblaster Shotgun
-										dr(1.0, i(78879)),	-- Sash of Relentless Truth
-										dr(0.8, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.9, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.8, i(78889)),	-- Waistplate of the Desecrated Future
-									}),		
-									n(57280, {	-- Twilight Siege Captain	
-										dr(0.20, i(78886)),	-- Belt of Ghostly Graces
-										dr(0.11, i(78885)),	-- Dragoncarver Belt
-										dr(0.06, i(77938)),	-- Dragonfire Orb
-										dr(0.14, i(78884)),	-- Girdle of Fungal Dreams
-										dr(0.15, i(78887)),	-- Girdle of Soulful Mending
-										dr(0.20, i(78882)),	-- Nightblind Cinch
-										dr(0.06, i(72006)),	-- Pattern: Bladeshadow Leggings
-										dr(0.12, i(72010)),	-- Pattern: Bladeshadow Wristguards
-										dr(0.12, i(72008)),	-- Pattern: Bracers of Flowing Serenity
-										dr(0.30, i(72011)),	-- Pattern: Bracers of the Hunter-Killer
-										dr(0.19, i(72004)),	-- Pattern: Bracers of Unconquered Power
-										dr(0.10, i(72005)),	-- Pattern: Deathscale Leggings
-										dr(0.06, i(72003)),	-- Pattern: Dreamwraps of the Light
-										dr(0.17, i(72002)),	-- Pattern: Lavaquake Legwraps
-										dr(0.17, i(71999)),	-- Pattern: Leggings of Nature's Champion
-										dr(0.08, i(72007)),	-- Pattern: Rended Earth Leggings
-										dr(0.13, i(72009)),	-- Pattern: Thundering Deathscale Wristguards
-										dr(0.15, i(72015)),	-- Plans: Bracers of Destructive Strength
-										dr(0.08, i(72013)),	-- Plans: Foundations of Courage
-										dr(0.15, i(72001)),	-- Plans: Pyrium Legplates of Purified Evil
-										dr(0.11, i(72014)),	-- Plans: Soul Redeemer Bracers
-										dr(0.30, i(72016)),	-- Plans: Titanguard Wristplates
-										dr(0.16, i(72012)),	-- Plans: Unstoppable Destroyer's Legplates
-										dr(0.16, i(77192)),	-- Ruinblaster Shotgun
-										dr(0.13, i(78879)),	-- Sash of Relentless Truth
-										dr(0.19, i(78878)),	-- Spine of the Thousand Cuts
-										dr(0.30, i(78888)),	-- Waistguard of Bleeding Bone
-										dr(0.05, i(78889)),	-- Waistplate of the Desecrated Future
-									}),
+									i(78886),	-- Belt of Ghostly Graces
+									i(78885),	-- Dragoncarver Belt
+									i(77938),	-- Dragonfire Orb
+									i(78884),	-- Girdle of Fungal Dreams
+									i(78887),	-- Girdle of Soulful Mending
+									i(78882),	-- Nightblind Cinch
+									i(72006),	-- Pattern: Bladeshadow Leggings
+									i(72010),	-- Pattern: Bladeshadow Wristguards
+									i(72008),	-- Pattern: Bracers of Flowing Serenity
+									i(72011),	-- Pattern: Bracers of the Hunter-Killer
+									i(72004),	-- Pattern: Bracers of Unconquered Power
+									i(72005),	-- Pattern: Deathscale Leggings
+									i(72003),	-- Pattern: Dreamwraps of the Light
+									i(72002),	-- Pattern: Lavaquake Legwraps
+									i(71999),	-- Pattern: Leggings of Nature's Champion
+									i(72007),	-- Pattern: Rended Earth Leggings
+									i(72009),	-- Pattern: Thundering Deathscale Wristguards
+									i(72000),	-- Pattern: World Mender's Pants
+									i(72015),	-- Plans: Bracers of Destructive Strength
+									i(72013),	-- Plans: Foundations of Courage
+									i(72001),	-- Plans: Pyrium Legplates of Purified Evil
+									i(72014),	-- Plans: Soul Redeemer Bracers
+									i(72016),	-- Plans: Titanguard Wristplates
+									i(72012),	-- Plans: Unstoppable Destroyer's Legplates
+									i(77192),	-- Ruinblaster Shotgun
+									i(78879),	-- Sash of Relentless Truth
+									i(78878),	-- Spine of the Thousand Cuts
+									i(78888),	-- Waistguard of Bleeding Bone
+									i(78889),	-- Waistplate of the Desecrated Future
+								},
+								["crs"] = {
+									57333,	-- Acidic Globule
+									57160,	-- Ancient Water Lord
+									57890,	-- Claw of Go'rath
+									57384,	-- Cobalt Globule <Blood of Shu'ma>
+									57386,	-- Crimson Globule <Blood of Shu'ma>
+									57382,	-- Dark Globule <Blood of Shu'ma>
+									57158,	-- Earthen Destroyer
+									57159,	-- Earthen Soldier
+									57875,	-- Eye of Go'rath
+									57877,	-- Flail of Go'rath
+									57387,	-- Glowing Globule <Blood of Shu'ma>
+									57821,	-- Lieutenant Shara
+									57388,	-- Shadowed Globule <Blood of Shu'ma>
+									57280,	-- Twilight Siege Captain
 								},
 							}),						
 							cr(55265, e(311, {	-- Morchok
