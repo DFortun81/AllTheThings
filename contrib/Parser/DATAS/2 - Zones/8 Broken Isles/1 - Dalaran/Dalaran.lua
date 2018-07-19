@@ -470,6 +470,10 @@ _.Zones =
 								["qg"] = 92458, -- Deucus Valdera
 								["sourceQuests"] = { 39329 }, -- A Dormant Burner
 							}),
+							q(39340, {	-- Lining the Crucible
+								["qg"] = 92458, -- Deucus Valdera
+								["sourceQuests"] = { 39339 }, -- A Fragile Crucible
+							}),
 							q(39350, {	-- Maw of Souls: A Hope in Helheim
 								["qg"] = 92183, -- Alard Schmied
 							}),
@@ -479,6 +483,13 @@ _.Zones =
 							}),
 							q(39335, {	-- Neltharion's Lair: Potent Powder
 								["qg"] = 92458, -- Deucus Valdera
+							}),
+							q(39346, {	-- Testing the Calibration
+								["qg"] = 92458, -- Deucus Valdera
+								["sourceQuests"] = {
+									39345,	-- Calibration Experts
+									39645,	-- Calibration Experts
+								},
 							}),
 							q(39351, {	-- The Emerald Nightmare: Rage Fire
 								["qg"] = 92183, -- Alard Schmied
@@ -567,6 +578,10 @@ _.Zones =
 									38564,	-- A Sweet Bargain
 								},
 							}),
+							q(38515, {	-- Nature Provides
+								["qg"] = 92183, -- Alard Schmied
+								["sourceQuests"] = { 38507 }, -- Secrets of Leysmithing
+							}),
 							q(38522, {	-- Not Just Weapons and Armor
 								["groups"] = {
 									recipe(182999),	-- Recipe: Leystone Hoofplates
@@ -602,11 +617,26 @@ _.Zones =
 								["qg"] = 92183, -- Alard Schmied
 								["sourceQuests"] = { 38499 }, -- Strange New Ores
 							}),
+							qa(48053, {	-- Weigh Anchor
+								["groups"] = {
+									recipe(247700),	-- Plans: Felslate Anchor
+								},
+								["qg"] = 92183, -- Alard Schmied
+							}),
+							qh(48054, {	-- Weigh Anchor
+								["groups"] = {
+									recipe(247700),	-- Plans: Felslate Anchor
+								},
+								["qg"] = 106655, -- Arcanomancer Vridiel
+							}),
 						},
 						["requiredSkill"] = 164,
 					}),
 					n(-182, {	-- Enchanting
 						["groups"] = {
+							q(39903, {	-- An Enchanting Home
+								["qg"] = 93531, -- Enchanter Nalthanis
+							}),
 							q(39883, {	-- Cloaked in Tradition
 								["groups"] = {
 									recipe(190875),	-- Word of Agility (Rank 1)
@@ -633,6 +663,14 @@ _.Zones =
 							q(39920, {	-- On Azure Wings
 								["qg"] = 93531, -- Enchanter Nalthanis
 								["sourceQuests"] = { 39907 }, -- Elven Enchantments
+							}),
+							q(39905, {	-- Ringing True
+								["groups"] = { 
+									recipe(190866),	-- Word of Critical Strike
+									recipe(190867),	-- Word of Haste
+									recipe(190868),	-- Word of Mastery
+								},
+								["qg"] = 90317, -- Jace Darkweaver
 							}),
 							q(39874, {	-- Some Enchanted Evening
 								["groups"] = {
@@ -745,6 +783,12 @@ _.Zones =
 							q(40860, {	-- Resupplying the Line
 								["qg"] = 93539, -- Hobart Grapplehammer
 							}),
+							q(40880, {	-- Short Circuit
+								["groups"] = {
+									recipe(198980),	-- Blingtron's Circuit Design Tutorial
+								},
+								["qg"] = 93520, -- Didi the Wrench
+							}),
 							q(46128, {	-- Time for a Recharge
 								["groups"] = {
 									recipe(235775),	-- Rechargeable Reaves Battery
@@ -790,6 +834,13 @@ _.Zones =
 								["qg"] = 92464, -- Kuhuine Tenderstride
 								["sourceQuests"] = { 40032 }, -- The Missing Page
 							}),
+							q(40014, {	-- Spayed by the Spade
+								["groups"] = {
+									recipe(193292),	-- Aethril (Rank 1)
+								},
+								["qg"] = 92464, -- Kuhuine Tenderstride
+								["sourceQuests"] = { 40013 }, -- Aethril Sample
+							}),
 							q(40039, {	-- Tharillon's Fall
 								["groups"] = {
 									recipe(193306),	-- Starlight Rose (Rank 3)
@@ -806,6 +857,13 @@ _.Zones =
 							q(40035, {	-- The Gentlest Touch
 								["qg"] = 92464, -- Kuhuine Tenderstride
 								["sourceQuests"] = { 40034 }, -- Starlight Rosedust
+							}),
+							q(40037, {	-- The Spade's Blade
+								["groups"] = {
+									recipe(193305),	-- Starlight Rose (Rank 2)
+								},
+								["qg"] = 92464, -- Kuhuine Tenderstride
+								["sourceQuests"] = { 40036 }, -- Jeweled Spade Handle
 							}),
 							q(40031, {	-- Vrykul Herblore
 								["groups"] = {
@@ -1019,6 +1077,13 @@ _.Zones =
 							q(40535, {	-- Raising the Drogbar
 								["qg"] = 93526, -- Tiffany Cartier
 							}),
+							o(246154, { -- Broken Toy Box
+								q(40558, {	-- Socket to Me
+									["groups"] = {
+										recipe(195882),	-- JewelCraft
+									},
+								}),
+							}),
 							q(40531, {	-- Swift Vengeance
 								["qg"] = 93526, -- Tiffany Cartier
 								["sourceQuests"] = { 40530 }, -- An Eye for Detail
@@ -1173,6 +1238,10 @@ _.Zones =
 							--q(38784)	-- Leystone Seam Sample -- granted by i(124490)
 							--q(38797)	-- Living Felslate Sample -- granted by i(124498)
 							--q(38785)	-- Living Leystone Sample -- granted by i(124491)
+							q(39817, {	-- The Brimstone's Secret
+								["qg"] = 97360, -- Matthew Rabis
+								["sourceQuests"] = { 39763 }, -- For Whom the Fel Tolls
+							}),
 							q(38901, {	-- The Felsmiths
 								["qg"] = 93189, -- Mama Diggs
 							}),
@@ -1186,7 +1255,10 @@ _.Zones =
 						["groups"] = {
 							--q(40156)	-- Felhide Sample -- granted by i(129863)
 							--q(40136)	-- Immaculate Stonehide Leather -- granted by i(129866)
-							--q(40151)	-- Immaculate Stormscale -- granted by i(129867)							
+							--q(40151)	-- Immaculate Stormscale -- granted by i(129867)
+							q(40144, {	-- Glielle
+								["qg"] = 93541, -- Kondal Huntsworn
+							}),
 							q(40132, {	-- In One Piece
 								["groups"] = {
 									recipe(194161),	-- Stonehide Leather (Rank 1)
@@ -1202,8 +1274,17 @@ _.Zones =
 								["qg"] = 93541, -- Kondal Huntsworn
 								["sourceQuests"] = { 40151 }, -- Immaculate Stormscale
 							}),
+							q(40146, {	-- Seymour and Agnes
+								["qg"] = 93541, -- Kondal Huntsworn
+							}),
 							--q(40131),	-- Stonehide Leather Sample -- granted by i(129860)
 							--q(40141),	-- Stormscale Sample -- granted by i(129862)
+							q(40142, {	-- The Core of the Stormscale
+								["groups"] = {
+									recipe(194164),	-- Stormscale (Rank 1)
+								},
+								["qg"] = 93541, -- Kondal Huntsworn
+							}),
 							q(40159, {	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
 								["groups"] = {
 									recipe(194169),	-- Felhide (Rank 3)
@@ -1245,6 +1326,9 @@ _.Zones =
 							q(38952, {	-- Meticulous Precision
 								["qg"] = 93542, -- Tanithria
 								["sourceQuests"] = { 38951 }, -- A Needle Need
+							}),
+							q(38947, {	-- Runic Catgut
+								["qg"] = 93967, -- Lyndras
 							}),
 							q(38966, {	-- Secret Silkweaving Methods
 								["groups"] = {
@@ -1351,6 +1435,15 @@ _.Zones =
 							}),
 							q(41183, {	-- Academic Exploration
 								["qg"] = 93538, -- Dariness the Learned
+							}),
+							q(40857, {	-- Bits and Pieces
+								["qg"] = 93538, -- Bariness the Learned
+								["sourceQuests"] = {
+									41158,	-- Fragments of the Fjords
+									41161,	-- Out of the Frying Pan
+									41164,	-- One Step Closer
+									41167,	-- Fel Fragments
+								},
 							}),
 							q(41167, {	-- Fel Fragments
 								["qg"] = 93538, -- Dariness the Learned
@@ -1582,9 +1675,6 @@ _.Zones =
 						["qg"] = 102700, -- Meryl Felstorm
 						["classes"] = { 8 },
 					}),
-					q(39903, {	-- An Enchanting Home
-						["qg"] = 93531, -- Enchanter Nalthanis
-					}),
 					qa(42814, {	-- An Important Mission
 						["qg"] = 108961, -- Sergeant Dalton
 						["classes"] = { 1 },
@@ -1628,6 +1718,7 @@ _.Zones =
 					q(46000, {	-- Arming Dalaran
 						["qg"] = 119001, -- Sin'dorei Archmage
 						["sourceQuests"] = { 45586 }, -- Shield Amplification
+						["classes"] = { 8 },
 					}),
 					q(44914, {	-- Arms: The Thieving Apprentice
 						["qgs"] = { 105081, 115467 }, -- Archmage Kalec (2 versions)
@@ -1648,6 +1739,7 @@ _.Zones =
 					}),
 					q(47051, {	-- Assassination: Fate of the Tideskorn
 						["qgs"] = { 90417, 115464 }, -- Archmage Khadgar (2 versions)
+						["classes"] = { 4 },
 					}),
 					q(46734, {	-- Assault on Broken Shore
 						["qg"] = 120215, -- Archmage Khadgar
@@ -1702,16 +1794,8 @@ _.Zones =
 					}),
 					q(45415, {	-- Between Worlds
 						["qg"] = 117042, -- Prophet Velen
-						["sourceQuests"] = { 45414 }, -- Confirming Suspcions
-					}),
-					q(40857, {	-- Bits and Pieces
-						["qg"] = 93538, -- Bariness the Learned
-						["sourceQuests"] = {
-							41158,	-- Fragments of the Fjords
-							41161,	-- Out of the Frying Pan
-							41164,	-- One Step Closer
-							41167,	-- Fel Fragments
-						},
+						["sourceQuests"] = { 45414 }, -- Confirming Suspicions
+						["classes"] = { 1, 2, 6, 10, 11, 12 },
 					}),
 					q(42678, {	-- Black Rook Hold: Into Black Rook Hold
 						["qg"] = 110164, -- Valeera Sanguinar
@@ -1819,6 +1903,7 @@ _.Zones =
 					q(46724, {	-- Champion: The Great Akazamzarak
 						["qg"] = 103092, -- The Great Akazamzarak
 						["sourceQuests"] = { 46723 }, -- Down the Rabbit Hole
+						["classes"] = { 8 },
 					}),
 					q(42800, {	-- Champion: Valeera Sanguinar
 						["qg"] = 98102, -- Valeera Sanguinar
@@ -1858,6 +1943,7 @@ _.Zones =
 					q(45414, {	-- Confirming Suspicions
 						["qg"] = 116880, -- Kor'vas Bloodthorn
 						["sourceQuests"] = { 45413 }, -- Gathering Information
+						["classes"] = { 1, 2, 6, 10, 11, 12 },
 					}),
 					q(43841, {	-- Convincin' Old Yancey
 						["qg"] = 94159, -- Fleet Admiral Tethys
@@ -1883,6 +1969,7 @@ _.Zones =
 					}),
 					q(45125, {	-- Dabbling in the Demonic
 						["qg"] = 116714, -- Ritssyn Flamescowl
+						["classes"] = { 1, 4, 6, 7, 11 },
 					}),
 					q(42477, {	-- Daio the Decrepit
 						["qgs"] = { 102700, 109222 }, -- Meryl Felstorm (2 versions)
@@ -1991,12 +2078,6 @@ _.Zones =
 					q(43478, {	-- Experimental Potion: Test Subjects Needed
 						["qg"] = 110642, -- Fizzi Liverzapper
 					}),
-					q(43476, {	-- Experimental Potion: Test Subjects Needed
-						["qg"] = 110642, -- Fizzi Liverzapper
-					}),
-					q(43473, {	-- Experimental Potion: Test Subjects Needed
-						["qg"] = 110642, -- Fizzi Liverzapper
-					}),
 					--q(44271)	-- Eye of Azshara -- mission board
 					--q(44270)	-- Eye of Azshara -- mission board
 					q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
@@ -2056,6 +2137,7 @@ _.Zones =
 					}),
 					q(45917, {	-- Following the Scent
 						["qg"] = 116714, -- Ritssyn Flamescowl
+						["classes"] = { 1, 4, 6, 7, 11 },
 					}),
 					qh(44203, {	-- For the Cause
 						["qg"] = 113213, -- Master Mathias Shaw
@@ -2098,10 +2180,8 @@ _.Zones =
 							47023,	-- Guardian: Aid of the Illidari
 							47024,	-- Brewmaster: Aid of the Illidari
 							47025,	-- Blood: Aid of the Illidari
-						}
-					}),
-					q(40144, {	-- Glielle
-						["qg"] = 93541, -- Kondal Huntsworn
+						},
+						["classes"] = { 1, 2, 6, 10, 11, 12 },
 					}),
 					q(44337, {	-- Goddess Watch Over You
 						["qg"] = 113686, -- Archmage Khadgar
@@ -2233,14 +2313,6 @@ _.Zones =
 						["qg"] = 98092, -- Nikki the Gossip
 						["classes"] = { 4 },
 					}),
-					q(38500, {	-- Leysmithing Mastery
-						["qg"] = 92183, -- Alard Schmied
-						["sourceQuests"] = { 38507 }, -- Secrets of Leysmithing
-					}),
-					q(39340, {	-- Lining the Crucible
-						["qg"] = 92458, -- Deucus Valdera
-						["sourceQuests"] = { 39339 }, -- A Fragile Crucible
-					}),
 					q(42168, {	-- Looking into the Darkness
 						["qg"] = 106610, -- Calydus
 						["classes"] = { 9 },
@@ -2288,6 +2360,7 @@ _.Zones =
 					}),
 					q(48376, {	-- Mass Primal Obliterum
 						["qg"] = 114719, -- Trader Caelen
+						["repeatable"] = true,
 					}),
 					--q(44267)	-- Maw of Souls -- mission board
 					q(43253, {	-- Maw of Souls: Ancient Vrykul Legends
@@ -2322,10 +2395,6 @@ _.Zones =
 					q(44116, {	-- Mystery at Citrine Bay
 						["qg"] = 101513, -- Lord Jorach Ravenholdt
 						["classes"] = { 4 },
-					}),
-					q(38515, {	-- Nature Provides
-						["qg"] = 92183, -- Alard Schmied
-						["sourceQuests"] = { 38507 }, -- Secrets of Leysmithing
 					}),
 					qa(45909, {	-- Navarrogg's Gift
 						["qg"] = 90418, -- Archmage Modera
@@ -2393,7 +2462,8 @@ _.Zones =
 					}),
 					q(40183, {	-- Over Your Head
 						["groups"] = {
-							sp(194898),	-- Recipe: Broken Isles Helms
+							recipe(194699),	-- Warhide Mask
+							recipe(194739),	-- Battlebound Warhelm
 						},
 						["qg"] = 93523, -- Namha Moonwater
 						["sourceQuests"] = { 39958 }, -- Skin Deep
@@ -2408,7 +2478,7 @@ _.Zones =
 					}),
 					q(40201, {	-- Playthings
 						["groups"] = { 
-							sp(196443),	-- Recipe: Pet Bed
+							recipe(194776),	-- Leather Pet Bed
 						},
 						["qg"] = 93523, -- Namha Moonwater
 						["sourceQuests"] = { 
@@ -2427,6 +2497,7 @@ _.Zones =
 					}),
 					q(48375, {	-- Primal Obliterum
 						["qg"] = 114719, -- Trader Caelen
+						["repeatable"] = true,
 					}),
 					qa(47022, {	-- Protection: Aid of the Illidari
 						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver (2 versions)
@@ -2521,12 +2592,6 @@ _.Zones =
 						["qg"] = 101513, -- Lord Jorach Ravenholdt
 						["classes"] = { 4 },
 					}),
-					q(39905, {	-- Ringing True
-						["groups"] = { 
-							sp(208718),	-- Formula List: Ring Enchantments
-						},
-						["qg"] = 90317, -- Jace Darkweaver
-					}),
 					q(42663, {	-- Rise, Champions
 						["qg"] = 102700, -- Meryl Felstorm
 						["classes"] = { 8 },
@@ -2555,9 +2620,6 @@ _.Zones =
 					}),
 					q(45192, {	-- Runes of Rending
 						["qg"] = 116175, -- Karam Magespear
-					}),
-					q(38947, {	-- Runic Catgut
-						["qg"] = 93967, -- Lyndras
 					}),
 					q(44204, {	-- Seal their Fates
 						["qg"] = 110820, -- Scythe
@@ -2618,9 +2680,6 @@ _.Zones =
 						["qg"] = 103092, -- The Great Akazamzarak
 						["classes"] = { 8 },
 					}),
-					q(40146, {	-- Seymour and Agnes
-						["qg"] = 93541, -- Kondal Huntsworn
-					}),
 					qa(47042, {	-- Shadow: The Twisted Twin
 						["qgs"] = { 90463, 115468 }, -- Archmage Karlain
 						["classes"] = { 5 },
@@ -2629,31 +2688,11 @@ _.Zones =
 						["qg"] = 103792, -- Griftah
 						["classes"] = { 4 },
 					}),
-					q(40880, {	-- Short Circuit
-						["groups"] = {
-							sp(201615),	-- Schematic: Blingtron's Circuit Design Tutorial
-						},
-						["qg"] = 93520, -- Didi the Wrench
-					}),
 					q(42017, {	-- Shrine of the Truthguard
 						["qg"] = 105813, -- Orik Trueheart
 						["classes"] = { 2 },
 					}),
-					o(246154, { -- Broken Toy Box
-						q(40558, {	-- Socket to Me
-							["groups"] = {
-								sp(200410),	-- Design: JewelCraft
-							},
-						}),
-					}),
 					--q(47148) -- Something Different -- granted when entering a brawl. weekly?
-					q(40014, {	-- Spayed by the Spade
-						["groups"] = {
-							sp(193415),	-- Herbalism Technique: Aethril (Rank 1)
-						},
-						["qg"] = 92464, -- Kuhuine Tenderstride
-						["sourceQuests"] = { 40013 }, -- Aethril Sample
-					}),
 					q(43829, {	-- Spy vs. Spy
 						["qg"] = 101513, -- Lord Jorach Ravenholdt
 						["classes"] = { 4 },
@@ -2678,15 +2717,9 @@ _.Zones =
 						["classes"] = { 2 },
 						["sourceQuests"] = { 42663 }, -- Rise, Champions
 					}),
-					q(39346, {	-- Testing the Calibration
-						["qg"] = 92458, -- Deucus Valdera
-						["sourceQuests"] = {
-							39345,	-- Calibration Experts
-							39645,	-- Calibration Experts
-						},
-					}),
 					q(45916, {	-- The Acolyte Imperiled
 						["qg"] = 116714, -- Ritssyn Flamescowl
+						["classes"] = { 1, 4, 6, 7, 11 },
 					}),
 					o(251991, {
 						q(43349, {	-- The Aegis of Aggramar
@@ -2721,10 +2754,6 @@ _.Zones =
 						["classes"] = { 4 },
 						["sourceQuests"] = { 43829 }, -- Spy vs. Spy
 					}),
-					q(39817, {	-- The Brimstone's Secret
-						["qg"] = 97360, -- Matthew Rabis
-						["sourceQuests"] = { 39763 }, -- For Whom the Fel Tolls
-					}),
 					q(42377, {	-- The Brother's Trail
 						["qg"] = 106337, -- Travard
 						["classes"] = { 2 },
@@ -2733,12 +2762,8 @@ _.Zones =
 						["classes"] = { 6 },
 						["description"] = "Automatically given to you when you arrive in Dalaran.",
 					}),
-					q(41114),	-- The Champion's Return -- no qg info
-					q(40142, {	-- The Core of the Stormscale
-						["groups"] = {
-							sp(194820),	-- Skinning Technique: Stormscale (Rank 1)
-						},
-						["qg"] = 93541, -- Kondal Huntsworn
+					q(41114, {	-- The Champion's Return -- no qg info
+						["classes"] = { 8 },
 					}),
 					qa(42416, {	-- The Council is in Session
 						["qg"] = 107351, -- Archmage Khadgar
@@ -2790,6 +2815,7 @@ _.Zones =
 					}),
 					q(45904, {	-- The God-Queen's Gift
 						["qg"] = 90417, -- Archmage Khadgar
+						["classes"] = { 2, 4, 7, 8, 9 },
 					}),
 					--q(14166),	-- The Grateful Dead -- Day of the Dead event quest
 					q(41112, {	-- The Great Akazamzarak
@@ -2858,9 +2884,6 @@ _.Zones =
 						["classes"] = { 8 },
 						["sourceQuests"] = { 46338 }, -- A Creative Solution
 					}),
-					q(45177, {	-- The Nighthold
-						["qg"] = 113857, -- Light's Heart
-					}),
 					q(41113, {	-- The Only Way to Travel
 						["qg"] = 103092, -- The Great Akazamzarak
 						["classes"] = { 8 },
@@ -2911,13 +2934,6 @@ _.Zones =
 					q(40716, {	-- The Sixth
 						["qg"] = 103506, -- Ritssyn Flamescowl
 						["classes"] = { 9 },
-					}),
-					q(40037, {	-- The Spade's Blade
-						["groups"] = {
-							sp(193428),	-- Herbalism Technique: Starlight Rose (Rank 2)
-						},
-						["qg"] = 92464, -- Kuhuine Tenderstride
-						["sourceQuests"] = { 40036 }, -- Jeweled Spade Handle
 					}),
 					q(41124, {	-- The Tirisgarde Reborn
 						["qg"] = 102700, -- Meryl Felstorm
@@ -3056,18 +3072,6 @@ _.Zones =
 							41415,	-- The Hunter's Call
 						},
 					}),
-					qh(48054, {	-- Weigh Anchor
-						["groups"] = {
-							sp(248582),	-- Plans: Felslate Anchor
-						},
-						["qg"] = 106655, -- Arcanomancer Vridiel
-					}),
-					qa(48053, {	-- Weigh Anchor
-						["groups"] = {
-							sp(248582),	-- Plans: Felslate Anchor
-						},
-						["qg"] = 92183, -- Alard Schmied
-					}),
 					q(43015, {	-- What Winstone Suggests
 						["qg"] = 98092, -- Nikki the Gossip
 						["classes"] = { 4 },
@@ -3122,9 +3126,12 @@ _.Zones =
 					q(41405),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
 					q(41406),	-- Battle: Pandaren Cuisine - Torg Slowflame
 					q(41400),	-- Battle: Pandaren Cuisine!
+					q(43473),	-- Experimental Potion: Test Subjects Needed
 					q(43474),	-- Experimental Potion: Test Subjects Needed
 					q(43475),	-- Experimental Potion: Test Subjects Needed
+					q(43476)	-- Experimental Potion: Test Subjects Needed
 					q(43477),	-- Experimental Potion: Test Subjects Needed
+					q(43478),	-- Experimental Potion: Test Subjects Needed
 					q(42189),	-- Fire Mage - Flavor Event 01
 					q(42192),	-- Fire Mage - Flavor Event 02
 					q(42212),	-- Fire Mage - Flavor Event 03
@@ -3132,16 +3139,11 @@ _.Zones =
 					q(41263),	-- Oh! So Powerful!
 					q(46273),	-- The Giver of Quests
 					q(44115),	-- Welcome to Legion!
-					q(43473),	-- Experimental Potion: Test Subjects Needed
-					q(43474),	-- Experimental Potion: Test Subjects Needed
-					q(43475),	-- Experimental Potion: Test Subjects Needed
-					q(43477),	-- Experimental Potion: Test Subjects Needed
-					q(43478),	-- Experimental Potion: Test Subjects Needed
 					q(49472)	-- A Titanic Effort
 					q(49473)	-- A Titanic Effort
 					q(47793),	-- The Spoiled Sample
-					q(47791),	-- Unsettled Power
 					q(47790),	-- Unsettled Power
+					q(47791),	-- Unsettled Power
 ]]--
 				n(-16, { 	-- Rares 
 					o(244965, { -- Sheddle's Chest
@@ -8125,15 +8127,6 @@ _.Zones =
 					n(-25, { -- Pet Battle
 						["groups"] = {
 							p(1915),	-- Blind Rat
-						},
-					}),
-					n(-17, { --  Quests
-						["groups"] = {
-							q(43476, { -- Experimental Potion: Test Subjects Needed
-								["groups"] = {
-								},
-								["qg"] = 110642, -- Fizzi Liverzapper
-							}),
 						},
 					}),
 					n(-2, {	-- Vendors
