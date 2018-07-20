@@ -75,7 +75,8 @@ _.WorldEvents =
 						dr(0.02, i(11975)), -- Topaz  Ring
 						dr(0.05, i(12024)), -- Vanadium Talisman
 					}),
-					i(16885, { 	-- Heavy Junkbox      
+					i(16885, { 	-- Heavy Junkbox 
+						i(1728),			-- Teebu's Blazing Longsword
 						dr(0.04, i(16215)), -- Formula: Enchant Boots Greater Stamina   
 						dr(0.02, i(16218)), -- Formula: Enchant Bracer Superior Versatility 
 						dr(0.03, i(14494)), -- Pattern: Brightcloth Pants     

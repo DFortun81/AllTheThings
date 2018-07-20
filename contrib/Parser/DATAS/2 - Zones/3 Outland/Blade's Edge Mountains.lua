@@ -16,6 +16,31 @@ _.Zones =
 					p(379),	-- Squirrel
 				}),
 				n(-17, {	-- Quests
+					q(10975, {	-- Purging the Chambers of Bash'ir
+						["qg"] = 22919, -- Image of Commander Ameer
+						["sourceQuests"] = { 10974 } , -- Stasis Chambers of Bash'ir
+						["repeatable"] = true,
+					}),	
+					q(10976, {	-- The Mark of the Nexus-King
+						["qg"] = 22919, -- Image of Commander Ameer
+						["sourceQuests"] = { 10975 } , -- Purging the Chambers of Bash'ir
+					}),	
+					q(10977, {	-- Stasis Chambers of the Mana-Tombs
+						["qg"] = 22919, -- Image of Commander Ameer
+						["sourceQuests"] = { 10976 } , -- The Mark of the Nexus-King
+					}),	
+					q(10981, {	-- Nexus-Prince Shaffar's Personal Chamber
+						["qg"] = 22919, -- Image of Commander Ameer
+						["sourceQuests"] = { 10977 } , -- Stasis Chambers of the Mana-Tombs
+						["repeatable"] = true,
+					}),	
+					q(10982, {	-- The Eye of Haramad
+						["groups"] = {
+							i(32092), -- The Eye of Haramad
+						},
+						["qg"] = 22919, -- Image of Commander Ameer
+						["sourceQuests"] = { 10981 } , -- Nexus-Prince Shaffar's Personal Chamber
+					}),	
 					q(10713, {	-- ...and a Time for Action
 						i(31510),
 						i(31512),
@@ -892,7 +917,6 @@ _.Zones =
 							dr(100, i(32684, {	-- Insidion's Ebony Scale 
 								i(31942),	-- Deathwing Brood Cloak
 							})),
-							
 						},
 						["description"] = "Use 35 Apexis Shards on Insidion's Egg at 62.7 7.3 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
 					}),

@@ -6,37 +6,6 @@ _.Zones =
 	m(101, { 	-- Outland
 		m(109, { 	-- Netherstorm
 			["groups"] = {							
-				n( -3, {	-- Holidays					
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(20102, qa(13484)),	-- Spring Collectors 
-								qg(20102, qh(13483)),	-- Spring Gatherers
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qh(11446),	-- Brewfest!
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),	
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-								qa(14022),	-- Pilgrim's Bounty
-								qh(14036),	-- Pilgrim's Bounty
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-				}),
 				n(-25, {	-- Pet Battle
 					p(521), 	-- Fledgling Nether Ray
 					p(638), 	-- Nether Roach
@@ -49,8 +18,6 @@ _.Zones =
 							["qg"] = 19546,	-- Abjurist Belmara
 						}),
 					}),
-
-					
 					q( 10185, {	-- A Fate Worse Than Death
 						["groups"] = {
 							i(29955),	-- Mana Infused Wristguards
@@ -61,8 +28,6 @@ _.Zones =
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10174 },	-- Curse of the Violet Tower (NEEDS CONFIRMATION)
 					}),
-					
-					
 					o(184300, {	-- Necromantic Focus
 						q(10314, {	-- A Lingering Suspicion
 							["groups"] = {
@@ -70,39 +35,29 @@ _.Zones =
 							["sourceQuests"] = { 10316 },	-- Searching for Evidence
 						}),
 					}),
-					
-					
 					q( 10436, {	-- All Clear!
 						["groups"] = {
 						},
 						["qg"] = 20913,	-- Tashar
 						["sourceQuests"] = { 10430 },	-- Testing the Prototype
 					}),
-					
-					
 					q( 10268, {	-- An Audience with the Prince
 						["groups"] = {
 						},
 						["qg"] = 20066,	-- Gahruj
 						["sourceQuests"] = { 10267 },	-- Rightful Repossession
 					}),
-					
-					
 					q( 10270, {	-- A Not-So-Modest Proposal
 						["groups"] = {
 						},
 						["qg"] = 20071,	-- Wind Trader Marid
 					}),
-					
-					
 					q( 10272, {	-- A Promising Start
 						["groups"] = {
 						},
 						["qg"] = 20110,	-- Tyri
 						["sourceQuests"] = { 10281 },	-- Formal Introductions
 					}),
-					
-					
 					q( 10353, {	-- Arconus the Insatiable
 						["groups"] = {
 							i(30329),	-- Flesh Handler's Headpiece
@@ -112,8 +67,6 @@ _.Zones =
 						},
 						["qg"] = 20552,	-- Agent Ya-six
 					}),
-					
-					
 					q( 10176, {	-- Ar'kelos the Guardian
 						["groups"] = {
 							i(29777),	-- Cloak of the Valiant Defender
@@ -122,8 +75,6 @@ _.Zones =
 						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuests"] = { 10209 },	-- Summoner Kanthin's Prize
 					}),
-					
-					
 					q( 10249, {	-- Back to the Chief! (awarded "Protect Area 52" criteria)
 						["groups"] = {
 							i( 30019),	-- Area 52 Defender's Pants
@@ -134,8 +85,6 @@ _.Zones =
 						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["sourceQuests"] = { 10248 },	-- You, Robot
 					}),
-					
-					
 					i( 29233, {	-- Dathric's Blade
 						q( 10182, {	-- Battle-Mage Dathric
 							["groups"] = {
@@ -143,15 +92,11 @@ _.Zones =
 							["qg"] = 19543,	-- Battle-Mage Dathric
 						}),
 					}),
-					
-					
 					q( 10924, {	-- Bloody Imp-ossible!
 						["groups"] = {
 						},
 						["qg"] = 22479,	-- Sab'aoth
 					}),
-					
-					
 					o(183811, {	-- Wanted Poster
 						q(10701, {	-- Breaking Down Netherock
 							i(31314),	-- Rocket-Chief Pauldrons
@@ -165,8 +110,6 @@ _.Zones =
 							i(30294),	-- Red Pointy Hat
 						}),
 					}),
-					
-					
 					q( 10240, {	-- Building a Perimeter
 						["groups"] = {
 							i(29785),	-- Crimson Mail Bracers
@@ -177,23 +120,17 @@ _.Zones =
 						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuests"] = { 10239 },	-- Potential Energy Source
 					}),
-					
-					
 					q( 10422, {	-- Captain Tyralius
 						["groups"] = {
 						},
 						["qg"] = 20450,	-- Flesh Handler Viridius
 					}),
-					
-					
 					q( 10319, {	-- Capturing the Phylactery
 						["groups"] = {
 						},
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10314 },	-- A Lingering Suspicion
 					}),
-					
-					
 					i( 29236, {	-- Cohlien's Cap
 						q(10307, {	-- Cohlien Frostweaver
 							["groups"] = {
@@ -201,8 +138,6 @@ _.Zones =
 							["qg"] = 19545,	-- Cohlien Frostweaver
 						}),
 					}),
-					
-					
 					i( 29235, {	-- Luminrath's Mantle
 						q( 10306, {	-- Conjurer Luminrath
 							["groups"] = {
@@ -210,31 +145,23 @@ _.Zones =
 							["qg"] = 19544,	-- Conjurer Luminrath
 						}),
 					}),
-					
-					
 					q( 10427, {	-- Creatures of the Eco-Domes
 						["groups"] = {
 						},
 						["qg"] = 20871,	-- Aurine Moonblaze
 						["sourceQuests"] = { 10426 },	-- Flora of the Eco-Domes
 					}),
-					
-					
 					q( 10174, {	-- Curse of the Violet Tower
 						["groups"] = {
 						},
 						["qg"] = 19217,	-- Ravandwyr
 						["sourceQuests"] = { 10300 },	-- Rebuilding the Staff
 					}),
-					
-					
 					q( 10317, {	-- Dealing with the Foreman
 						["groups"] = {
 						},
 						["qg"] = 20112,	-- Wind Trader Tuluman
 					}),
-					
-					
 					q( 10318, {	-- Dealing with the Overmaster
 						["groups"] = {
 							i(30003),	-- Gloves of the Nether-Stalker
@@ -244,16 +171,12 @@ _.Zones =
 						["qg"] = 20393,	-- Foreman Sundown
 						["sourceQuests"] = { 10317 },	-- Dealing with the Foreman
 					}),
-					
-					
 					q( 10418, {	-- Deal With the Saboteurs
 						["groups"] = {
 						},
 						["qg"] = 20810,	-- Mehrdad
 						["sourceQuests"] = { 10417 },	-- Run a Diagnostic!
 					}),
-					
-					
 					q( 10235, {	-- Declawing Doomclaw
 						["groups"] = {
 							i(30279),	-- Mama's Insurance
@@ -263,8 +186,6 @@ _.Zones =
 						["qg"] = 19728,	-- Mama Wheeler
 						["sourceQuests"] = { 10234 },	-- One Demon's Trash...
 					}),
-					
-					
 					q( 10406, {	-- Delivering the Message
 						["groups"] = {
 							i(30335),	-- Druidic Force Boots
@@ -275,8 +196,6 @@ _.Zones =
 						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuests"] = { 10405 },	-- S-A-B-O-T-A-G-E
 					}),
-					
-					
 					q( 10320, {	-- Destroy Naberius!
 						["groups"] = {
 							i(29780),	-- Kirin Tor Apprentice's Robes
@@ -287,16 +206,12 @@ _.Zones =
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10319 },	-- Capturing the Phylactery
 					}),
-					
-					
 					q( 10424, {	-- Diagnosis: Critical
 						["groups"] = {
 						},
 						["qg"] = 20811,	-- Ghabar
 						["sourceQuests"] = { 10423 },	-- To the Stormspire
 					}),
-					
-					
 					q( 10439, {	-- Dimensuis the All-Devouring (awarded "Destroying the All-Devouring" criteria)
 						["groups"] = {
 							i(30297),	-- Circlet of the Starcaller
@@ -306,16 +221,12 @@ _.Zones =
 						["qg"] = 20907,	-- Professor Dabiri
 						["sourceQuests"] = { 10438 },	-- On Nethery Wings
 					}),
-					
-					
 					q( 10247, {	-- Doctor Vomisa, Ph.T.
 						["groups"] = {
 						},
 						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["sourceQuests"] = { 10237 },	-- Warn Area 52!
 					}),
-					
-					
 					q( 10223, {	-- Down With Daellis
 						["groups"] = {
 							i(29792),	-- Dawnstrider's Cloak
@@ -323,8 +234,6 @@ _.Zones =
 						},
 						["qg"] = 19488,	-- Custodian Dieworth
 					}),
-					
-					
 					q( 10221, {	-- Dr. Boom! (awarded "Building the X-52 Nether-Rocket" criteria)
 						["groups"] = {
 							i(29969),	-- Sparky's Discarded Helmet
@@ -335,23 +244,17 @@ _.Zones =
 						["qg"] = 19634,	-- Lead Sapper Blastfizzle
 						["sourceQuests"] = { 10203 },	-- Invaluable Asset Zapping
 					}),
-					
-					
 					q( 10311, {	-- Drijya Needs Your Help
 						["groups"] = {
 						},
 						["qg"] = 20066,	-- Gahruj
 						["isBreadcrumb"] = true,	-- for "Sabotage the Warp-Gate!"
 					}),
-					
-					
 					q( 10411, {	-- Electro-Shock Goodness!
 						["groups"] = {
 						},
 						["qg"] = 20449,	-- Researcher Navuud
 					}),
-					
-					
 					q( 10226, {	-- Elemental Power Extraction
 						["groups"] = {
 							i(30264),	-- Area 52 Engineering Gloves
@@ -362,8 +265,6 @@ _.Zones =
 						["qg"] = 19709,	-- Chief Engineer Trep
 						["sourceQuests"] = { 10224 },	-- Essence for the Engines
 					}),
-					
-					
 					q( 10425, {	-- Escape from the Staging Grounds
 						["groups"] = {
 							i(30331),	-- Diviner's Cinch
@@ -373,78 +274,58 @@ _.Zones =
 						},
 						["qg"] = 20763,	-- Captured Protectorate Vanguard
 					}),
-					
-					
 					q( 10224, {	-- Essence for the Engines
 						["groups"] = {
 						},
 						["qg"] = 19709,	-- Chief Engineer Trep
 						["sourceQuests"] = { 10225 },	-- Report to Engineering
 					}),
-					
-					
 					q( 10384, {	-- Ethereum Data
 						["groups"] = {
 						},
 						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuests"] = { 10339 },	-- The Ethereum
 					}),
-					
-					
 					q( 10855, {	-- Fel Reavers, No Thanks!
 						["groups"] = {
 						},
 						["qg"] = 20471,	-- Nether-Stalker Nauthis
 					}),
-					
-					
 					q( 10256, {	-- Finding the Keymaster
 						["groups"] = {
 						},
 						["qg"] = 19481,	-- Archmage Vargoth
 						["sourceQuests"] = { 10176 },	-- Ar'kelos the Guardian
 					}),
-					
-					
 					q( 10426, {	-- Flora of the Eco-Domes
 						["groups"] = {
 						},
 						["qg"] = 20871,	-- Aurine Moonblaze
 					}),
-					
-					
 					q( 10281, {	-- Formal Introductions
 						["groups"] = {
 						},
 						["qg"] = 20154,	-- Shrouded Figure
 						["sourceQuests"] = { 10271 },	-- Getting Down to Business
 					}),
-					
-					
 					q( 10276, {	-- Full Triangle
 						["groups"] = {
 						},
 						["qg"] = 20112,	-- Wind Trader Tuluman
 						["sourceQuests"] = { 10275 },	-- Triangulation Point Two
 					}),
-					
-					
 					q( 10271, {	-- Getting Down to Business
 						["groups"] = {
 						},
 						["qg"] = 20518,	-- Image of Wind Trader Marid
 						["sourceQuests"] = { 10270 },	-- A Not-So-Modest Proposal
 					}),
-					
-					
 					q( 10333, {	-- Help Mama Wheeler
 						["groups"] = {
 						},
 						["qg"] = 19645,	-- Papa Wheeler
 						["sourceQuests"] = { 10206 },	-- Pick Your Part
 					}),
-					
-					
 					q( 10293, {	-- Hitting the Motherlode
 						["groups"] = {
 							i(29813),	-- Cloak of Woven Energy
@@ -452,38 +333,28 @@ _.Zones =
 						["qg"] = 20067,	-- Zuben Elgenubi
 						["sourceQuests"] = { 10290 },	-- In Search of Farahlite
 					}),
-					
-					
 					q( 10232, {	-- In A Scrap With The Legion
 						["groups"] = {
 						},
 						["qg"] = 19645,	-- Papa Wheeler
 						["sourceQuests"] = { 10206 },	-- Pick Your Part
 					}),
-					
-					
 					q( 10331, {	-- Indispensable Tools
 						["groups"] = {
 						},
 						["qg"] = 20463,	-- Apprentice Andrethan
 					}),
-					
-					
 					q( 10290, {	-- In Search of Farahlite
 						["groups"] = {
 						},
 						["qg"] = 20067,	-- Zuben Elgenubi
 					}),
-					
-					
 					q( 10203, {	-- Invaluable Asset Zapping
 						["groups"] = {
 						},
 						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["sourceQuests"] = { 10186 },	-- You're Hired!
 					}),
-					
-					
 					q( 10309, {	-- It's a Fel Reaver, But with Heart
 						["groups"] = {
 							i(30268),	-- Heap Leggings
@@ -492,31 +363,23 @@ _.Zones =
 						},
 						["qg"] = 19690,	-- N. D. Meancamp
 					}),
-					
-					
 					q( 10433, {	-- Keeping Up Appearances
 						["groups"] = {
 						},
 						["qg"] = 20921,	-- Shauly Pore
 					}),
-					
-					
 					q( 10192, {	-- Krasus's Compendium
 						["groups"] = {
 						},
 						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuests"] = { 10188 },	-- The Sigil of Krasus
 					}),
-					
-					
 					q( 10184, {	-- Malevolent Remnants
 						["groups"] = {
 						},
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10174 },	-- Curse of the Violet Tower (NEEDS CONFIRMATION)
 					}),
-					
-					
 					q( 10191, {	-- Mark V is Alive!
 						["groups"] = {
 							i(30226),	-- Alley's Recurve
@@ -524,8 +387,6 @@ _.Zones =
 						},
 						["qg"] = 19589,	-- Maxx A. Million Mk. V
 					}),
-					
-					
 					q( 10332, {	-- Master Smith Rhonsus
 						["groups"] = {
 							i(29787),	-- Master Smith's Hammer
@@ -536,29 +397,21 @@ _.Zones =
 						["qg"] = 20463,	-- Apprentice Andrethan
 						["sourceQuests"] = { 10331 },	-- Indispensable Tools
 					}),
-					
-					
 					q( 10334, {	-- Needs More Cowbell
 						["groups"] = {
 						},
 						["qg"] = 20464,	-- Thadell
 					}),
-					
-					
 					q( 10315, {	-- Neutralizing the Nethermancers
 						["groups"] = {
 						},
 						["qg"] = 20341,	-- Nether-Stalker Oazul
 					}),
-					
-					
 					q( 10348, {	-- New Opportunities
 						["groups"] = {
 						},
 						["qg"] = 20810,	-- Mehrdad
 					}),
-					
-					
 					q( 10408, {	-- Nexus-King Salhadaar
 						["groups"] = {
 							i(30011),	-- Ameer's Impulse Taser
@@ -570,32 +423,24 @@ _.Zones =
 						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuests"] = { 10406 },	-- Delivering the Message
 					}),
-					
-					
 					q( 10183, {	-- Off To Area 52
 						["groups"] = {
 						},
 						["qg"] = 19569,	-- Netherologist Coppernickels
 						["isBreadcrumb"] = true,	-- for "You're Hired!" (mutually exclusive with other bcrumb quests)
 					}),
-					
-					
 					q( 10234, {	-- One Demon's Trash...
 						["groups"] = {
 						},
 						["qg"] = 19728,	-- Mama Wheeler
 						["sourceQuests"] = { 10333 },	-- Help Mama Wheeler
 					}),
-					
-					
 					q( 10438, {	-- On Nethery Wings
 						["groups"] = {
 						},
 						["qg"] = 20907,	-- Professor Dabiri
 						["sourceQuests"] = { 10437 },	-- Recipe for Destruction
 					}),
-					
-					
 					q( 10206, {	-- Pick Your Part
 						["groups"] = {
 							i(30275),	-- Mech Tech Shoulders
@@ -604,62 +449,46 @@ _.Zones =
 						["qg"] = 19645,	-- Papa Wheeler
 						["sourceQuests"] = { 10265 },	-- Consortium Crystal Collection
 					}),
-					
-					
 					q( 10239, {	-- Potential Energy Source
 						["groups"] = {
 						},
 						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuests"] = { 10343 },	-- The Unending Invasion
 					}),
-					
-					
 					q( 10385, {	-- Potential for Brain Damage = High
 						["groups"] = {
 						},
 						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuests"] = { 10384 },	-- Ethereum Data
 					}),
-					
-					
 					q( 10300, {	-- Rebuilding the Staff
 						["groups"] = {
 						},
 						["qg"] = 19217,	-- Ravandwyr
 						["sourceQuests"] = { 10173 },	-- The Archmage's Staff
 					}),
-					
-					
 					q( 10190, {	-- Recharging the Batteries
 						["groups"] = {
 						},
 						["qg"] = 19578,	-- Bot-Specialist Alley
 					}),
-					
-					
 					q( 10437, {	-- Recipe for Destruction
 						["groups"] = {
 						},
 						["qg"] = 20907,	-- Professor Dabiri
 					}),
-					
-					
 					q( 10225, {	-- Report to Engineering
 						["groups"] = {
 						},
 						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["sourceQuests"] = { 10186 },	-- You're Hired!
 					}),
-					
-					
 					q( 10266, {	-- Request for Assistance
 						["groups"] = {
 						},
 						["qg"] = 19880,	-- Nether-Stalker Khay-ji
 						["sourceQuests"] = { 10205 },	-- Warp-Raider Nesaad
 					}),
-					
-					
 					q( 10435, {	-- Retrieving the Goods
 						["groups"] = {
 							i(30284),	-- Audi's Embroidered Boots
@@ -670,8 +499,6 @@ _.Zones =
 						["qg"] = 20205,	-- Audi the Needle
 						["sourceQuests"] = { 10434 },	-- The Dynamic Duo
 					}),
-					
-					
 					q( 10267, {	-- Rightful Repossession
 						["groups"] = {
 							i(30273),	-- Duro Footgear
@@ -681,23 +508,17 @@ _.Zones =
 						["qg"] = 20066,	-- Gahruj
 						["sourceQuests"] = { 10266 },	-- Request for Assistance
 					}),
-					
-					
 					q( 10417, {	-- Run a Diagnostic!
 						["groups"] = {
 						},
 						["qg"] = 20810,	-- Mehrdad
 					}),
-					
-					
 					q( 10405, {	-- S-A-B-O-T-A-G-E
 						["groups"] = {
 						},
 						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuests"] = { 10385 },	-- Potential for Brain Damage = High
 					}),
-					
-					
 					q( 10310, {	-- Sabotage the Warp-Gate!
 						["groups"] = {
 							i(29978),	-- Consortium Combatant's Robes
@@ -707,16 +528,12 @@ _.Zones =
 						["qg"] = 20281,	-- Drijya
 						["sourceQuests"] = { 10311 },	-- Drijya Needs Your Help
 					}),
-					
-					
 					q( 10316, {	-- Searching for Evidence
 						["groups"] = {
 						},
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10312 },	-- The Annals of Kirin'Var
 					}),
-					
-					
 					q( 10274, {	-- Securing the Celestial Ridge (awarded "The Consortium" criteria)
 						["groups"] = {
 							i(29808),	-- Shimmering Azure Boots
@@ -727,23 +544,17 @@ _.Zones =
 						["qg"] = 20110,	-- Tyri
 						["sourceQuests"] = { 10273 },	-- Troublesome Distractions
 					}),
-					
-					
 					q( 10342, {	-- Securing the Shaleskin Shale
 						["groups"] = {
 						},
 						["qg"] = 19617,	-- Boots
 					}),
-					
-					
 					q( 10280, {	-- Special Delivery to Shattrath City
 						["groups"] = {
 						},
 						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
 						["sourceQuests"] = { 10276 },	-- Full Triangle
 					}),
-					
-					
 					q( 10440, {	-- Success!
 						["groups"] = {
 							i(30290),	-- Leggings of Concentrated Power
@@ -753,16 +564,12 @@ _.Zones =
 						["qg"] = 20913,	-- Tashar
 						["sourceQuests"] = { 10436 },	-- All Clear!
 					}),
-					
-					
 					q( 10209, {	-- Summoner Kanthin's Prize
 						["groups"] = {
 						},
 						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuests"] = { 10301 },	-- Unlocking the Compendium
 					}),
-					
-					
 					q( 10335, {	-- Surveying the Ruins
 						["groups"] = {
 							i(30255),	-- Chestguard of the Stormspire
@@ -771,8 +578,6 @@ _.Zones =
 						},
 						["qg"] = 20470,	-- Zephyrion
 					}),
-					
-					
 					q( 10857, {	-- Teleport This!
 						["groups"] = {
 							i(31701),	-- Saboteur's Axe
@@ -783,16 +588,12 @@ _.Zones =
 						["qg"] = 20471,	-- Nether-Stalker Nauthis
 						["sourceQuests"] = { 10856 },	-- The Best Defense
 					}),
-					
-					
 					q( 10430, {	-- Testing the Prototype
 						["groups"] = {
 						},
 						["qg"] = 20811,	-- Ghabar
 						["sourceQuests"] = { 10424 },	-- Diagnosis: Critical
 					}),
-					
-					
 					q( 10199, {	-- That Little Extra Kick
 						["groups"] = {
 							i(29999),	-- After Hours Pauldrons
@@ -803,46 +604,34 @@ _.Zones =
 						["qg"] = 19617,	-- Boots
 						["sourceQuests"] = { 10342 },	-- Securing the Shaleskin Shale
 					}),
-					
-					
 					q( 10312, {	-- The Annals of Kirin'Var
 						["groups"] = {
 						},
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10184 },	-- Malevolent Remnants
 					}),
-					
-					
 					q( 10173, {	-- The Archmage's Staff
 						["groups"] = {
 						},
 						["qg"] = 19217,	-- Ravandwyr
 					}),
-					
-				
 					q( 10856, {	-- The Best Defense
 						["groups"] = {
 						},
 						["qg"] = 20471,	-- Nether-Stalker Nauthis
 						["sourceQuests"] = { 10855 },	-- Fel Reavers, No Thanks!
 					}),
-				
-				
 					q( 10434, {	-- The Dynamic Duo
 						["groups"] = {
 						},
 						["qg"] = 20921,	-- Shauly Pore
 						["sourceQuests"] = { 10433 },	-- Keeping Up Appearances
 					}),
-				
-				
 					q( 10339, {	-- The Ethereum
 						["groups"] = {
 						},
 						["qg"] = 20448,	-- Commander Ameer
 					}),
-				
-				
 					q( 10345, {	-- The Flesh Lies...
 						["groups"] = {
 							i(30352),	-- Demolisher's Bracers
@@ -852,8 +641,6 @@ _.Zones =
 						},
 						["qg"] = 20551,	-- Agent Araxes
 					}),
-				
-				
 					i( 29738, {	-- Vial of Void Horror Ooze
 						q(10413, {	-- The Horrors of Pollution
 							["groups"] = {
@@ -862,15 +649,11 @@ _.Zones =
 							["qg"] = 20779,	-- Congealed Void Horror
 						}),
 					}),
-				
-				
 					q( 10336, {	-- The Minions of Culuthas
 						["groups"] = {
 						},
 						["qg"] = 20471,	-- Nether-Stalker Nauthis
 					}),
-				
-				
 					q( 10188, {	-- The Sigil of Krasus
 						["groups"] = {
 							i(29771),	-- Kirin'Var Journeyman's Belt
@@ -881,80 +664,60 @@ _.Zones =
 						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuests"] = { 10174 },	-- Curse of the Violet Tower
 					}),
-				
-				
 					q( 10222, {	-- The Sunfury Garrison
 						["groups"] = {
 						},
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10188 },	-- The Sigil of Krasus (NEEDS CONFIRMATION)
 					}),
-				
-				
 					q( 10343, {	-- The Unending Invasion
 						["groups"] = {
 						},
 						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuests"] = { 10174 },	-- Curse of the Violet Tower
 					}),
-				
-				
 					q( 10233, {	-- Torching Sunfury Hold
 						["groups"] = {
 						},
 						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuests"] = { 10192 },	-- Krasus's Compendium
 					}),
-				
-				
 					q( 10423, {	-- To the Stormspire
 						["groups"] = {
 						},
 						["qg"] = 20810,	-- Mehrdad
 						["sourceQuests"] = { 10418 },	-- Deal With the Saboteurs
 					}),
-				
-				
 					q( 10269, {	-- Triangulation Point One
 						["groups"] = {
 						},
 						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
 						["sourceQuests"] = { 10268 },	-- An Audience With the Prince
 					}),
-				
-				
 					q( 10275, {	-- Triangulation Point Two
 						["groups"] = {
 						},
 						["qg"] = 20092,	-- Dealer Hazzin
 						["sourceQuests"] = { 10269 },	-- Triangulation Point One
 					}),
-				
-				
 					q( 10273, {	-- Troublesome Distractions
 						["groups"] = {
 						},
 						["qg"] = 20110,	-- Tyri
 						["sourceQuests"] = { 10272 },	-- A Promising Start
 					}),
-				
-				
 					q( 10301, {	-- Unlocking the Compendium
 						["groups"] = {
 						},
 						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuests"] = { 10192 },	-- Krasus's Compendium
 					}),
-				
-				
 					q( 10237, {	-- Warn Area 52!
 						["groups"] = {
 						},
 						["qg"] = 19728,	-- Mama Wheeler
 						["sourceQuests"] = { 10235 },	-- Declawing Doomclaw
 					}),
-				
-				
 					q( 10205, {	-- Warp-Raider Nesaad
 						["groups"] = {
 							i(30266),
@@ -964,16 +727,12 @@ _.Zones =
 						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["sourceQuests"] = { 10262 },	-- A Heap of Ethereals
 					}),
-				
-				
 					q( 10429, {	-- When Nature Goes Too Far
 						["groups"] = {
 						},
 						["qg"] = 20871,	-- Aurine Moonblaze
 						["sourceQuests"] = { 10427 },	-- Creatures of the Eco-Domes
 					}),
-				
-				
 					q( 10337, {	-- When the Cows Come Home
 						["groups"] = {
 							i(29804),	-- Wrangler's Boots
@@ -985,8 +744,6 @@ _.Zones =
 						["qg"] = 20415,	-- Bessy
 						["sourceQuests"] = { 10334 },	-- Needs More Cowbell
 					}),
-				
-				
 					q( 10186, {	-- You're Hired!
 						["groups"] = {
 							i(30225),	-- Junior Technician 3rd Grade Bracers
@@ -997,46 +754,28 @@ _.Zones =
 						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["sourceQuests"] = { 39201 },	-- Warchief's Command: Netherstorm!
 					}),
-					
-					
 					q( 10248, {	-- You, Robot
 						["groups"] = {
 						},
 						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["sourceQuests"] = { 10247 },	-- Doctor Vomisa, Ph.T.
 					}),
-					
-				
-				
-				
-				
-				
 --[[
 							["groups"] = {
 							},
 							["qg"] = ,	-- 
 							["sourceQuests"] = {  },	-- 
 						}),
-						
 							["groups"] = {
 							},
 							["qg"] = ,	-- 
 						}),
-						
 							["groups"] = {
 							},
 							["sourceQuests"] = {  },	-- 
 						}),
 --]]
 				-- q(10850),	-- Nether Gas In a Fel Fire Engine (doesn't ever register as completed and irrelevant, it's only part of "Fel Reavers, No Thanks!")
-				
-					
-					
-					
-					
-					
-
-
 -- DUNGEON QUESTS
 					qdg(q( 10257, {	-- Capturing the Keystone (awarded "The Violet Tower" criteria)
 						["groups"] = {
@@ -1044,7 +783,6 @@ _.Zones =
 						["qg"] = 19481,	-- Archmage Vargoth
 						["sourceQuests"] = { 10256 },	-- Finding the Keymaster
 					})),
-
 -- FACTION QUESTS					
 					faction(932, {	-- The Aldor
 						["groups"] = {
@@ -1207,7 +945,7 @@ _.Zones =
 							q( 10973, {	-- A Thousand Worlds
 								["groups"] = {
 								},
-								["qg"] = 20448,	-- 
+								["qg"] = 20448,	-- Commander Ameer
 								["description"] = "Requires Revered with The Consortium.",
 							}),
 							q( 10974, {	-- Stasis Chambers of Bash'ir
