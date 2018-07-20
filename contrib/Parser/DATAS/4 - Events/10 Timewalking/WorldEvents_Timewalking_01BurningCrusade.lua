@@ -56,9 +56,38 @@ _.WorldEvents =
 						i(129841), -- Trousers of the Scryer's Retainer
 						i(129856), -- Vanir's Fist of Brutality
 						i(129855), -- Voodo-Woven 
+						i(35348, { -- Bag of Fishing Treasures
+							i(35350), -- Chuck's Bucket
+							i(33818), -- Muckbreeeath's Bucket
+							i(34834), -- Recipe: Captain Rumsey's Lager
+							i(35349), -- Snarly's Bucket
+							i(33816), -- Toothy's Bucket
+							i(33820, { -- Weather-Beaten Fishing Hat
+								["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+							}),
+							i(34109, {	-- Weather Beaten Journal
+								["collectible"] = false,
+							}),
+						}),
+						i(33844, { -- Barrel of Fish
+							i(33869),	-- Recipe: Broiled Bloodfin
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33875),	-- Recipe: Kibler's Bits
+							i(33870),	-- Recipe: Skullfish Soup
+							i(33871),	-- Recipe: Stormchops
+						}),
+						i(33857, { -- Crate of Meat
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33875),	-- Recipe: Kibler's Bits
+							i(33873),	-- Recipe: Spicy Hot Talbuk
+							i(33871),	-- Recipe: Stormchops
+						}),
 					}),
 				},
 			}),
 		},
+		["maps"] = 481, -- Shattrath City
 	}),
 };

@@ -66,40 +66,22 @@ _.Instances =
 							i(27416),	-- Fetish of the Fallen
 							n(18478, {		-- Avatar of the Fallen
 								["groups"] = {
-									i(27876, {  -- Will of the Fallen Exarch
+									i(27876, {  -- Will of the Fallen Exarch**
 										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
 									}),
-									i(27877, { -- Draenic Wildstaff
+									i(27877, { -- Draenic Wildstaff**
 										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
 									}),
-									i(27878, { -- Auchenai Death Shroud
+									i(27878, { -- Auchenai Death Shroud**
 										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
 									}),
-									i(28268, { -- Natural Mender's Wraps
+									i(28268, { -- Natural Mender's Wraps**
 										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
 									}),
-									i(27937, { -- Sky Breakeer
+									i(27937, { -- Sky Breakeer**
 										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
 									}),
-									i(27797, { -- Wastewalker Shoulderpads
-										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
-									}),
-									i(27872, { -- The Harvester of Souls
-										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
-									}),
-									i(29354, { -- Light-Touched Stole of  Altruism
-										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
-									}),
-									i(29257, { -- Sash of Arcane Visions
-										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
-									}),
-									i(29244, { -- Wave-Song Girdle
-										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
-									}),
-									i(27870, { -- Doomplate Legguards
-										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
-									}),
-									i(27867, { -- Boots of the Unjust
+									i(27797, { -- Wastewalker Shoulderpads**
 										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
 									}),
 								},
@@ -142,12 +124,24 @@ _.Instances =
 								i(27416),	-- Fetish of the Fallen
 								n(18478, {		-- Avatar of the Fallen
 									["groups"] = {
-										i(27876),	-- Will of the Fallen Exarch
-										i(27877),	-- Draenic Wildstaff
-										i(27878),	-- Auchenai Death Shroud
-										i(28268),	-- Natural Mender's Wraps
-										i(27937),	-- Sky Breaker
-										i(27797),	-- Wastewalker Shoulderpads
+										i(27876, {  -- Will of the Fallen Exarch**
+											["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+										}),
+										i(27877, { -- Draenic Wildstaff**
+											["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+										}),
+										i(27878, { -- Auchenai Death Shroud**
+											["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+										}),
+										i(28268, { -- Natural Mender's Wraps**
+											["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+										}),
+										i(27937, { -- Sky Breakeer**
+											["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+										}),
+										i(27797, { -- Wastewalker Shoulderpads**
+											["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+										}),
 									},
 									["description"] = "This mob will spawn if you slowly dps Exarch to 30%. None of the loot as been seen since 7.3.5 and has reportedly become unobtainable. If you fail to get loot from this boss, please submit a bug report!\n  - Crieve",
 								}),

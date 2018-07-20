@@ -16,6 +16,7 @@ i(86559, 1, 44498);		-- Frying Pan
 i(86558, 1, 44497);		-- Rolling Pin
 i(68194, 1, 34777);		-- Oggleflint's Inspirer
 i(1958, 1, 510);		-- Petrified Shinbone
+i(33820, 1, 15661);		-- Weather-Beaten Fishing Hat
 
 -----------------------
 -- C O S M E T I C S --
