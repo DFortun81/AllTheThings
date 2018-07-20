@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(905, { 	-- Argus
-		n(-215, { -- Vindicaar
+		m(886, { -- Vindicaar
 			["groups"] = {
 				n(-169, { -- Emissary Quests
 					q(48642, { -- Argussian Reach
@@ -1863,7 +1863,7 @@ _.Zones =
 				}),
 			},
 			["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
-			["maps"] = { 885, 830, 882 },
+			["maps"] = { 831, 883, 886 }, -- All 3 Vindicaar maps.  Do NOT use 831 for anything, it returns Exodar
 			["lvl"] = 110,
 			["isRaid"] = true,
 		}),

@@ -4,10 +4,9 @@
 _.Zones =
 {
 	m(572, { 	-- Draenor
-		m(579, {	-- Lunrfall other mapid's 971, 973, 974, 975
-					-- Lucetia: MapID 991 was used and only worked in Shadowmoon Valley.  Changing it to 971 should work.
+		m(582, {	-- Lunarfall
 			["groups"] = {				
-				n(-3, { 	-- Holidays
+				n(-3, { 	-- Holidays	 [DO NOT REMOVE AT ALL PER LUCETIA]
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-25, { 	 -- Pet Battle

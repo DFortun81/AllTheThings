@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(424, { 	-- Pandaria
-		m(580, { 	-- Shrine of Two Moons
+		m(391, { 	-- Shrine of Two Moons
 			["groups"] = {
 				n(-3, { 	-- Holidays
 					n(-63, { -- Trial of Style

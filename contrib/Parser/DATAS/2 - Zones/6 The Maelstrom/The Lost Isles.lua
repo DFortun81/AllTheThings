@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(509, { 	-- The Maelstrom
+	m(948, { 	-- The Maelstrom
 		m(174, { 	-- The Lost Isles
 			["groups"] = {		
 				n(-17, { -- Quests

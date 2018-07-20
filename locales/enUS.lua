@@ -901,7 +901,7 @@ AllTheThings.Locales.enUS = {
 		[-118] = select(2,C_Garrison.GetBuildingInfo(90)), 						-- The Tannery
 		[-119] = select(2,C_Garrison.GetBuildingInfo(111)), 					-- Trading Post
 --Horde [Swaps based on faction ONLY after a reloadui]
-		[-120] = select(2,C_Garrison.GetBuildingInfo(61)), 						-- Lunarfall Excavation / Frostwall Mine
+		[-120] = select(2,C_Garrison.GetBuildingInfo(61)), 						-- Lunarfall Excavation / Frostwall Mine [585]
 		[-121] = select(2,C_Garrison.GetBuildingInfo(34)), 						-- Lunarfall Inn / Frostwall Tavern
 		[-122] = select(2,C_Garrison.GetBuildingInfo(162)), 					-- Gnomish Gearworks / Goblin Workshop
 		[-123] = select(2,C_Garrison.GetBuildingInfo(37)), 						-- Mage Tower / Spirit Lodge

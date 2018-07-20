@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(572, { 	-- Draenor
-		h(m(976, {	-- Frostwall other mapid's 976, 980, 981, 982,
+		h(m(590, {	-- Frostwall other mapid's 976, 980, 981, 982,
 			 -- Lucetia: MapID 990 was used and only worked in Frostfire Ridge.  Changing it to 976 should work.
 			["groups"] = {
-				nh(-3, { 	-- Holidays					
+				nh(-3, { 	-- Holidays	 [DO NOT REMOVE AT ALL PER LUCETIA]			
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							nh(-25, { 	 -- Pet Battle
