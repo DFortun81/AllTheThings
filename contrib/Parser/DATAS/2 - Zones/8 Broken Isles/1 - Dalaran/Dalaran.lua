@@ -2585,10 +2585,6 @@ _.Zones =
 						["qg"] = 112679, -- Valeera Sanguinar
 						["classes"] = { 4 },
 					}),
-					q(40994, {	-- Right Tools for the Job
-						["qg"] = 101513, -- Lord Jorach Ravenholdt
-						["classes"] = { 4 },
-					}),
 					q(42663, {	-- Rise, Champions
 						["qg"] = 102700, -- Meryl Felstorm
 						["classes"] = { 8 },
@@ -3016,11 +3012,6 @@ _.Zones =
 					q(45727, {	-- Uniting the Isles
 						["qg"] = 90417, -- Archmage Khadgar
 					}),
-					q(41125, {	-- Unlocked Potential
-						["qg"] = 102700, -- Meryl Felstorm
-						["classes"] = { 8 },
-						["sourceQuests"] = { 41114 },
-					}),
 					--q(43556),	-- Vault of the Wardens -- granted by mission board
 					--q(44260),	-- Vault of the Wardens -- granted by mission board
 					--q(44261),	-- Vault of the Wardens -- granted by mission board
@@ -3132,9 +3123,11 @@ _.Zones =
 					q(42212),	-- Fire Mage - Flavor Event 03
 					q(46148),	-- Furthering Knowledge
 					q(41263),	-- Oh! So Powerful!
+					q(40994)	-- Right Tools for the Job
 					q(46273),	-- The Giver of Quests
 					q(47793),	-- The Spoiled Sample
 					q(44174)	-- The Very Best
+					q(41125)	-- Unlocked Potential
 					q(47790),	-- Unsettled Power
 					q(47791),	-- Unsettled Power
 					q(44115),	-- Welcome to Legion!
