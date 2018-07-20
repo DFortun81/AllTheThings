@@ -66,18 +66,42 @@ _.Instances =
 							i(27416),	-- Fetish of the Fallen
 							n(18478, {		-- Avatar of the Fallen
 								["groups"] = {
-									i(27876),	-- Will of the Fallen Exarch
-									i(27877),	-- Draenic Wildstaff
-									i(27878),	-- Auchenai Death Shroud
-									i(28268),	-- Natural Mender's Wraps
-									i(27937),	-- Sky Breaker
-									i(27797),	-- Wastewalker Shoulderpads
-									i(27872),	-- \
-									i(29354),	--  \
-									i(29257),	--   \ These items are from Exarch Maladaar's loot table.
-									i(29244),	--   /
-									i(27870),	--  /
-									i(27867),	-- /
+									i(27876, {  -- Will of the Fallen Exarch
+										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+									}),
+									i(27877, { -- Draenic Wildstaff
+										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+									}),
+									i(27878, { -- Auchenai Death Shroud
+										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+									}),
+									i(28268, { -- Natural Mender's Wraps
+										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+									}),
+									i(27937, { -- Sky Breakeer
+										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+									}),
+									i(27797, { -- Wastewalker Shoulderpads
+										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+									}),
+									i(27872, { -- The Harvester of Souls
+										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+									}),
+									i(29354, { -- Light-Touched Stole of  Altruism
+										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+									}),
+									i(29257, { -- Sash of Arcane Visions
+										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+									}),
+									i(29244, { -- Wave-Song Girdle
+										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+									}),
+									i(27870, { -- Doomplate Legguards
+										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+									}),
+									i(27867, { -- Boots of the Unjust
+										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
+									}),
 								},
 								["description"] = "This mob will spawn if you slowly dps Exarch to 30%. No recorded loot has dropped from this mob on Normal difficulty despite having its own loot table on Heroic. You will more than likely need to run Heroic for these items and even then, the loot table appears to be broken with 7.3.5. This is listed just in case they ever fix the loot.\n  - Crieve",
 							}),
