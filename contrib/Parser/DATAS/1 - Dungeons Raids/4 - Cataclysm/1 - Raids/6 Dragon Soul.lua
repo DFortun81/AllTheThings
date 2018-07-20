@@ -224,19 +224,20 @@ _.Instances =
 									i(78455),	-- Belt of the Beloved Companion
 									i(78460),	-- Goriona's Collar
 									i(78457),	-- Janglespur Jackboots
+									i(77973),	-- Starcatcher Compass
 								})),
 								cr(53879, e(318, {	-- Spine of Deathwing
 									i(152980),	-- Elementium Back Plate (PET!)
-									i( 78470),	-- Backbreaker Spaulders
-									i( 78466),	-- Gloves of Liquid Smoke
-									i( 78469),	-- Gauntlets of the Golden Thorn
-									i( 78467),	-- Molten Blood Footpads
-									i( 78468),	-- Belt of Shattered Elementium
-									i( 77977),	-- Eye of Unmaking
-									i( 77976),	-- Heart of Unliving
-									i( 77978),	-- Resolve of Undying
-									i( 77975),	-- Will of Unbinding
-									i( 77974),	-- Wrath of Unchaining
+									i(78470),	-- Backbreaker Spaulders
+									i(78466),	-- Gloves of Liquid Smoke
+									i(78469),	-- Gauntlets of the Golden Thorn
+									i(78467),	-- Molten Blood Footpads
+									i(78468),	-- Belt of Shattered Elementium
+									i(77977),	-- Eye of Unmaking
+									i(77976),	-- Heart of Unliving
+									i(77978),	-- Resolve of Undying
+									i(77975),	-- Will of Unbinding
+									i(77974),	-- Wrath of Unchaining
 								})),
 								cr(56173, e(333, {	-- Madness of Deathwing
 									i(152981),	-- Severed Tentacle (PET!)

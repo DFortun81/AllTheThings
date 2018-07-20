@@ -18,11 +18,20 @@ _.Instances =
 					}),
 					d(1, {	-- Normal
 						n(-17, {	-- Quests
-							q(29596, {	-- The End of the Exarch
-								i(29341),	-- Auchenai Anchorite's Robe
-								i(29340),	-- Auchenai Monk's Tunic
-								i(29339),	-- Auchenai Tracker's Hauberk
-								i(29337),	-- The Exarch's Protector
+							q(29591, { -- Raging Spirits
+								["qg"] = 54698, -- Tormented Soulpriest
+							}),	
+							q(29590, { -- The Dead Watcher
+								["qg"] = 54725, -- Draenei Spirit
+							}),	
+							q(29596, { -- The End of the Exarch
+								["groups"] = {
+									i(29341),	-- Auchenai Anchorite's Robe
+									i(29340),	-- Auchenai Monk's Tunic
+									i(29339),	-- Auchenai Tracker's Hauberk
+									i(29337),	-- The Exarch's Protector
+								},
+								["qg"] = 54725, -- Draenei Spirit
 							}),	
 						}),
 						cr(18371, e(523, {	-- Shirrak the Dead Watcher

@@ -8,25 +8,6 @@ _.Instances =
 		["groups"] = {
 			inst(232, { 	-- Maraudon
 				["groups"] = {
-					n(-47, {	-- Lunar Festival						
-						["groups"] = {						
-							n(-17, {	-- Quests				
-								q(8635, {	-- Splitrock the Elder			
-									["groups"] = {			
-									-- i(21100),	-- Coin of Ancestry	
-									-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 51.5, 93.7",			
-									["qg"] = 15556,	-- Elder Splitrock		
-									["u"] = 17,	-- Lunar Festival Holiday Filter		
-								}),				
-							}),					
-						},						
-						["achievementID"] = 913, -- To Honor One's Elders						
-					}),							
 					n(-70, { -- Foulspore Cavern [Orange]
 						n(-17, {	-- Quests
 							q(27698),	-- Servants of Theradras
@@ -66,9 +47,12 @@ _.Instances =
 							i( 17754),	-- Infernal Trickster Leggings
 						})),
 						n(12237, {		-- Meshlok the Harvester
-							dr(38, i(17741)),	-- Nature's Embrace
-							dr(34, i(17742)),	-- Fungus Shroud Armor
-							dr(23, i(17767)),	-- Bloomsprout Headpiece
+							["description"] = "This is a rare that is not always present.",
+							["groups"] = {
+								dr(38, i(17741)),	-- Nature's Embrace
+								dr(34, i(17742)),	-- Fungus Shroud Armor
+								dr(23, i(17767)),	-- Bloomsprout Headpiece
+							},
 						}),
 					}),
 					n(-69, { -- Maraudon Portal
