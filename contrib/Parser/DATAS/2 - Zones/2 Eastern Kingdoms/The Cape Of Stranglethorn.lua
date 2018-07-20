@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(673, {	-- The Cape of Stranglethorn
+	m(13, { 	-- Eastern Kingdoms
+		m(210, {	-- The Cape of Stranglethorn
 			["groups"] = {			
 				n( -3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival

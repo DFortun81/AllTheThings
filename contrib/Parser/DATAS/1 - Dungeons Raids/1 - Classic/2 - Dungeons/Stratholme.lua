@@ -387,7 +387,7 @@ _.Instances =
 					}),
 				},
 				["lvl"] = 37,
-				["mapID"] = 765
+				["mapID"] = 317
 			})
 		},
 		["tierID"] = 1

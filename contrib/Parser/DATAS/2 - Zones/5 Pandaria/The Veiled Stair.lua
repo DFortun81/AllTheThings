@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(873, {	-- The Veiled Stair
+	m(424, { 	-- Pandaria
+		m(433, {	-- The Veiled Stair
 			["groups"] = {	
 				n(-25, { 	-- Pet Battle
 					p(706), 	-- Bandicoon

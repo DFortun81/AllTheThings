@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(20, {		-- Tirisfal Glades
+	m(13, { 	-- Eastern Kingdoms
+		m(18, {		-- Tirisfal Glades
 			["groups"] = {
 				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
@@ -714,7 +714,7 @@ _.Zones =
 					},
 				}),
 				--[[
-				m(892, {	-- Deathknell
+				m(465, {	-- Deathknell
 					["groups"] = {
 						n(-17, {	-- Quests
 							qg(, qh(24971)),	-- Assault on the Rotbrain Encampment

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(1184, { 	-- Argus
+	m(905, { 	-- Argus
 		n(-215, { -- Vindicaar
 			["groups"] = {
 				n(-169, { -- Emissary Quests
@@ -1863,7 +1863,7 @@ _.Zones =
 				}),
 			},
 			["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
-			["maps"] = { 1171, 1135, 1170 },
+			["maps"] = { 885, 830, 882 },
 			["lvl"] = 110,
 			["isRaid"] = true,
 		}),

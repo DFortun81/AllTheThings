@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(962, { 	-- Draenor
-		m(948, {	-- Spires of Arak
+	m(572, { 	-- Draenor
+		m(542, {	-- Spires of Arak
 			["groups"] = {
 				n(-25, { 	-- Pet Battle
 					p(635), 	-- Adder

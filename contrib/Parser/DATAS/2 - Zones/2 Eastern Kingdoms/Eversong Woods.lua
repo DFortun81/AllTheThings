@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(462, {	-- Eversong Woods
+	m(13, { 	-- Eastern Kingdoms
+		m(94, {	-- Eversong Woods
 			["groups"] = {			
 				n (-3, {	-- Holidays
 					n(-51, {     -- Noblegarden

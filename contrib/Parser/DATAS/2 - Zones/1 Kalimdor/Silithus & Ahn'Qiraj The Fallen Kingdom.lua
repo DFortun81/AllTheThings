@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor
-		m(261, {	-- Silithus
+	m(12, { 	-- Kalimdor
+		m(81, {	-- Silithus
 			["groups"] = {			
 				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
@@ -1049,7 +1049,7 @@ END OF MICRO-HOLIDAY --]]
 						--}),						
 					},
 				}),
-				m(772, {	-- Ahn'Qiraj: The Fallen Kingdom
+				m(327, {	-- Ahn'Qiraj: The Fallen Kingdom
 					["groups"] = {		
 						n(-25, { 	-- Pet Battle
 							desc(p(513), "Starts spawning March 20th. Stops spawning September 23rd."), -- Qiraji Guardling

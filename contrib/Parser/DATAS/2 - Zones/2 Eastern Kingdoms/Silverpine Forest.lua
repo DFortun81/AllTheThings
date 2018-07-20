@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
+	m(13, { 	-- Eastern Kingdoms
 		m(21, {		-- Silverpine Forest
 			["groups"] = {				
 				n( -3, {	-- Holidays
@@ -878,7 +878,7 @@ _.Zones =
 						--}),
 					},
 				}),
-				m(684, {	-- Ruins of Gilneas
+				m(217, {	-- Ruins of Gilneas
 					n(-17, { -- Quests
 						qh(27406, {	-- A Man Named Godfrey
 							["groups"] = {

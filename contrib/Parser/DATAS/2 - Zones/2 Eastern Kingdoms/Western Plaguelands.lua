@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
+	m(13, { 	-- Eastern Kingdoms
 		m(22, {		-- Western Plaguelands
 			["groups"] = {
 				n( -3, {	-- Holidays

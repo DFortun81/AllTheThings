@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
-		m(496, {	-- Zul'Drak
+	m(113, { 	-- Northrend
+		m(121, {	-- Zul'Drak
 			["groups"] = {							
 				ach(2257, {	-- Frostbitten
 					{

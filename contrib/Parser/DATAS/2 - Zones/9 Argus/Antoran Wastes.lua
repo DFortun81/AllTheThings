@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(1184, { 	-- Argus
-		m(1171, { -- Antoran Wastes
+	m(905, { 	-- Argus
+		m(885, { -- Antoran Wastes
 			["groups"] = {
 				n(-4, { 	-- Achievement
 					ach(12074, { -- Shoot First, Loot Later

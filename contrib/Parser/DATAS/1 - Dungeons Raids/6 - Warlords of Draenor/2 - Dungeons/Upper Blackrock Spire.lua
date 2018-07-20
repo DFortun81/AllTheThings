@@ -648,7 +648,7 @@ _.Instances =
 					}),
 				},
 				["lvl"] = 100,
-				["mapID"] = 995
+				["mapID"] = 616
 			}),
 		},					
 		["tierID"] = 6

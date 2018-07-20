@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor
-		m(607, {	-- Southern Barrens
+	m(12, { 	-- Kalimdor
+		m(199, {	-- Southern Barrens
 			["groups"] = {			
 				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival

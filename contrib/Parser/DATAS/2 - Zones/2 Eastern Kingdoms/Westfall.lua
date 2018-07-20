@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(39, {		-- Westfall
+	m(13, { 	-- Eastern Kingdoms
+		m(52, {		-- Westfall
 			["groups"] = {							
 				n( -3, {	-- Holidays	
 					n(-47, {     -- Lunar Festival

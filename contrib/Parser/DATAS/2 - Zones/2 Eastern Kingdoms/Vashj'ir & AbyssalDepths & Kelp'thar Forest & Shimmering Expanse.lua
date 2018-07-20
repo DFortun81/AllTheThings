@@ -3,10 +3,10 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(613, {	-- Vashj'ir
+	m(13, { 	-- Eastern Kingdoms
+		m(203, {	-- Vashj'ir
 			["groups"] = {
-				m(614, {	-- Abyssal Depths
+				m(204, {	-- Abyssal Depths
 					["groups"] = {			
 						n(-17, { -- Quests
 --							qg(, qa(26017)),  	-- A Lure
@@ -192,7 +192,7 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 					["description"] = "|cff66ccffAbyssal Depths is the last, and darkest zone, players reach when questing in Vash'jir. They are home to the ancient god L'ghorek, which the Twilight Hammer is siphoning energy from to be prepared when fighting Neptulon in the future.|r",
 				}),
-				m(610, {	-- Kelp'thar Forest
+				m(201, {	-- Kelp'thar Forest
 					["groups"] = {		
 --[[				
 						n(-3, { 	-- Holidays					
@@ -958,7 +958,7 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 					["description"] = "|cff66ccffKelp'thar Forest is the first subzone players reach when questing in Vash'jir. It has tropical underwater life and is closer to the surface than other subzones. Quests introduce the threat of the naga while also reacquainting the player with stranded members of the Zul'Aman exploratory crew.|r",
 				}),
-				m(615, {	-- Shimmering Expanse
+				m(205, {	-- Shimmering Expanse
 					["groups"] = {			
 						n(-3, { 	-- Holidays					
 							n(-47, {     -- Lunar Festival

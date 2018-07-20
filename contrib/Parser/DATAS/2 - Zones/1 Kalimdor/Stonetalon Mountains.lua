@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor
-		m(81, {		-- Stonetalon Mountains
+	m(12, { 	-- Kalimdor
+		m(65, {		-- Stonetalon Mountains
 			["groups"] = {			
 				n( -3, {	-- Holidays
 --[[					

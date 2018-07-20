@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
-		m(486, { 	-- Borean Tundra
+	m(113, { 	-- Northrend
+		m(114, { 	-- Borean Tundra
 			["groups"] = {
 				a(faction(1037, {	-- Alliance Vanguard
 					["achievementID"] = 1012,	-- The Winds of the North

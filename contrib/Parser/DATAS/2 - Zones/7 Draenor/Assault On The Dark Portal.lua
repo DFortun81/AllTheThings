@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(962, { 	-- Draenor
+	m(572, { 	-- Draenor
 		n(-356, {	-- Assault on the Dark Portal
 			["groups"] = {
 				n(-17, { -- Quests
@@ -102,7 +102,7 @@ _.Zones =
 			["lvl"] = 90,	
 			["achievementID"] = 8922,			
 			["description"] = "|cff66ccffThe Assault on the Dark Portal is the instanced version of Tanaan Valley, which is the subzone of Tanaan Jungle and a location of Warlords of Draenor introductory experience. Once the intro is completed, players have no means of returning to the area, similiar to Plaguelands: The Scarlet Enclave for death knights.|r",
-			["mapID"] = 970,
+			["mapID"] = 577,
 		}),
 	}),
 };	

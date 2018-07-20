@@ -32,7 +32,7 @@ _.WorldEvents =
 							}),
 							ach(1790, { -- Hail To The King, Baby
 								["groups"] = {},
-								["maps"] = { 524, }, -- Utgarde Pinnacle
+								["maps"] = { 136, }, -- Utgarde Pinnacle
 							}),
 							ach(1791, { -- Home Alone
 								["groups"] = {},
@@ -59,38 +59,38 @@ _.WorldEvents =
 					-- ALLIANCE QUESTS == HUMAN ORPHAN == PART I --
 					q(1468, { -- Children's Week [Alliance]
 						["qg"] = 51988, -- Orphan Matron Nightingale
-						["maps"] = { 301, }, -- Stormwind City
+						["maps"] = { 84, }, -- Stormwind City
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(29093, { -- Cruisin' the Chasm
 						["qg"] = 14305, -- Human Orphan
 						["sourceQuests"] = { 1468 }, -- Children's Week [Alliance]
-						["maps"] = { 39, }, -- Westfall
+						["maps"] = { 52, }, -- Westfall
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(29106, { -- The Biggest Diamond Ever!
 						["qg"] = 14305, -- Human Orphan
 						["sourceQuests"] = { 1468 }, -- Children's Week [Alliance]
-						["maps"] = { 341, }, -- Ironforge
+						["maps"] = { 87, }, -- Ironforge
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(29107, { -- Malfurion Has Returned!
 						["qg"] = 14305, -- Human Orphan
 						["sourceQuests"] = { 1468, }, -- Children's Week [Alliance]
-						["maps"] = { 381, }, -- Darnassus
+						["maps"] = { 89, }, -- Darnassus
 						["races"] = ALLIANCE_ONLY,
 					}),
 					-- ALLIANCE QUESTS == HUMAN ORPHAN == PART II --
 					q(29117, { -- Let's Go Fly a Kite
 						["qg"] = 14305, -- Human Orphan
 						["sourceQuests"] = { 29093, 29106, 29107, }, -- Cruisin' the Chasm / The Biggest Diamond Ever! / Malfurion Has Returned!
-						["maps"] = { 301, }, -- Stormwind City
+						["maps"] = { 84, }, -- Stormwind City
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(29119, { -- You Scream, I Scream...
 						["qg"] = 14305, -- Human Orphan
 						["sourceQuests"] = { 29093, 29106, 29107, }, -- Cruisin' the Chasm / The Biggest Diamond Ever! / Malfurion Has Returned!
-						["maps"] = { 301, }, -- Stormwind City
+						["maps"] = { 84, }, -- Stormwind City
 						["races"] = ALLIANCE_ONLY,
 					}),
 					-- ALLIANCE QUESTS == HUMAN ORPHAN == PART III --
@@ -103,44 +103,44 @@ _.WorldEvents =
 						},
 						["qg"] = 14305, -- Human Orphan
 						["sourceQuests"] = { 29117, 29119, }, -- Let's Go Fly a Kite / You Scream, I Scream...
-						["maps"] = { 301, }, -- Stormwind City
+						["maps"] = { 84, }, -- Stormwind City
 						["races"] = ALLIANCE_ONLY,
 					}),
 					-- ALLIANCE QUESTS == DRAENEI ORPHAN == PART I --
 					q(10943, { -- Children's Week [Alliance - Draenei Orphan]
 						["qg"] = 22819, -- Orphan Matron Mercy
-						["maps"] = { 481, }, -- Shattrath City
+						["maps"] = { 111, }, -- Shattrath City
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10950, { -- Auchindoun and the Ring of Observance
 						["qg"] = 22818, -- Draenei Orphan
 						["sourceQuests"] = { 10943, }, -- Children's Week [Alliance - Draenei Orphan]
-						["maps"] = { 478, }, -- Terokkar Forest
+						["maps"] = { 108, }, -- Terokkar Forest
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10952, { -- A Trip to the Dark Portal
 						["qg"] = 22818, -- Draenei Orphan
 						["sourceQuests"] = { 10943, }, -- Children's Week [Alliance - Draenei Orphan]
-						["maps"] = { 465, }, -- Hellfire Peninsula
+						["maps"] = { 100, }, -- Hellfire Peninsula
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10954, { -- Jheel is at Aeris Landing!
 						["qg"] = 22818, -- Draenei Orphan
 						["sourceQuests"] = { 10943, }, -- Children's Week [Alliance - Draenei Orphan]
-						["maps"] = { 477, }, -- Nagrand (Outland)
+						["maps"] = { 107, }, -- Nagrand (Outland)
 						["races"] = ALLIANCE_ONLY,
 					}),
 					-- ALLIANCE QUESTS == DRAENEI ORPHAN == PART II --
 					q(10956, { -- The Seat of the Naaru
 						["qg"] = 22818, -- Draenei Orphan
 						["sourceQuests"] = { 10950, 10952, 10954, }, -- Auchindoun and the Ring of Observance / A Trip to the Dark Portal / Jheel is at Aeris Landing!
-						["maps"] = { 471, }, -- The Exodar
+						["maps"] = { 103, }, -- The Exodar
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10962, { -- Time to Visit the Caverns
 						["qg"] = 22818, -- Draenei Orphan
 						["sourceQuests"] = { 10950, 10952, 10954, }, -- Auchindoun and the Ring of Observance / A Trip to the Dark Portal / Jheel is at Aeris Landing!
-						["maps"] = { 161, }, -- Tanaris
+						["maps"] = { 71, }, -- Tanaris
 						["races"] = ALLIANCE_ONLY,
 					}),
 					-- ALLIANCE QUESTS == DRAENEI ORPHAN == PART III --
@@ -153,44 +153,44 @@ _.WorldEvents =
 						},
 						["qg"] = 22818, -- Draenei Orphan
 						["sourceQuests"] = { 10956, 10962, }, -- The Seat of the Naaru / Time to Visit the Caverns
-						["maps"] = { 481, }, -- Shattrath City
+						["maps"] = { 111, }, -- Shattrath City
 						["races"] = ALLIANCE_ONLY,
 					}),
 					-- HORDE QUESTS == ORC ORPHAN == PART I --
 					q(172, { -- Children's Week [Horde]
 						["qg"] = 51989, -- Orphan Matron Battlewall
-						["maps"] = { 321, }, -- Orgrimmar
+						["maps"] = { 85, }, -- Orgrimmar
 						["races"] = HORDE_ONLY,
 					}),
 					q(29146, { -- Ridin' the Rocketway
 						["qg"] = 14444, -- Orcish Orphan
 						["sourceQuests"] = { 172 },  -- Children's Week [Horde]
-						["maps"] = { 181, }, -- Azshara
+						["maps"] = { 76, }, -- Azshara
 						["races"] = HORDE_ONLY,
 					}),
 					q(29167, { -- The Banshee Queen
 						["qg"] = 14444, -- Orcish Orphan
 						["sourceQuests"] = { 172 },  -- Children's Week [Horde]
-						["maps"] = { 382, }, -- Undercity
+						["maps"] = { 90, }, -- Undercity
 						["races"] = HORDE_ONLY,
 					}),
 					q(29176, { -- The Fallen Chieftain
 						["qg"] = 14444, -- Orcish Orphan
 						["sourceQuests"] = { 172 },  -- Children's Week [Horde]
-						["maps"] = { 362, }, -- Thunder Bluff
+						["maps"] = { 88, }, -- Thunder Bluff
 						["races"] = HORDE_ONLY,
 					}),
 					-- HORDE QUESTS == ORC ORPHAN == PART II --
 					q(29190, { -- Let's Go Fly a Kite
 						["qg"] = 14444, -- Orcish Orphan
 						["sourceQuests"] = { 29146, 29167, 29176 }, -- Ridin' the Rocketway / The Banshee Queen / The Fallen Chieftain
-						["maps"] = { 321, }, -- Orgrimmar
+						["maps"] = { 85, }, -- Orgrimmar
 						["races"] = HORDE_ONLY,
 					}),
 					q(29191, { -- You Scream, I Scream...
 						["qg"] = 14444, -- Orcish Orphan
 						["sourceQuests"] = { 29146, 29167, 29176 }, -- Ridin' the Rocketway / The Banshee Queen / The Fallen Chieftain
-						["maps"] = { 321, }, -- Orgrimmar
+						["maps"] = { 85, }, -- Orgrimmar
 						["races"] = HORDE_ONLY,
 					}),
 					-- HORDE QUESTS == ORC ORPHAN == PART III --
@@ -203,44 +203,44 @@ _.WorldEvents =
 						},
 						["qg"] = 14444, -- Orcish Orphan
 						["sourceQuests"] = { 29190, 29191 }, -- Let's Go Fly a Kite / You Scream, I Scream...
-						["maps"] = { 321, }, -- Orgrimmar
+						["maps"] = { 85, }, -- Orgrimmar
 						["races"] = HORDE_ONLY,
 					}),
 					-- HORDE QUESTS == BLOOD ELF ORPHAN == PART I --
 					q(10942, { -- Children's Week [Horde - Blood Elf Orphan]
 						["qg"] = 22819, -- Orphan Matron Mercy
-						["maps"] = { 481, }, -- Shattrath City
+						["maps"] = { 111, }, -- Shattrath City
 						["races"] = HORDE_ONLY,
 					}),
 					q(10945, { -- Hch'uu and the Mushroom People
 						["qg"] = 22817, -- Blood Elf Orphan
 						["sourceQuests"] = { 10942, }, -- Children's Week [Horde - Blood Elf Orphan]
-						["maps"] = { 467, }, -- Zangarmarsh
+						["maps"] = { 102, }, -- Zangarmarsh
 						["races"] = HORDE_ONLY,
 					}),
 					q(10951, { -- A Trip to the Dark Portal
 						["qg"] = 22817, -- Blood Elf Orphan
 						["sourceQuests"] = { 10942, }, -- Children's Week [Horde - Blood Elf Orphan]
-						["maps"] = { 465, }, -- Hellfire Peninsula
+						["maps"] = { 100, }, -- Hellfire Peninsula
 						["races"] = HORDE_ONLY,
 					}),
 					q(10953, { -- Visit the Throne of the Elements
 						["qg"] = 22817, -- Blood Elf Orphan
 						["sourceQuests"] = { 10942, }, -- Children's Week [Horde - Blood Elf Orphan]
-						["maps"] = { 477, }, -- Nagrand (Outland)
+						["maps"] = { 107, }, -- Nagrand (Outland)
 						["races"] = HORDE_ONLY,
 					}),
 					-- HORDE QUESTS == BLOOD ELF ORPHAN == PART II --
 					q(10963, { -- Time to Visit the Caverns
 						["qg"] = 22817, -- Blood Elf Orphan
 						["sourceQuests"] = { 10945, 10951, 10953 }, -- Hch'uu and the Mushroom People / A Trip to the Dark Portal / Visit the Throne of the Elements
-						["maps"] = { 161, }, -- Tanaris
+						["maps"] = { 71, }, -- Tanaris
 						["races"] = HORDE_ONLY,
 					}),
 					q(11975, { -- Now, When I Grow Up...
 						["qg"] = 22817, -- Blood Elf Orphan
 						["sourceQuests"] = { 10945, 10951, 10953 }, -- Hch'uu and the Mushroom People / A Trip to the Dark Portal / Visit the Throne of the Elements
-						["maps"] = { 480, }, -- Silvermoon City
+						["maps"] = { 110, }, -- Silvermoon City
 						["races"] = HORDE_ONLY,
 					}),
 					-- HORDE QUESTS == BLOOD ELF ORPHAN == PART III --
@@ -253,45 +253,45 @@ _.WorldEvents =
 						},
 						["qg"] = 22817, -- Blood Elf Orphan
 						["sourceQuests"] = { 10963, 11975, }, -- Time to Visit the Caverns / Now, When I Grow Up...
-						["maps"] = { 481, }, -- Shattrath City
+						["maps"] = { 111, }, -- Shattrath City
 						["races"] = HORDE_ONLY,
 					}),
 					-- NEUTRAL QUESTS == ORACLE ORPHAN --
 					q(13926, { -- Little Orphan Roo Of The Oracles
 						["qg"] = 34365, -- Orphan Matron Aria
-						["maps"] = { 504, }, -- Dalaran (Northrend)
+						["maps"] = { 125, }, -- Dalaran (Northrend)
 					}),
 					q(13929, { -- The Biggest Tree Ever!
 						["qg"] = 33533, -- Oracle Orphan
 						["sourceQuests"] = { 13926, }, -- Little Orphan Roo Of The Oracles
-						["maps"] = { 490, }, -- Grizzly Hills
+						["maps"] = { 116, }, -- Grizzly Hills
 					}),
 					q(13933, { -- The Bronze Dragonshrine
 						["qg"] = 33533, -- Oracle Orphan
 						["sourceQuests"] = { 13929, }, -- The Biggest Tree Ever!
-						["maps"] = { 488, }, -- Dragonblight
+						["maps"] = { 115, }, -- Dragonblight
 					}),
 					q(13950, { -- Playmates!
 						["qg"] = 33533, -- Oracle Orphan
 						["sourceQuests"] = { 13933, }, -- The Bronze Dragonshrine
-						["maps"] = { 486, }, -- Borean Tundra
+						["maps"] = { 114, }, -- Borean Tundra
 					}),
 					q(13956, { -- Meeting a Great One
 						["qg"] = 33533, -- Oracle Orphan
 						["sourceQuests"] = { 13950, }, -- Playmates!
-						["maps"] = { 201, }, -- Un'Goro Crater
+						["maps"] = { 78, }, -- Un'Goro Crater
 					}),
 					q(13954, { -- The Dragon Queen
 						["qg"] = 33533, -- Oracle Orphan
 						["sourceQuests"] = { 13956, }, -- Meeting a Great One
-						["maps"] = { 488, }, -- Dragonblight
+						["maps"] = { 115, }, -- Dragonblight
 					}),
 					q(13937, { -- A Trip To The Wonderworks
 						["qg"] = 33533, -- Oracle Orphan
 						["sourceQuests"] = { 13954, }, -- The Dragon Queen
 						["maps"] = {
-							504, -- Dalaran (Northrend)
-							1014, -- Dalaran (Broken Isles)
+							125, -- Dalaran (Northrend)
+							625, -- Dalaran (Broken Isles)
 						},
 					}),
 					q(13959, { -- Back To The Orphanage
@@ -300,44 +300,44 @@ _.WorldEvents =
 						},
 						["qg"] = 33533, -- Oracle Orphan
 						["sourceQuests"] = { 13937, }, -- A Trip To The Wonderworks
-						["maps"] = { 504, }, -- Dalaran (Northrend)
+						["maps"] = { 125, }, -- Dalaran (Northrend)
 					}),
 					-- NEUTRAL QUESTS == WOLVAR ORPHAN --
 					q(13927, { -- Little Orphan Kekek Of The Wolvar
 						["qg"] = 34365, -- Orphan Matron Aria
-						["maps"] = { 504, }, -- Dalaran (Northrend)
+						["maps"] = { 125, }, -- Dalaran (Northrend)
 					}),
 					q(13930, { -- Home Of The Bear-Men
 						["qg"] = 33532, -- Wolvar Orphan
 						["sourceQuests"] = { 13927, }, -- Little Orphan Kekek Of The Wolvar
-						["maps"] = { 490, }, -- Grizzly Hills
+						["maps"] = { 116, }, -- Grizzly Hills
 					}),
 					q(13934, { -- The Bronze Dragonshrine
 						["qg"] = 33532, -- Wolvar Orphan
 						["sourceQuests"] = { 13930, }, -- Home Of The Bear-Men
-						["maps"] = { 488, }, -- Dragonblight
+						["maps"] = { 115, }, -- Dragonblight
 					}),
 					q(13951, { -- Playmates!
 						["qg"] = 33532, -- Wolvar Orphan
 						["sourceQuests"] = { 13934, }, -- The Bronze Dragonshrine
-						["maps"] = { 488, }, -- Dragonblight
+						["maps"] = { 115, }, -- Dragonblight
 					}),
 					q(13955, { -- The Dragon Queen
 						["qg"] = 33532, -- Wolvar Orphan
 						["sourceQuests"] = { 13951, }, -- Playmates!
-						["maps"] = { 488, }, -- Dragonblight
+						["maps"] = { 115, }, -- Dragonblight
 					}),
 					q(13957, { -- The Mighty Hemet Nesingwary
 						["qg"] = 33532, -- Wolvar Orphan
 						["sourceQuests"] = { 13955, }, -- The Dragon Queen
-						["maps"] = { 493, }, -- Sholazar Basin
+						["maps"] = { 119, }, -- Sholazar Basin
 					}),
 					q(13938, { -- A Trip To The Wonderworks
 						["qg"] = 33532, -- Wolvar Orphan
 						["sourceQuests"] = { 13957, }, -- The Mighty Hemet Nesingwary
 						["maps"] = {
-							504, -- Dalaran (Northrend)
-							1014, -- Dalaran (Broken Isles)
+							125, -- Dalaran (Northrend)
+							625, -- Dalaran (Broken Isles)
 						},
 					}),
 					q(13960, { -- Back To The Orphanage
@@ -346,7 +346,7 @@ _.WorldEvents =
 						},
 						["qg"] = 33532, -- Wolvar Orphan
 						["sourceQuests"] = { 13938, }, -- A Trip To The Wonderworks
-						["maps"] = { 504, }, -- Dalaran (Northrend)
+						["maps"] = { 125, }, -- Dalaran (Northrend)
 					}),
 				}),
 				n(-2, { -- Vendors
@@ -355,14 +355,14 @@ _.WorldEvents =
 							un(20, i(69895)), -- Green Balloon
 							un(20, i(69896)), -- Yellow Balloon
 						},
-						["maps"] = { 301, }, -- Stormwind City
+						["maps"] = { 84, }, -- Stormwind City
 					}),
 					nh(52809, { -- Blax Bottlerocket <Toys and Novelties>
 						["groups"] = {
 							un(20, i(69895)), -- Green Balloon
 							un(20, i(69896)), -- Yellow Balloon
 						},
-						["maps"] = { 321, }, -- Orgrimmar
+						["maps"] = { 85, }, -- Orgrimmar
 					}),
 				}),
 			}),

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor
-		m(101, {	-- Desolace
+	m(12, { 	-- Kalimdor
+		m(66, {	-- Desolace
 			["groups"] = {			
 				n( -3, { 	-- Holidays
 --[[					

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	m(823, { 	-- Darkmoon Island
+	m(407, { 	-- Darkmoon Island
 		["groups"] = {
 			n(-4, {	 -- Achievements
 				{

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor
-		m(4, {		-- Durotar
+	m(12, { 	-- Kalimdor
+		m(1, {		-- Durotar
 			["groups"] = {
 				n( -3, {	-- Holidays				
 					n(-47, {     -- Lunar Festival
@@ -702,7 +702,7 @@ _.Zones =
 					},
 					["u"] = 12,
 				}),
-				m(891, { 	-- Echo Isles
+				m(463, { 	-- Echo Isles
 					["groups"] = {
 						n(-25, { 	-- Pet Battle
 							p(467), 	-- Dung Beetle
@@ -1025,7 +1025,7 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\Achievement_Character_Troll_Male",			
 					["description"] = "|cff66ccff The Echoes Isles are the ancestral home of the Darkspear Trolls. Vol'jin, the leader of the trolls, has relocated here after tensions between Hellscream and the trolls.|r",
 				}),
-				m(889, { 	-- Valley of Trials
+				m(461, { 	-- Valley of Trials
 					["groups"] = {
 						n(-25, { -- Pet Battle
 							p(635), -- Adder

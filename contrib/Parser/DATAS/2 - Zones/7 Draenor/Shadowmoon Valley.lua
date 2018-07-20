@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(962, { 	-- Draenor
-		m(947, { 	-- Shadowmoon Valley
+	m(572, { 	-- Draenor
+		m(539, { 	-- Shadowmoon Valley
 			["groups"] = {						
 				n(-25, { 	-- Pet Battle
 					p(407), 	-- Forest Spiderling

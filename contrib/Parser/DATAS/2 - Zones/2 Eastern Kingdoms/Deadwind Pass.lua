@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms		
-		m(32, { 	-- Deadwind Pass
+	m(13, { 	-- Eastern Kingdoms		
+		m(42, { 	-- Deadwind Pass
 			["groups"] = {
 				n(-25, { 	-- Pet Battle
 					p(1160), 	-- Arcane Eye

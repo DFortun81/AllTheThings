@@ -139,7 +139,7 @@ _.WorldEvents =
 				}),
 			}),
 		},
-		["mapID"] = 922,
+		["mapID"] = 499,
 		["icon"] = "Interface\\Icons\\ability_warrior_secondwind",
 	}),
 };	

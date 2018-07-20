@@ -68,11 +68,11 @@ _.WorldEvents =
 	}),
 	n(-496, { -- Bizmo's Brawlpub
 	}),
-	m(925, { -- Brawlgar Arena
+	m(503, { -- Brawlgar Arena
 	}),
 	n(-543, { -- Broken Isles: Legion Invasions
 	}),
-	m(823, { -- Darkmoon Island
+	m(407, { -- Darkmoon Island
 	}),
 	n(-3, {  -- Holidays
 		--n(-177, { -- Mini World Events

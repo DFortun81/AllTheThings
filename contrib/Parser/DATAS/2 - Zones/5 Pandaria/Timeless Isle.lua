@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(951, {	-- Timeless Isle
+	m(424, { 	-- Pandaria
+		m(554, {	-- Timeless Isle
 			["groups"] = {
 				n(-25, { 	-- Pet Battles
 					p(1324), 	-- Ashwing Moth

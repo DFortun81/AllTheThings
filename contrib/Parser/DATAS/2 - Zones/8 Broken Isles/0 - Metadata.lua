@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1007, { 	-- The Broken Isles
+	m(619, { 	-- The Broken Isles
 		["groups"] = {},
 		["achievementID"] = 11188,
 		["icon"] = "Interface\\Icons\\Achievements_Zone_BrokenShore",

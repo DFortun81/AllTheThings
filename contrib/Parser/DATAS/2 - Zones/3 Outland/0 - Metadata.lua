@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(466, { 	-- Outland
+	m(101, { 	-- Outland
 		["groups"] = {},
 		["achievementID"] = 44,
 		["icon"] = "Interface\\Icons\\Achievement_Zone_Outland_01",

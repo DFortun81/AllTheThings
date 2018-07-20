@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, {		-- Kalimdor
-		m(476, {	-- Bloodmyst Isle
+	m(12, {		-- Kalimdor
+		m(106, {	-- Bloodmyst Isle
 			["groups"] = {
 				n(-25, { 	-- Pet Battle
 					p(628),		-- Infected Fawn

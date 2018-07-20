@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(34, {		-- Duskwood
+	m(13, { 	-- Eastern Kingdoms
+		m(47, {		-- Duskwood
 			["groups"] = {
 				n(-538, {	-- Diablo 20th Anniversary Promotion
 					["groups"] = {	

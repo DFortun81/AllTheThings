@@ -15,7 +15,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 43512, -- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 1033 }, -- Suramar
+				["maps"] = { 680 }, -- Suramar
 			})),	
 			cr(121124, e(1956, { -- Apocron 
 				["groups"] = {
@@ -27,7 +27,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 47061, -- Change to tracking quest later
 				["isRaid"] = true,
-				["maps"] = { 1021 }, -- The Broken Shore
+				["maps"] = { 646 }, -- The Broken Shore
 			})),
 			cr(117239, e(1883, { -- Brutallus 
 				["groups"] = {
@@ -40,7 +40,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 46947, -- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 1021 }, -- The Broken Shore
+				["maps"] = { 646 }, -- The Broken Shore
 			})),
 			cr(109331, e(1774, { -- Calamir 
 				["groups"] = {
@@ -51,7 +51,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 44502,
 				["isRaid"] = true,
-				["maps"] = { 1015 }, -- Azsuna
+				["maps"] = { 630 }, -- Azsuna
 			})),
 			cr(110378, e(1789, { -- Drugon the Frostblood 
 				["groups"] = {
@@ -63,7 +63,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 43448, -- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 1024 }, -- Highmountain
+				["maps"] = { 650 }, -- Highmountain
 			})),
 			cr(99929, e(1795, {	 -- Flotsam
 				["groups"] = {
@@ -75,7 +75,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 43985, -- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 1024 }, -- Highmountain
+				["maps"] = { 650 }, -- Highmountain
 			})),
 			cr(108879, e(1770, { -- Humongris 
 				["groups"] = {
@@ -95,7 +95,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 42819, -- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 1018 }, -- Val'sharah
+				["maps"] = { 641 }, -- Val'sharah
 			})),
 			cr(108829, e(1769, { -- Levantus 
 				["groups"] = {
@@ -106,7 +106,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 43192, -- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 1015 }, -- Azsuna
+				["maps"] = { 630 }, -- Azsuna
 			})),
 			cr(117303, e(1884, { -- Malificus 
 				["groups"] = {
@@ -121,7 +121,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 47086,
 				["isRaid"] = true,
-				["maps"] = { 1021 }, -- The Broken Shore
+				["maps"] = { 646 }, -- The Broken Shore
 			})),	
 			cr(110321, e(1783, { -- Na'zak the Fiend 
 				["groups"] = {
@@ -132,7 +132,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 43513, -- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 1033 }, -- Suramar
+				["maps"] = { 680 }, -- Suramar
 			})),	
 			cr(107544, e(1749, { -- Nithogg 
 				["groups"] = {
@@ -144,7 +144,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 42270, -- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 1017 }, -- Stormheim
+				["maps"] = { 634 }, -- Stormheim
 			})),
 			cr(108678, e(1763, { -- Shar'thos 
 				["groups"] = {
@@ -156,7 +156,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 42779, -- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 1018 }, -- Val'sharah
+				["maps"] = { 641 }, -- Val'sharah
 			})),
 			cr(117470, e(1885, { -- Si'vash 
 				["groups"] = {
@@ -169,7 +169,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 46945, -- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 1021 }, -- The Broken Shore
+				["maps"] = { 646 }, -- The Broken Shore
 			})),
 			cr(106984, e(1756, { -- The Soultakers (Soultrapper Mevra; Captain Hring 106981, Reaver Jdorn 106982)
 				["groups"] = {
@@ -180,7 +180,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 42269, -- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 1017 }, -- Stormheim
+				["maps"] = { 634 }, -- Stormheim
 			})),
 			cr(112350, e(1796, { -- Withered J'im 
 				["groups"] = {
@@ -192,7 +192,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 				["questID"] = 44287, -- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 1015 }, -- Azsuna
+				["maps"] = { 630 }, -- Azsuna
 			})),
 			
 			

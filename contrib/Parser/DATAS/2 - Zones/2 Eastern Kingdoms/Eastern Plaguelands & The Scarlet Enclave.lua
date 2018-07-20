@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
+	m(13, { 	-- Eastern Kingdoms
 		m(23, {		-- Eastern Plaguelands
 			["groups"] = {
 				n( -3, {	-- Holidays
@@ -1621,7 +1621,7 @@ _.Zones =
 						}),					
 					},
 				}),
-				m(502, {	-- The Scarlet Enclave
+				m(124, {	-- The Scarlet Enclave
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {

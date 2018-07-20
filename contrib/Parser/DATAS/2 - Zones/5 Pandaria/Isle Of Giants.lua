@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(929, {	-- Isle of Giants
+	m(424, { 	-- Pandaria
+		m(507, {	-- Isle of Giants
 			["groups"] = {		
 				n(-17,	{	-- Quests
 					i(94288, { -- Giant Dinosaur Bone

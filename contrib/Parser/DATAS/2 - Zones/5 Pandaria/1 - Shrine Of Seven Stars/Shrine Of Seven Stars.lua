@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(905, { 	-- Shrine of Seven Stars
+	m(424, { 	-- Pandaria
+		m(585, { 	-- Shrine of Seven Stars
 			["groups"] = {		
 				n(-3, { 	-- Holidays					
 					n(-63, { -- Trial of Style
@@ -1404,7 +1404,7 @@ _.Zones =
 					}),
 				}),
 			},
-			["maps"] = { 811 },
+			["maps"] = { 390 },
 			["lvl"] = 78,
 			["isRaid"] = true,
 			["races"] = ALLIANCE_ONLY,

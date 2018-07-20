@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(709, { -- Tol Barad Peninsula
+	m(13, { 	-- Eastern Kingdoms
+		m(245, { -- Tol Barad Peninsula
 			["groups"] = {	
 				n(-25, { 	-- Pet Battle
 					p(410), 	-- Wharf Rat
@@ -86,7 +86,7 @@ _.Zones =
 						i(62474),	-- Spear of Trailing Shadows
 					}),
 				}),
-				m(708, { 	-- Tol Barad 
+				m(244, { 	-- Tol Barad 
 					["groups"] = {
 						n(-38, { 	-- Profession
 							n(-188, { 	-- Mining

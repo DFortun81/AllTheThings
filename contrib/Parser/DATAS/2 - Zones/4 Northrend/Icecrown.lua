@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
-		m(492, { 	-- Icecrown
+	m(113, { 	-- Northrend
+		m(118, { 	-- Icecrown
 			["groups"] = {
 				faction(1106, {	-- Argent Crusade
 					["achievementID"] = 947,	-- The Argent Crusade

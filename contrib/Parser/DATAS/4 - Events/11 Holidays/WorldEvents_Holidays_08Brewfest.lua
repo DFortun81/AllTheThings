@@ -38,7 +38,7 @@ _.WorldEvents =
 									}),
 									q(12192, { -- This One Time, When I Was Drunk... (Horde)
 										["groups"] = {},
-										["maps"] = { 4, }, -- Durotar
+										["maps"] = { 1, }, -- Durotar
 										["races"] = HORDE_ONLY,
 										["isDaily"] = true,
 									}),
@@ -208,11 +208,11 @@ _.WorldEvents =
 								20102, -- Goblin Commoner
 							},
 							["maps"] = {
-								301, -- Stormwind City
-								341, -- Ironforge
-								381, -- Darnassus
-								471, -- The Exodar
-								928, -- Isle of Thunder
+								84, -- Stormwind City
+								87, -- Ironforge
+								89, -- Darnassus
+								103, -- The Exodar
+								504, -- Isle of Thunder
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -272,27 +272,27 @@ _.WorldEvents =
 								20102, -- Goblin Commoner
 							},
 							["maps"] = {
-								4, -- Durotar
-								11, -- Northern Barrens
-								161, -- Tanaris
-								281, -- Winterspring
-								321, -- Orgrimmar
-								362, -- Thunder Bluff
-								382, -- Undercity
-								462, -- Eversong Woods
-								479, -- Netherstorm
-								480, -- Silvermoon City
-								481, -- Shattrath City
-								495, -- The Storm Peaks
-								504, -- Dalaran (Northrend)
-								673, -- The Cape of Stranglethorn
+								1, -- Durotar
+								10, -- Northern Barrens
+								71, -- Tanaris
+								83, -- Winterspring
+								85, -- Orgrimmar
+								88, -- Thunder Bluff
+								90, -- Undercity
+								94, -- Eversong Woods
+								109, -- Netherstorm
+								110, -- Silvermoon City
+								111, -- Shattrath City
+								120, -- The Storm Peaks
+								125, -- Dalaran (Northrend)
+								210, -- The Cape of Stranglethorn
 							},
 							["races"] = HORDE_ONLY,
 						}),
 						q(12191, { -- Chug and Chuck! (Horde)
 							["groups"] = {},
 							["qg"] = 27216, -- Bizzle Quicklift
-							["maps"] = { 4, }, -- Durotar
+							["maps"] = { 1, }, -- Durotar
 							["races"] = HORDE_ONLY,
 						}),
 						q(11431, { -- Catch the Wild Wolpertinger! (Horde)
@@ -304,19 +304,19 @@ _.WorldEvents =
 									}),
 								}),
 							},
-							["maps"] = { 4, }, -- Durotar
+							["maps"] = { 1, }, -- Durotar
 							["races"] = HORDE_ONLY,
 						}),
 						q(11120, { -- Pink Elekks On Parade (Horde)
 							["groups"] = {},
 							["qg"] = 24657, -- Glodrak Huntsniper
-							["maps"] = { 4, }, -- Durotar
+							["maps"] = { 1, }, -- Durotar
 							["races"] = HORDE_ONLY,
 						}),
 						q(11409, { -- Now This is Ram Racing... Almost. (Horde)
 							["groups"] = {},
 							["qg"] = 24497, -- Ram Master Ray
-							["maps"] = { 4, }, -- Durotar
+							["maps"] = { 1, }, -- Durotar
 							["races"] = HORDE_ONLY,
 						}),
 						q(29396, { -- A New Supplier of Souvenirs (Horde)
@@ -324,14 +324,14 @@ _.WorldEvents =
 								un(24, i(56836)),	-- Overflowing Purple Brewfest Stein
 							},
 							["qg"] = 24497, -- Ram Master Ray
-							["maps"] = { 4, }, -- Durotar
+							["maps"] = { 1, }, -- Durotar
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 11409, }, -- Now This is Ram Racing... Almost. (Horde)
 						}),
 						q(11412, { -- There and Back Again (Horde)
 							["groups"] = {},
 							["qg"] = 24497, -- Ram Master Ray
-							["maps"] = { 4, }, -- Durotar
+							["maps"] = { 1, }, -- Durotar
 							["races"] = HORDE_ONLY,
 						}),
 					},
@@ -438,7 +438,7 @@ _.WorldEvents =
 								["groups"] = {
 									q(11454, { -- Seek the Saboteurs
 										["maps"] = {
-											4, -- Durotar
+											1, -- Durotar
 											27, -- Dun Morogh
 										},
 									}),
@@ -450,7 +450,7 @@ _.WorldEvents =
 								["groups"] = {
 									un(2, i(34140)), -- Dark Iron Tankard
 								},
-								["maps"] = { 704, }, -- Blackrock Depths
+								["maps"] = { 242, }, -- Blackrock Depths
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 11454, }, -- Seek the Saboteurs
 								["u"] = 40, -- Legacy Quest/Quest Item
@@ -460,7 +460,7 @@ _.WorldEvents =
 								["groups"] = {
 									un(2, i(34140)), -- Dark Iron Tankard
 								},
-								["maps"] = { 704, }, -- Blackrock Depths
+								["maps"] = { 242, }, -- Blackrock Depths
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 11454, }, -- Seek the Saboteurs
 								["u"] = 40, -- Legacy Quest/Quest Item
@@ -475,7 +475,7 @@ _.WorldEvents =
 							q(11447, { -- Welcome to Brewfest! (Horde)
 								["groups"] = {},
 								["qg"] = 24711, -- Tapper Swindlekeg
-								["maps"] = { 4, }, -- Durotar
+								["maps"] = { 1, }, -- Durotar
 								["races"] = HORDE_ONLY,
 								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
@@ -489,14 +489,14 @@ _.WorldEvents =
 							q(12318, { -- Save Brewfest! (Horde)
 								["groups"] = {},
 								["qg"] = 28329, -- Slurpo Fizzykeg
-								["maps"] = { 4, }, -- Durotar
+								["maps"] = { 1, }, -- Durotar
 								["sourceQuests"] = { 11447, }, -- Welcome to Brewfest! (Horde)
 								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
 							q(12062, { -- Insult Coren Direbrew
 								["groups"] = {},
 								["qg"] = 26719, -- Brewfest Spy
-								["maps"] = { 704, }, -- Blackrock Depths
+								["maps"] = { 242, }, -- Blackrock Depths
 								["sourceQuests"] = { 11442, }, -- Save Brewfest!
 								["isDaily"] = true,
 								["u"] = 40, -- Legacy Quest/Quest Item
@@ -516,7 +516,7 @@ _.WorldEvents =
 								["groups"] = {
 									q(11400, { -- Brewfest Riding Rams
 										["groups"] = {},
-										["maps"] = { 4, }, -- Durotar
+										["maps"] = { 1, }, -- Durotar
 										["races"] = HORDE_ONLY,
 									}),
 								},

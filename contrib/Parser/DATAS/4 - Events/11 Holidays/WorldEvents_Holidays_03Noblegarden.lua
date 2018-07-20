@@ -113,18 +113,18 @@ _.WorldEvents =
 								20102, -- Goblin Commoner
 							},
 							["maps"] = {
-								11, -- Northern Barrens
-								161, -- Tanaris
-								281, -- Winterspring
-								301, -- Stormwind City
-								341, -- Ironforge
-								381, -- Darnassus
-								471, -- The Exodar
-								479, -- Netherstorm
-								481, -- Shattrath City
-								495, -- The Storm Peaks
-								673, -- The Cape of Stranglethorn
-								928, -- Isle of Thunder
+								10, -- Northern Barrens
+								71, -- Tanaris
+								83, -- Winterspring
+								84, -- Stormwind City
+								87, -- Ironforge
+								89, -- Darnassus
+								103, -- The Exodar
+								109, -- Netherstorm
+								111, -- Shattrath City
+								120, -- The Storm Peaks
+								210, -- The Cape of Stranglethorn
+								504, -- Isle of Thunder
 							},
 						}),
 						q(13480, { -- The Great Egg Hunt (Alliance)
@@ -132,9 +132,9 @@ _.WorldEvents =
 							["qg"] = 32799, -- Spring Collector
 							["maps"] = {
 								27, -- Dun Morogh
-								30, -- Elwynn Forest
-								41, -- Teldrassil
-								464, -- Azuremyst Isle
+								37, -- Elwynn Forest
+								57, -- Teldrassil
+								97, -- Azuremyst Isle
 							},
 							["isDaily"] = true,
 						}),
@@ -145,9 +145,9 @@ _.WorldEvents =
 							["qg"] = 32836, -- Noblegarden Vendor
 							["maps"] = {
 								27, -- Dun Morogh
-								30, -- Elwynn Forest
-								41, -- Teldrassil
-								464, -- Azuremyst Isle
+								37, -- Elwynn Forest
+								57, -- Teldrassil
+								97, -- Azuremyst Isle
 							},
 						}),
 					}),
@@ -164,27 +164,27 @@ _.WorldEvents =
 								20102, -- Goblin Commoner
 							},
 							["maps"] = {
-								11,		-- Northern Barrens
-								161,	-- Tanaris
-								281,	-- Winterspring
-								321,	-- Orgrimmar
-								362,	-- Thunder Bluff
-								382,	-- Undercity
-								462,	-- Eversong Woods
-								479,	-- Netherstorm
-								481,	-- Shattrath City
-								495,	-- The Storm Peaks
-								673,	-- The Cape of Stranglethorn
+								10,		-- Northern Barrens
+								71,	-- Tanaris
+								83,	-- Winterspring
+								85,	-- Orgrimmar
+								88,	-- Thunder Bluff
+								90,	-- Undercity
+								94,	-- Eversong Woods
+								109,	-- Netherstorm
+								111,	-- Shattrath City
+								120,	-- The Storm Peaks
+								210,	-- The Cape of Stranglethorn
 							},
 						}),
 						q(13479, { -- The Great Egg Hunt (Horde)
 							["groups"] = {},
 							["qg"] = 32798, -- Spring Gatherer
 							["maps"] = {
-								4, -- Durotar
-								9, -- Mulgore
-								20, -- Tirisfal Glades
-								462, -- Eversong Woods
+								1, -- Durotar
+								7, -- Mulgore
+								18, -- Tirisfal Glades
+								94, -- Eversong Woods
 							},
 							["isDaily"] = true,
 						}),
@@ -194,10 +194,10 @@ _.WorldEvents =
 							},
 							["qg"] = 32837, -- Noblegarden Merchant
 							["maps"] = {
-								4, -- Durotar
-								9, -- Mulgore
-								20, -- Tirisfal Glades
-								462, -- Eversong Woods
+								1, -- Durotar
+								7, -- Mulgore
+								18, -- Tirisfal Glades
+								94, -- Eversong Woods
 							},
 						}),
 					}),

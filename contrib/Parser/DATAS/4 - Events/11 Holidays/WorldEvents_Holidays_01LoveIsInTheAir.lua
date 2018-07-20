@@ -298,13 +298,13 @@ _.WorldEvents =
 								q(24745, { -- Something is in the Air (and it Ain't Love) (Alliance)
 									["groups"] = {},
 									["qg"] = 36296, -- Apothecary Hummel
-									["maps"] = { 764, }, -- Shadowfang Keep
+									["maps"] = { 310, }, -- Shadowfang Keep
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(14483, { -- Something is in the Air (and it Ain't Love) (Horde)
 									["groups"] = {},
 									["qg"] = 36296, -- Apothecary Hummel
-									["maps"] = { 764, }, -- Shadowfang Keep
+									["maps"] = { 310, }, -- Shadowfang Keep
 									["races"] = HORDE_ONLY,
 								}),
 							},
@@ -315,65 +315,65 @@ _.WorldEvents =
 						q(24597, { -- A Gift for the King of Stormwind
 							["groups"] = {},
 							["qg"] = 37887, -- Kwee Q. Peddlefeet
-							["maps"] = { 301, }, -- Stormwind City
+							["maps"] = { 84, }, -- Stormwind City
 							["isDaily"] = true,
 						}),
 						q(24609, { -- A Gift for a Lord of Ironforge
 							["groups"] = {},
 							["qg"] = 37887, -- Kwee Q. Peddlefeet
-							["maps"] = { 341, }, -- Ironforge
+							["maps"] = { 87, }, -- Ironforge
 							["isDaily"] = true,
 						}),
 						q(24610, { -- A Gift for the High Priestess of Elune
 							["groups"] = {},
 							["qg"] = 37887, -- Kwee Q. Peddlefeet
-							["maps"] = { 381, }, -- Darnassus
+							["maps"] = { 89, }, -- Darnassus
 							["isDaily"] = true,
 						}),
 						q(24611, { -- A Gift for the Prophet
 							["groups"] = {},
 							["qg"] = 37887, -- Kwee Q. Peddlefeet
-							["maps"] = { 471, }, -- The Exodar
+							["maps"] = { 103, }, -- The Exodar
 							["isDaily"] = true,
 						}),
 						q(24804, { -- Uncommon Scents (Alliance)
 							["groups"] = {},
 							["qg"] = 38293, -- Junior Inspector
 							["maps"] = {
-								341, -- Ironforge
-								381, -- Darnassus
-								471, -- The Exodar
+								87, -- Ironforge
+								89, -- Darnassus
+								103, -- The Exodar
 							},
 						}),
 						q(24655, { -- Something Stinks (Alliance)
 							["groups"] = {},
 							["qg"] = 38066, -- Inspector Snip Snagglebolt
 							["sourceQuest"] = 24804, -- Uncommon Scents (Alliance)
-							["maps"] = { 301, }, -- Stormwind City
+							["maps"] = { 84, }, -- Stormwind City
 						}),
 						q(24656, { -- Pilfering Perfume (Alliance)
 							["groups"] = {},
 							["qg"] = 38066, -- Inspector Snip Snagglebolt
 							["sourceQuest"] = 24655, -- Something Stinks (Alliance)
-							["maps"] = { 301, }, -- Stormwind City
+							["maps"] = { 84, }, -- Stormwind City
 						}),
 						q(24848, { -- Fireworks At The Gilded Rose
 							["groups"] = {},
 							["qg"] = 38066, -- Inspector Snip Snagglebolt
 							["sourceQuest"] = 24656, -- Pilfering Perfume (Alliance)
-							["maps"] = { 301, }, -- Stormwind City
+							["maps"] = { 84, }, -- Stormwind City
 						}),
 						q(24849, { -- Hot On The Trail (Alliance)
 							["groups"] = {},
 							["qg"] = 38325, -- Marion Sutton
 							["sourceQuest"] = 24848, -- Fireworks At The Gilded Rose
-							["maps"] = { 301, }, -- Stormwind City
+							["maps"] = { 84, }, -- Stormwind City
 						}),
 						q(24657, { -- A Friendly Chat... (Alliance)
 							["groups"] = {},
 							["qg"] = 38325, -- Marion Sutton
 							["sourceQuest"] = 24849, -- Hot On The Trail (Alliance)
-							["maps"] = { 301, }, -- Stormwind City
+							["maps"] = { 84, }, -- Stormwind City
 						}),
 					}),
 					-- HORDE QUESTS --
@@ -381,59 +381,59 @@ _.WorldEvents =
 						q(24612, { -- A Gift for High Overlord Saurfang
 							["groups"] = {},
 							["qg"] = 37887, -- Kwee Q. Peddlefeet
-							["maps"] = { 321, }, -- Orgrimmar
+							["maps"] = { 85, }, -- Orgrimmar
 							["isDaily"] = true,
 						}),
 						q(24613, { -- A Gift for the Banshee Queen
 							["groups"] = {},
 							["qg"] = 37887, -- Kwee Q. Peddlefeet
-							["maps"] = { 382, }, -- Undercity
+							["maps"] = { 90, }, -- Undercity
 							["isDaily"] = true,
 						}),
 						q(24614, { -- A Gift for the High Chieftain
 							["groups"] = {},
 							["qg"] = 37887, -- Kwee Q. Peddlefeet
-							["maps"] = { 362, }, -- Thunder Bluff
+							["maps"] = { 88, }, -- Thunder Bluff
 							["isDaily"] = true,
 						}),
 						q(24615, { -- A Gift for the Regent Lord of Quel'Thalas
 							["groups"] = {},
 							["qg"] = 37887, -- Kwee Q. Peddlefeet
-							["maps"] = { 480, }, -- Silvermoon City
+							["maps"] = { 110, }, -- Silvermoon City
 							["isDaily"] = true,
 						}),
 						q(24805, { -- Uncommon Scents (Horde)
 							["groups"] = {},
 							["qg"] = 38295, -- Junior Detective
 							["maps"] = {
-								362, -- Thunder Bluff
-								382, -- Undercity
-								480, -- Silvermoon City
+								88, -- Thunder Bluff
+								90, -- Undercity
+								110, -- Silvermoon City
 							},
 						}),
 						q(24536, { -- Something Stinks (Horde)
 							["groups"] = {},
 							["qg"] = 37172, -- Detective Snap Snagglebolt
 							["sourceQuest"] = 24805, -- Uncommon Scents (Horde)
-							["maps"] = { 321, }, -- Orgrimmar
+							["maps"] = { 85, }, -- Orgrimmar
 						}),
 						q(24541, { -- Pilfering Perfume (Horde)
 							["groups"] = {},
 							["qg"] = 37172, -- Detective Snap Snagglebolt
 							["sourceQuest"] = 24536, -- Something Stinks (Horde)
-							["maps"] = { 321, }, -- Orgrimmar
+							["maps"] = { 85, }, -- Orgrimmar
 						}),
 						q(24850, { -- Snivel's Sweetheart
 							["groups"] = {},
 							["qg"] = 37172, -- Detective Snap Snagglebolt
 							["sourceQuest"] = 24541, -- Pilfering Perfume (Horde)
-							["maps"] = { 321, }, -- Orgrimmar
+							["maps"] = { 85, }, -- Orgrimmar
 						}),
 						q(24851, { -- Hot On The Trail (Horde)
 							["groups"] = {},
 							["qg"] = 38328, -- Roka
 							["sourceQuest"] = 24850, -- Snivel's Sweetheart
-							["maps"] = { 321, }, -- Orgrimmar
+							["maps"] = { 85, }, -- Orgrimmar
 						}),
 						q(24576, { -- A Friendly Chat... (Horde)
 							["groups"] = {},
@@ -442,7 +442,7 @@ _.WorldEvents =
 								38328, -- Roka
 							},
 							["sourceQuest"] = 24851, -- Hot On The Trail (Horde)
-							["maps"] = { 321, }, -- Orgrimmar
+							["maps"] = { 85, }, -- Orgrimmar
 						}),
 					}),
 				}),
@@ -483,7 +483,7 @@ _.WorldEvents =
 									["sourceQuests"] = {
 										24657, -- A Friendly Chat... (Alliance)
 									}, 
-									["maps"] = { 301, }, -- Stormwind City
+									["maps"] = { 84, }, -- Stormwind City
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(24793, { -- Man on the Inside (Horde)
@@ -492,7 +492,7 @@ _.WorldEvents =
 									["sourceQuests"] = {
 										24576, -- A Friendly Chat... (Horde)
 									},
-									["maps"] = { 321, }, -- Orgrimmar
+									["maps"] = { 85, }, -- Orgrimmar
 									["races"] = HORDE_ONLY,
 								}),
 								q(14488, { -- You've Been Served
@@ -502,7 +502,7 @@ _.WorldEvents =
 										24792, -- Man on the Inside (Alliance)
 										24793, -- Man on the Inside (Horde)
 									},
-									["maps"] = { 764, }, -- Shadowfang Keep
+									["maps"] = { 310, }, -- Shadowfang Keep
 									["isDaily"] = true,
 								}),
 							}),

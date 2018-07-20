@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(751, { 	-- The Maelstrom
+	m(509, { 	-- The Maelstrom
 		["groups"] = {},
 		["achievementID"] = 4868,
 		["icon"] = "Interface\\Icons\\Achievement_Zone_Cataclysm",

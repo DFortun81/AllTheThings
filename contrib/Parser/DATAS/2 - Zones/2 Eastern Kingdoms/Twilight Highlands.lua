@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(700, {	-- Twilight Highlands
+	m(13, { 	-- Eastern Kingdoms
+		m(241, {	-- Twilight Highlands
 			["groups"] = {							
 				n( -3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival

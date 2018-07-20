@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor
-		m(281, {	-- Winterspring
+	m(12, { 	-- Kalimdor
+		m(83, {	-- Winterspring
 			["groups"] = {
 				faction(576, {	-- Timbermaw Hold
 					["g"] = {

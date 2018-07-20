@@ -191,7 +191,7 @@ profession(333, { -- Enchanting
 		-- i(84580),	-- Formula: Enchant Weapon - River's Song [From 1 Vendor - Done]
 	}),
 	gb(126, {	-- Enchanter's Study (Level 3)
-		["maps"] = {971, 973, 974, 975, 976, 980, 981, 982},	-- Both Garrisons
+		["maps"] = {579, 582, 723, 729, 20, 590, 720, 721},	-- Both Garrisons
 		["groups"] = {
 			na(77354, { 	-- Ayada the White [Alliance]
 				i(111922, {		-- Draenor Enchanting

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
+	m(13, { 	-- Eastern Kingdoms
 		["groups"] = {},
 		["achievementID"] = 42,
 		["icon"] = "Interface\\Icons\\Achievement_Zone_EasternKingdoms_01",

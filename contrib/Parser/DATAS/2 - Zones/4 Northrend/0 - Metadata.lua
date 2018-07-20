@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
+	m(113, { 	-- Northrend
 		["groups"] = {},
 		["achievementID"] = 45,
 		["icon"] = "Interface\\Icons\\Achievement_Zone_Northrend_01",

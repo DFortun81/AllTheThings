@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(38, {		-- Swamp of Sorrows
+	m(13, { 	-- Eastern Kingdoms
+		m(51, {		-- Swamp of Sorrows
 			["groups"] = {						
 				n( -3, {	-- Holidays					
 --[[					

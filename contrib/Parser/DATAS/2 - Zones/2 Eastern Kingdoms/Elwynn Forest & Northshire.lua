@@ -8,8 +8,8 @@ Note: This quest seemingly isn't available any longer. Some claim that the NPC s
 ]]--
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(30, {		-- Elwynn Forest
+	m(13, { 	-- Eastern Kingdoms
+		m(37, {		-- Elwynn Forest
 			["groups"] = {						
 				n( -3, {	-- Holidays															
 					n(-47, {     -- Lunar Festival
@@ -505,7 +505,7 @@ _.Zones =
 						--}),
 					},
 				}),
-				m(864, {	-- Northshire
+				m(425, {	-- Northshire
 					["groups"] = {
 						n(-17, {	-- Quests
 							qg(197, qa(28762, {	-- Beating Them Back!

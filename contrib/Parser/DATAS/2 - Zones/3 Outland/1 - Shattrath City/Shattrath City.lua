@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(466, { 	-- Outland
-		m(481, { -- Shattrath City
+	m(101, { 	-- Outland
+		m(111, { -- Shattrath City
 			["groups"] = {
 				n( -3, {	-- Holidays
 					n(-47, {	-- Lunar Festival

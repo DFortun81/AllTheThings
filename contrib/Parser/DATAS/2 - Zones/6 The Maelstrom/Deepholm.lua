@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(751, { 	-- The Maelstrom
-		m(640, {	-- Deepholm
+	m(509, { 	-- The Maelstrom
+		m(207, {	-- Deepholm
 			["groups"] = {		
 				n(-3, { 	-- Holidays					
 					n(-47, {     -- Lunar Festival

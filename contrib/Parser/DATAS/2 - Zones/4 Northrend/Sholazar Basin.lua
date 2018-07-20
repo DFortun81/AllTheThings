@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
-		m(493, { 	-- Sholazar Basin
+	m(113, { 	-- Northrend
+		m(119, { 	-- Sholazar Basin
 			["groups"] = {
 				ach(952),	-- Mercenary of Sholazar
 				faction(1104, {	-- Frenzyheart Tribe

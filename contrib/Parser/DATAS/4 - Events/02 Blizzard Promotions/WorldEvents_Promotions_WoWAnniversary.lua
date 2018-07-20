@@ -45,7 +45,7 @@ _.WorldEvents =
 								},
 								["isRaid"] = true,
 								["questID"] = 47462,
-								["maps"] = { 181 }, -- Azshara
+								["maps"] = { 76 }, -- Azshara
 							}),	
 							n(121818, { -- Lord Kazzak
 								["groups"] = {
@@ -60,7 +60,7 @@ _.WorldEvents =
 								},
 								["isRaid"] = true,
 								["questID"] = 47461,
-								["maps"] = { 19 }, -- Blasted Lands
+								["maps"] = { 17 }, -- Blasted Lands
 							}),	
 							n(121913, { -- Emeriss		
 								["groups"] = {
@@ -78,7 +78,7 @@ _.WorldEvents =
 								},
 								["isRaid"] = true,
 								["questID"] = 47463,
-								["maps"] = { 34 }, -- Duskwood
+								["maps"] = { 47 }, -- Duskwood
 							}),	
 							n(121821, { -- Lethon			
 								["groups"] = {
@@ -134,7 +134,7 @@ _.WorldEvents =
 								},
 								["isRaid"] = true,
 								["questID"] = 47463,
-								["maps"] = { 121 }, -- Feralas
+								["maps"] = { 69 }, -- Feralas
 							}),
 						}),
 						n(-17, { -- Quests

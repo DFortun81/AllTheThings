@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(962, { 	-- Draenor
+	m(572, { 	-- Draenor
 		h(m(976, {	-- Frostwall other mapid's 976, 980, 981, 982,
 			 -- Lucetia: MapID 990 was used and only worked in Frostfire Ridge.  Changing it to 976 should work.
 			["groups"] = {
@@ -4303,7 +4303,7 @@ _.Zones =
 			},
 			["lvl"] = 90,
 			["isRaid"] = true,
-			["maps"] = {980, 981, 982},
+			["maps"] = {590, 720, 721},
 			["icon"] = "Interface\\Icons\\achievement_garrison_tier01_horde",
 			["description"] = "|cff66ccffFrostwall is the Horde Garrison, located in Frostfire Ridge. A fully-upgraded Frostwall garrison is considered to be a fortress.|r",
 		})),	

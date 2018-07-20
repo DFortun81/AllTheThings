@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(808, { -- The Wandering Isle Starter Zones
+	m(424, { 	-- Pandaria
+		m(378, { -- The Wandering Isle Starter Zones
 			["groups"] = {
 				n(-17, { 	-- Quests
 					q(31450, {	-- A New Fate

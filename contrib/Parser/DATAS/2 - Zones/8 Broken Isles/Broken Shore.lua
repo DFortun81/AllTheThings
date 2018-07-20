@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1007, { 	-- The Broken Isles
-		m(1021, { 	-- Broken Shore
+	m(619, { 	-- The Broken Isles
+		m(646, { 	-- Broken Shore
 			["groups"] = {
 				n(-10048, { -- Mage Tower
 					["groups"] = {

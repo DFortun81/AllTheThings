@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(466, { 	-- Outland
-		m(479, { 	-- Netherstorm
+	m(101, { 	-- Outland
+		m(109, { 	-- Netherstorm
 			["groups"] = {							
 				n( -3, {	-- Holidays					
 					n(-51, {     -- Noblegarden

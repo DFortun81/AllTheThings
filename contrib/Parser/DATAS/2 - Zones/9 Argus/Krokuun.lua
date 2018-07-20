@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(1184, { 	-- Argus
-		m(1135, {	-- Krokuun
+	m(905, { 	-- Argus
+		m(830, {	-- Krokuun
 			["groups"] = {
 				n(-4, { 	-- Achievement
 					ach(12074, { -- Shoot First, Loot Later

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(36, {		-- Redridge Mountains
+	m(13, { 	-- Eastern Kingdoms
+		m(49, {		-- Redridge Mountains
 			["groups"] = {							
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken

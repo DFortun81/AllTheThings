@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
+	m(424, { 	-- Pandaria
 		["groups"] = {},
 		["achievementID"] = 6974,
 		["icon"] = "Interface\\Icons\\ExpansionIcon_MistsofPandaria",

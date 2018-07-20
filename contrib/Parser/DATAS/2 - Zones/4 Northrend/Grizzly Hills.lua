@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
-		m(490, {	-- Grizzly Hills
+	m(113, { 	-- Northrend
+		m(116, {	-- Grizzly Hills
 			["groups"] = {
 				ach(2257, {	-- Frostbitten
 					{

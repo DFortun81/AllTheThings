@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(928, {	-- Isle of Thunder
+	m(424, { 	-- Pandaria
+		m(504, {	-- Isle of Thunder
 			["groups"] = {
 				n(-3, { 	-- Holidays
 					n(-51, {    	-- Noblegarden

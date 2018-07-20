@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones = 
 {
-	m(13, { 	-- Kalimdor
-		m(606, {	-- Mount Hyjal
+	m(12, { 	-- Kalimdor
+		m(198, {	-- Mount Hyjal
 			["groups"] = {	
 				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
@@ -869,7 +869,7 @@ _.Zones =
 					},
 					["u"] = 12,
 				}),	--]]
-				m(795, {	-- Molten Front
+				m(338, {	-- Molten Front
 					["groups"] = {
 						ach(5859, {	-- Legacy of Leyara
 							crit(1),

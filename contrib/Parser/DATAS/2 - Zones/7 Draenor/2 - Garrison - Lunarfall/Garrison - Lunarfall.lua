@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(962, { 	-- Draenor
-		m(971, {	-- Lunrfall other mapid's 971, 973, 974, 975
+	m(572, { 	-- Draenor
+		m(579, {	-- Lunrfall other mapid's 971, 973, 974, 975
 					-- Lucetia: MapID 991 was used and only worked in Shadowmoon Valley.  Changing it to 971 should work.
 			["groups"] = {				
 				n(-3, { 	-- Holidays
@@ -4292,7 +4292,7 @@ _.Zones =
 			["lvl"] = 90,
 			["isRaid"] = true,
 			["races"] = ALLIANCE_ONLY,
-			["maps"] = {973, 974, 975},
+			["maps"] = {582, 723, 729},
 			["icon"] = "Interface\\Icons\\achievement_garrison_tier01_alliance",
 			["description"] = "|cff66ccffLunrfall is the Alliance Garrison, located in Shadowmoon Valley. Several Shadowmoon clan ruins dotted the area before the garrison was built. A fully-upgraded Lunrfall garrison is considered to be a castle.|r",
 		}),	

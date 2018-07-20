@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(810, {	-- Townlong Steppes
+	m(424, { 	-- Pandaria
+		m(388, {	-- Townlong Steppes
 			["groups"] = {
 				n(-25, { 	-- Pet Battles
 					p(724), 	-- Alpine Foxling

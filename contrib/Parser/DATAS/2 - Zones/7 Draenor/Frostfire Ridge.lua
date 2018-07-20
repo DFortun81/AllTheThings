@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(962, { 	-- Draenor
-		m(941, { 	-- Frostfire Ridge
+	m(572, { 	-- Draenor
+		m(525, { 	-- Frostfire Ridge
 			["groups"] = {							
 				n(-3, { 	-- Holidays					
 					n(-61, {     -- Feast of Winter Veil

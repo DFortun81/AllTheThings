@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(962, { 	-- Draenor
-		m(1011, {	-- Warspear
+	m(572, { 	-- Draenor
+		m(624, {	-- Warspear
 			["groups"] = {
 				follower(467, { -- Fen Tao
 					["groups"] = {

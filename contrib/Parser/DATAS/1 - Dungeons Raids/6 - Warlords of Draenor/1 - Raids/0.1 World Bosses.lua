@@ -18,7 +18,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				},
 				["questID"] = 37462,
 				["isRaid"] = true,
-				["maps"] = { 949 }, -- Gorgrond
+				["maps"] = { 543 }, -- Gorgrond
 			})),
 			cr(87493, e(1262, { 	-- Rukhmar
 				["groups"] = {
@@ -35,7 +35,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["achievementID"] = 9425,
 				["questID"] = 37464,
 				["isRaid"] = true,
-				["maps"] = { 948 }, -- Spires of Arak
+				["maps"] = { 542 }, -- Spires of Arak
 			})),	
 			cr(81535, e(1211, { 	-- Tarlna the Ageless
 				["groups"] = {	
@@ -54,7 +54,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				},
 				["questID"] = 37462,
 				["isRaid"] = true,
-				["maps"] = { 949 }, -- Gorgrond
+				["maps"] = { 543 }, -- Gorgrond
 			})),
 		},
 		["isRaid"] = true,

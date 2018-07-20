@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(893, {	-- Sunstrider Isle
+	m(13, { 	-- Eastern Kingdoms
+		m(467, {	-- Sunstrider Isle
 			["groups"] = {					
 				n(-17, {	-- Quests
 					qh(37440, {	-- A Fistful of Slivers

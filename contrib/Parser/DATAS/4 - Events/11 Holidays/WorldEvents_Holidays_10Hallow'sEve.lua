@@ -33,28 +33,28 @@ _.WorldEvents =
 											["questID"] = 29054, -- Stink Bombs Away!
 											["qg"] = 51934, -- Gretchen Fenlow
 											["races"] = ALLIANCE_ONLY,
-											["maps"] = { 30 }, -- Elwynn Forest
+											["maps"] = { 37 }, -- Elwynn Forest
 										},
 										{
 											["criteriaID"] = 2,	-- Clean Up In Stormwind [Criteria]
 											["questID"] = 29144, -- Clean Up In Stormwind
 											["qg"] = 51934,	-- Gretchen Fenlow
 											["races"] = ALLIANCE_ONLY,
-											["maps"] = { 30 }, -- Elwynn Forest
+											["maps"] = { 37 }, -- Elwynn Forest
 										},
 										{
 											["criteriaID"] = 3,	-- A Time to Gain [Criteria]
 											["questID"] = 29075, -- A Time to Gain
 											["qg"] = 51934, -- Gretchen Fenlow
 											["races"] = ALLIANCE_ONLY,
-											["maps"] = { 30 }, -- Elwynn Forest
+											["maps"] = { 37 }, -- Elwynn Forest
 										},
 										{
 											["criteriaID"] = 4,	-- A Time to Lose [Criteria]
 											["questID"] = 29371, -- A Time to Lose
 											["qg"] = 51934,	-- Gretchen Fenlow
 											["races"] = ALLIANCE_ONLY,
-											["maps"] = { 30 }, -- Elwynn Forest
+											["maps"] = { 37 }, -- Elwynn Forest
 										},
 									}),
 									["races"] = ALLIANCE_ONLY, -- Alliance
@@ -66,28 +66,28 @@ _.WorldEvents =
 											["questID"] = 29374, -- Stink Bombs Away!
 											["qg"] = 53763,	-- Candace Fenlow
 											["races"] = HORDE_ONLY,
-											["maps"] = { 382 },	-- Undercity
+											["maps"] = { 90 },	-- Undercity
 										},
 										{
 											["criteriaID"] = 2,	-- Clean Up in Undercity [Criteria]
 											["questID"] = 29375, -- Clean Up in Undercity
 											["qg"] = 53763,	-- Candace Fenlow
 											["races"] = HORDE_ONLY,
-											["maps"] = { 382 },	-- Undercity
+											["maps"] = { 90 },	-- Undercity
 										},
 										{
 											["criteriaID"] = 3,	-- A Time to Build Up [Criteria]
 											["questID"] = 29376, -- A Time to Build Up
 											["qg"] = 53763,	-- Candace Fenlow
 											["races"] = HORDE_ONLY,
-											["maps"] = { 382 },	-- Undercity
+											["maps"] = { 90 },	-- Undercity
 										},
 										{
 											["criteriaID"] = 4,	-- A Time to Break Down [Criteria]
 											["questID"] = 29377, -- A Time to Break Down
 											["qg"] = 53763,	-- Candace Fenlow
 											["races"] = HORDE_ONLY,
-											["maps"] = { 382 },	-- Undercity
+											["maps"] = { 90 },	-- Undercity
 										},
 									}),
 									["races"] = HORDE_ONLY, -- Horde
@@ -172,32 +172,32 @@ _.WorldEvents =
 											["groups"] = bubbleDown({["achievementID"] = 966}, { -- Tricks and Treats of Eastern Kingdoms [Achievement]
 												{
 													["criteriaID"] = 1,	-- Arathi Highlands, Refuge Point [Criteria]
-													["maps"] = { 16 }, -- Arathi Highlands
+													["maps"] = { 14 }, -- Arathi Highlands
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 2,	-- Badlands, Dragon's Mouth [Criteria]
-													["maps"] = { 17 }, -- Badlands
+													["maps"] = { 15 }, -- Badlands
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 3,	-- Badlands, Fuselight [Criteria]
-													["maps"] = { 17 }, -- Badlands
+													["maps"] = { 15 }, -- Badlands
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 4,	-- Blasted Lands, Nethergarde Keep [Criteria]
-													["maps"] = { 19 }, -- Blasted Lands
+													["maps"] = { 17 }, -- Blasted Lands
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 5,	-- Blasted Lands, Surwich [Criteria]
-													["maps"] = { 19 }, -- Blasted Lands
+													["maps"] = { 17 }, -- Blasted Lands
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 6,	-- The Cape of Stranglethorn, Booty Bay [Criteria]
-													["maps"] = { 673 }, -- The Cape of Stranglethorn
+													["maps"] = { 210 }, -- The Cape of Stranglethorn
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
@@ -207,7 +207,7 @@ _.WorldEvents =
 												},
 												{
 													["criteriaID"] = 8,	-- Duskwood, Darkshire [Criteria]
-													["maps"] = { 34 }, -- Duskwood
+													["maps"] = { 47 }, -- Duskwood
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
@@ -217,7 +217,7 @@ _.WorldEvents =
 												},
 												{
 													["criteriaID"] = 10, -- Elwynn Forest, Goldshire [Criteria]
-													["maps"] = { 30 }, -- Elwynn Forest
+													["maps"] = { 37 }, -- Elwynn Forest
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
@@ -232,47 +232,47 @@ _.WorldEvents =
 												},
 												{
 													["criteriaID"] = 13, -- Ironforge, The Commons [Criteria]
-													["maps"] = { 341 }, -- Ironforge
+													["maps"] = { 87 }, -- Ironforge
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 14, -- Loch Modan, Farstrider Lodge [Criteria]
-													["maps"] = { 35 }, -- Loch Modan
+													["maps"] = { 48 }, -- Loch Modan
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 15, -- Loch Modan, Thelsamar [Criteria]
-													["maps"] = { 35 }, -- Loch Modan
+													["maps"] = { 48 }, -- Loch Modan
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 16, -- Northern Stranglethorn, Fort Livingston [Criteria]
-													["maps"] = { 37 }, -- Northern Stranglethorn
+													["maps"] = { 50 }, -- Northern Stranglethorn
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 17, -- Redridge Mountains, Lakeshire [Criteria]
-													["maps"] = { 36 }, -- Redridge Mountains
+													["maps"] = { 49 }, -- Redridge Mountains
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 18, -- Searing Gorge, Iron Summit [Criteria]
-													["maps"] = { 28 }, -- Searing Gorge
+													["maps"] = { 32 }, -- Searing Gorge
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 19, -- Stormwind, Trade District [Criteria]
-													["maps"] = { 301 }, -- Stormwind City
+													["maps"] = { 84 }, -- Stormwind City
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 20, -- Swamp of Sorrows, Bogpaddle [Criteria]
-													["maps"] = { 38 }, -- Swamp of Sorrows
+													["maps"] = { 51 }, -- Swamp of Sorrows
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 21, -- Swamp of Sorrows, The Harborage [Criteria]
-													["maps"] = { 38 }, -- Swamp of Sorrows
+													["maps"] = { 51 }, -- Swamp of Sorrows
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
@@ -282,22 +282,22 @@ _.WorldEvents =
 												},
 												{
 													["criteriaID"] = 23, -- Wetlands, Menethil Harbor [Criteria]
-													["maps"] = { 40 }, -- Wetlands
+													["maps"] = { 56 }, -- Wetlands
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 24, -- Wetlands, Swiftgear Station [Criteria]
-													["maps"] = { 40 }, -- Wetlands
+													["maps"] = { 56 }, -- Wetlands
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 25, -- Westfall, Sentinel Hill [Criteria]
-													["maps"] = { 39 }, -- Westfall
+													["maps"] = { 52 }, -- Westfall
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 26, -- Wetlands, Greenwarden's Grove [Criteria]
-													["maps"] = { 40 }, -- Wetlands
+													["maps"] = { 56 }, -- Wetlands
 													["races"] = ALLIANCE_ONLY,
 												},
 											}),
@@ -307,137 +307,137 @@ _.WorldEvents =
 											["groups"] = bubbleDown({["achievementID"] = 963}, { -- Tricks and Treats of Kalimdor [Achievement]
 												{
 													["criteriaID"] = 1, -- Ashenvale, Astranaar [Criteria]
-													["maps"] = { 43 }, -- Ashenvale
+													["maps"] = { 63 }, -- Ashenvale
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 2,	-- Azuremyst Isle, Azure Watch [Criteria]
-													["maps"] = { 464 }, -- Azuremyst Isle
+													["maps"] = { 97 }, -- Azuremyst Isle
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 3,	-- Bloodmyst Isle, Blood Watch [Criteria]
-													["maps"] = { 476 }, 		-- Bloodmyst Isle
+													["maps"] = { 106 }, 		-- Bloodmyst Isle
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 4,		 -- Darkshore, Lor'danel [Criteria]
-													["maps"] = { 42 }, 		 -- Darkshore
+													["maps"] = { 62 }, 		 -- Darkshore
 													["races"] = ALLIANCE_ONL 
 												},                           
 												{                            
 													["criteriaID"] = 5,			-- Darnassus, Craftsmen's Terrace [Criteria]
-													["maps"] = { 381 }, 		-- Darnassus
+													["maps"] = { 89 }, 		-- Darnassus
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 6,		 -- Desolace, Karnum's Glade [Criteria]
-													["maps"] = { 101 },		 -- Desolace
+													["maps"] = { 66 },		 -- Desolace
 													["races"] = ALLIANCE_ONL 
 												},                           
 												{                            
 													["criteriaID"] = 7,		 -- Desolace, Nijel's Point [Criteria]
-													["maps"] = { 101 },		 -- Desolace
+													["maps"] = { 66 },		 -- Desolace
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 8,			-- Dustwallow Marsh, Mudsprocket [Criteria]
-													["maps"] = { 141 }, 		-- Dustwallow Marsh
+													["maps"] = { 70 }, 		-- Dustwallow Marsh
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 9,			-- Exodar, Seat of the Naaru [Criteria]
-													["maps"] = { 471 }, 		-- The Exodar
+													["maps"] = { 103 }, 		-- The Exodar
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 10,		-- Felwood, Talonbranch Glade [Criteria]
-													["maps"] = { 182 },			-- Felwood
+													["maps"] = { 77 },			-- Felwood
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 11,		-- Felwood, Whisperwind Grove [Criteria]
-													["maps"] = { 182 },			-- Felwood
+													["maps"] = { 77 },			-- Felwood
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 12,		-- Feralas, Dreamer's Rest [Criteria]
-													["maps"] = { 121 },			-- Feralas
+													["maps"] = { 69 },			-- Feralas
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 13,		-- Feralas, Feathermoon Stronghold [Criteria]
-													["maps"] = { 121 },			-- Feralas
+													["maps"] = { 69 },			-- Feralas
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 14,		-- Northern Barrens, Ratchet [Criteria]
-													["maps"] = { 11 },			-- Northern Barrens
+													["maps"] = { 10 },			-- Northern Barrens
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 15,		-- Silithus, Cenarion Hold [Criteria]
-													["maps"] = { 261 }, 		-- Silithus
+													["maps"] = { 81 }, 		-- Silithus
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 16,		-- Southern Barrens, Fort Triumph [Criteria]
-													["maps"] = { 607 }, 		-- Southern Barrens
+													["maps"] = { 199 }, 		-- Southern Barrens
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 17,		-- Southern Barrens, Honor's Stand [Criteria]
-													["maps"] = { 607 }, 		-- Southern Barrens
+													["maps"] = { 199 }, 		-- Southern Barrens
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 18,		-- Southern Barrens, Northwatch Hold [Criteria]
-													["maps"] = { 607 }, 		-- Southern Barrens
+													["maps"] = { 199 }, 		-- Southern Barrens
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 19,		-- Stonetalon Mountains, Farwatcher's Glen [Criteria]
-													["maps"] = { 81 }, 			-- Stonetalon Mountains
+													["maps"] = { 65 }, 			-- Stonetalon Mountains
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 20,		-- Stonetalon Mountains, Northwatch Expedition Base [Criteria]
-													["maps"] = { 81 }, 			-- Stonetalon Mountains
+													["maps"] = { 65 }, 			-- Stonetalon Mountains
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 21,		-- Stonetalon Mountains, Thal'darah Overlook [Criteria]
-													["maps"] = { 81 }, 			-- Stonetalon Mountains
+													["maps"] = { 65 }, 			-- Stonetalon Mountains
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 22,		-- Stonetalon Mountains, Windshear Hold [Criteria]
-													["maps"] = { 81 }, 			-- Stonetalon Mountains
+													["maps"] = { 65 }, 			-- Stonetalon Mountains
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 23,		-- Tanaris, Bootlegger Outpost [Criteria]
-													["maps"] = { 161 }, 		-- Tanaris
+													["maps"] = { 71 }, 		-- Tanaris
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 24,		-- Tanaris, Gadgetzan [Criteria]
-													["maps"] = { 161 }, 		-- Tanaris
+													["maps"] = { 71 }, 		-- Tanaris
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 25,		-- Teldrassil, Dolanaar [Criteria]
-													["maps"] = { 41 }, 			-- Teldrassil
+													["maps"] = { 57 }, 			-- Teldrassil
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 26,		-- Un'goro Crater, Marshal's Stand [Criteria]
-													["maps"] = { 201 }, 		-- Un'goro Crater
+													["maps"] = { 78 }, 		-- Un'goro Crater
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 27,		-- Winterspring, Everlook [Criteria]
-													["maps"] = { 281 }, 		-- Winterspring
+													["maps"] = { 83 }, 		-- Winterspring
 													["races"] = ALLIANCE_ONLY,
 												},
 											}),
@@ -447,78 +447,78 @@ _.WorldEvents =
 											["groups"] = bubbleDown({["achievementID"] = 969}, { -- Tricks and Treats of Outland [Achievement]
 												{
 													["criteriaID"] = 1,			-- Blade's Edge Mountains, Evergrove [Criteria]
-													["maps"] = { 475 },			-- Blade's Edge Mountains
+													["maps"] = { 105 },			-- Blade's Edge Mountains
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 2,			-- Blade's Edge Mountains, Sylvanaar [Criteria]
-													["maps"] = { 475 },			-- Blade's Edge Mountains
+													["maps"] = { 105 },			-- Blade's Edge Mountains
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 3,			-- Blade's Edge Mountains, Toshley's Station [Criteria]
-													["maps"] = { 475 },			-- Blade's Edge Mountains
+													["maps"] = { 105 },			-- Blade's Edge Mountains
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 4,			-- Hellfire Peninsula, Honor Hold [Criteria]
-													["maps"] = { 465 },			-- Hellfire Peninsula
+													["maps"] = { 100 },			-- Hellfire Peninsula
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 5,			-- Hellfire Peninsula, Temple of Telhamat [Criteria]
-													["maps"] = { 465 },			-- Hellfire Peninsula
+													["maps"] = { 100 },			-- Hellfire Peninsula
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 6,			-- Nagrand, Telaar [Criteria]
-													["maps"] = { 477 },			-- Nagrand
+													["maps"] = { 107 },			-- Nagrand
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 7,			-- Netherstorm, Area 52 [Criteria]
-													["maps"] = { 479 },			-- Netherstorm
+													["maps"] = { 109 },			-- Netherstorm
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 8,			-- Netherstorm, The Stormspire [Criteria]
-													["maps"] = { 479 },			-- Netherstorm
+													["maps"] = { 109 },			-- Netherstorm
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 9,			-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars [Criteria]
-													["maps"] = { 473 },			-- Shadowmoon Valley
+													["maps"] = { 104 },			-- Shadowmoon Valley
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 10,		-- Shadowmoon Valley, Wildhammer Stronghold [Criteria]
-													["maps"] = { 473 },			-- Shadowmoon Valley
+													["maps"] = { 104 },			-- Shadowmoon Valley
 													["races"] = ALLIANCE_ONLY,
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 11,		-- Shattrath City, Aldor Rise or Scryer's Tier [Criteria]
-													["maps"] = { 481 },			-- Shattrath City
+													["maps"] = { 111 },			-- Shattrath City
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 12,		-- Terokkar Forest, Allerian Stronghold [Criteria]
-													["maps"] = { 478 },			-- Terokkar Forest
+													["maps"] = { 108 },			-- Terokkar Forest
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 13,		-- Zangarmarsh, Cenarion Refuge [Criteria]
-													["maps"] = { 467 },			-- Zangarmarsh
+													["maps"] = { 102 },			-- Zangarmarsh
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 14,		-- Zangarmarsh, Orebor Harborage [Criteria]
-													["maps"] = { 467 },			-- Zangarmarsh
+													["maps"] = { 102 },			-- Zangarmarsh
 													["races"] = ALLIANCE_ONLY,
 												},
 												{
 													["criteriaID"] = 15,		-- Zangarmarsh, Telredor [Criteria]
-													["maps"] = { 467 },			-- Zangarmarsh
+													["maps"] = { 102 },			-- Zangarmarsh
 													["races"] = ALLIANCE_ONLY,
 												},
 											}),
@@ -528,32 +528,32 @@ _.WorldEvents =
 											["groups"] = bubbleDown({["achievementID"] = 967}, { -- Tricks and Treats of Eastern Kingdoms [Achievement]
 												{
 													["criteriaID"] = 1,			-- Arathi Highlands, Hammerfall [Criteria]
-													["maps"] = { 16 }, 			-- Arathi Highlands
+													["maps"] = { 14 }, 			-- Arathi Highlands
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 2,			-- Badlands, Fuselight [Criteria]
-													["maps"] = { 17 }, 			-- Badlands
+													["maps"] = { 15 }, 			-- Badlands
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 3,			-- Badlands, New Kargath [Criteria]
-													["maps"] = { 17 }, 			-- Badlands
+													["maps"] = { 15 }, 			-- Badlands
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 4,			-- Blasted Lands, Dreadmaul Hold [Criteria]
-													["maps"] = { 19 }, 			-- Blasted Lands
+													["maps"] = { 17 }, 			-- Blasted Lands
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 5,			-- The Cape of Stranglethorn, Booty Bay [Criteria]
-													["maps"] = { 673 }, 		-- The Cape of Stranglethorn
+													["maps"] = { 210 }, 		-- The Cape of Stranglethorn
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 6,			-- The Cape of Stranglethorn, Hardwrench Hideaway [Criteria]
-													["maps"] = { 673 }, 		-- The Cape of Stranglethorn
+													["maps"] = { 210 }, 		-- The Cape of Stranglethorn
 													["races"] = HORDE_ONLY,
 												},
 												{
@@ -563,27 +563,27 @@ _.WorldEvents =
 												},
 												{
 													["criteriaID"] = 8,			-- Eversong Woods, Fairbreeze Village [Criteria]
-													["maps"] = { 462 }, 		-- Eversong Woods
+													["maps"] = { 94 }, 		-- Eversong Woods
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 9,			-- Eversong Woods, Falconwing Square [Criteria]
-													["maps"] = { 462 }, 		-- Eversong Woods
+													["maps"] = { 94 }, 		-- Eversong Woods
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 10,		-- Ghostlands, Tranquillien [Criteria]
-													["maps"] = { 463 }, 		-- Ghostlands
+													["maps"] = { 95 }, 		-- Ghostlands
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 11,		-- Hillsbrad Foothills, Eastpoint Tower [Criteria]
-													["maps"] = { 24 }, 			-- Hillsbrad Foothills
+													["maps"] = { 25 }, 			-- Hillsbrad Foothills
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 12,		-- Hillsbrad Foothills, Tarren Mill [Criteria]
-													["maps"] = { 24 }, 			-- Hillsbrad Foothills
+													["maps"] = { 25 }, 			-- Hillsbrad Foothills
 													["races"] = HORDE_ONLY,
 												},
 												{
@@ -598,22 +598,22 @@ _.WorldEvents =
 												},
 												{
 													["criteriaID"] = 15,		-- Northern Stranglethorn, Grom'gol Base Camp [Criteria]
-													["maps"] = { 37 }, 			-- Northern Stranglethorn
+													["maps"] = { 50 }, 			-- Northern Stranglethorn
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 16,		-- Searing Gorge, Iron Summit [Criteria]
-													["maps"] = { 28 }, 			-- Searing Gorge
+													["maps"] = { 32 }, 			-- Searing Gorge
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 17,		-- Silvermoon City, The Bazaar [Criteria]
-													["maps"] = { 480 }, 		-- Silvermoon City
+													["maps"] = { 110 }, 		-- Silvermoon City
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 18,		-- Silvermoon City, The Royal Exchange [Criteria]
-													["maps"] = { 480 }, 		-- Silvermoon City
+													["maps"] = { 110 }, 		-- Silvermoon City
 													["races"] = HORDE_ONLY,
 												},
 												{
@@ -628,27 +628,27 @@ _.WorldEvents =
 												},
 												{
 													["criteriaID"] = 21,		-- Swamp of Sorrows, Bogpaddle [Criteria]
-													["maps"] = { 38 }, 			-- Swamp of Sorrows
+													["maps"] = { 51 }, 			-- Swamp of Sorrows
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 22,		-- Swamp of Sorrows, Stonard [Criteria]
-													["maps"] = { 38 }, 			-- Swamp of Sorrows
+													["maps"] = { 51 }, 			-- Swamp of Sorrows
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 23,		-- Tirisfal Glades, Brill [Criteria]
-													["maps"] = { 20 }, 			-- Tirisfal Glades
+													["maps"] = { 18 }, 			-- Tirisfal Glades
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 24,		-- Tirisfal Glades, The Bulwark [Criteria]
-													["maps"] = { 20 }, 			-- Tirisfal Glades
+													["maps"] = { 18 }, 			-- Tirisfal Glades
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 25,		-- Undercity, The Trade Quarter [Criteria]
-													["maps"] = { 382 }, 		-- Undercity
+													["maps"] = { 90 }, 		-- Undercity
 													["races"] = HORDE_ONLY,
 												},
 												{
@@ -663,152 +663,152 @@ _.WorldEvents =
 											["groups"] = bubbleDown({["achievementID"] = 965}, { -- Tricks and Treats of Kalimdor [Achievement]
 												{
 													["criteriaID"] = 1,			-- Ashenvale, Hellscream's Watch [Criteria]
-													["maps"] = { 43 }, 			-- Ashenvale
+													["maps"] = { 63 }, 			-- Ashenvale
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 2,			-- Ashenvale, Silverwind Refuge [Criteria]
-													["maps"] = { 43 }, 			-- Ashenvale
+													["maps"] = { 63 }, 			-- Ashenvale
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 3,			-- Ashenvale, Splintertree Post [Criteria]
-													["maps"] = { 43 }, 			-- Ashenvale
+													["maps"] = { 63 }, 			-- Ashenvale
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 4,			-- Ashenvale, Zoram'gar Outpost [Criteria]
-													["maps"] = { 43 }, 			-- Ashenvale
+													["maps"] = { 63 }, 			-- Ashenvale
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 5,			-- Azshara, Bilgewater Harbor [Criteria]
-													["maps"] = { 181 }, 		-- Azshara
+													["maps"] = { 76 }, 		-- Azshara
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 6,			-- Desolace, Karnum's Glade [Criteria]
-													["maps"] = { 101 },			-- Desolace
+													["maps"] = { 66 },			-- Desolace
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 7,			-- Desolace, Shadowprey Village [Criteria]
-													["maps"] = { 101 },			-- Desolace
+													["maps"] = { 66 },			-- Desolace
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 8,			-- Durotar, Razor Hill [Criteria]
-													["maps"] = { 4 }, 			-- Durotar
+													["maps"] = { 1 }, 			-- Durotar
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 9,			-- Dustwallow Marsh, Brackenwall Village [Criteria]
-													["maps"] = { 141 }, 		-- Dustwallow Marsh
+													["maps"] = { 70 }, 		-- Dustwallow Marsh
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 10,		-- Dustwallow Marsh, Mudsprocket [Criteria]
-													["maps"] = { 4 },			-- Dustwallow Marsh
+													["maps"] = { 1 },			-- Dustwallow Marsh
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 11,		-- Felwood, Whisperwind Grove [Criteria]
-													["maps"] = { 182 },			-- Felwood
+													["maps"] = { 77 },			-- Felwood
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 12,		-- Feralas, Camp Ataya [Criteria]
-													["maps"] = { 121 },			-- Feralas
+													["maps"] = { 69 },			-- Feralas
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 13,		-- Feralas, Camp Mojache [Criteria]
-													["maps"] = { 121 },			-- Feralas
+													["maps"] = { 69 },			-- Feralas
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 14,		-- Feralas, Stonemaul Hold [Criteria]
-													["maps"] = { 121 },			-- Feralas
+													["maps"] = { 69 },			-- Feralas
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 15,		-- Mulgore, Bloodhoof Village [Criteria]
-													["maps"] = { 9 }, 			-- Mulgore
+													["maps"] = { 7 }, 			-- Mulgore
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 16,		-- Northern Barrens, The Crossroads [Criteria]
-													["maps"] = { 11 },			-- Northern Barrens
+													["maps"] = { 10 },			-- Northern Barrens
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 17,		-- Northern Barrens, Grol'dom Farm [Criteria]
-													["maps"] = { 11 },			-- Northern Barrens
+													["maps"] = { 10 },			-- Northern Barrens
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 18,		-- Northern Barrens, Nozzlepot's Outpost [Criteria]
-													["maps"] = { 11 },			-- Northern Barrens
+													["maps"] = { 10 },			-- Northern Barrens
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 19,		-- Northern Barrens, Ratchet [Criteria]
-													["maps"] = { 11 },			-- Northern Barrens
+													["maps"] = { 10 },			-- Northern Barrens
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 20,		-- Orgrimmar, Valley of Strength [Criteria]
-													["maps"] = { 321 },			-- Orgrimmar
+													["maps"] = { 85 },			-- Orgrimmar
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 21,		-- Silithus, Cenarion Hold [Criteria]
-													["maps"] = { 261 }, 		-- Silithus
+													["maps"] = { 81 }, 		-- Silithus
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 22,		-- Southern Barrens, Desolation Hold [Criteria]
-													["maps"] = { 607 }, 		-- Southern Barrens
+													["maps"] = { 199 }, 		-- Southern Barrens
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 23,		-- Southern Barrens, Hunter's Hill [Criteria]
-													["maps"] = { 607 }, 		-- Southern Barrens
+													["maps"] = { 199 }, 		-- Southern Barrens
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 24,		-- Stonetalon Mountains, Krom'gar Fortress [Criteria]
-													["maps"] = { 81 }, 			-- Stonetalon Mountains
+													["maps"] = { 65 }, 			-- Stonetalon Mountains
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 25,		-- Stonetalon Mountains, Sun Rock Retreat [Criteria]
-													["maps"] = { 81 }, 			-- Stonetalon Mountains
+													["maps"] = { 65 }, 			-- Stonetalon Mountains
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 26,		-- Tanaris, Bootlegger Outpost [Criteria]
-													["maps"] = { 161 }, 		-- Tanaris
+													["maps"] = { 71 }, 		-- Tanaris
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 27,		-- Tanaris, Gadgetzan [Criteria]
-													["maps"] = { 161 }, 		-- Tanaris
+													["maps"] = { 71 }, 		-- Tanaris
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 28,		-- Thunder Bluff, Lower Rise [Criteria]
-													["maps"] = { 362 }, 		-- Thunder Bluff
+													["maps"] = { 88 }, 		-- Thunder Bluff
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 29,		-- Un'Goro Crater, Marshal's Stand [Criteria]
-													["maps"] = { 201 }, 		-- Un'Goro Crater
+													["maps"] = { 78 }, 		-- Un'Goro Crater
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 30,		-- Winterspring, Everlook [Criteria]
-													["maps"] = { 281 }, 		-- Winterspring
+													["maps"] = { 83 }, 		-- Winterspring
 													["races"] = HORDE_ONLY,
 												},	
 											}),
@@ -818,72 +818,72 @@ _.WorldEvents =
 											["groups"] = bubbleDown({["achievementID"] = 968}, { -- Tricks and Treats of Outland [Achievement]
 												{
 													["criteriaID"] = 1,			-- Blade's Edge Mountains, Evergrove [Criteria]
-													["maps"] = { 475 },			-- Blade's Edge Mountains
+													["maps"] = { 105 },			-- Blade's Edge Mountains
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 2,			-- Blade's Edge Mountains, Mok'Nathal Village [Criteria]
-													["maps"] = { 475 },			-- Blade's Edge Mountains
+													["maps"] = { 105 },			-- Blade's Edge Mountains
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 3,			-- Blade's Edge Mountains, Thunderlord Stronghold [Criteria]
-													["maps"] = { 475 },			-- Blade's Edge Mountains
+													["maps"] = { 105 },			-- Blade's Edge Mountains
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 4,			-- Hellfire Peninsula, Falcon Watch [Criteria]
-													["maps"] = { 465 },			-- Hellfire Peninsula
+													["maps"] = { 100 },			-- Hellfire Peninsula
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 5,			-- Hellfire Peninsula, Thrallmar [Criteria]
-													["maps"] = { 465 },			-- Hellfire Peninsula
+													["maps"] = { 100 },			-- Hellfire Peninsula
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 6,			-- Nagrand, Garadar [Criteria]
-													["maps"] = { 477 },			-- Nagrand
+													["maps"] = { 107 },			-- Nagrand
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 7,			-- Netherstorm, Area 52 [Criteria]
-													["maps"] = { 479 },			-- Netherstorm
+													["maps"] = { 109 },			-- Netherstorm
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 8,			-- Netherstorm, The Stormspire [Criteria]
-													["maps"] = { 479 },			-- Netherstorm
+													["maps"] = { 109 },			-- Netherstorm
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 9,			-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars [Criteria]
-													["maps"] = { 473 },			-- Shadowmoon Valley
+													["maps"] = { 104 },			-- Shadowmoon Valley
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 10,		-- Shadowmoon Valley, Shadowmoon Village [Criteria]
-													["maps"] = { 473 },			-- Shadowmoon Valley
+													["maps"] = { 104 },			-- Shadowmoon Valley
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 11,		-- Shattrath City, Aldor Rise or Scryer's Tier [Criteria]
-													["maps"] = { 481 },			-- Shattrath City
+													["maps"] = { 111 },			-- Shattrath City
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 12,		-- Terokkar Forest, Stonebreaker Hold [Criteria]
-													["maps"] = { 478 },			-- Terokkar Forest
+													["maps"] = { 108 },			-- Terokkar Forest
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 13,		-- Zangarmarsh, Zabra'jin [Criteria]
-													["maps"] = { 467 },			-- Zangarmarsh
+													["maps"] = { 102 },			-- Zangarmarsh
 													["races"] = HORDE_ONLY,
 												},
 												{
 													["criteriaID"] = 14,		-- Zangarmarsh, Cenarion Refuge [Criteria]
-													["maps"] = { 467 },			-- Zangarmarsh
+													["maps"] = { 102 },			-- Zangarmarsh
 													["races"] = HORDE_ONLY,
 												},	
 											}),
@@ -895,112 +895,112 @@ _.WorldEvents =
 									["groups"] = bubbleDown({["achievementID"] = 5836}, { -- Tricks and Treats of Northrend [Achievement]
 										{
 											["criteriaID"] = 1,			-- Borean Tundra, Fizzcrank Airstrip [Criteria]
-											["maps"] = { 486 },			-- Borean Tundra
+											["maps"] = { 114 },			-- Borean Tundra
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 2,			-- Borean Tundra, Unu'pe [Criteria]
-											["maps"] = { 486 },			-- Borean Tundra
+											["maps"] = { 114 },			-- Borean Tundra
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 3,			-- Borean Tundra, Valiance Keep [Criteria]
-											["maps"] = { 486 },			-- Borean Tundra
+											["maps"] = { 114 },			-- Borean Tundra
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 4,			-- Dalaran, The Legerdemain Lounge (Northrend) [Criteria]
-											["maps"] = { 504 },			-- Dalaran (Northrend)
+											["maps"] = { 125 },			-- Dalaran (Northrend)
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 5,			-- Dalaran, Silver Enclave (Northrend) [Criteria]
-											["maps"] = { 504 },			-- Dalaran (Northrend)
+											["maps"] = { 125 },			-- Dalaran (Northrend)
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 6,			-- Dalaran, The Underbelly (Northrend) [Criteria]
-											["maps"] = { 504 },			-- Dalaran (Northrend)
+											["maps"] = { 125 },			-- Dalaran (Northrend)
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 7,			-- Dragonblight, Moa'ki Harbor [Criteria]
-											["maps"] = { 488 },			-- Dragonblight
+											["maps"] = { 115 },			-- Dragonblight
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 8,			-- Dragonblight, Stars' Rest [Criteria]
-											["maps"] = { 488 },			-- Dragonblight
+											["maps"] = { 115 },			-- Dragonblight
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 9,			-- Dragonblight, Wintergarde Keep [Criteria]
-											["maps"] = { 488 },			-- Dragonblight
+											["maps"] = { 115 },			-- Dragonblight
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 10,		-- Dragonblight, Wyrmrest Temple [Criteria]
-											["maps"] = { 488 },			-- Dragonblight
+											["maps"] = { 115 },			-- Dragonblight
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 11,		-- Grizzly Hills, Amberpine Lodge [Criteria]
-											["maps"] = { 490 },			-- Grizzly Hills
+											["maps"] = { 116 },			-- Grizzly Hills
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 12,		-- Grizzly Hills, Westfall Brigade [Criteria]
-											["maps"] = { 490 },			-- Grizzly Hills
+											["maps"] = { 116 },			-- Grizzly Hills
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 13,		-- Howling Fjord, Fort Wildervar [Criteria]
-											["maps"] = { 491 },			-- Howling Fjord
+											["maps"] = { 117 },			-- Howling Fjord
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 14,		-- Howling Fjord, Kamagua [Criteria]
-											["maps"] = { 491 },			-- Howling Fjord
+											["maps"] = { 117 },			-- Howling Fjord
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 15,		-- Howling Fjord, Valgarde [Criteria]
-											["maps"] = { 491 },			-- Howling Fjord
+											["maps"] = { 117 },			-- Howling Fjord
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 16,		-- Howling Fjord, Westguard Keep [Criteria]
-											["maps"] = { 491 },			-- Howling Fjord
+											["maps"] = { 117 },			-- Howling Fjord
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 17,		-- Sholazar Basin, Nesingwary Base Camp [Criteria]
-											["maps"] = { 493 },			-- Sholazar Basin
+											["maps"] = { 119 },			-- Sholazar Basin
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 18,		-- Storm Peaks, Bouldercrag's Refuge [Criteria]
-											["maps"] = { 495 },			-- Storm Peaks
+											["maps"] = { 120 },			-- Storm Peaks
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 19,		-- Storm Peaks, Frosthold [Criteria]
-											["maps"] = { 495 },			-- Storm Peaks
+											["maps"] = { 120 },			-- Storm Peaks
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 20,		-- Storm Peaks, K3 [Criteria]
-											["maps"] = { 495 },			-- Storm Peaks
+											["maps"] = { 120 },			-- Storm Peaks
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 21,		-- Zul'Drak, The Argent Stand [Criteria]
-											["maps"] = { 496 },			-- Zul'Drak
+											["maps"] = { 121 },			-- Zul'Drak
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 22,		-- Zul'Drak, Zim'Torga [Criteria]
-											["maps"] = { 496 },			-- Zul'Drak
+											["maps"] = { 121 },			-- Zul'Drak
 											["races"] = ALLIANCE_ONLY,
 										},
 									}),
@@ -1010,72 +1010,72 @@ _.WorldEvents =
 									["groups"] = bubbleDown({["achievementID"] = 5837}, { -- Tricks and Treats of the Cataclysm [Achievement]
 										{
 											["criteriaID"] = 1,			-- Deepholm, Temple of Earth [Criteria]
-											["maps"] = { 640 },			-- Deepholm
+											["maps"] = { 207 },			-- Deepholm
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 2,			-- Mount Hyjal, Grove of Aessina [Criteria]
-											["maps"] = { 606 },			-- Mount Hyjal
+											["maps"] = { 198 },			-- Mount Hyjal
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 3,			-- Mount Hyjal, Nordrassil [Criteria]
-											["maps"] = { 606 },			-- Mount Hyjal
+											["maps"] = { 198 },			-- Mount Hyjal
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 4,			-- Mount Hyjal, Shrine of Aviana [Criteria]
-											["maps"] = { 606 },			-- Mount Hyjal
+											["maps"] = { 198 },			-- Mount Hyjal
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 5,			-- Twilight Highlands, Firebeard's Patrol [Criteria]
-											["maps"] = { 700 },			-- Twilight Highlands
+											["maps"] = { 241 },			-- Twilight Highlands
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 6,			-- Twilight Highlands, Highbank [Criteria]
-											["maps"] = { 700 },			-- Twilight Highlands
+											["maps"] = { 241 },			-- Twilight Highlands
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 7,			-- Twilight Highlands, Thundermar [Criteria]
-											["maps"] = { 700 },			-- Twilight Highlands
+											["maps"] = { 241 },			-- Twilight Highlands
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 8,			-- Twilight Highlands, Victor's Point [Criteria]
-											["maps"] = { 700 },			-- Twilight Highlands
+											["maps"] = { 241 },			-- Twilight Highlands
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 9,			-- Uldum, Oasis of Vir'sar [Criteria]
-											["maps"] = { 720 },			-- Uldum
+											["maps"] = { 249 },			-- Uldum
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 10,		-- Uldum, Ramkahen [Criteria]
-											["maps"] = { 720 },			-- Uldum
+											["maps"] = { 249 },			-- Uldum
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 11,		-- Vashj'ir, Darkbreak Cove [Criteria]
-											["maps"] = { 613 },			-- Vashj'ir
+											["maps"] = { 203 },			-- Vashj'ir
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 12,		-- Vashj'ir, Deepmist Grotto [Criteria]
-											["maps"] = { 613 },			-- Vashj'ir
+											["maps"] = { 203 },			-- Vashj'ir
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 13,		-- Vashj'ir, Silver Tide Hollow [Criteria]
-											["maps"] = { 613 },			-- Vashj'ir
+											["maps"] = { 203 },			-- Vashj'ir
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 14,		-- Vashj'ir, Tranquil Wash [Criteria]
-											["maps"] = { 613 },			-- Vashj'ir
+											["maps"] = { 203 },			-- Vashj'ir
 											["races"] = ALLIANCE_ONLY,
 										},
 									}),
@@ -1085,112 +1085,112 @@ _.WorldEvents =
 									["groups"] = bubbleDown({["achievementID"] = 7601}, { -- Tricks and Treats of Pandaria [Achievement]
 										{
 											["criteriaID"] = 1,			-- Dread Wastes, Klaxxi'vess [Criteria]
-											["maps"] = { 858 },			-- Dread Wastes
+											["maps"] = { 422 },			-- Dread Wastes
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 2,			-- Dread Wastes, Soggy's Gamble [Criteria]
-											["maps"] = { 858 },			-- Dread Wastes
+											["maps"] = { 422 },			-- Dread Wastes
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 3,			-- Jade Forest, Dawn's Blossom [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 4,			-- Jade Forest, Greenstone Village [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 5,			-- Jade Forest, Jade Temple Grounds [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 6,			-- Jade Forest, Paw'don Village [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 7,			-- Jade Forest, Pearlfin Village [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 8,			-- Jade Forest, Sri-La Village [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 9,			-- Jade Forest, Tian Monastery [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 10,		-- Krasarang Wilds, Marista [Criteria]
-											["maps"] = { 857 },			-- Krasarang Wilds
+											["maps"] = { 418 },			-- Krasarang Wilds
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 11,		-- Krasarang Wilds, Zhu's Watch [Criteria]
-											["maps"] = { 857 },			-- Krasarang Wilds
+											["maps"] = { 418 },			-- Krasarang Wilds
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 12,		-- Kun-Lai Summit, Binan Village [Criteria]
-											["maps"] = { 809 },			-- Kun-Lai Summit
+											["maps"] = { 379 },			-- Kun-Lai Summit
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 13,		-- Kun-Lai Summit, The Grummle Bazaar [Criteria]
-											["maps"] = { 809 },			-- Kun-Lai Summit
+											["maps"] = { 379 },			-- Kun-Lai Summit
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 14,		-- Kun-Lai Summit, One Keg [Criteria]
-											["maps"] = { 809 },			-- Kun-Lai Summit
+											["maps"] = { 379 },			-- Kun-Lai Summit
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 15,		-- Kun-Lai Summit, Westwind Rest [Criteria]
-											["maps"] = { 809 },			-- Kun-Lai Summit
+											["maps"] = { 379 },			-- Kun-Lai Summit
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 16,		-- Kun-Lai Summit, Zouchin Village [Criteria]
-											["maps"] = { 809 },			-- Kun-Lai Summit
+											["maps"] = { 379 },			-- Kun-Lai Summit
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 17,		-- The Veiled Stair, Tavern in the Mists [Criteria]
-											["maps"] = { 873 },			-- The Veiled Stair
+											["maps"] = { 433 },			-- The Veiled Stair
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 18,		-- Townlong Steppes, Longying Outpost [Criteria]
-											["maps"] = { 810 },			-- Townlong Steppes
+											["maps"] = { 388 },			-- Townlong Steppes
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 19,		-- Vale of Eternal Blossoms, Mistfall Village [Criteria]
-											["maps"] = { 811 },			-- Vale of Eternal Blossoms
+											["maps"] = { 390 },			-- Vale of Eternal Blossoms
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 20,		-- Vale of Eternal Blossoms, Shrine of Seven Stars [Criteria]
-											["maps"] = { 811 },			-- Vale of Eternal Blossoms
+											["maps"] = { 390 },			-- Vale of Eternal Blossoms
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 21,		-- Valley of the Four Winds, Pang's Stead [Criteria]
-											["maps"] = { 807 },			-- Valley of the Four Winds
+											["maps"] = { 376 },			-- Valley of the Four Winds
 											["races"] = ALLIANCE_ONLY,
 										},
 										{
 											["criteriaID"] = 22,		-- Valley of the Four Winds, Stoneplow [Criteria]
-											["maps"] = { 807 },			-- Valley of the Four Winds
+											["maps"] = { 376 },			-- Valley of the Four Winds
 											["races"] = ALLIANCE_ONLY,
 										},
 									}),
@@ -1200,122 +1200,122 @@ _.WorldEvents =
 									["groups"] = bubbleDown({["achievementID"] = 5835}, { -- Tricks and Treats of Northrend [Achievement]
 										{
 											["criteriaID"] = 1,			-- Borean Tundra, Bor'gorok Outpost [Criteria]
-											["maps"] = { 486 },			-- Borean Tundra
+											["maps"] = { 114 },			-- Borean Tundra
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 2,			-- Borean Tundra, Taunka'le Village [Criteria]
-											["maps"] = { 486 },			-- Borean Tundra
+											["maps"] = { 114 },			-- Borean Tundra
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 3,			-- Borean Tundra, Unu'pe [Criteria]
-											["maps"] = { 486 },			-- Borean Tundra
+											["maps"] = { 114 },			-- Borean Tundra
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 4,			-- Borean Tundra, Warsong Hold [Criteria]
-											["maps"] = { 486 },			-- Borean Tundra
+											["maps"] = { 114 },			-- Borean Tundra
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 5,			-- Dalaran, The Legerdemain Lounge (Northrend) [Criteria]
-											["maps"] = { 504 },			-- Dalaran (Northrend)
+											["maps"] = { 125 },			-- Dalaran (Northrend)
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 6,			-- Dalaran, Sunreaver's Sanctuary (Northrend) [Criteria]
-											["maps"] = { 504 },			-- Dalaran (Northrend)
+											["maps"] = { 125 },			-- Dalaran (Northrend)
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 7,			-- Dalaran, The Underbelly (Northrend) [Criteria]
-											["maps"] = { 504 },			-- Dalaran (Northrend)
+											["maps"] = { 125 },			-- Dalaran (Northrend)
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 8,			-- Dragonblight, Agmar's Hammer [Criteria]
-											["maps"] = { 488 },			-- Dragonblight
+											["maps"] = { 115 },			-- Dragonblight
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 9,			-- Dragonblight, Moa'ki Harbor [Criteria]
-											["maps"] = { 488 },			-- Dragonblight
+											["maps"] = { 115 },			-- Dragonblight
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 10,		-- Dragonblight, Venomspite [Criteria]
-											["maps"] = { 488 },			-- Dragonblight
+											["maps"] = { 115 },			-- Dragonblight
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 11,		-- Dragonblight, Wyrmrest Temple [Criteria]
-											["maps"] = { 488 },			-- Dragonblight
+											["maps"] = { 115 },			-- Dragonblight
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 12,		-- Grizzly Hills, Camp Oneqwah [Criteria]
-											["maps"] = { 490 },			-- Grizzly Hills
+											["maps"] = { 116 },			-- Grizzly Hills
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 13,		-- Grizzly Hills, Conquest Hold [Criteria]
-											["maps"] = { 490 },			-- Grizzly Hills
+											["maps"] = { 116 },			-- Grizzly Hills
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 14,		-- Howling Fjord, Camp Winterhoof [Criteria]
-											["maps"] = { 491 },			-- Howling Fjord
+											["maps"] = { 117 },			-- Howling Fjord
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 15,		-- Howling Fjord, Kamagua [Criteria]
-											["maps"] = { 491 },			-- Howling Fjord
+											["maps"] = { 117 },			-- Howling Fjord
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 16,		-- Howling Fjord, New Agamand [Criteria]
-											["maps"] = { 491 },			-- Howling Fjord
+											["maps"] = { 117 },			-- Howling Fjord
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 17,		-- Howling Fjord, Vengeance Landing [Criteria]
-											["maps"] = { 491 },			-- Howling Fjord
+											["maps"] = { 117 },			-- Howling Fjord
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 18,		-- Sholazar Basin, Nesingwary Base Camp [Criteria]
-											["maps"] = { 493 },			-- Sholazar Basin
+											["maps"] = { 119 },			-- Sholazar Basin
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 19,		-- Storm Peaks, Bouldercrag's Refuge [Criteria]
-											["maps"] = { 495 },			-- Storm Peaks
+											["maps"] = { 120 },			-- Storm Peaks
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 20,		-- Storm Peaks, Camp Tunka'lo [Criteria]
-											["maps"] = { 495 },			-- Storm Peaks
+											["maps"] = { 120 },			-- Storm Peaks
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 21,		-- Storm Peaks, Grom'arsh Crash Site [Criteria]
-											["maps"] = { 495 },			-- Storm Peaks
+											["maps"] = { 120 },			-- Storm Peaks
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 22,		-- Storm Peaks, K3 [Criteria]
-											["maps"] = { 495 },			-- Storm Peaks
+											["maps"] = { 120 },			-- Storm Peaks
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 23,		-- Zul'Drak, The Argent Stand [Criteria]
-											["maps"] = { 496 },			-- Zul'Drak
+											["maps"] = { 121 },			-- Zul'Drak
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 24,		-- Zul'Drak, Zim'Torga [Criteria]
-											["maps"] = { 496 },			-- Zul'Drak
+											["maps"] = { 121 },			-- Zul'Drak
 											["races"] = HORDE_ONLY,
 										},
 									}),
@@ -1325,67 +1325,67 @@ _.WorldEvents =
 									["groups"] = bubbleDown({["achievementID"] = 5838}, { -- Tricks and Treats of the Cataclysm [Achievement]
 										{
 											["criteriaID"] = 1,			-- Deepholm, Temple of Earth [Criteria]
-											["maps"] = { 640 },			-- Deepholm
+											["maps"] = { 207 },			-- Deepholm
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 2,			-- Mount Hyjal, Grove of Aessina [Criteria]
-											["maps"] = { 606 },			-- Mount Hyjal
+											["maps"] = { 198 },			-- Mount Hyjal
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 3,			-- Mount Hyjal, Nordrassil [Criteria]
-											["maps"] = { 606 },			-- Mount Hyjal
+											["maps"] = { 198 },			-- Mount Hyjal
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 4,			-- Mount Hyjal, Shrine of Aviana [Criteria]
-											["maps"] = { 606 },			-- Mount Hyjal
+											["maps"] = { 198 },			-- Mount Hyjal
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 5,			-- Twilight Highlands, Bloodgulch [Criteria]
-											["maps"] = { 700 },			-- Twilight Highlands
+											["maps"] = { 241 },			-- Twilight Highlands
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 6,			-- Twilight Highlands, Crushblow [Criteria]
-											["maps"] = { 700 },			-- Twilight Highlands
+											["maps"] = { 241 },			-- Twilight Highlands
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 7,			-- Twilight Highlands, The Krazzworks [Criteria]
-											["maps"] = { 700 },			-- Twilight Highlands
+											["maps"] = { 241 },			-- Twilight Highlands
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 8,			-- Uldum, Oasis of Vir'sar [Criteria]
-											["maps"] = { 720 },			-- Uldum
+											["maps"] = { 249 },			-- Uldum
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 9,			-- Uldum, Ramkahen [Criteria]
-											["maps"] = { 720 },			-- Uldum
+											["maps"] = { 249 },			-- Uldum
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 10,		-- Vashj'ir, Deepmist Grotto [Criteria]
-											["maps"] = { 613 },			-- Vashj'ir
+											["maps"] = { 203 },			-- Vashj'ir
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 11,		-- Vashj'ir, Legion's Rest [Criteria]
-											["maps"] = { 613 },			-- Vashj'ir
+											["maps"] = { 203 },			-- Vashj'ir
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 12,		-- Vashj'ir, Silver Tide Hollow [Criteria]
-											["maps"] = { 613 },			-- Vashj'ir
+											["maps"] = { 203 },			-- Vashj'ir
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 13,		-- Vashj'ir, Tenebrous Cavern [Criteria]
-											["maps"] = { 613 },			-- Vashj'ir
+											["maps"] = { 203 },			-- Vashj'ir
 											["races"] = HORDE_ONLY,
 										},		
 									}),
@@ -1395,122 +1395,122 @@ _.WorldEvents =
 									["groups"] = bubbleDown({["achievementID"] = 7602}, { -- Tricks and Treats of Pandaria [Achievement]
 										{
 											["criteriaID"] = 1,			-- Dread Wastes, Klaxxi'vess [Criteria]
-											["maps"] = { 858 },			-- Dread Wastes
+											["maps"] = { 422 },			-- Dread Wastes
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 2,			-- Dread Wastes, Soggy's Gamble [Criteria]
-											["maps"] = { 858 },			-- Dread Wastes
+											["maps"] = { 422 },			-- Dread Wastes
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 3,			-- Jade Forest, Dawn's Blossom [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 4,			-- Jade Forest, Greenstone Village [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 5,			-- Jade Forest, Grookin Hill [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 6,			-- Jade Forest, Honeydew Village [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 7,			-- Jade Forest, Jade Temple Grounds [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 8,			-- Jade Forest, Sri-La Village [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 9,			-- Jade Forest, Tian Monastery [Criteria]
-											["maps"] = { 806 },			-- Jade Forest
+											["maps"] = { 371 },			-- Jade Forest
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 10,		-- Krasarang Wilds, Dawnchaser Retreat [Criteria]
-											["maps"] = { 857 },			-- Krasarang Wilds
+											["maps"] = { 418 },			-- Krasarang Wilds
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 11,		-- Krasarang Wilds, Marista [Criteria]
-											["maps"] = { 857 },			-- Krasarang Wilds
+											["maps"] = { 418 },			-- Krasarang Wilds
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 12,		-- Krasarang Wilds, Thunder Cleft [Criteria]
-											["maps"] = { 857 },			-- Krasarang Wilds
+											["maps"] = { 418 },			-- Krasarang Wilds
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 13,		-- Krasarang Wilds, Zhu's Watch [Criteria]
-											["maps"] = { 857 },			-- Krasarang Wilds
+											["maps"] = { 418 },			-- Krasarang Wilds
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 14,		-- Kun-Lai Summit, Binan Village [Criteria]
-											["maps"] = { 809 },			-- Kun-Lai Summit
+											["maps"] = { 379 },			-- Kun-Lai Summit
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 15,		-- Kun-Lai Summit, Eastwind Rest [Criteria]
-											["maps"] = { 809 },			-- Kun-Lai Summit
+											["maps"] = { 379 },			-- Kun-Lai Summit
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 16,		-- Kun-Lai Summit, The Grummle Bazaar [Criteria]
-											["maps"] = { 809 },			-- Kun-Lai Summit
+											["maps"] = { 379 },			-- Kun-Lai Summit
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 17,		-- Kun-Lai Summit, One Keg [Criteria]
-											["maps"] = { 809 },			-- Kun-Lai Summit
+											["maps"] = { 379 },			-- Kun-Lai Summit
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 18,		-- Kun-Lai Summit, Zouchin Village [Criteria]
-											["maps"] = { 809 },			-- Kun-Lai Summit
+											["maps"] = { 379 },			-- Kun-Lai Summit
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 19,		-- The Veiled Stair, Tavern in the Mists [Criteria]
-											["maps"] = { 873 },			-- The Veiled Stair
+											["maps"] = { 433 },			-- The Veiled Stair
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 20,		-- Townlong Steppes, Longying Outpost [Criteria]
-											["maps"] = { 810 },			-- Townlong Steppes
+											["maps"] = { 388 },			-- Townlong Steppes
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 21,		-- Vale of Eternal Blossoms, Mistfall Village [Criteria]
-											["maps"] = { 811 },			-- Vale of Eternal Blossoms
+											["maps"] = { 390 },			-- Vale of Eternal Blossoms
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 22,		-- Vale of Eternal Blossoms, Shrine of Two Moons [Criteria]
-											["maps"] = { 811 },			-- Vale of Eternal Blossoms
+											["maps"] = { 390 },			-- Vale of Eternal Blossoms
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 23,		-- Valley of the Four Winds, Pang's Stead [Criteria]
-											["maps"] = { 807 },			-- Valley of the Four Winds
+											["maps"] = { 376 },			-- Valley of the Four Winds
 											["races"] = HORDE_ONLY,
 										},
 										{
 											["criteriaID"] = 24,		-- Valley of the Four Winds, Stoneplow [Criteria]
-											["maps"] = { 807 },			-- Valley of the Four Winds
+											["maps"] = { 376 },			-- Valley of the Four Winds
 											["races"] = HORDE_ONLY,
 										},	
 									}),
@@ -1561,7 +1561,7 @@ _.WorldEvents =
 								}),
 							},
 							["description"] = "|cff66ccffYou can only loot the Loot-Stuffed/Filled Pumpkins once per day per toon by completing your first run of the day.|r",
-							["maps"] = { 874 },	-- Scarlet Monastery
+							["maps"] = { 435 },	-- Scarlet Monastery
 						}),
 					},
 				}),
@@ -1591,53 +1591,53 @@ _.WorldEvents =
 								}),
 							},
 							["qg"] = 109734, -- Hag of the Crooked Tree
-							["maps"] = { 1018 }, -- Val'sharah
+							["maps"] = { 641 }, -- Val'sharah
 						}),
 						q(29430, { -- A Friend in Need (Alliance)
 							["groups"] = {},
 							["qg"] = 51934,	-- Gretchen Fenlow
-							["maps"] = { 30 }, -- Elwynn Forest
+							["maps"] = { 37 }, -- Elwynn Forest
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(29392, { -- Missing Heirlooms (Alliance)
 							["groups"] = {},
 							["qg"] = 53949,	-- Anson Hastings
-							["maps"] = { 301 }, -- Stormwind City
+							["maps"] = { 84 }, -- Stormwind City
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 29430 }, -- A Friend in Need (Alliance)
 						}),
 						q(29398, { -- Fencing the Goods (Alliance)
 							["groups"] = {},
 							["qg"] = 53950,	-- Hired Courier
-							["maps"] = { 301 }, -- Stormwind City
+							["maps"] = { 84 }, -- Stormwind City
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 29392 }, -- Missing Heirlooms (Alliance)
 						}),
 						q(29399, { -- Shopping Around (Alliance)
 							["groups"] = {},
 							["qg"] = 8719,	-- Auctioneer Fitch
-							["maps"] = { 301 }, -- Stormwind City
+							["maps"] = { 84 }, -- Stormwind City
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 29398 }, -- Fencing the Goods (Alliance)
 						}),
 						q(29402, { -- Taking Precautions (Alliance)
 							["groups"] = {},
 							["qg"] = 54021,	-- Hudson Barnes
-							["maps"] = { 301 }, -- Stormwind City
+							["maps"] = { 84 }, -- Stormwind City
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 29399 }, -- Shopping Around (Alliance)
 						}),
 						q(29403, { -- The Collector's Agent (Alliance)
 							["groups"] = {},
 							["qg"] = 54021,	-- Hudson Barnes
-							["maps"] = { 301 }, -- Stormwind City
+							["maps"] = { 84 }, -- Stormwind City
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 29402 }, -- Taking Precautions (Alliance)
 						}),
 						o(209072, { -- Stolen Crate
 							q(29411, { -- What Now? (Alliance)
 								["groups"] = {},
-								["maps"] = { 301 }, -- Stormwind City
+								["maps"] = { 84 }, -- Stormwind City
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 29403 }, -- The Collector's Agent (Alliance)
 							}),
@@ -1647,7 +1647,7 @@ _.WorldEvents =
 								["groups"] = {
 									un(26, i(71076)), -- Creepy Crate (Pet)
 								},
-								["maps"] = { 301 }, -- Stormwind City
+								["maps"] = { 84 }, -- Stormwind City
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 29411 }, -- What Now? (Alliance)
 							}),
@@ -1655,48 +1655,48 @@ _.WorldEvents =
 						q(29431, { -- A Friend in Need (Horde)
 							["groups"] = {},
 							["qg"] = 53763,	-- Gretchen Fenlow
-							["maps"] = { 382 }, -- Undercity
+							["maps"] = { 90 }, -- Undercity
 							["races"] = HORDE_ONLY,
 						}),
 						q(29415, { -- Missing Heirlooms (Horde)
 							["groups"] = {},
 							["qg"] = 54141,	-- Edgar Goodwin
-							["maps"] = { 321 }, -- Orgrimmar
+							["maps"] = { 85 }, -- Orgrimmar
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 29431 }, -- A Friend in Need (Horde)
 						}),
 						q(29416, { -- Fencing the Goods (Horde)
 							["groups"] = {},
 							["qg"] = 54142,	-- Hired Courier
-							["maps"] = { 321 }, -- Orgrimmar
+							["maps"] = { 85 }, -- Orgrimmar
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 29415 }, -- Missing Heirlooms (Horde)
 						}),
 						q(29425, { -- Shopping Around (Horde)
 							["groups"] = {},
 							["qg"] = 44866,	-- Auctioneer Drezmit
-							["maps"] = { 321 }, -- Orgrimmar
+							["maps"] = { 85 }, -- Orgrimmar
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 29416 }, -- Fencing the Goods (Horde)
 						}),
 						q(29426, { -- Taking Precautions (Horde)
 							["groups"] = {},
 							["qg"] = 54146,	-- Delian Sunshade
-							["maps"] = { 321 }, -- Orgrimmar
+							["maps"] = { 85 }, -- Orgrimmar
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 29425 }, -- Shopping Around (Horde)
 						}),
 						q(29427, { -- The Collector's Agent (Horde)
 							["groups"] = {},
 							["qg"] = 54146,	-- Delian Sunshade
-							["maps"] = { 321 }, -- Orgrimmar
+							["maps"] = { 85 }, -- Orgrimmar
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 29426 }, -- Taking Precautions (HORDE)
 						}),
 						o(209094, { -- Stolen Crate
 							q(29428, { -- What Now? (Horde)
 								["groups"] = {},
-								["maps"] = { 321 }, -- Orgrimmar
+								["maps"] = { 85 }, -- Orgrimmar
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 29427 }, -- The Collector's Agent (Horde)
 							}),
@@ -1706,7 +1706,7 @@ _.WorldEvents =
 								["groups"] = {
 									un(26, i(71076)), -- Creepy Crate (Pet)
 								},
-								["maps"] = { 321 }, -- Orgrimmar
+								["maps"] = { 85 }, -- Orgrimmar
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 29428 }, -- What Now? (Horde)
 							}),
@@ -1715,68 +1715,68 @@ _.WorldEvents =
 							["groups"] = {},
 							["qg"] = 6740,	-- Innkeeper Allison
 							["sourceQuests"] = { 8311 }, -- Hallow's End Treats for Jesper!
-							["maps"] = { 301 }, -- Stormwind City
+							["maps"] = { 84 }, -- Stormwind City
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(8355, { -- Incoming Gumdrop (Alliance)
 							["groups"] = {},
 							["qg"] = 5111,	-- Innkeeper Firebrew
 							["sourceQuests"] = { 8311 }, -- Hallow's End Treats for Jesper!
-							["maps"] = { 341 }, -- Ironforge
+							["maps"] = { 87 }, -- Ironforge
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(8353, { -- Chicken Clucking for a Mint (Alliance)
 							["groups"] = {},
 							["qg"] = 6740,	-- Innkeeper Allison
 							["sourceQuests"] = { 8311 }, -- Hallow's End Treats for Jesper!
-							["maps"] = { 301 }, -- Stormwind City
+							["maps"] = { 84 }, -- Stormwind City
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(8357, { -- Dancing for Marzipan (Alliance)
 							["groups"] = {},
 							["qg"] = 6735,	-- Innkeeper Saelienne
 							["sourceQuests"] = { 8311 }, -- Hallow's End Treats for Jesper!
-							["maps"] = { 381 }, -- Darnassus
+							["maps"] = { 89 }, -- Darnassus
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(8311, { -- Hallow's End Treats for Jesper!
 							["groups"] = {},
 							["qg"] = 15310,	-- Jesper
-							["maps"] = { 30 }, -- Elwynn Forest
+							["maps"] = { 37 }, -- Elwynn Forest
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(8359, { -- Flexing for Nougat (Horde)
 							["groups"] = {},
 							["qg"] = 6929,	-- Innkeeper Gryshka
 							["sourceQuests"] = { 8312 }, -- Hallow's End Treats for Spoops!
-							["maps"] = { 321 }, -- Orgrimmar
+							["maps"] = { 85 }, -- Orgrimmar
 							["races"] = HORDE_ONLY,
 						}),
 						q(8358, { -- Incoming Gumdrop (Horde)
 							["groups"] = {},
 							["qg"] = 11814,	-- Kali Remik
 							["sourceQuests"] = { 8312 }, -- Hallow's End Treats for Spoops!
-							["maps"] = { 321 }, -- Orgrimmar
+							["maps"] = { 85 }, -- Orgrimmar
 							["races"] = HORDE_ONLY,
 						}),
 						q(8354, { -- Chicken Clucking for a Mint (Horde)
 							["groups"] = {},
 							["qg"] = 6741,	-- Innkeeper Norman
 							["sourceQuests"] = { 8312 }, -- Hallow's End Treats for Spoops!
-							["maps"] = { 382 }, -- Undercity
+							["maps"] = { 90 }, -- Undercity
 							["races"] = HORDE_ONLY,
 						}),
 						q(8360, { -- Dancing for Marzipan (Horde)
 							["groups"] = {},
 							["qg"] = 6746,	-- Innkeeper Pala
 							["sourceQuests"] = { 8312 }, -- Hallow's End Treats for Spoops!
-							["maps"] = { 362 }, -- Thunder Bluff
+							["maps"] = { 88 }, -- Thunder Bluff
 							["races"] = HORDE_ONLY,
 						}),
 						q(8312, { -- Hallow's End Treats for Spoops!
 							["groups"] = {},
 							["qg"] = 15309,	-- Spoops
-							["maps"] = { 382 }, -- Undercity
+							["maps"] = { 90 }, -- Undercity
 							["races"] = HORDE_ONLY,
 						}),
 					},
@@ -1799,7 +1799,7 @@ _.WorldEvents =
 							un(26, i(128807)), -- Coin of Many Faces
 						}),
 					},
-					["maps"] = { 947 }, -- Shadowmoon Valley (Draenor)
+					["maps"] = { 539 }, -- Shadowmoon Valley (Draenor)
 				}),
 				n(-16, { -- Rares
 					["groups"] = {
@@ -1816,7 +1816,7 @@ _.WorldEvents =
 							["description"] = "|cFFFFD700Arachnis|r is only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought for |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in the Garrison. (This rare is available year round.)",							
 						}),
 					},
-					["maps"] = { 971, 973, 974, 975, 991, 976, 980, 981, 982, 976, 990 }, -- Lunarfall [971-991]; Frostwall [976-990]
+					["maps"] = { 579, 582, 723, 729, 208, 20, 590, 720, 721, 20, 745 }, -- Lunarfall [971-991]; Frostwall [976-990]
 				}),
 				n(-2, { -- Vendors
 					["groups"] = {
@@ -1830,7 +1830,7 @@ _.WorldEvents =
 								})),
 							},
 							["races"] = HORDE_ONLY,
-							["maps"] = { 20 }, -- Tirisfal Glades [Lucetia Note: These vendors are here despite being in Undercity. Subject to change in BfA with Undercity destruction]
+							["maps"] = { 18 }, -- Tirisfal Glades [Lucetia Note: These vendors are here despite being in Undercity. Subject to change in BfA with Undercity destruction]
 						}),
 						n(53728, { -- Dorothy <Candy & Toy Vendor>
 							["groups"] = {
@@ -1842,7 +1842,7 @@ _.WorldEvents =
 								})),
 							},
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 30 }, -- Elwynn Forest [Lucetia Note: These vendors are here.]
+							["maps"] = { 37 }, -- Elwynn Forest [Lucetia Note: These vendors are here.]
 						}),
 						n(109685, { -- Pippi <Pet Vendor>
 							["groups"] = {
@@ -1855,7 +1855,7 @@ _.WorldEvents =
 								})),
 							},
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 30 }, -- Elwynn Forest [Lucetia Note: These vendors are here.]
+							["maps"] = { 37 }, -- Elwynn Forest [Lucetia Note: These vendors are here.]
 						}),
 						n(109688, { -- Woim <Pet Vendor>
 							["groups"] = {
@@ -1868,7 +1868,7 @@ _.WorldEvents =
 								})),
 							},
 							["races"] = HORDE_ONLY,
-							["maps"] = { 20 }, -- Tirisfal Glades [These vendors are here despite being in Undercity. Subject to change in BfA with Undercity destruction]
+							["maps"] = { 18 }, -- Tirisfal Glades [These vendors are here despite being in Undercity. Subject to change in BfA with Undercity destruction]
 						}),
 					},
 				}),

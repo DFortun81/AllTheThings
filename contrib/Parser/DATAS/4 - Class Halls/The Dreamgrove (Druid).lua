@@ -255,7 +255,7 @@ _.ClassHalls =
 			}),
 		},
 		["lvl"] = 98,
-		["mapID"] = 1077,
-		["maps"] = {1048}	-- The Emerald Dreamway
+		["mapID"] = 747,
+		["maps"] = {715}	-- The Emerald Dreamway
 	}),
 };

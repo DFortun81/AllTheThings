@@ -232,7 +232,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				},
 				["questID"] = 33117,
 				["isRaid"] = true,
-				["maps"] = { 951 }, -- Timeless Isle
+				["maps"] = { 554 }, -- Timeless Isle
 			})),
 			cr(69099, e(814, { 	-- Nalak, The Storm Lord
 				["groups"] = {
@@ -512,7 +512,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["isRaid"] = true,
 				["questID"] = 32518,
 				["achievementID"] = 8028,
-				["maps"] = { 928 }, -- Isle of Thunder
+				["maps"] = { 504 }, -- Isle of Thunder
 			})),	
 			cr(71954, e(859, { 	-- Niuzao, The Black Ox
 				["groups"] = {	
@@ -741,7 +741,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				},
 				["questID"] = 33117,
 				["isRaid"] = true,
-				["maps"] = { 951 }, -- Timeless Isle
+				["maps"] = { 554 }, -- Timeless Isle
 			})),
 			cr(69161, e(826, { 	-- Oondasta
 				["groups"] = {	
@@ -826,7 +826,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["isRaid"] = true,
 				["questID"] = 32519,
 				["achievementID"] = 8123,
-				["maps"] = { 929 }, -- Isle of Giants
+				["maps"] = { 507 }, -- Isle of Giants
 			})),
 			cr(72057, e(861, { 	-- Ordos, Fire-God of the Yaungol
 				["groups"] = {	
@@ -887,7 +887,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["questID"] = 33118,
 				["isRaid"] = true,
 				["u"] = 38,	-- Ordos - Legendary Cloak
-				["maps"] = { 951 }, -- Timeless Isle
+				["maps"] = { 554 }, -- Timeless Isle
 			})),
 			e(725, { 	-- Saylis's Warband -- Galleon
 				["groups"] = {
@@ -998,7 +998,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["isRaid"] = true,
 				["questID"] = 32098,
 				["creatureID"] = 62346, -- Galleon
-				["maps"] = { 807 }, -- Valley of the Four Winds
+				["maps"] = { 376 }, -- Valley of the Four Winds
 			}),
 			cr(60491, e(691, { 	-- Sha of Anger
 				["groups"] = {
@@ -1190,7 +1190,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["achievementID"] = 6480,
 				["isRaid"] = true,
 				["questID"] = 32099,
-				["maps"] = { 809 }, -- Kun-Lai Summit
+				["maps"] = { 379 }, -- Kun-Lai Summit
 			})),
 			cr(71953, e(860, { 	-- Xuen, The White Tiger
 				["groups"] = {	
@@ -1419,7 +1419,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				},
 				["questID"] = 33117,
 				["isRaid"] = true,
-				["maps"] = { 951 }, -- Timeless Isle
+				["maps"] = { 554 }, -- Timeless Isle
 			})),
 			cr(71955, e(858, { 	-- Yu'lon, The Jade Serpent
 				["groups"] = {	
@@ -1648,7 +1648,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				},
 				["questID"] = 33117,
 				["isRaid"] = true,
-				["maps"] = { 951 }, -- Timeless Isle
+				["maps"] = { 554 }, -- Timeless Isle
 			})),
 		},
 		["isRaid"] = true,

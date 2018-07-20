@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(35, {		-- Loch Modan
+	m(13, { 	-- Eastern Kingdoms
+		m(48, {		-- Loch Modan
 			["groups"] = {			
 				n( -3, {	-- Holidays		
 					n(-47, {     -- Lunar Festival

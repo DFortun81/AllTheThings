@@ -14,7 +14,7 @@ _.WorldEvents =
 				n(-17, { -- Quests
 					q(42758, { -- You're Gonna Need A Bigger Boat!
 						["qg"] = 28048, -- Dread Captain DeMeza
-						["maps"] = { 673, }, -- The Cape of Stranglethorn
+						["maps"] = { 210, }, -- The Cape of Stranglethorn
 					}),
 				}),
 				n(-16, { -- Rares

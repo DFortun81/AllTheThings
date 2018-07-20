@@ -277,6 +277,6 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 		},
 		["lvl"] = 15,
-		["mapID"] = 688
+		["mapID"] = 221
 	}),
 })};

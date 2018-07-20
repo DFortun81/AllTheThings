@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(16, {		-- Arathi Highlands
+	m(13, { 	-- Eastern Kingdoms
+		m(14, {		-- Arathi Highlands
 			["groups"] = {
 				n( -3, {	-- Holidays					
 --[[					

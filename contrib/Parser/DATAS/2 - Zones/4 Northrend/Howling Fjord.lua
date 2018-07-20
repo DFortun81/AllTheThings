@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
-		m(491, { 	-- Howling Fjord
+	m(113, { 	-- Northrend
+		m(117, { 	-- Howling Fjord
 			["groups"] = {
 				faction(1073, {	-- The Kalu'ak
 					["achievementID"] = 949,	-- Tuskarrmageddon

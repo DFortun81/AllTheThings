@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1007, { 	-- The Broken Isles
-		m(1017, {	-- Stormheim
+	m(619, { 	-- The Broken Isles
+		m(634, {	-- Stormheim
 			["groups"] = {
 				ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
 					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
@@ -599,7 +599,7 @@ _.Zones =
 							qh( 39698),	-- Making the Rounds
 							h({
 								["questID"] = 39801,	-- The Splintered Fleet
-								["maps"] = {1027,4},	-- Map: The Cove of Nashal / Durotar
+								["maps"] = {671,1},	-- Map: The Cove of Nashal / Durotar
 								["lvl"] = 98,			-- Requires Level 98
 								["qg"] = 96686,			-- Quest Giver: Lady Sylvanas Windrunner <Banshee Queen>
 								["sourceQuest"] = 38307,	-- Source Quest: The Warchief Beckons
@@ -1611,7 +1611,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
 				}),				
-				m(1022, { -- Helheim
+				m(649, { -- Helheim
 					["groups"] = {
 						n(-17, { -- Quests
 							qg(97319, q(39837)),					-- An Unworthy Task / Ashildir <Queen of the Valkyra>

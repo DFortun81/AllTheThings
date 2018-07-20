@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(806, {	-- The Jade Forest
+	m(424, { 	-- Pandaria
+		m(371, {	-- The Jade Forest
 			["groups"] = {
 				n(-25, { 	-- Pet Battle
 					p(380), 	-- Bucktooth Flapper

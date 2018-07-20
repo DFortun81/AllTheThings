@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(962, { 	-- Draenor
-		m(945, { 	-- Tanaan Jungle
+	m(572, { 	-- Draenor
+		m(534, { 	-- Tanaan Jungle
 			["groups"] = {				
 				cr(94015, e(1452, { -- Supreme Lord Kazzak
 					["groups"] = {

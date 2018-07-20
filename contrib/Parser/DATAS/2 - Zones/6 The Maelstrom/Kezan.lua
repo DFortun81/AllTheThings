@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(751, { 	-- The Maelstrom
-		m(605, { 	-- Kezan
+	m(509, { 	-- The Maelstrom
+		m(194, { 	-- Kezan
 			["groups"] = {
 				nh(-17, { 	-- Quests
 					q(14138, { -- Taking Care of Business

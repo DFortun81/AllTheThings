@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(466, {	-- Outland
-		m(475, {	-- Blade's Edge Mountains
+	m(101, {	-- Outland
+		m(105, {	-- Blade's Edge Mountains
 			["groups"] = {
 				n(-25, {	-- Pet Battle
 					p(1164),	-- Cogblade Raptor

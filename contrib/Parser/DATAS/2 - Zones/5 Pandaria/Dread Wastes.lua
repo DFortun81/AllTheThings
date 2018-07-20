@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(858, {	-- Dread Wastes
+	m(424, { 	-- Pandaria
+		m(422, {	-- Dread Wastes
 			["groups"] = {
 				n(-25, { 	-- Pet Battles
 					p(732), 	-- Amber Moth

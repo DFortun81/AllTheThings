@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
-		m(488, { 	-- Dragonblight
+	m(113, { 	-- Northrend
+		m(115, { 	-- Dragonblight
 			["groups"] = {
 				faction(1073, {	-- The Kalu'ak
 					["achievementID"] = 949,	-- Tuskarrmageddon

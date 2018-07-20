@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1007, { 	-- The Broken Isles
+	m(619, { 	-- The Broken Isles
 		["groups"] = {
 			n(-34, { -- World Quests
 				["groups"] = {

@@ -687,7 +687,7 @@ _.Instances =
 				["isRaid"] = true,
 				["sharedLockout"] = 1,
 				["lvl"] = 85,
-				["mapID"] = 800
+				["mapID"] = 367
 			}),
 		},					
 		["tierID"] = 4

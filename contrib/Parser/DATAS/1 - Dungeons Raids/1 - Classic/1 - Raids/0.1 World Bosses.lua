@@ -24,7 +24,7 @@ _.Instances = { tier(1, {	-- Classic
 				["u"] = 12,
 				["isRaid"] = true,
 				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
-				["maps"] = { 181 }, -- Azshara
+				["maps"] = { 76 }, -- Azshara
 			}),
 			n(18338, { -- Highlord Kruul
 				["groups"] = {
@@ -43,7 +43,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["u"] = 12,
 				["isRaid"] = true,
-				["maps"] = { 19 }, -- Blasted Lands
+				["maps"] = { 17 }, -- Blasted Lands
 			}),
 			n(12397, { -- Lord Kazzak
 				["groups"] = {
@@ -66,7 +66,7 @@ _.Instances = { tier(1, {	-- Classic
 				["u"] = 12,
 				["isRaid"] = true,
 				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
-				["maps"] = { 19 }, -- Blasted Lands
+				["maps"] = { 17 }, -- Blasted Lands
 			}),
 			n(14889, { -- Emeriss
 				["groups"] = {
@@ -91,7 +91,7 @@ _.Instances = { tier(1, {	-- Classic
 				["u"] = 12,
 				["isRaid"] = true,
 				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
-				["maps"] = { 43, 121, 34, 26 }, -- Ashenvale / Feralas / Duskwood / The Hinterlands
+				["maps"] = { 63, 69, 47, 26 }, -- Ashenvale / Feralas / Duskwood / The Hinterlands
 			}),
 			n(14888, { -- Lethon
 				["groups"] = {
@@ -119,7 +119,7 @@ _.Instances = { tier(1, {	-- Classic
 				["u"] = 12,
 				["isRaid"] = true,
 				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
-				["maps"] = { 43, 121, 34, 26 }, -- Ashenvale / Feralas / Duskwood / The Hinterlands
+				["maps"] = { 63, 69, 47, 26 }, -- Ashenvale / Feralas / Duskwood / The Hinterlands
 			}),
 			n(14890, { -- Taerar
 				["groups"] = {
@@ -145,7 +145,7 @@ _.Instances = { tier(1, {	-- Classic
 				["u"] = 12,
 				["isRaid"] = true,
 				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
-				["maps"] = { 43, 121, 34, 26 }, -- Ashenvale / Feralas / Duskwood / The Hinterlands
+				["maps"] = { 63, 69, 47, 26 }, -- Ashenvale / Feralas / Duskwood / The Hinterlands
 			}),
 			n(14887, { -- Ysondre
 				["groups"] = {
@@ -172,7 +172,7 @@ _.Instances = { tier(1, {	-- Classic
 				["u"] = 12,
 				["isRaid"] = true,
 				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
-				["maps"] = { 43, 121, 34, 26 }, -- Ashenvale / Feralas / Duskwood / The Hinterlands
+				["maps"] = { 63, 69, 47, 26 }, -- Ashenvale / Feralas / Duskwood / The Hinterlands
 			}),
 		},
 		["isRaid"] = true,

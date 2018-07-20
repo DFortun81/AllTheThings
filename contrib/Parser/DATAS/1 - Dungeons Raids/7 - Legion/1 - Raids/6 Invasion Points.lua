@@ -10,7 +10,7 @@ _.Instances =
 				["groups"] = {
 					{
 					["groups"] = {
-						m(1190, { -- Invasion Point: Aurinor
+						m(921, { -- Invasion Point: Aurinor
 							["groups"] = {
 								i(153265), --Enclave Aspirant's Battleaxe
 								i(153261), --Forlorn Artificer's Hammer
@@ -33,7 +33,7 @@ _.Instances =
 								125849, -- Invasion Point: Aurinor
 							},
 						}),
-						m(1191, { -- Invasion Point: Bonich
+						m(922, { -- Invasion Point: Bonich
 							["groups"] = {
 								i(153320), --Ardent Vindicator's Demolisher
 								i(153295), --Spectral Consul's Quickblade
@@ -56,7 +56,7 @@ _.Instances =
 								126547, -- Invasion Point: Bonich
 							},
 						}),
-						m(1192, { -- Invasion Point: Cen'gar
+						m(923, { -- Invasion Point: Cen'gar
 							["groups"] = {
 								i(153262), --Forlorn Artificer's Gavel
 								i(153300), --Militant Exarch's Saber
@@ -79,7 +79,7 @@ _.Instances =
 								126120, -- Invasion Point: Cen'gar
 							},
 						}),
-						m(1193, { -- Invasion Point: Naigtal
+						m(924, { -- Invasion Point: Naigtal
 							["groups"] = {
 								i(153264), --Enclave Aspirant's Splitter
 								i(153301), --Militant Exarch's Slicer
@@ -102,7 +102,7 @@ _.Instances =
 								126593, -- Invasion Point: Naigtal
 							},
 						}),
-						m(1194, { -- Invasion Point: Sangua
+						m(925, { -- Invasion Point: Sangua
 							["groups"] = {
 								i(153307), --Oronaar Miner's Pickaxe
 								i(153297), --Spectral Consul's Broadsword
@@ -125,7 +125,7 @@ _.Instances =
 								125863, -- Invasion Point: Sanguaa
 							},
 						}),
-						m(1195, { -- Invasion Point: Val
+						m(926, { -- Invasion Point: Val
 							["groups"] = {
 								i(153258), --Forlorn Artificer's Mace
 								i(153254), --Isolon Anchorite's Mace
@@ -169,7 +169,7 @@ _.Instances =
 								i(152380), -- Waistguard of Fel Magics
 							},
 							["questID"] = 49169,
-							["mapID"] = 1198,
+							["mapID"] = 929,
 							["modelScale"] = 0.65,
 							["creatureID"] = 124514,
 							["crs"] = {
@@ -191,7 +191,7 @@ _.Instances =
 								i(152378), -- Breastplate of Terminal End
 								i(152374), -- Soul Crushing Stompers
 							},
-							["mapID"] = 1197,
+							["mapID"] = 928,
 							["questID"] = 49167,
 							["modelScale"] = 0.95,
 							["creatureID"] = 124625,
@@ -215,7 +215,7 @@ _.Instances =
 								i(152380), -- Waistguard of Fel Magics
 							},
 							["questID"]  = 49166,
-							["mapID"] = 1199,
+							["mapID"] = 930,
 							["modelScale"] = 0.85,
 							["creatureID"] = 124592,
 							["crs"] = {
@@ -237,7 +237,7 @@ _.Instances =
 								i(152374), -- Soul Crushing Stompers
 							},
 							["questID"] = 49170,
-							["mapID"] = 1201,
+							["mapID"] = 932,
 							["modelScale"] = 0.50,
 							["creatureID"] = 124492,
 							["crs"] = {
@@ -260,7 +260,7 @@ _.Instances =
 								i(152377), -- Gore-Soaked Legplates
 							},
 							["questID"] = 49171,
-							["mapID"] = 1200,
+							["mapID"] = 931,
 							["modelScale"] = 0.75,
 							["creatureID"] = 124555,
 							["crs"] = {
@@ -283,7 +283,7 @@ _.Instances =
 								i(152374), -- Soul Crushing Stompers
 							},
 							["questID"] = 49168,
-							["mapID"] = 1196,
+							["mapID"] = 927,
 							["modelScale"] = 1.15,
 							["creatureID"] = 124719,
 							["crs"] = {

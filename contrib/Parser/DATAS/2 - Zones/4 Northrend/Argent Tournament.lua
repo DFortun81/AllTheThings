@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
+	m(113, { 	-- Northrend
 		n(-363, {	-- The Argent Tournament
 			["groups"] = {
 				n(-2, { -- Vendors
@@ -1377,7 +1377,7 @@ _.Zones =
 				}),
 			},
 			["lvl"] = 67,
-			["maps"] = { 492 },
+			["maps"] = { 118 },
 		}),
 	}),
 };

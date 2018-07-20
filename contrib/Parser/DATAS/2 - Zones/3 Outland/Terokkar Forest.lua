@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(466, { 	-- Outland
-		m(478, { 	-- Terokkar Forest
+	m(101, { 	-- Outland
+		m(108, { 	-- Terokkar Forest
 			["groups"] = {						
 				n(-3, { 	-- Holidays					
 --[[					

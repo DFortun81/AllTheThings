@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor
-		m(464, {	-- Azuremyst Isle
+	m(12, { 	-- Kalimdor
+		m(97, {	-- Azuremyst Isle
 			["groups"] = {				
 				n(-3, { 	-- Holidays
 --[[					
@@ -291,7 +291,7 @@ _.Zones =
 					},
 					["u"] = 12,
 				}),
-				m(894, { -- Ammen Vale
+				m(468, { -- Ammen Vale
 					["groups"] = {
 						n(-25, { -- Pet Battle
 							p(464), -- Grey Moth

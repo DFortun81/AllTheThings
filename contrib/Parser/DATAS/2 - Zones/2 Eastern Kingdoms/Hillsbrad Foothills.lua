@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(24, {		-- Hillsbrad Foothills
+	m(13, { 	-- Eastern Kingdoms
+		m(25, {		-- Hillsbrad Foothills
 			["groups"] = {				
 				n( -3, {	-- Holidays
 					n(-61, {     -- Feast of Winter Veil

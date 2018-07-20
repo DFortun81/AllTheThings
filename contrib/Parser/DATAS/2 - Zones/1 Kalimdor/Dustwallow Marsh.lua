@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, {	-- Kalimdor
-		m(141, {	-- Dustwallow Marsh
+	m(12, {	-- Kalimdor
+		m(70, {	-- Dustwallow Marsh
 			["groups"] = {
 				n( -3, {	-- Holidays
 --[[					

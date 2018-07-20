@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(962, { 	-- Draenor
-		m(950, {	-- Nagrand (Draenor)
+	m(572, { 	-- Draenor
+		m(550, {	-- Nagrand (Draenor)
 			["groups"] = {			
 --[[				
 				n(-3, { 	-- Holidays					

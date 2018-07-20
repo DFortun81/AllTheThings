@@ -462,7 +462,7 @@ profession(356, { 	-- Fishing
 				i(139407), -- Diver's Chain Boots
 				i(139405), -- Kul'Tiras Marine Issue Boots
 			},
-			["maps"] = { 1015, 1021, 1096, 1024, 1017, 1033, 1018 }, -- Azsuna / Broken Shore / Eye of Azshara / Highmountain / Stormheim / Suramar / Val'sharah
+			["maps"] = { 630, 646, 790, 650, 634, 680, 641 }, -- Azsuna / Broken Shore / Eye of Azshara / Highmountain / Stormheim / Suramar / Val'sharah
 		}),
 		ach(10596, {	-- Bigger Fish to Fry
 			{

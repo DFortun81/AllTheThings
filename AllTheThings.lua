@@ -1971,7 +1971,7 @@ local function RefreshLocationCoroutine()
 		coroutine.yield();
 		mapID = app.GetCurrentMapID();
 	end
-	--print("Current Map ID #", mapID);
+	print("Current Map ID #", mapID);
 	
 	-- Cache that we're in the current map ID.
 	if GetTempDataMember("MapID") ~= mapID then
@@ -8458,11 +8458,11 @@ app.events.VARIABLES_LOADED = function()
 			if otherMapID then uiMapID = otherMapID; end
 			
 			-- print("Current UI Map ID: ", uiMapID);
-			return app.BFAToLegionMapID(uiMapID);
+			return uiMapID;--app.BFAToLegionMapID(uiMapID);
 		end
 		app.GetMapName = function(mapID)
 			if mapID and mapID > 0 then
-				local info = C_Map.GetMapInfo(app.LegionToBFAMapID(mapID));
+				local info = C_Map.GetMapInfo(mapID);--app.LegionToBFAMapID(mapID));
 				return (info and info.name) or ("Map ID #" .. mapID);
 			else
 				return "Map ID #???";

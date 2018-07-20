@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(28, {		-- Searing Gorge
+	m(13, { 	-- Eastern Kingdoms
+		m(32, {		-- Searing Gorge
 			["groups"] = {			
 				n( -3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival

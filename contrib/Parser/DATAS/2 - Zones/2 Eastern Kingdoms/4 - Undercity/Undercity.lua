@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(382, { 	-- Undercity
+	m(13, { 	-- Eastern Kingdoms
+		m(90, { 	-- Undercity
 			["groups"] = {				
 				n( -3, { 	-- Holidays					
 					n(-47, {     -- Lunar Festival

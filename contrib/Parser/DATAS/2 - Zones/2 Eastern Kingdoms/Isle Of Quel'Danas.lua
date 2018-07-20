@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(499, { 	-- Isle of Quel'Danas
+	m(13, { 	-- Eastern Kingdoms
+		m(122, { 	-- Isle of Quel'Danas
 			["groups"] = {
 --[[			
 				n(-17, { 	-- Quests

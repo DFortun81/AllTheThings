@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor
-		m(9, { 		-- Mulgore
+	m(12, { 	-- Kalimdor
+		m(7, { 		-- Mulgore
 			["groups"] = {
 				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
@@ -345,7 +345,7 @@ _.Zones =
 						}),
 					},
 				}),
-				m(890, {	-- Camp Narache
+				m(462, {	-- Camp Narache
 					["groups"] = {
 						n(-25, { -- Pet Battle
 							p(385), -- Mouse

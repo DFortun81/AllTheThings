@@ -4,8 +4,8 @@
 _.PVP =
 {
 	n(-304, {	-- Battlegrounds
-		map(461 , {	-- Arathi Basin
-			["maps"] = {16},	-- Arathi Highlands
+		m(93 , {	-- Arathi Basin
+			["maps"] = {14},	-- Arathi Highlands
 			["achievementID"] = 154,	-- Arathi Basin Victory
 			["description"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1,600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
 			["groups"] = {

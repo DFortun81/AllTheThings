@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1007, { 	-- The Broken Isles
+	m(619, { 	-- The Broken Isles
 		n(-171, { -- Quest Chains
 			["groups"] = {
 				n(-4, { -- Achievements
@@ -301,19 +301,19 @@ _.Zones =
 					["description"] = "Light's Heart is the sentience core of the naaru prime Xe'ra sent as a last resort by High Exarch Turalyon who battles on Argus, to be handed to Prophet Velen. It fell from the Felstorm along the coast of Suramar, in the Broken Isles.\n\nThe Order of the Silver Hand witnessed the event and informed Archmage Khadgar, who then tasked order leaders with recovering it before the Burning Legion did. It has since been kept safe in a class order hall.\n\nUnlocked by the Tear of Elune, Xe'ra communicates through it with the order leader in order to provide insight into the history of Illidan Stormrage. She revealed that Light's Heart was to serve as the vessel for Illidan Stormrage's rebirth. After Illidan's soul was put into a prism to keep it safe, it was brought to Light's Heart where the prism was \"seemingly consumed\". Light's Heart, with Illidan's soul inside, is then brought to Khadgar with instructions to call forth the vessel's power when Gul'dan attempts to summon Sargeras, thus releasing Illidan's soul into his body before Sargeras can possess his empty shell.",
 					["maps"] = {
 						-- Order Halls
-						1021,	-- Death Knight
-						1052,	-- Demon Hunter
-						1077,	-- Druid
-						1048,	-- Druid (Dreamway)
-						1072,	-- Hunter
-						1068,	-- Mage
-						1044,	-- Monk
+						646,	-- Death Knight
+						719,	-- Demon Hunter
+						747,	-- Druid
+						715,	-- Druid (Dreamway)
+						739,	-- Hunter
+						734,	-- Mage
+						709,	-- Monk
 						23,		-- Paladin (Eastern Plaguelands - Should probably fix this in BFA)
-						1040,	-- Priest
-						1014,	-- Rogue (Dalaran - Should probably fix this in BFA)
-						1057,	-- Shaman
-						1050,	-- Warlock
-						1035,	-- Warrior
+						702,	-- Priest
+						625,	-- Rogue (Dalaran - Should probably fix this in BFA)
+						726,	-- Shaman
+						717,	-- Warlock
+						695,	-- Warrior
 					},
 					["groups"] = {
 						{
@@ -325,7 +325,7 @@ _.Zones =
 							["qg"] = 112130,	-- Quest Giver: Archmage Khadgar
 							["sourceQuest"] = 44009,	-- Source Quest: A Falling Star
 							["description"] = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
-							["maps"] = { 1091 },	-- Scenario: In Defense of the Exodar
+							["maps"] = { 775 },	-- Scenario: In Defense of the Exodar
 							["groups"] = {
 								{
 									["npcID"] = 110486,	-- Huk'roth the Huntmaster
@@ -406,7 +406,7 @@ _.Zones =
 							["sourceQuest"] = 44466,	-- Source Quest: An Unclear Path
 							["qg"] = 113857,	-- Quest Giver: Light's Heart
 							["description"] = "This quest sends you to a scenario involving Kur'talos Ravencrest, Illidan Stormrage, and the ill-fated Moonguard. Before you kill the final boss, make sure to do everything contained within!",
-							["maps"] = { 1099 },	-- Scenario: Black Rook Hold
+							["maps"] = { 793 },	-- Scenario: Black Rook Hold
 							["lvl"] = 110,
 							["groups"] = {
 								{

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
-		m(501, { -- Wintergrasp
+	m(113, { 	-- Northrend
+		m(123, { -- Wintergrasp
 			["groups"] = {
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival

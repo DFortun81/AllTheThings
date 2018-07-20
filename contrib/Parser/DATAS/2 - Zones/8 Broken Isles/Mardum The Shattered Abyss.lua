@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1007, { 	-- The Broken Isles
-		m(1028, {	-- Mardum, the Shattered Abyss
+	m(619, { 	-- The Broken Isles
+		m(672, {	-- Mardum, the Shattered Abyss
 			["groups"] = {
 				n(-17, { 	-- Quests
 					q(40077, { -- The Invasion Begins
@@ -267,7 +267,7 @@ _.Zones =
 						["questID"] = 40233, -- Brutarg's Sword Tip
 					}),			
 				}),	
-				m(1032, { -- Vault of the Wardens: Vault of Silence
+				m(677, { -- Vault of the Wardens: Vault of Silence
 					["groups"] = {
 						n(-17, { -- Quests
 							q(38672, {	-- Breaking Out

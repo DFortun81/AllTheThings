@@ -1,7 +1,7 @@
 -- Alchemy - Skill ID 171 / Spell ID 2259
 profession(171, { -- Alchemy
 	gb(120, {	-- Alchemy Lab (Level 3)
-		["maps"] = {971, 973, 974, 975, 976, 980, 981, 982},	-- Both Garrisons
+		["maps"] = {579, 582, 723, 729, 20, 590, 720, 721},	-- Both Garrisons
 		["groups"] = {
 			nh(79813, {	-- Albert de Hyde <Alchemist>
 				i(109558, {		-- A Treatise on the Alchemy of Draenor

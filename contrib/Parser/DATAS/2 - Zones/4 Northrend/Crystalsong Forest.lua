@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
-		m(510, {	-- Crystalsong Forest
+	m(113, { 	-- Northrend
+		m(127, {	-- Crystalsong Forest
 			["groups"] = {				
 				n(-3, { 	-- Holidays					
 --[[					

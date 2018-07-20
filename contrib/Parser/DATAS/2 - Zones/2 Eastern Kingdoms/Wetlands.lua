@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(40, {		-- Wetlands
+	m(13, { 	-- Eastern Kingdoms
+		m(56, {		-- Wetlands
 			["groups"] = {								
 				n( -3, {	-- Holidays					
 --[[					

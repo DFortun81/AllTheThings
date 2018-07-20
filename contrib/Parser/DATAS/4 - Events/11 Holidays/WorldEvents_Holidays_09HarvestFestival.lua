@@ -14,7 +14,7 @@ _.WorldEvents =
 					}),
 					q(8150, { -- Honoring a Hero (Horde)
 						["qg"] = 15012, -- Javnir Nashak
-						["maps"] = { 4, }, -- Durotar
+						["maps"] = { 1, }, -- Durotar
 						["races"] = HORDE_ONLY,
 					}),
 				}),

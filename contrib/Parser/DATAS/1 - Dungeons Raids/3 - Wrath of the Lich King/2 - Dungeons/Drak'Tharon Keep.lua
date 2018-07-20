@@ -153,7 +153,7 @@ _.Instances =
 					}),
 				},
 				["lvl"] = 61,
-				["mapID"] = 534
+				["mapID"] = 160
 			}),
 		},					
 		["tierID"] = 3

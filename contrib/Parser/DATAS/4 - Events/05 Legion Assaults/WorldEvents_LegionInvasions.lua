@@ -153,6 +153,6 @@ _.WorldEvents =
 			}),
 		},
 		["achievementID"] = 11544, -- Defender of the Broken Isles
-		["maps"] = { 1018, 1024, 1017, 1015 },
+		["maps"] = { 641, 650, 634, 630 },
 	}),
 };

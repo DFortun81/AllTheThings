@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor		
-		m(241, { 	-- Moonglade
+	m(12, { 	-- Kalimdor		
+		m(80, { 	-- Moonglade
 			["groups"] = {
 				n(-47, {     -- Lunar Festival
 					["groups"] = {

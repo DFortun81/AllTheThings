@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(811, {	-- Vale of Eternal Blossoms
+	m(424, { 	-- Pandaria
+		m(390, {	-- Vale of Eternal Blossoms
 			["groups"] = {			
 --[[				
 				n(-3, { 	-- Holidays					

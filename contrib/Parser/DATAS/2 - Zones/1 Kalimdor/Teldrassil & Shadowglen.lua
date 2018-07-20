@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor
-		m(41, {		-- Teldrassil
+	m(12, { 	-- Kalimdor
+		m(57, {		-- Teldrassil
 			["groups"] = {			
 				n( -3, {	-- Holidays					
 					n(-47, {     -- Lunar Festival
@@ -340,7 +340,7 @@ _.Zones =
 					},
 					["u"] = 12,
 				}),
-				m(888, {	-- Shadowglen
+				m(460, {	-- Shadowglen
 					["groups"] = {
 						n(-25, { -- Pet Battle
 							p(507), -- Crested Owl

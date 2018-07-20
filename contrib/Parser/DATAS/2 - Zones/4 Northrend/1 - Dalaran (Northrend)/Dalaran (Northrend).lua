@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
-		m(504, { -- Dalaran: Northrend
+	m(113, { 	-- Northrend
+		m(125, { -- Dalaran: Northrend
 			["groups"] = {
 				faction(1090, {	-- Kirin Tor
 					["achievementID"] = 1008,	-- The Kirin Tor

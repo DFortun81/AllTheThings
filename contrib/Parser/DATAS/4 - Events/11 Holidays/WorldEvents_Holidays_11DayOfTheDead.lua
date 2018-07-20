@@ -18,8 +18,8 @@ _.WorldEvents =
 						},
 						["qg"] = 35256, -- Cheerful Dalaran Spirit
 						["maps"] = { 
-							504, -- Dalaran (Northrend)
-							1014, -- Dalaran (Broken Isles)
+							125, -- Dalaran (Northrend)
+							625, -- Dalaran (Broken Isles)
 						},
 						["description"] = "This quest is mutually exclusive with all race-bound versions of this quest. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
 					}),
@@ -28,7 +28,7 @@ _.WorldEvents =
 							un(27, i(46831)),	-- Macabre Marionette (Pet)
 						},
 						["qg"] = 35260, -- Cheerful Aldor Spirit
-						["maps"] = { 481, }, -- Shattrath City
+						["maps"] = { 111, }, -- Shattrath City
 						["description"] = "This quest is mutually exclusive with all race-bound versions of this quest. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
 					}),
 					q(14173, {	-- The Grateful Dead
@@ -36,7 +36,7 @@ _.WorldEvents =
 							un(27, i(46831)),	-- Macabre Marionette (Pet)
 						},
 						["qg"] = 35261, -- Cheerful Scryer Spirit
-						["maps"] = { 481, }, -- Shattrath City
+						["maps"] = { 111, }, -- Shattrath City
 						["description"] = "This quest is mutually exclusive with all race-bound versions of this quest. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
 					}),
 					q(13952, {	-- The Grateful Dead
@@ -44,7 +44,7 @@ _.WorldEvents =
 							un(27, i(46831)),	-- Macabre Marionette (Pet)
 						},
 						["qg"] = 34435, -- Cheerful Human Spirit
-						["maps"] = { 301, }, -- Stormwind City
+						["maps"] = { 84, }, -- Stormwind City
 						["races"] = { 1, }, -- Human
 						["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
 					}),
@@ -62,7 +62,7 @@ _.WorldEvents =
 							un(27, i(46831)),	-- Macabre Marionette (Pet)
 						},
 						["qg"] = 34479, -- Cheerful Night Elf Spirit
-						["maps"] = { 381, }, -- Darnassus
+						["maps"] = { 89, }, -- Darnassus
 						["races"] = { 4, }, -- Night Elf
 						["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
 					}),
@@ -80,7 +80,7 @@ _.WorldEvents =
 							un(27, i(46831)),	-- Macabre Marionette (Pet)
 						},
 						["qg"] = 34484, -- Cheerful Draenei Spirit
-						["maps"] = { 464, }, -- Azuremyst Isle
+						["maps"] = { 97, }, -- Azuremyst Isle
 						["races"] = { 11, }, -- Draenei
 						["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
 					}),
@@ -89,7 +89,7 @@ _.WorldEvents =
 							un(27, i(46831)),	-- Macabre Marionette (Pet)
 						},
 						["qg"] = 46908, -- Cheerful Worgen Spirit
-						["maps"] = { 381, }, -- Darnassus
+						["maps"] = { 89, }, -- Darnassus
 						["races"] = { 22, }, -- Worgen
 						["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
 					}),
@@ -98,7 +98,7 @@ _.WorldEvents =
 							un(27, i(46831)),	-- Macabre Marionette (Pet)
 						},
 						["qg"] = 34477, -- Cheerful Orc Spirit
-						["maps"] = { 4, }, -- Durotar
+						["maps"] = { 1, }, -- Durotar
 						["races"] = { 2, }, -- Orc
 						["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
 					}),
@@ -108,8 +108,8 @@ _.WorldEvents =
 						},
 						["qg"] = 34476, -- Cheerful Forsaken Spirit
 						["maps"] = {
-							20, -- Tirisfal Glades
-							382, -- Undercity
+							18, -- Tirisfal Glades
+							90, -- Undercity
 						},
 						["races"] = { 5, }, -- Undead
 						["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
@@ -119,7 +119,7 @@ _.WorldEvents =
 							un(27, i(46831)),	-- Macabre Marionette (Pet)
 						},
 						["qg"] = 34480, -- Cheerful Tauren Spirit
-						["maps"] = { 362, }, -- Thunder Bluff
+						["maps"] = { 88, }, -- Thunder Bluff
 						["races"] = { 6, }, -- Tauren
 						["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
 					}),
@@ -128,7 +128,7 @@ _.WorldEvents =
 							un(27, i(46831)),	-- Macabre Marionette (Pet)
 						},
 						["qg"] = 34482, -- Cheerful Troll Spirit
-						["maps"] = { 4, }, -- Durotar
+						["maps"] = { 1, }, -- Durotar
 						["races"] = { 8, }, -- Troll
 						["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
 					}),
@@ -137,7 +137,7 @@ _.WorldEvents =
 							un(27, i(46831)),	-- Macabre Marionette (Pet)
 						},
 						["qg"] = 46901, -- Cheerful Goblin Spirit
-						["maps"] = { 4, }, -- Durotar
+						["maps"] = { 1, }, -- Durotar
 						["races"] = { 9, }, -- Goblin
 						["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
 					}),
@@ -146,7 +146,7 @@ _.WorldEvents =
 							un(27, i(46831)),	-- Macabre Marionette (Pet)
 						},
 						["qg"] = 34483, -- Cheerful Blood Elf Spirit
-						["maps"] = { 462, }, -- Eversong Woods
+						["maps"] = { 94, }, -- Eversong Woods
 						["races"] = { 10, }, -- Blood Elf
 						["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
 					}),

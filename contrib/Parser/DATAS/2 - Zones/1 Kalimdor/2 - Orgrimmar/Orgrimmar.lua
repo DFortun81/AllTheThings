@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor		
-		m(321, { 	-- Orgrimmar
+	m(12, { 	-- Kalimdor		
+		m(85, { 	-- Orgrimmar
 			["groups"] = {
 				n(   -3, {	-- Holidays					
 					n(-47, { 		-- Lunar Festival

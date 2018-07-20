@@ -35,13 +35,13 @@ _.WorldEvents =
 									q(7045, { -- A Smokywood Pastures' Thank You! (Alliance)
 										["groups"] = {},
 										["qg"] = 13433, -- Wulmort Jinglepocket
-										["maps"] = { 341, }, -- Ironforge
+										["maps"] = { 87, }, -- Ironforge
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(6984, { -- A Smokywood Pastures' Thank You! (Horde)
 										["groups"] = {},
 										["qg"] = 13418, -- Kaymard Copperpinch
-										["maps"] = { 321, }, -- Orgrimmar
+										["maps"] = { 85, }, -- Orgrimmar
 										["races"] = HORDE_ONLY,
 									}),
 								},
@@ -978,7 +978,7 @@ _.WorldEvents =
 					q(7022, { -- Greatfather Winter is Here!
 						["groups"] = {},
 						["qg"] = 13433, -- Wulmort Jinglepocket
-						["maps"] = { 341, }, -- Ironforge
+						["maps"] = { 87, }, -- Ironforge
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil
 					}),
@@ -990,9 +990,9 @@ _.WorldEvents =
 							96304, -- Tradurjo Jinglepocket
 						},
 						["maps"] = {
-							301, -- Stormwind City
-							471, -- The Exodar
-							971, -- Lunarfall
+							84, -- Stormwind City
+							103, -- The Exodar
+							579, -- Lunarfall
 						},
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil
@@ -1000,7 +1000,7 @@ _.WorldEvents =
 					q(7025, { -- Treats for Greatfather Winter
 						["groups"] = {},
 						["qg"] = 13444, -- Greatfather Winter
-						["maps"] = { 341, }, -- Ironforge
+						["maps"] = { 87, }, -- Ironforge
 						["sourceQuests"] = { 7022, 7023, }, -- Greatfather Winter is Here!
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil
@@ -1056,8 +1056,8 @@ _.WorldEvents =
 							13636, -- Strange Snowman
 						},
 						["maps"] = {
-							24, -- Hillsbrad Foothills
-							341, -- Ironforge
+							25, -- Hillsbrad Foothills
+							87, -- Ironforge
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
@@ -1098,7 +1098,7 @@ _.WorldEvents =
 							}),
 						},
 						["qg"] = 13433, -- Wulmort Jinglepocket
-						["maps"] = { 341, }, -- Ironforge
+						["maps"] = { 87, }, -- Ironforge
 						["sourceQuests"] = { 7043, }, -- You're a Mean One... (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil
@@ -1106,14 +1106,14 @@ _.WorldEvents =
 					q(7062, { -- The Reason for the Season (Alliance)
 						["groups"] = {},
 						["qg"] = 1365, -- Goli Krumn
-						["maps"] = { 341, }, -- Ironforge
+						["maps"] = { 87, }, -- Ironforge
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7063, { -- The Feast of Winter Veil (Alliance)
 						["groups"] = {},
 						["qg"] = 2916, -- Historian Karnik
-						["maps"] = { 341, }, -- Ironforge
+						["maps"] = { 87, }, -- Ironforge
 						["sourceQuests"] = { 7062, }, -- The Reason for the Season (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil
@@ -1122,28 +1122,28 @@ _.WorldEvents =
 					q(6961, { -- Great-father Winter is Here!
 						["groups"] = {},
 						["qg"] = 13418, -- Kaymard Copperpinch
-						["maps"] = { 321, }, -- Orgrimmar
+						["maps"] = { 85, }, -- Orgrimmar
 						["races"] = HORDE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7021, { -- Great-father Winter is Here!
 						["groups"] = {},
 						["qg"] = 13431, -- Whulwert Copperpinch
-						["maps"] = { 362, }, -- Thunder Bluff
+						["maps"] = { 88, }, -- Thunder Bluff
 						["races"] = HORDE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7024, { -- Great-father Winter is Here!
 						["groups"] = {},
 						["qg"] = 13429, -- Nardstrum Copperpinch
-						["maps"] = { 382, }, -- Undercity
+						["maps"] = { 90, }, -- Undercity
 						["races"] = HORDE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(6962, { -- Treats for Great-father Winter
 						["groups"] = {},
 						["qg"] = 13445, -- Great-father Winter
-						["maps"] = { 321, }, -- Orgrimmar
+						["maps"] = { 85, }, -- Orgrimmar
 						["sourceQuests"] = { 6961, 7021, 7024, }, -- Great-father Winter is Here!
 						["races"] = HORDE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil
@@ -1201,8 +1201,8 @@ _.WorldEvents =
 							13636, -- Strange Snowman
 						},
 						["maps"] = {
-							24, -- Hillsbrad Foothills
-							321, -- Orgrimmar
+							25, -- Hillsbrad Foothills
+							85, -- Orgrimmar
 						},
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -1242,7 +1242,7 @@ _.WorldEvents =
 							}),
 						},
 						["qg"] = 13418, -- Kaymard Copperpinch
-						["maps"] = { 321, }, -- Orgrimmar
+						["maps"] = { 85, }, -- Orgrimmar
 						["sourceQuests"] = { 6983, }, -- You're a Mean One... (Horde)
 						["races"] = HORDE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil
@@ -1250,14 +1250,14 @@ _.WorldEvents =
 					q(6964, { -- The Reason for the Season (Horde)
 						["groups"] = {},
 						["qg"] = 9550, -- Furmund
-						["maps"] = { 321, }, -- Orgrimmar
+						["maps"] = { 85, }, -- Orgrimmar
 						["races"] = HORDE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7061, { -- The Feast of Winter Veil (Horde)
 						["groups"] = {},
 						["qg"] = 13417, -- Sagorne Creststrider
-						["maps"] = { 321, }, -- Orgrimmar
+						["maps"] = { 85, }, -- Orgrimmar
 						["sourceQuests"] = { 6964, }, -- The Reason for the Season (Horde)
 						["races"] = HORDE_ONLY,
 						["u"] = 29, -- Feast of Winter Veil

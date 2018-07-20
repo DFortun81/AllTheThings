@@ -443,6 +443,6 @@ _.Instances = { tier(1, {	-- Classic
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 60,
-		["mapID"] = 535,
+		["mapID"] = 162,
 	}),
 })};

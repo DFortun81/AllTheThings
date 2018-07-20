@@ -78,7 +78,7 @@ _.Instances =
 						}
 					})
 				},
-				["mapID"] = 874
+				["mapID"] = 435
 			}),
 		},					
 		["tierID"] = 5

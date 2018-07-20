@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(809, { 	-- Kun-Lai Summit
+	m(424, { 	-- Pandaria
+		m(379, { 	-- Kun-Lai Summit
 			["groups"] = {
 				n(-25, { 	-- Pet Battle
 					p(724), 	-- Alpine Foxling
@@ -890,7 +890,7 @@ _.Zones =
 				--	n(70323, { 		-- Krakkanon	}),
 				}),
 				n(-18, { 	-- Scenario's
-					n(-19, { 	-- Arena of Annihilation m(899
+					n(-19, { 	-- Arena of Annihilation m(480
 						["groups"] = {
 							q(31207, {
 								i(90466),
@@ -903,7 +903,7 @@ _.Zones =
 								i(90459),
 							}),
 						},
-						["mapID"] = 899,
+						["mapID"] = 480,
 					}),
 				}),
 				n(-2, {		-- Vendors

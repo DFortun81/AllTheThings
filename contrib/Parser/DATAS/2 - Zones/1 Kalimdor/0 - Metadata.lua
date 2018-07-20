@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 _.Zones = {
-	m(13, { -- Kalimdor
+	m(12, { -- Kalimdor
 		["groups"] = {},
 		["achievementID"] = 43,
 		["icon"] = "Interface\\Icons\\achievement_zone_kalimdor_01",

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(857, {	-- Krasarang Wilds
+	m(424, { 	-- Pandaria
+		m(418, {	-- Krasarang Wilds
 			["groups"] = {
 				n(-25, { 	-- Pet Battle
 					p(716), 	-- Amethyst Spiderling

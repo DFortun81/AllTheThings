@@ -344,7 +344,7 @@ _.Instances =
 				},
 				["isRaid"] = true,
 				["lvl"] = 100,
-				["mapID"] = 994
+				["mapID"] = 610
 			}),
 		},					
 		["tierID"] = 6

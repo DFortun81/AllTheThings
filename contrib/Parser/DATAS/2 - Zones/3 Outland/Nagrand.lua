@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(466, { 	-- Outland
-		m(477, { 	-- Nagrand (Outland)
+	m(101, { 	-- Outland
+		m(107, { 	-- Nagrand (Outland)
 			["groups"] = {			
 --[[				
 				n(-3, { 	-- Holidays					

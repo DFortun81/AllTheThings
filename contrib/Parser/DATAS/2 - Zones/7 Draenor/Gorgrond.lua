@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(962, { 	-- Draenor
-		m(949, {	-- Gorgrond
+	m(572, { 	-- Draenor
+		m(543, {	-- Gorgrond
 			["groups"] = {
 				n(-25, { 	-- Pet Battles
 					p(1465), 	-- Amberbarb Wasp

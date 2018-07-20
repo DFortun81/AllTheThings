@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	m(925, {	-- Brawlgar Arena
+	m(503, {	-- Brawlgar Arena
 		["groups"] = {
 			n(-2, {	-- Vendors
 				h(n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>

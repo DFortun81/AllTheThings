@@ -3,12 +3,12 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(37, {		-- Northern Stranglethorn
+	m(13, { 	-- Eastern Kingdoms
+		m(50, {		-- Northern Stranglethorn
 			["groups"] = {
 				un(2, faction(270, {	-- Zandalar Tribe
 					["creatureID"] = 14875,	-- Molthor <Hand of Rastakhan>
-					["maps"] = {793},	-- Zul'Gurub
+					["maps"] = {337},	-- Zul'Gurub
 					["groups"] = {
 						n(-17, {	-- Quests
 							{

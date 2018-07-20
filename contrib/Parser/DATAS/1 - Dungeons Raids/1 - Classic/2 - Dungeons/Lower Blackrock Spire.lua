@@ -284,7 +284,7 @@ _.Instances =
 					}),
 				},
 				["lvl"] = 50,
-				["mapID"] = 721
+				["mapID"] = 250
 			}),
 		},					
 		["tierID"] = 1

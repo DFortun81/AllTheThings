@@ -18,7 +18,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 				["description"] = "|cff66ccffLocated at the Throne of Kil'jaeden, Hellfire Penninsula|r",
 				["isRaid"] = true,
-				["maps"] = { 465 }, -- Hellfire Peninsula
+				["maps"] = { 100 }, -- Hellfire Peninsula
 			}),
 			n(17711, { 	-- Doomwalker
 				["groups"] = {
@@ -34,7 +34,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 				["description"] = "|cff66ccffLocated outside of Black Temple, Shadowmoon Valley|r",
 				["isRaid"] = true,
-				["maps"] = { 473 }, -- Shadowmoon Valley (Outland)
+				["maps"] = { 104 }, -- Shadowmoon Valley (Outland)
 			}),	
 		},
 		["isRaid"] = true,

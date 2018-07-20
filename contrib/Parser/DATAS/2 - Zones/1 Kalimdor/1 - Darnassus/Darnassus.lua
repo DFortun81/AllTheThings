@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Kalimdor
-		m(381, { 	-- Darnassus
+	m(12, { 	-- Kalimdor
+		m(89, { 	-- Darnassus
 			["groups"] = {
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival

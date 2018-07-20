@@ -25,7 +25,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					dr(	1.3	, i(	67135	)), --	Morrie's Waywalker Wrap
 					dr(	0.9	, i(	67145	)), --	Blockade's Lost Shield
 				},
-				["maps"] = { 720 }, -- Uldum
+				["maps"] = { 249 }, -- Uldum
 			}), 
 			n(50056, { -- Garr
 				["groups"] = {
@@ -47,7 +47,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					dr(	1.6, i(67135)), --	Morrie's Waywalker Wrap
 					dr(	1.3, i(67132)), --	Grips of the Failed Immortal
 				},
-				["maps"] = { 606 }, -- Mount Hyjal
+				["maps"] = { 198 }, -- Mount Hyjal
 			}), 
 			n(50089, { -- Julak-Doom
 				["groups"] = {
@@ -69,7 +69,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					dr(1.9, i(67146)),	-- Woundsplicer Handwraps
 					dr(4, i(67142)),	-- Zom's Electrostatic Cloak
 				},
-				["maps"] = { 700 }, -- Twilight Highlands
+				["maps"] = { 241 }, -- Twilight Highlands
 			}), 
 			n(50009, { -- Mobus
 				["groups"] = {
@@ -80,7 +80,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					dr(05.0, i(67146)),	-- Woundsplicer Handwraps
 					dr(04.0, i(67148)),	-- Kilt of Trollish Dreams
 				},
-				["maps"] = { 613 }, -- Vashj'ir
+				["maps"] = { 203 }, -- Vashj'ir
 			}), 
 			n(50061, { -- Xariona
 				["groups"] = {
@@ -102,7 +102,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					dr(1.00, i(67145)),	-- Blockade's Lost Shield
 					dr(0.80, i(67143)),	-- Icebone Hauberk
 				},
-				["maps"] = { 640 }, -- Deepholm
+				["maps"] = { 207 }, -- Deepholm
 			}),
 		},
 		["isRaid"] = true,

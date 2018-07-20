@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1007, { 	-- The Broken Isles
-		m(1015, {	-- Azsuna
+	m(619, { 	-- The Broken Isles
+		m(630, {	-- Azsuna
 			["groups"] = {
 				ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
 					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",

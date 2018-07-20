@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(1184, { 	-- Argus
-		m(1170, { -- Mac'Aree
+	m(905, { 	-- Argus
+		m(882, { -- Mac'Aree
 			["groups"] = {
 				n(-4, { 	-- Achievement
 					ach(12074, { -- Shoot First, Loot Later

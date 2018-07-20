@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(485, { 	-- Northrend
-		m(495, { 	-- The Storm Peaks
+	m(113, { 	-- Northrend
+		m(120, { 	-- The Storm Peaks
 			["groups"] = {
 				faction(1119, {	-- The Sons of Hodir
 					["creatureID"] = 30105,	-- King Jokkum

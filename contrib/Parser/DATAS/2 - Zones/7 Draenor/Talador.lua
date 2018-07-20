@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(962, { 	-- Draenor
-		m(946, {	-- Talador
+	m(572, { 	-- Draenor
+		m(535, {	-- Talador
 			["groups"] = {				
 --[[				
 				n(-3, { 	-- Holidays					

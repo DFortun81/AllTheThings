@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(962, { 	-- Draenor
+	m(572, { 	-- Draenor
 		["groups"] = {},
 		["achievementID"] = 8935,
 		["icon"] = "Interface\\Icons\\Achievement_Zone_Draenor_01",

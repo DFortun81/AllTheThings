@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(480, { 	-- Silvermoon City
+	m(13, { 	-- Eastern Kingdoms
+		m(110, { 	-- Silvermoon City
 			["groups"] = {				
 				n(-3, { 	-- Holidays					
 --[[					

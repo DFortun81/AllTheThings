@@ -121,7 +121,7 @@ _.Instances =
 					}),
 				},
 				["lvl"] = 60,
-				["mapID"] = 533
+				["mapID"] = 157
 			}),
 		},					
 		["tierID"] = 3

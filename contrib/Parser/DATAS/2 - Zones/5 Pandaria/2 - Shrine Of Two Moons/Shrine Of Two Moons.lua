@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(862, { 	-- Pandaria
-		m(903, { 	-- Shrine of Two Moons
+	m(424, { 	-- Pandaria
+		m(580, { 	-- Shrine of Two Moons
 			["groups"] = {
 				n(-3, { 	-- Holidays
 					n(-63, { -- Trial of Style
@@ -1456,7 +1456,7 @@ _.Zones =
 					}),
 				}),
 			},
-			["maps"] = { 811 },
+			["maps"] = { 390 },
 			["lvl"] = 78,
 			["isRaid"] = true,
 			["races"] = HORDE_ONLY,

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(14, { 	-- Eastern Kingdoms
-		m(301, {	-- Stormwind City
+	m(13, { 	-- Eastern Kingdoms
+		m(84, {	-- Stormwind City
 			["groups"] = {
 				n(  -3, {	-- Holidays
 					n(-50, { 		-- Love is in the Air
