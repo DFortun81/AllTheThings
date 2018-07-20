@@ -77,6 +77,25 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local spellRecipeInfo = {};
+(function()
+	-- Map all Skill IDs to the old Skill IDs
+	local tradeSkillMap = {
+		-- Enchanting Skills (Map all Skill IDs to the old Skill IDs)
+		[333] = 333,	-- Enchanting [7.3.5]
+		[2494] = 333,	-- Classic Enchanting [8.0.1]
+		[2493] = 333,	-- Outland Enchanting [8.0.1]
+		[2492] = 333,	-- Northrend Enchanting [8.0.1]
+		[2491] = 333,	-- Cataclysm Enchanting [8.0.1]
+		[2489] = 333,	-- Pandaria Enchanting [8.0.1]
+		[2488] = 333,	-- Draenor Enchanting [8.0.1]
+		[2487] = 333,	-- Legion Enchanting [8.0.1]
+		[2486] = 333,	-- Kul Tiran Enchanting [8.0.1]
+	};
+	app.GetTradeSkillLine = function()
+		local skillID = C_TradeSkillUI.GetTradeSkillLine();
+		return tradeSkillMap[skillID] or skillID;
+	end
+end)();
 
 -- Coroutine Helper Functions
 app.refreshing = {};
@@ -1860,7 +1879,8 @@ end
 local function OpenMiniListForCurrentProfession(manual, refresh)
 	if app.Categories.Professions then
 		local popout = app:GetWindow("Tradeskills");
-		local tradeSkillLine = C_TradeSkillUI.GetTradeSkillLine();
+		local tradeSkillLine = AllTheThings.GetTradeSkillLine();
+		print("Trade Skill Line", tradeSkillLine);
 		if tradeSkillLine and GetDataMember("AutoProfessionMiniList") and fieldCache["requireSkill"][tradeSkillLine]
 			and not (C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild()) then
 			if manual or not refresh then
@@ -1901,7 +1921,7 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 				end
 				
 				-- Open the Tradeskill list for this Profession
-				local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine();
+				local tradeSkillID = AllTheThings.GetTradeSkillLine();
 				if popout.tradeSkillID ~= tradeSkillID then
 					popout.tradeSkillID = tradeSkillID;
 					for i,group in ipairs(app.Categories.Professions) do
@@ -6514,7 +6534,7 @@ function app:GetDataCache()
 			db.collectible = false;
 			table.insert(g, db);
 		end
-		--[[ DISABLED DUE TO API CHANGES IN BfA; WILL RE-ENABLE ONCE FIXED
+		
 		-- Professions
 		if app.Categories.Professions then
 			db = app.CreateAchievement(10583, {});
@@ -6525,7 +6545,7 @@ function app:GetDataCache()
 			db.collectible = false;
 			table.insert(g, db);
 		end
-		--]]
+		
 		-- Gear Sets
 		if app.Categories.GearSets then
 			db = app.CreateAchievement(11761, app.Categories.GearSets);
@@ -8861,12 +8881,15 @@ app.events.TOYS_UPDATED = function(itemID, new)
 	end
 end
 app.events.TRADE_SKILL_LIST_UPDATE = function(...)
+	print("TRADE_SKILL_LIST_UPDATE");
 	OpenMiniListForCurrentProfession(false, true);
 end
 app.events.TRADE_SKILL_SHOW = function(...)
+	print("TRADE_SKILL_SHOW");
 	OpenMiniListForCurrentProfession(false, false);
 end
 app.events.TRADE_SKILL_CLOSE = function(...)
+	print("TRADE_SKILL_CLOSE");
 	app:GetWindow("Tradeskills"):SetVisible(false);
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
