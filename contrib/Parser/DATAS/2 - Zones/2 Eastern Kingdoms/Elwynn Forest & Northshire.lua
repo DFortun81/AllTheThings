@@ -353,7 +353,7 @@ _.Zones =
 						dr(01.2, i(68750)),	-- Imbued Pioneer Belt
 						dr(01.0, i(68747)),	-- Imbued Disciple's Sash
 						dr(01.0, i(68753)),	-- Imbued Infantry Bracers
-						un(7, i(5744)),	-- Pale Skinner		
+						i(5744),	-- Pale Skinner		
 					}), 
 					n(100, {	-- Gruff Swiftbite
 						dr(17.0, i(68744)),	-- Imbued Pioneer Cloak

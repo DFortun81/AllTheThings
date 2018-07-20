@@ -693,7 +693,7 @@ _.WorldDrops =
 					i(3740),	-- Decapitating Sword
 					i(4765),	-- Enamelled Broadsword
 					i(4766),	-- Feral Blade
-					un(7, i(5744)),	-- Pale Skinner
+					i(5744),	-- Pale Skinner
 					i(6622),	-- Sword of Zeal
 					i(727),		-- Notched Shortsword
 					un(7, i(753)),		-- Dragonmaw Shortsword
