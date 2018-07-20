@@ -2075,9 +2075,6 @@ _.Zones =
 						["classes"] = { 7 },
 						["sourceQuests"] = { 44406 }, -- Aggra's Guidance
 					}),
-					q(43478, {	-- Experimental Potion: Test Subjects Needed
-						["qg"] = 110642, -- Fizzi Liverzapper
-					}),
 					--q(44271)	-- Eye of Azshara -- mission board
 					--q(44270)	-- Eye of Azshara -- mission board
 					q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
@@ -2940,10 +2937,6 @@ _.Zones =
 						["classes"] = { 8 },
 					}),
 					--q(39731),	-- The Tranquil Forest -- granted by scouting map
-					q(44174, {	-- The Very Best
-						["qg"] = 111246, -- Archmage Timear
-						["isWeekly"] = true,
-					}),
 					qh(38307, {	-- The Warchief Beckons
 						["qg"] = 96683, -- Nathanos Blightcaller
 						["sourceQuests"] = {
@@ -3121,6 +3114,8 @@ _.Zones =
 				}),
 --[[
 					The following quests have been removed from the game:
+					q(49472)	-- A Titanic Effort
+					q(49473)	-- A Titanic Effort
 					q(41006),	-- Assassinate That Guy
 					q(41408),	-- Battle: Pandaren Cuisine - Elling Trias
 					q(41405),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
@@ -3138,12 +3133,11 @@ _.Zones =
 					q(46148),	-- Furthering Knowledge
 					q(41263),	-- Oh! So Powerful!
 					q(46273),	-- The Giver of Quests
-					q(44115),	-- Welcome to Legion!
-					q(49472)	-- A Titanic Effort
-					q(49473)	-- A Titanic Effort
 					q(47793),	-- The Spoiled Sample
+					q(44174)	-- The Very Best
 					q(47790),	-- Unsettled Power
 					q(47791),	-- Unsettled Power
+					q(44115),	-- Welcome to Legion!
 ]]--
 				n(-16, { 	-- Rares 
 					o(244965, { -- Sheddle's Chest
