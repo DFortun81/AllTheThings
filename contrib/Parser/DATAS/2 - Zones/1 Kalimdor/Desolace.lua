@@ -214,6 +214,14 @@ _.Zones =
 					}),
 					q(14394, { 	-- Death to Agogridon (awarded "Uniting the Tribes" criteria and overall "Desolace Quests" achievement)
 						["groups"] = {
+							{
+								["factionID"] = 92,	-- Gelkis Kolkar
+								["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
+							},
+							{
+								["factionID"] = 93,	-- Magram Kolkar
+								["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
+							},
 							i(55915),	-- Cutlass of Agogridon
 							i(55916),	-- Soulstar Mace
 							i(55917),	-- Kolkar Cleaver
@@ -221,6 +229,7 @@ _.Zones =
 						},
 						["qg"] = 36398,	-- Khan Leh'Prah
 						["sourceQuests"] = { 14393 },	-- Into the Fray!
+						["description"] = "This quest was fixed in Patch 8.0.1 to grant Exalted reputation with both the Gelkis and Magram Kolkar factions upon completion. From our understanding, this change may not have been intentional, but never-the-less, we are very very excited when Blizzard does things like this. Please show your support for future adjustments to the old world - perhaps some day we'll get Shendralar back as well!\n\n - Crieve"
 					}),
 					q(14268, {	-- Deep Impact
 						["groups"] = {
