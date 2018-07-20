@@ -2075,9 +2075,6 @@ _.Zones =
 						["classes"] = { 7 },
 						["sourceQuests"] = { 44406 }, -- Aggra's Guidance
 					}),
-					q(43478, {	-- Experimental Potion: Test Subjects Needed
-						["qg"] = 110642, -- Fizzi Liverzapper
-					}),
 					--q(44271)	-- Eye of Azshara -- mission board
 					--q(44270)	-- Eye of Azshara -- mission board
 					q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
@@ -2588,10 +2585,6 @@ _.Zones =
 						["qg"] = 112679, -- Valeera Sanguinar
 						["classes"] = { 4 },
 					}),
-					q(40994, {	-- Right Tools for the Job
-						["qg"] = 101513, -- Lord Jorach Ravenholdt
-						["classes"] = { 4 },
-					}),
 					q(42663, {	-- Rise, Champions
 						["qg"] = 102700, -- Meryl Felstorm
 						["classes"] = { 8 },
@@ -2940,10 +2933,6 @@ _.Zones =
 						["classes"] = { 8 },
 					}),
 					--q(39731),	-- The Tranquil Forest -- granted by scouting map
-					q(44174, {	-- The Very Best
-						["qg"] = 111246, -- Archmage Timear
-						["isWeekly"] = true,
-					}),
 					qh(38307, {	-- The Warchief Beckons
 						["qg"] = 96683, -- Nathanos Blightcaller
 						["sourceQuests"] = {
@@ -3022,11 +3011,6 @@ _.Zones =
 					}),
 					q(45727, {	-- Uniting the Isles
 						["qg"] = 90417, -- Archmage Khadgar
-					}),
-					q(41125, {	-- Unlocked Potential
-						["qg"] = 102700, -- Meryl Felstorm
-						["classes"] = { 8 },
-						["sourceQuests"] = { 41114 },
 					}),
 					--q(43556),	-- Vault of the Wardens -- granted by mission board
 					--q(44260),	-- Vault of the Wardens -- granted by mission board
@@ -3121,6 +3105,8 @@ _.Zones =
 				}),
 --[[
 					The following quests have been removed from the game:
+					q(49472)	-- A Titanic Effort
+					q(49473)	-- A Titanic Effort
 					q(41006),	-- Assassinate That Guy
 					q(41408),	-- Battle: Pandaren Cuisine - Elling Trias
 					q(41405),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
@@ -3137,13 +3123,14 @@ _.Zones =
 					q(42212),	-- Fire Mage - Flavor Event 03
 					q(46148),	-- Furthering Knowledge
 					q(41263),	-- Oh! So Powerful!
+					q(40994)	-- Right Tools for the Job
 					q(46273),	-- The Giver of Quests
-					q(44115),	-- Welcome to Legion!
-					q(49472)	-- A Titanic Effort
-					q(49473)	-- A Titanic Effort
 					q(47793),	-- The Spoiled Sample
+					q(44174)	-- The Very Best
+					q(41125)	-- Unlocked Potential
 					q(47790),	-- Unsettled Power
 					q(47791),	-- Unsettled Power
+					q(44115),	-- Welcome to Legion!
 ]]--
 				n(-16, { 	-- Rares 
 					o(244965, { -- Sheddle's Chest

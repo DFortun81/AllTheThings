@@ -120,6 +120,7 @@ _.GroupFinder =
 			i(51985),	-- Stalwart Belt [User confirmed; haven't seen]
 			i(51990),	-- Stalwart Treads*
 			i(51993),	-- Turbulent Cloak*
+			i(160600),	-- Turbulent Cloak (screenshot from Emsarrev on Discord)
 			i(51995),	-- Turbulent Necklace*
 			i(51991),	-- Turbulent Signet*
 		},

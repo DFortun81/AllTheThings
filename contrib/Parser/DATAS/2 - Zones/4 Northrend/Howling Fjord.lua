@@ -979,7 +979,7 @@ _.Zones =
 								["qg"] = 23976,	-- Sapper Steelring
 								["sourceQuests"] = {11188},
 							}),
-							q(11240, {	--  Leader of the Deranged [A]
+							qa(11240, {	--  Leader of the Deranged [A]
 								["groups"] = {
 									i(35917),	-- Wrathwrought Shoulderpads
 									i(35919),	-- Whispersteel Handguards
