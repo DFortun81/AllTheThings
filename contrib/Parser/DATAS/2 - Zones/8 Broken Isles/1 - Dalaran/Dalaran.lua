@@ -1168,6 +1168,24 @@ _.Zones =
 								},
 								["qg"] = 93523, -- Namha Moonwater
 							}),
+							q(40183, {	-- Over Your Head
+								["groups"] = {
+									recipe(194699),	-- Warhide Mask
+									recipe(194739),	-- Battlebound Warhelm
+								},
+								["qg"] = 93523, -- Namha Moonwater
+								["sourceQuests"] = { 39958 }, -- Skin Deep
+							}),
+							q(40201, {	-- Playthings
+								["groups"] = { 
+									recipe(194776),	-- Leather Pet Bed
+								},
+								["qg"] = 93523, -- Namha Moonwater
+								["sourceQuests"] = { 
+									40200,	-- Battle Bonds (alliance)
+									40241,	-- Battle Bonds (horde)
+								},
+							}),
 							q(40198, {	-- Rats!
 								["groups"] = {
 									recipe(194705),	-- Warhide Shoulderguard (Rank 2)
@@ -2460,14 +2478,6 @@ _.Zones =
 						["qgs"] = { 90418, 115465 }, -- Archmage Modera (2 versions)
 						["classes"] = { 4 },
 					}),
-					q(40183, {	-- Over Your Head
-						["groups"] = {
-							recipe(194699),	-- Warhide Mask
-							recipe(194739),	-- Battlebound Warhelm
-						},
-						["qg"] = 93523, -- Namha Moonwater
-						["sourceQuests"] = { 39958 }, -- Skin Deep
-					}),
 					q(39718, {	-- Paradise Lost
 						["isBreadcrumb"] = true,
 					}),
@@ -2475,16 +2485,6 @@ _.Zones =
 						["qg"] = 110793, -- Taoshi
 						["classes"] = { 4 },
 						["sourceQuests"] = { 43508 }, -- The Captive Spymaster
-					}),
-					q(40201, {	-- Playthings
-						["groups"] = { 
-							recipe(194776),	-- Leather Pet Bed
-						},
-						["qg"] = 93523, -- Namha Moonwater
-						["sourceQuests"] = { 
-							40200,	-- Battle Bonds (alliance)
-							40241,	-- Battle Bonds (horde)
-						},
 					}),
 					q(40821, {	-- Power Overwhelming
 						["qg"] = 101097, -- Calydus
@@ -3115,22 +3115,13 @@ _.Zones =
 					q(41405),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
 					q(41406),	-- Battle: Pandaren Cuisine - Torg Slowflame
 					q(41400),	-- Battle: Pandaren Cuisine!
-					q(43473),	-- Experimental Potion: Test Subjects Needed
-					q(43474),	-- Experimental Potion: Test Subjects Needed
-					q(43475),	-- Experimental Potion: Test Subjects Needed
-					q(43476)	-- Experimental Potion: Test Subjects Needed
-					q(43477),	-- Experimental Potion: Test Subjects Needed
-					q(43478),	-- Experimental Potion: Test Subjects Needed
 					q(42189),	-- Fire Mage - Flavor Event 01
 					q(42192),	-- Fire Mage - Flavor Event 02
 					q(42212),	-- Fire Mage - Flavor Event 03
 					q(46148),	-- Furthering Knowledge
 					q(41263),	-- Oh! So Powerful!
-					q(40994)	-- Right Tools for the Job
 					q(46273),	-- The Giver of Quests
 					q(47793),	-- The Spoiled Sample
-					q(44174)	-- The Very Best
-					q(41125)	-- Unlocked Potential
 					q(47790),	-- Unsettled Power
 					q(47791),	-- Unsettled Power
 					q(44115),	-- Welcome to Legion!
@@ -8209,6 +8200,48 @@ _.Zones =
 						}),
 					}),
 				}),	
+				n(-40, {    -- Legacy
+					["groups"] = {
+						n(-17, {    -- Quests (Legacy)
+							q(43473, {	-- Experimental Potion: Test Subjects Needed
+								["qg"] = 110642, -- Fizzi Liverzapper
+							}),
+							q(43474, {	-- Experimental Potion: Test Subjects Needed
+								["qg"] = 110642, -- Fizzi Liverzapper
+							}),
+							q(43475, {	-- Experimental Potion: Test Subjects Needed
+								["qg"] = 110642, -- Fizzi Liverzapper
+							}),
+							q(43477, {	-- Experimental Potion: Test Subjects Needed
+								["qg"] = 110642, -- Fizzi Liverzapper
+							}),
+							q(43476, {	-- Experimental Potion: Test Subjects Needed
+								["qg"] = 110642, -- Fizzi Liverzapper
+							}),
+							q(43478, {	-- Experimental Potion: Test Subjects Needed
+								["qg"] = 110642, -- Fizzi Liverzapper
+							}),
+							q(40994, {	-- Right Tools for the Job
+								["qg"] = 101513, -- Lord Jorach Ravenholdt
+								["classes"] = { 4 },
+							}),
+							q(44174, {	-- The Very Best
+								["qg"] = 111246, -- Archmage Timear
+								["isWeekly"] = true,
+							}),
+							q(41125, {	-- Unlocked Potential
+								["qg"] = 102700, -- Meryl Felstorm
+								["classes"] = { 8 },
+								["sourceQuests"] = { 41114 },
+							}),
+						}),
+						n(-16, {    -- Rares (Legacy)
+						}),
+						n(  0, {    -- Zone Drop (Legacy)
+						}),
+					},
+					["u"] = 12,
+				}),
 			},
 			["lvl"] = 1,
 			["isRaid"] = true,
