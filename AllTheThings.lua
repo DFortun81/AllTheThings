@@ -3,47 +3,14 @@
 --------------------------------------------------------------------------------
 --               Copyright 2017 Dylan Fortune (Crieve-Sargeras)               --
 --------------------------------------------------------------------------------
-AllTheThings = CreateFrame("FRAME", "AllTheThings", UIParent);
-local function HandleEvents(self, e, ...) (self.events[e] or tostringall)(...); end
 local app = AllTheThings;	-- Create a local (non global) reference
-app.refreshDataForce = true;
-app.events = {};
 local backdrop = {
 	bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
 	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
 	tile = true, tileSize = 16, edgeSize = 16, 
 	insets = { left = 4, right = 4, top = 4, bottom = 4 }
 };
-app.DisplayName = "AllTheThings";
-app:SetScript("OnEvent", HandleEvents);
-app:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
-app:SetSize(1, 1);
-app:Show();
-function app:ShowPopupDialog(msg, callback)
-	local popup = StaticPopupDialogs["ALL_THE_THINGS"];
-	if not popup then
-		popup = {
-			button1 = "Yes",
-			button2 = "No",
-			timeout = 0,
-			showAlert = true,
-			whileDead = true,
-			hideOnEscape = true,
-			enterClicksFirstButton = true,
-			preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
-		};
-		StaticPopupDialogs["ALL_THE_THINGS"] = popup;
-	end
-	popup.text = msg or "Are you sure?";
-	popup.OnAccept = callback or print;
-	StaticPopup_Hide ("ALL_THE_THINGS");
-	StaticPopup_Show ("ALL_THE_THINGS");
-end
 
--- ReloadUI slash command (for ease of use)
-SLASH_RELOADUI1 = "/reloadui";
-SLASH_RELOADUI2 = "/rl";
-SlashCmdList["RELOADUI"] = ReloadUI;
 
 -- Performance Cache 
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
@@ -2450,6 +2417,87 @@ app.ToggleMainList = ToggleMainList;
 
 
 -- Tooltip Functions
+local function RecalculateGroupTotals(group)
+	if group.collectible then
+		group.total = 1;
+		if group.collected then
+			group.progress = 1;
+		else
+			group.progress = 0;
+		end
+	else
+		group.total = 0;
+		group.progress = 0;
+	end
+	if group.g then
+		for j,s in ipairs(group.g) do
+			if s.total then
+				group.total = group.total + s.total;
+				group.progress = group.progress + s.progress;
+			elseif s.collectible and app.GroupRequirementsFilter(s) and app.GroupFilter(s) then
+				group.total = group.total + 1;
+				if s.collected then
+					group.progress = group.progress + 1;
+				end
+			end
+		end
+	end
+end
+local function MergeSearchResults(group)
+	if group then
+		-- If the user has Show Collection Progress turned on.
+		local count = #group or 0;
+		if count > 1 then
+			-- Build the group data (merge into one group)
+			local merged = { g = {}, total = 0, progress = 0, merged = true };
+			for i,g in ipairs(group) do
+				if not g.hideText and (app.RecursiveClassAndRaceFilter(g.parent) or GetDataMember("IgnoreAllFilters")) then
+					if g.collectible then
+						merged.collectible = merged.collectible or g.collectible;
+						merged.collected = merged.collected or g.collected;
+					end
+					if g.trackable then
+						merged.trackable = merged.trackable or g.trackable;
+						merged.saved = merged.saved or g.saved;
+					end
+					if g.g then
+						for j,s in ipairs(g.g) do
+							tinsert(merged.g, s);
+						end
+					end
+				end
+			end
+			
+			local mcount = #merged.g;
+			if mcount > 0 then
+				-- Remove duplicate entries
+				local o, key, value, found;
+				for i=mcount,1,-1 do
+					o = merged.g[i];
+					if o.collectible or o.total then
+						key = o.key;
+						value = o[key];
+						found = false;
+						for j=i-1,1,-1 do
+							if merged.g[j][key] == value then
+								found = true;
+								break;
+							end
+						end
+						if found then table.remove(merged.g, i); end
+					else
+						table.remove(merged.g, i);
+					end
+				end
+			else
+				merged.g = nil;
+			end
+			return merged;
+		else
+			return group[1];
+		end
+	end
+end
 local function AttachTooltipRawSearchResults(self, listing, group)
 	if listing then
 		-- Display the pre-calculated row data.
@@ -2464,236 +2512,123 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 			end
 		end
 		
-		-- If the user has Show Collection Progress turned on.
-		local count = group and #group or 0;
-		if count > 0 and self:NumLines() > 0 and GetDataMember("ShowProgress") then
-			-- Determine if this group is composed of multiple sections
-			if count > 1 then
-				-- Build the group data (merge into one group)
-				local merged = { g = {}, total = 0, progress = 0 };
-				for i,g in ipairs(group) do
-					if not g.hideText and (app.RecursiveClassAndRaceFilter(g.parent) or GetDataMember("IgnoreAllFilters")) then
-						if g.collectible then
-							merged.collectible = merged.collectible or g.collectible;
-							merged.collected = merged.collected or g.collected;
-						end
-						if g.trackable then
-							merged.trackable = merged.trackable or g.trackable;
-							merged.saved = merged.saved or g.saved;
-						end
-						if g.g then
-							for j,s in ipairs(g.g) do
-								tinsert(merged.g, s);
+		-- Merge the Search Results into a compact list.
+		-- TODO: Potentially optimize this?
+		group = MergeSearchResults(group);
+		if group then
+			-- If this is a Merged group, then we need to recalculate totals since it isn't directly from the DB
+			if group.merged then RecalculateGroupTotals(group); end
+			
+			-- If the group has relative contents, we should show that information
+			if group.g and not group.hideText and GetDataMember("ShowContents") 
+				and (app.RecursiveClassAndRaceFilter(group) or GetDataMember("IgnoreAllFilters")) then
+				local progress = 0;
+				local total = 0;
+				local parents = {};
+				local items = {};
+				for i,j in ipairs(group.g) do
+					if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
+						if not contains(parents, j.parent) then tinsert(parents, j.parent); end
+						
+						local right = nil;
+						if j.total and j.total > 0 then
+							progress = progress + (j.progress or 0);
+							total = total + j.total;
+							if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
+								right = GetProgressColorText(j.progress, j.total);
 							end
+						elseif j.collectible then
+							total = total + 1;
+							if j.collected or (j.trackable and j.saved) then
+								progress = progress + 1;
+								if GetDataMember("ShowCollectedItems") then
+									right = L("COLLECTED_ICON");
+								end
+							else
+								right = L("NOT_COLLECTED_ICON");
+							end
+						elseif j.trackable then
+							if j.saved then
+								if GetDataMember("ShowCollectedItems") then
+									right = L("COLLECTED_ICON");
+								end
+							elseif app.ShowIncompleteQuests(j) then
+								right = L("NOT_COLLECTED_ICON");
+							end
+						elseif j.visible then
+							right = "---";
+						end
+						
+						-- If there's progress to display, then let's summarize a bit better.
+						if right then
+							-- If this group has a droprate, add it to the display.
+							if j.dr then right = "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. right; end
+							
+							-- If this group has specialization requirements, let's attempt to show the specialization icons.
+							local specs = GetDataMember("ShowLootSpecializationRequirements") and j.specs;
+							if specs and #specs > 0 then
+								table.sort(specs);
+								for i,spec in ipairs(specs) do
+									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+								end
+							end
+							
+							-- Insert into the display.
+							tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), right });
 						end
 					end
 				end
 				
-				local mcount = #merged.g;
-				if mcount > 0 then
-					-- Remove duplicate entries
-					local o, key, value, found;
-					for i=mcount,1,-1 do
-						o = merged.g[i];
-						key = o.key;
-						value = o[key];
-						if o.collectible or o.total then
-							found = false;
-							for j=i-1,1,-1 do
-								if merged.g[j][key] == value then
-									found = true;
-									break;
-								end
-							end
-							if found then table.remove(merged.g, i); end
-						else
-							table.remove(merged.g, i);
+				if total > 0 and #items > 0 then
+					self:AddLine("Contains:");
+					if #items < 5 then
+						for i,pair in ipairs(items) do
+							self:AddDoubleLine(pair[1], pair[2]);
 						end
-					end
-					
-					-- Calculate totals
-					if merged.collectible then
-						merged.total = 1;
-						if merged.collected then
-							merged.progress = 1;
-						else
-							merged.progress = 0;
+					elseif #parents < 2 then
+						for i=1,math.min(5, #items) do
+							self:AddDoubleLine(items[i][1], items[i][2]);
 						end
+						local more = #items - 5;
+						if more > 0 then self:AddLine("And " .. more .. " more..."); end
 					else
-						merged.total = 0;
-						merged.progress = 0;
-					end
-					for j,s in ipairs(merged.g) do
-						if s.total then
-							merged.total = merged.total + s.total;
-							merged.progress = merged.progress + s.progress;
-						elseif s.collectible and app.GroupRequirementsFilter(s) and app.GroupFilter(s) then
-							merged.total = merged.total + 1;
-							if s.collected then
-								merged.progress = merged.progress + 1;
+						for i,j in ipairs(parents) do
+							local title = "  ";
+							if j.parent then
+								if j.parent.parent then
+									if j.creatureID then
+										title = title .. (j.parent.parent.icon and ("|T" .. j.parent.parent.icon .. ":0|t") or "") .. (j.parent.parent.text or RETRIEVING_DATA) .. " -> " .. (j.text or RETRIEVING_DATA) .. " (" .. (j.parent.text or RETRIEVING_DATA) .. ")";
+									else
+										title = title .. (j.parent.parent.icon and ("|T" .. j.parent.parent.icon .. ":0|t") or "") .. (j.parent.parent.text or RETRIEVING_DATA) .. " -> " .. (j.parent.text or RETRIEVING_DATA);
+									end
+								else
+									title = title .. (j.parent.icon and ("|T" .. j.parent.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA) .. " (" .. (j.parent.text or RETRIEVING_DATA) .. ")";
+								end
+							else
+								title = title .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA);
 							end
+							self:AddDoubleLine(title, GetProgressColorText(j.progress, j.total));
 						end
 					end
-				else
-					merged.g = nil;
 				end
-				group = merged;
-			else
-				group = group[1];
 			end
 			
-			local rightSide = _G[self:GetName() .. "TextRight1"];
-			if rightSide then
-				if group.g and not group.hideText and app.RecursiveClassAndRaceFilter(group) then
+			-- If the user has Show Collection Progress turned on.
+			if self:NumLines() > 0 and GetDataMember("ShowProgress") then
+				local rightSide = _G[self:GetName() .. "TextRight1"];
+				if rightSide then
 					if group.total and group.total > 0 then
-						local progress = 0;
-						local total = 0;
-						if GetDataMember("ShowContents") then
-							local parents = {};
-							local items = {};
-							for i,j in ipairs(group.g) do
-								if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
-									if not contains(parents, j.parent) then tinsert(parents, j.parent); end
-									
-									local right = nil;
-									if j.total and j.total > 0 then
-										progress = progress + (j.progress or 0);
-										total = total + j.total;
-										if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
-											right = GetProgressColorText(j.progress, j.total);
-										end
-									elseif j.collectible then
-										total = total + 1;
-										if j.collected or (j.trackable and j.saved) then
-											progress = progress + 1;
-											if GetDataMember("ShowCollectedItems") then
-												right = L("COLLECTED_ICON");
-											end
-										else
-											right = L("NOT_COLLECTED_ICON");
-										end
-									elseif j.trackable then
-										if j.saved then
-											if GetDataMember("ShowCollectedItems") then
-												right = L("COLLECTED_ICON");
-											end
-										elseif app.ShowIncompleteQuests(j) then
-											right = L("NOT_COLLECTED_ICON");
-										end
-									elseif j.visible then
-										right = "---";
-									end
-									
-									-- If there's progress to display, then let's summarize a bit better.
-									if right then
-										-- If this group has a droprate, add it to the display.
-										if j.dr then right = "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. right; end
-										
-										-- If this group has specialization requirements, let's attempt to show the specialization icons.
-										local specs = GetDataMember("ShowLootSpecializationRequirements") and j.specs;
-										if specs and #specs > 0 then
-											table.sort(specs);
-											for i,spec in ipairs(specs) do
-												local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-												if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
-											end
-										end
-										
-										-- Insert into the display.
-										tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), right });
-									end
-								end
-							end
-							
-							if total > 0 then
-								rightSide:SetText(GetProgressColorText(progress, total));
-								if #items > 0 then
-									self:AddLine("Contains:");
-									if #items < 5 then
-										for i,pair in ipairs(items) do
-											self:AddDoubleLine(pair[1], pair[2]);
-										end
-									elseif #parents < 2 then
-										for i=1,math.min(5, #items) do
-											self:AddDoubleLine(items[i][1], items[i][2]);
-										end
-										self:AddLine("And " .. (#items - 5) .. " more...");
-									else
-										for i,j in ipairs(parents) do
-											local title = "  ";
-											if j.parent then
-												if j.parent.parent then
-													if j.creatureID then
-														title = title .. (j.parent.parent.icon and ("|T" .. j.parent.parent.icon .. ":0|t") or "") .. (j.parent.parent.text or RETRIEVING_DATA) .. " -> " .. (j.text or RETRIEVING_DATA) .. " (" .. (j.parent.text or RETRIEVING_DATA) .. ")";
-													else
-														title = title .. (j.parent.parent.icon and ("|T" .. j.parent.parent.icon .. ":0|t") or "") .. (j.parent.parent.text or RETRIEVING_DATA) .. " -> " .. (j.parent.text or RETRIEVING_DATA);
-													end
-												else
-													title = title .. (j.parent.icon and ("|T" .. j.parent.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA) .. " (" .. (j.parent.text or RETRIEVING_DATA) .. ")";
-												end
-											else
-												title = title .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA);
-											end
-											self:AddDoubleLine(title, GetProgressColorText(j.progress, j.total));
-										end
-									end
-								end
-							else
-								if group.collectible then
-									rightSide:SetText(GetCollectionText(group.collected));
-								elseif group.trackable then
-									rightSide:SetText(GetCompletionText(group.saved));
-								else
-									rightSide:SetText("---");
-								end
-							end
-						else
-							-- TODO: Change this.
-							for i,j in ipairs(group.g) do
-								if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
-									if j.total and j.total > 1 then
-										progress = progress + (j.progress or 0);
-										total = total + j.total;
-									else
-										total = total + 1;
-										if j.collected or (j.trackable and j.saved) then
-											progress = progress + 1;
-										end
-									end
-								end
-							end
-							
-							if total > 0 then
-								rightSide:SetText(GetProgressColorText(progress, total));
-							else
-								if group.collectible then
-									rightSide:SetText(GetCollectionText(group.collected));
-								elseif group.trackable then
-									rightSide:SetText(GetCompletionText(group.saved));
-								else
-									rightSide:SetText("---");
-								end
-							end
-						end
-					else
-						if group.collectible then
-							rightSide:SetText(GetCollectionText(group.collected));
-						elseif group.trackable then
-							rightSide:SetText(GetCompletionText(group.saved));
-						else
-							rightSide:SetText("---");
-						end
-					end
-				else
-					if group.collectible then
+						rightSide:SetText(GetProgressColorText(group.progress, group.total));
+					elseif group.collectible then
 						rightSide:SetText(GetCollectionText(group.collected));
 					elseif group.trackable then
 						rightSide:SetText(GetCompletionText(group.saved));
 					else
 						rightSide:SetText("---");
 					end
+					rightSide:Show();
 				end
-				rightSide:Show();
 			end
 		end
 	end
@@ -2705,6 +2640,29 @@ end
 local function AttachTooltipForEncounter(self, encounterID)
 	if GetDataMember("ShowEncounterID") then self:AddDoubleLine(L("ENCOUNTER_ID"), tostring(encounterID)); end
 	AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForFieldAndSummarizeForCurrentDifficulty, "encounterID", tonumber(encounterID));
+end
+local function AttachReagentTooltipInformation(self, link)
+	local itemID = GetItemInfoInstant(link);
+	if itemID then
+		local reagentCache = app.GetDataSubMember("Reagents", itemID);
+		if reagentCache then
+			self:AddDoubleLine("Reagent for:", "Count");
+			--[[
+			for recipeID,count in pairs(reagentCache[1]) do
+				local icon = select(3, GetSpellInfo(recipeID));
+				self:AddDoubleLine("  " .. (icon and ("|T" .. icon .. ":0|t") or "  ") .. (select(1, GetSpellLink(recipeID)) or ("Spell #" .. recipeID)), "x" .. count);
+			end
+			--]]
+			local data = {};
+			for itemID,count in pairs(reagentCache[2]) do
+				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemID);
+				local searchResults = SearchForItemID(itemID);
+				if searchResults then
+					self:AddDoubleLine("  " .. (icon and ("|T" .. icon .. ":0|t") or "  ") .. (link or ("Item #" .. itemID)), "x" .. count);
+				end
+			end
+		end
+	end
 end
 local function AttachTooltip(self)
 	if not self.AllTheThingsProcessing then

@@ -10,6 +10,7 @@ lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 lib\!NoTaint_UIDropDownMenu\UIDropDownMenu.xml
+src\base.lua
 AllTheThings.lua
 locales\enUS.lua
 db\Presets.lua
