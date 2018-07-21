@@ -143,7 +143,7 @@ _.WorldDrops =
 					i(14745),	-- Hulking Cloak
 					i(14752),	-- Slayer's Cape
 					i(14763),	-- Enduring Cape
-					un(7, i(14771)),	-- Ravager's Cloak
+					i(14771),	-- Ravager's Cloak
 					i(14781),	-- Khan's Cloak
 					i(14791),	-- Protector Cape
 					i(14801),	-- Bloodlust Cape

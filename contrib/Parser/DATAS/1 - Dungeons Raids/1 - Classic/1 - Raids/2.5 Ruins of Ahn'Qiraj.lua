@@ -13,6 +13,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(20727),	-- Formula: Enchant Gloves - Shadow Power
 					i(20731),	-- Formula: Enchant Gloves - Superior Agility
 					i(20736),	-- Formula: Enchant Cloak - Dodge
+					i(20734),	-- Formula: Encant Cloak - Stealth
 					i(20888, { -- Qiraji Ceremonial Ring
 						{
 							["questID"] = 8701, -- Band of Veiled Shadows (Quest)

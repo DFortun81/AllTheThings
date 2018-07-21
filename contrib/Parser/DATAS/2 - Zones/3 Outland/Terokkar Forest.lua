@@ -523,8 +523,6 @@ _.Zones =
 						["groups"] = {
 							currency(1704, { -- Spirit Shard
 								["groups"] = {
-									i(32947),	-- Auchenai Healing Potion
-									i(32948),	-- Auchenai Mana Potion
 									i(28553),	-- Band of the Exorcist
 									i(28576),	-- Exorcist's Chain Helm
 									i(28574),	-- Exorcist's Dragonhide Helm
@@ -537,9 +535,7 @@ _.Zones =
 									i(28761),	-- Exorcist's Scaled Helm
 									i(28760),	-- Exorcist's Silk Hood
 									i(28575),	-- Exorcist's Wyrmhide Helm
-									i(28557),	-- Quickened Starfire Diamond
 									i(28555),	-- Seal of the Exorcist
-									i(28556),	-- Swift Windfire Diamond
 								},
 							}),
 						},
@@ -548,8 +544,6 @@ _.Zones =
 						["groups"] = {
 							currency(1704, { -- Spirit Shard
 								["groups"] = {
-									i(32947),	-- Auchenai Healing Potion
-									i(32948),	-- Auchenai Mana Potion
 									i(28553),	-- Band of the Exorcist
 									i(28576),	-- Exorcist's Chain Helm
 									i(28574),	-- Exorcist's Dragonhide Helm
@@ -562,9 +556,7 @@ _.Zones =
 									i(28761),	-- Exorcist's Scaled Helm
 									i(28760),	-- Exorcist's Silk Hood
 									i(28575),	-- Exorcist's Wyrmhide Helm
-									i(28557),	-- Quickened Starfire Diamond
 									i(28555),	-- Seal of the Exorcist
-									i(28556),	-- Swift Windfire Diamond
 								},
 							}),
 						},
