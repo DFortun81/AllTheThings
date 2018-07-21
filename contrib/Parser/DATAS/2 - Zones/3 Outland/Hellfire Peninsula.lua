@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(101, { 	-- Outland
-		m(100, {	-- Hellfire Peninsula			
+	m(466, { 	-- Outland
+		m(465, {	-- Hellfire Peninsula			
 			["groups"] = {							
 				n(-25, { 	-- Pet Battle
 					p(635), -- Adder
@@ -491,6 +491,16 @@ _.Zones =
 							},
 							["collectible"] = false,	-- Turn off Collectible flags.
 						})),
+						q(9732, {	-- Return to the Marsh (awarded "Draining the Marsh" criteria for Zangarmarsh)
+							["groups"] = {
+								i(25524),	-- Cenarion Expedition Boots
+								i(25523),	-- Windcaller's Gauntlets
+								i(25522),	-- Marshstrider's Spaulders
+							},
+							["qg"] = 16885,	-- Amythiel Mistwalker
+							["description"] = "This quest is required for the 'Draining the Marsh' criteria in Zangarmarsh.",
+							["sourceQuests"] = { 9724 },	-- Warning the Cenarion Circle
+						}),
 						h(sz(862,4, { -- Spinebreaker Post
 							["groups"] = {
 								qh(10220,{	-- Make Them Listen	
@@ -726,14 +736,6 @@ _.Zones =
 						qa(  9423),	-- Return to Obadei
 						qa( 10346),	-- Return to the Abyssal Shelf
 						qh( 10347),	-- Return to the Abyssal Shelf
-						q(  9732, {	-- Return to the Marsh (awarded "Draining the Marsh" criteria for Zangarmarsh)
-							["groups"] = {
-								i(25524),	-- Cenarion Expedition Boots
-								i(25523),	-- Windcaller's Gauntlets
-								i(25522),	-- Marshstrider's Spaulders
-							},
-							["qg"] = 16885,	-- Amythiel Mistwalker
-						}),
 						qa(  9430),	-- Sha'naar Relics
 						qh( 14065),	-- Sharing a Bountiful Feast
 						qa( 10340),	-- Shatter Point

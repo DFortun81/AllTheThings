@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(101, { 	-- Outland
-		m(102, {	-- Zangarmarsh
+	m(466, { 	-- Outland
+		m(467, {	-- Zangarmarsh
 			["groups"] = {		
 				n(-25, {	-- Pet Battle
 					p(419), 	-- Small Frog 
@@ -55,14 +55,60 @@ _.Zones =
 							}),
 						}),
 						crit(5, {	-- Draining the Marsh
+							q(9716, {	-- Disturbance at Umbrafen Lake
+								["groups"] = {
+								},
+								["qg"] = 17841,	-- Ysiel Windsinger
+								["sourceQuests"] = { 39181, 39180 },	-- Hero's Call: Zangarmarsh! & Warchief's Command: Zangarmarsh!
+							}),
+							q(9718, {	-- As the Crow Flies
+								["groups"] = {
+								},
+								["qg"] = 17841,	-- Ysiel Windsinger
+								["sourceQuests"] = { 9716 },	-- Disturbance at Umbrafen Lake
+							}),
+							q(9720, {	-- Balance Must Be Preserved
+								["groups"] = {
+								},
+								["qg"] = 17841,	-- Ysiel Windsinger
+								["description"] = "You don't have to complete this quest for this criteria, but you need to at least pick it up to loot the item that starts 'Drain Schematics.'",
+								["sourceQuests"] = { 9718 },	-- As the Crow Flies
+							}),
+							{
+								["g"] = {
+									i(27734),	-- Expedition Caster's Band
+									i(27735),	-- Pendant of the Marsh
+									i(27733),	-- Warden's Ring of Precision
+									i(27730),	-- Watcher's Cloak of Vigilance
+								},
+								["qg"] = 18340,	-- Steam Pump Overseer
+								["itemID"] = 24330,	-- Drain Schematics
+								["questID"] = 9731,	-- Drain Schematics
+								["sourceQuests"] = { 9720 },	-- Balance Must Be Preserved
+							},
+							q(9724, {	-- Warning the Cenarion Circle
+								["groups"] = {
+								},
+								["qg"] = 17841,	-- Ysiel Windsinger
+								["sourceQuests"] = { 9731 },	-- Drain Schematics
+							}),
+							--[[q(9732, {	-- Return to the Marsh -- starts in HFP and awards the criteria.  DOES NOT CHAIN PROPERLY when uncommented in this zone.
+								["groups"] = {
+									i(25524),	-- Cenarion Expedition Boots
+									i(25523),	-- Windcaller's Gauntlets
+									i(25522),	-- Marshstrider's Spaulders
+								},
+								["qg"] = 16885,	-- Amythiel Mistwalker
+								["sourceQuests"] = { 9724 },	-- Warning the Cenarion Circle
+							}),--]]
 						}),
 						crit(6, {	-- Saving the Sporeloks
-							q(9747, {	-- The Umbrafen Tribe
+							 q(9747, {	-- The Umbrafen Tribe
 								["groups"] = {
 								},
 								["qg"] = 17956,	-- Ikeyen
 							}),
-							q(9788, {	-- A Damp, Dark Place
+							 q(9788, {	-- A Damp, Dark Place
 								["groups"] = {
 									i(25516),	-- Ikeyen's Boots
 									i(25515),	-- Mud Encrusted Boots
@@ -72,7 +118,7 @@ _.Zones =
 								["qg"] = 17956,	-- Ikeyen
 								["sourceQuests"] = { 9747 },	-- The Umbrafen Tribe
 							}),
-							q( 10096, {	-- Saving the Sporeloks
+							q(10096, {	-- Saving the Sporeloks
 								["groups"] = {
 									i(27717),	-- Expedition Forager Leggings
 									i(31657),	-- Chemise of Rebirth
@@ -82,7 +128,7 @@ _.Zones =
 								["qg"] = 17909,	-- Lauranna Thar'well
 								["sourceQuests"] = { 9747 },	-- The Umbrafen Tribe
 							}),
-							q(  9894, {	-- Safeguarding the Watchers (awarded "Saving the Sporeloks" criteria)
+							 q(9894, {	-- Safeguarding the Watchers (awarded "Saving the Sporeloks" criteria)
 								["groups"] = {
 								},
 								["qg"] = 18070,	-- Windcaller Blackhoof
@@ -90,6 +136,43 @@ _.Zones =
 							}),
 						}),
 						crit(7, {	-- A Trip With the Sporelings
+							q(9743, {	-- Natural Enemies
+								["qg"] = 17923,	-- Fahssn
+							}),
+							q(9739, {	-- The Sporelings' Plight
+								["qg"] = 17923,	-- Fahssn
+							}),
+							q(9919, {	-- Sporeggar (awarded "A Trip With the Sporelings" criteria)
+								["groups"] = {
+								},
+								["qg"] = 17923,	-- Fahssn
+								["description"] = "Invisible until you reach Neutral with Sporeggar.",
+								["sourceQuests"] = { 9743, 9739 },	-- Natural Enemies, The Sporelings' Plight + Neutral reputation
+							}),
+							q(9808, {	-- Glowcap Mushrooms
+								["groups"] = {
+								},
+								["qg"] = 17924,	-- Msshi'fn
+								["description"] = "Available from Neutral to Friendly with Sporeggar.",
+								["sourceQuests"] = { 9919 },	-- Sporeggar
+							}),
+							q(9806, {	-- Fertile Spores
+								["groups"] = {
+								},
+								["qg"] = 17925,	-- Gshaff
+								["description"] = "Invisible until you reach Neutral with Sporeggar.",
+								["sourceQuests"] = { 9919 },	-- Sporeggar
+							}),
+							q(9726, {	-- Now That We're Friends...
+								["groups"] = {
+									i(27749),	-- Staff of the Wild
+									i(27751),	-- Survivalist's Pike
+									i(27750),	-- Hammer of the Sporelings
+									i(27752),	-- Zangarmarsh Claymore
+								},
+								["qg"] = 17856,	-- Gzhun'tt
+								["description"] = "Invisible until you reach Friendly with Sporeggar.",	
+							}),
 						}),
 					}),
 					n(-168, {	-- Other Quests
@@ -131,12 +214,7 @@ _.Zones =
 							}),
 							
 							
-							q(  9718, {	-- As the Crow Flies
-								["groups"] = {
-								},
-								["qg"] = 17841,	-- Ysiel Windsinger
-								["sourceQuests"] = { 9716 },	-- Disturbance at Umbrafen Lake
-							}),
+							
 
 
 							q(  9728, {	-- A Warm Welcome
@@ -147,12 +225,7 @@ _.Zones =
 							}),
 
 
-							q(  9720, {	-- Balance Must Be Preserved
-								["groups"] = {
-								},
-								["qg"] = 17841,	-- Ysiel Windsinger
-								["sourceQuests"] = { 9718 },	-- As the Crow Flies
-							}),
+							
 							
 							
 							q(  9785, {	-- Blessings of the Ancients
@@ -169,23 +242,10 @@ _.Zones =
 							}),
 							
 							
-							q(  9716, {	-- Disturbance at Umbrafen Lake
-								["groups"] = {
-								},
-								["qg"] = 17841,	-- Ysiel Windsinger
-								["sourceQuests"] = { 39181, 39180 },	-- Hero's Call: Zangarmarsh! & Warchief's Command: Zangarmarsh!
-							}),
 							
 							
-							i( 24330, {	-- Drain Schematics
-								q(9731,  { 	-- Drain Schematics
-									["groups"] = {
-										i(27730),	-- Watcher's Cloak of Vigilance
-									},
-									["qg"] = 18340,	-- Steam Pump Overseer
-									["sourceQuests"] = { 9720 },	-- Balance Must Be Preserved
-								}),
-							}),
+							
+							
 							
 							
 							q(  9752, {	-- Escape from Umbrafen
@@ -260,11 +320,7 @@ _.Zones =
 							}),
 							
 							
-							q(  9743, {	-- Natural Enemies
-								["groups"] = {
-								},
-								["qg"] = 17923,	-- Fahssn
-							}),
+							
 							
 							
 							qh(10105, {	-- News for Rakoria
@@ -412,11 +468,7 @@ _.Zones =
 							}),
 							
 							
-							q(  9739, {	-- The Sporelings' Plight
-								["groups"] = {
-								},
-								["qg"] = 17923,	-- Fahssn
-							}),
+							
 							
 							
 						
@@ -468,12 +520,7 @@ _.Zones =
 							}),
 						
 						
-							q(  9724, {	-- Warning the Cenarion Circle
-								["groups"] = {
-								},
-								["qg"] = 17841,	-- Ysiel Windsinger
-								["sourceQuests"] = { 9731 },	-- Drain Schematics
-							}),
+							
 						
 						
 							
@@ -614,53 +661,38 @@ _.Zones =
 -- SPOREGGAR QUESTS
 					faction(970, {	-- Sporeggar
 						["groups"] = {
-							q(  9806, {	-- Fertile Spores
-								["groups"] = {
-								},
-								["qg"] = 17925,	-- Gshaff
-								["description"] = "Invisible until you reach Neutral with Sporeggar.",
+							q(50131, {	-- An Outside Perspective
+								["qg"] = 17923,	-- Fahssn
+								["sourceQuests"] = { 9743, 9739 },	-- Natural Enemies & The Sporelings' Plight
 							}),
-							q(  9808, {	-- Glowcap Mushrooms
-								["groups"] = {
-								},
+							q(50130, {	-- A Friendly Gesture
 								["qg"] = 17924,	-- Msshi'fn
-								["description"] = "Available from Neutral to Friendly with Sporeggar.",
+								["sourceQuests"] = { 50131 },	-- An Outside Perspective
 							}),
-	--						q(  9809),	-- More Glowcaps (removed?)
-							q(  9742, {	-- More Spore Sacs
+							q(9809, {	-- More Glowcaps (removed?)
+								["qg"] = 17924,	-- Mshii'fn
+								["sourceQuests"] = { 9808 },	-- Glowcap Mushrooms
+							}),
+							qr(q(9742, {	-- More Spore Sacs
 								["groups"] = {
 								},
 								["qg"] = 17923,	-- Fahssn
 								["description"] = "Unavailable after you reach Friendly with Sporeggar.",
-							}),
-							q(  9744, {	-- More Tendrils!
+								["sourceQuests"] = { 9739 },	-- The Sporelings' Plight
+							})),
+							qr(q(9744, {	-- More Tendrils!
 								["groups"] = {
 								},
 								["qg"] = 17923,	-- Fahssn
 								["description"] = "Unavailable after you reach Friendly with Sporeggar.",
-							}),
+								["sourceQuests"] = { 9743 },	-- Natural Enemies
+							})),
 							qr(q(9807, {	-- More Fertile Spores
 								["groups"] = {
 								},
 								["qg"] = 17925,	-- Gshaff
 								["sourceQuests"] = { 9806 },	-- Fertile Spores
 							})),
-							q(  9919, {	-- Sporeggar (awarded "A Trip With the Sporelings" criteria)
-								["groups"] = {
-								},
-								["qg"] = 17923,	-- Fahssn
-								["description"] = "Invisible until you reach Neutral with Sporeggar.",
-							}),
-							q(  9726, {	-- Now That We're Friends...
-								["groups"] = {
-									i(27749),	-- Staff of the Wild
-									i(27751),	-- Survivalist's Pike
-									i(27750),	-- Hammer of the Sporelings
-									i(27752),	-- Zangarmarsh Claymore
-								},
-								["qg"] = 17856,	-- Gzhun'tt
-								["description"] = "Invisible until you reach Friendly with Sporeggar.",	
-							}),
 							qr(q(9727, {	-- Now That We're Still Friends...
 								["groups"] = {
 								},

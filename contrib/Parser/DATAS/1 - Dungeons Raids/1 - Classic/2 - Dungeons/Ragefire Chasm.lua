@@ -16,15 +16,6 @@ _.Instances =
 							["qg"] = 61822, -- SI:7 Field Commander Dirken
 						}),					
 						qa(30996,{ -- The Dark Shaman
-							["groups"] = {
-								i( 82891), 	-- Robes of the Doomed Ritual
-								i( 82892), 	-- Ragefire Leggings
-								i( 82893), 	-- Hide Vest of the Shaman
-								i( 82894), 	-- Stone Guard Greaves
-								i( 82895), 	-- Searing Belt
-								i(131711), 	-- Stone Guard Greaves
-								i(131712), 	-- Scaled Vest of the Shaman
-							},
 							["qg"] = 61823, -- High Sorceress Aryna
 						}),
 						qh(30969, { -- A New Enemy
@@ -39,25 +30,6 @@ _.Instances =
 						qh(26856, { -- Repel the Invasion
 							["qg"] = 44217, -- Stone Guard Kurjack
 						}),
-						un(40, qh(26858, { -- Taragaman the Hungerer
-							["groups"] = {
-								un(34,  i(49541)), 	-- Robes of the Doomed Ritual
-								un(34,  i(66022)), 	-- Ragefire Leggings
-								un(34,  i(66031)), 	-- Hide Vest of the Shaman
-								un(34,  i(66045)), 	-- Stone Guard Greaves
-								un(34,  i(66040)), 	-- Searing Belt
-								un(34, i(131614)), 	-- Chasm Linked Pants
-								un(34, i(131613)), 	-- Scaled Vest of the Shaman 
-							},
-							["qg"] = 44217, -- Stone Guard Kurjack
-							["sourceQuests"] = {
-								26865, -- Enemies Below
-								26866, -- Enemies Below
-								26867, -- Enemies Below
-								28003, -- Adventurer's Wanted: Ragefire Chasm
-								31035, -- Enemies Below
-							}
-						})),
 						qh(30983, { -- The Dark Shaman
 							["qg"] = 61716, -- Invoker Xorenth
 						}),
@@ -96,6 +68,25 @@ _.Instances =
 									un(34, i(15452)),	-- Featherbead Bracers
 									un(34, i(15453)),	-- Savannah Bracers
 								}),
+								un(40, qh(26858, { -- Taragaman the Hungerer
+									["groups"] = {
+										un(34,  i(49541)), 	-- Robes of the Doomed Ritual
+										un(34,  i(66022)), 	-- Ragefire Leggings
+										un(34,  i(66031)), 	-- Hide Vest of the Shaman
+										un(34,  i(66045)), 	-- Stone Guard Greaves
+										un(34,  i(66040)), 	-- Searing Belt
+										un(34, i(131614)), 	-- Chasm Linked Pants
+										un(34, i(131613)), 	-- Scaled Vest of the Shaman 
+									},
+									["qg"] = 44217, -- Stone Guard Kurjack
+									["sourceQuests"] = {
+										26865, -- Enemies Below
+										26866, -- Enemies Below
+										26867, -- Enemies Below
+										28003, -- Adventurer's Wanted: Ragefire Chasm
+										31035, -- Enemies Below
+									}
+								})),
 							}),
 							--n(-16, {	-- Rares (Legacy)
 							--}),

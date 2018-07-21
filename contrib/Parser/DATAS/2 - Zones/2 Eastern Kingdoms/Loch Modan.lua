@@ -704,6 +704,17 @@ _.Zones =
 						i(5640),	-- Recipe: Rage Potion
 					}),
 				}),
+				n(  0, {	-- Zone Drop
+					n(1197, {	-- Stonesplinter Shaman
+						un(7, i(2267)),	-- Stonesplinter Mace
+					}),
+					n(1176, { 	-- Tunnel Rat Forager
+						un(7, i(2281)),	 -- Rodentia Flint Axe
+					}),
+					n(1177, { 	-- Tunnel Rat Surveyor
+						un(7, i(2283)),	-- Rat Cloth Belt
+					}),
+				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
 						nlq({	-- Quests (Legacy)
@@ -779,6 +790,11 @@ _.Zones =
 							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
+							na(7170, { 	-- Thragomm <Horde Runner>
+								un(7, i(4949)),	-- Orcish Cleaver
+							}),
+						}),
+						n(  0, {	-- Zone Drop (Legacy)
 							n(1222, {	-- Dark Iron Sapper
 								un(7, i(2274)),	-- Sapper's Gloves
 							}),
@@ -794,27 +810,13 @@ _.Zones =
 							n(1166, { 	-- Stonesplinter Seer
 								un(7, i(2266)),	-- Stonesplinter Dagger
 							}),
-							n(1197, {	-- Stonesplinter Shaman
-								un(7, i(2267)),	-- Stonesplinter Mace
-							}),
 							n(1163, { 	-- Stonesplinter Skullthumper	
 								un(7, i(2265)),	-- Stonesplinter Axe
-							}),
-							na(7170, { 	-- Thragomm
-								un(7, i(4949)),	-- Orcish Cleaver
-							}),
-							n(1176, { 	-- Tunnel Rat Forager
-								un(7, i(2281)),	 -- Rodentia Flint Axe
 							}),
 							n(1202, { 	-- Tunnel Rat Kobold
 								un(7, i(2281)),	 -- Rodentia Flint Axe
 							}),
-							n(1177, { 	-- Tunnel Rat Surveyor
-								un(7, i(2283)),	-- Rat Cloth Belt
-							}),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 					},
 				}),
 			},
