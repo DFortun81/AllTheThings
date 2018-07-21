@@ -6,60 +6,6 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(56, {		-- Wetlands
 			["groups"] = {								
-				n( -3, {	-- Holidays					
---[[					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
---]]
---[[					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
---]]				
-				}),								
 				n(-25, {	-- Pet Battle
 					p(398), 	-- Black Rat
 					p(393), 	-- Cockroach
@@ -720,6 +666,14 @@ _.Zones =
 						i(4831),	-- Stalking Pants
 					})),
 				}),
+				n(  0, {	-- Zone Drop
+					n(1036, {	-- Dragonmaw Centurion
+						un(7, i(753)), 	-- Dragonmaw Shortsword
+					}),
+					n(1035, { 	-- Dragonmaw Swamprunner
+						un(7, i(1955)), 	-- Dragonmaw Chain Boots
+					}),
+				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
 						nlq({	-- Quests (Legacy)
@@ -757,7 +711,9 @@ _.Zones =
 								un(34, i(2913)),	-- Silk Mantle of Gamn
 							}),
 						}),
-						n(-16, {	-- Rares (Legacy)
+						-- n(-16, {	-- Rares (Legacy)
+						-- }),
+						n(  0, {	-- Zone Drop (Legacy)
 							n(1028, { 	-- Bluegill Muckdweller
 								un(7, i(3022)),	-- Bluegill Breeches
 							}),
@@ -779,12 +735,6 @@ _.Zones =
 							n(1053, { 	-- Dark Iron Tunneler
 								un(7, i(756)), 	-- Tunnel Pick
 							}),
-							n(1036, {	-- Dragonmaw Centurion
-								un(7, i(753)), 	-- Dragonmaw Shortsword
-							}),
-							n(1035, { 	-- Dragonmaw Swamprunner
-								un(7, i(1955)), 	-- Dragonmaw Chain Boots
-							}),
 							n(1044, { 	-- Flamesnorting Whelp
 								un(7, i(3072)), 	-- Smoldering Robe
 							}),
@@ -798,8 +748,6 @@ _.Zones =
 								un(7, i(3076)),	-- Smoldering Boots
 							}),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 					},
 				}),
 			},
