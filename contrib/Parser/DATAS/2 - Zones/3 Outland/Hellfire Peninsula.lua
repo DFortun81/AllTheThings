@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(466, { 	-- Outland
-		m(465, {	-- Hellfire Peninsula			
+	m(101, { 	-- Outland
+		m(100, {	-- Hellfire Peninsula			
 			["groups"] = {							
 				n(-25, { 	-- Pet Battle
 					p(635), -- Adder

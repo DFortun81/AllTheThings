@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(466, { 	-- Outland
-		m(467, {	-- Zangarmarsh
+	m(101, { 	-- Outland
+		m(102, {	-- Zangarmarsh
 			["groups"] = {		
 				n(-25, {	-- Pet Battle
 					p(419), 	-- Small Frog 
