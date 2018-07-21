@@ -178,6 +178,7 @@ _.Instances =
 									i(86790),	-- Vial of Dragon's Blood
 								})),
 								cr(60400, e(677, {	-- Will of the Emperor (60399)
+									i(138804),	-- Illusion: Colossus
 									i(86806),	-- Tihan, Scepter of the Sleeping Emperor
 									i(86801),	-- Fang Kung, Spark of Titans
 									i(86804),	-- Crown of Opportunistic Strikes
