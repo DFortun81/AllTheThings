@@ -6,8 +6,10 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(627, { 	-- Dalaran
 			["groups"] = {
-				ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
-					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+				--[[
+				-- REMOVED FROM THE GAME, LEFT IN A COMMENT SO THAT IF THEY ADD IT BACK, WE HAVE THE INFO ALREADY
+				ach(11139, {	-- Field Medic!
+					["description"] = "This title was made unobtainable with the 8.0.1 Prepatch for BFA.",
 					["groups"] = {
 						title(340, {	-- TITLE: Field Medic!
 							["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!\nNOTE: You should use Premade Group Finder. You have much better odds in a group.\n\nWARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
@@ -128,6 +130,7 @@ _.Zones =
 						})
 					},
 				}),
+				]]--
 				n(-3, { 	-- Holidays	
 					n(-63, { -- Trial of Style
 						["groups"] = {

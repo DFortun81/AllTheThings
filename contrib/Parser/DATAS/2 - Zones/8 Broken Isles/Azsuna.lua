@@ -6,11 +6,12 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(630, {	-- Azsuna
 			["groups"] = {
-				ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
-					["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
+				--[[
+				-- REMOVED FROM THE GAME, LEFT IN A COMMENT SO THAT IF THEY ADD IT BACK, WE HAVE THE INFO ALREADY
+				ach(11139, {	-- Field Medic!
 					["groups"] = {
 						title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!\n\nWARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
+							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
 							["groups"] = {
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -40,6 +41,7 @@ _.Zones =
 						})
 					},
 				}),
+				]]--
 				n(-25, { 	-- Pet Battle
 					p(1708), 	-- Albatross Chick
 					p(706), 	-- Bandicoon
