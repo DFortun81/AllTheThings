@@ -309,6 +309,7 @@ _.Instances =
 								["groups"] = {
 									dr(31, i(18387)),	-- Brightspark Gloves
 									dr(31, i(18346)),	-- Threadbane Trousers
+									dr(31, i(18345)),	-- Murmuring Ring
 								},
 								["description"] = "This is a rare that is not always present.",
 							}),
