@@ -21,8 +21,854 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
+					n(-192, {	-- Cooking
+						["groups"] = {
+							q(33022, {	-- Catch and Carry
+								["groups"] = {
+									recipe(145038),	-- Noodle Cart Kit
+									un(1, i(101631)),	-- Recipe: Noodle Cart Kit
+									un(1, i(101728)),	-- Recipe: Grand Noodle Cart Kit
+									un(1, recipe(145167)),	-- Grand Noodle Cart Kit
+								},
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 33021 }, -- Secrets Lost, Forever?
+							}),
+							q(31477, {	-- Endurance
+								["qg"] = 58716,	-- Jian Ironpaw (53.4,51.6)
+								["sourceQuests"] = { 31478 }, -- Way of the Oven
+							}),
+							q(31480, {	-- Have a Drink
+								["qg"] = 58717,	-- Bobo Ironpaw (53.2,52.2)
+								["sourceQuests"] = { 31479 }, -- Way of the Brew
+							}),
+							q(33024, {	-- Is That A Real Measurement?
+								["groups"] = {
+									recipe(145061),	-- Deluxe Noodle Cart Kit
+									un(1, i(101664)),	-- Recipe: Deluxe Noodle Cart Kit
+									un(1, i(101739)),	-- Recipe: Grand Deluxe Noodle Cart Kit
+									un(1, recipe(145170)),	-- Grand Deluxe Noodle Cart Kit
+								},
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 33022 }, -- Catch and Carry
+							}),
+							q(31302, {	-- Ready for Greatness
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 31281 }, -- So You Want to be a Chef...
+							}),
+							q(33021, {	-- Secrets Lost, Forever?
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 33107 },	-- Bad Feeling, Worse Result
+							}),
+							q(31281, {	-- So You Want to Be a Chef... -- available any time (53.6,51.2)
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+							}),
+							q(31467, {	-- Strong as a Tiger
+								["qg"] = 58712,	-- Kol Ironpaw (53.0,51.3)
+								["sourceQuests"] = { 31311 }, -- Way of the Grill
+							}),
+							q(33027, {	-- The Secret Ingredient Is...
+								["groups"] = {
+									recipe(145062),	-- Pandaren Treasure Noodle Cart Kit
+									un(1, i(101663)),	-- Recipe: Pandaren Treasure Noodle Cart Kit
+									un(1, i(101741)),	-- Recipe: Grand Pandaren Treasure Noodle Cart Kit
+									un(1, recipe(145197)),	-- Grand Pandaren Treasure Noodle Cart Kit
+								},
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 33026 },	-- These Aren't Your Fatty Goatsteaks
+							}),
+							q(30330, {	-- The Truffle Shuffle
+								["qg"] = 58716,	-- Jian Ironpaw (53.4,51.6)
+								["sourceQuests"] = { 30257 }, -- Learn and Grow V: Halfhill Market
+								["isDaily"] = true,
+							}),
+							q(33026, {	-- These Aren't Your Fatty Goatsteaks
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 33024 }, -- Is That a Real Measurement?
+							}),
+							q(31479, {	-- Way of the Brew
+								["groups"] = {
+									sp(125589),	-- Way of the Brew
+								},
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 31302 }, -- Ready for Greatness
+							}),
+							q(31311, {	-- Way of the Grill
+								["groups"] = {
+									sp(124694),	-- Way of the Grill
+								},
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 31302 }, -- Ready for Greatness
+							}),
+							q(31478, {	-- Way of the Oven
+								["groups"] = {
+									sp(125588),	-- Way of the Oven
+								},
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 31302 }, -- Ready for Greatness
+							}),
+							q(31472, {	-- Way of the Pot
+								["groups"] = {
+									sp(125586),	-- Way of the Pot
+								},
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 31302 }, -- Ready for Greatness
+							}),
+							q(31475, {	-- Way of the Steamer
+								["groups"] = {
+									sp(125587),	-- Way of the Steamer
+								},
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 31302 }, -- Ready for Greatness
+							}),
+							q(31470, {	-- Way of the Wok
+								["groups"] = {
+									sp(125584),	-- Way of the Wok
+								},
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 31302 }, -- Ready for Greatness
+							}),
+						},
+						["requiredSkill"] = 185,
+					}),
+					n(-194, {	-- Fishing
+						["groups"] = {
+							q(32684, {	-- You Want Fish?
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["sourceQuests"] = { 31281 }, -- So You Want to be a Chef...
+							}),
+							q(32685, {	-- No Fishing Pole Necessary!
+								["qg"] = 70398,	-- Ben of the Booming Voice (58.9,46.9)
+							}),
+						},
+						["requiredSkill"] = 356,
+					}),
+					q(30477, {	-- A Gift For Haohan
+						["qg"] = 64464,	-- Andi (52.7,50.4)
+						["sourceQuests"] = { 30257 }, -- Learn and Grow V: Halfhill Market
+						["isDaily"] = true,
+					}),
+					q(30252, {	-- A Helping Hand
+						["qg"] = 58721,	-- Farmer Yoon (52.0,48.1)
+					}),
+					q(29918, {	-- A Lesson in Bravery
+						["groups"] = {
+							i(81824),	-- Hawk Feather Band
+							i(81825),	-- Lariat Loop
+							i(81826),	-- Shepherd's Loop
+							i(81827),	-- Band of Bravery
+							i(81828),	-- Ring of Courage
+						},
+						["qg"] = 56312,	-- Shang Thunderfoot (78.2,32.8)
+						["sourceQuests"] = {
+							29917,	-- Lupello
+							29916,	-- Piercing Talons and Slavering Jaws
+						},
+					}),
+					q(29915, {	-- A Neighbor's Duty
+						["qg"] = 56205,	-- Liang Thunderfoot (75.2,24.1)
+						["sourceQuests"] = {
+							29914,	-- Back to the Sty
+							29913,	-- The Meat They'll Eat
+						}
+					}),
+					q(29877, {	-- A Poor Grasp of the Basics
+						["qg"] = 56440,	-- Muno the Farmhand (82.7,21.2)
+						["sourceQuests"] = { 29907 }, -- Chen and Li Li
+					}),
+					q(31820,  {		-- A Present for Teacher
+						["groups"] = {
+							i(86468),	-- Apron
+						},
+						["qg"] = 64337,	-- Nomi
+						["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.|r"
+					}),
+					q(29908, {	-- A Seemingly Endless Nuisance
+						["groups"] = { 
+							i(81769),	-- Silkmaster's Satin Leggings
+							i(81770),	-- Sunsoaked Legguards
+							i(81771),	-- Huangtze Scale Leggings
+							i(81772),	-- Paoquan Burnished Legplates
+							i(81773),	-- Gilded Fan Silk Trousers
+							i(81774),	-- Plainshawk Legguards
+							i(81775),	-- Wild Plains Legguards
+							i(81776),	-- Thunderfoot Heavy Legguards
+							i(81777),	-- Sunsong Armored Legguards
+						},
+						["qg"] = 56204,	-- Pang Thunderfoot (83.7,21.1)
+						["sourceQuests"] = { 29907 }, -- Chen and Li Li
+					}),
+					q(29988, {	-- A Taste For Eggs
+						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.3)
+						["sourceQuests"] = { 29987 }, -- Unyielding Fists: Trial of Wood
+					}),
+					q(29577, {	-- Ashyo's Vision
+						["qg"] = 56113,	-- Clever Ashyo (61.2,34.2)
+						["sourceQuests"] = { 29871 }, -- Clever Ashyo
+					}),
+					q(29914, {	-- Back to the Sty
+						["qg"] = 56205,	-- Liang Thunderfoot (75.2,24.0)
+						["sourceQuests"] = { 29912 }, -- The Fabular Miss Fanny
+					}),
+					q(30172, {	-- Barreling Along
+						["qgs"] = { 56474, 58785 }, -- Mudmug
+						["sourceQuests"] = { 30051 }, -- The Great Water Hunt
+					}),
+					q(30077, {
+						["qg"] = 56138,	-- Li Li (32.3,68.5)
+						["sourceQuests"] = { 30074 }, -- Knocking on the Door
+					}),	-- Barrels, Man
+					o(214340, {	-- Boat-Building Instructions (part of "Treasure of Pandaria" achievement
+						q(31869, {	-- Boat-Building Instructions
+							["description"] = "Located inside a hut on the far east side of the Valley near water. (92.2,39.2)",
+						}),
+					}),
+					q(29757, {	-- Bottletoads
+						["qg"] = 56773,	-- Yan (60.6,33.7)
+						["sourceQuests"] = { 29871 }, -- Clever Ashyo
+					}),
+					q(29952, {	-- Broken Dreams
+						["qg"] = 56133,	-- Chen Stormstout (68.8,43.4)
+						["sourceQuests"] = { 29950 },	-- Li Li's Day Off
+					}),
+					q(29907, {	-- Chen and Li Li
+						["qg"] = 56133,	-- Chen Stormstout (86.0,22.2)
+						["sourceQuests"] = {
+							32018,	-- His Name Was... Stormstout
+							32019,	-- They Call Him... Stormstout
+							38935,	-- His Name Was... Stormstout
+							49539,	-- Warchief's Command: Valley of the Four Winds!
+							49557,	-- Hero's Call: Valley of the Four Winds!
+						},
+					}),
+					q(30046, {	-- Chen's Resolution
+						["qg"] = 56133,	-- Chen Stormstout (68.9,43.4)
+						["sourceQuests"] = { 29952 }, -- Broken Dreams
+					}),
+					q(32045, {	-- Children of the Water
+						["qg"] = 64315,	-- Stonecarver Mac (55.1,47.4)
+					}),
+					q(30078,  {  	-- Cleaning House
+						["groups"] = {
+							i(81742),	-- Silkmaster's Satin Hood
+							i(81743),	-- Sunsoaked Helm
+							i(81744),	-- Huangtze Scale Helm
+							i(81745),	-- Paoquan Burnished Headcover
+							i(81746),	-- Gilded Fan Silk Cowl
+							i(81747),	-- Plainshawk Helm
+							i(81748),	-- Wild Plains Helm
+							i(81749),	-- Thunderfoot Heavy Helm
+							i(81750),	-- Sunsong Armored Helm
+						},
+						["qg"] = 56133,	-- Chen Stormstout (83.6,21.5)
+						["sourceQuests"] = {
+							30077,	-- Barrels, Man
+							30075,	-- Clear the Way
+							30076,	-- The Fanciest Water
+						},
+					}),
+					q(30075, {	-- Clear the Way
+						["groups"] = {
+							i(81834),	-- Silkspawn Wing
+							i(81835),	-- Plainshawk Feather
+							i(81836),	-- Lucky "Rabbit's" Foot
+							i(81837),	-- Viseclaw Carapace
+							i(81838),	-- Tawnyhide Antler
+						},
+						["qg"] = 56133,	-- Chen Stormstout (32.1,68.3)
+						["sourceQuests"] = { 30074 }, -- Knocking on the Door
+					}),
+					q(29871, {	-- Clever Ashyo
+						["qg"] = 56110,	-- Xiao (84.0,21.1)
+					}),
+					q(29947, {	-- Crouching Carrot, Hidden Turnip
+						["groups"] = {
+							i(88376),	-- Orange Painted Turnip
+						},
+						["qg"] = 56138,	-- Li Li (68.9,43.3)
+						["sourceQuests"] = { 29945 }, -- Yellow and Red Make Orange
+					}),
+					q(30049, {	-- Doesn't Hold Water
+						["qg"] = 56133,	-- Chen Stormstout (55.9,49.4)
+						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+					}),
+					q(30054, {	-- Enough is Ookin' Enough
+						["qg"] = 57401,	-- Mung-Mung (44.2,34.2)
+						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+					}),
+					q(29982, {	-- Evacuation Orders
+						["groups"] = {
+							i(88027),	-- Silkmaster's Satin Pauldrons
+							i(88026),	-- Sunsoaked Pauldron
+							i(88025),	-- Huangtze Scale Pauldrons
+							i(88024),	-- Paoquan Burnished Pauldrons
+							i(88023),	-- Gilded Fan Silk Pauldrons
+							i(88022),	-- Plainshawk Pauldron
+							i(88021),	-- Wild Plains Pauldrons
+							i(88020),	-- Thunderfoot Heavy Pauldrons
+							i(88019),	-- Sunsong Armored Pauldrons
+						},
+						["qg"] = 56720,	-- Loon Mai (19.5,56.9)
+					}),
+					q(29986, {	-- Fog Wards
+						["groups"] = {
+							i(81814),	-- Necklace of Three Sins
+							i(81815),	-- Jhuuroon's Collar
+							i(81816),	-- Necklace of Relative Peace
+							i(81817),	-- Amulet of the Singing Marshes
+							i(81818),	-- Otouxian Amulet
+						},
+						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
+						["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
+					}),
+					q(30182, {	-- Fox Mastery
+						["qg"] = 63822,	-- Tani (16.2,82.5)
+						["sourceQuests"] = { 30183 }, -- Stalker Mastery
+					}),
+					q(32035, {	-- Got Silk? -- available anytime. Breadcrumb? (55.6,52.1)
+						["qg"] = 59585,	-- Lolo Lio (55.6,52.1)
+					}),
+					q(30050, {	-- Gardener Fran and the Watering Can
+						["groups"] = {
+							i(81844),	-- Gardener's Sickle
+							i(81845),	-- Gardener's Wand
+							i(81846),	-- Fran's Spear
+							i(81847),	-- Gardener's Axe
+							i(81848),	-- Fran's Handaxe
+							i(81849),	-- Fran's Crossbow
+							i(81850),	-- Gardener's Mace
+							i(81851),	-- Fran's Golden Mace
+							i(81852),	-- Fran's Dagger
+							i(81853),	-- Fran's Bronze Mace
+						},
+						["qg"] = 62377,	-- Gardener Fran (48.3,33.4)
+						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+					}),
+					q(30028, {	-- Grain Recovery
+						["qg"] = 57211,	-- Grainlord Kai (52.7,62.9)
+						["sourceQuests"] = {
+							30030,	-- Out of Sprite
+							30031,	-- Taste Test
+							30029,	-- Wee Little Shenanigans
+						},
+					}),
+					q(29919, {	-- Great Minds Drink Alike
+						["qg"] = 56133,	-- Chen Stormsout (75.3,35.5)
+						["sourceQuests"] = { 29918 },	-- A Lesson in Bravery
+					}),
+					q(30260, {	-- Growing the Farm I: The Weeds
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["description"] = "Must be Honored with The Tillers to start this quest.",
+					}),
+					q(30516, {	-- Growing the Farm I: A Little Problem
+						["qg"] = 57385,	-- Gai Lan (38.7,51.7)
+						["sourceQuests"] = { 30260 }, -- Growing the Farm I: The Weeds
+					}),
+					q(30053, {	-- Hop Hunting
+						["qg"] = 56133,	-- Chen Stormstout (55.9,49.4)
+						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+					}),
+					q(30085, {	-- Into the Brewery
+						["qg"] = 56133,	-- Chen Stormstout (36.0,69.1)
+						["sourceQuests"] = { 30078 }, -- Cleaning House
+					}),
+					qh(30653, {	-- It Does You No Good In The Keg
+						["qg"] = 56474,	-- Mudmug (18.1,55.7)
+						["sourceQuests"] = { 29990 }, -- Training and Discipline
+					}),
+					qa(29874, {	-- Kang Bramblestaff
+						["qg"] = 56110,	-- Xiao (84.0,21.1)
+					}),
+					qh(29875, {	-- Kang Bramblestaff
+						["qg"] = 56110,	-- Xiao (84.0,21.1)
+					}),
+					q(30074, {	-- Knocking on the Door
+						["qg"] = 56133,	-- Chen Stormstout
+						["sourceQuests"] = { 30073 }, -- The Emperor
+					}),
+					i(83767, {	-- Krosh's Back
+						q(29758, {	-- Guess Whose Back
+							["qg"] = 56833,	-- Krosh (64.5,25.7)
+						}),
+					}),
+					q(29944,  {  	-- Leaders Among Breeders
+						["groups"] = {
+							i(88375),  -- Turnip Punching Bag
+						},
+						["qg"] = 56133,	-- Chen Stormsout (68.9,43.2)
+						["sourceQuests"] = { 29919 }, -- Great Minds Drink Alike
+					}),
+					q(30535, {	-- Learn and Grow I: Seeds
+						["qg"] = 58646, -- Farmer Yoon (52.2,48.8)
+						["sourceQuests"] = { 30252 }, -- A Helping Hand
+					}),
+					q(30254, {	-- Learn and Grow II: Tilling and Planting
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["sourceQuests"] = { 30535 }, -- Learn and Grow I: Seeds
+					}),
+					q(30255, {	-- Learn and Grow III: Tending Crops
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["sourceQuests"] = { 30254 }, -- Learn and Grow II: Tilling and Planting
+					}),
+					q(30256, {	-- Learn and Grow IV: Harvesting
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["sourceQuests"] = { 30255 }, -- Learn and Grow III: Tending Crops
+					}),
+					q(30257, {	-- Learn and Grow V: Halfhill Market
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["sourceQuests"] = { 30256 }, -- Learn and Grow IV: Harvesting
+					}),
+					q(31945, {	-- Learn and Grow VI: Gina's Vote
+						["qg"] = 58706,	-- Gina Mudclaw (53.2,51.8)
+						["sourceQuests"] = { 30257 }, -- Learn and Grow V: Halfhill Market
+					}),
+					q(29949, {	-- Legacy
+						["qg"] = 56133,	-- Chen Stormstout (68.9,43.1)
+						["sourceQuests"] = {
+							29947,	-- Crouching Carrot, Hidden Turnip
+							29946,	-- The Warren-Mother
+							29948,	-- Thieves to the Core
+						},
+					}),
+					q(30048, {	-- Li Li and the Grain
+						["qg"] = 56133,	-- Chen Stormstout (55.9,49.4)
+						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+					}),
+					q(29950, {	-- Li Li's Day Off
+						["qg"] = 56138,	-- Li Li (68.8,43.4)
+						["sourceQuests"] = { 29949 },	-- Legacy
+					}),
+					q(29872, {	-- Lin Tenderpaw
+						["qg"] = 56110,	-- Xiao (84.0,21.1)
+						["isBreadcrumb"] = true,
+					}),
+					q(29909, {	-- Low Turnip Turnout
+						["qg"] = 56204,	-- Pang Thunderfoot (83.7,21.0)
+						["sourceQuests"] = {
+							29877,	-- A Poor Grasp of the Basics
+							29908,	-- A Seemingly Endless Nuisance
+						},
+					}),
+					q(29917, {	-- Lupello
+						["qg"] = 56208,	-- Francis the Shepherd Boy (78.2,32.9)
+						["sourceQuests"] = { 29915 },	-- A Neighbor's Duty
+					}),
+					q(30058, {	-- Mothallus!
+						["groups"] = {
+							i(88034),	-- Sunsoaked Vest
+							i(88033),	-- Huangtze Scale Vest
+							i(88032),	-- Paoquan Vest
+							i(88031),	-- Plainshawk Vest
+							i(88030),	-- Wild Plains Breastplate
+							i(88029),	-- Thunderfoot Vest
+							i(88028),	-- Sunsong Vest
+						},
+						["qg"] = 57407,	-- Master Goh (63.6,58.5)
+						["sourceQuests"] = {
+							30059,	-- The Moth Rebellion
+							30072,	-- Where Silk Comes From
+						},
+					}),
+					q(29951, {	-- Muddy Water
+						["groups"] = {
+							i(81778),	-- Silkmaster's Satin Treads
+							i(81779),	-- Sunsoaked Footguards
+							i(81780),	-- Huangtze Scale Sabatons
+							i(81781),	-- Paoquan Burnished Greaves
+							i(81782),	-- Gilded Fan Silk Treads
+							i(81783),	-- Plainshawk Boots
+							i(81784),	-- Wild Plains Sabatons
+							i(81785),	-- Thunderfoot Heavy Warboots
+							i(81786),	-- Sunsong Armored Warboots
+						},
+						["qg"] = 56474,	-- Mudmug (68.7,43.1)
+						["sourceQuests"] = { 29949 },	-- Legacy
+					}),
+					q(30258, {	-- Mung-Mung's Vote I: A Hozen's Problem
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["sourceQuests"] = { 31945 }, -- Learn and Grow VI: Gina's Vote
+					}),
+					q(30259, {	-- Mung-Mung's Vote II: Rotten to the Core
+						["qg"] = 57401,	-- Mung-Mung (44.2,34.2)
+						["sourceQuests"] = { 30258 }, -- Mung-Mung's Vote I: A Hozen's Problem
+					}),
+					q(31946, {	-- Mung-Mung's Vote III: The Great Carrot Caper
+						["qg"] = 57401,	-- Mung-Mung (44.2,34.2)
+						["sourceQuests"] = { 30258 }, -- Mung-Mung's Vote II: Rotten to the Core
+					}),
+					q(30181, {	-- Mushan Mastery
+						["qg"] = 58422,	-- Hemet Nesingwary Jr. (16.1,82.6)
+					}),
+					q(30184, {	-- Mushan Mastery: Darkhide
+						["groups"] = {
+							i(81854),	-- Mushan Chopper
+							i(81855),	-- Darkhide Blade
+							i(81856),	-- Safari Defender
+							i(81857),	-- Darkhide Barrier
+							i(81858),	-- Mushan Sticker
+							i(81859),	-- 'Nessy's Trophy Pincers
+							i(90542),	-- Safari Journal
+							i(90545),	-- Safari Lantern
+						},
+						["qg"] = 58421,	-- Hemet Nesingwary (16.0,82.5)
+						["sourceQuests"] = { 30181 }, -- Mushan Mastery
+					}),
+					q(30030, {	-- Out of Sprite
+						["qg"] = 57209,	-- Grainer Pan
+						["sourceQuests"] = { 30048 }, -- Li Li and the Grain
+					}),
+					q(30186, {	-- Parental Mastery
+						["groups"] = {
+							i(81819),	-- Band of the Big Thing o' the Deep
+							i(81820),	-- Band of the Dance Ritual
+							i(81821),	-- Nesingwary's Signet
+							i(81822),	-- Band of Parental Mastery
+							i(81823),	-- Ring of Torjar's Bane
+						},
+						["qg"] = 58422,	-- Hemet Nesingwary Jr. (19.9,75.6)
+						["sourceQuests"] = { 30185 },	-- Tortoise Mastery
+					}),
+					q(30319, {	-- Pest Problems
+						["qgs"] = { 57402, 59594 },	-- Haohan Mudclaw (2 versions) (53.0,51.7)
+						["sourceQuests"] = { 30257 }, -- Learn and Grow V: Halfhill Market
+						["isDaily"] = true,
+					}),
+					q(29916, {	-- Piercing Talons and Slavering Jaws
+						["qg"] = 56208,	-- Francis the Shepherd Boy (78.2,32.9)
+						["sourceQuests"] = { 29915 },	-- A Neighbor's Duty
+					}),
+					q(29911, {	-- Practically Perfect Produce
+						["qg"] = 56207,	-- Ang Thunderfoot (81.4,24.9)
+						["sourceQuests"] = { 29940 }, -- Taking a Crop
+					}),
+					q(29910, {	-- Rampaging Rodents
+						["groups"] = {
+							i(88370),	-- Puntable Marmot
+						},
+						["qg"] = 56465,	-- Ana Thunderfoot (82.6,26.2)
+						["sourceQuests"] = { 29909 }, -- Low Turnip Turnout
+					}),
+					q(30626, {	-- Retreat!
+						["qg"] = 57198,	-- Guard Captain Oakenshield (11.6,49.5)
+						["sourceQuests"] = { 30625 }, -- Students No More
+					}),
+					q(30057, {	-- Seeing Orange
+						["groups"] = {
+							i(81751),	-- Silkmaster's Satin Mantle
+							i(81752),	-- Sunsoaked Spaulder
+							i(81753),	-- Huangtze Scale Spaulders
+							i(81754),	-- Paoquan Burnished Spaulders
+							i(81755),	-- Gilded Fan Silk Amice
+							i(81756),	-- Plainshawk Spaulder
+							i(81757),	-- Wild Plains Spaulders
+							i(81758),	-- Thunderfoot Heavy Shoulders
+							i(81759),	-- Sunsong Armored Shoulders
+						},
+						["qg"] = 57408,	-- Mina Mudclaw (41.3,38.2)
+						["sourceQuests"] = { 30056 },	-- The Farmer's Daughter
+					}),
+					q(29600, {	-- Snap Judgment
+						["groups"] = {
+							i(81805),	-- Silkmaster's Satin Cuffs
+							i(81806),	-- Sunsoaked Bindings
+							i(81807),	-- Huangtze Scale Armbands
+							i(81808),	-- Paoquan Burnished Bracers
+							i(81809),	-- Gilded Fan Silk Cuffs
+							i(81810),	-- Plainshawk Armwraps
+							i(81811),	-- Wild Plains Wristguards
+							i(81812),	-- Thunderfoot Heavy Armplates
+							i(81813),	-- Sunsong Armored Bracers
+						},
+						["qg"] = 56802,	-- Zhang Yue
+					}),
+					q(30183, {	-- Stalker Mastery
+						["groups"] = {
+							i(84320),	-- Hemet's Satin Leggings
+							i(84321),	-- Hemet's Hide Legguards
+							i(84322),	-- Hemet's Ringmail Leggings
+							i(84323),	-- Hemet's Burnished Legplates
+							i(84324),	-- Hemet's Silk Trousers
+							i(84325),	-- Hemet's Leather Legguards
+							i(84326),	-- Wild Plains Leggings
+							i(84327),	-- Hemet's Heavy Legguards
+							i(84328),	-- Hemet's Armored Legguards
+						},
+						["qg"] = 63822,	-- Tani (16.2,82.5)
+					}),
+					q(32038, {	-- Stag Mastery
+						["qg"] = 58434,	-- Matt "Lucky" Gotcher (15.9,82.2)
+						["sourceQuests"] = {
+							30181,	-- Mushan Mastery
+							30183,	-- Stalker Mastery
+						}
+					}),
+					q(30335, {	-- Stalling the Ravage
+						["qg"] = 58646,	-- Farmer Yoon (52.3,48.8)
+						["sourceQuests"] = { 30257 }, -- Learn and Grow V: Halfhill Market
+						["isDaily"] = true,
+					}),
+					q(29981, {	-- Stemming the Swarm
+						["qg"] = 56111,	-- Lin Tenderpaw (19.9,56.9)
+						["sourceQuests"] = { 29872 }, -- Lin Tenderpaw
+					}),
+					q(30117, {	-- Stoneplow Thirsts
+						["qg"] = 61026,	-- Emmi (36.2,68.4)
+						["sourceQuests"] = { 30078 },	-- Cleaning House
+						["isBreadcrumb"] = true,
+					}),
+					q(30055, {	-- Stormstout's Hops
+						["description"] = "Automatically given to you upon completion of all pre-requisites.",
+						["sourceQuests"] = {
+							30054,	-- Enough is Ookin' Enough
+							30052,	-- Weed War
+							30057,	-- Seeing Orange
+						},
+					}),
+					q(30625, {	-- Students No More
+						["qg"] = 57198,	-- Guard Captain Oakenshield (11.6,49.5)
+						["sourceQuests"] = { 30622 }, -- The Swarm Begins
+					}),
+					q(29940, {	-- Taking a Crop
+						["groups"] = {
+							i(81796),	-- Silkmaster's Satin Gloves
+							i(81797),	-- Sunsoaked Gloves
+							i(81798),	-- Huangtze Scale Gauntlets
+							i(81799),	-- Paoquan Burnished Gloves
+							i(81800),	-- Gilded Fan Silk Handguards
+							i(81801),	-- Plainshawk Gloves
+							i(81802),	-- Wild Plains Gauntlets
+							i(81803),	-- Thunderfoot Heavy Gauntlets
+							i(81804),	-- Sunsong Armored Gauntlets
+						},
+						["qg"] = 56207,	-- Ang Thunderfoot (81.4,24.9)
+						["sourceQuests"] = { 29909 }, -- Low Turnip Turnout
+					}),
+					q(30031, {	-- Taste Test
+						["qg"] = 56138,	-- Li Li (52.7,62.8)
+						["sourceQuests"] = { 30048 }, -- Li Li and the Grain
+					}),
+					q(29992, {	-- Tenderpaw By Name, Tender Paw By Reputation
+						["qg"] = 56111,	-- Lin Tenderpaw (18.1,31.0)
+						["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
+					}),
+					q(30047, {	-- The Chen Taste Test
+						["qg"] = 56138,	-- Li Li (52.7,62..8)
+						["sourceQuests"] = { 30032 }, -- The Quest for Better Barley
+					}),
+					q(30073, {	-- The Emperor
+						["qg"] = 56133,	-- Chen Stormstout (55.9,49.4)
+						["sourceQuests"] = {
+							30055,	-- Stormstout's Hops
+						},
+					}),
+					q(29912, {	-- The Fabulous Miss Fanny
+						["qg"] = 56204,	-- Pang Thunderfoot (83.7,21.0)
+						["sourceQuests"] = { 29911 }, -- Practically Perfect Produce
+					}),
+					q(30076, {	-- The Fanciest Water
+						["qg"] = 56474,	-- Mudmug (32.3,68.3)
+						["sourceQuests"] = { 30074 },	-- Knocking on the Door
+					}),
+					q(30056, {	-- The Farmer's Daughter
+						["qg"] = 62385,	-- Den Mudclaw (44.3,34.2)
+						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+					}),
+					q(29581, {	-- The Golden Dream
+						["qg"] = 56802,	-- Zhang Yue
+						["sourceQuests"] = { 29577 },	-- Ashyo's Vision
+					}),
+					q(30628,  {  	-- The Gratitude of Stoneplow
+						["groups"] = {
+							i(81476),	-- Nayeli Treads
+							i(81477),	-- Mortbreath Footguards
+							i(81478),	-- Deepwild Sabatons
+							i(81479),	-- Narsong Greaves
+							i(81480),	-- Angkhal Treads
+							i(81481),	-- Riverblade Boots
+							i(81482),	-- Sarjun Sabatons
+							i(81483),	-- Korjan Warboots
+							i(81484),	-- Dojani Warboots
+						},
+						["qg"] = 56720,	-- Loon Mai
+						["sourceQuests"] = { 30627 }, -- The Gratitude of Stoneplow
+					}),
+					q(30051, {	-- The Great Water Hunt
+						["groups"] = {
+							i(81839),	-- Embrace of Trees
+							i(81840),	-- Dustback Cloak
+							i(81841),	-- Tawnyhide Cape
+							i(81842),	-- Mudmug's Cloak
+							i(81843),	-- Cloak of the Grassy Cline
+						},
+						["qg"] = 56474,	-- Mudmug
+						["sourceQuests"] = { 30049 }, -- Doesn't Hold Water
+					}),
+					q(29983, {	-- The Hidden Master
+						["qg"] = 56720,	-- Loon Mai (19.6,56.8)
+						["sourceQuests"] = {
+							29981,	-- Stemming the Swarm
+							29982,	-- Evacuation Orders
+						},
+					}),
+					q(31936, {	-- The "Jinyu Princess" Irrigation System
+						["qg"] = 58706,	-- Gina Mudclaw (53.2,51.8)
+						["description"] = "Begins with a purchase of the \"Jinyu Princess\" Irrigation System from Gina Mudclaw",
+						["sourceQuests"] = { 30516 }, -- Growing the Farm I: A Little Problem
+					}),
+					q(30623, {	-- The Mantidote
+						["qg"] = 59855,	-- Mei Barrelbottom (18.0,56.5)
+						["sourceQuests"] = { 29990 }, -- Training and Discipline
+					}),
+					q(29913, {	-- The Meat They'll Eat
+						["groups"] = {
+							i(88018),	-- Thunderfoot Heavy Cap
+							i(88017),	-- Sunsong Armored Cap
+							i(88016),	-- Paoquan Burnished Cap
+							i(88015),	-- Huangtze Scale Headguard
+							i(88014),	-- Sunsoaked Cap
+							i(88013),	-- Silkmaster's Satin Cap
+							i(88012),	-- Gilded Fan Silk Cap
+							i(88011),	-- Wild Plains Headguard
+							i(88010),	-- Plainshawk Cap
+						},
+						["qg"] = 56205,	-- Liang Thunderfoot (75.2,24.0)
+						["sourceQuests"] = { 29912 }, -- The Fabular Miss Fanny
+					}),
+					q(30059, {	-- The Moth Rebellion
+						["qg"] = 57424,	-- Journeyman Chu (63.5,58.4)
+						["sourceQuests"] = { 32035 }, -- Got Silk?
+					}),
+					q(30032,  {	-- The Quest for Better Barley
+						["groups"] = {
+							i(81787),	-- Silkmaster's Satin Cord
+							i(81788),	-- Sunsoaked Belt
+							i(81789),	-- Huangtze Scale Waistguard
+							i(81790),	-- Paoquan Burnished Clasp
+							i(81791),	-- Gilded Fan Silk Cord
+							i(81792),	-- Plainshawk Belt
+							i(81793),	-- Wild Plains Belt
+							i(81794),	-- Thunderfoot Heavy Girdle
+							i(81795),	-- Sunsong Armored Girdle
+						},
+						["qg"] = 57211,	-- Grainlord Kai (52.7,63.0)
+						["sourceQuests"] = { 30029 }, -- Wee Little Shenanigans
+					}),
+					q(30627, {	-- The Savior of Stoneplow
+						["groups"] = {
+							ach(7502),	-- Savior of Stoneplow
+						},
+						["qg"] = 59856,	-- Master Bruised Paw (17.9,55.7)
+						["sourceQuests"] = { 30626 }, -- Retreat!
+					}),
+					q(30622, {	-- The Swarm Begins
+						["qg"] = 56720,	-- Loon Mai
+						["sourceQuests"] = { 29990 }, -- Training and Discipline
+					}),
+					q(29946, {	-- The Warren-Mother
+						["qg"] = 56133,	-- Chen Stormstout (68.9,43.2)
+						["sourceQuests"] = { 29944 }, -- Leaders Among Breeders
+					}),
+					q(29985, {	-- They Will Be Mist
+						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
+						["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
+					}),
+					q(29948, {	-- Thieves to the Core
+						["qg"] = 56474,	-- Mudmug (68.7,43.2)
+						["sourceQuests"] = {
+							29944,	-- Leaders Among Breeders
+							29945,	-- Yellow and Red Make Orange
+						},
+					}),
+					q(30185, {	-- Tortoise Mastery
+						["qg"] = 58422,	-- Hemet Nesingwary Jr. (16.1,82.6)
+						["sourceQuests"] = {
+							30182,	-- Fox Mastery
+							30184,	-- Mushan Mastery: Darkhide
+							32038,	-- Stag Mastery
+						},
+					}),
+					q(29990, {	-- Training and Discipline
+						["qg"] = 56111,	-- Lin Tenderpaw (18.1,31.0)
+						["sourceQuests"] = { 29989 }, -- Unyielding Fists: Trial of Stone
+					}),
+					q(29984, {	-- Unyielding Fists: Trial of Bamboo
+						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
+						["sourceQuests"] = { 29983 },	-- The Hidden Master
+					}),
+					q(29989, {	-- Unyielding Fists: Trial of Stone
+						["groups"] = {
+							i(81760),	-- Silkmaster's Satin Robe
+							i(81761),	-- Sunsoaked Breastplate
+							i(81762),	-- Huangtze Scale Armor
+							i(81763),	-- Paoquan Burnished Chestguard
+							i(81764),	-- Gilded Fan Silk Robe
+							i(81765),	-- Plainshawk Tunic
+							i(81766),	-- Wild Plains Chestguard
+							i(81767),	-- Thunderfoot Heavy Chestpiece
+							i(81768),	-- Sunsong Armored Chestpiece
+						},
+						["qg"] = 56714, -- Master Bruised Paw (18.3,31.2)
+						["sourceQuests"] = { 29988 },	-- A Taste For Eggs
+					}),
+					q(29987, {	-- Unyielding Fists: Trial of Wood
+						["qg"] = 56714, -- Master Bruised Paw (18.3,31.2)
+						["sourceQuests"] = {
+							29986,	-- Fog Wards
+							29992,	-- Tenderpaw By Name, Tender Paw By Reputation
+							29985,	-- They Will Be Mist
+						},
+					}),
+					o(213650, { -- Virmen Treasure Cache
+						q(31405, {	-- Virmen Treasure Cache (part of "Treasure of Pandaria" achievement
+							["description"] = "Located in a cave hidden under some bushes in the mountains of north-east Paoquan Hollow at (23.2,30.8)",
+						}),
+					}),
+					q(30267, {	-- Watery Woes
+						["qg"] = 58736,	-- Gladecaster Lang (61.0,32.9)
+						["sourceQuests"] = { 29871 }, -- Clever Ashyo
+					}),
+					q(30029, {	-- Wee Little Shenanigans
+						["groups"] = {
+							i(84333),	-- Grainlord's Amulet
+							i(84332),	-- Grainlord's Pendant
+							i(84331),	-- Grainlord's Necklace
+							i(84330),	-- Grainlord's Choker
+							i(84329),	-- Grainlord's Locket
+						},
+						["qg"] = 57211,	-- Grainlord Kai (52.7,63.0)
+						["sourceQuests"] = { 30048 }, -- Li Li and the Grain
+					}),
+					q(30052, {	-- Weed War
+						["qg"] = 57385,	-- Gai Lan (38.6,51.6)
+						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+					}),
+					q(30325, {	-- Where It Counts
+						["qg"] = 58708,	-- Sho (53.1,52.0)
+						["sourceQuests"] = { 30257 }, -- Learn and Grow V: Halfhill Market
+						["isDaily"] = true,
+					}),
+					q(30072, {	-- Where Silk Comes From
+						["groups"] = {
+							i(84343),	-- Silkmaster's Cloak
+							i(84342),	-- Silkmaster's Manteau
+							i(84341),	-- Silkmaster's Cape
+							i(84340),	-- Silkmaster's Drape
+							i(84339),	-- Silkmaster's Shawl
+						},
+						["qg"] = 57405,	-- Silkmaster Tsai (62.7,59.7)
+						["sourceQuests"] = { 32035 }, -- Got Silk?
+					}),
+					q(29945,  {  	-- Yellow and Red Make Orange
+						["groups"] = {
+							i(88377), 		-- Turnip Paint "Gun"
+						},
+						["qg"] = 56138,	-- Li Li (68.9,43.3)
+						["sourceQuests"] = { 29919 }, -- Great Minds Drink Alike
+					}),
 --[[
-					q(31329),	-- A Beautiful Brooch
 					q(30400),	-- A Blue Feather for Chee Chee
 					q(30382),	-- A Blue Feather for Ella
 					q(30419),	-- A Blue Feather for Farmer Fung
@@ -33,7 +879,6 @@ _.Zones =
 					q(30394),	-- A Blue Feather for Old Hillpaw
 					q(30406),	-- A Blue Feather for Sho
 					q(30431),	-- A Blue Feather for Tina
-					q(30275),	-- A Crocolisk Tale
 					q(30402),	-- A Dish for Chee Chee
 					q(30386),	-- A Dish for Ella
 					q(30421),	-- A Dish for Farmer Fung
@@ -49,12 +894,10 @@ _.Zones =
 					q(30473),	-- A Gift For Fish
 					q(30475),	-- A Gift For Fung
 					q(30479),	-- A Gift For Gina
-					q(30477),	-- A Gift For Haohan
 					q(30478),	-- A Gift For Jogu
 					q(30476),	-- A Gift For Old Hillpaw
 					q(30472),	-- A Gift For Sho
 					q(30470),	-- A Gift For Tina
-					q(30252),	-- A Helping Hand
 					q(30399),	-- A Jade Cat for Chee Chee
 					q(30381),	-- A Jade Cat for Ella
 					q(30418),	-- A Jade Cat for Farmer Fung
@@ -65,7 +908,6 @@ _.Zones =
 					q(30393),	-- A Jade Cat for Old Hillpaw
 					q(30405),	-- A Jade Cat for Sho
 					q(30430),	-- A Jade Cat for Tina
-					q(29918),	-- A Lesson in Bravery
 					q(30398),	-- A Lovely Apple for Chee Chee
 					q(30189),	-- A Lovely Apple for Ella
 					q(30417),	-- A Lovely Apple for Farmer Fung
@@ -86,9 +928,6 @@ _.Zones =
 					q(30395),	-- A Marsh Lily for Old Hillpaw
 					q(30407),	-- A Marsh Lily for Sho
 					q(30432),	-- A Marsh Lily for Tina
-					q(29915),	-- A Neighbor's Duty
-					q(29877),	-- A Poor Grasp of the Basics
-					q(31672),	-- A Pumpkin-y Perfume
 					q(30397),	-- A Ruby Shard for Chee Chee
 					q(30160),	-- A Ruby Shard for Ella
 					q(30416),	-- A Ruby Shard for Farmer Fung
@@ -99,229 +938,106 @@ _.Zones =
 					q(30391),	-- A Ruby Shard for Old Hillpaw
 					q(30403),	-- A Ruby Shard for Sho
 					q(30428),	-- A Ruby Shard for Tina
+]]--
+--[[
+					q(31329),	-- A Beautiful Brooch
+					q(30275),	-- A Crocolisk Tale
+					q(31672),	-- A Pumpkin-y Perfume
 					q(30534),	-- A Second Hand
-					q(29908),	-- A Seemingly Endless Nuisance
 					q(32189),	-- A Shabby New Face
-					q(29988),	-- A Taste For Eggs
 					q(31325),	-- A Very Nice Necklace
 					q(31341),	-- A Wolf In Sheep's Clothing
 					q(31538),	-- A Worthy Brew
 					q(31471),	-- Agile as a Tiger
 					q(31328),	-- An Exquisite Earring
-					q(29577),	-- Ashyo's Vision
-					q(29914),	-- Back to the Sty
-					q(30172),	-- Barreling Along
-					q(30077),	-- Barrels, Man
-					q(29757),	-- Bottletoads
-					q(29952),	-- Broken Dreams
 					q(31323),	-- Buy A Fish A Brewery?
 					q(31320),	-- Buy A Fish A Drink?
 					q(31322),	-- Buy A Fish A Keg?
 					q(31321),	-- Buy A Fish A Round?
 					q(32046),	-- Candy Bucket
 					q(32048),	-- Candy Bucket
-]]--
-					sq(33021, qg(64231, q(33022, {	-- Catch and Carry
-						un(1, i(101631)),	-- Recipe: Noodle Cart Kit
-						recipe(145038),	-- Noodle Cart Kit
-						un(1, i(101728)),	-- Recipe: Grand Noodle Cart Kit
-						un(1, recipe(145167)),	-- Grand Noodle Cart Kit
-					}))),
---[[
 					q(30318),	-- Chasing the Chicken
-					q(29907),	-- Chen and Li Li
-					q(30046),	-- Chen's Resolution
-					q(32045),	-- Children of the Water
 					q(30329),	-- Cindergut Peppers
 					q(30078),	-- Cleaning House
-					q(30075),	-- Clear the Way
-					q(29871),	-- Clever Ashyo
-					q(29947),	-- Crouching Carrot, Hidden Turnip
-					q(30049),	-- Doesn't Hold Water
 					q(31537),	-- Ella's Taste Test
-					q(31477),	-- Endurance
-					q(30054),	-- Enough is Ookin' Enough
-					q(29982),	-- Evacuation Orders
 					q(31279),	-- Everything I Know About Cooking
 					q(31486),	-- Everything I Know About Cooking
 					q(30517),	-- Farmer Fung's Vote I: Yak Attack
 					q(30518),	-- Farmer Fung's Vote II: On the Loose
 					q(31947),	-- Farmer Fung's Vote III: Crazy For Cabbage
 					q(30332),	-- Fatty Goatsteak
-					q(29986),	-- Fog Wards
-					q(30182),	-- Fox Mastery
-					q(30050),	-- Gardener Fran and the Watering Can
-					q(32035),	-- Got Silk?
-					q(30028),	-- Grain Recovery
 					q(31955),	-- Grand Master Nishi
-					q(29919),	-- Great Minds Drink Alike
-					q(30516),	-- Growing the Farm I: A Little Problem
-					q(30260),	-- Growing the Farm I: The Weeds
 					q(30524),	-- Growing the Farm II: Knock on Wood
 					q(30523),	-- Growing the Farm II: The Broken Wagon
 					q(30529),	-- Growing the Farm III: The Mossy Boulder
-					q(29758),	-- Guess Whose Back
 					q(30521),	-- Haohan's Vote I: Bungalow Break-In
 					q(30522),	-- Haohan's Vote II: The Real Culprits
 					q(30525),	-- Haohan's Vote III: Pure Poison
 					q(30527),	-- Haohan's Vote IV: Melons For Felons
 					q(30528),	-- Haohan's Vote V: Chief Yip-Yip
-					q(31480),	-- Have a Drink
 					q(32018),	-- His Name Was... Stormstout
 					q(38935),	-- His Name Was... Stormstout
 					q(32502),	-- Honor the Flame
 					q(32497),	-- Honor the Flame
-					q(30053),	-- Hop Hunting
 					q(30376),	-- Hope Springs Eternal
 					q(32682),	-- Inherit the Earth
-					q(30085),	-- Into the Brewery
-]]--
-					sq(33022, qg(64231, q(33024, {	-- Is That A Real Measurement?
-						un(1, i(101664)),	-- Recipe: Deluxe Noodle Cart Kit
-						recipe(145061),	-- Deluxe Noodle Cart Kit
-						un(1, i(101739)),	-- Recipe: Grand Deluxe Noodle Cart Kit
-						un(1, recipe(145170)),	-- Grand Deluxe Noodle Cart Kit
-					}))),
---[[
-					qa( 30624),	-- It Does You No Good In The Keg
-					qh( 30653),	-- It Does You No Good In The Keg
+					qa(30624),	-- It Does You No Good In The Keg
 					q(31942),	-- It's Melon Time
 					q(31313),	-- Just A Folk Story
-					qa( 29874),	-- Kang Bramblestaff
-					qh( 29875),	-- Kang Bramblestaff
 					q(29873),	-- Ken-Ken
-					q(30074),	-- Knocking on the Door
-					q(29944),	-- Leaders Among Breeders
-					q(30535),	-- Learn and Grow I: Seeds
-					q(30254),	-- Learn and Grow II: Tilling and Planting
-					q(30255),	-- Learn and Grow III: Tending Crops
-					q(30256),	-- Learn and Grow IV: Harvesting
-					q(30257),	-- Learn and Grow V: Halfhill Market
-					q(31945),	-- Learn and Grow VI: Gina's Vote
-					q(29949),	-- Legacy
-					q(30048),	-- Li Li and the Grain
-					q(29950),	-- Li Li's Day Off
-					q(29872),	-- Lin Tenderpaw
 					q(30526),	-- Lost and Lonely
 					q(31338),	-- Lost Sheepie
 					q(31339),	-- Lost Sheepie... Again
-					q(29909),	-- Low Turnip Turnout
-					q(29917),	-- Lupello
 					q(31531),	-- Mission: Aerial Threat
 					q(31529),	-- Mission: Culling The Vermin
 					q(31532),	-- Mission: Predator of the Cliffs
 					q(31530),	-- Mission: The Hozen Dozen
 					q(30322),	-- Money Matters
-					q(30058),	-- Mothallus!
-					q(29951),	-- Muddy Water
-					q(30258),	-- Mung-Mung's Vote I: A Hozen's Problem
-					q(30259),	-- Mung-Mung's Vote II: Rotten to the Core
-					q(31946),	-- Mung-Mung's Vote III: The Great Carrot Caper
-					q(30181),	-- Mushan Mastery
-					q(30184),	-- Mushan Mastery: Darkhide
 					q(30519),	-- Nana's Vote I: Nana's Secret Recipe
 					q(31948),	-- Nana's Vote II: The Sacred Springs
 					q(31949),	-- Nana's Vote III: Witchberry Julep
-					q(32685),	-- No Fishing Pole Necessary!
 					q(33146),	-- Noodle Time
 					q(33358),	-- Noodle Time: Bonus
 					q(30324),	-- Not in Chee-Chee's Backyard
 					q(31340),	-- Oh Sheepie...
 					q(31314),	-- Old Man Thistle's Treasure
 					q(32198),	-- One Magical, Flying Kingdom's Trash...
-					q(30030),	-- Out of Sprite
-					q(30186),	-- Parental Mastery
-					q(30319),	-- Pest Problems
-					q(29916),	-- Piercing Talons and Slavering Jaws
-					q(29911),	-- Practically Perfect Produce
 					q(31536),	-- Preserving Freshness
-					q(29910),	-- Rampaging Rodents
-					q(31302),	-- Ready for Greatness
 					q(31673),	-- Red Blossom Leeks, You Make the Croc-in' World Go Down
 					q(31535),	-- Replenishing the Pantry
-					q(30626),	-- Retreat!
-]]--
-					sq(33107, qg(64231, q(33021))),	-- Secrets Lost, Forever?
---[[
 					q(33139),	-- Secrets Lost, Forever? - Removed
-					q(30057),	-- Seeing Orange
 					q(30337),	-- Simian Sabotage
-					q(29600),	-- Snap Judgment
-					q(31281),	-- So You Want to Be a Chef...
 					q(31941),	-- Squash Those Foul Odors
-					q(32038),	-- Stag Mastery
-					q(30183),	-- Stalker Mastery
-					q(30335),	-- Stalling the Ravage
 					q(30334),	-- Stealing is Bad... Re-Stealing is OK
-					q(29981),	-- Stemming the Swarm
-					q(30117),	-- Stoneplow Thirsts
-					q(30055),	-- Stormstout's Hops
-					q(31467),	-- Strong as a Tiger
-					q(30625),	-- Students No More
-					q(29940),	-- Taking a Crop
-					q(30031),	-- Taste Test
-					qa( 31392),	-- Temple of the White Tiger
-					qh( 31393),	-- Temple of the White Tiger
-					q(29992),	-- Tenderpaw By Name, Tender Paw By Reputation
+					qa(31392),	-- Temple of the White Tiger
+					qh(31393),	-- Temple of the White Tiger
 					q(31670),	-- That Dangling Carrot
 					q(31938),	-- The "Earth-Slasher" Master Plow
-					q(31936),	-- The "Jinyu Princess" Irrigation System
 					q(31534),	-- The Beginner's Brew
 					q(31669),	-- The Cabbage Test
-					q(30047),	-- The Chen Taste Test
-					q(30073),	-- The Emperor
-					q(29912),	-- The Fabulous Miss Fanny
-					q(30076),	-- The Fanciest Water
-					q(30056),	-- The Farmer's Daughter
-					q(29581),	-- The Golden Dream
-					q(30628),	-- The Gratitude of Stoneplow
-					q(30051),	-- The Great Water Hunt
 					q(31315),	-- The Heartland Legacy
-					q(29983),	-- The Hidden Master
 					q(30336),	-- The Kunzen Hunter-Chief
 					q(30326),	-- The Kunzen Legend-Chief
 					q(30333),	-- The Lesser of Two Evils
-					q(30623),	-- The Mantidote
-					q(29913),	-- The Meat They'll Eat
 					q(30331),	-- The Mile-High Grub
-					q(30059),	-- The Moth Rebellion
 					q(31312),	-- The Old Map
 					q(31674),	-- The Pink Turnip Challenge
-					q(30032),	-- The Quest for Better Barley
-					qh( 31255),	-- The Road to Kun-Lai
-					qa( 31254),	-- The Road to Kun-Lai
-					q(30627),	-- The Savior of Stoneplow
+					qh(31255),	-- The Road to Kun-Lai
+					qa(31254),	-- The Road to Kun-Lai
 					q(30086),	-- The Search for the Hidden Master
 					q(33027),	-- The Secret Ingredient Is...
-]]--
-					sq(33026, qg(64231, q(33027, {	-- The Secret Ingredient Is...
-						un(1, i(101663)),	-- Recipe: Pandaren Treasure Noodle Cart Kit
-						recipe(145062),	-- Pandaren Treasure Noodle Cart Kit
-						un(1, i(101741)),	-- Recipe: Grand Pandaren Treasure Noodle Cart Kit
-						un(1, recipe(145197)),	-- Grand Pandaren Treasure Noodle Cart Kit
-					}))),
---[[
 					q(31474),	-- The Soup of Contemplation
 					q(31476),	-- The Spirit of Cooking
-					q(30622),	-- The Swarm Begins
 					q(30328),	-- The Thousand-Year Dumpling
-					qh( 31374),	-- The Tillers
-					qa( 31372),	-- The Tillers
-					q(30330),	-- The Truffle Shuffle
-					q(29946),	-- The Warren-Mother
+					qh(31374),	-- The Tillers
+					qa(31372),	-- The Tillers
 					q(31675),	-- The White Turnip Treatment
 					q(33026),	-- These Aren't Your Fatty Goatsteaks
-]]--
-					sq(33024, qg(64231, q(33026))),	-- These Aren't Your Fatty Goatsteaks
---[[
 					q(32019),	-- They Call Him... Stormstout
 					q(30323),	-- They Don't Even Wear Them
-					q(29985),	-- They Will Be Mist
-					q(29948),	-- Thieves to the Core
 					q(31937),	-- "Thunder King" Pest Repellers
 					q(31326),	-- Tina's Tasteful Tiara
 					q(31521),	-- To Be a Master
-					q(30185),	-- Tortoise Mastery
 					q(31153),	-- Tracking Event - Saved Diaani
 					q(31154),	-- Tracking Event - Saved Zuulo
 					q(30531),	-- Tracking Event: Finished First Expansion
@@ -341,239 +1057,30 @@ _.Zones =
 					q(33901),	-- Tracking Quest: Activated Arkonite 4
 					q(33903),	-- Tracking Quest: Romuul & Yrel Leave for Teluuna
 					q(33899),	-- Tracking Quest: Turn on the Holograms
-					q(29990),	-- Training and Discipline
-					q(29984),	-- Unyielding Fists: Trial of Bamboo
-					q(29989),	-- Unyielding Fists: Trial of Stone
-					q(29987),	-- Unyielding Fists: Trial of Wood
-					qh( 30241),	-- Warn Stoneplow
-					qa( 30360),	-- Warn Stoneplow
+					qh(30241),	-- Warn Stoneplow
+					qa(30360),	-- Warn Stoneplow
 					q(30317),	-- Water, Water Everywhere
-					q(30267),	-- Watery Woes
-					q(31479),	-- Way of the Brew
-					q(31311),	-- Way of the Grill
-					q(31478),	-- Way of the Oven
-					q(31472),	-- Way of the Pot
-					q(31475),	-- Way of the Steamer
-					q(31470),	-- Way of the Wok
-					q(30029),	-- Wee Little Shenanigans
-					q(30052),	-- Weed War
 					q(30321),	-- Weed War II
-					q(30325),	-- Where It Counts
-					q(30072),	-- Where Silk Comes From
 					q(31943),	-- Which Berries? Witchberries.
 					q(31671),	-- Why Not Scallions?
-					qh( 32642),	-- Work Order: Dominance Offensive I
-					qh( 32643),	-- Work Order: Dominance Offensive II
+					qh(32642),	-- Work Order: Dominance Offensive I
+					qh(32643),	-- Work Order: Dominance Offensive II
 					q(32647),	-- Work Order: Golden Lotus I
 					q(32648),	-- Work Order: Golden Lotus II
-					qa( 32944),	-- Work Order: Kirin Tor Offensive I
-					qa( 32945),	-- Work Order: Kirin Tor Offensive II
-					qa( 32645),	-- Work Order: Operation: Shieldwall I
-					qa( 32646),	-- Work Order: Operation: Shieldwall II
+					qa(32944),	-- Work Order: Kirin Tor Offensive I
+					qa(32945),	-- Work Order: Kirin Tor Offensive II
+					qa(32645),	-- Work Order: Operation: Shieldwall I
+					qa(32646),	-- Work Order: Operation: Shieldwall II
 					q(32649),	-- Work Order: Shado-Pan I
 					q(32650),	-- Work Order: Shado-Pan II
-					qh( 32942),	-- Work Order: Sunreaver Onslaught I
-					qh( 32943),	-- Work Order: Sunreaver Onslaught II
+					qh(32942),	-- Work Order: Sunreaver Onslaught I
+					qh(32943),	-- Work Order: Sunreaver Onslaught II
 					q(32653),	-- Work Order: The August Celestials I
 					q(32657),	-- Work Order: The August Celestials II
 					q(32658),	-- Work Order: The Klaxxi I
 					q(32659),	-- Work Order: The Klaxxi II
-					q(29945),	-- Yellow and Red Make Orange
 					q(30327),	-- You Have to Burn the Ropes
-					q(32684),	-- You Want Fish?
 --]]
-					q(31820,  {		-- A Present for Teacher
-						["groups"] = {
-							i(86468),	-- Apron
-						},
-						["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.|r"
-					}),
-					q(29908,  {  	-- A Seemingly Endless Nuisance
-						i(81769),
-						i(81770),
-						i(81771),
-						i(81772),
-						i(81773),
-						i(81774),
-						i(81775),
-						i(81776),
-						i(81777),
-					}),
-					q(30078,  {  	-- Cleaning House
-						i(81742),
-						i(81743),
-						i(81744),
-						i(81745),
-						i(81746),
-						i(81747),
-						i(81748),
-						i(81749),
-						i(81750),
-					}),
-					q(29982,  {  	-- Evacuation Orders
-						i(88027),
-						i(88026),
-						i(88025),
-						i(88024),
-						i(88023),
-						i(88022),
-						i(88021),
-						i(88020),
-						i(88019),
-					}),
-					q(30050,  {  	-- Gardener Fran and the Watering Can
-						i(81844),
-						i(81845),
-						i(81846),
-						i(81847),
-						i(81848),
-						i(81849),
-						i(81850),
-						i(81851),
-						i(81852),
-						i(81853),
-					}),
-					q(29944,  {  	-- Leaders Among Breeders
-						i(88375),  -- Turnip Punching Bag
-					}),
-					q(30058,  {  	-- Mathallus!
-						i(88034),
-						i(88033),
-						i(88032),
-						i(88031),
-						i(88030),
-						i(88029),
-						i(88028),
-					}),
-					q(29951,  {  	-- Muddy Water
-						i(81778),
-						i(81779),
-						i(81780),
-						i(81781),
-						i(81782),
-						i(81783),
-						i(81784),
-						i(81785),
-						i(81786),
-					}),
-					q(30184,  {  	-- Mushan Mastery: Darkhide
-						i(81854),
-						i(81855),
-						i(81856),
-						i(81857),
-						i(81858),
-						i(81859),
-						i(90542),
-						i(90545),
-					}),
-					q(29910,  {  	-- Rampaging Rodents
-						i(88370),  		-- Puntable Marmot
-					}),
-					q(30057,  {  	-- Seeing Orange
-						i(81751),
-						i(81752),
-						i(81753),
-						i(81754),
-						i(81755),
-						i(81756),
-						i(81757),
-						i(81758),
-						i(81759),
-					}),
-					q(29600,  {  	-- Snap Judgement
-						i(81805),
-						i(81806),
-						i(81807),
-						i(81808),
-						i(81809),
-						i(81810),
-						i(81811),
-						i(81812),
-						i(81813),
-					}),
-					q(30183,  {  	-- Stalker Mastery
-						i(84320),
-						i(84321),
-						i(84322),
-						i(84323),
-						i(84324),
-						i(84325),
-						i(84326),
-						i(84327),
-						i(84328),
-					}),
-					q(29940,  {  	-- Taking a Crop
-						i(81796),
-						i(81797),
-						i(81798),
-						i(81799),
-						i(81800),
-						i(81801),
-						i(81802),
-						i(81803),
-						i(81804),
-					}),
-					q(30628,  {  	-- The Gratitude of Stoneplow
-						i(81476),
-						i(81477),
-						i(81478),
-						i(81479),
-						i(81480),
-						i(81481),
-						i(81482),
-						i(81483),
-						i(81484),
-					}),
-					q(30051,  {  	-- The Great Water Hunt
-						i(81839),
-						i(81840),
-						i(81841),
-						i(81842),
-						i(81843),
-					}),
-					q(29913,  {  	-- The Meat They'll Eat
-						i(88018),
-						i(88017),
-						i(88016),
-						i(88015),
-						i(88014),
-						i(88013),
-						i(88012),
-						i(88011),
-						i(88010),
-					}),
-					q(30032,  {  	-- The Quest for Better Barley
-						i(81787),
-						i(81788),
-						i(81789),
-						i(81790),
-						i(81791),
-						i(81792),
-						i(81793),
-						i(81794),
-						i(81795),
-					}),
-					q(29989,  {  	-- Unyielding Fists: Trial of Stone
-						i(81760),
-						i(81761),
-						i(81762),
-						i(81763),
-						i(81764),
-						i(81765),
-						i(81766),
-						i(81767),
-						i(81768),
-					}),
-					q(30072,  {  	-- Where Silk Comes From
-						i(84343),
-						i(84342),
-						i(84341),
-						i(84340),
-						i(84339),
-					}),
-					q(29945,  {  	-- Yellow and Red Make Orange
-						i(88377), 		-- Turnip Paint "Gun"
-					}),
 				}),
 				n(-16, { 	-- Rares
 					n(51059, { 		-- Blackhoof

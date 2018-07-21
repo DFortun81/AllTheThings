@@ -8,6 +8,32 @@ _.Instances =
 		["groups"] = {
 			inst(302, { 	-- Stormstout Brewery
 				["groups"] = {
+					n(-17, {	-- Quests
+						q(31324, {	-- Family Secrets
+							["groups"] = {
+								i(87310),	-- Stormstout Drink Napkin
+								i(87311),	-- Used Bar Rag
+								i(87312),	-- Auntie's Cooking Apron
+								i(87313),	-- Tasting Room Tablecloth
+								i(87314),	-- Blackened Chain Cloak
+							},
+							["qg"] = 59822,	-- Auntie Stormstout
+						}),
+						q(31327, {	-- Trouble Brewing
+							["groups"] = {
+								i(87301),	-- Master Brewer's Gloves
+								i(87302),	-- Barrel Stacker's Mitts
+								i(87303),	-- Wine Tasting Gloves
+								i(87304),	-- Uncorking Gloves
+								i(87305),	-- Barrel-Aged Gloves
+								i(87306),	-- Virmen Exterminator Gloves
+								i(87307),	-- Vegetable Chopping Handguards
+								i(87308),	-- Partycrasher's Gauntlets
+								i(87309),	-- Handguards of Sturdy Constitution
+							},
+							["qg"] = 59704,	-- Chen Stormstout
+						}),
+					}),
 					d( 1, {	-- Normal
 						
 						["groups"] = {
