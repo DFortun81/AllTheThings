@@ -4026,6 +4026,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 					["u"] = 12,
 				}),
 			},
+			["maps"] = { 86 }, -- The Drag
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_orc",
 			["isRaid"] = true,
 			["lvl"] = 1,

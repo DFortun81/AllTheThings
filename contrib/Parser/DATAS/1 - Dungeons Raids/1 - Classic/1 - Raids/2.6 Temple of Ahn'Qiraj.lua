@@ -634,6 +634,7 @@ _.Instances = { tier(1, {	-- Classic
 					dr(1.0, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
 					dr(1.1, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
 					dr(1.0, i(20736)),	-- Formula: Enchant Cloak - Dodge
+					i(20734),	-- Formula: Encant Cloak - Stealth
 					i(22222),	-- Thick Obisidan Breastplate (Recipe)
 					i(93041),	-- Jewel of Maddening Whispers (Pet)
 					i(21703),	-- Hammer of Ji'zhi
@@ -668,6 +669,7 @@ _.Instances = { tier(1, {	-- Classic
 							dr(0.8, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
 							dr(1.4, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
 							dr(0.9, i(20736)),	-- Formula: Enchant Cloak - Dodge
+							i(20734),	-- Formula: Encant Cloak - Stealth
 							{
 								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -726,6 +728,7 @@ _.Instances = { tier(1, {	-- Classic
 							dr(0.5, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
 							dr(0.8, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
 							dr(1.1, i(20736)),	-- Formula: Enchant Cloak - Dodge
+							i(20734),	-- Formula: Encant Cloak - Stealth
 							{
 								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -785,6 +788,7 @@ _.Instances = { tier(1, {	-- Classic
 							dr(1.3, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
 							dr(1.0, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
 							dr(1.2, i(20736)),	-- Formula: Enchant Cloak - Dodge
+							i(20734),	-- Formula: Encant Cloak - Stealth
 							{
 								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -844,6 +848,7 @@ _.Instances = { tier(1, {	-- Classic
 					dr(1.1, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
 					dr(1.1, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
 					dr(1.5, i(20736)),	-- Formula: Enchant Cloak - Dodge
+					i(20734),	-- Formula: Encant Cloak - Stealth
 					{
 						["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 						["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -905,6 +910,7 @@ _.Instances = { tier(1, {	-- Classic
 					dr(1.7, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
 					dr(1.0, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
 					dr(1.0, i(20736)),	-- Formula: Enchant Cloak - Dodge
+					i(20734),	-- Formula: Encant Cloak - Stealth
 					{
 						["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 						["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -964,6 +970,7 @@ _.Instances = { tier(1, {	-- Classic
 					dr(1.8, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
 					dr(1.0, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
 					dr(1.8, i(20736)),	-- Formula: Enchant Cloak - Dodge
+					i(20734),	-- Formula: Encant Cloak - Stealth
 					{
 						["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 						["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -1186,6 +1193,7 @@ _.Instances = { tier(1, {	-- Classic
 					dr(1.3, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
 					dr(1.1, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
 					dr(1.4, i(20736)),	-- Formula: Enchant Cloak - Dodge
+					i(20734),	-- Formula: Encant Cloak - Stealth
 					{
 						["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 						["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
