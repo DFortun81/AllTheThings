@@ -6,62 +6,6 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(14, {		-- Arathi Highlands
 			["groups"] = {
-				n( -3, {	-- Holidays					
---[[					
-					n(-47, {    	-- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913,	-- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {    	-- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,   	-- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {    	-- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798,	-- Noble Gardener
-						["u"] = 19,
-					}),
---]]					
---[[					
-					n(-56, {    	-- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683,	-- Brewmaster
-						["u"] = 24,
-					}),
---]]
---[[
-					n(-60, {    	-- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478,	-- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {    	-- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691,	-- Merrymaker
-						["u"] = 29,
-					}),						
---]]				
-				}),							
 				n(-25, {	-- Pet Battle
 					p(443), 	-- Grasslands Cottontail
 					p(386), 	-- Prairie Dog
@@ -1115,6 +1059,23 @@ _.Zones =
 						i(13287), 	-- Pattern: Raptor Hide Harness
 					}),
 				}),
+				n(  0, {	-- Zone Drop
+					n(2564, { 	-- Boulderfist Enforcer
+						un(7, i(3341)),	-- Gauntlets of Ogre Strength
+					}),
+					nh(2782, { 	-- Caretaker Alaric	
+						un(7, i(2623)),	-- Holy Diadem
+					}),
+					nh(2780, { 	-- Caretaker Nevlin
+						un(7, i(2623)),	-- Holy Diadem
+					}),
+					nh(2781, { 	-- Caretaker Weston
+						un(7, i(2623)),	-- Holy Diadem
+					}),
+					nh(2584, { 	-- Stromgarde Defender
+						un(7, i(5624)),	-- Circlet of the Order
+					}),
+				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
 						nlq({	-- Quests (Legacy)
@@ -1149,23 +1110,8 @@ _.Zones =
 								un(34, i(4744)),	-- Arcane Runed Bracers
 							}),
 						}),
-						n(-16, {	-- Rares (Legacy)
-							n(2564, { 	-- Boulderfist Enforcer
-								un(7, i(3341)),	-- Gauntlets of Ogre Strength
-							}),
-							nh(2782, { 	-- Caretaker Alaric	
-								un(7, i(2623)),	-- Holy Diadem
-							}),
-							nh(2780, { 	-- Caretaker Nevlin
-								un(7, i(2623)),	-- Holy Diadem
-							}),
-							nh(2781, { 	-- Caretaker Weston
-								un(7, i(2623)),	-- Holy Diadem
-							}),	
-							n(2584, { 	-- Stromgarde Defender
-								un(7, i(5624)),	-- Circlet of the Order
-							}),
-						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
