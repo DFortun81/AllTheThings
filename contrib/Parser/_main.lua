@@ -49,8 +49,8 @@ local DifficultyDB = {
 	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
 	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
 };
-ALLIANCE_ONLY = { 1, 3, 4, 7, 11, 22, 25, 29, 30 };
-HORDE_ONLY = { 2, 5, 6, 8, 9, 10, 26, 27, 28 };
+ALLIANCE_ONLY = { 1, 3, 4, 7, 11, 22, 25, 29, 30, 32, 34 };
+HORDE_ONLY = { 2, 5, 6, 8, 9, 10, 26, 27, 28,  31, 36 };
 ItemClassInfo = {
 	{
 		"Soul Bag", -- [1]

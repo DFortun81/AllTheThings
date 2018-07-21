@@ -5,7 +5,7 @@ _.Craftables =
 {
 	tier(1, { -- Classic
 		n(-181, { -- Blacksmithing
-				n(-319, { 	-- Weapons
+			n(-319, { 	-- Weapons
 				un(8, i(12776)),	-- Enchanted Battlehammer
 				un(8, i(12794)),	-- Masterwork Stormhammer
 				un(8, i(7954)),		-- The Shatterer
@@ -84,6 +84,7 @@ _.Craftables =
 				i(7916),	-- Barbaric Iron Boots
 				i(7917),	-- Barbaric Iron Gloves
 				i(7915),	-- Barbaric Iron Helm
+				i(163964),	-- Barbaric Iron Hauberk [TEMP; MOVING TO BFA SOON]
 				i(7913),	-- Barbaric Iron Shoulders
 				i(22194),	-- Black Grasp of the Destroyer
 				i(3471),	-- Copper Chain Vest

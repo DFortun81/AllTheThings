@@ -5,7 +5,7 @@ _.GearSets =
 {
 	n(-124, { -- War Mill
 		["groups"] = {	
-			n(-131 , {	-- Shadowmoon Set
+			gs(1534, { -- Garb of the Shadowmoon
 				i(113801),	-- Shadowmoon Cowl
 				i(113803),	-- Shadowmoon Shoulderguards
 				i(113799),	-- Shadowmoon Robes
@@ -15,7 +15,7 @@ _.GearSets =
 				i(113802),	-- Shadowmoon Leggings
 				i(113798),	-- Shadowmoon Treads
 			}),
-			n(-133 , {	-- Warsong Set
+			gs(1536, { -- Warsong Outrider's Garb
 				i(113817),	-- Warsong Hood
 				i(113819),	-- Warsong Spaulders
 				i(113815),	-- Warsong Wraps
@@ -25,7 +25,7 @@ _.GearSets =
 				i(113818),	-- Warsong Leggings
 				i(113814),	-- Warsong Boots
 			}),
-			n(-130 , { 			-- Thunderlord Set
+			gs(1535, { -- Thunderlord Harness
 				i(113793),	-- Thunderlord Helm
 				i(113795),	-- Thunderlord Shoulderguards
 				i(113791),	-- Thunderlord Chestguard
@@ -35,8 +35,7 @@ _.GearSets =
 				i(113794),	-- Thunderlord Leggings
 				i(113790),	-- Thunderlord Sabatons
 			}),
-			
-			n(-132 , {	-- Blackrock Set
+			gs(1533, { --  Blackrock Sootplate
 				i(113809),	-- Blackrock Greathelm
 				i(113811),	-- Blackrock Pauldrons
 				i(113807),	-- Blackrock Chestplate

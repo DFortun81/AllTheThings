@@ -958,13 +958,13 @@ _.Zones =
 					}),
 					nh(96014, {	-- Shadow Hunter Denjai <Vol'jin's Headhunters>
 						i(128472, {	-- Battlegear of the Frostwolves
-							i(128458),	-- Frostwolf Belt
-							i(128461),	-- Frostwolf Bracers
-							i(128459),	-- Frostwolf Leggings
-							i(128457),	-- Frostwolf Mitts
-							i(128460),	-- Frostwolf Snowstalkers
 							i(128455),	-- Frostwolf Spaulders
 							i(128456),	-- Frostwolf Tunic
+							i(128461),	-- Frostwolf Bracers
+							i(128457),	-- Frostwolf Mitts
+							i(128458),	-- Frostwolf Belt
+							i(128459),	-- Frostwolf Leggings
+							i(128460),	-- Frostwolf Snowstalkers
 						}),
 						i(128490, {	-- Blueprint: Oil
 							["groups"] = {
