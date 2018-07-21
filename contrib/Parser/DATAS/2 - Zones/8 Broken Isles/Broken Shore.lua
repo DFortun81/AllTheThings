@@ -112,7 +112,7 @@ _.Zones =
 									["modelScale"] = 0.95,
 									["modelRotation"] = 45,
 									["classes"] = { 1 },
-									["artifactID"] = 908,
+									["artifactID"] = 806,
 								},
 							},
 							["classes"] = {
