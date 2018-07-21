@@ -15,7 +15,7 @@ _.Achievements =
 					ach(5749),	-- Vial of the Sands (Alchemy / Archeaology)
 					ach(7386),	-- Grand Expedition Yak (Kun-Lai Summit)
 					ach(4888),	-- One Hump or Two? (Uldum)
-					a(ach(12934, { -- A Horde of Hoofbeats
+					a(ach(12933, { -- A Horde of Hoofbeats
 						i(163981), -- Frenzied Feltalon
 						ach(2141),	-- Stable Keeper (10)
 						ach(2142),	-- Filling Up The Barn (25)
