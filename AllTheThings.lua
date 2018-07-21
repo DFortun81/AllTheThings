@@ -2522,8 +2522,6 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 			-- If the group has relative contents, we should show that information
 			if group.g and not group.hideText and GetDataMember("ShowContents") 
 				and (app.RecursiveClassAndRaceFilter(group) or GetDataMember("IgnoreAllFilters")) then
-				local progress = 0;
-				local total = 0;
 				local parents = {};
 				local items = {};
 				for i,j in ipairs(group.g) do
@@ -2532,13 +2530,10 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 						
 						local right = nil;
 						if j.total and j.total > 0 then
-							progress = progress + (j.progress or 0);
-							total = total + j.total;
 							if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
 								right = GetProgressColorText(j.progress, j.total);
 							end
 						elseif j.collectible then
-							total = total + 1;
 							if j.collected or (j.trackable and j.saved) then
 								progress = progress + 1;
 								if GetDataMember("ShowCollectedItems") then
@@ -2550,7 +2545,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 						elseif j.trackable then
 							if j.saved then
 								if GetDataMember("ShowCollectedItems") then
-									right = L("COLLECTED_ICON");
+									right = L("COMPLETE_ICON");
 								end
 							elseif app.ShowIncompleteQuests(j) then
 								right = L("NOT_COLLECTED_ICON");
@@ -2580,7 +2575,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 					end
 				end
 				
-				if total > 0 and #items > 0 then
+				if #items > 0 then
 					self:AddLine("Contains:");
 					if #items < 5 then
 						for i,pair in ipairs(items) do
