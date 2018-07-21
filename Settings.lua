@@ -799,7 +799,7 @@ local function createAccountFrame(parent)
 	addObject(elm,unobtainable)
 	
 	local unobtainableFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-unobtainableFrame", child, "ThinBorderTemplate");
-	unobtainableFrame:SetSize(child:GetWidth(),500)
+	unobtainableFrame:SetSize(child:GetWidth(),520)
 	unobtainableFrame:SetPoint("TOPLEFT",unobtainable,0,-frameSpacer);
 	addObject(elm,unobtainableFrame)
 	
@@ -1115,7 +1115,7 @@ local function createAccountFrame(parent)
 	addObject(elm,legacy)
 	
 	local legacyFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-legacyFrame", child, "ThinBorderTemplate");
-	legacyFrame:SetSize(unobtainableFrame:GetWidth()-20,80)
+	legacyFrame:SetSize(unobtainableFrame:GetWidth()-20,100)
 	legacyFrame:SetPoint("TOPLEFT",legacy,0,-frameSpacer);
 	addObject(elm,legacyFrame)
 	
@@ -1151,10 +1151,9 @@ local function createAccountFrame(parent)
 	legacyAll:SetPoint("TOPLEFT",legacy, legacyFrame:GetWidth()/2, 7)
 	addObject(elm,legacyAll)
 	
-	local last = legacyFrame;
 	local x = 5;
 	local y = 5;
-	local count = 0;
+	local legacyWidth = legacyFrame:GetWidth();
 	for k,v in ipairs(app.L("UNOBTAINABLE_ITEM_REASONS")) do
 		if v[1]  == 4 then
 			local filter = createCheckBox(v[3], child, function(self)
@@ -1179,16 +1178,13 @@ local function createAccountFrame(parent)
 					GameTooltip:SetText (v[2], nil, nil, nil, nil, true);
 					GameTooltip:Show();
 				end);
-			filter:SetPoint("TOPLEFT",last,x,-y)
+			filter:SetPoint("TOPLEFT",legacyFrame,x,-y)
 			addObject(elm,filter)
-			last = filter
-			x = 0;
-			y = frameSpacer;
-			count = count + 1;
-			if count == 2 then
-				x = legacyFrame:GetWidth()/2
-				y = 5
-				last = legacyFrame
+			
+			x = x + (legacyWidth / 2);
+			if x > legacyWidth then
+				y = y + frameSpacer;
+				x = 5;
 			end
 		end
 	end

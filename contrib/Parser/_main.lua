@@ -311,7 +311,7 @@ bubbleDown = function(data, t)
 	end
 	return t;
 end
-local bubbleUp = function(t)
+bubbleUp = function(t)
 	local t2 = {};
 	for i, group in pairs(t) do
 		if type(i) ~= "number" then
