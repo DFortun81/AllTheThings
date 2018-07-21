@@ -6,69 +6,6 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(78, {	-- Un'Goro Crater
 			["groups"] = {			
-				n( -3, {	-- Holidays					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								q(8681, {	-- Thunderhorn the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 50.4, 76.1",			
-									["qg"] = 15583,	-- Elder Thunderhorn		
-								}),
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
---[[					
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),				
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),		
---]]				
-				}),						
 				n(-25, {	-- Pet Battle
 					p(632), 	-- Ash Lizard
 					p(406), 	-- Beetle
@@ -362,7 +299,7 @@ _.Zones =
 						dr(	1.1	, i(	10168	)), --	Templar Crown
 						dr(	1.1	, i(	10170	)), --	Templar Pauldrons
 						dr(	1	, i(	10165	)), --	Templar Gauntlets
-						un(7, i(45052)), 	-- Gruffscale Leggings							
+						i(45052), 	-- Gruffscale Leggings							
 					}), 
 					n(6584, { 		-- King Mosh
 						dr(	4	, i(	10110	)), --	Wanderer's Gloves

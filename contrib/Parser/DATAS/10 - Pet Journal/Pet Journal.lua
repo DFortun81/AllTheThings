@@ -875,6 +875,7 @@ _.PetJournal =
 		p(1163),	-- Anodized Robo Cub
 		p(1322),	-- Blackfuse Bombling
 		p(254),		-- Blue Clockwork Rocket Bot
+		p(2402),	-- Brutus
 		p(1142),	-- Clock'em
 		p(277),		-- Clockwork Gnome
 		p(191),		-- Clockwork Rocket Bot

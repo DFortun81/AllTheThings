@@ -572,7 +572,7 @@ _.WorldDrops =
 					i(38513),	-- Boarhide Leggings
 					un(7, i(4434)),	-- Scarecrow Trousers
 					i(4478),	-- Iridescent Scale Leggings
-					un(7, i(45052)),	-- Gruffscale Leggings
+					i(45052),	-- Gruffscale Leggings
 					un(7, i(4723)),	-- Humbert's Pants
 					i(4800),	-- Mighty Chain Pants
 					i(4816),	-- Legionnaire's Leggings

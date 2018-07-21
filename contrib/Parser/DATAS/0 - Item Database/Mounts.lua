@@ -1,6 +1,7 @@
 _.ItemDB = {};
 local i = function(itemID, mountID)
-	local item = { ["mountID"] = mountID };
+	local item = { ["itemID"] = itemID, ["mountID"] = mountID };
+	
 	_.ItemDB[itemID] = item;
 	return item;
 end
@@ -97,3 +98,6 @@ i(155662, 258060);	-- Highmountain Thunderhoof
 i(156486, 259202);	-- Starcursed Voidstrider
 i(156487, 258845);	-- Nightborne Manasaber
 i(156564, 259395);	-- Shu-zen, the Divine Sentinel
+i(137614, 213350);	-- Biting Frostshard Core
+i(163981, 280729);  -- Frenzied Feltalon
+i(163982, 280730);	-- Pureheart Courser

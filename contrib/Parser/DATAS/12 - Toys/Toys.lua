@@ -4,12 +4,16 @@
 _.Toys =
 {
 	n(-4, { 	-- Achievement
+		i(134032), -- Elite Pennant
 		i(139773),		-- Emerald Winds
+		i(164310), -- Glorious Pennant
 		i(87528),		-- Honorary Brewmaster Keg
+		i(134026), -- Honorable Pennant
 		un(4, i(89205)), 	-- Mini Mana Bomb (Horde) No Longer Available
 		i(143660), 		-- Mrgrglhjorn
 		i(86596),		-- Nat's Fishing Chair
 		i(122700), 		-- Portable Audiophone
+		i(134031), -- Prestigious Pennant
 		i(119215), 		-- Robo-Gnomebulator
 		i(92738),		-- Safari Hat
 		i(98132),		-- Shado-Pan Geyser Gun

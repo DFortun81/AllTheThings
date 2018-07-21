@@ -6,60 +6,6 @@ _.Zones =
 	m(101, { 	-- Outland
 		m(108, { 	-- Terokkar Forest
 			["groups"] = {						
-				n(-3, { 	-- Holidays					
---[[					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
---]]					
---[[					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
---]]				
-				}),								
 				n(-25, { 	-- Pet Battle
 					i(27445, { -- Magical Crawdad Box
 						["groups"] = {
@@ -577,17 +523,23 @@ _.Zones =
 						["groups"] = {
 							currency(1704, { -- Spirit Shard
 								["groups"] = {
-									i(28559),	-- Exorcist's Plate Helm
+									i(32947),	-- Auchenai Healing Potion
+									i(32948),	-- Auchenai Mana Potion
+									i(28553),	-- Band of the Exorcist
+									i(28576),	-- Exorcist's Chain Helm
+									i(28574),	-- Exorcist's Dragonhide Helm
+									i(28759),	-- Exorcist's Dreadweave Hood
 									i(28560),	-- Exorcist's Lamellar Helm
 									i(28561),	-- Exorcist's Leather Helm
-									i(28574),	-- Exorcist's Dragonhide Helm
-									i(28575),	-- Exorcist's Wyrmhide Helm
-									i(28576),	-- Exorcist's Chain Helm
 									i(28577),	-- Exorcist's Linked Helm
 									i(28758),	-- Exorcist's Mail Helm
-									i(28759),	-- Exorcist's Dreadweave Hood
-									i(28760),	-- Exorcist's Silk Hood
+									i(28559),	-- Exorcist's Plate Helm
 									i(28761),	-- Exorcist's Scaled Helm
+									i(28760),	-- Exorcist's Silk Hood
+									i(28575),	-- Exorcist's Wyrmhide Helm
+									i(28557),	-- Quickened Starfire Diamond
+									i(28555),	-- Seal of the Exorcist
+									i(28556),	-- Swift Windfire Diamond
 								},
 							}),
 						},
@@ -596,17 +548,23 @@ _.Zones =
 						["groups"] = {
 							currency(1704, { -- Spirit Shard
 								["groups"] = {
-									i(28559),	-- Exorcist's Plate Helm
+									i(32947),	-- Auchenai Healing Potion
+									i(32948),	-- Auchenai Mana Potion
+									i(28553),	-- Band of the Exorcist
+									i(28576),	-- Exorcist's Chain Helm
+									i(28574),	-- Exorcist's Dragonhide Helm
+									i(28759),	-- Exorcist's Dreadweave Hood
 									i(28560),	-- Exorcist's Lamellar Helm
 									i(28561),	-- Exorcist's Leather Helm
-									i(28574),	-- Exorcist's Dragonhide Helm
-									i(28575),	-- Exorcist's Wyrmhide Helm
-									i(28576),	-- Exorcist's Chain Helm
 									i(28577),	-- Exorcist's Linked Helm
 									i(28758),	-- Exorcist's Mail Helm
-									i(28759),	-- Exorcist's Dreadweave Hood
-									i(28760),	-- Exorcist's Silk Hood
+									i(28559),	-- Exorcist's Plate Helm
 									i(28761),	-- Exorcist's Scaled Helm
+									i(28760),	-- Exorcist's Silk Hood
+									i(28575),	-- Exorcist's Wyrmhide Helm
+									i(28557),	-- Quickened Starfire Diamond
+									i(28555),	-- Seal of the Exorcist
+									i(28556),	-- Swift Windfire Diamond
 								},
 							}),
 						},

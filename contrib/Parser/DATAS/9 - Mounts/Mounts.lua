@@ -10,6 +10,7 @@ _.Mounts =
 		i(116781),		-- Armored Frostwolf
 		i(98104),		-- Armored Red Dragonhawk
 		i(93662),		-- Armored Skyscreamer
+		i(137614), -- Biting Frostshard Core
 		i(44223),	-- Black War Bear (Alliance)
 		i(44224),	-- Black War Bear (Horde)
 		i(116666),		-- Blacksteel Battleboar
@@ -24,6 +25,7 @@ _.Mounts =
 		i(118676),		-- Emerald Drake
 		i(69226),		-- Felfire Hawk
 		i(69213),		-- Flameward Hippogryph
+		i(163981), -- Frenzied Feltalon
 		i(116670),		-- Frostplains Battleboar
 		i(116383),		-- Gorestrider Gronnling
 		i(141216),		-- Grove Defiler
@@ -40,7 +42,12 @@ _.Mounts =
 		i(156487),	-- Nightborne Manasaber (Horde)
 		i(89785),	-- Pandaren Kite (Alliance)
 		i(81559),	-- Pandaren Kite (Horde)
+		i(140408), -- Prestigious Azure Courser
 		i(140228),		-- Prestigious Bronze Courser
+		i(140232), -- Prestigious Forest Courser
+		i(140233), -- Prestigious Ivory Courser
+		i(140407), -- Prestigious Midnight Courser
+		i(140230), -- Prestigious Royal Courser
 		i(129280),	-- Prestigious War Steed
 		i(143864),	-- Prestigious War Wolf
 		i(138387),		-- Ratstallion

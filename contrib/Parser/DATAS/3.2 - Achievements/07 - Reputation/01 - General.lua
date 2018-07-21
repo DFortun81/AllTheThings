@@ -7,7 +7,9 @@ _.Achievements =
 		["groups"] = {
 			n(-9955, { -- General
 				["groups"] = {
-					ach(11177, { -- 70 Exalted Reputations
+					ach(12866, { -- 100 Exalted Reputations
+						i(163982), -- Pureheart Courser
+						style(0, title(379)), -- Esteemed <Name>
 						n(-6013, { -- Faction
 							faction(1168), -- Guild
 							a(n(-9914, { -- Alliance
@@ -26,6 +28,8 @@ _.Achievements =
 									faction(509), -- The League of Arathor
 								}),
 								tier(1, { -- Classic
+									faction(92), -- Gelkis Kolkar
+									faction(93), -- Magram Kolkar
 									faction(589), -- Wintersaber Trainers
 								}),
 								tier(2, { -- The Burning Crusade
@@ -53,14 +57,13 @@ _.Achievements =
 									faction(1847), -- Hand of the Prophet
 									faction(1710), -- Sha'tari Defense
 									faction(1682), -- Wyrnn's Vanguard
+								}), 
+								tier(8, { -- Battle For Azeroth
+									faction(2159), -- 7th Legion
+									faction(2161), -- Order of Embers
+									faction(2160), -- Proudmoore Admiralty
+									faction(2162), -- Storm's Wake
 								}),
-								--[[ 
-									Battle For Azeroth
-								faction(2159), -- 7th Legion
-								faction(2161), -- Order of Eembeers
-								faction(2160), -- Proudmoore Admiralty
-								faction(2162), -- Storm's Wake
-								--]]
 							})),
 							h(n(-9913, { -- Horde
 								n(-6014, { -- Cities
@@ -76,6 +79,10 @@ _.Achievements =
 									faction(729), -- Frostwolf Clan	
 									faction(510), -- The Defilers	
 									faction(889), -- Warsong Outriders
+								}),
+								tier(1, { -- Classic
+									faction(92), -- Gelkis Kolkar
+									faction(93), -- Magram Kolkar
 								}),
 								tier(2, { -- The Burning Crusade
 										faction(941), -- The Mag'har	
@@ -104,13 +111,12 @@ _.Achievements =
 									faction(1848), -- Vol'jin's Headhunters
 									faction(1681), -- Vol'jin's Spear
 								}),
-								--[[ 
-									Battle For Azeroth
+								tier(8, { -- Battle For Azeroth 
 									faction(2156), -- Talanji's  Expedition
 									faction(2157), -- The Honorbound
 									faction(2158), -- Voldunai
 									faction(2103), -- Zandalari Empire
-								--]]
+								}),
 							})),
 							tier(1, { -- Classic
 								faction(529), -- Argent Dawn
@@ -226,6 +232,11 @@ _.Achievements =
 						ach(6742, { -- 60 Exalted Reputations
 							title(197), -- <Name> the Beloved
 						}),
+						ach(11177), -- 70 Exalted Reputations
+						ach(12864, { -- 80 Exalted Reputations
+							title(380), -- <Name> the Admired
+						}),
+						ach(12865), -- 90 Exalted Reputations
 					}),
 					ach(5794), -- Time Flies When You're Having Fun
 					a(ach(948, {	-- Ambassador of the Alliance

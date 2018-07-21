@@ -101,7 +101,7 @@ _.Instances =
 								i(27822),	-- Crystal Band of Valor
 							})),
 							i( 32092, {	-- The Eye of Haramad
-								cr(22930, e(536, {	-- Yor
+								cr(22927, e(536, {	-- Yor
 									i(31570),	-- Mistshroud Tunic
 									i(31562),	-- Skystalker's Tunic
 									i(31554),	-- Slatesteel Breastplate

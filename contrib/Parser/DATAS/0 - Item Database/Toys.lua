@@ -500,3 +500,4 @@ t(134026);					-- Honorable Pennant
 t(134031);					-- Prestigious Pennant
 t(134032);					-- Elite Pennant
 t(134034);					-- Esteemed Pennant
+t(140230); 					-- Prestigious Royal Courser

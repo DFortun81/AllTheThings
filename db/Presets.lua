@@ -74,7 +74,7 @@ AllTheThings.Presets = {
 		nil, -- [17]
 		nil, -- [18]
 		nil, -- [19]
-		true, -- [20]
+		false, -- [20]
 		true, -- [21]
 		false, -- [22]
 		false, -- [23]
