@@ -2347,6 +2347,7 @@ AllTheThings.Locales.enUS = {
 		"Interface\\FriendsFrame\\StatusIcon-Offline",	-- Feast of the Winter Veil
 		"Interface\\FriendsFrame\\StatusIcon-Offline",	-- Stranglethorn Fishing Extravaganza
 		"Interface\\FriendsFrame\\StatusIcon-Offline",	-- WoW Anniversary
+		"Interface\\FriendsFrame\\StatusIcon-Offline",	-- Timewalking
 	};
 	["UNOBTAINABLE_ITEM_REASONS"] = {
 		-- {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
@@ -2390,7 +2391,8 @@ AllTheThings.Locales.enUS = {
 		{4, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria|r", "Ordos - Legendary Cloak (38)"}; --38
 		{4, "|CFFFF0000This title is no longer available.|r", "Legacy Titles (39)"}; --39
 		{4, "|CFFFF0000This is a Legacy quest or quest item, and is no longer available.|r", "Legacy Quests (40)"}; -- 40
-		{4, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}; --41
+		{4, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"};
+		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event. Only dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; --41
 	};
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you, please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";

@@ -46,8 +46,8 @@ local DifficultyDB = {
 	[16] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 6 },
 	[17] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 4 },
 	[23] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
-	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },
-	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },
+	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
+	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
 };
 ALLIANCE_ONLY = { 1, 3, 4, 7, 11, 22, 25, 29, 30 };
 HORDE_ONLY = { 2, 5, 6, 8, 9, 10, 26, 27, 28 };

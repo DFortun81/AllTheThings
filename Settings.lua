@@ -691,7 +691,7 @@ local function createAccountFrame(parent)
 	addObject(elm,seasonal)
 	
 	local seasonalFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-seasonalFrame", child, "ThinBorderTemplate");
-	seasonalFrame:SetSize(child:GetWidth(),230)
+	seasonalFrame:SetSize(child:GetWidth(),250)
 	seasonalFrame:SetPoint("TOPLEFT",seasonal,0,-frameSpacer);
 	addObject(elm,seasonalFrame)
 	

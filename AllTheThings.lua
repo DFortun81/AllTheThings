@@ -3231,6 +3231,14 @@ app.BaseDifficulty = {
 					end
 				end
 			end
+		elseif key == "u" then
+			if t.difficultyID == 24 or t.difficultyID == 33 then
+				return 42;
+			end
+		elseif key == "description" then
+			if t.difficultyID == 24 or t.difficultyID == 33 then
+				return "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Debug Completionist that had 99% Ulduar completion and now only has 59% because your team duplicated the Source IDs rather than reuse the existing one.";
+			end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
