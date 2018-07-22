@@ -502,6 +502,8 @@ _.Zones =
 						i(32445),	-- Skyguard Tabard
 						i(32539),	-- Skyguard Drape
 						i(32538),	-- Skywitch's Drape
+						i(32771),	-- Airman's Ribbon Gallantry
+						i(32770),	-- Skyguard Silver Cross
 					}),
 					na(19296, {	-- Innkeeper Biribi <Innkeeper>
 						i(27699),	-- Recipe: Golden Fish Sticks
