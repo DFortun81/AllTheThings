@@ -27,7 +27,7 @@ _.Zones =
 					},
 					["collectible"] = false,
 				}),
-				faction(589, {	-- Wintersaber Trainers
+				a(faction(589, {	-- Wintersaber Trainers
 					qa(29032, {	-- Get Them While They're Young
 						["qg"] = 10618,	-- Rivern Frostwind
 					}),
@@ -54,7 +54,7 @@ _.Zones =
 						["qg"] = 10618,	-- Rivern Frostwind
 						["sourceQuests"] = { 29032 },	-- Get Them While They're Young
 					}),
-				}),
+				})),
 				n( -3, {	-- Holidays										
 					n(-47, {    	-- Lunar Festival
 						["groups"] = {

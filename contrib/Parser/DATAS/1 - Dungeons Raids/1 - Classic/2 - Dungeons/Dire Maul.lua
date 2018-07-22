@@ -232,7 +232,7 @@ _.Instances =
 											i(18499),	-- Barrier Shield
 											i(18482),	-- Ogre Toothpick Shooter
 										},
-										["description"] = "You don't need to touch Mol'dar at all. The inner door no longer requires a key. Kreeg and Fengus: just don't kill them. The trap for Slip'kik no longer requires any items at all, just go over and activate it. The goblin requires only the Ogre Tannin from upstairs to give you the suit for fooling Kromcrush. And just don't dps Cho'rush when killing the king. Once you are the king, go and collect your buffs. Don't forget to get the quest off of Kromcrush, which only requires speaking to Mol'dar now. And of course Kreeg's quest for free beer.",
+										["description"] = "You don't need to touch Mol'dar at all. The inner door no longer requires a key. Kreeg and Fengus: just don't kill them. The trap for Slip'kik no longer requires any items at all, just go over and activate it. The goblin requires only the Ogre Tannin from upstairs to give you the suit for fooling Kromcrush. And just don't dps Cho'rush when killing the king. Once you are the king, go and collect your gear from the chest. Don't forget to get the quest off of Kromcrush, which only requires speaking to Mol'dar now. And of course Kreeg's quest for free beer.",
 										["model"] = "World\\Generic\\Passivedoodads\\Furniture\\Containers\\Titanchest.mdx",
 										["modelScale"] = 2.1,
 										["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
