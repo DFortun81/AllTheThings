@@ -2689,16 +2689,17 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 							},
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),	
-						i(91007, 	{	-- Red Dragon Turtle (Panda)
+						i(91007, {	-- Red Dragon Turtle (Panda)
 							["groups"] = {
 							},
 							["races"] = {25,26},
 						}),			
-						i(87800,  {	-- Red Dragon Turtle 
+						i(87800, {	-- Red Dragon Turtle 
 							["groups"] = {
 							},
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),
+						un(1, i(91016)),	-- Reins of the Great Red Dragon Turtle (Never Implemented?)
 					}),
 					n(87501, {	-- Paulie <Old Town Choppers>
 						i(116789),	-- Champion's Treadblade

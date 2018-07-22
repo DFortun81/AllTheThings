@@ -3771,7 +3771,8 @@ Legacy				qh( 1436),	-- Alliance Relations
 							},
 							["races"] = {25,26},
 						}),			
-						i(87800),	-- Red Dragon Turtle 
+						i(87800),	-- Red Dragon Turtle
+						un(1, i(91016)),	-- Reins of the Great Red Dragon Turtle (Never Implemented?)
 					}),
 					n(8404, {	-- Xan'tish <Snake Vendor>
 						i(10360),	-- Black Kingsnake
