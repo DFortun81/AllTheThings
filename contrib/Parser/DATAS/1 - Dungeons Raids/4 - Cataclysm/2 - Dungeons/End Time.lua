@@ -9,20 +9,25 @@ _.Instances =
 			inst(184, { 	-- End Time
 				["groups"] = {
 					n(-17, {	-- Quests
-						n(57864, { -- Alurmi
-							q(30097, { -- Archival Purposes
+						q(30097, { -- Archival Purposes
+							["groups"] = {
 								i(72871), -- Crescent Wand
 								i(72852), -- Archivist's Gloves
 								i(72872), -- Time Strand Gauntlets
-							}),
+							},
+							["qg"] = 57864,	-- Alurmi
 						}),
-						n(54751, { -- Nozdormu
-							q(30096, { -- Murozond
+						q(30096, { -- Murozond
+							["groups"] = {
 								i(72873), -- Bronze Blaster
 								i(76152), -- Cowl of Destiny
 								i(72875), -- Time Twister's Gauntlets
 								i(72874), -- Boots of the Forked Road
-							}),
+							},
+							["qg"] = 54751,	-- Nozdormu
+						}),
+						q(30098, {	-- The Well of Eternity
+							["qg"] = 54751,	-- Nozdormu
 						}),
 					}),
 					d(  2, {	-- Heroic
@@ -74,7 +79,7 @@ _.Instances =
 									dr(0.7, i(76156)),	-- Bindings of The End Times
 								}),
 							}),
-							cr(54431, e(340, { 	-- Echo of Baine 			
+							cr(54431, e(340, { 	-- Echo of Baine 
 								i( 72814),	-- Axe of The Tauren Chieftain
 								i( 72804),	-- Dragonshrine Scepter
 								i( 72806),	-- Echoing Headguard
@@ -88,16 +93,16 @@ _.Instances =
 								i( 72815),	-- Bloodhoof Legguards
 								i( 72802),	-- Time Traveler's Leggings
 								i( 72799),	-- Dead End Boots
-							})),			
-							cr(54445, e(285, { 	-- Echo of Jaina			
+							})),
+							cr(54445, e(285, { 	-- Echo of Jaina
 								n(-50, {    -- Love is in the Air
 									["groups"] = {
 										i(44731),	-- Bouquet of Ebon Roses
-										i(22206),	-- Bouquet of Red Roses		
+										i(22206),	-- Bouquet of Red Roses	
 									},
 									["achievementID"] = 1693,    -- Fool For Love
 									["u"] = 18,
-								}),																									
+								}),
 								i( 72808),	-- Jaina's Staff
 								i( 72804),	-- Dragonshrine Scepter
 								i( 72809),	-- Ward of Incantations
@@ -111,16 +116,17 @@ _.Instances =
 								i( 72807),	-- Waistguard of Lost Time
 								i( 72802),	-- Time Traveler's Leggings
 								i( 72799),	-- Dead End Boots
-							})),			
-							cr(54123, e(323, { 	-- Echo of Sylvannas			
+							})),
+							cr(54123, e(323, { 	-- Echo of Sylvannas
 								n(-50, {    -- Love is in the Air
 									["groups"] = {
 										i(44731),	-- Bouquet of Ebon Roses
-										i(22206),	-- Bouquet of Red Roses			
+										i(22206),	-- Bouquet of Red Roses	
 									},
 									["achievementID"] = 1693,    -- Fool For Love
 									["u"] = 18,
-								}),									
+								}),
+								ach(6130),	-- Severed Ties
 								i( 72804),	-- Dragonshrine Scepter
 								i( 72810),	-- Windrunner's Bow
 								i( 72806),	-- Echoing Headguard
@@ -132,10 +138,11 @@ _.Instances =
 								i( 72803),	-- Girdle of Lost Heroes
 								i(157606), 	-- Time-Dessicated Girdle (Added in 7.3.5)
 								i( 72807),	-- Waistguard of Lost Time
-								i( 72802),	-- Time Traveler's Leggings									
+								i( 72802),	-- Time Traveler's Leggings
 								i( 72799),	-- Dead End Boots
-							})),			
-							cr(54544, e(283, { 	-- Echo of Tyrande 			
+							})),
+							cr(54544, e(283, { 	-- Echo of Tyrande
+								ach(5995),	-- Moon Guard
 								i( 72812),	-- Crescent Moon
 								i( 72804),	-- Dragonshrine Scepter
 								i( 72806),	-- Echoing Headguard
@@ -147,11 +154,12 @@ _.Instances =
 								i( 72803),	-- Girdle of Lost Heroes
 								i(157606), 	-- Time-Dessicated Girdle (Added in 7.3.5)
 								i( 72807),	-- Waistguard of Lost Time
-								i( 72802),	-- Time Traveler's Leggings																	
+								i( 72802),	-- Time Traveler's Leggings
 								i( 72799),	-- Dead End Boots
 							})),			
-							cr(54432, e(289, { 	-- Murozond			
-								i(72822),	-- Jagged Edge of Time								
+							cr(54432, e(289, { 	-- Murozond
+								ach(6117),	-- Heroic: End Time
+								i(72822),	-- Jagged Edge of Time
 								i(72820),	-- Crown of Epochs
 								i(72823),	-- Timeway Headgear
 								i(72825),	-- Mantle of Time
@@ -159,7 +167,7 @@ _.Instances =
 								i(72818),	-- Breastplate of Tarnished Bronze
 								i(72826),	-- Robes of Fate
 								i(72824),	-- Time Twisted Tunic
-								i(72816),	-- Distortion Greaves								
+								i(72816),	-- Distortion Greaves
 								i(72817),	-- Time Altered Legguards
 								i(72819),	-- Chrono Boots
 								i(72897),	-- Arrow of Time
@@ -275,7 +283,7 @@ _.Instances =
 				["lvl"] = 85,
 				["mapID"] = 401
 			}),
-		},					
+		},
 		["tierID"] = 4
-	},	
+	},
 };

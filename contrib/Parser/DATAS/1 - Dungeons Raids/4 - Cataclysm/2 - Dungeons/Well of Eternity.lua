@@ -9,16 +9,34 @@ _.Instances =
 			inst(185, { 	-- Well of Eternity
 				["groups"] = {
 					n(-17, {	-- Quests 			
-						q(30104, {
-							i(72881),
-							i(72882),
-							i(72883),
+						q(30104, {	-- Documenting the Timeways
+							["groups"] = {
+								i(72880),	-- Alurmi's Ring
+								i(72881),	-- Treads of the Past
+								i(72882),	-- Chronicler's Chestguard
+								i(72883),	-- Historian's Sash
+							},
+							["qg"] = 57864,	-- Alurmi
 						}),
-						q(30101, {
-							i(72876),
-							i(72877),
-							i(72878),
-							i(72879),
+						q(30099, {	-- In Unending Numbers
+							["qg"] = 55624,	-- Nozdormu
+						}),
+						q(30102, {	-- The Hour of Twilight
+							["qg"] = 57913,	-- Chromie
+						}),
+						q(30101, {	-- The Path of the Dragon Soul
+							["groups"] = {
+								i(72876),	-- Ironfeather Longbow
+								i(72877),	-- Chain of the Demon Hunter
+								i(72878),	-- Demonic Skull
+								i(72879),	-- Boots of the Treacherous Path
+							},
+							["qg"] = 55624,	-- Nozdormu
+							["sourceQuests"] = { 30100 }, -- The Vainglorious
+						}),
+						q(30100, {	-- The Vainglorious
+							["qg"] = 55624,	-- Nozdormu
+							["sourceQuests"] = { 30099 }, -- In Unending Numbers
 						}),
 					}),
 					n(  0, {	-- Zone Drop
@@ -27,6 +45,7 @@ _.Instances =
 						i(76159),	-- Legion Bindings		
 					}),
 					cr(55085, e(290, {	-- Peroth'arn
+						ach(6127),	-- Lazy Eye
 						i(72827),	-- Gavel of Peroth'arn
 						i(72828),	-- Trickster's Edge
 						i(72829),	-- Orb of the First Satyrs
@@ -43,6 +62,8 @@ _.Instances =
 						i(72837),	-- Queen's Boon
 					})),
 					cr(54969, e(292, {	-- Mannoroth
+						ach(6070),	-- That's Not Canon!
+						ach(6118),	-- Heroic: Well of Eternity
 						i(72844),	-- Pit Lord's Destroyer
 						i(72846),	-- Thornwood Staff
 						i(72842),	-- Annihilan Helm

@@ -9,12 +9,22 @@ _.Instances =
 			inst(186, { 	-- Hour of Twilight
 				["groups"] = {
 					n(-17, {	-- Quests 			
-						q(30105, {
-							i(72884),
+						i(77957, {	-- Urgent Twilight Missive
+							q(30105, {	-- The Twilight Prophet
+								["groups"] = {
+									i(72884),	-- Writhing Wand
+									i(72886),	-- Thrall's Gratitude
+									i(76153),	-- Signet of the Twilight Prophet
+								},
+							}),
 						}),
-						q(30103, {
-							i(72858),
-							i(72887),
+						q(30103, {	-- To Wyrmrest!
+							["groups"] = {
+							i(72858),	-- Safeguard Gloves
+							i(72887),	-- Cinch of the World Shaman
+							i(72888),	-- Ring of the Loyal Companion
+							},
+							["qgs"] = { 54548, 54634, 54972, 55779 },	-- Thrall (4 versions, all different areas of the dungeon)
 						}),
 					}),
 					n(  0, {	-- Zone Drop
@@ -41,6 +51,8 @@ _.Instances =
 						i( 72857),	-- Leggings of Blinding Speed
 					})),
 					cr(54938, e(341, {	-- Archbishop Benedictus
+						ach(6132),	-- Eclipse
+						ach(6119),	-- Heroic: Hour of Twilight
 						i(72863),	-- Stalk of Corruption
 						i(72867),	-- Clattering Claw
 						i(72862),	-- Fanged Tentacle
