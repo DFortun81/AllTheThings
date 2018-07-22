@@ -1982,6 +1982,8 @@ local function OpenMiniList(field, id, label)
 			popout:SetVisible(true);
 			return false;
 		end
+	else
+		print("No map found for this location ", app.GetMapName(id));
 	end
 end
 local function OpenMiniListForCurrentProfession(manual, refresh)
