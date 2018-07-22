@@ -44,6 +44,10 @@ _.Instances =
 									},
 									["lvl"] = 16,
 								}),
+								i(117369),	-- Choker of the Pure Heart
+								i(117370),	-- Shard of Pirouetting Happiness
+								i(117368),	-- Sweet Perfume Brooch
+								i(117367),	-- Winking Eye of Love
 							}),
 						},
 					}),
