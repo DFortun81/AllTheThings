@@ -151,7 +151,7 @@ _.Instances =
 							qh(27593, { -- Rebirth of the K.E.F
 								["groups"] = {
 									i(68052), -- Kargath Cloak
-									i(65932), -- Thaurissan's Breastplatee
+									i(68053), -- Thaurissan's Breastplatee
 									i(65980), -- Dark Iron Band
 								},
 								["qg"] = 45840, -- Warlord Goretooth

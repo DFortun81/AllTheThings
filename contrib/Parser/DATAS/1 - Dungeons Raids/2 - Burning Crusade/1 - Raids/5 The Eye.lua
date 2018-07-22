@@ -115,11 +115,12 @@ _.Instances =
 					})),
 					cr(19622, e(1576, { -- Kael'thas Sunstrider
 						ach(696),	-- Tempest Keep
-						ach(885),	-- Ashes of Al'ar
 						i(32405, {	-- Verdant Sphere
 							q(11007),	-- Kael'thas and the Verdant Sphere
 						}),
-						i(32458),	-- Ashes of Al'ar (MOUNT!)
+						i(32458, {	-- Ashes of Al'ar (MOUNT!)
+							ach(885),	-- Ashes of Al'ar
+						}),
 						i(30236, {	-- Chestguard of the Vanquished Champion
 							i(30129),	-- Crystalforge Breastplate
 							i(30123),	-- Crystalforge Chestguard
