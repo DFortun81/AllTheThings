@@ -2535,7 +2535,6 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 							end
 						elseif j.collectible then
 							if j.collected or (j.trackable and j.saved) then
-								progress = progress + 1;
 								if GetDataMember("ShowCollectedItems") then
 									right = L("COLLECTED_ICON");
 								end
