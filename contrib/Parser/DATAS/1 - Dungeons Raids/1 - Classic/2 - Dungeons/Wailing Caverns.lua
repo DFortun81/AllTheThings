@@ -42,13 +42,13 @@ _.Instances =
 						}),
 					}),
 					cr(3671, e(474, { 	-- Lady Anacondra
-						-- i(6446),	-- Snakeskin Bag
 						i(151427), 	-- Snake-Charmer's Casque
 						i(132737), 	-- Cavern Slitherer Pauldrons
 						i(  5404), 	-- Serpent's Shoulders
 						i(151426),	-- Lady Anacondra's Satin Cuffs
 						i( 10412), 	-- Belt of the Fang
 						i(132740), 	-- Slither-Scale Cord
+						i(  6446),	-- Snakeskin Bag
 					})),
 					cr(3653, e(477, { 	-- Kresh
 						i( 13245), 	-- Kresh's Back
