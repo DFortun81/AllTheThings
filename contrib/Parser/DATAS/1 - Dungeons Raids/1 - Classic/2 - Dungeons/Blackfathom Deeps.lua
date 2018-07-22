@@ -22,6 +22,40 @@ _.Instances = { tier(1, {	-- Classic
 				})),
 			}),	
 			n(  0, {	-- Zone Drop
+				i(3413, {	-- Doomspike
+					["crs"] = {
+						74719,	-- Blindlight Rotmouth
+						76954,	-- Pahboo-Ra <Son of Ghamoo-Ra>
+						75135,	-- Tormented Sacrifice
+						74353,	-- Twilight Aquamancer
+						75058,	-- Twilight Aquamancer
+						74983,	-- Twilight Disciple
+						75286,	-- Twilight Disciple
+						74351,	-- Twilight Disciple
+						76036,	-- Twilight Shadow
+						74363,	-- Twilight Shadow
+						74980,	-- Twilight Storm Mender
+						74380,	-- Twilight Storm Mender
+						75285,	-- Twilight Storm Mender
+					},
+				}),
+				i(2567, {	-- Evocator's Blade
+					["crs"] = {
+						74721,	-- Blindlight Bilefin
+						74984,	-- Blindlight Murloc
+						74720,	-- Blindlight Murloc
+						75980,	-- Blindlight Razorjaw
+						74719,	-- Blindlight Rotmouth
+						74722,	-- Razorshell Snapjaw
+						74353,	-- Twilight Aquamancer
+						75058,	-- Twilight Aquamancer
+						74983,	-- Twilight Disciple
+						75286,	-- Twilight Disciple
+						74351,	-- Twilight Disciple
+						76036,	-- Twilight Shadow
+						74363,	-- Twilight Shadow
+					},
+				}),
 				i(2271, {	-- Staff of the Blessed Seer
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
@@ -41,139 +75,116 @@ _.Instances = { tier(1, {	-- Classic
 						75285,	-- Twilight Storm Mender
 					},
 				}),
-				n(74721, {	-- Blindlight Bilefin	
-					dr(0.01, i(1486)),	-- Tree Bark Jacket
+				i(3415, {	-- Staff of the Friar
+					["crs"] = {
+						74721,	-- Blindlight Bilefin
+						74984,	-- Blindlight Murloc
+						74720,	-- Blindlight Murloc
+						74353,	-- Twilight Aquamancer
+						75058,	-- Twilight Aquamancer
+						74382,	-- Twilight Shadowmage
+						74980,	-- Twilight Storm Mender
+						74380,	-- Twilight Storm Mender
+						75285,	-- Twilight Storm Mender
+					},
+				}),
+				i(1486, {	-- Tree Bark Jacket
+					["crs"] = {
+						74721,	-- Blindlight Bilefin
+						74984,	-- Blindlight Murloc
+						74720,	-- Blindlight Murloc
+						75980,	-- Blindlight Razorjaw
+						76954,	-- Pahboo-Ra <Son of Ghamoo-Ra>
+						75135,	-- Tormented Sacrifice
+						74353,	-- Twilight Aquamancer
+						75058,	-- Twilight Aquamancer
+						74983,	-- Twilight Disciple
+						75286,	-- Twilight Disciple
+						74351,	-- Twilight Disciple
+						76036,	-- Twilight Shadow
+						74363,	-- Twilight Shadow
+						74382,	-- Twilight Shadowmage
+						74980,	-- Twilight Storm Mender
+						74380,	-- Twilight Storm Mender
+						75285,	-- Twilight Storm Mender
+					},
+				}),
+				n(74721, {	-- Blindlight Bilefin
 					dr(0.01, i(3416)),	-- Martyr's Chain
-					dr(0.01, i(2567)),	-- Evocator's Blade
 					dr(0.01, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(1454)),	-- Axe of the Enforcer	
 					dr(0.01, i(3414)),	-- Crested Scepter
-					dr(0.01, i(3415)),	-- Staff of the Friar
 				}),
-				n(74984, {	-- Blindlight Murloc	
-					dr(0.03, i(1486)),	-- Tree Bark Jacket
-					dr(0.01, i(2567)),	-- Evocator's Blade
+				n(74984, {	-- Blindlight Murloc
 					dr(0.01, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(1481)),	-- Grimclaw
-					dr(0.01, i(3415)),	-- Staff of the Friar
 				}),
-				n(74720, {	-- Blindlight Murloc	
+				n(74720, {	-- Blindlight Murloc
 					dr(0.03, i(1486)),	-- Tree Bark Jacket
-					dr(0.01, i(2567)),	-- Evocator's Blade
 					dr(0.01, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(1481)),	-- Grimclaw
-					dr(0.01, i(3415)),	-- Staff of the Friar
 				}),								
-				n(75980, {	-- Blindlight Razorjaw	
-					dr(0.01, i(1486)),	-- Tree Bark Jacket
+				n(75980, {	-- Blindlight Razorjaw
 					dr(0.01, i(3416)),	-- Martyr's Chain
-					dr(0.01, i(2567)),	-- Evocator's Blade
 					dr(0.01, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(1481)),	-- Grimclaw
 				}),		
-				n(74719, {	-- Blindlight Rotmouth	
+				n(74719, {	-- Blindlight Rotmouth
 					dr(0.05, i(1481)),	-- Grimclaw
 					dr(0.03, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(3413)),	-- Doomspike
-					dr(0.01, i(2567)),	-- Evocator's Blade
 				}),		
-				n(76954, {	-- Pahboo-Ra <Son of Ghamoo-Ra>	
-					dr(0.04, i(1486)),	-- Tree Bark Jacket
-					dr(0.04, i(3413)),	-- Doomspike
+				n(76954, {	-- Pahboo-Ra <Son of Ghamoo-Ra>
 					dr(0.02, i(3414)),	-- Crested Scepter
 					dr(0.01, i(1454)),	-- Axe of the Enforcer
 				}),		
-				n(74722, {	-- Razorshell Snapjaw		
-					dr(0.01, i(2567)),	-- Evocator's Blade
-				}),		
-				n(75135, {	-- Tormented Sacrifice	
-					dr(0.04, i(3413)),	-- Doomspike
-					dr(0.02, i(1486)),	-- Tree Bark Jacket
-				}),		
-				n(74353, {	-- Twilight Aquamancer	
-					dr(0.04, i(3415)),	-- Staff of the Friar
-					dr(0.01, i(1486)),	-- Tree Bark Jacket
-					dr(0.01, i(3413)),	-- Doomspike
-					dr(0.01, i(2567)),	-- Evocator's Blade
+				n(74353, {	-- Twilight Aquamancer
 					dr(0.01, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(3414)),	-- Crested Scepter
 				}),	
-				n(75058, {	-- Twilight Aquamancer	
-					dr(0.04, i(3415)),	-- Staff of the Friar
-					dr(0.01, i(1486)),	-- Tree Bark Jacket
-					dr(0.01, i(3413)),	-- Doomspike
-					dr(0.01, i(2567)),	-- Evocator's Blade
+				n(75058, {	-- Twilight Aquamancer
 					dr(0.01, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(3414)),	-- Crested Scepter
 				}),							
-				n(74983, {	-- Twilight Disciple	
+				n(74983, {	-- Twilight Disciple
 					dr(0.08, i(1481)),	-- Grimclaw
-					dr(0.03, i(2567)),	-- Evocator's Blade
-					dr(0.02, i(1486)),	-- Tree Bark Jacket
 					dr(0.02, i(3416)),	-- Martyr's Chain
-					dr(0.02, i(3413)),	-- Doomspike
 				}),		
-				n(75286, {	-- Twilight Disciple	
+				n(75286, {	-- Twilight Disciple
 					dr(0.08, i(1481)),	-- Grimclaw
-					dr(0.03, i(2567)),	-- Evocator's Blade
-					dr(0.02, i(1486)),	-- Tree Bark Jacket
 					dr(0.02, i(3416)),	-- Martyr's Chain
-					dr(0.02, i(3413)),	-- Doomspike
 				}),
-				n(74351, {	-- Twilight Disciple	
+				n(74351, {	-- Twilight Disciple
 					dr(0.08, i(1481)),	-- Grimclaw
-					dr(0.03, i(2567)),	-- Evocator's Blade
-					dr(0.02, i(1486)),	-- Tree Bark Jacket
 					dr(0.02, i(3416)),	-- Martyr's Chain
-					dr(0.02, i(3413)),	-- Doomspike
 				}),							
-				n(76036, {	-- Twilight Shadow	
+				n(76036, {	-- Twilight Shadow
 					dr(6, i(14127)),	-- Ritual Shroud
 					dr(6, i(3039)),		-- Short Ash Bow
 					dr(0.04, i(3417)),	-- Onyx Claymore
 					dr(0.02, i(3416)),	-- Martyr's Chain
 					dr(0.02, i(1481)),	-- Grimclaw
-					dr(0.01, i(1486)),	-- Tree Bark Jacket
-					dr(0.01, i(3413)),	-- Doomspike
-					dr(0.01, i(2567)),	-- Evocator's Blade
 					dr(0.01, i(1454)),	-- Axe of the Enforcer
 					dr(0.01, i(3414)),	-- Crested Scepter
 				}),	
-				n(74363, {	-- Twilight Shadow	
+				n(74363, {	-- Twilight Shadow
 					dr(0.04, i(3417)),	-- Onyx Claymore
 					dr(0.02, i(3416)),	-- Martyr's Chain
 					dr(0.02, i(1481)),	-- Grimclaw
-					dr(0.01, i(1486)),	-- Tree Bark Jacket
-					dr(0.01, i(3413)),	-- Doomspike
-					dr(0.01, i(2567)),	-- Evocator's Blade
 					dr(0.01, i(1454)),	-- Axe of the Enforcer
 					dr(0.01, i(3414)),	-- Crested Scepter
-				}),							
-				n(74382, {	-- Twilight Shadowmage	
-					dr(0.04, i(3415)),	-- Staff of the Friar
-					dr(0.01, i(1486)),	-- Tree Bark Jacket
-				}),		
-				n(74980, {	-- Twilight Storm Mender	
-					dr(0.20, i(3413)),	-- Doomspike
-					dr(0.06, i(3415)),	-- Staff of the Friara
+				}),	
+				n(74980, {	-- Twilight Storm Mender
 					dr(0.04, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(1486)),	-- Tree Bark Jacket
 					dr(0.01, i(3416)),	-- Martyr's Chain
 					dr(0.01, i(1454)),	-- Axe of the Enforcer
 				}),
-				n(74380, {	-- Twilight Storm Mender	
-					dr(0.20, i(3413)),	-- Doomspike
-					dr(0.06, i(3415)),	-- Staff of the Friar
+				n(74380, {	-- Twilight Storm Mender
 					dr(0.04, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(1486)),	-- Tree Bark Jacket
 					dr(0.01, i(3416)),	-- Martyr's Chain
 					dr(0.01, i(1454)),	-- Axe of the Enforcer
 				}),							
-				n(75285, {	-- Twilight Storm Mender	
-					dr(0.20, i(3413)),	-- Doomspike
-					dr(0.06, i(3415)),	-- Staff of the Friar
+				n(75285, {	-- Twilight Storm Mender
 					dr(0.04, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(1486)),	-- Tree Bark Jacket
 					dr(0.01, i(3416)),	-- Martyr's Chain
 					dr(0.01, i(1454)),	-- Axe of the Enforcer
 				}),
@@ -272,6 +283,6 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 		},
 		["lvl"] = 15,
-		["mapID"] = 221
+		["maps"] = { 221, 222 },
 	}),
 })};
