@@ -1124,3 +1124,4 @@ i(137642);		-- Mark of Honor
 i(51315);		-- Sealed Chest
 
 i(23247);		-- Burning Blossom
+i(103982);		-- Burden of Eternity

@@ -769,6 +769,16 @@ AllTheThings.Locales.enUS = {
 		[-10049] = "Interface\\Icons\\buff_forcesoforder",						-- Command Center
 		[-10050] = "Interface\\Icons\\buff_epichunter",							-- Nether Disruptor
 		[-100001] = "Interface\\Icons\\inv_artifact_tome01", 					-- AK Research Book
+		[-10051] = "Interface\\Icons\\Paladin_Protection",						-- 
+		[-10052] = "Interface\\Icons\\Paladin_Protection",						-- 
+		[-10053] = "Interface\\Icons\\Paladin_Protection",						-- 
+		[-10054] = "Interface\\Icons\\Paladin_Protection",						-- 
+		[-10055] = "Interface\\Icons\\Paladin_Protection",						-- 
+		[-10056] = "Interface\\Icons\\Paladin_Protection",						-- 
+		[-10057] = "Interface\\Icons\\Paladin_Protection",						-- 
+		[-10058] = "Interface\\Icons\\Paladin_Protection",						-- 
+		[-10059] = "Interface\\Icons\\Paladin_Protection",						-- 
+		[-10060] = "Interface\\Icons\\achievement_faction_celestials",						-- The Four Celestials
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101503] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1515,6 +1525,7 @@ AllTheThings.Locales.enUS = {
 		[-10057] = select(1,GetCategoryInfo(15308)),		-- War Effort
 		[-10058] = select(1,GetCategoryInfo(15283)),		-- World
 		[-10059] = select(1,GetCategoryInfo(15302)),		-- Pandaria Scenarios
+		[-10060] = select(2,GetAchievementInfo(7333)),		-- The Four Celestials
 
 		[-100001] = ITEM_QUALITY6_DESC, 				-- Artifact
 
