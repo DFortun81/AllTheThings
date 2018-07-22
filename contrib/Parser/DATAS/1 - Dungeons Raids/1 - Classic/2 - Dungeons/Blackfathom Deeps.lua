@@ -25,10 +25,23 @@ _.Instances = { tier(1, {	-- Classic
 				i(2271, {	-- Staff of the Blessed Seer
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
+						74984,	-- Blindlight Murloc
+						74720,	-- Blindlight Murloc
+						75980,	-- Blindlight Razorjaw
+						74353,	-- Twilight Aquamancer
+						75058,	-- Twilight Aquamancer
+						74983,	-- Twilight Disciple
+						75286,	-- Twilight Disciple
+						74351,	-- Twilight Disciple
+						76036,	-- Twilight Shadow
+						74363,	-- Twilight Shadow
+						74382,	-- Twilight Shadowmage
+						74980,	-- Twilight Storm Mender
+						74380,	-- Twilight Storm Mender
+						75285,	-- Twilight Storm Mender
 					},
 				}),
---[[				n(74721, {	-- Blindlight Bilefin	
-					dr(2.00, i(2271)),	-- Staff of the Blessed Seer
+				n(74721, {	-- Blindlight Bilefin	
 					dr(0.01, i(1486)),	-- Tree Bark Jacket
 					dr(0.01, i(3416)),	-- Martyr's Chain
 					dr(0.01, i(2567)),	-- Evocator's Blade
@@ -36,14 +49,13 @@ _.Instances = { tier(1, {	-- Classic
 					dr(0.01, i(1454)),	-- Axe of the Enforcer	
 					dr(0.01, i(3414)),	-- Crested Scepter
 					dr(0.01, i(3415)),	-- Staff of the Friar
-				}),		--]]
+				}),
 				n(74984, {	-- Blindlight Murloc	
 					dr(0.03, i(1486)),	-- Tree Bark Jacket
 					dr(0.01, i(2567)),	-- Evocator's Blade
 					dr(0.01, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(1481)),	-- Grimclaw
 					dr(0.01, i(3415)),	-- Staff of the Friar
-					dr(0.01, i(2271)),	-- Staff of the Blessed Seer
 				}),
 				n(74720, {	-- Blindlight Murloc	
 					dr(0.03, i(1486)),	-- Tree Bark Jacket
@@ -51,7 +63,6 @@ _.Instances = { tier(1, {	-- Classic
 					dr(0.01, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(1481)),	-- Grimclaw
 					dr(0.01, i(3415)),	-- Staff of the Friar
-					dr(0.01, i(2271)),	-- Staff of the Blessed Seer
 				}),								
 				n(75980, {	-- Blindlight Razorjaw	
 					dr(0.01, i(1486)),	-- Tree Bark Jacket
@@ -59,7 +70,6 @@ _.Instances = { tier(1, {	-- Classic
 					dr(0.01, i(2567)),	-- Evocator's Blade
 					dr(0.01, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(1481)),	-- Grimclaw
-					dr(0.01, i(2271)),	-- Staff of the Blessed Seer
 				}),		
 				n(74719, {	-- Blindlight Rotmouth	
 					dr(0.05, i(1481)),	-- Grimclaw
@@ -73,7 +83,7 @@ _.Instances = { tier(1, {	-- Classic
 					dr(0.02, i(3414)),	-- Crested Scepter
 					dr(0.01, i(1454)),	-- Axe of the Enforcer
 				}),		
-				n(74722, { -- Razorshell Snapjaw		
+				n(74722, {	-- Razorshell Snapjaw		
 					dr(0.01, i(2567)),	-- Evocator's Blade
 				}),		
 				n(75135, {	-- Tormented Sacrifice	
@@ -87,7 +97,6 @@ _.Instances = { tier(1, {	-- Classic
 					dr(0.01, i(2567)),	-- Evocator's Blade
 					dr(0.01, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(3414)),	-- Crested Scepter
-					dr(0.01, i(2271)),	-- Staff of the Blessed Seer
 				}),	
 				n(75058, {	-- Twilight Aquamancer	
 					dr(0.04, i(3415)),	-- Staff of the Friar
@@ -96,7 +105,6 @@ _.Instances = { tier(1, {	-- Classic
 					dr(0.01, i(2567)),	-- Evocator's Blade
 					dr(0.01, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(3414)),	-- Crested Scepter
-					dr(0.01, i(2271)),	-- Staff of the Blessed Seer
 				}),							
 				n(74983, {	-- Twilight Disciple	
 					dr(0.08, i(1481)),	-- Grimclaw
@@ -104,7 +112,6 @@ _.Instances = { tier(1, {	-- Classic
 					dr(0.02, i(1486)),	-- Tree Bark Jacket
 					dr(0.02, i(3416)),	-- Martyr's Chain
 					dr(0.02, i(3413)),	-- Doomspike
-					dr(0.01, i(2271)),	-- Staff of the Blessed Seer
 				}),		
 				n(75286, {	-- Twilight Disciple	
 					dr(0.08, i(1481)),	-- Grimclaw
@@ -112,7 +119,6 @@ _.Instances = { tier(1, {	-- Classic
 					dr(0.02, i(1486)),	-- Tree Bark Jacket
 					dr(0.02, i(3416)),	-- Martyr's Chain
 					dr(0.02, i(3413)),	-- Doomspike
-					dr(0.01, i(2271)),	-- Staff of the Blessed Seer
 				}),
 				n(74351, {	-- Twilight Disciple	
 					dr(0.08, i(1481)),	-- Grimclaw
@@ -120,7 +126,6 @@ _.Instances = { tier(1, {	-- Classic
 					dr(0.02, i(1486)),	-- Tree Bark Jacket
 					dr(0.02, i(3416)),	-- Martyr's Chain
 					dr(0.02, i(3413)),	-- Doomspike
-					dr(0.01, i(2271)),	-- Staff of the Blessed Seer
 				}),							
 				n(76036, {	-- Twilight Shadow	
 					dr(6, i(14127)),	-- Ritual Shroud
@@ -128,7 +133,6 @@ _.Instances = { tier(1, {	-- Classic
 					dr(0.04, i(3417)),	-- Onyx Claymore
 					dr(0.02, i(3416)),	-- Martyr's Chain
 					dr(0.02, i(1481)),	-- Grimclaw
-					dr(0.02, i(2271)),	-- Staff of the Blessed Seer
 					dr(0.01, i(1486)),	-- Tree Bark Jacket
 					dr(0.01, i(3413)),	-- Doomspike
 					dr(0.01, i(2567)),	-- Evocator's Blade
@@ -139,7 +143,6 @@ _.Instances = { tier(1, {	-- Classic
 					dr(0.04, i(3417)),	-- Onyx Claymore
 					dr(0.02, i(3416)),	-- Martyr's Chain
 					dr(0.02, i(1481)),	-- Grimclaw
-					dr(0.02, i(2271)),	-- Staff of the Blessed Seer
 					dr(0.01, i(1486)),	-- Tree Bark Jacket
 					dr(0.01, i(3413)),	-- Doomspike
 					dr(0.01, i(2567)),	-- Evocator's Blade
@@ -149,11 +152,9 @@ _.Instances = { tier(1, {	-- Classic
 				n(74382, {	-- Twilight Shadowmage	
 					dr(0.04, i(3415)),	-- Staff of the Friar
 					dr(0.01, i(1486)),	-- Tree Bark Jacket
-					dr(0.01, i(2271)),	-- Staff of the Blessed Seer
 				}),		
 				n(74980, {	-- Twilight Storm Mender	
 					dr(0.20, i(3413)),	-- Doomspike
-					dr(0.09, i(2271)),	-- Staff of the Blessed Seer
 					dr(0.06, i(3415)),	-- Staff of the Friara
 					dr(0.04, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(1486)),	-- Tree Bark Jacket
@@ -162,7 +163,6 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				n(74380, {	-- Twilight Storm Mender	
 					dr(0.20, i(3413)),	-- Doomspike
-					dr(0.09, i(2271)),	-- Staff of the Blessed Seer
 					dr(0.06, i(3415)),	-- Staff of the Friar
 					dr(0.04, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(1486)),	-- Tree Bark Jacket
@@ -171,16 +171,6 @@ _.Instances = { tier(1, {	-- Classic
 				}),							
 				n(75285, {	-- Twilight Storm Mender	
 					dr(0.20, i(3413)),	-- Doomspike
-					dr(0.09, i(2271)),	-- Staff of the Blessed Seer
-					dr(0.06, i(3415)),	-- Staff of the Friar
-					dr(0.04, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(1486)),	-- Tree Bark Jacket
-					dr(0.01, i(3416)),	-- Martyr's Chain
-					dr(0.01, i(1454)),	-- Axe of the Enforcer
-				}),
-				n(75285, {	-- Twilight Storm Mender	
-					dr(0.20, i(3413)),	-- Doomspike
-					dr(0.09, i(2271)),	-- Staff of the Blessed Seer
 					dr(0.06, i(3415)),	-- Staff of the Friar
 					dr(0.04, i(3417)),	-- Onyx Claymore
 					dr(0.01, i(1486)),	-- Tree Bark Jacket
