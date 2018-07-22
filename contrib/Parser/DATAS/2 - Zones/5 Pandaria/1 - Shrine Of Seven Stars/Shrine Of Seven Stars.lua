@@ -135,47 +135,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
-					q(32863, { 	-- What We've Been Training For
-						["groups"] = {
-							i(98095),	-- Brawler's Pet Supplies
-						},
-						["description"] = "Account-Wide Weekly Quest.|r",
-					}),
-					q(32603, { 	-- Beasts of Fable
-						["groups"] = {
-							i(94025),	-- Red Panda
-						},
-						["description"] = "Account-Wide Quest.|r",
-					}),
-					q(32604, { 	-- Beasts of Fable Book I
-						["groups"] = {
-							i(94207), -- Fabled Pandaren Pet Supplies
-						},
-						["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
-					}),
-					q(32868, { 	-- Beasts of Fable Book II
-						["groups"] = {
-							i(94207), -- Fabled Pandaren Pet Supplies
-						},
-						["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
-					}),
-					q(32869, { 	-- Beasts of Fable Book III
-						["groups"] = {
-							i(94207), -- Fabled Pandaren Pet Supplies
-						},
-						["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
-					}),
-					q(32428, { 	-- Pandaren Spirit Tamer
-						["groups"] = {				
-							i(92799),
-							i(92798),
-							i(92800),
-							i(90173),
-						},
-						["description"] = "Account-Wide Quest. These pets can be found in the Pandaren Spirit Pet Supplies received from the four Pandaren Spirit Tamers in their individual Daily Quests once you complete this quest.|r",
-					}),
-				}),
 				n(-17, { 	-- Quests	
 					qa(32900,  {  -- Heroic Deeds
 						["groups"] = {
@@ -1404,7 +1363,6 @@ _.Zones =
 					}),
 				}),
 			},
-			["maps"] = { 390 },
 			["lvl"] = 78,
 			["isRaid"] = true,
 			["races"] = ALLIANCE_ONLY,

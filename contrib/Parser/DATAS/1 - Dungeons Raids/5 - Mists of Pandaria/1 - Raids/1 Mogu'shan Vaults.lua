@@ -561,7 +561,8 @@ _.Instances =
 				["isRaid"] = true,
 				["sharedLockout"] = 1,
 				["lvl"] = 90,
-				["mapID"] = 471
+				["mapID"] = 471,
+				["maps"] = { 472 }, -- 2nd LFR Wing
 			}),
 		},					
 		["tierID"] = 5

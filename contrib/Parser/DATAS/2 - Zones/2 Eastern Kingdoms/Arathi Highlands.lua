@@ -333,6 +333,7 @@ _.Zones =
 						["description"] = "This quest requires a skill of 225 in First Aid.",
 						["requiredSkill"] = 356,	-- First Aid
 						["sourceQuests"] = { 6623 },	-- Horde Trauma
+						["u"] = 2,
 					}),
 					qh(26033, {	-- Trol'kalar
 						["groups"] = {

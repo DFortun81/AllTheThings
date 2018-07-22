@@ -542,147 +542,40 @@ _.Zones =
 						i(46308),
 					})
 				}),
-				n(  0, {	-- Zone Drop
-					n(4284, { -- Scarlet Augur		
-						dr(0.02, i(7753)),	-- Bloodspiller
-						dr(0.01, i(7729)),	-- Chesterfall Musket
-						dr(0.01, i(13049)),	-- Deanship Claymore
-						dr(0.01, i(3203)),	-- Dense Triangle Mace
-						dr(0.01, i(7786)),	-- Headsplitter
-						dr(0.02, i(7787)),	-- Resplendent Guardian
-						dr(0.04, i(8226)),	-- The Butcher
-						dr(0.01, i(15928)),	-- Silver-Thread Rod
-						dr(0.01, i(6395)),	-- Silver-Thread Amice
-						dr(0.01, i(4713)),	-- Silver-Thread Cloak
-						dr(0.01, i(4035)),	-- Silver-Thread Robe
-						dr(0.01, i(7110)),	-- Silver-Thread Armor
-						dr(0.01, i(4036)),	-- Silver-Thread Cuffs
-						dr(0.01, i(6393)),	-- Silver-Thread Gloves
-						dr(0.01, i(4714)),	-- Silver-Thread Sash
-						dr(0.01, i(4037)),	-- Silver-Thread Pants
-						dr(0.01, i(6394)),	-- Silver-Thread Boots
-						dr(0.01, i(7727)),	-- Watchman Pauldrons
-						dr(0.03, i(7754)),	-- Harbinger Boots
-						dr(0.01, i(13114)),	-- Troll's Bane Leggings
-						dr(0.01, i(6592)),	-- Battleforge Armor
-						dr(0.01, i(7728)),	-- Beguiler Robes
-					}),		
-					n(4285, { -- Scarlet Disciple		
-						dr(0.02, i(7753)),	-- Bloodspiller
-						dr(0.01, i(7729)),	-- Chesterfall Musket
-						dr(0.01, i(13049)),	-- Deanship Claymore
-						dr(0.01, i(3203)),	-- Dense Triangle Mace
-						dr(0.01, i(7786)),	-- Headsplitter
-						dr(0.02, i(7787)),	-- Resplendent Guardian
-						dr(0.04, i(8226)),	-- The Butcher
-						dr(0.01, i(15928)),	-- Silver-Thread Rod
-						dr(0.01, i(6395)),	-- Silver-Thread Amice
-						dr(0.01, i(4713)),	-- Silver-Thread Cloak
-						dr(0.01, i(4035)),	-- Silver-Thread Robe
-						dr(0.01, i(7110)),	-- Silver-Thread Armor
-						dr(0.01, i(4036)),	-- Silver-Thread Cuffs
-						dr(0.01, i(6393)),	-- Silver-Thread Gloves
-						dr(0.01, i(4714)),	-- Silver-Thread Sash
-						dr(0.01, i(4037)),	-- Silver-Thread Pants
-						dr(0.01, i(6394)),	-- Silver-Thread Boots
-						dr(0.01, i(7727)),	-- Watchman Pauldrons
-						dr(0.03, i(7754)),	-- Harbinger Boots
-						dr(0.01, i(13114)),	-- Troll's Bane Leggings
-						dr(0.01, i(6592)),	-- Battleforge Armor
-					}),		
-					n(4282, { -- Scarlet Magician		
-						dr(0.02, i(7753)),	-- Bloodspiller
-						dr(0.01, i(7729)),	-- Chesterfall Musket
-						dr(0.01, i(13049)),	-- Deanship Claymore
-						dr(0.01, i(3203)),	-- Dense Triangle Mace
-						dr(0.01, i(7786)),	-- Headsplitter
-						dr(0.02, i(7787)),	-- Resplendent Guardian
-						dr(0.04, i(8226)),	-- The Butcher
-						dr(0.01, i(15928)),	-- Silver-Thread Rod
-						dr(0.01, i(6395)),	-- Silver-Thread Amice
-						dr(0.01, i(4713)),	-- Silver-Thread Cloak
-						dr(0.01, i(4035)),	-- Silver-Thread Robe
-						dr(0.01, i(7110)),	-- Silver-Thread Armor
-						dr(0.01, i(4036)),	-- Silver-Thread Cuffs
-						dr(0.01, i(6393)),	-- Silver-Thread Gloves
-						dr(0.01, i(4714)),	-- Silver-Thread Sash
-						dr(0.01, i(4037)),	-- Silver-Thread Pants
-						dr(0.01, i(6394)),	-- Silver-Thread Boots
-						dr(0.01, i(7727)),	-- Watchman Pauldrons
-						dr(0.03, i(7754)),	-- Harbinger Boots
-						dr(0.01, i(13114)),	-- Troll's Bane Leggings
-						dr(0.01, i(6592)),	-- Battleforge Armor
-					}),		
-					n(4280, { -- Scarlet  Preserver		
-						dr(0.02, i(7753)),	-- Bloodspiller
-						dr(0.01, i(7729)),	-- Chesterfall Musket
-						dr(0.01, i(13049)),	-- Deanship Claymore
-						dr(0.01, i(3203)),	-- Dense Triangle Mace
-						dr(0.01, i(7786)),	-- Headsplitter
-						dr(0.02, i(7787)),	-- Resplendent Guardian
-						dr(0.04, i(8226)),	-- The Butcher
-						dr(0.01, i(15928)),	-- Silver-Thread Rod
-						dr(0.01, i(6395)),	-- Silver-Thread Amice
-						dr(0.01, i(4713)),	-- Silver-Thread Cloak
-						dr(0.01, i(4035)),	-- Silver-Thread Robe
-						dr(0.01, i(7110)),	-- Silver-Thread Armor
-						dr(0.01, i(4036)),	-- Silver-Thread Cuffs
-						dr(0.01, i(6393)),	-- Silver-Thread Gloves
-						dr(0.01, i(4714)),	-- Silver-Thread Sash
-						dr(0.01, i(4037)),	-- Silver-Thread Pants
-						dr(0.01, i(6394)),	-- Silver-Thread Boots
-						dr(0.01, i(7727)),	-- Watchman Pauldrons
-						dr(0.03, i(7754)),	-- Harbinger Boots
-						dr(0.01, i(13114)),	-- Troll's Bane Leggings
-						dr(0.01, i(6592)),	-- Battleforge Armor
-					}),		
-					n(4281, { -- Scarlet Scout		
-						dr(0.02, i(7753)),	-- Bloodspiller
-						dr(0.01, i(7729)),	-- Chesterfall Musket
-						dr(0.01, i(13049)),	-- Deanship Claymore
-						dr(0.01, i(3203)),	-- Dense Triangle Mace
-						dr(0.01, i(7786)),	-- Headsplitter
-						dr(0.02, i(7787)),	-- Resplendent Guardian
-						dr(0.04, i(8226)),	-- The Butcher
-						dr(0.01, i(15928)),	-- Silver-Thread Rod
-						dr(0.01, i(6395)),	-- Silver-Thread Amice
-						dr(0.01, i(4713)),	-- Silver-Thread Cloak
-						dr(0.01, i(4035)),	-- Silver-Thread Robe
-						dr(0.01, i(7110)),	-- Silver-Thread Armor
-						dr(0.01, i(4036)),	-- Silver-Thread Cuffs
-						dr(0.01, i(6393)),	-- Silver-Thread Gloves
-						dr(0.01, i(4714)),	-- Silver-Thread Sash
-						dr(0.01, i(4037)),	-- Silver-Thread Pants
-						dr(0.01, i(6394)),	-- Silver-Thread Boots
-						dr(0.01, i(7727)),	-- Watchman Pauldrons
-						dr(0.03, i(7754)),	-- Harbinger Boots
-						dr(0.01, i(13114)),	-- Troll's Bane Leggings
-						dr(0.01, i(6592)),	-- Battleforge Armor
-						dr(0.01, i(7728)),	-- Beguiler Robes
-					}),		
-					n(4283, { -- Scarlet Sentry		
-						dr(0.02, i(7753)),	-- Bloodspiller
-						dr(0.01, i(7729)),	-- Chesterfall Musket
-						dr(0.01, i(13049)),	-- Deanship Claymore
-						dr(0.01, i(3203)),	-- Dense Triangle Mace
-						dr(0.01, i(7786)),	-- Headsplitter
-						dr(0.02, i(7787)),	-- Resplendent Guardian
-						dr(0.04, i(8226)),	-- The Butcher
-						dr(0.01, i(15928)),	-- Silver-Thread Rod
-						dr(0.01, i(6395)),	-- Silver-Thread Amice
-						dr(0.01, i(4713)),	-- Silver-Thread Cloak
-						dr(0.01, i(4035)),	-- Silver-Thread Robe
-						dr(0.01, i(7110)),	-- Silver-Thread Armor
-						dr(0.01, i(4036)),	-- Silver-Thread Cuffs
-						dr(0.01, i(6393)),	-- Silver-Thread Gloves
-						dr(0.01, i(4714)),	-- Silver-Thread Sash
-						dr(0.01, i(4037)),	-- Silver-Thread Pants
-						dr(0.01, i(6394)),	-- Silver-Thread Boots
-						dr(0.01, i(7727)),	-- Watchman Pauldrons
-						dr(0.03, i(7754)),	-- Harbinger Boots
-						dr(0.01, i(13114)),	-- Troll's Bane Leggings
-						dr(0.01, i(6592)),	-- Battleforge Armor
-					}),		
+				m(19, { -- Scarlet Monastery Entrace
+					["groups"] = {
+						i(7753),	-- Bloodspiller
+						i(7729),	-- Chesterfall Musket
+						i(13049),	-- Deanship Claymore
+						i(3203),	-- Dense Triangle Mace
+						i(7786),	-- Headsplitter
+						i(7787),	-- Resplendent Guardian
+						i(8226),	-- The Butcher
+						i(15928),	-- Silver-Thread Rod
+						i(6395),	-- Silver-Thread Amice
+						i(4713),	-- Silver-Thread Cloak
+						i(4035),	-- Silver-Thread Robe
+						i(7110),	-- Silver-Thread Armor
+						i(4036),	-- Silver-Thread Cuffs
+						i(6393),	-- Silver-Thread Gloves
+						i(4714),	-- Silver-Thread Sash
+						i(4037),	-- Silver-Thread Pants
+						i(6394),	-- Silver-Thread Boots
+						i(7727),	-- Watchman Pauldrons
+						i(7754),	-- Harbinger Boots
+						i(13114),	-- Troll's Bane Leggings
+						i(6592),	-- Battleforge Armor
+						i(7728),	-- Beguiler Robes
+					},
+					["crs"] = {
+						4284, -- Scarlet Augur		
+						4285, -- Scarlet Disciple		
+						4282, -- Scarlet Magician		
+						4280, -- Scarlet Preserver		
+						4281, -- Scarlet Scout		
+						4283, -- Scarlet Sentry
+					},
+					["icon"] = "Interface\\Icons\\inv_helmet_52",
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
