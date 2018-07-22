@@ -17,12 +17,20 @@ _.Zones =
 					p(711), 	-- Sifang Otter
 					p(713), 	-- Softshell Snapling
 					q(31955, { -- Grand Master Nishi
-						i(89125),	-- Sack of Pet Supplies
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+						["qg"] = 66734,	-- Farmer Nishi
+						["isDaily"] = true,
 					}),
 				}),
 				n(-17, { 	-- Quests
 					n(-192, {	-- Cooking
 						["groups"] = {
+							q(31471, {	-- Agile as a Tiger
+								["qg"] = 58713,	-- Anthea Ironpaw (52.7,52.0)
+								["sourceQuests"] = { 31470 }, -- Way of the Wok
+							}),
 							q(33022, {	-- Catch and Carry
 								["groups"] = {
 									recipe(145038),	-- Noodle Cart Kit
@@ -33,9 +41,20 @@ _.Zones =
 								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
 								["sourceQuests"] = { 33021 }, -- Secrets Lost, Forever?
 							}),
+							q(30329, {	-- Cindergut Peppers
+								["qg"] = 58713,	-- Anthea Ironpaw (52.7,52.0)
+								["isDaily"] = true,
+							}),
 							q(31477, {	-- Endurance
 								["qg"] = 58716,	-- Jian Ironpaw (53.4,51.6)
 								["sourceQuests"] = { 31478 }, -- Way of the Oven
+							}),
+							q(31279, {	-- Everything I Know About Cooking
+								["qg"] = 65528,	-- Nan Thunderfoot (63.6,20.2)
+							}),
+							q(30332, {	-- Fatty Goatsteak
+								["qg"] = 58712,	-- Kol Ironpaw (53.0,51.3)
+								["isDaily"] = true,
 							}),
 							q(31480, {	-- Have a Drink
 								["qg"] = 58717,	-- Bobo Ironpaw (53.2,52.2)
@@ -51,9 +70,33 @@ _.Zones =
 								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
 								["sourceQuests"] = { 33022 }, -- Catch and Carry
 							}),
+							q(33146, {	-- Noodle Time
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["isDaily"] = true,
+							}),
+							q(33358, {	-- Noodle Time: Bonus
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["isDaily"] = true,
+							}),
+							q(31536, {	-- Preserving Freshness
+								["qg"] = 64395,	-- Nam Ironpaw (53.5,51.2)
+								["sourceQuests"] = {
+									31479,	-- Way of the Brew
+									31311,	-- Way of the Grill
+									31478,	-- Way of the Oven
+									31472,	-- Way of the Pot
+									31475,	-- Way of the Steamer
+									31470,	-- Way of the Wok
+								},
+							}),
 							q(31302, {	-- Ready for Greatness
 								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
 								["sourceQuests"] = { 31281 }, -- So You Want to be a Chef...
+							}),
+							q(31535, {	-- Replenishing the Pantry
+								["qg"] = 64395,	-- Nam Ironpaw (53.5,51.2)
+								["repeatable"] = true,
+								["sourceQuests"] = { 31536 }, -- Preserving Freshness
 							}),
 							q(33021, {	-- Secrets Lost, Forever?
 								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
@@ -66,6 +109,10 @@ _.Zones =
 								["qg"] = 58712,	-- Kol Ironpaw (53.0,51.3)
 								["sourceQuests"] = { 31311 }, -- Way of the Grill
 							}),
+							q(30331, {	-- The Mile-High Grub
+								["qg"] = 58714,	-- Mei Mei Ironpaw (52.5,51.6)
+								["isDaily"] = true,
+							}),
 							q(33027, {	-- The Secret Ingredient Is...
 								["groups"] = {
 									recipe(145062),	-- Pandaren Treasure Noodle Cart Kit
@@ -76,6 +123,18 @@ _.Zones =
 								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
 								["sourceQuests"] = { 33026 },	-- These Aren't Your Fatty Goatsteaks
 							}),
+							q(31474, {	-- The Soup of Contemplation
+								["qg"] = 58714,	-- Mei Mei Ironpaw (52.5,51.6)
+								["sourceQuests"] = { 31472 }, -- Way of the Pot
+							}),
+							q(31476, {	-- The Spirit of Cooking
+								["qg"] = 58715,	-- Yan Ironpaw (52.5,51.7)
+								["sourceQuests"] = { 31475 }, -- Way of the Steamer
+							}),
+							q(30328, {	-- The Thousand-Year Dumpling
+								["qg"] = 58715,	-- Yan Ironpaw (52.6,51.7)
+								["isDaily"] = true,
+							}),
 							q(30330, {	-- The Truffle Shuffle
 								["qg"] = 58716,	-- Jian Ironpaw (53.4,51.6)
 								["sourceQuests"] = { 30257 }, -- Learn and Grow V: Halfhill Market
@@ -84,6 +143,10 @@ _.Zones =
 							q(33026, {	-- These Aren't Your Fatty Goatsteaks
 								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
 								["sourceQuests"] = { 33024 }, -- Is That a Real Measurement?
+							}),
+							q(31521, {	-- To Be a Master
+								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["description"] = "You must master all 6 Pandaren cooking ways for this quest to become available.", 
 							}),
 							q(31479, {	-- Way of the Brew
 								["groups"] = {
@@ -142,9 +205,44 @@ _.Zones =
 						},
 						["requiredSkill"] = 356,
 					}),
+					q(30471, {	-- A Gift For Chee Chee
+						["qg"] = 64464,	-- Andi (52.7,50.4)
+						["isDaily"] = true,
+					}),
+					q(30474, {	-- A Gift For Ella
+						["qg"] = 64464,	-- Andi (52.7,50.4)
+						["isDaily"] = true,
+					}),
+					q(30473, {	-- A Gift For Fish
+						["qg"] = 64464,	-- Andi (52.7,50.4)
+						["isDaily"] = true,
+					}),
+					q(30475, {	-- A Gift For Fung
+						["qg"] = 64464,	-- Andi (52.7,50.4)
+						["isDaily"] = true,
+					}),
+					q(30479, {	-- A Gift For Gina
+						["qg"] = 64464,	-- Andi (52.7,50.4)
+						["isDaily"] = true,
+					}),
 					q(30477, {	-- A Gift For Haohan
 						["qg"] = 64464,	-- Andi (52.7,50.4)
-						["sourceQuests"] = { 30257 }, -- Learn and Grow V: Halfhill Market
+						["isDaily"] = true,
+					}),
+					q(30478, {	-- A Gift For Jogu
+						["qg"] = 64464,	-- Andi (52.7,50.4)
+						["isDaily"] = true,
+					}),
+					q(30476, {	-- A Gift For Old Hillpaw
+						["qg"] = 64464,	-- Andi (52.7,50.4)
+						["isDaily"] = true,
+					}),
+					q(30472, {	-- A Gift For Sho
+						["qg"] = 64464,	-- Andi (52.7,50.4)
+						["isDaily"] = true,
+					}),
+					q(30470, {	-- A Gift For Tina
+						["qg"] = 64464,	-- Andi (52.7,50.4)
 						["isDaily"] = true,
 					}),
 					q(30252, {	-- A Helping Hand
@@ -182,6 +280,15 @@ _.Zones =
 						["qg"] = 64337,	-- Nomi
 						["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.|r"
 					}),
+					q(31672, {	-- A Pumpkin-y Perfume
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["isDaily"] = true,
+					}),
+					o(215705, { -- Tillers Shrine (52.1,49)
+						q(30534, {	-- A Second Hand
+							["description"] = "Requires reputation level of \"Exalted\" with The Tillers and \"Best Friends\" with whomever you want assisting you on the farm.",
+						}),
+					}),
 					q(29908, {	-- A Seemingly Endless Nuisance
 						["groups"] = { 
 							i(81769),	-- Silkmaster's Satin Leggings
@@ -197,9 +304,21 @@ _.Zones =
 						["qg"] = 56204,	-- Pang Thunderfoot (83.7,21.1)
 						["sourceQuests"] = { 29907 }, -- Chen and Li Li
 					}),
+					q(32189, {	-- A Shabby New Face
+						["qg"] = 58718,	-- Merchant Greenfield (52.8,52)
+						["description"] = "Available only on days where Barnaby Fletcher is in Halfhill."
+					}),
 					q(29988, {	-- A Taste For Eggs
 						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.3)
 						["sourceQuests"] = { 29987 }, -- Unyielding Fists: Trial of Wood
+					}),
+					q(31341, {	-- A Wolf In Sheep's Clothing
+						["qg"] = 58709,	-- Chee Chee
+						["sourceQuests"] = { 31340 }, -- Oh Sheepie....
+					}),
+					q(31538, {	-- A Worthy Brew
+						["qg"] = 58647,	-- Ella
+						["description"] = "Requires reputation level of \"Good Friend\" or better with Ella.",
 					}),
 					q(29577, {	-- Ashyo's Vision
 						["qg"] = 56113,	-- Clever Ashyo (61.2,34.2)
@@ -213,10 +332,34 @@ _.Zones =
 						["qgs"] = { 56474, 58785 }, -- Mudmug
 						["sourceQuests"] = { 30051 }, -- The Great Water Hunt
 					}),
-					q(30077, {
+					q(30077, {	-- Barrels, Man
 						["qg"] = 56138,	-- Li Li (32.3,68.5)
 						["sourceQuests"] = { 30074 }, -- Knocking on the Door
-					}),	-- Barrels, Man
+					}),
+					i(86436, {	-- Beautiful Brooch
+						q(31329, {	-- A Beautiful Brooch
+							["qgs"] = {
+								59120,	-- Kunzen Rockflinger
+								59126,	-- Jokka-Jokka
+								59128,	-- Jim-Jim
+								59130,	-- Teeku
+								59127,	-- Kon-Kon
+								59129,	-- Maaka
+								59125,	-- Kunzen Soupmaster
+								59123,	-- Kunzen Ritualist
+								59134,	-- Yammo
+								59121,	-- Kunzen Hunter
+								59133,	-- Buk-Buk
+								59131,	-- Lor-Lor
+								59135,	-- Bimba
+								59124,	-- Kunzen Collector
+								59132,	-- Rit-Rit
+								59119,	-- Kunzen Ravager
+								59122,	-- Kunzen Herdskeeper
+							},
+							["description"] = "Requires reputation level of \"Good Friend\" or better with Tina Mudclaw to drop."
+						}),
+					}),
 					o(214340, {	-- Boat-Building Instructions (part of "Treasure of Pandaria" achievement
 						q(31869, {	-- Boat-Building Instructions
 							["description"] = "Located inside a hut on the far east side of the Valley near water. (92.2,39.2)",
@@ -229,6 +372,26 @@ _.Zones =
 					q(29952, {	-- Broken Dreams
 						["qg"] = 56133,	-- Chen Stormstout (68.8,43.4)
 						["sourceQuests"] = { 29950 },	-- Li Li's Day Off
+					}),
+					q(31323, {	-- Buy A Fish A Brewery?
+						["qg"] = 58710,	-- Jogu the Drunk (53.6,52.6)
+						["description"] = "Requires reputation level of \"Good Friend\" or better with Jogu the Drunk."
+					}),
+					q(31320, {	-- Buy A Fish A Drink?
+						["qg"] = 58710,	-- Jogu the Drunk (53.6,52.6)
+						["description"] = "Requires reputation level of \"Acquaintance\" or better with Jogu the Drunk."
+					}),
+					q(31322, {	-- Buy A Fish A Keg?
+						["qg"] = 58710,	-- Jogu the Drunk (53.6,52.6)
+						["description"] = "Requires reputation level of \"Friend\" or better with Jogu the Drunk."
+					}),
+					q(31321, {	-- Buy A Fish A Round?
+						["qg"] = 58710,	-- Jogu the Drunk (53.6,52.6)
+						["description"] = "Requires reputation level of \"Buddy\" or better with Jogu the Drunk."
+					}),
+					q(30318, {	-- Chasing the Chicken
+						["qg"] = 58707,	-- Old Hillpaw (53.1,51.9)
+						["isDaily"] = true,
 					}),
 					q(29907, {	-- Chen and Li Li
 						["qg"] = 56133,	-- Chen Stormstout (86.0,22.2)
@@ -291,6 +454,23 @@ _.Zones =
 						["qg"] = 56133,	-- Chen Stormstout (55.9,49.4)
 						["sourceQuests"] = { 30046 },	-- Chen's Resolution
 					}),
+					i(89814, {	-- "Earth-Slasher" Master Plow
+						q(31938, {	-- The "Earth-Slasher" Master Plow
+							["qg"] = 58706,	-- Gina Mudclaw (53.2,51.8)
+							["description"] = "Begins with a purchase of the \"Earth-Slasher\" Master Plow from Gina Mudclaw",
+							["sourceQuests"] = { 30529 }, -- Growing the Farm III: The Mossy Boulder
+						}),
+					}),
+					q(31537, {	-- Ella's Taste Test
+						["qg"] = 58647,	-- Ella (53,51.6)
+						["description"] = "Requires reputation level of \"Friend\" or better.",
+					}),
+					i(79237, {	-- Enormous Crocolisk Tail
+						q(30275, {	-- A Crocolisk Tale
+							["qg"] = 58755,	-- Manglemaw's Mother
+							["description"] = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
+						}),
+					}),
 					q(30054, {	-- Enough is Ookin' Enough
 						["qg"] = 57401,	-- Mung-Mung (44.2,34.2)
 						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
@@ -309,6 +489,42 @@ _.Zones =
 							i(88019),	-- Sunsong Armored Pauldrons
 						},
 						["qg"] = 56720,	-- Loon Mai (19.5,56.9)
+					}),
+					i(86435, {	-- Exquisite Earring
+						q(31328, {	-- An Exquisite Earring
+							["qgs"] = {
+								59120,	-- Kunzen Rockflinger
+								59126,	-- Jokka-Jokka
+								59128,	-- Jim-Jim
+								59130,	-- Teeku
+								59127,	-- Kon-Kon
+								59129,	-- Maaka
+								59125,	-- Kunzen Soupmaster
+								59123,	-- Kunzen Ritualist
+								59134,	-- Yammo
+								59121,	-- Kunzen Hunter
+								59133,	-- Buk-Buk
+								59131,	-- Lor-Lor
+								59135,	-- Bimba
+								59124,	-- Kunzen Collector
+								59132,	-- Rit-Rit
+								59119,	-- Kunzen Ravager
+								59122,	-- Kunzen Herdskeeper
+							},
+							["description"] = "Requires reputation level of \"Friend\" or better with Tina Mudclaw to drop."
+						}),
+					}),
+					q(30517, {	-- Farmer Fung's Vote I: Yak Attack
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["description"] = "Must be revered with at least 4500 reputation with The Tillers.",
+					}),
+					q(30518, {	-- Farmer Fung's Vote II: On the Loose
+						["qg"] = 57298,	-- Farmer Fung (48.3,33.9)
+						["sourceQuests"] = { 30517 }, -- Farmer Fung's Vote I: Yak Attack
+					}),
+					q(31947, {	-- Farmer Fung's Vote III: Crazy For Cabbage
+						["qg"] = 57298,	-- Farmer Fung (48.3,33.9)
+						["sourceQuests"] = { 30518 }, -- Farmer Fung's Vote II: On the Loose
 					}),
 					q(29986, {	-- Fog Wards
 						["groups"] = {
@@ -357,17 +573,61 @@ _.Zones =
 						["qg"] = 56133,	-- Chen Stormsout (75.3,35.5)
 						["sourceQuests"] = { 29918 },	-- A Lesson in Bravery
 					}),
-					q(30260, {	-- Growing the Farm I: The Weeds
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
-						["description"] = "Must be Honored with The Tillers to start this quest.",
-					}),
 					q(30516, {	-- Growing the Farm I: A Little Problem
 						["qg"] = 57385,	-- Gai Lan (38.7,51.7)
 						["sourceQuests"] = { 30260 }, -- Growing the Farm I: The Weeds
 					}),
+					q(30260, {	-- Growing the Farm I: The Weeds
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["description"] = "Must be Honored with The Tillers to start this quest.",
+					}),
+					q(30524, {	-- Growing the Farm II: Knock on Wood
+						["qg"] = 58705,	-- Fish Fellreed
+						["sourceQuests"] = { 30523 }, -- Growing the Farm II: The Broken Wagon
+					}),
+					q(30523, {	-- Growing the Farm II: The Broken Wagon
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["description"] = "Must be Revered with The Tillers to start this quest.",
+					}),
+					q(30529, {	-- Growing the Farm III: The Mossy Boulder
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["description"] = "Must be Exalted with The Tillers with all Tillers votes collected to start this quest.",
+					}),
+					q(30521, {	-- Haohan's Vote I: Bungalow Break-In
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["description"] = "Must be revered with at least 16,800 reputation with The Tillers.",
+					}),
+					q(30522, {	-- Haohan's Vote II: The Real Culprits
+						["qg"] = 57402,	-- Haohan Mudclaw (44.7,34.1)
+						["sourceQuests"] = { 30521 }, -- Haohan's Vote I: Bungalow Break-In
+					}),
+					q(30525, {	-- Haohan's Vote III: Pure Poison
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["sourceQuests"] = { 30522 }, -- Haohan's Vote II: The Real Culprits
+					}),
+					q(30527, {	-- Haohan's Vote IV: Melons For Felons
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["sourceQuests"] = { 30525 }, -- Haohan's Vote III: Pure Poison
+					}),
+					q(30528, {	-- Haohan's Vote V: Chief Yip-Yip
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["sourceQuests"] = { 30527 }, -- Haohan's Vote IV: Melons For Felons
+					}),
+					o(213767, {	-- Hidden Treasure
+						q(31315, {	-- The Heartland Legacy
+							["groups"] = {
+								ach(7296),	-- Ain't Lost No More
+							},
+							["sourceQuests"] = { 31314 }, -- Old Man Thistle's Treasure
+						}),
+					}),
 					q(30053, {	-- Hop Hunting
 						["qg"] = 56133,	-- Chen Stormstout (55.9,49.4)
 						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+					}),
+					q(32682, {	-- Inherit the Earth
+						["qg"] = 64597,	-- Nana Mudclaw (54.6,47)
+						["description"] = "Must be Exalted with The Tillers and have a fully unlocked farm.",
 					}),
 					q(30085, {	-- Into the Brewery
 						["qg"] = 56133,	-- Chen Stormstout (36.0,69.1)
@@ -377,11 +637,27 @@ _.Zones =
 						["qg"] = 56474,	-- Mudmug (18.1,55.7)
 						["sourceQuests"] = { 29990 }, -- Training and Discipline
 					}),
+					qa(30624, {	-- It Does You No Good In The Keg
+						["qg"] = 56474,	-- Mudmug (18.1,55.7)
+						["sourceQuests"] = { 29990 }, -- Training and Discipline
+					}),
+					q(31942, {	-- It's Melon Time
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["isDaily"] = true,
+					}),
+					q(31313, {	-- Just A Folk Story
+						["qg"] = 58705,	-- Fish Fellreed
+						["sourceQuests"] = { 31312 }, -- The Old Map
+					}),
 					qa(29874, {	-- Kang Bramblestaff
 						["qg"] = 56110,	-- Xiao (84.0,21.1)
 					}),
 					qh(29875, {	-- Kang Bramblestaff
 						["qg"] = 56110,	-- Xiao (84.0,21.1)
+					}),
+					q(29873, {	-- Ken-Ken
+						["qg"] = 56110,	-- Xiao (84.0,21.1)
+						["isBreadcrumb"] = true,
 					}),
 					q(30074, {	-- Knocking on the Door
 						["qg"] = 56133,	-- Chen Stormstout
@@ -443,6 +719,18 @@ _.Zones =
 						["qg"] = 56110,	-- Xiao (84.0,21.1)
 						["isBreadcrumb"] = true,
 					}),
+					q(30526, {	-- Lost and Lonely
+						["qg"] = 59533,	-- Lost Dog (42.4,50.2)
+						["description"] = "Requires reputation level of 12,600/21,000 Revered with The Tillers to start",
+					}),
+					q(31338, {	-- Lost Sheepie
+						["qg"] = 58709,	-- Chee Chee (53,52)
+						["description"] = "Requires reputation level of \"Acquaintance\" with Chee Chee."
+					}),
+					q(31339, {	-- Lost Sheepie... Again
+						["qg"] = 58709,	-- Chee Chee (53,52)
+						["description"] = "Requires reputation level of \"Friend\" with Chee Chee."
+					}),
 					q(29909, {	-- Low Turnip Turnout
 						["qg"] = 56204,	-- Pang Thunderfoot (83.7,21.0)
 						["sourceQuests"] = {
@@ -453,6 +741,22 @@ _.Zones =
 					q(29917, {	-- Lupello
 						["qg"] = 56208,	-- Francis the Shepherd Boy (78.2,32.9)
 						["sourceQuests"] = { 29915 },	-- A Neighbor's Duty
+					}),
+					q(31531, {	-- Mission: Aerial Threat
+						["qg"] = 58708,	-- Sho (53,52)
+						["description"] = "Must be at least 4200/8400 into \"Friend\" with Sho to start this quest.",
+					}),
+					q(31529, {	-- Mission: Culling The Vermin
+						["qg"] = 58708,	-- Sho (53,52)
+						["description"] = "Must be at least \"Buddy\" with Sho to start this quest.",
+					}),
+					q(31532, {	-- Mission: Predator of the Cliffs
+						["qg"] = 58708,	-- Sho (53,52)
+						["description"] = "Must be at least 4200/8400 into \"Good Friend\" with Sho to start this quest.",
+					}),
+					q(30322, {	-- Money Matters
+						["qg"] = 58706,	-- Gina Mudclaw (53.2,51.8)
+						["isDaily"] = true,
 					}),
 					q(30058, {	-- Mothallus!
 						["groups"] = {
@@ -514,6 +818,65 @@ _.Zones =
 						["qg"] = 58421,	-- Hemet Nesingwary (16.0,82.5)
 						["sourceQuests"] = { 30181 }, -- Mushan Mastery
 					}),
+					q(30519, {	-- Nana's Vote I: Nana's Secret Recipe
+						["qg"] = 58646,	-- Farmer Yoon (52.3,48.8)
+						["description"] = "Must be revered with at least 8400 reputation with The Tillers.",
+					}),
+					q(31948, {	-- Nana's Vote II: The Sacred Springs
+						["qg"] = 64597,	-- Nana Mudclaw (54.7,47.0)
+						["sourceQuests"] = { 30519 }, -- Nana's Vote I: Nana's Secret Recipe
+					}),
+					q(31949, {	-- Nana's Vote III: Witchberry Julep
+						["qg"] = 64597,	-- Nana Mudclaw (54.7,47.0)
+						["sourceQuests"] = { 31948 }, -- Nana's Vote II: The Sacred Springs
+					}),
+					i(86433, {	-- Nice Necklace
+						q(31325, {	-- A Very Nice Necklace
+							["qgs"] = {
+								59120,	-- Kunzen Rockflinger
+								59126,	-- Jokka-Jokka
+								59128,	-- Jim-Jim
+								59130,	-- Teeku
+								59127,	-- Kon-Kon
+								59129,	-- Maaka
+								59125,	-- Kunzen Soupmaster
+								59123,	-- Kunzen Ritualist
+								59134,	-- Yammo
+								59121,	-- Kunzen Hunter
+								59133,	-- Buk-Buk
+								59131,	-- Lor-Lor
+								59135,	-- Bimba
+								59124,	-- Kunzen Collector
+								59132,	-- Rit-Rit
+								59119,	-- Kunzen Ravager
+								59122,	-- Kunzen Herdskeeper
+							},
+							["description"] = "Requires reputation level of \"Acquaintance\" or better with Tina Mudclaw to drop."
+						}),
+					}),
+					q(30324, {	-- Not in Chee-Chee's Backyard
+						["qg"] = 58709,	-- Chee Chee (53,52)
+						["isDaily"] = true,
+					}),
+					q(31340, {	-- Oh Sheepie...
+						["qg"] = 58709,	-- Chee Chee
+						["description"] = "Requires reputation level of \"Good Friend\" or better with Chee Chee",
+					}),
+					q(31314, {	-- Old Man Thistle's Treasure
+						["qg"] = 58705,	-- Fish Fellreed
+						["sourceQuests"] = { 31313 }, -- Just a Folk Story
+					}),
+					i(86404, {	-- Old Map
+						q(31312, {	-- The Old Map
+							["qg"] = 59639,	-- Enormous Cattail Grouper
+							["description"] = "Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",
+						}),
+					}),
+					q(32198, {	-- One Magical, Flying Kingdom's Trash...
+						["qg"] = 67565,	-- Barnaby Fletcher (53.2,51.4)
+						["description"] = "Appears in Halfhill on random days.",
+						["sourceQuests"] = { 32189 }, -- A Shabby New Face
+					}),
 					q(30030, {	-- Out of Sprite
 						["qg"] = 57209,	-- Grainer Pan
 						["sourceQuests"] = { 30048 }, -- Li Li and the Grain
@@ -549,6 +912,10 @@ _.Zones =
 						["qg"] = 56465,	-- Ana Thunderfoot (82.6,26.2)
 						["sourceQuests"] = { 29909 }, -- Low Turnip Turnout
 					}),
+					q(31673, {	-- Red Blossom Leeks, You Make the Croc-in' World Go Down
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["isDaily"] = true,
+					}),
 					q(30626, {	-- Retreat!
 						["qg"] = 57198,	-- Guard Captain Oakenshield (11.6,49.5)
 						["sourceQuests"] = { 30625 }, -- Students No More
@@ -567,6 +934,14 @@ _.Zones =
 						},
 						["qg"] = 57408,	-- Mina Mudclaw (41.3,38.2)
 						["sourceQuests"] = { 30056 },	-- The Farmer's Daughter
+					}),
+					q(30337, {	-- Simian Sabotage
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["isDaily"] = true,
+					}),
+					q(31941, {	-- Squash Those Foul Odors
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["isDaily"] = true,
 					}),
 					q(29600, {	-- Snap Judgment
 						["groups"] = {
@@ -604,8 +979,12 @@ _.Zones =
 						}
 					}),
 					q(30335, {	-- Stalling the Ravage
-						["qg"] = 58646,	-- Farmer Yoon (52.3,48.8)
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["sourceQuests"] = { 30257 }, -- Learn and Grow V: Halfhill Market
+						["isDaily"] = true,
+					}),
+					q(30334, {	-- Stealing is Bad... Re-Stealing is OK
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
 					}),
 					q(29981, {	-- Stemming the Swarm
@@ -648,9 +1027,51 @@ _.Zones =
 						["qg"] = 56138,	-- Li Li (52.7,62.8)
 						["sourceQuests"] = { 30048 }, -- Li Li and the Grain
 					}),
+					i(86434, {	-- Tasteful Tiara
+						q(31326, {	-- Tina's Tasteful Tiara
+							["qgs"] = {
+								59120,	-- Kunzen Rockflinger
+								59126,	-- Jokka-Jokka
+								59128,	-- Jim-Jim
+								59130,	-- Teeku
+								59127,	-- Kon-Kon
+								59129,	-- Maaka
+								59125,	-- Kunzen Soupmaster
+								59123,	-- Kunzen Ritualist
+								59134,	-- Yammo
+								59121,	-- Kunzen Hunter
+								59133,	-- Buk-Buk
+								59131,	-- Lor-Lor
+								59135,	-- Bimba
+								59124,	-- Kunzen Collector
+								59132,	-- Rit-Rit
+								59119,	-- Kunzen Ravager
+								59122,	-- Kunzen Herdskeeper
+							},
+							["description"] = "Requires reputation level of \"Buddy\" or better with Tina Mudclaw to drop."
+						}),
+					}),
+					qa(31392, {	-- Temple of the White Tiger
+						["qg"] = 64448,	-- Hopsmaster Chang (55.8,51.8)
+					}),
+					qh(31393, {	-- Temple of the White Tiger
+						["qg"] = 64448,	-- Hopsmaster Chang (55.8,51.8)
+					}),
 					q(29992, {	-- Tenderpaw By Name, Tender Paw By Reputation
 						["qg"] = 56111,	-- Lin Tenderpaw (18.1,31.0)
 						["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
+					}),
+					q(31670, {	-- That Dangling Carrot
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["isDaily"] = true,
+					}),
+					q(31534, {	-- The Beginner's Brew
+						["qg"] = 58647,	-- Ella (53,51.6)
+						["description"] = "Requires reputation level of \"Buddy\" or better with Ella.",
+					}),
+					q(31669, {	-- The Cabbage Test
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["isDaily"] = true,
 					}),
 					q(30047, {	-- The Chen Taste Test
 						["qg"] = 56138,	-- Li Li (52.7,62..8)
@@ -679,7 +1100,7 @@ _.Zones =
 						["qg"] = 56802,	-- Zhang Yue
 						["sourceQuests"] = { 29577 },	-- Ashyo's Vision
 					}),
-					q(30628,  {  	-- The Gratitude of Stoneplow
+					q(30628, {	-- The Gratitude of Stoneplow
 						["groups"] = {
 							i(81476),	-- Nayeli Treads
 							i(81477),	-- Mortbreath Footguards
@@ -717,6 +1138,18 @@ _.Zones =
 						["description"] = "Begins with a purchase of the \"Jinyu Princess\" Irrigation System from Gina Mudclaw",
 						["sourceQuests"] = { 30516 }, -- Growing the Farm I: A Little Problem
 					}),
+					q(30336, {	-- The Kunzen Hunter-Chief
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["isDaily"] = true,
+					}),
+					q(30326, {	-- The Kunzen Legend-Chief
+						["qgs"] = { 58705, 59517 }, -- Fish Fellreed (2 versions) (52.8,51.8)
+						["isDaily"] = true,
+					}),
+					q(30333, {	-- The Lesser of Two Evils
+						["qg"] = 58646, -- Farmer Yoon (52.3,48.8)
+						["isDaily"] = true,
+					}),
 					q(30623, {	-- The Mantidote
 						["qg"] = 59855,	-- Mei Barrelbottom (18.0,56.5)
 						["sourceQuests"] = { 29990 }, -- Training and Discipline
@@ -740,6 +1173,10 @@ _.Zones =
 						["qg"] = 57424,	-- Journeyman Chu (63.5,58.4)
 						["sourceQuests"] = { 32035 }, -- Got Silk?
 					}),
+					q(31674, {	-- The Pink Turnip Challenge
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["isDaily"] = true,
+					}),
 					q(30032,  {	-- The Quest for Better Barley
 						["groups"] = {
 							i(81787),	-- Silkmaster's Satin Cord
@@ -755,12 +1192,24 @@ _.Zones =
 						["qg"] = 57211,	-- Grainlord Kai (52.7,63.0)
 						["sourceQuests"] = { 30029 }, -- Wee Little Shenanigans
 					}),
+					qh(31255, {	-- The Road to Kun-Lai
+						["qg"] = 63778,	-- Messenger Grummle (70,23.6)
+						["sourceQuests"] = { 49541 }, -- Warchief's Command: Kun-Lai Summit!
+					}),
+					qa(31254, {	-- The Road to Kun-Lai
+						["qg"] = 63778,	-- Messenger Grummle (70,23.6)
+						["sourceQuests"] = { 49559 }, -- Hero's Call: Kun-Lai Summit!
+					}),
 					q(30627, {	-- The Savior of Stoneplow
 						["groups"] = {
 							ach(7502),	-- Savior of Stoneplow
 						},
 						["qg"] = 59856,	-- Master Bruised Paw (17.9,55.7)
 						["sourceQuests"] = { 30626 }, -- Retreat!
+					}),
+					q(30086, {	-- The Search for the Hidden Master
+						["qg"] = 56110,	-- Xiao (84,21.2)
+						["isBreadcrumb"] = true,
 					}),
 					q(30622, {	-- The Swarm Begins
 						["qg"] = 56720,	-- Loon Mai
@@ -769,6 +1218,14 @@ _.Zones =
 					q(29946, {	-- The Warren-Mother
 						["qg"] = 56133,	-- Chen Stormstout (68.9,43.2)
 						["sourceQuests"] = { 29944 }, -- Leaders Among Breeders
+					}),
+					q(31675, {	-- The White Turnip Treatment
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["isDaily"] = true,
+					}),
+					q(30323, {	-- They Don't Even Wear Them
+						["qg"] = 58761,	-- Tina Mudclaw (53.0,51.8)
+						["isDaily"] = true,
 					}),
 					q(29985, {	-- They Will Be Mist
 						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
@@ -780,6 +1237,13 @@ _.Zones =
 							29944,	-- Leaders Among Breeders
 							29945,	-- Yellow and Red Make Orange
 						},
+					}),
+					i(89813, {	-- "Thunder King" Pest Repellers
+						q(31937, {	-- "Thunder King" Pest Repellers
+							["qg"] = 58706,	-- Gina Mudclaw (53.2,51.8)
+							["description"] = "Begins with a purchase of the \"Thunder King\" Pest Repellers from Gina Mudclaw",
+							["sourceQuests"] = { 30523 }, -- Growing the Farm II: The Broken Wagon
+						}),
 					}),
 					q(30185, {	-- Tortoise Mastery
 						["qg"] = 58422,	-- Hemet Nesingwary Jr. (16.1,82.6)
@@ -825,6 +1289,10 @@ _.Zones =
 							["description"] = "Located in a cave hidden under some bushes in the mountains of north-east Paoquan Hollow at (23.2,30.8)",
 						}),
 					}),
+					q(30317, {	-- Water, Water Everywhere
+						["qg"] = 57298,	-- Farmer Fung (48.3,33.9)
+						["isDaily"] = true,
+					}),
 					q(30267, {	-- Watery Woes
 						["qg"] = 58736,	-- Gladecaster Lang (61.0,32.9)
 						["sourceQuests"] = { 29871 }, -- Clever Ashyo
@@ -845,6 +1313,10 @@ _.Zones =
 						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
 						["sourceQuests"] = { 30046 },	-- Chen's Resolution
 					}),
+					q(30321, {	-- Weed War II
+						["qg"] = 58710,	-- Jogu the Drunk (53.6,52.6)
+						["isDaily"] = true,
+					}),
 					q(30325, {	-- Where It Counts
 						["qg"] = 58708,	-- Sho (53.1,52.0)
 						["sourceQuests"] = { 30257 }, -- Learn and Grow V: Halfhill Market
@@ -861,12 +1333,93 @@ _.Zones =
 						["qg"] = 57405,	-- Silkmaster Tsai (62.7,59.7)
 						["sourceQuests"] = { 32035 }, -- Got Silk?
 					}),
+					q(31943, {	-- Which Berries? Witchberries.
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["isDaily"] = true,
+					}),
+					q(31671, {	-- Why Not Scallions?
+						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
+						["isDaily"] = true,
+					}),
+					o(218750, {
+						["groups"] = {
+							qh(32642, {	-- Work Order: Dominance Offensive I
+								["sourceQuests"] = { 32682 }, -- Inherit the Earth
+								["isDaily"] = true,
+							}),
+							qh(32643, {	-- Work Order: Dominance Offensive II
+								["sourceQuests"] = { 32642 }, -- Work Order: Dominance Offensive I
+								["isDaily"] = true,
+							}),
+							qa(32944, {	-- Work Order: Kirin Tor Offensive I
+								["sourceQuests"] = { 32682 }, -- Inherit the Earth
+								["isDaily"] = true,
+							}),
+							qa(32945, {	-- Work Order: Kirin Tor Offensive II
+								["sourceQuests"] = { 32944 }, -- Work Order: Kirin Tor Offensive I
+								["isDaily"] = true,
+							}),
+							q(32647, {	-- Work Order: Golden Lotus I
+								["sourceQuests"] = { 32682 }, -- Inherit the Earth
+								["isDaily"] = true,
+							}),
+							q(32648, {	-- Work Order: Golden Lotus II
+								["sourceQuests"] = { 32647 }, -- Work Order: Golden Lotus I
+								["isDaily"] = true,
+							}),
+							qa(32645, {	-- Work Order: Operation: Shieldwall I
+								["sourceQuests"] = { 32682 }, -- Inherit the Earth
+								["isDaily"] = true,
+							}),
+							qa(32646, {	-- Work Order: Operation: Shieldwall II
+								["sourceQuests"] = { 32645 }, -- Work Order: Operation: Shieldwall I
+								["isDaily"] = true,
+							}),
+							q(32649, {	-- Work Order: Shado-Pan I
+								["sourceQuests"] = { 32682 }, -- Inherit the Earth
+								["isDaily"] = true,
+							}),
+							q(32650, {	-- Work Order: Shado-Pan II
+								["sourceQuests"] = { 32649 }, -- Work Order: Shado-Pan I
+								["isDaily"] = true,
+							}),
+							qh(32942, {	-- Work Order: Sunreaver Onslaught I
+								["sourceQuests"] = { 32682 }, -- Inherit the Earth
+								["isDaily"] = true,
+							}),
+							qh(32943, {	-- Work Order: Sunreaver Onslaught II
+								["sourceQuests"] = { 32942 }, -- Work Order: Sunreaver Onslaught I
+								["isDaily"] = true,
+							}),
+							q(32653, {	-- Work Order: The August Celestials I
+								["sourceQuests"] = { 32682 }, -- Inherit the Earth
+								["isDaily"] = true,
+							}),
+							q(32657, {	-- Work Order: The August Celestials II
+								["sourceQuests"] = { 32653 }, -- Work Order: The August Celestials I
+								["isDaily"] = true,
+							}),
+							q(32658, {	-- Work Order: The Klaxxi I
+								["sourceQuests"] = { 32682 }, -- Inherit the Earth
+								["isDaily"] = true,
+							}),
+							q(32659, {	-- Work Order: The Klaxxi II
+								["sourceQuests"] = { 32658 }, -- Work Order: The Klaxxi I
+								["isDaily"] = true,
+							}),
+						},
+						["description"] = "All work order quests are available after completing \"Inherit the Earth\".",
+					}),
 					q(29945,  {  	-- Yellow and Red Make Orange
 						["groups"] = {
 							i(88377), 		-- Turnip Paint "Gun"
 						},
 						["qg"] = 56138,	-- Li Li (68.9,43.3)
 						["sourceQuests"] = { 29919 }, -- Great Minds Drink Alike
+					}),
+					q(30327, {	-- You Have to Burn the Ropes
+						["qg"] = 58647,	-- Ella
+						["isDaily"] = true,
 					}),
 --[[
 					q(30400),	-- A Blue Feather for Chee Chee
@@ -889,15 +1442,6 @@ _.Zones =
 					q(30396),	-- A Dish for Old Hillpaw
 					q(30408),	-- A Dish for Sho
 					q(30433),	-- A Dish for Tina
-					q(30471),	-- A Gift For Chee Chee
-					q(30474),	-- A Gift For Ella
-					q(30473),	-- A Gift For Fish
-					q(30475),	-- A Gift For Fung
-					q(30479),	-- A Gift For Gina
-					q(30478),	-- A Gift For Jogu
-					q(30476),	-- A Gift For Old Hillpaw
-					q(30472),	-- A Gift For Sho
-					q(30470),	-- A Gift For Tina
 					q(30399),	-- A Jade Cat for Chee Chee
 					q(30381),	-- A Jade Cat for Ella
 					q(30418),	-- A Jade Cat for Farmer Fung
@@ -940,104 +1484,15 @@ _.Zones =
 					q(30428),	-- A Ruby Shard for Tina
 ]]--
 --[[
-					q(31329),	-- A Beautiful Brooch
-					q(30275),	-- A Crocolisk Tale
-					q(31672),	-- A Pumpkin-y Perfume
-					q(30534),	-- A Second Hand
-					q(32189),	-- A Shabby New Face
-					q(31325),	-- A Very Nice Necklace
-					q(31341),	-- A Wolf In Sheep's Clothing
-					q(31538),	-- A Worthy Brew
-					q(31471),	-- Agile as a Tiger
-					q(31328),	-- An Exquisite Earring
-					q(31323),	-- Buy A Fish A Brewery?
-					q(31320),	-- Buy A Fish A Drink?
-					q(31322),	-- Buy A Fish A Keg?
-					q(31321),	-- Buy A Fish A Round?
+					-- Holiday quests
 					q(32046),	-- Candy Bucket
 					q(32048),	-- Candy Bucket
-					q(30318),	-- Chasing the Chicken
-					q(30329),	-- Cindergut Peppers
-					q(30078),	-- Cleaning House
-					q(31537),	-- Ella's Taste Test
-					q(31279),	-- Everything I Know About Cooking
-					q(31486),	-- Everything I Know About Cooking
-					q(30517),	-- Farmer Fung's Vote I: Yak Attack
-					q(30518),	-- Farmer Fung's Vote II: On the Loose
-					q(31947),	-- Farmer Fung's Vote III: Crazy For Cabbage
-					q(30332),	-- Fatty Goatsteak
-					q(31955),	-- Grand Master Nishi
-					q(30524),	-- Growing the Farm II: Knock on Wood
-					q(30523),	-- Growing the Farm II: The Broken Wagon
-					q(30529),	-- Growing the Farm III: The Mossy Boulder
-					q(30521),	-- Haohan's Vote I: Bungalow Break-In
-					q(30522),	-- Haohan's Vote II: The Real Culprits
-					q(30525),	-- Haohan's Vote III: Pure Poison
-					q(30527),	-- Haohan's Vote IV: Melons For Felons
-					q(30528),	-- Haohan's Vote V: Chief Yip-Yip
-					q(32018),	-- His Name Was... Stormstout
-					q(38935),	-- His Name Was... Stormstout
 					q(32502),	-- Honor the Flame
 					q(32497),	-- Honor the Flame
-					q(30376),	-- Hope Springs Eternal
-					q(32682),	-- Inherit the Earth
-					qa(30624),	-- It Does You No Good In The Keg
-					q(31942),	-- It's Melon Time
-					q(31313),	-- Just A Folk Story
-					q(29873),	-- Ken-Ken
-					q(30526),	-- Lost and Lonely
-					q(31338),	-- Lost Sheepie
-					q(31339),	-- Lost Sheepie... Again
-					q(31531),	-- Mission: Aerial Threat
-					q(31529),	-- Mission: Culling The Vermin
-					q(31532),	-- Mission: Predator of the Cliffs
-					q(31530),	-- Mission: The Hozen Dozen
-					q(30322),	-- Money Matters
-					q(30519),	-- Nana's Vote I: Nana's Secret Recipe
-					q(31948),	-- Nana's Vote II: The Sacred Springs
-					q(31949),	-- Nana's Vote III: Witchberry Julep
-					q(33146),	-- Noodle Time
-					q(33358),	-- Noodle Time: Bonus
-					q(30324),	-- Not in Chee-Chee's Backyard
-					q(31340),	-- Oh Sheepie...
-					q(31314),	-- Old Man Thistle's Treasure
-					q(32198),	-- One Magical, Flying Kingdom's Trash...
-					q(31536),	-- Preserving Freshness
-					q(31673),	-- Red Blossom Leeks, You Make the Croc-in' World Go Down
-					q(31535),	-- Replenishing the Pantry
-					q(33139),	-- Secrets Lost, Forever? - Removed
-					q(30337),	-- Simian Sabotage
-					q(31941),	-- Squash Those Foul Odors
-					q(30334),	-- Stealing is Bad... Re-Stealing is OK
-					qa(31392),	-- Temple of the White Tiger
-					qh(31393),	-- Temple of the White Tiger
-					q(31670),	-- That Dangling Carrot
-					q(31938),	-- The "Earth-Slasher" Master Plow
-					q(31534),	-- The Beginner's Brew
-					q(31669),	-- The Cabbage Test
-					q(31315),	-- The Heartland Legacy
-					q(30336),	-- The Kunzen Hunter-Chief
-					q(30326),	-- The Kunzen Legend-Chief
-					q(30333),	-- The Lesser of Two Evils
-					q(30331),	-- The Mile-High Grub
-					q(31312),	-- The Old Map
-					q(31674),	-- The Pink Turnip Challenge
-					qh(31255),	-- The Road to Kun-Lai
-					qa(31254),	-- The Road to Kun-Lai
-					q(30086),	-- The Search for the Hidden Master
-					q(33027),	-- The Secret Ingredient Is...
-					q(31474),	-- The Soup of Contemplation
-					q(31476),	-- The Spirit of Cooking
-					q(30328),	-- The Thousand-Year Dumpling
-					qh(31374),	-- The Tillers
-					qa(31372),	-- The Tillers
-					q(31675),	-- The White Turnip Treatment
-					q(33026),	-- These Aren't Your Fatty Goatsteaks
-					q(32019),	-- They Call Him... Stormstout
-					q(30323),	-- They Don't Even Wear Them
-					q(31937),	-- "Thunder King" Pest Repellers
-					q(31326),	-- Tina's Tasteful Tiara
-					q(31521),	-- To Be a Master
+					-- No available information
+					q(33139),	-- Secrets Lost, Forever? -- Removed
+					q(31530),	-- Mission: The Hozen Dozen -- Present in Beta but never made it to live servers
+
 					q(31153),	-- Tracking Event - Saved Diaani
 					q(31154),	-- Tracking Event - Saved Zuulo
 					q(30531),	-- Tracking Event: Finished First Expansion
@@ -1057,29 +1512,6 @@ _.Zones =
 					q(33901),	-- Tracking Quest: Activated Arkonite 4
 					q(33903),	-- Tracking Quest: Romuul & Yrel Leave for Teluuna
 					q(33899),	-- Tracking Quest: Turn on the Holograms
-					qh(30241),	-- Warn Stoneplow
-					qa(30360),	-- Warn Stoneplow
-					q(30317),	-- Water, Water Everywhere
-					q(30321),	-- Weed War II
-					q(31943),	-- Which Berries? Witchberries.
-					q(31671),	-- Why Not Scallions?
-					qh(32642),	-- Work Order: Dominance Offensive I
-					qh(32643),	-- Work Order: Dominance Offensive II
-					q(32647),	-- Work Order: Golden Lotus I
-					q(32648),	-- Work Order: Golden Lotus II
-					qa(32944),	-- Work Order: Kirin Tor Offensive I
-					qa(32945),	-- Work Order: Kirin Tor Offensive II
-					qa(32645),	-- Work Order: Operation: Shieldwall I
-					qa(32646),	-- Work Order: Operation: Shieldwall II
-					q(32649),	-- Work Order: Shado-Pan I
-					q(32650),	-- Work Order: Shado-Pan II
-					qh(32942),	-- Work Order: Sunreaver Onslaught I
-					qh(32943),	-- Work Order: Sunreaver Onslaught II
-					q(32653),	-- Work Order: The August Celestials I
-					q(32657),	-- Work Order: The August Celestials II
-					q(32658),	-- Work Order: The Klaxxi I
-					q(32659),	-- Work Order: The Klaxxi II
-					q(30327),	-- You Have to Burn the Ropes
 --]]
 				}),
 				n(-16, { 	-- Rares
