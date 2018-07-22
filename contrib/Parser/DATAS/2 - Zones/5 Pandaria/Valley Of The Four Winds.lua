@@ -204,6 +204,46 @@ _.Zones =
 							}),
 						},
 						["requiredSkill"] = 356,
+					}),					
+					q(30402, {	-- A Dish for Chee Chee
+						["qg"] = 58709,	-- Chee Chee
+						["isDaily"] = true,
+					}),
+					q(30386, {	-- A Dish for Ella
+						["qg"] = 58647,	-- Ella
+						["isDaily"] = true,
+					}),
+					q(30421, {	-- A Dish for Farmer Fung
+						["qg"] = 57298,	-- Farmer Fung
+						["isDaily"] = true,
+					}),
+					q(30427, {	-- A Dish for Fish
+						["qg"] = 58705,	-- Fish
+						["isDaily"] = true,
+					}),
+					q(30390, {	-- A Dish for Gina
+						["qg"] = 58706,	-- Gina
+						["isDaily"] = true,
+					}),
+					q(30414, {	-- A Dish for Haohan
+						["qg"] = 57402,	-- Haohan
+						["isDaily"] = true,
+					}),
+					q(30439, {	-- A Dish for Jogu
+						["qg"] = 58710,	-- Jogu
+						["isDaily"] = true,
+					}),
+					q(30396, {	-- A Dish for Old Hillpaw
+						["qg"] = 58707,	-- Old Hillpaw
+						["isDaily"] = true,
+					}),
+					q(30408, {	-- A Dish for Sho
+						["qg"] = 58708,	-- Sho
+						["isDaily"] = true,
+					}),
+					q(30433, {	-- A Dish for Tina
+						["qg"] = 58761,	-- Tina Mudclaw
+						["isDaily"] = true,
 					}),
 					q(30471, {	-- A Gift For Chee Chee
 						["qg"] = 64464,	-- Andi (52.7,50.4)
@@ -1432,16 +1472,6 @@ _.Zones =
 					q(30394),	-- A Blue Feather for Old Hillpaw
 					q(30406),	-- A Blue Feather for Sho
 					q(30431),	-- A Blue Feather for Tina
-					q(30402),	-- A Dish for Chee Chee
-					q(30386),	-- A Dish for Ella
-					q(30421),	-- A Dish for Farmer Fung
-					q(30427),	-- A Dish for Fish
-					q(30390),	-- A Dish for Gina
-					q(30414),	-- A Dish for Haohan
-					q(30439),	-- A Dish for Jogu
-					q(30396),	-- A Dish for Old Hillpaw
-					q(30408),	-- A Dish for Sho
-					q(30433),	-- A Dish for Tina
 					q(30399),	-- A Jade Cat for Chee Chee
 					q(30381),	-- A Jade Cat for Ella
 					q(30418),	-- A Jade Cat for Farmer Fung
