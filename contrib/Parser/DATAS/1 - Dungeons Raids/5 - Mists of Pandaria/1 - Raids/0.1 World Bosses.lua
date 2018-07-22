@@ -690,7 +690,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["questID"] = 33117,
 						["isRaid"] = true,
-						["maps"] = { 554 }, -- Timeless Isle
 					})),
 					cr(71955, e(858, { 	-- Yu'lon, The Jade Serpent
 						["groups"] = {	
@@ -1203,7 +1202,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["achievementID"] = 8028,
 				["maps"] = { 504 }, -- Isle of Thunder
 			})),	
-			
 			cr(69161, e(826, { 	-- Oondasta
 				["groups"] = {	
 					i(95601, { -- Shiny Pile of Refuse
