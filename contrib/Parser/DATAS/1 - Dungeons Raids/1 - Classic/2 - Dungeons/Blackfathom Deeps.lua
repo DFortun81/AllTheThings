@@ -22,7 +22,28 @@ _.Instances = { tier(1, {	-- Classic
 				})),
 			}),	
 			n(  0, {	-- Zone Drop
-				i(3413, {	-- Doomspike
+				i( 1454, {	-- Axe of the Enforcer
+					["crs"] = {
+						74721,	-- Blindlight Bilefin
+						76954,	-- Pahboo-Ra <Son of Ghamoo-Ra>
+						76036,	-- Twilight Shadow
+						74363,	-- Twilight Shadow
+						74980,	-- Twilight Storm Mender
+						74380,	-- Twilight Storm Mender
+						75285,	-- Twilight Storm Mender
+					},
+				}),
+				i( 3414, {	-- Crested Scepter
+					["crs"] = {
+						74721,	-- Blindlight Bilefin
+						76954,	-- Pahboo-Ra <Son of Ghamoo-Ra>
+						74353,	-- Twilight Aquamancer
+						75058,	-- Twilight Aquamancer
+						76036,	-- Twilight Shadow
+						74363,	-- Twilight Shadow
+					},
+				}),
+				i( 3413, {	-- Doomspike
 					["crs"] = {
 						74719,	-- Blindlight Rotmouth
 						76954,	-- Pahboo-Ra <Son of Ghamoo-Ra>
@@ -39,7 +60,7 @@ _.Instances = { tier(1, {	-- Classic
 						75285,	-- Twilight Storm Mender
 					},
 				}),
-				i(2567, {	-- Evocator's Blade
+				i( 2567, {	-- Evocator's Blade
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						74984,	-- Blindlight Murloc
@@ -56,7 +77,77 @@ _.Instances = { tier(1, {	-- Classic
 						74363,	-- Twilight Shadow
 					},
 				}),
-				i(2271, {	-- Staff of the Blessed Seer
+				i( 1481, {	-- Grimclaw
+					["crs"] = {
+						74984,	-- Blindlight Murloc
+						74720,	-- Blindlight Murloc
+						75980,	-- Blindlight Razorjaw
+						74719,	-- Blindlight Rotmouth
+						74983,	-- Twilight Disciple
+						75286,	-- Twilight Disciple
+						74351,	-- Twilight Disciple
+						76036,	-- Twilight Shadow
+						74363,	-- Twilight Shadow
+					},
+				}),
+				i( 3416, {	-- Martyr's Chain
+					["crs"] = {
+						74721,	-- Blindlight Bilefin
+						75980,	-- Blindlight Razorjaw
+						74983,	-- Twilight Disciple
+						75286,	-- Twilight Disciple
+						74351,	-- Twilight Disciple
+						76036,	-- Twilight Shadow
+						74363,	-- Twilight Shadow
+						74980,	-- Twilight Storm Mender
+						74380,	-- Twilight Storm Mender
+						75285,	-- Twilight Storm Mender
+					},
+				}),
+				i( 3417, {	-- Onyx Claymore
+					["crs"] = {
+						74721,	-- Blindlight Bilefin
+						74984,	-- Blindlight Murloc
+						74720,	-- Blindlight Murloc
+						75980,	-- Blindlight Razorjaw
+						74719,	-- Blindlight Rotmouth
+						74353,	-- Twilight Aquamancer
+						75058,	-- Twilight Aquamancer
+						76036,	-- Twilight Shadow
+						74363,	-- Twilight Shadow
+						74980,	-- Twilight Storm Mender
+						74380,	-- Twilight Storm Mender
+						75285,	-- Twilight Storm Mender
+					},
+				}),
+				i(14127, {	-- Ritual Shroud
+					["crs"] = {
+						74720,	-- Blindlight Murloc
+						76039,	-- Twilight Aquamancer
+						75058,	-- Twilight Aquamancer
+						76036,	-- Twilight Shadow
+						74380,	-- Twilight Storm Mender
+						75285,	-- Twilight Storm Mender
+						76037,	-- Twilight Storm Mender
+					},
+				}),
+				i( 3039, {	-- Short Ash Bow
+					["crs"] = {
+						74984,	-- Blindlight Murloc
+						75658,	-- Blindlight Murloc
+						75980,	-- Blindlight Razorjaw
+						74719,	-- Blindlight Rotmouth
+						74509,	-- Blue Shale Crawler
+						75135,	-- Tormented Sacrifice
+						75058,	-- Twilight Aquamancer
+						74353,	-- Twilight Aquamancer
+						75286,	-- Twilight Disciple
+						76036,	-- Twilight Shadow
+						74380,	-- Twilight Storm Mender
+						75285,	-- Twilight Storm Mender
+					},
+				}),
+				i( 2271, {	-- Staff of the Blessed Seer
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						74984,	-- Blindlight Murloc
@@ -75,7 +166,7 @@ _.Instances = { tier(1, {	-- Classic
 						75285,	-- Twilight Storm Mender
 					},
 				}),
-				i(3415, {	-- Staff of the Friar
+				i( 3415, {	-- Staff of the Friar
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						74984,	-- Blindlight Murloc
@@ -88,7 +179,7 @@ _.Instances = { tier(1, {	-- Classic
 						75285,	-- Twilight Storm Mender
 					},
 				}),
-				i(1486, {	-- Tree Bark Jacket
+				i( 1486, {	-- Tree Bark Jacket
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						74984,	-- Blindlight Murloc
@@ -108,85 +199,6 @@ _.Instances = { tier(1, {	-- Classic
 						74380,	-- Twilight Storm Mender
 						75285,	-- Twilight Storm Mender
 					},
-				}),
-				n(74721, {	-- Blindlight Bilefin
-					dr(0.01, i(3416)),	-- Martyr's Chain
-					dr(0.01, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(1454)),	-- Axe of the Enforcer	
-					dr(0.01, i(3414)),	-- Crested Scepter
-				}),
-				n(74984, {	-- Blindlight Murloc
-					dr(0.01, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(1481)),	-- Grimclaw
-				}),
-				n(74720, {	-- Blindlight Murloc
-					dr(0.03, i(1486)),	-- Tree Bark Jacket
-					dr(0.01, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(1481)),	-- Grimclaw
-				}),								
-				n(75980, {	-- Blindlight Razorjaw
-					dr(0.01, i(3416)),	-- Martyr's Chain
-					dr(0.01, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(1481)),	-- Grimclaw
-				}),		
-				n(74719, {	-- Blindlight Rotmouth
-					dr(0.05, i(1481)),	-- Grimclaw
-					dr(0.03, i(3417)),	-- Onyx Claymore
-				}),		
-				n(76954, {	-- Pahboo-Ra <Son of Ghamoo-Ra>
-					dr(0.02, i(3414)),	-- Crested Scepter
-					dr(0.01, i(1454)),	-- Axe of the Enforcer
-				}),		
-				n(74353, {	-- Twilight Aquamancer
-					dr(0.01, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(3414)),	-- Crested Scepter
-				}),	
-				n(75058, {	-- Twilight Aquamancer
-					dr(0.01, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(3414)),	-- Crested Scepter
-				}),							
-				n(74983, {	-- Twilight Disciple
-					dr(0.08, i(1481)),	-- Grimclaw
-					dr(0.02, i(3416)),	-- Martyr's Chain
-				}),		
-				n(75286, {	-- Twilight Disciple
-					dr(0.08, i(1481)),	-- Grimclaw
-					dr(0.02, i(3416)),	-- Martyr's Chain
-				}),
-				n(74351, {	-- Twilight Disciple
-					dr(0.08, i(1481)),	-- Grimclaw
-					dr(0.02, i(3416)),	-- Martyr's Chain
-				}),							
-				n(76036, {	-- Twilight Shadow
-					dr(6, i(14127)),	-- Ritual Shroud
-					dr(6, i(3039)),		-- Short Ash Bow
-					dr(0.04, i(3417)),	-- Onyx Claymore
-					dr(0.02, i(3416)),	-- Martyr's Chain
-					dr(0.02, i(1481)),	-- Grimclaw
-					dr(0.01, i(1454)),	-- Axe of the Enforcer
-					dr(0.01, i(3414)),	-- Crested Scepter
-				}),	
-				n(74363, {	-- Twilight Shadow
-					dr(0.04, i(3417)),	-- Onyx Claymore
-					dr(0.02, i(3416)),	-- Martyr's Chain
-					dr(0.02, i(1481)),	-- Grimclaw
-					dr(0.01, i(1454)),	-- Axe of the Enforcer
-					dr(0.01, i(3414)),	-- Crested Scepter
-				}),	
-				n(74980, {	-- Twilight Storm Mender
-					dr(0.04, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(3416)),	-- Martyr's Chain
-					dr(0.01, i(1454)),	-- Axe of the Enforcer
-				}),
-				n(74380, {	-- Twilight Storm Mender
-					dr(0.04, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(3416)),	-- Martyr's Chain
-					dr(0.01, i(1454)),	-- Axe of the Enforcer
-				}),							
-				n(75285, {	-- Twilight Storm Mender
-					dr(0.04, i(3417)),	-- Onyx Claymore
-					dr(0.01, i(3416)),	-- Martyr's Chain
-					dr(0.01, i(1454)),	-- Axe of the Enforcer
 				}),
 			}),
 			cr(74446, e( 368, {	-- Ghamoo-Ra
