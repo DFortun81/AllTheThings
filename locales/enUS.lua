@@ -2404,8 +2404,9 @@ AllTheThings.Locales.enUS = {
 		{4, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria|r", "Ordos - Legendary Cloak (38)"}; --38
 		{4, "|CFFFF0000This title is no longer available.|r", "Legacy Titles (39)"}; --39
 		{4, "|CFFFF0000This is a Legacy quest or quest item, and is no longer available.|r", "Legacy Quests (40)"}; -- 40
-		{4, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"};
-		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event. Only dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; --41
+		{4, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}; -- 41
+		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event. Only dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
+		{1, "|CFFFF0000This NPC or creature was removed from the game.|r", "Removed NPCs (43)"}; -- 43
 	};
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you, please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";

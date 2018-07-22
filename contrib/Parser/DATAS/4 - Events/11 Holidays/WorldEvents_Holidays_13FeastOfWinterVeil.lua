@@ -95,7 +95,6 @@ _.WorldEvents =
 								["groups"] = {},
 							}),
 						},
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					ach(10353, { -- Iron Armada
 						["groups"] = {
@@ -145,11 +144,9 @@ _.WorldEvents =
 								},
 							}),
 						},
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					ach(8699, { -- The Danger Zone
 						["groups"] = {},
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					ach(5853, { -- A-Caroling We Will Go (Alliance)
 						["groups"] = {
@@ -159,7 +156,6 @@ _.WorldEvents =
 							crit(4), -- Undercity
 						},
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					ach(5854, { -- A-Caroling We Will Go (Horde)
 						["groups"] = {
@@ -169,7 +165,6 @@ _.WorldEvents =
 							crit(4), -- Stormwind City
 						},
 						["races"] = HORDE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					ach(4436, { -- BB King (Alliance)
 						["groups"] = {
@@ -179,7 +174,6 @@ _.WorldEvents =
 							crit(4), -- High Overlord Saurfang
 						},
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					ach(4437, { -- BB King (Horde)
 						["groups"] = {
@@ -189,13 +183,11 @@ _.WorldEvents =
 							crit(4), -- Anduin Wrynn
 						},
 						["races"] = HORDE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					ach(1295, { -- Crashin' & Thrashin'
 						["groups"] = {
 							crit(1), -- Gain 25 crashes with your Crashin' Thrashin' Racer
 						},
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					n(-9969, { -- Feats of Strength
 						["groups"] = {
@@ -317,7 +309,6 @@ _.WorldEvents =
 								},
 							}),
 						},
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 				}),
 				n(-139, { -- Bosses
@@ -903,71 +894,42 @@ _.WorldEvents =
 								n(13444, { -- Greatfather Winter (Note: This NPC sends mail to both factions.)
 									["groups"] = {
 										-- Cooking
-										{ ["itemID"] = 34413, ["spellID"] = 45022, }, -- Hot Apple Cider
+										i(34413), -- Recipe: Hot Apple Cider
 										-- Leatherworking
-										{ ["itemID"] = 34262, ["spellID"] = 44953, }, -- Winter Boots
+										i(34262), -- Pattern: Winter Boots
 										-- Tailoring
-										{ ["itemID"] = 34319, ["spellID"] = 44958, ["races"] = ALLIANCE_ONLY, }, -- Red Winter Clothes
-										{ ["itemID"] = 34261, ["spellID"] = 44950, ["races"] = HORDE_ONLY, }, -- Green Winter Clothes
+										i(34319, { -- Pattern: Red Winter Clothes
+											["groups"] = {},
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(34261, { -- Pattern: Green Winter Clothes
+											["groups"] = {},
+											["races"] = HORDE_ONLY,
+										}),
 									},
-									["u"] = 29, -- Feast of Winter Veil
 								}),
 							},
 							["description"] = "These recipes are mailed to characters with the corresponding profession(s) on the FIRST day of the event. They can also be bought from several seasonal vendors.",
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						i(17726, { -- Smokywood Pastures Special Gift
 							["groups"] = {
-								n(-180, { -- Alchemy
-									["groups"] = {
-										{ ["itemID"] = 17709, ["spellID"] = 21923, }, -- Elixir of Frost Power
-									},
-									["u"] = 29, -- Feast of Winter Veil
-								}),
-								n(-181, { -- Blacksmithing
-									["groups"] = {
-										{ ["itemID"] = 17706, ["spellID"] = 21913, }, -- Edge of Winter
-									},
-									["u"] = 29, -- Feast of Winter Veil
-								}),
-								n(-182, { -- Enchanting
-									["groups"] = {
-										{ ["itemID"] = 17725, ["spellID"] = 21931, }, -- Enchant Weapon - Winter's Might
-									},
-									["u"] = 29, -- Feast of Winter Veil
-								}),
-								n(-183, { -- Engineering
-									["groups"] = {
-										{ ["itemID"] = 17720, ["spellID"] = 21940, }, -- Snowmaster 9000
-									},
-									["u"] = 29, -- Feast of Winter Veil
-								}),
-								n(-187, { -- Leatherworking
-									["groups"] = {
-										{ ["itemID"] = 17722, ["spellID"] = 21943, }, -- Gloves of the Greatfather
-									},
-									["u"] = 29, -- Feast of Winter Veil
-								}),
-								n(-190, { -- Tailoring
-									["groups"] = {
-										{ ["itemID"] = 17724, ["spellID"] = 21945, }, -- Green Holiday Shirt
-									},
-									["u"] = 29, -- Feast of Winter Veil
-								}),
+								i(17709), -- Recipe: Elixir of Frost Power
+								i(17706), -- Plans: Edge of Winter
+								i(17725), -- Formula: Enchant Weapon - Winter's Might
+								i(17720), -- Schematic: Snowmaster 9000
+								i(17722), -- Pattern: Gloves of the Greatfather
+								i(17724), -- Pattern: Green Holiday Shirt
 							},
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 					},
-					["u"] = 29, -- Feast of Winter Veil
 				}),
 				n(-25, { -- Pet Battles
 					un(29, p(2114, { -- Globe Yeti
 						["description"] = "This pet spawns while inside the globe located in Orgrimmar or Ironforge and it's respawn time is 30 minutes. Only one yeti is up at a time. When it spawns it will be a Level 1 Yeti by itself so be prepared. If you have a hard time competing with others for the pet you can make a macro that does the following:\n\n|cFFFFFFFF/tar globe yeti|r\n\n Spam this macro along with using an |cFFFFFFFFInteract With Target|r key bind.",
-						["u"] = 29, -- Feast of Winter Veil
 					})),
 					o(243911, { -- Snow Mound
 						["groups"] = {
-							un(29, dr(5.0, i(128770))),	-- Grumpling
+							un(29, i(128770)), -- Grumpling
 						},
 						["description"] = "The pet has a chance to drop from these Snow Mounds.",
 						["icon"] = "Interface\\Icons\\INV_Ammo_Snowball",
@@ -980,7 +942,6 @@ _.WorldEvents =
 						["qg"] = 13433, -- Wulmort Jinglepocket
 						["maps"] = { 87, }, -- Ironforge
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7023, { -- Greatfather Winter is Here!
 						["groups"] = {},
@@ -995,7 +956,6 @@ _.WorldEvents =
 							579, -- Lunarfall
 						},
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7025, { -- Treats for Greatfather Winter
 						["groups"] = {},
@@ -1003,7 +963,6 @@ _.WorldEvents =
 						["maps"] = { 87, }, -- Ironforge
 						["sourceQuests"] = { 7022, 7023, }, -- Greatfather Winter is Here!
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7043, { -- You're a Mean One... (Alliance)
 						["groups"] = {
@@ -1011,7 +970,6 @@ _.WorldEvents =
 								["groups"] = {},
 								["description"] = "This gift is granted to any player between levels 60-100. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
 								["lvl"] = 60,
-								["u"] = 29, -- Feast of Winter Veil
 							}),
 							i(116762, { -- Stolen Present
 								["groups"] = {
@@ -1062,30 +1020,22 @@ _.WorldEvents =
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["lvl"] = 101,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7045, { -- A Smokywood Pastures Thank You! (Alliance)
 						["groups"] = {
 							i(17726, { -- Smokywood Pastures Special Gift
 								["groups"] = {
 									-- Illusions
-									un(29, i(128649)), -- Illusion: Winter's Grasp
-									un(29, i(118572)), -- Illusion: Flames of Ragnaros
+									i(128649), -- Illusion: Winter's Grasp
+									i(118572), -- Illusion: Flames of Ragnaros
 									-- Recipes
-										-- Alchemy
-										{ ["itemID"] = 17709, ["spellID"] = 21923, }, -- Elixir of Frost Power
-										-- Blacksmithing
-										{ ["itemID"] = 17706, ["spellID"] = 21913, }, -- Edge of Winter
-										-- Enchanting
-										{ ["itemID"] = 17725, ["spellID"] = 21931, }, -- Enchant Weapon - Winter's Might
-										-- Engineering
-										{ ["itemID"] = 17720, ["spellID"] = 21940, }, -- Snowmaster 9000
-										-- Leatherworking
-										{ ["itemID"] = 17722, ["spellID"] = 21943, }, -- Gloves of the Greatfather
-										-- Tailoring
-										{ ["itemID"] = 17724, ["spellID"] = 21945, }, -- Green Holiday Shirt
+									i(17709), -- Recipe: Elixir of Frost Power
+									i(17706), -- Plans: Edge of Winter
+									i(17725), -- Formula: Enchant Weapon - Winter's Might
+									i(17720), -- Schematic: Snowmaster 9000
+									i(17722), -- Pattern: Gloves of the Greatfather
+									i(17724), -- Pattern: Green Holiday Shirt
 								},
-								["u"] = 29, -- Feast of Winter Veil
 							}),
 							n(-297, { -- Mailbox
 								["groups"] = {
@@ -1094,21 +1044,18 @@ _.WorldEvents =
 									}),
 								},
 								["description"] = "Greatfather Winter will mail this toy to you approximately 1 day after you complete this quest.",
-								["u"] = 29, -- Feast of Winter Veil
 							}),
 						},
 						["qg"] = 13433, -- Wulmort Jinglepocket
 						["maps"] = { 87, }, -- Ironforge
 						["sourceQuests"] = { 7043, }, -- You're a Mean One... (Alliance)
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7062, { -- The Reason for the Season (Alliance)
 						["groups"] = {},
 						["qg"] = 1365, -- Goli Krumn
 						["maps"] = { 87, }, -- Ironforge
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7063, { -- The Feast of Winter Veil (Alliance)
 						["groups"] = {},
@@ -1116,7 +1063,6 @@ _.WorldEvents =
 						["maps"] = { 87, }, -- Ironforge
 						["sourceQuests"] = { 7062, }, -- The Reason for the Season (Alliance)
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					-- HORDE QUESTS --
 					q(6961, { -- Great-father Winter is Here!
@@ -1124,21 +1070,18 @@ _.WorldEvents =
 						["qg"] = 13418, -- Kaymard Copperpinch
 						["maps"] = { 85, }, -- Orgrimmar
 						["races"] = HORDE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7021, { -- Great-father Winter is Here!
 						["groups"] = {},
 						["qg"] = 13431, -- Whulwert Copperpinch
 						["maps"] = { 88, }, -- Thunder Bluff
 						["races"] = HORDE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7024, { -- Great-father Winter is Here!
 						["groups"] = {},
 						["qg"] = 13429, -- Nardstrum Copperpinch
 						["maps"] = { 90, }, -- Undercity
 						["races"] = HORDE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(6962, { -- Treats for Great-father Winter
 						["groups"] = {},
@@ -1146,7 +1089,6 @@ _.WorldEvents =
 						["maps"] = { 85, }, -- Orgrimmar
 						["sourceQuests"] = { 6961, 7021, 7024, }, -- Great-father Winter is Here!
 						["races"] = HORDE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(6983, { -- You're a Mean One... (Horde)
 						["groups"] = {
@@ -1154,7 +1096,6 @@ _.WorldEvents =
 								["groups"] = {},
 								["description"] = "This gift is granted to any player between levels 60-100. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
 								["lvl"] = 60,
-								["u"] = 29, -- Feast of Winter Veil
 							}),
 							i(116762, { -- Stolen Present
 								["groups"] = {
@@ -1193,7 +1134,6 @@ _.WorldEvents =
 									un(29, i(143898)), -- Miniature Winter Veil Tree (Level 1 - Cosmetic)
 								},
 								["lvl"] = 101,
-								["u"] = 29, -- Feast of Winter Veil
 							}),
 						},
 						["qgs"] = {
@@ -1206,30 +1146,22 @@ _.WorldEvents =
 						},
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(6984, { -- A Smokywood Pastures Thank You! (Horde)
 						["groups"] = {
 							i(17726, { -- Smokywood Pastures Special Gift
 								["groups"] = {
 									-- Illusions
-									un(29, i(128649)), -- Illusion: Winter's Grasp
-									un(29, i(118572)), -- Illusion: Flames of Ragnaros
+									i(128649), -- Illusion: Winter's Grasp
+									i(118572), -- Illusion: Flames of Ragnaros
 									-- Recipes
-										-- Alchemy
-										{ ["itemID"] = 17709, ["spellID"] = 21923, }, -- Elixir of Frost Power
-										-- Blacksmithing
-										{ ["itemID"] = 17706, ["spellID"] = 21913, }, -- Edge of Winter
-										-- Enchanting
-										{ ["itemID"] = 17725, ["spellID"] = 21931, }, -- Enchant Weapon - Winter's Might
-										-- Engineering
-										{ ["itemID"] = 17720, ["spellID"] = 21940, }, -- Snowmaster 9000
-										-- Leatherworking
-										{ ["itemID"] = 17722, ["spellID"] = 21943, }, -- Gloves of the Greatfather
-										-- Tailoring
-										{ ["itemID"] = 17724, ["spellID"] = 21945, }, -- Green Holiday Shirt
+									i(17709), -- Recipe: Elixir of Frost Power
+									i(17706), -- Plans: Edge of Winter
+									i(17725), -- Formula: Enchant Weapon - Winter's Might
+									i(17720), -- Schematic: Snowmaster 9000
+									i(17722), -- Pattern: Gloves of the Greatfather
+									i(17724), -- Pattern: Green Holiday Shirt
 								},
-								["u"] = 29, -- Feast of Winter Veil
 							}),
 							n(-297, { -- Mailbox
 								["groups"] = {
@@ -1238,21 +1170,18 @@ _.WorldEvents =
 									}),
 								},
 								["description"] = "Great-father Winter will mail this toy to you approximately 1 day after you complete this quest.",
-								["u"] = 29, -- Feast of Winter Veil
 							}),
 						},
 						["qg"] = 13418, -- Kaymard Copperpinch
 						["maps"] = { 85, }, -- Orgrimmar
 						["sourceQuests"] = { 6983, }, -- You're a Mean One... (Horde)
 						["races"] = HORDE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(6964, { -- The Reason for the Season (Horde)
 						["groups"] = {},
 						["qg"] = 9550, -- Furmund
 						["maps"] = { 85, }, -- Orgrimmar
 						["races"] = HORDE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),
 					q(7061, { -- The Feast of Winter Veil (Horde)
 						["groups"] = {},
@@ -1260,7 +1189,6 @@ _.WorldEvents =
 						["maps"] = { 85, }, -- Orgrimmar
 						["sourceQuests"] = { 6964, }, -- The Reason for the Season (Horde)
 						["races"] = HORDE_ONLY,
-						["u"] = 29, -- Feast of Winter Veil
 					}),		
 				}),
 				n(-2, { -- Vendors
@@ -1268,200 +1196,187 @@ _.WorldEvents =
 					["groups"] = {
 						n(52358, { -- Craggle Wobbletop
 							["groups"] = {
-								un(29, i(104324)), -- Foot Ball
+								i(104324), -- Foot Ball
 							},
 							["races"] = ALLIANCE_ONLY,
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(13433, { -- Wulmort Jinglepocket
 							["groups"] = {
 								-- Cooking
-								{ ["itemID"] = 34413, ["spellID"] = 45022, }, -- Hot Apple Cider
-								{ ["itemID"] = 17201, ["spellID"] = 21144, }, -- Winter Veil Egg Nog
-								{ ["itemID"] = 17200, ["spellID"] = 21143, }, -- Gingerbread Cookie
+								i(34413), -- Recipe: Hot Apple Cider
+								i(17201), -- Recipe: Winter Veil Egg Nog
+								i(17200), -- Recipe: Gingerbread Cookie
 								-- Leatherworking
-								{ ["itemID"] = 34262, ["spellID"] = 44953, }, -- Winter Boots
+								i(34262), -- Pattern: Winter Boots
 								-- Tailoring
-								{ ["itemID"] = 34319, ["spellID"] = 44958, }, -- Red Winter Clothes
+								i(34319), -- Pattern: Red Winter Clothes
 								-- Other
-								un(29, i(70923)), -- Gaudy Winter Veil Sweater
+								i(70923), -- Gaudy Winter Veil Sweater
 							},
 							["races"] = ALLIANCE_ONLY,
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(13435, { 	-- Khole Jinglepocket
 							["groups"] = {
 								-- Cooking
-								{ ["itemID"] = 34413, ["spellID"] = 45022, }, -- Hot Apple Cider
-								{ ["itemID"] = 17201, ["spellID"] = 21144, }, -- Winter Veil Egg Nog
-								{ ["itemID"] = 17200, ["spellID"] = 21143, }, -- Gingerbread Cookie
+								i(34413), -- Recipe: Hot Apple Cider
+								i(17201), -- Recipe: Winter Veil Egg Nog
+								i(17200), -- Recipe: Gingerbread Cookie
 								-- Leatherworking
-								{ ["itemID"] = 34262, ["spellID"] = 44953, }, -- Winter Boots
+								i(34262), -- Pattern: Winter Boots
 								-- Tailoring
-								{ ["itemID"] = 34319, ["spellID"] = 44958, }, -- Red Winter Clothes
+								i(34319), -- Pattern: Red Winter Clothes
 								-- Other
-								un(29, i(70923)), -- Gaudy Winter Veil Sweater
+								i(70923), -- Gaudy Winter Veil Sweater
 							},
 							["races"] = ALLIANCE_ONLY,
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(23010, { 	-- Wolgren Jinglepocket
 							["groups"] = {
 								-- Cooking
-								{ ["itemID"] = 34413, ["spellID"] = 45022, }, -- Hot Apple Cider
-								{ ["itemID"] = 17201, ["spellID"] = 21144, }, -- Winter Veil Egg Nog
-								{ ["itemID"] = 17200, ["spellID"] = 21143, }, -- Gingerbread Cookie
+								i(34413), -- Recipe: Hot Apple Cider
+								i(17201), -- Recipe: Winter Veil Egg Nog
+								i(17200), -- Recipe: Gingerbread Cookie
 								-- Leatherworking
-								{ ["itemID"] = 34262, ["spellID"] = 44953, }, -- Winter Boots
+								i(34262), -- Pattern: Winter Boots
 								-- Tailoring
-								{ ["itemID"] = 34319, ["spellID"] = 44958, }, -- Red Winter Clothes
+								i(34319), -- Pattern: Red Winter Clothes
 								-- Other
-								un(29, i(70923)), -- Gaudy Winter Veil Sweater
+								i(70923), -- Gaudy Winter Veil Sweater
 							},
 							["races"] = ALLIANCE_ONLY,
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(96304, { 	-- Tradurjo Jinglepocket
 							["groups"] = {
 								-- Cooking
-								{ ["itemID"] = 34413, ["spellID"] = 45022, }, -- Hot Apple Cider
-								{ ["itemID"] = 17201, ["spellID"] = 21144, }, -- Winter Veil Egg Nog
-								{ ["itemID"] = 17200, ["spellID"] = 21143, }, -- Gingerbread Cookie
+								i(34413), -- Recipe: Hot Apple Cider
+								i(17201), -- Recipe: Winter Veil Egg Nog
+								i(17200), -- Recipe: Gingerbread Cookie
 								-- Leatherworking
-								{ ["itemID"] = 34262, ["spellID"] = 44953, }, -- Winter Boots
+								i(34262), -- Pattern: Winter Boots
 								-- Tailoring
-								{ ["itemID"] = 34319, ["spellID"] = 44958, }, -- Red Winter Clothes
+								i(34319), -- Pattern: Red Winter Clothes
 								-- Other
-								un(29, i(70923)), -- Gaudy Winter Veil Sweater
+								i(70923), -- Gaudy Winter Veil Sweater
 							},
 							["races"] = ALLIANCE_ONLY,
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						-- HORDE VENDORS --
 						n(52809, { -- Blax Bottlerocket
 							["groups"] = {
-								un(29, i(104324)), -- Foot Ball
+								i(104324), -- Foot Ball
 							},
 							["races"] = HORDE_ONLY,
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(13420, { 	-- Penney Copperpinch
 							["groups"] = {
 								-- Cooking
-								{ ["itemID"] = 34413, ["spellID"] = 45022, }, -- Hot Apple Cider
-								{ ["itemID"] = 17201, ["spellID"] = 21144, }, -- Winter Veil Egg Nog
-								{ ["itemID"] = 17200, ["spellID"] = 21143, }, -- Gingerbread Cookie
+								i(34413), -- Recipe: Hot Apple Cider
+								i(17201), -- Recipe: Winter Veil Egg Nog
+								i(17200), -- Recipe: Gingerbread Cookie
 								-- Leatherworking
-								{ ["itemID"] = 34262, ["spellID"] = 44953, }, -- Winter Boots
+								i(34262), -- Pattern: Winter Boots
 								-- Tailoring
-								{ ["itemID"] = 34261, ["spellID"] = 44950, }, -- Green Winter Clothes
+								i(34261), -- Pattern: Green Winter Clothes
 								-- Other
-								un(29, i(70923)), -- Gaudy Winter Veil Sweater
+								i(70923), -- Gaudy Winter Veil Sweater
 							},
 							["races"] = HORDE_ONLY,
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(23012, { 	-- Hotoppik Jinglepocket
 							["groups"] = {
 								-- Cooking
-								{ ["itemID"] = 34413, ["spellID"] = 45022, }, -- Hot Apple Cider
-								{ ["itemID"] = 17201, ["spellID"] = 21144, }, -- Winter Veil Egg Nog
-								{ ["itemID"] = 17200, ["spellID"] = 21143, }, -- Gingerbread Cookie
+								i(34413), -- Recipe: Hot Apple Cider
+								i(17201), -- Recipe: Winter Veil Egg Nog
+								i(17200), -- Recipe: Gingerbread Cookie
 								-- Leatherworking
-								{ ["itemID"] = 34262, ["spellID"] = 44953, }, -- Winter Boots
+								i(34262), -- Pattern: Winter Boots
 								-- Tailoring
-								{ ["itemID"] = 34261, ["spellID"] = 44950, }, -- Green Winter Clothes
+								i(34261), -- Pattern: Green Winter Clothes
 								-- Other
-								un(29, i(70923)), -- Gaudy Winter Veil Sweater
+								i(70923), -- Gaudy Winter Veil Sweater
 							},
 							["races"] = HORDE_ONLY,
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(13432, { 	-- Seersa Jinglepocket
 							["groups"] = {
 								-- Cooking
-								{ ["itemID"] = 34413, ["spellID"] = 45022, }, -- Hot Apple Cider
-								{ ["itemID"] = 17201, ["spellID"] = 21144, }, -- Winter Veil Egg Nog
-								{ ["itemID"] = 17200, ["spellID"] = 21143, }, -- Gingerbread Cookie
+								i(34413), -- Recipe: Hot Apple Cider
+								i(17201), -- Recipe: Winter Veil Egg Nog
+								i(17200), -- Recipe: Gingerbread Cookie
 								-- Leatherworking
-								{ ["itemID"] = 34262, ["spellID"] = 44953, }, -- Winter Boots
+								i(34262), -- Pattern: Winter Boots
 								-- Tailoring
-								{ ["itemID"] = 34261, ["spellID"] = 44950, }, -- Green Winter Clothes
+								i(34261), -- Pattern: Green Winter Clothes
 								-- Other
-								un(29, i(70923)), -- Gaudy Winter Veil Sweater
+								i(70923), -- Gaudy Winter Veil Sweater
 							},
 							["races"] = HORDE_ONLY,
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(13429, { 	-- Nardstrum Copperpinch
 							["groups"] = {
 								-- Cooking
-								{ ["itemID"] = 34413, ["spellID"] = 45022, }, -- Hot Apple Cider
-								{ ["itemID"] = 17201, ["spellID"] = 21144, }, -- Winter Veil Egg Nog
-								{ ["itemID"] = 17200, ["spellID"] = 21143, }, -- Gingerbread Cookie
+								i(34413), -- Recipe: Hot Apple Cider
+								i(17201), -- Recipe: Winter Veil Egg Nog
+								i(17200), -- Recipe: Gingerbread Cookie
 								-- Leatherworking
-								{ ["itemID"] = 34262, ["spellID"] = 44953, }, -- Winter Boots
+								i(34262), -- Pattern: Winter Boots
 								-- Tailoring
-								{ ["itemID"] = 34261, ["spellID"] = 44950, }, -- Green Winter Clothes
+								i(34261), -- Pattern: Green Winter Clothes
 								-- Other
-								un(29, i(70923)), -- Gaudy Winter Veil Sweater
+								i(70923), -- Gaudy Winter Veil Sweater
 							},
 							["races"] = HORDE_ONLY,
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						-- NEUTRAL VENDORS --
 						n(29716, { -- Clockwork Assistant
 							["groups"] = {
 								un(29, i(104324)), -- Foot Ball
 							},
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(96484, { -- Clockwork Assistant
 							["groups"] = {
 								un(29, i(104324)), -- Foot Ball
 							},
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(29478, { -- Jepetto Joybuzz
 							["groups"] = {
 								un(29, i(104324)), -- Foot Ball
 							},
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(96483, { -- Jepetto Joybuzz
 							["groups"] = {
 								un(29, i(104324)), -- Foot Ball
 							},
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(84212, { -- Kazbala
 							["groups"] = {
 								un(29, i(104324)), -- Foot Ball
 							},
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(23064, { -- Eebee Jinglepocket
 							["groups"] = {
 								-- Cooking
-								{ ["itemID"] = 34413, ["spellID"] = 45022, }, -- Hot Apple Cider
-								{ ["itemID"] = 17201, ["spellID"] = 21144, }, -- Winter Veil Egg Nog
-								{ ["itemID"] = 17200, ["spellID"] = 21143, }, -- Gingerbread Cookie
+								i(34413), -- Recipe: Hot Apple Cider
+								i(17201), -- Recipe: Winter Veil Egg Nog
+								i(17200), -- Recipe: Gingerbread Cookie
 								-- Leatherworking
-								{ ["itemID"] = 34262, ["spellID"] = 44953, }, -- Winter Boots
+								i(34262), -- Pattern: Winter Boots
 								-- Tailoring
-								{ ["itemID"] = 34261, ["spellID"] = 44950, ["races"] = HORDE_ONLY, }, -- Green Winter Clothes
+								i(34261, { -- Pattern: Green Winter Clothes
+									["groups"] = {},
+									["races"] = HORDE_ONLY,
+								}),
 								-- Other
-								un(29, i(70923)), -- Gaudy Winter Veil Sweater
+								i(70923), -- Gaudy Winter Veil Sweater
 							},
-							["u"] = 29, -- Feast of Winter Veil
 						}),
 						n(96362, { 	-- Izzy Hollyfizzle <Events Coordinator>
 							i(128659, { -- Merry Supplies
 								["groups"] = {
-									un(29, i(108635)), -- Crashin' Thrashin' Killdozer Controller
+									i(108635), -- Crashin' Thrashin' Killdozer Controller
 									i(128670, { -- Savage Gift
 										["groups"] = {
-											un(29, i(128671)), -- Minion of Grumpus
+											i(128671), -- Minion of Grumpus
 										},
 									}),
 								},
@@ -1484,10 +1399,10 @@ _.WorldEvents =
 					q(8768, { 	-- A Gaily Wrapped Present
 						i(21310, { -- Gaily Wrapped Present
 							["groups"] = {
-								un(29, i(21301)),	-- Green Helper Box
-								un(29, i(21308)),	-- Jingling Bell
-								un(29, i(21305)),	-- Red Helper Box
-								un(29, i(21309)),	-- Snowman Kit
+								un(29, i(21301)), -- Green Helper Box
+								un(29, i(21308)), -- Jingling Bell
+								un(29, i(21305)), -- Red Helper Box
+								un(29, i(21309)), -- Snowman Kit
 							},
 							["lvl"] = 20,
 						}),
@@ -1553,11 +1468,11 @@ _.WorldEvents =
 					q(8769, { 	-- A Ticking Present
 						["groups"] = {
 							i(21327, { -- Ticking Present
-								un(29, i(17709)),	-- Recipe: Elixir of Frost Power
-								un(29, i(17722)),	-- Pattern: Gloves of the Greatfather
-								un(29, i(17724)),	-- Pattern: Green Holiday Shirt
-								un(29, i(17706)), 	-- Plans: Edge of Winter
-								un(29, i(17720)), 	-- Schematic: Snowmaster 9000
+								i(17709), -- Recipe: Elixir of Frost Power
+								i(17722), -- Pattern: Gloves of the Greatfather
+								i(17724), -- Pattern: Green Holiday Shirt
+								i(17706), -- Plans: Edge of Winter
+								i(17720), -- Schematic: Snowmaster 9000
 							}),
 						},
 						["lvl"] = 40,
