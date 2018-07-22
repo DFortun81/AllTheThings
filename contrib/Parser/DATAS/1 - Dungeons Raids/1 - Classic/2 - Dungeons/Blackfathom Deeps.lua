@@ -22,7 +22,12 @@ _.Instances = { tier(1, {	-- Classic
 				})),
 			}),	
 			n(  0, {	-- Zone Drop
-				n(74721, {	-- Blindlight Bilefin	
+				i(2271, {	-- Staff of the Blessed Seer
+					["crs"] = {
+						74721,	-- Blindlight Bilefin
+					},
+				}),
+--[[				n(74721, {	-- Blindlight Bilefin	
 					dr(2.00, i(2271)),	-- Staff of the Blessed Seer
 					dr(0.01, i(1486)),	-- Tree Bark Jacket
 					dr(0.01, i(3416)),	-- Martyr's Chain
@@ -31,7 +36,7 @@ _.Instances = { tier(1, {	-- Classic
 					dr(0.01, i(1454)),	-- Axe of the Enforcer	
 					dr(0.01, i(3414)),	-- Crested Scepter
 					dr(0.01, i(3415)),	-- Staff of the Friar
-				}),		
+				}),		--]]
 				n(74984, {	-- Blindlight Murloc	
 					dr(0.03, i(1486)),	-- Tree Bark Jacket
 					dr(0.01, i(2567)),	-- Evocator's Blade

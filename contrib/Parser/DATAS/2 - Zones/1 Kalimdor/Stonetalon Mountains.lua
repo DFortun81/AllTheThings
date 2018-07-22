@@ -6,62 +6,6 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(65, {		-- Stonetalon Mountains
 			["groups"] = {			
-				n( -3, {	-- Holidays
---[[					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
---]]
---[[					
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
---]]
---[[					
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),		
---]]				
-				}),					
 				n(-25, {	-- Pet Battle
 					p(487), 	-- Alpine Chipmunk
 					p(488), 	-- Coral Snake
@@ -875,7 +819,11 @@ _.Zones =
 						dr(	1.1	, i(	6613	)), --	Sage's Bracers
 						dr(	1	, i(	6601	)), --	Dervish Boots
 						dr(	1	, i(	6614	)), --	Sage's Cloak
-					}), 
+					}),
+					n(4015, { 	-- Pridewing Patriarch
+						un(7, i(5751)), 	-- Webwing Cloak
+						un(7, i(5752)), 	-- Wyvern Tailspike
+					}),
 					n(50343, { 		-- Quall
 						dr(	5	, i(	9817	)), --	Fortified Spaulders
 						dr(	5	, i(	9792	)), --	Ivycloth Boots
@@ -1092,12 +1040,8 @@ _.Zones =
 								un(34, i(7336)),	-- Wildwood Chain
 							}),
 						}),
-						n(-16, {	-- Rares (Legacy)
-							n(4015, { 	-- Pridewing Patriarch
-								un(7, i(5751)), 	-- Webwing Cloak
-								un(7, i(5752)), 	-- Wyvern Tailspike
-							}),
-						}),
+						--n(-16, {	-- Rares (Legacy)
+						--}),
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),						
 					},
