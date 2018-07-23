@@ -151,9 +151,6 @@ _.Achievements =
 						crit(8),	-- Keep Them at Bay
 						crit(9),	-- Smoke 'Em Out
 					})),
-					ach(11178, {	-- Wake the Dragon
-						crit(1),	-- 	Mount Stormtalon in Storm's Reach
-					}),
 					a(ach(230, {	-- Battlemaster (Alliance)
 						title(41),	-- Battlemaster
 						crit(1),	-- Master of Alterac Valley

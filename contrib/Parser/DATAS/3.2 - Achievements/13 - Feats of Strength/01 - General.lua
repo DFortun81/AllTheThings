@@ -1,6 +1,14 @@
 --------------------------------------------------
---   G R O U P    F I N D E R    M O D U L E    --
+--   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
+
+--[[
+8.0 Pre-Patch alignment complete
+To do: 
+1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
+2) Add [Reward] tag
+3) Source to local files if applicable
+]]--
 
 _.Achievements = 
 {
@@ -22,7 +30,15 @@ _.Achievements =
 						crit(11),	-- Warlock
 						crit(12),	-- Warrior
 					}),
-					ach(12245, {	-- Allied Races: Highmountain Tauren
+					ach(13089, {	-- Allied Races: Dark Iron Dwarf
+						["groups"] = {
+							ach(12510),	-- Ready for War
+							faction(2159),	-- 7th Legion
+						},
+						["races"] = ALLIANCE_ONLY,
+						["description"] = "Requires release of Battle for Azeroth, unlock requirements may still change.",
+					}),
+					ach(12445, {	-- Allied Races: Highmountain Tauren
 						["groups"] = {
 							ach(10059),	-- Ain't No Mountain High Enough
 							faction(1828), -- Highmountain Tribe
@@ -34,7 +50,7 @@ _.Achievements =
 						["description"] = "Requires Battle for Azeroth to be purchased.",
 						["lvl"] = 110,
 					}),
-					ach(12243, {	-- Allied Races: Lightforged Draenei
+					ach(12448, {	-- Allied Races: Lightforged Draenei
 						["groups"] = {
 							ach(12066),	-- You Are Now Prepared!
 							faction(2165), -- Army of the Light
@@ -46,7 +62,15 @@ _.Achievements =
 						["description"] = "Requires Battle for Azeroth to be purchased.",
 						["lvl"] = 110,
 					}),
-					ach(12244, {	-- Allied Races: Nightborne
+					ach(13092, {	-- Allied Races: Mag'har Orc
+						["groups"] = {
+							ach(12509),	-- Ready for War
+							faction(2157),	-- The Honorbound
+						},
+						["races"] = HORDE_ONLY,
+						["description"] = "Requires release of Battle for Azeroth, unlock requirements may still change.",
+					}),
+					ach(12446, {	-- Allied Races: Nightborne
 						["groups"] = {
 							ach(11340),	-- Insurrection
 							faction(1859), -- The Nightfallen
@@ -58,7 +82,7 @@ _.Achievements =
 						["description"] = "Requires Battle for Azeroth to be purchased.",
 						["lvl"] = 110,
 					}),
-					ach(12242, {	-- Allied Races: Void Elf
+					ach(12447, {	-- Allied Races: Void Elf
 						["groups"] = {
 							ach(12066),	-- You Are Now Prepared!
 							faction(2170), -- Argussian Reach
@@ -73,61 +97,11 @@ _.Achievements =
 					un(3, ach(9016, {	-- Breaker of the Black Harvest
 						un(3,title(256)),	-- of the Black Harvest
 					})),
-					ach(12415, {	-- Heritage of Highmountain
-						["groups"] = {
-							i(156668),	-- Highmountain Headdress
-							i(156669),	-- Highmountain Shoulderguards
-							i(156670),	-- Highmountain Harness
-							i(156671),	-- Highmountain Gloves
-							i(156672),	-- Highmountain Girdle
-							i(156673),	-- Highmountain Leggings
-							i(156674),	-- Highmountain Boots
-							i(156684),	-- Highmountain Bracers
-						},
-						["races"] = {28},
-					}),
-					ach(12414, {	-- Heritage of the Lightforged
-						["groups"] = {
-							i(156699),	-- Lightforged Gorget
-							i(156700),	-- Lightforged Pauldrons
-							i(156701),	-- Lightforged Chestguard
-							i(156702),	-- Lightforged Gloves
-							i(156703),	-- Lightforged Girdle
-							i(156704),	-- Lightforged Legplates
-							i(156705),	-- Lightforged Hoofguards
-							i(156706),	-- Lightforged Bracers
-						},
-						["races"] = {30},
-					}),
-					ach(12413, {	-- Heritage of the Nightborne
-						["groups"] = {
-							i(156675),	-- Shal'dorei Crown
-							i(156676),	-- Shal'dorei Mantle
-							i(156677),	-- Shal'dorei Finery
-							i(156678),	-- Shal'dorei Gloves
-							i(156679),	-- Shal'dorei Belt
-							i(156680),	-- Shal'dorei Leggings
-							i(156681),	-- Shal'dorei Slippers
-							i(156685),	-- Shal'dorei Bracers
-						},
-						["races"] = {27},
-					}),
-					ach(12291, {	-- Heritage of the Void
-						["groups"] = {
-							i(156690),	-- Ren'dorei Helm
-							i(156691),	-- Ren'dorei Pauldrons
-							i(156692),	-- Ren'dorei Mantle
-							i(156693),	-- Ren'dorei Gloves
-							i(156694),	-- Ren'dorei Belt
-							i(156695),	-- Ren'dorei Leggings
-							i(156696),	-- Ren'dorei Boots
-							i(156697),	-- Ren'dorei Bracers
-						},
-						["races"] = {29},
-					}),
+					ach(4496),	-- It's Over Nine Thousand!
 					ach(10334, {	-- Predator
 						title(59),	-- Predator
 					}),
+					ach(13078),	-- Realm First! Battle for Azeroth Keystone Master
 					un(12, ach(3259, {	-- Realm First! Celestial Defender
 						un(39, title(125)),	-- the Celestial Defender
 					})),

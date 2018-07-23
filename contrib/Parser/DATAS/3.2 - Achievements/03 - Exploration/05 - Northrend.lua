@@ -1,6 +1,14 @@
 --------------------------------------------------
---   G R O U P    F I N D E R    M O D U L E    --
+--   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
+
+--[[
+8.0 Pre-Patch alignment complete
+To do: 
+1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
+2) Add [Reward] tag
+3) Source to local files if applicable
+]]--
 
 _.Achievements = 
 {
@@ -22,6 +30,51 @@ _.Achievements =
 						crit(11),	-- Valiance Keep
 						crit(12),	-- The Geyser Fields
 						crit(13),	-- The Dens of the Dying
+					}),
+					ach(1457, {	-- Explore Crystalsong Forest
+						crit(1),	-- The Azure Front
+						crit(2),	-- The Decrepit Flow
+						crit(3),	-- Sunreaver's Command
+						crit(4),	-- Forlorn Woods
+						crit(5),	-- Windrunner's Overlook
+						crit(6),	-- The Great Tree
+						crit(7),	-- Violet Stand
+						crit(8),	-- The Unbound Thicket
+					}),
+					ach(1265, {	-- Explore Dragonblight
+						crit(1),	-- Galakrond's Rest
+						crit(2),	-- Lake Indu'le
+						crit(3),	-- Obsidian Dragonshrine
+						crit(4),	-- New Hearthglen
+						crit(5),	-- Naxxramas
+						crit(6),	-- Light's Trust
+						crit(7),	-- Icemist Village
+						crit(8),	-- Emerald Dragonshrine
+						crit(9),	-- Coldwind Heights
+						crit(10),	-- Angrathar the Wrath Gate
+						crit(11),	-- Agmar's Hammer
+						crit(12),	-- Wyrmrest Temple
+						crit(13),	-- Westwind Refugee Camp
+						crit(14),	-- Venomspite
+						crit(15),	-- The Forgotten Shore
+						crit(16),	-- The Crystal Vice
+						crit(17),	-- Scarlet Point
+					}),
+					ach(1266, {	-- Explore Grizzly Hills
+						crit(1),	-- Conquest Hold
+						crit(2),	-- Drak'Tharon Keep
+						crit(3),	-- Drakil'jin Ruins
+						crit(4),	-- Dun Argol
+						crit(5),	-- Granite Springs
+						crit(6),	-- Grizzlemaw
+						crit(7),	-- Rage Fang Shrine
+						crit(8),	-- Thor Modan
+						crit(9),	-- Venture Bay
+						crit(10),	-- Voldrune
+						crit(11),	-- Amberpine Lodge
+						crit(12),	-- Blue Sky Logging Grounds
+						crit(13),	-- Camp Oneqwah
+						crit(14),	-- Westfall Brigade Encampment
 					}),
 					ach(1263, {	-- Explore Howling Fjord
 						crit(1),	-- Kamagua
@@ -46,56 +99,22 @@ _.Achievements =
 						crit(20),	-- Baelgun's Excavation Site
 						crit(21),	-- Baleheim
 					}),
-					ach(1265, {	-- Explore Dragonblight
-						crit(1),	-- 	Galakrond's Rest
-						crit(2),	-- 	Lake Indu'le
-						crit(3),	-- Obsidian Dragonshrine
-						crit(4),	-- 	New Hearthglen
-						crit(5),	-- 	Naxxramas
-						crit(6),	-- 	Light's Trust
-						crit(7),	-- 	Icemist Village
-						crit(8),	-- Emerald Dragonshrine
-						crit(9),	-- Coldwind Heights
-						crit(10),	-- Angrathar the Wrath Gate
-						crit(11),	-- Agmar's Hammer
-						crit(12),	-- Wyrmrest Temple
-						crit(13),	-- Westwind Refugee Camp
-						crit(14),	-- 	Venomspite
-						crit(15),	-- The Forgotten Shore
-						crit(16),	-- The Crystal Vice
-						crit(17),	-- Scarlet Point
-					}),
-					ach(1266, {	-- Explore Grizzly Hills
-						crit(1),	-- Conquest Hold
-						crit(2),	-- Drak'Tharon Keep
-						crit(3),	-- Drakil'jin Ruins
-						crit(4),	-- Dun Argol
-						crit(5),	-- Granite Springs
-						crit(6),	-- Grizzlemaw
-						crit(7),	-- Rage Fang Shrine
-						crit(8),	-- Thor Modan
-						crit(9),	-- Venture Bay
-						crit(10),	-- Voldrune
-						crit(11),	-- Amberpine Lodge
-						crit(12),	-- Blue Sky Logging Grounds
-						crit(13),	-- Camp Oneqwah
-						crit(14),	-- Westfall Brigade Encampment
-					}),
-					ach(1267, {	-- Explore Zul'Drak
-						crit(1),	-- Gundrak
-						crit(2),	-- Drak'Sotra Fields
-						crit(3),	-- Ampitheater of Anguish
-						crit(4),	-- Altar of Sseratus
-						crit(5),	-- Altar of Rhunok
-						crit(6),	-- Altar of Quetz'lun
-						crit(7),	-- Altar of Mam'toth
-						crit(8),	-- Altar of Har'koa
-						crit(9),	-- Zim'Torga
-						crit(10),	-- Zeramas
-						crit(11),	-- Voltarus
-						crit(12),	-- Thrym's End
-						crit(13),	-- Light's Breach
-						crit(14),	-- Kolramas
+					ach(1270, {	-- Explore Icecrown
+						crit(1),	-- The Bombardment
+						crit(2),	-- Icecrown Citadel
+						crit(3),	-- Onslaught Harbor
+						crit(4),	-- The Broken Front
+						crit(5),	-- The Fleshwerks
+						crit(6),	-- Aldur'thar: The Desolation Gate
+						crit(7),	-- Sindragosa's Fall
+						crit(8),	-- Valhalas
+						crit(9),	-- Valley of Echoes
+						crit(10),	-- Ymirheim
+						crit(11),	-- The Conflagration
+						crit(12),	-- Corp'rethar: The Horror Gate
+						crit(13),	-- Jotunheim
+						crit(14),	-- Scourgeholme
+						crit(15),	-- The Shadow Vault
 					}),
 					ach(1268, {	-- Explore Sholazar Basin
 						crit(1),	-- River's Heart
@@ -110,16 +129,6 @@ _.Achievements =
 						crit(10),	-- The Glimmering Pillar
 						crit(11),	-- Kartak's Hold
 						crit(12),	-- The Stormwright's Shelf
-					}),
-					ach(1457, {	-- Explore Crystalsong Forest
-						crit(1),	-- The Azure Front
-						crit(2),	-- The Decrepit Flow
-						crit(3),	-- Sunreaver's Command
-						crit(4),	-- Forlorn Woods
-						crit(5),	-- Windrunner's Overlook
-						crit(6),	-- The Great Tree
-						crit(7),	-- Violet Stand
-						crit(8),	-- The Unbound Thicket
 					}),
 					ach(1269, {	-- Explore Storm Peaks
 						crit(1),	-- Brunnhildar Village
@@ -139,23 +148,23 @@ _.Achievements =
 						crit(15),	-- Frosthold
 						crit(16),	-- Nidavelir
 					}),
-					ach(1270, {	-- Explore Icecrown
-						crit(1),	-- The Bombardment
-						crit(2),	-- Icecrown Citadel
-						crit(3),	-- Onslaught Harbor
-						crit(4),	-- The Broken Front
-						crit(5),	-- The Fleshwerks
-						crit(6),	-- Aldur'thar: The Desolation Gate
-						crit(7),	-- Sindragosa's Fall
-						crit(8),	-- Valhalas
-						crit(9),	-- Valley of Echoes
-						crit(10),	-- Ymirheim
-						crit(11),	-- The Conflagration
-						crit(12),	-- Corp'rethar: The Horror Gate
-						crit(13),	-- Jotunheim
-						crit(14),	-- Scourgeholme
-						crit(15),	-- The Shadow Vault
+					ach(1267, {	-- Explore Zul'Drak
+						crit(1),	-- Gundrak
+						crit(2),	-- Drak'Sotra Fields
+						crit(3),	-- Ampitheater of Anguish
+						crit(4),	-- Altar of Sseratus
+						crit(5),	-- Altar of Rhunok
+						crit(6),	-- Altar of Quetz'lun
+						crit(7),	-- Altar of Mam'toth
+						crit(8),	-- Altar of Har'koa
+						crit(9),	-- Zim'Torga
+						crit(10),	-- Zeramas
+						crit(11),	-- Voltarus
+						crit(12),	-- Thrym's End
+						crit(13),	-- Light's Breach
+						crit(14),	-- Kolramas
 					}),
+					ach(1254),	-- Friend or Fowl?
 					ach(2257, {	-- Frostbitten
 						crit(1),	-- Loque'nahak (Sholazar Basin)
 						crit(2),	-- High Thane Jorfus (Icecrown)
@@ -193,6 +202,20 @@ _.Achievements =
 						crit(6),	-- The Schools of Arcane Magic - Illusion
 						crit(7),	-- The Schools of Arcane Magic - Necromancy
 						crit(8),	-- The Schools of Arcane Magic - Transmutation
+					}),
+					ach(2557, {	-- To All The Squirrels Who Shared My Life
+						crit(1),	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
+						crit(2),	-- Borean Marmot (Borean Tundra)
+						crit(3),	-- Fjord Penguin (Howling Fjord)
+						crit(4),	-- Fjord Turkey (Howling Fjord)
+						crit(5),	-- Glacier Penguin (Icecrown)
+						crit(6),	-- Grizzly Squirrel (Grizzly Hills, Twilight Highlands)
+						crit(7),	-- Huge Toad (Hillsbrad Foothills, Twilight Highlands, Zul'Drak, Swamp of Sorrows)
+						crit(8),	-- Lava Crab (Searing Gorge, Burning Steppes)
+						crit(9),	-- Mountain Skunk (Stonetalon Mountains, Grizzly Hills, Winterspring, Howling Fjord)
+						crit(10),	-- Scalawag Frog (Howling Fjord)
+						crit(11),	-- Sholazar Tickbird (Sholazar Basin)
+						crit(12),	-- Tundra Penguin (Borean Tundra)
 					}),
 				},
 			}),

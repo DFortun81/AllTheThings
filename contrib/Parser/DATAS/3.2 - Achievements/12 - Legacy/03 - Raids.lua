@@ -8,6 +8,7 @@ _.Achievements =
 		["groups"] = {
 			n(-10044, { -- Raids
 				["groups"] = {
+					un(12, ach(2919)),	-- A Quick Shave (10 player)
 					un(12, ach(4080, {	-- A Tribute to Dedicated Insanity
 						un(39, title(136)),	-- the Argent Defender
 						un(12, ach(3810)),	-- A Tribute to Insanity (10 player)
