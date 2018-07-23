@@ -87,7 +87,7 @@ _.ClassHalls =
 				}),		
 			}),
 		},
-		["mapID"] = 23,
+		["mapID"] = 24, -- Light's Hope Chapel: Sanctum of Light
 		["lvl"] = 98,
 	}),
 };

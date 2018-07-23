@@ -83,7 +83,8 @@ _.ClassHalls =
 				}),
 			}),
 		},
-		["mapID"] = 646,
+		["mapID"] = 648,
+		["maps"] = { 647 }, -- Upper Level
 		["lvl"] = 98,
 	}),
 };

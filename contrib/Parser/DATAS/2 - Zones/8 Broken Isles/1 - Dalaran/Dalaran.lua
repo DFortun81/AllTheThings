@@ -4763,6 +4763,25 @@ _.Zones =
 						}),
 					}),
 					n(93539, { 	-- Hobart Grapplehammer <Engineering Supplies>
+						{ 	-- Titanstrike Hunter Hidden Appearance [Lucetia: Putting this here because we want it to stand out]
+							["ignoreSource"] = true,
+							["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_bow_2h_crossbow_artifactwindrunner_d_05.mdx",
+							["modelScale"] = 0.95,
+							["modelRotation"] = 45,
+							["classes"] = { 3 },
+							["artifactID"] = 918,
+						},
+						i(144328, { -- Boon of the Builder
+							i(136630),	-- "Twirling Bottom" Repeater
+							i(136632),	-- Chaos Blaster
+							i(132509),	-- Deployable Bullet Dispenser
+							i(136629),	-- Felgibber Shotgun
+							i(144337),	-- Schematic: Chain Skullblasters
+							i(144338),	-- Schematic: Heavy Skullblasters
+							i(144336),	-- Schematic: Rugged Skullblasters
+							i(144335),	-- Schematic: Tailored Skullblasters
+							i(136631),	-- Surface-to-Infernal Rocket Launcher
+						}),
 						i(136782),	-- Fireworks Instruction Manual
 						i(136629), -- Felgibber Shotgun
 						i(136630), -- "Twirling Bottom" Repeater
@@ -4780,7 +4799,6 @@ _.Zones =
 						i(133674, { -- Schematic: Ironsight Cranial Cannon
 							i(132507),
 						}),
-						--i(139555), -- Designs of the Grand Architect - Hunter Artifact Appearance
 					}),
 					n(93530, {	-- Ildine Sorrowspear <Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil

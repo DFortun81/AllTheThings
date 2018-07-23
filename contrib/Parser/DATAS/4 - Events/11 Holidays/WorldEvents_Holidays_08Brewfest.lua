@@ -119,7 +119,7 @@ _.WorldEvents =
 							})),
 						},
 						["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
-						["u"] = 24, -- Brewfest
+						["u"] = 2, -- Brewfest
 					}),
 					ach(1293, { -- Blue Brewfest Stein
 						["groups"] = {
@@ -132,7 +132,7 @@ _.WorldEvents =
 							})),
 						},
 						["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
-						["u"] = 24, -- Brewfest
+						["u"] = 2, -- Brewfest
 					}),
 					ach(4782, { -- Green Brewfest Stein
 						["groups"] = {
@@ -145,7 +145,7 @@ _.WorldEvents =
 							})),
 						},
 						["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
-						["u"] = 24, -- Brewfest
+						["u"] = 2, -- Brewfest
 					}),
 				}),
 				n(-139, { -- Bosses

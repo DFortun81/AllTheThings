@@ -301,15 +301,16 @@ _.Zones =
 					["description"] = "Light's Heart is the sentience core of the naaru prime Xe'ra sent as a last resort by High Exarch Turalyon who battles on Argus, to be handed to Prophet Velen. It fell from the Felstorm along the coast of Suramar, in the Broken Isles.\n\nThe Order of the Silver Hand witnessed the event and informed Archmage Khadgar, who then tasked order leaders with recovering it before the Burning Legion did. It has since been kept safe in a class order hall.\n\nUnlocked by the Tear of Elune, Xe'ra communicates through it with the order leader in order to provide insight into the history of Illidan Stormrage. She revealed that Light's Heart was to serve as the vessel for Illidan Stormrage's rebirth. After Illidan's soul was put into a prism to keep it safe, it was brought to Light's Heart where the prism was \"seemingly consumed\". Light's Heart, with Illidan's soul inside, is then brought to Khadgar with instructions to call forth the vessel's power when Gul'dan attempts to summon Sargeras, thus releasing Illidan's soul into his body before Sargeras can possess his empty shell.",
 					["maps"] = {
 						-- Order Halls
-						646,	-- Death Knight
+						648,	-- Death Knight (Lower level)
+						647,	-- Death Knight (Upper Level)
 						719,	-- Demon Hunter
 						747,	-- Druid
 						739,	-- Hunter
 						734,	-- Mage
 						709,	-- Monk
-						23,		-- Paladin (Eastern Plaguelands - Should probably fix this in BFA)
+						24,		-- Paladin
 						702,	-- Priest
-						625,	-- Rogue (Dalaran - Should probably fix this in BFA)
+						626,	-- Rogue
 						726,	-- Shaman
 						717,	-- Warlock
 						695,	-- Warrior
