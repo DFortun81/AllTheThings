@@ -253,9 +253,58 @@ _.ClassHalls =
 					
 				}),
 			}),
+			m(715, { -- Emerald Dreamway
+				["groups"] = {
+					i(139552, { -- Feather of the Moonspirit  [Lucetia Note: Leave as is for the moment.  My goal is to convert the Quest #XXXX to the zone names without using maps]
+						["groups"] = {
+							q(44326, { -- Daily Dreamway Event Roll
+								["groups"] = {
+									q(44327, { -- Owlcat Stone Activate [Feralas]
+										["groups"] = {
+											q(44331, { -- Owlcat Stone Touched [Feralas]
+												["description"] = "|CFFFF0000This quest indicates if you have activated the Feralas Owlcat Stone.|r",
+												["sourceQuests"] = { 44327 }, -- Owlcat Stone Touched [Feralas]
+											}),
+										},
+										["isBreadcrumb"] = true,
+										["description"] = "|CFFFF0000If this quest has a checkmark next to it, then that means the stone is active.|r",
+									}),
+									q(44328, { -- Owlcat Stone Activate [Hinterlands]
+										["groups"] = {
+											q(44332, { -- Owlcat Stone Touched [Hinterlands]
+												["description"] = "|CFFFF0000This quest indicates if you have activated the Hinterlands Owlcat Stone.|r",
+												["sourceQuests"] = { 44328 }, -- Owlcat Stone Touched [Hinterlands]
+											}),
+										},
+										["isBreadcrumb"] = true,
+										["description"] = "|CFFFF0000If this quest has a checkmark next to it, then that means the stone is active.|r",
+									}),
+									q(44329, { -- Owlcat Stone Activate [Duskwood]
+										["groups"] = {
+											q(44330, { -- Owlcat Stone Touched [Duskwood]
+												["description"] = "|CFFFF0000This quest indicates if you have activated the Duskwood Owlcat Stone.|r",
+												["sourceQuests"] = { 44329 }, -- Owlcat Stone Touched [Duskwood]
+											}),
+										},
+										["isBreadcrumb"] = true,
+										["description"] = "|CFFFF0000If this quest has a checkmark next to it, then that means the stone is active.|r",
+									}),
+									{ -- Fangs of Ashamane
+										["ignoreSource"] = true,
+										["classes"] = { 11 }, -- Druid
+										["artifactID"] = 830, -- Hidden Appearance Base
+									},
+								},
+								["description"] = "|CFFFF0000If this quest has a checkmark next to it, then check below which stone is active.|r",
+							}),
+						},
+						["description"] = "|CFFFF0000Turn on \"Show Incomplete Quests\" to see which stones you are still missing.  Each quest has a descripton added to it on it's location.|r"
+					}),
+				},
+				["icon"] = "Interface\\Icons\\spell_arcane_portalshattrath", -- Dream Portal Icon
+			}),
 		},
 		["lvl"] = 98,
-		["mapID"] = 747,
-		["maps"] = {715}	-- The Emerald Dreamway
+		["mapID"] = 747, -- Dreamgrove Map
 	}),
 };

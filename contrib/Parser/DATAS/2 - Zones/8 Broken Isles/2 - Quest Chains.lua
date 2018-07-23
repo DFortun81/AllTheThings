@@ -304,7 +304,6 @@ _.Zones =
 						646,	-- Death Knight
 						719,	-- Demon Hunter
 						747,	-- Druid
-						715,	-- Druid (Dreamway)
 						739,	-- Hunter
 						734,	-- Mage
 						709,	-- Monk
