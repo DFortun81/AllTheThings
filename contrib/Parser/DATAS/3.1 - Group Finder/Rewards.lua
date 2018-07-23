@@ -33,7 +33,7 @@ _.GroupFinder =
 			i(51992),	-- Tumultuous Ring*
 			i(51964),	-- Vigorous Belt*
 			i(51962),	-- Vigorous Bracers*
-			i(51960),	-- Vigorous Gloves
+			un(2, i(51960)),	-- Vigorous Gloves [Probably unobtainable - maybe old leather set that got changed into mail set]
 			i(51965),	-- Vigorous Handguards
 			i(51998),	-- Vigorous Spaulders
 			i(51966),	-- Vigorous Spaulders

@@ -19,10 +19,129 @@ _.Zones =
 				n(-17, {	-- Quests
 					ach(1190, {	-- Mysteries of the Marsh
 						crit(1, {	-- Draenei Diplomacy (A) / Swamprat Post (H)
+							-- Alliance quests start
+							qa(9786, {	-- The Boha'mu Ruins
+								["qg"] = 18003,	-- Anchorite Ahuurn
+							}),
+							qa(9787, {	-- Idols of the Feralfen
+								["qg"] = 18003,	-- Anchorite Ahuurn
+								["sourceQuests"] = { 9786 },	-- The Boha'mu Ruins
+							}),
+							qa(9801, {	-- Gathering the Reagents
+								["qg"] = 18003,	-- Anchorite Ahuurn
+								["sourceQuests"] = { 9787 },	-- Idols of the Feralfen
+							}),
+							qa(9803, { 	-- Messenger to the Feralfen
+								["g"] = {
+									i(25613), 	-- Feralfen Mystic's Handwraps
+									i(25614), 	-- Feralfen Beastmaster's Hauberk
+									i(25615), 	-- Feralfen Champion's Boots
+									i(31660), 	-- Feralfen Skulker's Belt
+								},
+								["qg"] = 18003,	-- Anchorite Ahuurn
+								["sourceQuests"] = { 9801 },	-- Gathering the Reagents
+							}),
+							-- Horde quests start (needs to be filled in)
 						}),
 						crit(2, {	-- Telredor (A) / Zabra'jin (H)
+							-- Alliance quests start
+							qa(9782, {	-- The Dead Mire
+								["qg"] = 18004,	-- Vindicator Idaar
+							}),
+							qa(9783, {	-- An Unnatural Drought
+								["g"] = {
+									i(25599),	-- Explorer's Bands
+									i(25598),	-- Fen Strider's Bracer
+									i(25597),	-- Vindicator's Cinch
+									i(31659),	-- Researcher's Mantle
+								},
+								["qg"] = 18004,	-- Vindicator Idaar
+								["sourceQuests"] = { 9782 },	-- The Dead Mire
+							}),
+							qa(9901, {	-- Unfinished Business
+								["qg"] = 18295,	-- Prospector Conall
+							}),
+							qa(9896, { 	-- Blacksting's Bane
+								["g"] = {
+									i(31786), 	-- Blacksting Shoulders
+									i(31787), 	-- Stalwart Girdle
+									i(31788), 	-- Blacksting Gloves
+									i(31789), 	-- Marshfang Boots
+								},
+								["qg"] = 18295,	-- Prospector Conall
+								["sourceQuests"] = { 9901 },	-- Unfinished Business
+							}),
+							qa(9777, {	-- Fulgor Spores
+								["qg"] = 18007,	-- Ruam
+							}),
+							qa(9781, {	-- Too Many Mouths to Feed
+								["qg"] = 18005,	-- Haalrun
+							}),
+							qa(9790, {	-- Diaphanous Wings
+								["qg"] = 18005,	-- Haalrun
+								["sourceQuests"] = { 9781 },	-- Too Many Mouths to Feed
+							}),
+							qa(9791, {	-- Menacing Marshfangs
+								["qg"] = 18006,	-- Noraani
+							}),
+							qa(9780, {	-- Umbrafen Eel Filets
+								["qg"] = 18006,	-- Noraani
+								["sourceQuests"] = { 9791 },	-- Menacing Marshfangs
+							}),
+							-- Horde quests start (needs to be filled in)
 						}),
 						crit(3, {	-- Orebor Harborage (A) / The Defense of Zabra'jin (H)
+							-- Alliance quests start
+							qa(9835, {	-- Ango'rosh Encroachment
+								["qg"] = 18008,	-- Ikuti
+							}),
+							qa(9839, { 	-- Overlord Gorefist
+								["g"] = {
+									i(25619),	-- Glowing Crystal Insignia
+									i(25618),	-- Telaar Courier's Cloak
+									i(31770),	-- Marsh Bracers
+								},
+								["qg"] = 18008,	-- Ikuti
+								["sourceQuests"] = { 9835 },	-- Ango'rosh Encroachment
+							}),
+							qa(9848, { 	-- Secrets of the Daggerfen
+								["g"] = {
+									i(25616),	-- Tim's Trusty Helmet
+								},
+								["qg"] = 18019,	-- Timothy Daniels
+							}),
+							o(183284, {	-- Wanted Posted
+								qa(10116),	-- WANTED: Chieftain Mummaki
+							}),
+							qa(9834, {	-- Natural Armor
+								["qg"] = 18010,	-- Maktu
+								["sourceQuests"] = { 10116 },	-- WANTED: Chieftain Mummaki
+							}),
+							qa(9830, {	-- Stinger Venom
+								["qg"] = 18009,	-- Puluu
+								["sourceQuests"] = { 10116 },	-- WANTED: Chieftain Mummaki
+							}),
+							qa(9833, {	-- Lines of Communication
+								["g"] = {
+									i( 27753),	-- Ensorcelled Marshfang Blade
+									i( 27754),	-- Keen Marshfang Slicer
+									i( 27756),	-- Marshfang Blade Axe
+									i(157547),	-- Keen Marshfang Shanker
+								},
+								["qg"] = 18009,	-- Puluu
+								["sourceQuests"] = { 10116 },	-- WANTED: Chieftain Mummaki
+							}),
+							qa(9902, {	-- The Terror of Marshlight Lake
+								["g"] = {
+									i(25924),	-- Swamprunner's Boots
+									i(25923),	-- Fierce Mantle
+									i(25922),	-- Fearless Girdle
+									i(25925),	-- Terrorcloth Mantle
+								},
+								["qg"] = 18009,	-- Puluu
+								["sourceQuests"] = { 10116 },	-- WANTED: Chieftain Mummaki
+							}),
+							-- Horde quests start (needs to be filled in)
 						}),
 						crit(4, {	-- Don't Eat THOSE Mushrooms!
 							q(9701, {	-- Observing the Sporelings
@@ -173,9 +292,31 @@ _.Zones =
 								["qg"] = 17856,	-- Gzhun'tt
 								["description"] = "Invisible until you reach Friendly with Sporeggar.",	
 							}),
+							q(9729, {	-- Fhwoor Smash!
+								["groups"] = {
+									i(25537),	-- Hewing Axe of the Marsh
+									i(25538),	-- Sporeling Claw
+									i(25536),	-- Sporeggar Smasher
+								},
+								["qg"] = 17877,	-- Fhwoor
+								["description"] = "Invisible until you reach Friendly with Sporeggar.",	
+							}),
 						}),
 					}),
 					n(-168, {	-- Other Quests
+						qa(9792, {	-- A Message to Telaar
+							["qg"] = 18008,	-- Ikuti
+							["sourceQuests"] = { 10116 },	-- WANTED: Chieftain Mummaki
+						}),
+						qa(9794, {	-- No Time for Curiosity
+							["qg"] = 18019,	-- Timothy Daniels
+						}),
+						qa(9793, {	-- The Fate of Tuurem
+							["qg"] = 18004,	-- Vindicator Idaar
+						}),
+						qa(9776, {	-- The Orebor Harborage
+							["qg"] = 18003,	-- Anchorite Ahuurn
+						}),
 						q(9697, {	-- Watcher Leesa'oh
 							["groups"] = {
 							},
@@ -557,67 +698,12 @@ _.Zones =
 		--]]
 							
 							
-							qa( 9792),	-- A Message to Telaar
-							qa( 9783,  { 	-- An Unnatural Drought
-								i(25599),
-								i(25598),
-								i(25597),
-								i(31659),
-							}),
-							qa( 9835),	-- Ango'rosh Encroachment
-							qa( 9896,  { 	-- Blacksting's Bane
-								i(31786),
-								i(31787),
-								i(31788),
-								i(31789),
-							}),
 							qa(10104),	-- Concerns About Tuurem
 							qa(10115),	-- Daggerfen Deviance
-							qa( 9790),	-- Diaphanous Wings
-							qa( 9777),	-- Fulgor Spores
-							qa( 9801),	-- Gathering the Reagents
 							qa(39181),	-- Hero's Call: Zangarmarsh
 							qa(11829),	-- Honor the Flame
-							qa( 9787),	-- Idols of the Feralfen
-							qa(27753,  { 	-- Lines of Communication
-								i(27753),
-								i(27754),
-								i(27756),
-								i(157547),	-- Keen Marshfang Shanker
-							}),
 							qa( 9905),	-- Maktu's Revenge
-							qa( 9791),	-- Menacing Marshfangs
-							qa( 9803,  { 	-- Messenger to the Feralfen
-								i(25613),
-								i(25614),
-								i(25615),
-								i(31660),
-							}),
-							qa( 9834),	-- Natural Armor
-							qa( 9794),	-- No Time for Curiosity
-							qa( 9839,  { 	-- Overlord Gorefist
-								i(25618),
-								i(31770),
-							}),
-							qa( 9848,  { 	-- Secrets of the Daggerfen
-								i(25616),
-							}),
-							qa( 9830),	-- Stinger Venom
 							qa(11531),	-- Strange Engine Part
-							qa( 9786),	-- The Boha'mu Ruins
-							qa( 9782),	-- The Dead Mire
-							qa( 9793),	-- The Fate of Tuurem
-							qa( 9776),	-- The Orebor Harborage
-							qa( 9902,  { 	-- The Terror of Marshlight Lake
-								i(25924),
-								i(25923),
-								i(25922),
-								i(25925),
-							}),
-							qa( 9781),	-- Too Many Mouths to Feed
-							qa( 9780),	-- Umbrafen Eel Filets
-							qa( 9901),	-- Unfinished Business
-							qa(10116),	-- Wanted: Chieftain Mummaki
 							qa(10355),	-- Withered Flesh		
 					
 					
@@ -699,15 +785,6 @@ _.Zones =
 								["qg"] = 17856,	-- Gzhun'tt
 								["sourceQuests"] = { 9726 },	-- Now That We're Friends...
 							})),
-							q(  9729, {	-- Fhwoor Smash!
-								["groups"] = {
-									i(25537),	-- Hewing Axe of the Marsh
-									i(25538),	-- Sporeling Claw
-									i(25536),	-- Sporeggar Smasher
-								},
-								["qg"] = 17877,	-- Fhwoor
-								["description"] = "Invisible until you reach Honored with Sporeggar.",	
-							}),
 						},
 						["collectible"] = false,
 					}),
