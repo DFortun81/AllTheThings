@@ -975,7 +975,15 @@ _.Instances =
 				["isRaid"] = true,
 				["sharedLockout"] = 1,
 				["lvl"] = 85,
-				["mapID"] = 409
+				["mapID"] = 409, --  Wyrmrest Temple [Starting Area]
+				["maps"] = { 
+					412, -- Dragon Soul: Eye of Eternity
+					415, -- Dragon Soul: The Maelstrom
+					410,
+					411,
+					413,
+					414,
+				},
 			}),
 		},					
 		["tierID"] = 4

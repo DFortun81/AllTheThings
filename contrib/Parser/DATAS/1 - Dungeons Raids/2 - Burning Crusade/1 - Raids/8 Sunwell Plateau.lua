@@ -9,36 +9,379 @@ _.Instances =
 			inst(752, { 	-- Sunwell Plateau
 				["groups"] = {
 					n(0, {	-- Zone Drop
-						n(-15, {	-- Recipes
-							i(35218),	-- Pattern: Carapace of Sun and Shadow
-							i(35217),	-- Pattern: Embrace of the Phoenix
-							i(35213),	-- Pattern: Fletcher's Gloves of the Phoenix
-							i(35214),	-- Pattern: Gloves of Immortal Dusk
-							i(35205),	-- Pattern: Hands of Eternal Light
-							i(35216),	-- Pattern: Leather Chestguard of the Sun
-							i(35212),	-- Pattern: Leather Gauntlets of the Sun
-							i(35207),	-- Pattern: Robe of Eternal Light
-							i(35219),	-- Pattern: Sun-Drenched Scale Chestguard
- 							i(35215),	-- Pattern: Sun-Drenched Scale Gloves
-							i(35204),	-- Pattern: Sunfire Handwraps
-							i(35206),	-- Pattern: Sunfire Robe
-							i(35209),	-- Plans: Hard Khorium Battlefists
-							i(35211),	-- Plans: Hard Khorium Battleplate
-							i(35210),	-- Plans: Sunblessed Breastplate
-							i(35208),	-- Plans: Sunblessed Gauntlets
-							i(35186),	-- Schematic: Annihilator Holo-Gogs
-							i(35196),	-- Schematic: Hard Khorium Goggles
-							i(35190),	-- Schematic: Hyper-Magnified Moon Specs
-							i(35187),	-- Schematic: Justicebringer 3000 Specs
-							i(35193),	-- Schematic: Lightning Etched Specs
-							i(35195),	-- Schematic: Mayhem Projection Goggles
-							i(35189),	-- Schematic: Powerheal 9000 Lens
-							i(35192),	-- Schematic: Primal-Attuned Goggles
-							i(35197),	-- Schematic: Quad Deathblow X44 Goggles
-							i(35194),	-- Schematic: Surestrike Goggles v3.0
-							i(35191),	-- Schematic: Wonderheal XT68 Shades
-							i(35273),	-- Study of Advanced Smelting
+						i(35202, {	-- Design: Amulet of Flowing Life
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25592,	-- Doomfire Destroyer
+								25597,	-- Oblivion Mage
+								25591,	-- Painbringer
+								25509,	-- Priestess of Torment
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
 						}),
+						i(35200, {	-- Design: Hard Khorium Band
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25597,	-- Oblivion Mage
+								25509,	-- Priestess of Torment
+								25484,	-- Shadowsword Assassin
+								25837,	-- Shadowsword Commander
+								25508,	-- Shadowsword Guardian
+								25506,	-- Shadowsword Lifeshaper
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35203, {	-- Design: Hard Khorium Choker
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25595,	-- Chaos Gazer
+								25597,	-- Oblivion Mage
+								25837,	-- Shadowsword Commander
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35198, {	-- Design: Loop of Forged Power
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25592,	-- Doomfire Destroyer
+								25597,	-- Oblivion Mage
+								25484,	-- Shadowsword Assassin
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35201, {	-- Design: Pendant of Sunfire
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25599,	-- Cataclysm Hound
+								25595,	-- Chaos Gazer
+								25592,	-- Doomfire Destroyer
+								25597,	-- Oblivion Mage
+								25591,	-- Painbringer
+								25509,	-- Priestess of Torment
+								25484,	-- Shadowsword Assassin
+								25508,	-- Shadowsword Guardian
+								25506,	-- Shadowsword Lifeshaper
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35199, {	-- Design: Ring of Flowing Life
+							["crs"] = {
+								25599,	-- Cataclysm Hound
+								25597,	-- Oblivion Mage
+								25509,	-- Priestess of Torment
+								25837,	-- Shadowsword Commander
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35218, {	-- Pattern: Carapace of Sun and Shadow
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25597,	-- Oblivion Mage
+								25591,	-- Painbringer
+								25509,	-- Priestess of Torment
+								25837,	-- Shadowsword Commander
+								25508,	-- Shadowsword Guardian
+								25506,	-- Shadowsword Lifeshaper
+								25483,	-- Shadowsword Manafiend
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35217, {	-- Pattern: Embrace of the Phoenix
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25599,	-- Cataclysm Hound
+								25592,	-- Doomfire Destroyer
+								25591,	-- Painbringer
+								25483,	-- Shadowsword Manafiend
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35213, {	-- Pattern: Fletcher's Gloves of the Phoenix
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25592,	-- Doomfire Destroyer
+								25597,	-- Oblivion Mage
+								25484,	-- Shadowsword Assassin
+								25837,	-- Shadowsword Commander
+								25483,	-- Shadowsword Manafiend
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35214, {	-- Pattern: Gloves of Immortal Dusk
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25599,	-- Cataclysm Hound
+								25592,	-- Doomfire Destroyer
+								25509,	-- Priestess of Torment
+								25837,	-- Shadowsword Commander
+								25508,	-- Shadowsword Guardian
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35205, {	-- Pattern: Hands of Eternal Light
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25599,	-- Cataclysm Hound
+								25595,	-- Chaos Gazer
+								25592,	-- Doomfire Destroyer
+								25597,	-- Oblivion Mage
+								25509,	-- Priestess of Torment
+								25837,	-- Shadowsword Commander
+								25506,	-- Shadowsword Lifeshaper
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35216, {	-- Pattern: Leather Chestguard of the Sun
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25599,	-- Cataclysm Hound
+								25592,	-- Doomfire Destroyer
+								25597,	-- Oblivion Mage
+								25591,	-- Painbringer
+								25484,	-- Shadowsword Assassin
+								25508,	-- Shadowsword Guardian
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35212, {	-- Pattern: Leather Gauntlets of the Sun
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25597,	-- Oblivion Mage
+								25509,	-- Priestess of Torment
+								25508,	-- Shadowsword Guardian
+								25506,	-- Shadowsword Lifeshaper
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35207, {	-- Pattern: Robe of Eternal Light
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25599,	-- Cataclysm Hound
+								25592,	-- Doomfire Destroyer
+								25597,	-- Oblivion Mage
+								25591,	-- Painbringer
+								25837,	-- Shadowsword Commander
+								25508,	-- Shadowsword Guardian
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35219, {	-- Pattern: Sun-Drenched Scalee Chestguard
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25592,	-- Doomfire Destroyer
+								25597,	-- Oblivion Mage
+								25509,	-- Priestess of Torment
+								25837,	-- Shadowsword Commander
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35215, {	-- Pattern: Sun-Drenched Scale Gloves
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25599,	-- Cataclysm Hound
+								25597,	-- Oblivion Mage
+								25591,	-- Painbringer
+								25484,	-- Shadowsword Assassin
+								25837,	-- Shadowsword Commander
+								25508,	-- Shadowsword Guardian
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35204, {	-- Pattern: Sunfire Handwraps
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25599,	-- Cataclysm Hound
+								25597,	-- Oblivion Mage
+								25591,	-- Painbringer
+								25509,	-- Priestess of Torment
+								25484,	-- Shadowsword Assassin
+								25837,	-- Shadowsword Commander
+								25506,	-- Shadowsword Lifeshaper
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35206, {	-- Pattern: Sunfire Robe
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25599,	-- Cataclysm Hound
+								25597,	-- Oblivion Mage
+								25591,	-- Painbringer
+								25484,	-- Shadowsword Assassin
+								25508,	-- Shadowsword Guardian
+								25506,	-- Shadowsword Lifeshaper
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35209, {	-- Pattern: Hard Khorium Battlefists
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25592,	-- Doomfire Destroyer
+								25597,	-- Oblivion Mage
+								25591,	-- Painbringer
+								25509,	-- Priestess of Torment
+								25837,	-- Shadowsword Commander
+								25508,	-- Shadowsword Guardian
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35211),	-- Plans: Hard Khorium Battleplate
+						i(35210),	-- Plans: Sunblessed Breastplate
+						i(35208),	-- Plans: Sunblessed Gauntlets
+						i(35186),	-- Schematic: Annihilator Holo-Gogs
+						i(35196),	-- Schematic: Hard Khorium Goggles
+						i(35190),	-- Schematic: Hyper-Magnified Moon Specs
+						i(35187),	-- Schematic: Justicebringer 3000 Specs
+						i(35193),	-- Schematic: Lightning Etched Specs
+						i(35195),	-- Schematic: Mayhem Projection Goggles
+						i(35189),	-- Schematic: Powerheal 9000 Lens
+						i(35192),	-- Schematic: Primal-Attuned Goggles
+						i(35197),	-- Schematic: Quad Deathblow X44 Goggles
+						i(35194),	-- Schematic: Surestrike Goggles v3.0
+						i(35191),	-- Schematic: Wonderheal XT68 Shades
+						i(35273),	-- Study of Advanced Smelting
 						i(34350, {	-- Gauntlets of the Ancient Shadowmoon
 							n(25977, {	-- Yrma
 								["groups"] = {
