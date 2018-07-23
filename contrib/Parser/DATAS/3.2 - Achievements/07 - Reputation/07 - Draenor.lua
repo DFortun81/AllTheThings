@@ -52,14 +52,6 @@ _.Achievements =
 						faction(1850), -- The Saberstalkers
 						faction(1848), -- Vol'jin's Headhunters
 					})),
-					h(ach(9473, {	-- Vol'jin's Spear
-						h(title(285)),	-- ,Spear of Vol'jin
-						faction(1681), -- Vol'jin's Spear
-					})),
-					a(ach(9474, {	-- Wrynn's Vanguard
-						a(title(286)),	-- ,Sword of Wrynn
-						faction(1682), -- Wyrnn's Vanguard
-					})),
 				},
 			}),
 		},

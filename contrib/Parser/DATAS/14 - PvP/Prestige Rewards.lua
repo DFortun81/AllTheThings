@@ -40,7 +40,7 @@ _.PVP =
 			title(323), -- %s, the Unrelenting
 		}),
 		ach(12908, { -- Honor Level 90
-			i(134032), -- Elite Pennant
+			i(134034), -- Esteemed Pennant
 		}),
 		ach(12909, { -- Honor Level 100
 			title(354), -- %s the Unstoppable Force

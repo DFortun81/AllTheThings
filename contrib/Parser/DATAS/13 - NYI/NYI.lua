@@ -3,6 +3,10 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	un(1, i(143752)),	-- Sound Test Mount
+	un(1, i(44557)),	-- Swift Ebonweave Carpet (NOT IN GAME)
+	un(1, i(44556)),	-- Swift Spellfire Carpet (NOT IN GAME)
+	un(1, i(44555)),	-- Swift Mooncloth Carpet (NOT IN GAME)
 	un(1, i(20703)),	-- Cenarion Reservist's Leggings (Leather)
 	un(1, i(22230)),	-- Frightmaw Hide (Cloak)
 	un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
