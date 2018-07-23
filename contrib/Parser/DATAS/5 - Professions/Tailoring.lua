@@ -878,7 +878,7 @@ profession(197, { -- Tailoring
 		i(126988),	-- Silkweave Slippers
 	}),
 	gb(128, {	-- Tailoring Emporium (Level 3)
-		["maps"] = {579, 582, 723, 729, 20, 590, 720, 721},	-- Both Garrisons
+		["maps"] = {582, 590},	-- Both Garrisons
 		["groups"] = {
 			na(77382, {	-- Christopher Macdonald <Tailor>
 				i(115357, {	-- Draenor Tailoring

@@ -1816,7 +1816,7 @@ _.WorldEvents =
 							["description"] = "|cFFFFD700Arachnis|r is only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought for |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in the Garrison. (This rare is available year round.)",							
 						}),
 					},
-					["maps"] = { 579, 582, 723, 729, 208, 20, 590, 720, 721, 20, 745 }, -- Lunarfall [971-991]; Frostwall [976-990]
+					["maps"] = {582, 590},	-- Both Garrisons
 				}),
 				n(-2, { -- Vendors
 					["groups"] = {
