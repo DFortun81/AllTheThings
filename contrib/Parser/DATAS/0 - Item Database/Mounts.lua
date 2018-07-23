@@ -101,3 +101,5 @@ i(156564, 259395);	-- Shu-zen, the Divine Sentinel
 i(137614, 213350);	-- Biting Frostshard Core
 i(163981, 280729);  -- Frenzied Feltalon
 i(163982, 280730);	-- Pureheart Courser
+i(163127, 274610);	-- Teldrassil Hippogryph
+i(163128, 272472);	-- Undercity Plaguebat

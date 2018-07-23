@@ -352,6 +352,7 @@ _.Mounts =
 		["mountID"] = 229417,	-- Slayer's Felbroken Shrieker
 		["classes"] = {12},
 		},
+		i(163127), -- Smoldering Reeins of the Teldrassil Hippogryph
 		i(137578),				-- Snowfeather Hunter
 		{
 		["mountID"] = 69820,	-- Sunwalker Kodo
@@ -379,6 +380,7 @@ _.Mounts =
 		i(32861),				-- Veridian Netherwing Drake
 		i(32862),				-- Violet Netherwing Drake
 		i(137580),				-- Viridian Sharptalon
+		i(163128), 				-- War-Torn Reins of the Undercity Plaguebat
 		{
 		["mountID"] = 13819,	-- Warhorse
 		["classes"] = {2},
