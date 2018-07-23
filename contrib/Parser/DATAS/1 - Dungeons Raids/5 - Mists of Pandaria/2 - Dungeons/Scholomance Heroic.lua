@@ -9,9 +9,9 @@ _.Instances =
 			inst(246, { 	-- Scholomance
 				["groups"] = {
 					d(2, {		-- Heroic
-						
 						["lvl"] = 90,
 						["groups"] = {
+							ach(6396),	-- Sanguinarian
 							n(-17, {	-- Quests 			
 								q(31448, {	-- An End to the Suffering
 									["groups"] = {
@@ -28,8 +28,6 @@ _.Instances =
 									["qg"] = 64563,	-- Talking Skull
 								}),
 								q(31442, {	-- The Four Tomes
-									["groups"] = {
-									},
 									["qg"] = 64563,	-- Talking Skull
 								}),
 							}),
@@ -49,6 +47,7 @@ _.Instances =
 								}),
 							})),
 							cr(59184, e(663, { 	-- Jandice Barov
+								ach(6531),	-- Attention to Detail
 								i(144207),	-- Metanoia Shield
 								i(144029),	-- Barovian Ritual Hood
 								i(144208),	-- Phantasmal Drape
@@ -63,6 +62,7 @@ _.Instances =
 								}),
 							})),
 							cr(59153, e(665, { 	-- Rattlegore
+								ach(6394),	-- Rattle No More
 								i(144203),	-- Goresoaked Headreaper
 								i(144205),	-- Necromantic Wand
 								i(144015),	-- Vigorsteel Spaulders
@@ -97,6 +97,9 @@ _.Instances =
 								}),
 							})),
 							cr(59080, e(684, { 	-- Darkmaster Gandling
+								ach(6762),	-- Heroic: Scholomance
+								ach(6821),	-- School's Out Forever
+								ach(645),	-- Scholomance
 								i(144211),	-- Headmaster's Will
 								i(144016),	-- Shoulderguards of Painful Lessons
 								i(144212),	-- Gloves of Explosive Pain
@@ -116,7 +119,7 @@ _.Instances =
 							})),
 						}}),
 				},
-				["mapID"] = 476
+				["maps"] = { 476, 477 }
 			}),
 		},					
 		["tierID"] = 5

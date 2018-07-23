@@ -55,6 +55,7 @@ _.Instances =
 								}),
 							})),
 							cr(56877, e(649, {	-- Raigonn
+								ach(10010),	-- Gate of the Setting Sun
 								i(144101),	-- Carapace Breaker
 								i(144218),	-- Klatith, Fangs of the Swarm
 								i(144140),	-- Impervious Carapace
@@ -80,7 +81,9 @@ _.Instances =
 					d( 2, {	-- Heroic
 						["lvl"] = 90,
 						["groups"] = {
+							ach(6476),	-- Conscriptinator
 							cr(56906, e(655, {	-- Saboteur Kip'tilak
+								ach(6479),	-- Bomberman
 								i(144018),	-- Fallout-Filtering Hood
 								i(144102),	-- Pendant of Precise Timing
 								i(144100),	-- Saboteur's Stablizing Bracers
@@ -119,6 +122,8 @@ _.Instances =
 								}),
 							})),
 							cr(56877, e(649, {	-- Raigonn
+								ach(10010),	-- Gate of the Setting Sun
+								ach(6759),	-- Heroic: Gate of the Setting Sun
 								i(144101),	-- Carapace Breaker
 								i(144218),	-- Klatith, Fangs of the Swarm
 								i(144140),	-- Impervious Carapace

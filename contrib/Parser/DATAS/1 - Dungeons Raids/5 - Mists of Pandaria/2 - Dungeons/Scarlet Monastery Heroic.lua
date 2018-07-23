@@ -9,12 +9,14 @@ _.Instances =
 			inst(316, { 	-- Scarlet Monastery
 				["groups"] = {
 					d(2, {		-- Heroic
-						
 						["lvl"] = 90,
 						["groups"] = {
 							n(-17, {	-- Quests
-								qg(64838, q(31515)),	-- Blades of the Anointed
-								qg(64855, q(31516, {	-- Unto Dust Thou Shalt Return
+								q(31515, {	-- Blades of the Anointed
+									["qg"] = 64838,	-- Hooded Crusader
+								}),
+								q(31516, {	-- Unto Dust Thou Shalt Return
+									["groups"] = {
 									i(87361),	-- Martial Purification Gloves
 									i(87362),	-- Gauntlets of Righteous Conviction
 									i(87363),	-- Zealous Fervor Handguards
@@ -24,9 +26,13 @@ _.Instances =
 									i(87367),	-- Gloves of Fiery Purification
 									i(87368),	-- Gauntlets of Bloody Judgment
 									i(87369),	-- Crimson Monk Handwraps
-								})),
+									},
+									["qg"] = 64855,	-- Blade of the Anointed
+									["sourceQuests"] = { 31515 },	-- Blades of the Anointed
+								}),
 							}),
 							cr(59789, e(688, {	-- Thalnos the Soulrender
+								ach(6946),	-- Empowered Spiritualist
 								i(144001),	-- Forgotten Bloodmage Mantle
 								i(144183),	-- Soulrender Greatcloak
 								i(144184),	-- Bracers of the Fallen Crusader
@@ -40,6 +46,7 @@ _.Instances =
 								}),
 							})),
 							cr(59223, e(671, {	-- Brother Korloff
+								ach(6928),	-- Burning Man
 								i(144186),	-- Firestorm Greatstaff
 								i(144026),	-- Helm of Rising Flame
 								i(144185),	-- Scorched Earth Cloak
@@ -53,6 +60,9 @@ _.Instances =
 								}),
 							})),
 							cr(3977, e(674, {	-- High Inquisitor Whitemane
+								ach(6929),	-- And Stay Dead!
+								ach(6761),	-- Heroic: Scarlet Monastery
+								ach(637),	-- Scarlet Monastery
 								i(144189),	-- Greatstaff of Righteousness
 								i(144187),	-- Lightbreaker Greatsword
 								i(144027),	-- Crown of Holy Flame
@@ -78,7 +88,7 @@ _.Instances =
 						}
 					})
 				},
-				["mapID"] = 435
+				["maps"] = { 435, 436 }
 			}),
 		},					
 		["tierID"] = 5

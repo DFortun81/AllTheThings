@@ -9,7 +9,6 @@ _.Instances =
 			inst(313, { 	-- Temple of the Jade Serpent
 				["groups"] = {
 					d( 1, {	-- Normal
-						
 						["groups"] = {
 							n(-17, {	-- Quests 					
 								q(31356, {
@@ -84,6 +83,7 @@ _.Instances =
 								}),
 							})),
 							cr(56439, e(335, {	-- Sha of Doubt
+								ach(6757),	-- Temple of the Jade Serpent
 								i(144093),	-- Staff of Trembling Will
 								i(144086),	-- Dubious Handaxe
 								i(144216),	-- Je'lyu, Spirit of the Serpent
@@ -107,10 +107,10 @@ _.Instances =
 						},
 					}),
 					d( 2, {	-- Heroic
-						
 						["lvl"] = 90,
 						["groups"] = {
 							cr(56448, e(672, {	-- Wise Mari
+								ach(6460),	-- Hydrophobia
 								i(144017),	-- Waterburst Helm
 								i(144111),	-- Wind-Soaked 
 								i(143960),	-- Riverbed Chestguard
@@ -150,6 +150,10 @@ _.Instances =
 								}),
 							})),
 							cr(56439, e(335, {	-- Sha of Doubt
+								ach(6475),	-- Cleaning Up
+								ach(6758),	-- Heroic: Temple of the Jade Serpent
+								ach(6671),	-- Seeds of Doubt
+								ach(6757),	-- Temple of the Jade Serpent
 								i(144093),	-- Staff of Trembling Will
 								i(144086),	-- Dubious Handaxe
 								i(144216),	-- Je'lyu, Spirit of the Serpent

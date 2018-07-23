@@ -9,7 +9,6 @@ _.Instances =
 			inst(312, { 	-- Shado-Pan Monastery
 				["groups"] = {
 					d( 1, {	-- Normal
-						
 						["groups"] = {
 							n(-17, {	-- Quests 				
 								q(30757, {
@@ -72,6 +71,7 @@ _.Instances =
 								}),
 							})),
 							cr(56884, e(686, {	-- Taran Zhu
+								ach(6469),	-- Shado-Pan Monastery
 								i(144109),	-- Warmace of Taran Zhu
 								i(144215),	-- Ka'eng, Breath of the Shadow
 								i(144103),	-- Shield of Blind Hate
@@ -95,7 +95,6 @@ _.Instances =
 						},
 					}),
 					d( 2, {	-- Heroic
-						
 						["lvl"] = 90,
 						["groups"] = {
 							cr(56747, e(673, {	-- Gu Cloudstrike
@@ -112,6 +111,7 @@ _.Instances =
 								}),
 							})),
 							cr(56541, e(657, {	-- Master Snowdrift
+								ach(6477),	-- Respect
 								i(144110),	-- Snowdrift's Bladed Staff
 								i(144106),	-- Gauntlets of Resolute Fury
 								i(144097),	-- Quivering Heart Girdle
@@ -124,6 +124,7 @@ _.Instances =
 								}),
 							})),
 							cr(56719, e(685, {	-- Sha of Violence
+								ach(6472),	-- The Obvious Solution
 								i(144099),	-- Crescent of Ichor
 								i(144130),	-- Necklace of Disorientation
 								i(144131),	-- Bladed Smoke Bracers
@@ -137,6 +138,9 @@ _.Instances =
 								}),
 							})),
 							cr(56884, e(686, {	-- Taran Zhu
+								ach(6471),	-- Hate Leads to Suffering
+								ach(6470),	-- Heroic: Shado-Pan Monastery
+								ach(6469),	-- Shado-Pan Monastery
 								i(144109),	-- Warmace of Taran Zhu
 								i(144215),	-- Ka'eng, Breath of the Shadow
 								i(144103),	-- Shield of Blind Hate

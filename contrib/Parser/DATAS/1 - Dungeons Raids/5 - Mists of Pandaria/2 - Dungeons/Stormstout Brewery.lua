@@ -35,7 +35,6 @@ _.Instances =
 						}),
 					}),
 					d( 1, {	-- Normal
-						
 						["groups"] = {
 							n(-17, {	-- Quests 						
 								q(31324, {
@@ -57,6 +56,8 @@ _.Instances =
 									i(87309),	-- Handguards of Sturdy Constitution
 								}),
 							}),
+							ach(6400),	-- How Did He Get Up There?
+							ach(6402),	-- Ling-Ting's Herbal Journey
 							cr(56637, e(668, {	-- Ook-Ook
 								i(144084),	-- Ook's Hozen Slicer
 								i(143957),	-- Nimbletoe Chestguard
@@ -82,6 +83,7 @@ _.Instances =
 								}),
 							})),
 							cr(59479, e(670, {	-- Yan-Zhu the Uncasked
+								ach(6457),	-- Stormstout Brewery
 								i(144124),	-- Wort Stirring Rod
 								i(144085),	-- Gao's Keg Tapper
 								i(144217),	-- Inelava, Spirit of Inebriation
@@ -105,10 +107,13 @@ _.Instances =
 						},
 					}),
 					d( 2, {	-- Heroic
-						
 						["lvl"] = 90,
 						["groups"] = {
+							ach(6420),	-- Hopocalypse Now!
+							ach(6400),	-- How Did He Get Up There?
+							ach(6402),	-- Ling-Ting's Herbal Journey
 							cr(56637, e(668, {	-- Ook-Ook
+								ach(6089),	-- Keep Rollin' Rollin' Rollin'
 								i(144084),	-- Ook's Hozen Slicer
 								i(143957),	-- Nimbletoe Chestguard
 								i(144087),	-- Bracers of Displaced Air
@@ -136,6 +141,8 @@ _.Instances =
 								}),
 							})),
 							cr(59479, e(670, {	-- Yan-Zhu the Uncasked
+								ach(6456),	-- Heroic: Stormstout Brewery
+								ach(6457),	-- Stormstout Brewery
 								i(144124),	-- Wort Stirring Rod
 								i(144085),	-- Gao's Keg Tapper
 								i(144217),	-- Inelava, Spirit of Inebriation

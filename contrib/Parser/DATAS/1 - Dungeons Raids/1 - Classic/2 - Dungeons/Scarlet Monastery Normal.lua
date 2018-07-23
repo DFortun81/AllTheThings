@@ -10,8 +10,13 @@ _.Instances =
 				["groups"] = {
 					d(1, {		-- Normal
 						n(-17, {	-- Quests
-							qg(64827, q(31513)),	-- Blades of the Anointed
-							qg(64854, q(31514)),	-- Unto Dust Thou Shalt Return
+							q(31513, {	-- Blades of the Anointed
+								["qg"] = 64827,	-- Hooded Crusader
+							}),
+							q(31514, {	-- Unto Dust Thou Shalt Return
+								["qg"] = 64854,	-- Blade of the Anointed
+								["sourceQuests"] = { 31513 },	-- Blades of the Anointed
+							}),
 						}),
 						n(  0, {	-- Zone Drop
 							n(60033, {	-- Frenzied Spirit

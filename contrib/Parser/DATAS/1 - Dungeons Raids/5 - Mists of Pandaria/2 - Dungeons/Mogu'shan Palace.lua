@@ -9,7 +9,6 @@ _.Instances =
 			inst(321, { 	-- Mogu'shan Palace
 				["groups"] = {
 					d( 1, {	-- Normal
-						
 						["groups"] = {
 							n(-17, {	-- Quests 						
 								q(31360, {	-- A New Lesson for the Master
@@ -35,6 +34,7 @@ _.Instances =
 									i(87350),	-- Poet-King's Vambraces
 								}),
 							}),
+							ach(6713),	-- Quarrelsome Quilen Quintet
 							cr(61444, e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
 								i(144020),	-- Crest of the Clan Lords	
 								i(144021),	-- Meteoric Greathelm
@@ -62,6 +62,7 @@ _.Instances =
 								}),
 							})),
 							cr(61398, e(698, {	-- Xin the Weaponmaster
+								ach(6755),	-- Mogu'shan Palace
 								i(144150),	-- Ghostheart
 								i(144214),	-- Mogu'Dar, Blade of the Thousand Slaves
 								i(144154),	-- Firescribe Dagger
@@ -87,7 +88,6 @@ _.Instances =
 						},
 					}),
 					d( 2, {	-- Heroic
-						
 						["lvl"] = 90,
 						["groups"] = {
 							cr(61444, e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
@@ -104,6 +104,7 @@ _.Instances =
 								}),
 							})),
 							cr(61243, e(690, {	-- Gekkan
+								ach(6478),	-- Glintrok N' Roll
 								i(144148),	-- Claws of Gekkan
 								i(144147),	-- Cloak of Cleansing Flames
 								i(144149),	-- Hexxer's Lethargic Gloves
@@ -117,6 +118,9 @@ _.Instances =
 								}),
 							})),
 							cr(61398, e(698, {	-- Xin the Weaponmaster
+								ach(6756),	-- Heroic: Mogu'shan Palace
+								ach(6755),	-- Mogu'shan Palace
+								ach(6736),	-- What Does This Button Do?
 								i(144150),	-- Ghostheart
 								i(144214),	-- Mogu'Dar, Blade of the Thousand Slaves
 								i(144154),	-- Firescribe Dagger

@@ -25,6 +25,7 @@ _.Instances =
 								qg(64764, q(31495)),	-- Rank and File
 							}),
 							cr(59303, e(660, {	-- Houndmaster Braun
+								ach(6684),	-- Humane Society
 								i(144190),	-- Houndmaster's Compound Crossbow
 								i(143966),	-- Canine Commander's Breastplate
 								i(144191),	-- Commanding Bracers
@@ -38,6 +39,7 @@ _.Instances =
 								}),
 							})),
 							cr(58632, e(654, {	-- Armsmaster Harlan
+								ach(6427),	-- Mosh Pit
 								i(23192),	-- Tabard of the Scarlet Crusade (not in Dungeon Journal)
 								i(144193),	-- The Gleaming Ravager
 								i(144182),	-- Armsmaster's Sealed Locket
@@ -52,6 +54,8 @@ _.Instances =
 								}),
 							})),
 							cr(59150, e(656, {	-- Flameweaver Koegler
+								ach(7413),	-- Scarlet Halls
+								ach(6760),	-- Heroic: Scarlet Halls
 								i(144196),	-- Mograine's Immaculate Might
 								i(144195),	-- Koegler's Ritual Knife
 								i(144198),	-- Melted Hypnotic Blade

@@ -9,7 +9,6 @@ _.Instances =
 			inst(324, { 	-- Siege of Niuzao Temple
 				["groups"] = {
 					d( 1, {	-- Normal
-						
 						["groups"] = {
 							cr(61567, e(693, {	-- Vizier Jin'bak
 								i(144022),	-- Hood of Viridian Residue
@@ -51,6 +50,7 @@ _.Instances =
 								}),
 							})),
 							cr(62205, e(727, {	-- Wing Leader Ner'onok
+								ach(10011),	-- Siege of Niuzao Temple
 								i(144172),	-- Gustwalker Staff
 								i(144171),	-- Ner'onok's Razor Katar
 								i(144219),	-- Tolakesh, Horn of the Black Ox
@@ -78,7 +78,6 @@ _.Instances =
 						},
 					}),
 					d( 2, {	-- Heroic
-						
 						["lvl"] = 90,
 						["groups"] = {
 							cr(61567, e(693, {	-- Vizier Jin'bak
@@ -94,6 +93,7 @@ _.Instances =
 								}),
 							})),
 							cr(61634, e(738, {	-- Commander Vo'jak
+								ach(6688),	-- Where's My Air Support?
 								i(144164),	-- Siege-Captain's Scimitar
 								i(144023),	-- Sightfinder Helm
 								i(143963),	-- Chestwrap of Arcing Flame
@@ -108,6 +108,7 @@ _.Instances =
 								}),
 							})),
 							cr(61485, e(692, {	-- General Pa'valak
+								ach(6485),	-- Return to Sender
 								i(144167),	-- Tempestuous Longbow
 								i(144170),	-- Aerial Bombardment Cloak
 								i(144168),	-- Siegeworn Bracers
@@ -121,6 +122,9 @@ _.Instances =
 								}),
 							})),
 							cr(62205, e(727, {	-- Wing Leader Ner'onok
+								ach(6763),	-- Heroic: Siege of Niuzao Temple
+								ach(6822),	-- Run with the Wind
+								ach(10011),	-- Siege of Niuzao Temple
 								i(144172),	-- Gustwalker Staff
 								i(144171),	-- Ner'onok's Razor Katar
 								i(144219),	-- Tolakesh, Horn of the Black Ox
