@@ -841,7 +841,7 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-									artifact(224), -- Find Hidden Artifact Skin
+									artifact(224), -- Find Artifact Skin
 									artifact(225), -- Complete 30 Legion Dungeons Hidden
 									artifact(226), -- Complete 200 WQ Hidden
 									artifact(227), -- Kill 1,000 Players Hidden
@@ -921,7 +921,12 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-								artifact(918), -- Find Hidden Artifact Skin
+								{
+									["artifactID"] = 918, -- Find Artifact Skin
+									["groups"] = {
+										i(139555), -- Designs of the Grand Architect
+									},
+								},
 								artifact(917), -- Complete 30 Legion Dungeons Hidden
 								artifact(919), -- Complete 200 WQ Hidden
 								artifact(920), -- Kill 1,000 Players Hidden
