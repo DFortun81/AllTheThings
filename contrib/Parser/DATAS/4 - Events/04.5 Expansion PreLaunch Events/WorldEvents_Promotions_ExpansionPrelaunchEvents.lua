@@ -1057,98 +1057,106 @@ _.WorldEvents =
 					-- Horde Part I
 					qh(50476),	-- The Warchief Awaits
 					qh(50642, {	-- The Warchief Commands
-						--["qg"] = , -- 
+						["qg"] = 134554, -- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 50476 }, -- The Warchief Awaits
 					}),	
 					qh(50646, {	-- A Quick Diversion
-						--["qg"] = , -- 
+						["qg"] = 134574, -- High Overlord Saurfang
 						["sourceQuests"] = { 50642 }, -- The Warchief Commands
 					}),	
 					qh(50647, {	-- Everybody Has a Price
-						--["qg"] = , -- 
+						["qg"] = 134573, -- Lorash
 						["sourceQuests"] = { 50646 }, -- A Quick Diversion
 					}),	
 					qh(50738, {	-- A Timely Arrival
-						--["qg"] = , -- 
+						["qg"] = 134573, -- Lorash
 						["sourceQuests"] = { 50647 }, -- Everybody Has a Price
 					}),	
 					qh(50740, {	-- Zoram'gar Outpost
-						--["qg"] = , -- 
+						["qg"] = 135003, -- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 50738 }, -- A Timely Arrival
 					}),	
 					qh(50772, {	-- On The Prowl
-						--["qg"] = , -- 
+						["qg"] = 134574, -- High Overlord Saurfang
 						["sourceQuests"] = { 50740 }, -- Zoram'gar Outpost
 					}),	
 					qh(50800, {	-- Into the Woods
-						--["qg"] = , -- 
+						["qg"] = 134554, -- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 50772 }, -- On The Prowl
 					}),	
 					qh(50823, {	-- Ripe for the Picking
-						--["qg"] = , -- 
+						["qg"] = 134554, -- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 50800 }, -- Into the Woods
 					}),	
 					qh(50837, {	-- A Quick Flyover
-						--["qg"] = , -- 
+						["qg"] = 134554, -- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 50823 }, -- Ripe for the Picking
 					}),	
 					qh(50880, {	-- An Unstoppable Force
-						--["qg"] = , -- 
+						["qg"] = 134554, -- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 50837 }, -- A Quick Flyover
 					}),	
 					qh(53604, {	-- Clearing Them Out
-						--["qg"] = , -- 
+						["qg"] = 134554, -- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 50880 }, -- An Unstoppable Force
 					}),	
 					qh(53605, {	-- A Glaive Misunderstanding
-						--["qg"] = , -- 
+						["qg"] = 134554, -- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 50880 }, -- An Unstoppable Force
 					}),	
 					qh(50878, {	-- Blurred Vision
-						--["qg"] = , -- 
-						["sourceQuests"] = { 50880 }, -- An Unstoppable Force
-					}),	
-					qh(50879, {	-- The Trees Have Ears
-						--["qg"] = , -- 
+						["qg"] = 134554, -- Lady Sylvanas Windrunner
 						["sourceQuests"] = {
 							53604, -- Clearing Them Out
 							53605, -- A Glaive Misunderstanding
-							50878, -- Blurred Vision
 						},
 					}),	
+					qh(50879, {	-- The Trees Have Ears
+						["qg"] = 135003, -- Lady Sylvanas Windrunner
+						["sourceQuests"] = { 50878 }, -- Blurred Vision
+					}),	
+					--[[	REMOVED ON LIVE
 					qh(53550, {	-- A Change in Leadership
 						--["qg"] = , -- 
 						["sourceQuests"] = { 50879 }, -- The Trees Have Ears
 					}),	
+					--]]
 					qh(52436, {	-- The Blackwood Den
-						--["qg"] = , -- 
-						["sourceQuests"] = { 53550 }, -- A Change in Leadership
+						["qg"] = 135003, -- Lady Sylvanas Windrunner
+						["sourceQuests"] = { 50879 }, -- The Trees Have Ears
 					}),	
 					qh(53606, {	-- Aggressive Inspiration
-						--["qg"] = , -- 
+						["qg"] = 135003, -- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 52436 }, -- The Blackwood Den
 					}),	
-					qh(53608, {	-- Fueling the Horde War Machine
-						--["qg"] = , -- 
-						["sourceQuests"] = { 53606 }, -- Aggressive Inspiration
-					}),	
-					qh(53609, {	-- A Very Clear Message
-						--["qg"] = , -- 
-						["sourceQuests"] = { 53608 }, -- Fueling the Horde War Machine
-					}),	
 					qh(52437, {	-- The Start of Something Good
-						--["qg"] = , -- 
+						["qg"] = 135003, -- Lady Sylvanas Windrunner   -- Might need to be changed
 						["sourceQuests"] = {
-							53608, -- Fueling the Horde War Machine
-							53609, -- A Very Clear Message
+							52436, -- The Blackwood Den
+							53606, -- Aggressive Inspiration
 						}, 
 					}),	
-					qh(52438, {	-- A Wild Ride
-						--["qg"] = , -- 
+					qh(53608, {	-- Fueling the Horde War Machine
+						["qg"] = 144346, -- Jux Burstkix
 						["sourceQuests"] = { 52437 }, -- The Start of Something Good
 					}),	
+					qh(53609, {	-- A Very Clear Message
+						["qg"] = 144346, -- Jux Burstkix
+						["sourceQuests"] = { 52437 }, -- The Start of Something Good
+					}),
+					qh(53627, { -- A Gift of Azerite
+						["qg"] = 144346, -- Jux Burstkix
+						["sourceQuests"] = { 
+							53608, -- Fueling the Horde War Machine
+							53609, -- A Very Clear Message
+						},
+					}),
+					qh(52438, {	-- A Wild Ride
+						["qg"] = 135501, -- Zarvik Blastwix
+						["sourceQuests"] = { 53627 }, -- A Gift of Azerite
+					}),	
 					qh(52806, {	-- A Looming Threat
-						--["qg"] = , -- 
+						["qg"] = 134554, -- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 52438 }, -- A Wild Ride
 					}),	
 					-- Horde Part II
