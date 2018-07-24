@@ -918,11 +918,17 @@ AllTheThings.Locales.enUS = {
 		[-127] = select(2,C_Garrison.GetBuildingInfo(61)),	 					-- Lunarfall Excavation / Frostwall Mine
 		[-128] = select(2,C_Garrison.GetBuildingInfo(34)), 						-- Lunarfall Inn / Frostwall Tavern
 		[-129] = select(2,C_Garrison.GetBuildingInfo(37)),	 					-- Mage Tower / Spirit Lodge
-
+		[-130] = "Duskwood "..GetSpellInfo(133137),								-- Duskwood Active
+		[-131] = "The Hinterlands "..GetSpellInfo(133137),						-- The Hinterlands Active
+		[-132] = "Feralas "..GetSpellInfo(133137),								-- Feralas Active
+		[-133] = "Duskwood "..GetSpellInfo(78741),								-- Duskwood Activated
+		--[[ Would rather cache through Blizzard, but it's not able to retrieve info during loading screen.
+		-- Need to talk to Crieve more and see if there's a way to cache it possible
 		--[-130] = select(1,AllTheThings.GetMapName(47)),	-- Duskwood Active
 		--[-131] = select(1,AllTheThings.GetMapName(26)).." "..GetSpellInfo(133137),	-- The Hinterlands Active
 		--[-132] = select(1,AllTheThings.GetMapName(69)).." "..GetSpellInfo(133137),	-- Feralas Active
 		--[-133] = select(1,AllTheThings.GetMapName(47)).." "..GetSpellInfo(78741),	-- Duskwood Activated
+		--]]
 --Transmog Sets
 		[-134] = "Orgrimmar Set",
 		[-135] = "Stormwind Set",
@@ -949,8 +955,13 @@ AllTheThings.Locales.enUS = {
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
 		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 130),					-- Level 130
-		--[-157] = select(1,AllTheThings.GetMapName(26)).." "..GetSpellInfo(78741),	-- The Hinterlands Activated
-		--[-158] = select(1,AllTheThings.GetMapName(69)).." "..GetSpellInfo(78741),	-- Feralas Activated
+		[-157] = "The Hinterlands "..GetSpellInfo(78741),						-- The Hinterlands Activated
+		[-158] = "Feralas "..GetSpellInfo(78741),								-- Feralas Activated
+		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
+		--[[ See above
+		[-157] = select(1,AllTheThings.GetMapName(26)).." "..GetSpellInfo(78741),	-- The Hinterlands Activated
+		[-158] = select(1,AllTheThings.GetMapName(69)).." "..GetSpellInfo(78741),	-- Feralas Activated
+		--]]
 -- Expansions
 		[-160] = TUTORIAL_TITLE53,												-- Mounts
 -- Other

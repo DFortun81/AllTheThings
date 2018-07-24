@@ -256,9 +256,13 @@ _.ClassHalls =
 			m(715, { -- Emerald Dreamway
 				["groups"] = {
 					i(139552, { -- Feather of the Moonspirit  [Lucetia Note: Leave as is for the moment.  My goal is to convert the Quest #XXXX to the zone names without using maps]
-						
 						["groups"] = {
-							q(44326, { -- Daily Dreamway Event Roll
+							{ -- Fangs of Ashamane
+								["ignoreSource"] = true,
+								["classes"] = { 11 }, -- Druid
+								["artifactID"] = 830, -- Hidden Appearance Base
+							},
+							n(-159, { -- Daily Dreamway Event Roll
 								["groups"] = {
 									n(-132, { -- Feralas Active
 										["groups"] = {
@@ -290,7 +294,7 @@ _.ClassHalls =
 									}),
 									n(-130, { -- Duskwood Active
 										["groups"] = {
-											n(133, { -- Duskwood Activated
+											n(-133, { -- Duskwood Activated
 												["questID"] = 44330, -- Owlcat Stone Touched [Duskwood]
 												["description"] = "|CFFFF0000This quest indicates if you have activated the Duskwood Owlcat Stone.|r",
 												["sourceQuests"] = { 44329 }, -- Owlcat Stone Touched [Duskwood]
@@ -302,11 +306,6 @@ _.ClassHalls =
 										["description"] = "|CFFFF0000If this quest has a checkmark next to it, then that means the stone is active.|r",
 										["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
 									}),
-									{ -- Fangs of Ashamane
-										["ignoreSource"] = true,
-										["classes"] = { 11 }, -- Druid
-										["artifactID"] = 830, -- Hidden Appearance Base
-									},
 								},
 								["description"] = "|CFFFF0000If this quest has a checkmark next to it, then check below which stone is active.|r",
 								["icon"] = "Interface\\Icons\\inv_misc_druidstone04",

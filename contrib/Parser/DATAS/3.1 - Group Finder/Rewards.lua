@@ -1081,8 +1081,6 @@ _.GroupFinder =
 	i(140591, {			-- Shattered Satchel of Cooperation
 		i(141701), -- Selfless Glory
 	}),
-	--[[
 	i(160054, {			-- War-Torn Satchel of Cooperation [BfA]
 	}),
-	--]]
 };
