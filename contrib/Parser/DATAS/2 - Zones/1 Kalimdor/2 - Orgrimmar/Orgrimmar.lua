@@ -1190,12 +1190,19 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["classes"] = { 5 },	-- Priest
 					})),
 --					qh(40786),	-- The Smoldering Ember (QG item received from final boss in TW dungeons)
-					qg(53371, qh(29309, {  	-- The Stuff of Legends
+					qh(29309, {  	-- The Stuff of Legends
 						["groups"] = {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest (LEGENDARY!)
 						},
-						["classes"] = {5,7,8,9,10,11},
-					})),
+						["qg"] = 53371, -- Hallegosa
+						["classes"] = {
+							5, -- Priest
+							7, -- Shaman
+							8, -- Mage
+							9, -- Warlock
+							11, -- Druid
+						},
+					}),
 --[[					
 					qg(52234, qh(29220)),	-- To Bambala
 					qp185(qg(3399, qh( 6611))),	-- To Gadgetzan You Go!
