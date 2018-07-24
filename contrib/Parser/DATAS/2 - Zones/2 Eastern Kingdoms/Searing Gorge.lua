@@ -70,6 +70,15 @@ _.Zones =
 					}),						
 --]]
 				}),
+				n(0, { -- Zone Drop
+					["g"] = {
+						o(266289, { -- Time Lost Chest
+							["g"] = {
+								i(142358), -- Plans: Blazing Rapier
+							},
+						}),
+					},
+				}),
 				n(-25, {	-- Pet Battle
 					-- q(31912, {	--Kortas Darkhammer
 					-- }),

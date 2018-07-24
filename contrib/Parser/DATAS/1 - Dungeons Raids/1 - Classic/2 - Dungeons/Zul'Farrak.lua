@@ -58,22 +58,24 @@ _.Instances =
 							["qg"] = 40712,	-- Mazoga's Spirit
 						}),
 					}),
-					n(  0, {	-- Zone Drop
-						n(5649, {	-- Sandfury Blood Drinker
-							dr(0.1, i(142402)),	-- Plans: Light Earthforged Blade
-						}),
-						n(5648, {	-- Sandfury Shadowcaster
-							dr(0.1, i(142402)),	-- Plans: Light Earthforged Blade
-						}),
-						n(7246, {	-- Sandfury Shadowhunter
-							dr(0.1, i(142402)),	-- Plans: Light Earthforged Blade
-						}),
-						n(7247, {	-- Sandfury Soul Eater
-							dr(0.1, i(142402)),	-- Plans: Light Earthforged Blade
-						}),
-						n(5650, {	-- Sandfury Witch Doctor
-							dr(0.1, i(142402)),	-- Plans: Light Earthforged Blade
-						}),
+					n(0, { -- Zone Drop
+						["groups"] = {
+							i(142402, { -- Plans: Light Earthforged Blade
+								["crs"] = {
+									8127, -- Antu'sul
+									7267, -- Chief Ukorz Sandscalp
+									7795, -- Hydromancer Velratha
+									7797, -- Ruuzlu
+									5649, -- Sandfury Blood Drinker
+									5648, -- Sandfury Shadowcaster
+									7246, -- Sandfury Shadowhunter
+									7247, -- Sandfury Soul Eater
+									5650, -- Sandfury Witch Doctor
+									7272, -- Theka the Martyr
+									7271, -- Witch Doctor Zum'rah
+								},
+							}),
+						},
 					}),
 					n(10080, {			-- Sandarr Dunereaver
 						["groups"] = {	

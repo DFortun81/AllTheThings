@@ -1563,6 +1563,11 @@ _.Zones =
 								un(34, i(9531)),	-- Gemshale Pauldrons
 							})),
 						}),
+						un(43, n(4368), { -- Strashaz Myrmidon
+							["groups"] = {
+								un(2, i(12718)), -- Plans: Runic Breastplate
+							},
+						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
 						--n(  0, {	-- Zone Drop (Legacy)

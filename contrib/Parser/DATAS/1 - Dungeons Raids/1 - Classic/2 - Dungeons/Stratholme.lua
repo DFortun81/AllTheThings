@@ -226,18 +226,43 @@ _.Instances =
 										["qg"] = 45331,	-- Master Craftsman Wilhelm
 									}),
 								}),
-								n(  0, {	-- Zone Drop
-									i( 18743),	-- Gracious Cape
-									i( 17061),	-- Juno's Shadow
-									i( 18741),	-- Morlune's Bracer
-									i( 18744),	-- Plaguebat Fur Gloves
-									i( 18736),	-- Plaguehound Leggings
-									i( 18745),	-- Sacred Cloth Leggings
-									i( 18742),	-- Stratholme Militia Shoulderguard
-									i(142337),	-- Plans: Blight
-									n( 10422, {	-- Risen Sorcerer
-										dr(6, i(16249)),	-- Formula: Enchant 2H Weapon - Major Intellect
-									}),
+								n(0, { -- Zone Drop
+									["groups"] = {
+										i(18743), -- Gracious Cape
+										i(17061), -- Juno's Shadow
+										i(18741), -- Morlune's Bracer
+										i(18744), -- Plaguebat Fur Gloves
+										i(18736), -- Plaguehound Leggings
+										i(18745), -- Sacred Cloth Leggings
+										i(18742), -- Stratholme Militia Shoulderguard
+										i(142337), -- Plans: Blight
+										n(10422, {	-- Risen Sorcerer
+											dr(6, i(16249)), -- Formula: Enchant 2H Weapon - Major Intellect
+										}),
+										i(74274, { -- Plans: Phantom Blade
+											["crs"] = {
+												10463, -- Shrieking Banshee
+												10464, -- Wailing Banshee
+											},
+										}),
+										n(10391, { -- Skeletal Berserker
+											["groups"] = {
+												i(12827), -- Plans: Serenity
+											},
+										}),
+										o(173232, { -- Blacksmithing Plans
+											["groups"] = {
+												i(12827, { -- Plans: Serenity
+													["groups"] = {},
+													["description"] = "This plan is found in the Scarlet Bastion. Only a Blacksmith can loot the plans. This will despawn once a player interacts with it.",
+												}),
+												i(12830, { -- Plans: Corruption
+													["groups"] = {},
+													["description"] = "This plan is found near the second ziggurat. Only a Blacksmith can loot the plans. This will despawn once a player interacts with it.",
+												}),
+											},
+										}),
+									},
 								}),
 								n( 10809, {			-- Stonespine
 									["groups"] = {

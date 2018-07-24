@@ -1112,6 +1112,7 @@ _.Zones =
 						dr(01.1, i(9926)),	-- Brigade Boots
 						dr(01.1, i(9884)),	-- Sorcerer Robe
 						dr(01.0, i(9927)),	-- Brigade Bracers
+						i(12836), -- Plans: Frostguard
 					}),
 					n(10825, { 	-- Gish the Unmoving
 						dr(05.0, i(9289)),	-- Field Plate Boots

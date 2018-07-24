@@ -83,10 +83,10 @@ _.Instances =
 							},
 							["description"] = "This is a rare that is not always present.",
 						}),
-						n(10899, { 	-- Goraluk Anvilcrack
-							n(-3, { 	-- Holidays
-								n(-61, { 	-- Winter Veil
-									ig(21525),	-- Green Winter Hat
+						n(10899, { -- Goraluk Anvilcrack
+							n(-3, { -- Holidays
+								n(-61, { -- Winter Veil
+									ig(21525), -- Green Winter Hat
 								}),
 							}),
 							i(18779, { 	-- Bottom Half of Advanced Armorsmithing: Volume 1
@@ -105,11 +105,8 @@ _.Instances =
 							un(2, i(13502)), 	-- Handcrafted Mastersmith Girdle
 							un(2, i(13498)), 	-- Handcrafted Mastersmith Leggings
 							un(2, i(18048)), 	-- Mastersmith's Hammer
-							i(12834, { 	-- Plans: Arcanite Champion
-								i(12790), 	-- Arcanite Champion
-							}),
-							i(12728, {	-- Plans: Invulnerable Mail
-								i(12641), 	-- Invulnerable Mail
+							i(12834, { -- Plans: Arcanite Champion
+								i(12790), -- Arcanite Champion
 							}),
 							i(12837, { 	-- Plans: Masterwork Stormhammer
 								i(12794), 	-- Masterwork Stormhammer

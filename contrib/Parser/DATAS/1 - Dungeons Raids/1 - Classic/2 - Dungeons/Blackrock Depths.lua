@@ -349,8 +349,8 @@ _.Instances =
 								dr(0.01, i(12551)),	-- Stoneshield Cloak
 							}),
 							n(9554, {	-- Hammered Patron
-								dr(3, i(11611, {	-- Plans: Dark Iron Sunderer
-									i(11607), 				-- Dark Iron Sunderer
+								dr(3, i(11611, { -- Plans: Dark Iron Sunderer
+									i(11607), -- Dark Iron Sunderer
 								})),
 								dr(0.03, i(12542)),	-- Funeral Pyre Vestment
 								dr(0.01, i(12550)),	-- Runed Golem Shcakles
@@ -381,8 +381,8 @@ _.Instances =
 								dr(0.01, i(12532)),	-- Spire of the Stoneshaper
 							}),
 							n(10043, {	-- Ribbly's Crony
-								dr(3, i(11611, {	-- Plans: Dark Iron Sunderer
-									i(11607), 				-- Dark Iron Sunderer
+								dr(3, i(11611, { -- Plans: Dark Iron Sunderer
+									i(11607), -- Dark Iron Sunderer
 								})),
 								dr(0.01, i(12542)),	-- Funeral Pyre Vestment
 							}),
@@ -511,22 +511,22 @@ _.Instances =
 							i( 11842), 	-- Land Surveyor's Mantle
 							i( 22223), 	-- Foreman's Head Protector
 						})),
-						n(0, { 				-- Zone Drop
-							n(8889, {	-- Anvilrage Overseer
+						n(0, { -- Zone Drop
+							n(8889, { -- Anvilrage Overseer
 								dr(0.01, i(12542)),	-- Funeral Pyre Vestment
 								dr(0.01, i(12528)),	-- The Judge's Gavel
 							}),
-							n(8890, {	-- Anvilrage Warden
+							n(8890, { -- Anvilrage Warden
 								dr(0.02, i(12531)),	-- Searing Needle
 								dr(0.02, i(12528)),	-- The Judge's Gavel
 								dr(0.01, i(12549)),	-- Braincage
 								dr(0.01, i(12542)),	-- Funeral Pyre Vestment
 								dr(0.01, i(12550)),	-- Runed Golem Shackles
 							}),
-							n(8897, { 	-- Doomforge Craftsman
+							n(8897, { -- Doomforge Craftsman
 								dr(10.0, i(16048)),	-- Schematic: Dark Iron Rifle
 							}),
-							n(8912, {	-- Twilight's Hammer Torturer
+							n(8912, { -- Twilight's Hammer Torturer
 								dr(0.03, i(12542)),	-- Funeral Pyre Vestment
 								dr(0.01, i(12549)),	-- Braincage
 								dr(0.01, i(12527)),	-- Ribsplitter
@@ -536,7 +536,7 @@ _.Instances =
 							}),
 						}),
 					}),
-					n(-76, {	-- Shadowforge City
+					n(-76, { -- Shadowforge City
 						cr(9024, e( 373, {	-- Pyromancer Loregrain
 							i(11207),	-- Formula: Enchant Weapon - Fiery Weapon
 							i(11750), 	-- Kindling Stave
@@ -545,24 +545,24 @@ _.Instances =
 							i(11749), 	-- Searingscale Leggings
 							i(22270), 	-- Entrenching Boots
 						})),
-						n(-1001, {			-- The Black Vault
-							cr(9041, e(375, {	-- Warder Stilgiss
-								i( 11784), 			-- Arbiter's Blade
-								i( 22241), 			-- Dark Warder's Pauldrons
-								i( 11782), 			-- Boreal Mantle
-								i( 11783), 			-- Chillsteel Girdle
-								i(151405), 			-- Cold-Forged Chestplate
-								n(  9042, { 	-- Verek
-									i(22242), 		-- Verek's Leash
+						n(-1001, { -- The Black Vault
+							cr(9041, e(375, { -- Warder Stilgiss
+								i( 11784), -- Arbiter's Blade
+								i( 22241), -- Dark Warder's Pauldrons
+								i( 11782), -- Boreal Mantle
+								i( 11783), -- Chillsteel Girdle
+								i(151405), -- Cold-Forged Chestplate
+								n(  9042, { -- Verek
+									i(22242), -- Verek's Leash
 								}),
 							})),
 							n( 9476, {	-- Watchman Doomgrip
 								["groups"] = {
 									o(161495, {	-- Secret Safe
 										["groups"] = {	
-											i(22256),	-- Mana Shaping Handwraps
-											i(22205),	-- Black Steel Bindings
-											i(22254),	-- Wand of Eternal Light
+											i(22256), -- Mana Shaping Handwraps
+											i(22205), -- Black Steel Bindings
+											i(22254), -- Wand of Eternal Light
 										},
 										["description"] = "This lootable chest spawns after defeating Watchman Doomgrip.",
 										["modelID"] = 34286,
@@ -730,7 +730,7 @@ _.Instances =
 								i(19212),  	-- Plans: Nightfall
 								i(20761),	-- Recipe: Transmute Elemental Fire
 							},
-							["description"] = "While having a Sulfuron Ingot in your inventory, speak with Lokhtos Darkbargainer and click on the new chat option to obtain Thorium Brotherhood Contract.",									
+							["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",									
 						}),	
 						cr(9156, e( 384, {	-- Ambassador Flamelash
 							i(11809), 	-- Flame Wrath

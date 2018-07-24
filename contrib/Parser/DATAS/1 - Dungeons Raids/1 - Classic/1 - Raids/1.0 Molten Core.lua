@@ -315,6 +315,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(0.8, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292),	-- Schematic: Core Marksman Rifle
 				i(18291),	-- Schematic: Force Reactive Disc
+				i(18264), -- Plans: Elemental Sharpening Stone
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -341,6 +342,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(1.2, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
+				i(18264), -- Plans: Elemental Sharpening Stone
 				i(93034),	-- Blazing Rune (Pet)
 				i(17073),	-- Earthshaker
 				i(18822),	-- Obsidian Edged Blade
@@ -376,6 +378,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(1.2, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
+				i(18264), -- Plans: Elemental Sharpening Stone
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -401,6 +404,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(1.1, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
+				i(18264), -- Plans: Elemental Sharpening Stone
 				i(18564, {	-- Bindings of the Windseeker (Right)
 					["groups"] = {
 						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
@@ -446,6 +450,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(0.7, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
+				i(18264), -- Plans: Elemental Sharpening Stone
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -471,6 +476,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(1.2, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
+				i(18264), -- Plans: Elemental Sharpening Stone
 				i(18563, {	-- Bindings of the Windseeker (Left)
 					["groups"] = {
 						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
@@ -528,6 +534,7 @@ _.Instances = { tier(1, {	-- Classic
 				dr(1.3, i(18257)),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
+				i(18264), -- Plans: Elemental Sharpening Stone
 				i(93035),	-- Core of Hardened Ash (Pet)
 				i(17203),	-- Sulfuron Ingot
 				i(18822),	-- Obsidian Edged Blade 

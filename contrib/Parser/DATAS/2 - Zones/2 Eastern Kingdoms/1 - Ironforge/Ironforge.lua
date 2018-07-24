@@ -531,6 +531,13 @@ _.Zones =
 					}),
 				}),
 				n(-17, {	-- Quests
+					q(1618, { -- Gearing Redridge
+						["g"] = {
+							i(6735), -- Plans: Ironforge Breastplate
+						},
+						["qg"] = 6031, -- Tormus Deepforge
+						["races"] = ALLIANCE_ONLY,
+					}),
 ---					qg(6294, qa(38396)),	-- A Curious Oddity			
 					qg(9616, qa( 4513, { -- A Little Slime Goes a Long Way
 						i(12050),	-- Hazecover Boots

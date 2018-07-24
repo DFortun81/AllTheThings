@@ -841,6 +841,12 @@ END OF MICRO-HOLIDAY --]]
 					n(15174, {	-- Calandrath <Innkeeper>
 						i(13496),	-- Recipe: Greater Nature Protection Potion
 					}),
+					n(132139, { -- Hagras Wartaker (Silithus)
+						["g"] = {
+							i(12162), -- Plans: Hardened Iron Shortsword
+						},
+						["races"] = HORDE_ONLY,
+					}),
 					n(15419, {	-- Kania <Enchanting Supplies>
 						i(20754),	-- Formula: Lesser Mana Oil
 						i(20753),	-- Formula: Lesser Wizard Oil
