@@ -2614,7 +2614,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 			if self:NumLines() > 0 and GetDataMember("ShowProgress") then
 				local rightSide = _G[self:GetName() .. "TextRight1"];
 				if rightSide then
-					if group.total and (group.total > 1 or (group.total > 0 or not group.collectible)) then
+					if group.total and (group.total > 1 or (group.total > 1 or not group.collectible)) then
 						rightSide:SetText(GetProgressColorText(group.progress, group.total));
 					elseif group.collectible then
 						rightSide:SetText(GetCollectionText(group.collected));
