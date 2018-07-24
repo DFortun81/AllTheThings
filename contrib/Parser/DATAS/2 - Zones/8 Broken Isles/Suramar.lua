@@ -628,7 +628,14 @@ _.Zones =
 					q(40012),	-- An Old Ally
 					q(40157),	-- An Unseemly Task
 					q(43954),	-- Anax
-					q(44672),	-- Ancient Mana
+					{
+						["questID"] = 44672,	-- Ancient Mana
+						["qg"] = 97140,	-- Quest Giver: First Arcanist Thalyssra
+						["sourceQuest"] = 42229,	-- Source Quest: Shal'Aran
+						["groups"] = {
+							i(141652),	-- Mana Divining Stone
+						},
+					},
 					q(41162),	-- And Into the Fel Fire
 					q(44052),	-- And They Will Tremble
 					q(44156),	-- Another Arcan'dor Closes...
