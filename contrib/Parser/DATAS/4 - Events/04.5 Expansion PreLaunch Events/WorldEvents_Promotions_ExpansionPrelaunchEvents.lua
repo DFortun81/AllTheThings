@@ -951,8 +951,352 @@ _.WorldEvents =
 			}),
 			n(-527, { -- Battle For Azeroth
 				["groups"] = {
+					n(-17, { -- Quests
+						["groups"] = {
+						
+						
+						
+						
+						
+						
+						
+						
+								-- Alliance Part I
+							qa(52058),	-- A Short-Lived Peace
+							qa(52060, {	-- The Horde Uprising
+								["qg"] = 107574, -- Anduin Wrynn
+								["sourceQuests"] = { 52058 }, -- A Short-Lived Pace
+							}),	
+							qa(52062, {	-- A Disturbancee in Ashenvale
+								["qg"] = 139798, -- Master Mathias Shaw
+								["sourceQuests"] = { 52060 }, -- The Horde Uprising
+							}),	
+							qa(52072, {	-- The Light of Elune
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 52062 }, -- A Disturbancee in Ashenvale
+							}),	
+							qa(53616, {	-- Knives of the Forsaken
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 52062 }, -- A Disturbancee in Ashenvale
+							}),	
+							qa(52116, {	-- A Soft Glow
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = {
+									52072, -- The Light of Elune
+									53616, -- Knives of the Forsaken
+								}, 
+							}),	
+							--[[ REMOVED FROM LIVE
+							
+							qa(52220, {	-- Dragon Attack
+								--["qg"] = , -- 
+								["sourceQuests"] = { 52197 }, -- Long Away
+							}),	
+							--]]
+							qa(52234, {	-- Hidden Amongst the Leaves
+								["qg"] = 133693, -- Malfurion Stormrage
+								["sourceQuests"] = { 52116 }, -- A Soft Glow
+							}),	
+							qa(53617, {	-- Mercy for the Mad
+								["qg"] = 133693, -- Malfurion Stormrage
+								["sourceQuests"] = { 52116 }, -- A Soft Glow
+							}),	
+							qa(52240, {	-- Garden Grove
+								["qg"] = 134578, -- Captain  Delaryn Summermoon
+								["sourceQuests"] = { 
+									52234, -- Hidden Amongst the Leaves
+									53617, -- Mercy for the Mad
+								}, 
+							}),	
+							qa(52245, {	-- Enraged Furblogs
+								["qg"] = 33072, -- Onu <Ancient of Lore>
+								["sourceQuests"] = { 52240 }, -- Garden Grove
+							}),	
+							qa(53551, { -- Elves in the Machine
+								["qg"] = 140728, -- Captain Delaryn Silvermoon
+								["sourceQuests"] = { 52240 }, -- Garden Grove
+							}),
+							qa(52242, {	-- The Wake of Something New
+								["qg"] = 33072, -- Onu <Ancient of Lore>
+								["sourceQuests"] = {
+									52245, -- Enraged Furblogs
+									53551, -- Elves in the Machine
+								}, 
+							}),	
+							qa(53619, { -- Azerite Denial
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 52242 }, -- The Wake of Something New
+							}),		
+							qa(53621, { -- No Horde Allowed
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 52242 }, -- The Wake of Something New
+							}),
+							qa(52256, {	-- Malufrion Returns
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 
+									53619, -- Azerite Denial
+									52256, -- Malfurion Returns
+								},
+							}),	
+							qa(52257, {	-- "Rock" The World
+								["qg"] = 133693, -- Malfurion Stormrage
+								["sourceQuests"] = { 52256 }, -- Malufrion Returns
+							}),	
+							qa(52197, {	-- Long Away
+								["qg"] = 133693, -- Malfurion Stormrage
+								["sourceQuests"] = { 52257 }, -- "Rock" The World
+							}),
+							qa(52279, {	-- A Looming Threat
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 52279 }, -- A Looming Threat
+							}),	
+							-- Alliance Part II
+							qa(52973, {	-- A Threat From the North
+								--["qg"] = , -- 
+								["sourceQuests"] = { 52279 }, -- A Looming Threat
+							}),	
+							qa(52974, {	-- Rescue Effort
+								--["qg"] = , -- 
+								["sourceQuests"] = { 52973 }, -- A Threat From the North
+							}),	
+							qa(53622, {	-- Defending Lor'danel
+								--["qg"] = , -- 
+								["sourceQuests"] = { 52973 }, -- A Threat From the North
+							}),	
+							qa(52975, {	-- Action This Day
+								--["qg"] = , -- 
+								["sourceQuests"] = { 
+									52974, -- Rescue Effort
+									53622, -- Defending Lor'danel
+								}, 
+							}),	
+							qa(52977, {	-- The Guidance of Our Shan'do
+								--["qg"] = , -- 
+								["sourceQuests"] = { 52975 }, -- Action This Day
+							}),	
+							qa(53095, {	-- A Flicker of Hope
+								--["qg"] = , -- 
+								["sourceQuests"] = { 52977 }, -- The Guidance of Our Shan'do
+							}),	
+							qa(53310, {	-- From the Ashes…
+								["groups"] = {
+									i(163127), -- Smoldering Reeins of the Teldrassil Hippogryph
+								},
+								--["qg"] = , -- 
+								["sourceQuests"] = { 53095 }, -- A Flicker of Hope
+							}),	
+							-- Horde Part I
+							qh(50476),	-- The Warchief Awaits
+							qh(50642, {	-- The Warchief Commands
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50476 }, -- The Warchief Awaits
+							}),	
+							qh(50646, {	-- A Quick Diversion
+								["qg"] = 134574, -- High Overlord Saurfang
+								["sourceQuests"] = { 50642 }, -- The Warchief Commands
+							}),	
+							qh(50647, {	-- Everybody Has a Price
+								["qg"] = 134573, -- Lorash
+								["sourceQuests"] = { 50646 }, -- A Quick Diversion
+							}),	
+							qh(50738, {	-- A Timely Arrival
+								["qg"] = 134573, -- Lorash
+								["sourceQuests"] = { 50647 }, -- Everybody Has a Price
+							}),	
+							qh(50740, {	-- Zoram'gar Outpost
+								["qg"] = 135003, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50738 }, -- A Timely Arrival
+							}),	
+							qh(50772, {	-- On The Prowl
+								["qg"] = 134574, -- High Overlord Saurfang
+								["sourceQuests"] = { 50740 }, -- Zoram'gar Outpost
+							}),	
+							qh(50800, {	-- Into the Woods
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50772 }, -- On The Prowl
+							}),	
+							qh(50823, {	-- Ripe for the Picking
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50800 }, -- Into the Woods
+							}),	
+							qh(50837, {	-- A Quick Flyover
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50823 }, -- Ripe for the Picking
+							}),	
+							qh(50880, {	-- An Unstoppable Force
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50837 }, -- A Quick Flyover
+							}),	
+							qh(53604, {	-- Clearing Them Out
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50880 }, -- An Unstoppable Force
+							}),	
+							qh(53605, {	-- A Glaive Misunderstanding
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50880 }, -- An Unstoppable Force
+							}),	
+							qh(50878, {	-- Blurred Vision
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = {
+									53604, -- Clearing Them Out
+									53605, -- A Glaive Misunderstanding
+								},
+							}),	
+							qh(50879, {	-- The Trees Have Ears
+								["qg"] = 135003, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50878 }, -- Blurred Vision
+							}),	
+							--[[	REMOVED ON LIVE;  Turned into Alliance Quest
+							qh(53550, {	-- A Change in Leadership
+								--["qg"] = , -- 
+								["sourceQuests"] = { 50879 }, -- The Trees Have Ears
+							}),	
+							--]]
+							qh(52436, {	-- The Blackwood Den
+								["qg"] = 135003, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50879 }, -- The Trees Have Ears
+							}),	
+							qh(53606, {	-- Aggressive Inspiration
+								["qg"] = 135003, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 52436 }, -- The Blackwood Den
+							}),	
+							qh(52437, {	-- The Start of Something Good
+								["qg"] = 135003, -- Lady Sylvanas Windrunner   -- Might need to be changed
+								["sourceQuests"] = {
+									52436, -- The Blackwood Den
+									53606, -- Aggressive Inspiration
+								}, 
+							}),	
+							qh(53608, {	-- Fueling the Horde War Machine
+								["qg"] = 144346, -- Jux Burstkix
+								["sourceQuests"] = { 52437 }, -- The Start of Something Good
+							}),	
+							qh(53609, {	-- A Very Clear Message
+								["qg"] = 144346, -- Jux Burstkix
+								["sourceQuests"] = { 52437 }, -- The Start of Something Good
+							}),
+							qh(53627, { -- A Gift of Azerite
+								["qg"] = 144346, -- Jux Burstkix
+								["sourceQuests"] = { 
+									53608, -- Fueling the Horde War Machine
+									53609, -- A Very Clear Message
+								},
+							}),
+							qh(52438, {	-- A Wild Ride
+								["qg"] = 135501, -- Zarvik Blastwix
+								["sourceQuests"] = { 53627 }, -- A Gift of Azerite
+							}),	
+							qh(52806, {	-- A Looming Threat
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 52438 }, -- A Wild Ride
+							}),	
+							-- Horde Part II
+							qh(52967, {	-- Saurfang Returns
+								--["qg"] = , -- 
+								["sourceQuests"] = { 52806 }, -- A Looming Threat
+							}),	
+							qh(52970, {	-- No Small Mercy
+								--["qg"] = , -- 
+								["sourceQuests"] = { 52967 }, -- Saurfang Returns
+							}),	
+							qh(52971, {	-- Seaside Rendezvous
+								--["qg"] = , -- 
+								["sourceQuests"] = { 52967 }, -- Saurfang Returns
+							}),	
+							qh(53610, {	-- Driving Them Out
+								--["qg"] = , -- 
+								["sourceQuests"] = { 52967 }, -- Saurfang Returns
+							}),	
+							qh(52981, {	-- Killer Queen
+								["groups"] = {
+									i(163128), -- War-Torn Reins of the Undercity Plaguebat
+								},
+								--["qg"] = , -- 
+								["sourceQuests"] = {
+									52970, -- No Small Mercy
+									52971, -- Seaside Rendezvous
+									53610, -- Driving Them Out
+								}, 
+							}),		
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						},
+						-- Attaching the quests to each zone that is involved in the "War of the Thorns" Campaign.  Excluding Undercity, Stomrwind and Northern Barrens due to only one quest taking place in these zones and it's not relevant to link for just the one.
+						["maps"] = { 
+							63, -- Ashenvale
+							89, -- Darnassus
+							62, -- Darkshore
+						},
+					}),
 					n(-34, { -- World Quests
 						["groups"] = {
+							qa(52895, { -- Arboria
+								["isDaily"] = true,
+							}),
+							qa(52506, { -- Blunt the Spikes
+								["isDaily"] = true,
+							}),
+							qa(53497, { -- Break Free
+								["isDaily"] = true,
+							}),
+							qa(53520, { -- Detonate!
+								["isDaily"] = true,
+							}),
+							qh(52894, { -- Don't Stop  Me Now
+								["isDaily"] = true,
+							}),
+							qh(52312, { -- Extinguish the Light
+								["isDaily"] = true,
+							}),
+							qa(52885, { -- Fey There
+								["isDaily"] = true,
+							}),
+							qh(52243, { -- Fuel for the Demolishers
+								["isDaily"] = true,
+							}),
+							qa(52983, { -- I Want It All
+								["isDaily"] = true,
+							}),
+							qh(52890, { -- It's a Kind of Magic
+								["isDaily"] = true,
+							}),
+							qa(52893, { -- One Vision
+								["isDaily"] = true,
+							}),
+							qh(52505, { -- Pruning the Thorns
+								["isDaily"] = true,
+							}),
+							qa(52504, { -- So We Meat Again
+								["isDaily"] = true,
+							}),
+							qa(52307, { -- Spiritual Aid
+								["isDaily"] = true,
+							}),
+							qh(53498, { -- Staying Power
+								["isDaily"] = true,
+							}),
+							qa(52244, { -- Stop the Drilling
+								["isDaily"] = true,
+							}),
+							qh(52343, { -- They Eat Like Orcs
+								["isDaily"] = true,
+							}),
+							qh(52896, { -- Under Pressure
+								["isDaily"] = true,
+							}),
+							qa(52897, { -- We Will "Rock" You
+								["isDaily"] = true,
+							}),
+							qa(53552, { -- Wicked Kegger
+								["isDaily"] = true,
+							}),
 							cl(5, { -- Priest
 								i(162830),	-- Faithsworn Armwraps
 								i(162827),	-- Faithsworn Frock
@@ -1109,264 +1453,10 @@ _.WorldEvents =
 								i(162776),	-- Gravewalker's Treads
 							}),
 						},
+						["maps"] = { 62 }, -- Darkshore; Let's attach the map to this zone since all the WQ's are here.
 					}),
-					-- Alliance Part I
-					qa(52058),	-- A Short-Lived Peace
-					qa(52060, {	-- The Horde Uprising
-						["qg"] = 107574, -- Anduin Wrynn
-						["sourceQuests"] = { 52058 }, -- A Short-Lived Pace
-					}),	
-					qa(52062, {	-- A Disturbancee in Ashenvale
-						["qg"] = 139798, -- Master Mathias Shaw
-						["sourceQuests"] = { 52060 }, -- The Horde Uprising
-					}),	
-					qa(52072, {	-- The Light of Elune
-						["qg"] = 134578, -- Captain Delaryn Summermoon
-						["sourceQuests"] = { 52062 }, -- A Disturbancee in Ashenvale
-					}),	
-					qa(53616, {	-- Knives of the Forsaken
-						["qg"] = 134578, -- Captain Delaryn Summermoon
-						["sourceQuests"] = { 52062 }, -- A Disturbancee in Ashenvale
-					}),	
-					qa(52116, {	-- A Soft Glow
-						["qg"] = 134578, -- Captain Delaryn Summermoon
-						["sourceQuests"] = {
-							52072, -- The Light of Elune
-							53616, -- Knives of the Forsaken
-						}, 
-					}),	
-					--[[ REMOVED FROM LIVE
 					
-					qa(52220, {	-- Dragon Attack
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52197 }, -- Long Away
-					}),	
-					--]]
-					qa(52234, {	-- Hidden Amongst the Leaves
-						["qg"] = 133693, -- Malfurion Stormrage
-						["sourceQuests"] = { 52116 }, -- A Soft Glow
-					}),	
-					qa(53617, {	-- Mercy for the Mad
-						["qg"] = 133693, -- Malfurion Stormrage
-						["sourceQuests"] = { 52116 }, -- A Soft Glow
-					}),	
-					qa(52240, {	-- Garden Grove
-						["qg"] = 134578, -- Captain  Delaryn Summermoon
-						["sourceQuests"] = { 
-							52234, -- Hidden Amongst the Leaves
-							53617, -- Mercy for the Mad
-						}, 
-					}),	
-					qa(52245, {	-- Enraged Furblogs
-						["qg"] = 33072, -- Onu <Ancient of Lore>
-						["sourceQuests"] = { 52240 }, -- Garden Grove
-					}),	
-					qa(53551, { -- Elves in the Machine
-						["qg"] = 140728, -- Captain Delaryn Silvermoon
-						["sourceQuests"] = { 52240 }, -- Garden Grove
-					}),
-					qa(52242, {	-- The Wake of Something New
-						["qg"] = 33072, -- Onu <Ancient of Lore>
-						["sourceQuests"] = {
-							52245, -- Enraged Furblogs
-							53551, -- Elves in the Machine
-						}, 
-					}),	
-					qa(53619, { -- Azerite Denial
-						["qg"] = 134578, -- Captain Delaryn Summermoon
-						["sourceQuests"] = { 52242 }, -- The Wake of Something New
-					}),		
-					qa(53621, { -- No Horde Allowed
-						["qg"] = 134578, -- Captain Delaryn Summermoon
-						["sourceQuests"] = { 52242 }, -- The Wake of Something New
-					}),
-					qa(52256, {	-- Malufrion Returns
-						["qg"] = 134578, -- Captain Delaryn Summermoon
-						["sourceQuests"] = { 
-							53619, -- Azerite Denial
-							52256, -- Malfurion Returns
-						},
-					}),	
-					qa(52257, {	-- "Rock" The World
-						["qg"] = 133693, -- Malfurion Stormrage
-						["sourceQuests"] = { 52256 }, -- Malufrion Returns
-					}),	
-					qa(52197, {	-- Long Away
-						["qg"] = 133693, -- Malfurion Stormrage
-						["sourceQuests"] = { 52257 }, -- "Rock" The World
-					}),
-					qa(52279, {	-- A Looming Threat
-						["qg"] = 134578, -- Captain Delaryn Summermoon
-						["sourceQuests"] = { 52279 }, -- A Looming Threat
-					}),	
-					-- Alliance Part II
-					qa(52973, {	-- A Threat From the North
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52279 }, -- A Looming Threat
-					}),	
-					qa(52974, {	-- Rescue Effort
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52973 }, -- A Threat From the North
-					}),	
-					qa(53622, {	-- Defending Lor'danel
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52973 }, -- A Threat From the North
-					}),	
-					qa(52975, {	-- Action This Day
-						--["qg"] = , -- 
-						["sourceQuests"] = { 
-							52974, -- Rescue Effort
-							53622, -- Defending Lor'danel
-						}, 
-					}),	
-					qa(52977, {	-- The Guidance of Our Shan'do
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52975 }, -- Action This Day
-					}),	
-					qa(53095, {	-- A Flicker of Hope
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52977 }, -- The Guidance of Our Shan'do
-					}),	
-					qa(53310, {	-- From the Ashes…
-						["groups"] = {
-							i(163127), -- Smoldering Reeins of the Teldrassil Hippogryph
-						},
-						--["qg"] = , -- 
-						["sourceQuests"] = { 53095 }, -- A Flicker of Hope
-					}),	
-					-- Horde Part I
-					qh(50476),	-- The Warchief Awaits
-					qh(50642, {	-- The Warchief Commands
-						["qg"] = 134554, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = { 50476 }, -- The Warchief Awaits
-					}),	
-					qh(50646, {	-- A Quick Diversion
-						["qg"] = 134574, -- High Overlord Saurfang
-						["sourceQuests"] = { 50642 }, -- The Warchief Commands
-					}),	
-					qh(50647, {	-- Everybody Has a Price
-						["qg"] = 134573, -- Lorash
-						["sourceQuests"] = { 50646 }, -- A Quick Diversion
-					}),	
-					qh(50738, {	-- A Timely Arrival
-						["qg"] = 134573, -- Lorash
-						["sourceQuests"] = { 50647 }, -- Everybody Has a Price
-					}),	
-					qh(50740, {	-- Zoram'gar Outpost
-						["qg"] = 135003, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = { 50738 }, -- A Timely Arrival
-					}),	
-					qh(50772, {	-- On The Prowl
-						["qg"] = 134574, -- High Overlord Saurfang
-						["sourceQuests"] = { 50740 }, -- Zoram'gar Outpost
-					}),	
-					qh(50800, {	-- Into the Woods
-						["qg"] = 134554, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = { 50772 }, -- On The Prowl
-					}),	
-					qh(50823, {	-- Ripe for the Picking
-						["qg"] = 134554, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = { 50800 }, -- Into the Woods
-					}),	
-					qh(50837, {	-- A Quick Flyover
-						["qg"] = 134554, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = { 50823 }, -- Ripe for the Picking
-					}),	
-					qh(50880, {	-- An Unstoppable Force
-						["qg"] = 134554, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = { 50837 }, -- A Quick Flyover
-					}),	
-					qh(53604, {	-- Clearing Them Out
-						["qg"] = 134554, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = { 50880 }, -- An Unstoppable Force
-					}),	
-					qh(53605, {	-- A Glaive Misunderstanding
-						["qg"] = 134554, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = { 50880 }, -- An Unstoppable Force
-					}),	
-					qh(50878, {	-- Blurred Vision
-						["qg"] = 134554, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = {
-							53604, -- Clearing Them Out
-							53605, -- A Glaive Misunderstanding
-						},
-					}),	
-					qh(50879, {	-- The Trees Have Ears
-						["qg"] = 135003, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = { 50878 }, -- Blurred Vision
-					}),	
-					--[[	REMOVED ON LIVE;  Turned into Alliance Quest
-					qh(53550, {	-- A Change in Leadership
-						--["qg"] = , -- 
-						["sourceQuests"] = { 50879 }, -- The Trees Have Ears
-					}),	
-					--]]
-					qh(52436, {	-- The Blackwood Den
-						["qg"] = 135003, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = { 50879 }, -- The Trees Have Ears
-					}),	
-					qh(53606, {	-- Aggressive Inspiration
-						["qg"] = 135003, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = { 52436 }, -- The Blackwood Den
-					}),	
-					qh(52437, {	-- The Start of Something Good
-						["qg"] = 135003, -- Lady Sylvanas Windrunner   -- Might need to be changed
-						["sourceQuests"] = {
-							52436, -- The Blackwood Den
-							53606, -- Aggressive Inspiration
-						}, 
-					}),	
-					qh(53608, {	-- Fueling the Horde War Machine
-						["qg"] = 144346, -- Jux Burstkix
-						["sourceQuests"] = { 52437 }, -- The Start of Something Good
-					}),	
-					qh(53609, {	-- A Very Clear Message
-						["qg"] = 144346, -- Jux Burstkix
-						["sourceQuests"] = { 52437 }, -- The Start of Something Good
-					}),
-					qh(53627, { -- A Gift of Azerite
-						["qg"] = 144346, -- Jux Burstkix
-						["sourceQuests"] = { 
-							53608, -- Fueling the Horde War Machine
-							53609, -- A Very Clear Message
-						},
-					}),
-					qh(52438, {	-- A Wild Ride
-						["qg"] = 135501, -- Zarvik Blastwix
-						["sourceQuests"] = { 53627 }, -- A Gift of Azerite
-					}),	
-					qh(52806, {	-- A Looming Threat
-						["qg"] = 134554, -- Lady Sylvanas Windrunner
-						["sourceQuests"] = { 52438 }, -- A Wild Ride
-					}),	
-					-- Horde Part II
-					qh(52967, {	-- Saurfang Returns
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52806 }, -- A Looming Threat
-					}),	
-					qh(52970, {	-- No Small Mercy
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52967 }, -- Saurfang Returns
-					}),	
-					qh(52971, {	-- Seaside Rendezvous
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52967 }, -- Saurfang Returns
-					}),	
-					qh(53610, {	-- Driving Them Out
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52967 }, -- Saurfang Returns
-					}),	
-					qh(52981, {	-- Killer Queen
-						["groups"] = {
-							i(163128), -- War-Torn Reins of the Undercity Plaguebat
-						},
-						--["qg"] = , -- 
-						["sourceQuests"] = {
-							52970, -- No Small Mercy
-							52971, -- Seaside Rendezvous
-							53610, -- Driving Them Out
-						}, 
-					}),	
+					
 				},
 				["icon"] = "Interface\\Icons\\Spell_Shaman_StormEarthFire",
 			}),
