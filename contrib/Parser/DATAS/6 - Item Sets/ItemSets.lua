@@ -21,8 +21,6 @@ _.GearSets =
 	}),
 	n(-4189, { -- PvP Item Sets
 	}),
---	n(-999999, { -- Staff Picks
---	}),
 	n(-573, { -- Scroll of Resurrection
 	}),
 	n(-5352, { -- Tier Sets

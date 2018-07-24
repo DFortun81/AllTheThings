@@ -6788,7 +6788,7 @@ function app:GetDataCache()
 		
 		-- Gear Sets
 		table.insert(g, GetGearSetCache());
-		]]--
+		--]]
 		
 		-- Raw Source Data (Oh god)
 		--[[

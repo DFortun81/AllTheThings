@@ -479,4 +479,18 @@ i(63074), -- "Behind You!" Shirt
 i(129294), -- Bonespeaker Tatoos
 i(137118), -- The Crone's Shirt
 i(137552), -- Purple Shirt
+
+--  Hiding this information here so it's not spammy in the addon, but provides additional information to the user in Zul'Gurub "Cache of Madness"
+n(52446, { -- Ancient Dwarven Artifact
+	["description"] = "This artifact is used in summoning the boss.",
+}),
+n(52450, { -- Ancient Elven Artifact
+	["description"] = "This artifact is used in summoning the boss.",
+}),
+n(52454, { -- Ancient Fossil
+	["description"] = "This artifact is used in summoning the boss.",
+}),
+n(52452, { -- Ancient Troll Artifact
+	["description"] = "This artifact is used in summoning the boss.",
+}),
 };
