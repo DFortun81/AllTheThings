@@ -369,10 +369,6 @@ AllTheThings.Locales.enUS = {
 		[-127] = "Interface\\Icons\\inv_pick_02", 								-- Lunarfall Excavation
 		[-128] = "Interface\\Icons\\inv_misc_rune_01", 							-- Lunarfall Inn
 		[-129] = "Interface\\Icons\\garrison_building_magetower", 				-- Mage Tower
-		[-130] = "Interface\\Icons\\inv_mail_thunderlordclan_b_01helm", 		-- Thunderlord Set
-		[-131] = "Interface\\Icons\\inv_helm_cloth_shadowmoonclan_b_01", 		-- Shadowmoon Set
-		[-132] = "Interface\\Icons\\inv_plate_blackrockclan_b_01helm", 			-- Blackrock Set
-		[-133] = "Interface\\Icons\\inv_helm_mail_warsongclan_b_01", 			-- Warsong Set
 		[-134] = "Interface\\Icons\\inv_bannerpvp_01", 							-- Orgrimmar Set
 		[-135] = "Interface\\Icons\\inv_bannerpvp_02", 							-- Stormwind Set
 		[-136] = "Interface\\Icons\\achievement_bg_defendxtowers_av", 			-- Garrison Invasion
@@ -922,11 +918,12 @@ AllTheThings.Locales.enUS = {
 		[-127] = select(2,C_Garrison.GetBuildingInfo(61)),	 					-- Lunarfall Excavation / Frostwall Mine
 		[-128] = select(2,C_Garrison.GetBuildingInfo(34)), 						-- Lunarfall Inn / Frostwall Tavern
 		[-129] = select(2,C_Garrison.GetBuildingInfo(37)),	 					-- Mage Tower / Spirit Lodge
+
+		--[-130] = select(1,AllTheThings.GetMapName(47)),	-- Duskwood Active
+		--[-131] = select(1,AllTheThings.GetMapName(26)).." "..GetSpellInfo(133137),	-- The Hinterlands Active
+		--[-132] = select(1,AllTheThings.GetMapName(69)).." "..GetSpellInfo(133137),	-- Feralas Active
+		--[-133] = select(1,AllTheThings.GetMapName(47)).." "..GetSpellInfo(78741),	-- Duskwood Activated
 --Transmog Sets
-		[-130] = "Thunderlord Set",
-		[-131] = "Shadowmoon Set",
-		[-132] = "Blackrock Set",
-		[-133] = "Warsong Set",
 		[-134] = "Orgrimmar Set",
 		[-135] = "Stormwind Set",
 --Invasions
@@ -950,6 +947,10 @@ AllTheThings.Locales.enUS = {
 		[-152] = "Garrison Campaign",
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
+		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
+		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 130),					-- Level 130
+		--[-157] = select(1,AllTheThings.GetMapName(26)).." "..GetSpellInfo(78741),	-- The Hinterlands Activated
+		--[-158] = select(1,AllTheThings.GetMapName(69)).." "..GetSpellInfo(78741),	-- Feralas Activated
 -- Expansions
 		[-160] = TUTORIAL_TITLE53,												-- Mounts
 -- Other

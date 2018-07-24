@@ -256,38 +256,51 @@ _.ClassHalls =
 			m(715, { -- Emerald Dreamway
 				["groups"] = {
 					i(139552, { -- Feather of the Moonspirit  [Lucetia Note: Leave as is for the moment.  My goal is to convert the Quest #XXXX to the zone names without using maps]
+						
 						["groups"] = {
 							q(44326, { -- Daily Dreamway Event Roll
 								["groups"] = {
-									q(44327, { -- Owlcat Stone Activate [Feralas]
+									n(-132, { -- Feralas Active
 										["groups"] = {
-											q(44331, { -- Owlcat Stone Touched [Feralas]
+											n(-158, { -- Feralas Activated
+												["questID"] = 44331, -- Owlcat Stone Touched [Feralas]
 												["description"] = "|CFFFF0000This quest indicates if you have activated the Feralas Owlcat Stone.|r",
 												["sourceQuests"] = { 44327 }, -- Owlcat Stone Touched [Feralas]
+												["icon"] = "Interface\\Icons\\achievement_zone_feralas",
 											}),
 										},
+										["questID"] = 44327, -- Owlcat Stone Activate [Feralas]
 										["isBreadcrumb"] = true,
 										["description"] = "|CFFFF0000If this quest has a checkmark next to it, then that means the stone is active.|r",
+										["icon"] = "Interface\\Icons\\achievement_zone_feralas",
 									}),
-									q(44328, { -- Owlcat Stone Activate [Hinterlands]
+									n(-131, { -- The Hinterlands Active
 										["groups"] = {
-											q(44332, { -- Owlcat Stone Touched [Hinterlands]
+											n(-157, { -- The Hinterlands Activated
+												["questID"] = 44332, -- Owlcat Stone Touched [Hinterlands]
 												["description"] = "|CFFFF0000This quest indicates if you have activated the Hinterlands Owlcat Stone.|r",
 												["sourceQuests"] = { 44328 }, -- Owlcat Stone Touched [Hinterlands]
+												["icon"] = "Interface\\Icons\\achievement_zone_hinterlands_01",
 											}),
 										},
+										["questID"] = 44328, -- Owlcat Stone Activate [Hinterlands]
 										["isBreadcrumb"] = true,
 										["description"] = "|CFFFF0000If this quest has a checkmark next to it, then that means the stone is active.|r",
+										["icon"] = "Interface\\Icons\\achievement_zone_hinterlands_01",
 									}),
-									q(44329, { -- Owlcat Stone Activate [Duskwood]
+									n(-130, { -- Duskwood Active
 										["groups"] = {
-											q(44330, { -- Owlcat Stone Touched [Duskwood]
+											n(133, { -- Duskwood Activated
+												["questID"] = 44330, -- Owlcat Stone Touched [Duskwood]
 												["description"] = "|CFFFF0000This quest indicates if you have activated the Duskwood Owlcat Stone.|r",
 												["sourceQuests"] = { 44329 }, -- Owlcat Stone Touched [Duskwood]
+												["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
 											}),
 										},
+										["questID"] = 44329, -- Owlcat Stone Activate [Duskwood]
 										["isBreadcrumb"] = true,
 										["description"] = "|CFFFF0000If this quest has a checkmark next to it, then that means the stone is active.|r",
+										["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
 									}),
 									{ -- Fangs of Ashamane
 										["ignoreSource"] = true,
@@ -296,9 +309,11 @@ _.ClassHalls =
 									},
 								},
 								["description"] = "|CFFFF0000If this quest has a checkmark next to it, then check below which stone is active.|r",
+								["icon"] = "Interface\\Icons\\inv_misc_druidstone04",
 							}),
 						},
 						["description"] = "|CFFFF0000Turn on \"Show Incomplete Quests\" to see which stones you are still missing.  Each quest has a descripton added to it on it's location.|r"
+						
 					}),
 				},
 				["icon"] = "Interface\\Icons\\spell_arcane_portalshattrath", -- Dream Portal Icon
