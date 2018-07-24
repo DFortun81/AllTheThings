@@ -1559,6 +1559,28 @@ _.WorldEvents =
 									},
 									["lvl"] = 98,
 								}),
+								un(2, i(71330)),	-- Seal of the Petrified Pumpkin [Level 85] (started here)
+								un(2, i(88167)),	-- Band of the Petrified Pumpkin [Level 90]
+								un(2, i(117363)),	-- Band of the Petrified Pumpkin [Level 100]
+								i(143901),			-- Band of the Petrified Pumpkin [Level 110+]
+								un(2, i(34075)),	-- Ring of Ghoulish Delight [Level 70]
+								un(2, i(49121)),	-- Ring of Ghoulish Glee [Level 80]
+								un(2, i(71327)),	-- Band of Ghoulish Glee [Level 85]
+								un(2, i(88168)),	-- Seal of Ghoulish Glee [Level 90]
+								un(2, i(117364)),	-- Seal of Ghoulish Glee [Level 100]
+								i(143904),			-- Seal of Ghoulish Glee [Level 110+]
+								un(2, i(34073)),	-- The Horseman's Signet Ring [Level 70]
+								un(2, i(71328)),	-- The Horseman's Signet [Level 80]
+								un(2, i(71328)),	-- The Horseman's Signet [Level 85]
+								un(2, i(88169)),	-- The Horseman's Ring [Level 90]
+								un(2, i(117365)),	-- The Horseman's Ring [Level 100]
+								i(143903),			-- The Horseman's Ring [Level 110+]
+								un(2, i(34074)),	-- Witches Band [Level 70]
+								un(2, i(49124)),	-- Wicked Witch's Band [Level 80]
+								un(2, i(71329)),	-- Wicked Witch's Ring [Level 85]
+								un(2, i(88166)),	-- Wicked Witch's Signet [Level 90]
+								un(2, i(117362)),	-- Wicked Witch's Signet [Level 100]
+								i(143902),			-- Wicked Witch's Signet [Level 110+]
 							},
 							["description"] = "|cff66ccffYou can only loot the Loot-Stuffed/Filled Pumpkins once per day per toon by completing your first run of the day.|r",
 							["maps"] = { 435 },	-- Scarlet Monastery
