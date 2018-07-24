@@ -500,14 +500,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(28708)),	-- Hero's Call: Outland!
 					qg(, qa(28563)),	-- Hero's Call: Redridge Mountains!
 --]]					
-					qg(107574, qa(26365, { 		-- Hero's Call: Redridge Mountains! (add'l QG 29611)
-						i(60689),	-- Belt of Unsolvable Problems
-						i(60690),	-- Doody Boots
-						i(131517),	-- Doody Shoes
-						i(60688),	-- Parker's Yardstick
-						i(60691),	-- Unfortunate Treads
-					})),
---[[					
+					--[[					
 					qg(, qa(28582)),	-- Hero's Call: Searing Gorge!
 					qg(, qa(28551)),	-- Hero's Call: Southern Barrens!
 					qg(, qa(28675)),	-- Hero's Call: Swamp of Sorrows!

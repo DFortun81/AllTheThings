@@ -3352,7 +3352,7 @@ app.BaseFollower = {
 			local info = t.info;
 			return info and info.name;
 		elseif key == "description" then
-			return "Followers must be collected on a per-character basis. You can filter this out by unchecking Settings -> Mini List -> Followers.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
+			return "Followers must be collected on a per-character basis. \n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
 		elseif key == "info" then
 			-- https://wow.gamepedia.com/API_C_Garrison.GetFollowerInfo
 			return C_Garrison.GetFollowerInfo(t.followerID);
