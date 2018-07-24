@@ -45,12 +45,14 @@ _.GearSets =
 				i(144281), -- Skullflower's Haemostasis
 				i(137075), -- Tak'theritrix's Shoulderpads
 				i(132376), -- Acherus Drapes
-				i(102248), -- Fen-Yu, Fury of Xuen
-				i(102249), -- Gon-Lu, Strength of Xuen
-				i(102247), -- Jina-Kang, Kindness of Chi-Ji
-				i(102245), -- Qian-Le, Courage of Niuzao
-				i(102250), -- Qian-Ying, Fortitude of Niuzao
-				i(102246), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
+				un(4, i(102249)), -- Gon-Lu, Strength of Xuen
+				un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
+				un(4, i(102245)), -- Qian-Le, Courage of Niuzao
+				un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
+				un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(124634)), -- Thorasus, the Stone Heart of Draenor [Strength DPS]
+				un(4, i(124637)), -- Sanctus, Sigil of the Unbroken [Agility / Strength Tank]
 				i(151796), -- Cold Heart
 				i(151795), -- Soulflayer's Corruption
 				i(132365), -- Shackles of Brynadaor
@@ -85,14 +87,16 @@ _.GearSets =
 				i(137062), -- The Emerald Dreamcatch
 				i(137072), -- Aman'Thul's Wisdom
 				i(144295), -- Lady and the Child
-				i(102248), -- Fen-Yu, Fury of Xuen
-				i(151802), -- Fury of Nature
-				i(102249), -- Gon-Lu, Strength of Xuen
-				i(102247), -- Jina-Kang, Kindness of Chi-Ji
-				i(102245), -- Qian-Le, Courage of Niuzao
-				i(102250), -- Qian-Ying, Fortitude of Niuzao
-				i(151800), -- Radiant Moonlight
-				i(102246), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
+				un(4, i(102249)), -- Gon-Lu, Strength of Xuen
+				un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
+				un(4, i(102245)), -- Qian-Le, Courage of Niuzao
+				un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
+				un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(124635)), -- Nithramus, the All-Seer [Intellect DPS]
+				un(4, i(124636)), -- Maalus, the Blood Drinker [Agility DPS]
+				un(4, i(124637)), -- Sanctus, Sigil of the Unbroken [Agility / Strength Tank]
+				un(4, i(124638)), -- Etheralus, the Eternal Reward [Intellect Healing]
 				i(137015), -- Ekowraith, Creator of Worlds
 				i(137095), -- Edraith, Bonds of Aglaya
 				i(137056), -- Luffa Wrappings
@@ -119,20 +123,23 @@ _.GearSets =
 				i(137042), -- Tearstone of Elune
 				i(151636), -- Soul of the Archdruid
 				i(144258), -- Velen's Future Sight
+				i(151800), -- Radiant Moonlight
+				i(151802), -- Fury of Nature
 			}),
 			cl(3, { 	-- Hunter
 				i(19019), -- Thunderfury, Blessed Blade of the Windseeker (Warlock, Mage, Rogue, Monk, Demon Hunter, Hunter, Paladin, Warrior, Death Knight)
 				i(34334), -- Thori'dal, the Stars' Fury
+				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
+				un(4, i(102249)), -- Gon-Lu, Strength of Xuen
+				un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
+				un(4, i(102245)), -- Qian-Le, Courage of Niuzao
+				un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
+				un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(124636)), -- Maalus, the Blood Drinker [Agility DPS]
 				i(137064), -- The Shadow Hunter's Voodoo Mask
 				i(144326), -- The Mantle of Command
 				i(151803), -- Celerity of the Windrunners
-				i(102248), -- Fen-Yu, Fury of Xuen
-				i(102249), -- Gon-Lu, Strength of Xuen
-				i(102247), -- Jina-Kang, Kindness of Chi-Ji
-				i(102245), -- Qian-Le, Courage of Niuzao
-				i(102250), -- Qian-Ying, Fortitude of Niuzao
 				i(151807), -- Unseen Predator's Cloak
-				i(102246), -- Xing-Ho, Breath of Yu'lon
 				i(144361), -- Butcher's Bone Apron
 				i(151805), -- Parsel's Tongue
 				i(137101), -- Call of the Wild
@@ -160,6 +167,13 @@ _.GearSets =
 				i(22589), -- Atiesh, Greatstaff of the Guardian (Mage)
 				i(71086), -- Dragonwrath, Tarecgosa's Rest (Priest, Mage, Lock, Druid, Shaman)
 				i(19019), -- Thunderfury, Blessed Blade of the Windseeker (Warlock, Mage, Rogue, Monk, Demon Hunter, Hunter, Paladin, Warrior, Death Knight)
+				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
+				un(4, i(102249)), -- Gon-Lu, Strength of Xuen
+				un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
+				un(4, i(102245)), -- Qian-Le, Courage of Niuzao
+				un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
+				un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(124635)), -- Nithramus, the All-Seer [Intellect DPS]
 				i(132863), -- Darckli's Dragonfire Diadem
 				i(144274), -- Gravity Seal
 				i(151810), -- Shattered Fragments of Sindragosa
@@ -167,12 +181,6 @@ _.GearSets =
 				i(151809), -- Contained Infernal Core
 				i(144260), -- Ice Time
 				i(151808), -- Mantle of the First Kirin Tor
-				i(102248), -- Fen-Yu, Fury of Xuen
-				i(102249), -- Gon-Lu, Strength of Xuen
-				i(102247), -- Jina-Kang, Kindness of Chi-Ji
-				i(102245), -- Qian-Le, Courage of Niuzao
-				i(102250), -- Qian-Ying, Fortitude of Niuzao
-				i(102246), -- Xing-Ho, Breath of Yu'lon
 				i(133977), -- Belo'vir's Final Stand
 				i(138140), -- Magtheridon's Banished Bracers
 				i(132406), -- Marquee Bindings of the Sun King
@@ -196,18 +204,22 @@ _.GearSets =
 				i(19019), -- Thunderfury, Blessed Blade of the Windseeker (Warlock, Mage, Rogue, Monk, Demon Hunter, Hunter, Paladin, Warrior, Death Knight)
 				i(32837), -- Warglaive of Azzinoth (Rogue, Monk, Demon Hunter, Warrior, Death Knight)
 				i(32838), -- Warglaive of Azzinoth (Rogue, Monk, Demon Hunter, Warrior, Death Knight)
+				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
+				un(4, i(102249)), -- Gon-Lu, Strength of Xuen
+				un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
+				un(4, i(102245)), -- Qian-Le, Courage of Niuzao
+				un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
+				un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(124635)), -- Nithramus, the All-Seer [Intellect DPS]
+				un(4, i(124636)), -- Maalus, the Blood Drinker [Agility DPS]
+				un(4, i(124637)), -- Sanctus, Sigil of the Unbroken [Agility / Strength Tank]
+				un(4, i(124638)), -- Etheralus, the Eternal Reward [Intellect Healing]
 				i(137063), -- Fundamental Observation
 				i(151811), -- The Wind Blows
 				i(151788), -- Stormstout's Last Gasp
 				i(137073), -- Unison Spaulders
 				i(137019), -- Cenedril, Reflector of Hatred
 				i(151784), -- Doorway to Nowhere
-				i(102248), -- Fen-Yu, Fury of Xuen
-				i(102249), -- Gon-Lu, Strength of Xuen
-				i(102247), -- Jina-Kang, Kindness of Chi-Ji
-				i(102245), -- Qian-Le, Courage of Niuzao
-				i(102250), -- Qian-Ying, Fortitude of Niuzao
-				i(102246), -- Xing-Ho, Breath of Yu'lon
 				i(144277), -- Anvil-Hardened Wristwraps
 				i(137097), -- Drinking Horn Cover
 				i(137057), -- Hidden Master's Forbidden Touch
@@ -237,20 +249,24 @@ _.GearSets =
 				i(17182), -- Sulfuras, Hand of Ragnaros (Druid, Shaman, Paladin, Warrior, Death Knight)
 				i(19019), -- Thunderfury, Blessed Blade of the Windseeker (Warlock, Mage, Rogue, Monk, Demon Hunter, Hunter, Paladin, Warrior, Death Knight)
 				i(46017), -- Val'anyr, Hammer of Ancient Kings (Priest, Druid, Monk, Shaman, Paladin)
+				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
+				un(4, i(102249)), -- Gon-Lu, Strength of Xuen
+				un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
+				un(4, i(102245)), -- Qian-Le, Courage of Niuzao
+				un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
+				un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(124635)), -- Nithramus, the All-Seer [Intellect DPS]
+				un(4, i(124637)), -- Sanctus, Sigil of the Unbroken [Agility / Strength Tank]
+				un(4, i(124638)), -- Etheralus, the Eternal Reward [Intellect Healing]
 				i(137065), -- Justice Gaze
 				i(144275), -- Saruan's Resolve
 				i(151782), -- The Topless Tower
 				i(144358), -- Ashes to Dust
 				i(137076), -- Obsidian Stone Spaulders
 				i(151812), -- Pillars of Inmost Light
-				i(102248), -- Fen-Yu, Fury of Xuen
-				i(102249), -- Gon-Lu, Strength of Xuen
-				i(102247), -- Jina-Kang, Kindness of Chi-Ji
-				i(144273),  -- Maraad's Dying Breath
-				i(102245), -- Qian-Le, Courage of Niuzao
-				i(102250), -- Qian-Ying, Fortitude of Niuzao
 				i(137020), -- Whisper  of the Nathrezim
-				i(102246), -- Xing-Ho, Breath of Yu'lon
+				i(144273),  -- Maraad's Dying Breath
+				un(4, i(124634)), -- Thorasus, the Stone Heart of Draenor [Strength DPS]
 				i(137017), -- Breastplate of the Golden Val'kyr
 				i(151813), -- Scarlet Inquisitor's Expurgation
 				i(140846), -- Aegisjalmur, the Armguards of Awe
@@ -276,19 +292,21 @@ _.GearSets =
 				i(22631), -- Atiesh, Greatstaff of the Guardian (Priest)
 				i(71086), -- Dragonwrath, Tarecgosa's Rest (Priest, Mage, Lock, Druid, Shaman)
 				i(46017), -- Val'anyr, Hammer of Ancient Kings (Priest, Druid, Monk, Shaman, Paladin)
+				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
+				un(4, i(102249)), -- Gon-Lu, Strength of Xuen
+				un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
+				un(4, i(102245)), -- Qian-Le, Courage of Niuzao
+				un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
+				un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(124635)), -- Nithramus, the All-Seer [Intellect DPS]
+				un(4, i(124638)), -- Etheralus, the Eternal Reward [Intellect Healing]
 				i(144244), -- Kam Xi'raff
 				i(151787), -- The Alabaster Lady
 				i(133971), -- Zenk'aram, Iridi's Anadem
 				i(146666), -- Celumbra, the Night's Dichotomy (Mage, Priest, Lock)
 				i(151786), -- Inner Hallation
 				i(132437), -- Mother Shahraz's Seduction
-				i(102248), -- Fen-Yu, Fury of Xuen
-				i(102249), -- Gon-Lu, Strength of Xuen
-				i(102247), -- Jina-Kang, Kindness of Chi-Ji
-				i(102245), -- Qian-Le, Courage of Niuzao
-				i(102250), -- Qian-Ying, Fortitude of Niuzao
 				i(137109), -- X'anshi, Shroud of Archbishop Benedictus
-				i(102246), -- Xing-Ho, Breath of Yu'lon
 				i(144438), -- Zeks Exterminatus
 				i(132861), -- Estel, Dejahna's Inspiration
 				i(151814), -- Heart of the Void					
@@ -323,16 +341,17 @@ _.GearSets =
 				i(19019), -- Thunderfury, Blessed Blade of the Windseeker (Warlock, Mage, Rogue, Monk, Demon Hunter, Hunter, Paladin, Warrior, Death Knight)
 				i(32837), -- Warglaive of Azzinoth (Rogue, Monk, Demon Hunter, Warrior, Death Knight)
 				i(32838), -- Warglaive of Azzinoth (Rogue, Monk, Demon Hunter, Warrior, Death Knight)
+				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
+				un(4, i(102249)), -- Gon-Lu, Strength of Xuen
+				un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
+				un(4, i(102245)), -- Qian-Le, Courage of Niuzao
+				un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
+				un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(124636)), -- Maalus, the Blood Drinker [Agility DPS]
 				i(151815), -- The Empty Crown
 				i(144236), -- Mantle of the Master Assassin
-				i(102248), -- Fen-Yu, Fury of Xuen
-				i(102249), -- Gon-Lu, Strength of Xuen
-				i(102247), -- Jina-Kang, Kindness of Chi-Ji
-				i(102245), -- Qian-Le, Courage of Niuzao
-				i(102250), -- Qian-Ying, Fortitude of Niuzao
 				i(151817), -- The Curse of Restlessness
 				i(137021), -- The Dreadlord's Deceit
-				i(102246), -- Xing-Ho, Breath of Yu'lon
 				i(137100), -- Denial of the Half-Giants
 				i(137099), -- Greenskin's Waterlogged Wristcuffs
 				i(137098), -- Zoldyck Family Training Shackles
@@ -356,14 +375,17 @@ _.GearSets =
 				i(71086), -- Dragonwrath, Tarecgosa's Rest (Priest, Mage, Lock, Druid, Shaman)
 				i(17182), -- Sulfuras, Hand of Ragnaros (Druid, Shaman, Paladin, Warrior, Death Knight)
 				i(46017), -- Val'anyr, Hammer of Ancient Kings (Priest, Druid, Monk, Shaman, Paladin)
+				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
+				un(4, i(102249)), -- Gon-Lu, Strength of Xuen
+				un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
+				un(4, i(102245)), -- Qian-Le, Courage of Niuzao
+				un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
+				un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(124635)), -- Nithramus, the All-Seer [Intellect DPS]
+				un(4, i(124636)), -- Maalus, the Blood Drinker [Agility DPS]
+				un(4, i(124638)), -- Etheralus, the Eternal Reward [Intellect Healing]
 				i(143732), -- Uncertain Reminder
 				i(137074), -- Echoes of the Great Sundering
-				i(102248), -- Fen-Yu, Fury of Xuen
-				i(102249), -- Gon-Lu, Strength of Xuen
-				i(102247), -- Jina-Kang, Kindness of Chi-Ji
-				i(102245), -- Qian-Le, Courage of Niuzao
-				i(102250), -- Qian-Ying, Fortitude of Niuzao
-				i(102246), -- Xing-Ho, Breath of Yu'lon
 				i(137616), -- Emalon's Charged Core
 				i(151785), -- Fire in the Deep
 				i(137084), -- Akainu's Absolute Justice
@@ -393,19 +415,20 @@ _.GearSets =
 				i(22630), -- Atiesh, Greatstaff of the Guardian (Warlock)
 				i(71086), -- Dragonwrath, Tarecgosa's Rest (Priest, Mage, Lock, Druid, Shaman)
 				i(19019), -- Thunderfury, Blessed Blade of the Windseeker (Warlock, Mage, Rogue, Monk, Demon Hunter, Hunter, Paladin, Warrior, Death Knight)
+				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
+				un(4, i(102249)), -- Gon-Lu, Strength of Xuen
+				un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
+				un(4, i(102245)), -- Qian-Le, Courage of Niuzao
+				un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
+				un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(124635)), -- Nithramus, the All-Seer [Intellect DPS]
 				i(132394), -- Hood of Eternal Disdain
 				i(144385), -- Wakener's Loyalty
 				i(146666), -- Celumbra, the Night's Dichotomy (Mage, Priest, Lock)
 				i(144369), -- Lessons of Space-Time
 				i(132393), -- Recurrent Ritual
-				i(102248), -- Fen-Yu, Fury of Xuen
-				i(102249), -- Gon-Lu, Strength of Xuen
-				i(102247), -- Jina-Kang, Kindness of Chi-Ji
 				i(132375), -- Odr, Shawl of the Ymirjar
-				i(102245), -- Qian-Le, Courage of Niuzao
-				i(102250), -- Qian-Ying, Fortitude of Niuzao
 				i(144364), -- Reap and Sow
-				i(102246), -- Xing-Ho, Breath of Yu'lon
 				i(151821), -- The Master Harvester
 				i(132407), -- Magistrike Restraits
 				i(132379), -- Sin'dorei Spite
@@ -440,6 +463,8 @@ _.GearSets =
 				un(4, i(102245)), -- Qian-Le, Courage of Niuzao
 				un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
 				un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+				un(4, i(124634)), -- Thorasus, the Stone Heart of Draenor [Strength DPS]
+				un(4, i(124637)), -- Sanctus, Sigil of the Unbroken [Agility / Strength Tank]
 				i(137053), -- Kazzalax, Fujieda's Fury
 				i(137018), -- Destiny Driver
 				i(137107), -- Mannoroth's Bloodletting Manacles
