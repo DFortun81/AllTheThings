@@ -3297,9 +3297,6 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\Ability_Racial_PackHobgoblin",
 				}),					
 				n(-2, { 	-- Vendors
-					n(97012, { 	-- Abra Cadabra
-						i(47658), -- Brimstone Igniter
-					}),
 					n(93528, { 	-- Angelique Butler <First Aid Supplies>
 						i(44694), -- Antiseptic-Soaked Dressing
 						i(44693), -- Wound Dressing
@@ -4764,12 +4761,17 @@ _.Zones =
 					}),
 					n(93539, { 	-- Hobart Grapplehammer <Engineering Supplies>
 						{ 	-- Titanstrike Hunter Hidden Appearance [Lucetia: Putting this here because we want it to stand out]
-							["ignoreSource"] = true,
-							["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_bow_2h_crossbow_artifactwindrunner_d_05.mdx",
-							["modelScale"] = 0.95,
-							["modelRotation"] = 45,
-							["classes"] = { 3 },
-							["artifactID"] = 918,
+							["itemID"] = 139555, -- Designs of the Grand Architect
+							["groups"] = {
+								{
+									["ignoreSource"] = true,
+									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_bow_2h_crossbow_artifactwindrunner_d_05.mdx",
+									["modelScale"] = 0.95,
+									["modelRotation"] = 45,
+									["classes"] = { 3 },
+									["artifactID"] = 918,
+								},
+							},
 						},
 						i(144328, { -- Boon of the Builder
 							i(136630),	-- "Twirling Bottom" Repeater
@@ -7778,6 +7780,9 @@ _.Zones =
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red", -- Red
 								
 						}),						
+					}),
+					n(97012, { 	-- Wanda Chanter
+						i(47658), -- Brimstone Igniter
 					}),
 					n(99867, { 	-- Warpweaver Tuviss (Neutral / Dalaran)
 						i(151116), -- Fashionable Undershirt
