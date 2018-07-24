@@ -27,10 +27,6 @@ _.Zones =
 						["u"] = 17,
 					}),
 				}),								
-				n(0, {		-- Zone Drops
-					desc(i(2698), "Can drop from any mob in the zone, would recommend farming the murlocs in the north."),	-- Recipe: Cooked Crab Claw
-					desc(i(728), "Can drop from any mob in the zone, would recommend farming the Riverpaw Gnolls."),		-- Recipe: Westfall Stew
-				}),
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken
 					p(385), 	-- Mouse
@@ -278,9 +274,6 @@ _.Zones =
 						}),						
 						
 					}), 
-					n(594, { 	-- Defias Henchman
-						dr(03.0, i(1927)),		-- Deadmines Cleaver
-					}),				
 					n(573, { 	-- Foe Reaper 4000
 						dr(12.0, i(6269)),	-- Pioneer Trousers
 						dr(11.0, i(6267)),	-- Disciple's Pants
@@ -397,18 +390,6 @@ _.Zones =
 							un(7, i(6205)),		-- Burrowing Shovel
 						}),				
 					}),					
-					n(517, {	-- Murloc Oracle
-						dr(1, i(1405)),			-- Foamspittle Staff
-					}),
-					n(123, {	-- Riverpaw Mongrel
-						dr(3, i(821)),			-- Riverpaw Leather Vest
-					}),
-					n(453, {	-- Riverpaw Mystic
-						dr(1, i(1391)),			-- Riverpaw Mystic Staff
-					}),
-					n(831, {	-- Sea Crawler
-						dr(1.9, i(2088)),		-- Long Crawler Limb
-					}),
 					n(506, { 	-- Sergeant Brashclaw
 						dr(12.0, i(6512)),	-- Disciple's Robe
 						dr(09.0, i(6268)),	-- Pioneer Tunic
@@ -511,7 +492,7 @@ _.Zones =
 						["description"] = "For a walkthrough of how to obtain this mount. Go to Special Header under Outdoor Zones - Broken Isles - Dalaran.",
 					}),										
 				}),
-				na( -2, {	-- Vendors
+				na(-2, {	-- Vendors
 					n(844, {	-- Antonio Perelli <Traveling Salesman>
 						["groups"] = {
 							i(4795),	-- Bear Bracers
@@ -537,6 +518,25 @@ _.Zones =
 					}),
 					n(1668, {	-- William MacGregor <Bowyer>
 						i(11304),	-- Fine Longbow
+					}),
+				}),
+				n(  0, {	-- Zone Drops
+					n(594, { 	-- Defias Henchman
+						dr(03.0, i(1927)),		-- Deadmines Cleaver
+					}),
+					n(517, {	-- Murloc Oracle
+						dr(1, i(1405)),			-- Foamspittle Staff
+					}),
+					desc(i(2698), "Can drop from any mob in the zone, would recommend farming the murlocs in the north."),	-- Recipe: Cooked Crab Claw
+					desc(i(728), "Can drop from any mob in the zone, would recommend farming the Riverpaw Gnolls."),		-- Recipe: Westfall Stew
+					n(123, {	-- Riverpaw Mongrel
+						dr(3, i(821)),			-- Riverpaw Leather Vest
+					}),
+					n(453, {	-- Riverpaw Mystic
+						dr(1, i(1391)),			-- Riverpaw Mystic Staff
+					}),
+					n(831, {	-- Sea Crawler
+						dr(1.9, i(2088)),		-- Long Crawler Limb
 					}),
 				}),
 				n(-40, {	-- Legacy
