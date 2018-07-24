@@ -26,6 +26,8 @@ local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
 local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
 local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
 local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
+local C_Map_GetMapDisplayInfo = C_Map.GetMapDisplayInfo;
+local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
 local EJ_GetCreatureInfo = _G["EJ_GetCreatureInfo"];
 local EJ_GetEncounterInfo = _G["EJ_GetEncounterInfo"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
@@ -2614,7 +2616,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 			if self:NumLines() > 0 and GetDataMember("ShowProgress") then
 				local rightSide = _G[self:GetName() .. "TextRight1"];
 				if rightSide then
-					if group.total and (group.total > 1 or not group.collectible) then
+					if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
 						rightSide:SetText(GetProgressColorText(group.progress, group.total));
 					elseif group.collectible then
 						rightSide:SetText(GetCollectionText(group.collected));
