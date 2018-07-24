@@ -101,7 +101,7 @@ _.Zones =
 							["description"] = "This is the summonable version of this rare. It drops more things.",
 							["groups"] = {
 								dr(6, i(103982)),	-- Burden of Eternity
-								dr(1.9, i(86574)),	-- Elixir of Ancient Knowledge
+								un(2, i(86574)),	-- Elixir of Ancient Knowledge
 							},
 						}),
 					}),
