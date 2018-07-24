@@ -17,7 +17,6 @@ _.Instances =
 						}),	
 					}),
 					d(1, {		-- Normal
-						
 						["groups"] = {
 							cr(94960, e(1485, {	-- Hymdall
 								i(134216),
@@ -54,7 +53,8 @@ _.Instances =
 								i(134212),
 								i(133630),
 								i(134193),
-								i(133623)
+								i(133623),
+								i(140660),	-- Haft of the God-King
 							})),
 							cr(95676, e(1489, {	-- Odyn
 								i(139281),
@@ -74,7 +74,6 @@ _.Instances =
 						}
 					}),
 					d(2, {		-- Heroic
-						
 						["lvl"] = 110,
 						["groups"] = {
 							cr(94960, e(1485, {	-- Hymdall
@@ -112,7 +111,8 @@ _.Instances =
 								i(134212),
 								i(133630),
 								i(134193),
-								i(133623)
+								i(133623),
+								i(140660),	-- Haft of the God-King
 							})),
 							cr(95676, e(1489, {	-- Odyn
 								i(136777),
@@ -132,7 +132,6 @@ _.Instances =
 						}
 					}),
 					d(23, {		-- Mythic
-						
 						["lvl"] = 110,
 						["groups"] = {
 							cr(94960, e(1485, {	-- Hymdall
@@ -170,7 +169,8 @@ _.Instances =
 								i(134212),
 								i(133630),
 								i(134193),
-								i(133623)
+								i(133623),
+								i(140660),	-- Haft of the God-King
 							})),
 							cr(95676, e(1489, {	-- Odyn
 								i(136777),

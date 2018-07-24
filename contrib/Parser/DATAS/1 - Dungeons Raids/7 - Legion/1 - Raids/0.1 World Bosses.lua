@@ -140,7 +140,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(141418),
 					i(141420),
 					i(141414),
-					i(141541)
+					i(141541),
+					i(140658),	-- Skull of Nithogg
 				},
 				["questID"] = 42270, -- Change to tracking quest later.
 				["isRaid"] = true,
@@ -152,7 +153,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(141481),
 					i(141495),
 					i(141487),
-					i(141491)
+					i(141491),
+					i(140659),	-- Skull of Shar'thos
 				},
 				["questID"] = 42779, -- Change to tracking quest later.
 				["isRaid"] = true,
@@ -194,9 +196,6 @@ _.Instances = { tier(7, {	-- Legion
 				["isRaid"] = true,
 				["maps"] = { 630 }, -- Azsuna
 			})),
-			
-			
-
 		},
 		["isRaid"] = true,
 		["lvl"] = 110,

@@ -660,6 +660,31 @@ _.Zones =
 					}),
 					n(127581, { -- The Many-Faced Devourer
 						["groups"] = {
+							{
+								["itemID"] = 152786,	-- Call of the Devourer
+								["description"] = "You must have this item in your inventory for the other items to drop.",
+								["crs"] = {
+									126193,	-- Antoran Defender
+									126171,	-- Tormented Ritualist
+								},
+								["groups"] = {
+									{
+										["itemID"] = 152993,	-- Ur'zul Bone
+										["description"] = "Located at 50.4 56.1 next to Altar.\n\nThanks Boxofbeer for the info.",
+										["coord"] = { 50.4, 56.1 },
+									},
+									{
+										["itemID"] = 152992,	-- Imp Bone
+										["description"] = "Can be found inside imp cave, entrance is at 65.6 26.3.\n\nThanks Boxofbeer for the info.",
+										["coord"] = { 65.6, 26.3 },
+									},
+									{
+										["itemID"] = 152991,	-- Fiend Bone
+										["description"] = "Can be found at 52.4 35.3 next to black pillar left of trap.\n\nThanks Boxofbeer for the info.",
+										["coord"] = { 52.4, 35.3 },
+									},
+								},
+							},
 							i(153195), -- Uuna's Doll
 						},
 						["questID"] = 48966,

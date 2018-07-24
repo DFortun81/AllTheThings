@@ -389,8 +389,19 @@ _.Zones =
 					qa( 10040),	-- Who Are They?
 					qh( 10041),	-- Who Are They?
 					q(9979),	-- Wind Trader Lathrai
-					q(11004),	-- World of Shadows	
 --]]
+					{
+						["questID"] = 11004,	-- World of Shadows
+						["qg"] = 23042,		-- Quest Giver: Severin <Skyguard Medic>
+						["groups"] = {
+							{
+								["itemID"] = 32388,	-- Shadow Dust
+								["groups"] = {
+									i(32446),	-- Elixir of Shadows
+								},
+							},
+						},
+					},
 					faction(1031, {	-- Sha'tari Skyguard
 						["groups"] = {
 							q(11008, {	-- Fires Over Skettis
