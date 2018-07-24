@@ -6,6 +6,30 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(504, {	-- Isle of Thunder
 			["groups"] = {
+				n(-4, {	-- Achievements
+					ach(8212, {	-- Zandalari Library Card
+						{
+							["criteriaID"] = 1,	-- Iron-Bound Zandalari Journal [Criteria]
+							["itemID"] = 95409,	-- Iron-Bound Zandalari Journal [Item]
+						},
+						{
+							["criteriaID"] = 2,	-- Blood-Spattered Zandalari Journal [Criteria]
+							["itemID"] = 95410,	-- Blood-Spattered Zandalari Journal [Item]
+						},
+						{
+							["criteriaID"] = 3,	-- Torn Zandalari Journal [Criteria]
+							["itemID"] = 95411,	-- Torn Zandalari Journal [Item]
+						},
+						{
+							["criteriaID"] = 4,	-- Frayed Zandalari Journal [Criteria]
+							["itemID"] = 95412,	-- Frayed Zandalari Journal [Item]
+						},
+						{
+							["criteriaID"] = 5,	-- Waterlogged Zandalari Journal [Criteria]
+							["itemID"] = 95408,	-- Waterlogged Zandalari Journal [Item]
+						},
+					}),
+				}),
 				n(-3, { 	-- Holidays
 					n(-51, {    	-- Noblegarden
 						["groups"] = {				
