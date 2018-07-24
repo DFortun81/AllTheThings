@@ -951,73 +951,253 @@ _.WorldEvents =
 			}),
 			n(-527, { -- Battle For Azeroth
 				["groups"] = {
+					n(-34, { -- World Quests
+						["groups"] = {
+							cl(5, { -- Priest
+								i(162830),	-- Faithsworn Armwraps
+								i(162827),	-- Faithsworn Frock
+								i(162825),	-- Faithsworn Hood
+								i(162824),	-- Faithsworn Mitts
+								i(162826),	-- Faithsworn Pants
+								i(162829),	-- Faithsworn Sash
+								i(162828),	-- Faithsworn Shoulderpads
+								i(162996),	-- Faithsworn Staff
+								i(162823),	-- Faithsworn Treads
+							}),
+							cl(8, { -- Mage
+								i(162805),	-- Spell-Splintered Cord
+								i(162801),	-- Spell-Splintered Cowl
+								i(162800),	-- Spell-Splintered Gloves
+								i(162804),	-- Spell-Splintered Mantle
+								i(162802),	-- Spell-Splintered Pantaloons
+								i(162803),	-- Spell-Splintered Robes
+								i(163015),	-- Spell-Splintered Rod
+								i(162799),	-- Spell-Splintered Treads
+								i(162806),	-- Spell-Splintered Wristwraps
+							}),
+							cl(9, { -- Warlock
+								i(162853),	-- Unshackled Belt
+								i(162849),	-- Unshackled Crown
+								i(162852),	-- Unshackled Epaulettes
+								i(162848),	-- Unshackled Handguards
+								i(162847),	-- Unshackled Shoes
+								i(163016),	-- Unshackled Staff
+								i(162850),	-- Unshackled Trousers
+								i(162851),	-- Unshackled Vestment
+								i(162854),	-- Unshackled Wrappings
+							}),
+							cl(11, { -- Druid
+								i(162789),	-- Rootweave Binding
+								i(162787),	-- Rootweave Britches
+								i(162783),	-- Rootweave Garb
+								i(162785),	-- Rootweave Gloves
+								i(162984),	-- Rootweave Greatstaff
+								i(162786),	-- Rootweave Headpiece
+								i(162788),	-- Rootweave Mantle
+								i(162784),	-- Rootweave Sandals
+								i(162985),	-- Rootweave Spear
+								i(162986),	-- Rootweave Staff
+								i(162790),	-- Rootweave Wraps
+							}),
+							cl(4, { -- Rogue
+								i(162835),	-- Ambuscade Breeches
+								i(163000),	-- Ambuscade Dagger
+								i(162832),	-- Ambuscade Footpads
+								i(162837),	-- Ambuscade Girdle
+								i(162833),	-- Ambuscade Grips
+								i(162838),	-- Ambuscade Sabercuffs
+								i(162834),	-- Ambuscade Skullcap
+								i(162836),	-- Ambuscade Spaulders
+								i(163001),	-- Ambuscade Sword
+								i(162831),	-- Ambuscade Tunic
+							}),
+							cl(10, { -- Monk
+								i(162808),	-- Serene Disciple's Anklewraps
+								i(162813),	-- Serene Disciple's Cord
+								i(162814),	-- Serene Disciple's Cuffs
+								i(162809),	-- Serene Disciple's Handguards
+								i(162807),	-- Serene Disciple's Jerkin
+								i(162812),	-- Serene Disciple's Padding
+								i(162992),	-- Serene Disciple's Shortsword
+								i(162991),	-- Serene Disciple's Staff
+								i(162810),	-- Serene Disciple's Sunhat
+								i(162990),	-- Serene Disciple's Trident
+								i(162811),	-- Serene Disciple's Wrappings
+							}),
+							cl(12, { -- Demon Hunter
+								i(163226),	-- Felbound Armguards
+								i(163237),	-- Felbound Armguards
+								i(163231),	-- Felbound Footwraps
+								i(163241),	-- Felbound Footwraps
+								i(163228),	-- Felbound Gardbrace
+								i(163235),	-- Felbound Gardbrace
+								i(163232),	-- Felbound Handwraps
+								i(163238),	-- Felbound Handwraps
+								i(163229),	-- Felbound Leggings
+								i(163240),	-- Felbound Leggings
+								i(163233),	-- Felbound Shroud
+								i(163234),	-- Felbound Shroud
+								i(163230),	-- Felbound Tunic
+								i(163236),	-- Felbound Tunic
+								i(163227),	-- Felbound Waistchain
+								i(163239),	-- Felbound Waistchain
+								i(163072),	-- Felbound Warglaive
+							}),
+							cl(3, { -- Hunter
+								i(162792),	-- Wildguard Boots
+								i(162798),	-- Wildguard Bracers
+								i(162794),	-- Wildguard Facemask
+								i(162793),	-- Wildguard Gloves
+								i(162795),	-- Wildguard Poleyn
+								i(162791),	-- Wildguard Ringmail
+								i(162987),	-- Wildguard Shotgun
+								i(162796),	-- Wildguard Spaulders
+								i(163014),	-- Wildguard Spear
+								i(162797),	-- Wildguard Studded Belt
+							}),
+							cl(7, { -- Shaman
+								i(162839),	-- Earthpyre Chain Shirt
+								i(163004),	-- Earthpyre Claws
+								i(162842),	-- Earthpyre Coif
+								i(162841),	-- Earthpyre Demi-Gauntlets
+								i(163003),	-- Earthpyre Fangs
+								i(162840),	-- Earthpyre Footguards
+								i(162845),	-- Earthpyre Furs
+								i(162843),	-- Earthpyre Leggings
+								i(163168),	-- Earthpyre Shield
+								i(162844),	-- Earthpyre Shoulderguards
+								i(163002),	-- Earthpyre Talons
+								i(162846),	-- Earthpyre Wristguards
+							}),
+							cl(2, { -- Paladin
+								i(162818),	-- Sacrosanct Barbute
+								i(162815),	-- Sacrosanct Breastplate
+								i(162821),	-- Sacrosanct Faulds
+								i(162817),	-- Sacrosanct Gauntlets
+								i(162816),	-- Sacrosanct Greaves
+								i(162819),	-- Sacrosanct Legplates
+								i(162820),	-- Sacrosanct Pauldrons
+								i(163167),	-- Sacrosanct Protector
+								i(162993),	-- Sacrosanct Scepter
+								i(162994),	-- Sacrosanct Sword
+								i(162822),	-- Sacrosanct Vambraces
+								i(162995),	-- Sacrosanct Warmaul
+							}),
+							cl(1, { -- Warrior
+								i(163169),	-- Bladeplate Barrier
+								i(163007),	-- Bladeplate Battleaxe
+								i(162862),	-- Bladeplate Braces
+								i(162856),	-- Bladeplate Chargers
+								i(162855),	-- Bladeplate Cuirass
+								i(162858),	-- Bladeplate Greathelm
+								i(163009),	-- Bladeplate Handaxe
+								i(162859),	-- Bladeplate Legguards
+								i(162857),	-- Bladeplate Riveted Gloves
+								i(162860),	-- Bladeplate Spiked Shoulders
+								i(162861),	-- Bladeplate Waistguard
+							}),
+							cl(6, { -- Death Knight
+								i(162782),	-- Gravewalker's Bindings
+								i(162775),	-- Gravewalker's Chestplate
+								i(162777),	-- Gravewalker's Clutches
+								i(162778),	-- Gravewalker's Facegaurd
+								i(162779),	-- Gravewalker's Greaves
+								i(162781),	-- Gravewalker's Plated Girdle
+								i(163010),	-- Gravewalker's Runeblade
+								i(162780),	-- Gravewalker's Shoulderplates
+								i(163011),	-- Gravewalker's Soulblade
+								i(162776),	-- Gravewalker's Treads
+							}),
+						},
+					}),
 					-- Alliance Part I
 					qa(52058),	-- A Short-Lived Peace
 					qa(52060, {	-- The Horde Uprising
-						--["qg"] = , -- 
+						["qg"] = 107574, -- Anduin Wrynn
 						["sourceQuests"] = { 52058 }, -- A Short-Lived Pace
 					}),	
 					qa(52062, {	-- A Disturbancee in Ashenvale
-						--["qg"] = , -- 
+						["qg"] = 139798, -- Master Mathias Shaw
 						["sourceQuests"] = { 52060 }, -- The Horde Uprising
 					}),	
 					qa(52072, {	-- The Light of Elune
-						--["qg"] = , -- 
+						["qg"] = 134578, -- Captain Delaryn Summermoon
 						["sourceQuests"] = { 52062 }, -- A Disturbancee in Ashenvale
 					}),	
 					qa(53616, {	-- Knives of the Forsaken
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52072 }, -- The Light of Elune
+						["qg"] = 134578, -- Captain Delaryn Summermoon
+						["sourceQuests"] = { 52062 }, -- A Disturbancee in Ashenvale
 					}),	
 					qa(52116, {	-- A Soft Glow
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52072 }, -- The Light of Elune
-					}),	
-					qa(52197, {	-- Long Away
-						--["qg"] = , -- 
-						["sourceQuests"] = { 
+						["qg"] = 134578, -- Captain Delaryn Summermoon
+						["sourceQuests"] = {
+							52072, -- The Light of Elune
 							53616, -- Knives of the Forsaken
-							52116, -- A Soft Glow
-						},
+						}, 
 					}),	
+					--[[ REMOVED FROM LIVE
+					
 					qa(52220, {	-- Dragon Attack
 						--["qg"] = , -- 
 						["sourceQuests"] = { 52197 }, -- Long Away
 					}),	
+					--]]
 					qa(52234, {	-- Hidden Amongst the Leaves
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52220 }, -- Dragon Attack
+						["qg"] = 133693, -- Malfurion Stormrage
+						["sourceQuests"] = { 52116 }, -- A Soft Glow
 					}),	
 					qa(53617, {	-- Mercy for the Mad
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52234 }, -- Hidden Amongst the Leaves
+						["qg"] = 133693, -- Malfurion Stormrage
+						["sourceQuests"] = { 52116 }, -- A Soft Glow
 					}),	
 					qa(52240, {	-- Garden Grove
-						--["qg"] = , -- 
+						["qg"] = 134578, -- Captain  Delaryn Summermoon
 						["sourceQuests"] = { 
 							52234, -- Hidden Amongst the Leaves
 							53617, -- Mercy for the Mad
 						}, 
 					}),	
 					qa(52245, {	-- Enraged Furblogs
-						--["qg"] = , -- 
+						["qg"] = 33072, -- Onu <Ancient of Lore>
 						["sourceQuests"] = { 52240 }, -- Garden Grove
 					}),	
+					qa(53551, { -- Elves in the Machine
+						["qg"] = 140728, -- Captain Delaryn Silvermoon
+						["sourceQuests"] = { 52240 }, -- Garden Grove
+					}),
 					qa(52242, {	-- The Wake of Something New
-						--["qg"] = , -- 
-						["sourceQuests"] = { 52245 }, -- Enraged Furblogs
+						["qg"] = 33072, -- Onu <Ancient of Lore>
+						["sourceQuests"] = {
+							52245, -- Enraged Furblogs
+							53551, -- Elves in the Machine
+						}, 
 					}),	
-					qa(52256, {	-- Malufrion Returns
-						--["qg"] = , -- 
+					qa(53619, { -- Azerite Denial
+						["qg"] = 134578, -- Captain Delaryn Summermoon
 						["sourceQuests"] = { 52242 }, -- The Wake of Something New
+					}),		
+					qa(53621, { -- No Horde Allowed
+						["qg"] = 134578, -- Captain Delaryn Summermoon
+						["sourceQuests"] = { 52242 }, -- The Wake of Something New
+					}),
+					qa(52256, {	-- Malufrion Returns
+						["qg"] = 134578, -- Captain Delaryn Summermoon
+						["sourceQuests"] = { 
+							53619, -- Azerite Denial
+							52256, -- Malfurion Returns
+						},
 					}),	
 					qa(52257, {	-- "Rock" The World
-						--["qg"] = , -- 
+						["qg"] = 133693, -- Malfurion Stormrage
 						["sourceQuests"] = { 52256 }, -- Malufrion Returns
 					}),	
-					qa(52279, {	-- A Looming Threat
-						--["qg"] = , -- 
+					qa(52197, {	-- Long Away
+						["qg"] = 133693, -- Malfurion Stormrage
 						["sourceQuests"] = { 52257 }, -- "Rock" The World
+					}),
+					qa(52279, {	-- A Looming Threat
+						["qg"] = 134578, -- Captain Delaryn Summermoon
+						["sourceQuests"] = { 52279 }, -- A Looming Threat
 					}),	
 					-- Alliance Part II
 					qa(52973, {	-- A Threat From the North
@@ -1115,7 +1295,7 @@ _.WorldEvents =
 						["qg"] = 135003, -- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 50878 }, -- Blurred Vision
 					}),	
-					--[[	REMOVED ON LIVE
+					--[[	REMOVED ON LIVE;  Turned into Alliance Quest
 					qh(53550, {	-- A Change in Leadership
 						--["qg"] = , -- 
 						["sourceQuests"] = { 50879 }, -- The Trees Have Ears
