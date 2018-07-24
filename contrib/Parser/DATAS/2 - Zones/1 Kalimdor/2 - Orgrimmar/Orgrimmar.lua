@@ -847,9 +847,12 @@ _.Zones =
 						["classes"] = {11},	-- Druid Only
 						["isBreadcrumb"] = true,
 					},
---[[
-					ql(qg(52382, qh( 29129))),	-- A Legendary Engagement
---]]
+					ql(qh(29129, {	-- A Legendary Engagement
+						["qg"] = 52382,	-- Ziradormi
+						["lvl"] = 85,
+						["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
+						["sourceQuests"] = { 29452 },	-- Your Time Has Come
+					})),
 					qdg(qh( 27395, {	-- A Marksman's Weapon
 						["groups"] = {
 							i(65466),	-- Bow of the Great Hunter
@@ -1190,19 +1193,15 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["classes"] = { 5 },	-- Priest
 					})),
 --					qh(40786),	-- The Smoldering Ember (QG item received from final boss in TW dungeons)
-					qh(29309, {  	-- The Stuff of Legends
+					ql(qh(29309, {  	-- The Stuff of Legends
 						["groups"] = {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest (LEGENDARY!)
 						},
-						["qg"] = 53371, -- Hallegosa
-						["classes"] = {
-							5, -- Priest
-							7, -- Shaman
-							8, -- Mage
-							9, -- Warlock
-							11, -- Druid
-						},
-					}),
+						["qg"] = 53371,	-- Hallegosa
+						["lvl"] = 85,
+						["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
+						["sourceQuests"] = { 29308 },	-- Heart of Flame
+					})),
 --[[					
 					qg(52234, qh(29220)),	-- To Bambala
 					qp185(qg(3399, qh( 6611))),	-- To Gadgetzan You Go!

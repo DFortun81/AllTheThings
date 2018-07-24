@@ -8,8 +8,16 @@ _.Instances =
 			inst(78, { 	-- Firelands
 				["groups"] = {
 					n(-17, {	-- Quests
-						desc(qh( 29452), "This quest is auto accepted upon killing a Molten Giant."),	-- Your Time Has Come
-						desc(qa( 29453), "This quest is auto accepted upon killing a Molten Giant."),	-- Your Time Has Come														
+						ql(qa(29453, {    -- Your Time Has Come
+                            ["classes"] = { 5, 7, 8, 9, 11 },    -- Priest, Shaman, Mage, Warlock, Druid
+                            ["description"] = "This quest is auto accepted upon killing a Molten Giant.",
+                            ["isBreadcrumb"] = true,    -- for A Legendary Engagement
+                        })),
+                        ql(qh(29452, {    -- Your Time Has Come
+                            ["classes"] = { 5, 7, 8, 9, 11 },    -- Priest, Shaman, Mage, Warlock, Druid
+                            ["description"] = "This quest is auto accepted upon killing a Molten Giant.",
+                            ["isBreadcrumb"] = true,    -- for A Legendary Engagement
+                        })),
 					}),
 					n( -2, {	-- Vendors
 						n(54402, { -- Lurah Wrathvine

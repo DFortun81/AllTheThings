@@ -736,19 +736,12 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qh(40786)),	-- The Smoldering Ember
 					qg(, qa(40787)),	-- The Smoldering Ember
 --]]					
-					qa(29312, {	-- The Stuff of Legends
+					qg(53466, qa(29312, {	-- The Stuff of Legends
 						["groups"] = {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
 						},
-						["qg"] = 53466, -- Hallegosa
-						["classes"] = {
-							5, -- Priest
-							7, -- Shaman
-							8, -- Mage
-							9, -- Warlock
-							11, -- Druid
-						},
-					}),
+						["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
+					})),
 --[[					
 					qg(, qh(29309)),	-- The Stuff of Legends
 					qg(, qa( 1790)),	-- The Symbol of Life

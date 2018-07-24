@@ -67,13 +67,6 @@ _.Zones =
 						["u"] = 28,
 					}),
 				}),
-				n(0, { -- Zone Drop
-					n(5649, { -- Sandfury Blood Drinker
-						["groups"] = {
-							i(142402), -- Plans: Light Earthforged Blade
-						},
-					}),
-				}),
 				n(-25, {	-- Pet Battle
 					p(484), 	-- Desert Spider
 					p(430), 	-- Gold Beetle

@@ -1732,80 +1732,60 @@ _.Zones =
 								["qg"] = 26117,	-- Raelorasz
 								["sourceQuest"] = 11919,
 							}),
-							q(29194, {	--  Through a Glass, Darkly
-								["groups"] = {
-								},
-								["classes"] = {5,7,8,9,11},
-								["lvl"] = 85,
+							ql(q(29194, {	--  Through a Glass, Darkly
 								["qg"] = 52835,	-- Tarecgosa
-								["sourceQuest"] = 29193,
-							}),
-							q(29234, {	--  Delegation
-								["groups"] = {
-								},
-								["classes"] = {5,7,8,9,11},
 								["lvl"] = 85,
-								["qg"] = 52995,	-- Kalecgos
-								["sourceQuest"] = 29225,
-							}),
-							q(29239, {	-- Nordrassil's Bough - part of Legendary Quest for Dragonwrath
+								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
+								["sourceQuest"] = 29193,	-- On a Wing and a Prayer
+							})),
+							ql(q(29239, {	-- Nordrassil's Bough
 								["groups"] = {
 									i(71084),  -- Branch of Nordrassil
 								},
-								["classes"] = {5,7,8,9,11},
-								["lvl"] = 85,
 								["qg"] = 53009,	-- Kalecgos
-								["sourceQuest"] = 29234,
-							}),
-							q(29240, {	--  Emergency Extraction
-								["groups"] = {
-								},
-								["classes"] = {5,7,8,9,11},
 								["lvl"] = 85,
+								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
+								["sourceQuest"] = 29234,	-- Delegation
+							})),
+							ql(q(29240, {	--  Emergency Extraction
 								["qg"] = 53009,	-- Kalecgos
-								["sourceQuest"] = 29239,
-							}),
-							q(29269, {	--  At One
-								["groups"] = {
-								},
-								["classes"] = {5,7,8,9,11},
 								["lvl"] = 85,
+								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
+								["sourceQuest"] = 29239,	-- Nordrassil's Bough
+							})),
+							ql(q(29269, {	--  At One
 								["qg"] = 53149,	-- Kalecgos
-								["sourceQuest"] = 29240,
-							}),
-							q(29270, {	--  Time Grows Short
-								["groups"] = {
-								},
-								["classes"] = {5,7,8,9,11},
 								["lvl"] = 85,
+								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
+								["sourceQuest"] = 29240,	-- Emergency Extraction
+							})),
+							ql(q(29270, {	--  Time Grows Short
 								["qg"] = 53210,	-- Kalecgos
-								["sourceQuest"] = 29269,
-							}),
-							q(29285, {	-- Alignment - part of Legendary Quest for Dragonwrath
+								["lvl"] = 85,
+								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
+								["sourceQuest"] = 29269,	-- At One
+							})),
+							ql(q(29285, {	-- Alignment
 								["groups"] = {
 									i(71085),  --Runestaff of Nordrassil
 								},
-								["classes"] = {5,7,8,9,11},
-								["lvl"] = 85,
 								["qg"] = 53215,	-- Kalecgos
-								["sourceQuest"] = 29270,
-							}),
-							qh(29308, {	--  Heart of Flame [H]
-								["groups"] = {
-								},
-								["classes"] = {5,7,8,9,11},
 								["lvl"] = 85,
+								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
+								["sourceQuest"] = 29270,	-- Time Grows Short
+							})),
+							ql(qa(29307, {	--  Heart of Flame [A]
 								["qg"] = 53349,	-- Kalecgos
-								["sourceQuest"] = 29285,
-							}),
-							qa(29307, {	--  Heart of Flame [A]
-								["groups"] = {
-								},
-								["classes"] = {5,7,8,9,11},
 								["lvl"] = 85,
+								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
+								["sourceQuest"] = 29285,	-- Alignment
+							})),
+							ql(qh(29308, {	--  Heart of Flame [H]
 								["qg"] = 53349,	-- Kalecgos
-								["sourceQuest"] = 29285,
-							}),
+								["lvl"] = 85,
+								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
+								["sourceQuest"] = 29285,	-- Alignment
+							})),
 							q(13412, {	--  Corastrasza
 								["groups"] = {
 								},
