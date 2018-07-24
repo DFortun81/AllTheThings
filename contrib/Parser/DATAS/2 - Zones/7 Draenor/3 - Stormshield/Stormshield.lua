@@ -288,7 +288,7 @@ _.Zones =
 						["groups"] = {
 							currency(823, { -- Apexis Crystal
 								["groups"] = {
-									i(116776),	-- Pale Thorngrazer
+									un(2, i(116776)),	-- Pale Thorngrazer (Rep removed from Medallion of the Legion in hotfix for 8.0)
 								},
 							}),
 							i(115517),	-- Wrynn's Vanguard Tabard

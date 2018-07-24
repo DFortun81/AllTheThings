@@ -882,7 +882,7 @@ _.Zones =
 					}),
 					n(128759, {	-- Dazzerian <Warspear Quartermaster>
 						currency(823, { -- Apexis Crystal
-							i(116775),	-- Breezestrider Stallion
+							un(2, i(116775)),	-- Breezestrider Stallion (Rep removed from Medallion of the Legion in hotfix for 8.0)
 						}),
 						i(115518),	-- Vol'jin's Spear Tabard
 					}),

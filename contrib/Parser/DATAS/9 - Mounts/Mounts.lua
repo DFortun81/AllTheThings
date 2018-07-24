@@ -480,9 +480,9 @@ _.Mounts =
 		i(89307),				-- Blue Shado-Pan Riding Tiger
 		i(13332),			-- Blue Skeletal Horse
 		i(25475),			-- Blue Wind Rider
-		i(116775),				-- Breezestrider Stallion
+		un(2, i(116775)),	-- Breezestrider Stallion (Rep removed from Medallion of the Legion in hotfix for 8.0)
 		i(128481),			-- Bristling Hellboar (Alliance)
-		--i(128480),			-- Bristling Hellboar (Horde) [NO IDEA WHAT THIS REALLY IS.  IT'S NOT ON THE VENDOR]
+		un(1, i(128480)),			-- Bristling Hellboar (Horde) [NO IDEA WHAT THIS REALLY IS.  IT'S NOT ON THE VENDOR]
 		{
 		["itemID"] = 91005,		-- Brown Dragon Turtle (Panda)
 		["races"] = {25,26},
@@ -635,7 +635,7 @@ _.Mounts =
 		},
 		i(47101),			-- Ochre Skeletal Warhorse
 		i(45595),			-- Orgrimmar Wolf
-		i(116776),				-- Pale Thorngrazer
+		un(2, i(116776)),	-- Pale Thorngrazer (Rep removed from Medallion of the Legion in hotfix for 8.0)
 		i(2414),				-- Pinto
 		{
 		["itemID"] = 91006,		-- Purple Dragon Turtle (Panda)

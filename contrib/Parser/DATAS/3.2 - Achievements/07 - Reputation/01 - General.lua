@@ -65,6 +65,7 @@ _.Achievements =
 									faction(1731), 	-- Councils of Exarchs
 									faction(1847), 	-- Hand of the Prophet
 									faction(1710), 	-- Sha'tari Defense
+									un(2, faction(1682)), 	-- Wyrnn's Vanguard
 								}), 
 								tier(8, { 		-- Battle For Azeroth
 									faction(2159), 	-- 7th Legion
@@ -117,6 +118,7 @@ _.Achievements =
 									faction(1445), 	-- Frostwolf Orcs
 									faction(1708), 	-- Laughing Skull Orcs
 									faction(1848), 	-- Vol'jin's Headhunters
+									un(2, faction(1681)),	-- Vol'jin's Spear
 								}),
 								tier(8, { 		-- Battle For Azeroth 
 									faction(2156),	-- Talanji's  Expedition
@@ -133,8 +135,7 @@ _.Achievements =
 								faction(909), 	-- Darkmoon Faire
 								faction(749), 	-- Hydraxian Waterlords
 								faction(349), 	-- Ravenholdt
-								faction(59), 	-- Thorium Brotherhood
-								faction(576), 	-- Timbermaw Hold
+								un(2, faction(809)),	-- Shen'dralar
 								faction(169, { 	-- Steamwheedle Cartel
 									["groups"] = {
 										faction(21), 	-- Booty Bay
@@ -145,6 +146,9 @@ _.Achievements =
 									["collectible"] = false,
 									["icon"] = "Interface\\Icons\\achievement_Goblinheaddead",
 								}),
+								faction(59), 	-- Thorium Brotherhood
+								faction(576), 	-- Timbermaw Hold
+								un(2, faction(270)), 	-- Zandalar Tribe
 							}),
 							tier(2, {		-- The Burning Crusade
 								faction(1012), 	-- Ashtongue Deathsworn
@@ -218,10 +222,7 @@ _.Achievements =
 								faction(2163), 	-- Tortollan Seekers
 							--]]
 							n(-9968, { 		-- Legacy
-								un(2, faction(809)),	-- Shen'dralar
-								un(2, faction(1681)),	-- Vol'jin's Spear
-								un(2, faction(1682)), 	-- Wyrnn's Vanguard
-								un(2, faction(270)), 	-- Zandalar Tribe
+								
 							}),
 						}),
 						ach(12865), 	-- 90 Exalted Reputations
