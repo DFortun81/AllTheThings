@@ -3350,9 +3350,9 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 							qc1(q(1706, { 	-- Grimand's Armor
 								un(34, i(6971)),	-- Fire Hardened Coif
 							})),
-							qc8(q(1941, {	-- Manaweave Robe
-								un(34, i(7509)),	-- Manaweave Robe
-							})),
+							un(34, qc8(q(1941, {	-- Manaweave Robe
+								i(7509),	-- Manaweave Robe	-- NOTE: This item is actually obtainable so we only want to mark the quest as legacy
+							}))),
 							q(1364, {		-- Mazen's Behest
 								un(34, i(10747)),	-- Teacher's Sash
 								un(34, i(10748)),	-- Wanderlust Boots

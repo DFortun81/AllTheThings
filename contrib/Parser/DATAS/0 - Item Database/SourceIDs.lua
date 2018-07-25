@@ -103,7 +103,10 @@ i(34484, 1, 15992);		-- Old Ironjaw
 i(119601, 1, 67418);	-- Mistdancer Shoulders [Hidden Shoulder Appearance]
 i(119588, 1, 67410);	-- Mistdancer Pauldrons [Hidden Shoulder Appearance]
 i(119585, 1, 67407);	-- Mistdancer Handguards [Hidden Glove Appearance]
+i(162812, 1, 98652);	-- Serene Disciple's Padding [Hidden Glove Appearance]
+i(162809, 1, 98649);	-- Serene Disciple's Handguards [Hidden Glove Appearance]
 i(119556, 1, 67388);	-- Trailseeker Spaulders [Hidden Shoulder Appearance]
+i(162796, 1, 98636);	-- Wildguard Spaulders [Hidden Shoulder Appearance]
 i(129485, 1, 74101);	-- Mistdancer Pauldrons [Hidden Shoulders]
 i(129482, 1, 74098);	-- Mistdancer Handguards
 i(129714, 1, 74250); 	-- Trailseeker Spaulders [Hidden Shoulders]
