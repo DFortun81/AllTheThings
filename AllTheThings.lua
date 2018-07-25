@@ -6733,6 +6733,7 @@ function app:GetDataCache()
 			db.text = "Never Implemented";
 			table.insert(g, db);
 		end
+		
 		-- Unsorted
 		if app.Categories.Unsorted then
 			db = {};
@@ -6741,6 +6742,7 @@ function app:GetDataCache()
 			db.text = "Unsorted";
 			table.insert(g, db);
 		end
+		
 		-- Titles (Dynamic)
 		db = app.CreateAchievement(2188, GetTitleCache());
 		db.expanded = false;
@@ -6804,6 +6806,15 @@ function app:GetDataCache()
 		db.text = "Raw Source Data (Dynamic)";
 		table.insert(g, db);
 		]]--
+		
+		--[[ SUPER DUPER SECRET
+		if app.Categories.NaughtySecrets then
+			db = app.CreatAchievement(12478, app.Categories.NaughtySecrets);
+			db.expanded = false;
+			db.text = "Naughty Secrets";
+			table.insert(g, db);
+		end
+		--]]
 		
 		-- The Main Window's Data
 		app.refreshDataForce = true;

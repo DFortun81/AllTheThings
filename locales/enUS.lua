@@ -1541,6 +1541,7 @@ AllTheThings.Locales.enUS = {
 		[-10060] = select(2,GetAchievementInfo(7333)),		-- The Four Celestials
 
 		[-100001] = ITEM_QUALITY6_DESC, 				-- Artifact
+		[-100002] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
 
 -- Custom Subzone Names that we can't pull from the API because Blizz hates us
   -- Val'sharah

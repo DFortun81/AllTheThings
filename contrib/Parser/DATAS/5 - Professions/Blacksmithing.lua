@@ -783,4 +783,514 @@ profession(164, { -- Blacksmithing
 		i(123892),	-- Leystone Boots
 
 	}),
+	n(-100002, { -- PLACE_HOLDER
+		i(23596),	-- Plans: Adamantite Breastplate
+		i(23591),	-- Plans: Adamantite Cleaver
+		i(23592),	-- Plans: Adamantite Dagger
+		i(23590),	-- Plans: Adamantite Maul
+		i(23594),	-- Plans: Adamantite Plate Bracers
+		i(23595),	-- Plans: Adamantite Plate Gloves
+		i(23593),	-- Plans: Adamantite Rapier
+		i(23618),	-- Plans: Adamantite Sharpening Stone
+		i(33186),	-- Plans: Adamantite Weapon Chain
+		i(35296),	-- Plans: Adamantite Weapon Chain
+		i(28632),	-- Plans: Adamantite Weightstone
+		i(12835),	-- Plans: Annihilator
+		i(12834),	-- Plans: Arcanite Champion
+		i(142370),	-- Plans: Arcanite Champion
+		i(12838),	-- Plans: Arcanite Reaper
+		i(100865),	-- Plans: Balanced Trillium Ingot and Its Uses
+		i(7981),	-- Plans: Barbaric Iron Boots
+		i(7979),	-- Plans: Barbaric Iron Breastplate
+		i(7982),	-- Plans: Barbaric Iron Gloves
+		i(7980),	-- Plans: Barbaric Iron Helm
+		i(7978),	-- Plans: Barbaric Iron Shoulders
+		i(45089),	-- Plans: Battlelord's Plate Boots
+		i(30321),	-- Plans: Belt of the Guardian
+		i(45088),	-- Plans: Belt of the Titans
+		i(19208),	-- Plans: Black Amnesty
+		i(23626),	-- Plans: Black Felsteel Bracers
+		i(22220),	-- Plans: Black Grasp of the Destroyer
+		i(19209),	-- Plans: Blackfury
+		i(19211),	-- Plans: Blackguard
+		i(12825),	-- Plans: Blazing Rapier
+		i(142358),	-- Plans: Blazing Rapier
+		i(142346),	-- Plans: Bleakwood Hew
+		i(23628),	-- Plans: Blessed Bracers
+		i(142337),	-- Plans: Blight
+		i(87411),	-- Plans: Bloodforged Warfists
+		i(19776),	-- Plans: Bloodsoul Breastplate
+		i(19778),	-- Plans: Bloodsoul Gauntlets
+		i(19777),	-- Plans: Bloodsoul Shoulders
+		i(7992),	-- Plans: Blue Glittering Axe
+		i(49974),	-- Plans: Boots of Kingly Upheaval
+		i(30323),	-- Plans: Boots of the Protector
+		i(72015),	-- Plans: Bracers of Destructive Strength
+		i(23627),	-- Plans: Bracers of the Green Fortress
+		i(70166),	-- Plans: Brainsplinter
+		i(83791),	-- Plans: Breastplate of Ancient Steel
+		i(47622),	-- Plans: Breastplate of the White Knight
+		i(47640),	-- Plans: Breastplate of the White Knight
+		i(87412),	-- Plans: Chestplate of Limitless Faith
+		i(84158),	-- Plans: Contender's Revenant Belt
+		i(84159),	-- Plans: Contender's Revenant Boots
+		i(84160),	-- Plans: Contender's Revenant Bracers
+		i(84161),	-- Plans: Contender's Revenant Breastplate
+		i(84162),	-- Plans: Contender's Revenant Gauntlets
+		i(84163),	-- Plans: Contender's Revenant Helm
+		i(84164),	-- Plans: Contender's Revenant Legplates
+		i(84165),	-- Plans: Contender's Revenant Shoulders
+		i(84166),	-- Plans: Contender's Spirit Belt
+		i(84167),	-- Plans: Contender's Spirit Boots
+		i(84168),	-- Plans: Contender's Spirit Bracers
+		i(84169),	-- Plans: Contender's Spirit Breastplate
+		i(84170),	-- Plans: Contender's Spirit Gauntlets
+		i(84171),	-- Plans: Contender's Spirit Helm
+		i(84172),	-- Plans: Contender's Spirit Legplates
+		i(84173),	-- Plans: Contender's Spirit Shoulders
+		i(3609),	-- Plans: Copper Chain Vest
+		i(12830),	-- Plans: Corruption
+		i(20040),	-- Plans: Dark Iron Boots
+		i(17051),	-- Plans: Dark Iron Bracers
+		i(17060),	-- Plans: Dark Iron Destroyer
+		i(19207),	-- Plans: Dark Iron Gauntlets
+		i(19206),	-- Plans: Dark Iron Helm
+		i(17052),	-- Plans: Dark Iron Leggings
+		i(11614),	-- Plans: Dark Iron Mail
+		i(11612),	-- Plans: Dark Iron Plate
+		i(11610),	-- Plans: Dark Iron Pulverizer
+		i(17059),	-- Plans: Dark Iron Reaver
+		i(11615),	-- Plans: Dark Iron Shoulders
+		i(11611),	-- Plans: Dark Iron Sunderer
+		i(20554),	-- Plans: Darkrune Breastplate
+		i(20553),	-- Plans: Darkrune Gauntlets
+		i(20555),	-- Plans: Darkrune Helm
+		i(19779),	-- Plans: Darksoul Breastplate
+		i(19780),	-- Plans: Darksoul Leggings
+		i(19781),	-- Plans: Darksoul Shoulders
+		i(142383),	-- Plans: Darkspear
+		i(12698),	-- Plans: Dawnbringer Shoulders
+		i(12821),	-- Plans: Dawn's Edge
+		i(142357),	-- Plans: Dawn's Edge
+		i(32738),	-- Plans: Dawnsteel Bracers
+		i(32739),	-- Plans: Dawnsteel Shoulders
+		i(7993),	-- Plans: Dazzling Mithril Rapier
+		i(2883),	-- Plans: Deadly Bronze Poniard
+		i(12696),	-- Plans: Demon Forged Breastplate
+		i(23636),	-- Plans: Dirge
+		i(94568),	-- Plans: Drakefist Hammer, Reborn
+		i(23617),	-- Plans: Earthpeace Breastplate
+		i(19210),	-- Plans: Ebon Hand
+		i(8030),	-- Plans: Ebon Shiv
+		i(66100),	-- Plans: Ebonsteel Belt Buckle
+		i(17706),	-- Plans: Edge of Winter
+		i(18264),	-- Plans: Elemental Sharpening Stone
+		i(66113),	-- Plans: Elementium Bonesplitter
+		i(66106),	-- Plans: Elementium Deathplate
+		i(66115),	-- Plans: Elementium Earthguard
+		i(66107),	-- Plans: Elementium Girdle of Pain
+		i(67603),	-- Plans: Elementium Gutslicer
+		i(66111),	-- Plans: Elementium Hammer
+		i(66112),	-- Plans: Elementium Poleaxe
+		i(66134),	-- Plans: Elementium Rod
+		i(66114),	-- Plans: Elementium Shank
+		i(66110),	-- Plans: Elementium Spellblade
+		i(66116),	-- Plans: Elementium Stormshield
+		i(70169),	-- Plans: Elementium-Edged Scalper
+		i(69970),	-- Plans: Emberforged Elementium Boots
+		i(23597),	-- Plans: Enchanted Adamantite Belt
+		i(23598),	-- Plans: Enchanted Adamantite Boots
+		i(23599),	-- Plans: Enchanted Adamantite Breastplate
+		i(23600),	-- Plans: Enchanted Adamantite Leggings
+		i(12824),	-- Plans: Enchanted Battlehammer
+		i(12727),	-- Plans: Enchanted Thorium Breastplate
+		i(12725),	-- Plans: Enchanted Thorium Helm
+		i(12726),	-- Plans: Enchanted Thorium Leggings
+		i(69958),	-- Plans: Eternal Elementium Handguards
+		i(23635),	-- Plans: Eternium Runed Blade
+		i(23631),	-- Plans: Fel Edged Battleaxe
+		i(23634),	-- Plans: Fel Hardened Maul
+		i(23620),	-- Plans: Felfury Gauntlets
+		i(23605),	-- Plans: Felsteel Gloves
+		i(23607),	-- Plans: Felsteel Helm
+		i(23606),	-- Plans: Felsteel Leggings
+		i(23629),	-- Plans: Felsteel Longblade
+		i(23632),	-- Plans: Felsteel Reaper
+		i(23619),	-- Plans: Felsteel Shield Spike
+		i(24002),	-- Plans: Felsteel Shield Spike
+		i(17049),	-- Plans: Fiery Chain Girdle
+		i(17053),	-- Plans: Fiery Chain Shoulders
+		i(12699),	-- Plans: Fiery Plate Gauntlets
+		i(94572),	-- Plans: Fireguard, Reborn
+		i(69957),	-- Plans: Fists of Fury
+		i(23601),	-- Plans: Flamebane Bracers
+		i(23604),	-- Plans: Flamebane Breastplate
+		i(23603),	-- Plans: Flamebane Gloves
+		i(23602),	-- Plans: Flamebane Helm
+		i(67606),	-- Plans: Forged Elementium Mindcrusher
+		i(72013),	-- Plans: Foundations of Courage
+		i(3868),	-- Plans: Frost Tiger Blade
+		i(12836),	-- Plans: Frostguard
+		i(83792),	-- Plans: Gauntlets of Ancient Steel
+		i(87409),	-- Plans: Gauntlets of Battle Command
+		i(23621),	-- Plans: Gauntlets of the Iron Tower
+		i(87413),	-- Plans: Gauntlets of Unbound Devotion
+		i(3610),	-- Plans: Gemmed Copper Gauntlets
+		i(90531),	-- Plans: Ghost Iron Shield Spike
+		i(83787),	-- Plans: Ghost Reaver's Breastplate
+		i(83788),	-- Plans: Ghost Reaver's Gauntlets
+		i(19203),	-- Plans: Girdle of the Dawn
+		i(19205),	-- Plans: Gloves of the Dawn
+		i(3867),	-- Plans: Golden Iron Destroyer
+		i(3875),	-- Plans: Golden Scale Boots
+		i(6047),	-- Plans: Golden Scale Coif
+		i(3873),	-- Plans: Golden Scale Cuirass
+		i(9367),	-- Plans: Golden Scale Gauntlets
+		i(3872),	-- Plans: Golden Scale Leggings
+		i(3871),	-- Plans: Golden Scale Shoulders
+		i(142287),	-- Plans: Great Earthforged Hammer
+		i(25526),	-- Plans: Greater Rune of Warding
+		i(23639),	-- Plans: Greater Ward of Shielding
+		i(3611),	-- Plans: Green Iron Boots
+		i(3612),	-- Plans: Green Iron Gauntlets
+		i(3870),	-- Plans: Green Iron Shoulders
+		i(33954),	-- Plans: Hammer of Righteous Might
+		i(12833),	-- Plans: Hammer of the Titans
+		i(23637),	-- Plans: Hand of Eternity
+		i(35209),	-- Plans: Hard Khorium Battlefists
+		i(35211),	-- Plans: Hard Khorium Battleplate
+		i(66105),	-- Plans: Hardened Elementium Girdle
+		i(66104),	-- Plans: Hardened Elementium Hauberk
+		i(12162),	-- Plans: Hardened Iron Shortsword
+		i(12839),	-- Plans: Heartseeker
+		i(33792),	-- Plans: Heavy Copper Longsword
+		i(7990),	-- Plans: Heavy Mithril Helm
+		i(7975),	-- Plans: Heavy Mithril Pants
+		i(22209),	-- Plans: Heavy Obsidian Belt
+		i(19202),	-- Plans: Heavy Timbermaw Belt
+		i(19204),	-- Plans: Heavy Timbermaw Boots
+		i(49972),	-- Plans: Hellfrozen Bonegrinders
+		i(12716),	-- Plans: Helm of the Great Chief
+		i(23624),	-- Plans: Helm of the Stalwart Defender
+		i(69959),	-- Plans: Holy Flame Gauntlets
+		i(12823),	-- Plans: Huge Thorium Battleaxe
+		i(31393),	-- Plans: Iceguard Breastplate
+		i(31395),	-- Plans: Iceguard Helm
+		i(31394),	-- Plans: Iceguard Leggings
+		i(12688),	-- Plans: Imperial Plate Belt
+		i(12700),	-- Plans: Imperial Plate Boots
+		i(12690),	-- Plans: Imperial Plate Bracers
+		i(12705),	-- Plans: Imperial Plate Chest
+		i(12701),	-- Plans: Imperial Plate Helm
+		i(12715),	-- Plans: Imperial Plate Leggings
+		i(12687),	-- Plans: Imperial Plate Shoulders
+		i(45092),	-- Plans: Indestructible Plate Girdle
+		i(10713),	-- Plans: Inlaid Mithril Cylinder
+		i(12728),	-- Plans: Invulnerable Mail
+		i(5543),	-- Plans: Iridescent Hammer
+		i(6045),	-- Plans: Iron Counterweight
+		i(6044),	-- Plans: Iron Shield Spike
+		i(6735),	-- Plans: Ironforge Breastplate
+		i(22768),	-- Plans: Ironvine Belt
+		i(22766),	-- Plans: Ironvine Breastplate
+		i(22767),	-- Plans: Ironvine Gloves
+		i(3866),	-- Plans: Jade Serpentblade
+		i(22219),	-- Plans: Jagged Obsidian Shield
+		i(23608),	-- Plans: Khorium Belt
+		i(23610),	-- Plans: Khorium Boots
+		i(23630),	-- Plans: Khorium Champion
+		i(23609),	-- Plans: Khorium Pants
+		i(142286),	-- Plans: Lavaforged Warhammer
+		i(49971),	-- Plans: Legplates of Painful Death
+		i(23638),	-- Plans: Lesser Ward of Shielding
+		i(142402),	-- Plans: Light Earthforged Blade
+		i(66109),	-- Plans: Light Elementium Belt
+		i(66108),	-- Plans: Light Elementium Chestguard
+		i(22214),	-- Plans: Light Obsidian Belt
+		i(70168),	-- Plans: Lightforged Elementium Hammer
+		i(94552),	-- Plans: Lightning Steel Ingot
+		i(94571),	-- Plans: Lionheart Blade, Reborn
+		i(12717),	-- Plans: Lionheart Helm
+		i(84196),	-- Plans: Living Steel Belt Buckle
+		i(83789),	-- Plans: Living Steel Breastplate
+		i(83790),	-- Plans: Living Steel Gauntlets
+		i(90532),	-- Plans: Living Steel Weapon Chain
+		i(94569),	-- Plans: Lunar Crescent, Reborn
+		i(12164),	-- Plans: Massive Iron Axe
+		i(70172),	-- Plans: Masterwork Elementium Deathblade
+		i(70167),	-- Plans: Masterwork Elementium Spellblade
+		i(84197),	-- Plans: Masterwork Forgewire Axe
+		i(84198),	-- Plans: Masterwork Ghost Shard
+		i(84208),	-- Plans: Masterwork Lightsteel Shield
+		i(84217),	-- Plans: Masterwork Phantasmal Hammer
+		i(84218),	-- Plans: Masterwork Spiritblade Decimator
+		i(84219),	-- Plans: Masterwork Spiritguard Belt
+		i(84220),	-- Plans: Masterwork Spiritguard Boots
+		i(84221),	-- Plans: Masterwork Spiritguard Bracers
+		i(84222),	-- Plans: Masterwork Spiritguard Breastplate
+		i(84223),	-- Plans: Masterwork Spiritguard Gauntlets
+		i(84224),	-- Plans: Masterwork Spiritguard Helm
+		i(84225),	-- Plans: Masterwork Spiritguard Legplates
+		i(84226),	-- Plans: Masterwork Spiritguard Shield
+		i(84227),	-- Plans: Masterwork Spiritguard Shoulders
+		i(12837),	-- Plans: Masterwork Stormhammer
+		i(3608),	-- Plans: Mighty Iron Hammer
+		i(69969),	-- Plans: Mirrored Boots
+		i(7995),	-- Plans: Mithril Scale Bracers
+		i(7991),	-- Plans: Mithril Scale Shoulders
+		i(7976),	-- Plans: Mithril Shield Spike
+		i(7989),	-- Plans: Mithril Spurs
+		i(12163),	-- Plans: Moonsteel Broadsword
+		i(19212),	-- Plans: Nightfall
+		i(23625),	-- Plans: Oathkeeper's Helm
+		i(22221),	-- Plans: Obsidian Mail Tunic
+		i(87410),	-- Plans: Ornate Battleplate of the Master
+		i(7984),	-- Plans: Ornate Mithril Gloves
+		i(7983),	-- Plans: Ornate Mithril Pants
+		i(7985),	-- Plans: Ornate Mithril Shoulder
+		i(12819),	-- Plans: Ornate Thorium Handaxe
+		i(22390),	-- Plans: Persuader
+		i(74274),	-- Plans: Phantom Blade
+		i(49973),	-- Plans: Pillars of Might
+		i(94570),	-- Plans: Planar Edge, Reborn
+		i(45090),	-- Plans: Plate Girdle of Righteousness
+		i(3874),	-- Plans: Polished Steel Boots
+		i(49970),	-- Plans: Protectors of Life
+		i(49969),	-- Plans: Puresteel Legplates
+		i(72001),	-- Plans: Pyrium Legplates of Purified Evil
+		i(66101),	-- Plans: Pyrium Shield Spike
+		i(70170),	-- Plans: Pyrium Spellward
+		i(66103),	-- Plans: Pyrium Weapon Chain
+		i(12685),	-- Plans: Radiant Belt
+		i(12697),	-- Plans: Radiant Boots
+		i(12689),	-- Plans: Radiant Breastplate
+		i(12702),	-- Plans: Radiant Circlet
+		i(12695),	-- Plans: Radiant Gloves
+		i(12713),	-- Plans: Radiant Leggings
+		i(23613),	-- Plans: Ragesteel Breastplate
+		i(23611),	-- Plans: Ragesteel Gloves
+		i(23612),	-- Plans: Ragesteel Helm
+		i(33174),	-- Plans: Ragesteel Shoulders
+		i(30322),	-- Plans: Red Belt of Battle
+		i(30324),	-- Plans: Red Havoc Boots
+		i(41122),	-- Plans: Reinforced Cobalt Chestpiece
+		i(41123),	-- Plans: Reinforced Cobalt Helm
+		i(41120),	-- Plans: Reinforced Cobalt Legplates
+		i(41124),	-- Plans: Reinforced Cobalt Shoulders
+		i(2881),	-- Plans: Runed Copper Breastplate
+		i(8028),	-- Plans: Runed Mithril Hammer
+		i(12718),	-- Plans: Runic Breastplate
+		i(23633),	-- Plans: Runic Hammer
+		i(12707),	-- Plans: Runic Plate Boots
+		i(12714),	-- Plans: Runic Plate Helm
+		i(12719),	-- Plans: Runic Plate Leggings
+		i(12706),	-- Plans: Runic Plate Shoulders
+		i(22389),	-- Plans: Sageblade
+		i(47623),	-- Plans: Saronite Swordbreakers
+		i(47641),	-- Plans: Saronite Swordbreakers
+		i(12261),	-- Plans: Searing Golden Blade
+		i(12827),	-- Plans: Serenity
+		i(32442),	-- Plans: Shadesteel Bracers
+		i(32444),	-- Plans: Shadesteel Girdle
+		i(32443),	-- Plans: Shadesteel Greaves
+		i(32441),	-- Plans: Shadesteel Sabots
+		i(3869),	-- Plans: Shadow Crescent Axe
+		i(5578),	-- Plans: Silvered Bronze Breastplate
+		i(10424),	-- Plans: Silvered Bronze Leggings
+		i(2882),	-- Plans: Silvered Bronze Shoulders
+		i(142283),	-- Plans: Skyforged Great Axe
+		i(10858),	-- Plans: Solid Iron Maul
+		i(72014),	-- Plans: Soul Redeemer Bracers
+		i(45093),	-- Plans: Spiked Deathdealers
+		i(6046),	-- Plans: Steel Weapon Chain
+		i(23622),	-- Plans: Steelgrip Gauntlets
+		i(142284),	-- Plans: Stoneforged Claymore
+		i(12703),	-- Plans: Storm Gauntlets
+		i(23623),	-- Plans: Storm Helm
+		i(142282),	-- Plans: Stormforged Axe
+		i(12720),	-- Plans: Stronghold Gauntlets
+		i(18592),	-- Plans: Sulfuron Hammer
+		i(35210),	-- Plans: Sunblessed Breastplate
+		i(35208),	-- Plans: Sunblessed Gauntlets
+		i(47627),	-- Plans: Sunforged Bracers
+		i(47642),	-- Plans: Sunforged Bracers
+		i(47626),	-- Plans: Sunforged Breastplate
+		i(47643),	-- Plans: Sunforged Breastplate
+		i(32736),	-- Plans: Swiftsteel Bracers
+		i(23615),	-- Plans: Swiftsteel Gloves
+		i(32737),	-- Plans: Swiftsteel Shoulders
+		i(22222),	-- Plans: Thick Obsidian Breastplate
+		i(12682),	-- Plans: Thorium Armor
+		i(12683),	-- Plans: Thorium Belt
+		i(12693),	-- Plans: Thorium Boots
+		i(12684),	-- Plans: Thorium Bracers
+		i(12694),	-- Plans: Thorium Helm
+		i(12704),	-- Plans: Thorium Leggings
+		i(12692),	-- Plans: Thorium Shield Spike
+		i(94567),	-- Plans: Thunder, Reborn
+		i(72016),	-- Plans: Titanguard Wristplates
+		i(22388),	-- Plans: Titanic Leggings
+		i(44937),	-- Plans: Titanium Plating
+		i(44938),	-- Plans: Titanium Plating
+		i(47624),	-- Plans: Titanium Razorplate
+		i(47644),	-- Plans: Titanium Razorplate
+		i(47625),	-- Plans: Titanium Spikeguards
+		i(47645),	-- Plans: Titanium Spikeguards
+		i(45091),	-- Plans: Treads of Destiny
+		i(70171),	-- Plans: Unbreakable Guardian
+		i(72012),	-- Plans: Unstoppable Destroyer's Legplates
+		i(87408),	-- Plans: Unyielding Bloodplate
+		i(66127),	-- Plans: Vicious Ornate Pyrium Belt
+		i(66128),	-- Plans: Vicious Ornate Pyrium Boots
+		i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
+		i(66132),	-- Plans: Vicious Ornate Pyrium Breastplate
+		i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
+		i(66131),	-- Plans: Vicious Ornate Pyrium Helm
+		i(66130),	-- Plans: Vicious Ornate Pyrium Legguards
+		i(66129),	-- Plans: Vicious Ornate Pyrium Shoulders
+		i(66119),	-- Plans: Vicious Pyrium Belt
+		i(66120),	-- Plans: Vicious Pyrium Boots
+		i(66117),	-- Plans: Vicious Pyrium Bracers
+		i(66124),	-- Plans: Vicious Pyrium Breastplate
+		i(66118),	-- Plans: Vicious Pyrium Gauntlets
+		i(66123),	-- Plans: Vicious Pyrium Helm
+		i(66122),	-- Plans: Vicious Pyrium Legguards
+		i(66121),	-- Plans: Vicious Pyrium Shoulders
+		i(12828),	-- Plans: Volcanic Hammer
+		i(69968),	-- Plans: Warboots of Mighty Lords
+		i(12711),	-- Plans: Whitesoul Helm
+		i(8029),	-- Plans: Wicked Mithril Blade
+		i(31390),	-- Plans: Wildguard Breastplate
+		i(31392),	-- Plans: Wildguard Helm
+		i(31391),	-- Plans: Wildguard Leggings
+		i(12691),	-- Plans: Wildthorn Mail
+		i(142279),	-- Plans: Windforged Rapier
+		i(70173),	-- Plans: Witch-Hunter's Harvester
+		i(136698),	-- Recipe: Consecrated Spike
+		i(123920),	-- Recipe: Demonsteel Armguards
+		i(123940),	-- Recipe: Demonsteel Armguards
+		i(123948),	-- Recipe: Demonsteel Armguards
+		i(124462),	-- Recipe: Demonsteel Bar
+		i(123954),	-- Recipe: Demonsteel Boots
+		i(123926),	-- Recipe: Demonsteel Boots
+		i(123946),	-- Recipe: Demonsteel Boots
+		i(123927),	-- Recipe: Demonsteel Breastplate
+		i(123947),	-- Recipe: Demonsteel Breastplate
+		i(123955),	-- Recipe: Demonsteel Breastplate
+		i(123925),	-- Recipe: Demonsteel Gauntlets
+		i(123945),	-- Recipe: Demonsteel Gauntlets
+		i(123953),	-- Recipe: Demonsteel Gauntlets
+		i(123923),	-- Recipe: Demonsteel Greaves
+		i(123943),	-- Recipe: Demonsteel Greaves
+		i(123951),	-- Recipe: Demonsteel Greaves
+		i(123924),	-- Recipe: Demonsteel Helm
+		i(123944),	-- Recipe: Demonsteel Helm
+		i(123952),	-- Recipe: Demonsteel Helm
+		i(123922),	-- Recipe: Demonsteel Pauldrons
+		i(123942),	-- Recipe: Demonsteel Pauldrons
+		i(123950),	-- Recipe: Demonsteel Pauldrons
+		i(136709),	-- Recipe: Demonsteel Stirrups
+		i(123921),	-- Recipe: Demonsteel Waistguard
+		i(123941),	-- Recipe: Demonsteel Waistguard
+		i(123949),	-- Recipe: Demonsteel Waistguard
+		i(162498),	-- Recipe: Emblazoned Stormsteel Girdle
+		i(162496),	-- Recipe: Emblazoned Stormsteel Legguards
+		i(151711),	-- Recipe: Empyrial Breastplate
+		i(151712),	-- Recipe: Empyrial Breastplate
+		i(151713),	-- Recipe: Empyrial Breastplate
+		i(137687),	-- Recipe: Fel Core Hound Harness
+		i(151709),	-- Recipe: Felslate Anchor
+		i(136699),	-- Recipe: Flamespike
+		i(136697),	-- Recipe: Gleaming Iron Spike
+		i(116746),	-- Recipe: Greater Steelforged Essence
+		i(116744),	-- Recipe: Greater Truesteel Essence
+		i(162277),	-- Recipe: Honorable Combatant's Cutlass
+		i(162278),	-- Recipe: Honorable Combatant's Cutlass
+		i(162279),	-- Recipe: Honorable Combatant's Deckpounder
+		i(162280),	-- Recipe: Honorable Combatant's Deckpounder
+		i(162271),	-- Recipe: Honorable Combatant's Plate Armguards
+		i(162272),	-- Recipe: Honorable Combatant's Plate Armguards
+		i(162262),	-- Recipe: Honorable Combatant's Plate Boots
+		i(162263),	-- Recipe: Honorable Combatant's Plate Boots
+		i(162265),	-- Recipe: Honorable Combatant's Plate Gauntlets
+		i(162266),	-- Recipe: Honorable Combatant's Plate Gauntlets
+		i(162267),	-- Recipe: Honorable Combatant's Plate Greaves
+		i(162268),	-- Recipe: Honorable Combatant's Plate Greaves
+		i(162273),	-- Recipe: Honorable Combatant's Plate Shield
+		i(162274),	-- Recipe: Honorable Combatant's Plate Shield
+		i(162269),	-- Recipe: Honorable Combatant's Plate Waistguard
+		i(162270),	-- Recipe: Honorable Combatant's Plate Waistguard
+		i(162283),	-- Recipe: Honorable Combatant's Polearm
+		i(162284),	-- Recipe: Honorable Combatant's Polearm
+		i(162281),	-- Recipe: Honorable Combatant's Shanker
+		i(162282),	-- Recipe: Honorable Combatant's Shanker
+		i(162668),	-- Recipe: Honorable Combatant's Spellblade
+		i(162669),	-- Recipe: Honorable Combatant's Spellblade
+		i(162497),	-- Recipe: Imbued Stormsteel Girdle
+		i(162495),	-- Recipe: Imbued Stormsteel Legguards
+		i(123928),	-- Recipe: Leystone Armguards
+		i(123936),	-- Recipe: Leystone Armguards
+		i(123899),	-- Recipe: Leystone Armguards
+		i(123905),	-- Recipe: Leystone Boots
+		i(123934),	-- Recipe: Leystone Boots
+		i(137605),	-- Recipe: Leystone Boots
+		i(123906),	-- Recipe: Leystone Breastplate
+		i(123935),	-- Recipe: Leystone Breastplate
+		i(123939),	-- Recipe: Leystone Breastplate
+		i(123904),	-- Recipe: Leystone Gauntlets
+		i(123933),	-- Recipe: Leystone Gauntlets
+		i(137606),	-- Recipe: Leystone Gauntlets
+		i(123931),	-- Recipe: Leystone Greaves
+		i(123902),	-- Recipe: Leystone Greaves
+		i(137680),	-- Recipe: Leystone Greaves
+		i(123903),	-- Recipe: Leystone Helm
+		i(123932),	-- Recipe: Leystone Helm
+		i(137607),	-- Recipe: Leystone Helm
+		i(123957),	-- Recipe: Leystone Hoofplates
+		i(123930),	-- Recipe: Leystone Pauldrons
+		i(123938),	-- Recipe: Leystone Pauldrons
+		i(123901),	-- Recipe: Leystone Pauldrons
+		i(123900),	-- Recipe: Leystone Waistguard
+		i(123929),	-- Recipe: Leystone Waistguard
+		i(123937),	-- Recipe: Leystone Waistguard
+		i(127725),	-- Recipe: Mighty Steelforged Essence
+		i(127727),	-- Recipe: Mighty Truesteel Essence
+		i(122550),	-- Recipe: Powerful Steelforged Essence
+		i(122552),	-- Recipe: Powerful Truesteel Essence
+		i(122705),	-- Recipe: Riddle of Truesteel
+		i(127743),	-- Recipe: Savage Steelforged Essence
+		i(127745),	-- Recipe: Savage Truesteel Essence
+		i(116727),	-- Recipe: Smoldering Breastplate
+		i(116728),	-- Recipe: Smoldering Greaves
+		i(116726),	-- Recipe: Smoldering Helm
+		i(119329),	-- Recipe: Soul of the Forge
+		i(120262),	-- Recipe: Steelforged Aegis
+		i(120260),	-- Recipe: Steelforged Axe
+		i(116731),	-- Recipe: Steelforged Dagger
+		i(116745),	-- Recipe: Steelforged Essence
+		i(116729),	-- Recipe: Steelforged Greataxe
+		i(116732),	-- Recipe: Steelforged Hammer
+		i(116730),	-- Recipe: Steelforged Saber
+		i(116733),	-- Recipe: Steelforged Shield
+		i(162275),	-- Recipe: Stormsteel Dagger
+		i(162707),	-- Recipe: Stormsteel Dagger
+		i(162670),	-- Recipe: Stormsteel Saber
+		i(162774),	-- Recipe: Stormsteel Saber
+		i(162261),	-- Recipe: Stormsteel Shield
+		i(162706),	-- Recipe: Stormsteel Shield
+		i(162276),	-- Recipe: Stormsteel Spear
+		i(162708),	-- Recipe: Stormsteel Spear
+		i(136696),	-- Recipe: Terrorspike
+		i(116740),	-- Recipe: Truesteel Armguards
+		i(116741),	-- Recipe: Truesteel Boots
+		i(116739),	-- Recipe: Truesteel Breastplate
+		i(116743),	-- Recipe: Truesteel Essence
+		i(116738),	-- Recipe: Truesteel Gauntlets
+		i(116737),	-- Recipe: Truesteel Greaves
+		i(116734),	-- Recipe: Truesteel Grinder
+		i(116736),	-- Recipe: Truesteel Helm
+		i(116735),	-- Recipe: Truesteel Pauldrons
+		i(118044),	-- Recipe: Truesteel Reshaper
+		i(116742),	-- Recipe: Truesteel Waistguard
+	}),
 });

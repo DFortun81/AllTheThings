@@ -200,4 +200,268 @@ profession(202, { -- Engineering
 		i(132501),	-- Tactical Headgun
 		i(144331),	-- Tailored Skullblasters
 	}),
-})
+	n(-100002, { -- PLACE_HOLDER
+		i(136700),	-- Schematic: "The Felic"
+		i(13310),	-- Schematic: Accurate Scope
+		i(23799),	-- Schematic: Adamantite Rifle
+		i(23807),	-- Schematic: Adamantite Scope
+		i(127729),	-- Schematic: Advanced Muzzlesprocket
+		i(116142),	-- Schematic: Alliance Firework
+		i(35186),	-- Schematic: Annihilator Holo-Gogs
+		i(16055),	-- Schematic: Arcane Bomb
+		i(16054),	-- Schematic: Arcanite Dragonling
+		i(137709),	-- Schematic: Auto-Hammer
+		i(137723),	-- Schematic: Auto-Hammer
+		i(89996),	-- Schematic: Autumn Flower Firework
+		i(162327),	-- Schematic: AZ3-R1-T3 Bionic Bifocals
+		i(162328),	-- Schematic: AZ3-R1-T3 Bionic Bifocals
+		i(162732),	-- Schematic: AZ3-R1-T3 Bionic Bifocals
+		i(162733),	-- Schematic: AZ3-R1-T3 Bionic Bifocals
+		i(162325),	-- Schematic: AZ3-R1-T3 Gearspun Goggles
+		i(162326),	-- Schematic: AZ3-R1-T3 Gearspun Goggles
+		i(162730),	-- Schematic: AZ3-R1-T3 Gearspun Goggles
+		i(162731),	-- Schematic: AZ3-R1-T3 Gearspun Goggles
+		i(162329),	-- Schematic: AZ3-R1-T3 Orthogonal Optics
+		i(162330),	-- Schematic: AZ3-R1-T3 Orthogonal Optics
+		i(162734),	-- Schematic: AZ3-R1-T3 Orthogonal Optics
+		i(162735),	-- Schematic: AZ3-R1-T3 Orthogonal Optics
+		i(162323),	-- Schematic: AZ3-R1-T3 Synthetic Specs
+		i(162324),	-- Schematic: AZ3-R1-T3 Synthetic Specs
+		i(162728),	-- Schematic: AZ3-R1-T3 Synthetic Specs
+		i(162729),	-- Schematic: AZ3-R1-T3 Synthetic Specs
+		i(127721),	-- Schematic: Bi-Directional Fizzle Reducer
+		i(18290),	-- Schematic: Biznicks 247x128 Accurascope
+		i(120267),	-- Schematic: Blackrock Rifling
+		i(118490),	-- Schematic: Blingtron 5000
+		i(137692),	-- Schematic: Blingtron's Circuit Design Tutorial
+		i(137697),	-- Schematic: Blink-Trigger Headgun
+		i(137711),	-- Schematic: Blink-Trigger Headgun
+		i(20000),	-- Schematic: Bloodvine Goggles
+		i(20001),	-- Schematic: Bloodvine Lens
+		i(18649),	-- Schematic: Blue Firework
+		i(21730),	-- Schematic: Blue Rocket Cluster
+		i(137699),	-- Schematic: Bolt-Action Headgun
+		i(137713),	-- Schematic: Bolt-Action Headgun
+		i(10601),	-- Schematic: Bright-Eye Goggles
+		i(162333),	-- Schematic: Catchroot Seed Spreader
+		i(162737),	-- Schematic: Catchroot Seed Spreader
+		i(10603),	-- Schematic: Catseye Ultra Goggles
+		i(89994),	-- Schematic: Celestial Firework
+		i(144337),	-- Schematic: Chain Skullblasters
+		i(162334),	-- Schematic: Charged Refrigeration Projectile
+		i(162738),	-- Schematic: Charged Refrigeration Projectile
+		i(100910),	-- Schematic: Chief Engineer Jard's Journal
+		i(21737),	-- Schematic: Cluster Launcher
+		i(44918),	-- Schematic: Cluster Launcher
+		i(23803),	-- Schematic: Cogspinner Goggles
+		i(18292),	-- Schematic: Core Marksman Rifle
+		i(4415),	-- Schematic: Craftsman's Monocle
+		i(23810),	-- Schematic: Crashin' Thrashin' Robot
+		i(162343),	-- Schematic: Crow's Nest Scope
+		i(118497),	-- Schematic: Cybergenetic Mechshades
+		i(16049),	-- Schematic: Dark Iron Bomb
+		i(16048),	-- Schematic: Dark Iron Rifle
+		i(10602),	-- Schematic: Deadly Scope
+		i(10607),	-- Schematic: Deepdive Helmet
+		i(16050),	-- Schematic: Delicate Arcanite Converter
+		i(162342),	-- Schematic: Deployable Attire Rearranger
+		i(162743),	-- Schematic: Deployable Attire Rearranger
+		i(137705),	-- Schematic: Deployable Bullet Dispenser
+		i(137719),	-- Schematic: Deployable Bullet Dispenser
+		i(118493),	-- Schematic: Didi's Delicate Assembly
+		i(4413),	-- Schematic: Discombobulator Ray
+		i(137703),	-- Schematic: Double-Barreled Cranial Cannon
+		i(137717),	-- Schematic: Double-Barreled Cranial Cannon
+		i(162338),	-- Schematic: Electro-Induced Slumber Bomb
+		i(162340),	-- Schematic: Electroshock Mount Motivator
+		i(23874),	-- Schematic: Elemental Seaforium Charge
+		i(71078),	-- Schematic: Extreme-Impact Hole Puncher
+		i(6716),	-- Schematic: EZ-Thro Dynamite
+		i(18650),	-- Schematic: EZ-Thro Dynamite II
+		i(162331),	-- Schematic: F.R.I.E.D.
+		i(137710),	-- Schematic: Failure Detection Pylon
+		i(137724),	-- Schematic: Failure Detection Pylon
+		i(23816),	-- Schematic: Fel Iron Toolbox
+		i(23800),	-- Schematic: Felsteel Boomstick
+		i(34114),	-- Schematic: Field Repair Bot 110G
+		i(118480),	-- Schematic: Findle's Loot-a-Rang
+		i(162346),	-- Schematic: Finely-Tuned Stormsteel Destroyer
+		i(162746),	-- Schematic: Finely-Tuned Stormsteel Destroyer
+		i(44919),	-- Schematic: Firework Launcher
+		i(21738),	-- Schematic: Firework Launcher
+		i(4411),	-- Schematic: Flame Deflector
+		i(6672),	-- Schematic: Flash Bomb
+		i(16056),	-- Schematic: Flawless Arcanite Rifle
+		i(70177),	-- Schematic: Flintlocke's Woodchucker
+		i(18291),	-- Schematic: Force Reactive Disk
+		i(162335),	-- Schematic: Fro-Grow Grenade
+		i(162739),	-- Schematic: Fro-Grow Grenade
+		i(162322),	-- Schematic: Frost-Laced Ammunition
+		i(162727),	-- Schematic: Frost-Laced Ammunition
+		i(32381),	-- Schematic: Fused Wiring
+		i(18654),	-- Schematic: Gnomish Alarm-o-Bot
+		i(7742),	-- Schematic: Gnomish Cloaking Device
+		i(7560),	-- Schematic: Gnomish Universal Remote
+		i(7561),	-- Schematic: Goblin Jumper Cables
+		i(18653),	-- Schematic: Goblin Jumper Cables XL
+		i(4416),	-- Schematic: Goblin Land Mine
+		i(89993),	-- Schematic: Grand Celebration Firework
+		i(151714),	-- Schematic: Gravitational Reduction Slippers
+		i(18648),	-- Schematic: Green Firework
+		i(21731),	-- Schematic: Green Rocket Cluster
+		i(23814),	-- Schematic: Green Smoke Flare
+		i(137708),	-- Schematic: Gunpack
+		i(137722),	-- Schematic: Gunpack
+		i(137706),	-- Schematic: Gunpowder Charge
+		i(137720),	-- Schematic: Gunpowder Charge
+		i(18652),	-- Schematic: Gyrofreeze Ice Reflector
+		i(35196),	-- Schematic: Hard Khorium Goggles
+		i(35310),	-- Schematic: Healing Potion Injector
+		i(23883),	-- Schematic: Healing Potion Injector
+		i(144338),	-- Schematic: Heavy Skullblasters
+		i(118495),	-- Schematic: Hemet's Heartseeker
+		i(163020),	-- Schematic: Honorable Combatant's Discombobulator
+		i(163021),	-- Schematic: Honorable Combatant's Discombobulator
+		i(163022),	-- Schematic: Honorable Combatant's Stormsteel Destroyer
+		i(163023),	-- Schematic: Honorable Combatant's Stormsteel Destroyer
+		i(116144),	-- Schematic: Horde Firework
+		i(35190),	-- Schematic: Hyper-Magnified Moon Specs
+		i(18657),	-- Schematic: Hyper-Radiant Flame Reflector
+		i(23806),	-- Schematic: Hyper-Vision Goggles
+		i(13308),	-- Schematic: Ice Deflector
+		i(162321),	-- Schematic: Incendiary Ammunition
+		i(127739),	-- Schematic: Infrablue-Blocker Lenses
+		i(162341),	-- Schematic: Interdimensional Companion Repository
+		i(162742),	-- Schematic: Interdimensional Companion Repository
+		i(137691),	-- Schematic: Intra-Dalaran Wormhole Generator
+		i(137718),	-- Schematic: Ironsight Cranial Cannon
+		i(137704),	-- Schematic: Ironsight Cranial Cannon
+		i(89997),	-- Schematic: Jade Blossom Firework
+		i(49050),	-- Schematic: Jeeves
+		i(35187),	-- Schematic: Justicebringer 3000 Specs
+		i(23808),	-- Schematic: Khorium Scope
+		i(21727),	-- Schematic: Large Blue Rocket
+		i(21733),	-- Schematic: Large Blue Rocket Cluster
+		i(21728),	-- Schematic: Large Green Rocket
+		i(21734),	-- Schematic: Large Green Rocket Cluster
+		i(21729),	-- Schematic: Large Red Rocket
+		i(21735),	-- Schematic: Large Red Rocket Cluster
+		i(4417),	-- Schematic: Large Seaforium Charge
+		i(137726),	-- Schematic: Leystone Buoy
+		i(118485),	-- Schematic: Lifelike Mechanical Frostboar
+		i(16044),	-- Schematic: Lifelike Mechanical Toad
+		i(35193),	-- Schematic: Lightning Etched Specs
+		i(11827),	-- Schematic: Lil' Smoky
+		i(118491),	-- Schematic: Linkgrease Locksprocket
+		i(13309),	-- Schematic: Lovingly Crafted Boomstick
+		i(18655),	-- Schematic: Major Recombobulator
+		i(163195),	-- Schematic: Makeshift Azerite Detector
+		i(35311),	-- Schematic: Mana Potion Injector
+		i(23884),	-- Schematic: Mana Potion Injector
+		i(16053),	-- Schematic: Master Engineer's Goggles
+		i(16046),	-- Schematic: Masterwork Target Dummy
+		i(35195),	-- Schematic: Mayhem Projection Goggles
+		i(137727),	-- Schematic: Mecha-Bond Imprint Matrix
+		i(161135),	-- Schematic: Mecha-Mogul Mk2
+		i(118484),	-- Schematic: Mechanical Axebeak
+		i(13311),	-- Schematic: Mechanical Dragonling
+		i(119177),	-- Schematic: Mechanical Scorpid
+		i(4408),	-- Schematic: Mechanical Squirrel Box
+		i(44502),	-- Schematic: Mechano-Hog
+		i(118478),	-- Schematic: Megawatt Filament
+		i(44503),	-- Schematic: Mekgineer's Chopper
+		i(14639),	-- Schematic: Minor Recombobulator
+		i(10604),	-- Schematic: Mithril Heavy-Bore Rifle
+		i(10609),	-- Schematic: Mithril Mechanical Dragonling
+		i(162344),	-- Schematic: Monelite Scope of Alacrity
+		i(162744),	-- Schematic: Monelite Scope of Alacrity
+		i(4412),	-- Schematic: Moonsight Rifle
+		i(118492),	-- Schematic: Morden's Magnificent Contraption
+		i(162336),	-- Schematic: Neurological Immobilization Bomb
+		i(162740),	-- Schematic: Neurological Immobilization Bomb
+		i(118498),	-- Schematic: Night-Vision Mechshades
+		i(118477),	-- Schematic: Oglethorpe's Missile Splitter
+		i(122546),	-- Schematic: Oglethorpe's Octagonal Lenses
+		i(162337),	-- Schematic: Organic Discombobulation Grenade
+		i(162741),	-- Schematic: Organic Discombobulation Grenade
+		i(23802),	-- Schematic: Ornate Khorium Rifle
+		i(10606),	-- Schematic: Parachute Cloak
+		i(118487),	-- Schematic: Personal Hologram
+		i(11828),	-- Schematic: Pet Bombling
+		i(118499),	-- Schematic: Plasma Mechshades
+		i(4414),	-- Schematic: Portable Bronze Mortar
+		i(23804),	-- Schematic: Power Amplification Goggles
+		i(18656),	-- Schematic: Powerful Seaforium Charge
+		i(35189),	-- Schematic: Powerheal 9000 Lens
+		i(162345),	-- Schematic: Precision Attitude Adjuster
+		i(162745),	-- Schematic: Precision Attitude Adjuster
+		i(122554),	-- Schematic: Precision Scope Tuning Kit
+		i(122712),	-- Schematic: Primal Welding
+		i(35192),	-- Schematic: Primal-Attuned Goggles
+		i(137707),	-- Schematic: Pump-Action Bandage Gun
+		i(137721),	-- Schematic: Pump-Action Bandage Gun
+		i(25887),	-- Schematic: Purple Smoke Flare
+		i(35197),	-- Schematic: Quad Deathblow X44 Goggles
+		i(118500),	-- Schematic: Razorguard Mechshades
+		i(141849),	-- Schematic: Reaves Module: Bling Mode
+		i(137693),	-- Schematic: Reaves Module: Failure Detection Mode
+		i(137694),	-- Schematic: Reaves Module: Repair Mode
+		i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
+		i(144343),	-- Schematic: Rechargeable Reaves Battery
+		i(18647),	-- Schematic: Red Firework
+		i(21732),	-- Schematic: Red Rocket Cluster
+		i(137700),	-- Schematic: Reinforced Headgun
+		i(137714),	-- Schematic: Reinforced Headgun
+		i(23887),	-- Schematic: Rocket Boots Xtreme
+		i(35582),	-- Schematic: Rocket Boots Xtreme Lite
+		i(144336),	-- Schematic: Rugged Skullblasters
+		i(137702),	-- Schematic: Sawed-Off Cranial Cannon
+		i(137716),	-- Schematic: Sawed-Off Cranial Cannon
+		i(137701),	-- Schematic: Semi-Automagic Cranial Cannon
+		i(133671),	-- Schematic: Semi-Automagic Cranial Cannon
+		i(137715),	-- Schematic: Semi-Automagic Cranial Cannon
+		i(89992),	-- Schematic: Serpent's Heart Firework
+		i(4410),	-- Schematic: Shadow Goggles
+		i(136701),	-- Schematic: Shockinator
+		i(118476),	-- Schematic: Shrediron's Shredder
+		i(21724),	-- Schematic: Small Blue Rocket
+		i(21725),	-- Schematic: Small Green Rocket
+		i(21726),	-- Schematic: Small Red Rocket
+		i(4409),	-- Schematic: Small Seaforium Charge
+		i(19027),	-- Schematic: Snake Burst Firework
+		i(116146),	-- Schematic: Snake Firework
+		i(10608),	-- Schematic: Sniper Scope
+		i(17720),	-- Schematic: Snowmaster 9000
+		i(137725),	-- Schematic: Sonic Environment Enhancer
+		i(10605),	-- Schematic: Spellpower Goggles Xtreme
+		i(16045),	-- Schematic: Spellpower Goggles Xtreme Plus
+		i(23809),	-- Schematic: Stabilized Eternium Scope
+		i(22729),	-- Schematic: Steam Tonk Controller
+		i(35194),	-- Schematic: Surestrike Goggles v3.0
+		i(118489),	-- Schematic: Swapblaster
+		i(137698),	-- Schematic: Tactical Headgun
+		i(137712),	-- Schematic: Tactical Headgun
+		i(144335),	-- Schematic: Tailored Skullblasters
+		i(127747),	-- Schematic: Taladite Firing Pin
+		i(162332),	-- Schematic: Thermo-Accelerated Plague Spreader
+		i(162736),	-- Schematic: Thermo-Accelerated Plague Spreader
+		i(16041),	-- Schematic: Thorium Grenade
+		i(16043),	-- Schematic: Thorium Rifle
+		i(16047),	-- Schematic: Thorium Tube
+		i(16042),	-- Schematic: Thorium Widget
+		i(23817),	-- Schematic: Titanium Toolbox
+		i(120268),	-- Schematic: True Iron Trigger
+		i(18651),	-- Schematic: Truesilver Transformer
+		i(18658),	-- Schematic: Ultra-Flash Shadow Reflector
+		i(23805),	-- Schematic: Ultra-Spectropic Detection Goggles
+		i(16052),	-- Schematic: Voice Amplification Modulator
+		i(23811),	-- Schematic: White Smoke Flare
+		i(35191),	-- Schematic: Wonderheal XT68 Shades
+		i(18661),	-- Schematic: World Enlarger
+		i(118481),	-- Schematic: World Shrinker
+		i(118488),	-- Schematic: Wormhole Centrifuge
+		i(151717),	-- Schematic: Wormhole Generator: Argus
+		i(162339),	-- Schematic: XA-1000 Surface Skimmer
+		i(23888),	-- Schematic: Zapthrottle Mote Extractor
+	}),
+});
