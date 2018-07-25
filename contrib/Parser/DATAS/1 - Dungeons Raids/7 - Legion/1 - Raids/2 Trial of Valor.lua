@@ -521,7 +521,8 @@ _.Instances =
 				},
 				["isRaid"] = true,
 				["lvl"] = 110,
-				["mapID"] = 806
+				["mapID"] = 806,
+				["maps"] = { 807, 808 },
 			}),
 		},					
 		["tierID"] = 7
