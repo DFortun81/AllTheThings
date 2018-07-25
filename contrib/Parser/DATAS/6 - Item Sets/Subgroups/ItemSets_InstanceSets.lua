@@ -24,7 +24,12 @@ _.GearSets =
 				i(151314), -- Shifting Stalker Hide Pants
 				i(151317), -- Footpads of Seeping Dread
 			},
-			["classes"] = { 11, 4, 10, 12 }, -- Druid/Rogue/Monk/DH
+			["classes"] = {
+				11, --  Druid
+				4,  -- Rogue
+				10, -- Monk
+				12, -- Demon  Hunter
+			},
 			["lvl"] = 110,
 		}),
 		n(-3229, { -- Cadaverous Garb [Unobtainable]
@@ -86,7 +91,11 @@ _.GearSets =
 				i(151676), -- Legs
 				i(151664), -- Feet
 			},
-			["classes"] = { 5, 8 , 9 }, -- Priest/Mage/Lock
+			["classes"] = {
+				5, -- Priest
+				8, -- Mage
+				9, -- Warlock
+			},
 			["lvl"] = 110,
 		}),
 		n(-3231, { -- Deathbone Guardian [Unobtainable]
@@ -141,7 +150,10 @@ _.GearSets =
 				i(151677), -- Legs
 				i(151665), -- Feet
 			},
-			["classes"] = { 3, 7 }, -- Hunter/Shaman
+			["classes"] = {
+				3, -- Hunter
+				7, -- Shaman
+			}, 
 			["lvl"] = 110,
 		}),
 		n(-3226, { -- Ironweave Battlesuit [Unobtainable]
@@ -166,7 +178,11 @@ _.GearSets =
 				i(151304), -- Legs
 				i(151301), -- Feet
 			},
-			["classes"] = { 5, 8 , 9 }, -- Priest/Mage/Lock
+			["classes"] = {
+				5, -- Priest
+				8, -- Mage
+				9, -- Warlock
+			},
 			["lvl"] = 110,
 		}),
 		n(-3228, { -- Necropile Raiment [Unobtainable]
@@ -187,7 +203,12 @@ _.GearSets =
 				i(151678), -- Legs
 				i(151666), -- Feet
 			},
-			["classes"] = { 11, 4, 10, 12 }, -- Druid/Rogue/Monk/DH
+			["classes"] = {
+				11, --  Druid
+				4,  -- Rogue
+				10, -- Monk
+				12, -- Demon  Hunter
+			},
 			["lvl"] = 110,
 		}),
 		gs(1469, { -- Sterling Triumvirate Chainmail
@@ -202,7 +223,10 @@ _.GearSets =
 				i(151338), -- Legs
 				i(151320), -- Feet
 			},
-			["classes"] = { 3, 7 }, -- Hunter/Shaman
+			["classes"] = {
+				3, -- Hunter
+				7, -- Shaman
+			}, 
 			["lvl"] = 110,
 		}),
 		n(-3227, { -- The Postmaster
@@ -232,7 +256,11 @@ _.GearSets =
 				i(151675), -- Legs
 				i(151663), -- Feet
 			},
-			["classes"] = { 2, 1, 6 }, -- Paladin/Warrior/DK
+			["classes"] = { 
+				2, -- Paladin
+				1, -- Warrior
+				6, -- Death Knight
+			},
 			["lvl"] = 110,
 		}),
 		gs(1468, { -- Venerated Triumvirate Battleplate
@@ -247,7 +275,11 @@ _.GearSets =
 				i(151339), -- Legs
 				i(151330), -- Feet
 			},
-			["classes"] = { 2, 1, 6 }, -- Paladin/Warrior/DK
+			["classes"] = { 
+				2, -- Paladin
+				1, -- Warrior
+				6, -- Death Knight
+			},
 			["lvl"] = 110,
 		}),
 		gs(1637, { -- Vestments of the Tidesages
@@ -259,6 +291,11 @@ _.GearSets =
 				i(162591), -- Gloves of the Tidesages
 				i(162593), -- Pantaloons of the Tidesages
 				i(162590), -- Sandals of the Tidesages
+			},
+			["classes"] = {
+				5, -- Priest
+				8, -- Mage
+				9, -- Warlock
 			},
 		}),
 	}),
