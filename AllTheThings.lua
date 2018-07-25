@@ -1985,7 +1985,8 @@ local function OpenMiniList(field, id, label)
 			return false;
 		end
 	else
-		print("No map found for this location ", app.GetMapName(id));
+		print("No map found for this location ", app.GetMapName(id), " [", id, "]");
+		print("Please report this to the ATT Discord! Thanks!");
 	end
 end
 local function OpenMiniListForCurrentProfession(manual, refresh)
@@ -2102,7 +2103,6 @@ local function RefreshLocationCoroutine()
 		coroutine.yield();
 		mapID = app.GetCurrentMapID();
 	end
-	print("Current Map ID #", mapID);
 	
 	-- Cache that we're in the current map ID.
 	if GetTempDataMember("MapID") ~= mapID then
@@ -3941,7 +3941,11 @@ app.BaseMusicRoll = {
 				return link;
 			end
 		elseif key == "description" then
-			return "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
+			local description = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
+			if not (IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961)) then
+				description = description .. "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass quest in your garrison for this item to drop.";
+			end
+			return description;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
