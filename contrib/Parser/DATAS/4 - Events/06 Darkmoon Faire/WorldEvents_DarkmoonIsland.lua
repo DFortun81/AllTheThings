@@ -685,6 +685,7 @@ _.WorldEvents =
 			}),	
 		},
 		["icon"] = "Interface\\Icons\\INV_DARKMOON_EYE",
+		["maps"] = { 408 },
 		["achievementID"] = 6019, -- Come One, Come All!
 	}),	
 };	

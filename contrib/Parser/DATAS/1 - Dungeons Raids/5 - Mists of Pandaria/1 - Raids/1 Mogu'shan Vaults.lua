@@ -562,7 +562,7 @@ _.Instances =
 				["sharedLockout"] = 1,
 				["lvl"] = 90,
 				["mapID"] = 471,
-				["maps"] = { 472 }, -- 2nd LFR Wing
+				["maps"] = { 472, 473 }, -- 2nd LFR Wing
 			}),
 		},					
 		["tierID"] = 5
