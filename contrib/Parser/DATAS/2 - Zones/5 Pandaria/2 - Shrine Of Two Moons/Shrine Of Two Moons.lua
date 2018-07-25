@@ -1415,6 +1415,7 @@ _.Zones =
 					}),
 				}),
 			},
+			["maps"] = { 392 },
 			["lvl"] = 78,
 			["isRaid"] = true,
 			["races"] = HORDE_ONLY,

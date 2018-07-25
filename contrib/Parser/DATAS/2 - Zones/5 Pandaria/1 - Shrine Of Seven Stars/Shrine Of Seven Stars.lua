@@ -1363,6 +1363,7 @@ _.Zones =
 					}),
 				}),
 			},
+			["maps"] = { 394 },
 			["lvl"] = 78,
 			["isRaid"] = true,
 			["races"] = ALLIANCE_ONLY,

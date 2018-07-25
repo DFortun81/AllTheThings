@@ -372,6 +372,7 @@ _.Instances = { tier(1, {	-- Classic
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 50,
-		["mapID"] = 287
+		["mapID"] = 287,
+		["maps"] = { 288, 289, 290, 291 },
 	}),
 })};

@@ -87,7 +87,8 @@ _.Instances =
 						},
 					}),
 				},
-				["mapID"] = 291
+				["mapID"] = 291,
+				["maps"] = { 292 },
 			}),
 		},					
 		["tierID"] = 4
