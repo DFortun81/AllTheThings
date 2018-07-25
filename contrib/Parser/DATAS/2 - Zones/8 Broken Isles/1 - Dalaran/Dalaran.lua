@@ -8270,7 +8270,7 @@ _.Zones =
 			["isRaid"] = true,
 			["lvl"] = 98,
 			["maps"] = { -- Do not include 626 as that is Rogue Class Hall
-				627, -- Dalaran
+				-- 627, -- Dalaran [This causes it to load the list twice]
 				628, -- The Underbelly,
 				629, -- Aegwynn's Gallery [May separate out later]
 			},
