@@ -953,24 +953,40 @@ _.WorldEvents =
 				["groups"] = {
 					n(-17, { -- Quests
 						["groups"] = {
-						
-						
-						
+							-- ALLIANCE PART I
+							qa(52062, {	-- A Disturbancee in Ashenvale
+								["qg"] = 139798, -- Master Mathias Shaw
+								["sourceQuests"] = { 52060 }, -- The Horde Uprising
+							}),
+							qa(52279, {	-- A Looming Threat
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 52257 }, -- "Rock" The World
+							}),	
+							qa(52058),	-- A Short-Lived Peace
+							qa(52116, {	-- A Soft Glow
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = {
+									52072, -- The Light of Elune
+									53616, -- Knives of the Forsaken
+								}, 
+							}),	
+							qa(53619, { -- Azerite Denial
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 52242 }, -- The Wake of Something New
+							}),
+								
 						
 						
 						
 						
 						
 								-- Alliance Part I
-							qa(52058),	-- A Short-Lived Peace
+							
 							qa(52060, {	-- The Horde Uprising
 								["qg"] = 107574, -- Anduin Wrynn
 								["sourceQuests"] = { 52058 }, -- A Short-Lived Pace
 							}),	
-							qa(52062, {	-- A Disturbancee in Ashenvale
-								["qg"] = 139798, -- Master Mathias Shaw
-								["sourceQuests"] = { 52060 }, -- The Horde Uprising
-							}),	
+								
 							qa(52072, {	-- The Light of Elune
 								["qg"] = 134578, -- Captain Delaryn Summermoon
 								["sourceQuests"] = { 52062 }, -- A Disturbancee in Ashenvale
@@ -978,13 +994,6 @@ _.WorldEvents =
 							qa(53616, {	-- Knives of the Forsaken
 								["qg"] = 134578, -- Captain Delaryn Summermoon
 								["sourceQuests"] = { 52062 }, -- A Disturbancee in Ashenvale
-							}),	
-							qa(52116, {	-- A Soft Glow
-								["qg"] = 134578, -- Captain Delaryn Summermoon
-								["sourceQuests"] = {
-									52072, -- The Light of Elune
-									53616, -- Knives of the Forsaken
-								}, 
 							}),	
 							--[[ REMOVED FROM LIVE
 							
@@ -1023,10 +1032,7 @@ _.WorldEvents =
 									53551, -- Elves in the Machine
 								}, 
 							}),	
-							qa(53619, { -- Azerite Denial
-								["qg"] = 134578, -- Captain Delaryn Summermoon
-								["sourceQuests"] = { 52242 }, -- The Wake of Something New
-							}),		
+								
 							qa(53621, { -- No Horde Allowed
 								["qg"] = 134578, -- Captain Delaryn Summermoon
 								["sourceQuests"] = { 52242 }, -- The Wake of Something New
@@ -1035,7 +1041,7 @@ _.WorldEvents =
 								["qg"] = 134578, -- Captain Delaryn Summermoon
 								["sourceQuests"] = { 
 									53619, -- Azerite Denial
-									52256, -- Malfurion Returns
+									53621, -- No Horde Allowed
 								},
 							}),	
 							qa(52257, {	-- "Rock" The World
@@ -1046,10 +1052,7 @@ _.WorldEvents =
 								["qg"] = 133693, -- Malfurion Stormrage
 								["sourceQuests"] = { 52257 }, -- "Rock" The World
 							}),
-							qa(52279, {	-- A Looming Threat
-								["qg"] = 134578, -- Captain Delaryn Summermoon
-								["sourceQuests"] = { 52279 }, -- A Looming Threat
-							}),	
+							
 							-- Alliance Part II
 							qa(52973, {	-- A Threat From the North
 								--["qg"] = , -- 
