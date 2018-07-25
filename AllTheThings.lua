@@ -6809,7 +6809,7 @@ function app:GetDataCache()
 		
 		--[[ SUPER DUPER SECRET
 		if app.Categories.NaughtySecrets then
-			db = app.CreatAchievement(12478, app.Categories.NaughtySecrets);
+			db = app.CreateAchievement(12478, app.Categories.NaughtySecrets);
 			db.expanded = false;
 			db.text = "Naughty Secrets";
 			table.insert(g, db);

@@ -1508,7 +1508,8 @@ _.Instances =
 				},
 				["isRaid"] = true,
 				["lvl"] = 80,
-				["mapID"] = 147
+				["mapID"] = 147,
+				["maps"] = { 148, 149, 150, 151, 152 },
 			}),
 		},					
 		["tierID"] = 3
