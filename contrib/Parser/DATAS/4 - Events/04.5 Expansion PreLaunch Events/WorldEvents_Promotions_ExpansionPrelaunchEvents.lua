@@ -1078,55 +1078,49 @@ _.WorldEvents =
 								["sourceQuests"] = { 53095 }, -- A Flicker of Hope
 							}),	
 							-- Horde Part I
-							qh(50476),	-- The Warchief Awaits
-							qh(50642, {	-- The Warchief Commands
+							qh(53627, { -- A Gift of Azerite
+								["qg"] = 144346, -- Jux Burstkix
+								["sourceQuests"] = { 
+									53608, -- Fueling the Horde War Machine
+									53609, -- A Very Clear Message
+								},
+							}),
+							qh(53605, {	-- A Glaive Misunderstanding
 								["qg"] = 134554, -- Lady Sylvanas Windrunner
-								["sourceQuests"] = { 50476 }, -- The Warchief Awaits
+								["sourceQuests"] = { 50880 }, -- An Unstoppable Force
 							}),	
+							qh(52806, {	-- A Looming Threat
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 52438 }, -- A Wild Ride
+							}),
 							qh(50646, {	-- A Quick Diversion
 								["qg"] = 134574, -- High Overlord Saurfang
 								["sourceQuests"] = { 50642 }, -- The Warchief Commands
-							}),	
-							qh(50647, {	-- Everybody Has a Price
-								["qg"] = 134573, -- Lorash
-								["sourceQuests"] = { 50646 }, -- A Quick Diversion
-							}),	
-							qh(50738, {	-- A Timely Arrival
-								["qg"] = 134573, -- Lorash
-								["sourceQuests"] = { 50647 }, -- Everybody Has a Price
-							}),	
-							qh(50740, {	-- Zoram'gar Outpost
-								["qg"] = 135003, -- Lady Sylvanas Windrunner
-								["sourceQuests"] = { 50738 }, -- A Timely Arrival
-							}),	
-							qh(50772, {	-- On The Prowl
-								["qg"] = 134574, -- High Overlord Saurfang
-								["sourceQuests"] = { 50740 }, -- Zoram'gar Outpost
-							}),	
-							qh(50800, {	-- Into the Woods
-								["qg"] = 134554, -- Lady Sylvanas Windrunner
-								["sourceQuests"] = { 50772 }, -- On The Prowl
-							}),	
-							qh(50823, {	-- Ripe for the Picking
-								["qg"] = 134554, -- Lady Sylvanas Windrunner
-								["sourceQuests"] = { 50800 }, -- Into the Woods
 							}),	
 							qh(50837, {	-- A Quick Flyover
 								["qg"] = 134554, -- Lady Sylvanas Windrunner
 								["sourceQuests"] = { 50823 }, -- Ripe for the Picking
 							}),	
+							qh(50738, {	-- A Timely Arrival
+								["qg"] = 134573, -- Lorash
+								["sourceQuests"] = { 50647 }, -- Everybody Has a Price
+							}),	
+							qh(53609, {	-- A Very Clear Message
+								["qg"] = 144346, -- Jux Burstkix
+								["sourceQuests"] = { 52437 }, -- The Start of Something Good
+							}),
+							qh(53606, {	-- Aggressive Inspiration
+								["qg"] = 135003, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 52436 }, -- The Blackwood Den
+							}),	
+							qh(52438, {	-- A Wild Ride
+								["qg"] = 135501, -- Zarvik Blastwix
+								["sourceQuests"] = { 53627 }, -- A Gift of Azerite
+							}),
 							qh(50880, {	-- An Unstoppable Force
 								["qg"] = 134554, -- Lady Sylvanas Windrunner
 								["sourceQuests"] = { 50837 }, -- A Quick Flyover
-							}),	
-							qh(53604, {	-- Clearing Them Out
-								["qg"] = 134554, -- Lady Sylvanas Windrunner
-								["sourceQuests"] = { 50880 }, -- An Unstoppable Force
-							}),	
-							qh(53605, {	-- A Glaive Misunderstanding
-								["qg"] = 134554, -- Lady Sylvanas Windrunner
-								["sourceQuests"] = { 50880 }, -- An Unstoppable Force
-							}),	
+							}),
 							qh(50878, {	-- Blurred Vision
 								["qg"] = 134554, -- Lady Sylvanas Windrunner
 								["sourceQuests"] = {
@@ -1134,23 +1128,33 @@ _.WorldEvents =
 									53605, -- A Glaive Misunderstanding
 								},
 							}),	
-							qh(50879, {	-- The Trees Have Ears
-								["qg"] = 135003, -- Lady Sylvanas Windrunner
-								["sourceQuests"] = { 50878 }, -- Blurred Vision
+							qh(53604, {	-- Clearing Them Out
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50880 }, -- An Unstoppable Force
 							}),	
-							--[[	REMOVED ON LIVE;  Turned into Alliance Quest
-							qh(53550, {	-- A Change in Leadership
-								--["qg"] = , -- 
-								["sourceQuests"] = { 50879 }, -- The Trees Have Ears
+							qh(50647, {	-- Everybody Has a Price
+								["qg"] = 134573, -- Lorash
+								["sourceQuests"] = { 50646 }, -- A Quick Diversion
+							}),
+							qh(53608, {	-- Fueling the Horde War Machine
+								["qg"] = 144346, -- Jux Burstkix
+								["sourceQuests"] = { 52437 }, -- The Start of Something Good
+							}),
+							qh(50800, {	-- Into the Woods
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50772 }, -- On The Prowl
 							}),	
-							--]]
+							qh(50772, {	-- On The Prowl
+								["qg"] = 134574, -- High Overlord Saurfang
+								["sourceQuests"] = { 50740 }, -- Zoram'gar Outpost
+							}),	
+							qh(50823, {	-- Ripe for the Picking
+								["qg"] = 134554, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50800 }, -- Into the Woods
+							}),
 							qh(52436, {	-- The Blackwood Den
 								["qg"] = 135003, -- Lady Sylvanas Windrunner
 								["sourceQuests"] = { 50879 }, -- The Trees Have Ears
-							}),	
-							qh(53606, {	-- Aggressive Inspiration
-								["qg"] = 135003, -- Lady Sylvanas Windrunner
-								["sourceQuests"] = { 52436 }, -- The Blackwood Den
 							}),	
 							qh(52437, {	-- The Start of Something Good
 								["qg"] = 135003, -- Lady Sylvanas Windrunner   -- Might need to be changed
@@ -1159,30 +1163,26 @@ _.WorldEvents =
 									53606, -- Aggressive Inspiration
 								}, 
 							}),	
-							qh(53608, {	-- Fueling the Horde War Machine
-								["qg"] = 144346, -- Jux Burstkix
-								["sourceQuests"] = { 52437 }, -- The Start of Something Good
+							qh(50879, {	-- The Trees Have Ears
+								["qg"] = 135003, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50878 }, -- Blurred Vision
 							}),	
-							qh(53609, {	-- A Very Clear Message
-								["qg"] = 144346, -- Jux Burstkix
-								["sourceQuests"] = { 52437 }, -- The Start of Something Good
-							}),
-							qh(53627, { -- A Gift of Azerite
-								["qg"] = 144346, -- Jux Burstkix
-								["sourceQuests"] = { 
-									53608, -- Fueling the Horde War Machine
-									53609, -- A Very Clear Message
-								},
-							}),
-							qh(52438, {	-- A Wild Ride
-								["qg"] = 135501, -- Zarvik Blastwix
-								["sourceQuests"] = { 53627 }, -- A Gift of Azerite
-							}),	
-							qh(52806, {	-- A Looming Threat
+							qh(50476),	-- The Warchief Awaits
+							qh(50642, {	-- The Warchief Commands
 								["qg"] = 134554, -- Lady Sylvanas Windrunner
-								["sourceQuests"] = { 52438 }, -- A Wild Ride
+								["sourceQuests"] = { 50476 }, -- The Warchief Awaits
 							}),	
-							-- Horde Part II
+							qh(50740, {	-- Zoram'gar Outpost
+								["qg"] = 135003, -- Lady Sylvanas Windrunner
+								["sourceQuests"] = { 50738 }, -- A Timely Arrival
+							}),	
+							--[[	REMOVED ON LIVE;  Turned into Alliance Quest
+							qh(53550, {	-- A Change in Leadership
+								--["qg"] = , -- 
+								["sourceQuests"] = { 50879 }, -- The Trees Have Ears
+							}),	
+							--]]
+							-- Horde Part II [LUCETIA: UNORGANIZED DUE TO WAITING FOR LAUNCH TO VERIFY IN THE ORDER IT ORIGINALLY WAS]
 							qh(52967, {	-- Saurfang Returns
 								--["qg"] = , -- 
 								["sourceQuests"] = { 52806 }, -- A Looming Threat
@@ -1209,16 +1209,7 @@ _.WorldEvents =
 									52971, -- Seaside Rendezvous
 									53610, -- Driving Them Out
 								}, 
-							}),		
-						
-						
-						
-						
-						
-						
-						
-						
-						
+							}),
 						},
 						-- Attaching the quests to each zone that is involved in the "War of the Thorns" Campaign.  Excluding Undercity, Stomrwind and Northern Barrens due to only one quest taking place in these zones and it's not relevant to link for just the one.
 						["maps"] = { 
