@@ -26,8 +26,12 @@ _.GroupFinder =
 			un(2, i(51997)),	-- Stalwart Spaulders
 			i(51990),	-- Stalwart Treads*
 			i(51994),	-- Tumultuous Cloak*
-			i(160598),	-- Tumultuous Cloak [Added in BFA.  Confirmed in discord]
-			i(160597),	-- Tumultuous Cloak [Added in BFA.  Confirmed in discord]
+			i(160598, {	-- Tumultuous Cloak [Added in BFA.  Confirmed in discord]
+				["f"] = 3,
+			}),
+			i(160597, {	-- Tumultuous Cloak [Added in BFA.  Confirmed in discord]
+				["f"] = 3,
+			}),
 			i(51996),	-- Tumultuous Necklace*
 			i(51992),	-- Tumultuous Ring*
 			i(51964),	-- Vigorous Belt*
