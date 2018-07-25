@@ -1863,7 +1863,7 @@ _.Zones =
 				}),
 			},
 			["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
-			["maps"] = { 831, 883, 886 }, -- All 3 Vindicaar maps.  Do NOT use 831 for anything, it returns Exodar
+			["maps"] = { 831, 832, 883, 884, 886, 887 }, -- All 3 Vindicaar maps.  Do NOT use 831 for anything, it returns Exodar
 			["lvl"] = 110,
 			["isRaid"] = true,
 		}),

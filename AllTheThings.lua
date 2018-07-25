@@ -6763,7 +6763,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Illusions (Dynamic)";
 		table.insert(g, db);
-		]]--
+		--]]
 		
 		-- Mounts (Dynamic)
 		--[[
@@ -6772,7 +6772,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Mounts (Dynamic)";
 		table.insert(g, db);
-		]]--
+		--]]
 		
 		--[[
 		-- SUPER SECRETTTT!
@@ -6805,9 +6805,9 @@ function app:GetDataCache()
 		db.g = GetRawSourceDataCache();
 		db.text = "Raw Source Data (Dynamic)";
 		table.insert(g, db);
-		]]--
-		
-		--[[ SUPER DUPER SECRET
+		--]]
+		--[[
+		-- SUPER DUPER SECRET
 		if app.Categories.NaughtySecrets then
 			db = app.CreateAchievement(12478, app.Categories.NaughtySecrets);
 			db.expanded = false;

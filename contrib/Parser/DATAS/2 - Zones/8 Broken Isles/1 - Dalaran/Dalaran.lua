@@ -8269,7 +8269,7 @@ _.Zones =
 			["lvl"] = 1,
 			["isRaid"] = true,
 			["lvl"] = 98,
-			["maps"] = {
+			["maps"] = { -- Do not include 626 as that is Rogue Class Hall
 				627, -- Dalaran
 				628, -- The Underbelly,
 				629, -- Aegwynn's Gallery [May separate out later]
