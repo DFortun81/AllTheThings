@@ -464,6 +464,7 @@ _.Zones =
 						}),
 					},
 					["icon"] = "Interface\\Icons\\inv_pet_wardenowl", -- Wardens Owl
+					["maps"] = { 678, 679 } -- 2nd / 3rd Floor
 				}),
 			},
 			["classes"] = { 12 }, -- Demon Hunter Class
