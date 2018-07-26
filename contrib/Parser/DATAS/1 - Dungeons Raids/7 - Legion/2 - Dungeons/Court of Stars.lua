@@ -9,7 +9,6 @@ _.Instances =
 			inst(800, { 	-- Court of Stars
 				["groups"] = {
 					d(2, {		-- Heroic
-						
 						["groups"] = {
 							cr(104215, e(1718, {	-- Patrol Captain Gerdo
 								i(134480),
@@ -92,7 +91,8 @@ _.Instances =
 					})
 				},
 				["lvl"] = 110,
-				["mapID"] = 761
+				["mapID"] = 761,
+				["maps"] = { 763 },
 			}),
 		},					
 		["tierID"] = 7
