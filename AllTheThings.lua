@@ -2826,9 +2826,9 @@ end
 	end
 	]]--
 	local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
-	GameTooltip.SetCurrencyByID = function(self, currencyID)
+	GameTooltip.SetCurrencyByID = function(self, currencyID, count)
 		-- Make sure to call to base functionality
-		GameTooltip_SetCurrencyByID(self, currencyID);
+		GameTooltip_SetCurrencyByID(self, currencyID, count);
 		
 		if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
 			AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForFieldAndSummarize, "currencyID", currencyID);
@@ -6083,7 +6083,7 @@ local function RowOnEnter(self)
 				end
 				--end
 			elseif reference.currencyID then
-				GameTooltip:SetCurrencyByID(reference.currencyID);
+				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
 			elseif not reference.encounterID then
 				local link = reference.link;
 				if link then pcall(GameTooltip.SetHyperlink, GameTooltip, link); end
