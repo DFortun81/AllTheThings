@@ -152,6 +152,7 @@ AllTheThings.Locales.enUS = {
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
+		["Expansion Pre-Launch"] = "Pre-Launch",
 		["Dungeons & Raids"] = "D&R",
 		["Classic -> "] = "",
 		["Burning Crusade"] = "BC",
@@ -159,6 +160,7 @@ AllTheThings.Locales.enUS = {
 		["Cataclysm"] = "CATA",
 		["Mists of Pandaria"] = "MoP",
 		["Warlords of Draenor"] = "WoD",
+		["Battle For Azeroth"] = "BfA",
 		["Player vs Player"] = "PvP",
 		["Raid Finder"] = "LFR",
 		["Looking For Raid"] = "LFR",
@@ -181,6 +183,7 @@ AllTheThings.Locales.enUS = {
 		["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
 		["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
 		["Mini World Events"] = GetSpellInfo(57055),
+		
 	};
 
 	-- Music / Sound Management (You can add your own sounds for this if you want.)
@@ -1117,7 +1120,7 @@ AllTheThings.Locales.enUS = {
 		[-497] = GetSpellInfo(213410).." "..GetSpellInfo(76724),				-- Demonic Offering
 		[-498] = GetSpellInfo(23700),											-- Twisting Nether
 		[-500] = "WoW Anniversary",
-		[-520] = "Expansion Pre-Launch Events",
+		[-520] = "Expansion Pre-Launch",
 		[-521] = "Burning Crusade: Dark Portal Opens",
 		[-522] = "Wrath of the Lich King: Zombie Infestation",
 		[-523] = "Cataclysm: Elemental Unrest",
