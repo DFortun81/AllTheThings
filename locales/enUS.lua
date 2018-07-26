@@ -12,7 +12,7 @@
 AllTheThings.Locales.enUS = {
 	-- General Text
 	["TITLE"] = "ALL THE THINGS";
-	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
+	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"\n\n|CFFFF0000Collection Mode Styles:\n\nUnique + Main Only = LFR Mode\nUnique = Normal Mode\nCompletitonist = Heroic Mode\nDebug + Completionist = Mythic Mode\n";
 	["LOADING"] = "v%s loaded successfully.";
 	["TITLE_OPTIONS"] = "All the Things";
 	["FILTERS"] = "Filters";

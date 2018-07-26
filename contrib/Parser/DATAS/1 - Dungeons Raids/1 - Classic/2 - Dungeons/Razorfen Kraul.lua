@@ -37,86 +37,84 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
-						n(74553, { 	-- Blood-Branded Razorfen
-							dr(0.09, i(1976)),	-- Slaghammer
-							dr(0.04, i(2549)),	-- Staff of the Shade
-							dr(0.01, i(1488)),	-- Avenger's Armor
-							dr(0.01, i(1975)),	-- Pysan's Old Greatsword
+						i(1488, { -- Avenger's Armor
+							["crs"] = {
+								74553, -- Blood-Branded Razorfen
+								74550, -- Razorfen Kraulshaper
+								74554, -- Razorfen Scarblade
+							},
 						}),
-						n(75467, { 	-- Cave Bat
-							dr(0.02, i(2264)),	-- Mantle of Thieves
-							dr(0.01, i(4438)),	-- Pugilist Bracers
-							dr(0.01, i(1975)),	-- Pysan's Old Greatsword
-							dr(0.01, i(776)),	-- Vendetta
+						i(2264, { -- Mantle of Thieves
+							["crs"] = {
+								74552, -- Razorfen Huntmaster
+								74652, -- Razorfen Thornbolt
+							},
 						}),
-						n(74551, {	-- Razorfen Beast Stalker
-							dr(0.05, i(4354)),	-- Pattern: Rich Purple Silk Shirt
-							dr(0.03, i(4438)),	-- Pugilist Bracers
-							dr(0.02, i(1975)),	-- Pysan's Old Greatsword
-							dr(0.02, i(1976)),	-- Slaghammer
-							dr(0.02, i(1978)),	-- Wolfclaw Gloves
-							dr(0.01, i(1488)),	-- Avenger's Armor
-							dr(0.01, i(2264)),	-- Mantle of Thieves
-							dr(0.01, i(2549)),	-- Staff of the Shade
-							dr(0.01, i(1727)),	-- Sword of Decay
-							dr(0.01, i(776)),	-- Vendetta
+						i(2039, { -- Plains Ring
+							["crs"] = {
+								74553, -- Blood-Branded Razorfen
+								74551, -- Razorfen Beast-Stalker
+								74552, -- Razorfen Huntmaster
+							},
 						}),
-						n(74545, { 	-- Razorfen Geomagus
-							dr(0.04, i(1727)),	-- Sword of Decay
-							dr(0.03, i(1975)),	-- Pysan's Old Greatsword
-							dr(0.01, i(776)),	-- Vendetta
-							dr(0.01, i(1978)),	-- Wolfclaw Gloves
+						i(4438, { -- Pugilist Bracers
+							["crs"] = {
+								75467, -- Cave Bat
+								74551, -- Razorfen Beast Stalker
+								74552, -- Razorfen Huntmaster
+							},
 						}),
-						n(74555, { 	-- Razorfen Hidecrusher
-							dr(0.01, i(1975)),	-- Pysan's Old Greatsword
-							dr(0.01, i(1976)),	-- Slaghammer
-							dr(0.01, i(2549)),	-- Staff of the Shade
-							dr(0.01, i(1727)),	-- Sword of Decay
-							dr(0.01, i(776)),	-- Vendetta
+						i(1975, { -- Pysan's Old Greatsword
+							["crs"] = {
+								74545, -- Razorfen Geomagus
+								74551, -- Razorfen Beast Stalker
+								74552, -- Razorfen Huntmaster
+							},
 						}),
-						n(74552, {	-- Razorfen Huntmaster
-							dr(0.06, i(2264)),	-- Mantle of Thieves
-							dr(0.02, i(1727)),	-- Sword of Decay
-							dr(0.02, i(1978)),	-- Wolfclaw Gloves
-							dr(0.01, i(4438)),	-- Pugilist Bracers
-							dr(0.01, i(1975)),	-- Pysan's Old Greatsword
-							dr(0.01, i(1976)),	-- Slaghammer
-							dr(0.01, i(2549)),	-- Staff of the Shade
-							dr(0.01, i(776)),	-- Vendetta
+						i(1976, { -- Slaghammer
+							["crs"] = {
+								74553, -- Blood-Branded Razorfen
+								75247, -- Groyat, the Blind Hunter
+								74900, -- Kraulshaper Tukaar
+								74551, -- Razorfen Beast Stalker
+							},
 						}),
-						n(74550, {	-- Razorfen Kraulshaper
-							dr(0.05, i(2549)),	-- Staff of the Shade
-							dr(0.04, i(1727)),	-- Sword of Decay
-							dr(0.02, i(2264)),	-- Mantle of Thieves
-							dr(0.01, i(1488)),	-- Avenger's Armor
-							dr(0.01, i(4438)),	-- Pugilist Bracers
-							dr(0.01, i(1975)),	-- Pysan's Old Greatsword
-							dr(0.01, i(1976)),	-- Slaghammer
-							dr(0.01, i( 776)),	-- Vendetta
-							dr(0.01, i(1978)),	-- Wolfclaw Gloves
+						i(2549, { -- Staff of the Shade
+							["crs"] = {
+								74553, -- Blood-Branded Razorfen
+								74551, -- Razorfen Beast Stalker
+								74550, -- Razorfen Kraulshaper
+								75110, -- Razorfen Torchbearer
+							},
 						}),
-						n(74554, {	-- Razorfen Scarblade
-							dr(0.13, i(1727)),	-- Sword of Decay
-							dr(0.02, i(1488)),	-- Avenger's Armor
-							dr(0.02, i(1978)),	-- Wolfclaw Gloves
-							dr(0.01, i(2264)),	-- Mantle of Thieves
+						i(1727, { -- Sword of Decay
+							["crs"] = {
+								74551, -- Razorfen Beast Stalker
+								74545, -- Razorfen Geomagus
+								74555, -- Razorfen Hidecrusher
+								74552, -- Razorfen Huntmaster
+								74550, -- Razorfen Kraulshaper
+							},
 						}),
-						n(74549, {	-- Razorfen Stonechanter
-							dr(0.04, i(2264)),	-- Mantle of Thieves
-							dr(0.01, i(1975)),	-- Pysan's Old Greatsword
-							dr(0.01, i(2549)),	-- Staff of the Shade
-							dr(0.01, i(1978)),	-- Wolfclaw Gloves
+						i(776, {  -- Vendetta
+							["crs"] = {
+								75467, -- Cave Bat
+								74545, -- Razorfen Geomagus
+								74552, -- Razorfen Huntmaster
+								74550, -- Razorfen Kraulshaper
+							},
 						}),
-						n(74652, {	-- Razorfen Thornbolt
-							dr(0.16, i(2549)),	-- Staff of the Shade
-							dr(0.04, i(2264)),	-- Mantle of Thieves
-						}),
-						n(75110, { 	-- Razorfen Torchbearer
-							dr(0.30, i(2549)),	-- Staff of the Shade
-							dr(0.02, i(1978)),	-- Wolfclaw Gloves
+						i(1978, { -- Wolfclaw Gloves
+							["crs"] = {
+								74900, -- Kraulshaper Tukaar
+								74545, -- Razorfen Geomagus
+								74552, -- Razorfen Huntmaster
+								74549, -- Razorfen Stonechanter
+								75110, -- Razorfen Torchbearer
+							},
 						}),
 					}),
-					n( 74900, {			-- Kraulshaper Tukaar
+					n( 74900, {		-- Kraulshaper Tukaar
 						i(6689),	-- Wind Spirit Staff
 						i(6688),	-- Whisperwind Headdress
 					}),
@@ -132,11 +130,14 @@ _.Instances =
 						i(  6690),	-- Ferine Leggings
 					})),
 					cr(74462, e(899, {	-- Warlord Ramtusk
-						i(  6687),	-- Corpsemaker
-						i(  6686),	-- Tusken Helm
-						i(  6688),	-- Whisperwind Headdress
-						i(  6685), 	-- Death Speaker Mantle
-						i(151445),	-- Porcine-Warlord's Legplates
+						["groups"] = {
+							i(  6687),	-- Corpsemaker
+							i(  6686),	-- Tusken Helm
+							i(  6688),	-- Whisperwind Headdress
+							i(  6685), 	-- Death Speaker Mantle
+							i(151445),	-- Porcine-Warlord's Legplates
+						},
+						
 					})),
 					cr( 4425, e(900, {	-- Groyat, the Blind Hunter
 						i(6696),	-- Nightstalker Bow
@@ -146,28 +147,28 @@ _.Instances =
 					n( 75590, {			-- Enormous Bullfrog
 						dr(7, i(11026)),	-- Tree Frog Box
 						dr(6, i(11027)),	-- Wood Frog Box
-						dr(5, i( 2278)),		-- Forest Tracker Epaulets
+						dr(5, i( 2278)),	-- Forest Tracker Epaulets
 						dr(5, i(13045)),	-- Viscous Hammer
-						dr(4, i( 2299)),		-- Burning War Axe
+						dr(4, i( 2299)),	-- Burning War Axe
 						dr(4, i(13048)),	-- Looming Gavel
-						dr(4, i( 2277)),		-- Necromancer Leggings
+						dr(4, i( 2277)),	-- Necromancer Leggings
 						dr(4, i(13124)),	-- Ravasaur Scale Boots
 						dr(4, i(13063)),	-- Starfaller 
-						dr(3, i( 2877)),		-- Combatant Claymore
-						dr(3, i( 3020)),		-- Enduring Cap
+						dr(3, i( 2877)),	-- Combatant Claymore
+						dr(3, i( 3020)),	-- Enduring Cap
 						dr(3, i(13127)),	-- Frostreaver Crown
-						dr(3, i( 9405)),		-- Girdle of Golem Strength
-						dr(3, i( 9395)),		-- Gloves of Old 
-						dr(3, i(  791)),		-- Gnarled Ash Staff
+						dr(3, i( 9405)),	-- Girdle of Golem Strength
+						dr(3, i( 9395)),	-- Gloves of Old 
+						dr(3, i(  791)),	-- Gnarled Ash Staff
 						dr(3, i(13019)),	-- Harpyclaw Short Bow
 						dr(3, i(12974)),	-- The Black Knight
 						dr(3, i(13108)),	-- Tigerstrike Mantle
-						dr(2, i( 2912)),		-- Claw of the Shadowmancer
+						dr(2, i( 2912)),	-- Claw of the Shadowmancer
 						dr(2, i(13037)),	-- Crystalpine Stinger
 						dr(2, i(13106)),	-- Glowing Magical Bracelets
-						dr(2, i( 2721)),		-- Holy Shroud
+						dr(2, i( 2721)),	-- Holy Shroud
 						dr(2, i(13137)),	-- Ironweaver
-						dr(2, i( 2565)),		-- Rod of Molten Fire
+						dr(2, i( 2565)),	-- Rod of Molten Fire
 						dr(2, i(13033)),	-- Zealot Blade
 					}),
 					cr( 4421, e(901, {	-- Charlga Razorflank
@@ -184,8 +185,6 @@ _.Instances =
 									un(34, i(6752)),	-- Lancer Boots
 								}),
 							}),
-							--n(-16, {	-- Rares (Legacy)
-							--}),
 							n(  0, {	-- Zone Drop (Legacy)
 								n(4517, {	-- Death's Head Priest
 									un(7, i(3569)), 	-- Vicar's Robe
