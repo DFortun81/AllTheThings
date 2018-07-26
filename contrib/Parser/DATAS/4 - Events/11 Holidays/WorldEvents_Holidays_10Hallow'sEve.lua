@@ -1844,7 +1844,7 @@ _.WorldEvents =
 					["groups"] = {
 						n(53757, { -- Chub <Candy & Toy Vendor>
 							["groups"] = {
-								un(25, i(33226, { -- Tricky Treat
+								un(26, i(33226, { -- Tricky Treat
 									un(26, i(151271)), 	-- Horse Head Costume
 									un(26, i(151270)), 	-- Horse Tail Costume
 									un(26, i(70722)), 	-- Little Wickerman
@@ -1856,7 +1856,7 @@ _.WorldEvents =
 						}),
 						n(53728, { -- Dorothy <Candy & Toy Vendor>
 							["groups"] = {
-								un(25, i(33226, { -- Tricky Treat
+								un(26, i(33226, { -- Tricky Treat
 									un(26, i(151271)), 	-- Horse Head Costume
 									un(26, i(151270)), 	-- Horse Tail Costume
 									un(26, i(70722)), 	-- Little Wickerman
@@ -1868,7 +1868,7 @@ _.WorldEvents =
 						}),
 						n(109685, { -- Pippi <Pet Vendor>
 							["groups"] = {
-								un(25, i(33226, { -- Tricky Treat
+								un(26, i(33226, { -- Tricky Treat
 									un(26, i(116801)),	-- Cursed Birman
 									un(26, i(70908)),	-- Feline Familiar
 									un(26, i(151269)),	-- Naxxy
@@ -1881,7 +1881,7 @@ _.WorldEvents =
 						}),
 						n(109688, { -- Woim <Pet Vendor>
 							["groups"] = {
-								un(25, i(33226, { -- Tricky Treat
+								un(26, i(33226, { -- Tricky Treat
 									un(26, i(116801)),	-- Cursed Birman
 									un(26, i(70908)),	-- Feline Familiar
 									un(26, i(151269)),	-- Naxxy
