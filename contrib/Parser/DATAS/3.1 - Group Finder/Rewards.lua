@@ -26,12 +26,8 @@ _.GroupFinder =
 			un(2, i(51997)),	-- Stalwart Spaulders
 			i(51990),	-- Stalwart Treads*
 			i(51994),	-- Tumultuous Cloak*
-			i(160598, {	-- Tumultuous Cloak [Added in BFA.  Confirmed in discord]
-				["f"] = 3,
-			}),
-			i(160597, {	-- Tumultuous Cloak [Added in BFA.  Confirmed in discord]
-				["f"] = 3,
-			}),
+			i(160598),	-- Tumultuous Cloak [Added in BFA.  Confirmed in discord]
+			i(160597),	-- Tumultuous Cloak [Added in BFA.  Confirmed in discord]
 			i(51996),	-- Tumultuous Necklace*
 			i(51992),	-- Tumultuous Ring*
 			i(51964),	-- Vigorous Belt*
@@ -125,6 +121,7 @@ _.GroupFinder =
 			i(51985),	-- Stalwart Belt [User confirmed; haven't seen]
 			i(51990),	-- Stalwart Treads*
 			i(51993),	-- Turbulent Cloak*
+			i(160599),	-- Turbulent Cloak (Assuming Agi was added since Str was)
 			i(160600),	-- Turbulent Cloak (screenshot from Emsarrev on Discord)
 			i(51995),	-- Turbulent Necklace*
 			i(51991),	-- Turbulent Signet*
