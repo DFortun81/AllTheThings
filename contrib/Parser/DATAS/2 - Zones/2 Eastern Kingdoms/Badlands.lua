@@ -918,7 +918,7 @@ _.Zones =
 				}),
 				n(  0, {	-- Zone Drop
 					n(2718, { 	-- Dustbelcher Shaman
-						un(7, i(2624)),	-- Thinking Cap
+						i(2624),	-- Thinking Cap
 					}),
 					n(2740, { 	-- Shadowforge Darkweaver
 						un(7, i(2621)),	-- Cowl of Necromancy

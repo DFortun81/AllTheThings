@@ -27,7 +27,7 @@ _.WorldDrops =
 					un(7, i(2621)),	-- Cowl of Necromancy
 					un(7, i(2622)),	-- Nimar's Tribal Headdress
 					un(7, i(2623)),	-- Holy Diadem
-					un(7, i(2624)),	-- Thinking Cap
+					i(2624),	-- Thinking Cap
 					i(2721),	-- Holy Shroud
 					i(2955),	-- First Mate Hat
 					i(3011),	-- Feathered Headdress
