@@ -1,11 +1,19 @@
 --------------------------------------------------
---   G R O U P    F I N D E R    M O D U L E    --
+--   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
+
+--[[
+8.0 Pre-Patch alignment complete
+To do: 
+1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
+2) Add [Reward] tag
+3) Source to local files if applicable
+]]--
 
 _.Achievements = 
 {
 	n(-9962, { -- World Events
-		["groups"] = {
+		["groups"] = bubbleDown({["u"] = 17}, {
 			n(-10015, { -- Lunar Festival
 				["groups"] = {
 					ach(609, {	-- 50 Coins of Ancestry
@@ -14,10 +22,6 @@ _.Achievements =
 						ach(606),	-- 5 Coins of Ancestry
 						ach(605),	-- A Coin of Ancestry
 					}),
-					ach(626),	-- Lunar Festival Finery
-					ach(1281),	-- The Rocket's Red Glare
-					ach(1552),	-- Frenzied Firecracker
-					ach(937),	-- Elune's Blessing (Moonglade)
 					ach(6006, {	-- Elders of Cataclysm
 						crit(1),	-- Elder Stonebrand in the Temple of Earth
 						crit(2),	-- Elder Menkhaf in Uldum
@@ -91,6 +95,11 @@ _.Achievements =
 						crit(17),	-- Elder Skywarden in Agmar's Hammer
 						crit(18),	-- Elder Muraco in Camp Tunka'lo
 					}),
+					ach(915, {	-- Elders of the Alliance
+						crit(1),	-- Elder Bladeswift in Darnassus
+						crit(2),	-- Elder Bronzebeard in Ironforge
+						crit(3),	-- Elder Hammershout in Stormwind
+					}),
 					ach(910, {	-- Elders of the Dungeons
 						crit(1),	-- Elder Wildmane in Zul'Farrak
 						crit(2),	-- Elder Starsong in the Sunken Temple
@@ -106,18 +115,17 @@ _.Achievements =
 						crit(12),	-- Elder Yurauk in the Halls of Stone
 						crit(13),	-- Elder Chogan'gada in Utgarde Pinnacle
 					}),
-					ach(915, {	-- Elders of the Alliance
-						crit(1),	-- Elder Bladeswift in Darnassus
-						crit(2),	-- Elder Bronzebeard in Ironforge
-						crit(3),	-- Elder Hammershout in Stormwind
-					}),
 					ach(914, {	-- Elders of the Horde
 						crit(1),	-- Elder Darkhorn in Orgrimmar
 						crit(2),	-- Elder Wheathoof in Thunder Bluff
 						crit(3),	-- Elder Darkcore in Undercity
 					}),
+					ach(937),	-- Elune's Blessing (Moonglade)
+					ach(1552),	-- Frenzied Firecracker
+					ach(626),	-- Lunar Festival Finery
+					ach(1281),	-- The Rocket's Red Glare
 				},
 			}),
-		},
+		}),
 	}),
 };
