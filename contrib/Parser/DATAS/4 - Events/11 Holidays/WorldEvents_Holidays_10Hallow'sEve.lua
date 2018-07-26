@@ -1738,60 +1738,70 @@ _.WorldEvents =
 							["qg"] = 6740,	-- Innkeeper Allison
 							["maps"] = { 84 }, -- Stormwind City
 							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = { 8311 }, -- Hallow's End Treats for Jesper!
 						}),
 						q(8355, { -- Incoming Gumdrop (Alliance)
 							["groups"] = {},
 							["qg"] = 5111,	-- Innkeeper Firebrew
 							["maps"] = { 87 }, -- Ironforge
 							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = { 8311 }, -- Hallow's End Treats for Jesper!
 						}),
 						q(8353, { -- Chicken Clucking for a Mint (Alliance)
 							["groups"] = {},
 							["qg"] = 6740,	-- Innkeeper Allison
 							["maps"] = { 84 }, -- Stormwind City
 							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = { 8311 }, -- Hallow's End Treats for Jesper!
 						}),
 						q(8357, { -- Dancing for Marzipan (Alliance)
 							["groups"] = {},
 							["qg"] = 6735,	-- Innkeeper Saelienne
 							["maps"] = { 89 }, -- Darnassus
 							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = { 8311 }, -- Hallow's End Treats for Jesper!
 						}),
 						q(8311, { -- Hallow's End Treats for Jesper!
 							["groups"] = {},
 							["qg"] = 15310,	-- Jesper
 							["maps"] = { 37 }, -- Elwynn Forest
 							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = { 8356, 8355, 8353, 8357 }, -- Flexing for Nougat, Incoming Gumdrop, Chicken Clucking for a Mint, Dancing for Marzipan (Alliance)
 						}),
 						q(8359, { -- Flexing for Nougat (Horde)
 							["groups"] = {},
 							["qg"] = 6929,	-- Innkeeper Gryshka
 							["maps"] = { 85 }, -- Orgrimmar
 							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 8312 }, -- Hallow's End Treats for Spoops!
 						}),
 						q(8358, { -- Incoming Gumdrop (Horde)
 							["groups"] = {},
 							["qg"] = 11814,	-- Kali Remik
 							["maps"] = { 85 }, -- Orgrimmar
 							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 8312 }, -- Hallow's End Treats for Spoops!
 						}),
 						q(8354, { -- Chicken Clucking for a Mint (Horde)
 							["groups"] = {},
 							["qg"] = 6741,	-- Innkeeper Norman
 							["maps"] = { 90 }, -- Undercity
 							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 8312 }, -- Hallow's End Treats for Spoops!
 						}),
 						q(8360, { -- Dancing for Marzipan (Horde)
 							["groups"] = {},
 							["qg"] = 6746,	-- Innkeeper Pala
 							["maps"] = { 88 }, -- Thunder Bluff
 							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 8312 }, -- Hallow's End Treats for Spoops!
 						}),
 						q(8312, { -- Hallow's End Treats for Spoops!
 							["groups"] = {},
 							["qg"] = 15309,	-- Spoops
 							["maps"] = { 90 }, -- Undercity
 							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 8359, 8358, 8354, 8360 }, -- Flexing for Nougat, Incoming Gumdrop, Chicken Clucking for a Mint, Dancing for Marzipan (Horde)
 						}),
 					},
 				}),
