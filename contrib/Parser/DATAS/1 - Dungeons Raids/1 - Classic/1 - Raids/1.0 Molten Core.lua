@@ -6,306 +6,348 @@ _.Instances = { tier(1, {	-- Classic
 	inst(741, { 	-- Molten Core
 		["groups"] = {
 			n(0, {	-- Zone Drop
-				n(11673, { -- Ancient Core Hound
-					dr(1.7, i(16828)),	-- Cenarion Belt (Druid)
-					dr(1.7, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(1.6, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(1.6, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(1.5, i(16806)),	-- Felheart Belt (Warlock)
-					dr(1.5, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(1.5, i(16819)),	-- Vambraces of Prophecy (Priest)
-					dr(1.4, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(1.4, i(16864)),	-- Belt of Might (Warrior)
-					dr(1.4, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(1.4, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(1.4, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(1.4, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(1.3, i(16861)),	-- Bracers of Might (Warrior)
-					dr(1.3, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(1.3, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(1.3, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(1.2, i(16802)),	-- Arcanist Belt (Mage)
+				i(16802, {	-- Arcanist Belt (Mage)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(11668, { -- Firelord
-					dr(0.3, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.3, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.3, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.3, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.3, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.3, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.3, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.3, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.3, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.3, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.3, i(16819)),	-- Vambraces of Prophecy (Priest)
-					dr(0.2, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.2, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(0.2, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.2, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.2, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.2, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.2, i(16827)),	-- Nightslayer Belt (Rogue)
+				i(16799, {	-- Arcanist Bindings (Mage)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(11666, { -- Firewalker
-					dr(0.40, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.30, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.30, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.30, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.30, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.30, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.30, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(0.30, i(16819)),	-- Vambraces of Prophecy (Priest)
-					dr(0.20, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.20, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.20, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.20, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.20, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.20, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.20, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.19, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.18, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(0.18, i(16864)),	-- Belt of Might (Warrior)
+				i(16864, {	-- Belt of Might (Warrior)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(11667, { -- Flameguard
-					dr(0.40, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.30, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.30, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.30, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.30, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.30, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.30, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.30, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.30, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.30, i(16819)),	-- Vambraces of Prophecy (Priest)
-					dr(0.20, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.20, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.20, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.20, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.20, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(0.20, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.19, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.17, i(16799)),	-- Arcanist Bindings (Mage)
+				i(16861, {	-- Bracers of Might (Warrior)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(11661, { -- Flamewaker
-					dr(0.7, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.6, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(0.6, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.6, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.6, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.6, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.6, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.6, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(0.5, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.5, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.5, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.5, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.5, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.5, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.5, i(16819)),	-- Vambraces of Prophecy (Priest)
-					dr(0.4, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.4, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.3, i(16838)),	-- Earthfury Belt (Shaman)
+				i(16828, {	-- Cenarion Belt (Druid)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(11664, { -- Flamewaker Elite
-					dr(0.8, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.7, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.6, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.5, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.5, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(0.5, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.5, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.5, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.5, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.5, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.4, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.4, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.4, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.4, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.4, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.4, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(0.4, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.4, i(16819)),	-- Vambraces of Prophecy (Priest)
+				i(16830, {	-- Cenarion Bracers (Druid)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(11663, { -- Flamewaker Healer
-					dr(0.9, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.5, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.5, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.4, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.4, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.4, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.4, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.4, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.4, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.3, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.3, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(0.3, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.3, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.3, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.3, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(0.3, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.2, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.2, i(16819)),	-- Vambraces of Prophecy (Priest)
+				i(16838, {	-- Earthfury Belt (Shaman)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(11662, { -- Flamewaker Priest
-					dr(1.1, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.9, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.7, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.6, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(0.6, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.6, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.6, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.6, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(0.6, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.5, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.5, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.5, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.5, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.5, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.5, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.5, i(16819)),	-- Vambraces of Prophecy (Priest)
-					dr(0.4, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.4, i(16850)),	-- Giantstalker's Bracers (Hunter)
+				i(16840, {	-- Earthfury Bracers (Shaman)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(12119, { -- Flamewaker Protector
-					dr(0.8, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.7, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.6, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.6, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.6, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.6, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.6, i(16819)),	-- Vambraces of Prophecy (Priest)
-					dr(0.5, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(0.5, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.5, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.5, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.5, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.5, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.5, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.5, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.4, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.4, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.4, i(16827)),	-- Nightslayer Belt (Rogue)
+				i(16806, {	-- Felheart Belt (Warlock)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(11665, { -- Lava Annihilator
-					dr(0.20, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.18, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.18, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.18, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.17, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.17, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.17, i(16819)),	-- Vambraces of Prophecy (Priest)
-					dr(0.16, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.16, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.16, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.15, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.15, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.14, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.14, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.14, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(0.13, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.12, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.11, i(16799)),	-- Arcanist Bindings (Mage)
+				i(16804, {	-- Felheart Bracers (Warlock)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(12076, { -- Lava Elemental
-					dr(0.20, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(0.19, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.19, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.19, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.18, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(0.18, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.17, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.16, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.16, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.16, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.16, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.16, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.15, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.15, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.15, i(16819)),	-- Vambraces of Prophecy (Priest)
-					dr(0.14, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.13, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.13, i(16851)),	-- Giantstalker's Belt (Hunter)
+				i(16851, {	-- Giantstalker's Belt (Hunter)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(12100, { -- Lava Reaver
-					dr(0.30, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.30, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.30, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.20, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.20, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.20, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.20, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.20, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.20, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(0.19, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.19, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.19, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.18, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(0.17, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.16, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.16, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.15, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.15, i(16819)),	-- Vambraces of Prophecy (Priest)
+				i(16850, {	-- Giantstalker's Bracers (Hunter)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(12101, { -- Lava Surger
-					dr(0.20, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.20, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.20, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.20, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.20, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.19, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.18, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.18, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.17, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(0.17, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.17, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.16, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.15, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.15, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.15, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.14, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(0.14, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.13, i(16819)),	-- Vambraces of Prophecy (Priest)
+				i(16817, {	-- Girdle of Prophecy (Priest)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(11659, { -- Molten Destroyer
-					dr(0.4, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.4, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.4, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.4, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.4, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.4, i(16817)),	-- Girdle of Prophecy (Priest)
-					dr(0.3, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.3, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(0.3, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.3, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.3, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.3, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.3, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.3, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.3, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.3, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(0.3, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.3, i(16819)),	-- Vambraces of Prophecy (Priest)
+				i(16858, {	-- Lawbringer Belt (Paladin)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
 				}),
-				n(11658, { -- Molten Giant
-					dr(0.3, i(16799)),	-- Arcanist Bindings (Mage)
-					dr(0.3, i(16864)),	-- Belt of Might (Warrior)
-					dr(0.3, i(16861)),	-- Bracers of Might (Warrior)
-					dr(0.3, i(16830)),	-- Cenarion Bracers (Druid)
-					dr(0.3, i(16838)),	-- Earthfury Belt (Shaman)
-					dr(0.3, i(16840)),	-- Earthfury Bracers (Shaman)
-					dr(0.3, i(16806)),	-- Felheart Belt (Warlock)
-					dr(0.3, i(16804)),	-- Felheart Bracers (Warlock)
-					dr(0.3, i(16851)),	-- Giantstalker's Belt (Hunter)
-					dr(0.3, i(16858)),	-- Lawbringer Belt (Paladin)
-					dr(0.3, i(16857)),	-- Lawbringer Bracers (Paladin)
-					dr(0.3, i(16827)),	-- Nightslayer Belt (Rogue)
-					dr(0.3, i(16825)),	-- Nightslayer Bracelets (Rogue)
-					dr(0.3, i(16819)),	-- Vambraces of Prophecy (Priest)
-					dr(0.2, i(16802)),	-- Arcanist Belt (Mage)
-					dr(0.2, i(16828)),	-- Cenarion Belt (Druid)
-					dr(0.2, i(16850)),	-- Giantstalker's Bracers (Hunter)
-					dr(0.2, i(16817)),	-- Girdle of Prophecy (Priest)
-				}),						
+				i(16857, {	-- Lawbringer Bracers (Paladin)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
+				}),
+				i(16827, {	-- Nightslayer Belt (Rogue)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
+				}),
+				i(16825, {	-- Nightslayer Bracelets (Rogue)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
+				}),
+				i(16819, {	-- Vambraces of Prophecy (Priest)
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11668,	-- Firelord
+						11666,	-- Firewalker
+						11667,	-- Flameguard
+						11661,	-- Flamewaker
+						11664,	-- Flamewaker Elite
+						11663,	-- Flamewaker Healer
+						11662,	-- Flamewaker Priest
+						12119,	-- Flamewaker Protector
+						11665,	-- Lava Annihilator
+						12076,	-- Lava Elemental
+						12100,	-- Lava Reaver
+						12101,	-- Lava Surger
+						11659,	-- Molten Destroyer
+						11658,	-- Molten Giant
+					},
+				}),
 			}),
 			cr(12118, e(1519, { -- Lucifron
 				dr(0.8, i(18260)),	-- Formula: Enchant Weapon - Healing Power
