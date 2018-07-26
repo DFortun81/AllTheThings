@@ -1,6 +1,14 @@
--------------------------------------------------
+--------------------------------------------------
 --   A C H I E V E M E N T S    M O D U L E    --
--------------------------------------------------
+--------------------------------------------------
+
+--[[
+8.0 Pre-Patch alignment complete
+To do: 
+1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
+2) Add [Reward] tag
+3) Source to local files if applicable
+]]--
 
 _.Achievements = 
 {
@@ -8,25 +16,7 @@ _.Achievements =
 		["groups"] = {
 			n(-9960, { -- Professions
 				["groups"] = {
-					ach(10599, {	-- Legion Medic (800)
-						["groups"] = {
-							ach(131),	-- Journeyman Medic (150)
-							ach(132),	-- Expert Medic (225)
-							ach(133),	-- Artisan Medic (300)				
-							ach(134),	-- Master Medic (375)			
-							ach(135),	-- Grand Master Medic (450)			
-							ach(4918),	-- Illustrious Grand Master Medic (525)				
-							ach(6838),	-- Zen Master Medic (600)				
-							ach(9505),	-- Draenor Medic (700)				
-						},
-					}),			
-					ach(137),	-- Stocking Up			
-					ach(5480),	-- Preparing for Disaster				
-					ach(141),	-- Ultimate Triage				
-					ach(11138, {	-- Is There a Medic in the Zone? (10 of 16)
-						["description"] = "See Field Medic for all 16 items and suggested locations.",
-					}),
-					ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
+					ach(11139, {	-- Field Medic!
 						["groups"] = {
 							title(340, {	-- TITLE: Field Medic!
 								["groups"] = {
@@ -175,6 +165,24 @@ _.Achievements =
 							crit(3),	-- Grand Master Cook
 						}),
 					}),
+					ach(11138, {	-- Is There a Medic in the Zone? (10 of 16)
+						["description"] = "See Field Medic for all 16 items and suggested locations.",
+					}),
+					ach(10599, {	-- Legion Medic (800)
+						["groups"] = {
+							ach(131),	-- Journeyman Medic (150)
+							ach(132),	-- Expert Medic (225)
+							ach(133),	-- Artisan Medic (300)				
+							ach(134),	-- Master Medic (375)			
+							ach(135),	-- Grand Master Medic (450)			
+							ach(4918),	-- Illustrious Grand Master Medic (525)				
+							ach(6838),	-- Zen Master Medic (600)				
+							ach(9505),	-- Draenor Medic (700)				
+						},
+					}),			
+					ach(5480),		-- Preparing for Disaster				
+					ach(137),		-- Stocking Up			
+					ach(141),		-- Ultimate Triage	
 				},	
 			}),
 		},	

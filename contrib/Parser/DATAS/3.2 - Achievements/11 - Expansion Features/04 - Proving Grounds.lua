@@ -1,6 +1,14 @@
 --------------------------------------------------
---   G R O U P    F I N D E R    M O D U L E    --
+--   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
+
+--[[
+8.0 Pre-Patch alignment complete
+To do: 
+1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
+2) Add [Reward] tag
+3) Source to local files if applicable
+]]--
 
 _.Achievements = 
 {
@@ -16,14 +24,6 @@ _.Achievements =
 						ach(9573),	-- Proving Yourself: Silver Damage
 						ach(9572),	-- Proving Yourself: Bronze Damage
 					}),
-					ach(9583, {	-- Proving Yourself: Endless Tank (Wave 30) (Tank Series)
-						title(216),	-- the Proven Defender
-						ach(9582),	-- Proving Yourself: Endless Tank (Wave 20)
-						ach(9581),	-- Proving Yourself: Endless Tank (Wave 10)
-						ach(9580),	-- Proving Yourself: Gold Tank
-						ach(9579),	-- Proving Yourself: Silver Tank
-						ach(9578),	-- Proving Yourself: Bronze Tank
-					}),
 					ach(9589, {	-- Proving Yourself: Endless Healer (Wave 30) (Healer Series)
 						title(219),	-- the Proven Healer
 						ach(9588),	-- Proving Yourself: Endless Healer (Wave 20)
@@ -31,6 +31,14 @@ _.Achievements =
 						ach(9586),	-- Proving Yourself: Gold Healer
 						ach(9585),	-- Proving Yourself: Silver Healer
 						ach(9584),	-- Proving Yourself: Bronze Healer
+					}),
+					ach(9583, {	-- Proving Yourself: Endless Tank (Wave 30) (Tank Series)
+						title(216),	-- the Proven Defender
+						ach(9582),	-- Proving Yourself: Endless Tank (Wave 20)
+						ach(9581),	-- Proving Yourself: Endless Tank (Wave 10)
+						ach(9580),	-- Proving Yourself: Gold Tank
+						ach(9579),	-- Proving Yourself: Silver Tank
+						ach(9578),	-- Proving Yourself: Bronze Tank
 					}),
 					ach(9590),	-- You're Doing it Wrong (META)
 				},

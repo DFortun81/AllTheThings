@@ -1,6 +1,14 @@
 --------------------------------------------------
---   G R O U P    F I N D E R    M O D U L E    --
+--   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
+
+--[[
+8.0 Pre-Patch alignment complete
+To do: 
+1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
+2) Add [Reward] tag
+3) Source to local files if applicable
+]]--
 
 _.Achievements = 
 {
@@ -191,7 +199,7 @@ _.Achievements =
 						un(4, i(118412)),	-- Greatsword of the Inferno
 						un(4, i(118413)),	-- Flamegrinder
 					})),
-					un(12, ach(8898, {	-- Challenge Warlord: Silve
+					un(12, ach(8898, {	-- Challenge Warlord: Silver
 						un(2, i(116791)),	-- Challenger's War Yeti
 					})),
 					un(12, ach(6907, {	-- Gate of the Setting Sun: Gold
@@ -209,7 +217,7 @@ _.Achievements =
 						un(12, ach(8998)),	-- Iron Docks: Bronze
 						un(12, ach(8997)),	-- Iron Docks Challenger
 					})),
-					un(12, ach(2188)),	 -- Leeeeeeeeeeeeeroy!
+					un(12, ach(2188)),	-- Leeeeeeeeeeeeeroy!
 					un(12, ach(6901, {	-- Mogu'shan Palace: Gold
 						un(12, ach(6900)),	-- Mogu'shan Palace: Silver
 						un(12, ach(6899)),	-- Mogu'shan Palace: Bronze
@@ -265,6 +273,7 @@ _.Achievements =
 						un(12, ach(9002)),	-- The Everbloom: Bronze
 						un(12, ach(9001)),	-- The Everbloom Challenger
 					})),
+					un(12, ach(11218)),	-- There's a Boss In There
 					un(12, ach(1307)),	-- Upper Blackrock Spire (Classic)
 					un(12, ach(8894, {	-- Upper Blackrock Spire: Gold
 						un(12, ach(8893)),	-- Upper Blackrock Spire: Silver
