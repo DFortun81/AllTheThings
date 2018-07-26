@@ -201,8 +201,8 @@ _.ClassHalls =
 				q(47078),	-- Delivering Lost Knowledge
 				q(42683),	-- Demonic Improvements
 				q(45173),	-- Desperate Times
-				q(41069),	-- Direct Our Wrath
-				q(41099),	-- Direct Our Wrath
+				q(41069),	-- Direct Our Wrath [Kayn]
+				q(41099),	-- Direct Our Wrath [Altruis
 				q(43552),	-- Eye of Azshara
 				q(44270),	-- Eye of Azshara
 				q(44271),	-- Eye of Azshara
@@ -239,6 +239,13 @@ _.ClassHalls =
 				q(44694),	-- One Battle at a Time
 				q(44214),	-- One More Thing...
 				q(45329),	-- Operation: Portals
+				q(39718, {	-- Paradise Lost
+					["qg"] = 98613, -- Scouting Map
+					["sourceQuests"] = {
+						41099, -- Direct Our Wrath [Altruis]
+						41069, -- Direct Our Wrath [Kayn]
+					},
+				}),
 				q(42669),	-- Preparations for Invasion
 				q(46266),	-- Return of the Slayer
 				q(44917),	-- Return to Karazhan: The Tower of Power
