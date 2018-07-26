@@ -1320,57 +1320,141 @@ _.Zones =
 					}),
 --]]					
 					ach(10763, { -- Azsuna Matata
-						crit(1, { -- Behind Legion Lines
-							q(41220), -- Down to Azsuna NOTE: This is technically a breadcrumb
-							q(38834, { -- Into the Fray (Non-DH version)
-								["groups"] = {
-								},
-								["classes"] = {1,2,3,4,5,6,7,8,9,10,11}
-							}),
-							q(44137, { -- Into the Fray (DH version)
-								["groups"] = {
-								},
-								["classes"] = {12}
-							}),
-							q(37658,  {  	-- Reignite the Wards
-								i(141623),
-								i(141622),
-								i(141621),
-								i(141620),
-								i(141628),
-								i(141627),
-								i(141626),
-								i(141625),
-							}),
-							q(37653), -- Demon Souls
-							q(37660,  {  	-- The Scythe of Souls
-								i(132951),
-								i(132949),
-								i(132948),
-								i(132947),
-							}),
-							q(36920, {	-- From Within
-								["groups"] = {
-								},
-								["classes"] = {1,2,3,4,5,6,7,8,9,10,11},
-							}),
-							q(40815, { -- From Within (DH version, must choose Altruis)
-								["groups"] = {
-								},
-								["classes"] = {12},
-								["description"] = "This quest is available if you chose to follow Altruis the Sufferer during the  Demon Hunter introduction quests."
-							}),
-							q(44140, { -- From Within (DH version, must choose Kayn)
-								["groups"] = {
-								},
-								["classes"] = {12},
-								["description"] = "This quest is available if you chose to follow Kayn Sunfury during the  Demon Hunter introduction quests."
-							}),
-							q(37450,  {  	-- Saving Stellagosa
-								i(132961),
-							}),
-							q(37656), -- Fel Machinations
-							q(37449), -- Dark Revelations
+						crit(1, { -- Behind Legion Lines [Verified & Fully Finished - 7/26/18; Lucetia]
+							["groups"] = {
+								q(38834, { -- Into the Fray (Non-DH version)
+									["classes"] = {
+										1,  -- Warrior
+										2,  -- Paladin
+										3,  -- Hunter
+										4,  -- Rogue
+										5,  -- Priest
+										6,  -- Death Knight
+										7,  -- Shaman
+										8,  -- Mage
+										9,  -- Lock
+										10, -- Monk
+										11, -- Druid
+									},
+									["sourceQuests"] = { 41220 }, -- Down to Azsuna
+								}),
+								q(44137, { -- Into the Fray (DH version)
+									["classes"] = { 12 }, -- Demon Hunter
+									["sourceQuests"] = { 41220 }, -- Down to Azsuna
+								}),
+								q(37658, { -- Reignite the Wards
+									["groups"] = {
+										i(141623), -- Demon Warding Halo
+										i(141622), -- Guise of the Demon Warder
+										i(141621), -- Demon Warder Helm
+										i(141620), -- Soul-Stealer's Helm
+										i(141628), -- Soul-Stealer's Leggings
+										i(141627), -- Leggings of the Soul-Trapper
+										i(141626), -- Soul-Stealer's Chain Pants
+										i(141625), -- Soul-Trapper's Greaves
+									},
+									["qg"] = 90317, -- Jace Darkweaver
+									["sourceQuests"] = {
+										38834, -- Into the Fray (Non-DH version)
+										44137, -- Into the Fray (DH version)
+									},
+								}),
+								q(37653, { -- Demon Souls
+									["qg"] = 89398, -- Allari the Souleater
+									["sourceQuests"] = {
+										38834, -- Into the Fray (Non-DH version)
+										44137, -- Into the Fray (DH version)
+									},
+								}),
+								q(37660, { -- The Scythe of Souls
+									["groups"] = {
+										i(132951), -- Leywalker Shoes
+										i(132949), -- Ruin-Stalker Footpads
+										i(132948), -- Seaspray Chain Boots
+										i(132947), -- Nar'thalas Sabatons
+									},
+									["qg"] = 89398, -- Allari the Souleateer
+									["sourceQuests"] = {
+										37653, -- Reignite the Wards
+										37653, -- Demon Souls
+									},
+								}),
+								q(36920, { -- From Within (Non-DH version)
+									["qg"] = 89362, -- Kayn Sunfury
+									["classes"] = {
+										1,  -- Warrior
+										2,  -- Paladin
+										3,  -- Hunter
+										4,  -- Rogue
+										5,  -- Priest
+										6,  -- Death Knight
+										7,  -- Shaman
+										8,  -- Mage
+										9,  -- Lock
+										10, -- Monk
+										11, -- Druid
+									},
+									["sourceQuests"] = { 37660 }, -- The Scythe of Souls
+								}),
+								q(40815, { -- From Within (DH version, must choose Altruis)
+									["qg"] = 101927, -- Altruis the Sufferer
+									["classes"] = { 12 }, -- Demon Hunter
+									["sourceQuests"] = { 37660 }, -- The Scythe of Souls
+									["description"] = "This quest is available if you chose to follow Altruis the Sufferer during the Demon Hunter introduction quests."
+								}),
+								q(44140, { -- From Within (DH version, must choose Kayn)
+									["qg"] = 89362, -- Kayn Sunfury
+									["classes"] = { 12 }, -- Demon Hunter
+									["sourceQuests"] = { 37660 }, -- The Scythe of Souls
+									["description"] = "This quest is available if you chose to follow Kayn Sunfury during the Demon Hunter introduction quests."
+								}),
+								q(37450, { -- Saving Stellagosa
+									["groups"] = {
+										i(132961), -- Cape of Azure Fury
+										i(132964), -- Stellagosa's Breath
+									},
+									["qg"] = 90474, -- Kor'vas Bloodthorn
+									["sourceQuests"] = {
+										36920, -- From Within (Non-DH Version)
+										40815, -- From Within (DH - Altruis)
+										44140, -- From Within (DH - Kayn)
+									},
+								}),
+								q(37656, { -- Fel Machinations
+									["qg"] = 90474, -- Kor'vas Bloodthorn
+									["sourceQuests"] = {
+										36920, -- From Within (Non-DH Version)
+										40815, -- From Within (DH - Altruis)
+										44140, -- From Within (DH - Kayn)
+									},
+								}),
+								q(37449, { -- Dark Revelations
+									["groups"] = {
+										i(132984), -- Abandoned Highborne Mana Crystal
+										i(132985), -- Blood of the Vanquished Highborne
+										i(133002), -- Coalesced Shadows
+										i(132996), -- Cursed Felstalker Flesh
+										i(132987), -- Everburning Ruin Ember
+										i(132995), -- Faronaar Arcane Power-Core
+										i(132990), -- Fel-Resistant Clipping
+										i(132989), -- Legion Iron Nugget
+										i(132991), -- Mortiferous' Corruption
+										i(132993), -- Nethrandamus' Zephyr
+										i(132999), -- Preserved Highborne Warrior's Fist
+										i(133001), -- Soul Fragment of Faronaar Innocent
+										i(133000), -- Stalwart Faronaar Keystone
+										i(133004), -- Swirling Demonic Whispers
+										i(132988), -- The Dreadlord's Chill Eye
+										i(132998), -- The Sufferer's Fury
+									},
+									["qg"] = 90474, -- Kor'vas Bloodthorn
+									["sourceQuests"] = {
+										37450, -- Saving Stellagosa
+										37656, -- Fel Machinations
+									},
+								}),
+							},
+							["sourceQuests"] = { 37449 }, -- Dark Revelations
 						}),
 						crit(2, { -- Defending Azurewing Repose
 							q(37853), -- The Death of the Eldest
@@ -1671,6 +1755,11 @@ _.Zones =
 							}),
 						}),
 					}),
+					n(-221, { -- Bonus Objectives
+						["groups"] = {
+							q(36811), -- Retake Faronaar
+						},
+					}),
         --[[ These quests will be organized soon™
 					q(41173),	-- A Beacon of Hope
 					q(46205),	-- A Conduit No More
@@ -1784,7 +1873,7 @@ _.Zones =
 					q(41771),	-- Recharging the Blade
 					q(40194),	-- Reclaimed Cargo
 					q(43523),	-- Repaid Debt
-					q(36811),	-- Retake Faronaar
+					
 					q(38791),	-- Rethu's Horn
 					q(38792),	-- Rethu's Lesson
 					q(38794),	-- Rethu's Sacrifice

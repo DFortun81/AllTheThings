@@ -1885,54 +1885,13 @@ _.Zones =
 						["classes"] = { 3 },
 						["sourceQuests"] = { 41540 }, -- Rendezvous with the Courier
 					}),
-					q(40832, {	-- Call of The Uncrowned
-						["qg"] = 102018, -- Ravenholdt Courier
-						["classes"] = { 4 },
-					}),
-					q(44181, {	-- Champion: Fleet Admiral Tethys
-						["qg"] = 94159, -- Fleet Admiral Tethys
-						["classes"] = { 4 },
-					}),
-					q(43262, {	-- Champion: Garona Halforcen
-						["qg"] = 94141, -- Garona Halforcen
-						["classes"] = { 4 },
-					}),
-					qh(46058, {	-- Champion: Lilian Voss
-						["qg"] = 98099, -- Lilian Voss
-						["classes"] = { 4 },
-					}),
-					q(44183, {	-- Champion: Lord Jorach Ravenholdt
-						["qg"] = 101513, -- Lord Jorach Ravenholdt
-						["classes"] = { 4 },
-					}),
-					q(44180, {	-- Champion: Marin Noggenfogger
-						["qg"] = 102594, -- Marin Noggenfogger
-						["classes"] = { 4 },
-					}),
-					q(43724, {	-- Champion: Master Mathias Shaw
-						["qg"] = 110953, -- Master Mathias Shaw
-						["classes"] = { 4 },
-					}),
-					q(43723, {	-- Champion: Taoshi
-						["qg"] = 98100, -- Taoshi
-						["classes"] = { 4 },
-					}),
-					qa(46059, {	-- Champion: Tess Greymane
-						["qg"] = 94138, -- Princess Tess Greymane
-						["classes"] = { 4 },
-					}),
 					q(46724, {	-- Champion: The Great Akazamzarak
+						["groups"] = {
+							follower(995), -- The Great Akazamzarak
+						},
 						["qg"] = 103092, -- The Great Akazamzarak
 						["sourceQuests"] = { 46723 }, -- Down the Rabbit Hole
 						["classes"] = { 8 },
-					}),
-					q(42800, {	-- Champion: Valeera Sanguinar
-						["qg"] = 98102, -- Valeera Sanguinar
-						["classes"] = { 4 },
-					}),
-					q(43261, {	-- Champion: Vanessa VanCleef
-						["qg"] = 102636, -- Vanessa VanCleef
-						["classes"] = { 4 },
 					}),
 					q(48021, {	-- Chromie
 						["qgs"] = {
@@ -1944,10 +1903,6 @@ _.Zones =
 						["qg"] = 250671, -- Notes on the Veiled Hand
 						["classes"] = { 4 },
 						["sourceQuests"] = { 42503 }, -- Codebreaker
-					}),
-					q(41921, {	-- Closing In
-						["qg"] = 98102, -- Valeera Sanguinar
-						["classes"] = { 4 },
 					}),
 					qh(42503, {	-- Codebreaker
 						["qg"] = 94138, -- Princess Tess Greymane
@@ -2058,9 +2013,12 @@ _.Zones =
 						["qg"] = 103092, -- The Great Akazamzarak
 						["classes"] = { 8 },
 					}),
-					q(41220, {	-- Down to Azsuna (breadcrumb?)
-						["qg"] = 86563, -- Archmage Khadgar
-						["sourceQuests"] = { 39718 }, -- Paradise Lost
+					q(41220, { -- Down to Azsuna
+						["qg"] = 41220, -- Archmage Khadgar
+						["sourceQuests"] = {
+							39718, 	-- Paradise Lost [Demon Hunter]
+						},
+						["isBreadcrumb"] = true,
 					}),
 					q(46103, {	-- Dread Infiltrators
 						["qg"] = 119259, -- Apothecary Keever
