@@ -152,7 +152,7 @@ AllTheThings.Locales.enUS = {
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
-		["Expansion Pre-Launch"] = "Pre-Launch",
+		["Expansion Pre"] = "Pre",
 		["Dungeons & Raids"] = "D&R",
 		["Classic -> "] = "",
 		["Burning Crusade"] = "BC",
@@ -1388,6 +1388,9 @@ AllTheThings.Locales.enUS = {
 		[-6013] = FACTION,															-- Faction
 		[-6014] = BUG_CATEGORY4,													-- Cities
 		[-6015] = GUILD_TAB_REWARDS,												-- Rewards
+
+		
+		
 -- Factions
 		[-9913] = FACTION_HORDE, 													-- Horde
 		[-9914] = FACTION_ALLIANCE, 												-- Alliance
