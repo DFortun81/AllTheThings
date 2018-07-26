@@ -64,7 +64,7 @@ _.Instances =
 					n(-40, {	-- Legacy
 						["groups"] = {
 							nlq({	-- Quests (Legacy)
-								qh(5724, {	-- Returning the Lost Satchel
+								un(40, qh(5724), {	-- Returning the Lost Satchel
 									un(34, i(15452)),	-- Featherbead Bracers
 									un(34, i(15453)),	-- Savannah Bracers
 								}),
@@ -87,6 +87,10 @@ _.Instances =
 										31035, -- Enemies Below
 									}
 								})),
+								un(40, qh(26856), { -- Repel the Invasion
+									["groups"] = {},
+									["qg"] = 44217, -- Stone Guard Kurjack
+								}),
 							}),
 							--n(-16, {	-- Rares (Legacy)
 							--}),
