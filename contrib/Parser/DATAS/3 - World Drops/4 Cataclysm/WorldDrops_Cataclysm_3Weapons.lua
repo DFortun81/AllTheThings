@@ -59,7 +59,6 @@ _.WorldDrops =
 					i(71366),	-- Lava Bolt Crossbow
 				}),			
 				n(-333, { -- Daggers	
-					i(37697),	-- Trade District Knife
 					i(55326),	-- Razorwind Dagger
 					i(55327),	-- Steelspark Dagger
 					i(55328),	-- Angerfang Dagger

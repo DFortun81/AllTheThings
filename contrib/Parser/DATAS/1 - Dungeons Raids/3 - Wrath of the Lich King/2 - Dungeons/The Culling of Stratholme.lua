@@ -21,28 +21,74 @@ _.Instances =
 						})),
 					}),
 					n(0, {	-- Zone Drop
-						["groups"] = {
-							i(37115), -- Crusader's Square Pauldrons
-							i(37116), -- Epaulets of Market Row
-							i(37699), -- Festival Lane Girdle
-							i(37781), -- Grips of  the Warming Heart
-							i(37117), -- King's Square Bracers
-							i(37698), -- Spaulders of Elder's Square
-						},
-						["crs"] = {
-							27731, -- Acolyte	
-							28201, -- Bile Golem	
-							27734, -- Crypt Fiend	
-							28200, -- Dark Necromancer	
-							28249, -- Devouring Ghoul	
-							27729, -- Enraging Ghoul	
-							27742, -- Infinite Adversary	
-							27744, -- Infinite Agent	
-							27743, -- Infinite Hunter	
-							27732, -- Master Necromancer	
-							27736, -- Patchwork Construct	
-							28199, -- Tomb Stalker	
-						},
+						i(37115, { -- Crusader's Square Pauldrons
+							["crs"] = {
+								27731, -- Acolyte	
+								27734, -- Crypt Fiend	
+								28200, -- Dark Necromancer	
+								28249, -- Devouring Ghoul	
+								27729, -- Enraging Ghoul	
+								27742, -- Infinite Adversary	
+								27744, -- Infinite Agent	
+								27743, -- Infinite Hunter	
+								27732, -- Master Necromancer	
+								27736, -- Patchwork Construct	
+								28199, -- Tomb Stalker	
+							},
+						}),
+						i(37697, { -- Trade District Knife
+							["crs"] = {
+								27743, -- Infinite Hunter
+							},
+						}),
+						i(37116, { -- Epaulets of Market Row
+							["crs"] = {
+								28201, -- Bile Golem	
+								27734, -- Crypt Fiend	
+								28249, -- Devouring Ghoul	
+								27729, -- Enraging Ghoul	
+								27742, -- Infinite Adversary	
+								27744, -- Infinite Agent	
+								27743, -- Infinite Hunter	
+								27732, -- Master Necromancer	
+								27736, -- Patchwork Construct	
+								28199, -- Tomb Stalker	
+							},
+						}),
+						i(37699, { -- Festival Lane Girdle
+							["crs"] = {
+								27734, -- Crypt Fiend
+							},
+						}),
+						i(37781, { -- Grips of  the Warming Heart
+							["crs"] = {
+								27744, -- Infinite Agent
+								27736, -- Patchwork Construct	
+								28199, -- Tomb Stalker	
+							},
+						}),
+						i(37117, { -- King's Square Bracers
+							["crs"] = {
+								27731, -- Acolyte	
+								28201, -- Bile Golem	
+								27734, -- Crypt Fiend	
+								28200, -- Dark Necromancer	
+								28249, -- Devouring Ghoul	
+								27729, -- Enraging Ghoul	
+								27742, -- Infinite Adversary	
+								27744, -- Infinite Agent	
+								27743, -- Infinite Hunter	
+								27732, -- Master Necromancer	
+								27736, -- Patchwork Construct	
+								28199, -- Tomb Stalker	
+							},
+						}),
+						i(37698, { -- Spaulders of Elder's Square
+							["crs"] = {
+								27744, -- Infinite Agent
+								28199, -- Tomb Stalker	
+							},
+						}),
 					}),
 					d(  1, {	-- Normal
 						cr(26529, e(611, {	-- Meathook
