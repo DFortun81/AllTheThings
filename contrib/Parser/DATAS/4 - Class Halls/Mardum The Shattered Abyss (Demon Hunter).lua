@@ -102,19 +102,93 @@ _.ClassHalls =
 				q(41803),	-- Asking a Favor
 				q(40247),	-- Asking a Favor
 				q(42801),	-- Back in Black
-				q(42679),	-- Broken Warriors
+				q(42679, {	-- Broken Warriors
+					["qg"] = 103761, -- Kor'vas Bloodthorn
+					["sourceQuests"] = {
+						42677, -- Things Gaardoun Needs [Kayn]
+						44161, -- Things Gaardoun Needs [Altruis]
+					},
+				}),
 				q(44223),	-- Champion Armaments
-				q(42653),	-- Champion: Akama
-				q(43184),	-- Champion: Allari the Souleater
-				q(42690),	-- Champion: Altruis the Sufferer
-				q(42697),	-- Champion: Asha Ravensong
-				q(42777),	-- Champion: Belath Dawnblade
-				q(43185),	-- Champion: Jace Darkweaver
-				q(42695),	-- Champion: Kayn Sunfury
-				q(42673),	-- Champion: Kor'vas Bloodthorn
-				q(45391),	-- Champion: Lady S'theno
-				q(42701),	-- Champion: Matron Mother Malevolence
-				q(42664),	-- Champion: Shade of Akama
+				q(42653, {	-- Champion: Akama
+					["groups"] = {
+						follower(718), -- Champion: Akama
+					},
+					["qg"] = 108239, -- Akama
+				}),
+				q(43184, {	-- Champion: Allari the Souleater
+					["groups"] = {
+						follower(499), -- Champion: Allari the Souleater
+					},
+					["qg"] = 98648, -- Allari the Souleater
+					["sourceQuests"] = { 42132 }, -- Last, But Not Least  [This quest activates Champion: Allari the Souleater despite not being finished]
+				}),
+				q(42690, {	-- Champion: Altruis the Sufferer
+					["groups"] = {
+						follower(498), -- Champion: Altruis the Sufferer
+					},
+					["qg"] = 108571, -- Altruis the Sufferer
+					["sourceQuests"] = { 42670 }, -- Rise, Champions [This quest activates Champion: Altruis the Sufferer despite not being finished]
+				}),
+				q(42697, {	-- Champion: Asha Ravensong
+					["groups"] = {
+						follower(722), -- Champion: Asha Ravensong
+					},
+					["qg"] = 108326,  -- Asha Ravensong
+					["sourceQuests"] = {
+						42671, -- Rise, Champions [This quest activates Champion: Asha Ravensong despite not being finished]
+						42670, -- Rise, Champions [This quest activates Champion: Asha Ravensong despite not being finished]
+					}, 
+				}),
+				q(42777, {	-- Champion: Belath Dawnblade
+					["groups"] = {
+						follower(594), -- Champion: Belath Dawnblade
+					},
+					["qg"] = 108782, -- Belath Dawnblade
+					["sourceQuests"] = {  42776 }, -- Two Worthies [This quest activates Champion: Belath Dawnblade despite not being finished]
+				}),
+				q(43185, {	-- Champion: Jace Darkweaver
+					["groups"] = {
+						follower(807), -- Champion: Jace Darkweaver
+					},
+					["qg"] = 98646, -- Jace Darkweaver
+					["sourceQuests"] = { 42132 }, -- Last, But Not Least  [This quest activates Champion: Jace Darkweaver despite not being finished]
+				}),
+				q(42695, {	-- Champion: Kayn Sunfury
+					["groups"] = {
+						follower(595), -- Champion: Kayn Sunfury
+					},
+					["qg"] = 108572, -- Kayn Sunfury
+					["sourceQuests"] = { 42671 }, -- Rise, Champions [This quest activates Champion: Kayn Sunfury despite not being finished]
+				}),
+				q(42673, {	-- Champion: Kor'vas Bloodthorn
+					["groups"] = {
+						follower(721), -- Champion: Kor'vas Bloodthorn
+					},
+					["qg"] = 103761, -- Kor'vas Bloodthorn
+					["sourceQuests"] = { 42665 }, -- Into Our Ranks [This quest activates Champion: Kor'vas Bloodthorn despite not being finished]
+				}),
+				q(45391, {	-- Champion: Lady S'theno
+					["groups"] = {
+						follower(990), -- Champion: Lady S'theno
+					},
+					["qg"] = 117481, -- Lady S'theno
+					["sourceQuests"] = { 46266 }, -- Return of the Slayer
+				}),
+				q(42701, {	-- Champion: Matron Mother Malevolence
+					["groups"] = {
+						follower(720), -- Champion: Matron Mother Malevolence
+					},
+					["qg"] = 98632, -- Matron Mother Malevolence
+					["sourceQuests"] = { 42776 }, -- Two Worthies [This quest activates Champion: Matron Mother Malevolence despite not being finished]
+				}),
+				q(42664, {	-- Champion: Shade of Akama
+					["groups"] = {
+						follower(719), -- Champion: Shade of Akama
+					},
+					["qg"] = 108246, -- Shade of Akama
+					["sourceQuests"] = { 42665 }, -- Into Our Ranks [This quest activates Champion: Shade of Akama despite not being finished]
+				}),
 				q(42634),	-- Confrontation at the Black Temple
 				q(42921),	-- Confrontation at the Black Temple
 				q(44275),	-- Court of Stars
@@ -147,7 +221,10 @@ _.ClassHalls =
 				q(42132),	-- Last, But Not Least
 				q(42522),	-- Leader of the Illidari
 				q(46333),	-- Livin' on the Ledge
-				q(42681),	-- Loramus, Is That You?
+				q(42681, {	-- Loramus, Is That You?
+					["qg"] = 103761, -- Kor'vas Bloodthorn
+					["sourceQuests"] = { 42679 }, -- Broken Warriors
+				}),
 				q(40819),	-- Making Arrangements
 				q(41120),	-- Making Arrangements
 				q(42735),	-- Malace in Vrykul Land
@@ -167,10 +244,22 @@ _.ClassHalls =
 				q(44917),	-- Return to Karazhan: The Tower of Power
 				q(41033),	-- Return to Mardum
 				q(41221),	-- Return to Mardum
-				q(42666),	-- Return to the Fel Hammer
-				q(44087),	-- Return to the Fel Hammer
-				q(42670),	-- Rise, Champions
-				q(42671),	-- Rise, Champions
+				q(42666, {	-- Return to the Fel Hammer
+					["qg"] = 112666, -- Asha Ravensong
+					--["sourceQuests"] = { }, -- DH was already on this point
+				}),
+				q(44087, {	-- Return to the Fel Hammer
+					["qg"] = 112666, -- Asha Ravensong
+					--["sourceQuests"] = { }, -- DH was already on this point
+				}),
+				q(42670, {	-- Rise, Champions [Altruis]
+					["qg"] = 103025, -- Battlelord Gaardoun
+					["sourceQuests"] = { 44087 }, -- Return to the Fel Hammer [Note: I *believe* this is the right ID, I forgot to check]
+				}),
+				q(42671, {	-- Rise, Champions [Kayn]
+					["qg"] = 103025, -- Battlelord Gaardoun
+					["sourceQuests"] = { 42666 }, -- Return to the Fel Hammer [Note: I *believe* this is the right ID, I forgot to check]
+				}),
 				q(45330),	-- Scouting Party
 				q(42802),	-- Securing Mardum
 				q(41062),	-- Spoils of Victory
@@ -189,8 +278,14 @@ _.ClassHalls =
 				q(44277),	-- The Lord of Black Rook Hold
 				q(43501),	-- The Power Within
 				q(43496),	-- The Power Within
-				q(42677),	-- Things Gaardoun Needs
-				q(44161),	-- Things Gaardoun Needs
+				q(42677, {	-- Things Gaardoun Needs [Kayn]
+					["qg"] = 103761, -- Kor'vas Bloodthorn
+					["sourceQuests"] = { 42671 }, -- Rise, Champions [Kayn]
+				}),
+				q(44161, {	-- Things Gaardoun Needs [Altruis]
+					["qg"] = 103761, -- Kor'vas Bloodthorn
+					["sourceQuests"] = { 42670 }, -- Rise, Champions [Altruis]
+				}),
 				q(41096),	-- Time is of the Essence
 				q(41067),	-- Time is of the Essence
 				q(45172),	-- To Battle!
