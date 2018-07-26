@@ -1736,28 +1736,24 @@ _.WorldEvents =
 						q(8356, { -- Flexing for Nougat (Alliance)
 							["groups"] = {},
 							["qg"] = 6740,	-- Innkeeper Allison
-							["sourceQuests"] = { 8311 }, -- Hallow's End Treats for Jesper!
 							["maps"] = { 84 }, -- Stormwind City
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(8355, { -- Incoming Gumdrop (Alliance)
 							["groups"] = {},
 							["qg"] = 5111,	-- Innkeeper Firebrew
-							["sourceQuests"] = { 8311 }, -- Hallow's End Treats for Jesper!
 							["maps"] = { 87 }, -- Ironforge
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(8353, { -- Chicken Clucking for a Mint (Alliance)
 							["groups"] = {},
 							["qg"] = 6740,	-- Innkeeper Allison
-							["sourceQuests"] = { 8311 }, -- Hallow's End Treats for Jesper!
 							["maps"] = { 84 }, -- Stormwind City
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(8357, { -- Dancing for Marzipan (Alliance)
 							["groups"] = {},
 							["qg"] = 6735,	-- Innkeeper Saelienne
-							["sourceQuests"] = { 8311 }, -- Hallow's End Treats for Jesper!
 							["maps"] = { 89 }, -- Darnassus
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -1770,28 +1766,24 @@ _.WorldEvents =
 						q(8359, { -- Flexing for Nougat (Horde)
 							["groups"] = {},
 							["qg"] = 6929,	-- Innkeeper Gryshka
-							["sourceQuests"] = { 8312 }, -- Hallow's End Treats for Spoops!
 							["maps"] = { 85 }, -- Orgrimmar
 							["races"] = HORDE_ONLY,
 						}),
 						q(8358, { -- Incoming Gumdrop (Horde)
 							["groups"] = {},
 							["qg"] = 11814,	-- Kali Remik
-							["sourceQuests"] = { 8312 }, -- Hallow's End Treats for Spoops!
 							["maps"] = { 85 }, -- Orgrimmar
 							["races"] = HORDE_ONLY,
 						}),
 						q(8354, { -- Chicken Clucking for a Mint (Horde)
 							["groups"] = {},
 							["qg"] = 6741,	-- Innkeeper Norman
-							["sourceQuests"] = { 8312 }, -- Hallow's End Treats for Spoops!
 							["maps"] = { 90 }, -- Undercity
 							["races"] = HORDE_ONLY,
 						}),
 						q(8360, { -- Dancing for Marzipan (Horde)
 							["groups"] = {},
 							["qg"] = 6746,	-- Innkeeper Pala
-							["sourceQuests"] = { 8312 }, -- Hallow's End Treats for Spoops!
 							["maps"] = { 88 }, -- Thunder Bluff
 							["races"] = HORDE_ONLY,
 						}),
