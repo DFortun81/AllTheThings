@@ -3887,7 +3887,7 @@ app.BaseMount = {
 			return "|cffb19cd9" .. (select(1, GetSpellInfo(t.spellID)) or "???") .. "|r";
 			--return select(1, GetSpellLink(t.spellID)) or select(1, GetSpellInfo(t.spellID)) or ("Spell #" .. t.spellID);
 		elseif key == "description" then
-			local mountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.spellID];
+			local mountID = t.mountID;
 			if mountID then return select(2, C_MountJournal_GetMountInfoExtraByID(mountID)); end
 		elseif key == "link" then
 			if t.itemID then
@@ -3901,10 +3901,27 @@ app.BaseMount = {
 		elseif key == "icon" then
 			return select(3, GetSpellInfo(t.spellID));
 		elseif key == "displayID" then
-			local mountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.spellID];
+			local mountID = t.mountID;
 			if mountID then return select(1, C_MountJournal_GetMountInfoExtraByID(mountID)); end
+		elseif key == "mountID" then
+			local temp = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID");
+			if not temp then
+				-- Harvest the Spell IDs for Conversion.
+				temp = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", {});
+				for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+					local spellID = select(2, C_MountJournal_GetMountInfoByID(mountID));
+					if spellID then temp[spellID] = mountID; end
+				end
+				
+				-- Assign to the temporary data container.
+				SetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", temp);
+			end
+			
+			local mountID = temp[t.spellID];
+			if mountID then return mountID; end
 		elseif key == "name" then
-			return C_MountJournal_GetMountInfoByID(GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID")[t.spellID]);
+			local mountID = t.mountID;
+			if mountID then return C_MountJournal_GetMountInfoByID(mountID); end
 		elseif key == "tsm" then
 			if t.itemID then return string.format("i:%d", t.itemID); end
 			if t.parent and t.parent.itemID then return string.format("i:%d", t.parent.itemID); end
@@ -8876,22 +8893,8 @@ app.events.PLAYER_LOGIN = function()
 		if #mountIDs < 1 then return true; end
 		
 		-- Harvest the Spell IDs for Conversion.
-		local spellID_MountID = GetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", {});
 		local collectedSpells = GetDataMember("CollectedSpells", {});
 		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
-		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
-			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-			if spellID then
-				spellID_MountID[spellID] = mountID;
-				if isCollected then
-					collectedSpells[spellID] = 1;
-					collectedSpellsPerCharacter[spellID] = 1;
-				end
-			end
-		end
-		
-		-- Assign to the temporary data container.
-		SetTempDataMember("MOUNT_SPELLID_TO_MOUNTID", spellID_MountID);
 		app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
 		
 		-- Mark all previously completed quests.
