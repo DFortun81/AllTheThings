@@ -8,34 +8,9 @@ _.Instances = { tier(1, {	-- Classic
 			n(0, {	-- Zone Drop
 				["groups"] = {
 					n(13996, {	-- Blackwing Technician
-						dr(7.0, i(18562)),	-- Elementium Ingot
-					}),
-					n(12460, {	-- Death Talon Wyrmguard
-						dr(4.0, i(19354)),	-- Draconic Avenger
-						dr(4.0, i(19439)),	-- Interlaced Shadow Jerkin
-						dr(4.0, i(19438)),	-- Ringo's Blizzard Boots
+						i(18562),	-- Elementium Ingot
 					}),
 					i(19434, {	-- Band of Dark Dominion
-						["groups"] = {
-						},
-						["crs"] = {
-							12457, -- Blackwing Spellbinder
-							12459, -- Blackwing Warlock
-							12461, -- Death Talon Overseer
-						},
-					}),					
-					i(19362, {	-- Doom's Edge
-						["groups"] = {
-						},
-						["crs"] = {
-							12457, -- Blackwing Spellbinder
-							12459, -- Blackwing Warlock
-							12461, -- Death Talon Overseer
-						},
-					}),					
-					i(19435, {	-- Essence Gatherer
-						["groups"] = {
-						},
 						["crs"] = {
 							12457, -- Blackwing Spellbinder
 							12459, -- Blackwing Warlock
@@ -43,8 +18,6 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					i(19437, {	-- Boots of Pure Thought
-						["groups"] = {
-						},
 						["crs"] = {
 							12467, -- Death Talon Captain
 							12463, -- Death Talon Flamescale
@@ -53,8 +26,6 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					i(19436, {	-- Cloak of Dragonic Might
-						["groups"] = {
-						},
 						["crs"] = {
 							12467, -- Death Talon Captain
 							12463, -- Death Talon Flamescale
@@ -62,14 +33,31 @@ _.Instances = { tier(1, {	-- Classic
 							12465, -- Death Talon Wyrmkin
 						},
 					}),
-					i(19358, {	-- Draconic Maul
-						["groups"] = {
+					n(12460, {	-- Death Talon Wyrmguard
+						i(19354),	-- Draconic Avenger
+						i(19439),	-- Interlaced Shadow Jerkin
+						i(19438),	-- Ringo's Blizzard Boots
+					}),
+					i(19362, {	-- Doom's Edge
+						["crs"] = {
+							12457, -- Blackwing Spellbinder
+							12459, -- Blackwing Warlock
+							12461, -- Death Talon Overseer
 						},
+					}),
+					i(19358, {	-- Draconic Maul
 						["crs"] = {
 							12467, -- Death Talon Captain
 							12463, -- Death Talon Flamescale
 							12464, -- Death Talon Seether
 							12465, -- Death Talon Wyrmkin
+						},
+					}),
+					i(19435, {	-- Essence Gatherer
+						["crs"] = {
+							12457, -- Blackwing Spellbinder
+							12459, -- Blackwing Warlock
+							12461, -- Death Talon Overseer
 						},
 					}),
 				},
@@ -165,8 +153,8 @@ _.Instances = { tier(1, {	-- Classic
 				["creatureID"] = 11983,
 			}),
 			n(14401, {	-- Master Elemental Shaper Krixix
+				i(18562),	-- Elementium Ingot
 				i(44956),	-- Goblin's Guide to Elementium
-				dr(7, i(18562)),	-- Elementium Ingot
 			}),
 			e( 1533, {	-- Ebonroc
 				["groups"] = {

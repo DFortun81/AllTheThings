@@ -5,7 +5,7 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(744, { 	-- Temple of Ahn'Qiraj
 		["groups"] = {
-			n(-17, { -- Quests
+			n(-17, {	-- Quests
 				faction(910, { 	-- Quests / Brood of Nozdormu
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
 				}),
@@ -478,163 +478,281 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(0, {		-- Zone Drop
+			n( -1, {	-- Common Boss Drops
+				i(20736, {	-- Formula: Enchant Cloak - Dodge
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
+				}),
+				i(20734, {	-- Formula: Enchant Cloak - Stealth
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
+				}),
+				i(20729, {	-- Formula: Enchant Gloves - Fire Power
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
+				}),
+				i(20728, {	-- Formula: Enchant Gloves - Frost Power
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
+				}),
+				i(20730, {	-- Formula: Enchant Gloves - Healing Power
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
+				}),
+				i(20727, {	-- Formula: Enchant Gloves - Shadow Power
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
+				}),
+				i(20731, {	-- Formula: Enchant Gloves - Superior Agility
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
+				}),
+				i(21229, {	-- Qiraji Lord's Insignia
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15276,	-- Emperor Vek'lor
+						15275,	-- Emperor Vek'nilash
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
+					["questID"] = 8579,	-- Mortal Champions
+				}),
+			}),
+			n(  0, {	-- Zone Drop
 				{
 					["itemID"] = 21230,	-- Ancient Qiraji Artifact
 					["questID"] = 8784,	-- Secrets of the Qiraji (Quest)
 					["collectible"] = false,
 					["repeatable"] = true,
 				},
-				n(15277, {	-- Anubisath Defender
-					dr(8.00, i(21218)),	-- Blue Qiraji Resonating Crystal
-					dr(9.00, i(21323)),	-- Green Qiraji Resonating Crystal
-					dr(9.00, i(21324)),	-- Yellow Qiraji Resonating Crystal
-					dr(1.00, i(21321)),	-- Red Qiraji Resonating Crystal
-					dr(0.12, i(21890)), -- Gloves of the Fallen Prophet
-					dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-					dr(0.18, i(21891)),	-- Shard of the Fallen Star
+				i(21218, {	-- Blue Qiraji Resonating Crystal
+					["crs"] = {
+						15277,	-- Anubisath Defender
+						15264,	-- Anubisath Sentinel
+						15311,	-- Anubisath Warder
+						15262,	-- Obsidian Eradicator
+						15312,	-- Obsidian Nullifier
+						15247,	-- Qiraji Brainwasher
+						15252,	-- Qiraji Champion
+						15249,	-- Qiraji Lasher
+						15246,	-- Qiraji Mindslayer
+						15250,	-- Qiraji Slayer
+					},
 				}),
-				n(15264, {	-- Anubisath Sentinel
-					dr(9.00, i(21218)),	-- Blue Qiraji Resonating Crystal
-					dr(9.00, i(21323)),	-- Green Qiraji Resonating Crystal
-					dr(0.00, i(21324)),	-- Yellow Qiraji Resonating Crystal
-					dr(1.00, i(21321)),	-- Red Qiraji Resonating Crystal
-					dr(0.05, i(21837)),	-- Anubisath Warhammer
-					dr(0.05, i(21838)),	-- Garb of Royal Ascension
-					dr(0.05, i(21888)),	-- Gloves of the Immortal
-					dr(0.05, i(21856)),	-- Neretzek, the Blood Drinker
-					dr(0.07, i(21836)),	-- Ritssyn's Ring of Chaos
+				i(21323, {	-- Green Qiraji Resonating Crystal
+					["crs"] = {
+						15277,	-- Anubisath Defender
+						15264,	-- Anubisath Sentinel
+						15311,	-- Anubisath Warder
+						15262,	-- Obsidian Eradicator
+						15312,	-- Obsidian Nullifier
+						15247,	-- Qiraji Brainwasher
+						15252,	-- Qiraji Champion
+						15249,	-- Qiraji Lasher
+						15246,	-- Qiraji Mindslayer
+						15250,	-- Qiraji Slayer
+					},
 				}),
-				n(15311, {	-- Anubisath Warder
-					dr(11.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-					dr(09.0, i(21323)),	-- Green Qiraji Resonating Crystal
-					dr(11.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-					dr(01.0, i(21321)),	-- Red Qiraji Resonating Crystal
-					dr(00.2, i(21890)),	-- Gloves of the Fallen Prophet
-					dr(00.2, i(21889)),	-- Gloves of the Redeemed Prophecy
-					dr(00.3, i(21891)),	-- Shard of the Fallen Star
+				i(21321, {	-- Red Qiraji Resonating Crystal
+					["crs"] = {
+						15277,	-- Anubisath Defender
+						15264,	-- Anubisath Sentinel
+						15311,	-- Anubisath Warder
+						15262,	-- Obsidian Eradicator
+						15312,	-- Obsidian Nullifier
+						15247,	-- Qiraji Brainwasher
+						15252,	-- Qiraji Champion
+						15249,	-- Qiraji Lasher
+						15246,	-- Qiraji Mindslayer
+						15250,	-- Qiraji Slayer
+					},
 				}),
-				n(15262, {	-- Obsidian Eradicator
-					dr(8.00, i(21218)),	-- Blue Qiraji Resonating Crystal
-					dr(8.00, i(21323)),	-- Green Qiraji Resonating Crystal
-					dr(9.00, i(21324)),	-- Yellow Qiraji Resonating Crystal
-					dr(1.00, i(21321)),	-- Red Qiraji Resonating Crystal
-					dr(0.05, i(21837)),	-- Anubisath Warhammer
-					dr(0.04, i(21838)),	-- Garb of Royal Ascension
-					dr(0.07, i(21888)),	-- Gloves of the Immortal
-					dr(0.06, i(21856)),	-- Neretzek, the Blood Drinker
-					dr(0.05, i(21836)),	-- Ritssyn's Ring of Chaos
+				i(21324, {	-- Yellow Qiraji Resonating Crystal
+					["crs"] = {
+						15277,	-- Anubisath Defender
+						15264,	-- Anubisath Sentinel
+						15311,	-- Anubisath Warder
+						15262,	-- Obsidian Eradicator
+						15312,	-- Obsidian Nullifier
+						15247,	-- Qiraji Brainwasher
+						15252,	-- Qiraji Champion
+						15249,	-- Qiraji Lasher
+						15246,	-- Qiraji Mindslayer
+						15250,	-- Qiraji Slayer
+					},
 				}),
-				n(15312, {	-- Obisidan Nullifier
-					dr(8.00, i(21218)),	-- Blue Qiraji Resonating Crystal
-					dr(9.00, i(21323)),	-- Green Qiraji Resonating Crystal
-					dr(9.00, i(21324)),	-- Yellow Qiraji Resonating Crystal
-					dr(1.50, i(21321)),	-- Red Qiraji Resonating Crystal
-					dr(0.12, i(21890)), -- Gloves of the Fallen Prophet
-					dr(0.12, i(21889)),	-- Gloves of the Redeemed Prophecy
-					dr(0.14, i(21891)),	-- Shard of the Fallen Star
+				i(21837, {	-- Anubisath Warhammer
+					["crs"] = {
+						15264,	-- Anubisath Sentinel
+						15262,	-- Obsidian Eradicator
+						15247,	-- Qiraji Brainwasher
+						15249,	-- Qiraji Lasher
+						15250,	-- Qiraji Slayer
+						15233,	-- Vekniss Guardian
+						15229,	-- Vekniss Soldier
+						15235,	-- Vekniss Stinger
+						15230,	-- Vekniss Warrior
+						15236,	-- Vekniss Wasp
+					},
 				}),
-				n(15247, {	-- Qiraji Brainwasher
-					dr(08.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-					dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-					dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-					dr(01.0, i(21321)),	-- Red Qiraji Resonating Crystal
-					dr(0.05, i(21837)),	-- Anubisath Warhammer
-					dr(0.06, i(21838)),	-- Garb of Royal Ascension
-					dr(0.05, i(21888)),	-- Gloves of the Immortal
-					dr(0.05, i(21856)),	-- Neretzek, the Blood Drinker
-					dr(0.07, i(21836)),	-- Ritssyn's Ring of Chaos
+				i(21838, {	-- Garb of Royal Ascension
+					["crs"] = {
+						15264,	-- Anubisath Sentinel
+						15262,	-- Obsidian Eradicator
+						15247,	-- Qiraji Brainwasher
+						15249,	-- Qiraji Lasher
+						15250,	-- Qiraji Slayer
+						15233,	-- Vekniss Guardian
+						15229,	-- Vekniss Soldier
+						15235,	-- Vekniss Stinger
+						15230,	-- Vekniss Warrior
+						15236,	-- Vekniss Wasp
+					},
 				}),
-				n(15252, {	-- Qiraji Champion
-					dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-					dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-					dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-					dr(0.80, i(21321)),	-- Red Qiraji Resonating Crystal
-					dr(0.15, i(21890)), -- Gloves of the Fallen Prophet
-					dr(0.13, i(21889)),	-- Gloves of the Redeemed Prophecy
-					dr(0.14, i(21891)),	-- Shard of the Fallen Star
+				i(21890, {	-- Gloves of the Fallen Prophet
+					["crs"] = {
+						15277,	-- Anubisath Defender
+						15311,	-- Anubisath Warder
+						15312,	-- Obsidian Nullifier
+						15252,	-- Qiraji Champion
+						15246,	-- Qiraji Mindslayer
+						15240,	-- Vekniss Hive Crawler
+					},
 				}),
-				n(15249, {	-- Qiraji Lasher
-					dr(10.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-					dr(09.0, i(21323)),	-- Green Qiraji Resonating Crystal
-					dr(10.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-					dr(01.1, i(21321)),	-- Red Qiraji Resonating Crystal
-					dr(0.11, i(21837)),	-- Anubisath Warhammer
-					dr(0.04, i(21838)),	-- Garb of Royal Ascension
-					dr(0.06, i(21888)),	-- Gloves of the Immortal
-					dr(0.08, i(21856)),	-- Neretzek, the Blood Drinker
-					dr(0.04, i(21836)),	-- Ritssyn's Ring of Chaos
+				i(21888, {	-- Gloves of the Immortal
+					["crs"] = {
+						15264,	-- Anubisath Sentinel
+						15262,	-- Obsidian Eradicator
+						15247,	-- Qiraji Brainwasher
+						15249,	-- Qiraji Lasher
+						15250,	-- Qiraji Slayer
+						15233,	-- Vekniss Guardian
+						15229,	-- Vekniss Soldier
+						15235,	-- Vekniss Stinger
+						15230,	-- Vekniss Warrior
+						15236,	-- Vekniss Wasp
+					},
 				}),
-				n(15246, {	-- Qiraji Mindslayer
-					dr(09.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-					dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-					dr(09.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-					dr(01.1, i(21321)),	-- Red Qiraji Resonating Crystal
-					dr(0.17, i(21890)), -- Gloves of the Fallen Prophet
-					dr(0.16, i(21889)),	-- Gloves of the Redeemed Prophecy
-					dr(0.20, i(21891)),	-- Shard of the Fallen Star
+				i(21889, {	-- Gloves of the Redeemed Prophecy
+					["crs"] = {
+						15277,	-- Anubisath Defender
+						15311,	-- Anubisath Warder
+						15312,	-- Obsidian Nullifier
+						15252,	-- Qiraji Champion
+						15246,	-- Qiraji Mindslayer
+						15240,	-- Vekniss Hive Crawler
+					},
 				}),
-				n(15250, {	-- Qiraji Slayer
-					dr(09.0, i(21218)),	-- Blue Qiraji Resonating Crystal
-					dr(10.0, i(21323)),	-- Green Qiraji Resonating Crystal
-					dr(09.0, i(21324)),	-- Yellow Qiraji Resonating Crystal
-					dr(1.00, i(21321)),	-- Red Qiraji Resonating Crystal
-					dr(0.07, i(21837)),	-- Anubisath Warhammer
-					dr(0.05, i(21838)),	-- Garb of Royal Ascension
-					dr(0.05, i(21888)),	-- Gloves of the Immortal
-					dr(0.04, i(21856)),	-- Neretzek, the Blood Drinker
-					dr(0.06, i(21836)),	-- Ritssyn's Ring of Chaos
+				i(21856, {	-- Neretzek, the Blood Drinker
+					["crs"] = {
+						15264,	-- Anubisath Sentinel
+						15262,	-- Obsidian Eradicator
+						15247,	-- Qiraji Brainwasher
+						15249,	-- Qiraji Lasher
+						15250,	-- Qiraji Slayer
+						15233,	-- Vekniss Guardian
+						15229,	-- Vekniss Soldier
+						15235,	-- Vekniss Stinger
+						15230,	-- Vekniss Warrior
+						15236,	-- Vekniss Wasp
+					},
 				}),
-				n(15233, {	-- Vekniss Guardian	
-					dr(0.08, i(21837)),	-- Anubisath Warhammer
-					dr(0.05, i(21838)),	-- Garb of Royal Ascension
-					dr(0.06, i(21888)),	-- Gloves of the Immortal
-					dr(0.05, i(21856)),	-- Neretzek, the Blood Drinker
-					dr(0.07, i(21836)),	-- Ritssyn's Ring of Chaos
+				i(21836, {	-- Ritssyn's Ring of Chaos
+					["crs"] = {
+						15264,	-- Anubisath Sentinel
+						15262,	-- Obsidian Eradicator
+						15247,	-- Qiraji Brainwasher
+						15249,	-- Qiraji Lasher
+						15250,	-- Qiraji Slayer
+						15233,	-- Vekniss Guardian
+						15229,	-- Vekniss Soldier
+						15235,	-- Vekniss Stinger
+						15230,	-- Vekniss Warrior
+						15236,	-- Vekniss Wasp
+					},
 				}),
-				n(15240, {	-- Vekniss Hive Crawler
-					dr(0.30, i(21890)), 	-- Gloves of the Fallen Prophet
-					dr(0.20, i(21889)),	-- Gloves of the Redeemed Prophecy
-					dr(0.15, i(21891)),	-- Shard of the Fallen Star
-				}),
-				n(15229, {	-- Vekniss Soldier
-					dr(0.05, i(21837)),	-- Anubisath Warhammer
-					dr(0.07, i(21838)),	-- Garb of Royal Ascension
-					dr(0.06, i(21888)),	-- Gloves of the Immortal
-					dr(0.06, i(21856)),	-- Neretzek, the Blood Drinker
-					dr(0.06, i(21836)),	-- Ritssyn's Ring of Chaos
-				}),
-				n(15235, {	-- Vekniss Stinger	
-					dr(0.08, i(21837)),	-- Anubisath Warhammer
-					dr(0.04, i(21838)),	-- Garb of Royal Ascension
-					dr(0.03, i(21888)),	-- Gloves of the Immortal
-					dr(0.05, i(21856)),	-- Neretzek, the Blood Drinker
-					dr(0.05, i(21836)),	-- Ritssyn's Ring of Chaos
-				}),
-				n(15230, {	-- Vekniss Warrior	
-					dr(0.04, i(21837)),	-- Anubisath Warhammer
-					dr(0.05, i(21838)),	-- Garb of Royal Ascension
-					dr(0.05, i(21888)),	-- Gloves of the Immortal
-					dr(0.05, i(21856)),	-- Neretzek, the Blood Drinker
-					dr(0.06, i(21836)),	-- Ritssyn's Ring of Chaos
-				}),
-				n(15236, {	-- Vekniss Wasp	
-					dr(0.09, i(21837)),	-- Anubisath Warhammer
-					dr(0.07, i(21838)),	-- Garb of Royal Ascension
-					dr(0.08, i(21888)),	-- Gloves of the Immortal
-					dr(0.05, i(21856)),	-- Neretzek, the Blood Drinker
-					dr(0.04, i(21836)),	-- Ritssyn's Ring of Chaos
+				i(21891, {	-- Shard of the Fallen Star
+					["crs"] = {
+						15277,	-- Anubisath Defender
+						15311,	-- Anubisath Warder
+						15312,	-- Obsidian Nullifier
+						15252,	-- Qiraji Champion
+						15246,	-- Qiraji Mindslayer
+						15240,	-- Vekniss Hive Crawler
+					},
 				}),
 			}),
 			e(1543, {	-- The Prophet Skeram
 				["groups"] = {
-					dr(1.0, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-					dr(1.2, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-					dr(1.1, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-					dr(1.0, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-					dr(1.1, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-					dr(1.0, i(20736)),	-- Formula: Enchant Cloak - Dodge
-					i(20734),	-- Formula: Encant Cloak - Stealth
 					i(22222),	-- Plans: Thick Obisidan Breastplate
 					i(93041),	-- Jewel of Maddening Whispers (Pet)
 					i(21703),	-- Hammer of Ji'zhi
@@ -650,10 +768,6 @@ _.Instances = { tier(1, {	-- Classic
 					i(21704),	-- Boots of the Redeemed Prophecy
 					i(21706),	-- Boots of the Unwavering Will
 					i(21707),	-- Ring of Swarming Thought
-					{
-						["itemID"] = 21229,	-- Qiraji Lord's Insignia
-						["questID"] = 8579,	-- Mortal Champions (Quest)
-					},
 				},
 				["creatureID"] = 15263,
 			}),
@@ -663,13 +777,6 @@ _.Instances = { tier(1, {	-- Classic
 					n(15511, { -- Lord Kri
 						["description"] = "Killing this boss last can drop the following items.",
 						["groups"] = {
-							dr(12, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-							dr(0.9, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-							dr(0.9, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-							dr(0.8, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-							dr(1.4, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-							dr(0.9, i(20736)),	-- Formula: Enchant Cloak - Dodge
-							i(20734),	-- Formula: Encant Cloak - Stealth
 							{
 								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -713,22 +820,11 @@ _.Instances = { tier(1, {	-- Classic
 							i(21695),	-- Angelista's Touch
 							i(21681),	-- Ring of the Devoured
 							i(21685),	-- Petrified Scarab
-							{
-								["itemID"] = 21229,	-- Qiraji Lord's Insignia
-								["questID"] = 8579,	-- Mortal Champions (Quest)
-							},
 						},
 					}),
 					n(15543, { -- Princess Yauj
 						["description"] = "Killing this boss last can drop the following items.",
 						["groups"] = {
-							dr(1.2, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-							dr(0.6, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-							dr(0.7, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-							dr(0.5, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-							dr(0.8, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-							dr(1.1, i(20736)),	-- Formula: Enchant Cloak - Dodge
-							i(20734),	-- Formula: Encant Cloak - Stealth
 							{
 								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -773,22 +869,11 @@ _.Instances = { tier(1, {	-- Classic
 							i(21692),	-- Triad Girdle
 							i(21695),	-- Angelista's Touch
 							i(21687),	-- Ukko's Ring of Darkness
-							{
-								["itemID"] = 21229,	-- Qiraji Lord's Insignia
-								["questID"] = 8579,	-- Mortal Champions (Quest)
-							},
 						},
 					}),
 					n(15544, { -- Vem
 						["description"] = "Killing this boss last can drop the following items.",
 						["groups"] = {
-							dr(1.0, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-							dr(1.5, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-							dr(1.0, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-							dr(1.3, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-							dr(1.0, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-							dr(1.2, i(20736)),	-- Formula: Enchant Cloak - Dodge
-							i(20734),	-- Formula: Encant Cloak - Stealth
 							{
 								["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 								["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -832,23 +917,12 @@ _.Instances = { tier(1, {	-- Classic
 							i(21692),	-- Triad Girdle
 							i(21688),	-- Boots of the Fallen Hero
 							i(21695),	-- Angelista's Touch
-							{
-								["itemID"] = 21229,	-- Qiraji Lord's Insignia
-								["questID"] = 8579,	-- Mortal Champions (Quest)
-							},
 						},
 					}),
 				},
 			}),
 			e(1544, {	-- Battleguard Sartura
 				["groups"] = {
-					dr(1.0, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-					dr(1.0, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-					dr(1.2, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-					dr(1.1, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-					dr(1.1, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-					dr(1.5, i(20736)),	-- Formula: Enchant Cloak - Dodge
-					i(20734),	-- Formula: Encant Cloak - Stealth
 					{
 						["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 						["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -895,22 +969,11 @@ _.Instances = { tier(1, {	-- Classic
 					i(21668),	-- Scaled Leggings of Qiraji Fury
 					i(21648),	-- Recomposed Boots
 					i(21670),	-- Badge of the Swarmguard
-					{
-						["itemID"] = 21229,	-- Qiraji Lord's Insignia
-						["questID"] = 8579,	-- Mortal Champions (Quest)
-					},
 				},
 				["creatureID"] = 15516,
 			}),
 			e(1545, {	-- Fankriss the Unyielding
 				["groups"] = {
-					dr(1.0, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-					dr(1.2, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-					dr(1.1, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-					dr(1.7, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-					dr(1.0, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-					dr(1.0, i(20736)),	-- Formula: Enchant Cloak - Dodge
-					i(20734),	-- Formula: Encant Cloak - Stealth
 					{
 						["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 						["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -955,22 +1018,11 @@ _.Instances = { tier(1, {	-- Classic
 					i(21651),	-- Scaled Sand Reaver Leggings
 					i(21645),	-- Hive Tunneler's Boots
 					i(21647),	-- Fetish of the Sand Reaver
-					{
-						["itemID"] = 21229,	-- Qiraji Lord's Insignia
-						["questID"] = 8579,	-- Mortal Champions (Quest)
-					},
 				},
 				["creatureID"] = 15510,
 			}),
 			e(1548, {	-- Viscidus
 				["groups"] = {
-					dr(1.1, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-					dr(0.8, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-					dr(1.2, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-					dr(1.8, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-					dr(1.0, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-					dr(1.8, i(20736)),	-- Formula: Enchant Cloak - Dodge
-					i(20734),	-- Formula: Encant Cloak - Stealth
 					{
 						["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 						["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -1177,23 +1229,12 @@ _.Instances = { tier(1, {	-- Classic
 					i(21626),	-- Slime-Coated Leggings
 					i(21677),	-- Ring of Qiraji Fury
 					i(21625),	-- Scarab Brooch
-					{
-						["itemID"] = 21229,	-- Qiraji Lord's Insignia
-						["questID"] = 8579,	-- Mortal Champions (Quest)
-					},
 				},
 				["description"] = "This boss requires 20 frost hits to freeze. A fast dagger or one-hander with enchant weapon - elemental force or endothermic blaster toy (boss at 0%) to do this. Once frozen, you need 30 melee hits to shatter him. Equipping crate of kidnapped puppies or barov peasant caller trinket and using it after boss freezes will help to do this.",
 				["creatureID"] = 15299,
 			}),
 			e(1546, {	-- Princess Huhuran
 				["groups"] = {
-					dr(1.6, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-					dr(1.2, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-					dr(1.0, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-					dr(1.3, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-					dr(1.1, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-					dr(1.4, i(20736)),	-- Formula: Enchant Cloak - Dodge
-					i(20734),	-- Formula: Encant Cloak - Stealth
 					{
 						["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 						["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -1399,10 +1440,6 @@ _.Instances = { tier(1, {	-- Classic
 					i(21619),	-- Gloves of the Messiah
 					i(21617),	-- Wasphide Gauntlets
 					i(21620),	-- Ring of the Martyr
-					{
-						["itemID"] = 21229,	-- Qiraji Lord's Insignia
-						["questID"] = 8579,	-- Mortal Champions (Quest)
-					},
 				},
 				["creatureID"] = 15509,
 			}),
@@ -1497,10 +1534,6 @@ _.Instances = { tier(1, {	-- Classic
 						i(21598), 	-- Royal Qiraji Belt
 						i(21600), 	-- Boots of Epiphany
 						i(21601),	-- Ring of Emperor Vek'lor
-						{
-							["itemID"] = 21229,	-- Qiraji Lord's Insignia
-							["questID"] = 8579,	-- Mortal Champions (Quest)
-						},
 					}),
 					n(15275, { -- Emperor Vek'nilash
 						{
@@ -1582,21 +1615,11 @@ _.Instances = { tier(1, {	-- Classic
 						i(21606), 	-- Belt of the Fallen Emperor
 						i(21607), 	-- Grasp of the Fallen Emperor
 						i(21609), 	-- Regenerating Belt of Vek'nilash
-						{
-							["itemID"] = 21229,	-- Qiraji Lord's Insignia
-							["questID"] = 8579,	-- Mortal Champions (Quest)
-						},
 					}),
 				},
 			}),
 			e(1550, { 	-- Ouro
 				["groups"] = {
-					dr(0.7, i(20729)),	-- Formula: Enchant Gloves - Fire Power
-					dr(0.8, i(20728)),	-- Formula: Enchant Gloves - Frost Power
-					dr(1.3, i(20730)),	-- Formula: Enchant Gloves - Healing Power
-					dr(0.9, i(20727)),	-- Formula: Enchant Gloves - Shadow Power
-					dr(1.5, i(20731)),	-- Formula: Enchant Gloves - Superior Agility
-					dr(1.2, i(20736)),	-- Formula: Enchant Cloak - Dodge
 					{
 						["itemID"] = 21232,	-- Imperial Qiraji Armaments (Item)
 						["description"] = "Turn in along with 3 Elementium Ingots to get all of the rewards. It does not matter which item you choose.",
@@ -1721,10 +1744,6 @@ _.Instances = { tier(1, {	-- Classic
 					i(21611),	-- Burrower Bracers
 					i(23570),	-- Jom Gabbar
 					i(23558),	-- The Burrower's Shell
-					{
-						["itemID"] = 21229,	-- Qiraji Lord's Insignia
-						["questID"] = 8579,	-- Mortal Champions (Quest)
-					},
 				},
 				["creatureID"] = 15517,
 			}),
