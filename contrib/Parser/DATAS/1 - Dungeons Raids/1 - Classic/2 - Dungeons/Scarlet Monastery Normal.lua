@@ -8,53 +8,48 @@ _.Instances =
 		["groups"] = {
 			inst(316, { 	-- Scarlet Monastery
 				["groups"] = {
+					--  We want Quests/Zone Drops above Normal because it occurs in both modes.
+					n(-17, {	-- Quests
+						q(31513, {	-- Blades of the Anointed
+							["qg"] = 64827,	-- Hooded Crusader
+						}),
+						q(31514, {	-- Unto Dust Thou Shalt Return
+							["qg"] = 64854,	-- Blade of the Anointed
+							["sourceQuests"] = { 31513 },	-- Blades of the Anointed
+						}),
+					}),
+					n(  0, {	-- Zone Drop
+						["groups"] = {
+							i(7754),	-- Harbinger Boots
+							i(7754),	-- Harbinger Boots
+							i(5819),	-- Sunblaze Coif
+							i(7729),	-- Chesterfall Musket
+							i(7754),	-- Harbinger Boots
+							i(7727),	-- Watchman Pauldrons
+							i(7729),	-- Chesterfall Musket
+							i(7752),	-- Dreamslayer
+							i(7754),	-- Harbinger Boots
+						n(58876, {	-- Starving Houndmaster
+							dr(.01, i(7727)),	-- Watchman Pauldrons
+						}),
+						i( 7759),	-- Archon Chestpiece
+						i( 7728),	-- Beguiler's Robes
+						i( 7730),	-- Cobalt Crusher
+						i( 7736),	-- Fight Club
+						i( 7755),	-- Flintrock Shoulders
+						i(10329),	-- Scarlet Belt
+						i(10332),	-- Scarlet Boots
+						i(10328),	-- Scarlet Chestpiece
+						i(10331),	-- Scarlet Gauntlets
+						i(10333),	-- Scarlet Wristguards
+						i( 7761),	-- Steelclaw Reaver
+						i( 1992),	-- Swampchill Fetish
+						i( 8226),	-- The Butcher
+						i( 7760),	-- Warchief Kilt
+						i( 7757),	-- Windweaver Staff
+						},
+					}),
 					d(1, {		-- Normal
-						n(-17, {	-- Quests
-							q(31513, {	-- Blades of the Anointed
-								["qg"] = 64827,	-- Hooded Crusader
-							}),
-							q(31514, {	-- Unto Dust Thou Shalt Return
-								["qg"] = 64854,	-- Blade of the Anointed
-								["sourceQuests"] = { 31513 },	-- Blades of the Anointed
-							}),
-						}),
-						n(  0, {	-- Zone Drop
-							n(60033, {	-- Frenzied Spirit
-								dr(.01, i(7754)),	-- Harbinger Boots
-							}),
-							n(59705, {	-- Scarlet Flamethrower
-								dr(.01, i(7754)),	-- Harbinger Boots
-								dr(.01, i(5819)),	-- Sunblaze Coif
-							}),
-							n(59746, {	-- Scarlet Centurion
-								dr(.01, i(7729)),	-- Chesterfall Musket
-								dr(.03, i(7754)),	-- Harbinger Boots
-								dr(.01, i(7727)),	-- Watchman Pauldrons
-							}),
-							n(58590, {	-- Scarlet Zealot
-								dr(.01, i(7729)),	-- Chesterfall Musket
-								dr(.01, i(7752)),	-- Dreamslayer
-								dr(.01, i(7754)),	-- Harbinger Boots
-							}),
-							n(58876, {	-- Starving Houndmaster
-								dr(.01, i(7727)),	-- Watchman Pauldrons
-							}),
-							i( 7759),	-- Archon Chestpiece
-							i( 7728),	-- Beguiler's Robes
-							i( 7730),	-- Cobalt Crusher
-							i( 7736),	-- Fight Club
-							i( 7755),	-- Flintrock Shoulders
-							i(10329),	-- Scarlet Belt
-							i(10332),	-- Scarlet Boots
-							i(10328),	-- Scarlet Chestpiece
-							i(10331),	-- Scarlet Gauntlets
-							i(10333),	-- Scarlet Wristguards
-							i( 7761),	-- Steelclaw Reaver
-							i( 1992),	-- Swampchill Fetish
-							i( 8226),	-- The Butcher
-							i( 7760),	-- Warchief Kilt
-							i( 7757),	-- Windweaver Staff
-						}),
 						cr(59789, e(688, {	-- Thalnos the Soulrender
 							i(88284),	-- Forgotten Bloodmage Mantle
 							i(88288),	-- Soulrender Greatcloak
