@@ -144,6 +144,7 @@ _.Mounts =
 		i(142236),		-- Midnight
 		i(45693),		-- Mimiron's Head
 		i(116661),		-- Mottled Meadowstomper
+		i(159921), 		-- Mummified Raptor Skull
 		i(142233),		-- Netherlord's Accursed Wrathsteed
 		i(49636),		-- Onyxian Drake
 		i(63042),		-- Phosphorescent Stone Drake
@@ -157,6 +158,7 @@ _.Mounts =
 		i(152840),		-- Scintillating Mana Ray Mount
 		i(152789),		-- Shackled Ur'zul
 		i(116663),		-- Shadowhide Pearltusk
+		i(159842),		-- Sharkbait's Favorite Crackers
 		i(94229),		-- Slate Primordial Direhorn
 		i(116786),		-- Smoky Direwolf
 		i(142552),		-- Smoldering Ember Wyrm
