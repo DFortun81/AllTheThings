@@ -921,6 +921,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 				},
 				["maps"] = { 554 }, -- Timeless Isle
+				["isRaid"] = true,
 			}),
 			cr(69099, e(814, { 	-- Nalak, The Storm Lord
 				["groups"] = {
