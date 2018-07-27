@@ -1813,6 +1813,7 @@ local function OpenMiniList(field, id, label)
 		if #results < 2 then
 			-- Only one object matched.
 			results = setmetatable({ back = 1 }, { __index = results[1] });
+			app.MiniListHeader = nil;
 		else
 			-- A couple of objects matched, let's make a header.
 			local header = { g = {}, back = 1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for " .. (label or field) .. " #" .. id, total = 0, progress = 0 };
@@ -1906,8 +1907,8 @@ local function OpenMiniList(field, id, label)
 				app.HolidayHeader.visible = false;
 			end
 			
-			if field == "mapID" then
-				for i, group in ipairs(results) do
+			if field == "mapID" and #results > 1 and not header.mapID then
+				for i, group in ipairs(header.g) do
 					if group.mapID then
 						header.text = group.text;
 						header.icon = group.icon;
@@ -1916,12 +1917,12 @@ local function OpenMiniList(field, id, label)
 								header[key] = value;
 							end
 						end
+						table.remove(header.g, i);
 						if group.g then
 							for j,subgroup in ipairs(group.g) do
 								tinsert(header.g, subgroup);
 							end
 						end
-						table.remove(header.g, i);
 						break;
 					end
 				end
