@@ -2675,6 +2675,10 @@ local function AttachTooltip(self)
 		
 			local owner = self:GetOwner();
 			if owner then
+				if owner.SpellHighlightTexture then
+					return true;
+				end
+			
 				--[[
 				for i,j in pairs(owner) do
 					self:AddDoubleLine(tostring(i), tostring(j));
@@ -2723,7 +2727,6 @@ local function AttachTooltip(self)
 					end
 				end
 				
-				
 				local itemID = owner.itemID;
 				if itemID then
 					AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForFieldAndSummarize, "itemID", itemID);
@@ -2736,10 +2739,8 @@ local function AttachTooltip(self)
 					end
 				end
 				
-				local spellID = select(3, self:GetSpell());
-				if spellID and not IsSpellKnown(spellID) then
-					AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForFieldAndSummarize, "spellID", spellID);
-				end
+				local spellID = select(2, self:GetSpell());
+				if spellID then AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForFieldAndSummarize, "spellID", spellID); end
 			else
 				if GetDataMember("ShowContents") then
 					-- Is this for a Unit?
@@ -2791,10 +2792,8 @@ local function AttachTooltip(self)
 					local link = select(2, self:GetItem());
 					if link then AttachTooltipSearchResults(self, link, SearchForItemLink, link); end
 					
-					local spellID = select(3, self:GetSpell());
-					if spellID and not IsSpellKnown(spellID) then
-						AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForFieldAndSummarize, "spellID", spellID);
-					end
+					local spellID = select(2, self:GetSpell());
+					if spellID then AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForFieldAndSummarize, "spellID", spellID); end
 				end
 			end
 		end
