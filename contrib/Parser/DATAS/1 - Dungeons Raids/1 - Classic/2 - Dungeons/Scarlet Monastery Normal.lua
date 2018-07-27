@@ -220,7 +220,10 @@ _.Instances =
 					}),
 				},
 				["lvl"] = 23,
-				["mapID"] = 435,
+				["maps"] = {
+					435, -- Scarlet Monastery: Forlorn Cloister (First Boss
+					436, -- Scarlet Monasatery: Crusaader's Chapel (Last two bosses)
+				},
 			}),
 		},
 		["tierID"] = 1
