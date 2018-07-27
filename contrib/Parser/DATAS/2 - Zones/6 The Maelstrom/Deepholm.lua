@@ -53,6 +53,7 @@ _.Zones =
 					ach(5449, { -- Rock Lover
 						i(60869), -- Pebble
 					}),
+					q(31973),	-- Bordin Steadyfist
 				}),
 				n(-38, { -- Profession
 					n(-188, { 	-- Mining
@@ -63,392 +64,687 @@ _.Zones =
 					}),
 				}),				
 				n(-17, { -- Quests
---[[				
-					q(26581),	-- A Head Full of Wind
-					q(41900),	-- A Promise of Earth
-					qh( 39746),	-- A Ring Unbroken
-					q(26871),	-- A Rock Amongst Many
-					q(26835),	-- A Slight Problem
-					q(42995),	-- A Taste For Blood
-					q(26857),	-- Abyssion's Minions
-					q(26248),	-- All Our Friends Are Dead
-					q(26411),	-- Apply and Flash Dry
-					q(26750),	-- At the Stonemother's Call
-					q(26752),	-- Audience with the Stonemother
-					q(26591),	-- Battlefront Triage
-					q(28488),	-- Beneath the Surface
-					q(26766),	-- Big Game, Big Bait
-					q(26256),	-- Bleed the Bloodshaper
-					q(26861),	-- Block the Gates
-					q(26259),	-- Blood of the Earthwarder
-					q(31973),	-- Bordin Steadyfist
-					q(27936),	-- Bring Down the Avalanche
-					q(27935),	-- Bring Down the Avalanche
-					qa( 29020),	-- Candy Bucket
-					qh( 29019),	-- Candy Bucket
-					q(26246),	-- Captain's Log
-					q(41747),	-- Champion: Avalanchion
-					q(26440),	-- Clingy
-					q(26632),	-- Close Escort
-					q(42936),	-- Clutch Play
-					q(42971),	-- Controlling the Elements
-					q(26313),	-- Core of Our Troubles
-					q(26585),	-- Corruption Destruction
-					q(26312),	-- Crumbling Defenses
-					q(26258),	-- Deathwing's Fall
-					qh( 27041),	-- Decryption Made Easy
-					qa( 27040),	-- Decryption Made Easy
-					q(29734),	-- Deepforge the Elder
-					q(27123),	-- Deepholm, Realm of Earth
-					q(26869),	-- Depth of the Depths
-					q(26247),	-- Diplomacy First
-					q(26656),	-- Don't. Stop. Moving.
-					q(26578),	-- Doomshrooms
-					q(26834),	-- Down Into the Chasm
-					q(29329),	-- Elemental Bonds: Patience
-					q(27136),	-- Elemental Energy
-					q(27933),	-- Elemental Ore
-					q(26436),	-- Entrenched
-					q(26410),	-- Explosive Bonding Compound
-					q(26580),	-- Familiar Intruders
-					q(27046),	-- Fear of Boring
-					qh( 27043),	-- Fight Fire and Water and Air with...
-					qa( 27042),	-- Fight Fire and Water and Air with...
-					q(26564),	-- Fixer Upper
-					qh( 27008),	-- Fly Over
-					qa( 27006),	-- Fly Over
-					q(26658),	-- Fragile Values
-					q(27050),	-- Fungal Fury
-					q(26792),	-- Fungal Monstrosities
-					q(28390),	-- Glop, Son of Glop
-					q(26579),	-- Gone Soft
-					q(26245),	-- Gunship Down
-					q(26657),	-- Hard Falls
-					q(26376),	-- Hatred Runs Deep
-					q(29030),	-- Honor the Flame
-					q(29036),	-- Honor the Flame
-					q(26315),	-- Imposing Confrontation
-					q(26438),	-- Intervention
-					q(29337),	-- Into Constant Earth
-					q(28866),	-- Into the Stonecore
-					qg(53738, q(29338)),	-- Into Unrelenting Flame
-					q(26755),	-- Keep Them off the Front
-					q(26375),	-- Loose Stones
-					q(26710),	-- Lost In The Deeps
-					q(42989),	-- Ma'haat the Indomitable
-					q(26437),	-- Making Things Crystal Clear
-					q(27102),	-- Maziel's Ascendancy
-					q(27101),	-- Maziel's Revelation
-					q(27047),	-- Motes
-					q(26770),	-- Mystic Masters
-					q(42937),	-- Needlerock Beatdown
-					q(26314),	-- On Even Ground
-					q(26250),	-- On Second Thought, Take One Prisoner
-					q(27934),	-- One With the Ground
-					q(26828),	-- Our Part of the Bargain
-					q(28869),	-- Pebble
-					q(26507),	-- Petrified Delicacies
-					q(26439),	-- Putting the Pieces Together
-					q(26415),	-- Questflag for Captain's Log
-					q(26261),	-- Question the Slaves
-					q(27010),	-- Quicksilver Submersion
-					q(26827),	-- Rallying the Earthen Ring
-					q(26762),	-- Reactivate the Constructs
-					q(26836),	-- Rescue the Stonefather... and Flint
-					q(26659),	-- Resonating Blow
-					q(43003),	-- Return to Janai
-					q(26255),	-- Return to the Temple of Earth
-					q(26575),	-- Rock Bottom
-					q(26328),	-- Rocky Relations
-					q(26577),	-- Rocky Upheaval
-					q(27126),	-- Rush Delivery
-					q(26501),	-- Sealing the Way
-					q(26584),	-- Shaken and Stirred					
-					q(26537),	-- Shatter Them!
-					q(27007),	-- Silvermarsh Rendezvous
-					q(26441),	-- So Big, So Round...
-					q(27049),	-- Soft Rock
-					q(26254),	-- Some Spraining to Do
-					q(27135),	-- Something that Burns
-					q(26791),	-- Sprout No More
-					q(26576),	-- Steady Hand
-					q(42935),	-- Stone Drake Rescue
-					q(29735),	-- Stonebrand the Elder
-					q(26499),	-- Stonefather's Boon
-					q(26413),	-- Take Him to the Earthcaller
-					q(26251),	-- Take No Prisoners
-					q(26771),	-- Testing the Trap
-					qh( 28293),	-- That's No Pyramid!
-					qa( 28292),	-- That's No Pyramid!
-					q(26249),	-- The Admiral's Cabin
-					q(27932),	-- The Axe of Earthly Sundering
-					q(26971),	-- The Binding
-					q(26244),	-- The Earth Claims All
-					qh( 41335),	-- The Elements Call...
-					qa( 27952),	-- The Explorers
-					q(26260),	-- The Forgemaster's Log
-					q(41775),	-- The Great Stonemother
-					qh( 40224),	-- The Hammer in the Deep
-					q(27937),	-- The Hero Returns
-					q(27203),	-- The Maelstrom
-					q(27938),	-- The Middle Fragment
-					q(27931),	-- The Quaking Fields
-					qh( 27953),	-- The Reliquary
-					q(28391),	-- The Restless Brood
-					q(42068),	-- The Return of Twilight
-					q(26829),	-- The Stone March
-					q(26709),	-- The Stone Throne
-					q(42933),	-- The Troggs that Fel to Earth
-					q(26831),	-- The Twilight Flight
-					q(42065),	-- The Twilight Master
-					q(27061),	-- The Twilight Overlook
-					qh( 27005),	-- The Twilight Plot
-					qa( 27004),	-- The Twilight Plot
-					q(26326),	-- The Very Earth Beneath Our Feet
-					q(26243),	-- The World Pillar
-					q(26876),	-- The World Pillar Fragment
-					qh( 27059),	-- The Wrong Sequence
-					qa( 27058),	-- The Wrong Sequence
-					q(26832),	-- Therazane's Mercy
-					q(27051),	-- Through Persistence
-					q(26502),	-- Thunder Stones
-					q(26768),	-- To Catch a Dragon
-					q(26484),	-- To Stonehearth's Aid
-					q(26625),	-- Troggzor the Earthinator
-					q(36587),	-- Twilight Gate Tracking
-					q(27100),	-- Twilight Research
-					q(27048),	-- Underground Economy
-					q(26875),	-- Undying Twilight
-					q(26582),	-- Unnatural Causes
-					q(26377),	-- Unsolid Ground
-					q(26426),	-- Violent Gale
-					q(28824),	-- Wayward Child
-					q(26500),	-- We're Surrounded
-					qh( 42932),	-- What the Stonemother Knows
-					qh( 42931),	-- Where the Hammer Falls
-					q(26409),	-- Where's Goldmine?
-					q(26427),	-- Without a Captain or Crew
-					q(26833),	-- Word In Stone
-					q(26583),	-- Wrath of the Fungalmancer					
-					a(q(27727, { -- Hero's Call: Deepholm!
-						a(q(27203, { -- The Maelstrom
-						})),
-					})),
-					h(q(27722, { -- Warchief's Command: Deepholm!
-						h(q(27203, { -- The Maelstrom
-						})),
-					})),
-					n(45042, { -- Thrall
-						q(27123), -- Deepholm, Realm of Earth
-					}),
-					n(43065, { -- Maruut Stonebinder
-						q(26256), -- Bleed the Bloodshaper
-						q(26258), -- Deathwing's Fall
-						q(26245, { -- Gunship Down
-							q(26246), -- Captain's Logs
-							q(26247), -- Diplomacy First
+					ach(4871, {	-- Deep into Deepholm
+						-- NOTE: Criteria are out of order because of how the questline flows
+						crit(2, {	-- The Upper World Pillar Fragment
+							q(27203, {	-- The Maelstrom
+								["qgs"] = {45226,45224},	-- Naraat the Earthspeaker/Farseer Krogar
+								["sourceQuests"] = {27398,27399,27442,27443,27722,27727},
+							}),
+							q(27123, {	-- Deepholm, Realm of Earth
+								["qg"] = 45042,	-- Thrall
+								["sourceQuests"] = {27203},
+								["isBreadcrumb"] = true,
+							}),
+							q(26244, {	--  The Earth Claims All
+								["groups"] = {
+									i(61504),	-- Furyquench Bracers
+									i(61503),	-- Stoneshatter Hauberk
+									i(61502),	-- Deepstone Treads
+								},
+								["qg"] = 43397,	-- Seer Kormo
+								["sourceQuests"] = {27123},
+							}),
+							q(26245, {	--  Gunship Down
+								["qg"] = 43065,	-- Maruut Stonebinder
+								["sourceQuests"] = {27123},
+							}),
+							o(204274, {	-- Captain's Log
+								["groups"] = {
+									q(26246, {	-- Captain's Log
+										["sourceQuests"] = {27123},
+									}),
+								},
+								["model"] = "World\\Goober\\g_booktraplightgood.mdx",
+							}),
+							q(26247, {	-- Diplomacy First
+								["qg"] = 43065,	-- Maruut Stonebinder
+								["sourceQuests"] = {26244,26245,26246},
+							}),
+							q(26248, {	--  All Our Friends Are Dead
+								["groups"] = {
+									i(61501),	-- Incorporeal Sandals
+									i(61497),	-- Skyrend Bracers
+									i(61499),	-- Totem-Caller Hood
+								},
+								["qg"] = 42684,	-- Stormcaller Mylra
+								["sourceQuests"] = {26247},
+							}),
+							q(26250, {	--  On Second Thought, Take One Prisoner
+								["qg"] = 42684,	-- Stormcaller Mylra
+								["sourceQuests"] = {26248},
+							}),
+							q(26254, {	--  Some Spraining to Do
+								["groups"] = {
+									i(61498),	-- Inquisitor's Girdle
+									i(61494),	-- Interrogator's Hood
+									i(61493),	-- Questioning Axe
+								},
+								["qg"] = 42684,	-- Stormcaller Mylra
+								["sourceQuests"] = {26250},
+							}),
+							q(26255, {	--  Return to the Temple of Earth
+								["qg"] = 42684,	-- Stormcaller Mylra
+								["sourceQuests"] = {26254},
+							}),
+							q(26258, {	-- Deathwing's Fall
+								["qg"] = 43065,	-- Maruut Stonebinder
+								["sourceQuests"] = {26255},
+							}),
+							q(26256, {	-- Bleed the Bloodshaper
+								["qg"] = 43065,	-- Maruut Stonebinder
+								["sourceQuests"] = {26258},
+							}),
+							q(26261, {	-- Question the Slaves
+								["groups"] = {
+									i(61488),	-- Bondbreaker Gauntlets
+									i(61487),	-- Rough Stone Carapace
+									i(61489),	-- Lockbreaker Shank
+								},
+								["qg"] = 43065,	-- Maruut Stonebinder
+								["sourceQuests"] = {26256},
+							}),
+							q(26260, {	-- The Forgemaster's Log
+								["qg"] = 43065,	-- Maruut Stonebinder
+								["sourceQuests"] = {26261},
+							}),
+							o(205134, {	-- Forgemaster's Log
+								["groups"] = {
+									q(27007, {	--  Silvermarsh Rendezvous
+									["sourceQuests"] = {26260},
+								}),
+								},
+								["model"] = "World\\Goober\\g_booktraplightgood.mdx",
+							}),
+							q(27010, {	-- Quicksilver Submersion
+								["groups"] = {
+									i(61485),	-- Box-Frame Spaulders
+									i(61479),	-- Ballast-Laden Footpads
+									i(61486),	-- Breathpipe
+								},
+								["qg"] = 43065,	-- Maruut Stonebinder
+								["sourceQuests"] = {27007},
+							}),
+							q(27061, {	-- The Twilight Overlook
+								["qg"] = 43065,	-- Maruut Stonebinder
+								["sourceQuests"] = {27010},
+							}),
+							q(26766, {	--  Big Game, Big Bait
+								["qg"] = 44010,	-- Stormcaller Mylra
+								["sourceQuests"] = {27061},
+							}),
+							q(26768, {	--  To Catch a Dragon
+								["qg"] = 44010,	-- Stormcaller Mylra
+								["sourceQuests"] = {27061},
+							}),
+							q(26771, {	--  Testing the Trap
+								["groups"] = {
+									i(61475),	-- Soulbind Choker
+									i(61476),	-- Trapspring Leggings
+									i(61477),	-- Bait-Stained Drape
+								},
+								["qg"] = 44010,	-- Stormcaller Mylra
+								["sourceQuests"] = {26766,26768},
+							}),
+							q(26857, {	--  Abyssion's Minions
+								["qg"] = 44010,	-- Stormcaller Mylra
+								["sourceQuests"] = {26771},
+							}),
+							q(26861, {	--  Block the Gates
+								["qg"] = 44222,	-- Seer Galekk
+								["sourceQuests"] = {26771},
+							}),
+							q(26876, {	--  The World Pillar Fragment
+								["groups"] = {
+									i(61472),	-- Amulet of Reconstruction
+									i(61473),	-- Stonebinder's Cloak
+									i(61474),	-- Worldbinder Signet
+								},
+								["qg"] = 44010,	-- Stormcaller Mylra
+								["sourceQuests"] = {26857,26861},
+							}),
 						}),
-						q(26828), -- Our Part of the Bargain
-						q(26261), -- Question the Slaves
-						q(27010), -- Quicksilver Submersion
-						q(26260), -- The Forgemaster's Log
-						q(27061), -- The Twilight Overlook
-						q(26326), -- The Very Earth Beneath Our Feet
-					}),  ------ QUESTS PRIOR TO THIS LINE MUST BE DONE FIRST AS IT UNLOCKS REST
---]]					
-					n(42467, { -- Diamant the Patient
-						q(26376,  {  -- Hatred Runs Deep
+						crit(1, {	-- The Middle World Pillar Fragment
+							q(26409, {	--  Where's Goldmine?
+								["qg"] = 42573,	-- Earthcaller Yevaa
+							}),
+							q(26410, {	--  Explosive Bonding Compound
+								["qg"] = 42574,	-- Initiate Goldmine
+								["sourceQuests"] = {26409},
+							}),
+							q(27135, {	--  Something that Burns
+								["qg"] = 42574,	-- Initiate Goldmine
+								["sourceQuests"] = {26409},
+							}),
+							q(26411, {	--  Apply and Flash Dry
+								["groups"] = {
+									i(61471),	-- Wound-Cauterizing Spaulders
+									i(61470),	-- Burning Bind Bracers
+									i(61469),	-- Flashburn Girdle
+								},
+								["qg"] = 42574,	-- Initiate Goldmine
+								["sourceQuests"] = {26410,27135},
+							}),
+							q(26413, {	--  Take Him to the Earthcaller
+								["groups"] = {
+									i(61468),	-- Legs of Ringing Echoes
+									i(61467),	-- Flayer-Crush Boots
+									i(61466),	-- Bell-Ringer's Skullcap
+								},
+								["qg"] = 42574,	-- Initiate Goldmine
+								["sourceQuests"] = {26411},
+							}),
+							q(26484, {	--  To Stonehearth's Aid
+								["qg"] = 42573,	-- Earthcaller Yevaa
+								["sourceQuests"] = {26413},
+							}),
+							q(27931, {	--  The Quaking Fields
+								["qg"] = 43071,	-- Crag Rockcrusher
+								["sourceQuests"] = {26484},
+							}),
+							q(27932, {	--  The Axe of Earthly Sundering
+								["groups"] = {
+									i(61400),	-- Size-Cutting Bracers
+								},
+								["qg"] = 47195,	-- Slate Quicksand
+								["sourceQuests"] = {27931},
+							}),
+							q(27933, {	--  Elemental Ore
+								["qg"] = 47195,	-- Slate Quicksand
+								["sourceQuests"] = {27931},
+							}),
+							q(27934, {	--  One With the Ground
+								["qg"] = 47195,	-- Slate Quicksand
+								["sourceQuests"] = {27931,27932},
+							}),
+							q(27935, {	--  Bring Down the Avalanche
+								["sourceQuests"] = {27934},
+							}),
+							q(27936, {	--  Bring Down the Avalanche
+								["sourceQuests"] = {27934},
+							}),
+							q(26499, {	--  Stonefather's Boon
+								["qg"] = 43071,	-- Crag Rockcrusher
+								["sourceQuests"] = {27935,27936},
+							}),
+							q(26501, {	--  Sealing the Way
+								["groups"] = {
+									i(61464),	-- Rockslide Treads
+									i(61463),	-- Earthswell Belt
+									i(61465),	-- Geomancer's Mace
+								},
+								["qg"] = 43071,	-- Crag Rockcrusher
+								["sourceQuests"] = {26499},
+							}),
+							q(26537, {	--  Shatter Them!
+								["qg"] = 43168,	-- Gravel Longslab
+								["sourceQuests"] = {26501},
+							}),
+							q(26500, {	--  We're Surrounded
+								["qg"] = 43160,	-- Earthbreaker Dolomite
+								["sourceQuests"] = {27935,27936},
+							}),
+							q(26502, {	--  Thunder Stones
+								["qg"] = 43160,	-- Earthbreaker Dolomite
+								["sourceQuests"] = {26500},
+							}),
+							q(26564, {	--  Fixer Upper
+								["groups"] = {
+									i(61462),	-- Gear Detector
+									i(61461),	-- Re-Wound Cogspring
+									i(61460),	-- Catapult Loading Scoop
+								},
+								["qg"] = 43169,	-- Clay Mudaxle
+								["sourceQuests"] = {26502},
+							}),
+							q(26591, {	--  Battlefront Triage
+								["qg"] = 43319,	-- Earthmender Deepvein
+								["sourceQuests"] = {26501,26502},
+							}),
+							q(26625, {	--  Troggzor the Earthinator
+								["groups"] = {
+									i(61459),	-- Earthinating Peasant Leggings
+									i(61458),	-- Helm of Earthination
+									i(61457),	-- Troggzor's Crystalline Plate
+								},
+								["qg"] = 43168,	-- Gravel Longslab
+								["sourceQuests"] = {26537,26564,26591},
+							}),
+							q(27126, {	--  Rush Delivery
+								["qg"] = 43169,	-- Clay Mudaxle
+								["sourceQuests"] = {26625},
+							}),
+							q(26632, {	--  Close Escort
+								["groups"] = {
+									i(61455),	-- Earthen Embrace
+									i(61454),	-- Catapult Loader's Gloves
+									i(61456),	-- Broken Emergency Brake
+								},
+								["qg"] = 45043,	-- Peak Grindstone
+								["sourceQuests"] = {27126},
+							}),
+							q(26755, {	--  Keep Them off the Front
+								["qg"] = 43897,	-- Pyrium Lodestone
+								["sourceQuests"] = {26632},
+							}),
+							q(26762, {	--  Reactivate the Constructs
+								["qg"] = 43897,	-- Pyrium Lodestone
+								["sourceQuests"] = {26755},
+							}),
+							q(26770, {	--  Mystic Masters
+								["groups"] = {
+									i(61453),	-- Gloves of Troggslaying
+									i(61452),	-- Troggbreaker Shoulderpads
+									i(61451),	-- Troggbane Chestguard
+								},
+								["qg"] = 43898,	-- Flint Oremantle
+								["sourceQuests"] = {26755},
+							}),
+							q(26834, {	--  Down Into the Chasm
+								["qg"] = 43897,	-- Pyrium Lodestone
+								["sourceQuests"] = {26762,26770},
+							}),
+							q(26791, {	--  Sprout No More
+								["qg"] = 44143,	-- Slate Quicksand
+								["sourceQuests"] = {26834},
+							}),
+							q(26792, {	--  Fungal Monstrosities
+								["qg"] = 44143,	-- Slate Quicksand
+								["sourceQuests"] = {26834},
+							}),
+							q(26835, {	--  A Slight Problem
+								["qg"] = 44143,	-- Slate Quicksand
+								["sourceQuests"] = {26791,26792},
+							}),
+							q(26836, {	--  Rescue the Stonefather... and Flint
+								["groups"] = {
+									i(61450), -- Shattered Bond Treads
+									i(61449), -- Liberator's Girdle
+									i(61448), -- Oremantle's Favor
+								},
+								["qg"] = 43897,	-- Pyrium Lodestone
+								["sourceQuests"] = {26835},
+							}),
+							q(27937, {	--  The Hero Returns
+								["groups"] = {
+									i(61398), -- Axe of Earthly Sundering
+								},
+								["qg"] = 43897,	-- Pyrium Lodestone
+								["sourceQuests"] = {26836},
+							}),
+							q(27938, {	--  The Middle Fragment
+								["groups"] = {
+									i(61397), -- Pillarbind Waistguard
+									i(61396), -- Leggings of Fragmented Hope
+									i(61395), -- Shoulderpads of Reconstruction
+								},
+								["qg"] = 44204,	-- Stonefather Oremantle
+								["sourceQuests"] = {26837},
+							}),
+						}),
+						crit(3, {	-- The Stone Lords
+						}),
+						crit(4, {	-- Mending the Wound
+						}),
+					}),
+					q(26249, {	--  The Admiral's Cabin
+						["qg"] = 42684,	-- Stormcaller Mylra
+					}),
+					q(26251, {	--  Take No Prisoners
+						["qg"] = 42684,	-- Stormcaller Mylra
+					}),
+					q(26259, {	--  Blood of the Earthwarder
+						["groups"] = {
+							i(61492),	-- Blood-Collector Helm
+							i(61491),	-- Redblood Belt
+							i(61490),	-- Sanguinary Bracers
+						},
+						["qg"] = 43397,	-- Seer Kormo
+					}),
+					q(26312, {	--  Crumbling Defenses
+						["qg"] = 42730,	-- Earthcaller Torunscar
+					}),
+					q(26313, {	--  Core of Our Troubles
+						["qg"] = 42731,	-- Earthmender Norsala
+					}),
+					q(26314, {	--  On Even Ground
+						["qg"] = 42730,	-- Earthcaller Torunscar
+					}),
+					q(26315, {	--  Imposing Confrontation
+						["groups"] = {
+							i(61435),	-- Trustworthy Cowl
+							i(61434),	-- Firm Grips
+							i(61433),	-- Insignia of Diplomacy
+						},
+						["qg"] = 42731,	-- Earthmender Norsala
+					}),
+					q(26326, {	-- The Very Earth Beneath Our Feet
+						["qg"] = 43065,	-- Maruut Stonebinder
+					}),
+					q(26328, {	--  Rocky Relations
+						["qg"] = 42731,	-- Earthmender Norsala
+					}),
+					q(26375, {	--  Loose Stones
+						["qg"] = 42899,	-- Quartz Stonetender
+					}),
+					q(26376, {	-- Hatred Runs Deep
+						["groups"] = {
 							i(61432), -- Bloodcult Handwraps
 							i(61431), -- Giantbutcher's Discarded Spaulders
 							i(61430), -- Stonebound Legplates
-						}),
-						q(26377, { -- Unsolid Ground
-							q(26426, { -- Violet Gale
-								q(26869, { -- Depth of the Depths
-									q(26871,  {  -- A Rock Amongst Many
-										i(61428), -- Helm of the Wormslayer
-										i(61427), -- Gyreworm Waistguard
-									}),
-								}),
+						},
+						["qg"] = 42467,	-- Diamant the Patient
+					}),
+					q(26377, {	--  Unsolid Ground
+						["qg"] = 42467,	-- Diamant the Patient
+					}),
+					q(26426, {	--  Violent Gale
+						["qg"] = 42467,	-- Diamant the Patient
+					}),
+					q(26427, {	--  Without a Captain or Crew
+						["groups"] = {
+							i(61495),	-- Gloves of Idle Hands
+							i(61500),	-- Press Gang Girdle
+							i(61484),	-- Midnight Service Treads
+						},
+						["qg"] = 43082,	-- First Mate Moody
+					}),
+					q(26436, {	--  Entrenched
+						["qg"] = 42467,	-- Diamant the Patient
+					}),
+					q(26437, {	--  Making Things Crystal Clear
+						["qg"] = 42469,	-- Kor the Immovable
+					}),
+					q(26438, {	--  Intervention
+						["qg"] = 42469,	-- Kor the Immovable
+					}),
+					q(26439, {	--  Putting the Pieces Together
+						["qg"] = 43344,	-- Berracite
+					}),
+					q(26440, {	--  Clingy
+						["groups"] = {
+							i(61426),	-- Crystalmuncher Necklace
+							i(61425),	-- Bracers of the Energetic Elemental
+							i(61424),	-- Geodecrack Shoulderguards
+						},
+						["qg"] = 43116,	-- Pebble
+					}),
+					q(26441, {	--  So Big, So Round...
+						["qg"] = 43116,	-- Pebble
+					}),
+					q(26507, {	--  Petrified Delicacies
+						["qg"] = 42469,	-- Kor the Immovable
+					}),
+					q(26575, {	--  Rock Bottom
+						["groups"] = {
+							i(61423),	-- Brightpolish Shield
+							i(61422),	-- Basilisk Eye Wand
+							i(61421),	-- Petrified Stone Bracers
+						},
+						["qg"] = 42469,	-- Kor the Immovable
+					}),
+					q(26576, {	--  Steady Hand
+						["qg"] = 42469,	-- Kor the Immovable
+					}),
+					q(26577, {	--  Rocky Upheaval
+						["qg"] = 42469,	-- Kor the Immovable
+					}),
+					q(26578, {	--  Doomshrooms
+						["qg"] = 42472,	-- Gorsik the Tumultuous
+					}),
+					q(26579, {	--  Gone Soft
+						["groups"] = {
+							i(61417),	-- Spore-Soaked Leggings
+							i(61416),	-- Girdle of Bolete Explosion
+							i(61415),	-- Cloak of Fungal Growth
+						},
+						["qg"] = 42472,	-- Gorsik the Tumultuous
+					}),
+					q(26580, {	--  Familiar Intruders
+						["qg"] = 42472,	-- Gorsik the Tumultuous
+					}),
+					q(26581, {	--  A Head Full of Wind
+						["qg"] = 43395,	-- Windspeaker Lorvarius
+					}),
+					q(26582, {	--  Unnatural Causes
+						["qg"] = 43395,	-- Windspeaker Lorvarius
+					}),
+					q(26583, {	--  Wrath of the Fungalmancer					
+						["groups"] = {
+							i(61413),	-- Mushroom Stompers
+							i(61412),	-- Fungus-Stained Legplates
+							i(61414),	-- Sporeshot
+						},
+						["qg"] = 43442,	-- Ruberick
+					}),
+					q(26584, {	--  Shaken and Stirred					
+						["qg"] = 42472,	-- Gorsik the Tumultuous
+					}),
+					q(26585, {	--  Corruption Destruction
+						["qg"] = 42472,	-- Gorsik the Tumultuous
+					}),
+					q(26656, {	--  Don't. Stop. Moving.
+						["qg"] = 42466,	-- Terrath the Steady
+					}),
+					q(26657, {	--  Hard Falls
+						["qg"] = 42466,	-- Terrath the Steady
+					}),
+					q(26658, {	--  Fragile Values
+						["qg"] = 42466,	-- Terrath the Steady
+					}),
+					q(26659, {	--  Resonating Blow
+						["groups"] = {
+							i(61419),	-- Stonescale Robes
+							i(61418),	-- Terrath's Rocky Spaulders
+							i(61420),	-- Dragonsaw Boneblade
+						},
+						["qg"] = 42466,	-- Terrath the Steady
+					}),
+					q(26709, {	--  The Stone Throne
+						["qg"] = 43792,	-- Therazane
+					}),
+					q(26710, {	--  Lost In The Deeps
+						["qg"] = 44945,	-- Pyrite Stonetender
+					}),
+					q(26750, {	--  At the Stonemother's Call
+						["qg"] = 42472,	-- Gorsik the Tumultuous
+					}),
+					q(26752, {	--  Audience with the Stonemother
+						["groups"] = {
+							i(61409),	-- Therazane's Seal
+							i(61410),	-- Clutch of the Stonemother
+							i(61411),	-- Stonemother's Kiss
+						},
+						["qg"] = 42465,	-- Therazane
+					}),
+					q(26827, {	--  Rallying the Earthen Ring
+						["qg"] = 43809,	-- Earthcaller Torunscar
+					}),
+					q(26828, {	--  Our Part of the Bargain
+						["qg"] = 43065,	-- Maruut Stonebinder
+					}),
+					q(26828, {	-- Our Part of the Bargain
+						["qg"] = 43065,	-- Maruut Stonebinder
+					}),
+					q(26829, {	--  The Stone March
+						["qg"] = 44025,	-- Therazane
+					}),
+					q(26831, {	--  The Twilight Flight
+						["qg"] = 44080,	-- Boden the Imposing
+					}),
+					q(26832, {	--  Therazane's Mercy
+						["groups"] = {
+							i(61408),	-- Lorthuna's Broken Shackles
+							i(61407),	-- Rune-Scribed Gauntlets
+							i(61406),	-- Stonerender Drape
+						},
+						["qg"] = 44025,	-- Therazane
+					}),
+					q(26833, {	--  Word In Stone
+						["qg"] = 44025,	-- Therazane
+					}),
+					q(26869, {	--  Depth of the Depths
+						["qg"] = 42467,	-- Diamant the Patient
+					}),
+					o(204959, {	-- Gigantic Painite Cluster
+						["groups"] = {
+							q(26871, {	-- A Rock Amongst Many
+								["groups"] = {
+									i(61428), -- Helm of the Wormslayer
+									i(61427), -- Gyreworm Waistguard
+								},
 							}),
+						},
+						["model"] = "world\\expansion03\\doodads\\deepholm\\deepholm_cluster.mdx",
+					}),
+					q(26875, {	--  Undying Twilight
+						["qg"] = 43818,	-- Maruut Stonebinder
+					}),
+					q(26971, {	--  The Binding
+						["groups"] = {
+							i(61405),	-- Dimension Spike
+							i(61404),	-- Blacksoul Polearm
+							i(61403),	-- Spire of Defiance
+							i(61402),	-- Riftrent Waraxe
+						},
+						["qg"] = 43835,	-- Earthcaller Torunscar
+					}),
+					q(27046, {	--  Fear of Boring
+						["qg"] = 43805,	-- Felsen the Enduring
+					}),
+					q(27047, {	--  Motes
+						["qg"] = 43805,	-- Felsen the Enduring
+					}),
+					q(27048, {	--  Underground Economy
+						["qg"] = 44968,	-- Ricket
+					}),
+					q(27049, {	--  Soft Rock
+						["qg"] = 43804,	-- Gorsik the Tumultuous
+					}),
+					q(27050, {	--  Fungal Fury
+						["qg"] = 43804,	-- Gorsik the Tumultuous
+					}),
+					q(27051, {	--  Through Persistence
+						["qg"] = 44973,	-- Ruberick
+					}),
+					i(60816, {	-- Maziel's Research
+						q(27100, {	--  Twilight Research
+							["qg"] = 44936,	-- Murkstone Trogg
 						}),
 					}),
---[[					
-					n(42472, { -- Gorsik the Tumultuous
-						q(26580, { -- Familiar Intruders
-							q(26581, { -- A Head Full of Wind
-								q(26582), -- Unnatural Causes
-							}),
-						}),
+					q(27101, {	--  Maziel's Revelation
+						["qg"] = 43397,	-- Seer Kormo
 					}),
---]]					
-					n(44143, { -- Slate Quicksand
-						q(26792), -- Fungal Monstrosities
-						q(26791, { -- Sprout No More
-							q(26835, { -- A Slight Problem
-								q(26836,  {  -- Rescue the Stonefather... and Flint
-									i(61450), -- Shattered Bond Treads
-									i(61449), -- Liberator's Girdle
-									q(27937, { -- The Hero Returns
-										i(61398), -- Axe of Earthly Sundering
-										q(27938, { -- The Middle Fragment
-											i(61397), -- Pillarbind Waistguard
-											i(61396), -- Leggings of Fragmented Hope
-											i(61395), -- Shoulderpads of Reconstruction
-										}),
-									}),
-								}),
-							}),
-						}),
-					}),
-					qg(42684, q(26248,  {  -- All Our Friends Are Dead
-						i(61501),
-						i(61497),
-						i(61499),
-					})),
-					qg(42574, q(26411,  {  -- Apply and Flash Dry
-						i(61471),
-						i(61470),
-						i(61469),
-					})),
-					qg(42465, q(26752,  {  -- Audience with the Stonemother
-						i(61410),
-					})),
-					qg(43397, q(26259,  {  -- Blood of the Earthwarder
-						i(61492),
-						i(61491),
-						i(61490),
-					})),
-					qg(43116, q(26440,  {  -- Clingy
-						i(61425),
-						i(61424),
-					})),
-					qg(45043, q(26632,  {  -- Close Escort
-						i(61455),
-						i(61454),
-						i(61456),
-					})),
-					qg(43397, q(27136,  {  -- Elemental Energy
-						i(61480),
-						i(61496),
-						i(61478),
-					})),
-					qg(44802, qa(27042,  {  -- Fight Fire and Water and Air with...
-						i(61447),
-						i(61446),
-						i(61445),
-					})),
-					qg(44818, qh(27043,  {  -- Fight Fire and Water and Air with...
-						i(61444),
-						i(61443),
-						i(61442),
-					})),
-					qg(43169, q(26564,  {  -- Fixer Upper
-						i(61460),
-					})),
-					qg(42472, q(26579,  {  -- Gone Soft
-						i(61417),
-						i(61416),
-						i(61415),
-					})),
-					qg(42731, q(26315,  {  -- Imposing Confrontation
-						i(61435),
-						i(61434),
-					})),
 					o(205207, {	-- Maziel's Journal
-						q(27102,  {  -- Maziel's Ascendancy
-							i(61482),
-							i(61481),
-							i(61483),
+						q(27102, {	--  Maziel's Ascendancy
+							["groups"] = {
+								i(61482),	-- Rippling Ooze Chestguard
+								i(61481),	-- Mercury Treads
+								i(61483),	-- Quicksilver Crossbow
+							},
 						}),
 					}),
-					qg(43898, q(26770,  {  -- Mystic Masters
-						i(61453),
-						i(61452),
-						i(61451),
-					})),
-					qg(43065, q(26261,  {  -- Question the Slaves
-						i(61488),
-						i(61487),
-						i(61489),
-					})),
-					qg(43065, q(27010,  {  -- Quicksilver Submersion
-						i(61485),
-						i(61479),
-						i(61486),
-					})),
-					qg(42466, q(26659,  {  -- Resonating Blow
-						i(61419),
-						i(61418),
-						i(61420),
-					})),
-					qg(42469, q(26575,  {  -- Rock Bottom
-						i(61423),
-						i(61422),
-						i(61421),
-					})),
-					qg(43071, q(26501,  {  -- Sealing the Way
-						i(61464),
-						i(61463),
-						i(61465),
-					})),
-					qg(42684, q(26254,  {  -- Some Spraining to Do
-						i(61498),
-						i(61494),
-						i(61493),
-					})),
-					qg(42574, q(26413,  {  -- Take Him to the Earthcaller
-						i(61468),
-						i(61467),
-						i(61466),
-					})),
-					qg(44010, q(26771,  {  -- Testing the Trap
-						i(61476),
-						i(61477),
-					})),
-					qg(47195, q(27932,  {  -- The Axe of Earthly Sundering
-						i(61400),
-					})),
-					qg(43835, q(26971,  {  -- The Binding
-						i(61405),
-						i(61404),
-						i(61403),
-						i(61402),
-					})),
-					qg(43397, q(26244,  {  -- The Earth Claims All
-						i(61504),
-						i(61503),
-						i(61502),
-					})),
-					qg(44010, q(26876,  {  -- The World Pillar Fragment
-						i(61473),
-					})),
-					qg(44799, qa(27058,  {  -- The Wrong Sequence
-						i(61439),
-					})),
-					qg(44823, qh(27059,  {  -- The Wrong Sequence
-						i(61436),
-					})),
-					qg(44025, q(26832,  {  -- Therazane's Mercy
-						i(61408),
-						i(61407),
-						i(61406),
-					})),
-					qg(43168, q(26625,  {  -- Troggzor the Earthinator
-						i(61459),
-						i(61458),
-						i(61457),
-					})),
-					qg(43082, q(26427,  {  -- Without a Captain or Crew
-						i(61495),
-						i(61500),
-						i(61484),
-					})),
-					qg(43442, q(26583,  {  -- Wrath of the Fungalmancer
-						i(61413),
-						i(61412),
-						i(61414),
-					})),
+					q(27136, {	--  Elemental Energy
+						["groups"] = {
+							i(61480),	-- Sparklight Robes
+							i(61496),	-- Groundshort Leggings
+							i(61478),	-- Energon Greatmace
+						},
+						["qg"] = 43397,	-- Seer Kormo
+					}),
+					q(28390, {	--  Glop, Son of Glop
+						["qg"] = 44973,	-- Ruberick
+					}),
+					q(28391, {	--  The Restless Brood
+						["qg"] = 43806,	-- Terrath the Steady
+					}),
+					q(28488, {	--  Beneath the Surface
+						["qg"] = 43805,	-- Felsen the Enduring
+					}),
+					q(28824, {	--  Wayward Child
+						["qg"] = 42465,	-- Therazane
+					}),
+					q(28866, {	--  Into the Stonecore
+						["qg"] = 44010,	-- Stormcaller Mylra
+					}),
+					q(28869, {	--  Pebble
+						["qg"] = 42469,	-- Kor the Immovable
+					}),
+					q(29329, {	--  Elemental Bonds: Patience
+						["qg"] = 53738,	-- Aggra
+					}),
+					q(29337, {	--  Into Constant Earth
+						["qg"] = 53652,	-- Aggra
+					}),
+					q(29338, {	--  Into Unrelenting Flame
+						["qg"] = 53738,	-- Aggra
+					}),
+					q(29734, {	--  Deepforge the Elder
+						["qg"] = 55216,	-- Elder Deepforge
+					}),
+					q(29735, {	--  Stonebrand the Elder
+						["qg"] = 55217,	-- Elder Stonebrand
+					}),
+					q(27004, {	--  The Twilight Plot [A]
+						["qg"] = 44799,	-- Explorer Mowi
+					}),
+					q(27006, {	--  Fly Over [A]
+						["qg"] = 44802,	-- Prospector Brewer
+					}),
+					q(27040, {	--  Decryption Made Easy [A]
+						["qg"] = 44799,	-- Explorer Mowi
+					}),
+					q(27042, {	--  Fight Fire and Water and Air with... [A]
+						["groups"] = {
+							i(61447),	-- Wardfire Shoulders
+							i(61446),	-- Kaulslayer Grips
+							i(61445),	-- Helm of Silenced Blathering
+						},
+						["qg"] = 44802,	-- Prospector Brewer
+					}),
+					q(27058, {	--  The Wrong Sequence [A]
+						["groups"] = {
+							i(61439),	-- Gateshattering Hauberk
+							i(61441),	-- Starscraper Signet
+						},
+						["qg"] = 44799,	-- Explorer Mowi
+					}),
+					q(27952, {	--  The Explorers [A]
+						["qg"] = 42573,	-- Earthcaller Yevaa
+					}),
+					q(28292, {	--  That's No Pyramid! [A]
+						["qg"] = 44799,	-- Explorer Mowi
+					}),
+					q(27005, {	--  The Twilight Plot [H]
+						["qg"] = 44823,	-- Examiner Rowe
+					}),
+					q(27008, {	--  Fly Over [H]
+						["qg"] = 44818,	-- Reliquary Jes'ca Darksun
+					}),
+					q(27041, {	--  Decryption Made Easy [H]
+						["qg"] = 44823,	-- Examiner Rowe
+					}),
+					q(27043, {	--  Fight Fire and Water and Air with... [H]
+						["groups"] = {
+							i(61444),	-- Bondshatter Shoulders
+							i(61443),	-- Silencer's Gauntlets
+							i(61442),	-- Tonguecarver Greathelm
+						},
+						["qg"] = 44818,	-- Reliquary Jes'ca Darksun
+					}),
+					q(27059, {	--  The Wrong Sequence [H]
+						["groups"] = {
+							i(61436),	-- Gateshattering Hauberk
+							i(61438),	-- Starscraper Signet
+						},
+						["qg"] = 44823,	-- Examiner Rowe
+					}),
+					q(27953, {	--  The Reliquary [H]
+						["qg"] = 42573,	-- Earthcaller Yevaa
+					}),
+					q(28293, {	--  That's No Pyramid! [H]
+						["qg"] = 44823,	-- Examiner Rowe
+					}),
 				}),	
 				n(-16, { -- Rares
 					n(50062, { -- Aeonaxx <Mate of Aeosera>
