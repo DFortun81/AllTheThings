@@ -35,8 +35,6 @@ _.WorldEvents =
 			}),
 			n(-554, { -- EU Fansite Promotion
 			}),
-			n(-520, { -- Expansion Prelauch Events
-			}),
 			n(-539, { -- Gates of Ahn'Qiraj
 			}),
 			n(-533, { -- Hearthstone Promotion
