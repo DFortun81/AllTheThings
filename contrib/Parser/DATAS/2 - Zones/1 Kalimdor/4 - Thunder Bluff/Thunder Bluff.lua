@@ -952,35 +952,35 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						nlq({	-- Quests (Legacy)
-							qh(2968, {	-- A Future Task
+							un(40, qh(2968, {	-- A Future Task
 								un(34, i(34421)),	-- Cave Crawler's Mail Treads
 								un(34, i(34422)),	-- Tempered Thorium Boots
-							}),
-							qh(5088, {	-- Arikara
+							})),
+							un(40, qh(5088, {	-- Arikara
 								un(34, i(15464)),	-- Brute Hammer
 								un(34, i(15465)),	-- Slingshot Wand
 								un(34, i(15466)),	-- Clink Shield
-							}),
-							qh(1102, {	-- A Vengeful Fate
+							})),
+							un(40, qh(1102, {	-- A Vengeful Fate
 								un(34, i(4197)),	-- Berylline Pads
 								un(34, i(6742)),	-- Stonefist Girdle
 								un(34, i(6725)),	-- Marbled Buckler
-							}),
-							qh(1845, {	-- Brutal Helm
+							})),
+							un(40, qh(1845, {	-- Brutal Helm
 								un(34, i(7130)),	-- Brutal Helm
-							}),
-							qdg(qh(1049, {	-- Compendium of the Fallen
+							})),
+							un(40, qdg(qh(1049, {	-- Compendium of the Fallen
 								un(34, i( 7747)),	-- Vile Protector
 								un(34, i(17508)),	-- Forcestone Buckler
 								un(34, i( 7749)),	-- Omega Orb
-							})),
-							qdg(qh( 914, {	-- Leaders of the Fang
+							}))),
+							un(40, qdg(qh( 914, {	-- Leaders of the Fang
 								un(34, i(6505)),	-- Crescent Staff
 								un(34, i(6504)),	-- Wingblade
-							})),
-							qdg(qh(965, {	-- Serpentbloom
+							}))),
+							un(40, qdg(qh(965, {	-- Serpentbloom
 								un(34, i(10919)),	-- Apothecary Gloves
-							})),
+							}))),
 						}),
 					},
 				}),
