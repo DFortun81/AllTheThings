@@ -2709,16 +2709,15 @@ local function AttachTooltip(self)
 		
 			local owner = self:GetOwner();
 			if owner then
-				if owner.SpellHighlightTexture then
-					return true;
-				end
-			
 				--[[
 				for i,j in pairs(owner) do
 					self:AddDoubleLine(tostring(i), tostring(j));
 				end
 				self:Show();
 				]]--
+				if owner.SpellHighlightTexture then
+					return true;
+				end
 				
 				if GetDataMember("ShowContents") then
 					-- Is this for a Unit?
@@ -2763,8 +2762,20 @@ local function AttachTooltip(self)
 				
 				local itemID = owner.itemID;
 				if itemID then
-					AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForFieldAndSummarize, "itemID", itemID);
-					self:Show();
+					-- Parse the link and get the itemID and bonus ids.
+					local link = select(2, self:GetItem());
+					if link then
+						if itemID == (tonumber(select(2, strsplit(":", link)) or "0") or 0) then
+							AttachTooltipSearchResults(self, link, SearchForItemLink, link);
+							self:Show();
+						else
+							AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForFieldAndSummarize, "itemID", itemID);
+							self:Show();
+						end
+					else
+						AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForFieldAndSummarize, "itemID", itemID);
+						self:Show();
+					end
 				else
 					local link = select(2, self:GetItem());
 					if link then
