@@ -14,6 +14,11 @@ _.WorldEvents =
 					118975, -- Xeritas
 				},
 				["collectible"] = false,
+				["maps"] = {
+					619, -- Stormheim Invasion Scenario
+					865, -- Stormheim Invasion Scenario: Upper Ship Floor
+					866, -- Stormheim Invasion Scenario: Lower Ship Floor
+				},
 				["groups"] = {
 					
 					i(139158), -- Battle Mace of the Niskaran Guard
