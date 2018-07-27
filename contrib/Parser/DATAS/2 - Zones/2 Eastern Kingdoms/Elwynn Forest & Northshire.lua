@@ -1,11 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
---[[
-qa(11242),	-- Free at Last! (LEGACY???)
-Note: This quest seemingly isn't available any longer. Some claim that the NPC still spawns, but doesn't offer any quests.
-]]--
 _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
@@ -707,7 +702,8 @@ _.Zones =
 					["description"] = "|cff66ccffNorthshire Valley is a pristine valley in Elwynn Forest in which both Northshire Abbey and the Northshire Vineyards are located. The Northshire River also flows through it. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.|r",
 				}),	
 			},
-			["lvl"] = 1,	
+			["lvl"] = 1,
+			["maps"] = { 40 }, -- Jasperlode Mine
 			["achievementID"] = 776,
 			["description"] = "|cff66ccffElwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center.|r",				
 		}),	
