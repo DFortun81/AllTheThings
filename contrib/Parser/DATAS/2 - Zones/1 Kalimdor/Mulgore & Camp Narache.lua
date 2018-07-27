@@ -332,10 +332,10 @@ _.Zones =
 					["groups"] = {
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
-						nlq({	-- Quests (Legacy)
+						n(-17, {	-- Quests (Legacy)
 							un(40, qh(765,  {  -- Supervisor Fizsprocket
-								un(34, i(4974)),
-								un(34, i(4964)),
+								un(2, i(4974)),
+								un(2, i(4964)),
 							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
