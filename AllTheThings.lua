@@ -1925,7 +1925,10 @@ local function OpenMiniList(field, id, label)
 						break;
 					end
 				end
-				setmetatable(header, header.achievementID and app.BaseAchievement or app.BaseMap);
+				setmetatable(header,
+					header.classID and app.BaseCharacterClass
+					or header.achievementID and app.BaseAchievement
+					or app.BaseMap);
 				if header.collectible then
 					if header.collected then header.progress = header.progress + 1; end
 					app.MiniListHeader.total = app.MiniListHeader.total + 1;
