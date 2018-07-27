@@ -2670,6 +2670,7 @@ local function AttachTooltip(self)
 			for i,j in pairs(self) do
 				self:AddDoubleLine(tostring(i), tostring(j));
 			end
+			self:Show();
 			]]--
 		
 			local owner = self:GetOwner();
@@ -2678,6 +2679,7 @@ local function AttachTooltip(self)
 				for i,j in pairs(owner) do
 					self:AddDoubleLine(tostring(i), tostring(j));
 				end
+				self:Show();
 				]]--
 				
 				if GetDataMember("ShowContents") then
@@ -2721,8 +2723,18 @@ local function AttachTooltip(self)
 					end
 				end
 				
-				local link = select(2, self:GetItem());
-				if link then AttachTooltipSearchResults(self, link, SearchForItemLink, link); end
+				
+				local itemID = owner.itemID;
+				if itemID then
+					AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForFieldAndSummarize, "itemID", itemID);
+					self:Show();
+				else
+					local link = select(2, self:GetItem());
+					if link then
+						AttachTooltipSearchResults(self, link, SearchForItemLink, link);
+						self:Show();
+					end
+				end
 				
 				local spellID = select(3, self:GetSpell());
 				if spellID and not IsSpellKnown(spellID) then
@@ -2771,12 +2783,18 @@ local function AttachTooltip(self)
 					end
 				end
 				
-				local link = select(2, self:GetItem());
-				if link then AttachTooltipSearchResults(self, link, SearchForItemLink, link); end
-				
-				local spellID = select(3, self:GetSpell());
-				if spellID and not IsSpellKnown(spellID) then
-					AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForFieldAndSummarize, "spellID", spellID);
+				local itemID = self.itemID;
+				if itemID then
+					AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForFieldAndSummarize, "itemID", itemID);
+					self:Show();
+				else
+					local link = select(2, self:GetItem());
+					if link then AttachTooltipSearchResults(self, link, SearchForItemLink, link); end
+					
+					local spellID = select(3, self:GetSpell());
+					if spellID and not IsSpellKnown(spellID) then
+						AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForFieldAndSummarize, "spellID", spellID);
+					end
 				end
 			end
 		end
