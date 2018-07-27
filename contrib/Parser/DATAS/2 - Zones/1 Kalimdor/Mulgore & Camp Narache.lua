@@ -333,10 +333,10 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 						nlq({	-- Quests (Legacy)
-							qh(765,  {  -- Supervisor Fizsprocket
+							un(40, qh(765,  {  -- Supervisor Fizsprocket
 								un(34, i(4974)),
 								un(34, i(4964)),
-							}),
+							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(3068, { 	-- Mazzranache
