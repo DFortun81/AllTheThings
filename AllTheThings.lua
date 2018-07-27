@@ -1815,14 +1815,14 @@ local function OpenMiniList(field, id, label)
 			results = setmetatable({ back = 1 }, { __index = results[1] });
 		else
 			-- A couple of objects matched, let's make a header.
-			local header = { g = {}, baseIndent = -1, back = 1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for " .. (label or field) .. " #" .. id, total = 0, progress = 0 };
+			local header = { g = {}, back = 1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for " .. (label or field) .. " #" .. id, total = 0, progress = 0 };
+			app.MiniListHeader = header;
 			table.wipe(app.HolidayHeader.g);
 			app.HolidayHeader.progress = 0;
 			app.HolidayHeader.total = 0;
 			for i, group in ipairs(results) do
 				header.progress = header.progress + (group.progress or 0);
 				header.total = header.total + (group.total or 0);
-				header.parent = group.parent;
 				
 				-- If this is relative to a holiday, let's do something special
 				if GetRelativeField(group, "npcID", -3) then
@@ -1904,6 +1904,32 @@ local function OpenMiniList(field, id, label)
 				app.HolidayHeader.visible = app.GroupVisibilityFilter(app.HolidayHeader);
 			else
 				app.HolidayHeader.visible = false;
+			end
+			
+			if field == "mapID" then
+				for i, group in ipairs(results) do
+					if group.mapID then
+						header.text = group.text;
+						header.icon = group.icon;
+						for key,value in pairs(group) do
+							if key ~= "g" and key ~= "total" and key ~= "progress" then
+								header[key] = value;
+							end
+						end
+						if group.g then
+							for j,subgroup in ipairs(group.g) do
+								tinsert(header.g, subgroup);
+							end
+						end
+						table.remove(header.g, i);
+						break;
+					end
+				end
+				setmetatable(header, header.achievementID and app.BaseAchievement or app.BaseMap);
+				if header.collectible then
+					if header.collected then header.progress = header.progress + 1; end
+					app.MiniListHeader.total = app.MiniListHeader.total + 1;
+				end
 			end
 			
 			-- Swap out the map data for the header.
@@ -6986,6 +7012,18 @@ function app:RefreshData(lazy, safely, got)
 			app.HolidayHeader.total = 0;
 			UpdateGroups(app.HolidayHeader, app.HolidayHeader.g, 1);
 			app.HolidayHeader.visible = app.GroupVisibilityFilter(app.HolidayHeader);
+			
+			-- If we're dealing with a mini list, we need to handle it differently.
+			if app.MiniListHeader then
+				if app.MiniListHeader.collectible then
+					app.MiniListHeader.progress = app.MiniListHeader.collected and 1 or 0;
+					app.MiniListHeader.total = 1;
+				else
+					app.MiniListHeader.progress = 0;
+					app.MiniListHeader.total = 0;
+				end
+				UpdateGroups(app.MiniListHeader, app.MiniListHeader.g, 1);
+			end
 			
 			-- Forcibly update the windows.
 			app:UpdateWindows(true, got);
