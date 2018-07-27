@@ -1059,7 +1059,7 @@ _.Zones =
 					}),
 					n(-16, {	-- Rares (Legacy)
 						n(1493, {	-- Mok'rash the Cleaver
-							un( 7, i(3985)),	-- Monogrammed Sash
+							un( 2, i(3985)),	-- Monogrammed Sash
 						}),
 					}),
 					--n(  0, {	-- Zone Drop (Legacy)
