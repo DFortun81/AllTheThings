@@ -95,7 +95,10 @@ _.ClassHalls =
 				q(42810),	-- A Final Offer
 				q(43412),	-- A Hero's Weapon
 				q(42733),	-- A Very Special Kind of Fuel
-				q(42682),	-- Additional Accoutrements
+				q(42682, {	-- Additional Accoutrements
+					["qg"] = 98632,  -- Matron Mother Malevolence
+					["sourceQuests"] = { 42683 }, -- Demonic Improvements
+				}),
 				q(45180),	-- An Island of War
 				q(46159),	-- An Urgent Message
 				q(45993),	-- An Urgent Warning
@@ -199,7 +202,10 @@ _.ClassHalls =
 				q(42787),	-- Deal With It Personally
 				q(45339),	-- Defense of the Fel Hammer
 				q(47078),	-- Delivering Lost Knowledge
-				q(42683),	-- Demonic Improvements
+				q(42683, {	-- Demonic Improvements
+					["qg"] = 103761, -- Kor'vas Bloodthorn
+					["sourceQuests"] = { 42681 }, -- Loramus, Is That You?
+				}),
 				q(45173),	-- Desperate Times
 				q(41069),	-- Direct Our Wrath [Kayn]
 				q(41099),	-- Direct Our Wrath [Altruis
