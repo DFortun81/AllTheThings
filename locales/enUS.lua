@@ -161,7 +161,7 @@ AllTheThings.Locales.enUS = {
 		["Cataclysm"] = "CATA",
 		["Mists of Pandaria"] = "MoP",
 		["Warlords of Draenor"] = "WoD",
-		["Battle For Azeroth"] = "BfA",
+		["Battle for Azeroth"] = "BfA",
 		["Player vs Player"] = "PvP",
 		["Raid Finder"] = "LFR",
 		["Looking For Raid"] = "LFR",
@@ -1129,7 +1129,7 @@ AllTheThings.Locales.enUS = {
 		[-523] = "Cataclysm: Elemental Unrest",
 		[-525] = "Warlords of Draenor: Iron Horde Incursion",
 		[-526] = "Legion: Legion Invasion",
-		[-527] = "Battle For Azeroth: War of Thorns",
+		[-527] = "Battle for Azeroth: War of Thorns",
 
 		[-531] = "2008 Spirit of Competition Event",
 		[-532] = "Heroes of the Storm Promotion",
