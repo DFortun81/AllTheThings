@@ -75,6 +75,21 @@ _.Instances =
 									7271, -- Witch Doctor Zum'rah
 								},
 							}),
+							i(9243, {	-- Shriveled Troll Heart
+								["crs"] = {
+									8127,	-- Antu'sul
+									7267, 	-- Chief Ukorz Sandscalp
+									7795, 	-- Hydromancer Velratha
+									7796,	-- Nekrum Gutchewer
+									10080,	-- Sandarr Dunereaver
+									5649, 	-- Sandfury Blood Drinker
+									7247, 	-- Sandfury Soul Eater
+									5650,	-- Sandfury Witch Doctor
+									7271, 	-- Witch Doctor Zum'rah
+									10082,	-- Zerillas
+									7276,	-- Zul'Farrak Dead Hero
+								},
+							}),
 						},
 					}),
 					n(10080, {			-- Sandarr Dunereaver
@@ -99,6 +114,7 @@ _.Instances =
 					}),
 					n( 7272, { 			-- Theka the Martyr
 						dr(0.16, i(142402)),	-- Plans: Light Earthforged Blade
+						i(151456),	-- Theka's Seal of Vigilance
 					}),
 					cr(8127, e(484, { 	-- Antu'sul
 						i(9379, { 	-- Sang'thraze the Deflector
