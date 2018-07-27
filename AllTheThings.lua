@@ -2486,17 +2486,21 @@ local function MergeSearchResults(group)
 			local merged = { g = {}, total = 0, progress = 0, merged = true };
 			for i,g in ipairs(group) do
 				if not g.hideText and (app.RecursiveClassAndRaceFilter(g.parent) or GetDataMember("IgnoreAllFilters")) then
-					if g.collectible then
-						merged.collectible = merged.collectible or g.collectible;
-						merged.collected = merged.collected or g.collected;
-					end
-					if g.trackable then
-						merged.trackable = merged.trackable or g.trackable;
-						merged.saved = merged.saved or g.saved;
-					end
-					if g.g then
-						for j,s in ipairs(g.g) do
-							tinsert(merged.g, s);
+					if g.itemID then
+						tinsert(merged.g, g);
+					else
+						if g.collectible then
+							merged.collectible = merged.collectible or g.collectible;
+							merged.collected = merged.collected or g.collected;
+						end
+						if g.trackable then
+							merged.trackable = merged.trackable or g.trackable;
+							merged.saved = merged.saved or g.saved;
+						end
+						if g.g then
+							for j,s in ipairs(g.g) do
+								tinsert(merged.g, s);
+							end
 						end
 					end
 				end
