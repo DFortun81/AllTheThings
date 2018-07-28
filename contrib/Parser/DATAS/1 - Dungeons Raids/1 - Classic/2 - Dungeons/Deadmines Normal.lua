@@ -85,9 +85,11 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
-						n(48417, { -- Defias Blood Wizard
-							dr(0.01, i(8492)), -- Parrot Cage (Green Wing Macaw)
-							dr(0.01, i(1951)), -- Blackwater Cutlass
+						i(1951, {	-- Blackwater Cutlass
+							["crs"] = {
+								48522,	-- Defias Pirate
+								48521,	-- Defias Squallshaper
+							},
 						}),
 						n(48420, { -- Defias Digger
 							dr(1.90, i(1926)), -- Weighted Sap
@@ -99,12 +101,11 @@ _.Instances =
 							dr(2.00, i(10401)), -- Blackened Defias Gloves
 							dr(2.00, i(10400)), -- Blackened Defias Leggings
 						}),
-						n(48522, {	-- Defias Pirate
-							dr(5.00, i(1951)), -- Blackwater Cutlass
-							dr(3.00, i(8492)), -- Parrot Cage (Green Wing Macaw)
-						}),
-						n(48521, { -- Defias Squallshaper
-							dr(5.00, i(1951)), -- Blackwater Cutlass
+						i(8492, {	-- Parrot Cage
+							["crs"] = {
+								48417,	-- Defias Blood Wizard
+								48522,	-- Defias Pirate
+							},
 						}),
 					}),
 					d(  1, {	-- Normal	

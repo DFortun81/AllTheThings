@@ -247,30 +247,26 @@ _.Zones =
 					})),
 					qg(17303, qa(26444)),	-- Destroy the Legion (No Prereq)
 					qg(17355, qh(26448)),	-- Destroy the Legion (No Prereq)
-					n(11697, {				-- Mannoroc Lasher (No Prereq)
-						i(23798, { 	-- Diabolical Plans
-							qh(26447),	-- Diabolical Plans
-						}),
-						i(23777, { 	-- Diabolical Plans
-							qa(26443),	-- Diabolical Plans
-						}),
-					}),
-					n(6115, {				-- Roaming Felguard (No Prereq)
-						i(23798, { 	-- Diabolical Plans
-							qh(26447),	-- Diabolical Plans
-						}),
-						i(23777, { 	-- Diabolical Plans
-							qa(26443),	-- Diabolical Plans
-						}),
-					}),
-					n(6073, {				-- Searing Infernal (No Prereq)
-						i(23798, { 	-- Diabolical Plans
-							qh(26447),	-- Diabolical Plans
-						}),
-						i(23777, { 	-- Diabolical Plans
-							qa(26443),	-- Diabolical Plans
-						}),
-					}),
+					{
+						["qgs"] = {
+							11697,	-- Mannoroc Lasher
+							 6115,	-- Roaming Felguard
+							 6073,	-- Searing Felguard
+						},
+						["races"] = HORDE_ONLY,
+						["itemID"] = 23798,	-- Diabolical Plans
+						["questID"] = 26447,	-- Diabolical Plans
+					},
+					{
+						["qgs"] = {
+							11697,	-- Mannoroc Lasher
+							 6115,	-- Roaming Felguard
+							 6073,	-- Searing Felguard
+						},
+						["races"] = ALLIANCE_ONLY,
+						["itemID"] = 23777,	-- Diabolical Plans
+						["questID"] = 26443,	-- Diabolical Plans
+					},
 					qg(33760, qh(13797, {	-- Dirty Deeds
 						["groups"] = {
 						},
@@ -579,16 +575,18 @@ _.Zones =
 						},
 						["sourceQuests"] = {13936},
 					})),
-					n(12677, {				-- Shadumbra (No Prereq)
-						i(16304, { 	-- Shadumbra's Head
-							qh(   24),	-- Shadumbra's Head
-						}),
-					}),
-					n(12676, {				-- Sharptalon (No Prereq)
-						i(16305, { 	-- Sharptalon's Claw
-							qh(    2),	-- Sharptalon's Claw
-						}),
-					}),
+					{
+						["qg"] = 12677,	-- Shadumbra
+						["races"] = HORDE_ONLY,
+						["itemID"] = 16304,	-- Shadumbra's Head
+						["questID"] = 24,	-- Shadumbra's Head
+					},
+					{
+						["qg"] = 12676,	-- Sharptalon
+						["races"] = HORDE_ONLY,
+						["itemID"] = 16305,	-- Sharptalon's Claw
+						["questID"] = 2,	-- Sharptalon's Claw
+					},
 					qg(34233, qh(13873, {	-- Sheelah's Last Wish
 						["groups"] = {
 						},
@@ -626,11 +624,12 @@ _.Zones =
 						},
 						["sourceQuests"] = {13617},
 					})),
-					n(12759, {				-- Tideress (No Prereq)
-						i(16408, { 	-- Befouled Water Globe
-							qh( 1918),	-- The Befouled Element
-						}),
-					}),
+					{
+						["qg"] = 12759,	-- Tideress
+						["races"] = HORDE_ONLY,
+						["itemID"] = 16408,	-- Befouled Water Glove
+						["questID"] = 1918,	-- The Befouled Element
+					},
 					qg(3920, qa(26468, {	-- The Branch of Cenarius
 						["groups"] = {
 							i(5820),
@@ -763,11 +762,12 @@ _.Zones =
 						},
 						["sourceQuests"] = {13947},
 					})),
-					n(12678, {				-- Ursangous (No Prereq)
-						i(16303, { 	-- Ursangous' Paw
-							qh(   23),	-- Ursangous' Paw
-						}),
-					}),
+					{
+						["qg"] = 12678,	-- Ursangous
+						["races"] = HORDE_ONLY,
+						["itemID"] = 16303,	-- Ursangous' Paw
+						["questID"] = 23,	-- Ursangous' Paw
+					},
 					qg(3901, qa(26467)),	-- Vile Satyr! Dryads in Danger! (No Prereq)
 					qg(12717, qh( 6641, {	-- Vorsha the Lasher (No Prereq)
 						i(17692), -- Horn Ring
