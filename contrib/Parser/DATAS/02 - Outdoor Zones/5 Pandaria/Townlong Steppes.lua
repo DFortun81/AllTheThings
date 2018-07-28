@@ -33,6 +33,28 @@ _.Zones =
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
 					}),
 				}),
+				ach(7997, {	-- Riches of Pandaria
+					o(213961, {	-- Abandoned Crate of Goods
+						q(31427, {	-- Abandoned Crate of Goods
+							["description"] = "Located in a small tent northwest of Fire Camp Osul at (62.8,34.1)",
+						}),
+					}),
+					o(213844, {	-- Amber Encased Moth
+						q(31426, {	-- Amber Encased Moth
+							["description"] = "Located in the Ambermarsh at (65.8,86.1)",
+						}),
+					}),
+					o(213956, {	-- Fragment of Dread
+						q(31423, {	-- Fragment of Dread
+							["description"] = "Located in the Niuzao Catacombs at (35.8,65.3)",
+						}),
+					}),
+					o(213959, {	-- Hardened Sap of Kri'vess
+						q(31424, {	-- Hardened Sap of Kri'vess
+							["description"] = "Located all around Kri'vess",
+						}),
+					}),
+				}),
 				n(-17, { 	-- Quests
 					q(31895, {	-- Better Off Dread
 						["qg"] = 61584,	-- Sentinel Commander Qipan
