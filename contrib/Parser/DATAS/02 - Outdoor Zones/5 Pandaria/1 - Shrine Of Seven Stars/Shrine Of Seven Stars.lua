@@ -256,8 +256,9 @@ _.Zones =
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
 					}),
 --[[					
-					qa( 33248),	-- Proving Grounds
-					qa( 32683),	-- So You Want to Be a Blacksmith...
+					qa(31390),	-- The Klaxxi
+					qa(33248),	-- Proving Grounds
+					qa(32683),	-- So You Want to Be a Blacksmith...
 --]]
 				}),
 				na(-2, {		-- Vendors

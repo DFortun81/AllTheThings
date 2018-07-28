@@ -164,8 +164,9 @@ _.Zones =
 				}),
 				n(-17,  {  -- Quests
 --[[
-					qh( 32352),	-- A Gathering Storm
-					qh( 31511),	-- A Witness to History
+					qh(31391),	-- The Klaxxi
+					qh(32352),	-- A Gathering Storm
+					qh(31511),	-- A Witness to History
 --]]
 --[[ CHALLENGE MODE DAILIES -- REMOVED?
 					qdg(qh(31528, {	-- A Worthy Challenge: Darkmaster Gandling

@@ -29,330 +29,713 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
---[[
-					q(31178),	-- A Bloody Delight
-					q(31066),	-- A Cry From Darkness
-					q(32616),	-- A Large Pile of Giant Dinosaur Bones
-					q(31268),	-- A Little Brain Work
-					q(32617),	-- A Mountain of Giant Dinosaur Bones
-					q(31730),	-- A Not So Friendly Request
-					q(31210),	-- A Shade of Dread
-					q(31661),	-- A Source of Terrifying Power
-					q(31176),	-- A Strange Appetite
-					q(31008),	-- Amber Arms
-					q(31019),	-- Amber Is Life
-					q(31232),	-- An Ancient Empire
-					q(31676),	-- Ancient Vengeance
-					q(31271),	-- Bad Genes
-					q(31018),	-- Beneath the Heart of Fear
-					q(31847),	-- Better Dead than Dread
-					q(31895),	-- Better Off Dread
-					q(31090),	-- Better With Age
-					q(31681),	-- Better With Age
-					q(31084),	-- Bind the Glamour
-					q(31086),	-- Blood of Ancients
-					q(31069),	-- Bound With Shade
-					q(31073),	-- Bound With Wood
-					q(31238),	-- Brain Food
-					q(31682),	-- By the Sea, Nevermore
-					q(31089),	-- By the Sea, Nevermore
-					q(32024),	-- Candy Bucket
-					q(32023),	-- Candy Bucket
-					q(31107),	-- Citizens of a New Empire
-					q(31108),	-- Concentrated Fear
-					q(31441),	-- Corruption Runs Deep
-					q(31680),	-- Crime and Punishment
-					q(31088),	-- Crime and Punishment
-					q(31109),	-- Culling the Swarm
-					q(31070),	-- Daggers of the Great Ones
-					q(31458),	-- Damage Control
-					q(31216),	-- Dark Skies
-					q(31209),	-- Dark Wings, Dark Things
-					q(31009),	-- Dead Zone
-					q(31237),	-- Debugging the Terrace
-					q(31186),	-- Dog Food
-					q(31000),	-- Dread Space
-					q(31886),	-- Dread Space
-					q(31231),	-- Dreadspinner Extermination
-					q(31439),	-- Dropping Our Signal
-					q(31111),	-- Eradicating the Zan'thik
-					q(31077),	-- Evie Stormstout
-					q(31087),	-- Extending Our Coverage
-					q(31679),	-- Extending Our Coverage
-					q(31465),	-- Extracting Answers
-					q(31001),	-- Falling Down
-					q(31398),	-- Falling to Pieces
-					q(31129),	-- Fate of the Stormstouts
-					q(31076),	-- Fate of the Stormstouts
-					q(31509),	-- Fear Takes Root
-					q(31092),	-- Feed or Be Eaten
-					q(31020),	-- Feeding the Beast
-					q(31080),	-- Fiery Wings
-					q(31177),	-- Fine Dining
-					q(31085),	-- Fires and Fears of Old
-					q(32439),	-- Flowing Pandaren Spirit
-					q(31494),	-- Free From Her Clutches
-					q(31181),	-- Fresh Pots
-					q(31727),	-- Gambling Problem
-					q(32613),	-- Giant Dinosaur Bone
-					q(31957),	-- Grand Master Shu
-					q(33235),	-- Great Turtle Meat
-					q(31082),	-- Great Vessel of Salvation
-					q(31078),	-- Han Stormstout
-					q(33236),	-- Heavy Yak Flank
-					q(32497),	-- Honor the Flame
-					q(31071),	-- I Bring Us Great Shame
-					q(31010),	-- In Her Clutch
-					q(31081),	-- Incantations Fae and Primal
-					q(31272),	-- Infection
-					q(31133),	-- Kor'thik Aggression
-					q(31024),	-- Kunchong Treats
-					q(31598),	-- Kypa'rak's Core
-					q(31022),	-- Kypari Zar
-					q(31021),	-- Living Amber
-					q(32615),	-- Many More Giant Dinosaur Bones
-					q(31354),	-- Mazu's Bounty
-					q(31265),	-- Mazu's Breath
-					q(33234),	-- Meaty Crane Leg
-					q(31183),	-- Meet the Cap'n
-					q(31507),	-- Meltdown
-					q(31267),	-- Mistblade Destruction
-					q(32614),	-- More Giant Dinosaur Bones
-					q(31002),	-- Nope
-					q(31235),	-- Nope Nope Nope
-					q(31660),	-- Not Fit to Swarm
-					q(31184),	-- Old Age and Treachery
-					q(31187),	-- On the Crab
-					q(32030),	-- Once in a Hundred Lifetimes
-					q(31504),	-- Ordnance Disposal
-					q(31782),	-- Overthrone
-					q(31004),	-- Preserved in Amber
-					q(33239),	-- Pristine Firestorm Egg
-					q(31083),	-- Promises of Gold
-					q(31003),	-- Psycho Mantid
-					q(31234),	-- Putting An Eye Out
-					q(31510),	-- Quiet Now
-					q(31808),	-- Rampage Against the Machine
-					q(31189),	-- Reeltime Strategy
-					q(31023),	-- Relics of the Swarm
-					q(31072),	-- Rending Daggers
-					q(31091),	-- Reunited
-					q(31068),	-- Sacred Recipe
-					q(31496),	-- Sampling the Empire's Finest
-					q(31233),	-- Sap Tapping
-					q(31603),	-- Seeds of Fear
-					q(31506),	-- Shackles of Manipulation
-					q(31612),	-- Shadow of the Empire
-					q(31188),	-- Shark Week
-					q(31503),	-- Shortcut to Ruin
-					q(31175),	-- Skeer the Bloodseeker
-					q(31487),	-- Sonic Disruption
-					q(31508),	-- Specimen Request
-					q(31075),	-- Sunset Kings
-					q(31606),	-- The Dissector Wakens
-					q(31007),	-- The Dread Clutches
-					q(31689),	-- The Dreadsworn
-					q(31959),	-- The Empress' Gambit
-					q(31270),	-- The Fight Against Fear
-					q(31067),	-- The Heavens Hum With War
-					q(31079),	-- The Horror Comes A-Rising
-					qa( 31390),	-- The Klaxxi
-					qh( 31391),	-- The Klaxxi
-					q(31006),	-- The Klaxxi Council
-					q(31359),	-- The Kunchong Whisperer
-					q(31190),	-- The Mariner's Revenge
-					q(31599),	-- The Matriarch's Maw
-					q(31211),	-- The Poisoned Mind
-					q(31026),	-- The Root of the Problem
-					q(31269),	-- The Scale-Lord
-					q(31179),	-- The Scent of Blood
-					q(31656),	-- The Threat in the South
-					q(31677),	-- The Warlord's Ashes
-					q(31609),	-- The Wrath of Shek'zeer
-					q(31605),	-- The Zan'thik Dig
-					q(33238),	-- Thick Tiger Haunch
-					q(31208),	-- Venomous Intent
-					q(31505),	-- Vess-Guard Duty
-					q(31005),	-- Wakening Sickness
-					q(31185),	-- Walking Dog
-					q(31502),	-- Wing Clip
-					q(31074),	-- Wood and Shade
-					q(31182),	-- You Otter Know
---]]
-					q(31008,  {  	-- Amber Arms
-						i(88122),
-						i(88121),
-						i(88120),
-						i(88119),
-						i(88118),
-						i(88117),
-						i(88116),
-						i(88115),
-						i(88114),
+					q(31178, {	-- A Bloody Delight
+						["qg"] = 63071,	-- Skeer the Bloodseeker
 					}),
-					q(31069,  {  	-- Bound With Shade
-						i(84080),
-						i(84081),
-						i(84082),
-						i(84083),
-						i(84084),
+					q(31066, {	-- A Cry From Darkness
+						["groups"] = {
+							i(84060),	-- Band of Channeled Whispers
+							i(84061),	-- Ring of Unspeakable Nightmares
+							i(84062),	-- Band of Sudden Dreams
+							i(84063),	-- Seal of the Paragon Wakened
+							i(84064),	-- Clutch-Keeper Seal
+						},
+						["qg"] = 64815,	-- Kor'ik
 					}),
-					q(31465,  {  	-- Extracting Answers
-						i(88140),
-						i(88139),
-						i(88138),
-						i(88137),
-						i(88136),
-						i(88135),
-						i(88134),
-						i(88133),
-						i(88132),
+					q(31268, {	-- A Little Brain Work
+						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["isDaily"] = true,
 					}),
-					q(31398,  {  	-- Falling to Pieces
-						i(84626),
-						i(84627),
-						i(84628),
-						i(84629),
-						i(84630),
-						i(84631),
-						i(84632),
-						i(84633),
-						i(84634),
+					q(31730, {	-- A Not So Friendly Request
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
 					}),
-					q(31085,  {  	-- Fires and Fears of Old
-						i(84019),
-						i(84020),
-						i(84021),
-						i(84022),
-						i(84023),
-						i(84024),
-						i(84025),
-						i(84026),
-						i(84027),
+					q(31210, {	-- A Shade of Dread
+						["qg"] = 62151,	-- Xaril the Poisoned Mind
 					}),
-					q(31181,  {  	-- Fresh Pots
-						i(84001),
-						i(84002),
-						i(84003),
-						i(84004),
-						i(84005),
-						i(84006),
-						i(84007),
-						i(84008),
-						i(84009),
+					q(31176, {	-- A Strange Appetite
+						["qg"] = 63071,	-- Skeer the Bloodseeker
 					}),
-					q(31133,  {  	-- Kor'thik Aggression
-						i(84617),
-						i(84618),
-						i(84619),
-						i(84620),
-						i(84621),
-						i(84622),
-						i(84623),
-						i(84624),
-						i(84625),
+					q(31008, {	-- Amber Arms
+						["groups"] = {
+							i(88122),	-- Motherseed Shoes
+							i(88121),	-- Sapfly Shoes
+							i(88120),	-- Withered Wood Shoes
+							i(88119),	-- Lucidity Shoes
+							i(88118),	-- Dreadspinner Shoes
+							i(88117),	-- Ghost Fox Shoes
+							i(88116),	-- Wind-Reaver Shoes
+							i(88115),	-- Bladesworn Shoes
+							i(88114),	-- Coldbite Shoes
+						},
+						["qg"] = 64599,	-- Ambersmith Zikk
 					}),
-					q(31002,  {  	-- Nope
-						i(84037),
-						i(84038),
-						i(84039),
-						i(84040),
-						i(84041),
-						i(84042),
-						i(84043),
-						i(84044),
-						i(84045),
+					q(31019, {	-- Amber Is Life
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
 					}),
-					q(31782,  {  	-- Overthrone
-						i(84028),
-						i(84029),
-						i(84030),
-						i(84031),
-						i(84032),
-						i(84033),
-						i(84034),
-						i(84035),
-						i(84036),
+					q(31232, {	-- An Ancient Empire
+						["qg"] = 62180,	-- Korven the Prime
+						["isDaily"] = true,
 					}),
-					q(31083,  {  	-- Promises of Gold
-						i(88417), -- Gokk'lok's Shell
+					q(31676, {	-- Ancient Vengeance
+						["qg"] = 62202,	-- Kil'ruk the Wind-Reaver
 					}),
-					q(31072,  {  	-- Rending Daggers
-						i(88131),
-						i(88130),
-						i(88129),
-						i(88128),
-						i(88127),
-						i(88126),
-						i(88125),
-						i(88124),
-						i(88123),
+					q(31271, {	-- Bad Genes
+						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector (2 versions)
+						["isDaily"] = true,
 					}),
-					q(31091,  {  	-- Reunited
-						i(83983),
-						i(83984),
-						i(83985),
-						i(83986),
-						i(83987),
-						i(83988),
-						i(83989),
-						i(83990),
-						i(83991),
+					q(31018, {	-- Beneath the Heart of Fear
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
 					}),
-					q(31606,  {  	-- The Dissector Awakens
-						i(84046),
-						i(84047),
-						i(84048),
-						i(84049),
-						i(84050),
-						i(84051),
-						i(84052),
-						i(84053),
-						i(84054),
+					q(31090, {	-- Better With Age
+						["groups"] = {
+							i(84635),	-- Amberglow Locket
+							i(84636),	-- Amberglow Choker
+							i(84637),	-- Amberglow Necklace
+							i(84638),	-- Amberglow Pendant
+							i(84639),	-- Amberglow Amulet
+						},
+						["qg"] = 65365,	-- Kor'ik
 					}),
-					q(31079,  {  	-- The Horror Comes A-Rising
-						i(84087),
-						i(84088),
-						i(84089),
-						i(84090),
-						i(84091),
-						i(84092),
-						i(84093),
-						i(84094),
-						i(90076),
-						i(90077),
+					q(31681, {	-- Better With Age
+						["groups"] = {
+							i(84635),	-- Amberglow Locket
+							i(84636),	-- Amberglow Choker
+							i(84637),	-- Amberglow Necklace
+							i(84638),	-- Amberglow Pendant
+							i(84639),	-- Amberglow Amulet
+						},
+						["qg"] = 65975,	-- Zer'ik
+						["sourceQuests"] = { 31087 },	-- Extending Our Coverage
 					}),
-					q(31190,  {  	-- The Mariner's Revenge
-						i(83992),
-						i(83993),
-						i(83994),
-						i(83995),
-						i(83996),
-						i(83997),
-						i(83998),
-						i(83999),
-						i(84000),
+					q(31084, {	-- Bind the Glamour
+						["qg"] = 62771,	-- Chief Rikkitun
+						["sourceQuests"] = { 31082 },	-- Great Vessel of Salvation
 					}),
-					q(31179,  {  	-- The Scent of Blood
-						i(84095),
-						i(84096),
-						i(84097),
-						i(84098),
-						i(84099),
-						i(84100),
-						i(90104),
-						i(90105),
+					q(31086, {	-- Blood of Ancients
+						["qg"] = 62666,	-- Sapmaster Vu
 					}),
-					q(31185,  {  	-- Walking Dog
-						i(84010),
-						i(84011),
-						i(84012),
-						i(84013),
-						i(84014),
-						i(84015),
-						i(84016),
-						i(84017),
-						i(84018),
+					q(31069, {	-- Bound With Shade
+						["groups"] = {
+							i(84080),	-- Shadebound Cape
+							i(84081),	-- Vu's Drape
+							i(84082),	-- Sapmaster's Cloak
+							i(84083),	-- Brewgarden Cape
+							i(84084),	-- Sunset Cloak
+						},
+						["qg"] = 62666,	-- Sapmaster Vu
+						["sourceQuests"] = { 31067 },	-- The Heavens Hum With War
+					}),
+					q(31073, {	-- Bound With Wood
+						["qg"] = 62666,	-- Sapmaster Vu
+					}),
+					q(31238, {	-- Brain Food
+						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["isDaily"] = true,
+					}),
+					q(31682, {	-- By the Sea, Nevermore
+						["qg"] = 65975,	-- Zer'ik
+						["sourceQuests"] = {
+							31681,	-- Better With Age
+							31680,	-- Crime and Punishment
+						},
+					}),
+					q(31089, {	-- By the Sea, Nevermore
+						["qg"] = 65365,	-- Kor'ik
+						["sourceQuests"] = {
+							31090,	-- Better With Age
+							31088,	-- Crime and Punishment
+						},
+					}),
+					--q(32024),	-- Candy Bucket
+					--q(32023),	-- Candy Bucket
+					q(31107, {	-- Citizens of a New Empire
+						["qg"] = 62774,	-- Malik the Unscathed
+					}),
+					q(31108, {	-- Concentrated Fear
+						["qg"] = 64599,	-- Ambersmith Zikk
+					}),
+					q(31441, {	-- Corruption Runs Deep
+						["qgs"] = { 64569, 64672 },	-- Hisek the Swarmkeeper (2 versions)
+						["sourceQuests"] = { 31439 },	-- Dropping Our Signal
+					}),
+					q(31680, {	-- Crime and Punishment
+						["qg"] = 65975,	-- Zer'ik
+						["sourceQuests"] = { 31087 },	-- Extending Our Coverage
+					}),
+					q(31088, {	-- Crime and Punishment
+						["qg"] = 65365,	-- Kor'ik
+					}),
+					q(31109, {	-- Culling the Swarm
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["isDaily"] = true,
+					}),
+					q(31070, {	-- Daggers of the Great Ones
+						["qg"] = 62668,	-- Olon
+					}),
+					q(31458, {	-- Damage Control
+						["qgs"] = { 64705, 65454 },	-- Hisek the Swarmkeeper (2 versions)
+					}),
+					q(31216, {	-- Dark Skies
+						["qg"] = 62151,	-- Xaril the Poisoned Mind
+						["isDaily"] = true,
+					}),
+					q(31209, {	-- Dark Wings, Dark Things
+						["qg"] = 62151,	-- Xaril the Poisoned Mind
+					}),
+					q(31009, {	-- Dead Zone
+						["qg"] = 64815,	-- Kor'ik
+					}),
+					q(31237, {	-- Debugging the Terrace
+						["qg"] = 63785,	-- Hisek the Swarmkeeper
+						["isDaily"] = true,
+					}),
+					q(31186, {	-- Dog Food
+						["qg"] = 63955,	-- Dog
+					}),
+					q(31000, {	-- Dread Space
+						["qg"] = 62667,	-- Lya of Ten Songs
+					}),
+					q(31886, {	-- Dread Space
+						["qg"] = 63498,	-- Min the Breeze Rider
+					}),
+					q(31231, {-- Dreadspinner Extermination
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["isDaily"] = true,
+					}),	
+					q(31439, {	-- Dropping Our Signal
+						["qg"] = 64815,	-- Kor'ik
+					}),
+					q(31111, {	-- Eradicating the Zan'thik
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["isDaily"] = true,
+					}),
+					q(31077, {	-- Evie Stormstout
+						["qg"] = 67138,	-- Chen Stormstout
+					}),
+					q(31087, {	-- Extending Our Coverage
+						["qg"] = 64815,	-- Kor'ik
+					}),
+					--q(31679),	-- Extending Our Coverage -- removed as duplicate?
+					q(31465, {	-- Extracting Answers
+						["groups"] = {
+							i(88140),	-- Motherseed Wristwraps
+							i(88139),	-- Sapfly Wristwraps
+							i(88138),	-- Withered Wood Wristwraps
+							i(88137),	-- Lucidity Wristwraps
+							i(88136),	-- Deadspinner Wristwraps
+							i(88135),	-- Ghost Fox Wristwraps
+							i(88134),	-- Wind-Reaver Wristwraps
+							i(88133),	-- Bladesworn Wristwraps
+							i(88132),	-- Coldbite Wristwraps
+						},
+						["qgs"] = { 64705, 65454 },	-- Hisek the Swarmkeeper (2 versions)
+					}),
+					q(31001, {	-- Falling Down
+						["qg"] = 62112,	-- Bowmistress Li
+						["sourceQuests"] = {
+							31895,	-- Better Off Dread
+							49543,	-- Warchief's Command: Dread Wastes!
+							49561,	-- Hero's Call: Dread Wastes!
+						},
+					}),
+					q(31129, {	-- Fate of the Stormstouts
+						["qg"] = 62779,	-- Chen Stormstout
+					}),
+					q(31076, {-- Fate of the Stormstouts
+						["qg"] = 62779,	-- Chen Stormstout
+					}),	
+					q(31509, {	-- Fear Takes Root
+						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector
+						["isDaily"] = true,
+					}),
+					q(31092, {	-- Feed or Be Eaten
+						["qg"] = 64344,	-- Kaz'tik the Manipulator
+					}),
+					q(31020, {	-- Feeding the Beast
+						["qgs"] = { 62232, 63328 },	-- Klaxxi Warrior
+					}),
+					q(31080, {	-- Fiery Wings
+						["qg"] = 62668,	-- Olon
+					}),
+					q(31177, {	-- Fine Dining
+						["qg"] = 63071,	-- Skeer the Bloodseeker
+					}),
+					q(31085, {	-- Fires and Fears of Old
+						["groups"] = {
+							i(84019),	-- Motherseed Treads
+							i(84020),	-- Sapfly Footguards
+							i(84021),	-- Withered Wood Sabatons
+							i(84022),	-- Lucidity Greaves
+							i(84023),	-- Dreadspinner Treads
+							i(84024),	-- Ghost Fox Boots
+							i(84025),	-- Wind-Reaver Sabatons
+							i(84026),	-- Bladesworn Warboots
+							i(84027),	-- Coldbite Warboots
+						},
+						["qg"] = 62667,	-- Lya of Ten Songs
+						["sourceQuests"] = { 31022 }, -- Kypari Zar
+					}),
+					q(32439, {	-- Flowing Pandaren Spirit
+						["qg"] = 68462,	-- FLowing Pandaren Spirit
+						["isDaily"] = true,
+					}),
+					q(31494, {	-- Free From Her Clutches
+						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["isDaily"] = true,
+					}),
+					q(31181, {	-- Fresh Pots
+						["groups"] = {
+							i(84001),	-- Motherseed Robe
+							i(84002),	-- Sapfly Tunic
+							i(84003),	-- Withered Wood Armor
+							i(84004),	-- Lucidity Chestguard
+							i(84005),	-- Dreadspinner Robe
+							i(84006),	-- Ghost Fox Tunic
+							i(84007),	-- Wind-Reaver Armor
+							i(84008),	-- Bladesworn Chestpiece
+							i(84009),	-- Coldbite Chestpiece
+						},
+						["qg"] = 63349,	-- Deck Boss Arie
+						["sourceQuests"] = { 31727 }, -- Gambling Problem
+					}),
+					q(31727, {	-- Gambling Problem
+						["qg"] = 64599,	-- Ambersmith Zikk
+					}),
+					o(214062, {	-- Glowing Amber
+						q(31398, {	-- Falling to Pieces
+							["groups"] = {
+								i(84626),	-- Sunset Satin Robe
+								i(84627),	-- Sunset Hide Robes
+								i(84628),	-- Withered Wood Breastplate
+								i(84629),	-- Sunset Burnished Chestguard
+								i(84630),	-- Sunset Silk Robe
+								i(84631),	-- Sunset Leather Tunic
+								i(84632),	-- Wind-Reaver Breastplate
+								i(84633),	-- Sunset Heavy Chestpiece
+								i(84634),	-- Sunst Armored Chestpiece
+							},
+							["sourceQuests"] = { 31022 }, -- Kypari Zar
+						}),
+					}),
+					q(31082, {	-- Great Vessel of Salvation
+						["qg"] = 62771,	-- Chief Rikkitun
+					}),
+					q(31078, {	-- Han Stormstout
+						["qg"] = 67138,	-- Chen Stormstout
+						["sourceQuests"] = { 31077 }, -- Evie Stormstout
+					}),
+					--q(32497),	-- Honor the Flame
+					q(31071, {	-- I Bring Us Great Shame
+						["qg"] = 62859,	-- Thirsty Missho
+					}),
+					q(31081, {	-- Incantations Fae and Primal
+						["qg"] = 62667,	-- Lya of Ten Songs
+					}),
+					q(31272, {	-- Infection
+						["qg"] = 63785,	-- Hisek the Swarmkeeper
+						["isDaily"] = true,
+					}),
+					o(213973, {	-- Klaxxi Sonic Relay
+						q(31010, {	-- In Her Clutch
+							["sourceQuests"] = { 31009 }, -- Dead Zone
+						}),
+					}),
+					q(31133, {	-- Kor'thik Aggression
+						["groups"] = {
+							i(84617),	-- Sunset Satin Hood
+							i(84618),	-- Sunset Hide Helm
+							i(84619),	-- Withered Wood Cap
+							i(84620),	-- Sunset Burnished Headcover
+							i(84621),	-- Sunset Silk Cowl
+							i(84622),	-- Sunset Leather Helm
+							i(84623),	-- Wind-Reaver Headguard
+							i(84624),	-- Sunset Heavy Helm
+							i(84625),	-- Sunset Armored Helm
+						},
+						["qg"] = 63218,	-- Defender Azzo
+					}),
+					q(31024, {	-- Kunchong Treats
+						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["isDaily"] = true,
+					}),
+					i(87871, {	-- Massive Kyparite Core
+						q(31598, {	-- Kypa'rak's Core
+							["qg"] = 65229,	-- Kypa'rak
+							["isDaily"] = true,
+						}),
+					}),
+					q(31022, {	-- Kypari Zar
+						["qgs"] = { 62232, 63328 },	-- Klaxxi Warrior
+					}),
+					q(31021, {	-- Living Amber
+						["qgs"] = { 62232, 63328 },	-- Klaxxi Warrior
+					}),
+					q(31354, {	-- Mazu's Bounty
+						["qg"] = 63349,	-- Deck Boss Arie
+						["sourceQuests"] = { 31022 }, -- Kypari Zar
+					}),
+					q(31265, {	-- Mazu's Breath
+						["qg"] = 63349,	-- Deck Boss Arie
+					}),
+					q(31183, {	-- Meet the Cap'n
+						["qg"] = 63349,	-- Deck Boss Arie
+					}),
+					q(31507, {	-- Meltdown
+						["qg"] = 62180,	-- Korven the Prime
+						["isDaily"] = true,
+					}),
+					q(31267, {	-- Mistblade Destruction
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["isDaily"] = true,
+					}),
+					q(31002, {	-- Nope
+						["groups"] = {
+							i(84037),	-- Motherseed Gloves
+							i(84038),	-- Sapfly Gloves
+							i(84039),	-- Withered Wood Gauntlets
+							i(84040),	-- Lucidity Gloves
+							i(84041),	-- Dreadspinner Handguards
+							i(84042),	-- Ghost Fox Gloves
+							i(84043),	-- Wind-Reaver Gauntlets
+							i(84044),	-- Bladesown Gauntlets
+							i(84045),	-- Coldbite Gauntlets
+						},
+						["qg"] = 62112,	-- Bowmistress Li
+					}),
+					q(31235, {	-- Nope Nope Nope
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["isDaily"] = true,
+					}),
+					q(31660, {	-- Not Fit to Swarm
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+					}),
+					q(31184, {	-- Old Age and Treachery
+						["qg"] = 63317,	-- Captain "Soggy" Su-Dao
+					}),
+					q(31187, {	-- On the Crab
+						["qg"] = 63349,	-- Deck Boss Arie
+					}),
+					q(32030, {	-- Once in a Hundred Lifetimes
+						["qgs"] = {
+							62667,	-- Lya of Ten Songs
+							64259,	-- Master Angler Ju Lien
+						},
+						["sourceQuests"] = {
+							31398,	-- Falling to Pieces
+							31085,	-- Fires and Fears of Old
+							31354,	-- Mazu's Bounty
+							31026,	-- The Root of the Problem
+						},
+					}),
+					q(31504, {	-- Ordnance Disposal
+						["qg"] = 63785,	-- Hisek the Swarmkeeper
+						["isDaily"] = true,
+					}),
+					q(31782, {	-- Overthrone
+						["groups"] = {
+							i(84028),	-- Motherseed Cord
+							i(84029),	-- Sapfly Belt
+							i(84030),	-- Withered Wood Waistguard
+							i(84031),	-- Lucidity Clasp
+							i(84032),	-- Dreadspinner Cord
+							i(84033),	-- Ghost Fox Belt
+							i(84034),	-- Wind-Reaver Waistguard
+							i(84035),	-- Bladesworn Girdle
+							i(84036),	-- Coldbite Girdle
+						},
+						["qg"] = 65395,	-- Klaxxi'va Ik
+					}),
+					q(31004, {	-- Preserved in Amber
+						["qg"] = 62203,	-- Klaxxi'va Tik
+						["sourceQuests"] = { 31003 }, -- Psycho Mantid
+					}),
+					q(31083, {	-- Promises of Gold
+						["groups"] = {
+							i(88417),	-- Gokk'lok's Shell
+						},
+						["qg"] = 62767,	-- Gokk'lok
+						["description"] = "Found underwater in the north-east of the zone.",
+					}),
+					q(31003, {	-- Psycho Mantid
+						["qg"] = 62166,	-- Marksman Lann
+					}),
+					q(31234, {	-- Putting An Eye Out
+						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector
+						["isDaily"] = true,
+					}),
+					q(31510, {	-- Quiet Now
+						["qg"] = 63785,	-- Hisek the Swarmkeeper
+						["isDaily"] = true,
+					}),
+					q(31808, {-- Rampage Against the Machine
+						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["isDaily"] = true,
+					}),	
+					q(31189, {	-- Reeltime Strategy
+						["qg"] = 63349,	-- Deck Boss Arie
+					}),
+					q(31072, {	-- Rending Daggers
+						["groups"] = {
+							i(88131),	-- Motherseed Handwraps
+							i(88130),	-- Sapfly Handwraps
+							i(88129),	-- Withered Wood Handguards
+							i(88128),	-- Lucidity Handwraps
+							i(88127),	-- Dreadspinner Handwraps
+							i(88126),	-- Ghost Fox Handwraps
+							i(88125),	-- Wind-Reaver Handwraps
+							i(88124),	-- Bladesworn Handwraps
+							i(88123),	-- Coldbite Handwraps
+						},
+						["qg"] = 62667,	-- Lya of Ten Songs
+					}),
+					q(31091, {	-- Reunited
+						["groups"] = {
+							i(83983),	-- Motherseed Hood
+							i(83984),	-- Sapfly Helm
+							i(83985),	-- Withered Wood Helm
+							i(83986),	-- Lucidity Headcover
+							i(83987),	-- Dreadspinner Cowl
+							i(83988),	-- Ghost Fox Helm
+							i(83989),	-- Wind-Reaver Helm
+							i(83990),	-- Bladesworn Helm
+							i(83991),	-- Coldbite Helm
+						},
+						["qg"] = 63876,	-- Kaz'tik the Manipulator
+					}),
+					q(31496, {	-- Sampling the Empire's Finest
+						["qg"] = 62180,	-- Korven the Prime
+						["isDaily"] = true,
+					}),
+					q(31233, {	-- Sap Tapping
+						["qg"] = 62180,	-- Korven the Prime
+						["isDaily"] = true,
+					}),
+					o(212389, {	-- Scroll of Auspice
+						q(31068, {	-- Sacred Recipe
+							["groups"] = {
+								i(84071),	-- Charm of Ten Songs
+								i(84072),	-- Braid of Ten Songs
+								i(84073),	-- Knot of Ten Songs
+							},
+						}),
+					}),
+					q(31603, {	-- Seeds of Fear
+						["qg"] = 64599,	-- Ambersmith Zikk
+					}),
+					o(214562, {	-- Sha-Haunted Crystal
+						q(31661),	-- A Source of Terrifying Power
+					}),
+					q(31506, {	-- Shackles of Manipulation
+						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["isDaily"] = true,
+					}),
+					q(31612, {	-- Shadow of the Empire
+						["groups"] = {
+							i(90859),	-- Seal of the Lucid
+							i(90860),	-- Seal of the Unscathed
+							i(90862),	-- Seal of the Bloodseeker
+							i(90861),	-- Seal of the Windreaver
+							i(90858),	-- Seal of the Prime
+						},
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["sourceQuests"] = { 31609 }, -- The Wrath of Shek'zeer
+					}),
+					q(31188, {	-- Shark Week
+						["qgs"] = {
+							63349,	-- Deck Boss Arie
+							64259,	-- Master Angler Ju Lien
+						},
+					}),
+					q(31503, {	-- Shortcut to Ruin
+						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector (2 versions)
+						["isDaily"] = true,
+					}),
+					q(31175, {	-- Skeer the Bloodseeker
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+					}),
+					q(31487, {	-- Sonic Disruption
+						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["isDaily"] = true,
+					}),
+					q(31508, {	-- Specimen Request
+						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector (2 versions)
+						["isDaily"] = true,
+					}),
+					i(82870, {	-- Strange Relic
+						q(31023),	-- Relics of the Swarm
+					}),
+					q(31075, {	-- Sunset Kings
+						["qg"] = 62666,	-- Sapmaster Vu
+					}),
+					q(31606, {	-- The Dissector Wakens
+						["groups"] = {
+							i(84046),	-- Motherseed Cuffs
+							i(84047),	-- Sapfly Bindings
+							i(84048),	-- Withered Wood Armbands
+							i(84049),	-- Lucidity Bracers
+							i(84050),	-- Dreadspinner Cuffs
+							i(84051),	-- Ghost Fox Armwraps
+							i(84052),	-- Wind-Reaver Wristguards
+							i(84053),	-- Bladesworn Armplates
+							i(84054),	-- Coldbite Bracers
+						},
+						["qg"] = 65253,	-- Rik'kal the Dissector
+						["sourceQuests"] = { 31605 }, -- The Zan'thik Dig
+					}),
+					q(31007, {	-- The Dread Clutches
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+					}),
+					q(31689, {	-- The Dreadsworn
+						["qg"] = 62774,	-- Malik the Unscathed
+					}),
+					q(31959, {	-- The Empress' Gambit
+						["qg"] = 62774,	-- Malik the Unscathed
+					}),
+					q(31270, {	-- The Fight Against Fear
+						["qg"] = 62180,	-- Korven the Prime
+						["isDaily"] = true,
+					}),
+					q(31067, {	-- The Heavens Hum With War
+						["qg"] = 62666,	-- Sapmaster Vu
+						["sourceQuests"] = { 31730 }, -- A Not So Friendly Request
+					}),
+					q(31079, {	-- The Horror Comes A-Rising
+						["groups"] = {
+							i(84087),	-- Kyparitic Staff
+							i(84088),	-- Kyparitic Clawmace
+							i(84089),	-- Axe of the Rikkitun
+							i(84090),	-- Bow of the Rikkitun
+							i(84091),	-- Obelisk of the Rikkitun
+							i(84092),	-- Boggeo's Ritual Axe
+							i(84093),	-- Spiked Edge of the Rikkitun
+							i(84094),	-- Thorns of the Rikkitun
+							i(90076),	-- Boggeo's Thorns
+							i(90077),	-- Oracle's Blade
+						},
+						["qg"] = 62772,	-- Boggeo
+					}),
+					q(31006, {	-- The Klaxxi Council
+						["groups"] = {
+							i(84055),	-- Gurthan Locket
+							i(84056),	-- Council Choker
+							i(84057),	-- Swormborn Necklace
+							i(84058),	-- Kil'ruk's Pendant
+							i(84059),	-- Sacred Stone Amulet
+						},
+						["qg"] = 62202,	-- Kil'ruk the Wind-Reaver
+						["sourceQuests"] = {
+							31676,	-- Ancient Vengeance
+							31005,	-- Wakening Sickness
+						},
+					}),
+					q(31359, {	-- The Kunchong Whisperer
+						["qg"] = 64344,	-- Kaz'tik the Manipulator
+						["sourceQuests"] = { 31091 }, -- Reunited
+					}),
+					q(31190, {	-- The Mariner's Revenge
+						["groups"] = {
+							i(83992),	-- Motherseed Mantle
+							i(83993),	-- Sapfly Spaulders
+							i(83994),	-- Withered Wood Spaulder
+							i(83995),	-- Lucidity Spaulders
+							i(83996),	-- Dreadspinner Amice
+							i(83997),	-- Ghost Fox Spaulders
+							i(83998),	-- Wind-Reaver Spaulder
+							i(83999),	-- Bladesworn Shoulders
+							i(84000),	-- Coldbite Shoulders
+						},
+						["qg"] = 63317,	-- Captain "Soggy" Su-Dao
+					}),
+					i(87878, {	-- Enormous Kunchong Mandibles
+						q(31599, {	-- The Matriarch's Maw
+							["qg"] = 64724,	-- Karanosh
+							["isDaily"] = true,
+						}),
+					}),
+					q(31211, {	-- The Poisoned Mind
+						["groups"] = {
+							i(84065),	-- Krik'thik Band
+							i(84066),	-- Loop of the Poisoned Mind
+							i(84067),	-- Xaril's Ring
+							i(84068),	-- Battletank Seal
+							i(84069),	-- Wingguard Loop
+						},
+						["qg"] = 62151,	-- Xaril the Poisoned Mind
+					}),
+					q(31026, {	-- The Root of the Problem
+						["groups"] = {
+							i(84075),	-- Relic of Kypari Zar
+							i(84076),	-- Sigil of Kypari Zar
+							i(84077),	-- Emblem of Kypari Zar
+							i(84078),	-- Insignia of Kypari Zar
+							i(84079),	-- Badge of Kypari Zar
+						},
+						["qgs"] = { 62232, 63328 },	-- Klaxxi Warrior (2 versions)
+						["sourceQuests"] = { 31022 }, -- Kypari Zar
+					}),
+					q(31269, {	-- The Scale-Lord
+						["qg"] = 62180,	-- Korven the Prime
+						["isDaily"] = true,
+					}),
+					q(31179, {	-- The Scent of Blood
+						["groups"] = {
+							i(84095),	-- Bloodseeker's Axe
+							i(84096),	-- Bloodseeker's Mace
+							i(84097),	-- Shield of the Wakener
+							i(84098),	-- Eye of the Wakener
+							i(84099),	-- Saltscale Dagger
+							i(84100),	-- Jaws of the Wakener
+							i(90104),	-- Wakener's Light
+							i(90105),	-- Chronicle of a Hudnred Wars
+						},
+						["qg"] = 63071,	-- Skeer the Bloodseeker
+					}),
+					i(88715, {	-- Ashes of Warlord Gurthan
+						q(31677, {	-- The Warlord's Ashes
+							["isDaily"] = true,
+						}),
+					}),
+					q(31609, {	-- The Wrath of Shek'zeer
+						["qg"] = 64599,	-- Ambersmith Zikk
+						["sourceQuests"] = { 31959 }, -- The Empress' Gambit
+					}),
+					q(31605, {	-- The Zan'thik Dig
+						["qg"] = 64815,	-- Kor'ik
+					}),
+					q(31208, {	-- Venomous Intent
+						["qg"] = 62151,	-- Xaril the Poisoned Mind
+					}),
+					q(31505, {	-- Vess-Guard Duty
+						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["isDaily"] = true,
+					}),
+					q(31005, {	-- Wakening Sickness
+						["qg"] = 62202,	-- Kil'ruk the Wind-Reaver
+					}),
+					q(31185, {	-- Walking Dog
+						["groups"] = {
+							i(84010),	-- Motherseed Leggings
+							i(84011),	-- Sapfly Legguards
+							i(84012),	-- Withered Wood Kilt
+							i(84013),	-- Lucidity Legplates
+							i(84014),	-- Dreadspinner Trousers
+							i(84015),	-- Ghost Fox Legguards
+							i(84016),	-- Wind-Reaver Leggings
+							i(84017),	-- Bladesworn Legguards
+							i(84018),	-- Coldbite Legguards
+						},
+						["qg"] = 63317,	-- Captain "Soggy" Su-Dao
+					}),
+					q(31502, {	-- Wing Clip
+						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector (2 versions)
+						["isDaily"] = true,
+					}),
+					q(31074, {	-- Wood and Shade
+						["qg"] = 62667,	-- Lya of Ten Songs
+						["sourceQuests"] = { 31072 }, -- Rending Daggers
+					}),
+					q(31182, {	-- You Otter Know
+						["qg"] = 63349,	-- Deck Boss Arie
 					}),
 				}),
 				n(-16, { 	-- Rares

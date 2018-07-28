@@ -35,6 +35,7 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[
+					q(31895),	-- Better Off Dread
 					q(31065),	-- Buried Beneath
 					q(32434),	-- Burning Pandaren Spirit
 					q(32043),	-- Candy Bucket
