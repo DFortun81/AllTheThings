@@ -1215,12 +1215,15 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["classes"] = { 9 },	-- Warlock
 					})),
 					qg(14720, qh(26830, {  -- Traitor's Bait (add'l QGs 39605 and 86832, previous Horde leaders)
-						i(63916),	-- Belt of Mystical Betrayal
-						i(63914),	-- Mindsliced Chestguard
-						i(63913),	-- Twilight-Heart Shoulderplates
-						i(63912),	-- Twilight Mirrorshield
-						i(63915),	-- Vision-Tainted Treads
-						--i(63917),	-- Truthbreaker Shield [Not listed, but awards on completing quest]
+						["g"] = {
+							i(63916),	-- Belt of Mystical Betrayal
+							i(63914),	-- Mindsliced Chestguard
+							i(63913),	-- Twilight-Heart Shoulderplates
+							i(63912),	-- Twilight Mirrorshield
+							i(63915),	-- Vision-Tainted Treads
+							--i(63917),	-- Truthbreaker Shield [Not listed, but awards on completing quest]
+						},
+						["lvl"] = 84,
 					})),					
 					qh( 2753, {	-- Trampled Under Foot
 						["groups"] = {
