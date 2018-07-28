@@ -404,7 +404,7 @@ _.Instances =
 						o(181074, { 		-- Arena Spoils Summonable Read Description
 							["groups"] = {
 								i(21986, { 		-- Banner of Provocation
-									un(11, i(22305)), 		-- Ironweave Mantle 
+									un(2, i(22305)), 		-- Ironweave Mantle 
 									un(11, i(22317)), 		-- Lefty's Brass Knuckle 
 									un(11, i(22318)), 		-- Malgen's Long Bow
 									un(11, i(22330)), 		-- Shroud of Arcane Mastery 

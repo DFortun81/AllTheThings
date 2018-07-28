@@ -117,7 +117,7 @@ _.Instances =
 							i(22057, {	
 								un(11, i(22325)), -- Belt of the Trickster
 								un(11, i(22322)), -- The Jaw Breaker
-								un(11, i(22306)), -- Ironweave Belt
+								un(2, i(22306)), -- Ironweave Belt
 								un(11, i(22319)), -- Tome of Divine Right
 							}),
 						},
