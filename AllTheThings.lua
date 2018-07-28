@@ -2716,7 +2716,13 @@ local function AttachTooltip(self)
 				self:Show();
 				]]--
 				if owner.SpellHighlightTexture then
+					-- Actionbars, don't want that.
 					return true;
+				elseif owner.lastNumMountsNeedingFanfare then
+					-- Collections
+					local db = app:GetWindow("Prime").data;
+					AttachTooltipRawSearchResults(self, { app.DisplayName .. "/" .. db.title }, { db });
+					self:Show();
 				end
 				
 				if GetDataMember("ShowContents") then
