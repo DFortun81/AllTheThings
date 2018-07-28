@@ -2748,7 +2748,8 @@ local function AttachTooltip(self)
 						self:Show();
 					elseif owner.tooltipText == BLIZZARD_STORE then
 						-- Shop
-						AttachTooltipSearchResults(self, "npcID:" .. -36, SearchForFieldAndSummarize, "npcID", -36);
+						local gf = app:GetWindow("Prime").data.g[13];
+						AttachTooltipRawSearchResults(self, {}, { gf });
 						self:Show();
 					elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
 						-- Achievements
@@ -6786,6 +6787,16 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_ITEM_SETS; -- L("GEAR_SETS");
 			db.icon = "Interface\\ICONS\\Achievement_Transmog_Collections";
+			table.insert(g, db);
+		end
+		
+		-- In-Game Store
+		if app.Categories.InGameShop then
+			db = { };
+			db.expanded = false;
+			db.text = BATTLE_PET_SOURCE_10;
+			db.icon = "Interface\\ICONS\\INV_Misc_Map02";
+			db.g = app.Categories.InGameShop;
 			table.insert(g, db);
 		end
 		

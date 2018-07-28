@@ -106,8 +106,6 @@ _.WorldEvents =
 		n(-61, { -- Feast of Winter Veil
 		}),
 	}),
-	n(-36, { -- In-Game Shop
-	}),
 	n(-383, { -- Miscellaneous
 	}),
 	n(-32, { -- Trading Card Game
