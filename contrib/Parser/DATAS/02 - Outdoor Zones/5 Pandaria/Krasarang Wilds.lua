@@ -31,6 +31,13 @@ _.Zones =
 						i(89125),	-- Sack of Pet Supplies
 					}),
 				}),
+				ach(7997, {	-- Riches of Pandaria
+					o(213750, {	-- Saurok Stone Tablet
+						q(31408, {	-- Saurok Stone Tablet
+							["description"] = "Located in a cave at (71,9)",
+						}),
+					}),
+				}),
 				n(-17, { 	-- Quests
 					qh(32169, {	-- A Colossal Victory
 						["isDaily"] = true,
@@ -1262,9 +1269,6 @@ _.Zones =
 					qh( 32020),	-- Candy Bucket
 					q(32036),	-- Candy Bucket
 					q(32499),	-- Honor the Flame
-					
-					Treasures of Pandaria:
-					q(31408), -- Saurok Stone Tablet
 ]]--
 				}),
 				n(-16, { 	-- Rares

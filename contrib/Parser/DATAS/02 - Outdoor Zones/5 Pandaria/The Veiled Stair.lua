@@ -11,6 +11,13 @@ _.Zones =
 					p(708), 	-- Malayan Quillrat
 					p(709), 	-- Malayan Quillrat Pup
 				}),
+				ach(7997, {	-- Riches of Pandaria
+					o(213845, {	-- The Hammer of Folly
+						q(31428, {	-- The Hammer of Folly
+							["description"] = "Located at either (59.8,57.1) or (75.0,76.6)",
+						}),
+					}),
+				}),
 				n(-17, { -- Quests
 --[[				
 					q(32026),	-- Candy Bucket

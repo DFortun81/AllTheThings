@@ -24,6 +24,13 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 				}),
+				ach(7997, {	-- Riches of Pandaria
+					o(213650, {	-- Virmen Treasure Cache
+						q(31405, {	-- Virmen Treasure Cache
+							["description"] = "Located in a cave hidden under some bushes in the mountains of north-east Paoquan Hollow at (23.2,30.8)",
+						}),
+					}),
+				}),
 				n(-17, { 	-- Quests
 					n(-192, {	-- Cooking
 						["groups"] = {
@@ -1323,11 +1330,6 @@ _.Zones =
 							29992,	-- Tenderpaw By Name, Tender Paw By Reputation
 							29985,	-- They Will Be Mist
 						},
-					}),
-					o(213650, { -- Virmen Treasure Cache
-						q(31405, {	-- Virmen Treasure Cache (part of "Treasure of Pandaria" achievement
-							["description"] = "Located in a cave hidden under some bushes in the mountains of north-east Paoquan Hollow at (23.2,30.8)",
-						}),
 					}),
 					q(30317, {	-- Water, Water Everywhere
 						["qg"] = 57298,	-- Farmer Fung (48.3,33.9)

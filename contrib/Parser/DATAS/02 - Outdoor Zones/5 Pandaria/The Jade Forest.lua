@@ -44,6 +44,28 @@ _.Zones =
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
 					}),
 				}),
+				ach(7997, {	-- Riches of Pandaria
+					o(213366, {	-- Ancient Pandaren Tea Pot
+						q(31400, {	-- Ancient Pandaren Tea Pot
+							["description"] = "Located on the north-west coast at (26.2,32.5)",
+						}),
+					}),
+					o(213368, {	-- Lucky Pandaren Coin
+						q(31401, {	-- Lucky Pandaren Coin
+							["description"] = "Located in the wishing fountain at (31.9,27.8)",
+						}),
+					}),
+					o(213748, {	-- Pandaren Ritual Stone
+						q(31404, {	-- Pandaren Ritual Stone
+							["description"] = "Located near the Grookin Hill river delta at (23.5,35.0)",
+						}),
+					}),
+					o(213362, {	-- Ship's Locker
+						q(31396, {	-- Ship's Locker
+							["description"] = "Located underwater in a boat at (50.7,99.9)",
+						}),
+					}),
+				}),
 				n(-17, { 	-- Quests
 					q(29619, {	-- A Courteous Guest
 						["qg"] = 54913, -- Lin Tenderpaw

@@ -32,6 +32,43 @@ _.Zones =
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
 					}),
 				}),
+				ach(7997, {	-- Riches of Pandaria
+					o(214438, {	-- Ancient Mogu Tablet
+						q(31420, {	-- Ancient Mogu Tablet
+							["description"] = "Located behind the east statue in the Path of Conquerors at (64.2,45.2).",
+						}),
+					}),
+					o(213769, {	-- Hozen Treasure Cache
+						q(31414, {	-- Hozen Treasure Cache
+							["description"] = "Located at the back of a cave in Knucklethump Hole at (49.5,59.4)",
+						}),
+					}),
+					o(213774, {	-- Lost Adventurer's Belongings
+						q(31418, {	-- Lost Adventurer's Belongings
+							["description"] = "Located in a tent in south-west Kun-Lai at (36.7,79.8)",
+						}),
+					}),
+					o(213793, {	-- Rikktik's Tiny Chest
+						q(31419, {	-- Rikktik's Tiny Chest
+							["description"] = "Located in Emperor Rikktik's Rest cave at (52.5, 51.5)",
+						}),
+					}),
+					o(213771, {	-- Statue of Xuen
+						q(31416, {	-- Statue of Xuen
+							["description"] = "Located at the bottom of a pool of water in the Zouchin Province at (72,33.9)",
+						}),
+					}),
+					o(213770, {	-- Stolen Sprite Treasure
+						q(31415, {	-- Stolen Sprite Treasure
+							["description"] = "Located in the Howlingwind Cavern near the end of Howlingwind Trail at (41.6,44.1)",
+						}),
+					}),
+					o(213782, {	-- Terracotta Head
+						q(31422, {	-- Terracotta Head
+							["description"] = "Located in the Ruins of Mogujia at (59.2,73)",
+						}),
+					}),
+				}),
 				n(-17, { 	-- Quests
 --[[
 					q(30581),	-- ... and the Pot, Too!
