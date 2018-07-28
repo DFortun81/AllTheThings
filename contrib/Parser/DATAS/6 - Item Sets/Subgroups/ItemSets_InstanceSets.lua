@@ -31,6 +31,7 @@ _.GearSets =
 				12, -- Demon  Hunter
 			},
 			["lvl"] = 110,
+			["itemID"] =  152242, -- Ensemble: Burnished Armor
 		}),
 		n(-3229, { -- Cadaverous Garb [Unobtainable]
 			i(14637), -- Chest
@@ -97,6 +98,7 @@ _.GearSets =
 				9, -- Warlock
 			},
 			["lvl"] = 110,
+			["itemID"] = 151692, -- Ensemble: Chronoscryer's Finery
 		}),
 		n(-3231, { -- Deathbone Guardian [Unobtainable]
 			i(14624), -- Chest
@@ -155,6 +157,7 @@ _.GearSets =
 				7, -- Shaman
 			}, 
 			["lvl"] = 110,
+			["itemID"] = 151694, -- Ensemble: Epoch Sentinel's Mail
 		}),
 		n(-3226, { -- Ironweave Battlesuit [Unobtainable]
 			i(22302), -- Helm
@@ -184,6 +187,7 @@ _.GearSets =
 				9, -- Warlock
 			},
 			["lvl"] = 110,
+			["itemID"] = 152241, -- Ensemble: Light-Woven Triumvirate Regalia
 		}),
 		n(-3228, { -- Necropile Raiment [Unobtainable]
 			i(14633), -- Shoulders
@@ -210,6 +214,7 @@ _.GearSets =
 				12, -- Demon  Hunter
 			},
 			["lvl"] = 110,
+			["itemID"] = 151693, -- Ensemble: Riftscarred Vestments
 		}),
 		gs(1469, { -- Sterling Triumvirate Chainmail
 			["groups"] = {
@@ -228,6 +233,7 @@ _.GearSets =
 				7, -- Shaman
 			}, 
 			["lvl"] = 110,
+			["itemID"] = 152243, -- Ensemble: Sterling Triumvirate Chainmail
 		}),
 		n(-3227, { -- The Postmaster
 			i(13390), -- Helm
@@ -281,6 +287,7 @@ _.GearSets =
 				6, -- Death Knight
 			},
 			["lvl"] = 110,
+			["itemID"] = 152244, -- Ensemble: Venerated Triumvirate Battleplate
 		}),
 		gs(1637, { -- Vestments of the Tidesages
 			["groups"] = {
@@ -298,6 +305,7 @@ _.GearSets =
 				8, -- Mage
 				9, -- Warlock
 			},
+			["lvl"] = 120,
 		}),
 	}),
 };

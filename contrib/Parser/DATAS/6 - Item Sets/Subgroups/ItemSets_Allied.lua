@@ -10,6 +10,7 @@ _.GearSets =
 					i(161050), -- Blackrock Clan Helm
 					i(161051), -- Blackrock Clan Pauldrons
 					i(161052), -- Blackrock Clan Harness
+					i(161328), -- Tabard of the Mag'har Clans [Find out if Specific set]
 					i(161058), -- Blackrock Clan Bracers
 					i(161054), -- Blackrock Clan Gloves
 					i(161055), -- Blackrock Clan Belt
@@ -37,6 +38,7 @@ _.GearSets =
 					i(161059), -- Frostwolf Clan Helm
 					i(161060), -- Frostwolf Clan Pauldrons
 					i(161061), -- Frostwolf Clan Harness
+					i(161328), -- Tabard of the Mag'har Clans [Find out if Specific set]
 					i(161066), -- Frostwolf Clan Bracers
 					i(161062), -- Frostwolf Clan Gloves
 					i(161063), -- Frostwolf Clan Belt
@@ -93,6 +95,7 @@ _.GearSets =
 					i(160992), -- Warsong Clan Helm
 					i(160993), -- Warsong Clan Pauldrons
 					i(160994), -- Warsong Clan Harness
+					i(161328), -- Tabard of the Mag'har Clans [Find out if Specific set]
 					i(161003), -- Warsong Clan Bracers
 					i(160999), -- Warsong Clan Gloves
 					i(161000), -- Warsong Clan Belt
