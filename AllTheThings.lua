@@ -2477,7 +2477,7 @@ local function RecalculateGroupTotals(group)
 		end
 	end
 end
-local function MergeSearchResults(group)
+local function MergeSearchResults(group, itemID)
 	if group then
 		-- If the user has Show Collection Progress turned on.
 		local count = #group or 0;
@@ -2486,8 +2486,15 @@ local function MergeSearchResults(group)
 			local merged = { g = {}, total = 0, progress = 0, merged = true };
 			for i,g in ipairs(group) do
 				if not g.hideText and (app.RecursiveClassAndRaceFilter(g.parent) or GetDataMember("IgnoreAllFilters")) then
-					if g.itemID then
-						tinsert(merged.g, g);
+					if g.itemID and g.itemID ~= itemID then
+						local found = false;
+						for j,subgroup in ipairs(merged.g) do
+							if subgroup.itemID == g.itemID and subgroup.s == g.s then
+								found = true;
+								break;
+							end
+						end
+						if not found then tinsert(merged.g, g); end
 					else
 						if g.collectible then
 							merged.collectible = merged.collectible or g.collectible;
@@ -2550,9 +2557,13 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 			end
 		end
 		
+		local itemID;
+		local link = select(2, self:GetItem());
+		if link then itemID = (tonumber(select(2, strsplit(":", link)) or "0") or 0); end
+		
 		-- Merge the Search Results into a compact list.
 		-- TODO: Potentially optimize this?
-		group = MergeSearchResults(group);
+		group = MergeSearchResults(group, itemID);
 		if group then
 			-- If this is a Merged group, then we need to recalculate totals since it isn't directly from the DB
 			if group.merged then RecalculateGroupTotals(group); end
