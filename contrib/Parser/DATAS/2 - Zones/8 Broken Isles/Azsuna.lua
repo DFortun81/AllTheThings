@@ -1468,12 +1468,21 @@ _.Zones =
 							q(37855), -- The Last of the Last
 							q(37856), -- The Withered
 							q(37859), -- The Consumed
-							q(37858), -- Stellagosa NOTE: This is a breadcrumb quest for 37957
+							q(37858, { -- Stellagosa
+								["qg"] = 89978,	-- Projection of Senegos
+								["isBreadcrumb"] = true,
+							}),
 							q(37957,  {  	-- Runas the Shamed
-								i(132975),
-								i(132974),
-								i(132973),
-								i(132972),
+								["groups"] = {
+									i(132971),	-- Nightfallen's Desperation
+									i(132970),	-- Runas' Nearly Depleted Ley Crystal
+									i(132969),	-- Talisman of the Lost Blue Flight
+									i(132975),	-- Nightfallen Mantle
+									i(132974),	-- Mana-Stalker Shoulderpads
+									i(132973),	-- Whelp Protector's Mantle
+									i(132972),	-- Azure Champion's Pauldrons
+								},
+								["sourceQuests"] = { 37858 }, -- Stellagosa
 							}),
 							q(37857), -- Runas Knows the Way
 							q(37959,  {  	-- The Hunger Returns
@@ -1650,44 +1659,58 @@ _.Zones =
 					}),  
 					n(-38, { 	 -- Professions
 						n(-180, { -- Alchemy
-							q(39390, {	-- A Mysterious Text
-								["qg"] = 243392, -- Alchemy Book
-								["sourceQuests"] = { 39566 }, -- The Search for Knowledge
-							}),
+							["groups"] = {
+								q(39390, {	-- A Mysterious Text
+									["qg"] = 243392, -- Alchemy Book
+									["sourceQuests"] = { 39566 }, -- The Search for Knowledge
+								}),
+							},
+							["requiredSkill"] = 171,
 						}),
 						n(-182, { -- Enchanting
-							q(40169), -- Crossroads Rendezvous
-							q(39923), -- Down to the Core
-							q(39907, {	-- Elven Enchantments
-								["qg"] = 107139, -- Enchantress Ilanya
-								["sourceQuests"] = { 39918 }, -- The Absent Priestess
-							}),
+							["groups"] = {
+								q(40169), -- Crossroads Rendezvous
+								q(39923), -- Down to the Core
+								q(39907, {	-- Elven Enchantments
+									["qg"] = 107139, -- Enchantress Ilanya
+									["sourceQuests"] = { 39918 }, -- The Absent Priestess
+								}),
+							},
+							["requiredSkill"] = 333,
 						}),
 						n(-183, { -- Engineering
-							qp202(qg(102196, q(40876))),	-- 'Locke, Stock and Barrel
+							["groups"] = {
+								q(40876, {	-- 'Locke, Stock and Barrel
+									["qg"] = 102196,	-- Fargo Flintlocke
+								}),
+							},
+							["requiredSkill"] = 202,
 						}),
 						n(-184, { -- Herbalism
-							i(129117, {	-- Aethril Sample
-								q(40013), -- Aethril Sample
-							}),
-							i(129135, {	-- Ragged Strips of Silk
-								q(40015), -- Ragged Strips of Silk
-							}),
-							q(40017, { -- A Slip of the Hand
-								sp(193417),	-- Herbalism Technique: Aethril (Rank 3)
-							}),
-							i(129122, {	-- Felwort Sample
-								q(40040, { --Felwort Sample
-									sp(193430), -- Herbalism Technique: Felwort (Rank 1)
+							["groups"] = {
+								i(129117, {	-- Aethril Sample
+									q(40013), -- Aethril Sample
 								}),
-							}),
+								i(129135, {	-- Ragged Strips of Silk
+									q(40015), -- Ragged Strips of Silk
+								}),
+								q(40017, { -- A Slip of the Hand
+									sp(193417),	-- Herbalism Technique: Aethril (Rank 3)
+								}),
+								i(129122, {	-- Felwort Sample
+									q(40040, { --Felwort Sample
+										sp(193430), -- Herbalism Technique: Felwort (Rank 1)
+									}),
+								}),
+							},
+							["requiredSkill"] = 182,
 						}),
 						n(-185, { -- Inscription
-							q(39938), -- Containing the Demon Within
-							q(39941), -- Control is Key
-						}),
-						n(-193, { -- First Aid
-							q(42255), -- Bloody Note
+							["groups"] = {
+								q(39938), -- Containing the Demon Within
+								q(39941), -- Control is Key
+							},
+							["requiredSkill"] = 773,
 						}),
 					}),
 					ach(10994, { -- Class Campaign
@@ -2313,6 +2336,16 @@ _.Zones =
 						}),
 						--i(139556), 				-- Hunter Legendary Appearance
 					}),
+				}),
+				n(-40, {    -- Legacy
+					["groups"] = {
+						n(-17, {    -- Quests
+							n(-193, { -- First Aid
+								un(40, q(42255)), -- Bloody Note
+							}),
+						}),
+					},
+					["u"] = 12,
 				}),
 				n(-38, { 	-- Profession
 					prof(356, { -- Fishing
