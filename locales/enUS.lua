@@ -1129,7 +1129,7 @@ AllTheThings.Locales.enUS = {
 		[-523] = "Cataclysm: Elemental Unrest",
 		[-525] = "Warlords of Draenor: Iron Horde Incursion",
 		[-526] = "Legion: Legion Invasion",
-		[-527] = "Battle for Azeroth: War of the Thorns",
+		[-527] = "Battle for Azeroth: War of Thorns",
 
 		[-531] = "2008 Spirit of Competition Event",
 		[-532] = "Heroes of the Storm Promotion",

@@ -271,6 +271,13 @@ _.Zones =
 						["qg"] = 61962,	-- Lorewalker Cho
 						["sourceQuests"] = { 32806 },	-- The King and the Council
 					}),
+					
+					--qa(31382),	-- Defense At Niuzao Temple
+					--qh(31383),	-- Defense At Niuzao Temple
+					--qh(32678),	-- Thunder Calls
+					--qa(32679),	-- Thunder Calls
+					--qa(31387),	-- Understanding The Shado-Pan
+					--qh(31389),	-- Understanding The Shado-Pan
 				}),
 				n(-16, { 	-- Rares
 					i(87779, {	-- Ancient Guo-Lai Cache Key

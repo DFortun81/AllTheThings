@@ -259,6 +259,7 @@ _.Zones =
 					qa(31390),	-- The Klaxxi
 					qa(33248),	-- Proving Grounds
 					qa(32683),	-- So You Want to Be a Blacksmith...
+					qa(31386),	-- The Shado-Pan Offensive
 --]]
 				}),
 				na(-2, {		-- Vendors

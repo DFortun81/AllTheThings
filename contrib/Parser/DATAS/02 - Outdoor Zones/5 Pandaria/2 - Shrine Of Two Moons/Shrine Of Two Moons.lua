@@ -164,7 +164,6 @@ _.Zones =
 				}),
 				n(-17,  {  -- Quests
 --[[
-					qh(31391),	-- The Klaxxi
 					qh(32352),	-- A Gathering Storm
 					qh(31511),	-- A Witness to History
 --]]
@@ -304,9 +303,11 @@ _.Zones =
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
 					}),
 --[[					
-					qh( 33249),	-- Proving Grounds
-					qh( 32256),	-- Rise Of An Empire
-					qh( 32726),	-- So You Want to Be a Blacksmith...	
+					qh(33249),	-- Proving Grounds
+					qh(32256),	-- Rise Of An Empire
+					qh(32726),	-- So You Want to Be a Blacksmith...
+					qh(31391),	-- The Klaxxi
+					qh(31388),	-- The Shado-Pan Offensive
 --]]					
 				}),
 				nh(-2, {	-- Vendors
