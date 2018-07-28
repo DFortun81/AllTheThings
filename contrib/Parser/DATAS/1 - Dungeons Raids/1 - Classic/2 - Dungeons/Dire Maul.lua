@@ -100,8 +100,13 @@ _.Instances =
 								i(18314),	-- Ring of Demonic Guile
 							})),
 						},
+						["description"] = "This is the instance on the right side.",
+						["maps"] = {
+							239, -- Warpwood Quarter
+							240, -- The Shrine of Eldretharr
+						},
 					}),
-					n(-13, {	-- Gordok Commons [North - Ogres]
+					n(-13, {	-- Gordok Commons [North - Ogres] [Straight]
 						["groups"] = {
 							n(-17, {	-- Quests
 								o(179485, {	-- A Broken Trap
@@ -239,22 +244,35 @@ _.Instances =
 								["description"] = "Speak with Mizzle after killing King Gordok and he'll spawn the Tribute Chest. The quality of the items within are dependent on how many of the guards you leave alive."
 							}),
 						},
+						["maps"] = {
+							235, -- Gordok Commons
+						},
 					}),
-					n(-14, {	-- Capital Gardens [West - Elves]
+					n(-14, {	-- Capital Gardens [West - Elves] [Left Side]
 						["groups"] = {
 							n(-17, {	-- Quests
-								qg(44991, q( 27112)),	-- The Cursed Remains
-								qg(40032, qa(27131)),	-- The Highborne
-								qg( 7875, qh(27132)),	-- The Highborne
-								qg(14358, q( 27110)),	-- The Madness Within
-								qg(44991, q( 27113)),	-- The Shen'dralar Ancient
-								qg(14358, q( 27111, {	-- The Treasure of Shen'dralar
-									i(65949),	-- Dire Maul
-									i(65973),	-- Fras Siabi's Cigar Cutter
-									i(65924),	-- Shen'dralar Trident
-									i(65994),	-- Staff of Athen'a
-								})),
-								qg(44999, q(27109)),	-- The Warped Defender
+								q(27112,  { -- 	-- The Cursed Remains
+									["qg"] = 44991,
+								}),
+								q(27110, { -- The Madness Within
+									["qg"] = 14358, -- Shen'dralar Ancient
+								}),
+								q(27113, { -- The Shen'dralar Ancient
+									["qg"] = 44991,
+								}),
+								q( 27111, {	-- The Treasure of Shen'dralar
+									["groups"] = {
+										i(65949),	-- Dire Maul
+										i(65973),	-- Fras Siabi's Cigar Cutter
+										i(65924),	-- Shen'dralar Trident
+										i(65994),	-- Staff of Athen'a
+									},
+									["qgs"] = 14358, -- Shen'dralar Ancient
+									["sourceQuests"] = { 27110 }, -- The Madness Wiwthin
+								}),
+								q(27109, { -- The Warped Defender
+									["qg"] = 44999,
+								}),
 							}),
 							n(  0, {	-- Zone Drop
 								i(18339, {	-- Eidolon Cloak
@@ -360,6 +378,12 @@ _.Instances =
 								}),
 							}),
 						},
+						["maps"] = {
+							236, -- Capital Gardens
+							237, -- Court of the Highborne
+							238, -- Prison of Immol'Thar
+						},
+						["description"] = "This is the instance on the left side.",
 					}),
 					n(-40, {	-- Legacy
 						["groups"] = {
@@ -466,15 +490,7 @@ _.Instances =
 					}),
 				},
 				["lvl"] = 31,
-				["maps"] = {
-					235, -- North
-					236, -- West
-					237, -- East
-					238,
-					239,
-					240,
-				},
-				["mapID"] = 234
+				--["mapID"] = 234, -- This is a Dire Maul map, but there are only 6 in the instance.  Unsure of when this one pops -- Lucetia
 			}),
 		},
 		["tierID"] = 1

@@ -47,6 +47,14 @@ _.Zones =
 					qg(66352, qh(31871)),	-- Traitor Gluk
 				}),
 				n(-17, { 	-- Quests
+					qa(27131, {	-- The Highborne
+						["qg"] = 40032,
+						["isBreadcrumb"] = true,
+					}),
+					qh(27132, {	-- The Highborne
+						["qg"] = 7875,
+						["isBreadcrumb"] = true,
+					}),
 --[[				
 					qg(4544, qh(25362)),	-- A Grim Discovery
 					qg(4544, qh(25361)),	-- A New Cloak's Sheen

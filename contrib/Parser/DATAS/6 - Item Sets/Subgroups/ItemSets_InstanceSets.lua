@@ -292,6 +292,7 @@ _.GearSets =
 				i(162593), -- Pantaloons of the Tidesages
 				i(162590), -- Sandals of the Tidesages
 			},
+			["itemID"] = 162598,
 			["classes"] = {
 				5, -- Priest
 				8, -- Mage

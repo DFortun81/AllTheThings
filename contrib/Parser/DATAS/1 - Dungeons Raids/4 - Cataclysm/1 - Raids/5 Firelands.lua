@@ -189,7 +189,6 @@ _.Instances =
 									i(71787),	-- Entrail Disgorger
 									i(71776),	-- Eye of Purification
 									i(71785),	-- Firethorn Mindslicer
-									i(70922),	-- Mandible of Beth'tilac
 									i(71782),	-- Shatterskull Bonecrusher
 								},
 								["crs"] = {
@@ -405,7 +404,6 @@ _.Instances =
 									i(71786),	-- Entrail Disgorger
 									i(71777),	-- Eye of Purification
 									i(71784),	-- Firethorn Mindslicer
-									i(71406),	-- Mandible of Beth'tilac
 									i(71783),	-- Shatterskull Bonecrusher
 								},
 								["crs"] = {
