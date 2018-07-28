@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-dofile("./DATAS/4 - Class Halls/Common/Raid Caches.lua");
+dofile("./DATAS/06 - Legion Class Halls/Common/Raid Caches.lua");
 _.Instances = 
 {
 	{

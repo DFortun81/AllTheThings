@@ -21,8 +21,6 @@ _.Instances =
 								qg(44969, q( 27105)),	-- An Unwelcome Guest
 								qg(44971, q( 27108)),	-- Lethtendris's Web
 								qg(44971, q( 27107)),	-- Pusillin The Thief
-								qg(40032, qa(27129)),	-- Saving Warpwood
-								qg( 7875, qh(27130)),	-- Saving Warpwood
 								qg(44969, q( 27103)),	-- Shards of the Felvine
 							}),
 							n(  0, {	-- Zone Drop

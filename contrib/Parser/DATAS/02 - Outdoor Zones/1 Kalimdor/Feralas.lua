@@ -55,6 +55,14 @@ _.Zones =
 						["qg"] = 7875,
 						["isBreadcrumb"] = true,
 					}),
+					qa(27129, {	-- Saving Warpwood
+						["qg"] = 40032,
+						["isBreadcrumb"] = true,
+					}),
+					qh(27130, {	-- Saving Warpwood
+						["qg"] = 7875,
+						["isBreadcrumb"] = true,
+					}),
 --[[				
 					qg(4544, qh(25362)),	-- A Grim Discovery
 					qg(4544, qh(25361)),	-- A New Cloak's Sheen
