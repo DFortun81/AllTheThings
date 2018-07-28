@@ -1505,7 +1505,9 @@ _.Instances =
 								i(105858),	-- Essence of the Cursed Conqueror
 								i(105857),	-- Essence of the Cursed Protector
 								i(105859),	-- Essence of the Cursed Vanquisher
-								un(2, i(103785)), -- Tusks of Mannoroth [Heroic]
+								i(112935, { -- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
+									["bonusID"] = 449,
+								}),
 								i(112932),	-- Kor'kron Spire of Supremacy
 								i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
 								i(112939),	-- Horned Mace of the Old Ones
@@ -1970,10 +1972,7 @@ _.Instances =
 								i(105867),	-- Essence of the Cursed Conqueror
 								i(105866),	-- Essence of the Cursed Protector
 								i(105868),	-- Essence of the Cursed Vanquisher
-								i(112935, { -- Tusks of Mannoroth [Normal that scales to Mythic]
-									["groups"] = {
-									},
-									["description"] = "|CFFFF0000If you get this piece on normal/heroic recently please report it to the ATT discord along with a screenshot!",
+								i(112935, { -- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
 									["bonusID"] = 450,
 								}),
 								i(104253),	-- Kor'kron Juggernaut (MOUNT!)

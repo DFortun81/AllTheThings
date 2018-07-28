@@ -50,14 +50,17 @@ _.Instances =
 							i(37070),	-- Tundra Wolf Boots
 						}),
 						cr(26668, e(641, {	-- Svala Sorrowgrave
-							i(37037),	-- Ritualistic Arthame
-							i(37038),	-- Brazier Igniter
-							i(37368),	-- Silent Spectator Shoulderpads
-							i(37370),	-- Cuffs of the Trussed Hall
-							i(37040),	-- Svala's Bloodied Shackles
-							i(37043),	-- Tear-Linked Gauntlets
-							i(37369),	-- Sorrowgrave's Breeches
-							i(37367),	-- Echoing Stompers
+							["groups"] = {
+								i(37037),	-- Ritualistic Arthame
+								i(37038),	-- Brazier Igniter
+								i(37368),	-- Silent Spectator Shoulderpads
+								i(37370),	-- Cuffs of the Trussed Hall
+								i(37040),	-- Svala's Bloodied Shackles
+								i(37043),	-- Tear-Linked Gauntlets
+								i(37369),	-- Sorrowgrave's Breeches
+								i(37367),	-- Echoing Stompers
+							},
+							["crs"] = { 29281 }, -- Svala Sorrowgrave useless form
 						})),
 						cr(26687, e(642, {	-- Gortok Palehoof
 							i(37050),	-- Trophy Gatherer

@@ -439,9 +439,7 @@ un(1, i(104646, {  -- Tusks of Mannoroth [Mythic]
 un(1, i(105642, { -- Tusks of Mannoroth [Mythic Warforged]
 	["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
 })),
-i(112935, { -- Tusks of Mannoroth [Mythic Warforged]     ** LUCETIA NOTE: Do Not Remove or mark this item with any unobtainable tag.   Due to the way bonusID's work it kills the sourceID on normal set when it's also used  in Mythic**
-	["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 112935",
-}),
+un(2, i(103785)), -- Tusks of Mannoroth [Heroic]
 
 ------------------------------------------------------------
 --			R E T R I E V I N G 			D A T A 	  --
