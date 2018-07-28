@@ -630,6 +630,15 @@ AllTheThings.Locales.enUS = {
 		[-6013] = "Interface\\Icons\\achievement_reputation_08",				-- Faction
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",				-- Cities
 		[-6015] = "Interface\\Icons\\battleground_strongbox_gold_horde",		-- Rewards
+		
+		
+		[-7777] = "Interface\\Icons\\INV_Misc_Basket_05",
+		[-7778] = "Interface\\Icons\\INV_Misc_Bag_28_Halloween",
+		[-7779] = "Interface\\Icons\\inv_misc_treasurechest03a",
+		[-7780] = "Interface\\Icons\\INV_Misc_Bag_10",
+		[-7781] = "Interface\\Icons\\INV_Box_01",
+		
+		
 		[-9912] = "Interface\\Icons\\ClassIcon_Paladin", 	 					-- Protection / Retribution Spec
 		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance", 				-- Alliance
 		[-9913] = "Interface\\FriendsFrame\\PlusManz-Horde", 					-- Horde
@@ -1392,7 +1401,11 @@ AllTheThings.Locales.enUS = {
 		[-6014] = BUG_CATEGORY4,													-- Cities
 		[-6015] = GUILD_TAB_REWARDS,												-- Rewards
 
-		
+		[-7777] = "Timed Event",
+		[-7778] = "First Chest",
+		[-7779] = "Second Chest",
+		[-7780] = "Third Chest",
+		[-7781] = "Final Chest",
 		
 -- Factions
 		[-9913] = FACTION_HORDE, 													-- Horde
