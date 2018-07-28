@@ -26,32 +26,30 @@ _.Instances =
 								qg(44969, q( 27103)),	-- Shards of the Felvine
 							}),
 							n(  0, {	-- Zone Drop
-								n(13196, {	-- Phase Lasher
-									dr(0.4, i(18295)),	-- Phasing Boots
+								i(18296, {	-- Marksman Bands
+									["crs"] = {
+										11454,	-- Wildspawn Betrayer
+										11455,	-- Wildspawn Felsworn
+										11457,	-- Wildspawn Hellcaller
+										11452,	-- Wildspawn Rogue
+										11451,	-- Wildspawn Satyr
+										11456,	-- Wildspawn Shadowstalker
+									},
 								}),
-								n(11454, {	-- Wildspawn Betrayer
-									dr(0.2, i(18296)),	-- Marksman Bands
-									dr(0.2, i(18298)),	-- Unbridled Leggings
+								i(18295, {	-- Phasing Boots
+									["crs"] = {
+										13196,	-- Phase Lasher
+									},
 								}),
-								n(11455, {	-- Wildspawn Felsworn
-									dr(0.30, i(18298)),	-- Unbridled Leggings
-									dr(0.15, i(18296)),	-- Marksman Bands
-								}),
-								n(11457, {	-- Wildspawn Hellcaller
-									dr(0.14, i(18296)),	-- Marksman Bands
-									dr(0.12, i(18298)),	-- Unbridled Leggings
-								}),
-								n(11452, {	-- Wildspawn Rogue
-									dr(0.17, i(18296)),	-- Marksman Bands
-									dr(0.15, i(18298)),	-- Unbridled Leggings
-								}),
-								n(11451, {	-- Wildspawn Satyr
-									dr(0.60, i(18296)),	-- Marksman Bands
-									dr(0.17, i(18298)),	-- Unbridled Leggings
-								}),
-								n(11456, {	-- Wildspawn Shadowstalker
-									dr(0.2, i(18296)),	-- Marksman Bands
-									dr(0.2, i(18298)),	-- Unbridled Leggings
+								i(18298, {	-- Unbridled Leggings
+									["crs"] = {
+										11454,	-- Wildspawn Betrayer
+										11455,	-- Wildspawn Felsworn
+										11457,	-- Wildspawn Hellcaller
+										11452,	-- Wildspawn Rogue
+										11451,	-- Wildspawn Satyr
+										11456,	-- Wildspawn Shadowstalker
+									},
 								}),
 							}),
 							n( 14354, {			-- Pusillin
@@ -259,42 +257,38 @@ _.Instances =
 								qg(44999, q(27109)),	-- The Warped Defender
 							}),
 							n(  0, {	-- Zone Drop
-								n(11480, {	-- Arcane Aberration
-									dr(0.4, i(18337)),	-- Orphic Bracers
-									dr(0.3, i(18338)),	-- Wand of Arcane Potency
+								i(18339, {	-- Eidolon Cloak
+									["crs"] = {
+										11471,	-- Eldreth Apparition
+										11475,	-- Eldreth Phantasm
+										11473,	-- Eldreth Spectre
+										11472,	-- Eldreth Spirit
+									},
 								}),
-								n(14399, {	-- Arcane Torrent
-									dr(0.3, i(18337)),	-- Orphic Bracers
-									dr(0.3, i(18338)),	-- Wand of Arcane Potency
+								i(18337, {	-- Orphic Bracers
+									["crs"] = {
+										11480,	-- Arcane Aberration
+										14399,	-- Arcane Torrent
+										 6010,	-- Felhound
+										11483,	-- Mana Remnant
+										11484,	-- Residual Monstrosity
+										11737,	-- Stonelash Flayer
+									},
 								}),
-								n(11471, {	-- Eldreth Apparition
-									dr(0.2, i(18339)),	-- Eidolon Cloak
+								i(18344, {	-- Stonebark Gauntlets
+									["crs"] = {
+										11459,	-- Ironbark Protector
+										14303,	-- Petrified Guardian
+										11458,	-- Petrified Treant
+									},
 								}),
-								n(11475, {	-- Eldreth Phantasm
-									dr(0.3, i(18339)),	-- Eidolon Cloak
-								}),
-								n(11473, {	-- Eldreth Spectre
-									dr(0.2, i(18339)),	-- Eidolon Cloak
-								}),
-								n(11472, {	-- Eldreth Spirit
-									dr(0.2, i(18339)),	-- Eidolon Cloak
-								}),
-								n(11459, {	-- Ironbark Protector
-									dr(0.3, i(18344)),	-- Stonebark Gauntlets
-								}),
-								n(11483, {	-- Mana Remnant
-									dr(0.4, i(18338)),	-- Wand of Arcane Potency
-									dr(0.3, i(18337)),	-- Orphic Bracers
-								}),
-								n(14303, {	-- Petrified Guardian
-									dr(0.16, i(18344)),	-- Stonebark Gauntlets
-								}),
-								n(11458, {	-- Petrified Treant
-									dr(0.14, i(18344)),	-- Stonebark Gauntlets
-								}),
-								n(11484, {	-- Residual Monstrosity
-									dr(0.3, i(18338)),	-- Wand of Arcane Potency
-									dr(0.2, i(18337)),	-- Orphic Bracers
+								i(18338, {	-- Wand of Arcane Potency
+									["crs"] = {
+										11480,	-- Arcane Aberration
+										14399,	-- Arcane Torrent
+										11483,	-- Mana Remnant
+										11484,	-- Residual Monstrosity
+									},
 								}),
 							}),
 							cr(11487, e(408, {	-- Magister Kalendris

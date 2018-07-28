@@ -85,26 +85,36 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
+						i(10401, {	-- Blackened Defias Gloves
+							["crs"] = {
+								48421,	-- Defias Overseer
+							},
+						}),
+						i(10400, {	-- Blackened Defias Leggings
+							["crs"] = {
+								48421,	-- Defias Overseer
+							},
+						}),
 						i(1951, {	-- Blackwater Cutlass
 							["crs"] = {
 								48522,	-- Defias Pirate
 								48521,	-- Defias Squallshaper
 							},
 						}),
-						n(48420, { -- Defias Digger
-							dr(1.90, i(1926)), -- Weighted Sap
-						}),
-						n(48419, { -- Defias Miner
-							dr(2.00, i(1930)),	-- Stonemason Cloak
-						}),
-						n(48421, { 	-- Defias Overseer
-							dr(2.00, i(10401)), -- Blackened Defias Gloves
-							dr(2.00, i(10400)), -- Blackened Defias Leggings
-						}),
 						i(8492, {	-- Parrot Cage
 							["crs"] = {
 								48417,	-- Defias Blood Wizard
 								48522,	-- Defias Pirate
+							},
+						}),
+						i(1930, {	-- Stonemason Cloak
+							["crs"] = {
+								48419,	-- Defias Miner
+							},
+						}),
+						i(1926, {	-- Weighted Sap
+							["crs"] = {
+								48420,	-- Defias Digger
 							},
 						}),
 					}),
