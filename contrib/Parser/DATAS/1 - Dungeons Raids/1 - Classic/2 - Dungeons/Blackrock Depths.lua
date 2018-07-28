@@ -185,58 +185,35 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
-						n(8892, {	-- Anvilrage Footman
-							dr(0.04, i(12549)),	-- Braincage
-							dr(0.03, i(12531)),	-- Searing Needle
-							dr(0.02, i(12542)),	-- Funeral Pyre Vestment
-							dr(0.01, i(12527)),	-- Ribsplitter
-							dr(0.01, i(12550)),	-- Runed Golem Shackles
-							dr(0.01, i(12528)),	-- The Judge's Gavel
+						i(12546, {	-- Aristocratic Cuffs
+							["crs"] = {
+								8903,	-- Anvilrage Captain
+								8892,	-- Anvilrage Footman
+								8891,	-- Anvilrage Guardsman
+								8899,	-- Doomforge Dragoon
+								8911,	-- Fireguard Destroyer
+								8905,	-- Warbringer Construct
+							},
 						}),
-						n(8891, {	-- Anvilrage Guardsman
-							dr(0.06, i(12531)),	-- Searing Needle
-							dr(0.02, i(12549)),	-- Braincage
-							dr(0.02, i(12542)),	-- Funeral Pyre Vestment
-							dr(0.02, i(12528)),	-- The Judge's Gavel
-							dr(0.01, i(12535)),	-- Doomforged Straightedge
-							dr(0.01, i(12550)),	-- Runed Golem Shackles
+						i(12555, {	-- Battlechaser's Greaves
+							["crs"] = {
+								8903,	-- Anvilrage Captain
+								8898,	-- Anvilrage Marshal
+								9541,	-- Blackbreath Crony
+								8910,	-- Blazing Fireguard
+								8911,	-- Fireguard Destroyer
+								8908,	-- Molten War Golem
+								8914,	-- Twilight Bodyguard
+								8905,	-- Warbringer Construct
+								8907,	-- Wrath Hammer Construct
+							},
 						}),
-						n(8894, {	-- Anvilrage Medic
-							dr(0.02, i(12542)),	-- Funeral Pyre Vestment
-							dr(0.02, i(12531)),	-- Searing Needle
-							dr(0.02, i(12528)),	-- The Judge's Gavel
-							dr(0.01, i(12549)),	-- Braincage
-							dr(0.01, i(12527)),	-- Ribsplitter
-							dr(0.01, i(12550)),	-- Runed Golem Shackles
-						}),
-						n(8895,	{	-- Anvilrage Officer
-							dr(0.03, i(12542)),	-- Funeral Pyre Vestment
-							dr(0.02, i(12531)),	-- Searing Needle
-							dr(0.02, i(12528)),	-- The Judge's Gavel
-							dr(0.01, i(12549)),	-- Braincage
-							dr(0.01, i(12527)),	-- Ribsplitter
-							dr(0.01, i(12550)),	-- Runed Golem Shackles
-						}),
-						n(8893, {	-- Anvilrage Soldier
-							dr(0.02, i(12528)),	-- The Judge's Gavel
-							dr(0.01, i(12549)),	-- Braincage
-							dr(0.01, i(12542)),	-- Funeral Pyre Vestment
-							dr(0.01, i(12527)),	-- Ribsplitter
-							dr(0.01, i(12550)),	-- Runed Golem Shackles
-							dr(0.01, i(12531)),	-- Searing Needle
-						}),
-						o(173232, {	-- Blacksmithing Plans [Placing at the beginning since it's in both sections]
+						o(173232, {	-- Blacksmithing Plans
 							["groups"] = {
 								i(11614, { 	-- Plans: Dark Iron Mail
-									["groups"] = {	
-										i(11606),	-- Dark Iron Plate
-									},
 									["description"] = "\n|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables.  It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it.  This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room.  When you walk into the room it will be in the back left corner where in between barrels.  There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r.  Once you enter the room you will continue straight until you see the ramp.  Instead of going down the ramp you will jump off the ledge to the right of the ramp.  After landing on the ground you will see the plans located here.\n",
 								}),
 								i(11615, { 	-- Plans: Dark Iron Shoulders
-									["groups"] = {	
-										i(11605),	-- Dark Iron Shoulders
-									},
 									["description"] = "\n|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room.  They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room.  When you come across the first split into two rooms you will enter the room on the left.  They will be located on the seat behind the bench which is located next to the 3 red jugs.\n",		
 								}),
 							},
@@ -245,160 +222,162 @@ _.Instances =
 							["model"] = "World\\Khazmodan\\Uldaman\\PassiveDoodads\\Scrolls\\UldamanScroll03.mdx",
 							["modelScale"] = 2.30,
 						}),
-						n(8910, { 	-- Blazing Fireguard
-							dr(0.02, i(12549)),	-- Braincage
-							dr(0.02, i(12527)),	-- Ribsplitter
-							dr(0.02, i(12531)),	-- Searing Needle
-							dr(0.02, i(12528)),	-- The Judge's Gavel
-							dr(0.01, i(12546)),	-- Aristocratic Cuffs
-							dr(0.01, i(12552)),	-- Blisterbane Wrap
-							dr(0.01, i(12535)),	-- Doomforged Straightedge
-							dr(0.01, i(12542)),	-- Funeral Pyre Vestment
-							dr(0.01, i(12550)),	-- Runed Golem Shackles
+						i(12552, {	-- Blisterbane Wrap
+							["crs"] = {
+								8898,	-- Anvilrage Marshal
+								8910,	-- Blazing Fireguard
+								8899,	-- Doomforge Dragoon
+								8908,	-- Molten War Golem
+							},
 						}),
-						n(9445, {	-- Dark Guard
-							dr(0.02, i(12550)),	-- Runed Golem Shackles
+						i(12549, {	-- Braincage
+							["crs"] = {
+								8892,	-- Anvilrage Footman
+								8898,	-- Anvilrage Marshal
+								8895,	-- Anvilrage Officer
+								8890,	-- Anvilrage Warden
+								8899,	-- Doomforge Dragoon
+								8911,	-- Fireguard Destroyer
+								8906,	-- Ragereaver Golem
+								8905,	-- Warbringer Construct
+							},
 						}),
-						n(8909, {	-- Fireguard
-							dr(0.04, i(12550)),	-- Runed Golem Shackles
-							dr(0.02, i(12542)),	-- Funeral Pyre Vestment
-							dr(0.01, i(12549)),	-- Braincage
-							dr(0.01, i(12527)),	-- Ribsplitter
-							dr(0.01, i(12531)),	-- Searing Needle
-							dr(0.01, i(12528)),	-- The Judge's Gavel
+						i(12535, {	-- Doomforged Straightedge
+							["crs"] = {
+								8903,	-- Anvilrage Captain
+								8894,	-- Anvilrage Medic
+								9541,	-- Blackbreath Crony
+								8910,	-- Blazing Fireguard
+								8899,	-- Doomforge Dragoon
+								8911,	-- Fireguard Destroyer
+								8908,	-- Molten War Golem
+								8914,	-- Twilight Bodyguard
+								8907,	-- Wrath Hammer Construct
+							},
 						}),
-						n(8914, {	-- Twilight Bodyguard
-							dr(0.03, i(12531)),	-- Searing Needle
-							dr(0.03, i(12528)),	-- The Judge's Gavel
-							dr(0.02, i(12542)),	-- Funeral Pyre Vestment
-							dr(0.02, i(12527)),	-- Ribsplitter
-							dr(0.02, i(12550)),	-- Runed Golem Shackles
-							dr(0.01, i(12555)),	-- Battlechaser's Greaves
-							dr(0.01, i(12549)),	-- Braincage
-							dr(0.01, i(12535)),	-- Doomforged Straightedge
+						i(12542, {	-- Funeral Pyre Vestment
+							["crs"] = {
+								8892,	-- Anvilrage Footman
+								8891,	-- Anvilrage Guardsman
+								8898,	-- Anvilrage Marshal
+								8895,	-- Anvilrage Officer
+								8889,	-- Anvilrage Overseer
+								8890,	-- Anvilrage Warden
+								8910,	-- Blazing Fireguard
+								8899,	-- Doomforge Dragoon
+								8909,	-- Fireguard
+								8911,	-- Fireguard Destroyer
+								9554,	-- Hammered Patron
+								8908,	-- Molten War Golem
+								8914,	-- Twilight Bodyguard
+								8905,	-- Warbringer Construct
+							},
 						}),
-						n(8905,	{ 	-- Warbringer Construct
-							dr(0.04, i(12542)),	-- Funeral Pyre Vestment
-							dr(0.02, i(12531)),	-- Searing Needle
-							dr(0.02, i(12528)),	-- The Judge's Gavel
-							dr(0.01, i(12546)),	-- Aristocratic Cuffs
-							dr(0.01, i(12555)),	-- Battlechaser's Greaves
-							dr(0.01, i(12549)),	-- Braincage
-							dr(0.01, i(12527)),	-- Ribsplitter
-							dr(0.01, i(12550)),	-- Runed Golem Shackles
+						i(12547, {	-- Mar Alom's Grip
+							["crs"] = {
+								8899,	-- Doomforge Dragoon
+								8911,	-- Fireguard Destroyer
+							},
 						}),
-						n(-76, { -- Shadowforge City
-							n(8903, { 	-- Anvilrage Captain
-								dr(1.8, i(15781, {	-- Pattern: Black Dragonscale Leggings
-									i(15052), 	-- Black Dragonscale Leggings
-								})),
-								dr(0.02, i(12546)),	-- Aristocratic Cuffs
-								dr(0.02, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.01, i(12552)),	-- Blisterbane Wrap
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12528)),	-- The Judge's Gavel
-							}),
-							n(8898, { 	-- Anvilrage Marshal
-								dr(1.5, i(15770, {	-- Pattern: Black Dragonscale Shoulders
-									i(15051),	-- Black Dragonscale Shoulders
-								})),
-								dr(0.02, i(12546)), -- Aristocratic Cuffs
-								dr(0.02, i(12549)),	-- Braincage
-								dr(0.02, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.02, i(12528)),	-- The Judge's Gavel
-								dr(0.01, i(12552)),	-- Blisterbane Wrap
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12550)),	-- Runed Golem Shackles
-							}),
-							n(9541, {	-- Blackbreath Crony
-								dr(0.02, i(12552)),	-- Blisterbane Wrap
-								dr(0.02, i(12550)),	-- Runed Golem Shackles
-								dr(0.01, i(12555)),	-- Battlechaser's Greaves
-								dr(0.01, i(12549)),	-- Braincage
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12531)),	-- Searing Needle
-								dr(0.01, i(12528)),	-- The Judge's Gavel
-							}),
-							n(8899, { 	-- Doomforge Dragoon
-								dr(0.03, i(12546)),	-- Aristocratic Cuffs
-								dr(0.03, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.02, i(12549)),	-- Braincage
-								dr(0.02, i(12550)),	-- Runed Golem Shackles
-								dr(0.02, i(12528)),	-- The Judge's Gavel
-								dr(0.01, i(12555)), -- Battlechaser's Greaves
-								dr(0.01, i(12552)), -- Blisterbane Wrap
-								dr(0.01, i(12547)),	-- Mar Alom's Grip
-								dr(0.01, i(12531)),	-- Searing Needle
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12532)),	-- Spire of the Stoneshaper
-							}),
-							n(8911, { 	-- Fireguard Destroyer
-								dr(0.07, i(12531)),	-- Searing Needle
-								dr(0.02, i(12546)),	-- Aristocratic Cuffs
-								dr(0.02, i(12549)),	-- Braincage
-								dr(0.02, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.02, i(12550)),	-- Runed Golem Shackles
-								dr(0.02, i(12528)),	-- The Judge's Gavel
-								dr(0.01, i(12552)),	-- Blisterbane Wrap
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12547)),	-- Mar Alom's Grip
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12551)),	-- Stoneshield Cloak
-							}),
-							n(9554, {	-- Hammered Patron
-								dr(3, i(11611, { -- Plans: Dark Iron Sunderer
-									i(11607), -- Dark Iron Sunderer
-								})),
-								dr(0.03, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.01, i(12550)),	-- Runed Golem Shcakles
-								dr(0.01, i(12531)),	-- Searing Needle
-								dr(0.01, i(12528)),	-- The Judge's Gavel
-							}),
-							n(8908, { 	-- Molten War Golem
-								dr(0.04, i(12550)),	-- Runed Golem Shackles
-								dr(0.02, i(12546)),	-- Aristocratic Cuffs
-								dr(0.02, i(12555)),	-- Battlechaser's Greaves
-								dr(0.02, i(12549)),	-- Braincage
-								dr(0.01, i(12552)),	-- Blisterbane Wrap
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.01, i(12547)),	-- Mar Alom's Grip
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12531)),	-- Searing Needle
-								dr(0.01, i(12532)),	-- Spire of the Stoneshaper
-								dr(0.01, i(12551)),	-- Stoneshield Cloak
-								dr(0.01, i(12528)),	-- The Judge's Gavel
-							}),
-							n(8906, { 	-- Ragereaver Golem
-								dr(0.02, i(12546)),	-- Aristocratic Cuffs
-								dr(0.02, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12549)),	-- Braincage
-								dr(0.01, i(12550)),	-- Runed Golem Shackles
-								dr(0.01, i(12531)),	-- Searing Needle
-								dr(0.01, i(12532)),	-- Spire of the Stoneshaper
-							}),
-							n(10043, {	-- Ribbly's Crony
-								dr(3, i(11611, { -- Plans: Dark Iron Sunderer
-									i(11607), -- Dark Iron Sunderer
-								})),
-								dr(0.01, i(12542)),	-- Funeral Pyre Vestment
-							}),
-							n(8920, { 	-- Weapon Technician
-								dr(2, i(18661, {	-- Schematic: World Enlarger
-									i(18660), -- World Enlarger Toy
-								})),
-							}),
-							n(8907, { 	-- Wrath Hammer Construct
-								dr(0.03, i(12546)),	-- Aristocratic Cuffs
-								dr(0.02, i(12528)),	-- The Judge's Gavel
-								dr(0.01, i(12555)),	-- Battlechaser's Greaves
-								dr(0.01, i(12535)),	-- Doomforged Straightedge
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12531)),	-- Searing Needle
-							}),
+						i(15781, {	-- Pattern: Black Dragonscale Leggings
+							["crs"] = {
+								8903,	-- Anvilrage Captain
+							},
+						}),
+						i(15770, {	-- Pattern: Black Dragonscale Shoulders
+							["crs"] = {
+								8898,	-- Anvilrage Marshal
+							},
+						}),
+						i(11611, {	-- Plans: Dark Iron Sunderer
+							["crs"] = {
+								 9554,	-- Hammered Patron
+								10043,	-- Ribbly's Crony
+							},
+						}),
+						i(12527, {	-- Ribsplitter
+							["crs"] = {
+								8892,	-- Anvilrage Footman
+								8891,	-- Anvilrage Guardsman
+								8898,	-- Anvilrage Marshal
+								8894,	-- Anvilrage Medic
+								8893,	-- Anvilrage Soldier
+								8899,	-- Doomforge Dragoon
+								8909,	-- Fireguard
+								8912,	-- Twilight's Hammer Torturer
+								8905,	-- Warbringer Construct
+								8907,	-- Wrath Hammer Construct
+							},
+						}),
+						i(12550, {	-- Runed Golem Shackles
+							["crs"] = {
+								8892,	-- Anvilrage Footman
+								8891,	-- Anvilrage Guardsman
+								8898,	-- Anvilrage Marshal
+								8895,	-- Anvilrage Officer
+								8890,	-- Anvilrage Warden
+								9541,	-- Blackbreath Crony
+								8910,	-- Blazing Fireguard
+								9445,	-- Dark Guard
+								8899,	-- Doomforge Dragoon
+								8909,	-- Fireguard
+								8908,	-- Molten War Golem
+							},
+						}),
+						i(16048, {	-- Schematic: Dark Iron Rifle
+							["crs"] = {
+								8897,	-- Doomforge Craftsman
+							},
+						}),
+						i(18661, {	-- Schematic: World Enlarger
+							["crs"] = {
+								8920,	-- Weapon Technician
+							},
+						}),
+						i(12531, {	-- Searing Needle
+							["crs"] = {
+								8892,	-- Anvilrage Footman
+								8891,	-- Anvilrage Guardsman
+								8894,	-- Anvilrage Medic
+								8889,	-- Anvilrage Overseer
+								8893,	-- Anvilrage Soldier
+								8890,	-- Anvilrage Warden
+								8910,	-- Blazing Fireguard
+								8899,	-- Doomforge Dragoon
+								8906,	-- Ragereaver Golem
+							},
+						}),
+						i(12532, {	-- Spire of the Stoneshaper
+							["crs"] = {
+								8911,	-- Fireguard Destroyer
+								8908,	-- Molten War Golem
+								8906,	-- Ragereaver Golem
+							},
+						}),
+						i(12551, {	-- Stoneshield Cloak
+							["crs"] = {
+								8899,	-- Doomforge Dragoon
+								8911,	-- Fireguard Destroyer
+							},
+						}),
+						i(12528, {	-- The Judge's Gavel
+							["crs"] = {
+								8892,	-- Anvilrage Footman
+								8894,	-- Anvilrage Medic
+								8889,	-- Anvilrage Overseer
+								8893,	-- Anvilrage Soldier
+								8890,	-- Anvilrage Warden
+								9541,	-- Blackbreath Crony
+								8910,	-- Blazing Fireguard
+								8899,	-- Doomforge Dragoon
+								8909,	-- Fireguard
+								8911,	-- Fireguard Destroyer
+								9554,	-- Hammered Patron
+								8914,	-- Twilight Bodyguard
+								8912,	-- Twilight's Hammer Torturer
+								8905,	-- Warbringer Construct
+								8907,	-- Wrath Hammer Construct
+							},
 						}),
 					}),
 					n(-75, {	-- Detention Block
@@ -440,7 +419,6 @@ _.Instances =
 									i(11675), 	-- Shadefiend Boots
 									i(11731), 	-- Savage Gladiator Greaves
 									i(11678), 	-- Carapace of Anub'shiah
-									dr(3, i(12542)),	-- Funeral Pyre Vestment
 								},
 								["description"] = "This is one of the possible bosses for this event.",
 							}),
@@ -511,30 +489,6 @@ _.Instances =
 							i( 11842), 	-- Land Surveyor's Mantle
 							i( 22223), 	-- Foreman's Head Protector
 						})),
-						n(0, { -- Zone Drop
-							n(8889, { -- Anvilrage Overseer
-								dr(0.01, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.01, i(12528)),	-- The Judge's Gavel
-							}),
-							n(8890, { -- Anvilrage Warden
-								dr(0.02, i(12531)),	-- Searing Needle
-								dr(0.02, i(12528)),	-- The Judge's Gavel
-								dr(0.01, i(12549)),	-- Braincage
-								dr(0.01, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.01, i(12550)),	-- Runed Golem Shackles
-							}),
-							n(8897, { -- Doomforge Craftsman
-								dr(10.0, i(16048)),	-- Schematic: Dark Iron Rifle
-							}),
-							n(8912, { -- Twilight's Hammer Torturer
-								dr(0.03, i(12542)),	-- Funeral Pyre Vestment
-								dr(0.01, i(12549)),	-- Braincage
-								dr(0.01, i(12527)),	-- Ribsplitter
-								dr(0.01, i(12550)),	-- Runed Golem Shackles
-								dr(0.01, i(12531)),	-- Searing Needle
-								dr(0.01, i(12528)),	-- The Judge's Gavel
-							}),
-						}),
 					}),
 					n(-76, { -- Shadowforge City
 						cr(9024, e( 373, {	-- Pyromancer Loregrain
