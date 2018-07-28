@@ -280,7 +280,10 @@ _.ClassHalls =
 				q(45301),	-- Taking Charge
 				q(42593),	-- The Arcane Way
 				q(44263),	-- The Arcway
-				q(37447),	-- The Blood of Demons
+				q(37447, {	-- The Blood of Demons
+					["qg"] = 103761, -- Kor'vas Bloodthorn
+					["sourceQuests"] = { 42682 }, -- Additional Accoutrements
+				}),
 				q(42775),	-- The Crux of the Plan							
 				q(39247),	-- The Hunt
 				q(41119),	-- The Hunt
