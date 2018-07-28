@@ -2723,6 +2723,28 @@ local function AttachTooltip(self)
 					local db = app:GetWindow("Prime").data;
 					AttachTooltipRawSearchResults(self, { app.DisplayName .. "/" .. db.title }, { db });
 					self:Show();
+				
+				elseif owner.NewAdventureNotice then
+					-- Adventure Guide
+					local dnr = app:GetWindow("Prime").data.g[1];
+					AttachTooltipRawSearchResults(self, { dnr.text}, { dnr });
+					self:Show();
+				elseif owner.tooltipText then
+					if owner.tooltipText == DUNGEONS_BUTTON then
+						-- Group Finder
+						local gf = app:GetWindow("Prime").data.g[4];
+						AttachTooltipRawSearchResults(self, {}, { gf });
+						self:Show();
+					elseif owner.tooltipText == BLIZZARD_STORE then
+						-- Shop
+						AttachTooltipSearchResults(self, "npcID:" .. -36, SearchForFieldAndSummarize, "npcID", -36);
+						self:Show();
+					elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
+						-- Achievements
+						local gf = app:GetWindow("Prime").data.g[5];
+						AttachTooltipRawSearchResults(self, {}, { gf });
+						self:Show();
+					end
 				end
 				
 				if GetDataMember("ShowContents") then
