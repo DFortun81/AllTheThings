@@ -55,6 +55,8 @@ _.Craftables =
 				i(82962),	-- Spiritguard Shield
 			}),
 			n(-46, { -- Plate
+				i(82916),	-- Lightsteel Bracers
+				i(82900),	-- Spiritguard Bracers
 				i(94264),	-- Haunted Steel Headcover
 				i(94268),	-- Haunted Steel Headguard
 				i(94266),	-- Haunted Steel Greathelm

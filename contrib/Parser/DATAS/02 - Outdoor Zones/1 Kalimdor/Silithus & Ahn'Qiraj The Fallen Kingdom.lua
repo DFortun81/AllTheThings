@@ -5,7 +5,8 @@ _.Zones =
 {
 	m(12, { 	-- Kalimdor
 		m(81, {	-- Silithus
-			["groups"] = {			
+			["groups"] = {
+				--[[
 				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -37,7 +38,8 @@ _.Zones =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
-				}),					
+				}),	
+				--]]
 				n(-25, {	-- Pet Battle
 					p(406), -- Beetle
 					p(484), -- Desert Spider
@@ -805,36 +807,16 @@ END OF MICRO-HOLIDAY --]]
 				n( -2, {	-- Vendors
 					n(15293, {	-- Aendel Windspear
 						["groups"] = {
-							i(22769, {	-- Pattern: Bramblewood Belt
-								i(22761),	-- Bramblewood Belt
-							}),
-							i(22770, {	-- Pattern: Bramblewood Boots
-								i(22760),	-- Bramblewood Boots
-							}),
-							i(22771, {	-- Pattern: Bramblewood Helm
-								i(22759),	-- Bramblewood Helm
-							}),
-							i(20382, {	-- Pattern: Dreamscale Breastplate
-								i(20380),	-- Dreamscale Breastplate
-							}),
-							i(20506, {	-- Pattern: Spitfire Bracers
-								i(20481),	-- Spitfire Bracers
-							}),
-							i(20507, {	-- Pattern: Spitfire Gauntlets
-								i(20480),	-- Spitfire Gauntlets
-							}),
-							i(20508, {	-- Pattern: Spitfire Breastplate
-								i(20479),	-- Spitfire Bracers
-							}),
-							i(20509, {	-- Pattern: Sandstalker Bracers
-								i(20476),	-- Sandstalker Bracers
-							}),
-							i(20510, {	-- Pattern: Sandstalker Gauntlets
-								i(20477),	-- Sandstalker Gauntlets
-							}),
-							i(20511, {	-- Pattern: Sandstalker Breastplate
-								i(20478),	-- Sandstalker Breastplate
-							}),
+							i(22769),	-- Pattern: Bramblewood Belt
+							i(22770),	-- Pattern: Bramblewood Boots
+							i(22771),	-- Pattern: Bramblewood Helm
+							i(20382),	-- Pattern: Dreamscale Breastplate
+							i(20506),	-- Pattern: Spitfire Bracers
+							i(20507),	-- Pattern: Spitfire Gauntlets
+							i(20508),	-- Pattern: Spitfire Breastplate
+							i(20509),	-- Pattern: Sandstalker Bracers
+							i(20510),	-- Pattern: Sandstalker Gauntlets
+							i(20511),	-- Pattern: Sandstalker Breastplate
 						},
 						["description"] = "Vendor is located upstairs in the northern building in Southwind Village.|r",
 					}),
@@ -866,29 +848,15 @@ END OF MICRO-HOLIDAY --]]
 						i(22774),	-- Pattern: Sylvan Vest
 					}),
 					n(15176, {	-- Vargus <Blacksmith>
-						i(22766, {	-- Plans: Ironvine Breastplate
-							i(22762),	-- Ironvine Breastplate
-						}),
-						i(22767, {	-- Plans: Ironvine Gloves
-							i(22763),	-- Ironvine Gloves
-						}),
-						i(22768, {	-- Plans: Ironvine Belt
-							i(22764),	-- Ironvine Belt
-						}),
-						i(22209, {	-- Plans: Heavy Obsidian Belt
-							i(22197),	-- Heavy Obsidian Belt
-						}),
-						i(22214, {	-- Plans: Light Obsidian Belt
-							i(22195),	-- Light Obsidian Belt
-						}),
+						i(22766),	-- Plans: Ironvine Breastplate
+						i(22767),	-- Plans: Ironvine Gloves
+						i(22768),	-- Plans: Ironvine Belt
+						i(22209),	-- Plans: Heavy Obsidian Belt
+						i(22214),	-- Plans: Light Obsidian Belt
 					}),
 					n(12956, {	-- Zannok Hidepiercer <Leatherworking Supplies>
-						i(15762, {	-- Pattern: Heavy Scorpid Helm
-							i(15080),	-- Heavy Scorpid Helm
-						}),
-						i(15724, {	-- Pattern: Heavy Scorpid Bracers
-							i(15077),	-- HEavy Scorpid Bracers
-						}),
+						i(15762),	-- Pattern: Heavy Scorpid Helm
+						i(15724),	-- Pattern: Heavy Scorpid Bracers
 					}),
 				}),
 				n(-40, {	-- Legacy
