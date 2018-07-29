@@ -262,10 +262,10 @@ _.Instances =
 									n(-90, { -- Elite
 										["groups"] = {
 											i(90527),	-- Regail's Crackling Dagger (Elite)
-											i(86318),	-- Casque of Expelled Corruption (Elite)
+											i(90530),	-- Casque of Expelled Corruption (Elite)
 											i(90523),	-- Kaolan's Withering Necklace (Elite)
 											i(90522),	-- Shackle of Eversparks (Elite)
-											i(89885),	-- Waterborne Shoulderguards (Elite)
+											i(90519),	-- Waterborne Shoulderguards (Elite)
 											i(90526),	-- Cloak of Overwhelming Corruption (Elite)
 											i(90520),	-- Bracers of Defiled Earth (Elite)
 											i(90524),	-- Cuffs of the Corrupted Waters (Elite)
@@ -279,10 +279,10 @@ _.Instances =
 										["description"] = "You must kill Protector Kaolan last!",
 									}),
 									i(86390),	-- Regail's Crackling Dagger
-									i(90530),	-- Casque of Expelled Corruption
+									i(86318),	-- Casque of Expelled Corruption
 									i(86234),	-- Kaolan's Withering Necklace
 									i(86233),	-- Shackle of Eversparks
-									i(90519),	-- Waterborne Shoulderguards
+									i(89885),	-- Waterborne Shoulderguards
 									i(86316),	-- Cloak of Overwhelming Corruption
 									i(86230),	-- Bracers of Defiled Earth
 									i(86317),	-- Cuffs of the Corrupted Waters
