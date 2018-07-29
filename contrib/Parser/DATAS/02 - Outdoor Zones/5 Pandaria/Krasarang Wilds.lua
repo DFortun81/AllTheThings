@@ -41,6 +41,37 @@ _.Zones =
 						["description"] = "Located in a cave at (71,9)",
 					}),
 				}),
+				ach(7284, {	-- Is Another Man's Treasure
+					o(214439, {		-- Barrel of Banana Infused Rum
+						["groups"] = {
+							i(87266),	-- Recipe: Banana Infused Rum
+						},
+						["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
+					}),
+					o(213651, { 	-- Equipment Locker
+						["groups"] = {
+							dr(20.0, i(86122)),	-- Plankwalking Greaves
+							dr(19.0, i(86115)),	-- Swashbuckling Boots
+							dr(18.0, i(86117)),	-- Seafarer's Treads of Precision
+							dr(16.0, i(86116)),	-- Agile Seafarer's Jackboots
+							dr(09.0, i(86123)),	-- Seafarer's Sturdy Boots
+							dr(08.0, i(86118)),	-- Seafaring Advisor's Slippers
+							dr(05.0, i(86119)),	-- Seafarer's Boots of Meditation
+							dr(04.0, i(86120)),	-- Seafaring Sabatons of Meditation
+							dr(00.9, i(86121)),	-- Radiant Seafarer's Boots
+						},
+						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
+						["modelScale"] = 1.5,
+						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
+						["questID"] = 31410,
+					}),
+					o(213653, {		-- Pandaren Fishing Spear
+						["groups"] = {
+							i(86124),	-- Pandaren Fishing Spear
+						},
+						["questID"] = 31409,
+					}),
+				}),
 				n(-17, { 	-- Quests
 					qh(32169, {	-- A Colossal Victory
 						["isDaily"] = true,
@@ -1275,295 +1306,282 @@ _.Zones =
 ]]--
 				}),
 				n(-16, { 	-- Rares
-					n(50787, { 		-- Arness the Scale
-						dr(14, i(90723)),
-						dr(12, i(87612)),
+					n(50787, {	-- Arness the Scale
+						dr(14, i(90723)),	-- Arnness's Scaled Leggings
+						dr(12, i(87612)),	-- Ancient Krasari Helm
 						dr(11, {
-							i(87604),
-							i(87609),
-							i(87610),
-							i(87608),
-							i(87606),
-							i(87607),
+							i(87604),	-- Beachcomber's Hat
+							i(87609),	-- Brushstalker Helm
+							i(87610),	-- Deepwild Hunting Helm
+							i(87608),	-- Korjan Mystic's Hood
+							i(87606),	-- Tidehunter Helm
+							i(87607),	-- Unearthed Dojani Headcover
 						}),
 						dr(10, {
-							i(87605),
-							i(87611),
+							i(87605),	-- Crest of the Red Crane
+							i(87611),	-- Shen-zin Shell Headguard
 						}),
 					}),
-					o(214439, {		-- Barrel of Banana Infused Rum
-						["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
-						["groups"] = {
-							i(87266),	-- Recipe: Banana Infused Rum
-						},
-					}),
-					n(66936, { 		-- Clawlord Kril'mandar <The Pinch King>
+					n(66936, {	-- Clawlord Kril'mandar <The Pinch King>
 						 ["groups"] = {
 							i(90087), -- Lobstmourne
 						 },
 						 ["description"] = "Summoned with Clamshell Band, which is created by items dropping from makrura along the coast of Pandaria. Akkalou and Akkalar can be found in The Jade Forest, Damlak in Krasarang Wilds, Kishak in Kun-Lai Summit, Odd'nirok in Townlong Steppes and Clamstok in the Dread Wastes.",
 					}),
-					n(50768, { 		-- Cournith Waterstrider
-						dr(15, i(90721)),
+					n(50768, {	-- Cournith Waterstrider
+						dr(15, i(90721)),	-- Cournith Waterstrider's Silken Finery
 						dr(11, {
-							i(87612),
-							i(87604),
-							i(87609),
-							i(87605),
-							i(87610),
-							i(87608),
-							i(87611),
-							i(87606),
+							i(87612),	-- Ancient Krasari Helm
+							i(87604),	-- Beachcomber's Hat
+							i(87609),	-- Brushstalker Helm
+							i(87605),	-- Crest of the Red Crane
+							i(87610),	-- Deepwild Hunting Helm
+							i(87608),	-- Korjan Mystic's Hood
+							i(87611),	-- Shen-zin Shell Headguard
+							i(87606),	-- Tidehunter Helm
 						}),
-						dr(10, i(87607)),
+						dr(10, i(87607)),	-- Unearthed Dojani Headcover
 					}),
-					o(213651, { 	-- Equipment Locker
-						["groups"] = {
-							dr(20.0, i(86122)),	-- Plankwalking Greaves
-							dr(19.0, i(86115)),	-- Swashbuckling Boots
-							dr(18.0, i(86117)),	-- Seafarer's Treads of Precision
-							dr(16.0, i(86116)),	-- Agile Seafarer's Jackboots
-							dr(09.0, i(86123)),	-- Seafarer's Sturdy Boots
-							dr(08.0, i(86118)),	-- Seafaring Advisor's Slippers
-							dr(05.0, i(86119)),	-- Seafarer's Boots of Meditation
-							dr(04.0, i(86120)),	-- Seafaring Sabatons of Meditation
-							dr(00.9, i(86121)),	-- Radiant Seafarer's Boots
-						},
-						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
-						["modelScale"] = 1.5,
-						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
-						["questID"] = 31410,
+					n(68318, {	-- Dalan Nightbreaker
+						dr(29, i(92783)),	-- Mark of the Hardened Grunt
 					}),
-					n(50331, { 		-- Go-Kan
-						dr(15, i(90719)),
+					n(68319, {	-- Disha Fearwarden
+						dr(26, i(92787)),	-- Horde Insignia of Conquering
+					}),
+					n(50331, {	-- Go-Kan
+						dr(15, i(90719)),	-- Go-Kan's Golden Trousers
 						dr(12, {
-							i(87608),
-							i(87611),
+							i(87608),	-- Korjan Mystic's Hood
+							i(87611),	-- Shen-zin Shell Headguard
 						}),
 						dr(11, {
-							i(87612),
-							i(87604),
-							i(87609),
-							i(87606),
-							i(87607),
+							i(87612),	-- Ancient Krasari Helm
+							i(87604),	-- Beachcomber's Hat
+							i(87609),	-- Brushstalker Helm
+							i(87606),	-- Tidehunter Helm
+							i(87607),	-- Unearthed Dojani Headcover
 						}),
 						dr(10, {
-							i(87605),
-							i(87610),
+							i(87605),	-- Crest of the Red Crane
+							i(87610),	-- Deepwild Hunting Helm
 						}),
 					}),
-					n(50340, { 		-- Gaarn the Toxic
-						dr(14, i(90725)),
+					n(50340, {	-- Gaarn the Toxic
+						dr(14, i(90725)),	-- Gaarn's Leggings of Infestation
 						dr(11, {
-							i(87612),
-							i(87604),
-							i(87609),
-							i(87611),
-							i(87606),
-							i(87607),
+							i(87612),	-- Ancient Krasari Helm
+							i(87604),	-- Beachcomber's Hat
+							i(87609),	-- Brushstalker Helm
+							i(87611),	-- Shen-zin Shell Headguard
+							i(87606),	-- Tidehunter Helm
+							i(87607),	-- Unearthed Dojani Headcover
 						}),
 						dr(10, {
-							i(87605),
-							i(87610),
-							i(87608),
+							i(87605),	-- Crest of the Red Crane
+							i(87610),	-- Deepwild Hunting Helm
+							i(87608),	-- Korjan Mystic's Hood
 						}),
 					}),
-					o(213653, {		-- Pandaren Fishing Spear
-						["groups"] = {
-							i(86124),	-- Pandaren Fishing Spear
-						},
-						["questID"] = 31409,
+					n(68321, {	-- Kar Warmaker
+						dr(29, i(92782)),	-- Steadfast Footman's Medallion
 					}),
-					n(50352, { 		-- Qu'nas
-						dr(16, i(90717)),
+					n(70323, {	-- Krakkanon
+						dr(14, {
+							i(88563, {
+								q(31664),	-- An Angler's Quest
+							}),
+						}),
+					}),
+					n(68317, {	-- Mavis Harms
+						dr(29, i(92785)),	-- Kor'kron Book of Hurting
+					}),
+				 	n(68322, {	-- Muerta
+						dr(30, i(92786)),	-- Alliance Insignia of Conquering
+					}),
+					n(50352, {	-- Qu'nas
+						dr(16, i(90717)),	-- Qu'nas' Apocryphal Legplates
 						dr(12, {
-							i(87606),
-							i(87607),
+							i(87606),	-- Tidehunter Helm
+							i(87607),	-- Unearthed Dojani Headcover
 						}),
 						dr(11, {
-							i(87604),
-							i(87609),
-							i(87605),
-							i(87610),
-							i(87608),
-							i(87611),
+							i(87604),	-- Beachcomber's Hat
+							i(87609),	-- Brushstalker Helm
+							i(87605),	-- Crest of the Red Crane
+							i(87610),	-- Deepwild Hunting Helm
+							i(87608),	-- Korjan Mystic's Hood
+							i(87611),	-- Shen-zin Shell Headguard
 						}),
-						dr(10, i(87612)),
+						dr(10, i(87612)),	-- Ancient Krasari Helm
 					}),
-					n(50816, { 		-- Ruun Ghostpaw
-						dr(16, i(90720)),
+					n(50816, {	-- Ruun Ghostpaw
+						dr(16, i(90720)),	-- Silent Leggings of the Ghostpaw
 						dr(12, {
-							i(87612),
-							i(87610),
+							i(87612),	-- Ancient Krasari Helm
+							i(87610),	-- Deepwild Hunting Helm
 						}),
 						dr(11, {
-							i(87609),
-							i(87608),
-							i(87611),
-							i(87607),
+							i(87609),	-- Brushstalker Helm
+							i(87608),	-- Korjan Mystic's Hood
+							i(87611),	-- Shen-zin Shell Headguard
+							i(87607),	-- Unearthed Dojani Headcover
 						}),
 						dr(10, {
-							i(87604),
-							i(87605),
-							i(87606),
+							i(87604),	-- Beachcomber's Hat
+							i(87605),	-- Crest of the Red Crane
+							i(87606),	-- Tidehunter Helm
 						}),
 					}),
-					n(50830, { 		-- Spriggin
-						dr(14, i(90724)),
+					n(50830, {	-- Spriggin
+						dr(14, i(90724)),	-- Spriggin's Sproggin' Leggin'
 						dr(11, {
-							i(87612),
-							i(87604),
-							i(87610),
-							i(87611),
-							i(87606),
-							i(87607),
+							i(87612),	-- Ancient Krasari Helm
+							i(87604),	-- Beachcomber's Hat
+							i(87610),	-- Deepwild Hunting Helm
+							i(87611),	-- Shen-zin Shell Headguard
+							i(87606),	-- Tidehunter Helm
+							i(87607),	-- Unearthed Dojani Headcover
 						}),
 						dr(10, {
-							i(87609),
-							i(87605),
-							i(87608),
+							i(87609),	-- Brushstalker Helm
+							i(87605),	-- Crest of the Red Crane
+							i(87608),	-- Korjan Mystic's Hood
 						}),
 					}),
-					n(50388, { 		-- Torik-Ethis
-						dr(13, i(90718)),
+					n(50388, {	-- Torik-Ethis
+						dr(13, i(90718)),	-- Torik-Ethis' Bloodied Legguards
 						dr(12, {
-							i(87609),
-							i(87608),
+							i(87609),	-- Brushstalker Helm
+							i(87608),	-- Korjan Mystic's Hood
 						}),
 						dr(11, {
-							i(87605),
-							i(87610),
-							i(87611),
-							i(87607),
+							i(87605),	-- Crest of the Red Crane
+							i(87610),	-- Deepwild Hunting Helm
+							i(87611),	-- Shen-zin Shell Headguard
+							i(87607),	-- Unearthed Dojani Headcover
 						}),
 						dr(10, {
-							i(87612),
-							i(87604),
-							i(87606),
+							i(87612),	-- Ancient Krasari Helm
+							i(87604),	-- Beachcomber's Hat
+							i(87606),	-- Tidehunter Helm
 						}),
 					}),
-					n(69769, { 		-- Zandalari Warbringer
+					n(68320, {	-- Ubunti the Shade
+						dr(28, i(92784)),	-- SI:7 Operative's Manual
+					}),
+					n(69769, {	-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
-						dr(4, i(94229)), 	-- Mount
+						dr(4, i(94229)), 	-- Reins of the Slate Primordial Direhorn
 					}),
-					n(69841, { 		-- Zandalari Warbringer
+					n(69841, {	-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
-						dr(4, i(94230)),	-- Mount
+						dr(4, i(94230)),	-- Reins of the Amber Primordial Direhorn
 					}),
-					n(69842, { 		-- Zandalari Warbringer
+					n(69842, {	-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
-						dr(4, i(94231)),	-- Mount
+						dr(4, i(94231)),	-- Reins of the Jade Primordial Direhorn
 					}),
-					n(69768, { 		-- Zandalari Warscout
+					n(69768, {	-- Zandalari Warscout
 						dr(15, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
 					}),
---[[
-				--	n(68318, { 		-- Dalan Nightbreaker	}),
-				--	n(68319, { 		-- Disha Fearwarden	}),
-				--	n(68321, { 		-- Kar Warmaker	}),
-				--	n(70323, { 		-- Krakkanon	}),
-				--	n(68317, { 		-- Mavis Harms	}),
-				-- 	n(68322, { 		-- Muerta	}),
-				--	n(68320, { 		-- Ubunti the Shade	}),
---]]
 				}),
-				n(-2, {		-- Vendor
+				n(-2, {	-- Vendor
 					na(69059, {	-- Agent Malley <Operation: Shieldwall Quartermaster>
 						i(93231),	-- Grand Commendation of Operation: Shieldwall
 						i(93168),	-- Grand Armored Gryphon Mount
