@@ -23,6 +23,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						132701, -- T'zane <Tehe Soul Terror>
 					},
+					["d"] = 14,
 					["maps"] = { 863 }, -- Nazmir
 				}),
 				e(2141, { -- Ji'arak
@@ -41,6 +42,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						132253, -- Ji'arak
 						132653, -- Ji'arak Broodling
 					},
+					["d"] = 14,
 					["maps"] = { 862 }, -- Zuldazar
 				}),
 				e(2197, { -- Hailstone Construct
@@ -60,6 +62,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						140252, -- Hailstone Construct
 					},
+					["d"] = 14,
 					["maps"] = { 896 }, -- Drustvar
 				}),
 				e(2199, { -- Azurethos, The Winged Typhoon
@@ -76,6 +79,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(161379), -- Galecaller's Beak
 						i(161378), -- Plume of the Seaborne Avian
 					},
+					["d"] = 14,
 					["crs"] = {
 						136385, -- Azurethos, The Winged Typhoon
 					},
@@ -96,6 +100,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						140163, -- Warbringeer Yenajz
 					},
+					["d"] = 14,
 					["maps"] = { 942 }, -- Stormsong Valley
 				}),
 				e(2210, { -- Dunegorger Kraulok
@@ -114,6 +119,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						138794, -- Dunegorger Kraulok
 						139614, -- Ravenous Ranishu
 					},
+					["d"] = 14,
 					["maps"] = { 864 }, -- Vol'dun
 				}),
 			}),
@@ -138,6 +144,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					143597, -- Doom's Howl Dreadshield
 					143599, -- Doom's Howl Warcaster
 				},
+				["d"] = 14,
 				["maps"] = { -- Lucetia: Unsure which is actual map that will be used
 					906, -- Arathi Highlands
 					943, -- Arathi Highlands
@@ -165,6 +172,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					143601, -- Lion's Shieldbearer
 					143602, -- Lion's Warcaster
 				},
+				["d"] = 14,
 				["maps"] = { -- Lucetia: Unsure which is actual map that will be used
 					906, -- Arathi Highlands
 					943, -- Arathi Highlands

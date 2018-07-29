@@ -4753,5 +4753,194 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 			},
 			["achievementID"] = 12020, -- Argussy Up
 		}),
+		gsh(1638, { -- Uldir
+			["groups"] = {
+				d(17, { -- Raid Finder [9, 9, 9, 9, 36]
+					gs(1641, { -- Eternal Curator's Vestment
+						i(160719), -- Visage of the Ascended Prophet
+						i(160726), -- Amice of Corrupting Horror
+						i(160642), -- Cloak of Rippling Whispers
+						i(160614), -- Robes of the Unraveler
+						i(161071), -- Bloody Experimenter's Wraps
+						i(160612), -- Spellbound Specimen Handlers
+						i(160734), -- Cord of Animated Contagion
+						i(160615), -- Leggings of Lingering Infestation
+						i(160714), -- Volatile Walkers
+					}),
+					gs(1645, { -- Eternal Curator's Garb
+						i(160623), -- Hood of Pestilent Ichor
+						i(160620), -- Usurper's Bloodcaked Spaulders
+						i(160643), -- Fetid Horror's Tanglecloak
+						i(160728), -- Tunic of the Sanguine Deity
+						i(161072), -- Splatterguards
+						i(161075), -- Antiseptic Specimen Handlers
+						i(160622), -- Bloodstorm Buckle
+						i(160625), -- Pathogenic Legwraps
+						i(160624), -- Quarantine Protocol Treads
+					}),
+					gs(1649, { -- Eternal Curator's Chains
+						i(160630), -- Crest of the Undying Visionary
+						i(160632), -- Flame-Sterilized Spaulders
+						i(160644), -- Plasma-Spattered Greatcloak
+						i(160627), -- Chainvest of Assured Quality
+						i(160629), -- Rubywrought Sparkguards
+						i(160626), -- Gloves of Involuntary Amputation
+						i(160724), -- Cincture of Profane Deeds
+						i(160631), -- Legguards of Coalescing Plasma
+						i(160628), -- Fused Monstrosity Stompers
+					}),
+					gs(1653, { -- Eternal Curator's Proctorate
+						i(160634), -- Gridrunner Galea
+						i(160641), -- Chitinspine Pauldrons
+						i(164385, { -- Desert Nomad's Wrap
+							["modID"] = 3, -- Apply custom mod here as this drops from World Boss, not LFR mod  d14 = m3
+						}),
+						i(160636), -- Chestguard of Virulent Mutagens
+						i(160637), -- Crimson Colossus Armguards
+						i(160635), -- Waste Disposal Crushers
+						i(160638), -- Decontaminator's Greatbelt
+						i(160639), -- Greaves of Unending Vigil
+						i(160640), -- Warboots of Absolute Eradication
+					}),
+				}),
+				d(14, { -- Normal [9, 9, 9, 9, 36]
+					gs(1638, { -- Eternal Curator's Vestment
+						i(160719), -- Visage of the Ascended Prophet
+						i(160726), -- Amice of Corrupting Horror
+						i(160642), -- Cloak of Rippling Whispers
+						i(160614), -- Robes of the Unraveler
+						i(161071), -- Bloody Experimenter's Wraps
+						i(160612), -- Spellbound Specimen Handlers
+						i(160734), -- Cord of Animated Contagion
+						i(160615), -- Leggings of Lingering Infestation
+						i(160714), -- Volatile Walkers
+					}),
+					gs(1642, { -- Eternal Curator's Garb
+						i(160623), -- Hood of Pestilent Ichor
+						i(160620), -- Usurper's Bloodcaked Spaulders
+						i(160643), -- Fetid Horror's Tanglecloak
+						i(160728), -- Tunic of the Sanguine Deity
+						i(161072), -- Splatterguards
+						i(161075), -- Antiseptic Specimen Handlers
+						i(160622), -- Bloodstorm Buckle
+						i(160625), -- Pathogenic Legwraps
+						i(160624), -- Quarantine Protocol Treads
+					}),
+					gs(1646, { -- Eternal Curator's Chains
+						i(160630), -- Crest of the Undying Visionary
+						i(160632), -- Flame-Sterilized Spaulders
+						i(160644), -- Plasma-Spattered Greatcloak
+						i(160627), -- Chainvest of Assured Quality
+						i(160629), -- Rubywrought Sparkguards
+						i(160626), -- Gloves of Involuntary Amputation
+						i(160724), -- Cincture of Profane Deeds
+						i(160631), -- Legguards of Coalescing Plasma
+						i(160628), -- Fused Monstrosity Stompers
+					}),
+					gs(1650, { -- Eternal Curator's Proctorate
+						i(160634), -- Gridrunner Galea
+						i(160641), -- Chitinspine Pauldrons
+						i(164384), -- Windswept Dinorider's Cape
+						i(160636), -- Chestguard of Virulent Mutagens
+						i(160637), -- Crimson Colossus Armguards
+						i(160635), -- Waste Disposal Crushers
+						i(160638), -- Decontaminator's Greatbelt
+						i(160639), -- Greaves of Unending Vigil
+						i(160640), -- Warboots of Absolute Eradication
+					}),
+				}),
+				d(15, { -- Heroic [9, 9, 9, 8, 35]
+					gs(1639, { -- Eternal Curator's Vestment
+						i(160719), -- Visage of the Ascended Prophet
+						i(160726), -- Amice of Corrupting Horror
+						i(160642), -- Cloak of Rippling Whispers
+						i(160614), -- Robes of the Unraveler
+						i(161071), -- Bloody Experimenter's Wraps
+						i(160612), -- Spellbound Specimen Handlers
+						i(160734), -- Cord of Animated Contagion
+						i(160615), -- Leggings of Lingering Infestation
+						i(160714), -- Volatile Walkers
+					}),
+					gs(1643, { -- Eternal Curator's Garb
+						i(160623), -- Hood of Pestilent Ichor
+						i(160620), -- Usurper's Bloodcaked Spaulders
+						i(160643), -- Fetid Horror's Tanglecloak
+						i(160728), -- Tunic of the Sanguine Deity
+						i(161072), -- Splatterguards
+						i(161075), -- Antiseptic Specimen Handlers
+						i(160622), -- Bloodstorm Buckle
+						i(160625), -- Pathogenic Legwraps
+						i(160624), -- Quarantine Protocol Treads
+					}),
+					gs(1647, { -- Eternal Curator's Chains
+						i(160630), -- Crest of the Undying Visionary
+						i(160632), -- Flame-Sterilized Spaulders
+						i(160644), -- Plasma-Spattered Greatcloak
+						i(160627), -- Chainvest of Assured Quality
+						i(160629), -- Rubywrought Sparkguards
+						i(160626), -- Gloves of Involuntary Amputation
+						i(160724), -- Cincture of Profane Deeds
+						i(160631), -- Legguards of Coalescing Plasma
+						i(160628), -- Fused Monstrosity Stompers
+					}),
+					gs(1651, { -- Eternal Curator's Proctorate
+						i(160634), -- Gridrunner Galea
+						i(160641), -- Chitinspine Pauldrons
+						i(160636), -- Chestguard of Virulent Mutagens
+						i(160637), -- Crimson Colossus Armguards
+						i(160635), -- Waste Disposal Crushers
+						i(160638), -- Decontaminator's Greatbelt
+						i(160639), -- Greaves of Unending Vigil
+						i(160640), -- Warboots of Absolute Eradication
+					}),
+				}),
+				d(16, { -- Mythic [9, 9, 9, 8, 35]
+					gs(1640, { -- Eternal Curator's Vestment
+						i(160719), -- Visage of the Ascended Prophet
+						i(160726), -- Amice of Corrupting Horror
+						i(160642), -- Cloak of Rippling Whispers
+						i(160614), -- Robes of the Unraveler
+						i(161071), -- Bloody Experimenter's Wraps
+						i(160612), -- Spellbound Specimen Handlers
+						i(160734), -- Cord of Animated Contagion
+						i(160615), -- Leggings of Lingering Infestation
+						i(160714), -- Volatile Walkers
+					}),
+					gs(1644, { -- Eternal Curator's Garb
+						i(160623), -- Hood of Pestilent Ichor
+						i(160620), -- Usurper's Bloodcaked Spaulders
+						i(160643), -- Fetid Horror's Tanglecloak
+						i(160728), -- Tunic of the Sanguine Deity
+						i(161072), -- Splatterguards
+						i(161075), -- Antiseptic Specimen Handlers
+						i(160622), -- Bloodstorm Buckle
+						i(160625), -- Pathogenic Legwraps
+						i(160624), -- Quarantine Protocol Treads
+					}),
+					gs(1648, { -- Eternal Curator's Chains
+						i(160630), -- Crest of the Undying Visionary
+						i(160632), -- Flame-Sterilized Spaulders
+						i(160644), -- Plasma-Spattered Greatcloak
+						i(160627), -- Chainvest of Assured Quality
+						i(160629), -- Rubywrought Sparkguards
+						i(160626), -- Gloves of Involuntary Amputation
+						i(160724), -- Cincture of Profane Deeds
+						i(160631), -- Legguards of Coalescing Plasma
+						i(160628), -- Fused Monstrosity Stompers
+					}),
+					gs(1652, { -- Eternal Curator's Proctorate
+						i(160634), -- Gridrunner Galea
+						i(160641), -- Chitinspine Pauldrons
+						i(160636), -- Chestguard of Virulent Mutagens
+						i(160637), -- Crimson Colossus Armguards
+						i(160635), -- Waste Disposal Crushers
+						i(160638), -- Decontaminator's Greatbelt
+						i(160639), -- Greaves of Unending Vigil
+						i(160640), -- Warboots of Absolute Eradication
+					}),
+				}),
+			},	
+			["achievementID"] = 12991, -- New Mog, G'huun This?
+		}),
 	}),
 };
