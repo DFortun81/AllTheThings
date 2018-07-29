@@ -491,4 +491,16 @@ n(52454, { -- Ancient Fossil
 n(52452, { -- Ancient Troll Artifact
 	["description"] = "This artifact is used in summoning the boss.",
 }),
+
+
+-- Here I am going to call upon maps that don't really have any data and wouldn't make since to display a mini list in
+m(465), -- Le Glas
+m(516), -- Isle of Thunder (One of last initial scenaraio)
+
+
+
+
+
+
+
 };

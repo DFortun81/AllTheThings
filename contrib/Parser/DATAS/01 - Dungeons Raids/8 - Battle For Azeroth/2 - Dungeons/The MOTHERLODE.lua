@@ -71,7 +71,6 @@ _.Instances =
 							}),
 						},
 					}),
-					
 					d(2, { -- Heroic
 						["groups"] = {
 							e(2109, { -- Coin-Operated Crowd Pummeler
@@ -182,6 +181,7 @@ _.Instances =
 							}),
 							e(2116, { -- Mogul Razdunk
 								["groups"] = {
+									i(161135), -- Schematic: MechaMogul Mk2
 									i(159641), -- G3T-00t
 									i(158364), -- High Altitude Turban
 									i(159360), -- Crashguard Spaulders

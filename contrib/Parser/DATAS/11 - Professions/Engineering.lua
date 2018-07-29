@@ -362,7 +362,6 @@ profession(202, { -- Engineering
 		i(16046),	-- Schematic: Masterwork Target Dummy
 		i(35195),	-- Schematic: Mayhem Projection Goggles
 		i(137727),	-- Schematic: Mecha-Bond Imprint Matrix
-		i(161135),	-- Schematic: Mecha-Mogul Mk2
 		i(118484),	-- Schematic: Mechanical Axebeak
 		i(13311),	-- Schematic: Mechanical Dragonling
 		i(119177),	-- Schematic: Mechanical Scorpid
