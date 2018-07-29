@@ -56,6 +56,11 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
+--[[
+					--q(32043),	-- Candy Bucket
+					--q(32497),	-- Honor the Flame
+					--q(32501),	-- Honor the Flame
+]]--
 					q(31895, {	-- Better Off Dread
 						["qg"] = 61584,	-- Sentinel Commander Qipan
 						["isBreadcrumb"] = true,
@@ -64,7 +69,6 @@ _.Zones =
 						["qg"] = 62274,	-- Taran Zhu
 						["sourceQuests"] = { 30980 }, -- Heroes of the Shado-Pan
 					}),
-					--q(32043),	-- Candy Bucket
 					q(31120, {	-- Cheng Bo!
 						["qg"] = 63009,	-- Master Snowdrift
 						["isDaily"] = true,
@@ -196,8 +200,6 @@ _.Zones =
 						["qg"] = 62786,	-- Hawkmaster Nurong
 						["sourceQuests"] = { 30979 }, -- Devastation Below
 					}),
-					--q(32497),	-- Honor the Flame
-					--q(32501),	-- Honor the Flame
 					q(30978, {	-- Hostile Skies
 						["groups"] = {
 							i(88590),	-- Nurong's Gun
@@ -1067,6 +1069,21 @@ _.Zones =
 						i(82683),	-- Mountainscaler Chain Wristguards
 						i(82684),	-- Mountainscaler Heavy Armplates
 						i(82685),	-- Mountainscaler Armored Bracers
+						i(82686),	-- Mountainscaler Locket
+						i(82687),	-- Mountainscaler Choker
+						i(82688),	-- Mountainscaler Necklace
+						i(82689),	-- Mountainscaler Pendant
+						i(82690),	-- Mountainscaler Amulet
+						i(82691),	-- Mountainscaler Band
+						i(82692),	-- Mountainscaler Ring
+						i(82693),	-- Mountainscaler Loop
+						i(82694),	-- Mountainscaler Signet
+						i(82695),	-- Mountainscaler Seal
+						i(82696),	-- Mountainscaler Mark
+						i(82697),	-- Mountainscaler Medal
+						i(82698),	-- Mountainscaler Emblem
+						i(82699),	-- Mountainscaler Insignia
+						i(82700),	-- Mountainscaler Badge
 						i(82701),	-- Mountainscaler Shawl
 						i(82702),	-- Mountainscaler Drape
 						i(82703),	-- Mountainscaler Cape
@@ -1265,6 +1282,16 @@ _.Zones =
 						i(95134),	-- Hearthfire Armwraps
 						i(95135),	-- Bracers of Shielding Thought
 						i(95136),	-- Troll-Burner Bracers
+						i(95137),	-- Seal of the Shado-Pan Assault
+						i(95138),	-- Signet of the Shado-Pan Assault
+						i(95139),	-- Ring of the Shado-Pan Assault
+						i(95140),	-- Band of the Shado-Pan Assault
+						i(95141),	-- Loop of the Shado-Pan Assault
+						i(95142),	-- Striker's Battletags
+						i(95143),	-- Flanker's Battletags
+						i(95144),	-- Vanguard's Battletags
+						i(95145),	-- Mender's Battletags
+						i(95146),	-- Destroyer's Battletags
 						i(95225),	-- Breastplate of the All-Consuming Maw
 						i(95226),	-- Gauntlets of the All-Consuming Maw
 						i(95227),	-- Helmet of the All-Consuming Maw
@@ -1495,9 +1522,26 @@ _.Zones =
 						i(95993),	-- Faceguard of the Last Mogu
 						i(95994),	-- Legguards of the Last Mogu
 						i(95995),	-- Shoulderguards of the Last Mogu
+						i(94507),	-- Steadfast Talisman of the Shado-Pan Assault
+						i(94508),	-- Brutal Talismna of the Shado-Pan Assault
+						i(94509),	-- Soothing Talisman of the Shado-Pan Assault
+						i(94510),	-- Volatile Talisman of the Shado-Pan Assault
+						i(94511),	-- Vicious Talisman of the Shado-Pan Assault
 						i(97131),	-- Shadow-Pan Assault Tabard
 					}),
 					n(64607, {	-- Commander Lo Ping <Justice Quartermaster>
+						i(88995),	-- Shadow-Pan Dragon Gun
+						i(89232),	-- Mogu Rune of Paralysis
+						i(89522),	-- Mark of the Dancing Crane
+						i(89523),	-- Etched Golden Loop
+						i(89524),	-- Sorcerer-King's Seal
+						i(89525),	-- Thunderstone Ring
+						i(89526),	-- Signet of the Slumbering Emperor
+						i(89527),	-- Amulet of Swirling Mists
+						i(89528),	-- Necklace of Jade Pearls
+						i(89529),	-- Pendant of Endless Inquisiton
+						i(89530),	-- Triumphant Conqueror's Chain
+						i(89531),	-- Gorget of Usurped Kings
 						i(89532),	-- Bladesong Cloak
 						i(89533),	-- Cloak of Ancient Curses
 						i(89534),	-- Pressed Flower Cloak
@@ -1803,11 +1847,26 @@ _.Zones =
 						i(89061),	-- Klaxxi Lash of the Harbinger
 						i(89062),	-- Klaxxi Lash of the Orator
 						i(89063),	-- Klaxxi Lash of the Seeker
+						i(89064),	-- Bloodseeker's Solitaire
+						i(89065),	-- Choker of the Klaxxi'va
+						i(89066),	-- Paragon's Pale Pendant
+						i(89067),	-- Links of the Lucid
+						i(89068),	-- Wire of the Wakener
+						i(89069),	-- Ring of the Golden Stair
+						i(89070),	-- Anji's Keepsake
+						i(89071),	-- Alani's Inflexible Ring
+						i(89072),	-- Simple Harmonious Ring
+						i(89073),	-- Leven's Circle of Hope
 						i(89074),	-- Cloak of the Dark Disciple
 						i(89075),	-- Yi's Cloak of Courage
 						i(89076),	-- Blackguard Cape
 						i(89077),	-- Cloak of Snow Blossoms
 						i(89078),	-- Sagewhisper's Wrap
+						i(89079),	-- Lao-Chin's Liquid Courage
+						i(89080),	-- Scroll of Revered Ancestors
+						i(89081),	-- Blossom of Pure Snow
+						i(89082),	-- Hawkmaster's Talon
+						i(89083),	-- Iron Belly Wok
 						i(89087),	-- Poisoncrafter's Kilt
 						i(89088),	-- Leggings of the Poisoned Soul
 						i(89089),	-- Wind-Reaver Greaves
@@ -2081,6 +2140,21 @@ _.Zones =
 						i(83227),	-- Wasteland Chain Wristguards
 						i(83228),	-- Wasteland Heavy Armplates
 						i(83229),	-- Wasteland Armored Bracers
+						i(83230),	-- Wasteland Locket
+						i(83231),	-- Wasteland Choker
+						i(83232),	-- Wasteland Necklace
+						i(83233),	-- Wasteland Pendant
+						i(83234),	-- Wasteland Amulet
+						i(83235),	-- Wasteland Band
+						i(83236),	-- Wasteland Ring
+						i(83237),	-- Wasteland Loop
+						i(83238),	-- Wasteland Signet
+						i(83239),	-- Wasteland Seal
+						i(83245),	-- Wasteland Relic
+						i(83246),	-- Wasteland Sigil
+						i(83247),	-- Wasteland Emblem
+						i(83248),	-- Wasteland Insignia
+						i(83249),	-- Wasteland Badge
 						i(83255),	-- Wasteland Shawl
 						i(83256),	-- Wasteland Drape
 						i(83257),	-- Wasteland Cape
