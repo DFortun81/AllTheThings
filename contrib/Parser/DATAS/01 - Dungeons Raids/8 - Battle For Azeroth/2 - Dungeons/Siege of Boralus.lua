@@ -10,6 +10,11 @@ _.Instances =
 				["groups"] = {
 					d(23, { -- Mythic
 						["groups"] = {
+							ach(12489, { -- Losing My Profession
+								crit(7), -- Brutik Blackanvil
+								crit(8), -- Liz Vilepot
+								crit(6), -- Threshanator 3000
+							}),
 							e(2133, { -- Sergeant Bainbridge
 								["groups"] = {
 									i(159648), -- Bainbridge's Blackjack
@@ -27,6 +32,7 @@ _.Instances =
 							}),
 							e(2173, { -- Dread Captain Lockwood
 								["groups"] = {
+									ach(12727), -- Stand by Me
 									i(159649), -- Saber of Dread Pirate Lockwood
 									i(159372), -- Dread Captain's Irons
 									i(159237), -- Captain's Dustfinders
@@ -57,6 +63,8 @@ _.Instances =
 							}),
 							e(2140, { -- Viq'Goth
 								["groups"] = {
+									ach(12726), -- A Fish Out of Water
+									ach(12847), -- Siege of Boralus
 									i(159651), -- Coral-Edged Crescent
 									i(159310), -- Circlet of the Enveloping Leviathan
 									i(159252), -- Grasping Crown of the Deep

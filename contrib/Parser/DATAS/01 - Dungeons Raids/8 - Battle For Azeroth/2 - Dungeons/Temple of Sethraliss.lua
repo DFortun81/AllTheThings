@@ -59,6 +59,7 @@ _.Instances =
 							}),
 							e(2145, { -- Avatar of Sethraliss
 								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+									ach(12504), -- The Temple of Sethraliss
 									i(158373), -- Resonating Crystal Scimitar
 									i(159318), -- Hood of the Slithering Loa
 									i(159374), -- Sethraliss' Fanged Helm
@@ -130,6 +131,7 @@ _.Instances =
 							}),
 							e(2145, { -- Avatar of Sethraliss
 								["groups"] = {
+									ach(12505), -- Heroic: The Temple of Sethraliss
 									i(158373), -- Resonating Crystal Scimitar
 									i(159318), -- Hood of the Slithering Loa
 									i(159374), -- Sethraliss' Fanged Helm

@@ -52,6 +52,7 @@ _.Instances =
 							}),
 							e(2156, { -- Vol'zith the Whisperer
 								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+									ach(12835), -- Shrine of the Storm
 									i(159135), -- Deep Fathom's Bite
 									i(159302), -- Cowl of Fluid Machiantions
 									i(159430), -- Helm of Abyssal Malevolence
@@ -113,6 +114,7 @@ _.Instances =
 							}),
 							e(2156, { -- Vol'zith the Whisperer
 								["groups"] = {
+									ach(12837),  -- Heroic: Shrine of the Storm
 									i(159135), -- Deep Fathom's Bite
 									i(159302), -- Cowl of Fluid Machiantions
 									i(159430), -- Helm of Abyssal Malevolence
@@ -174,6 +176,7 @@ _.Instances =
 							}),
 							e(2155, { -- Lord Stormsong
 								["groups"] = {
+									ach(12601), -- The Void Lies Sleeping
 									{ -- Ensemble: Chain of the Scarlet Crusade
 										["groups"] = {
 											i(162592), -- Hood of the Tidesages
@@ -200,6 +203,8 @@ _.Instances =
 							}),
 							e(2156, { -- Vol'zith the Whisperer
 								["groups"] = {
+									ach(12838), -- Mythic: Shrine of the Storm
+									ach(12602), -- Trust No One
 									i(159135), -- Deep Fathom's Bite
 									i(159302), -- Cowl of Fluid Machiantions
 									i(159430), -- Helm of Abyssal Malevolence

@@ -56,6 +56,7 @@ _.Instances =
 							}),
 							e(2030, { -- Yazma
 								["groups"] = bubbleDown({["bonusID"] = 4}, {
+									ach(12824), -- Atal'Dazar
 									i(158323), -- Soulrender's Fang
 									i(159358), -- Coif of the Court Spider
 									i(158315), -- Secret Spinner's Miteer
@@ -121,6 +122,7 @@ _.Instances =
 							}),
 							e(2030, { -- Yazma
 								["groups"] = {
+									ach(12825), -- Heroic: Atal'Dazar
 									i(158323), -- Soulrender's Fang
 									i(159358), -- Coif of the Court Spider
 									i(158315), -- Secret Spinner's Miteer
@@ -187,6 +189,7 @@ _.Instances =
 							}),
 							e(2030, { -- Yazma
 								["groups"] = {
+									ach(12826), -- Mythic: Atal'Dazar
 									i(158323), -- Soulrender's Fang
 									i(159358), -- Coif of the Court Spider
 									i(158315), -- Secret Spinner's Miteer

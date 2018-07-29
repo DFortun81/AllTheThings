@@ -55,6 +55,7 @@ _.Instances =
 							}),
 							e(2096, { -- Overseer Korgus
 								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+									ach(12840), -- Tol Dagor
 									i(159129), -- Flamecaster Botefeux
 									i(159658), -- Cudgel of Correctional Oversight
 									i(159657), -- Korgus' Blackpowder Rifle
@@ -73,7 +74,6 @@ _.Instances =
 							}),
 						},
 					}),
-					
 					d(2, { -- Heroic
 						["groups"] = {
 							e(2097, { -- The Sand Queen
@@ -121,6 +121,7 @@ _.Instances =
 							}),
 							e(2096, { -- Overseer Korgus
 								["groups"] = {
+									ach(12841), -- Heroic: Tol Dagor
 									i(159129), -- Flamecaster Botefeux
 									i(159658), -- Cudgel of Correctional Oversight
 									i(159657), -- Korgus' Blackpowder Rifle
@@ -170,6 +171,7 @@ _.Instances =
 							}),
 							e(2099, { -- Knight Captain Valyri
 								["groups"] = {
+									ach(12457), -- Remix to Ignition
 									i(159441), -- Valyri's Fire-Proof Bracers
 									i(159389), -- Flint-Linked Wristguards
 									i(159390), -- Sure-Grip Munition Handlers
@@ -186,6 +188,8 @@ _.Instances =
 							}),
 							e(2096, { -- Overseer Korgus
 								["groups"] = {
+									ach(12842), -- Mythic: Tol Dagor
+									ach(12462), -- Shot Through the Heart
 									i(159129), -- Flamecaster Botefeux
 									i(159658), -- Cudgel of Correctional Oversight
 									i(159657), -- Korgus' Blackpowder Rifle

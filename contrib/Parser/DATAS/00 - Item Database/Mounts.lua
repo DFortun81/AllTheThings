@@ -106,3 +106,5 @@ i(163128, 272472);	-- Undercity Plaguebat
 i(159842, 254813);	-- Sharkbait's Favorite Crackers
 i(159921, 266058);	-- Mummified Raptor Skull
 i(160829, 273541);  -- Underrot Crawg Harness
+i(161215, 239049);  -- Reins of the Obsidian Krolusk
+i(163216, 250735);  -- Bloodgorged Crawg

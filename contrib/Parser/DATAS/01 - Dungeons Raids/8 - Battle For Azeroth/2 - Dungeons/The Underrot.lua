@@ -56,6 +56,7 @@ _.Instances =
 							}),
 							e(2158, { -- Unbound Abomination
 								["groups"] =  bubbleDown({["bonusID"] = 4776}, {
+									ach(12500), -- Underrot
 									i(159655), -- Vile Exasanguinator
 									i(159446), -- Greathelm of the Putrid Path
 									i(159381), -- Visage of Bloody  Horrors
@@ -122,6 +123,7 @@ _.Instances =
 							}),
 							e(2158, { -- Unbound Abomination
 								["groups"] = {
+									ach(12501), -- Heroic: Underrot
 									i(159655), -- Vile Exasanguinator
 									i(159446), -- Greathelm of the Putrid Path
 									i(159381), -- Visage of Bloody  Horrors
@@ -144,6 +146,7 @@ _.Instances =
 						["groups"] = {
 							e(2157, { -- Elder Leaxa
 								["groups"] = {
+									ach(12498), -- Taint Nobody Got Time For That
 									i(159324), -- Blood Elder's Bindings
 									i(159402), -- Waistguard of Sanguine Fervor
 									i(159443), -- Legplates of Profane Sacrifice
@@ -173,6 +176,7 @@ _.Instances =
 							}),
 							e(2130, { -- Sporecaller Zancha
 								["groups"] = {
+									ach(12549), -- Not a Fun Guy
 									i(159654), -- Corruption Borne Headlopper
 									i(159665), -- Targee of the Ancient Warder
 									i(159292), -- Sporecaller's Shroud
@@ -188,6 +192,8 @@ _.Instances =
 							}),
 							e(2158, { -- Unbound Abomination
 								["groups"] = {
+									ach(12502), -- Mythic: Underrot
+									ach(12499), -- Sporely Alive
 									i(160829), -- Underrot Crawg Harness
 									i(159655), -- Vile Exasanguinator
 									i(159446), -- Greathelm of the Putrid Path

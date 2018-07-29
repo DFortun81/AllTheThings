@@ -75,6 +75,7 @@ _.Instances =
 							}),
 							e(2129, { -- Gorak Tul
 								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+									ach(12483), -- Waycrest Manor
 									i(159662), -- Blightreaper
 									i(159279), -- Soulfuel Headdress
 									i(159398), -- Soulscarred Headgear
@@ -159,6 +160,7 @@ _.Instances =
 							}),
 							e(2129, { -- Gorak Tul
 								["groups"] = {
+									ach(12484), -- Heroic: Waycrest Manor
 									i(159662), -- Blightreaper
 									i(159279), -- Soulfuel Headdress
 									i(159398), -- Soulscarred Headgear
@@ -178,6 +180,13 @@ _.Instances =
 					}),
 					d(23, { -- Mythic
 						["groups"] = {
+							ach(12489, { -- Losing My Profession
+								crit(1), -- Governess Tabitha
+								crit(3), -- Groundskeeper Lilith
+								crit(2), -- Head Vintner Justin
+								crit(5), -- Huntmaster Grath
+								crit(4), -- Seamstress Johanna
+							}),
 							e(2125, { -- Heartsbane Triad
 								["groups"] = {
 									i(159133), -- Jagged Iris Sica
@@ -198,6 +207,7 @@ _.Instances =
 							}),
 							e(2126, { -- Soulbound Goliath
 								["groups"] = {
+									ach(12495), -- Run Wild Like a Man On Fire
 									i(159659), -- Sinister Wicker Talons
 									i(159282), -- Drust-Thatched Wristwraps
 									i(159399), -- Thornshaper Mitts
@@ -243,6 +253,8 @@ _.Instances =
 							}),
 							e(2129, { -- Gorak Tul
 								["groups"] = {
+									ach(12490), -- Alchemical Romance
+									ach(12488), -- Mythic: Waycrest Manor
 									i(159662), -- Blightreaper
 									i(159279), -- Soulfuel Headdress
 									i(159398), -- Soulscarred Headgear

@@ -25,5 +25,5 @@ _.Instances = {
 			ach(643),	-- Lower Blackrock Spire
 			ach(645),	-- Scholomance
 		})),
-	})
+	}),
 };

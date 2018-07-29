@@ -59,6 +59,7 @@ _.Instances =
 							}),
 							e(2095,  { -- Harlan Sweete
 								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+									ach(12831), -- Freehold
 									i(159635), -- Bloody Tideturner
 									i(155888), -- Irontide Captain's Hat
 									i(155885), -- Sea-Brawler's Greathelm
@@ -148,6 +149,8 @@ _.Instances =
 						["groups"] = {
 							e(2102, { -- Skycap'n Kragg
 								["groups"] = {
+									ach(12548), -- I'm in Charge Now!
+									ach(12550), -- Pecking Order
 									i(159633), -- Sharkbait's Fishhook
 									i(155884), -- Parrotfeather Cloak
 									i(159227), -- Silk Cuffs of the Skycap'n
@@ -195,6 +198,7 @@ _.Instances =
 							}),
 							e(2095, { -- Harlan Sweete
 								["groups"] = {
+									ach(12998), -- That Sweete Booty
 									i(159842), -- Sharkbait's Favorite Crackers
 									i(159635), -- Bloody Tideturner
 									i(155888), -- Irontide Captain's Hat

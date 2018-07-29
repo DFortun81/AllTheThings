@@ -13,7 +13,17 @@ _.Instances =
 							ach(12521, { -- Halls of Containment
 								e(2168, { -- Taloc
 									["groups"] = {
-										
+										i(160679), -- Khor, Hammer of the Corrupted
+										i(160680), -- Titanspark Animator
+										i(160637), -- Crimson Colossus Armguards
+										i(160629), -- Rubywrought Sparkguards
+										i(160618), -- Gloves of Descending Madness
+										i(160622), -- Bloodstorm Buckle
+										i(160639), -- Greaves of Unending Vigil
+										i(160631), -- Legguards of Coalescing Plasma
+										i(160714), -- Volatile Walkers
+										i(160652), -- Construct Overcharger
+										i(160651), -- Vigilant's Bloodshaper
 									},
 									["crs"] = {
 										137119, -- Taloc
@@ -23,7 +33,17 @@ _.Instances =
 								}),
 								e(2167, { -- MOTHER
 									["groups"] = {
-										
+										i(160681), -- Glaive of the Keepers
+										i(160683), -- Latticework Scalpel
+										i(160682), -- Mother's Twin Gaze
+										i(160695), -- Uldir Subject Manifest
+										i(160634), -- Gridrunner Galea
+										i(160632), -- Flame-Sterilized Spaulders
+										i(160626), -- Gloves of Involuntary Amputation
+										i(160638), -- Decontaminator's Greatbelt
+										i(160615), -- Leggings of Lingering Infestation
+										i(160625), -- Pathogenic Legwraps
+										i(160645), -- Rot-Scour Ring
 									},
 									["crs"] = {
 										140853, -- MOTHER
@@ -34,7 +54,18 @@ _.Instances =
 								}),
 								e(2169, { -- Zek'voz, Herald  of N'zoth
 									["groups"] = {
-										
+										i(160688), -- Void-Binder
+										i(160687), -- Containment Analysis Baton
+										i(160613), -- Mantle of Contained Corruption
+										i(160627), -- Chainvest of Assured Quality
+										i(160617), -- Void-Lashed Wristband
+										i(160717), -- Replicated Chitin Cord
+										i(160633), -- Titanspark Energy Girdle
+										i(160718), -- Greaves of Creeping Darkness
+										i(160624), -- Quarantine Protocol Treads
+										i(160640), -- Warboots of Absolute Eradication
+										i(160647), -- Ring of the Infinite Void
+										i(160650), -- Disc of Systematic Regression
 									},
 									["crs"] = {
 										134445, -- Zek'voz <Herald of N'zoth>
@@ -46,7 +77,17 @@ _.Instances =
 							ach(12522, { -- Crimson Descent
 								e(2166, { -- Vectis
 									["groups"] = {
-										
+										i(160678), -- Bow of Virulent Infection
+										i(160698), -- Vector Deflector
+										i(160623), -- Hood of Pestilent Ichor
+										i(160644), -- Plasma-Spattered Greatcloak
+										i(160636), -- Chestguard of Virulent Mutagens
+										i(160621), -- Wristwraps of Coursing Miasma
+										i(160715), -- Mutagenic Protofluid Handwraps
+										i(160734), -- Cord of Animated Contagion
+										i(160716), -- Blighted Anima Greaves
+										i(160649), -- Inoculating Extract
+										i(160655), -- Syringe of Bloodborne Infirmity
 									},
 									["crs"] = {
 										134442, -- Vectis
@@ -54,7 +95,14 @@ _.Instances =
 								}),
 								e(2146, { -- Fetid Devourer
 									["groups"] = {
-										
+										i(160689), -- Regurgitated Purifier's Flamestaff
+										i(160685), -- Biomelding Cleaver
+										i(160616), -- Horrific Amalgam's Hood
+										i(160643), -- Fetid Horror's Tanglecloak
+										i(160619), -- Jerkin of the Aberrant Chimera
+										i(160635), -- Waste Disposal Crushers
+										i(160628), -- Fused Monstrosity Stompers
+										i(160648), -- Frenetic Corpuscle
 									},
 									["crs"] = {
 										133298, -- Fetid Devourer
@@ -63,7 +111,16 @@ _.Instances =
 								}),
 								e(2195, { -- Zul, Reborn
 									["groups"] = {
-										
+										i(160684), -- Pursax, the Backborer
+										i(160691), -- Tusk of the Reborn Prophet
+										i(160630), -- Crest of the Undying Visionary
+										i(160719), -- Visage of the Ascended Prophet
+										i(160620), -- Usurper's Bloodcaked Spaulders
+										i(160642), -- Cloak of Rippling Whispers
+										i(160722), -- Chestplate of Apocalyptic Machinations
+										i(160720), -- Armbands of Sacrosanct Acts
+										i(160723), -- Imperious Vambraces
+										i(160724), -- Cincture of Profane Deeds
 									},
 									["crs"] = {
 										138967, -- Zul
@@ -76,7 +133,17 @@ _.Instances =
 							ach(12523, { -- Heart of Corruption
 								e(2194, { -- Mythrax the Unraveler
 									["groups"] = {
-										
+										i(160686), -- Voror, Gleaming Blade of the Stalwart
+										i(160692), -- Luminous Edge of Virtue
+										i(160696), -- Codex of Imminent Ruin
+										i(163596), -- Cowl of Dark Portents
+										i(160641), -- Chitinspine Pauldrons
+										i(160725), -- C'thraxxi General's Hauberk
+										i(160614), -- Robes of the Unraveler
+										i(160721), -- Oblivion Crushers
+										i(160646), -- Band of Certain Annihilation
+										i(160656), -- Twitching Tentacle of Xalzaix
+										i(160653), -- Xalzaix's Veiled Eye
 									},
 									["crs"] = {
 										136383, -- Mythrax the Unraveler
@@ -110,7 +177,18 @@ _.Instances =
 						["groups"] = {
 							e(2168, { -- Taloc
 								["groups"] = {
-									
+									ach(12937), -- Elevator Music
+									i(160679), -- Khor, Hammer of the Corrupted
+									i(160680), -- Titanspark Animator
+									i(160637), -- Crimson Colossus Armguards
+									i(160629), -- Rubywrought Sparkguards
+									i(160618), -- Gloves of Descending Madness
+									i(160622), -- Bloodstorm Buckle
+									i(160639), -- Greaves of Unending Vigil
+									i(160631), -- Legguards of Coalescing Plasma
+									i(160714), -- Volatile Walkers
+									i(160652), -- Construct Overcharger
+									i(160651), -- Vigilant's Bloodshaper
 								},
 								["crs"] = {
 									137119, -- Taloc
@@ -120,7 +198,18 @@ _.Instances =
 							}),
 							e(2167, { -- MOTHER
 								["groups"] = {
-									
+									ach(12938), -- Parental Controls
+									i(160681), -- Glaive of the Keepers
+									i(160683), -- Latticework Scalpel
+									i(160682), -- Mother's Twin Gaze
+									i(160695), -- Uldir Subject Manifest
+									i(160634), -- Gridrunner Galea
+									i(160632), -- Flame-Sterilized Spaulders
+									i(160626), -- Gloves of Involuntary Amputation
+									i(160638), -- Decontaminator's Greatbelt
+									i(160615), -- Leggings of Lingering Infestation
+									i(160625), -- Pathogenic Legwraps
+									i(160645), -- Rot-Scour Ring
 								},
 								["crs"] = {
 									140853, -- MOTHER
@@ -131,7 +220,15 @@ _.Instances =
 							}),
 							e(2146, { -- Fetid Devourer
 								["groups"] = {
-									
+									ach(12828), -- Thrash Mouth - All Stars
+									i(160689), -- Regurgitated Purifier's Flamestaff
+									i(160685), -- Biomelding Cleaver
+									i(160616), -- Horrific Amalgam's Hood
+									i(160643), -- Fetid Horror's Tanglecloak
+									i(160619), -- Jerkin of the Aberrant Chimera
+									i(160635), -- Waste Disposal Crushers
+									i(160628), -- Fused Monstrosity Stompers
+									i(160648), -- Frenetic Corpuscle
 								},
 								["crs"] = {
 									133298, -- Fetid Devourer
@@ -140,7 +237,19 @@ _.Instances =
 							}),
 							e(2169, { -- Zek'voz, Herald  of N'zoth
 								["groups"] = {
-									
+									ach(12828), -- What's in the Box?
+									i(160688), -- Void-Binder
+									i(160687), -- Containment Analysis Baton
+									i(160613), -- Mantle of Contained Corruption
+									i(160627), -- Chainvest of Assured Quality
+									i(160617), -- Void-Lashed Wristband
+									i(160717), -- Replicated Chitin Cord
+									i(160633), -- Titanspark Energy Girdle
+									i(160718), -- Greaves of Creeping Darkness
+									i(160624), -- Quarantine Protocol Treads
+									i(160640), -- Warboots of Absolute Eradication
+									i(160647), -- Ring of the Infinite Void
+									i(160650), -- Disc of Systematic Regression
 								},
 								["crs"] = {
 									134445, -- Zek'voz <Herald of N'zoth>
@@ -150,7 +259,18 @@ _.Instances =
 							}),
 							e(2166, { -- Vectis
 								["groups"] = {
-									
+									ach(12772), -- Now We Got Bad Blood
+									i(160678), -- Bow of Virulent Infection
+									i(160698), -- Vector Deflector
+									i(160623), -- Hood of Pestilent Ichor
+									i(160644), -- Plasma-Spattered Greatcloak
+									i(160636), -- Chestguard of Virulent Mutagens
+									i(160621), -- Wristwraps of Coursing Miasma
+									i(160715), -- Mutagenic Protofluid Handwraps
+									i(160734), -- Cord of Animated Contagion
+									i(160716), -- Blighted Anima Greaves
+									i(160649), -- Inoculating Extract
+									i(160655), -- Syringe of Bloodborne Infirmity
 								},
 								["crs"] = {
 									134442, -- Vectis
@@ -158,7 +278,17 @@ _.Instances =
 							}),
 							e(2195, { -- Zul, Reborn
 								["groups"] = {
-									
+									ach(12830), -- Edgelords
+									i(160684), -- Pursax, the Backborer
+									i(160691), -- Tusk of the Reborn Prophet
+									i(160630), -- Crest of the Undying Visionary
+									i(160719), -- Visage of the Ascended Prophet
+									i(160620), -- Usurper's Bloodcaked Spaulders
+									i(160642), -- Cloak of Rippling Whispers
+									i(160722), -- Chestplate of Apocalyptic Machinations
+									i(160720), -- Armbands of Sacrosanct Acts
+									i(160723), -- Imperious Vambraces
+									i(160724), -- Cincture of Profane Deeds
 								},
 								["crs"] = {
 									138967, -- Zul
@@ -169,7 +299,18 @@ _.Instances =
 							}),
 							e(2194, { -- Mythrax the Unraveler
 								["groups"] = {
-									
+									ach(12836), -- Existential Crisis
+									i(160686), -- Voror, Gleaming Blade of the Stalwart
+									i(160692), -- Luminous Edge of Virtue
+									i(160696), -- Codex of Imminent Ruin
+									i(163596), -- Cowl of Dark Portents
+									i(160641), -- Chitinspine Pauldrons
+									i(160725), -- C'thraxxi General's Hauberk
+									i(160614), -- Robes of the Unraveler
+									i(160721), -- Oblivion Crushers
+									i(160646), -- Band of Certain Annihilation
+									i(160656), -- Twitching Tentacle of Xalzaix
+									i(160653), -- Xalzaix's Veiled Eye
 								},
 								["crs"] = {
 									136383, -- Mythrax the Unraveler
@@ -177,6 +318,7 @@ _.Instances =
 							}),
 							e(2147, { -- G'huun
 								["groups"] = {
+									ach(12551), -- Double Dribble
 									i(160693), -- Lancet of the Deft Hand
 									i(160694), -- Re-Origination Pulse Rifle
 									i(160699), -- Bararicade of Purifying Resolve
@@ -202,7 +344,17 @@ _.Instances =
 						["groups"] = {
 							e(2168, { -- Taloc
 								["groups"] = {
-									
+									i(160679), -- Khor, Hammer of the Corrupted
+									i(160680), -- Titanspark Animator
+									i(160637), -- Crimson Colossus Armguards
+									i(160629), -- Rubywrought Sparkguards
+									i(160618), -- Gloves of Descending Madness
+									i(160622), -- Bloodstorm Buckle
+									i(160639), -- Greaves of Unending Vigil
+									i(160631), -- Legguards of Coalescing Plasma
+									i(160714), -- Volatile Walkers
+									i(160652), -- Construct Overcharger
+									i(160651), -- Vigilant's Bloodshaper
 								},
 								["crs"] = {
 									137119, -- Taloc
@@ -212,7 +364,17 @@ _.Instances =
 							}),
 							e(2167, { -- MOTHER
 								["groups"] = {
-									
+									i(160681), -- Glaive of the Keepers
+									i(160683), -- Latticework Scalpel
+									i(160682), -- Mother's Twin Gaze
+									i(160695), -- Uldir Subject Manifest
+									i(160634), -- Gridrunner Galea
+									i(160632), -- Flame-Sterilized Spaulders
+									i(160626), -- Gloves of Involuntary Amputation
+									i(160638), -- Decontaminator's Greatbelt
+									i(160615), -- Leggings of Lingering Infestation
+									i(160625), -- Pathogenic Legwraps
+									i(160645), -- Rot-Scour Ring
 								},
 								["crs"] = {
 									140853, -- MOTHER
@@ -223,7 +385,14 @@ _.Instances =
 							}),
 							e(2146, { -- Fetid Devourer
 								["groups"] = {
-									
+									i(160689), -- Regurgitated Purifier's Flamestaff
+									i(160685), -- Biomelding Cleaver
+									i(160616), -- Horrific Amalgam's Hood
+									i(160643), -- Fetid Horror's Tanglecloak
+									i(160619), -- Jerkin of the Aberrant Chimera
+									i(160635), -- Waste Disposal Crushers
+									i(160628), -- Fused Monstrosity Stompers
+									i(160648), -- Frenetic Corpuscle
 								},
 								["crs"] = {
 									133298, -- Fetid Devourer
@@ -232,7 +401,18 @@ _.Instances =
 							}),
 							e(2169, { -- Zek'voz, Herald  of N'zoth
 								["groups"] = {
-									
+									i(160688), -- Void-Binder
+									i(160687), -- Containment Analysis Baton
+									i(160613), -- Mantle of Contained Corruption
+									i(160627), -- Chainvest of Assured Quality
+									i(160617), -- Void-Lashed Wristband
+									i(160717), -- Replicated Chitin Cord
+									i(160633), -- Titanspark Energy Girdle
+									i(160718), -- Greaves of Creeping Darkness
+									i(160624), -- Quarantine Protocol Treads
+									i(160640), -- Warboots of Absolute Eradication
+									i(160647), -- Ring of the Infinite Void
+									i(160650), -- Disc of Systematic Regression
 								},
 								["crs"] = {
 									134445, -- Zek'voz <Herald of N'zoth>
@@ -242,7 +422,17 @@ _.Instances =
 							}),
 							e(2166, { -- Vectis
 								["groups"] = {
-									
+									i(160678), -- Bow of Virulent Infection
+									i(160698), -- Vector Deflector
+									i(160623), -- Hood of Pestilent Ichor
+									i(160644), -- Plasma-Spattered Greatcloak
+									i(160636), -- Chestguard of Virulent Mutagens
+									i(160621), -- Wristwraps of Coursing Miasma
+									i(160715), -- Mutagenic Protofluid Handwraps
+									i(160734), -- Cord of Animated Contagion
+									i(160716), -- Blighted Anima Greaves
+									i(160649), -- Inoculating Extract
+									i(160655), -- Syringe of Bloodborne Infirmity
 								},
 								["crs"] = {
 									134442, -- Vectis
@@ -250,7 +440,16 @@ _.Instances =
 							}),
 							e(2195, { -- Zul, Reborn
 								["groups"] = {
-									
+									i(160684), -- Pursax, the Backborer
+									i(160691), -- Tusk of the Reborn Prophet
+									i(160630), -- Crest of the Undying Visionary
+									i(160719), -- Visage of the Ascended Prophet
+									i(160620), -- Usurper's Bloodcaked Spaulders
+									i(160642), -- Cloak of Rippling Whispers
+									i(160722), -- Chestplate of Apocalyptic Machinations
+									i(160720), -- Armbands of Sacrosanct Acts
+									i(160723), -- Imperious Vambraces
+									i(160724), -- Cincture of Profane Deeds
 								},
 								["crs"] = {
 									138967, -- Zul
@@ -261,7 +460,17 @@ _.Instances =
 							}),
 							e(2194, { -- Mythrax the Unraveler
 								["groups"] = {
-									
+									i(160686), -- Voror, Gleaming Blade of the Stalwart
+									i(160692), -- Luminous Edge of Virtue
+									i(160696), -- Codex of Imminent Ruin
+									i(163596), -- Cowl of Dark Portents
+									i(160641), -- Chitinspine Pauldrons
+									i(160725), -- C'thraxxi General's Hauberk
+									i(160614), -- Robes of the Unraveler
+									i(160721), -- Oblivion Crushers
+									i(160646), -- Band of Certain Annihilation
+									i(160656), -- Twitching Tentacle of Xalzaix
+									i(160653), -- Xalzaix's Veiled Eye
 								},
 								["crs"] = {
 									136383, -- Mythrax the Unraveler
@@ -294,7 +503,18 @@ _.Instances =
 						["groups"] = {
 							e(2168, { -- Taloc
 								["groups"] = {
-									
+									ach(12524), --  Mythic: Taloc
+									i(160679), -- Khor, Hammer of the Corrupted
+									i(160680), -- Titanspark Animator
+									i(160637), -- Crimson Colossus Armguards
+									i(160629), -- Rubywrought Sparkguards
+									i(160618), -- Gloves of Descending Madness
+									i(160622), -- Bloodstorm Buckle
+									i(160639), -- Greaves of Unending Vigil
+									i(160631), -- Legguards of Coalescing Plasma
+									i(160714), -- Volatile Walkers
+									i(160652), -- Construct Overcharger
+									i(160651), -- Vigilant's Bloodshaper
 								},
 								["crs"] = {
 									137119, -- Taloc
@@ -304,7 +524,18 @@ _.Instances =
 							}),
 							e(2167, { -- MOTHER
 								["groups"] = {
-									
+									ach(12526), --  Mythic: MOTHER
+									i(160681), -- Glaive of the Keepers
+									i(160683), -- Latticework Scalpel
+									i(160682), -- Mother's Twin Gaze
+									i(160695), -- Uldir Subject Manifest
+									i(160634), -- Gridrunner Galea
+									i(160632), -- Flame-Sterilized Spaulders
+									i(160626), -- Gloves of Involuntary Amputation
+									i(160638), -- Decontaminator's Greatbelt
+									i(160615), -- Leggings of Lingering Infestation
+									i(160625), -- Pathogenic Legwraps
+									i(160645), -- Rot-Scour Ring
 								},
 								["crs"] = {
 									140853, -- MOTHER
@@ -315,7 +546,15 @@ _.Instances =
 							}),
 							e(2146, { -- Fetid Devourer
 								["groups"] = {
-									
+									ach(12530), --  Mythic: Fetid Devourer
+									i(160689), -- Regurgitated Purifier's Flamestaff
+									i(160685), -- Biomelding Cleaver
+									i(160616), -- Horrific Amalgam's Hood
+									i(160643), -- Fetid Horror's Tanglecloak
+									i(160619), -- Jerkin of the Aberrant Chimera
+									i(160635), -- Waste Disposal Crushers
+									i(160628), -- Fused Monstrosity Stompers
+									i(160648), -- Frenetic Corpuscle
 								},
 								["crs"] = {
 									133298, -- Fetid Devourer
@@ -324,7 +563,19 @@ _.Instances =
 							}),
 							e(2169, { -- Zek'voz, Herald  of N'zoth
 								["groups"] = {
-									
+									ach(12527), --  Mythic: Zek'voz
+									i(160688), -- Void-Binder
+									i(160687), -- Containment Analysis Baton
+									i(160613), -- Mantle of Contained Corruption
+									i(160627), -- Chainvest of Assured Quality
+									i(160617), -- Void-Lashed Wristband
+									i(160717), -- Replicated Chitin Cord
+									i(160633), -- Titanspark Energy Girdle
+									i(160718), -- Greaves of Creeping Darkness
+									i(160624), -- Quarantine Protocol Treads
+									i(160640), -- Warboots of Absolute Eradication
+									i(160647), -- Ring of the Infinite Void
+									i(160650), -- Disc of Systematic Regression
 								},
 								["crs"] = {
 									134445, -- Zek'voz <Herald of N'zoth>
@@ -334,7 +585,18 @@ _.Instances =
 							}),
 							e(2166, { -- Vectis
 								["groups"] = {
-									
+									ach(12529), --  Mythic: Vectis
+									i(160678), -- Bow of Virulent Infection
+									i(160698), -- Vector Deflector
+									i(160623), -- Hood of Pestilent Ichor
+									i(160644), -- Plasma-Spattered Greatcloak
+									i(160636), -- Chestguard of Virulent Mutagens
+									i(160621), -- Wristwraps of Coursing Miasma
+									i(160715), -- Mutagenic Protofluid Handwraps
+									i(160734), -- Cord of Animated Contagion
+									i(160716), -- Blighted Anima Greaves
+									i(160649), -- Inoculating Extract
+									i(160655), -- Syringe of Bloodborne Infirmity
 								},
 								["crs"] = {
 									134442, -- Vectis
@@ -342,7 +604,17 @@ _.Instances =
 							}),
 							e(2195, { -- Zul, Reborn
 								["groups"] = {
-									
+									ach(12828), --  Mythic: Zul
+									i(160684), -- Pursax, the Backborer
+									i(160691), -- Tusk of the Reborn Prophet
+									i(160630), -- Crest of the Undying Visionary
+									i(160719), -- Visage of the Ascended Prophet
+									i(160620), -- Usurper's Bloodcaked Spaulders
+									i(160642), -- Cloak of Rippling Whispers
+									i(160722), -- Chestplate of Apocalyptic Machinations
+									i(160720), -- Armbands of Sacrosanct Acts
+									i(160723), -- Imperious Vambraces
+									i(160724), -- Cincture of Profane Deeds
 								},
 								["crs"] = {
 									138967, -- Zul
@@ -353,7 +625,18 @@ _.Instances =
 							}),
 							e(2194, { -- Mythrax the Unraveler
 								["groups"] = {
-									
+									ach(12532), --  Mythic: Myhrax
+									i(160686), -- Voror, Gleaming Blade of the Stalwart
+									i(160692), -- Luminous Edge of Virtue
+									i(160696), -- Codex of Imminent Ruin
+									i(163596), -- Cowl of Dark Portents
+									i(160641), -- Chitinspine Pauldrons
+									i(160725), -- C'thraxxi General's Hauberk
+									i(160614), -- Robes of the Unraveler
+									i(160721), -- Oblivion Crushers
+									i(160646), -- Band of Certain Annihilation
+									i(160656), -- Twitching Tentacle of Xalzaix
+									i(160653), -- Xalzaix's Veiled Eye
 								},
 								["crs"] = {
 									136383, -- Mythrax the Unraveler
@@ -361,6 +644,9 @@ _.Instances =
 							}),
 							e(2147, { -- G'huun
 								["groups"] = {
+									ach(12533, { --  Mythic: G'huun
+										title(381), -- %s the Purifier
+									}),
 									i(160693), -- Lancet of the Deft Hand
 									i(160694), -- Re-Origination Pulse Rifle
 									i(160699), -- Bararicade of Purifying Resolve

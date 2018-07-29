@@ -158,6 +158,8 @@ _.Toys =
 		i(127709), 		-- Throbbing Blood Orb
 		i(32782), 		-- Time-Lost Figurine
 		i(130169),		-- Tournament Favor
+		i(163828),		-- Toy Siege Tower
+		i(163829), 		-- Toy War Machine
 		i(153004), 		-- Unstable Portal Emitter
 		i(141301),		-- Unstable Powder Box
 		i(141331), 		-- Vial of Green Goo

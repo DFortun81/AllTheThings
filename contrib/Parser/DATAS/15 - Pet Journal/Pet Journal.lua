@@ -963,6 +963,7 @@ _.PetJournal =
 		un(10, p(249)),		-- Lil' K.T.
 		p(458),		-- Lost of Lordaeron
 		p(1351),	-- Macabre Marionette
+		p(2202), 	-- Miimii
 		p(1145),	-- Mr. Bigglesworth
 		p(2002), 	-- Naxxy
 		p(1954),	-- Nerubian Swarmer

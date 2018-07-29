@@ -16,6 +16,7 @@ _.Mounts =
 		i(116666),		-- Blacksteel Battleboar
 		i(153041),		-- Bleakhoof Ruinstrider
 		i(51954),		-- Bloodbathed Frostbrood Vanquisher
+		i(163216), 		-- Bloodgorged Crawg
 		i(44843),		-- Blue Dragonhawk
 		i(120968),	-- Chauffeured Mekgineer's Chopper (Alliance)
 		i(122703),	-- Chauffeured Mekgineer's Chopper (Horde)
@@ -40,6 +41,7 @@ _.Mounts =
 		i(155656),	-- Lightforged Felcrusher (Alliance)
 		i(140500),		-- Mechanized Lumber Extractor
 		i(156487),	-- Nightborne Manasaber (Horde)
+		i(161215), -- Reins of the Obsidian Krolusk
 		i(89785),	-- Pandaren Kite (Alliance)
 		i(81559),	-- Pandaren Kite (Horde)
 		i(140408), -- Prestigious Azure Courser

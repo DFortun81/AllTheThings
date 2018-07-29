@@ -55,6 +55,7 @@ _.Instances =
 							}),
 							e(2116, { -- Mogul Razdunk
 								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+									ach(12844),  -- The MOTHERLODE!!
 									i(159641), -- G3T-00t
 									i(158364), -- High Altitude Turban
 									i(159360), -- Crashguard Spaulders
@@ -118,6 +119,7 @@ _.Instances =
 							}),
 							e(2116, { -- Mogul Razdunk
 								["groups"] = {
+									ach(12845), -- Heroic: The MOTHERLODE!!
 									i(159641), -- G3T-00t
 									i(158364), -- High Altitude Turban
 									i(159360), -- Crashguard Spaulders
@@ -181,6 +183,7 @@ _.Instances =
 							}),
 							e(2116, { -- Mogul Razdunk
 								["groups"] = {
+									ach(12846), -- Mythic: The MOTHERELODE!!
 									i(161135), -- Schematic: MechaMogul Mk2
 									i(159641), -- G3T-00t
 									i(158364), -- High Altitude Turban

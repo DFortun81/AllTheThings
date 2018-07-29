@@ -10,6 +10,9 @@ _.Instances =
 				["groups"] = {
 					d(23, { -- Mythic
 						["groups"] = {
+							ach(12723, { -- How to Keep a Mummy
+								i(161214), -- Thousand Year Old Mummy Wraps
+							}),
 							e(2165, { -- The Golden Serpent
 								["groups"] = {
 									i(159137), -- Gilded Serpent's Tooth
@@ -58,6 +61,7 @@ _.Instances =
 							}),
 							e(2172, { -- Dazar, The First King
 								["groups"] = {
+									ach(12848), -- Kings' Rest
 									i(159921), -- Mummified Raptor Skull
 									i(159644), -- Geti'ikku, Cut of Death
 									i(159645), -- Headcracker of Supplication
