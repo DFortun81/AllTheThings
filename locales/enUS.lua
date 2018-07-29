@@ -441,6 +441,7 @@ AllTheThings.Locales.enUS = {
 		[-219] = "Interface\\MINIMAP\\TRACKING\\Profession",					-- Profession Trainers
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",							-- Class
 		[-221] = "Interface\\Icons\\inv_orderhall_orderresources",				-- Bonus Objectives
+		[-222] = "Interface\\Icons\\inv_misc_coin_01",							-- Treasure Hunter
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1042,6 +1043,7 @@ AllTheThings.Locales.enUS = {
 		[-219] = MINIMAP_TRACKING_TRAINER_PROFESSION,							-- Profession Trainers
 		[-220] = CLASS,															-- Class
 		[-221] = TASKS_BONUS_OBJECTIVES,										-- Bonus Objectives
+		[-222] = select(2, GetAchievementInfo(9726)),							-- Treasure Hunter
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
