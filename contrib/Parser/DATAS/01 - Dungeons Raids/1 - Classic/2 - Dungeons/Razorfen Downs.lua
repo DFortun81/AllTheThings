@@ -4,7 +4,7 @@
 
 _.Instances = 
 {
-	{ -- Classic
+	{	-- Classic
 		["groups"] = {
 			inst(233, { 	-- Razorfen Downs
 				["groups"] = {
@@ -25,71 +25,70 @@ _.Instances =
 						}),
 					}),
 					n(0, {				-- Zone Drop
-						n(74947, {	-- Boneflayer Ghoul
-							dr(0.03, i(10570)),	-- Manslayer
-							dr(0.02, i(10573)),	-- Boneslasher
-							dr(0.02, i(10574)),	-- Corpseshroud
-							dr(0.01, i(10581)),	-- Death's Head Vestment
-							dr(0.01, i(10567)),	-- Quillshooter
-							dr(0.01, i(10578)),	-- Thoughtcast Boots
-						}),						
-						n(74492, {	-- Bubonic Geist
-							dr(0.01, i(10573)),	-- Boneslasher
-							dr(0.01, i(10582)),	-- Briar Tredders
-							dr(0.01, i(10574)),	-- Corpseshroud
-							dr(0.01, i(10571)),	-- Ebony Boneclub
-							dr(0.01, i(10572)),	-- Freezing Shard
-							dr(0.01, i(10584)),	-- Stormgale Fists
+						i(10573, {	-- Boneslasher
+							["crs"] = {
+								74947,	-- Boneflayer Ghoul
+								74478,	-- Death's Head Shadowmender
+							},
 						}),
-						n(74483, {	-- Death's Head Arachnomancer
-							dr(0.04, i(10570)),	-- Manslayer
-							dr(0.02, i(10582)),	-- Briar Tredders
-							dr(0.02, i(10571)),	-- Ebony Boneclub
-							dr(0.01, i(10574)),	-- Corpseshroud
-							dr(0.01, i(10567)),	-- Quillshooter
-							dr(0.01, i(10578)),	-- Thoughtcast Boots
+						i(10582, {	-- Briar Tredders
+							["crs"] = {
+								74492,	-- Bubonic Geist
+								74483,	-- Death's Head Arachnomancer
+								74411,	-- Death's Head Necrolyte
+							},
 						}),
-						n(74411, {	-- Death's Head Necrolyte
-							dr(0.30, i(10574)),	-- Corpseshroud
-							dr(0.03, i(10582)),	-- Briar Tredders
-							dr(0.01, i(10571)),	-- Ebony Boneclub
-							dr(0.01, i(10567)),	-- Quillshooter
+						i(10574, {	-- Corpseshroud
+							["crs"] = {
+								74947,	-- Boneflayer Ghoul
+								74411,	-- Death's Head Necrolyte
+								74478,	-- Death's Head Shadowmender
+							},
 						}),
-						n(74478, {	-- Death's Head Shadowmender
-							dr(3.00, i(10578)),	-- Thoughtcast Boots
-							dr(0.03, i(10574)),	-- Corpseshroud
-							dr(0.03, i(10581)),	-- Death's Head Vestment
-							dr(0.01, i(10573)),	-- Boneslasher
-							dr(0.01, i(10571)),	-- Ebony Boneclub
-							dr(0.01, i(10570)),	-- Manslayer
-							dr(0.01, i(10567)),	-- Quillshooter
-							dr(0.01, i(10583)),	-- Quillward Harness
+						i(10581, {	-- Death's Head Vestment
+							["crs"] = {
+								74478,	-- Death's Head Shadowmender
+							},
 						}),
-						n(74486, {	-- Freezing Spirit
-							dr(0.01, i(10578)),	-- Thoughtcast Boots
+						i(10571, {	-- Ebony Boneclub
+							["crs"] = {
+								74492,	-- Bubonic Geist
+								74483,	-- Death's Head Arachnomancer
+							},
 						}),
-						n(74488, {	-- Frozen Soul
-							dr(0.01, i(10574)),	-- Corpseshroud
-							dr(0.01, i(10571)),	-- Ebony Boneclub
-							dr(0.01, i(10578)),	-- Thoughtcast Boots
+						i(10572),	-- Freezing Shard
+						i(10570, {	-- Manslayer
+							["crs"] = {
+								74412,	-- Aarux
+								74490,	-- Boneflayer Ghoul
+								74478,	-- Death's Head Shadowmender
+							},
 						}),
-						n(74950, {	-- Gelatanized Plague Gunk
-							dr(0.01, i(10582)),	-- Briar Tredders
-							dr(0.01, i(10581)),	-- Death's Head Vestment
-							dr(0.01, i(10567)),	-- Quillshooter
-							dr(0.01, i(10583)),	-- Quillward Harness
-							dr(0.01, i(10584)),	-- Stormgale Fists
-							dr(0.01, i(10578)),	-- Thoughtcast Boots
+						i(10567, {	-- Quillshooter
+							["crs"] = {
+								74411,	-- Death's Head Necrolyte
+								74483,	-- Death's Head Arachnomancer
+								74950,	-- Gelatanized Plague Gunk
+							},
 						}),
-						n(74584, {	-- Plague-Rotted Webslinger
-							dr(0.01, i(10571)),	-- Ebony Boneclub
+						i(10583, {	-- Quillward Harness
+							["crs"] = {
+								74379,	-- Splinterbone Frostweaver
+								74478,	-- Death's Head Shadowmender
+							},
 						}),
-						n(74379, {	-- Splinterbone Frostweaver
-							dr(0.01, i(10581)),	-- Death's Head Vestment
-							dr(0.01, i(10583)),	-- Quillward Harness
-						}),	
-						n(74489, {	-- Thorn Eater Ghoul
-							dr(0.01, i(10584)),	-- Stormgale Fists
+						i(10584, {	-- Stormgale Fists
+							["crs"] = {
+								74489,	-- Thorn Eater Ghoul
+								74492,	-- Bubonic Geist
+							},
+						}),
+						i(10578, {	-- Thoughtcast Boots
+							["crs"] = {
+								74478,	-- Death's Head Shadowmender
+								74483,	-- Death's Head Arachnomancer
+								74950,	-- Gelatanized Plague Gunk 
+							},
 						}),
 					}),
 					cr(74412, e(1142, {	-- Aarux

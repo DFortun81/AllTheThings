@@ -1018,6 +1018,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 23736,	-- Pricilla Winterwind
+								["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
 							}),
 							q(13268, {	--  Cloth Scavenging [A]
 								["groups"] = {

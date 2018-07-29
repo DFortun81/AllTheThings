@@ -4,7 +4,7 @@
 
 _.Instances =
 {
-	{ -- Classic
+	{	-- Classic
 		["groups"] = {
 			inst(316, { 	-- Scarlet Monastery
 				["groups"] = {
@@ -19,35 +19,38 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
-						["groups"] = {
-							i(7754),	-- Harbinger Boots
-							i(7754),	-- Harbinger Boots
-							i(5819),	-- Sunblaze Coif
-							i(7729),	-- Chesterfall Musket
-							i(7754),	-- Harbinger Boots
-							i(7727),	-- Watchman Pauldrons
-							i(7729),	-- Chesterfall Musket
-							i(7752),	-- Dreamslayer
-							i(7754),	-- Harbinger Boots
-						n(58876, {	-- Starving Houndmaster
-							dr(.01, i(7727)),	-- Watchman Pauldrons
+						i(7759),	-- Archon Chestpiece
+						i(7728),	-- Beguiler's Robes
+						i(7729),	-- Chesterfall Musket
+						i(7730),	-- Cobalt Crusher
+						i(7752),	-- Dreamslayer
+						i(7736),	-- Fight Club
+						i(7755),	-- Flintrock Shoulders
+						i(7754, {	-- Harbinger Boots
+							["crs"] = {
+								7754,	-- Scarlet Sentry
+							},
 						}),
-						i( 7759),	-- Archon Chestpiece
-						i( 7728),	-- Beguiler's Robes
-						i( 7730),	-- Cobalt Crusher
-						i( 7736),	-- Fight Club
-						i( 7755),	-- Flintrock Shoulders
 						i(10329),	-- Scarlet Belt
 						i(10332),	-- Scarlet Boots
 						i(10328),	-- Scarlet Chestpiece
 						i(10331),	-- Scarlet Gauntlets
 						i(10333),	-- Scarlet Wristguards
-						i( 7761),	-- Steelclaw Reaver
-						i( 1992),	-- Swampchill Fetish
-						i( 8226),	-- The Butcher
-						i( 7760),	-- Warchief Kilt
-						i( 7757),	-- Windweaver Staff
-						},
+						i(7761),	-- Steelclaw Reaver
+						i(5819),	-- Sunblaze Coif
+						i(1992),	-- Swampchill Fetish
+						i(8226, {	-- The Butcher
+							["crs"] = {
+								7754,	-- Scarlet Sentry
+							},
+						}),
+						i(7760),	-- Warchief Kilt
+						i(7727, {	-- Watchman Pauldrons
+							["crs"] = {
+								7754,	-- Scarlet Sentry
+							},
+						}),
+						i(7757),	-- Windweaver Staff
 					}),
 					d(1, {		-- Normal
 						cr(59789, e(688, {	-- Thalnos the Soulrender
@@ -83,7 +86,7 @@ _.Instances =
 								n(-85, {	-- Graveyard
 									["groups"] = {
 										n(-17, {	-- Quests (Legacy)
-											qa(26972, { -- The Dark Side of the Light
+											qa(26972, {	-- The Dark Side of the Light
 												un(34, i(65964)),	-- Gloves of the "Pure"
 												un(34, i(65988)),	-- Helm of the Awakened
 												un(34, i(66005)),	-- Interrogator's Shackles
@@ -137,7 +140,7 @@ _.Instances =
 								n(-86, {	-- Library
 									["groups"] = {
 										n(-17, {	-- Quests (Legacy)
-											qh(26959, { -- Stripping Their Defenses
+											qh(26959, {	-- Stripping Their Defenses
 												un(34, i(66015)), 	-- Houndmaster's Belt
 												un(34, i(66024)), 	-- Shield of Comrades
 											}),
@@ -162,13 +165,13 @@ _.Instances =
 								n(-87, {	-- Armory
 									["groups"] = {
 										n(-17, {	-- Quests (Legacy)
-											qh(26962, { -- Stripping Their Offense
+											qh(26962, {	-- Stripping Their Offense
 												un(34, i(66034)), 	-- Breastplate of the Scarlet Monastery
 												un(34, i(66016)), 	-- Monk's Leggings
 												un(34, i(66025)), 	-- Spaulder of the Untrained
 												un(34, i(66042)), 	-- Velonara's Cloak
 											}),
-											qa(26974, { -- The False Champion
+											qa(26974, {	-- The False Champion
 												un(34, i(65967)), 	-- Breastplate of the Scarlet Monastery
 												un(34, i(65990)), 	-- Cloak of the False Champion
 												un(34, i(65917)), 	-- Monk's Leggings
@@ -216,8 +219,8 @@ _.Instances =
 				},
 				["lvl"] = 23,
 				["maps"] = {
-					435, -- Scarlet Monastery: Forlorn Cloister (First Boss
-					436, -- Scarlet Monasatery: Crusaader's Chapel (Last two bosses)
+					435,	-- Scarlet Monastery: Forlorn Cloister (First Boss
+					436,	-- Scarlet Monasatery: Crusaader's Chapel (Last two bosses)
 				},
 			}),
 		},

@@ -46,99 +46,117 @@ _.Instances =
 						}),
 					}),				
 					n(  0, {	-- Zone Drop
-						n(5270, { 	-- Atal'ai Corpse Eater 
-							dr(0.01, i(10627)),	-- Bludgeon of the Grinning Dog
-							dr(0.01, i(10626)),	-- Ragehammer
-							dr(0.01, i(10632)),	-- Slimescale Bracers
-							dr(0.01, i(10624)),	-- Stinging Bow
+						i(10627, {	-- Bludgeon of the Grinning Dog
+							["crs"] = {
+								5270,	-- Atal'ai Corpse Eater
+								5271,	-- Atal'ai Deathwalker
+								5225,	-- Murk Spitter
+								5283,	-- Nightmare Wanderer
+								5280,	-- Nightmare Wyrmkin
+							},
 						}),
-						n(5271, { 	-- Atal'ai Deathwalker 
-							dr(0.04, i(10627)),	-- Bludgeon of the Grinning Dog
-							dr(0.01, i(10628)),	-- Deathblow
-							dr(0.01, i(10629)),	-- Mistwalker Boots
-							dr(0.01, i(10631)),	-- Murkwater Gauntlets
-							dr(0.01, i(10626)),	-- Ragehammer
-							dr(0.01, i(10633)),	-- Silvershell Leggings
-							dr(0.01, i(10632)),	-- Slimescale Bracers
-							dr(0.01, i(10630)),	-- Soulcatcher Halo
-							dr(0.01, i(10625)),	-- Stealthblade
-							dr(0.01, i(10624)),	-- Stinging Bow
-							dr(0.01, i(10623)),	-- Winter's Bite
+						i(10628, {	-- Deathblow
+							["crs"] = {
+								5271,	-- Atal'ai Deathwalker
+								5273,	-- Atal'ai High Priest
+								8336,	-- Hakkari Sapper
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+							},
 						}),
-						n(5273, { 	-- Atal'ai High Priest 
-							dr(0.02, i(10628)),	-- Deathblow
-							dr(0.01, i(10629)),	-- Mistwalker Boots
-							dr(0.01, i(10626)),	-- Ragehammer
-							dr(0.01, i(10632)),	-- Slimescale Bracers
-							dr(0.01, i(10625)),	-- Stealthblade
+						i(10629, {	-- Mistwalker Boots
+							["crs"] = {
+								5271,	-- Atal'ai Deathwalker
+								8336,	-- Hakkari Sapper
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+								5280,	-- Nightmare Wyrmkin
+							},
 						}),
-						n(5291, { 	-- Hakkari Frostwing
-							dr(0.02, i(10629)),	-- Mistwalker Boots
-							dr(0.01, i(10626)),	-- Ragehammer
-							dr(0.01, i(10630)),	-- Soulcatcher Halo
-							dr(0.01, i(10625)),	-- Stealthblade
-							dr(0.01, i(10623)),	-- Winter's Bite
-						}),						
-						n(8336, { 	-- Hakkari Sapper
-							dr(0.01, i(10628)),	-- Deathblow
-							dr(0.01, i(10629)),	-- Mistwalker Boots
-							dr(0.01, i(10631)),	-- Murkwater Gauntlets
-							dr(0.01, i(10633)),	-- Silvershell Leggings
-							dr(0.01, i(10625)),	-- Stealthblade
-							dr(0.01, i(10624)),	-- Stinging Bow
-							dr(0.01, i(10623)),	-- Winter's Bite
+						i(10631, {	-- Murkwater Gauntlets
+							["crs"] = {
+								5271,	-- Atal'ai Deathwalker
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+							},
 						}),
-						n(5225, { 	-- Murk Spitter
-							dr(0.05, i(10627)),	-- Bludgeon of the Grinning Dog
+						i(78346, {	-- Pattern: Green Dragonscale Breastplate
+							["crs"] = {
+								5721,	-- Dreamscythe
+								5719,	-- Morphaz
+								5720,	-- Weaver
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+								8319,	-- Nightmare Whelp
+								5280,	-- Nightmare Wyrmkin
+							},
 						}),
-						n(5277, {	-- Nightmare Scalebane
-							dr(1.30, i(78346)),	-- Pattern: Green Dragonscale Breastplate
-							dr(1.20, i(15733)),	-- Pattern: Green Dragonscale Leggings
-							dr(0.01, i(10627)),	-- Bludgeon of the Grinning Dog
-							dr(0.01, i(10628)),	-- Deathblow
-							dr(0.01, i(10629)),	-- Mistwalker Boots
-							dr(0.01, i(10631)),	-- Murkwater Gauntlets
-							dr(0.01, i(10626)),	-- Ragehammer
-							dr(0.01, i(10633)),	-- Silvershell Leggings
-							dr(0.01, i(10632)),	-- Slimescale Bracers
-							dr(0.01, i(10630)),	-- Soulcatcher Halo
-							dr(0.01, i(10625)),	-- Stealthblade
-							dr(0.01, i(10624)),	-- Stinging Bow
-							dr(0.01, i(10623)),	-- Winter's Bite
+						i(78345, {	-- Pattern: Green Dragonscale Leggings
+							["crs"] = {
+								5721,	-- Dreamscythe
+								5722,	-- Hazzas
+								5720,	-- Weaver
+								5283,	-- Nightmare Wanderer
+								8319,	-- Nightmare Whelp
+								
+							},
 						}),
-						n(5283, { 	-- Nightmare Wanderer 
-							dr(1.20, i(78346)),	-- Pattern: Green Dragonscale Breastplate
-							dr(1.10, i(15733)),	-- Pattern: Green Dragonscale Leggings
-							dr(0.02, i(10627)),	-- Bludgeon of the Grinning Dog
-							dr(0.02, i(10632)),	-- Slimescale Bracers
-							dr(0.02, i(10630)),	-- Soulcatcher Halo
-							dr(0.01, i(10628)),	-- Deathblow
-							dr(0.01, i(10629)),	-- Mistwalker Boots
-							dr(0.01, i(10631)),	-- Murkwater Gauntlets
-							dr(0.01, i(10626)),	-- Ragehammer
-							dr(0.01, i(10633)),	-- Silvershell Leggings
-							dr(0.01, i(10625)),	-- Stealthblade
-							dr(0.01, i(10624)),	-- Stinging Bow
-							dr(0.01, i(10623)),	-- Winter's Bite
+						un(7, i(15733)),	-- Pattern: Green Dragonscale Leggings (old version)
+						i(10626, {	-- Ragehammer
+							["crs"] = {
+								5721,	-- Dreamscythe
+								5270,	-- Atal'ai Corpse Eater
+								5271,	-- Atal'ai Deathwalker
+								5291,	-- Hakkari Frostwing
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+								5280,	-- Nightmare Wyrmkin
+							},
 						}),
-						n(8319, { 	-- Nightmare Whelp
-							dr(1.5, i(78346)), 	-- Pattern: Green Dragonscale Breastplate
-							dr(1.3, i(15733)),	-- Pattern: Green Dragonscale Leggings
-						}),						
-						n(5280, { 	-- Nightmare Wyrmkin 
-							dr(1.40, i(15733)),	-- Pattern: Green Dragonscale Leggings
-							dr(1.30, i(78346)),	-- Pattern: Green Dragonscale Breastplate
-							dr(0.01, i(10627)),	-- Bludgeon of the Grinning Dog
-							dr(0.01, i(10628)),	-- Deathblow
-							dr(0.01, i(10629)),	-- Mistwalker Boots
-							dr(0.01, i(10631)),	-- Murkwater Gauntlets
-							dr(0.01, i(10626)),	-- Ragehammer
-							dr(0.01, i(10633)),	-- Silvershell Leggings
-							dr(0.01, i(10632)),	-- Slimescale Bracers
-							dr(0.01, i(10630)),	-- Soulcatcher Halo
-							dr(0.01, i(10625)),	-- Stealthblade
-							dr(0.01, i(10624)),	-- Stinging Bow
-							dr(0.01, i(10623)),	-- Winter's Bite
+						i(10633, {	-- Silvershell Leggings
+							["crs"] = {
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+							},
+						}),
+						i(10632, {	-- Slimescale Bracers
+							["crs"] = {
+								5270,	-- Atal'ai Corpse Walker
+								5271,	-- Atal'ai Deathwalker
+								5283,	-- Nightmare Wanderer
+								5280,	-- Nightmare Wyrmkin
+							},
+						}),
+						i(10630, {	-- Soulcatcher Halo
+							["crs"] = {
+								5271,	-- Atal'ai Deathwalker
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+							},
+						}),
+						i(10625, {	-- Stealthblade
+							["crs"] = {
+								5271,	-- Atal'ai Deathwalker
+								5291,	-- Hakkari Frostwing
+								8336,	-- Hakkari Sapper
+								5277,	-- Nightmare Scalebane
+								5280,	-- Nightmare Wyrmkin
+							},
+						}),
+						i(10624, {	-- Stinging Bow
+							["crs"] = {
+								5270,	-- Atal'ai Corpse Eater
+								5271,	-- Atal'ai Deathwalker
+							},
+						}),
+						i(10623, {	-- Winter's Bite
+							["crs"] = {
+								5271,	-- Atal'ai Deathwalker
+								5291,	-- Hakkari Frostwalker
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+								5280,	-- Nightmare Wyrmkin
+							},
 						}),
 					}),
 					cr(8443, e(457, { 	-- Avatar of Hakkar

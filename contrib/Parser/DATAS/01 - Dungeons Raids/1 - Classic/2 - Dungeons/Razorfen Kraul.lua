@@ -4,7 +4,7 @@
 
 _.Instances = 
 {
-	{ -- Classic
+	{	-- Classic
 		["groups"] = {
 			inst(234, { 	-- Razorfen Kraul
 				["groups"] = {
@@ -37,89 +37,96 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
-						i(1488, { -- Avenger's Armor
+						i(1488, {	-- Avenger's Armor
 							["crs"] = {
-								74553, -- Blood-Branded Razorfen
-								74550, -- Razorfen Kraulshaper
-								74554, -- Razorfen Scarblade
+								74553,	-- Blood-Branded Razorfen
+								74550,	-- Razorfen Kraulshaper
+								74554,	-- Razorfen Scarblade
 							},
 						}),
-						i(2264, { -- Mantle of Thieves
+						i(2264, {	-- Mantle of Thieves
 							["crs"] = {
-								74552, -- Razorfen Huntmaster
-								74652, -- Razorfen Thornbolt
+								74552,	-- Razorfen Huntmaster
+								74652,	-- Razorfen Thornbolt
 							},
 						}),
-						i(2039, { -- Plains Ring
+						i(2039, {	-- Plains Ring
 							["crs"] = {
-								74553, -- Blood-Branded Razorfen
-								74551, -- Razorfen Beast-Stalker
-								74552, -- Razorfen Huntmaster
+								74553,	-- Blood-Branded Razorfen
+								74551,	-- Razorfen Beast-Stalker
+								74552,	-- Razorfen Huntmaster
 							},
 						}),
-						i(4438, { -- Pugilist Bracers
+						i(4438, {	-- Pugilist Bracers
 							["crs"] = {
-								75467, -- Cave Bat
-								74551, -- Razorfen Beast Stalker
-								74552, -- Razorfen Huntmaster
+								75467,	-- Cave Bat
+								74551,	-- Razorfen Beast Stalker
+								74552,	-- Razorfen Huntmaster
 							},
 						}),
-						i(1975, { -- Pysan's Old Greatsword
+						i(1975, {	-- Pysan's Old Greatsword
 							["crs"] = {
-								74545, -- Razorfen Geomagus
-								74551, -- Razorfen Beast Stalker
-								74552, -- Razorfen Huntmaster
+								74545,	-- Razorfen Geomagus
+								74551,	-- Razorfen Beast Stalker
+								74552,	-- Razorfen Huntmaster
 							},
 						}),
-						i(1976, { -- Slaghammer
+						i(1976, {	-- Slaghammer
 							["crs"] = {
-								74553, -- Blood-Branded Razorfen
-								75247, -- Groyat, the Blind Hunter
-								74900, -- Kraulshaper Tukaar
-								74551, -- Razorfen Beast Stalker
+								74553,	-- Blood-Branded Razorfen
+								75247,	-- Groyat, the Blind Hunter
+								74900,	-- Kraulshaper Tukaar
+								74551,	-- Razorfen Beast Stalker
 							},
 						}),
-						i(2549, { -- Staff of the Shade
+						i(2549, {	-- Staff of the Shade
 							["crs"] = {
-								74553, -- Blood-Branded Razorfen
-								74551, -- Razorfen Beast Stalker
-								74550, -- Razorfen Kraulshaper
-								75110, -- Razorfen Torchbearer
+								74553,	-- Blood-Branded Razorfen
+								74551,	-- Razorfen Beast Stalker
+								74550,	-- Razorfen Kraulshaper
+								75110,	-- Razorfen Torchbearer
 							},
 						}),
-						i(1727, { -- Sword of Decay
+						i(1727, {	-- Sword of Decay
 							["crs"] = {
-								74551, -- Razorfen Beast Stalker
-								74545, -- Razorfen Geomagus
-								74555, -- Razorfen Hidecrusher
-								74552, -- Razorfen Huntmaster
-								74550, -- Razorfen Kraulshaper
+								74551,	-- Razorfen Beast Stalker
+								74545,	-- Razorfen Geomagus
+								74555,	-- Razorfen Hidecrusher
+								74552,	-- Razorfen Huntmaster
+								74550,	-- Razorfen Kraulshaper
 							},
 						}),
-						i(776, {  -- Vendetta
+						i(776, { 	-- Vendetta
 							["crs"] = {
-								75467, -- Cave Bat
-								74545, -- Razorfen Geomagus
-								74552, -- Razorfen Huntmaster
-								74550, -- Razorfen Kraulshaper
+								75467,	-- Cave Bat
+								74545,	-- Razorfen Geomagus
+								74552,	-- Razorfen Huntmaster
+								74550,	-- Razorfen Kraulshaper
 							},
 						}),
-						i(1978, { -- Wolfclaw Gloves
+						i(6688, {	-- Whisperwind Headdress
 							["crs"] = {
-								74900, -- Kraulshaper Tukaar
-								74545, -- Razorfen Geomagus
-								74552, -- Razorfen Huntmaster
-								74549, -- Razorfen Stonechanter
-								75110, -- Razorfen Torchbearer
+								74900,	-- Kraulshaper Tukaar
+								74462,	-- Warlord Ramtusk
 							},
 						}),
-					}),
-					n( 74900, {		-- Kraulshaper Tukaar
-						i(6689),	-- Wind Spirit Staff
-						i(6688),	-- Whisperwind Headdress
+						i(6689, {	-- Wind Spirit Staff
+							["crs"] = {
+								75001,	-- Hunter Bonetusk
+								74900,	-- Kraulshaper Tukaar
+							},
+						}),
+						i(1978, {	-- Wolfclaw Gloves
+							["crs"] = {
+								74900,	-- Kraulshaper Tukaar
+								74545,	-- Razorfen Geomagus
+								74552,	-- Razorfen Huntmaster
+								74549,	-- Razorfen Stonechanter
+								75110,	-- Razorfen Torchbearer
+							},
+						}),
 					}),
 					cr(75001, e(896, {	-- Hunter Bonetusk
-						i(  6689),	-- Wind Spirit Staff
 						i(  6681),	-- Thornspike 
 						i(151442), 	-- Bonetusk Cloak
 					})),
@@ -133,7 +140,6 @@ _.Instances =
 						["groups"] = {
 							i(  6687),	-- Corpsemaker
 							i(  6686),	-- Tusken Helm
-							i(  6688),	-- Whisperwind Headdress
 							i(  6685), 	-- Death Speaker Mantle
 							i(151445),	-- Porcine-Warlord's Legplates
 						},
@@ -192,8 +198,8 @@ _.Instances =
 								n(4428, {	-- Death Speaker Jargba
 									un(2, i(6682)),	-- Death Speaker Robes
 								}),
-								n(4438, { -- Razorfen Spearhide
-									un(2, i(6679)), -- Armor Piercer
+								n(4438, {	-- Razorfen Spearhide
+									un(2, i(6679)),	-- Armor Piercer
 								}),
 							}),
 						},

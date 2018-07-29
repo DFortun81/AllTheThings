@@ -4,7 +4,7 @@
 
 _.Instances =
 {
-	{ -- Classic
+	{	-- Classic
 		["groups"] = {
 			inst(246, { 	-- Scholomance
 				["groups"] = {
@@ -23,14 +23,22 @@ _.Instances =
 						}),
 						n(  0, {	-- Zone Drop
 							un(7, i(16254)),	-- Formula: Enchant Weapon - Lifestealing [Scholomance, Removed from game with revamp? Might have been added back in 7.3.5, but not sure.]
-							n(59501, {	-- Reanimated Corpse
-								dr(.01, i(18702)), 	-- Belt of the Ordained
-								dr(.01, i(18697)),	-- Coldstone Slippers
-							}),
-							n(58757, {	-- Scholomance Acolyte
-								dr(7, i(16255)),	-- Formula: Enchant 2H Weapon - Major Versatility
+							i(18702, {	-- Belt of the Ordained
+								["crs"] = {
+									59501,	-- Reanimated Corpse
+								},
 							}),
 							i(14536),	-- Bonebrace Hauberk
+							i(18697, {	-- Coldstone Slippers
+								["crs"] = {
+									59501,	-- Reanimated Corpse
+								},
+							}),
+							i(16255, {	-- Formula: Enchant 2H Weapon - Major Versatility
+								["crs"] = {
+									10469,	-- Scholomance Adept
+								},
+							}),
 							i(18699), 	-- Icy Tomb Spaulders
 							i(18700), 	-- Malefic Bracers
 							i(18698), 	-- Tattered Leather Hood
@@ -77,7 +85,7 @@ _.Instances =
 							i(88355),	-- Searing Words
 						})),
 					}),
-					n(-40, { -- Legacy
+					n(-40, {	-- Legacy
 						["groups"] = {
 							nlq({	-- Quests (Legacy)
 								un(40, q(4771, { 	-- Dawn's Gambit

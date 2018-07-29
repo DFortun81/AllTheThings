@@ -4,7 +4,7 @@
 
 _.Instances =
 {
-	{ -- Classic
+	{	-- Classic
 		["groups"] = {
 			inst(236, { 	-- Stratholme
 				["groups"] = {
@@ -34,16 +34,42 @@ _.Instances =
 									}),
 								}),
 								n(  0, {	-- Zone Drop
-									i( 18743),	-- Gracious Cape
-									i( 17061),	-- Juno's Shadow
-									i( 18741),	-- Morlune's Bracer
-									i( 18744),	-- Plaguebat Fur Gloves
-									i( 18736),	-- Plaguehound Leggings
-									i( 18745),	-- Sacred Cloth Leggings
-									i( 18742),	-- Stratholme Militia Shoulderguard
-									i(142337),	-- Plans: Blight
-									n( 10398, {	-- Thuzadin Shadowcaster
-										dr(5.0, i(16248)),	-- Formula: Enchant Weapon - Unholy
+									i(16248, {	-- Formula: Enchant Weapon - Unholy
+										["crs"] = {
+											10398,	-- Thuzadin Shadowcaster
+										},
+									}),
+									i(18743),	-- Gracious Cape
+									i(17061),	-- Juno's Shadow
+									i(18741),	-- Morlune's Bracer
+									i(18744),	-- Plaguebat Fur Gloves
+									i(18736),	-- Plaguehound Leggings
+									i(18745),	-- Sacred Cloth Leggings
+									i(18742),	-- Stratholme Militia Shoulderguard
+									i(142337, {	-- Plans: Blight
+										["crs"] = {
+											10438,	-- Maleki the Pallid
+											11082,	-- Stratholme Courier
+											10416,	-- Bile Spewer
+											10394,	-- Black Guard Sentry
+											10412,	-- Crypt Crawler
+											10406,	-- Ghoul Ravener
+											10405,	-- Plague Ghoul
+											10381,	-- Ravaged Cadaver
+											10425,	-- Risen Battle Mage
+											10419,	-- Risen Conjuror
+											10424,	-- Risen Gallant
+											10420,	-- Risen Initiate
+											11043,	-- Risen Monk
+											10423,	-- Risen Priest
+											10422,	-- Risen Sorceror
+											10391,	-- Skeletal Berserker
+											10390,	-- Skeletal Guardian
+											10400,	-- Thuzadin Necromancer
+											10398,	-- Thuzadin Shadowcaster
+											10417,	-- Venom Belcher
+											10464,	-- Wailing Banshee
+										},
 									}),
 								}),
 								n( 10393, {			-- Skul
@@ -186,7 +212,7 @@ _.Instances =
 									},
 								}),
 							},
-							["maps"] = { 317 } -- Stratholme Living Side
+							["maps"] = { 317 }	-- Stratholme Living Side
 						}),
 						q(35574, {	-- Side Entrance (Dead)
 							["groups"] = {
@@ -226,37 +252,37 @@ _.Instances =
 										["qg"] = 45331,	-- Master Craftsman Wilhelm
 									}),
 								}),
-								n(0, { -- Zone Drop
+								n(0, {	-- Zone Drop
 									["groups"] = {
-										i(18743), -- Gracious Cape
-										i(17061), -- Juno's Shadow
-										i(18741), -- Morlune's Bracer
-										i(18744), -- Plaguebat Fur Gloves
-										i(18736), -- Plaguehound Leggings
-										i(18745), -- Sacred Cloth Leggings
-										i(18742), -- Stratholme Militia Shoulderguard
-										i(142337), -- Plans: Blight
+										i(18743),	-- Gracious Cape
+										i(17061),	-- Juno's Shadow
+										i(18741),	-- Morlune's Bracer
+										i(18744),	-- Plaguebat Fur Gloves
+										i(18736),	-- Plaguehound Leggings
+										i(18745),	-- Sacred Cloth Leggings
+										i(18742),	-- Stratholme Militia Shoulderguard
+										i(142337),	-- Plans: Blight
 										n(10422, {	-- Risen Sorcerer
-											dr(6, i(16249)), -- Formula: Enchant 2H Weapon - Major Intellect
+											dr(6, i(16249)),	-- Formula: Enchant 2H Weapon - Major Intellect
 										}),
-										i(74274, { -- Plans: Phantom Blade
+										i(74274, {	-- Plans: Phantom Blade
 											["crs"] = {
-												10463, -- Shrieking Banshee
-												10464, -- Wailing Banshee
+												10463,	-- Shrieking Banshee
+												10464,	-- Wailing Banshee
 											},
 										}),
-										n(10391, { -- Skeletal Berserker
+										n(10391, {	-- Skeletal Berserker
 											["groups"] = {
-												i(12827), -- Plans: Serenity
+												i(12827),	-- Plans: Serenity
 											},
 										}),
-										o(173232, { -- Blacksmithing Plans
+										o(173232, {	-- Blacksmithing Plans
 											["groups"] = {
-												i(12827, { -- Plans: Serenity
+												i(12827, {	-- Plans: Serenity
 													["groups"] = {},
 													["description"] = "This plan is found in the Scarlet Bastion. Only a Blacksmith can loot the plans. This will despawn once a player interacts with it.",
 												}),
-												i(12830, { -- Plans: Corruption
+												i(12830, {	-- Plans: Corruption
 													["groups"] = {},
 													["description"] = "This plan is found near the second ziggurat. Only a Blacksmith can loot the plans. This will despawn once a player interacts with it.",
 												}),
@@ -396,7 +422,7 @@ _.Instances =
 									},
 								}),
 							},
-							["maps"] = { 318 }, -- Undead Side
+							["maps"] = { 318 },	-- Undead Side
 						}),
 				},
 				["lvl"] = 37,

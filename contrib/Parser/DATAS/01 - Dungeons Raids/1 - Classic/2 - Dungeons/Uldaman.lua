@@ -4,7 +4,7 @@
 
 _.Instances = 
 {
-	{ -- Classic
+	{	-- Classic
 		["groups"] = {
 			inst(239, { 	-- Uldaman
 				["groups"] = {
@@ -58,29 +58,157 @@ _.Instances =
 						}),
 					}),	
 					n(  0, {	-- Zone Drop
-						i(9420),	-- Adventurer's Pith Helmet
-						i(9392),	-- Annealed Blade
-						i(9393),	-- Beacon of Hope
+						i(9420, {	-- Adventurer's Pith Helmet
+							["crs"] = {
+								4848,	-- Shadowforge Darkcaster
+								4855,	-- Stonevault Brawler
+								4852,	-- Stonevault Oracle
+							},
+						}),
+						i(9392, {	-- Annealed Blade
+							["crs"] = {
+								4848,	-- Shadowforge Darkcaster
+								4860,	-- Stone Steward
+								4850,	-- Stonevault Cave Lurker
+								7321,	-- Stonevault Flameweaver
+								4853,	-- Stonevault Geomancer
+								4852,	-- Stonevault Oracle
+							},
+						}),
+						i(9393, {	-- Beacon of Hope
+							["crs"] = {
+								7012,	-- Earthen Sculptor
+								4863,	-- Jadespine Basilisk
+								4847,	-- Shadowforge Relic Hunter
+								7290,	-- Shadowforge Sharpshooter
+								4860,	-- Stone Steward
+								4853,	-- Stonevault Geomancer
+								4852,	-- Stonevault Oracle
+							},
+						}),
 						i(9465),	-- Digmaster 5000
-						i(9381),	-- Earthen Rod
-						i(9397),	-- Energy Cloak
-						i(9386),	-- Excavator's Brand
-						i(9424),	-- Ginn-Su Sword
-						i(9396),	-- Legguards of the Vault
+						i(9381, {	-- Earthen Rod
+							["crs"] = {
+								4844,	-- Shadowforge Surveyor
+								4855,	-- Stonevault Brawler
+								4850,	-- Stonevault Cave Lurker
+								7321,	-- Stonevault Flameweaver
+								4852,	-- Stonevault Oracle
+							},
+						}),
+						i(9397, {	-- Energy Cloak
+							["crs"] = {
+								7030,	-- Shadowforge Geologist
+								4860,	-- Stone Steward
+								4850,	-- Stonevault Cave Lurker
+								4853,	-- Stonevault Geomancer
+								7320,	-- Stonevault Mauler
+								4852,	-- Stonevault Oracle
+							},
+						}),
+						i(9386, {	-- Excavator's Brand
+							["crs"] = {
+								6907,	-- Eric "The Swift"
+								7012,	-- Earthen Sculptor
+								7030,	-- Shadowforge Geologist
+								4847,	-- Shadowforge Relic Hunter
+								4861,	-- Shrike Bat
+								4850,	-- Stonevault Cave Lurker
+								4853,	-- Stonevault Geomancer
+								7320,	-- Stonevault Mauler
+								4852,	-- Stonevault Oracle
+							},
+						}),
+						i(9424, {	-- Ginn-Su Sword
+							["crs"] = {
+								4861,	-- Shrike Bat
+								4855,	-- Stonevault Brawler
+							},
+						}),
+						i(9396, {	-- Legguards of the Vault
+							["crs"] = {
+								7012,	-- Earthen Sculptor
+								4855,	-- Stonevault Brawler
+								4850,	-- Stonevault Cave Lurker
+								7321,	-- Stonevault Flameweaver
+								4853,	-- Stonevault Geomancer
+								7320,	-- Stonevault Mauler
+								4852,	-- Stonevault Oracle
+							},
+						}),
 						i(9429),	-- Miner's Hat of the Deep
-						i(9426),	-- Monolithic Bow
-						i(9383),	-- Obsidian Cleaver
+						i(9426, {	-- Monolithic Bow
+							["crs"] = {
+								4855,	-- Stonevault Brawler
+								4850,	-- Stonevault Cave Lurker
+							},
+						}),
+						i(9383, {	-- Obsidian Cleaver
+							["crs"] = {
+								4861,	-- Shrike Bat
+								4860,	-- Stone Steward
+								4850,	-- Stonevault Cave Lurker
+								7320,	-- Stonevault Mauler
+								4852,	-- Stonevault Oracle
+							},
+						}),
 						i(9431),	-- Papal Fez
 						i(9425),	-- Pendulum of Doom
 						i(9422),	-- Shadowforge Bushmaster
-						i(9432),	-- Skullplate Bracers
+						i(9432, {	-- Skullplate Bracers
+							["crs"] = {
+								4853,	-- Stonevault Geomancer
+							},
+						}),
 						i(9430),	-- Spaulders of a Lost Age
-						i(9406),	-- Spirewind Fetter
-						i(9427),	-- Stonevault Bonebreaker
-						i(9384),	-- Stonevault Shiv
+						i(9406, {	-- Spirewind Fetter
+							["crs"] = {
+								4863,	-- Jadespine Basilisk
+								4860,	-- Stone Steward
+								4855,	-- Stonevault Brawler
+								4850,	-- Stonevault Cave Lurker
+								7321,	-- Stonevault Flameweaver
+								4853,	-- Stonevault Geomancer
+							},
+						}),
+						i(9427, {	-- Stonevault Bonebreaker
+							["crs"] = {
+								4860,	-- Stone Steward
+								4855,	-- Stonevault Brawler
+							},
+						}),
+						i(9384, {	-- Stonevault Shiv
+							["crs"] = {
+								4848,	-- Shadowforge Darkcaster
+								4847,	-- Shadowforge Relic Hunter
+								4861,	-- Shrike Bat
+								4852,	-- Stonevault Oracle
+							},
+						}),
 						i(9423),	-- The Jackhammer	
-						i(9391),	-- The Shoveler
-						i(9428),	-- Unearthed Bands
+						i(9391, {	-- The Shoveler
+							["crs"] = {
+								4863,	-- Jadespine Basilisk
+								4846,	-- Shadowforge Digger
+								4847,	-- Shadowforge Relic Hunter
+								4861,	-- Shrike Bat
+								4860,	-- Stone Steward
+								4855,	-- Stonevault Brawler
+								4850,	-- Stonevault Cave Lurker
+								7321,	-- Stonevault Flameweaver
+								7320,	-- Stonevault Mauler
+							},
+						}),
+						i(9428, {	-- Unearthed Bands
+							["crs"] = {
+								4861,	-- Shrike Bat
+								4860,	-- Stone Steward
+								4850,	-- Stonevault Cave Lurker
+								4853,	-- Stonevault Geomancer
+								7320,	-- Stonevault Mauler
+								4852,	-- Stonevault Oracle
+							},
+						}),
 					}),
 					cr( 6906, h(e(468, {	-- The Lost Dwarves (Baelog)
 						i(  9401),	-- Nordic Longshank

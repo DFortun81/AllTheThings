@@ -4,12 +4,12 @@
 
 _.Instances = 
 {
-	{ -- Classic
+	{	-- Classic
 		["groups"] = {
 			inst(240, { 	-- Wailing Caverns
 				["groups"] = {
 					n(-17, {	-- Quests 	
-						q(26870, { -- Cleansing the Caverns
+						q(26870, {	-- Cleansing the Caverns
 							["groups"] = {
 								i( 65911), 	-- Anacondra's Robe
 								i( 65985), 	-- Cleansed Pauldrons
@@ -33,12 +33,21 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop		
-						n(3636, { 	-- Deviate Ravager
-							dr(0.2, i(48114)), 	-- Deviate Hatchling Pet
+						i(48114, {	-- Deviate Hatchling (PET!)
+							["crs"] = {
+								3637,	-- Deviate Guardian
+								3636,	-- Deviate Ravager
+							},
 						}),
-						n(3840, { 	-- Druid of the Fang
-							dr(2.0, i( 10413)),	-- Gloves of the Fang
-							dr(0.9, i(132743)), -- Slither-Scale Gauntlets
+						i(10413, {	-- Gloves of the Fang
+							["crs"] = {
+								3840,	-- Druid of the Fang
+							},
+						}),
+						i(132743, {	-- Slither-Scale Gauntlets
+							["crs"] = {
+								3840,	-- Druid of the Fang
+							},
 						}),
 					}),
 					cr(3671, e(474, { 	-- Lady Anacondra

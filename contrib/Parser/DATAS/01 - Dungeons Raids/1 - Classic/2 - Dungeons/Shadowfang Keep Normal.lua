@@ -4,28 +4,28 @@
 
 _.Instances = 
 {
-	{ -- Classic
+	{	-- Classic
 		["groups"] = {
 			inst(64, { 	-- Shadowfang Keep
 				["groups"] = {
-					n(-50, { -- Love Is In the Air
+					n(-50, {	-- Love Is In the Air
 						["groups"] = {
-							n(-17, { -- Quests
+							n(-17, {	-- Quests
 								i(49641, {	-- Faded Lovely Greeting Card
-									qa(24745, { -- Something is in the Air (and it Ain't Love)
+									qa(24745, {	-- Something is in the Air (and it Ain't Love)
 										["groups"] = {
 										},
 										["qg"] = 36296,	-- Apothecary Hummel
 									}),
-									qh(14483, { -- Something is in the Air (and it Ain't Love)
+									qh(14483, {	-- Something is in the Air (and it Ain't Love)
 										["groups"] = {
 										},
 										["qg"] = 36296,	-- Apothecary Hummel
 									}),
 								}),
 							}),
-							n(36296, { -- Apothecary Hummel
-								i(54537, { -- Heart-Shaped Box
+							n(36296, {	-- Apothecary Hummel
+								i(54537, {	-- Heart-Shaped Box
 									["groups"] = {
 										un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
 										un(18, dr(6.0, i(50446))),	-- Toxic Wasteling
@@ -35,7 +35,7 @@ _.Instances =
 									},
 									["lvl"] = 98,
 								}),
-								i(147907, { -- Heart-Shaped Carton
+								i(147907, {	-- Heart-Shaped Carton
 									["groups"] = {
 										un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
 										un(18, dr(6.0, i(50446))),	-- Toxic Wasteling
@@ -114,167 +114,167 @@ _.Instances =
 								["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
 							}),
 						}),
-						n(0, { -- Zone Drop
-							i(1935, { -- Assassin's Blade
+						n(0, {	-- Zone Drop
+							i(1935, {	-- Assassin's Blade
 								["crs"] = {
-									47232, -- Ghostly Cook
-									3875, -- Haunted Servitor
-									47137, -- Mindless Horror
-									47231, -- Shadowy Attendant
-									47146, -- Spitebone Flayer
-									47143, -- Spitebone Skeleton
-									3870, -- Stone Sleeper
-									3873, -- Tormented Officer									
+									47232,	-- Ghostly Cook
+									3875,	-- Haunted Servitor
+									47137,	-- Mindless Horror
+									47231,	-- Shadowy Attendant
+									47146,	-- Spitebone Flayer
+									47143,	-- Spitebone Skeleton
+									3870,	-- Stone Sleeper
+									3873,	-- Tormented Officer									
 								},
 							}),
-							i(3194, { -- Black Malice
+							i(3194, {	-- Black Malice
 								["crs"] = {
-									47134, -- Corpse Eater
-									47132, -- Dark Creeper
-									47141, -- Dread Scryer
-									47135, -- Fetid Ghoul
-									47131, -- Frantic Geist
-									47232, -- Ghostly Cook
-									3875, -- Haunted Servitor
-									47137, -- Mindless Horror
-									47138, -- Pustulant Monstrosity
-									47231, -- Shadowy Attendant
-									47146, -- Spitebone Flayer
-									47145, -- Spitebone Guardian
-									47143, -- Spitebone Skeleton
-									3870, -- Stone Sleeper
-									3873, -- Tormented Officer
-									47136, -- Unstable Ravager
-									3877, -- Wailing Guardsman									
+									47134,	-- Corpse Eater
+									47132,	-- Dark Creeper
+									47141,	-- Dread Scryer
+									47135,	-- Fetid Ghoul
+									47131,	-- Frantic Geist
+									47232,	-- Ghostly Cook
+									3875,	-- Haunted Servitor
+									47137,	-- Mindless Horror
+									47138,	-- Pustulant Monstrosity
+									47231,	-- Shadowy Attendant
+									47146,	-- Spitebone Flayer
+									47145,	-- Spitebone Guardian
+									47143,	-- Spitebone Skeleton
+									3870,	-- Stone Sleeper
+									3873,	-- Tormented Officer
+									47136,	-- Unstable Ravager
+									3877,	-- Wailing Guardsman									
 								},
 							}),
-							i(2205, { -- Duskbringer
+							i(2205, {	-- Duskbringer
 								["crs"] = {
-									47132, -- Dark Creeper
-									3870, -- Stone Sleeper
-									47136, -- Unstable Ravager									
+									47132,	-- Dark Creeper
+									3870,	-- Stone Sleeper
+									47136,	-- Unstable Ravager									
 								},
 							}),
-							i(1483, { -- Face Smasher
+							i(1483, {	-- Face Smasher
 								["crs"] = {
-									47134, -- Corpse Eater
-									47132, -- Dark Creeper
-									47141, -- Dread Scryer
-									47135, -- Fetid Ghoul
-									47131, -- Frantic Geist
-									47232, -- Ghostly Cook
-									3875, -- Haunted Servitor
-									47137, -- Mindless Horror
-									47138, -- Pustulant Monstrosity
-									47231, -- Shadowy Attendant
-									47140, -- Sorcerous Skeleton
-									47146, -- Spitebone Flayer
-									47145, -- Spitebone Guardian
-									47143, -- Spitebone Skeleton
-									3870, -- Stone Sleeper
-									3873, -- Tormented Officer
-									47136, -- Unstable Ravager
-									3877, -- Wailing Guardsman									
+									47134,	-- Corpse Eater
+									47132,	-- Dark Creeper
+									47141,	-- Dread Scryer
+									47135,	-- Fetid Ghoul
+									47131,	-- Frantic Geist
+									47232,	-- Ghostly Cook
+									3875,	-- Haunted Servitor
+									47137,	-- Mindless Horror
+									47138,	-- Pustulant Monstrosity
+									47231,	-- Shadowy Attendant
+									47140,	-- Sorcerous Skeleton
+									47146,	-- Spitebone Flayer
+									47145,	-- Spitebone Guardian
+									47143,	-- Spitebone Skeleton
+									3870,	-- Stone Sleeper
+									3873,	-- Tormented Officer
+									47136,	-- Unstable Ravager
+									3877,	-- Wailing Guardsman									
 								},
 							}),
-							i(1489, { -- Gloomshroud Armor
+							i(1489, {	-- Gloomshroud Armor
 								["crs"] = {
-									3875, -- Haunted Servitor
-									47136, -- Unstable Ravager
+									3875,	-- Haunted Servitor
+									47136,	-- Unstable Ravager
 								},
 							}),
-							i(2807, { -- Guillotine Axe
+							i(2807, {	-- Guillotine Axe
 								["crs"] = {
-									47134, -- Corpse Eater
-									47132, -- Dark Creeper
-									47135, -- Fetid Ghoul
-									47131, -- Frantic Geist
-									3875, -- Haunted Servitor
-									47137, -- Mindless Horror
-									47138, -- Pustulant Monstrosity
-									47231, -- Shadowy Attendant
-									47146, -- Spitebone Flayer
-									47145, -- Spitebone Guardian
-									47143, -- Spitebone Skeleton
-									3870, -- Stone Sleeper
-									47136, -- Unstable Ravager									
+									47134,	-- Corpse Eater
+									47132,	-- Dark Creeper
+									47135,	-- Fetid Ghoul
+									47131,	-- Frantic Geist
+									3875,	-- Haunted Servitor
+									47137,	-- Mindless Horror
+									47138,	-- Pustulant Monstrosity
+									47231,	-- Shadowy Attendant
+									47146,	-- Spitebone Flayer
+									47145,	-- Spitebone Guardian
+									47143,	-- Spitebone Skeleton
+									3870,	-- Stone Sleeper
+									47136,	-- Unstable Ravager									
 								},
 							}),
-							i(1974, { -- Mindthrust Bracers
+							i(1974, {	-- Mindthrust Bracers
 								["crs"] = {
-									47134, -- Corpse Eater
-									47132, -- Dark Creeper
-									47141, -- Dread Scryer
-									47135, -- Fetid Ghoul
-									47131, -- Frantic Geist
-									47232, -- Ghostly Cook
-									3875, -- Haunted Servitor
-									47137, -- Mindless Horror
-									47138, -- Pustulant Monstrosity
-									47231, -- Shadowy Attendant
-									47146, -- Spitebone Flayer
-									47145, -- Spitebone Guardian
-									47143, -- Spitebone Skeleton
-									3870, -- Stone Sleeper
-									3873, -- Tormented Officer
-									47136, -- Unstable Ravager
-									3877, -- Wailing Guardsman									
+									47134,	-- Corpse Eater
+									47132,	-- Dark Creeper
+									47141,	-- Dread Scryer
+									47135,	-- Fetid Ghoul
+									47131,	-- Frantic Geist
+									47232,	-- Ghostly Cook
+									3875,	-- Haunted Servitor
+									47137,	-- Mindless Horror
+									47138,	-- Pustulant Monstrosity
+									47231,	-- Shadowy Attendant
+									47146,	-- Spitebone Flayer
+									47145,	-- Spitebone Guardian
+									47143,	-- Spitebone Skeleton
+									3870,	-- Stone Sleeper
+									3873,	-- Tormented Officer
+									47136,	-- Unstable Ravager
+									3877,	-- Wailing Guardsman									
 								},
 							}),
-							i(2292, { -- Necrology Robes
+							i(2292, {	-- Necrology Robes
 								["crs"] = {
-									3875, -- Haunted Servitor
-									47137, -- Mindless Horror
-									47146, -- Spitebone Flayer
-									47136, -- Unstable Ravager
+									3875,	-- Haunted Servitor
+									47137,	-- Mindless Horror
+									47146,	-- Spitebone Flayer
+									47136,	-- Unstable Ravager
 								},
 							}),
-							i(1318, { -- Night Reaver
+							i(1318, {	-- Night Reaver
 								["crs"] = {
-									47132, -- Dark Creeper
-									47141, -- Dread Scryer
-									47131, -- Frantic Geist
-									47232, -- Ghostly Cook
-									3875, -- Haunted Servitor
-									47137, -- Mindless Horror
-									47138, -- Pustulant Monstrosity
-									47231, -- Shadowy Attendant
-									47146, -- Spitebone Flayer
-									47145, -- Spitebone Guardian
-									3870, -- Stone Sleeper
-									47136, -- Unstable Ravager									
+									47132,	-- Dark Creeper
+									47141,	-- Dread Scryer
+									47131,	-- Frantic Geist
+									47232,	-- Ghostly Cook
+									3875,	-- Haunted Servitor
+									47137,	-- Mindless Horror
+									47138,	-- Pustulant Monstrosity
+									47231,	-- Shadowy Attendant
+									47146,	-- Spitebone Flayer
+									47145,	-- Spitebone Guardian
+									3870,	-- Stone Sleeper
+									47136,	-- Unstable Ravager									
 								},
 							}),
-							i(1482, { -- Shadowfang
+							i(1482, {	-- Shadowfang
 								["crs"] = {
-									47132, -- Dark Creeper
-									47131, -- Frantic Geist
-									3875, -- Haunted Servitor
-									47137, -- Mindless Horror
-									47140, -- Sorcerous Skeleton
-									3873, -- Tormented Officer
-									3877, -- Wailing Guardsman									
+									47132,	-- Dark Creeper
+									47131,	-- Frantic Geist
+									3875,	-- Haunted Servitor
+									47137,	-- Mindless Horror
+									47140,	-- Sorcerous Skeleton
+									3873,	-- Tormented Officer
+									3877,	-- Wailing Guardsman									
 								},
 							}),
-							i(1484, { -- Witching Stave
+							i(1484, {	-- Witching Stave
 								["crs"] = {
-									47134, -- Corpse Eater
-									47132, -- Dark Creeper
-									47141, -- Dread Scryer
-									47135, -- Fetid Ghoul
-									47131, -- Frantic Geist
-									47232, -- Ghostly Cook
-									3875, -- Haunted Servitor
-									47137, -- Mindless Horror
-									47138, -- Pustulant Monstrosity
-									47231, -- Shadowy Attendant
-									47146, -- Spitebone Flayer
-									47145, -- Spitebone Guardian
-									47143, -- Spitebone Skeleton
-									3870, -- Stone Sleeper
-									3873, -- Tormented Officer
-									47136, -- Unstable Ravager
-									3877, -- Wailing Guardsman									
+									47134,	-- Corpse Eater
+									47132,	-- Dark Creeper
+									47141,	-- Dread Scryer
+									47135,	-- Fetid Ghoul
+									47131,	-- Frantic Geist
+									47232,	-- Ghostly Cook
+									3875,	-- Haunted Servitor
+									47137,	-- Mindless Horror
+									47138,	-- Pustulant Monstrosity
+									47231,	-- Shadowy Attendant
+									47146,	-- Spitebone Flayer
+									47145,	-- Spitebone Guardian
+									47143,	-- Spitebone Skeleton
+									3870,	-- Stone Sleeper
+									3873,	-- Tormented Officer
+									47136,	-- Unstable Ravager
+									3877,	-- Wailing Guardsman									
 								},
 							}),
 						}),
@@ -330,28 +330,28 @@ _.Instances =
 					n(-40, { 	-- Legacy
 						["groups"] = {
 							nlq({ 		-- Legacy Quests
-								qh(1098, { -- Deathstalkers in Shadowfang
-									i(3324), -- Ghostly Mantle
+								qh(1098, {	-- Deathstalkers in Shadowfang
+									i(3324),	-- Ghostly Mantle
 								}),
-								qh(1013, { -- The Book of Ur
-									i(6335), -- Grizzled Boots
-									i(4534), -- Steel-Clasped Bracers
+								qh(1013, {	-- The Book of Ur
+									i(6335),	-- Grizzled Boots
+									i(4534),	-- Steel-Clasped Bracers
 								}),
 								qh(1014),	-- Arugal Must Die
-								q(1740, { -- The Orb of Soran'ruk
+								q(1740, {	-- The Orb of Soran'ruk
 									["groups"] = {
-										i( 6898), -- Orb of Soran'ruk
-										i(15109), -- Staff of Soran'ruk
+										i( 6898),	-- Orb of Soran'ruk
+										i(15109),	-- Staff of Soran'ruk
 									},
 									["classes"] = { 9 }
 								}),
-								qh(9692, { -- The Path of the Adept
+								qh(9692, {	-- The Path of the Adept
 									["groups"] = {
-										q(9707, { -- Forging the Weapon
+										q(9707, {	-- Forging the Weapon
 											["groups"] = {
-												q(9710, { -- The Blood-Tempered Ranseur
+												q(9710, {	-- The Blood-Tempered Ranseur
 													["groups"] = {
-														i(25464), -- Blood-Tempered Ranseur
+														i(25464),	-- Blood-Tempered Ranseur
 													},
 													["classes"] = { 2 }
 												}),
@@ -361,11 +361,11 @@ _.Instances =
 									},
 									["classes"] = { 2 }
 								}),
-								qa(1654, { -- The Test of Righteousness
+								qa(1654, {	-- The Test of Righteousness
 									["groups"] = {
-										q(1806, { -- The Test of Righteousness
+										q(1806, {	-- The Test of Righteousness
 											["groups"] = {
-												i(6953), -- Verigan's Fist
+												i(6953),	-- Verigan's Fist
 											},
 											["classes"] = { 2 }
 										}),
