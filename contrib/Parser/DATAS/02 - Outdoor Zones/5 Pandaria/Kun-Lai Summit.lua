@@ -82,6 +82,46 @@ _.Zones =
 						["description"] = "Located in the Ruins of Mogujia at (59.2,73)",
 					}),
 				}),
+				ach(7284, {	-- Is Another Man's Treasure
+					o(213768, {	-- Hozen Warrior Spear
+						["groups"] = {
+							i(86394),	-- Hozen Warrior Spear
+						},
+						["questID"] = 31413,
+					}),
+					i(86125, {	-- Kafa Press
+						["qg"] = 64227,	-- Frozen Trail Packer
+						["questID"] = 31304,
+					}),
+					o(213751, {	-- Sprite's Cloth Chest
+						["groups"] = {
+							dr(35, i(86223)),	-- Agile Sprite Cloak
+							dr(21, i(86222)),	-- Precise Sprite Cloak
+							dr(19, i(86225)),	-- Strong Sprite Cloak
+							dr(18, i(86221)),	-- Wise Sprite Cloak
+							dr(7, i(86224)),	-- Steadfast Sprite Cape
+						},
+						["questID"] = 31412,
+						["model"] = "World\\SkillActivated\\Containers\\TreasureChest04.mdx",
+						["modelScale"] = 1.5,
+						["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
+					}),
+					o(213842, {	-- Stash of Yaungol Weapons
+						["groups"] = {
+							i(88723),	-- Sturdy Yaungol Spear
+						},
+						["questID"] = 31421,
+						["model"] = "World\\Expansion04\\Doodads\\Yakmen\\Yakmen_WeaponRack_01.mdx",
+						["modelScale"] = 3.2,
+						["icon"] = "Interface\\Icons\\inv_misc_ornatebox",
+					}),
+					o(213765, {	-- Tablet of Ren Yun
+						["questID"] = 31417,	-- FLAG - Tablet of Ren Yun
+						["groups"] = {
+							i(86393),	-- Tablet of Ren Yun
+						},
+					}),
+				}),
 				n(-17, { 	-- Quests
 --[[
 					q(30581),	-- ... and the Pot, Too!
@@ -665,294 +705,269 @@ _.Zones =
 						i(88071),
 					}),
 				}),
-				n(-16, { 	-- Rares
-					n(50817, { 		-- Ahone the Wanderer
-						dr(12, i(87614)),
+				n(-16, {	-- Rares
+					n(50817, {	-- Ahone the Wanderer
+						dr(12, {
+							i(87614),	-- Kafa Picker's Bracers
+							i(87619),	-- Terracotta Guardian's Bracer
+						}),
 						dr(11, {
-							i(87617),
-							i(87613),
-							i(87618),
-							i(87616),
-							i(87619),
-							i(87621),
+							i(87617),	-- Bracers of the Serene Mountaintop
+							i(87613),	-- Frozen Zandalari Bracer
+							i(87618),	-- Ice Encrusted Bracer
+							i(87616),	-- Mountain Trailblazer's Cuffs
+							i(87621),	-- Wristguards of Great Fortune
 						}),
 						dr(10, {
-							i(87620),
-							i(87615),
-							i(86588),		-- Toy
+							i(87620),	-- Bracers of the Frozen Summit
+							i(87615),	-- Yakwasher's Bracers
+							i(86588),	-- Pandaren Firewrork Launcher
 						}),
 					}),
-					n(50341, { 		-- Borginn Darkfist
-						dr(21, i(87617)),
-						dr(11, i(87613)),
+					n(50341, {	-- Borginn Darkfist
+						dr(21, i(87617)),	-- Bracers of the Serene Mountaintop
+						dr(18, i(86570)),	-- Create of Kidnapped Puppies
+						dr(11, i(87613)),	-- Frozen Zandalari Bracer
 						dr(10, {
-							i(87618),
-							i(87614),
-							i(87621),
-							i(87615),
+							i(87618),	-- Ice Encrusted Bracer
+							i(87614),	-- Kafa Picker's Bracers
+							i(87621),	-- Wristguards of Great Fortune
+							i(87615),	-- Yakwasher's Bracers
 						}),
 						dr(9, {
-							i(87620),
-							i(87616),
-							i(87619),
+							i(87620),	-- Bracers of the Frozen Summit
+							i(87616),	-- Mountain Trailblazer's Cuffs
+							i(87619),	-- Terracotta Guardian's Bracer
 						}),
 					}),
-					n(50354, { 		-- Havak
-						dr(15, i(86573)), 	-- Toy
+					n(50354, {	-- Havak
+						dr(15, i(86573)), 	-- Shard of Archstone
 						dr(12, {
-							i(87621),
-							i(87615),
+							i(87621),	-- Wristguards of Great Fortune
+							i(87615),	-- Yakwasher's Bracers
 						}),
 						dr(11, {
-							i(87620),
-							i(87613),
-							i(87618),
-							i(87614),
+							i(87620),	-- Bracers of the Frozen Summit
+							i(87613),	-- Frozen Zandalari Bracer
+							i(87618),	-- Ice Encrusted Bracer
+							i(87614),	-- Kafa Picker's Bracers
 						}),
 						dr(10, {
-							i(87617),
-							i(87616),
-							i(87619),
+							i(87617),	-- Bracers of the Serene Mountaintop
+							i(87616),	-- Mountain Trailblazer's Cuffs
+							i(87619),	-- Terracotta Guardian's Bracer
 						}),
 					}),
-					o(213768, {		-- Hozen Warrior Spear
-						["groups"] = {
-							i(86394),	-- Hozen Warrior Spear
-						},
-						["questID"] = 31413,
-					}),
-					n(50332, { 		-- Korda Torros
-						dr(13, i(87620)),
+					n(50332, {	-- Korda Torros
+						dr(13, i(87620)),	-- Bracers of the Frozen Summit
 						dr(12, {
-							i(87616),
-							i(87619),
+							i(87616),	-- Mountain Trailblazer's Cuffs
+							i(87619),	-- Terracotta Guardian's Bracer
 						}),
-						{
-							["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-							["criteriaID"] = 6,		-- Forager's Gloves [Criteria]
-							["itemID"] = 86566,	-- Forager's Gloves [Item]
-							["dr"] = 11,
-						},
 						dr(11, {
-							i(87618),
+							i(86566, {	-- Forager's Gloves
+								["achievementID"] = 8728, -- Going to Need a Bigger Bag
+								["criteriaID"] = 6,
+							}),
+						}),
+						dr(11, {
+							i(87618),	-- Ice Encrusted Bracer
 						}),
 						dr(10, {
-							i(87617),
-							i(87613),
-							i(87614),
-							i(87615),
+							i(87617),	-- Bracers of the Serene Mountaintop
+							i(87613),	-- Frozen Zandalari Bracer
+							i(87614),	-- Kafa Picker's Bracers
+							i(87615),	-- Yakwasher's Bracers
 						}),
-						dr(9, i(87621)),
+						dr(9, i(87621)),	-- Wristguards of Great Fortune
 					}),
-					n(50789, { 		-- Nessos the Oracle
-						{
-							["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-							["criteriaID"] = 9,		-- Hardened Shell [Criteria]
-							["itemID"] = 86584,		-- Hardened Shell [Item]
-							["dr"] = 29,
-						},
-						dr(22, i(87615)),
-						dr(11, i(87621)),
+					n(70323, {	-- Krakkanon
+						dr(14, {
+							i(88563, {	-- Nat's Fishing Journal
+								q(31664),	-- An Angler's Quest
+							}),
+						}),
+					}),
+					n(50789, {	-- Nessos the Oracle
+						dr(29, {
+							i(86584, {	-- Hardened Shell
+								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+								["criteriaID"] = 9,
+							}),
+						}),
+						dr(22, i(87615)),	-- Yakwasher's Bracers
+						dr(11, i(87621)),	-- Wristguards of Great Fortune
 						dr(10, {
-							i(87620),
-							i(87618),
+							i(87620),	-- Bracers of the Frozen Summit
+							i(87618),	-- Ice Encrusted Bracer
 						}),
 						dr(9, {
-							i(87617),
-							i(87613),
-							i(87614),
-							i(87616),
-							i(87619),
+							i(87617),	-- Bracers of the Serene Mountaintop
+							i(87613),	-- Frozen Zandalari Bracer
+							i(87614),	-- Kafa Picker's Bracers
+							i(87616),	-- Mountain Trailblazer's Cuffs
+							i(87619),	-- Terracotta Guardian's Bracer
 						}),
 					}),
-					n(50831, { 		-- Scritch
-						dr(14, i(87615)),
+					n(50831, {	-- Scritch
+						dr(14, i(87615)),	-- Yakwasher's Bracers
 						dr(12, {
-							i(87619),
-							i(87621),
+							i(87619),	-- Terracotta Guardian's Bracer
+							i(87621),	-- Wristguards of Great Fortune
 						}),
 						dr(11, {
-							i(87614),
-							i(87616),
+							i(87614),	-- Kafa Picker's Bracers
+							i(87616),	-- Mountain Trailblazer's Cuffs
 						}),
 						dr(10, {
-							i(87620),
-							i(87617),
-							i(87613),
-							i(87618),
+							i(87620),	-- Bracers of the Frozen Summit
+							i(87617),	-- Bracers of the Serene Mountaintop
+							i(87613),	-- Frozen Zandalari Bracer
+							i(87618),	-- Ice Encrusted Bracer
 						}),
 					}),
-					n(50733, { 		-- Ski'thik
-						dr(13, i(87613)),
+					n(50733, {	-- Ski'thik
+						dr(13, i(87613)),	-- Frozen Zandalari Bracer
 						dr(11, {
-							i(87617),
-							i(87616),
-							i(87619),
-							i(87615),
+							i(87617),	-- Bracers of the Serene Mountaintop
+							i(87616),	-- Mountain Trailblazer's Cuffs
+							i(87619),	-- Terracotta Guardian's Bracer
+							i(87621),	-- Wristguards of Great Fortune
+							i(87615),	-- Yakwasher's Bracers
 						}),
 						dr(10, {
-							i(87620),
-							i(87618),
-							i(87614),
-							i(87621),
+							i(87620),	-- Bracers of the Frozen Summit
+							i(87618),	-- Ice Encrusted Bracer
+							i(87614),	-- Kafa Picker's Bracers
 						}),
 					}),
-					o(213751, {		-- Sprite's Cloth Chest
-						["groups"] = {
-							dr(35, i(86223)),
-							dr(21, i(86222)),
-							dr(19, i(86225)),
-							dr(18, i(86221)),
-							dr(7, i(86224)),
-						},
-						["questID"] = 31412,
-						["model"] = "World\\SkillActivated\\Containers\\TreasureChest04.mdx",
-						["modelScale"] = 1.5,
-						["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
-					}),
-					o(213842, {		-- Stash of Yaungol Weapons
-						["groups"] = {
-							i(88723),
-						},
-						["questID"] = 31421,
-						["model"] = "World\\Expansion04\\Doodads\\Yakmen\\Yakmen_WeaponRack_01.mdx",
-						["modelScale"] = 3.2,
-						["icon"] = "Interface\\Icons\\inv_misc_ornatebox",
-					}),
-					o(213765, {		-- Tablet of Ren Yun (Object)
-						["questID"] = 31417,	-- FLAG - Tablet of Ren Yun
-						["groups"] = {
-							i(86393),	-- Tablet of Ren Yun
-						},
-					}),
-					n(50769, { 		-- Zai the Outcast
-						dr(14, i(86581)),	-- Toy
-						dr(12, i(87618)),
+					n(50769, {	-- Zai the Outcast
+						dr(14, i(86581)),	-- Farwater Conch
+						dr(12, i(87618)),	-- Ice Encrusted Bracer
 						dr(11,	{
-							i(87614),
-							i(87619),
-							i(87621),
-							i(87617),
+							i(87614),	-- Kafa Picker's Bracers
+							i(87619),	-- Terracotta Guardian's Bracer
+							i(87621),	-- Wristguards of Great Fortune
+							i(87617),	-- Bracers of the Serene Mountaintop
 						}),
 						dr(10, {
-							i(87620),
-							i(87613),
-							i(87616),
-							i(87615),
+							i(87620),	-- Bracers of the Frozen Summit
+							i(87613),	-- Frozen Zandalari Bracer
+							i(87616),	-- Mountain Trailblazer's Cuffs
+							i(87615),	-- Yakwasher's Bracers
 						}),
 					}),
-					n(69769, { 		-- Zandalari Warbringer
+					n(69769, {	-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
-						dr(4, i(94229)), 	-- Mount
+						dr(4, i(94229)), 	-- Reins of the Slate Primordial Direhorn
 					}),
-					n(69841, { 		-- Zandalari Warbringer
+					n(69841, {	-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
-						dr(4, i(94230)),	-- Mount
+						dr(4, i(94230)),	-- Reins of the Amber Primordial Direhorn
 					}),
-					n(69842, { 		-- Zandalari Warbringer
+					n(69842, {	-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
-						dr(4, i(94231)),	-- Mount
+						dr(4, i(94231)),	-- Reins of the Jade Primordial Direhorn
 					}),
-					n(69768, { 		-- Zandalari Warscout
+					n(69768, {	-- Zandalari Warscout
 						dr(15, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
 					}),
-				--	n(70323, { 		-- Krakkanon	}),
 				}),
 				n(-18, { 	-- Scenario's
 					n(-19, { 	-- Arena of Annihilation m(480
@@ -2196,7 +2211,7 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\ability_monk_legacyoftheemperor",
 					["description"] = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.|r",
 				}),
-				n(-38, { -- Profession
+				n(-38, {	-- Profession
 					prof(356, { -- Fishing
 						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
 						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet

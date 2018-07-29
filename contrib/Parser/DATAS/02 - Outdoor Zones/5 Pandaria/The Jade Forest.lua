@@ -1500,9 +1500,8 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares
 					n(50750, {	-- Aethis
-						dr(13, {
-							i(87649),	-- Pool-Stirrer
-						}),
+						dr(18, i(87217)),	-- Small Bag of Goods
+						dr(13, i(87649)),	-- Pool-Stirrer
 						dr(12, {
 							i(87594),	-- Leggings of Forgotten War
 							i(87588),	-- Leggings of Spiritsong Melody
@@ -1519,230 +1518,244 @@ _.Zones =
 							i(87589),	-- Leggings of Fractured Reflection
 						}),
 					}),
-					n(51078, { 		-- Ferdinand
-						dr(16, i(87652)),
-						dr(12, i(87586)),
+					n(51078, {	-- Ferdinand
+						dr(20, i(87217)),	-- Small Bag of Goods
+						dr(16, i(87652)),	-- Ook-Breaker Mace
+						dr(12, i(87586)),	-- Forest Trickster's Leggings
 						dr(11, {
-							i(87587),
-							i(87588),
-							i(87589),
-							i(87590),
-							i(87591),
-							i(87592),
-							i(87593),
-							i(87594),
+							i(87587),	-- Orchard Tender's Leggings	
+							i(87588),	-- Leggings of Spiritsong Melody
+							i(87589),	-- Leggings of Fractured Reflection
+							i(87590),	-- Jade Heart Leggings
+							i(87591),	-- Tian Trainee Leggings
+							i(87592),	-- Grookin' Grookin' Trousers
+							i(87593),	-- Gan Shi Warlord Legguards
+							i(87594),	-- Leggings of Forgotten War
 						}),
 					}),
-					n(50338, { 		-- Kor'nas Nightsavage
-						dr(14, i(87642)),
-						dr(12, i(87590)),
+					n(50338, {	-- Kor'nas Nightsavage
+						dr(19, i(87217)),	-- Small Bag of Goods
+						dr(14, i(87642)),	-- Darkstaff of Annihilation
 						dr(11, {
-							i(87586),
-							i(87587),
-							i(87588),
-							i(87589),
-							i(87591),
-							i(87592),
-							i(87593),
-							i(87594),
+							i(87586),	-- Forest Trickster's Leggings
+							i(87587),	-- Orchard Tender's Leggings
+							i(87588),	-- Leggings of Spiritsong Melody
+							i(87589),	-- Leggings of Fractured Reflection
+							i(87590),	-- Jade Heart Leggings
+							i(87591),	-- Tian Trainee Leggings
+							i(87592),	-- Grookin' Grookin' Trousers
+							i(87593),	-- Gan Shi Warlord Legguards
+							i(87594),	-- Leggings of Forgotten War
 						}),
 					}),
-					n(50363, { 		-- Krax'ik
-						dr(15, i(87646)),
+					n(70323, {	-- Krakkanon
+						dr(14, {
+							i(88563, {	-- Nat's Fishing Journal
+								q(31664),	-- An Angler's Quest
+							}),
+						}),
+					}),
+					n(50363, {	-- Krax'ik
+						dr(19, i(87217)),	-- Small Bag of Goods
+						dr(15, i(87646)),	-- Needlefang Throatripper
 						dr(12, {
-							i(87586),
-							i(87592),
+							i(87586),	-- Forest Trickster's Leggings
+							i(87592),	-- Grookin' Grookin' Trousers
 						}),
 						dr(11, {
-							i(87588),
-							i(87589),
-							i(87590),
-							i(87593),
+							i(87588),	-- Leggings of Spiritsong Melody
+							i(87589),	-- Leggings of Fractured Reflection
+							i(87590),	-- Jade Heart Leggings
+							i(87593),	-- Gan Shi Warlord Legguards
+							i(87591),	-- Tian Trainee Leggings
 						}),
 						dr(10, {
-							i(87591),
-							i(87587),
-							i(87594),
+							i(87587),	-- Orchard Tender's Leggings
+							i(87594),	-- Leggings of Forgotten War
 						}),
 					}),
-					n(50823, { 		-- Mister Ferocious
-						dr(14, i(87652)),
-						dr(11, {
-							i(87586),
-							i(87587),
-							i(87588),
-							i(87589),
-							i(87590),
-							i(87592),
-							i(87593),
-							i(87594),
-						}),
-						dr(10, 	i(87591)),
+					n(65003, {	-- Martar the Not-So-Smart
+						dr(29, i(87780)),	-- Martar's Magnifying Glass
 					}),
-					n(50350, { 		-- Morgrinn Crackfang
-						dr(15, i(87643)),
+					n(50823, {	-- Mister Ferocious
+						dr(19, i(87217)),	-- Small Bag of Goods
+						dr(14, i(87652)),	-- Ook-Breaker Mace
 						dr(11, {
-							i(87586),
-							i(87587),
-							i(87589),
-							i(87590),
-							i(87591),
-							i(87592),
-							i(87593),
-							i(87594),
+							i(87586),	-- Forest Trickster's Leggings
+							i(87587),	-- Orchard Tender's Leggings
+							i(87588),	-- Leggings of Spiritsong Melody
+							i(87589),	-- Leggings of Fractured Reflection
+							i(87590),	-- Jade Heart Leggings
+							i(87592),	-- Grookin' Grookin' Trousers
+							i(87593),	-- Gan Shi Warlord Legguards
+							i(87594),	-- Leggings of Forgotten War
 						}),
-						dr(10, i(87588)),
+						dr(10, 	i(87591)),	-- Tian Trainee Leggings
 					}),
-					n(50782, { 		-- Sarnak
-							dr(15, i(87650)),
-						dr(13, i(87594)),
+					n(50350, {	-- Morgrinn Crackfang
+						dr(20, i(87217)),	-- Small Bag of Goods
+						dr(15, i(87643)),	-- Fangcracker Battlemace
 						dr(11, {
-							i(87589),
-							i(87593),
-							i(87588),
-							i(87591),
+							i(87586),	-- Forest Trickster's Leggings
+							i(87587),	-- Orchard Tender's Leggings
+							i(87589),	-- Leggings of Fractured Reflection
+							i(87590),	-- Jade Heart Leggings
+							i(87591),	-- Tian Trainee Leggings
+							i(87592),	-- Grookin' Grookin' Trousers
+							i(87593),	-- Gan Shi Warlord Legguards
+							i(87594),	-- Leggings of Forgotten War
+						}),
+						dr(10, i(87588)),	-- Leggings of Spiritsong Melody
+					}),
+					n(50782, {	-- Sarnak
+						dr(21, i(87217)),	-- Small Bag of Goods
+						dr(15, i(87650)),	-- Fishsticker Crossbow
+						dr(13, i(87594)),	-- Leggings of Forgotten War
+						dr(11, {
+							i(87589),	-- Leggings of Fractured Reflection
+							i(87593),	-- Gan Shi Warlord Legguards
+							i(87588),	-- Leggings of Spiritsong Melody
+							i(87591),	-- Tian Trainee Leggings
 						}),
 						dr(10, {
-							i(87586),
-							i(87587),
-							i(87590),
-							i(87592),
+							i(87586),	-- Forest Trickster's Leggings
+							i(87587),	-- Orchard Tender's Leggings
+							i(87590),	-- Jade Heart Leggings
+							i(87592),	-- Grookin' Grookin' Trousers
 						}),
-
 					}),
-					n(50808, { 		-- Urobi the Walker
-						dr(14, i(87651)),
+					n(50808, {	-- Urobi the Walker
+						dr(20, i(87217)),	-- Small Bag of Goods
+						dr(14, i(87651)),	-- Pathwalker Greatstaff
 						dr(12, {
-							i(87586),
-							i(87591),
+							i(87586),	-- Forest Trickster's Leggings
+							i(87591),	-- Tian Trainee Leggings
 						}),
 						dr(11, {
-							i(87588),
-							i(87590),
-							i(87592),
-							i(87593),
+							i(87588),	-- Leggings of Spiritsong Melody
+							i(87590),	-- Jade Heart Leggings
+							i(87592),	-- Grookin' Grookin' Trousers
+							i(87593),	-- Gan Shi Warlord Legguards
+							i(87587),	-- Orchard Tender's Leggings
 						}),
 						dr(10, {
-							i(87594),
-							i(87589),
-							i(87587),
+							i(87594),	-- Leggings of Forgotten War
+							i(87589),	-- Leggings of Fractured Reflection
 						}),
 					}),
-					n(69769, { 		-- Zandalari Warbringer
+					n(69769, {	-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
-						dr(4, i(94229)), 	-- Mount
+						dr(4, i(94229)), 	-- Reins of the Slate Primordial Direhorn
 					}),
-					n(69841, { 		-- Zandalari Warbringer
+					n(69841, {	-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
-						dr(4, i(94230)),	-- Mount
+						dr(4, i(94230)),	-- Reins of the Amber Primordial Direhorn
 					}),
-					n(69842, { 		-- Zandalari Warbringer
+					n(69842, {	-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
-						dr(4, i(94231)),	-- Mount
+						dr(4, i(94231)),	-- Reins of the Jade Primordial Direhorn
 					}),
-					n(69768, { 		-- Zandalari Warscout
+					n(69768, {	-- Zandalari Warscout
 						dr(15, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
 					}),
-				--	n(70323, { 		-- Krakkanon	}),
-				--	n(65003, { 		-- Martar the Not-So-Smart	}),
 				}),
-				n(-2, {		-- Vendors
+				n(-2, {	-- Vendors
 					n(56707, { 		-- Chin <Master of Noodles>
 						recipe(124233),	-- Blanched Needle Mushrooms
 						recipe(124228),	-- Boiled Silkworm Pupa

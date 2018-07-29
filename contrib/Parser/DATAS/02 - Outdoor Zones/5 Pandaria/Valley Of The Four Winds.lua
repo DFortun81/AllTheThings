@@ -40,6 +40,37 @@ _.Zones =
 						["description"] = "Located in a cave hidden under some bushes in the mountains of north-east Paoquan Hollow at (23.2,30.8)",
 					}),
 				}),
+				ach(7284, {	-- Is Another Man's Treasure
+					n(64004, { 		-- Ghostly Pandaren Fisherman
+						["groups"] = {
+							i(85973), 	-- Ancient Pandaren Fishing Charm Toy
+						},
+						["description"] = "|cff66ccffSpeak with the Ghostly Pandaren Fisherman to get the toy.|r",
+						["questID"] = 31284,
+					}),
+					n(64191, {	-- Ghostly Pandaren Craftsman
+						["groups"] = {
+							i(86079),	-- Ancient Pandaren Woodcutter
+						},
+						["questID"] = 31292,
+					}),
+					o(213749, {		-- Staff of the Hidden Master
+						["groups"] = {
+							i(86218),	-- Staff of the Hidden Master
+						},
+						["questID"] = 31407,
+					}),
+					o(213649, {
+						["groups"] = {
+							i(86110),	-- Stolen Necklace of Precision
+							i(86111),	-- Stolen Necklace of Accuracy
+							i(86112),	-- Stolen Amulet of Wisdom
+							i(86113),	-- Stolen Amulet of Might
+							i(86114),	-- Stolen Necklace of Fortitude
+						},
+						["questID"] = 31406,
+					}),
+				}),
 				n(-17, { 	-- Quests
 					n(-192, {	-- Cooking
 						["groups"] = {
@@ -1551,170 +1582,160 @@ _.Zones =
 --]]
 				}),
 				n(-16, { 	-- Rares
-					n(51059, { 		-- Blackhoof
-						{
-							["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-							["criteriaID"] = 5,		-- Battle Horn [Criteria]
-							["itemID"] = 86565,	-- Battle Horn [Item]
-							["dr"] = 19,
-						},
+					n(51059, {	-- Blackhoof
+						dr(20, i(87217)),	-- Small Bag of Goods
+						dr(19, i(86565, {
+							["achievementID"] = 8728,	-- Going to Need a Bigger Bag
+							["criteriaID"] = 5
+						})),
 						dr(12, {
-							i(87595),
-							i(87596),
-							i(87597),
+							i(87595),	-- Gloves of Burrow Spelunking
+							i(87596),	-- Mudmug's Mitts
+							i(87597),	-- Gloves of Congealed Mist
 						}),
 						dr(11, {
-							i(87600),
-							i(87601),
-							i(87602),
+							i(87600),	-- Marshsong Gloves
+							i(87601),	-- Plough Driving Grips
+							i(87602),	-- Grain Warden's Gauntlets
 						}),
 						dr(10, {
-							i(87598),
-							i(87599),
-							i(87603),
+							i(87598),	-- Monstrous Silk Gloves
+							i(87599),	-- Grower's Gloves
+							i(87603),	-- Thunderfall Gauntlets
 						}),
 					}),
-					n(50828, { 		-- Bonobos
+					n(50828, {	-- Bonobos
+						dr(21, i(87217)),	-- Small Bag of Goods
 						dr(12, {
-							i(87597),
-							i(87598),
+							i(87597),	-- Gloves of Congealed Mist
+							i(87598),	-- Monstrous Silk Gloves
 						}),
 						dr(11, {
-							i(87595),
-							i(87596),
-							i(87601),
-							i(87602),
-							i(87603),
+							i(87595),	-- Gloves of Burrow Spelunking
+							i(87596),	-- Mudmug's Mitts
+							i(87601),	-- Plough Driving Grips
+							i(87602),	-- Grain Warden's Gauntlets
+							i(87603),	-- Thunderfall Gauntlets
 						}),
 						dr(10, {
-							i(87599),
-							i(87600),
+							i(87599),	-- Grower's Gloves
+							i(87600),	-- Marshsong Gloves
 						--	i(86591),	-- Should be a toy
 						}),
 					}),
-					n(64004, { 		-- Ghostly Pandaren Fisherman
-						["description"] = "|cff66ccffSpeak with the Ghostly Pandaren Fisherman to get the toy.|r",
-						["groups"] = {
-							i(85973), 	-- Ancient Pandaren Fishing Charm Toy
-						},
-					}),
-					n(50351, { 		-- Jonn-Dar
+					n(50351, {	-- Jonn-Dar
+						dr(19, i(87217)),	-- Small Bag of Goods
+						dr(14, i(86572)),	-- Terracotta Fragment
 						dr(11, {
-							i(87595),
-							i(87596),
-							i(87598),
-							i(87599),
-							i(87600),
-							i(87601),
-							i(87603),
+							i(87596),	-- Mudmug's Mitts
+							i(87598),	-- Monstrous Silk Gloves
+							i(87600),	-- Marshsong Gloves
+							i(87601),	-- Plough Driving Grips
+							i(87603),	-- Thunderfall Gauntlets
 						}),
 						dr(10, {
-							i(87597),
-							i(87602),
+							i(87595),	-- Gloves of Burrow Spelunking
+							i(87597),	-- Gloves of Congealed Mist
+							i(87602),	-- Grain Warden's Gauntlets
+							i(87599),	-- Grower's Gloves
 						}),
 					}),
-					o(226956, {		-- Mysterious Fruit Pile
-						i(110505),		-- Mesmerizing Fruit Hat [Not a toy, but should be.]
-					}),
-					n(50364, { 		-- Nal'lak the Ripper
+					n(50364, {	-- Nal'lak the Ripper
+						dr(20, i(86576)),	-- Dynasty of Steel
+						dr(19, i(87217)),	-- Small Bag of Goods
 						dr(11, {
-							i(87595),
-							i(87596),
-							i(87597),
-							i(87598),
-							i(87599),
-							i(87601),
-							i(87602),
+							i(87595),	-- Gloves of Burrow Spelunking
+							i(87596),	-- Mudmug's Mitts
+							i(87597),	-- Gloves of Congealed Mist
+							i(87598),	-- Monstrous Silk Gloves
+							i(87599),	-- Grower's Gloves
+							i(87601),	-- Plough Driving Grips
+							i(87602),	-- Grain Warden's Gauntlets
 						}),
 						dr(10, {
-							i(87600),
-							i(87603),
+							i(87600),	-- Marshsong Gloves
+							i(87603),	-- Thunderfall Gauntlets
 						}),
 					}),
-					n(50811, { 		-- Nasra Spothide
-						dr(12, i(87600)),
+					n(50811, {	-- Nasra Spothide
+						dr(20, i(86587)),	-- Seed of Tranquil Growth
+						dr(19, i(87217)),	-- Small Bag of Goods
+						dr(12, i(87600)),	-- Marshsong Gloves
 						dr(11, {
-							i(87596),
-							i(87597),
-							i(87598),
-							i(87599),
-							i(87602),
-							i(87603),
+							i(87596),	-- Mudmug's Mitts
+							i(87597),	-- Gloves of Congealed Mist
+							i(87598),	-- Monstrous Silk Gloves
+							i(87599),	-- Grower's Gloves
+							i(87602),	-- Grain Warden's Gauntlets
+							i(87603),	-- Thunderfall Gauntlets
 						}),
 						dr(10, {
-							i(87601),
-							i(87595),
+							i(87601),	-- Plough Driving Grips
+							i(87595),	-- Gloves of Burrow Spelunking
 						}),
 					}),
-					n(50783, { 		-- Salyin Warscout
-						dr(15, i(86583)),
+					n(50783, {	-- Salyin Warscout
+						dr(20, i(87217)),	-- Small Bag of Goods
+						dr(15, i(86583)),	-- Salyin Battle Banner
 						dr(12, {
-							i(87602),
-							i(87599),
-							i(87601),
+							i(87602),	-- Grain Warden's Gauntlets
+							i(87599),	-- Grower's Gloves
+							i(87601),	-- Plough Driving Grips
 						}),
 						dr(11, {
-							i(87595),
-							i(87598),
-							i(87596),
+							i(87595),	-- Gloves of Burrow Spelunking
+							i(87598),	-- Monstrous Silk Gloves
+							i(87596),	-- Mudmug's Mitts
 						}),
 						dr(10, {
-							i(87597),
-							i(87600),
-							i(87603),
+							i(87597),	-- Gloves of Congealed Mist
+							i(87600),	-- Marshsong Gloves
+							i(87603),	-- Thunderfall Gauntlets
 						}),
 					}),
-					n(50766, { 		-- Sele'na
-						{
-							["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-							["criteriaID"] = 8,		-- Overgrown Lilypad [Criteria]
-							["itemID"] = 86580,		-- Overgrown Lilypad / Wilted Lilypad [Item]
+					n(50766, {	-- Sele'na
+						dr(20, i(86580, {	-- Wilted Lilypad
+							["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+							["criteriaID"] = 8,		-- Overgrown Lilypad
 							["description"] = "This item used to be the Overgrown Lilypad. This item instead is required for the Bigger Bag achievement in its place.",
-							["dr"] = 20,
-						},
-						dr(12, i(87595)),
+						})),
+						dr(19, i(87217)),	-- Small Bag of Goods
+						dr(12, i(87595)),	-- Gloves of Burrow Spelunking
 						dr(11, {
-							i(87596),
-							i(87597),
-							i(87600),
-							i(87601),
-							i(87602),
-							i(87603),
+							i(87596),	-- Mudmug's Mitts
+							i(87597),	-- Gloves of Congealed Mist
+							i(87600),	-- Marshsong Gloves
+							i(87601),	-- Plough Driving Grips
+							i(87602),	-- Grain Warden's Gauntlets
+							i(87603),	-- Thunderfall Gauntlets
 						}),
 						dr(10, {
-							i(87599),
-							i(87598),
+							i(87599),	-- Grower's Gloves
+							i(87598),	-- Monstrous Silk Gloves
 						}),
 					}),
-					o(213749, {		-- Staff of the Hidden Master
-						["groups"] = {
-							i(86218),	-- Staff of the Hidden Master
-						},
-						["questID"] = 31407,
-					}),
-					n(50339, { 		-- Sulik'shor
-						dr(12, i(87599)),
+					n(50339, {	-- Sulik'shor
+						dr(20, i(87217)),	-- Small Bag of Goods
+						dr(12, i(87599)),	-- Grower's Gloves
 						dr(11, {
-							i(87595),
-							i(87596),
-							i(87597),
-							i(87598),
-							i(87602),
-							i(87603),
+							i(87595),	-- Gloves of Burrow Spelunking
+							i(87596),	-- Mudmug's Mitts
+							i(87598),	-- Monstrous Silk Gloves
+							i(87602),	-- Grain Warden's Gauntlets
+							i(87603),	-- Thunderfall Gauntlets
 						}),
 						dr(10, {
-							i(87601),
-							i(87600),
+							i(87597),	-- Gloves of Congealed Mist
+							i(87601),	-- Plough Driving Grips
+							i(87600),	-- Marshsong Gloves
 						}),
-						{
-							["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-							["criteriaID"] = 4,		-- Crystal of Insanity [Criteria]
-							["itemID"] = 86569,	-- Crystal of Insanity [Item]
-							["dr"] = 9,
-						},
+						dr(9, i(86569, {	-- Crystal of Insanity
+							["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+							["criteriaID"] = 4,
+						})),
 					}),
 				}),
-				n(-2, {		-- Vendors
+				n(-2, {	-- Vendors
 					n(58713, {	-- Anthea Ironpaw <Master of the Wok>
 						un(1, i(74666)),	-- Recipe: Sauteed Carrots
 						recipe(104301),	-- Sauteed Carrots
@@ -3096,6 +3117,11 @@ _.Zones =
 					prof(356, { -- Fishing
 						desc(i(94934), "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r"),	-- Tiny Green Carp Pet
 						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
+					}),
+				}),
+				n(-222, {	-- Treasure Hunter
+					o(226956, {	-- Mysterious Fruit Pile
+						i(110505),	-- Mesmerizing Fruit Hat [Not a toy, but should be.]
 					}),
 				}),
 			},

@@ -300,121 +300,163 @@ _.Zones =
 							i(76061),	-- Spirit of Harmony
 						},
 					}),
-					n(50822, { 		-- Ai-Ran the Shifting Cloud
+					n(58778, {	-- Aetha
+						dr(46, i(103624)),	-- Treasures of the Vale
+					}),
+					n(50822, {	-- Ai-Ran the Shifting Cloud
 						dr(20, {
-							i(87638),
-							i(86590),	-- Toy
-							i(87637),
-							i(87640),
+							i(87638),	-- Cloak of Tranquil Clouds
+							i(86590),	-- Essence of the Breeze
+							i(87637),	-- Jade Harbinger's Cloak
+							i(87640),	-- Softfoot's Drape
 						}),
 						dr(19, {
-							i(87636),
-							i(87639),
-						}),				
+							i(87636),	-- Cloak of the Forgotten Emperor
+							i(87639),	-- Tattered Guo-Lai Dynasty Cloak
+						}),
+						dr(18, i(87217)),	-- Small Bag of Goods
 					}), 
-					n(64403, {		-- Alani
+					n(64403, {	-- Alani
 						["groups"] = {
-							dr(100, i(90655)),	-- Mount
+							dr(100, i(90655)),	-- Reins of the Thundering Ruby Cloud Serpent
 						},
 						["description"] = "|cff66ccffRequires 10 Skyshards to create a Sky Crystal to remove the Nimbus Shroud Debuff. Personal loot now so everyone in party will get the mount.|r",	
 					}),
-					n(50749, { 		-- Kal'tik the Blight
-						dr(21, i(87637)),
-						dr(19, {
-							i(87636),
-							i(87638),
-							i(87640),
-							i(87639),
-						}),
-						dr(18, i(134023)),
+					n(58949, {	-- Bai'Jin the Butcher
+						dr(24, i(103624)),	-- Treasures of the Vale
 					}), 
-					n(50349, { 		-- Kang the Soul Thief
-						dr(21, i(87638)),
-						dr(20, i(87639)),
+					n(63695, {	-- Baolai the Immolator
+						dr(43, i(103624)),	-- Treasures of the Vale
+					}), 
+					n(58474, {	-- Bloodtip
+						dr(19, i(103624)),	-- Treasures of the Vale
+					}), 
+					n(58768, {	-- Cracklefang
+						dr(26, i(103624)),	-- Treasures of the Vale
+					}), 
+					n(62881, {	-- Gaohun the Soul-Severer
+						dr(40, i(103624)),	-- Treasures of the Vale
+					}), 
+					n(63101, {	-- General Temuja
+						dr(36, i(103624)),	-- Treasures of the Vale
+					}), 
+					n(62880, {	-- Gochao the Ironfist
+						dr(35, i(103624)),	-- Treasures of the Vale
+					}), 
+					n(63691, {	-- Huo-Shuang
+						dr(10, i(103624)),	-- Treasures of the Vale
+					}), 
+					n(50749, {	-- Kal'tik the Blight
+						dr(21, i(87637)),	-- Jade Harbinger's Cloak
+						dr(20, i(87217)),	-- Small Bag of Goods
 						dr(19, {
-							i(87636),
-							i(87637),
+							i(87636),	-- Cloak of the Forgotten Emperor
+							i(87638),	-- Cloak ok Tranquil Clouds
+							i(87640),	-- Softfoot's Drape
+							i(87639),	-- Tattered Guo-Lai Dynasty Cloak
+						}),
+						dr(18, i(134023)),	-- Bottled Tornado
+					}), 
+					n(50349, {	-- Kang the Soul Thief
+						dr(21, i(87638)),	-- Cloak of Tranquil Clouds
+						dr(20, i(87639)),	-- Tattered Guo-Lai Dynasty Cloak
+						dr(19, {
+							i(87636),	-- Cloak of the Forgotten Emperor
+							i(87637),	-- Jade Harbinger's Cloak
+							i(87217),	-- Small Bag of Goods
 						}),
 						dr(18, {
-							i(86571),	-- Toy
-							i(87640),
+							i(86571),	-- Kang's Bindstone
+							i(87640),	-- Softfoot's Drape
 						}),
 					}), 
-					n(50840, { 		-- Major Nanners
-						dr(22, i(87636)),
-						dr(21, i(87639)),
-						dr(20, i(86594)),	-- Toy
-						dr(19, {
-							i(87638),
-							i(87640),
-						}),
-						dr(18, i(87637)),
-					}), 
-					n(50806, { 		-- Moldo One-Eye
-						dr(26, i(87639)),
-						dr(19, i(87640)),
-						dr(18, {
-							i(87636),
-							i(87638),
-							i(86586),	-- Toy
-						}),
-						dr(17, i(87637)),
-					}), 
-					n(50780, { 		-- Sahn Tidehunter
+					n(63978, {	-- Kri'chon
+						dr(29, i(103624)),	-- Treasures of the Vale
+					}),
+					n(50840, {	-- Major Nanners
+						dr(22, i(87636)),	-- Cloak of the Forgotten Emperor
+						dr(21, i(87639)),	-- Tattered Guo-lai Dynasty Cloak
 						dr(20, {
-							i(87636),
-							i(87637),
-							i(87639),
+							i(86594),	-- Helpful Wikky's Whistle
+							i(87217),	-- Small Bag of Goods
 						}),
 						dr(19, {
-							i(87638),
-							i(87640),
+							i(87638),	-- Cloak of Tranquil Clouds
+							i(87640),	-- Softfoot's Drape
 						}),
-						dr(11, i(86582)),	-- Toy
+						dr(18, i(87637)),	-- Jade Harbinger's Cloak
 					}), 
-					n(50359, { 		-- Urgolax
-						dr(29, i(87638)),
+					n(50806, {	-- Moldo One-Eye
+						dr(27, i(87639)),	-- Tattered Guo-Lai Dynasty Cloak
+						dr(19, {
+							i(87640),	-- Softfoot's Drape
+							i(87217),	-- Small Bag of Goods
+						}),
 						dr(18, {
-							i(87637),
-							i(87639),
+							i(87636),	-- Cloak of the Forgotten Emperor
+							i(87638),	-- Cloak ok Tranquil Clouds
+							i(86586),	-- Panflute of Pandaria
 						}),
-						dr(17, i(87636)),
-						dr(16, {
-							i(87640),
-							i(86575),	-- Toy
-						}),
+						dr(17, i(87637)),	-- Jade Harbinger's Cloak
 					}), 
-					n(50336, { 		-- Yorik Sharpeye
-						dr(22, i(87638)),
-						dr(20, i(87640)),
+					n(58771, {	-- Quid
+						dr(45, i(103624)),	-- Treasures of the Vale
+					}), 
+					n(50780, {	-- Sahn Tidehunter
+						dr(21, i(87217)),	-- Small Bag of Goods
+						dr(20, {
+							i(87636),	-- Cloak of the Forgotten Emperor
+							i(87637),	-- Jade Harbinger's Cloak
+							i(87639),	-- Tattered Guo-Lai Dynasty Cloak
+						}),
 						dr(19, {
-							i(87636),
-							i(87637),
-							i(87639),
+							i(87638),	-- Cloak ok Tranquil Clouds
+							i(87640),	-- Softfoot's Drape
 						}),
-						dr(11, i(86568)),	-- Toy
+						dr(11, i(86582)),	-- Aqua Jewel
 					}), 
---[[					
-				--	n(58778, { 		-- Aetha	}), 
-				--	n(58949, { 		-- Bai'Jin the Butcher	}), 
-				--	n(63695, { 		-- Baolai the Immolator	}), 
-				--	n(58474, { 		-- Bloodtip	}), 
-				--	n(58768, { 		-- Cracklefang	}), 
-				--	n(62881, { 		-- Gaohun the Soul-Severer	}), 
-				--	n(63101, { 		-- General Temuja	}), 
-				--	n(62880, { 		-- Gochao the Ironfist	}), 
-				--	n(63691, { 		-- Huo-Shuang	}), 
-				--	n(63978, { 		-- Kri'chon	}),
-				--	n(50843, { 		-- Portent	}), 
-				--	n(58771, { 		-- Quid	}), 
-				--	n(63240, { 		-- Shadowmaster Sydow	}),  
-				--	n(58817, { 		-- Spirit of Lao-Fe	}), 
-				--	n(58769, { 		-- Vicejaw	}), 
-				--	n(63977, { 		-- Vyraxxis	}), 
-				--	n(63510, { 		-- Wulon	}), 
---]]
+					n(63240, {	-- Shadowmaster Sydow
+						dr(37, i(103624)),	-- Treasures of the Vale
+					}),  
+					n(58817, {	-- Spirit of Lao-Fe
+						dr(26, i(103624)),	-- Treasures of the Vale
+					}), 
+					n(50359, {	-- Urgolax
+						dr(29, i(87638)),	-- Cloak of Tranquil Clouds
+						dr(18, {
+							i(87637),	-- Jade Harbinger's Cloak
+							i(87217),	-- Small Bag of Goods
+							i(87639),	-- Tattered Guo-Lai Dynasty Cloak
+						}),
+						dr(17, i(87636)),	-- Cloak of the Forgotten Emperor
+						dr(16, {
+							i(87640),	-- Softfoot's Drape
+							i(86575),	-- Chalice of Secrets
+						}),
+					}), 
+					n(58769, {	-- Vicejaw
+						dr(34, i(103624)),	-- Treasures of the Vale
+					}), 
+					n(63977, {	-- Vyraxxis
+						dr(31, i(103624)),	-- Treasures of the Vale
+					}), 
+					n(63510, {	-- Wulon
+						dr(20, i(103624)),	-- Treasures of the Vale
+					}),
+					n(50336, {	-- Yorik Sharpeye
+						dr(22, i(87638)),	-- Cloak of Tranquil Clouds
+						dr(20, i(87640)),	-- Softfoot's Drape
+						dr(19, {
+							i(87636),	-- Cloak of the Forgotten Emperor
+							i(87637),	-- Jade Harbinger's Cloak
+							i(87217),	-- Small Bag of Goods
+							i(87639),	-- Tattered Guo-Lai Dynasty Cloak
+						}),
+						dr(11, i(86568)),	-- Mr. Smite's Brass Compass
+					}), 
+					--n(50843, { 		-- Portent	}), 
 				}),
-				n(-2, {		-- Vendors
+				n(-2, {	-- Vendors
 					na(64028, {	-- Challenger Soong <Challenge Dungeons>
 						["groups"] = {
 							un(4, i(90049)),	-- Girdle of the Lich Lord
@@ -872,7 +914,7 @@ _.Zones =
 						i(93230),	-- Grand Commendation of the Lorewalkers
 					}),
 				}),
-				n(-38, { -- Profession
+				n(-38, {	-- Profession
 					prof(356, { -- Fishing
 						desc(i(94933), "The Tiny Blue Carp can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms.|nAnother way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms.|r"),	-- Tiny Blue Carp Pet
 					}),

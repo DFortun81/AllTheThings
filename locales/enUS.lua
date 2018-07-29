@@ -2107,6 +2107,7 @@ AllTheThings.Locales.enUS = {
 		[213364] = "Ancient Pandaren Mining Pick",
 		[213366] = "Ancient Pandaren Tea Pot",
 		[213368] = "Lucky Pandren Coin",
+		[213649] = "Cache of Pilfered Goods",
 		[213650] = "Virmen Treasure Cache",
 		[213651] = "Equipment Locker",
 		[213653] = "Pandaren Fishing Spear",
