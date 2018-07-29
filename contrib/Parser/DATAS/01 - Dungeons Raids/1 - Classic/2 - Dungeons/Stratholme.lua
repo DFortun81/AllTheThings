@@ -121,10 +121,10 @@ _.Instances =
 								})),
 								n(-40, {	-- Legacy
 									["groups"] = {
-										nlq({	-- Quests (Legacy)
-											q(5282, { 	-- The Restless Souls (2)
+										n(-17, {	-- Quests (Legacy)
+											un(40, q(5282, { 	-- The Restless Souls (2)
 												un(34, i(13315)),	-- Testament of Hope
-											}),
+											})),
 										}),
 										n(  0, {	-- Zone Drop (Legacy)
 											n(14684, { 	-- Balzaphon
