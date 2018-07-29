@@ -274,6 +274,7 @@ _.Zones =
 							i(156977),	-- Serrated Gladius 
 						},
 						["qg"] = 4943,	-- Mosarn
+						["lvl"] = 35,
 						["sourceQuests"] = { 27258 },	-- The Black Shield
 					}),
 --[[					

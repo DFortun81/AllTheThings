@@ -76,6 +76,19 @@ _.Instances =
 					}),
 					n(  0, {	-- Zone Drop
 						i(9510),	-- Caverndeep Trudgers
+						i(9490, {	-- Gizmotron Megachopper 
+							["crs"] = { 
+								6207,  -- Caverndeep Ambusher 
+								6206,  -- Caverndeep Burrower 
+								6212,  -- Dark Iron Agent 
+								6329,  -- Irradiated Pillager 
+								6223,  -- Leprous Defender 
+								6226,  -- Mechano-Flamewalker 
+								6227,  -- Mechano-Frostwalker 
+								6225,  -- Mechano-Tank 
+								6230,  -- Peacekeeper Security Suit 
+							}, 
+						}),
 						i(9308, {	-- Grime-Encrusted Object
 							q(2952, { 	-- The Sparklematic 5200!
 								qr(q(2953, {	-- More Sparklematic Action
@@ -125,132 +138,84 @@ _.Instances =
 								}), --]]
 							}),	
 						}),
+						i(9489, {	-- Gyromatic Icemaker 
+							["crs"] = { 
+								6232,  -- Arcane Nullifier X-21 
+								6220,  -- Irradiated Horror 
+								6234,  -- Mechanized Guardian 
+								6233,  -- Mechanized Sentry 
+								6230,  -- Peacekeeper Security Suit 
+							}, 
+						}), 
+						i(9487, {	-- Hi-Tech Supergun 
+							["crs"] = { 
+								6232,  -- Arcane Nullifier X-21 
+								6207,  -- Caverndeep Ambusher 
+								6206,  -- Caverndeep Burrower 
+								6212,  -- Dark Iron Agent 
+								6329,  -- Irradiated Pillager 
+								6223,  -- Leprous Defender 
+								6233,  -- Mechanized Sentry 
+								6230,  -- Peacekeeper Security Suir 
+							}, 
+						}), 
 						i(9491),	-- Hotshot Pilot's Gloves
-						n(6232, { 	-- Arcane Nullifier X-21 
-							dr(3, i(11827, {  	-- Schematic: Lil' Smoky
-								i(11826), 	-- Lil' Smoky
-							})),							
-							dr(0.07, i(9486)),	-- Supercharger Battle Axe
-							dr(0.05, i(9490)),	-- Gizmotron Megachopper
-							dr(0.05, i(9488)),	-- Oscillating Power Hammer
-							dr(0.04, i(9487)),	-- Hi-Tech Supergun
-							dr(0.04, i(9509)),	-- Petrolspill Leggings
-							dr(0.02, i(9485)),	-- Vibroblade
-							dr(0.01, i(9489)),	-- Gyromatic Icemaker
-							dr(0.01, i(9508)),	-- Mechbuilder's Overalls
+						i(9508, {	-- Mechbuilder's Overalls 
+							["crs"] = { 
+								6212,  -- Dark Iron Agent 
+								6223,  -- Leprous Defender 
+								6233,  -- Mechanized Sentry 
+								6230,  -- Peacekeeper Security Suit 
+							}, 
+						}), 
+						i(9488, {	-- Oscillating Power Hammer 
+							["crs"] = { 
+								6232,  -- Arcane Nullifier X-21 
+								6206,  -- Caverndeep Burrower 
+								6211,  -- Caverndeep Reaver 
+								6329,  -- Irradiated Pillager 
+								6234,  -- Mechanized Guardian 
+								6233,  -- Mechanized Sentry 
+								6225,  -- Mechano-Tank 
+							}, 
 						}),
-						n(6207, { 	-- Caverndeep Ambusher 
-							dr(0.02, i(9488)),	-- Oscillating Power Hammer
-							dr(0.02, i(9486)),	-- Supercharger Battle Axe
-							dr(0.01, i(9490)),	-- Gizmotron Megachopper
-							dr(0.01, i(9487)),	-- Hi-Tech Supergun
-							dr(0.01, i(9509)),	-- Petrolspill Leggings
-							dr(0.01, i(9485)),	-- Vibroblade
+						i(9509, {	-- Petrolspill Leggings
+							["crs"] = {
+								6212,	-- Dark Iron Agent
+								6223,	-- Leprous Defender
+								6234,	-- Mechanized Guardian
+								6233,	-- Mechanized Sentry
+							},
 						}),
-						n(6206, { 	-- Caverndeep Burrower
-							dr(0.06, i(9490)),	-- Gizmotron Megachopper
-							dr(0.02, i(9488)),	-- Oscillating Power Hammer
-							dr(0.02, i(9486)),	-- Supercharger Battle Axe
-							dr(0.01, i(9487)),	-- Hi-Tech Supergun
-							dr(0.01, i(9509)),	-- Petrolspill Leggings
-							dr(0.01, i(9485)),	-- Vibroblade
+						i(11827, {	-- Schematic: Lil' Smoky
+							["crs"] = {
+								6229,	-- Crowd Pummeler 9-60
+								6232,	-- Arcane Nullifier X-21
+								6230,	-- Peacekeeper Security Suit
+							},
 						}),
-						n(6211, { 	-- Caverndeep Reaver
-							dr(0.04, i(9486)),	-- Supercharger Battle Axe
-							dr(0.01, i(9488)),	-- Oscillating Power Hammer
+						i(9486, {	-- Supercharger Battle Axe
+							["crs"] = {
+								6232,	-- Arcane Nullifier X-21
+								6207,	-- Caverndeep Ambusher
+								6206,	-- Caverndeep Burrower
+								6211,	-- Caverndeep Reaver
+								6212,	-- Dark Iron Agent
+								6220,	-- Irradiated Horror
+								6329,	-- Irradiated Pillager
+								6230,	-- Peacekeeper Security Suit
+							},
 						}),
-						n(6212, { 	-- Dark Iron Agent
-							dr(0.03, i(9490)),	-- Gizmotron Megachopper
-							dr(0.03, i(9488)),	-- Oscillating Power Hammer
-							dr(0.03, i(9486)),	-- Supercharger Battle Axe
-							dr(0.02, i(9487)),	-- Hi-Tech Supergun
-							dr(0.02, i(9508)),	-- Mechbuilder's Overalls
-							dr(0.02, i(9509)),	-- Petrolspill Leggings
-							dr(0.01, i(9489)),	-- Gyromatic Icemaker
-							dr(0.01, i(9485)),	-- Vibroblade
-						}),
-						na(6392, {	-- Holdout Medic
-							dr(0.03, i(9486)),	-- Supercharger Battle Axe
-						}),
-						na(6407, {	-- Holdout Technician
-							dr(0.01, i(9489)),	-- Gyromatic Icemaker
-						}),
-						na(6391, {	-- Holdout Warrior
-							dr(0.01, i(9487)),	-- Hi-Tech Supergun
-						}),
-						n(6220, { 	-- Irradiated Horror
-							dr(0.1, i(9486)),	-- Supercharger Battle Axe
-							dr(0.06, i(9490)),	-- Gizmotron Megachopper
-							dr(0.06, i(9489)),	-- Gyromatic Icemaker
-							dr(0.06, i(9509)),	-- Petrolspill Leggings
-							dr(0.06, i(9485)),	-- Vibroblade
-							dr(0.05, i(9487)),	-- Hi-Tech Supergun
-						}),
-						n(6329, { 	-- Irradiated Pillager
-							dr(0.03, i(9486)),	-- Supercharger Battle Axe
-							dr(0.02, i(9487)),	-- Hi-Tech Supergun
-							dr(0.02, i(9488)),	-- Oscillating Power Hammer
-							dr(0.01, i(9490)),	-- Gizmotron Megachopper
-							dr(0.01, i(9509)),	-- Petrolspill Leggings
-							dr(0.01, i(9485)),	-- Vibroblade
-						}),
-						n(6223, { 	-- Leprous Defender
-							dr(0.05, i(9485)),	-- Vibroblade
-							dr(0.03, i(9487)),	-- Hi-Tech Supergun
-							dr(0.03, i(9488)),	-- Oscillating Power Hammer
-							dr(0.03, i(9486)),	-- Supercharger Battle Axe
-							dr(0.02, i(9490)),	-- Gizmotron Megachopper
-							dr(0.02, i(9509)),	-- Petrolspill Leggings
-							dr(0.01, i(9508)),	-- Mechbuilder's Overalls
-						}),
-						n(6234, { 	-- Mechanized Guardian
-							dr(0.05, i(9486)),	-- Supercharger Battle Axe
-							dr(0.04, i(9487)),	-- Hi-Tech Supergun
-							dr(0.04, i(9485)),	-- Vibroblade
-							dr(0.03, i(9489)),	-- Gyromatic Icemaker
-							dr(0.03, i(9488)),	-- Oscillating Power Hammer
-							dr(0.02, i(9490)),	-- Gizmotron Megachopper
-							dr(0.01, i(9508)),	-- Mechbuilder's Overalls
-							dr(0.01, i(9509)),	-- Petrolspill Leggings
-						}),
-						n(6233, { 	-- Mechanized Sentry
-							dr(0.04, i(9488)),	-- Oscillating Power Hammer
-							dr(0.04, i(9486)),	-- Supercharger Battle Axe
-							dr(0.03, i(9490)),	-- Gizmotron Megachopper
-							dr(0.02, i(9487)),	-- Hi-Tech Supergun
-							dr(0.02, i(9509)),	-- Petrolspill Leggings
-							dr(0.01, i(9489)),	-- Gyromatic Icemaker
-							dr(0.01, i(9508)),	-- Mechbuilder's Overalls
-							dr(0.01, i(9485)),	-- Vibroblade
-						}),
-						n(6226, { 	-- Mechano-Flamewalker
-							dr(0.04, i(9490)),	-- Gizmotron Megachopper
-							dr(0.03, i(9489)),	-- Gyromatic Icemaker
-							dr(0.03, i(9485)),	-- Vibroblade
-							dr(0.01, i(9488)),	-- Oscillating Power Hammer
-						}),
-						n(6227, { 	-- Mechano-Frostwalker
-							dr(0.04, i(9509)),	-- Petrolspill Leggings
-							dr(0.03, i(9485)),	-- Vibroblade
-							dr(0.02, i(9490)),	-- Gizmotron Megachopper
-						}),
-						n(6225, { 	-- Mechano-Tank
-							dr(0.02, i(9490)),	-- Gizmotron Megachopper
-							dr(0.02, i(9488)),	-- Oscillating Power Hammer
-							dr(0.01, i(9486)),	-- Supercharger Battle Axe
-						}),
-						n(6230, { 	-- Peacekeeper Security Suit
-							dr(4, i(11827, {  	-- Schematic: Lil' Smoky
-								i(11826), 	-- Lil' Smoky
-							})),
-							dr(0.08, i(9488)),	-- Oscillating Power Hammer
-							dr(0.05, i(9486)),	-- Supercharger Battle Axe
-							dr(0.03, i(9490)),	-- Gizmotron Megachopper
-							dr(0.03, i(9487)),	-- Hi-Tech Supergun
-							dr(0.01, i(9489)),	-- Gyromatic Icemaker
-							dr(0.01, i(9508)),	-- Mechbuilder's Overalls
-							dr(0.01, i(9509)),	-- Petrolspill Leggings
-							dr(0.01, i(9485)),	-- Vibroblade
+						i(9485, {	-- Vibroblade
+							["crs"] = {
+								6212,	-- Dark Iron Agent
+								6220,	-- Irradiated Horror
+								6329,	-- Irradiated Pillager
+								6234,	-- Mechanized Guardian
+								6233,	-- Mechanized Sentry
+								6226,	-- Mechano-Flamewalker
+								6227,	-- Mechano-Frostwalker
+							},
 						}),
 					}),
 					cr( 7361, e(419, {	-- Grubbis
