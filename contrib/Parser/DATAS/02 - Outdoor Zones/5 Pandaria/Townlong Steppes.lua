@@ -35,24 +35,34 @@ _.Zones =
 				}),
 				ach(7997, {	-- Riches of Pandaria
 					o(213961, {	-- Abandoned Crate of Goods
-						q(31427, {	-- Abandoned Crate of Goods
-							["description"] = "Located in a small tent northwest of Fire Camp Osul at (62.8,34.1)",
-						}),
+						["groups"] = {
+							q(31427),	-- Abandoned Crate of Goods
+						},
+						["description"] = "Located in a small tent northwest of Fire Camp Osul at (62.8,34.1)",
 					}),
 					o(213844, {	-- Amber Encased Moth
-						q(31426, {	-- Amber Encased Moth
-							["description"] = "Located in the Ambermarsh at (65.8,86.1)",
-						}),
+						["groups"] = {
+							i(86472, {	-- Amber Encased Moth
+								["questID"] = 31426,
+							}),
+						},
+						["description"] = "Located in the Ambermarsh at (65.8,86.1)",
 					}),
 					o(213956, {	-- Fragment of Dread
-						q(31423, {	-- Fragment of Dread
-							["description"] = "Located in the Niuzao Catacombs at (35.8,65.3)",
-						}),
+						["groups"] = {
+							i(86516, {	-- Fragment of Dread
+								["questID"] = 31423,
+							}),
+						},
+						["description"] = "Located in the Niuzao Catacombs at (35.8,65.3)",
 					}),
 					o(213959, {	-- Hardened Sap of Kri'vess
-						q(31424, {	-- Hardened Sap of Kri'vess
-							["description"] = "Located all around Kri'vess",
-						}),
+						["groups"] = {
+							i(86517, {	-- Hardened Sap of Kri'vess
+								["questID"] = 31424,
+							}),
+						},
+						["description"] = "Located all around Kri'vess",
 					}),
 				}),
 				n(-17, { 	-- Quests

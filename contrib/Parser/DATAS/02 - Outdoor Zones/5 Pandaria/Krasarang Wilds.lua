@@ -33,9 +33,12 @@ _.Zones =
 				}),
 				ach(7997, {	-- Riches of Pandaria
 					o(213750, {	-- Saurok Stone Tablet
-						q(31408, {	-- Saurok Stone Tablet
-							["description"] = "Located in a cave at (71,9)",
-						}),
+						["groups"] = {
+							i(86220, {	-- Saurok Stone Tablet
+								["questID"] = 31408,
+							}),
+						},
+						["description"] = "Located in a cave at (71,9)",
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -1679,6 +1682,16 @@ _.Zones =
 					prof(356, { -- Fishing
 						desc(i(94934), "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r"),	-- Tiny Green Carp Pet
 						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
+					}),
+				}),
+				n(-222, {	-- Treasure Hunter
+					o(214403, {	-- Stack of Papers
+						["groups"] = {
+							i(87798, {	-- Stack of Papers
+								["questID"] = 31869,
+							}),
+						},
+						["description"] = "Located on top of a hill just north of Marista at (52.1,73.4)",
 					}),
 				}),
 			},

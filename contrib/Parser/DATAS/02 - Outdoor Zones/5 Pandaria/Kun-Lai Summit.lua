@@ -34,39 +34,52 @@ _.Zones =
 				}),
 				ach(7997, {	-- Riches of Pandaria
 					o(214438, {	-- Ancient Mogu Tablet
-						q(31420, {	-- Ancient Mogu Tablet
-							["description"] = "Located behind the east statue in the Path of Conquerors at (64.2,45.2).",
-						}),
+						["groups"] = {
+							i(86471, {	-- Ancient Mogu Tablet
+								["questID"] = 31420,
+							}),
+						},
+						["description"] = "Located behind the east statue in the Path of Conquerors at (64.2,45.2).",
 					}),
 					o(213769, {	-- Hozen Treasure Cache
-						q(31414, {	-- Hozen Treasure Cache
-							["description"] = "Located at the back of a cave in Knucklethump Hole at (49.5,59.4)",
-						}),
+						["groups"] = {
+							q(31414),	-- Hozen Treasure Cache
+						},
+						["description"] = "Located at the back of a cave in Knucklethump Hole at (49.5,59.4)",
 					}),
 					o(213774, {	-- Lost Adventurer's Belongings
-						q(31418, {	-- Lost Adventurer's Belongings
-							["description"] = "Located in a tent in south-west Kun-Lai at (36.7,79.8)",
-						}),
+						["groups"] = {
+							q(31418),	-- Lost Adventurer's Belongings
+						},
+						["description"] = "Located in a tent in south-west Kun-Lai at (36.7,79.8)",
 					}),
 					o(213793, {	-- Rikktik's Tiny Chest
-						q(31419, {	-- Rikktik's Tiny Chest
-							["description"] = "Located in Emperor Rikktik's Rest cave at (52.5, 51.5)",
-						}),
+						["groups"] = {
+							i(86430, {	-- Rikktik's Tiny Chest
+								["questID"] = 31419,
+							}),
+						},
+						["description"] = "Located in Emperor Rikktik's Rest cave at (52.5, 51.5)",
 					}),
 					o(213771, {	-- Statue of Xuen
-						q(31416, {	-- Statue of Xuen
-							["description"] = "Located at the bottom of a pool of water in the Zouchin Province at (72,33.9)",
-						}),
+						["groups"] = {
+							q(31416),	-- Statue of Xuen
+						},
+						["description"] = "Located at the bottom of a pool of water in the Zouchin Province at (72,33.9)",
 					}),
 					o(213770, {	-- Stolen Sprite Treasure
-						q(31415, {	-- Stolen Sprite Treasure
-							["description"] = "Located in the Howlingwind Cavern near the end of Howlingwind Trail at (41.6,44.1)",
-						}),
+						["groups"] = {
+							q(31415),	-- Stolen Sprite Treasure
+						},
+						["description"] = "Located in the Howlingwind Cavern near the end of Howlingwind Trail at (41.6,44.1)",
 					}),
 					o(213782, {	-- Terracotta Head
-						q(31422, {	-- Terracotta Head
-							["description"] = "Located in the Ruins of Mogujia at (59.2,73)",
-						}),
+						["groups"] = {
+							i(86427, {	-- Terracotta Head
+								["questID"] = 31422,
+							}),
+						},
+						["description"] = "Located in the Ruins of Mogujia at (59.2,73)",
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -2187,6 +2200,14 @@ _.Zones =
 					prof(356, { -- Fishing
 						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
 						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
+					}),
+				}),
+				n(-222, {	-- Treasure Hunter
+					o(214407, {	-- Mo-Mo's Treasure Chest
+						["groups"] = {
+							q(31868),	-- Mo-Mo's Treasure Chest
+						},
+						["description"] = "Located inside Mo-Mo's Cave at (47.8,73.5)",
 					}),
 				}),
 			},

@@ -13,9 +13,10 @@ _.Zones =
 				}),
 				ach(7997, {	-- Riches of Pandaria
 					o(213845, {	-- The Hammer of Folly
-						q(31428, {	-- The Hammer of Folly
-							["description"] = "Located at either (59.8,57.1) or (75.0,76.6)",
+						i(86473, {	-- The Hammer of Folly
+							["questID"] = 31428,
 						}),
+						["description"] = "Located at either (59.8,57.1) or (75.0,76.6)",
 					}),
 				}),
 				n(-17, { -- Quests
@@ -65,6 +66,14 @@ _.Zones =
 							}),
 						},
 						["description"] = "To purchase the epic cloaks you must have obtained the achievement |r |cFFFFD700'Chapter IV: Celestial Blessings'|r during Mists of Pandaria.  To purchase the legendary cloak token you must have obtained the achievement |r |cFFFFD700'Chapter V: Judgment of the Black Prince'|r during Mists of Pandaria.",
+					}),
+				}),
+				n(-222, {	-- Treasure Hunter
+					o(214325, {	-- Forgotten Lockbox
+						["groups"] = {
+							q(31867),	-- Forgotten Lockbox
+						},
+						["description"] = "Located on a box on the second floor of the inn",
 					}),
 				}),
 			},	

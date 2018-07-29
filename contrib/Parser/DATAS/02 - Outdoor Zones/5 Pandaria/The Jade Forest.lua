@@ -46,24 +46,34 @@ _.Zones =
 				}),
 				ach(7997, {	-- Riches of Pandaria
 					o(213366, {	-- Ancient Pandaren Tea Pot
-						q(31400, {	-- Ancient Pandaren Tea Pot
-							["description"] = "Located on the north-west coast at (26.2,32.5)",
-						}),
+						["groups"] = {
+							i(85780, {	-- Ancient Pandaren Tea Pot
+								["questID"] = 31400,
+							}),
+						},
+						["description"] = "Located on the north-west coast at (26.2,32.5)",
 					}),
 					o(213368, {	-- Lucky Pandaren Coin
-						q(31401, {	-- Lucky Pandaren Coin
-							["description"] = "Located in the wishing fountain at (31.9,27.8)",
-						}),
+						["groups"] = {
+							i(85781, {	-- Lucky Pandaren Coin
+								["questID"] = 31401,
+							}),
+						},
+						["description"] = "Located in the wishing fountain at (31.9,27.8)",
 					}),
 					o(213748, {	-- Pandaren Ritual Stone
-						q(31404, {	-- Pandaren Ritual Stone
-							["description"] = "Located near the Grookin Hill river delta at (23.5,35.0)",
-						}),
+						["groups"] = {
+							i(86216, {	-- Pandaren Ritual Stone
+								["questID"] = 31404,
+							}),
+						},
+						["description"] = "Located near the Grookin Hill river delta at (23.5,35.0)",
 					}),
 					o(213362, {	-- Ship's Locker
-						q(31396, {	-- Ship's Locker
-							["description"] = "Located underwater in a boat at (50.7,99.9)",
-						}),
+						["groups"] = {
+							q(31396),	-- Ship's Locker
+						},
+						["description"] = "Located underwater in a boat at (50.7,99.9)",
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -2067,6 +2077,26 @@ _.Zones =
 						desc(i(94934), "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r"),	-- Tiny Green Carp Pet
 						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
 						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
+					}),
+				}),
+				n(-222, {	-- Treasure Hunter
+					o(214339, {	-- Chest of Supplies
+						["groups"] = {
+							q(31864),	-- Chest of Supplies
+						},
+						["description"] = "Located near a waterfall on the Murky Bank bordering The Jade Forest and The Valley of Four Winds at (24,53)",
+					}),
+					o(214338, {	-- Offering of Remembrance
+						["groups"] = {
+							q(31865),	-- Offering of Remembrance
+						},
+						["description"] = "Located on the Shrine of Rememberance at (46.3,80.7)",
+					}),
+					o(214337, {	-- Stash of Gems
+						["groups"] = {
+							q(31866),	-- Stash of Gems
+						},
+						["description"] = "Located in a cave on Windward Isle at (62.4,27.5)",
 					}),
 				}),
 			},

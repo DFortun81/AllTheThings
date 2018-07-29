@@ -25,10 +25,19 @@ _.Zones =
 					}),
 				}),
 				ach(7997, {	-- Riches of Pandaria
+					o(214340, {	-- Boat-Building Instructions
+						["groups"] = {
+							i(87524, {-- Boat-Building Instructions
+								["questID"] = 31869,
+							}),
+						},
+						["description"] = "Located inside a hut on the far east side of the Valley near water. (92.2,39.2)",
+					}),
 					o(213650, {	-- Virmen Treasure Cache
-						q(31405, {	-- Virmen Treasure Cache
-							["description"] = "Located in a cave hidden under some bushes in the mountains of north-east Paoquan Hollow at (23.2,30.8)",
-						}),
+						["groups"] = {
+							q(31405),
+						},
+						["description"] = "Located in a cave hidden under some bushes in the mountains of north-east Paoquan Hollow at (23.2,30.8)",
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -405,11 +414,6 @@ _.Zones =
 								59122,	-- Kunzen Herdskeeper
 							},
 							["description"] = "Requires reputation level of \"Good Friend\" or better with Tina Mudclaw to drop."
-						}),
-					}),
-					o(214340, {	-- Boat-Building Instructions (part of "Treasure of Pandaria" achievement
-						q(31869, {	-- Boat-Building Instructions
-							["description"] = "Located inside a hut on the far east side of the Valley near water. (92.2,39.2)",
 						}),
 					}),
 					q(29757, {	-- Bottletoads
