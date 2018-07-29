@@ -246,6 +246,7 @@ _.PetJournal =
 		p(1941),	-- Snowfang
 		p(1197),	-- Snowy Panda
 		p(2049),	-- Son of Skum
+		p(2186),	-- Spawn of Merektha
 		p(412),		-- Spider
 		p(1763),	-- Spiketail Beaver
 		p(433),		-- Spiky Lizard

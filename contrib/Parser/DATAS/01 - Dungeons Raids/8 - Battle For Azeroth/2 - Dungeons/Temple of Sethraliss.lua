@@ -11,7 +11,7 @@ _.Instances =
 					d(1, { -- Normal
 						["groups"] = {
 							e(2142, { -- Adderis and Aspix
-								["groups"] = {
+								["groups"] = bubbleDown({["bonusID"] = 4776}, {
 									i(158370), -- Twin-Strike Polearm
 									i(159380), -- Arc-Glass Bindings
 									i(159263), -- Bindings of the Slither Current
@@ -21,14 +21,14 @@ _.Instances =
 									i(159435), -- Legplates of Charged Duality
 									i(159388), -- Sabatons of Coruscating Energy
 									i(159259), -- Sandswept Sandals
-								},
+								}),
 								["crs"] = {
 									133379, -- Adderis
 									133944, -- Aspix
 								},
 							}),
 							e(2143, { -- Merektha
-								["groups"] = {
+								["groups"] = bubbleDown({["bonusID"] = 4776}, {
 									i(158714), -- Swarm's Eedge
 									i(159637), -- Snakeebite Recurvee
 									i(159437), -- Fangproof Gauntlets
@@ -37,7 +37,7 @@ _.Instances =
 									i(159327), -- Sand-Shined Snakeskin Sandals
 									i(162544), -- Jad Phidian Band
 									i(158367), -- Merektha's Fang
-								},
+								}),
 								["crs"] = {
 									133384, -- Merektha
 									134390, -- Sand-crusted Striker
@@ -45,20 +45,20 @@ _.Instances =
 								},
 							}),
 							e(2144, { -- Galvazzt
-								["groups"] = {
+								["groups"] = bubbleDown({["bonusID"] = 4776}, {
 									i(158369), -- Galvanized Stormcrusher
 									i(159664), -- Bulwark of Brimming Potential
 									i(159247), -- Handwraps of Oscillating Polarity
 									i(159442), -- Sand-Scoured Greatbelt
 									i(158366), -- Charged Sandstone Band
 									i(158374), -- Tiny Eelectromental in a Jar
-								},
+								}),
 								["crs"] = {
 									133389, -- Galvazzt
 								},
 							}),
 							e(2145, { -- Avatar of Sethraliss
-								["groups"] = {
+								["groups"] = bubbleDown({["bonusID"] = 4776}, {
 									i(158373), -- Resonating Crystal Scimitar
 									i(159318), -- Hood of the Slithering Loa
 									i(159374), -- Sethraliss' Fanged Helm
@@ -69,7 +69,7 @@ _.Instances =
 									i(159257), -- Robes of the Reborn Serpent
 									i(159337), -- Grips of Electrified Defense
 									i(158368), -- Fangs of Intertwined Essence
-								},
+								}),
 								["crs"] = {
 									133392, -- Avatar of Sethraliss
 									139946, -- Heart Guardian

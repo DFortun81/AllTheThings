@@ -615,6 +615,6 @@ pet(153541, 2143);		-- Tottle
 pet(156721, 2158);		-- Mailemental
 pet(156851, 2163);		-- Silithid Mini-Tank
 pet(163244, 2402);		-- Brutus
-
+pet(160702, 2186);		-- Spawn of Merektha
 
 

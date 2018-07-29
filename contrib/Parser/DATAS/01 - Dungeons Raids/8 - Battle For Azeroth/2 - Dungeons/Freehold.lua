@@ -11,21 +11,21 @@ _.Instances =
 					d(1, { -- Normal
 						["groups"] = {
 							e(2102, { -- Skycap'n Kragg
-								["groups"] = {
+								["groups"] = bubbleDown({["bonusID"] = 4776}, {
 									i(159633), -- Sharkbait's Fishhook
 									i(155884), -- Parrotfeather Cloak
 									i(159227), -- Silk Cuffs of the Skycap'n
 									i(159353), -- Chain-Linked Safety Cord
 									i(158360), -- Sharkbait Harneses Girdle
 									i(155862), -- Kragg's Rigging Scalers
-								},
+								}),
 								["crs"] = {
 									129732, -- Skycap'n Kragg
 									--  Shark Bait
 								},
 							}),
 							e(2093, { -- Council o' Captains
-								["groups"] = {
+								["groups"] = bubbleDown({["bonusID"] = 4776}, {
 									i(159132), -- Jolly's Boot Daggeer
 									i(159130), -- Captain's Diplomacy
 									i(158311), -- Concealed Fencing Plates
@@ -34,7 +34,7 @@ _.Instances =
 									i(159297), -- Silver-Trimmed Breeches
 									i(158351), -- Dashing Bilge Rat Shoes
 									i(158314), -- Seal of Questionable 
-								},
+								}),
 								["crs"] = {
 									129431, -- Capttain Eudora
 									129432, -- Captain Jolly
@@ -42,7 +42,7 @@ _.Instances =
 								},
 							}),
 							e(2094, { -- Ring of Booty
-								["groups"] = {
+								["groups"] = bubbleDown({["bonusID"] = 4776}, {
 									i(159634), -- Jeweled Sharksplitter
 									i(158305), -- Sea Dog's Cuffs
 									i(155892), -- Bite-Resistant Chain Gloves
@@ -52,13 +52,13 @@ _.Instances =
 									i(158302), -- Chum-Coated Leggings
 									i(158361), -- Sharkwater Waders
 									i(158356), -- Shell-Kickers
-								},
+								}),
 								["crs"] = {
 									126969, -- Trothak <The Shark Puncher>
 								},
 							}),
-							e(2095, { -- Harlan Sweete
-								["groups"] = {
+							e(2095,  { -- Harlan Sweete
+								["groups"] = bubbleDown({["bonusID"] = 4776}, {
 									i(159635), -- Bloody Tideturner
 									i(155888), -- Irontide Captain's Hat
 									i(155885), -- Sea-Brawler's Greathelm
@@ -69,7 +69,7 @@ _.Instances =
 									i(159407), -- Lockjaw Shoulderplate
 									i(158301), -- Ruffled Poet Blouse
 									i(155881), -- Harlan's Loaded Dice
-								},
+								}),
 								["crs"] = {
 									129440, -- Harlan Sweete
 								},
