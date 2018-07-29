@@ -943,11 +943,11 @@ _.Zones =
 								["qg"] = 38966, -- Vol'jin
 								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769}, -- More Than Expected (all classes)
 							}),
-							qh(25073, {	-- Sen'jin Village
+							q(25073, {	-- Sen'jin Village
 								["qg"] = 38966, -- Vol'jin
 								["sourceQuests"] = { 24814 }, -- An Ancient Enemy
 								["description"] = "Unavailable if \"Report to Sen'jin Village\" has been completed in the Valley of Trials",
-								["races"] = {6,8,10},
+								["races"] = { 6, 8, 10 },	-- Tauren, Troll, Blood Elf
 								["isBreadcrumb"] = true,
 							}),
 							qh(26272, {	-- The Rise of the Darkspear

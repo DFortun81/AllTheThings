@@ -47,8 +47,10 @@ _.Instances =
 							},
 						})),
 						un(7, i(16673, {	-- Cord of Elements
-							9264,	-- Firebrand Pyromancer
-							9257,	-- Scarshield Warlock
+							["crs"] = {
+								9264,	-- Firebrand Pyromancer
+								9257,	-- Scarshield Warlock
+							},
 						})),
 						un(7, i(16703, {	-- Dreadmist Bracers
 							["crs"] = {
