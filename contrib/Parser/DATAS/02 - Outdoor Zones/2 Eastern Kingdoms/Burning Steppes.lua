@@ -1253,7 +1253,8 @@ _.Zones =
 						dr(01.0, i(9954)),	-- Chieftain's Leggings
 						dr(01.0, i(10086)),	-- Gothic Plate Armor
 						dr(01.0, i(10239)),	-- Heavy Lamellar Vambraces
-						dr(01.0, i(10072)),	-- Righteous Gloves					
+						dr(01.0, i(10072)),	-- Righteous Gloves
+						i(12828), -- Plans: Volcanic Hammer
 					}), 
 				}),
 				n( -2, {	-- Vendors

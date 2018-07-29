@@ -347,7 +347,7 @@ _.Instances =
 								25369,	-- Sunblade Vindicator
 							},
 						}),
-						i(35209, {	-- Pattern: Hard Khorium Battlefists
+						i(35209, {	-- Plans: Hard Khorium Battlefists
 							["crs"] = {
 								25593,	-- Apocalypse Guard
 								25592,	-- Doomfire Destroyer
@@ -367,9 +367,75 @@ _.Instances =
 								25369,	-- Sunblade Vindicator
 							},
 						}),
-						i(35211),	-- Plans: Hard Khorium Battleplate
-						i(35210),	-- Plans: Sunblessed Breastplate
-						i(35208),	-- Plans: Sunblessed Gauntlets
+						i(35211, { -- Plans: Hard Khorium Battleplate
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25599,	-- Cataclysm Hound
+								25595,	-- Chaos Gazer
+								25592,	-- Doomfire Destroyer
+								25597,	-- Oblivion Mage
+								25591,	-- Painbringer
+								25509,	-- Priestess of Torment
+								25484,	-- Shadowsword Assassin
+								25837,	-- Shadowsword Commander
+								25508,	-- Shadowsword Guardian
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35210, { -- Plans: Sunblessed Breastplate
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25599,	-- Cataclysm Hound
+								25595,	-- Chaos Gazer
+								25592,	-- Doomfire Destroyer
+								25597,	-- Oblivion Mage
+								25591,	-- Painbringer
+								25509,	-- Priestess of Torment
+								25484,	-- Shadowsword Assassin
+								25837,	-- Shadowsword Commander
+								25508,	-- Shadowsword Guardian
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
+						i(35208, { -- Plans: Sunblessed Gauntlets
+							["crs"] = {
+								25593,	-- Apocalypse Guard
+								25599,	-- Cataclysm Hound
+								25595,	-- Chaos Gazer
+								25592,	-- Doomfire Destroyer
+								25597,	-- Oblivion Mage
+								25591,	-- Painbringer
+								25509,	-- Priestess of Torment
+								25484,	-- Shadowsword Assassin
+								25837,	-- Shadowsword Commander
+								25508,	-- Shadowsword Guardian
+								25483,	-- Shadowsword Manafiend
+								25486,	-- Shadowsword Vanquisher
+								25367,	-- Sunblade Arch Mage
+								25363,	-- Sunblade Cabalist
+								25371,	-- Sunblade Dawn Priest
+								25370,	-- Sunblade Dusk Priest
+								25507,	-- Sunblade Protector
+								25368,	-- Sunblade Slayer
+								25369,	-- Sunblade Vindicator
+							},
+						}),
 						i(35186),	-- Schematic: Annihilator Holo-Gogs
 						i(35196),	-- Schematic: Hard Khorium Goggles
 						i(35190),	-- Schematic: Hyper-Magnified Moon Specs

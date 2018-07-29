@@ -114,162 +114,169 @@ _.Instances =
 								["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
 							}),
 						}),
-						n(  0, {	-- Zone Drop
-							n(47134, {	-- Corpse Eater	
-								dr(0.02, i(3194)),	-- Black Malice
-								dr(0.02, i(1483)),	-- Face Smasher
-								dr(0.02, i(1484)),	-- Witching Stave
-								dr(0.01, i(2807)),	-- Guillotine Axe
-								dr(0.01, i(1974)),	-- Mindthrust Bracers
-							}),		
-							n(47132, {	-- Dark Creeper	
-								dr(0.05, i(3194)),	-- Black Malice
-								dr(0.05, i(1483)),	-- Face Smasher
-								dr(0.03, i(1974)),	-- Mindthrust Bracers
-								dr(0.03, i(1484)),	-- Witching Stave
-								dr(0.02, i(2807)),	-- Guillotine Axe
-								dr(0.01, i(2205)),	-- Duskbringer
-								dr(0.01, i(1318)),	-- Night Reaver
-								dr(0.01, i(1482)), 	-- Shadowfang
-							}),		
-							n(47141, {	-- Dread Scryer	
-								dr(0.11, i(1483)),	-- Face Smasher
-								dr(0.04, i(3194)),	-- Black Malice
-								dr(0.04, i(1484)),	-- Witching Stave
-								dr(0.01, i(2807)),	-- Guillotine Axe
-								dr(0.01, i(1974)),	-- Mindthrust Bracers
-								dr(0.01, i(1318)),	-- Night Reaver
-							}),		
-							n(47135, {	-- Fetid Ghoul	
-								dr(0.11, i(1974)),	-- Mindthrust Bracers
-								dr(0.05, i(3194)),	-- Black Malice
-								dr(0.04, i(1483)),	-- Face Smasher
-								dr(0.02, i(1484)),	-- Witching Stave
-								dr(0.01, i(2807)),	-- Guillotine Axe
-							}),		
-							n(47131, {	-- Frantic Geist	
-								dr(0.06, i(1318)),	-- Night Reaver
-								dr(0.03, i(3194)),	-- Black Malice
-								dr(0.03, i(1483)),	-- Face Smasher
-								dr(0.03, i(1974)),	-- Mindthrust Bracers
-								dr(0.02, i(1484)),	-- Witching Stave
-								dr(0.01, i(2807)),	-- Guillotine Axe
-								dr(0.01, i(1482)), 	-- Shadowfang
-							}),		
-							n(47232, {	-- Ghostly Cook	
-								dr(0.02, i(3194)),	-- Black Malice
-								dr(0.02, i(1483)),	-- Face Smasher
-								dr(0.02, i(1484)),	-- Witching Stave
-								dr(0.01, i(1935)),	-- Assassin's Blade
-								dr(0.01, i(1974)),	-- Mindthrust Bracers
-								dr(0.01, i(1318)),	-- Night Reaver
-							}),		
-							n(3875, {	-- Haunted Servitor	
-								dr(0.07, i(1483)),	-- Face Smasher
-								dr(0.05, i(3194)),	-- Black Malice
-								dr(0.03, i(1974)),	-- Mindthrust Bracers
-								dr(0.02, i(1484)),	-- Witching Stave
-								dr(0.01, i(1935)),	-- Assassin's Blade
-								dr(0.01, i(1489)),	-- Gloomshroud Armor
-								dr(0.01, i(2807)),	-- Guillotine Axe
-								dr(0.01, i(2292)),	-- Necrology Robes
-								dr(0.01, i(1318)),	-- Night Reaver
-								dr(0.01, i(1482)), 	-- Shadowfang
-							}),		
-							n(47137, {	-- Mindless Horror	
-								dr(0.03, i(3194)),	-- Black Malice
-								dr(0.03, i(1483)),	-- Face Smasher
-								dr(0.03, i(1318)),	-- Night Reaver
-								dr(0.02, i(1484)),	-- Witching Stave
-								dr(0.01, i(1935)),	-- Assassin's Blade
-								dr(0.01, i(2807)),	-- Guillotine Axe
-								dr(0.01, i(1974)),	-- Mindthrust Bracers
-								dr(0.01, i(2292)),	-- Necrology Robes
-								dr(0.01, i(1482)), 	-- Shadowfang
-							}),		
-							n(47138, {	-- Pustulant Monstrosity	
-								dr(0.04, i(3194)),	-- Black Malice
-								dr(0.02, i(1483)),	-- Face Smasher
-								dr(0.02, i(2807)),	-- Guillotine Axe
-								dr(0.01, i(1974)),	-- Mindthrust Bracers
-								dr(0.01, i(1318)),	-- Night Reaver
-								dr(0.01, i(1484)),	-- Witching Stave
-							}),		
-							n(47231, {	-- Shadowy Attendant	
-								dr(0.03, i(1483)),	-- Face Smasher
-								dr(0.02, i(3194)),	-- Black Malice
-								dr(0.02, i(1484)),	-- Witching Stave
-								dr(0.01, i(1935)),	-- Assassin's Blade
-								dr(0.01, i(2807)),	-- Guillotine Axe
-								dr(0.01, i(1974)),	-- Mindthrust Bracers
-								dr(0.01, i(1318)),	-- Night Reaver
+						n(0, { -- Zone Drop
+							i(1935, { -- Assassin's Blade
+								["crs"] = {
+									47232, -- Ghostly Cook
+									3875, -- Haunted Servitor
+									47137, -- Mindless Horror
+									47231, -- Shadowy Attendant
+									47146, -- Spitebone Flayer
+									47143, -- Spitebone Skeleton
+									3870, -- Stone Sleeper
+									3873, -- Tormented Officer									
+								},
 							}),
-							n(47140, {	-- Sorcerous Skeleton	
-								dr(0.03, i(1974)),	-- Mindthrust Bracers
-								dr(0.02, i(1483)),	-- Face Smasher
-								dr(0.02, i(1484)),	-- Witching Stave
-								dr(0.01, i(1482)), 	-- Shadowfang
-							}),		
-							n(47146, {	-- Spitebone Flayer	
-								dr(0.04, i(3194)),	-- Black Malice
-								dr(0.04, i(1974)),	-- Mindthrust Bracers
-								dr(0.03, i(2807)),	-- Guillotine Axe
-								dr(0.03, i(1318)),	-- Night Reaver
-								dr(0.02, i(2292)),	-- Necrology Robes
-								dr(0.02, i(1484)),	-- Witching Stave
-								dr(0.01, i(1935)),	-- Assassin's Blade
-								dr(0.01, i(1483)),	-- Face Smasher
-							}),		
-							n(47145, {	-- Spitebone Guardian	
-								dr(0.05, i(3194)),	-- Black Malice
-								dr(0.03, i(1318)),	-- Night Reaver
-								dr(0.02, i(1974)),	-- Mindthrust Bracers
-								dr(0.01, i(1483)),	-- Face Smasher
-								dr(0.01, i(2807)),	-- Guillotine Axe
-								dr(0.01, i(1484)),	-- Witching Stave
-							}),		
-							n(47143, {	-- Spitebone Skeleton	
-								dr(0.04, i(3194)),	-- Black Malice
-								dr(0.04, i(1974)),	-- Mindthrust Bracers
-								dr(0.03, i(1483)),	-- Face Smasher
-								dr(0.01, i(1935)),	-- Assassin's Blade
-								dr(0.01, i(2807)),	-- Guillotine Axe
-							}),		
-							n(3870, {	-- Stone Sleeper	
-								dr(0.05, i(1483)),	-- Face Smasher
-								dr(0.04, i(3194)),	-- Black Malice
-								dr(0.04, i(1484)),	-- Witching Stave
-								dr(0.03, i(1974)),	-- Mindthrust Bracers
-								dr(0.02, i(1935)),	-- Assassin's Blade
-								dr(0.02, i(2807)),	-- Guillotine Axe
-								dr(0.01, i(2205)),	-- Duskbringer
-								dr(0.01, i(1318)),	-- Night Reaver
-							}),	
-							n(3873, {	-- Tormented Officer	
-								dr(0.04, i(3194)),	-- Black Malice
-								dr(0.03, i(1974)),	-- Mindthrust Bracers
-								dr(0.02, i(1483)),	-- Face Smasher
-								dr(0.01, i(1935)),	-- Assassin's Blade
-								dr(0.01, i(1484)),	-- Witching Stave
-							}),		
-							n(47136, {	-- Unstable Ravager	
-								dr(0.06, i(2807)),	-- Guillotine Axe
-								dr(0.05, i(3194)),	-- Black Malice
-								dr(0.05, i(1483)),	-- Face Smasher
-								dr(0.03, i(1974)),	-- Mindthrust Bracers
-								dr(0.03, i(1484)),	-- Witching Stave
-								dr(0.01, i(2205)),	-- Duskbringer
-								dr(0.01, i(1489)),	-- Gloomshroud Armor
-								dr(0.01, i(2292)),	-- Necrology Robes
-								dr(0.01, i(1318)),	-- Night Reaver
-							}),		
-							n(3877, {	-- Wailing Guardsman	
-								dr(0.03, i(3194)),	-- Black Malice
-								dr(0.03, i(1483)),	-- Face Smasher
-								dr(0.02, i(1974)),	-- Mindthrust Bracers
-								dr(0.02, i(1482)), 	-- Shadowfang
-								dr(0.02, i(1484)),	-- Witching Stave
-							}),		
+							i(3194, { -- Black Malice
+								["crs"] = {
+									47134, -- Corpse Eater
+									47132, -- Dark Creeper
+									47141, -- Dread Scryer
+									47135, -- Fetid Ghoul
+									47131, -- Frantic Geist
+									47232, -- Ghostly Cook
+									3875, -- Haunted Servitor
+									47137, -- Mindless Horror
+									47138, -- Pustulant Monstrosity
+									47231, -- Shadowy Attendant
+									47146, -- Spitebone Flayer
+									47145, -- Spitebone Guardian
+									47143, -- Spitebone Skeleton
+									3870, -- Stone Sleeper
+									3873, -- Tormented Officer
+									47136, -- Unstable Ravager
+									3877, -- Wailing Guardsman									
+								},
+							}),
+							i(2205, { -- Duskbringer
+								["crs"] = {
+									47132, -- Dark Creeper
+									3870, -- Stone Sleeper
+									47136, -- Unstable Ravager									
+								},
+							}),
+							i(1483, { -- Face Smasher
+								["crs"] = {
+									47134, -- Corpse Eater
+									47132, -- Dark Creeper
+									47141, -- Dread Scryer
+									47135, -- Fetid Ghoul
+									47131, -- Frantic Geist
+									47232, -- Ghostly Cook
+									3875, -- Haunted Servitor
+									47137, -- Mindless Horror
+									47138, -- Pustulant Monstrosity
+									47231, -- Shadowy Attendant
+									47140, -- Sorcerous Skeleton
+									47146, -- Spitebone Flayer
+									47145, -- Spitebone Guardian
+									47143, -- Spitebone Skeleton
+									3870, -- Stone Sleeper
+									3873, -- Tormented Officer
+									47136, -- Unstable Ravager
+									3877, -- Wailing Guardsman									
+								},
+							}),
+							i(1489, { -- Gloomshroud Armor
+								["crs"] = {
+									3875, -- Haunted Servitor
+									47136, -- Unstable Ravager
+								},
+							}),
+							i(2807, { -- Guillotine Axe
+								["crs"] = {
+									47134, -- Corpse Eater
+									47132, -- Dark Creeper
+									47135, -- Fetid Ghoul
+									47131, -- Frantic Geist
+									3875, -- Haunted Servitor
+									47137, -- Mindless Horror
+									47138, -- Pustulant Monstrosity
+									47231, -- Shadowy Attendant
+									47146, -- Spitebone Flayer
+									47145, -- Spitebone Guardian
+									47143, -- Spitebone Skeleton
+									3870, -- Stone Sleeper
+									47136, -- Unstable Ravager									
+								},
+							}),
+							i(1974, { -- Mindthrust Bracers
+								["crs"] = {
+									47134, -- Corpse Eater
+									47132, -- Dark Creeper
+									47141, -- Dread Scryer
+									47135, -- Fetid Ghoul
+									47131, -- Frantic Geist
+									47232, -- Ghostly Cook
+									3875, -- Haunted Servitor
+									47137, -- Mindless Horror
+									47138, -- Pustulant Monstrosity
+									47231, -- Shadowy Attendant
+									47146, -- Spitebone Flayer
+									47145, -- Spitebone Guardian
+									47143, -- Spitebone Skeleton
+									3870, -- Stone Sleeper
+									3873, -- Tormented Officer
+									47136, -- Unstable Ravager
+									3877, -- Wailing Guardsman									
+								},
+							}),
+							i(2292, { -- Necrology Robes
+								["crs"] = {
+									3875, -- Haunted Servitor
+									47137, -- Mindless Horror
+									47146, -- Spitebone Flayer
+									47136, -- Unstable Ravager
+								},
+							}),
+							i(1318, { -- Night Reaver
+								["crs"] = {
+									47132, -- Dark Creeper
+									47141, -- Dread Scryer
+									47131, -- Frantic Geist
+									47232, -- Ghostly Cook
+									3875, -- Haunted Servitor
+									47137, -- Mindless Horror
+									47138, -- Pustulant Monstrosity
+									47231, -- Shadowy Attendant
+									47146, -- Spitebone Flayer
+									47145, -- Spitebone Guardian
+									3870, -- Stone Sleeper
+									47136, -- Unstable Ravager									
+								},
+							}),
+							i(1482, { -- Shadowfang
+								["crs"] = {
+									47132, -- Dark Creeper
+									47131, -- Frantic Geist
+									3875, -- Haunted Servitor
+									47137, -- Mindless Horror
+									47140, -- Sorcerous Skeleton
+									3873, -- Tormented Officer
+									3877, -- Wailing Guardsman									
+								},
+							}),
+							i(1484, { -- Witching Stave
+								["crs"] = {
+									47134, -- Corpse Eater
+									47132, -- Dark Creeper
+									47141, -- Dread Scryer
+									47135, -- Fetid Ghoul
+									47131, -- Frantic Geist
+									47232, -- Ghostly Cook
+									3875, -- Haunted Servitor
+									47137, -- Mindless Horror
+									47138, -- Pustulant Monstrosity
+									47231, -- Shadowy Attendant
+									47146, -- Spitebone Flayer
+									47145, -- Spitebone Guardian
+									47143, -- Spitebone Skeleton
+									3870, -- Stone Sleeper
+									3873, -- Tormented Officer
+									47136, -- Unstable Ravager
+									3877, -- Wailing Guardsman									
+								},
+							}),
 						}),
 						cr(46962, e( 96, { 	-- Baron Ashbury
 							i(6323), 	-- Baron's Scepter

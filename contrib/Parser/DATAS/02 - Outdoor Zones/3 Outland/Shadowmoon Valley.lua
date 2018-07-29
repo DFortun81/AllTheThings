@@ -5,7 +5,30 @@ _.Zones =
 {
 	m(101, { 	-- Outland
 		m(104, {	-- Shadowmoon Valley (Outland)
-			["groups"] = {	
+			["groups"] = {
+				n(0, { -- Zone Drop
+					["g"] = {
+						n(20878, { -- Deathforge Guardian
+							["g"] = {
+								i(23609), -- Plans: Khorium Pants
+							},
+						}),
+						i(23613, { -- Plans: Ragesteel Breastplate
+							["crs"] = {
+								21454, -- Ashtongue Warrior
+								23324, -- Crazed Murkblood Miner
+							},
+						}),
+						i(33174, { -- Plans: Ragesteel Shoulders
+							["crs"] = {
+								21060, -- Enraged Air Spirit
+								21050, -- Enraged Earth Spirit
+								21061, -- Enraged Fire Spirit
+								21059, -- Enraged Water Spirit
+							},
+						}),
+					},
+				}),
 				n(-25, { 	-- Pet Battle
 					p(425), 	-- Ash Viper
 					p(519), 	-- Fel Flame
@@ -1131,7 +1154,6 @@ _.Zones =
 						dr(0.11, i(31682)),	-- Recipe: Fel Mana Potion
 					}),
 					n(22017, {	-- Eclipsion Spellbinder
-						dr(0.09, i(23627)),	-- Plans: Bracers of the Green Fortress
 						dr(0.11, i(31682)),	-- Recipe: Fel Mana Potion
 					}),
 					n(18696, {	-- Kraator
@@ -1208,17 +1230,21 @@ _.Zones =
 						i(30753),	-- Warphorn Spear
 						i(30755),	-- Mag'hari Fighting Claw
 					})),
-					h(n(19342, {	-- Krek Cragcrush <Blacksmithing Supplies>
-						i(23596, {	-- Plans: Adamantite Breastplate
-							i(23507),	-- Adamantite Breastplate
-						}),
-						i(23594, {	-- Plans: Adamantite Plate Bracers
-							i(23506),	-- Adamantite Plate Bracers
-						}),
-						i(23595, {	-- Plans: Adamantite Plate Gloves
-							i(23508),	-- Adamantite Plat Gloves
-						}),
-					})),
+					n(19342, {	-- Krek Cragcrush <Blacksmithing Supplies>
+						["g"] = {
+							i(23596), -- Plans: Adamantite Breastplate
+							i(23594), -- Plans: Adamantite Plate Bracers
+							i(23595), -- Plans: Adamantite Plate Gloves
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					n(19373, { -- Mari Stonehand
+						["g"] = {
+							un(1, i(25847)), -- Plans: Eternium Rod
+							i(23638), -- Plans: Lesser Ward of Shielding
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
 				}),
 			},
 			["lvl"] = 67,	

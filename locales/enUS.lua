@@ -543,6 +543,11 @@ AllTheThings.Locales.enUS = {
 		[-575] = "Interface\\Icons\\DiabloAnniversary_HoradricCube",			-- Diablo III: Reaper of Souls
 		[-576] = "Interface\\Icons\\inv_archonpet",								-- StarCraft II: Legacy of the Void
 		[-577] = "Interface\\Icons\\INV_MISC_FILM_01",							-- World of Warcraft Movie
+		[-578] = "Interface\\Icons\\inv_sword_25",								-- Weaponsmith
+		[-579] = "Interface\\Icons\\inv_axe_05",								-- Master Axesmith
+		[-580] = "Interface\\Icons\\inv_hammer_23",								-- Master Hammersmith
+		[-581] = "Interface\\Icons\\inv_sword_41",								-- Master Swordsmith
+		[-582] = "Interface\\Icons\\inv_chest_plate04",							-- Armorsmith
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",			-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",				-- The Black Vault
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",		-- Tier 3.5
@@ -1189,6 +1194,13 @@ AllTheThings.Locales.enUS = {
 		[-575] = "Diablo III: Reaper of Souls",
 		[-576] = "StarCraft II: Legacy of the Void",
 		[-577] = "World of Warcraft Movie",
+		
+-- Blacksmithing Specialties
+		[-578] = GetSpellInfo(9787),											-- Weaponsmith
+		[-579] = GetSpellInfo(17041),											-- Master Axesmith
+		[-580] = GetSpellInfo(17040),											-- Master Hammersmith
+		[-581] = GetSpellInfo(17039),											-- Master Swordsmith
+		[-582] = GetSpellInfo(9788),											-- Armorsmith
 
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",

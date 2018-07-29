@@ -623,7 +623,7 @@ _.Zones =
 						i(30755),	-- Mag'hari Fighting Claw
 					}),
 				}),
-				n(  0, {	-- Zone Drop
+				n(0, { -- Zone Drop
 					n( 19973, {	-- Abyssal Flamebringer
 						dr(.04, i(32673, {	-- Depleted Dagger
 							i(32659),	-- Crystal-Infused Shiv
@@ -646,6 +646,11 @@ _.Zones =
 						dr(.01, i(32679, {	-- Depleted Staff
 							i(32662),	-- Flaming Quartz Staff
 						})),
+					}),
+					n(16952, { -- Anger Guard
+						["g"] = {
+							i(23612), -- Plans: Ragesteel Helm
+						},
 					}),
 					n( 22175, {	-- Apexis Flayer
 						dr(.01, i(32677, {	-- Depleted Cloak

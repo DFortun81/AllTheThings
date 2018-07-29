@@ -57,7 +57,22 @@ _.Zones =
 						["u"] = 29,
 					}),						
 				}),				
---]]				
+--]]			
+				n(0, { -- Zone Drop
+					["g"] = {
+						n(18203, { -- Murkblood Raider
+							["g"] = {
+								i(23608), -- Plans: Khorium Belt
+							},
+						}),
+						i(23611, { -- Plans: Ragesteel Gloves
+							["crs"] = {
+								17137, -- Boulderfist Mage
+								17136, -- Boulderfist Warrior
+							},
+						}),
+					},
+				}),
 				n(-25, { 	-- Pet Battle
 					p(635), 	-- Adder
 					p(518), 	-- Clefthoof Runt

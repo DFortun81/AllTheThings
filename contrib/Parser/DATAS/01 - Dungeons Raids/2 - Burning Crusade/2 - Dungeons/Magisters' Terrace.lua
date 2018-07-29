@@ -63,6 +63,7 @@ _.Instances =
 								i(35275), 	-- Orb of Sin'dorei
 								i(35308),	-- Pattern: Unyielding Bracers
 								i(35309),	-- Pattern: Unyielding Girdle
+								i(35296),	-- Plans: Adamantite Weapon Chain
 								i(35297),	-- Formula: Enchant Boots - Boar's Speed
 								i(35299),	-- Formula: Enchant Boots - Cat's Swiftness
 								i(35298),	-- Formula: Enchant Boots - Vitality
@@ -153,6 +154,7 @@ _.Instances =
 									i(35275), 	-- Orb of Sin'dorei (TOY!)
 									i(35308),	-- Pattern: Unyielding Bracers
 									i(35309),	-- Pattern: Unyielding Girdle
+									i(35296),	-- Plans: Adamantite Weapon Chain
 									i(35297),	-- Formula: Enchant Boots - Boar's Speed
 									i(35299),	-- Formula: Enchant Boots - Cat's Swiftness
 									i(35298),	-- Formula: Enchant Boots - Vitality

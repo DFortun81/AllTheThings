@@ -210,9 +210,6 @@ _.Zones =
 						i(21897), 	-- Pattern: Netherweave Tunic
 					}),
 					n(16670, {	-- Eriden <Blacksmithing Supplies>
-						i(23593, {	-- Plans: Adamantite Rapier
-							i(23505)	-- Adamantite Rapier
-						}),	
 						i(23591, {	-- Plans: Adamantite Cleaver
 							i(23503)	-- Adamantite Cleaver
 						}),	
@@ -222,6 +219,9 @@ _.Zones =
 						i(23590, {	-- Plans: Adamantite Maul
 							i(23502)	-- Adamantite Maul
 						}),
+						i(23593, {	-- Plans: Adamantite Rapier
+							i(23505)	-- Adamantite Rapier
+						}),	
 						i(66122, {	-- Plans: Vicious Pyrium Legguards
 							i(75136),	-- Vicious Pyrium Legguards
 						}),

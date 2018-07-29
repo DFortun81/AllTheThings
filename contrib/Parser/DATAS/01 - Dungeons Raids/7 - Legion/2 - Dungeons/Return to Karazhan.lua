@@ -8,6 +8,16 @@ _.Instances =
 		["groups"] = {
 			inst(860, { 	-- Return to Karazhan
 				["groups"] = {
+					n(-2, { -- Vendors
+						n(114815, { -- Koren
+							["groups"] = {	
+								i(31395), -- Plans: Iceguard Helm
+								i(31393), -- Plans: Iceguard Breastplate
+								i(31394), -- Plans: Iceguard Leggings
+							},
+							["description"] = "This vendor is located in the Livery Stables.",
+						}),
+					}),
 					d(2, {		-- Heroic
 						["groups"] = {
 							cr(114284, e(1820, {	-- Opera Hall: Wikket (Elfyra; Galindre 114251)

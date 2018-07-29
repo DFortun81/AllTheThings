@@ -33,7 +33,7 @@ _.Instances =
 						i(32753),	-- Pattern: Swiftheal Mantle(BT ONLY)
 					 -- i(32752),	-- Pattern: Swiftheal Wraps (Hyjal ONLY)
 						i(32738),	-- Plans: Dawnsteel Bracers (BT ONLY)
-					 -- i(32739),	-- Plans: Dawnsteel Shoulders (Hyjal ONLY)
+						i(32739),	-- Plans: Dawnsteel Shoulders (BT & Hyjal)
 					 -- i(32736),	-- Plans: Swiftsteel Bracers (Hyjal ONLY)
 						i(32737),	-- Plans: Swiftsteel Shoulders (BT ONLY)
 					}),

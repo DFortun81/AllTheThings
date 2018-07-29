@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, { 	-- Outland
 		m(109, { 	-- Netherstorm
-			["groups"] = {							
+			["groups"] = {
 				n(-25, {	-- Pet Battle
 					p(521), 	-- Fledgling Nether Ray
 					p(638), 	-- Nether Roach
@@ -2817,8 +2817,13 @@ _.Zones =
 						i(30755),	-- Mag'hari Fighting Claw
 					}),
 				}),
-				n(  0, {	-- Zone Drop
+				n(0, { -- Zone Drop
 					["groups"] = {
+						n(18873, { -- Disembodied Protector
+							["g"] = {
+								i(23610), -- Plans: Khorium Boots
+							},
+						}),
 						n(18872, {	-- Disembodied Vindicator
 							dr(0.05, i(21919)),	-- Pattern: Primal Mooncloth Bag
 						}),
@@ -2842,6 +2847,12 @@ _.Zones =
 								dr(00.9, i(31925)),	-- Fiery Band
 								dr(00.9, i(31927)),	-- Living Band
 							}),
+						}),
+						i(23639, { -- Plans: Greater Ward of Shielding
+							["crs"] = {
+								18856, -- Arcane Annihilator
+								18853, -- Sunfury Bloodwarder
+							},
 						}),
 						n(20134, {	-- Sunfury Arcanist
 							dr(0.06, i(21911)),	-- Pattern: Spellfire Bag

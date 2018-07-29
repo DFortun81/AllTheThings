@@ -734,6 +734,9 @@ _.Zones =
 						un(1, i(24315)),	-- Pattern: Heavy Netherweave Net
 						i(33149),	-- Formula: Enchant Cloak - Stealth
 						i(28271),	-- Formula: Enchant Gloves - Precise Strikes
+						i(23618),	-- Plans: Adamantite Sharpening Stone
+						i(28632),	-- Plans: Adamantite Weightstone
+						i(25526),	-- Plans: Greater Rune of Warding
 						i(31390),	-- Plans: Wildguard Breastplate
 						i(31391),	-- Plans: Wildguard Leggings
 						i(31392),	-- Plans: Wildguard Helm
@@ -784,16 +787,14 @@ _.Zones =
 					n(18911, {		-- Juno Dufrain <Fishing Trainer>
 						i(27696),	-- Recipe: Blackened Sporefish
 					}),
-					na(19694, {		-- Loolruna <Armorer>
-						i(23596, {	-- Plans: Adamantite Breastplate
-							i(23507),	-- Adamantite Breastplate
-						}),
-						i(23594, {	-- Plans: Adamantite Plate Bracers
-							i(23506),	-- Adamantite Plate Bracers
-						}),
-						i(23595, {	-- Plans: Adamantite Plate Gloves
-							i(23508),	-- Adamantite Plat Gloves
-						}),
+					n(19694, {		-- Loolruna <Armorer>
+						["g"] = {
+							i(23596), -- Plans: Adamantite Breastplate
+							i(23594), -- Plans: Adamantite Plate Bracers
+							i(23595), -- Plans: Adamantite Plate Gloves
+
+						},
+						["races"] = ALLIANCE_ONLY,
 					}),
 					na(19722, {		-- Muheru the Weaver <Tailoring Supplies>
 						i(21899), 	-- Pattern: Imbued Netherweave Boots
