@@ -6089,7 +6089,53 @@ local function RowOnClick(self, button)
 						end
 					end
 				end
+			elseif TSMAPI_FOUR then
+				if reference.g and #reference.g > 0 then
+					if true then
+						app.print("TSM4 not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!");
+						return true;
+					end
+					local missingItems = SearchForMissingItems(reference);					
+					if #missingItems > 0 then
+						app:ShowPopupDialog("Running this command can potentially destroy your existing TSM settings by reassigning items to the " .. app.DisplayName .. " preset.\n\nWe recommend that you use a different profile when using this feature.\n\nDo you want to proceed anyways?",
+						function()
+							local itemString, groupPath;
+							groupPath = BuildSourceTextForTSM(app:GetWindow("Prime").data, 0);
+							if TSMAPI_FOUR.Groups.Exists(groupPath) then
+								TSMAPI_FOUR.Groups.Remove(groupPath);
+							end
+							TSMAPI_FOUR.Groups.AppendOperation(groupPath, "Shopping", operation)
+							for i,group in ipairs(missingItems) do
+								if (not group.spellID and not group.achievementID) or group.itemID then
+									itemString = group.tsm;
+									if itemString then
+										groupPath = BuildSourceTextForTSM(group, 0);
+										TSMAPI_FOUR.Groups.Create(groupPath);
+										if TSMAPI_FOUR.Groups.IsItemInGroup(itemString) then
+											TSMAPI_FOUR.Groups.MoveItem(itemString, groupPath)
+										else
+											TSMAPI_FOUR.Groups.AddItem(itemString, groupPath)
+										end
+										if i > 10 then break; end
+									end
+								end
+							end
+							app.print("Updated the preset successfully.");
+						end);
+						return true;
+					end
+					app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
+				else
+					-- Attempt to search manually with the link.
+					local link = reference.link or reference.silentLink;
+					if link and HandleModifiedItemClick(link) then
+						AuctionFrameBrowse_Search();
+						return true;
+					end
+				end
+				return true;
 			else
+			
 				-- Not at the Auction House
 				-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 				local link = reference.link or reference.silentLink;
