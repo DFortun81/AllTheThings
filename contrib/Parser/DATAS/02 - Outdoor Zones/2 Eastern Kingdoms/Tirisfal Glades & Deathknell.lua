@@ -579,7 +579,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						nlq({	-- Quests (Legacy)
+						n(-17, {	-- Quests (Legacy)
 							qh(5650, {	-- Garments of Darkness
 								["groups"] = {
 									un(34, i(16607)),	-- Garments of Darkness
@@ -606,44 +606,171 @@ _.Zones =
 						--}),
 					},
 				}),
-				--[[
 				m(465, {	-- Deathknell
 					["groups"] = {
+						n(-25, {	-- Pet Battle
+							p(417),	-- Rat
+							p(458),	-- Lost of Lordaeron
+						}),
 						n(-17, {	-- Quests
-							qg(, qh(24971)),	-- Assault on the Rotbrain Encampment
-							qg(, qh(25089)),	-- Beyond the Graves
-							qg(, qh(28652)),	-- Caretaker Caice
-							qg(, qh( 3096)),	-- Encrypted Scroll
-							qg(, qh(24959)),	-- Fresh out of the Grave
-							qg(, qh( 3098)),	-- Glyphic Scroll
-							qg(, qh( 3097)),	-- Hallowed Scroll
-							qg(, qh(24965)),	-- Magic Training
-							qg(, qh(24973)),	-- Night Web's Hollow
-							qg(, qh(24970)),	-- No Better Than the Zombies
-							qg(, qh(28651)),	-- Novice Elreth
-							qg(, qh(24966)),	-- Of Light and Shadows
-							qg(, qh(26800)),	-- Recruitmentqg(, qh(26801)),	-- Scourge on our Perimeter
-							qg(, qh(28653)),	-- Shadow Priest Sarvis
-							qg(, qh( 3095)),	-- Simple Scroll
-							qg(, qh( 3099)),	-- Tainted Scroll
-							qg(, qh(26802)),	-- The Damned
-							qg(, qh(28672)),	-- The Executor In the Field
-							qg(, qh(28608)),	-- The Shadow Grave
-							qg(, qh(24961)),	-- The Truth of the Grave
-							qg(, qh(24960)),	-- The Wakening
-							qg(, qh(26799)),	-- Those That Couldn't Be Saved
-							qg(, qh(24972)),	-- Vital Intelligence
+							qh(24971, {	-- Assault on the Rotbrain Encampment
+								["qg"] = 49425,	-- Darnell
+								["sourceQuests"] = { 24970 },	-- No Better Than the Zombies
+							}),
+							q(25089, {	-- Beyond the Graves
+								["qg"] = 2307,	-- Caretaker Caice
+								["sourceQuests"] = { 24960 },	-- The Wakening
+								["races"] = { 5 },	-- undead
+							}),
+							q(28652, {	-- Caretaker Caice
+								["qg"] = 1568,	-- Undertaker Mordo
+								["sourceQuests"] = { 26799 },	-- Those That Couldn't Be Saved
+								["races"] = { 5 },	-- undead
+							}),
+							q(24959, {	-- Fresh out of the Grave
+								["qg"] = 49044,	-- Agatha
+								["races"] = { 5 },	-- undead
+							}),
+							qh(24965, {	-- Magic Training
+								["qg"] = 2124,	-- Isabella
+								["sourceQuests"] = { 3098 },	-- Glyphic Scroll
+								["classes"] = { 8 },	-- mage
+								["races"] = { 5 },	-- undead
+							}),
+							qh(24973, {	-- Night Web's Hollow
+								["qg"] = 1570,	-- Executor Arren
+								["sourceQuests"] = { 26802 },	-- The Damned
+							}),
+							qh(24970, {	-- No Better Than the Zombies
+								["qg"] = 1570,	-- Executor Arren
+								["sourceQuests"] = { 24973 },	-- Night Web's Hollow
+							}),
+							qh(28651, {	-- Novice Elreth
+								["qg"] = 1569,	-- Shadow Priest Elreth
+								["sourceQuests"] = { 26801 },	-- Scourge on our Perimeter
+							}),
+							q(24966, {	-- Of Light and Shadows
+								["qg"] = 2123,	-- Dark Cleric Duesten
+								["sourceQuests"] = { 3097 },	-- Hallowed Scroll
+								["races"] = { 5 },	-- undead
+								["classes"] = { 5 },	-- priest
+							}),
+							q(26800, {	-- Recruitment
+								["qg"] = 26800,	-- Deathguard Saltain
+								["sourceQuests"] = { 25089 },	-- Beyond the Graves
+								["races"] = { 5 },	-- undead
+							}),
+							qh(26801, {	-- Scourge on our Perimeter
+								["qg"] = 1569,	-- Shadow Priest Sarvis
+							}),
+							q(28653, {	-- Shadow Priest Sarvis
+								["qg"] = 1740,	-- Deathguard Saltain
+								["sourceQuests"] = { 26800 },	-- Recruitment
+								["races"] = {
+									5,	-- undead
+									10,	-- blood elf
+								}
+							}),
+							qh(26802, {	-- The Damned
+								["qg"] = 1570,	-- Executor Arren
+								["sourceQuests"] = { 28672 },	-- The Executor in the Field
+							}),
+							qh(28672, {	-- The Executor In the Field
+								["qg"] = 1661,	-- Novice Elreth
+								["sourceQuests"] = { 24961 },	-- The Truth of the Grave
+							}),
+							q(28608, {	-- The Shadow Grave
+								["qg"] = 1568,	-- Undertaker Mordo
+								["sourceQuests"] = { 24959 },	-- Fresh out of the Grave
+								["races"] = { 5 },	-- undead
+							}),
+							qh(24961, {	-- The Truth of the Grave
+								["qg"] = 1661,	-- Novice Elreth
+								["sourceQuests"] = { 28651 },	-- Novice Elreth
+							}),
+							q(24960, {	-- The Wakening
+								["qg"] = 2307,	-- Caretaker Caice
+								["sourceQuests"] = { 28652 },	-- Caretaker Caice
+								["races"] = { 5 },	-- undead
+							}),
+							q(26799, {	-- Those That Couldn't Be Saved
+								["qg"] = 1568,	-- Undertaker Mordo
+								["sourceQuests"] = { 28608 },	-- The Shadow Grave
+								["races"] = { 5 }, -- undead
+							}),
+							qh(24972, {	-- Vital Intelligence
+								["qg"] = 1569,	-- Shadow Priest Sarvis
+								["sourceQuests"] = { 24971 },	-- Assault on the Rotbrain Encampment
+								["isBreadcrumb"] = true,
+							}),
 						}),
 						n(-16, { -- Rares
-							n(50328, { -- Fangor
-							}),
-							-- Night Web Matriarch
+							n(50328),	-- Fangor
+							n(1688),	-- Night Web Matriarch
+						}),
+						n(-40, {	-- Legacy
+							["groups"] = {
+								n(-17, {	-- Quests (Legacy)
+									["groups"] = bubbleDown({["u"] = 40 }, {
+										q(3096, {	-- Encrypted Scroll
+											["qg"] = 1569,	-- Shadow Priest Sarvis
+											["races"] = { 5 },	-- undead
+											["classes"] = { 4 },	-- rogue
+										}),
+										q(5650, {	-- Garments of Darkness
+											["groups"] = {
+												un(34, i(16607)),	-- Garments of Darkness
+											},
+											["races"] =  { 5 },	-- Undead
+											["classes"] = { 5 },	-- Priest
+										}),
+										q(3098, {	-- Glyphic Scroll
+											["qg"] = 1569,	-- Shadow Priest Sarvis
+											["sourceQuests"] = { 26800 },	-- Recruitment
+											["classes"] = { 8 },	-- mage
+											["races"] = { 5 },	-- undead
+										}),
+										q(3097, {	-- Hallowed Scroll
+											["qg"] = 1569,	-- Shadow Priest Sarvis
+											["sourceQuests"] = { 26800 },	-- Recruitment
+											["classes"] = { 5 },	-- priest
+											["races"] = {
+												5,	-- Undead
+												10,	-- Blood Elf
+											},
+										}),
+										qh(1822, {	-- Heirloom Weapon
+											["groups"] = {
+												un(34, i(7115)),	-- Heirloom Axe
+												un(34, i(7117)),	-- Heirloom Hammer
+												un(34, i(7116)),	-- Heirloom Dagger
+												un(34, i(7118)),	-- Heirloom Sword
+											},
+											["classes"] = { 1 },	-- Warrior
+										}),
+										q(3095, {	-- Simple Scroll
+											["qg"] = 1569,	-- Shadow Priest Sarvis
+											["races"] = { 5 },	-- undead
+											["classes"] = { 1 },	-- warrior
+										}),
+										q(3099, {	-- Tainted Scroll
+											["qg"] = 1569,	-- Shadow Priest Sarvis
+											["races"] = { 5 },	-- undead
+											["classes"] = { 9 },	-- warlock
+										}),
+									}),
+								}),
+								n(-16, {	-- Rares (Legacy)
+									n(1658, { 	-- Captain Dargol
+										un(7, i(3330)),	-- Dargol's Hauberk
+									}),
+								}),
+							},
 						}),
 					},	
 					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",	
 					["description"] = "|cff66ccffDeathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.|r",
 				}),
-				]]--
 			},
 			["lvl"] = 1,	
 			["achievementID"] = 768,
