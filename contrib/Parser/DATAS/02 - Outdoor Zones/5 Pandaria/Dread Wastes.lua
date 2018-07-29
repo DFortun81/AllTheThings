@@ -28,6 +28,67 @@ _.Zones =
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
 					}),
 				}),
+				ach(7284, {
+					o(213972, {		-- Blade of the Poisoned Mind
+						["groups"] = {
+							i(86527),	-- Blade of the Poisoned Mind
+						},
+						["questID"] = 31438,
+					}),
+					o(213967, {		-- Blade of the Prime
+						["groups"] = {
+							i(86522),	-- Blade of the Prime
+						},
+						["questID"] = 31433,
+					}),
+					o(213970, {	-- Bloodsoaked Chitin Fragment
+						["groups"] = {
+							i(86525),	-- Blood Soaked Chiten Fragment
+						},
+						["questID"] = 31436,
+					}),
+					o(213969, {		-- Dissector's Staff of Mutation
+						["groups"] = {
+							i(86524),	-- Dissector's Staff of Mutation
+						},
+						["questID"] = 31435,
+					}),
+					o(213966, {	-- Lucid Amulet
+						["groups"] = {
+							i(86521),	-- Lucid Amulet of the Agile Mind
+						},
+						["questID"] = 31431,
+					}),
+					o(213964, {		-- Malik's Stalwart Spear
+						["groups"] = {
+							i(86520),	-- Malik's Stalwart Spear
+						},
+						["questID"] = 31430,
+					}),
+					i(86529, {
+						["qg"] = 65552,	-- Glinting Rapana Whelk
+						["questID"] = 31432,
+					}),
+					o(213968, {		-- Swarming Cleaver of Ka'roz
+						["groups"] = {
+							i(86523),	-- Swarming Cleaver of Ka'roz
+						},
+						["questID"] = 31434,
+					}),
+					o(213971, {	-- Swarmkeeper's Medallion
+						["groups"] = {
+							i(86526),	-- Swarmkeeper's Medallion
+						},
+						["questID"] = 31437,
+					}),
+					o(213962, {		-- Wind-Reaver's Dagger of Quick Strikes
+						["groups"] = {
+							i(86519),	-- Wind-Reaver's Dagger of Quick Strikes
+						},
+						["questID"] = 31429,
+					}),
+					
+				}),
 				n(-17, { 	-- Quests
 					q(31178, {	-- A Bloody Delight
 						["qg"] = 63071,	-- Skeer the Bloodseeker
@@ -740,275 +801,246 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares
 					n(50821, { 		-- Ai-Li Skymirror
-						dr(18, i(87629)),
-						dr(13, i(86589)), 	-- Toy
-						dr(11, i(87632)),
+						dr(18, i(87629)),	-- Chestplate of Manifest
+						dr(13, i(86589)), 	-- Ai-Li's Skymirror
+						dr(11, i(87632)),	-- Fearsworn Chestpiece
 						dr(10, {
-							i(87635),
-							i(87630),
-							i(87628),
+							i(87635),	-- Amber-Starched Robes
+							i(87630),	-- Chestpiece of Twinkling Stars
+							i(87628),	-- Spinebreaker Chestpiece
 						}),
 						dr(9, {
-							i(87631),
-							i(87627),
-							i(87634),
+							i(87631),	-- Jiao-Skin Tunic
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87634),	-- Mazu's Robe
 						}),
-						dr(8, i(87633)),
-					}),
-					o(213972, {		-- Blade of the Poisoned Mind
-						["groups"] = {
-							i(86527),	-- Blade of the Poisoned Mind
-						},
-						["questID"] = 31438,
-					}),
-					o(213967, {		-- Blade of the Prime
-						["groups"] = {
-							i(86522),	-- Blade of the Prime
-						},
-						["questID"] = 31433,
+						dr(8, i(87633)),	-- Sharksin Armor
 					}),
 					n(50334, { 		-- Dak the Breaker
-						dr(24, i(87635)),
+						dr(28, i(86567)),	-- Yaungol Wind Chime
+						dr(24, i(87635)),	-- Amber-Starched Robes
 						dr(10, {
-							i(87627),
-							i(87634),
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87634),	-- Mazu's Robe
 						}),
 						dr(9, {
-							i(87630),
-							i(87629),
-							i(87632),
-							i(87631),
-							i(87633),
-							i(87628),
+							i(87630),	-- Chestpiece of Twinkling Stars
+							i(87629),	-- Chestplate of Manifest Dread
+							i(87632),	-- Fearsworn Chestpiece
+							i(87631),	-- Jiao-Skin Tunic
+							i(87633),	-- Sharksin Armor
+							i(87628),	-- Spinebreaker Chestpiece
 						}),
-					}),
-					o(213969, {		-- Dissector's Staff of Mutation
-						["groups"] = {
-							i(86524),	-- Dissector's Staff of Mutation
-						},
-						["questID"] = 31435,
 					}),
 					n(50739, { 		-- Gar'lok
-						dr(23, i(86578)),
-						dr(20, i(87628)),
-						dr(11, i(87627)),
+						dr(23, i(86578)),	-- Eternal Warrior's Sigil
+						dr(20, i(87628)),	-- Spinebreaker Chestpiece
+						dr(11, i(87627)),	-- Kunchong Carapace Chestguard
 						dr(10, {
-							i(87635),
-							i(87630),
-							i(87629),
-							i(87632),
-							i(87631),
+							i(87635),	-- Amber-Starched Robes
+							i(87630),	-- Chestpiece of Twinkling Stars
+							i(87629),	-- Chestplate of Manifest Dread
+							i(87632),	-- Fearsworn Chestpiece
+							i(87631),	-- Jiao-Skin Tunic
 						}),
-						dr(9, i(87634)),
-						dr(8, i(87633)),
+						dr(9, i(87634)),	-- Mazu's Robe
+						dr(8, i(87633)),	-- Sharkskin Robe
 					}),
 					n(50836, { 		-- Ik-Ik the Nimble
-						dr(17, i(87634)),
-						dr(15, i(87630)),
-						dr(13, i(86593)), 	-- Toy
+						dr(17, i(87634)),	-- Mazu's Robe
+						dr(15, i(87630)),	-- Chestpiece of Twinkling Stars
+						dr(13, i(86593)), 	-- Hozen Beach Ball
 						dr(10, {
-							i(87635),
-							i(87629),
-							i(87632),
-							i(87628),
+							i(87635),	-- Amber-Starched Robes
+							i(87629),	-- Chestplate of Manifest Dread
+							i(87632),	-- Fearsworn Chestpiece
+							i(87628),	-- Spinebreaker Chestpiece
 						}),
 						dr(9, {
-							i(87631),
-							i(87627),
+							i(87631),	-- Jiao-Skin Tunic
+							i(87627),	-- Kunchong Carapace Chestguard
 						}),
-						dr(8, i(87633)),
+						dr(8, i(87633)),	-- Sharkskin Armor
 					}),
 					n(50347, { 		-- Karr the Darkener
-						dr(18, i(87634)),
-						dr(17, i(87630)),
+						dr(18, i(87634)),	-- Mazu's Robe
+						dr(17, i(87630)),	-- Chestpiece of Twinkling Stars
 						dr(10, {
-							i(87635),
-							i(87629),
+							i(87635),	-- Amber-Starched Robes
+							i(87629),	-- Chestplate of Manifest Dread
 						}),
 						dr(9, {
-							i(87632),
-							i(87631),
-							i(87627),
+							i(87632),	-- Fearsworn Chestpiece
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87628),	-- Spinebreaker Chestpiece
 						}),
 						dr(8, {
-							i(87633),
-							i(87628),
+							i(87633),	-- Sharkskin Armor
+							i(87631),	-- Jiao-Skin Tunic
+							i(86564),	-- Imbued Jade Fragment
 						}),
-						dr(7, i(86564)), 	-- Pet
 					}),
 					n(50356, { 		-- Krol the Blade
-						dr(15, i(87629)),
-						dr(12, i(87634)),
+						dr(15, i(87629)),	-- Chestplate of Manifest Dread
+						dr(12, i(87634)),	-- Mazu's Robe
 						dr(11, {
-							i(87630),
-							i(87631),
-							i(87628),
+							i(87630),	-- Chestpiece of Twinkling Stars
+							i(87631),	-- Jiao-Skin Tunic
+							i(87628),	-- Spinebreaker Chestpiece
 						}),
 						dr(10, {
-							i(87635),
-							i(87632),
-							i(87627),
+							i(87635),	-- Amber-Starched Robes
+							i(87632),	-- Fearsworn Chestpiece
+							i(87627),	-- Kunchong Carapace Chestguard
 						}),
-						dr(8, i(87633)),
-					}),
-					o(213964, {		-- Malik's Stalwart Spear
-						["groups"] = {
-							i(86520),	-- Malik's Stalwart Spear
-						},
-						["questID"] = 31430,
+						dr(8, {
+							i(87633),	-- Sharkskin Armor
+							i(86574),	-- Elixir of Ancient Knowledge
+						}),
 					}),
 					n(50776, { 		-- Nalash Verdantis
 						dr(15, {
-							i(87635),
-							i(87628),
+							i(87635),	-- Amber-Starched Robes
+							i(87628),	-- Spinebreaker Chestpiece
 						}),
-						dr(13, i(87630)),
-						dr(10, i(87632)),
+						dr(13, i(87630)),	-- Chestpiece of Twinkling Stars
+						dr(10, i(87632)),	-- Fearsworn Chestpiece
 						dr(9, {
-							i(87629),
-							i(87631),
-							i(87627),
-							i(87634),
+							i(87629),	-- Chestplate of Manifest Dread
+							i(86563),	-- Hollow Reed
+							i(87631),	-- Jiao-Skin Tunic
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87634),	-- Mazu's Robe
 						}),
 						dr(8, {
-							i(86563),	-- Pet
-							i(87633),
+							i(87633),	-- Sharkskin Armor
 						}),
 					}),
 					n(50805, { 		-- Omnis Grinlok
-						dr(18, i(87628)),
+						dr(26, i(86585)),	-- Golden Fleece
+						dr(18, i(87628)),	-- Spinebreaker Chestpiece
 						dr(11, {
-							i(87635),
-							i(87632),
+							i(87635),	-- Amber-Starched Robes
+							i(87632),	-- Fearsworn Chestpiece
 						}),
 						dr(10, {
-							i(87629),
-							i(87631),
-							i(87627),
-							i(87634),
+							i(87629),	-- Chestplate of Manifest Dread
+							i(87631),	-- Jiao-Skin Tunic
+							i(87634),	-- Mazu's Robe
 						}),
-						dr(9, i(87630)),
-						dr(8, i(87633)),
-					}),
-					o(213968, {		-- Swarming Cleaver of Ka'roz
-						["groups"] = {
-							i(86523),	-- Swarming Cleaver of Ka'roz
-						},
-						["questID"] = 31434,
-					}),
-					o(213962, {		-- Wind-Reaver's Dagger of Quick Strikes
-						["groups"] = {
-							i(86519),	-- Wind-Reaver's Dagger of Quick Strikes
-						},
-						["questID"] = 31429,
+						dr(9, {
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87630),	-- Chestpiece of Twinkling Stars
+						}),
+						dr(8, i(87633)),	-- Sharkskin Armor
 					}),
 					n(69769, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
-						dr(4, i(94229)), 	-- Mount
+						dr(4, i(94229)),	-- Reins of the Slate Primordial Direhorn
 					}),
 					n(69841, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
-						dr(4, i(94230)),	-- Mount
+						dr(4, i(94230)),	-- Reins of the Amber Primordial Direhorn
 					}),
 					n(69842, { 		-- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),
-						dr(4, i(94231)),	-- Mount
+						dr(4, i(94231)),	-- Reins of the Jade Primordial Direhorn
 					}),
 					n(69768, { 		-- Zandalari Warscout
 						dr(15, {
 							i(94158, {
 								dr(2, {
-									i(87643),
-									i(87652),
-									i(87650),
-									i(90721),
-									i(87646),
-									i(90723),
-									i(87642),
-									i(90719),
-									i(87651),
-									i(90717),
-									i(87641),
-									i(87649),
-									i(90724),
-									i(90718),
-									i(90722),
-								}),
+									i(87643),	-- Fangcracker Battlemace
+									i(87652),	-- Ook-Breaker Mace
+									i(87650),	-- Fishsticker Crossbow
+									i(90721),	-- Cournith Waterstrider's Silken Finery
+									i(87646),	-- Needlefang Throatripper
+									i(90723),	-- Arness's Scaled Leggings
+									i(87642),	-- Darkstaff of Annihilation
+									i(90719),	-- Go-Han's Golden Trousers
+									i(87651),	-- Pathwalker Greatstaff
+									i(90717),	-- Qu'nas' Apocryphal Legplates
+									i(87641),	-- Yaungol Battle Barrier
+									i(87649),	-- Pool-Stirrer
+									i(90724),	-- Spriggin's Sproggin' Leggin'
+									i(90718),	-- Torik-Ethis' Bloodied Legguards
+									i(90722),	-- Torik-Ethis' Gilded Legplates
+								}), 
 								dr(1, {
-									i(90725),
-									i(90720),
+									i(90725),	-- Gaarn's Leggings of Infestation
+									i(90720),	-- Silent Leggings of the Ghostpaw
 								}),
 							}),
 						}),

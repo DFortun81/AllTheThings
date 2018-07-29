@@ -76,6 +76,38 @@ _.Zones =
 						["description"] = "Located underwater in a boat at (50.7,99.9)",
 					}),
 				}),
+				ach(7284, {	-- Is Another Man's Treasure
+					o(213741, {	-- Ancient Jinyu Staff
+						["groups"] = {
+							i(86196),	-- Ancient Jinyu Staff
+						},
+						["questID"] = 31402,
+					}),
+					o(213364, {	-- Ancient Pandaren Mining Pick
+						["groups"] = {
+							i(85777),	-- Ancient Pandaren Mining Pick
+						},
+						["questID"] = 31399,
+					}),
+					o(213742, {	-- Hammer of Ten Thunders
+						["groups"] = {
+							i(86198),	-- Hammer of Ten Thunders
+						},
+						["questID"] = 31403,
+					}),
+					o(213743, {	-- Jade Infused Blade
+						["groups"] = {
+							i(86199),	-- Jade Infused Blade
+						},
+						["questID"] = 31307,
+					}),
+					o(213363, {	-- Wodin's Mantid Shanker
+						["groups"] = {
+							i(85776),	-- Wodin's Mantid Shanker
+						},
+						["questID"] = 31397,
+					}),
+				}),
 				n(-17, { 	-- Quests
 					q(29619, {	-- A Courteous Guest
 						["qg"] = 54913, -- Lin Tenderpaw
@@ -1467,35 +1499,25 @@ _.Zones =
 --]]
 				}),
 				n(-16, { 	-- Rares
-					n(50750, { 		-- Aethis
-						dr(13, i(87649)),
+					n(50750, {	-- Aethis
+						dr(13, {
+							i(87649),	-- Pool-Stirrer
+						}),
 						dr(12, {
-							i(87594),
-							i(87588),
+							i(87594),	-- Leggings of Forgotten War
+							i(87588),	-- Leggings of Spiritsong Melody
 						}),
 						dr(11, {
-							i(87586),
-							i(87593),
-							i(87592),
-							i(87587),
-							i(87591),
-						}),
+							i(87586),	-- Forest Trickster's Leggings
+							i(87593),	-- Gan Shi Warlord Legguards
+							i(87592),	-- Grookin' Grookin' Trousers
+							i(87587),	-- Orchard Tender's Leggings
+							i(87591),	-- Tian Trainee Leggings
+						}),	
 						dr(10, {
-							i(87590),
-							i(87589),
+							i(87590),	-- Jade Heart Leggings
+							i(87589),	-- Leggings of Fractured Reflection
 						}),
-					}),
-					o(213741, { 		-- Ancient Jinyu Staff
-						["groups"] = {
-							i(86196),	-- Ancient Jinyu Staff
-						},
-						["questID"] = 31402,
-					}),
-					o(213364, { 		-- Ancient Pandaren Mining Pick
-						["groups"] = {
-							i(85777),	-- Ancient Pandaren Mining Pick
-						},
-						["questID"] = 31399,
 					}),
 					n(51078, { 		-- Ferdinand
 						dr(16, i(87652)),
@@ -1510,18 +1532,6 @@ _.Zones =
 							i(87593),
 							i(87594),
 						}),
-					}),
-					o(213742, { 		-- Hammer of Ten Thunders
-						["groups"] = {
-							i(86198),	-- Hammer of Ten Thunders
-						},
-						["questID"] = 31403,
-					}),
-					o(213743, { 		-- Jade Infused Blade
-						["groups"] = {
-							i(86199),	-- Jade Infused Blade
-						},
-						["questID"] = 31307,
 					}),
 					n(50338, { 		-- Kor'nas Nightsavage
 						dr(14, i(87642)),
@@ -1617,12 +1627,6 @@ _.Zones =
 							i(87589),
 							i(87587),
 						}),
-					}),
-					o(213363, { 		-- Wodin's Mantid Shanker
-						["groups"] = {
-							i(85776),	-- Wodin's Mantid Shanker
-						},
-						["questID"] = 31397,
 					}),
 					n(69769, { 		-- Zandalari Warbringer
 						dr(30, {
