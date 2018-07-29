@@ -34,31 +34,66 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
-						n(9259, {		-- Firebrand Grunt <Firebrand Legion>
-							dr(1.6, i(15749)),	-- Pattern: Volcanic Breastplate
-							un(7, i(16680)), 	-- Beaststalker's Belt
-							un(7, i(16735)),	-- Bracers of Valor
-							un(7, i(16713)),	-- Shadowcraft Belt																	
+						un(7, i(16680, {	-- Beaststalker's Belt
+							["crs"] = {
+								9259,	-- Firebrand Grunt
+								9260,	-- Firebrand Legionnaire
+							},
+						})),
+						un(7, i(16735, {	-- Bracers of Valor
+							["crs"] = {
+								9259,	-- Firebrand Grunt
+								9260,	-- Firebrand Legionnaire
+							},
+						})),
+						un(7, i(16673, {	-- Cord of Elements
+							9264,	-- Firebrand Pyromancer
+							9257,	-- Scarshield Warlock
+						})),
+						un(7, i(16703, {	-- Dreadmist Bracers
+							["crs"] = {
+								9257,	-- Scarshield Warlock
+							},
+						})),
+						i(16250, {			-- Formula: Enchant Weapon - Superior Striking
+							["crs"] = {
+								9216,	-- Spirestone Warlord
+							},
 						}),
-						n(9262, {		-- Firebrand Invoker <Firebrand Legion>
-							dr(11, i(13494)),	-- Recipe: Greater Fire Protection Potion
+						un(7, i(16683, {	-- Magister's Bindings
+							["crs"] = {
+								9264,	-- Firebrand Pyromancer
+							},
+						})),
+						i(14513, {			-- Pattern: Robe of the Archmage
+							["crs"] = {
+								9264,	-- Firebrand Pyromancer
+							},
 						}),
-						n(9260, {		-- Firebrand Legionnaire <Firebrand Legion>
-							dr(8.0, i(15775)),	-- Pattern: Volcanic Shoulders
-							un(7, i(16680)), 	-- Beaststalker's Belt
-							un(7, i(16735)),	-- Bracers of Valor
-							un(7, i(16713)),	-- Shadowcraft Belt																		
+						i(15749, {			-- Pattern: Volcanic Breastplate
+							["crs"] = {
+								9259,	-- Firebrand Grunt
+							},
 						}),
-						n(9264, {		-- Firebrand Pyromancer <Firebrand Legion>
-							dr(6.0, i(14513)),	-- Pattern: Robe of the Archmage
-							dr(7.0, i(13494)),	-- Recipe: Greater Fire Protection Potion
-							un(7, i(16673)), 	-- Cord of Elements
-							un(7, i(16683)),	-- Magister's Bindings														
+						i(15775, {			-- Pattern: Volcanic Shoulders
+							["crs"] = {
+								9260,	-- Firebrand Legionnaire
+							},
 						}),
+						i(13494, {			-- Recipe: Greater Fire Protection Potion
+							["crs"] = {
+								9262,	-- Firebrand Invoker
+								9264,	-- Firebrand Pyromancer
+							},
+						}),
+						un(7, i(16713, {	-- Shadowcraft Belt
+							["crs"] = {
+								9259,	-- Firebrand Grunt
+								9260,	-- Firebrand Legionnaire
+							},
+						})),
 						n(9257, {		-- Scarshield Warlock
 							["groups"] = {	
-								un(7, i(16673)), 	-- Cord of Elements
-								un(7, i(16703)),	-- Dreadmist Bracers																				
 								n(10263, {	-- Burning Felguard
 									["groups"] = {	
 										i(13181),	-- Demonskin Gloves
@@ -69,9 +104,10 @@ _.Instances =
 							},
 							["description"] = "DO NOT KILL this mob if trying to get the Burning Felguard to spawn.",
 						}),
-						n(9216, { 		-- Spirestone Warlord
-							dr(9.0, i(16250)),	-- Formula: Enchant Weapon - Superior Striking
-							dr(.01, i(13260))	-- Wind Dancer Boots
+						i(13260, {	-- Wind Dancer Boots
+							["crs"] = {
+								9216,	-- Spirestone Warlord
+							},
 						}),
 					}),
 					n(  9218, {			-- Spirestone Battle Lord (Rare)
