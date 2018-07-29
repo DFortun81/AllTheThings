@@ -76,7 +76,6 @@ _.Instances =
 							}),
 						},
 					}),
-					
 					d(2, { -- Heroic
 						["groups"] = {
 							e(2102, { -- Skycap'n Kragg

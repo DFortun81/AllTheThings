@@ -73,7 +73,6 @@ _.Instances =
 							}),
 						},
 					}),
-					
 					d(2, { -- Heroic
 						["groups"] = {
 							e(2082, { -- Priestess Alun'za

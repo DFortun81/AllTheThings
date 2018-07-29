@@ -69,7 +69,6 @@ _.Instances =
 							}),
 						},
 					}),
-					
 					d(2, { -- Heroic
 						["groups"] = {
 							e(2153, { -- Aqu'sirr
