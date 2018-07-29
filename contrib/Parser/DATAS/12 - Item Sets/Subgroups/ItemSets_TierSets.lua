@@ -1961,7 +1961,121 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							["classes"] = { 6 },			
 						}),				
 					},					
-				}),						
+				}),		
+				n(-373, { -- 25 Player
+					["groups"] = {
+						gs(362, { -- Valorous Regalia of Faith
+							["groups"] = {
+								n(-9951, { -- Discipline / Holy Priest
+									i(40447),	-- Valorous Crown of Faith
+									i(40450),	-- Valorous Shoulderpads of Faith
+									i(40449),	-- Valorous Robe of Faith
+									i(39731),	-- Punctilious Bindings
+									i(40445),	-- Valorous Gloves of Faith
+									i(40271),	-- Sash of Solitude
+									i(40448),	-- Valorous Leggings of Faith
+									i(40236),	-- Serene Echoes
+								}),
+								n(-9917, { -- Shadow Priest
+									i(40456),	-- Valorous Circlet of Faith
+									i(40459),	-- Valorous Mantle of Faith
+									i(40458),	-- Valorous Raiments of Faith
+									i(40338),	-- Bindings of Yearning
+									i(40454),	-- Valorous Handwraps of Faith
+									i(39721),	-- Sash of the Parlor
+									i(40457),	-- Valorous Pants of Faith
+									i(40326),	-- Boots of Forlorn Wishes
+								}),
+							},			
+							["classes"] = { 5 },
+						}),
+						gs(727, { -- Valorous Frostfire Garb
+							["groups"] = {
+								i(40416),	-- Valorous Frostfire Circlet
+								i(40419),	-- Valorous Frostfire Shoulderpads
+								i(40418),	-- Valorous Frostfire Robe
+								i(40198),	-- Bands of Impurity
+								i(40415),	-- Valorous Frostfire Gloves
+								i(39735),	-- Belt of False Dignity
+								i(40417),	-- Valorous Frostfire Leggings
+								i(40750),	-- Xintor's Expeditionary Boots
+							},
+							["classes"] = { 8 },			
+						}),
+						gs(679, { -- Valorous Plagueheart Garb
+							["groups"] = {
+								i(40421),	-- Valorous Plagueheart Circlet
+								i(40424),	-- Valorous Plagueheart Shoulderpads
+								i(40423),	-- Valorous Plagueheart Robe
+								i(40325),	-- Bindings of the Expansive Mind
+								i(40420),	-- Valorous Plagueheart Gloves
+								i(40301),	-- Cincture of Polarity
+								i(40422),	-- Valorous Plagueheart Leggings
+								i(40269),	-- Boots of Persuasion
+							},
+							["classes"] = { 9 },	
+						}),
+						gs(830, { -- Valorous Dreamwalkeer Battlegear
+							["groups"] = {
+								n(-9952, {	--Guardian / Feral Druid Spec	
+									i(40473),	-- Valorous Dreamwalker Headguard
+									i(40494),	-- Valorous Dreamwalker Shoulderpads
+									i(40471),	-- Valorous Dreamwalker Raiments
+									i(39722),	-- Swarm Bindings
+									i(40472),	-- Valorous Dreamwalker Handgrips
+									i(40341),	-- Shackled Cinch
+									i(40493),	-- Valorous Dreamwalker Legguards
+									i(40270),	-- Boots of Septic Wounds
+								}),		
+								n(-9926, {	-- Balance Druid	
+									i(40467),	-- Valorous Dreamwalker Cover
+									i(40470),	-- Valorous Dreamwalker Mantle
+									i(40469),	-- Valorous Dreamwalker Vestments
+									i(40323),	-- Esteemed Bindings
+									i(40466),	-- Valorous Dreamwalker Gloves
+									i(40200),	-- Belt of Potent Chanting
+									i(40468),	-- Valorous Dreamwalker Trousers
+									i(40409),	-- Boots of the Escaped Captive
+								}),		
+								n(-9927, {	-- Restoration Druid
+									i(40461),	-- Valorous Dreamwalker Headpiece
+									i(40465),	-- Valorous Dreamwalker Spaulders
+									i(40463),	-- Valorous Dreamwalker Robe
+									i(40323),	-- Esteemed Bindings
+									i(40460),	-- Valorous Dreamwalker Handguards
+									i(40200),	-- Belt of Potent Chanting
+									i(40462),	-- Valorous Dreamwalker Leggings
+									i(40749),	-- Rainey's Chewed Boots
+								}),
+							},
+							["classes"] = { 11 },
+						}),
+						gs(695, { -- Valorous Bonescythe Battlegear
+							["groups"] = {
+								i(40499),	-- Valorous Bonescythe Helmet
+								i(40502),	-- Valorous Bonescythe Pauldrons
+								i(40186),	-- Thrusting Bands
+								i(40205),	-- Stalk-Skin Belt
+								i(40243),	-- Footwraps of Vile Deceit
+								i(40495),	-- Valorous Bonescythe Breastplate
+							},
+							["classes"] = { 4 },
+						}),
+						gs(743, { -- Valorous Cryptstalker Battlegear
+							["groups"] = {
+								i(40505),	-- Valorous Cryptstalker Headpiece
+								i(40507),	-- Valorous Cryptstalker Spaulders
+								i(39702),	-- Arachnoid Gold Band
+								i(40275),	-- Depraved Linked Belt
+								i(40506),	-- Valorous Cryptstalker Legguards
+								i(40184),	-- Crippled Treads
+								i(40503),	-- Valorous Cryptstalker Tunic
+							},
+							["classes"] = { 3 },	
+						}),
+					},
+				}),
+
 			},
 			["achievementID"] = 11750, -- Undying Aesthetic
 		}),
