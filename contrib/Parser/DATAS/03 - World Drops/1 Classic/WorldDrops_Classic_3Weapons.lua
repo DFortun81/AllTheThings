@@ -685,7 +685,7 @@ _.WorldDrops =
 					un(7, i(2018)),	-- Skeletal Longsword
 					un(7, i(2035)),	-- Sword of the Night Sky
 					un(7, i(2046)),	-- Bluegill Kukri
-					i(20698),	-- Elemental Attuned Blade
+					un(7, i(20698)),	-- Elemental Attuned Blade
 					i(2078),	-- Northern Shortsword
 					i(2244),	-- Krol Blade
 					i(29583),	-- Sinister Scimitar
