@@ -176,6 +176,7 @@ _.Mounts =
 		i(44168),		-- Time-Lost Proto-Drake
 		i(116658),		-- Tundra Icehoof
 		i(43954),		-- Twilight Drake
+		i(160829),		-- Underrot Crawg Harness
 		i(147805),		-- Valarjar Stormwing
 		i(152842),		-- Vibrant Mana Ray Mount
 		i(152790),		-- Vile Fiend

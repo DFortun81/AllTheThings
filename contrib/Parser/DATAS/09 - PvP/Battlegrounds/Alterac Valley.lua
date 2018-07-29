@@ -8,16 +8,18 @@ _.PVP =
 			["groups"] = {
 				n(13419, { -- Ivus the Forest Lord
 					["groups"] = {
-						un(2, i(19110, { -- Cold Forged Blade
+						i(19110, { -- Cold Forged Blade
 							["description"] = "This item was removed in Patch 1.6",
-						})),
+							["u"] = 2,
+						}),
 					},
 				}),
 				n(13256, { -- Lokholar the Ice Lord
 					["groups"] = {
-						un(2, i(19110, { -- Cold Forged Blade
+						i(19110, { -- Cold Forged Blade
 							["description"] = "This item was removed in Patch 1.6",
-						})),
+							["u"] = 2,
+						}),
 					},
 				}),
 			},
