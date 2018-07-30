@@ -442,6 +442,7 @@ AllTheThings.Locales.enUS = {
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",							-- Class
 		[-221] = "Interface\\Icons\\inv_orderhall_orderresources",				-- Bonus Objectives
 		[-222] = "Interface\\Icons\\inv_misc_coin_01",							-- Treasure Hunter
+		[-223] = "Interface\\Icons\\achievement_quests_completed_daily_07",		-- Daily
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1049,6 +1050,7 @@ AllTheThings.Locales.enUS = {
 		[-220] = CLASS,															-- Class
 		[-221] = TASKS_BONUS_OBJECTIVES,										-- Bonus Objectives
 		[-222] = select(2, GetAchievementInfo(9726)),							-- Treasure Hunter
+		[-223] = DAILY,															-- Daily
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
