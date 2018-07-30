@@ -41,11 +41,6 @@ _.Instances =
 										},
 										["qg"] = 45323,	-- Packmaster Stonebruiser
 									}),
-									q(27230, {	-- Weapons for War
-										["groups"] = {
-										},
-										["qg"] = 45331,	-- Master Craftsman Wilhelm
-									}),
 								}),
 								n(  0, {	-- Zone Drop
 									i(16248, {	-- Formula: Enchant Weapon - Unholy
@@ -250,6 +245,11 @@ _.Instances =
 										["groups"] = {
 										},
 										["qg"] = 45206,	-- Crusade Commander Korfax
+									}),
+									q(27230, {	-- Weapons for War
+										["groups"] = {
+										},
+										["qg"] = 45331,	-- Master Craftsman Wilhelm
 									}),
 								}),
 								n(0, {	-- Zone Drop
