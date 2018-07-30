@@ -443,6 +443,7 @@ AllTheThings.Locales.enUS = {
 		[-221] = "Interface\\Icons\\inv_orderhall_orderresources",				-- Bonus Objectives
 		[-222] = "Interface\\Icons\\inv_misc_coin_01",							-- Treasure Hunter
 		[-223] = "Interface\\Icons\\achievement_quests_completed_daily_07",		-- Daily
+		[-224] = "Interface\\Icons\\ClassIcon_DemonHunter", 					-- Demon Hunter
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -632,6 +633,7 @@ AllTheThings.Locales.enUS = {
 		[-4189] = "Interface\\Icons\\achievement_legionpvptier4",				-- Instance Item Sets, PvP
 		[-5349] = "Interface\\Icons\\achievement_challengemode_scarletmonastery_gold",	-- Miscellaneous Item Sets
 		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",			-- Class Trial Item Sets
+		[-5351] = "Interface\\Icons\\misc_arrowlup",							-- Character Boost					
 		[-5352] = "Interface\\Icons\\creatureportrait_portal_eyeofthestormhorde",	-- Tier Sets
 		[-6012] = "Interface\\Icons\\achievement_bg_masterofallbgs",			-- World Event Item Sets
 		[-6013] = "Interface\\Icons\\achievement_reputation_08",				-- Faction
@@ -1051,6 +1053,7 @@ AllTheThings.Locales.enUS = {
 		[-221] = TASKS_BONUS_OBJECTIVES,										-- Bonus Objectives
 		[-222] = select(2, GetAchievementInfo(9726)),							-- Treasure Hunter
 		[-223] = DAILY,															-- Daily
+		[-224] = "Illidari",													-- Illidari
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
@@ -1406,7 +1409,9 @@ AllTheThings.Locales.enUS = {
 		[-5205] = "Hidden Appearance",
 	-- Class Sets
 		[-5349] = MAC_OPTIONS_MISC.." "..LOOT_JOURNAL_ITEM_SETS, 					-- Miscellaneous Item Sets
-		[-5350] = "Class Trial Item Sets",
+		[-5350] = "Class Trial Item Sets",											-- Class Trial
+		[-5351] = GAMEMENU_BOOST_BUTTON,											-- Character Boost
+		
 		[-5352] = GARRISON_TIER.." "..WARDROBE_SETS,								-- Tier Sets
 --[[
 		-- Tier Set Numbers Localization

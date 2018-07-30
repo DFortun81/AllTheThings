@@ -241,41 +241,12 @@ _.GearSets =
 				["description"] = "|cff66ccffThese are gained by creating a Level 100 Trial of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.|r",
 				["icon"] = "Interface\\Icons\\achievement_level_100",
 			}),
+			--[[
 			n(-154, {  -- Class Trial Level 110 Sets [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]
 				["groups"] = {
 					n(-140, { -- Communal
 						["groups"] = {
-							i(153934),	-- Communal Staff
-							i(153944),	-- Communal Stave
-							i(153919),	-- Communal Wand
-							i(153938),	-- Communal Cowl
-							i(153923),	-- Communal Hood
-							i(153914),	-- Communal Medallion
-							i(153925),	-- Communal Necklace
-							i(153941),	-- Communal Mantle
-							i(153931),	-- Communal Shoulderpads
-							i(153935),	-- Communal Cloak of Destruction
-							i(153920),	-- Communal Cloak of Wisdom
-							i(153940),	-- Communal Robe
-							i(153929),	-- Communal Vestments
-							i(153943),	-- Communal Bindings
-							i(153933),	-- Communal Wristwraps
-							i(153937),	-- Communal Gloves
-							i(153922),	-- Communal Handwraps
-							i(153932),	-- Communal Cord
-							i(153942),	-- Communal Sash
-							i(153924),	-- Communal Leggings
-							i(153939),	-- Communal Pants
-							i(153916),	-- Communal Band of Destruction
-							i(153927),	-- Communal Band of Wisdom
-							i(153936),	-- Communal Boots
-							i(153921),	-- Communal Sandals
-							i(153917),	-- Communal Ring of Destruction
-							i(153928),	-- Communal Ring of Wisdom
-							i(153915),	-- Communal Idol of Destruction
-							i(153926),	-- Communal Idol of Wisdom
-							i(153918),	-- Communal Stone of Destruction
-							i(153930),	-- Communal Stone of Wisdom
+							
 						},
 						["classes"] = {5}
 					}),
@@ -353,6 +324,7 @@ _.GearSets =
 				["description"] = "|cff66ccffThese are gained by creating a Level 100 Trial of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.|r",
 				["icon"] = "Interface\\Icons\\achievement_level_100",
 			}),
+			--]]
 		},
 		
 	}),
