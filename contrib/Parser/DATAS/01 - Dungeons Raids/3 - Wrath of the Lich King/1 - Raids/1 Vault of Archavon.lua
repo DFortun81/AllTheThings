@@ -11,6 +11,7 @@ _.Instances =
 					d(3, {	-- 10-Player
 						e(1599, { -- Koralon the Flame Watcher
 							["groups"] = {
+								ach(3836),		-- Koralon the Flame Watcher (10 player)
 								a(i(43959)),	-- Reins of the Grand Black War Mammoth (Alliance)
 								h(i(44083)),	-- Reins of the Grand Black War Mammoth (Horde)
 								i(42037),	-- Furious Gladiator's Pendant of Ascendancy
@@ -179,6 +180,7 @@ _.Instances =
 						}),
 						e(1598, { -- Emalon the Storm Watcher
 							["groups"] = {
+								ach(3136),		-- Emalon the Storm Watcher (10 player)
 								a(i(43959)),	-- Reins of the Grand Black War Mammoth (Alliance)
 								h(i(44083)),	-- Reins of the Grand Black War Mammoth (Horde)
 								i(42030),	-- Deadly Gladiator's Pendant of Ascendancy
@@ -302,6 +304,7 @@ _.Instances =
 						}),
 						e(1600, { -- Toravon the Ice Watcher
 							["groups"] = {
+								ach(4585),		-- Toravon the Ice Watcher (10 player)
 								a(i(43959)),	-- Reins of the Grand Black War Mammoth (Alliance)
 								h(i(44083)),	-- Reins of the Grand Black War Mammoth (Horde)
 								i(42044),	-- Relentless Gladiator's Pendant of Ascendancy
@@ -426,6 +429,7 @@ _.Instances =
 						}),
 						e(1597, { -- Archavon the Stone Watcher
 							["groups"] = {
+								ach(1722),		-- Archavon the Stone Watcher (10 player)
 								a(i(43959)),	-- Reins of the Grand Black War Mammoth (Alliance)
 								h(i(44083)),	-- Reins of the Grand Black War Mammoth (Horde)
 								i(41085),	-- Hateful Gladiator's Chain Armor
@@ -540,6 +544,7 @@ _.Instances =
 					d(4, {	-- 25-Player
 						e(1599, { -- Koralon the Flame Watcher
 							["groups"] = {
+								ach(3837),		-- Koralon the Flame Watcher (25 player)
 								a(i(43959)),	-- Reins of the Grand Black War Mammoth (Alliance)
 								h(i(44083)),	-- Reins of the Grand Black War Mammoth (Horde)
 								i(42044),	-- Relentless Gladiator's Pendant of Ascendancy
@@ -714,6 +719,7 @@ _.Instances =
 						}),
 						e(1598, { -- Emalon the Storm Watcher
 							["groups"] = {
+								ach(3137),		-- Emalon the Storm Watcher (25 player)
 								a(i(43959)),	-- Reins of the Grand Black War Mammoth (Alliance)
 								h(i(44083)),	-- Reins of the Grand Black War Mammoth (Horde)
 								i(42037),	-- Furious Gladiator's Pendant of Ascendancy
@@ -838,6 +844,7 @@ _.Instances =
 						}),
 						e(1600, { -- Toravon the Ice Watcher
 							["groups"] = {
+								ach(4586),		-- Toravon the Ice Watcher (25 player)
 								a(i(43959)),	-- Reins of the Grand Black War Mammoth (Alliance)
 								h(i(44083)),	-- Reins of the Grand Black War Mammoth (Horde)
 								i(51335),	-- Wrathful Gladiator's Pendant of Ascendancy
@@ -962,6 +969,7 @@ _.Instances =
 						}),
 						e(1597, { -- Archavon the Stone Watcher
 							["groups"] = {
+								ach(1721),		-- Archavon the Stone Watcher (25 player)
 								a(i(43959)),	-- Reins of the Grand Black War Mammoth (Alliance)
 								h(i(44083)),	-- Reins of the Grand Black War Mammoth (Horde)
 								i(41086),	-- Deadly Gladiator's Chain Armor

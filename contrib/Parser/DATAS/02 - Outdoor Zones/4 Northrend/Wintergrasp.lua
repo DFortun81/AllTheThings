@@ -27,6 +27,53 @@ _.Zones =
 						["u"] = 17,
 					}),
 				}),
+				n(-4, {	-- Achievements
+					["groups"] = {
+						a(ach(1737, {	-- Destruction Derby (Alliance)
+							crit(1),		-- Wintergrasp Catapult
+							crit(2),		-- Wintergrasp Demolisher
+							crit(3),		-- Wintergrasp Siege Engine
+							crit(4),		-- Wintergrasp Tower Cannon
+						})),
+						h(ach(2476, {	-- Destruction Derby (Horde)
+							crit(1),		-- Wintergrasp Catapult
+							crit(2),		-- Wintergrasp Demolisher
+							crit(3),		-- Wintergrasp Siege Engine
+							crit(4),		-- Wintergrasp Tower Cannon
+						})),
+						ach(1751),		-- Didn't Stand a Chance
+						ach(1727),		-- Leaning Tower
+						ach(1752, {		-- Master of Wintergrasp
+							crit(1),		-- Wintergrasp Veteran
+							crit(2),		-- Within Our Grasp
+							crit(3),		-- Wintergrasp Ranger
+							crit(4),		-- Black War Mammoth
+							crit(5),		-- Archavon the Stone Watcher
+							crit(6),		-- Heroic: Archavon the Stone Watcher
+							crit(7),		-- Destruction Derby
+							crit(8),		-- Vehicular Gnomeslaughter
+							crit(9),		-- Leaning Tower
+							crit(10),		-- Didn't Stand a Chance
+						}),
+						ach(1723),		-- Vehicular Gnomeslaughter
+						ach(2199, {		-- Wintergrasp Ranger
+							crit(1),		-- Wintergrasp Fortress
+							crit(2),		-- Eastspark Workshop
+							crit(3),		-- Flamewatch Tower
+							crit(4),		-- The Broken Temple
+							crit(5),		-- Shadowsight Tower
+							crit(6),		-- The Cauldron of Flames
+							crit(7),		-- The Sunken Ring
+							crit(8),		-- Winter's Edge Tower
+							crit(9),		-- Westspark Workshop
+							crit(10),		-- The Chilled Quagmire
+						}),
+						ach(1718, {		-- Wintergrasp Veteran
+							ach(1717),		-- Wintergrasp Victory
+						}),
+						ach(1755),		-- Within Our Grasp
+					},
+				}),
 --[[			
 				n(-17, { 	-- Quests
 					qa( 13156),	-- A Rare Herb
@@ -120,7 +167,9 @@ _.Zones =
 					}),
 				    na(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
 						["groups"] = {	
-							i(43956),	-- Reins of the Black War Mammoth
+							i(43956, {	-- Reins of the Black War Mammoth
+								ach(2080),		-- Black War Mammoth
+							}),
 							i(46058),	-- Titan-Forged Breastplate of Triumph
 							i(46059),	-- Titan-Forged Chain Armor of Triumph
 							i(44903),	-- Titan-Forged Chain Helm of Triumph
@@ -245,7 +294,9 @@ _.Zones =
 					}),
 					nh(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
 						["groups"] = {	
-							i(44077),	-- Reins of the Black War Mammoth
+							i(44077, {	-- Reins of the Black War Mammoth
+								ach(2080),		-- Black War Mammoth
+							}),
 							i(46058),	-- Titan-Forged Breastplate of Triumph
 							i(46059),	-- Titan-Forged Chain Armor of Triumph
 							i(44903),	-- Titan-Forged Chain Helm of Triumph
