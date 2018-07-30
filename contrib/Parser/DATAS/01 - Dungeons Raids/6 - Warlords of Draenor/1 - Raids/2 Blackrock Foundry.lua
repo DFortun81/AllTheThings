@@ -9,7 +9,6 @@ _.Instances =
 			inst(457, { 	-- Blackrock Foundry
 				["groups"] = {
 					d(17, {		-- LFR
-						 
 						["groups"] = {
 							ach(8989, { 	-- Slagworks	
 								cr(77182, e(1202, {	-- Oregorger
@@ -1394,7 +1393,7 @@ _.Instances =
 				["isRaid"] = true,
 				["lvl"] = 100,
 				["mapID"] = 598,
-				["maps"] = { 596, 597, 598, 599, 600 }
+				["maps"] = { 596, 597, 599, 600 }
 			}),
 		},					
 		["tierID"] = 6
