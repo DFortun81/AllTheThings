@@ -444,15 +444,19 @@ GameTooltipModel.Models = {};
 GameTooltipModel.Model = CreateFrame("DressUpModel", nil, GameTooltipModel);
 GameTooltipModel.Model:SetPoint("TOPLEFT", GameTooltipModel ,"TOPLEFT", 4, -4)
 GameTooltipModel.Model:SetPoint("BOTTOMRIGHT", GameTooltipModel ,"BOTTOMRIGHT", -4, 4)
-GameTooltipModel.Model:SetRotation(MODELFRAME_DEFAULT_ROTATION);
+GameTooltipModel.Model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
+GameTooltipModel.Model:SetScript("OnUpdate", function(self, elapsed)
+	self:SetFacing(self:GetFacing() + elapsed);
+end);
 GameTooltipModel.Model:Hide();
+
 for i=1,MAX_CREATURES_PER_ENCOUNTER do
 	model = CreateFrame("DressUpModel", "ATTGameTooltipModel" .. i, GameTooltipModel);
 	model:SetPoint("TOPLEFT", GameTooltipModel ,"TOPLEFT", 4, -4);
 	model:SetPoint("BOTTOMRIGHT", GameTooltipModel ,"BOTTOMRIGHT", -4, 4);
 	model:SetCamDistanceScale(1.7);
 	model:SetDisplayInfo(987);
-	model:SetRotation(MODELFRAME_DEFAULT_ROTATION);
+	model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
 	fi = math.floor(i / 2);
 	model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - 0.3);
 	model:SetDepth(i);
@@ -496,7 +500,7 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 					model = self.Models[i];
 					model:SetDisplayInfo(displayInfos[i]);
 					model:SetCamDistanceScale(scale);
-					model:SetRotation(rotation);
+					model:SetFacing(rotation);
 					model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
 					model:Show();
 				end
@@ -506,14 +510,14 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 					model = self.Models[i];
 					model:SetDisplayInfo(displayInfos[i]);
 					model:SetCamDistanceScale(scale);
-					model:SetRotation(rotation);
+					model:SetFacing(rotation);
 					fi = math.floor(i / 2);
 					model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.15));
 					model:Show();
 				end
 			end
 		else
-			self.Model:SetRotation(rotation);
+			self.Model:SetFacing(rotation);
 			self.Model:SetCamDistanceScale(scale);
 			self.Model:SetDisplayInfo(displayInfos[1]);
 			self.Model:Show();
@@ -546,7 +550,7 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			else
 				local displayID = app.NPCDB[reference.qgs[1]];
 				if displayID then
-					self.Model:SetRotation(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+					self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 					self.Model:SetCamDistanceScale(reference.modelScale or 1);
 					self.Model:SetDisplayInfo(displayID);
 					self.Model:Show();
@@ -557,14 +561,14 @@ GameTooltipModel.TrySetModel = function(self, reference)
 		end
 		
 		if reference.displayID then
-			self.Model:SetRotation(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 			self.Model:SetCamDistanceScale(reference.modelScale or 1);
 			self.Model:SetDisplayInfo(reference.displayID);
 			self.Model:Show();
 			self:Show();
 			return true;
 		elseif reference.model then
-			self.Model:SetRotation(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 			self.Model:SetCamDistanceScale(reference.modelScale or 1);
 			self.Model:SetUnit("none");
 			self.Model:SetModel(reference.model);
@@ -572,7 +576,7 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			self:Show();
 			return true;
 		elseif reference.creatureID then
-			self.Model:SetRotation(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 			self.Model:SetCamDistanceScale(reference.modelScale or 1);
 			self:SetCreatureID(reference.creatureID);
 			self.Model:Show();
