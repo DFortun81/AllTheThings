@@ -107,7 +107,7 @@ _.Instances = { tier(1, {	-- Classic
 						["creatureID"] = 10184
 					}),
 				},
-				["u"] = 2,
+				["u"] = 12,
 			}),
 			d(3, {	-- 10 Player
 				["groups"] = {
