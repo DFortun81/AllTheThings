@@ -13,9 +13,11 @@ _.Zones =
 				}),
 				ach(7997, {	-- Riches of Pandaria
 					o(213845, {	-- The Hammer of Folly
-						i(86473, {	-- The Hammer of Folly
-							["questID"] = 31428,
-						}),
+						["groups"] = {
+							i(86473, {	-- The Hammer of Folly
+								["questID"] = 31428,
+							}),
+						},
 						["description"] = "Located at either (59.8,57.1) or (75.0,76.6)",
 					}),
 				}),
