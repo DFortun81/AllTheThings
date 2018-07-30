@@ -110,7 +110,7 @@ _.Instances =
 						},
 					}),
 					cr(23574, e(186, {	-- Akil'zon
-						un(2, i(33307)),	-- Formula: Enchant Weapon - Executioner
+						i(33307),	-- Formula: Enchant Weapon - Executioner
 						un(2, i(33214)),	-- Akil'zon's Talonblade
 						un(2, i(33283)),	-- Amani Punisher
 						un(2, i(33286)),	-- Mojo-Mender's Mask
@@ -120,7 +120,7 @@ _.Instances =
 						un(2, i(33293)),	-- Signet of Ancient Magics
 					})),
 					cr(23576, e(187, {	-- Nalorakk
-						un(2, i(33307)),	-- Formula: Enchant Weapon - Executioner
+						i(33307),	-- Formula: Enchant Weapon - Executioner
 						un(2, i(33640)),	-- Fury
 						un(2, i(33327)),	-- Mask of Introspection
 						un(2, i(33206)),	-- Pauldrons of Primal Fury
@@ -167,7 +167,7 @@ _.Instances =
 						["hideText"] = true,
 						["groups"] = {
 							un(2, ach(691)),	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
-							un(2, i(33307)),	-- Formula: Enchant Weapon - Executioner
+							i(33307),	-- Formula: Enchant Weapon - Executioner
 							{
 								["itemID"] = 33102,	-- Blood of Zul'jin
 								["questID"] = 11178,	-- Blood of the Warlord
