@@ -75,7 +75,13 @@ _.Instances =
 						})),
 					}),
 					n(  0, {	-- Zone Drop
-						i(9510),	-- Caverndeep Trudgers
+						i(9510, {	-- Caverndeep Trudgers
+							["crs"] = {
+								6235,  -- Electrocutioner 6000
+								7800,  -- Mekgineer Thermaplugg 
+								7079,  -- Viscous Fallout
+							},
+						}),
 						i(9490, {	-- Gizmotron Megachopper 
 							["crs"] = { 
 								6207,  -- Caverndeep Ambusher 
@@ -141,10 +147,16 @@ _.Instances =
 						i(9489, {	-- Gyromatic Icemaker 
 							["crs"] = { 
 								6232,  -- Arcane Nullifier X-21 
+								6212,  -- Dark Iron Agent
+								6235,  -- Electrocutioner 6000
 								6220,  -- Irradiated Horror 
+								6223,  -- Leprous Defender
 								6234,  -- Mechanized Guardian 
 								6233,  -- Mechanized Sentry 
+								6227,  -- Mechano-Frostwalker
+								7800,  -- Mekgineer Thermaplugg
 								6230,  -- Peacekeeper Security Suit 
+								7079,  -- Viscous Fallout
 							}, 
 						}), 
 						i(9487, {	-- Hi-Tech Supergun 
