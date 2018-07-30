@@ -4,14 +4,34 @@
 
 _.Instances = 
 {
-	{ -- Warlords of Draenor
+	{	-- Warlords of Draenor
 		["groups"] = {
-			inst(537, { 	-- Shadowmoon Burial Grounds
+			inst(537, {	-- Shadowmoon Burial Grounds
 				["groups"] = {
-					d(1, {		-- Normal
+					d(1, {	-- Normal
 						cr(75509, e(1139, {	-- Sadana Bloodfury
-							ig(44731),		-- Bouquet of Ebon Roses
+							ig(44731),	-- Bouquet of Ebon Roses
 							i(110035),	-- Sadana's Grisly Visage
+							i(109957),	-- Alc's Pendant of Fiery Dreams
+							i(109962),	-- Bloodmist Pendant
+							i(109959),	-- Chain of Soothing Light
+							i(109969),	-- Choker of Weeping Viscera
+							i(109955),	-- Demonbinder Cabochon
+							i(109951),	-- Fireblade Collar
+							i(109965),	-- Fistbreak Choker
+							i(109968),	-- Flesh Beetle Brooch
+							i(109963),	-- Goreclasp Choker
+							i(109958),	-- Healing Leaf Necklace
+							i(109954),	-- Magister's Chain
+							i(109956),	-- Necklace of Endless Shadow
+							i(109964),	-- Necklace of Furious Zeal
+							i(109967),	-- Necklace of Holy Deflection
+							i(109961),	-- Pendant of Purifying Mists
+							i(109966),	-- Reinforced Bloodsteel Gorget
+							i(109952),	-- Skulltooth Chain
+							i(109950),	-- Stormshot Choker
+							i(109960),	-- Wavesurge Choker
+							i(109953),	-- Windseal Necklace
 							i(109912),	-- Bloody-Blade Drape
 							i(109911),	-- Cape of Annealing Flesh
 							i(109908),	-- Cloak of Arcane Mysteries
@@ -75,6 +95,7 @@ _.Instances =
 							i(109873),	-- Sharpeye Bracers
 							i(109872),	-- Streamslither Bracers
 							i(109877),	-- Verdant Plate Wristguards
+							i(110007),	-- Voidmender's Shadowgem
 						})),
 						cr(75452, e(1140, {	-- Bonemaw
 							i(110037),	-- Bonetooth Longbow
@@ -118,6 +139,7 @@ _.Instances =
 							i(109834),	-- Sharpeye Belt
 							i(109833),	-- Streamslither Belt
 							i(109838),	-- Verdant Plate Belt
+							i(110012),	-- Bonemaw's Big Toe
 						})),
 						cr(76407, e(1160, {	-- Ner'zhul
 							i(138806),	-- Illusion: Mark of Shadowmoon
@@ -163,9 +185,34 @@ _.Instances =
 							i(109791),	-- Sharpeye Greaves
 							i(109790),	-- Streamslither Boots
 							i(109794),	-- Verdant Plate Treads
+							i(109779),	-- Ancient Draenic Loop
+							i(109768),	-- Band of Growing Leaves
+							i(109773),	-- Band of Iron Scale
+							i(109783),	-- Band of the Stalwart Stanchion
+							i(109775),	-- Bladebinder Ring
+							i(109771),	-- Bloodied Ring of Mytosis
+							i(109761),	-- Bloodthorn Band
+							i(109760),	-- Ced's Chiming Circle
+							i(109766),	-- Darkflame Loop
+							i(109763),	-- Diamondglow Circle
+							i(109782),	-- Disease-Binder Seal
+							i(109765),	-- Golem's Gleaming Eye
+							i(109772),	-- Knucklebone of Lo'Dronar
+							i(109764),	-- Mark of Ice
+							i(109767),	-- Ring of Purified Light
+							i(109774),	-- Ring of Ripped Flesh
+							i(109759),	-- Ro-Ger's Brown Diamond Seal
+							i(109776),	-- Seal of Resilient Fortitude
+							i(109781),	-- Seal of Vindication
+							i(109770),	-- Signet of Crashing Waves
+							i(109762),	-- Signet of Radiant Leaves
+							i(109780),	-- Signet of Shifting Magics
+							i(109778),	-- Signet of the Glorious Protector
+							i(109769),	-- Slicebinder Loop
+							i(109777),	-- Unsullied Signet
 						})),
 					}),
-					d(2, {		-- Heroic
+					d(2, {	-- Heroic
 						n(-17, {	-- Quests 			
 							q(37163, {
 								i(119003), -- Void Totem ["isToy"] = True
@@ -175,8 +222,28 @@ _.Instances =
 							}),
 						}),	
 						cr(75509, e(1139, {	-- Sadana Bloodfury
---							ig(44731),		-- Bouquet of Ebon Roses (unconfirmed to drop in this difficulty)
+--							ig(44731),	-- Bouquet of Ebon Roses (unconfirmed to drop in this difficulty)
 							i(110035),	-- Sadana's Grisly Visage
+							i(109957),	-- Alc's Pendant of Fiery Dreams
+							i(109962),	-- Bloodmist Pendant
+							i(109959),	-- Chain of Soothing Light
+							i(109969),	-- Choker of Weeping Viscera
+							i(109955),	-- Demonbinder Cabochon
+							i(109951),	-- Fireblade Collar
+							i(109965),	-- Fistbreak Choker
+							i(109968),	-- Flesh Beetle Brooch
+							i(109963),	-- Goreclasp Choker
+							i(109958),	-- Healing Leaf Necklace
+							i(109954),	-- Magister's Chain
+							i(109956),	-- Necklace of Endless Shadow
+							i(109964),	-- Necklace of Furious Zeal
+							i(109967),	-- Necklace of Holy Deflection
+							i(109961),	-- Pendant of Purifying Mists
+							i(109966),	-- Reinforced Bloodsteel Gorget
+							i(109952),	-- Skulltooth Chain
+							i(109950),	-- Stormshot Choker
+							i(109960),	-- Wavesurge Choker
+							i(109953),	-- Windseal Necklace
 							i(109912),	-- Bloody-Blade Drape
 							i(109911),	-- Cape of Annealing Flesh
 							i(109908),	-- Cloak of Arcane Mysteries
@@ -240,6 +307,7 @@ _.Instances =
 							i(109873),	-- Sharpeye Bracers
 							i(109872),	-- Streamslither Bracers
 							i(109877),	-- Verdant Plate Wristguards
+							i(110007),	-- Voidmender's Shadowgem
 						})),
 						cr(75452, e(1140, {	-- Bonemaw
 							i(110037),	-- Bonetooth Longbow
@@ -283,6 +351,7 @@ _.Instances =
 							i(109834),	-- Sharpeye Belt
 							i(109833),	-- Streamslither Belt
 							i(109838),	-- Verdant Plate Belt
+							i(110012),	-- Bonemaw's Big Toe
 						})),
 						cr(76407, e(1160, {	-- Ner'zhul
 							i(138806),	-- Illusion: Mark of Shadowmoon
@@ -328,12 +397,57 @@ _.Instances =
 							i(109791),	-- Sharpeye Greaves
 							i(109790),	-- Streamslither Boots
 							i(109794),	-- Verdant Plate Treads
+							i(109779),	-- Ancient Draenic Loop
+							i(109768),	-- Band of Growing Leaves
+							i(109773),	-- Band of Iron Scale
+							i(109783),	-- Band of the Stalwart Stanchion
+							i(109775),	-- Bladebinder Ring
+							i(109771),	-- Bloodied Ring of Mytosis
+							i(109761),	-- Bloodthorn Band
+							i(109760),	-- Ced's Chiming Circle
+							i(109766),	-- Darkflame Loop
+							i(109763),	-- Diamondglow Circle
+							i(109782),	-- Disease-Binder Seal
+							i(109765),	-- Golem's Gleaming Eye
+							i(109772),	-- Knucklebone of Lo'Dronar
+							i(109764),	-- Mark of Ice
+							i(109767),	-- Ring of Purified Light
+							i(109774),	-- Ring of Ripped Flesh
+							i(109759),	-- Ro-Ger's Brown Diamond Seal
+							i(109776),	-- Seal of Resilient Fortitude
+							i(109781),	-- Seal of Vindication
+							i(109770),	-- Signet of Crashing Waves
+							i(109762),	-- Signet of Radiant Leaves
+							i(109780),	-- Signet of Shifting Magics
+							i(109778),	-- Signet of the Glorious Protector
+							i(109769),	-- Slicebinder Loop
+							i(109777),	-- Unsullied Signet
 						})),
 					}),
-					d(23, {		-- Mythic
+					d(23, {	-- Mythic
 						cr(75509, e(1139, {	-- Sadana Bloodfury
-							ig(44731),		-- Bouquet of Ebon Roses
+							ig(44731),	-- Bouquet of Ebon Roses
 							i(110035),	-- Sadana's Grisly Visage
+							i(109957),	-- Alc's Pendant of Fiery Dreams
+							i(109962),	-- Bloodmist Pendant
+							i(109959),	-- Chain of Soothing Light
+							i(109969),	-- Choker of Weeping Viscera
+							i(109955),	-- Demonbinder Cabochon
+							i(109951),	-- Fireblade Collar
+							i(109965),	-- Fistbreak Choker
+							i(109968),	-- Flesh Beetle Brooch
+							i(109963),	-- Goreclasp Choker
+							i(109958),	-- Healing Leaf Necklace
+							i(109954),	-- Magister's Chain
+							i(109956),	-- Necklace of Endless Shadow
+							i(109964),	-- Necklace of Furious Zeal
+							i(109967),	-- Necklace of Holy Deflection
+							i(109961),	-- Pendant of Purifying Mists
+							i(109966),	-- Reinforced Bloodsteel Gorget
+							i(109952),	-- Skulltooth Chain
+							i(109950),	-- Stormshot Choker
+							i(109960),	-- Wavesurge Choker
+							i(109953),	-- Windseal Necklace
 							i(109912),	-- Bloody-Blade Drape
 							i(109911),	-- Cape of Annealing Flesh
 							i(109908),	-- Cloak of Arcane Mysteries
@@ -397,6 +511,7 @@ _.Instances =
 							i(109873),	-- Sharpeye Bracers
 							i(109872),	-- Streamslither Bracers
 							i(109877),	-- Verdant Plate Wristguards
+							i(110007),	-- Voidmender's Shadowgem
 						})),
 						cr(75452, e(1140, {	-- Bonemaw
 							i(110037),	-- Bonetooth Longbow
@@ -440,6 +555,7 @@ _.Instances =
 							i(109834),	-- Sharpeye Belt
 							i(109833),	-- Streamslither Belt
 							i(109838),	-- Verdant Plate Belt
+							i(110012),	-- Bonemaw's Big Toe
 						})),
 						cr(76407, e(1160, {	-- Ner'zhul
 							i(138806),	-- Illusion: Mark of Shadowmoon
@@ -485,6 +601,31 @@ _.Instances =
 							i(109791),	-- Sharpeye Greaves
 							i(109790),	-- Streamslither Boots
 							i(109794),	-- Verdant Plate Treads
+							i(109779),	-- Ancient Draenic Loop
+							i(109768),	-- Band of Growing Leaves
+							i(109773),	-- Band of Iron Scale
+							i(109783),	-- Band of the Stalwart Stanchion
+							i(109775),	-- Bladebinder Ring
+							i(109771),	-- Bloodied Ring of Mytosis
+							i(109761),	-- Bloodthorn Band
+							i(109760),	-- Ced's Chiming Circle
+							i(109766),	-- Darkflame Loop
+							i(109763),	-- Diamondglow Circle
+							i(109782),	-- Disease-Binder Seal
+							i(109765),	-- Golem's Gleaming Eye
+							i(109772),	-- Knucklebone of Lo'Dronar
+							i(109764),	-- Mark of Ice
+							i(109767),	-- Ring of Purified Light
+							i(109774),	-- Ring of Ripped Flesh
+							i(109759),	-- Ro-Ger's Brown Diamond Seal
+							i(109776),	-- Seal of Resilient Fortitude
+							i(109781),	-- Seal of Vindication
+							i(109770),	-- Signet of Crashing Waves
+							i(109762),	-- Signet of Radiant Leaves
+							i(109780),	-- Signet of Shifting Magics
+							i(109778),	-- Signet of the Glorious Protector
+							i(109769),	-- Slicebinder Loop
+							i(109777),	-- Unsullied Signet
 						})),
 					}),
 				},

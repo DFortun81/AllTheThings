@@ -6,11 +6,10 @@ _.Instances =
 {
 	{ -- Warlords of Draenor
 		["groups"] = {
-			inst(558, { 	-- Iron Docks
+			inst(558, {	-- Iron Docks
 				["groups"] = {
-					d(1, {		-- Normal
+					d(1, {	-- Normal
 						["modID"] = 18,
-						
 						["groups"] = {
 							cr(81305, e(1235, {	-- Fleshrender Nok'gar
 								i(110055),	-- Gutwrench Goreaxe
@@ -34,6 +33,32 @@ _.Instances =
 								i(109888),	-- Sharpeye Chestguard
 								i(109887),	-- Streamslither Chestguard
 								i(109893),	-- Verdant Plate Chest
+								i(109779),	-- Ancient Draenic Loop
+								i(109768),	-- Band of Growing Leaves
+								i(109773),	-- Band of Iron Scale
+								i(109783),	-- Band of the Stalwart Stanchion
+								i(109775),	-- Bladebinder Ring
+								i(109771),	-- Bloodied Ring of Mytosis
+								i(109761),	-- Bloodthorn Band
+								i(109760),	-- Ced's Chiming Circle
+								i(109766),	-- Darkflame Loop
+								i(109763),	-- Diamondglow Circle
+								i(109782),	-- Disease-Binder Seal
+								i(109765),	-- Golem's Gleaming Eye
+								i(109772),	-- Knucklebone of Lo'Dronar
+								i(109764),	-- Mark of Ice
+								i(109767),	-- Ring of Purified Light
+								i(109774),	-- Ring of Ripped Flesh
+								i(109759),	-- Ro-Ger's Brown Diamond Seal
+								i(109776),	-- Seal of Resilient Fortitude
+								i(109781),	-- Seal of Vindication
+								i(109770),	-- Signet of Crashing Waves
+								i(109762),	-- Signet of Radiant Leaves
+								i(109780),	-- Signet of Shifting Magics
+								i(109778),	-- Signet of the Glorious Protector
+								i(109769),	-- Slicebinder Loop
+								i(109777),	-- Unsullied Signet
+								i(110002),	-- Fleshrender's Meathook
 							})),
 							cr(80816, e(1236, {	-- Grimrail Enforcers (Ahri'ok Dugru)
 								i(110056),	-- Black Iron Sniper Rifle
@@ -57,6 +82,27 @@ _.Instances =
 								i(109981),	-- Sharpeye Gleam
 								i(109980),	-- Streamslither Helm
 								i(109986),	-- Verdant Plate Crown
+								i(109957),	-- Alc's Pendant of Fiery Dreams
+								i(109962),	-- Bloodmist Pendant
+								i(109959),	-- Chain of Soothing Light
+								i(109969),	-- Choker of Weeping Viscera
+								i(109955),	-- Demonbinder Cabochon
+								i(109951),	-- Fireblade Collar
+								i(109965),	-- Fistbreak Choker
+								i(109968),	-- Flesh Beetle Brooch
+								i(109963),	-- Goreclasp Choker
+								i(109958),	-- Healing Leaf Necklace
+								i(109954),	-- Magister's Chain
+								i(109956),	-- Necklace of Endless Shadow
+								i(109964),	-- Necklace of Furious Zeal
+								i(109967),	-- Necklace of Holy Deflection
+								i(109961),	-- Pendant of Purifying Mists
+								i(109966),	-- Reinforced Bloodsteel Gorget
+								i(109952),	-- Skulltooth Chain
+								i(109950),	-- Stormshot Choker
+								i(109960),	-- Wavesurge Choker
+								i(109953),	-- Windseal Necklace
+								i(110017),	-- Enforcer's Stun Grenade
 							})),
 							cr(79852, e(1237, { -- Oshir
 								ig(21525), 	-- Green Winter Hat
@@ -101,6 +147,7 @@ _.Instances =
 								i(109834),	-- Sharpeye Belt
 								i(109833),	-- Streamslither Belt
 								i(109838),	-- Verdant Plate Belt
+								i(109997),	-- Kihra's Adrenaline Injector
 							})),
 							cr(83612, e(1238, {	-- Skulloc
 								i(110059),	-- Chasmwrench Docking Hook
@@ -169,8 +216,7 @@ _.Instances =
 							})),
 						},
 					}),
-					d(2, {		-- Heroic
-						
+					d(2, {	-- Heroic
 						["lvl"] = 100,
 						["groups"] = {
 							n(-17, {	-- Quests 		
@@ -200,6 +246,32 @@ _.Instances =
 								i(109888),	-- Sharpeye Chestguard
 								i(109887),	-- Streamslither Chestguard
 								i(109893),	-- Verdant Plate Chest
+								i(109779),	-- Ancient Draenic Loop
+								i(109768),	-- Band of Growing Leaves
+								i(109773),	-- Band of Iron Scale
+								i(109783),	-- Band of the Stalwart Stanchion
+								i(109775),	-- Bladebinder Ring
+								i(109771),	-- Bloodied Ring of Mytosis
+								i(109761),	-- Bloodthorn Band
+								i(109760),	-- Ced's Chiming Circle
+								i(109766),	-- Darkflame Loop
+								i(109763),	-- Diamondglow Circle
+								i(109782),	-- Disease-Binder Seal
+								i(109765),	-- Golem's Gleaming Eye
+								i(109772),	-- Knucklebone of Lo'Dronar
+								i(109764),	-- Mark of Ice
+								i(109767),	-- Ring of Purified Light
+								i(109774),	-- Ring of Ripped Flesh
+								i(109759),	-- Ro-Ger's Brown Diamond Seal
+								i(109776),	-- Seal of Resilient Fortitude
+								i(109781),	-- Seal of Vindication
+								i(109770),	-- Signet of Crashing Waves
+								i(109762),	-- Signet of Radiant Leaves
+								i(109780),	-- Signet of Shifting Magics
+								i(109778),	-- Signet of the Glorious Protector
+								i(109769),	-- Slicebinder Loop
+								i(109777),	-- Unsullied Signet
+								i(110002),	-- Fleshrender's Meathook
 							})),
 							cr(80816, e(1236, {	-- Grimrail Enforcers (Ahri'ok Dugru)
 								i(110056),	-- Black Iron Sniper Rifle
@@ -223,6 +295,27 @@ _.Instances =
 								i(109981),	-- Sharpeye Gleam
 								i(109980),	-- Streamslither Helm
 								i(109986),	-- Verdant Plate Crown
+								i(109957),	-- Alc's Pendant of Fiery Dreams
+								i(109962),	-- Bloodmist Pendant
+								i(109959),	-- Chain of Soothing Light
+								i(109969),	-- Choker of Weeping Viscera
+								i(109955),	-- Demonbinder Cabochon
+								i(109951),	-- Fireblade Collar
+								i(109965),	-- Fistbreak Choker
+								i(109968),	-- Flesh Beetle Brooch
+								i(109963),	-- Goreclasp Choker
+								i(109958),	-- Healing Leaf Necklace
+								i(109954),	-- Magister's Chain
+								i(109956),	-- Necklace of Endless Shadow
+								i(109964),	-- Necklace of Furious Zeal
+								i(109967),	-- Necklace of Holy Deflection
+								i(109961),	-- Pendant of Purifying Mists
+								i(109966),	-- Reinforced Bloodsteel Gorget
+								i(109952),	-- Skulltooth Chain
+								i(109950),	-- Stormshot Choker
+								i(109960),	-- Wavesurge Choker
+								i(109953),	-- Windseal Necklace
+								i(110017),	-- Enforcer's Stun Grenade
 							})),
 							cr(79852, e(1237, { -- Oshir
 								ig(21525), 	-- Green Winter Hat
@@ -267,6 +360,7 @@ _.Instances =
 								i(109834),	-- Sharpeye Belt
 								i(109833),	-- Streamslither Belt
 								i(109838),	-- Verdant Plate Belt
+								i(109997),	-- Kihra's Adrenaline Injector
 							})),
 							cr(83612, e(1238, {	-- Skulloc
 								i(110059),	-- Chasmwrench Docking Hook
@@ -335,8 +429,7 @@ _.Instances =
 							})),
 						},
 					}),
-					d(23, {		-- Mythic
-						
+					d(23, {	-- Mythic
 						["lvl"] = 100,
 						["groups"] = {
 							cr(81305, e(1235, {	-- Fleshrender Nok'gar
@@ -361,6 +454,32 @@ _.Instances =
 								i(109888),	-- Sharpeye Chestguard
 								i(109887),	-- Streamslither Chestguard
 								i(109893),	-- Verdant Plate Chest
+								i(109779),	-- Ancient Draenic Loop
+								i(109768),	-- Band of Growing Leaves
+								i(109773),	-- Band of Iron Scale
+								i(109783),	-- Band of the Stalwart Stanchion
+								i(109775),	-- Bladebinder Ring
+								i(109771),	-- Bloodied Ring of Mytosis
+								i(109761),	-- Bloodthorn Band
+								i(109760),	-- Ced's Chiming Circle
+								i(109766),	-- Darkflame Loop
+								i(109763),	-- Diamondglow Circle
+								i(109782),	-- Disease-Binder Seal
+								i(109765),	-- Golem's Gleaming Eye
+								i(109772),	-- Knucklebone of Lo'Dronar
+								i(109764),	-- Mark of Ice
+								i(109767),	-- Ring of Purified Light
+								i(109774),	-- Ring of Ripped Flesh
+								i(109759),	-- Ro-Ger's Brown Diamond Seal
+								i(109776),	-- Seal of Resilient Fortitude
+								i(109781),	-- Seal of Vindication
+								i(109770),	-- Signet of Crashing Waves
+								i(109762),	-- Signet of Radiant Leaves
+								i(109780),	-- Signet of Shifting Magics
+								i(109778),	-- Signet of the Glorious Protector
+								i(109769),	-- Slicebinder Loop
+								i(109777),	-- Unsullied Signet
+								i(110002),	-- Fleshrender's Meathook
 							})),
 							cr(80816, e(1236, {	-- Grimrail Enforcers (Ahri'ok Dugru)
 								i(110056),	-- Black Iron Sniper Rifle
@@ -384,6 +503,27 @@ _.Instances =
 								i(109981),	-- Sharpeye Gleam
 								i(109980),	-- Streamslither Helm
 								i(109986),	-- Verdant Plate Crown
+								i(109957),	-- Alc's Pendant of Fiery Dreams
+								i(109962),	-- Bloodmist Pendant
+								i(109959),	-- Chain of Soothing Light
+								i(109969),	-- Choker of Weeping Viscera
+								i(109955),	-- Demonbinder Cabochon
+								i(109951),	-- Fireblade Collar
+								i(109965),	-- Fistbreak Choker
+								i(109968),	-- Flesh Beetle Brooch
+								i(109963),	-- Goreclasp Choker
+								i(109958),	-- Healing Leaf Necklace
+								i(109954),	-- Magister's Chain
+								i(109956),	-- Necklace of Endless Shadow
+								i(109964),	-- Necklace of Furious Zeal
+								i(109967),	-- Necklace of Holy Deflection
+								i(109961),	-- Pendant of Purifying Mists
+								i(109966),	-- Reinforced Bloodsteel Gorget
+								i(109952),	-- Skulltooth Chain
+								i(109950),	-- Stormshot Choker
+								i(109960),	-- Wavesurge Choker
+								i(109953),	-- Windseal Necklace
+								i(110017),	-- Enforcer's Stun Grenade
 							})),
 							cr(79852, e(1237, { -- Oshir
 								ig(21525), 	-- Green Winter Hat
@@ -428,6 +568,7 @@ _.Instances =
 								i(109834),	-- Sharpeye Belt
 								i(109833),	-- Streamslither Belt
 								i(109838),	-- Verdant Plate Belt
+								i(109997),	-- Kihra's Adrenaline Injector
 							})),
 							cr(83612, e(1238, {	-- Skulloc
 								i(110059),	-- Chasmwrench Docking Hook

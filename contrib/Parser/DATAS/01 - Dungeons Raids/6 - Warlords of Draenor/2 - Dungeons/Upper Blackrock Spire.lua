@@ -4,12 +4,11 @@
 
 _.Instances = 
 {
-	{ -- Warlords of Draenor
+	{	-- Warlords of Draenor
 		["groups"] = {
-			inst(559, { 	-- Upper Blackrock Spire
+			inst(559, {	-- Upper Blackrock Spire
 				["groups"] = {
-					d(1, {		-- Normal
-						
+					d(1, {	-- Normal
 						["groups"] = {
 							cr(76413, e(1226, {	-- Orebender Gor'ashan
 								i(118719),	-- Petrified Willow
@@ -53,6 +52,7 @@ _.Instances =
 								i(109791),	-- Sharpeye Greaves
 								i(109790),	-- Streamslither Boots
 								i(109794),	-- Verdant Plate Treads
+								i(109998),	-- Gor'ashan's Lodestone Spike
 								un(3, i(118755)),	-- Dripping Willow [Only available during pre WoD level 90 version]
 							})),
 							cr(76021, e(1227, {	-- Kyrak
@@ -77,6 +77,32 @@ _.Instances =
 								i(109934),	-- Spaulders of Burning Focus
 								i(109939),	-- Streamslither Spaulders
 								i(109944),	-- Verdant Plate Spaulders
+								i(109779),	-- Ancient Draenic Loop
+								i(109768),	-- Band of Growing Leaves
+								i(109773),	-- Band of Iron Scale
+								i(109783),	-- Band of the Stalwart Stanchion
+								i(109775),	-- Bladebinder Ring
+								i(109771),	-- Bloodied Ring of Mytosis
+								i(109761),	-- Bloodthorn Band
+								i(109760),	-- Ced's Chiming Circle
+								i(109766),	-- Darkflame Loop
+								i(109763),	-- Diamondglow Circle
+								i(109782),	-- Disease-Binder Seal
+								i(109765),	-- Golem's Gleaming Eye
+								i(109772),	-- Knucklebone of Lo'Dronar
+								i(109764),	-- Mark of Ice
+								i(109767),	-- Ring of Purified Light
+								i(109774),	-- Ring of Ripped Flesh
+								i(109759),	-- Ro-Ger's Brown Diamond Seal
+								i(109776),	-- Seal of Resilient Fortitude
+								i(109781),	-- Seal of Vindication
+								i(109770),	-- Signet of Crashing Waves
+								i(109762),	-- Signet of Radiant Leaves
+								i(109780),	-- Signet of Shifting Magics
+								i(109778),	-- Signet of the Glorious Protector
+								i(109769),	-- Slicebinder Loop
+								i(109777),	-- Unsullied Signet
+								i(110018),	-- Kyrak's Vileblood Serum
 								un(3, i(118756)),	-- Finkle's Shanker [Only available during pre WoD level 90 version]
 							})),
 							cr(79912, e(1228, { -- Commander Tharbek
@@ -123,16 +149,37 @@ _.Instances =
 								i(109853),	-- Sharpeye Gauntlets
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
+								i(110008),	-- Tharbek's Lucky Pebble
 								un(3, i(118751)),	-- Nightbrace Chestguard [Only available during pre WoD level 90 version]
 								un(3, i(118754)),	-- Polychromatic Dreamwrap [Only available during pre WoD level 90 version]
 								un(3, i(118757)),	-- Tharbek's Terrible Charge [Only available during pre WoD level 90 version]
 								un(3, i(118758)),	-- Tharbek's Horrific Posessor [Only available during pre WoD level 90 version]
 							})),
-							n(77927, {	-- Son of the Beast
+							n(77927, {			-- Son of the Beast
 								i(120340),	-- Son of the Beast's Bloody Paw
 							}),
 							cr(76585, e(1229, {	-- Ragewing the Untamed
 								i(118737),	-- Blackhand Doomcutter
+								i(109957),	-- Alc's Pendant of Fiery Dreams
+								i(109962),	-- Bloodmist Pendant
+								i(109959),	-- Chain of Soothing Light
+								i(109969),	-- Choker of Weeping Viscera
+								i(109955),	-- Demonbinder Cabochon
+								i(109951),	-- Fireblade Collar
+								i(109965),	-- Fistbreak Choker
+								i(109968),	-- Flesh Beetle Brooch
+								i(109963),	-- Goreclasp Choker
+								i(109958),	-- Healing Leaf Necklace
+								i(109954),	-- Magister's Chain
+								i(109956),	-- Necklace of Endless Shadow
+								i(109964),	-- Necklace of Furious Zeal
+								i(109967),	-- Necklace of Holy Deflection
+								i(109961),	-- Pendant of Purifying Mists
+								i(109966),	-- Reinforced Bloodsteel Gorget
+								i(109952),	-- Skulltooth Chain
+								i(109950),	-- Stormshot Choker
+								i(109960),	-- Wavesurge Choker
+								i(109953),	-- Windseal Necklace
 								i(109823),	-- Blackwater Leggings
 								i(109810),	-- Bloodfeather Leggings
 								i(109811),	-- Crystalbinder Legwraps
@@ -153,6 +200,7 @@ _.Instances =
 								i(109813),	-- Streamslither Legguards
 								i(109804),	-- Trousers of Arcane Mystery
 								i(109819),	-- Verdant Plate Legguards
+								i(110003),	-- Ragewing's Firefang
 							})),
 							cr(77120, e(1234, {	-- Warlord Zaela
 								i(118740),	-- Bleakblade of Shahram
@@ -218,18 +266,18 @@ _.Instances =
 								i(109834),	-- Sharpeye Belt
 								i(109833),	-- Streamslither Belt
 								i(109838),	-- Verdant Plate Belt
+								i(110013),	-- Emberscale Talisman
 							})),
 						},
 					}),
-					d(2, {		-- Heroic
-						
+					d(2, {	-- Heroic
 						["groups"] = {
 							n(-17, {	-- Quests 
 								q(37179, {
 									i(118938), -- Manastorm's Duplicator ["isToy"] = True
 								}),	
 							}),	
-							cr(76413, e(1226, {	-- Orebender Gor'ashan
+							cr(76413, e(1226, {		-- Orebender Gor'ashan
 								i(118719),	-- Petrified Willow
 								i(109912),	-- Bloody-Blade Drape
 								i(109911),	-- Cloak of Annealing Flesh
@@ -271,8 +319,9 @@ _.Instances =
 								i(109791),	-- Sharpeye Greaves
 								i(109790),	-- Streamslither Boots
 								i(109794),	-- Verdant Plate Treads
+								i(109998),	-- Gor'ashan's Lodestone Spike
 							})),
-							cr(76021, e(1227, {	-- Kyrak
+							cr(76021, e(1227, {		-- Kyrak
 								i(118724),	-- Finkle's Flenser
 								i(109938),	-- Blackwater Spaulders
 								i(109935),	-- Bloodfeather Spaulders
@@ -294,11 +343,37 @@ _.Instances =
 								i(109934),	-- Spaulders of Burning Focus
 								i(109939),	-- Streamslither Spaulders
 								i(109944),	-- Verdant Plate Spaulders
+								i(109779),	-- Ancient Draenic Loop
+								i(109768),	-- Band of Growing Leaves
+								i(109773),	-- Band of Iron Scale
+								i(109783),	-- Band of the Stalwart Stanchion
+								i(109775),	-- Bladebinder Ring
+								i(109771),	-- Bloodied Ring of Mytosis
+								i(109761),	-- Bloodthorn Band
+								i(109760),	-- Ced's Chiming Circle
+								i(109766),	-- Darkflame Loop
+								i(109763),	-- Diamondglow Circle
+								i(109782),	-- Disease-Binder Seal
+								i(109765),	-- Golem's Gleaming Eye
+								i(109772),	-- Knucklebone of Lo'Dronar
+								i(109764),	-- Mark of Ice
+								i(109767),	-- Ring of Purified Light
+								i(109774),	-- Ring of Ripped Flesh
+								i(109759),	-- Ro-Ger's Brown Diamond Seal
+								i(109776),	-- Seal of Resilient Fortitude
+								i(109781),	-- Seal of Vindication
+								i(109770),	-- Signet of Crashing Waves
+								i(109762),	-- Signet of Radiant Leaves
+								i(109780),	-- Signet of Shifting Magics
+								i(109778),	-- Signet of the Glorious Protector
+								i(109769),	-- Slicebinder Loop
+								i(109777),	-- Unsullied Signet
+								i(110018),	-- Kyrak's Vileblood Serum
 							})),
 							model(53656, n(77081, { -- The Lanticore
 								i(117528), -- Lanticore Spawnling (PET!)
 							})),
-							cr(79912, e(1228, { -- Commander Tharbek
+							cr(79912, e(1228, {		-- Commander Tharbek
 								ig(21524),	-- Red Winter Hat
 								i(118726),	-- Tharbek's Brutal Possessor
 								i(118725),	-- Tharbek's Unholy Charge
@@ -342,12 +417,33 @@ _.Instances =
 								i(109853),	-- Sharpeye Gauntlets
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
+								i(110008),	-- Tharbek's Lucky Pebble
 							})),
-							n(77927, {	-- Son of the Beast
+							n(77927, {				-- Son of the Beast
 								i(120340),	-- Son of the Beast's Bloody Paw
 							}),
-							cr(76585, e(1229, {	-- Ragewing the Untamed
+							cr(76585, e(1229, {		-- Ragewing the Untamed
 								i(118737),	-- Blackhand Doomcutter
+								i(109957),	-- Alc's Pendant of Fiery Dreams
+								i(109962),	-- Bloodmist Pendant
+								i(109959),	-- Chain of Soothing Light
+								i(109969),	-- Choker of Weeping Viscera
+								i(109955),	-- Demonbinder Cabochon
+								i(109951),	-- Fireblade Collar
+								i(109965),	-- Fistbreak Choker
+								i(109968),	-- Flesh Beetle Brooch
+								i(109963),	-- Goreclasp Choker
+								i(109958),	-- Healing Leaf Necklace
+								i(109954),	-- Magister's Chain
+								i(109956),	-- Necklace of Endless Shadow
+								i(109964),	-- Necklace of Furious Zeal
+								i(109967),	-- Necklace of Holy Deflection
+								i(109961),	-- Pendant of Purifying Mists
+								i(109966),	-- Reinforced Bloodsteel Gorget
+								i(109952),	-- Skulltooth Chain
+								i(109950),	-- Stormshot Choker
+								i(109960),	-- Wavesurge Choker
+								i(109953),	-- Windseal Necklace
 								i(109823),	-- Blackwater Leggings
 								i(109810),	-- Bloodfeather Leggings
 								i(109811),	-- Crystalbinder Legwraps
@@ -368,8 +464,9 @@ _.Instances =
 								i(109813),	-- Streamslither Legguards
 								i(109804),	-- Trousers of Arcane Mystery
 								i(109819),	-- Verdant Plate Legguards
+								i(110003),	-- Ragewing's Firefang
 							})),
-							cr(77120, e(1234, {	-- Warlord Zaela
+							cr(77120, e(1234, {		-- Warlord Zaela
 								i(118740),	-- Bleakblade of Shahram
 								i(118738),	-- Felshanker
 								i(118739),	-- Draconian Doomshield
@@ -433,13 +530,13 @@ _.Instances =
 								i(109834),	-- Sharpeye Belt
 								i(109833),	-- Streamslither Belt
 								i(109838),	-- Verdant Plate Belt
+								i(110013),	-- Emberscale Talisman
 							})),
 						},
 					}),
-					d(23, {		-- Mythic
-						
+					d(23, {	-- Mythic
 						["groups"] = {
-							cr(76413, e(1226, {	-- Orebender Gor'ashan
+							cr(76413, e(1226, {		-- Orebender Gor'ashan
 								i(118719),	-- Petrified Willow
 								i(109912),	-- Bloody-Blade Drape
 								i(109911),	-- Cloak of Annealing Flesh
@@ -481,8 +578,9 @@ _.Instances =
 								i(109791),	-- Sharpeye Greaves
 								i(109790),	-- Streamslither Boots
 								i(109794),	-- Verdant Plate Treads
+								i(109998),	-- Gor'ashan's Lodestone Spike
 							})),
-							cr(76021, e(1227, {	-- Kyrak
+							cr(76021, e(1227, {		-- Kyrak
 								i(118724),	-- Finkle's Flenser
 								i(109938),	-- Blackwater Spaulders
 								i(109935),	-- Bloodfeather Spaulders
@@ -504,11 +602,37 @@ _.Instances =
 								i(109934),	-- Spaulders of Burning Focus
 								i(109939),	-- Streamslither Spaulders
 								i(109944),	-- Verdant Plate Spaulders
+								i(109779),	-- Ancient Draenic Loop
+								i(109768),	-- Band of Growing Leaves
+								i(109773),	-- Band of Iron Scale
+								i(109783),	-- Band of the Stalwart Stanchion
+								i(109775),	-- Bladebinder Ring
+								i(109771),	-- Bloodied Ring of Mytosis
+								i(109761),	-- Bloodthorn Band
+								i(109760),	-- Ced's Chiming Circle
+								i(109766),	-- Darkflame Loop
+								i(109763),	-- Diamondglow Circle
+								i(109782),	-- Disease-Binder Seal
+								i(109765),	-- Golem's Gleaming Eye
+								i(109772),	-- Knucklebone of Lo'Dronar
+								i(109764),	-- Mark of Ice
+								i(109767),	-- Ring of Purified Light
+								i(109774),	-- Ring of Ripped Flesh
+								i(109759),	-- Ro-Ger's Brown Diamond Seal
+								i(109776),	-- Seal of Resilient Fortitude
+								i(109781),	-- Seal of Vindication
+								i(109770),	-- Signet of Crashing Waves
+								i(109762),	-- Signet of Radiant Leaves
+								i(109780),	-- Signet of Shifting Magics
+								i(109778),	-- Signet of the Glorious Protector
+								i(109769),	-- Slicebinder Loop
+								i(109777),	-- Unsullied Signet
+								i(110018),	-- Kyrak's Vileblood Serum
 							})),
 							model(53656, n(77081, { -- The Lanticore
 								i(117528), -- Lanticore Spawnling (PET!)
 							})),
-							cr(79912, e(1228, { -- Commander Tharbek
+							cr(79912, e(1228, {		-- Commander Tharbek
 								ig(21524),	-- Red Winter Hat
 								i(118726),	-- Tharbek's Brutal Possessor
 								i(118725),	-- Tharbek's Unholy Charge
@@ -552,12 +676,33 @@ _.Instances =
 								i(109853),	-- Sharpeye Gauntlets
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
+								i(110008),	-- Tharbek's Lucky Pebble
 							})),
-							n(77927, {	-- Son of the Beast
+							n(77927, {				-- Son of the Beast
 								i(120340),	-- Son of the Beast's Bloody Paw
 							}),
-							cr(76585, e(1229, {	-- Ragewing the Untamed
+							cr(76585, e(1229, {		-- Ragewing the Untamed
 								i(118737),	-- Blackhand Doomcutter
+								i(109957),	-- Alc's Pendant of Fiery Dreams
+								i(109962),	-- Bloodmist Pendant
+								i(109959),	-- Chain of Soothing Light
+								i(109969),	-- Choker of Weeping Viscera
+								i(109955),	-- Demonbinder Cabochon
+								i(109951),	-- Fireblade Collar
+								i(109965),	-- Fistbreak Choker
+								i(109968),	-- Flesh Beetle Brooch
+								i(109963),	-- Goreclasp Choker
+								i(109958),	-- Healing Leaf Necklace
+								i(109954),	-- Magister's Chain
+								i(109956),	-- Necklace of Endless Shadow
+								i(109964),	-- Necklace of Furious Zeal
+								i(109967),	-- Necklace of Holy Deflection
+								i(109961),	-- Pendant of Purifying Mists
+								i(109966),	-- Reinforced Bloodsteel Gorget
+								i(109952),	-- Skulltooth Chain
+								i(109950),	-- Stormshot Choker
+								i(109960),	-- Wavesurge Choker
+								i(109953),	-- Windseal Necklace
 								i(109823),	-- Blackwater Leggings
 								i(109810),	-- Bloodfeather Leggings
 								i(109811),	-- Crystalbinder Legwraps
@@ -578,8 +723,9 @@ _.Instances =
 								i(109813),	-- Streamslither Legguards
 								i(109804),	-- Trousers of Arcane Mystery
 								i(109819),	-- Verdant Plate Legguards
+								i(110003),	-- Ragewing's Firefang
 							})),
-							cr(77120, e(1234, {	-- Warlord Zaela
+							cr(77120, e(1234, {		-- Warlord Zaela
 								i(118740),	-- Bleakblade of Shahram
 								i(118738),	-- Felshanker
 								i(118739),	-- Draconian Doomshield
@@ -643,6 +789,7 @@ _.Instances =
 								i(109834),	-- Sharpeye Belt
 								i(109833),	-- Streamslither Belt
 								i(109838),	-- Verdant Plate Belt
+								i(110013),	-- Emberscale Talisman
 							})),
 						},
 					}),

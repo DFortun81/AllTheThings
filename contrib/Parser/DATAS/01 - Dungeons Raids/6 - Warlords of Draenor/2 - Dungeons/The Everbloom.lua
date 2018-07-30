@@ -4,19 +4,18 @@
 
 _.Instances = 
 {
-	{ -- Warlords of Draenor
+	{	-- Warlords of Draenor
 		["groups"] = {
-			inst(556, { 	-- The Everbloom
+			inst(556, {	-- The Everbloom
 				["groups"] = {
-					d(1, {		-- Normal
-						
+					d(1, {	-- Normal
 						["groups"] = {
 							n(-17, {	-- Quests 			
 								q(37150, {
 									i(118921), -- Everbloom Peachick (PET!)
 								}),
 							}),	
-							cr(81522, e(1214, { -- Witherbark
+							cr(81522, e(1214, {	-- Witherbark
 								i(119175),	-- Leafhide Penetrator
 								i(109912),	-- Bloody-Blade Drape
 								i(109911),	-- Cloak of Annealing Flesh
@@ -58,6 +57,7 @@ _.Instances =
 								i(109853),	-- Sharpeye Gauntlets
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
+								i(109999),	-- Witherbark's Branch
 							})),
 							cr(83894, e(1207, { -- Ancient Protectors	(Dulhu; Life Warden Gola 83892, Earthshaper Telu 83893)
 								i(119176),	-- Interloper's Mossy Skull
@@ -101,6 +101,7 @@ _.Instances =
 								i(109813),	-- Streamslither Legguards
 								i(109804),	-- Trousers of Arcane Mystery
 								i(109819),	-- Verdant Plate Legguards
+								i(110009),	-- Leaf of the Ancient Protectors
 							})),
 							cr(84550, e(1209, { -- Xeri'tac
 								i(119173),	-- Dessicated Husk Shield
@@ -144,6 +145,7 @@ _.Instances =
 								i(109791),	-- Sharpeye Greaves
 								i(109790),	-- Streamslither Boots
 								i(109794),	-- Verdant Plate Treads
+								i(110019),	-- Xeri'tac's Unhatched Egg Sac
 							})),
 							cr(82682, e(1208, { -- Archmage Sol
 								i(119174),	-- Sol's Magestaff
@@ -187,9 +189,30 @@ _.Instances =
 								i(109873),	-- Sharpeye Bracers
 								i(109872),	-- Streamslither Bracers
 								i(109877),	-- Verdant Plate Wristguards
+								i(110014),	-- Spores of Alacrity
 							})),
 							cr(83846, e(1210, { -- Yalnu
 								i(119181),	-- Hoof of Yalnu
+								i(109957),	-- Alc's Pendant of Fiery Dreams
+								i(109962),	-- Bloodmist Pendant
+								i(109959),	-- Chain of Soothing Light
+								i(109969),	-- Choker of Weeping Viscera
+								i(109955),	-- Demonbinder Cabochon
+								i(109951),	-- Fireblade Collar
+								i(109965),	-- Fistbreak Choker
+								i(109968),	-- Flesh Beetle Brooch
+								i(109963),	-- Goreclasp Choker
+								i(109958),	-- Healing Leaf Necklace
+								i(109954),	-- Magister's Chain
+								i(109956),	-- Necklace of Endless Shadow
+								i(109964),	-- Necklace of Furious Zeal
+								i(109967),	-- Necklace of Holy Deflection
+								i(109961),	-- Pendant of Purifying Mists
+								i(109966),	-- Reinforced Bloodsteel Gorget
+								i(109952),	-- Skulltooth Chain
+								i(109950),	-- Stormshot Choker
+								i(109960),	-- Wavesurge Choker
+								i(109953),	-- Windseal Necklace
 								i(109938),	-- Blackwater Spaulders
 								i(109935),	-- Bloodfeather Spaulders
 								i(109936),	-- Crystalbinder Shoulderpads
@@ -210,18 +233,43 @@ _.Instances =
 								i(109934),	-- Spaulders of Burning Focus
 								i(109939),	-- Streamslither Spaulders
 								i(109944),	-- Verdant Plate Spaulders
+								i(109779),	-- Ancient Draenic Loop
+								i(109768),	-- Band of Growing Leaves
+								i(109773),	-- Band of Iron Scale
+								i(109783),	-- Band of the Stalwart Stanchion
+								i(109775),	-- Bladebinder Ring
+								i(109771),	-- Bloodied Ring of Mytosis
+								i(109761),	-- Bloodthorn Band
+								i(109760),	-- Ced's Chiming Circle
+								i(109766),	-- Darkflame Loop
+								i(109763),	-- Diamondglow Circle
+								i(109782),	-- Disease-Binder Seal
+								i(109765),	-- Golem's Gleaming Eye
+								i(109772),	-- Knucklebone of Lo'Dronar
+								i(109764),	-- Mark of Ice
+								i(109767),	-- Ring of Purified Light
+								i(109774),	-- Ring of Ripped Flesh
+								i(109759),	-- Ro-Ger's Brown Diamond Seal
+								i(109776),	-- Seal of Resilient Fortitude
+								i(109781),	-- Seal of Vindication
+								i(109770),	-- Signet of Crashing Waves
+								i(109762),	-- Signet of Radiant Leaves
+								i(109780),	-- Signet of Shifting Magics
+								i(109778),	-- Signet of the Glorious Protector
+								i(109769),	-- Slicebinder Loop
+								i(109777),	-- Unsullied Signet
+								i(110004),	-- Coagulated Genesaur Blood
 							})),
 						},
 					}),
-					d(2, {		-- Heroic
-						
+					d(2, {	-- Heroic
 						["groups"] = {
 							n(-17, {	-- Quests 		
 								q(37165, {
 									i(118935), -- Ever-Blooming Frond ["isToy"] = True
 								}),	
 							}),	
-							cr(81522, e(1214, { -- Witherbark
+							cr(81522, e(1214, {	-- Witherbark
 								i(119175),	-- Leafhide Penetrator
 								i(109912),	-- Bloody-Blade Drape
 								i(109911),	-- Cloak of Annealing Flesh
@@ -263,6 +311,7 @@ _.Instances =
 								i(109853),	-- Sharpeye Gauntlets
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
+								i(109999),	-- Witherbark's Branch
 							})),
 							cr(83894, e(1207, { -- Ancient Protectors	(Dulhu; Life Warden Gola 83892, Earthshaper Telu 83893)
 								i(119176),	-- Interloper's Mossy Skull
@@ -306,6 +355,7 @@ _.Instances =
 								i(109813),	-- Streamslither Legguards
 								i(109804),	-- Trousers of Arcane Mystery
 								i(109819),	-- Verdant Plate Legguards
+								i(110009),	-- Leaf of the Ancient Protectors
 							})),
 							cr(84550, e(1209, { -- Xeri'tac
 								i(119173),	-- Dessicated Husk Shield
@@ -349,6 +399,7 @@ _.Instances =
 								i(109791),	-- Sharpeye Greaves
 								i(109790),	-- Streamslither Boots
 								i(109794),	-- Verdant Plate Treads
+								i(110019),	-- Xeri'tac's Unhatched Egg Sac
 							})),
 							cr(82682, e(1208, { -- Archmage Sol
 								i(119174),	-- Sol's Magestaff
@@ -392,9 +443,30 @@ _.Instances =
 								i(109873),	-- Sharpeye Bracers
 								i(109872),	-- Streamslither Bracers
 								i(109877),	-- Verdant Plate Wristguards
+								i(110014),	-- Spores of Alacrity
 							})),
 							cr(83846, e(1210, { -- Yalnu
 								i(119181),	-- Hoof of Yalnu
+								i(109957),	-- Alc's Pendant of Fiery Dreams
+								i(109962),	-- Bloodmist Pendant
+								i(109959),	-- Chain of Soothing Light
+								i(109969),	-- Choker of Weeping Viscera
+								i(109955),	-- Demonbinder Cabochon
+								i(109951),	-- Fireblade Collar
+								i(109965),	-- Fistbreak Choker
+								i(109968),	-- Flesh Beetle Brooch
+								i(109963),	-- Goreclasp Choker
+								i(109958),	-- Healing Leaf Necklace
+								i(109954),	-- Magister's Chain
+								i(109956),	-- Necklace of Endless Shadow
+								i(109964),	-- Necklace of Furious Zeal
+								i(109967),	-- Necklace of Holy Deflection
+								i(109961),	-- Pendant of Purifying Mists
+								i(109966),	-- Reinforced Bloodsteel Gorget
+								i(109952),	-- Skulltooth Chain
+								i(109950),	-- Stormshot Choker
+								i(109960),	-- Wavesurge Choker
+								i(109953),	-- Windseal Necklace
 								i(109938),	-- Blackwater Spaulders
 								i(109935),	-- Bloodfeather Spaulders
 								i(109936),	-- Crystalbinder Shoulderpads
@@ -415,11 +487,36 @@ _.Instances =
 								i(109934),	-- Spaulders of Burning Focus
 								i(109939),	-- Streamslither Spaulders
 								i(109944),	-- Verdant Plate Spaulders
+								i(109779),	-- Ancient Draenic Loop
+								i(109768),	-- Band of Growing Leaves
+								i(109773),	-- Band of Iron Scale
+								i(109783),	-- Band of the Stalwart Stanchion
+								i(109775),	-- Bladebinder Ring
+								i(109771),	-- Bloodied Ring of Mytosis
+								i(109761),	-- Bloodthorn Band
+								i(109760),	-- Ced's Chiming Circle
+								i(109766),	-- Darkflame Loop
+								i(109763),	-- Diamondglow Circle
+								i(109782),	-- Disease-Binder Seal
+								i(109765),	-- Golem's Gleaming Eye
+								i(109772),	-- Knucklebone of Lo'Dronar
+								i(109764),	-- Mark of Ice
+								i(109767),	-- Ring of Purified Light
+								i(109774),	-- Ring of Ripped Flesh
+								i(109759),	-- Ro-Ger's Brown Diamond Seal
+								i(109776),	-- Seal of Resilient Fortitude
+								i(109781),	-- Seal of Vindication
+								i(109770),	-- Signet of Crashing Waves
+								i(109762),	-- Signet of Radiant Leaves
+								i(109780),	-- Signet of Shifting Magics
+								i(109778),	-- Signet of the Glorious Protector
+								i(109769),	-- Slicebinder Loop
+								i(109777),	-- Unsullied Signet
+								i(110004),	-- Coagulated Genesaur Blood
 							})),
 						},
 					}),
-					d(23, {		-- Mythic
-						
+					d(23, {	-- Mythic
 						["groups"] = {
 							cr(81522, e(1214, { -- Witherbark
 								i(119175),	-- Leafhide Penetrator
@@ -463,6 +560,7 @@ _.Instances =
 								i(109853),	-- Sharpeye Gauntlets
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
+								i(109999),	-- Witherbark's Branch
 							})),
 							cr(83894, e(1207, { -- Ancient Protectors	(Dulhu; Life Warden Gola 83892, Earthshaper Telu 83893)
 								i(119176),	-- Interloper's Mossy Skull
@@ -506,6 +604,7 @@ _.Instances =
 								i(109813),	-- Streamslither Legguards
 								i(109804),	-- Trousers of Arcane Mystery
 								i(109819),	-- Verdant Plate Legguards
+								i(110009),	-- Leaf of the Ancient Protectors
 							})),
 							cr(84550, e(1209, { -- Xeri'tac
 								i(119173),	-- Dessicated Husk Shield
@@ -549,6 +648,7 @@ _.Instances =
 								i(109791),	-- Sharpeye Greaves
 								i(109790),	-- Streamslither Boots
 								i(109794),	-- Verdant Plate Treads
+								i(110019),	-- Xeri'tac's Unhatched Egg Sac
 							})),
 							cr(82682, e(1208, { -- Archmage Sol
 								i(119174),	-- Sol's Magestaff
@@ -592,9 +692,30 @@ _.Instances =
 								i(109873),	-- Sharpeye Bracers
 								i(109872),	-- Streamslither Bracers
 								i(109877),	-- Verdant Plate Wristguards
+								i(110014),	-- Spores of Alacrity
 							})),
 							cr(83846, e(1210, { -- Yalnu
 								i(119181),	-- Hoof of Yalnu
+								i(109957),	-- Alc's Pendant of Fiery Dreams
+								i(109962),	-- Bloodmist Pendant
+								i(109959),	-- Chain of Soothing Light
+								i(109969),	-- Choker of Weeping Viscera
+								i(109955),	-- Demonbinder Cabochon
+								i(109951),	-- Fireblade Collar
+								i(109965),	-- Fistbreak Choker
+								i(109968),	-- Flesh Beetle Brooch
+								i(109963),	-- Goreclasp Choker
+								i(109958),	-- Healing Leaf Necklace
+								i(109954),	-- Magister's Chain
+								i(109956),	-- Necklace of Endless Shadow
+								i(109964),	-- Necklace of Furious Zeal
+								i(109967),	-- Necklace of Holy Deflection
+								i(109961),	-- Pendant of Purifying Mists
+								i(109966),	-- Reinforced Bloodsteel Gorget
+								i(109952),	-- Skulltooth Chain
+								i(109950),	-- Stormshot Choker
+								i(109960),	-- Wavesurge Choker
+								i(109953),	-- Windseal Necklace
 								i(109938),	-- Blackwater Spaulders
 								i(109935),	-- Bloodfeather Spaulders
 								i(109936),	-- Crystalbinder Shoulderpads
@@ -615,6 +736,32 @@ _.Instances =
 								i(109934),	-- Spaulders of Burning Focus
 								i(109939),	-- Streamslither Spaulders
 								i(109944),	-- Verdant Plate Spaulders
+								i(109779),	-- Ancient Draenic Loop
+								i(109768),	-- Band of Growing Leaves
+								i(109773),	-- Band of Iron Scale
+								i(109783),	-- Band of the Stalwart Stanchion
+								i(109775),	-- Bladebinder Ring
+								i(109771),	-- Bloodied Ring of Mytosis
+								i(109761),	-- Bloodthorn Band
+								i(109760),	-- Ced's Chiming Circle
+								i(109766),	-- Darkflame Loop
+								i(109763),	-- Diamondglow Circle
+								i(109782),	-- Disease-Binder Seal
+								i(109765),	-- Golem's Gleaming Eye
+								i(109772),	-- Knucklebone of Lo'Dronar
+								i(109764),	-- Mark of Ice
+								i(109767),	-- Ring of Purified Light
+								i(109774),	-- Ring of Ripped Flesh
+								i(109759),	-- Ro-Ger's Brown Diamond Seal
+								i(109776),	-- Seal of Resilient Fortitude
+								i(109781),	-- Seal of Vindication
+								i(109770),	-- Signet of Crashing Waves
+								i(109762),	-- Signet of Radiant Leaves
+								i(109780),	-- Signet of Shifting Magics
+								i(109778),	-- Signet of the Glorious Protector
+								i(109769),	-- Slicebinder Loop
+								i(109777),	-- Unsullied Signet
+								i(110004),	-- Coagulated Genesaur Blood
 							})),
 						},
 					}),

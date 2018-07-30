@@ -4,20 +4,20 @@
 
 _.Instances = 
 {
-	{ -- Warlords of Draenor
+	{	-- Warlords of Draenor
 		["groups"] = {
-			inst(385, { 	-- Bloodmaul Slag Mines
+			inst(385, {	-- Bloodmaul Slag Mines
 				["groups"] = {
-					d(1, {		-- Normal
+					d(1, {	-- Normal
 						["modID"] = 17,
 						
 						["groups"] = {
 							n(-17, {	-- Quests 						
 								q(37152, {
-									i(119083),  -- Fruit Basket Toy ["isToy"] = True
+									i(119083), 	-- Fruit Basket Toy ["isToy"] = True
 								}),
 							}),
-							cr(74787, e(888, { -- Slave Watcher Crushto
+							cr(74787, e(888, {	-- Slave Watcher Crushto
 								i(110040),	-- Crushto's Neck Separator
 								i(109939),	-- Streamslither Spaulders								
 								i(109882),	-- Blackwater Wristguards
@@ -60,8 +60,9 @@ _.Instances =
 								i(109813),	-- Streamslither Legguards
 								i(109804),	-- Trousers of Arcane Mystery
 								i(109819),	-- Verdant Plate Legguards
+								i(110000),	-- Crushto's Runic Alarm
 							})),
-							cr(74475, e(893, { -- Magmolatus (Forgemaster Gog'duh 74366)
+							cr(74475, e(893, {	-- Magmolatus (Forgemaster Gog'duh 74366)
 								i(109898),	-- Blackwater Wrap
 								i(109885),	-- Bloodfeather Chestwrap
 								i(109884),	-- Chestguard of Burning Focus
@@ -103,7 +104,7 @@ _.Instances =
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
 							})),
-							cr(75786, e(887, { -- Roltall
+							cr(75786, e(887, {	-- Roltall
 								i(110041),	-- Roltall's Brutal Crescent
 								i(109912),	-- Bloody-Blade Drape
 								i(109911),	-- Cloak of Annealing Flesh
@@ -144,9 +145,10 @@ _.Instances =
 								i(109786),	-- Sandals of Swirling Light
 								i(109791),	-- Sharpeye Greaves
 								i(109790),	-- Streamslither Boots
-								i(109794),	-- Verdant Plate Treads								
+								i(109794),	-- Verdant Plate Treads
+								i(110015),	-- Toria's Unseeing Eye
 							})),
-							cr(74790, e(889, { -- Gug'rokk
+							cr(74790, e(889, {	-- Gug'rokk
 								ig(21524),	-- Red Winter Hat
 								i(110042),	-- Gug'rokk's Smasher
 								i(110044),	-- Ogre Dinner Plate
@@ -191,14 +193,39 @@ _.Instances =
 								i(109934),	-- Spaulders of Burning Focus
 								i(109939),	-- Streamslither Spaulders
 								i(109944),	-- Verdant Plate Spaulders
+								i(109779),	-- Ancient Draenic Loop
+								i(109768),	-- Band of Growing Leaves
+								i(109773),	-- Band of Iron Scale
+								i(109783),	-- Band of the Stalwart Stanchion
+								i(109775),	-- Bladebinder Ring
+								i(109771),	-- Bloodied Ring of Mytosis
+								i(109761),	-- Bloodthorn Band
+								i(109760),	-- Ced's Chiming Circle
+								i(109766),	-- Darkflame Loop
+								i(109763),	-- Diamondglow Circle
+								i(109782),	-- Disease-Binder Seal
+								i(109765),	-- Golem's Gleaming Eye
+								i(109772),	-- Knucklebone of Lo'Dronar
+								i(109764),	-- Mark of Ice
+								i(109767),	-- Ring of Purified Light
+								i(109774),	-- Ring of Ripped Flesh
+								i(109759),	-- Ro-Ger's Brown Diamond Seal
+								i(109776),	-- Seal of Resilient Fortitude
+								i(109781),	-- Seal of Vindication
+								i(109770),	-- Signet of Crashing Waves
+								i(109762),	-- Signet of Radiant Leaves
+								i(109780),	-- Signet of Shifting Magics
+								i(109778),	-- Signet of the Glorious Protector
+								i(109769),	-- Slicebinder Loop
+								i(109777),	-- Unsullied Signet
 							})),
 						},
 					}),
-					d(2, {		-- Heroic
+					d(2, {	-- Heroic
 						
 						["lvl"] = 100,
 						["groups"] = {
-							cr(74787, e(888, { -- Slave Watcher Crushto
+							cr(74787, e(888, {	-- Slave Watcher Crushto
 								i(110040),	-- Crushto's Neck Separator
 								i(109939),	-- Streamslither Spaulders								
 								i(109882),	-- Blackwater Wristguards
@@ -241,8 +268,9 @@ _.Instances =
 								i(109813),	-- Streamslither Legguards
 								i(109804),	-- Trousers of Arcane Mystery
 								i(109819),	-- Verdant Plate Legguards
+								i(110000),	-- Crushto's Runic Alarm
 							})),
-							cr(74475, e(893, { -- Magmolatus (Forgemaster Gog'duh 74366)
+							cr(74475, e(893, {	-- Magmolatus (Forgemaster Gog'duh 74366)
 								i(109898),	-- Blackwater Wrap
 								i(109885),	-- Bloodfeather Chestwrap
 								i(109884),	-- Chestguard of Burning Focus
@@ -284,7 +312,7 @@ _.Instances =
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
 							})),
-							cr(75786, e(887, { -- Roltall
+							cr(75786, e(887, {	-- Roltall
 								i(110041),	-- Roltall's Brutal Crescent
 								i(109912),	-- Bloody-Blade Drape
 								i(109911),	-- Cloak of Annealing Flesh
@@ -326,8 +354,9 @@ _.Instances =
 								i(109791),	-- Sharpeye Greaves
 								i(109790),	-- Streamslither Boots
 								i(109794),	-- Verdant Plate Treads
+								i(110015),	-- Toria's Unseeing Eye
 							})),
-							cr(74790, e(889, { -- Gug'rokk
+							cr(74790, e(889, {	-- Gug'rokk
 								ig(21524),	-- Red Winter Hat
 								i(110042),	-- Gug'rokk's Smasher
 								i(110044),	-- Ogre Dinner Plate
@@ -372,14 +401,39 @@ _.Instances =
 								i(109934),	-- Spaulders of Burning Focus
 								i(109939),	-- Streamslither Spaulders
 								i(109944),	-- Verdant Plate Spaulders
+								i(109779),	-- Ancient Draenic Loop
+								i(109768),	-- Band of Growing Leaves
+								i(109773),	-- Band of Iron Scale
+								i(109783),	-- Band of the Stalwart Stanchion
+								i(109775),	-- Bladebinder Ring
+								i(109771),	-- Bloodied Ring of Mytosis
+								i(109761),	-- Bloodthorn Band
+								i(109760),	-- Ced's Chiming Circle
+								i(109766),	-- Darkflame Loop
+								i(109763),	-- Diamondglow Circle
+								i(109782),	-- Disease-Binder Seal
+								i(109765),	-- Golem's Gleaming Eye
+								i(109772),	-- Knucklebone of Lo'Dronar
+								i(109764),	-- Mark of Ice
+								i(109767),	-- Ring of Purified Light
+								i(109774),	-- Ring of Ripped Flesh
+								i(109759),	-- Ro-Ger's Brown Diamond Seal
+								i(109776),	-- Seal of Resilient Fortitude
+								i(109781),	-- Seal of Vindication
+								i(109770),	-- Signet of Crashing Waves
+								i(109762),	-- Signet of Radiant Leaves
+								i(109780),	-- Signet of Shifting Magics
+								i(109778),	-- Signet of the Glorious Protector
+								i(109769),	-- Slicebinder Loop
+								i(109777),	-- Unsullied Signet
 							})),
 						},
 					}),
-					d(23, {		-- Mythic
+					d(23, {	-- Mythic
 						
 						["lvl"] = 100,
 						["groups"] = {
-							cr(74787, e(888, { -- Slave Watcher Crushto
+							cr(74787, e(888, {	-- Slave Watcher Crushto
 								i(110040),	-- Crushto's Neck Separator
 								i(109939),	-- Streamslither Spaulders								
 								i(109882),	-- Blackwater Wristguards
@@ -422,8 +476,9 @@ _.Instances =
 								i(109813),	-- Streamslither Legguards
 								i(109804),	-- Trousers of Arcane Mystery
 								i(109819),	-- Verdant Plate Legguards
+								i(110000),	-- Crushto's Runic Alarm
 							})),
-							cr(74475, e(893, { -- Magmolatus (Forgemaster Gog'duh 74366)
+							cr(74475, e(893, {	-- Magmolatus (Forgemaster Gog'duh 74366)
 								i(109898),	-- Blackwater Wrap
 								i(109885),	-- Bloodfeather Chestwrap
 								i(109884),	-- Chestguard of Burning Focus
@@ -465,7 +520,7 @@ _.Instances =
 								i(109852),	-- Streamslither Gauntlets
 								i(109857),	-- Verdant Plate Grips
 							})),
-							cr(75786, e(887, { -- Roltall
+							cr(75786, e(887, {	-- Roltall
 								i(110041),	-- Roltall's Brutal Crescent
 								i(109912),	-- Bloody-Blade Drape
 								i(109911),	-- Cloak of Annealing Flesh
@@ -507,8 +562,9 @@ _.Instances =
 								i(109791),	-- Sharpeye Greaves
 								i(109790),	-- Streamslither Boots
 								i(109794),	-- Verdant Plate Treads
+								i(110015),	-- Toria's Unseeing Eye
 							})),
-							cr(74790, e(889, { -- Gug'rokk
+							cr(74790, e(889, {	-- Gug'rokk
 								ig(21524),	-- Red Winter Hat
 								i(110042),	-- Gug'rokk's Smasher
 								i(110044),	-- Ogre Dinner Plate
@@ -553,6 +609,31 @@ _.Instances =
 								i(109934),	-- Spaulders of Burning Focus
 								i(109939),	-- Streamslither Spaulders
 								i(109944),	-- Verdant Plate Spaulders
+								i(109779),	-- Ancient Draenic Loop
+								i(109768),	-- Band of Growing Leaves
+								i(109773),	-- Band of Iron Scale
+								i(109783),	-- Band of the Stalwart Stanchion
+								i(109775),	-- Bladebinder Ring
+								i(109771),	-- Bloodied Ring of Mytosis
+								i(109761),	-- Bloodthorn Band
+								i(109760),	-- Ced's Chiming Circle
+								i(109766),	-- Darkflame Loop
+								i(109763),	-- Diamondglow Circle
+								i(109782),	-- Disease-Binder Seal
+								i(109765),	-- Golem's Gleaming Eye
+								i(109772),	-- Knucklebone of Lo'Dronar
+								i(109764),	-- Mark of Ice
+								i(109767),	-- Ring of Purified Light
+								i(109774),	-- Ring of Ripped Flesh
+								i(109759),	-- Ro-Ger's Brown Diamond Seal
+								i(109776),	-- Seal of Resilient Fortitude
+								i(109781),	-- Seal of Vindication
+								i(109770),	-- Signet of Crashing Waves
+								i(109762),	-- Signet of Radiant Leaves
+								i(109780),	-- Signet of Shifting Magics
+								i(109778),	-- Signet of the Glorious Protector
+								i(109769),	-- Slicebinder Loop
+								i(109777),	-- Unsullied Signet
 							})),
 						},
 					}),
