@@ -1962,7 +1962,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						}),				
 					},					
 				}),		
-				n(-373, { -- 25 Player
+				n(-373, { -- 25 Player [Resort at a later date]
 					["groups"] = {
 						gs(362, { -- Valorous Regalia of Faith
 							["groups"] = {
@@ -2072,6 +2072,121 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 								i(40503),	-- Valorous Cryptstalker Tunic
 							},
 							["classes"] = { 3 },	
+						}),
+						gs(645, { -- Valorous Earthshatter Regalia
+							["groups"] = {
+								n(-9939, {	-- Elemental	
+									i(40516),	-- Valorous Earthshatter Helm
+									i(40518),	-- Valorous Earthshatter Shoulderpads
+									i(40514),	-- Valorous Earthshatter Hauberk
+									i(40324),	-- Bands of Mutual Respect
+									i(40515),	-- Valorous Earthshatter Gloves
+									i(40272),	-- Girdle of the Gambit
+									i(40517),	-- Valorous Earthshatter Kilt
+									i(39734),	-- Atonement Greaves
+								}),		
+								n(-9940, {	-- Enhancement	
+									i(40521),	-- Valorous Earthshatter Faceguard
+									i(40524),	-- Valorous Earthshatter Shoulderguards
+									i(40523),	-- Valorous Earthshatter Chestguard
+									i(40209),	-- Bindings of the Decrepit
+									i(40520),	-- Valorous Earthshatter Grips
+									i(40327),	-- Girdle of Recuperation
+									i(40522),	-- Valorous Earthshatter War-Kilt
+									i(40747),	-- Treads of Coastal Wandering
+								}),		
+								n(-9941, {	-- Restoration	
+									i(40510),	-- Valorous Earthshatter Headpiece
+									i(40513),	-- Valorous Earthshatter Spaulders
+									i(40508),	-- Valorous Earthshatter Tunic
+									i(40324),	-- Bands of Mutual Respect
+									i(40509),	-- Valorous Earthshatter Handguards
+									i(40272),	-- Girdle of the Gambit
+									i(40512),	-- Valorous Earthshatter Legguards
+									i(39734),	-- Atonement Greaves
+								}),	
+							},
+							["classes"] = { 7 },
+						}),
+						gs(711, { -- Valorous Redeemption Plate
+							["groups"] = {
+								n(-9942, {	-- Holy	
+									i(40571),	-- Valorous Redemption Headpiece
+									i(40573),	-- Valorous Redemption Spaulders
+									i(40569),	-- Valorous Redemption Tunic
+									i(40274),	-- Bracers of Liberation
+									i(40570),	-- Valorous Redemption Gloves
+									i(40241),	-- Girdle of Unity
+									i(40572),	-- Valorous Redemption Greaves
+									i(40320),	-- Faithful Steel Sabatons
+								}),		
+								n(-9943, {	-- Protection	
+									i(40581),	-- Valorous Redemption Faceguard
+									i(40584),	-- Valorous Redemption Shoulderguards
+									i(40579),	-- Valorous Redemption Breastplate
+									i(40332),	-- Abetment Bracers
+									i(40580),	-- Valorous Redemption Handguards
+									i(40259),	-- Waistguard of Divine Grace
+									i(40583),	-- Valorous Redemption Legguards
+									i(40745),	-- Sabatons of Rapid Recovery
+								}),		
+								n(-9944, {	-- Retribution	
+									i(40576),	-- Valorous Redemption Helm
+									i(40578),	-- Valorous Redemption Shoulderplates
+									i(40574),	-- Valorous Redemption Chestpiece
+									i(40259),	-- Waistguard of Divine Grace
+									i(40577),	-- Valorous Redemption Legplates
+									i(40187),	-- Poignant Sabatons
+									i(40332),	-- Abetment Bracers
+									i(40575),	-- Valorous Redemption Gauntlets
+								}),	
+							},
+							["classes"] = { 2 },		
+						}),
+						gs(662, { -- Valorous Dreadnaught Battlegear
+							["groups"] = {
+								n(-9953, {	-- Arms / Fury Warrior Spec	
+									i(40528),	-- Valorous Dreadnaught Helmet
+									i(40530),	-- Valorous Dreadnaught Shoulderplates
+									i(39764),	-- Bindings of the Hapless Prey
+									i(40527),	-- Valorous Dreadnaught Gauntlets
+									i(40263),	-- Fleshless Girdle
+									i(40529),	-- Valorous Dreadnaught Legplates
+									i(40297),	-- Sabatons of Endurance
+								}),		
+								n(-9947, {	-- Protection	
+									i(40546),	-- Valorous Dreadnaught Greathelm
+									i(40548),	-- Valorous Dreadnaught Pauldrons
+									i(40544),	-- Valorous Dreadnaught Breastplate
+									i(39729),	-- Bracers of the Tyrant
+									i(40545),	-- Valorous Dreadnaught Handguards
+									i(40278),	-- Girdle of Chivalry
+									i(40547),	-- Valorous Dreadnaught Legguards
+									i(39706),	-- Sabatons of Sudden Reprisal
+								}),	
+							},
+							["classes"] = { 1 },	
+						}),
+						gs(846, { -- Valorous Scourgeborne Plate
+							["groups"] = {
+								n(-9948, {	-- Blood	
+									i(40565),	-- Valorous Scourgeborne Faceguard
+									i(40568),	-- Valorous Scourgeborne Pauldrons
+									i(40559),	-- Valorous Scourgeborne Chestguard
+									i(40563),	-- Valorous Scourgeborne Handguards
+									i(40567),	-- Valorous Scourgeborne Legguards
+									i(40742),	-- Bladed Steelboots
+								}),		
+								n(-9954, {	-- Frost / Unholy	
+									i(40554),	-- Valorous Scourgeborne Helmet
+									i(40557),	-- Valorous Scourgeborne Shoulderplates
+									i(40550),	-- Valorous Scourgeborne Battleplate
+									i(40552),	-- Valorous Scourgeborne Gauntlets
+									i(40556),	-- Valorous Scourgeborne Legplates
+									i(40742),	-- Bladed Steelboots
+								}),	
+							},
+							["classes"] = { 6 },
 						}),
 					},
 				}),
