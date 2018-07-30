@@ -1908,11 +1908,12 @@ local function OpenMiniList(field, id, label)
 			end
 			
 			if field == "mapID" and #results > 1 and not header.mapID then
+				if not header.mapID then header.mapID = id; end
 				local count = #header.g;
 				local ins = {};
 				for i=count,1,-1 do
 					local group = header.g[i];
-					if group.mapID then
+					if group.mapID or group.maps then
 						header.text = group.text;
 						header.icon = group.icon;
 						for key,value in pairs(group) do
