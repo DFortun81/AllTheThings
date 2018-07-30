@@ -1908,7 +1908,10 @@ local function OpenMiniList(field, id, label)
 			end
 			
 			if field == "mapID" and #results > 1 and not header.mapID then
-				for i, group in ipairs(header.g) do
+				local count = #header.g;
+				local ins = {};
+				for i=count,1,-1 do
+					local group = header.g[i];
 					if group.mapID then
 						header.text = group.text;
 						header.icon = group.icon;
@@ -1918,12 +1921,12 @@ local function OpenMiniList(field, id, label)
 							end
 						end
 						table.remove(header.g, i);
-						if group.g then
-							for j,subgroup in ipairs(group.g) do
-								tinsert(header.g, subgroup);
-							end
-						end
-						break;
+						if group.g then tinsert(ins, group.g); end
+					end
+				end
+				for i=#ins,1,-1 do
+					for j,subgroup in ipairs(ins[i]) do
+						tinsert(header.g, subgroup);
 					end
 				end
 				setmetatable(header,
