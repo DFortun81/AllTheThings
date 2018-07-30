@@ -1911,9 +1911,9 @@ local function OpenMiniList(field, id, label)
 				if not header.mapID then header.mapID = id; end
 				local count = #header.g;
 				local ins = {};
-				for i=count,1,-1 do
+				for i=1,count,1 do
 					local group = header.g[i];
-					if group.mapID or group.maps then
+					if group.mapID then
 						header.text = group.text;
 						header.icon = group.icon;
 						for key,value in pairs(group) do
@@ -1921,10 +1921,30 @@ local function OpenMiniList(field, id, label)
 								header[key] = value;
 							end
 						end
-						table.remove(header.g, i);
-						if group.g then tinsert(ins, group.g); end
+						break;
 					end
 				end
+				if not header.mapID then
+					for i=count,1,-1 do
+						local group = header.g[i];
+						if group.maps then
+							header.text = group.text;
+							header.icon = group.icon;
+							for key,value in pairs(group) do
+								if key ~= "g" and key ~= "total" and key ~= "progress" then
+									header[key] = value;
+								end
+							end
+						end
+					end
+				end
+				for i=count,1,-1 do
+						local group = header.g[i];
+						if group.mapID or (group.maps and header.text == group.text) then
+							table.remove(header.g, i);
+							if group.g then tinsert(ins, group.g); end
+						end
+					end
 				for i=#ins,1,-1 do
 					for j,subgroup in ipairs(ins[i]) do
 						tinsert(header.g, subgroup);
