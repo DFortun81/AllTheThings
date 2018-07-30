@@ -12,25 +12,39 @@ _.Instances =
 						q(35563, {	-- Main Gate (Living)
 							["groups"] = {
 								n(-17, {	-- Quests
-									q(27359, {	-- Argent Reinforcements
+									q(27185, {	-- Cutting the Competition
 										["groups"] = {
 										},
-										["qg"] = 45330,	-- Archmage Angela Dosantos
+										["qg"] = 45201,	-- Master Craftsman Wilhelm
 									}),
-									q(27352, {	-- Liquid Gold
+									q(27305, {	-- Of Love and Family
 										["groups"] = {
 										},
-										["qg"] = 45328,	-- Packmaster Stonebruiser
+										["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
 									}),
-									q(27227, {	-- Lord Aurius Rivendare
+									q(27223, {	-- Retribution
 										["groups"] = {
 										},
-										["qg"] = 45329,	-- Crusade Commander Eligor Dawnbringer
+										["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
 									}),
-									q(27228, {	-- Man Against Abomination
+									q(27208, {	-- The Dreadlord Balnazzar
+										["groups"] = {
+											i(65998),	-- Balnazzar's Hide
+											i(65977),	-- Balnazzar's Horn
+											i(65953),	-- Dathrohan's Mace
+											i(65928),	-- Leggings of Stratholme
+										},
+										["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
+									}),
+									q(27192, {	-- The Great Fras Siabi
 										["groups"] = {
 										},
-										["qg"] = 45206,	-- Crusade Commander Korfax
+										["qg"] = 45323,	-- Packmaster Stonebruiser
+									}),
+									q(27230, {	-- Weapons for War
+										["groups"] = {
+										},
+										["qg"] = 45331,	-- Master Craftsman Wilhelm
 									}),
 								}),
 								n(  0, {	-- Zone Drop
@@ -217,39 +231,25 @@ _.Instances =
 						q(35574, {	-- Side Entrance (Dead)
 							["groups"] = {
 								n(-17, {	-- Quests
-									q(27185, {	-- Cutting the Competition
+									q(27359, {	-- Argent Reinforcements
 										["groups"] = {
 										},
-										["qg"] = 45201,	-- Master Craftsman Wilhelm
+										["qg"] = 45330,	-- Archmage Angela Dosantos
 									}),
-									q(27305, {	-- Of Love and Family
+									q(27352, {	-- Liquid Gold
 										["groups"] = {
 										},
-										["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
+										["qg"] = 45328,	-- Packmaster Stonebruiser
 									}),
-									q(27223, {	-- Retribution
+									q(27227, {	-- Lord Aurius Rivendare
 										["groups"] = {
 										},
-										["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
+										["qg"] = 45329,	-- Crusade Commander Eligor Dawnbringer
 									}),
-									q(27208, {	-- The Dreadlord Balnazzar
-										["groups"] = {
-											i(65998),	-- Balnazzar's Hide
-											i(65977),	-- Balnazzar's Horn
-											i(65953),	-- Dathrohan's Mace
-											i(65928),	-- Leggings of Stratholme
-										},
-										["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
-									}),
-									q(27192, {	-- The Great Fras Siabi
+									q(27228, {	-- Man Against Abomination
 										["groups"] = {
 										},
-										["qg"] = 45323,	-- Packmaster Stonebruiser
-									}),
-									q(27230, {	-- Weapons for War
-										["groups"] = {
-										},
-										["qg"] = 45331,	-- Master Craftsman Wilhelm
+										["qg"] = 45206,	-- Crusade Commander Korfax
 									}),
 								}),
 								n(0, {	-- Zone Drop
