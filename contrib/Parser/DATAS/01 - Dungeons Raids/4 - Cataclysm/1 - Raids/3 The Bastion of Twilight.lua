@@ -276,7 +276,7 @@ _.Instances =
 							}),
 							e(168, { -- Sinestra
 								["groups"] = {
-									un(12, ach(5313)),	-- I Can't Hear You Over the Sound of How Awesome I Am
+									un(2, ach(5313)),	-- I Can't Hear You Over the Sound of How Awesome I Am
 									ach(5121, {	-- Heroic: Sinestra
 										title(186),	-- Dragonslayer
 									}),

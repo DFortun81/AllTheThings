@@ -12,25 +12,25 @@ To do:
 
 _.Achievements = 
 {
-	n(-9968, { -- Legacy		NOTE: MOST WILL NEED THE un(12) TAG
+	n(-9968, { -- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
 			n(-10043, { -- Dungeons
 				["groups"] = {
-					un(12, ach(8882, {	-- Auchindoun: Gold
-						un(12, ach(8881)),	-- Auchindoun: Silver
-						un(12, ach(8880)),	-- Auchindoun: Bronze
-						un(12, ach(8879)),	-- Auchindoun Challenger
+					un(2, ach(8882, {	-- Auchindoun: Gold
+						un(2, ach(8881)),	-- Auchindoun: Silver
+						un(2, ach(8880)),	-- Auchindoun: Bronze
+						un(2, ach(8879)),	-- Auchindoun Challenger
 					})),
-					un(12, ach(8878, {	-- Bloodmaul Slag Mines: Gold
-						un(12, ach(8877)),	-- Bloodmaul Slag Mines: Silver
-						un(12, ach(8876)),	-- Bloodmaul Slag Mines: Bronze
-						un(12, ach(8875)),	-- Bloodmaul Slag Mines Challenger
+					un(2, ach(8878, {	-- Bloodmaul Slag Mines: Gold
+						un(2, ach(8877)),	-- Bloodmaul Slag Mines: Silver
+						un(2, ach(8876)),	-- Bloodmaul Slag Mines: Bronze
+						un(2, ach(8875)),	-- Bloodmaul Slag Mines Challenger
 					})),
-					un(12, ach(6920)),	-- Challenge Conqueror
-					un(12, ach(6374, {	-- Challenge Conqueror: Bronze
+					un(2, ach(6920)),	-- Challenge Conqueror
+					un(2, ach(6374, {	-- Challenge Conqueror: Bronze
 						un(39, title(201)),	-- the Undaunted
 					})),
-					un(12, ach(6378, {	-- Challenge Conqueror: Gold
+					un(2, ach(6378, {	-- Challenge Conqueror: Gold
 						un(2, i(90155, {	-- Golden Chest of the Golden King
 							["groups"] = {
 								un(4, i(90154)),	-- Bracers of the Golden King
@@ -175,14 +175,14 @@ _.Achievements =
 							["f"] = 58,
 						})),
 					})),
-					un(12, ach(6375, {	-- Challenge Conqueror: Silver
+					un(2, ach(6375, {	-- Challenge Conqueror: Silver
 						un(2, i(90045)),	-- Ancestral Phoenix Egg
 					})),
-					un(12, ach(8895)),	-- Challenge Warlord
-					un(12, ach(8897, {	-- Challenge Warlord: Bronze
+					un(2, ach(8895)),	-- Challenge Warlord
+					un(2, ach(8897, {	-- Challenge Warlord: Bronze
 						un(39, title(290)),	-- the Indomitable
 					})),
-					un(12, ach(8899, {	-- Challenge Warlord: Gold
+					un(2, ach(8899, {	-- Challenge Warlord: Gold
 						un(4, i(118395)),	-- Claws of Creation
 						un(4, i(118396)),	-- Bloodmaw Gargoyle
 						un(4, i(118397)),	-- Equus
@@ -199,86 +199,86 @@ _.Achievements =
 						un(4, i(118412)),	-- Greatsword of the Inferno
 						un(4, i(118413)),	-- Flamegrinder
 					})),
-					un(12, ach(8898, {	-- Challenge Warlord: Silver
+					un(2, ach(8898, {	-- Challenge Warlord: Silver
 						un(2, i(116791)),	-- Challenger's War Yeti
 					})),
-					un(12, ach(6907, {	-- Gate of the Setting Sun: Gold
-						un(12, ach(6906)),	-- Gate of the Setting Sun: Silver
-						un(12, ach(6905)),	-- Gate of the Setting Sun: Bronze
-						un(12, ach(6894)),	-- Gate of the Setting Sun Challenger
+					un(2, ach(6907, {	-- Gate of the Setting Sun: Gold
+						un(2, ach(6906)),	-- Gate of the Setting Sun: Silver
+						un(2, ach(6905)),	-- Gate of the Setting Sun: Bronze
+						un(2, ach(6894)),	-- Gate of the Setting Sun Challenger
 					})),
-					un(12, ach(8890, {	-- Grimrail Depot: Gold
-						un(12, ach(8889)),	-- Grimrail Depot: Silver
-						un(12, ach(8888)),	-- Grimrail Depot: Bronze
-						un(12, ach(8887)),	-- Grimrail Depot Challenger
+					un(2, ach(8890, {	-- Grimrail Depot: Gold
+						un(2, ach(8889)),	-- Grimrail Depot: Silver
+						un(2, ach(8888)),	-- Grimrail Depot: Bronze
+						un(2, ach(8887)),	-- Grimrail Depot Challenger
 					})),
-					un(12, ach(9000, {	-- Iron Docks: Gold
-						un(12, ach(8999)),	-- Iron Docks: Silver
-						un(12, ach(8998)),	-- Iron Docks: Bronze
-						un(12, ach(8997)),	-- Iron Docks Challenger
+					un(2, ach(9000, {	-- Iron Docks: Gold
+						un(2, ach(8999)),	-- Iron Docks: Silver
+						un(2, ach(8998)),	-- Iron Docks: Bronze
+						un(2, ach(8997)),	-- Iron Docks Challenger
 					})),
-					un(12, ach(2188)),	-- Leeeeeeeeeeeeeroy!
-					un(12, ach(6901, {	-- Mogu'shan Palace: Gold
-						un(12, ach(6900)),	-- Mogu'shan Palace: Silver
-						un(12, ach(6899)),	-- Mogu'shan Palace: Bronze
-						un(12, ach(6892)),	-- Mogu'shan Palace Challenger
+					un(2, ach(2188)),	-- Leeeeeeeeeeeeeroy!
+					un(2, ach(6901, {	-- Mogu'shan Palace: Gold
+						un(2, ach(6900)),	-- Mogu'shan Palace: Silver
+						un(2, ach(6899)),	-- Mogu'shan Palace: Bronze
+						un(2, ach(6892)),	-- Mogu'shan Palace Challenger
 					})),
-					un(12, ach(6910, {	-- Scarlet Halls: Gold
-						un(12, ach(6909)),	-- Scarlet Halls: Silver
-						un(12, ach(6908)),	-- Scarlet Halls: Bronze
-						un(12, ach(6895)),	-- Scarlet Halls Challenger
+					un(2, ach(6910, {	-- Scarlet Halls: Gold
+						un(2, ach(6909)),	-- Scarlet Halls: Silver
+						un(2, ach(6908)),	-- Scarlet Halls: Bronze
+						un(2, ach(6895)),	-- Scarlet Halls Challenger
 					})),
-					un(12, ach(6913, {	-- Scarlet Monastery: Gold
-						un(12, ach(6912)),	-- Scarlet Monastery: Silver
-						un(12, ach(6911)),	-- Scarlet Monastery: Bronze
-						un(12, ach(6896)),	-- Scarlet Monastery Challenger
+					un(2, ach(6913, {	-- Scarlet Monastery: Gold
+						un(2, ach(6912)),	-- Scarlet Monastery: Silver
+						un(2, ach(6911)),	-- Scarlet Monastery: Bronze
+						un(2, ach(6896)),	-- Scarlet Monastery Challenger
 					})),
-					un(12, ach(6916, {	-- Scholomance: Gold
-						un(12, ach(6915)),	-- Scholomance: Silver
-						un(12, ach(6914)),	-- Scholomance: Bronze
-						un(12, ach(6897)),	-- Scholomance Challenger
+					un(2, ach(6916, {	-- Scholomance: Gold
+						un(2, ach(6915)),	-- Scholomance: Silver
+						un(2, ach(6914)),	-- Scholomance: Bronze
+						un(2, ach(6897)),	-- Scholomance Challenger
 					})),
-					un(12, ach(6904, {	-- Shado-Pan Monastery: Gold
-						un(12, ach(6903)),	-- Shado-Pan Monastery: Silver
-						un(12, ach(6902)),	-- Shado-Pan Monastery: Bronze
-						un(12, ach(6893)),	-- Shado-Pan Monastery Challenger
+					un(2, ach(6904, {	-- Shado-Pan Monastery: Gold
+						un(2, ach(6903)),	-- Shado-Pan Monastery: Silver
+						un(2, ach(6902)),	-- Shado-Pan Monastery: Bronze
+						un(2, ach(6893)),	-- Shado-Pan Monastery Challenger
 					})),
-					un(12, ach(8886, {	-- Shadowmoon Burial Grounds: Gold
-						un(12, ach(8885)),	-- Shadowmoon Burial Grounds: Silver
-						un(12, ach(8884)),	-- Shadowmoon Burial Grounds: Bronze
-						un(12, ach(8883)),	-- Shadowmoon Burial Grounds Challenger
+					un(2, ach(8886, {	-- Shadowmoon Burial Grounds: Gold
+						un(2, ach(8885)),	-- Shadowmoon Burial Grounds: Silver
+						un(2, ach(8884)),	-- Shadowmoon Burial Grounds: Bronze
+						un(2, ach(8883)),	-- Shadowmoon Burial Grounds Challenger
 					})),
-					un(12, ach(6919, {	-- Siege of Niuzao Temple: Gold
-						un(12, ach(6918)),	-- Siege of Niuzao Temple: Silver
-						un(12, ach(6917)),	-- Siege of Niuzao Temple: Bronze
-						un(12, ach(6898)),	-- Siege of Niuzao Temple Challenger
+					un(2, ach(6919, {	-- Siege of Niuzao Temple: Gold
+						un(2, ach(6918)),	-- Siege of Niuzao Temple: Silver
+						un(2, ach(6917)),	-- Siege of Niuzao Temple: Bronze
+						un(2, ach(6898)),	-- Siege of Niuzao Temple Challenger
 					})),
-					un(12, ach(8874, {	-- Skyreach: Gold
-						un(12, ach(8873)),	-- Skyreach: Silver
-						un(12, ach(8872)),	-- Skyreach: Bronze
-						un(12, ach(8871)),	-- Skyreach Challenger
+					un(2, ach(8874, {	-- Skyreach: Gold
+						un(2, ach(8873)),	-- Skyreach: Silver
+						un(2, ach(8872)),	-- Skyreach: Bronze
+						un(2, ach(8871)),	-- Skyreach Challenger
 					})),
-					un(12, ach(6891, {	-- Stormstout Brewery: Gold
-						un(12, ach(6890)),	-- Stormstout Brewery: Silver
-						un(12, ach(6889)),	-- Stormstout Brewery: Bronze
-						un(12, ach(6888)),	-- Stormstout Brewery Challenger
+					un(2, ach(6891, {	-- Stormstout Brewery: Gold
+						un(2, ach(6890)),	-- Stormstout Brewery: Silver
+						un(2, ach(6889)),	-- Stormstout Brewery: Bronze
+						un(2, ach(6888)),	-- Stormstout Brewery Challenger
 					})),
-					un(12, ach(6887, {	-- Temple of the Jade Serpent: Gold
-						un(12, ach(6886)),	-- Temple of the Jade Serpent: Silver
-						un(12, ach(6885)),	-- Temple of the Jade Serpent: Bronze
-						un(12, ach(6884)),	-- Temple of the Jade Serpent Challenger
+					un(2, ach(6887, {	-- Temple of the Jade Serpent: Gold
+						un(2, ach(6886)),	-- Temple of the Jade Serpent: Silver
+						un(2, ach(6885)),	-- Temple of the Jade Serpent: Bronze
+						un(2, ach(6884)),	-- Temple of the Jade Serpent Challenger
 					})),
-					un(12, ach(9004, {	-- The Everbloom: Gold
-						un(12, ach(9003)),	-- The Everbloom: Silver
-						un(12, ach(9002)),	-- The Everbloom: Bronze
-						un(12, ach(9001)),	-- The Everbloom Challenger
+					un(2, ach(9004, {	-- The Everbloom: Gold
+						un(2, ach(9003)),	-- The Everbloom: Silver
+						un(2, ach(9002)),	-- The Everbloom: Bronze
+						un(2, ach(9001)),	-- The Everbloom Challenger
 					})),
-					un(12, ach(11218)),	-- There's a Boss In There
-					un(12, ach(1307)),	-- Upper Blackrock Spire (Classic)
-					un(12, ach(8894, {	-- Upper Blackrock Spire: Gold
-						un(12, ach(8893)),	-- Upper Blackrock Spire: Silver
-						un(12, ach(8892)),	-- Upper Blackrock Spire: Bronze
-						un(12, ach(8891)),	-- Upper Blackrock Spire Challenger
+					un(2, ach(11218)),	-- There's a Boss In There
+					un(2, ach(1307)),	-- Upper Blackrock Spire (Classic)
+					un(2, ach(8894, {	-- Upper Blackrock Spire: Gold
+						un(2, ach(8893)),	-- Upper Blackrock Spire: Silver
+						un(2, ach(8892)),	-- Upper Blackrock Spire: Bronze
+						un(2, ach(8891)),	-- Upper Blackrock Spire Challenger
 					})),
 				},
 			}),

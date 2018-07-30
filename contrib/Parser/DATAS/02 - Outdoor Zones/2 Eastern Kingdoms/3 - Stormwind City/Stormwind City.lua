@@ -3395,7 +3395,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
+					["u"] = 2,
 				}),
 			},
 			["lvl"] = 1,

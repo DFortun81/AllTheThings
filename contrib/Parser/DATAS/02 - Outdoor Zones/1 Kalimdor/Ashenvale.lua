@@ -1241,7 +1241,7 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
+					["u"] = 2,
 				}),
 			},
 			["achievementID"] = 845,

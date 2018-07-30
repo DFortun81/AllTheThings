@@ -142,7 +142,7 @@ _.Instances =
 								un(2, i(23178)),	-- Mantle of Lady Falther'ess
 							}),
 						},
-						["u"] = 12,
+						["u"] = 2,
 					}),
 				},
 				["lvl"] = 35,

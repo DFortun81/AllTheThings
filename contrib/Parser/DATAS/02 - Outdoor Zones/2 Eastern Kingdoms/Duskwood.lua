@@ -26,7 +26,7 @@ _.Zones =
 							["description"] = "Can be found after killing the last boss in a dungeon or randomly in Legion zones. Kill him and enter his portal to fight The Cow King.",
 						}),
 					},
-					["u"] = 12,					
+					["u"] = 2,					
 				}),				
 				n( -25, {	-- Pet Battle
 					p(398), 	-- Black Rat

@@ -936,7 +936,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 116302, -- Archmage Khadgar
-								["u"] = 12,
+								["u"] = 2,
 							}),
 							
 						}),

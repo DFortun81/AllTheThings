@@ -5,7 +5,7 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(76, { 	-- Zul'Gurub
 		["groups"] = {
-			un(12, ach(560)),	-- Deadliest Catch
+			un(2, ach(560)),	-- Deadliest Catch
 			nlq({ -- Legacy Quests
 				{
 					["itemID"] = 19724,	-- Primal Hakkari Aegis
@@ -15,7 +15,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8071, -- Paragon's of Power: The Confessor's Mantle
 							["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 							["classes"] = {5},	-- Priest
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19841)),	-- Zandalar Confessor's Mantle
 							},
@@ -24,7 +24,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8073, -- Paragon's of Power: The Madcap's Tunic
 							["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 							["classes"] = {4},	-- Rogue
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19834)),	-- Zandalar Madcap's Tunic
 							},
@@ -33,7 +33,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8067, -- Paragon's of Power: The Predator's Mantle
 							["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 							["classes"] = {3},	-- Hunter
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19831)),	-- Zandalar Predator's Mantle
 							},
@@ -48,7 +48,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8056, -- Paragons of Power: The Augur's Bracers
 							["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 							["classes"] = {7},	-- Shaman
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19830)),	-- Zandalar Augur's Bracers
 							},
@@ -57,7 +57,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8063, -- Paragon's of Power: The Madcap's Bracers
 							["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 							["classes"] = {4},	-- Rogue
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19836)),	-- Zandalar Madcap's Bracers
 							},
@@ -66,7 +66,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8058, -- Paragon's of Power: The Vindicator's Armguards
 							["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 							["classes"] = {1},	-- Warrior
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19824)),	-- Zandalar Vindicator's Armguards
 							},
@@ -81,7 +81,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8053, -- Paragon's of Power: The Freethinker's Armguards
 							["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 							["classes"] = {2},	-- Paladin
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19827)),	-- Zandalar Freethinker's Armguards
 							},
@@ -90,7 +90,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8060, -- Paragon's of Power: The Illusionist's Wraps
 							["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 							["classes"] = {8},	-- Mage
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19846)),	-- Zandalar Illusionist's Wraps
 							},
@@ -99,7 +99,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8062, -- Paragon's of Power: The Predator's Bracers
 							["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 							["classes"] = {3},	-- Hunter
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19833)),	-- Zandalar Predator's Bracers
 							},
@@ -114,7 +114,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8074, -- Paragons of Power: The Augur's Belt
 							["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 							["classes"] = {7},	-- Shaman
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19829)),	-- Zandalar Augur's Belt
 							},
@@ -123,7 +123,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8072, -- Paragon's of Power: The Madcap's Mantle
 							["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 							["classes"] = {4},	-- Rogue
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19835)),	-- Zandalar Madcap's Mantle
 							},
@@ -132,7 +132,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8078, -- Paragon's of Power: The Vindicator's Belt
 							["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 							["classes"] = {1},	-- Warrior
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19823)),	-- Zandalar Vindicator's Belt
 							},
@@ -147,7 +147,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8077, -- Paragons of Power: The Demoniac's Robes
 							["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 							["classes"] = {9},	-- Warlock
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(20033)),	-- Zandalar Demoniac's Robe
 							},
@@ -156,7 +156,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8069, -- Paragon's of Power: The Illusionist's Robes
 							["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 							["classes"] = {8},	-- Mage
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(20034)),	-- Zandalar Illusionist's Robe
 							},
@@ -165,7 +165,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8079, -- Paragon's of Power: The Vindicator's Breastplate
 							["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 							["classes"] = {1},	-- Warrior
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19822)),	-- Zandalar Vindicator's Breastplate
 							},
@@ -180,7 +180,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8070, -- Paragon's of Power: The Confessor's Bindings
 							["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 							["classes"] = {5},	-- Priest
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19842)),	-- Zandalar Confessor's Bindings
 							},
@@ -189,7 +189,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8076, -- Paragons of Power: The Demoniac's Mantle
 							["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 							["classes"] = {9},	-- Warlock
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19849)),	-- Zandalar Demoniac's Mantle
 							},
@@ -198,7 +198,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8064, -- Paragons of Power: The Haruspex's Belt
 							["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 							["classes"] = {9},	-- Warlock
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19839)),	-- Zandalar Haruspex's Belt
 							},
@@ -213,7 +213,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8054, -- Paragon's of Power: The Freethinker's Belt
 							["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 							["classes"] = {2},	-- Paladin
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19826)),	-- Zandalar Freethinker's Belt
 							},
@@ -222,7 +222,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8068, -- Paragon's of Power: The Illusionist's Mantle
 							["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 							["classes"] = {8},	-- Mage
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19845)),	-- Zandalar Illusionist's Mantle
 							},
@@ -231,7 +231,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8066, -- Paragon's of Power: The Predator's Belt
 							["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 							["classes"] = {3},	-- Hunter
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19832)),	-- Zandalar Predator's Belt
 							},
@@ -246,7 +246,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8061, -- Paragon's of Power: The Confessor's Wraps
 							["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 							["classes"] = {5},	-- Priest
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19843)),	-- Zandalar Confessor's Wraps
 							},
@@ -255,7 +255,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8059, -- Paragons of Power: The Demoniac's Wraps
 							["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 							["classes"] = {9},	-- Warlock
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19848)),	-- Zandalar Demoniac's Wraps
 							},
@@ -264,7 +264,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8057, -- Paragons of Power: The Haruspex's Bracers
 							["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 							["classes"] = {9},	-- Warlock
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19840)),	-- Zandalar Haruspex's Bracers
 							},
@@ -279,7 +279,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8075, -- Paragons of Power: The Augur's Hauberk
 							["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 							["classes"] = {7},	-- Shaman
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19828)),	-- Zandalar Augur's Hauberk
 							},
@@ -288,7 +288,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8055, -- Paragon's of Power: The Freethinker's Breastplate
 							["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 							["classes"] = {2},	-- Paladin
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19825)),	-- Zandalar Freethinker's Breastplate
 							},
@@ -297,7 +297,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8065, -- Paragons of Power: The Haruspex's Tunic
 							["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 							["classes"] = {9},	-- Warlock
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(19838)),	-- Zandalar Haruspex's Tunic
 							},
@@ -386,7 +386,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(2, i(19895)),	-- Bloodtinged Kilt
 				un(2, i(20038)),	-- Mandokir's Sting
 				un(9, i(19872, {	-- Swift Razzashi Raptor
-					un(12, ach(881)),	-- Swift Razzashi Raptor
+					un(2, ach(881)),	-- Swift Razzashi Raptor
 				})),
 			}),
 			un(7, i(19931, {	-- Gurubashi Mojo Madness
@@ -428,7 +428,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(2, i(22718)),	-- Blooddrenched Mask
 				un(2, i(22720)),	-- Zulian Headdress
 				un(9, i(19902, {	-- Swift Zulian Tiger
-					un(12, ach(880)),	-- Swift Zulian Tiger
+					un(2, ach(880)),	-- Swift Zulian Tiger
 				})),
 			}),
 			n(15114, { -- Gahz'ranka
@@ -462,7 +462,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(2, i(19894)),	-- Bloodsoaked Gauntlets
 			}),
 			n(14834, { -- Hakkar the Soulflayer
-				un(12, ach(688)),	-- Zul'Gurub
+				un(2, ach(688)),	-- Zul'Gurub
 				un(2, i(19852)),	-- Ancient Hakkari Manslayer
 				un(2, i(19853)),	-- Gurubashi Dwarf Destroyer
 				un(2, i(19854)),	-- Zin'rokh, Destroyer of Worlds

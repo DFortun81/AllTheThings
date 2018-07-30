@@ -813,7 +813,7 @@ _.Instances =
 							--n(  0, {	-- Zone Drop (Legacy)
 							--}),
 						},
-						["u"] = 12,
+						["u"] = 2,
 					}),
 				},
 				["lvl"] = 42,

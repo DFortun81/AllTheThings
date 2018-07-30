@@ -700,7 +700,7 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
+					["u"] = 2,
 				}),
 				m(463, { 	-- Echo Isles
 					["groups"] = {

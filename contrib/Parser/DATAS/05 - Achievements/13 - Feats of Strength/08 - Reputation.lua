@@ -16,7 +16,7 @@ _.Achievements =
 		["groups"] = {
 			n(-9961, { -- Reputation
 				["groups"] = {
-					un(12, ach(5788)),	-- Agent of the Shen'dralar
+					un(2, ach(5788)),	-- Agent of the Shen'dralar
 					ach(871, {			-- Avast Ye, Admiral!
 						title(111),			-- Bloodsail Admiral
 					}),

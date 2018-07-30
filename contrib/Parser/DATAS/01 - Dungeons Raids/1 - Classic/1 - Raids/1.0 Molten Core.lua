@@ -630,7 +630,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(31, i(118572)), -- Illusion: Flames of Ragnaros
 						un(7, i(118574)), -- Hatespark the Tiny
 					},
-					["u"] = 12,
+					["u"] = 2,
 				})),
 				i(138018),	-- Clothes Chest Pattern: Molten Core
 				i(17204, {	-- Eye of Sulfuras

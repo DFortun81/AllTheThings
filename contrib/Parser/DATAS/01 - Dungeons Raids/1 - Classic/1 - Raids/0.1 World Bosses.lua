@@ -21,7 +21,6 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(19131)), -- Snowblind Shoes
 					un(2, i(18547)), -- Unmelting Ice Girdle
 				},
-				["u"] = 12,
 				["isRaid"] = true,
 				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
 				["maps"] = { 76 }, -- Azshara
@@ -41,7 +40,6 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(19134)), -- Flayed Doomguard Belt
 					un(2, i(18546)), -- Infernal Headcage
 				},
-				["u"] = 12,
 				["isRaid"] = true,
 				["maps"] = { 17 }, -- Blasted Lands
 			}),
@@ -63,7 +61,6 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(19134)), -- Flayed Doomguard Belt
 					un(2, i(18546)), -- Infernal Headcage
 				},
-				["u"] = 12,
 				["isRaid"] = true,
 				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
 				["maps"] = { 17 }, -- Blasted Lands
@@ -88,7 +85,6 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(20623)), -- Circlet of Restless Dreams
 					un(2, i(20621)), -- Boots of the Endless Moor
 				},
-				["u"] = 12,
 				["isRaid"] = true,
 				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
 				["maps"] = { 63, 69, 47, 26 }, -- Ashenvale / Feralas / Duskwood / The Hinterlands
@@ -116,7 +112,6 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(20629)), -- Malignant Footguards
 					un(2, i(20630)), -- Gauntlets of the Shining Light
 				},
-				["u"] = 12,
 				["isRaid"] = true,
 				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
 				["maps"] = { 63, 69, 47, 26 }, -- Ashenvale / Feralas / Duskwood / The Hinterlands
@@ -142,7 +137,6 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(20633)), -- Unnatural Leather Spaulders
 					un(2, i(20634)), -- Boots of Fright
 				},
-				["u"] = 12,
 				["isRaid"] = true,
 				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
 				["maps"] = { 63, 69, 47, 26 }, -- Ashenvale / Feralas / Duskwood / The Hinterlands
@@ -169,12 +163,12 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(20638)), -- Leggings of the Demented Mind
 					un(2, i(20639)), -- Strangley Glyphed Legplates
 				},
-				["u"] = 12,
 				["isRaid"] = true,
 				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
 				["maps"] = { 63, 69, 47, 26 }, -- Ashenvale / Feralas / Duskwood / The Hinterlands
 			}),
 		},
+		["u"] = 12,
 		["isRaid"] = true,
 		["lvl"] = 60,
 	}),

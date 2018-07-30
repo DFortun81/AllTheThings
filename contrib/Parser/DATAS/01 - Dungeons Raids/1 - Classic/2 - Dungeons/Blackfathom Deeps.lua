@@ -291,7 +291,7 @@ _.Instances = { tier(1, {	-- Classic
 					--n(  0, {	-- Zone Drop (Legacy)
 					--}),
 				},
-				["u"] = 12,
+				["u"] = 2,
 			}),
 		},
 		["lvl"] = 15,

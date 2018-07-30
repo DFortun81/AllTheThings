@@ -9,7 +9,7 @@ _.Instances = { tier(1, {	-- Classic
 				["groups"] = {
 					e(1651, {	-- Onyxia (Legacy)
 						["groups"] = {
-							un(12, ach(684)),	-- Onyxia's Lair (Level 60)
+							un(2, ach(684)),	-- Onyxia's Lair (Level 60)
 							a({
 								["itemID"] = 18423,		-- Head of Onyxia [Alliance]
 								["questID"] = 7495,		-- Victory for the Alliance
@@ -103,11 +103,11 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(18813)),	-- Ring of Binding
 							un(2, i(17064)),	-- Shard of the Scale
 						},
-						["u"] = 12,
+						["u"] = 2,
 						["creatureID"] = 10184
 					}),
 				},
-				["u"] = 12,
+				["u"] = 2,
 			}),
 			d(3, {	-- 10 Player
 				["groups"] = {

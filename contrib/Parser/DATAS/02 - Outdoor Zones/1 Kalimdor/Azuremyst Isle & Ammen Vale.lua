@@ -289,7 +289,7 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 12,
+					["u"] = 2,
 				}),
 				m(468, { -- Ammen Vale
 					["groups"] = {
@@ -417,7 +417,7 @@ _.Zones =
 							--n(-16, {	-- Rares (Legacy)
 							--}),
 						},
-						["u"] = 12,
+						["u"] = 2,
 					}), --]]
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Draenei_Male",					

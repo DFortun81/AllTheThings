@@ -213,7 +213,7 @@ _.Instances =
 									["icon"] = "Interface\\Icons\\Ability_Paladin_GaurdedbytheLight",
 								}),
 							},
-							["u"] = 12,
+							["u"] = 2,
 						}),	
 					}),
 				},

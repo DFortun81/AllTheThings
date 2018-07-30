@@ -1175,7 +1175,7 @@ _.Instances =
 								un(2, h(i(47525))),		-- Sufferance
 							}),
 						},
-						["u"] = 12,
+						["u"] = 2,
 					}),
 				},
 				["isRaid"] = true,

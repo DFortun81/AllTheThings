@@ -2242,7 +2242,7 @@ _.Instances =
 							cr(68397, e(832, {	-- Lei Shen
 								["groups"] = {
 									ach(8090),	-- A Complete Circuit
-									un(12, ach(8238)),	-- Cutting Edge: Lei Shen
+									un(2, ach(8238)),	-- Cutting Edge: Lei Shen
 									ach(8067),	-- Heroic: Lei Shen
 									i(96547),	-- Shan-Dun, Breaker of Hope
 									i(96553),	-- Uroe, Harbinger of Terror
@@ -2290,9 +2290,9 @@ _.Instances =
 							})),
 							cr(69473, e(831, {	-- Ra-den
 								["groups"] = {
-									un(12, ach(8260)),	-- Cutting Edge: Ra-den
+									un(2, ach(8260)),	-- Cutting Edge: Ra-den
 									ach(8068),	-- Heroic: Ra-den
-									un(12, ach(8089)),	-- I Thought He Was Supposeed to Be Hard?
+									un(2, ach(8089)),	-- I Thought He Was Supposeed to Be Hard?
 									i(95013),	-- Black Night Thundercloak
 									i(95015),	-- Grey Wind Mistcloak
 									i(95014),	-- Red Sky Cloudcloak

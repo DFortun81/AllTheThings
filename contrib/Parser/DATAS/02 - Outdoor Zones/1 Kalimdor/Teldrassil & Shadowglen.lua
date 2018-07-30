@@ -338,7 +338,7 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),						
 					},
-					["u"] = 12,
+					["u"] = 2,
 				}),
 				m(460, {	-- Shadowglen
 					["groups"] = {

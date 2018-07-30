@@ -957,7 +957,7 @@ _.Zones =
 						--n(-16, {	-- Rares (Legacy)
 						--}),
 					},
-					["u"] = 12,
+					["u"] = 2,
 				}),
 			},
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_nightelf",

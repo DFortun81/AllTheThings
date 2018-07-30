@@ -6893,7 +6893,7 @@ function app:GetDataCache()
 		
 		-- Mounts
 		if app.Categories.Mounts then
-			db = app.CreateAchievement(app.Faction == "Horde" and 10355 or 10356, app.Categories.Mounts);
+			db = app.CreateAchievement(app.Faction == "Horde" and 12934 or 12933, app.Categories.Mounts);
 			db.f = 100;
 			db.expanded = false;
 			db.text = MOUNTS; -- L("MOUNTS");
@@ -6902,7 +6902,7 @@ function app:GetDataCache()
 		
 		-- Pet Journal
 		if app.Categories.PetJournal then
-			db = app.CreateAchievement(9643, app.Categories.PetJournal);
+			db = app.CreateAchievement(12958, app.Categories.PetJournal);
 			db.f = 100;
 			db.expanded = false;
 			db.text = PET_JOURNAL;
@@ -6920,7 +6920,7 @@ function app:GetDataCache()
 		
 		-- Toys
 		if app.Categories.Toys then
-			db = app.CreateAchievement(11176, app.Categories.Toys);
+			db = app.CreateAchievement(12996, app.Categories.Toys);
 			db.icon = "Interface\\ICONS\\INV_Misc_Toy_10";
 			db.expanded = false;
 			db.text = TOY_BOX; -- Toy Box

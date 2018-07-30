@@ -4033,7 +4033,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 							}),
 						}),
 					},
-					["u"] = 12,
+					["u"] = 2,
 				}),
 			},
 			["maps"] = { 86 }, -- The Drag

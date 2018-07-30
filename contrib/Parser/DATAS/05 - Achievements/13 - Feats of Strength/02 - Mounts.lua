@@ -17,7 +17,7 @@ _.Achievements =
 			n(-10031, { -- Mounts
 				["groups"] = {
 					un(24, ach(3496)),	-- A Brew-FAST Mount
-					un(12, ach(430)),	-- Amani War Bear
+					un(2, ach(430)),	-- Amani War Bear
 					ach(4626),			-- And I'll Form the Head!
 					ach(885),			-- Ashes of Al'ar
 					un(18, ach(4627)),	-- Big Love Rocket
@@ -46,21 +46,21 @@ _.Achievements =
 					un(3, ach(3636)),	-- Jade Tiger (China only)
 					un(14, ach(8216)),	-- Malevolent Gladiator's Cloud Serpent
 					un(14, ach(887)),	-- Merciless Nether Drake
-					un(12, ach(879)),	-- Old School Ride
+					un(2, ach(879)),	-- Old School Ride
 					un(3, ach(3896)),	-- Onyx Panther (Korea only)
 					un(14, ach(8707)),	-- Prideful Gladiator's Cloud Serpent
 					un(14, ach(9229)),	-- Primal Gladiator's Felblood Gronnling
 					ach(883),			-- Reins of the Raven Lord
 					un(14, ach(3757)),	-- Relentless Gladiator's Frost Wyrm
 					un(14, ach(6322)),	-- Ruthless Gladiator's Twilight Drake
-					un(12, ach(416)),	-- Scarab Lord
+					un(2, ach(416)),	-- Scarab Lord
 					ach(5767, {			-- Scourer of the Eternal Sands
 						title(143),			-- the Camel-Hoarder
 					}),
 					un(14, ach(886)),	-- Swift Nether Drake
-					un(12, ach(881)),	-- Swift Razzashi Raptor
+					un(2, ach(881)),	-- Swift Razzashi Raptor
 					ach(884),			-- Swift White Hawkstrider
-					un(12, ach(880)),	-- Swift Zulian Tiger
+					un(2, ach(880)),	-- Swift Zulian Tiger
 					un(26, ach(980)),	-- The Horseman's Reins
 					un(14, ach(8678)),	-- Tyrannical Gladiator's Cloud Serpent
 					un(14, ach(888)),	-- Vengeful Nether Drake

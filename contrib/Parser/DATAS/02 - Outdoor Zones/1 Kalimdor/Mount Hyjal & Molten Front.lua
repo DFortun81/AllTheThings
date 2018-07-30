@@ -867,7 +867,7 @@ _.Zones =
 						--n(-16, {	-- Rares (Legacy)
 						--}),
 					},
-					["u"] = 12,
+					["u"] = 2,
 				}),	--]]
 				m(338, {	-- Molten Front
 					["groups"] = {

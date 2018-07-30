@@ -12,23 +12,23 @@ To do:
 
 _.Achievements = 
 {
-	n(-9968, { -- Legacy		NOTE: MOST WILL NEED THE un(12) TAG
+	n(-9968, { -- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
 			n(-10055, { -- Expansion Features
 				["groups"] = {
-					un(12, ach(11611)),		-- A Challenging Look
-					un(12, ach(12071)),		-- Crucible's Promise
-					un(12, ach(11612)),		-- Fighting with Style: Challenging
-					un(12, ach(11143)),		-- Honoring the Past
-					un(12, ach(12072)),		-- Now You're Cooking with Netherlight
-					un(12, ach(10853, {		-- Part of History
-						un(12, ach(10852)),		-- Artifact or Artifiction
+					un(2, ach(11611)),		-- A Challenging Look
+					un(2, ach(12071)),		-- Crucible's Promise
+					un(2, ach(11612)),		-- Fighting with Style: Challenging
+					un(2, ach(11143)),		-- Honoring the Past
+					un(2, ach(12072)),		-- Now You're Cooking with Netherlight
+					un(2, ach(10853, {		-- Part of History
+						un(2, ach(10852)),		-- Artifact or Artifiction
 					})),
-					un(12, ach(11772, {		-- Power Ascended
-						un(12, ach(11144)),		-- Power Realized
+					un(2, ach(11772, {		-- Power Ascended
+						un(2, ach(11144)),		-- Power Realized
 					})),
-					un(12, ach(11610, {		-- Power Unleashed
-						un(12, ach(11609)),		-- Power Unbound
+					un(2, ach(11610, {		-- Power Unleashed
+						un(2, ach(11609)),		-- Power Unbound
 					})),
 				},
 			}),

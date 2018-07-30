@@ -17,25 +17,25 @@ _.Instances =
 							["questID"] = 11165,	-- A Troll Among Trolls
 							["qg"] = 23761,	-- Quest Giver: Prigmon
 							["sourceQuest"] = 11164, -- Source Quest: Tuskin' Raiders
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 						},
 						{
 							["questID"] = 11171,	-- Hex Lord? Hah!
 							["qg"] = 23559,	-- Quest Giver: Budd
 							["sourceQuest"] = 11166, -- Source Quest: X Marks... Your Doom!
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 						},
 						{
 							["questID"] = 11130, 	-- Oooh, Shinies!
 							["qg"] = 19227,	-- Quest Giver: Griftah (Shattrath)
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["isBreadcrumb"] = true,
 						},
 						{
 							["questID"] = 11195,	-- Playin' With Dolls
 							["qg"] = 23897,	-- Quest Giver: Zungam
 							["sourceQuest"] = 11165, -- Source Quest: A Troll Among Trolls
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(34256)),	-- Charmed Amani Jewel
 							},
@@ -44,7 +44,7 @@ _.Instances =
 							["questID"] = 11132,	-- Promises, Promises...
 							["qg"] = 23559,	-- Quest Giver: Budd
 							["sourceQuest"] = 11130, -- Source Quest: Oooh, Shinies!
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 							["groups"] = {
 								un(2, i(34067)),	-- Tattered Hexcloth Sack
 							},
@@ -53,13 +53,13 @@ _.Instances =
 							["questID"] = 11164,	-- Tuskin' Raiders
 							["qg"] = 23761,	-- Quest Giver: Prigmon
 							["sourceQuest"] = 11130, -- Source Quest: Oooh, Shinies!
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 						},
 						{
 							["questID"] = 11166,	-- X Marks... Your Doom!
 							["qg"] = 23559,	-- Quest Giver: Budd
 							["sourceQuest"] = 11132, -- Source Quest: Promises, Promises...
-							["u"] = 12,			-- Legacy Content
+							["u"] = 2,			-- Legacy Content
 						},
 					}),
 					n(  0, {	-- Zone Drop
@@ -103,7 +103,7 @@ _.Instances =
 							n(-7781, {	-- Final Chest
 								["description"] = "This item could only be found in Ashli's Bag after the fourth animal boss had been defeated within the time limit of the event.\n\nOnly one player could receive this within a given raid lockout.\n\nBeware Master Loot!",
 								["groups"] = {
-									un(12, ach(430)),	-- Amani War Bear (FoS)
+									un(2, ach(430)),	-- Amani War Bear (FoS)
 									un(2, i(33809)),	-- Amani War Bear
 								},
 							}),
@@ -166,7 +166,7 @@ _.Instances =
 					n(130255, {	-- Zul'jin [Old ID: 23863, they reused it for Daakara]
 						["hideText"] = true,
 						["groups"] = {
-							un(12, ach(691)),	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
+							un(2, ach(691)),	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
 							un(2, i(33307)),	-- Formula: Enchant Weapon - Executioner
 							{
 								["itemID"] = 33102,	-- Blood of Zul'jin

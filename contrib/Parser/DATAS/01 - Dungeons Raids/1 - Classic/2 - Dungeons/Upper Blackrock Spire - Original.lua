@@ -10,7 +10,7 @@ _.Instances =
 			inst(559, { 	-- Upper Blackrock Spire
 				["groups"] = {
 					n(-40, {	-- Legacy
-						un(12, ach(2188)),	-- Leeeeeeeeeeeeeroy!
+						un(2, ach(2188)),	-- Leeeeeeeeeeeeeroy!
 						nlq({	-- Quests (Legacy)
 							q(27445, { 	-- General Drakkisath, Hand of Nefarian
 								un(34, i(66001)), 	-- Aeyla's Staff
@@ -180,7 +180,7 @@ _.Instances =
 							["description"] = "This boss could be summoned using the Brazier of Invocation.",
 						}),
 						n(10363, { 	-- General Drakkisath
-							un(12, ach(1307)),	-- Upper Blackrock Spire (Classic)
+							un(2, ach(1307)),	-- Upper Blackrock Spire (Classic)
 							i(15730, { 	-- Pattern: Red Dragonscale Breastplate
 								un(8, i(15047)),	-- Red Dragonscale Breastplate
 							}),

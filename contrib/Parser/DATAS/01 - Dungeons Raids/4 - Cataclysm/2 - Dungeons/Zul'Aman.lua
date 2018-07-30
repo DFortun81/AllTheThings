@@ -15,7 +15,7 @@ _.Instances =
 								{
 									["questID"] = 29188,	-- A Troll Among Trolls
 									["qg"] = 23761,	-- Quest Giver: Prigmon
-									["u"] = 12,			-- Legacy Content
+									["u"] = 2,			-- Legacy Content
 								},
 								qg(52933, q(29217)),	-- The Captive Scouts
 								qg(52925, q(29186, {	-- The Hex Lord's Fetish

@@ -2345,7 +2345,7 @@ _.Zones =
 							}),
 						}),
 					},
-					["u"] = 12,
+					["u"] = 2,
 				}),
 				n(-38, { 	-- Profession
 					prof(356, { -- Fishing

@@ -186,7 +186,7 @@ _.Zones =
 								--n(  0, {	-- Zone Drop (Legacy)
 								--}),
 							},
-							["u"] = 12,
+							["u"] = 2,
 						}),	--]]
 					},
 					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
@@ -952,7 +952,7 @@ _.Zones =
 								--n(  0, {	-- Zone Drop (Legacy)
 								--}),
 							},
-							["u"] = 12,
+							["u"] = 2,
 						}),	--]]
 					},
 					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
@@ -1404,7 +1404,7 @@ _.Zones =
 								--n(  0, {	-- Zone Drop (Legacy)
 								--}),
 							},
-							["u"] = 12,
+							["u"] = 2,
 						}),	--]]
 					},
 					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
