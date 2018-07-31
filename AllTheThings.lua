@@ -1955,6 +1955,7 @@ local function OpenMiniList(field, id, label)
 					end
 				end
 				header.u = nil;
+				header.visible = true;
 				setmetatable(header,
 					header.classID and app.BaseCharacterClass
 					or header.achievementID and app.BaseAchievement
