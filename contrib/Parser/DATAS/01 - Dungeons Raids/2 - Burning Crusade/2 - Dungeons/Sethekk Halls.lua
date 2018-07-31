@@ -11,17 +11,6 @@ _.Instances =
 						n(0, {	-- Zone Drop
 						i(25731),	-- Pattern: Stylin' Crimson Hat
 					}),
-					n(-3, {	-- Holiday
-						["groups"] = {
-							n(-60, {	-- Pilgrim's Bounty
-								["group"] = {
-									ach(3582),	-- Terokkar Turkey Time
-								},
-								["u"] = 28
-							}),
-						},
-						["icon"] = "Interface\\Icons\\INV_Helm_Cloth_WitchHat_B_01",
-					}),
 					d(1, {	-- Normal
 						n(-17, {	-- Quests 					
 							q(29606, {	-- Terokk's Legacy

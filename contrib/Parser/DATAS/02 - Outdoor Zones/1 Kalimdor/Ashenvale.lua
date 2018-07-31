@@ -6,29 +6,6 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(63, {		-- Ashenvale
 			["groups"] = {
-			--[[
-				n(-3, { 	-- Holidays
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								q(8725, {	-- Riversong the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 35.6, 48.9",			
-									["qg"] = 15605,	-- Elder Riversong		
-								}),
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-				}),
-				--]]
 				n(-25, { 	-- Pet Battle
 					p(478), 	-- Forest Moth
 					p(495), 	-- Frog

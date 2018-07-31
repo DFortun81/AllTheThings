@@ -83,7 +83,7 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests	
 					q(32806, {	-- The King and the Council
-						["g"] = {
+						["groups"] = {
 							i(98133, {	-- Greater Cache of Treasures
 								i(92821),	-- Bladesnap Breastplate
 								i(92881),	-- Bladesnap Drape
@@ -174,13 +174,13 @@ _.Zones =
 						["qg"] = 61962,	-- Lorewalker Cho
 					}),
 					q( 32815, {	-- The Old Seer
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 61962,	-- Lorewalker Cho
 						["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
 					}),
 					q(32807, {	-- The Warchief and the Darkness
-						["g"] = {
+						["groups"] = {
 							i(98133, {	-- Greater Cache of Treasures
 								i(92821),	-- Bladesnap Breastplate
 								i(92881),	-- Bladesnap Drape

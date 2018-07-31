@@ -6,25 +6,6 @@ _.Zones =
 	m(572, { 	-- Draenor
 		m(525, { 	-- Frostfire Ridge
 			["groups"] = {							
-				n(-3, { 	-- Holidays					
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
---							n(-17, { 	-- Quests
---							}),
-							n(-16, { 	-- Rares	
-								o(243911, { 	-- Snow Mound
-									["groups"] = {
-										dr(5.0, i(128770)),	-- Grumpling
-									},
-									["description"] = "Looting these has a chance to drop the pet.",
-									["icon"] = "Interface\\Icons\\INV_Ammo_Snowball",
-								}),	
-							}),	
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
-				}),								
 				n(-25, { 	-- Pet Battle
 					p(1427), 	-- Frostfur Rat
 					p(1578), 	-- Frostshell Pincer

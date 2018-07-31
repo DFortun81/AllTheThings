@@ -110,7 +110,7 @@ _.Zones =
 								["sourceQuests"] = { 27789 },	-- Troggish Troubles
 							}),
 							qa(27792, {	-- All's Fair in Love, War, and Archaeology
-								["g"] = {
+								["groups"] = {
 									i(63186),	-- Upstart's Breastplate
 									i(63185),	-- Counterfeit Chainmail
 									i(63184),	-- Excavation Bracers
@@ -199,7 +199,7 @@ _.Zones =
 							}),
 							o(206374, {	-- Trove of the Watchers
 								qa(27794, {	-- Return to Blam
-									["g"] = {
+									["groups"] = {
 										i( 63176),	-- Well Cushioned Boots
 										i( 63175),	-- Hieronymus' Belt
 										i( 63174),	-- Watcher's Spear
@@ -423,7 +423,7 @@ _.Zones =
 						-- }),
 						sz(765, 5, {	-- Scar of the Worldbreaker
 							qa(27833, {	-- Half-Ton Holdouts
-								["g"] = {
+								["groups"] = {
 									i(63199),	-- Storm's Bow
 									i(63198),	-- Half-Ton Pauldrons
 									i(63197),	-- Dustbelcher Boots
@@ -466,7 +466,7 @@ _.Zones =
 								["qg"] = 2860,	-- Sigrun Ironhew
 							}),
 							qa(27824, {	-- The Good Stuff
-								["g"] = {
+								["groups"] = {
 									i(63168),	-- Ironhew Cloak
 									i(63167),	-- Angor Pauldrons
 									i(63166),	-- Walloper's Chestpiece

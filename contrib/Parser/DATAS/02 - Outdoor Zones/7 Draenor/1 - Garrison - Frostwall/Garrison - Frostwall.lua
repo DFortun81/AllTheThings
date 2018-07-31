@@ -7,6 +7,7 @@ _.Zones =
 	m(572, { 	-- Draenor
 		h(m(590, {	-- Frostwall
 			["groups"] = {
+				--[[
 				nh(-3, { 	-- Holidays	 [DO NOT REMOVE AT ALL PER LUCETIA]			
 					n(-58, {     -- Hallow's End
 						["groups"] = {
@@ -63,16 +64,6 @@ _.Zones =
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
 						["u"] = 26,
 					}),	
---[[					
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
---]]					
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
 							nh(-17, { 	 -- Quests
@@ -121,6 +112,7 @@ _.Zones =
 						["u"] = 29,
 					}),						
 				}),								
+				--]]
 				nh(-4, { 	-- Achievements
 					ach(9914, { -- Azeroth's Top Twenty Tunes
 						i(122700), 	 -- Toy

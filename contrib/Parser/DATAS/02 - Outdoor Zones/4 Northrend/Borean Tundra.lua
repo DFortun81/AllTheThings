@@ -113,60 +113,6 @@ _.Zones =
 						},
 					},
 				}),
-				n( -3, { 	-- Holidays					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								q(13033, {	-- Arp the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 57.4, 43.6",			
-									["qg"] = 30364,	-- Elder Arp		
-								}),
-								q(13016, {	-- Northal the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 33.8, 34.2",			
-									["qg"] = 30360,	-- Elder Northal		
-								}),
-								q(13029, {	-- Pamuya the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 43, 49.4",			
-									["qg"] = 30371,	-- Elder Pamuya		
-								}),
-								q(13012, {	-- Sardis the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 59, 65.6",			
-									["qg"] = 30348,	-- Elder Sardis		
-								}),
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-				}),								
 				n(-25, { 	-- Pet Battle
 					p(641), 	-- Arctic Hare
 					p(639), 	-- Borean Marmot

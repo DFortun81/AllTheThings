@@ -2820,7 +2820,7 @@ _.Zones =
 				n(0, { -- Zone Drop
 					["groups"] = {
 						n(18873, { -- Disembodied Protector
-							["g"] = {
+							["groups"] = {
 								i(23610), -- Plans: Khorium Boots
 							},
 						}),

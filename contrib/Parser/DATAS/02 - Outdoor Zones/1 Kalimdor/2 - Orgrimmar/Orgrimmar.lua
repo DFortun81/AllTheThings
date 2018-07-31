@@ -1217,7 +1217,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["classes"] = { 9 },	-- Warlock
 					})),
 					qg(14720, qh(26830, {  -- Traitor's Bait (add'l QGs 39605 and 86832, previous Horde leaders)
-						["g"] = {
+						["groups"] = {
 							i(63916),	-- Belt of Mystical Betrayal
 							i(63914),	-- Mindsliced Chestguard
 							i(63913),	-- Twilight-Heart Shoulderplates

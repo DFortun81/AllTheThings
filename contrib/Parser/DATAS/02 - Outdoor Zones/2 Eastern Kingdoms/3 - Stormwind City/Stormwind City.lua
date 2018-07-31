@@ -292,7 +292,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(28578)),	-- Hero's Call: Eastern Plaguelands!
 --]]
 					qa(28543, {	-- Hero's Call: Felwood!
-						["g"] = {
+						["groups"] = {
 						},
 						["isBreadcrumb"] = true,	-- for "The Corruption of the Jadefire"
 					}),

@@ -29,49 +29,6 @@ _.Zones =
 						},
 					},
 				}),
-				n(-3, { 	-- Holidays
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								q(13013, {	-- Beldak the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},
-									["description"] = "Location: 60.6, 27.6",			
-									["qg"] = 30357,	-- Elder Beldak		
-								}),
-								q(13025, {	-- Lunaro the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 80.6, 37",			
-									["qg"] = 30367,	-- Elder Lunaro		
-								}),
-								q(13030, {	-- Whurain the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 64.2, 47",			
-									["qg"] = 30372,	-- Elder Whurain		
-								}),
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-				}),								
 				n(-25, { 	-- Pet Battle
 					p(647), 	-- Grizzly Squirrel
 					p(534), 	-- Imperial Eagle Chick

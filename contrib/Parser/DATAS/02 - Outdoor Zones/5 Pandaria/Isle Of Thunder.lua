@@ -30,16 +30,6 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-3, { 	-- Holidays
-					n(-51, {    	-- Noblegarden
-						["groups"] = {				
-							qg(19148, qa(13484)),	-- Spring Collectors 
--- Commenting Coordinates	qg(19172, qa(13484)),	-- Spring Collectors 
-						},
-						["achievementID"] = 2798,	-- Noble Gardener
-						["u"] = 19,
-					}),
-				}),
 				n(-25, { 	-- Pet Battle
 					p(1181), 	-- Elder Python
 					p(1179), 	-- Electrified Razortooth

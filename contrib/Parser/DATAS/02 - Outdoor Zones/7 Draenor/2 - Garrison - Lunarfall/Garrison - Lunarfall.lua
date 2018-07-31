@@ -5,7 +5,8 @@ _.Zones =
 {
 	m(572, { 	-- Draenor
 		m(582, {	-- Lunarfall
-			["groups"] = {				
+			["groups"] = {	
+				--[[
 				n(-3, { 	-- Holidays	 [DO NOT REMOVE AT ALL PER LUCETIA]
 					n(-58, {     -- Hallow's End
 						["groups"] = {
@@ -110,6 +111,7 @@ _.Zones =
 						["u"] = 29,
 					}),						
 				}),								
+				--]]
 				n(-4, { 	-- Achievements
 					ach(9912, {  -- Azeroth's Top Twenty Tunes
 						i(122700), 	-- Portable Audiophone

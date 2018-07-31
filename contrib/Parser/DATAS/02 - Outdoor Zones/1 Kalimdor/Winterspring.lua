@@ -7,13 +7,13 @@ _.Zones =
 		m(83, {	-- Winterspring
 			["groups"] = {
 				faction(576, {	-- Timbermaw Hold
-					["g"] = {
+					["groups"] = {
 						qr(q(28523, {	-- More Beads for Salfa
 							["qg"] = 11556,	-- Salfa
 							["sourceQuests"] = { 28522 },	-- Winterfall Activity
 						})),
 						q(28614, {	-- Bearzerker
-							["g"] = {
+							["groups"] = {
 								i(67216),	-- Firewater Amulet
 								i(67166),	-- Belt of Bloating
 								i(67183),	-- Bearzerker's Spaulders
@@ -48,7 +48,7 @@ _.Zones =
 						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
 					}),
 					qa(29034, {	-- They Grow Up So Fast
-						["g"] = {
+						["groups"] = {
 							i(13086),	-- Reins of the Winterspring Frostsaber (MOUNT!)
 						},
 						["qg"] = 10618,	-- Rivern Frostwind
@@ -77,7 +77,7 @@ _.Zones =
 					ach(4940, {	-- Winterspring Quests
 						crit(1, {	-- The Winterfall Furbolg
 							q(28522, {	-- Winterfall Activity
-								["g"] = {
+								["groups"] = {
 									i(21318),	-- Earth Warder's Gloves
 									i(21319),	-- Gloves of the Pathfinder
 									i(21320),	-- Vest of the Den Watcher
@@ -98,7 +98,7 @@ _.Zones =
 								["sourceQuests"] = { 28467 },	-- Mystery Goo
 							}),
 							q(28470, {	-- High Chief Winterfall
-								["g"] = {
+								["groups"] = {
 									i(67210),	-- Wand of Sudden Changes
 									i(67159),	-- Furbolg Fur Bracers
 									i(67176),	-- Princess Zoe's Old Hunting Gloves
@@ -112,7 +112,7 @@ _.Zones =
 								["sourceQuests"] = { 28467 },	-- Mystery Goo
 							}),
 							q(28460, {	-- Threat of the Winterfall
-								["g"] = {
+								["groups"] = {
 									i(67158),	-- Donova's Fuzzy Robe
 									i(67175),	-- Hot Spring Sandals
 									i(67192),	-- Snowden Legwraps
@@ -139,7 +139,7 @@ _.Zones =
 								["sourceQuests"] = { 28472 },	-- Words of the High Chief
 							}),
 							q(28513, {	-- Pride of the Highborne
-								["g"] = {
+								["groups"] = {
 									i(67177),	-- Amulet of the Kaldorei Spirit
 									i(67160),	-- Dagger of Suffering
 									i(67194),	-- Zin-Malor Ring
@@ -160,7 +160,7 @@ _.Zones =
 								["sourceQuests"] = { 28518 },	-- Legacy of the High Elves
 							}),
 							q(28519, {	-- Pain of the Blood Elves
-								["g"] = {
+								["groups"] = {
 									i(67161),	-- Dagger of Wretched Spectres
 									i(67195),	-- Mace of the Sin'dorei Spirit
 									i(67178),	-- Blade of Wretched Spirits
@@ -200,7 +200,7 @@ _.Zones =
 								["sourceQuests"] = { 28618 },	-- Boulder Delivery
 							}),
 							q(28625, {	-- Chop Chop
-								["g"] = {
+								["groups"] = {
 									i(67213),	-- Frostleaf Band
 									i(67163),	-- Chop Chop Boots
 									i(67180),	-- Treant-Bark Shoes
@@ -222,7 +222,7 @@ _.Zones =
 								["sourceQuests"] = { 28627 },	-- Seril's Boast
 							}),
 							q(28628, {	-- Ice Delivery (awarded criteria)
-								["g"] = {
+								["groups"] = {
 									i(67181),	-- Kilram's Killer
 									i(67164),	-- Lilith the Lithe's Little Hammer
 									i(67214),	-- Scourgebane's Slicer
@@ -252,7 +252,7 @@ _.Zones =
 								["sourceQuests"] = { 28706 },	-- Spray it Forward
 							}),
 							q(28710, {	-- Spray it One More Time
-								["g"] = {
+								["groups"] = {
 									i(67205),	-- Ring of Pesticide
 									i(67171),	-- Curtainfire Mantle
 									i(67188),	-- Fumigator's Legguards
@@ -269,7 +269,7 @@ _.Zones =
 								["sourceQuests"] = { 28637 },	-- A Taste for Bear
 							}),
 							q(28639, {	-- Ursius
-								["g"] = {
+								["groups"] = {
 									i(67167),	-- Shardtooth Gloves
 									i(67184),	-- Ursius's Cap
 									i(67217),	-- Bracers of Considerable Influence
@@ -285,7 +285,7 @@ _.Zones =
 								["sourceQuests"] = { 28638 },	-- The Owls Have It
 							}),
 							q(28782, {	-- A Bird of Legend (CHECK QG in game)
-								["g"] = {
+								["groups"] = {
 									i(67168),	-- Gloves of the Infernal Nocturnal
 									i(67185),	-- Hell-Hoot Mantle
 									i(67202),	-- Vest of the Smoking Pit
@@ -302,7 +302,7 @@ _.Zones =
 								["sourceQuests"] = { 28640 },	-- Fresh Frostsabers
 							}),
 							q(28742, {	-- Shy-Rotam
-								["g"] = {
+								["groups"] = {
 									i(67169),	-- Shy Breastplate
 									i(67186),	-- Shy Shrug
 									i(67219),	-- Breastplate of the Fifth Hunter
@@ -312,7 +312,7 @@ _.Zones =
 								["sourceQuests"] = { 28641 },	-- Pride of the Dinner Table
 							}),
 							q(28828, {	-- You Gotta Have Eggs
-								["g"] = {
+								["groups"] = {
 									i(67220),	-- Goodgrub Cloak
 									i(67170),	-- Gourmand's Sash
 									i(67187),	-- Snow Nest Bracers
@@ -336,7 +336,7 @@ _.Zones =
 								["sourceQuests"] = { 28627 },	-- Seril's Boast
 							}),
 							q(28722, {	-- Yetiphobia
-								["g"] = {
+								["groups"] = {
 									i(67223),	-- Umi's Masterful Shooter
 									i(67165),	-- Everlook Snow Shoes
 									i(67182),	-- Helm of Yetiphobia
@@ -359,7 +359,7 @@ _.Zones =
 								["sourceQuests"] = { 28829 },	-- Razor Beak and Antlers Pointy
 							}),
 							q(28831, {	-- Damn You, Frostilicus
-								["g"] = {
+								["groups"] = {
 									i(67172),	-- Cowl of Whistling Winds
 									i(67189),	-- Frostilicus's Hide
 									i(67206),	-- Owl Wing Belt
@@ -386,7 +386,7 @@ _.Zones =
 								["sourceQuests"] = { 28838 },	-- The Owlbeast's Defense
 							}),
 							q(28840, {	-- Winterwater
-								["g"] = {
+								["groups"] = {
 									i(67173),	-- Haleh's Warm Legwraps
 									i(67190),	-- Ice Avatar Legguards
 									i(67207),	-- Winterwater Cloak
@@ -398,7 +398,7 @@ _.Zones =
 								["sourceQuests"] = { 28840 },	-- Winterwater
 							}),
 							q(28842, {	-- Umbranse's Deliverance
-								["g"] = {
+								["groups"] = {
 									i(67222),	-- Umbranse's Staff
 									i(67174),	-- Bracers of Mazthoril
 									i(67191),	-- Dreamcatcher Helm
@@ -411,7 +411,7 @@ _.Zones =
 					}),
 					n(-168, {	-- Other Quests
 						q(44952, {	-- Blackrock Depths: Jewel of the Depths
-							["g"] = {
+							["groups"] = {
 								i(142357),	-- Plans: Dawn's Edge
 							},
 							["qg"] = 11184,	-- Wixxrak
@@ -430,7 +430,7 @@ _.Zones =
 							["isBreadcrumb"] = true,	-- for "Threat of the Winterfall"
 						}),
 						q(28540, {	-- Doin' De E'ko Magic
-							["g"] = {
+							["groups"] = {
 								i(67162),	-- E'ko Gatherer's Belt
 								i(67179),	-- Heart Grippers
 								i(67212),	-- Bear Hunter's Belt
@@ -1044,7 +1044,7 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							q(8798, {	-- A Yeti of Your Own
-								["g"] = {
+								["groups"] = {
 									un(8, recipe(26011)),	-- Tranquil Mechanical Yeti
 								},
 								["qg"] = 10305,	-- Umi Rumplesnicker

@@ -21,7 +21,7 @@ _.Instances =
 							["sourceQuests"] = { 29675 },	-- Hey There Dalliah
 						}),
 						faction(932, {	-- The Aldor
-							["g"] = {
+							["groups"] = {
 								q(10706, {	-- A Mysterious Portent
 									["groups"] = {
 									},

@@ -905,7 +905,7 @@ _.Zones =
 						}),
 					}),
 					n(17657, {		-- Logistics Officer Ulrike <Honor Hold Quartermaster>
-						["g"] = {
+						["groups"] = {
 							i(22531),	-- Formula: Enchant Bracer - Superior Healing
 							i(22547),	-- Formula: Enchant Chest - Exceptional Stats
 							i(33150),	-- Formula: Enchant Cloak - Subtlety
@@ -951,7 +951,7 @@ _.Zones =
 						}),
 					}),
 					n(17585, {		-- Quartermaster Urgronn <Thrallmar Quartermaster>
-						["g"] = {
+						["groups"] = {
 							i(24000),	-- Formula: Enchant Bracer - Superior Healing
 							i(24003),	-- Formula: Enchant Chest - Exceptional Stats
 							i(33151),	-- Formula: Enchant Cloak - Subtlety
@@ -992,7 +992,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					n(16583, { -- Rohok
-						["g"] = {
+						["groups"] = {
 							un(1, i(25847)), -- Plans: Eternium Rod
 							i(23638), -- Plans: Lesser Ward of Shielding
 						},

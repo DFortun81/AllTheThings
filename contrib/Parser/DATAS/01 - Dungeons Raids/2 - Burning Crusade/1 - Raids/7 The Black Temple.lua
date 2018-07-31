@@ -62,7 +62,7 @@ _.Instances =
 						["groups"] = {
 							ach(958),	-- Sworn to the Deathsworn
 							ach(426, {	-- Warglaives of Azzinoth
-								["g"] = {
+								["groups"] = {
 								},
 								["classes"] = { 6, 12, 10, 4, 1 },	-- DK, DH, Monk, Rogue, Warrior
 							}),

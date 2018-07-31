@@ -7,9 +7,9 @@ _.Zones =
 		m(32, {		-- Searing Gorge
 			["groups"] = {			
 				n(0, { -- Zone Drop
-					["g"] = {
+					["groups"] = {
 						o(266289, { -- Time Lost Chest
-							["g"] = {
+							["groups"] = {
 								i(142358), -- Plans: Blazing Rapier
 							},
 						}),

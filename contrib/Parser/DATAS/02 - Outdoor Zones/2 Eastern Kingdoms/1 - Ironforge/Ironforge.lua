@@ -33,7 +33,7 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					q(1618, { -- Gearing Redridge
-						["g"] = {
+						["groups"] = {
 							i(6735), -- Plans: Ironforge Breastplate
 						},
 						["qg"] = 6031, -- Tormus Deepforge
@@ -49,7 +49,7 @@ _.Zones =
 						i(23323),	-- Crown of the Fire Festival (reportedly transmoggable since 6.2.1)
 					})),
 					qa( 6625, {	-- Alliance Trauma
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 5150,	-- Nissa Firestone
 						["isBreadcrumb"] = true,	-- for Triage

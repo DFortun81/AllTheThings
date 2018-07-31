@@ -50,7 +50,7 @@ _.Zones =
 						}),
 					}),	
 					q(10676, {	-- Bane of the Illidari
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10670, 10667 },	-- Tear of the Earthmother & Underworld Loam
@@ -130,7 +130,7 @@ _.Zones =
 					q(10920),	-- For the Fallen
 --]]
 					qdg(q(10665, {	-- Fresh from the Mechanar
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10664 },	-- Additional Materials
@@ -204,7 +204,7 @@ _.Zones =
 					qa( 11882),	-- Playing with Fire
 --]]					
 					q(10679, {	-- Quenching the Blade
-						["g"] = {
+						["groups"] = {
 							i(30788),	-- Illidari-Bane Broadsword
 							i(30789),	-- Illidari-Bane Claymore
 							i(30787),	-- Illidari-Bane Mageblade
@@ -250,7 +250,7 @@ _.Zones =
 					q(10873),	-- Taken in the Night
 --]]
 					qdg(q(10670, {	-- Tear of the Earthmother
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10665, 10666 },	-- Fresh From the Mechanar & The Lexicon Demonica
@@ -308,7 +308,7 @@ _.Zones =
 					q(10896),	-- The Infested Protectors
 --]]
 					qdg(q(10666, {	-- The Lexicon Demonica
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10664 },	-- Additional Materials
@@ -338,7 +338,7 @@ _.Zones =
 					qa( 10035),	-- Torgos!
 --]]
 					qdg(q(10667, {	-- Underworld Loam
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10665, 10666 },	-- Fresh From the Mechanar & The Lexicon Demonica
@@ -405,7 +405,7 @@ _.Zones =
 					faction(1031, {	-- Sha'tari Skyguard
 						["groups"] = {
 							q(11008, {	-- Fires Over Skettis
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23048,	-- Sky Sergeant Doryn
 								["sourceQuests"] = { 11098 },	-- To Skettis!

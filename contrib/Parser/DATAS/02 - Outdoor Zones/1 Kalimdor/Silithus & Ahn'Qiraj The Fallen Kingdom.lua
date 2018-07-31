@@ -790,7 +790,7 @@ END OF MICRO-HOLIDAY --]]
 						i(13496),	-- Recipe: Greater Nature Protection Potion
 					}),
 					n(132139, { -- Hagras Wartaker (Silithus)
-						["g"] = {
+						["groups"] = {
 							i(12162), -- Plans: Hardened Iron Shortsword
 						},
 						["races"] = HORDE_ONLY,

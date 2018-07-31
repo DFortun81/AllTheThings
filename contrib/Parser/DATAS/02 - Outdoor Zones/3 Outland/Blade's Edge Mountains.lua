@@ -397,132 +397,132 @@ _.Zones =
 					faction(1038, {	-- Ogri'la
 						["groups"] = {
 							q(11057, {	-- The Trouble Below
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23233,	-- Chu'a'lor
 								["isBreadcrumb"] = true,	-- for following Mog'dorg quests
 							}),
 							q(10997, {	-- Even Gronn Have Standards
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 10983 },	-- Mog'dorg the Wizened
 							}),
 							q(10995, {	-- Grulloc Has Two Skulls
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 10983 },	-- Mog'dorg the Wizened
 							}),
 							q(10996, {	-- Maggoc's Treasure Chest
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 10983 },	-- Mog'dorg the Wizened
 							}),
 							q(10998, {	-- Grim(oire) Business
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 10997, 10995, 10996 },	-- Even Gronn Have Standards, Grulloc Has Two Skulls, & Maggoc's Treasure Chest
 							}),
 							q(11000, {	-- Into the Soulgrinder
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 10998 },	-- Grim(oire) Business
 							}),
 							q(11009, {	-- Ogre Heaven
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 11000 },	-- Into the Soulgrinder
 							}),
 							q(11025, {	-- The Crystals
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23233,	-- Chu'a'lor
 							}),
 							q(11058, {	-- An Apexis Relic
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23233,	-- Chu'a'lor
 								["sourceQuests"] = { 11025 },	-- The Crystals
 							}),
 							q(11080, {	-- The Relic's Emanation
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23233,	-- Chu'a'lor
 								["sourceQuests"] = { 11058 },	-- An Apexis Relic
 							}),
 							q(11059, {	-- Guardian of the Monument
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23233,	-- Chu'a'lor
 								["sourceQuests"] = { 11080 },	-- The Relic's Emanation (available before turn-in)
 							}),
 							q(11091, {	-- A Special Thank You
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23233,	-- Chu'a'lor
 								["sourceQuests"] = { 11059 },	-- Guardian of the Monument
 							}),
 							q(11030, {	-- Our Boy Wants To Be A Skyguard Ranger
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23316,	-- Torkus
 								["sourceQuests"] = { 11025 },	-- The Crystals
 							}),
 							q(11061, {	-- A Father's Duty
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23316,	-- Torkus
 								["sourceQuests"] = { 11030 },	-- Our Boy Wants To Be A Skyguard Ranger
 							}),
 							q(11079, {	-- A Fel Whip For Gahk (awarded "Ogres of Ogri'la" criteria)
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23300,	-- Gahk
 								["sourceQuests"] = { 11061 },	-- A Father's Duty
 							}),
 							q(11062, {	-- The Skyguard Outpost
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23233,	-- Chu'a'lor
 								["sourceQuests"] = { 11030 },	-- Our Boy Wants To Be A Skyguard Ranger
 							}),
 							q(11010, {	-- Bombing Run
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23120,	-- Sky Sergeant Vanderlip
 								["sourceQuests"] = { 11062 },	-- The Skyguard Outpost
 							}),
 							q(11023, {	-- Bomb Them Again!
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23120,	-- Sky Sergeant Vanderlip
 								["sourceQuests"] = { 11010 },	-- Bombing Run
 							}),
 							q(11119, {	-- Assault on Bash'ir Landing!
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23334,	-- Sky Commander Keller
 								["sourceQuests"] = { 11010 },	-- Bombing Run
 							}),
 							q(11065, {	-- Wrangle Some Aether Rays!
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23335,	-- Skyguard Khatie
 								["sourceQuests"] = { 11010 },	-- Bombing Run
 							}),
 							q(11066, {	-- Wrangle More Aether Rays!
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23335,	-- Skyguard Khatie
 								["sourceQuests"] = { 11065 },	-- Wrangle Some Aether Rays!
 							}),
 							q(11078, {	-- To Rule The Skies
-								["g"] = {
+								["groups"] = {
 								},
 								["qg"] = 23334,	-- Sky Commander Keller
 								["sourceQuests"] = { 11010, 11065 },	-- Bombing Run & Wrangle Some Aether Rays!
@@ -648,7 +648,7 @@ _.Zones =
 						})),
 					}),
 					n(16952, { -- Anger Guard
-						["g"] = {
+						["groups"] = {
 							i(23612), -- Plans: Ragesteel Helm
 						},
 					}),
@@ -742,7 +742,7 @@ _.Zones =
 						})),
 					}),
 					o(185927, {	-- Fel Crystal Prism
-						["g"] = {
+						["groups"] = {
 							n(23353, {	-- Braxxus
 								dr(1.4, i(32676, {	-- Depleted Cloth Bracers
 									i(32655),	-- Crystalweave Bracers
@@ -1020,7 +1020,7 @@ _.Zones =
 						})),
 					}),
 					n( 23333, {	-- The Grand Collector
-						["g"] = {
+						["groups"] = {
 							dr(4.0, i(32676, {	-- Depleted Cloth Bracers
 								i(32655),	-- Crystalweave Bracers
 							})),

@@ -661,7 +661,7 @@ _.Zones =
 								["requiredSkill"] = 164,	-- Blacksmithing
 							},
 							q(44927, {	-- Worth Its Weight in Steel
-								["g"] = {
+								["groups"] = {
 									i(142346),	-- Plans: Bleakwood Hew
 								},
 								["qg"] = 115805,	-- Hoddruc Bladebender

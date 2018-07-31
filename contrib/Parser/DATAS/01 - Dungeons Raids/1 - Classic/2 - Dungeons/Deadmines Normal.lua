@@ -162,7 +162,7 @@ _.Instances =
 						n(-40, {	-- Legacy
 							["groups"] = {
 								n(-17, {	-- Quests (Legacy)
-									["g"] = bubbleDown ({["u"] = 40}, { -- Legacy Quests
+									["groups"] = bubbleDown ({["u"] = 40}, { -- Legacy Quests
 										qa(214, { 	-- Red Silk Bandanas
 											un(34, i(6094)),	-- Piercing Axe
 											un(34, i(2089)), 	-- Scrimshaw Dagger

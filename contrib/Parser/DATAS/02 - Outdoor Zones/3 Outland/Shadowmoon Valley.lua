@@ -7,9 +7,9 @@ _.Zones =
 		m(104, {	-- Shadowmoon Valley (Outland)
 			["groups"] = {
 				n(0, { -- Zone Drop
-					["g"] = {
+					["groups"] = {
 						n(20878, { -- Deathforge Guardian
-							["g"] = {
+							["groups"] = {
 								i(23609), -- Plans: Khorium Pants
 							},
 						}),
@@ -723,7 +723,7 @@ _.Zones =
 					qa(10583),	-- The Fate of Flanis
 					qa(10612),	-- The Fel and the Furious
 					qa(10680, {	-- The Hand of Gul'dan
-						["g"] = {
+						["groups"] = {
 						},
 						["qg"] = 21937,	-- Earthmender Sophurus
 						["isBreadcrumb"] = true,	-- for Enraged Spirits of Fire and Earth
@@ -763,7 +763,7 @@ _.Zones =
 					
 					
 					faction( 932, {	-- The Aldor
-						["g"] = {
+						["groups"] = {
 							qr(q(10828, {	-- Single Mark of Sargeras
 								["groups"] = {
 								},
@@ -1069,7 +1069,7 @@ _.Zones =
 						}),
 					}),
 					faction( 934, {	-- The Scryers
-						["g"] = {
+						["groups"] = {
 							q( 10688),	-- A Necessary Distraction
 							q( 10689),	-- Altruis
 							q( 10684),	-- Oronu the Elder
@@ -1231,7 +1231,7 @@ _.Zones =
 						i(30755),	-- Mag'hari Fighting Claw
 					})),
 					n(19342, {	-- Krek Cragcrush <Blacksmithing Supplies>
-						["g"] = {
+						["groups"] = {
 							i(23596), -- Plans: Adamantite Breastplate
 							i(23594), -- Plans: Adamantite Plate Bracers
 							i(23595), -- Plans: Adamantite Plate Gloves
@@ -1239,7 +1239,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					n(19373, { -- Mari Stonehand
-						["g"] = {
+						["groups"] = {
 							un(1, i(25847)), -- Plans: Eternium Rod
 							i(23638), -- Plans: Lesser Ward of Shielding
 						},

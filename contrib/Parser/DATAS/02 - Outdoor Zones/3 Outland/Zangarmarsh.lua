@@ -32,7 +32,7 @@ _.Zones =
 								["sourceQuests"] = { 9787 },	-- Idols of the Feralfen
 							}),
 							qa(9803, { 	-- Messenger to the Feralfen
-								["g"] = {
+								["groups"] = {
 									i(25613), 	-- Feralfen Mystic's Handwraps
 									i(25614), 	-- Feralfen Beastmaster's Hauberk
 									i(25615), 	-- Feralfen Champion's Boots
@@ -49,7 +49,7 @@ _.Zones =
 								["qg"] = 18004,	-- Vindicator Idaar
 							}),
 							qa(9783, {	-- An Unnatural Drought
-								["g"] = {
+								["groups"] = {
 									i(25599),	-- Explorer's Bands
 									i(25598),	-- Fen Strider's Bracer
 									i(25597),	-- Vindicator's Cinch
@@ -62,7 +62,7 @@ _.Zones =
 								["qg"] = 18295,	-- Prospector Conall
 							}),
 							qa(9896, { 	-- Blacksting's Bane
-								["g"] = {
+								["groups"] = {
 									i(31786), 	-- Blacksting Shoulders
 									i(31787), 	-- Stalwart Girdle
 									i(31788), 	-- Blacksting Gloves
@@ -99,7 +99,7 @@ _.Zones =
 								["qg"] = 18008,	-- Ikuti
 							}),
 							qa(9839, { 	-- Overlord Gorefist
-								["g"] = {
+								["groups"] = {
 									i(25619),	-- Glowing Crystal Insignia
 									i(25618),	-- Telaar Courier's Cloak
 									i(31770),	-- Marsh Bracers
@@ -108,7 +108,7 @@ _.Zones =
 								["sourceQuests"] = { 9835 },	-- Ango'rosh Encroachment
 							}),
 							qa(9848, { 	-- Secrets of the Daggerfen
-								["g"] = {
+								["groups"] = {
 									i(25616),	-- Tim's Trusty Helmet
 								},
 								["qg"] = 18019,	-- Timothy Daniels
@@ -129,7 +129,7 @@ _.Zones =
 								["sourceQuests"] = { 10116 },	-- WANTED: Chieftain Mummaki
 							}),
 							qa(9833, {	-- Lines of Communication
-								["g"] = {
+								["groups"] = {
 									i( 27753),	-- Ensorcelled Marshfang Blade
 									i( 27754),	-- Keen Marshfang Slicer
 									i( 27756),	-- Marshfang Blade Axe
@@ -139,7 +139,7 @@ _.Zones =
 								["sourceQuests"] = { 10116 },	-- WANTED: Chieftain Mummaki
 							}),
 							qa(9902, {	-- The Terror of Marshlight Lake
-								["g"] = {
+								["groups"] = {
 									i(25924),	-- Swamprunner's Boots
 									i(25923),	-- Fierce Mantle
 									i(25922),	-- Fearless Girdle
@@ -201,7 +201,7 @@ _.Zones =
 								["sourceQuests"] = { 9718 },	-- As the Crow Flies
 							}),
 							{
-								["g"] = {
+								["groups"] = {
 									i(27734),	-- Expedition Caster's Band
 									i(27735),	-- Pendant of the Marsh
 									i(27733),	-- Warden's Ring of Precision
@@ -788,7 +788,7 @@ _.Zones =
 						i(27696),	-- Recipe: Blackened Sporefish
 					}),
 					n(19694, {		-- Loolruna <Armorer>
-						["g"] = {
+						["groups"] = {
 							i(23596), -- Plans: Adamantite Breastplate
 							i(23594), -- Plans: Adamantite Plate Bracers
 							i(23595), -- Plans: Adamantite Plate Gloves

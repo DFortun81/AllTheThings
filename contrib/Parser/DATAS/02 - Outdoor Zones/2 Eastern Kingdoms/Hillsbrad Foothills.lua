@@ -384,7 +384,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["itemID"] = 63090,	-- Muckgill's Flipper
 						["questID"] = 28154,	-- Muckgill's Flipper or Something...
-						["g"] = {
+						["groups"] = {
 							i(65691),	-- Floppy Shoulderguards
 							i(65669),	-- Keyton's Sash
 							i(131691),	-- Keyton's Mail Pauldrons
@@ -435,7 +435,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["itemID"] = 63686,	-- Daggerspine Attack Plans
 						["questID"] = 28345,	-- Preemptive Strike
-						["g"] = {
+						["groups"] = {
 							i(65716),	-- Daggerspine Ball
 							i(65698),	-- Daggerspine Dagger
 							i(65677),	-- Preemptive Staff

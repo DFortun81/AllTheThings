@@ -1526,17 +1526,6 @@ _.Zones =
 						}),
 					},
 				})),
-				n(-3, { 	-- Holidays					
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(19169, qh(13483)),	-- Spring Gatherers
-							}),
-						},
-						["achievementID"] = 2798,	-- Noble Gardener
-						["u"] = 19,
-					}),				
-				}),							
 				n(-4, {		-- Achievement
 					ach(1956, {	-- Higher Learning
 						["groups"] = {

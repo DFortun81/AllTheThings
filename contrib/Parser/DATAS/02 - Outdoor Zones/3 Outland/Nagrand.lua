@@ -6,62 +6,10 @@ _.Zones =
 	m(101, { 	-- Outland
 		m(107, { 	-- Nagrand (Outland)
 			["groups"] = {			
---[[				
-				n(-3, { 	-- Holidays					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-					n(-50, {     -- Love is in the Air
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1693,    -- Fool For Love
-						["u"] = 18,
-					}),
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),									
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
-				}),				
---]]			
 				n(0, { -- Zone Drop
-					["g"] = {
+					["groups"] = {
 						n(18203, { -- Murkblood Raider
-							["g"] = {
+							["groups"] = {
 								i(23608), -- Plans: Khorium Belt
 							},
 						}),
@@ -414,7 +362,7 @@ _.Zones =
 					
 					
 					faction(932, {	-- The Aldor
-						["g"] = {
+						["groups"] = {
 							q(10641, {	-- Against the Legion
 								["groups"] = {
 								},

@@ -29,35 +29,6 @@ _.Zones =
 						},
 					},
 				}),
-				n(-3, { 	-- Holidays
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								q(13027, {	-- Tauros the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 58.8, 56",			
-									["qg"] = 30369,	-- Elder Tauros		
-								}),
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-				}),							
-				n(-25, { 	-- Pet Battle
-					p(641), 	-- Arctic Hare
-					p(648), 	-- Huge Toad
-					p(387), 	-- Snake
-					p(412), 	-- Spider
-					p(535), 	-- Water Waveling
-					p(1238), 	-- Unborn Val'kyr
-				}),
 				n(-17, { 	-- Quests
 --[[				
 					q(12912),	-- A Great Storm Approaches
