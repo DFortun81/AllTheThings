@@ -218,6 +218,16 @@ _.Zones =
 						},
 					},
 				}),
+				n(0, { -- Zone Drop
+					["g"] = {
+						i(41122, { -- Plans: Reinforced Cobalt Chestpiece
+							["crs"] = {
+								28123, -- Venture Co. Excavator
+								28124, -- Venture Co. Ruffian
+							},
+						}),
+					},
+				}),
 				n(-25, { 	-- Pet Battle
 					p(649), 	-- Biletoad
 					p(1167), 	-- Emerald Proto-Whelp

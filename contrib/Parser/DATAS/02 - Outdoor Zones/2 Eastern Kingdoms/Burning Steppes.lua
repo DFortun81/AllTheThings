@@ -648,25 +648,28 @@ _.Zones =
 						-- sz(775, 6, { -- Black Tooth Hovel
 						-- }),
 						sz(775, 7, { -- Blackrock Stronghold
-							{
-								["qgs"] = {
-									48201,	-- Blackrock Sergeant
-									7027,	-- Blackrock Slayer
-									7025,	-- Blackrock Soldier
-									48120,	-- Firegut Reaver
-									48118,	-- Smolderthorn Shaman
+							i(142344, { -- Broken Axe Blade
+								["g"] = {
+									q(44926, { -- A Familiar Axe to Grind
+										["g"] = {},
+										["qgs"] = {
+											48201,	-- Blackrock Sergeant
+											7027,	-- Blackrock Slayer
+											7025,	-- Blackrock Soldier
+											48120,	-- Firegut Reaver
+											48118,	-- Smolderthorn Shaman
+										},
+									}),
 								},
-								["itemID"] = 142344,	-- Broken Axe Blade
-								["questID"] = 44926,	-- A Familiar Axe to Grind
-								["requiredSkill"] = 164,	-- Blacksmithing
-							},
-							q(44927, {	-- Worth Its Weight in Steel
-								["groups"] = {
-									i(142346),	-- Plans: Bleakwood Hew
+								["requiredSkill"] = 164, -- Classic Blacksmithing
+							}),
+							q(44927, { -- Worth Its Weight in Steel
+								["g"] = {
+									i(142346), -- Plans: Bleakwood Hew
 								},
-								["qg"] = 115805,	-- Hoddruc Bladebender
-								["sourceQuests"] = { 44926 },	-- A Familiar Axe to Grind
-								["requiredSkill"] = 164,	-- Blacksmithing
+								["qg"] = 115805, -- Hoddruc Bladebender
+								["sourceQuests"] = { 44926 }, -- A Familiar Axe to Grind
+								["requiredSkill"] = 164, -- Classic Blacksmithing
 							}),
 						}),
 						-- sz(775, 8, { -- The Whelping Downs

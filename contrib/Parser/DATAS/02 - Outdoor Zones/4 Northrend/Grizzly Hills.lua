@@ -29,6 +29,16 @@ _.Zones =
 						},
 					},
 				}),
+				n(0, { -- Zone Drop
+					["g"] = {
+						i(41123, { -- Plans: Reinforced Cobalt Helm
+							["crs"] = {
+								26270, -- Iron Rune-Shaper
+								26268, -- Rune Reaver
+							},
+						}),
+					},
+				}),
 				n(-25, { 	-- Pet Battle
 					p(647), 	-- Grizzly Squirrel
 					p(534), 	-- Imperial Eagle Chick

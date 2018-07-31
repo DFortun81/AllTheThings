@@ -8,49 +8,6 @@ _.Instances =
 		["groups"] = {
 			inst(64, { 	-- Shadowfang Keep
 				["groups"] = {
-					n(-50, {	-- Love Is In the Air
-						["groups"] = {
-							n(-17, {	-- Quests
-								i(49641, {	-- Faded Lovely Greeting Card
-									qa(24745, {	-- Something is in the Air (and it Ain't Love)
-										["groups"] = {
-										},
-										["qg"] = 36296,	-- Apothecary Hummel
-									}),
-									qh(14483, {	-- Something is in the Air (and it Ain't Love)
-										["groups"] = {
-										},
-										["qg"] = 36296,	-- Apothecary Hummel
-									}),
-								}),
-							}),
-							n(36296, {	-- Apothecary Hummel
-								i(54537, {	-- Heart-Shaped Box
-									["groups"] = {
-										un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
-										un(18, dr(6.0, i(50446))),	-- Toxic Wasteling
-										un(18, dr(6.0, i(50741))),	-- Vile Fumigator's Mask
-										un(18, dr(.33, i(50250))),	-- Big Love Rocket
-										un(18, dr(1.0, i(50471))),	-- The Heartbreaker
-									},
-									["lvl"] = 98,
-								}),
-								i(147907, {	-- Heart-Shaped Carton
-									["groups"] = {
-										un(18, dr(6.0, i(49715))),	-- Forever-Lovely Rose
-										un(18, dr(6.0, i(50446))),	-- Toxic Wasteling
-										un(18, dr(6.0, i(50741))),	-- Vile Fumigator's Mask
-										un(18, dr(1.0, i(50471))),	-- The Heartbreaker
-									},
-									["lvl"] = 16,
-								}),
-								i(117369),	-- Choker of the Pure Heart
-								i(117370),	-- Shard of Pirouetting Happiness
-								i(117368),	-- Sweet Perfume Brooch
-								i(117367),	-- Winking Eye of Love
-							}),
-						},
-					}),
 					d(1, {		-- Normal
 						n(-17, {	-- Quests 
 							qa(27917, { 	-- Sniffing Them Out
