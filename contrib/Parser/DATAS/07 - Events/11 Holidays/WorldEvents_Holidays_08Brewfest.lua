@@ -446,24 +446,24 @@ _.WorldEvents =
 								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
 							q(11486, { -- The Best of Brews (Alliance)
-								["qg"] = 23872, -- Coren Direbrew
 								["groups"] = {
 									un(2, i(34140)), -- Dark Iron Tankard
 								},
-								["maps"] = { 242, }, -- Blackrock Depths
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 11454, }, -- Seek the Saboteurs
-								["u"] = 40, -- Legacy Quest/Quest Item
+								["qg"] = 23872, -- Coren Direbrew
+								["u"] = 2,
+								["maps"] = { 242, }, -- Blackrock Depths
 							}),
 							q(11487, { -- The Best of Brews (Horde)
-								["qg"] = 23872, -- Coren Direbrew
 								["groups"] = {
 									un(2, i(34140)), -- Dark Iron Tankard
 								},
-								["maps"] = { 242, }, -- Blackrock Depths
+								["qg"] = 23872, -- Coren Direbrew
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 11454, }, -- Seek the Saboteurs
-								["u"] = 40, -- Legacy Quest/Quest Item
+								["u"] = 2,								
+								["maps"] = { 242, }, -- Blackrock Depths
 							}),
 							q(11442, { -- Welcome to Brewfest! (Alliance)
 								["groups"] = {},
@@ -494,12 +494,11 @@ _.WorldEvents =
 								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
 							q(12062, { -- Insult Coren Direbrew
-								["groups"] = {},
 								["qg"] = 26719, -- Brewfest Spy
-								["maps"] = { 242, }, -- Blackrock Depths
 								["sourceQuests"] = { 11442, }, -- Save Brewfest!
 								["isDaily"] = true,
-								["u"] = 40, -- Legacy Quest/Quest Item
+								["u"] = 2,
+								["maps"] = { 242, }, -- Blackrock Depths
 							}),
 							i(34028, { -- "Honorary Brewer" Hand Stamp (Alliance)
 								["groups"] = {
