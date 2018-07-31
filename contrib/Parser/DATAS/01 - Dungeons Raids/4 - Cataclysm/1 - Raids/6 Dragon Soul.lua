@@ -238,6 +238,7 @@ _.Instances =
 									i(77978),	-- Resolve of Undying
 									i(77975),	-- Will of Unbinding
 									i(77974),	-- Wrath of Unchaining
+									i(122198),	-- Music Roll: The Shattering [Note: Crieve got on stream]
 								})),
 								cr(56173, e(333, {	-- Madness of Deathwing
 									i(152981),	-- Severed Tentacle (PET!)
