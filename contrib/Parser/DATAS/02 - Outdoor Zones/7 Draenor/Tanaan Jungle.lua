@@ -18,10 +18,10 @@ _.Zones =
 						i(127975), -- Marked Cloak of Command
 						i(127973), -- Nether-Touched Cloak
 						i(127972), -- Spellcloak of Suramar
-						i(127982), -- Terrorweave Wristwraps
 						i(127981), -- Bracers of Perfect Discomfort
 						i(127983), -- Supreme Felchain Bracers
-						i(127984), -- Wristclaps of Righteous Reckoning
+						i(127982), -- Terrorweave Wristwraps
+						i(127984), -- Wristclasps of Righteous Reckoning
 						i(124545), -- Chipped Soul Prism
 						i(124546), -- Mark of Supreme Doom
 					},
