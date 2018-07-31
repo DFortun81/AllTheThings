@@ -1054,6 +1054,7 @@ AllTheThings.Locales.enUS = {
 		[-222] = select(2, GetAchievementInfo(9726)),							-- Treasure Hunter
 		[-223] = DAILY,															-- Daily
 		[-224] = "Illidari",													-- Illidari
+		[-225] = "Elemental Bonds",												-- Elemental Bonds
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
