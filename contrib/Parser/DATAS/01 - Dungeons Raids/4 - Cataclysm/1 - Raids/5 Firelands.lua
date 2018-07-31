@@ -421,6 +421,7 @@ _.Instances =
 									i(71617),	-- Crystallized Firestone
 									i(69237),	-- Living Ember
 									i(71409),	-- Funeral Pyre
+									i(71406),	-- Mandible of Beth'tilac
 									i(71408),	-- Ward of the Red Widow
 									i(71411),	-- Cowl of the Clicking Menace
 									i(71403),	-- Flickering Shoulders
