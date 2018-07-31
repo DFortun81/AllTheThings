@@ -1195,7 +1195,6 @@ _.Zones =
 						dr(01.1, i(6567)),	-- Shimmering Armor
 					}), 
 					n(14276, { 	-- Scargil
-						dr(01.0, i(11152)),	-- Formula: Enchant Gloves - Fishing
 						dr(09.0, i(6563)),	-- Shimmering Bracers
 						dr(09.0, i(6564)),	-- Shimmering Cloak
 						dr(08.0, i(6581)),	-- Scouting Belt
@@ -1288,15 +1287,6 @@ _.Zones =
 						dr(01.3, i(9782)),	-- Bandit Jerkin
 						dr(01.0, i(9783)),	-- Raider's Chestpiece
 					}), 
-					n(2375, {	-- Torn Fin Coastrunner
-						dr(0.02, i(11152)),	-- Formula: Enchant Gloves - Fishing
-					}),
-					n(2376, {	-- Torn Fin Oracle
-						dr(0.02, i(11152)),	-- Formula: Enchant Gloves - Fishing
-					}),
-					n(2377, {	-- Torn Fin Tidehunter
-						dr(0.04, i(11152)),	-- Formula: Enchant Gloves - Fishing
-					}),
 					n(51057, { 	-- Weevil
 						dr(08.0, i(6562)),	-- Shimmering Boots
 						dr(06.0, i(6574)),	-- Defender Bracers
@@ -1448,6 +1438,16 @@ _.Zones =
 						i(4829),	-- Dreamer's Belt
 						i(4828),	-- Nightwind Belt
 						i(4827),	-- Wizard's Belt
+					}),
+				}),
+				n(  0, {	-- Zone Drop
+					i(11152, {	-- Formula: Enchant Gloves - Fishing
+						["crs"] = {
+							14276,	-- Scargil
+							2375,	-- Torn Fin Coastrunner
+							2376,	-- Torn Fin Oracle
+							2377,	-- Torn Fin Tidehunter
+						},
 					}),
 				}),
 				n(-40, {	-- Legacy
