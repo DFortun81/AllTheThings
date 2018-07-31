@@ -6117,7 +6117,7 @@ local function RowOnClick(self, button)
 						end
 					end
 				end
-			elseif TSMAPI_FOUR then
+			elseif TSMAPI_FOUR and false then
 				if reference.g and #reference.g > 0 then
 					if true then
 						app.print("TSM4 not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!");
