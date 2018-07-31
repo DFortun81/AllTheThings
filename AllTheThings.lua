@@ -1499,7 +1499,7 @@ local function SearchForSourceIDQuickly(sourceID)
 		if group and #group > 0 then return group[1]; end
 	end
 end
-local function SearchForItemLink(link)
+local function SearchForItemLink(field, link)
 	if string.match(link, "item") then
 		-- Skip artifact weapons and common for now
 		local quality = select(3, GetItemInfo(link));
@@ -1710,7 +1710,7 @@ local function SearchForItemLink(link)
 	end
 end
 local function SearchForCachedItemLink(itemLink)
-	return GetCachedSearchResults(itemLink, SearchForItemLink, itemLink);
+	return GetCachedSearchResults(itemLink, SearchForItemLink, "itemID", itemLink);
 end
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
@@ -2573,10 +2573,10 @@ local function MergeSearchResults(group, itemID)
 		end
 	end
 end
-local function AttachTooltipRawSearchResults(self, listing, group)
+local function AttachTooltipRawSearchResults(self, listing, group, paramA, paramB)
 	if listing then
 		-- Display the pre-calculated row data.
-		if #listing > 0 then
+		if #listing > 0 and GetDataSubMember("SourceText", paramA, true) then
 			for i,text in ipairs(listing) do
 				local left, right = strsplit("/", text);
 				if right then
@@ -2708,7 +2708,7 @@ local function AttachTooltipRawSearchResults(self, listing, group)
 end
 local function AttachTooltipSearchResults(self, search, method, ...)
 	local listing, group = GetCachedSearchResults(search, method, ...);
-	AttachTooltipRawSearchResults(self, listing, group);
+	AttachTooltipRawSearchResults(self, listing, group, ...);
 end
 local function AttachTooltipForEncounter(self, encounterID)
 	if GetDataMember("ShowEncounterID") then self:AddDoubleLine(L("ENCOUNTER_ID"), tostring(encounterID)); end
@@ -2836,7 +2836,7 @@ local function AttachTooltip(self)
 					local link = select(2, self:GetItem());
 					if link then
 						if itemID == (tonumber(select(2, strsplit(":", link)) or "0") or 0) then
-							AttachTooltipSearchResults(self, link, SearchForItemLink, link);
+							AttachTooltipSearchResults(self, link, SearchForItemLink, "itemID", link);
 							self:Show();
 						else
 							AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForFieldAndSummarize, "itemID", itemID);
@@ -2849,7 +2849,7 @@ local function AttachTooltip(self)
 				else
 					local link = select(2, self:GetItem());
 					if link then
-						AttachTooltipSearchResults(self, link, SearchForItemLink, link);
+						AttachTooltipSearchResults(self, link, SearchForItemLink, "itemID", link);
 						self:Show();
 					end
 				end
@@ -2905,7 +2905,7 @@ local function AttachTooltip(self)
 					self:Show();
 				else
 					local link = select(2, self:GetItem());
-					if link then AttachTooltipSearchResults(self, link, SearchForItemLink, link); end
+					if link then AttachTooltipSearchResults(self, link, SearchForItemLink, "itemID", link); end
 					
 					local spellID = select(2, self:GetSpell());
 					if spellID then AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForFieldAndSummarize, "spellID", spellID); end

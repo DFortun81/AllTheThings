@@ -1774,7 +1774,7 @@ local function createTooltipFrame(parent)
 	addObject(elm,database)
 	
 	local databaseFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-databaseFrame", child, "ThinBorderTemplate");
-	databaseFrame:SetSize(child:GetWidth(),60)
+	databaseFrame:SetSize(child:GetWidth(),90)
 	databaseFrame:SetPoint("TOPLEFT",database,0,-frameSpacer);
 	addObject(elm,databaseFrame)
 	
@@ -1793,6 +1793,54 @@ local function createTooltipFrame(parent)
 		end);
 	dataLoc:SetPoint("TOPLEFT",database,5,-frameSpacer)
 	addObject(elm,dataLoc)
+	
+	-- This creates the "Show for Items" Checkbox --
+	local sourceTextOption = createCheckBox("Show for Items", child, function(self)
+			app.SetDataSubMember("SourceText", "itemID", self:GetChecked());
+			wipe(app.searchCache);
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataSubMember("SourceText", "itemID", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option to see the database locations on all items.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	sourceTextOption:SetPoint("TOPLEFT",dataLoc,5,-frameSpacer)
+	addObject(elm,sourceTextOption)
+	
+	-- This creates the "Show for Encounters" Checkbox --
+	local sourceTextOptionEncounters = createCheckBox("Show for Encounters", child, function(self)
+			app.SetDataSubMember("SourceText", "encounterID", self:GetChecked());
+			wipe(app.searchCache);
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataSubMember("SourceText", "encounterID", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option to see the database locations on all encounter icons on the map.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	sourceTextOptionEncounters:SetPoint("TOPLEFT",sourceTextOption,0,-frameSpacer)
+	addObject(elm,sourceTextOptionEncounters)
+	
+	-- This creates the "Show for Creatures" Checkbox --
+	sourceTextOption = createCheckBox("Show for Creatures", child, function(self)
+			app.SetDataSubMember("SourceText", "creatureID", self:GetChecked());
+			wipe(app.searchCache);
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataSubMember("SourceText", "creatureID", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option to see the database locations on all creatures and NPCs.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	sourceTextOption:SetPoint("TOPLEFT",sourceTextOptionEncounters,0,-frameSpacer)
+	addObject(elm,sourceTextOption)
 	
 	-- This creates the "Show Completed Locations" Checkbox --
 	local compLoc = createCheckBox("Show Completed Locations", child, function(self)
