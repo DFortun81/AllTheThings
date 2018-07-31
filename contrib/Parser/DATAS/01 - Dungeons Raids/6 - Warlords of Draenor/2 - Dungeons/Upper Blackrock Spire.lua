@@ -374,7 +374,7 @@ _.Instances =
 								["groups"] = {
 									i(117528), -- Lanticore Spawnling (PET!)
 								},
-								["description"] "This rare spawns next to the right of Kyrak (2nd boss) Droprate should be about 100% for pet",
+								["description"] = "This rare spawns next to the right of Kyrak (2nd boss) Droprate should be about 100% for pet",
 							}),
 							cr(79912, e(1228, {		-- Commander Tharbek
 								ig(21524),	-- Red Winter Hat
@@ -636,7 +636,7 @@ _.Instances =
 								["groups"] = {
 									i(117528), -- Lanticore Spawnling (PET!)
 								},
-								["description"] "This rare spawns next to the right of Kyrak (2nd boss) Droprate should be about 100% for pet",
+								["description"] = "This rare spawns next to the right of Kyrak (2nd boss) Droprate should be about 100% for pet",
 							}),
 							cr(79912, e(1228, {		-- Commander Tharbek
 								ig(21524),	-- Red Winter Hat
