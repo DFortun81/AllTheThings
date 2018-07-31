@@ -173,13 +173,36 @@ _.Instances =
 						i(29995),	-- Leggings of Murderous Intent
 						i(29991),	-- Sunhawk Leggings
 						i(29997),	-- Band of the Ranger-General
-						un(15, i(30317)), -- Cosmic Infuser 
-						un(15, i(30316)), -- Devastation 
-						un(15, i(30312)), -- Infinity Blade 
-						un(15, i(30318)), -- Netherstrand Longbow 
-						un(15, i(30314)), -- Phaseshift Bulwark 
-						un(15, i(30313)), -- Staff of Disintegration 
-						un(15, i(30311)), -- Warp Slicer 
+						-- We are going to mark them as not collectible here.  If we don't it counts as a +1 type item.
+						-- While not a big deal we need to think of debug completionists
+						i(30317, { -- Cosmic Infuser 
+							["collectible"] = false,
+							["u"] = 15,
+						}),
+						i(30316, { -- Devastation 
+							["collectible"] = false,
+							["u"] = 15,
+						}),
+						i(30312, { -- Infinity Blade 
+							["collectible"] = false,
+							["u"] = 15,
+						}),
+						i(30318, { -- Netherstrand Longbow 
+							["collectible"] = false,
+							["u"] = 15,
+						}),
+						i(30314, { -- Phaseshift Bulwark 
+							["collectible"] = false,
+							["u"] = 15,
+						}),
+						i(30313, { -- Staff of Disintegration 
+							["collectible"] = false,
+							["u"] = 15,
+						}),
+						i(30311, { -- Warp Slicer 
+							["collectible"] = false,
+							["u"] = 15,
+						}),
 					})),
 				},
 				["isRaid"] = true,

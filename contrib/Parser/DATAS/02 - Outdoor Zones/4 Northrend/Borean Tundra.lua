@@ -611,7 +611,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
-								["sourceQuests"] = { 11704 } ,
+								["sourceQuests"] = { 11702 } ,
 							}),
 							q(11559, {	--  Winterfin Commerce
 								["groups"] = {
@@ -1115,7 +1115,7 @@ _.Zones =
 							}),
 						}),
 						crit(7, {	-- Participant Observation
-							q(11702, {	--  King Mrgl-Mrgl [A]
+							q(11702, {	--  King Mrgl-Mrgl [H]
 								["groups"] = {
 								},
 								["qg"] = 25736,	-- Supply Master Taz'ishi
@@ -1173,16 +1173,16 @@ _.Zones =
 								["qg"] = 25205,	-- Mrmrglmr
 								["sourceQuest"] = 11563,
 							}),
-							q(11566, {	-- Surrender... Not!
-								["groups"] = {
-									i(37215),  -- Lost Sea Oculus
-									i(37392),  -- Soggy Hide Pauldrons
-									i(37426),  -- Rusty Mesh Leggings
-									i(37506),  -- Bogstrok Plate Gloves
-								},
-								["qg"] = 25197,	-- King Mrgl-Mrgl
-								["sourceQuest"] = 11565,
-							}),
+						q(11566, {	-- Surrender... Not!
+							["groups"] = {
+								i(37215),  -- Lost Sea Oculus
+								i(37392),  -- Soggy Hide Pauldrons
+								i(37426),  -- Rusty Mesh Leggings
+								i(37506),  -- Bogstrok Plate Gloves
+							},
+							["qg"] = 25197,	-- King Mrgl-Mrgl
+							["sourceQuest"] = 11565,
+						}),
 							q(11569, {	--  Keymaster Urmgrgl
 								["groups"] = {
 								},
