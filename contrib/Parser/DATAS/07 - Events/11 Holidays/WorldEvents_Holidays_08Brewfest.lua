@@ -445,6 +445,7 @@ _.WorldEvents =
 								},
 								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
+							--[[
 							q(11486, { -- The Best of Brews (Alliance)
 								["groups"] = {
 									un(2, i(34140)), -- Dark Iron Tankard
@@ -465,6 +466,7 @@ _.WorldEvents =
 								["u"] = 2,								
 								["maps"] = { 242, }, -- Blackrock Depths
 							}),
+							--]]
 							q(11442, { -- Welcome to Brewfest! (Alliance)
 								["groups"] = {},
 								["qg"] = 24710, -- Ipfelkofer Ironkeg
@@ -493,6 +495,7 @@ _.WorldEvents =
 								["sourceQuests"] = { 11447, }, -- Welcome to Brewfest! (Horde)
 								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
+							--[[
 							q(12062, { -- Insult Coren Direbrew
 								["qg"] = 26719, -- Brewfest Spy
 								["sourceQuests"] = { 11442, }, -- Save Brewfest!
@@ -500,6 +503,7 @@ _.WorldEvents =
 								["u"] = 2,
 								["maps"] = { 242, }, -- Blackrock Depths
 							}),
+							--]]
 							i(34028, { -- "Honorary Brewer" Hand Stamp (Alliance)
 								["groups"] = {
 									q(11419, { -- Brewfest Riding Rams
