@@ -241,6 +241,18 @@ _.ClassHalls =
 					sp(219663) -- Heroic Weapons [No item associated]
 				}),
 				--]]
+--[[ These quests moved here from Uldum. Organize later plz?					
+					qart(qg(47684, q(40570, {	-- Into The Heavens
+						["groups"] = {
+						},
+						["classes"] = {10},
+					}))),
+					qart(qg(47684, q(40634, {	-- Thunder on the Sands
+						["groups"] = {
+						},
+						["classes"] = {10},
+					}))),
+--]]					
 			}),
 			n(99041, { -- Scouting Map
 				["groups"] = {
