@@ -2351,6 +2351,7 @@ _.Zones =
 							q(11724, {	--  Massive Moth Omelet? [H]
 								["groups"] = {
 								},
+								["races"] = HORDE_ONLY,
 							}),
 						}),
 					}),
