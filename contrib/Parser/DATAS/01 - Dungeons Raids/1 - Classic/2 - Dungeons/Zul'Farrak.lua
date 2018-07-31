@@ -8,6 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(241, { 	-- Zul'Farrak
 				["groups"] = {
+				--[[
 					n(-47, {	-- Lunar Festival						
 						["groups"] = {						
 							n(-17, {	-- Quests				
@@ -26,7 +27,8 @@ _.Instances =
 							}),					
 						},						
 						["achievementID"] = 913,	-- To Honor One's Elders						
-					}),							
+					}),		
+					--]]
 					n(-17, {	-- Quests
 						q(27070, {	-- A Fool's Errand
 							["groups"] = {

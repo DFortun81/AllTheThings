@@ -8,6 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(229, { 	-- Lower Blackrock Spire
 				["groups"] = {
+				--[[
 					n(-47, {	-- Lunar Festival						
 						["groups"] = {						
 							n(-17, {	-- Quests				
@@ -26,6 +27,7 @@ _.Instances =
 						},						
 						["achievementID"] = 913, -- To Honor One's Elders						
 					}),
+					--]]
 					n(-17, {	-- Quests 			
 						q(27440, {	-- Trolls, Ogres, and Orcs, Oh My!
 							i(65933),	-- Highlord's Chestpiece

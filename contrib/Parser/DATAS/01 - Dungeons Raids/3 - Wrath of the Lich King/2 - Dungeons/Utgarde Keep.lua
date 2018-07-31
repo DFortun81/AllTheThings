@@ -8,6 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(285, { 	-- Utgarde Keep
 				["groups"] = {
+				--[[
 					n(-47, {	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -27,6 +28,7 @@ _.Instances =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
+					--]]
 					n(-17, {	-- Quests
 						h(q(30112,{ 	-- A Score to Settle
 							["groups"] = {

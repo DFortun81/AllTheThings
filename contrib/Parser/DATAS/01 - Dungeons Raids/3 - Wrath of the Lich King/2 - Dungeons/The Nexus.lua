@@ -8,6 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(281, { 	-- The Nexus
 				["groups"] = {
+				--[[
 					n(-47, {	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -27,6 +28,7 @@ _.Instances =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
+					--]]
 					n(-17, {	-- Quests
 						ql(q(29225, {	-- Actionable Intelligence [Legendary Questline: Dragonwrath]
 							["qg"] = 53567,	-- Tarecgosa

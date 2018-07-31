@@ -8,6 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(228, { 	-- Blackrock Depths		
 				["groups"] = {
+				--[[
 					n(-47, {	-- Lunar Festival
 						["groups"] = {
 							n(-17, {	-- Quests				
@@ -76,6 +77,7 @@ _.Instances =
 						},
 						["achievementID"] = 1683, -- Brewmaster
 					}),
+					--]]
 					n(-17, {	-- Quests
 						n(-75, { -- Detention Block
 							qa(27569, { -- Dark Iron Tacticians

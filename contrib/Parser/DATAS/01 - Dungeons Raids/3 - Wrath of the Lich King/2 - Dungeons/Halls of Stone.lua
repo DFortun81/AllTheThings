@@ -8,6 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(277, { 	-- Halls of Stone
 				["groups"] = {
+				--[[
 					n(-47, {	-- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests
@@ -27,6 +28,7 @@ _.Instances =
 						["achievementID"] = 913, -- To Honor One's Elders
 						["u"] = 17,
 					}),
+					--]]
 					d(  1, {	-- Normal
 						n(0, {		-- Zone Drop
 							i(35681),	-- Unrelenting Blade
