@@ -792,6 +792,39 @@ END OF MICRO-HOLIDAY --]]
 					n(132139, { -- Hagras Wartaker (Silithus)
 						["groups"] = {
 							i(12162), -- Plans: Hardened Iron Shortsword
+							i(66100), -- Plans: Ebonsteel Belt Buckle
+							i(66113), -- Plans: Elementium Bonesplitter
+							i(66106), -- Plans: Elementium Deathplate
+							i(66115), -- Plans: Elementium Earthguard
+							i(66107), -- Plans: Elementium Girdle of Pain
+							i(67603), -- Plans: Elementium Gutslicer
+							i(66111), -- Plans: Elementium Hammer
+							i(66112), -- Plans: Elementium Poleaxe
+							i(66114), -- Plans: Elementium Shank
+							i(66110), -- Plans: Elementium Spellblade
+							i(66116), -- Plans: Elementium Stormshield
+							i(67606), -- Plans: Forged Elementium Mindcrusher
+							i(66105), -- Plans: Hardened Elementium Girdle
+							i(66104), -- Plans: Hardened Elementium Hauberk
+							i(66109), -- Plans: Light Elementium Belt
+							i(66108), -- Plans: Light Elementium Chestguard
+							i(66101), -- Plans: Pyrium Shield Spike
+							i(66103), -- Plans: Pyrium Weapon Chain
+							i(66127), -- Plans: Vicious Ornate Pyrium Belt
+							i(66128), -- Plans: Vicious Ornate Pyrium Boots
+							i(66125), -- Plans: Vicious Ornate Pyrium Bracers
+							i(66132), -- Plans: Vicious Ornate Pyrium Breastplate
+							i(66126), -- Plans: Vicious Ornate Pyrium Gauntlets
+							i(66131), -- Plans: Vicious Ornate Pyrium Helm
+							i(66130), -- Plans: Vicious Ornate Pyrium Legguards
+							i(66129), -- Plans: Vicious Ornate Pyrium Shoulders
+							i(66119), -- Plans: Vicious Pyrium Belt
+							i(66120), -- Plans: Vicious Pyrium Boots
+							i(66117), -- Plans: Vicious Pyrium Bracers
+							i(66124), -- Plans: Vicious Pyrium Breastplate
+							i(66118), -- Plans: Vicious Pyrium Gauntlets
+							i(66123), -- Plans: Vicious Pyrium Helm
+							i(66122), -- Plans: Vicious Pyrium Legguards
 						},
 						["races"] = HORDE_ONLY,
 					}),
