@@ -1044,38 +1044,39 @@ _.WorldEvents =
 							--]]
 							-- ALLIANCE PART II [LUCETIA: UNORGANIZED DUE TO WAITING FOR LAUNCH TO VERIFY IN THE ORDER IT ORIGINALLY WAS]
 							qa(52973, {	-- A Threat From the North
-								--["qg"] = , -- 
 								["sourceQuests"] = { 52279 }, -- A Looming Threat
 							}),	
 							qa(52974, {	-- Rescue Effort
-								--["qg"] = , -- 
+								["qg"] = 140877, -- Malfurion Stormrage
 								["sourceQuests"] = { 52973 }, -- A Threat From the North
 							}),	
 							qa(53622, {	-- Defending Lor'danel
-								--["qg"] = , -- 
+								["qg"] = 140877, -- Malfurion Stormrage
 								["sourceQuests"] = { 52973 }, -- A Threat From the North
 							}),	
 							qa(52975, {	-- Action This Day
-								--["qg"] = , -- 
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 52973 }, -- A Threat From the North
+							}),	
+							qa(52977, {	-- The Guidance of Our Shan'do
+								["qg"] = 134578, -- Captain Delaryn Summermoon
 								["sourceQuests"] = { 
 									52974, -- Rescue Effort
 									53622, -- Defending Lor'danel
-								}, 
-							}),	
-							qa(52977, {	-- The Guidance of Our Shan'do
-								--["qg"] = , -- 
-								["sourceQuests"] = { 52975 }, -- Action This Day
+									52975, -- Action This Day
+								},
 							}),	
 							qa(53095, {	-- A Flicker of Hope
-								--["qg"] = , -- 
+								["qg"] = 142978, -- Mia Greymane <Queen of Gilneas>
 								["sourceQuests"] = { 52977 }, -- The Guidance of Our Shan'do
+								["description"] = "You do not have to save all 982 people.  Once timer runs out this quest is removed and next one is auto-accepted.",
 							}),	
 							qa(53310, {	-- From the Ashes…
 								["groups"] = {
 									i(163127), -- Smoldering Reeins of the Teldrassil Hippogryph
-								},
-								--["qg"] = , -- 
+								}, 
 								["sourceQuests"] = { 53095 }, -- A Flicker of Hope
+								["description"] = "Upon either failing or completing \"A Flicker of Hope\" this quest is auto-accepted",
 							}),	
 							-- Horde Part I
 							qh(53627, { -- A Gift of Azerite
@@ -1182,28 +1183,27 @@ _.WorldEvents =
 								["sourceQuests"] = { 50879 }, -- The Trees Have Ears
 							}),	
 							--]]
-							-- Horde Part II [LUCETIA: UNORGANIZED DUE TO WAITING FOR LAUNCH TO VERIFY IN THE ORDER IT ORIGINALLY WAS]
+							-- PART 2
 							qh(52967, {	-- Saurfang Returns
-								--["qg"] = , -- 
 								["sourceQuests"] = { 52806 }, -- A Looming Threat
 							}),	
 							qh(52970, {	-- No Small Mercy
-								--["qg"] = , -- 
+								["qg"] = 142310, -- High Overlord Saurfang
 								["sourceQuests"] = { 52967 }, -- Saurfang Returns
 							}),	
 							qh(52971, {	-- Seaside Rendezvous
-								--["qg"] = , -- 
+								["qg"] = 142310, -- High Overlord Saurfang
 								["sourceQuests"] = { 52967 }, -- Saurfang Returns
 							}),	
 							qh(53610, {	-- Driving Them Out
-								--["qg"] = , -- 
+								["qg"] = 142310, -- High Overlord Saurfang
 								["sourceQuests"] = { 52967 }, -- Saurfang Returns
 							}),	
 							qh(52981, {	-- Killer Queen
 								["groups"] = {
 									i(163128), -- War-Torn Reins of the Undercity Plaguebat
 								},
-								--["qg"] = , -- 
+								["qg"] = 142310, -- High Overlord Saurfang
 								["sourceQuests"] = {
 									52970, -- No Small Mercy
 									52971, -- Seaside Rendezvous

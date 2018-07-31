@@ -1936,7 +1936,7 @@ local function createAboutFrame(parent)
 	local text = {}
 	text.introString = "|CFFADD8E6\nDo you find yourself completing old content just so that you can get literally everything for your Collections? Say no more! ALL THE THINGS will help you with your endeavor by giving you the ability to track your completion for everything.|r";
 	text.featureString = "|CFFADD8E6Features: \n • Supports tracking of Achievements, Appearances, Illusions, Mounts, Music Rolls, Pets, Quests, Titles & Toys \n • Primary Collections Window is moveable and resizeable \n • Auto Minilist \n • Datatext Support \n • Filters to allow you to customize the addon to your preferences \n • Extra tooltip information (Models, Icons, Descriptions, etc) \n • Fanfare music when you learn anything new. \n|r";
-	text.endString = "|CFFADD8E6Author -- Imoldgregg \nContributers -- Lucetia, Daktar, Slumber, Avella, Oiche, Gold, Aiue, Blueyleader, Iyanden, and Eiltherune \nDiscord -- https://discord.gg/Uv9XAr |r";
+	text.endString = "|CFFADD8E6Author -- Imoldgregg \nContributers -- Lucetia, Daktar, Slumber, Avella, Oiche, Gold, Aiue, Blueyleader, Iyanden, and Eiltherune \nDiscord -- https://discord.gg/3RAUKgu |r";
 		
 	local about = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 	about:SetPoint("TOPLEFT", 16, -10)
@@ -1976,7 +1976,7 @@ local function createAboutFrame(parent)
 	text.q9 = "|CFFADD8E6Q) Is there any way to filter out PvP items? \n|r";
 	text.a9 = "PvP items are not able to be filtered out.  This is because about a third to a half of the available appearances come from PvP gear and are purchasable with Marks of Honor, obtainable via PvE World Quests in Legion. You can filter out PvP items that are unobtainable or only available to top-tier PvPers, like Elite and Gladiator items by turning on the 'PvP Elite/Gladiator' filter under 'Account Filters'  Current season gear is excluded from this filter as it is still obtainable at the time (this may change in the future).\n \n";
 	text.q10 = "|CFFADD8E6Q)What do I do if I have a suggestion, complaint, etc?\n|r";
-	text.a10 = "A) Feel free to post at \nhttps://github.com/DFortun81/AllTheThings/issues \nhttps://mods.curse.com/addons/wow/267285-all-the-things \nhttp://www.mmo-champion.com/threads/2227927-ALL-THE-THINGS-New-Transmog-Addon \nor join our discord -- https://discord.gg/Uv9XAr";
+	text.a10 = "A) Feel free to post at \nhttps://github.com/DFortun81/AllTheThings/issues \nhttps://mods.curse.com/addons/wow/267285-all-the-things \nhttp://www.mmo-champion.com/threads/2227927-ALL-THE-THINGS-New-Transmog-Addon \nor join our discord -- https://discord.gg/3RAUKgu";
 	
 	message = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 	message:SetPoint("TOPLEFT",faq,5,-frameSpacer)

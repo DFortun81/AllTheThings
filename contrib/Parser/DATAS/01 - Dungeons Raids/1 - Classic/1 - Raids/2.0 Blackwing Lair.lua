@@ -361,6 +361,6 @@ _.Instances = { tier(1, {	-- Classic
 		["sharedLockout"] = 1,
 		["lvl"] = 50,
 		["mapID"] = 287,
-		["maps"] = { 288, 289, 290, 291 },
+		["maps"] = { 288, 289, 290 },
 	}),
 })};

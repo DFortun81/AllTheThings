@@ -94,7 +94,7 @@ _.WorldEvents =
 							un(6, i(128425)),	-- Reins of the Illidari Felstalker
 						})),
 					}),
-					n(-205, {	-- Battle for Azeroth
+					n(-10052, {	-- Battle for Azeroth
 						un(6, h(ach(12230, {	-- Collector's Edition: Gilded Ravasaur
 							i(153540),	-- Gilded Ravasaur
 						}))),
