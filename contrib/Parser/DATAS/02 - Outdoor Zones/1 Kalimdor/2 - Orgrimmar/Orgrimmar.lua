@@ -918,12 +918,49 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["classes"] = {12},
 					})),
 --]]					
-					qh(2751, {	-- Barbaric Battlements
+					q(2751, { -- Barbaric Battlements
 						["groups"] = {
-							i(7979),	-- Plans: Barbaric Iron Breastplate
+							i(7979), -- Plans: Barbaric Iron Breastplate
 						},
-						["qg"] = 7790,	-- Orokk Omosh
-						["requiredSkill"] = 164,	-- Blacksmithing
+						["qg"] = 7790, -- Orokk Omosh
+						["races"] = HORDE_ONLY,
+						["requiredSkill"] = 164, -- Blacksmithing
+					}),
+					q(2752, { -- On Iron Pauldrons
+						["groups"] = {
+							i(7978), -- Plans: Barbaric Iron Shoulders
+						},
+						["qg"] = 7790, -- Orokk Omosh
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 2751, -- Barbaric Battlements
+						["requiredSkill"] = 164, -- Blacksmithing
+					}),
+					q(2753, { -- Trampled Under Foot
+						["groups"] = {
+							i(7981), -- Plans: Barbaric Iron Boots
+						},
+						["qg"] = 7790, -- Orokk Omosh
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 2752, -- On Iron Pauldrons
+						["requiredSkill"] = 164, -- Blacksmithing
+					}),
+					q(2754, { -- Horns of Frenzy
+						["groups"] = {
+							i(7980), -- Plans: Barbaric Iron Helm
+						},
+						["qg"] = 7790, -- Orokk Omosh
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 2753, -- Trampled Under Foot
+						["requiredSkill"] = 164, -- Blacksmithing
+					}),
+					q(2755, { -- Joys of Omosh
+						["groups"] = {
+							i(7982), -- Plans: Barbaric Iron Gloves
+						},
+						["qg"] = 7790, -- Orokk Omosh
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 2754, -- Horns of Frenzy
+						["requiredSkill"] = 164, -- Blacksmithing
 					}),
 					qdg(qh(27396, {	-- Blade of the Shattered Hand
 						["groups"] = {
@@ -982,27 +1019,11 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qp202(qg(11017, q(29475))),	-- Goblin Engineering
 					qp356(qg(45540, qh( 6623))),	-- Horde Trauma
 --]]					
-					qh( 2754, {	-- Horns of Frenzy
-						["groups"] = {
-							i(7980),	-- Plans: Barbaric Iron Helm
-						},
-						["qg"] = 7790,	-- Orokk Omosh
-						["sourceQuests"] = { 2753 },	-- Trampled Under Foot
-						["requiredSkill"] = 164,	-- Blacksmithing
-					}),
 --[[					
 					desc(qh( 32674), "This quest is automatically offered to Horde players upon reaching level 60."),	-- I Believe You Can Fly (despite this quest, you can learn flying anywhere - not sure if it should be included?)
 					qg(95234, q(44663)),	-- In the Blink of an Eye
 --					qh(47251),	-- Interesting Times (LEGACY - 13th anniversary, quest was received via mail and ended in Org)
 --]]					
-					qh( 2755, {	-- Joys of Omosh
-						["groups"] = {
-							i(7982),	-- Plans: Barbaric Iron Gloves
-						},
-						["qg"] = 7790,	-- Orokk Omosh
-						["sourceQuests"] = { 2754 },	-- Horns of Frenzy
-						["requiredSkill"] = 164,	-- Blacksmithing
-					}),
 --[[
 					desc(q(32673), "This quest is available to Goblins upon reaching level 20.", {	-- Learn To Ride
 						["groups"] = {
@@ -1058,14 +1079,6 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qg(43062, qh(26417)),	-- Northern Stranglethorn: The Fallen Empire
 					qp755(qg(50482, qh(25161))),	-- Ogrezonians in the Mood
 --]]					
-					qh( 2752, {	-- On Iron Pauldrons
-						["groups"] = {
-							i(7978),	-- Plans: Barbaric Iron Shoulders
-						},
-						["qg"] = 7790,	-- Orokk Omosh
-						["sourceQuests"] = { 2751 },	-- Barbaric Battlements
-						["requiredSkill"] = 164,	-- Blacksmithing
-					}),
 --[[
 					qp171(qg(3347, q(29067))),	-- Potion Master
 					qg(35068, qh(26642)),	-- Preserving the Barrens
@@ -1227,14 +1240,6 @@ Legacy				qh( 1436),	-- Alliance Relations
 						},
 						["lvl"] = 84,
 					})),					
-					qh( 2753, {	-- Trampled Under Foot
-						["groups"] = {
-							i(7981),	-- Plans: Barbaric Iron Boots
-						},
-						["qg"] = 7790,	-- Orokk Omosh
-						["sourceQuests"] = { 2752 },	-- On Iron Pauldrons
-						["requiredSkill"] = 164,	-- Blacksmithing
-					}),
 --					qp171(qg(3347, q(29482))),	-- Transmutation Master
 					qdg(q(28475, {	-- Twilight Scheming
 						["groups"] = {

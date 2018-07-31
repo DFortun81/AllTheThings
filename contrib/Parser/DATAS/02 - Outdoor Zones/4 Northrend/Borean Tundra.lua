@@ -2364,7 +2364,7 @@ _.Zones =
 					-- q( 46055),	-- FLAG - March of the Tadpoles Bit 05
 					-- q( 46064),	-- The Ways of the World
 				}),
-				n( -2, { 	-- Vendors
+				n(-2, { -- Vendors
 					n(25206, { -- Ahlurglgr <Clam Vendor>
 						i(34597, { --  Winterfin Clam
 							i(37461),	-- Tidebreaker Trident
@@ -2372,11 +2372,23 @@ _.Zones =
 							i(37463),	-- Winterfin Patch of Honor
 						}),
 					}),
+					n(32565, { -- Gara Skullcrush (Borean Tundra)
+						["g"] = {
+							i(44938), -- Plans: Titanium Plating
+						},
+						["races"] = HORDE_ONLY,
+					}),
 					n(27147, {	-- Librarian Erickson <Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					}),
+					n(32564, { -- Logistics Officer Silverstone (Borean Tundra)
+						["g"] = {
+							i(44937), -- Plans: Titanium Plating
+						},
+						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 			},

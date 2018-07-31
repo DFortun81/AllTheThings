@@ -387,6 +387,11 @@ _.Zones =
 								i(48116), -- Gundrak Hatchling
 							},
 						}),
+						n(29235, { -- Gundrak Savage
+							["g"] = {
+								i(41120), -- Plans: Reinforced Cobalt Legplates
+							},
+						}),
 					},
 				}),
 			},

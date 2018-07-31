@@ -1747,30 +1747,38 @@ _.Zones =
 					n(24539, {	-- "Silvermoon" Harry
 						i(6097),	-- Acolyte's Shirt
 					}),
-					a(n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
-						i(38453),	-- Shield of the Lion-Hearted
-						i(38455),	-- Hammer of hte Alliance Vanguard
-						i(38457),	-- Sawed-Off Hand Cannon
-						i(38459),	-- Orb of the EAstern Kingdons
-						i(38463),	-- Lordaeron's Resolve
-						i(38464),	-- Gnomish Magician's Quill
-						i(38465),	-- Vanguard Soldier's Dagger
-						i(44503, {	-- Schematic: Mekgineer's Chopper
-							i(44413),	-- Mekgineer's Chopper Mount
-						}),
-					})),
-					h(n(32774, {	-- Sebastian Crane <Horde Expedition Quartermaster>
-						i(38452),	-- Bulwark of the Warchief
-						i(38454),	-- Warsong Punisher
-						i(38456),	-- Sin'dorei Recurve Bow
-						i(38458),	-- Darkspear Orb
-						i(38460),	-- Chaged Wand of the Cleft
-						i(38461),	-- Warsong Shanker
-						i(38462),	-- Warsong Stormshield
-						i(44502, {	-- Schematic: Mechano-Hog
-							i(41508),	-- Mechano-Hog Mount
-						}),
-					})),
+					n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
+						["g"] = {
+							i(38453),	-- Shield of the Lion-Hearted
+							i(38455),	-- Hammer of hte Alliance Vanguard
+							i(38457),	-- Sawed-Off Hand Cannon
+							i(38459),	-- Orb of the EAstern Kingdons
+							i(38463),	-- Lordaeron's Resolve
+							i(38464),	-- Gnomish Magician's Quill
+							i(38465),	-- Vanguard Soldier's Dagger
+							i(44938), -- Plans: Titanium Plating
+							i(44503, {	-- Schematic: Mekgineer's Chopper
+								i(44413),	-- Mekgineer's Chopper Mount
+							}),
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(32774, {	-- Sebastian Crane <Horde Expedition Quartermaster>
+						["g"] = {
+							i(38452),	-- Bulwark of the Warchief
+							i(38454),	-- Warsong Punisher
+							i(38456),	-- Sin'dorei Recurve Bow
+							i(38458),	-- Darkspear Orb
+							i(38460),	-- Chaged Wand of the Cleft
+							i(38461),	-- Warsong Shanker
+							i(38462),	-- Warsong Stormshield
+							i(44938), -- Plans: Titanium Plating
+							i(44502, {	-- Schematic: Mechano-Hog
+								i(41508),	-- Mechano-Hog Mount
+							}),
+						},
+						["races"] = HORDE_ONLY,
+					}),
 					h(n(24028, {	-- Talu Frosthoof <Bowyer>
 						i(11308),	-- Sylvan Shortbow
 						i(11307),	-- Massive Longbow

@@ -33,12 +33,6 @@ _.Instances =
 								i(45544),	-- Leggings of the Tortured Earth
 								i(45542),	-- Greaves of the Stonewarder
 								i(45605),	-- Daschal's Bite
-								i(45089),
-								i(45088),
-								i(45092),
-								i(45090),
-								i(45093),
-								i(45091),
 								i(45100),
 								i(45094),
 								i(45096),
@@ -86,6 +80,27 @@ _.Instances =
 								34135,	-- Winter Rumbler
 								34271,	-- XD-175 Compactobot
 								34269,	-- XR-949 Salvagebot
+							},
+						}),
+						n(-1, { -- Common Boss Drop
+							["crs"] = {
+								33113, -- Flame Leviathan
+								33118, -- Ignis the Furnace Master
+								33293, -- XT-002 Deconstructor
+								32927, -- Runemaster Molgeim
+								32857, -- Stormcaller Brundir
+								32867, -- Steelbreaker
+								33515, -- Auriaya
+								33271, -- General Vezax
+								33288, -- Yogg-Saron
+							},
+							["g"] = {
+								i(45089), -- Plans: Battlelord's Plate Boots
+								i(45088), -- Plans: Belt of the Titans
+								i(45092), -- Plans: Indestructible Plate Girdle
+								i(45090), -- Plans: Plate Girdle of Righteousness
+								i(45093), -- Plans: Spiked Deathdealers
+								i(45091), -- Plans: Treads of Destiny
 							},
 						}),
 						cr(33113, e(1637, {	-- Flame Leviathan

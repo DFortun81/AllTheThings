@@ -1911,15 +1911,19 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
 				}),
-				n(0, {		-- Zone Drop
-					n(26343, {	-- Indu'le Fisherman
-						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
+				n(0, { -- Zone Drop
+					i(50406, { -- Formula: Enchant Gloves - Angler
+						["crs"] = {
+							26343, -- Indu'le Fisherman
+							26336, -- Indu'le Mystic
+							26344, -- Indu'le Warrior
+						},
 					}),
-					n(26336, {	-- Indu'le Mystic
-						dr(0.7, i(50406)),	-- Formula: Enchant Gloves - Angler
-					}),
-					n(26344, {	-- Indu'le Warrior
-						dr(0.9, i(50406)),	-- Formula: Enchant Gloves - Angler
+					i(41124, { -- Plans: Reinforced Cobalt Shoulders
+						["crs"] = {
+							27330, -- Onslaught Infantry
+							27333, -- Onslaught Mason
+						},
 					}),
 				}),
 			},

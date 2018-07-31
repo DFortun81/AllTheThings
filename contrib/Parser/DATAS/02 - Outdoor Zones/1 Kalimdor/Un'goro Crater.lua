@@ -19,199 +19,218 @@ _.Zones =
 					p(502), 	-- Spotted Bell Frog
 					p(405), 	-- Tree Python
 				}),
-				n(  0, {	-- Zone Drops
-					{
-						["itemID"] = 142377,	-- Badly Broken Dark Spear
-						["questID"] = 45044,	-- Weapon No More
-						["requiredSkill"] = 164, -- Blacksmithing
-						["groups"] = {
-							{
-								["questID"] = 45051,	-- Reverse Blacksmithing
-								["qg"] = 115923,	-- Quest Giver: Ko'Zan <Courier>
-								["sourceQuest"] = 45044,	-- Source Quest: Weapon No More
+				n(0, { -- Zone Drops
+					["g"] = {
+						i(142377, { -- Badly Broken Dark Spear
+							["g"] = {
+								q(45044, { -- Weapon No More
+									["g"] = {},
+									["qgs"] = {
+										9376, -- Blazerunner
+										6510, -- Bloodpetal Flayer
+										38346, -- Devilsaur Queen
+										9163, -- Diemetradon
+										38329, -- Durrin Direshovel
+										9164, -- Elder Diemetradon
+										9167, -- Frenzied Pterrordax
+										6553, -- Gorishi Reaver
+										6554, -- Gorishi Stinger
+										6555, -- Gorishi Tunneler
+									},
+								}),
 							},
-							{
-								["questID"] = 45055,	-- A Taste of Their Own Medicine
-								["qg"] = 115923,	-- Quest Giver: Ko'Zan <Courier>
-								["sourceQuest"] = 45051,	-- Source Quest: Reverse Blacksmithing
-							},
-							{
-								["questID"] = 45057,	-- Saving My Head
-								["qg"] = 115923,	-- Quest Giver: Ko'Zan <Courier>
-								["sourceQuest"] = 45055,	-- Source Quest: A Taste of Their Own Medicine
-								["groups"] = {
-									i(142383),	-- Plans: Darkspear
-								},
-							},
-						},
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
 					},
 				}),
 				n(-17, {	-- Quests
-					qg(9999, q(24735, { -- A Little Help From My Friends
-						i(53566),
-						i(53567),
-						i(53568),
-					})),
-					qg(9272, q(24709, { -- A Tale of Two Shovels
-						i(53600),
-						i(53601),
-						i(53602),
-					})),
-					qg(38263, q(24855, { -- Aberrant Flora
-						i(53569),
-						i(53570),
-					})),
---[[					
-					qg(38270, q(24698)),	-- Adventures in Archaeology
-					o(161521, {	-- Research Equipment
-						q(24866),	-- An Abandoned Research Camp
-					}),
-					qg(38237, q(24703)),	-- An Important Lesson
-					qg(28092, q(12797)),	-- Back Through the Waygate
---]]					
-					qg(9270, q(24690, { -- Blazerunner
-						i(53574),
-						i(53575),
-						i(53576),
-					})),
---[[					
-					qg(38263, q(24687)),	-- Bouquets of Death
-					qg(38274, q(24686)),	-- Carried on the Waves
-					qg(9618, q(24714)),	-- Chasing A-Me 01
---]]					
-					qg(38274, q(24719, { -- Claws of White
-						i(53557),
-						i(53559),
-					})),
---[[
-					o(164955, {	-- Northern Crystal Pylon
-						q(24725),	-- Crystal Charge
-						q(24724),	-- Crystal Restore
-					}),
-					o(164957, {	-- Eastern Crystal Pylon
-						q(24726),	-- Crystal Force
-						q(24727),	-- Crystal Spire
-					}),
-					o(164956, {	-- Western Crystal Pylon
-						q(24728),	-- Crystal Ward
-						q(24729),	-- Crystal Yield
-					}),
-					qg(9117, q(24720)),	-- Crystals of Power
-					qg(38237, q(24705)),	-- Damsels Were Made to be Saved (secondary QG ID 38255)
---]]					
-					qg(38502, q(24695, { -- Ever Watching From Above
-						i(53595),
-						i(53596),
-					})),
---[[					
-					qg(38269, q(24854)),	-- Finding Stormclaw
-					qg(10302, q(24742)),	-- Finding the Source
-					qg(38274, q(24689)),	-- Flowing to the North
-					qg(34320, qh(13903)),	-- Gorishi Grub	(MOUNT daily, Venomhide Ravasaur)
---]]					
-					qg(38276, q(24699, { -- Gormashh the Glutinous
-						i(53592),
-						i(53593),
-					})),
-					qg(38276, q(24700)),	-- Hard to Harvest
-					o(202135, {	-- Dadanga's Grave
-						q(24702),	-- Here Lies Dadanga
-					}),
-					qg(38270, q(24697, { -- How to Make Meat Fresh Again
-						i(53563),
-						i(53564),
-						i(53565),
-						i(156996),	-- Tailspike Pike 
-					})),
---[[					
-					qg(34320, qh(13889)),	-- Hungry, Hungry Hatchling (MOUNT daily, Venomhide Ravasaur)
-					o(161526, {	-- Crate of Foodstuffs
-						q(24865),	-- Is This Stuff Still Good?
-					}),
-					qg(9997, q(24734)),	-- Lost!
---]]					
-					qg(38277, q(24701, { -- Marshal's Refuse
-						i(53580),
-						i(53581),
-						i(53582),
-					})),
---[[					
-					qg(10977, q(24693)),	-- Mossy Pile
-					qg(10977, q(24691)),	-- Peculiar Delicacies
-					qg(34320, qh(13904)),	-- Poached, Scrambled, Or Raw? (MOUNT daily, Venomhide Ravasaur)
-					qg(9623, q(24715)),	-- Repairing A-Me 01
---]]					
-					qg(9272, q(24730, { -- Roll the Bones
-						i(53585),
-						i(53586),
-					})),						
---					qg(34320, qh(13905)),	-- Searing Roc Feathers (MOUNT daily, Venomhide Ravasaur)
-					qg(9623, q(24926, { -- Serving A-Me 01
-						i(53571),
-						i(53572),
-						i(53573),
-					})),
-					qg(9998, q(24736, { -- Shizzle's Flyer
-						i(53589),
-						i(53590),
-						i(53591),
-						un(2, i(11917)),	-- Shizzle's Nozzle Wiper
-					})),
---[[					
-					qg(10302, q(24794)),	-- Speak With Spraggle
-					qg(38276, q(24737)),	-- Super Sticky
---]]					
-					qg(28092, q(12547, { -- The Activation Rune
-						i(39366),
-						i(39411),
-						i(39442),
-						i(39465),
-					})),
---					qg(38275, q(24717)),	-- The Apes of Un'Goro
-					qg(9619, q(24733, { -- The Bait for Lar'korwi
-						i(53587),
-						i(53588),
-					})),
-					qg(38237, q(24707, { -- The Ballad of Maximillian (secondary QG ID 38343)
-						i(53598),
-						i(53599),
-					})),
---[[
-					qg(38269, q(28859)),	-- The Dunes of Silithus
-					qg(38263, q(24721)),	-- The Eastern Pylon
-					qg(38237, q(24704)),	-- The Evil Dragons of Un'Goro Crater (secondary QG ID 38255)
-					qg(9619, q(24731)),	-- The Fare of Lar'korwi
---]]					
-					qg(9271, q(24692, { -- The Fledgling Colossus
-						i(53577),
-						i(53578),
-						i(53579),
-					})),
---					qg(9272, q(24708)),	-- The Fossil-Finder 3000
-					q(24718, { -- The Mighty U'cha
-						["groups"] = {
-							i(53583), -- Beast Clobberer
-							i(53584),
-							i(156995),	-- Beastflayer
-						},
-						["description"] = "This quest should pop up when you enter the cave to do The Apes of Un'Goro.",
-					}),
-					--[[					
-					qg(38275, q(24722)),	-- The Northern Pylon
-					qg(9619, q(24732)),	-- The Scent of Lar'korwi
-					qg(38504, q(24694)),	-- The Shaper's Terrace
-					qg(38237, q(24706)),	-- The Spirits of Golakka Hot Springs (secondary QG ID 38255)
-					qg(9272, q(24723)),	-- The Western Pylon
---]]
-					qg(11701, qh(13906, { -- They Grow Up So Fast (final MOUNT quest)
-						i(46102),	-- Reins of the Venomhide Ravasaur
-					})),
---[[					
-					qg(11701, qh(13850)),	-- Toxic Tolerance
-					qg(11701, qh(13887)),	-- Venomhide Eggs
-					qg(9270, q(24740)),	-- Volcanic Activity
---]]					
---					q(24688),	-- Zen'Aliri (NEVER IMPLEMENTED)
+					["g"] = {
+						qg(9999, q(24735, { -- A Little Help From My Friends
+							i(53566),
+							i(53567),
+							i(53568),
+						})),
+						qg(9272, q(24709, { -- A Tale of Two Shovels
+							i(53600),
+							i(53601),
+							i(53602),
+						})),
+						qg(38263, q(24855, { -- Aberrant Flora
+							i(53569),
+							i(53570),
+						})),
+	--[[					
+						qg(38270, q(24698)),	-- Adventures in Archaeology
+						o(161521, {	-- Research Equipment
+							q(24866),	-- An Abandoned Research Camp
+						}),
+						qg(38237, q(24703)),	-- An Important Lesson
+						qg(28092, q(12797)),	-- Back Through the Waygate
+	--]]					
+						qg(9270, q(24690, { -- Blazerunner
+							i(53574),
+							i(53575),
+							i(53576),
+						})),
+	--[[					
+						qg(38263, q(24687)),	-- Bouquets of Death
+						qg(38274, q(24686)),	-- Carried on the Waves
+						qg(9618, q(24714)),	-- Chasing A-Me 01
+	--]]					
+						qg(38274, q(24719, { -- Claws of White
+							i(53557),
+							i(53559),
+						})),
+	--[[
+						o(164955, {	-- Northern Crystal Pylon
+							q(24725),	-- Crystal Charge
+							q(24724),	-- Crystal Restore
+						}),
+						o(164957, {	-- Eastern Crystal Pylon
+							q(24726),	-- Crystal Force
+							q(24727),	-- Crystal Spire
+						}),
+						o(164956, {	-- Western Crystal Pylon
+							q(24728),	-- Crystal Ward
+							q(24729),	-- Crystal Yield
+						}),
+						qg(9117, q(24720)),	-- Crystals of Power
+						qg(38237, q(24705)),	-- Damsels Were Made to be Saved (secondary QG ID 38255)
+	--]]					
+						qg(38502, q(24695, { -- Ever Watching From Above
+							i(53595),
+							i(53596),
+						})),
+	--[[					
+						qg(38269, q(24854)),	-- Finding Stormclaw
+						qg(10302, q(24742)),	-- Finding the Source
+						qg(38274, q(24689)),	-- Flowing to the North
+						qg(34320, qh(13903)),	-- Gorishi Grub	(MOUNT daily, Venomhide Ravasaur)
+	--]]					
+						qg(38276, q(24699, { -- Gormashh the Glutinous
+							i(53592),
+							i(53593),
+						})),
+						qg(38276, q(24700)),	-- Hard to Harvest
+						o(202135, {	-- Dadanga's Grave
+							q(24702),	-- Here Lies Dadanga
+						}),
+						qg(38270, q(24697, { -- How to Make Meat Fresh Again
+							i(53563),
+							i(53564),
+							i(53565),
+							i(156996),	-- Tailspike Pike 
+						})),
+	--[[					
+						qg(34320, qh(13889)),	-- Hungry, Hungry Hatchling (MOUNT daily, Venomhide Ravasaur)
+						o(161526, {	-- Crate of Foodstuffs
+							q(24865),	-- Is This Stuff Still Good?
+						}),
+						qg(9997, q(24734)),	-- Lost!
+	--]]					
+						qg(38277, q(24701, { -- Marshal's Refuse
+							i(53580),
+							i(53581),
+							i(53582),
+						})),
+	--[[					
+						qg(10977, q(24693)),	-- Mossy Pile
+						qg(10977, q(24691)),	-- Peculiar Delicacies
+						qg(34320, qh(13904)),	-- Poached, Scrambled, Or Raw? (MOUNT daily, Venomhide Ravasaur)
+						qg(9623, q(24715)),	-- Repairing A-Me 01
+	--]]					
+						qg(9272, q(24730, { -- Roll the Bones
+							i(53585),
+							i(53586),
+						})),						
+	--					qg(34320, qh(13905)),	-- Searing Roc Feathers (MOUNT daily, Venomhide Ravasaur)
+						qg(9623, q(24926, { -- Serving A-Me 01
+							i(53571),
+							i(53572),
+							i(53573),
+						})),
+						qg(9998, q(24736, { -- Shizzle's Flyer
+							i(53589),
+							i(53590),
+							i(53591),
+							un(2, i(11917)),	-- Shizzle's Nozzle Wiper
+						})),
+	--[[					
+						qg(10302, q(24794)),	-- Speak With Spraggle
+						qg(38276, q(24737)),	-- Super Sticky
+	--]]					
+						qg(28092, q(12547, { -- The Activation Rune
+							i(39366),
+							i(39411),
+							i(39442),
+							i(39465),
+						})),
+	--					qg(38275, q(24717)),	-- The Apes of Un'Goro
+						qg(9619, q(24733, { -- The Bait for Lar'korwi
+							i(53587),
+							i(53588),
+						})),
+						qg(38237, q(24707, { -- The Ballad of Maximillian (secondary QG ID 38343)
+							i(53598),
+							i(53599),
+						})),
+	--[[
+						qg(38269, q(28859)),	-- The Dunes of Silithus
+						qg(38263, q(24721)),	-- The Eastern Pylon
+						qg(38237, q(24704)),	-- The Evil Dragons of Un'Goro Crater (secondary QG ID 38255)
+						qg(9619, q(24731)),	-- The Fare of Lar'korwi
+	--]]					
+						qg(9271, q(24692, { -- The Fledgling Colossus
+							i(53577),
+							i(53578),
+							i(53579),
+						})),
+	--					qg(9272, q(24708)),	-- The Fossil-Finder 3000
+						q(24718, { -- The Mighty U'cha
+							["groups"] = {
+								i(53583), -- Beast Clobberer
+								i(53584),
+								i(156995),	-- Beastflayer
+							},
+							["description"] = "This quest should pop up when you enter the cave to do The Apes of Un'Goro.",
+						}),
+						--[[					
+						qg(38275, q(24722)),	-- The Northern Pylon
+						qg(9619, q(24732)),	-- The Scent of Lar'korwi
+						qg(38504, q(24694)),	-- The Shaper's Terrace
+						qg(38237, q(24706)),	-- The Spirits of Golakka Hot Springs (secondary QG ID 38255)
+						qg(9272, q(24723)),	-- The Western Pylon
+	--]]
+						qg(11701, qh(13906, { -- They Grow Up So Fast (final MOUNT quest)
+							i(46102),	-- Reins of the Venomhide Ravasaur
+						})),
+	--[[					
+						qg(11701, qh(13850)),	-- Toxic Tolerance
+						qg(11701, qh(13887)),	-- Venomhide Eggs
+						qg(9270, q(24740)),	-- Volcanic Activity
+	--]]					
+	--					q(24688),	-- Zen'Aliri (NEVER IMPLEMENTED)
+						q(45051, { -- Reverse Blacksmithing
+							["g"] = {},
+							["qg"] = 115923, -- Ko'Zan
+							["sourceQuest"] = 45044, -- Weapon No More
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+						q(45055, { -- A Taste of Their Own Medicine
+							["g"] = {},
+							["qg"] = 115923, -- Ko'Zan
+							["sourceQuest"] = 45051, -- Reverse Blacksmithing
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+						q(45057, { -- Saving My Head
+							["g"] = {
+								i(142383), -- Plans: Darkspear
+							},
+							["qg"] = 115923, -- Ko'Zan
+							["sourceQuest"] = 45055, -- A Taste of Their Own Medicine
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+					},
 				}),
 				n(-16, {	-- Rares	
 					n(6582, { 		-- Clutchmother Zavas

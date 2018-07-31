@@ -492,16 +492,14 @@ _.Instances =
 					d(4, {	-- 25-Player
 						n(-1, { -- Common Boss Drops
 							["groups"] = {
-								  i( 47556),	-- Crusader Orb
-								  i( 47242),	-- Trophy of the Crusade
+								i(47556), -- Crusader Orb
+								i(47242), -- Trophy of the Crusade
 								a(i(47654)), -- Pattern: Bejeweled Wizard's Bracers
 								h(i(47639)), -- Pattern: Bejeweled Wizard's Bracers
 								a(i(47629)), -- Pattern: Black Chitin Bracers
 								h(i(47646)), -- Pattern: Black Chitin Bracers
 								a(i(47635)), -- Pattern: Bracers of Swift Death
 								h(i(47647)), -- Pattern: Bracers of Swift Death
-								a(i(47622)), -- Plans: Breastplate of the White Knight
-								h(i(47640)), -- Plans: Breastplate of the White Knight
 								a(i(47631)), -- Pattern: Crusader's Dragonscale Bracers
 								h(i(47648)), -- Pattern: Crusader's Dragonscale Bracers
 								a(i(47630)), -- Pattern: Crusader's Dragonscale Breastplate
@@ -520,6 +518,8 @@ _.Instances =
 								h(i(47637)), -- Pattern: Royal Moonshroud Bracers
 								a(i(47657)), -- Pattern: Royal Moonshroud Robe
 								h(i(47636)), -- Pattern: Royal Moonshroud Robe
+								a(i(47622)), -- Plans: Breastplate of the White Knight
+								h(i(47640)), -- Plans: Breastplate of the White Knight
 								a(i(47623)), -- Plans: Saronite Swordbreakers
 								h(i(47641)), -- Plans: Saronite Swordbreakers
 								a(i(47627)), -- Plans: Sunforged Bracers
