@@ -370,9 +370,12 @@ _.Instances =
 								i(109777),	-- Unsullied Signet
 								i(110018),	-- Kyrak's Vileblood Serum
 							})),
-							model(53656, n(77081, { -- The Lanticore
-								i(117528), -- Lanticore Spawnling (PET!)
-							})),
+							n(77081, { -- The Lanticore
+								["groups"] = {
+									i(117528), -- Lanticore Spawnling (PET!)
+								},
+								["description"] "This rare spawns next to the right of Kyrak (2nd boss) Droprate should be about 100% for pet",
+							}),
 							cr(79912, e(1228, {		-- Commander Tharbek
 								ig(21524),	-- Red Winter Hat
 								i(118726),	-- Tharbek's Brutal Possessor
@@ -629,9 +632,12 @@ _.Instances =
 								i(109777),	-- Unsullied Signet
 								i(110018),	-- Kyrak's Vileblood Serum
 							})),
-							model(53656, n(77081, { -- The Lanticore
-								i(117528), -- Lanticore Spawnling (PET!)
-							})),
+							n(77081, { -- The Lanticore
+								["groups"] = {
+									i(117528), -- Lanticore Spawnling (PET!)
+								},
+								["description"] "This rare spawns next to the right of Kyrak (2nd boss) Droprate should be about 100% for pet",
+							}),
 							cr(79912, e(1228, {		-- Commander Tharbek
 								ig(21524),	-- Red Winter Hat
 								i(118726),	-- Tharbek's Brutal Possessor
