@@ -6,18 +6,6 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(25, {		-- Hillsbrad Foothills
 			["groups"] = {				
-				n( -3, {	-- Holidays
-					n(-61, {     -- Feast of Winter Veil
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(13636, qh(  6983)),	-- You're a Mean One...
-								qg(13636, qa(  7043)),	-- You're a Mean One...	
-							}),
-						},
-						["achievementID"] = 1691, -- Merrymaker
-						["u"] = 29,
-					}),						
-				}),				
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken
 					p(648), 	-- Huge Toad

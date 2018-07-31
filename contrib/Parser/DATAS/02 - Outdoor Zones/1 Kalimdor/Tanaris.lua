@@ -6,68 +6,7 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(71, {	-- Tanaris
 			["groups"] = {			
-				n( -3, {	-- Holidays					
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								q(8684, {	-- Dreamseer the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 51.3, 27.8",			
-									["qg"] = 15586,	-- Elder Dreamseer		
-								}),
-								q(8671, {	-- Ragetotem the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 37.2, 79.1",			
-									["qg"] = 15573,	-- Elder Ragetotem		
-								}),
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),	
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(20102, qa(13484)),	-- Spring Collectors 
-								qg(20102, qh(13483)),	-- Spring Gatherers
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-56, {     -- Brewfest
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qg(20102, qh(11446)),	-- Brewfest!
-							}),
-						},
-						["achievementID"] = 1683, -- Brewmaster
-						["u"] = 24,
-					}),					
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-								qg(20102, qa(14022)),	-- Pilgrim's Bounty
-								qg(20102, qh(14036)),	-- Pilgrim's Bounty
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-				}),
-				n(-25, {	-- Pet Battle
+			n(-25, {	-- Pet Battle
 					p(484), 	-- Desert Spider
 					p(430), 	-- Gold Beetle
 					desc(p(1161), "Caverns of Time is located in Eastern Tanaris. This pet can be found within the main cavern and the pathway leading to it."), -- Infinite Whelpling

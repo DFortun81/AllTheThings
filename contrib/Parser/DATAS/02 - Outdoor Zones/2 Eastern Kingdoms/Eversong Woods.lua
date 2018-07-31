@@ -6,53 +6,6 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(94, {	-- Eversong Woods
 			["groups"] = {			
-				n (-3, {	-- Holidays
-					n(-51, {     -- Noblegarden
-						["groups"] = {
-							n(-2, { -- Vendors
-								h(n(32837, { -- Noblegarden Merchant
-									i (74282),	-- Black Spring Circlet
-									i(151804),	-- Black Tuxedo Pants
-									i(151806),	-- Elegant Dress
-									i(116258),	-- Mystical Spring Bouquet
-									i(141532),	-- Noblegarden Bunny
-									i(74283),	-- Pink Spring Circlet
-									i(44803),	-- Spring Circlet
-									i(44794),	-- Spring Rabbit's Foot
-									i(44800),	-- Spring Robes
-									i(72145),	-- Swift Springstrider
-									i(6833),	-- White Tuxedo Shirt
-								})),
-							}),
-						},
-						["achievementID"] = 2798, -- Noble Gardener
-						["u"] = 19,
-					}),
-					n(-60, {     -- Pilgrim's Bounty
-						["groups"]  = {
-							n(-17, { 	-- Quests
-								qg(19169, qh(14036)),	-- Pilgrim's Bounty
-								qg(34654, qh(14065)),	-- Sharing a Bountiful Feast
-							}),
-							n(-2, {		-- Vendor
-								nh(34787, {	-- John Rigsdale <Pilgrim's Bounty Vendor>
-									h(i(46810, {		-- Bountiful Cookbook (Horde)
-										h(i(46806)),	-- Recipe: Candied Sweet Potato (Horde)
-										h(i(46805)),	-- Recipe: Cranberry Chutney (Horde)
-										h(i(46804)),	-- Recipe: Pumpkin Pie (Horde)
-										h(i(46807)),	-- Recipe: Slow-Roasted Turkey (Horde)
-										h(i(46803)),	-- Recipe: Spice Bread Stuffing (Horde)
-									})),
-									i(44835),	-- Autumnal Herbs
-									i(46888),	-- Bountiful Basket
-									i(44853),	-- Honey
-								}),
-							}),
-						},
-						["achievementID"] = 3478, -- Pilgrim
-						["u"] = 28,
-					}),
-				}),								
 				n(-25, {	-- Pet Battle
 					p(459), 	-- Cat
 					p(460), 	-- Ruby Sapling

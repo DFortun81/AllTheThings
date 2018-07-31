@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, { 	-- Kalimdor
 		m(76, {	-- Azshara
-			["groups"] = {
+			["groups"] = {--[[
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -27,7 +27,7 @@ _.Zones =
 						["u"] = 17,
 					}),
 				}),				
-				n(-25, { 	-- Pet Battle
+			--]]	n(-25, { 	-- Pet Battle
 					p(378), 	-- Rabbit
 					p(472), 	-- Rabid Nut Varmint 5000
 					p(417), 	-- Rat

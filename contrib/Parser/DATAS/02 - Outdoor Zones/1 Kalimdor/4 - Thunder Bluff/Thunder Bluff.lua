@@ -6,6 +6,7 @@ _.Zones =
 	m(12, { 	-- Kalimdor	
 		m(88, { 	-- Thunder Bluff
 			["groups"] = {
+			--[[
 				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -143,6 +144,7 @@ _.Zones =
 						["u"] = 29,
 					}),		
 				}),
+				--]]
 				n(-25, {	-- Pet Battle
 					p(477), 	-- Gazelle Fawn
 					p(385), 	-- Mouse

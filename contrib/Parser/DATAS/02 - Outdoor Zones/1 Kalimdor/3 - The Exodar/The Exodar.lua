@@ -6,6 +6,7 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(103, { 	-- The Exodar
 			["groups"] = {
+			--[[
 				n( -3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -112,6 +113,7 @@ _.Zones =
 						["u"] = 29,
 					}),
 				}),
+				--]]
 				n(-25, {	-- Pet Battle
 					p(464), 	-- Grey Moth
 					p(385), 	-- Mouse

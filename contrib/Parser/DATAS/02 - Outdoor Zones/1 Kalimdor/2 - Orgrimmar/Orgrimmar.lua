@@ -6,6 +6,7 @@ _.Zones =
 	m(12, { 	-- Kalimdor		
 		m(85, { 	-- Orgrimmar
 			["groups"] = {
+			--[[
 				n(   -3, {	-- Holidays					
 					n(-47, { 		-- Lunar Festival
 						["groups"] = {
@@ -657,6 +658,7 @@ _.Zones =
 						["u"] = 29,
 					}),						
 				}),
+				--]]
 				n(  -25, {	-- Pet Battle
 					p(467), 	-- Dung Beetle
 					p(471), 	-- Robo-Chick

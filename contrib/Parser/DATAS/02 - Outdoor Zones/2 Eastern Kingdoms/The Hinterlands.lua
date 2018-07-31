@@ -6,27 +6,6 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(26, {		-- The Hinterlands
 			["groups"] = {
-				n( -3, { 	-- Holidays					
-					n(-47, {	-- Lunar Festival
-						["groups"] = {
-							n(-17, {     -- Quests
-								q(8643, {    -- Highpeak the Elder            
-									["groups"] = {            
-										-- i(21100),    -- Coin of Ancestry    
-										-- i(21746, {    -- Lucky Red Envelope    
-											--i(21745),    -- Elder's Moonstone
-											--i(21744),    -- Lucky Rocket Cluster
-										--}),        
-									},            
-									["description"] = "Location: 40, 48",            
-									["qg"] = 15559,    -- Elder Highpeak        
-								}),                            
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,	-- Lunar Festival
-					}),
-				}),								
 				n(-25, {	-- Pet Battle
 					p(449),	-- Brown Marmot
 					p(393),	-- Cockroach

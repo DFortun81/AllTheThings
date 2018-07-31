@@ -685,39 +685,6 @@ _.Zones =
 						}),
 					},
 				})),
-				n( -3, {	-- Holidays
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								q(8716, {	-- Starglade the Elder			
-									["groups"] = {			
-										-- i(21100),	-- Coin of Ancestry	
-										-- i(21746, {	-- Lucky Red Envelope	
-											--i(21745),	-- Elder's Moonstone
-											--i(21744),	-- Lucky Rocket Cluster
-										--}),		
-									},			
-									["description"] = "Location: 71, 34.3",			
-									["qg"] = 15596,	-- Elder Starglade		
-								}),
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),				
---[[
-					n(-58, {     -- Hallow's End
-						["groups"] = {
-							n(-17, { 	-- Quests
-								qa(28964),	-- Candy Bucket
-								qh(12382),	-- Candy Bucket
-							}),
-						},
-						["achievementID"] = 1656, -- Hallowed Be Thy Name
-						["u"] = 26,
-					}),	
---]]
-				}),
 				n(-25, {	-- Pet Battle
 					p(406), 	-- Beetle
 					p(421), 	-- Crimson Moth

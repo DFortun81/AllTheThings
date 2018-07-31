@@ -6,38 +6,6 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(198, {	-- Mount Hyjal
 			["groups"] = {	
-				n( -3, {	-- Holidays
-					n(-47, {     -- Lunar Festival
-						["groups"] = {
-							n(-17, { 	-- Quests
-								q(29740, {	-- Evershade the Elder		
-									["groups"] = {		
-										-- i(21100),	-- Coin of Ancestry
-										-- i(21746, {	-- Lucky Red Envelope
-											--i(21745),
-											--i(21744),
-										--}),	
-									},		
-									["description"] = "Location: 62.6, 22.8",		
-									["qg"] = 55227,	-- Elder Evershade	
-								}),			
-								q(29739, {	-- Windsong the Elder		
-									["groups"] = {		
-										-- i(21100),	-- Coin of Ancestry
-										-- i(21746, {	-- Lucky Red Envelope
-											--i(21745),
-											--i(21744),
-										--}),	
-									},		
-									["description"] = "Location: 26.6, 62",		
-									["qg"] = 55224,	-- Elder Windsong	
-								}),			
-							}),
-						},
-						["achievementID"] = 913, -- To Honor One's Elders
-						["u"] = 17,
-					}),
-				}),
 				n(-25, {	-- Pet Battle
 					p(487), 	-- Alpine Chipmunk
 					p(632), 	-- Ash Lizard

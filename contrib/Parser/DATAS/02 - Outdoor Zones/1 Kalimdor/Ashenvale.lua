@@ -6,6 +6,7 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(63, {		-- Ashenvale
 			["groups"] = {
+			--[[
 				n(-3, { 	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
@@ -27,6 +28,7 @@ _.Zones =
 						["u"] = 17,
 					}),
 				}),
+				--]]
 				n(-25, { 	-- Pet Battle
 					p(478), 	-- Forest Moth
 					p(495), 	-- Frog
