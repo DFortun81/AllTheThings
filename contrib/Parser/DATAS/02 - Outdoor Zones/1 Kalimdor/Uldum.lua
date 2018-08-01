@@ -207,6 +207,17 @@ _.Zones =
 							}),
 						}),
 						crit(3, {	-- Gnomebliteration!
+							q(27755, {	-- The Curse of the Tombs
+								["groups"] = {
+									i(65847),	-- Robes of Khintaset
+									i(65846),	-- Bracers of the Verdant Cradle
+									i(65845),	-- Misappropriated Girdle of Khartut
+									i(65844),	-- Tombbreaker Mace
+									i(157551),	-- Tombbreaker Gavel
+								},
+								["qg"] = 48501,
+								["sourceQuests"] = {28501},
+							}),
 							i(62483, {	-- A.I.D.A. Communicator
 								q(27760, {	-- Artificial Intelligence
 									["qgs"] = {46920,46590,47014},
@@ -342,10 +353,10 @@ _.Zones =
 											i(65884),	-- Femurbreak Stompers
 										},
 										["sourceQuests"] = {27196},
-										["description"] = "This quest can be accepted from a Decrepit Skeleton or from a Piece of Rope, looted from a Tormented Tomb-Robber. This version of the quest will be offered if you have at least accepted The Thrill of Discovery.",
+										["description"] = "This quest can be accepted from a Decrepit Skeleton or from a Piece of Rope, looted from a Tormented Tomb-Robber. This version of the quest can be picked up as soon as you enter the Chamber of the Stars.",
 									}),
 								},
-								["model"] = "World\\Generic\\Darkirondwarf\\Passive_doodads\\skeletons\\skeletonsitting02.mdx",
+								["model"] = "world\\generic\\darkirondwarf\\passive doodads\\skeletons\\skeletonsitting02.mdx",
 							}),
 							q(27541, {	-- Lessons From the Past
 								["qg"] = 45874,
@@ -676,17 +687,6 @@ _.Zones =
 							},
 							["qg"] = 46134,
 							["sourceQuests"] = {28201},
-						}),
-						q(27755, {	-- The Curse of the Tombs
-							["groups"] = {
-								i(65847),	-- Robes of Khintaset
-								i(65846),	-- Bracers of the Verdant Cradle
-								i(65845),	-- Misappropriated Girdle of Khartut
-								i(65844),	-- Tombbreaker Mace
-								i(157551),	-- Tombbreaker Gavel
-							},
-							["qg"] = 48501,
-							["sourceQuests"] = {28501},
 						}),
 						qdg(q(28870, {	-- Return to the Lost City
 							["qg"] = 47684,
