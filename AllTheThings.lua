@@ -2576,7 +2576,7 @@ end
 local function AttachTooltipRawSearchResults(self, listing, group, paramA, paramB)
 	if listing then
 		-- Display the pre-calculated row data.
-		if #listing > 0 and GetDataSubMember("SourceText", paramA, true) then
+		if #listing > 0 and (not paramA or GetDataSubMember("SourceText", paramA, true)) then
 			for i,text in ipairs(listing) do
 				local left, right = strsplit("/", text);
 				if right then
