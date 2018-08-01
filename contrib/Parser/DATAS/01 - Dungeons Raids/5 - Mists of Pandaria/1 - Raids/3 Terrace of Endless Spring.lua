@@ -242,9 +242,9 @@ _.Instances =
 									i(86379),	-- Pattern: Robe of Eternal Rule
 									i(86297),	-- Pattern: Stormbreaker Chestguard
 									i(87411),	-- Plans: Bloodforged Warfists
+									i(87412),	-- Plans: Chestplate of Limitless Faith
 									i(87409),	-- Plans: Gauntlets of Battle Command
 									i(87413),	-- Plans: Gauntlets of Unbound Devotion
-									i(87412),	-- Plans: Chestplate of Limitless Faith
 									i(87410),	-- Plans: Ornate Battleplate of the Master
 									i(87408),	-- Plans: Unyielding Bloodplate
 								},

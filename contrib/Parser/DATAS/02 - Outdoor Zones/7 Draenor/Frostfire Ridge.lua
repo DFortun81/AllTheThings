@@ -198,6 +198,41 @@ _.Zones =
 							i(117503),
 							i(117504),
 						}),
+						i(114965, { -- Fractured Forge Hammer
+							["g"] = {
+								q(36205, { -- The Fractured Hammer
+									["g"] = {},
+									["qg"] = 74254, -- Dorogg the Ruthless
+								}),
+							},
+							["description"] = "This can be looted from almost any mob in Frostfire Ridge; however, Dorogg has a guaranteed drop for the item.",
+							["races"] = HORDE_ONLY,
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+						q(36207, { -- Waruk the Frostforger
+							["g"] = {},
+							["qg"] = 78989, -- Axe-Shaper Kugra
+							["sourceQuest"] = 36205, -- The Fractured Hammer
+							["races"] = HORDE_ONLY,
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+						q(36230, { -- The Restless Spirit
+							["g"] = {},
+							["qg"] = 84494, -- Waruk the Frostforger
+							["sourceQuest"] = 36207, -- Waruk the Frostforger
+							["races"] = HORDE_ONLY,
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+						q(36238, { -- Mending A Broken Heart
+							["g"] = {
+								i(115356), -- Draenor Blacksmithing
+								i(111813), -- The Forge, Level 1
+							},
+							["qg"] = 84494, -- Waruk the Frostforger
+							["sourceQuest"] = 36230, -- The Restless Spirit
+							["races"] = HORDE_ONLY,
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
 						qh(33010,  {  	-- The Iron Wolf
 							i(111909),
 							i(111911),

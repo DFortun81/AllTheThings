@@ -146,7 +146,6 @@ _.Zones =
 					qh( 32491),	-- Left To Rot
 					qa( 32548),	-- Left To Rot
 					qh( 32589),	-- Life Blood
-					q(32621),	-- Lightning Steel
 					qh( 32283),	-- Loa-saur					
 					qa( 32552),	-- Loa-saur
 					q(32626),	-- Loot Room Key Tracking Quest
@@ -187,7 +186,26 @@ _.Zones =
 					q(32610),	-- Rare Boss Tracking Quest
 					q(32609),	-- Rare Chest Tracking Quest
 					q(32611),	-- Rare Drop Tracking Quest
---]]					
+--]]
+					i(94721, { -- Strange Metal Ingot (Isle of Thunder)
+						q(32621, { -- Lightning Steel
+							["g"] = {
+								i(94553, { -- Notes on Lightning Steel
+									["g"] = {
+										i(94568), -- Plans: Drakefist Hammer, Reborn
+										i(94572), -- Plans: Fireguard, Reborn
+										i(94552), -- Plans: Lightning Steel Ingot
+										i(94571), -- Plans: Lionheart Blade, Reborn
+										i(94569), -- Plans: Lunar Crescent, Reborn
+										i(94570), -- Plans: Planar Edge, Reborn
+										i(94567), -- Plans: Thunder, Reborn
+									},
+								}),
+							},
+							["qg"] = 69461, -- Itoka
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+					}),
 					q(32307, {	-- Reader for the Dead Tongue
 						["groups"] = {
 						},

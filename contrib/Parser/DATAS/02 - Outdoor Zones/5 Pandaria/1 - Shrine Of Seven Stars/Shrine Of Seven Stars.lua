@@ -6,8 +6,8 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(393, { 	-- Shrine of Seven Stars
 			["groups"] = {		
-				n(-17, { 	-- Quests	
-					qa(32900,  {  -- Heroic Deeds
+				n(-17, { -- Quests	
+					qa(32900, { -- Heroic Deeds
 						["groups"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
 								i(98209),	-- Druid B,R - Monk M								
@@ -126,10 +126,15 @@ _.Zones =
 						},
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
 					}),
+					q(32683, { -- So You Want to Be a Blacksmith...
+						["g"] = {},
+						["qg"] = 64085, -- Cullen Hammerbrow
+						["races"] = ALLIANCE_ONLY,
+						["requiredSkill"] = 164, -- Blacksmithing
+					}),
 --[[					
 					qa(31390),	-- The Klaxxi
 					qa(33248),	-- Proving Grounds
-					qa(32683),	-- So You Want to Be a Blacksmith...
 					qa(31386),	-- The Shado-Pan Offensive
 --]]
 				}),
@@ -401,6 +406,37 @@ _.Zones =
 						i(99204),	-- Robes of the Horned NightmareWarlock
 						i(99205),	-- Mantle of the Horned NightmareWarlock
 						i(99206),	-- Helmet of the Prehistoric MarauderWarrior
+					}),
+					n(64085, { -- Cullen Hammerbrow <Blacksmithing Supplies>
+						["g"] = {
+							i(84158), -- Plans: Contender's Revenant Belt
+							i(84159), -- Plans: Contender's Revenant Boots
+							i(84160), -- Plans: Contender's Revenant Bracers
+							i(84161), -- Plans: Contender's Revenant Breastplate
+							i(84162), -- Plans: Contender's Revenant Gauntlets
+							i(84163), -- Plans: Contender's Revenant Helm
+							i(84164), -- Plans: Contender's Revenant Legplates
+							i(84165), -- Plans: Contender's Revenant Shoulders
+							i(84166), -- Plans: Contender's Spirit Belt
+							i(84167), -- Plans: Contender's Spirit Boots
+							i(84168), -- Plans: Contender's Spirit Bracers
+							i(84169), -- Plans: Contender's Spirit Breastplate
+							i(84170), -- Plans: Contender's Spirit Gauntlets
+							i(84171), -- Plans: Contender's Spirit Helm
+							i(84172), -- Plans: Contender's Spirit Legplates
+							i(84173), -- Plans: Contender's Spirit Shoulders
+							i(84208), -- Plans: Masterwork Lightsteel Shield
+							i(84219), -- Plans: Masterwork Spiritguard Belt
+							i(84220), -- Plans: Masterwork Spiritguard Boots
+							i(84221), -- Plans: Masterwork Spiritguard Bracers
+							i(84222), -- Plans: Masterwork Spiritguard Breastplate
+							i(84223), -- Plans: Masterwork Spiritguard Gauntlets
+							i(84224), -- Plans: Masterwork Spiritguard Helm
+							i(84225), -- Plans: Masterwork Spiritguard Legplates
+							i(84226), -- Plans: Masterwork Spiritguard Shield
+							i(84227), -- Plans: Masterwork Spiritguard Shoulders
+						},
+						["races"] = ALLIANCE_ONLY,
 					}),
 					n(74027, {	-- Lorry Warmheart <Mythic Vendor>
 						i(105867, {	-- Essence of the Cursed Conqueror

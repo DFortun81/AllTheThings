@@ -6,7 +6,7 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(391, { 	-- Shrine of Two Moons
 			["groups"] = {
-				n(-17,  {  -- Quests
+				n(-17, { -- Quests
 --[[
 					qh(32352),	-- A Gathering Storm
 					qh(31511),	-- A Witness to History
@@ -27,7 +27,7 @@ _.Zones =
 					qh( 32022),	-- Candy Bucket
 					q(31279),	-- Everything I Know About Cooking
 --]]					
-					qh(32901,  {  -- Heroic Deeds
+					qh(32901, { -- Heroic Deeds
 						["groups"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
 								i(98209),	-- Druid B,R - Monk M								
@@ -145,6 +145,12 @@ _.Zones =
 							}),
 						},
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
+					}),
+					q(32726, { -- So You Want to Be a Blacksmith...
+						["g"] = {},
+						["qg"] = 64058, -- Jorunga Stonehoof
+						["races"] = HORDE_ONLY,
+						["requiredSkill"] = 164, -- Blacksmithing
 					}),
 --[[					
 					qh(33249),	-- Proving Grounds
@@ -450,6 +456,37 @@ _.Zones =
 					n(64062, {	-- Gentle Dari <First Aid Supplies>
 						i(44693),	-- Wound Dressing Shirt
 						i(44694),	-- Antiseptic-Soaked Dressing Shirt
+					}),
+					n(64058, { -- Jorunga Stonehoof <Blacksmithing Supplies>
+						["g"] = {
+							i(84158), -- Plans: Contender's Revenant Belt
+							i(84159), -- Plans: Contender's Revenant Boots
+							i(84160), -- Plans: Contender's Revenant Bracers
+							i(84161), -- Plans: Contender's Revenant Breastplate
+							i(84162), -- Plans: Contender's Revenant Gauntlets
+							i(84163), -- Plans: Contender's Revenant Helm
+							i(84164), -- Plans: Contender's Revenant Legplates
+							i(84165), -- Plans: Contender's Revenant Shoulders
+							i(84166), -- Plans: Contender's Spirit Belt
+							i(84167), -- Plans: Contender's Spirit Boots
+							i(84168), -- Plans: Contender's Spirit Bracers
+							i(84169), -- Plans: Contender's Spirit Breastplate
+							i(84170), -- Plans: Contender's Spirit Gauntlets
+							i(84171), -- Plans: Contender's Spirit Helm
+							i(84172), -- Plans: Contender's Spirit Legplates
+							i(84173), -- Plans: Contender's Spirit Shoulders
+							i(84208), -- Plans: Masterwork Lightsteel Shield
+							i(84219), -- Plans: Masterwork Spiritguard Belt
+							i(84220), -- Plans: Masterwork Spiritguard Boots
+							i(84221), -- Plans: Masterwork Spiritguard Bracers
+							i(84222), -- Plans: Masterwork Spiritguard Breastplate
+							i(84223), -- Plans: Masterwork Spiritguard Gauntlets
+							i(84224), -- Plans: Masterwork Spiritguard Helm
+							i(84225), -- Plans: Masterwork Spiritguard Legplates
+							i(84226), -- Plans: Masterwork Spiritguard Shield
+							i(84227), -- Plans: Masterwork Spiritguard Shoulders
+						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(74012, {	-- Ki'agnuu <Heroic Vendor>
 						i(105858, {	-- Essence of the Cursed Conqueror

@@ -108,6 +108,27 @@ _.Zones =
 						i(113178),
 						i(113177),
 					}),
+					i(115343, { -- Haephest's Satchel
+						["g"] = {
+							q(36309, { -- The Strength of Iron
+								["g"] = {},
+								["qg"] = 75043, -- Karnoth
+							}),
+						},
+						["description"] = "This can be looted from almost any mob in Shadowmoon Valley; however, Karnoth has a guaranteed drop for the item.",
+						["races"] = ALLIANCE_ONLY,
+						["requiredSkill"] = 164, -- Blacksmithing
+					}),
+					q(36311, { -- Father and Son
+						["g"] = {
+							i(115356), -- Draenor Blacksmithing
+							i(111813), -- The Forge, Level 1
+						},
+						["qg"] = 80827, -- Haephest
+						["sourceQuest"] = 36309, -- The Strength of Iron
+						["races"] = ALLIANCE_ONLY,
+						["requiredSkill"] = 164, -- Blacksmithing
+					}),
 					qa(34792,  {  -- The Traitor's True Name
 						i(113232),
 						i(113233),
