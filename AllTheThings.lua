@@ -2045,8 +2045,8 @@ local function OpenMiniList(field, id, label)
 			return false;
 		end
 	else
-		print("No map found for this location ", app.GetMapName(id), " [", id, "]");
-		print("Please report this to the ATT Discord! Thanks! Version 1.6.5a"); -- Adding version so we can quickly see if it was done and they haven't updated
+		--print("No map found for this location ", app.GetMapName(id), " [", id, "]");
+		--print("Please report this to the ATT Discord! Thanks! Version 1.6.7"); -- Adding version so we can quickly see if it was done and they haven't updated
 	end
 end
 local function OpenMiniListForCurrentProfession(manual, refresh)

@@ -76,7 +76,7 @@ _.WorldEvents =
 						dr(0.05, i(12024)), -- Vanadium Talisman
 					}),
 					i(16885, { 	-- Heavy Junkbox 
-						i(1728),			-- Teebu's Blazing Longsword
+						i(1728),			-- Teebu's Blazing Longsword [Discord Confirmation - Luce]
 						dr(0.04, i(16215)), -- Formula: Enchant Boots Greater Stamina   
 						dr(0.02, i(16218)), -- Formula: Enchant Bracer Superior Versatility 
 						dr(0.03, i(14494)), -- Pattern: Brightcloth Pants     
@@ -116,6 +116,7 @@ _.WorldEvents =
 						dr(0.02, i(11989)), -- Vanadium Loop      
 					}),
 					i(29569, { 	-- Strong Junkbox
+						i(4354), -- Pattern: Rich Purple Silk Shirt [Discord Confirmation - Luce]
 						dr(0.2, i(12002)), -- Formula: Enchant Bracer Superior Stamina   
 						dr(0.3, i(15746)), -- Plans: Radiant Leggings     
 						dr(0.01, i(2163)), -- The Night Blade 

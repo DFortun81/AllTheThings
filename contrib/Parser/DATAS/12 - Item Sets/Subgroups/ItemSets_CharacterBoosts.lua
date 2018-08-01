@@ -43,7 +43,8 @@ _.GearSets =
 					}),
 					n(-145, { -- Mountainsage
 						["groups"] = {
-							i(153828),	-- Mountainsage Wand
+							--i(153828),	-- Mountainsage Wand [Not actually given]
+							i(153830),	-- Mountainsage Stave [Confirmed by Emilia in discord]
 							i(153822),	-- Mountainsage Hood
 							i(153815),	-- Mountainsage Medallion
 							i(153825),	-- Mountainsage Shoulderpads
