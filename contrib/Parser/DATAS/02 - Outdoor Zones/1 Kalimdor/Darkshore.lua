@@ -958,67 +958,67 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						nlq({	-- Quests (Legacy)
-							qa( 993, {	-- A Lost Master
+							un(40, qa( 993, {	-- A Lost Master
 								un(34, i(5387)),	-- Enchanted Moonstalker Cloak
-							}),
-							qa( 957, {	-- Bashal'Aran
+							})),
+							un(40, qa( 957, {	-- Bashal'Aran
 								un(34, i(7229)),	-- Explorer's Vest
 								un(34, i(5617)),	-- Vagabond Leggings
 								un(34, i(5604)),	-- Elven Wand
-							}),
-							qa( 947, {	-- Cave Mushrooms
+							})),
+							un(40, qa( 947, {	-- Cave Mushrooms
 								un(34, i(5610)),	-- Gustweld Cloak
-							}),
-							qa( 963, {	-- For Love Eternal
+							})),
+							un(40, qa( 963, {	-- For Love Eternal
 								un(34, i(5611)),	-- Tear of Grief
-							}),
-							qa( 995, {	-- Escape Through Stealth
+							})),
+							un(40, qa( 995, {	-- Escape Through Stealth
 								un(34, i(6659)),	-- Scarab Trousers
-							}),
-							qa( 951, {	-- Mathystra Relics
+							})),
+							un(40, qa( 951, {	-- Mathystra Relics
 								un(34, i(5757)),	-- Hardwood Cudgel
 								un(34, i(5615)),	-- Woodsman Sword
-							}),
-							qa(2139, {	-- Tharnariun's Hope
+							})),
+							un(40, qa(2139, {	-- Tharnariun's Hope
 								un(34, i(7738)),	-- Evergreen Gloves
 								un(34, i(7739)),	-- Timberland Cape
-							}),
-							qa( 741, {	-- The Absent Minded Prospector
+							})),
+							un(40, qa( 741, {	-- The Absent Minded Prospector
 								un(34, i( 5629)),	-- Hammerfist Gloves
 								un(34, i( 5630)),	-- Windfelt Gloves
 								un(34, i(11936)),	-- Relic Hunter Belt
-							}),
-							qa( 943, {	-- The Absent Minded Prospector
+							})),
+							un(40, qa( 943, {	-- The Absent Minded Prospector
 								un(34, i(5627)),	-- Relic Blade
 								un(34, i(5626)),	-- Skullchipper
-							}),
-							qa(4763, {	-- The Blackwood Corrupted
+							})),
+							un(40, qa(4763, {	-- The Blackwood Corrupted
 								un(34, i(15204)),	-- Moonstone Wand
 								un(34, i(15202)),	-- Wildkeeper Leggings
 								un(34, i(15203)),	-- Guststorm Legguards
-							}),
-							qa(4813, {	-- The Fragments Within
+							})),
+							un(40, qa(4813, {	-- The Fragments Within
 								un(34, i(15335)),	-- Briarsteel Shortsword
 								un(34, i(15396)),	-- Curvewood Dagger
 								un(34, i(15397)),	-- Oakthrush Staff
-							}),
-							qa(5321, {	-- The Sleeper Has Awakened
+							})),
+							un(40, qa(5321, {	-- The Sleeper Has Awakened
 								un(34, i(15205)),	-- Owlsight Rifle
 								un(34, i(15206)),	-- Jadefinger Baton
 								un(34, i(15207)),	-- Steelcap Shield
-							}),
-							qa( 981, {	-- The Tower of Althalaxx
+							})),
+							un(40, qa( 981, {	-- The Tower of Althalaxx
 								un(34, i(10043)),	-- Pious Legwraps
 								un(34, i( 5614)),	-- Seraph's Strike
-							}),
-							qa( 973, {	-- The Tower of Althalaxx
+							})),
+							un(40, qa( 973, {	-- The Tower of Althalaxx
 								un(34, i(5613)),	-- Staff of the Purifier
-							}),
-							qa(4740, {	-- WANTED: Murkdeep!
+							})),
+							un(40, qa(4740, {	-- WANTED: Murkdeep!
 								un(34, i(5315)),	-- Timberland Armguards
 								un(34, i(15403)),	-- Ridgeback Bracers
 								un(34, i(15404)),	-- Breakwater Girdle
-							}),
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
