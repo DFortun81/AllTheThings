@@ -30,12 +30,6 @@ _.Instances =
 					}),
 					---]]
 					n(-17, {	-- Quests 	
-						q(12238,{ 	-- Cleansing Drak'Tharon
-							i(40755), 	-- Enticing Sabatons
-							i(40757),	-- Shackles of Dark Whispers
-							i(40756), 	-- Shoulders of the Seducer
-							i(40758), 	-- Shroud of Temptation
-						}),
 						q(30120,{ 	-- Cleansing Drak'Tharon
 							i(40755), 	-- Enticing Sabatons
 							i(40757),	-- Shackles of Dark Whispers

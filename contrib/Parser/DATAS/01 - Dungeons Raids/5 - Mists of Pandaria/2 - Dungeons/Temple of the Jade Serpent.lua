@@ -44,7 +44,12 @@ _.Instances =
 										},
 									},
 								},
-								sq(33020, o(221413, q(33107))),	-- Lin Family Scroll / Bad Feeling, Worse Result
+								o(221413, { -- Lin Family Scroll
+									q(33107, { -- Bad Feeling, Worse Result
+										["requiredSkill"] = 185, -- Cooking
+										["sourceQuests"] = { 33020 }, -- The Lost Secret of the Secret Ingredient
+									}),
+								}),
 							}),
 							cr(56448, e(672, {	-- Wise Mari
 								i(144017),	-- Waterburst Helm

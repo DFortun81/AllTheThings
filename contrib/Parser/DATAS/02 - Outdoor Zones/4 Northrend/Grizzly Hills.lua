@@ -750,6 +750,13 @@ _.Zones =
 								},
 								["qg"] = 26884,	-- Harkor 
 							}),
+						q(12238,{ 	-- Cleansing Drak'Tharon [Lucetia Note: We need to keep this quest in this zone.  It's picked up from here and having both in the dungeon is confusing to the end user as we had comments in Discord]
+							i(40755), 	-- Enticing Sabatons
+							i(40757),	-- Shackles of Dark Whispers
+							i(40756), 	-- Shoulders of the Seducer
+							i(40758), 	-- Shroud of Temptation
+						}),
+						
 					}),
 					n(-9913, {	-- Horde [THESE QUESTS HAVE NOT BEEN SORTED YET!!]
 						h(ach(1357, {	-- Fo' Grizzle My Shizzle [H]
