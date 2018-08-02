@@ -4,9 +4,77 @@
 _.Zones =
 {
 	m(424, { 	-- Pandaria
-		m(371, {	-- The Jade Forest
+		m(371, { -- The Jade Forest
 			["groups"] = {
-				n(-25, { 	-- Pet Battle
+				n(-4, { -- Achievements
+					["groups"] = {
+						ach(7284, { -- Is Another Man's Treasure
+							o(213741, { -- Ancient Jinyu Staff
+								["groups"] = {
+									i(86196),	-- Ancient Jinyu Staff
+								},
+								["questID"] = 31402,
+							}),
+							o(213364, { -- Ancient Pandaren Mining Pick
+								["groups"] = {
+									i(85777),	-- Ancient Pandaren Mining Pick
+								},
+								["questID"] = 31399,
+							}),
+							o(213742, { -- Hammer of Ten Thunders
+								["groups"] = {
+									i(86198),	-- Hammer of Ten Thunders
+								},
+								["questID"] = 31403,
+							}),
+							o(213743, { -- Jade Infused Blade
+								["groups"] = {
+									i(86199),	-- Jade Infused Blade
+								},
+								["questID"] = 31307,
+							}),
+							o(213363, { -- Wodin's Mantid Shanker
+								["groups"] = {
+									i(85776),	-- Wodin's Mantid Shanker
+								},
+								["questID"] = 31397,
+							}),
+						}),
+						ach(7997, { -- Riches of Pandaria
+							o(213366, { -- Ancient Pandaren Tea Pot
+								["groups"] = {
+									i(85780, { -- Ancient Pandaren Tea Pot
+										["questID"] = 31400,
+									}),
+								},
+								["description"] = "Located on the north-west coast at (26.2,32.5)",
+							}),
+							o(213368, { -- Lucky Pandaren Coin
+								["groups"] = {
+									i(85781, { -- Lucky Pandaren Coin
+										["questID"] = 31401,
+									}),
+								},
+								["description"] = "Located in the wishing fountain at (31.9,27.8)",
+							}),
+							o(213748, { -- Pandaren Ritual Stone
+								["groups"] = {
+									i(86216, { -- Pandaren Ritual Stone
+										["questID"] = 31404,
+									}),
+								},
+								["description"] = "Located near the Grookin Hill river delta at (23.5,35.0)",
+							}),
+							o(213362, { -- Ship's Locker
+								["groups"] = {
+									q(31396),	-- Ship's Locker
+								},
+								["description"] = "Located underwater in a boat at (50.7,99.9)",
+							}),
+						}),
+					},
+				}),
+				n(-25, { -- Pet Battle
 					p(380), 	-- Bucktooth Flapper
 					p(562), 	-- Coral Adder
 					p(564), 	-- Emerald Turtle
@@ -44,132 +112,363 @@ _.Zones =
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
 					}),
 				}),
-				ach(7997, {	-- Riches of Pandaria
-					o(213366, {	-- Ancient Pandaren Tea Pot
-						["groups"] = {
-							i(85780, {	-- Ancient Pandaren Tea Pot
-								["questID"] = 31400,
-							}),
-						},
-						["description"] = "Located on the north-west coast at (26.2,32.5)",
+				n(-38, { -- Profession
+					prof(171, { -- Alchemy
+						o(211424, { -- Alchemy Scroll
+							["description"] = "Alchemists can learn the following skill by clicking on the Alchemy Scroll on the road just outside of the Temple of the Jade Serpent in the Jade Forest. It will only appear to alchemists who don't yet know the recipe. might require a skill level of 550, but this is unconfirmed.",
+							["groups"] = {
+								recipe(114769),	-- Flask of Spring Blossoms
+							},
+						}),
 					}),
-					o(213368, {	-- Lucky Pandaren Coin
-						["groups"] = {
-							i(85781, {	-- Lucky Pandaren Coin
-								["questID"] = 31401,
-							}),
-						},
-						["description"] = "Located in the wishing fountain at (31.9,27.8)",
-					}),
-					o(213748, {	-- Pandaren Ritual Stone
-						["groups"] = {
-							i(86216, {	-- Pandaren Ritual Stone
-								["questID"] = 31404,
-							}),
-						},
-						["description"] = "Located near the Grookin Hill river delta at (23.5,35.0)",
-					}),
-					o(213362, {	-- Ship's Locker
-						["groups"] = {
-							q(31396),	-- Ship's Locker
-						},
-						["description"] = "Located underwater in a boat at (50.7,99.9)",
+					prof(356, { -- Fishing
+						desc(i(94934), "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r"),	-- Tiny Green Carp Pet
+						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
+						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
 					}),
 				}),
-				ach(7284, {	-- Is Another Man's Treasure
-					o(213741, {	-- Ancient Jinyu Staff
+				n(-17, { -- Quests
+					a(ach(6300, { -- Upjade Complete [Alliance]
 						["groups"] = {
-							i(86196),	-- Ancient Jinyu Staff
+							crit(1, { -- Paw'don Village [Completed: Patch 8.0.1 -- Lucetia]s
+								["groups"] = {
+									q(31732, { -- Unleash Hell
+										["groups"] = {
+											i(90375), -- Airship marine's Sharpshooter
+											i(90376), -- Barricade-Breaker Cidgel
+											i(90382), -- Captain Roger's Polite Knocking Stick
+											i(90377), -- Fogcutter Staff
+											i(90379), -- Mystic Perpetual Motion Mace
+											i(90381), -- Shock Trooper Battleaxe
+											i(90380), -- Skyfire Medic's Staff
+											i(90383), -- Skyfire Trooper's Mace
+											i(90378), -- Staff of the Skymagi
+											i(90374), -- Sully's Hotwiring Knife
+										},
+										["qg"] = 66292, --  Sky Admiral Rogers
+										["sourceQuests"] = { 29548 }, -- The Mission
+									}),
+									q(31733, { -- Touching Ground
+										["qg"] = 66292, -- Sky Admiral Rogers
+										["sourceQuests"] = { 31732 }, -- Unleash Hell
+									}),
+									q(30069, { -- No Plan Survives Contact with the Enemy
+										["qg"] = 54616, -- Sully "The Pickle" McLeary
+										["sourceQuests"] = { 31733 }, -- Touching Ground
+									}),
+									q(31734, { -- Welcome Wagons
+										["qg"] = 54616, -- Sully "The Pickle" McLeary
+										["sourceQuests"] = { 31733 }, -- Touching Ground
+									}),
+									q(31735, { -- The Right Tool For The Job
+										["groups"] = {
+											i(90354), -- Armored Chestpiece of Eminent Domain
+											i(90353), -- Burnished Chestguard of Eminent Domain
+											i(90348), -- Chain Armor of Eminent Domain
+											i(90355), -- Heavy Chestpiece of Eminent Domain
+											i(90351), -- Hide Robe of Eminent Domain
+											i(90347), -- Leather Tunic of Eminent Domain
+											i(90352), -- Ringmail Armor of Eminent Domain
+											i(90350), -- Satin Robe of Eminent Domain
+											i(90349), -- Silk Robe of Eminent Domain
+										},
+										["qg"] = 54617, -- Rell Nightwind
+										["sourceQuests"] = {
+											30069, -- No Plan Survives Contact with the Enemy
+											31734, -- Welcome Wagons
+										},
+									}),
+									q(31736, { -- Envoy of the Alliance
+										["qg"] = 54617, -- Rell Nightwind
+										["sourceQuests"] = { 31735 }, -- The Right Tool For The Job
+									}),
+									q(31737, { -- The Cost of War
+										["qg"] = 54617, -- Rell Nightwind
+										["sourceQuests"] = { 31735 }, -- The Right Tool For The Job
+									}),
+									q(31738, { -- Pillaging Peons
+										["qg"] = 65910, -- Sunke Khang
+										["sourceQuests"] = {
+											31736, -- Envoy of the Alliance
+											31737, -- The Cost of War
+										},
+									}),
+									q(31739, { -- Priorities!
+										["qg"] = 64596, -- Teng Applebloom
+										["sourceQuests"] = {
+											31736, -- Envoy of the Alliance
+											31737, -- The Cost of War
+										},
+									}),
+									q(29552, { -- Critical Condition
+										["groups"] = {
+											i(90387), -- Crashed Gyrocopter Rotor
+											i(90388), -- Grewatsword of Kofinna Kottr
+											i(90385), -- Mishka's Bandage Cutter
+											i(90384), -- Peon-Chopping Axe
+											i(90386), -- Recovery Team Shield
+											i(90389), -- Skyguardian's Shield
+										},
+										["qgs"] = { 54614 }, -- Mishka
+										["sourceQuests"] = {
+											31736, -- Envoy of the Alliance
+											31737, -- The Cost of War
+										},
+									}),
+									q(31740, { -- Koukou's Rampage
+										["qg"] = 66199, -- Lin Applebloom
+										["sourceQuests"] = { 31739 },  -- Priorities!
+									}),
+									q(31741, { -- Twinspire Keep
+										["qg"] = 65910, -- Sunke Khang
+										["sourceQuests"]  = {
+											31738, -- Pillaging Peons
+											29552, -- Critical Condition
+											31740, -- Koukou's Rampage
+										},
+									}),
+									q(31744, { -- Unfair Trade
+										["qg"] =  65910, -- Sunke Khang
+										["sourceQuests"]  = {
+											31738, -- Pillaging Peons
+											29552, -- Critical Condition
+											31740, -- Koukou's Rampage
+										},
+									}),
+									q(31742, { -- Fractured Forces
+										["qg"] = 54617, -- Rell Nightwind
+										["sourceQuests"]  = {
+											31738, -- Pillaging Peons
+											29552, -- Critical Condition
+											31740, -- Koukou's Rampage
+										},
+									}),
+									q(31743, { -- Smoke Before Fire
+										["qg"] = 54617, -- Rell Nightwind
+										["sourceQuests"]  = {
+											31738, -- Pillaging Peons
+											29552, -- Critical Condition
+											31740, -- Koukou's Rampage
+										},
+									}),
+									q(30070, { -- The Fall of Ga'trul
+										["groups"] = {
+											i(90345), -- Peacebreaker's Armored Helm
+											i(90344), -- Peacebreaker's Burnished Headcover
+											i(90339), -- Peacebreaker's Chain Helm
+											i(90346), -- Peacebreaker's Heavy Helm
+											i(90342), -- Peacebreaker's Hide Helm
+											i(90338), -- Peacebreaker's Leather Helm
+											i(90343), -- Peacebreaker's Ringmail Helm
+											i(90341), -- Peacebreaker's Satin Hood
+											i(90340), -- Peacebreaker's Silk Cowl
+										},
+										["qg"] = 54616, -- Sully "The Pickle" McLeary
+										["sourceQuests"]  = {
+											31741, -- Twinspire Keep
+											31744, -- Unfair Trade
+											31742, -- Fractured Forces
+											31743, -- Smoke Bfeore Fire
+										},
+									}),
+									q(31745, { -- Onward and Inward
+										["qgs"] = { 54617, 66581 }, -- Rell Nightwind
+										["sourceQuests"] = { 30070 }, -- The Fall of Ga'trul
+									}),
+								},
+							}),
+							crit(2, { -- The Waterspeaking Ceremony [Available after crit 1]
+								["groups"] = {
+									q(29555, { -- The White Pawn
+										["qg"] = 66292, -- Sky Admiral Rogers
+										["sourceQuests"] = { 31745 }, -- Onward and Inward
+									}),
+									q(29556, { -- Hozen Aren't Your Friends, Hozen Are Your Enemies
+										["qg"] = 66292, -- Sky Admiral Rogers
+										["sourceQuests"] = { 31745 }, -- Onward and Inward
+									}),
+									q(29553, { -- The Missing Admiral
+										["qg"] = 54615, -- Nodd Codejack
+										["sourceQuests"] = { 
+											29555, -- The White Pawn
+											29556, -- Hozen Aren't Your Friends, Hozen Are Your Enemies
+										},
+									}),
+									q(29558, { -- The Path of War
+										["qg"] = 55196, -- Bold Karasshi
+										["sourceQuests"] = { 29553 }, -- The Missing Admiral
+									}),
+									q(29559, { -- Freeing Our Brothers
+										["groups"] = {
+											i(81022), -- Cagebreaker's Leather Belt
+											i(81023), -- Cagebreaker's Chain Links
+											i(81024), -- Cagebreaker's Silk Cord
+											i(81025), -- Cagebreaker's Satin Cord
+											i(81026), -- Cagebreaker's Hide Belt
+											i(81027), -- Cagebreaker's Ringmail Waistguard
+											i(81028), -- Cagebreaker's Burnished Clasp
+											i(81029), -- Cagebreaker's Armored Girdle
+											i(81030), -- Cagebreaker's Heavy Girdle
+										},
+										["qg"] = 55196, -- Bold Karasshi
+										["sourceQuests"] = { 29553 }, -- The Missing Admiral
+									}),
+									q(29560, { -- Ancient Power
+										["qg"] = 55196, -- Bold Karasshi
+										["sourceQuests"] = { 29553 }, -- The Missing Admiral
+									}),
+									q(29759, { -- Kung Din
+										["groups"] = {
+											i(90371), -- Landfall Burnished Greaves
+											i(90366), -- Landfall Chain Boots
+											i(90365), -- Landfall Leather Boots
+											i(90369), -- Landfall Moccasins
+											i(90373), -- Landfall Plate Boots
+											i(90370), -- Landfall Sabatons
+											i(90368), -- Landfall Satin Treads
+											i(90367), -- Landfall Silk Treads
+											i(90372), -- Landfall Warboots
+										},
+										["qg"] = 55196, -- Bold Karasshi
+										["sourceQuests"] = {
+											29558, -- The Path of War
+											29559, -- Freeing Our Brothers
+											29560, -- Ancient Power
+										},
+									}),
+									q(29562, { -- Jailbreak
+										["qg"] = 55196, -- Bold Karasshi
+										["sourceQuests"] = { 29759 }, -- Kung Din
+									}),
+									q(29883, { -- The Pearlfin Situation
+										["qg"] = 66949, -- Rell Nightwind
+										["sourceQuests"]  = { 29562 }, -- Jailbreak
+									}),
+									q(29885, { -- Road Rations
+										["qg"] = 66949, -- Rell Nightwind
+										["sourceQuests"]  = { 29562 }, -- Jailbreak
+									}),
+									q(29762, { -- Family Heirlooms
+										["qg"] = 56222, -- Bold Karasshi
+										["sourceQuests"] = {
+											29883, -- The Pearlfin Situation
+											29885, -- Road Rations
+										},
+									}),
+									q(29887, { -- The Elder's Instruments
+										["qg"] = 59058, -- Pearlkeeper Fujin
+										["sourceQuests"] = {
+											29883, -- The Pearlfin Situation
+											29885, -- Road Rations
+										},
+									}),
+									-- STOPPED HERE  -- 
+								},
+							}),
+							crit(3, { -- The White Pawn
+								["groups"] = {
+								},
+							}),
+							crit(4, { -- Pearlfin Village
+								["groups"] = {
+								},
+							}),
+							crit(5, { -- Dawn's Blossom
+								["groups"] = {
+								},
+							}),
+							crit(6, { -- Greenstone Quarry
+								["groups"] = {
+								},
+							}),
+							crit(7, { -- Tian Monastery
+								["groups"] = {
+								},
+							}),
+							crit(8, { -- Terrace of Ten Thunders
+								["groups"] = {
+								},
+							}),
+							crit(9, { -- The Temple of the Jade Serpent
+								["groups"] = {
+								},
+							}),
+							crit(10, { -- Nectarbreeze Orchard
+								["groups"] = {
+								},
+							}),
+							crit(11, { -- The Battle for the Forest
+								["groups"] = {
+								},
+							}),
+							crit(12, { -- Overcoming doubt
+								["groups"] = {
+								},
+							}),
 						},
-						["questID"] = 31402,
-					}),
-					o(213364, {	-- Ancient Pandaren Mining Pick
-						["groups"] = {
-							i(85777),	-- Ancient Pandaren Mining Pick
-						},
-						["questID"] = 31399,
-					}),
-					o(213742, {	-- Hammer of Ten Thunders
-						["groups"] = {
-							i(86198),	-- Hammer of Ten Thunders
-						},
-						["questID"] = 31403,
-					}),
-					o(213743, {	-- Jade Infused Blade
-						["groups"] = {
-							i(86199),	-- Jade Infused Blade
-						},
-						["questID"] = 31307,
-					}),
-					o(213363, {	-- Wodin's Mantid Shanker
-						["groups"] = {
-							i(85776),	-- Wodin's Mantid Shanker
-						},
-						["questID"] = 31397,
-					}),
-				}),
-				n(-17, { 	-- Quests
-					q(29619, {	-- A Courteous Guest
+						["races"] = ALLIANCE_ONLY, -- Alliance
+					})),
+					q(29619, { -- A Courteous Guest
 						["qg"] = 54913, -- Lin Tenderpaw
 						["sourceQuests"] = { 29618 } , -- The High Elder
 					}),
-					q(30149, {	-- A Feast for the Senses
+					q(30149, { -- A Feast for the Senses
 						["qg"] = 58413, -- Jenova Longeye
 						["isDaily"] = true,
 					}),
-					q(29756, {	-- A Humble Offering
+					q(29756, { -- A Humble Offering
 						["qg"] = 55614, -- Pei-Zhi
 						["sourceQuests"] = { 29751, 29752, 29750 }, -- Ritual Artifacts, The Wayward Dead, Vessels of the Spirit
 					}),
-					qh(31132, {	-- A Mile in My Shoes
+					qh(31132, { -- A Mile in My Shoes
 						["qg"] = 55768, -- Lorewalker Cho
 						["sourceQuests"] = { 31121 }, -- Stay a While, and Listen
 					}),
-					q(30011, {	-- A New Vision
+					q(30011, { -- A New Vision
 						["qg"] = 56787, -- Wise mari
 						["sourceQuests"] = { 29997 }, -- The Scryer's Dilemma
 					}),
-					qa(29903, {	-- A Perfect Match
+					qa(29903, { -- A Perfect Match
 						["qg"] = 60970, -- Admiral Taylor
 						["sourceQuests"] = { 29901 }, -- Anduin's Decision
 					}),
-					q(29627, {	-- A Proper Weapon
+					q(29627, { -- A Proper Weapon
 						["qg"] = 54915, -- Groundskeeper Wu
 						["sourceQuests"] = { 29626 }, -- Groundskeeper Wu
 					}),
-					q(29629, {	-- A Steady Hand
+					q(29629, { -- A Steady Hand
 						["qg"] = 54915, -- Groundskeeper Wu
 						["sourceQuests"] = { 29627 }, -- A Proper Weapon
 					}),
-					q(29628, {	-- A Strong Back
+					q(29628, { -- A Strong Back
 						["qg"] = 54915, -- Groundskeeper Wu
 						["sourceQuests"] = { 29627 }, -- A Proper Weapon
 					}),
-					q(31707, {	-- A Tangled Web
+					q(31707, { -- A Tangled Web
 						["qg"] = 58228, -- Instructor Skythorn
 						["isDaily"] = true,
 					}),
-					q(29636, {	-- A Test of Endurance
+					q(29636, { -- A Test of Endurance
 						["qg"] = 54922, -- Master Stone Fist
 						["sourceQuests"] = { 29635 }, -- Xiao, the Eater
 					}),
-					q(31539, {	-- A Thing of Beauty
+					q(31539, { -- A Thing of Beauty
 						["qg"] = 56065, -- Inkmaster Wei
 						["requiredSkill"] = 773,
 					}),
-					q(33250, {	-- A Time-Lost Treasure
+					q(33250, { -- A Time-Lost Treasure
 						["qg"] = 58564, -- Elder Anli
 						["repeatable"] = true,
 					}),
-					q(31544, {	-- A Tribute to the Dead
+					q(31544, { -- A Tribute to the Dead
 						["qg"] = 56063, -- Inkmaster Jo Po
 						["requiredSkill"] = 773,
 					}),
-					qa(31130, {	-- A Visit with Lorewalker Cho
+					qa(31130, { -- A Visit with Lorewalker Cho
 						["qg"] = 54961, -- Lorewalker Cho
 						["sourceQuests"] = { 29889 }, -- Borrowed Brew
 					}),
-					qh(29827, {	-- Acid Rain
+					qh(29827, { -- Acid Rain
 						["groups"] = {
 							i(90310), -- Honorary Combat Engineer's Burnished Legplates
 							i(90305), -- Honorary Combat Engineer's Chain Leggings
@@ -184,14 +483,14 @@ _.Zones =
 						["qg"] = 55180, -- Shademaster Kiryn
 						["sourceQuests"] = { 29815 }, -- Forensic Science
 					}),
-					q(29925, {	-- All We Can Spare
+					q(29925, { -- All We Can Spare
 						["qg"] = 56348, -- Toya
 						["sourceQuests"] = { 29723 }, -- The Jade Witch
 					}),
-					q(29576, {	-- An Air of Worry
+					q(29576, { -- An Air of Worry
 						["qg"] = 59383, -- Old Man Misteye -- do we define the breadcrumb here or on the following quest?
 					}),
-					qa(29900, {	-- An Ancient Legend
+					qa(29900, { -- An Ancient Legend
 						["groups"] = {
 							i(80749), -- Ambermist Cuffs
 							i(80750), -- Blackthicket Bindings
@@ -205,10 +504,10 @@ _.Zones =
 						},
 						["qg"] = 56433, -- Lina Whitepaw
 					}),
-					qa(30565, {	-- An Unexpected Advantage
+					qa(30565, { -- An Unexpected Advantage
 						["qg"] = 59550, -- Sully "The Pickle" McLeary
 					}),
-					q(29749, {	-- An Urgent Plea
+					q(29749, { -- An Urgent Plea
 						["groups"] = {
 							i(84261), -- Axe of Sacrifice
 							i(84262), -- Spirit Crusher
@@ -220,10 +519,7 @@ _.Zones =
 						["qg"] = 55480, -- Pei-Zhi
 						["sourceQuests"] = { 29747, 29748 }, -- Break the Cycle, Simulacrumble
 					}),
-					qa(29560, {	-- Ancient Power
-						["qg"] = 55196, -- Bold Karasshi
-					}),
-					q(29630, {	-- And a Heavy Fist
+					q(29630, { -- And a Heavy Fist
 						["groups"] = { 
 							i(80740), -- Ambermist Gloves
 							i(80741), -- Blackthicket Gloves
@@ -238,19 +534,19 @@ _.Zones =
 						["qg"] = 54915, -- Groundskeeper Wu
 						["sourceQuests"] = { 29627 }, -- A Proper Weapon
 					}),
-					qa(29901, {	-- Anduin's Decision
+					qa(29901, { -- Anduin's Decision
 						["sourceQuests"] = { 29900, 29899 }, -- An Ancient Legend, Rest in Peace
 						["description"] = "Automatically given when prequisites have been fulfilled.",
 					}),
-					q(41907, {	-- Appropriations
+					q(41907, { -- Appropriations
 						["qg"] = 104744, -- High Elder Cloudfall
 						["classes"] = { 10 },
 					}),
-					qh(31775, {	-- Assault on the Airstrip
+					qh(31775, { -- Assault on the Airstrip
 						["qg"] = 65999, -- General Nazgrim
 						["sourceQuests"] = { 29804 }, -- Seein' Red
 					}),
-					q(29624, {	-- Attention
+					q(29624, { -- Attention
 						["groups"] = {
 							i(80731), -- Ambermist Cord
 							i(80732), -- Blackthicket Belt
@@ -265,37 +561,37 @@ _.Zones =
 						["qg"] = 54917, -- Instructor Xann
 						["sourceQuests"] = { 29623 }, -- Perfection
 					}),
-					q(29753, {	-- Back to Nature
+					q(29753, { -- Back to Nature
 						["qg"] = 55614, -- Pei-Zhi 
 						["sourceQuests"] = { 29751, 29752, 29750 }, -- Ritual Artifacts, The Wayward Dead, Vessels of the Spirit
 					}),
-					q(30135, {	-- Beating the Odds
+					q(30135, { -- Beating the Odds
 						["qg"] = 58225, -- Instructor Tong
 						["sourceQuests"] = { 30134 }, -- Wild Things
 					}),
-					q(29632, {	-- Becoming Battle-Ready
+					q(29632, { -- Becoming Battle-Ready
 						["qg"] = 54922, -- Master Stone Fist
 						["sourceQuests"] = { 29620 }, -- The Great Banquet
 					}),
-					qh(29941, {	-- Beyond the Horizon
+					qh(29941, { -- Beyond the Horizon
 						["qg"] = 56339, -- General Nazgrim
 						["sourceQuests"] = { 29936 }, -- Instant Messaging
 					}),
-					qa(29904, {	-- Bigger Fish to Fry
+					qa(29904, { -- Bigger Fish to Fry
 						["qg"] = 60970, -- Admiral Taylor
 						["sourceQuests"] = { 29903 }, -- A Perfect Match
 					}),
-					q(30567, {	-- Blanche's Boomer Brew
+					q(30567, { -- Blanche's Boomer Brew
 						["qg"] = 59569, -- Brewmaster Blanche
 					}),
-					qa(29892, {	-- Body
+					qa(29892, { -- Body
 						["qg"] = 56287, -- Lorewalker Cho
 					}),
-					qh(29939, {	-- Boom Bait
+					qh(29939, { -- Boom Bait
 						["qg"] = 56406, -- Rivett Clutchpop
 						["sourceQuests"] = { 29937 }, -- Furious Fowl
 					}),
-					qh(29967, {	-- Boom Goes the Doonamite! 
+					qh(29967, { -- Boom Goes the Doonamite! 
 						["groups"] = {
 							i(80788), -- Jinyu Meditation Staff
 							i(80789), -- Jinyu Divining Rod
@@ -311,31 +607,31 @@ _.Zones =
 						["qg"] = 56406, -- Rivett Clutchpop
 						["sourceQuests"] = { 29968 }, -- Green-ish Energy
 					}),
-					qa(29889, {	-- Borrowed Brew
+					qa(29889, { -- Borrowed Brew
 						["qg"] = 209845, --  Mouthwatering Brew
 						["sourceQuests"] = { 29888 }, -- Seek Out the Lorewalker
 					}),
-					q(29747, {	-- Break the Cycle
+					q(29747, { -- Break the Cycle
 						["qg"] = 214871, -- Shattered Destroyer
 						["sourceQuests"] = { 29745 }, -- The Sprites' Plight
 					}),
-					q(29631, {	-- Burning Bright
+					q(29631, { -- Burning Bright
 						["qg"] = 55094, -- Guard Shan Long
 					}),
-					qh(29966, {	-- Burning Down the House
+					qh(29966, { -- Burning Down the House
 						["qg"] = 56339, -- General Nazgrim
 						["sourceQuests"] = { 29943 }, -- Guerrillas in our Midst
 					}),
-					q(29926, {	-- Calamity Jade
+					q(29926, { -- Calamity Jade
 						["qg"] = 56346, -- Foreman Mann
 						["sourceQuests"] = { 29928 }, -- I Have No Jade and I Must Scream
 					}),
 					i(85783, { -- Captain Jack's Head
-						qh(31261, {	-- Captain Jack's Dead
+						qh(31261, { -- Captain Jack's Dead
 							["qg"] = 63809, -- Jack Arrow
 						})
 					}),
-					qa(29906, {	-- Carp Diem
+					qa(29906, { -- Carp Diem
 						["groups"] = {
 							i(80788), -- Jinyu Meditation Staff
 							i(80789), -- Jinyu Divining Rod
@@ -350,133 +646,116 @@ _.Zones =
 						},
 						["qg"] = 60970, -- Admiral Taylor
 					}),
-					q(30151, {	-- Catch!
+					q(30151, { -- Catch!
 						["qgs"] = { 65669, 65670, 65671 }, -- Your Hatchling
 						["isDaily"] = true,
 					}),
-					q(30138, {	-- Choosing the One -- grants an item: Blue (78962), Green (78960), Yellow (78961) serpent egg
+					q(30138, { -- Choosing the One -- grants an item: Blue (78962), Green (78960), Yellow (78961) serpent egg
 						["qg"] = 58225, --  Instructor Tong
 						["sourceQuests"] = { 30135, 30137, 30136 }, -- Beating the Odds, Egg Collection, Empty Nests
 					}),
-					qh(31777, {	-- Choppertunity
+					qh(31777, { -- Choppertunity
 						["qg"] = 55521, -- Rivett Clutchpop
 						["sourceQuests"] = { 29804 }, -- Seein' Red
 					}),
-					qa(29552, {	-- Critical Condition
-						["groups"] = {
-							i(90387), -- Crashed Gyrocopter Rotor
-							i(90388), -- Grewatsword of Kofinna Kottr
-							i(90385), -- Mishka's Bandage Cutter
-							i(90384), -- Peon-Chopping Axe
-							i(90386), -- Recovery Team Shield
-							i(90389), -- Skyguardian's Shield
-						},
-						["qgs"] = { 54614, 66574 }, -- Mishka (two different locations)
-					}),
-					qh(29765, {	-- Cryin' My Eyes Out
+					qh(29765, { -- Cryin' My Eyes Out
 						["qg"] = 55403, -- Zin'Jun
 						["sourceQuests"] = { 31774 }, -- Seeking Zin'jun
 					}),
-					q(31701, {	-- Dark Huntress
+					q(31701, { -- Dark Huntress
 						["qg"] = 56564, -- Elder Anli
 						["isDaily"] = true,
 					}),
-					qh(30015, {	-- Dawn's Blossom
+					qh(30015, { -- Dawn's Blossom
 						["qg"] = 56339, -- General Nazgrim
 						["sourceQuests"] = { 29966 }, -- Burning Down the House
 					}),
-					q(29578, {	-- Defiance
+					q(29578, { -- Defiance
 						["qg"] = 54697, -- Shao the Defiant
 						["sourceQuests"] = { 29576 }, -- An Air of Worry - breadcrumb?
 						["isBreadcrumb"] = true, -- is 29576 really a breadcrumb?
 					}),
-					q(41730, {	-- Desperate Strike
+					q(41730, { -- Desperate Strike
 						["qg"] = 104784, -- Taran Zhu
 						["sourceQuests"] = { 41728 }, -- The Defense of Tian Monastery
 						["classes"] = { 10 },
 					}),
-					q(30158, {	-- Disarming the Enemy
+					q(30158, { -- Disarming the Enemy
 						["qg"] = 58228, -- Instructor Skythorn
 						["isDaily"] = true,
 					}),
-					q(29717, {	-- Down Kitty!
+					q(29717, { -- Down Kitty!
 						["qg"] = 55274, -- An Windfur
 						["sourceQuests"] = { 31230 }, -- Welcome to Dawn's Blossom
 					}),
-					q(30137, {	-- Egg Collection
+					q(30137, { -- Egg Collection
 						["qg"] = 58225, -- Instructor Tong
 						["sourceQuests"] = { 30134 }, -- Wild Things
 					}),
-					qa(31319, {	-- Emergency Response
+					qa(31319, { -- Emergency Response
 						["qg"] = 59418, -- Lorewalker Cho
 						["sourceQuests"] = { 31303 }, -- The Seal is Broken
 					}),
-					qh(30504, {	-- Emergency Response
+					qh(30504, { -- Emergency Response
 						["qg"] = 59418, -- Lorewalker Cho
 						["sourceQuests"] = { 31303 }, -- The Seal is Broken
 					}),
-					q(30157, {	-- Emptier Nests
+					q(30157, { -- Emptier Nests
 						["qg"] = 58510, -- Suchi the Sweet
 						["isDaily"] = true,
 					}),
-					q(30136, {	-- Empty Nests
+					q(30136, { -- Empty Nests
 						["qg"] = 58225, -- Instructor Tong
 						["sourceQuests"] = { 30134 }, -- Wild Things
 					}),
-					qa(31736, {	-- Envoy of the Alliance
-						["qg"] = 54617, -- Rell Nightwind
-					}),
-					q(31486, {	-- Everything I Know About Cooking
+					q(31486, { -- Everything I Know About Cooking
 						["qgs"] = { 56707, 62872, 63013 }, -- Chin, Cranfur the Noodler, Sway Dish Chef
 						["requiredSkill"] = 185,
 					}),
-					q(30004, {	-- Everything In Its Place
+					q(30004, { -- Everything In Its Place
 						["qg"] = 56786, -- Lorewalker Stonestep
 						["sourceQuests"] = { 30001, 30002 }, -- Moth-Ridden, Pages of History
 					}),
-					qh(31771, {	-- Face to Face With Consequence
+					qh(31771, { -- Face to Face With Consequence
 						["qg"] = 66657, -- Taran Zhu
 						["sourceQuests"] = { 31769 } -- The Final Blow!
 					}),
-					qa(29762, {	-- Family Heirlooms
-						["qg"] = 56222, -- Bold Karasshi
-					}),
-					qh(31167, {	-- Family Tree
+					qh(31167, { -- Family Tree
 						["qg"] = 63307, -- Lorewalker Cho
 						["sourceQuests"] = { 31152 }, -- Peering Into the Past
 					}),
-					q(30156, {	-- Feeding Time
+					q(30156, { -- Feeding Time
 						["qgs"] = { 65669, 65670, 65671, 65672, 65673, 65674, 65724 }, -- 3 different hatchlings, 3 different cloud serpents, azure hatchling
 						["isDaily"] = true,
 					}),
-					q(29993, {	-- Find the Boy
+					q(29993, { -- Find the Boy
 						["qg"] = 59173, -- Kai Wanderbrew
 						["sourceQuests"] = { 29866 }, -- The Threads that Stick
 					}),
-					qa(29890, {	-- Finding Your Center
+					qa(29890, { -- Finding Your Center
 						["qg"] = 56287, -- Lorewalker Cho
 					}),
-					qh(31767, {	-- Finish Them!
+					qh(31767, { -- Finish Them!
 						["qg"] = 66190, -- General Nazgrim
 						["sourceQuests"] = { 31766 }, -- Touching Ground
 					}),
-					qh(31768, {	-- Fire Is Always the Answer
+					qh(31768, { -- Fire Is Always the Answer
 						["qg"] = 66190, -- General Nazgrim
 						["sourceQuests"] = { 31766 }, -- Touching Ground
 					}),
-					q(30145, {	-- Flight Training: Full Speed Ahead
+					q(30145, { -- Flight Training: Full Speed Ahead
 						["qg"] = 58420, -- Instructor Windblade
 						["sourceQuests"] = { 30144 }, -- Flight Training: Ring Round-Up
 					}),
-					q(30187, {	-- Flight Training: In Due Course
+					q(30187, { -- Flight Training: In Due Course
 						["qg"] = 58420, -- Instructor Windblade
 						["sourceQuests"] = { 30145 }, -- Flight Training: Full Speed Ahead
 					}),
-					q(30144, {	-- Flight Training: Ring Round-Up
+					q(30144, { -- Flight Training: Ring Round-Up
 						["qg"] = 58420, -- Instructor Windblade
 						["sourceQuests"] = { 30143 }, -- They Grow Like Weeds
 					}),
-					q(29639, {	-- Flying Colors
+					q(29639, { -- Flying Colors
 						["groups"] = {
 							i(80798), -- Greataxe of Honor
 							i(80799), -- Sword of Honor
@@ -489,7 +768,7 @@ _.Zones =
 						["sourceQuests"] = { 29624 }, -- Attention
 						["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
 					}),
-					q(29647, {	-- Flying Colors
+					q(29647, { -- Flying Colors
 						["groups"] = {
 							i(80798), -- Greataxe of Honor
 							i(80799), -- Sword of Honor
@@ -502,7 +781,7 @@ _.Zones =
 						["sourceQuests"] = { 29637 }, -- The Rumpus
 						["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
 					}),
-					q(29646, {	-- Flying Colors
+					q(29646, { -- Flying Colors
 						["groups"] = {
 							i(80798), -- Greataxe of Honor
 							i(80799), -- Sword of Honor
@@ -515,62 +794,46 @@ _.Zones =
 						["sourceQuests"] = { 29628, 29629, 29630 }, -- A Strong Back, A Steady Hand, And a Heavy Fist
 						["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
 					}),
-					qh(29815, {	-- Forensic Science
+					qh(29815, { -- Forensic Science
 						["qg"] = 55180, -- Shademaster Kiryn
 						["sourceQuests"] = { 31999 }, -- Nazgrim's Command
 					}),
-					qa(31742, {	-- Fractured Forces
-						["qg"] = 54617, -- Rell Nightwind
-					}),
-					q(30147, {	-- Fragments of the Past
+					q(30147, { -- Fragments of the Past
 						["qg"] = 58413, -- Jenova Longeye
 						["isDaily"] = true,
 					}),
-					qa(29559, {	-- Freeing Our Brothers
-						["groups"] = {
-							i(81022), -- Cagebreaker's Leather Belt
-							i(81023), -- Cagebreaker's Chain Links
-							i(81024), -- Cagebreaker's Silk Cord
-							i(81025), -- Cagebreaker's Satin Cord
-							i(81026), -- Cagebreaker's Hide Belt
-							i(81027), -- Cagebreaker's Ringmail Waistguard
-							i(81028), -- Cagebreaker's Burnished Clasp
-							i(81029), -- Cagebreaker's Armored Girdle
-							i(81030), -- Cagebreaker's Heavy Girdle
-						},
-						["qg"] = 55196, -- Bold Karasshi
-					}),
-					qh(29937, {	-- Furious Fowl
+					q
+					qh(29937, { -- Furious Fowl
 						["qg"] = 56406, -- Rivett Clutchpop
 						["sourceQuests"] = { 29941 }, -- Beyond the Horizon
 					}),
-					q(43062, {	-- Further Training
+					q(43062, { -- Further Training
 						["qg"] = 104744, -- High Elder Cloudfall
 						["classes"] = { 10 },
 					}),
-					qh(30484, {	-- Gauging Our Progress
+					qh(30484, { -- Gauging Our Progress
 						["qg"] = 57108, -- General Nazgrim
 						["sourceQuests"] = { 30499 }, -- Get Back Here!
 					}),
-					qa(30498, {	-- Get Back Here!
+					qa(30498, { -- Get Back Here!
 						["qg"] = 57242, -- Elder Sage Wind-Yi
 					}),
-					qh(30499, {	-- Get Back Here!
+					qh(30499, { -- Get Back Here!
 						["qg"] = 57242, -- Elder Sage Wind-Yi
 					}),
-					q(29920, {	-- Getting Permission
+					q(29920, { -- Getting Permission
 						["qg"] = 56708, --  Syra Goldendraft
 						["sourceQuests"] = { 29995 }, -- Shrine of the Dawn
 					}),
-					qh(29968, {	-- Green-ish Energy
+					qh(29968, { -- Green-ish Energy
 						["qg"] = 56406, -- Rivett Clutchpop
 						["sourceQuests"] = { 29824 }, -- Scouting Report: Like Jinyu in a Barrel
 					}),
-					q(29626, {	-- Groundskeeper Wu
+					q(29626, { -- Groundskeeper Wu
 						["qg"] = 54926, -- Xiao
 						["sourceQuests"] = { 29620 }, -- The Great Banquet
 					}),
-					qh(29943, {	-- Guerrillas in our Midst
+					qh(29943, { -- Guerrillas in our Midst
 						["groups"] = {
 							i(80749), -- Ambermist Cuffs
 							i(80750), -- Blackthicket Bindings
@@ -585,145 +848,121 @@ _.Zones =
 						["qg"] = 56339, -- General Nazgrim
 						["sourceQuests"] = { 29824 }, -- Scouting Report: Like Jinyu in a Barrel
 					}),
-					qa(30568, {	-- Helping the Cause
+					qa(30568, { -- Helping the Cause
 						["qg"] = 55122, -- Admiral Taylor
 					}),
-					q(32018, {	-- His Name Was... Stormstout
+					q(32018, { -- His Name Was... Stormstout
 						["qg"] = 56774, -- Bolo
 					}),
-					qa(29556, {	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
-						["qg"] = 66292, -- Sky Admiral Rogers
-					}),
-					qa(29893, {	-- Hue
+					
+					qa(29893, { -- Hue
 						["qgs"] = { 56287, 61218 }, -- Lorewalker Cho
 					}),
-					q(29634, {	-- Husshun, the Wizened
+					q(29634, { -- Husshun, the Wizened
 						["qg"] = 54922, -- Master Stone Fist
 						["sourceQuests"] = { 29632 }, -- Becoming Battle-Ready
 					}),
-					q(29928, {	-- I Have No Jade And I Must Scream
+					q(29928, { -- I Have No Jade And I Must Scream
 						["qg"] = 56346, -- Foreman Mann
 						["sourceQuests"] = { 29925 }, -- All We Can Spare
 					}),
-					qh(31134, {	-- If These Stones Could Speak
+					qh(31134, { -- If These Stones Could Speak
 						["qg"] = 63217, -- Lorewalker Cho
 						["sourceQuests"] = { 31132 }, -- A Mile in my Shoes
 					}),
-					qa(29922, {	-- In Search of Wisdom
+					qa(29922, { -- In Search of Wisdom
 						["qg"] = 54960, -- Elder Lusshan
 					}),
-					qa(31542, {	-- Incarnadine Ink
+					qa(31542, { -- Incarnadine Ink
 						["qg"] = 56064, -- Inkmaster Glenzu
 						["requiredSkill"] = 773,
 					}),
-					qh(29936, {	-- Instant Messaging
+					qh(29936, { -- Instant Messaging
 						["qg"] = 56336, -- Chief Kah Kah
 						["sourceQuests"] = { 29935 }, -- Orders are Orders
 					}),
-					qh(29690, {	-- Into the Mists
+					qh(29690, { -- Into the Mists
 						["qg"] = 55054, -- General Nazgrim
 						["sourceQuests"] = { 31853 }, -- All Aboard!
 					}),
-					q(30142, {	-- It's A...
+					q(30142, { -- It's A...
 						["qg"] = 58228, -- Instructor Skythorn
 						["sourceQuests"] = { 30139, 30140, 30141 }, -- The Rider's Journey (one for each egg color)
 					}),
-					q(30502, {	-- Jaded Heart
+					q(30502, { -- Jaded Heart
 						["qg"] = 59418, -- Lorewalker Cho
 						["sourceQuests"] = { 31303 }, -- The Seal is Broken
 					}),
-					qa(29562, {	-- Jailbreak
-						["qg"] = 55196, -- Bold Karasshi
-						["sourceQuests"] = { 29759 }, -- Kung Din
-					}),
-					q(42957, {	-- Journey to the East
+					q(42957, { -- Journey to the East
 						["qg"] = 109049, -- The Monkey King
 						["sourceQuests"] = { 42766, 42767, 42768 }, -- The Riddle of the Barrel, The Riddle of the Land, The Riddle of Purity
 						["classes"] = { 10 },
 					}),
-					q(30148, {	-- Just a Flesh Wound
+					q(30148, { -- Just a Flesh Wound
 						["qg"] = 58413, -- Jenova Longeye
 						["isDaily"] = true,
 					}),
-					qh(29924, {	-- Kill Kher Shan
+					qh(29924, { -- Kill Kher Shan
 						["qg"] = 56327, -- Nibi Nibi
 						["sourceQuests"] = { 29879 }, -- Swallowed Whole
 					}),
-					qa(31740, {	-- Koukou's Rampage
-						["qg"] = 66199, -- Lin Applebloom
-						["sourceQuests"] = { 31739 }, -- Priorities!
-					}),
-					qa(29759, {	-- Kung Din
-						["groups"] = {
-							i(90371), -- Landfall Burnished Greaves
-							i(90366), -- Landfall Chain Boots
-							i(90365), -- Landfall Leather Boots
-							i(90369), -- Landfall Moccasins
-							i(90373), -- Landfall Plate Boots
-							i(90370), -- Landfall Sabatons
-							i(90368), -- Landfall Satin Treads
-							i(90367), -- Landfall Silk Treads
-							i(90372), -- Landfall Warboots
-						},
-						["qg"] = 55196, -- Bold Karasshi
-						["sourceQuests"] = { 29558, 29559, 29560 }, -- The Path of War, Freeing Our Brothers, Ancient Power
-					}),
-					qa(31362, {	-- Last Piece of the Puzzle
+					
+					qa(31362, { -- Last Piece of the Puzzle
 						["qg"] = 59620, -- Lorewalker Cho
 					}),
-					qh(30485, {	-- Last Piece of the Puzzle
+					qh(30485, { -- Last Piece of the Puzzle
 						["qg"] = 59377, -- Lorewalker Cho
 						["sourceQuests"] = { 30484, 30466 }, -- Gauging Our Progress, Sufficient Motivation
 					}),
-					qh(29822, {	-- Lay of the Land
+					qh(29822, { -- Lay of the Land
 						["qg"] = 55172, -- General Nazgrim
 						["sourceQuests"] = { 29827 }, -- Acid Rain
 					}),
-					qa(29905, {	-- Let Them Burn
+					qa(29905, { -- Let Them Burn
 						["qg"] = 60970, -- Admiral Taylor
 						["sourceQuests"] = { 29904 }, -- Bigger Fish to Fry
 					}),
-					q(30005, {	-- Lighting Up the Sky
+					q(30005, { -- Lighting Up the Sky
 						["qg"] = 56784, -- Fei
 						["sourceQuests"] = { 29932 }, -- The Temple of the Jade Serpent
 					}),
-					q(31709, {	-- Lingering Doubt
+					q(31709, { -- Lingering Doubt
 						["qg"] = 58508, -- Big Bao
 						["isDaily"] = true,
 					}),
-					q(30495, {	-- Love's Labor
+					q(30495, { -- Love's Labor
 						["qg"] = 59391, -- Foreman Raike
 						["sourceQuests"] = { 29931 }, -- The Serpent's Heart
 					}),
-					q(31703, {	-- Madcap Mayhem
+					q(31703, { -- Madcap Mayhem
 						["qg"] = 58564, -- Elder Anli
 						["isDaily"] = true,
 					}),
-					q(29927, {	-- Mann's Man
+					q(29927, { -- Mann's Man
 						["qg"] = 56346, -- Foreman Mann
 						["sourceQuests"] = { 29928 }, -- I have No Jade and I must Scream
 					}),
-					q(29670, {	-- Maul Gormal
+					q(29670, { -- Maul Gormal
 						["qg"] = 55009, -- Shao the Defiant
 						["sourceQuests"] = { 29586 }, -- The Splintered path
 					}),
-					qh(29821, {	-- Missed Me By... That Much!
+					qh(29821, { -- Missed Me By... That Much!
 						["qg"] = 55521, -- Rivett Clutchpop
 						["sourceQuests"] = { 31999 }, -- Nazgrim's Command
 					}),
-					qh(29743, {	-- Monstrosity
+					qh(29743, { -- Monstrosity
 						["qg"] = 212181, -- Ancient Statue
 						["sourceQuests"] = { 31774 }, -- Seeking Zin'jun
 					}),
-					q(30001, {	-- Moth-Ridden
+					q(30001, { -- Moth-Ridden
 						["qg"] = 56786, -- Lorewalker Stonestep
 						["sourceQuests"] = { 29998 }, -- The Librarian's Quandary
 					}),
-					q(30648, {	-- Moving On
+					q(30648, { -- Moving On
 						["qg"] = 59899, -- Fei
 						["sourceQuests"] = { 30504, 31319, 30502, 30500 }, -- Emergency Response (horde and alliance), Jaded Heart, Residual Fallout
 					}),
-					qh(31999, {	-- Nazgrim's Command
+					qh(31999, { -- Nazgrim's Command
 						["groups"] = {
 							i(90293), -- Peacebreaker's Armored Helm
 							i(90292), -- Peacebreaker's Burnished Headcover
@@ -738,33 +977,28 @@ _.Zones =
 						["qg"] = 215844, -- Flagpole
 						["sourceQuests"] = { 31779 }, -- The Darkness Within
 					}),
-					q(31705, {	-- Needle Me Not
+					q(31705, { -- Needle Me Not
 						["qg"] = 58564, -- Elder Anli
 						["isDaily"] = true,
 					}),
-					qa(30069, {	-- No Plan Survives Contact with the Enemy
-						["qg"] = 54616, -- Sully "The Pickle" McLeary
-					}),
-					q(31702, {	-- On The Prowl
+					
+					q(31702, { -- On The Prowl
 						["qg"] = 58564, -- Elder Anli
 						["isDaily"] = true,
 					}),
-					qa(31745, {	-- Onward and Inward
-						["qgs"] = { 54617, 66581 }, -- Rell Nightwind
-						["sourceQuests"] = { 30070 }, -- The Fall of Ga'trul
-					}),
-					q(31784, {	-- Onyx To Goodness
+					
+					q(31784, { -- Onyx To Goodness
 						["qg"] = 58564, -- Elder Anli
 						["repeatable"] = true,
 					}),
-					q(29580, {	-- Orchard-Supplied Hardware
+					q(29580, { -- Orchard-Supplied Hardware
 						["qg"] = 54854, -- Gentle Mother Hanae
 					}),
-					qh(29935, {	-- Orders are Orders
+					qh(29935, { -- Orders are Orders
 						["qg"] = 56313, -- Tooki Tooki
 						["sourceQuests"] = { 29879 }, -- Swallowed Whole
 					}),
-					q(30002, {	-- Pages of History
+					q(30002, { -- Pages of History
 						["groups"] = {
 							i(80722), -- Ambermist Treads
 							i(80723), -- Blackthicket Footguards
@@ -779,7 +1013,7 @@ _.Zones =
 						["qg"] = 56786, -- Lorewalker Stonestep
 						["sourceQuests"] = { 29998 }, -- The Librarian's Quandry
 					}),
-					qh(31765, {	-- Paint it Red!
+					qh(31765, { -- Paint it Red!
 						["groups"] = {
 							i(90329), -- Garrosh's Vanguard Battleaxe
 							i(90336), -- Gunship Armory Greataxe
@@ -794,11 +1028,11 @@ _.Zones =
 						["qg"] = 55135, -- General Nazgrim
 						["sourceQuests"] = { 29690 }, -- Into the Mists
 					}),
-					qh(31152, {	-- Peering Into the Past
+					qh(31152, { -- Peering Into the Past
 						["qg"] = 63217, -- Lorewalker Cho
 						["sourceQuests"] = { 31134 }, -- If These Stones Could Speak
 					}),
-					q(29755, {	-- Pei-Back
+					q(29755, { -- Pei-Back
 						["groups"] = {
 							i(80695), -- Ambermist Mantle
 							i(80696), -- Blackthicket Spaulders
@@ -813,46 +1047,41 @@ _.Zones =
 						["qg"] = 214903, -- The Tan-Chao
 						["sourceQuests"] = { 29754 }, -- To Bridge Earth and Sky
 					}),
-					q(29623, {	-- Perfection
+					q(29623, { -- Perfection
 						["qg"] = 54917, -- Instructor Xann
 						["sourceQuests"] = { 29622 }, -- Your Training Starts Now
 					}),
-					qa(31738, {	-- Pillaging Peons
-						["qg"] = 65910, -- Sunke Khang
-					}),
-					q(31704, {	-- Pooped
+					q(31704, { -- Pooped
 						["qgs"] = { 58384, 65669, 65670, 65671 }, -- 4 different hatchlings
 						["isDaily"] = true,
 					}),
-					q(31543, {	-- Portrait of a Lady
+					q(31543, { -- Portrait of a Lady
 						["qg"] = 56064, -- Inkmaster Glenzu
 						["requiredSkill"] = 773,
 					}),
-					qa(29891, {	-- Potency
+					qa(29891, { -- Potency
 						["qgs"] = { 56287, 61218 }, -- Lorewalker Cho
 					}),
-					q(30159, {	-- Preservation
+					q(30159, { -- Preservation
 						["qg"] = 58510, -- Suchi the Sweet
 						["isDaily"] = true,
 					}),
-					qa(31739, {	-- Priorities!
-						["qg"] = 64596, -- Teng Applebloom
-					}),
-					qh(31978, {	-- Priorities!
+					
+					qh(31978, { -- Priorities!
 						["qg"] = 66662, -- Gi-Oh
 						["sourceQuests"] = { 31769 }, -- The Final Blow!
 						["description"] = "Completing this quest will mark Ellie Honeypaw's version as complete.",
 					}),
-					qh(31772, {	-- Priorities!
+					qh(31772, { -- Priorities!
 						["qgs"] = { 66660, 66825 }, -- Ellie Honeypaw
 						["sourceQuests"] = { 31769 }, -- The Final Blow!
 						["description"] = "Completing this quest will mark Gi-Oh's version as complete.",
 					}),
-					qh(31773, {	-- Prowler Problems
+					qh(31773, { -- Prowler Problems
 						["qgs"] = { 66659, 66838, 66841, 66853 }, -- Sue-Ji the Tender, 3 different phases of Kai-Lin Honeydew
 						["sourceQuests"] = { 31769 }, -- The Final Blow!
 					}),
-					q(29882, {	-- Quill of Stingers
+					q(29882, { -- Quill of Stingers
 						["groups"] = {
 							i(80713), -- Ambermist Leggings
 							i(80714), -- Blackthicket Legguards
@@ -866,15 +1095,15 @@ _.Zones =
 						},
 						["qg"] = 56063, -- Inkmaster Jo Po
 					}),
-					q(29579, {	-- Rally the Survivors
+					q(29579, { -- Rally the Survivors
 						["qg"] = 54697, -- Shao the Defiant
 					}),
-					q(41733, {	-- Rebuilding the Order
+					q(41733, { -- Rebuilding the Order
 						["qg"] = 104744, -- High Elder Cloudfall
 						["sourceQuests"] = { 41732 }, -- The Hand of Keletress
 						["classes"] = { 10 },
 					}),
-					qh(29694, {	-- Regroup!
+					qh(29694, { -- Regroup!
 						["groups"] = {
 							i(90334), -- Cannonball-Dented Shield
 							i(90335), -- Hozen-Thunking Mace
@@ -886,18 +1115,18 @@ _.Zones =
 						["qg"] = 66656, -- General Nazgrim
 						["sourceQuests"] = { 31769 }, -- The Final Blow!
 					}),
-					q(30500, {	-- Residual Fallout
+					q(30500, { -- Residual Fallout
 						["qg"] = 59418, -- Lorewalker Cho
 						["sourceQuests"] = { 31303 }, -- The Seal is Broken
 					}),
-					qa(29899, {	-- Rest in Peace
+					qa(29899, { -- Rest in Peace
 						["qg"] = 56432, -- Ren Whitepaw
 					}),
-					q(30155, {	-- Restoring the Balance
+					q(30155, { -- Restoring the Balance
 						["qg"] = 58228, -- Instructor Skythorn
 						["isDaily"] = true,
 					}),
-					q(30188, {	-- Riding the Skies - actually three different quests but completing one completes all three so I combined them and put a description
+					q(30188, { -- Riding the Skies - actually three different quests but completing one completes all three so I combined them and put a description
 						["groups"] = {
 							i(79802), 	-- Quest 30188 - Reins of the Jade Cloud Serpent
 							i(85430), 	-- Quest 31810 - Reins of the Azure Cloud Serpent
@@ -906,34 +1135,30 @@ _.Zones =
 						["qg"] = 58564, -- Elder Anli
 						["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the quest again on another character.|r",
 					}),
-					q(29751, {	-- Ritual Artifacts
+					q(29751, { -- Ritual Artifacts
 						["qg"] = 55614, -- Pei-Zhi
 						["sourceQuests"] = { 29749 }, -- An Urgent Plea
 					}),
-					qa(29885, {	-- Road Rations
-						["qg"] = 66949, -- Rell Nightwind
-						["sourceQuests"] = { 32356, 32357, 32361 }, -- 3 different tracking quests
-					}),
-					qa(29898, {	-- Sacred Waters
+					qa(29898, { -- Sacred Waters
 						["qg"] = 56434, -- Anduin Wrynn
 					}),
-					qh(29730, {	-- Scouting Report: Hostile Natives
+					qh(29730, { -- Scouting Report: Hostile Natives
 						["qg"] = 55648, -- Riko
 						["sourceQuests"] = { 29971 }, -- The Scouts Return
 					}),
-					qh(29824, {	-- Scouting Report: Like Jinyu in a Barrel
+					qh(29824, { -- Scouting Report: Like Jinyu in a Barrel
 						["qg"] = 55647, -- Shokia
 						["sourceQuests"] = { 29823 }, -- Scouting Report: The Friend of My Enemy
 					}),
-					qh(29731, {	-- Scouting Report: On the Right Track
+					qh(29731, { -- Scouting Report: On the Right Track
 						["qg"] = 55646, -- Shademaster Kiryn
 						["sourceQuests"] = { 29730 }, -- Scouting Report: Hostile Natives
 					}),
-					qh(29823, {	-- Scouting Report: The Friend of My Enemy
+					qh(29823, { -- Scouting Report: The Friend of My Enemy
 						["qg"] = 55648, -- Riko
 						["sourceQuests"] = { 29731 }, -- Scouting Report: On the Right Track
 					}),
-					qh(29804, {	-- Seein' Red
+					qh(29804, { -- Seein' Red
 						["groups"] = {
 							i(90302), -- Armored Chestpiece of Eminent Domain
 							i(90301), -- Burnished Chestguard of Eminent Domain
@@ -948,10 +1173,10 @@ _.Zones =
 						["qgs"] = { 55403, 55497, 67153 }, -- 3 different phases of Zin'Jun
 						["sourceQuests"] = { 29765 }, -- Cryin' My Eyes Out
 					}),
-					qa(29888, {	-- Seek Out the Lorewalker
+					qa(29888, { -- Seek Out the Lorewalker
 						["qg"] = 56222, -- Bold Karasshi
 					}),
-					qh(31774, {	-- Seeking Zin'jun
+					qh(31774, { -- Seeking Zin'jun
 						["groups"] = {
 							i(90319), -- Landfall Burnished Greaves
 							i(90314), -- Landfall Chain Boots
@@ -966,54 +1191,51 @@ _.Zones =
 						["qg"] = 66845, -- Sergeant Gorrok
 						["sourceQuests"] = { 29694, 31771 }, -- Regroup!
 					}),
-					qa(31541, {	-- Set in Jade
+					qa(31541, { -- Set in Jade
 						["qg"] = 56063, -- Inkmaster Jo Po
 						["requiredSkill"] = 773,
 					}),
-					q(29995, {	-- Shrine of the Dawn
+					q(29995, { -- Shrine of the Dawn
 						["qg"] = 56065, -- Inkmaster Wei
 						["sourceQuests"] = { 29993 }, -- Find the Boy
 					}),
-					qa(29725, {	-- SI:7 Report: Fire From the Sky
+					qa(29725, { -- SI:7 Report: Fire From the Sky
 						["qg"] = 55282, -- Sully "The Pickle" McLeary
 					}),
-					qa(29726, {	-- SI:7 Report: Hostile Natives
+					qa(29726, { -- SI:7 Report: Hostile Natives
 						["qg"] = 55284, -- Little Lu
 					}),
-					qa(29733, {	-- SI:7 Report: Lost in the Woods
+					qa(29733, { -- SI:7 Report: Lost in the Woods
 						["qg"] = 55333, -- Rell Nightwind
 					}),
-					qa(29727, {	-- SI:7 Report: Take No Prisoners
+					qa(29727, { -- SI:7 Report: Take No Prisoners
 						["qg"] = 55283, -- Amber Kearnen
 					}),
-					qh(29942, {	-- Silly Wikket, Slickies are for Hozen
+					qh(29942, { -- Silly Wikket, Slickies are for Hozen
 						["qg"] = 56358, -- Eekle Eekle
 						["sourceQuests"] = { 29937 }, -- Furious Fowl
 					}),
-					q(29748, {	-- Simulacrumble
+					q(29748, { -- Simulacrumble
 						["qg"] = 214871, -- Shattered Destroyed
 						["sourceQuests"] = { 29745 }, -- The Sprites' Plight
 					}),
-					q(31194, {	-- Slitherscale Suppression
+					q(31194, { -- Slitherscale Suppression
 						["qg"] = 58564, -- Elder Anli
 						["isDaily"] = true,
 					}),
-					q(41729, {	-- Slowing the Spread
+					q(41729, { -- Slowing the Spread
 						["qg"] = 104745, -- Instructor Myang
 						["sourceQuests"] = { 41728 }, -- The Defense of Tian Monastery
 						["classes"] = { 10 },
 					}),
-					qa(31743, {	-- Smoke Before Fire
-						["qg"] = 54617, -- Rell Nightwind
-					}),
-					q(30146, {	-- Snack Time
+					q(30146, { -- Snack Time
 						["qg"] = 58413, -- Jenova Longeye
 						["isDaily"] = true,
 					}),
-					qa(29894, {	-- Spirits of the Water
+					qa(29894, { -- Spirits of the Water
 						["qg"] = 59058, -- Pearlkeeper Fujin
 					}),
-					q(29585, {	-- Spitfire
+					q(29585, { -- Spitfire
 						["groups"] = {
 							i(84243), -- Bamboo Fiber Gloves
 							i(84244), -- Bamboo Leaf Gloves
@@ -1027,116 +1249,95 @@ _.Zones =
 						},
 						["qg"] = 54854, -- Gentle Mother Hanae
 					}),
-					q(31699, {	-- Sprite Fright
+					q(31699, { -- Sprite Fright
 						["qg"] = 58509, -- Ningna Darkwheel
 						["isDaily"] = true,
 					}),
-					qa(31540, {	-- Staves for Tian Monastery
+					qa(31540, { -- Staves for Tian Monastery
 						["qg"] = 56065, -- Inkmaster Wei
 						["isWeekly"] = true,
 					}),
-					qh(31121, {	-- Stay a While, and Listen
+					qh(31121, { -- Stay a While, and Listen
 						["qg"] = 55768, -- Lorewalker Cho
 						["sourceQuests"] = { 29822 }, -- Lay of the Land
 					}),
-					q(41731, {	-- Storm, Earth, and Fire
+					q(41731, { -- Storm, Earth, and Fire
 						["qg"] = 104784, -- Taran Zhu
 						["sourceQuests"] = { 41728 }, -- The Defense of Tian Monastery
 						["classes"] = { 10 },
 					}),
-					qh(31776, {	-- Strongarm Tactics
+					qh(31776, { -- Strongarm Tactics
 						["qg"] = 65999, -- General Nazgrim
 						["sourceQuests"] = { 29804 }, -- Seein' Red
 					}),
-					qh(30466, {	-- Sufficient Motivation
+					qh(30466, { -- Sufficient Motivation
 						["qg"] = 57108, -- General Nazgrim
 						["sourceQuests"] = { 30000 }, -- The Jade Serpent
 					}),
-					qh(29879, {	-- Swallowed Whole
+					qh(29879, { -- Swallowed Whole
 						["qg"] = 63307, -- Lorewalker Cho
 						["sourceQuests"] = { 31167 }, -- Family Tree
 					}),
-					q(30150, {	-- Sweet as Honey
+					q(30150, { -- Sweet as Honey
 						["qgs"] = { 58384, 65669, 65670, 65671 }, -- 4 different hatchlings
 						["isDaily"] = true,
 					}),
-					qa(31392, {	-- Temple of the White Tiger
+					qa(31392, { -- Temple of the White Tiger
 						["qgs"] = { 55809, 63754, 64448, 64521, 66247 }, -- Peiji Goldendraft, Farmhand Bo, Hopsmaster Chang, Wanderer Chu, Tigermaster Liu-Do
 					}),
-					qh(31393, {	-- Temple of the White Tiger
+					qh(31393, { -- Temple of the White Tiger
 						["qgs"] = { 55809, 63751, 64448, 64521, 66247 }, -- Peiji Goldendraft, Farmhand Ko, Hopsmaster Chang, Wanderer Chu, Tigermaster Liu-Do
 					}),
-					qh(29933, {	-- The Bees' Knees
+					qh(29933, { -- The Bees' Knees
 						["qg"] = 56351, -- Bo Bo
 						["sourceQuests"] = { 29879 }, -- Swallowed Whole
 					}),
-					q(31713, {	-- The Big Brew-haha
+					q(31713, { -- The Big Brew-haha
 						["qg"] = 58506, -- Ace Longpaw
 						["isDaily"] = true,
 					}),
-					q(31715, {	-- The Big Kah-Oona
+					q(31715, { -- The Big Kah-Oona
 						["qg"] = 58564, -- Elder Anli
 						["isDaily"] = true,
-					}),
-					qa(31737, {	-- The Cost of War
-						["qg"] = 54617, -- Rell Nightwind
-					}),
-					qh(31779, {	-- The Darkness Within
+					}),qh(31779, { -- The Darkness Within
 						["qg"] = 65999, -- General Nazgrim
 						["sourceQuests"] = { 31776, 31775 }, -- Strongarm Tactics, Assault on the Airstrip
 					}),
-					q(41728, {	-- The Defense of Tian Monastery
+					q(41728, { -- The Defense of Tian Monastery
 						["qg"] = 100438, -- Iron-Body Ponshu
 						["classes"] = { 10 },
 					}),
-					q(29716, {	-- The Double Hozen Dare
+					q(29716, { -- The Double Hozen Dare
 						["qg"] = 55234, -- An Windfur
 						["sourceQuests"] = { 31230 }, -- Welcome to Dawn's Blossom
 					}),
-					q(30154, {	-- The Easiest Way To A Serpent's Heart
+					q(30154, { -- The Easiest Way To A Serpent's Heart
 						["qgs"] = { 65669, 65670, 65671, 65672, 65673, 65674, 65679, 65723, 65724 }, -- 3x "your hatchling", 3x cloud serpent, golden/jade/azure hatchling
 						["isDaily"] = true,
 					}),
-					qa(29887, {	-- The Elder's Instruments
-						["qg"] = 59058, -- Pearlkeeper Fujin
-					}),
-					qa(30070, {	-- The Fall of Ga'trul
-						["groups"] = {
-							i(90345), -- Peacebreaker's Armored Helm
-							i(90344), -- Peacebreaker's Burnished Headcover
-							i(90339), -- Peacebreaker's Chain Helm
-							i(90346), -- Peacebreaker's Heavy Helm
-							i(90342), -- Peacebreaker's Hide Helm
-							i(90338), -- Peacebreaker's Leather Helm
-							i(90343), -- Peacebreaker's Ringmail Helm
-							i(90341), -- Peacebreaker's Satin Hood
-							i(90340), -- Peacebreaker's Silk Cowl
-						},
-						["qg"] = 54616, -- Sully "The Pickle" McLeary
-					}),
-					qh(31769, {	-- The Final Blow!
+					qh(31769, { -- The Final Blow!
 						["qg"] = 66646, -- General Nazgrim
 						["sourceQuests"] = { 31767, 31768 }, -- Finish Them!, Fire is Always the Answer
 					}),
-					q(29620, {	-- The Great Banquet
+					q(29620, { -- The Great Banquet
 						["qg"] = 54913, -- Lin Tenderpaw
 						["sourceQuests"] = { 29619 }, -- A Courteous Guest
 					}),
-					q(41732, {	-- The Hand of Keletress
+					q(41732, { -- The Hand of Keletress
 						["qg"] = 104850, -- The Monkey King
 						["sourceQuests"] = { 41729, 41730, 41731 }, -- Slowing the Spread, Desperate Strike, Storm Earth and Fire
 						["classes"] = { 10 },
 					}),
-					q(29618, {	-- The High Elder
+					q(29618, { -- The High Elder
 						["qg"] = 54913, -- Lin Tenderpaw
 						["sourceQuests"] = { 29617 }, -- Tian Monastery
 					}),
-					q(31876, {	-- The Inkmasters of the Arboretum
+					q(31876, { -- The Inkmasters of the Arboretum
 						["qg"] = 64691, -- Lorewalker Huynh
 						["isWeekly"] = true,
 						["requiredSkill"] = 773,
 					}),
-					q(30000, {	-- The Jade Serpent
+					q(30000, { -- The Jade Serpent
 						["groups"] = {
 							i(80686), -- Ambermist Hood
 							i(80687), -- Blackthicket Helm
@@ -1151,84 +1352,61 @@ _.Zones =
 						["qg"] = 56784, -- Fei
 						["sourceQuests"] = { 29999, 30005 }, -- The Rider's Bind, Lighting Up The Sky
 					}),
-					q(29723, {	-- The Jade Witch
+					q(29723, { -- The Jade Witch
 						["qgs"] = { 55234, 55274 }, -- 2 phases of An Windfur
 						["sourceQuests"] = { 29716 }, -- The Double Hozen Dare
 					}),
-					q(29998, {	-- The Librarian's Quandary
+					q(29998, { -- The Librarian's Quandary
 						["qg"] = 56782, -- Elder Sage Rain-Zhu
 						["sourceQuests"] = { 29932 }, -- The Temple of the Jade Serpent
 					}),
-					qa(29553, {	-- The Missing Admiral
-						["qg"] = 54615, -- Nodd Codejack
-						["sourceQuests"] = { 29555 }, -- The White Pawn
-					}),
-					qa(29548, {	-- The Mission
+					qa(29548, { -- The Mission
 						["qg"] = 55789, -- Rell Nightwind
 						["sourceQuests"] = { 49556, 49866 }, -- Hero's Call: Jade Forest!, To Pandaria!
 					}),
-					q(42868, {	-- The Monkey King's Challenge
+					q(42868, { -- The Monkey King's Challenge
 						["qg"] = 109187, -- The Monkey King
 						["sourceQuests"] = { 42957 }, -- Journey to the East
 						["classes"] = { 10 },
 					}),
-					qa(31373, {	-- The Order of the Cloud Serpent
+					qa(31373, { -- The Order of the Cloud Serpent
 						["qg"] = 64484, -- Instructor Windspear
 					}),
-					qa(29558, {	-- The Path of War
-						["qg"] = 55196, -- Bold Karasshi
-					}),
-					qa(29883, {	-- The Pearlfin Situation
-						["qg"] = 66949, -- Rell Nightwind
-					}),
-					q(29881, {	-- The Perfect Color
+					q(29881, { -- The Perfect Color
 						["qg"] = 56064, -- Inkmaster Glenzu
 					}),
-					q(42768, {	-- The Riddle of Purity
+					q(42768, { -- The Riddle of Purity
 						["qg"] = 108700, -- The Monkey King
 						["sourceQuests"] = { 42762 }, -- The Wanderer's Companion
 						["classes"] = { 10 },
 					}),
-					q(42766, {	-- The Riddle of the Barrel
+					q(42766, { -- The Riddle of the Barrel
 						["qg"] = 108700, -- The Monkey King
 						["sourceQuests"] = { 42762 }, -- The Wanderer's Companion
 						["classes"] = { 10 },
 					}),
-					q(42767, {	-- The Riddle of the Land
+					q(42767, { -- The Riddle of the Land
 						["qg"] = 108700, -- The Monkey King
 						["sourceQuests"] = { 42762 }, -- The Wanderer's Companion
 						["classes"] = { 10 },
 					}),
-					q(29999, {	-- The Rider's Bind
+					q(29999, { -- The Rider's Bind
 						["qg"] = 56784, -- Fei
 						["sourceQuests"] = { 29932 }, -- The Temple of the Jade Serpent
 					}),
-					q(30139, {	-- The Rider's Journey
+					q(30139, { -- The Rider's Journey
 						["qg"] = 58225, -- Instructor Tong
 					}),
-					qa(31735, {	-- The Right Tool For The Job
-						["groups"] = {
-							i(90354), -- Armored Chestpiece of Eminent Domain
-							i(90353), -- Burnished Chestguard of Eminent Domain
-							i(90348), -- Chain Armor of Eminent Domain
-							i(90355), -- Heavy Chestpiece of Eminent Domain
-							i(90351), -- Hide Robe of Eminent Domain
-							i(90347), -- Leather Tunic of Eminent Domain
-							i(90352), -- Ringmail Armor of Eminent Domain
-							i(90350), -- Satin Robe of Eminent Domain
-							i(90349), -- Silk Robe of Eminent Domain
-						},
-						["qg"] = 54617, -- Rell Nightwind
-					}),
-					qa(31254, {	-- The Road to Kun-Lai
+					
+					qa(31254, { -- The Road to Kun-Lai
 						["qg"] = 63778, -- Messenger Grummle
 						["sourceQuests"] = { 49559 }, -- Hero's Call: Kun-Lai Summit!
 					}),
-					qh(31255, {	-- The Road to Kun-Lai
+					qh(31255, { -- The Road to Kun-Lai
 						["qg"] = 63778, -- Messenger Grummle
 						["sourceQuests"] = { 49541 }, -- Warchief's Command: Kun-Lai Summit!
 					}),
-					q(29637, {	-- The Rumpus
+					q(29637, { -- The Rumpus
 						["groups"] = {
 							i(84251), -- Staff of Inner Focus
 							i(84252), -- Instructor's Staff
@@ -1244,31 +1422,31 @@ _.Zones =
 						["qg"] = 54918, -- Instructor Myang
 						["sourceQuests"] = { 29636 }, -- A Test of Endurance
 					}),
-					qh(29971, {	-- The Scouts Return
+					qh(29971, { -- The Scouts Return
 						["qg"] = 56406, -- Rivett Clutchpop
 						["sourceQuests"] = { 29939 }, -- Boom Bait
 					}),
-					q(29997, {	-- The Scryer's Dilemma
+					q(29997, { -- The Scryer's Dilemma
 						["qg"] = 56782, -- Elder Sage Rain-Zhu
 						["sourceQuests"] = { 29932 }, -- The Temple of the Jade Serpent
 					}),
-					q(31303, {	-- The Seal is Broken
+					q(31303, { -- The Seal is Broken
 						["qg"] = 59411, -- Lorewalker Cho
 						["sourceQuests"] = { 30485 }, -- Last Piece of the Puzzle
 					}),
-					q(31711, {	-- The Seed of Doubt
+					q(31711, { -- The Seed of Doubt
 						["qg"] = 58564, -- Elder Anli
 						["isDaily"] = true,
 					}),
-					q(29931, {	-- The Serpent's Heart
+					q(29931, { -- The Serpent's Heart
 						["qg"] = 56346, -- Foreman Mann
 						["sourceQuests"] = { 29930 }, -- What's Mined is Yours
 					}),
-					q(31700, {	-- The Shoe Is On The Other Foot
+					q(31700, { -- The Shoe Is On The Other Foot
 						["qg"] = 58509, -- Ningna Darkwheel
 						["isDaily"] = true,
 					}),
-					q(29865, {	-- The Silkwood Road
+					q(29865, { -- The Silkwood Road
 						["groups"] = {
 							i(80704), -- Ambermist Robe
 							i(80705), -- Blackthicket Robes
@@ -1283,135 +1461,103 @@ _.Zones =
 						["qg"] = 56062, -- Tzu the Ironbelly
 						["sourceQuests"] = { 31230 }, -- Welcome to Dawn's Blossom
 					}),
-					q(30152, {	-- The Sky Race
+					q(30152, { -- The Sky Race
 						["qg"] = 58420, -- Instructor Windblade
 						["isDaily"] = true;
 					}),
-					q(29586, {	-- The Splintered Path
+					q(29586, { -- The Splintered Path
 						["qg"] = 55209, -- Traumatized Nectarbreeze Farmer
 						["sourceQuests"] = { 29580, 29585 }, -- Orchard-Supplied Hardware, Spitfire
 					}),
-					q(29745, {	-- The Sprites' Plight
+					q(29745, { -- The Sprites' Plight
 						["qg"] = 55438, -- Outcast Sprite
 						--["sourceQuests"] = { 29744 }, -- Some "Pupil of Nature", no longer available
 					}),
-					q(29932, {	-- The Temple of the Jade Serpent
+					q(29932, { -- The Temple of the Jade Serpent
 						["qg"] = 59391, -- Foreman Raike
 						["sourceQuests"] = { 30495 }, -- Love's Labor
 					}),
-					q(29866, {	-- The Threads that Stick
+					q(29866, { -- The Threads that Stick
 						["qg"] = 59178, -- Lo Wanderbrew
 						["sourceQuests"] = { 31230 }, -- Welcome to Dawn's Blossom
 					}),
-					q(42765, {	-- The Trial at the Temple
+					q(42765, { -- The Trial at the Temple
 						["qg"] = 109187, -- The Monkey King
 						["sourceQuests"] = { 42868 }, -- The Monkey King's Challenge
 						["classes"] = { 10 },
 					}),
-					q(42762, {	-- The Wanderer's Companion
+					q(42762, { -- The Wanderer's Companion
 						["qg"] = 100438, -- Iron-Body Ponshu
 						["classes"] = { 10 },
 					}),
-					q(29752, {	-- The Wayward Dead
+					q(29752, { -- The Wayward Dead
 						["qg"] = 55614, -- Pei-Zhi
 						["sourceQuests"] = { 29749 }, -- An Urgent Plea
 					}),
-					qa(29555, {	-- The White Pawn
-						["qg"] = 66292, -- Sky Admiral Rogers
-					}),
-					q(32019, {	-- They Call Him... Stormstout
+					
+					q(32019, { -- They Call Him... Stormstout
 						["qg"] = 56782, -- Elder Sage Rain-Zhu
 					}),
-					q(30143, {	-- They Grow Like Weeds
+					q(30143, { -- They Grow Like Weeds
 						["qg"] = 58564, -- Elder Anli
 					}),
-					qh(31112, {	-- They're So Thorny!
+					qh(31112, { -- They're So Thorny!
 						["qg"] = 62923, -- Empty Package
 						["sourceQuests"] = { 29821 }, -- Missed Me By... That Much!
 					}),
-					q(31698, {	-- Thinning The Pack
+					q(31698, { -- Thinning The Pack
 						["qg"] = 58228, -- Instructor Skythorn
 						["isDaily"] = true,
 					}),
-					q(29617, {	-- Tian Monastery
+					q(29617, { -- Tian Monastery
 						["qg"] = 54998, -- Apprentice Yufi
 					}),
-					q(29754, {	-- To Bridge Earth and Sky
+					q(29754, { -- To Bridge Earth and Sky
 						["qg"] = 55614, -- Pei-Zhi
 						["sourceQuests"] = { 29756, 29753 }, -- A Humble Offering, Back to Nature
 					}),
-					qh(31766, {	-- Touching Ground
+					qh(31766, { -- Touching Ground
 						["qg"] = 66667, -- Rivett Clutchpop
 						["sourceQuests"] = { 31765 }, -- Paint it Red!
 					}),
-					qa(31733, {	-- Touching Ground
-						["qg"] = 66292, -- Sky Admiral Rogers
-						["sourceQuests"] = { 31732 }, -- Unleash Hell
-					}),
-					q(41909, {	-- Tracking the Tideskorn
+					q(41909, { -- Tracking the Tideskorn
 						["qg"] = 104744, -- High Elder Cloudfall
 						["classes"] = { 10 },
 					}),
-					q(29929, {	-- Trapped!
+					q(29929, { -- Trapped!
 						["qg"] = 56347, -- Hao Mann
 						["sourceQuests"] = { 29927 }, -- Mann's Man
 					}),
-					qa(31741, {	-- Twinspire Keep
-						["qg"] = 65910, -- Sunke Khang
-					}),
-					q(29587, {	-- Unbound
+					q(29587, { -- Unbound
 						["qg"] = 55009, -- Shao the Defiant
 						["sourceQuests"] = { 29586 }, -- The Splintered Path
 					}),
-					qa(31744, {	-- Unfair Trade
-						["qg"] =  65910, -- Sunke Khang
-					}),
-					qa(31732, {	-- Unleash Hell
-						["groups"] = {
-							i(90375), -- Airship marine's Sharpshooter
-							i(90376), -- Barricade-Breaker Cidgel
-							i(90382), -- Captain Roger's Polite Knocking Stick
-							i(90377), -- Fogcutter Staff
-							i(90379), -- Mystic Perpetual Motion Mace
-							i(90381), -- Shock Trooper Battleaxe
-							i(90380), -- Skyfire Medic's Staff
-							i(90383), -- Skyfire Trooper's Mace
-							i(90378), -- Staff of the Skymagi
-							i(90374), -- Sully's Hotwiring Knife
-							i(90331), -- Face Smasher Warhammer [Not listed in quest, but unlocks since Skyfire Trooper's Mace converts to a horde item]
-						},
-						["qg"] = 66292, -- Sky Admiral Rogers
-						["sourceQuests"] = { 29548 }, -- The Mission
-					}),
-					qh(31778, {	-- Unreliable Allies
+					qh(31778, { -- Unreliable Allies
 						["qg"] = 65998, -- Merchant Zin
 						["sourceQuests"] = { 29804 }, -- Seein' Red
 					}),
-					q(29750, {	-- Vessels of the Spirit
+					q(29750, { -- Vessels of the Spirit
 						["qg"] = 55614, -- Pei-Zhi
 						["sourceQuests"] = { 29749 }, -- An Urgent Plea
 					}),
-					q(31613, {	-- Volatile Greenstone Brew
+					q(31613, { -- Volatile Greenstone Brew
 						["qg"] = 62321, -- Brewmaster Tzu
 					}),
-					q(31706, {	-- Weeping Widows
+					q(31706, { -- Weeping Widows
 						["qg"] = 58228, -- Instructor Skythorn
 						["isDaily"] = true,
 					}),
-					q(31230, {	-- Welcome to Dawn's Blossom
+					q(31230, { -- Welcome to Dawn's Blossom
 						["qg"] = 56348, -- Toya
 					}),
-					qa(31734, {	-- Welcome Wagons
-						["qg"] = 54616, -- Sully "The Pickle" McLeary
-					}),
-					qh(31239, {	-- What's in a Name Name?
+					qh(31239, { -- What's in a Name Name?
 						["groups"] = {
 							i(84105),	-- Fishy
 						},
 						["qg"] = 56336, -- Chief Kah Kah
 						["sourceQuests"] = { 29941 }, -- Beyond the Horizon
 					}),
-					q(29930, {	-- What's Mined Is Yours
+					q(29930, { -- What's Mined Is Yours
 						["groups"] = {
 							i(80783), -- Veridian Cloak
 							i(80784), -- NectarBreeze Cloak
@@ -1422,7 +1568,7 @@ _.Zones =
 						["qg"] = 56467, -- Hao Mann
 						["sourceQuests"] = { 29929 }, -- Trapped!
 					}),
-					qh(31241, {	-- Wicked Wikkets
+					qh(31241, { -- Wicked Wikkets
 						["groups"] = {
 							i(88701), -- Wikket Cape
 							i(88702), -- Wikket Cloak
@@ -1432,10 +1578,10 @@ _.Zones =
 						},
 						["qg"] = 63748, -- Jeek Jeek
 					}),
-					q(30134, {	-- Wild Things
+					q(30134, { -- Wild Things
 						["qg"] = 58564, -- Elder Anli
 					}),
-					q(29635, {	-- Xiao, the Eater
+					q(29635, { -- Xiao, the Eater
 						["groups"] = {
 							i(88693), -- Bamboo Plate Armwraps
 							i(88692), -- Fox Grove Bracers
@@ -1450,15 +1596,15 @@ _.Zones =
 						["qg"] = 54922, -- Master Stone Fist
 						["sourceQuests"] = { 29633, 29634 }, -- Zhi-Zhi the Dextrous, Hasshun the Wizened
 					}),
-					qh(31770, {	-- You're Either With Us Or...
+					qh(31770, { -- You're Either With Us Or...
 						["qg"] = 66656, -- General Nazgrim
 						["sourceQuests"] = { 31769 }, -- The Final Blow!
 					}),
-					q(29622, {	-- Your Training Starts Now
+					q(29622, { -- Your Training Starts Now
 						["qg"] = 54926, -- Xiao
 						["sourceQuests"] = { 29620 }, -- The Great Banquet
 					}),
-					q(29633, {	-- Zhi-Zhi, the Dextrous
+					q(29633, { -- Zhi-Zhi, the Dextrous
 						["qg"] = 54922, -- Master Stone Fist
 						["sourceQuests"] = { 29632 }, -- Becoming Battle-Ready
 					}),				
@@ -1498,8 +1644,8 @@ _.Zones =
 					q(32498),	-- Honor the Flame
 --]]
 				}),
-				n(-16, { 	-- Rares
-					n(50750, {	-- Aethis
+				n(-16, { -- Rares
+					n(50750, { -- Aethis
 						dr(18, i(87217)),	-- Small Bag of Goods
 						dr(13, i(87649)),	-- Pool-Stirrer
 						dr(12, {
@@ -1518,7 +1664,7 @@ _.Zones =
 							i(87589),	-- Leggings of Fractured Reflection
 						}),
 					}),
-					n(51078, {	-- Ferdinand
+					n(51078, { -- Ferdinand
 						dr(20, i(87217)),	-- Small Bag of Goods
 						dr(16, i(87652)),	-- Ook-Breaker Mace
 						dr(12, i(87586)),	-- Forest Trickster's Leggings
@@ -1533,7 +1679,7 @@ _.Zones =
 							i(87594),	-- Leggings of Forgotten War
 						}),
 					}),
-					n(50338, {	-- Kor'nas Nightsavage
+					n(50338, { -- Kor'nas Nightsavage
 						dr(19, i(87217)),	-- Small Bag of Goods
 						dr(14, i(87642)),	-- Darkstaff of Annihilation
 						dr(11, {
@@ -1548,14 +1694,14 @@ _.Zones =
 							i(87594),	-- Leggings of Forgotten War
 						}),
 					}),
-					n(70323, {	-- Krakkanon
+					n(70323, { -- Krakkanon
 						dr(14, {
-							i(88563, {	-- Nat's Fishing Journal
+							i(88563, { -- Nat's Fishing Journal
 								q(31664),	-- An Angler's Quest
 							}),
 						}),
 					}),
-					n(50363, {	-- Krax'ik
+					n(50363, { -- Krax'ik
 						dr(19, i(87217)),	-- Small Bag of Goods
 						dr(15, i(87646)),	-- Needlefang Throatripper
 						dr(12, {
@@ -1574,10 +1720,10 @@ _.Zones =
 							i(87594),	-- Leggings of Forgotten War
 						}),
 					}),
-					n(65003, {	-- Martar the Not-So-Smart
+					n(65003, { -- Martar the Not-So-Smart
 						dr(29, i(87780)),	-- Martar's Magnifying Glass
 					}),
-					n(50823, {	-- Mister Ferocious
+					n(50823, { -- Mister Ferocious
 						dr(19, i(87217)),	-- Small Bag of Goods
 						dr(14, i(87652)),	-- Ook-Breaker Mace
 						dr(11, {
@@ -1592,7 +1738,7 @@ _.Zones =
 						}),
 						dr(10, 	i(87591)),	-- Tian Trainee Leggings
 					}),
-					n(50350, {	-- Morgrinn Crackfang
+					n(50350, { -- Morgrinn Crackfang
 						dr(20, i(87217)),	-- Small Bag of Goods
 						dr(15, i(87643)),	-- Fangcracker Battlemace
 						dr(11, {
@@ -1607,7 +1753,7 @@ _.Zones =
 						}),
 						dr(10, i(87588)),	-- Leggings of Spiritsong Melody
 					}),
-					n(50782, {	-- Sarnak
+					n(50782, { -- Sarnak
 						dr(21, i(87217)),	-- Small Bag of Goods
 						dr(15, i(87650)),	-- Fishsticker Crossbow
 						dr(13, i(87594)),	-- Leggings of Forgotten War
@@ -1624,7 +1770,7 @@ _.Zones =
 							i(87592),	-- Grookin' Grookin' Trousers
 						}),
 					}),
-					n(50808, {	-- Urobi the Walker
+					n(50808, { -- Urobi the Walker
 						dr(20, i(87217)),	-- Small Bag of Goods
 						dr(14, i(87651)),	-- Pathwalker Greatstaff
 						dr(12, {
@@ -1643,7 +1789,7 @@ _.Zones =
 							i(87589),	-- Leggings of Fractured Reflection
 						}),
 					}),
-					n(69769, {	-- Zandalari Warbringer
+					n(69769, { -- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
@@ -1671,7 +1817,7 @@ _.Zones =
 						}),
 						dr(4, i(94229)), 	-- Reins of the Slate Primordial Direhorn
 					}),
-					n(69841, {	-- Zandalari Warbringer
+					n(69841, { -- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
@@ -1699,7 +1845,7 @@ _.Zones =
 						}),
 						dr(4, i(94230)),	-- Reins of the Amber Primordial Direhorn
 					}),
-					n(69842, {	-- Zandalari Warbringer
+					n(69842, { -- Zandalari Warbringer
 						dr(30, {
 							i(94158, {
 								dr(2, {
@@ -1727,7 +1873,7 @@ _.Zones =
 						}),
 						dr(4, i(94231)),	-- Reins of the Jade Primordial Direhorn
 					}),
-					n(69768, {	-- Zandalari Warscout
+					n(69768, { -- Zandalari Warscout
 						dr(15, {
 							i(94158, {
 								dr(2, {
@@ -1755,7 +1901,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-2, {	-- Vendors
+				n(-2, { -- Vendors
 					n(56707, { 		-- Chin <Master of Noodles>
 						recipe(124233),	-- Blanched Needle Mushrooms
 						recipe(124228),	-- Boiled Silkworm Pupa
@@ -2081,35 +2227,20 @@ _.Zones =
 						i(81686),	-- Faded Forest Axe
 					}),
 				}),
-				n(-38, { -- Profession
-					prof(171, { -- Alchemy
-						o(211424, {	-- Alchemy Scroll
-							["description"] = "Alchemists can learn the following skill by clicking on the Alchemy Scroll on the road just outside of the Temple of the Jade Serpent in the Jade Forest. It will only appear to alchemists who don't yet know the recipe. might require a skill level of 550, but this is unconfirmed.",
-							["groups"] = {
-								recipe(114769),	-- Flask of Spring Blossoms
-							},
-						}),
-					}),
-					prof(356, { -- Fishing
-						desc(i(94934), "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r"),	-- Tiny Green Carp Pet
-						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
-						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
-					}),
-				}),
-				n(-222, {	-- Treasure Hunter
-					o(214339, {	-- Chest of Supplies
+				n(-222, { -- Treasure Hunter
+					o(214339, { -- Chest of Supplies
 						["groups"] = {
 							q(31864),	-- Chest of Supplies
 						},
 						["description"] = "Located near a waterfall on the Murky Bank bordering The Jade Forest and The Valley of Four Winds at (24,53)",
 					}),
-					o(214338, {	-- Offering of Remembrance
+					o(214338, { -- Offering of Remembrance
 						["groups"] = {
 							q(31865),	-- Offering of Remembrance
 						},
 						["description"] = "Located on the Shrine of Rememberance at (46.3,80.7)",
 					}),
-					o(214337, {	-- Stash of Gems
+					o(214337, { -- Stash of Gems
 						["groups"] = {
 							q(31866),	-- Stash of Gems
 						},

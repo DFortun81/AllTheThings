@@ -521,7 +521,10 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa( 8870)),	-- The Lunar Festival
 					qg(, q(27203)),	-- The Maelstrom
 					qg(, qa(11970)),	-- The Master of Summer Lore
-					qg(, qa(29548)),	-- The Mission
+					--]]
+					qa(29548, {	-- The Mission
+						["qg"] = 55789, -- Rell Nightwind
+					}),
 					qg(, qa(47253)),	-- The Originals
 					qg(, qa(  543)),	-- The Perenolde Tiara
 					--]]
