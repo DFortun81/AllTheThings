@@ -51,6 +51,11 @@ _.Instances =
 									}),
 								}),
 							}),
+							n(0, { -- Zone Drops
+								n(65317, { -- Xiang <The Two Jugglers>
+									i(87522), -- Star Carrier Bracers  [Lucetia: Only drops from this mob don't remove]
+								}),
+							}),
 							cr(56448, e(672, {	-- Wise Mari
 								i(144017),	-- Waterburst Helm
 								i(144111),	-- Wind-Soaked 

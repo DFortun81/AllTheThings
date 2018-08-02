@@ -130,7 +130,7 @@ _.Zones =
 				n(-17, { -- Quests
 					a(ach(6300, { -- Upjade Complete [Alliance]
 						["groups"] = {
-							crit(1, { -- Paw'don Village [Completed: Patch 8.0.1 -- Lucetia]s
+							crit(1, { -- Paw'don Village [Completed: Patch 8.0.1 -- Lucetia]
 								["groups"] = {
 									q(29552, { -- Critical Condition		
 										["groups"] = {	
@@ -277,7 +277,7 @@ _.Zones =
 									}),		
 								},
 							}),
-							crit(2, { -- The Waterspeaking Ceremony [Available after crit 1] [Lucetia: Not finish yet; need organized]
+							crit(2, { -- The Waterspeaking Ceremony [Completed: Patch 8.0.1 -- Lucetia]
 								["groups"] = {
 									q(29560, { -- Ancient Power
 										["qg"] = 55196, -- Bold Karasshi
@@ -371,32 +371,12 @@ _.Zones =
 									}),
 								},
 							}),
-							crit(3, { -- The White Pawn
+							crit(3, { -- The White Pawn 
 								["groups"] = {
 								},
 							}),
-							crit(4, { -- Pearlfin Village
+							crit(4, { -- Pearlfin Village [Completed: Patch 8.0.1 -- Lucetia]
 								["groups"] = {
-									q(29733, { -- SI:7 Report: Lost in the Woods
-										["qg"] = 55333, -- Rell Nightwind
-										["sourceQuests"] = { 29894 }, -- Spirits of the Water
-									}),
-									q(29725, { -- SI:7 Report: Fire From the Sky
-										["qg"] = 55282, -- Sully "The Pickle" McLeary
-										["sourceQuests"] = { 29733 }, -- SI:7 Report: Lost in the Woods
-									}),
-									q(29726, { -- SI:7 Report: Hostile Natives
-										["qg"] = 55284, -- Little Lu
-										["sourceQuests"] = { 29725 }, -- SI:7 Report: Fire From the Sky
-									}),
-									q(29727, { -- SI:7 Report: Take No Prisoners
-										["qg"] = 55283, -- Amber Kearnen
-										["sourceQuests"] = { 29726 }, -- SI:7 Report: Take No Prisoners
-									}),
-									q(29888, { -- Seek Out the Lorewalker  ----> Leads to different quest altogether
-										["qg"] = 56222, -- Bold Karasshi
-										["sourceQuests"] = { 29727 }, -- SI:7 Report: Take No Prisoners
-									}),
 									q(29903, { -- A Perfect Match
 										["qg"] = 60970, -- Admiral Taylor
 										["sourceQuests"] = { 29727 }, -- SI:7 Report: Take No Prisoners
@@ -405,11 +385,7 @@ _.Zones =
 										["qg"] = 60970, -- Admiral Taylor
 										["sourceQuests"] = { 29903 }, -- A Perfect Match
 									}),
-									q(29905, { -- Let Them Burn [Note: 1 of 2 Final Quest needed to trigger criteria]
-										["qg"] = 60970, -- Admiral Taylor
-										["sourceQuests"] = { 29904 }, -- Bigger Fish to Fry
-									}),
-									qa(29906, { -- Carp Diem [Note: 1 of 2 Final Quest needed to trigger criteria]
+									q(29906, { -- Carp Diem [Note: 1 of 2 Final Quest needed to trigger criteria]
 										["groups"] = {
 											i(80788), -- Jinyu Meditation Staff
 											i(80789), -- Jinyu Divining Rod
@@ -424,6 +400,27 @@ _.Zones =
 										},
 										["qg"] = 60970, -- Admiral Taylor
 										["sourceQuests"] = { 29904 }, -- Bigger Fish to Fry
+									}),
+									q(29905, { -- Let Them Burn [Note: 1 of 2 Final Quest needed to trigger criteria]
+										["qg"] = 60970, -- Admiral Taylor
+										["sourceQuests"] = { 29904 }, -- Bigger Fish to Fry
+									}),
+									
+									q(29725, { -- SI:7 Report: Fire From the Sky
+										["qg"] = 55282, -- Sully "The Pickle" McLeary
+										["sourceQuests"] = { 29733 }, -- SI:7 Report: Lost in the Woods
+									}),
+									q(29726, { -- SI:7 Report: Hostile Natives
+										["qg"] = 55284, -- Little Lu
+										["sourceQuests"] = { 29725 }, -- SI:7 Report: Fire From the Sky
+									}),
+									q(29733, { -- SI:7 Report: Lost in the Woods
+										["qg"] = 55333, -- Rell Nightwind
+										["sourceQuests"] = { 29894 }, -- Spirits of the Water
+									}),
+									q(29727, { -- SI:7 Report: Take No Prisoners
+										["qg"] = 55283, -- Amber Kearnen
+										["sourceQuests"] = { 29726 }, -- SI:7 Report: Take No Prisoners
 									}),
 								},
 							}),
@@ -458,6 +455,10 @@ _.Zones =
 							crit(12, { -- Overcoming doubt
 								["groups"] = {
 								},
+							}),
+							q(29888, { -- Seek Out the Lorewalker  ----> Leads to different quest altogether
+								["qg"] = 56222, -- Bold Karasshi
+								["sourceQuests"] = { 29727 }, -- SI:7 Report: Take No Prisoners
 							}),
 						},
 						["races"] = ALLIANCE_ONLY, -- Alliance
@@ -2255,6 +2256,193 @@ _.Zones =
 						},
 						["description"] = "Located in a cave on Windward Isle at (62.4,27.5)",
 					}),
+				}),
+				n(0, { -- Zone Drops
+					["groups"] = {
+						i(87426, {	-- Deathspite Breastplate
+							["crs"] = {
+								59102,	-- Forest Huntress
+								54559,	-- Glittering Amberfly
+								55470,	-- Hozen Groundpounder
+								55236,	-- Jade Guardian
+								66668,	-- Sha-Infested Prowler
+								61760,	-- Slingtail Recruit
+								55110,	-- Slingtail Stickypaw
+								66288,	-- Thunder Hold Sharp-Shooter
+								62930,	-- Water Sprite
+								55238,	-- Waxwood Matriarch
+							},
+						}),
+						i(87520, {	-- Glowing Wind Bracers
+							["crs"] = {
+								55470,	-- Hozen Groundpounder
+								66668,	-- Sha-Infested Prowler
+								61562,	-- Slingtail Treeleaper
+								59772,	-- Smoky Porcupine
+							},
+						}),
+						i(87499, {	-- Grakl's Gleaming Talisman
+							["crs"] = {
+								55470,	-- Hozen Groundpounder
+								56396,	-- Hungry Bloodtalon
+								59084,	-- Pearly Tortoise
+								66423,	-- Sha Haunt
+								66668,	-- Sha-Infested Prowler
+								61562,	-- Slingtail Treeleaper
+								66348,	-- Thunder Hold Armsman
+								62930,	-- Water Sprite
+							},
+						}),
+						i(87456, {	-- Hexu's Amplifying Helm
+							["crs"] = {
+								66270,	-- Felstorm Warlock
+								55470,	-- Hozen Groundpounder
+								66213,	-- Koukou
+								56201,	-- Orchard Wasp
+								66668,	-- Sha-Infested Prowler
+								55110,	-- Slingtail Stickypaw
+								66285,	-- Thunder Hold Infantryman
+								56283,	-- Tigerfly
+								62930,	-- Water Sprite
+							},
+						}),
+						i(87464, {	-- Leggings of the Scorched Man
+							["crs"] = {
+								66290,	-- Garrosh'ar Gear-Greaser
+								54989,	-- Gormali Slaver
+								55470,	-- Hozen Groundpounder
+								66106,	-- Hozen Scavenger
+								66668,	-- Sha-Infested Prowler
+								66446,	-- Thunder Hold Mender
+								56283,	-- Tigerfly
+								66269,	-- Twinspire Grunt
+							},
+						}),
+						i(87467, {	-- Ravenclaw Harbinger
+							["crs"] = {
+								56303,	-- Alliance Infiltrator
+								66268,	-- Gatrul'lon Flamecaller
+								54559,	-- Glittering Amberfly
+								55470,	-- Hozen Groundpounder
+								59084,	-- Pearly Tortoise
+								59417,	-- Sha Echo
+								66424,	-- Sha Harbinger
+								62930,	-- Water Sprite
+							},
+						}),
+						i(87516, {	-- Scalebreaker Axe
+							["crs"] = {
+								66282,	-- Garrosh'ar Grunt
+								54559,	-- Glittering Amberfly
+								54987,	-- Greenwood Trickster
+								55470,	-- Hozen Groundpounder
+								57119,	-- Hozen Ravager
+								66668,	-- Sha-Infested Prowler
+								62930,	-- Water Sprite
+							},
+						}),
+						i(87442, {	-- Signet of the Scorned
+							["crs"] = {
+								54703,	-- Gormali Incinerator
+								55470,	-- Hozen Groundpounder
+								66153,	-- Hozen Scavenger
+								56201,	-- Orchard Wasp
+								59084,	-- Pearly Tortoise
+								66668,	-- Sha-Infested Prowler
+								56283,	-- Tigerfly
+							},
+						}),
+						i(87498, {	-- Spiritwhisper Conch
+							["crs"] = {
+								54558,	-- Bog Crocolisk
+								55470,	-- Hozen Groundpounder
+								57119,	-- Hozen Ravager
+								56201,	-- Orchard Wasp
+								66668,	-- Sha-Infested Prowler
+								55193,	-- Slingtail Mudseer
+								59772,	-- Smoky Porcupine
+							},
+						}),
+						i(120138, {	-- Tome of Polymorph: Monkey
+							["collectible"] = false,
+							["crs"] = {
+								55470,	-- Hozen Groundpounder
+								57119,	-- Hozen Ravager
+								66153,	-- Hozen Scavenger
+								66106,	-- Hozen Scavenger
+								65623,	-- Oona Tuna-Catcher
+								55195,	-- Slingtail Fishripper
+								55193,	-- Slingtail Mudseer
+								55110,	-- Slingtail Stickypaw
+								61562,	-- Slingtail Treeleaper
+							},
+						}),
+						i(87521, {	-- Zoid's Scorched Bracers
+							["crs"] = {
+								66290,	-- Garrosh'ar Gear-Greaser
+								66282,	-- Garrosh'ar Grunt
+								54559,	-- Glittering Amberfly
+								55470,	-- Hozen Groundpounder
+								66668,	-- Sha-Infested Prowler
+								61557,	-- Slingtail Treeleaper
+							},
+						}),
+						i(81998),	-- Intricate Wand
+						i(82003),	-- Intricate Spellblade
+						i(82010),	-- Intricate Crystal
+						i(82011),	-- Intricate Scepter
+						i(82020),	-- Polished Axe
+						i(82018),	-- Polished Bow
+						i(82019),	-- Polished Broadaxe
+						i(82016),	-- Polished Crossbow
+						i(82015),	-- Polished Dagger
+						i(82000),	-- Polished Greatsword
+						i(82012),	-- Polished Gun
+						i(82008),	-- Polished Hammer
+						i(82013),	-- Polished Knuckles
+						i(82009),	-- Polished Mace
+						i(82006),	-- Polished Spear
+						i(82002),	-- Polished Staff
+						i(82014),	-- Polished Staff
+						i(82001),	-- Polished Sword
+						i(82007),	-- Intricate Amulet
+						i(82017),	-- Intricate Cloak
+						i(82005),	-- Intricate Ring
+						i(81969),	-- Stitched Cowl
+						i(81967),	-- Stitched Shoulderpads
+						i(81972),	-- Stitched Robe
+						i(81973),	-- Stitched Wristwraps
+						i(81970),	-- Stitched Handwraps
+						i(81966),	-- Stitched Cord
+						i(81968),	-- Stitched Leggings
+						i(81971),	-- Stitched Sandals
+						i(81977),	-- Silent Hood
+						i(81975),	-- Silent Shoulders
+						i(81980),	-- Silent Jerkin
+						i(81981),	-- Silent Bindings
+						i(81978),	-- Silent Gloves
+						i(81974),	-- Silent Waistband
+						i(81976),	-- Silent Britches
+						i(81979),	-- Silent Boots
+						i(81985),	-- Saurok Helm
+						i(81983),	-- Saurok Spaulders
+						i(81988),	-- Saurok Vest
+						i(81989),	-- Saurok Bracers
+						i(81986),	-- Saurok Gauntlets
+						i(81982),	-- Saurok Belt
+						i(81984),	-- Saurok Legguards
+						i(81987),	-- Saurok Greaves
+						i(81993),	-- Wall Helm
+						i(81991),	-- Wall Pauldrons
+						i(81996),	-- Wall Breastplate
+						i(81997),	-- Wall Vambraces
+						i(81994),	-- Wall Gauntlets
+						i(81990),	-- Wall Girdle
+						i(81992),	-- Wall Legplates
+						i(81995),	-- Wall Sabatons
+
+					
+					},
 				}),
 			},
 			["lvl"] = 85,
