@@ -113,7 +113,7 @@ _.GroupFinder =
 			i(51975),	-- Earthbound Shoulders
 			i(51981),	-- Earthbound Wristguards
 			i(51979),	-- Earthbound Grips
-			i(51977),	-- Earthbound Girdle
+			i(51977),	-- Earthbound Girdle*
 			i(51983),	-- Stalwart Shoulderguards*
 			i(51989),	-- Stalwart Bands*
 			i(51987),	-- Stalwart Grips*
@@ -241,11 +241,12 @@ _.GroupFinder =
 		   i(113697),	-- Sparkmail Helm
 		   i(113775),	-- Sparkmail Sabatons
 		   i(113704),	-- Sparkmail Wristguards
+		   i(113711),	-- Sparkmail Legguards*
 		   i(113780),	-- Emberspark Plate Boots
 		   i(113701),	-- Emberspark Plate Bracers
 		   i(113696),	-- Emberspark Plate Headguard
 		   i(113695),	-- Emberspark Plate Helm
-		   i(113781),	-- Emberspark Plate Sabatons
+		   i(113781),	-- Emberspark Plate Sabatons*
 		   i(113702),	-- Emberspark Plate Wristguards
 		},
 		["description"] = "|cff66ccffBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation",
@@ -268,7 +269,7 @@ _.GroupFinder =
 		   i(113697),	-- Sparkmail Helm
 		   i(113775),	-- Sparkmail Sabatons
 		   i(113704),	-- Sparkmail Wristguards
-		   i(113780),	-- Emberspark Plate Boots
+		   i(113780),	-- Emberspark Plate Boots*
 		   i(113701),	-- Emberspark Plate Bracers
 		   i(113696),	-- Emberspark Plate Headguard
 		   i(113695),	-- Emberspark Plate Helm
@@ -290,7 +291,6 @@ _.GroupFinder =
 		   i(113717),	-- Sparkmail Chestguard
 		   i(113723),	-- Sparkmail Gauntlets
 		   i(113721),	-- Sparkmail Gloves
-		   i(113711),	-- Sparkmail Legguards
 		   i(113709),	-- Sparkmail Legwraps
 		   i(113714),	-- Emberspark Plate Chestguard
 		   i(113720),	-- Emberspark Plate Gauntlets
@@ -348,6 +348,7 @@ _.GroupFinder =
 		   i(113777),	-- Venomtail Boots		   
 		   i(113776),	-- Venomtail Treads
 		   i(113732),	-- Venomtail Visor
+		   i(113738),	-- Kyparite Chestguard*
 		   i(113784),	-- Kyparite Belt
 		   i(113782),	-- Kyparite Boots
 		   i(113785),	-- Kyparite Girdle
