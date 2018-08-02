@@ -398,40 +398,32 @@ _.Instances =
 										["classes"] = {1,2},
 										["description"] = "Item used to drop from any boss in Dire Maul.",
 									})),
-									qa(7488, {	-- Lethtendris's Web
+									un(40, qa(7488, {	-- Lethtendris's Web
 										un(34, i(18491)),	-- Lorespinner 
-									}),
-									qh(7489, {	-- Lethtendris's Web
+									})),
+									un(40, qh(7489, {	-- Lethtendris's Web
 										un(34, i(18491)),	-- Lorespinner 
-									}),
-									q(7441, {	-- Pusillin and the Elder Azj'Tordin
+									})),
+									un(40, q(7441, {	-- Pusillin and the Elder Azj'Tordin
 										un(34, i(18410)),	-- Sprinter's Sword 
 										un(34, i(18411)),	-- Spry Boots
-									}),
+									})),
 								}),
-								--n(-16, {	-- Rares (Legacy)
-								--}),
-								--n(  0, {	-- Zone Drop (Legacy)
-								--}),
 							}),
 							n(-13, {	-- Gordok Commons [North - Ogres]
 								n(-17, {	-- Quests (Legacy)
 									un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
 										["groups"] = {
-											q(7507),	-- Furor's Compendium
-											q(7508),	-- The Forging of Quel'Serrar
-											q(7509, {	-- The Forging of Quel'Serrar
+											un(40, q(7507)),	-- Furor's Compendium
+											un(40, q(7508)),	-- The Forging of Quel'Serrar
+											un(40, q(7509, {	-- The Forging of Quel'Serrar
 												un(34, i(18348)),	-- Quel'Serrar
-											}),
+											})),
 										},
 										["classes"] = {1,2},
 										["description"] = "Item used to drop from any boss in Dire Maul.",
 									})),
 								}),
-								--n(-16, {	-- Rares (Legacy)
-								--}),
-								--n(  0, {	-- Zone Drop (Legacy)
-								--}),
 								o(179501, {	-- Knot Thimblejack's Cache
 									un(7, i(18414)),	-- Pattern: Belt of the Archmage
 									un(7, i(18517)),	-- Pattern: Chromatic Cloak
@@ -450,28 +442,26 @@ _.Instances =
 								n(-17, {	-- Quests (Legacy)
 									un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
 										["groups"] = {
-											q(7507),	-- Furor's Compendium
-											q(7508),	-- The Forging of Quel'Serrar
-											q(7509, {	-- The Forging of Quel'Serrar
+											un(40, q(7507)),	-- Furor's Compendium
+											un(40, q(7508)),	-- The Forging of Quel'Serrar
+											un(40, q(7509, {	-- The Forging of Quel'Serrar
 												un(34, i(18348)),	-- Quel'Serrar
-											}),
+											})),
 										},
 										["classes"] = {1,2},
 										["description"] = "Item used to drop from any boss in Dire Maul.",
 									})),
-									qa(7462, { 	-- The Treasure of the Shen'dralar
+									un(40, qa(7462, { 	-- The Treasure of the Shen'dralar
 										un(34, i(18421)),	-- Backwood Helm 
 										un(34, i(18420)),	-- Bonecrusher 
 										un(34, i(18424)),	-- Sedge Boots 
-									}),
-									qh(7877, { 	-- The Treasure of the Shen'dralar
+									})),
+									un(40, qh(7877, { 	-- The Treasure of the Shen'dralar
 										un(34, i(18421)),	-- Backwood Helm 
 										un(34, i(18420)),	-- Bonecrusher 
 										un(34, i(18424)),	-- Sedge Boots 
-									}),
+									})),
 								}),
-								--n(-16, {	-- Rares (Legacy)
-								--}),
 								n(  0, {	-- Zone Drop (Legacy)
 									n(14690, {	-- Revanchion
 										["groups"] = {

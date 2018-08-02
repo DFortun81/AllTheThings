@@ -283,33 +283,29 @@ _.Instances =
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
-								q( 2904, {	-- A Fine Mess
+								un(40, q( 2904, {	-- A Fine Mess
 									un(34, i(9536)),	-- Fairywing Mantle 
 									un(34, i(9535)),	-- Fire-welded Bracers
-								}),
-								qa(2930, {	-- Data Rescue
+								})),
+								un(40, qa(2930, {	-- Data Rescue
 									un(34, i(9604)),	-- Mechanic's Pipehammer 
 									un(34, i(9605)),	-- Repairman's Cape
-								}),
-								qa(2928, { 	-- Gyrodrillmatic Excavationators
+								})),
+								un(40, qa(2928, { 	-- Gyrodrillmatic Excavationators
 									un(34, i(9609)),	-- Shilly Mitts 
 									un(34, i(9608)),	-- Shoni's Disarming Tool
-								}),
-								qh(2841, {	-- Rig Wars
+								})),
+								un(40, qh(2841, {	-- Rig Wars
 									un(34, i(9623)),	-- Civinad Robes 
 									un(34, i(9625)),	-- Dual Reinforced Leggings
 									un(34, i(9624)),	-- Triprunner Dungarees
-								}),
-								qa(2929, {	-- The Grand Betrayal
+								})),
+								un(40, qa(2929, {	-- The Grand Betrayal
 									un(34, i(9623)),	-- Civinad Robes 
 									un(34, i(9625)),	-- Dual Reinforced Leggings
 									un(34, i(9624)),	-- Triprunner Dungarees
-								}),
+								})),
 							}),
-							--n(-16, {	-- Rares (Legacy)
-							--}),
-							--n(  0, {	-- Zone Drop (Legacy)
-							--}),
 						},
 						["u"] = 2,
 					}),

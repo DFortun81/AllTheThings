@@ -7,289 +7,289 @@ _.Instances = { tier(1, {	-- Classic
 		["groups"] = {
 			nlq({ 	-- Legacy Quests
 				i(22726, { -- Splinter of Atiesh
-					q(9250, { -- Frame of  Atiesh
-						q(9251, { -- Atiesh, the Befouled Greatstaff
-							q(9257,  { -- Atiesh, Greatstaff of the Guardian [Priest
+					un(40, q(9250, { -- Frame of  Atiesh
+						un(40, q(9251, { -- Atiesh, the Befouled Greatstaff
+							un(40, q(9257,  { -- Atiesh, Greatstaff of the Guardian [Priest
 								i(22631), -- Atiesh, Greatstaff of the Guardian (Priest)
-							}),
-							q(9270, { -- Atiesh, Greatstaff of the Guardian [Mage]
+							})),
+							un(40, q(9270, { -- Atiesh, Greatstaff of the Guardian [Mage]
 								i(22589), -- Atiesh, Greatstaff of the Guardian (Mage)
-							}),
-							q(9271, { -- Atiesh, Greatstaff of the Guardian [Warlock]
+							})),
+							un(40, q(9271, { -- Atiesh, Greatstaff of the Guardian [Warlock]
 								i(22630), -- Atiesh, Greatstaff of the Guardian (Warlock)
-							}),
-							q(9269, { -- Atiesh, Greatstaff of the Guardian [Druid]
+							})),
+							un(40, q(9269, { -- Atiesh, Greatstaff of the Guardian [Druid]
 								i(22632), -- Atiesh, Greatstaff of the Guardian
-							}),
-						}),
-					}),
+							})),
+						})),
+					})),
 				}),
-				q(9033), -- Echoes of War
-				q(9233), -- Omarion's Handbook 
-				q(9230), -- Ramaladni's Icy Grasp
-				q(9120), -- The Fall of Kel'Thuzad
-				q(9229), -- The Fate of Ramaldni
-				q(9237, {	-- Glacial Cloak	
+				un(40, q(9033)), -- Echoes of War
+				un(40, q(9233)), -- Omarion's Handbook 
+				un(40, q(9230)), -- Ramaladni's Icy Grasp
+				un(40, q(9120)), -- The Fall of Kel'Thuzad
+				un(40, q(9229)), -- The Fate of Ramaldni
+				un(40, q(9237, {	-- Glacial Cloak	
 					i(22658),	-- Glacial Cloak
-				}),		
-				q(9239, {	-- Glacial Gloves	
+				})),		
+				un(40, q(9239, {	-- Glacial Gloves	
 					i(22654),	-- Glacial Gloves
-				}),		
-				q(9240, {	-- Glacial Vest	
+				})),		
+				un(40, q(9240, {	-- Glacial Vest	
 					i(22652),	-- Glacial Vest
-				}),		
-				q(9238, {	-- Glacial Wrists	
+				})),		
+				un(40, q(9238, {	-- Glacial Wrists	
 					i(22655),	-- Glacial Wrists
-				}),		
-				q(9235, {	-- Icebane Bracers	
+				})),		
+				un(40, q(9235, {	-- Icebane Bracers	
 					i(2267),	-- Icebane Bracers
-				}),		
-				q(9236, {	-- Icebane Breastplate	
+				})),		
+				un(40, q(9236, {	-- Icebane Breastplate	
 					i(22669),	-- Icebane Breastplate
-				}),		
-				q(9234, {	-- Icebane Gauntlets	
+				})),		
+				un(40, q(9234, {	-- Icebane Gauntlets	
 					i(22670),	-- Icebane Gauntlets
-				}),		
-				q(9244, {	-- Icy Scale Bracers	
+				})),		
+				un(40, q(9244, {	-- Icy Scale Bracers	
 					i(22665),	-- Icy Scale Bracers
-				}),		
-				q(9246, {	-- Icy Scale Breastplate	
+				})),		
+				un(40, q(9246, {	-- Icy Scale Breastplate	
 					i(22664),	-- Icy Scale Breastplate
-				}),		
-				q(9245, {	-- Icy Scale Gauntlets	
+				})),		
+				un(40, q(9245, {	-- Icy Scale Gauntlets	
 					i(22666),	-- Icy Scale Gauntlets
-				}),		
-				q(9241, {	-- Polar Bracers	
+				})),		
+				un(40, q(9241, {	-- Polar Bracers	
 					i(22663),	-- Polar Bracers
-				}),		
-				q(9242, {	-- Polar Gloves	
+				})),		
+				un(40, q(9242, {	-- Polar Gloves	
 					i(22662),	-- Polar Gloves
-				}),		
-				q(9243, {	-- Polar Tunic	
+				})),		
+				un(40, q(9243, {	-- Polar Tunic	
 					i(22661),	-- Polar Tunic
-				}),		
-				q(9232, { -- The Only Song I Know...
+				})),		
+				un(40, q(9232, { -- The Only Song I Know...
 					i(22700),	-- Glacial Leggings
 					i(22701),	-- Polar Leggings
 					i(22702),	-- Icy Scale Leggings
 					i(22699),	-- Icebane Leggings
-				}),
-				q(9113, {	-- Circlet of Faith	
+				})),
+				un(40, q(9113, {	-- Circlet of Faith	
 					i(22514),	-- Circlet of Faith
-				}),		
-				q(9114, {	-- Shoulderpads of Faith	
+				})),		
+				un(40, q(9114, {	-- Shoulderpads of Faith	
 					i(22515),	-- Shoulderpads of Faith
-				}),		
-				q(9111, {	-- Robe of Faith	
+				})),		
+				un(40, q(9111, {	-- Robe of Faith	
 					i(22512),	-- Robe of Faith
-				}),		
-				q(9118, {	-- Bindings of Faith	
+				})),		
+				un(40, q(9118, {	-- Bindings of Faith	
 					i(22519),	-- Bindings of Faith
-				}),		
-				q(9116, {	-- Gloves of Faith	
+				})),		
+				un(40, q(9116, {	-- Gloves of Faith	
 					i(22517),	-- Gloves of Faith
-				}),		
-				q(9117, {	-- Belt of Faith	
+				})),		
+				un(40, q(9117, {	-- Belt of Faith	
 					i(22518),	-- Belt of Faith
-				}),		
-				q(9112, {	-- Leggings of Faith	
+				})),		
+				un(40, q(9112, {	-- Leggings of Faith	
 					i(22513),	-- Leggings of Faith
-				}),		
-				q(9115, {	-- Sandals of Faith	
+				})),		
+				un(40, q(9115, {	-- Sandals of Faith	
 					i(22516),	-- Sandals of Faith
-				}),		
-				q(9097, {	-- Frostfire Circlet	
+				})),		
+				un(40, q(9097, {	-- Frostfire Circlet	
 					i(22498),	-- Frostfire Circlet
-				}),		
-				q(9098, {	-- Frostfire Shoulderpads	
+				})),		
+				un(40, q(9098, {	-- Frostfire Shoulderpads	
 					i(22499),	-- Frostfire Shoulderpads
-				}),		
-				q(9095, {	-- Frostfire Robe	
+				})),		
+				un(40, q(9095, {	-- Frostfire Robe	
 					i(22496),	-- Frostfire Robe
-				}),		
-				q(9102, {	-- Frostfire Bindings	
+				})),		
+				un(40, q(9102, {	-- Frostfire Bindings	
 					i(22503),	-- Frostfire Bindings
-				}),		
-				q(9100, {	-- Frostfire Gloves	
+				})),		
+				un(40, q(9100, {	-- Frostfire Gloves	
 					i(22501),	-- Frostfire Gloves
-				}),		
-				q(9101, {	-- Frostfire Belt	
+				})),		
+				un(40, q(9101, {	-- Frostfire Belt	
 					i(22502),	-- Frostfire Belt
-				}),		
-				q(9096, {	-- Frostfire Leggings	
+				})),		
+				un(40, q(9096, {	-- Frostfire Leggings	
 					i(22497),	-- Frostfire Leggings
-				}),		
-				q(9099, {	-- Frostfire Sandals	
+				})),		
+				un(40, q(9099, {	-- Frostfire Sandals	
 					i(22500),	-- Frostfire Sandals
-				}),		
-				q(9105, {	-- Plagueheart Circlet	
+				})),		
+				un(40, q(9105, {	-- Plagueheart Circlet	
 					i(22506),	-- Plagueheart Circlet
-				}),		
-				q(9106, {	-- Plagueheart Shoulderpads	
+				})),		
+				un(40, q(9106, {	-- Plagueheart Shoulderpads	
 					i(22507),	-- Plagueheart Shoulderpads
-				}),		
-				q(9103, {	-- Plagueheart Robe	
+				})),		
+				un(40, q(9103, {	-- Plagueheart Robe	
 					i(22504),	-- Plagueheart Robe
-				}),		
-				q(9110, {	-- Plagueheart Bindings	
+				})),		
+				un(40, q(9110, {	-- Plagueheart Bindings	
 					i(22511),	-- Plagueheart Bindings
-				}),		
-				q(9108, {	-- Plagueheart Gloves	
+				})),		
+				un(40, q(9108, {	-- Plagueheart Gloves	
 					i(22509),	-- Plagueheart Gloves
-				}),		
-				q(9109, {	-- Plagueheart Belt	
+				})),		
+				un(40, q(9109, {	-- Plagueheart Belt	
 					i(22510),	-- Plagueheart Belt
-				}),		
-				q(9104, {	-- Plagueheart Leggings	
+				})),		
+				un(40, q(9104, {	-- Plagueheart Leggings	
 					i(22505),	-- Plagueheart Leggings
-				}),		
-				q(9107, {	-- Plagueheart Sandals	
+				})),		
+				un(40, q(9107, {	-- Plagueheart Sandals	
 					i(22508),	-- Plagueheart Sandals
-				}),		
-				q(9088, {	-- Dreamwalker Headpiece	
+				})),		
+				un(40, q(9088, {	-- Dreamwalker Headpiece	
 					i(22490),	-- Dreamwalker Headpiece
-				}),		
-				q(9089, {	-- Dreamwalker Spaulders	
+				})),		
+				un(40, q(9089, {	-- Dreamwalker Spaulders	
 					i(22491),	-- Dreamwalker Spaulders
-				}),		
-				q(9086, {	-- Dreamwalker Tunic	
+				})),		
+				un(40, q(9086, {	-- Dreamwalker Tunic	
 					i(22488),	-- Dreamwalker Tunic
-				}),		
-				q(9093, {	-- Dreamwalker Wristguards	
+				})),		
+				un(40, q(9093, {	-- Dreamwalker Wristguards	
 					i(22495),	-- Dreamwalker Wristguards
-				}),		
-				q(9091, {	-- Dreamwalker Handguards	
+				})),		
+				un(40, q(9091, {	-- Dreamwalker Handguards	
 					i(22493),	-- Dreamwalker Handguards
-				}),		
-				q(9092, {	-- Dreamwalker Girdle	
+				})),		
+				un(40, q(9092, {	-- Dreamwalker Girdle	
 					i(22494),	-- Dreamwalker Girdle
-				}),		
-				q(9087, {	-- Dreamwalker Legguards	
+				})),		
+				un(40, q(9087, {	-- Dreamwalker Legguards	
 					i(22489),	-- Dreamwalker Legguards
-				}),		
-				q(9090, {	-- Dreamwalker Boots	
+				})),		
+				un(40, q(9090, {	-- Dreamwalker Boots	
 					i(22492),	-- Dreamwalker Boots
-				}),		
-				q(9079, {	-- Bonescythe Helmet	
+				})),		
+				un(40, q(9079, {	-- Bonescythe Helmet	
 					i(22478),	-- Bonescythe Helmet
-				}),		
-				q(9080, {	-- Bonescythe Pauldrons	
+				})),		
+				un(40, q(9080, {	-- Bonescythe Pauldrons	
 					i(22479),	-- Bonescythe Pauldrons
-				}),		
-				q(9077, {	-- Bonescythe Breastplate	
+				})),		
+				un(40, q(9077, {	-- Bonescythe Breastplate	
 					i(22476),	-- Bonescythe Breastplate
-				}),		
-				q(9084, {	-- Bonescythe Bracers	
+				})),		
+				un(40, q(9084, {	-- Bonescythe Bracers	
 					i(22483),	-- Bonescythe Bracers
-				}),		
-				q(9082, {	-- Bonescythe Gauntlets	
+				})),		
+				un(40, q(9082, {	-- Bonescythe Gauntlets	
 					i(22481),	-- Bonescythe Gauntlets
-				}),		
-				q(9083, {	-- Bonescythe Waistguard	
+				})),		
+				un(40, q(9083, {	-- Bonescythe Waistguard	
 					i(22482),	-- Bonescythe Waistguard
-				}),		
-				q(9078, {	-- Bonescythe Legplates	
+				})),		
+				un(40, q(9078, {	-- Bonescythe Legplates	
 					i(22477),	-- Bonescythe Legplates
-				}),		
-				q(9081, {	-- Bonescythe Sabatons	
+				})),		
+				un(40, q(9081, {	-- Bonescythe Sabatons	
 					i(22480),	-- Bonescythe Sabatons
-				}),		
-				q(9056, {	-- Cryptstalker Headpiece	
+				})),		
+				un(40, q(9056, {	-- Cryptstalker Headpiece	
 					i(22438),	-- Cryptstalker Headpiece
-				}),		
-				q(9057, {	-- Cryptstalker Spaulders	
+				})),		
+				un(40, q(9057, {	-- Cryptstalker Spaulders	
 					i(22439),	-- Cryptstalker Spaulders
-				}),		
-				q(9054, {	-- Cryptstalker Tunic	
+				})),		
+				un(40, q(9054, {	-- Cryptstalker Tunic	
 					i(22436),	-- Cryptstalker Tunic
-				}),		
-				q(9061, {	-- Cryptstalker Wristguards	
+				})),		
+				un(40, q(9061, {	-- Cryptstalker Wristguards	
 					i(22443),	-- Cryptstalker Wristguards
-				}),		
-				q(9059, {	-- Cryptstalker Handguards	
+				})),		
+				un(40, q(9059, {	-- Cryptstalker Handguards	
 					i(22441),	-- Cryptstalker Handguards
-				}),		
-				q(9060, {	-- Cryptstalker Girdle	
+				})),		
+				un(40, q(9060, {	-- Cryptstalker Girdle	
 					i(22442),	-- Cryptstalker Girdle
-				}),		
-				q(9055, {	-- Cryptstalker Legguards	
+				})),		
+				un(40, q(9055, {	-- Cryptstalker Legguards	
 					i(22437),	-- Cryptstalker Legguards
-				}),		
-				q(9058, {	-- Cryptstalker Boots	
+				})),		
+				un(40, q(9058, {	-- Cryptstalker Boots	
 					i(22440),	-- Cryptstalker Boots
-				}),		
-				q(9070, {	-- Earthshatter Headpiece	
+				})),		
+				un(40, q(9070, {	-- Earthshatter Headpiece	
 					i(22466),	-- Earthshatter Headpiece
-				}),		
-				q(9071, {	-- Earthshatter Spaulders	
+				})),		
+				un(40, q(9071, {	-- Earthshatter Spaulders	
 					i(22467),	-- Earthshatter Spaulders
-				}),		
-				q(9068, {	-- Earthshatter Tunic	
+				})),		
+				un(40, q(9068, {	-- Earthshatter Tunic	
 					i(22464),	-- Earthshatter Tunic
-				}),		
-				q(9075, {	-- Earthshatter Wristguards	
+				})),		
+				un(40, q(9075, {	-- Earthshatter Wristguards	
 					i(22471),	-- Earthshatter Wristguards
-				}),		
-				q(9073, {	-- Earthshatter Handguards	
+				})),		
+				un(40, q(9073, {	-- Earthshatter Handguards	
 					i(22469),	-- Earthshatter Handguards
-				}),		
-				q(9074, {	-- Earthshatter Girdle	
+				})),		
+				un(40, q(9074, {	-- Earthshatter Girdle	
 					i(22470),	-- Earthshatter Girdle
-				}),		
-				q(9069, {	-- Earthshatter Legguards	
+				})),		
+				un(40, q(9069, {	-- Earthshatter Legguards	
 					i(22465),	-- Earthshatter Legguards
-				}),		
-				q(9072, {	-- Earthshatter Boots	
+				})),		
+				un(40, q(9072, {	-- Earthshatter Boots	
 					i(22468),	-- Earthshatter Boots
-				}),		
-				q(9045, {	-- Redemption Headpiece	
+				})),		
+				un(40, q(9045, {	-- Redemption Headpiece	
 					i(22428),	-- Redemption Headpiece
-				}),		
-				q(9046, {	-- Redemption Spaulders	
+				})),		
+				un(40, q(9046, {	-- Redemption Spaulders	
 					i(22429),	-- Redemption Spaulders
-				}),		
-				q(9043, {	-- Redemption Tunic	
+				})),		
+				un(40, q(9043, {	-- Redemption Tunic	
 					i(22425),	-- Redemption Tunic
-				}),		
-				q(9050, {	-- Redemption Wristguards	
+				})),		
+				un(40, q(9050, {	-- Redemption Wristguards	
 					i(22424),	-- Redemption Wristguards
-				}),		
-				q(9048, {	-- Redemption Handguards	
+				})),		
+				un(40, q(9048, {	-- Redemption Handguards	
 					i(22426),	-- Redemption Handguards
-				}),		
-				q(9049, {	-- Redemption Girdle	
+				})),		
+				un(40, q(9049, {	-- Redemption Girdle	
 					i(22431),	-- Redemption Girdle
-				}),		
-				q(9044, {	-- Redemption Legguards	
+				})),		
+				un(40, q(9044, {	-- Redemption Legguards	
 					i(22427),	-- Redemption Legguards
-				}),		
-				q(9047, {	-- Redemption Boots	
+				})),		
+				un(40, q(9047, {	-- Redemption Boots	
 					i(22430),	-- Redemption Boots
-				}),		
-				q(9037, {	-- Dreadnaught Helmet	
+				})),		
+				un(40, q(9037, {	-- Dreadnaught Helmet	
 					i(22418),	-- Dreadnaught Helmet
-				}),		
-				q(9038, {	-- Dreadnaught Pauldrons	
+				})),		
+				un(40, q(9038, {	-- Dreadnaught Pauldrons	
 					i(22419),	-- Dreadnaught Pauldrons
-				}),		
-				q(9034, {	-- Dreadnaught Breastplate	
+				})),		
+				un(40, q(9034, {	-- Dreadnaught Breastplate	
 					i(22416),	-- Dreadnaught Breastplate
-				}),		
-				q(9042, {	-- Dreadnaught Bracers	
+				})),		
+				un(40, q(9042, {	-- Dreadnaught Bracers	
 					i(22423),	-- Dreadnaught Bracers
-				}),		
-				q(9040, {	-- Dreadnaught Gauntlets	
+				})),		
+				un(40, q(9040, {	-- Dreadnaught Gauntlets	
 					i(22421),	-- Dreadnaught Gauntlets
-				}),		
-				q(9041, {	-- Dreadnaught Waistguard	
+				})),		
+				un(40, q(9041, {	-- Dreadnaught Waistguard	
 					i(22422),	-- Dreadnaught Waistguard
-				}),		
-				q(9036, {	-- Dreadnaught Legplates	
+				})),		
+				un(40, q(9036, {	-- Dreadnaught Legplates	
 					i(22417),	-- Dreadnaught Legplates
-				}),		
-				q(9039, {	-- Dreadnaught Sabatons	
+				})),		
+				un(40, q(9039, {	-- Dreadnaught Sabatons	
 					i(22420),	-- Dreadnaught Sabatons
-				}),	
+				})),	
 			}),
 			n(0, { 		-- Zone Drops
 				i(23666),	-- Belt of the Grand Crusader

@@ -162,25 +162,23 @@ _.Instances =
 						n(-40, {	-- Legacy
 							["groups"] = {
 								n(-17, {	-- Quests (Legacy)
-									["groups"] = bubbleDown ({["u"] = 40}, { -- Legacy Quests
-										qa(214, { 	-- Red Silk Bandanas
+									["groups"] = { -- Legacy Quests
+										un(40, qa(214, { 	-- Red Silk Bandanas
 											un(34, i(6094)),	-- Piercing Axe
 											un(34, i(2089)), 	-- Scrimshaw Dagger
 											un(34, i(2074)), 	-- Solid Shortblade
-										}),
-										qa(2040, { 	-- Underground Assault
+										})),
+										un(40, qa(2040, { 	-- Underground Assault
 											un(34, i(7606)),	-- Polar Gauntlets
 											un(34, i(7607)),	-- Sable Wand
-										}),
-										qa(166, { 	-- The Defias Brotherhood
+										})),
+										un(40, qa(166, { 	-- The Defias Brotherhood
 											un(34, i(6087)),	-- Chausses of Westfall 
 											un(34, i(2042)),	-- Staff of Westfall 
 											un(34, i(2041)),	-- Tunic of Westfall 
-										}),
-									}),
+										})),
+									},
 								}),
-								--n(-16, {	-- Rares (Legacy)
-								--}),
 								n(  0, {	-- Zone Drops
 									un(43, n(647, { 	-- Captain Greenskin
 										i(10403, {	-- Blackened Defias Belt
@@ -221,10 +219,6 @@ _.Instances =
 										un(2, i(5194)),	-- Taskmaster Axe
 									})),
 								}),
-								
-								
-								
-								
 							},
 						}),
 					}),

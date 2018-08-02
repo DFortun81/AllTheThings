@@ -690,60 +690,56 @@ _.Instances =
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
-								q( 4024, {		-- A Taste of Flame
+								un(40, q( 4024, {		-- A Taste of Flame
 									un(34, i(12066)),	-- Shaleskin Cape
 									un(34, i(12083)),	-- Valconian Sash
 									un(34, i(12082)),	-- Wyrmhide Spaulders
-								}),
-								qa(4242, {		-- Abandoned Hope
+								})),
+								un(40, qa(4242, {		-- Abandoned Hope
 									un(34, i(12018)),	-- Conservator Helm
 									un(34, i(12021)),	-- Shieldplate Sabatons
 									un(34, i(12041)),	-- Windshear Leggings
-								}),
-								qh(3907, {		-- Disharmony of Fire
+								})),
+								un(40, qh(3907, {		-- Disharmony of Fire
 									un(34, i(12112)),	-- Crypt Demon Bracers
 									un(34, i(12114)),	-- Nightfall Gloves
 									un(34, i(12115)),	-- Stalwart Clutch
 									un(34, i(12113)),	-- Sunborne Cape
-								}),
-								qa(4126, {		-- Hurley Blackbreath
+								})),
+								un(40, qa(4126, {		-- Hurley Blackbreath
 									un(34, i(12000)),	-- Limb Cleaver
 									un(34, i(11964)),	-- Swiftstrike Cudgel
-								}),
-								qa(4263, {		-- Incendius!
+								})),
+								un(40, qa(4263, {		-- Incendius!
 									un(34, i(12112)),	-- Crypt Demon Bracers
 									un(34, i(12114)),	-- Nightfall Gloves
 									un(34, i(12115)),	-- Stalwart Clutch
 									un(34, i(12113)),	-- Sunborne Cape 
-								}),
-								qa(4322, {		-- Jail Break!
+								})),
+								un(40, qa(4322, {		-- Jail Break!
 									un(34, i(12061)),	-- Blade of Reckoning
 									un(34, i(12062)),	-- Skilled Fighting Blade
-								}),
-								qh(4134, {		-- Lost Thunderbrew Recipe
+								})),
+								un(40, qh(4134, {		-- Lost Thunderbrew Recipe
 									un(34, i(12000)),	-- Limb Cleaver
 									un(34, i(11964)),	-- Swiftstrike Cudgel
-								}),
-								q( 4136, {		-- Ribbly Screwspigot
+								})),
+								un(40, q( 4136, {		-- Ribbly Screwspigot
 									un(34, i(11963)),	-- Penance Spaulders 
 									un(34, i(11865)),	-- Rancor Boots
 									un(34, i(12049)),	-- Splintsteel Armor
-								}),
-								q( 4201, {		-- The Love Potion
+								})),
+								un(40, q( 4201, {		-- The Love Potion
 									un(34, i(11962)),	-- Manacle Cuffs
 									un(34, i(11866)),	-- Nagmara's Whipping Belt
-								}),
-								qh(4063, {		-- The Rise of the Machines
+								})),
+								un(40, qh(4063, {		-- The Rise of the Machines
 									un(34, i(12109)),	-- Azure Moon Amice
 									un(34, i(12108)),	-- Basaltscale Armor
 									un(34, i(12111)),	-- Lavaplate Gauntlets
 									un(34, i(12110)),	-- Raincaster Drape
-								}),
+								})),
 							}),
-							--n(-16, {	-- Rares (Legacy)
-							--}),
-							--n(  0, {	-- Zone Drop (Legacy)
-							--}),
 						},
 						["u"] = 2,
 					}),
