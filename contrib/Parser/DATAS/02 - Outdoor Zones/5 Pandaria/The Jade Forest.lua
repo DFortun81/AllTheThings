@@ -167,7 +167,7 @@ _.Zones =
 										["qg"] = 54616, -- Sully "The Pickle" McLeary
 										["sourceQuests"] = { 31733 }, -- Touching Ground
 									}),	
-									q(31745, { -- Onward and Inward	
+									q(31745, { -- Onward and Inward	[Note: Final Quest needed to trigger criteria]
 										["qgs"] = { 54617, 66581 }, -- Rell Nightwind
 										["sourceQuests"] = { 30070 }, -- The Fall of Ga'trul
 									}),	
@@ -277,26 +277,18 @@ _.Zones =
 									}),		
 								},
 							}),
-							crit(2, { -- The Waterspeaking Ceremony [Available after crit 1]
+							crit(2, { -- The Waterspeaking Ceremony [Available after crit 1] [Lucetia: Not finish yet; need organized]
 								["groups"] = {
-									q(29555, { -- The White Pawn
-										["qg"] = 66292, -- Sky Admiral Rogers
-										["sourceQuests"] = { 31745 }, -- Onward and Inward
-									}),
-									q(29556, { -- Hozen Aren't Your Friends, Hozen Are Your Enemies
-										["qg"] = 66292, -- Sky Admiral Rogers
-										["sourceQuests"] = { 31745 }, -- Onward and Inward
-									}),
-									q(29553, { -- The Missing Admiral
-										["qg"] = 54615, -- Nodd Codejack
-										["sourceQuests"] = { 
-											29555, -- The White Pawn
-											29556, -- Hozen Aren't Your Friends, Hozen Are Your Enemies
-										},
-									}),
-									q(29558, { -- The Path of War
+									q(29560, { -- Ancient Power
 										["qg"] = 55196, -- Bold Karasshi
 										["sourceQuests"] = { 29553 }, -- The Missing Admiral
+									}),
+									q(29762, { -- Family Heirlooms
+										["qg"] = 56222, -- Bold Karasshi
+										["sourceQuests"] = {
+											29883, -- The Pearlfin Situation
+											29885, -- Road Rations
+										},
 									}),
 									q(29559, { -- Freeing Our Brothers
 										["groups"] = {
@@ -313,9 +305,13 @@ _.Zones =
 										["qg"] = 55196, -- Bold Karasshi
 										["sourceQuests"] = { 29553 }, -- The Missing Admiral
 									}),
-									q(29560, { -- Ancient Power
+									q(29556, { -- Hozen Aren't Your Friends, Hozen Are Your Enemies
+										["qg"] = 66292, -- Sky Admiral Rogers
+										["sourceQuests"] = { 31745 }, -- Onward and Inward
+									}),
+									q(29562, { -- Jailbreak
 										["qg"] = 55196, -- Bold Karasshi
-										["sourceQuests"] = { 29553 }, -- The Missing Admiral
+										["sourceQuests"] = { 29759 }, -- Kung Din
 									}),
 									q(29759, { -- Kung Din
 										["groups"] = {
@@ -336,23 +332,15 @@ _.Zones =
 											29560, -- Ancient Power
 										},
 									}),
-									q(29562, { -- Jailbreak
-										["qg"] = 55196, -- Bold Karasshi
-										["sourceQuests"] = { 29759 }, -- Kung Din
-									}),
-									q(29883, { -- The Pearlfin Situation
-										["qg"] = 66949, -- Rell Nightwind
-										["sourceQuests"]  = { 29562 }, -- Jailbreak
-									}),
 									q(29885, { -- Road Rations
 										["qg"] = 66949, -- Rell Nightwind
 										["sourceQuests"]  = { 29562 }, -- Jailbreak
 									}),
-									q(29762, { -- Family Heirlooms
-										["qg"] = 56222, -- Bold Karasshi
+									q(29894, { -- Spirits of the Water [Note: Final Quest needed to trigger criteria]
+										["qg"] = 59058, -- Pearlkeeper Fujin
 										["sourceQuests"] = {
-											29883, -- The Pearlfin Situation
-											29885, -- Road Rations
+											29762, -- Family Heirlooms
+											29887, -- The Elder's Instruments
 										},
 									}),
 									q(29887, { -- The Elder's Instruments
@@ -362,11 +350,33 @@ _.Zones =
 											29885, -- Road Rations
 										},
 									}),
-									-- STOPPED HERE  -- 
+									q(29553, { -- The Missing Admiral
+										["qg"] = 54615, -- Nodd Codejack
+										["sourceQuests"] = { 
+											29555, -- The White Pawn
+											29556, -- Hozen Aren't Your Friends, Hozen Are Your Enemies
+										},
+									}),
+									q(29558, { -- The Path of War
+										["qg"] = 55196, -- Bold Karasshi
+										["sourceQuests"] = { 29553 }, -- The Missing Admiral
+									}),
+									q(29883, { -- The Pearlfin Situation
+										["qg"] = 66949, -- Rell Nightwind
+										["sourceQuests"]  = { 29562 }, -- Jailbreak
+									}),
+									q(29555, { -- The White Pawn
+										["qg"] = 66292, -- Sky Admiral Rogers
+										["sourceQuests"] = { 31745 }, -- Onward and Inward
+									}),
 								},
 							}),
 							crit(3, { -- The White Pawn
 								["groups"] = {
+									qa(29733, { -- SI:7 Report: Lost in the Woods
+										["qg"] = 55333, -- Rell Nightwind
+										["sourceQuests"] = { 29894 }, -- Spirits of the Water
+									}),
 								},
 							}),
 							crit(4, { -- Pearlfin Village
@@ -1204,9 +1214,6 @@ _.Zones =
 					qa(29726, { -- SI:7 Report: Hostile Natives
 						["qg"] = 55284, -- Little Lu
 					}),
-					qa(29733, { -- SI:7 Report: Lost in the Woods
-						["qg"] = 55333, -- Rell Nightwind
-					}),
 					qa(29727, { -- SI:7 Report: Take No Prisoners
 						["qg"] = 55283, -- Amber Kearnen
 					}),
@@ -1231,9 +1238,7 @@ _.Zones =
 						["qg"] = 58413, -- Jenova Longeye
 						["isDaily"] = true,
 					}),
-					qa(29894, { -- Spirits of the Water
-						["qg"] = 59058, -- Pearlkeeper Fujin
-					}),
+					
 					q(29585, { -- Spitfire
 						["groups"] = {
 							i(84243), -- Bamboo Fiber Gloves
