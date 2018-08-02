@@ -132,127 +132,73 @@ _.Zones =
 						["groups"] = {
 							crit(1, { -- Paw'don Village [Completed: Patch 8.0.1 -- Lucetia]s
 								["groups"] = {
-									q(31732, { -- Unleash Hell
-										["groups"] = {
-											i(90375), -- Airship marine's Sharpshooter
-											i(90376), -- Barricade-Breaker Cidgel
-											i(90382), -- Captain Roger's Polite Knocking Stick
-											i(90377), -- Fogcutter Staff
-											i(90379), -- Mystic Perpetual Motion Mace
-											i(90381), -- Shock Trooper Battleaxe
-											i(90380), -- Skyfire Medic's Staff
-											i(90383), -- Skyfire Trooper's Mace
-											i(90378), -- Staff of the Skymagi
-											i(90374), -- Sully's Hotwiring Knife
-										},
-										["qg"] = 66292, --  Sky Admiral Rogers
-										["sourceQuests"] = { 29548 }, -- The Mission
-									}),
-									q(31733, { -- Touching Ground
-										["qg"] = 66292, -- Sky Admiral Rogers
-										["sourceQuests"] = { 31732 }, -- Unleash Hell
-									}),
-									q(30069, { -- No Plan Survives Contact with the Enemy
-										["qg"] = 54616, -- Sully "The Pickle" McLeary
-										["sourceQuests"] = { 31733 }, -- Touching Ground
-									}),
-									q(31734, { -- Welcome Wagons
-										["qg"] = 54616, -- Sully "The Pickle" McLeary
-										["sourceQuests"] = { 31733 }, -- Touching Ground
-									}),
-									q(31735, { -- The Right Tool For The Job
-										["groups"] = {
-											i(90354), -- Armored Chestpiece of Eminent Domain
-											i(90353), -- Burnished Chestguard of Eminent Domain
-											i(90348), -- Chain Armor of Eminent Domain
-											i(90355), -- Heavy Chestpiece of Eminent Domain
-											i(90351), -- Hide Robe of Eminent Domain
-											i(90347), -- Leather Tunic of Eminent Domain
-											i(90352), -- Ringmail Armor of Eminent Domain
-											i(90350), -- Satin Robe of Eminent Domain
-											i(90349), -- Silk Robe of Eminent Domain
-										},
-										["qg"] = 54617, -- Rell Nightwind
-										["sourceQuests"] = {
-											30069, -- No Plan Survives Contact with the Enemy
-											31734, -- Welcome Wagons
-										},
-									}),
-									q(31736, { -- Envoy of the Alliance
-										["qg"] = 54617, -- Rell Nightwind
-										["sourceQuests"] = { 31735 }, -- The Right Tool For The Job
-									}),
-									q(31737, { -- The Cost of War
-										["qg"] = 54617, -- Rell Nightwind
-										["sourceQuests"] = { 31735 }, -- The Right Tool For The Job
-									}),
-									q(31738, { -- Pillaging Peons
-										["qg"] = 65910, -- Sunke Khang
-										["sourceQuests"] = {
-											31736, -- Envoy of the Alliance
-											31737, -- The Cost of War
-										},
-									}),
-									q(31739, { -- Priorities!
-										["qg"] = 64596, -- Teng Applebloom
-										["sourceQuests"] = {
-											31736, -- Envoy of the Alliance
-											31737, -- The Cost of War
-										},
-									}),
-									q(29552, { -- Critical Condition
-										["groups"] = {
+									q(29552, { -- Critical Condition		
+										["groups"] = {	
 											i(90387), -- Crashed Gyrocopter Rotor
 											i(90388), -- Grewatsword of Kofinna Kottr
 											i(90385), -- Mishka's Bandage Cutter
 											i(90384), -- Peon-Chopping Axe
 											i(90386), -- Recovery Team Shield
 											i(90389), -- Skyguardian's Shield
-										},
-										["qgs"] = { 54614 }, -- Mishka
-										["sourceQuests"] = {
+										},	
+										["qgs"] = { 54614 }, -- Mishka	
+										["sourceQuests"] = {	
 											31736, -- Envoy of the Alliance
 											31737, -- The Cost of War
-										},
-									}),
-									q(31740, { -- Koukou's Rampage
-										["qg"] = 66199, -- Lin Applebloom
-										["sourceQuests"] = { 31739 },  -- Priorities!
-									}),
-									q(31741, { -- Twinspire Keep
-										["qg"] = 65910, -- Sunke Khang
-										["sourceQuests"]  = {
-											31738, -- Pillaging Peons
-											29552, -- Critical Condition
-											31740, -- Koukou's Rampage
-										},
-									}),
-									q(31744, { -- Unfair Trade
-										["qg"] =  65910, -- Sunke Khang
-										["sourceQuests"]  = {
-											31738, -- Pillaging Peons
-											29552, -- Critical Condition
-											31740, -- Koukou's Rampage
-										},
-									}),
-									q(31742, { -- Fractured Forces
+										},	
+									}),		
+									q(31736, { -- Envoy of the Alliance	
 										["qg"] = 54617, -- Rell Nightwind
-										["sourceQuests"]  = {
+										["sourceQuests"] = { 31735 }, -- The Right Tool For The Job
+									}),	
+									q(31742, { -- Fractured Forces		
+										["qg"] = 54617, -- Rell Nightwind	
+										["sourceQuests"]  = {	
 											31738, -- Pillaging Peons
 											29552, -- Critical Condition
 											31740, -- Koukou's Rampage
-										},
-									}),
-									q(31743, { -- Smoke Before Fire
-										["qg"] = 54617, -- Rell Nightwind
-										["sourceQuests"]  = {
+										},	
+									}),		
+									q(31740, { -- Koukou's Rampage		
+										["qg"] = 66199, -- Lin Applebloom	
+										["sourceQuests"] = { 31739 },  -- Priorities!	
+									}),		
+									q(30069, { -- No Plan Survives Contact with the Enemy	
+										["qg"] = 54616, -- Sully "The Pickle" McLeary
+										["sourceQuests"] = { 31733 }, -- Touching Ground
+									}),	
+									q(31745, { -- Onward and Inward	
+										["qgs"] = { 54617, 66581 }, -- Rell Nightwind
+										["sourceQuests"] = { 30070 }, -- The Fall of Ga'trul
+									}),	
+									q(31738, { -- Pillaging Peons		
+										["qg"] = 65910, -- Sunke Khang	
+										["sourceQuests"] = {	
+											31736, -- Envoy of the Alliance
+											31737, -- The Cost of War
+										},	
+									}),		
+									q(31739, { -- Priorities!		
+										["qg"] = 64596, -- Teng Applebloom	
+										["sourceQuests"] = {	
+											31736, -- Envoy of the Alliance
+											31737, -- The Cost of War
+										},	
+									}),		
+									q(31743, { -- Smoke Before Fire		
+										["qg"] = 54617, -- Rell Nightwind	
+										["sourceQuests"]  = {	
 											31738, -- Pillaging Peons
 											29552, -- Critical Condition
 											31740, -- Koukou's Rampage
-										},
+										},	
 									}),
-									q(30070, { -- The Fall of Ga'trul
-										["groups"] = {
+									q(31737, { -- The Cost of War			
+										["qg"] = 54617, -- Rell Nightwind		
+										["sourceQuests"] = { 31735 }, -- The Right Tool For The Job		
+									}),			
+									q(30070, { -- The Fall of Ga'trul		
+										["groups"] = {	
 											i(90345), -- Peacebreaker's Armored Helm
 											i(90344), -- Peacebreaker's Burnished Headcover
 											i(90339), -- Peacebreaker's Chain Helm
@@ -262,19 +208,73 @@ _.Zones =
 											i(90343), -- Peacebreaker's Ringmail Helm
 											i(90341), -- Peacebreaker's Satin Hood
 											i(90340), -- Peacebreaker's Silk Cowl
-										},
-										["qg"] = 54616, -- Sully "The Pickle" McLeary
-										["sourceQuests"]  = {
+										},	
+										["qg"] = 54616, -- Sully "The Pickle" McLeary	
+										["sourceQuests"]  = {	
 											31741, -- Twinspire Keep
 											31744, -- Unfair Trade
 											31742, -- Fractured Forces
 											31743, -- Smoke Bfeore Fire
-										},
-									}),
-									q(31745, { -- Onward and Inward
-										["qgs"] = { 54617, 66581 }, -- Rell Nightwind
-										["sourceQuests"] = { 30070 }, -- The Fall of Ga'trul
-									}),
+										},	
+									}),		
+									q(31735, { -- The Right Tool For The Job			
+										["groups"] = {		
+											i(90354), -- Armored Chestpiece of Eminent Domain	
+											i(90353), -- Burnished Chestguard of Eminent Domain	
+											i(90348), -- Chain Armor of Eminent Domain	
+											i(90355), -- Heavy Chestpiece of Eminent Domain	
+											i(90351), -- Hide Robe of Eminent Domain	
+											i(90347), -- Leather Tunic of Eminent Domain	
+											i(90352), -- Ringmail Armor of Eminent Domain	
+											i(90350), -- Satin Robe of Eminent Domain	
+											i(90349), -- Silk Robe of Eminent Domain	
+										},		
+										["qg"] = 54617, -- Rell Nightwind		
+										["sourceQuests"] = {		
+											30069, -- No Plan Survives Contact with the Enemy	
+											31734, -- Welcome Wagons	
+										},		
+									}),			
+									q(31733, { -- Touching Ground		
+										["qg"] = 66292, -- Sky Admiral Rogers	
+										["sourceQuests"] = { 31732 }, -- Unleash Hell	
+									}),		
+									q(31741, { -- Twinspire Keep		
+										["qg"] = 65910, -- Sunke Khang	
+										["sourceQuests"]  = {	
+											31738, -- Pillaging Peons
+											29552, -- Critical Condition
+											31740, -- Koukou's Rampage
+										},	
+									}),		
+									q(31744, { -- Unfair Trade		
+										["qg"] =  65910, -- Sunke Khang	
+										["sourceQuests"]  = {	
+											31738, -- Pillaging Peons
+											29552, -- Critical Condition
+											31740, -- Koukou's Rampage
+										},	
+									}),		
+									q(31732, { -- Unleash Hell			
+										["groups"] = {		
+											i(90375), -- Airship marine's Sharpshooter	
+											i(90376), -- Barricade-Breaker Cidgel	
+											i(90382), -- Captain Roger's Polite Knocking Stick	
+											i(90377), -- Fogcutter Staff	
+											i(90379), -- Mystic Perpetual Motion Mace	
+											i(90381), -- Shock Trooper Battleaxe	
+											i(90380), -- Skyfire Medic's Staff	
+											i(90383), -- Skyfire Trooper's Mace	
+											i(90378), -- Staff of the Skymagi	
+											i(90374), -- Sully's Hotwiring Knife	
+										},		
+										["qg"] = 66292, --  Sky Admiral Rogers		
+										["sourceQuests"] = { 29548 }, -- The Mission		
+									}),			
+									q(31734, { -- Welcome Wagons		
+										["qg"] = 54616, -- Sully "The Pickle" McLeary	
+										["sourceQuests"] = { 31733 }, -- Touching Ground	
+									}),		
 								},
 							}),
 							crit(2, { -- The Waterspeaking Ceremony [Available after crit 1]
