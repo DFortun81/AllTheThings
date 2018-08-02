@@ -373,14 +373,58 @@ _.Zones =
 							}),
 							crit(3, { -- The White Pawn
 								["groups"] = {
-									qa(29733, { -- SI:7 Report: Lost in the Woods
-										["qg"] = 55333, -- Rell Nightwind
-										["sourceQuests"] = { 29894 }, -- Spirits of the Water
-									}),
 								},
 							}),
 							crit(4, { -- Pearlfin Village
 								["groups"] = {
+									q(29733, { -- SI:7 Report: Lost in the Woods
+										["qg"] = 55333, -- Rell Nightwind
+										["sourceQuests"] = { 29894 }, -- Spirits of the Water
+									}),
+									q(29725, { -- SI:7 Report: Fire From the Sky
+										["qg"] = 55282, -- Sully "The Pickle" McLeary
+										["sourceQuests"] = { 29733 }, -- SI:7 Report: Lost in the Woods
+									}),
+									q(29726, { -- SI:7 Report: Hostile Natives
+										["qg"] = 55284, -- Little Lu
+										["sourceQuests"] = { 29725 }, -- SI:7 Report: Fire From the Sky
+									}),
+									q(29727, { -- SI:7 Report: Take No Prisoners
+										["qg"] = 55283, -- Amber Kearnen
+										["sourceQuests"] = { 29726 }, -- SI:7 Report: Take No Prisoners
+									}),
+									q(29888, { -- Seek Out the Lorewalker  ----> Leads to different quest altogether
+										["qg"] = 56222, -- Bold Karasshi
+										["sourceQuests"] = { 29727 }, -- SI:7 Report: Take No Prisoners
+									}),
+									q(29903, { -- A Perfect Match
+										["qg"] = 60970, -- Admiral Taylor
+										["sourceQuests"] = { 29727 }, -- SI:7 Report: Take No Prisoners
+									}),
+									q(29904, { -- Bigger Fish to Fry
+										["qg"] = 60970, -- Admiral Taylor
+										["sourceQuests"] = { 29903 }, -- A Perfect Match
+									}),
+									q(29905, { -- Let Them Burn [Note: 1 of 2 Final Quest needed to trigger criteria]
+										["qg"] = 60970, -- Admiral Taylor
+										["sourceQuests"] = { 29904 }, -- Bigger Fish to Fry
+									}),
+									qa(29906, { -- Carp Diem [Note: 1 of 2 Final Quest needed to trigger criteria]
+										["groups"] = {
+											i(80788), -- Jinyu Meditation Staff
+											i(80789), -- Jinyu Divining Rod
+											i(80790), -- Jinyu Combat Staff
+											i(80791), -- Jinyu Greatsword
+											i(80792), -- Jinyu Handaxe
+											i(80793), -- Jinyu Crossbow
+											i(80794), -- Jinyu Battleaxe
+											i(80795), -- Jinyu Ritual Sceptar
+											i(80796), -- Jinyu Dagger
+											i(80797), -- Jinyu Combat Mace
+										},
+										["qg"] = 60970, -- Admiral Taylor
+										["sourceQuests"] = { 29904 }, -- Bigger Fish to Fry
+									}),
 								},
 							}),
 							crit(5, { -- Dawn's Blossom
@@ -437,10 +481,6 @@ _.Zones =
 					q(30011, { -- A New Vision
 						["qg"] = 56787, -- Wise mari
 						["sourceQuests"] = { 29997 }, -- The Scryer's Dilemma
-					}),
-					qa(29903, { -- A Perfect Match
-						["qg"] = 60970, -- Admiral Taylor
-						["sourceQuests"] = { 29901 }, -- Anduin's Decision
 					}),
 					q(29627, { -- A Proper Weapon
 						["qg"] = 54915, -- Groundskeeper Wu
@@ -587,10 +627,6 @@ _.Zones =
 						["qg"] = 56339, -- General Nazgrim
 						["sourceQuests"] = { 29936 }, -- Instant Messaging
 					}),
-					qa(29904, { -- Bigger Fish to Fry
-						["qg"] = 60970, -- Admiral Taylor
-						["sourceQuests"] = { 29903 }, -- A Perfect Match
-					}),
 					q(30567, { -- Blanche's Boomer Brew
 						["qg"] = 59569, -- Brewmaster Blanche
 					}),
@@ -640,21 +676,6 @@ _.Zones =
 						qh(31261, { -- Captain Jack's Dead
 							["qg"] = 63809, -- Jack Arrow
 						})
-					}),
-					qa(29906, { -- Carp Diem
-						["groups"] = {
-							i(80788), -- Jinyu Meditation Staff
-							i(80789), -- Jinyu Divining Rod
-							i(80790), -- Jinyu Combat Staff
-							i(80791), -- Jinyu Greatsword
-							i(80792), -- Jinyu Handaxe
-							i(80793), -- Jinyu Crossbow
-							i(80794), -- Jinyu Battleaxe
-							i(80795), -- Jinyu Ritual Sceptar
-							i(80796), -- Jinyu Dagger
-							i(80797), -- Jinyu Combat Mace
-						},
-						["qg"] = 60970, -- Admiral Taylor
 					}),
 					q(30151, { -- Catch!
 						["qgs"] = { 65669, 65670, 65671 }, -- Your Hatchling
@@ -927,10 +948,6 @@ _.Zones =
 						["qg"] = 55172, -- General Nazgrim
 						["sourceQuests"] = { 29827 }, -- Acid Rain
 					}),
-					qa(29905, { -- Let Them Burn
-						["qg"] = 60970, -- Admiral Taylor
-						["sourceQuests"] = { 29904 }, -- Bigger Fish to Fry
-					}),
 					q(30005, { -- Lighting Up the Sky
 						["qg"] = 56784, -- Fei
 						["sourceQuests"] = { 29932 }, -- The Temple of the Jade Serpent
@@ -1182,9 +1199,6 @@ _.Zones =
 						["qgs"] = { 55403, 55497, 67153 }, -- 3 different phases of Zin'Jun
 						["sourceQuests"] = { 29765 }, -- Cryin' My Eyes Out
 					}),
-					qa(29888, { -- Seek Out the Lorewalker
-						["qg"] = 56222, -- Bold Karasshi
-					}),
 					qh(31774, { -- Seeking Zin'jun
 						["groups"] = {
 							i(90319), -- Landfall Burnished Greaves
@@ -1207,15 +1221,6 @@ _.Zones =
 					q(29995, { -- Shrine of the Dawn
 						["qg"] = 56065, -- Inkmaster Wei
 						["sourceQuests"] = { 29993 }, -- Find the Boy
-					}),
-					qa(29725, { -- SI:7 Report: Fire From the Sky
-						["qg"] = 55282, -- Sully "The Pickle" McLeary
-					}),
-					qa(29726, { -- SI:7 Report: Hostile Natives
-						["qg"] = 55284, -- Little Lu
-					}),
-					qa(29727, { -- SI:7 Report: Take No Prisoners
-						["qg"] = 55283, -- Amber Kearnen
 					}),
 					qh(29942, { -- Silly Wikket, Slickies are for Hozen
 						["qg"] = 56358, -- Eekle Eekle
