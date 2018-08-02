@@ -252,8 +252,6 @@ _.Instances =
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {
-							-- n(-17, {	-- Quests (Legacy)
-							-- }),
 							n(  0, {	-- Zone Drop (Legacy)
 								n(9693, { 	-- Bloodaxe Evoker
 									un(7, i(16673)), 	-- Cord of Elements
