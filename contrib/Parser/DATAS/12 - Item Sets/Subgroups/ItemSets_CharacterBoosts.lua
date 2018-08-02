@@ -9,34 +9,34 @@ _.GearSets =
 				["groups"] = {
 					n(-140, { -- Communal
 						["groups"] = {
-							i(153919),	-- Communal Wand
-							i(153938),	-- Communal Cowl
+							-- i(153919),	-- Communal Wand [Not actually given]
+							--i(153938),	-- Communal Cowl [Not actually given]
 							i(153923),	-- Communal Hood
 							i(153914),	-- Communal Medallion
-							i(153925),	-- Communal Necklace
-							i(153941),	-- Communal Mantle
+							--i(153925),	-- Communal Necklace [Not actually given]
+							--i(153941),	-- Communal Mantle [Not actually given]
 							i(153931),	-- Communal Shoulderpads
-							i(153935),	-- Communal Cloak of Destruction
+							--i(153935),	-- Communal Cloak of Destruction [Not actually given]
 							i(153920),	-- Communal Cloak of Wisdom
-							i(153940),	-- Communal Robe
+							--i(153940),	-- Communal Robe [Not actually given]
 							i(153929),	-- Communal Vestments
-							i(153943),	-- Communal Bindings
+							--i(153943),	-- Communal Bindings [Not actually given]
 							i(153933),	-- Communal Wristwraps
-							i(153937),	-- Communal Gloves
+							--i(153937),	-- Communal Gloves [Not actually given]
 							i(153922),	-- Communal Handwraps
 							i(153932),	-- Communal Cord
-							i(153942),	-- Communal Sash
+							--i(153942),	-- Communal Sash [Not actually given]
 							i(153924),	-- Communal Leggings
-							i(153939),	-- Communal Pants
-							i(153936),	-- Communal Boots
+							--i(153939),	-- Communal Pants [Not actually given]
+							--i(153936),	-- Communal Boots [Not actually given]
 							i(153921),	-- Communal Sandals
-							i(153916),	-- Communal Band of Destruction
+							--i(153916),	-- Communal Band of Destruction [Not actually given]
 							i(153927),	-- Communal Band of Wisdom
-							i(153917),	-- Communal Ring of Destruction
+							--i(153917),	-- Communal Ring of Destruction [Not actually given]
 							i(153928),	-- Communal Ring of Wisdom
-							i(153918),	-- Communal Stone of Destruction
+							--i(153918),	-- Communal Stone of Destruction [Not actually given]
 							i(153930),	-- Communal Stone of Wisdom
-							i(153915),	-- Communal Idol of Destruction
+							--i(153915),	-- Communal Idol of Destruction [Not actually given]
 							i(153926),	-- Communal Idol of Wisdom
 						},
 						["classes"] = { 5 }
