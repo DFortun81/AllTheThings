@@ -23,6 +23,21 @@ _.Zones =
 				},
 				["qg"] = 107574, -- Anduin Wrynn <King of Stormwind> 
 			}),
+			--[[  Might be Horde Version
+			q(49846, { -- Wars on Two Fronts [Cataclysm] 
+				["groups"] = {
+					
+				},
+				["itemID"] = 156477, -- Special Duty Assignments
+			}),
+			--]]
+			q(49864, { -- Wars on Two Fronts [Pandaria]
+				["groups"] = {
+					q(49866), -- To Pandaria!
+					--q(49852), -- To Pandaria! [Might be Horde Version]
+				},
+				["itemID"] = 156477, -- Special Duty Assignments
+			}),
 		},
 		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
 		["collectible"] = false,
