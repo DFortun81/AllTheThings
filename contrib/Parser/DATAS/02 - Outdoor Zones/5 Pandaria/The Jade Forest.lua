@@ -802,7 +802,6 @@ _.Zones =
 						["qg"] = 58413, -- Jenova Longeye
 						["isDaily"] = true,
 					}),
-					q
 					qh(29937, { -- Furious Fowl
 						["qg"] = 56406, -- Rivett Clutchpop
 						["sourceQuests"] = { 29941 }, -- Beyond the Horizon

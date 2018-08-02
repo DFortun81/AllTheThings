@@ -525,6 +525,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qa(29548, {	-- The Mission
 						["qg"] = 55789, -- Rell Nightwind
 					}),
+					--[[
 					qg(, qa(47253)),	-- The Originals
 					qg(, qa(  543)),	-- The Perenolde Tiara
 					--]]
