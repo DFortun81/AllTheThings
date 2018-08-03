@@ -4,9 +4,9 @@
 
 _.Instances = 
 {
-	{ -- Burning Crusade
+	{	-- Burning Crusade
 		["groups"] = {
-			inst(251, { 	-- Old Hillsbrad Foothills
+			inst(251, {	-- Old Hillsbrad Foothills
 				["groups"] = {
 					n(-2, {	-- Vendors
 						n(18672, {	-- Thomas Yance
@@ -22,11 +22,11 @@ _.Instances =
 						}),
 					}),
 					n( 0, {	-- Zone Drop
-						n(28132, {	-- Don Carlos
-							dr(0.11, i(25729)), -- Pattern: Stylin' Adventure Hat
-						}),
-						n(17820, {	-- Durnholde Rifleman
-							dr(0.50, i(25729)), -- Pattern: Stylin' Adventure Hat
+						i(25729, {	-- Pattern: Stylin' Adventure Hat
+							["crs"] = {
+								28132,	-- Don Carlos
+								17820,	-- Durnholde Rifleman
+							},
 						}),
 					}),	
 					d( 1, {	-- Normal
