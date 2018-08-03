@@ -444,8 +444,44 @@ _.Zones =
 								["groups"] = {
 								},
 							}),
-							crit(10, { -- Nectarbreeze Orchard
+							crit(10, { -- Nectarbreeze Orchard [Completed: Patch 8.0.1 -- Lucetia]
 								["groups"] = {
+									q(29578, { -- Defiance  [Possible Extra, test later]
+										["qg"] = 54697, -- Shao the Defiant
+										-- Note no breadcrumb or source really.  Can pick up by itself.  Lucetia Aug. 8, 2018
+									}),
+									q(29670, { -- Maul Gormal [Note: Final Quest needed to trigger criteria]
+										["qg"] = 55009, -- Shao the Defiant
+										["sourceQuests"] = { 29586 }, -- The Splintered path
+									}),
+									q(29580, { -- Orchard-Supplied Hardware[Possible Extra, test later]
+										["qg"] = 54854, -- Gentle Mother Hanae
+									}),
+									q(29579, { -- Rally the Survivors[Possible Extra, test later]
+										["qg"] = 54697, -- Shao the Defiant
+									}),
+									q(29585, { -- Spitfire
+										["groups"] = {
+											i(84243), -- Bamboo Fiber Gloves
+											i(84244), -- Bamboo Leaf Gloves
+											i(84245), -- Jade Witch Handguards
+											i(84246), -- Bamboo Strip Gloves
+											i(84247), -- Bamboo Strip Handguards
+											i(84248), -- Bamboo Plate Gloves
+											i(84249), -- Fox Grove Handguards
+											i(84250), -- Bamboo Leaf Gauntlets
+											i(88709), -- Bamboo Plate Gauntlets
+										},
+										["qg"] = 54854, -- Gentle Mother Hanae
+									}),
+									q(29586, { -- The Splintered Path
+										["qg"] = 55209, -- Traumatized Nectarbreeze Farmer
+										["sourceQuests"] = { 29585 }, -- Spitfire
+									}),
+									q(29587, { -- Unbound
+										["qg"] = 55009, -- Shao the Defiant
+										["sourceQuests"] = { 29586 }, -- The Splintered Path
+									}),
 								},
 							}),
 							crit(11, { -- The Battle for the Forest
@@ -969,10 +1005,7 @@ _.Zones =
 						["qg"] = 56346, -- Foreman Mann
 						["sourceQuests"] = { 29928 }, -- I have No Jade and I must Scream
 					}),
-					q(29670, { -- Maul Gormal
-						["qg"] = 55009, -- Shao the Defiant
-						["sourceQuests"] = { 29586 }, -- The Splintered path
-					}),
+					
 					qh(29821, { -- Missed Me By... That Much!
 						["qg"] = 55521, -- Rivett Clutchpop
 						["sourceQuests"] = { 31999 }, -- Nazgrim's Command

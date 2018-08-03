@@ -343,7 +343,7 @@ _.GroupFinder =
 		   i(113753),	-- Venomtail Shoulderguards *
 		   i(113741),	-- Venomtail Chestguard*
 		   i(113747),	-- Venomtail Gauntlets*
-		   i(113779),	-- Venomtail Girdle
+		   i(113779),	-- Venomtail Girdle*
 		   i(113778),	-- Venomtail Belt
 		   i(113777),	-- Venomtail Boots		   
 		   i(113776),	-- Venomtail Treads
@@ -353,7 +353,7 @@ _.GroupFinder =
 		   i(113782),	-- Kyparite Boots
 		   i(113785),	-- Kyparite Girdle
 		   i(113729),	-- Kyparite Headguard
-		   i(113728),	-- Kyparite Helm
+		   i(113728),	-- Kyparite Helm*
 		   i(113783),	-- Kyparite Stompers
 		   i(113735),	-- Drifting Cloud Necklace*
 		   i(113755),	-- Ring of Flowing Water*
