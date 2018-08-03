@@ -371,10 +371,12 @@ _.Zones =
 									}),
 								},
 							}),
+							--[[
 							crit(3, { -- The White Pawn 
 								["groups"] = {
 								},
 							}),
+							--]]
 							crit(4, { -- Pearlfin Village [Completed: Patch 8.0.1 -- Lucetia]
 								["groups"] = {
 									q(29903, { -- A Perfect Match
@@ -424,6 +426,7 @@ _.Zones =
 									}),
 								},
 							}),
+							--[[
 							crit(5, { -- Dawn's Blossom
 								["groups"] = {
 								},
@@ -432,10 +435,163 @@ _.Zones =
 								["groups"] = {
 								},
 							}),
-							crit(7, { -- Tian Monastery
+							--]]
+							crit(7, { -- Tian Monastery [Completed: Patch 8.0.1 -- Lucetia]
 								["groups"] = {
+									q(29619, { -- A Courteous Guest
+										["qg"] = 54913, -- Lin Tenderpaw
+										["sourceQuests"] = { 29618 } , -- The High Elder
+									}),
+									q(29627, { -- A Proper Weapon
+										["qg"] = 54915, -- Groundskeeper Wu
+										["sourceQuests"] = { 29626 }, -- Groundskeeper Wu
+									}),
+									q(29629, { -- A Steady Hand
+										["qg"] = 54915, -- Groundskeeper Wu
+										["sourceQuests"] = { 29627 }, -- A Proper Weapon
+									}),
+									q(29628, { -- A Strong Back
+										["qg"] = 54915, -- Groundskeeper Wu
+										["sourceQuests"] = { 29627 }, -- A Proper Weapon
+									}),
+									q(29636, { -- A Test of Endurance
+										["qg"] = 54922, -- Master Stone Fist
+										["sourceQuests"] = { 29635 }, -- Xiao, the Eater
+									}),
+									q(29630, { -- And a Heavy Fist
+										["groups"] = { 
+											i(80740), -- Ambermist Gloves
+											i(80741), -- Blackthicket Gloves
+											i(80742), -- Jade Witch Guantlets
+											i(80743), -- Glass Lake Gloves
+											i(80744), -- Silkwood Handguards
+											i(80745), -- Deepwoods Gloves
+											i(80746), -- Fox Grove Gauntlets
+											i(80747), -- Thunderwood Gauntlets
+											i(80748), -- Jade Tiger Gauntlets
+										},
+										["qg"] = 54915, -- Groundskeeper Wu
+										["sourceQuests"] = { 29627 }, -- A Proper Weapon
+									}),
+									q(29624, { -- Attention
+										["groups"] = {
+											i(80731), -- Ambermist Cord
+											i(80732), -- Blackthicket Belt
+											i(80733), -- Jade Witch Waistguard
+											i(80734), -- Glass Lake Clasp
+											i(80735), -- Silkwood Cord
+											i(80736), -- Deepwoods Belt
+											i(80737), -- Fox Grove Belt
+											i(80738), -- Thunderwood Girdle
+											i(80739), -- Jade Tiger Girdle
+										},
+										["qg"] = 54917, -- Instructor Xann
+										["sourceQuests"] = { 29623 }, -- Perfection
+									}),
+									q(29632, { -- Becoming Battle-Ready
+										["qg"] = 54922, -- Master Stone Fist
+										["sourceQuests"] = { 29620 }, -- The Great Banquet
+									}),
+									q(29639, { -- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
+										["groups"] = {
+											i(80798), -- Greataxe of Honor
+											i(80799), -- Sword of Honor
+											i(80800), -- Tian Defender
+											i(80801), -- Tian Protector
+											i(80802), -- Blade of Honor
+											i(80803), -- Mace of Honor
+										},
+										["qg"] = 54917, -- Instructor Xann
+										["sourceQuests"] = { 29624 }, -- Attention
+										["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
+									}),
+									q(29647, { -- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
+										["groups"] = {
+											i(80798), -- Greataxe of Honor
+											i(80799), -- Sword of Honor
+											i(80800), -- Tian Defender
+											i(80801), -- Tian Protector
+											i(80802), -- Blade of Honor
+											i(80803), -- Mace of Honor
+										},
+										["qg"] = 54918, -- Instructor Myang
+										["sourceQuests"] = { 29637 }, -- The Rumpus
+										["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
+									}),
+									q(29646, { -- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
+										["groups"] = {
+											i(80798), -- Greataxe of Honor
+											i(80799), -- Sword of Honor
+											i(80800), -- Tian Defender
+											i(80801), -- Tian Protector
+											i(80802), -- Blade of Honor
+											i(80803), -- Mace of Honor
+										},
+										["qg"] = 54915, -- Groundskeeper Wu
+										["sourceQuests"] = { 29628, 29629, 29630 }, -- A Strong Back, A Steady Hand, And a Heavy Fist
+										["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
+									}),
+									q(29626, { -- Groundskeeper Wu
+										["qg"] = 54926, -- Xiao
+										["sourceQuests"] = { 29620 }, -- The Great Banquet
+									}),
+									q(29634, { -- Husshun, the Wizened
+										["qg"] = 54922, -- Master Stone Fist
+										["sourceQuests"] = { 29632 }, -- Becoming Battle-Ready
+									}),
+									q(29623, { -- Perfection
+										["qg"] = 54917, -- Instructor Xann
+										["sourceQuests"] = { 29622 }, -- Your Training Starts Now
+									}),
+									q(29620, { -- The Great Banquet
+										["qg"] = 54913, -- Lin Tenderpaw
+										["sourceQuests"] = { 29619 }, -- A Courteous Guest
+									}),
+									q(29618, { -- The High Elder
+										["qg"] = 54913, -- Lin Tenderpaw
+									}),
+									q(29637, { -- The Rumpus
+										["groups"] = {
+											i(84251), -- Staff of Inner Focus
+											i(84252), -- Instructor's Staff
+											i(84253), -- Tian Monastic Staff
+											i(84254), -- Sword of the Lone Victor
+											i(84255), -- Axe of the Lone Champion
+											i(84256), -- Jade Rifle
+											i(84257), -- Trophy of the Last Man Standing
+											i(84258), -- Mace of Inner Peace
+											i(84259), -- Regal Shortblade
+											i(84260), -- Mace of Serenity
+										},
+										["qg"] = 54918, -- Instructor Myang
+										["sourceQuests"] = { 29636 }, -- A Test of Endurance
+									}),
+									q(29635, { -- Xiao, the Eater
+										["groups"] = {
+											i(88693), -- Bamboo Plate Armwraps
+											i(88692), -- Fox Grove Bracers
+											i(88694), -- Bamboo Strip Cuffs
+											i(88698), -- Bamboo Fiber Cuffs
+											i(88697), -- Bamboo Leaf Bindings
+											i(88696), -- Jade Witch Armguards
+											i(88695), -- Bamboo Strip Bracers
+											i(88690), -- Bamboo Leaf Armplates
+											i(88691), -- Bamboo Plate Armplates
+										},
+										["qg"] = 54922, -- Master Stone Fist
+										["sourceQuests"] = { 29633, 29634 }, -- Zhi-Zhi the Dextrous, Hasshun the Wizened
+									}),
+									q(29622, { -- Your Training Starts Now
+										["qg"] = 54926, -- Xiao
+										["sourceQuests"] = { 29620 }, -- The Great Banquet
+									}),
+									q(29633, { -- Zhi-Zhi, the Dextrous
+										["qg"] = 54922, -- Master Stone Fist
+										["sourceQuests"] = { 29632 }, -- Becoming Battle-Ready
+									}),
 								},
 							}),
+							--[[
 							crit(8, { -- Terrace of Ten Thunders
 								["groups"] = {
 								},
@@ -444,6 +600,7 @@ _.Zones =
 								["groups"] = {
 								},
 							}),
+							--]]
 							crit(10, { -- Nectarbreeze Orchard [Completed: Patch 8.0.1 -- Lucetia]
 								["groups"] = {
 									q(29578, { -- Defiance  [Possible Extra, test later]
@@ -484,6 +641,7 @@ _.Zones =
 									}),
 								},
 							}),
+							--[[
 							crit(11, { -- The Battle for the Forest
 								["groups"] = {
 								},
@@ -492,6 +650,7 @@ _.Zones =
 								["groups"] = {
 								},
 							}),
+							--]]
 							q(29888, { -- Seek Out the Lorewalker  ----> Leads to different quest altogether
 								["qg"] = 56222, -- Bold Karasshi
 								["sourceQuests"] = { 29727 }, -- SI:7 Report: Take No Prisoners
@@ -499,10 +658,252 @@ _.Zones =
 						},
 						["races"] = ALLIANCE_ONLY, -- Alliance
 					})),
-					q(29619, { -- A Courteous Guest
-						["qg"] = 54913, -- Lin Tenderpaw
-						["sourceQuests"] = { 29618 } , -- The High Elder
-					}),
+					h(ach(6534, { -- Upjade Complete [Horde]
+						["groups"] = {
+							--[[
+							crit(1, { -- The Remains of Hellscream's Fist
+								["groups"] = {
+								},
+							}),
+							crit(2, { -- First Contact
+								["groups"] = {
+								},
+							}),
+							crit(3, { -- Strange Bedfellows
+								["groups"] = {
+								},
+							}),
+							crit(4, { -- Grookin Hill
+								["groups"] = {
+								},
+							}),
+							crit(5, { -- Dawn's Blossom
+								["groups"] = {
+								},
+							}),
+							crit(6, { -- Greenstone Quarry
+								["groups"] = {
+								},
+							}),
+							crit(7, { -- The Temple of the Jade Serpent
+								["groups"] = {
+								},
+							}),
+							--]]
+							crit(8, { -- Tian Monastery [Completed: Patch 8.0.1 -- Lucetia]
+								["groups"] = {
+									q(29619, { -- A Courteous Guest
+										["qg"] = 54913, -- Lin Tenderpaw
+										["sourceQuests"] = { 29618 } , -- The High Elder
+									}),
+									q(29627, { -- A Proper Weapon
+										["qg"] = 54915, -- Groundskeeper Wu
+										["sourceQuests"] = { 29626 }, -- Groundskeeper Wu
+									}),
+									q(29629, { -- A Steady Hand
+										["qg"] = 54915, -- Groundskeeper Wu
+										["sourceQuests"] = { 29627 }, -- A Proper Weapon
+									}),
+									q(29628, { -- A Strong Back
+										["qg"] = 54915, -- Groundskeeper Wu
+										["sourceQuests"] = { 29627 }, -- A Proper Weapon
+									}),
+									q(29636, { -- A Test of Endurance
+										["qg"] = 54922, -- Master Stone Fist
+										["sourceQuests"] = { 29635 }, -- Xiao, the Eater
+									}),
+									q(29630, { -- And a Heavy Fist
+										["groups"] = { 
+											i(80740), -- Ambermist Gloves
+											i(80741), -- Blackthicket Gloves
+											i(80742), -- Jade Witch Guantlets
+											i(80743), -- Glass Lake Gloves
+											i(80744), -- Silkwood Handguards
+											i(80745), -- Deepwoods Gloves
+											i(80746), -- Fox Grove Gauntlets
+											i(80747), -- Thunderwood Gauntlets
+											i(80748), -- Jade Tiger Gauntlets
+										},
+										["qg"] = 54915, -- Groundskeeper Wu
+										["sourceQuests"] = { 29627 }, -- A Proper Weapon
+									}),
+									q(29624, { -- Attention
+										["groups"] = {
+											i(80731), -- Ambermist Cord
+											i(80732), -- Blackthicket Belt
+											i(80733), -- Jade Witch Waistguard
+											i(80734), -- Glass Lake Clasp
+											i(80735), -- Silkwood Cord
+											i(80736), -- Deepwoods Belt
+											i(80737), -- Fox Grove Belt
+											i(80738), -- Thunderwood Girdle
+											i(80739), -- Jade Tiger Girdle
+										},
+										["qg"] = 54917, -- Instructor Xann
+										["sourceQuests"] = { 29623 }, -- Perfection
+									}),
+									q(29632, { -- Becoming Battle-Ready
+										["qg"] = 54922, -- Master Stone Fist
+										["sourceQuests"] = { 29620 }, -- The Great Banquet
+									}),
+									q(29639, { -- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
+										["groups"] = {
+											i(80798), -- Greataxe of Honor
+											i(80799), -- Sword of Honor
+											i(80800), -- Tian Defender
+											i(80801), -- Tian Protector
+											i(80802), -- Blade of Honor
+											i(80803), -- Mace of Honor
+										},
+										["qg"] = 54917, -- Instructor Xann
+										["sourceQuests"] = { 29624 }, -- Attention
+										["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
+									}),
+									q(29647, { -- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
+										["groups"] = {
+											i(80798), -- Greataxe of Honor
+											i(80799), -- Sword of Honor
+											i(80800), -- Tian Defender
+											i(80801), -- Tian Protector
+											i(80802), -- Blade of Honor
+											i(80803), -- Mace of Honor
+										},
+										["qg"] = 54918, -- Instructor Myang
+										["sourceQuests"] = { 29637 }, -- The Rumpus
+										["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
+									}),
+									q(29646, { -- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
+										["groups"] = {
+											i(80798), -- Greataxe of Honor
+											i(80799), -- Sword of Honor
+											i(80800), -- Tian Defender
+											i(80801), -- Tian Protector
+											i(80802), -- Blade of Honor
+											i(80803), -- Mace of Honor
+										},
+										["qg"] = 54915, -- Groundskeeper Wu
+										["sourceQuests"] = { 29628, 29629, 29630 }, -- A Strong Back, A Steady Hand, And a Heavy Fist
+										["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
+									}),
+									q(29626, { -- Groundskeeper Wu
+										["qg"] = 54926, -- Xiao
+										["sourceQuests"] = { 29620 }, -- The Great Banquet
+									}),
+									q(29634, { -- Husshun, the Wizened
+										["qg"] = 54922, -- Master Stone Fist
+										["sourceQuests"] = { 29632 }, -- Becoming Battle-Ready
+									}),
+									q(29623, { -- Perfection
+										["qg"] = 54917, -- Instructor Xann
+										["sourceQuests"] = { 29622 }, -- Your Training Starts Now
+									}),
+									q(29620, { -- The Great Banquet
+										["qg"] = 54913, -- Lin Tenderpaw
+										["sourceQuests"] = { 29619 }, -- A Courteous Guest
+									}),
+									q(29618, { -- The High Elder
+										["qg"] = 54913, -- Lin Tenderpaw
+									}),
+									q(29637, { -- The Rumpus
+										["groups"] = {
+											i(84251), -- Staff of Inner Focus
+											i(84252), -- Instructor's Staff
+											i(84253), -- Tian Monastic Staff
+											i(84254), -- Sword of the Lone Victor
+											i(84255), -- Axe of the Lone Champion
+											i(84256), -- Jade Rifle
+											i(84257), -- Trophy of the Last Man Standing
+											i(84258), -- Mace of Inner Peace
+											i(84259), -- Regal Shortblade
+											i(84260), -- Mace of Serenity
+										},
+										["qg"] = 54918, -- Instructor Myang
+										["sourceQuests"] = { 29636 }, -- A Test of Endurance
+									}),
+									q(29635, { -- Xiao, the Eater
+										["groups"] = {
+											i(88693), -- Bamboo Plate Armwraps
+											i(88692), -- Fox Grove Bracers
+											i(88694), -- Bamboo Strip Cuffs
+											i(88698), -- Bamboo Fiber Cuffs
+											i(88697), -- Bamboo Leaf Bindings
+											i(88696), -- Jade Witch Armguards
+											i(88695), -- Bamboo Strip Bracers
+											i(88690), -- Bamboo Leaf Armplates
+											i(88691), -- Bamboo Plate Armplates
+										},
+										["qg"] = 54922, -- Master Stone Fist
+										["sourceQuests"] = { 29633, 29634 }, -- Zhi-Zhi the Dextrous, Hasshun the Wizened
+									}),
+									q(29622, { -- Your Training Starts Now
+										["qg"] = 54926, -- Xiao
+										["sourceQuests"] = { 29620 }, -- The Great Banquet
+									}),
+									q(29633, { -- Zhi-Zhi, the Dextrous
+										["qg"] = 54922, -- Master Stone Fist
+										["sourceQuests"] = { 29632 }, -- Becoming Battle-Ready
+									}),
+								},
+							}),
+							--[[
+							crit(9, { -- Terrace of Ten Thunders
+								["groups"] = {
+								},
+							}),
+							--]]
+							crit(10, { -- Nectarbreeze Orchard [Completed: Patch 8.0.1 -- Lucetia]
+								["groups"] = {
+									q(29578, { -- Defiance  [Possible Extra, test later]
+										["qg"] = 54697, -- Shao the Defiant
+										-- Note no breadcrumb or source really.  Can pick up by itself.  Lucetia Aug. 8, 2018
+									}),
+									q(29670, { -- Maul Gormal [Note: Final Quest needed to trigger criteria]
+										["qg"] = 55009, -- Shao the Defiant
+										["sourceQuests"] = { 29586 }, -- The Splintered path
+									}),
+									q(29580, { -- Orchard-Supplied Hardware[Possible Extra, test later]
+										["qg"] = 54854, -- Gentle Mother Hanae
+									}),
+									q(29579, { -- Rally the Survivors[Possible Extra, test later]
+										["qg"] = 54697, -- Shao the Defiant
+									}),
+									q(29585, { -- Spitfire
+										["groups"] = {
+											i(84243), -- Bamboo Fiber Gloves
+											i(84244), -- Bamboo Leaf Gloves
+											i(84245), -- Jade Witch Handguards
+											i(84246), -- Bamboo Strip Gloves
+											i(84247), -- Bamboo Strip Handguards
+											i(84248), -- Bamboo Plate Gloves
+											i(84249), -- Fox Grove Handguards
+											i(84250), -- Bamboo Leaf Gauntlets
+											i(88709), -- Bamboo Plate Gauntlets
+										},
+										["qg"] = 54854, -- Gentle Mother Hanae
+									}),
+									q(29586, { -- The Splintered Path
+										["qg"] = 55209, -- Traumatized Nectarbreeze Farmer
+										["sourceQuests"] = { 29585 }, -- Spitfire
+									}),
+									q(29587, { -- Unbound
+										["qg"] = 55009, -- Shao the Defiant
+										["sourceQuests"] = { 29586 }, -- The Splintered Path
+									}),
+								},
+							}),
+							--[[
+							crit(11, { -- The Battle for the Forest
+								["groups"] = {
+								},
+							}),
+							crit(12, { -- Overcoming Doubt
+								["groups"] = {
+								},
+							}),
+							--]]
+						},
+						["races"] = HORDE_ONLY,
+					})),
 					q(30149, { -- A Feast for the Senses
 						["qg"] = 58413, -- Jenova Longeye
 						["isDaily"] = true,
@@ -519,26 +920,13 @@ _.Zones =
 						["qg"] = 56787, -- Wise mari
 						["sourceQuests"] = { 29997 }, -- The Scryer's Dilemma
 					}),
-					q(29627, { -- A Proper Weapon
-						["qg"] = 54915, -- Groundskeeper Wu
-						["sourceQuests"] = { 29626 }, -- Groundskeeper Wu
-					}),
-					q(29629, { -- A Steady Hand
-						["qg"] = 54915, -- Groundskeeper Wu
-						["sourceQuests"] = { 29627 }, -- A Proper Weapon
-					}),
-					q(29628, { -- A Strong Back
-						["qg"] = 54915, -- Groundskeeper Wu
-						["sourceQuests"] = { 29627 }, -- A Proper Weapon
-					}),
+					
+					
 					q(31707, { -- A Tangled Web
 						["qg"] = 58228, -- Instructor Skythorn
 						["isDaily"] = true,
 					}),
-					q(29636, { -- A Test of Endurance
-						["qg"] = 54922, -- Master Stone Fist
-						["sourceQuests"] = { 29635 }, -- Xiao, the Eater
-					}),
+					
 					q(31539, { -- A Thing of Beauty
 						["qg"] = 56065, -- Inkmaster Wei
 						["requiredSkill"] = 773,
@@ -606,21 +994,7 @@ _.Zones =
 						["qg"] = 55480, -- Pei-Zhi
 						["sourceQuests"] = { 29747, 29748 }, -- Break the Cycle, Simulacrumble
 					}),
-					q(29630, { -- And a Heavy Fist
-						["groups"] = { 
-							i(80740), -- Ambermist Gloves
-							i(80741), -- Blackthicket Gloves
-							i(80742), -- Jade Witch Guantlets
-							i(80743), -- Glass Lake Gloves
-							i(80744), -- Silkwood Handguards
-							i(80745), -- Deepwoods Gloves
-							i(80746), -- Fox Grove Gauntlets
-							i(80747), -- Thunderwood Gauntlets
-							i(80748), -- Jade Tiger Gauntlets
-						},
-						["qg"] = 54915, -- Groundskeeper Wu
-						["sourceQuests"] = { 29627 }, -- A Proper Weapon
-					}),
+					
 					qa(29901, { -- Anduin's Decision
 						["sourceQuests"] = { 29900, 29899 }, -- An Ancient Legend, Rest in Peace
 						["description"] = "Automatically given when prequisites have been fulfilled.",
@@ -633,21 +1007,7 @@ _.Zones =
 						["qg"] = 65999, -- General Nazgrim
 						["sourceQuests"] = { 29804 }, -- Seein' Red
 					}),
-					q(29624, { -- Attention
-						["groups"] = {
-							i(80731), -- Ambermist Cord
-							i(80732), -- Blackthicket Belt
-							i(80733), -- Jade Witch Waistguard
-							i(80734), -- Glass Lake Clasp
-							i(80735), -- Silkwood Cord
-							i(80736), -- Deepwoods Belt
-							i(80737), -- Fox Grove Belt
-							i(80738), -- Thunderwood Girdle
-							i(80739), -- Jade Tiger Girdle
-						},
-						["qg"] = 54917, -- Instructor Xann
-						["sourceQuests"] = { 29623 }, -- Perfection
-					}),
+					
 					q(29753, { -- Back to Nature
 						["qg"] = 55614, -- Pei-Zhi 
 						["sourceQuests"] = { 29751, 29752, 29750 }, -- Ritual Artifacts, The Wayward Dead, Vessels of the Spirit
@@ -656,10 +1016,7 @@ _.Zones =
 						["qg"] = 58225, -- Instructor Tong
 						["sourceQuests"] = { 30134 }, -- Wild Things
 					}),
-					q(29632, { -- Becoming Battle-Ready
-						["qg"] = 54922, -- Master Stone Fist
-						["sourceQuests"] = { 29620 }, -- The Great Banquet
-					}),
+					
 					qh(29941, { -- Beyond the Horizon
 						["qg"] = 56339, -- General Nazgrim
 						["sourceQuests"] = { 29936 }, -- Instant Messaging
@@ -823,45 +1180,7 @@ _.Zones =
 						["qg"] = 58420, -- Instructor Windblade
 						["sourceQuests"] = { 30143 }, -- They Grow Like Weeds
 					}),
-					q(29639, { -- Flying Colors
-						["groups"] = {
-							i(80798), -- Greataxe of Honor
-							i(80799), -- Sword of Honor
-							i(80800), -- Tian Defender
-							i(80801), -- Tian Protector
-							i(80802), -- Blade of Honor
-							i(80803), -- Mace of Honor
-						},
-						["qg"] = 54917, -- Instructor Xann
-						["sourceQuests"] = { 29624 }, -- Attention
-						["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-					}),
-					q(29647, { -- Flying Colors
-						["groups"] = {
-							i(80798), -- Greataxe of Honor
-							i(80799), -- Sword of Honor
-							i(80800), -- Tian Defender
-							i(80801), -- Tian Protector
-							i(80802), -- Blade of Honor
-							i(80803), -- Mace of Honor
-						},
-						["qg"] = 54918, -- Instructor Myang
-						["sourceQuests"] = { 29637 }, -- The Rumpus
-						["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-					}),
-					q(29646, { -- Flying Colors
-						["groups"] = {
-							i(80798), -- Greataxe of Honor
-							i(80799), -- Sword of Honor
-							i(80800), -- Tian Defender
-							i(80801), -- Tian Protector
-							i(80802), -- Blade of Honor
-							i(80803), -- Mace of Honor
-						},
-						["qg"] = 54915, -- Groundskeeper Wu
-						["sourceQuests"] = { 29628, 29629, 29630 }, -- A Strong Back, A Steady Hand, And a Heavy Fist
-						["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-					}),
+					
 					qh(29815, { -- Forensic Science
 						["qg"] = 55180, -- Shademaster Kiryn
 						["sourceQuests"] = { 31999 }, -- Nazgrim's Command
@@ -896,10 +1215,7 @@ _.Zones =
 						["qg"] = 56406, -- Rivett Clutchpop
 						["sourceQuests"] = { 29824 }, -- Scouting Report: Like Jinyu in a Barrel
 					}),
-					q(29626, { -- Groundskeeper Wu
-						["qg"] = 54926, -- Xiao
-						["sourceQuests"] = { 29620 }, -- The Great Banquet
-					}),
+					
 					qh(29943, { -- Guerrillas in our Midst
 						["groups"] = {
 							i(80749), -- Ambermist Cuffs
@@ -924,10 +1240,6 @@ _.Zones =
 					
 					qa(29893, { -- Hue
 						["qgs"] = { 56287, 61218 }, -- Lorewalker Cho
-					}),
-					q(29634, { -- Husshun, the Wizened
-						["qg"] = 54922, -- Master Stone Fist
-						["sourceQuests"] = { 29632 }, -- Becoming Battle-Ready
 					}),
 					q(29928, { -- I Have No Jade And I Must Scream
 						["qg"] = 56346, -- Foreman Mann
@@ -1107,10 +1419,7 @@ _.Zones =
 						["qg"] = 214903, -- The Tan-Chao
 						["sourceQuests"] = { 29754 }, -- To Bridge Earth and Sky
 					}),
-					q(29623, { -- Perfection
-						["qg"] = 54917, -- Instructor Xann
-						["sourceQuests"] = { 29622 }, -- Your Training Starts Now
-					}),
+					
 					q(31704, { -- Pooped
 						["qgs"] = { 58384, 65669, 65670, 65671 }, -- 4 different hatchlings
 						["isDaily"] = true,
@@ -1362,18 +1671,10 @@ _.Zones =
 						["qg"] = 66646, -- General Nazgrim
 						["sourceQuests"] = { 31767, 31768 }, -- Finish Them!, Fire is Always the Answer
 					}),
-					q(29620, { -- The Great Banquet
-						["qg"] = 54913, -- Lin Tenderpaw
-						["sourceQuests"] = { 29619 }, -- A Courteous Guest
-					}),
 					q(41732, { -- The Hand of Keletress
 						["qg"] = 104850, -- The Monkey King
 						["sourceQuests"] = { 41729, 41730, 41731 }, -- Slowing the Spread, Desperate Strike, Storm Earth and Fire
 						["classes"] = { 10 },
-					}),
-					q(29618, { -- The High Elder
-						["qg"] = 54913, -- Lin Tenderpaw
-						["sourceQuests"] = { 29617 }, -- Tian Monastery
 					}),
 					q(31876, { -- The Inkmasters of the Arboretum
 						["qg"] = 64691, -- Lorewalker Huynh
@@ -1448,22 +1749,6 @@ _.Zones =
 					qh(31255, { -- The Road to Kun-Lai
 						["qg"] = 63778, -- Messenger Grummle
 						["sourceQuests"] = { 49541 }, -- Warchief's Command: Kun-Lai Summit!
-					}),
-					q(29637, { -- The Rumpus
-						["groups"] = {
-							i(84251), -- Staff of Inner Focus
-							i(84252), -- Instructor's Staff
-							i(84253), -- Tian Monastic Staff
-							i(84254), -- Sword of the Lone Victor
-							i(84255), -- Axe of the Lone Champion
-							i(84256), -- Jade Rifle
-							i(84257), -- Trophy of the Last Man Standing
-							i(84258), -- Mace of Inner Peace
-							i(84259), -- Regal Shortblade
-							i(84260), -- Mace of Serenity
-						},
-						["qg"] = 54918, -- Instructor Myang
-						["sourceQuests"] = { 29636 }, -- A Test of Endurance
 					}),
 					qh(29971, { -- The Scouts Return
 						["qg"] = 56406, -- Rivett Clutchpop
@@ -1624,33 +1909,12 @@ _.Zones =
 					q(30134, { -- Wild Things
 						["qg"] = 58564, -- Elder Anli
 					}),
-					q(29635, { -- Xiao, the Eater
-						["groups"] = {
-							i(88693), -- Bamboo Plate Armwraps
-							i(88692), -- Fox Grove Bracers
-							i(88694), -- Bamboo Strip Cuffs
-							i(88698), -- Bamboo Fiber Cuffs
-							i(88697), -- Bamboo Leaf Bindings
-							i(88696), -- Jade Witch Armguards
-							i(88695), -- Bamboo Strip Bracers
-							i(88690), -- Bamboo Leaf Armplates
-							i(88691), -- Bamboo Plate Armplates
-						},
-						["qg"] = 54922, -- Master Stone Fist
-						["sourceQuests"] = { 29633, 29634 }, -- Zhi-Zhi the Dextrous, Hasshun the Wizened
-					}),
+					
 					qh(31770, { -- You're Either With Us Or...
 						["qg"] = 66656, -- General Nazgrim
 						["sourceQuests"] = { 31769 }, -- The Final Blow!
 					}),
-					q(29622, { -- Your Training Starts Now
-						["qg"] = 54926, -- Xiao
-						["sourceQuests"] = { 29620 }, -- The Great Banquet
-					}),
-					q(29633, { -- Zhi-Zhi, the Dextrous
-						["qg"] = 54922, -- Master Stone Fist
-						["sourceQuests"] = { 29632 }, -- Becoming Battle-Ready
-					}),				
+									
 --[[				These quests were removed
 					--
 					q(30065)	-- Arrows of Fortune
