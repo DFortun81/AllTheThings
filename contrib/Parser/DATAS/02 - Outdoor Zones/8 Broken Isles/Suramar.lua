@@ -427,6 +427,49 @@ _.Zones =
 							["questID"] = 43987,
 						}),
 					}),
+					n(-181, { -- Blacksmithing
+						["g"] = bubbleDown({["requiredSkill"] = 164}, { -- Blacksmithing
+							q(38525, { -- Part of the Team
+								["g"] = {},
+								["qg"] = 92264, -- Felsmith Nal'ryssa
+								["sourceQuest"] = 38524, -- Felsmith Nal'ryssa
+							}),
+							q(38526, { -- Smith Under Fire
+								["g"] = {
+									recipe(182968), -- Plans: Leystone Boots (Rank 2)
+								},
+								["qg"] = 92264, -- Felsmith Nal'ryssa
+								["sourceQuest"] = 38525, -- Part of the Team
+							}),
+							q(38527, { -- Nal'ryssa's Technique
+								["g"] = {},
+								["qg"] = 92264, -- Felsmith Nal'ryssa
+								["sourceQuest"] = 38526, -- Smith Under Fire
+							}),
+							q(38528, { -- Leystone's Potential
+								["g"] = {
+									recipe(182962), -- Plans: Leystone Armguards (Rank 2)
+								},
+								["qg"] = 92264, -- Felsmith Nal'ryssa
+								["sourceQuest"] = 38527, -- Nal'ryssa's Technique
+							}),
+							q(38530, { -- The Firmament Stone
+								["g"] = {},
+								["qg"] = 92264, -- Felsmith Nal'ryssa
+								["sourceQuest"] = 38528, -- Leystone's Potential
+							}),
+							n(-34, { -- World Quests
+								q(41637, { -- Work Order: Leystone Pauldrons
+									["g"] = {
+										i(123938, { -- Recipe: Leystone Pauldrons (Rank 3)
+											recipe(182972), -- Recipe: Leystone Pauldrons (Rank 3)
+										}),
+									},
+									["qg"] = 97140, -- First Arcanist Thalyssra
+								}),
+							}),
+						}),
+					}),
 					n(-34, {	-- World Quests
 --[[
 						q(42859),	-- A Draught of Hope
@@ -584,7 +627,6 @@ _.Zones =
 						q(41643),	-- Work Order: Battlebound Leggings
 						q(41679),	-- Work Order: Deployable Bullet Dispenser
 						q(41314),	-- Work Order: Felslate
-						q(41637),	-- Work Order: Leystone Pauldrons
 						q(41655),	-- Work Order: Queen's Opal Pendant
 						q(41282),	-- Work Order: Runescale Koi
 						q(41649),	-- Work Order: Silkweave Slippers
@@ -839,7 +881,6 @@ _.Zones =
 					q(43590),	-- Leyline Feed: Ley Station Moonfall
 					q(44495),	-- Leyline Master
 					q(44493),	-- Leyline Proficiency
-					q(38528),	-- Leystone's Potential
 					qh( 44859),	-- Liadrin's Command
 					q(40905),	-- Lieutenant Strathmar
 					q(40796),	-- Lingering on the Edge
@@ -874,7 +915,6 @@ _.Zones =
 					q(42828),	-- Moths to a Flame
 					q(44870),	-- Mouths to Feed
 					q(42688),	-- Mrgls of Endearment
-					q(38527),	-- Nal'ryssa's Technique
 					q(41181),	-- Narrowing Down
 					q(41479),	-- Natural Adversaries
 					q(40748),	-- Network Security
@@ -899,7 +939,6 @@ _.Zones =
 					q(41161),	-- Out of the Frying Pan
 					q(40971),	-- Overwhelming Distraction
 					q(46799),	-- Paragon of the Nightfallen
-					q(38525),	-- Part of the Team
 					q(41214),	-- Parts Unknown
 					q(40578),	-- Paying Respects
 					q(37666),	-- Picking a Fight
@@ -992,7 +1031,6 @@ _.Zones =
 							40154,	-- Eye of Azshara: The Scales of Serpentrix
 						},
 					}),
-					q(38526),	-- Smith Under Fire
 					q(44727),	-- Smuggled!
 					q(40348),	-- Something in the Water
 					q(44928),	-- Something's Not Quite Right...
@@ -1094,7 +1132,6 @@ _.Zones =
 					q(41230),	-- Trapping Evolved
 					q(44790),	-- Trial by Demonfire
 					q(40138),	-- Trial of the Crusader: Hides of Legend
-					q(38533),	-- Tribal Knowledge
 					q(41184),	-- Tried and True
 					qa( 44858),	-- Trolling Them
 					qh( 44860),	-- Trolling Them
@@ -1412,14 +1449,16 @@ _.Zones =
 						i(140638),	-- Recipe: Dreadleather Shoulderguard Rank 1
 					}),
 					n(92265, { -- Urael <Nal'ryssa's Minion>
-						i(123920),	-- Recipe: Demonsteel Armguards Rank 1
-						i(123921),	-- Recipe: Demonsteel Waistguard Rank 1
-						i(123922),	-- Recipe: Demonsteel Pauldrons Rank 1
-						i(123923),	-- Recipe: Demonsteel Greaves Rank 1
-						i(123924),	-- Recipe: Demonsteel Helm Rank 1
-						i(123925),	-- Recipe: Demonsteel Gauntlets Rank 1
-						i(123926),	-- Recipe: Demonsteel Boots Rank 1
-						i(123927),	-- Recipe: Demonsteel Breastplate Rank 1
+						["g"] = {
+							i(123920), -- Recipe: Demonsteel Armguards (Rank 1)
+							i(123926), -- Recipe: Demonsteel Boots (Rank 1)
+							i(123927), -- Recipe: Demonsteel Breastplate (Rank 1)
+							i(123925), -- Recipe: Demonsteel Gauntlets (Rank 1)
+							i(123923), -- Recipe: Demonsteel Greaves (Rank 1)
+							i(123924), -- Recipe: Demonsteel Helm (Rank 1)
+							i(123922), -- Recipe: Demonsteel Pauldrons (Rank 1)
+							i(123921), -- Recipe: Demonsteel Waistguard (Rank 1)
+						},
 					}),
 				}),
 				n(-38, { -- Profession

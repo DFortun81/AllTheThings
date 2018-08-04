@@ -700,6 +700,16 @@ _.Zones =
 						["requiredSkill"] = 197, -- Tailoring
 						["sourceQuests"] = { 46941 }, -- The Path Forward
 					}),
+					n(-38, { -- Professions
+						n(-181, { -- Blacksmithing
+							q(48055, { -- Empyrial Strength
+								["g"] = {
+									recipe(247710), -- Recipe: Empyrial Breastplate (Rank 1)
+								},
+								["qg"] = 125341, -- Khamir
+							}),
+						}),
+					}),
 				}),
 				n(127476, { -- Scouting Map
 					["groups"] = {
@@ -719,6 +729,12 @@ _.Zones =
 				}),
 				n(-2, { -- Vendors
 					n(127120, { -- Vindicator Jaelaana <Army of the Light Emissary>
+						i(151712, { -- Recipe: Empyrial Breastplate (Rank 2)
+							["g"] = {
+								recipe(247713), -- Recipe: Empyrial Breastplate (Rank 2)
+							},
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
 						i(152788), -- Lightforged Warframe Mount
 						i(152399), -- Army of the Light Tabard
 						i(152400), -- Embroidered Lightforged Drape

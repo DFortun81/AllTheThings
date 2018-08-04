@@ -336,6 +336,13 @@ _.PVP =
 				i(141858), -- Soldier's Worth
 			},	
 			["races"] = HORDE_ONLY,	
-		}),			
+		}),
+		i(123950, { -- Recipe: Demonsteel Pauldrons (Rank 3)
+			["g"] = {
+				recipe(182984), -- Recipe: Demonsteel Pauldrons (Rank 3)
+			},
+			["description"] = "This has a CHANCE to drop from any rated battleground win.",
+			["requiredSkill"] = 164, -- Blacksmithing
+		}),
 	}),
 };

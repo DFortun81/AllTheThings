@@ -173,6 +173,12 @@ _.Instances =
 								i(140660),	-- Haft of the God-King
 							})),
 							cr(95676, e(1489, {	-- Odyn
+								i(137607, { -- Recipe: Leystone Helm (Rank 3)
+									["g"] = {
+										recipe(191929), -- Recipe: Leystone Helm (Rank 3)
+									},
+									["requiredSkill"] = 164, -- Blacksmithing
+								}),
 								i(136777),
 								i(139281),
 								i(133631),

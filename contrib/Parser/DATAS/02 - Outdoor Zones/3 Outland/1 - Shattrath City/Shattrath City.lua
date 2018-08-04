@@ -46,14 +46,14 @@ _.Zones =
 						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuests"] = { 10210 },	-- A'dal
 					}),
-					q( 44863, {	-- Clearing the Air
+					q(44863, { -- Clearing the Air
 						["groups"] = {
-							i(142279),	-- Plans: Windforged Rapier
-							i(142283),	-- Plans: Skyforged Great Axe
-							i(142282),	-- Plans: Stormforged Axe
+							i(142279), -- Plans: Windforged Rapier
+							i(142283), -- Plans: Skyforged Great Axe
+							i(142282), -- Plans: Stormforged Axe
 						},
-						["qg"] = 115546,	-- Lunelli
-						["requiredSkill"] = 164,	-- Blacksmithing
+						["qg"] = 115546, -- Lunelli
+						["requiredSkill"] = 164, -- Blacksmithing
 					}),
 					q( 10009, {	-- Crackin' Some Skulls
 						["groups"] = {
@@ -67,14 +67,14 @@ _.Zones =
 						["qg"] = 123252,	-- Vormu
 						["description"] = "This quest is only available during BC Timewalking.",
 					}),
-					q( 41160, {	-- Earth to Earth
+					q(41160, { -- Earth to Earth
 						["groups"] = {
-							i(142284),	-- Plans: Stoneforged Claymore
-							i(142287),	-- Plans: Great Earthforged Hammer
-							i(142286),	-- Plans: Lavaforged Warhammer
+							i(142284), -- Plans: Stoneforged Claymore
+							i(142287), -- Plans: Great Earthforged Hammer
+							i(142286), -- Plans: Lavaforged Warhammer
 						},
-						["qg"] = 115546,	-- Lunelli
-						["requiredSkill"] = 164,	-- Blacksmithing
+						["qg"] = 115546, -- Lunelli
+						["requiredSkill"] = 164, -- Blacksmithing
 					}),
 					q( 10949, {	-- Entry Into the Black Temple
 						["groups"] = {

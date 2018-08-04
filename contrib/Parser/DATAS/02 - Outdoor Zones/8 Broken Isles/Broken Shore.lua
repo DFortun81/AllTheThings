@@ -434,8 +434,53 @@ _.Zones =
 					["achievementID"] = 11736, -- Assume Command
 				}),
 				n(-10050, { -- Nether Disruptor
-					["groups"] = {
-					},
+					["g"] = bubbleDown({["requiredSkill"] = 164}, { -- Blacksmithing
+						q(46774, { -- The Nether Disruptor
+							["g"] = {
+								i(147451), -- Armorcrafter's Commendation
+							},
+							["qg"] = 120183, -- Commander Chambers
+						}),
+						i(147451, { -- Armorcrafter's Commendation
+							q(46696, { -- Fashion History and a Philosophy of Style
+								["g"] = {},
+								["qg"] = 120221, -- Eliezer Hammerbeard
+								["description"] = "You must turn in the Commendation before this quest becomes available.",
+								["sourceQuest"] = 46774, -- The Nether Disruptor
+							}),
+						}),
+						q(46696, { -- The Legend of the Four Hammers
+							["g"] = {},
+							["qg"] = 120221, -- Eliezer Hammerbeard
+							["sourceQuest"] = 46696, -- Fashion History and a Philosophy of Style
+						}),
+						q(46700, { -- Armor of the Ancients
+							["g"] = {},
+							["qg"] = 120221, -- Eliezer Hammerbeard
+							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
+						}),
+						q(46698, { -- The Dragonhunter
+							["g"] = {},
+							["qg"] = 120221, -- Eliezer Hammerbeard
+							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
+						}),
+						q(46697, { -- The Godfighter
+							["g"] = {},
+							["qg"] = 120221, -- Eliezer Hammerbeard
+							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
+						}),
+						q(46699, { -- The Hellslayer
+							["g"] = {},
+							["qg"] = 120221, -- Eliezer Hammerbeard
+							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
+						}),
+						q(46701, { -- Hammer of Forgotten Heroes
+							["g"] = {},
+							["qg"] = 120221, -- Eliezer Hammerbeard
+							["description"] = "Once you've completed this quest, you should earn the ability to craft the legendary belt.",
+							["sourceQuests"] = { 46700, 46698, 46697, 46699 }, -- Armor of the Ancients, The Dragonhunter, The Godfighter, The Hellslayer
+						}),
+					}),
 				}),
 				n(119305, {	-- Legionfall Construction Table
 					ach(11735),	-- Take Command

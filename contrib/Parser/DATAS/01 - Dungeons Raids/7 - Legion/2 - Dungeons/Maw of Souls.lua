@@ -8,8 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(727, { 	-- Maw of Souls
 				["groups"] = {
-					d(1, {		-- Normal
-						
+					d(1, {		-- Normal			
 						["groups"] = {
 							cr(96756, e(1502, {	-- Ymiron, the Fallen King
 								i(133629),
@@ -84,7 +83,15 @@ _.Instances =
 								i(137331),
 								i(133769),
 								i(133608),
-								i(137334)
+								i(137334),
+								i(136696, { -- Recipe: Terrorspike
+									["g"] = {
+										recipe(209496), -- Recipe: Terrorspike
+									},
+									["description"] = "This recipe should only drop while you're actively on |cFFFFD700Maw of Souls: Hammered By The Storm|r or after you've completed it.",
+									["sourceQuest"] = 38532, -- Maw of Souls: Hammered By The Storm
+									["requiredSkill"] = 164, -- Blacksmithing
+								}),
 							}))
 						}
 					}),

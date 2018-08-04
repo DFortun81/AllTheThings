@@ -713,7 +713,6 @@ _.Zones =
 						q(41223),	-- Work Order: Foxflower
 						q(41240),	-- Work Order: Highmountain Salmon
 						q(41206),	-- Work Order: Leystone
-						q(41635),	-- Work Order: Leystone Boots
 						q(41647),	-- Work Order: Silkweave Robe
 						q(41653),	-- Work Order: Skystone Pendant
 						q(41235),	-- Work Order: Stonehide Leather
@@ -871,19 +870,154 @@ _.Zones =
 							  i(141010), -- Earthguard Gauntlets
 							}),
 						}),  
-						n(-38, {     -- Professions
+						n(-38, { -- Professions
 							n(-191, { -- Archaeology
 							  q(41189),	-- A New Lead              
 							}),
-							n(-189, { -- Skinning
-							  q(40134, {	-- Highmountain Hides
-								["groups"] = { 
-									i(130064, { 	-- Deadeye Monocle
-										["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+							n(-181, { -- Blacksmithing
+								["g"] = bubbleDown({["requiredSkill"] = 164}, { -- Blacksmithing
+									q(38514, { -- You Are Not Worthy
+										["g"] = {},
+										["qg"] = 92242, -- Barm Stonebreaker
+										["sourceQuest"] = 38513, -- The Highmountain Smiths
 									}),
-								},
-								["requiredSkill"] = 393
-							  }),
+									q(39699, { -- Ironhorn Leysmithing
+										["g"] = {
+											recipe(182967), -- Plans: Leystone Gauntlets (Rank 2)
+										},
+										["qg"] = 92242, -- Barm Stonebreaker
+										["sourceQuest"] = 38514, -- You Are Not Worthy
+									}),
+									q(38519, { -- Grayheft
+										["g"] = {
+											recipe(182965), -- Plans: Leystone Greaves (Rank 2)
+										},
+										["qg"] = 92245, -- Thala Steeltotem
+										["sourceQuest"] = 39699, -- Ironhorn Leysmithing
+									}),
+									q(38518, { -- From One Master to Another
+										["g"] = {},
+										["qg"] = 92242, -- Barm Stonebreaker
+										["sourceQuest"] = 38519, -- Grayheft
+									}),
+									q(38531, { -- Leystone Mastery
+										["g"] = {
+											recipe(182966), -- Plans: Leystone Helm (Rank 2)
+											recipe(182964), -- Plans: Leystone Pauldrons (Rank 2)
+										},
+										["qg"] = 92242, -- Barm Stonebreaker
+										["sourceQuest"] = 38530, -- The Firmament Stone
+									}),
+									q(38532, { -- Maw of Souls: Hammered By The Storm
+										["g"] = {},
+										["qg"] = 92242, -- Barm Stonebreaker
+										["sourceQuest"] = 38530, -- The Firmament Stone
+									}),
+									q(38559, { -- Worthy of the Stone
+										["g"] = {},
+										["qg"] = 92242, -- Barm Stonebreaker
+										["sourceQuests"] = { 38531, 38532 }, -- Leystone Mastery, Maw of Souls: Hammered By The Storm
+									}),
+									q(38833, { -- The Art of Demonsteel
+										["g"] = {
+											recipe(184442), -- Plans: Demonsteel Bar
+										},
+										["qg"] = 92243, -- Muirn Ironhorn
+										["sourceQuest"] = 38559, -- Worthy of the Stone
+									}),
+									q(38533, { -- Tribal Knowledge
+										["g"] = {
+											recipe(182944), -- Plans: Demonsteel Armguards (Rank 1)
+										},
+										["qg"] = 92243, -- Muirn Ironhorn
+										["sourceQuest"] = 38833, -- The Art of Demonsteel
+									}),
+									recipe(182944, { -- Plans: Demonsteel Armguards (Rank 1)
+										q(38534, { -- Demonsteel Armguards
+											["g"] = {
+												i(123940), -- Recipe: Demonsteel Armguards (Rank 2)
+											},
+											["qg"] = 92243, -- Muirn Ironhorn
+										}),
+									}),
+									recipe(182950, { -- Recipe: Demonsteel Boots (Rank 1)
+										i(123946, { -- Recipe: Demonsteel Boots (Rank 2)
+											["g"] = {
+												recipe(182980), -- Recipe: Demonsteel Boots (Rank 2) 
+											},
+											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
+										}),
+									}),
+									recipe(182951, { -- Recipe: Demonsteel Breastplate (Rank 1)
+										i(123947, { -- Recipe: Demonsteel Breastplate (Rank 2)
+											["g"] = {
+												recipe(182981), -- Recipe: Demonsteel Breastplate (Rank 2) 
+											},
+											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
+										}),
+									}),
+									recipe(182949, { -- Recipe: Demonsteel Gauntlets (Rank 1)
+										i(123945, { -- Recipe: Demonsteel Gauntlets (Rank 2)
+											["g"] = {
+												recipe(182979), -- Recipe: Demonsteel Gauntlets (Rank 2) 
+											},
+											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
+										}),
+									}),
+									recipe(182947, { -- Recipe: Demonsteel Greaves (Rank 1)
+										i(123943, { -- Recipe: Demonsteel Greaves (Rank 2)
+											["g"] = {
+												recipe(182977), -- Recipe: Demonsteel Greaves (Rank 2) 
+											},
+											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
+										}),
+									}),
+									recipe(182948, { -- Recipe: Demonsteel Helm (Rank 1)
+										i(123944, { -- Recipe: Demonsteel Helm (Rank 2)
+											["g"] = {
+												recipe(182978), -- Recipe: Demonsteel Helm (Rank 2) 
+											},
+											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
+										}),
+									}),
+									recipe(182946, { -- Recipe: Demonsteel Pauldrons (Rank 1)
+										i(123942, { -- Recipe: Demonsteel Pauldrons (Rank 2)
+											["g"] = {
+												recipe(182976), -- Recipe: Demonsteel Pauldrons (Rank 2) 
+											},
+											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
+										}),
+									}),
+									recipe(182945, { -- Recipe: Demonsteel Waistguard (Rank 1)
+										i(123941, { -- Recipe: Demonsteel Waistguard (Rank 2)
+											["g"] = {
+												recipe(182975), -- Recipe: Demonsteel Waistguard (Rank 2) 
+											},
+											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
+										}),
+									}),
+									n(-34, { -- World Quests
+										q(41635, { -- Work Order: Leystone Boots
+											["g"] = {
+												i(137605, { -- Recipe: Leystone Boots (Rank 3)
+													recipe(191928), -- Recipe: Leystone Boots (Rank 3)
+												}),
+											},
+											["qg"] = 106902, -- Ransa Greyfeather
+										}),
+									}),
+								}),
+							}),
+							n(-189, { -- Skinning
+								["g"] = bubbleDown({["requiredSkill"] = 393}, { -- Skinning
+									q(40134, { -- Highmountain Hides
+										["g"] = { 
+											i(130064, { -- Deadeye Monocle
+												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+											}),
+										},
+									}),
+								}),
 							}),
 						}),
 						ach(10994, { -- Class Campaign
@@ -1124,7 +1258,6 @@ _.Zones =
 									q(46783),	-- Further Advancement
 									q(46149),	-- Furthering Knowledge
 									q(41987),	-- Garn
-									q(38519),	-- Grayheft
 									q(41833),	-- Grmlrml's Last Ride
 									q(40347),	-- Gurbog da Basher
 									q(39436),	-- Haglands Treasure
@@ -1147,7 +1280,6 @@ _.Zones =
 									q(41047),	-- Infused with Power
 									q(42376),	-- Inquisitor Tivos
 									q(46023),	-- Investigate the Broken Shore
-									q(39699),	-- Ironhorn Leysmithing
 									q(43957),	-- Jade Darkhaven
 									q(42204),	-- Jorhuttam
 									q(43815),	-- Karthax
@@ -1158,7 +1290,6 @@ _.Zones =
 									q(44680),	-- Leading by Example
 									q(44059),	-- Legion Attacks
 									q(42385),	-- Lending a Hand
-									q(38531),	-- Leystone Mastery
 									q(38785),	-- Living Leystone Sample
 									q(40406),	-- Luggut the Eggeater
 									q(43956),	-- Lysanis Shadesoul
@@ -1239,14 +1370,12 @@ _.Zones =
 									q(40184),	-- Tauren Tanning
 									q(42526),	-- Tech It Up A Notch
 									q(44263),	-- The Arcway
-									q(38833),	-- The Art of Demonsteel
 									q(45564),	-- The Burning Birds
 									q(40959),	-- The Campaign Begins
 									q(41829),	-- The Darkfeather Scout
 									q(39427),	-- The Eagle Spirit's Blessing
 									q(45587),	-- The Feltotem Menace
 									q(40202),	-- The Final Lessons
-									q(38530),	-- The Firmament Stone
 									q(40135),	-- The Freedom to Roam
 									q(38513),	-- The Highmountain Smiths
 									q(38888),	-- The Highmountain Tauren
@@ -1297,8 +1426,6 @@ _.Zones =
 									q(41825),	-- Winged Menace
 									q(41761),	-- Winter Moose Roundup
 									q(39371),	-- Witches of the Sky
-									q(38559),	-- Worthy of the Stone
-									q(38514),	-- You Are Not Worthy
 						  SOON™
 						  --]]
 						q(38518, {	-- From One Master to Another
@@ -1547,13 +1674,37 @@ _.Zones =
 	--				n(97928, { 		-- Tamed Coralback 	}), 
 --]]
 				}),
-				n(-2, { 	-- Vendors
+				n(-2, { -- Vendors
 					n(93975, { -- Leyweaver Yaphisteia
 						i(127027, { -- Pattern: Imbued Silkweave Slippers
 							i(126996), -- Imbued Silkweave Slippers
 						}),
 					}),
 					n(106902, {	-- Ransa Greyfeather <Highmountain Emissary>
+						i(123948, { -- Recipe: Demonsteel Armguards (Rank 3)
+							["g"] = {
+								recipe(182982), -- Recipe: Demonsteel Armguards (Rank 3)
+							},
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+						i(123955, { -- Recipe: Demonsteel Breastplate (Rank 3)
+							["g"] = {
+								recipe(182989), -- Recipe: Demonsteel Breastplate (Rank 3)
+							},
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+						i(123953, { -- Recipe: Demonsteel Gauntlets (Rank 3)
+							["g"] = {
+								recipe(182987), -- Recipe: Demonsteel Gauntlets (Rank 3)
+							},
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+						i(136697, { -- Recipe: Gleaming Iron Spike
+							["g"] = {
+								recipe(209497), -- Recipe: Gleaming Iron Spike
+							},
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
 						i(136919), -- Baby Elderhorn
 						i(131812), -- Darkshard Fragment
 						i(131814), -- Whitewater Carp

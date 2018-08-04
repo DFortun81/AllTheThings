@@ -336,6 +336,12 @@ _.Instances =
 								i(140867)
 							})),
 							cr(103685, e(1762, {	-- Tichondrius
+								i(137687, { -- Recipe: Fel Core Hound Harness
+									["g"] = {
+										recipe(213916), -- Recipe: Fel Core Hound Harness
+									},
+									["requiredSkill"] = 164, -- Blacksmithing
+								}),
 								i(138361),
 								i(140855),
 								i(140892),
@@ -554,6 +560,12 @@ _.Instances =
 								i(140867)
 							})),
 							cr(103685, e(1762, {	-- Tichondrius
+								i(137687, { -- Recipe: Fel Core Hound Harness
+									["g"] = {
+										recipe(213916), -- Recipe: Fel Core Hound Harness
+									},
+									["requiredSkill"] = 164, -- Blacksmithing
+								}),
 								i(138361),
 								i(140855),
 								i(140892),
@@ -772,6 +784,12 @@ _.Instances =
 								i(140867)
 							})),
 							cr(103685, e(1762, {	-- Tichondrius
+								i(137687, { -- Recipe: Fel Core Hound Harness
+									["g"] = {
+										recipe(213916), -- Recipe: Fel Core Hound Harness
+									},
+									["requiredSkill"] = 164, -- Blacksmithing
+								}),
 								i(138361),
 								i(140855),
 								i(140892),

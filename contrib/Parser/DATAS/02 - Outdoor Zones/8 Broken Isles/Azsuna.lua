@@ -1312,7 +1312,6 @@ _.Zones =
 						q(41267),	-- Work Order: Cursed Queenfish
 						q(41657),	-- Work Order: Draughts of Raw Magic
 						q(41311),	-- Work Order: Leystone
-						q(41633),	-- Work Order: Leystone Greaves
 						q(41645),	-- Work Order: Silkweave Epaulets
 						q(41326),	-- Work Order: Stormscales
 						q(41669),	-- Work Order: Word of Critical Strike
@@ -1666,6 +1665,18 @@ _.Zones =
 								}),
 							},
 							["requiredSkill"] = 171,
+						}),
+						n(-181, { -- Blacksmithing
+							n(-34, { -- World Quests
+								q(41633, { -- Work Order: Leystone Greaves
+									["g"] = {
+										i(123931, { -- Recipe: Leystone Greaves (Rank 3)
+											recipe(191931), -- Recipe: Leystone Greaves (Rank 3)
+										}),
+									},
+									["qg"] = 107376, -- Veridis Fallon
+								}),
+							}),
 						}),
 						n(-182, { -- Enchanting
 							["groups"] = {

@@ -568,7 +568,6 @@ _.Zones =
 						q(41297),	-- Work Order: Fjarnskaggl
 						q(41678),	-- Work Order: Gunpack
 						q(41313),	-- Work Order: Leystone
-						q(41636),	-- Work Order: Leystone Breastplate
 						q(41654),	-- Work Order: Queen's Opal Loop
 						q(41648),	-- Work Order: Silkweave Bracers
 						q(41660),	-- Work Order: Skaggldrynk
@@ -960,6 +959,18 @@ _.Zones =
 							i(134559),
 							i(134560),
 							i(134561),
+						}),
+						n(-38, { -- Professions
+							n(-181, { -- Blacksmithing
+								q(41636, { -- Work Order: Leystone Breastplate
+									["g"] = {
+										i(123939, { -- Recipe: Leystone Breastplate
+											recipe(182973), -- Recipe: Leystone Breastplate
+										}),
+									},
+									["qg"] = 106904, -- Valdemar Stormseeker
+								}),
+							}),
 						}),
 					}),
 				  
@@ -1357,13 +1368,36 @@ _.Zones =
 						i(23805),	-- Schematic: Ultra-Spectropic Detection Goggles
 					}),
 					n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
-						i(136920), -- Sunborn Val'kyr
+						i(136698, { -- Recipe: Consecrated Spike
+							["g"] = {
+								recipe(209498), -- Recipe: Consecrated Spike
+							},
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+						i(123954, { -- Recipe: Demonsteel Boots (Rank 3)
+							["g"] = {
+								recipe(182988), -- Recipe: Demonsteel Boots (Rank 3)
+							},
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+						i(123951, { -- Recipe: Demonsteel Greaves (Rank 3)
+							["g"] = {
+								recipe(182985), -- Recipe: Demonsteel Greaves (Rank 3)
+							},
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
+						i(123951, { -- Recipe: Demonsteel Helm (Rank 3)
+							["g"] = {
+								recipe(182986), -- Recipe: Demonsteel Helm (Rank 3)
+							},
+							["requiredSkill"] = 164, -- Blacksmithing
+						}),
 						i(129149), -- Death's Door Charm
-						i(129367), -- Vrykul Toy Boat Kit
 						i(139598), -- Legplates of Forgotten Myth
+						i(136920), -- Sunborn Val'kyr
 						i(139602), -- Valarjar Runepriest's Vesture
 						i(140579), -- Valarjar Tabard
-						i(140579),
+						i(129367), -- Vrykul Toy Boat Kit
 						--i(140656), -- Rod of the Ascended - Priest Artifact Appearance item
 					}),
 				}),
