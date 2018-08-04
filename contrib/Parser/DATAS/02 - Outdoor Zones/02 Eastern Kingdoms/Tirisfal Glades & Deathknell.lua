@@ -64,7 +64,10 @@ _.Zones =
 					}),
 					qh(26936, {	-- Lower the Boom
 						["qg"] = 10837,	-- High Executor Derrington
-						["sourceQuests"] = { 26978 },	-- Who Needs Cauldrons?
+						["sourceQuests"] = {
+							26978,	-- Who Needs Cauldrons?
+							26930,	-- After the Crusade
+						},
 					}),
 					qh(26979, {	-- Strange New Faces
 						["qg"] = 10837,	-- High Executor Derrington
@@ -298,14 +301,6 @@ _.Zones =
 					qh(24976, {	-- Variety is the Spice of Death
 						["qg"] = 1518,	-- Apothecary Johaan
 						["sourceQuests"] = { 24975 },	-- Fields of Grief
-					}),
-					qh(26926, {	-- Victory, For Now
-						["qg"] = 44452,	-- Koltira Deathweaver
-						["sourceQuests"] = {
-							26925,	-- Araj the Summoner
-							27117,	-- Brute Strength
-							26924,	-- Scholomancer
-						},
 					}),
 					qh(26964, {	-- Warchief's Command: Silverpine Forest! -- anytime
 						["qg"] = 1515,	-- Executor Zygand
