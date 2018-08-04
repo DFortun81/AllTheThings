@@ -33,17 +33,20 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
-						n(20869, {	-- Arcatraz Sentinel
-							["groups"] = {	
-								dr(3, i(21905)),	-- Pattern: Arcanoweave Bracers
+						i(22556, {	-- Formula: Enchant 2H Weapon - Major Agility
+							["crs"] = {
+								20880,	-- Eredar Deathbringer
 							},
-							["modelScale"] = 5,
 						}),
-						n(20880, {	-- Eredar Deathbringer
-							dr(8, i(22556)),	-- Formula: Enchant 2H Weapon - Major Agility
+						i(21905, {	-- Pattern: Arcanoweave Bracers
+							["crs"] = {
+								20869,	-- Arcatraz Sentinel
+							},
 						}),
-						n(20900, {	-- Unchained Doombringer
-							dr(2, i(23606)),	-- Plans: Felsteel Leggings
+						i(23606, {	-- Plans: Felsteel Leggings
+							["crs"] = {
+								20900,	-- Unchained Doombringer
+							},
 						}),
 					}),
 					d(  1, {	-- Normal
@@ -94,7 +97,7 @@ _.Instances =
 							i(28406),	-- Sigil-Laced Boots
 							i(28407),	-- Elementium Band of the Sentry
 							i(28418),	-- Shiffar's Nexus-Horn
-						}))
+						})),
 					}),
 					d(  2, {	-- Heroic
 						["lvl"] = 70,
@@ -147,8 +150,9 @@ _.Instances =
 								i(28406),	-- Sigil-Laced Boots
 								i(28407),	-- Elementium Band of the Sentry
 								i(28418),	-- Shiffar's Nexus-Horn
-							}))
-						}}),
+							})),
+						},
+					}),
 					d( 24, {	-- Timewalking
 						["lvl"] = 60,
 						["groups"] = {
@@ -190,8 +194,9 @@ _.Instances =
 								i(127166),	-- Sigil-Laced Boots
 								i(127167),	-- Elementium Band of the Sentry
 								i(127173),	-- Shiffar's Nexus-Horn
-							}))
-						}})
+							})),
+						},
+					}),
 				},
 				["lvl"] = 65,
 				["mapID"] = 269,

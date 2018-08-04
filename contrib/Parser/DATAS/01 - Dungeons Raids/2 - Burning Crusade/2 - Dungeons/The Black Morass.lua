@@ -9,11 +9,11 @@ _.Instances =
 			inst(255, { 	-- The Black Morass
 				["groups"] = {
 					n(0, {	-- Zone Drop
-						n(21104, {	-- Rift Keeper
-							dr(0.8, i(25730)),	-- Pattern: Stylin' Jungle Hat
-						}),
-						n(17839, {	-- Rift Lord
-							dr(0.8, i(25730)),	-- Pattern: Stylin' Jungle Hat
+						i(25730, {	-- Pattern: Stylin' Jungle Hat
+							["crs"] = {
+								21104,	-- Rift Keeper
+								17839,	-- Rift Lord
+							},
 						}),
 					}),
 					d(1, {	-- Normal
