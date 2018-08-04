@@ -793,6 +793,32 @@ _.Zones =
 					}),
 				}),
 				h(n(-17, {	-- Quests
+					q(53372, {	-- Hour of Reckoning		
+						["groups"] = {		
+							i(163528),	-- Deathguard's Gladius
+							i(163525),	-- Grunt's Boot Knife
+							i(163531),	-- Grunt's Cleaver
+							i(163543),	-- Grunt's Handaxe
+							i(163523),	-- Grunt's Warmace
+							i(163527),	-- Headhunter's Spear
+							i(163524),	-- Shadow Hunter's Bow
+							i(163529),	-- War-Caller's Spellhammer
+							i(163532),	-- Warmage's Spellblade
+							i(163530),	-- Warmage's Spire
+						},		
+					}),
+					q(51796, {	-- The Battle for Lordaeron
+						["groups"] = {
+						},
+						["qg"] = 14720, -- High Overlord Saurfang
+						["sourceQuests"] = { 53372 }, -- Hour of Reckoning
+					}),	
+					q(53028, {	-- A Dying World
+						["groups"] = {
+						},
+						["qg"] = 140176, -- Nathanos Blightcaller
+						["sourceQuests"] = { 51796 }, -- The Battle for Lordaeron
+					}),	
 					q(49977, {	-- Summons to Orgrimmar
 						["groups"] = {
 						},
