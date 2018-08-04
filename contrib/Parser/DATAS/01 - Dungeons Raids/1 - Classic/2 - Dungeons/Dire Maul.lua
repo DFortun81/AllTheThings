@@ -81,7 +81,7 @@ _.Instances =
 										un(11, i(22472)), 	-- Boots of Ferocity
 										un(11, i(22315)), 	-- Hammer of Revitalization
 										un(11, i(22314)), 	-- Huntsman's Harpoon
-										un(2, i(22304)), 	-- Ironweave Gloves
+										un(11, i(22304)), 	-- Ironweave Gloves
 									}),
 								},
 								["description"] = "|cff66ccffRequires Brazier of Invocation|r |cff3399ff(Dungeon Set 2 Questline)|r |cff66ccffto summon this boss.|r",
