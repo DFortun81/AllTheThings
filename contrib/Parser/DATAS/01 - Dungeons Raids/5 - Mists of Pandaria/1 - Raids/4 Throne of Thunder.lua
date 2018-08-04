@@ -416,6 +416,7 @@ _.Instances =
 								["groups"] = {
 									i(95343), 	-- Treasures of the Thunder King
 									i(97959),	-- Quivering Blob (PET!)
+									i(97960),	-- Dark Quivering Blob
 									i(95758),	-- Acid-Spine Bonemace
 									i(95768),	-- Greatshield of the Gloaming
 									i(95765),	-- Clear-Mind Helm
