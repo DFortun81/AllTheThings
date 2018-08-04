@@ -1057,6 +1057,26 @@ END OF MICRO-HOLIDAY --]]
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
+								qa(51211, { -- The Heart of Azeroth
+									["groups"] = {
+										ach(12918), -- Have a Heart
+										i(158075, {	-- Heart of Azeroth
+											["questID"] =  51211, -- The Heart of Azeroth
+										}),
+									},
+									["qg"] = 130216, -- The Heart of Azeroth
+									["sourceQuests"] = { 52946 }, -- A Dyying World
+								}),
+								qh(53028, {	-- The Heart of Azeroth		
+									["groups"] = {		
+										ach(12918), -- Have a Heart
+										i(158075, {	-- Heart of Azeroth
+											["questID"] =  53028, -- The Heart of Azeroth
+										}),
+									},		
+									["qg"] = 130216, -- Magni Bronzebeard		
+									["sourceQuests"] = { 53028 }, -- A Dying World		
+								}),
 								qa(50047, {	-- Free Samples
 									["groups"] = {
 									},
