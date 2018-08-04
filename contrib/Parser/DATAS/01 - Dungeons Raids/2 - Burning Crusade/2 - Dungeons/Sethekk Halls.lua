@@ -8,8 +8,12 @@ _.Instances =
 		["groups"] = {
 			inst(252, { 	-- Sethekk Halls
 				["groups"] = {
-						n(0, {	-- Zone Drop
-						i(25731),	-- Pattern: Stylin' Crimson Hat
+					n(0, {	-- Zone Drop
+						i(25731, {	-- Pattern: Stylin' Crimson Hat
+							["crs"] = {
+								18322,	-- Sethekk Ravenguard
+							},
+						}),
 					}),
 					d(1, {	-- Normal
 						n(-17, {	-- Quests 					
