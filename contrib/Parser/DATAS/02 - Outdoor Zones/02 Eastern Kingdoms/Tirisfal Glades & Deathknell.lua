@@ -43,52 +43,38 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					qh(26930, {	-- After the Crusade
-						["groups"] = {
-						},
 						["qg"] = 10837,	-- High Executor Derrington
 						["sourceQuests"] = { 26926 },	-- Victory, For Now
 					}),
 					qh(26933, {	-- Foes Before Hoes
-						["groups"] = {
-						},
 						["qg"] = 11055,	-- Shadow Priestess Vandis
 						["sourceQuests"] = { 26931 },	-- Foxes and Hounds
 					}),
-					qh(26931, { -- Foxes and Hounds
+					qh(26931, { -- Foxes and Hounds -- anytime
 						["groups"] = {
-							i( 62161),	-- Bullmastiff Vest
-							i( 62163),	-- Fox Hunter's Rifle
-							i( 62162),	-- Territorial Helm
+							i(62161),	-- Bullmastiff Vest
+							i(62163),	-- Fox Hunter's Rifle
+							i(62162),	-- Territorial Helm
 							i(131622),	-- Whitetail Fox Tunic
 						},
 						["qg"] = 11055,	-- Shadow Priestess Vandis
 					}),
-					qh(26934, {	-- Latent Disease
-						["groups"] = {
-						},
+					qh(26934, {	-- Latent Disease -- anytime
 						["qg"] = 11057,	-- Apothecary Dithers
 					}),
 					qh(26936, {	-- Lower the Boom
-						["groups"] = {
-						},
 						["qg"] = 10837,	-- High Executor Derrington
 						["sourceQuests"] = { 26978 },	-- Who Needs Cauldrons?
 					}),
 					qh(26979, {	-- Strange New Faces
-						["groups"] = {
-						},
 						["qg"] = 10837,	-- High Executor Derrington
 						["sourceQuests"] = { 26936 },	-- Lower the Boom
 					}),
-					qh(26920, {	-- The Battle for Andorhal
-						["groups"] = {
-						},
+					qh(26920, {	-- The Battle for Andorhal -- anytime
 						["qg"] = 10837,	-- High Executor Derrington
 						["isBreadcrumb"] = true,	-- for "Scourge First... Alliance Later"
 					}),
 					qh(26952, {	-- The Menders' Stead
-						["groups"] = {
-						},
 						["qg"] = 10839,	-- Argent Officer Garush
 						["sourceQuests"] = { 26933 },	-- Foes before Hoes
 						["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
@@ -102,152 +88,275 @@ _.Zones =
 						["qg"] = 11057,	-- Apothecary Dithers
 						["sourceQuests"] = { 26934 },	-- Latent Disease
 					}),
-					
-					
-					
--- untested non-WPL quests below this line					
-					qg(13158, qh(25046, { -- A Daughter's Embrace
-						i(57169),	-- Darrington's Dirk
-						i(57170),	-- Lilian's Staff
-						i(57171)	-- Executor's Breastplate
+					qh(25046, { -- A Daughter's Embrace
+						["groups"] = {
+							i(57169),	-- Darrington's Dirk
+							i(57170),	-- Lilian's Staff
+							i(57171)	-- Executor's Breastplate
+						},
+						["qg"] = 13158,	-- Lieutenant Sanders
+						["sourceQuests"] = { 25010 },	-- A Deadly new Ally
+					}),
+					qh(25010, {	-- A Deadly New Ally
+						["qg"] = 10837,	-- High Executor Derrington
+						["sourceQuests"] = { 25009 },	-- At War With The Scarlet Crusade
+					}),
+					qart(q(40706, {	-- A Legend You Can Hold
+						["qg"] = 101314,	-- Alonsus Faol
+						["sourceQuests"] = { 40705 },	-- Priestly Matters
+						["classes"] = { 5 },	-- priest
 					})),
---[[					
-					qg(, qh(25010)),	-- A Deadly New Ally
-					qg(, qh(29431)),	-- A Friend in Need
-					qg(, q(40706)),	-- A Legend You Can Hold
---]]					
-					qg(11057, qh(25013, { -- A Little Oomph
-						i(57167),	-- Night Web Gloves
-						i(57166),	-- Advanced Night Web Crossbow
-						i(57168),	-- Reaper's Buckler
+					qh(25013, { -- A Little Oomph
+						["groups"] = {
+							i(57167),	-- Night Web Gloves
+							i(57166),	-- Advanced Night Web Crossbow
+							i(57168),	-- Reaper's Buckler
+						},
+						["qg"] = 11057,	-- Apothecary Dithers
+						["sourceQuests"] = { 25056 },	-- Grisly Grizzlies
+					}),
+					qh(25090, {	-- A Putrid Task -- anytime
+						["qg"] = 1496,	-- Deathguard Dillinger
+					}),
+					i(52079, {
+						qh(24979, {	-- A Scarlet Letter
+							["qg"] = 1535,	-- Scarlet Warrior
+						}),
+					}),
+					qh(24981, {	-- A Thorn in our Side -- anytime
+						["qg"] = 1515,	-- Executor Zygand
+					}),
+					qh(24993, {	-- Annihilate the Worgen
+						["qg"] = 1515,	-- Executor Zygand
+						["sourceQuests"] = { 24992 },	-- Escaped From Gilneas
+					}),
+					qh(25009, {	-- At War With The Scarlet Crusade
+						["qg"] = 10837,	-- High Executor Derrington
+						["sourceQuests"] = { 25007 },	-- East... Always to the East
+					}),
+					qart(q(40710, {	-- Blade in Twilight
+						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
+						["classes"] = { 5 },	-- Priest
 					})),
---[[					
-					qg(, qh(25090)),	-- A Putrid Task
-					qg(, qh(24979)),	-- A Scarlet Letter
-					qg(, qh(29400)),	-- A Season for Celebration
-					qg(, qh( 9339)),	-- A Thief's Reward
-					qg(, qh(24981)),	-- A Thorn in our Side
-					qg(, qh(29377)),	-- A Time to Break Down
-					qg(, qh(29376)),	-- A Time to Build Up
-					qg(, qh(24993)),	-- Annihilate the Worgen
-					qg(, qh(25009)),	-- At War With The Scarlet Crusade
-					qg(, q(40710)),	-- Blade in Twilight
+					qh(24990, {	-- Darkhound Pounding -- anytime
+						["qg"] = 10665,	-- Junior Apothecary Holland
+					}),
+					qh(25029, { -- Deaths in the Family
+						["groups"] = {
+							i(3446),	-- Darkwood Staff
+							i(3440),	-- Bonecracker
+						},
+						["qg"] = 1500,	-- Coleman Farthing
+						["sourceQuests"] = { 25003 },	-- The Family Crypt
+					}),
+					qh(24994, {	-- Doom Weed -- anytime
+						["qg"] = 38977,	-- Apothecary Jerrod
+					}),
+					qh(25007, {	-- East... Always to the East
+						["qg"] = 1499,	-- Magistrate Sevren
+						["sourceQuests"] = { 25006 },	-- The Grasp Weakens
+					}),
+					qh(24992, {	-- Escaped From Gilneas
+						["description"] = "Quest is granted by getting a Cursed Darkhound to low health and letting it cast Leaping Bite on you during or after completing \"Darkhound Pounding\".",
+					}),
+					qh(24974, {	-- Ever So Lonely -- anytime
+						["qg"] = 38925,	-- Sidrick Calston
+					}),
+					qh(24975, {	-- Fields of Grief -- anytime
+						["qg"] = 1518,	-- Apothecary Johaan
+					}),
+					qh(24983, {	-- Forsaken Duties -- anytime
+						["qg"] = 1499,	-- Magistrate Sevren
+						["sourceQuests"] = { 24982 },	-- The New Forsaken
+					}),
+					qh(24991, {	-- Garren's Haunt
+						["qg"] = 10665,	-- Apothecary Holland
+						["sourceQuests"] = { 24996 },	-- Holland's Experiment
+						["isBreadcrumb"] = true,
+					}),
+					qh(25038, {	-- Gordo's Task
+						["qg"] = 10666,	-- Gordo
+						["sourceQuests"] = { 24980 },	-- The Scarlet Palisade
+					}),
+					qh(24997, {	-- Graverobbers -- anytime
+						["qg"] = 38978,	-- Apprentice Crispin
+					}),
+					qh(25056, {	-- Grisly Grizzlies -- anytime
+						["qg"] = 11057,	-- Apothecary Dithers
+					}),
+					qh(25039, {	-- Have You Seen Anything Weird Out There?
+						["qg"] = 6785,	-- Ratslin Maime
+					}),
+					qh(25031, {	-- Head for the Mills
+						["qg"] = 38977,	-- Apothecary Jerrod
+						["sourceQuests"] = { 24999 },	-- Planting the Seed of Fear
+						["isBreadcrumb"] = true,
+					}),
+					qh(24996, {	-- Holland's Experiment
+						["qg"] = 10665,	-- Junior Apothecary Holland
+						["sourceQuests"] = { 24990 },	-- Darkhound Pounding
+					}),
+					qh(24977, {	-- Johaan's Experiment
+						["qg"] = 1518,	-- Apothecary Johaan
+						["sourceQuests"] = { 24976 },	-- Variety is the Spice of Death
+					}),
+					qh(24998, {	-- Maggot Eye
+						["qg"] = 38978,	-- Apprentice Crispin
+						["sourceQuests"] = { 24997 },	-- Graverobbers
+					}),
+					qh(24995, {	-- Off the Scales
+						["qg"] = 38977,	-- Apothecary Jerrod
+						["sourceQuests"] = { 24994 },	-- Doom Weed
+					}),
+					qh(24999, {	-- Planting the Seed of Fear
+						["qg"] = 38978,	-- Apprentice Crispin
+						["sourceQuests"] = { 24994 },	-- Doom Weed
+					}),
+					q(40705, {	-- Priestly Matters
+						["qgs"] = {
+							101344,	-- Hooded Priestess (horde)
+							102333,	-- Hooded Priestess (alliance)
+						},
+						["classes"] = { 5 },	-- Priest
+					}),
+					qh(24978, {	-- Reaping the Reapers -- anytime
+						["qg"] = 1519,	-- Deathguard Simmer
+					}),
+					qh(24989, {	-- Return to the Magistrate
+						["qg"] = 1495,	-- Deathguard Linnea
+						["sourceQuests"] = { 24988 },	-- The Chill of Death
+					}),
+					q(6323, {	-- Ride to the Undercity
+						["qg"] = 43124,	-- Anette Williams
+						["sourceQuests"] = { 6321 },	-- Supplying Brill
+						["races"] = { 5 },	-- Undead
+					}),
+					qh(25005, {	-- Speak with Sevren
+						["qg"] = 1500,	-- Coleman Farthing
+						["sourceQuests"] = {
+							25029,	-- Deaths in the Family
+							25004,	-- The Mills Overrun
+						},
+					}),
+					q(6321, {	-- Supplying Brill
+						["qg"] = 1745,	-- Deathguard Morris
+						["races"] = { 5 },	-- Undead
+					}),
+					qh(25012, {	-- Take to the Skies
+						["qg"] = 37915,	-- Timothy Cunningham
+						["sourceQuests"] = { 25011 },	-- To Bigger and Better Things
+					}),
+					qh(27083, {	-- The Battle Resumes! -- possible breadcrumb?
+						["qg"] = 10837,	-- High Executor Derrington
+					}),
+					qh(24988, {	-- The Chill of Death
+						["qg"] = 1521,	-- Gretchen Dedmar
+						["sourceQuests"] = {
+							24983,	-- Forsaken Duties
+						},
+					}),
+					qh(25003, {	-- The Family Crypt
+						["qg"] = 1500,	-- Coleman Farthing
+						["sourceQuests"] = {
+							25031,	-- Head for the Mills (breadcrumb)
+							24999,	-- Planting the Seed of Fear (unlocks this quest)
+						},
+					}),
+					qh(25006, {	-- The Grasp Weakens
+						["qg"] = 1499,	-- Magistrate Sevren
+						["sourceQuests"] = { 25005 },	-- Speak with Sevren
+					}),
+					i(3082, {	-- Dargol's Skull
+						qh(25030, {	-- The Haunted Mills
+							["qg"] = 1658,	-- Captain Dargol
+						}),
+					}),
+					qart(q(41625, {	-- The Light's Wrath
+						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
+						["classes"] = { 5 },	-- Priest
+					})),
+					qh(25004, {	-- The Mills Overrun
+						["qg"] = 1500,	-- Coleman Farthing
+						["sourceQuests"] = { 25003 },	-- The Family Crypt
+					}),
+					qh(24982, {	-- The New Forsaken -- anytime
+						["qg"] = 1496,	-- Deathguard Dillinger
+						["isBreadcrumb"] = true,
+					}),
+					qh(24980, {	-- The Scarlet Palisade
+						["qg"] = 1519,	-- Deathguard Simmer
+						["sourceQuests"] = { 24978 },	-- Reaping the Reapers
+					}),
+					qart(q(41957, {	-- The Vindicator's Plea
+						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
+						["classes"] = { 5 },	-- Priest
+					})),
+					qh(25011, {	-- To Bigger and Better Things
+						["qg"] = 10837,	-- High Executor Derrington
+						["sourceQuests"] = { 25046 },	-- A Daughter's Embrace
+					}),
+					qh(24976, {	-- Variety is the Spice of Death
+						["qg"] = 1518,	-- Apothecary Johaan
+						["sourceQuests"] = { 24975 },	-- Fields of Grief
+					}),
+					qh(26926, {	-- Victory, For Now
+						["qg"] = 44452,	-- Koltira Deathweaver
+						["sourceQuests"] = {
+							26925,	-- Araj the Summoner
+							27117,	-- Brute Strength
+							26924,	-- Scholomancer
+						},
+					}),
+					qh(26964, {	-- Warchief's Command: Silverpine Forest! -- anytime
+						["qg"] = 1515,	-- Executor Zygand
+						["lvl"] = 9,
+						["isBreadcrumb"] = true,
+					}),
+--[[
 					qh(28972),	-- Candy Bucket
 					qh(12363),	-- Candy Bucket
-					qg(, qh(29375)),	-- Clean Up in Undercity
-					qg(, q(3861)),	-- CLUCK!
-					qg(, qh(24990)),	-- Darkhound Pounding
---]]
-					qg(1500, qh(25029, { -- Deaths in the Family
-						i(3446),	-- Darkwood Staff
-						i(3440),	-- Bonecracker
-					})),
---[[
 					qa(11755),	-- Desecrate this Fire!
 					qa(11580),	-- Desecrate this Fire!
 					qa(11786),	-- Desecrate this Fire!
 					qa(11766),	-- Desecrate this Fire!
 					qa(11732),	-- Desecrate this Fire!
-					qg(, qh(24994)),	-- Doom Weed
-					qg(, qh(25007)),	-- East... Always to the East
-					qg(, qh(24992)),	-- Escaped From Gilneas
-					qg(, qh(24974)),	-- Ever So Lonely
-					qg(, qh(24975)),	-- Fields of Grief
-					qg(, qh(11361)),	-- Fire Training
-					qg(, qh(11450)),	-- Fire Training
-					qg(, qh(11449)),	-- Fire Training
-					qg(, qh(24983)),	-- Forsaken Duties
+					qh(11361),	-- Fire Training
+					qh(11450),	-- Fire Training
+					qh(11449),	-- Fire Training
+					qh(11403),	-- Free at Last! -- Hallow's End. No longer available? The quest giver was removed from the game
+					qh(14089),	-- Learn to Ride in Tirisfal Glades -- Legacy
+					qh(12139),	-- "Let the Fires Come!" -- Hallow's End
+					qh(31823),	-- Level Up! -- Pets
+					qh(11357),	-- Masked Orphan Matron -- Hallow's End
+					qh(11925),	-- More Torch Catching -- Midsummer Fire Festival
+					qh(11926),	-- More Torch Tossing -- Midsummer Fire Festival
+					qh(31577),	-- On The Mend -- Pets, no qg
+					qh(14036),	-- Pilgrim's Bounty -- Pilgrim's Bounty
+					qh(11915),	-- Playing with Fire -- Midsummer Fire Festival
+					qh(14040),	-- Pumpkin Pie	-- Pilgrim's BOunty
+					qh(14065),	-- Sharing a Bountiful Feast	-- Pilgrim's Bounty
+					qh(14058),	-- She Says Potato	-- Pilgrim's Bounty
+					qh(14047),	-- Slow-roasted Turkey	-- Pilgrim's Bounty
+					qh(12155),	-- Smash the Pumpkin	-- Hallow's End
+					qa(12133),	-- Smash the Pumpkin	-- Hallow's End
+					qh(14037),	-- Spice Bread Stuffing	-- Pilgrim's Bounty
+					qh(29374),	-- Stink Bombs Away!	-- Hallow's End
+					qh(11219),	-- Stop the Fires!	-- Hallow's End
+					q(11954),	-- Striking Back	-- Midsummer
+					q(11917),	-- Striking Back	-- Midsummer
+					q(11947),	-- Striking Back	-- Midsummer
+					q(11948),	-- Striking Back	-- Midsummer
+					q(11952),	-- Striking Back	-- Midsummer
+					q(11953),	-- Striking Back	-- Midsummer
+					qh(29427),	-- The Collector's Agent	-- Hallow's End
+					qh(14174),	-- The Grateful Dead	-- Day of the Dead
+					qh(11971), -- The Spinner of Summer Tales	-- Midsummer Fire Festival
+					qh(11923),	-- Torch Catching	-- Midsummer
+					qh(11922),	-- Torch Tossing	-- Midsummer
+					q(11886),	-- Unusual Activity	-- Midsummer Fire Festival
+					qh(14059), -- We're Out of Cranberry Chutney Again?	-- Pilgrim's Bounty
+					qh(29428), -- What Now?	-- Hallow's End
 --]]
---[[					
-					qg(, qh(11403)),	-- Free at Last!
-					qg(, qh(24991)),	-- Garren's Haunt
-					qg(, qh(25038)),	-- Gordo's Task
-					qg(, qh(31578)),	-- Got one!
-					qg(, q(8652)),	-- Graveborn the Elder
-					qg(, qh(24997)),	-- Graverobbers
-					qh(25056, {	-- Grisly Grizzlies
-						["groups"] = {
-						},
-						["qg"] = 11057,	-- Apothecary Dithers
-					}),
-					qg(, qh( 8312)),	-- Hallow's End Treats for Spoops!
-					qg(, qh(25039)),	-- Have You Seen Anything Weird Out There?
-					qg(, qh(25031)),	-- Head for the Mills
-					qg(, qh(24996)),	-- Holland's Experiment
-					qg(, qh(11862)),	-- Honor the Flame
-					qg(, qh(11966)),	-- Incense for the Festival Scorchlings
-					qg(, q(12012)),	-- Inform the Elder
-					qg(, qa(29092)),	-- Inform the Elder
-					qg(, qh(24977)),	-- Johaan's Experiment
-					qg(, qh(32672)),	-- Learn To Ride
-					qg(, qh(14089)),	-- Learn to Ride in Tirisfal Glades
-					qg(, qh(31576)),	-- Learning the Ropes
-					qg(, qh(12139)),	-- "Let the Fires Come!"
-					qg(, qh(31823)),	-- Level Up!
-					qg(, qh(24998)),	-- Maggot Eye
-					qg(, qh(11357)),	-- Masked Orphan Matron
-					qg(, qh( 6322)),	-- Michael Garrett
-					qg(, qh(11925)),	-- More Torch Catching
-					qg(, qh(11926)),	-- More Torch Tossing
-					qg(, qh(24995)),	-- Off the Scales
-					qg(, qh(31577)),	-- On The Mend
-					qg(, qh(14036)),	-- Pilgrim's Bounty
-					qg(, qh(24999)),	-- Planting the Seed of Fear
-					qg(, qh(11915)),	-- Playing with Fire
-					qg(, q(40705)),	-- Priestly Matters
-					qg(, qh(14040)),	-- Pumpkin Pie
-					qg(, qh(24978)),	-- Reaping the Reapers
-					qg(, qh( 6324)),	-- Return to Morris
-					qg(, qh(24989)),	-- Return to the Magistrate
-					qg(, qh( 6323)),	-- Ride to the Undercity
-					qg(, qh(14065)),	-- Sharing a Bountiful Feast
-					qg(, qh(14058)),	-- She Says Potato
-					qg(, qh(14047)),	-- Slow-roasted Turkey
-					qg(, qh(12155)),	-- Smash the Pumpkin
-					qg(, qa(12133)),	-- Smash the Pumpkin
-					qg(, qh(25005)),	-- Speak with Sevren					
-					qg(, qh(14037)),	-- Spice Bread Stuffing
-					qg(, qh( 9332)),	-- Stealing Darnassus's Flame
-					qg(, qh( 9331)),	-- Stealing Ironforge's Flame
-					qg(, qh( 9330)),	-- Stealing Stormwind's Flame
-					qg(, qh(11933)),	-- Stealing the Exodar's Flame
-					qg(, qh(29374)),	-- Stink Bombs Away!
-					qg(, qh(11219)),	-- Stop the Fires!
-					qg(, q(11954)),	-- Striking Back
-					qg(, q(11917)),	-- Striking Back
-					qg(, q(11947)),	-- Striking Back
-					qg(, q(11948)),	-- Striking Back
-					qg(, q(11952)),	-- Striking Back
-					qg(, q(11953)),	-- Striking Back
-					qg(, qh( 6321)),	-- Supplying Brill
-					qg(, qh(25012)),	-- Take to the Skies
-					qg(, qh(27083)),	-- The Battle Resumes!
-					qg(, qh(24988)),	-- The Chill of Death
-					qg(, qh(29427)),	-- The Collector's Agent
-					qg(, qh(25003)),	-- The Family Crypt
-					qg(, qh(25006)),	-- The Grasp Weakens
-					qg(, qh(14174)),	-- The Grateful Dead
-					qg(, qh(25030)),	-- The Haunted Mills
-					qg(, q(41625)),	-- The Light's Wrath
-					qg(, qh(25004)),	-- The Mills Overrun
-					qg(, qh(24982)),	-- The New Forsaken
-					qg(, qh(24980)),	-- The Scarlet Palisade
-					qg(, qh(11971)),	-- The Spinner of Summer Tales
-					qg(, qh(25011)),	-- To Bigger and Better Things
-					qg(, qh(11923)),	-- Torch Catching
-					qg(, qh(11922)),	-- Torch Tossing
-					qg(, qh(14044)),	-- Undersupplied in the Undercity
-					qg(, q(11886)),	-- Unusual Activity
-					qg(, qh(24976)),	-- Variety is the Spice of Death
-					qg(, qh(26926)),	-- Victory, For Now
-					qg(, qh(26964)),	-- Warchief's Command: Silverpine Forest!
-					qg(, qh(14059)),	-- We're Out of Cranberry Chutney Again?
-					qg(, qh(29428)),	-- What Now?
---]]
-					qart(q(41957, {	-- The Vindicator's Plea
-						["qgs"] = { 101314, 110564 }, -- Alonsus Faol (2 versions)
-						["classes"] = { 5 },
-					})),
 				}),
 				n(-16, {	-- Rares
 					n(1911, { 	-- Deeb
