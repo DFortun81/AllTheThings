@@ -43,7 +43,7 @@ _.Zones =
 								i(62935),  -- Flower Picker's Gloves
 								i(131668), -- Stem-Laced Boots
 								},
-								["qg"] = 42428, -- Gidwin Goldbraids
+								["qg"] = 45428, -- Gidwin Goldbraids
 								["sourceQuests"] = { 27368 },	-- Just Encased
 							}),
 							q(27370, {	-- Tarenar Sunstrike
@@ -366,7 +366,7 @@ _.Zones =
 								i(62935),  -- Flower Picker's Gloves
 								i(131668), -- Stem-Laced Boots
 								},
-								["qg"] = 42428, -- Gidwin Goldbraids
+								["qg"] = 45428, -- Gidwin Goldbraids
 								["sourceQuests"] = { 27368 },	-- Just Encased
 							}),
 						}),
