@@ -779,10 +779,12 @@ _.Zones =
 							}),
 							qh(32320, {	-- The Horde is Family
 								["qg"] = 68025, -- Thrall
+								["lvl"] = 81,
 								["sourceQuests"] = { 32319 } -- Find Thrall!
 							}),
 							qh(32372, {	-- De-Subjugation
 								["qg"] = 68025, -- Thrall
+								["lvl"] = 81,
 								["sourceQuests"] = { 32320 } -- The Horde is Family
 							}),
 						}),
