@@ -816,7 +816,7 @@ _.Zones =
 					q(53028, {	-- A Dying World
 						["groups"] = {
 						},
-						["qg"] = 140176, -- Nathanos Blightcaller
+						--["qg"] = 140176, -- Nathanos Blightcaller [Changed on Live]
 						["sourceQuests"] = { 51796 }, -- The Battle for Lordaeron
 					}),	
 					q(49977, {	-- Summons to Orgrimmar

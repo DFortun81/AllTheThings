@@ -99,6 +99,31 @@ _.Zones =
 					}),
 				}),
 				na(-17, {	-- Quests
+					q(53370, {	-- Hour of Reckoning		
+						["groups"] = {		
+							i(163542), -- Footman's Warmace
+							i(163541), -- Longbow of the Hunt
+							i(163539), -- Spear of the Hunt
+							i(163537), -- Footman's Warhammer
+							i(163534), -- Warmage's Spellblade
+							i(163526), -- Footman's Handaxe
+							i(163540), -- Footman's Boot Knife
+							i(163538), -- Footman's Gladius
+							i(163536), -- Warmage's Spire
+							i(163533), -- Footman's Cleaver
+						},		
+					}),
+					q(51795, {	-- The Battle for Lordaeron
+						["groups"] = {
+						},
+						["qg"] = 120590, -- Lady Jaina Proudmoore
+						["sourceQuests"] = { 53370 }, -- Hour of Reckoning
+					}),	
+					q(, {	-- A Dying World
+						["groups"] = {
+						},
+						["sourceQuests"] = { 51795 }, -- The Battle for Lordaeron
+					}),	
 					qa(50371, {	-- Summons to Stormwind
 						["groups"] = {
 						},
