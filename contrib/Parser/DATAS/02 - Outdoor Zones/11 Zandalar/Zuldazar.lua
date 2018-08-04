@@ -1,4 +1,3 @@
---[[
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
@@ -122,6 +121,57 @@ _.Zones =
 										}),	
 									},
 								}),
+								crit(2, { -- Port of Zandalar
+									["groups"] = {
+										q(46929, {	-- Deterrent
+											["groups"] = {
+												i(155305),	-- Golden City Greatcloak
+												i(155268),	-- Rastari Vambraces
+												i(155270),	-- Jambani Armbands
+												i(155267),	-- Zanchuli Wristwraps
+												i(155269),	-- Torcalin Bracers
+											},
+											["qg"] = 135441,	-- Zolani
+											["sourceQuests"] = { 46926, 46846, }	-- Shakedown, The Word of Zul
+										}),		
+										q(48454, {	-- Evidence of Evil	
+											["qg"] = 126148,	-- Witch Doctor Jala
+											["sourceQuests"] = { 48452 },	-- The Red Market
+										}),		
+										q(46927, {	-- Punishment of Tal'aman	
+											["qg"] = 126684,	-- Yazma
+											["sourceQuests"] = { 48454 },	-- Evidence of Evil
+										}),		
+										q(46928, {	-- Punishment of Tal'farrak	
+											["qg"] = 126684,	-- Yazma
+											["sourceQuests"] = { 48454 },	-- Evidence of Evil
+										}),		
+										q(50881, {	-- Royal Report	[Note: Final Quest needed to trigger criteria]
+											["qg"] = 135441,	-- Zolani
+											["sourceQuests"] = { 46927, 46928, }	-- Punishment of Tal'aman, Punishment of Tal'farrak
+										}),	
+										q(46926, {	-- Shakedown	
+											["qg"] = 135441,	-- Zolani
+											["sourceQuests"] = { 50835 },	-- The Port of Zandalar
+										}),		
+										q(50835, {	-- The Port of Zandalar	
+											["qg"] = 122915,	-- Zolani
+											["sourceQuests"] = { 49615 },	-- Trust of a King
+										}),		
+										q(48452, {	-- The Red Market	
+											["qg"] = 126148,	-- Witch Doctor Jala
+											["sourceQuests"] = { 46929, 48456, }	-- Deterrent, Witch Doctor Jala
+										}),		
+										q(46846, {	-- The Word of Zul	
+											["qg"] = 126684,	-- Yazma
+											["sourceQuests"] = { 50835 },	-- The Port of Zandalar
+										}),		
+										q(48456, {	-- Witch Doctor Jala	
+											["qg"] = 135441,	-- Zolani
+											["sourceQuests"] = { 46926, 46846, }	-- Shakedown, The Word of Zul
+										}),	
+									},
+								}),
 							},
 							["races"] = HORDE_ONLY,
 						})),
@@ -165,17 +215,6 @@ _.Zones =
 								i(156659, { -- Counterfeit Rastakhan Mask
 									["groups"] = {
 										i(156649),  -- Zandalari Effigy Amulet
-									},
-								}),
-							},
-						}),
-						n(141614, { -- Koari <Pet Supplies>
-							["groups"] = {
-								i(163036, { -- Polished Pet Charm
-									["groups"] = {
-										i(116429), -- Flawless Battle-Training Stone
-										i(98715), -- Marked Flawless Battle-Stone
-										i(122457), -- Ultimate Battle-Training Stone
 									},
 								}),
 							},
