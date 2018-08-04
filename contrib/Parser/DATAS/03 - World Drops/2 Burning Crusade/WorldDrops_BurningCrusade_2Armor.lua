@@ -87,7 +87,6 @@ _.WorldDrops =
 					i(31297),	-- Robe of the Crimson Order
 					i(31320),	-- Chestguard of Exile
 					i(31340),	-- Will of Edward the Odd
-					i(31364),	-- Wildguard Breastplate
 					i(31554),	-- Windchanneller's Tunic
 					i(31562),	-- Skystalker's Tunic
 					i(31570),	-- Mistshroud Tunic
