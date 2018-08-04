@@ -119,7 +119,7 @@ _.Zones =
 						["qg"] = 120590, -- Lady Jaina Proudmoore
 						["sourceQuests"] = { 53370 }, -- Hour of Reckoning
 					}),	
-					q(, {	-- A Dying World
+					q(52946, {	-- A Dying World
 						["groups"] = {
 						},
 						["sourceQuests"] = { 51795 }, -- The Battle for Lordaeron

@@ -508,6 +508,7 @@ _.Mounts =
 		i(33999),			-- Cenarion War Hippogryph
 		i(116789),		-- Champion's Treadblade
 		i(5655),			-- Chestnut Mare
+		i(161665),		-- Cobalt Pterrordax
 		i(31830),		-- Cobalt Riding Talbuk (Alliance)
 		i(31829),		-- Cobalt Riding Talbuk (Horde)
 		i(29227),		-- Cobalt War Talbuk (Alliance)

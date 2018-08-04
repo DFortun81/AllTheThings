@@ -572,6 +572,7 @@ _.Toys =
 		i(128471),		-- Frostwolf Grunt's Battlegear (Horde)
 		i(90175), 		-- Gin-Ji Knife Set
 		i(45019),		-- Gnomeregan Banner (Alliance)
+		i(159749), 		-- Haw'li's Hot & Spicy Chili
 		i(119210), 		-- Hearthstone Board
 		i(140325),		-- Home Made Party Mask
 		i(136855, {		-- Hunter's Call -- only Hunter
@@ -668,5 +669,6 @@ _.Toys =
 		i(97919),		-- Whole-Body Shrinka'
 		i(119212),		-- Winning Hand
 		i(98552), 		-- Xan'tish's Flute
+		i(156649),		-- Zandalari Effigy Amulet
 	}),
 };

@@ -503,3 +503,5 @@ t(134034);					-- Esteemed Pennant
 t(163828); 					-- Toy Siege Tower
 t(163829); 					-- Toy War Machine
 t(164310);					-- Glorious Pennant
+t(156649);					-- Zandalari Effigy Amulet
+t(159749);					-- Haw'li's Hot & Spicy Chili

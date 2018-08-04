@@ -11,6 +11,7 @@ _.PetJournal =
 		p(1666), 	-- Blorp 
 		p(174), 	-- Chuck
 		p(1775), 	-- Coralback Fiddler 
+		p(2427),	-- Cou'pa
 		p(751), 	-- Dancing Water Skimmer 
 		p(335), 	-- Darkmoon Turtle 
 		p(564), 	-- Emerald Turtle 
@@ -578,6 +579,7 @@ _.PetJournal =
 		p(1468),	-- Bloodbeak
 		p(1977),	-- Bloodgazer Hatchling
 		p(1462),	-- Bloodsting Wasp
+		p(2422),	-- Bluee Flitter
 		p(259),		-- Blue Mini Jouster
 		p(138),		-- Blue Moth
 		p(1458),	-- Bone Wasp
