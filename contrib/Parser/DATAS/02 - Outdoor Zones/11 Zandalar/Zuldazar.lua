@@ -127,7 +127,102 @@ _.Zones =
 						})),
 					},
 				}),
-
+				n(-2, {  -- Vendors
+					["groups"] = {
+						n(134345, { -- Collector Kojo <Tortollan Seekers Emissary>
+							["groups"] = {
+								i(160543),	-- Tabard of the Tortollan Seekers
+								i(163513),	-- Cou'pa
+								i(161529),	-- Girdle of the Scroll-Sages
+								i(161534),	-- Legguards of Ai'twen's Resurgence
+								i(161494),	-- Sea-Treated Footwraps
+								i(161549),	-- Shellbuckle Girdle
+								i(161519),	-- Supple Moccasins of Pilgrimage
+								i(161544),	-- Vambraces of a Thousand Year Toil
+								i(161503),	-- Wristwraps of Scrollbinding
+								i(160538),	-- Cape of the Scroll Keepers*
+								i(163026),	-- Pattern: Embroidered Deep Sea Bag [Rank 2]
+								i(162298),	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]
+								i(162301),	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]
+								i(162288),	-- Recipe: Bountiful Captain's Feast [Rank 2]
+								i(162289),	-- Recipe: Bountiful Captain's Feast [Rank 3]
+								i(162358),	-- Recipe: Codex of the Quiet Mind [Rank 3]
+								i(162373),	-- Recipe: Contract: Champions of Azeroth [Rank 2]
+								i(162371),	-- Recipe: Contract: Tortollan Seekers [Rank 2]
+								i(162377),	-- Recipe: Darkmoon Card of War [Rank 3]
+								i(162136),	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]
+								i(162287),	-- Recipe: Galley Banquet [Rank 3]
+								i(162292),	-- Recipe: Grilled Catfish [Rank 3]
+								i(162352),	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]
+								i(162293),	-- Recipe: Seasoned Loins [Rank 3]
+								i(162137),	-- Recipe: Siren's Alchemist Stone [Rank 3]
+								i(162376),	-- Recipe: Tome of the Quiet Mind [Rank 3]
+								i(162023),	-- Technique: Glyph of the Dolphin [Rank 3]
+							},
+						}),
+						n(132114, { -- Griftah <Amazing Amulets>
+							["groups"] = {
+								i(156659, { -- Counterfeit Rastakhan Mask
+									["groups"] = {
+										i(156649),  -- Zandalari Effigy Amulet
+									},
+								}),
+							},
+						}),
+						n(141614, { -- Koari <Pet Supplies>
+							["groups"] = {
+								i(163036, { -- Polished Pet Charm
+									["groups"] = {
+										i(116429), -- Flawless Battle-Training Stone
+										i(98715), -- Marked Flawless Battle-Stone
+										i(122457), -- Ultimate Battle-Training Stone
+									},
+								}),
+							},
+						}),
+						n(136219, { -- Mona <Butterflies>
+							["groups"] = {
+								i(163508), -- Butterfly in a Jar
+							},
+						}),
+						n(131287, { -- Natal'hakata <Zandalari Empire Emissary
+							["groups"] = {
+								i(160546),	-- Tabard of the Zandalari Empire
+								i(161516),	-- Bindings of the Disparate Tribes
+								i(161497),	-- Cord of the Loa Worshippers
+								i(161548),	-- Gonk Adherents Vambraces
+								i(161526),	-- Gral Worshipper's Waders
+								i(161546),	-- Grand Fleet Legplates
+								i(161665),	-- Reins of the Cobalt Pterrordax
+								i(161500),	-- Shadraspun Legwraps
+								i(161524),	-- Torcali's Grips of the Bounty
+								i(161517),	-- Waistcord of Pa'ku's Flight
+								i(160530),	-- Dinomancer's Cloak
+								i(162764),	-- Design: Laribole Staff of Alacrity [Rank 3]
+								i(162761),	-- Design: Owlseye Loop [Rank 3]
+								i(162765),	-- Design: Scarlet Diamond Staff of Intuition [Rank 3]
+								i(162717),	-- Formula: Enchant Ring - Pact of Haste [Rank 3]
+								i(162722),	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3]
+								i(162721),	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]
+								i(163317),	-- Recipe: Battle Potion of Stamina [Rank 3]
+								i(162704),	-- Recipe: Coastal Healing Potion [Rank 3]
+								i(162753),	-- Recipe: Contract: Zandalari Empire [Rank 2]
+								i(162696),	-- Recipe: Flask of Endless Fathoms [Rank 3]
+								i(162692),	-- Recipe: Potion of Replenishment [Rank 3]
+								i(162730),	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]
+								i(162731),	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]
+								i(162743),	-- Schematic: Deployable Attire Rearranger [Rank 3]
+								i(162742),	-- Schematic: Interdimensional Companion Repository [Rank 3]
+								i(162741),	-- Schematic: Organic Discombobulation Grenade [Rank 3]
+							},
+						}),
+						n(129597, { -- Trader Haw'li
+							["groups"] = {
+								i(159749), -- Haw'li's Hot & Spicy Chili
+							},
+						}),	
+					},
+				}),
 			},
 			["achievementID"] = 12559, -- Explore Zuldazar
 			["lvl"] = 108,
