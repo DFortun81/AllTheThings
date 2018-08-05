@@ -273,6 +273,7 @@ _.WorldEvents =
 							89, -- Darnassus
 							62, -- Darkshore
 						},
+						["lvl"] = 110,
 					}),
 					n(-34, { -- World Quests
 						["groups"] = {
