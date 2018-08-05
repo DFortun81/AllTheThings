@@ -316,6 +316,7 @@ _.WorldEvents =
 					q(29513, { -- Spoilin' for Salty Sea Dogs
 						["requiredSkill"] = 356, -- Fishing
 					}),
+					i(162539), -- Hot Buttered Popcorn
 				}),
 				n(14844, { -- Sylannia <Drink Vendor
 					q(29506, { -- A Fizzy Fusion
