@@ -284,6 +284,7 @@ _.Zones =
 					}),
 					qh(29690, {	-- Into the Mists
 						["qg"] = 55054, -- General Nazrim
+						["lvl"] = 80,
 						["sourceQuests"] = { 31853 }, -- All Aboard!
 					}),
 					q(31012, {	-- Joining the Horde
@@ -305,6 +306,7 @@ _.Zones =
 						},
 						["qg"] = 113547, -- Stone Guard Mukar
 						["description"] = "Legion expansion introduction quest.|r",
+						["lvl"] = 98,
 						["sourceQuests"] = { 44281 }, -- To Be Prepared
 					}),
 					qh(40605, {	-- Keep Your Friends Close
@@ -325,6 +327,7 @@ _.Zones =
 					}),
 					qh(44281, {	-- To Be Prepared
 						["qg"] = 4311, -- Holgar Stormaxe
+						["lvl"] = 98,
 						["sourceQuests"] = { 43926 } -- The Legion Returns
 					}),
 					
