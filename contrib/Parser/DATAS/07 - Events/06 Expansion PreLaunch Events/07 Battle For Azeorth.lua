@@ -9,16 +9,24 @@ _.WorldEvents =
 				["groups"] = {
 					n(-17, { -- Quests
 						["groups"] = {
-							-- ALLIANCE PART I
+							-- Alliance Part I
+							qa(52058),	-- A Short-Lived Peace
+							qa(52060, {	-- The Horde Uprising
+								["qg"] = 107574, -- Anduin Wrynn
+								["sourceQuests"] = { 52058 }, -- A Short-Lived Pace
+							}),	
 							qa(52062, {	-- A Disturbancee in Ashenvale
 								["qg"] = 139798, -- Master Mathias Shaw
 								["sourceQuests"] = { 52060 }, -- The Horde Uprising
 							}),
-							qa(52279, {	-- A Looming Threat
+							qa(52072, {	-- The Light of Elune
 								["qg"] = 134578, -- Captain Delaryn Summermoon
-								["sourceQuests"] = { 52257 }, -- "Rock" The World
+								["sourceQuests"] = { 52062 }, -- A Disturbancee in Ashenvale
 							}),	
-							qa(52058),	-- A Short-Lived Peace
+							qa(53616, {	-- Knives of the Forsaken
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 52062 }, -- A Disturbancee in Ashenvale
+							}),	
 							qa(52116, {	-- A Soft Glow
 								["qg"] = 134578, -- Captain Delaryn Summermoon
 								["sourceQuests"] = {
@@ -26,17 +34,13 @@ _.WorldEvents =
 									53616, -- Knives of the Forsaken
 								}, 
 							}),	
-							qa(53619, { -- Azerite Denial
-								["qg"] = 134578, -- Captain Delaryn Summermoon
-								["sourceQuests"] = { 52242 }, -- The Wake of Something New
+							qa(52234, {	-- Hidden Amongst the Leaves
+								["qg"] = 133693, -- Malfurion Stormrage
+								["sourceQuests"] = { 52116 }, -- A Soft Glow
 							}),
-							qa(53551, { -- Elves in the Machine
-								["qg"] = 140728, -- Captain Delaryn Silvermoon
-								["sourceQuests"] = { 52240 }, -- Garden Grove
-							}),
-							qa(52245, {	-- Enraged Furblogs
-								["qg"] = 33072, -- Onu <Ancient of Lore>
-								["sourceQuests"] = { 52240 }, -- Garden Grove
+							qa(53617, {	-- Mercy for the Mad
+								["qg"] = 133693, -- Malfurion Stormrage
+								["sourceQuests"] = { 52116 }, -- A Soft Glow
 							}),	
 							qa(52240, {	-- Garden Grove
 								["qg"] = 134578, -- Captain  Delaryn Summermoon
@@ -45,17 +49,28 @@ _.WorldEvents =
 									53617, -- Mercy for the Mad
 								}, 
 							}),	
-							qa(52234, {	-- Hidden Amongst the Leaves
-								["qg"] = 133693, -- Malfurion Stormrage
-								["sourceQuests"] = { 52116 }, -- A Soft Glow
-							}),
-							qa(53616, {	-- Knives of the Forsaken
-								["qg"] = 134578, -- Captain Delaryn Summermoon
-								["sourceQuests"] = { 52062 }, -- A Disturbancee in Ashenvale
+							qa(52245, {	-- Enraged Furblogs
+								["qg"] = 33072, -- Onu <Ancient of Lore>
+								["sourceQuests"] = { 52240 }, -- Garden Grove
 							}),	
-							qa(52197, {	-- Long Away
-								["qg"] = 133693, -- Malfurion Stormrage
-								["sourceQuests"] = { 52257 }, -- "Rock" The World
+							qa(53551, { -- Elves in the Machine
+								["qg"] = 140728, -- Captain Delaryn Silvermoon
+								["sourceQuests"] = { 52240 }, -- Garden Grove
+							}),
+							qa(52242, {	-- The Wake of Something New
+								["qg"] = 33072, -- Onu <Ancient of Lore>
+								["sourceQuests"] = {
+									52245, -- Enraged Furblogs
+									53551, -- Elves in the Machine
+								}, 
+							}),
+							qa(53619, { -- Azerite Denial
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 52242 }, -- The Wake of Something New
+							}),
+							qa(53621, { -- No Horde Allowed
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 52242 }, -- The Wake of Something New
 							}),
 							qa(52256, {	-- Malufrion Returns
 								["qg"] = 134578, -- Captain Delaryn Summermoon
@@ -64,41 +79,19 @@ _.WorldEvents =
 									53621, -- No Horde Allowed
 								},
 							}),	
-							qa(52060, {	-- The Horde Uprising
-								["qg"] = 107574, -- Anduin Wrynn
-								["sourceQuests"] = { 52058 }, -- A Short-Lived Pace
-							}),	
-							qa(53617, {	-- Mercy for the Mad
-								["qg"] = 133693, -- Malfurion Stormrage
-								["sourceQuests"] = { 52116 }, -- A Soft Glow
-							}),	
-							qa(53621, { -- No Horde Allowed
-								["qg"] = 134578, -- Captain Delaryn Summermoon
-								["sourceQuests"] = { 52242 }, -- The Wake of Something New
-							}),
 							qa(52257, {	-- "Rock" The World
 								["qg"] = 133693, -- Malfurion Stormrage
 								["sourceQuests"] = { 52256 }, -- Malufrion Returns
 							}),	
-							qa(52072, {	-- The Light of Elune
-								["qg"] = 134578, -- Captain Delaryn Summermoon
-								["sourceQuests"] = { 52062 }, -- A Disturbancee in Ashenvale
-							}),	
-							qa(52242, {	-- The Wake of Something New
-								["qg"] = 33072, -- Onu <Ancient of Lore>
-								["sourceQuests"] = {
-									52245, -- Enraged Furblogs
-									53551, -- Elves in the Machine
-								}, 
+							qa(52197, {	-- Long Away
+								["qg"] = 133693, -- Malfurion Stormrage
+								["sourceQuests"] = { 52257 }, -- "Rock" The World
 							}),
-							--[[ REMOVED FROM LIVE
-							
-							qa(52220, {	-- Dragon Attack
-								--["qg"] = , -- 
-								["sourceQuests"] = { 52197 }, -- Long Away
+							qa(52279, {	-- A Looming Threat
+								["qg"] = 134578, -- Captain Delaryn Summermoon
+								["sourceQuests"] = { 52257 }, -- "Rock" The World
 							}),	
-							--]]
-							-- ALLIANCE PART II [LUCETIA: UNORGANIZED DUE TO WAITING FOR LAUNCH TO VERIFY IN THE ORDER IT ORIGINALLY WAS]
+							-- Alliance Part II
 							qa(52973, {	-- A Threat From the North
 								["sourceQuests"] = { 52279 }, -- A Looming Threat
 							}),	
