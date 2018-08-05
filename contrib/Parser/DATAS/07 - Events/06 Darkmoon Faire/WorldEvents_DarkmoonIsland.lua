@@ -678,6 +678,9 @@ _.WorldEvents =
 					},
 					["description"] = "|cff66ccffMust be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster.  If you are not wearing it then you will just get flavor text.  A tabard that has been transmog will NOT work.|r"
 				}),
+				n(162539, {	-- Stamp Thunderhorn
+					i(162539),	-- Hot Buttered Popcorn (TOY!)
+				}),
 				n(56069, {	-- Tatia Brine <Fishing Supplies>
 					i(6325),	-- Recipe: Brilliant Smallfish
 					i(6330),	-- Recipe: Bristle Whisker Catfish
