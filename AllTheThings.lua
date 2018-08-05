@@ -6792,15 +6792,15 @@ function app:GetDataCache()
 			db.text = TRACKER_HEADER_ACHIEVEMENTS;
 			table.insert(g, db);
 		end
-		--]]
-		-- Class Halls
-		if app.Categories.ClassHalls then
+		
+		-- Expansion Features
+		if app.Categories.ExpansionFeatures then
 			db = {};
-			db.lvl = 98;
+			db.lvl = 71;
 			db.expanded = false;
-			db.text = GetCategoryInfo(15304);
-			db.icon = "Interface\\Icons\\achievement_level_110";
-			db.g = app.Categories.ClassHalls;
+			db.text = GetCategoryInfo(15301);
+			db.icon = "Interface\\ICONS\\Achievement_Battleground_TempleOfKotmogu_02_Green";
+			db.g = app.Categories.ExpansionFeatures;
 			table.insert(g, db);
 		end
 		
