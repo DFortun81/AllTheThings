@@ -1,5 +1,4 @@
 -- Blacksmithing - Skill ID 164 / Spell ID 2018
--- TODO: (Oxlotus) Add the appearances for BfA.
 --[[ Recipe Types Explained
 Drops: The item to learn the recipe drops in the world, from a boss NPC, or trash in a dungeon.
 Recipes: These are direct spells learned from an NPC associated with the profession. (e.g. "Blacksmithing Trainer")
@@ -3061,6 +3060,7 @@ profession(164, { -- Blacksmithing
 			}),
 		}),
 	}),
+	--[[ Lucetia: Do NOT activate.  Need to fix some things and adjust for BfA.
 	tier(8, { -- Battle for Azeroth
 		n(-2, { -- Vendors
 			n(135447, { -- Ransa Greyfeather (Zuldazar)
@@ -3168,6 +3168,7 @@ profession(164, { -- Blacksmithing
 				}),
 			}),
 		}),
+	}),
 		--[[ NOT YET IMPLEMENTED
 		recipe(253145), -- Recipe: Khaz'gorian Hammer
 		recipe(278416), -- Recipe: Magnetic Mining Pick
@@ -3176,15 +3177,16 @@ profession(164, { -- Blacksmithing
 		recipe(269064), -- Recipe: Monelite Skeleton Key
 		recipe(278417), -- Recipe: Platinum Whetstone
 		recipe(278415), -- Recipe: Storm Silver Spurs
-		recipe(265935), -- Recipe: Xiwyllag ATV
 		]]--
-		--[[n(-10032, { -- Appearances
+		--[[
+		n(-10032, { -- Appearances
 			n(-318, { -- Armor
 			}),
 			n(-319, { -- Weapons
 			}),
-		}),]]--
-	}),
+		}),
+		]]--
+	--]]
 	n(-40, { -- Legacy
 		un(1, n(-15, { -- Recipes
 			un(2, i(12818)), -- Plans: Inlaid Thorium Hammer

@@ -6,6 +6,25 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(862, {	-- Zuldazar
 			["groups"] = {
+				--[[
+				n(-4, { -- Achievements
+					["groups"] = {
+						h(ach(13039, { -- Paku'ai
+							["groups"] = {
+								q(47438, { -- Picking a Side
+									["qg"] = 126560, -- Wardruid Loti
+									["sourceQuests"] = { 47422 }, -- Dire Situation
+									["description"] = "Must pick \"Pa'ku loa\" in order to unlock this achievement.",
+								}),
+								q(47440, { -- Pa'ku, Master of Winds
+									["qg"] = 126564, -- Hexlord Raal
+									["sourceQuests"] = { 47438 }, -- Picking a Side
+								}),
+							},
+						}),
+					},
+				}),
+				--]]
 				n(-17, { -- Quests
 					["groups"] = {
 						h(ach(12555, {  -- Welcome to Zandalar		[TO-DO: Link to previous quests that deal with scenario)
@@ -56,9 +75,9 @@ _.Zones =
 									["groups"] = {
 										q(49492, { -- Arrogance of Vol'jamba
 											["groups"] = {
-												i(155300),	-- Jambani Deflector
-												i(159763),	-- Jambani Hex Focus
-												i(155302),	-- Idol of Vol'jamba
+												i(155300), -- Jambani Deflector
+												i(159763), -- Jambani Hex Focus
+												i(155302), -- Idol of Vol'jamba
 											},
 											["qg"] = 129907, -- Zul the Prophet
 											["sourceQuests"] = {
@@ -76,9 +95,9 @@ _.Zones =
 											}, 
 										}),
 										q(49663, { -- False Prophecies [Note: Final Quest needed to trigger criteria]
-											--["qg"] = 129907, -- Zul the Prophet  [Disable for the moment.  I want to see trigger quest in-game]
+											["qg"] = 129907, -- Zul the Prophet  [Disable for the moment.  I want to see trigger quest in-game]
 											["sourceQuests"] = { 49905 }, -- Plot Twist
-											["icon"] = "Interface\\Addons\\AllTheThings\\assets\\star", -- Quest Finale
+											--["icon"] = "Interface\\Addons\\AllTheThings\\assets\\star", -- Quest Finale
 										}),	
 										q(49491, { -- Fuel for the Voodoo	
 											["qg"] = 130706, -- Izita's Spirit
@@ -86,11 +105,11 @@ _.Zones =
 										}),		
 										q(49489, { -- Needs a Little Body
 											["groups"] = {
-												i(161139),	-- Spirit Twister's Band
-												i(155255),	-- Rastari Legguards
-												i(155257),	-- Zanchuli Legwraps
-												i(155254),	-- Torcalin Legguards
-												i(155256),	-- Jambani Breeches
+												i(161139), -- Spirit Twister's Band
+												i(155255), -- Rastari Legguards
+												i(155257), -- Zanchuli Legwraps
+												i(155254), -- Torcalin Legguards
+												i(155256), -- Jambani Breeches
 											},
 											["qg"] = 129907, -- Zul the Prophet
 											["sourceQuests"] = { 49488 }, -- Tal'gurub
@@ -125,53 +144,149 @@ _.Zones =
 									["groups"] = {
 										q(46929, {	-- Deterrent
 											["groups"] = {
-												i(155305),	-- Golden City Greatcloak
-												i(155268),	-- Rastari Vambraces
-												i(155270),	-- Jambani Armbands
-												i(155267),	-- Zanchuli Wristwraps
-												i(155269),	-- Torcalin Bracers
+												i(155305), -- Golden City Greatcloak
+												i(155268), -- Rastari Vambraces
+												i(155270), -- Jambani Armbands
+												i(155267), -- Zanchuli Wristwraps
+												i(155269), -- Torcalin Bracers
 											},
-											["qg"] = 135441,	-- Zolani
+											["qg"] = 135441, -- Zolani
 											["sourceQuests"] = { 46926, 46846, }	-- Shakedown, The Word of Zul
 										}),		
 										q(48454, {	-- Evidence of Evil	
-											["qg"] = 126148,	-- Witch Doctor Jala
-											["sourceQuests"] = { 48452 },	-- The Red Market
+											["qg"] = 126148, -- Witch Doctor Jala
+											["sourceQuests"] = { 48452 }, -- The Red Market
 										}),		
 										q(46927, {	-- Punishment of Tal'aman	
-											["qg"] = 126684,	-- Yazma
-											["sourceQuests"] = { 48454 },	-- Evidence of Evil
+											["qg"] = 126684, -- Yazma
+											["sourceQuests"] = { 48454 }, -- Evidence of Evil
 										}),		
 										q(46928, {	-- Punishment of Tal'farrak	
-											["qg"] = 126684,	-- Yazma
-											["sourceQuests"] = { 48454 },	-- Evidence of Evil
+											["qg"] = 126684, -- Yazma
+											["sourceQuests"] = { 48454 }, -- Evidence of Evil
 										}),		
 										q(50881, {	-- Royal Report	[Note: Final Quest needed to trigger criteria]
-											["qg"] = 135441,	-- Zolani
+											["qg"] = 135441, -- Zolani
 											["sourceQuests"] = { 46927, 46928, }	-- Punishment of Tal'aman, Punishment of Tal'farrak
 										}),	
 										q(46926, {	-- Shakedown	
-											["qg"] = 135441,	-- Zolani
-											["sourceQuests"] = { 50835 },	-- The Port of Zandalar
+											["qg"] = 135441, -- Zolani
+											["sourceQuests"] = { 50835 }, -- The Port of Zandalar
 										}),		
 										q(50835, {	-- The Port of Zandalar	
-											["qg"] = 122915,	-- Zolani
-											["sourceQuests"] = { 49615 },	-- Trust of a King
+											["qg"] = 122915, -- Zolani
+											["sourceQuests"] = { 49615 }, -- Trust of a King
 										}),		
 										q(48452, {	-- The Red Market	
-											["qg"] = 126148,	-- Witch Doctor Jala
+											["qg"] = 126148, -- Witch Doctor Jala
 											["sourceQuests"] = { 46929, 48456, }	-- Deterrent, Witch Doctor Jala
 										}),		
 										q(46846, {	-- The Word of Zul	
-											["qg"] = 126684,	-- Yazma
-											["sourceQuests"] = { 50835 },	-- The Port of Zandalar
+											["qg"] = 126684, -- Yazma
+											["sourceQuests"] = { 50835 }, -- The Port of Zandalar
 										}),		
 										q(48456, {	-- Witch Doctor Jala	
-											["qg"] = 135441,	-- Zolani
+											["qg"] = 135441, -- Zolani
 											["sourceQuests"] = { 46926, 46846, }	-- Shakedown, The Word of Zul
 										}),	
 									},
 								}),
+								--[[
+								crit(3, { -- Warport Rastari
+									["groups"] = {
+									},
+								}),
+								crit(4, { -- Web of Lies
+									["groups"] = {
+									},
+								}),
+								crit(5, { -- Among the People
+									["groups"] = {
+									},
+								}),
+								--]]
+								crit(7, { -- The Zanchuli Council
+									["groups"] = {
+										q(47437, {	-- Competitive Devotion	
+											["qg"] = 126564, -- Hexlord Raal
+											["sourceQuests"] = { 47434, 47435, }, -- Restraining Order, Pterrortorial Dispute
+										}),		
+										q(47442, {	-- Curse of Jani	
+											["qg"] = 126334, -- Jani
+											["sourceQuests"] = { 47441 }, -- Pests
+										}),		
+										q(47422, {	-- Dire Situation	
+											["groups"] = {
+												i(159102), -- Raal's Spare Hexxer
+												i(159100), -- Crimson Cultist Scepter
+												i(159099), -- Pa'ku Adherent's Talons
+												i(159098), -- Wardruid's Cutter
+												i(159101), -- Loti's Favorite Longspear
+												i(159097), -- Pa'ku-Blessed Greatbow
+												i(159104), -- Crimson Cultist Pummeler
+												i(159103), -- Dregada's Greatsword
+											},
+											["qg"] = 126560, -- Wardruid Loti
+											["sourceQuests"] = { 47437 }, -- Competitive Devotion
+										}),	
+										q(47423, {	-- Forbidden Practices	
+											["qg"] = 126560, -- Wardruid Loti
+											["sourceQuests"] = { 47445 }, -- The Zanchuli Council
+										}),		
+										q(47439, {	-- Gonk, Lord of the Pack	
+											["qg"] = 126560, -- Wardruid Loti
+											["sourceQuests"] = { 47438 }, -- Picking a Side
+										}),	
+										q(47433, {	-- Offensively Defensive
+											["groups"] = {
+												i(155246), -- Jambani Grips
+												i(155247), -- Rastari Gauntlets
+												i(155248), -- Zanchuli Handwraps
+												i(155249), -- Torcalin Gloves
+												i(155263), -- Rastari Waistguard
+												i(155264), -- Zanchuli Sash
+												i(155265), -- Torcalin Girdle
+												i(155266), -- Jambani Waistwrap
+											},
+											["qg"] = 126564, -- Hexlord Raal
+											["sourceQuests"] = { 47423 }, -- Forbidden Practices
+										}),	
+										q(47440, {	-- Pa'ku, Master of Winds	
+											["qg"] = 126564, -- Hexlord Raal
+											["sourceQuests"] = { 47438 }, -- Picking a Side
+										}),		
+										q(47441, {	-- Pests	
+											["qg"] = 127665, -- Nokano
+											["sourceQuests"] = { 47445 }, -- The Zanchuli Council
+										}),	
+										q(47438, {	-- Picking a Side	
+											["qg"] = 126560, -- Wardruid Loti
+											["sourceQuests"] = { 47422 }, -- Dire Situation
+										}),		
+										q(47435, {	-- Pterrortorial Dispute	
+											["qg"] = 126560, -- Wardruid Loti
+											["sourceQuests"] = { 47433 }, -- Offensively Defensive
+										}),		
+										q(47434, {	-- Restraining Order	
+											["qg"] = 126560, -- Wardruid Loti
+											["sourceQuests"] = { 47433 }, -- Offensively Defensive
+										}),		
+										q(47432, {	-- The Bargain is Struck [Note: Final Quest needed to trigger criteria]
+											["qg"] = 127489, -- Hexlord Raal
+											["sourceQuests"] = { 47440, 47439, }, -- Pa'ku, Master of Winds, Gonk, Lord of the Pack
+										}),		
+										q(47445, {	-- The Zanchuli Council	
+											["qg"] = 122641, -- Yazma
+											["sourceQuests"] = { 49615 }, -- Trust of a King
+										}),	
+									},
+								}),
+								--[[
+								crit(8, { -- March of the Loa
+									["groups"] = {
+									},
+								}),
+								--]]
 							},
 							["races"] = HORDE_ONLY,
 						})),
@@ -181,33 +296,33 @@ _.Zones =
 					["groups"] = {
 						n(134345, { -- Collector Kojo <Tortollan Seekers Emissary>
 							["groups"] = {
-								i(160543),	-- Tabard of the Tortollan Seekers
-								i(163513),	-- Cou'pa
-								i(161529),	-- Girdle of the Scroll-Sages
-								i(161534),	-- Legguards of Ai'twen's Resurgence
-								i(161494),	-- Sea-Treated Footwraps
-								i(161549),	-- Shellbuckle Girdle
-								i(161519),	-- Supple Moccasins of Pilgrimage
-								i(161544),	-- Vambraces of a Thousand Year Toil
-								i(161503),	-- Wristwraps of Scrollbinding
-								i(160538),	-- Cape of the Scroll Keepers*
-								i(163026),	-- Pattern: Embroidered Deep Sea Bag [Rank 2]
-								i(162298),	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]
-								i(162301),	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]
-								i(162288),	-- Recipe: Bountiful Captain's Feast [Rank 2]
-								i(162289),	-- Recipe: Bountiful Captain's Feast [Rank 3]
-								i(162358),	-- Recipe: Codex of the Quiet Mind [Rank 3]
-								i(162373),	-- Recipe: Contract: Champions of Azeroth [Rank 2]
-								i(162371),	-- Recipe: Contract: Tortollan Seekers [Rank 2]
-								i(162377),	-- Recipe: Darkmoon Card of War [Rank 3]
-								i(162136),	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]
-								i(162287),	-- Recipe: Galley Banquet [Rank 3]
-								i(162292),	-- Recipe: Grilled Catfish [Rank 3]
-								i(162352),	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]
-								i(162293),	-- Recipe: Seasoned Loins [Rank 3]
-								i(162137),	-- Recipe: Siren's Alchemist Stone [Rank 3]
-								i(162376),	-- Recipe: Tome of the Quiet Mind [Rank 3]
-								i(162023),	-- Technique: Glyph of the Dolphin [Rank 3]
+								i(160543), -- Tabard of the Tortollan Seekers
+								i(163513), -- Cou'pa
+								i(161529), -- Girdle of the Scroll-Sages
+								i(161534), -- Legguards of Ai'twen's Resurgence
+								i(161494), -- Sea-Treated Footwraps
+								i(161549), -- Shellbuckle Girdle
+								i(161519), -- Supple Moccasins of Pilgrimage
+								i(161544), -- Vambraces of a Thousand Year Toil
+								i(161503), -- Wristwraps of Scrollbinding
+								i(160538), -- Cape of the Scroll Keepers*
+								i(163026), -- Pattern: Embroidered Deep Sea Bag [Rank 2]
+								i(162298), -- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]
+								i(162301), -- Formula: Enchant Ring - Seal of Versatility [Rank 3]
+								i(162288), -- Recipe: Bountiful Captain's Feast [Rank 2]
+								i(162289), -- Recipe: Bountiful Captain's Feast [Rank 3]
+								i(162358), -- Recipe: Codex of the Quiet Mind [Rank 3]
+								i(162373), -- Recipe: Contract: Champions of Azeroth [Rank 2]
+								i(162371), -- Recipe: Contract: Tortollan Seekers [Rank 2]
+								i(162377), -- Recipe: Darkmoon Card of War [Rank 3]
+								i(162136), -- Recipe: Endless Tincture of Renewed Combat [Rank 3]
+								i(162287), -- Recipe: Galley Banquet [Rank 3]
+								i(162292), -- Recipe: Grilled Catfish [Rank 3]
+								i(162352), -- Recipe: Inscribed Vessel of Mysticism [Rank 3]
+								i(162293), -- Recipe: Seasoned Loins [Rank 3]
+								i(162137), -- Recipe: Siren's Alchemist Stone [Rank 3]
+								i(162376), -- Recipe: Tome of the Quiet Mind [Rank 3]
+								i(162023), -- Technique: Glyph of the Dolphin [Rank 3]
 							},
 						}),
 						n(132114, { -- Griftah <Amazing Amulets>
@@ -226,33 +341,33 @@ _.Zones =
 						}),
 						n(131287, { -- Natal'hakata <Zandalari Empire Emissary
 							["groups"] = {
-								i(160546),	-- Tabard of the Zandalari Empire
-								i(161516),	-- Bindings of the Disparate Tribes
-								i(161497),	-- Cord of the Loa Worshippers
-								i(161548),	-- Gonk Adherents Vambraces
-								i(161526),	-- Gral Worshipper's Waders
-								i(161546),	-- Grand Fleet Legplates
-								i(161665),	-- Reins of the Cobalt Pterrordax
-								i(161500),	-- Shadraspun Legwraps
-								i(161524),	-- Torcali's Grips of the Bounty
-								i(161517),	-- Waistcord of Pa'ku's Flight
-								i(160530),	-- Dinomancer's Cloak
-								i(162764),	-- Design: Laribole Staff of Alacrity [Rank 3]
-								i(162761),	-- Design: Owlseye Loop [Rank 3]
-								i(162765),	-- Design: Scarlet Diamond Staff of Intuition [Rank 3]
-								i(162717),	-- Formula: Enchant Ring - Pact of Haste [Rank 3]
-								i(162722),	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3]
-								i(162721),	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]
-								i(163317),	-- Recipe: Battle Potion of Stamina [Rank 3]
-								i(162704),	-- Recipe: Coastal Healing Potion [Rank 3]
-								i(162753),	-- Recipe: Contract: Zandalari Empire [Rank 2]
-								i(162696),	-- Recipe: Flask of Endless Fathoms [Rank 3]
-								i(162692),	-- Recipe: Potion of Replenishment [Rank 3]
-								i(162730),	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]
-								i(162731),	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]
-								i(162743),	-- Schematic: Deployable Attire Rearranger [Rank 3]
-								i(162742),	-- Schematic: Interdimensional Companion Repository [Rank 3]
-								i(162741),	-- Schematic: Organic Discombobulation Grenade [Rank 3]
+								i(160546), -- Tabard of the Zandalari Empire
+								i(161516), -- Bindings of the Disparate Tribes
+								i(161497), -- Cord of the Loa Worshippers
+								i(161548), -- Gonk Adherents Vambraces
+								i(161526), -- Gral Worshipper's Waders
+								i(161546), -- Grand Fleet Legplates
+								i(161665), -- Reins of the Cobalt Pterrordax
+								i(161500), -- Shadraspun Legwraps
+								i(161524), -- Torcali's Grips of the Bounty
+								i(161517), -- Waistcord of Pa'ku's Flight
+								i(160530), -- Dinomancer's Cloak
+								i(162764), -- Design: Laribole Staff of Alacrity [Rank 3]
+								i(162761), -- Design: Owlseye Loop [Rank 3]
+								i(162765), -- Design: Scarlet Diamond Staff of Intuition [Rank 3]
+								i(162717), -- Formula: Enchant Ring - Pact of Haste [Rank 3]
+								i(162722), -- Formula: Enchant Weapon - Deadly Navigation [Rank 3]
+								i(162721), -- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]
+								i(163317), -- Recipe: Battle Potion of Stamina [Rank 3]
+								i(162704), -- Recipe: Coastal Healing Potion [Rank 3]
+								i(162753), -- Recipe: Contract: Zandalari Empire [Rank 2]
+								i(162696), -- Recipe: Flask of Endless Fathoms [Rank 3]
+								i(162692), -- Recipe: Potion of Replenishment [Rank 3]
+								i(162730), -- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]
+								i(162731), -- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]
+								i(162743), -- Schematic: Deployable Attire Rearranger [Rank 3]
+								i(162742), -- Schematic: Interdimensional Companion Repository [Rank 3]
+								i(162741), -- Schematic: Organic Discombobulation Grenade [Rank 3]
 							},
 						}),
 						n(129597, { -- Trader Haw'li
@@ -264,66 +379,66 @@ _.Zones =
 				}),
 				n(0, { -- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796}, {
-						i(160146),	-- Saurifeather Crest
-						i(160151),	-- Saurifeather Mantle
-						i(160149),	-- Saurifeather Garments
-						i(160152),	-- Saurifeather Wraps
-						i(160147),	-- Saurifeather Gloves
-						i(160145),	-- Saurifeather Belt
-						i(160148),	-- Saurifeather Pants
-						i(160150),	-- Saurifeather Treads
-						i(160132),	-- Brutohide Faceguard
-						i(160134),	-- Brutohide Shoulderpads
-						i(160133),	-- Brutohide Vest
-						i(160128),	-- Brutohide Armwraps
-						i(160131),	-- Brutohide Gloves
-						i(160135),	-- Brutohide Belt
-						i(160130),	-- Brutohide Leggings
-						i(160129),	-- Brutohide Boots
-						i(160141),	-- Ravascale Helm
-						i(160143),	-- Ravascale Shoulderguards
-						i(160144),	-- Ravascale Hauberk
-						i(160139),	-- Ravascale Gloves
-						i(160138),	-- Ravascale Bracers
-						i(160137),	-- Ravascale Belt
-						i(160142),	-- Ravascale Legguards
-						i(160140),	-- Ravascale Striders
-						i(160122),	-- Direbone Frill Helmet
-						i(160124),	-- Direbone Frill Pauldrons	
-						i(160119),	-- Direbone Frill Chestplate
-						i(160126),	-- Direbone Frill Bracers
-						i(160120),	-- Direbone Frill Gauntlets
-						i(160121),	-- Direbone Frill Greatbelt
-						i(160123),	-- Direbone Frill Legplates
-						i(160125),	-- Direbone Frill Stompers
+						i(160146), -- Saurifeather Crest
+						i(160151), -- Saurifeather Mantle
+						i(160149), -- Saurifeather Garments
+						i(160152), -- Saurifeather Wraps
+						i(160147), -- Saurifeather Gloves
+						i(160145), -- Saurifeather Belt
+						i(160148), -- Saurifeather Pants
+						i(160150), -- Saurifeather Treads
+						i(160132), -- Brutohide Faceguard
+						i(160134), -- Brutohide Shoulderpads
+						i(160133), -- Brutohide Vest
+						i(160128), -- Brutohide Armwraps
+						i(160131), -- Brutohide Gloves
+						i(160135), -- Brutohide Belt
+						i(160130), -- Brutohide Leggings
+						i(160129), -- Brutohide Boots
+						i(160141), -- Ravascale Helm
+						i(160143), -- Ravascale Shoulderguards
+						i(160144), -- Ravascale Hauberk
+						i(160139), -- Ravascale Gloves
+						i(160138), -- Ravascale Bracers
+						i(160137), -- Ravascale Belt
+						i(160142), -- Ravascale Legguards
+						i(160140), -- Ravascale Striders
+						i(160122), -- Direbone Frill Helmet
+						i(160124), -- Direbone Frill Pauldrons	
+						i(160119), -- Direbone Frill Chestplate
+						i(160126), -- Direbone Frill Bracers
+						i(160120), -- Direbone Frill Gauntlets
+						i(160121), -- Direbone Frill Greatbelt
+						i(160123), -- Direbone Frill Legplates
+						i(160125), -- Direbone Frill Stompers
 					}),
 					["crs"] = {
-						120900,	-- Amani Warrior
-						122872,	-- Atal'Shadra Bloodletter
-						126618,	-- Bloodraged Pterrodax
-						126153,	-- Crimson Cultist
-						130954,	-- Da'kani Highbrow
-						125037,	-- Dreadcoil Myrmidon
-						125174,	-- Dreeadcoil Seeker
-						128434,	-- Feasting Skyscreamer
-						132409,	-- Feathered Viper
-						135886,	-- Forsaken Deathguard
-						139440,	-- Jabra'kan the Poacher
-						129487,	-- Jambani Crusher
-						129515,	-- Kao-Tien Battlemaster
-						128632,	-- Nazeshi Overseer
-						133136,	-- Rastakhan's Might Mutineer
-						129231,	-- Rixxa Fluxflame <Chief Scientist>
-						121017,	-- Sandfury Axe Thrower <Sandfury Tribe>
-						122504,	-- Savagemane Ravasaur
-						133857,	-- Shadraspawn Lurker
-						127879,	-- Shieldbearer of Zul
-						127836,	-- Squalfin Oracle
-						127839,	-- Squalfin Sailsplitter
-						128712,	-- Tidemistress Nazesh
-						130661,	-- Venture Co. Earthshaper
-						123135,	-- Wild Sabertusk
-						143678,	-- Zandalari Axe Thrower
+						120900, -- Amani Warrior
+						122872, -- Atal'Shadra Bloodletter
+						126618, -- Bloodraged Pterrodax
+						126153, -- Crimson Cultist
+						130954, -- Da'kani Highbrow
+						125037, -- Dreadcoil Myrmidon
+						125174, -- Dreeadcoil Seeker
+						128434, -- Feasting Skyscreamer
+						132409, -- Feathered Viper
+						135886, -- Forsaken Deathguard
+						139440, -- Jabra'kan the Poacher
+						129487, -- Jambani Crusher
+						129515, -- Kao-Tien Battlemaster
+						128632, -- Nazeshi Overseer
+						133136, -- Rastakhan's Might Mutineer
+						129231, -- Rixxa Fluxflame <Chief Scientist>
+						121017, -- Sandfury Axe Thrower <Sandfury Tribe>
+						122504, -- Savagemane Ravasaur
+						133857, -- Shadraspawn Lurker
+						127879, -- Shieldbearer of Zul
+						127836, -- Squalfin Oracle
+						127839, -- Squalfin Sailsplitter
+						128712, -- Tidemistress Nazesh
+						130661, -- Venture Co. Earthshaper
+						123135, -- Wild Sabertusk
+						143678, -- Zandalari Axe Thrower
 					},
 				}),
 			},
