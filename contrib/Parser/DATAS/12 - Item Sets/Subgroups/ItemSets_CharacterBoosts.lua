@@ -232,48 +232,51 @@ _.GearSets =
 					}),
 					n(-148, { -- Streamtalker
 						["groups"] = {
+							i(153973),	-- Streamtalker Claws
+							i(153979),	-- Streamtalker Aegis
+							i(153983),	-- Streamtalker Talons
 							i(153977),	-- Streamtalker Coif
-							i(154003),	-- Streamtalker Cowl
-							i(153987),	-- Streamtalker Helm
+							--i(154003),	-- Streamtalker Cowl [Not actually given]
+							--i(153987),	-- Streamtalker Helm [Not actually given]
 							i(153968),	-- Streamtalker Medallion
-							i(153993),	-- Streamtalker Necklace
-							i(153963),	-- Streamtalker Choker
+							--i(153993),	-- Streamtalker Necklace
+							--i(153963),	-- Streamtalker Choker
 							i(153980),	-- Streamtalker Pauldrons
-							i(153989),	-- Streamtalker Shoulderguards
-							i(154006),	-- Streamtalker Spaulders
+							--i(153989),	-- Streamtalker Shoulderguards [Not actually given]
+							--i(154006),	-- Streamtalker Spaulders [Not actually given]
 							i(153998),	-- Streamtalker Cloak of Destruction
-							i(153962),	-- Streamtalker Cloak of Rage
-							i(153992),	-- Streamtalker Cloak of Wisdom
+							--i(153962),	-- Streamtalker Cloak of Rage [Not actually given]
+							--i(153992),	-- Streamtalker Cloak of Wisdom [Not actually given]
 							i(153984),	-- Streamtalker Chestguard
 							i(153974),	-- Streamtalker Tunic
-							i(154000),	-- Streamtalker Vest
+							--i(154000),	-- Streamtalker Vest [Not actually given]
 							i(153982),	-- Streamtalker Armbands
-							i(153991),	-- Streamtalker Armguard
-							i(154008),	-- Streamtalker Bracers
+							--i(153991),	-- Streamtalker Armguard [Not actually given]
+							--i(154008),	-- Streamtalker Bracers [Not actually given]
 							i(153976),	-- Streamtalker Gloves
-							i(154002),	-- Streamtalker Grips
-							i(153986),	-- Streamtalker Handguards
+							--i(154002),	-- Streamtalker Grips [Not actually given]
+							--i(153986),	-- Streamtalker Handguards [Not actually given]
 							i(153981),	-- Streamtalker Belt
-							i(154007),	-- Streamtalker Girdle
-							i(153990),	-- Streamtalker Waistguard
-							i(154004),	-- Streamtalker Leggings
-							i(153988),	-- Streamtalker Legguards
+							--i(154007),	-- Streamtalker Girdle [Not actually given]
+							--i(153990),	-- Streamtalker Waistguard [Not actually given]
+							--i(154004),	-- Streamtalker Leggings [Not actually given]
+							--i(153988),	-- Streamtalker Legguards [Not actually given]
 							i(153978),	-- Streamtalker Legwraps
 							i(153975),	-- Streamtalker Boots
-							i(153985),	-- Streamtalker Greaves
-							i(154001),	-- Streamtalker Sabatons
+							--i(153985),	-- Streamtalker Greaves [Not actually given]
+							--i(154001),	-- Streamtalker Sabatons [Not actually given]
 							i(153971),	-- Streamtalker Band of Destruction
-							i(153965),	-- Streamtalker Band of Onslaught
-							i(153996),	-- Streamtalker Band of Wisdom
+							--i(153965),	-- Streamtalker Band of Onslaught
+							--i(153996),	-- Streamtalker Band of Wisdom
 							i(153970),	-- Streamtalker Ring of Destruction
-							i(153966),	-- Streamtalker Ring of Onslaught
-							i(153995),	-- Streamtalker Ring of Wisdom
+							--i(153966),	-- Streamtalker Ring of Onslaught
+							--i(153995),	-- Streamtalker Ring of Wisdom
 							i(153972),	-- Streamtalker Stone of Destruction
-							i(153967),	-- Streamtalker Stone of Rage
-							i(153997),	-- Streamtalker Stone of Wisdom
+							--i(153967),	-- Streamtalker Stone of Rage
+							--i(153997),	-- Streamtalker Stone of Wisdom
 							i(153969),	-- Streamtalker Idol of Destruction
-							i(153964),	-- Streamtalker Idol of Rage
-							i(153994),	-- Streamtalker Idol of Wisdom
+							--i(153964),	-- Streamtalker Idol of Rage
+							--i(153994),	-- Streamtalker Idol of Wisdom
 						},
 						["classes"] = { 7 }
 					}),	
