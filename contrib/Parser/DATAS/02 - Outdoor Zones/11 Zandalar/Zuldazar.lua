@@ -191,11 +191,56 @@ _.Zones =
 										}),	
 									},
 								}),
-								--[[
 								crit(3, { -- Warport Rastari
 									["groups"] = {
+										q(49122, {	-- A Port in Peril	
+											["qg"] = 127815	-- Zolani
+										}),	
+										q(49148, {	-- Crumbling Apart	
+											["qg"] = 127815,	-- Zolani
+											["sourceQuests"] = { 49147 },	-- Show of Strength
+										}),		
+										q(49149, {	-- Embrace the Voodoo	
+											["qg"] = 127837,	-- Kaza'jin the Wavebinder
+											["sourceQuests"] = { 49148 },	-- Crumbling Apart
+										}),		
+										q(49145, {	-- No Troll Left Behind	
+											["qg"] = 127814,	-- Habutu
+											["sourceQuests"] = { 49146 },	-- Spirits' Belongings
+										}),		
+										q(49146, {	-- Spirits' Belongings	
+											["qg"] = 127837,	-- Kaza'jin the Wavebinder
+											["sourceQuests"] = { 49122 },	-- A Port in Peril
+										}),		
+										q(49147, {	-- Show of Strength	
+											["groups"] = {
+												i(155304),	-- Stormbinder Signet Ring
+												i(158412),	-- Zanchuli Cuffs
+												i(158413),	-- Rastari Bracers
+												i(158414),	-- Torcalin Bindings
+												i(158415),	-- Jambani Wristwraps
+											},
+											["qg"] = 127814,	-- Habutu
+											["sourceQuests"] = { 49144 },	-- Wrath of the Zandalari
+										}),		
+										q(47879, {	-- The Betrayal of Zul [Note: Final Quest needed to trigger criteria]
+											["qg"] = 129409,	-- Zolani
+											["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
+										}),		
+										q(49310, {	-- The Prophet's Ploy	
+											["qg"] = 127837,	-- Kaza'jin the Wavebinder
+											["sourceQuests"] = { 49309 },	-- Thunder's Fall
+										}),		
+										q(49309, {	-- Thunder's Fall	
+											["sourceQuests"] = { 49149 },	-- Embrace the Voodoo
+										}),		
+										q(49144, {	-- Wrath of the Zandalari	
+											["qg"] = 127815,	-- Zolani
+											["sourceQuests"] = { 49145 },	-- No Troll Left Behind
+										}),	
 									},
 								}),
+								--[[
 								crit(4, { -- Web of Lies
 									["groups"] = {
 									},
