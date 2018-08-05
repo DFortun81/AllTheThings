@@ -198,21 +198,29 @@ _.Zones =
 										}),	
 										q(49148, {	-- Crumbling Apart	
 											["qg"] = 127815,	-- Zolani
-											["sourceQuests"] = { 49147 },	-- Show of Strength
-										}),		
+											["sourceQuests"] = { 
+												49146, -- Spirits' Belongings
+												49145, -- No Troll Left Behind
+												49144, -- Wrath of the Zandalari
+											},	
+										}),
 										q(49149, {	-- Embrace the Voodoo	
 											["qg"] = 127837,	-- Kaza'jin the Wavebinder
-											["sourceQuests"] = { 49148 },	-- Crumbling Apart
-										}),		
+											["sourceQuests"] = { 
+												49146, -- Spirits' Belongings
+												49145, -- No Troll Left Behind
+												49144, -- Wrath of the Zandalari
+											},	
+										}),
 										q(49145, {	-- No Troll Left Behind	
 											["qg"] = 127814,	-- Habutu
-											["sourceQuests"] = { 49146 },	-- Spirits' Belongings
+											["sourceQuests"] = { 49122 },	-- A Port in Peril
 										}),		
 										q(49146, {	-- Spirits' Belongings	
 											["qg"] = 127837,	-- Kaza'jin the Wavebinder
 											["sourceQuests"] = { 49122 },	-- A Port in Peril
-										}),		
-										q(49147, {	-- Show of Strength	
+										}),	
+										q(49147, {	-- Show of Strength
 											["groups"] = {
 												i(155304),	-- Stormbinder Signet Ring
 												i(158412),	-- Zanchuli Cuffs
@@ -221,7 +229,11 @@ _.Zones =
 												i(158415),	-- Jambani Wristwraps
 											},
 											["qg"] = 127814,	-- Habutu
-											["sourceQuests"] = { 49144 },	-- Wrath of the Zandalari
+											["sourceQuests"] = { 
+												49146, -- Spirits' Belongings
+												49145, -- No Troll Left Behind
+												49144, -- Wrath of the Zandalari
+											},	
 										}),		
 										q(47879, {	-- The Betrayal of Zul [Note: Final Quest needed to trigger criteria]
 											["qg"] = 129409,	-- Zolani
@@ -230,10 +242,14 @@ _.Zones =
 										q(49310, {	-- The Prophet's Ploy	
 											["qg"] = 127837,	-- Kaza'jin the Wavebinder
 											["sourceQuests"] = { 49309 },	-- Thunder's Fall
-										}),		
-										q(49309, {	-- Thunder's Fall	
-											["sourceQuests"] = { 49149 },	-- Embrace the Voodoo
-										}),		
+										}),
+										q(49309, {	-- Thunder's Fall
+											["sourceQuests"] = {
+												49147, -- Show of Strength
+												49148, -- Crumbling Apart
+												49149, -- Embrace the Voodoo
+											}, 
+										}),
 										q(49144, {	-- Wrath of the Zandalari	
 											["qg"] = 127815,	-- Zolani
 											["sourceQuests"] = { 49145 },	-- No Troll Left Behind
