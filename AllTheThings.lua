@@ -6769,7 +6769,7 @@ function app:GetDataCache()
 		if app.Categories.WorldDrops then
 			db = {};
 			db.expanded = false;
-			db.text = L("WORLD_DROPS");
+			db.text = TRANSMOG_SOURCE_4; -- L("WORLD_DROPS");
 			db.icon = "Interface\\ICONS\\INV_Misc_Map02";
 			db.g = app.Categories.WorldDrops;
 			table.insert(g, db);

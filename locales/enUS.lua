@@ -444,6 +444,7 @@ AllTheThings.Locales.enUS = {
 		[-222] = "Interface\\Icons\\inv_misc_coin_01",							-- Treasure Hunter
 		[-223] = "Interface\\Icons\\achievement_quests_completed_daily_07",		-- Daily
 		[-224] = "Interface\\Icons\\ClassIcon_DemonHunter", 					-- Demon Hunter
+		[-225] = "Interface\\ICONS\\INV_Misc_Map02",							-- World Drop
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1054,6 +1055,7 @@ AllTheThings.Locales.enUS = {
 		[-223] = DAILY,															-- Daily
 		[-224] = "Illidari",													-- Illidari
 		[-225] = "Elemental Bonds",												-- Elemental Bonds
+		[-226] = TRANSMOG_SOURCE_4,												-- World Drop
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
