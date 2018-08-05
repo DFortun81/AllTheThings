@@ -13,7 +13,6 @@ profession(164, { -- Blacksmithing
 	}),
 	n(-160, { -- Mounts
 		i(137686), -- Steelbound Harness
-		i(153594), -- Xiwyllag ATV
 	}),
 	tier(1, { -- Classic
 		--[[n(-2, { -- Vendors
