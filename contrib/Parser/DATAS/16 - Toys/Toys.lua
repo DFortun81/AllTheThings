@@ -4,16 +4,16 @@
 _.Toys =
 {
 	n(-4, { 	-- Achievement
-		i(134032), -- Elite Pennant
+		i(134032),		-- Elite Pennant
 		i(139773),		-- Emerald Winds
-		i(164310), -- Glorious Pennant
+		i(164310),		-- Glorious Pennant
 		i(87528),		-- Honorary Brewmaster Keg
-		i(134026), -- Honorable Pennant
-		un(4, i(89205)), 	-- Mini Mana Bomb (Horde) No Longer Available
+		i(134026),		-- Honorable Pennant
+		un(4, i(89205)),	-- Mini Mana Bomb (Horde) No Longer Available
 		i(143660), 		-- Mrgrglhjorn
 		i(86596),		-- Nat's Fishing Chair
 		i(122700), 		-- Portable Audiophone
-		i(134031), -- Prestigious Pennant
+		i(134031),		-- Prestigious Pennant
 		i(119215), 		-- Robo-Gnomebulator
 		i(92738),		-- Safari Hat
 		i(98132),		-- Shado-Pan Geyser Gun
@@ -115,7 +115,7 @@ _.Toys =
 		i(118221),		-- Petrification Stone
 		i(13379),		-- Piccolo of the Flaming Fire
 		i(147867), 		-- Pilfered Sweeper
-		un(7, i(140363)), 		-- Pocket Fel Spreader
+		un(7, i(140363)),	-- Pocket Fel Spreader
 		i(127394), 		-- Podling Camouflage
 		i(153181),  	-- Red Conservatory Scroll
 		i(104294), 		-- Rime of the Time-Lost Mariner
@@ -176,10 +176,10 @@ _.Toys =
 		i(36862),		-- Worn Troll Dice
 		i(153180),  	-- Yellow Conservatory Scroll
 	}),
-	n(-36, { 	-- In-Game Shop
-		i(112324), 	-- Nightmarish Hitching Post
+	n(-36, {	-- In-Game Shop
+		i(112324),	-- Nightmarish Hitching Post
 	}),
-	n(-38, { 	-- Profession
+	n(-38, {	-- Profession
 		n(-191, {	-- Archaeology
 			i(89614), 		-- Anatomical Dummy
 			i(69776),		-- Ancient Amber
@@ -224,7 +224,7 @@ _.Toys =
 				i(30542),		-- Dimensional Ripper - Area 52
 				i(18984),		-- Dimensional Ripper - Everlook
 			}),
-			n(-179, {		-- Gnomish Engineering
+			n(-179, {	-- Gnomish Engineering
 				i(40727),		-- Gnomish Gravity Well
 				i(40895),		-- Gnomish X-Ray Specs
 				i(18986),		-- Ultrasafe Transporter: Gadgetzan
@@ -257,7 +257,7 @@ _.Toys =
 			i(129211),		-- Steamy Romance Novel Kit
 		}),
 		n(-186, {	-- Jewelcrafting
-			i(115503),	-- Blazing Diamond Pendant (Horde)
+			i(115503),		-- Blazing Diamond Pendant (Horde)
 			i(130254),		-- Chatterstone
 			i(130251),		-- JewelCraft
 		}),
@@ -278,7 +278,7 @@ _.Toys =
 	}),
 	n(-17, { 	-- Quest
 		i(147838), 		-- Akazamzarak's Spare Hat
-		i(119217), 	-- Alliance Flag of Victory (Alliance)
+		i(119217),		-- Alliance Flag of Victory (Alliance)
 		i(118191), 		-- Archmage Vargoth's Spare Staff
 		i(118427),		-- Autographed Hearthstone Card
 		i(119093),		-- Aviana's Feather
@@ -291,19 +291,19 @@ _.Toys =
 		i(131933),		-- Critter Hand Cannon
 		i(142496),		-- Dirty Spoon
 		i(118935),		-- Ever-Blooming Frond
-		i(53057),	-- Faded Wizard Hat (Horde)
+		i(53057),		-- Faded Wizard Hat (Horde)
 		i(142495),		-- Fake Teeth
-		i(119145),	-- Firefury Totem (Horde)
+		i(119145),		-- Firefury Totem (Horde)
 		i(119083),		-- Fruit Basket
 		i(118937), 		-- Gamon's Braid
-		i(95589),	-- Glorious Standard of the Kirin Tor Offensive (Alliance)
+		i(95589),		-- Glorious Standard of the Kirin Tor Offensive (Alliance)
 		i(95590),		-- Glorious Standard of the Sunreaver Onslaught (Horde)
 		i(88417),		-- Gokk'lok's Shell
-		i(119218),	-- Horde Flag of Victory (Horde)
+		i(119218),		-- Horde Flag of Victory (Horde)
 		i(88385),		-- Hozen Idol
 		i(88579), 		-- Jin Warmkeg's Brew
 		i(88580),		-- Ken-Ken's Mask
-		i(95567),	-- Kirin Tor Beacon (Alliance)
+		i(95567),		-- Kirin Tor Beacon (Alliance)
 		i(88531),		-- Lao Chin's Last Mug
 		i(71259), 		-- Leyara's Locket
 		i(119039), 		-- Lilian's Warning Sign
@@ -314,7 +314,7 @@ _.Toys =
 		i(138873),		-- Mystical Frosh Hat
 		i(130209), 		-- Never Ending Toy Chest
 		i(123851),		-- Photo B.O.M.B.
-		i(30690),	-- Power Converter (Alliance)
+		i(30690),		-- Power Converter (Alliance)
 		i(88370), 		-- Puntable Marmot
 		i(142494),		-- Purple Blossom
 		i(133998),		-- Rainbow Generator
@@ -325,12 +325,12 @@ _.Toys =
 		i(122674),		-- S.E.L.F.I.E. Camera MkII
 		i(88387), 		-- Shushen's Spittoon
 		i(88381), 		-- Silversage Incense
-		i(95568),	-- Sunreaver Beacon (Horde)
+		i(95568),		-- Sunreaver Beacon (Horde)
 		i(52253), 		-- Sylvanas' Music Box
 		i(80822), 		-- The Golden Banana
 		i(142497),		-- Tiny Pack
 		i(88584), 		-- Totem of Harmony
-		i(119144),	-- Touch of the Naaru (Alliance)
+		i(119144),		-- Touch of the Naaru (Alliance)
 		i(115506), 		-- Treessassin's Guise
 		i(88377),		-- Turnip Paint \"Gun\"
 		i(88375), 		-- Turnip Punching Bag
@@ -361,8 +361,8 @@ _.Toys =
 		un(10, i(38578)),	-- The Flag of Ownership
 		un(10, i(69215)), 	-- War Party Hitching Post
 	}),
-	n(-3, { 	-- World Event
-		n(-173, { 	-- Timewalking
+	n(-3, {		-- World Event
+		n(-173, {	-- Timewalking
 			i(144072),	-- Adopted Puppy Crate
 			i(129929),	-- Ever-Shifting Mirror
 			i(151016), 	-- Fractured Necrolyte Skull
@@ -375,7 +375,7 @@ _.Toys =
 			i(151184), 	-- Verdant Throwing Sphere
 			i(129938),	-- Will of Northrend
 		}),
-		n(-174, { 	-- Darkmoon Faire
+		n(-174, {	-- Darkmoon Faire
 			i(122126), 	-- Attraction Sign
 			i(116115),	-- Blazing Wings
 			i(151265), 	-- Blight Boar Microphone
@@ -389,6 +389,7 @@ _.Toys =
 			i(75042), 	-- Flimsy Yellow Balloon
 			i(122120),	-- Gaze of the Darkmoon
 			i(116139),	-- Haunting Memento
+			i(162539),	-- Hot Buttered Popcorn (added in 8.0.1)
 			i(101571),	-- Moonfang Shroud
 			i(105898), 	-- Moonfang's Paw
 			i(116067),	-- Ring of Broken Promises
@@ -602,11 +603,11 @@ _.Toys =
 			["classes"] = {11},
 		}),
 		i(134004),		-- Noble's Eternal Elementium Signet
-		i(45014),	-- Orgrimmar Banner (Horde)
+		i(45014),		-- Orgrimmar Banner (Horde)
 		i(89869), 		-- Pandaren Scarecrow
 		i(130158),		-- Path of Elothir
-		i(115468),	-- Permanent Frost Essence (Horde)
-		i(115472),	-- Permanent Time Bubble (Alliance)
+		i(115468),		-- Permanent Frost Essence (Horde)
+		i(115472),		-- Permanent Time Bubble (Alliance)
 		i(127864),		-- Personal Spotlight
 		i(140309),		-- Prismatic Bauble
 		i(136934, { 	-- Raging Elemental Stone -- only Shaman
@@ -622,17 +623,17 @@ _.Toys =
 			},
 			["classes"] = {5},
 		}),
-		i(45015),	-- Sen'jin Banner (Horde)
+		i(45015),		-- Sen'jin Banner (Horde)
 		i(97942), 		-- Sen'jin Spirit Drum
-		i(119421), 	-- Sha'tari Defender's Medallion (Alliance)
-		i(45017),	-- Silvermoon City Banner (Horde)
+		i(119421),		-- Sha'tari Defender's Medallion (Alliance)
+		i(45017),		-- Silvermoon City Banner (Horde)
 		i(137663),		-- Soft Foam Sword
-		i(119182),	-- Soul Evacuation Crystal (Alliance)
+		i(119182),		-- Soul Evacuation Crystal (Alliance)
 		i(127695),		-- Spirit Wand
 		i(91904), 		-- Stackable Stag
 		i(66888), 		-- Stave of Fur and Claw
-		i(45011),	-- Stormwind Banner (Alliance)
-		i(150743),	-- Surviving Kalimdor (Alliance)
+		i(45011),		-- Stormwind Banner (Alliance)
+		i(150743),		-- Surviving Kalimdor (Alliance)
 		i(130157),		-- Syxsehnz Rod
 		i(136935, {		-- Tadpole Cloudseeder -- only Shaman
 			["groups"] = {
@@ -646,20 +647,20 @@ _.Toys =
 			["classes"] = {5},
 		}),
 		i(130151),		-- The "Devilsaur" Lunchbox
-		i(150745),	-- The Azeroth Campaign (Horde)
-		i(45013),	-- Thunder Bluff Banner (Horde)
-		i(119160),	-- Tickle Totem (Horde)
-		i(150746),	-- To Modernize the Provisioning of Azeroth (Alliance)
-		i(63141),	-- Tol Barad Searchlight (Alliance)
-		i(64997),	-- Tol Barad Searchlight (Horde)
+		i(150745),		-- The Azeroth Campaign (Horde)
+		i(45013),		-- Thunder Bluff Banner (Horde)
+		i(119160),		-- Tickle Totem (Horde)
+		i(150746),		-- To Modernize the Provisioning of Azeroth (Alliance)
+		i(63141),		-- Tol Barad Searchlight (Alliance)
+		i(64997),		-- Tol Barad Searchlight (Horde)
 		i(130191), 		-- Trapped Treasure Chest Kit
-		i(45016),	-- Undercity Banner (Horde)
+		i(45016),		-- Undercity Banner (Horde)
 		i(136937, { 	-- Vol'jin's Serpent Totem -- only Shaman
 			["groups"] = {
 			},
 			["classes"] = {7},
 		}),
-		i(150744),	-- Walking Kalimdor with the Earthmother (Horde)
+		i(150744),		-- Walking Kalimdor with the Earthmother (Horde)
 		i(138490, {		-- Waterspeaker's Totem -- only Shaman
 			["groups"] = {
 			},
