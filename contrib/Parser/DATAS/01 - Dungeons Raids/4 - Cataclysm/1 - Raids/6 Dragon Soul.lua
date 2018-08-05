@@ -192,6 +192,7 @@ _.Instances =
 									i(78408),	-- Interrogator's Bloody Footpads
 									i(78411),	-- Mindstrainer Treads
 									i(77971), 	-- Insignia of the Corrupted Mind
+									i(77970),	-- Soulshifter Vortex
 								})),
 								cr(55689, e(317, {	-- Hagara the Stormbinder
 									i(78426),	-- Lightning Rod
@@ -214,6 +215,7 @@ _.Instances =
 									i(78439),	-- Stillheart Warboots
 									i(78442),	-- Treads of Sordid Screams
 									i(77972),	-- Creche of the Final Dragon
+									i(78440),	-- Curled Twilight Claw
 								})),
 								cr(56427, e(332, {	-- Warmaster Blackthorn
 									i(78453),	-- Ataraxis, Cudgel of the Warmaster
