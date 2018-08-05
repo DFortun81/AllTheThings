@@ -6796,7 +6796,7 @@ function app:GetDataCache()
 		-- Expansion Features
 		if app.Categories.ExpansionFeatures then
 			db = {};
-			db.lvl = 71;
+			db.lvl = 67;
 			db.expanded = false;
 			db.text = GetCategoryInfo(15301);
 			db.icon = "Interface\\ICONS\\Achievement_Battleground_TempleOfKotmogu_02_Green";

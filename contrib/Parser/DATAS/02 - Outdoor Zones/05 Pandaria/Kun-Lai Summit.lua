@@ -969,23 +969,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-18, { 	-- Scenario's
-					n(-19, { 	-- Arena of Annihilation m(480
-						["groups"] = {
-							q(31207, {
-								i(90466),
-								i(90465),
-								i(90464),
-								i(90463),
-								i(90462),
-								i(90461),
-								i(90460),
-								i(90459),
-							}),
-						},
-						["mapID"] = 480,
-					}),
-				}),
 				n(-2, {		-- Vendors
 					nh(75695, { -- Acon Deathwielder
 						i(144251, { -- Arsenal: Grievous Gladiator's Weapons [ Horde / Tested ]
