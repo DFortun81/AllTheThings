@@ -300,10 +300,6 @@ _.Zones =
 							}),
 						}),
 						crit(5, {	-- Consumed by Madness
-							q(13525, {	-- What's Happening to the Blackwood Furbolg?
-								["qg"] = 33250,	-- Foriel Broadleaf
-								["isBreadcrumb"] = true,	-- for "The Bear's Paw"
-							}),
 							q(13526, {	-- The Bear's Paw
 								["qg"] = 32967,	-- Elder Brolg
 								["sourceQuests"] = { 13525 },	-- What's Happening to the Blackwood Furbolg?
@@ -630,6 +626,10 @@ _.Zones =
 								["qg"] = 32932,	-- Moon Priestess Tharill
 							}),
 						-- Need Header for "Grove of the Ancients"
+							q(13525, {	-- What's Happening to the Blackwood Furbolg?
+								["qg"] = 33250,	-- Foriel Broadleaf
+								["isBreadcrumb"] = true,	-- for "The Bear's Paw"
+							}),
 							q(26408, {	-- Ashes in Ashenvale 
 								["qg"] = 34402,	-- Balren of the Claw
 								["isBreadcrumb"] = true,
