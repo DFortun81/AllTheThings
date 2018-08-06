@@ -5,12 +5,53 @@ profession(165, { -- Leatherworking
 		i(108883), -- Riding Harness
 	}),
 	n(-161, { 	-- Toy
-		i(129961), -- Flaming Loop
+		i(129961), -- Flaming Hoop
 		i(129956), -- Leather Love Seat
 		i(129960), -- Leather Pet Bed
 		i(129958), -- Leather Pet Leash
 	}),
-	tier(1, { 	-- Classic
+	tier(1, { -- Classic	
+		n(-17, { -- Quests
+			q(769, { -- Kodo Hide Bag (Thunder Bluff)
+				["g"] = {
+					i(5083, { -- Pattern: Kodo Hide Bag
+						recipe(5244), -- Pattern: Kodo Hide Bag
+					}),
+				},
+				["qg"] = 3050, -- Veren Tallstrider
+				["races"] = HORDE_ONLY,
+			}),
+		}),	
+		n(-2, { --Vendors
+		}),
+		n(-26, { -- Drops
+			i(7280, { -- Pattern: Rugged Leather Pants
+				recipe(7288), -- Pattern: Rugged Leather Pants
+			}),
+			i(2311, { -- Pattern: White Leather Jerkin
+				recipe(2407), -- Pattern: White Leather Jerkin
+			}),
+			i(2312, { -- Pattern: Fine Leather Gloves
+				recipe(2408), -- Pattern: Fine Leather Gloves
+			}),	
+		}),	
+		n(-15, { -- Recipes
+			recipe(3816), -- Pattern: Cured Light Hide			
+			recipe(2161), -- Pattern: Embossed Leather Boots			
+			recipe(2162), -- Pattern: Embossed Leather Cloak
+			recipe(3756), -- Pattern: Embossed Leather Gloves
+			recipe(3759), -- Pattern: Embossed Leather Pants
+			recipe(2160), -- Pattern: Embossed Leather Vest
+			recipe(3753), -- Pattern: Handstitched Leather Belt			
+			recipe(2149), -- Pattern: Handstitched Leather Boots
+			recipe(9059), -- Pattern: Handstitched Leather Bracers
+			recipe(9058), -- Pattern: Handstitched Leather Cloak
+			recipe(2153), -- Pattern: Handstitched Leather Pants
+			recipe(7126), -- Pattern: Handstitched Leather Vest			
+			recipe(2152), -- Pattern: Light Armor Kit
+			recipe(2881), -- Pattern: Light Leather
+			recipe(9065), -- Pattern: Light Leather Bracers		
+		}),
 		nld({		-- Legacy
 			n(-322, {	-- Cloak
 				un(8, i(18509)),	-- Chromatic Cloak
@@ -64,8 +105,7 @@ profession(165, { -- Leatherworking
 		n(-322, { 	-- Cloak
 			i(8216),	-- Big Voodoo Cloak
 			i(7283),	-- Black Whelp Cloak
-			i(2316),	-- Dark Leather Cloak
-			i(2310),	-- Embossed Leather Cloak
+			i(2316),	-- Dark Leather Cloak		
 			i(2308),	-- Fine Leather Cloak
 			i(7377),	-- Frost Leather Cloak
 			i(5965),	-- Guardian Cloak
@@ -106,15 +146,10 @@ profession(165, { -- Leatherworking
 			i(7378),	-- Dusky Bracers
 			i(7374),	-- Dusky Leather Armor
 			i(7373),	-- Dusky Leather Leggings
-			i(7352),	-- Earthen Leather Shoulders
-			i(2309),	-- Embossed Leather Boots
-			i(4239),	-- Embossed Leather Gloves
-			i(4242),	-- Embossed Leather Pants
-			i(2300),	-- Embossed Leather Vest
+			i(7352),	-- Earthen Leather Shoulders		
 			i(8349),	-- Feathered Breastplate
 			i(4246),	-- Fine Leather Belt
-			i(2307),	-- Fine Leather Boots
-			i(2312),	-- Fine Leather Gloves
+			i(2307),	-- Fine Leather Boots			
 			i(5958),	-- Fine Leather Pants
 			i(4243),	-- Fine Leather Tunic
 			i(15071),	-- Frostsaber Boots
@@ -144,8 +179,7 @@ profession(165, { -- Leatherworking
 			i(4251),	-- Hillman's Shoulders
 			i(15066),	-- Ironfeather Breastplate
 			i(15067),	-- Ironfeather Shoulders
-			i(19149),	-- Lava Belt
-			i(7281),	-- Light Leather Bracers
+			i(19149),	-- Lava Belt			
 			i(7282),	-- Light Leather Pants
 			i(15061),	-- Living Shoulders
 			i(19044),	-- Might of the Timbermaw
@@ -164,8 +198,7 @@ profession(165, { -- Leatherworking
 			i(7358),	-- Pilferer's Gloves
 			i(4456),	-- Raptor Hide Belt
 			i(4455),	-- Raptor Hide Harness
-			i(7284),	-- Red Whelp Gloves
-			i(7280),	-- Rugged Leather Pants
+			i(7284),	-- Red Whelp Gloves			
 			i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
 			i(15093),	-- Runic Leather Belt (Trainable now, old Pattern id 15745 used to teach this.)
 			i(15092),	-- Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
@@ -184,8 +217,7 @@ profession(165, { -- Leatherworking
 			i(15054),	-- Volcanic Leggings
 			i(15055),	-- Volcanic Shoulders
 			i(15064),	-- Warbear Harness
-			i(15065),	-- Warbear Woolies
-			i(2311),	-- White Leather Jerkin
+			i(15065),	-- Warbear Woolies			
 			i(15085),	-- Wicked Leather Armor (Trainable now, old Pattern id 15773 used to teach this.)
 			i(15088),	-- Wicked Leather Belt (Trainable now, old Pattern id 15768 used to teach this.)
 			i(15084),	-- Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
@@ -1136,8 +1168,7 @@ profession(165, { -- Leatherworking
 		i(29215),	-- Pattern: Felstalker Breastplate
 		i(25740),	-- Pattern: Felstalker Breastplate
 		i(2406),	-- Pattern: Fine Leather Boots
-		i(2408),	-- Pattern: Fine Leather Gloves
-		i(5972),	-- Pattern: Fine Leather Pants
+		i(2408),	-- Pattern: Fine Leather Gloves		
 		i(86272),	-- Pattern: Fists of Lightning
 		i(29693),	-- Pattern: Flamescale Belt
 		i(29691),	-- Pattern: Flamescale Boots
@@ -1203,8 +1234,7 @@ profession(165, { -- Leatherworking
 		i(15735),	-- Pattern: Ironfeather Shoulders
 		i(86276),	-- Pattern: Ironscale Leg Armor
 		i(47634),	-- Pattern: Knightbane Carapace
-		i(47651),	-- Pattern: Knightbane Carapace
-		i(5083),	-- Pattern: Kodo Hide Bag
+		i(47651),	-- Pattern: Knightbane Carapace		
 		i(19330),	-- Pattern: Lava Belt
 		i(35216),	-- Pattern: Leather Chestguard of the Sun
 		i(35212),	-- Pattern: Leather Gauntlets of the Sun
@@ -1288,8 +1318,7 @@ profession(165, { -- Leatherworking
 		i(25725),	-- Pattern: Riding Crop
 		i(49966),	-- Pattern: Rock-Steady Treads
 		i(70174),	-- Pattern: Royal Scribe's Satchel
-		i(7288),	-- Pattern: Rugged Leather Pants
-		i(15776),	-- Pattern: Runic Leather Armor
+		i(7288),	-- Pattern: Rugged Leather Pants		
 		i(15745),	-- Pattern: Runic Leather Belt
 		i(15739),	-- Pattern: Runic Leather Bracers
 		i(15731),	-- Pattern: Runic Leather Gauntlets
@@ -1407,8 +1436,7 @@ profession(165, { -- Leatherworking
 		i(20253),	-- Pattern: Warbear Harness
 		i(15754),	-- Pattern: Warbear Woolies
 		i(20254),	-- Pattern: Warbear Woolies
-		i(2407),	-- Pattern: White Leather Jerkin
-		i(15773),	-- Pattern: Wicked Leather Armor
+		i(2407),	-- Pattern: White Leather Jerkin		
 		i(15768),	-- Pattern: Wicked Leather Belt
 		i(15728),	-- Pattern: Wicked Leather Bracers
 		i(15725),	-- Pattern: Wicked Leather Gauntlets
