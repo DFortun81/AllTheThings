@@ -17,9 +17,13 @@ _.Zones =
 						}),
 						n(64191, {	-- Ghostly Pandaren Craftsman
 							["groups"] = {
-								i(86079),	-- Ancient Pandaren Woodcutter
+								{
+									["itemID"] = 86079, -- Ancient Pandaren Woodcutter
+									["questID"] = 31292,
+									["ignoreSource"] = true
+								},
 							},
-							["questID"] = 31292,
+							--["questID"] = 31292,
 						}),
 						o(213749, {		-- Staff of the Hidden Master
 							["groups"] = {
