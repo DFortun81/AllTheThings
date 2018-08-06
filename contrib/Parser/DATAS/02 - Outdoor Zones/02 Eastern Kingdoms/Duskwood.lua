@@ -659,38 +659,40 @@ _.Zones =
 				}),
 				n( -40, {	-- Legacy
 					["groups"] = {
-						nlq({	-- Quests (Legacy)
-							qa(231, {	-- A Daughter's Love
-								un(34, i(2000)),	-- Archeus
-							}),
-							qa(253, {	-- Bride of the Embalmer
-								un(34, i(3560)),	-- Mantle of Honor
-								un(34, i(6223)),	-- Crest of Darkshire
-							}),
-							qa(181, {	-- Look to the Stars
-								un(34, i(7106)),	-- Zodiac Gloves
-								un(34, i(7107)),	-- Belt of the Stars
-							}),
-							qa( 55, {	-- Morbent Fel
-								un(34, i(2954)),	-- Night Watch Pantaloons
-								un(34, i(2953)),	-- Watch Master's Cloak
-								un(34, i(1282)),	-- Sparkmetal Coif
-								un(34, i(7344)),	-- Torch of Holy Flame
-							}),
-							qh(1383, {	-- Nothing But The Truth
-								un(34, i(6832)),	-- Cloak of Blight
-								un(34, i(11265)),	-- Cragwood Maul
-							}),
-							qa( 98, {	-- The Legend of Stalvan
-								un(34, i(2044)),	-- Crescent of Forlorn Spirits
-							}),
-							qa(101, {	-- The Totem of Infliction
-								un(34, i(1131)),	-- Totem of Infliction
-							}),
-							qa(223, {	-- Worgen in the Woods
-								un(34, i(2902)),	-- Cloak of the Faith
-								un(34, i(1547)),	-- Shield of the Faith
-								un(34, i(5244)),	-- Consecrated Wand
+						n(-17, {	-- Quests (Legacy)
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qa(231, {	-- A Daughter's Love
+									un(34, i(2000)),	-- Archeus
+								}),
+								qa(253, {	-- Bride of the Embalmer
+									un(34, i(3560)),	-- Mantle of Honor
+									un(34, i(6223)),	-- Crest of Darkshire
+								}),
+								qa(181, {	-- Look to the Stars
+									un(34, i(7106)),	-- Zodiac Gloves
+									un(34, i(7107)),	-- Belt of the Stars
+								}),
+								qa( 55, {	-- Morbent Fel
+									un(34, i(2954)),	-- Night Watch Pantaloons
+									un(34, i(2953)),	-- Watch Master's Cloak
+									un(34, i(1282)),	-- Sparkmetal Coif
+									un(34, i(7344)),	-- Torch of Holy Flame
+								}),
+								qh(1383, {	-- Nothing But The Truth
+									un(34, i(6832)),	-- Cloak of Blight
+									un(34, i(11265)),	-- Cragwood Maul
+								}),
+								qa( 98, {	-- The Legend of Stalvan
+									un(34, i(2044)),	-- Crescent of Forlorn Spirits
+								}),
+								qa(101, {	-- The Totem of Infliction
+									un(34, i(1131)),	-- Totem of Infliction
+								}),
+								qa(223, {	-- Worgen in the Woods
+									un(34, i(2902)),	-- Cloak of the Faith
+									un(34, i(1547)),	-- Shield of the Faith
+									un(34, i(5244)),	-- Consecrated Wand
+								}),
 							}),
 						}),
 						n(-16, {	-- Rares (Legacy)

@@ -1197,43 +1197,44 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							qdg(q(4024, {	-- A Taste of Flame
-								un(34, i(12066)),	-- Shaleskin Cape
-								un(34, i(12082)),	-- Wyrmhide Spaulders
-								un(34, i(12083)),	-- Valconian Sash
-							})),
-							qdg(qa(4263, {	-- Incendius!
-								un(34, i(12113)),	-- Sunborne Cape
-								un(34, i(12114)),	-- Nightfall Gloves
-								un(34, i(12112)),	-- Crypt Demon Bracers
-								un(34, i(12115)),	-- Stalwart Clutch
-							})),
-							qdg(qa(5081, {	-- Maxwell's Mission
-								un(34, i(13958)),	-- Wyrmthalak's Shackles
-								un(34, i(13959)),	-- Omokk's Girth Restrainer
-								un(34, i(13961)),	-- Halcyon's Muzzle
-								un(34, i(13962)),	-- Vosh'gajin's Strand
-								un(34, i(13963)),	-- Voone's Vice Grips
-							})),
-							qdg(qa(4701, {	-- Put Her Down
-								un(34, i(15824)),	-- Astoria Robes
-								un(34, i(15825)),	-- Traphook Jerkin
-								un(34, i(15827)),	-- Jadescale Breastplate
-							})),
-							qdg(qh(4903, {	-- Warlord's Command
-								un(34, i(13958)),	-- Wyrmthalak's Shackles
-								un(34, i(13959)),	-- Omokk's Girth Restrainer
-								un(34, i(13961)),	-- Halcyon's Muzzle
-								un(34, i(13962)),	-- Vosh'gajin's Strand
-								un(34, i(13963)),	-- Voone's Vice Grips
-							})),
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qdg(q(4024, {	-- A Taste of Flame
+									un(34, i(12066)),	-- Shaleskin Cape
+									un(34, i(12082)),	-- Wyrmhide Spaulders
+									un(34, i(12083)),	-- Valconian Sash
+								})),
+								qdg(qa(4263, {	-- Incendius!
+									un(34, i(12113)),	-- Sunborne Cape
+									un(34, i(12114)),	-- Nightfall Gloves
+									un(34, i(12112)),	-- Crypt Demon Bracers
+									un(34, i(12115)),	-- Stalwart Clutch
+								})),
+								qdg(qa(5081, {	-- Maxwell's Mission
+									un(34, i(13958)),	-- Wyrmthalak's Shackles
+									un(34, i(13959)),	-- Omokk's Girth Restrainer
+									un(34, i(13961)),	-- Halcyon's Muzzle
+									un(34, i(13962)),	-- Vosh'gajin's Strand
+									un(34, i(13963)),	-- Voone's Vice Grips
+								})),
+								qdg(qa(4701, {	-- Put Her Down
+									un(34, i(15824)),	-- Astoria Robes
+									un(34, i(15825)),	-- Traphook Jerkin
+									un(34, i(15827)),	-- Jadescale Breastplate
+								})),
+								qdg(qh(4903, {	-- Warlord's Command
+									un(34, i(13958)),	-- Wyrmthalak's Shackles
+									un(34, i(13959)),	-- Omokk's Girth Restrainer
+									un(34, i(13961)),	-- Halcyon's Muzzle
+									un(34, i(13962)),	-- Vosh'gajin's Strand
+									un(34, i(13963)),	-- Voone's Vice Grips
+								})),
+							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 2,
 				}),		
 			},
 			["lvl"] = 40,

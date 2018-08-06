@@ -1029,13 +1029,15 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							qa(3461, {	-- Return to Tymor
-								un(34, i(10707)),	-- Steelsmith Greaves
-								un(34, i(10708)),	-- Skullspell Orb
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qa(3461, {	-- Return to Tymor
+									un(34, i(10707)),	-- Steelsmith Greaves
+									un(34, i(10708)),	-- Skullspell Orb
+								}),
+	--[[						q( 9364),	-- Fragmented Magic (removed with Cataclysm, Mage-only)
+								q(43301),	-- Invasion: Azshara (from Legion pre-launch)
+								q(14231),	-- Useless quest record (appears to have been replaced with Waste of Thyme)	--]]
 							}),
---[[						q( 9364),	-- Fragmented Magic (removed with Cataclysm, Mage-only)
-							q(43301),	-- Invasion: Azshara (from Legion pre-launch)
-							q(14231),	-- Useless quest record (appears to have been replaced with Waste of Thyme)	--]]
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(44372, { 	-- Avalanchion

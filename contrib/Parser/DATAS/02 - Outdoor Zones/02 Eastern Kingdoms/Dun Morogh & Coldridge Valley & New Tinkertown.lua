@@ -268,24 +268,26 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						nlq({	-- Quests (Legacy)
-							qa(417, {	-- A Pilot's Revenge
-								un(34, i(2218)),	-- Craftsman's Dagger
-								un(34, i(1009)),	-- Compact Hammer
-							}),
-							qa(5625, {	-- Garments of the Light
-								["groups"] = {
-									un(34, i(16605)),	-- Friar's Robes of the Light
-								},
-								["races"] = { 3 },	-- Dwarf
-								["classes"] = { 5 },	-- Priest
-							}),
-							qdg(qa(4126, {	-- Hurley Blackbreath
-								un(34, i(11964)),	-- Swiftstrike Cudgel
-								un(34, i(12000)),	-- Limb Cleaver
-							})),
-							qa(466, {	-- Search for Incendicite
-								un(34, i(3565)),	-- Beerstained Gloves
+						n(-17, {	-- Quests (Legacy)
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qa(417, {	-- A Pilot's Revenge
+									un(34, i(2218)),	-- Craftsman's Dagger
+									un(34, i(1009)),	-- Compact Hammer
+								}),
+								qa(5625, {	-- Garments of the Light
+									["groups"] = {
+										un(34, i(16605)),	-- Friar's Robes of the Light
+									},
+									["races"] = { 3 },	-- Dwarf
+									["classes"] = { 5 },	-- Priest
+								}),
+								qdg(qa(4126, {	-- Hurley Blackbreath
+									un(34, i(11964)),	-- Swiftstrike Cudgel
+									un(34, i(12000)),	-- Limb Cleaver
+								})),
+								qa(466, {	-- Search for Incendicite
+									un(34, i(3565)),	-- Beerstained Gloves
+								}),
 							}),
 						}),
 						n(-16, {	-- Rares (Legacy)

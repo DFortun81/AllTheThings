@@ -3732,138 +3732,140 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
 					}),
 				})),
-				n(  -40, {	-- Legacy
+				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							q(1436,  {  	-- Alliance Relations
-								un(34, i(6744)),	-- Gloves of Kapelan
-								un(34, i(6745)),	-- Swiftrunner Cape
+							["groups"] = bubbleDown({["u"] = 40}, {
+								q(1436,  {  	-- Alliance Relations
+									un(34, i(6744)),	-- Gloves of Kapelan
+									un(34, i(6745)),	-- Swiftrunner Cape
+								}),
+								qh(3507, {	-- Betrayed
+									un(34, i(10709)),	-- Pyrestone Orb
+									un(34, i(11120)),	-- Belgrom's Hammer
+								}),
+								qc1(q(8920, { 	-- An Earnest Proposal
+									un(34, i(21996)),	-- Bracers of Heroism
+								})),
+								qc2(q(10493, {	-- An Earnest Proposal 
+									un(34, i(22088)),	-- Soulforge Bracers 
+								})),
+								qc3(q(8914, {	-- An Earnest Proposal
+									un(34, i(22011)),	-- Beastmaster's Bindings 						
+								})),
+								qc4(q(8917, {	-- An Earnest Proposal
+									un(34, i(22004)),	-- Darkmantle Bracers 
+								})),
+								qc5(q(8916, {	-- An Earnest Proposal
+									un(34, i(22079)),	-- Virtuous Bracers 						
+								})),
+								qc7(q(8918, {	-- An Earnest Proposal
+									un(34, i(22095)),	-- Bindings of The Five Thunders 						
+								})),
+								qc8(q(8915, {	-- An Earnest Proposal
+									un(34, i(22063)),	-- Sorcerer's Bindings 					
+								})),
+								qc9(q(8919, {	-- An Earnest Proposal
+									un(34, i(22071)),	-- Deathmist Bracers 						
+								})),
+								qc11(q(8913, {	-- An Earnest Proposal
+									un(34, i(22108)),	-- Feralheart Bracers 						
+								})),
+								q(4300, {		-- Bone-Bladed Weapons
+									un(34, i(11863)),	-- White Bone Shredder
+									un(34, i(11864)),	-- White Bone Spear
+								}),
+								q(4511, {		-- Calm Before the Storm
+									un(34, i(11872)),	-- Eschewal Greaves 
+									un(34, i(11870)),	-- Oblivion Orb 
+									un(34, i(11871)),	-- Snarkshaw Spaulders
+								}),
+								q(5730, {		-- Hidden Enemies
+									un(34, i(15424)),	-- Axe of Orgrimmar 
+									un(34, i(15445)),	-- Hammer of Orgrimmar
+									un(34, i(15443)),	-- Kris of Orgrimmar
+									un(34, i(15444)),	-- Staff of Ogrimmar
+								}),
+								qc1(q(8944, {	-- Just Compensation
+									un(34, i(21994)), 	-- Belt of Heroism
+									un(34, i(21998)), 	-- Gauntlets of Heroism
+								})),
+								qc2(q(10495, {	-- Just Compensation
+									un(34, i(22086)), 	-- Soulforge Belt
+									un(34, i(22090)), 	-- Soulforge Gauntlets
+								})),
+								qc3(q(8938, {	-- Just Compensation
+									un(34, i(22010)), 	-- Beastmaster's Belt
+									un(34, i(22015)), 	-- Beastmaster's Gloves
+								})),
+								qc4(q(8941, {	-- Just Compensation
+									un(34, i(22002)), 	-- Darkmantle Belt
+									un(34, i(22006)), 	-- Darkmantle Gloves
+								})),
+								qc5(q(8940, {	-- Just Compensation
+									un(34, i(22078)), 	-- Virtuous Belt 
+									un(34, i(22081)), 	-- Virtuous Gloves
+								})),
+								qc7(q(8942, {	-- Just Compensation
+									un(34, i(22098)), 	-- Cord of The Five Thunders
+									un(34, i(22099)), 	-- Gauntlets of The Five Thunders
+								})),
+								qc8(q(8939, {	-- Just Compensation
+									un(34, i(22062)), 	-- Sorcerer's Belt 
+									un(34, i(22066)), 	-- Sorcerer's Gloves
+								})),
+								qc9(q(8943, {	-- Just Compensation
+									un(34, i(22070)), 	-- Deathmist Belt
+									un(34, i(22077)), 	-- Deathmist Wraps
+								})),
+								qc11(q(8927, {	-- Just Compensation
+									un(34, i(22106)), 	-- Feralheart Belt
+									un(34, i(22110)), 	-- Feralheart Gloves
+								})),
+								q(3924, {		-- Samophlange Manual
+									un(34, i(11854)),	-- Samophlange Screwdriver 
+									un(34, i(11855)),	-- Tork Wrench
+								}),
+								qc1(q(9013, {	-- Saving the Best for Last
+									un(34, i(21997)),	-- Breastplate of Heroism
+									un(34, i(21999)),	-- Helm of Heroism
+								})),
+								qc2(q(10499, {	-- Saving the Best for Last 
+									un(34, i(22089)),	-- Soulforge Breastplate
+									un(34, i(22091)),	-- Soulforge Helm
+								})),
+								qc3(q(9008, {	-- Saving the Best for Last 
+									un(34, i(22013)),	-- Beastmaster's Cap 
+									un(34, i(22060)),	-- Beastmaster's Tunic
+								})),
+								qc4(q(9010, {	-- Saving the Best for Last
+									un(34, i(22005)),	-- Darkmantle Cap
+									un(34, i(22009)),	-- Darkmantle Tunic
+								})),
+								qc5(q(9009, {	-- Saving the Best for Last
+									un(34, i(22080)),	-- Virtuous Crown 
+									un(34, i(22083)),	-- Virtuous Robe
+								})),
+								qc7(q(9011, {	-- Saving the Best for Last
+									un(34, i(22097)),	-- Coif of The Five Thunders 
+									un(34, i(22102)),	-- Vest of The Five Thunders
+								})),
+								qc8(q(9014, {	-- Saving the Best for Last
+									un(34, i(22065)),	-- Sorcerer's Crown
+									un(34, i(22069)),	-- Sorcerer's Robes
+								})),
+								qc9(q(9012, {	-- Saving the Best for Last
+									un(34, i(22074)),	-- Deathmist Mask 
+									un(34, i(22075)),	-- Deathmist Robe
+								})),
+								qc11(q(9007, {	-- Saving the Best for Last
+									un(34, i(22109)),	-- Feralheart Cowl 
+									un(34, i(22113)),	-- Feralheart Vest
+								})),
+								qc4(q(1858, { 	-- The Shattered Hand
+									un(34, i(7298)),	-- Blade of Cunning
+								})),
 							}),
-							qh(3507, {	-- Betrayed
-								un(34, i(10709)),	-- Pyrestone Orb
-								un(34, i(11120)),	-- Belgrom's Hammer
-							}),
-							qc1(q(8920, { 	-- An Earnest Proposal
-								un(34, i(21996)),	-- Bracers of Heroism
-							})),
-							qc2(q(10493, {	-- An Earnest Proposal 
-								un(34, i(22088)),	-- Soulforge Bracers 
-							})),
-							qc3(q(8914, {	-- An Earnest Proposal
-								un(34, i(22011)),	-- Beastmaster's Bindings 						
-							})),
-							qc4(q(8917, {	-- An Earnest Proposal
-								un(34, i(22004)),	-- Darkmantle Bracers 
-							})),
-							qc5(q(8916, {	-- An Earnest Proposal
-								un(34, i(22079)),	-- Virtuous Bracers 						
-							})),
-							qc7(q(8918, {	-- An Earnest Proposal
-								un(34, i(22095)),	-- Bindings of The Five Thunders 						
-							})),
-							qc8(q(8915, {	-- An Earnest Proposal
-								un(34, i(22063)),	-- Sorcerer's Bindings 					
-							})),
-							qc9(q(8919, {	-- An Earnest Proposal
-								un(34, i(22071)),	-- Deathmist Bracers 						
-							})),
-							qc11(q(8913, {	-- An Earnest Proposal
-								un(34, i(22108)),	-- Feralheart Bracers 						
-							})),
-							q(4300, {		-- Bone-Bladed Weapons
-								un(34, i(11863)),	-- White Bone Shredder
-								un(34, i(11864)),	-- White Bone Spear
-							}),
-							q(4511, {		-- Calm Before the Storm
-								un(34, i(11872)),	-- Eschewal Greaves 
-								un(34, i(11870)),	-- Oblivion Orb 
-								un(34, i(11871)),	-- Snarkshaw Spaulders
-							}),
-							q(5730, {		-- Hidden Enemies
-								un(34, i(15424)),	-- Axe of Orgrimmar 
-								un(34, i(15445)),	-- Hammer of Orgrimmar
-								un(34, i(15443)),	-- Kris of Orgrimmar
-								un(34, i(15444)),	-- Staff of Ogrimmar
-							}),
-							qc1(q(8944, {	-- Just Compensation
-								un(34, i(21994)), 	-- Belt of Heroism
-								un(34, i(21998)), 	-- Gauntlets of Heroism
-							})),
-							qc2(q(10495, {	-- Just Compensation
-								un(34, i(22086)), 	-- Soulforge Belt
-								un(34, i(22090)), 	-- Soulforge Gauntlets
-							})),
-							qc3(q(8938, {	-- Just Compensation
-								un(34, i(22010)), 	-- Beastmaster's Belt
-								un(34, i(22015)), 	-- Beastmaster's Gloves
-							})),
-							qc4(q(8941, {	-- Just Compensation
-								un(34, i(22002)), 	-- Darkmantle Belt
-								un(34, i(22006)), 	-- Darkmantle Gloves
-							})),
-							qc5(q(8940, {	-- Just Compensation
-								un(34, i(22078)), 	-- Virtuous Belt 
-								un(34, i(22081)), 	-- Virtuous Gloves
-							})),
-							qc7(q(8942, {	-- Just Compensation
-								un(34, i(22098)), 	-- Cord of The Five Thunders
-								un(34, i(22099)), 	-- Gauntlets of The Five Thunders
-							})),
-							qc8(q(8939, {	-- Just Compensation
-								un(34, i(22062)), 	-- Sorcerer's Belt 
-								un(34, i(22066)), 	-- Sorcerer's Gloves
-							})),
-							qc9(q(8943, {	-- Just Compensation
-								un(34, i(22070)), 	-- Deathmist Belt
-								un(34, i(22077)), 	-- Deathmist Wraps
-							})),
-							qc11(q(8927, {	-- Just Compensation
-								un(34, i(22106)), 	-- Feralheart Belt
-								un(34, i(22110)), 	-- Feralheart Gloves
-							})),
-							q(3924, {		-- Samophlange Manual
-								un(34, i(11854)),	-- Samophlange Screwdriver 
-								un(34, i(11855)),	-- Tork Wrench
-							}),
-							qc1(q(9013, {	-- Saving the Best for Last
-								un(34, i(21997)),	-- Breastplate of Heroism
-								un(34, i(21999)),	-- Helm of Heroism
-							})),
-							qc2(q(10499, {	-- Saving the Best for Last 
-								un(34, i(22089)),	-- Soulforge Breastplate
-								un(34, i(22091)),	-- Soulforge Helm
-							})),
-							qc3(q(9008, {	-- Saving the Best for Last 
-								un(34, i(22013)),	-- Beastmaster's Cap 
-								un(34, i(22060)),	-- Beastmaster's Tunic
-							})),
-							qc4(q(9010, {	-- Saving the Best for Last
-								un(34, i(22005)),	-- Darkmantle Cap
-								un(34, i(22009)),	-- Darkmantle Tunic
-							})),
-							qc5(q(9009, {	-- Saving the Best for Last
-								un(34, i(22080)),	-- Virtuous Crown 
-								un(34, i(22083)),	-- Virtuous Robe
-							})),
-							qc7(q(9011, {	-- Saving the Best for Last
-								un(34, i(22097)),	-- Coif of The Five Thunders 
-								un(34, i(22102)),	-- Vest of The Five Thunders
-							})),
-							qc8(q(9014, {	-- Saving the Best for Last
-								un(34, i(22065)),	-- Sorcerer's Crown
-								un(34, i(22069)),	-- Sorcerer's Robes
-							})),
-							qc9(q(9012, {	-- Saving the Best for Last
-								un(34, i(22074)),	-- Deathmist Mask 
-								un(34, i(22075)),	-- Deathmist Robe
-							})),
-							qc11(q(9007, {	-- Saving the Best for Last
-								un(34, i(22109)),	-- Feralheart Cowl 
-								un(34, i(22113)),	-- Feralheart Vest
-							})),
-							qc4(q(1858, { 	-- The Shattered Hand
-								un(34, i(7298)),	-- Blade of Cunning
-							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(112527, { 	-- Doomsayer
@@ -3874,7 +3876,6 @@ Legacy				qh( 1436),	-- Alliance Relations
 							}),
 						}),
 					},
-					["u"] = 2,
 				}),
 			},
 			["maps"] = { 86 }, -- The Drag

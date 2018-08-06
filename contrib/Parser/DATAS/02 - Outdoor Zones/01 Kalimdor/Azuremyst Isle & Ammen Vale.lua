@@ -201,12 +201,14 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							qa(9586, {	-- Help Tavara
-								["groups"] = {
-									un(34, i(23931)),	-- Azure Watch Robes
-								},
-								["races"] = { 11 },	-- Draenei
-								["classes"] = { 5 },	-- Priest
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qa(9586, {	-- Help Tavara
+									["groups"] = {
+										un(34, i(23931)),	-- Azure Watch Robes
+									},
+									["races"] = { 11 },	-- Draenei
+									["classes"] = { 5 },	-- Priest
+								}),
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
@@ -214,7 +216,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 2,
 				}),
 				m(468, { -- Ammen Vale
 					["groups"] = {
@@ -342,7 +343,6 @@ _.Zones =
 							--n(-16, {	-- Rares (Legacy)
 							--}),
 						},
-						["u"] = 2,
 					}), --]]
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Draenei_Male",					

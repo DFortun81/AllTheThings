@@ -246,11 +246,13 @@ _.Zones =
 					["groups"] = {
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
-						n(-17, {	-- Quests (Legacy)
-							un(40, qh(765,  {  -- Supervisor Fizsprocket
-								un(2, i(4974)),
-								un(2, i(4964)),
-							})),
+						n(-17, {	-- Quests (Legacy)						
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qh(765,  {  -- Supervisor Fizsprocket
+									un(2, i(4974)),
+									un(2, i(4964)),
+								}),
+							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(3068, { 	-- Mazzranache

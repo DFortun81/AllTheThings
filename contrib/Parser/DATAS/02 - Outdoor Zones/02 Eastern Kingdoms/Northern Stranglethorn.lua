@@ -1323,35 +1323,37 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							qa(204, {	-- Bad Medicine
-								un(34, i(4140)),	-- Palm Frond Mantle
-								un(34, i(4126)),	-- Guerrilla Cleaver
-							}),
-							q(3625, {	-- Enchanted Azsharite Fel Weaponry
-								un(34, i(10697)),	-- Enchanted Azsharite Felbane Dagger
-								un(34, i(10698)),	-- Enchanted Azsharite Felbane Staff
-								un(34, i(10696)),	-- Enchanted Azsharite Felbane Sword
-							}),
-							qh(582, {	-- Headhunting
-								un(34, i(4133)),	-- Darkspear Cuffs
-								un(34, i(4132)),	-- Darkspear Armsplints
-							}),
-							qa(206, {	-- Mai'Zoth
-								un(34, i(4125)),	-- Tranquil Orb
-							}),
-							qa(331, {	-- Report to Doren
-								un(34, i(4139)),	-- Junglewalker Sandals
-								un(34, i(4123)),	-- Frost Metal Pauldrons
-							}),
-							qh(592, {	-- Saving Yenniku
-								un(34, i(4134)),	-- Nimboya's Mystical Staff
-							}),
-							qh(598, {	-- Split Bone Necklace
-								un(34, i(4137)),	-- Darkspear Shoes
-								un(34, i(4136)),	-- Darkspear Boots
-							}),
-							qa(328, {	-- The Hidden Key
-								un(34, i(4122)),	-- Bookmaker's Scepter
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qa(204, {	-- Bad Medicine
+									un(34, i(4140)),	-- Palm Frond Mantle
+									un(34, i(4126)),	-- Guerrilla Cleaver
+								}),
+								q(3625, {	-- Enchanted Azsharite Fel Weaponry
+									un(34, i(10697)),	-- Enchanted Azsharite Felbane Dagger
+									un(34, i(10698)),	-- Enchanted Azsharite Felbane Staff
+									un(34, i(10696)),	-- Enchanted Azsharite Felbane Sword
+								}),
+								qh(582, {	-- Headhunting
+									un(34, i(4133)),	-- Darkspear Cuffs
+									un(34, i(4132)),	-- Darkspear Armsplints
+								}),
+								qa(206, {	-- Mai'Zoth
+									un(34, i(4125)),	-- Tranquil Orb
+								}),
+								qa(331, {	-- Report to Doren
+									un(34, i(4139)),	-- Junglewalker Sandals
+									un(34, i(4123)),	-- Frost Metal Pauldrons
+								}),
+								qh(592, {	-- Saving Yenniku
+									un(34, i(4134)),	-- Nimboya's Mystical Staff
+								}),
+								qh(598, {	-- Split Bone Necklace
+									un(34, i(4137)),	-- Darkspear Shoes
+									un(34, i(4136)),	-- Darkspear Boots
+								}),
+								qa(328, {	-- The Hidden Key
+									un(34, i(4122)),	-- Bookmaker's Scepter
+								}),
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
@@ -1359,7 +1361,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 2,
 				}),
 			},
 			["lvl"] = 25,

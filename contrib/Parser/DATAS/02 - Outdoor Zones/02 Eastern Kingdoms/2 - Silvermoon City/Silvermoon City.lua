@@ -567,13 +567,15 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
-							qh(9489, {	-- Cleansing the Scar
-								["groups"] = {
-									un(34, i(23924)),	-- Robes of Silvermoon
-								},
-								["races"] = { 10 },	-- Blood Elf
-								["classes"] = { 5 },	-- Priest
+						n(-17, {	-- Quests
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qh(9489, {	-- Cleansing the Scar
+									["groups"] = {
+										un(34, i(23924)),	-- Robes of Silvermoon
+									},
+									["races"] = { 10 },	-- Blood Elf
+									["classes"] = { 5 },	-- Priest
+								}),
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
@@ -581,7 +583,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 2,
 				}),
 			},
 			["lvl"] = 1,

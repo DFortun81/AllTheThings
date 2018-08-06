@@ -791,42 +791,44 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						nlq({	-- Quests (Legacy)
-							qa(7723, {	-- Curse These Fat Fingers
-								un(34, i(19126)),	-- Slagplate Gauntlets
-							}),
-							qa(7724, {	-- Fiery Menace!
-								un(34, i(19125)),	-- Seared Mail Girdle
-							}),
-							qh(4450, {	-- Ledger from Tanaris
-								un(34, i(11860)),	-- Charged Lightning Rod
-								un(34, i(11861)),	-- Girdle of Reprisal
-							}),
-							q(3566, {	-- Rise, Obsidion!
-								un(34, i(10740)),	-- Centurion Legplates
-								un(34, i(10741)),	-- Lordrec Helmet
-								un(34, i(10739)),	-- Ring of Fortitude
-							}),
-							q( 7728, {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
-								un(34, i(19124)),	-- Slagplate Leggings
-								un(34, i(19123)),	-- Everwarm Handwraps
-							}),
-							q( 3463, {	-- Set Them Ablaze
-								un(34, i(10742)),	-- Dragonflight Leggings
-								un(34, i(10743)),	-- Drakefire Headguard
-								un(34, i(10744)),	-- Axe of the Ebon Blade
-							}),
-							q( 3379, {	-- Shadoweaver
-								["groups"] = {
-									un(34, i(10461)),	-- Shadowy Bracers
-								},
-								["requiredSkill"] = 197,	-- Tailoring
-							}),
-							q( 3385, {	-- The Undermarket
-								["groups"] = {
-									un(34, i(10462)),	-- Shadowy Belt
-								},
-								["requiredSkill"] = 197,	-- Tailoring
+						n(-17, {	-- Quests (Legacy)
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qa(7723, {	-- Curse These Fat Fingers
+									un(34, i(19126)),	-- Slagplate Gauntlets
+								}),
+								qa(7724, {	-- Fiery Menace!
+									un(34, i(19125)),	-- Seared Mail Girdle
+								}),
+								qh(4450, {	-- Ledger from Tanaris
+									un(34, i(11860)),	-- Charged Lightning Rod
+									un(34, i(11861)),	-- Girdle of Reprisal
+								}),
+								q(3566, {	-- Rise, Obsidion!
+									un(34, i(10740)),	-- Centurion Legplates
+									un(34, i(10741)),	-- Lordrec Helmet
+									un(34, i(10739)),	-- Ring of Fortitude
+								}),
+								q( 7728, {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
+									un(34, i(19124)),	-- Slagplate Leggings
+									un(34, i(19123)),	-- Everwarm Handwraps
+								}),
+								q( 3463, {	-- Set Them Ablaze
+									un(34, i(10742)),	-- Dragonflight Leggings
+									un(34, i(10743)),	-- Drakefire Headguard
+									un(34, i(10744)),	-- Axe of the Ebon Blade
+								}),
+								q( 3379, {	-- Shadoweaver
+									["groups"] = {
+										un(34, i(10461)),	-- Shadowy Bracers
+									},
+									["requiredSkill"] = 197,	-- Tailoring
+								}),
+								q( 3385, {	-- The Undermarket
+									["groups"] = {
+										un(34, i(10462)),	-- Shadowy Belt
+									},
+									["requiredSkill"] = 197,	-- Tailoring
+								}),
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)

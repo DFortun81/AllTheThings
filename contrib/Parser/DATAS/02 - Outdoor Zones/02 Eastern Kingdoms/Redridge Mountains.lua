@@ -634,37 +634,39 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							qa(116, { 		-- Dry Times
-								un(34, i(1270)), 	-- Finely Woven Cloak
-							}),
-							qa(126, {		-- Howling in the Hills
-								un(34, i(2910)),	-- Gold Militia Boots
-							}),
-							qa(219, { 		-- Missing in Action
-								un(34, i(3431)),	-- Bone-Studded Leather 
-								un(34, i(1275)),	-- Deputy Chain Coat
-								un(34, i(3555)),	-- Robe of Solomon
-							}),
-							o(31, {	-- Old Lion Statue
-								qa(249, { 	-- Morganth
-									un(34, i(5274)),-- Rose Mantle 
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qa(116, {	-- Dry Times
+									un(34, i(1270)), 	-- Finely Woven Cloak
 								}),
-							}),
-							qa(150, { 		-- Murloc Poachers
-								un(34, i(3567)),	-- Dwarven Fishing Pole
-							}),
-							qa(19, {		-- Tharil'zun
-								un(34, i(1276)),	-- Fire Hardened Buckler
-								un(34, i(6093)),	-- Orc Crusher
-							}),
-							qa(89, {	-- The Everstill Bridge
-								un(34, i(1310)),	-- Smith's Trousers
-								un(34, i(1303)),	-- Bridgeworker's Gloves
-								un(34, i(1304)),	-- Riding Gloves
-							}),
-							qa(122, {		-- Underbelly Scales
-								un(34, i(6092)),	-- Black Whelp Boots 
-								un(34, i(1302)),	-- Black Whelp Gloves
+								qa(126, {	-- Howling in the Hills
+									un(34, i(2910)),	-- Gold Militia Boots
+								}),
+								qa(219, {	-- Missing in Action
+									un(34, i(3431)),	-- Bone-Studded Leather 
+									un(34, i(1275)),	-- Deputy Chain Coat
+									un(34, i(3555)),	-- Robe of Solomon
+								}),
+								o(31, {	-- Old Lion Statue
+									qa(249, { 	-- Morganth
+										un(34, i(5274)),-- Rose Mantle 
+									}),
+								}),
+								qa(150, {	-- Murloc Poachers
+									un(34, i(3567)),	-- Dwarven Fishing Pole
+								}),
+								qa(19, {	-- Tharil'zun
+									un(34, i(1276)),	-- Fire Hardened Buckler
+									un(34, i(6093)),	-- Orc Crusher
+								}),
+								qa(89, {	-- The Everstill Bridge
+									un(34, i(1310)),	-- Smith's Trousers
+									un(34, i(1303)),	-- Bridgeworker's Gloves
+									un(34, i(1304)),	-- Riding Gloves
+								}),
+								qa(122, {	-- Underbelly Scales
+									un(34, i(6092)),	-- Black Whelp Boots 
+									un(34, i(1302)),	-- Black Whelp Gloves
+								}),
 							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
@@ -737,7 +739,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 2,
 				}),
 			},
 			["lvl"] = 10,	

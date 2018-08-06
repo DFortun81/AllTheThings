@@ -571,21 +571,23 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							qh(5650, {	-- Garments of Darkness
-								["groups"] = {
-									un(34, i(16607)),	-- Garments of Darkness
-								},
-								["races"] =  { 5 },	-- Undead
-								["classes"] = { 5 },	-- Priest
-							}),
-							qh(1822, {	-- Heirloom Weapon
-								["groups"] = {
-									un(34, i(7115)),	-- Heirloom Axe
-									un(34, i(7117)),	-- Heirloom Hammer
-									un(34, i(7116)),	-- Heirloom Dagger
-									un(34, i(7118)),	-- Heirloom Sword
-								},
-								["classes"] = { 1 },	-- Warrior
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qh(5650, {	-- Garments of Darkness
+									["groups"] = {
+										un(34, i(16607)),	-- Garments of Darkness
+									},
+									["races"] =  { 5 },	-- Undead
+									["classes"] = { 5 },	-- Priest
+								}),
+								qh(1822, {	-- Heirloom Weapon
+									["groups"] = {
+										un(34, i(7115)),	-- Heirloom Axe
+										un(34, i(7117)),	-- Heirloom Hammer
+										un(34, i(7116)),	-- Heirloom Dagger
+										un(34, i(7118)),	-- Heirloom Sword
+									},
+									["classes"] = { 1 },	-- Warrior
+								}),
 							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
@@ -701,7 +703,7 @@ _.Zones =
 						}),
 						n(-40, {	-- Legacy
 							["groups"] = {
-								n(-17, {	-- Quests (Legacy)
+								n(-17, {	-- Quests
 									["groups"] = bubbleDown({["u"] = 40 }, {
 										q(3096, {	-- Encrypted Scroll
 											["qg"] = 1569,	-- Shadow Priest Sarvis

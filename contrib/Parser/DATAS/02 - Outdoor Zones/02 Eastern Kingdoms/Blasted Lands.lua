@@ -916,11 +916,13 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							q(7583, {	-- Suppression
-								["groups"] = {
-									un(34, i(18602)),	-- Tome of Sacrifice
-								},
-								["classes"] = { 9 },	-- Warlock
+							["groups"] = bubbleDown({["u"] = 40}, {
+								q(7583, {	-- Suppression
+									["groups"] = {
+										un(34, i(18602)),	-- Tome of Sacrifice
+									},
+									["classes"] = { 9 },	-- Warlock
+								}),
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
@@ -928,7 +930,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 2,
 				}),
 			},
 			["lvl"] = 55,	

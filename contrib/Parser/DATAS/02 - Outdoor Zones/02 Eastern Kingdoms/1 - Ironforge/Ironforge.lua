@@ -811,27 +811,29 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							qa(2964, {	-- A Future Task
-								un(34, i(34418)),	-- Scrying Wand
-							}),
-							qa( 737, {	-- Forbidden Knowledge
-								un(34, i(4984)),	-- Skull of Impending Doom
-							}),
-							qa(1682, {	-- Grey Iron Weapons
-								["groups"] = {
-									un(34, i(6978)),	-- Umbral Axe
-									un(34, i(6982)),	-- Umbral Mace
-									un(34, i(6981)),	-- Umbral Dagger
-									un(34, i(6984)),	-- Umbral Sword
-								},
-								["classes"] = { 1 },	-- Warrior
-							}),
-							qa(1880, {	-- Mage-tastic Gizmonitor
-								["groups"] = {
-									un(34, i(7507)),	-- Arcane Orb
-									un(34, i(9514)),	-- Arcane Staff
-								},
-								["classes"] = { 8 },	-- Mage
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qa(2964, {	-- A Future Task
+									un(34, i(34418)),	-- Scrying Wand
+								}),
+								qa( 737, {	-- Forbidden Knowledge
+									un(34, i(4984)),	-- Skull of Impending Doom
+								}),
+								qa(1682, {	-- Grey Iron Weapons
+									["groups"] = {
+										un(34, i(6978)),	-- Umbral Axe
+										un(34, i(6982)),	-- Umbral Mace
+										un(34, i(6981)),	-- Umbral Dagger
+										un(34, i(6984)),	-- Umbral Sword
+									},
+									["classes"] = { 1 },	-- Warrior
+								}),
+								qa(1880, {	-- Mage-tastic Gizmonitor
+									["groups"] = {
+										un(34, i(7507)),	-- Arcane Orb
+										un(34, i(9514)),	-- Arcane Staff
+									},
+									["classes"] = { 8 },	-- Mage
+								}),
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)
@@ -839,7 +841,6 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
-					["u"] = 2,
 				}),
 			},
 			["lvl"] = 1,

@@ -8076,45 +8076,42 @@ _.Zones =
 				}),	
 				n(-40, {    -- Legacy
 					["groups"] = {
-						n(-17, {    -- Quests (Legacy)
-							q(43473, {	-- Experimental Potion: Test Subjects Needed
-								["qg"] = 110642, -- Fizzi Liverzapper
+						n(-17, {    -- Quests
+							["groups"] = bubbleDown({["u"] = 40}, {
+								q(43473, {	-- Experimental Potion: Test Subjects Needed
+									["qg"] = 110642, -- Fizzi Liverzapper
+								}),
+								q(43474, {	-- Experimental Potion: Test Subjects Needed
+									["qg"] = 110642, -- Fizzi Liverzapper
+								}),
+								q(43475, {	-- Experimental Potion: Test Subjects Needed
+									["qg"] = 110642, -- Fizzi Liverzapper
+								}),
+								q(43477, {	-- Experimental Potion: Test Subjects Needed
+									["qg"] = 110642, -- Fizzi Liverzapper
+								}),
+								q(43476, {	-- Experimental Potion: Test Subjects Needed
+									["qg"] = 110642, -- Fizzi Liverzapper
+								}),
+								q(43478, {	-- Experimental Potion: Test Subjects Needed
+									["qg"] = 110642, -- Fizzi Liverzapper
+								}),
+								q(40994, {	-- Right Tools for the Job
+									["qg"] = 101513, -- Lord Jorach Ravenholdt
+									["classes"] = { 4 },
+								}),
+								q(44174, {	-- The Very Best
+									["qg"] = 111246, -- Archmage Timear
+									["isWeekly"] = true,
+								}),
+								q(41125, {	-- Unlocked Potential
+									["qg"] = 102700, -- Meryl Felstorm
+									["classes"] = { 8 },
+									["sourceQuests"] = { 41114 },
+								}),
 							}),
-							q(43474, {	-- Experimental Potion: Test Subjects Needed
-								["qg"] = 110642, -- Fizzi Liverzapper
-							}),
-							q(43475, {	-- Experimental Potion: Test Subjects Needed
-								["qg"] = 110642, -- Fizzi Liverzapper
-							}),
-							q(43477, {	-- Experimental Potion: Test Subjects Needed
-								["qg"] = 110642, -- Fizzi Liverzapper
-							}),
-							q(43476, {	-- Experimental Potion: Test Subjects Needed
-								["qg"] = 110642, -- Fizzi Liverzapper
-							}),
-							q(43478, {	-- Experimental Potion: Test Subjects Needed
-								["qg"] = 110642, -- Fizzi Liverzapper
-							}),
-							q(40994, {	-- Right Tools for the Job
-								["qg"] = 101513, -- Lord Jorach Ravenholdt
-								["classes"] = { 4 },
-							}),
-							q(44174, {	-- The Very Best
-								["qg"] = 111246, -- Archmage Timear
-								["isWeekly"] = true,
-							}),
-							q(41125, {	-- Unlocked Potential
-								["qg"] = 102700, -- Meryl Felstorm
-								["classes"] = { 8 },
-								["sourceQuests"] = { 41114 },
-							}),
-						}),
-						n(-16, {    -- Rares (Legacy)
-						}),
-						n(  0, {    -- Zone Drop (Legacy)
 						}),
 					},
-					["u"] = 2,
 				}),
 			},
 			["lvl"] = 1,

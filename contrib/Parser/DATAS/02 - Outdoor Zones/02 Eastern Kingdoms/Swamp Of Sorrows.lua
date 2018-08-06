@@ -965,9 +965,11 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						nlq({	-- Quests (Legacy)
-							qa(1393, { -- Galen's Escape
-								un(34, i(6828)),	-- Visionary Buckler
+						n(-17, {	-- Quests (Legacy)
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qa(1393, { -- Galen's Escape
+									un(34, i(6828)),	-- Visionary Buckler
+								}),
 							}),
 						}),
 						n(-16, {	-- Rares (Legacy)

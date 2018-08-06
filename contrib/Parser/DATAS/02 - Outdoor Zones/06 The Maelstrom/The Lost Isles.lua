@@ -544,15 +544,18 @@ _.Zones =
 					}),
 				}),
 				n(-40, { -- Legacy
-					["g"] = {
-						q(24936, { -- Body And Soul
-							["g"] = {
-								un(34, i(52911)), -- Yngwie's Vest
-								un(34, i(52957)), -- Oomlot Staff
-								un(34, i(52935)), -- Pygmy Cloak
-							},
-							["races"] = HORDE_ONLY,
-							["u"] = 40, -- Legacy Quest/Quest Item
+					["groups"] = {
+						n(-17, {
+							["groups"] = bubbleDown({["u"] = 40}, {
+								q(24936, { -- Body And Soul
+									["groups"] = {
+										un(34, i(52911)), -- Yngwie's Vest
+										un(34, i(52957)), -- Oomlot Staff
+										un(34, i(52935)), -- Pygmy Cloak
+									},
+									["races"] = HORDE_ONLY,
+								}),
+							}),
 						}),
 					},
 				}),	

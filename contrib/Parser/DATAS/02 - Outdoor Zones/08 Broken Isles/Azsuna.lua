@@ -2351,12 +2351,13 @@ _.Zones =
 				n(-40, {    -- Legacy
 					["groups"] = {
 						n(-17, {    -- Quests
-							n(-193, { -- First Aid
-								un(40, q(42255)), -- Bloody Note
+							["groups"] = bubbleDown({["u"] = 40}, {
+								n(-193, { -- First Aid
+									un(40, q(42255)), -- Bloody Note
+								}),
 							}),
 						}),
 					},
-					["u"] = 2,
 				}),
 				n(-38, { 	-- Profession
 					prof(356, { -- Fishing

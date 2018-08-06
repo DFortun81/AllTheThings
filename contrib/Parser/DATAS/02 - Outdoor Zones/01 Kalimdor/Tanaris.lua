@@ -1822,31 +1822,33 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						nlq({	-- Quests (Legacy)
-							qr(q(8181, {	-- Confront Yeh'kinya
-								un(34, i(20218)),	-- Faded Hakkari Cloak
-								un(34, i(20219)),	-- Tattered Hakkari Cape
-							})),
-							q( 3161, {	-- Gahz'ridian
-								un(34, i(10827)),	-- Surveyor's Tunic
-								un(34, i(10826)),	-- Staff of Lore
-							}),
-							qh( 864, {	-- Return to Apothecary Zinge
-								un(34, i( 9634)),	-- Skilled Handling Gloves
-								un(34, i( 9635)),	-- Master Apothecary Cape
-								un(34, i(11502)),	-- Loreskin Shoulders
-							}),
-							qh(1189, {	-- Safety First
-								un(34, i(6726)),	-- Razzeric's Customized Seatbelt
-								un(34, i(6727)),	-- Razzeric's Racing Grips
-							}),
-							q(8366, {	-- Southsea Shakedown
-								un(34, i(20640)),	-- Southsea Head Bucket
-								un(34, i(20641)),	-- Southsea Mojo Boots
-							}),
-							q( 5863, {	-- The Dunemaul Compound
-								un(34, i(16738)),	-- Witherseed Gloves
-								un(34, i(16739)),	-- Rugwood Mantle
+						n(-17, {	-- Quests (Legacy)
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qr(q(8181, {	-- Confront Yeh'kinya
+									un(34, i(20218)),	-- Faded Hakkari Cloak
+									un(34, i(20219)),	-- Tattered Hakkari Cape
+								})),
+								q( 3161, {	-- Gahz'ridian
+									un(34, i(10827)),	-- Surveyor's Tunic
+									un(34, i(10826)),	-- Staff of Lore
+								}),
+								qh( 864, {	-- Return to Apothecary Zinge
+									un(34, i( 9634)),	-- Skilled Handling Gloves
+									un(34, i( 9635)),	-- Master Apothecary Cape
+									un(34, i(11502)),	-- Loreskin Shoulders
+								}),
+								qh(1189, {	-- Safety First
+									un(34, i(6726)),	-- Razzeric's Customized Seatbelt
+									un(34, i(6727)),	-- Razzeric's Racing Grips
+								}),
+								q(8366, {	-- Southsea Shakedown
+									un(34, i(20640)),	-- Southsea Head Bucket
+									un(34, i(20641)),	-- Southsea Mojo Boots
+								}),
+								q( 5863, {	-- The Dunemaul Compound
+									un(34, i(16738)),	-- Witherseed Gloves
+									un(34, i(16739)),	-- Rugwood Mantle
+								}),
 							}),
 						}),
 						--n(-16, {	-- Rares (Legacy)

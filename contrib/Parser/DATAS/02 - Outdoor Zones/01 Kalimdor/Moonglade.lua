@@ -16,7 +16,7 @@ _.Zones =
 					{
 						["questID"] = 5527,	-- A Reliquary of Purity
 						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
-						["u"] = 2,	-- LEGACY
+						["u"] = 40,	-- LEGACY
 						["lvl"] = 56,
 					},
 					{
@@ -76,7 +76,7 @@ _.Zones =
 					{
 						["questID"] = 5526,	-- Shards of the Felvine
 						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
-						["u"] = 2,	-- LEGACY
+						["u"] = 40,	-- LEGACY
 						["lvl"] = 56,
 						["groups"] = {
 							un(34, i(18535)),	-- Milli's Shield
@@ -165,7 +165,7 @@ _.Zones =
 						["questID"] = 8447,	-- Waking Legends
 						["qg"] = 11832,	-- Quest Giver: Keeper Remulos
 						["sourceQuest"] = 8446,	-- Source Quest: Shrouded in Nightmare
-						["u"] = 2,	-- LEGACY
+						["u"] = 40,	-- LEGACY
 						["lvl"] = 60,
 						["groups"] = {
 							un(34, i(20600)),	-- Malfurion's Signet Ring
@@ -175,7 +175,7 @@ _.Zones =
 						["questID"] = 1124,	-- Wasteland
 						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
 						["sourceQuest"] = 1123,	-- Source Quest: Rabine Saturna
-						["u"] = 2,	-- LEGACY
+						["u"] = 40,	-- LEGACY
 						["lvl"] = 56,
 					},
 				}),

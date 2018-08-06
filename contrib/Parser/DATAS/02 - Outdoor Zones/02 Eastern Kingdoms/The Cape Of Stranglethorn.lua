@@ -946,22 +946,24 @@ _.Zones =
 					}),
 				}),
 				n(-40, {	-- Legacy
-				  	nlq({	-- Quests (Legacy)
-						q( 617, {	-- Akiris by the Bundle
-							un(34, i(4117)),	-- Scorching Sash
-						}),
-						q( 213, {	-- Hostile Takeover
-							un(34, i(4121)),	-- Gemmed Gloves
-						}),
-						q( 348, {	-- Stranglethorn Fever
-							un(34, i(4113)),	-- Medicine Blanket
-						}),
-						qa(611, {	-- The Curse of the Tides
-							un(34, i(4120)),	-- Robe of Crystal Waters
-						}),
-						q( 600, {	-- Venture Company Mining
-							un(34, i(5253)), -- Goblin Igniter
-							un(34, i(4128)), -- Silver Spade
+				  	n(-17, {	-- Quests (Legacy)
+						["groups"] = bubbleDown({["u"] = 40}, {
+							q( 617, {	-- Akiris by the Bundle
+								un(34, i(4117)),	-- Scorching Sash
+							}),
+							q( 213, {	-- Hostile Takeover
+								un(34, i(4121)),	-- Gemmed Gloves
+							}),
+							q( 348, {	-- Stranglethorn Fever
+								un(34, i(4113)),	-- Medicine Blanket
+							}),
+							qa(611, {	-- The Curse of the Tides
+								un(34, i(4120)),	-- Robe of Crystal Waters
+							}),
+							q( 600, {	-- Venture Company Mining
+								un(34, i(5253)), -- Goblin Igniter
+								un(34, i(4128)), -- Silver Spade
+							}),
 						}),
 					}),
 					n(-16, {	-- Rares (Legacy)

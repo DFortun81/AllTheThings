@@ -759,36 +759,38 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						nlq({	-- Quests (Legacy)
-							qh(451, { 	-- A Recipe for Death
-								un(34, i(3582)),	-- Acidproof Cloak
-								un(34, i(3451)),	-- Nightglow Concoction
-							}),
-							qh(99, { 	-- Arugal's Folly 
-								un(34, i(3586)),	-- Logsplitter
-								un(34, i(3570)),	-- Bonegrinding Pestle
-								un(34, i(5242)),	-- Cinder Wand
-							}),
-							qh(442, { 	-- Assault on Fenris Isle
-								un(34, i(3461)),	-- High Robe of the Adjudicator
-								un(34, i(3462)),	-- Talonstrike
-							}),
-							qh(516, { 	-- Beren's Peril
-								un(34, i(5252)),	-- Wand of Decay
-							}),
-							qh(452, { 	-- Pyrewood Ambush 
-								un(34, i(3450)),	-- Faerleia's Shield 
-								un(34, i(2818)),	-- Stretched Leather Trousers 
-								un(34, i(3449)),	-- Mystic Shawl 
-							}),
-							qh(480, { 	-- The Weaver
-								un(34, i(3452)),	-- Ceranium Rod
-								un(34, i(3585)),	-- Camouflaged Tunic
-							}),
-							qh(491, { 	-- Wand to Bethor
-								un(34, i(3457)),	-- Stamped Trousers
-								un(34, i(3458)),	-- Rugged Mail Gloves
-								un(34, i(3581)),	-- Serrated Knife
+						n(-17, {	-- Quests (Legacy)
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qh(451, { 	-- A Recipe for Death
+									un(34, i(3582)),	-- Acidproof Cloak
+									un(34, i(3451)),	-- Nightglow Concoction
+								}),
+								qh(99, { 	-- Arugal's Folly 
+									un(34, i(3586)),	-- Logsplitter
+									un(34, i(3570)),	-- Bonegrinding Pestle
+									un(34, i(5242)),	-- Cinder Wand
+								}),
+								qh(442, { 	-- Assault on Fenris Isle
+									un(34, i(3461)),	-- High Robe of the Adjudicator
+									un(34, i(3462)),	-- Talonstrike
+								}),
+								qh(516, { 	-- Beren's Peril
+									un(34, i(5252)),	-- Wand of Decay
+								}),
+								qh(452, { 	-- Pyrewood Ambush 
+									un(34, i(3450)),	-- Faerleia's Shield 
+									un(34, i(2818)),	-- Stretched Leather Trousers 
+									un(34, i(3449)),	-- Mystic Shawl 
+								}),
+								qh(480, { 	-- The Weaver
+									un(34, i(3452)),	-- Ceranium Rod
+									un(34, i(3585)),	-- Camouflaged Tunic
+								}),
+								qh(491, { 	-- Wand to Bethor
+									un(34, i(3457)),	-- Stamped Trousers
+									un(34, i(3458)),	-- Rugged Mail Gloves
+									un(34, i(3581)),	-- Serrated Knife
+								}),
 							}),
 						}),
 						n(-16, {	-- Rares (Legacy)

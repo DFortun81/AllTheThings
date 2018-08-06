@@ -898,36 +898,38 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						nlq({	-- Quests (Legacy)
-							un(40, qh(2968, {	-- A Future Task
-								un(2, i(34421)),	-- Cave Crawler's Mail Treads
-								un(2, i(34422)),	-- Tempered Thorium Boots
-							})),
-							un(40, qh(5088, {	-- Arikara
-								un(2, i(15464)),	-- Brute Hammer
-								un(2, i(15465)),	-- Slingshot Wand
-								un(2, i(15466)),	-- Clink Shield
-							})),
-							un(40, qh(1102, {	-- A Vengeful Fate
-								un(2, i(4197)),	-- Berylline Pads
-								un(2, i(6742)),	-- Stonefist Girdle
-								un(2, i(6725)),	-- Marbled Buckler
-							})),
-							un(40, qh(1845, {	-- Brutal Helm
-								un(2, i(7130)),	-- Brutal Helm
-							})),
-							un(40, qdg(qh(1049, {	-- Compendium of the Fallen
-								un(2, i( 7747)),	-- Vile Protector
-								un(2, i(17508)),	-- Forcestone Buckler
-								un(2, i( 7749)),	-- Omega Orb
-							}))),
-							un(40, qdg(qh( 914, {	-- Leaders of the Fang
-								un(2, i(6505)),	-- Crescent Staff
-								un(2, i(6504)),	-- Wingblade
-							}))),
-							un(40, qdg(qh(965, {	-- Serpentbloom
-								un(2, i(10919)),	-- Apothecary Gloves
-							}))),
+						n(-17, {	-- Quests
+							["groups"] = bubbleDown({["u"] = 40}, {
+								qh(2968, {	-- A Future Task
+									un(2, i(34421)),	-- Cave Crawler's Mail Treads
+									un(2, i(34422)),	-- Tempered Thorium Boots
+								}),
+								qh(5088, {	-- Arikara
+									un(2, i(15464)),	-- Brute Hammer
+									un(2, i(15465)),	-- Slingshot Wand
+									un(2, i(15466)),	-- Clink Shield
+								}),
+								qh(1102, {	-- A Vengeful Fate
+									un(2, i(4197)),	-- Berylline Pads
+									un(2, i(6742)),	-- Stonefist Girdle
+									un(2, i(6725)),	-- Marbled Buckler
+								}),
+								qh(1845, {	-- Brutal Helm
+									un(2, i(7130)),	-- Brutal Helm
+								}),
+								qdg(qh(1049, {	-- Compendium of the Fallen
+									un(2, i( 7747)),	-- Vile Protector
+									un(2, i(17508)),	-- Forcestone Buckler
+									un(2, i( 7749)),	-- Omega Orb
+								})),
+								qdg(qh( 914, {	-- Leaders of the Fang
+									un(2, i(6505)),	-- Crescent Staff
+									un(2, i(6504)),	-- Wingblade
+								})),
+								qdg(qh(965, {	-- Serpentbloom
+									un(2, i(10919)),	-- Apothecary Gloves
+								})),
+							}),
 						}),
 					},
 				}),

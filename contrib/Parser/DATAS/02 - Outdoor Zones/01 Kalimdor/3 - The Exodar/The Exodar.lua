@@ -698,18 +698,15 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
-						n(-17, {	-- Quests (Legacy)
-							q(9675, {	-- Beast Training
-								un(34, i(24138)),	-- Silver Crossbow
+						n(-17, {	-- Quests
+							["groups"] = bubbleDown({["u"] = 40}, {
+								q(9675, {	-- Beast Training
+									un(34, i(24138)),	-- Silver Crossbow
+								}),
 							}),
 						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
 					},
-					["u"] = 2,
-				}),	--]]
+				}),
 			},
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_draenei",
 			["lvl"] = 1,
