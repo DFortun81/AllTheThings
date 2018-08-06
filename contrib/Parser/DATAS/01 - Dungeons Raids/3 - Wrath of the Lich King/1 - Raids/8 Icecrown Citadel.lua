@@ -1376,6 +1376,13 @@ _.Instances =
 							i( 50804),	-- Icecrown Spire Sandals
 							i( 50803),	-- Saurfang's Cold-Forged Band
 						})),
+						n(37904, { -- Brazie Getz
+							["groups"] = {
+								i(49926), -- Brazie's Black Book of Secrets
+							},
+							["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
+							["races"] = ALLIANCE_ONLY,
+						}),
 						n( 37217, {			-- Precious
 							dr(7, i(52019)),	-- Precious' Ribbon
 						}),
@@ -1670,6 +1677,13 @@ _.Instances =
 							i( 51899),	-- Icecrown Spire Sandals
 							i( 51900),	-- Saurfang's Cold-Forged Band
 						})),
+						n(37904, { -- Brazie Getz
+							["groups"] = {
+								i(49926), -- Brazie's Black Book of Secrets
+							},
+							["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
+							["races"] = ALLIANCE_ONLY,
+						}),
 						n( 37217, {			-- Precious
 							dr(4, i(52019)),	-- Precious' Ribbon
 						}),
@@ -2051,6 +2065,13 @@ _.Instances =
 							i( 50015),	-- Belt of the Blood Nova
 							i( 50362),	-- Deathbringer's Will
 						})),
+						n(37904, { -- Brazie Getz
+							["groups"] = {
+								i(49926), -- Brazie's Black Book of Secrets
+							},
+							["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
+							["races"] = ALLIANCE_ONLY,
+						}),
 						n( 37217, {			-- Precious
 							dr(12, i(52019)),	-- Precious' Ribbon
 						}),
@@ -2529,6 +2550,13 @@ _.Instances =
 							i( 50671),	-- Belt of the Blood Nova
 							i( 50363),	-- Deathbringer's Will
 						})),
+						n(37904, { -- Brazie Getz
+							["groups"] = {
+								i(49926), -- Brazie's Black Book of Secrets
+							},
+							["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
+							["races"] = ALLIANCE_ONLY,
+						}),
 						n( 37217, {			-- Precious
 							dr(16, i(52019)),	-- Precious' Ribbon
 						}),
