@@ -5,7 +5,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 	n(-7, { -- World Bosses
 		["groups"] = {
 			ach(12587, { -- 
-				e(2139, { -- T'zane <Tehe Soul Terror>
+				e(2139, { -- T'zane <Tehe Soul Terror> [QID]
 					["groups"] =  bubbleDown({["modID"] = 3}, {
 						i(161396), -- Petrified Mask of the Afterlife
 						i(161391), -- Deathshambler's Shoulderpads
@@ -23,6 +23,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						132701, -- T'zane <Tehe Soul Terror>
 					},
 					["maps"] = { 863 }, -- Nazmir
+					["questID"] = 52181, -- Smoke and Shadow
 				}),
 				e(2141, { -- Ji'arak
 					["groups"] = bubbleDown({["modID"] = 3}, {
@@ -41,8 +42,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						132653, -- Ji'arak Broodling
 					},
 					["maps"] = { 862 }, -- Zuldazar
+					--["questID"] = , -- The Matriarch
 				}),
-				e(2197, { -- Hailstone Construct
+				e(2197, { -- Hailstone Construct [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
 						i(161372), -- Ice-Carved Shoulderplates
 						i(161367), -- Hailstone Hauberk
@@ -60,6 +62,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						140252, -- Hailstone Construct
 					},
 					["maps"] = { 896 }, -- Drustvar
+					["questID"] = 52157, -- A Chilling Ecnounter
 				}),
 				e(2199, { -- Azurethos, The Winged Typhoon
 					["groups"] = bubbleDown({["modID"] = 3}, {
@@ -80,7 +83,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 					["maps"] = { 895 }, -- Tiragarde Sound
 				}),
-				e(2198, { -- Warbringeer Yenajz
+				e(2198, { -- Warbringer Yenajz [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
 						i(161349), -- Amice of the Rending Abyss
 						i(161357), -- Spaulders of the Enveloping Maw
@@ -96,8 +99,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						140163, -- Warbringeer Yenajz
 					},
 					["maps"] = { 942 }, -- Stormsong Valley
+					["questID"] = 52166, -- The Faceless Herald
 				}),
-				e(2210, { -- Dunegorger Kraulok
+				e(2210, { -- Dunegorger Kraulok [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
 						i(161404), -- Hood of the Sinuous Devilsaur
 						i(164385), -- Desert Nomad's Wrap
@@ -114,9 +118,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						139614, -- Ravenous Ranishu
 					},
 					["maps"] = { 864 }, -- Vol'dun
+					["questID"] = 52196, -- Sandswept Bones
 				}),
 			}),
-			e(2213, { -- Doom's Howl [Warfront]
+			e(2213, { -- Doom's Howl [Warfront] [QID]
 				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(163828), -- Toy Siege Tower
 					i(161464), -- Alliance Bowman's Coif
@@ -142,8 +147,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					943, -- Arathi Highlands
 				}, 
 				["races"] = ALLIANCE_ONLY,
+				["questID"] = 52847, -- Doom's Howl
 			}),
-			e(2212, { -- The Lion's Roar [Warfront]
+			e(2212, { -- The Lion's Roar [Warfront] [QID]
 				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(163829), -- Toy War Machine
 					i(161455), -- Battlemage's Collar
@@ -169,6 +175,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					943, -- Arathi Highlands
 				}, 
 				["races"] = HORDE_ONLY,
+				["questID"] = 52848, -- The Lion's Roar
 			}),
 		},
 		["isRaid"] = true,
