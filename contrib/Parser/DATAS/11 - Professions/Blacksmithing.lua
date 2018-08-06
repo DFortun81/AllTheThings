@@ -2234,28 +2234,29 @@ profession(164, { -- Blacksmithing
 			recipe(122639), -- Plans: Phantasmal Hammer
 			recipe(122640), -- Plans: Spiritblade Decimator
 			recipe(122636), -- Plans: Spiritguard Shield
-			recipe(139756), -- Training Project: Ghost Iron Barrel
-			recipe(139763), -- Training Project: Ghost Iron Bells
-			recipe(139753), -- Training Project: Decorative Spoons
-			recipe(139762), -- Training Project: Ghost Iron Bowls
-			recipe(139764), -- Training Project: Ghost Iron Crate
-			recipe(139761), -- Training Project: Ghost Iron Cups
-			recipe(140166), -- Training Project: Ghost Iron Frames
-			recipe(139750), -- Training Project: Ghost Iron Hook
-			recipe(139748), -- Training Project: Ghost Iron Ladle
-			recipe(139755), -- Training Project: Ghost Iron Needles
-			recipe(140167), -- Training Project: Ghost Iron Pans
-			recipe(140165), -- Training Project: Ghost Iron Picks
-			recipe(139745), -- Training Project: Ghost Iron Pins
-			recipe(139749), -- Training Project: Ghost Iron Poker
-			recipe(139760), -- Training Project: Ghost Iron Pot
-			recipe(139757), -- Training Project: Ghost Iron Saw
-			recipe(139754), -- Training Project: Ghost Iron Spade
-			recipe(139751), -- Training Project: Ghost Iron Spatulas
-			recipe(140168), -- Training Project: Ghost Iron Statue
-			recipe(139759), -- Training Project: Ghost Iron Wire
-			recipe(139747), -- Training Project: Ghost Iron Wok
-			recipe(139746), -- Training Project: Simple Eating Utensils
+			--[[ We need to tag Training Recipes with un(15 since we can learn them, but not keep them  in our spellbook --]]
+			un(15, recipe(139756)), -- Training Project: Ghost Iron Barrel
+			un(15, recipe(139763)), -- Training Project: Ghost Iron Bells
+			un(15, recipe(139753)), -- Training Project: Decorative Spoons
+			un(15, recipe(139762)), -- Training Project: Ghost Iron Bowls
+			un(15, recipe(139764)), -- Training Project: Ghost Iron Crate
+			un(15, recipe(139761)), -- Training Project: Ghost Iron Cups
+			un(15, recipe(140166)), -- Training Project: Ghost Iron Frames
+			un(15, recipe(139750)), -- Training Project: Ghost Iron Hook
+			un(15, recipe(139748)), -- Training Project: Ghost Iron Ladle
+			un(15, recipe(139755)), -- Training Project: Ghost Iron Needles
+			un(15, recipe(140167)), -- Training Project: Ghost Iron Pans
+			un(15, recipe(140165)), -- Training Project: Ghost Iron Picks
+			un(15, recipe(139745)), -- Training Project: Ghost Iron Pins
+			un(15, recipe(139749)), -- Training Project: Ghost Iron Poker
+			un(15, recipe(139760)), -- Training Project: Ghost Iron Pot
+			un(15, recipe(139757)), -- Training Project: Ghost Iron Saw
+			un(15, recipe(139754)), -- Training Project: Ghost Iron Spade
+			un(15, recipe(139751)), -- Training Project: Ghost Iron Spatulas
+			un(15, recipe(140168)), -- Training Project: Ghost Iron Statue
+			un(15, recipe(139759)), -- Training Project: Ghost Iron Wire
+			un(15, recipe(139747)), -- Training Project: Ghost Iron Wok
+			un(15, recipe(139746)), -- Training Project: Simple Eating Utensils
 		}),
 		n(-37, { -- Discovery
 			recipe(143255, { -- Plans: Balanced Trillium Ingot
