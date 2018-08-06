@@ -72,10 +72,6 @@ _.Zones =
 							},
 							["qg"] = 141274, -- Crenzo Sparkshatter
 						}),
-						q(52128, { -- Ferry Pass
-							["qg"] = 122370, -- Cyrus Crestfall
-							["sourceQuests"] = { 46729 }, -- The Old Knight
-						}),
 					},
 				}),
 				n(-212, { -- Treasures
