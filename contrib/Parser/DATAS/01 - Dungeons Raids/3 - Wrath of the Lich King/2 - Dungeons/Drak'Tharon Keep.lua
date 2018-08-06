@@ -47,9 +47,46 @@ _.Instances =
 					}),
 					d(  1, {	-- Normal
 						n(0, {		-- Zone Drop
-							i(35639),	-- Brighthelm of Guarding
-							i(35640),	-- Darkweb Bindings
-							i(35641),	-- Scytheclaw Boots
+							i(35639, {	-- Brighthelm of Guarding
+								["crs"] = {
+									26620,	-- Drakkari Guardian
+									26628,	-- Drakkari Scytheclaw
+									26639,	-- Drakkari Shaman
+									26621,	-- Ghoul Tormentor
+									26637,	-- Risen Drakkari Handler
+									26635,	-- Risen Drakkari Warrior
+									26623,	-- Scourge Brute
+								},
+							}),
+							i(35640, {	-- Darkweb Bindings
+								["crs"] = {
+									27431,	-- Drakkari Commander
+									26620,	-- Drakkari Guardian
+									26628,	-- Drakkari Scytheclaw
+									26621,	-- Ghoul Tormentor
+									26638,	-- Risen Drakkari Bat Rider
+									26635,	-- Risen Drakkari Warrior
+									26626,	-- Scourge Reanimator
+									26624,	-- Wretched Belcher
+								},
+							}),
+							i(35641, {	-- Scytheclaw Boots
+								["crs"] = {
+									26625,	-- Darkweb Recluse
+									26622,	-- Drakkari Bat
+									27431,	-- Drakkari Commander
+									26641,	-- Drakkari Gutripper
+									26628,	-- Drakkari Scytheclaw
+									26639,	-- Drakkari Shaman
+									26638,	-- Risen Drakkari Bat Rider
+									26830,	-- Risen Drakkari Death Knight
+									26637,	-- Risen Drakkari Handler
+									26636,	-- Risen Drakkari Soulmage
+									26635,	-- Risen Drakkari Warrior
+									26623,	-- Scourge Brute
+									26626,	-- Scourge Reanimator
+								},
+							}),
 						}),
 						cr(26630, e(588, { 	-- Trollgore
 							i(35618),	-- Troll Butcherer
@@ -99,9 +136,46 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["groups"] = {
 							n(0, {		-- Zone Drop
-								i(37800),	-- Aviary Guardsman's Hauberk
-								i(37799),	-- Reanimator's Cloak
-								i(37801),	-- Waistguard of the Risen Knight
+								i(37800, {	-- Aviary Guardsman's Hauberk
+									["crs"] = {
+										26625,	-- Darkweb Recluse
+										27431,	-- Drakkari Commander
+										26620,	-- Drakkari Guardian
+										26639,	-- Drakkari Shaman
+										26637,	-- Risen Drakkari Handler
+										26635,	-- Risen Drakkari Warrior
+										26623,	-- Scourge Brute
+										26626,	-- Scourge Reanimator
+										26624,	-- Wretched Belcher
+									},
+								}),
+								i(37799, {	-- Reanimator's Cloak
+									["crs"] = {
+										27431,	-- Drakkari Commander
+										26641,	-- Drakkari Gutripper
+										26621,	-- Ghoul Tormentor
+										26638,	-- Risen Drakkari Bat Rider
+										26830,	-- Risen Drakkari Death Knight
+										26637,	-- Risen Drakkari Handler
+										26636,	-- Risen Drakkari Soulmage
+										26635,	-- Risen Drakkari Warrior
+										26626,	-- Scourge Reanimator
+										26624,	-- Wretched Belcher
+									},
+								}),
+								i(37801, {	-- Waistguard of the Risen Knight
+									["crs"] = {
+										27431,	-- Drakkari Commander
+										26620,	-- Drakkari Guardian
+										26641,	-- Drakkari Gutripper
+										26628,	-- Drakkari Scytheclaw
+										26639,	-- Drakkari Shaman
+										27871,	-- Flesheating Ghoul
+										26638,	-- Risen Drakkari Bat Rider
+										26637,	-- Risen Drakkari Handler
+										26623,	-- Scourge Brute
+									},
+								}),
 							}),
 							cr(26630, e(588, { 	-- Trollgore
 								i(35618),	-- Troll Butcherer

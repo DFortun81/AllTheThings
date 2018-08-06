@@ -83,8 +83,20 @@ _.Instances =
 						["lvl"] = 80,
 						["groups"] = {
 							n(0, {		-- Zone Drop
-								i(37243),	-- Treasure Seeker's Belt
-								i(37625),	-- Web Winder Gloves
+								i(37243, {	-- Treasure Seeker's Belt
+									["crs"] = {
+										29128,	-- Anub'ar Prime Guard
+										28732,	-- Anub'ar Warrior
+									},
+								}),
+								i(37625, {	-- Web Winder Gloves
+									["crs"] = {
+										29128,	-- Anub'ar Prime Guard
+										28734,	-- Anub'ar Skirmisher
+										28732,	-- Anub'ar Warrior
+										29335,	-- Anub'ar Webspinner
+									},
+								}),
 							}),
 							cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
 								i( 35655),	-- Cobweb Machete

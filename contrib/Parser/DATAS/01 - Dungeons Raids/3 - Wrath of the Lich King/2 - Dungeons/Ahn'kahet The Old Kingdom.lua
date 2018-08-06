@@ -20,8 +20,34 @@ _.Instances =
 					}),
 					d(  1, {	-- Normal
 						n(0, {	-- Zone Drop
-							i(35615),	-- Glowworm Cavern Bindings
-							i(35616),	-- Spored Tendrils Spaulders
+							i(35615, {	-- Glowworm Cavern Bindings
+								["crs"] = {
+									30277,	-- Ahn'kahar Slasher
+									30276,	-- Ahn'kahar Web Winder
+									30279,	-- Deep Crawler
+									30285,	-- Eye of Taldaram
+									30414,	-- Forgotten One
+									30329,	-- Savage Cave Beast
+									30179,	-- Twilight Apostle
+									30111,	-- Twilight Worshipper
+								},
+							}),
+							i(35616, {	-- Spored Tendrils Spaulders
+								["crs"] = {
+									30277,	-- Ahn'kahar Slasher
+									30276,	-- Ahn'kahar Web Winder
+									30284,	-- Bonegrinder
+									30279,	-- Deep Crawler
+									30285,	-- Eye of Taldaram
+									30414,	-- Forgotten One
+									30286,	-- Frostbringer
+									30283,	-- Plague Walker
+									30287,	-- Plundering Geist
+									30179,	-- Twilight Apostle
+									30319,	-- Twilight Darkcaster
+									30111,	-- Twilight Worshipper
+								},
+							}),
 						}),
 						cr(29309, e(580, {	-- Elder Nadox
 							i(35606),	-- Blade of Nadox
@@ -71,7 +97,24 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["groups"] = {
 							n(0, {	-- Zone Drop
-								i(37625)	-- Web Winder Gloves
+								i(37625, {	-- Web Winder Gloves
+									["crs"] = {
+										30277,	-- Ahn'kahar Slasher
+										30278,	-- Ahn'kahar Spell Flinger
+										30276,	-- Ahn'kahar Web Winder
+										30284,	-- Bonegrinder
+										30279,	-- Deep Crawler
+										30285,	-- Eye of Taldaram
+										30414,	-- Forgotten One
+										30286,	-- Frostbringer
+										30283,	-- Plague Walker
+										30287,	-- Plundering Geist
+										30329,	-- Savage Cave Beast
+										30179,	-- Twilight Apostle
+										30319,	-- Twilight Darkcaster
+										30111,	-- Twilight Worshipper
+									},
+								}),
 							}),
 							cr(29309, e(580, {	-- Elder Nadox
 								i(35606),	-- Blade of Nadox
