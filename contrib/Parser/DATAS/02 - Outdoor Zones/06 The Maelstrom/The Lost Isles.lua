@@ -543,14 +543,16 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 				}),
-				n(-40, {	-- Legacy
-					["groups"]	= {
-						nlq({	-- Quests (Legacy)
-							qh(24936, {	-- Body And Soul
-								un(34, i(52911)),	-- Yngwie's Vest
-								un(34, i(52957)),	-- Oomlot Staff
-								un(34, i(52935)),	-- Pygmy Cloak
-							}),
+				n(-40, { -- Legacy
+					["g"] = {
+						q(24936, { -- Body And Soul
+							["g"] = {
+								un(34, i(52911)), -- Yngwie's Vest
+								un(34, i(52957)), -- Oomlot Staff
+								un(34, i(52935)), -- Pygmy Cloak
+							},
+							["races"] = HORDE_ONLY,
+							["u"] = 40, -- Legacy Quest
 						}),
 					},
 				}),	
