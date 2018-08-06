@@ -1290,6 +1290,10 @@ _.Zones =
 						},
 						["questID"] = 40680,	
 					}), 
+					n(113425, { -- Rovendros
+						["questID"] = 43795, -- Tracking - Rovendros Found
+						["description"] = "This is a hdiden NPC that you find in a cave within Crimson Thicket located at 55, 46.  Once you free him he will show up in Shal'aran as a vendor.",
+					}),
 					n(109054, { 	-- Shal'an
 						["groups"] = {	
 							i(139926),
