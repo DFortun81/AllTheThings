@@ -3062,7 +3062,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 								i(71606),	-- Faceguard of the Molten Giant
 								i(71608),	-- Shoulderguards of the Molten Giant
 								i(71604),	-- Chestguard of the Molten Giant
-								i(71585),	-- Bracers of Regal Force
+								i(70937),	-- Bracers of Regal Force
 								i(71605),	-- Handguards of the Molten Giant
 								i(71443),	-- Uncrushable Belt of Fury
 								i(71607),	-- Legguards of the Molten Giant
