@@ -1231,7 +1231,9 @@ profession(164, { -- Blacksmithing
 			recipe(59440), -- Plans: Brilliant Saronite Pauldrons
 			recipe(55374), -- Plans: Brilliant Titansteel Helm
 			recipe(55377), -- Plans: Brilliant Titansteel Treads
-			recipe(55186), -- Plans: Chestplate of Conquest
+			un(2, recipe(55186, { -- Plans: Chestplate of Conquest
+				["description"] = "These can no longer be learned from the trainer unless you selected Armorsmith prior to Cataclysm.",
+			})),
 			recipe(52568), -- Plans: Cobalt Belt
 			recipe(52569), -- Plans: Cobalt Boots
 			recipe(55834), -- Plans: Cobalt Bracers
@@ -1267,7 +1269,9 @@ profession(164, { -- Blacksmithing
 			recipe(61008), -- Plans: Icebane Chestguard
 			recipe(61009), -- Plans: Icebane Girdle
 			recipe(61010), -- Plans: Icebane Treads
-			recipe(55187), -- Plans: Legplates of Conquest
+			un(2, recipe(55187, { -- Plans: Legplates of Conquest
+				["description"] = "These can no longer be learned from the trainer unless you selected Armorsmith prior to Cataclysm.",
+			})),
 			recipe(55204), -- Plans: Notched Cobalt War Axe
 			recipe(56549), -- Plans: Ornate Saronite Bracers
 			recipe(56553), -- Plans: Ornate Saronite Gauntlets
@@ -2015,15 +2019,15 @@ profession(164, { -- Blacksmithing
 			recipe(76262), -- Plans: Redsteel Bracers
 			recipe(76270), -- Plans: Redsteel Breastplate
 			recipe(76263), -- Plans: Redsteel Gauntlets
-			recipe(55031), -- Plans: Redsteel Helm
-			recipe(55030), -- Plans: Redsteel Legguards
+			recipe(76269), -- Plans: Redsteel Helm
+			recipe(76267), -- Plans: Redsteel Legguards
 			recipe(76266), -- Plans: Redsteel Shoulders
 			recipe(76283), -- Plans: Stormforged Belt
 			recipe(76285), -- Plans: Stormforged Boots
 			recipe(76280), -- Plans: Stormforged Bracers
 			recipe(76289), -- Plans: Stormforged Breastplate
 			recipe(76281), -- Plans: Stormforged Gauntlets
-			recipe(55039), -- Plans: Stormforged Helm
+			recipe(76288), -- Plans: Stormforged Helm
 			recipe(76287), -- Plans: Stormforged Legguards
 			recipe(76293), -- Plans: Stormforged Shield
 			recipe(76286), -- Plans: Stormforged Shoulders
