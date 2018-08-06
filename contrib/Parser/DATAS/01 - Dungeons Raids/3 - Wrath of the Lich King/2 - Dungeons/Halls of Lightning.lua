@@ -24,11 +24,52 @@ _.Instances =
 							i(43209),	-- Breastplate of Jagged Stone
 						}),
 					}),
-					d( 1, {	-- Normal
+					d(1,   {	-- Normal
 						n(0, {		-- Zone Drop
-							i(36999),	-- Boots of the Terrestrial Guardian
-							i(36997),	-- Sash of the Hardened Watcher
-							i(37000),	-- Storming Vortex Bracers
+							i(36999, {	-- Boots of the Terrestrial Guardian
+								["crs"] = {
+									28583,	-- Blistering Steamrager
+									28579,	-- Hardened Steel Berserker
+									28578,	-- Hardened Steel Reaver
+									28580,	-- Hardened Steel Skycaller
+									28835,	-- Stormforged Construct
+									28582,	-- Stormforged Mender
+									28826,	-- Stormfury Revenant
+									28961,	-- Titanium Siegebreaker
+									28965,	-- Titanium Thunderer
+									28838,	-- Titanium Vanguard
+								},
+							}),
+							i(36997, {	-- Sash of the Hardened Watcher
+								["crs"] = {
+									27966,	-- Dark Rune Controller
+									28578,	-- Hardened Steel Reaver
+									28580,	-- Hardened Steel Skycaller
+									28835,	-- Stormforged Construct
+									28920,	-- Stormforged Giant
+									28582,	-- Stormforged Mender
+									28837,	-- Stormforged Sentinel
+									28547,	-- Storming Vortex
+									28961,	-- Titanium Siegebreaker
+									28965,	-- Titanium Thunderer
+									28838,	-- Titanium Vanguard
+									28584,	-- Unbound Firestorm
+								},
+							}),
+							i(37000, {	-- Storming Vortex Bracers
+								["crs"] = {
+									28920,	-- Stormforged Giant
+									28582,	-- Stormforged Mender
+									28836,	-- Stormforged Runeshaper
+									28837,	-- Stormforged Sentinel
+									28826,	-- Stormfury Revenant
+									28547,	-- Storming Vortex
+									28961,	-- Titanium Siegebreaker
+									28965,	-- Titanium Thunderer
+									28838,	-- Titanium Vanguard
+									28584,	-- Unbound Firestorm
+								},
+							}),
 						}),
 						cr(28586, e(597, {	-- General Bjarngrim
 							i( 36980),	-- Hewn Sparring Quarterstaff
@@ -81,14 +122,53 @@ _.Instances =
 							i(122237),	-- Music Roll: Mountains of Thunder
 						})),
 					}),
-					d( 2, {	-- Heroic
+					d(2,   {	-- Heroic
 						["lvl"] = 80,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							n(0, {		-- Zone Drop
-								i(37858),	-- Awakened Handguards
-								i(37857),	-- Helm of the Lightning Halls
-								i(37856),	-- Librarian's Paper Cutter
+								i(37858, {	-- Awakened Handguards
+									["crs"] = {
+										28579,	-- Hardened Steel Berserker
+										28578,	-- Hardened Steel Reaver
+										28580,	-- Hardened Steel Skycaller
+										28920,	-- Stormforged Giant
+										28582,	-- Stormforged Mender
+										28836,	-- Stormforged Runeshaper
+										28581,	-- Stormforged Tactician
+										28547,	-- Storming Vortex
+										28961,	-- Titanium Siegebreaker
+										28584,	-- Unbound Firestorm
+									},
+								}),
+								i(37857, {	-- Helm of the Lightning Halls
+									["crs"] = {
+										28583,	-- Blistering Steamrager
+										28578,	-- Hardened Steel Reaver
+										28580,	-- Hardened Steel Skycaller
+										28920,	-- Stormforged Giant
+										28582,	-- Stormforged Mender
+										28837,	-- Stormforged Sentinel
+										28547,	-- Storming Vortex
+										28961,	-- Titanium Siegebreaker
+										28838,	-- Titanium Vanguard
+										28584,	-- Unbound Firestorm
+									},
+								}),
+								i(37856, {	-- Librarian's Paper Cutter
+									["crs"] = {
+										28579,	-- Hardened Steel Berserker
+										28578,	-- Hardened Steel Reaver
+										28580,	-- Hardened Steel Skycaller
+										28920,	-- Stormforged Giant
+										28582,	-- Stormforged Mender
+										28837,	-- Stormforged Sentinel
+										28581,	-- Stormforged Tactician
+										28965,	-- Titanium Thunderer
+										28838,	-- Titanium Vanguard
+										28584,	-- Unbound Firestorm
+									},
+								}),
 							}),
 							cr(28586, e(597, {	-- General Bjarngrim
 								i( 36980),	-- Hewn Sparring Quarterstaff
@@ -142,7 +222,7 @@ _.Instances =
 							})),
 						},
 					}),
-					d(24, {	-- Timewalking
+					d(24,  {	-- Timewalking
 						["lvl"] = 70,
 						["groups"] = {
 							cr(28586, e(597, {	-- General Bjarngrim
