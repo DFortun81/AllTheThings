@@ -161,6 +161,17 @@ _.Instances =
 						["lvl"] = 80,
 						["groups"] = {
 							n(0, {	-- Zone Drop
+								i(37646, {	-- Burning Skull Pendant
+									["crs"] = {
+										29822,	-- Drakkari Fire Weaver
+										29820,	-- Drakkari God Hunter
+										29832,	-- Drakkari Golem
+										29819,	-- Drakkari Lancer
+										29826,	-- Drakkari Medicine Man
+										29830,	-- Living Mojo
+										29920,	-- Ruins Dweller
+									},
+								}),
 								i(37647, {	-- Cloak of Bloodied Waters
 									["crs"] = {
 										29836,	-- Drakkari Battle Rider
