@@ -88,7 +88,7 @@ _.Zones =
 						["sourceQuests"] = { 14146 },	-- Defend the Gates!
 					}),
 					o(196832, {	-- Upper Scrying Stone
-						q(14429, {	-- Arcane De-Construction
+						qh(14429, {	-- Arcane De-Construction
 							["groups"] = {
 							},
 							["sourceQuests"] = { 14428 },	-- Amberwind's Journal
