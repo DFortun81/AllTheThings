@@ -2403,13 +2403,11 @@ AllTheThings.Locales.enUS = {
 		[293962] = select(1,GetAchievementCriteriaInfo(12852,3)), -- Precarious Noble Cache
 		[293964] = select(1,GetAchievementCriteriaInfo(12852,4)), -- Forgotten Smuggler's Stash
 		[293965] = select(1,GetAchievementCriteriaInfo(12852,5)), -- Scrimshaw Cache
-				
-		
-		
-		
-		
-		
-		
+		[292673] = "A Damp Scroll",
+		[292674] = "A Damp Scroll",
+		[292675] = "A Damp Scroll",
+		[292676] = "A Damp Scroll",
+		[292677] = "A Damp Scroll",
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
