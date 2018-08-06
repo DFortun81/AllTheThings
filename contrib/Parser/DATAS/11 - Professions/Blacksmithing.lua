@@ -2587,7 +2587,8 @@ profession(164, { -- Blacksmithing
 					n(77359, { -- Auria Irondreamer
 						["g"] = {
 							i(115356, { -- Draenor Blacksmithing
-								["spellID"] = 0,
+								["collectible"] = false,
+								--["spellID"] = 0,
 								["description"] = "This is a quest reward for completing The Fractured Hammer quest line, which begins at The Forge in your Garrison. Also sold at The Forge for 100 gold.",
 								["g"] = {
 									recipe(171692),	-- Smoldering Breastplate
@@ -2628,7 +2629,8 @@ profession(164, { -- Blacksmithing
 					n(79867, { -- Orgek Ironhand
 						["g"] = {
 							i(115356, { -- Draenor Blacksmithing
-								["spellID"] = 0,
+								["collectible"] = false,
+								--["spellID"] = 0,
 								["description"] = "This is a quest reward for completing The Fractured Hammer quest line, which begins at The Forge in your Garrison. Also sold at The Forge for 100 gold.",
 								["g"] = {
 									recipe(171692),	-- Smoldering Breastplate

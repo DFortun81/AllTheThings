@@ -225,7 +225,9 @@ _.Zones =
 						}),
 						q(36238, { -- Mending A Broken Heart
 							["g"] = {
-								i(115356), -- Draenor Blacksmithing
+								i(115356, { -- Draenor Blacksmithing
+									["collectible"] = false,
+								}),
 								i(111813), -- The Forge, Level 1
 							},
 							["qg"] = 84494, -- Waruk the Frostforger

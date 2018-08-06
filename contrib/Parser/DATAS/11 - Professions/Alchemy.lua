@@ -5,6 +5,7 @@ profession(171, { -- Alchemy
 		["groups"] = {
 			nh(79813, {	-- Albert de Hyde <Alchemist>
 				i(109558, {		-- A Treatise on the Alchemy of Draenor
+					["collectible"] = false,
 					["spellID"] = 0,
 					["description"] = "This is a quest reward for completing the Alchemy Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
 					["groups"] = {
@@ -44,6 +45,7 @@ profession(171, { -- Alchemy
 			}),
 			na(77363, {	-- Mary Kearie <Alchemist>
 				i(109558, {		-- A Treatise on the Alchemy of Draenor
+					["collectible"] = false,
 					["spellID"] = 0,
 					["description"] = "This is a quest reward for completing the Alchemy Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
 					["groups"] = {
@@ -85,6 +87,7 @@ profession(171, { -- Alchemy
 	}),
 	n(-26, {	-- Drop	-- TODO: Add the drop locations
 		i(109558, {		-- A Treatise on the Alchemy of Draenor
+			["collectible"] = false,
 			["spellID"] = 0,
 			["description"] = "This is a quest reward for completing the Alchemy Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
 			["groups"] = {

@@ -121,7 +121,9 @@ _.Zones =
 					}),
 					q(36311, { -- Father and Son
 						["g"] = {
-							i(115356), -- Draenor Blacksmithing
+							i(115356, { -- Draenor Blacksmithing
+								["collectible"] = false,
+							}),
 							i(111813), -- The Forge, Level 1
 						},
 						["qg"] = 80827, -- Haephest
