@@ -3,64 +3,78 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, { 	-- Kalimdor
-		m(1, {		-- Durotar
+	m(12, { -- Kalimdor
+		m(1, { -- Durotar
 			["groups"] = {
-				n(-25, {	-- Pet Battle
-					p(635), 	-- Adder
-					p(468), 	-- Creepy Crawly
-					p(467), 	-- Dung Beetle
-					p(448), 	-- Hare
-					p(466), 	-- Spiny Lizard
-					p(420), 	-- Toad
-					p(418), 	-- Water Snake
-					n(63061, {	-- Narzak
-						["groups"] = {
-							p(75, {		-- Black Kingsnake
-								["races"] = {8,2}	-- Troll, Orc
+				n(-25, { -- Pet Battle
+					p(635), -- Adder
+					p(468), -- Creepy Crawly
+					p(467), -- Dung Beetle
+					p(448), -- Hare
+					p(466), -- Spiny Lizard
+					p(420), -- Toad
+					p(418), -- Water Snake
+					n(63061, { -- Narzak
+						["g"] = {
+							p(75, {	-- Black Kingsnake
+								["races"] = {8,2} -- Troll, Orc
 							}),
-							p(70, {		-- Brown Prarie Dog
-								["races"] = {6}		-- Tauren
+							p(70, {	-- Brown Prarie Dog
+								["races"] = {6}	-- Tauren
 							}),
-							p(142, {	-- Golden Dragonhawk Hatchling
-								["races"] = {10}	-- Blood Elf
+							p(142, { -- Golden Dragonhawk Hatchling
+								["races"] = {10} -- Blood Elf
 							}),
-							p(792, {	-- Jade Crane Chick
-								["races"] = {26}	-- Pandaren
+							p(792, { -- Jade Crane Chick
+								["races"] = {26} -- Pandaren
 							}),
-							p(629, {	-- Shore Crawler
-								["races"] = {9}		-- Goblin
+							p(629, { -- Shore Crawler
+								["races"] = {9}	-- Goblin
 							}),
-							p(55, {		-- Undercity Cockroach
-								["races"] = {5}		-- Undeads
+							p(55, {	-- Undercity Cockroach
+								["races"] = {5}	-- Undeads
 							}),
 						},
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
-					qg(66126, qh(31813, { -- Dagra the Fierce
-						i(89125),	-- Sack of Pet Supplies
-					})),
-					qh(31571, {	-- Learning the Ropes
+					q(31813, { -- Dagra the Fierce
+						["g"] = {
+							i(89125), -- Sack of Pet Supplies
+						},
+						["qg"] = 66126, -- Zunta
+						["races"] = HORDE_ONLY,
+					}),
+					q(31571, { -- Learning the Ropes
+						["g"] = {},
 						["qg"] = 63061, -- Narzak
+						["races"] = HORDE_ONLY,
 						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 					}),
-					qh(31570, {	-- Got one!
-						["qg"] = 63061, -- Narzak
-						["sourceQuests"] = { 31830 }, -- Level Up!
-					}),
-					qh(31572, {	-- On The Mend
+					q(31572, { -- On The Mend
+						["g"] = {},
 						["qg"] = 63061, -- Narzak
 						["sourceQuests"] = { 31571 }, -- Learning the Ropes
 					}),
-					qh(31818, {	-- Zunta
-						["qg"] = 66126, -- Zunta
-					}),
-					qh(31830, {	-- Level Up!
+					q(31830, {	-- Level Up!
+						["g"] = {},
 						["qg"] = 63061, -- Narzak
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 31572 }, -- On The Mend
 					}),
+					q(31570, { -- Got one!
+						["g"] = {},
+						["qg"] = 63061, -- Narzak
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 31830 }, -- Level Up!
+					}),
+					q(31818, { -- Zunta
+						["g"] = {},
+						["qg"] = 66126, -- Zunta
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
 				}),
-				n(-17, {	-- Quests
+				n(-17, { -- Quests
 --[[				
 					qg(56013, q(31450)),	-- A New Fate (QG on The Wandering Isle)
 					qg(97296, qh(40976, {	-- Audience with the Warchief
@@ -305,9 +319,9 @@ _.Zones =
 							i(139292), -- Splitter of the Horde Vanguard
 						},
 						["qg"] = 113547, -- Stone Guard Mukar
-						["description"] = "Legion expansion introduction quest.|r",
 						["lvl"] = 98,
 						["sourceQuests"] = { 44281 }, -- To Be Prepared
+						["description"] = "Legion expansion introduction quest.|r",
 					}),
 					qh(40605, {	-- Keep Your Friends Close
 						["qg"] = 101035, -- Lady Sylvanas Windrunner
@@ -369,441 +383,577 @@ _.Zones =
 					qg(122065, qh(47867)),	-- Two If By Sea
 --]]
 				}),
-				n(-16, {	-- Rares
-	--				n(5824, { 		-- Captain Flat Tusk - no transmoggable loot			}), 
-					n(5823, { 		-- Death Flayer
-						dr(	17	, i(	68744	)), --	Imbued Pioneer Cloak
-						dr(	14	, i(	68743	)), --	Imbued Infantry Cloak
-						dr(	8	, i(	68746	)), --	Imbued Primal Cape
-						dr(	7	, i(	68745	)), --	Imbued Primal Belt
-						dr(	6	, i(	6337	)), --	Infantry Leggings
-						dr(	1.7	, i(	6267	)), --	Disciple's Pants
-						dr(	1.7	, i(	68752	)), --	Imbued Infantry Belt
-						dr(	1.7	, i(	6269	)), --	Pioneer Trousers
-						dr(	1.6	, i(	68751	)), --	Imbued Pioneer Bracers
-						dr(	1.5	, i(	68750	)), --	Imbued Pioneer Belt
-						dr(	1.3	, i(	68749	)), --	Imbued Disciple's Bracers
-						dr(	1.2	, i(	68748	)), --	Imbued Disciple's Cloak
-						dr(	1.1	, i(	68754	)), --	Imbued Disciple's Boots
-						dr(	1.1	, i(	68747	)), --	Imbued Disciple's Sash
-						dr(	1.1	, i(	68753	)), --	Imbued Infantry Bracers
-						dr(	1	, i(	68755	)), --	Imbued Disciple's Gloves
-						dr(	0.9	, i(	68759	)), --	Imbued Gypsy Cloak
-						dr(	0.9	, i(	68761	)), --	Imbued Infantry Boots
-						dr(	0.9	, i(	68758	)), --	Imbued Pioneer Boots
-						dr(	0.7	, i(	68757	)), --	Imbued Pioneer Gloves
-						dr(	0.6	, i(	68762	)), --	Imbued Cadet Cloak
-						dr(	0.6	, i(	68760	)), --	Imbued Infantry Gauntlets
-						dr(	0.5	, i(	68756	)), --	Imbued Simple Cape
+				n(-16, { -- Rares
+					--n(5824, {}), -- Captain Flat Tusk -- NO TRANSMOGGABLE LOOT!
+					n(5823, { -- Death Flayer
+						i(68744), -- Imbued Pioneer Cloak
+						i(68743), -- Imbued Infantry Cloak
+						i(68746), -- Imbued Primal Cape
+						i(68745), -- Imbued Primal Belt
+						i(6337), --	Infantry Leggings
+						i(6267), --	Disciple's Pants
+						i(68752), -- Imbued Infantry Belt
+						i(6269), --	Pioneer Trousers
+						i(68751), -- Imbued Pioneer Bracers
+						i(68750), -- Imbued Pioneer Belt
+						i(68749), -- Imbued Disciple's Bracers
+						i(68748), -- Imbued Disciple's Cloak
+						i(68754), -- Imbued Disciple's Boots
+						i(68747), -- Imbued Disciple's Sash
+						i(68753), -- Imbued Infantry Bracers
+						i(68755), -- Imbued Disciple's Gloves
+						i(68759), -- Imbued Gypsy Cloak
+						i(68761), -- Imbued Infantry Boots
+						i(68758), -- Imbued Pioneer Boots
+						i(68757), -- Imbued Pioneer Gloves
+						i(68762), -- Imbued Cadet Cloak
+						i(68760), -- Imbued Infantry Gauntlets
+						i(68756), -- Imbued Simple Cape
 					}), 
-					n(5822, { 		-- Felweaver Scornn
-						dr(	9	, i(	68744	)), --	Imbued Pioneer Cloak
-						dr(	7	, i(	68743	)), --	Imbued Infantry Cloak
-						dr(	6	, i(	68748	)), --	Imbued Disciple's Cloak
-						dr(	5	, i(	6337	)), --	Infantry Leggings
-						dr(	4	, i(	68749	)), --	Imbued Disciple's Bracers
-						dr(	4	, i(	68747	)), --	Imbued Disciple's Sash
-						dr(	4	, i(	68752	)), --	Imbued Infantry Belt
-						dr(	4	, i(	68750	)), --	Imbued Pioneer Belt
-						dr(	4	, i(	68751	)), --	Imbued Pioneer Bracers
-						dr(	3	, i(	6267	)), --	Disciple's Pants
-						dr(	3	, i(	68753	)), --	Imbued Infantry Bracers
-						dr(	3	, i(	6269	)), --	Pioneer Trousers
-						dr(	1.6	, i(	68759	)), --	Imbued Gypsy Cloak
-						dr(	1.3	, i(	6266	)), --	Disciple's Vest
-						dr(	1.3	, i(	68760	)), --	Imbued Infantry Gauntlets
-						dr(	1.3	, i(	68757	)), --	Imbued Pioneer Gloves
-						dr(	1.3	, i(	6268	)), --	Pioneer Tunic
-						dr(	1.2	, i(	68754	)), --	Imbued Disciple's Boots
-						dr(	1.1	, i(	6512	)), --	Disciple's Robe
-						dr(	1.1	, i(	68756	)), --	Imbued Simple Cape
-						dr(	1.1	, i(	6336	)), --	Infantry Tunic
-						dr(	1	, i(	68762	)), --	Imbued Cadet Cloak
-						dr(	1	, i(	68755	)), --	Imbued Disciple's Gloves
-						dr(	1	, i(	68761	)), --	Imbued Infantry Boots
-						dr(	0.8	, i(	68758	)), --	Imbued Pioneer Boots
+					n(5822, { -- Felweaver Scornn
+						i(68744), -- Imbued Pioneer Cloak
+						i(68743), -- Imbued Infantry Cloak
+						i(68748), -- Imbued Disciple's Cloak
+						i(6337), --	Infantry Leggings
+						i(68749), --Imbued Disciple's Bracers
+						i(68747), --Imbued Disciple's Sash
+						i(68752), --Imbued Infantry Belt
+						i(68750), --Imbued Pioneer Belt
+						i(68751), --Imbued Pioneer Bracers
+						i(6267), -- Disciple's Pants
+						i(68753), -- Imbued Infantry Bracers
+						i(6269), -- Pioneer Trousers
+						i(68759), -- Imbued Gypsy Cloak
+						i(6266), -- Disciple's Vest
+						i(68760), -- Imbued Infantry Gauntlets
+						i(68757), -- Imbued Pioneer Gloves
+						i(6268), -- Pioneer Tunic
+						i(68754), -- Imbued Disciple's Boots
+						i(6512), -- Disciple's Robe
+						i(68756), -- Imbued Simple Cape
+						i(6336), -- Infantry Tunic
+						i(68762), -- Imbued Cadet Cloak
+						i(68755), -- Imbued Disciple's Gloves
+						i(68761), -- Imbued Infantry Boots
+						i(68758), -- Imbued Pioneer Boots
 					}), 
-	--				n(5826, { 		-- Geolord Mottle -- no transmoggable loot			}),
-	--				n(5809, { 		-- Sergeant Curtis -- no transmoggable loot			}), 
+					--n(5826, {}), -- Geolord Mottle -- NO TRANSMOGGABLE LOOT!
+					--n(5809, {}), -- Sergeant Curtis -- NO TRANSMOGGABLE LOOT!
 				}),
-				nh( -2, {	-- Vendors
-					n(3881, { -- Grimtak
-						i(5483),	-- Recipe: Scorpid Surprise
-					}),
-					n(113615, {	-- Ravika <Darkspear Quartermaster>
-						["groups"] = {
-						i(97901),	-- Griftah's Authentic Troll Shoes
-						i(97919),	-- Whole-Body Shinka' Toy
-						i(97942),	-- Sen'jin Spirit Drum Toy
-						i(98552),	-- Xan'tish's Flute Toy
-						},
-						["description"] = "Vendor is only available at this location if you are on the quest 'The Legion Returns'. This vendor is also available on the Echo Isles.",
-					}),
-					n(5942, {	-- Zansoa <Fishing Supplies>
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6326),	-- Recipe: Slitherskin Mackerel
-					}),
-					n(7952, {	-- Zjolnir <Raptor Handler>
-						i(18788),	-- Swift Blue Raptor
-						i(18789),	-- Swift Olive Raptor
-						i(18790),	-- Swift Orange Raptor
-						i(8588),	-- Whistle of the Emerald Raptor
-						i(8591),	-- Whistle of the Turquoise Raptor
-						i(8592),	-- Whistle of the Violet Raptor
+				n(-2, {	-- Vendors
+					["g"] = bubbleDown({["races"] = HORDE_ONLY}, { -- Horde-only Vendors
+						n(3881, { -- Grimtak
+							i(5483), -- Recipe: Scorpid Surprise
+						}),
+						n(113615, {	-- Ravika <Darkspear Quartermaster>
+							["g"] = {
+								i(97901), -- Griftah's Authentic Troll Shoes
+								i(97919), -- Whole-Body Shinka' Toy
+								i(97942), -- Sen'jin Spirit Drum Toy
+								i(98552), -- Xan'tish's Flute Toy
+							},
+							["description"] = "Vendor is only available at this location if you are on the quest 'The Legion Returns'. This vendor is also available on the Echo Isles.",
+						}),
+						n(5942, { -- Zansoa <Fishing Supplies>
+							i(6368), -- Recipe: Rainbow Fin Albacore
+							i(6326), -- Recipe: Slitherskin Mackerel
+						}),
+						n(7952, { -- Zjolnir <Raptor Handler>
+							i(18788), -- Swift Blue Raptor
+							i(18789), -- Swift Olive Raptor
+							i(18790), -- Swift Orange Raptor
+							i(8588), -- Whistle of the Emerald Raptor
+							i(8591), -- Whistle of the Turquoise Raptor
+							i(8592), -- Whistle of the Violet Raptor
+						}),
 					}),
 				}),
-				n(-40, {	-- Legacy
-					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
-							qh(5648, {	-- Garments of Spirituality
-								["groups"] = {
-									un(34, i(16606)),	-- Juju Hex Robes
+				n(-40, { -- Legacy
+					["g"] = {
+						n(-17, { -- Quests (Legacy)
+							q(5648, { -- Garments of Spirituality
+								["g"] = {
+									un(34, i(16606)), -- Juju Hex Robes
 								},
-								["races"] = { 8 },	-- Troll
-								["classes"] = { 5 },	-- Priest
+								["qg"] = 3706, -- Tai'jin
+								["races"] = { 8 }, -- Troll
+								["classes"] = { 5 }, -- Priest
+								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
-							qh( 827, {	-- Skull Rock
-								un(34, i(4947)),	-- Jagged Dagger
-								un(34, i(4939)),	-- Steady Bastard Sword
-								un(34, i(4948)),	-- Stinging Mace
+							q(827, { -- Skull Rock
+								["g"] = {
+									un(34, i(4947)), -- Jagged Dagger
+									un(34, i(4939)), -- Steady Bastard Sword
+									un(34, i(4948)), -- Stinging Mace
+								},
+								["qg"] = 3208, -- Margoz
+								["races"] = HORDE_ONLY,
+								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
-							qh( 924, {	-- The Demon Seed
-								un(34, i(5420)),	-- Banshee Armor
+							q(924, { -- The Demon Seed
+								["g"] = {
+									un(34, i(5420)), -- Banshee Armor
+								},
+								["qg"] = 3521, -- Ak'Zeloth
+								["races"] = HORDE_ONLY,
+								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
 						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
+						--[[n(-16, { -- Rares (Legacy)
+						}),
+						n(0, { -- Zone Drop (Legacy)
+						}),]]--
 					},
-					["u"] = 2,
+					["u"] = 2, -- Legacy Section
 				}),
-				m(463, { 	-- Echo Isles
-					["groups"] = {
-						n(-25, { 	-- Pet Battle
-							p(467), 	-- Dung Beetle
-							p(466), 	-- Spiny Lizard
+				m(463, { -- Echo Isles
+					["g"] = {
+						n(-25, { -- Pet Battle
+							p(467), -- Dung Beetle
+							p(466), -- Spiny Lizard
 						}),
-						n(-17, { 	-- Quests
-							qh(24607, {	-- The Rise of the Darkspear
+						n(-17, { -- Quests
+							-- Druid Quests --
+							q(24764, { -- The Rise of the Darkspear (Druid)
+								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
-								["classes"] = {1},
+								["races"] = HORDE_ONLY,
+								["classes"] = { 11 }, -- Druid
 							}),
-							qh(24622, {	-- A Troll's Truest Companion
-								["qg"] = 38005, -- Moraya
-								["sourceQuests"] = { 25064 } -- Moraya
+							q(24765, { -- The Basics: Hitting Things (Druid)
+								["g"] = {},
+								["qg"] = 38243, -- Zen'tabra
+								["races"] = HORDE_ONLY,
+								["classes"]= { 11 }, -- Druid
+								["sourceQuests"] = { 24764 }, -- The Rise of the Darkspear (Druid)
 							}),
-							qh(24623, {	-- Saving the Young
-								["qg"] = 37969, -- Kijara
-								["sourceQuests"] = { 24622 }
+							q(24767, { -- A Rough Start (Druid)
+								["g"] = {},
+								["qg"] = 38243, -- Zen'tabra
+								["races"] = HORDE_ONLY,
+								["classes"] = { 11 }, -- Druid
+								["sourceQuests"] = { 24765 }, -- The Basics: Hitting Things (Druid)
 							}),
-							qh(24624, {	-- Mercy for the Lost
-								["qg"] = 37987, -- Tegashi
-								["sourceQuests"] = { 24622 }
-							}),
-							qh(24625, {	-- Consort of the Sea Witch
-								["qg"] = 37987, -- Tegashi
-								["sourceQuests"] = { 24622 }
-							}),
-							qh(24626, {	-- Young and Vicious
-								["qg"] = 37969, -- Kijara
-								["sourceQuests"] = { 24625 } -- Consort of the Sea Witch
-							}),
-							qh(24639, {	-- The Basics: Hitting Things
-								["qg"] = 38037, -- Nortet
-								["sourceQuests"] = { 24607 }, -- The Rise of the Darkspear
-								["classes"]= {1},
-							}),
-							qh(24641, {	-- A Rough Start
-								["qg"] = 38037, -- Nortet
-								["sourceQuests"] = { 24639 }, -- The Basics: Hitting Things
-								["classes"]= {1},
-							}),
-							qh(24642, {	-- Proving Pit (warrior)
-								["groups"] = {
-									i(52876),
+							q(24768, { -- Proving Pit (Druid)
+								["g"] = {
+									i(52870), -- Darkspear Druidic Staff
 								},
-								["qg"] = 38037, -- Nortet
-								["sourceQuests"] = { 24641 }, -- A Rough Start (warrior)
-								["classes"] = {1},
+								["qg"] = 38243, -- Zen'tabra
+								["races"] = HORDE_ONLY,
+								["classes"] = { 11 }, -- Druid
+								["sourceQuests"] = { 24767 }, -- A Rough Start (Druid)
 							}),
-							qh(24643, {	-- More Than Expected (warrior)
-								["qg"] = 38037, -- Nortet
-								["sourceQuests"] = { 24642 }, -- Proving Pit (warrior)
-								["classes"] = {1},
+							q(24769, { -- More Than Expected (Druid)
+								["g"] = {},
+								["qg"] = 38243, -- Zen'tabra
+								["races"] = HORDE_ONLY,
+								["classes"] = { 11 }, -- Druid
+								["sourceQuests"] = { 24768 }, -- Proving Pit (Druid)
 							}),
-							qh(24750, {	-- The Rise of the Darkspear
+							-- Hunter Quests --
+							q(24776, { -- The Rise of the Darkspear (Hunter)
+								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
-								["classes"] = {8},
+								["races"] = HORDE_ONLY,
+								["classes"] = { 3 }, -- Hunter
 							}),
-							qh(24751, {	-- The Basics: Hitting Things
+							q(24777, { -- The Basics: Hitting Things (Hunter)
+								["g"] = {},
+								["qg"] = 38247, -- Ortezza
+								["races"] = HORDE_ONLY,
+								["classes"] = { 3 }, -- Hunter
+								["sourceQuests"] = { 24776 }, -- The Rise of the Darkspear (Hunter)
+							}),
+							q(24779, { -- A Rough Start (Hunter)
+								["g"] = {},
+								["qg"] = 38247, -- Ortezza
+								["races"] = HORDE_ONLY,
+								["classes"] = { 3 }, -- Hunter
+								["sourceQuests"] = { 24777 }, -- The Basics: Hitting Things (Hunter)
+							}),
+							q(24780, { -- Proving Pit (Hunter)
+								["g"] = {
+									i(52872), -- Darkspear Hunter's Bow
+								},
+								["qg"] = 38247, -- Ortezza
+								["races"] = HORDE_ONLY,
+								["classes"] = { 3 }, -- Hunter
+								["sourceQuests"] = { 24779 }, -- A Rough Start (Hunter)
+							}),
+							q(24781, { -- More Than Expected (Hunter)
+								["g"] = {},
+								["qg"] = 38247, -- Ortezza
+								["races"] = HORDE_ONLY,
+								["classes"] = { 3 }, -- Hunter
+								["sourceQuests"] = { 24780 }, -- Proving Pit (Hunter)
+							}),
+							-- Mage Quests --
+							q(24750, { -- The Rise of the Darkspear (Mage)
+								["g"] = {},
+								["qg"] = 37951, -- Jin'thala
+								["races"] = HORDE_ONLY,
+								["classes"] = { 8 }, -- Mage
+							}),
+							q(24751, { -- The Basics: Hitting Things (Mage)
+								["g"] = {},
 								["qg"] = 38246, -- Soratha
-								["sourceQuests"] = { 24750 }, -- The Rise of the Darkspear
-								["classes"]= {8},
+								["races"] = HORDE_ONLY,
+								["classes"] = { 8 }, -- Mage
+								["sourceQuests"] = { 24750 }, -- The Rise of the Darkspear (Mage)
 							}),
 							-- qg(38246, qh(24752)) -- The Arts of a Mage (removed from game)
-							qh(24753, {	-- A Rough Start
+							q(24753, { -- A Rough Start (Mage)
+								["g"] = {},
 								["qg"] = 38246, -- Soratha
-								["sourceQuests"] = { 24751 }, -- The Basics: Hitting Things
-								["classes"]= {8},
+								["races"] = HORDE_ONLY,
+								["classes"] = { 8 }, -- Mage
+								["sourceQuests"] = { 24751 }, -- The Basics: Hitting Things (Mage)
 							}),
-							qh(24754, {	-- Proving Pit (mage)
-								["groups"] = {
-									i(52873),
+							q(24754, { -- Proving Pit (Mage)
+								["g"] = {
+									i(52873), -- Darkspear Magic Weaver Tunic
 								},
 								["qg"] = 38246, -- Soratha
-								["sourceQuests"] = { 24753 }, -- A Rough Start (mage)
-								["classes"] = {8},
+								["races"] = HORDE_ONLY,
+								["classes"] = { 8 }, -- Mage
+								["sourceQuests"] = { 24753 }, -- A Rough Start (Mage)
 							}),
-							qh(24755, {	-- More Than Expected (mage)
+							q(24755, { -- More Than Expected (Mage)
+								["g"] = {},
 								["qg"] = 38246, -- Soratha
-								["sourceQuests"] = { 24754 }, -- Proving Pit (mage)
-								["classes"] = {8},
+								["races"] = HORDE_ONLY,
+								["classes"] = { 8 }, -- Mage
+								["sourceQuests"] = { 24754 }, -- Proving Pit (Mage)
 							}),
-							qh(24758, {	-- The Rise of the Darkspear
+							-- Monk Quests --
+							q(31159, { -- The Rise of the Darkspear (Monk)
+								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
-								["classes"] = {7},
+								["races"] = HORDE_ONLY,
+								["classes"] = { 10 }, -- Monk
 							}),
-							qh(24759, {	-- The Basics: Hitting Things
-								["qg"] = 38242, -- Nekali
-								["sourceQuests"] = { 24758 }, -- The Rise of the Darkspear
-								["classes"]= {7},
+							q(31158, { -- The Basics: Hitting Things (Monk)
+								["g"] = {},
+								["qg"] = 63310, -- Zabrax
+								["races"] = HORDE_ONLY,
+								["classes"] = { 10 }, -- Monk
+								["sourceQuests"] = { 31159 }, -- The Rise of the Darkspear (Monk)
 							}),
-							qh(24761, {	-- A Rough Start
-								["qg"] = 38242, -- Nekali
-								["sourceQuests"] = { 24759 }, -- The Basics: Hitting Things
-								["classes"]= {7},
+							q(31160, { -- A Rough Start (Monk)
+								["g"] = {},
+								["qg"] = 63310, -- Zabrax
+								["races"] = HORDE_ONLY,
+								["classes"] = { 10 }, -- Monk
+								["sourceQuests"] = { 31158 }, -- The Basics: Hitting Things (Monk)
 							}),
-							qh(24762, {	-- Proving Pit (shaman)
-								["groups"] = {
-									i(52875),
+							q(31161, { -- Proving Pit (Monk)
+								["g"] = {
+									i(85574), -- Darkspear Monk's Staff
 								},
-								["qg"] = 38242, -- Nekali
-								["sourceQuests"] = { 24761 }, -- A Rough Start (shaman)
-								["classes"] = {7},
+								["qg"] = 63310, -- Zabrax
+								["races"] = HORDE_ONLY,
+								["classes"] = { 10 }, -- Monk
+								["sourceQuests"] = { 31160 }, -- A Rough Start (Monk)
 							}),
-							qh(24763, {	-- More Than Expected (shaman)
-								["qg"] = 38242, -- Nekali
-								["sourceQuests"] = { 24762 }, -- Proving Pit (shaman)
-								["classes"] = {7},
+							q(31163, { -- More Than Expected (Monk)
+								["g"] = {},
+								["qg"] = 63310, -- Zabrax
+								["races"] = HORDE_ONLY,
+								["classes"] = { 10 }, -- Monk
+								["sourceQuests"] = { 31161 }, -- Proving Pit (Monk)
 							}),
-							qh(24764, {	-- The Rise of the Darkspear
+							-- Priest Quests --
+							q(24782, { -- The Rise of the Darkspear (Priest)
+								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
-								["classes"] = {11},
+								["races"] = HORDE_ONLY,
+								["classes"] = { 5 }, -- Priest
 							}),
-							qh(24765, {	-- The Basics: Hitting Things
-								["qg"] = 38243, -- Zen'tabra
-								["sourceQuests"] = { 24764 }, -- The Rise of the Darkspear
-								["classes"]= {11},
-							}),
-							qh(24767, {	-- A Rough Start
-								["qg"] = 38243, -- Zen'tabra
-								["sourceQuests"] = { 24765 }, -- The Basics: Hitting Things
-								["classes"]= {11},
-							}),
-							qh(24768, {	-- Proving Pit (druid)
-								["groups"] = {
-									i(52870),
-								},
-								["qg"] = 38243, -- Zen'tabra
-								["sourceQuests"] = { 24767 }, -- A Rough Start (druid)
-								["classes"] = {11},
-							}),
-							qh(24769, {	-- More Than Expected (druid)
-								["qg"] = 38243, -- Zen'tabra
-								["sourceQuests"] = { 24768 },  -- Proving Pit (druid)
-								["classes"] = {11},
-							}),
-							qh(24770, {	-- The Rise of the Darkspear
-								["qg"] = 37951, -- Jin'thala
-								["classes"] = {4},
-							}),
-							qh(24771, {	-- The Basics: Hitting Things
-								["qg"] = 38244, -- Legati
-								["sourceQuests"] = { 24770 }, -- The Rise of the Darkspear
-								["classes"]= {4},
-							}),
-							qh(24773, {	-- A Rough Start
-								["qg"] = 38244, -- Legati
-								["sourceQuests"] = { 24770 }, -- The Basics: Hitting Things
-								["classes"]= {4},
-							}),
-							qh(24774, {	-- Proving Pit (rogue)
-								["groups"] = {
-									i(52889),
-								},
-								["qg"] = 38244, -- Legati
-								["sourceQuests"] = { 24773 }, -- A Rough Start (rogue)
-								["classes"] = {4},
-							}),
-							qh(24775, {	-- More Than Expected (rogue)
-								["qg"] = 38244, -- Legati
-								["sourceQuests"] = { 24774 }, -- Proving Pit (rogue)
-								["classes"] = {4},
-							}),
-							qh(24776, {	-- The Rise of the Darkspear
-								["qg"] = 37951, -- Jin'thala
-								["classes"] = {3},
-							}),
-							qh(24777, {	-- The Basics: Hitting Things
-								["qg"] = 38247, -- Ortezza
-								["sourceQuests"] = { 24776 }, -- The Rise of the Darkspear
-								["classes"]= {3},
-							}),
-							qh(24779, {	-- A Rough Start
-								["qg"] = 38247, -- Ortezza
-								["sourceQuests"] = { 24777 }, -- The Basics: Hitting Things
-								["classes"]= {3},
-							}),
-							qh(24780, {	-- Proving Pit (hunter)
-								["groups"] = {
-									i(52872),
-								},
-								["qg"] = 38247, -- Ortezza
-								["sourceQuests"] = { 24779 }, -- A Rough Start (hunter)
-								["classes"] = {3},
-							}),
-							qh(24781, {	-- More Than Expected (hunter)
-								["qg"] = 38247, -- Ortezza
-								["sourceQuests"] = { 24780 }, -- Proving Pit (hunter)
-								["classes"] = {3},
-							}),
-							qh(24782, {	-- The Rise of the Darkspear
-								["qg"] = 37951, -- Jin'thala
-								["classes"] = {5},
-							}),
-							qh(24783, {	-- The Basics: Hitting Things
+							q(24783, { -- The Basics: Hitting Things (Priest)
+								["g"] = {},
 								["qg"] = 38245, -- Tunari
-								["sourceQuests"] = { 24782 }, -- The Rise of the Darkspear
-								["classes"]= {5},
+								["races"] = HORDE_ONLY,
+								["classes"] = { 5 }, -- Priest
+								["sourceQuests"] = { 24782 }, -- The Rise of the Darkspear (Priest)
 							}),
-							qh(24785, {	-- A Rough Start
+							q(24785, { -- A Rough Start (Priest)
+								["g"] = {},
 								["qg"] = 38245, -- Tunari
-								["sourceQuests"] = { 24783 }, -- The Basics: Hitting Things
-								["classes"]= {5},
+								["races"] = HORDE_ONLY,
+								["classes"] = { 5 }, -- Priest
+								["sourceQuests"] = { 24783 }, -- The Basics: Hitting Things (Priest)
 							}),
-							qh(24786, {	-- Proving Pit (priest)
-								["groups"] = {
-									i(52874),
+							q(24786, { -- Proving Pit (Priest)
+								["g"] = {
+									i(52874), -- Darkspear Soothsayer Robes
 								},
 								["qg"] = 38245, -- Tunari
-								["sourceQuests"] = { 24785 }, -- A Rough Start (priest)
-								["classes"] = {5},
+								["races"] = HORDE_ONLY,
+								["classes"] = { 5 }, -- Priest
+								["sourceQuests"] = { 24785 }, -- A Rough Start (Priest)
 							}),
-							qh(24787, {	-- More Than Expected (priest)
+							q(24787, { -- More Than Expected (Priest)
+								["g"] = {},
 								["qg"] = 38245, -- Tunari
-								["sourceQuests"] = { 24786 },  -- Proving Pit (priest)
-								["classes"] = {5},
+								["races"] = HORDE_ONLY,
+								["classes"] = { 5 }, -- Priest
+								["sourceQuests"] = { 24786 }, -- Proving Pit (Priest)
 							}),
-							qh(24812, {	-- No More Mercy
-								["qg"] = 38442, -- Morakki
-								["sourceQuests"] = { 25035 } -- Breaking the Line
+							-- Rogue Quests --
+							q(24770, { -- The Rise of the Darkspear (Rogue)
+								["g"] = {},
+								["qg"] = 37951, -- Jin'thala
+								["races"] = HORDE_ONLY,
+								["classes"] = { 4 }, -- Rogue
 							}),
-							qh(24813, {	-- Territorial Fetish
-								["qg"] = 38442, -- Morakki
-								["sourceQuests"] = { 25035 } -- Breaking the Line
+							q(24771, { -- The Basics: Hitting Things (Rogue)
+								["g"] = {},
+								["qg"] = 38244, -- Legati
+								["races"] = HORDE_ONLY,
+								["classes"] = { 4 }, -- Rogue
+								["sourceQuests"] = { 24770 }, -- The Rise of the Darkspear (Rogue)
 							}),
-							qh(24814, {	-- An Ancient Enemy
-								["qg"] = 38442, -- Morakki
-								["sourceQuests"] = { 24812, 24813 } -- No more Mercy, Territorial Fetish
+							q(24773, { -- A Rough Start (Rogue)
+								["g"] = {},
+								["qg"] = 38244, -- Legati
+								["races"] = HORDE_ONLY,
+								["classes"] = { 4 }, -- Rogue
+								["sourceQuests"] = { 24770 }, -- The Basics: Hitting Things (Rogue)
 							}),
-							qh(25035, {	-- Breaking the Line
-								["qg"] = 38440, -- Tortunga
-								["sourceQuests"] = { 24626 } -- Young and Vicious
+							q(24774, { -- Proving Pit (Rogue)
+								["g"] = {
+									i(52889), -- Blooded Darkspear Dagger
+								},
+								["qg"] = 38244, -- Legati
+								["races"] = HORDE_ONLY,
+								["classes"] = { 4 }, -- Rogue
+								["sourceQuests"] = { 24773 }, -- A Rough Start (Rogue)
 							}),
-							qh(25037, {	-- Crab Fishin'
+							q(24775, { -- More Than Expected (Rogue)
+								["g"] = {},
+								["qg"] = 38244, -- Legati
+								["races"] = HORDE_ONLY,
+								["classes"] = { 4 }, -- Rogue
+								["sourceQuests"] = { 24774 }, -- Proving Pit (Rogue)
+							}),
+							-- Shaman Quests --
+							q(24758, { -- The Rise of the Darkspear (Shaman)
+								["g"] = {},
+								["qg"] = 37951, -- Jin'thala
+								["races"] = HORDE_ONLY,
+								["classes"] = { 7 }, -- Shaman
+							}),
+							q(24759, { -- The Basics: Hitting Things (Shaman)
+								["g"] = {},
+								["qg"] = 38242, -- Nekali
+								["races"] = HORDE_ONLY,
+								["classes"] = { 7 }, -- Shaman
+								["sourceQuests"] = { 24758 }, -- The Rise of the Darkspear (Shaman)
+							}),
+							q(24761, { -- A Rough Start (Shaman)
+								["g"] = {},
+								["qg"] = 38242, -- Nekali
+								["races"] = HORDE_ONLY,
+								["classes"] = { 7 }, -- Shaman
+								["sourceQuests"] = { 24759 }, -- The Basics: Hitting Things (Shaman)
+							}),
+							q(24762, { -- Proving Pit (Shaman)
+								["g"] = {
+									i(52875), -- Darkspear Shamanic Staff
+								},
+								["qg"] = 38242, -- Nekali
+								["races"] = HORDE_ONLY,
+								["classes"] = { 7 }, -- Shaman
+								["sourceQuests"] = { 24761 }, -- A Rough Start (Shaman)
+							}),
+							q(24763, { -- More Than Expected (Shaman)
+								["g"] = {},
+								["qg"] = 38242, -- Nekali
+								["races"] = HORDE_ONLY,
+								["classes"] = { 7 }, -- Shaman
+								["sourceQuests"] = { 24762 }, -- Proving Pit (Shaman)
+							}),
+							-- Warlock Quests --
+							q(26272, { -- The Rise of the Darkspear (Warlock)
+								["g"] = {},
+								["qg"] = 37951, -- Jin'thala
+								["races"] = HORDE_ONLY,
+								["classes"] = { 9 }, -- Warlock
+							}),
+							q(26273, { -- The Basics: Hitting Things (Warlock)
+								["g"] = {},
+								["qg"] = 42618, -- Voldreka
+								["races"] = HORDE_ONLY,
+								["classes"] = { 9 }, -- Warlock
+								["sourceQuests"] = { 26272 }, -- The Rise of the Darkspear (Warlock)
+							}),
+							q(26275, { -- A Rough Start (Warlock)
+								["g"] = {},
+								["qg"] = 42618, -- Voldreka
+								["races"] = HORDE_ONLY,
+								["classes"] = { 9 }, -- Warlock
+								["sourceQuests"] = { 26273 }, -- The Basics: Hitting Things (Warlock)
+							}),
+							q(26276, { -- Proving Pit (Warlock)
+								["g"] = {
+									i(52873), -- Darkspear Magic Weaver Tunic
+								},
+								["qg"] = 42618, -- Voldreka
+								
+								["classes"] = { 9 }, -- Warlock
+								["sourceQuests"] = { 26275 }, -- A Rough Start (Warlock)
+							}),
+							q(26277, { -- More Than Expected (Warlock)
+								["g"] = {},
+								["qg"] = 42618, -- Voldreka
+								["races"] = HORDE_ONLY,
+								["classes"] = { 9 }, -- Warlock
+								["sourceQuests"] = { 26276 }, -- Proving Pit (Warlock)
+							}),
+							-- Warrior Quests --
+							q(24607, { -- The Rise of the Darkspear (Warrior)
+								["g"] = {},
+								["qg"] = 37951, -- Jin'thala
+								["races"] = HORDE_ONLY,
+								["classes"] = { 1 }, -- Warrior
+							}),
+							q(24639, { -- The Basics: Hitting Things (Warrior)
+								["g"] = {},
+								["qg"] = 38037, -- Nortet
+								["races"] = HORDE_ONLY,
+								["classes"] = { 1 }, -- Warrior
+								["sourceQuests"] = { 24607 }, -- The Rise of the Darkspear (Warrior)
+							}),
+							q(24641, { -- A Rough Start (Warrior)
+								["g"] = {},
+								["qg"] = 38037, -- Nortet
+								["races"] = HORDE_ONLY,
+								["classes"] = { 1 }, -- Warrior
+								["sourceQuests"] = { 24639 }, -- The Basics: Hitting Things (Warrior)
+							}),
+							q(24642, { -- Proving Pit (Warrior)
+								["g"] = {
+									i(52876), -- Darkspear Battle Axe
+								},
+								["qg"] = 38037, -- Nortet
+								["races"] = HORDE_ONLY,
+								["classes"] = { 1 }, -- Warrior
+								["sourceQuests"] = { 24641 }, -- A Rough Start (Warrior)
+							}),
+							q(24643, { -- More Than Expected (Warrior)
+								["g"] = {},
+								["qg"] = 38037, -- Nortet
+								["races"] = HORDE_ONLY,
+								["classes"] = { 1 }, -- Warrior
+								["sourceQuests"] = { 24642 }, -- Proving Pit (Warrior)
+							}),
+							-- Other Quests --
+							q(25064, { -- Moraya
+								["g"] = {},
+								["qg"] = 38966, -- Vol'jin
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769}, -- More Than Expected (All Classes)
+							}),
+							q(24622, { -- A Troll's Truest Companion
+								["g"] = {},
+								["qg"] = 38005, -- Moraya
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 25064 }, -- Moraya
+							}),
+							q(25037, { -- Crab Fishin'
+								["g"] = {},
 								["qg"] = 39007, -- Tora'jin
-								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769}, -- More Than Expected (all classes)
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 25064 }, -- Moraya
 							}),
-							qh(25064, {	-- Moraya
-								["qg"] = 38966, -- Vol'jin
-								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769}, -- More Than Expected (all classes)
+							q(24625, { -- Consort of the Sea Witch
+								["g"] = {},
+								["qg"] = 37987, -- Tegashi
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 24622 }, -- A Troll's Truest Companion
 							}),
-							q(25073, {	-- Sen'jin Village
+							q(24624, { -- Mercy for the Lost
+								["g"] = {},
+								["qg"] = 37987, -- Tegashi
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 24622 }, -- A Troll's Truest Companion
+							}),
+							q(24623, { -- Saving the Young
+								["g"] = {},
+								["qg"] = 37969, -- Kijara
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 24622 }, -- A Troll's Truest Companion
+							}),
+							q(24626, { -- Young and Vicious
+								["g"] = {},
+								["qg"] = 37969, -- Kijara
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 24625, 24624, 24623 }, -- Consort of the Sea Witch, Mercy for the Lost, Saving the Young
+							}),
+							q(25035, { -- Breaking the Line
+								["g"] = {},
+								["qg"] = 38440, -- Tortunga
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 24626 }, -- Young and Vicious
+							}),
+							q(24812, { -- No More Mercy
+								["g"] = {},
+								["qg"] = 38442, -- Morakki
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 25035 }, -- Breaking the Line
+							}),
+							q(24813, { -- Territorial Fetish
+								["g"] = {},
+								["qg"] = 38442, -- Morakki
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 25035 }, -- Breaking the Line
+							}),
+							q(24814, { -- An Ancient Enemy
+								["g"] = {},
+								["qg"] = 38442, -- Morakki
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 24812, 24813 } -- No More Mercy, Territorial Fetish
+							}),
+							q(25073, { -- Sen'jin Village
+								["g"] = {},
 								["qg"] = 38966, -- Vol'jin
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24814 }, -- An Ancient Enemy
-								["description"] = "Unavailable if \"Report to Sen'jin Village\" has been completed in the Valley of Trials",
-								["races"] = { 6, 8, 10 },	-- Tauren, Troll, Blood Elf
+								["description"] = "This quest is unavailable if \"|cFFFFD700Report to Sen'jin Village|r\" has been completed from the Valley of Trials.",
 								["isBreadcrumb"] = true,
 							}),
-							qh(26272, {	-- The Rise of the Darkspear
-								["qg"] = 37951, -- Jin'thala
-								["classes"] = {9},
-							}),
-							qh(26273, {	-- The Basics: Hitting Things
-								["qg"] = 42618, -- Voldreka
-								["sourceQuests"] = { 26272 }, -- The Rise of the Darkspear
-								["classes"]= {9},
-							}),
-							qh(26275, {	-- A Rough Start
-								["qg"] = 42618, -- Voldreka
-								["sourceQuests"] = { 26273 }, -- The Basics: Hitting Things
-								["classes"]= {9},
-							}),
-							qh(26276, {	-- Proving Pit (warlock)
-								["groups"] = {
-									i(52873),
-								},
-								["qg"] = 42618, -- Voldreka
-								["sourceQuests"] = { 26275 }, -- A Rough Start (warlock)
-								["classes"] = {9},
-							}),
-							qh(26277, {	-- More Than Expected (warlock)
-								["qg"] = 42618, -- Voldreka
-								["sourceQuests"] = { 26276 }, -- Proving Pit (warlock)
-								["classes"] = {9},
-							}),
-							qh(31158, {	-- The Basics: Hitting Things
-								["qg"] = 63310, -- Zabrax
-								["sourceQuests"] = { 31159 }, -- The Rise of the Darkspear
-								["classes"]= {10},
-							}),
-							qh(31159, {	-- The Rise of the Darkspear
-								["qg"] = 37951, -- Jin'thala
-								["classes"] = {10},
-							}),
-							qh(31160, {	-- A Rough Start
-								["qg"] = 63310, -- Zabrax
-								["sourceQuests"] = { 31158 }, -- The Basics: Hitting Things
-								["classes"]= {10},
-							}),
-							qh(31161, {	-- Proving Pit (monk)
-								["groups"] = {
-									i(85574),
-								},
-								["qg"] = 63310, -- Zabrax
-								["sourceQuests"] = { 31160 }, -- A Rough Start (monk)
-								["classes"] = {10},
-							}),
-							qh(31163, {	-- More Than Expected (monk)
-								["qg"] = 63310, -- Zabrax
-								["sourceQuests"] = { 31161 }, -- Proving Pit (monk)
-								["classes"] = {10},
-							}),
-							qh(32320, {	-- The Horde is Family
+							-- Pandaren Campaign Quests --
+							q(32320, { -- The Horde Is Family
+								["g"] = {},
 								["qg"] = 68025, -- Thrall
 								["lvl"] = 81,
-								["sourceQuests"] = { 32319 } -- Find Thrall!
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 32319 }, -- Find Thrall!
 							}),
-							qh(32372, {	-- De-Subjugation
+							q(32372, { -- De-Subjugation
+								["g"] = {},
 								["qg"] = 68025, -- Thrall
 								["lvl"] = 81,
-								["sourceQuests"] = { 32320 } -- The Horde is Family
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 32320 }, -- The Horde is Family
 							}),
 						}),
-						n( -2, { 	-- Vendors
-							h(n(113615, {	-- Ravika <Darkspear Quartermaster>
-								i(97901),	-- Griftah's Authentic Troll Shoes
-								i(97919),	-- Whole-Body Shinka' Toy
-								i(97942),	-- Sen'jin Spirit Drum Toy
-								i(98552),	-- Xan'tish's Flute Toy
-							})),
+						n(-2, { -- Vendors
+							n(113615, { -- Ravika <Darkspear Quartermaster>
+								["g"] = {
+									i(97901), -- Griftah's Authentic Troll Shoes
+									i(97919), -- Whole-Body Shinka' Toy
+									i(97942), -- Sen'jin Spirit Drum Toy
+									i(98552), -- Xan'tish's Flute Toy
+								},
+								["races"] = HORDE_ONLY,
+							}),
 						}),
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Troll_Male",			
 					["description"] = "|cff66ccff The Echoes Isles are the ancestral home of the Darkspear Trolls. Vol'jin, the leader of the trolls, has relocated here after tensions between Hellscream and the trolls.|r",
 				}),
-				m(461, { 	-- Valley of Trials
+				m(461, { -- Valley of Trials
 					["groups"] = {
 						n(-25, { -- Pet Battle
 							p(635), -- Adder
@@ -812,62 +962,87 @@ _.Zones =
 							p(448), -- Hare
 						}),
 						n(-17, { -- Quests
-							qh(25126, {	-- Cutting Teeth
+							q(25152, { -- Your Place In The World
+								["g"] = {},
+								["qg"] = 10176, -- Kaltunk
+								["races"] = HORDE_ONLY,
+							}),
+							q(25126, { -- Cutting Teeth
+								["g"] = {},
 								["qg"] = 3143, -- Gornek
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25152 }, -- Your Place In The World
 							}),
-							qh(25127, {	-- Sting of the Scorpid
+							q(25172, { -- Invaders In Our Home
+								["g"] = {},
 								["qg"] = 3143, -- Gornek
-								["sourceQuests"] = { 25172 }, -- Invaders in our Home
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 25126 }, -- Cutting Teeth
 							}),
-							qh(25128, {	-- Hana'zua
+							q(25136, { -- Galgar's Cactus Apple Surprise
+								["g"] = {},
+								["qg"] = 9796, -- Galgar
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 25126 }, -- Cutting Teeth
+							}),
+							q(25127, { -- Sting of the Scorpid
+								["g"] = {},
+								["qg"] = 3143, -- Gornek
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 25172 }, -- Invaders In Our Home
+							}),
+							q(37446, { -- Lazy Peons
+								["g"] = {},
+								["qg"] = 11378, -- Foreman Thazz'ril
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 25127 }, -- Sting of the Scorpid
+							}),
+							q(25135, { -- Thazz'ril's Pick
+								["g"] = {},
+								["qg"] = 11378, -- Foreman Thazz'ril
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 37446 }, -- Lazy Peons
+							}),
+							q(25131, { -- Vile Familiars
+								["g"] = {},
+								["qg"] = 3145, -- Zureetha Fargaze
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 25127 }, -- Sting of the Scorpid
+							}),
+							q(25132, { -- Burning Blade Medallion
+								["g"] = {},
+								["qg"] = 3145, -- Zureetha Fargaze
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 25131 }, -- Vile Familiars
+							}),
+							q(25128, { -- Hana'zua
+								["g"] = {},
 								["qg"] = 5887, -- Canaga Earthcaller
-								["sourceQuests"] = { 25127 }, -- Invaders in our Home
-								["description"] = "Unavailable if quest \"Sarkoth\" has been completed or is in your questlog",
+								["races"] = HORDE_ONLY,
+								["description"] = "This quest is unavailable if \"|cFFFFD700Sarkoth|r\" is in your quest log or if you've completed it.",
 								["isBreadcrumb"] = true,
 							}),
-							qh(25129, {	-- Sarkoth
+							q(25129, { -- Sarkoth
+								["g"] = {},
 								["qg"] = 3287, -- Hana'zua
-								["sourceQuests"] = { 25128 } -- Hana'zua
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 25128 }, -- Hana'zua
 							}),
-							qh(25130, {	-- Back to the Den
+							q(25130, { -- Back to the Den
+								["g"] = {},
 								["qg"] = 3287, -- Hana'zua
-								["sourceQuests"] = { 25129 } -- Sarkoth
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 25129 }, -- Sarkoth
 							}),
-							qh(25131, {	-- Vile Familiars
+							q(25133, { -- Report to Sen'jin Village
+								["g"] = {},
 								["qg"] = 3145, -- Zureetha Fargaze
-								["sourceQuests"] = { 25127 } -- Sting of the Scorpid
-							}),
-							qh(25132, {	-- Burning Blade Medallion
-								["qg"] = 3145, -- Zureetha Fargaze
-								["sourceQuests"] = { 25131 } -- Vile Familiars
-							}),
-							qh(25133, {	-- Report to Sen'jin Village
-								["qg"] = 3145, -- Zureetha Fargaze
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25132 }, -- Burning Blade Medallion
 								["description"] = "Unavailable if \"Sen'jin Village\" has been completed in the Echo Isles",
 								["isBreadcrumb"] = true,
 							}),
-							--qh(25134), -- lazy peons (replaced by 37446)
-							qh(25135, {	-- Thazz'ril's Pick
-								["qg"] = 11378, -- Foreman Thazz'ril
-								["sourceQuests"] = { 25131 } -- Vile Familiars
-							}),
-							qh(25136, {	-- Galgar's Cactus Apple Surprise
-								["qg"] = 9796, -- Galgar
-								["sourceQuests"] = { 25126 } -- Cutting Teeth
-							}),
-							qh(25152, {	-- Your Place In The World
-								["qg"] = 10176, -- Kaltunk
-							}),
-							qh(25172, {	-- Invaders in our Home
-								["qg"] = 3143, -- Gornek
-								["sourceQuests"] = { 25126 } -- Cutting Teeth
-							}),
-							qh(37446, {	-- Lazy Peons
-								["qg"] = 11378, -- Foreman Thazz'ril
-								["sourceQuests"] = { 25172 }
-							}),
+							--qh(25134), -- Lazy Peons (replaced by 37446)
 						}),
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",

@@ -492,7 +492,7 @@ _.Zones =
 							},
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25214 }, -- Escape Velocity
-						}),	
+						}),
 						qh(25244, { -- What Kind of Name is Candy, Anyway? [Male Version]	
 							["groups"] = {
 								i(52972), -- Ex-Stealer's Gloves
@@ -552,7 +552,7 @@ _.Zones =
 								un(34, i(52935)), -- Pygmy Cloak
 							},
 							["races"] = HORDE_ONLY,
-							["u"] = 40, -- Legacy Quest
+							["u"] = 40, -- Legacy Quest/Quest Item
 						}),
 					},
 				}),	
