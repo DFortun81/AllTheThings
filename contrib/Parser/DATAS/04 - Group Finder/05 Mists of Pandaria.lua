@@ -183,6 +183,137 @@ _.GroupFinder =
 					i(92888),	-- Stormcrier Choker
 					i(92880),	-- Stormcrier Cloak
 					i(92882),	-- Stormcrier Ring
+					i(92821),	-- Bladesnap Breastplate
+					i(92881),	-- Bladesnap Drape
+					i(92820),	-- Bladesnap Gauntlets
+					i(92819),	-- Bladesnap Girdle
+					i(92818),	-- Bladesnap Helm
+					i(92817),	-- Bladesnap Legplates
+					i(92889),	-- Bladesnap Neck
+					i(92816),	-- Bladesnap Pauldrons
+					i(92815),	-- Bladesnap Sabatons
+					i(92883),	-- Bladesnap Seal
+					i(92814),	-- Bladesnap Vambraces
+					i(89501),	-- Brewmoon Cloak
+					i(89492),	-- Brewmoon Cord
+					i(89493),	-- Brewmoon Cowl
+					i(89494),	-- Brewmoon Handwraps
+					i(89495),	-- Brewmoon Leggings
+					i(89509),	-- Brewmoon Necklace
+					i(89496),	-- Brewmoon Robe
+					i(89497),	-- Brewmoon Sandals
+					i(89498),	-- Brewmoon Shoulderpads
+					i(89507),	-- Brewmoon Signet
+					i(89499),	-- Brewmoon Wristwraps
+					i(92879),	-- Bubblebrew Cloak
+					i(92870),	-- Bubblebrew Cord
+					i(92871),	-- Bubblebrew Cowl
+					i(92872),	-- Bubblebrew Handwraps
+					i(92873),	-- Bubblebrew Leggings
+					i(92887),	-- Bubblebrew Necklace
+					i(92874),	-- Bubblebrew Robe
+					i(92875),	-- Bubblebrew Sandals
+					i(92876),	-- Bubblebrew Shoulderpads
+					i(92885),	-- Bubblebrew Signet
+					i(92877),	-- Bubblebrew Wristwraps
+					i(92869),	-- Cordwoven Cord
+					i(92868),	-- Cordwoven Cowl
+					i(92867),	-- Cordwoven Handwraps
+					i(92866),	-- Cordwoven Leggings
+					i(92865),	-- Cordwoven Robe
+					i(92864),	-- Cordwoven Sandals
+					i(92863),	-- Cordwoven Shoulderpads
+					i(92862),	-- Cordwoven Wristwraps
+					i(92837),	-- Earthstriker Belt
+					i(92836),	-- Earthstriker Bracers
+					i(92835),	-- Earthstriker Gauntlets
+					i(92834),	-- Earthstriker Greaves
+					i(92833),	-- Earthstriker Helm
+					i(92832),	-- Earthstriker Legguards
+					i(92831),	-- Earthstriker Spaulders
+					i(92830),	-- Earthstriker Vest
+					i(89500),	-- Fireheart Cloak
+					i(89508),	-- Fireheart Collar
+					i(89506),	-- Fireheart Ring
+					i(89491),	-- Firewool Cord
+					i(89490),	-- Firewool Cowl
+					i(89489),	-- Firewool Handwraps
+					i(89488),	-- Firewool Leggings
+					i(89487),	-- Firewool Robe
+					i(89486),	-- Firewool Sandals
+					i(89485),	-- Firewool Shoulderpads
+					i(89484),	-- Firewool Wristwraps
+					i(89475),	-- Forgotten Bindings
+					i(89474),	-- Forgotten Boots
+					i(89473),	-- Forgotten Britches
+					i(89472),	-- Forgotten Gloves
+					i(89471),	-- Forgotten Hood
+					i(89470),	-- Forgotten Jerkin
+					i(89469),	-- Forgotten Shoulders
+					i(89468),	-- Forgotten Waistband
+					i(89443),	-- Greenstone Breastplate
+					i(89503),	-- Greenstone Drape
+					i(89442),	-- Greenstone Gauntlets
+					i(89441),	-- Greenstone Girdle
+					i(89440),	-- Greenstone Helm
+					i(89439),	-- Greenstone Legplates
+					i(89511),	-- Greenstone Neck
+					i(89438),	-- Greenstone Pauldrons
+					i(89437),	-- Greenstone Sabatons
+					i(89505),	-- Greenstone Seal
+					i(89435),	-- Greenstone Vambraces
+					i(89476),	-- Hozen-Crafted Bindings
+					i(89479),	-- Hozen-Crafted Gloves
+					i(92853),	-- Hozen-Speed Bindings
+					i(92852),	-- Hozen-Speed Boots
+					i(92851),	-- Hozen-Speed Britches
+					i(92850),	-- Hozen-Speed Gloves
+					i(92849),	-- Hozen-Speed Hood
+					i(92848),	-- Hozen-Speed Jerkin
+					i(92847),	-- Hozen-Speed Shoulders
+					i(92846),	-- Hozen-Speed Waistband
+					i(92854),	-- Jinyu-Polished Bindings
+					i(92855),	-- Jinyu-Polished Boots
+					i(92856),	-- Jinyu-Polished Britches
+					i(92857),	-- Jinyu-Polished Gloves
+					i(92858),	-- Jinyu-Polished Hood
+					i(92859),	-- Jinyu-Polished Jerkin
+					i(92860),	-- Jinyu-Polished Shoulders
+					i(92861),	-- Jinyu-Polished Waistband
+					i(92878),	-- Lavasoul Cloak
+					i(92886),	-- Lavasoul Collar
+					i(92884),	-- Lavasoul Ring
+					i(93140),	-- Scavenged Pandaren Axe
+					i(93142),	-- Scavenged Pandaren Axe
+					i(93130),	-- Scavenged Pandaren Broadaxe
+					i(93135),	-- Scavenged Pandaren Crossbow
+					i(93127),	-- Scavenged Pandaren Greatsword
+					i(93134),	-- Scavenged Pandaren Gun
+					i(93128),	-- Scavenged Pandaren Hammer
+					i(93143),	-- Scavenged Pandaren Knuckles
+					i(93137),	-- Scavenged Pandaren Mace
+					i(93144),	-- Scavenged Pandaren Mace
+					i(93132),	-- Scavenged Pandaren Scepter
+					i(93141),	-- Scavenged Pandaren Spear
+					i(93131),	-- Scavenged Pandaren Spellblade
+					i(93126),	-- Scavenged Pandaren Staff
+					i(93129),	-- Scavenged Pandaren Staff
+					i(93136),	-- Scavenged Pandaren Sword
+					i(93133),	-- Scavenged Pandaren Wand
+					i(89510),	-- Stormbound Choker
+					i(89502),	-- Stormbound Cloak
+					i(89504),	-- Stormbound Ring
+					i(89459),	-- Stormbrew Belt
+					i(89458),	-- Stormbrew Bracers
+					i(89457),	-- Stormbrew Gauntlets
+					i(89456),	-- Stormbrew Greaves
+					i(89455),	-- Stormbrew Helm
+					i(89454),	-- Stormbrew Legguards
+					i(89453),	-- Stormbrew Spaulders
+					i(89452),	-- Stormbrew Vest
+					i(92888),	-- Stormcrier Choker
+					i(92880),	-- Stormcrier Cloak
+					i(92882),	-- Stormcrier Ring
 				},
 				["description"] = "|cff66ccffRewarded for completing a random Mists of Pandaria normal scenario (unknown level bracket).",
 				["lvl"] = 85,
@@ -201,27 +332,27 @@ _.GroupFinder =
 					i(92883),	-- Bladesnap Seal
 					i(92814),	-- Bladesnap Vambraces
 					i(89501),	-- Brewmoon Cloak
-					un(2, i(89492)),	-- Brewmoon Cord
-					un(2, i(89493)),	-- Brewmoon Cowl
-					un(2, i(89494)),	-- Brewmoon Handwraps
-					un(2, i(89495)),	-- Brewmoon Leggings
+					i(89492),	-- Brewmoon Cord
+					i(89493),	-- Brewmoon Cowl
+					i(89494),	-- Brewmoon Handwraps
+					i(89495),	-- Brewmoon Leggings
 					i(89509),	-- Brewmoon Necklace
-					un(2, i(89496)),	-- Brewmoon Robe
-					un(2, i(89497)),	-- Brewmoon Sandals
-					un(2, i(89498)),	-- Brewmoon Shoulderpads
+					i(89496),	-- Brewmoon Robe
+					i(89497),	-- Brewmoon Sandals
+					i(89498),	-- Brewmoon Shoulderpads
 					i(89507),	-- Brewmoon Signet
-					un(2, i(89499)),	-- Brewmoon Wristwraps
+					i(89499),	-- Brewmoon Wristwraps
 					i(92879),	-- Bubblebrew Cloak
-					un(2, i(92870)),	-- Bubblebrew Cord
-					un(2, i(92871)),	-- Bubblebrew Cowl
-					un(2, i(92872)),	-- Bubblebrew Handwraps
-					un(2, i(92873)),	-- Bubblebrew Leggings
+					i(92870),	-- Bubblebrew Cord
+					i(92871),	-- Bubblebrew Cowl
+					i(92872),	-- Bubblebrew Handwraps
+					i(92873),	-- Bubblebrew Leggings
 					i(92887),	-- Bubblebrew Necklace
-					un(2, i(92874)),	-- Bubblebrew Robe
-					un(2, i(92875)),	-- Bubblebrew Sandals
-					un(2, i(92876)),	-- Bubblebrew Shoulderpads
+					i(92874),	-- Bubblebrew Robe
+					i(92875),	-- Bubblebrew Sandals
+					i(92876),	-- Bubblebrew Shoulderpads
 					i(92885),	-- Bubblebrew Signet
-					un(2, i(92877)),	-- Bubblebrew Wristwraps
+					i(92877),	-- Bubblebrew Wristwraps
 					i(92869),	-- Cordwoven Cord
 					i(92868),	-- Cordwoven Cowl
 					i(92867),	-- Cordwoven Handwraps
@@ -239,7 +370,7 @@ _.GroupFinder =
 					i(92831),	-- Earthstriker Spaulders
 					i(92830),	-- Earthstriker Vest
 					i(89500),	-- Fireheart Cloak
-					un(2, i(89508)),	-- Fireheart Collar
+					i(89508),	-- Fireheart Collar
 					i(89506),	-- Fireheart Ring
 					i(89491),	-- Firewool Cord
 					i(89490),	-- Firewool Cowl
@@ -249,14 +380,14 @@ _.GroupFinder =
 					i(89486),	-- Firewool Sandals
 					i(89485),	-- Firewool Shoulderpads
 					i(89484),	-- Firewool Wristwraps
-					un(2, i(89475)),	-- Forgotten Bindings
-					un(2, i(89474)),	-- Forgotten Boots
-					un(2, i(89473)),	-- Forgotten Britches
-					un(2, i(89472)),	-- Forgotten Gloves
-					un(2, i(89471)),	-- Forgotten Hood
-					un(2, i(89470)),	-- Forgotten Jerkin
-					un(2, i(89469)),	-- Forgotten Shoulders
-					un(2, i(89468)),	-- Forgotten Waistband
+					i(89475),	-- Forgotten Bindings
+					i(89474),	-- Forgotten Boots
+					i(89473),	-- Forgotten Britches
+					i(89472),	-- Forgotten Gloves
+					i(89471),	-- Forgotten Hood
+					i(89470),	-- Forgotten Jerkin
+					i(89469),	-- Forgotten Shoulders
+					i(89468),	-- Forgotten Waistband
 					i(89443),	-- Greenstone Breastplate
 					i(89503),	-- Greenstone Drape
 					i(89442),	-- Greenstone Gauntlets
@@ -268,8 +399,8 @@ _.GroupFinder =
 					i(89437),	-- Greenstone Sabatons
 					i(89505),	-- Greenstone Seal
 					i(89435),	-- Greenstone Vambraces
-					un(2, i(89476)),	-- Hozen-Crafted Bindings
-					un(2, i(89479)),	-- Hozen-Crafted Gloves
+					i(89476),	-- Hozen-Crafted Bindings
+					i(89479),	-- Hozen-Crafted Gloves
 					i(92853),	-- Hozen-Speed Bindings
 					i(92852),	-- Hozen-Speed Boots
 					i(92851),	-- Hozen-Speed Britches
@@ -278,44 +409,44 @@ _.GroupFinder =
 					i(92848),	-- Hozen-Speed Jerkin
 					i(92847),	-- Hozen-Speed Shoulders
 					i(92846),	-- Hozen-Speed Waistband
-					un(2, i(92854)),	-- Jinyu-Polished Bindings
-					un(2, i(92855)),	-- Jinyu-Polished Boots
-					un(2, i(92856)),	-- Jinyu-Polished Britches
-					un(2, i(92857)),	-- Jinyu-Polished Gloves
-					un(2, i(92858)),	-- Jinyu-Polished Hood
-					un(2, i(92859)),	-- Jinyu-Polished Jerkin
-					un(2, i(92860)),	-- Jinyu-Polished Shoulders
-					un(2, i(92861)),	-- Jinyu-Polished Waistband
+					i(92854),	-- Jinyu-Polished Bindings
+					i(92855),	-- Jinyu-Polished Boots
+					i(92856),	-- Jinyu-Polished Britches
+					i(92857),	-- Jinyu-Polished Gloves
+					i(92858),	-- Jinyu-Polished Hood
+					i(92859),	-- Jinyu-Polished Jerkin
+					i(92860),	-- Jinyu-Polished Shoulders
+					i(92861),	-- Jinyu-Polished Waistband
 					i(92878),	-- Lavasoul Cloak
 					i(92886),	-- Lavasoul Collar
 					i(92884),	-- Lavasoul Ring
-					un(2, i(93140)),	-- Scavenged Pandaren Axe
-					un(2, i(93142)),	-- Scavenged Pandaren Axe
+					i(93140),	-- Scavenged Pandaren Axe
+					i(93142),	-- Scavenged Pandaren Axe
 					i(93130),	-- Scavenged Pandaren Broadaxe
 					i(93135),	-- Scavenged Pandaren Crossbow
-					un(2, i(93127)),	-- Scavenged Pandaren Greatsword
+					i(93127),	-- Scavenged Pandaren Greatsword
 					i(93134),	-- Scavenged Pandaren Gun
-					un(2, i(93128)),	-- Scavenged Pandaren Hammer
+					i(93128),	-- Scavenged Pandaren Hammer
 					i(93143),	-- Scavenged Pandaren Knuckles
-					un(2, i(93137)),	-- Scavenged Pandaren Mace
+					i(93137),	-- Scavenged Pandaren Mace
 					i(93144),	-- Scavenged Pandaren Mace
 					i(93132),	-- Scavenged Pandaren Scepter
-					un(2, i(93141)),	-- Scavenged Pandaren Spear
+					i(93141),	-- Scavenged Pandaren Spear
 					i(93131),	-- Scavenged Pandaren Spellblade
 					i(93126),	-- Scavenged Pandaren Staff
-					un(2, i(93129)),	-- Scavenged Pandaren Staff
-					un(2, i(93136)),	-- Scavenged Pandaren Sword
+					i(93129),	-- Scavenged Pandaren Staff
+					i(93136),	-- Scavenged Pandaren Sword
 					i(93133),	-- Scavenged Pandaren Wand
 					i(89510),	-- Stormbound Choker
 					i(89502),	-- Stormbound Cloak
 					i(89504),	-- Stormbound Ring
 					i(89459),	-- Stormbrew Belt
-					un(2, i(89458)),	-- Stormbrew Bracers
+					i(89458),	-- Stormbrew Bracers
 					i(89457),	-- Stormbrew Gauntlets
-					un(2, i(89456)),	-- Stormbrew Greaves
+					i(89456),	-- Stormbrew Greaves
 					i(89455),	-- Stormbrew Helm
 					i(89454),	-- Stormbrew Legguards
-					un(2, i(89453)),	-- Stormbrew Spaulders
+					i(89453),	-- Stormbrew Spaulders
 					i(89452),	-- Stormbrew Vest
 					i(92888),	-- Stormcrier Choker
 					i(92880),	-- Stormcrier Cloak
