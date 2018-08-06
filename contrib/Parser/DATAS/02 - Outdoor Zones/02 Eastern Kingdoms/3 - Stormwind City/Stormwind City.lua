@@ -114,8 +114,6 @@ _.Zones =
 						},		
 					}),
 					q(51795, {	-- The Battle for Lordaeron
-						["groups"] = {
-						},
 						["qg"] = 120590, -- Lady Jaina Proudmoore
 						["sourceQuests"] = { 53370 }, -- Hour of Reckoning
 					}),	
@@ -123,20 +121,21 @@ _.Zones =
 						["groups"] = {
 						},
 						["sourceQuests"] = { 51795 }, -- The Battle for Lordaeron
-					}),	
-					qa(50371, {	-- Summons to Stormwind
-						["groups"] = {
-						},
-					}),	
+					}),
+					q(46727, { -- Tides of War
+						["qg"] = 142930, -- Halford Wyrmbane
+						["sourceQuests"] = { 51403 }, -- The Speaker's Imperative
+					}),
+					q(46728, { -- The Nation of Kul Tiras
+						["qg"] = 120756, -- Anduin Wyrnn
+						["sourceQuests"] = { 46727 }, -- Tides of War
+					}),
+					qa(50371),	-- Summons to Stormwind
 					qa(49976, {	-- Gifts of the Fallen
-						["groups"] = {
-						},
 						["qg"] = 132255, -- Master Mathias Shawa
 						["sourceQuests"] = { 50371 } , -- Summons to Stormwind
 					}),	
 					qa(49981, {	-- Witness to the Wound
-						["groups"] = {
-						},
 						["qg"] = 132255, -- Master Mathias Shawa
 						["sourceQuests"] = { 49976 } , -- Gifts of the Fallen
 					}),	

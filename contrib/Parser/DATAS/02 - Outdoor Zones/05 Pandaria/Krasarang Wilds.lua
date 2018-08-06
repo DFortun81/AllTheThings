@@ -1396,7 +1396,9 @@ _.Zones =
 					n(70323, {	-- Krakkanon
 						dr(14, {
 							i(88563, {	-- Nat's Fishing Journal
-								q(31664),	-- An Angler's Quest
+								q(31664, {	-- An Angler's Quest
+									["repeatable"] = true,
+								}),
 							}),
 						}),
 					}),

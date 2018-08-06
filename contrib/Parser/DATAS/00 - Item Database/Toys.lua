@@ -506,3 +506,4 @@ t(164310);					-- Glorious Pennant
 t(156649);					-- Zandalari Effigy Amulet
 t(159749);					-- Haw'li's Hot & Spicy Chili
 t(162539);					-- Hot Buttered Popcorn
+t(161342);					-- Gem of Acquiescence

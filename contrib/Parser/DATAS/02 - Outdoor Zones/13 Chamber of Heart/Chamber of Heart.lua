@@ -36,13 +36,14 @@ _.Zones =
 				["qg"] = 136907, -- Magni Bronzebeard		
 				["sourceQuests"] = { 53028 }, -- The Heart of Azeroth		
 			}),	
-			q(53031, {	-- The Speaker's Imperative	
-				["groups"] = {	
-				},	
+			qh(53031, {	-- The Speaker's Imperative	
 				["qg"] = 136907, -- Magni Bronzebeard	
 				["sourceQuests"] = { 52428 }, -- Infusing the Heart	
-			}),		
-
+			}),
+			qa(51403, { -- The Speaker's Imperative
+				["qg"] = 136907, -- Magni Bronzebeard	
+				["sourceQuests"] = { 52428 }, -- Infusing the Heart	
+			}),
 		},
 		["achievementID"] = 12918, -- Have a Heart
 		["lvl"] = 110,

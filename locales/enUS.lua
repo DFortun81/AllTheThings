@@ -2398,6 +2398,18 @@ AllTheThings.Locales.enUS = {
 		[246560] = "Small Treasure Chest",
 		[246561] = "Small Treasure Chest",
 		[246562] = "Small Treasure Chest",
+		[279750] = select(1,GetAchievementCriteriaInfo(12852,1)), -- Hay Covered Chest
+		[281397] = select(1,GetAchievementCriteriaInfo(12852,2)), -- Cutwater Treasure Chest
+		[293962] = select(1,GetAchievementCriteriaInfo(12852,3)), -- Precarious Noble Cache
+		[293964] = select(1,GetAchievementCriteriaInfo(12852,4)), -- Forgotten Smuggler's Stash
+		[293965] = select(1,GetAchievementCriteriaInfo(12852,5)), -- Scrimshaw Cache
+				
+		
+		
+		
+		
+		
+		
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
