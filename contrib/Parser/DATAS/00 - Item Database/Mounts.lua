@@ -110,3 +110,4 @@ i(161215, 239049);  -- Reins of the Obsidian Krolusk
 i(163216, 250735);  -- Bloodgorged Crawg
 i(163577, 279454);	-- Conquerer's Scythemaw
 i(161665, 275837);	-- Cobalt Pterrordax
+i(153594, 256123);	-- Xiwyllag ATV

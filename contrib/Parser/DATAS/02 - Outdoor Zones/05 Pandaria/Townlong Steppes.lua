@@ -6,6 +6,48 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(388, {	-- Townlong Steppes
 			["groups"] = {
+				n(-4, { -- Achievements
+					ach(7284, {	-- Is Another Man's Treasure
+						o(213960, {		-- Yaungol Fire Carrier
+							["groups"] = {
+								i(86518),	-- Yaungol Fire Carrier
+							},
+							["questID"] = 31425,
+						}),
+					}),
+					ach(7997, {	-- Riches of Pandaria
+						o(213961, {	-- Abandoned Crate of Goods
+							["groups"] = {
+								q(31427),	-- Abandoned Crate of Goods
+							},
+							["description"] = "Located in a small tent northwest of Fire Camp Osul at (62.8,34.1)",
+						}),
+						o(213844, {	-- Amber Encased Moth
+							["groups"] = {
+								i(86472, {	-- Amber Encased Moth
+									["questID"] = 31426,
+								}),
+							},
+							["description"] = "Located in the Ambermarsh at (65.8,86.1)",
+						}),
+						o(213956, {	-- Fragment of Dread
+							["groups"] = {
+								i(86516, {	-- Fragment of Dread
+									["questID"] = 31423,
+								}),
+							},
+							["description"] = "Located in the Niuzao Catacombs at (35.8,65.3)",
+						}),
+						o(213959, {	-- Hardened Sap of Kri'vess
+							["groups"] = {
+								i(86517, {	-- Hardened Sap of Kri'vess
+									["questID"] = 31424,
+								}),
+							},
+							["description"] = "Located all around Kri'vess",
+						}),
+					}),
+				}),
 				n(-25, { 	-- Pet Battles
 					p(724), 	-- Alpine Foxling
 					p(725), 	-- Alpine Foxling Kit
@@ -31,46 +73,6 @@ _.Zones =
 							})
 						},
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
-					}),
-				}),
-				ach(7997, {	-- Riches of Pandaria
-					o(213961, {	-- Abandoned Crate of Goods
-						["groups"] = {
-							q(31427),	-- Abandoned Crate of Goods
-						},
-						["description"] = "Located in a small tent northwest of Fire Camp Osul at (62.8,34.1)",
-					}),
-					o(213844, {	-- Amber Encased Moth
-						["groups"] = {
-							i(86472, {	-- Amber Encased Moth
-								["questID"] = 31426,
-							}),
-						},
-						["description"] = "Located in the Ambermarsh at (65.8,86.1)",
-					}),
-					o(213956, {	-- Fragment of Dread
-						["groups"] = {
-							i(86516, {	-- Fragment of Dread
-								["questID"] = 31423,
-							}),
-						},
-						["description"] = "Located in the Niuzao Catacombs at (35.8,65.3)",
-					}),
-					o(213959, {	-- Hardened Sap of Kri'vess
-						["groups"] = {
-							i(86517, {	-- Hardened Sap of Kri'vess
-								["questID"] = 31424,
-							}),
-						},
-						["description"] = "Located all around Kri'vess",
-					}),
-				}),
-				ach(7284, {	-- Is Another Man's Treasure
-					o(213960, {		-- Yaungol Fire Carrier
-						["groups"] = {
-							i(86518),	-- Yaungol Fire Carrier
-						},
-						["questID"] = 31425,
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -891,6 +893,12 @@ _.Zones =
 						})),
 						
 						
+					}),
+					n(66938, { -- Odd'nirok
+						i(90171, { -- Odd'nirok's Clamshell
+							i(90172), -- Clamshell Band
+							i(90087), -- Lobstmourne
+						}),
 					}),
 					n(50791, {	-- Siltriss the Sharpener
 						dr(27, i(87623)),	-- Razor-Sharp Chitin Choker

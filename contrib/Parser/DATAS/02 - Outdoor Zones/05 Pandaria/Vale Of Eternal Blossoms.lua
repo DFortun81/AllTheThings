@@ -5,7 +5,11 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(390, {	-- Vale of Eternal Blossoms
-			["groups"] = {			
+			["groups"] = {
+				--[[
+				n(-4, { -- Achievement
+				}),
+				--]]
 				n(-25, { 	-- Pet Battles
 					q(32603, { -- Beasts of Fable
 						["groups"] = {

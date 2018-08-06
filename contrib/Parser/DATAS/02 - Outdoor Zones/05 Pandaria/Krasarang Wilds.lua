@@ -6,6 +6,49 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(418, {	-- Krasarang Wilds
 			["groups"] = {
+				n(-4, { -- Achievements
+					ach(7284, {	-- Is Another Man's Treasure
+						o(214439, {		-- Barrel of Banana Infused Rum
+							["groups"] = {
+								i(87266),	-- Recipe: Banana Infused Rum
+							},
+							["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
+						}),
+						o(213651, { 	-- Equipment Locker
+							["groups"] = {
+								dr(20.0, i(86122)),	-- Plankwalking Greaves
+								dr(19.0, i(86115)),	-- Swashbuckling Boots
+								dr(18.0, i(86117)),	-- Seafarer's Treads of Precision
+								dr(16.0, i(86116)),	-- Agile Seafarer's Jackboots
+								dr(09.0, i(86123)),	-- Seafarer's Sturdy Boots
+								dr(08.0, i(86118)),	-- Seafaring Advisor's Slippers
+								dr(05.0, i(86119)),	-- Seafarer's Boots of Meditation
+								dr(04.0, i(86120)),	-- Seafaring Sabatons of Meditation
+								dr(00.9, i(86121)),	-- Radiant Seafarer's Boots
+							},
+							["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
+							["modelScale"] = 1.5,
+							["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
+							["questID"] = 31410,
+						}),
+						o(213653, {		-- Pandaren Fishing Spear
+							["groups"] = {
+								i(86124),	-- Pandaren Fishing Spear
+							},
+							["questID"] = 31409,
+						}),
+					}),
+					ach(7997, {	-- Riches of Pandaria
+						o(213750, {	-- Saurok Stone Tablet
+							["groups"] = {
+								i(86220, {	-- Saurok Stone Tablet
+									["questID"] = 31408,
+								}),
+							},
+							["description"] = "Located in a cave at (71,9)",
+						}),
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					p(716), 	-- Amethyst Spiderling
 					p(714), 	-- Feverbite Hatchling
@@ -29,47 +72,6 @@ _.Zones =
 					}),
 					q(31954, { 	-- Grand Master Mo'ruk
 						i(89125),	-- Sack of Pet Supplies
-					}),
-				}),
-				ach(7997, {	-- Riches of Pandaria
-					o(213750, {	-- Saurok Stone Tablet
-						["groups"] = {
-							i(86220, {	-- Saurok Stone Tablet
-								["questID"] = 31408,
-							}),
-						},
-						["description"] = "Located in a cave at (71,9)",
-					}),
-				}),
-				ach(7284, {	-- Is Another Man's Treasure
-					o(214439, {		-- Barrel of Banana Infused Rum
-						["groups"] = {
-							i(87266),	-- Recipe: Banana Infused Rum
-						},
-						["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
-					}),
-					o(213651, { 	-- Equipment Locker
-						["groups"] = {
-							dr(20.0, i(86122)),	-- Plankwalking Greaves
-							dr(19.0, i(86115)),	-- Swashbuckling Boots
-							dr(18.0, i(86117)),	-- Seafarer's Treads of Precision
-							dr(16.0, i(86116)),	-- Agile Seafarer's Jackboots
-							dr(09.0, i(86123)),	-- Seafarer's Sturdy Boots
-							dr(08.0, i(86118)),	-- Seafaring Advisor's Slippers
-							dr(05.0, i(86119)),	-- Seafarer's Boots of Meditation
-							dr(04.0, i(86120)),	-- Seafaring Sabatons of Meditation
-							dr(00.9, i(86121)),	-- Radiant Seafarer's Boots
-						},
-						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
-						["modelScale"] = 1.5,
-						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
-						["questID"] = 31410,
-					}),
-					o(213653, {		-- Pandaren Fishing Spear
-						["groups"] = {
-							i(86124),	-- Pandaren Fishing Spear
-						},
-						["questID"] = 31409,
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -1344,6 +1346,12 @@ _.Zones =
 					}),
 					n(68318, {	-- Dalan Nightbreaker
 						dr(29, i(92783)),	-- Mark of the Hardened Grunt
+					}),
+					n(66934, { -- Damlak
+						i(90169, { -- Damlak's Clamshell
+							i(90172), -- Clamshell Band
+							i(90087), -- Lobstmourne
+						}),
 					}),
 					n(68319, {	-- Disha Fearwarden
 						dr(26, i(92787)),	-- Horde Insignia of Conquering

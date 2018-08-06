@@ -5,21 +5,23 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(433, {	-- The Veiled Stair
-			["groups"] = {	
+			["groups"] = {
+				n(-4, { -- Achievement
+										ach(7997, {	-- Riches of Pandaria
+						o(213845, {	-- The Hammer of Folly
+							["groups"] = {
+								i(86473, {	-- The Hammer of Folly
+									["questID"] = 31428,
+								}),
+							},
+							["description"] = "Located at either (59.8,57.1) or (75.0,76.6)",
+						}),
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					p(706), 	-- Bandicoon
 					p(708), 	-- Malayan Quillrat
 					p(709), 	-- Malayan Quillrat Pup
-				}),
-				ach(7997, {	-- Riches of Pandaria
-					o(213845, {	-- The Hammer of Folly
-						["groups"] = {
-							i(86473, {	-- The Hammer of Folly
-								["questID"] = 31428,
-							}),
-						},
-						["description"] = "Located at either (59.8,57.1) or (75.0,76.6)",
-					}),
 				}),
 				n(-17, { -- Quests
 --[[				

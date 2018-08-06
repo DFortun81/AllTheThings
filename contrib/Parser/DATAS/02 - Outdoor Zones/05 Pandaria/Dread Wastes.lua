@@ -6,6 +6,68 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(422, {	-- Dread Wastes
 			["groups"] = {
+				n(-4, { -- Achievemeents
+					ach(7284, { -- Is Another Man's Treasure
+						o(213972, {		-- Blade of the Poisoned Mind
+							["groups"] = {
+								i(86527),	-- Blade of the Poisoned Mind
+							},
+							["questID"] = 31438,
+						}),
+						o(213967, {		-- Blade of the Prime
+							["groups"] = {
+								i(86522),	-- Blade of the Prime
+							},
+							["questID"] = 31433,
+						}),
+						o(213970, {	-- Bloodsoaked Chitin Fragment
+							["groups"] = {
+								i(86525),	-- Blood Soaked Chiten Fragment
+							},
+							["questID"] = 31436,
+						}),
+						o(213969, {		-- Dissector's Staff of Mutation
+							["groups"] = {
+								i(86524),	-- Dissector's Staff of Mutation
+							},
+							["questID"] = 31435,
+						}),
+						o(213966, {	-- Lucid Amulet
+							["groups"] = {
+								i(86521),	-- Lucid Amulet of the Agile Mind
+							},
+							["questID"] = 31431,
+						}),
+						o(213964, {		-- Malik's Stalwart Spear
+							["groups"] = {
+								i(86520),	-- Malik's Stalwart Spear
+							},
+							["questID"] = 31430,
+						}),
+						i(86529, {
+							["qg"] = 65552,	-- Glinting Rapana Whelk
+							["questID"] = 31432,
+						}),
+						o(213968, {		-- Swarming Cleaver of Ka'roz
+							["groups"] = {
+								i(86523),	-- Swarming Cleaver of Ka'roz
+							},
+							["questID"] = 31434,
+						}),
+						o(213971, {	-- Swarmkeeper's Medallion
+							["groups"] = {
+								i(86526),	-- Swarmkeeper's Medallion
+							},
+							["questID"] = 31437,
+						}),
+						o(213962, {		-- Wind-Reaver's Dagger of Quick Strikes
+							["groups"] = {
+								i(86519),	-- Wind-Reaver's Dagger of Quick Strikes
+							},
+							["questID"] = 31429,
+						}),
+					}),
+				}),
 				n(-25, { 	-- Pet Battles
 					p(732), 	-- Amber Moth
 					p(742), 	-- Clouded Hedgehog
@@ -27,67 +89,6 @@ _.Zones =
 						},
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
 					}),
-				}),
-				ach(7284, {
-					o(213972, {		-- Blade of the Poisoned Mind
-						["groups"] = {
-							i(86527),	-- Blade of the Poisoned Mind
-						},
-						["questID"] = 31438,
-					}),
-					o(213967, {		-- Blade of the Prime
-						["groups"] = {
-							i(86522),	-- Blade of the Prime
-						},
-						["questID"] = 31433,
-					}),
-					o(213970, {	-- Bloodsoaked Chitin Fragment
-						["groups"] = {
-							i(86525),	-- Blood Soaked Chiten Fragment
-						},
-						["questID"] = 31436,
-					}),
-					o(213969, {		-- Dissector's Staff of Mutation
-						["groups"] = {
-							i(86524),	-- Dissector's Staff of Mutation
-						},
-						["questID"] = 31435,
-					}),
-					o(213966, {	-- Lucid Amulet
-						["groups"] = {
-							i(86521),	-- Lucid Amulet of the Agile Mind
-						},
-						["questID"] = 31431,
-					}),
-					o(213964, {		-- Malik's Stalwart Spear
-						["groups"] = {
-							i(86520),	-- Malik's Stalwart Spear
-						},
-						["questID"] = 31430,
-					}),
-					i(86529, {
-						["qg"] = 65552,	-- Glinting Rapana Whelk
-						["questID"] = 31432,
-					}),
-					o(213968, {		-- Swarming Cleaver of Ka'roz
-						["groups"] = {
-							i(86523),	-- Swarming Cleaver of Ka'roz
-						},
-						["questID"] = 31434,
-					}),
-					o(213971, {	-- Swarmkeeper's Medallion
-						["groups"] = {
-							i(86526),	-- Swarmkeeper's Medallion
-						},
-						["questID"] = 31437,
-					}),
-					o(213962, {		-- Wind-Reaver's Dagger of Quick Strikes
-						["groups"] = {
-							i(86519),	-- Wind-Reaver's Dagger of Quick Strikes
-						},
-						["questID"] = 31429,
-					}),
-					
 				}),
 				n(-17, { 	-- Quests
 					q(31178, {	-- A Bloody Delight
@@ -815,6 +816,12 @@ _.Zones =
 							i(87634),	-- Mazu's Robe
 						}),
 						dr(8, i(87633)),	-- Sharksin Armor
+					}),
+					n(66935, { -- Clamstok
+						i(90170, { -- Clamstok's Clamshell
+							i(90172), -- Clamshell Band
+							i(90087), -- Lobstmourne
+						}),
 					}),
 					n(50334, { 		-- Dak the Breaker
 						dr(28, i(86567)),	-- Yaungol Wind Chime

@@ -6,6 +6,55 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(376, {	-- Valley of the Four Winds
 			["groups"] = {
+				n(-4, { -- Achievement
+					ach(7284, {	-- Is Another Man's Treasure
+						n(64004, { 		-- Ghostly Pandaren Fisherman
+							["groups"] = {
+								i(85973), 	-- Ancient Pandaren Fishing Charm Toy
+							},
+							["description"] = "|cff66ccffSpeak with the Ghostly Pandaren Fisherman to get the toy.|r",
+							["questID"] = 31284,
+						}),
+						n(64191, {	-- Ghostly Pandaren Craftsman
+							["groups"] = {
+								i(86079),	-- Ancient Pandaren Woodcutter
+							},
+							["questID"] = 31292,
+						}),
+						o(213749, {		-- Staff of the Hidden Master
+							["groups"] = {
+								i(86218),	-- Staff of the Hidden Master
+							},
+							["questID"] = 31407,
+						}),
+						o(213649, {
+							["groups"] = {
+								i(86110),	-- Stolen Necklace of Precision
+								i(86111),	-- Stolen Necklace of Accuracy
+								i(86112),	-- Stolen Amulet of Wisdom
+								i(86113),	-- Stolen Amulet of Might
+								i(86114),	-- Stolen Necklace of Fortitude
+							},
+							["questID"] = 31406,
+						}),
+					}),
+					ach(7997, {	-- Riches of Pandaria
+						o(214340, {	-- Boat-Building Instructions
+							["groups"] = {
+								i(87524, {-- Boat-Building Instructions
+									["questID"] = 31869,
+								}),
+							},
+							["description"] = "Located inside a hut on the far east side of the Valley near water. (92.2,39.2)",
+						}),
+						o(213650, {	-- Virmen Treasure Cache
+							["groups"] = {
+								q(31405),
+							},
+							["description"] = "Located in a cave hidden under some bushes in the mountains of north-east Paoquan Hollow at (23.2,30.8)",
+						}),
+					}),
+				}),
 				n(-25, { 	-- Pet Battles
 					p(706), 	-- Bandicoon
 					p(707), 	-- Bandicoon Kit
@@ -22,53 +71,6 @@ _.Zones =
 						},
 						["qg"] = 66734,	-- Farmer Nishi
 						["isDaily"] = true,
-					}),
-				}),
-				ach(7997, {	-- Riches of Pandaria
-					o(214340, {	-- Boat-Building Instructions
-						["groups"] = {
-							i(87524, {-- Boat-Building Instructions
-								["questID"] = 31869,
-							}),
-						},
-						["description"] = "Located inside a hut on the far east side of the Valley near water. (92.2,39.2)",
-					}),
-					o(213650, {	-- Virmen Treasure Cache
-						["groups"] = {
-							q(31405),
-						},
-						["description"] = "Located in a cave hidden under some bushes in the mountains of north-east Paoquan Hollow at (23.2,30.8)",
-					}),
-				}),
-				ach(7284, {	-- Is Another Man's Treasure
-					n(64004, { 		-- Ghostly Pandaren Fisherman
-						["groups"] = {
-							i(85973), 	-- Ancient Pandaren Fishing Charm Toy
-						},
-						["description"] = "|cff66ccffSpeak with the Ghostly Pandaren Fisherman to get the toy.|r",
-						["questID"] = 31284,
-					}),
-					n(64191, {	-- Ghostly Pandaren Craftsman
-						["groups"] = {
-							i(86079),	-- Ancient Pandaren Woodcutter
-						},
-						["questID"] = 31292,
-					}),
-					o(213749, {		-- Staff of the Hidden Master
-						["groups"] = {
-							i(86218),	-- Staff of the Hidden Master
-						},
-						["questID"] = 31407,
-					}),
-					o(213649, {
-						["groups"] = {
-							i(86110),	-- Stolen Necklace of Precision
-							i(86111),	-- Stolen Necklace of Accuracy
-							i(86112),	-- Stolen Amulet of Wisdom
-							i(86113),	-- Stolen Amulet of Might
-							i(86114),	-- Stolen Necklace of Fortitude
-						},
-						["questID"] = 31406,
 					}),
 				}),
 				n(-17, { 	-- Quests

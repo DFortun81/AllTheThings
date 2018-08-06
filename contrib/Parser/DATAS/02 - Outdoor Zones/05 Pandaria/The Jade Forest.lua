@@ -1971,6 +1971,18 @@ _.Zones =
 							i(87589),	-- Leggings of Fractured Reflection
 						}),
 					}),
+					n(66937, { -- Akkalar
+						i(90167, { -- Akkalar's Clamshel
+							i(90172), -- Clamshell Band
+							i(90087), -- Lobstmourne
+						}),
+					}),
+					n(66932, { -- Akkalou
+						i(90166, { -- Akkalou's Clamshell
+							i(90172), -- Clamshell Band
+							i(90087), -- Lobstmourne
+						}),
+					}),
 					n(51078, { -- Ferdinand
 						dr(20, i(87217)),	-- Small Bag of Goods
 						dr(16, i(87652)),	-- Ook-Breaker Mace
