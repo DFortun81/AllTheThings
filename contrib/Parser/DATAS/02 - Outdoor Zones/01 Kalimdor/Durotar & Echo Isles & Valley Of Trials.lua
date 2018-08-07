@@ -45,30 +45,25 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					q(31571, { -- Learning the Ropes
-						["g"] = {},
 						["qg"] = 63061, -- Narzak
 						["races"] = HORDE_ONLY,
 						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 					}),
 					q(31572, { -- On The Mend
-						["g"] = {},
 						["qg"] = 63061, -- Narzak
 						["sourceQuests"] = { 31571 }, -- Learning the Ropes
 					}),
 					q(31830, {	-- Level Up!
-						["g"] = {},
 						["qg"] = 63061, -- Narzak
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 31572 }, -- On The Mend
 					}),
 					q(31570, { -- Got one!
-						["g"] = {},
 						["qg"] = 63061, -- Narzak
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 31830 }, -- Level Up!
 					}),
 					q(31818, { -- Zunta
-						["g"] = {},
 						["qg"] = 66126, -- Zunta
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -97,36 +92,30 @@ _.Zones =
 --]]
 					sz(728, 4, { -- Sen'jin Village
 						q(25167, { -- Breaking the Chain
-							["g"] = {},
 							["qg"] = 3188, -- Master Gadrin
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25133, 25073 }, -- Report to Sen'jin Village, Sen'jin Village
 						}),
 						q(25170, { -- Cleaning Up the Coastline
-							["g"] = {},
 							["qg"] = 10578, -- Bom'bay
 							["races"] = HORDE_ONLY,
 						}),
 						q(25165, { -- Never Trust a Big Barb and a Smile
-							["g"] = {},
 							["qg"] = 10578, -- Bom'bay
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25170 }, -- Cleaning up the Coastline
 						}),
 						q(25168, { -- Purge the Valley
-							["g"] = {},
 							["qg"] = 3188, -- Master Gadrin
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25167 }, -- Breaking the Chain
 						}),
 						q(25169, { -- The War of Northwatch Aggression
-							["g"] = {},
 							["qg"] = 3140, -- Lar Prowltusk
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25167 }, -- Breaking the Chain
 						}),
 						q(25171, { -- Riding On
-							["g"] = {},
 							["qg"] = 3188, -- Master Gadrin
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25165, 25168, 25169 }, -- Never Trust a Big Barb and a Smile, The War of Northwatch Aggression, Purge the Valley
@@ -135,57 +124,48 @@ _.Zones =
 					sz(728, 7, { -- Razor Hill
 						-- Main Story Quests --
 						q(25173, { -- From Bad to Worse
-							["g"] = {},
 							["qg"] = 3139, -- Gar'Thok
 							["lvl"] = 4,
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25171 }, -- Riding On
 						}),
 						q(25176, { -- Exploiting the Situation
-							["g"] = {},
 							["qg"] = 39423, -- Gail Nozzywig
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25171 }, -- Riding On
 						}),
 						q(25177, { -- Storming the Beaches
-							["g"] = {},
 							["qg"] = 3139, -- Gar'Thok
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25173 }, -- From Bad to Worse
 						}),
 						q(25178, { -- Shipwreck Searching
-							["g"] = {},
 							["qg"] = 39423, -- Gail Nozzywig
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25173, 25176 }, -- From Bad to Worse, Exploiting the Situation
 						}),
 						qh(25227, {	-- Thonk
-							["g"] = {},
 							["qg"] = 39423, -- Gail Nozzywig
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25178 }, -- Shipwreck Searching
 							["isBreadcrumb"] = true,
 						}),
 						q(25187, { -- Lost in the Floods
-							["g"] = {},
 							["qg"] = 39323, -- Gail Nozzywig
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25227 }, -- Thonk
 						}),
 						q(25188, { -- Watershed Patrol
-							["g"] = {},
 							["qg"] = 39323, -- Gail Nozzywig
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25187 }, -- Lost in the Floods
 						}),
 						q(25232, { -- The Burning Blade
-							["g"] = {},
 							["qg"] = 3142, -- Orgnil Soulscar
 							["lvl"] = 8,
 							["races"] = HORDE_ONLY,
 						}),
 						q(840, { -- Conscript of the Horde
-							["g"] = {},
 							["qg"] = 3336, -- Takrin Pathseeker
 							["lvl"] = 10,
 							["races"] = HORDE_ONLY,
@@ -193,13 +173,11 @@ _.Zones =
 						}),
 						-- Side Quests --
 						q(6365, { -- Meats to Orgrimmar
-							["g"] = {},
 							["qg"] = 3881, -- Grimtak
 							["lvl"] = 5,
 							["races"] = { 2, 8 }, -- Orcs/Trolls
 						}),
 						q(6384, { -- Ride to Orgrimmar
-							["g"] = {},
 							["qg"] = 41140, -- Burok
 							["lvl"] = 5,
 							["races"] = { 2, 8 }, -- Orcs/Trolls
@@ -555,7 +533,6 @@ _.Zones =
 						n(0, { -- Zone Drop (Legacy)
 						}),]]--
 					},
-					["u"] = 2, -- Legacy Section
 				}),
 				m(463, { -- Echo Isles
 					["g"] = {
@@ -566,20 +543,17 @@ _.Zones =
 						n(-17, { -- Quests
 							-- Druid Quests --
 							q(24764, { -- The Rise of the Darkspear (Druid)
-								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
 								["races"] = HORDE_ONLY,
 								["classes"] = { 11 }, -- Druid
 							}),
 							q(24765, { -- The Basics: Hitting Things (Druid)
-								["g"] = {},
 								["qg"] = 38243, -- Zen'tabra
 								["races"] = HORDE_ONLY,
 								["classes"]= { 11 }, -- Druid
 								["sourceQuests"] = { 24764 }, -- The Rise of the Darkspear (Druid)
 							}),
 							q(24767, { -- A Rough Start (Druid)
-								["g"] = {},
 								["qg"] = 38243, -- Zen'tabra
 								["races"] = HORDE_ONLY,
 								["classes"] = { 11 }, -- Druid
@@ -595,7 +569,6 @@ _.Zones =
 								["sourceQuests"] = { 24767 }, -- A Rough Start (Druid)
 							}),
 							q(24769, { -- More Than Expected (Druid)
-								["g"] = {},
 								["qg"] = 38243, -- Zen'tabra
 								["races"] = HORDE_ONLY,
 								["classes"] = { 11 }, -- Druid
@@ -603,20 +576,17 @@ _.Zones =
 							}),
 							-- Hunter Quests --
 							q(24776, { -- The Rise of the Darkspear (Hunter)
-								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
 								["races"] = HORDE_ONLY,
 								["classes"] = { 3 }, -- Hunter
 							}),
 							q(24777, { -- The Basics: Hitting Things (Hunter)
-								["g"] = {},
 								["qg"] = 38247, -- Ortezza
 								["races"] = HORDE_ONLY,
 								["classes"] = { 3 }, -- Hunter
 								["sourceQuests"] = { 24776 }, -- The Rise of the Darkspear (Hunter)
 							}),
 							q(24779, { -- A Rough Start (Hunter)
-								["g"] = {},
 								["qg"] = 38247, -- Ortezza
 								["races"] = HORDE_ONLY,
 								["classes"] = { 3 }, -- Hunter
@@ -632,7 +602,6 @@ _.Zones =
 								["sourceQuests"] = { 24779 }, -- A Rough Start (Hunter)
 							}),
 							q(24781, { -- More Than Expected (Hunter)
-								["g"] = {},
 								["qg"] = 38247, -- Ortezza
 								["races"] = HORDE_ONLY,
 								["classes"] = { 3 }, -- Hunter
@@ -640,13 +609,11 @@ _.Zones =
 							}),
 							-- Mage Quests --
 							q(24750, { -- The Rise of the Darkspear (Mage)
-								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
 								["races"] = HORDE_ONLY,
 								["classes"] = { 8 }, -- Mage
 							}),
 							q(24751, { -- The Basics: Hitting Things (Mage)
-								["g"] = {},
 								["qg"] = 38246, -- Soratha
 								["races"] = HORDE_ONLY,
 								["classes"] = { 8 }, -- Mage
@@ -654,7 +621,6 @@ _.Zones =
 							}),
 							-- qg(38246, qh(24752)) -- The Arts of a Mage (removed from game)
 							q(24753, { -- A Rough Start (Mage)
-								["g"] = {},
 								["qg"] = 38246, -- Soratha
 								["races"] = HORDE_ONLY,
 								["classes"] = { 8 }, -- Mage
@@ -670,7 +636,6 @@ _.Zones =
 								["sourceQuests"] = { 24753 }, -- A Rough Start (Mage)
 							}),
 							q(24755, { -- More Than Expected (Mage)
-								["g"] = {},
 								["qg"] = 38246, -- Soratha
 								["races"] = HORDE_ONLY,
 								["classes"] = { 8 }, -- Mage
@@ -678,20 +643,17 @@ _.Zones =
 							}),
 							-- Monk Quests --
 							q(31159, { -- The Rise of the Darkspear (Monk)
-								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
 								["races"] = HORDE_ONLY,
 								["classes"] = { 10 }, -- Monk
 							}),
 							q(31158, { -- The Basics: Hitting Things (Monk)
-								["g"] = {},
 								["qg"] = 63310, -- Zabrax
 								["races"] = HORDE_ONLY,
 								["classes"] = { 10 }, -- Monk
 								["sourceQuests"] = { 31159 }, -- The Rise of the Darkspear (Monk)
 							}),
 							q(31160, { -- A Rough Start (Monk)
-								["g"] = {},
 								["qg"] = 63310, -- Zabrax
 								["races"] = HORDE_ONLY,
 								["classes"] = { 10 }, -- Monk
@@ -707,7 +669,6 @@ _.Zones =
 								["sourceQuests"] = { 31160 }, -- A Rough Start (Monk)
 							}),
 							q(31163, { -- More Than Expected (Monk)
-								["g"] = {},
 								["qg"] = 63310, -- Zabrax
 								["races"] = HORDE_ONLY,
 								["classes"] = { 10 }, -- Monk
@@ -715,20 +676,17 @@ _.Zones =
 							}),
 							-- Priest Quests --
 							q(24782, { -- The Rise of the Darkspear (Priest)
-								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
 								["races"] = HORDE_ONLY,
 								["classes"] = { 5 }, -- Priest
 							}),
 							q(24783, { -- The Basics: Hitting Things (Priest)
-								["g"] = {},
 								["qg"] = 38245, -- Tunari
 								["races"] = HORDE_ONLY,
 								["classes"] = { 5 }, -- Priest
 								["sourceQuests"] = { 24782 }, -- The Rise of the Darkspear (Priest)
 							}),
 							q(24785, { -- A Rough Start (Priest)
-								["g"] = {},
 								["qg"] = 38245, -- Tunari
 								["races"] = HORDE_ONLY,
 								["classes"] = { 5 }, -- Priest
@@ -744,7 +702,6 @@ _.Zones =
 								["sourceQuests"] = { 24785 }, -- A Rough Start (Priest)
 							}),
 							q(24787, { -- More Than Expected (Priest)
-								["g"] = {},
 								["qg"] = 38245, -- Tunari
 								["races"] = HORDE_ONLY,
 								["classes"] = { 5 }, -- Priest
@@ -752,20 +709,17 @@ _.Zones =
 							}),
 							-- Rogue Quests --
 							q(24770, { -- The Rise of the Darkspear (Rogue)
-								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
 								["races"] = HORDE_ONLY,
 								["classes"] = { 4 }, -- Rogue
 							}),
 							q(24771, { -- The Basics: Hitting Things (Rogue)
-								["g"] = {},
 								["qg"] = 38244, -- Legati
 								["races"] = HORDE_ONLY,
 								["classes"] = { 4 }, -- Rogue
 								["sourceQuests"] = { 24770 }, -- The Rise of the Darkspear (Rogue)
 							}),
 							q(24773, { -- A Rough Start (Rogue)
-								["g"] = {},
 								["qg"] = 38244, -- Legati
 								["races"] = HORDE_ONLY,
 								["classes"] = { 4 }, -- Rogue
@@ -781,7 +735,6 @@ _.Zones =
 								["sourceQuests"] = { 24773 }, -- A Rough Start (Rogue)
 							}),
 							q(24775, { -- More Than Expected (Rogue)
-								["g"] = {},
 								["qg"] = 38244, -- Legati
 								["races"] = HORDE_ONLY,
 								["classes"] = { 4 }, -- Rogue
@@ -789,20 +742,17 @@ _.Zones =
 							}),
 							-- Shaman Quests --
 							q(24758, { -- The Rise of the Darkspear (Shaman)
-								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
 								["races"] = HORDE_ONLY,
 								["classes"] = { 7 }, -- Shaman
 							}),
 							q(24759, { -- The Basics: Hitting Things (Shaman)
-								["g"] = {},
 								["qg"] = 38242, -- Nekali
 								["races"] = HORDE_ONLY,
 								["classes"] = { 7 }, -- Shaman
 								["sourceQuests"] = { 24758 }, -- The Rise of the Darkspear (Shaman)
 							}),
 							q(24761, { -- A Rough Start (Shaman)
-								["g"] = {},
 								["qg"] = 38242, -- Nekali
 								["races"] = HORDE_ONLY,
 								["classes"] = { 7 }, -- Shaman
@@ -818,7 +768,6 @@ _.Zones =
 								["sourceQuests"] = { 24761 }, -- A Rough Start (Shaman)
 							}),
 							q(24763, { -- More Than Expected (Shaman)
-								["g"] = {},
 								["qg"] = 38242, -- Nekali
 								["races"] = HORDE_ONLY,
 								["classes"] = { 7 }, -- Shaman
@@ -826,20 +775,17 @@ _.Zones =
 							}),
 							-- Warlock Quests --
 							q(26272, { -- The Rise of the Darkspear (Warlock)
-								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
 								["races"] = HORDE_ONLY,
 								["classes"] = { 9 }, -- Warlock
 							}),
 							q(26273, { -- The Basics: Hitting Things (Warlock)
-								["g"] = {},
 								["qg"] = 42618, -- Voldreka
 								["races"] = HORDE_ONLY,
 								["classes"] = { 9 }, -- Warlock
 								["sourceQuests"] = { 26272 }, -- The Rise of the Darkspear (Warlock)
 							}),
 							q(26275, { -- A Rough Start (Warlock)
-								["g"] = {},
 								["qg"] = 42618, -- Voldreka
 								["races"] = HORDE_ONLY,
 								["classes"] = { 9 }, -- Warlock
@@ -855,7 +801,6 @@ _.Zones =
 								["sourceQuests"] = { 26275 }, -- A Rough Start (Warlock)
 							}),
 							q(26277, { -- More Than Expected (Warlock)
-								["g"] = {},
 								["qg"] = 42618, -- Voldreka
 								["races"] = HORDE_ONLY,
 								["classes"] = { 9 }, -- Warlock
@@ -863,20 +808,17 @@ _.Zones =
 							}),
 							-- Warrior Quests --
 							q(24607, { -- The Rise of the Darkspear (Warrior)
-								["g"] = {},
 								["qg"] = 37951, -- Jin'thala
 								["races"] = HORDE_ONLY,
 								["classes"] = { 1 }, -- Warrior
 							}),
 							q(24639, { -- The Basics: Hitting Things (Warrior)
-								["g"] = {},
 								["qg"] = 38037, -- Nortet
 								["races"] = HORDE_ONLY,
 								["classes"] = { 1 }, -- Warrior
 								["sourceQuests"] = { 24607 }, -- The Rise of the Darkspear (Warrior)
 							}),
 							q(24641, { -- A Rough Start (Warrior)
-								["g"] = {},
 								["qg"] = 38037, -- Nortet
 								["races"] = HORDE_ONLY,
 								["classes"] = { 1 }, -- Warrior
@@ -892,7 +834,6 @@ _.Zones =
 								["sourceQuests"] = { 24641 }, -- A Rough Start (Warrior)
 							}),
 							q(24643, { -- More Than Expected (Warrior)
-								["g"] = {},
 								["qg"] = 38037, -- Nortet
 								["races"] = HORDE_ONLY,
 								["classes"] = { 1 }, -- Warrior
@@ -900,73 +841,61 @@ _.Zones =
 							}),
 							-- Other Quests --
 							q(25064, { -- Moraya
-								["g"] = {},
 								["qg"] = 38966, -- Vol'jin
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769}, -- More Than Expected (All Classes)
 							}),
 							q(24622, { -- A Troll's Truest Companion
-								["g"] = {},
 								["qg"] = 38005, -- Moraya
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25064 }, -- Moraya
 							}),
 							q(25037, { -- Crab Fishin'
-								["g"] = {},
 								["qg"] = 39007, -- Tora'jin
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25064 }, -- Moraya
 							}),
 							q(24625, { -- Consort of the Sea Witch
-								["g"] = {},
 								["qg"] = 37987, -- Tegashi
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24622 }, -- A Troll's Truest Companion
 							}),
 							q(24624, { -- Mercy for the Lost
-								["g"] = {},
 								["qg"] = 37987, -- Tegashi
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24622 }, -- A Troll's Truest Companion
 							}),
 							q(24623, { -- Saving the Young
-								["g"] = {},
 								["qg"] = 37969, -- Kijara
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24622 }, -- A Troll's Truest Companion
 							}),
 							q(24626, { -- Young and Vicious
-								["g"] = {},
 								["qg"] = 37969, -- Kijara
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24625, 24624, 24623 }, -- Consort of the Sea Witch, Mercy for the Lost, Saving the Young
 							}),
 							q(25035, { -- Breaking the Line
-								["g"] = {},
 								["qg"] = 38440, -- Tortunga
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24626 }, -- Young and Vicious
 							}),
 							q(24812, { -- No More Mercy
-								["g"] = {},
 								["qg"] = 38442, -- Morakki
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25035 }, -- Breaking the Line
 							}),
 							q(24813, { -- Territorial Fetish
-								["g"] = {},
 								["qg"] = 38442, -- Morakki
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25035 }, -- Breaking the Line
 							}),
 							q(24814, { -- An Ancient Enemy
-								["g"] = {},
 								["qg"] = 38442, -- Morakki
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24812, 24813 } -- No More Mercy, Territorial Fetish
 							}),
 							q(25073, { -- Sen'jin Village
-								["g"] = {},
 								["qg"] = 38966, -- Vol'jin
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24814 }, -- An Ancient Enemy
@@ -975,14 +904,12 @@ _.Zones =
 							}),
 							-- Pandaren Campaign Quests --
 							q(32320, { -- The Horde Is Family
-								["g"] = {},
 								["qg"] = 68025, -- Thrall
 								["lvl"] = 81,
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 32319 }, -- Find Thrall!
 							}),
 							q(32372, { -- De-Subjugation
-								["g"] = {},
 								["qg"] = 68025, -- Thrall
 								["lvl"] = 81,
 								["races"] = HORDE_ONLY,
@@ -1014,79 +941,66 @@ _.Zones =
 						}),
 						n(-17, { -- Quests
 							q(25152, { -- Your Place In The World
-								["g"] = {},
 								["qg"] = 10176, -- Kaltunk
 								["races"] = HORDE_ONLY,
 							}),
 							q(25126, { -- Cutting Teeth
-								["g"] = {},
 								["qg"] = 3143, -- Gornek
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25152 }, -- Your Place In The World
 							}),
 							q(25172, { -- Invaders In Our Home
-								["g"] = {},
 								["qg"] = 3143, -- Gornek
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25126 }, -- Cutting Teeth
 							}),
 							q(25136, { -- Galgar's Cactus Apple Surprise
-								["g"] = {},
 								["qg"] = 9796, -- Galgar
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25126 }, -- Cutting Teeth
 							}),
 							q(25127, { -- Sting of the Scorpid
-								["g"] = {},
 								["qg"] = 3143, -- Gornek
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25172 }, -- Invaders In Our Home
 							}),
 							q(37446, { -- Lazy Peons
-								["g"] = {},
 								["qg"] = 11378, -- Foreman Thazz'ril
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25127 }, -- Sting of the Scorpid
 							}),
 							q(25135, { -- Thazz'ril's Pick
-								["g"] = {},
 								["qg"] = 11378, -- Foreman Thazz'ril
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 37446 }, -- Lazy Peons
 							}),
 							q(25131, { -- Vile Familiars
-								["g"] = {},
 								["qg"] = 3145, -- Zureetha Fargaze
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25127 }, -- Sting of the Scorpid
 							}),
 							q(25132, { -- Burning Blade Medallion
-								["g"] = {},
 								["qg"] = 3145, -- Zureetha Fargaze
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25131 }, -- Vile Familiars
 							}),
 							q(25128, { -- Hana'zua
-								["g"] = {},
 								["qg"] = 5887, -- Canaga Earthcaller
 								["races"] = HORDE_ONLY,
 								["description"] = "This quest is unavailable if \"|cFFFFD700Sarkoth|r\" is in your quest log or if you've completed it.",
 								["isBreadcrumb"] = true,
 							}),
 							q(25129, { -- Sarkoth
-								["g"] = {},
 								["qg"] = 3287, -- Hana'zua
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25128 }, -- Hana'zua
 							}),
 							q(25130, { -- Back to the Den
-								["g"] = {},
 								["qg"] = 3287, -- Hana'zua
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25129 }, -- Sarkoth
 							}),
 							q(25133, { -- Report to Sen'jin Village
-								["g"] = {},
 								["qg"] = 3145, -- Zureetha Fargaze
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 25132 }, -- Burning Blade Medallion
