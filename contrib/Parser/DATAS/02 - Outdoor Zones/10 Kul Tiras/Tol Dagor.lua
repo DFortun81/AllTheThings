@@ -19,12 +19,9 @@ _.Zones =
 					},
 				}),
 			},
-			--["achievementID"] = 12559, -- Explore Zuldazar
+			--["achievementID"] = 12840, -- Tol Dagor
 			["lvl"] = 110,
-			--["maps"] = { 
-			--	1163, -- Dazar'alor
-			--},
-		--	["description"] = "|cff66ccffZuldazar is the massive capital city of the Zandalari Empire and the jewel of all troll civilizations. It is built atop the highest peaks of Zandalar, and is built in a series of giant ziggurats that look like a towering mountain from a distance. Different troll tribes distrust one another and have often fought one another, but every six years, envoys from all the troll tribes arrive at Zuldazar in order to share information and discuss matters that may affect the entire troll race. It is the oldest city on Azeroth still standing.|r",
+			["description"] = "|cff66ccffA prison located on an island east of Tiragarde Sound.  This use to be a real prison until the Ashvane Trading Company bought it where now it is Priscilla Ashvane's own fortress with scumbags on both sides of the bar.|r",
 		}),
 	}),
 };

@@ -3,7 +3,6 @@
 ---------------------------------------------------
 _.Zones =
 {
-	
 	m(1021, {	-- Chamber of Hearts
 		["groups"] = {
 			q(52428, {	-- Infusing the Heart		
@@ -50,7 +49,3 @@ _.Zones =
 		["description"] = "|cff66ccffThe Chamber of Heart is a titan chamber at the heart of the world. It is accessed via the Titan Translocator in Silithus. Like the Hall of Communion, it is possible here to communicate with Azeroth, the world-soul of the planet. Magni brings a hero here at Azeroth's request to obtain the [Heart of Azeroth], a necklace that can gather the  [Azerite] - the planet's lifeblood - necessary to heal Azeroth's wounds. The seal on the chamber protects Azeroth's world-soul.|r",
 	}),
 };
-
-
-
-

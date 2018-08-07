@@ -91,12 +91,11 @@ _.Zones =
 				}),
 			},
 			["lvl"] = 1,
-			["isRaid"] = true
+			["isRaid"] = true,
 			--["maps"] = { 
 			--	--- ADDITIONAL MAPS HERE
 			--},
-			-- ["icon"] = 
-			--["description"] = "|cff66ccff----TEXT HERE----|r",
+			["description"] = "|cff66ccffBoralus is the capital of the island city-state of Kul Tiras. It is located on the mouth of a river or strait running through Tiragarde Sound. Boralus is a safe port of call in unsafe waters. The outer wall hosts a marketplace that is second to none. Merchants from all over Azeroth dock here to trade their goods. For most visitors, the market is all they ever see of Boralus. Beyond the Great Gate lies the city proper, and very few outsiders are allowed inside.|r",
 		}),
 	}),
 };
