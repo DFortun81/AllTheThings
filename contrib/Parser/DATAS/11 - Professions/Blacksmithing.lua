@@ -496,92 +496,6 @@ profession(164, { -- Blacksmithing
 			recipe(19668), -- Plans: Truesilver Skeleton Key
 		}),
 		n(-10032, { -- Appearances
-			n(-319, { -- Weapons
-				n(-578, { -- Weaponsmith
-					["g"] = {
-						n(-579, { -- Master Axesmith
-							["g"] = {
-								i(12798), -- Annihilator
-								i(12784), -- Arcanite Reaper
-								i(17016), -- Dark Iron Destroyer
-								i(12774), -- Dawn's Edge
-								i(19169), -- Nightfall
-							},
-						}),
-						n(-580, { -- Master Hammersmith
-							["g"] = {
-								i(19170), -- Ebon Hand
-								un(8, i(12776)), -- Enchanted Battlehammer
-								i(12796), -- Hammer of the Titans
-								un(8, i(12794)), -- Masterwork Stormhammer
-								i(22384), -- Persuader
-								i(12781), -- Serenity
-							},
-						}),
-						n(-581, { -- Master Swordsmith
-							["g"] = {
-								i(12790), -- Arcanite Champion
-								i(19168), -- Blackguard
-								i(12777), -- Blazing Rapier
-								i(12782), -- Corruption
-								i(17015), -- Dark Iron Reaver
-								i(12797), -- Frostguard
-								i(22383), -- Sageblade
-							},
-						}),
-						i(19166), -- Black Amnesty
-						i(19167), -- Blackfury
-						i(7959), -- Blight
-						i(11608), -- Dark Iron Pulverizer
-						i(11607), -- Dark Iron Sunderer
-						i(12783), -- Heartseeker
-						i(7961), -- Phantom Blade
-						un(8, i(7954)),	-- The Shatterer
-						un(8, i(7960)),	-- Truesilver Champion
-					},
-				}),
-				i(7945), -- Big Black Mace
-				i(3848), -- Big Bronze Knife
-				i(12769), -- Bleakwood Hew	
-				i(7942), -- Blue Glittering Axe
-				i(2849), -- Bronze Axe
-				i(7958), -- Bronze Battle Axe
-				i(7957), -- Bronze Greatsword
-				i(2848), -- Bronze Mace
-				i(2850), -- Bronze Shortsword
-				i(7956), -- Bronze Warhammer
-				i(3488), -- Copper Battle Axe
-				i(12802), -- Darkspear
-				i(7944), -- Dazzling Mithril Rapier
-				i(3490), -- Deadly Bronze Poniard
-				i(7947), -- Ebon Shiv
-				i(17704), -- Edge of Winter
-				i(3854), -- Frost Tiger Blade
-				i(12259), -- Glinting Steel Dagger
-				i(3852), -- Golden Iron Destroyer
-				i(3849), -- Hardened Iron Shortsword
-				i(3491), -- Heavy Bronze Mace
-				i(3487), -- Heavy Copper Broadsword
-				i(6214), -- Heavy Copper Maul
-				i(7941), -- Heavy Mithril Axe
-				i(12775), -- Huge Thorium Battleaxe
-				i(5541), -- Iridescent Hammer
-				i(3850), -- Jade Serpentblade
-				i(22198), -- Jagged Obsidian Shield
-				i(3855), -- Massive Iron Axe
-				i(3492), -- Mighty Iron Hammer
-				i(3853), -- Moonsteel Broadsword
-				i(12773), -- Ornate Thorium Handaxe
-				i(5540), -- Pearl-Handled Dagger
-				i(7946), -- Runed Mithril Hammer
-				i(12260), -- Searing Golden Blade
-				i(3856), -- Shadow Crescent Axe
-				i(3851), -- Solid Iron Maul
-				i(17193), -- Sulfuron Hammer
-				i(3489), -- Thick War Axe
-				i(12792), -- Volcanic Hammer
-				i(7943), -- Wicked Mithril Blade
-			}),
 			n(-318, { -- Armor
 				n(-582, { -- Armorsmith
 					["g"] = {
@@ -735,6 +649,94 @@ profession(164, { -- Blacksmithing
 					i(22385), -- Titanic Leggings
 					i(12633), -- Whitesoul Helm
 				}),
+			}),
+      n(-319, { -- Weapons
+        ["g"] = {
+          n(-578, { -- Weaponsmith
+            ["g"] = {
+              n(-579, { -- Master Axesmith
+                ["g"] = {
+                  i(12798), -- Annihilator
+                  i(12784), -- Arcanite Reaper
+                  i(17016), -- Dark Iron Destroyer
+                  i(12774), -- Dawn's Edge
+                  i(19169), -- Nightfall
+                },
+              }),
+              n(-580, { -- Master Hammersmith
+                ["g"] = {
+                  i(19170), -- Ebon Hand
+                  un(8, i(12776)), -- Enchanted Battlehammer
+                  i(12796), -- Hammer of the Titans
+                  un(8, i(12794)), -- Masterwork Stormhammer
+                  i(22384), -- Persuader
+                  i(12781), -- Serenity
+                },
+              }),
+              n(-581, { -- Master Swordsmith
+                ["g"] = {
+                  i(12790), -- Arcanite Champion
+                  i(19168), -- Blackguard
+                  i(12777), -- Blazing Rapier
+                  i(12782), -- Corruption
+                  i(17015), -- Dark Iron Reaver
+                  i(12797), -- Frostguard
+                  i(22383), -- Sageblade
+                },
+              }),
+              i(19166), -- Black Amnesty
+              i(19167), -- Blackfury
+              i(7959), -- Blight
+              i(11608), -- Dark Iron Pulverizer
+              i(11607), -- Dark Iron Sunderer
+              i(12783), -- Heartseeker
+              i(7961), -- Phantom Blade
+              un(8, i(7954)),	-- The Shatterer
+              un(8, i(7960)),	-- Truesilver Champion
+            },
+          }),
+          i(7945), -- Big Black Mace
+          i(3848), -- Big Bronze Knife
+          i(12769), -- Bleakwood Hew	
+          i(7942), -- Blue Glittering Axe
+          i(2849), -- Bronze Axe
+          i(7958), -- Bronze Battle Axe
+          i(7957), -- Bronze Greatsword
+          i(2848), -- Bronze Mace
+          i(2850), -- Bronze Shortsword
+          i(7956), -- Bronze Warhammer
+          i(3488), -- Copper Battle Axe
+          i(12802), -- Darkspear
+          i(7944), -- Dazzling Mithril Rapier
+          i(3490), -- Deadly Bronze Poniard
+          i(7947), -- Ebon Shiv
+          i(17704), -- Edge of Winter
+          i(3854), -- Frost Tiger Blade
+          i(12259), -- Glinting Steel Dagger
+          i(3852), -- Golden Iron Destroyer
+          i(3849), -- Hardened Iron Shortsword
+          i(3491), -- Heavy Bronze Mace
+          i(3487), -- Heavy Copper Broadsword
+          i(6214), -- Heavy Copper Maul
+          i(7941), -- Heavy Mithril Axe
+          i(12775), -- Huge Thorium Battleaxe
+          i(5541), -- Iridescent Hammer
+          i(3850), -- Jade Serpentblade
+          i(22198), -- Jagged Obsidian Shield
+          i(3855), -- Massive Iron Axe
+          i(3492), -- Mighty Iron Hammer
+          i(3853), -- Moonsteel Broadsword
+          i(12773), -- Ornate Thorium Handaxe
+          i(5540), -- Pearl-Handled Dagger
+          i(7946), -- Runed Mithril Hammer
+          i(12260), -- Searing Golden Blade
+          i(3856), -- Shadow Crescent Axe
+          i(3851), -- Solid Iron Maul
+          i(17193), -- Sulfuron Hammer
+          i(3489), -- Thick War Axe
+          i(12792), -- Volcanic Hammer
+          i(7943), -- Wicked Mithril Blade
+        },
 			}),
 		}),
 	}),
