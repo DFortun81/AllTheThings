@@ -6,43 +6,6 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(10, {		-- Northern Barrens
 			["groups"] = {
-				n(0, {		-- Zone Drops
-					desc(i(6663), "Can drop from any mob in the Barrens."),	-- Recipe: Elixir of Giant Growth
-					desc(i(6661), "Can drop from any mob in the Barrens."),	-- Recipe: Savory Deviate Delight
-					n(3444, {	-- Dig Rat
-						{
-							["itemID"] = 78342,	-- Plump Dig Rat
-							["spellID"] = 0,	-- Filter: No Spell ID plox
-							["groups"] = {
-								recipe(6417),	-- Dig Rat Stew
-							},
-						},
-					}),
-					n(70997, { -- Hellscream Laborer
-						i(97821), -- Gahz'rooki's Summoning Stone
-					}),
-					n(71002, { -- Kor'kron Incinerator
-						i(97821), -- Gahz'rooki's Summoning Stone
-					}),
-					n(70999, { -- Kor'kron Marauder
-						i(97821), -- Gahz'rooki's Summoning Stone
-					}),
-					n(71000, { -- Mercenary Engineer
-						i(97821), -- Gahz'rooki's Summoning Stone
-					}),
-					n(71001, { -- Mercenary Shredder
-						i(97821), -- Gahz'rooki's Summoning Stone
-					}),
-					n(3382, { -- Southseaa Cannoneer
-						i(5107), -- Deckhand's Shirt
-					}),
-					n(3383, { -- Southsea Cutthroat
-						i(5107), -- Deckhand's Shirt
-					}),
-					n(3384, { -- Southsea Privateer
-						i(5107), -- Deckhand's Shirt
-					}),
-				}),
 				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder
 					desc(p(474), "Can be found under large trees alongside Plainsland Cheetahs."), -- Cheetah Cub
@@ -764,11 +727,11 @@ _.Zones =
 					}),
 				}),
 				n(-16, {	-- Rares
-					n(3672, {	 	-- Boahn
+					n(3672, {	-- Boahn
 						dr(54, i(5423)),	-- Boahn's Fang
 						dr(45, i(5422)),	-- Brambleweed Leggings
 					}), 
-					n(5838, { 		-- Brokespear
+					n(5838, {	-- Brokespear
 						dr(	13	, i(	9763	)), --	Cadet Leggings
 						dr(	12	, i(	9756	)), --	Gypsy Trousers
 						dr(	11	, i(	9747	)), --	Simple Britches
@@ -796,7 +759,7 @@ _.Zones =
 						dr(	1	, i(	9749	)), --	Simple Blouse
 						un(7, i(7559)),	-- Runic Cane		
 					}), 
-					n(5865, { 		-- Dishu
+					n(5865, {	-- Dishu
 						dr(	11	, i(	6268	)), --	Pioneer Tunic
 						dr(	10	, i(	6337	)), --	Infantry Leggings
 						dr(	9	, i(	6512	)), --	Disciple's Robe
@@ -818,7 +781,7 @@ _.Zones =
 						dr(	1.1	, i(	6542	)), --	Willow Cape
 						dr(	1	, i(	6548	)), --	Soldier's Girdle					
 					}),
-					n(3270, { 		-- Elder Mystic Razorsnout
+					n(3270, {	-- Elder Mystic Razorsnout
 						dr(	9	, i(	6268	)), --	Pioneer Tunic
 						dr(	8	, i(	6266	)), --	Disciple's Vest
 						dr(	8	, i(	6336	)), --	Infantry Tunic
@@ -847,7 +810,7 @@ _.Zones =
 						un(7, i(4768)), -- Adept's Gloves
 						un(7, i(4771)),	-- Harvest Cloak		
 					}), 
-					n(5836, { 		-- Engineer Whirleygig
+					n(5836, {	-- Engineer Whirleygig
 						dr(	7	, i(	6547	)), --	Soldier's Gauntlets
 						dr(	6	, i(	9775	)), --	Bandit Cinch
 						dr(	6	, i(	6554	)), --	Bard's Gloves
@@ -881,7 +844,7 @@ _.Zones =
 						dr(	1	, i(	9783	)), --	Raider's Chestpiece
 						dr(	1	, i(	6585	)), --	Scouting Cloak					
 					}), 
-					n(5835, { 		-- Foreman Grills
+					n(5835, {	-- Foreman Grills
 						dr(	9	, i(	6545	)), --	Soldier's Armor
 						dr(	8	, i(	9779	)), --	Bandit Cloak
 						dr(	8	, i(	6553	)), --	Bard's Trousers
@@ -915,7 +878,7 @@ _.Zones =
 						dr(	1	, i(	9784	)), --	Raider's Boots
 						dr(	1	, i(	6536	)), --	Willow Vest
 					}), 
-					n(3398, { 		-- Gesharahan
+					n(3398, {	-- Gesharahan
 						dr(	7	, i(	9763	)), --	Cadet Leggings
 						dr(	7	, i(	9756	)), --	Gypsy Trousers
 						dr(	6	, i(	9747	)), --	Simple Britches
@@ -949,7 +912,7 @@ _.Zones =
 						un(7, i(5183)),	-- Pulsating Hydra Heart
 						un(7, i(5182)), -- Shiver Blade	
 					}), 
-					n(5828, { 		-- Humar the Pridelord
+					n(5828, {	-- Humar the Pridelord
 						dr(	9	, i(	6545	)), --	Soldier's Armor
 						dr(	8	, i(	9779	)), --	Bandit Cloak
 						dr(	8	, i(	9788	)), --	Raider's Belt
@@ -982,7 +945,7 @@ _.Zones =
 						dr(	1.2	, i(	6536	)), --	Willow Vest
 						dr(	1.1	, i(	6575	)), --	Defender Cloak
 					}), 
-					n(3470, { 		-- Rathorian
+					n(3470, {	-- Rathorian
 						dr(	34	, i(	6546	)), --	Soldier's Leggings
 						dr(	7	, i(	6540	)), --	Willow Pants
 						dr(	5	, i(	9779	)), --	Bandit Cloak
@@ -1005,7 +968,7 @@ _.Zones =
 						un(7, i(5111)),	-- Rathorian's Cape		
 						un(7, i(5112)), -- Ritual Blade							
 					}), 
-					n(5841, { 		-- Rocklance
+					n(5841, {	-- Rocklance
 						dr(	8	, i(	9747	)), --	Simple Britches
 						dr(	6	, i(	9756	)), --	Gypsy Trousers
 						dr(	6	, i(	6543	)), --	Willow Bracers
@@ -1035,7 +998,7 @@ _.Zones =
 						dr(	1.7	, i(	9788	)), --	Raider's Belt
 						dr(	1.3	, i(	6545	)), --	Soldier's Armor
 					}), 
-					n(5830, { 		-- Sister Rathtalon
+					n(5830, {	-- Sister Rathtalon
 						dr(	32	, i(	6553	)), --	Bard's Trousers
 						dr(	6	, i(	9779	)), --	Bandit Cloak
 						dr(	5	, i(	9788	)), --	Raider's Belt
@@ -1067,7 +1030,7 @@ _.Zones =
 						dr(	1.1	, i(	6562	)), --	Shimmering Boots
 						dr(	1.1	, i(	6536	)), --	Willow Vest
 					}), 
-					n(3295, { 		-- Sludge Anomaly
+					n(3295, {	-- Sludge Anomaly
 						dr(	4	, i(	9779	)), --	Bandit Cloak
 						dr(	4	, i(	6553	)), --	Bard's Trousers
 						dr(	4	, i(	6552	)), --	Bard's Tunic
@@ -1105,7 +1068,7 @@ _.Zones =
 						dr(	1	, i(	6557	)), --	Bard's Boots
 						dr(	1	, i(	9812	)), --	Fortified Cloak
 					}), 
-					n(5837, { 		-- Stonearm
+					n(5837, {	-- Stonearm
 						dr(	11	, i(	9756	)), --	Gypsy Trousers
 						dr(	11	, i(	9747	)), --	Simple Britches
 						dr(	9	, i(	9763	)), --	Cadet Leggings
@@ -1134,7 +1097,7 @@ _.Zones =
 						dr(	1.1	, i(	6554	)), --	Bard's Gloves
 						un(7, i(1355)), 	-- Buckskin Cape
 					}), 
-					n(5831, { 		-- Swiftmane
+					n(5831, {	-- Swiftmane
 						dr(	24	, i(	6548	)), --	Soldier's Girdle
 						dr(	23	, i(	6557	)), --	Bard's Boots
 						dr(	5	, i(	6539	)), --	Willow Belt
@@ -1159,14 +1122,14 @@ _.Zones =
 						dr(	1	, i(	6542	)), --	Willow Cape
 						dr(	1	, i(	6540	)), --	Willow Pants
 					}), 
-					o(202081, { 	-- Takk's Nest
+					o(202081, {	-- Takk's Nest
 						["groups"] = {	
-							i(48118),  	-- Leaping Hatchling Pet
+							i(48118),  	-- Leaping Hatchling (PET!)
 						},
 						["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",
 						["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
 					}),
-					n(5842, { 		-- Takk the Leaper
+					n(5842, {	-- Takk the Leaper
 						dr(	23	, i(	6266	)), --	Disciple's Vest
 						dr(	9	, i(	9763	)), --	Cadet Leggings
 						dr(	9	, i(	9756	)), --	Gypsy Trousers
@@ -1188,12 +1151,12 @@ _.Zones =
 						dr(	1.1	, i(	6543	)), --	Willow Bracers
 						dr(	1.1	, i(	6541	)), --	Willow Gloves
 					}), 
-					n(3652, { 		-- Trigore the Lasher
+					n(3652, {	-- Trigore the Lasher
 						dr(65, i(5425)),	-- RuneChain Girdle
 						dr(34, i(5426)),	-- Serpent's Kiss
 					}), 
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
 						i(4797),	-- Fiery Cloak
 						i(4798),	-- Heavy Runed CLoak
@@ -1273,6 +1236,34 @@ _.Zones =
 					nh(3489, {	-- Zargh <Butcher>
 						i(3735), 	-- Recipe: Hot Lion Chops
 					}),
+				}),
+				n(0,   {	-- Zone Drops
+					i(5107, {	-- Deckhand's Shirt
+						["crs"] = {
+							3382,	-- Southsea Cannoneer
+							3383,	-- Southsea Cutthroat
+							3384,	-- Southsea Privateer
+						},
+					}),
+					n(3444, {	-- Dig Rat
+						{
+							["itemID"] = 78342,	-- Plump Dig Rat
+							["spellID"] = 0,	-- Filter: No Spell ID plox
+							["groups"] = {
+								recipe(6417),	-- Dig Rat Stew
+							},
+						},
+					}),
+					i(97821, {	-- Gahz'rooki's Summoning Stone (PET!)
+						["crs"] = {
+							70997,	-- Hellscream Laborer
+							70999,	-- Kor'kron Marauder
+							71000,	-- Mercenary Engineer
+							71001,	-- Mercenary Shredder
+						},
+					}),
+					desc(i(6663), "Can drop from any mob in the Barrens."),	-- Recipe: Elixir of Giant Growth
+					desc(i(6661), "Can drop from any mob in the Barrens."),	-- Recipe: Savory Deviate Delight
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

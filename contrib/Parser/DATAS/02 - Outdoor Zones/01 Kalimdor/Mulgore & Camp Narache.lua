@@ -171,7 +171,7 @@ _.Zones =
 --					qg(14822, q(7945)),	-- Your Fortune Awaits You... (QG in Darkmoon Faire, POSSIBLY LEGACY - some comments on wowhead on these quests say they haven't been available since new DMF)
 				}),
 				n(-16, {	-- Rares	
-					n(3056, {		-- Ghost Howl
+					n(3056, {	-- Ghost Howl
 						i(4854, {	-- Demon Scarred Cloak
 							["groups"] = {
 								qh(770,  {  -- The Demon Scarred Cloak
@@ -182,7 +182,7 @@ _.Zones =
 							["ignoreSource"] = true
 						})
 					}),
-					n(5785, { 		-- Sister Hatelash
+					n(5785, {	-- Sister Hatelash
 						dr(	10	, i(	68743	)), --	Imbued Infantry Cloak
 						dr(	9	, i(	68755	)), --	Imbued Disciple's Gloves
 						dr(	9	, i(	68744	)), --	Imbued Pioneer Cloak
@@ -204,7 +204,7 @@ _.Zones =
 						dr(	1.1	, i(	68760	)), --	Imbued Infantry Gauntlets
 						dr(	1	, i(	6512	)), --	Disciple's Robe
 					}),
-					n(5807, { 		-- The Rake
+					n(5807, {	-- The Rake
 						dr(	22	, i(	68743	)), --	Imbued Infantry Cloak
 						dr(	14	, i(	68744	)), --	Imbued Pioneer Cloak
 						dr(	8	, i(	68746	)), --	Imbued Primal Cape
@@ -225,7 +225,7 @@ _.Zones =
 						un(7, i(17922)),	-- Lionfur Armor						
 					}), 						
 				}),
-				nh( -2, {	-- Vendors
+				nh(-2, {	-- Vendors
 					n(3685, {	-- Harb Clawhoof <Kodo Mounts>
 						i(18793),	-- Great White Kodo
 						i(18794),	-- Great Brown Kodo
@@ -263,12 +263,12 @@ _.Zones =
 				}),
 				m(462, {	-- Camp Narache
 					["groups"] = {
-						n(-25, { -- Pet Battle
-							p(385), -- Mouse
-							p(386), -- Prairie Dog
-							p(378), -- Rabbit
+						n(-25, {	-- Pet Battle
+							p(385),		-- Mouse
+							p(386),		-- Prairie Dog
+							p(378),		-- Rabbit
 						}),
-						n(-17, { -- Quests
+						n(-17, {	-- Quests
 							qg(36694, qh(14461)),	-- Feed of Evil
 							qg(2980, qh(14458)),	-- Go to Adana
 							qg(2981, qh(24861)),	-- Last Rites, First Rites
