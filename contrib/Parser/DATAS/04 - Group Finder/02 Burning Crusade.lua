@@ -27,7 +27,7 @@ _.GroupFinder =
 					i(51985),	-- Stalwart Belt [User confirmed; haven't seen]
 					i(51990),	-- Stalwart Treads*
 					i(51993),	-- Turbulent Cloak*
-					i(160599),	-- Turbulent Cloak (Assuming Agi was added since Str was)
+					i(160599),	-- Turbulent Cloak (screenshot from Surrender to the Ebonblade on Discord)
 					i(160600),	-- Turbulent Cloak (screenshot from Emsarrev on Discord)
 					i(51995),	-- Turbulent Necklace*
 					i(51991),	-- Turbulent Signet*
