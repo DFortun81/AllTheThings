@@ -382,7 +382,7 @@ _.Zones =
 							}),
 						}),
 					})),
-					n(-168, {		-- Other Quests
+					a(n(-168, {		-- Other Quests
 						sz(844, 1, {	-- Ruins of Auberdine
 							q(13542, {	-- Against the Wind
 								["groups"] = {
@@ -616,7 +616,7 @@ _.Zones =
 							q(13561, {	-- Solace for the Highborne
 								["qg"] = 33177,	-- Arya Autumnlight
 							}),
-						-- Need Header for "Twilight Encampment"
+						-- Need Header for "Mist's Edge"
 							q(13523, {	-- Power Over the Tides
 								["groups"] = {
 									i( 55127),	-- Tharill's Blessing
@@ -657,7 +657,7 @@ _.Zones =
 							q( 5713, {	-- One Shot. One Kill.
 								["qg"] = 11711,	-- Sentinel Aynasha
 							}),
-					}),
+					})),
 				}),	
 				n(-16, { 	-- Rares
 					n(2186, { 		-- Carnivous the Breaker
