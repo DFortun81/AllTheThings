@@ -1242,7 +1242,7 @@ AllTheThings.Locales.enUS = {
 		[-3184] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 1),
 		[-3185] = GARRISON_TIER.." 0.5 "..WARDROBE_SETS,
 		[-3186] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 0),
-		[-3187] = BATTLEGROUND_INSTANCE.." "..LOOT_JOURNAL_ITEM_SETS, 				-- Instance Item Sets
+		[-3187] = "Instance Sets" 				-- Instance Item Sets
 		[-3188] = "Dungeon, Tier and Class Sets",
 		[-3189] = "Fel-Touched Weapons",
 
