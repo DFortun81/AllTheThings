@@ -8,20 +8,35 @@ _.Instances =
 		["groups"] = {
 			inst(251, {	-- Old Hillsbrad Foothills
 				["groups"] = {
+					n(-17, {	-- Quests
+						q(29598, {	-- Taretha's Diversion
+							["qg"] = 18723,	-- Erozion
+						}),
+						q(29599, {	-- Escape from Durnholde
+							["groups"] = {
+								i(29317),	-- Tempest's Touch
+								i(29318),	-- Southshore Sneakers
+								i(29319),	-- Tarren Mill Defender's Cinch
+								i(29316),	-- Warchief's Mantle
+							},
+							["qg"] = 17876,	-- Thrall
+							["sourceQuests"] = 29598,
+						}),
+					}),
 					n(-2, {	-- Vendors
 						n(18672, {	-- Thomas Yance
-							i(   45),	-- Squire's Shirt
-							i(   38),	-- Recruit's Shirt
-							i(   53),	-- Neophyte's Shirt
-							i( 6096),	-- Apprentice's Shirt
-							i( 6097),	-- Acolyte's Shirt
+							i(45),	-- Squire's Shirt
+							i(38),	-- Recruit's Shirt
+							i(53),	-- Neophyte's Shirt
+							i(6096),	-- Apprentice's Shirt
+							i(6097),	-- Acolyte's Shirt
 							i(25725),	-- Pattern: Riding Crop
 						}),
 						n(18664, {	-- Aged Dalaran Wizard
 							i(22539),	-- Formula: Enchant Shield - Intellect
 						}),
 					}),
-					n( 0, {	-- Zone Drop
+					n(0, {	-- Zone Drop
 						i(25729, {	-- Pattern: Stylin' Adventure Hat
 							["crs"] = {
 								28132,	-- Don Carlos
@@ -29,15 +44,7 @@ _.Instances =
 							},
 						}),
 					}),	
-					d( 1, {	-- Normal
-						n(-17, { 	-- Quests
-							q(29599, {	-- Escape from Durnholde
-								i(29317),	-- Tempest's Touch
-								i(29318),	-- Southshore Sneakers
-								i(29319),	-- Tarren Mill Defender's Cinch
-								i(29316),	-- Warchief's Mantle
-							}),	
-						}),
+					d(1, {	-- Normal
 						cr(17848, e(538, {	-- Lieutenant Drake
 							i(28210),	-- Bloodskull Destroyer
 							i(28213),	-- Lordaeron Medical Guide
@@ -91,11 +98,11 @@ _.Instances =
 							i(24173),	-- Design: Circlet of Arcane Might
 						})),
 					}),
-					d( 2, {	-- Heroic
+					d(2, {	-- Heroic
 						["lvl"] = 70,
 						["ignoreBonus"] = true,
 						["groups"] = {
-							n( 28132, {			-- Don Carlos
+							n( 28132, {	-- Don Carlos
 								["groups"] = {	
 									i(134019),	-- Don Carlos' Famous Hat (TOY!)
 								},
@@ -158,7 +165,7 @@ _.Instances =
 				["lvl"] = 63,
 				["mapID"] = 274
 			}),
-		},					
+		},
 		["tierID"] = 2
-	},	
+	},
 };
