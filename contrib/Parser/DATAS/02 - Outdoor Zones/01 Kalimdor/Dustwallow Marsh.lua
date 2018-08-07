@@ -1478,7 +1478,7 @@ _.Zones =
 								}),
 								qa(11198, {	-- Take Down Tethyr!
 									un(34, i(33228)),	-- Crimson Tunic
-									un(34, i(33247)),	-- Swift Wind Spaulders
+									i(33247),	-- Swift Wind Spaulders
 									un(34, i(33253)),	-- Golden Helm
 								}),
 								qh(1172, {	-- The Brood of Onyxia
