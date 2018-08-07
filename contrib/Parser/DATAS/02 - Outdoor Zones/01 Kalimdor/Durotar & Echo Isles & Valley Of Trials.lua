@@ -94,79 +94,138 @@ _.Zones =
 					qg(100453, qh(40522)),	-- Fate of the Horde
 					qg(54142, qh(29416)),	-- Fencing the Goods
 					qg(68023, qh(32319)),	-- Find Thrall! (QG in Kun-Lai Summit)
---]]					
-
+--]]
+					sz(728, 4, { -- Sen'jin Village
+						q(25167, { -- Breaking the Chain
+							["g"] = {},
+							["qg"] = 3188, -- Master Gadrin
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25133, 25073 }, -- Report to Sen'jin Village, Sen'jin Village
+						}),
+						q(25170, { -- Cleaning Up the Coastline
+							["g"] = {},
+							["qg"] = 10578, -- Bom'bay
+							["races"] = HORDE_ONLY,
+						}),
+						q(25165, { -- Never Trust a Big Barb and a Smile
+							["g"] = {},
+							["qg"] = 10578, -- Bom'bay
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25170 }, -- Cleaning up the Coastline
+						}),
+						q(25168, { -- Purge the Valley
+							["g"] = {},
+							["qg"] = 3188, -- Master Gadrin
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25167 }, -- Breaking the Chain
+						}),
+						q(25169, { -- The War of Northwatch Aggression
+							["g"] = {},
+							["qg"] = 3140, -- Lar Prowltusk
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25167 }, -- Breaking the Chain
+						}),
+						q(25171, { -- Riding On
+							["g"] = {},
+							["qg"] = 3188, -- Master Gadrin
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25165, 25168, 25169 }, -- Never Trust a Big Barb and a Smile, The War of Northwatch Aggression, Purge the Valley
+						}),
+					}),
+					sz(728, 7, { -- Razor Hill
+						-- Main Story Quests --
+						q(25173, { -- From Bad to Worse
+							["g"] = {},
+							["qg"] = 3139, -- Gar'Thok
+							["lvl"] = 4,
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25171 }, -- Riding On
+						}),
+						q(25176, { -- Exploiting the Situation
+							["g"] = {},
+							["qg"] = 39423, -- Gail Nozzywig
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25171 }, -- Riding On
+						}),
+						q(25177, { -- Storming the Beaches
+							["g"] = {},
+							["qg"] = 3139, -- Gar'Thok
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25173 }, -- From Bad to Worse
+						}),
+						q(25178, { -- Shipwreck Searching
+							["g"] = {},
+							["qg"] = 39423, -- Gail Nozzywig
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25173, 25176 }, -- From Bad to Worse, Exploiting the Situation
+						}),
+						qh(25227, {	-- Thonk
+							["g"] = {},
+							["qg"] = 39423, -- Gail Nozzywig
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25178 }, -- Shipwreck Searching
+							["isBreadcrumb"] = true,
+						}),
+						q(25187, { -- Lost in the Floods
+							["g"] = {},
+							["qg"] = 39323, -- Gail Nozzywig
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25227 }, -- Thonk
+						}),
+						q(25188, { -- Watershed Patrol
+							["g"] = {},
+							["qg"] = 39323, -- Gail Nozzywig
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25187 }, -- Lost in the Floods
+						}),
+						q(25232, { -- The Burning Blade
+							["g"] = {},
+							["qg"] = 3142, -- Orgnil Soulscar
+							["lvl"] = 8,
+							["races"] = HORDE_ONLY,
+						}),
+						q(840, { -- Conscript of the Horde
+							["g"] = {},
+							["qg"] = 3336, -- Takrin Pathseeker
+							["lvl"] = 10,
+							["races"] = HORDE_ONLY,
+							["isBreadcrumb"] = true,
+						}),
+						-- Side Quests --
+						q(6365, { -- Meats to Orgrimmar
+							["g"] = {},
+							["qg"] = 3881, -- Grimtak
+							["lvl"] = 5,
+							["races"] = { 2, 8 }, -- Orcs/Trolls
+						}),
+						q(6384, { -- Ride to Orgrimmar
+							["g"] = {},
+							["qg"] = 41140, -- Burok
+							["lvl"] = 5,
+							["races"] = { 2, 8 }, -- Orcs/Trolls
+							["sourceQuests"] = { 6365 }, -- Meats to Orgrimmar
+						}),
+						--q(6385, { -- Doras the Wind Rider Master (Orgrimmar)
+						--q(6386, { -- Return to Razor Hill (Orgrimmar)
+					}),
+					n(-168, { -- Other Quests
+						q(25179, { -- Loss Reduction
+							["g"] = {},
+							["qg"] = 39270, -- Injured Razor Hill Grunt
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25173 }, -- From Bad to Worse
+							["description"] = "Talk to an Injured Razor Hill Grunt on the beach.",
+						}),
+					}),
 					q(834, {	-- Winds in the Desert
 						["qg"] = 3293, -- Rezlak
 					}),
 					q(835, {	-- Securing the Lines
 						["qg"] = 3293, -- Rezlak
 					}),
-					qh(840, {	-- Conscript of the Horde (breadcrumb quest for 871)
-						["qg"] = 3336, -- Takrin Pathseeker
-						["sourceQuests"] = { 25188 }, -- Watershed Patrol
-						["isBreadcrumb"] = true,
-					}),
-					q(6365, {	-- Meats to Orgrimmar (add'l QG 3881)
-						["qg"] = 3489, -- Grimtak
-						["races"] = {2,8},
-					}),
-					q(6384, {	-- Ride to Orgrimmar
-						["qg"] = 41140, -- Burok
-						["sourceQuests"] = { 6365 }, -- Meats to Orgrimmar
-						["races"] = {2,6,8},
-					}),
-					qh(25165, {	-- Never Trust a Big Barb and a Smile
-						["qg"] = 10578, -- Bom'bay
-						["sourceQuests"] = { 25170 }, -- Cleaning up the Coastline
-					}),
-					qh(25167, {	-- Breaking the Chain
-						["qg"] = 3188, -- Master Gadrin
-					}),
-					qh(25168, {	-- Purge the Valley
-						["qg"] = 3188, -- Master Gadrin
-						["sourceQuests"] = { 25167 }, -- Breaking the Chain
-					}),
-					qh(25169, {	-- The War of Northwatch Aggression
-						["qg"] = 3140, -- Lar Prowltusk
-						["sourceQuests"] = { 25167 }, -- Breaking the Chain
-					}),
-					qh(25170, {	-- Cleaning Up the Coastline
-						["qg"] = 10578, -- Bom'bay
-					}),
-					qh(25171, {	-- Riding On
-						["qg"] = 3188, -- Master Gadrin
-						["sourceQuests"] = { 25168 }, -- Purge the Valley
-					}),
-					qh(25173, {	-- From Bad to Worse
-						["qg"] = 3139, -- Gar'Thok
-					}),
-					qh(25176, {	-- Exploiting the Situation
-						["qg"] = 39423, -- Gail Nozzywig
-					}),
-					qh(25177, {	-- Storming the Beaches
-						["qg"] = 3139, -- Gar'Thok
-						["sourceQuests"] = { 25173 }, -- From Bad to Worse
-					}),
-					qh(25178, {	-- Shipwreck Searching
-						["qg"] = 39423, -- Gail Nozzywig
-						["sourceQuests"] = { 25176 }, -- Exploiting the Situation
-					}),
 					qh(25196, {	-- The Dranosh'ar Blockade
 						["qg"] = 3142, -- Orgnil Soulscar
 						["sourceQuests"] = { 25232 }, -- The Burning Blade
-					}),
-					qh(25179, {	-- Loss Reduction
-						["qg"] = 39270, -- Injured Razor Hill Grunt
-						["description"] = "Talk to an Injured Razor Hill Grunt on the beach.",
-						["sourceQuests"] = { 25173 }, -- From Bad to Worse
-					}),
-					qh(25187, {	-- Lost in the Floods
-						["qg"] = 39323, -- Gail Nozzywig
-					}),
-					qh(25188, {	-- Watershed Patrol
-						["qg"] = 39323, -- Gail Nozzywig
-						["sourceQuests"] = { 25187 }, -- Lost in the Floods
 					}),
 					qh(25190, {	-- Raggaran's Rage
 						["qg"] = 39326, -- Raggaran
@@ -200,16 +259,8 @@ _.Zones =
 						["qg"] = 39379, -- Gor the Enforcer
 						["sourceQuests"] = { 25205 }, -- The Wolf and The Kodo
 					}),
-					qh(25227, {	-- Thonk
-						["qg"] = 39423, -- Gail Nozzywig
-						["sourceQuests"] = { 25178 }, -- Shipwreck Searching
-						["isBreadcrumb"] = true,
-					}),
 					qh(25236, {	-- Thunder Down Under
 						["qg"] = 39379, -- Gor the Enforcer
-					}),
-					qh(25232, {	-- The Burning Blade
-						["qg"] = 3142, -- Orgnil Soulscar
 					}),
 					qh(25256, {	-- Sent for Help
 						["qg"] = 39604, -- Vek'nag
@@ -470,35 +521,33 @@ _.Zones =
 				}),
 				n(-40, { -- Legacy
 					["g"] = {
-						n(-17, { -- Quests
-							["groups"] = bubbleDown({["u"] = 40}, {
-								q(5648, { -- Garments of Spirituality
-									["g"] = {
-										un(34, i(16606)), -- Juju Hex Robes
-									},
-									["qg"] = 3706, -- Tai'jin
-									["races"] = { 8 }, -- Troll
-									["classes"] = { 5 }, -- Priest
-									["u"] = 40, -- Legacy Quest/Quest Item
-								}),
-								q(827, { -- Skull Rock
-									["g"] = {
-										un(34, i(4947)), -- Jagged Dagger
-										un(34, i(4939)), -- Steady Bastard Sword
-										un(34, i(4948)), -- Stinging Mace
-									},
-									["qg"] = 3208, -- Margoz
-									["races"] = HORDE_ONLY,
-									["u"] = 40, -- Legacy Quest/Quest Item
-								}),
-								q(924, { -- The Demon Seed
-									["g"] = {
-										un(34, i(5420)), -- Banshee Armor
-									},
-									["qg"] = 3521, -- Ak'Zeloth
-									["races"] = HORDE_ONLY,
-									["u"] = 40, -- Legacy Quest/Quest Item
-								}),
+						n(-17, { -- Quests (Legacy)
+							q(5648, { -- Garments of Spirituality
+								["g"] = {
+									un(34, i(16606)), -- Juju Hex Robes
+								},
+								["qg"] = 3706, -- Tai'jin
+								["races"] = { 8 }, -- Troll
+								["classes"] = { 5 }, -- Priest
+								["u"] = 40, -- Legacy Quest/Quest Item
+							}),
+							q(827, { -- Skull Rock
+								["g"] = {
+									un(34, i(4947)), -- Jagged Dagger
+									un(34, i(4939)), -- Steady Bastard Sword
+									un(34, i(4948)), -- Stinging Mace
+								},
+								["qg"] = 3208, -- Margoz
+								["races"] = HORDE_ONLY,
+								["u"] = 40, -- Legacy Quest/Quest Item
+							}),
+							q(924, { -- The Demon Seed
+								["g"] = {
+									un(34, i(5420)), -- Banshee Armor
+								},
+								["qg"] = 3521, -- Ak'Zeloth
+								["races"] = HORDE_ONLY,
+								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
 						}),
 						--[[n(-16, { -- Rares (Legacy)
@@ -506,6 +555,7 @@ _.Zones =
 						n(0, { -- Zone Drop (Legacy)
 						}),]]--
 					},
+					["u"] = 2, -- Legacy Section
 				}),
 				m(463, { -- Echo Isles
 					["g"] = {
