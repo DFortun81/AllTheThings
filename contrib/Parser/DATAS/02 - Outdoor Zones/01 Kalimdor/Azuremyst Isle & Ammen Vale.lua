@@ -6,7 +6,7 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(97, {	-- Azuremyst Isle
 			["groups"] = {	
-				n(-25, { 	-- Pet Battle
+				n(-25,  { 	-- Pet Battle
 					p(464), 	-- Grey Moth
 					p(378), 	-- Rabbit
 					p(397), 	-- Skunk
@@ -192,13 +192,13 @@ _.Zones =
 --]]					
 					-- qa(14082),	-- Learn to Ride at the Exodar (removed in Patch 4.0.1)
 				}),
-				na(-2, {	-- Vendors
+				na(-2,  {	-- Vendors
 					n(17246, {	-- "Cookie" McWeaksauce <Cooking Trainer & Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 				}),
-				n(-40, {	-- Legacy
+				n(-40,  {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							["groups"] = bubbleDown({["u"] = 40}, {
@@ -217,12 +217,12 @@ _.Zones =
 						--}),
 					},
 				}),
-				m(468, { -- Ammen Vale
+				m(468,  {	-- Ammen Vale
 					["groups"] = {
-						n(-25, { -- Pet Battle
+						n( -25, {	-- Pet Battle
 							p(464), -- Grey Moth
 						}),
-						na(-17, { 	-- Quests 	
+						na(-17, {	-- Quests 	
 							n(-64, { 	-- Main Questline
 								qg(16475, qa( 9279, {	-- You Survived!
 									["groups"] = {

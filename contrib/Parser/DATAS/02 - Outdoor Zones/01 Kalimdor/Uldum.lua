@@ -39,7 +39,7 @@ _.Zones =
 					}),
 					prof(186, { -- Mining
 						["groups"] = {
-							i(67282), 	-- Pet Elementium Geode
+							i(67282), 	-- Elementium Geode (PET!)
 						},
 						["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
 					}),
@@ -763,13 +763,13 @@ _.Zones =
 					n(50409, {	-- Mysterious Camel Figurine
 						["groups"] = {
 							n(50245, {	-- Dormus the Camel Hoarder
-								i(63046),	-- Reins of the Grey Riding Camel
+								i(63046),	-- Reins of the Grey Riding Camel (MOUNT!)
 							}),
 						},
 						["description"] = "If you're lucky enough to find the right Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
 					}),
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(48617, {	-- Blacksmith Abasi <Ramkahen Quartermaster>
 						i(62448),	-- Sun King's Girdle
 						i(62449),	-- Sandguard Bracers

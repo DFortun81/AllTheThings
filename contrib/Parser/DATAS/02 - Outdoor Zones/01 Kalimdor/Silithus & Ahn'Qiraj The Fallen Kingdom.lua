@@ -770,7 +770,7 @@ END OF MICRO-HOLIDAY --]]
 					}), 
 	--				n(54533, { 		-- Prince Lakma - no loot			}), 
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(15293, {	-- Aendel Windspear
 						["groups"] = {
 							i(22769),	-- Pattern: Bramblewood Belt

@@ -289,7 +289,7 @@ _.Zones =
 					qg(39725, qa(25429)),	-- Zukk'ash Infestation	
 --]]
 				}),
-				n(-16, { -- Rares	
+				n(-16, {	-- Rares	
 					n(5347, { 		-- Antilus the Soarer
 						dr(04.0, i(9854)),	-- Archer's Jerkin
 						dr(04.0, i(7462)),	-- Knight's Girdle
@@ -764,7 +764,7 @@ _.Zones =
 					}), 
 	--				n(54533, { 		-- Prince Lakma -- Drops no transmoggable loot			}),
 				}),
-				n(-2, {		-- Vendors
+				n(-2,  {	-- Vendors
 					na(44381, {	-- Apprentice of Estulan <Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
@@ -828,30 +828,33 @@ _.Zones =
 						i(12253),	-- Brilliant Red Cloak
 					})),
 				}),
-				n(0, { -- Zone Drop
-					h(n(5300, {		-- Frayfeather Hippogryph
-						dr(0.02, i(11474)), -- Sprite Darter Egg
-					})),
-					h(n(5304, {		-- Frayfeather Stagwing
-						dr(0.02, i(11474)), -- Sprite Darter Egg
-					})),
-					n(39949, {		-- Grimtotem Marauder
-						dr(0.02, i(11474)), -- Sprite Darter Egg
+				n(0,   {	-- Zone Drop
+					i(8498, {	-- Emerald Whelpling
+						["crs"] = {
+							39384,	-- Noxious Whelp
+						},
 					}),
-					n(11440, {		-- Gordok Enforcer
-						dr(0.02, i(11474)), -- Sprite Darter Egg
-					}),
-					n(39384, { 		-- Noxious Whelp
-						dr(0.1,  i(8498)), 		-- Emerald Whelping
-						dr(0.01, i(11474)), 	-- Sprite Darter Egg
-					}),
-					h(n(5278, {			-- Sprite Darter
-						dr(0.03, i(11474)), -- Sprite Darter Egg
-					})),n(5249, {		-- Woodpaw Mongrel
-						dr(0.02, i(11474)), -- Sprite Darter Egg
-					}),
-					n(5246, {		-- Zukk'ash Worker
-						dr(0.02, i(11474)), -- Sprite Darter Egg
+					i(11474, {	-- Sprite Darter Egg (PET!)
+						["crs"] = {
+							40168,	-- Corrupted Dryad
+							39896,	-- Feral Scar Yeti
+							5300,	-- Frayfeather Hippogryph
+							5304,	-- Frayfeather Stagwing
+							11440,	-- Gordok Enforcer
+							11443,	-- Gordok Ogre-Mage
+							39949,	-- Grimtotem Marauder
+							40059,	-- Highborne Poltergeist
+							5286,	-- Longtooth Runner
+							5362,	-- Northspring Harpy
+							39384,	-- Noxious Whelp
+							40224,	-- Rage Scar Yeti
+							5461,	-- Sea Elemental
+							40193,	-- Sharphorn Stag
+							5278,	-- Sprite Darter
+							5249,	-- Woodpaw Mongrel
+							5245,	-- Zukk'ash Wasp
+							5246,	-- Zukk'ash Worker
+						},
 					}),
 				}),
 				n(-40, {	-- Legacy

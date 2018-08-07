@@ -935,7 +935,7 @@ _.Zones =
 						dr(	1.1	, i(	7492	)), --	Captain's Cloak
 						dr(	1	, i(	7454	)), --	Knight's Breastplate
 					}), 
-					o(202080, {	-- Dart's Nest
+					o(202080, {		-- Dart's Nest
 						["groups"] = {		
 							dr(100, i(48112)),	-- Darting Hatchling Pet
 						},
@@ -1300,12 +1300,6 @@ _.Zones =
 						dr(	1.1	, i(	9870	)), --	Renegade Circlet
 						dr(	1.1	, i(	9877	)), --	Sorcerer Cloak
 					}),
-					n(4323, { 		-- Searing Hatchling
-						dr(0.09, i(10822)),			-- Dark Whelpling Pet
-					}),
-					n(4324, { 		-- Searing Whelp
-						dr(0.17, i(10822)),			-- Dark Whelpling Pet
-					}),
 					n(50901, { 		-- Teromak
 						dr(	12	, i(	7369	)), --	Elder's Robe
 						dr(	11	, i(	9861	)), --	Archer's Gloves
@@ -1370,7 +1364,7 @@ _.Zones =
 						dr(	1.1	, i(	9889	)), --	Huntsman's Cap
 					}), 
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					na(4894, {	-- Craig Nollward <Cooking Trainer>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
@@ -1434,6 +1428,14 @@ _.Zones =
 						i(12251),	-- Big Stick
 						i(12250),	-- Midnight Axe
 					})),
+				}),
+				n(0,   {	-- Zone Drop
+					i(10822, {	-- Dark Whelpling (PET!)
+						["crs"] = {
+							4323,	-- Searing Hatchling
+							4324,	-- Searing Whelp
+						},
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

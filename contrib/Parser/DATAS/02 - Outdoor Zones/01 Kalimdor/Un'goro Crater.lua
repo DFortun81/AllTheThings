@@ -10,7 +10,7 @@ _.Zones =
 					p(632), 	-- Ash Lizard
 					p(406), 	-- Beetle
 					p(393), 	-- Cockroach
-					desc(p(504), "Can be found around Golakka Hot Springs, near Elder Diemetradons."), -- Diemetradon Hatchling
+					desc(p(504), "Can be found around Golakka Hot Springs, near Elder Diemetradons."),	-- Diemetradon Hatchling
 					p(631), 	-- Emerald Boa
 					p(415), 	-- Fire Beetle
 					p(404), 	-- Long-tailed Mole
@@ -19,43 +19,19 @@ _.Zones =
 					p(502), 	-- Spotted Bell Frog
 					p(405), 	-- Tree Python
 				}),
-				n(0, { -- Zone Drops
-					["g"] = {
-						i(142377, { -- Badly Broken Dark Spear
-							["g"] = {
-								q(45044, { -- Weapon No More
-									["g"] = {},
-									["qgs"] = {
-										9376, -- Blazerunner
-										6510, -- Bloodpetal Flayer
-										38346, -- Devilsaur Queen
-										9163, -- Diemetradon
-										38329, -- Durrin Direshovel
-										9164, -- Elder Diemetradon
-										9167, -- Frenzied Pterrordax
-										6553, -- Gorishi Reaver
-										6554, -- Gorishi Stinger
-										6555, -- Gorishi Tunneler
-									},
-								}),
-							},
-							["requiredSkill"] = 164, -- Blacksmithing
-						}),
-					},
-				}),
 				n(-17, {	-- Quests
 					["g"] = {
-						qg(9999, q(24735, { -- A Little Help From My Friends
+						qg(9999, q(24735, {	-- A Little Help From My Friends
 							i(53566),
 							i(53567),
 							i(53568),
 						})),
-						qg(9272, q(24709, { -- A Tale of Two Shovels
+						qg(9272, q(24709, {	-- A Tale of Two Shovels
 							i(53600),
 							i(53601),
 							i(53602),
 						})),
-						qg(38263, q(24855, { -- Aberrant Flora
+						qg(38263, q(24855, {	-- Aberrant Flora
 							i(53569),
 							i(53570),
 						})),
@@ -67,7 +43,7 @@ _.Zones =
 						qg(38237, q(24703)),	-- An Important Lesson
 						qg(28092, q(12797)),	-- Back Through the Waygate
 	--]]					
-						qg(9270, q(24690, { -- Blazerunner
+						qg(9270, q(24690, {	-- Blazerunner
 							i(53574),
 							i(53575),
 							i(53576),
@@ -77,7 +53,7 @@ _.Zones =
 						qg(38274, q(24686)),	-- Carried on the Waves
 						qg(9618, q(24714)),	-- Chasing A-Me 01
 	--]]					
-						qg(38274, q(24719, { -- Claws of White
+						qg(38274, q(24719, {	-- Claws of White
 							i(53557),
 							i(53559),
 						})),
@@ -97,7 +73,7 @@ _.Zones =
 						qg(9117, q(24720)),	-- Crystals of Power
 						qg(38237, q(24705)),	-- Damsels Were Made to be Saved (secondary QG ID 38255)
 	--]]					
-						qg(38502, q(24695, { -- Ever Watching From Above
+						qg(38502, q(24695, {	-- Ever Watching From Above
 							i(53595),
 							i(53596),
 						})),
@@ -107,7 +83,7 @@ _.Zones =
 						qg(38274, q(24689)),	-- Flowing to the North
 						qg(34320, qh(13903)),	-- Gorishi Grub	(MOUNT daily, Venomhide Ravasaur)
 	--]]					
-						qg(38276, q(24699, { -- Gormashh the Glutinous
+						qg(38276, q(24699, {	-- Gormashh the Glutinous
 							i(53592),
 							i(53593),
 						})),
@@ -115,7 +91,7 @@ _.Zones =
 						o(202135, {	-- Dadanga's Grave
 							q(24702),	-- Here Lies Dadanga
 						}),
-						qg(38270, q(24697, { -- How to Make Meat Fresh Again
+						qg(38270, q(24697, {	-- How to Make Meat Fresh Again
 							i(53563),
 							i(53564),
 							i(53565),
@@ -128,7 +104,7 @@ _.Zones =
 						}),
 						qg(9997, q(24734)),	-- Lost!
 	--]]					
-						qg(38277, q(24701, { -- Marshal's Refuse
+						qg(38277, q(24701, {	-- Marshal's Refuse
 							i(53580),
 							i(53581),
 							i(53582),
@@ -139,17 +115,17 @@ _.Zones =
 						qg(34320, qh(13904)),	-- Poached, Scrambled, Or Raw? (MOUNT daily, Venomhide Ravasaur)
 						qg(9623, q(24715)),	-- Repairing A-Me 01
 	--]]					
-						qg(9272, q(24730, { -- Roll the Bones
+						qg(9272, q(24730, {	-- Roll the Bones
 							i(53585),
 							i(53586),
 						})),						
 	--					qg(34320, qh(13905)),	-- Searing Roc Feathers (MOUNT daily, Venomhide Ravasaur)
-						qg(9623, q(24926, { -- Serving A-Me 01
+						qg(9623, q(24926, {	-- Serving A-Me 01
 							i(53571),
 							i(53572),
 							i(53573),
 						})),
-						qg(9998, q(24736, { -- Shizzle's Flyer
+						qg(9998, q(24736, {	-- Shizzle's Flyer
 							i(53589),
 							i(53590),
 							i(53591),
@@ -159,18 +135,18 @@ _.Zones =
 						qg(10302, q(24794)),	-- Speak With Spraggle
 						qg(38276, q(24737)),	-- Super Sticky
 	--]]					
-						qg(28092, q(12547, { -- The Activation Rune
+						qg(28092, q(12547, {	-- The Activation Rune
 							i(39366),
 							i(39411),
 							i(39442),
 							i(39465),
 						})),
 	--					qg(38275, q(24717)),	-- The Apes of Un'Goro
-						qg(9619, q(24733, { -- The Bait for Lar'korwi
+						qg(9619, q(24733, {	-- The Bait for Lar'korwi
 							i(53587),
 							i(53588),
 						})),
-						qg(38237, q(24707, { -- The Ballad of Maximillian (secondary QG ID 38343)
+						qg(38237, q(24707, {	-- The Ballad of Maximillian (secondary QG ID 38343)
 							i(53598),
 							i(53599),
 						})),
@@ -180,15 +156,15 @@ _.Zones =
 						qg(38237, q(24704)),	-- The Evil Dragons of Un'Goro Crater (secondary QG ID 38255)
 						qg(9619, q(24731)),	-- The Fare of Lar'korwi
 	--]]					
-						qg(9271, q(24692, { -- The Fledgling Colossus
+						qg(9271, q(24692, {	-- The Fledgling Colossus
 							i(53577),
 							i(53578),
 							i(53579),
 						})),
 	--					qg(9272, q(24708)),	-- The Fossil-Finder 3000
-						q(24718, { -- The Mighty U'cha
+						q(24718, {	-- The Mighty U'cha
 							["groups"] = {
-								i(53583), -- Beast Clobberer
+								i(53583),	-- Beast Clobberer
 								i(53584),
 								i(156995),	-- Beastflayer
 							},
@@ -201,7 +177,7 @@ _.Zones =
 						qg(38237, q(24706)),	-- The Spirits of Golakka Hot Springs (secondary QG ID 38255)
 						qg(9272, q(24723)),	-- The Western Pylon
 	--]]
-						qg(11701, qh(13906, { -- They Grow Up So Fast (final MOUNT quest)
+						qg(11701, qh(13906, {	-- They Grow Up So Fast (final MOUNT quest)
 							i(46102),	-- Reins of the Venomhide Ravasaur
 						})),
 	--[[					
@@ -210,30 +186,30 @@ _.Zones =
 						qg(9270, q(24740)),	-- Volcanic Activity
 	--]]					
 	--					q(24688),	-- Zen'Aliri (NEVER IMPLEMENTED)
-						q(45051, { -- Reverse Blacksmithing
+						q(45051, {	-- Reverse Blacksmithing
 							["g"] = {},
-							["qg"] = 115923, -- Ko'Zan
-							["sourceQuest"] = 45044, -- Weapon No More
-							["requiredSkill"] = 164, -- Blacksmithing
+							["qg"] = 115923,	-- Ko'Zan
+							["sourceQuest"] = 45044,	-- Weapon No More
+							["requiredSkill"] = 164,	-- Blacksmithing
 						}),
-						q(45055, { -- A Taste of Their Own Medicine
+						q(45055, {	-- A Taste of Their Own Medicine
 							["g"] = {},
-							["qg"] = 115923, -- Ko'Zan
-							["sourceQuest"] = 45051, -- Reverse Blacksmithing
-							["requiredSkill"] = 164, -- Blacksmithing
+							["qg"] = 115923,	-- Ko'Zan
+							["sourceQuest"] = 45051,	-- Reverse Blacksmithing
+							["requiredSkill"] = 164,	-- Blacksmithing
 						}),
-						q(45057, { -- Saving My Head
+						q(45057, {	-- Saving My Head
 							["g"] = {
-								i(142383), -- Plans: Darkspear
+								i(142383),	-- Plans: Darkspear
 							},
-							["qg"] = 115923, -- Ko'Zan
-							["sourceQuest"] = 45055, -- A Taste of Their Own Medicine
-							["requiredSkill"] = 164, -- Blacksmithing
+							["qg"] = 115923,	-- Ko'Zan
+							["sourceQuest"] = 45055,	-- A Taste of Their Own Medicine
+							["requiredSkill"] = 164,	-- Blacksmithing
 						}),
 					},
 				}),
 				n(-16, {	-- Rares	
-					n(6582, { 		-- Clutchmother Zavas
+					n(6582, {	-- Clutchmother Zavas
 						dr(	4	, i(	10241	)), --	Heavy Lamellar Helm
 						dr(	4	, i(	10179	)), --	Mystical Boots
 						dr(	4	, i(	10176	)), --	Mystical Gloves
@@ -274,7 +250,7 @@ _.Zones =
 						dr(	1	, i(	10099	)), --	Councillor's Gloves
 						dr(	1	, i(	10276	)), --	Emerald Sabatons
 					}), 
-					n(6583, { 		-- Gruff
+					n(6583, {	-- Gruff
 						dr(	3	, i(	9950	)), --	Chieftain's Breastplate
 						dr(	3	, i(	10096	)), --	Councillor's Cuffs
 						dr(	3	, i(	10103	)), --	Councillor's Sash
@@ -320,7 +296,7 @@ _.Zones =
 						dr(	1	, i(	10165	)), --	Templar Gauntlets
 						i(45052), 	-- Gruffscale Leggings							
 					}), 
-					n(6584, { 		-- King Mosh
+					n(6584, {	-- King Mosh
 						dr(	4	, i(	10110	)), --	Wanderer's Gloves
 						dr(	3	, i(	10099	)), --	Councillor's Gloves
 						dr(	3	, i(	10193	)), --	Crusader's Armor
@@ -368,7 +344,7 @@ _.Zones =
 						dr(	1	, i(	10224	)), --	Nightshade Cloak
 						dr(	1	, i(	10123	)), --	Ornate Circlet
 					}), 
-					n(6581, { 		-- Ravasaur Matriarch
+					n(6581, {	-- Ravasaur Matriarch
 						dr(	3	, i(	9954	)), --	Chieftain's Leggings
 						dr(	3	, i(	10191	)), --	Crusader's Armguards
 						dr(	3	, i(	10063	)), --	Duskwoven Amice
@@ -416,14 +392,14 @@ _.Zones =
 						dr(	1	, i(	10180	)), --	Mystical Belt
 						dr(	1	, i(	10186	)), --	Swashbuckler's Gloves
 					}), 
-					o(202082, { 	-- Ravasaur Matriarch's Nest
+					o(202082, {	-- Ravasaur Matriarch's Nest
 						["groups"] = {	
-							i(48122), 	-- pet
+							i(48122), 	-- Ravasaur Hatchling (PET!)
 						},
 						["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",
 						["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",	
 					}),
-					n(6585, { 		-- Uhk'loc
+					n(6585, {	-- Uhk'loc
 						dr(	33	, i(	10122	)), --	Ornate Girdle
 						dr(	3	, i(	10186	)), --	Swashbuckler's Gloves
 						dr(	2	, i(	9943	)), --	Abjurer's Robe
@@ -458,7 +434,7 @@ _.Zones =
 						dr(	1	, i(	10184	)), --	Swashbuckler's Bracers
 					}), 
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(38561, {	-- Dramm Riverhorn <Light Armor Merchant>
 						i(12719),	-- Plans: Runic Plate Leggings
 						i(12714),	-- Plans: Runic Plate Helm
@@ -472,13 +448,32 @@ _.Zones =
 						["description"] = "Vendor only sells plans to those who have completed the quest 'Saving My Head'.",
 					}),
 					n(12959, {	-- Nergal <General Goods>
-						i(15772, {	-- Pattern: Devilsaur Leggings
-							i(15062),	-- Devilsaur Leggings
-						}),
-						i(15758, {	-- Pattern: Devilsaur Gauntlets
-							i(15063),	-- Devilsaur Gauntlets
-						}),
+						i(15772),	-- Pattern: Devilsaur Leggings
+						i(15758),	-- Pattern: Devilsaur Gauntlets
 					}),
+				}),
+				n(0,   {	-- Zone Drops
+					["g"] = {
+						i(142377, {	-- Badly Broken Dark Spear
+							["g"] = {
+								q(45044, {	-- Weapon No More
+									["qgs"] = {
+										9376,	-- Blazerunner
+										6510,	-- Bloodpetal Flayer
+										38346,	-- Devilsaur Queen
+										9163,	-- Diemetradon
+										38329,	-- Durrin Direshovel
+										9164,	-- Elder Diemetradon
+										9167,	-- Frenzied Pterrordax
+										6553,	-- Gorishi Reaver
+										6554,	-- Gorishi Stinger
+										6555,	-- Gorishi Tunneler
+									},
+								}),
+							},
+							["requiredSkill"] = 164,	-- Blacksmithing
+						}),
+					},
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

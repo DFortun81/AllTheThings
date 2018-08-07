@@ -714,14 +714,14 @@ _.Zones =
 					}),
 				}),
 				n(-16, {	-- Rares	
-					n(50812, { 		-- Arae
+					n(50812, {	-- Arae
 						dr(	82	, i(	6612	)), --	Sage's Boots
 						dr(	1.2	, i(	9818	)), --	Fortified Chain
 						dr(	1.2	, i(	9799	)), --	Ivycloth Sash
 						dr(	1	, i(	9817	)), --	Fortified Spaulders
 						dr(	1	, i(	9795	)), --	Ivycloth Gloves
 					}), 
-					n(5915, { 		-- Brother Ravenoak
+					n(5915, {	-- Brother Ravenoak
 						dr(	27	, i(	9828	)), --	Scaled Leather Boots
 						dr(	17	, i(	9808	)), --	Superior Leggings
 						dr(	3	, i(	6590	)), --	Battleforge Boots
@@ -743,7 +743,7 @@ _.Zones =
 						dr(	1.1	, i(	10404	)), --	Durable Belt
 						dr(	1.1	, i(	9809	)), --	Superior Tunic
 					}), 
-					n(50884, { 		-- Dustflight the Cowardly
+					n(50884, {	-- Dustflight the Cowardly
 						dr(	13	, i(	9808	)), --	Superior Leggings
 						dr(	4	, i(	7415	)), --	Dervish Spaulders
 						dr(	4	, i(	6611	)), --	Sage's Sash
@@ -760,12 +760,12 @@ _.Zones =
 						dr(	1.1	, i(	7356	)), --	Elder's Cloak
 						dr(	1.1	, i(	9791	)), --	Ivycloth Tunic
 					}), 
-					n(50825, { 		-- Feras
+					n(50825, {	-- Feras
 						dr(	45	, i(	9818	)), --	Fortified Chain
 						dr(	44	, i(	9799	)), --	Ivycloth Sash
 						dr(	2	, i(	6602	)), --	Dervish Bracers
 					}), 
-					n(50986, { 		-- Goldenback
+					n(50986, {	-- Goldenback
 						dr(	8	, i(	9802	)), --	Superior Boots
 						dr(	7	, i(	9817	)), --	Fortified Spaulders
 						dr(	6	, i(	6604	)), --	Dervish Cape
@@ -774,12 +774,12 @@ _.Zones =
 						dr(	3	, i(	9803	)), --	Superior Bracers
 						dr(	1.7	, i(	6602	)), --	Dervish Bracers
 					}), 
-					n(50759, { 		-- Iriss the Widow
+					n(50759, {	-- Iriss the Widow
 						dr(	55	, i(	6600	)), --	Dervish Belt
 						dr(	32	, i(	9817	)), --	Fortified Spaulders
 						dr(	3	, i(	9796	)), --	Ivycloth Mantle
 					}), 
-					n(51062, { 		-- Khep-Re
+					n(51062, {	-- Khep-Re
 						dr(	5	, i(	6595	)), --	Battleforge Gauntlets
 						dr(	4	, i(	6602	)), --	Dervish Bracers
 						dr(	3	, i(	6597	)), --	Battleforge Shoulderguards
@@ -790,7 +790,7 @@ _.Zones =
 						dr(	1.7	, i(	6596	)), --	Battleforge Legguards
 						dr(	1.3	, i(	7356	)), --	Elder's Cloak
 					}),
-					n(4066, { 		-- Nal'taszar
+					n(4066, {	-- Nal'taszar
 						dr(	18	, i(	9817	)), --	Fortified Spaulders
 						dr(	6	, i(	6602	)), --	Dervish Bracers
 						dr(	5	, i(	6591	)), --	Battleforge Wristguards
@@ -820,11 +820,11 @@ _.Zones =
 						dr(	1	, i(	6601	)), --	Dervish Boots
 						dr(	1	, i(	6614	)), --	Sage's Cloak
 					}),
-					n(4015, { 	-- Pridewing Patriarch
+					n(4015, {	-- Pridewing Patriarch
 						un(7, i(5751)), 	-- Webwing Cloak
 						un(7, i(5752)), 	-- Wyvern Tailspike
 					}),
-					n(50343, { 		-- Quall
+					n(50343, {	-- Quall
 						dr(	5	, i(	9817	)), --	Fortified Spaulders
 						dr(	5	, i(	9792	)), --	Ivycloth Boots
 						dr(	5	, i(	6587	)), --	Scouting Trousers
@@ -855,7 +855,7 @@ _.Zones =
 						dr(	1.5	, i(	9799	)), --	Ivycloth Sash
 						dr(	1.3	, i(	9795	)), --	Ivycloth Gloves
 					}), 
-					n(5930, { 		-- Sister Riven
+					n(5930, {	-- Sister Riven
 						dr(	34	, i(	6607	)), --	Dervish Leggings
 						dr(	20	, i(	9820	)), --	Durable Boots
 						dr(	4	, i(	10404	)), --	Durable Belt
@@ -873,7 +873,7 @@ _.Zones =
 						dr(	1.2	, i(	9831	)), --	Scaled Cloak
 						dr(	1	, i(	6592	)), --	Battleforge Armor
 					}), 
-					n(5928, { 		-- Sorrow Wing
+					n(5928, {	-- Sorrow Wing
 						dr(	38	, i(	9809	)), --	Superior Tunic
 						dr(	4	, i(	4715	)), --	Emblazoned Cloak
 						dr(	3	, i(	6601	)), --	Dervish Boots
@@ -900,7 +900,7 @@ _.Zones =
 						dr(	1	, i(	10404	)), --	Durable Belt
 						dr(	1	, i(	9829	)), --	Scaled Leather Bracers
 					}), 
-					n(50786, { 		-- Sparkwing
+					n(50786, {	-- Sparkwing
 						dr(	18	, i(	4715	)), --	Emblazoned Cloak
 						dr(	7	, i(	9799	)), --	Ivycloth Sash
 						dr(	6	, i(	6597	)), --	Battleforge Shoulderguards
@@ -922,7 +922,7 @@ _.Zones =
 						dr(	1.2	, i(	9817	)), --	Fortified Spaulders
 						dr(	1.2	, i(	9791	)), --	Ivycloth Tunic
 					}), 
-					n(5932, { 		-- Taskmaster Whipfang
+					n(5932, {	-- Taskmaster Whipfang
 						dr(	28	, i(	6590	)), --	Battleforge Boots
 						dr(	5	, i(	6604	)), --	Dervish Cape
 						dr(	5	, i(	9795	)), --	Ivycloth Gloves
@@ -950,10 +950,10 @@ _.Zones =
 						dr(	1.1	, i(	9792	)), --	Ivycloth Boots
 						dr(	1.1	, i(	9794	)), --	Ivycloth Cloak
 					}), 
-					n(50874, { 		-- Tenok
+					n(50874, {	-- Tenok
 						dr(	89	, i(	6612	)), --	Sage's Boots
 					}), 
-					n(50895, { 		-- Volux
+					n(50895, {	-- Volux
 						dr(	4	, i(	9839	)), --	Banded Gauntlets
 						dr(	4	, i(	6613	)), --	Sage's Bracers
 						dr(	4	, i(	9829	)), --	Scaled Leather Bracers
@@ -974,10 +974,10 @@ _.Zones =
 					}), 									
 				}),
 				n (-2, {	-- Vendors
-					h(n(9549, {	-- Borand <Bowyer>
+					h(n(9549, {		-- Borand <Bowyer>
 						i(11304),	-- Fine Longbow
 					})),
-					nh(4083, {	-- Jeeda <Apprentice Witch Doctor>
+					nh(4083, {		-- Jeeda <Apprentice Witch Doctor>
 						i(6055),	-- Recipe: Fire Protection Potion
 					}),
 					h(n(42028, {	-- Krom'gar Quartermaster <Quartermaster>

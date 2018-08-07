@@ -6,29 +6,29 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(71, {	-- Tanaris
 			["groups"] = {			
-			n(-25, {	-- Pet Battle
-					p(484), 	-- Desert Spider
-					p(430), 	-- Gold Beetle
-					desc(p(1161), "Caverns of Time is located in Eastern Tanaris. This pet can be found within the main cavern and the pathway leading to it."), -- Infinite Whelpling
-					p(431), 	-- Rattlesnake
-					p(491), 	-- Sand Kitten
-					desc(p(560), "Most commonly found on beaches or near the ocean."), -- Sea Gull
-					desc(p(494), "This wild pet can be found in The Gaping Chasm and The Noxious Lair in Tanaris. It only spawns during sandstorms."), -- Silithid Hatchling
-					p(492), 	-- Stinkbug
-					p(432), 	-- Stripe-Tailed Scorpid
-				}),
+				n(-25, {	-- Pet Battle
+						p(484), 	-- Desert Spider
+						p(430), 	-- Gold Beetle
+						desc(p(1161), "Caverns of Time is located in Eastern Tanaris. This pet can be found within the main cavern and the pathway leading to it."), -- Infinite Whelpling
+						p(431), 	-- Rattlesnake
+						p(491), 	-- Sand Kitten
+						desc(p(560), "Most commonly found on beaches or near the ocean."), -- Sea Gull
+						desc(p(494), "This wild pet can be found in The Gaping Chasm and The Noxious Lair in Tanaris. It only spawns during sandstorms."), -- Silithid Hatchling
+						p(492), 	-- Stinkbug
+						p(432), 	-- Stripe-Tailed Scorpid
+					}),
 				n(-17, {	-- Quests
 					qg(38706, q(25072,  {  -- A Few Good Goblins
 						i(56856),
 						i(56857),
 						i(56858),
 					})),
---[[					
+	--[[					
 					qg(38706, q(24951)),	-- A Great Idea
 					qg(15192, q(29134)),	-- A Wrinkle in Time
 					qg(38704, qa(26889)),	-- All Cheered Out
 					qraid(qg(15192, q(29135))),	-- All-Seeing Eye
---]]					
+	--]]					
 					qg(40109, qa(25420,  {  -- Ancient Obstacles
 						i(56903),
 						i(56904),
@@ -39,19 +39,19 @@ _.Zones =
 						i(56907),
 						i(56908),
 					})),
---					qg(38849, qh(25018)),	-- Andoren Will Know
---[[				q(9269),	-- Atiesh, Greatstaff of the Guardian
+	--					qg(38849, qh(25018)),	-- Andoren Will Know
+	--[[				q(9269),	-- Atiesh, Greatstaff of the Guardian
 					q(9270),	-- Atiesh, Greatstaff of the Guardian
 					q(9271),	-- Atiesh, Greatstaff of the Guardian
 					q(9257),	-- Atiesh, Greatstaff of the Guardian
 					q(9251),	-- Atiesh, the Befouled Greatstaff (this block is all LEGACY) --]]
---[[					
+	--[[					
 					qg(39178, q(25115)),	-- Blisterpaw Butchery
 					qg(38927, q(25021)),	-- Blood to Thrive
 					qg(38703, qh(25103)),	-- Bootlegger Outpost
 					qg(38703, qh(24949)),	-- Booty Duty
 					qg(39178, q(25112)),	-- Butcherbot
---]]					
+	--]]					
 					qg(38704, qa(25166,  {  -- Captain Dreadbeard
 						i(56867),
 						i(56868),
@@ -64,24 +64,24 @@ _.Zones =
 						i(56873),
 						i(56874),
 					})),
---[[					
+	--[[					
 					qg(19935, q(11105)),	-- Champion No More
 					qg(19935, q(10474)),	-- Champion's Covenant (add'l QG 19936)
 					qg(19935, q(10470)),	-- Champion's Oath (add'l QG 19936)
 					qg(19936, q(10462)),	-- Champion's Pledge
 					qg(19935, q(10466)),	-- Champion's Vow (add'l QG 19936)
 					qg(38706, q(24933)),	-- Chicken of the Desert
---]]
+	--]]
 					qg(40589, q(13825, {	-- Clamlette Surprise
 						recipe(64054),	-- Clamlette Magnifique
 					})),
 					qg(40589, q(6610, {		-- Clamlette Surprise
 						recipe(64054),	-- Clamlette Magnifique
 					})),
---[[
+	--[[
 					qg(38706, q(24932)),	-- Cutting Losses
 					qg(38927, q(25026)),	-- Darkest Mojo
---]]					
+	--]]					
 					qg(38704, qa(25052,  {  -- Dead Man's Chest
 						i(56875),
 						i(56876),
@@ -94,15 +94,15 @@ _.Zones =
 						i(56881),
 						i(56882),
 					})),
---[[					
---					q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)
+	--[[					
+	--					q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)
 					qg(19935, q(11106)),	-- Defender No More
 					qg(19935, q(10475)),	-- Defender's Covenant (add'l QG 19936)
 					qg(19935, q(10471)),	-- Defender's Oath (add'l QG 19936)
 					qg(19936, q(10460)),	-- Defender's Pledge
 					qg(19935, q(10467)),	-- Defender's Vow (add'l QG 19936)
 					qg(39059, qa(25060)),	-- Define "Crazy"
---					q(43243),	-- Demon Commander (possibly LEGACY - Legion pre-patch)
+	--					q(43243),	-- Demon Commander (possibly LEGACY - Legion pre-patch)
 					qg(44833, q(27003)),	-- Easy Money
 					qg(38703, qh(25541)),	-- Filling Our Pockets
 					qg(38704, qa(26887)),	-- Filling Our Pockets
@@ -114,27 +114,27 @@ _.Zones =
 					}),
 					qg(38922, qh(25020)),	-- Fragments of Language
 					qg(40109, qa(25565)),	-- Fragments of Language
---					q(9250),	-- Frame of Atiesh (LEGACY)
---]]
+	--					q(9250),	-- Frame of Atiesh (LEGACY)
+	--]]
 					qg(40580, q(25522,  {  -- Gargantapid
 						i(56848),
 					})),
---[[					
+	--[[					
 					qg(11811, q(24931)),	-- Gazer Tag
 					qg(38849, qh(24957)),	-- Get The Centipaarty Started
 					qg(38703, qh(25534)),	-- Going Off-Task
 					qg(38704, qa(26886)),	-- Going Off-Task
 					qg(40580, q(25521)),	-- I'm With Scorpid
---]]
+	--]]
 					qdg(qg(7804, q(25556))),	-- Into Zul'Farrak
---					q(42237),	-- Invasion: Tanaris (LEGACY - Legion pre-patch)
---					q(43244),	-- Invasion: Tanaris (LEGACY - Legion pre-patch)
+	--					q(42237),	-- Invasion: Tanaris (LEGACY - Legion pre-patch)
+	--					q(43244),	-- Invasion: Tanaris (LEGACY - Legion pre-patch)
 					qg(38706, q(24953,  {  -- Just Trying to Kill Some Bugs
 						i(56852),
 						i(56853),
 						i(56854),
 					})),
---[[					
+	--[[					
 					qg(11811, qa(25061)),	-- Land's End
 					qg(38922, qh(25019)),	-- Laying Claim
 					qg(40109, qa(25559)),	-- Laying Claim
@@ -143,7 +143,7 @@ _.Zones =
 					qg(38535, qa(25121)),	-- Momentum
 					qg(38534, qh(24947)),	-- Momentum
 					qdg(qg(28126, q(12513))),	-- Nice Hat...
---					q(38890),	-- Not Dead Yet! (not in game?)
+	--					q(38890),	-- Not Dead Yet! (not in game?)
 					o(246438, {	-- Blingtron Circuit Design
 						qp202(q(40881)),	-- Oil Rags to Riches
 					}),
@@ -152,7 +152,7 @@ _.Zones =
 					qg(39059, qa(28881)),	-- Prospector Gunstan
 					qg(38534, qh(24907)),	-- Puddle Stomping
 					qg(38535, qa(25049)),	-- Puddle Stomping
---					q(43294),	-- Repel (LEGACY - Legion pre-patch)
+	--					q(43294),	-- Repel (LEGACY - Legion pre-patch)
 					qg(7784, q(648)),	-- Rescue OOX-17/TN!
 					qg(19935, q(11104)),	-- Restorer No More
 					qg(19935, q(10473)),	-- Restorer's Covenant
@@ -160,7 +160,7 @@ _.Zones =
 					qg(19936, q(10461)),	-- Restorer's Pledge
 					qg(19935, q(10465)),	-- Restorer's Vow (add'l QG 19936)
 					qg(38706, qh(24905)),	-- Returning a Favor
---]]					
+	--]]					
 					qg(38535, qa(25050,  {  -- Rocket Rescue
 						i(56859),
 						i(56860),
@@ -173,44 +173,44 @@ _.Zones =
 						i(56865),
 						i(56866),
 					})),
---[[					
+	--[[					
 					qg(19935, q(11103)),	-- Sage No More
 					qg(19935, q(10472)),	-- Sage's Covenant
 					qg(19935, q(10468)),	-- Sage's Oath (add'l QG 19936)
 					qg(19936, q(10463)),	-- Sage's Pledge
 					qg(19935, q(10464)),	-- Sage's Vow (add'l QG 19936)
---]]					
+	--]]					
 					qg(38849, qh(25001,  {  -- Sandscraper
 						i(56887),
 						i(56888),
 						i(56889),
 						i(157014), -- Dunemaul Skullcracker 
 					})),
---[[					
+	--[[					
 					o(202407, {	-- Sandscraper's Chest
 						qh(25014),	-- Sandscraper's Treasure
 					}),
 					qg(39178, q(25091)),	-- Sandsorrow Watch
---]]					
+	--]]					
 					qg(38927, q(25025,  {  -- Sang'thraze the Deflector
 						i(56844),
 						i(56845),
 						i(56846),
 						i(157024),	-- Sandfury Hatchet 
 					})),
---[[					
+	--[[					
 					qg(39178, q(25111)),	-- Scavengers Scavenged
---					q(38892),	-- Scouting Report (not in game?)
+	--					q(38892),	-- Scouting Report (not in game?)
 					qg(38534, qh(24906)),	-- Seaside Salvage
 					qg(38535, qa(25048)),	-- Seaside Salvage
---]]					
+	--]]					
 					qg(38927, q(25032,  {  -- Secrets in the Oasis
 						i(56840),
 						i(56841),
 						i(56842),
 						i(56843),
 					})),
---[[					
+	--[[					
 					qg(39059, qa(25063)),	-- Terrapination
 					qg(39034, q(12932)),	-- The Amphitheater of Anguish: Yggdras! (this QG may be Horde-only)
 					qdg(qg(20130, q(10296))),	-- The Black Morass
@@ -220,7 +220,7 @@ _.Zones =
 					qg(15192, q(8764)),	-- The Changing of Paths - Protector No More
 					qg(38922, qh(25068)),	-- The Crumbling Past
 					qg(15192, q(8761)),	-- The Grand Invoker
---]]					
+	--]]					
 					o(202474, {	-- Antediluvean Chest
 						qa(25421,  {  -- The Grand Tablet
 							i(56897),
@@ -234,7 +234,7 @@ _.Zones =
 						}),
 						q(25070),	-- What Lies Within
 					}),
---[[					
+	--[[					
 					qg(15192, q(8754)),	-- The Path of the Conqueror
 					qg(15192, q(8755)),	-- The Path of the Conqueror
 					qg(15192, q(8753)),	-- The Path of the Conqueror
@@ -254,14 +254,14 @@ _.Zones =
 					qg(44374, qh(26896)),	-- The Thunderdrome!
 					qg(38578, qa(26895)),	-- The Thunderdrome!
 					qraid(qg(19935, q(13432))),	-- The Vials of Eternity (add'l QG 19936)
---]]
+	--]]
 					qg(39034, qa(25513,  {  -- Thunderdrome: Grudge Match!
 						i(56893),
 					})),
 					qg(39034, qh(25591,  {  -- Thunderdrome: Grudge Match!
 						i(56896),
 					})),
---[[					
+	--[[					
 					qg(39034, q(25095)),	-- Thunderdrome: Sarinexx!
 					qg(39034, q(25067)),	-- Thunderdrome: The Ginormus!
 					qg(39034, q(25094)),	-- Thunderdrome: Zumonga!
@@ -273,16 +273,16 @@ _.Zones =
 					qg(38849, qh(24955)),	-- Un-Chartered
 					qg(16417, q(9268)),	-- War at Sea
 					qg(39059, qa(25062)),	-- What We Came For
---]]					
+	--]]					
 					qg(39059, qa(25065,  {  -- You Too, Brute?
 						i(56883),
 						i(56884),
 						i(56885),
 						i(157015), -- Meatface's Tenderizer 
- 					})),
+					})),
 				}),
 				n(-16, {	-- Rares	
-					n(47386, { 		-- Ainamiss the Hive Queen
+					n(47386, {	-- Ainamiss the Hive Queen
 						dr(	3	, i(	9937	)), --	Abjurer's Bands
 						dr(	3	, i(	9938	)), --	Abjurer's Cloak
 						dr(	3	, i(	7528	)), --	Cabalist Leggings
@@ -320,7 +320,7 @@ _.Zones =
 						dr(	1.1	, i(	10067	)), --	Righteous Waistguard
 						dr(	1	, i(	9939	)), --	Abjurer's Gloves
 					}), 
-					n(44759, { 		-- Andre Firebeard
+					n(44759, {	-- Andre Firebeard
 						dr(	5	, i(	7529	)), --	Cabalist Helm
 						dr(	5	, i(	7540	)), --	Champion's Helmet
 						dr(	5	, i(	9960	)), --	Warmonger's Gauntlets
@@ -356,7 +356,7 @@ _.Zones =
 						dr(	1	, i(	9938	)), --	Abjurer's Cloak
 						dr(	1	, i(	9965	)), --	Warmonger's Pauldrons
 					}), 
-					n(44761, { 		-- Aquementas the Unchained
+					n(44761, {	-- Aquementas the Unchained
 						dr(	3	, i(	9954	)), --	Chieftain's Leggings
 						dr(	3	, i(	10059	)), --	Duskwoven Bracers
 						dr(	3	, i(	10080	)), --	Lord's Gauntlets
@@ -407,7 +407,7 @@ _.Zones =
 						dr(	1	, i(	10132	)), --	Revenant Helmet
 						dr(	1	, i(	10072	)), --	Righteous Gloves
 					}), 
-					n(44750, { 		-- Caliph Scorpidsting
+					n(44750, {	-- Caliph Scorpidsting
 						dr(	4	, i(	9905	)), --	Royal Blouse
 						dr(	3	, i(	9937	)), --	Abjurer's Bands
 						dr(	3	, i(	7532	)), --	Cabalist Spaulders
@@ -446,7 +446,7 @@ _.Zones =
 						dr(	1	, i(	10069	)), --	Righteous Bracers
 						dr(	1	, i(	10071	)), --	Righteous Cloak
 					}), 
-					n(8207, { 		-- Emberwing
+					n(8207, {	-- Emberwing
 						dr(	3	, i(	7534	)), --	Cabalist Bracers
 						dr(	3	, i(	7525	)), --	Gossamer Bracers
 						dr(	3	, i(	7477	)), --	Ranger Tunic
@@ -499,7 +499,7 @@ _.Zones =
 						dr(	1	, i(	9911	)), --	Royal Trousers
 						dr(	1	, i(	9960	)), --	Warmonger's Gauntlets
 					}), 
-					n(44714, { 		-- Fronkle the Disturbed
+					n(44714, {	-- Fronkle the Disturbed
 						dr(	3	, i(	9949	)), --	Chieftain's Bracers
 						dr(	3	, i(	10086	)), --	Gothic Plate Armor
 						dr(	3	, i(	10076	)), --	Lord's Armguards
@@ -533,7 +533,7 @@ _.Zones =
 						dr(	1.2	, i(	9905	)), --	Royal Blouse
 						dr(	1	, i(	9924	)), --	Tracker's Tunic
 					}), 
-					n(8205, { 		-- Haarka the Ravenous
+					n(8205, {	-- Haarka the Ravenous
 						dr(	5	, i(	9951	)), --	Chieftain's Cloak
 						dr(	4	, i(	7540	)), --	Champion's Helmet
 						dr(	4	, i(	7543	)), --	Champion's Pauldrons
@@ -562,7 +562,7 @@ _.Zones =
 						dr(	1.1	, i(	10079	)), --	Lord's Cape
 						dr(	1.1	, i(	9922	)), --	Tracker's Leggings
 					}), 
-					n(47387, { 		-- Harakiss the Infestor
+					n(47387, {	-- Harakiss the Infestor
 						dr(	5	, i(	7540	)), --	Champion's Helmet
 						dr(	4	, i(	7529	)), --	Cabalist Helm
 						dr(	4	, i(	7532	)), --	Cabalist Spaulders
@@ -601,7 +601,7 @@ _.Zones =
 						dr(	1	, i(	9913	)), --	Royal Gown
 						dr(	1	, i(	9924	)), --	Tracker's Tunic
 					}),
-					n(39186, { 		-- Hellgazer
+					n(39186, {	-- Hellgazer
 						dr(	5	, i(	7530	)), --	Cabalist Gloves
 						dr(	5	, i(	7523	)), --	Gossamer Shoulderpads
 						dr(	4	, i(	7531	)), --	Cabalist Boots
@@ -641,7 +641,7 @@ _.Zones =
 						dr(	1	, i(	8120	)), --	Heraldic Cloak
 						dr(	1	, i(	9912	)), --	Royal Amice
 					}), 
-					n(8200, { 		-- Jin'Zallah the Sandbringer
+					n(8200, {	-- Jin'Zallah the Sandbringer
 						dr(	7	, i(	10092	)), --	Gothic Plate Spaulders
 						dr(	4	, i(	9923	)), --	Tracker's Shoulderpads
 						dr(	3	, i(	7525	)), --	Gossamer Bracers
@@ -692,7 +692,7 @@ _.Zones =
 						dr(	1	, i(	9925	)), --	Tracker's Wristguards
 						dr(	1	, i(	9956	)), --	Warmonger's Bracers
 					}), 
-					n(8203, { 		-- Kregg Keelhaul
+					n(8203, {	-- Kregg Keelhaul
 						dr(	3	, i(	7535	)), --	Cabalist Belt
 						dr(	3	, i(	7531	)), --	Cabalist Boots
 						dr(	3	, i(	7530	)), --	Cabalist Gloves
@@ -737,7 +737,7 @@ _.Zones =
 						dr(	1	, i(	10089	)), --	Gothic Sabatons
 						dr(	1	, i(	10202	)), --	Overlord's Vambraces
 					}), 
-					n(44767, { 		-- Occulus the Corrupted
+					n(44767, {	-- Occulus the Corrupted
 						dr(	3	, i(	9955	)), --	Chieftain's Shoulders
 						dr(	3	, i(	10058	)), --	Duskwoven Sandals
 						dr(	3	, i(	10080	)), --	Lord's Gauntlets
@@ -790,7 +790,7 @@ _.Zones =
 						dr(	1	, i(	10190	)), --	Swashbuckler's Belt
 						dr(	1	, i(	9965	)), --	Warmonger's Pauldrons
 					}), 
-					n(8201, { 		-- Omgorn the Lost
+					n(8201, {	-- Omgorn the Lost
 						dr(	4	, i(	9947	)), --	Chieftain's Belt
 						dr(	3	, i(	7528	)), --	Cabalist Leggings
 						dr(	3	, i(	7538	)), --	Champion's Armor
@@ -831,7 +831,7 @@ _.Zones =
 						dr(	1	, i(	10127	)), --	Revenant Bracers
 						un(7, i(17055)),	-- Changuk Smasher							
 					}), 
-					n(39183, { 		-- Scorpitar
+					n(39183, {	-- Scorpitar
 						dr(	6	, i(	7540	)), --	Champion's Helmet
 						dr(	5	, i(	9951	)), --	Chieftain's Cloak
 						dr(	4	, i(	7532	)), --	Cabalist Spaulders
@@ -863,7 +863,7 @@ _.Zones =
 						dr(	1	, i(	9949	)), --	Chieftain's Bracers
 						dr(	1	, i(	9905	)), --	Royal Blouse
 					}), 	
-					n(39185, { 		-- Slaverjaw
+					n(39185, {	-- Slaverjaw
 						dr(	3	, i(	9948	)), --	Chieftain's Boots
 						dr(	3	, i(	9952	)), --	Chieftain's Gloves
 						dr(	3	, i(	10060	)), --	Duskwoven Cape
@@ -911,7 +911,7 @@ _.Zones =
 						dr(	1	, i(	10075	)), --	Righteous Spaulders
 						dr(	1	, i(	9957	)), --	Warmonger's Chestpiece
 					}), 
-					n(8204, { 		-- Soriid the Devourer
+					n(8204, {	-- Soriid the Devourer
 						dr(	5	, i(	7528	)), --	Cabalist Leggings
 						dr(	4	, i(	7543	)), --	Champion's Pauldrons
 						dr(	4	, i(	9924	)), --	Tracker's Tunic
@@ -943,7 +943,7 @@ _.Zones =
 						dr(	1	, i(	10075	)), --	Righteous Spaulders
 						dr(	1	, i(	9905	)), --	Royal Blouse
 					}), 
-					n(44722, { 		-- Twisted Reflection of Narain
+					n(44722, {	-- Twisted Reflection of Narain
 						dr(	3	, i(	9928	)), --	Brigade Breastplate
 						dr(	3	, i(	9933	)), --	Brigade Leggings
 						dr(	3	, i(	7534	)), --	Cabalist Bracers
@@ -999,7 +999,7 @@ _.Zones =
 						dr(	1	, i(	9907	)), --	Royal Boots
 						dr(	1	, i(	9916	)), --	Tracker's Belt
 					}), 
-					n(8199, { 		-- Warleader Krazzilak
+					n(8199, {	-- Warleader Krazzilak
 						dr(	36	, i(	9951	)), --	Chieftain's Cloak
 						dr(	4	, i(	7519	)), --	Gossamer Pants
 						dr(	3	, i(	9956	)), --	Warmonger's Bracers
@@ -1023,7 +1023,7 @@ _.Zones =
 						dr(	1	, i(	9911	)), --	Royal Trousers
 					}), 
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(5594, {	-- Alchemist Pestlezugg <Alchemy Supplies>
 						i(6057),	-- Recipe: Nature Protection Potion
 						i(9303),	-- Recipe: Philosopher's Stone
@@ -1473,9 +1473,7 @@ _.Zones =
 						i(38328),	-- Pattern: Haliscan Pantaloons
 					}),
 					n(5411, {	-- Krinkle Goodsteel <Blacksmithing Supplies>
-						i(6047, {	-- Plans: Golden Scale Coif
-							i(3837),	-- Golden Scale Coif
-						}),
+						i(6047),	-- Plans: Golden Scale Coif
 					}),
 					n(7733, {	-- Innkeeper Fizzgrimble <Innkeeper>
 						i(18046),	-- Recipe: Tender Wolf Steak

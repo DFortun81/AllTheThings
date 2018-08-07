@@ -6,7 +6,7 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(76, {	-- Azshara
 			["groups"] = {
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(378), 	-- Rabbit
 					p(472), 	-- Rabid Nut Varmint 5000
 					p(417), 	-- Rat
@@ -20,7 +20,7 @@ _.Zones =
 					desc(p(469), "Can be found in areas where the Twilight Hammer have set up camp."), -- Twilight Beetle
 					p(470), 	-- Twilight Spider
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					qh(14323, {	-- Absorbent
 						["groups"] = {
 						},
@@ -814,7 +814,7 @@ _.Zones =
 						["sourceQuests"] = { 14300, 24478, 24479 },	-- The Trial of Fire, The Trial of Frost, & The Trial of Shadow
 					}),
 				}),
-				n(-16, { 	-- Rares	
+				n(-16, {	-- Rares	
 					n(6648, { 		-- Antilos
 						dr(	9	, i(	6553	)), --	Bard's Trousers
 						dr(	9	, i(	6540	)), --	Willow Pants
@@ -1011,7 +1011,7 @@ _.Zones =
 					}), 
 	--				n(107477, { 	-- N.U.T.Z. -- mob to tame			}),
 				}),
-				n(-2, {		-- Vendors
+				n(-2,  {	-- Vendors
 					nh(49885, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish

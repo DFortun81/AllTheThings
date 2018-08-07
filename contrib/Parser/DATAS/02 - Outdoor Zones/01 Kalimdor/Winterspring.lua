@@ -6,7 +6,7 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(83, {	-- Winterspring
 			["groups"] = {
-				faction(576, {	-- Timbermaw Hold
+				faction(576, {		-- Timbermaw Hold
 					["groups"] = {
 						qr(q(28523, {	-- More Beads for Salfa
 							["qg"] = 11556,	-- Salfa
@@ -994,31 +994,29 @@ _.Zones =
 						dr(	1	, i(	10203	)), --	Overlord's Chestplate
 					}),
 				}),
-				n(  0, {	-- Zone Drop
-					n(7524, {	-- Anguished Highborne
-						dr(2.0, i(16223)),	-- Formula: Enchant Weapon - Icy Chill
+				n(0,   {	-- Zone Drop
+					i(16223, {	-- Formula: Enchant Weapon - Icy Chill
+						["crs"] = {
+							7524,	-- Anguished Highborne
+							7523,	-- Suffering Highborne
+						},
 					}),
-					dr(0.01, i(34535)),	-- Azure Whelpling
-					n(7523, {	-- Suffering Highborne
-						dr(0.4, i(16223)),	-- Formula: Enchant Weapon - Icy Chill
-					}),
+					dr(0.01, i(34535)),	-- Azure Whelpling (PET!)
 				}),
-				n( -2, {	-- Vendors
-					n(50129, {	-- Daleohm <Blacksmithing Supplies>
-						i(12836, {	-- Plans: Frostguard
-							i(12797),	-- Frostguard
-						}),
+				n(-2,  {	-- Vendors
+					n(50129, {		-- Daleohm <Blacksmithing Supplies>
+						i(12836),	-- Plans: Frostguard
 					}),
-					n(11188, {	-- Evie Whirlbrew <Alchemy Supplies>
+					n(11188, {		-- Evie Whirlbrew <Alchemy Supplies>
 						i(20013),	-- Recipe: Living Action Potion
 					}),
-					n(11187, {	-- Himmik <Food & Drink>
+					n(11187, {		-- Himmik <Food & Drink>
 						i(16110),	-- Recipe: Monster Omelet
 					}),
-					n(52830, {	-- Michelle De Rum <Pet Collector>
-						i(69239),	-- Winterspring Cub
+					n(52830, {		-- Michelle De Rum <Pet Collector>
+						i(69239),	-- Winterspring Cub (PET!)
 					}),
-					n(11189, {	-- Qia <Trade Supplies>
+					n(11189, {		-- Qia <Trade Supplies>
 						i(21957),	-- Design: Necklace of the Diamond Tower
 						i(16221),	-- Formula: Enchant Chest - Major Health
 						i(15740), 	-- Pattern: Frostsaber Boots
@@ -1027,15 +1025,13 @@ _.Zones =
 					}),
 					a(n(10618, {	-- Rivern Frostwind <Wintersaber Trainer>
 						["groups"] = {
-							i(13086), 	-- Reins of the Winterspring Frostsaber Mount
+							i(13086), 	-- Reins of the Winterspring Frostsaber (MOUNT!)
 						},
 						["description"] = "Vendor only sells this mount to those exalted with the Wintersaber Trainers.|r",
 					})),
-					n(11184, {	-- Wixxrak <Weaponsmith & Gunsmith>
+					n(11184, {		-- Wixxrak <Weaponsmith & Gunsmith>
 						["groups"] = {
-						i(142357, {	-- Plans: Dawn's Edge
-							i(12774),	-- Dawn's Edge
-						}),
+							i(142357),	-- Plans: Dawn's Edge
 						},
 						["description"] = "Vendor only sells the plans to those who have completed the quest 'Blackrock Depths: Jewel of the Depths'|r",
 					}),

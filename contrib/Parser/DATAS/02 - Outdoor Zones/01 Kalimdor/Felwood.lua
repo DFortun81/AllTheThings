@@ -913,9 +913,6 @@ _.Zones =
 						dr(01.0, i(9939)),	-- Abjurer's Gloves
 						dr(01.0, i(10066)),	-- Duskwoven Sash
 					}), 
-					n(7106, {		-- Jadefire Rogue
-						dr(0.01, i(13491)),	-- Recipe: Elixir of the Mongoose
-					}),
 					n(14344, { 		-- Mongress
 						dr(31.0, i(9948)),	-- Chieftain's Boots
 						dr(20.0, i(9922)),	-- Tracker's Leggings
@@ -1093,7 +1090,7 @@ _.Zones =
 						dr(01.4, i(9963)),	-- Warmonger's Circlet
 					}), 
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(48577, {	-- Ciana <Weaponsmith>
 						i(11308),	-- Sylvan Shortbow
 					}),
@@ -1105,6 +1102,13 @@ _.Zones =
 						i(16110),	-- Recipe: Monster Omelet
 					}),
 					
+				}),
+				n(0,   {	-- Zone Drop
+					i(13491, {	-- Recipe: Elixir of the Mongoose
+						["crs"] = {
+							7106,	-- Jadefire Rogue
+						},
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

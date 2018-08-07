@@ -823,7 +823,7 @@ _.Zones =
 					})),
 				}),
 				n(-16, {	-- Rares	
-					n(5933, { 		-- Achellios the Banished
+					n(5933, {	-- Achellios the Banished
 						dr(	4	, i(	7482	)), --	Ranger Shoulders
 						dr(	3	, i(	9290	)), --	Field Plate Helmet
 						dr(	3	, i(	9893	)), --	Huntsman's Leggings
@@ -872,7 +872,7 @@ _.Zones =
 						dr(	1	, i(	9884	)), --	Sorcerer Robe
 						dr(	1	, i(	9917	)), --	Tracker's Boots
 					}), 
-					n(50952, { 		-- Barnacle Jim
+					n(50952, {	-- Barnacle Jim
 						dr(	5	, i(	9900	)), --	Jazeraint Gauntlets
 						dr(	5	, i(	7483	)), --	Ranger Cloak
 						dr(	4	, i(	9904	)), --	Jazeraint Pauldrons
@@ -892,7 +892,7 @@ _.Zones =
 						dr(	1	, i(	9930	)), --	Brigade Gauntlets
 						dr(	1	, i(	9288	)), --	Field Plate Girdle
 					}), 
-					n(50892, { 		-- Cyn
+					n(50892, {	-- Cyn
 						dr(	7	, i(	9289	)), --	Field Plate Boots
 						dr(	7	, i(	7469	)), --	Regal Leggings
 						dr(	4	, i(	9876	)), --	Sorcerer Slippers
@@ -907,7 +907,7 @@ _.Zones =
 						dr(	1.1	, i(	7481	)), --	Ranger Boots
 						dr(	1.1	, i(	9878	)), --	Sorcerer Hat
 					}),
-					n(14427, { 		-- Gibblesnik
+					n(14427, {	-- Gibblesnik
 						dr(	12	, i(	7491	)), --	Captain's Shoulderguards
 						dr(	3	, i(	9932	)), --	Brigade Circlet
 						dr(	3	, i(	9934	)), --	Brigade Pauldrons
@@ -949,7 +949,7 @@ _.Zones =
 						dr(	1	, i(	9921	)), --	Tracker's Headband
 						dr(	1	, i(	9922	)), --	Tracker's Leggings
 					}), 
-					n(14426, { 		-- Harb Foulmountain
+					n(14426, {	-- Harb Foulmountain
 						dr(	5	, i(	9931	)), --	Brigade Girdle
 						dr(	3	, i(	9926	)), --	Brigade Boots
 						dr(	3	, i(	9930	)), --	Brigade Gauntlets
@@ -991,7 +991,7 @@ _.Zones =
 						dr(	1	, i(	9883	)), --	Sorcerer Pants
 						dr(	1	, i(	9916	)), --	Tracker's Belt
 					}), 
-					n(5935, { 		-- Ironeye the Invincible
+					n(5935, {	-- Ironeye the Invincible
 						dr(	11	, i(	7535	)), --	Cabalist Belt
 						dr(	5	, i(	9928	)), --	Brigade Breastplate
 						dr(	3	, i(	9912	)), --	Royal Amice
@@ -1041,7 +1041,7 @@ _.Zones =
 							un(7, i(8223)), 	-- Blade of the Basilisk					
 						}),							
 					}), 
-					n(50741, { 		-- Kaxx
+					n(50741, {	-- Kaxx
 						dr(	7	, i(	9931	)), --	Brigade Girdle
 						dr(	5	, i(	7470	)), --	Regal Wizard Hat
 						dr(	4	, i(	9885	)), --	Huntsman's Boots
@@ -1056,7 +1056,7 @@ _.Zones =
 						dr(	1.5	, i(	7484	)), --	Ranger Wristguards
 						dr(	1.2	, i(	9968	)), --	Embossed Plate Girdle
 					}), 
-					n(4132, { 		-- Krkk'kx
+					n(4132, {	-- Krkk'kx
 						dr(	8	, i(	7487	)), --	Captain's Leggings
 						dr(	2	, i(	7486	)), --	Captain's Breastplate
 						dr(	2	, i(	9973	)), --	Embossed Plate Boots
@@ -1108,7 +1108,7 @@ _.Zones =
 							un(7, i(8224)), 	-- Silithid Ripper					
 						}),							
 					}), 
-					n(50748, { 		-- Nyaj
+					n(50748, {	-- Nyaj
 						dr(	12	, i(	7478	)), --	Ranger Leggings
 						dr(	11	, i(	7469	)), --	Regal Leggings
 						dr(	3	, i(	9904	)), --	Jazeraint Pauldrons
@@ -1127,7 +1127,7 @@ _.Zones =
 						dr(	1	, i(	9889	)), --	Huntsman's Cap
 						dr(	1	, i(	7430	)), --	Twilight Robe
 					}),
-					n(50329, { 		-- Rrakk
+					n(50329, {	-- Rrakk
 						dr(	5	, i(	7544	)), --	Champion's Cape
 						dr(	5	, i(	7478	)), --	Ranger Leggings
 						dr(	4	, i(	7488	)), --	Captain's Circlet
@@ -1145,7 +1145,7 @@ _.Zones =
 						dr(	1.2	, i(	9894	)), --	Huntsman's Shoulders
 						dr(	1.2	, i(	9959	)), --	Warmonger's Cloak
 					}), 
-					n(50785, { 		-- Skyshadow
+					n(50785, {	-- Skyshadow
 						dr(	5	, i(	9931	)), --	Brigade Girdle
 						dr(	5	, i(	7468	)), --	Regal Robe
 						dr(	4	, i(	7487	)), --	Captain's Leggings
@@ -1167,7 +1167,7 @@ _.Zones =
 						dr(	1.1	, i(	9883	)), --	Sorcerer Pants
 						dr(	1.1	, i(	9884	)), --	Sorcerer Robe
 					}),
-					n(50727, { 		-- Strix the Barbed
+					n(50727, {	-- Strix the Barbed
 						dr(	27	, i(	9919	)), --	Tracker's Cloak
 						dr(	4	, i(	7524	)), --	Gossamer Cape
 						dr(	3	, i(	9926	)), --	Brigade Boots
@@ -1184,7 +1184,7 @@ _.Zones =
 						dr(	1	, i(	9907	)), --	Royal Boots
 						dr(	1	, i(	9916	)), --	Tracker's Belt
 					}),
-					n(51008, { 		-- The Barbed Horror
+					n(51008, {	-- The Barbed Horror
 						dr(	7	, i(	7524	)), --	Gossamer Cape
 						dr(	4	, i(	7530	)), --	Cabalist Gloves
 						dr(	3	, i(	9930	)), --	Brigade Gauntlets
@@ -1206,7 +1206,7 @@ _.Zones =
 						dr(	1.1	, i(	7521	)), --	Gossamer Gloves
 						dr(	1.1	, i(	9906	)), --	Royal Sash
 					}),
-					n(51001, { 		-- Venomclaw
+					n(51001, {	-- Venomclaw
 						dr(	7	, i(	9925	)), --	Tracker's Wristguards
 						dr(	4	, i(	9903	)), --	Jazeraint Leggings
 						dr(	3	, i(	9926	)), --	Brigade Boots
@@ -1221,7 +1221,7 @@ _.Zones =
 						dr(	1	, i(	7477	)), --	Ranger Tunic
 						dr(	1	, i(	9884	)), --	Sorcerer Robe
 					}), 
-					n(5937, { 		-- Vile Sting
+					n(5937, {	-- Vile Sting
 						dr(	4	, i(	9947	)), --	Chieftain's Belt
 						dr(	4	, i(	9907	)), --	Royal Boots
 						dr(	3	, i(	7534	)), --	Cabalist Bracers
@@ -1249,9 +1249,9 @@ _.Zones =
 						dr(	1.1	, i(	9956	)), --	Warmonger's Bracers
 					}), 					
 				}),
-				n( -2, {	-- Vendors
-					n(41135, {		-- "Plucky" Johnson
-						i(11023),		-- Ancona Chicken
+				n(-2,  {	-- Vendors
+					n(41135, {	-- "Plucky" Johnson
+						i(11023),	-- Ancona Chicken (PET!)
 					}),
 					n(41452, {	-- Starn <Gunsmith & Bowyer>
 						i(11305),	-- Dense Shortbow

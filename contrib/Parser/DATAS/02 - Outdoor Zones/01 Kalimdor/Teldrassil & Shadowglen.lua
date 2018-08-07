@@ -214,7 +214,7 @@ _.Zones =
 	--				n(14432, { 		-- Threggil - no loot of note			}),
 	--				n(14428, { 		-- Uruson - no loot of note			}), 
 				}),
-				na(-2, {		-- Vendors
+				na(-2, {	-- Vendors
 					n(44030, {	-- Draelan <Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
@@ -257,7 +257,7 @@ _.Zones =
 				}),
 				m(460, {	-- Shadowglen
 					["groups"] = {
-						n(-25, { -- Pet Battle
+						n(-25, {	-- Pet Battle
 							p(507), -- Crested Owl
 							p(447), -- Fawn
 						}),

@@ -17,10 +17,6 @@ _.Zones =
 					qh(31904),	-- Cassandra Kaboom
 					qg(66422, qh(31918)),	-- A Tamer's Homecoming
 				}),
-				n(0, {		-- Zone Drops
-					desc(i(6663), "Can drop from any mob in the Barrens."),	-- Recipe: Elixir of Giant Growth
-					desc(i(6661), "Can drop from any mob in the Barrens."),	-- Recipe: Savory Deviate Delight
-				}),
 				n(-17, {	-- Quests
 					qh(24542, {	-- A Curious Bloom
 						["groups"] = {
@@ -751,7 +747,7 @@ _.Zones =
 					}),
 				}),
 				n(-16, {	-- Rares
-					n(5834, { 		-- Azzere the Skyblade
+					n(5834, {	-- Azzere the Skyblade
 						dr(	6	, i(	6617	)), --	Sage's Mantle
 						dr(	5	, i(	6607	)), --	Dervish Leggings
 						dr(	5	, i(	10404	)), --	Durable Belt
@@ -783,7 +779,7 @@ _.Zones =
 						dr(	1.1	, i(	9839	)), --	Banded Gauntlets
 						dr(	1.1	, i(	7370	)), --	Elder's Sash
 					}), 
-					nh(5851, { 		-- Captain Gerogg Hammertoe
+					nh(5851, {	-- Captain Gerogg Hammertoe
 						dr(	6	, i(	7353	)), --	Elder's Padded Armor
 						dr(	4	, i(	9855	)), --	Archer's Belt
 						dr(	4	, i(	9845	)), --	Conjurer's Shoes
@@ -820,7 +816,7 @@ _.Zones =
 						dr(	1	, i(	9859	)), --	Archer's Cap
 						dr(	1	, i(	9826	)), --	Durable Robe
 					}), 
-					nh(5849, { 		-- Digger Flameforge
+					nh(5849, {	-- Digger Flameforge
 						dr(	5	, i(	7414	)), --	Infiltrator Pants
 						dr(	4	, i(	9853	)), --	Conjurer's Cinch
 						dr(	4	, i(	7357	)), --	Elder's Hat
@@ -858,7 +854,7 @@ _.Zones =
 						dr(	1	, i(	7369	)), --	Elder's Robe
 						dr(	1	, i(	9870	)), --	Renegade Circlet
 					}), 
-					n(5863, { 		-- Geopriest Gukk'rok
+					n(5863, {	-- Geopriest Gukk'rok
 						dr(	5	, i(	10408	)), --	Banded Helm
 						dr(	3	, i(	10409	)), --	Banded Boots
 						dr(	3	, i(	9839	)), --	Banded Gauntlets
@@ -900,7 +896,7 @@ _.Zones =
 						dr(	1	, i(	7353	)), --	Elder's Padded Armor
 						un(7, i(1539)),	-- Gnarled Hermit's Staff								
 					}), 
-					n(5859, { 		-- Hagg Taurenbane
+					n(5859, {	-- Hagg Taurenbane
 						dr(	4	, i(	9859	)), --	Archer's Cap
 						dr(	4	, i(	9850	)), --	Conjurer's Mantle
 						dr(	4	, i(	9864	)), --	Renegade Boots
@@ -941,7 +937,7 @@ _.Zones =
 						dr(	1	, i(	7435	)), --	Twilight Mantle
 						dr(	1	, i(	7431	)), --	Twilight Pants
 					}), 
-					nh(5847, { 		-- Heggin Stonewhisker
+					nh(5847, {	-- Heggin Stonewhisker
 						dr(	5	, i(	9846	)), --	Conjurer's Bracers
 						dr(	5	, i(	9845	)), --	Conjurer's Shoes
 						dr(	4	, i(	9855	)), --	Archer's Belt
@@ -982,7 +978,7 @@ _.Zones =
 						dr(	1	, i(	7438	)), --	Twilight Belt
 						un(7, i(2035)),	-- Sword of the Night Sky					
 					}), 
-					nh(5848, { 		-- Malgin Barleybrew
+					nh(5848, {	-- Malgin Barleybrew
 						dr(	4	, i(	9860	)), --	Archer's Cloak
 						dr(	4	, i(	9826	)), --	Durable Robe
 						dr(	4	, i(	7414	)), --	Infiltrator Pants
@@ -1031,7 +1027,7 @@ _.Zones =
 						dr(	1	, i(	7447	)), --	Sentinel Bracers
 						dr(	1	, i(	7438	)), --	Twilight Belt
 					}), 
-					n(3253, { 		-- Silithid Harvester
+					n(3253, {	-- Silithid Harvester
 						dr(	4	, i(	9860	)), --	Archer's Cloak
 						dr(	4	, i(	9853	)), --	Conjurer's Cinch
 						dr(	4	, i(	7423	)), --	Phalanx Leggings
@@ -1071,7 +1067,7 @@ _.Zones =
 						dr(	1	, i(	7461	)), --	Knight's Bracers
 						dr(	1	, i(	7424	)), --	Phalanx Spaulders
 					}), 
-					n(5829, { 		-- Snort the Heckler
+					n(5829, {	-- Snort the Heckler
 						dr(	4	, i(	9820	)), --	Durable Boots
 						dr(	4	, i(	7411	)), --	Infiltrator Cloak
 						dr(	4	, i(	9828	)), --	Scaled Leather Boots
@@ -1106,7 +1102,7 @@ _.Zones =
 						dr(	1	, i(	6616	)), --	Sage's Pants
 						dr(	1	, i(	6610	)), --	Sage's Robe
 					}), 
-					n(5864, { 		-- Swinegart Spearhide
+					n(5864, {	-- Swinegart Spearhide
 						dr(	4	, i(	9867	)), --	Renegade Cloak
 						dr(	3	, i(	7354	)), --	Elder's Boots
 						dr(	3	, i(	7409	)), --	Infiltrator Boots
@@ -1146,7 +1142,7 @@ _.Zones =
 						dr(	1	, i(	9855	)), --	Archer's Belt
 						dr(	1	, i(	7368	)), --	Elder's Pants
 					}),
-					n(5832, { 		-- Thunderstomp
+					n(5832, {	-- Thunderstomp
 						dr(	5	, i(	9861	)), --	Archer's Gloves
 						dr(	5	, i(	7418	)), --	Phalanx Breastplate
 						dr(	4	, i(	9855	)), --	Archer's Belt
@@ -1192,6 +1188,10 @@ _.Zones =
 						i(4799),	-- Antiquated Cloak
 						i(4800),	-- Mighty Chain Pants
 					})),
+				}),
+				n(0, {		-- Zone Drops
+					desc(i(6663), "Can drop from any mob in the Barrens."),	-- Recipe: Elixir of Giant Growth
+					desc(i(6661), "Can drop from any mob in the Barrens."),	-- Recipe: Savory Deviate Delight
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
