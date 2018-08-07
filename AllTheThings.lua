@@ -277,6 +277,12 @@ app.GetTempDataSubMember = GetTempDataSubMember;
 		
 		-- Cooking Skills
 		[185] = 185,	-- Cooking [7.3.5]
+		[975] = 185,	-- Way of the Grill
+		[976] = 185,	-- Way of the Wok
+		[977] = 185,	-- Way of the Pot
+		[978] = 185,	-- Way of the Steamer
+		[979] = 185,	-- Way of the Oven
+		[980] = 185,	-- Way of the Brew
 		[2548] = 185,	-- Classic Cooking [8.0.1]
 		[2547] = 185,	-- Outland Cooking [8.0.1]
 		[2546] = 185,	-- Northrend Cooking [8.0.1]
