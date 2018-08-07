@@ -85,7 +85,7 @@ _.Achievements =
 						crit(10),				-- Ro-Shambo
 						crit(11),				-- Mingus Diggs
 						crit(12),				-- The Blind Hero
-						a(ach(8339)),			-- Collect Your Deck (Season 2)
+						un(2, a(ach(8339))),	-- Collect Your Deck (Season 2)
 					})),
 					h(ach(9177, {			-- Deck Your Collection (Season 2) (Horde) **Comments on wowhead indicate this is still available in Legion you just have to get lucky and get the random bosses you need for it.**
 						i(98543),				-- Wraps of the Blood-Soaked Brawler
@@ -101,7 +101,7 @@ _.Achievements =
 						crit(10),				-- Ro-Shambo
 						crit(11),				-- Mingus Diggs
 						crit(12),				-- The Blind Hero
-						h(ach(8342)),			-- Collect Your Deck (Season 2)
+						un(2, h(ach(8342))),	-- Collect Your Deck (Season 2)
 					})),
 					un(2, ach(16)),		-- Did Somebody Order a Knuckle Sandwich?
 					un(2, ach(2357, {		-- Dreadsteed of Xoroth
