@@ -29,6 +29,7 @@ AllTheThings.Locales.enUS = {
 	["TOGGLE_DEBUG_MODE"] = "Toggle Debug Mode";
 	["TOGGLE_MAINLIST"] = "Toggle Main List";
 	["TOGGLE_MINILIST"] = "Toggle Mini List";
+	["TOGGLE_BOEITEMS"] = "Toggle BoE/BoA Items";
 	["TOGGLE_RAID_ASSISTANT"] = "Toggle Raid Assistant";
 
 	-- Frame Text

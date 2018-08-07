@@ -649,13 +649,7 @@ local function createAccountFrame(parent)
 	
 	-- BOE
 	local boe = createCheckBox("Hide BoE Items", child, function(self)
-			app.SetDataMember("RequireBindingFilter", self:GetChecked());
-			if self:GetChecked() then
-				app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
-			else
-				app.RequireBindingFilter = app.NoFilter;
-			end
-			app:RefreshData();
+			app.SetHideBOEItems(self:GetChecked());
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("RequireBindingFilter"));

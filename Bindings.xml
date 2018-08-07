@@ -17,6 +17,9 @@
 	<Binding name="ALLTHETHINGS_TOGGLEMINILIST" category="ADDONS">
 		AllTheThings.ToggleMiniListForCurrentZone();
 	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLEBOEITEMS" category="ADDONS">
+		AllTheThings.ToggleBOEItems();
+	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLECOMPLETIONISTMODE" category="ADDONS">
 		AllTheThings.ToggleCompletionistMode();
 	</Binding>

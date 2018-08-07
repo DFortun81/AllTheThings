@@ -2484,6 +2484,18 @@ app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
 app.ToggleCompletionistMode = ToggleCompletionistMode;
 app.ToggleDebugMode = ToggleDebugMode;
 app.ToggleMainList = ToggleMainList;
+app.SetHideBOEItems = function(checked)
+	app.SetDataMember("RequireBindingFilter", checked);
+	if checked then
+		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
+	else
+		app.RequireBindingFilter = app.NoFilter;
+	end
+	app:RefreshData();
+end
+app.ToggleBOEItems = function()
+	app.SetHideBOEItems(not app.GetDataMember("RequireBindingFilter"));
+end
 
 
 -- Tooltip Functions
@@ -8881,6 +8893,7 @@ app.events.VARIABLES_LOADED = function()
 	BINDING_NAME_ALLTHETHINGS_OPENPROFESSIONMINILIST = L("OPEN_PROFESSIONMINILIST");
 	BINDING_NAME_ALLTHETHINGS_TOGGLEMAINLIST = L("TOGGLE_MAINLIST");
 	BINDING_NAME_ALLTHETHINGS_TOGGLEMINILIST = L("TOGGLE_MINILIST");
+	BINDING_NAME_ALLTHETHINGS_TOGGLEBOEITEMS = L("TOGGLE_BOEITEMS");
 	BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETIONISTMODE = L("TOGGLE_COMPLETIONIST_MODE");
 	BINDING_NAME_ALLTHETHINGS_TOGGLEDEBUGMODE = L("TOGGLE_DEBUG_MODE");
 	BINDING_NAME_ALLTHETHINGS_OPEN_RAID_ASSISTANT = L("OPEN_RAID_ASSISTANT");
