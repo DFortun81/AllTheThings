@@ -2675,7 +2675,10 @@ profession(164, { -- Blacksmithing
 					}),
 				}),
 			},
-			["maps"] = {579, 582, 723, 729, 20, 590, 720, 721},	-- Both Garrisons
+			["maps"] = { 
+				582, -- Lunarfall Garrison
+				590, -- Frostwall Garrison
+			},	-- Both Garrisons
 		}),
 		--[[n(-17, { -- Quests
 			i(115343, { -- Haephest's Satchel
