@@ -2804,9 +2804,7 @@ profession(164, { -- Blacksmithing
 		}),]]--
 		n(-26, { -- Drops
 			i(136709, { -- Recipe: Demonsteel Stirrups
-				["g"] = {
-					recipe(209564), -- Recipe: Demonsteel Stirrups
-				},
+				["g"] = {},
 				["description"] = "This item has a fairly high drop rate from horse-like creatures on the Broken Isles.",
 			}),
 		}),
@@ -3075,35 +3073,19 @@ profession(164, { -- Blacksmithing
 		n(-2, { -- Vendors
 			n(135447, { -- Ransa Greyfeather (Zuldazar)
 				["g"] = {
-					i(162707, { -- Recipe: Stormsteel Dagger (Rank 3)
-						recipe(253158), -- Recipe: Stormsteel Dagger (Rank 3)
-					}),
-					i(162774, { -- Recipe: Stormsteel Saber (Rank 3)
-						recipe(278133), -- Recipe: Stormsteel Saber (Rank 3)
-					}),
-					i(162706, { -- Recipe: Stormsteel Shield (Rank 3)
-						recipe(253118), -- Recipe: Stormsteel Shield (Rank 3)
-					}),
-					i(162708, { -- Recipe: Stormsteel Spear (Rank 3)
-						recipe(253161), -- Recipe: Stormsteel Spear (Rank 3)
-					}),
+					i(162707), -- Recipe: Stormsteel Dagger (Rank 3)
+					i(162774), -- Recipe: Stormsteel Saber (Rank 3)
+					i(162706), -- Recipe: Stormsteel Shield (Rank 3)
+					i(162708), -- Recipe: Stormsteel Spear (Rank 3)
 				},
 				["races"] = HORDE_ONLY,
 			}),
-			n(135446, { -- Vindicator Jaelanna (Tiragarde Sound)
+      n(135446, { -- Vindicator Jaelanna (Tiragarde Sound)
 				["g"] = {
-					i(162707, { -- Recipe: Stormsteel Dagger (Rank 3)
-						recipe(253158), -- Recipe: Stormsteel Dagger (Rank 3)
-					}),
-					i(162774, { -- Recipe: Stormsteel Saber (Rank 3)
-						recipe(278133), -- Recipe: Stormsteel Saber (Rank 3)
-					}),
-					i(162706, { -- Recipe: Stormsteel Shield (Rank 3)
-						recipe(253118), -- Recipe: Stormsteel Shield (Rank 3)
-					}),
-					i(162708, { -- Recipe: Stormsteel Spear (Rank 3)
-						recipe(253161), -- Recipe: Stormsteel Spear (Rank 3)
-					}),
+					i(162707), -- Recipe: Stormsteel Dagger (Rank 3)
+					i(162774), -- Recipe: Stormsteel Saber (Rank 3)
+					i(162706), -- Recipe: Stormsteel Shield (Rank 3)
+					i(162708), -- Recipe: Stormsteel Spear (Rank 3)
 				},
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -3179,7 +3161,7 @@ profession(164, { -- Blacksmithing
 			}),
 		}),
 	}),
-		--[[ NOT YET IMPLEMENTED
+    NOT YET IMPLEMENTED
 		recipe(253145), -- Recipe: Khaz'gorian Hammer
 		recipe(278416), -- Recipe: Magnetic Mining Pick
 		recipe(253110), -- Recipe: Monel-Hardened Hoofplates
@@ -3187,15 +3169,12 @@ profession(164, { -- Blacksmithing
 		recipe(269064), -- Recipe: Monelite Skeleton Key
 		recipe(278417), -- Recipe: Platinum Whetstone
 		recipe(278415), -- Recipe: Storm Silver Spurs
-		]]--
-		--[[
 		n(-10032, { -- Appearances
 			n(-318, { -- Armor
 			}),
 			n(-319, { -- Weapons
 			}),
 		}),
-		]]--
 	--]]
 	n(-40, { -- Legacy
 		un(1, n(-15, { -- Recipes
