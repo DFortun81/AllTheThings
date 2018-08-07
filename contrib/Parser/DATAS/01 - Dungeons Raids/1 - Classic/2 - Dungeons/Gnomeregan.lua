@@ -168,7 +168,7 @@ _.Instances =
 								6329,  -- Irradiated Pillager 
 								6223,  -- Leprous Defender 
 								6233,  -- Mechanized Sentry 
-								6230,  -- Peacekeeper Security Suir 
+								6230,  -- Peacekeeper Security Suit 
 							}, 
 						}), 
 						i(9491),	-- Hotshot Pilot's Gloves
@@ -189,6 +189,10 @@ _.Instances =
 								6234,  -- Mechanized Guardian 
 								6233,  -- Mechanized Sentry 
 								6225,  -- Mechano-Tank 
+							}, 
+						}),i(7360, {	-- Pattern: Dark Leather Gloves 
+							["crs"] = { 
+								6230,  -- Peacekeeper Security Suit  
 							}, 
 						}),
 						i(9509, {	-- Petrolspill Leggings

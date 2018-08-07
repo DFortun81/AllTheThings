@@ -46,6 +46,13 @@ _.Instances =
 						i( 63344),	-- Standard Issue Prisoner Shoes
 						i(132570),	-- Stolen Guard's Chain Boots
 					})),
+					n(0, { -- Zone Drop
+						i(7360, {  -- Recipe: Dark Leather Gloves
+							["crs"] = {
+								46382, -- Petty Criminal
+							},
+						}),
+					}),
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
