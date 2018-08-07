@@ -18,11 +18,6 @@ _.Craftables =
 				i(116426), -- Smoldering Helm
 				i(116427), -- Smoldering Breastplate
 				i(116425), -- Smoldering Greaves
-				WOD_CRAFTED_ITEM(109173),	-- Cybergenetic Mechshades
-				WOD_CRAFTED_ITEM(109171),	-- Night-Vision Mechshades
-				WOD_CRAFTED_ITEM(109172),	-- Plasma Mechshades
-				WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades
-				WOD_CRAFTED_ITEM(109168),	-- Shrediron's Shredder
 			}),
 		}),
 		n(-183, { -- Engineering
