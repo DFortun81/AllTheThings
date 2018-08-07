@@ -171,7 +171,9 @@ profession(393, { -- Skinning
 				["sourceQuest"] = 40133,	-- Source Quest: Scrap of Pants
 				["qg"] = 94409,			-- Quest Giver: Hemet Nesingwary <Hemet's Hunting Party>
 				["groups"] = {
-					i(130064),	-- Deadeye Monocle
+					i(130064, {	-- Deadeye Monocle
+						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+					}),
 				},
 			},
 			{

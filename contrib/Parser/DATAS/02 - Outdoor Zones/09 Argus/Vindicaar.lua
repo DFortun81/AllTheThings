@@ -674,6 +674,7 @@ _.Zones =
 						["groups"] = {
 							i(151576), -- Empyrial Breastplate
 						},
+						["qg"] = 125341, -- Khamir
 						["requiredSkill"] = 164, -- Blacksmithing
 						["sourceQuests"] = { 47743 }, -- The Child of Light and Shadow
 					}),
@@ -699,16 +700,6 @@ _.Zones =
 						},
 						["requiredSkill"] = 197, -- Tailoring
 						["sourceQuests"] = { 46941 }, -- The Path Forward
-					}),
-					n(-38, { -- Professions
-						n(-181, { -- Blacksmithing
-							q(48055, { -- Empyrial Strength
-								["g"] = {
-									recipe(247710), -- Recipe: Empyrial Breastplate (Rank 1)
-								},
-								["qg"] = 125341, -- Khamir
-							}),
-						}),
 					}),
 				}),
 				n(127476, { -- Scouting Map
