@@ -83,7 +83,7 @@ _.Zones =
 					
 				}),
 			},
-			--["achievementID"] = 12559, -- Explore Zuldazar
+			["achievementID"] = 12556, -- Explore Tiragarde Sound
 			["lvl"] = 110,
 			--["maps"] = { 
 			--	1163, -- Dazar'alor
