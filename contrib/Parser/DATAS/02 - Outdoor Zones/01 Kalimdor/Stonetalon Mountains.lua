@@ -38,7 +38,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 3995,	-- Witch Doctor Jin'Zil
-						["sourceQuests"] = { 26067 },	-- Jin'Zil's Blessing
+						["sourceQuests"] = { 26067, 26068 },	-- Jin'Zil's Blessing & Kobold Fury!
 					}),
 					qh(26047, {	-- And That's Why They Call Them Peons...
 						["groups"] = {

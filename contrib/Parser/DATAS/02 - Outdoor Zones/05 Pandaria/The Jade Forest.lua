@@ -1555,7 +1555,7 @@ _.Zones =
 							i(90320), -- Landfall Warboots
 						},
 						["qg"] = 66845, -- Sergeant Gorrok
-						["sourceQuests"] = { 29694, 31771 }, -- Regroup!
+						["sourceQuests"] = { 31771, 31773, 29694 }, -- Face to Face With Consequence, Prowler Problems, & Regroup!
 					}),
 					qa(31541, { -- Set in Jade
 						["qg"] = 56063, -- Inkmaster Jo Po
@@ -1651,9 +1651,10 @@ _.Zones =
 					q(31715, { -- The Big Kah-Oona
 						["qg"] = 58564, -- Elder Anli
 						["isDaily"] = true,
-					}),qh(31779, { -- The Darkness Within
+					}),
+					qh(31779, { -- The Darkness Within
 						["qg"] = 65999, -- General Nazgrim
-						["sourceQuests"] = { 31776, 31775 }, -- Strongarm Tactics, Assault on the Airstrip
+						["sourceQuests"] = { 31777, 31776, 31775 }, -- Choppertunity, Strongarm Tactics, & Assault on the Airstrip
 					}),
 					q(41728, { -- The Defense of Tian Monastery
 						["qg"] = 100438, -- Iron-Body Ponshu

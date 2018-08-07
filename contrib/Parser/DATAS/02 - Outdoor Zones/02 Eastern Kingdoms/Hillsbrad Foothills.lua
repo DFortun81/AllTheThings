@@ -87,7 +87,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 48129,	-- Helcular
-						["sourceQuests"] = { 28332, 28331 },	-- Helcular's Command & Helcular's Rod Giveth...
+						["sourceQuests"] = { 28332, 28331, 28096 },	-- Helcular's Command, Helcular's Rod Giveth..., & Welcome to the Machine
 					}),
 					qpvp(qa(7122, {	-- Capture a Mine
 						["groups"] = {
