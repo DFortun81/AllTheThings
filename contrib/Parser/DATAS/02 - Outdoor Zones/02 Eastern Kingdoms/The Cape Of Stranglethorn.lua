@@ -860,21 +860,22 @@ _.Zones =
 						dr(01.0, i(7408)),	-- Infiltrator Shoulders
 						dr(01.0, i(9869)),	-- Renegade Belt
 						dr(01.0, i(7436)),	-- Twilight Cape
-					}), 
-					n(0, { 		-- Zone Drop
-						i(2955),	-- First Mate Hat
-						i(48126),	-- Razzashi Hatchling
-						i(8494),	-- Parrot Cage (Hyacinth Macaw)
 					}),
+				}),	
+				n(0, { 		-- Zone Drop
+					i(2955),	-- First Mate Hat
+					i(5789, {    -- Pattern: Murloc Scale Bracers
+						["crs"] = {
+							1561,    -- Bloodsail Raider
+						},
+					}),
+					i(8494),	-- Parrot Cage (Hyacinth Macaw)
+					i(48126),	-- Razzashi Hatchling						
 				}),
 				n( -2, {	-- Vendors
 					n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
-						i(5789, {	-- Pattern: Murloc Scale Bracers
-							i(5783),	-- Murloc Scale Bracers
-						}),
-						i(5788, {	-- Pattern: Thick Murloc Armor
-							i(5782),	-- Thick Murloc Armor
-						}),	
+						i(5789), -- Pattern: Murloc Scale Bracers						
+						i(5788), -- Pattern: Thick Murloc Armor							
 					}),
 					n(2672, {	-- Cowardly Crosby <Tailoring Supplies>
 						i(10318), 	-- Pattern: Admiral's Hat
@@ -928,12 +929,8 @@ _.Zones =
 						i(8496),	-- Parrot Cage (Cockatiel) pet
 					}),
 					n(2699, {	-- Rikqiz <Leatherworking Supplies>
-						i(18239, {	-- Pattern: Shadowskin Gloves
-							i(18238),	-- Shadowskin Gloves
-						}),
-						i(14635, {	-- Pattern: Gem-Studded Leather Belt
-							i(4262),	-- Gem-Studded Leather Belt
-						}),
+						i(18239), -- Pattern: Shadowskin Gloves							
+						i(14635), -- Pattern: Gem-Studded Leather Belt						
 					}),
 					n(2670, {	-- Xizk Goodstitch <Tailoring Supplies>
 						i(7087), 	-- Pattern: Crimson Silk Cloak

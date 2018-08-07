@@ -6,7 +6,7 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(63, {		-- Ashenvale
 			["groups"] = {
-				n(-25, {	-- Pet Battle
+				n(-25, { 	-- Pet Battle
 					p(478), 	-- Forest Moth
 					p(495), 	-- Frog
 					p(450), 	-- Maggot
@@ -23,7 +23,7 @@ _.Zones =
 						["repeatable"] = true,
 					})),
 				}),
-				n(-17, {	-- Quests
+				n(-17, { 	-- Quests
 					qg(17106, qa(26453)),	-- A Helping Hand (breadcrumb quest for 26454) (No Prereq)
 					qg(3897, qa(26481, {	-- A New Adornment
 						["groups"] = {
@@ -796,7 +796,7 @@ _.Zones =
 					})),
 					qg(40895, qa(25607)),	-- Ze Gnomecorder (No Prereq)
 				}),
-				n(-16, {	-- Rares
+				n(-16, { 	-- Rares
 					n(3773, { 	-- Akkrilus
 						dr(41.0, i(6569)),	-- Shimmering Robe
 						dr(04.0, i(9799)),	-- Ivycloth Sash
@@ -1142,7 +1142,7 @@ _.Zones =
 						dr(01.0, i(9807)),	-- Superior Shoulders
 					}),
 				}),
-				n(-2,  {	-- Vendor
+				n(-2, { 	-- Vendor
 					na(3951, { 	-- Bhaldaran Ravenshade (_)
 						i(11305),
 					}),
@@ -1157,11 +1157,13 @@ _.Zones =
 					}),
 					na(34601, { -- Harlown Darkweave (_)
 						["groups"] = {
-							i(7361), -- Pattern: Herbalist's Gloves
+							i(7361, { -- Pattern: Herbalist's Gloves
+								i(7349), -- Herbalist's Gloves
+							}),
 						},
 						["description"] = "Vendor will only sell to those who have rescued him. Go to Benjari Edune and pick up the quest 'Three Friends of the Forest' to start the quest chain.",
 					}),
-					na(3958, { 	-- Lardan (_)
+					na(3958, { 	-- Lardan <Leatherworking Supplies>
 						["groups"] = {
 							i(5973), -- Pattern: Barbaric Leggings
 						},

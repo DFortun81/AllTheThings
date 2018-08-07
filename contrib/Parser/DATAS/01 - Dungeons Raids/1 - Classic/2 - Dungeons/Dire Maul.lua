@@ -24,6 +24,11 @@ _.Instances =
 								qg(44969, q( 27103)),	-- Shards of the Felvine
 							}),
 							n(  0, {	-- Zone Drop
+								i(8384, {	-- Pattern: Comfortable Leather Hat
+									["crs"] = {
+										13197,	-- Fel Lash
+									},
+								}),
 								i(18296, {	-- Marksman Bands
 									["crs"] = {
 										11454,	-- Wildspawn Betrayer

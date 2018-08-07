@@ -289,7 +289,7 @@ _.Zones =
 					qg(39725, qa(25429)),	-- Zukk'ash Infestation	
 --]]
 				}),
-				n(-16, {	-- Rares	
+				n(-16, { -- Rares	
 					n(5347, { 		-- Antilus the Soarer
 						dr(04.0, i(9854)),	-- Archer's Jerkin
 						dr(04.0, i(7462)),	-- Knight's Girdle
@@ -764,7 +764,7 @@ _.Zones =
 					}), 
 	--				n(54533, { 		-- Prince Lakma -- Drops no transmoggable loot			}),
 				}),
-				n(-2,  {	-- Vendors
+				n(-2, {		-- Vendors
 					na(44381, {	-- Apprentice of Estulan <Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
@@ -779,18 +779,10 @@ _.Zones =
 						i(11308),	-- Sylvan Shortbow
 					})),
 					h(n(7854, {	-- Jangdor Swiftstrider <Leatherworking Supplies>
-						i(15734,{	-- Pattern: Living Shoulders
-							i(15061),	-- Living Shoulders
-						}),
-						i(8409, {	-- Pattern: Nightscape Shoulders
-							i(8192),	-- Nightscape Shoulders
-						}),
-						i(8385, {	-- Pattern: Turtle Scale Gloves
-							i(8187),	-- Turtle Scale Gloves
-						}),
-						i(7451, {	-- Pattern: Green Whelp Bracers
-							i(7386),	-- Green Whelp Bracers
-						}),
+						i(15734), -- Pattern: Living Shoulders						
+						i(8409), -- Pattern: Nightscape Shoulders						
+						i(8385), -- Pattern: Turtle Scale Gloves							
+						i(7451), -- Pattern: Green Whelp Bracers						
 					})),
 					na(8157, {	-- Logannas <Alchemy Supplies>
 						i(9302),	-- Recipe: Ghost Dye
@@ -801,15 +793,9 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 					a(n(40226, {-- Pratt McGrubben <Leatherworking Supplies>
-						i(15734,{	-- Pattern: Living Shoulders
-							i(15061),	-- Living Shoulders
-						}),
-						i(8385, {	-- Pattern: Turtle Scale Gloves
-							i(8187),	-- Turtle Scale Gloves
-						}),
-						i(7451, {	-- Pattern: Green Whelp Bracers
-							i(7386),	-- Green Whelp Bracers
-						}),
+						i(15734), -- Pattern: Living Shoulders						
+						i(8385), -- Pattern: Turtle Scale Gloves						
+						i(7451), -- Pattern: Green Whelp Bracers						
 					})),
 					nh(8145, {	-- Sheendra Tallgrass <Trade Supplies>
 						i(13949),	-- Recipe: Baked Salmon
@@ -828,33 +814,30 @@ _.Zones =
 						i(12253),	-- Brilliant Red Cloak
 					})),
 				}),
-				n(0,   {	-- Zone Drop
-					i(8498, {	-- Emerald Whelpling
-						["crs"] = {
-							39384,	-- Noxious Whelp
-						},
+				n(0, { -- Zone Drop
+					h(n(5300, {		-- Frayfeather Hippogryph
+						dr(0.02, i(11474)), -- Sprite Darter Egg
+					})),
+					h(n(5304, {		-- Frayfeather Stagwing
+						dr(0.02, i(11474)), -- Sprite Darter Egg
+					})),
+					n(39949, {		-- Grimtotem Marauder
+						dr(0.02, i(11474)), -- Sprite Darter Egg
 					}),
-					i(11474, {	-- Sprite Darter Egg (PET!)
-						["crs"] = {
-							40168,	-- Corrupted Dryad
-							39896,	-- Feral Scar Yeti
-							5300,	-- Frayfeather Hippogryph
-							5304,	-- Frayfeather Stagwing
-							11440,	-- Gordok Enforcer
-							11443,	-- Gordok Ogre-Mage
-							39949,	-- Grimtotem Marauder
-							40059,	-- Highborne Poltergeist
-							5286,	-- Longtooth Runner
-							5362,	-- Northspring Harpy
-							39384,	-- Noxious Whelp
-							40224,	-- Rage Scar Yeti
-							5461,	-- Sea Elemental
-							40193,	-- Sharphorn Stag
-							5278,	-- Sprite Darter
-							5249,	-- Woodpaw Mongrel
-							5245,	-- Zukk'ash Wasp
-							5246,	-- Zukk'ash Worker
-						},
+					n(11440, {		-- Gordok Enforcer
+						dr(0.02, i(11474)), -- Sprite Darter Egg
+					}),
+					n(39384, { 		-- Noxious Whelp
+						dr(0.1,  i(8498)), 		-- Emerald Whelping
+						dr(0.01, i(11474)), 	-- Sprite Darter Egg
+					}),
+					h(n(5278, {			-- Sprite Darter
+						dr(0.03, i(11474)), -- Sprite Darter Egg
+					})),n(5249, {		-- Woodpaw Mongrel
+						dr(0.02, i(11474)), -- Sprite Darter Egg
+					}),
+					n(5246, {		-- Zukk'ash Worker
+						dr(0.02, i(11474)), -- Sprite Darter Egg
 					}),
 				}),
 				n(-40, {	-- Legacy
@@ -879,6 +862,12 @@ _.Zones =
 									un(34, i(10705)),	-- Firwillow Wristbands
 									un(34, i(10706)),	-- Nightscale Girdle
 								}),
+								q(2853, { -- Master of the Wild Leather (Feralas)
+									["g"] = {
+										un(2, i(8408)), -- Pattern: Wild Leather Cloak
+									},
+									["qg"] = 7852, -- Pratt McGrubben                
+								}),
 								qa(4267, {	-- Rise of the Silithid
 									un(34, i(34416)),	-- Gloves of the Dune
 									un(34, i(34417)),	-- Marauder's Handwraps
@@ -900,6 +889,36 @@ _.Zones =
 									un(34, i( 9686)),	-- Spirit of the Faerie Dragon
 									un(34, i( 9683)),	-- Strength of the Treant
 									un(34, i(10652)),	-- Will of the Mountain Giant
+								}),
+								q(2851, { -- Wild Leather Boots (Feralas)
+									["g"] = {
+										un(2, i(8406)), -- Pattern: Wild Leather Boots
+									},
+									["qg"] = 7852, -- Pratt McGrubben				
+								}),
+								q(2850, { -- Wild Leather Helmet (Feralas)
+									["g"] = {
+										un(2, i(8405)), -- Pattern: Wild Leather Helmet
+									},
+									["qg"] = 7852, -- Pratt McGrubben				
+								}),
+								q(2852, { -- Wild Leather Leggings (Feralas)
+									["g"] = {
+										un(2, i(8407)), -- Pattern: Wild Leather Leggings
+									},
+									["qg"] = 7852, -- Pratt McGrubben				
+								}),
+								q(2848, { -- Wild Leather Shoulders (Feralas)
+									["g"] = {
+										un(2, i(8403)), -- Pattern: Wild Leather Shoulders
+									},
+									["qg"] = 7852, -- Pratt McGrubben				
+								}),
+								q(2849, { -- Wild Leather Vest (Feralas)
+									["g"] = {
+										un(2, i(8404)), -- Pattern: Wild Leather Vest
+									},
+									["qg"] = 7852, -- Pratt McGrubben				
 								}),
 							}),
 						}),

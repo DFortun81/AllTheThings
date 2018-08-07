@@ -87,7 +87,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 48129,	-- Helcular
-						["sourceQuests"] = { 28332, 28331, 28096 },	-- Helcular's Command, Helcular's Rod Giveth..., & Welcome to the Machine
+						["sourceQuests"] = { 28332, 28331 },	-- Helcular's Command & Helcular's Rod Giveth...
 					}),
 					qpvp(qa(7122, {	-- Capture a Mine
 						["groups"] = {
@@ -1341,8 +1341,8 @@ _.Zones =
 						i(14634),	-- Recipe: Frost Oil
 					}),
 					h(n(2393, {	-- Christoph Jeffcoat <Tradesman>
-						i(5788), 	-- Pattern: Thick Murloc Armor
-						i(6054),	-- Recipe: Shadow Protection Potion
+						i(6054), -- Recipe: Shadow Protection Potion
+						i(5788), -- Pattern: Thick Murloc Armor						
 					})),
 					nh(2397, {	-- Derak Nightfall <Cook>
 						i(6330), 	-- Recipe: Bristle Whisker Catfish

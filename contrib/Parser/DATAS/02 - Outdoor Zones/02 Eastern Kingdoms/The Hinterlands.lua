@@ -934,9 +934,7 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 					a(n(8160, {	-- Nioma <Leatherworking Supplies>
-						i(8409, {	-- Pattern: Nightscape Shoulders
-							i(8192),	-- Nightscape Shoulders
-						}),
+						i(8409), -- Pattern: Nightscape Shoulders
 					})),
 					na(4782, {	-- Truk Wildbeard <Bartender>
 						i(18046),	-- Recipe: Tender Wolf Steak
