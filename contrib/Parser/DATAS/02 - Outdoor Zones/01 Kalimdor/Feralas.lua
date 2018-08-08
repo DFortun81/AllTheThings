@@ -845,82 +845,80 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qh(2976, {	-- A Grim Discovery
-									un(34, i(11858)),	-- Battlehard Cape
-									un(34, i(11859)),	-- Jademoon Orb
-								}),
-								qa(4266, {	-- A Hero's Welcome
-									un(34, i(11856)),	-- Ceremonial Elven Blade
-									un(34, i(11857)),	-- Sanctimonial Rod
-								}),
-								qh(3062, {	-- Dark Heart
-									un(34, i(9665)),	-- Wingcrest Gloves
-									un(34, i(9666)),	-- Stronghorn Girdle
-								}),
-								qa(2972, {	-- Doling Justice
-									un(34, i(10705)),	-- Firwillow Wristbands
-									un(34, i(10706)),	-- Nightscale Girdle
-								}),
-								q(2853, { -- Master of the Wild Leather (Feralas)
-									["g"] = {
-										un(2, i(8408)), -- Pattern: Wild Leather Cloak
-									},
-									["qg"] = 7852, -- Pratt McGrubben                
-								}),
-								qa(4267, {	-- Rise of the Silithid
-									un(34, i(34416)),	-- Gloves of the Dune
-									un(34, i(34417)),	-- Marauder's Handwraps
-								}),
-								qa(1101, {	-- The Crone of the Kraul
-									un(34, i( 4197)),	-- Berylline Pads
-									un(34, i( 6742)),	-- Stonefist Girdle
-									un(34, i( 6725)),	-- Marbled Buckler
-								}),
-								qa(2942, {	-- The Morrow Stone
-									un(34, i( 9654)),	-- Cairnstone Silver
-								}),
-								qa(3791, {	-- The Mystery of Morrowgrain
-									un(34, i(11888)),	-- Quintis' Research Gloves
-									un(34, i(11889)),	-- Bark Iron Pauldrons
-								}),
-								qh(3129, {	-- Weapons of Spirit
-									un(34, i( 9684)),	-- Force of the Hippogryph
-									un(34, i( 9686)),	-- Spirit of the Faerie Dragon
-									un(34, i( 9683)),	-- Strength of the Treant
-									un(34, i(10652)),	-- Will of the Mountain Giant
-								}),
-								q(2851, { -- Wild Leather Boots (Feralas)
-									["g"] = {
-										un(2, i(8406)), -- Pattern: Wild Leather Boots
-									},
-									["qg"] = 7852, -- Pratt McGrubben				
-								}),
-								q(2850, { -- Wild Leather Helmet (Feralas)
-									["g"] = {
-										un(2, i(8405)), -- Pattern: Wild Leather Helmet
-									},
-									["qg"] = 7852, -- Pratt McGrubben				
-								}),
-								q(2852, { -- Wild Leather Leggings (Feralas)
-									["g"] = {
-										un(2, i(8407)), -- Pattern: Wild Leather Leggings
-									},
-									["qg"] = 7852, -- Pratt McGrubben				
-								}),
-								q(2848, { -- Wild Leather Shoulders (Feralas)
-									["g"] = {
-										un(2, i(8403)), -- Pattern: Wild Leather Shoulders
-									},
-									["qg"] = 7852, -- Pratt McGrubben				
-								}),
-								q(2849, { -- Wild Leather Vest (Feralas)
-									["g"] = {
-										un(2, i(8404)), -- Pattern: Wild Leather Vest
-									},
-									["qg"] = 7852, -- Pratt McGrubben				
-								}),
-							}),
+							un(40, qh(2976, {	-- A Grim Discovery
+								un(34, i(11858)),	-- Battlehard Cape
+								un(34, i(11859)),	-- Jademoon Orb
+							})),
+							un(40, qa(4266, {	-- A Hero's Welcome
+								un(34, i(11856)),	-- Ceremonial Elven Blade
+								un(34, i(11857)),	-- Sanctimonial Rod
+							})),
+							un(40, qh(3062, {	-- Dark Heart
+								un(34, i(9665)),	-- Wingcrest Gloves
+								un(34, i(9666)),	-- Stronghorn Girdle
+							})),
+							un(40, qa(2972, {	-- Doling Justice
+								un(34, i(10705)),	-- Firwillow Wristbands
+								un(34, i(10706)),	-- Nightscale Girdle
+							})),
+							un(40, q(2853, { -- Master of the Wild Leather (Feralas)
+								["g"] = {
+									un(2, i(8408)), -- Pattern: Wild Leather Cloak
+								},
+								["qg"] = 7852, -- Pratt McGrubben                
+							})),
+							un(40, qa(4267, {	-- Rise of the Silithid
+								un(34, i(34416)),	-- Gloves of the Dune
+								un(34, i(34417)),	-- Marauder's Handwraps
+							})),
+							un(40, qa(1101, {	-- The Crone of the Kraul
+								un(34, i( 4197)),	-- Berylline Pads
+								un(34, i( 6742)),	-- Stonefist Girdle
+								un(34, i( 6725)),	-- Marbled Buckler
+							})),
+							un(40, qa(2942, {	-- The Morrow Stone
+								un(34, i( 9654)),	-- Cairnstone Silver
+							})),
+							un(40, qa(3791, {	-- The Mystery of Morrowgrain
+								un(34, i(11888)),	-- Quintis' Research Gloves
+								un(34, i(11889)),	-- Bark Iron Pauldrons
+							})),
+							un(40, qh(3129, {	-- Weapons of Spirit
+								un(34, i( 9684)),	-- Force of the Hippogryph
+								un(34, i( 9686)),	-- Spirit of the Faerie Dragon
+								un(34, i( 9683)),	-- Strength of the Treant
+								un(34, i(10652)),	-- Will of the Mountain Giant
+							})),
+							un(40, q(2851, { -- Wild Leather Boots (Feralas)
+								["g"] = {
+									un(2, i(8406)), -- Pattern: Wild Leather Boots
+								},
+								["qg"] = 7852, -- Pratt McGrubben				
+							})),
+							un(40, q(2850, { -- Wild Leather Helmet (Feralas)
+								["g"] = {
+									un(2, i(8405)), -- Pattern: Wild Leather Helmet
+								},
+								["qg"] = 7852, -- Pratt McGrubben				
+							})),
+							un(40, q(2852, { -- Wild Leather Leggings (Feralas)
+								["g"] = {
+									un(2, i(8407)), -- Pattern: Wild Leather Leggings
+								},
+								["qg"] = 7852, -- Pratt McGrubben				
+							})),
+							un(40, q(2848, { -- Wild Leather Shoulders (Feralas)
+								["g"] = {
+									un(2, i(8403)), -- Pattern: Wild Leather Shoulders
+								},
+								["qg"] = 7852, -- Pratt McGrubben				
+							})),
+							un(40, q(2849, { -- Wild Leather Vest (Feralas)
+								["g"] = {
+									un(2, i(8404)), -- Pattern: Wild Leather Vest
+								},
+								["qg"] = 7852, -- Pratt McGrubben				
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

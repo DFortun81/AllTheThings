@@ -571,24 +571,22 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qh(5650, {	-- Garments of Darkness
-									["groups"] = {
-										un(34, i(16607)),	-- Garments of Darkness
-									},
-									["races"] =  { 5 },	-- Undead
-									["classes"] = { 5 },	-- Priest
-								}),
-								qh(1822, {	-- Heirloom Weapon
-									["groups"] = {
-										un(34, i(7115)),	-- Heirloom Axe
-										un(34, i(7117)),	-- Heirloom Hammer
-										un(34, i(7116)),	-- Heirloom Dagger
-										un(34, i(7118)),	-- Heirloom Sword
-									},
-									["classes"] = { 1 },	-- Warrior
-								}),
-							}),
+							un(40, qh(5650, {	-- Garments of Darkness
+								["groups"] = {
+									un(34, i(16607)),	-- Garments of Darkness
+								},
+								["races"] =  { 5 },	-- Undead
+								["classes"] = { 5 },	-- Priest
+							})),
+							un(40, qh(1822, {	-- Heirloom Weapon
+								["groups"] = {
+									un(34, i(7115)),	-- Heirloom Axe
+									un(34, i(7117)),	-- Heirloom Hammer
+									un(34, i(7116)),	-- Heirloom Dagger
+									un(34, i(7118)),	-- Heirloom Sword
+								},
+								["classes"] = { 1 },	-- Warrior
+							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(1658, { 	-- Captain Dargol
@@ -704,54 +702,52 @@ _.Zones =
 						n(-40, {	-- Legacy
 							["groups"] = {
 								n(-17, {	-- Quests
-									["groups"] = bubbleDown({["u"] = 40 }, {
-										q(3096, {	-- Encrypted Scroll
-											["qg"] = 1569,	-- Shadow Priest Sarvis
-											["races"] = { 5 },	-- undead
-											["classes"] = { 4 },	-- rogue
-										}),
-										q(5650, {	-- Garments of Darkness
-											["groups"] = {
-												un(34, i(16607)),	-- Garments of Darkness
-											},
-											["races"] =  { 5 },	-- Undead
-											["classes"] = { 5 },	-- Priest
-										}),
-										q(3098, {	-- Glyphic Scroll
-											["qg"] = 1569,	-- Shadow Priest Sarvis
-											["sourceQuests"] = { 26800 },	-- Recruitment
-											["classes"] = { 8 },	-- mage
-											["races"] = { 5 },	-- undead
-										}),
-										q(3097, {	-- Hallowed Scroll
-											["qg"] = 1569,	-- Shadow Priest Sarvis
-											["sourceQuests"] = { 26800 },	-- Recruitment
-											["classes"] = { 5 },	-- priest
-											["races"] = {
-												5,	-- Undead
-												10,	-- Blood Elf
-											},
-										}),
-										qh(1822, {	-- Heirloom Weapon
-											["groups"] = {
-												un(34, i(7115)),	-- Heirloom Axe
-												un(34, i(7117)),	-- Heirloom Hammer
-												un(34, i(7116)),	-- Heirloom Dagger
-												un(34, i(7118)),	-- Heirloom Sword
-											},
-											["classes"] = { 1 },	-- Warrior
-										}),
-										q(3095, {	-- Simple Scroll
-											["qg"] = 1569,	-- Shadow Priest Sarvis
-											["races"] = { 5 },	-- undead
-											["classes"] = { 1 },	-- warrior
-										}),
-										q(3099, {	-- Tainted Scroll
-											["qg"] = 1569,	-- Shadow Priest Sarvis
-											["races"] = { 5 },	-- undead
-											["classes"] = { 9 },	-- warlock
-										}),
-									}),
+									un(40, q(3096, {	-- Encrypted Scroll
+										["qg"] = 1569,	-- Shadow Priest Sarvis
+										["races"] = { 5 },	-- undead
+										["classes"] = { 4 },	-- rogue
+									})),
+									un(40, q(5650, {	-- Garments of Darkness
+										["groups"] = {
+											un(34, i(16607)),	-- Garments of Darkness
+										},
+										["races"] =  { 5 },	-- Undead
+										["classes"] = { 5 },	-- Priest
+									})),
+									un(40, q(3098, {	-- Glyphic Scroll
+										["qg"] = 1569,	-- Shadow Priest Sarvis
+										["sourceQuests"] = { 26800 },	-- Recruitment
+										["classes"] = { 8 },	-- mage
+										["races"] = { 5 },	-- undead
+									})),
+									un(40, q(3097, {	-- Hallowed Scroll
+										["qg"] = 1569,	-- Shadow Priest Sarvis
+										["sourceQuests"] = { 26800 },	-- Recruitment
+										["classes"] = { 5 },	-- priest
+										["races"] = {
+											5,	-- Undead
+											10,	-- Blood Elf
+										},
+									})),
+									un(40, qh(1822, {	-- Heirloom Weapon
+										["groups"] = {
+											un(34, i(7115)),	-- Heirloom Axe
+											un(34, i(7117)),	-- Heirloom Hammer
+											un(34, i(7116)),	-- Heirloom Dagger
+											un(34, i(7118)),	-- Heirloom Sword
+										},
+										["classes"] = { 1 },	-- Warrior
+									})),
+									un(40, q(3095, {	-- Simple Scroll
+										["qg"] = 1569,	-- Shadow Priest Sarvis
+										["races"] = { 5 },	-- undead
+										["classes"] = { 1 },	-- warrior
+									})),
+									un(40, q(3099, {	-- Tainted Scroll
+										["qg"] = 1569,	-- Shadow Priest Sarvis
+										["races"] = { 5 },	-- undead
+										["classes"] = { 9 },	-- warlock
+									})),
 								}),
 								n(-16, {	-- Rares (Legacy)
 									n(1658, { 	-- Captain Dargol

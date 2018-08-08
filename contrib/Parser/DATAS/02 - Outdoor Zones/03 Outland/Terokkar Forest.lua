@@ -596,20 +596,18 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qdg(q(10165, {	-- Undercutting the Competition
-									un(34, i(29343)),	-- Haramad's Leggings of the Third Coin
-									un(34, i(29342)),	-- Consortium Plated Legguards
-									un(34, i(29345)),	-- Haramad's Leg Wraps
-									un(34, i(29344)),	-- Haramad's Linked Chain Pantaloons
-								})),
-								qdg(q(10218, {	-- Someone Else's Hard Work Pays Off
-									un(34, i(29328)),	-- Consortium Prince's Wrap
-									un(34, i(29327)),	-- Cryo-mitts
-									un(34, i(29326)),	-- Consortium Mantle of Phasing
-									un(34, i(29325)),	-- Flesh Beast's Metal Greaves
-								})),
-							}),
+							un(40, qdg(q(10165, {	-- Undercutting the Competition
+								un(34, i(29343)),	-- Haramad's Leggings of the Third Coin
+								un(34, i(29342)),	-- Consortium Plated Legguards
+								un(34, i(29345)),	-- Haramad's Leg Wraps
+								un(34, i(29344)),	-- Haramad's Linked Chain Pantaloons
+							}))),
+							un(40, qdg(q(10218, {	-- Someone Else's Hard Work Pays Off
+								un(34, i(29328)),	-- Consortium Prince's Wrap
+								un(34, i(29327)),	-- Cryo-mitts
+								un(34, i(29326)),	-- Consortium Mantle of Phasing
+								un(34, i(29325)),	-- Flesh Beast's Metal Greaves
+							}))),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

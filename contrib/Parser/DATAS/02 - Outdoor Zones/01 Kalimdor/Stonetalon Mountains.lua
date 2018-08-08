@@ -1013,33 +1013,31 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					n(-17, {	-- Quests (Legacy)
-						["groups"] = bubbleDown({["u"] = 40}, {
-							qh(6283, {	-- Bloodfury Bloodline
-								un(2, i(16990)),	-- Spritekin Cloak
-								un(2, i(16987)),	-- Screecher Belt
-							}),
-							qh(6481, {	-- Earthen Arise
-								un(2, i(16981)),	-- Owlbeard Bracers
-								un(2, i(1306)),	-- Wolfmane Wristguards
-							}),
-							q(1096, {	-- Gerenzo Wrenchwhistle
-								un(2, i(6667)),	-- Engineer's Cloak
-								un(2, i(6668)),	-- Draftsman Boots
-							}),
-							qh(1058, {	-- Jin'Zil's Forest Magic
-								un(2, i(6664)),	-- Voodoo Mantle
-								un(2, i(6665)),	-- Hexed Bracers
-							}),
-							qh(6381, {	-- New Life
-								un(2, i(16985)),	-- Windseeker Boots
-								un(2, i(16986)),	-- Sandspire Gloves
-							}),
-							qa(1081, {	-- Reception from Tyrande
-								un(2, i(7334)),	-- Efflorescent Robe
-								un(2, i(7335)),	-- Grizzly Tunic
-								un(2, i(7336)),	-- Wildwood Chain
-							}),
-						}),
+						un(40, qh(6283, {	-- Bloodfury Bloodline
+							un(2, i(16990)),	-- Spritekin Cloak
+							un(2, i(16987)),	-- Screecher Belt
+						})),
+						un(40, qh(6481, {	-- Earthen Arise
+							un(2, i(16981)),	-- Owlbeard Bracers
+							un(2, i(1306)),	-- Wolfmane Wristguards
+						})),
+						un(40, q(1096, {	-- Gerenzo Wrenchwhistle
+							un(2, i(6667)),	-- Engineer's Cloak
+							un(2, i(6668)),	-- Draftsman Boots
+						})),
+						un(40, qh(1058, {	-- Jin'Zil's Forest Magic
+							un(2, i(6664)),	-- Voodoo Mantle
+							un(2, i(6665)),	-- Hexed Bracers
+						})),
+						un(40, qh(6381, {	-- New Life
+							un(2, i(16985)),	-- Windseeker Boots
+							un(2, i(16986)),	-- Sandspire Gloves
+						})),
+						un(40, qa(1081, {	-- Reception from Tyrande
+							un(2, i(7334)),	-- Efflorescent Robe
+							un(2, i(7335)),	-- Grizzly Tunic
+							un(2, i(7336)),	-- Wildwood Chain
+						})),
 					}),
 				}),
 			},

@@ -1002,75 +1002,73 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								q( 6027, {	-- Book of the Ancients
-									un(34, i(16791)),	-- Silkstream Cuffs
-									un(34, i(16793)),	-- Arcmetal Shoulders
-								}),
-								qh(1366, {	-- Centaur Bounty
-									un(34, i(6780)),	-- Lilac Sash
-									un(34, i(6784)),	-- Braced Handguards
-								}),
-								q(6161, {	-- Claim Rackmore's Treasure!
-									un(34, i(16788)),	-- Captain Rackmore's Wheel
-									un(34, i(16789)),	-- Captain Rackmore's Tiller
-								}),
-								qh(6142, {	-- Clam Bait
-									un(34, i(15585)),	-- Pardoc Grips
-									un(34, i(15587)),	-- Ringtail Girdle
-									un(34, i(15588)),	-- Bracesteel Belt
-								}),
-								qdg(qa(7064, {	-- Corruption of Earth and Seed
-									un(34, i(17705)),	-- Thrash Blade
-									un(34, i(17743)),	-- Resurgence Rod
-									un(34, i(17753)),	-- Verdant Keeper's Aim
-								})),
-								qdg(qh(7064, {	-- Corruption of Earth and Seed
-									un(34, i(17705)),	-- Thrash Blade
-									un(34, i(17743)),	-- Resurgence Rod
-									un(34, i(17753)),	-- Verdant Keeper's Aim
-								})),
-								q( 5943, {	-- Gizelton Caravan
-									un(34, i(15691)),	-- Sidegunner Shottie
-									un(34, i(15692)),	-- Kodo Brander
-									un(34, i(15695)),	-- Studded Ring Shield
-								}),
-								q( 1381, {	-- Khan Hratha
-									un(34, i(6788)),	-- Magram Hunter's Belt
-									un(34, i(6789)),	-- Ceremonial Centaur Blanket
-								}),
-								q( 1380, {	-- Khan Kratha
-									un(34, i(6773)),	-- Gelkis Marauder Chain
-									un(34, i(6774)),	-- Uthek's Finger
-								}),
-								q( 5561, {	-- Kodo Roundup
-									un(34, i(15697)),	-- Kodo Rustler Boots
-									un(34, i(15698)),	-- Wrangling Spaulders
-								}),
-								qa(1440, {	-- Return to Vahlarriel
-									un(34, i( 9687)),	-- Grappler's Belt
-									un(34, i( 9698)),	-- Gloves of Insight
-									un(34, i( 9699)),	-- Garrison Cloak
-									un(34, i(11884)),	-- Moonlit Amice
-								}),
-								qa(1457, {	-- The Karnitol Shipwreck
-									un(34, i(6791)),	-- Hellion Boots
-									un(34, i(6792)),	-- Sanguine Pauldrons
-								}),
-								qdg(q(7028, {	-- Twisted Evils
-									un(34, i(17775)),	-- Acumen Robes
-									un(34, i(17776)),	-- Sprightring Helm
-									un(34, i(17777)),	-- Relentless Chain
-									un(34, i(17779)),	-- Hulkstone Pauldrons
-								})),
-	--[[  NO REWARDS			qg(12340, qh( 6143)),	-- Other Fish to Fry (REMOVED with Cata per wowhead comment)
-								qh( 1432),	-- Alliance Relations (REMOVED per wowhead comment)
-								qh( 1434),	-- Befouled by Satyr (REMOVED per wowhead comment)
-								qg(11625, q(5821)),	-- Bodyguard for Hire (REMOVED per wowhead comment)
-								qh( 6142),	-- Clam Bait (REMOVED with Cata per wowhead comment)
-								qg(11626, q(5943)),	-- Gizelton Caravan (REMOVED per wowhead comment)
-								q(1467),	-- Reagents for Reclaimers Inc. (REMOVED per wowhead comments) --]]
-							}),
+							un(40, q( 6027, {	-- Book of the Ancients
+								un(34, i(16791)),	-- Silkstream Cuffs
+								un(34, i(16793)),	-- Arcmetal Shoulders
+							})),
+							un(40, qh(1366, {	-- Centaur Bounty
+								un(34, i(6780)),	-- Lilac Sash
+								un(34, i(6784)),	-- Braced Handguards
+							})),
+							un(40, q(6161, {	-- Claim Rackmore's Treasure!
+								un(34, i(16788)),	-- Captain Rackmore's Wheel
+								un(34, i(16789)),	-- Captain Rackmore's Tiller
+							})),
+							un(40, qh(6142, {	-- Clam Bait
+								un(34, i(15585)),	-- Pardoc Grips
+								un(34, i(15587)),	-- Ringtail Girdle
+								un(34, i(15588)),	-- Bracesteel Belt
+							})),
+							un(40, qdg(qa(7064, {	-- Corruption of Earth and Seed
+								un(34, i(17705)),	-- Thrash Blade
+								un(34, i(17743)),	-- Resurgence Rod
+								un(34, i(17753)),	-- Verdant Keeper's Aim
+							}))),
+							un(40, qdg(qh(7064, {	-- Corruption of Earth and Seed
+								un(34, i(17705)),	-- Thrash Blade
+								un(34, i(17743)),	-- Resurgence Rod
+								un(34, i(17753)),	-- Verdant Keeper's Aim
+							}))),
+							un(40, q( 5943, {	-- Gizelton Caravan
+								un(34, i(15691)),	-- Sidegunner Shottie
+								un(34, i(15692)),	-- Kodo Brander
+								un(34, i(15695)),	-- Studded Ring Shield
+							})),
+							un(40, q( 1381, {	-- Khan Hratha
+								un(34, i(6788)),	-- Magram Hunter's Belt
+								un(34, i(6789)),	-- Ceremonial Centaur Blanket
+							})),
+							un(40, q( 1380, {	-- Khan Kratha
+								un(34, i(6773)),	-- Gelkis Marauder Chain
+								un(34, i(6774)),	-- Uthek's Finger
+							})),
+							un(40, q( 5561, {	-- Kodo Roundup
+								un(34, i(15697)),	-- Kodo Rustler Boots
+								un(34, i(15698)),	-- Wrangling Spaulders
+							})),
+							un(40, qa(1440, {	-- Return to Vahlarriel
+								un(34, i( 9687)),	-- Grappler's Belt
+								un(34, i( 9698)),	-- Gloves of Insight
+								un(34, i( 9699)),	-- Garrison Cloak
+								un(34, i(11884)),	-- Moonlit Amice
+							})),
+							un(40, qa(1457, {	-- The Karnitol Shipwreck
+								un(34, i(6791)),	-- Hellion Boots
+								un(34, i(6792)),	-- Sanguine Pauldrons
+							})),
+							un(40, qdg(q(7028, {	-- Twisted Evils
+								un(34, i(17775)),	-- Acumen Robes
+								un(34, i(17776)),	-- Sprightring Helm
+								un(34, i(17777)),	-- Relentless Chain
+								un(34, i(17779)),	-- Hulkstone Pauldrons
+							}))),
+--[[  NO REWARDS			qg(12340, qh( 6143)),	-- Other Fish to Fry (REMOVED with Cata per wowhead comment)
+							qh( 1432),	-- Alliance Relations (REMOVED per wowhead comment)
+							qh( 1434),	-- Befouled by Satyr (REMOVED per wowhead comment)
+							qg(11625, q(5821)),	-- Bodyguard for Hire (REMOVED per wowhead comment)
+							qh( 6142),	-- Clam Bait (REMOVED with Cata per wowhead comment)
+							qg(11626, q(5943)),	-- Gizelton Caravan (REMOVED per wowhead comment)
+							q(1467),	-- Reagents for Reclaimers Inc. (REMOVED per wowhead comments) --]]
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(4684, { 	-- Nether Sorceress

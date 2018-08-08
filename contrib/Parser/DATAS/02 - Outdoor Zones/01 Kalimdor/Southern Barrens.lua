@@ -1196,17 +1196,15 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qh(913, {	-- Cry of the Thunderhawk
-									un(34, i(5302)),	-- Cobalt Buckler
-									un(34, i(5306)),	-- Wind Rider Staff
-									un(34, i(5299)),	-- Gloves of the Moon
-								}),
-								qh(893, {	-- Weapons of Choice
-									un(34, i(5322)),	-- Demolition Hammer
-									un(34, i(5323)),	-- Everglow Lantern
-								}),
-							}),
+							un(40, qh(913, {	-- Cry of the Thunderhawk
+								un(34, i(5302)),	-- Cobalt Buckler
+								un(34, i(5306)),	-- Wind Rider Staff
+								un(34, i(5299)),	-- Gloves of the Moon
+							})),
+							un(40, qh(893, {	-- Weapons of Choice
+								un(34, i(5322)),	-- Demolition Hammer
+								un(34, i(5323)),	-- Everglow Lantern
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

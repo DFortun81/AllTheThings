@@ -478,21 +478,19 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
-							["groups"] = bubbleDown({["u"] = 40}, {
-								q(4491, {	-- A Little Help From My Friends
-									un(34, i(11910)),	-- Bejeweled Legguards
-									un(34, i(11911)),	-- Treetop Leggings
-									un(34, i(11913)),	-- Clayridge Helm
-								}),
-								q(3962, {	-- It's Dangerous to Go Alone
-									un(34, i(11902)),	-- Linken's Sword of Mastery
-									un(34, i(11904)),	-- Spirit of Aquementas
-								}),
-								q(4301, {	-- The Mighty U'cha
-									un(34, i(11906)),	-- Beastsmasher
-									un(34, i(11907)),	-- Beastslayer
-								}),
-							}),
+							un(40, q(4491, {	-- A Little Help From My Friends
+								un(34, i(11910)),	-- Bejeweled Legguards
+								un(34, i(11911)),	-- Treetop Leggings
+								un(34, i(11913)),	-- Clayridge Helm
+							})),
+							un(40, q(3962, {	-- It's Dangerous to Go Alone
+								un(34, i(11902)),	-- Linken's Sword of Mastery
+								un(34, i(11904)),	-- Spirit of Aquementas
+							})),
+							un(40, q(4301, {	-- The Mighty U'cha
+								un(34, i(11906)),	-- Beastsmasher
+								un(34, i(11907)),	-- Beastslayer
+							})),
 						}),
 						n(-16, {	-- Rares
 							n(14461, { 	-- Baron Charr

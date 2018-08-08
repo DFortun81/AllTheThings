@@ -677,41 +677,39 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qa(471, {	-- Apprentice's Duties
-									un(34, i(2545)),	-- Malleable Chain Leggings
-									un(34, i(3561)),	-- Resilient Poncho
-									-- i(3681),	-- Recipe: Crocolisk Gumbo (not unobtainable)
-								}),
-								qa(275, {	-- Blisters on The Land
-									un(34, i(3558)),	-- Fen Keeper Robe
-									un(34, i(1273)),	-- Forest Chain
-									un(34, i(2263)),	-- Phytoblade
-								}),
-								qa(293, {	-- Cleansing the Eye
-									un(34, i(2943)),	-- Eye of Paleth
-								}),
-								qa(474, {	-- Defeat Nek'rosh
-									un(34, i(3209)),	-- Ancient War Sword
-									un(34, i(6194)),	-- Barreling Reaper
-								}),
-								qa(296, {	-- Ormer's Revenge
-									un(34, i(3493)),	-- Raptor's End
-									un(34, i(3566)),	-- Raptorbane Armor
-									un(34, i(5246)),	-- Excavation Rod
-								}),
-								qa(286, {	-- Return the Statuette
-									un(34, i(2950)),	-- Icicle Rod
-									un(34, i(2949)),	-- Mariner Boots
-								}),
-								qa(633, {	-- The Thandol Span
-									un(34, i(4504)),	-- Dwarven Guard Cloak
-									un(34, i(4505)),	-- Swampland Trousers
-								}),
-								qa(299, {	-- Uncovering the Past
-									un(34, i(2913)),	-- Silk Mantle of Gamn
-								}),
-							}),
+							un(40, qa(471, {	-- Apprentice's Duties
+								un(34, i(2545)),	-- Malleable Chain Leggings
+								un(34, i(3561)),	-- Resilient Poncho
+								-- i(3681),	-- Recipe: Crocolisk Gumbo (not unobtainable)
+							})),
+							un(40, qa(275, {	-- Blisters on The Land
+								un(34, i(3558)),	-- Fen Keeper Robe
+								un(34, i(1273)),	-- Forest Chain
+								un(34, i(2263)),	-- Phytoblade
+							})),
+							un(40, qa(293, {	-- Cleansing the Eye
+								un(34, i(2943)),	-- Eye of Paleth
+							})),
+							un(40, qa(474, {	-- Defeat Nek'rosh
+								un(34, i(3209)),	-- Ancient War Sword
+								un(34, i(6194)),	-- Barreling Reaper
+							})),
+							un(40, qa(296, {	-- Ormer's Revenge
+								un(34, i(3493)),	-- Raptor's End
+								un(34, i(3566)),	-- Raptorbane Armor
+								un(34, i(5246)),	-- Excavation Rod
+							})),
+							un(40, qa(286, {	-- Return the Statuette
+								un(34, i(2950)),	-- Icicle Rod
+								un(34, i(2949)),	-- Mariner Boots
+							})),
+							un(40, qa(633, {	-- The Thandol Span
+								un(34, i(4504)),	-- Dwarven Guard Cloak
+								un(34, i(4505)),	-- Swampland Trousers
+							})),
+							un(40, qa(299, {	-- Uncovering the Past
+								un(34, i(2913)),	-- Silk Mantle of Gamn
+							})),
 						}),
 						-- n(-16, {	-- Rares (Legacy)
 						-- }),

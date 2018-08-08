@@ -235,19 +235,17 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qa(5621, {	-- Garments of the Moon
-									["groups"] = {
-										un(34, i(16604)),	-- Moon Robes of Elune
-									},
-									["races"] = { 4 },	-- Night Elf
-									["classes"] = { 5 },	-- Priest
-								}),
-								qa(486, {	-- Ursal the Mauler
-									un(34, i(5459)),	-- Defender Axe
-									un(34, i(5587)),	-- Thornroot Club
-								}),
-							}),
+							un(40, qa(5621, {	-- Garments of the Moon
+								["groups"] = {
+									un(34, i(16604)),	-- Moon Robes of Elune
+								},
+								["races"] = { 4 },	-- Night Elf
+								["classes"] = { 5 },	-- Priest
+							})),
+							un(40, qa(486, {	-- Ursal the Mauler
+								un(34, i(5459)),	-- Defender Axe
+								un(34, i(5587)),	-- Thornroot Club
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

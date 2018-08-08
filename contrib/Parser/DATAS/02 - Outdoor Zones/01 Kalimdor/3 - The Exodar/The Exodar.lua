@@ -619,11 +619,9 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
-							["groups"] = bubbleDown({["u"] = 40}, {
-								q(9675, {	-- Beast Training
-									un(34, i(24138)),	-- Silver Crossbow
-								}),
-							}),
+							un(40, q(9675, {	-- Beast Training
+								un(34, i(24138)),	-- Silver Crossbow
+							})),
 						}),
 					},
 				}),

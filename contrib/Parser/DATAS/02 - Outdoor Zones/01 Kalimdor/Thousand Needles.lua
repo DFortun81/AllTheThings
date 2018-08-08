@@ -1261,30 +1261,28 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qh(4904, {	-- Free at Last
-									un(34, i(15469)),	-- Windsong Cinch
-									un(34, i(15468)),	-- Windsong Drape
-								}),
-								qdg(q(2770, {	-- Gahz'rilla (may have been Horde-only)
-									un(34, i( 9653)),	-- Speedy Racer Goggles
-									un(34, i(11122)),	-- Carrot on a Stick
-								})),
-								qh(5064, {	-- Grimtotem Spying
-									un(34, i(15457)),	-- Desert Shoulders
-									un(34, i(15458)),	-- Tundra Boots
-									un(34, i(15459)),	-- Grimtoll Wristguards
-								}),
-								qh(1184, {	-- Parts of the Swarm
-									un(34, i(6737)),	-- Dryleaf Pants
-									un(34, i(6738)),	-- Bleeding Crescent
-								}),
-								qh(4966, {	-- Protect Kanati Greycloud
-									un(34, i(15461)),	-- Lightheel Boots
-									un(34, i(15462)),	-- Loamflake Bracers
-									un(34, i(15463)),	-- Palestrider Gloves
-								}),
-							}),
+							un(40, qh(4904, {	-- Free at Last
+								un(34, i(15469)),	-- Windsong Cinch
+								un(34, i(15468)),	-- Windsong Drape
+							})),
+							un(40, qdg(q(2770, {	-- Gahz'rilla (may have been Horde-only)
+								un(34, i( 9653)),	-- Speedy Racer Goggles
+								un(34, i(11122)),	-- Carrot on a Stick
+							}))),
+							un(40, qh(5064, {	-- Grimtotem Spying
+								un(34, i(15457)),	-- Desert Shoulders
+								un(34, i(15458)),	-- Tundra Boots
+								un(34, i(15459)),	-- Grimtoll Wristguards
+							})),
+							un(40, qh(1184, {	-- Parts of the Swarm
+								un(34, i(6737)),	-- Dryleaf Pants
+								un(34, i(6738)),	-- Bleeding Crescent
+							})),
+							un(40, qh(4966, {	-- Protect Kanati Greycloud
+								un(34, i(15461)),	-- Lightheel Boots
+								un(34, i(15462)),	-- Loamflake Bracers
+								un(34, i(15463)),	-- Palestrider Gloves
+							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(4099, { 	-- Galak Marauder

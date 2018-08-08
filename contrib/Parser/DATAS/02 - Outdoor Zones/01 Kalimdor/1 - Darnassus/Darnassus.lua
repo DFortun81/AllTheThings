@@ -663,17 +663,15 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qa(1693, {	-- Weapons of Elunite
-									["groups"] = {
-										un(34, i(6966)),	-- Elunite Axe
-										un(34, i(6968)),	-- Elunite Hammer
-										un(34, i(6969)),	-- Elunite Dagger
-										un(34, i(6967)),	-- Elunite Sword
-									},
-									["classes"] = { 1 },	-- Warrior
-								}),
-							}),
+							un(40, qa(1693, {	-- Weapons of Elunite
+								["groups"] = {
+									un(34, i(6966)),	-- Elunite Axe
+									un(34, i(6968)),	-- Elunite Hammer
+									un(34, i(6969)),	-- Elunite Dagger
+									un(34, i(6967)),	-- Elunite Sword
+								},
+								["classes"] = { 1 },	-- Warrior
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

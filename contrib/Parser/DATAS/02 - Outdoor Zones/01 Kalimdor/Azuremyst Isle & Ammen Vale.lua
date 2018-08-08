@@ -201,15 +201,13 @@ _.Zones =
 				n(-40,  {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qa(9586, {	-- Help Tavara
-									["groups"] = {
-										un(34, i(23931)),	-- Azure Watch Robes
-									},
-									["races"] = { 11 },	-- Draenei
-									["classes"] = { 5 },	-- Priest
-								}),
-							}),
+							un(40, qa(9586, {	-- Help Tavara
+								["groups"] = {
+									un(34, i(23931)),	-- Azure Watch Robes
+								},
+								["races"] = { 11 },	-- Draenei
+								["classes"] = { 5 },	-- Priest
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

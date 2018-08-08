@@ -342,24 +342,22 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qa(1667, {	-- Dead-tooth Jack
-									["groups"] = {
-										un(34, i(6979)),	-- Haggard's Axe
-										un(34, i(6983)),	-- Haggard's Hammer
-										un(34, i(6980)),	-- Haggard's Dagger
-										un(34, i(6985)),	-- Haggard's Sword
-									},
-									["classes"] = { 1 },	-- Warrior
-								}),
-								qa(5624, {	-- Garments of the Light
-									["groups"] = {
-										un(34, i(16605)),	-- Friar's Robes of the Light
-									},
-									["races"] = { 1 },	-- Human
-									["classes"] = { 5 },	-- Priest
-								}),
-							}),
+							un(40, qa(1667, {	-- Dead-tooth Jack
+								["groups"] = {
+									un(34, i(6979)),	-- Haggard's Axe
+									un(34, i(6983)),	-- Haggard's Hammer
+									un(34, i(6980)),	-- Haggard's Dagger
+									un(34, i(6985)),	-- Haggard's Sword
+								},
+								["classes"] = { 1 },	-- Warrior
+							})),
+							un(40, qa(5624, {	-- Garments of the Light
+								["groups"] = {
+									un(34, i(16605)),	-- Friar's Robes of the Light
+								},
+								["races"] = { 1 },	-- Human
+								["classes"] = { 5 },	-- Priest
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
@@ -556,11 +554,9 @@ _.Zones =
 								--n(  0, {	-- Zone Drop (Legacy)
 								--}),
 								n(-17, {	-- Quests (Legacy)
-									["groups"] = bubbleDown({["u"] = 40}, {
-										qa(346, {	-- Return to Kristoff
-											un(34, i(6095)),	-- Wandering Boots
-										}),
-									}),
+									un(40, qa(346, {	-- Return to Kristoff
+										un(34, i(6095)),	-- Wandering Boots
+									})),
 								}),
 								--n(-16, {	-- Rares (Legacy)
 								--}),

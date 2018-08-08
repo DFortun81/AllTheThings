@@ -3041,55 +3041,53 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
-							["groups"] = bubbleDown({["u"] = 40}, {
-								q(1942, { 		-- Astral Knot Garment
-									un(34, i(9516)),	-- Astral Knot Blouse
-									un(34, i(7511)),	-- Astral Knot Robe
-								}),
-								q(168, {		-- Collecting Memories
-									un(34, i(2036)),	-- Dusty Mining Gloves
-									un(34, i(2037)),	-- Tunneler's Boots
-								}),
-								qc1(q(1782, { 	-- Furen's Armor
-									un(34, i(6972)),	-- Fire-Hardened Hauberk
+							un(40, q(1942, { 		-- Astral Knot Garment
+								un(34, i(9516)),	-- Astral Knot Blouse
+								un(34, i(7511)),	-- Astral Knot Robe
+							})),
+							un(40, q(168, {		-- Collecting Memories
+								un(34, i(2036)),	-- Dusty Mining Gloves
+								un(34, i(2037)),	-- Tunneler's Boots
+							})),
+							un(40, qc1(q(1782, { 	-- Furen's Armor
+								un(34, i(6972)),	-- Fire-Hardened Hauberk
+							}))),
+							un(40, qc1(q(1706, { 	-- Grimand's Armor
+								un(34, i(6971)),	-- Fire Hardened Coif
+							}))),
+							un(34, qc8(q(1941, {	-- Manaweave Robe
+								i(7509),	-- Manaweave Robe	-- NOTE: This item is actually obtainable so we only want to mark the quest as legacy
+							}))),
+							un(40, q(1364, {		-- Mazen's Behest
+								un(34, i(10747)),	-- Teacher's Sash
+								un(34, i(10748)),	-- Wanderlust Boots
+							})),
+							un(40, qc8(q(1861, {	-- Mirror Lake
+								i(7508),	-- Ley Orb
+								i(9513),	-- Ley Staff
+							}))),
+							un(40, q(167, {		-- Oh Brother...
+								un(34, i(1893)),	-- Miner's Revenge
+							})),
+							un(40, q(6187, {		-- Order Must Be Restored
+								un(34, i(16996)),	-- Gorewood Bow
+								un(34, i(16998)),	-- Sacred Protector
+								un(34, i(16997)),	-- Stormrager
+							})),
+							un(40, q(1078, {		-- Retrieval for Mauren
+								un(34, i(6677)),	-- Spellcrafter Wand
+							})),
+							un(40, qc4(q(2206, { 	-- Snatch and Grab
+								un(34, i(7298)),	-- Blade of Cunning
+							}))),
+							un(40, qp164(q(2758, {	-- The Origins of Smithing
+								un(34, i(9367, {	-- Plans: Golden Scale Gauntlets
+									un(8, i(9366)),		-- Golden Scale Gauntlets
 								})),
-								qc1(q(1706, { 	-- Grimand's Armor
-									un(34, i(6971)),	-- Fire Hardened Coif
-								})),
-								un(34, qc8(q(1941, {	-- Manaweave Robe
-									i(7509),	-- Manaweave Robe	-- NOTE: This item is actually obtainable so we only want to mark the quest as legacy
-								}))),
-								q(1364, {		-- Mazen's Behest
-									un(34, i(10747)),	-- Teacher's Sash
-									un(34, i(10748)),	-- Wanderlust Boots
-								}),
-								qc8(q(1861, {	-- Mirror Lake
-									i(7508),	-- Ley Orb
-									i(9513),	-- Ley Staff
-								})),
-								q(167, {		-- Oh Brother...
-									un(34, i(1893)),	-- Miner's Revenge
-								}),
-								q(6187, {		-- Order Must Be Restored
-									un(34, i(16996)),	-- Gorewood Bow
-									un(34, i(16998)),	-- Sacred Protector
-									un(34, i(16997)),	-- Stormrager
-								}),
-								q(1078, {		-- Retrieval for Mauren
-									un(34, i(6677)),	-- Spellcrafter Wand
-								}),	
-								qc4(q(2206, { 	-- Snatch and Grab
-									un(34, i(7298)),	-- Blade of Cunning
-								})),	
-								qp164(q(2758, {	-- The Origins of Smithing
-									un(34, i(9367, {	-- Plans: Golden Scale Gauntlets
-										un(8, i(9366)),		-- Golden Scale Gauntlets
-									})),
-								})),
-								qc9(q(397, {	-- You Have Served Us Well
-									un(34, i(3556)),	-- Dread Mage Hat
-								})),
-							}),
+							}))),
+							un(40, qc9(q(397, {	-- You Have Served Us Well
+								un(34, i(3556)),	-- Dread Mage Hat
+							}))),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(112527, { 	-- Doomsayer

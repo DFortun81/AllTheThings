@@ -1270,100 +1270,97 @@ _.Zones =
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 						n(-17, {	-- Quests
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qh(1848, {	-- Brutal Hauberk
-									un(34, i(7133)),	-- Brutal Hauberk
-								}),
-								qh(855, {	-- Centaur Bracers
-									un(34, i(5346)),	-- Orcish Battle Bow
-									un(34, i(5344)),	-- Pointed Axe
-									un(34, i(5345)),	-- Stonewood Hammer
-								}),
-								qh(899, {	-- Consumed by Hatred
-									un(34, i(5314)),	-- Boar Hunter's Cape
-									un(34, i(6477)),	-- Grassland Sash
-								}),
-								qh(862, {	-- Dig Rat Stew
-									un( 7, i( 5487)),	-- Recipe: Dig Rat Stew
-									un(34, i(10919)),	-- Apothecary Gloves
-								}),
-								qh(868, {	-- Egg Hunt
-									un(34, i(6503)),	-- Harlequin Robes
-									un(34, i(6502)),	-- Violet Scale Armor
-								}),
-								qh(1503, {	-- Forged Steel
-									["groups"] = {
-										un(34, i(7326)),	-- Thun'grim's Axe
-										un(34, i(7328)),	-- Thun'grim's Mace
-										un(34, i(7327)),	-- Thun'grim's Dagger
-										un(34, i(7329)),	-- Thun'grim's Sword
-									},
-									["classes"] = { 1 }	-- Warrior
-								}),
-								qh(3514, {	-- Horde Presence
-									un(34, i(10653)),	-- Trailblazer Boots
-									un(34, i(10654)),	-- Jutebraid Gloves
-								}),
-								qa(3370, {	-- In Nightmares
-									un(34, i(10657)),	-- Talbar Mantle
-									un(34, i(10658)),	-- Quagmire Galoshes
-								}),
-								qh(3369, {	-- In Nightmares
-									un(34, i(10657)),	-- Talbar Mantle
-									un(34, i(10658)),	-- Quagmire Galoshes
-								}),
-								qh( 873, {	-- Isha Awak
-									un(34, i(5356)),	-- Branding Rod
-									un(34, i(5357)),	-- Ward of the Vale
-									un(34, i(5355)),	-- Beastmaster's Girdle
-								}),
-								qh(3301, {	-- Mura Runetotem [This quest was repurposed and made obsolete twice]
-									un(34, i(10820)),	-- Jackseed Belt [WotLK version of quest]
-									un(34, i(10821)),	-- Sower's Cloak [WotLK version of quest]
-									un(34, i(59556)),	-- Shield of Inner Glow [Cata version of quest]
-									un(34, i(59557)),	-- Belt of Unwanted Aid [Cata version of quest]
-								}),
-								q( 865, {	-- Raptor Horns
-									un(34, i(5343)),	-- Barkeeper's Cloak
-								}),
-								qh(902, {	-- Samophlange
-									un(34, i(5324)),	-- Engineer's Hammer
-									un(34, i(5325)),	-- Welding Shield
-								}),
-								
-								qh(888, {	-- Stolen Booty
-									un(34, i(5337)),	-- Wayfaring Gloves
-									un(34, i(5320)),	-- Padded Lamellar Boots
-								}),
-								q(4964, {	-- The Completed Orb of Dar'Orahil
-									["groups"] = {
-										un(34, i(15108)),	-- Orb of Dar'Orahil
-										un(34, i(15106)),	-- Staff of Dar'Orahil
-									},
-									["classes"] = { 9 },	-- Warlock
-								}),
-								q(4975, {	-- The Completed Orb of Noh'Orahil
-									["groups"] = {
-										un(34, i(15107)),	-- Orb of Noh'Orahil
-										un(34, i(15105)),	-- Staff of Noh'Orahil
-									},
-									["classes"] = { 9 },	-- Warlock
-								}),
-								q(4786, {	-- The Completed Robe
-									["groups"] = {
-										un(34, i(6900)),	-- Enchanted Gold Bloodrobe
-									},
-									["classes"] = { 9 },	-- Warlock
-								}),
-								qh( 863, {	-- The Escape
-									un(34, i(5326)),	-- Flaring Baton
-									un(34, i(5327)),	-- Greasy Tinker's Pants
-								}),
-								qh( 891, {	-- The Guns of Northwatch
-									un(34, i(5309)),	-- Privateer Musket
-									un(34, i(5310)),	-- Sea Dog Britches
-								}),
-							}),
+							un(40, qh(1848, {	-- Brutal Hauberk
+								un(34, i(7133)),	-- Brutal Hauberk
+							})),
+							un(40, qh(855, {	-- Centaur Bracers
+								un(34, i(5346)),	-- Orcish Battle Bow
+								un(34, i(5344)),	-- Pointed Axe
+								un(34, i(5345)),	-- Stonewood Hammer
+							})),
+							un(40, qh(899, {	-- Consumed by Hatred
+								un(34, i(5314)),	-- Boar Hunter's Cape
+								un(34, i(6477)),	-- Grassland Sash
+							})),
+							un(40, qh(862, {	-- Dig Rat Stew
+								un( 7, i( 5487)),	-- Recipe: Dig Rat Stew
+								un(34, i(10919)),	-- Apothecary Gloves
+							})),
+							un(40, qh(868, {	-- Egg Hunt
+								un(34, i(6503)),	-- Harlequin Robes
+								un(34, i(6502)),	-- Violet Scale Armor
+							})),
+							un(40, qh(1503, {	-- Forged Steel
+								["groups"] = {
+									un(34, i(7326)),	-- Thun'grim's Axe
+									un(34, i(7328)),	-- Thun'grim's Mace
+									un(34, i(7327)),	-- Thun'grim's Dagger
+									un(34, i(7329)),	-- Thun'grim's Sword
+								},
+								["classes"] = { 1 }	-- Warrior
+							})),
+							un(40, qh(3514, {	-- Horde Presence
+								un(34, i(10653)),	-- Trailblazer Boots
+								un(34, i(10654)),	-- Jutebraid Gloves
+							})),
+							un(40, qa(3370, {	-- In Nightmares
+								un(34, i(10657)),	-- Talbar Mantle
+								un(34, i(10658)),	-- Quagmire Galoshes
+							})),
+							un(40, qh(3369, {	-- In Nightmares
+								un(34, i(10657)),	-- Talbar Mantle
+								un(34, i(10658)),	-- Quagmire Galoshes
+							})),
+							un(40, qh( 873, {	-- Isha Awak
+								un(34, i(5356)),	-- Branding Rod
+								un(34, i(5357)),	-- Ward of the Vale
+								un(34, i(5355)),	-- Beastmaster's Girdle
+							})),
+							un(40, qh(3301, {	-- Mura Runetotem [This quest was repurposed and made obsolete twice]
+								un(34, i(10820)),	-- Jackseed Belt [WotLK version of quest]
+								un(34, i(10821)),	-- Sower's Cloak [WotLK version of quest]
+								un(34, i(59556)),	-- Shield of Inner Glow [Cata version of quest]
+								un(34, i(59557)),	-- Belt of Unwanted Aid [Cata version of quest]
+							})),
+							un(40, q(865, {	-- Raptor Horns
+								un(34, i(5343)),	-- Barkeeper's Cloak
+							})),
+							un(40, qh(902, {	-- Samophlange
+								un(34, i(5324)),	-- Engineer's Hammer
+								un(34, i(5325)),	-- Welding Shield
+							})),
+							un(40, qh(888, {	-- Stolen Booty
+								un(34, i(5337)),	-- Wayfaring Gloves
+								un(34, i(5320)),	-- Padded Lamellar Boots
+							})),
+							un(40, q(4964, {	-- The Completed Orb of Dar'Orahil
+								["groups"] = {
+									un(34, i(15108)),	-- Orb of Dar'Orahil
+									un(34, i(15106)),	-- Staff of Dar'Orahil
+								},
+								["classes"] = { 9 },	-- Warlock
+							})),
+							un(40, q(4975, {	-- The Completed Orb of Noh'Orahil
+								["groups"] = {
+									un(34, i(15107)),	-- Orb of Noh'Orahil
+									un(34, i(15105)),	-- Staff of Noh'Orahil
+								},
+								["classes"] = { 9 },	-- Warlock
+							})),
+							un(40, q(4786, {	-- The Completed Robe
+								["groups"] = {
+									un(34, i(6900)),	-- Enchanted Gold Bloodrobe
+								},
+								["classes"] = { 9 },	-- Warlock
+							})),
+							un(40, qh( 863, {	-- The Escape
+								un(34, i(5326)),	-- Flaring Baton
+								un(34, i(5327)),	-- Greasy Tinker's Pants
+							})),
+							un(40, qh( 891, {	-- The Guns of Northwatch
+								un(34, i(5309)),	-- Privateer Musket
+								un(34, i(5310)),	-- Sea Dog Britches
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

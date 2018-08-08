@@ -269,26 +269,24 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qa(417, {	-- A Pilot's Revenge
-									un(34, i(2218)),	-- Craftsman's Dagger
-									un(34, i(1009)),	-- Compact Hammer
-								}),
-								qa(5625, {	-- Garments of the Light
-									["groups"] = {
-										un(34, i(16605)),	-- Friar's Robes of the Light
-									},
-									["races"] = { 3 },	-- Dwarf
-									["classes"] = { 5 },	-- Priest
-								}),
-								qdg(qa(4126, {	-- Hurley Blackbreath
-									un(34, i(11964)),	-- Swiftstrike Cudgel
-									un(34, i(12000)),	-- Limb Cleaver
-								})),
-								qa(466, {	-- Search for Incendicite
-									un(34, i(3565)),	-- Beerstained Gloves
-								}),
-							}),
+							un(40, qa(417, {	-- A Pilot's Revenge
+								un(34, i(2218)),	-- Craftsman's Dagger
+								un(34, i(1009)),	-- Compact Hammer
+							})),
+							un(40, qa(5625, {	-- Garments of the Light
+								["groups"] = {
+									un(34, i(16605)),	-- Friar's Robes of the Light
+								},
+								["races"] = { 3 },	-- Dwarf
+								["classes"] = { 5 },	-- Priest
+							})),
+							un(40, qdg(qa(4126, {	-- Hurley Blackbreath
+								un(34, i(11964)),	-- Swiftstrike Cudgel
+								un(34, i(12000)),	-- Limb Cleaver
+							}))),
+							un(40, qa(466, {	-- Search for Incendicite
+								un(34, i(3565)),	-- Beerstained Gloves
+							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(1271, { 	-- Old Icebeard
@@ -592,14 +590,14 @@ _.Zones =
 						}),
 						n(-40, {	-- Legacy
 							["groups"] = {
-								nlq({	-- Quests (Legacy)
-									qa(31138, {		-- The Arts of a Monk
+								n(-17, {	-- Quests (Legacy)
+									un(40, qa(31138, {		-- The Arts of a Monk
 										["groups"] = {
 											un(34, i(59042)), 	-- Electro-Staff
 										},
 										["classes"] = { 10 },	-- Monk
 										["races"] = { 7 },	-- Gnome
-									}),
+									})),
 								}),
 								n(-16, {	-- Rares (Legacy)
 									n(8503, { -- Gibblewilt

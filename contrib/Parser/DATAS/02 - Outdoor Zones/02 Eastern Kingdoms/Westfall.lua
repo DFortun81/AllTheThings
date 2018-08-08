@@ -521,25 +521,23 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								q(153, {	-- Red Leather Bandanas
-									un(34, i(3511)),	-- Cloak of the People's Militia
-									un(34, i(5944)),	-- Greaves of the People's Militia
-									un(34, i(12295)),	-- Leggings of the People's Militia
-								}),
-								q(9, {	-- The Killing Fields
-									un(34, i(3578)),	-- Harvester's Pants
-									un(34, i(1561)),	-- Harvester's Robe
-								}),
-								q(14, {	-- The People's Militia
-									un(34, i(1566)),	-- Edge of the People's Militia 
-									un(34, i(1480)),	-- Fist of the People's Militia
-									un(34, i(12296)),	-- Spark of the People's Militia
-								}),
-								qc2(q(1652, { 	-- The Tome of Valor
-									un(34, i(9607)),	-- Bastion of Stormwind 
-								})),
-							}),
+							un(40, q(153, {	-- Red Leather Bandanas
+								un(34, i(3511)),	-- Cloak of the People's Militia
+								un(34, i(5944)),	-- Greaves of the People's Militia
+								un(34, i(12295)),	-- Leggings of the People's Militia
+							})),
+							un(40, q(9, {	-- The Killing Fields
+								un(34, i(3578)),	-- Harvester's Pants
+								un(34, i(1561)),	-- Harvester's Robe
+							})),
+							un(40, q(14, {	-- The People's Militia
+								un(34, i(1566)),	-- Edge of the People's Militia 
+								un(34, i(1480)),	-- Fist of the People's Militia
+								un(34, i(12296)),	-- Spark of the People's Militia
+							})),
+							un(40, qc2(q(1652, { 	-- The Tome of Valor
+								un(34, i(9607)),	-- Bastion of Stormwind 
+							}))),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(619, { 	-- Defias Conjurer 

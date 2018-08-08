@@ -752,61 +752,59 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40 }, {
-								qdg(qh(6521, {	-- An Unholy Alliance
-									un(34, i(17039)),	-- Skullbreaker
-									un(34, i(17042)),	-- Nail Splitter
-									un(34, i(17043)),	-- Zealot's Robe
-								})),
-								qh(515, {	-- Elixir of Agony
-									un(34, i(3749)),	-- High Apothecary Cloak
-									un(34, i(3747)),	-- Meditative Sash
-								}),
-								qh(1394, {	-- Final Passage
-									un(34, i(6804)),	-- Windstorm Hammer
-									un(34, i(6806)),	-- Dancing Flame
-								}),
-								qh( 737, {	-- Forbidden Knowledge
-									un(34, i(4984)),	-- Skull of Impending Doom
-								}),
-								qdg(qh(1048, {	-- Into the Scarlet Monastery
-									un(34, i(6802)),	-- Sword of Omen
-									un(34, i(6803)),	-- Prophetic Cane
-								})),
-								qh(4642, {	-- Melding of Influences
-									un(34, i(15703)),	-- Chemist's Smock
-								}),
-								qh(8273, {	-- Oran's Gratitude
-									un(34, i(20643)),	-- Undercity Reservist's Cap
-									un(34, i(20642)),	-- Antiquated Nobleman's Tunic
-								}),
-								qh(1358, {	-- Sample for Helbrim
-									un(34, i(10637)),	-- Brewer's Gloves
-									un(34, i(10638)),	-- Long Draping Cape
-								}),
-								qh(1962, {	-- Spellfire Robes
-									["groups"] = {
-										un(34, i(7510)),	-- Lesser Spellfire Robes
-									},
-									["classes"] = { 8 },	-- Mage
-								}),
-								qh(1882, {	-- The Balnir Farmstead
-									["groups"] = {
-										un(34, i(7507)),	-- Arcane Orb
-										un(34, i(9514)),	-- Arcane Staff
-									},
-									["classes"] = { 8 },	-- Mage
-								}),
-								qdg(qh(5725, {	-- The Power to Destroy
-									un(34, i(15449)),	-- Ghastly Trousers
-									un(34, i(15450)),	-- Dredgemire Leggings
-									un(34, i(15451)),	-- Gargoyle Leggings
-								})),
-								qh(1164, {	-- To Steal From Thieves
-									un(34, i(4443)),	-- Grim Pauldrons
-									un(34, i(2032)),	-- Gallan Cuffs
-								}),
-							}),
+							un(40, qdg(qh(6521, {	-- An Unholy Alliance
+								un(34, i(17039)),	-- Skullbreaker
+								un(34, i(17042)),	-- Nail Splitter
+								un(34, i(17043)),	-- Zealot's Robe
+							}))),
+							un(40, qh(515, {	-- Elixir of Agony
+								un(34, i(3749)),	-- High Apothecary Cloak
+								un(34, i(3747)),	-- Meditative Sash
+							})),
+							un(40, qh(1394, {	-- Final Passage
+								un(34, i(6804)),	-- Windstorm Hammer
+								un(34, i(6806)),	-- Dancing Flame
+							})),
+							un(40, qh( 737, {	-- Forbidden Knowledge
+								un(34, i(4984)),	-- Skull of Impending Doom
+							})),
+							un(40, qdg(qh(1048, {	-- Into the Scarlet Monastery
+								un(34, i(6802)),	-- Sword of Omen
+								un(34, i(6803)),	-- Prophetic Cane
+							}))),
+							un(40, qh(4642, {	-- Melding of Influences
+								un(34, i(15703)),	-- Chemist's Smock
+							})),
+							un(40, qh(8273, {	-- Oran's Gratitude
+								un(34, i(20643)),	-- Undercity Reservist's Cap
+								un(34, i(20642)),	-- Antiquated Nobleman's Tunic
+							})),
+							un(40, qh(1358, {	-- Sample for Helbrim
+								un(34, i(10637)),	-- Brewer's Gloves
+								un(34, i(10638)),	-- Long Draping Cape
+							})),
+							un(40, qh(1962, {	-- Spellfire Robes
+								["groups"] = {
+									un(34, i(7510)),	-- Lesser Spellfire Robes
+								},
+								["classes"] = { 8 },	-- Mage
+							})),
+							un(40, qh(1882, {	-- The Balnir Farmstead
+								["groups"] = {
+									un(34, i(7507)),	-- Arcane Orb
+									un(34, i(9514)),	-- Arcane Staff
+								},
+								["classes"] = { 8 },	-- Mage
+							})),
+							un(40, qdg(qh(5725, {	-- The Power to Destroy
+								un(34, i(15449)),	-- Ghastly Trousers
+								un(34, i(15450)),	-- Dredgemire Leggings
+								un(34, i(15451)),	-- Gargoyle Leggings
+							}))),
+							un(40, qh(1164, {	-- To Steal From Thieves
+								un(34, i(4443)),	-- Grim Pauldrons
+								un(34, i(2032)),	-- Gallan Cuffs
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

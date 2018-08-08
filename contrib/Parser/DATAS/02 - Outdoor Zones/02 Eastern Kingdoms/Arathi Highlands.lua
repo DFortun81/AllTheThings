@@ -1080,38 +1080,36 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qh(679, {	-- Call to Arms
-									un(34, i(9520)),	-- Silent Hunter
-									un(34, i(9521)),	-- Skullsplitter
-								}),
-								q(  662, {	-- Deep Sea Salvage
-									un(34, i(4511)),	-- Black Water Hammer
-								}),
-								qh(4545, {	-- Foul Magics
-									un(34, i(4543)),	-- White Drakeskin Cap
-									un(34, i(4545)),	-- Radiant Silver Bracers
-								}),
-								qa( 661, {	-- Hints of a New Plague?
-									un(34, i(15455)),	-- Dustfall Robes
-									un(34, i(15456)),	-- Lightstep Leggings
-								}),
-								qa( 697, {	-- Malin's Request
-									un(34, i( 4975)),	-- Vigilant Buckler
-									un(34, i(15104)),	-- Wingborne Boots
-								}),
-								q(  666, {	-- Sunken Treasure
-									un(34, i(4547)),	-- Gnomish Zapper
-									un(34, i(4548)),	-- Servomechanic Sledgehammer
-								}),
-								qa( 685, {	-- Wanted! Otto and Falconcrest
-									un(34, i(5247)),	-- Rod of Sorrow
-									un(34, i(4745)),	-- War Rider Bracers
-								}),
-								qa( 684, {	-- Wanted! Marez Cowl
-									un(34, i(4744)),	-- Arcane Runed Bracers
-								}),
-							}),
+							un(40, qh(679, {	-- Call to Arms
+								un(34, i(9520)),	-- Silent Hunter
+								un(34, i(9521)),	-- Skullsplitter
+							})),
+							un(40, q(  662, {	-- Deep Sea Salvage
+								un(34, i(4511)),	-- Black Water Hammer
+							})),
+							un(40, qh(4545, {	-- Foul Magics
+								un(34, i(4543)),	-- White Drakeskin Cap
+								un(34, i(4545)),	-- Radiant Silver Bracers
+							})),
+							un(40, qa( 661, {	-- Hints of a New Plague?
+								un(34, i(15455)),	-- Dustfall Robes
+								un(34, i(15456)),	-- Lightstep Leggings
+							})),
+							un(40, qa( 697, {	-- Malin's Request
+								un(34, i( 4975)),	-- Vigilant Buckler
+								un(34, i(15104)),	-- Wingborne Boots
+							})),
+							un(40, q(  666, {	-- Sunken Treasure
+								un(34, i(4547)),	-- Gnomish Zapper
+								un(34, i(4548)),	-- Servomechanic Sledgehammer
+							})),
+							un(40, qa( 685, {	-- Wanted! Otto and Falconcrest
+								un(34, i(5247)),	-- Rod of Sorrow
+								un(34, i(4745)),	-- War Rider Bracers
+							})),
+							un(40, qa( 684, {	-- Wanted! Marez Cowl
+								un(34, i(4744)),	-- Arcane Runed Bracers
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

@@ -1039,41 +1039,39 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								q(8798, {	-- A Yeti of Your Own
-									["groups"] = {
-										un(8, recipe(26011)),	-- Tranquil Mechanical Yeti
-									},
-									["qg"] = 10305,	-- Umi Rumplesnicker
-									["description"] = "The quest that teaches this recipe was removed, but Engineers who learned it before can still craft this pet.  Tranquil Mechanical Yeti can also be found inside Blingtron boxes.",
-								}),
-								q(28516),	-- Centuries of Suffering
-								qa(4970),	-- Frostsaber Provisions
-								q( 5121, {	-- High Chief Winterfall
-									un(34, i(15784)),	-- Crystal Breeze Mantle
-									un(34, i(15786)),	-- Fempulse Jerkin
-									un(34, i(15787)),	-- Willow Band Hauberk
-								}),
-								qg(10618, qa( 5981)),	-- Rampaging Giants
-								q( 4810, {	-- Return to Tinkee
-									un(34, i(15862)),	-- Blitzcleaver
-									un(34, i(15863)),	-- Grave Scepter
-								}),
-								q( 5056, {	-- Shy-Rotam
-									un(34, i(15783)),	-- Beasthunter Dagger
-									un(34, i(15782)),	-- Beaststalker Blade
-								}),
-								q( 4842, {	-- Strange Sources
-									un(34, i(15789)),	-- Deep River Cloak
-								}),
-								qa(5253, {	-- The Crystal of Zin-Malor
-									un(34, i(15791)),	-- Turquoise Sash
-									un(34, i(15792)),	-- Plow Wood Spaulders
-									un(34, i(15795)),	-- Emerald Mist Gauntlets
-								}),
-								q( 28462),	-- Winterfall Firewater (removed with Cata)
-								qg(10618, qa( 5201)),	-- Winterfall Intrusion
-							}),
+							un(40, q(8798, {	-- A Yeti of Your Own
+								["groups"] = {
+									un(8, recipe(26011)),	-- Tranquil Mechanical Yeti
+								},
+								["qg"] = 10305,	-- Umi Rumplesnicker
+								["description"] = "The quest that teaches this recipe was removed, but Engineers who learned it before can still craft this pet.  Tranquil Mechanical Yeti can also be found inside Blingtron boxes.",
+							})),
+							un(40, q(28516)),	-- Centuries of Suffering
+							un(40, qa(4970)),	-- Frostsaber Provisions
+							un(40, q( 5121, {	-- High Chief Winterfall
+								un(34, i(15784)),	-- Crystal Breeze Mantle
+								un(34, i(15786)),	-- Fempulse Jerkin
+								un(34, i(15787)),	-- Willow Band Hauberk
+							})),
+							un(40, qg(10618, qa( 5981))),	-- Rampaging Giants
+							un(40, q( 4810, {	-- Return to Tinkee
+								un(34, i(15862)),	-- Blitzcleaver
+								un(34, i(15863)),	-- Grave Scepter
+							})),
+							un(40, q( 5056, {	-- Shy-Rotam
+								un(34, i(15783)),	-- Beasthunter Dagger
+								un(34, i(15782)),	-- Beaststalker Blade
+							})),
+							un(40, q( 4842, {	-- Strange Sources
+								un(34, i(15789)),	-- Deep River Cloak
+							})),
+							un(40, qa(5253, {	-- The Crystal of Zin-Malor
+								un(34, i(15791)),	-- Turquoise Sash
+								un(34, i(15792)),	-- Plow Wood Spaulders
+								un(34, i(15795)),	-- Emerald Mist Gauntlets
+							})),
+							un(40, q( 28462)),	-- Winterfall Firewater (removed with Cata)
+							un(40, qg(10618, qa( 5201))),	-- Winterfall Intrusion
 						}),
 						-- n(-16, {	-- Rares (Legacy)
 						-- }),
