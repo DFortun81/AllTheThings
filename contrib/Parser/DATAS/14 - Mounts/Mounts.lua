@@ -109,6 +109,7 @@ _.Mounts =
 		i(147806),	-- Cloudwing Hippogryph
 		i(95059),	-- Clutch of Ji-Kun
 		i(94228),	-- Cobalt Primordial Direhorn
+		i(163583),  -- Craghorn Chasm-Leaper
 		i(152905),	-- Crimson Slavermaw
 		i(152843),	-- Darkspore Mana Ray Mount
 		i(63040),	-- Drake of the North Wind
@@ -152,6 +153,7 @@ _.Mounts =
 		i(49636),	-- Onyxian Drake
 		i(63042),	-- Phosphorescent Stone Drake
 		i(69224),	-- Pureblood Fire Hawk
+		i(163582),  -- Qinsho's Eternal Hound
 		i(32768),	-- Raven Lord
 		i(94291),	-- Red Primal Raptor
 		i(21321),	-- Red Qiraji Battle Tank
@@ -167,9 +169,11 @@ _.Mounts =
 		i(142552),	-- Smoldering Ember Wyrm
 		i(116771),	-- Solar Spirehawk
 		i(89783),	-- Son of Galleon
+		i(163586),  -- Squawks
 		i(93666),	-- Spawn of Horridon
 		i(67151),	-- Subdued Seahorse
 		i(116792),	-- Sunhide Gronnling
+		i(163585),  -- Surf Jelly
 		i(116773),	-- Swift Breezestrider
 		i(35513),	-- Swift White Hawkstrider
 		i(68824),	-- Swift Zulian Panther
@@ -178,6 +182,7 @@ _.Mounts =
 		i(90655),	-- Thundering Ruby Cloud Serpent
 		i(44168),	-- Time-Lost Proto-Drake
 		i(116658),	-- Tundra Icehoof
+		i(163584),  -- Twilight Avenger
 		i(43954),	-- Twilight Drake
 		i(160829),	-- Underrot Crawg Harness
 		i(147805),	-- Valarjar Stormwing

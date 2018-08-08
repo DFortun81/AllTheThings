@@ -111,3 +111,8 @@ i(163216, 250735);  -- Bloodgorged Crawg
 i(163577, 279454);	-- Conquerer's Scythemaw
 i(161665, 275837);	-- Cobalt Pterrordax
 i(153594, 256123);	-- Xiwyllag ATV
+i(163583, 279467); -- Craghorn Chasm-Leaper
+i(163582, 279469); -- Qinsho's Eternal Hound
+i(163586, 254811); -- Squawks
+i(163585, 278979); -- Surf Jelly
+i(163584, 279466); -- Twilight Avenger

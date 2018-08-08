@@ -883,7 +883,7 @@ AllTheThings.Locales.enUS = {
 		[-70] = DUNGEON_FLOOR_DESOLACE22.." - "..GetSpellInfo(251097),			-- Foulspore Cavern [Orange]
 		[-71] = DUNGEON_FLOOR_DESOLACE21.." - "..GetSpellInfo(251095),			-- The Wicked Grotto [Purple]
 		[-72] = "Sargerei War Council",
-		[-73] = "Blackrock Mountain",
+		--[-73] = Removed due to now having it's own map.  Feel free to reuse
 		[-74] = ZONE.." "..WIDE, 												-- Zone Wide
 		[-75] = DUNGEON_FLOOR_BLACKROCKDEPTHS1,  								-- Detention Block
 		[-76] = DUNGEON_FLOOR_BLACKROCKDEPTHS2,  								-- Shadowforge City
@@ -1378,6 +1378,37 @@ AllTheThings.Locales.enUS = {
 		[-3311] = BATTLEGROUND_HOLIDAY,		-- Call To Arms [LFD Queue]
 		[-3312] = "Turbulent Set",
 		[-3313] = "Grandiose Set",
+
+-- Island Expedition Sets
+		[-3315] = "Spider Acolyte",
+		[-3316] = "Hydraxian",
+		[-3317] = "Frostwind",
+		[-3318] = "Faceless Follower",
+		[-3319] = "Swarmfury",
+
+		[-3320] = "Spiritbough",
+		[-3321] = "Tranquil Path",
+		[-3322] = "Miststalker",
+		[-3323] = "Whirling Dervish",
+		[-3324] = "Feralbark",
+		[-3325] = "Firekin",
+
+		[-3326] = "Wild Marauder",
+		[-3327] = "Dragonrider",
+		[-3328] = "Saurok",
+		[-3329] = "Mrrglurggl",
+		[-3330] = "Headshrinker",
+		[-3331] = "Voodoo Stalker",
+
+		[-3332] = "Geocrag",
+		[-3333] = "Razorfin",
+		[-3334] = "Tomb-Keeper",
+		[-3335] = "Bloodwake",
+		[-3336] = "Rattling Bone",
+		[-3337] = "Twilight Dragon",
+		[-3338] = ISLANDS_HEADER,													-- Island Expeditions
+		[-3339] = LOOT_JOURNAL_ITEM_SETS,											-- Item Sets
+
 -- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
 		[-4168] = "The Scale's Embrace",
