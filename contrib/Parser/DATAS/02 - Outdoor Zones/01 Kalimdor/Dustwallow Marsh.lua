@@ -1440,61 +1440,59 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
-							["groups"] = bubbleDown({["u"] = 40}, {
-								qa(11148, {	-- Arms of the Grimtotems
-									un(34, i(33272)),	-- Biting Axe
-								}),
-								q(1958, {	-- Celestial Power
-									["groups"] = {
-										un(34, i(7515)),	-- Celestial Orb
-										un(34, i(9517)),	-- Celestial Stave
-									},
-									["classes"] = { 8 },	-- Mage
-								}),
-								qh(1173, {	-- Challenge Overlord Mok'Morokk
-									un(34, i(10703)),	-- Fiendish Skiv
-									un(34, i(10704)),	-- Chillnail Splinter
-								}),
-								qh(1169, {	-- Identifying the Brood
-									un(34, i(9703)),	-- Scorched Cape
-									un(34, i(9704)),	-- Rustler Gloves
-								}),
-								qh(11206, {	-- Justice Dispensed
-									un(34, i(33230)),	-- Leggings of the Long Road
-									un(34, i(33243)),	-- Skirmisher's Cover
-									un(34, i(33251)),	-- Steel-banded Hauberk
-								}),
-								qh(11200, {	-- More than Coincidence
-									un(34, i(33272)),	-- Biting Axe
-								}),
-								qa(11152, {	-- Peace at Last
-									un(34, i(33230)),	-- Leggings of the Long Road
-									un(34, i(33243)),	-- Skirmisher's Cover
-									un(34, i(33251)),	-- Steel-banded Hauberk
-								}),
-								qa(11223, {	-- Return to Jaina
-									un(34, i(33269)),	-- Bejeweled Dagger
-									un(34, i(33252)),	-- Gleaming Scale Breastplate
-								}),
-								qa(11198, {	-- Take Down Tethyr!
-									un(34, i(33228)),	-- Crimson Tunic
-									i(33247),	-- Swift Wind Spaulders
-									un(34, i(33253)),	-- Golden Helm
-								}),
-								qh(1172, {	-- The Brood of Onyxia
-									un(34, i(10700)),	-- Encarmine Boots
-									un(34, i(10701)),	-- Boots of Zua'tec
-								}),
-								qa(11134, {	-- The End of the Deserters
-									un(34, i(33232)),	-- Journeyman's Cowl
-									un(34, i(33249)),	-- Boots of the Skirmisher
-									un(34, i(33274)),	-- Mercenary's Crossbow
-								}),
-								qdg(q(2846, {	-- Tiara of the Deep
-									un(34, i(9527)),	-- Spellshifter Rod
-									un(34, i(9531)),	-- Gemshale Pauldrons
-								})),
-							}),
+							un(40, qa(11148, {	-- Arms of the Grimtotems
+								un(34, i(33272)),	-- Biting Axe
+							})),
+							un(40, q(1958, {	-- Celestial Power
+								["groups"] = {
+									un(34, i(7515)),	-- Celestial Orb
+									un(34, i(9517)),	-- Celestial Stave
+								},
+								["classes"] = { 8 },	-- Mage
+							})),
+							un(40, qh(1173, {	-- Challenge Overlord Mok'Morokk
+								un(34, i(10703)),	-- Fiendish Skiv
+								un(34, i(10704)),	-- Chillnail Splinter
+							})),
+							un(40, qh(1169, {	-- Identifying the Brood
+								un(34, i(9703)),	-- Scorched Cape
+								un(34, i(9704)),	-- Rustler Gloves
+							})),
+							un(40, qh(11206, {	-- Justice Dispensed
+								un(34, i(33230)),	-- Leggings of the Long Road
+								un(34, i(33243)),	-- Skirmisher's Cover
+								un(34, i(33251)),	-- Steel-banded Hauberk
+							})),
+							un(40, qh(11200, {	-- More than Coincidence
+								un(34, i(33272)),	-- Biting Axe
+							})),
+							un(40, qa(11152, {	-- Peace at Last
+								un(34, i(33230)),	-- Leggings of the Long Road
+								un(34, i(33243)),	-- Skirmisher's Cover
+								un(34, i(33251)),	-- Steel-banded Hauberk
+							})),
+							un(40, qa(11223, {	-- Return to Jaina
+								un(34, i(33269)),	-- Bejeweled Dagger
+								un(34, i(33252)),	-- Gleaming Scale Breastplate
+							})),
+							un(40, qa(11198, {	-- Take Down Tethyr!
+								un(34, i(33228)),	-- Crimson Tunic
+								i(33247),	-- Swift Wind Spaulders (moved to new version of quest)
+								un(34, i(33253)),	-- Golden Helm
+							})),
+							un(40, qh(1172, {	-- The Brood of Onyxia
+								un(34, i(10700)),	-- Encarmine Boots
+								un(34, i(10701)),	-- Boots of Zua'tec
+							})),
+							un(40, qa(11134, {	-- The End of the Deserters
+								un(34, i(33232)),	-- Journeyman's Cowl
+								un(34, i(33249)),	-- Boots of the Skirmisher
+								un(34, i(33274)),	-- Mercenary's Crossbow
+							})),
+							un(40, qdg(q(2846, {	-- Tiara of the Deep
+								un(34, i(9527)),	-- Spellshifter Rod
+								un(34, i(9531)),	-- Gemshale Pauldrons
+							}))),
 						}),
 						un(43, n(4368), { -- Strashaz Myrmidon
 							["groups"] = {
