@@ -305,6 +305,14 @@ _.ExpansionFeatures =
 						i(163584), -- Twilight Avenger
 					}),
 					n(-161, { -- Toys
+						i(164375), -- Bad Mojo Banana
+						i(164373), -- Enchanted Soup Stone
+						i(164372), -- Jinyu Light Globe
+						i(164374), -- Magic Monkey Banana
+						i(163795), -- Oomgut Ritual Drum
+						i(164377), -- Regenerating Banana Bunch
+						i(163924), -- Whiskerwax Candle
+						i(164371), -- Yaungol Oil Stove
 					}),
 				},	
 				["icon"] = "Interface\\Icons\\INV_Misc_Bag_SatchelofCenarius",	

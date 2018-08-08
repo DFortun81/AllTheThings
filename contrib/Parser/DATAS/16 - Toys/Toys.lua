@@ -34,6 +34,7 @@ _.Toys =
 		i(90067),		-- B. F. F. Necklace
 		i(113540),		-- Ba'ruun's Bountiful Bloom
 		i(153193),  	-- Baarut the Brisk Toy
+		i(164375),		-- Bad Mojo Banana
 		i(129165), 		-- Barnacle-Encrusted Gem
 		i(153183),  	-- Barrier Generator
 		i(86565),		-- Battle Horn
@@ -64,6 +65,7 @@ _.Toys =
 		i(141298),		-- Displacer Meditation Stone
 		i(134019), 		-- Don Carlos' Famous Hat
 		i(134831),		-- Doomsayer's Robes
+		i(164373),		-- Enchanted Soup Stone
 		i(86590),		-- Essence of the Breeze
 		i(104309),		-- Eternal Kiln
 		i(86578),		-- Eternal Warrior's Sigil
@@ -90,6 +92,7 @@ _.Toys =
 		i(113631),		-- Hypnosis Goggles
 		i(118244),		-- Iron Buccaneer's Hat
 		i(127668),		-- Jewel of Hellfire
+		i(164372), 		-- Jinyu Light Globe
 		i(141299), 		-- Kaldorei Light Globe
 		i(86571),		-- Kang's Bindstone
 		i(116125), 		-- Klikixx's Webspinner
@@ -102,12 +105,14 @@ _.Toys =
 		i(153194),  	-- Legion Communication Orb
 		i(140786),		-- Ley Spider Eggs
 		i(63269),		-- Loaded Gnomish Dice
+		i(164374), 		-- Magic Monkey Banana
 		i(131900),		-- Majestic Elderhorn Hoof
 		i(142536), 		-- Memory Cube
 		i(113670),		-- Mournful Moan of Murmur
 		i(86568), 		-- Mr. Smite's Brass Compass
 		i(104262),		-- Odd Polished Stone
 		i(118224),		-- Ogre Brewing Kit
+		i(163795), 		-- Oomgut Ritual Drum
 		i(1973),		-- Orb of Deception
 		i(35275),		-- Orb of the Sin'dorei
 		i(120276),		-- Outrider's Bridle Chain
@@ -119,6 +124,7 @@ _.Toys =
 		un(7, i(140363)),	-- Pocket Fel Spreader
 		i(127394), 		-- Podling Camouflage
 		i(153181),  	-- Red Conservatory Scroll
+		i(164377), 		-- Regenerating Banana Bunch
 		i(104294), 		-- Rime of the Time-Lost Mariner
 		i(131811),		-- Rocfeather Skyhorn Kite
 		i(153253),  	-- S.F.E. Interceptor
@@ -171,10 +177,12 @@ _.Toys =
 		i(119219),		-- Warlord's Flag of Victory
 		i(104331), 		-- Warning Sign
 		i(117573), 		-- Wayfarer's Bonfire
+		i(163924), 		-- Whiskerwax Candle
 		i(113542),		-- Whispers of Rai'Vosh
 		i(141306),		-- Wisp in a Bottle
 		i(130214), 		-- Worn Doll
 		i(36862),		-- Worn Troll Dice
+		i(164371), 		-- Yaungol Oil Stove
 		i(153180),  	-- Yellow Conservatory Scroll
 	}),
 	n(-36, {	-- In-Game Shop
