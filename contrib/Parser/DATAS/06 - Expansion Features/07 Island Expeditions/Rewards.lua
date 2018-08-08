@@ -12,6 +12,13 @@ _.ExpansionFeatures =
 			n(-6015, {	-- Rewards
 				["groups"] = {
 					n(-3339, { -- Item Sets
+						i(164367), -- Plundered Blue Captain's Hat
+						i(164368), -- Plundered Crimson Captain's hat
+						i(164369), -- Plundered Pirate Admiral's Bicorne
+						i(164286), -- Plundered Runeecaster's Mantle
+						i(164285), -- Plundered Shoveltusk-Hide Shoulders
+						i(164287), -- Plundered Dragonrider Spaulders
+						i(164288), -- Plundered Gjalerbron Pauldrons
 						n(-43, { -- Cloth
 							n(-3315, { -- Spider Acolyte
 								["groups"] = {
