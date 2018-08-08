@@ -297,7 +297,15 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-					
+					n(-160, { -- Mounts
+						i(163583), -- Craghorn Chasm-Leaper
+						i(163582), -- Qinsho's Eternal Hound
+						i(163586), -- Squawks
+						i(163585), -- Surf Jelly
+						i(163584), -- Twilight Avenger
+					}),
+					n(-161, { -- Toys
+					}),
 				},	
 				["icon"] = "Interface\\Icons\\INV_Misc_Bag_SatchelofCenarius",	
 				["description"] = "|cff66ccffThese are the random rewards you can receive by completing an Island Expedition.  It is estimated that winning will give you a higher chance to receive a reward.\n\nNOTE: These rewards are subject to change and are currently what has been either found through Beta Testing or assumed to be as a reward.\n\nIf you receive something not listed here and you receive it please screenshot and submit to our discord and ping Lucetia with the \"@Lucetia\" command.|r",			
