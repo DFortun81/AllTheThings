@@ -2,14 +2,6 @@
 --    A C H I E V E M E N T S   M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
 _.Achievements = 
 {
 	n(-10055, { -- Expansion Features
@@ -106,7 +98,6 @@ _.Achievements =
 						crit(11),		-- Exploration: Colossal's Fall Dig Site
 						crit(12),		-- Exploration: Burial Fields
 						crit(13),		-- Exploration: Umbrafen Dig Site
-						
 					}),
 					a(ach(10167, {	-- Exploring the High Seas (Alliance)
 						crit(1),		-- The House Always Wins
@@ -132,14 +123,20 @@ _.Achievements =
 					})),
 					ach(9639),		-- Fight, Kill, Salute!
 					ach(9129, {		-- Filling the Ranks (20 - lvl 100)
-						a(i(111967)),	-- Dwarven Bunker, Level 3 [Blueprints]
-						h(i(116186)),	-- War Mill, Level 3 [Blueprints]
-						ach(9111),		-- Raising the Bar (10 - lvl 100)
-						ach(9110),		-- Following Up (1 - lvl 100)
+						["groups"] = {
+							a(i(111967)),	-- Dwarven Bunker, Level 3 [Blueprints]
+							h(i(116186)),	-- War Mill, Level 3 [Blueprints]
+							ach(9111),		-- Raising the Bar (10 - lvl 100)
+							ach(9110),		-- Following Up (1 - lvl 100)
+						},
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					ach(9497, {		-- Finding Your Waystones
-						a(i(109063)),	-- Mage Tower, Level 3 [Blueprints]
-						h(i(116197)),	-- Spirit Lodge, Level 3 [Blueprints]
+						["groups"] = {
+							a(i(109063)),	-- Mage Tower, Level 3 [Blueprints]
+							h(i(116197)),	-- Spirit Lodge, Level 3 [Blueprints]
+						},
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					a(ach(10015, {	-- Full Discography (Alliance)
 						crit(1),		-- The Burning Legion (Black Temple - Illidan Stormrage)
@@ -227,7 +224,10 @@ _.Achievements =
 					h(ach(9132)),	-- Garrison Buddies (Horde)
 					ach(9207),		-- Goren Invasion
 					ach(9487, {	-- Got My Mind On My Draenor Money (10,000)
-						i(111983),	-- Storehouse, Level 3 [Blueprints]
+						["groups"] = {
+							i(111983),	-- Storehouse, Level 3 [Blueprints]
+						},
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					ach(9128, {		-- Grand Master Draftsman (60)
 						ach(9126),		-- Master Draftsman (40)
@@ -294,21 +294,24 @@ _.Achievements =
 					ach(9246),		-- Master Draenor Crafter
 					ach(9265),		-- Master of Apexis
 					ach(9526, {		-- Master of Mounts
-						i(112003),		-- Stables, Level 3 [Blueprints]
-						crit(1),		-- Wolf Trained
-						crit(2),		-- Talbuk Trained
-						crit(3),		-- Clefthoof Trained
-						crit(4),		-- Boar Trained
-						crit(5),		-- Riverbeast Trained
-						crit(6),		-- Elekk Trained
-						ach(9538, {		-- Intro to Husbandry
-							crit(1),		-- Wrangling a Wolf
-							crit(2),		-- Taming a Talbuk
-							crit(3),		-- Capturing a Clefthoof
-							crit(4),		-- Besting a Boar
-							crit(5),		-- Requisition a Riverbeast
-							crit(6),		-- Entangling an Elekk
-						}),
+						["groups"] = {
+							i(112003),		-- Stables, Level 3 [Blueprints]
+							crit(1),		-- Wolf Trained
+							crit(2),		-- Talbuk Trained
+							crit(3),		-- Clefthoof Trained
+							crit(4),		-- Boar Trained
+							crit(5),		-- Riverbeast Trained
+							crit(6),		-- Elekk Trained
+							ach(9538, {		-- Intro to Husbandry
+								crit(1),		-- Wrangling a Wolf
+								crit(2),		-- Taming a Talbuk
+								crit(3),		-- Capturing a Clefthoof
+								crit(4),		-- Besting a Boar
+								crit(5),		-- Requisition a Riverbeast
+								crit(6),		-- Entangling an Elekk
+							}),
+						},
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					ach(10164, {	-- Master of the Seas
 						title(317),		-- Captain
@@ -445,8 +448,11 @@ _.Achievements =
 						ach(9139), 		-- On a Massive Numbeer of Missions
 					}),
 					ach(9523, {		-- Patrolling Draenor
-						i(111971),		-- Barracks, Level 3 [Blueprints]
-						ach(9146), 		-- Patrolling Mission Specialist
+						["groups"] = {
+							i(111971),		-- Barracks, Level 3 [Blueprints]
+							ach(9146), 		-- Patrolling Mission Specialist
+						},
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					ach(9826, {		-- Platinum Defender
 						crit(1),		-- Botani
@@ -460,7 +466,10 @@ _.Achievements =
 						ach(9162),		-- Bronze Defender
 					}),
 					ach(9468, {		-- Salvaging Pays Off
-						i(111977),		-- Salvage Yard, Level 3 [Blueprints]
+						["groups"] = {
+							i(111977),		-- Salvage Yard, Level 3 [Blueprints]
+						},
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					ach(9181, {		-- Save Those Buildings!
 						crit(1),		-- Goren
@@ -473,45 +482,54 @@ _.Achievements =
 					ach(9203),		-- Shadow Council Invasion
 					ach(9206),		-- Shadowmoon Clan Invasion
 					ach(9703, {		-- Stay Awhile and Listen
-						a(i(109065)),	-- Lunarfall Inn, Level 3 [Blueprints]
-						h(i(116432)),	-- Frostwall Tavern, Level 3 [Blueprints]
-						crit(1),		-- Cro's Revenge (H Bloodmaul Slag Mines - Gug'rokk)
-						crit(2),		-- Time-Lost Vikings (H Bloodmaul Slag Mines - Gug'rokk)
-						crit(3),		-- Feeling A Bit Morose (H Iron Docks - Skulloc)
-						crit(4),		-- The Brass Compass (H Iron Docks - Skulloc)
-						crit(5),		-- The Soulcutter (H Auchindoun - Teron'gor)
-						crit(6),		-- The Cure For Death (H Auchindoun - Teron'gor)
-						crit(7),		-- Gloriously Incandescent (H Skyreach - High Sage Viryx)
-						crit(8),		-- Aviana's Request (H Skyreach - High Sage Viryx)
-						crit(9),		-- Family Traditions (H Upper Blackrock Spire - Warlord Zaela)
-						crit(10),		-- Damsels and Dragons (H Upper Blackrock Spire - Warlord Zaela)
-						crit(11),		-- Shadowy Secrets (H Shadowmoon Burial Grounds - Ner'zhul)
-						crit(12),		-- The Huntresses (H Shadowmoon Burial Grounds - Ner'zhul)
-						crit(13),		-- Cenarion Concerns (H Everbloom - Yalnu)
-						crit(14),		-- Titanic Evolution (H Everbloom - Yalnu)
-						crit(15),		-- And No Maces! (H Grimrail Depot - Skylord Tovra)
-						crit(16),		-- Cleaving Time (H Grimrail Depot - Skylord Tovra)
-						crit(17),		-- Oralius' Adventure (H Upper Blackrock Spire - Warlord Zaela)
-						crit(18),		-- The Void-Gate (H Shadowmoon Burial Grounds - Ner'zhul)
-						crit(19),		-- For the Birds (H Everbloom - Yalnu)
-						crit(20),		-- Cold Steel (H Grimrail Depot - Skylord Tovra)
+						["groups"] = {
+							a(i(109065)),	-- Lunarfall Inn, Level 3 [Blueprints]
+							h(i(116432)),	-- Frostwall Tavern, Level 3 [Blueprints]
+							crit(1),		-- Cro's Revenge (H Bloodmaul Slag Mines - Gug'rokk)
+							crit(2),		-- Time-Lost Vikings (H Bloodmaul Slag Mines - Gug'rokk)
+							crit(3),		-- Feeling A Bit Morose (H Iron Docks - Skulloc)
+							crit(4),		-- The Brass Compass (H Iron Docks - Skulloc)
+							crit(5),		-- The Soulcutter (H Auchindoun - Teron'gor)
+							crit(6),		-- The Cure For Death (H Auchindoun - Teron'gor)
+							crit(7),		-- Gloriously Incandescent (H Skyreach - High Sage Viryx)
+							crit(8),		-- Aviana's Request (H Skyreach - High Sage Viryx)
+							crit(9),		-- Family Traditions (H Upper Blackrock Spire - Warlord Zaela)
+							crit(10),		-- Damsels and Dragons (H Upper Blackrock Spire - Warlord Zaela)
+							crit(11),		-- Shadowy Secrets (H Shadowmoon Burial Grounds - Ner'zhul)
+							crit(12),		-- The Huntresses (H Shadowmoon Burial Grounds - Ner'zhul)
+							crit(13),		-- Cenarion Concerns (H Everbloom - Yalnu)
+							crit(14),		-- Titanic Evolution (H Everbloom - Yalnu)
+							crit(15),		-- And No Maces! (H Grimrail Depot - Skylord Tovra)
+							crit(16),		-- Cleaving Time (H Grimrail Depot - Skylord Tovra)
+							crit(17),		-- Oralius' Adventure (H Upper Blackrock Spire - Warlord Zaela)
+							crit(18),		-- The Void-Gate (H Shadowmoon Burial Grounds - Ner'zhul)
+							crit(19),		-- For the Birds (H Everbloom - Yalnu)
+							crit(20),		-- Cold Steel (H Grimrail Depot - Skylord Tovra)
+						},
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					ach(8933),		-- Staying Regular
 					ach(9527, {		-- Terrific Technology
-						a(i(111985)),	-- Gnomish Gearworks, Level 3 [Blueprints]
-						h(i(116201)),	-- Goblin Workshop, Level 3 [Blueprints]
-						crit(1),		-- Robo-Rooster
-						crit(2),		-- Sticky Grenade
-						crit(3),		-- Pneumatic Power Gauntlet
-						crit(4),		-- Prototype Mekgineer's Chopper
-						crit(5),		-- "Skyterror" Personal Delivery System
-						crit(6),		-- GG-117 Micro-Jetpack
-						crit(7),		-- Sentry Turrets
-						crit(8),		-- XD-57 "Bullseye" Guided Rocket
-						crit(9),		-- Paint Target
+						["groups"] = {
+							a(i(111985)),	-- Gnomish Gearworks, Level 3 [Blueprints]
+							h(i(116201)),	-- Goblin Workshop, Level 3 [Blueprints]
+							crit(1),		-- Robo-Rooster
+							crit(2),		-- Sticky Grenade
+							crit(3),		-- Pneumatic Power Gauntlet
+							crit(4),		-- Prototype Mekgineer's Chopper
+							crit(5),		-- "Skyterror" Personal Delivery System
+							crit(6),		-- GG-117 Micro-Jetpack
+							crit(7),		-- Sentry Turrets
+							crit(8),		-- XD-57 "Bullseye" Guided Rocket
+							crit(9),		-- Paint Target
+						},
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					ach(9495, {		-- The Bone Collector
-						i(111981),		-- Gladiator's Sanctum, Level 3 [Blueprints]
+						["groups"] = {
+							i(111981),		-- Gladiator's Sanctum, Level 3 [Blueprints]
+						},
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					ach(9143, { 	-- The Rarer the Better
 						ach(9142), 		-- Keeping It Rare
@@ -540,7 +558,10 @@ _.Achievements =
 					ach(9452, {		-- Trap Superstar (500)
 						ach(9451),		-- Trapper's Delight (250)
 						ach(9565, {		-- Master Trapper (125)
-							i(111969),		-- Barn, Level 3 [Blueprints]
+							["groups"] = {
+								i(111969),		-- Barn, Level 3 [Blueprints]
+							},
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9450),		-- The Trap Game (50)
 					}),
@@ -548,10 +569,13 @@ _.Achievements =
 						ach(9145), 		-- Treasure Mission Specialist
 					}),
 					ach(9429, {		-- Upgrading the Mill
-						i(109255),		-- Lumber Mill, Level 3 [Blueprints]
-						crit(1), 		-- Place 75 Work Order at the Lumber Mill
-						crit(2),		-- Legacy of the Ancients
-						crit(3),		-- Reduction in Force
+						["groups"] = {
+							i(109255),		-- Lumber Mill, Level 3 [Blueprints]
+							crit(1), 		-- Place 75 Work Order at the Lumber Mill
+							crit(2),		-- Legacy of the Ancients
+							crit(3),		-- Reduction in Force
+						},
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					a(ach(9738, {	-- Warlord of Draenor (Alliance) achievements used instead of criteria as criteria are behaving strangely with debug mode on
 						title(269),		-- ,Warlord of Draenor
@@ -585,14 +609,17 @@ _.Achievements =
 					}),
 					ach(9407, {		-- Working Many Orders (750)
 						ach(9406, {		-- Working More Orders (250)
-							i(111930),		-- Alchemy Lab, Level 3 [Blueprints]
-							i(111973),		-- Enchanter's Study, Level 3 [Blueprints]
-							i(109257),		-- Engineering Works, Level 3 [Blueprints]
-							i(111975),		-- Gem Boutique, Level 3 [Blueprints]
-							i(111979),		-- Scribe's Quarters, Level 3 [Blueprints]
-							i(111989),		-- The Tannery, Level 3 [Blueprints]
-							i(111991),		-- The Forge, Level 3 [Blueprints]
-							i(111993),		-- Tailoring Emporium, Level 3 [Blueprints]
+							["groups"] = {
+								i(111930),		-- Alchemy Lab, Level 3 [Blueprints]
+								i(111973),		-- Enchanter's Study, Level 3 [Blueprints]
+								i(109257),		-- Engineering Works, Level 3 [Blueprints]
+								i(111975),		-- Gem Boutique, Level 3 [Blueprints]
+								i(111979),		-- Scribe's Quarters, Level 3 [Blueprints]
+								i(111993),		-- Tailoring Emporium, Level 3 [Blueprints]
+								i(111991),		-- The Forge, Level 3 [Blueprints]
+								i(111989),		-- The Tannery, Level 3 [Blueprints]
+							},
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9405),		-- Working Some Orders (125)
 					}),

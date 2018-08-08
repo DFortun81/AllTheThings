@@ -113,46 +113,369 @@ _.ExpansionFeatures =
 				}),								
 				--]]
 				nh(-4, { 	-- Achievements
-					ach(9914, { -- Azeroth's Top Twenty Tunes
-						i(122700), 	 -- Toy
+					ach(9248),		-- Defender of Draenor (Horde)
+					ach(9901, {		-- Don't Call Me Junior (Horde)
+						follower(465),	-- Harrison Jones
+						crit(1),		-- Master Relic Hunter
 					}),
-					ach(10258, { -- Charting a Course
-						i(128364),
+					ach(9546, {		-- Even More Plots (Horde)
+						ach(9545),		-- More Plots (Horde)
 					}),
-					ach(7274, { -- Learning From The Best	
-						i(86596), 	 -- Toy
-					}),	
-					ach(9454, {	-- Draenic Seed Collector
-						i(111997, {	-- Herb Garden, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
+					ach(10016, {	-- Full Discography (Horde)
+						crit(1),		-- The Burning Legion (Black Temple - Illidan Stormrage)
+						crit(2),		-- Wrath of the Lich King (Naxxramas - Kel'Thuzad)
+						crit(3),		-- Legends of Azeroth (Blackwind Descent - Nefarian)
+						crit(4),		-- The Shattering (Dragon Soul - Deathwing)
+						crit(5),		-- Heart of Pandaria (Terrace of Endless Spring - Sha of Fear)
+						crit(6),		-- A Siege of Worlds (Blackrock Foundry - Blackhand)
+						crit(7),		-- Orgrimmar (Garrison quest reward - Bringing the Bass)
+						crit(8),		-- War March (Krasarang Wilds - Ongrom Black Tooth - 500 Lion's Landing Commissions)
+						crit(9),		-- Thunder Bluff (Garrison quest reward - Bringing the Bass)
+						crit(10),		-- Mulgore Plains (Fishing - Thunder Bluff)
+						crit(11),		-- Undercity (Garrison quest reward - Bringing the Bass)
+						crit(12),		-- Zul'Gurub Voo Doo (Garrison quest reward - Bringing the Bass)
+						crit(13),		-- The Zandalari (Garrison quest reward - Bringing the Bass)
+						crit(14),		-- Silvermoon (Garrison quest reward - Bringing the Bass)
+						crit(15),		-- Rescue the Warchief (Garrison quest reward - Bringing the Bass)
+						crit(16),		-- Angelic (The Cape of Stranglethorn, Stranglethorn Vale - Arena Treasure Chest)
+						crit(17),		-- Ghost (Duskwood - Forlorn Composer)
+						crit(18),		-- Mountains (Winterspring - Frozen Supplies)
+						crit(19),		-- Magic (Ashenvale - Lost Sentinel's Pouch)
+						crit(20),		-- The Black Temple (Shadowmoon Valley - Warden's Scroll Case)
+						crit(21),		-- Invincible (Icecrown Citadel - The Lich King)
+						crit(22),		-- Karazhan Opera House (Karazhan - The Big Bad Wolf, Romulo, The Crone, Julianne)
+						crit(23),		-- The Argent Tournament (Argent Tourament - Faction Vendors - 25 Champion's Seals)
+						crit(24),		-- Lament of the Highborne (Undercity - Sylvanas' Strongbox)
+						crit(25),		-- Faerie Dragon (Tirisfal Glades - Faerie Dragon Nest)
+						crit(26),		-- Totems of the Grizzlemaw (Grizzly Hills - Remington Brode)
+						crit(27),		-- Mountains of Thunder (Halls of Lighting - Loken)
+						crit(28),		-- Darkmoon Carousel (Darkmoon Island - Chester - 90 Darkmoon Prize Tickets)
+						crit(29),		-- Shalandis Isle (Darnassus - High Priestess' Reliquary)
+						crit(30),		-- Way of the Monk (Garrison quest reward - Bringing the Bass)
+						crit(31),		-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
+						ach(9914, {	-- Azeroth's Top Twenty Tunes (Horde) (20)
+							i(122700),	-- Portable Audiophone
+						}),
+						ach(9897),	-- Ten Hit Tunes (Horde) (10)
+					}),
+					ach(9094, {		-- Garrison Architect
+						title(260),		-- Architect
+						crit(1),		-- Draftsman
+						crit(2),		-- Grand Master Draftsman
+						crit(3),		-- Master Draftsman
+						crit(4),		-- Master Builder
+						crit(5),		-- Keepin' Busy
+					}),
+					ach(9132),		-- Garrison Buddies (Horde)
+					ach(9487, {		-- Got My Mind On My Draenor Money (10,000)
+						["groups"] = {
+							i(111983),		-- Storehouse, Level 3 [Blueprints]
+						},
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+					}),
+					ach(9128, {		-- Grand Master Draftsman (60)
+						ach(9126),		-- Master Draftsman (40)
+						ach(9125),		-- Draftsman (20)
+					}),
+					ach(9097, {		-- Keepin' Busy
+						crit(1),		-- Mine
+						crit(2),		-- Fishing Shack
+						crit(3),		-- Herb Garden
+						crit(4),		-- Pet Menagerie
+					}),
+					ach(9096, {		-- Master Builder
+						crit(1),		-- At least 3 small buildings activated
+						crit(2),		-- At least 2 medium buildings activated
+						crit(3),		-- At least 2 large buildings activated
+						ach(9095, {		-- Builder
+							crit(1),		-- At least 2 small buildings activated
+							crit(2),		-- At least 2 medium buildings activated
+							crit(3),		-- At least 1 large building activated
 						}),
 					}),
-					ach(9453, {	-- Draenic Stone Collector
-						a(i(111996, {	-- Lunarfall Excavation, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						})),
-						h(i(116249, {	-- Frostwall Mines, Level 3
-							["groups"] = {
-							},
-							["f"] = 200,	-- Recipe
-						})),
+					ach(9246),		-- Master Draenor Crafter
+					ach(9265),		-- Master of Apexis
+					ach(9098, {		-- Movin' On Up (Lvl 3)
+						ach(9099),		-- Time for an Upgrade (Lvl 2)
 					}),
-					n(-99, { 	 -- Stables
-						ach(9706, {	-- The Stable Master
-							i(116781),	-- Armoured Frostwolf
-							title(277),	-- Stable Master
+					ach(8933),		-- Staying Regular
+					n(-104, {	-- Barracks
+						ach(9499, {		-- Wingmen
+							crit(1),		-- Leorajh
+							crit(2),		-- Talonpriest Ishaal
+							crit(3),		-- Tormmok
+							crit(4),		-- Aeda Brightdawn / Defender Illona
+							crit(5),		-- Delvar Ironfirst / Vivianne
+							ach(9498),		-- Wingman
 						}),
-						ach(9705, {	-- Advanced Husbandry
-							i(116668),	-- Armoured Frostboar
+					}),
+					n(-107, {	-- Fishing Hut
+						ach(7274, {  -- Learning From The Best	
+							i(86596), 	-- Nat's Fishing Chair
 						}),
+					}),
+					n(-101, {	-- Followers
+						ach(9130),		-- A Rare Friend
+						ach(9131),		-- An Epic Buddy
+						ach(9494, {		-- Commander (40)
+							ach(9109),		-- Fearless Leader (25)
+							ach(9108),		-- Where You Go, They Will Follow (10)
+							ach(9107),		-- Follow the Leader (5)
+						}),
+						ach(9129, {		-- Filling the Ranks (20 - lvl 100)
+							["groups"] = {
+								a(i(111967)),	-- Dwarven Bunker, Level 3 [Blueprints]
+								h(i(116186)),	-- War Mill, Level 3 [Blueprints]
+								ach(9111),		-- Raising the Bar (10 - lvl 100)
+								ach(9110),		-- Following Up (1 - lvl 100)
+							},
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						}),
+						ach(9243, {		-- Item Level Force (20 - lvl 650)
+							ach(9213),		-- Item Level Army (10 - lvl 650)
+							ach(9212),		-- My Item Level Is Way Higher than Yours (1 - lvl 650)
+							ach(9211),		-- My Item Level Is Higher than Yours (1 - lvl 625)
+						}),
+					}),
+					n(-109, { 	-- Gladiator's Sanctum
+						ach(9639),	-- Fight, Kill, Salute!
+						ach(9509, {	-- Nemesis: Draenei Destroyer
+							title(267),		-- ,Draenei Destroyer
+						}),
+						ach(9510, {	-- Nemesis: Dwarfstalker
+							title(264),		-- the Dwarfstalker
+						}),
+						ach(9511, {	-- Nemesis: Gnomebane
+							title(263),		-- Gnomebane
+						}),
+						ach(9512, {	-- Nemesis: Manslayer
+							title(262),		-- the Manslayer
+						}),
+						ach(9513, {	-- Nemesis: Scourge of the Kaldorei
+							title(266),		-- ,Scourge of the Kaldorei
+						}),
+						ach(9514, {	-- Nemesis: Terror of the Tushui
+							title(268),		-- ,Terror of the Tushui
+						}),
+						ach(9515, {	-- Nemesis: Worgen Hunter
+							title(265),		-- Worgen Hunter
+						}),
+						ach(9495, {		-- The Bone Collector
+							["groups"] = {
+								i(111981),		-- Gladiator's Sanctum, Level 3 [Blueprints]
+							},
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						}),
+						ach(9508, {	-- Warlord of Draenor (Horde) achievements used instead of criteria as criteria are behaving strangely with debug mode on
+							title(269),		-- ,Warlord of Draenor
+							ach(9515),		-- Nemesis: Worgen Hunter
+							ach(9514),		-- Nemesis: Terror of the Tushui
+							ach(9513),		-- Nemesis: Scourge of the Kaldorei
+							ach(9512),		-- Nemesis: Manslayer
+							ach(9511),		-- Nemesis: Gnomebane
+							ach(9510),		-- Nemesis: Dwarfstalker
+							ach(9509),		-- Nemesis: Draenei Destroyer
+							ach(9639),		-- Fight, Kill, Salute!
+						}),
+					}),
+					n(-126, {	-- Goblin Workshop
+						ach(9527, {		-- Terrific Technology
+							["groups"] = {
+								a(i(111985)),	-- Gnomish Gearworks, Level 3 [Blueprints]
+								h(i(116201)),	-- Goblin Workshop, Level 3 [Blueprints]
+								crit(1),		-- Robo-Rooster
+								crit(2),		-- Sticky Grenade
+								crit(3),		-- Pneumatic Power Gauntlet
+								crit(4),		-- Prototype Mekgineer's Chopper
+								crit(5),		-- "Skyterror" Personal Delivery System
+								crit(6),		-- GG-117 Micro-Jetpack
+								crit(7),		-- Sentry Turrets
+								crit(8),		-- XD-57 "Bullseye" Guided Rocket
+								crit(9),		-- Paint Target
+							},
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						}),
+					}),
+					n(-110, {	-- Herb Garden
+						ach(9454, {	 -- Draenic Seed Collector
+							["groups"] = {
+								i(111997),	-- Herb Garden, Level 3
+							},
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						}),
+					}),
+					n(-127, {	-- Frostwall Mines
+						ach(9453, {	 -- Draenic Stone Collector
+							["groups"] = {
+								i(116249),	-- Frostwall Mines, Level 3
+							},
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						}),
+					}),
+					n(-128, { 	-- Frostwall Tavern
+						ach(9703, {		-- Stay Awhile and Listen
+							["groups" ] = {
+								a(i(109065)),	-- Lunarfall Inn, Level 3 [Blueprints]
+								h(i(116432)),	-- Frostwall Tavern, Level 3 [Blueprints]
+								crit(1),		-- Cro's Revenge (H Bloodmaul Slag Mines - Gug'rokk)
+								crit(2),		-- Time-Lost Vikings (H Bloodmaul Slag Mines - Gug'rokk)
+								crit(3),		-- Feeling A Bit Morose (H Iron Docks - Skulloc)
+								crit(4),		-- The Brass Compass (H Iron Docks - Skulloc)
+								crit(5),		-- The Soulcutter (H Auchindoun - Teron'gor)
+								crit(6),		-- The Cure For Death (H Auchindoun - Teron'gor)
+								crit(7),		-- Gloriously Incandescent (H Skyreach - High Sage Viryx)
+								crit(8),		-- Aviana's Request (H Skyreach - High Sage Viryx)
+								crit(9),		-- Family Traditions (H Upper Blackrock Spire - Warlord Zaela)
+								crit(10),		-- Damsels and Dragons (H Upper Blackrock Spire - Warlord Zaela)
+								crit(11),		-- Shadowy Secrets (H Shadowmoon Burial Grounds - Ner'zhul)
+								crit(12),		-- The Huntresses (H Shadowmoon Burial Grounds - Ner'zhul)
+								crit(13),		-- Cenarion Concerns (H Everbloom - Yalnu)
+								crit(14),		-- Titanic Evolution (H Everbloom - Yalnu)
+								crit(15),		-- And No Maces! (H Grimrail Depot - Skylord Tovra)
+								crit(16),		-- Cleaving Time (H Grimrail Depot - Skylord Tovra)
+								crit(17),		-- Oralius' Adventure (H Upper Blackrock Spire - Warlord Zaela)
+								crit(18),		-- The Void-Gate (H Shadowmoon Burial Grounds - Ner'zhul)
+								crit(19),		-- For the Birds (H Everbloom - Yalnu)
+								crit(20),		-- Cold Steel (H Grimrail Depot - Skylord Tovra)
+							},
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						}),
+					}),
+					n(-10040, {	-- Shipyard
+						ach(10165, {	-- Ironsides
+							crit(1),		-- Destroyer
+							crit(2),		-- Submarine
+							crit(3),		-- Carrier
+							crit(4),		-- Transport
+							crit(5),		-- Battleship
+						}),
+						ach(10168, {	-- Naval Armada
+							ach(10169),		-- Naval Fleet
+							ach(10177),		-- Set Sail!
+						}),
+						ach(10166, {	-- Naval Mechanics
+							crit(1),		-- Tuskarr Fishing Net
+							crit(2),		-- Felsmoke Launchers
+							crit(3),		-- Unsinkable
+							crit(4),		-- High Intensity Fog Lights
+							crit(5),		-- True Iron Rudder
+							crit(6),		-- Trained Shark Tank
+							crit(7),		-- Ghostly Spyglass
+							crit(8),		-- Ice Cutter
+							crit(9),		-- Gyroscopic Internal Stabilizer
+							crit(10),		-- Bilge Pump
+							crit(11),		-- Blast Furnace
+						}),
+					}),
+					n(-129, {	-- Spirit Lodge
+						ach(9497, {		-- Finding Your Waystones
+							["groups"] = {
+								a(i(109063)),	-- Mage Tower, Level 3 [Blueprints]
+								h(i(116197)),	-- Spirit Lodge, Level 3 [Blueprints]
+							},
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						}),
+					}),
+					n(-99, { 	-- Stables
+						["groups"] = {
+							ach(9705, {	-- Advanced Husbandry (Horde)
+								i(116668),		-- Armored Frostboar
+								crit(1),		-- Maimclaw Killed
+								crit(2),		-- Beast-Lasher Killed
+								crit(3),		-- Moth of Wrath Killed
+								crit(4),		-- Thundercall Killed
+								crit(5),		-- Ironbore Killed
+								crit(6),		-- Karak Killed
+							}),
+							ach(9526, {	-- Master of Mounts
+								["groups"] = {
+									i(112003),		-- Stables, Level 3 [Blueprints]
+									crit(1),		-- Wolf Trained
+									crit(2),		-- Talbuk Trained
+									crit(3),		-- Clefthoof Trained
+									crit(4),		-- Boar Trained
+									crit(5),		-- Riverbeast Trained
+									crit(6),		-- Elekk Trained
+									ach(9538, {		-- Intro to Husbandry
+										crit(1),		-- Wrangling a Wolf
+										crit(2),		-- Taming a Talbuk
+										crit(3),		-- Capturing a Clefthoof
+										crit(4),		-- Besting a Boar
+										crit(5),		-- Requisition a Riverbeast
+										crit(6),		-- Entangling an Elekk
+									}),
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9706, {	-- The Stable Master (Horde)
+								i(116781),		-- Armored Frostwolf
+								title(277),		-- Stable Master
+								crit(1),		-- Maimclaw Killed
+								crit(2),		-- Beast-Lasher Killed
+								crit(3),		-- Moth of Wrath Killed
+								crit(4),		-- Thundercall Killed
+								crit(5),		-- Ironbore Killed
+								crit(6),		-- Karak Killed
+							}),
+						},
 					}),
 				}),
 				nh(-136, { 	-- Invasions
 					["groups"] = {
+						ach(9208),	-- Botani Invasion
+						ach(9207),	-- Goren Invasion
+						ach(9827, {		-- Impervious Defender
+							crit(1),		-- Botani
+							crit(2),		-- Goren
+							crit(3),		-- Iron Horde
+							crit(4),		-- Ogres
+							crit(5),		-- Shadow Council
+							crit(6),		-- Shadowmoon
+							ach(9209, {		-- Master Defender
+								crit(1),		-- Botani
+								crit(2),		-- Goren
+								crit(3),		-- Iron Horde
+								crit(4),		-- Ogres
+								crit(5),		-- Shadow Council
+								crit(6),		-- Shadowmoon
+							}),
+						}),
+						ach(9543, { 	-- Invasion? What Invasion? (50)
+							ach(9167),		-- Invasion Specialist (10)
+							ach(9152),		-- It's an Invasion! (1)
+						}),
+						ach(9244),		-- Invasions Are Better with Friends
+						ach(9205),		-- Iron Horde Invasion
+						ach(9858, {		-- Master and Commander
+							crit(1),		-- Teluur
+							crit(2),		-- Gaur
+							crit(3),		-- Commander Dro'gan
+							crit(4),		-- Mage Lord Gogg'nathog
+							crit(5),		-- Lady Fleshsear
+							crit(6),		-- Annihilon
+						}),
+						ach(9204),		-- Ogre Invasion
+						ach(9826, {		-- Platinum Defender
+							crit(1),		-- Botani
+							crit(2),		-- Goren
+							crit(3),		-- Iron Horde
+							crit(4),		-- Ogres
+							crit(5),		-- Shadow Council
+							crit(6),		-- Shadowmoon
+							ach(9165),		-- Golden Defender
+							ach(9164),		-- Silver Defender
+							ach(9162),		-- Bronze Defender
+						}),
+						ach(9181, {		-- Save Those Buildings!
+							crit(1),		-- Goren
+							crit(2),		-- Iron Horde
+							crit(3),		-- Botani
+							crit(4),		-- Shadow Council
+							crit(5),		-- Shadowmoon
+							crit(6),		-- Ogres
+						}),
+						ach(9203),		-- Shadow Council Invasion
+						ach(9206),		-- Shadowmoon Clan Invasion
 						i(120320, { -- Invader's Abandoned Sack
 							["groups"] = {
 								i(115418),	-- Blood Gutter Greatsword
@@ -567,6 +890,19 @@ _.ExpansionFeatures =
 							["groups"] = {
 								ach(9900, { -- Exploration Mission Master
 									ach(9150), -- Exploration Mission Specialist
+									crit(1),		-- Exploration: Oshu'gun Dig Site
+									crit(2),		-- Exploration: Razed Warsong Outpost Dig Site
+									crit(3),		-- Exploration: Stonecrag Excavation Dig Site
+									crit(4),		-- Exploration: Sethekk Hollow Dig Sites
+									crit(5),		-- Exploration: Apexis Excavation Dig Site
+									crit(6),		-- Exploration: Ango'rosh Dig Site
+									crit(7),		-- Exploration: Veil Shadar Dig Site
+									crit(8),		-- Exploration: Overlook Ruins Dig Site
+									crit(9),		-- Exploration: The Broken Spine Dig Site
+									crit(10),		-- Exploration: Daggermaw Flows Dig Site
+									crit(11),		-- Exploration: Colossal's Fall Dig Site
+									crit(12),		-- Exploration: Burial Fields
+									crit(13),		-- Exploration: Umbrafen Dig Site
 								}),
 								ach(9147, { -- Mission Specialist
 									ach(9523), -- Patrolling Draenor [Yes this is a pre-req]
@@ -579,11 +915,11 @@ _.ExpansionFeatures =
 									ach(9139), -- On a Massive Numbeer of Missions
 								}),
 								ach(9523, { -- Patrolling Draenor
-									i(111971, { -- Barracks, Level 3 [Blueprints]
-										["groups"] = {
-										},
-										["f"] = 200, -- Recipe
-									}),
+									["groups"] = {
+										i(111971), -- Barracks, Level 3 [Blueprints]
+										ach(9146), 	-- Patrolling Mission Specialist
+									},
+									["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 								}),
 								ach(9143, { -- The Rarer the Better
 									ach(9141), -- A Rare Mission
@@ -1231,8 +1567,48 @@ _.ExpansionFeatures =
 						}),
 						n(94398, { -- Fleet Command Table
 							["groups"] = {
-								ach(10255, { -- Petty Officer
-									i(128363), -- Captain's Hat
+								ach(10276, {	-- Admiral (Horde)
+									ach(10275),		-- Fleet Commander
+									ach(10255, {	-- Petty Officer
+										i(128363),		-- Captain's Hat
+									}),
+									ach(10170, {	-- Seaman
+										i(128353),		-- Admiral's Compass
+									}),
+								}),
+								ach(10307, {	-- Exploring the High Seas (Horde)
+									crit(1),		-- The House Always Wins
+									crit(2),		-- For Hate's Sake
+									crit(3),		-- Black Market Journal
+									crit(4),		-- Orphaned Aquatic Animal Rescue
+									crit(5),		-- The Wave Mistress
+									crit(6),		-- It's a Boat, It's a Plane, It's... Just a Riverbeast.
+									ach(10258, {	-- Charting a Course
+										i(128364),		-- Fleet Commander's Hat
+									}),
+								}),
+								ach(10164, {	-- Master of the Seas
+									title(317),		-- Captain
+									crit(1),		-- Naval Combat Expert
+									crit(2),		-- Naval Treasure Expert
+									crit(3),		-- Naval Training Expert
+									crit(4),		-- Naval Bonus Expert
+									crit(5),		-- Naval Siege Expert
+								}),
+								ach(10036, {	-- Naval Bonus Expert
+									ach(10017),		-- Naval Bonus Specialist
+								}),
+								ach(10154, {	-- Naval Combat Expert
+									ach(10156),		-- Naval Combat Specialist
+								}),
+								ach(10155, {	-- Naval Siege Expert
+									ach(10161),		-- Naval Siege Specialist
+								}),
+								ach(10163, {	-- Naval Training Expert
+									ach(10162),		-- Naval Training Specialist
+								}),
+								ach(10160, {	-- Naval Treasure Expert
+									ach(10159),		-- Naval Treasure Specialist
 								}),
 								i(128391, { -- Iron Fleet Treasure Chest [Raid Finder]
 									["groups"] = {
@@ -1684,6 +2060,7 @@ _.ExpansionFeatures =
 					["description"] = "|cff66ccffVarious missions at your garrison, shipyard, or class hall offer these rewards.|r"
 				}),	
 				nh(-25, { 	-- Pet Battle
+					ach(9264),	-- Draenor Pet Brawler
 					qh(38300, { 
 						i(122535, {
 							i(122532), -- Pet
@@ -3289,6 +3666,12 @@ _.ExpansionFeatures =
 					}),
 				}),
 				nh(-113, { 	-- Salvage Yard
+					ach(9468, {		-- Salvaging Pays Off
+						["groups"] = {
+							i(111977),		-- Salvage Yard, Level 3 [Blueprints]
+						},
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+					}),
 					i(140590, {
 						n(-140, { 	-- Communal
 							["groups"] = {
@@ -3477,23 +3860,23 @@ _.ExpansionFeatures =
 					["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit from Frostwall Tavern using either Magic Debuff or Wild Aggression.|r \n|cff3399ffStep 2:|r |cff66ccffDo a /tired emote and he will award the toy.|r \n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison.|r"
 				}),
 				nh(-2, {    -- Vendors
-					n(88779, { 	 -- Benjamin Brode 
-						i(119210), 	 -- Toy
-						i(119212), 	 -- Toy
+					n(88779, {	-- Benjamin Brode <Traveling Merchant>
+						i(119210), 	 -- Hearthstone Board
+						i(119212), 	 -- Winning Hand
 					}),
-					n(80285, { 	 	-- Guh - bladespire trader
+					nh(91034, { -- Calvo Klyne <Fur Trader>
+						i(122716),	-- Pattern: Primal Weaving
+						i(120945),	-- Primal Spirit
+						i(127724),	-- Recipe: Mighty Hexweave Essence
+						i(127742),	-- Recipe: Savage Hexweave Essence
+					}),
+					n(80285, {	-- Guh <Bladespire Trader>
 						["groups"] = {
-							i(119430),
+							i(119430),	-- Gas-Powered Stick
 						},
 						["description"] = "|cff66ccffFound at 37.4,60.2 in Frostfire Ridge - Speak with him and have him visit your garrison.|r"
 					}),
-					nh(95471, { 	-- Trader Darakk
-						i(116655), 	 -- Mount
-						i(116667), 	 -- Mount
-						i(127864), 	 -- Toy
-						i(127868), 	 -- Pet
-					}),
-					nh(76928, { 	-- Kraank <Food & Drink>
+					nh(76928, {	-- Kraank <Food & Drink>
 						i(122556),	-- Recipe: Buttered Sturgeon
 						i(122557),	-- Recipe: Jumbo Sea Dog
 						i(122558),	-- Recipe: Pickled Eel
@@ -3501,23 +3884,47 @@ _.ExpansionFeatures =
 						i(122555),	-- Recipe: Sleeper Sushi
 						i(122560),	-- Recipe: Whiptail Fillet
 					}),
-					nh(88228, { -- Sergeant Grimjaw - Garrison Quartermaster
-						["qgs"] = {79774, 88228},
+					n(88635, {	-- Nalya Battlehorn <Contracts>
 						["groups"] = {
-							i(114931, {	-- Cerulean Pigment
-								i(141642),	-- Technique: Tome of the Clear Mind
+							i(119255, {	-- Contract: Bruto
+								follower(176),	-- Bruto
+							}),
+							i(119245, {	-- Contract: Dark Ranger Velonara
+								follower(453),	-- Dark Ranger Velonara
+							}),
+							i(122135, {	-- Contract: Greatmother Geyah
+								follower(186),	-- Greatmother Geyah
+							}),
+							i(122136, {	-- Contract: Kal'gor the Honorable
+								follower(184),	-- Kal'gor the Honorable
+							}),
+							i(119233, {	-- Contract: Kaz the Shrieker
+								follower(159),	-- Kaz the Shrieker
+							}),
+							i(119240, {	-- Contract: Lokra
+								follower(185),	-- Lokra
+							}),
+							i(119243, {	-- Contract: Magister Krelas
+								follower(154),	-- Magister Krelas
+							}),
+							i(119418, {	-- Contract: Morketh Bladehowl
+								follower(155),	-- Morketh Bladehowl
+							}),
+							i(119257, {	-- Contract: Penny Clobberbottom
+								follower(211),	-- Penny Clobberbottom
+							}),
+							i(119253, {	-- Contract: Spirit of Bony Xuk
+								follower(212),	-- Spirit of Bony Xuk
+							}),
+							i(114825, {	-- Contract: Ulna Thresher
+								follower(463),	-- Ulna Thresher
+							}),
+							i(119267, { -- Contract: Ziri'ak
+								follower(168),	-- Ziri'ak
 							}),
 						},
 					}),
-					nh(91029, { -- Rath'thul Moonvale (dust trader)
-						i(122711),
-					}),
-					nh(91034, 	{ -- Calvo Klyne (fur trader)
-						i(122716),
-						i(127724),
-						i(127742),
-					}),
-					nh(91031, {	 -- Nicholas Mitrik <Herb Trader>
+					nh(91031, {	-- Nicholas Mitrik <Herb Trader>
 						i(108996, {	-- Alchemical Catalyst
 							i(122599, {	-- Tome of Sorcerous Elements
 								["spellID"] = 0,
@@ -3570,33 +3977,219 @@ _.ExpansionFeatures =
 							i(122710),	-- Recipe: Primal Alchemy
 						}),
 					}),
-					nh(91033, { -- Zeezu - Leather Trader
-						i(122715),
-						i(127722),
-						i(127740),
+					nh(91029, { -- Rath'thul Moonvale <Dust Trader>
+						i(122711),	-- Formula: Temporal Binding
+						i(120945),	-- Primal Spirit
+					}),
+					n(79619, {	-- Rezlak <Blueprints Vendor>
+						["groups"] = {
+							i(118215, {	-- Book of Garrison Blueprints [Can learn all lvl 1 blueprints except Salvage Yard]
+								i(111812),	-- Alchemy Lab, Level 1
+								i(111959),	-- Barn, Level 1 [Not showing up as collectible]
+								i(111956),	-- Barracks, Level 1
+								i(111817),	-- Enchanter's Study, Level 1
+								i(109258),	-- Engineering Works, Level 1
+								i(116433),	-- Frostwall Tavern, Level 1 [Not showing up as collectible]
+								i(111814),	-- Gem Boutique, Level 1
+								i(111962),	-- Gladiator's Sanctum, Level 1 [Not showing up as collectible]
+								i(116199),	-- Goblin Workshop, Level 1 [Not showing up as collectible]
+								i(111961),	-- Lumbermill, Level 1 [Not showing up as collectible]
+								i(111815),	-- Scribe's Quarters, Level 1
+								i(116198),	-- Spirit Lodge, Level 1 [Not showing up as collectible]
+								i(112001),	-- Stables, Level 1 [Not showing up as collectible]
+								i(111958),	-- Storehouse, Level 1 [Not showing up as collectible]
+								i(111816),	-- Tailoring Emporium, Level 1
+								i(111813),	-- The Forge, Level 1
+								i(111818),	-- The Tannery, Level 1
+								i(111963),	-- Trading Post, Level 1 [Not showing up as collectible]
+								i(116184),	-- War Mill, Level 1 [Not showing up as collectible]
+							}),
+							i(111957),	-- Salvage Yard, Level 1
+							i(111929),	-- Alchemy Lab, Level 2
+							i(111968),	-- Barn, Level 2
+							i(111970),	-- Barracks, Level 2
+							i(111972),	-- Enchanter's Study, Level 2
+							i(109256),	-- Engineering Works, Level 2
+							i(111927),	-- Fishing Shack, Level 2
+							i(116248),	-- Frostwall Mines, Level 2
+							i(116431),	-- Frostwall Tavern, Level 2
+							i(111974),	-- Gem Boutique, Level 2
+							i(111980),	-- Gladiator's Sanctum, Level 2
+							i(116200),	-- Goblin Workshop, Level 2
+							i(109577),	-- Herb Garden, Level 2
+							i(109254),	-- Lumber Mill, Level 2
+							i(111998),	-- Menagerie, Level 2
+							i(111976),	-- Salvage Yard, Level 2
+							i(111978),	-- Scribe's Quarters, Level 2
+							i(116196),	-- Spirit Lodge, Level 2
+							i(112002),	-- Stables, Level 2
+							i(111982),	-- Storehouse, Level 2
+							i(111992),	-- Tailoring Emporium, Level 2
+							i(111990),	-- The Forge, Level 2
+							i(111988),	-- The Tannery, Level 2
+							i(111986),	-- Trading Post, Level 2
+							i(116185),	-- War Mill, Level 2
+							ach(9406, {		-- Working More Orders (250)
+								["groups"] = {
+									i(111930),	-- Alchemy Lab, Level 3
+									i(111973),	-- Enchanter's Study, Level 3
+									i(109257),	-- Engineering Works, Level 3
+									i(111975),	-- Gem Boutique, Level 3
+									i(111979),	-- Scribe's Quarters, Level 3
+									i(111993),	-- Tailoring Emporium, Level 3
+									i(111991),	-- The Forge, Level 3
+									i(111989),	-- The Tannery, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9565, {	-- Master Trapper (125)
+								["groups"] = {
+									i(111969),	-- Barn, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9523, {	-- Patrolling Draenor
+								["groups"] = {
+									i(111971),	-- Barracks, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9462, {	-- Draenor Angler
+								["groups"] = {
+									i(111928),	-- Fishing Shack, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9453, {	-- Draenic Stone Collector
+								["groups"] = {
+									i(116249),	-- Frostwall Mines, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9703, {	-- Stay Awhile and Listen
+								["groups"] = {
+									i(116432),	-- Frostwall Tavern, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9495, {	-- The Bone Collector
+								["groups"] = {
+									i(111981),	-- Gladiator's Sanctum, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9527, {	-- Terrific Technology
+								["groups"] = {
+									i(116201),	-- Goblin Workshop, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9454, {	-- Draenic Seed Collector
+								["groups"] = {
+									i(111997),	-- Herb Garden, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9429, {	-- Upgrading the Mill
+								["groups"] = {
+									i(109255),	-- Lumber Mill, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9463, {	-- Draenic Pet Battler
+								["groups"] = {
+									i(111999),	-- Menagerie, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9468, {	-- Salvaging Pays Off
+								["groups"] = {
+									i(111977),	-- Salvage Yard, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9497, {	-- Finding Your Waystones
+								["groups"]	= {
+									i(116197),	-- Spirit Lodge, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9526, {	-- Master of Mounts
+								["groups"] = {
+									i(112003),	-- Stables, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9487, {	-- Got My Mind On My Draenor Money (10,000)
+								["groups"] = {
+									i(111983),	-- Storehouse, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9478, {	-- Savage Friends
+								["groups"] = {
+									i(111987),	-- Trading Post, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9129, {	-- Filling the Ranks
+								["groups"] = {
+									i(116186),	-- War Mill, Level 3
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+						},
+					}),
+					nh(88228, {	-- Sergeant Grimjaw - Garrison Quartermaster
+						["qgs"] = {79774, 88228},
+						["groups"] = {
+							i(114931, {	-- Cerulean Pigment
+								i(141642),	-- Technique: Tome of the Clear Mind
+							}),
+						},
+					}),
+					nh(95471, {	-- Trader Darakk <Local Supplies>
+						i(127868), 	 -- Crusher
+						i(127864), 	 -- Personal Spotlight
+						i(116667), 	 -- Rocktusk Battleboar
+						i(116655), 	 -- Witherhide Cliffstomper
 					}),
 					nh(91030, { -- Trixxy Volt - Ore Trader
-						i(122705),
-						i(122712),
-						i(122714),
-						i(127721),
-						i(127725),
-						i(127726),
-						i(127727),
-						i(127729),
-						i(127739),
-						i(127743),
-						i(127744),
-						i(127745),
-						i(127747),
+						i(120945),	-- Primal Spirit
+						i(127725),	-- Recipe: Mighty Steelforged Essence
+						i(127726),	-- Recipe: Mighty Taladite Amplifier
+						i(127727),	-- Recipe: Mighty Truesteel Essence
+						i(122714),	-- Recipe: Primal Gemcutting
+						i(122705),	-- Recipe: Riddle of Truesteel
+						i(127743),	-- Recipe: Savage Steelforged Essence
+						i(127744),	-- Recipe: Savage Taladite Amplifier
+						i(127745),	-- Recipe: Savage Truesteel Essence
+						i(127729),	-- Schematic: Advanced Muzzlesprocket
+						i(127721),	-- Schematic: Bi-Directional Fizzle Reducer
+						i(127739),	-- Schematic: Infrablue-Blocker Lenses
+						i(122712),	-- Schematic: Primal Welding
+						i(127747),	-- Schematic: Taladite Firing Pin
 					}),
-					n(-104, { 	 -- Barracks
+					nh(91033, { -- Zeezu - Leather Trader
+						i(120945),	-- Primal Spirit
+						i(127722),	-- Recipe: Mighty Burnished Essence
+						i(127740),	-- Recipe: Savage Burnished Essence
+						i(122715),	-- Recipe: Spiritual Leathercraft
+					}),
+					n(-104, {	-- Barracks
 						nh(79812, { -- Moz'def 
-							i(122298), 	 -- Toy
+							i(122298), 	 -- Bodyguard Miniaturization Device
 						}),
 					}),
-	 --[[
 					n(-106, { 	-- Engineering Works
+						n(88610, {	-- Engineering Follower <Engineering Entrepreneur>
+							["groups"] = {
+								i(117438),	-- Gnomish Net Launcher
+								i(117403),	-- Gyro-Radiant Reflector
+								i(117402),	-- Ultra-Electrified Reflector
+							},
+						}),
+						--[[
 						nh(79826, { -- Pozzlow 
 							i(111921), -- Teaches Gearspring parts, ultimate gnomish army knife, goblin glider kit, mecha-blast rocket, secrets of draenor engineering, shieldtronic shield, stealthman 54
 							i(118476),
@@ -3620,16 +4213,22 @@ _.ExpansionFeatures =
 							i(119177),
 							i(120268),
 						}),
-					}),
-			]]--						
-					n(-107, { 	 -- Fishing Shack
-						n(85984, { 	 -- Nat Pagle 
-							i(114919), 	 -- Pet
-							i(117404), 	 -- Pet
-							i(87791), 	 -- Mount
+						]]--
+					}),				
+					n(-107, {	-- Fishing Shack
+						n(85984, {	--  Nat Pagle <Master Fisherman>
+							i(117397, {	-- Nat's Lucky Coin
+								i(117404),	-- Land Shark
+								--i(117401),	-- Nat's Draenic Fishing Journal [Missing icon - may not need to be in listing]
+								i(117405),	-- Nat's Drinking Hat
+								i(87791),	-- Reins of the Crimson Water Strider
+								i(116825),	-- Savage Fishing Pole [Horde only]
+								i(114919),	-- Sea Calf
+							}),
+							i(86596),	-- Nat's Fishing Chair
 						}),	
 					}),
-					n(-121, { 	 -- Frostwall Tavern
+					n(-121, {	-- Frostwall Tavern
 						nh(87302, { 	 -- Murg 
 							i(119207), 
 						}),
@@ -3661,17 +4260,19 @@ _.ExpansionFeatures =
 						}),		
 					}),
 			]]--							
-					n(-110, { 	 -- Herb Garden
+					n(-110, {	-- Herb Garden
 						nh(81981, { -- Tarnon 
-							i(110721), 	 -- Pet
-							i(118559),
-							i(118560),
-							i(118562),
-							i(118563),
-							i(118568),
+							i(116053, {	-- Draenic Seeds
+								i(110721),	-- Crazy Carrot
+								i(118568),	-- Garden Hoe
+								i(118560),	-- Garden Pitchfork
+								i(118562),	-- Garden Scythe
+								i(118559),	-- Garden Shovel
+								i(118563),	-- Garden Sickle
+							}),
 						}),
 					}),
-					n(-112, { 	 -- Menagerie
+					n(-112, {	-- Menagerie
 						nh(94516, { -- Giada Goldleash
 							i(116415, { -- Pet Charm
 								i(127704), -- Bloodthorn Hatchling
@@ -3698,6 +4299,138 @@ _.ExpansionFeatures =
 							i(120265),
 						}),			
 					}),
+	]]--
+					n(-99, {	-- Stables
+						n(79860, {	-- Zagara <Stable Master>
+							i(45022),	-- Argent Gruntling
+						}),
+					}),
+					n(-115, {	-- Storehouse
+						n(85289, {	-- Warpweaver Farshlah <Transmogrifier>
+						un(22, i(151134, { -- Trial of Style Token
+							i(151116), -- Fashionable Undershirt
+							{ -- Ensemble: Mana-Etched  Regalia
+								["groups"] = {
+									un(22, i(151885)), -- Mana-Etched Crown
+									un(22, i(151886)), -- Mana-Etched Spaulders
+									un(22, i(151882)), -- Mana-Etched Vestments
+									un(22, i(151884)), -- Mana-Etched Gloves
+									un(22, i(151887)), -- Glpyh-Lined Sash
+									un(22, i(151883)), -- Mana-Etched Pantaloons
+									un(22, i(151888)), -- Sigil-Laced Boots
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 151117,
+								["classes"] = { 5, 8, 9 },
+							},
+							{ -- Ensemble: Obsidian Prowler's Garb
+								["groups"] = {
+									un(22, i(151891)), -- Savage Mask of the Lynx Lord
+									un(22, i(151889)), -- Sun-Gilded Shouldercaps
+									un(22, i(151895)), -- Chestguard of the Proweler
+									un(22, i(151892)), -- Predatory Gloves
+									un(22, i(151894)), -- Epoch's Whispering Cinch
+									un(22, i(151893)), -- Mennu's Scaled Leggings
+									un(22, i(151890)), -- Silent-Strider Kneeboots
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 151118,
+								["classes"] = { 11, 4 , 10, 12 },
+							},
+							{ -- Ensemble: Der'izu Armor
+								["groups"] = {
+									un(22, i(151898)), -- Der'izu Helm
+									un(22, i(151896)), -- Der'izu Spaulders
+									un(22, i(151901)), -- Der'izu Chestpiece
+									un(22, i(151902)), -- Der'izu Bracer
+									un(22, i(151900)), -- Der'izu Fists
+									un(22, i(151903)), -- Der'izu Belt
+									un(22, i(151897)), -- Der'izu Legguards
+									un(22, i(151899)), -- Der'izu Greaves
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 151119,
+								["classes"] = { 3, 7 },
+							},
+							{ -- Ensemble: Righteous Battleplate
+								["groups"] = {
+									un(22, i(151906)), -- Helm of the Righteous
+									un(22, i(151904)), -- Spaulders of the Righteous
+									un(22, i(151908)), -- Breastlate of the Righteous
+									un(22, i(151911)), -- Bracers of Dignity
+									un(22, i(151907)), -- Gauntlets of the Righteous
+									un(22, i(151910)), -- Girdle of Valorous Deeds
+									un(22, i(151905)), -- Legplates of the Righteous
+									un(22, i(151909)), -- Boots of the Righteous Path
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 151120,
+								["classes"] = { 2, 1, 6 },
+							},
+							{ -- Ensemble: Mindwrack Raiment
+								["groups"] = {
+									un(22, i(156914)),	-- Mindwrack Cowl
+									un(22, i(156912)),	-- Mindwrack Shoulderpads
+									un(22, i(156917)),	-- Mindwrack Robes
+									un(22, i(156918)),	-- Mindwrack Bracers
+									un(22, i(156916)),	-- Mindwrack Handwraps
+									un(22, i(156919)),	-- Mindwrack Cord
+									un(22, i(156913)),	-- Mindwrack Leggings
+									un(22, i(156915)),	-- Mindwrack Slippers
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 157573,
+								["classes"] = { 5, 8, 9 },
+							},
+							{ -- Ensemble: Tundraspite Armor
+								["groups"] = {
+									un(22, i(156906)),	-- Tundraspite Helm
+									un(22, i(156904)),	-- Tundraspite Mantle
+									un(22, i(156909)),	-- Tundraspite Tunic
+									un(22, i(156910)),	-- Tundraspite Wristwraps
+									un(22, i(156908)),	-- Tundraspite Handguards
+									un(22, i(156911)),	-- Tundraspite Girdle
+									un(22, i(156905)),	-- Tundraspite Legguards
+									un(22, i(156907)),	-- Tundraspite Boots
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 157574,
+								["classes"] = { 11, 4, 10, 12},
+							},
+							{ -- Ensemble: Crimson Sentinel Garb
+								["groups"] = {
+									un(22, i(156898)),	-- Crimson Sentinel Cap
+									un(22, i(156896)),	-- Crimson Sentinel Shoulderplates
+									un(22, i(156901)),	-- Crimson Sentinel Hauberk
+									un(22, i(156902)),	-- Crimson Sentinel Bracers
+									un(22, i(156900)),	-- Crimson Sentinel Gauntlets
+									un(22, i(156903)),	-- Crimson Sentinel Waistguard
+									un(22, i(156897)),	-- Crimson Sentinel Leggings
+									un(22, i(156899)),	-- Crimson Sentinel Boots
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 157576,
+								["classes"] = { 3, 7 },
+							},
+							{ -- Ensemble: Goldspine Plate
+								["groups"] = {
+									un(22, i(156890)),	-- Goldspine Helm
+									un(22, i(156888)),	-- Goldspine Pauldrons
+									un(22, i(156893)),	-- Goldspine Breastplate
+									un(22, i(156894)),	-- Goldspine Armplates
+									un(22, i(156892)),	-- Goldspine Fists
+									un(22, i(156895)),	-- Goldspine Belt
+									un(22, i(156889)),	-- Goldspine Legguards
+									un(22, i(156891)),	-- Goldspine Sabatons
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 157577,
+								["classes"] = { 2, 1, 6 },
+							},
+						})),
+					}),
+				}),
+	--[[
 					n(-116, { 	 -- Tailoring Emporium
 						nh(79864, { -- 	Warra the Weaver 
 							i(115357), 	 -- Teaches Sumptious cowl,leggings, robes, hexweave cloth, secrets of draenor tailoring
@@ -3776,16 +4509,17 @@ _.ExpansionFeatures =
 						}),		
 					}),
 			]]--							
-					n(-119, { 	 -- Trading Post
+					n(-119, {	-- Trading Post
 						nh(87015, { -- Kil'rip - Laughing Skull Quartermaster 
 							["groups"] = {
 								currency(823, { -- Apexis Crystals
 									["groups"] = {
-										i(119146), 	-- Bone Wasp
 										i(118672),	-- Bloody Visage of the Laughing Skull
+										i(119146), 	-- Bone Wasp
 										i(118671),	-- Frozen Visage of the Laughing Skull
 										i(118673),	-- Golden Visage of the Laughing Skull
 										i(116782),	-- Ironside Warwolf
+										i(118668),	-- Laughing Skull Elixir
 										i(118674),	-- Visage of the Laughing Skull
 									},
 								}),
@@ -3857,6 +4591,22 @@ _.ExpansionFeatures =
 					}),
 				}),
 				nh(-153, {	-- Work Orders
+					ach(9407, {	-- Working Many Orders (750)
+						ach(9406, {		-- Working More Orders (250)
+							["groups"] = {
+								i(111930),		-- Alchemy Lab, Level 3 [Blueprints]
+								i(111973),		-- Enchanter's Study, Level 3 [Blueprints]
+								i(109257),		-- Engineering Works, Level 3 [Blueprints]
+								i(111975),		-- Gem Boutique, Level 3 [Blueprints]
+								i(111979),		-- Scribe's Quarters, Level 3 [Blueprints]
+								i(111993),		-- Tailoring Emporium, Level 3 [Blueprints]
+								i(111991),		-- The Forge, Level 3 [Blueprints]
+								i(111989),		-- The Tannery, Level 3 [Blueprints]
+							},
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						}),
+						ach(9405),		-- Working Some Orders (125)
+					}),
 					n(86639, { -- Altar of Bones
 						["groups"] = {
 							i(118043, { -- Broken Bones
@@ -4289,6 +5039,36 @@ _.ExpansionFeatures =
 							}),
 						},
 						["description"] = "Gladiator's Sanctum",
+					}),
+					n(-103, {	-- Barn
+						ach(9452, {		-- Trap Superstar (500)
+							ach(9451),		-- Trapper's Delight (250)
+							ach(9565, {		-- Master Trapper (125)
+								["groups"] = {
+									i(111969),		-- Barn, Level 3 [Blueprints]
+								},
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							}),
+							ach(9450),		-- The Trap Game (50)
+						}),
+					}),
+					n(-111, {	-- Lumber Mill
+						ach(9080, {	-- Choppin' Even More Logs (Horde) (100)
+							title(258),		-- Timber Lord
+							ach(9077, {		-- Choppin' Some More Logs (50)
+								title(257),		-- Lumberjack
+							}),
+							ach(9076),		-- Choppin' Some Logs (10)
+						}),
+						ach(9429, {		-- Upgrading the Mill
+							["groups"] = {
+								i(109255),		-- Lumber Mill, Level 3 [Blueprints]
+								crit(1), 		-- Place 75 Work Order at the Lumber Mill
+								crit(2),		-- Legacy of the Ancients
+								crit(3),		-- Reduction in Force
+							},
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						}),
 					}),
 				}),
 			},
