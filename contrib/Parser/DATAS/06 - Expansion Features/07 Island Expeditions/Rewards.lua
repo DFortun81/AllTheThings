@@ -354,6 +354,96 @@ _.ExpansionFeatures =
 						i(163924), -- Whiskerwax Candle
 						-- i(164371), -- Yaungol Oil Stove [Not in files]
 					}),
+					n(-319, { -- Weapons
+						i(164337), -- Plundered Amber Slinger
+						i(164338), -- Plundered Ambershaper's Egg
+						i(164301), -- Plundered Barb-Edged Dagger
+						i(164297), -- Plundered Beacon-Light Bulwark
+						i(164320), -- Plundered Bear-Carved Fists
+						i(164270), -- Plundered Berserker's Poleaxe
+						i(164267), -- Plundered Biting Shot Longbow
+						i(164334), -- Plundered Blade of Northern Kings
+						i(164333), -- Plundered Bow of the Chosen
+						i(164364), -- Plundered Carapace Linked Longsword
+						i(164304), -- Plundered Celestial Finblade
+						i(164366), -- Plundered Codex of Otherworldly Vision
+						i(164329), -- Plundered Coilpoint Scepter
+						i(164331), -- Plundered Coral-Scale Claw
+						i(164307), -- Plundered Crag Basher
+						i(164363), -- Plundered Darkblade of the Old Gods
+						i(164352), -- Plundered Darkscale Blade
+						i(164269), -- Plundered Death Chatter Wand
+						i(164275), -- Plundered Desert Hexxer
+						i(164350), -- Plundered Dragon Roar-Barrel
+						i(164351), -- Plundered Dragonfist Wand
+						i(164332), -- Plundered Drillbore Fists
+						i(164340), -- Plundered Embercrystal Staff
+						i(164355), -- Plundered Essence Font Scepter
+						i(164279), -- Plundered Farakki Hacker
+						i(164341), -- Plundered Firegeode Mace
+						i(164298), -- Plundered Fireheart Pummeler
+						i(164299), -- Plundered Flamecaster Stave
+						i(164346), -- Plundered Frost Scepter
+						i(164327), -- Plundered Fury-Fin Axe
+						i(164342), -- Plundered Geode Gavel
+						i(164295), -- Plundered Heart Hacker
+						i(164293), -- Plundered Horn Pummeler
+						i(164314), -- Plundered Hozen Chieftain's Stave
+						i(164265), -- Plundered Ice-Etched Axe
+						i(164344), -- Plundered Iceshard Bite
+						i(164282), -- Plundered Jadefury Shield
+						i(164281), -- Plundered Jadestar Blade
+						i(164312), -- Plundered Jinyu Longsword
+						i(164313), -- Plundered Jinyu Spear
+						i(164273), -- Plundered Junglestalker's Talon
+						i(164319), -- Plundered Keeper's Stave
+						i(164280), -- Plundered Light-Binding Wand
+						i(164300), -- Plundered Longhunt Bow
+						i(164283), -- Plundered Mogu Scepter
+						i(164339), -- Plundered Molten Reaper
+						i(164330), -- Plundered Mrggll Masher
+						i(164349), -- Plundered Obsidian Scale Smasher
+						i(164326), -- Plundered Oracle Fin Staff
+						i(164335), -- Plundered Paragon's Mace
+						i(164345), -- Plundered Petrified Kelp Blade
+						i(164292), -- Plundered Petrified Tree
+						i(164284), -- Plundered Poleaxe of Intimidation
+						i(164358), -- Plundered Sand-Dweller's Scimitar
+						i(164277), -- Plundered Sand-Scoured Fetish
+						i(164276), -- Plundered Sandfury Blade
+						i(164360), -- Plundered Sandstone Gavel
+						i(164317), -- Plundered Sapling Seed
+						i(164353), -- Plundered Scalebane Claymore
+						i(164323), -- Plundered Sea-Sinew Stave
+						i(164343), -- Plundered Seacrystal Blade
+						i(164291), -- Plundered Seatusk Shiv
+						i(164294), -- Plundered Shadow-Infused Blade
+						i(164315), -- Plundered Silverpaw Staff
+						i(164272), -- Plundered Skullsplitter
+						i(164303), -- Plundered Splitblade Slicer
+						i(164328), -- Plundered Squidcaster
+						i(164316), -- Plundered Stump Mace
+						i(164336), -- Plundered Swarmer's Blade
+						i(164359), -- Plundered Tainted Scarab Stave
+						i(164296), -- Plundered Tenderizing Crusher
+						i(164318), -- Plundered Thorncrowned Stave
+						i(164278), -- Plundered Tiki-Bound Blade
+						i(164271), -- Plundered Torga Blessed Bulwark
+						i(164266), -- Plundered Totem Barrier
+						i(164325), -- Plundered Trident Barb
+						i(164268), -- Plundered Troll Ceremonial Basher
+						i(164357), -- Plundered Twilight Pummeler
+						i(164302), -- Plundered Twinbarb Shanker
+						i(164361), -- Plundered Twinblade of the Tol'vir
+						i(164356), -- Plundered Twinscale Handblade
+						i(164324), -- Plundered Vanguard Trident
+						i(164274), -- Plundered Voodoo Dancer Stave
+						i(164362), -- Plundered Wand of Tentacle Horrors
+						i(164305), -- Plundered Waterbearer's Staff
+						i(164306), -- Plundered Waterspeaker's Spellblade
+						i(164347), -- Plundered Windblaster
+						i(164354), -- Plundered Wingblade Axe
+					}),
 				},	
 				["icon"] = "Interface\\Icons\\INV_Misc_Bag_SatchelofCenarius",	
 				["description"] = "|cff66ccffThese are the random rewards you can receive by completing an Island Expedition.  It is estimated that winning will give you a higher chance to receive a reward.\n\nNOTE: These rewards are subject to change and are currently what has been either found through Beta Testing or assumed to be as a reward.\n\nIf you receive something not listed here and you receive it please screenshot and submit to our discord and ping Lucetia with the \"@Lucetia\" command.|r",			
