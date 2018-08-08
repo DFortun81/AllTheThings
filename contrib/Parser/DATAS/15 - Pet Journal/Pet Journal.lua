@@ -31,9 +31,11 @@ _.PetJournal =
 		p(483), 	-- Horny Toad
 		p(648), 	-- Huge Toad
 		p(1541), 	-- Hydraling
+		p(2461),	-- Inky
 		p(1579), 	-- Ironclaw Scuttler
 		p(106), 	-- Jubling
 		p(565), 	-- Jungle Darter
+		p(2453),	-- Juvenile Brineshell
 		p(1728), 	-- Juvenile Scuttleback
 		p(1583), 	-- Kelp Scuttler
 		p(680), 	-- Kuitan Mongoose
@@ -52,10 +54,12 @@ _.PetJournal =
 		un(2, p(192)), 	-- Mr. Chilly
 		p(164), 	-- Muckbreath
 		p(1441), 	-- Mud Jumper
+		p(2462),	-- Octopode Fry
 		p(198), 	-- Pengu
 		p(1755), 	-- Plump Jelly
 		p(1568), 	-- Puddle Terror
 		un(10, p(328)), 	-- Purple Puffer
+		p(2445),	-- Scuttle
 		p(1448), 	-- Sea Calf
 		p(340), 	-- Sea Pony
 		p(1754), 	-- Sewer-Pipe Jelly
@@ -65,8 +69,10 @@ _.PetJournal =
 		p(712), 	-- Sifang Otter Pup
 		p(1655), 	-- Slithershock Elver
 		p(419), 	-- Small Frog
+		p(2472),	-- Snapper
 		p(173), 	-- Snarly
 		p(713), 	-- Softshell Snapling
+		p(2446),	-- Sparkleshell Sandcrawler
 		p(1201), 	-- Spawn of G'nathus
 		un(20, p(125)), 	-- Speedy
 		p(1337), 	-- Spineclaw Crab
@@ -121,6 +127,7 @@ _.PetJournal =
 		p(75),		-- Black Kingsnake
 		p(42),		-- Black Tabby Cat
 		p(1743),	-- Black-Footed Fox Kit
+		p(2451),	-- Bloodstone Tunneler
 		p(1577),	-- Bloodthorn Hatchling
 		p(40),		-- Bombay Cat
 		p(77),		-- Brown Snake
@@ -139,6 +146,7 @@ _.PetJournal =
 		p(1890),	-- Corgi Pup
 		p(1929),	-- Corgnelius
 		p(41),		-- Cornish Rex Cat
+		p(2448),	-- Craghoof Kid
 		p(78),		-- Crimson Snake
 		p(745),		-- Crunchy Scorpion
 		p(634),		-- Crystal Spider
@@ -148,6 +156,7 @@ _.PetJournal =
 		p(508),		-- Darkshore Cub
 		p(232),		-- Darting Hatchling
 		p(1330),	-- Death Adder Hatchling
+		p(2464),	-- Deathsting Scorpid
 		un(4, p(1449)),	-- Deathwatch Hatchling
 		p(484),		-- Desert Spider
 		p(233),		-- Deviate Hatchling
@@ -184,6 +193,7 @@ _.PetJournal =
 		p(678),		-- Jungle Grub
 		p(438),		-- King Snake
 		p(1334),	-- Kovok
+		p(2454),	-- Kunchong Hatchling
 		p(461),		-- Larva
 		p(307),		-- Lashtail Hatchling
 		p(235),		-- Leaping Hatchling
@@ -206,6 +216,7 @@ _.PetJournal =
 		p(1198),	-- Mountain Panda
 		p(286),		-- Mr. Grubbs
 		p(1594),	-- Mudback Calf
+		p(2458),	-- Muskflank Calfling
 		un(10, p(303)),		-- Nightsaber Cub
 		p(1727),	-- Nursery Spider
 		p(236),		-- Obsidian Hatchling
@@ -243,6 +254,7 @@ _.PetJournal =
 		p(1736),	-- Slithering Brownscale
 		p(90),		-- Smolderweb Hatchling
 		p(387),		-- Snake
+		p(2459),	-- Snort
 		p(440),		-- Snow Cub
 		p(1941),	-- Snowfang
 		p(1197),	-- Snowy Panda
@@ -345,6 +357,7 @@ _.PetJournal =
 		p(442),		-- Irradiated Roach
 		p(429),		-- Lava Beetle
 		p(203),		-- Little Fawn
+		p(2471),	-- Littlehoof
 		p(543),		-- Locust
 		p(404),		-- Long-tailed Mole
 		p(1511),	-- Lovebird Hatchling
@@ -386,6 +399,7 @@ _.PetJournal =
 		p(424),		-- Roach
 		p(496),		-- Rusty Snail
 		un(10, p(665)),		-- Sand Scarab
+		p(2463),	-- Sandshell Chitterer
 		p(717),		-- Savory Beetle
 		p(512),		-- Scarab Hatchling
 		un(20, p(289)),		-- Scooter the Snail
@@ -442,19 +456,24 @@ _.PetJournal =
 		p(59),		-- Emerald Whelpling
 		p(1720),	-- Emmigosa
 		un(3, p(180)),	-- Essence of Competition
+		p(2466),	-- Giggling Flame
 		p(142),		-- Golden Dragonhawk Hatchling
 		p(2017),	-- Infinite Hatchling
 		p(1161),	-- Infinite Whelpling
 		p(1956),	-- Ironbound Proto-Whelp
+		p(2447),	-- Kindleweb Spiderling
 		p(1533),	-- Lanticore Spawnling
+		p(2468),	-- Laughing Stonekin
 		un(6, p(268)),	-- Lil' Deathwing
 		p(320),		-- Lil' Tarecgosa
+		p(2467),	-- Mischievous Zephyr
 		p(557),		-- Nether Faerie Dragon
 		un(6, p(131)),	-- Netherwhelp
 		p(1165),	-- Nexus Whelpling
 		p(1723),	-- Nightmare Whelpling
 		un(3, p(243)),	-- Onyxian Whelpling
 		p(1235),	-- Phoenix Hawk Hatchling
+		p(2465),	-- Playful Frostkin
 		p(196),		-- Proto-Drake Whelp
 		p(143),		-- Red Dragonhawk Hatchling
 		p(144),		-- Silver Dragonhawk Hatchling
@@ -465,6 +484,7 @@ _.PetJournal =
 		p(1721),	-- Stormborne Whelpling
 		p(382),		-- Sun Darter Hatchling
 		un(9, p(802)),	-- Thundering Serpent Hatchling
+		p(2450),	-- Tinder Pup
 		un(3, p(757)),	-- Tiny Green Dragon
 		un(3, p(758)),	-- Tiny Red Dragon
 		p(2081), 	-- Twilight Clutch-Sister
@@ -532,6 +552,7 @@ _.PetJournal =
 		p(2018),	-- Paradox Spirit
 		p(265),		-- Pebble
 		p(175),		-- Phoenix Hatchling
+		p(2452),	-- Poro
 		p(1328),	-- Ruby Droplet
 		p(460),		-- Ruby Sapling
 		p(172),		-- Searing Scorchling
@@ -545,6 +566,7 @@ _.PetJournal =
 		p(1917),	-- Stormstruck Beaver
 		p(1518),	-- Stout Alemental
 		p(1434),	-- Sun Sproutling
+		p(2473),	-- Sunscale Hatchling
 		p(2088), 	-- Surger
 		p(1231),	-- Tainted Waveling
 		p(204),		-- Teldrassil Sproutling
@@ -557,6 +579,7 @@ _.PetJournal =
 		p(480),		-- Topaz Shale Hatchling
 		p(2092), 	-- Unstable Tendril
 		p(855),		-- Venus
+		p(2460),	-- Voru'kar Leecher
 		p(535),		-- Water Waveling
 		p(1959),	-- Winter Rageling
 		p(220),		-- Withers
@@ -724,6 +747,7 @@ _.PetJournal =
 		p(1323),	-- Ashleaf Spriteling
 		un(6, p(1828)),	-- Baby Winston
 		p(1343),	-- Bonkers
+		p(2457),	-- Coldlight Surfrunner
 		p(1149),	-- Corefire Imp
 		p(1688),	-- Crusher
 		un(20, p(225)),		-- Curious Oracle Hatchling
@@ -778,6 +802,7 @@ _.PetJournal =
 		p(1158),	-- Stunted Yeti
 		p(1885),	-- Sunborne Val'kyr
 		p(1073),	-- Terky
+		p(2469),	-- Thistlebrush Bud
 		p(1803),	-- Thistleleaf Adventurer
 		un(6, p(1365)),	-- Treasure Goblin
 		p(2022),	-- Tylarr Gronnden
@@ -889,6 +914,7 @@ _.PetJournal =
 		p(262),		-- De-Weaponized Mechanical Companion
 		p(2001), 	-- Dibbler
 		p(1450),	-- Draenei Micro Defender
+		p(2449),	-- False Knucklebump
 		p(1162),	-- Fluxfire Feline
 		p(2058),	-- Foe Reaper 0.9
 		p(1961),	-- G0-R41-0N Ultratonk
@@ -931,12 +957,14 @@ _.PetJournal =
 		p(227),		-- Warbot
 	}),
 	pa(242, { 	-- Undead
+		p(2456),	-- Barnaby
 		p(1965),	-- Blightbreath
 		p(455),		-- Blighted Squirrel
 		p(456),		-- Blighthawk
 		p(2035),	-- Bloodbrood Whelpling
 		p(1600),	-- Bone Serpent
 		p(1963),	-- Boneshard
+		p(2455),	-- Captain Nibs
 		p(264),		-- Crawling Claw
 		p(321),		-- Creepy Crate
 		p(1521),	-- Cursed Birman
@@ -992,4 +1020,3 @@ _.PetJournal =
 		p(1428),	-- Zomstrok
 	}),
 };
-

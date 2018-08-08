@@ -312,34 +312,37 @@ _.ExpansionFeatures =
 						i(163584), -- Twilight Avenger
 					}),
 					n(-162, { -- Pets
-						i(163799), -- Barnaby
-						i(163818), -- Bloodstone Tunneler
-						i(163798), -- Captain Nibs
-						i(163823), -- Coldlight Surfrunner
-						i(163805), -- Craghoof Kid
-						i(163809), -- Deathsting Scorpid
-						i(163806), -- False Knucklebump
-						i(163811), -- Giggling Flame
-						i(163802), -- Inky
-						i(163821), -- Juvenile Brineshell
-						i(163804), -- Kindleweb Spiderling
-						i(163822), -- Kunchong Hatchling
-						i(163812), -- Laughing Stonekin
-						i(163815), -- Littlehoof
-						i(163814), -- Mischievous Zephyr
-						i(163820), -- Muskflank Calfling
-						i(163801), -- Octopode Fry
-						i(163813), -- Playful Frostkin
-						i(163800), -- Poro
-						i(163808), -- Sandshell Chitterer
-						i(163797), -- Scuttle
-						i(163816), -- Snapper
-						i(163819), -- Snort
-						i(163803), -- Sparkleshell Sandcrawler
-						i(163817), -- Sunscale Hatchling
-						i(163810), -- Thistlebrush Bud
-						i(163807), -- Tinder Pup
-						i(163824), -- Voru'kar Leecher
+						["groups"] = {
+							i(163799), -- Barnaby
+							i(163818), -- Bloodstone Tunneler
+							i(163798), -- Captain Nibs
+							i(163823), -- Coldlight Surfrunner
+							i(163805), -- Craghoof Kid
+							i(163809), -- Deathsting Scorpid
+							i(163806), -- False Knucklebump
+							i(163811), -- Giggling Flame
+							i(163802), -- Inky
+							i(163821), -- Juvenile Brineshell
+							i(163804), -- Kindleweb Spiderling
+							i(163822), -- Kunchong Hatchling
+							i(163812), -- Laughing Stonekin
+							i(163815), -- Littlehoof
+							i(163814), -- Mischievous Zephyr
+							i(163820), -- Muskflank Calfling
+							i(163801), -- Octopode Fry
+							i(163813), -- Playful Frostkin
+							i(163800), -- Poro
+							i(163808), -- Sandshell Chitterer
+							i(163797), -- Scuttle
+							i(163816), -- Snapper
+							i(163819), -- Snort
+							i(163803), -- Sparkleshell Sandcrawler
+							i(163817), -- Sunscale Hatchling
+							i(163810), -- Thistlebrush Bud
+							i(163807), -- Tinder Pup
+							i(163824), -- Voru'kar Leecher
+						},
+						["achievementID"] = 13128, -- I'm Here for the Pets
 					}),
 					n(-161, { -- Toys
 						i(164375), -- Bad Mojo Banana
