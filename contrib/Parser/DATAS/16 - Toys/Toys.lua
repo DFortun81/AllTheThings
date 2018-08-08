@@ -182,7 +182,7 @@ _.Toys =
 		i(141306),		-- Wisp in a Bottle
 		i(130214), 		-- Worn Doll
 		i(36862),		-- Worn Troll Dice
-		i(164371), 		-- Yaungol Oil Stove
+		-- i(164371), 		-- Yaungol Oil Stove
 		i(153180),  	-- Yellow Conservatory Scroll
 	}),
 	n(-36, {	-- In-Game Shop
