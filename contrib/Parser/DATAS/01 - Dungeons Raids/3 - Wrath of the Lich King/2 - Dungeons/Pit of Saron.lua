@@ -18,12 +18,53 @@ _.Instances =
 						a(q(24683)),	-- The Pit of Saron, No actual awards.
 						h(q(24682)),	-- The Pit of Saron, No actual awards.
 					}),
-					d(  1, {	-- Normal
+					d(1,   {	-- Normal
 						n(0, {		-- Zone Drop
-							i(49852),	-- Coffin Nail
-							i(49854),	-- Mantle of Tattered Feathers
-							i(49853),	-- Titanium Links of Lore
-							i(49855)	-- Plated Grips of Korth'azz
+							i(49852, {	-- Coffin Nail
+								["crs"] = {
+									37712,	-- Deathwhisper Shadowcaster
+									37711,	-- Hungering Ghoul
+									36891,	-- Iceborn Proto-Drake
+									36879,	-- Plagueborn Horror
+									36842,	-- Wrathbone Coldwraith
+									36830,	-- Wrathbone Laborer
+									36892,	-- Ymirjar Deathbringer
+									36893,	-- Ymirjar Flamebearer
+									31260,	-- Ymirjar Skycaller
+									36840,	-- Ymirjar Wrathbringer
+								},
+							}),
+							i(49854, {	-- Mantle of Tattered Feathers
+								["crs"] = {
+									37712,	-- Deathwhisper Shadowcaster
+									36879,	-- Plaugeborn Horror
+									36892,	-- Ymirjar Deathbringer
+									36840,	-- Ymirjar Wrathbringer
+								},
+							}),
+							i(49855, {	-- Plated Grips of Korth'azz
+								["crs"] = {
+									36886,	-- Geist Ambusher
+									37711,	-- Hungering Ghoul
+									36891,	-- Iceborn Proto-Drake
+									36879,	-- Plagueborn Horror
+									36830,	-- Wrathbone Laborer
+									36892,	-- Ymirjar Deathbringer
+									36840,	-- Ymirjar Wrathbringer
+								},
+							}),
+							i(49853, {	-- Titanium Links of Lore
+								["crs"] = {
+									36788,	-- Deathwhisper Necrolyte
+									37712,	-- Deathwhisper Shadowcaster
+									37713,	-- Deathwhisper Torturer
+									36886,	-- Geist Ambusher
+									36879,	-- Plagueborn Horror
+									36842,	-- Wrathbone Coldwraith
+									36893,	-- Ymirjar Flamebearer
+									31260,	-- Ymirjar Skycaller
+								},
+							}),
 						}),
 						cr(36494, e(608, {	-- Forgemaster Garfrost
 							i(49802),	-- Garfrost's Two-Ton Hammer
@@ -80,14 +121,11 @@ _.Instances =
 							i(50259),	-- Nevermelting Ice Crystal
 						})),
 					}),
-					d(  2, {	-- Heroic
+					d(2,   {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
 							n(0, {		-- Zone Drop
 								["groups"] = {
-									i(50315),	-- Seven-Fingered Claws
-									i(50319),	-- Unsharpened Ice Razor
-									i(50318),	-- Ghostly Wristwraps
 									i(50379, {	-- Battered Hilt (Alliance)
 										["groups"] = {
 											i(50052),	-- Lightborn Spire
@@ -96,9 +134,9 @@ _.Instances =
 											i(50046),	-- Quel'Delar, Cunning of the Shadows
 											i(50049),	-- Quel'Delar, Ferocity of the Scorned
 											i(50047),	-- Quel'Delar, Lens of the Mind
-											i(50048)	-- Quel'Delar, Might of the Faithful
+											i(50048),	-- Quel'Delar, Might of the Faithful
 										},
-										["races"] = { 11, 3, 7, 1, 4, 25, 22 },
+										["races"] = ALLIANCE_ONLY,
 									}),
 									i(50380, {	-- Battered Hilt (Horde)
 										["groups"] = {
@@ -108,9 +146,26 @@ _.Instances =
 											i(50046),	-- Quel'Delar, Cunning of the Shadows
 											i(50049),	-- Quel'Delar, Ferocity of the Scorned
 											i(50047),	-- Quel'Delar, Lens of the Mind
-											i(50048)	-- Quel'Delar, Might of the Faithful
+											i(50048),	-- Quel'Delar, Might of the Faithful
 										},
-										["races"] = { 10, 9,  2, 26, 6,  8, 5 },
+										["races"] = HORDE_ONLY,
+									}),
+									i(50318, {	-- Ghostly Wristwraps
+										["crs"] = {
+											37711,	-- Hungering Ghoul
+											36896,	-- Stonespine Gargoyle
+										},
+									}),
+									i(50315, {	-- Seven-Fingered Claws
+										["crs"] = {
+											37711,	-- Hungering Ghoul
+											36896,	-- Stonespine Gargoyle
+										},
+									}),
+									i(50319, {	-- Unsharpened Ice Razor
+										["crs"] = {
+											37712,	-- Deathwhisper Shadowcaster
+										},
 									}),
 								},
 							}),

@@ -16,12 +16,33 @@ _.Instances =
 						a(q(24500)),	-- Wrath of the Lich King, No actual awards.
 						h(q(24802)),	-- Wrath of the Lich King, No actual awards.
 					}),
-					d(  1, {	-- Normal
+					d(1,   {	-- Normal
 						n(0, {		-- Zone Drop
-							i(49852),	-- Coffin Nail
-							i(49854),	-- Mantle of Tattered Feathers
-							i(49853),	-- Titanium Links of Lore
-							i(49855)	-- Plated Grips of Korth'azz
+							i(49852, {	-- Coffin Nail
+								["crs"] = {
+									38177,	-- Shadowy Mercenary
+								},
+							}),
+							i(49854, {	-- Mantle of Tattered Feathers
+								["crs"] = {
+									38176,	-- Tortured Rifleman
+								},
+							}),
+							i(49855, {	-- Plated Grips of Korth'azz
+								["crs"] = {
+									36723,	-- Frostsworn General
+									38175,	-- Ghostly Priest
+									38177,	-- Shadowy Mercenary
+									38173,	-- Spectral Footman
+								},
+							}),
+							i(49853, {	-- Titanium Links of Lore
+								["crs"] = {
+									38175,	-- Ghostly Priest
+									38177,	-- Shadowy Mercenary
+									38173,	-- Spectral Footman
+								},
+							}),
 						}),
 						cr(38112, e(601, {	-- Falric
 							i(50290),	-- Falric's Wrist-Chopper
@@ -78,14 +99,11 @@ _.Instances =
 							i(50306),	-- The Lady's Promise
 						})),
 					}),
-					d(  2, {	-- Heroic
+					d(2,   {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
 							n(0, {	-- Zone Drop
 								["groups"] = {
-									i(50315),	-- Seven-Fingered Claws
-									i(50319),	-- Unsharpened Ice Razor
-									i(50318),	-- Ghostly Wristwraps
 									i(50379, {	-- Battered Hilt (Alliance)
 										["groups"] = {
 											i(50052),	-- Lightborn Spire
@@ -96,7 +114,7 @@ _.Instances =
 											i(50047),	-- Quel'Delar, Lens of the Mind
 											i(50048),	-- Quel'Delar, Might of the Faithful
 										},
-										["races"] = { 11, 3, 7, 1, 4, 25, 22 },
+										["races"] = ALLIANCE_ONLY,
 									}),
 									i(50380, {	-- Battered Hilt (Horde)
 										["groups"] = {
@@ -108,7 +126,32 @@ _.Instances =
 											i(50047),	-- Quel'Delar, Lens of the Mind
 											i(50048),	-- Quel'Delar, Might of the Faithful
 										},
-										["races"] = { 10, 9,  2, 26, 6,  8, 5 },
+										["races"] = HORDE_ONLY,
+									}),
+									i(50318, {	-- Ghostly Wristwraps
+										["crs"] = {
+											36723,	-- Frostsworn General
+											38175,	-- Ghostly Priest
+											38172,	-- Phantom Mage
+										},
+									}),
+									i(50315, {	-- Seven-Fingered Claws
+										["crs"] = {
+											36723,	-- Frostsworn General
+											38175,	-- Ghostly Priest
+											38172,	-- Phantom Mage
+											38177,	-- Shadowy Mercenary
+											38173,	-- Spectral Footman
+											38176,	-- Tortured Rifleman
+										},
+									}),
+									i(50319, {	-- Unsharpened Ice Razor
+										["crs"] = {
+											38175,	-- Ghostly Priest
+											38172,	-- Phantom Mage
+											38173,	-- Spectral Footman
+											38176,	-- Tortured Rifleman
+										},
 									}),
 								},
 							}),

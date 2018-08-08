@@ -14,12 +14,45 @@ _.Instances =
 						a(q(24510)),	-- Inside the Frozen Citadel, No actual awards.
 						h(q(24506)),	-- Inside the Frozen Citadel, No actual awards.
 					}),
-					d(  1, {	-- Normal
+					d(1,   {	-- Normal
 						n(0, {		-- Zone Drop
-							i(49852),	-- Coffin Nail
-							i(49854),	-- Mantle of Tattered Feathers
-							i(49853),	-- Titanium Links of Lore
-							i(49855)	-- Plated Grips of Korth'azz
+							i(49852, {	-- Coffin Nail
+								["crs"] = {
+									36522,	-- Soul Horror
+									36620,	-- Soulguard Adept
+									36564,	-- Soulguard Bonecaster
+									36478,	-- Soulguard Watchman
+									36666,	-- Spectral Warden
+								},
+							}),
+							i(49854, {	-- Mantle of Tattered Feathers
+								["crs"] = {
+									36522,	-- Soul Horror
+									36516,	-- Soulguard Animator
+									36564,	-- Soulguard Bonecaster
+									36478,	-- Soulguard Watchman
+									36666,	-- Spectral Warden
+								},
+							}),
+							i(49855, {	-- Plated Grips of Korth'azz
+								["crs"] = {
+									36522,	-- Soul Horror
+									36516,	-- Soulguard Animator
+									36499,	-- Soulguard Reaper
+									36478,	-- Soulguard Watchman
+									36666,	-- Spectral Warden
+								},
+							}),
+							i(49853, {	-- Titanium Links of Lore
+								["crs"] = {
+									36522,	-- Soul Horror
+									36620,	-- Soulguard Adept
+									36516,	-- Soulguard Animator
+									36564,	-- Soulguard Bonecaster
+									36478,	-- Soulguard Watchman
+									36666,	-- Spectral Warden
+								},
+							}),
 						}),
 						cr(36497, e(615, {	-- Brojahm
 							i(50316),	-- Papa's Brand New Bag
@@ -63,14 +96,11 @@ _.Instances =
 							i(50198),	-- Needle-Encrusted Scorpion
 						})),
 					}),
-					d(  2, {	-- Heroic
+					d(2,   {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
 							n(0, {		-- Zone Drop
 								["groups"] = {
-									i(50315),	-- Seven-Fingered Claws
-									i(50319),	-- Unsharpened Ice Razor
-									i(50318),	-- Ghostly Wristwraps
 									i(50379, {	-- Battered Hilt (Alliance)
 										["groups"] = {
 											i(50052),	-- Lightborn Spire
@@ -81,7 +111,7 @@ _.Instances =
 											i(50047),	-- Quel'Delar, Lens of the Mind
 											i(50048),	-- Quel'Delar, Might of the Faithful
 										},
-										["races"] = { 11, 3, 7, 1, 4, 25, 22 },
+										["races"] = ALLIANCE_ONLY,
 									}),
 									i(50380, {	-- Battered Hilt (Horde)
 										["groups"] = {
@@ -93,7 +123,29 @@ _.Instances =
 											i(50047),	-- Quel'Delar, Lens of the Mind
 											i(50048),	-- Quel'Delar, Might of the Faithful
 										},
-										["races"] = { 10, 9,  2, 26, 6,  8, 5 },
+										["races"] = HORDE_ONLY,
+									}),
+									i(50318, {	-- Ghostly Wristwraps
+										["crs"] = {
+											36522,	-- Soul Horror
+											36516,	-- Soulguard Animator
+											36478,	-- Soulguard Watchman
+											36666,	-- Spectral Warden
+										},
+									}),
+									i(50315, {	-- Seven-Fingered Claws
+										["crs"] = {
+											36620,	-- Soulguard Adept
+											36564,	-- Soulguard Bonecaster
+											36499,	-- Soulguard Reaper
+											36478,	-- Soulguard Watchman
+										},
+									}),
+									i(50319, {	-- Unsharpened Ice Razor
+										["crs"] = {
+											36564,	-- Soulguard Bonecaster
+											36499,	-- Soulguard Reaper
+										},
 									}),
 								},
 							}),
