@@ -44,6 +44,7 @@ _.Zones =
 						["groups"] = {
 							currency(823, {  -- Apexis Crystal
 								["groups"] = {
+									i(118664),	-- Frostwolf Elixir
 									i(119141),	-- Frostwolf Pup
 									i(116785),	-- Swift Frostwolf
 								},
@@ -295,8 +296,8 @@ _.Zones =
 									un(4, i(118409)),	-- Cloudsong Glaive
 									un(4, i(118411)),	-- Crystal-Shot Longrifle
 									un(4, i(118403)),	-- Dimension-Ripper's Staff
-									un(4, i(118397)),	-- Equus
 									un(4, i(118408)),	-- Elemental Crescent
+									un(4, i(118397)),	-- Equus
 									un(4, i(118407)),	-- Face of the Guardian
 									un(4, i(118413)),	-- Flamegrinder
 									un(4, i(118406)),	-- Furnace of the Great Machine
@@ -316,8 +317,8 @@ _.Zones =
 							i(118409),	-- Cloudsong Glaive
 							i(118411),	-- Crystal-Shot Longrifle
 							i(118403),	-- Dimension-Ripper's Staff
-							i(118397),	-- Equus
 							i(118408),	-- Elemental Crescent
+							i(118397),	-- Equus
 							i(118407),	-- Face of the Guardian
 							i(118413),	-- Flamegrinder
 							i(118406),	-- Furnace of the Great Machine
@@ -729,22 +730,22 @@ _.Zones =
 								i(116768),	-- Mosshide Riverwallow
 							},
 						}),
-						i(122316),	-- Ethereal Windcrystal Leggings
-						i(122317),	-- Ethereal Crystalhide Legguards
-						i(122318),	-- Ethereal Crystal-Leaf Legguards
-						i(122319),	-- Ethereal Crystal-Plated Legplates
-						i(116931),	-- Flawless Windcrystal Leggings
-						i(116932),	-- Flawless Crystalhide Legguards
-						i(116933),	-- Flawless Crystal-Leaf Legguards
-						i(116934),	-- Flawless Crystal-Plated Legplates
-						i(116927),	-- Exceptional Windcrystal Leggings
-						i(116928),	-- Exceptional Crystalhide Legguards
-						i(116929),	-- Exceptional Crystal-Leaf Legguards
-						i(116930),	-- Exceptional Crystal-Plated Legplates
-						i(115374),	-- Windcrystal Leggings
-						i(115375),	-- Crystalhide Legguards
 						i(115376),	-- Crystal-Leaf Legguards
 						i(115377),	-- Crystal-Plated Legplates
+						i(115375),	-- Crystalhide Legguards
+						i(122318),	-- Ethereal Crystal-Leaf Legguards
+						i(122319),	-- Ethereal Crystal-Plated Legplates
+						i(122317),	-- Ethereal Crystalhide Legguards
+						i(122316),	-- Ethereal Windcrystal Leggings
+						i(116929),	-- Exceptional Crystal-Leaf Legguards
+						i(116930),	-- Exceptional Crystal-Plated Legplates
+						i(116928),	-- Exceptional Crystalhide Legguards
+						i(116927),	-- Exceptional Windcrystal Leggings
+						i(116933),	-- Flawless Crystal-Leaf Legguards
+						i(116934),	-- Flawless Crystal-Plated Legplates
+						i(116932),	-- Flawless Crystalhide Legguards
+						i(116931),	-- Flawless Windcrystal Leggings
+						i(115374),	-- Windcrystal Leggings
 					}),
 					n(86378, {	-- Dawn-Seeker Jiklar <Apexis Cloak Trader>
 						currency(823, { -- Apexis Crystal
@@ -755,26 +756,26 @@ _.Zones =
 								i(116768),	-- Mosshide Riverwallow
 							},
 						}),
-						i(122328),	-- Ethereal Shard-Covered Dreadcloak
+						i(116976),	-- Crystal Reinforced Doomcloak
+						i(116973),	-- Crystal-Edged Bladecloak
+						i(116974),	-- Crystalclasp Stormcloak
+						i(122332),	-- Ethereal Crystal Reinforced Doomcloak
 						i(122329),	-- Ethereal Crystal-Edged Bladecloak
 						i(122330),	-- Ethereal Crystalclasp Stormcloak
 						i(122331),	-- Ethereal Refractory Heartcloak
-						i(122332),	-- Ethereal Crystal Reinforced Doomcloak
-						i(116951),	-- Flawless Shard-Covered Dreadcloak
-						i(116969),	-- Flawless Crystal-Edged Bladecloak
-						i(116970),	-- Flawless Crystalclasp Stormcloak
-						i(116971),	-- Flawless Refractory Heartcloak
-						i(116972),	-- Flawless Crystal Reinforced Doomcloak
-						i(115395),	-- Exceptional Shard-Covered Dreadcloak
+						i(122328),	-- Ethereal Shard-Covered Dreadcloak
+						i(115394),	-- Exceptional Crystal Reinforced Doomcloak
 						i(115391),	-- Exceptional Crystal-Edged Bladecloak
 						i(115392),	-- Exceptional Crystalclasp Stormcloak
 						i(115393),	-- Exceptional Refractory Heartcloak
-						i(115394),	-- Exceptional Crystal Reinforced Doomcloak
-						i(116952),	-- Shard-Covered Dreadcloak
-						i(116973),	-- Crystal-Edged Bladecloak
-						i(116974),	-- Crystalclasp Stormcloak
+						i(115395),	-- Exceptional Shard-Covered Dreadcloak
+						i(116972),	-- Flawless Crystal Reinforced Doomcloak
+						i(116969),	-- Flawless Crystal-Edged Bladecloak
+						i(116970),	-- Flawless Crystalclasp Stormcloak
+						i(116971),	-- Flawless Refractory Heartcloak
+						i(116951),	-- Flawless Shard-Covered Dreadcloak
 						i(116975),	-- Refractory Heartcloak
-						i(116976),	-- Crystal Reinforced Doomcloak
+						i(116952),	-- Shard-Covered Dreadcloak
 					}),
 					n(91322, {	-- Dawn-Seeker Kayrek <Apexis Bracer Trader>
 						currency(823, { -- Apexis Crystal
@@ -785,22 +786,22 @@ _.Zones =
 								i(116768),	-- Mosshide Riverwallow
 							},
 						}),
-						i(122312),	-- Ethereal Windcrystal Bracers
-						i(122313),	-- Ethereal Crystalhide Bracers
-						i(122314),	-- Ethereal Crystal-Leaf Bracers
-						i(122315),	-- Ethereal Crystal-Plated Bracers
-						i(115400),	-- Flawless Windcrystal Bracers
-						i(115401),	-- Flawless Crystalhide Bracers
-						i(115402),	-- Flawless Crystal-Leaf Bracers
-						i(115403),	-- Flawless Crystal-Plated Bracers
-						i(116961),	-- Exceptional Windcrystal Bracers
-						i(116962),	-- Exceptional Crystalhide Bracers
-						i(116963),	-- Exceptional Crystal-Leaf Bracers
-						i(116964),	-- Exceptional Crystal-Plated Bracers
-						i(116965),	-- Windcrystal Bracers
-						i(116966),	-- Crystalhide Bracers
 						i(116967),	-- Crystal-Leaf Bracers
 						i(116968),	-- Crystal-Plated Bracers
+						i(116966),	-- Crystalhide Bracers
+						i(122314),	-- Ethereal Crystal-Leaf Bracers
+						i(122315),	-- Ethereal Crystal-Plated Bracers
+						i(122313),	-- Ethereal Crystalhide Bracers
+						i(122312),	-- Ethereal Windcrystal Bracers
+						i(116963),	-- Exceptional Crystal-Leaf Bracers
+						i(116964),	-- Exceptional Crystal-Plated Bracers
+						i(116962),	-- Exceptional Crystalhide Bracers
+						i(116961),	-- Exceptional Windcrystal Bracers
+						i(115402),	-- Flawless Crystal-Leaf Bracers
+						i(115403),	-- Flawless Crystal-Plated Bracers
+						i(115401),	-- Flawless Crystalhide Bracers
+						i(115400),	-- Flawless Windcrystal Bracers
+						i(116965),	-- Windcrystal Bracers
 					}),
 					n(86376, {	-- Dawn-Seeker Kirrik <Apexis Helm Trader>
 						currency(823, { -- Apexis Crystal
@@ -811,22 +812,22 @@ _.Zones =
 								i(116768),	-- Mosshide Riverwallow
 							},
 						}),
-						i(122308),	-- Ethereal Windcrystal Hood
-						i(122309),	-- Ethereal Crystalhide Cowl
-						i(122310),	-- Ethereal Crystal-Leaf Helm
-						i(122311),	-- Ethereal Crystal-Plated Greathelm
-						i(115396),	-- Flawless Windcrystal Hood
-						i(115397),	-- Flawless Crystalhide Cowl
-						i(115398),	-- Flawless Crystal-Leaf Helm
-						i(115399),	-- Flawless Crystal-Plated Greathelm
-						i(116957),	-- Exceptional Windcrystal Hood
-						i(116958),	-- Exceptional Crystalhide Cowl
-						i(116959),	-- Exceptional Crystal-Leaf Helm
-						i(116960),	-- Exceptional Crystal-Plated Greathelm
-						i(116953),	-- Windcrystal Hood
-						i(116954),	-- Crystalhide Cowl
 						i(116955),	-- Crystal-Leaf Helm
 						i(116956),	-- Crystal-Plated Greathelm
+						i(116954),	-- Crystalhide Cowl
+						i(122310),	-- Ethereal Crystal-Leaf Helm
+						i(122311),	-- Ethereal Crystal-Plated Greathelm
+						i(122309),	-- Ethereal Crystalhide Cowl
+						i(122308),	-- Ethereal Windcrystal Hood
+						i(116959),	-- Exceptional Crystal-Leaf Helm
+						i(116960),	-- Exceptional Crystal-Plated Greathelm
+						i(116958),	-- Exceptional Crystalhide Cowl
+						i(116957),	-- Exceptional Windcrystal Hood
+						i(115398),	-- Flawless Crystal-Leaf Helm
+						i(115399),	-- Flawless Crystal-Plated Greathelm
+						i(115397),	-- Flawless Crystalhide Cowl
+						i(115396),	-- Flawless Windcrystal Hood
+						i(116953),	-- Windcrystal Hood
 					}),
 					n(86379, {	-- Dawn-Seeker Rikks <Apexis Glove Trader>
 						currency(823, { -- Apexis Crystal
@@ -837,22 +838,22 @@ _.Zones =
 								i(116768),	-- Mosshide Riverwallow
 							},
 						}),
-						i(122324),	-- Ethereal Windcrystal Wraps
-						i(122325),	-- Ethereal Crystalhide Grips
-						i(122326),	-- Ethereal Crystal-Leaf Gloves
-						i(122327),	-- Ethereal Crystal-Plated Gauntlets
-						i(116947),	-- Flawless Windcrystal Wraps
-						i(116948),	-- Flawless Crystalhide Grips
-						i(116949),	-- Flawless Crystal-Leaf Gloves
-						i(116950),	-- Flawless Crystal-Plated Gauntlets
-						i(115387),	-- Exceptional Windcrystal Wraps
-						i(115388),	-- Exceptional Crystalhide Grips
-						i(115389),	-- Exceptional Crystal-Leaf Gloves
-						i(115390),	-- Exceptional Crystal-Plated Gauntlets
-						i(116943),	-- Windcrystal Wraps
-						i(116944),	-- Crystalhide Grips
 						i(116945),	-- Crystal-Leaf Gloves
 						i(116946),	-- Crystal-Plated Gauntlets
+						i(116944),	-- Crystalhide Grips
+						i(122326),	-- Ethereal Crystal-Leaf Gloves
+						i(122327),	-- Ethereal Crystal-Plated Gauntlets
+						i(122325),	-- Ethereal Crystalhide Grips
+						i(122324),	-- Ethereal Windcrystal Wraps
+						i(115389),	-- Exceptional Crystal-Leaf Gloves
+						i(115390),	-- Exceptional Crystal-Plated Gauntlets
+						i(115388),	-- Exceptional Crystalhide Grips
+						i(115387),	-- Exceptional Windcrystal Wraps
+						i(116949),	-- Flawless Crystal-Leaf Gloves
+						i(116950),	-- Flawless Crystal-Plated Gauntlets
+						i(116948),	-- Flawless Crystalhide Grips
+						i(116947),	-- Flawless Windcrystal Wraps
+						i(116943),	-- Windcrystal Wraps
 					}),
 					n(92503, {	-- Dawn-Seeker Skariss <Apexis Belt Trader>
 						currency(823, { -- Apexis Crystal
@@ -863,28 +864,29 @@ _.Zones =
 								i(116768),	-- Mosshide Riverwallow
 							},
 						}),
-						i(122320),	-- Ethereal Windcrystal Cord
-						i(122321),	-- Ethereal Crystalhide Belt
-						i(122322),	-- Ethereal Crystal-Leaf Chain
-						i(122323),	-- Ethereal Crystal-Plated Greatbelt
-						i(116939),	-- Flawless Windcrystal Cord
-						i(116940),	-- Flawless Crystalhide Belt
-						i(116941),	-- Flawless Crystal-Leaf Chain
-						i(116942),	-- Flawless Crystal-Plated Greatbelt
-						i(116935),	-- Exceptional Windcrystal Cord
-						i(116936),	-- Exceptional Crystalhide Belt
-						i(116937),	-- Exceptional Crystal-Leaf Chain
-						i(116938),	-- Exceptional Crystal-Plated Greatbelt
-						i(115378),	-- Windcrystal Cord
-						i(115379),	-- Crystalhide Belt
 						i(115380),	-- Crystal-Leaf Chain
 						i(115381),	-- Crystal-Plated Greatbelt
+						i(115379),	-- Crystalhide Belt
+						i(122322),	-- Ethereal Crystal-Leaf Chain
+						i(122323),	-- Ethereal Crystal-Plated Greatbelt
+						i(122321),	-- Ethereal Crystalhide Belt
+						i(122320),	-- Ethereal Windcrystal Cord
+						i(116937),	-- Exceptional Crystal-Leaf Chain
+						i(116938),	-- Exceptional Crystal-Plated Greatbelt
+						i(116936),	-- Exceptional Crystalhide Belt
+						i(116935),	-- Exceptional Windcrystal Cord
+						i(116941),	-- Flawless Crystal-Leaf Chain
+						i(116942),	-- Flawless Crystal-Plated Greatbelt
+						i(116940),	-- Flawless Crystalhide Belt
+						i(116939),	-- Flawless Windcrystal Cord
+						i(115378),	-- Windcrystal Cord
 					}),
 					n(128759, {	-- Dazzerian <Warspear Quartermaster>
 						currency(823, { -- Apexis Crystal
 							un(2, i(116775)),	-- Breezestrider Stallion (Rep removed from Medallion of the Legion in hotfix for 8.0)
 						}),
-						i(115518),	-- Vol'jin's Spear Tabard
+						un(2, i(115500)),	-- Disposable Pocket Flying Machine (Rep removed from Medallion of the Legion in hotfix for 8.0)
+						un(2, i(115518)),	-- Vol'jin's Spear Tabard (Rep removed from Medallion of the Legion in hotfix for 8.0)
 					}),
 					n(93908, {	-- Fobbly Kickfix <Wild Combatant>
 						i(138629, { -- Arsenal: Wild Combatant's Weapons [ Horde / Tested ]
@@ -1354,11 +1356,13 @@ _.Zones =
 									i(119149),	-- Captured Forest Sproutling
 									i(116672),	-- Domesticated Razorback
 									i(119148),	-- Indentured Albino River Calf
+									i(118667),	-- Steamwheedle Elixir
 								},
 							}),
 							i(119165, {	-- Contract: Professor Felblast
 								follower(460),	-- Professor Felblast
 							}),
+							i(110426),	-- Goblin Hot Potato
 							i(118683),	-- Portable Goon Squad
 							i(119137),	-- Steamwheedle "Preservation" Society Tabard
 						},
@@ -1367,6 +1371,7 @@ _.Zones =
 						["groups"] = {
 							currency (823, { -- Apexis Crystal
 								["groups"] = {
+									i(118666),	-- Arakkoa Elixir
 									i(116772),	-- Shadowmane Charger
 									i(119143),	-- Son of Sethe
 								},
@@ -1773,6 +1778,153 @@ _.Zones =
 						i(126651),	-- Warmongering Combatant's Plate Helm
 						i(126652),	-- Warmongering Combatant's Plate Legguards
 						i(126653),	-- Warmongering Combatant's Plate Shoulders
+					}),
+					n(85840, {	-- Torgg Flexington <Blueprints Trader>
+						["groups"] = {
+							i(111929),	-- Alchemy Lab, Level 2
+							i(111968),	-- Barn, Level 2
+							i(111970),	-- Barracks, Level 2
+							i(111972),	-- Enchanter's Study, Level 2
+							i(109256),	-- Engineering Works, Level 2
+							i(116431),	-- Frostwall Tavern, Level 2
+							i(111974),	-- Gem Boutique, Level 2
+							i(111980),	-- Gladiator's Sanctum, Level 2
+							i(116200),	-- Goblin Workshop, Level 2
+							i(109254),	-- Lumber Mill, Level 2
+							i(111976),	-- Salvage Yard, Level 2
+							i(111978),	-- Scribe's Quarters, Level 2
+							i(116196),	-- Spirit Lodge, Level 2
+							i(112002),	-- Stables, Level 2
+							i(111982),	-- Storehouse, Level 2
+							i(111992),	-- Tailoring Emporium, Level 2
+							i(111990),	-- The Forge, Level 2
+							i(111988),	-- The Tannery, Level 2
+							i(111986),	-- Trading Post, Level 2
+							i(116185),	-- War Mill, Level 2
+						},
+					}),
+					n(86395, {	-- Warpweaver Jasor <Transmogrifier>
+						un(22, i(151134, { -- Trial of Style Token
+							i(151116), -- Fashionable Undershirt
+							{ -- Ensemble: Mana-Etched  Regalia
+								["groups"] = {
+									un(22, i(151885)), -- Mana-Etched Crown
+									un(22, i(151886)), -- Mana-Etched Spaulders
+									un(22, i(151882)), -- Mana-Etched Vestments
+									un(22, i(151884)), -- Mana-Etched Gloves
+									un(22, i(151887)), -- Glpyh-Lined Sash
+									un(22, i(151883)), -- Mana-Etched Pantaloons
+									un(22, i(151888)), -- Sigil-Laced Boots
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 151117,
+								["classes"] = { 5, 8, 9 },
+							},
+							{ -- Ensemble: Obsidian Prowler's Garb
+								["groups"] = {
+									un(22, i(151891)), -- Savage Mask of the Lynx Lord
+									un(22, i(151889)), -- Sun-Gilded Shouldercaps
+									un(22, i(151895)), -- Chestguard of the Proweler
+									un(22, i(151892)), -- Predatory Gloves
+									un(22, i(151894)), -- Epoch's Whispering Cinch
+									un(22, i(151893)), -- Mennu's Scaled Leggings
+									un(22, i(151890)), -- Silent-Strider Kneeboots
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 151118,
+								["classes"] = { 11, 4 , 10, 12 },
+							},
+							{ -- Ensemble: Der'izu Armor
+								["groups"] = {
+									un(22, i(151898)), -- Der'izu Helm
+									un(22, i(151896)), -- Der'izu Spaulders
+									un(22, i(151901)), -- Der'izu Chestpiece
+									un(22, i(151902)), -- Der'izu Bracer
+									un(22, i(151900)), -- Der'izu Fists
+									un(22, i(151903)), -- Der'izu Belt
+									un(22, i(151897)), -- Der'izu Legguards
+									un(22, i(151899)), -- Der'izu Greaves
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 151119,
+								["classes"] = { 3, 7 },
+							},
+							{ -- Ensemble: Righteous Battleplate
+								["groups"] = {
+									un(22, i(151906)), -- Helm of the Righteous
+									un(22, i(151904)), -- Spaulders of the Righteous
+									un(22, i(151908)), -- Breastlate of the Righteous
+									un(22, i(151911)), -- Bracers of Dignity
+									un(22, i(151907)), -- Gauntlets of the Righteous
+									un(22, i(151910)), -- Girdle of Valorous Deeds
+									un(22, i(151905)), -- Legplates of the Righteous
+									un(22, i(151909)), -- Boots of the Righteous Path
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 151120,
+								["classes"] = { 2, 1, 6 },
+							},
+							{ -- Ensemble: Mindwrack Raiment
+								["groups"] = {
+									un(22, i(156914)),	-- Mindwrack Cowl
+									un(22, i(156912)),	-- Mindwrack Shoulderpads
+									un(22, i(156917)),	-- Mindwrack Robes
+									un(22, i(156918)),	-- Mindwrack Bracers
+									un(22, i(156916)),	-- Mindwrack Handwraps
+									un(22, i(156919)),	-- Mindwrack Cord
+									un(22, i(156913)),	-- Mindwrack Leggings
+									un(22, i(156915)),	-- Mindwrack Slippers
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 157573,
+								["classes"] = { 5, 8, 9 },
+							},
+							{ -- Ensemble: Tundraspite Armor
+								["groups"] = {
+									un(22, i(156906)),	-- Tundraspite Helm
+									un(22, i(156904)),	-- Tundraspite Mantle
+									un(22, i(156909)),	-- Tundraspite Tunic
+									un(22, i(156910)),	-- Tundraspite Wristwraps
+									un(22, i(156908)),	-- Tundraspite Handguards
+									un(22, i(156911)),	-- Tundraspite Girdle
+									un(22, i(156905)),	-- Tundraspite Legguards
+									un(22, i(156907)),	-- Tundraspite Boots
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 157574,
+								["classes"] = { 11, 4, 10, 12},
+							},
+							{ -- Ensemble: Crimson Sentinel Garb
+								["groups"] = {
+									un(22, i(156898)),	-- Crimson Sentinel Cap
+									un(22, i(156896)),	-- Crimson Sentinel Shoulderplates
+									un(22, i(156901)),	-- Crimson Sentinel Hauberk
+									un(22, i(156902)),	-- Crimson Sentinel Bracers
+									un(22, i(156900)),	-- Crimson Sentinel Gauntlets
+									un(22, i(156903)),	-- Crimson Sentinel Waistguard
+									un(22, i(156897)),	-- Crimson Sentinel Leggings
+									un(22, i(156899)),	-- Crimson Sentinel Boots
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 157576,
+								["classes"] = { 3, 7 },
+							},
+							{ -- Ensemble: Goldspine Plate
+								["groups"] = {
+									un(22, i(156890)),	-- Goldspine Helm
+									un(22, i(156888)),	-- Goldspine Pauldrons
+									un(22, i(156893)),	-- Goldspine Breastplate
+									un(22, i(156894)),	-- Goldspine Armplates
+									un(22, i(156892)),	-- Goldspine Fists
+									un(22, i(156895)),	-- Goldspine Belt
+									un(22, i(156889)),	-- Goldspine Legguards
+									un(22, i(156891)),	-- Goldspine Sabatons
+								},
+								["ignoreBonus"] = true,
+								["itemID"] = 157577,
+								["classes"] = { 2, 1, 6 },
+							},
+						})),
 					}),
 				}),
 			},
