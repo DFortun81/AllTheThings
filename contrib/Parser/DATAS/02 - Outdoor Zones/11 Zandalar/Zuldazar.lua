@@ -1,6 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+-----------------------------------------------------------------------
+---							NOTE									---
+---	Do not alter or edit anything related to quests	/ items			---
+---	Things are set in the file in a specifc order and reasoning		---
+-----------------------------------------------------------------------
 _.Zones =
 {
 	m(875, { 	-- Zandalar
@@ -30,31 +35,22 @@ _.Zones =
 						h(ach(12555, {  -- Welcome to Zandalar		[TO-DO: Link to previous quests that deal with scenario)
 							["groups"] = {
 								q(46957, { -- Welcome to Zuldazar
-									["groups"] = {
-									},
 									["qg"] = 132332, -- Princess Talanji
+									["sourceQuests"] = { 50769 },  -- The Stormwind Extraction
 								}),
 								q(46930, { -- Rastakhan
-									["groups"] = {
-									},
 									["qg"] = 122661, -- General Jakra'zet
 									["sourceQuests"] = { 46957 }, -- Welcome to Zuldazar
 								}),
 								q(46931, { -- Speaker of the Horde
-									["groups"] = {
-									},
 									["qg"] = 120740, -- King Rastakhan
 									["sourceQuests"] = { 46930 }, -- Rastakhan
 								}),
 								q(52139, { -- To Matters at Hand
-									["groups"] = {
-									},
 									["qg"] = 120168, -- Chronicler To'kini
 									["sourceQuests"] = { 46931 }, -- Speaker of the Horde
 								}),
 								q(52131, { -- We Need Each Other
-									["groups"] = {
-									},
 									["qg"] = 133050, -- Princess Talanji
 									["sourceQuests"] = { 52139 }, -- To Matters at Hand
 								}),
@@ -256,17 +252,160 @@ _.Zones =
 										}),	
 									},
 								}),
-								--[[
 								crit(4, { -- Web of Lies
 									["groups"] = {
+										q(51111, {	-- King or Prey	
+											["qg"] = 124915	-- King Rastakhan
+										}),		
+										q(47521, {	-- Midnight in the Garden of the Loa	
+											["qg"] = 133324,	-- Hexlord Raal
+											["sourceQuests"] = { 
+												47520, -- Walls Have Ears
+												47518, -- Raal
+											},
+										}),		
+										q(47528, {	-- Mistress of Lies [Note: Final Quest needed to trigger criteria]
+											["groups"] = {
+												i(159105),	-- Spy Mistress Chopper
+												i(159106),	-- Venom Queen Longbow
+												i(159107),	-- Shadra Disciple's Hexknife
+												i(159108),	-- Hexlord's Polearm
+												i(159109),	-- Loa-Defender's Battleaxe
+												i(159110),	-- Fallen Spider Handaxe
+												i(159111),	-- Loa-Defender's Longspear
+												i(159112),	-- Shadra Disciple's Stabber
+											},
+											["qg"] = 124749,	-- Acolyte Mali
+											["sourceQuests"] = { 
+												47963, -- The Ancient One
+												47522, -- The Hunter
+											},
+										}),		
+										q(47518, {	-- Raal	
+											["groups"] = {
+												i(158399),	-- Rastari Wargreaves
+												i(158400),	-- Zanchuli Leggings
+												i(158401),	-- Torcalin Breeches
+												i(158402),	-- Jambani Pants
+												i(158668),	-- Jambani Cord
+												i(158669),	-- Torcalin Waistwrap
+												i(158670),	-- Zanchuli Waistwrap
+												i(158671),	-- Rastari Belt
+											},
+											["qg"] = 133302,	-- Druid of Gonk
+											["sourceQuests"] = { 
+												47897, -- Zanchuli Traitors
+												47915, -- Rescuing the Taken
+											},
+										}),		
+										q(47915, {	-- Rescuing the Taken	
+											["qg"] = 124629,	-- Kaza'jin the Wavebinder
+											["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
+										}),		
+										q(47509, {	-- Terrace of the Chosen	
+											["qg"] = 141555,	-- Baine Bloodhoof
+											["sourceQuests"] = { 51111 },	-- King or Prey
+										}),		
+										q(47963, {	-- The Ancient One	
+											["qg"] = 133653,	-- Hexlord Raal
+											["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
+										}),		
+										q(47522, {	-- The Hunter	
+											["qg"] = 122760,	-- Wardruid Loti
+											["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
+										}),		
+										q(47520, {	-- Walls Have Ears	
+											["qg"] = 133302,	-- Druid of Gonk
+											["sourceQuests"] = { 
+												47897, -- Zanchuli Traitors
+												47915, -- Rescuing the Taken
+											},
+										}),	
+										q(47897, {	-- Zanchuli Traitors	
+											["qg"] = 124629,	-- Kaza'jin the Wavebinder
+											["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
+										}),	
 									},
 								}),
 								crit(5, { -- Among the People
 									["groups"] = {
+										q(51679, {	-- A Strange Port of Call	
+											["qg"] = 124083,	-- Zolani
+											["sourceQuests"] = { 47738 },	-- The Will of the Loa
+										}),		
+										q(47735, {	-- Ancient Tortollan Remedies	
+											["qg"] = 124063,	-- Jol the Ancient
+											["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
+										}),	
+										q(47736, {	-- Heads Will Roll	
+											["qg"] = 124656,	-- Zolani
+											["sourceQuests"] = { 47737 },	-- The Temple of Rezan
+										}),		
+										q(47740, {	-- House of the King  [Note: Final Quest needed to trigger criteria]
+											["qg"] = 124655,	-- King Rastakhan
+											["sourceQuests"] = { 47737 },	-- The Temple of Rezan
+										}),
+										q(51680, {	-- In Bwonsamdi's Shadow	
+											["qg"] = 124083,	-- Zolani
+											["sourceQuests"] = { 51101 },	-- The Wounded King
+										}),	
+										q(51677, {	-- Mending Body and Soul	
+											["qg"] = 124063,	-- Jol the Ancient
+											["sourceQuests"] = {
+												47735, -- Ancient Tortollan Remedies
+												47739, -- The Scent of Vengeance
+												47733, -- The Loa-Speaker's Betrayal
+												50235, -- No Safe Haven
+											},
+										}),		
+										q(50235, {	-- No Safe Haven	
+											["qg"] = 124083,	-- Zolani
+											["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
+										}),		
+										q(51678, {	-- Rastakhan's Might
+											["groups"] = {
+												i(155242),	-- Rastari Warboots
+												i(155243),	-- Zanchuli Slippers
+												i(155244),	-- Torcalin Boots
+												i(155245),	-- Jambani Footpads
+												i(158391),	-- Jambani Handwraps
+												i(158392),	-- Rastari Handguards
+												i(158393),	-- Zanchuli Grips
+												i(158394),	-- Torcalin Handguards
+											},
+											["qg"] = 124062,	-- King Rastakhan
+											["sourceQuests"] = { 47738 },	-- The Will of the Loa
+										}),		
+										q(47733, {	-- The Loa-Speaker's Betrayal	
+											["qg"] = 138520,	-- Zeb'ahari Villager
+											["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
+										}),		
+										q(47739, {	-- The Scent of Vengeance	
+											["qg"] = 132637,	-- Jamil Abul'housin
+											["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
+										}),		
+										q(47737, {	-- The Temple of Rezan	
+											["qg"] = 124062,	-- King Rastakhan
+											["sourceQuests"] = {
+												51679, -- A Strange Port of Call
+												51678, -- Rastakhan's Might
+												47742, -- Zul's Mutiny
+											},
+										}),	
+										q(51101, {	-- The Wounded King	
+											["qg"] = 141555	-- Baine Bloodhoof
+										}),		
+										q(47738, {	-- The Will of the Loa	
+											["qg"] = 132637,	-- Jamil Abul'housin
+											["sourceQuests"] = { 51677 },	-- Mending Body and Soul
+										}),		
+										q(47742, {	-- Zul's Mutiny	
+											["qg"] = 124062,	-- King Rastakhan
+											["sourceQuests"] = { 47738 },	-- The Will of the Loa
+										}),		
 									},
 								}),
-								--]]
-								crit(7, { -- The Zanchuli Council
+								crit(6, { -- The Zanchuli Council
 									["groups"] = {
 										q(47437, {	-- Competitive Devotion	
 											["qg"] = 126564, -- Hexlord Raal
@@ -342,19 +481,174 @@ _.Zones =
 										}),	
 									},
 								}),
-								--[[
-								crit(8, { -- March of the Loa
+								crit(7, { -- March of the Loa
 									["groups"] = {
+										q(49901, {	-- Atal'Dazar: Yazma the Fallen Priestess	
+											["qg"] = 129757,	-- King Rastakhan
+											["sourceQuests"] = { 49426 },	-- The King's Gambit
+										}),	
+										q(49425, {	-- City of Gold	
+											["qg"] = 129703,	-- Hexlord Raal
+											["sourceQuests"] = { 
+												49424, -- The Full Prophecy
+												49422, -- Heretics
+											},
+										}),
+										q(49422, {	-- Heretics	
+											["qg"] = 129740,	-- Gonk
+											["sourceQuests"] = { 49965 },	-- The Warpack
+										}),	
+										q(49421, {	-- Hunting Zul	
+											["qg"] = 141555,	-- Baine Bloodhoof
+											["sourceQuests"] = { 50433 },	-- Zanchuli Disbanded
+										}),
+										q(50963, {	-- Of Dark Deeds and Dark Days [Note: Final Quest needed to trigger criteria]
+											["qg"] = 129757,	-- King Rastakhan
+											["sourceQuests"] = { 49901 },	-- Atal'Dazar: Yazma the Fallen Priestess
+										}),	
+										q(49424, {	-- The Full Prophecy	
+											["qg"] = 129561,	-- Wardruid Loti
+											["sourceQuests"] = { 49965 },	-- The Warpack
+										}),		
+										q(49426, {	-- The King's Gambit	
+											["qg"] = 131049,	-- Rezan
+											["sourceQuests"] = { 49425 },	-- City of Gold
+										}),		
+										q(49965, {	-- The Warpack	
+											["qg"] = 129491,	-- King Rastakhan
+											["sourceQuests"] = { 49421 },	-- Hunting Zul
+										}),		
+										q(50433, {	-- Zanchuli Disbanded	
+											["qg"] = 122760	-- Wardruid Loti
+										}),
 									},
 								}),
-								--]]
 							},
 							["races"] = HORDE_ONLY,
 						})),
 					},
 				}),
+				n(-16, { -- Rares
+					["groups"] = {
+						n(129961, { -- Atal'zul Gotaka		
+							["questID"] = 50280	
+						}),		
+						n(129343, { -- Avatar of Xolotal		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161034), -- Thunderhowl Gauntlets
+							}),	
+							["questID"] = 49410,
+						}),		
+						n(128699, { -- Bloodbulge		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161104), -- Blood Feast Gauntlets
+							}),	
+							["questID"] = 49267	
+						}),
+						n(133190, { -- Daggerjaw		
+							--["questID"] = 	
+						}),		
+						n(136428, { -- Dark Chronicler		
+							["questID"] = 51083,
+						}),		
+						n(134760, { -- Darkspeaker Jo'la		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(160958), -- Darkspeaker Scepter
+							}),	
+							--["questID"] = 	
+						}),		
+						n(129954, { -- Gahz'ralka		
+							--["questID"] = 	
+						}),		
+						n(133155, { -- G'Naat		
+							--["questID"] = 	
+						}),		
+						n(124185, { -- Golrakahn		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161035), -- Thundercrash Footguards
+							}),	
+							["questID"] = 47792	
+						}),		
+						n(134738, { -- Hakbi the Risen		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(160978), -- Golden Tomb Defender
+							}),	
+							["questID"] = 50677
+						}),		
+						n(134637, { -- Headhunter Lee'za		
+							--["questID"] = 	
+						}),		
+						n(126637, { -- Kandak		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(160984), -- Sauroscale Cloak of Adaptation
+							}),	
+							["questID"] = 50859	
+						}),		
+						n(132244, { -- Kiboku		
+							["questID"] = 50159	
+						}),		
+						n(120899, { -- Kul'krazahn		
+						}),		
+						n(131233, { -- Lei-zhi		
+							["questID"] = 49911,
+						}),		
+						n(134782, { -- Murderbeak		
+							["questID"] = 50281,
+						}),		
+						n(136413, { -- Syrawon the Dominus		
+							["questID"] = 51080,	
+						}),		
+						n(131687, { -- Tambano
+							["groups"] =  {
+								i(161109), -- Coastal Hardshell Girdle
+							},
+							["questID"] = 50013	
+						}),		
+						n(133163, { -- Tia'Kawan		
+							--["questID"] = 	
+						}),		
+						n(127939, { -- Torraske the Eternal		
+							["questID"] = 49004,	
+						}),		
+						n(130643, { -- Twisted Child of Rezan		
+							["questID"] = 50847	
+						}),		
+						n(122004, { -- Umbra'jin		
+							--["questID"] = 	
+						}),		
+						n(134717, { -- Umbra'rix		
+							["questID"] = 47567	
+						}),		
+						n(134048, { -- Vukuba
+							["crs"] = {
+								134049, -- Strange Egg
+							},
+							["questID"] = 50508,fs
+						}),		
+						n(133842, { -- Warcrawler Karkithiss		
+							--["questID"] = 	
+						}),		
+						n(131476, { -- Zayoos		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161125), -- Kaja-fied Banana
+							}),	
+							["questID"] = 49972,
+						}),		
+						n(136702, { -- Zu'shin the Infused		
+							--["questID"] = 	
+						}),		
+					},
+				}),
 				n(-2, {  -- Vendors
 					["groups"] = {
+						n(140137, { -- Bugcatacher Cal'yoon
+							["groups"] = {
+								i(29901), -- Blue Moth Egg
+								i(29902), -- Red Moth Egg
+								i(10393), -- Undercity Cockroach
+								i(29903), -- Yellow Moth Egg
+							},
+						}),
 						n(134345, { -- Collector Kojo <Tortollan Seekers Emissary>
 							["groups"] = {
 								i(160543), -- Tabard of the Tortollan Seekers
@@ -439,7 +733,7 @@ _.Zones =
 					},
 				}),
 				n(0, { -- Zone Drop
-					["groups"] = bubbleDown({["bonusID"] = 4796}, {
+					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						i(160146), -- Saurifeather Crest
 						i(160151), -- Saurifeather Mantle
 						i(160149), -- Saurifeather Garments
@@ -507,6 +801,7 @@ _.Zones =
 			["lvl"] = 108,
 			["maps"] = { 
 				1163, -- Dazar'alor
+				1165, -- Dazar'alor
 			},
 			["description"] = "|cff66ccffZuldazar is the massive capital city of the Zandalari Empire and the jewel of all troll civilizations. It is built atop the highest peaks of Zandalar, and is built in a series of giant ziggurats that look like a towering mountain from a distance. Different troll tribes distrust one another and have often fought one another, but every six years, envoys from all the troll tribes arrive at Zuldazar in order to share information and discuss matters that may affect the entire troll race. It is the oldest city on Azeroth still standing.|r",
 		}),

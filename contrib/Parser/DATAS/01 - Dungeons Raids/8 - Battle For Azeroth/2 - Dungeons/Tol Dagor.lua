@@ -11,7 +11,7 @@ _.Instances =
 					d(1, { -- Normal
 						["groups"] = {
 							e(2097, { -- The Sand Queen
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(160110), -- Warglaive of the Sand Queen
 									i(159668), -- Rattling Jar of Eyes
 									i(159332), -- Wristguards of the Sandswimmer
@@ -24,7 +24,7 @@ _.Instances =
 								}, 
 							}),
 							e(2098, { -- Jes Howlis
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159131), -- Howlis' Crystal Shiv
 									i(159666), -- Improvised Riot Shield
 									i(159293), -- Turncoat's Cape
@@ -38,7 +38,7 @@ _.Instances =
 								},
 							}),
 							e(2099, { -- Knight Captain Valyri
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159441), -- Valyri's Fire-Proof Bracers
 									i(159389), -- Flint-Linked Wristguards
 									i(159390), -- Sure-Grip Munition Handlers
@@ -54,7 +54,7 @@ _.Instances =
 								},
 							}),
 							e(2096, { -- Overseer Korgus
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									ach(12840), -- Tol Dagor
 									i(159129), -- Flamecaster Botefeux
 									i(159658), -- Cudgel of Correctional Oversight

@@ -808,30 +808,27 @@ _.Zones =
 						},		
 					}),
 					q(51796, {	-- The Battle for Lordaeron
-						["groups"] = {
-						},
 						["qg"] = 14720, -- High Overlord Saurfang
 						["sourceQuests"] = { 53372 }, -- Hour of Reckoning
 					}),	
 					q(53028, {	-- A Dying World
-						["groups"] = {
-						},
 						--["qg"] = 140176, -- Nathanos Blightcaller [Changed on Live]
 						["sourceQuests"] = { 51796 }, -- The Battle for Lordaeron
 					}),	
-					q(49977, {	-- Summons to Orgrimmar
-						["groups"] = {
-						},
-					}),	
+					q(49977),	-- Summons to Orgrimmar
+					q(51443, {  -- Mission Statement
+						["qg"] = 140176, -- Nathanos Blightcaller
+						["sourceQuests"] = { 53031 }, -- The Speaker's Imperative
+					}),
+					q(50769, {  -- The Stormwind Extraction
+						["qg"] = 135205,  -- Nathanos Blightcaller
+						["sourceQuests"] = { 51443 }, -- Mission Statement
+					}),
 					q(50341, {	-- A Recent Discovery
-						["groups"] = {
-						},
 						["qg"] = 132254, -- Nathanos Blightcaller
 						["sourceQuests"] = { 49977 } , -- Summons  to Orgrimmar
 					}),	
 					qh(49982, {	-- Witness to the Wound
-						["groups"] = {
-						},
 						["qg"] = 132254, -- Nathanos Blightcaller
 						["sourceQuests"] = { 50341 } , -- A Recent Discovery
 					}),

@@ -11,7 +11,7 @@ _.Instances =
 					d(1, { -- Normal
 						["groups"] = {
 							e(2142, { -- Adderis and Aspix
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(158370), -- Twin-Strike Polearm
 									i(159380), -- Arc-Glass Bindings
 									i(159263), -- Bindings of the Slither Current
@@ -28,7 +28,7 @@ _.Instances =
 								},
 							}),
 							e(2143, { -- Merektha
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(158714), -- Swarm's Eedge
 									i(159637), -- Snakeebite Recurvee
 									i(159437), -- Fangproof Gauntlets
@@ -45,7 +45,7 @@ _.Instances =
 								},
 							}),
 							e(2144, { -- Galvazzt
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(158369), -- Galvanized Stormcrusher
 									i(159664), -- Bulwark of Brimming Potential
 									i(159247), -- Handwraps of Oscillating Polarity
@@ -58,7 +58,7 @@ _.Instances =
 								},
 							}),
 							e(2145, { -- Avatar of Sethraliss
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									ach(12504), -- The Temple of Sethraliss
 									i(158373), -- Resonating Crystal Scimitar
 									i(159318), -- Hood of the Slithering Loa

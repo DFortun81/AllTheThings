@@ -11,7 +11,7 @@ _.Instances =
 					d(1, { -- Normal
 						["groups"] = {
 							e(2153, { -- Aqu'sirr
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159366), -- Aqui'sirr's Swirling Sash
 									i(159239), -- Stormsurger's Sabatons
 									i(159420), -- Murky Cerulean Signet
@@ -23,7 +23,7 @@ _.Instances =
 								},
 							}),
 							e(2154, { -- Tidesage Council
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(158371), -- Belt of the Unrelenting Gale
 									i(159426), -- Ironhull's Reinforced Legplates
 									i(159419), -- Sea Priest's Greaves
@@ -38,7 +38,7 @@ _.Instances =
 								},
 							}),
 							e(2155, { -- Lord Stormsong
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159646), -- Void-Drenched Cape
 									i(159289), -- Bindings of the Calling Depths
 									i(159364), -- Bracers of the Sacred Fleet
@@ -51,7 +51,7 @@ _.Instances =
 								},
 							}),
 							e(2156, { -- Vol'zith the Whisperer
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									ach(12835), -- Shrine of the Storm
 									i(159135), -- Deep Fathom's Bite
 									i(159302), -- Cowl of Fluid Machiantions

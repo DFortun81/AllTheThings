@@ -11,7 +11,7 @@ _.Instances =
 					d(1, { -- Normal
 						["groups"] = {
 							e(2109, { -- Coin-Operated Crowd Pummeler
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159663), -- G0-4W4Y Crowd Reepeller
 									i(158353), -- Servo-Arm Bindings
 									i(159357), -- Linked Pummeler Grips
@@ -24,7 +24,7 @@ _.Instances =
 								},
 							}),
 							e(2114, { -- Azerokk
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(158357), -- Bindings of Enraged Earth
 									i(158359), -- Stonefury Vambraces
 									i(159231), -- Mine Rat's Handwarmers
@@ -40,7 +40,7 @@ _.Instances =
 								},
 							}),
 							e(2115, { -- Rixxa Fluxflame
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159639), -- P.A.C.I.F.I.S.T.  Mk7
 									i(159287), -- Cloak of Questionable Intent
 									i(159240), -- Rixxa's Sweat-Wicking Cuffs
@@ -54,7 +54,7 @@ _.Instances =
 								},
 							}),
 							e(2116, { -- Mogul Razdunk
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									ach(12844),  -- The MOTHERLODE!!
 									i(159641), -- G3T-00t
 									i(158364), -- High Altitude Turban

@@ -11,7 +11,7 @@ _.Instances =
 					d(1, { -- Normal
 						["groups"] = {
 							e(2082, { -- Priestess Alun'za
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(158321), -- Wand of Zealous Purification
 									i(158322), -- Aureus Vessel
 									i(158309), -- Wristlinks of Alchemical Transfusion
@@ -22,11 +22,11 @@ _.Instances =
 									i(158319), -- My'das Talisman
 								}),
 								["crs"] = {
-									129614, -- Priestess Alun'za
+									122967, -- Priestess Alun'za
 								},
 							}),
 							e(2036, { -- Vol'kaal
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159632), -- Adulation Enforcer
 									i(158375), -- Drape of the Loyal Vassal
 									i(158348), -- Wraps of Everliving Fealty
@@ -36,11 +36,11 @@ _.Instances =
 									i(158320), -- Revitalizing Voodoo Totem
 								}),
 								["crs"] = {
-									129399, -- Vol'kaal
+									122965, -- Vol'kaal
 								},
 							}),
 							e(2083, { -- Rezan
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(160269), -- Soulrending Claw
 									i(158711), -- Hallowed Ossein Longbow
 									i(158713), -- Disc of Indomitable Will
@@ -51,7 +51,7 @@ _.Instances =
 									i(158712), -- Rezan's Gleaning Eye
 								}),
 								["crs"] = {
-									143577, -- Rezan
+									122963, -- Rezan
 								},
 							}),
 							e(2030, { -- Yazma
@@ -69,7 +69,7 @@ _.Instances =
 									i(159610), -- Vessel of Skittering Shadows
 								}),
 								["crs"] = {
-									129412, -- Yazma
+									122968, -- Yazma
 								},
 							}),
 						},
@@ -88,7 +88,7 @@ _.Instances =
 									i(158319), -- My'das Talisman
 								},
 								["crs"] = {
-									129614, -- Priestess Alun'za
+									122967, -- Priestess Alun'za
 								},
 							}),
 							e(2036, { -- Vol'kaal
@@ -102,7 +102,7 @@ _.Instances =
 									i(158320), -- Revitalizing Voodoo Totem
 								},
 								["crs"] = {
-									129399, -- Vol'kaal
+									122965, -- Vol'kaal
 								},
 							}),
 							e(2083, { -- Rezan
@@ -117,7 +117,7 @@ _.Instances =
 									i(158712), -- Rezan's Gleaning Eye
 								},
 								["crs"] = {
-									143577, -- Rezan
+									122963, -- Rezan
 								},
 							}),
 							e(2030, { -- Yazma
@@ -135,7 +135,7 @@ _.Instances =
 									i(159610), -- Vessel of Skittering Shadows
 								},
 								["crs"] = {
-									129412, -- Yazma
+									122968, -- Yazma
 								},
 							}),
 						},
@@ -154,7 +154,7 @@ _.Instances =
 									i(158319), -- My'das Talisman
 								},
 								["crs"] = {
-									129614, -- Priestess Alun'za
+									122967, -- Priestess Alun'za
 								},
 							}),
 							e(2036, { -- Vol'kaal
@@ -168,7 +168,7 @@ _.Instances =
 									i(158320), -- Revitalizing Voodoo Totem
 								},
 								["crs"] = {
-									129399, -- Vol'kaal
+									122965, -- Vol'kaal
 								},
 							}),
 							e(2083, { -- Rezan
@@ -184,7 +184,7 @@ _.Instances =
 									i(158712), -- Rezan's Gleaning Eye
 								},
 								["crs"] = {
-									143577, -- Rezan
+									122963, -- Rezan
 								},
 							}),
 							e(2030, { -- Yazma
@@ -202,7 +202,7 @@ _.Instances =
 									i(159610), -- Vessel of Skittering Shadows
 								},
 								["crs"] = {
-									129412, -- Yazma
+									122968, -- Yazma
 								},
 							}),
 						},

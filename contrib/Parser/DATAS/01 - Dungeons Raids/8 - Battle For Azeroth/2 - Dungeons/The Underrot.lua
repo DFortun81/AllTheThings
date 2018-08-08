@@ -11,7 +11,7 @@ _.Instances =
 					d(1, { -- Normal
 						["groups"] = {
 							e(2157, { -- Elder Leaxa
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159324), -- Blood Elder's Bindings
 									i(159402), -- Waistguard of Sanguine Fervor
 									i(159443), -- Legplates of Profane Sacrifice
@@ -23,7 +23,7 @@ _.Instances =
 								},
 							}),
 							e(2131,  { -- Cragmaw the Infested
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159653), -- Bile-Stained Crawg Tusks
 									i(159134), -- Heart-Piercing Stalacite
 									i(159433), -- Phosphorescent Armplates
@@ -40,7 +40,7 @@ _.Instances =
 								},
 							}),
 							e(2130, { -- Sporecaller Zancha
-								["groups"] =  bubbleDown({["bonusID"] = 4776}, {
+								["groups"] =  bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159654), -- Corruption Borne Headlopper
 									i(159665), -- Targee of the Ancient Warder
 									i(159292), -- Sporecaller's Shroud
@@ -55,7 +55,7 @@ _.Instances =
 								},
 							}),
 							e(2158, { -- Unbound Abomination
-								["groups"] =  bubbleDown({["bonusID"] = 4776}, {
+								["groups"] =  bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									ach(12500), -- Underrot
 									i(159655), -- Vile Exasanguinator
 									i(159446), -- Greathelm of the Putrid Path

@@ -11,7 +11,7 @@ _.Instances =
 					d(1, { -- Normal
 						["groups"] = {
 							e(2125, { -- Heartsbane Triad
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159133), -- Jagged Iris Sica
 									i(159669), -- Solena's Watchful Collection
 									i(159340), -- Bracers of Dreadful Maladies
@@ -29,7 +29,7 @@ _.Instances =
 								},
 							}),
 							e(2126, { -- Soulbound Goliath
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159659), -- Sinister Wicker Talons
 									i(159282), -- Drust-Thatched Wristwraps
 									i(159399), -- Thornshaper Mitts
@@ -43,7 +43,7 @@ _.Instances =
 								},
 							}),
 							e(2127, { -- Raal the Gluttonous
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159660), -- Servant Splitter
 									i(159294), -- Raal's Bib
 									i(159397), -- Slaughterhouse-Chain Bracers
@@ -59,7 +59,7 @@ _.Instances =
 								},
 							}),
 							e(2128, { -- Lord and Lady Waycrest
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159661), -- Soulcharmer's Bludgeon
 									i(159457), -- Risen Lord's Oversized Gauntlets
 									i(159262), -- Belt of Undying Devotion
@@ -74,7 +74,7 @@ _.Instances =
 								},
 							}),
 							e(2129, { -- Gorak Tul
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									ach(12483), -- Waycrest Manor
 									i(159662), -- Blightreaper
 									i(159279), -- Soulfuel Headdress

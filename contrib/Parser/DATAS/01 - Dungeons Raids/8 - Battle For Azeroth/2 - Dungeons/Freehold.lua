@@ -11,7 +11,7 @@ _.Instances =
 					d(1, { -- Normal
 						["groups"] = {
 							e(2102, { -- Skycap'n Kragg
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159633), -- Sharkbait's Fishhook
 									i(155884), -- Parrotfeather Cloak
 									i(159227), -- Silk Cuffs of the Skycap'n
@@ -25,7 +25,7 @@ _.Instances =
 								},
 							}),
 							e(2093, { -- Council o' Captains
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159132), -- Jolly's Boot Daggeer
 									i(159130), -- Captain's Diplomacy
 									i(158311), -- Concealed Fencing Plates
@@ -42,7 +42,7 @@ _.Instances =
 								},
 							}),
 							e(2094, { -- Ring of Booty
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(159634), -- Jeweled Sharksplitter
 									i(158305), -- Sea Dog's Cuffs
 									i(155892), -- Bite-Resistant Chain Gloves
@@ -58,7 +58,7 @@ _.Instances =
 								},
 							}),
 							e(2095,  { -- Harlan Sweete
-								["groups"] = bubbleDown({["bonusID"] = 4776}, {
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									ach(12831), -- Freehold
 									i(159635), -- Bloody Tideturner
 									i(155888), -- Irontide Captain's Hat
