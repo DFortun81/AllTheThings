@@ -612,9 +612,7 @@ _.Zones =
 						["description"] = "This vendor travels in a big circuit from Elwynn Forest(stopping in Goldshire) to Westfall(stopping in Sentinel Hill) to Duskwood(stopping in Darkshire) to Redridge Mountains(stopping in Lakeshire) and then back to Elwynn Forest, so if you cannot find him in this zone, check one of the other three zones.|r",
 					})),
 					a(n(2697, {	-- Clyde Ranthal <Leatherworking Supplies>
-						i(7289, {	-- Pattern: Black Whelp Cloak
-							i(7283),	-- Black Whelp Cloak
-						}),
+						i(7289),	-- Pattern: Black Whelp Cloak
 					})),
 					a(n(3091, {	-- Franklin Hamar <Tailoring Supplies>
 						i(4781),	-- Whispering Vest
