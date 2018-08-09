@@ -307,7 +307,7 @@ _.Zones =
 							i(45858)	-- Nat's Lucky Fishing Pole
 						},
 						["qg"] = 12919,	-- Nat Pagle
-						["requiredSkill"] = 129,	-- Fishing
+						["requireSkill"] = 129,	-- Fishing
 					}),
 					q( 13826, {	-- Nat Pagle, Angler Extreme
 						["groups"] = {
@@ -315,7 +315,7 @@ _.Zones =
 						},
 						["qg"] = 12919,	-- Nat Pagle
 						["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
-						["requiredSkill"] = 129,	-- Fishing
+						["requireSkill"] = 129,	-- Fishing
 					}),
 					qa(27220, {	-- Nat's Bargain
 						["groups"] = {
@@ -677,7 +677,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 12939,	-- Doctor Gustaf VanHowzen
-						["requiredSkill"] = 129,	-- First Aid
+						["requireSkill"] = 129,	-- First Aid
 						["sourceQuests"] = { 6625 },	-- Alliance Trauma
 					}),
 					qh( 9437, {	-- Twilight of the Dawn Runner

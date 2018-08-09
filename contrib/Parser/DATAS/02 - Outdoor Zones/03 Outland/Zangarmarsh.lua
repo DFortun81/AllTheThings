@@ -355,7 +355,7 @@ _.Zones =
 							["itemID"] = 34469,	-- Strange Engine Part
 							["questID"] = 11531,	-- Strange Engine Part
 							["races"] = ALLIANCE_ONLY,
-							["requiredSkill"] = 356,	-- Fishing
+							["requireSkill"] = 356,	-- Fishing
 						},
 						{
 							["qg"] = 18285,	-- "Count" Ungula
@@ -376,12 +376,12 @@ _.Zones =
 						qa(9636, {	-- The Zapthrottle Mote Extractor!
 							["qg"] = 17634,	-- K. Lee Smallfry
 							["description"] = "Invisible until 305 Engineering.",
-							["requiredSkill"] = 202,	-- Engineering
+							["requireSkill"] = 202,	-- Engineering
 						}),
 						qh(9635, {	-- The Zapthrottle Mote Extractor!
 							["qg"] = 17637,	-- Mack Diver
 							["description"] = "Invisible until 305 Engineering.",
-							["requiredSkill"] = 202,	-- Engineering
+							["requireSkill"] = 202,	-- Engineering
 						}),
 						q(9778, {	-- Warden Hamoot
 							["qg"] = 17841,	-- Ysiel Windsinger

@@ -244,7 +244,7 @@ _.Zones =
 								["sourceQuests"] = { 31302 }, -- Ready for Greatness
 							}),
 						},
-						["requiredSkill"] = 185,
+						["requireSkill"] = 185,
 					}),
 					n(-194, {	-- Fishing
 						["groups"] = {
@@ -256,7 +256,7 @@ _.Zones =
 								["qg"] = 70398,	-- Ben of the Booming Voice (58.9,46.9)
 							}),
 						},
-						["requiredSkill"] = 356,
+						["requireSkill"] = 356,
 					}),					
 					q(30402, {	-- A Dish for Chee Chee
 						["qg"] = 58709,	-- Chee Chee

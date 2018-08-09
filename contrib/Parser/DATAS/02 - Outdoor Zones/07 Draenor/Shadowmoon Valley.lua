@@ -117,7 +117,7 @@ _.Zones =
 						},
 						["description"] = "This can be looted from almost any mob in Shadowmoon Valley; however, Karnoth has a guaranteed drop for the item.",
 						["races"] = ALLIANCE_ONLY,
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					q(36311, { -- Father and Son
 						["g"] = {
@@ -129,7 +129,7 @@ _.Zones =
 						["qg"] = 80827, -- Haephest
 						["sourceQuest"] = 36309, -- The Strength of Iron
 						["races"] = ALLIANCE_ONLY,
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					qa(34792,  {  -- The Traitor's True Name
 						i(113232),

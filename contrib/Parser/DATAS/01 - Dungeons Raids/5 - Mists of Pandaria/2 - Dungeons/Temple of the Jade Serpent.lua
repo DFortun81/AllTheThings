@@ -46,7 +46,7 @@ _.Instances =
 								},
 								o(221413, { -- Lin Family Scroll
 									q(33107, { -- Bad Feeling, Worse Result
-										["requiredSkill"] = 185, -- Cooking
+										["requireSkill"] = 185, -- Cooking
 										["sourceQuests"] = { 33020 }, -- The Lost Secret of the Secret Ingredient
 									}),
 								}),

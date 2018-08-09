@@ -431,7 +431,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(31443, {	-- Flying Tiger Gourami
-						["requiredSkill"] = 356,
+						["requireSkill"] = 356,
 						["isDaily"] = true,
 						["description"] = "Found while fishing in any inland body of water on Pandaria",
 					}),
@@ -632,7 +632,7 @@ _.Zones =
 					}),
 					i(86545, {
 						q(31446, {	-- Mimic Octopus
-							["requiredSkill"] = 356,
+							["requireSkill"] = 356,
 							["isDaily"] = true,
 							["description"] = "Found while fishing in any inland body of water on Pandaria",
 						}),
@@ -764,7 +764,7 @@ _.Zones =
 					}),
 					q(30698, {	-- Scavenger Hunt
 						["qg"] = 60136, -- Fiznix
-						["requiredSkill"] = 356,
+						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
 					qh(30121, {	-- Search Party
@@ -809,7 +809,7 @@ _.Zones =
 					}),
 					q(30584, {	-- Shocking!
 						["qg"] = 59584, -- Fisherman Haito
-						["requiredSkill"] = 356,
+						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
 					qa(32152, {	-- Siege Damage
@@ -822,7 +822,7 @@ _.Zones =
 					}),
 					q(30700, {	-- Snapclaw
 						["qg"] = 59586, -- Angler Shen
-						["requiredSkill"] = 356,
+						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
 					qh(32284, {	-- Someone You Should See
@@ -831,7 +831,7 @@ _.Zones =
 					i(86544, {	-- Spinefish Alpha
 						["groups"] = {
 							q(31444, {	-- Spinefish Alpha
-								["requiredSkill"] = 356,
+								["requireSkill"] = 356,
 								["isDaily"] = true,
 							}),
 						},
@@ -894,7 +894,7 @@ _.Zones =
 					}),
 					qa(36882, {	-- The Great Angler Returns
 						["qg"] = 63721, -- Nat Pagle
-						["requiredSkill"] = 356,
+						["requireSkill"] = 356,
 					}),
 					qh(36609, {	-- The Great Angler Returns
 						["qg"] = 63721, -- Nat Pagle
@@ -1191,7 +1191,7 @@ _.Zones =
 					}),
 					q(30701, {	-- Viseclaw Soup
 						["qg"] = 60675, -- Fo Fook
-						["requiredSkill"] = 356,
+						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
 					qh(32222, {	-- Wanted: Chief Engineer Cogwrench
@@ -1221,7 +1221,7 @@ _.Zones =
 					}),
 					q(30585, {	-- What Lurks Below
 						["qg"] = 60673, -- Elder Fisherman Rassan
-						["requiredSkill"] = 356,
+						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
 					q(30079, {	-- What's Eating Zhu's Watch?
@@ -1234,7 +1234,7 @@ _.Zones =
 					}),
 					q(30598, {	-- Who Knew Fish Liked Eggs?
 						["qg"] = 60673, -- Elder Fisherman Rassan
-						["requiredSkill"] = 356,
+						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
 					q(30088, {	-- Why So Serious?

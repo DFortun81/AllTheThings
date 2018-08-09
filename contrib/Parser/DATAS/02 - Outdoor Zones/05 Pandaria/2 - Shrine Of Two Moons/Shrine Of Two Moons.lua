@@ -150,7 +150,7 @@ _.Zones =
 						["g"] = {},
 						["qg"] = 64058, -- Jorunga Stonehoof
 						["races"] = HORDE_ONLY,
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 --[[					
 					qh(33249),	-- Proving Grounds

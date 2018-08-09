@@ -973,21 +973,21 @@ _.Zones =
 							},
 							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-							["requiredSkill"] = 186,	-- Mining
+							["requireSkill"] = 186,	-- Mining
 						}),
 						q( 11016, {	-- Nethermine Flayer Hide
 							["groups"] = {
 							},
 							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-							["requiredSkill"] = 393,	-- Skinning
+							["requireSkill"] = 393,	-- Skinning
 						}),
 						q( 11017, {	-- Netherdust Pollen
 							["groups"] = {
 							},
 							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-							["requiredSkill"] = 182,	-- Herbalism
+							["requireSkill"] = 182,	-- Herbalism
 						}),
 						q( 11019, {	-- Your Friend On The Inside
 							["groups"] = {

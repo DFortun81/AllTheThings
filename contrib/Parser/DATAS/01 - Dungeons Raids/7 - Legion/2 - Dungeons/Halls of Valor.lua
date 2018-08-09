@@ -177,7 +177,7 @@ _.Instances =
 									["g"] = {
 										recipe(191929), -- Recipe: Leystone Helm (Rank 3)
 									},
-									["requiredSkill"] = 164, -- Blacksmithing
+									["requireSkill"] = 164, -- Blacksmithing
 								}),
 								i(136777),
 								i(139281),

@@ -95,16 +95,16 @@ _.WorldEvents =
 			n(-17, { -- Quests
 				n(14833, { -- Chronos <He Who Never Forgets!>
 					q(29514, { -- Herbs for Healing
-						["requiredSkill"] = 182, -- Herbalism
+						["requireSkill"] = 182, -- Herbalism
 					}),
 					q(29516, { -- Keeping the Faire Sparkling
-						["requiredSkill"] = 755, -- Jewelcrafting
+						["requireSkill"] = 755, -- Jewelcrafting
 					}),
 					q(29512, { -- Putting the Carnies Back Together Again
-						["requiredSkill"] = 129, -- First Aid
+						["requireSkill"] = 129, -- First Aid
 					}),
 					q(29519, { -- Tan My Hide
-						["requiredSkill"] = 393, -- Skinning
+						["requireSkill"] = 393, -- Skinning
 					}),
 				}),
 				o(209620, { -- Darkmoon Treasure Chest
@@ -265,7 +265,7 @@ _.WorldEvents =
 					q(27664), -- Darkmoon Volcanic Deck
 					q(7928), -- Darkmoon Warlords Deck
 					q(29507, { -- Fun for the Little Ones
-						["requiredSkill"] = 794, -- Archaeology
+						["requireSkill"] = 794, -- Archaeology
 					}),
 					q(29458), -- The Captured Journal
 					q(29457), -- The Enemy's Insignia
@@ -274,7 +274,7 @@ _.WorldEvents =
 				}),
 				n(14841, { -- Rinling
 					q(29517, { -- Eyes on the Prizes
-						["requiredSkill"] = 197, -- Tailoring
+						["requireSkill"] = 197, -- Tailoring
 					}),
 					q(29438, { -- He Shoots, He Scores!
 						i(93724, { -- Darkmoon Game Prize
@@ -290,42 +290,42 @@ _.WorldEvents =
 						}),
 					}),
 					q(29518, { -- Rearm, Reuse, Recycle
-						["requiredSkill"] = 186, -- Mining
+						["requireSkill"] = 186, -- Mining
 					}),
 					q(29511, { -- Talking' Tonks
-						["requiredSkill"] = 202, -- Engineering
+						["requireSkill"] = 202, -- Engineering
 					}),
 				}),
 				n(14822, { -- Sayge
 					q(29510, { -- Putting Trash to Good Use
-						["requiredSkill"] = 333, -- Enchanting
+						["requireSkill"] = 333, -- Enchanting
 					}),
 					q(29515, { -- Writing the Future
-						["requiredSkill"] = 773, -- Inscription
+						["requireSkill"] = 773, -- Inscription
 					}),
 				}),
 				n(10445, { -- Selina Dourman <Darkmoon Faire Information>
 					q(29520, { -- Banners, Banners Everywhere!
-						["requiredSkill"] = 165, -- Leatherworking
+						["requireSkill"] = 165, -- Leatherworking
 					}),
 				}),
 				n(14845, { -- Stamp Thunderhorn <Food Vendor>
 					q(29509, { -- Putting the Crunch in the Frog
-						["requiredSkill"] = 185, -- Cooking
+						["requireSkill"] = 185, -- Cooking
 					}),
 					q(29513, { -- Spoilin' for Salty Sea Dogs
-						["requiredSkill"] = 356, -- Fishing
+						["requireSkill"] = 356, -- Fishing
 					}),
 				}),
 				n(14844, { -- Sylannia <Drink Vendor
 					q(29506, { -- A Fizzy Fusion
-						["requiredSkill"] = 171, -- Alchemy
+						["requireSkill"] = 171, -- Alchemy
 					}),
 				}),
 				n(14829, { -- Yebb Neblegear
 					q(29444), -- An Exotic Egg
 					q(29508, { -- Baby Needs Two Pair of Shoes
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 				}),
 				n(85546, { -- Ziggie Sparks <Firebird's Challenge>

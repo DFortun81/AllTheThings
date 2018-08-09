@@ -1024,14 +1024,14 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 26914,	-- Benjamin Clegg
-								["requiredSkill"] = 197,	-- Tailoring
+								["requireSkill"] = 197,	-- Tailoring
 							}),
 							q(13087, {	-- Northern Cooking [A]
 								["groups"] = {
 										recipe(57421),	-- Northern Stew
 								},
 								["qg"] = 26905,	-- Brom Brewbaster
-								["requiredSkill"] = 185,	-- Cooking
+								["requireSkill"] = 185,	-- Cooking
 								--Requires Cooking at 350 to pick up
 								--BfA: Northrend Cooking is 2546
 							}),

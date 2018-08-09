@@ -48,7 +48,7 @@ _.Zones =
 								},
 								["qg"] = 11557,	-- Meilosh
 								["sourceQuests"] = { 6031 },	-- Runecloth
-								["requiredSkill"] = 197,	-- Requires: Tailoring
+								["requireSkill"] = 197,	-- Requires: Tailoring
 							}),
 							q(  8481, {	-- The Root of All Evil (UNKNOWN PRE-REQS -- REPUTATION, WINTERSPRING QUESTS???)
 								["qg"] = 11555,	-- Gorn One Eye

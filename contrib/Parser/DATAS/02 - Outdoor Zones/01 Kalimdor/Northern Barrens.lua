@@ -493,7 +493,7 @@ _.Zones =
 						["groups"] = {
 						},
 						["qg"] = 3446,	-- Mebok Mizzyrix
-						["requiredSkill"] = 182, -- Herbalism
+						["requireSkill"] = 182, -- Herbalism
 					}),
 					qh(29021, {	-- Samophlange
 						["groups"] = {

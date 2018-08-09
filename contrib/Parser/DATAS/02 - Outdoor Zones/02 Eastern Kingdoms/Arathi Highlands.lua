@@ -331,7 +331,7 @@ _.Zones =
 						},
 						["qg"] = 12920,	--	Doctor Gregory Victor
 						["description"] = "This quest requires a skill of 225 in First Aid.",
-						["requiredSkill"] = 356,	-- First Aid
+						["requireSkill"] = 356,	-- First Aid
 						["sourceQuests"] = { 6623 },	-- Horde Trauma
 						["u"] = 2,
 					}),

@@ -875,7 +875,7 @@ _.Zones =
 							  q(41189),	-- A New Lead              
 							}),
 							n(-181, { -- Blacksmithing
-								["g"] = bubbleDown({["requiredSkill"] = 164}, { -- Blacksmithing
+								["g"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
 									q(38514, { -- You Are Not Worthy
 										["g"] = {},
 										["qg"] = 92242, -- Barm Stonebreaker
@@ -1009,7 +1009,7 @@ _.Zones =
 								}),
 							}),
 							n(-189, { -- Skinning
-								["g"] = bubbleDown({["requiredSkill"] = 393}, { -- Skinning
+								["g"] = bubbleDown({["requireSkill"] = 393}, { -- Skinning
 									q(40134, { -- Highmountain Hides
 										["g"] = { 
 											i(130064, { -- Deadeye Monocle
@@ -1446,7 +1446,7 @@ _.Zones =
 						}),
 						q(40415, {	-- Well Spent Time
 							["qg"] = 98948, -- Hrul Sharphoof
-							["requiredSkill"] = 165,
+							["requireSkill"] = 165,
 						}),
 				}),	
 				n(-16, { 	-- Rares
@@ -1685,25 +1685,25 @@ _.Zones =
 							["g"] = {
 								recipe(182982), -- Recipe: Demonsteel Armguards (Rank 3)
 							},
-							["requiredSkill"] = 164, -- Blacksmithing
+							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(123955, { -- Recipe: Demonsteel Breastplate (Rank 3)
 							["g"] = {
 								recipe(182989), -- Recipe: Demonsteel Breastplate (Rank 3)
 							},
-							["requiredSkill"] = 164, -- Blacksmithing
+							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(123953, { -- Recipe: Demonsteel Gauntlets (Rank 3)
 							["g"] = {
 								recipe(182987), -- Recipe: Demonsteel Gauntlets (Rank 3)
 							},
-							["requiredSkill"] = 164, -- Blacksmithing
+							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(136697, { -- Recipe: Gleaming Iron Spike
 							["g"] = {
 								recipe(209497), -- Recipe: Gleaming Iron Spike
 							},
-							["requiredSkill"] = 164, -- Blacksmithing
+							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(136919), -- Baby Elderhorn
 						i(131812), -- Darkshard Fragment
@@ -1907,7 +1907,7 @@ _.Zones =
 									}),
 								},
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF32.4, 41.8|r at the bottom of Thunder Totem in the boat on the water.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requiredSkill"] = 356,
+								["requireSkill"] = 356,
 								["creatureID"] = 120457
 							}),
 						}),

@@ -14,7 +14,7 @@ _.Instances =
 								q(39343),	-- Vault of the Wardens: Bendy Glass Tubes
 							},
 							["qg"] = 105824,	-- Grimoira
-							["requiredSkill"] = 171,	-- Alchemy
+							["requireSkill"] = 171,	-- Alchemy
 						}),
 					}),
 					d(1, {		-- Normal

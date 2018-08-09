@@ -929,7 +929,7 @@ _.Zones =
 					
 					q(31539, { -- A Thing of Beauty
 						["qg"] = 56065, -- Inkmaster Wei
-						["requiredSkill"] = 773,
+						["requireSkill"] = 773,
 					}),
 					q(33250, { -- A Time-Lost Treasure
 						["qg"] = 58564, -- Elder Anli
@@ -937,7 +937,7 @@ _.Zones =
 					}),
 					q(31544, { -- A Tribute to the Dead
 						["qg"] = 56063, -- Inkmaster Jo Po
-						["requiredSkill"] = 773,
+						["requireSkill"] = 773,
 					}),
 					qa(31130, { -- A Visit with Lorewalker Cho
 						["qg"] = 54961, -- Lorewalker Cho
@@ -1135,7 +1135,7 @@ _.Zones =
 					}),
 					q(31486, { -- Everything I Know About Cooking
 						["qgs"] = { 56707, 62872, 63013 }, -- Chin, Cranfur the Noodler, Sway Dish Chef
-						["requiredSkill"] = 185,
+						["requireSkill"] = 185,
 					}),
 					q(30004, { -- Everything In Its Place
 						["qg"] = 56786, -- Lorewalker Stonestep
@@ -1254,7 +1254,7 @@ _.Zones =
 					}),
 					qa(31542, { -- Incarnadine Ink
 						["qg"] = 56064, -- Inkmaster Glenzu
-						["requiredSkill"] = 773,
+						["requireSkill"] = 773,
 					}),
 					qh(29936, { -- Instant Messaging
 						["qg"] = 56336, -- Chief Kah Kah
@@ -1426,7 +1426,7 @@ _.Zones =
 					}),
 					q(31543, { -- Portrait of a Lady
 						["qg"] = 56064, -- Inkmaster Glenzu
-						["requiredSkill"] = 773,
+						["requireSkill"] = 773,
 					}),
 					qa(29891, { -- Potency
 						["qgs"] = { 56287, 61218 }, -- Lorewalker Cho
@@ -1559,7 +1559,7 @@ _.Zones =
 					}),
 					qa(31541, { -- Set in Jade
 						["qg"] = 56063, -- Inkmaster Jo Po
-						["requiredSkill"] = 773,
+						["requireSkill"] = 773,
 					}),
 					q(29995, { -- Shrine of the Dawn
 						["qg"] = 56065, -- Inkmaster Wei
@@ -1680,7 +1680,7 @@ _.Zones =
 					q(31876, { -- The Inkmasters of the Arboretum
 						["qg"] = 64691, -- Lorewalker Huynh
 						["isWeekly"] = true,
-						["requiredSkill"] = 773,
+						["requireSkill"] = 773,
 					}),
 					q(30000, { -- The Jade Serpent
 						["groups"] = {

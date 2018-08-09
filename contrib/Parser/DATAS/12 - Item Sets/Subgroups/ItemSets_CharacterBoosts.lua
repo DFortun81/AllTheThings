@@ -64,7 +64,8 @@ _.GearSets =
 					}),		
 					n(-141, { -- Felsoul 
 						["groups"] = {
-							i(154022), -- Felsoul Wand
+							--i(154022), -- Felsoul Wand [Not actually given]
+							i(154024), -- Felsoul Stave
 							i(154016), -- Felsoul Cowl
 							i(154009), -- Felsoul Medallion
 							i(154019), -- Felsoul Shoulderpads

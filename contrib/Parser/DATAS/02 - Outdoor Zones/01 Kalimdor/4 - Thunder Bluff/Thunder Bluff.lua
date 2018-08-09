@@ -186,7 +186,7 @@ _.Zones =
 					})),
 					qh(768, {    -- Gathering Leather
 						["qg"] = 3050,    -- Veren Tallstrider
-						["requiredSkill"] = 393,    -- Skinning
+						["requireSkill"] = 393,    -- Skinning
 					}),
 					qg(3042, qh(27281, {	-- Grezz Ragefist
 						["groups"] = {
@@ -206,7 +206,7 @@ _.Zones =
 					})),
 					qh(769, {    -- Kodo Hide Bag
 						["qg"] = 3050,    -- Veren Tallstrider
-						["requiredSkill"] = 165,    -- Leatherworking
+						["requireSkill"] = 165,    -- Leatherworking
 					}),
 					qg(43881, qh(27282, {	-- Kranosh's Behest
 						["groups"] = {

@@ -428,7 +428,7 @@ _.Zones =
 						}),
 					}),
 					n(-181, { -- Blacksmithing
-						["g"] = bubbleDown({["requiredSkill"] = 164}, { -- Blacksmithing
+						["g"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
 							q(38525, { -- Part of the Team
 								["g"] = {},
 								["qg"] = 92264, -- Felsmith Nal'ryssa
@@ -1628,7 +1628,7 @@ _.Zones =
 									}),
 								},
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF50.7, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requiredSkill"] = 356,
+								["requireSkill"] = 356,
 								["creatureID"] = 120459
 							}),
 						}),

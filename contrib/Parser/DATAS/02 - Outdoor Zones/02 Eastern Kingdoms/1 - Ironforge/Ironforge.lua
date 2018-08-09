@@ -53,7 +53,7 @@ _.Zones =
 						},
 						["qg"] = 5150,	-- Nissa Firestone
 						["isBreadcrumb"] = true,	-- for Triage
-						["requiredSkill"] = 129,	-- First Aid
+						["requireSkill"] = 129,	-- First Aid
 					}),
 --[[
 					qg(23127, qa(27270, {	-- An Audience with the Farseer

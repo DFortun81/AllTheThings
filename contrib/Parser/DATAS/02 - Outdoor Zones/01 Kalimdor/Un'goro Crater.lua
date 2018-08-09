@@ -190,13 +190,13 @@ _.Zones =
 							["g"] = {},
 							["qg"] = 115923,	-- Ko'Zan
 							["sourceQuest"] = 45044,	-- Weapon No More
-							["requiredSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = 164,	-- Blacksmithing
 						}),
 						q(45055, {	-- A Taste of Their Own Medicine
 							["g"] = {},
 							["qg"] = 115923,	-- Ko'Zan
 							["sourceQuest"] = 45051,	-- Reverse Blacksmithing
-							["requiredSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = 164,	-- Blacksmithing
 						}),
 						q(45057, {	-- Saving My Head
 							["g"] = {
@@ -204,7 +204,7 @@ _.Zones =
 							},
 							["qg"] = 115923,	-- Ko'Zan
 							["sourceQuest"] = 45055,	-- A Taste of Their Own Medicine
-							["requiredSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = 164,	-- Blacksmithing
 						}),
 					},
 				}),
@@ -471,7 +471,7 @@ _.Zones =
 									},
 								}),
 							},
-							["requiredSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = 164,	-- Blacksmithing
 						}),
 					},
 				}),

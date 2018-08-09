@@ -1817,7 +1817,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 26969,	-- Raenah
-								["requiredSkill"] = 197,	-- Tailoring
+								["requireSkill"] = 197,	-- Tailoring
 							}),
 							q(29609, {	--  Friends in Dalaran [H]
 								["groups"] = {
@@ -1930,7 +1930,7 @@ _.Zones =
 								["groups"] = {
 								},
 								["qg"] = 27001,	-- Darin Goodstitch
-								["requiredSkill"] = 197,	-- Tailoring
+								["requireSkill"] = 197,	-- Tailoring
 							}),
 							q(12141, {	--  A Diplomatic Mission [A]
 								["groups"] = {

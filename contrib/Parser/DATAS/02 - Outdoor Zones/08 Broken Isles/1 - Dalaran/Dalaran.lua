@@ -384,10 +384,10 @@ _.Zones =
 								["sourceQuests"] = { 39335 }, -- Neltharion's Lair: Potent Powder
 							}),
 						},
-						["requiredSkill"] = 171,
+						["requireSkill"] = 171,
 					}),
 					n(-181, { -- Blacksmithing
-						["g"] = bubbleDown({["requiredSkill"] = 164}, { -- Blacksmithing
+						["g"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
 							q(38499, { -- Strange New Ores
 								["g"] = {
 									recipe(195097), -- Legion Blacksmithing
@@ -574,7 +574,7 @@ _.Zones =
 								["sourceQuests"] = { 40048 }, -- Strings of the Puppet Masters
 							}),
 						},
-						["requiredSkill"] = 333,
+						["requireSkill"] = 333,
 					}),
 					n(-183, {	-- Engineering
 						["groups"] = {
@@ -683,7 +683,7 @@ _.Zones =
 								["qg"] = 93539, -- Hobart Grapplehammer
 							}),
 						},
-						["requiredSkill"] = 202,
+						["requireSkill"] = 202,
 					}),
 					n(-184, {	-- Herbalism
 						["groups"] = {
@@ -760,7 +760,7 @@ _.Zones =
 								["sourceQuests"] = { 40030 }, -- Ram's-Horn Trowel
 							}),
 						},
-						["requiredSkill"] = 182,
+						["requireSkill"] = 182,
 					}),
 					n(-185, {	-- Inscription
 						["groups"] = {						
@@ -890,7 +890,7 @@ _.Zones =
 							}),
 							--q(40064),	-- Woody Seed Cluster -- granted by i(136915)
 						},
-						["requiredSkill"] = 773,
+						["requireSkill"] = 773,
 					}),
 					n(-186, {	-- Jewelcrafting
 						["groups"] = {
@@ -983,7 +983,7 @@ _.Zones =
 								["sourceQuests"] = { 40523 }, -- Facet-nating Friends
 							}),
 						},
-						["requiredSkill"] = 755,
+						["requireSkill"] = 755,
 					}),
 					n(-187, {	-- Leatherworking
 						["groups"] = {
@@ -1114,7 +1114,7 @@ _.Zones =
 								["qg"] = 93522, -- Diane Cannings
 							}),
 						},
-						["requiredSkill"] = 165,
+						["requireSkill"] = 165,
 					}),
 					n(-188, {	-- Mining
 						["groups"] = {
@@ -1154,7 +1154,7 @@ _.Zones =
 								["qg"] = 93189, -- Mama Diggs
 							}),
 						},
-						["requiredSkill"] = 186,
+						["requireSkill"] = 186,
 					}),
 					n(-189, {	-- Skinning
 						["groups"] = {
@@ -1199,7 +1199,7 @@ _.Zones =
 							--q(40143),	-- Unfinished Treatise on the Properties of Stormscale -- granted by i(129865)
 							
 						},
-						["requiredSkill"] = 393,
+						["requireSkill"] = 393,
 					}),
 					n(-190, {	-- Tailoring
 						["groups"] = {
@@ -1331,7 +1331,7 @@ _.Zones =
 								["qg"] = 93542, -- Tanithria
 							}),
 						},
-						["requiredSkill"] = 197,
+						["requireSkill"] = 197,
 					}),
 					n(-191, {	-- Archaeology
 						["groups"] = {
@@ -1381,7 +1381,7 @@ _.Zones =
 								["qg"] = 93538, -- Dariness the Learned
 							}),
 						},
-						["requiredSkill"] = 794,
+						["requireSkill"] = 794,
 					}),
 					n(-192, {	-- Cooking
 						["groups"] = {
@@ -1415,7 +1415,7 @@ _.Zones =
 								["qg"] = 102546, -- Nomi
 							}),
 						},
-						["requiredSkill"] = 185,
+						["requireSkill"] = 185,
 					}),
 					n(-194, {	-- Fishing
 						["groups"] = {
@@ -1428,7 +1428,7 @@ _.Zones =
 								["sourceQuests"] = { 40960 }, -- Luminous Pearl
 							}),
 						},
-						["requiredSkill"] = 356,
+						["requireSkill"] = 356,
 					}),
 					qart(q(41541, {	-- A Beastly Expedition 
 						["qgs"] = { 102478, 107317, 107973 }, -- Emmarel Shadewarden (3 different versions)
@@ -7689,13 +7689,13 @@ _.Zones =
 								["g"] = {
 									recipe(209507), -- Formula: Soul Fibril
 								},
-								["requiredSkill"] = 333, -- Enchanting
+								["requireSkill"] = 333, -- Enchanting
 							}),
 							i(136699, { -- Recipe: Flamespike
 								["g"] = {
 									recipe(209499), -- Recipe: Flamespike
 								},
-								["requiredSkill"] = 164, -- Blacksmithing
+								["requireSkill"] = 164, -- Blacksmithing
 							}),
 							i(137727, { -- Schematic: Mecha-Bond Imprint Matrix
 								i(134125, { -- Mecha-Bond Imprint Matric
@@ -7786,7 +7786,7 @@ _.Zones =
 								}),
 							},
 							["description"] = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-							["requiredSkill"] = 356,
+							["requireSkill"] = 356,
 							["creatureID"] = 108825
 						}),
 						n(95844, {	-- Marcia Chase <Fishing Trainer & Supplies>
@@ -7963,7 +7963,7 @@ _.Zones =
 									},
 								},
 								["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
-								["requiredSkill"] = 356,
+								["requireSkill"] = 356,
 							}),
 						}),
 					}),
@@ -8032,7 +8032,7 @@ _.Zones =
 									["g"] = {
 										recipe(182983), -- Recipe: Demonsteel Waistguard (Rank 3)
 									},
-									["requiredSkill"] = 164, -- Blacksmithing
+									["requireSkill"] = 164, -- Blacksmithing
 								}),
 								i(137885, { -- Recipe: Dreadleather Belt Rank 2
 									i(128890),	-- Dreadleather Belt

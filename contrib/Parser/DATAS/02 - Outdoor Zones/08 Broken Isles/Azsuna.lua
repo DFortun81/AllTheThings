@@ -1664,7 +1664,7 @@ _.Zones =
 									["sourceQuests"] = { 39566 }, -- The Search for Knowledge
 								}),
 							},
-							["requiredSkill"] = 171,
+							["requireSkill"] = 171,
 						}),
 						n(-181, { -- Blacksmithing
 							n(-34, { -- World Quests
@@ -1687,7 +1687,7 @@ _.Zones =
 									["sourceQuests"] = { 39918 }, -- The Absent Priestess
 								}),
 							},
-							["requiredSkill"] = 333,
+							["requireSkill"] = 333,
 						}),
 						n(-183, { -- Engineering
 							["groups"] = {
@@ -1695,7 +1695,7 @@ _.Zones =
 									["qg"] = 102196,	-- Fargo Flintlocke
 								}),
 							},
-							["requiredSkill"] = 202,
+							["requireSkill"] = 202,
 						}),
 						n(-184, { -- Herbalism
 							["groups"] = {
@@ -1714,14 +1714,14 @@ _.Zones =
 									}),
 								}),
 							},
-							["requiredSkill"] = 182,
+							["requireSkill"] = 182,
 						}),
 						n(-185, { -- Inscription
 							["groups"] = {
 								q(39938), -- Containing the Demon Within
 								q(39941), -- Control is Key
 							},
-							["requiredSkill"] = 773,
+							["requireSkill"] = 773,
 						}),
 					}),
 					ach(10994, { -- Class Campaign
@@ -1990,7 +1990,7 @@ _.Zones =
 						},
 						["qg"] = 102195, -- Fargo Flintlocke
 						["sourceQuests"] = { 40856 }, -- It'll Cost You
-						["requiredSkill"] = 202,
+						["requireSkill"] = 202,
 					}),
 					q(40210, {	-- Time Well Spent
 						["qg"] = 98964, -- Celea
@@ -2002,11 +2002,11 @@ _.Zones =
 							40208,	-- Eye of Azshara: Scales of the Sea
 							40209,	-- Scales of the Earth
 						},
-						["requiredSkill"] = 165,
+						["requireSkill"] = 165,
 					}),
 					q(40547, {	-- To Dalaran, With Love
 						["qg"] = 100521, -- Jabrul
-						["requiredSkill"] = 755,
+						["requireSkill"] = 755,
 						["sourceQuests"] = { 40556 }, -- Jabrul Needs You
 					}),
 --[[
@@ -2532,7 +2532,7 @@ _.Zones =
 									}),
 								},
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF43.2, 40.6|r north of Illidari Stand.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requiredSkill"] = 356,
+								["requireSkill"] = 356,
 								["creatureID"] = 120266
 							}),
 						}),

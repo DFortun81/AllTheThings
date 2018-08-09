@@ -76,7 +76,7 @@ _.Zones =
 						},
 						["qg"] = 15174,	-- Calandrath.
 						["description"] = "This quest is invisible until you reach Cooking 285.",
-						["requiredSkill"] = 185,	-- Cooking
+						["requireSkill"] = 185,	-- Cooking
 					}),
 					q(  8309, {	-- Glyph Chasing
 						["groups"] = {
@@ -95,7 +95,7 @@ _.Zones =
 						},
 						["qg"] = 15174,	-- Calandrath.
 						["sourceQuests"] = { 8313 },	-- Sharing the Knowledge
-						["requiredSkill"] = 185,	-- Cooking
+						["requireSkill"] = 185,	-- Cooking
 					}),
 					qa(28867, {	-- Nethergarde Needs You! (bcrumb for Blasted Lands)
 						["groups"] = {
@@ -141,7 +141,7 @@ _.Zones =
 							["groups"] = {
 							},
 							["sourceQuests"] = { 8307 },	-- Desert Recipe
-							["requiredSkill"] = 185,	-- Cooking
+							["requireSkill"] = 185,	-- Cooking
 						}),
 					}),
 					q(  8281, {	-- Stepping Up Security

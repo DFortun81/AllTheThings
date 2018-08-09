@@ -53,7 +53,7 @@ _.Zones =
 							i(142282), -- Plans: Stormforged Axe
 						},
 						["qg"] = 115546, -- Lunelli
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					q( 10009, {	-- Crackin' Some Skulls
 						["groups"] = {
@@ -74,7 +74,7 @@ _.Zones =
 							i(142286), -- Plans: Lavaforged Warhammer
 						},
 						["qg"] = 115546, -- Lunelli
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					q( 10949, {	-- Entry Into the Black Temple
 						["groups"] = {

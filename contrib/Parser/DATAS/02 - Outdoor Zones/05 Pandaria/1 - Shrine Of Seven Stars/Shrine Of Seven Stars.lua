@@ -130,7 +130,7 @@ _.Zones =
 						["g"] = {},
 						["qg"] = 64085, -- Cullen Hammerbrow
 						["races"] = ALLIANCE_ONLY,
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 --[[					
 					qa(31390),	-- The Klaxxi

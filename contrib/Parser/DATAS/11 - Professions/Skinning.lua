@@ -222,7 +222,7 @@ profession(393, { -- Skinning
 	}),
 	q(40134, {	-- Highmountain Hides
 		["groups"] = { i(130064) },	-- Deadeye Monocle
-		["requiredSkill"] = 393
+		["requireSkill"] = 393
 	}),
 	n(-15, { -- Recipes
 		-- Legion

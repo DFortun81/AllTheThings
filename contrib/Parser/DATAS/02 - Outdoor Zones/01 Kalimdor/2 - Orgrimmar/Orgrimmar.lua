@@ -947,7 +947,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						},
 						["qg"] = 7790, -- Orokk Omosh
 						["races"] = HORDE_ONLY,
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					q(2752, { -- On Iron Pauldrons
 						["groups"] = {
@@ -956,7 +956,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["qg"] = 7790, -- Orokk Omosh
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 2751, -- Barbaric Battlements
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					q(2753, { -- Trampled Under Foot
 						["groups"] = {
@@ -965,7 +965,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["qg"] = 7790, -- Orokk Omosh
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 2752, -- On Iron Pauldrons
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					q(2754, { -- Horns of Frenzy
 						["groups"] = {
@@ -974,7 +974,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["qg"] = 7790, -- Orokk Omosh
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 2753, -- Trampled Under Foot
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					q(2755, { -- Joys of Omosh
 						["groups"] = {
@@ -983,7 +983,7 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["qg"] = 7790, -- Orokk Omosh
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 2754, -- Horns of Frenzy
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					qdg(qh(27396, {	-- Blade of the Shattered Hand
 						["groups"] = {
@@ -1142,13 +1142,13 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["groups"] = {
 						},
 						["races"] = { 8 },
-						["requiredSkill"] = 185,	-- Cooking
+						["requireSkill"] = 185,	-- Cooking
 					})),
 					qg(42506, q(26233, {	-- Stealing From Our Own
 						["groups"] = {
 						},
 						["races"] = { 2, 5, 6, 10, 9, 26 },
-						["requiredSkill"] = 185,	-- Cooking
+						["requireSkill"] = 185,	-- Cooking
 					})),
 					qdg(qh(28459, {	-- Stones of Binding
 						["groups"] = {

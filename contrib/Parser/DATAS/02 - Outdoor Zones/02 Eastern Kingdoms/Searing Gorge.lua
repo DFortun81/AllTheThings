@@ -820,13 +820,13 @@ _.Zones =
 								["groups"] = {
 									un(34, i(10461)),	-- Shadowy Bracers
 								},
-								["requiredSkill"] = 197,	-- Tailoring
+								["requireSkill"] = 197,	-- Tailoring
 							})),
 							un(40, q( 3385, {	-- The Undermarket
 								["groups"] = {
 									un(34, i(10462)),	-- Shadowy Belt
 								},
-								["requiredSkill"] = 197,	-- Tailoring
+								["requireSkill"] = 197,	-- Tailoring
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)

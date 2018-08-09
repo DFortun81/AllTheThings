@@ -20,7 +20,7 @@ _.Instances =
 									i(159462), -- Footbomb Championship Ring
 								}),
 								["crs"] = {
-									139904, -- Coin-Operated Crowd Pummeler
+									129214, -- Coin-Operated Crowd Pummeler
 								},
 							}),
 							e(2114, { -- Azerokk
@@ -50,7 +50,7 @@ _.Instances =
 									i(159235), -- Deranged Alchemist's Slippers
 								}),
 								["crs"] = {
-									139273, -- Rixxa Fluxflame
+									129231, -- Rixxa Fluxflame
 								},
 							}),
 							e(2116, { -- Mogul Razdunk
@@ -84,7 +84,7 @@ _.Instances =
 									i(159462), -- Footbomb Championship Ring
 								},
 								["crs"] = {
-									139904, -- Coin-Operated Crowd Pummeler
+									129214, -- Coin-Operated Crowd Pummeler
 								},
 							}),
 							e(2114, { -- Azerokk
@@ -114,7 +114,7 @@ _.Instances =
 									i(159235), -- Deranged Alchemist's Slippers
 								},
 								["crs"] = {
-									139273, -- Rixxa Fluxflame
+									129231, -- Rixxa Fluxflame
 								},
 							}),
 							e(2116, { -- Mogul Razdunk
@@ -148,7 +148,7 @@ _.Instances =
 									i(159462), -- Footbomb Championship Ring
 								},
 								["crs"] = {
-									139904, -- Coin-Operated Crowd Pummeler
+									129214, -- Coin-Operated Crowd Pummeler
 								},
 							}),
 							e(2114, { -- Azerokk
@@ -178,7 +178,7 @@ _.Instances =
 									i(159235), -- Deranged Alchemist's Slippers
 								},
 								["crs"] = {
-									139273, -- Rixxa Fluxflame
+									129231, -- Rixxa Fluxflame
 								},
 							}),
 							e(2116, { -- Mogul Razdunk

@@ -661,7 +661,7 @@ _.Zones =
 										},
 									}),
 								},
-								["requiredSkill"] = 164, -- Classic Blacksmithing
+								["requireSkill"] = 164, -- Classic Blacksmithing
 							}),
 							q(44927, { -- Worth Its Weight in Steel
 								["g"] = {
@@ -669,7 +669,7 @@ _.Zones =
 								},
 								["qg"] = 115805, -- Hoddruc Bladebender
 								["sourceQuests"] = { 44926 }, -- A Familiar Axe to Grind
-								["requiredSkill"] = 164, -- Classic Blacksmithing
+								["requireSkill"] = 164, -- Classic Blacksmithing
 							}),
 						}),
 						-- sz(775, 8, { -- The Whelping Downs

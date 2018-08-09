@@ -340,7 +340,7 @@ _.Instances =
 									["g"] = {
 										recipe(213916), -- Recipe: Fel Core Hound Harness
 									},
-									["requiredSkill"] = 164, -- Blacksmithing
+									["requireSkill"] = 164, -- Blacksmithing
 								}),
 								i(138361),
 								i(140855),
@@ -564,7 +564,7 @@ _.Instances =
 									["g"] = {
 										recipe(213916), -- Recipe: Fel Core Hound Harness
 									},
-									["requiredSkill"] = 164, -- Blacksmithing
+									["requireSkill"] = 164, -- Blacksmithing
 								}),
 								i(138361),
 								i(140855),
@@ -788,7 +788,7 @@ _.Instances =
 									["g"] = {
 										recipe(213916), -- Recipe: Fel Core Hound Harness
 									},
-									["requiredSkill"] = 164, -- Blacksmithing
+									["requireSkill"] = 164, -- Blacksmithing
 								}),
 								i(138361),
 								i(140855),

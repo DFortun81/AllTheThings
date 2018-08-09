@@ -263,123 +263,125 @@ profession(185, { -- Cooking
 			recipe(185708),		-- Sugar-Crusted Fish Feast
 		}),
 		tier(1, {	-- Classic
-			un(2, i(16072)),	-- Expert Cookbook
-			un(2, i(16073)),	-- Artisan Cookbook
-			un(2, i(27736)),	-- Master Cookbook
-			recipe(37836),	-- Spice Bread
-			recipe(7751),	-- Brilliant Smallfish
-			recipe(2538),	-- Charred Wolf Meat
-			recipe(15935),	-- Crispy Bat Wing
-			un(7, i(6891)),	-- Recipe: Herb Baked Egg
-			recipe(8604),	-- Herb Baked Egg
-			recipe(33276),	-- Lynx Steak
-			recipe(2540),	-- Roasted Boar Meat
-			a(recipe(33277)),	-- Roasted Moongraze Tenderloin
-			recipe(7752),	-- Slitherskin Mackerel
-			un(7, h(i(3734))),		-- Recipe: Big Bear Steak [Removed From Game!]
-			un(8, h(recipe(3397))),	-- Big Bear Steak [Removed From Game!]
-			un(7, i(5482)),	-- Recipe: Kaldorei Spider Kabob
-			recipe(6412),	-- Kaldorei Spider Kabob
-			recipe(2539),	-- Spiced Wolf Meat
-			recipe(2795),	-- Beer Basted Boar Ribs
-			recipe(6413),	-- Scorpid Surprise
-			recipe(6414),	-- Roasted Kodo Meat
-			recipe(8607),	-- Smoked Bear Meat
-			recipe(93741),	-- Venison Jerky
-			recipe(33278),	-- Bat Bites
-			recipe(6499),	-- Boiled Clams
-			recipe(2541),	-- Coyote Steak
-			un(7, i(5485)),	-- Recipe: Fillet of Frenzy
-			recipe(6415),	-- Fillet of Frenzy
-			recipe(2542),	-- Goretusk Liver Pie
-			recipe(7754),	-- Loch Frenzy Delight
-			recipe(7753),	-- Longjaw Mud Snapper
-			recipe(7827),	-- Rainbow Fin Albacore
-			recipe(6416),	-- Strider Stew
-			recipe(2543),	-- Westfall Stew
-			recipe(3371),	-- Blood Sausage
-			recipe(28267),	-- Crunchy Spider Surprise
-			{
-				["itemID"] = 7678,		-- Recipe: Thistle Tea (Removed from Game!)
-				["description"] = "Do not attempt to buy this to learn on your non-Rogue characters, it won't let you. Also, you'd have to spend a couple million gold to get ahold of one.",
-				["u"] = 1,
-			},
-			{
-				["recipeID"] = 9513,	-- Thistle Tea
-				["classes"] = {4},		-- Rogue Only
-			},
-			recipe(2544),	-- Crab Cake
-			recipe(3370),	-- Crocolisk Steak
-			recipe(2546),	-- Dry Pork Ribs
-			recipe(25704),	-- Smoked Sagefish
-			recipe(2545),	-- Cooked Crab Claw
-			recipe(8238),	-- Savory Deviate Delight
-			recipe(6501),	-- Clam Chowder
-			recipe(3372),	-- Murloc Fin Soup
-			recipe(45695),	-- Captain Rumsey's Lager
-			recipe(2547),	-- Redridge Goulash
-			recipe(7755),	-- Bristle Whisker Catfish
-			recipe(6418),	-- Crispy Lizard Tail
-			recipe(2549),	-- Seasoned Wolf Kabob
-			recipe(2548),	-- Succulent Pork Ribs
-			recipe(3377),	-- Gooey Spider Cake
-			un(7, i(5489)),	-- Recipe: Lean Venison
-			recipe(6419),	-- Lean Venison
-			recipe(3373),	-- Crocolisk Gumbo
-			recipe(6500),	-- Goblin Deviled Clams
-			un(7, i(12227)), -- Recipe: Lean Wolf Steak
-			recipe(15853),	-- Lean Wolf Steak
-			recipe(3398),	-- Hot Lion Chops
-			un(7, i(5487)),	-- Recipe: Dig Rat Stew
-			un(7, i(44977)),	-- Recipe: Dig Rat Stew
-			recipe(6417),	-- Dig Rat Stew
-			recipe(3376),	-- Curiously Tasty Omelet
-			recipe(24418),	-- Heavy Crocolisk Stew
-			un(7, i(3736)),	-- Recipe: Tasty Lion Steak
-			recipe(3399),	-- Tasty Lion Steak
-			desc(un(1, recipe(13028)), "Henry Stern who is currently the only source of acquiring Goldthorn Tea is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, take the recipe off the list, or give us another way to obtain it."),	-- Goldthorn Tea
-			recipe(7828),	-- Rockscale Cod
-			recipe(4094),	-- Barbecued Buzzard Wing
-			recipe(15863),	-- Carrion Surprise
-			recipe(7213),	-- Giant Clam Scorcho
-			recipe(15856),	-- Hot Wolf Ribs
-			recipe(15861),	-- Jungle Stew
-			recipe(20916),	-- Mithril Head Trout
-			recipe(15865),	-- Mystery Stew
-			recipe(15855),	-- Roast Raptor
-			recipe(25954),	-- Sagefish Delight
-			un(7, i(3737)),	-- Recipe: Soothing Turtle Bisque
-			recipe(3400),	-- Soothing Turtle Bisque
-			recipe(15906),	-- Dragonbreath Chili
-			recipe(15910),	-- Heavy Kodo Stew
-			recipe(21175),	-- Spider Sausage
-			recipe(18239),	-- Cooked Glossy Mightfish
-			recipe(18241),	-- Filet of Redgill
-			recipe(15933),	-- Monster Omelet
-			recipe(15915),	-- Spiced Chili Crab
-			un(7, i(13939)),	-- Recipe: Spotted Yellowtail
-			recipe(18238),	-- Spotted Yellowtail
-			recipe(22480),	-- Tender Wolf Steak
-			recipe(20626),	-- Undermine Clam Chowder
-			un(7, i(13942)),	-- Recipe: Grilled Squid
-			recipe(18240),	-- Grilled Squid
-			recipe(18242),	-- Hot Smoked Bass
-			recipe(64054),	-- Clamlette Magnifique
-			un(7, i(35564)),	-- Recipe: Charred Bear Kabobs
-			recipe(46684),	-- Charred Bear Kabobs
-			un(7, i(35566)),	-- Recipe: Juicy Bear Burger
-			recipe(46688),	-- Juicy Bear Burger
-			un(7, i(13945)),	-- Recipe: Nightfin Soup
-			recipe(18243),	-- Nightfin Soup
-			un(7, i(13946)),	-- Recipe: Poached Sunscale Salmon
-			recipe(18244),	-- Poached Sunscale Salmon
-			recipe(18247),	-- Baked Salmon
-			recipe(18245),	-- Lobster Stew
-			recipe(18246),	-- Mightfish Steak
-			recipe(22761),	-- Runn Tum Tuber Surprise
-			recipe(24801),	-- Smoked Desert Dumplings
-			un(7, i(21025)), -- Recipe: Dirge's Kickin' Chimaerok Chops
-			un(8, recipe(25659)),	-- Dirge's Kickin' Chimaerok Chops
+			["groups"] = bubbleDown({["requiredSkill"] = 185 },  {
+				un(2, i(16072)),	-- Expert Cookbook
+				un(2, i(16073)),	-- Artisan Cookbook
+				un(2, i(27736)),	-- Master Cookbook
+				recipe(37836),	-- Spice Bread
+				recipe(7751),	-- Brilliant Smallfish
+				recipe(2538),	-- Charred Wolf Meat
+				recipe(15935),	-- Crispy Bat Wing
+				un(7, i(6891)),	-- Recipe: Herb Baked Egg
+				recipe(8604),	-- Herb Baked Egg
+				recipe(33276),	-- Lynx Steak
+				recipe(2540),	-- Roasted Boar Meat
+				a(recipe(33277)),	-- Roasted Moongraze Tenderloin
+				recipe(7752),	-- Slitherskin Mackerel
+				un(7, h(i(3734))),		-- Recipe: Big Bear Steak [Removed From Game!]
+				un(8, h(recipe(3397))),	-- Big Bear Steak [Removed From Game!]
+				un(7, i(5482)),	-- Recipe: Kaldorei Spider Kabob
+				recipe(6412),	-- Kaldorei Spider Kabob
+				recipe(2539),	-- Spiced Wolf Meat
+				recipe(2795),	-- Beer Basted Boar Ribs
+				recipe(6413),	-- Scorpid Surprise
+				recipe(6414),	-- Roasted Kodo Meat
+				recipe(8607),	-- Smoked Bear Meat
+				recipe(93741),	-- Venison Jerky
+				recipe(33278),	-- Bat Bites
+				recipe(6499),	-- Boiled Clams
+				recipe(2541),	-- Coyote Steak
+				un(7, i(5485)),	-- Recipe: Fillet of Frenzy
+				recipe(6415),	-- Fillet of Frenzy
+				recipe(2542),	-- Goretusk Liver Pie
+				recipe(7754),	-- Loch Frenzy Delight
+				recipe(7753),	-- Longjaw Mud Snapper
+				recipe(7827),	-- Rainbow Fin Albacore
+				recipe(6416),	-- Strider Stew
+				recipe(2543),	-- Westfall Stew
+				recipe(3371),	-- Blood Sausage
+				recipe(28267),	-- Crunchy Spider Surprise
+				{
+					["itemID"] = 7678,		-- Recipe: Thistle Tea (Removed from Game!)
+					["description"] = "Do not attempt to buy this to learn on your non-Rogue characters, it won't let you. Also, you'd have to spend a couple million gold to get ahold of one.",
+					["u"] = 1,
+				},
+				{
+					["recipeID"] = 9513,	-- Thistle Tea
+					["classes"] = {4},		-- Rogue Only
+				},
+				recipe(2544),	-- Crab Cake
+				recipe(3370),	-- Crocolisk Steak
+				recipe(2546),	-- Dry Pork Ribs
+				recipe(25704),	-- Smoked Sagefish
+				recipe(2545),	-- Cooked Crab Claw
+				recipe(8238),	-- Savory Deviate Delight
+				recipe(6501),	-- Clam Chowder
+				recipe(3372),	-- Murloc Fin Soup
+				recipe(45695),	-- Captain Rumsey's Lager
+				recipe(2547),	-- Redridge Goulash
+				recipe(7755),	-- Bristle Whisker Catfish
+				recipe(6418),	-- Crispy Lizard Tail
+				recipe(2549),	-- Seasoned Wolf Kabob
+				recipe(2548),	-- Succulent Pork Ribs
+				recipe(3377),	-- Gooey Spider Cake
+				un(7, i(5489)),	-- Recipe: Lean Venison
+				recipe(6419),	-- Lean Venison
+				recipe(3373),	-- Crocolisk Gumbo
+				recipe(6500),	-- Goblin Deviled Clams
+				un(7, i(12227)), -- Recipe: Lean Wolf Steak
+				recipe(15853),	-- Lean Wolf Steak
+				recipe(3398),	-- Hot Lion Chops
+				un(7, i(5487)),	-- Recipe: Dig Rat Stew
+				un(7, i(44977)),	-- Recipe: Dig Rat Stew
+				recipe(6417),	-- Dig Rat Stew
+				recipe(3376),	-- Curiously Tasty Omelet
+				recipe(24418),	-- Heavy Crocolisk Stew
+				un(7, i(3736)),	-- Recipe: Tasty Lion Steak
+				recipe(3399),	-- Tasty Lion Steak
+				desc(un(1, recipe(13028)), "Henry Stern who is currently the only source of acquiring Goldthorn Tea is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, take the recipe off the list, or give us another way to obtain it."),	-- Goldthorn Tea
+				recipe(7828),	-- Rockscale Cod
+				recipe(4094),	-- Barbecued Buzzard Wing
+				recipe(15863),	-- Carrion Surprise
+				recipe(7213),	-- Giant Clam Scorcho
+				recipe(15856),	-- Hot Wolf Ribs
+				recipe(15861),	-- Jungle Stew
+				recipe(20916),	-- Mithril Head Trout
+				recipe(15865),	-- Mystery Stew
+				recipe(15855),	-- Roast Raptor
+				recipe(25954),	-- Sagefish Delight
+				un(7, i(3737)),	-- Recipe: Soothing Turtle Bisque
+				recipe(3400),	-- Soothing Turtle Bisque
+				recipe(15906),	-- Dragonbreath Chili
+				recipe(15910),	-- Heavy Kodo Stew
+				recipe(21175),	-- Spider Sausage
+				recipe(18239),	-- Cooked Glossy Mightfish
+				recipe(18241),	-- Filet of Redgill
+				recipe(15933),	-- Monster Omelet
+				recipe(15915),	-- Spiced Chili Crab
+				un(7, i(13939)),	-- Recipe: Spotted Yellowtail
+				recipe(18238),	-- Spotted Yellowtail
+				recipe(22480),	-- Tender Wolf Steak
+				recipe(20626),	-- Undermine Clam Chowder
+				un(7, i(13942)),	-- Recipe: Grilled Squid
+				recipe(18240),	-- Grilled Squid
+				recipe(18242),	-- Hot Smoked Bass
+				recipe(64054),	-- Clamlette Magnifique
+				un(7, i(35564)),	-- Recipe: Charred Bear Kabobs
+				recipe(46684),	-- Charred Bear Kabobs
+				un(7, i(35566)),	-- Recipe: Juicy Bear Burger
+				recipe(46688),	-- Juicy Bear Burger
+				un(7, i(13945)),	-- Recipe: Nightfin Soup
+				recipe(18243),	-- Nightfin Soup
+				un(7, i(13946)),	-- Recipe: Poached Sunscale Salmon
+				recipe(18244),	-- Poached Sunscale Salmon
+				recipe(18247),	-- Baked Salmon
+				recipe(18245),	-- Lobster Stew
+				recipe(18246),	-- Mightfish Steak
+				recipe(22761),	-- Runn Tum Tuber Surprise
+				recipe(24801),	-- Smoked Desert Dumplings
+				un(7, i(21025)), -- Recipe: Dirge's Kickin' Chimaerok Chops
+				un(8, recipe(25659)),	-- Dirge's Kickin' Chimaerok Chops
+			}),
 		}),
 		tier(2, {	-- Burning Crusade
 			recipe(33290),	-- Blackened Trout

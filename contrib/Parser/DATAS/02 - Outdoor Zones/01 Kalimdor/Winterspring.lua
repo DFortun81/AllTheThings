@@ -415,7 +415,7 @@ _.Zones =
 								i(142357),	-- Plans: Dawn's Edge
 							},
 							["qg"] = 11184,	-- Wixxrak
-							["requiredSkill"] = 2477, -- Classic Blacksmithing
+							["requireSkill"] = 2477, -- Classic Blacksmithing
 						}),
 						qa(28857, {	-- Blasted Lands: The Other Side of the World
 							["qg"] = 11118,	-- Innkeeper Vizzie

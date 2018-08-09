@@ -616,7 +616,7 @@ _.Instances =
 									["g"] = {
 										recipe(247714), -- Recipe: Empyrial Breastplate (Rank 3)
 									},
-									["requiredSkill"] = 164, -- Blacksmithing
+									["requireSkill"] = 164, -- Blacksmithing
 								}),
 								i(151943), -- Crown of Relentless Annihilation
 								i(151988), -- Shoulderpads of the Demonic Blitz
@@ -1009,7 +1009,7 @@ _.Instances =
 									["g"] = {
 										recipe(247714), -- Recipe: Empyrial Breastplate (Rank 3)
 									},
-									["requiredSkill"] = 164, -- Blacksmithing
+									["requireSkill"] = 164, -- Blacksmithing
 								}),
 								i(151943), -- Crown of Relentless Annihilation
 								i(151988), -- Shoulderpads of the Demonic Blitz

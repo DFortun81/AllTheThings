@@ -1130,7 +1130,7 @@ _.Zones =
 							sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
 						},
 						["qg"] = 102198, -- Fargo Flintlocke
-						["requiredSkill"] = 202,
+						["requireSkill"] = 202,
 						["sourceQuests"] = {
 							40866,	-- The Shell, You Say?
 							40867,	-- Bubble Baubles
@@ -1372,25 +1372,25 @@ _.Zones =
 							["g"] = {
 								recipe(209498), -- Recipe: Consecrated Spike
 							},
-							["requiredSkill"] = 164, -- Blacksmithing
+							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(123954, { -- Recipe: Demonsteel Boots (Rank 3)
 							["g"] = {
 								recipe(182988), -- Recipe: Demonsteel Boots (Rank 3)
 							},
-							["requiredSkill"] = 164, -- Blacksmithing
+							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(123951, { -- Recipe: Demonsteel Greaves (Rank 3)
 							["g"] = {
 								recipe(182985), -- Recipe: Demonsteel Greaves (Rank 3)
 							},
-							["requiredSkill"] = 164, -- Blacksmithing
+							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(123951, { -- Recipe: Demonsteel Helm (Rank 3)
 							["g"] = {
 								recipe(182986), -- Recipe: Demonsteel Helm (Rank 3)
 							},
-							["requiredSkill"] = 164, -- Blacksmithing
+							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(129149), -- Death's Door Charm
 						i(139598), -- Legplates of Forgotten Myth
@@ -1559,7 +1559,7 @@ _.Zones =
 									}),
 								},
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.5, 10.7|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requiredSkill"] = 356,
+								["requireSkill"] = 356,
 								["creatureID"] = 120458
 							}),
 						}),

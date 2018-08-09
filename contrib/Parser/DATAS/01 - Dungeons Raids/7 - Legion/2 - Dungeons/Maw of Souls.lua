@@ -90,7 +90,7 @@ _.Instances =
 									},
 									["description"] = "This recipe should only drop while you're actively on |cFFFFD700Maw of Souls: Hammered By The Storm|r or after you've completed it.",
 									["sourceQuest"] = 38532, -- Maw of Souls: Hammered By The Storm
-									["requiredSkill"] = 164, -- Blacksmithing
+									["requireSkill"] = 164, -- Blacksmithing
 								}),
 							}))
 						}

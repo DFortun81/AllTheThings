@@ -649,7 +649,7 @@ _.Zones =
 					q(48075, { -- A Colorful Key
 						["groups"] = {
 						},
-						["requiredSkill"] = 755, -- Jewelcrafting
+						["requireSkill"] = 755, -- Jewelcrafting
 						["sourceQuests"] = { 46941 }, -- The Path Forward
 					}),
 					q(48076, { -- A Crowning Achievement
@@ -659,7 +659,7 @@ _.Zones =
 							i(151589), -- Empyrial Elemental Crown
 							i(151590), -- Empyrial Titan Crown
 						},
-						["requiredSkill"] = 755, -- Jewelcrafting
+						["requireSkill"] = 755, -- Jewelcrafting
 						["sourceQuests"] = { 48075 }, -- A Colorful Key
 					}),
 					q(48078, { -- Counterbalancing
@@ -667,7 +667,7 @@ _.Zones =
 							i(151577), -- Fiendish Shoulderguards
 							i(151578), -- Fiendish Spaulders
 						},
-						["requiredSkill"] = 165, -- Leatherworking
+						["requireSkill"] = 165, -- Leatherworking
 						["sourceQuests"] = { 47743 }, -- The Child of Light and Shadow
 					}),
 					q(48055, { -- Empyrial Strength
@@ -675,7 +675,7 @@ _.Zones =
 							i(151576), -- Empyrial Breastplate
 						},
 						["qg"] = 125341, -- Khamir
-						["requiredSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164, -- Blacksmithing
 						["sourceQuests"] = { 47743 }, -- The Child of Light and Shadow
 					}),
 					q(49445, {	-- The Prime Exchange
@@ -684,21 +684,21 @@ _.Zones =
 					q(48069, { -- The Wrench Calls
 						["groups"] = {
 						},
-						["requiredSkill"] = 202, -- Engineering
+						["requireSkill"] = 202, -- Engineering
 						["sourceQuests"] = { 46941 }, -- The Path Forward
 					}),
 					q(48065, { -- Extraterrestrial Exploration
 						["groups"] = {
 							i(151652), -- Wormhole Generator: Argus
 						},
-						["requiredSkill"] = 202, -- Engineering
+						["requireSkill"] = 202, -- Engineering
 						["sourceQuests"] = { 48069 }, -- The Wrench Calls
 					}),
 					q(48074, { -- Looming Over Me
 						["groups"] = {
 							i(151571), -- Lightweave Breeches
 						},
-						["requiredSkill"] = 197, -- Tailoring
+						["requireSkill"] = 197, -- Tailoring
 						["sourceQuests"] = { 46941 }, -- The Path Forward
 					}),
 				}),
@@ -724,7 +724,7 @@ _.Zones =
 							["g"] = {
 								recipe(247713), -- Recipe: Empyrial Breastplate (Rank 2)
 							},
-							["requiredSkill"] = 164, -- Blacksmithing
+							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(152788), -- Lightforged Warframe Mount
 						i(152399), -- Army of the Light Tabard

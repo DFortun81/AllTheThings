@@ -113,8 +113,12 @@ _.Zones =
 						["sourceQuest"] = 27273,	-- Source Quest: An Invitation from Moonglade
 						["lvl"] = 20,
 						["groups"] = {
-							i(65461),	-- Staff of the Green Circle
-							i(65462),	-- Staff of the Verdant Circle
+							i(65461, {	-- Staff of the Green Circle
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(65462, {	-- Staff of the Verdant Circle
+								["races"] = ALLIANCE_ONLY,
+							}),
 						},
 					}),
 					h({
@@ -124,8 +128,12 @@ _.Zones =
 						["sourceQuest"] = 27283,	-- Source Quest: A Journey to Moonglade
 						["lvl"] = 20,
 						["groups"] = {
-							i(65463),	-- Staff of the Green Circle
-							i(65464),	-- Staff of the Verdant Circle
+							i(65463, {	-- Staff of the Green Circle
+								["races"] = HORDE_ONLY,
+							}),
+							i(65464, {	-- Staff of the Verdant Circle
+								["races"] = HORDE_ONLY,
+							}),
 						},
 					}),
 					{

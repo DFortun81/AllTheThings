@@ -503,7 +503,7 @@ _.Zones =
 							q(13537, {	-- A Taste for Grouper
 								["qg"] = 33175,	-- Johnathan Staats
 								["sourceQuests"] = { 13518, 13522 },	-- The Last Wave of Survivors & Threat From the Water
-								["requiredSkill"] = 356,	-- Fishing
+								["requireSkill"] = 356,	-- Fishing
 							}),
 							q(13562, {	-- The Final Flame of Bashal'Aran
 								["qg"] = 32971,	-- Ranger Glynda Nal'Shea

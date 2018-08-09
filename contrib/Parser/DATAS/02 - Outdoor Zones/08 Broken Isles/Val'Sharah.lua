@@ -820,7 +820,7 @@ _.Zones =
 									}),
 								},
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF53.41, 72.86|r in Lorlathil.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requiredSkill"] = 356,
+								["requireSkill"] = 356,
 								["creatureID"] = 120456
 							}),
 						}),
@@ -1132,7 +1132,7 @@ _.Zones =
 							["sourceQuests"] = { 44112 }, -- Trading for Dreams
 						}),
 						n(-181, { -- Blacksmithing
-							["g"] = bubbleDown({["requiredSkill"] = 164}, { -- Blacksmithing
+							["g"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
 								q(39680, { -- Between the Hammer...
 									["g"] = {
 										recipe(182963), -- Plans: Leystone Waistguard (Rank 2)
@@ -1148,7 +1148,7 @@ _.Zones =
 								q(39729, { -- The Knowledge of Black Rook
 									["g"] = {},
 									["qg"] = 96763, -- Saris Swifthammer
-									["requiredSkill"] = 164,
+									["requireSkill"] = 164,
 									["sourceQuests"] = { 39680, 39726 }, -- Between the Hammer..., ...And the Anvil
 								}),
 								n(-34, { -- World Quests

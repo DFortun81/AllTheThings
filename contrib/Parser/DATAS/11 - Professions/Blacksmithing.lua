@@ -2401,7 +2401,7 @@ profession(164, { -- Blacksmithing
 					},
 					["qg"] = 69461, -- Itoka
 					["maps"] = { 928 }, -- Isle of Thunder
-					["requiredSkill"] = 164, -- Blacksmithing
+					["requireSkill"] = 164, -- Blacksmithing
 				}),
 			}),
 		}),]]--
@@ -2692,7 +2692,7 @@ profession(164, { -- Blacksmithing
 				},
 				["description"] = "This can be looted from almost any mob in Shadowmoon Valley; however, Karnoth has a guaranteed drop for the item.",
 				["races"] = ALLIANCE_ONLY,
-				["requiredSkill"] = 164, -- Blacksmithing
+				["requireSkill"] = 164, -- Blacksmithing
 			}),
 			q(36311, { -- Father and Son
 				["g"] = {
@@ -2702,7 +2702,7 @@ profession(164, { -- Blacksmithing
 				["qg"] = 80827, -- Haephest
 				["sourceQuest"] = 36309, -- The Strength of Iron
 				["races"] = ALLIANCE_ONLY,
-				["requiredSkill"] = 164, -- Blacksmithing
+				["requireSkill"] = 164, -- Blacksmithing
 			}),
 			i(114965, { -- Fractured Forge Hammer
 				["g"] = {
@@ -2713,21 +2713,21 @@ profession(164, { -- Blacksmithing
 				},
 				["description"] = "This can be looted from almost any mob in Frostfire Ridge; however, Dorogg has a guaranteed drop for the item.",
 				["races"] = HORDE_ONLY,
-				["requiredSkill"] = 164, -- Blacksmithing
+				["requireSkill"] = 164, -- Blacksmithing
 			}),
 			q(36207, { -- Waruk the Frostforger
 				["g"] = {},
 				["qg"] = 78989, -- Axe-Shaper Kugra
 				["sourceQuest"] = 36205, -- The Fractured Hammer
 				["races"] = HORDE_ONLY,
-				["requiredSkill"] = 164, -- Blacksmithing
+				["requireSkill"] = 164, -- Blacksmithing
 			}),
 			q(36230, { -- The Restless Spirit
 				["g"] = {},
 				["qg"] = 84494, -- Waruk the Frostforger
 				["sourceQuest"] = 36207, -- Waruk the Frostforger
 				["races"] = HORDE_ONLY,
-				["requiredSkill"] = 164, -- Blacksmithing
+				["requireSkill"] = 164, -- Blacksmithing
 			}),
 			q(36238, { -- Mending A Broken Heart
 				["g"] = {
@@ -2737,7 +2737,7 @@ profession(164, { -- Blacksmithing
 				["qg"] = 84494, -- Waruk the Frostforger
 				["sourceQuest"] = 36230, -- The Restless Spirit
 				["races"] = HORDE_ONLY,
-				["requiredSkill"] = 164, -- Blacksmithing
+				["requireSkill"] = 164, -- Blacksmithing
 			}),
 		}),]]--
 		n(-10032, { -- Appearances
@@ -2956,7 +2956,7 @@ profession(164, { -- Blacksmithing
 			q(39729, { -- The Knowledge of Black Rook
 				["g"] = {},
 				["qg"] = 96763, -- Saris Swifthammer
-				["requiredSkill"] = 164,
+				["requireSkill"] = 164,
 				["sourceQuests"] = { 39680, 39726 }, -- Between the Hammer..., ...And the Anvil
 			}),
 			q(38564, { -- A Sweet Bargain

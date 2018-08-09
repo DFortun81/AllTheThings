@@ -434,7 +434,7 @@ _.Zones =
 					["achievementID"] = 11736, -- Assume Command
 				}),
 				n(-10050, { -- Nether Disruptor
-					["g"] = bubbleDown({["requiredSkill"] = 164}, { -- Blacksmithing
+					["g"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
 						q(46774, { -- The Nether Disruptor
 							["g"] = {
 								i(147451), -- Armorcrafter's Commendation
@@ -1987,7 +1987,7 @@ _.Zones =
 									}),
 								},
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF34.0, 54.0|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requiredSkill"] = 356,
+								["requireSkill"] = 356,
 								["creatureID"] = 120460,
 								--["factionID"] = 2102
 							}),

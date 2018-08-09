@@ -203,7 +203,7 @@ _.Zones =
 								}),
 							},
 							["qg"] = 69461, -- Itoka
-							["requiredSkill"] = 164, -- Blacksmithing
+							["requireSkill"] = 164, -- Blacksmithing
 						}),
 					}),
 					q(32307, {	-- Reader for the Dead Tongue

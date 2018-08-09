@@ -452,7 +452,7 @@ profession(356, { 	-- Fishing
 				}),
 			},
 			["description"] = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-			["requiredSkill"] = 356,
+			["requireSkill"] = 356,
 			["creatureID"] = 108825
 		}),
 		spell(201943, { -- Better Luck Next Time
@@ -655,7 +655,7 @@ profession(356, { 	-- Fishing
 					}),
 				},
 				["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF32.4, 41.8|r at the bottom of Thunder Totem in the boat on the water.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-				["requiredSkill"] = 356,
+				["requireSkill"] = 356,
 				["creatureID"] = 120457
 			}),
 			faction(2100, {	-- Corbyn
@@ -666,7 +666,7 @@ profession(356, { 	-- Fishing
 					}),
 				},
 				["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.5, 10.7|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-				["requiredSkill"] = 356,
+				["requireSkill"] = 356,
 				["creatureID"] = 120458
 			}),
 			faction(2097, {	-- Ilyssia of the Waters
@@ -677,7 +677,7 @@ profession(356, { 	-- Fishing
 					}),
 				},
 				["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF43.2, 40.6|r north of Illidari Stand.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-				["requiredSkill"] = 356,
+				["requireSkill"] = 356,
 				["creatureID"] = 120266
 			}),
 			faction(2102, {	-- Impus
@@ -688,7 +688,7 @@ profession(356, { 	-- Fishing
 					}),
 				},
 				["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF34.0, 54.0|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-				["requiredSkill"] = 356,
+				["requireSkill"] = 356,
 				["creatureID"] = 120460
 			}),
 			faction(2098, {	-- Keeper Raynae
@@ -699,7 +699,7 @@ profession(356, { 	-- Fishing
 					}),
 				},
 				["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF53.41, 72.86|r in Lorlathil.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-				["requiredSkill"] = 356,
+				["requireSkill"] = 356,
 				["creatureID"] = 120456
 			}),
 			faction(2101, {	-- Sha'leth
@@ -709,7 +709,7 @@ profession(356, { 	-- Fishing
 					}),
 				},
 				["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF50.7, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-				["requiredSkill"] = 356,
+				["requireSkill"] = 356,
 				["creatureID"] = 120459
 			}),
 		}),
@@ -886,7 +886,7 @@ profession(356, { 	-- Fishing
 				},
 			},
 			["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
-			["requiredSkill"] = 356,
+			["requireSkill"] = 356,
 		}),
 		
 	}),
