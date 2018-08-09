@@ -337,15 +337,17 @@ _.Zones =
 						i(11223),	-- Formula: Enchant Bracer - Dodge
 						i(16217),	-- Formula: Enchant Shield - Greater Stamina
 					}),
-					a(n(4225, {		-- Saenorion <Leatherworking Supplies>						
+					n(4225, {	-- Saenorion <Leatherworking Supplies>						
 						i(67095), -- Pattern: Assassin's Chestplate
 						i(18949), -- Pattern: Barbaric Bracers
 						i(67070), -- Pattern: Belt of Nefarious Whispers
+						i(67084), -- Pattern: Charscale Leg Armor
 						i(67094), -- Pattern: Chestguard of Nature's Fury
 						i(67073), -- Pattern: Corded Viper Belt
 						i(67100), -- Pattern: Dragonkiller Tunic
-						i(7451), -- Pattern: Green Whelp Bracers	
-						i(18731), -- Pattern: Heavy Leather Ball						
+						i(68193), -- Pattern: Dragonscale Leg Armor							
+						i(71721), -- Pattern: Drakehide Leg Armor
+						i(7451), -- Pattern: Green Whelp Bracers												
 						i(67068), -- Pattern: Lightning Lash
 						i(67082), -- Pattern: Razor-Edged Cloak
 						i(67072), -- Pattern: Stormleather Sash	
@@ -383,7 +385,7 @@ _.Zones =
 						i(67086), -- Pattern: Vicious Wyrmhide Helm
 						i(67085), -- Pattern: Vicious Wyrmhide Legs	
 						i(67074), -- Pattern: Vicious Wyrmhide Shoulders					
-					})),
+					}),
 					a(n(5191, {		-- Shalumon <Tabard Vendor>
 						["groups"] = {
 							i(20132),	-- Arathor Battle Tabard
