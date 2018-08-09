@@ -73,6 +73,7 @@ pet(129362, 1777); 	-- Broot
 pet(29364, 137); 	-- Brown Rabbit Crate (Brown Rabbit)
 pet(10361, 77); 	-- Brown Snake
 pet(163244, 2402);	-- Brutus
+pet(163776, 2442);	-- Bumbles
 pet(163508, 2422); 	-- Butterfly in A Jar
 pet(142099, 1968); 	-- Call of the Frozen Blade (Wicked Soul)
 pet(163798, 2455);	-- Captain Nibs

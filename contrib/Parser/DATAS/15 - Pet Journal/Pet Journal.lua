@@ -609,6 +609,7 @@ _.PetJournal =
 		p(1572),	-- Brilliant Bloodfeather
 		p(325),		-- Brilliant Kaliri
 		p(1540),	-- Brilliant Spore
+		p(2442),	-- Bumbles
 		un(35, p(316)),		-- Cenarion Hatchling
 		p(1586),	-- Cerulean Moth
 		p(1303),	-- Chi-Chi, Hatchling of Chi-Ji
