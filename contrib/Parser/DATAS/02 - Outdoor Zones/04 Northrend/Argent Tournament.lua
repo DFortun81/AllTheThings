@@ -695,6 +695,9 @@ _.Zones =
 							i(47180),	-- Argent Warhorse
 							i(46874),	-- Argent Crusader's Tabard
 							i(46843),	-- Argent Crusader's Banner Toy
+              i(47541, { -- Argent Pony Bridle
+                ach(3736), -- Pony Up!
+              }),
 							i(122350),	-- Balanced Heartseeker
 							i(122349),	-- Bloodied Arcanite Reaper
 							i(122389),	-- Bloodsoaked Skullforge Reaver
