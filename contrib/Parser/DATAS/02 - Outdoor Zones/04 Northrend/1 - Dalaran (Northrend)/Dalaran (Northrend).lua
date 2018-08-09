@@ -1709,52 +1709,52 @@ _.Zones =
 						i(40702),	-- Rolfsen's Ripper
 					}),
 					n(32515, { 	-- Braeg Stoutbeard <Fur & Leather Trader>
-						i(44513),	-- Pattern: Eviscerator's Facemask
-						i(44514),	-- Pattern: Eviscerator's Shoulderpads
-						i(44515),	-- Pattern: Eviscerator's Chestguard
-						i(44516),	-- Pattern: Eviscerator's Bindings
-						i(44517),	-- Pattern: Eviscerator's Gauntlets
-						i(44518),	-- Pattern: Eviscerator's Waistguard
-						i(44519),	-- Pattern: Eviscerator's Legguards
-						i(44520),	-- Pattern: Eviscerator's Treads
-						i(44521),	-- Pattern: Overcast Headguard
-						i(44522),	-- Pattern: Overcast Spaulders
-						i(44523),	-- Pattern: Overcast Chestguard
-						i(44524),	-- Pattern: Overcast Bracers
-						i(44525),	-- Pattern: Overcast Handwraps
-						i(44526),	-- Pattern: Overcast Belt
-						i(44527),	-- Pattern: Overcast Leggings
-						i(44528),	-- Pattern: Overcast Boots
-						i(44530),	-- Pattern: Swiftarrow Helm
-						i(44531),	-- Pattern: Swiftarrow Shoulderguards
-						i(44532),	-- Pattern: Swiftarrow Hauberk
-						i(44533),	-- Pattern: Swiftarrow Bracers
-						i(44534),	-- Pattern: Swiftarrow Gauntlets
-						i(44535),	-- Pattern: Swiftarrow Belt
-						i(44536),	-- Pattern: Swiftarrow Leggings
-						i(44537),	-- Pattern: Swiftarrow Boots
-						i(44538),	-- Pattern: Stormhide Crown
-						i(44539),	-- Pattern: Stormhide Shoulders
-						i(44540),	-- Pattern: Stormhide Hauberk
-						i(44541),	-- Pattern: Stormhide Wristguards
-						i(44542),	-- Pattern: Stormhide Grips
-						i(44543),	-- Pattern: Stormhide Belt
-						i(44544),	-- Pattern: Stormhide Legguards
-						i(44545),	-- Pattern: Stormhide Stompers
-						i(44546),	-- Pattern: Giantmaim Legguards
-						i(44547),	-- Pattern: Giantmaim Bracers
-						i(44548),	-- Pattern: Revenant's Breastplate
-						i(44549),	-- Pattern: Revenant's Treads
-						i(44550),	-- Pattern: Trollwoven Spaulders
-						i(44551),	-- Pattern: Trollwoven Girdle
-						i(44552),	-- Pattern: Earthgiving Legguards
 						i(44553),	-- Pattern: Earthgiving Boots
-						i(44584),	-- Pattern: Polar Vest
-						i(44585),	-- Pattern: Polar Cord
-						i(44586),	-- Pattern: Polar Boots
-						i(44587),	-- Pattern: Icy Scale Chestguard
+						i(44552),	-- Pattern: Earthgiving Legguards
+						i(44516),	-- Pattern: Eviscerator's Bindings
+						i(44515),	-- Pattern: Eviscerator's Chestguard
+						i(44513),	-- Pattern: Eviscerator's Facemask
+						i(44517),	-- Pattern: Eviscerator's Gauntlets
+						i(44519),	-- Pattern: Eviscerator's Legguards
+						i(44514),	-- Pattern: Eviscerator's Shoulderpads
+						i(44520),	-- Pattern: Eviscerator's Treads
+						i(44518),	-- Pattern: Eviscerator's Waistguard
+						i(44547),	-- Pattern: Giantmaim Bracers
+						i(44546),	-- Pattern: Giantmaim Legguards	
 						i(44588),	-- Pattern: Icy Scale Belt
 						i(44589),	-- Pattern: Icy Scale Boots
+						i(44587),	-- Pattern: Icy Scale Chestguard
+						i(44526),	-- Pattern: Overcast Belt
+						i(44528),	-- Pattern: Overcast Boots
+						i(44524),	-- Pattern: Overcast Bracers
+						i(44523),	-- Pattern: Overcast Chestguard
+						i(44525),	-- Pattern: Overcast Handwraps
+						i(44521),	-- Pattern: Overcast Headguard
+						i(44527),	-- Pattern: Overcast Leggings
+						i(44522),	-- Pattern: Overcast Spaulders
+						i(44586),	-- Pattern: Polar Boots
+						i(44585),	-- Pattern: Polar Cord
+						i(44584),	-- Pattern: Polar Vest
+						i(44535),	-- Pattern: Swiftarrow Belt
+						i(44537),	-- Pattern: Swiftarrow Boots
+						i(44533),	-- Pattern: Swiftarrow Bracers
+						i(44534),	-- Pattern: Swiftarrow Gauntlets
+						i(44532),	-- Pattern: Swiftarrow Hauberk
+						i(44530),	-- Pattern: Swiftarrow Helm
+						i(44536),	-- Pattern: Swiftarrow Leggings
+						i(44531),	-- Pattern: Swiftarrow Shoulderguards
+						i(44543),	-- Pattern: Stormhide Belt
+						i(44538),	-- Pattern: Stormhide Crown
+						i(44542),	-- Pattern: Stormhide Grips
+						i(44540),	-- Pattern: Stormhide Hauberk
+						i(44544),	-- Pattern: Stormhide Legguards
+						i(44539),	-- Pattern: Stormhide Shoulders
+						i(44545),	-- Pattern: Stormhide Stompers
+						i(44541),	-- Pattern: Stormhide Wristguards
+						i(44548),	-- Pattern: Revenant's Breastplate
+						i(44549),	-- Pattern: Revenant's Treads
+						i(44551),	-- Pattern: Trollwoven Girdle
+						i(44550),	-- Pattern: Trollwoven Spaulders					
 						i(44932),	-- Pattern: Windripper Boots
 						i(44933),	-- Pattern: Windripper Leggings
 					}),
