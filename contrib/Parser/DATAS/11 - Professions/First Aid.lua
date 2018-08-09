@@ -163,7 +163,7 @@ profession(129, { -- First Aid
 				["collectible"] = false,
 				["description"] = "No longer required.",
 			})),
-			un(2, i(6454)),	-- Manual: Strong Anti-Venom  -- TODO: https://www.wowhead.com/item=6454/manual-strong-anti-venom
+			i(6454),	-- Manual: Strong Anti-Venom  -- TODO: https://www.wowhead.com/item=6454/manual-strong-anti-venom
 			un(2, i(16112, {		-- Manual: Heavy Silk Bandage
 				["description"] = "No longer required.",
 			})),
