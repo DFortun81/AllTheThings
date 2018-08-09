@@ -1464,133 +1464,52 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 							i(52735),	-- Formula: Enchant Weapon - Windwalk
 						}),
 					}),
-					n(5565, {	-- Jillian Tanner <Leatherworking Supplies>
-						i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
-							i(75106),	-- Vicious Wyrmhide Bracers
-						}),
-						i(67044, {	-- Pattern: Vicious Wyrmhide Belt
-							i(75117),	-- Vicious Wyrmhide Belt
-						}),
-						i(67046, {	-- Pattern: Vicious Leather Bracers
-							i(75131),	-- Vicious Leather Bracers
-						}),
-						i(67048, {	-- Pattern: Vicious Leather Gloves
-							i(75104),	-- Vicious Leather Gloves
-						}),
-						i(67049, {	-- Pattern: Vicious Charscale Bracers
-							i(75094),	-- Vicious Charscale Bracers
-						}),
-						i(67053, {	-- Pattern: Vicious Charscale Gloves
-							i(75085),	-- Vicious Charscale Gloves
-						}),
-						i(67054, {	-- Pattern: Vicious Dragonscale Bracers
-							i(75114),	-- Vicious Dragonscale Bracers
-						}),
-						i(67055, {	-- Pattern: Vicious Dragonscale Shoulders
-							i(75116),	-- Vicious Dragonscale Shoulders
-						}),
-						i(67056, {	-- Pattern: Vicious Wyrmhide Gloves
-							i(75109),	-- Vicious Wyrmhide Gloves
-						}),
-						i(67058, {	-- Pattern: Vicious Wyrmhide Boots
-							i(75101),	-- Vicious Wyrmhide Boots
-						}),
-						i(67060, {	-- Pattern: Vicious Leather Boots
-							i(75130),	-- Vicious Leather Boots
-						}),
-						i(67062, {	-- Pattern: Vicious Leather Shoulders
-							i(75113),	-- Vicious Leather Shoulders
-						}),
-						i(67063, {	-- Pattern: Vicious Charscale Boots
-							i(75092),	-- Vicious Charscale Boots
-						}),
-						i(67064, {	-- Pattern: Vicious Charscale Belt
-							i(75083),	-- Vicious Charscale Belt
-						}),
-						i(67065, {	-- Pattern: Vicious Dragonscale Boots
-							i(75110),	-- Vicious Dragonscale Boots
-						}),
-						i(67066, {	-- Pattern: Vicious Dragonscale Gloves
-							i(75081),	-- Vicious Dragonscale Gloves
-						}),
-						i(67068, {	-- Pattern: Lightning Lash
-							i(56536),	-- Lightning Lash
-						}),
-						i(67070, {	-- Pattern: Belt of Nefarious Whispers
-							i(56537),	-- Belt of Nefarious Whispers
-						}),
-						i(67072, {	-- Pattern: Stormleather Sash
-							i(56538),	-- Stormleather Sash
-						}),
-						i(67073, {	-- Pattern: Corded Viper Belt
-							i(56539),	-- Corded Viper Belt
-						}),
-						i(67074, {	-- Pattern: Vicious Wyrmhide Shoulders
-							i(75099),	-- Vicious Wyrmhide Shoulders
-						}),
-						i(67075, {	-- Pattern: Vicious Wyrmhide Chest
-							i(75107),	-- Vicious Wyrmhide Chest
-						}),
-						i(67076, {	-- Pattern: Vicious Leather Belt
-							i(75127),	-- Vicious Leather Belt
-						}),
-						i(67077, {	-- Pattern: Vicious Leather Helm
-							i(75105),	-- Vicious Leather Helm
-						}),
-						i(67078, {	-- Pattern: Vicious Charscale Shoulders
-							i(75061),	-- Vicious Charscale Shoulders
-						}),
-						i(67079, {	-- Pattern: Vicious Charscale Legs
-							i(75097),	-- Vicious Charscale Legs
-						}),
-						i(67080, {	-- Pattern: Vicious Dragonscale Belt
-							i(75100),	-- Vicious Dragonscale Belt
-						}),
-						i(67081, {	-- Pattern: Vicious Dragonscale Helm
-							i(75102),	-- Vicious Dragonscale Helm
-						}),
-						i(67082, {	-- Pattern: Razor-Edged Cloak
-							i(56548),	-- Razor-Edged Cloak
-						}),
-						i(67083, {	-- Pattern: Twilight Dragonscale Cloak
-							i(56549),	-- Twilight Dragonscale Cloak
-						}),
-						i(67085, {	-- Pattern: Vicious Wyrmhide Legs
-							i(75080),	-- Vicious Wyrmhide Legs
-						}),
-						i(67086, {	-- Pattern: Vicious Wyrmhide Helm
-							i(75111),	-- Vicious Wyrmhide Helm
-						}),
-						i(67087, {	-- Pattern: Vicious Leather Chest
-							i(75103),	-- Vicious Leather Chest
-						}),
-						i(67089, {	-- Pattern: Vicious Leather Legs
-							i(75112),	-- Vicious Leather Legs
-						}),
-						i(67090, {	-- Pattern: Vicious Charscale Chest
-							i(75084),	-- Vicious Charscale Chest
-						}),
-						i(67091, {	-- Pattern: Vicious Charscale Helm
-							i(75090),	-- Vicious Charscale Helm
-						}),
-						i(67092, {	-- Pattern: Vicious Dragonscale Legs
-							i(75108),	-- Vicious Dragonscale Legs
-						}),
-						i(67093, {	-- Pattern: Vicious Dragonscale Chest
-							i(75115),	-- Vicious Dragonscale Chest
-						}),
-						i(67094, {	-- Pattern: Chestguard of Nature's Fury
-							i(56561),	-- Chestguard of Nature's Fury
-						}),
-						i(67095, {	-- Pattern: Assassin's Chestplate
-							i(56562),	-- Assassin's Chestplate
-						}),
-						i(67096, {	-- Pattern: Twilight Scale Chestguard
-							i(56563),	-- Twilight Scale Chestguard
-						}),
-						i(67100, {	-- Pattern: Dragonkiller Tunic
-							i(56564),	-- Dragonkiller Tunic
-						}),
+					n(5565, { -- Jillian Tanner <Leatherworking Supplies>
+						i(67095), -- Pattern: Assassin's Chestplate
+						i(67070), -- Pattern: Belt of Nefarious Whispers
+						i(67084), -- Pattern: Charscale Leg Armor
+						i(67094), -- Pattern: Chestguard of Nature's Fury
+						i(67073), -- Pattern: Corded Viper Belt
+						i(67100), -- Pattern: Dragonkiller Tunic
+						i(68193), -- Pattern: Dragonscale Leg Armor							
+						i(71721), -- Pattern: Drakehide Leg Armor												
+						i(67068), -- Pattern: Lightning Lash
+						i(67082), -- Pattern: Razor-Edged Cloak
+						i(67072), -- Pattern: Stormleather Sash	
+						i(67083), -- Pattern: Twilight Dragonscale Cloak
+						i(67096), -- Pattern: Twilight Scale Chestguard
+						i(67064), -- Pattern: Vicious Charscale Belt
+						i(67063), -- Pattern: Vicious Charscale Boots	
+						i(67049), -- Pattern: Vicious Charscale Bracers
+						i(67090), -- Pattern: Vicious Charscale Chest
+						i(67053), -- Pattern: Vicious Charscale Gloves
+						i(67091), -- Pattern: Vicious Charscale Helm
+						i(67079), -- Pattern: Vicious Charscale Legs
+						i(67078), -- Pattern: Vicious Charscale Shoulders						
+						i(67080), -- Pattern: Vicious Dragonscale Belt
+						i(67065), -- Pattern: Vicious Dragonscale Boots	
+						i(67054), -- Pattern: Vicious Dragonscale Bracers
+						i(67093), -- Pattern: Vicious Dragonscale Chest
+						i(67066), -- Pattern: Vicious Dragonscale Gloves
+						i(67081), -- Pattern: Vicious Dragonscale Helm
+						i(67092), -- Pattern: Vicious Dragonscale Legs
+						i(67055), -- Pattern: Vicious Dragonscale Shoulders
+						i(67076), -- Pattern: Vicious Leather Belt
+						i(67060), -- Pattern: Vicious Leather Boots	
+						i(67046), -- Pattern: Vicious Leather Bracers
+						i(67087), -- Pattern: Vicious Leather Chest
+						i(67048), -- Pattern: Vicious Leather Gloves
+						i(67077), -- Pattern: Vicious Leather Helm
+						i(67089), -- Pattern: Vicious Leather Legs	
+						i(67062), -- Pattern: Vicious Leather Shoulders
+						i(67044), -- Pattern: Vicious Wyrmhide Belt
+						i(67058), -- Pattern: Vicious Wyrmhide Boots
+						i(67042), -- Pattern: Vicious Wyrmhide Bracers
+						i(67075), -- Pattern: Vicious Wyrmhide Chest	
+						i(67056), -- Pattern: Vicious Wyrmhide Gloves
+						i(67086), -- Pattern: Vicious Wyrmhide Helm
+						i(67085), -- Pattern: Vicious Wyrmhide Legs	
+						i(67074), -- Pattern: Vicious Wyrmhide Shoulders
 					}),
 					n(55684, {	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 						i(66122),	-- Plans: Vicious Pyrium Legguards
@@ -3041,53 +2960,55 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
-							un(40, q(1942, { 		-- Astral Knot Garment
-								un(34, i(9516)),	-- Astral Knot Blouse
-								un(34, i(7511)),	-- Astral Knot Robe
-							})),
-							un(40, q(168, {		-- Collecting Memories
-								un(34, i(2036)),	-- Dusty Mining Gloves
-								un(34, i(2037)),	-- Tunneler's Boots
-							})),
-							un(40, qc1(q(1782, { 	-- Furen's Armor
-								un(34, i(6972)),	-- Fire-Hardened Hauberk
-							}))),
-							un(40, qc1(q(1706, { 	-- Grimand's Armor
-								un(34, i(6971)),	-- Fire Hardened Coif
-							}))),
-							un(34, qc8(q(1941, {	-- Manaweave Robe
-								i(7509),	-- Manaweave Robe	-- NOTE: This item is actually obtainable so we only want to mark the quest as legacy
-							}))),
-							un(40, q(1364, {		-- Mazen's Behest
-								un(34, i(10747)),	-- Teacher's Sash
-								un(34, i(10748)),	-- Wanderlust Boots
-							})),
-							un(40, qc8(q(1861, {	-- Mirror Lake
-								i(7508),	-- Ley Orb
-								i(9513),	-- Ley Staff
-							}))),
-							un(40, q(167, {		-- Oh Brother...
-								un(34, i(1893)),	-- Miner's Revenge
-							})),
-							un(40, q(6187, {		-- Order Must Be Restored
-								un(34, i(16996)),	-- Gorewood Bow
-								un(34, i(16998)),	-- Sacred Protector
-								un(34, i(16997)),	-- Stormrager
-							})),
-							un(40, q(1078, {		-- Retrieval for Mauren
-								un(34, i(6677)),	-- Spellcrafter Wand
-							})),
-							un(40, qc4(q(2206, { 	-- Snatch and Grab
-								un(34, i(7298)),	-- Blade of Cunning
-							}))),
-							un(40, qp164(q(2758, {	-- The Origins of Smithing
-								un(34, i(9367, {	-- Plans: Golden Scale Gauntlets
-									un(8, i(9366)),		-- Golden Scale Gauntlets
+							["groups"] = bubbleDown({["u"] = 40}, {
+								q(1942, { 		-- Astral Knot Garment
+									un(34, i(9516)),	-- Astral Knot Blouse
+									un(34, i(7511)),	-- Astral Knot Robe
+								}),
+								q(168, {		-- Collecting Memories
+									un(34, i(2036)),	-- Dusty Mining Gloves
+									un(34, i(2037)),	-- Tunneler's Boots
+								}),
+								qc1(q(1782, { 	-- Furen's Armor
+									un(34, i(6972)),	-- Fire-Hardened Hauberk
 								})),
-							}))),
-							un(40, qc9(q(397, {	-- You Have Served Us Well
-								un(34, i(3556)),	-- Dread Mage Hat
-							}))),
+								qc1(q(1706, { 	-- Grimand's Armor
+									un(34, i(6971)),	-- Fire Hardened Coif
+								})),
+								un(34, qc8(q(1941, {	-- Manaweave Robe
+									i(7509),	-- Manaweave Robe	-- NOTE: This item is actually obtainable so we only want to mark the quest as legacy
+								}))),
+								q(1364, {		-- Mazen's Behest
+									un(34, i(10747)),	-- Teacher's Sash
+									un(34, i(10748)),	-- Wanderlust Boots
+								}),
+								qc8(q(1861, {	-- Mirror Lake
+									i(7508),	-- Ley Orb
+									i(9513),	-- Ley Staff
+								})),
+								q(167, {		-- Oh Brother...
+									un(34, i(1893)),	-- Miner's Revenge
+								}),
+								q(6187, {		-- Order Must Be Restored
+									un(34, i(16996)),	-- Gorewood Bow
+									un(34, i(16998)),	-- Sacred Protector
+									un(34, i(16997)),	-- Stormrager
+								}),
+								q(1078, {		-- Retrieval for Mauren
+									un(34, i(6677)),	-- Spellcrafter Wand
+								}),	
+								qc4(q(2206, { 	-- Snatch and Grab
+									un(34, i(7298)),	-- Blade of Cunning
+								})),	
+								qp164(q(2758, {	-- The Origins of Smithing
+									un(34, i(9367, {	-- Plans: Golden Scale Gauntlets
+										un(8, i(9366)),		-- Golden Scale Gauntlets
+									})),
+								})),
+								qc9(q(397, {	-- You Have Served Us Well
+									un(34, i(3556)),	-- Dread Mage Hat
+								})),
+							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(112527, { 	-- Doomsayer
