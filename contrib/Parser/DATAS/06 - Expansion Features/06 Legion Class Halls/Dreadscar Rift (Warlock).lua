@@ -7,6 +7,107 @@ _.ExpansionFeatures =
 		["groups"] = {
 			cl(9, { -- Dreadscar Rift -- Warlock
 				["groups"] = {
+					n(-4, {	-- Achievements
+						ach(11298, {	-- A Classy Outfit
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
+									["itemID"] = 139765,		-- Helm
+								},
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
+									["itemID"] = 139770,		-- Bracers
+								},
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
+									["itemID"] = 139764,		-- Gloves
+								},
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
+									["itemID"] = 139766,		-- Leggings
+								},
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
+									["itemID"] = 139767,		-- Chestpiece
+								},
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
+									["itemID"] = 139763,		-- Boots
+								},
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
+									["itemID"] = 139769,		-- Belt
+								},
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
+									["itemID"] = 139768,		-- Shoulders
+								},
+							},
+						}),
+						ach(11136, {	-- An Epic Campaign
+							ach(11135), 	-- A Heroic Campaign
+							ach(10994), 	-- A Glorious Campaign
+						}),
+						ach(11171),		-- Arsenal of Power
+						ach(11222, {	-- Champions of Power
+							ach(11221),		-- Champions Rise
+							ach(11220),		-- Roster of Champions
+						}),
+						ach(10461, {	-- Fighting with Style: Classic
+							crit(1),		-- Recover one of the Pillars of Creation
+							crit(2),		-- Complete the quest, "Light's Charge"
+							crit(3),		-- Complete the first order campaign effort
+						}),
+						ach(10750),		-- Fighting with Style: Hidden
+						ach(10747, {	-- Fighting with Style: Upgraded
+							crit(1),		-- Forged for Battle
+							crit(2),		-- Power Realized
+							crit(3),		-- Part of History
+							crit(4),		-- This Side Up
+						}),
+						ach(10748, {	-- Fighting with Style: Valorous
+							crit(1),		-- Improving on History
+							crit(2),		-- Unleashed Monstrosities
+							crit(3),		-- Keystone Master
+							crit(4),		-- Glory of the Legion Hero
+						}),
+						a(ach(10749, {	-- Fighting with Style: War-torn (Alliance)
+							crit(1),		-- The Prestige
+							crit(2),		-- Crest of Heroism
+							crit(3),		-- Crest of Carnage
+							crit(4),		-- Crest of Devastation
+						})),
+						h(ach(11173, {	-- Fighting with Style: War-torn (Horde)
+							crit(1),		-- The Prestige
+							crit(2),		-- Crest of Heroism
+							crit(3),		-- Crest of Carnage
+							crit(4),		-- Crest of Devastation
+						})),
+						ach(10746),		-- Forged for Battle
+						ach(10460),		-- Hidden Potential
+						ach(10459),		-- Improving on History
+						ach(11213, {	-- Lead a Legion (100)
+							ach(11212),		-- Raise an Army (20)
+							ach(10706),		-- Training the Troops (5)
+						}),
+						ach(11223), 	-- Legendary Research
+						ach(11217, {	-- Many Many Missions, Handle It! (500)
+							ach(11216),		-- So Many Missions (100)
+							ach(11215),		-- Quite a Few Missions (50)
+							ach(11214),		-- Many Missions (10)
+						}),
+						ach(11219),		-- Need Backup
+						a(ach(10743)),	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
+						h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
+					}),
 					n(-497, { 	-- Demonic Offering Class Hall Ability
 						["icon"] = "Interface\\Icons\\ability_warlock_cremation",
 						["description"] = "This class hall ability allows you and two other members to summon a demon that you must kill. As part of the ritual, one of your party members (or you) will be sacrificed, so make sure to Soulstone yourself prior to summoning. Upon killing them they have a chance of dropping these items. This also has a chance to drop the destruction Hidden Appearance item.",

@@ -2,14 +2,6 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
 _.Achievements = 
 {
 	n(-10055, { -- Expansion Features
@@ -73,15 +65,15 @@ _.Achievements =
 						ach(10706),		-- Training the Troops (5)
 					}),
 					ach(11223), 	-- Legendary Research
-					ach(11339),		-- Legion's Bane
+					un(1, ach(11339)),		-- Legion's Bane [Appears this was not introduced but still showing on WoWhead, flagging as NYI and leaving here to be safe]
 					ach(11217, {	-- Many Many Missions, Handle It! (500)
 						ach(11216),		-- So Many Missions (100)
 						ach(11215),		-- Quite a Few Missions (50)
 						ach(11214),		-- Many Missions (10)
 					}),
 					ach(11219),		-- Need Backup
-					a(ach(10743)),	-- The Prestige (Alliance)
-					h(ach(10745)),	-- The Prestige (Horde)
+					a(ach(10743)),	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
+					h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 				},
 			}),
 		},
