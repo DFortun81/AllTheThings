@@ -7723,6 +7723,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	app.DungeonDifficulty = GetDungeonDifficultyID() or 1;
 	app.RaidDifficulty = GetRaidDifficultyID() or 14;
 	app.Spec = GetLootSpecialization();
+	wipe(app.searchCache);
 	if not app.Spec or app.Spec == 0 then
 		local s = GetSpecialization();
 		if s then app.Spec = select(1, GetSpecializationInfo(s)); end
