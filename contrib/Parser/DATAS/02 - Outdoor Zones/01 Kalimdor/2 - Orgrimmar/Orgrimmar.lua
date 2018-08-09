@@ -3481,133 +3481,53 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
 						i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
 					}),
-					n(3366, {	-- Tamar <Leatherworking Supplies>
-						i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
-							i(75106),	-- Vicious Wyrmhide Bracers
-						}),
-						i(67044, {	-- Pattern: Vicious Wyrmhide Belt
-							i(75117),	-- Vicious Wyrmhide Belt
-						}),
-						i(67046, {	-- Pattern: Vicious Leather Bracers
-							i(75131),	-- Vicious Leather Bracers
-						}),
-						i(67048, {	-- Pattern: Vicious Leather Gloves
-							i(75104),	-- Vicious Leather Gloves
-						}),
-						i(67049, {	-- Pattern: Vicious Charscale Bracers
-							i(75094),	-- Vicious Charscale Bracers
-						}),
-						i(67053, {	-- Pattern: Vicious Charscale Gloves
-							i(75085),	-- Vicious Charscale Gloves
-						}),
-						i(67054, {	-- Pattern: Vicious Dragonscale Bracers
-							i(75114),	-- Vicious Dragonscale Bracers
-						}),
-						i(67055, {	-- Pattern: Vicious Dragonscale Shoulders
-							i(75116),	-- Vicious Dragonscale Shoulders
-						}),
-						i(67056, {	-- Pattern: Vicious Wyrmhide Gloves
-							i(75109),	-- Vicious Wyrmhide Gloves
-						}),
-						i(67058, {	-- Pattern: Vicious Wyrmhide Boots
-							i(75101),	-- Vicious Wyrmhide Boots
-						}),
-						i(67060, {	-- Pattern: Vicious Leather Boots
-							i(75130),	-- Vicious Leather Boots
-						}),
-						i(67062, {	-- Pattern: Vicious Leather Shoulders
-							i(75113),	-- Vicious Leather Shoulders
-						}),
-						i(67063, {	-- Pattern: Vicious Charscale Boots
-							i(75092),	-- Vicious Charscale Boots
-						}),
-						i(67064, {	-- Pattern: Vicious Charscale Belt
-							i(75083),	-- Vicious Charscale Belt
-						}),
-						i(67065, {	-- Pattern: Vicious Dragonscale Boots
-							i(75110),	-- Vicious Dragonscale Boots
-						}),
-						i(67066, {	-- Pattern: Vicious Dragonscale Gloves
-							i(75081),	-- Vicious Dragonscale Gloves
-						}),
-						i(67068, {	-- Pattern: Lightning Lash
-							i(56536),	-- Lightning Lash
-						}),
-						i(67070, {	-- Pattern: Belt of Nefarious Whispers
-							i(56537),	-- Belt of Nefarious Whispers
-						}),
-						i(67072, {	-- Pattern: Stormleather Sash
-							i(56538),	-- Stormleather Sash
-						}),
-						i(67073, {	-- Pattern: Corded Viper Belt
-							i(56539),	-- Corded Viper Belt
-						}),
-						i(67074, {	-- Pattern: Vicious Wyrmhide Shoulders
-							i(75099),	-- Vicious Wyrmhide Shoulders
-						}),
-						i(67075, {	-- Pattern: Vicious Wyrmhide Chest
-							i(75107),	-- Vicious Wyrmhide Chest
-						}),
-						i(67076, {	-- Pattern: Vicious Leather Belt
-							i(75127),	-- Vicious Leather Belt
-						}),
-						i(67077, {	-- Pattern: Vicious Leather Helm
-							i(75105),	-- Vicious Leather Helm
-						}),
-						i(67078, {	-- Pattern: Vicious Charscale Shoulders
-							i(75061),	-- Vicious Charscale Shoulders
-						}),
-						i(67079, {	-- Pattern: Vicious Charscale Legs
-							i(75097),	-- Vicious Charscale Legs
-						}),
-						i(67080, {	-- Pattern: Vicious Dragonscale Belt
-							i(75100),	-- Vicious Dragonscale Belt
-						}),
-						i(67081, {	-- Pattern: Vicious Dragonscale Helm
-							i(75102),	-- Vicious Dragonscale Helm
-						}),
-						i(67082, {	-- Pattern: Razor-Edged Cloak
-							i(56548),	-- Razor-Edged Cloak
-						}),
-						i(67083, {	-- Pattern: Twilight Dragonscale Cloak
-							i(56549),	-- Twilight Dragonscale Cloak
-						}),
-						i(67085, {	-- Pattern: Vicious Wyrmhide Legs
-							i(75080),	-- Vicious Wyrmhide Legs
-						}),
-						i(67086, {	-- Pattern: Vicious Wyrmhide Helm
-							i(75111),	-- Vicious Wyrmhide Helm
-						}),
-						i(67087, {	-- Pattern: Vicious Leather Chest
-							i(75103),	-- Vicious Leather Chest
-						}),
-						i(67089, {	-- Pattern: Vicious Leather Legs
-							i(75112),	-- Vicious Leather Legs
-						}),
-						i(67090, {	-- Pattern: Vicious Charscale Chest
-							i(75084),	-- Vicious Charscale Chest
-						}),
-						i(67091, {	-- Pattern: Vicious Charscale Helm
-							i(75090),	-- Vicious Charscale Helm
-						}),
-						i(67092, {	-- Pattern: Vicious Dragonscale Legs
-							i(75108),	-- Vicious Dragonscale Legs
-						}),
-						i(67093, {	-- Pattern: Vicious Dragonscale Chest
-							i(75115),	-- Vicious Dragonscale Chest
-						}),
-						i(67094, {	-- Pattern: Chestguard of Nature's Fury
-							i(56561),	-- Chestguard of Nature's Fury
-						}),
-						i(67095, {	-- Pattern: Assassin's Chestplate
-							i(56562),	-- Assassin's Chestplate
-						}),
-						i(67096, {	-- Pattern: Twilight Scale Chestguard
-							i(56563),	-- Twilight Scale Chestguard
-						}),
-						i(67100, {	-- Pattern: Dragonkiller Tunic
-							i(56564),	-- Dragonkiller Tunic
-						}),
+					n(3366, { -- Tamar <Leatherworking Supplies>
+						i(67095), -- Pattern: Assassin's Chestplate
+						i(67070), -- Pattern: Belt of Nefarious Whispers
+						i(67084), -- Pattern: Charscale Leg Armor
+						i(67094), -- Pattern: Chestguard of Nature's Fury
+						i(67073), -- Pattern: Corded Viper Belt
+						i(67100), -- Pattern: Dragonkiller Tunic
+						i(68193), -- Pattern: Dragonscale Leg Armor							
+						i(71721), -- Pattern: Drakehide Leg Armor
+						i(18731), -- Pattern: Heavy Leather Ball						
+						i(67068), -- Pattern: Lightning Lash
+						i(67082), -- Pattern: Razor-Edged Cloak
+						i(67072), -- Pattern: Stormleather Sash	
+						i(67083), -- Pattern: Twilight Dragonscale Cloak
+						i(67096), -- Pattern: Twilight Scale Chestguard
+						i(67064), -- Pattern: Vicious Charscale Belt
+						i(67063), -- Pattern: Vicious Charscale Boots	
+						i(67049), -- Pattern: Vicious Charscale Bracers
+						i(67090), -- Pattern: Vicious Charscale Chest
+						i(67053), -- Pattern: Vicious Charscale Gloves
+						i(67091), -- Pattern: Vicious Charscale Helm
+						i(67079), -- Pattern: Vicious Charscale Legs
+						i(67078), -- Pattern: Vicious Charscale Shoulders						
+						i(67080), -- Pattern: Vicious Dragonscale Belt
+						i(67065), -- Pattern: Vicious Dragonscale Boots	
+						i(67054), -- Pattern: Vicious Dragonscale Bracers
+						i(67093), -- Pattern: Vicious Dragonscale Chest
+						i(67066), -- Pattern: Vicious Dragonscale Gloves
+						i(67081), -- Pattern: Vicious Dragonscale Helm
+						i(67092), -- Pattern: Vicious Dragonscale Legs
+						i(67055), -- Pattern: Vicious Dragonscale Shoulders
+						i(67076), -- Pattern: Vicious Leather Belt
+						i(67060), -- Pattern: Vicious Leather Boots	
+						i(67046), -- Pattern: Vicious Leather Bracers
+						i(67087), -- Pattern: Vicious Leather Chest
+						i(67048), -- Pattern: Vicious Leather Gloves
+						i(67077), -- Pattern: Vicious Leather Helm
+						i(67089), -- Pattern: Vicious Leather Legs	
+						i(67062), -- Pattern: Vicious Leather Shoulders
+						i(67044), -- Pattern: Vicious Wyrmhide Belt
+						i(67058), -- Pattern: Vicious Wyrmhide Boots
+						i(67042), -- Pattern: Vicious Wyrmhide Bracers
+						i(67075), -- Pattern: Vicious Wyrmhide Chest	
+						i(67056), -- Pattern: Vicious Wyrmhide Gloves
+						i(67086), -- Pattern: Vicious Wyrmhide Helm
+						i(67085), -- Pattern: Vicious Wyrmhide Legs	
+						i(67074), -- Pattern: Vicious Wyrmhide Shoulders
 					}),
 					n(3315, {	-- Tor'phan <Cloth & Leather Armor Merchant>
 						i(12255),	-- Pale Leggings
@@ -3734,135 +3654,135 @@ Legacy				qh( 1436),	-- Alliance Relations
 				n(  -40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							un(40, q(1436,  {  	-- Alliance Relations
+							q(1436,  {  	-- Alliance Relations
 								un(34, i(6744)),	-- Gloves of Kapelan
 								un(34, i(6745)),	-- Swiftrunner Cape
-							})),
-							un(40, qh(3507, {	-- Betrayed
+							}),
+							qh(3507, {	-- Betrayed
 								un(34, i(10709)),	-- Pyrestone Orb
 								un(34, i(11120)),	-- Belgrom's Hammer
-							})),
-							un(40, qc1(q(8920, { 	-- An Earnest Proposal
+							}),
+							qc1(q(8920, { 	-- An Earnest Proposal
 								un(34, i(21996)),	-- Bracers of Heroism
-							}))),
-							un(40, qc2(q(10493, {	-- An Earnest Proposal 
+							})),
+							qc2(q(10493, {	-- An Earnest Proposal 
 								un(34, i(22088)),	-- Soulforge Bracers 
-							}))),
-							un(40, qc3(q(8914, {	-- An Earnest Proposal
+							})),
+							qc3(q(8914, {	-- An Earnest Proposal
 								un(34, i(22011)),	-- Beastmaster's Bindings 						
-							}))),
-							un(40, qc4(q(8917, {	-- An Earnest Proposal
+							})),
+							qc4(q(8917, {	-- An Earnest Proposal
 								un(34, i(22004)),	-- Darkmantle Bracers 
-							}))),
-							un(40, qc5(q(8916, {	-- An Earnest Proposal
+							})),
+							qc5(q(8916, {	-- An Earnest Proposal
 								un(34, i(22079)),	-- Virtuous Bracers 						
-							}))),
-							un(40, qc7(q(8918, {	-- An Earnest Proposal
+							})),
+							qc7(q(8918, {	-- An Earnest Proposal
 								un(34, i(22095)),	-- Bindings of The Five Thunders 						
-							}))),
-							un(40, qc8(q(8915, {	-- An Earnest Proposal
+							})),
+							qc8(q(8915, {	-- An Earnest Proposal
 								un(34, i(22063)),	-- Sorcerer's Bindings 					
-							}))),
-							un(40, qc9(q(8919, {	-- An Earnest Proposal
+							})),
+							qc9(q(8919, {	-- An Earnest Proposal
 								un(34, i(22071)),	-- Deathmist Bracers 						
-							}))),
-							un(40, qc11(q(8913, {	-- An Earnest Proposal
+							})),
+							qc11(q(8913, {	-- An Earnest Proposal
 								un(34, i(22108)),	-- Feralheart Bracers 						
-							}))),
-							un(40, q(4300, {		-- Bone-Bladed Weapons
+							})),
+							q(4300, {		-- Bone-Bladed Weapons
 								un(34, i(11863)),	-- White Bone Shredder
 								un(34, i(11864)),	-- White Bone Spear
-							})),
-							un(40, q(4511, {		-- Calm Before the Storm
+							}),
+							q(4511, {		-- Calm Before the Storm
 								un(34, i(11872)),	-- Eschewal Greaves 
 								un(34, i(11870)),	-- Oblivion Orb 
 								un(34, i(11871)),	-- Snarkshaw Spaulders
-							})),
-							un(40, q(5730, {		-- Hidden Enemies
+							}),
+							q(5730, {		-- Hidden Enemies
 								un(34, i(15424)),	-- Axe of Orgrimmar 
 								un(34, i(15445)),	-- Hammer of Orgrimmar
 								un(34, i(15443)),	-- Kris of Orgrimmar
 								un(34, i(15444)),	-- Staff of Ogrimmar
-							})),
-							un(40, qc1(q(8944, {	-- Just Compensation
+							}),
+							qc1(q(8944, {	-- Just Compensation
 								un(34, i(21994)), 	-- Belt of Heroism
 								un(34, i(21998)), 	-- Gauntlets of Heroism
-							}))),
-							un(40, qc2(q(10495, {	-- Just Compensation
+							})),
+							qc2(q(10495, {	-- Just Compensation
 								un(34, i(22086)), 	-- Soulforge Belt
 								un(34, i(22090)), 	-- Soulforge Gauntlets
-							}))),
-							un(40, qc3(q(8938, {	-- Just Compensation
+							})),
+							qc3(q(8938, {	-- Just Compensation
 								un(34, i(22010)), 	-- Beastmaster's Belt
 								un(34, i(22015)), 	-- Beastmaster's Gloves
-							}))),
-							un(40, qc4(q(8941, {	-- Just Compensation
+							})),
+							qc4(q(8941, {	-- Just Compensation
 								un(34, i(22002)), 	-- Darkmantle Belt
 								un(34, i(22006)), 	-- Darkmantle Gloves
-							}))),
-							un(40, qc5(q(8940, {	-- Just Compensation
+							})),
+							qc5(q(8940, {	-- Just Compensation
 								un(34, i(22078)), 	-- Virtuous Belt 
 								un(34, i(22081)), 	-- Virtuous Gloves
-							}))),
-							un(40, qc7(q(8942, {	-- Just Compensation
+							})),
+							qc7(q(8942, {	-- Just Compensation
 								un(34, i(22098)), 	-- Cord of The Five Thunders
 								un(34, i(22099)), 	-- Gauntlets of The Five Thunders
-							}))),
-							un(40, qc8(q(8939, {	-- Just Compensation
+							})),
+							qc8(q(8939, {	-- Just Compensation
 								un(34, i(22062)), 	-- Sorcerer's Belt 
 								un(34, i(22066)), 	-- Sorcerer's Gloves
-							}))),
-							un(40, qc9(q(8943, {	-- Just Compensation
+							})),
+							qc9(q(8943, {	-- Just Compensation
 								un(34, i(22070)), 	-- Deathmist Belt
 								un(34, i(22077)), 	-- Deathmist Wraps
-							}))),
-							un(40, qc11(q(8927, {	-- Just Compensation
+							})),
+							qc11(q(8927, {	-- Just Compensation
 								un(34, i(22106)), 	-- Feralheart Belt
 								un(34, i(22110)), 	-- Feralheart Gloves
-							}))),
-							un(40, q(3924, {		-- Samophlange Manual
+							})),
+							q(3924, {		-- Samophlange Manual
 								un(34, i(11854)),	-- Samophlange Screwdriver 
 								un(34, i(11855)),	-- Tork Wrench
-							})),
-							un(40, qc1(q(9013, {	-- Saving the Best for Last
+							}),
+							qc1(q(9013, {	-- Saving the Best for Last
 								un(34, i(21997)),	-- Breastplate of Heroism
 								un(34, i(21999)),	-- Helm of Heroism
-							}))),
-							un(40, qc2(q(10499, {	-- Saving the Best for Last 
+							})),
+							qc2(q(10499, {	-- Saving the Best for Last 
 								un(34, i(22089)),	-- Soulforge Breastplate
 								un(34, i(22091)),	-- Soulforge Helm
-							}))),
-							un(40, qc3(q(9008, {	-- Saving the Best for Last 
+							})),
+							qc3(q(9008, {	-- Saving the Best for Last 
 								un(34, i(22013)),	-- Beastmaster's Cap 
 								un(34, i(22060)),	-- Beastmaster's Tunic
-							}))),
-							un(40, qc4(q(9010, {	-- Saving the Best for Last
+							})),
+							qc4(q(9010, {	-- Saving the Best for Last
 								un(34, i(22005)),	-- Darkmantle Cap
 								un(34, i(22009)),	-- Darkmantle Tunic
-							}))),
-							un(40, qc5(q(9009, {	-- Saving the Best for Last
+							})),
+							qc5(q(9009, {	-- Saving the Best for Last
 								un(34, i(22080)),	-- Virtuous Crown 
 								un(34, i(22083)),	-- Virtuous Robe
-							}))),
-							un(40, qc7(q(9011, {	-- Saving the Best for Last
+							})),
+							qc7(q(9011, {	-- Saving the Best for Last
 								un(34, i(22097)),	-- Coif of The Five Thunders 
 								un(34, i(22102)),	-- Vest of The Five Thunders
-							}))),
-							un(40, qc8(q(9014, {	-- Saving the Best for Last
+							})),
+							qc8(q(9014, {	-- Saving the Best for Last
 								un(34, i(22065)),	-- Sorcerer's Crown
 								un(34, i(22069)),	-- Sorcerer's Robes
-							}))),
-							un(40, qc9(q(9012, {	-- Saving the Best for Last
+							})),
+							qc9(q(9012, {	-- Saving the Best for Last
 								un(34, i(22074)),	-- Deathmist Mask 
 								un(34, i(22075)),	-- Deathmist Robe
-							}))),
-							un(40, qc11(q(9007, {	-- Saving the Best for Last
+							})),
+							qc11(q(9007, {	-- Saving the Best for Last
 								un(34, i(22109)),	-- Feralheart Cowl 
 								un(34, i(22113)),	-- Feralheart Vest
-							}))),
-							un(40, qc4(q(1858, { 	-- The Shattered Hand
+							})),
+							qc4(q(1858, { 	-- The Shattered Hand
 								un(34, i(7298)),	-- Blade of Cunning
-							}))),
+							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(112527, { 	-- Doomsayer
