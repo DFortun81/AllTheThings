@@ -229,9 +229,12 @@ _.Zones =
 					n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
 						i(67095), -- Pattern: Assassin's Chestplate
 						i(67070), -- Pattern: Belt of Nefarious Whispers
+						i(67084), -- Pattern: Charscale Leg Armor
 						i(67094), -- Pattern: Chestguard of Nature's Fury
 						i(67073), -- Pattern: Corded Viper Belt
 						i(67100), -- Pattern: Dragonkiller Tunic
+						i(68193), -- Pattern: Dragonscale Leg Armor							
+						i(71721), -- Pattern: Drakehide Leg Armor
 						i(18731), -- Pattern: Heavy Leather Ball						
 						i(67068), -- Pattern: Lightning Lash
 						i(67082), -- Pattern: Razor-Edged Cloak
