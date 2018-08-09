@@ -1,23 +1,26 @@
 -- Leatherworking - Skill ID  165 / Spell ID  2108
 profession(165, { -- Leatherworking
-	n(-160, { 	-- Mounts
+	n(-160, {	-- Mounts
 		i(129962), -- Elderhorn Riding Harness
 		i(108883), -- Riding Harness
 	}),
-	n(-161, { 	-- Toy
+	n(-161, {	-- Toy
 		i(129961), -- Flaming Hoop
 		i(129956), -- Leather Love Seat
 		i(129960), -- Leather Pet Bed
 		i(129958), -- Leather Pet Leash
 	}),
-	tier(1, { -- Classic			
+	tier(1, {	 -- Classic			
 		n(-26, { -- Drops
 			-- Holiday --
 			un(29, i(17722)), -- Pattern: Gloves of the Greatfather (Feast of Winter Veil - Smokywood Pastures Special Gift/Ticking Present)
 			
+			-- Classic --
 			i(4301), -- Pattern: Barbaric Belt
 			i(4297), -- Pattern: Barbaric Gloves
+			i(8390), -- Pattern: Big Voodoo Cloak
 			i(8387), -- Pattern: Big Voodoo Mask
+			i(8389), -- Pattern: Big Voodoo Pants
 			i(8386), -- Pattern: Big Voodoo Robe
 			un(8, i(18517)), -- Pattern: Chromatic Cloak	
 			i(8384), -- Pattern: Comfortable Leather Hat
@@ -30,6 +33,8 @@ profession(165, { -- Leatherworking
 			i(2406), -- Pattern: Fine Leather Boots
 			i(2408), -- Pattern: Fine Leather Gloves
 			i(5972), -- Pattern: Fine Leather Pants	
+			i(15726), -- Pattern: Green Dragonscale Breastplate
+			i(78346), -- Pattern: Green Dragonscale Breastplate
 			i(7450), -- Pattern: Green Whelp Armor
 			i(4299), -- Pattern: Guardian Armor
 			i(4298), -- Pattern: Guardian Belt
@@ -46,12 +51,20 @@ profession(165, { -- Leatherworking
 			i(7288), -- Pattern: Rugged Leather Pants
 			un(8, i(18519)), -- Pattern: Shifting Cloak
 			i(7453), -- Pattern: Swift Boots
+			i(8399), -- Pattern: Tough Scorpid Boots
+			i(72028), -- Pattern: Tough Scorpid Boots
 			i(8397), -- Pattern: Tough Scorpid Bracers
 			i(72026), -- Pattern: Tough Scorpid Bracers
 			i(8395), -- Pattern: Tough Scorpid Breastplate
-			i(72029), -- Pattern: Tough Scorpid Breastplate
+			i(72029), -- Pattern: Tough Scorpid Breastplate			
 			i(8398), -- Pattern: Tough Scorpid Gloves
 			i(72025), -- Pattern: Tough Scorpid Gloves
+			i(8402), -- Pattern: Tough Scorpid Helm
+			i(72033), -- Pattern: Tough Scorpid Helm
+			i(8401), -- Pattern: Tough Scorpid Leggings
+			i(72030), -- Pattern: Tough Scorpid Leggings
+			i(8400), -- Pattern: Tough Scorpid Shoulders
+			i(72027), -- Pattern: Tough Scorpid Shoulders
 			i(8385), -- Pattern: Turtle Scale Gloves			
 			i(2407), -- Pattern: White Leather Jerkin			
 		}),	
@@ -74,6 +87,20 @@ profession(165, { -- Leatherworking
 				},
 				["qg"] = 7852, -- Pratt McGrubben				
 			})),
+			qa(7497, { -- The Journey Has Just Begun
+				["groups"] = {
+					un(1, i(15769)), -- Pattern: Onyxia Scale Cloak
+				},
+				["qg"] = 14394, -- Major Mattingly
+				["sourceQuests"] = {24428}, --A Most Puzzling Circumstance
+			}),
+			qh(7493, { -- The Journey Has Just Begun
+				["groups"] = {
+					un(1, i(15769)), -- Pattern: Onyxia Scale Cloak
+				},
+				["qg"] = 14392, -- Overlord Natoj
+				["sourceQuests"] = {24429}, --A Most Puzzling Circumstance
+			}),
 			un(40, q(2851, { -- Wild Leather Boots (Feralas)
 				["g"] = {
 					un(2, i(8406)), -- Pattern: Wild Leather Boots
@@ -108,28 +135,46 @@ profession(165, { -- Leatherworking
 		n(-15, { -- Recipes
 			recipe(6661), -- Pattern: Barbaric Harness		
 			recipe(7151), -- Pattern: Barbaric Shoulders		
+			recipe(36074), -- Pattern: Blackstorm Leggings		
+			recipe(226115), -- Pattern: Blue Chain Leggings
+			recipe(24654), -- Pattern: Blue Dragonscale Leggings
+			recipe(226119), -- Pattern: Chain Belt			
+			recipe(226113), -- Pattern: Chain Boots		
+			recipe(226116), -- Pattern: Chain Bracers		
+			recipe(226118), -- Pattern: Chain Gauntlets		
+			recipe(226112), -- Pattern: Chain Hauberk		
+			recipe(226117), -- Pattern: Chain Leggings		
+			recipe(226121), -- Pattern: Chain Pauldrons
+			recipe(226114), -- Pattern: Crackling Scale Breastplate
 			recipe(3818), -- Pattern: Cured Heavy Hide			
 			recipe(3816), -- Pattern: Cured Light Hide			
 			recipe(3817), -- Pattern: Cured Medium Hide			
+			recipe(19047), -- Pattern: Cured Rugged Hide		
 			recipe(10482), -- Pattern: Cured Thick Hide			
 			recipe(3766), -- Pattern: Dark Leather Belt		
 			recipe(2167), -- Pattern: Dark Leather Boots		
 			recipe(2168), -- Pattern: Dark Leather Cloak			
 			recipe(7135), -- Pattern: Dark Leather Pants
+			recipe(10650), -- Pattern: Dragonscale Breastplate
 			recipe(10619), -- Pattern: Dragonscale Gauntlets
+			recipe(36076), -- Pattern: Dragonstrike Leggings
 			recipe(9206), -- Pattern: Dusky Belt
 			recipe(9201), -- Pattern: Dusky Bracers
 			recipe(9196), -- Pattern: Dusky Leather Armor			
+			recipe(226122), -- Pattern: Element Grips			
 			recipe(2161), -- Pattern: Embossed Leather Boots			
 			recipe(2162), -- Pattern: Embossed Leather Cloak
 			recipe(3756), -- Pattern: Embossed Leather Gloves
 			recipe(3759), -- Pattern: Embossed Leather Pants
 			recipe(2160), -- Pattern: Embossed Leather Vest
+			recipe(10647), -- Pattern: Feathered Breastplate
 			recipe(3763), -- Pattern: Fine Leather Belt
 			recipe(2159), -- Pattern: Fine Leather Cloak
 			recipe(3761), -- Pattern: Fine Leather Tunic
 			recipe(9145), -- Pattern: Fletcher's Gloves
 			recipe(9198), -- Pattern: Frost Leather Cloak
+			recipe(10630), -- Pattern: Gauntlets of the Sea
+			recipe(24655), -- Pattern: Green Dragonscale Gauntlets
 			recipe(3774), -- Pattern: Green Leather Belt
 			recipe(3776), -- Pattern: Green Leather Bracers
 			recipe(7156), -- Pattern: Guardian Gloves				
@@ -142,6 +187,15 @@ profession(165, { -- Leatherworking
 			recipe(7126), -- Pattern: Handstitched Leather Vest
 			recipe(3780), -- Pattern: Heavy Armor Kit
 			recipe(20649), -- Pattern: Heavy Leather				
+			recipe(226132), -- Pattern: Heavy Scale Belt				
+			recipe(226134), -- Pattern: Heavy Scale Boots				
+			recipe(226123), -- Pattern: Heavy Scale Gauntlets			
+			recipe(226135), -- Pattern: Heavy Scale Hood				
+			recipe(226126), -- Pattern: Heavy Scale Pants				
+			recipe(226129), -- Pattern: Heavy Scale Pauldrons				
+			recipe(226128), -- Pattern: Heavy Scale Shirt				
+			recipe(226124), -- Pattern: Heavy Scale Wraps				
+			recipe(10632), -- Pattern: Helm of Fire				
 			recipe(3760), -- Pattern: Hillman's Cloak			
 			recipe(3764), -- Pattern: Hillman's Leather Gloves			
 			recipe(3768), -- Pattern: Hillman's Shoulders			
@@ -149,18 +203,53 @@ profession(165, { -- Leatherworking
 			recipe(2881), -- Pattern: Light Leather
 			recipe(9065), -- Pattern: Light Leather Bracers		
 			recipe(9068), -- Pattern: Light Leather Pants		
+			recipe(226107), -- Pattern: Light Scale Belt	
+			recipe(226109), -- Pattern: Light Scale Boots		
+			recipe(226106), -- Pattern: Light Scale Bracers		
+			recipe(226105), -- Pattern: Light Scale Gloves		
+			recipe(226108), -- Pattern: Light Scale Jerkin		
+			recipe(226111), -- Pattern: Light Scale Pants		
 			recipe(2165), -- Pattern: Medium Armor Kit		
-			recipe(20648), -- Pattern: Medium Leather		
-			recipe(9074), -- Pattern: Nimble Leather Gloves
+			recipe(20648), -- Pattern: Medium Leather			
+			recipe(10558), -- Pattern: Nightscape Boots
 			recipe(10507), -- Pattern: Nightscape Headband
+			recipe(10548), -- Pattern: Nightscape Pants
 			recipe(10499), -- Pattern: Nightscape Tunic
+			recipe(9074), -- Pattern: Nimble Leather Gloves
+			recipe(19102), -- Pattern: Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
+			recipe(19072), -- Pattern: Runic Leather Belt (Trainable now, old Pattern id 15745 used to teach this.)
+			recipe(19065), -- Pattern: Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
+			recipe(19055), -- Pattern: Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
+			recipe(19082), -- Pattern: Runic Leather Headband (Trainable now, old Pattern id 15756 used to teach this.)
+			recipe(19091), -- Pattern: Runic Leather Pants (Trainable now, old Pattern id 15765 used to teach this.)
+			recipe(19103), -- Pattern: Runic Leather Shoulders (Trainable now, old Pattern id 15777 used to teach this.)
+			recipe(19058), -- Pattern: Rugged Armor Kit
+			recipe(22331), -- Pattern: Rugged Leather
+			recipe(226110), -- Pattern: Shamanic Treads
+			recipe(226137), -- Pattern: Spritescale Boots
+			recipe(226125), -- Pattern: Spritescale Britches
+			recipe(226127), -- Pattern: Spritescale Cinch
+			recipe(226136), -- Pattern: Spritescale Circlet
+			recipe(226120), -- Pattern: Spritescale Epaulets
+			recipe(226131), -- Pattern: Spritescale Gloves
+			recipe(226130), -- Pattern: Spritescale Jerkin
+			recipe(226133), -- Pattern: Spritescale Wraps
 			recipe(10487), -- Pattern: Thick Armor Kit			
 			recipe(20650), -- Pattern: Thick Leather			
 			recipe(2166), -- Pattern: Toughened Leather Armor	
-			recipe(3770), -- Pattern: Toughened Leather Gloves	
-			recipe(10518), -- Turtle Scale Bracers	
-			recipe(10511), -- Turtle Scale Breastplate
-			recipe(10621), -- Wolfshead Helm
+			recipe(3770), -- Pattern: Toughened Leather Gloves			
+			recipe(10518), -- Pattern: Turtle Scale Bracers	
+			recipe(10511), -- Pattern: Turtle Scale Breastplate
+			recipe(10552), -- Pattern: Turtle Scale Helm
+			recipe(10556), -- Pattern: Turtle Scale Leggings
+			recipe(19098), -- Pattern: Wicked Leather Armor (Trainable now, old Pattern id 15773 used to teach this.)
+			recipe(19092), -- Pattern: Wicked Leather Belt (Trainable now, old Pattern id 15768 used to teach this.)
+			recipe(19052), -- Pattern: Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
+			recipe(19049), -- Pattern: Wicked Leather Gauntlets (Trainable now, old Pattern id 15725 used to teach this.)
+			recipe(19071), -- Pattern: Wicked Leather Headband (Trainable now, old Pattern id 15744 used to teach this.)
+			recipe(19083), -- Pattern: Wicked Leather Pants (Trainable now, old Pattern id 15757 used to teach this.)
+			recipe(36075), -- Pattern: Wildfeather Leggings
+			recipe(10621), -- Pattern: Wolfshead Helm
 		}),
 		n(-2, { -- Vendors
 			i(67095), -- Pattern: Assassin's Chestplate
@@ -176,6 +265,8 @@ profession(165, { -- Leatherworking
 			i(7613), -- Pattern: Green Leather Armor
 			i(7451), -- Pattern: Green Whelp Bracer
 			i(18731), -- Pattern: Heavy Leather Ball
+			i(15724), -- Pattern: Heavy Scorpid Bracers
+			i(15762), -- Pattern: Heavy Scorpid Helm
 			i(7361), -- Pattern: Herbalist's Gloves
 			i(8409), -- Pattern: Nightscape Shoulders		
 			i(13288), -- Pattern: Raptor Hide Belt
@@ -183,8 +274,7 @@ profession(165, { -- Leatherworking
 			i(7290), -- Pattern: Red Whelp Gloves
 			i(18239), -- Pattern: Shadowskin Gloves
 			i(5788), -- Pattern: Thick Murloc Armor			
-		}),
-		
+		}),		
 		nld({		-- Legacy			
 			n(-44, { 	-- Leather
 				un(8, i(19688)),	-- Blood Tiger Breastplate
@@ -220,12 +310,7 @@ profession(165, { -- Leatherworking
 				un(8, i(18508)),	-- Swift Flight Bracers
 			}),
 		}),
-		n(-322, { 	-- Cloak
-			i(8216),	-- Big Voodoo Cloak							
-			i(15138),	-- Onyxia Scale Cloak
-		}),
-		n(-44, { 	-- Leather					
-			i(8202),	-- Big Voodoo Pants				
+		n(-44, { 	-- Leather
 			i(22761),	-- Bramblewood Belt
 			i(22760),	-- Bramblewood Boots
 			i(22759),	-- Bramblewood Helm
@@ -237,17 +322,13 @@ profession(165, { -- Leatherworking
 			i(19052),	-- Dawn Treaders
 			i(15063),	-- Devilsaur Gauntlets
 			i(15062),	-- Devilsaur Leggings		
-			i(7390),	-- Dusky Boots											
-			i(8349),	-- Feathered Breastplate					
+			i(7390),	-- Dusky Boots							
 			i(15071),	-- Frostsaber Boots
 			i(15070),	-- Frostsaber Gloves
 			i(15069),	-- Frostsaber Leggings
-			i(15068),	-- Frostsaber Tunic
-			un(29,i(17721)),	-- Gloves of the Greatfather
-			i(8346),	-- Gauntlets of the Sea			
+			i(15068),	-- Frostsaber Tunic					
 			i(19058),	-- Golden Mantle of the Dawn
-			i(7386),	-- Green Whelp Bracers								
-			i(8348),	-- Helm of Fire							
+			i(7386),	-- Green Whelp Bracers									
 			i(15066),	-- Ironfeather Breastplate
 			i(15067),	-- Ironfeather Shoulders
 			i(19149),	-- Lava Belt		
@@ -255,60 +336,65 @@ profession(165, { -- Leatherworking
 			i(19044),	-- Might of the Timbermaw
 			i(19163),	-- Molten Belt
 			i(16983),	-- Molten Helm				
-			i(5783),	-- Murloc Scale Bracers			
-			i(8197),	-- Nightscape Boots			
-			i(8193),	-- Nightscape Pants											
-			i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
-			i(15093),	-- Runic Leather Belt (Trainable now, old Pattern id 15745 used to teach this.)
-			i(15092),	-- Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
-			i(15091),	-- Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
-			i(15094),	-- Runic Leather Headband (Trainable now, old Pattern id 15756 used to teach this.)
-			i(15095),	-- Runic Leather Pants (Trainable now, old Pattern id 15765 used to teach this.)
-			i(15096),	-- Runic Leather Shoulders (Trainable now, old Pattern id 15777 used to teach this.)			
+			i(5783),	-- Murloc Scale Bracers						
 			i(15057),	-- Stormshroud Pants			
 			i(19049),	-- Timbermaw Brawlers					
 			i(15053),	-- Volcanic Breastplate
 			i(15054),	-- Volcanic Leggings
 			i(15055),	-- Volcanic Shoulders
 			i(15064),	-- Warbear Harness
-			i(15065),	-- Warbear Woolies			
-			i(15085),	-- Wicked Leather Armor (Trainable now, old Pattern id 15773 used to teach this.)
-			i(15088),	-- Wicked Leather Belt (Trainable now, old Pattern id 15768 used to teach this.)
-			i(15084),	-- Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
-			i(15083),	-- Wicked Leather Gauntlets (Trainable now, old Pattern id 15725 used to teach this.)
-			i(15086),	-- Wicked Leather Headband (Trainable now, old Pattern id 15744 used to teach this.)
-			i(15087),	-- Wicked Leather Pants (Trainable now, old Pattern id 15757 used to teach this.)
+			i(15065),	-- Warbear Woolies		
 		}),
 		n(-45, { 	-- Mail
 			i(16984),	-- Black Dragonscale Boots
 			i(15050),	-- Black Dragonscale Breastplate
 			i(15052),	-- Black Dragonscale Leggings
-			i(15051),	-- Black Dragonscale Shoulders
-			i(20295),	-- Blue Dragonscale Leggings
-			i(8367),	-- Dragonscale Breastplate
+			i(15051),	-- Black Dragonscale Shoulders			
 			i(20380),	-- Dreamscale Breastplate			
-			i(15045),	-- Green Dragonscale Breastplate
-			i(20296),	-- Green Dragonscale Gauntlets
 			i(15046),	-- Green Dragonscale Leggings
-			i(15082),	-- Heavy Scorpid Belt
-			i(15077),	-- Heavy Scorpid Bracers
-			i(15080),	-- Heavy Scorpid Helm
+			i(15082),	-- Heavy Scorpid Belt			
 			i(20476),	-- Sandstalker Bracers
 			i(20478),	-- Sandstalker Breastplate
 			i(20477),	-- Sandstalker Gauntlets
 			i(20481),	-- Spitfire Bracers
 			i(20479),	-- Spitfire Breastplate
-			i(20480),	-- Spitfire Gauntlets
-			i(8205),	-- Tough Scorpid Bracers
-			i(8203),	-- Tough Scorpid Breastplate			
-			i(8208),	-- Tough Scorpid Helm
-			i(8206),	-- Tough Scorpid Leggings
-			i(8207),	-- Tough Scorpid Shoulders					
-			i(8191),	-- Turtle Scale Helm
-			i(8185),	-- Turtle Scale Leggings
+			i(20480),	-- Spitfire Gauntlets						
 		}),
 	}),
 	tier(2, { 	-- The Burning Crusade
+		n(-26, { -- Drops
+			-- Holiday --			
+						
+			-- The Burning Crusade --
+		}),	
+		n(-17, { -- Quests
+		}),	
+		n(-15, { -- Recipes
+			recipe(163231), -- Pattern: Cobra Scales
+			recipe(32482), -- Pattern: Comfortable Insoles
+			recipe(163226), -- Pattern: Crystal Infused Leather
+			recipe(163229), -- Pattern: Fel Hide
+			recipe(163228), -- Pattern: Fel Scales
+			recipe(32463), -- Pattern: Felscale Boots
+			recipe(32465), -- Pattern: Felscale Breastplate
+			recipe(32462), -- Pattern: Felscale Gloves
+			recipe(32464), -- Pattern: Felscale Pants
+			recipe(45100), -- Pattern: Leatherworker's Satchel
+			recipe(32469), -- Scaled Draenic Boots
+			recipe(32467), -- Scaled Draenic Gloves
+			recipe(32466), -- Scaled Draenic Pants
+			recipe(32468), -- Scaled Draenic Vest
+			recipe(32472), -- Thick Draenic Boots
+			recipe(32470), -- Thick Draenic Gloves
+			recipe(32471), -- Thick Draenic Pants
+			recipe(32473), -- Thick Draenic Vest
+			recipe(32478), -- Wild Draenish Boots
+			recipe(32479), -- Wild Draenish Gloves
+			recipe(32480), -- Wild Draenish Leggings
+			recipe(32481), -- Wild Draenish Boots
+		}),	
+		n(-2, { -- Vendors
+		}),			
 		nld({ 		-- Legacy
 			n(-44, { 	-- Leather
 				un(5, i(29526)),	-- Primalstrike Belt
@@ -332,8 +418,7 @@ profession(165, { -- Leatherworking
 		}),
 		n(-44, { 	-- Leather
 			i(30040),	-- Belt of Deep Shadow
-			i(30042),	-- Belt of Natural Power
-			i(29964),	-- Blackstorm Leggings
+			i(30042),	-- Belt of Natural Power			
 			i(29500),	-- Blastguard Belt
 			i(29499),	-- Blastguard Boots
 			i(29498),	-- Blastguard Pants
@@ -368,16 +453,7 @@ profession(165, { -- Leatherworking
 			i(25682),	-- Stylin' Jungle Hat
 			i(25680),	-- Stylin' Purple Hat
 			i(32580),	-- Swiftstrike Bracers
-			i(32581),	-- Swiftstrike Shoulders
-			i(25668),	-- Thick Draenic Boots
-			i(25669),	-- Thick Draenic Gloves
-			i(25670),	-- Thick Draenic Pants
-			i(25671),	-- Thick Draenic Vest
-			i(25673),	-- Wild Draenish Boots
-			i(25674),	-- Wild Draenish Gloves
-			i(25675),	-- Wild Draenish Leggings
-			i(25676),	-- Wild Draenish Vest
-			i(29970),	-- Wildfeather Leggings
+			i(32581),	-- Swiftstrike Shoulders						
 			i(29504),	-- Windscale Hood
 			i(29507),	-- Windslayer Wraps
 		}),
@@ -386,17 +462,12 @@ profession(165, { -- Leatherworking
 			i(32574),	-- Bindings of Lightning Reflexes
 			i(32398),	-- Boots of Shackled Souls
 			i(30045),	-- Boots of the Crimson Hawk
-			i(32399),	-- Bracers of Shackled Souls
-			i(29971),	-- Dragonstrike Leggings
+			i(32399),	-- Bracers of Shackled Souls			
 			i(29512),	-- Earthen Netherscale Boots
 			i(34373),	-- Embrace of the Phoenix
 			i(29491),	-- Enchanted Felscale Boots
 			i(29490),	-- Enchanted Felscale Gloves
-			i(29489),	-- Enchanted Felscale Leggings
-			i(25655),	-- Felscale Boots
-			i(25657),	-- Felscale Breastplate
-			i(25654),	-- Felscale Gloves
-			i(25656),	-- Felscale Pants
+			i(29489),	-- Enchanted Felscale Leggings			
 			i(25695),	-- Felstalker Belt
 			i(25697),	-- Felstalker Bracers
 			i(25696),	-- Felstalker Breastplate
@@ -414,11 +485,7 @@ profession(165, { -- Leatherworking
 			i(29510),	-- Netherdrake Helm
 			i(25694),	-- Netherfury Belt
 			i(25693),	-- Netherfury Boots
-			i(25692),	-- Netherfury Leggings
-			i(25659),	-- Scaled Draenic Boots
-			i(25661),	-- Scaled Draenic Gloves
-			i(25662),	-- Scaled Draenic Pants
-			i(25660),	-- Scaled Draenic Vest
+			i(25692),	-- Netherfury Leggings		
 			i(32575),	-- Shoulders of Lightning Reflexes
 			i(25681),	-- Stylin' Adventure Hat
 			i(25683),	-- Stylin' Crimson Hat
@@ -430,10 +497,23 @@ profession(165, { -- Leatherworking
 		}),
 	}),
 	tier(3, { 	-- Wrath of the Lich King
+		n(-26, { -- Drops
+			-- Holiday --			
+						
+			-- Wrath of the Lich King --
+		}),	
+		n(-17, { -- Quests			
+		}),	
+		n(-15, { -- Recipes
+			recipe(60640), -- Pattern: Durable Nerubhide Cape
+			recipe(62448), -- Pattern: Earthen Leg Armor
+			recipe(50965), -- Pattern: Frosthide Leg Armor
+		}),	
+		n(-2, { -- Vendors			
+		}),
 		n(-322, { 	-- Cloak
 			i(38441),	-- Cloak of Harsh Winds
-			i(41238),	-- Cloak of Tormented Skies
-			i(43565),	-- Durable Nerubhide Cape
+			i(41238),	-- Cloak of Tormented Skies			
 			i(43566),	-- Ice Striker's Cloak
 		}),
 		n(-44, { 	-- Leather
@@ -501,8 +581,7 @@ profession(165, { -- Leatherworking
 			i(43258),	-- Purehorn Spaulders
 			i(43255),	-- Seafoam Gauntlets
 			i(43484),	-- Trollwoven Girdle
-			i(43481),	-- Trollwoven Spaulders
-			i(29970),	-- Wildfeather Leggings
+			i(43481),	-- Trollwoven Spaulders			
 			i(43257),	-- Wildscale Breastplate
 			i(44930),	-- Windripper Boots
 			i(44931),	-- Windripper Leggings
@@ -577,6 +656,26 @@ profession(165, { -- Leatherworking
 		}),
 	}),
 	tier(4, { 	-- Cataclysm
+		--[[n(-26, { -- Drops
+			-- Holiday --
+						
+			-- Cataclysm --
+			i(4301), -- Pattern: Barbaric Belt
+		}),	
+		n(-17, { -- Quests
+			qh(769, { -- Kodo Hide Bag (Thunder Bluff)
+				["g"] = {
+					i(5083), -- Pattern: Kodo Hide Bag
+				},
+				["qg"] = 3050, -- Veren Tallstrider				
+			}),
+		}),	
+		n(-15, { -- Recipes
+			recipe(32482), -- Pattern: Comfortable Insoles
+		}),	
+		n(-2, { -- Vendors
+			i(67095), -- Pattern: Assassin's Chestplate
+		}),]]--
 		n(-322, { 	-- Cloak
 			i(56518),	-- Cloak of Beasts
 			i(56519),	-- Cloak of War
@@ -665,6 +764,26 @@ profession(165, { -- Leatherworking
 		}),
 	}),
 	tier(5, { 	-- Mists of Pandaria
+		--[[n(-26, { -- Drops
+			-- Holiday --
+						
+			-- Mists of Pandaria --
+			i(4301), -- Pattern: Barbaric Belt
+		}),	
+		n(-17, { -- Quests
+			qh(769, { -- Kodo Hide Bag (Thunder Bluff)
+				["g"] = {
+					i(5083), -- Pattern: Kodo Hide Bag
+				},
+				["qg"] = 3050, -- Veren Tallstrider				
+			}),
+		}),	
+		n(-15, { -- Recipes
+			recipe(32482), -- Pattern: Comfortable Insoles
+		}),	
+		n(-2, { -- Vendors
+			i(67095), -- Pattern: Assassin's Chestplate
+		}),]]--
 		n(-322, { 	-- Cloak
 			i(85851),	-- Misthide Drape
 			i(85852),	-- Quick Strike Cloak
@@ -920,6 +1039,26 @@ profession(165, { -- Leatherworking
 		}),
 	}),
 	tier(6, { 	-- Warlords of Draenor
+		--[[n(-26, { -- Drops
+			-- Holiday --
+						
+			-- Warlords of Draenor --
+			i(4301), -- Pattern: Barbaric Belt
+		}),	
+		n(-17, { -- Quests
+			qh(769, { -- Kodo Hide Bag (Thunder Bluff)
+				["g"] = {
+					i(5083), -- Pattern: Kodo Hide Bag
+				},
+				["qg"] = 3050, -- Veren Tallstrider				
+			}),
+		}),	
+		n(-15, { -- Recipes
+			recipe(32482), -- Pattern: Comfortable Insoles
+		}),	
+		n(-2, { -- Vendors
+			i(67095), -- Pattern: Assassin's Chestplate
+		}),]]--
 		n(-322, { 	-- Cloak
 			i(128014, { -- Burnished Essence
 				WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak
@@ -959,6 +1098,19 @@ profession(165, { -- Leatherworking
 		}),
 	}),
 	tier(7, { 	-- Legion
+		n(-26, { -- Drops
+			-- Holiday --
+
+			-- Legion --
+		}),	
+		n(-17, { -- Quests			
+		}),	
+		n(-15, { -- Recipes
+			recipe(239413), -- Pattern: The Sentinel's Eternal Refuge
+			recipe(239414), -- Pattern: Vigilance Perch
+		}),	
+		n(-2, { -- Vendors			
+		}),
 		n(-349, { 	-- Cosmetic		
 			un(29, i(151791)),	-- Winter Boots
 		}),
@@ -971,8 +1123,7 @@ profession(165, { -- Leatherworking
 			i(128890),	-- Dreadleather Belt
 			i(128888),	-- Dreadleather Pants
 			i(128885),	-- Dreadleather Footpads
-			i(151577),	-- Fiendish Shoulderguards
-			i(146669),	-- The Sentinel's Eternal Refuge
+			i(151577),	-- Fiendish Shoulderguards			
 			i(128879),	-- Warhide Mask
 			i(128881),	-- Warhide Shoulderguard
 			i(128876),	-- Warhide Jerkin
@@ -990,16 +1141,7 @@ profession(165, { -- Leatherworking
 			i(128894),	-- Battlebound Grips
 			i(128898),	-- Battlebound Girdle
 			i(128896),	-- Battlebound Leggings
-			i(128893),	-- Battlebound Treads
-			i(132547),	-- Blue Chain Leggings
-			i(132498),	-- Chain Pauldrons
-			i(132493),	-- Chain Hauberk
-			i(132496),	-- Chain Bracers
-			i(132499),	-- Chain Gauntlets
-			i(132495),	-- Chain Belt
-			i(132497),	-- Chain Leggings
-			i(132494),	-- Chain Boots
-			i(132545),	-- Crackling Scale Breastplate
+			i(128893),	-- Battlebound Treads			
 			i(132546),	-- Element Grips
 			i(151578),	-- Fiendish Spaulders
 			i(128903),	-- Gravenscale Warhelm
@@ -1009,33 +1151,37 @@ profession(165, { -- Leatherworking
 			i(128902),	-- Gravenscale Grips
 			i(128906),	-- Gravenscale Girdle
 			i(128904),	-- Gravenscale Leggings
-			i(128901),	-- Gravenscale Treads
-			i(132536),	-- Heavy Scale Hood
+			i(128901),	-- Gravenscale Treads			
 			i(132535),	-- Heavy Scale Pauldrons
-			i(132520),	-- Heavy Scale Shirt
-			i(132534),	-- Heavy Scale Wraps
+			i(132520),	-- Heavy Scale Shirt			
 			i(132533),	-- Heavy Scale Gauntlets
 			i(132522),	-- Heavy Scale Belt
 			i(132532),	-- Heavy Scale Pants
-			i(132521),	-- Heavy Scale Boots
-			i(132487),	-- Light Scale Jerkin
-			i(132491),	-- Light Scale Bracers
-			i(132490),	-- Light Scale Gloves
-			i(132489),	-- Light Scale Belt
-			i(132492),	-- Light Scale Pants
-			i(132488),	-- Light Scale Boots
-			i(132548),	-- Shamanic Treads
-			i(132537),	-- Spritescale Circlet
-			i(132543),	-- Spritescale Epaulets
-			i(132538),	-- Spritescale Jerkin
-			i(132541),	-- Spritescale Wraps
-			i(132540),	-- Spritescale Gloves
-			i(132539),	-- Spritescale Cinch
-			i(132542),	-- Spritescale Britches
-			i(132544),	-- Spritescale Boots
-			i(146668),	-- Vigilance Perch
+			i(132521),	-- Heavy Scale Boots			
 		}),
 	}),
+	--[[tier(8, { 	-- Battle for Azeroth
+		n(-26, { -- Drops
+			-- Holiday --
+						
+			-- Battle for Azeroth --
+			i(4301), -- Pattern: Barbaric Belt
+		}),	
+		n(-17, { -- Quests
+			qh(769, { -- Kodo Hide Bag (Thunder Bluff)
+				["g"] = {
+					i(5083), -- Pattern: Kodo Hide Bag
+				},
+				["qg"] = 3050, -- Veren Tallstrider				
+			}),
+		}),	
+		n(-15, { -- Recipes
+			recipe(32482), -- Pattern: Comfortable Insoles
+		}),	
+		n(-2, { -- Vendors
+			i(67095), -- Pattern: Assassin's Chestplate
+		}),
+	}),]]--	
 	n(-100002, { -- PLACE_HOLDER	
 		i(86235),	-- Pattern: Angerhide Leg Armor		
 		i(34491),	-- Pattern: Bag of Many Hides			
@@ -1046,9 +1192,7 @@ profession(165, { -- Leatherworking
 		i(45094),	-- Pattern: Belt of Dragons
 		i(30301),	-- Pattern: Belt of Natural Power
 		i(67070),	-- Pattern: Belt of Nefarious Whispers
-		i(30303),	-- Pattern: Belt of the Black Eagle
-		i(8390),	-- Pattern: Big Voodoo Cloak		
-		i(8389),	-- Pattern: Big Voodoo Pants
+		i(30303),	-- Pattern: Belt of the Black Eagle			
 		i(32748),	-- Pattern: Bindings of Lightning Reflexes
 		i(47629),	-- Pattern: Black Chitin Bracers
 		i(47646),	-- Pattern: Black Chitin Bracers
@@ -1215,9 +1359,7 @@ profession(165, { -- Leatherworking
 		i(35303),	-- Pattern: Gloves of the Living Touch
 		i(69961),	-- Pattern: Gloves of Unforgiving Flame
 		i(19329),	-- Pattern: Golden Mantle of the Dawn
-		i(32431),	-- Pattern: Greaves of Shackled Souls
-		i(78346),	-- Pattern: Green Dragonscale Breastplate
-		i(15726),	-- Pattern: Green Dragonscale Breastplate
+		i(32431),	-- Pattern: Greaves of Shackled Souls		
 		i(78345),	-- Pattern: Green Dragonscale Leggings
 		i(15733),	-- Pattern: Green Dragonscale Leggings				
 		i(86274),	-- Pattern: Greyshadow Chestguard
@@ -1228,10 +1370,8 @@ profession(165, { -- Leatherworking
 		i(25736),	-- Pattern: Heavy Clefthoof Leggings
 		i(25735),	-- Pattern: Heavy Clefthoof Vest	
 		i(25720),	-- Pattern: Heavy Knothide Leather	
-		i(15743),	-- Pattern: Heavy Scorpid Belt
-		i(15724),	-- Pattern: Heavy Scorpid Bracers
-		i(15738),	-- Pattern: Heavy Scorpid Gauntlets
-		i(15762),	-- Pattern: Heavy Scorpid Helm
+		i(15743),	-- Pattern: Heavy Scorpid Belt		
+		i(15738),	-- Pattern: Heavy Scorpid Gauntlets		
 		i(15748),	-- Pattern: Heavy Scorpid Leggings
 		i(15774),	-- Pattern: Heavy Scorpid Shoulders
 		i(15727),	-- Pattern: Heavy Scorpid Vest				
@@ -1319,13 +1459,7 @@ profession(165, { -- Leatherworking
 		i(44549),	-- Pattern: Revenant's Treads
 		i(25725),	-- Pattern: Riding Crop
 		i(49966),	-- Pattern: Rock-Steady Treads
-		i(70174),	-- Pattern: Royal Scribe's Satchel			
-		i(15745),	-- Pattern: Runic Leather Belt
-		i(15739),	-- Pattern: Runic Leather Bracers
-		i(15731),	-- Pattern: Runic Leather Gauntlets
-		i(15756),	-- Pattern: Runic Leather Headband
-		i(15765),	-- Pattern: Runic Leather Pants
-		i(15777),	-- Pattern: Runic Leather Shoulders
+		i(70174),	-- Pattern: Royal Scribe's Satchel		
 		i(20509),	-- Pattern: Sandstalker Bracers
 		i(20511),	-- Pattern: Sandstalker Breastplate
 		i(20510),	-- Pattern: Sandstalker Gauntlets
@@ -1369,17 +1503,7 @@ profession(165, { -- Leatherworking
 		i(32747),	-- Pattern: Swiftstrike Shoulders		
 		i(29734),	-- Pattern: Thick Netherscale Breastplate
 		i(72009),	-- Pattern: Thundering Deathscale Wristguards
-		i(19327),	-- Pattern: Timbermaw Brawlers
-		i(8399),	-- Pattern: Tough Scorpid Boots
-		i(72028),	-- Pattern: Tough Scorpid Boots
-		i(8395),	-- Pattern: Tough Scorpid Breastplate
-		i(72029),	-- Pattern: Tough Scorpid Breastplate		
-		i(8402),	-- Pattern: Tough Scorpid Helm
-		i(72033),	-- Pattern: Tough Scorpid Helm
-		i(72030),	-- Pattern: Tough Scorpid Leggings
-		i(8401),	-- Pattern: Tough Scorpid Leggings
-		i(8400),	-- Pattern: Tough Scorpid Shoulders
-		i(72027),	-- Pattern: Tough Scorpid Shoulders
+		i(19327),	-- Pattern: Timbermaw Brawlers	
 		i(44509),	-- Pattern: Trapper's Traveling Pack
 		i(69973),	-- Pattern: Treads of the Craft
 		i(70175),	-- Pattern: Triple-Reinforced Mining Bag
@@ -1427,12 +1551,7 @@ profession(165, { -- Leatherworking
 		i(15742),	-- Pattern: Warbear Harness
 		i(20253),	-- Pattern: Warbear Harness
 		i(15754),	-- Pattern: Warbear Woolies
-		i(20254),	-- Pattern: Warbear Woolies			
-		i(15768),	-- Pattern: Wicked Leather Belt
-		i(15728),	-- Pattern: Wicked Leather Bracers
-		i(15725),	-- Pattern: Wicked Leather Gauntlets
-		i(15744),	-- Pattern: Wicked Leather Headband
-		i(15757),	-- Pattern: Wicked Leather Pants	
+		i(20254),	-- Pattern: Warbear Woolies				
 		i(86308),	-- Pattern: Wildblood Gloves
 		i(86309),	-- Pattern: Wildblood Vest
 		i(44932),	-- Pattern: Windripper Boots
