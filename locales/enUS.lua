@@ -2575,7 +2575,7 @@ AllTheThings.Locales.enUS = {
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event. Only dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 	};
-	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you, please post in Discord where you got it to drop!|r";
+	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage Crates), please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
 };
