@@ -50,7 +50,7 @@ _.Instances =
 								i(95978),	-- Locksmasher Greaves
 								i(95968),	-- Vaultwalker Sabatons
 							},
-							["description"] = "This bag is drop by doing the Raid Finder queue.  Upon each boss kill has a high chance to drop this satchel instead of loot.\nThis satchel has the chance to drop the Primal Egg as well as any trash mob loot from Normal/Heroic at Raid Finder quality.\nThis satchel also contains a chance at various pets."
+							["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 						}),
 						qg(67990, qh(32589, {	-- Life Blood / Lor'themar Theron <Regent Lord of Quel'Thalas>
 							i(95590),	-- Glorious Standard of the Sunreaver Onslaught Toy

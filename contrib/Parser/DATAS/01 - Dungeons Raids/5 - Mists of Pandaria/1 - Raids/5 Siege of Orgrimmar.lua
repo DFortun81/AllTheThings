@@ -67,7 +67,6 @@ _.Instances =
 										i(48124),	-- Razormaw Hatchling
 										i(48126),	-- Razzashi Hatchling
 									},
-									["description"] = "Please let us know if you get any of these from this box. Wowhead says they are unavailable but comments have differing reports. In BfA this will only drop if you are 91-99 as legacy loot mode will cause it to not drop.",
 									["crs"] = {
 										71543, -- Immerseus
 										71479, -- He Softfoot [The Fallen Protectors]
@@ -76,6 +75,7 @@ _.Instances =
 										72276, -- Amalgam of Corruption
 										71734, -- Sha of Pride
 									},
+									["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 								}),
 								i(105714, {	-- Coalesced Turmoil
 									["groups"] = {
@@ -132,7 +132,6 @@ _.Instances =
 										i(48124),	-- Razormaw Hatchling
 										i(48126),	-- Razzashi Hatchling
 									},
-									["description"] = "Please let us know if you get any of these from this box. Wowhead says they are unavailable but comments have differing reports. In BfA this will only drop if you are 91-99 as legacy loot mode will cause it to not drop.",
 									["crs"] = {
 										72249, -- Galakras
 										71466, -- Iron Juggernaut
@@ -154,6 +153,7 @@ _.Instances =
 										71157, -- Xaril the Poisoned Mind
 										71865, -- Garrosh Hellscream
 									},
+									["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 								}),
 							}),
 							ach(8458, {	-- Vale of Eternal Sorrows
