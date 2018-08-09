@@ -1153,7 +1153,7 @@ AllTheThings.Locales.enUS = {
 		[-523] = "Cataclysm: Elemental Unrest",
 		[-525] = "Warlords of Draenor: Iron Horde Incursion",
 		[-526] = "Legion: Legion Invasion",
-		[-527] = "Battle for Azeroth: War of Thorns",
+		[-527] = "Battle for Azeroth: War of the Thorns",
 
 		[-531] = "2008 Spirit of Competition Event",
 		[-532] = "Heroes of the Storm Promotion",
@@ -2440,6 +2440,38 @@ AllTheThings.Locales.enUS = {
 		[292675] = "A Damp Scroll",
 		[292676] = "A Damp Scroll",
 		[292677] = "A Damp Scroll",
+		[288596] = select(1,GetAchievementCriteriaInfo(12851,9)), -- Cache of Secrets
+		[284454] = select(1,GetAchievementCriteriaInfo(12851,7)), -- Da White Shark's Bounty
+		[281898] = select(1,GetAchievementCriteriaInfo(12851,6)), -- Dazar's Forgotten Chest
+		[281655] = select(1,GetAchievementCriteriaInfo(12851,4)), -- Gift of the Brokenhearted
+		[276735] = select(1,GetAchievementCriteriaInfo(12851,1)), -- Offerings of the Chosen
+		[290725] = select(1,GetAchievementCriteriaInfo(12851,10)), -- Riches of Tor'nowa
+		[279609] = select(1,GetAchievementCriteriaInfo(12851,3)), -- Spoils of Pandaria
+		[284455] = select(1,GetAchievementCriteriaInfo(12851,8)), -- The Exile's Lament
+		[277561] = select(1,GetAchievementCriteriaInfo(12851,5)), -- Warlord's Cache
+		[281092] = select(1,GetAchievementCriteriaInfo(12851,2)), -- Witch Doctor's Hoard
+		[279260] = select(1,GetAchievementCriteriaInfo(12771,4)), -- Cleverly Disguised Chest
+		[277715] = select(1,GetAchievementCriteriaInfo(12771,3)), -- Cursed Nazmani Chest
+		[279689] = select(1,GetAchievementCriteriaInfo(12771,5)), -- Lost Nazmani Treasure
+		[279253] = select(1,GetAchievementCriteriaInfo(12771,1)), -- Lucky Horace's Lucky Chest
+		[278437] = select(1,GetAchievementCriteriaInfo(12771,6)), -- Offering to Bwonsamdi
+		[280522] = select(1,GetAchievementCriteriaInfo(12771,2)), -- Partially-Digested Treasure
+		[278436] = select(1,GetAchievementCriteriaInfo(12771,7)), -- Shipwrecked Chest
+		[280504] = select(1,GetAchievementCriteriaInfo(12771,9)), -- Swallowed Naga Chest
+		[279299] = select(1,GetAchievementCriteriaInfo(12771,8)), -- Venomous Seal
+		[277885] = select(1,GetAchievementCriteriaInfo(12771,10)), -- Wunja's Trove
+		[280951] = select(1,GetAchievementCriteriaInfo(12849,1)), -- Ashvane Spoils
+		[294317] = select(1,GetAchievementCriteriaInfo(12849,9)), -- Deadwood Chest
+		[287324] = select(1,GetAchievementCriteriaInfo(12849,6)), -- Excavator's Greed
+		[999999] = select(1,GetAchievementCriteriaInfo(12849,2)), -- Grayal's Last Offering
+		[287304] = select(1,GetAchievementCriteriaInfo(12849,3)), -- Lost Explorer's Bounty
+		[294316] = select(1,GetAchievementCriteriaInfo(12849,8)), -- Lost Offerings of Kimbul
+		[287318] = select(1,GetAchievementCriteriaInfo(12849,4)), -- Sandfury Reserve
+		[294319] = select(1,GetAchievementCriteriaInfo(12849,10)), -- Sandsunken Treasure
+		[287320] = select(1,GetAchievementCriteriaInfo(12849,5)), -- Stranded Cache
+		[287326] = select(1,GetAchievementCriteriaInfo(12849,7)), -- Zem'lan's Buried Treasure
+
+
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
