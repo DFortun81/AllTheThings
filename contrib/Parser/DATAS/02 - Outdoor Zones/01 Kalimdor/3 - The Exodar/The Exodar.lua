@@ -286,7 +286,7 @@ _.Zones =
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
 					})),
-					a(n(16748, {	-- Haferet <Leatherworking Supplies>
+					n(16748, {	-- Haferet <Leatherworking Supplies>
 						i(67095), -- Pattern: Assassin's Chestplate						
 						i(67070), -- Pattern: Belt of Nefarious Whispers
 						i(67084), -- Pattern: Charscale Leg Armor
@@ -333,7 +333,7 @@ _.Zones =
 						i(67086), -- Pattern: Vicious Wyrmhide Helm
 						i(67085), -- Pattern: Vicious Wyrmhide Legs	
 						i(67074), -- Pattern: Vicious Wyrmhide Shoulders					
-					})),
+					}),
 					a(n(16766, {	-- Issca <Tabard Vendor>
 						["groups"] = {
 							i(20132),	-- Arathor Battle Tabard
