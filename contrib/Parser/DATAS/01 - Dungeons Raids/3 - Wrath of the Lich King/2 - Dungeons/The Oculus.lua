@@ -4,9 +4,9 @@
 
 _.Instances = 
 {
-	{ -- Wrath of the Lich King
+	{	-- Wrath of the Lich King
 		["groups"] = {
-			inst(282, { 	-- The Oculus
+			inst(282, {	-- The Oculus
 				["groups"] = {
 					n(-17, {	-- Quests
 						q(13124, {	-- The Struggle Persists
@@ -41,11 +41,46 @@ _.Instances =
 							["sourceQuest"] = 13127,
 						}),
 					}),
-					d(  1, {	-- Normal
+					d(1,   {	-- Normal
 						n(0, {		-- Zone Drop
-							i(36976),	-- Ring-Lord's Leggings
-							i(36978),	-- Ley-Whelphide Belt
-							i(36977)	-- Bindings of the Construct
+							i(36977, {	-- Bindings of the Construct
+								["crs"] = {
+									27633,	-- Azure Inquisitor
+									27636,	-- Azure Ley-Whelp
+									27635,	-- Azure Spellbinder
+									27650,	-- Phantasmal Air
+									27648,	-- Phantasmal Naga
+									27647,	-- Phantasmal Ogre
+									27640,	-- Ring-Lord Conjurer
+								},
+							}),
+							i(36978, {	-- Ley-Whelphide Belt
+								["crs"] = {
+									27633,	-- Azure Inquisitor
+									27636,	-- Azure Ley-Whelp
+									27635,	-- Azure Spellbinder
+									27645,	-- Phantasmal Cloudscraper
+									27651,	-- Phantasmal Fire
+									27649,	-- Phantasmal Murloc
+									27648,	-- Phantasmal Naga
+									27653,	-- Phantasmal Water
+									27644,	-- Phantasmal Wolf
+									27640,	-- Ring-Lord Conjurer
+									27639,	-- Ring-Lord Sorceress
+								},
+							}),
+							i(36976, {	-- Ring-Lord's Leggings
+								["crs"] = {
+									27636,	-- Azure Ley-Whelp
+									27641,	-- Centrifuge Construct
+									27651,	-- Phantasmal Fire
+									27642,	-- Phantasmal Mammoth
+									27648,	-- Phantasmal Naga
+									27647,	-- Phantasmal Ogre
+									27644,	-- Phantasmal Wolf
+									27639,	-- Ring-Lord Sorceress
+								},
+							}),
 						}),
 						cr(27654, e(622, {	-- Drakos the Interrogator
 							i(157562),	-- Rod of Aggressive Questioning
@@ -98,13 +133,45 @@ _.Instances =
 							i(36972),	-- Tome of Arcane Phenomena
 						})),
 					}),
-					d(  2, {	-- Heroic
+					d(2,   {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
-							n(0, {		-- Zone Drop
-								i(37364),	-- Frostbridge Orb
-								i(37366),	-- Drake-Champion's Bracers
-								i(37365)	-- Bands of the Sky Ring
+							n(0, {	-- Zone Drop
+								i(37365, {	-- Bands of the Sky Ring
+									["crs"] = {
+										27636,	-- Azure Ley-Whelp
+										27635,	-- Azure Spellbinder
+										27641,	-- Centrifuge Construct
+										27650,	-- Phantasmal Air
+										27642,	-- Phantasmal Mammoth
+										27648,	-- Phantasmal Naga
+										27640,	-- Ring-Lord Conjurer
+									},
+								}),
+								i(37366, {	-- Drake-Champion's Bracers
+									["crs"] = {
+										27636,	-- Azure Ley-Whelp
+										27641,	-- Centrifuge Construct
+										27645,	-- Phantasmal Cloudscraper
+										27642,	-- Phantasmal Mammoth
+										27649,	-- Phantasmal Murloc
+										27648,	-- Phantasmal Naga
+										27640,	-- Ring-Lord Conjurer
+									},
+								}),
+								i(37364, {	-- Frostbridge Orb
+									["crs"] = {
+										27636,	-- Azure Ley-Whelp
+										27635,	-- Azure Spellbinder
+										27645,	-- Phantasmal Cloudscraper
+										27651,	-- Phantasmal Fire
+										27649,	-- Phantasmal Murloc
+										27647,	-- Phantasmal Ogre
+										27653,	-- Phantasmal Water
+										27640,	-- Ring-Lord Conjurer
+										27639,	-- Ring-Lord Sorceress
+									},
+								}),
 							}),
 							cr(27654, e(622, {	-- Drakos the Interrogator
 								i(157562),	-- Rod of Aggressive Questioning
