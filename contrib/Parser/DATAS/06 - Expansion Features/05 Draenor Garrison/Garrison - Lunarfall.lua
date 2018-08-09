@@ -4015,24 +4015,44 @@ _.ExpansionFeatures =
 						["groups"] = {
 							i(118215, {	-- Book of Garrison Blueprints [Can learn all lvl 1 blueprints except Salvage Yard]
 								i(111812),	-- Alchemy Lab, Level 1
-								i(111959),	-- Barn, Level 1 [Not showing up as collectible]
+								i(111959, {	-- Barn, Level 1 [Building must be attached in order for the blueprint to be collectible]
+									["buildingID"] = 24,	-- Barn
+								}),
 								i(111956),	-- Barracks, Level 1
-								i(111964),	-- Dwarven Bunker, Level 1 [Not showing up as collectible]
+								i(111964, {	-- Dwarven Bunker, Level 1 [Building must be attached in order for the blueprint to be collectible]
+									["buildingID"] = 8,	-- Dwarven Bunker / War Mill
+								}),
 								i(111817),	-- Enchanter's Study, Level 1
 								i(109258),	-- Engineering Works, Level 1
 								i(111814),	-- Gem Boutique, Level 1
-								i(111962),	-- Gladiator's Sanctum, Level 1 [Not showing up as collectible]
-								i(111924),	-- Gnomish Gearworks, Level 1 [Not showing up as collectible]
-								i(111961),	-- Lumbermill, Level 1 [Not showing up as collectible]
-								i(111960),	-- Lunarfall Inn, Level 1 [Not showing up as collectible]
-								i(111965),	-- Mage Tower, Level 1 [Not showing up as collectible]
+								i(111962, {	-- Gladiator's Sanctum, Level 1 [Building must be attached in order for the blueprint to be collectible]
+									["buildingID"] = 159,	-- Gladiator's Sanctum
+								}),
+								i(111924, {	-- Gnomish Gearworks, Level 1 [Building must be attached in order for the blueprint to be collectible]
+									["buildingID"] = 162,	-- Gnomish Gearworks / Goblin Workshop
+								}),
+								i(111961, {	-- Lumbermill, Level 1 [Building must be attached in order for the blueprint to be collectible]
+									["buildingID"] = 40,	-- Lumber Mill
+								}),
+								i(111960, {	-- Lunarfall Inn, Level 1 [Building must be attached in order for the blueprint to be collectible]
+									["buildingID"] = 34, -- Lunarfall Inn / Frostwall Tavern
+								}),
+								i(111965, {	-- Mage Tower, Level 1 [Building must be attached in order for the blueprint to be collectible]
+									["buildingID"] = 37,	-- Mage Tower / Spirit Lodge
+								}),
 								i(111815),	-- Scribe's Quarters, Level 1
-								i(112001),	-- Stables, Level 1 [Not showing up as collectible]
-								i(111958),	-- Storehouse, Level 1 [Not showing up as collectible]
+								i(112001, {	-- Stables, Level 1 [Building must be attached in order for the blueprint to be collectible]
+									["buildingID"] = 65,	-- Stables
+								}),
+								i(111958, {	-- Storehouse, Level 1 [Building must be attached in order for the blueprint to be collectible]
+									["buildingID"] = 51,	-- Storehouse
+								}),
 								i(111816),	-- Tailoring Emporium, Level 1
 								i(111813),	-- The Forge, Level 1
 								i(111818),	-- The Tannery, Level 1
-								i(111963),	-- Trading Post, Level 1 [Not showing up as collectible]
+								i(111963, {	-- Trading Post, Level 1 [Building must be attached in order for the blueprint to be collectible]
+									["buildingID"] = 111,	-- Trading Post
+								}),
 							}),
 							i(111957),	-- Salvage Yard, Level 1
 							i(111929),	-- Alchemy Lab, Level 2
