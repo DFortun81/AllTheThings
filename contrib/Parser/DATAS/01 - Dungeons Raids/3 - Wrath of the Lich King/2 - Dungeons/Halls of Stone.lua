@@ -4,9 +4,9 @@
 
 _.Instances = 
 {
-	{ -- Wrath of the Lich King
+	{	-- Wrath of the Lich King
 		["groups"] = {
-			inst(277, { 	-- Halls of Stone
+			inst(277, {	-- Halls of Stone
 				["groups"] = {
 				--[[
 					n(-47, {	-- Lunar Festival
@@ -25,16 +25,34 @@ _.Instances =
 								}),
 							}),
 						},
-						["achievementID"] = 913, -- To Honor One's Elders
+						["achievementID"] = 913,	-- To Honor One's Elders
 						["u"] = 17,
 					}),
 					--]]
-					d(  1, {	-- Normal
+					d(1, {	-- Normal
 						n(0, {		-- Zone Drop
-							i(35681),	-- Unrelenting Blade
-							i(35682)	-- Rune Giant Bindings
+							i(35682, {	-- Rune Giant Bindings
+								["crs"] = {
+									27964,	-- Dark Rune Scholar
+									27963,	-- Dark Rune Theurgist
+									27961,	-- Dark Rune Worker
+									27972,	-- Lightning Construct
+									27970,	-- Raging Construct
+									27971,	-- Unrelenting Construct
+								},
+							}),
+							i(35681, {	-- Unrelenting Blade
+								["crs"] = {
+									27969,	-- Dark Rune Giant
+									27965,	-- Dark Rune Shaper
+									27963,	-- Dark Rune Theurgist
+									27961,	-- Dark Rune Worker
+									27972,	-- Lightning Construct
+									27971,	-- Unrelenting Construct
+								},
+							}),
 						}),
-						cr(27977, e(604, { -- Krystallus
+						cr(27977, e(604, {	-- Krystallus
 							i(37649),	-- Quarry Chisel
 							i(35670),	-- Brann's Lost Mining Helmet
 							i(35672),	-- Hollow Geode Helm
@@ -43,7 +61,7 @@ _.Instances =
 							i(37650),	-- Shardling Legguards
 							i(37651),	-- The Prospector's Prize
 						})),
-						cr(27975, e(605, { -- Maiden of Grief
+						cr(27975, e(605, {	-- Maiden of Grief
 							ig(44731),	-- Bouquet of Ebon Roses
 							ig(22206),	-- Bouquet of Red Roses
 							i(38618),	-- Hammer of Grief
@@ -52,17 +70,17 @@ _.Instances =
 							i(38615),	-- Lightning-Charged Gloves
 							i(38616),	-- Maiden's Girdle
 						})),
-						cr(28234, e(606, { -- Tribunal of Ages
-							i( 37653),	-- Sword of Justice
-							i( 37655),	-- Mantle of the Tribunal
-							i( 35677),	-- Cosmos Vestments
-							i( 35675),	-- Linked Armor of the Sphere
+						cr(28234, e(606, {	-- Tribunal of Ages
+							i(37653),	-- Sword of Justice
+							i(37655),	-- Mantle of the Tribunal
+							i(35677),	-- Cosmos Vestments
+							i(35675),	-- Linked Armor of the Sphere
 							i(157564), 	-- Marbled Bracers
-							i( 37656),	-- Raging Construct Bands
-							i( 35676),	-- Constellation Leggings
-							i( 37654),	-- Sabaton of the Ages
+							i(37656),	-- Raging Construct Bands
+							i(35676),	-- Constellation Leggings
+							i(37654),	-- Sabaton of the Ages
 						})),
-						cr(27978, e(607, { -- Sjonnir The Ironshaper
+						cr(27978, e(607, {	-- Sjonnir The Ironshaper
 							i(37667),	-- The Fleshshaper
 							i(35679),	-- Static Cowl
 							i(35680),	-- Amulet of Wills
@@ -74,18 +92,48 @@ _.Instances =
 							i(37666),	-- Boots of the Whirling Mist
 							i(37660),	-- Forge Ember
 							i(37657),	-- Spark of Life
-						}))
+						})),
 					}),
-					d(  2, {	-- Heroic
+					d(2, {	-- Heroic
 						["lvl"] = 80,
 						["ignoreBonus"] = true,
 						["groups"] = {
-							n(0, {		-- Zone Drop
-								i(37673),	-- Dark Runic Mantle
-								i(37672),	-- Patina-Coated Breastplate
-								i(37671)	-- Refined Ore Gloves
+							n(0, {	-- Zone Drop
+								i(37673, {	-- Dark Runic Mantle
+									["crs"] = {
+										27966,	-- Dark Rune Controller
+										27962,	-- Dark Rune Elementalist
+										27969,	-- Dark Rune Giant
+										27964,	-- Dark Rune Scholar
+										27963,	-- Dark Rune Theurgist
+										27961,	-- Dark Rune Worker
+										27970,	-- Raging Construct
+									},
+								}),
+								i(37672, {	-- Patina-Coated Breastplate
+									["crs"] = {
+										27966,	-- Dark Rune Controller
+										27962,	-- Dark Rune Elementalist
+										27965,	-- Dark Rune Shaper
+										27963,	-- Dark Rune Theurgist
+										27960,	-- Dark Rune Warrior
+										27961,	-- Dark Rune Worker
+										27970,	-- Raging Construct
+										27971,	-- Unrelenting Construct
+									},
+								}),
+								i(37671, {	-- Refined Ore Gloves
+									["crs"] = {
+										27969,	-- Dark Rune Giant
+										27964,	-- Dark Rune Scholar
+										27963,	-- Dark Rune Theurgist
+										27960,	-- Dark Rune Warrior
+										27970,	-- Raging Construct
+										27971,	-- Unrelenting Construct
+									},
+								}),
 							}),
-							cr(27977, e(604, { -- Krystallus
+							cr(27977, e(604, {	-- Krystallus
 								i(37649),	-- Quarry Chisel
 								i(35670),	-- Brann's Lost Mining Helmet
 								i(35672),	-- Hollow Geode Helm
@@ -94,7 +142,7 @@ _.Instances =
 								i(37650),	-- Shardling Legguards
 								i(37651),	-- The Prospector's Prize
 							})),
-							cr(27975, e(605, { -- Maiden of Grief
+							cr(27975, e(605, {	-- Maiden of Grief
 								ig(44731),	-- Bouquet of Ebon Roses
 								ig(22206),	-- Bouquet of Red Roses
 								i(38618),	-- Hammer of Grief
@@ -103,7 +151,7 @@ _.Instances =
 								i(38615),	-- Lightning-Charged Gloves
 								i(38616),	-- Maiden's Girdle
 							})),
-							cr(28234, e(606, { -- Tribunal of Ages
+							cr(28234, e(606, {	-- Tribunal of Ages
 								i(37653),	-- Sword of Justice
 								i(37655),	-- Mantle of the Tribunal
 								i(35677),	-- Cosmos Vestments
@@ -113,7 +161,7 @@ _.Instances =
 								i(35676),	-- Constellation Leggings
 								i(37654),	-- Sabaton of the Ages
 							})),
-							cr(27978, e(607, { -- Sjonnir The Ironshaper
+							cr(27978, e(607, {	-- Sjonnir The Ironshaper
 								i(37667),	-- The Fleshshaper
 								i(35679),	-- Static Cowl
 								i(35680),	-- Amulet of Wills
