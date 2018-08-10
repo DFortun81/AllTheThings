@@ -141,7 +141,19 @@ _.Instances =
 						i(32946),	-- Claw of Molten Fury
 						i(32945),	-- Fist of Molten Fury
 						-- Recipes
-						i(32748),	-- Pattern: Bindings of Lightning Reflexes (Hyjal ONLY)
+						i(32748, {		-- Pattern: Bindings of Lightning Reflexes
+							["crs"] = {
+								17898,    -- Abomination
+								17905,    -- Banshee
+								17897,    -- Crypt Fiend
+								17916,    -- Fel Stalker
+								17907,    -- Frost Wyrm
+								17906,    -- Gargoyle
+								17895,    -- Ghoul
+								17908,    -- Giant Infernal
+								17899,    -- Shadowy Necromancer
+							},
+						}),
 					 -- i(32754),	-- Pattern: Bracers of Nimble Thought (BT ONLY)
 					 -- i(32744),	-- Pattern: Bracers of Renewed Life (BT ONLY)
 					 -- i(32750),	-- Pattern: Living Earth Bindings (BT ONLY)

@@ -95,6 +95,8 @@ _.Instances =
 								33288, -- Yogg-Saron
 							},
 							["g"] = {
+								i(45100), -- Pattern: Belt of Arctic Life
+								i(45094), -- Pattern: Belt of Dragons
 								i(45089), -- Plans: Battlelord's Plate Boots
 								i(45088), -- Plans: Belt of the Titans
 								i(45092), -- Plans: Indestructible Plate Girdle

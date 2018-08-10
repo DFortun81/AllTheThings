@@ -593,6 +593,16 @@ _.Zones =
 						i(27692),	-- Recipe: Warp Burger
 					}),
 				}),
+				n(0, {    -- Zone Drops
+					i(34491, {    -- Pattern: Bag of Many Hides
+						["crs"] = {
+							22143,    -- Gordunni Back-Breaker
+							22144,    -- Gordunni Elementalist
+							22148,    -- Gordunni Gordunni Head-Splitter
+							23022,    -- Gordunni Soulreaper
+						},
+					}),
+				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
