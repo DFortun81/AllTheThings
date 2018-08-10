@@ -202,7 +202,7 @@ _.Instances =
 						},
 					}),
 				},
-				["lvl"] = 98,
+				["lvl"] = 110,
 				["maps"] = {
 					1010, -- The Motherlode
 				},

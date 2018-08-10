@@ -263,7 +263,7 @@ profession(185, { -- Cooking
 			recipe(185708),		-- Sugar-Crusted Fish Feast
 		}),
 		tier(1, {	-- Classic
-			["groups"] = bubbleDown({["requiredSkill"] = 185 },  {
+			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
 				un(2, i(16072)),	-- Expert Cookbook
 				un(2, i(16073)),	-- Artisan Cookbook
 				un(2, i(27736)),	-- Master Cookbook

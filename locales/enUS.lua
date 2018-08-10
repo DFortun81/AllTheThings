@@ -2470,8 +2470,26 @@ AllTheThings.Locales.enUS = {
 		[294319] = select(1,GetAchievementCriteriaInfo(12849,10)), -- Sandsunken Treasure
 		[287320] = select(1,GetAchievementCriteriaInfo(12849,5)), -- Stranded Cache
 		[287326] = select(1,GetAchievementCriteriaInfo(12849,7)), -- Zem'lan's Buried Treasure
-
-
+		[297879] = select(1,GetAchievementCriteriaInfo(12995,7)), -- Bespelled Chest
+		[297881] = select(1,GetAchievementCriteriaInfo(12995,9)), -- Enchanted Chest
+		[999998] = select(1,GetAchievementCriteriaInfo(12995,8)), -- Ensorcelled Chest
+		[297878] = select(1,GetAchievementCriteriaInfo(12995,6)), -- Hexed Chest
+		[297828] = select(1,GetAchievementCriteriaInfo(12995,2)), -- Merchant's Chest
+		[297891] = select(1,GetAchievementCriteriaInfo(12995,3)), -- Runebound Cache
+		[297892] = select(1,GetAchievementCriteriaInfo(12995,4)), -- Runebound Chest
+		[297893] = select(1,GetAchievementCriteriaInfo(12995,5)), -- Runebound Coffer
+		[298920] = select(1,GetAchievementCriteriaInfo(12995,10)), -- Stolen Thornspeaker Cache
+		[297825] = select(1,GetAchievementCriteriaInfo(12995,1)), -- Web-Covered Chest
+		[293350] = select(1,GetAchievementCriteriaInfo(12853,8)), -- Carved Wooden Chest
+		[293349] = select(1,GetAchievementCriteriaInfo(12853,7)), -- Discarded Lunchbox
+		[294174] = select(1,GetAchievementCriteriaInfo(12853,10)), -- Forgotten Chest
+		[281494] = select(1,GetAchievementCriteriaInfo(12853,3)), -- Frosty Treasure Chest
+		[284448] = select(1,GetAchievementCriteriaInfo(12853,5)), -- Hidden Scholar's Chest
+		[280619] = select(1,GetAchievementCriteriaInfo(12853,2)), -- Old Ironbound Chest
+		[279042] = select(1,GetAchievementCriteriaInfo(12853,6)), -- Smuggler's Stash
+		[282153] = select(1,GetAchievementCriteriaInfo(12853,4)), -- Sunken Strongbox
+		[294173] = select(1,GetAchievementCriteriaInfo(12853,9)), -- Venture Co. Supply Chest
+		[289647] = select(1,GetAchievementCriteriaInfo(12853,1)), -- Weathered Treasure Chest
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter

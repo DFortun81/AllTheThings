@@ -214,7 +214,7 @@ _.Instances =
 						},
 					}),
 				},
-				["lvl"] = 98,
+				["lvl"] = 110,
 				["maps"] = {
 					1041, -- The Underot
 					1042, -- Ruin's Descent

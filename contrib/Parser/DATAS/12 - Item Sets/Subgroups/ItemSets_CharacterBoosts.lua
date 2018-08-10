@@ -138,6 +138,8 @@ _.GearSets =
 					}),
 					n(-143, { -- Lightdrinker 
 						["groups"] = {
+							i(153959), -- Lightdrinker Dagger
+							i(153961), -- Lightdrinker Sword
 							i(153954), -- Lightdrinker Hood
 							i(153946), -- Lightdrinker Choker
 							i(153956), -- Lightdrinker Shoulders

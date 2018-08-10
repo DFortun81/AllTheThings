@@ -209,7 +209,7 @@ _.Instances =
 						},
 					}),
 				},
-				["lvl"] = 98,
+				["lvl"] = 110,
 				["maps"] = {
 					974, -- Tol Dagor
 					975, -- The Drain

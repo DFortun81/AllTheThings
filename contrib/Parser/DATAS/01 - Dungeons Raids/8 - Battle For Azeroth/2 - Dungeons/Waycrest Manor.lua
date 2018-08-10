@@ -273,7 +273,7 @@ _.Instances =
 						},
 					}),
 				},
-				["lvl"] = 98,
+				["lvl"] = 110,
 				["maps"] = {
 					--, Upstairs [There is a 5th map we need here; not in traditional order.  Will get data later. 03-12-18 Lucetia
 					1015, -- The Grand Foyer

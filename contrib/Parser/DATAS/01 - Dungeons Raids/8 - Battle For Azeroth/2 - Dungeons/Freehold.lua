@@ -218,7 +218,7 @@ _.Instances =
 						},
 					}),
 				},
-				["lvl"] = 98,
+				["lvl"] = 110,
 				["maps"] = {
 					936, -- Freehold
 				},

@@ -81,7 +81,7 @@ _.Instances =
 						},
 					}),
 				},
-				["lvl"] = 98,
+				["lvl"] = 120,
 				["maps"] = {
 					1004, -- Kings' Rest
 				},

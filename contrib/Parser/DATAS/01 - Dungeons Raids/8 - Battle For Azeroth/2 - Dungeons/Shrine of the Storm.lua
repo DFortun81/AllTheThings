@@ -223,7 +223,7 @@ _.Instances =
 						},
 					}),
 				},
-				["lvl"] = 98,
+				["lvl"] = 110,
 				["maps"] = {
 					1039, -- Shrine of the Storm
 					1040, -- Storm's End

@@ -208,7 +208,7 @@ _.Instances =
 						},
 					}),
 				},
-				["lvl"] = 98,
+				["lvl"] = 110,
 				["maps"] = {
 					934, -- Atal'Dazar
 					935, -- Sacrificial Pits

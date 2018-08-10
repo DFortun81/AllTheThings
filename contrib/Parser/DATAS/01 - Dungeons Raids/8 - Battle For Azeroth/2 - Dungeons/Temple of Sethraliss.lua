@@ -229,7 +229,7 @@ _.Instances =
 						},
 					}),
 				},
-				["lvl"] = 98,
+				["lvl"] = 110,
 				["maps"] = {
 					1038, -- Temple of Sethraliss
 					1039, -- Atrium of Sethraliss
