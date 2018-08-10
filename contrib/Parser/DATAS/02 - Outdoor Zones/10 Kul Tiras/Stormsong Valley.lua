@@ -249,7 +249,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158299), -- Ratha's Thornscepter
 							}),	
-							["questID"] = 50337,	
+							--["questID"] = 50337, [Note: This was the ID given on beta, but flags as completed on my main pre-Launch]
 						}),		
 						n(130079, { -- Wagga Snarltusk		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
