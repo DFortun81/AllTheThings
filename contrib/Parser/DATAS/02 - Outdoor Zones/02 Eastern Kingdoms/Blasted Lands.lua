@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(17, {		-- Blasted Lands
+	m(13, {	-- Eastern Kingdoms
+		m(17, {	-- Blasted Lands
 			["groups"] = {					
 				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder

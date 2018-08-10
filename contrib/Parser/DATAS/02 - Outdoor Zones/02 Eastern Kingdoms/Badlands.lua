@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(15, {		-- Badlands
+	m(13, {	-- Eastern Kingdoms
+		m(15, {	-- Badlands
 			["groups"] = {						
 				n(-25, {	-- Pet Battle
 					p(406), 	-- Beetle
@@ -693,12 +693,6 @@ _.Zones =
 						dr(01.4, i(10091)),	-- Gothic Plate Leggings
 						dr(01.0, i(7541)),	-- Champion's Gauntlets					
 					}),
-					n(46916, {	-- Nyxondra's Broodling
-						dr(0.09, i(10822)),		-- Dark Whelpling Pet
-					}),
-					n(46914, {	-- Raging Whelp
-						dr(0.08, i(10822)),		-- Dark Whelpling Pet
-					}),
 					n(2752, { 	-- Rumbler
 						dr(12.0, i(10090)),	-- Gothic Plate Helmet
 						dr(11.0, i(9933)),	-- Brigade Leggings
@@ -735,9 +729,6 @@ _.Zones =
 						dr(01.0, i(7540)),	-- Champion's Helmet
 						dr(01.0, i(10092)),	-- Gothic Plate Spaulders
 						dr(01.0, i(7477)),	-- Ranger Tunic					
-					}),
-					n(2725, { 	-- Scalding Whelp
-						dr(0.09, i(10822)),		-- Dark Whelpling Pet
 					}),
 					n(2744, { 	-- Shadowforge Commander
 						dr(10.0, i(10091)),	-- Gothic Plate Leggings
@@ -909,19 +900,30 @@ _.Zones =
 					}),
 --					n(2754, { 	-- Anathemus	}), 					
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(48060, {	-- "Chef" Overheat <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 						i(16767),	-- Recipe: Undermine Clam Chowder
 					}),
 				}),
-				n(  0, {	-- Zone Drop
-					n(2718, { 	-- Dustbelcher Shaman
-						i(2624),	-- Thinking Cap
+				n(0,   {	-- Zone Drop
+					un(7, i(2621, {	-- Cowl of Necromancy
+						["crs"] = {
+							2740,	-- Shadowforge Darkweaver
+						},
+					})),
+					i(10822, {	-- Dark Whelpling (PET!)
+						["crs"] = {
+							46916,	-- Nyxondra's Broodling
+							46914,	-- Raging Whelp
+							2725,	-- Scalding Whelp
+						},
 					}),
-					n(2740, { 	-- Shadowforge Darkweaver
-						un(7, i(2621)),	-- Cowl of Necromancy
+					i(2624, {	-- Thinking Cap
+						["crs"] = {
+							2718,	-- Dustbelcher Shaman
+						},
 					}),
 				}),
 				n(-40, {	-- Legacy

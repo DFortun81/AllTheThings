@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(36, {		-- Burning Steppes
+	m(13, {	-- Eastern Kingdoms
+		m(36, {	-- Burning Steppes
 			["groups"] = {							
 				n(-25, { 	-- Pet Battle
 					p(425), 	-- Ash Viper
@@ -812,9 +812,6 @@ _.Zones =
 						dr(01.1, i(10126)),	-- Ornate Bracers
 						dr(01.0, i(9954)),	-- Chieftain's Leggings					
 					}), 
-					n(7049, { 	-- Flamescale Broodling
-						dr(0.07, i(10822)),		-- Dark Whelpling Pet
-					}),
 					n(9604, { 	-- Gorgon'och
 						dr(09.0, i(10062)),	-- Duskwoven Gloves
 						dr(09.0, i(10239)),	-- Heavy Lamellar Vambraces
@@ -1126,10 +1123,6 @@ _.Zones =
 						dr(01.0, i(10209)),	-- Overlord's Spaulders
 						dr(01.0, i(10131)),	-- Revenant Boots					
 					}), 
-					n(7037, {	-- Thaurissan Firewalker
-						dr(5, i(14482)),	-- Pattern: Cindercloth Cloak
-						dr(5, i(14490)),	-- Pattern: Cindercloth Pants
-					}),
 					n(50730, { 	-- Venomspine
 						dr(23.0, i(10130)),	-- Revenant Girdle
 						dr(23.0, i(10134)),	-- Revenant Shoulders
@@ -1184,7 +1177,7 @@ _.Zones =
 						i(12828), -- Plans: Volcanic Hammer
 					}), 
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(115805, {	-- Hoddruc Bladebender
 						["groups"]	= {
 							i(142346, {	-- Plans: Bleakwood Hew
@@ -1192,6 +1185,23 @@ _.Zones =
 							}),
 						},
 						["description"]	= "Vendor only sells the recipe to those who have completed the quest 'Worth Its Weight in Steel'|r",
+					}),
+				}),
+				n(0,   {	-- Zone Drop
+					i(10822, {	-- Dark Whelpling (PET!)
+						["crs"] = {
+							7049,	-- Flamescale Broodling
+						},
+					}),
+					i(14482, {	-- Pattern: Cindercloth Cloak
+						["crs"] = {
+							7037,	-- Thaurissan Firewalker
+						},
+					}),
+					i(14490, {	-- Pattern: Cindercloth Pants
+						["crs"] = {
+							7037,	-- Thaurissan Firewalker
+						},
 					}),
 				}),
 				n(-40, {	-- Legacy

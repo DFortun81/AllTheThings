@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(14, {		-- Arathi Highlands
+	m(13, {	-- Eastern Kingdoms
+		m(14, {	-- Arathi Highlands
 			["groups"] = {
 				n(-25, {	-- Pet Battle
 					p(443), 	-- Grasslands Cottontail
@@ -952,18 +952,6 @@ _.Zones =
 						dr(01.0, i(6612)),	-- Sage's Boots
 						dr(01.0, i(6394)),	-- Silver-Thread Boots					
 					}), 
-					n(2558, {	-- Witherbark Berserker
-						dr(0.9, i(11166)),	-- Formula: Enchant Gloves - Skinning
-					}),
-					n(2556, {	-- Witherbark Headhunter
-						dr(1.5, i(11166)),	-- Formula: Enchant Gloves - Skinning
-					}),
-					n(2553, {	-- Witherbark Shadowcaster
-						dr(0.3, i(1297))		-- Robes of the Shadowcaster
-					}),
-					n(2557, {	-- Witherbark Shadow Hunter
-						dr(0.7, i(11166)),	-- Formula: Enchant Gloves - Skinning
-					}),
 					n(2605, { 	-- Zalas Witherbark
 						dr(09.0, i(6604)),	-- Dervish Cape
 						dr(06.0, i(6591)),	-- Battleforge Wristguards
@@ -1015,7 +1003,7 @@ _.Zones =
 						dr(01.0, i(9831)),	-- Scaled Cloak					
 					}),
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					na(2816, {	-- Androd Fadran <Leatherworking Supplies>
 						i(13288),	-- Pattern: Raptor Hide Belt
 					}),
@@ -1060,22 +1048,36 @@ _.Zones =
 						i(13287), 	-- Pattern: Raptor Hide Harness
 					}),
 				}),
-				n(  0, {	-- Zone Drop
-					n(2564, { 	-- Boulderfist Enforcer
-						un(7, i(3341)),	-- Gauntlets of Ogre Strength
+				n(0,   {	-- Zone Drop
+					i(11166,       {	-- Formula: Enchant Gloves - Skinning
+						["crs"] = {
+							2558,	-- Witherbark Berserker
+							2556,	-- Witherbark Headhunter
+							2557,	-- Witherbark Shadow Hunter
+						},
 					}),
-					nh(2782, { 	-- Caretaker Alaric	
-						un(7, i(2623)),	-- Holy Diadem
+					un(7, i(3341,  {	-- Gauntlets of Ogre Strength
+						["crs"] = {
+							2564,	-- Bounderfist Enforcer
+						},
+					})),
+					i(1297,        {	-- Robes of the Shadowcaster
+						["crs"] = {
+							2553,	-- Witherbark Shadowcaster
+						},
 					}),
-					nh(2780, { 	-- Caretaker Nevlin
-						un(7, i(2623)),	-- Holy Diadem
-					}),
-					nh(2781, { 	-- Caretaker Weston
-						un(7, i(2623)),	-- Holy Diadem
-					}),
-					nh(2584, { 	-- Stromgarde Defender
-						un(7, i(5624)),	-- Circlet of the Order
-					}),
+					un(7, i(2623,  {	-- Holy Diadem
+						["crs"] = {
+							2782,	-- Caretaker Alaric
+							2780,	-- Caretaker Nevlin
+							2781,	-- Caretaker Weston
+						},
+					})),
+					un(7, i(5624,  {	-- Circlet of the Order
+						["crs"] = {
+							2584,	-- Stromgarde Defender
+						},
+					})),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

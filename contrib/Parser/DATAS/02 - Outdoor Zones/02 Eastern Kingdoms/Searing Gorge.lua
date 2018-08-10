@@ -3,18 +3,9 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(32, {		-- Searing Gorge
+	m(13, {	-- Eastern Kingdoms
+		m(32, {	-- Searing Gorge
 			["groups"] = {			
-				n(0, { -- Zone Drop
-					["groups"] = {
-						o(266289, { -- Time Lost Chest
-							["groups"] = {
-								i(142358), -- Plans: Blazing Rapier
-							},
-						}),
-					},
-				}),
 				n(-25, {	-- Pet Battle
 					-- q(31912, {	--Kortas Darkhammer
 					-- }),
@@ -380,21 +371,6 @@ _.Zones =
 						dr(01.0, i(9913)),	-- Royal Gown
 						dr(01.0, i(9963)),	-- Warmonger's Circlet					
 					}),
-					n(5844, {	-- Dark Iron Slaver
-						un(2, dr(0.06, i(21547))),	-- Recipe: Elixir of Greater Firepower
-					}),
-					n(5840, {	-- Dark Iron Steamsmith
-						["groups"] = {
-							dr(3, i(10463)),  -- Pattern: Shadoweave Mask
-						},
-						["description"] = "As of 7.3, these mobs can now drop |cff3399ffPattern: Shadoweave Mask|r which is required for the |cff3399ffLucid Nightmare|r riddle mount."
-					}),
-					n(5846, {	-- Dark Iron Taskmaster
-						un(2, dr(0.04, i(21547))),	-- Recipe: Elixir of Greater Firepower
-					}),
-					n(8637, {	-- Dark Iron Watchman
-						un(2, dr(0.01, i(21547))),	-- Recipe: Elixir of Greater Firepower
-					}),
 					o(207496, { -- Dark Iron Treasure Chest
 						["groups"] = {
 							i(1718),	-- Basilisk Hide Pants
@@ -622,22 +598,6 @@ _.Zones =
 						dr(01.0, i(7532)),	-- Cabalist Spaulders
 						dr(01.0, i(9951)),	-- Chieftain's Cloak					
 					}),
-					n(47463, { 	-- Searing Flamewraith
-						["groups"] = {
-							i(142359, { 	-- Lava Oil
-								o(266289, { 	-- Time Lost Chest
-									["groups"] = {
-										i(142358, {	-- Plans: Blazing Rapier
-											i(12777), 	-- Blazing Rapier
-										}),
-									},
-									["modelID"] = 49789,
-									["modelScale"] = 2,
-								}),
-							}),
-						},
-						["description"] = "Kill Searing Flamewraith's until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down open the chest, then hearth.",
-					}),	
 					n(8280, { 	-- Shleipnarr
 						dr(07.0, i(7539)),	-- Champion's Leggings
 						dr(04.0, i(7532)),	-- Cabalist Spaulders
@@ -784,9 +744,44 @@ _.Zones =
 						dr(01.0, i(10058)),	-- Duskwoven Sandals
 						dr(01.0, i(10069)),	-- Righteous Bracers					
 					}), 
-					n(5861, {	-- Twilight Fire Guard
-						dr(0.03, i(14476)),-- Pattern: Cindercloth Gloves
-						dr(0.03, i(14471)),-- Pattern: Cindercloth Vest
+				}),
+				n(0,   {	-- Zone Drop
+					i(10463,       {	-- Pattern: Shadoweave Mask
+						["crs"] = {
+							5840,	-- Dark Iron Steamsmith
+						},
+						["description"] = "As of 7.3, Dark Iron Steamsmiths drop |cff3399ffPattern: Shadoweave Mask|r, which is required for the |cff3399ffLucid Nightmare|r mount."
+					}),
+					un(2, i(21547, {	-- Recipe: Elixir of Greater Firepower
+						["crs"] = {
+							5844,	-- Dark Iron Slaver
+							5846,	-- Dark Iron Taskmaster
+							8637,	-- Dark Iron Watchman
+						},
+					})),
+					n(47463,       { 	-- Searing Flamewraith
+						["groups"] = {
+							i(142359, { 	-- Lava Oil
+								o(266289, { 	-- Time Lost Chest
+									["groups"] = {
+										i(142358),	-- Plans: Blazing Rapier
+									},
+									["modelID"] = 49789,
+									["modelScale"] = 2,
+								}),
+							}),
+						},
+						["description"] = "Kill Searing Flamewraith's until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down open the chest, then hearth.",
+					}),
+					i(14476,       {	-- Pattern: Cindercloth Gloves
+						["crs"] = {
+							5861,	-- Twilight Fire Guard
+						},
+					}),
+					i(14471,       {	-- Pattern: Cindercloth Vest
+						["crs"] = {
+							5861,	-- Twilight Fire Guard
+						},
 					}),
 				}),
 				n(-40, {	-- Legacy

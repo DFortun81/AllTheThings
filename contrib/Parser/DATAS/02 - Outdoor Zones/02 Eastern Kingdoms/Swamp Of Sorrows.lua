@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(51, {		-- Swamp of Sorrows
+	m(13, {	-- Eastern Kingdoms
+		m(51, {	-- Swamp of Sorrows
 			["groups"] = {						
 				n(-25, {	-- Pet Battle
 							-- q(31913, {	-- Everessa
@@ -947,9 +947,7 @@ _.Zones =
 						i(16111),	-- Recipe: Spiced Chili Crab
 					}),
 					h(n(8176, { -- Gharash <Blacksmithing Supplies>
-						i(7995, {	-- Plans: Mithril Scale Bracers
-							i(7924),	-- Mithril Scale Bracers
-						}),
+						i(7995),	-- Plans: Mithril Scale Bracers
 					})),
 					a(n(11874, {	-- Masat T'andr <Superior Leatherworker>
 						i(12254),	-- Well Oiled Cloak
