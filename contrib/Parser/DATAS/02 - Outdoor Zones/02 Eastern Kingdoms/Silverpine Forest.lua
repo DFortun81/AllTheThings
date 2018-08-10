@@ -828,6 +828,7 @@ _.Zones =
 							},
 							["qg"] = 57770,	-- Zazzo Twinklefingers
 							["classes"] = { 4 },	-- Rogue
+              ["lvl"] = 85,
 							["sourceQuests"] = { 30092 },	-- Our Man in Gilneas
 						})),
 						qh(27349, {	-- Break in Communications: Dreadwatch Outpost
@@ -895,6 +896,7 @@ _.Zones =
 							},
 							["qg"] = 57770,	-- Zazzo Twinklefingers
 							["classes"] = { 4 },	-- Rogue
+              ["lvl"] = 85,
 							["sourceQuests"] = { 30093 },	-- Assassinate Creed
 						})),						
 						qh(27345, {	-- The F.C.D.
