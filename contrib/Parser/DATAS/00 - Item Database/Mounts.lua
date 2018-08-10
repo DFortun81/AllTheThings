@@ -116,3 +116,4 @@ i(163582, 279469); -- Qinsho's Eternal Hound
 i(163586, 254811); -- Squawks
 i(163585, 278979); -- Surf Jelly
 i(163584, 279466); -- Twilight Avenger
+i(161911, 259213);	-- Admiralty Stallion

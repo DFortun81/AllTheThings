@@ -94,6 +94,74 @@ _.Zones =
 						n(142564, { -- Leedan Gustaf <Profession Liason>
 							-- RECIPES
 						}),
+						n(135808, { -- Provisioner Fray <Proudmoore Admiralty Emissary>
+							["groups"] = {
+								i(160540),	-- Proudmoore Admiralty Tabard
+								i(161911),	-- Reins of the Admiralty Stallion
+								i(161574),	-- Boarding Action Vambraces
+								i(161571),	-- Cordage Sliding Grips
+								i(161570),	-- First Lieutenant's Ceremonial Belt
+								i(161568),	-- Maritime Spellweaver's Leggings
+								i(161569),	-- Master-At-Arms Wristguards
+								i(161573),	-- Proudmoore Marine's Legplates
+								i(161567),	-- Sailing Master's Sash
+								i(161572),	-- Yardarm Sharpshooter's Boots
+								i(161976),	-- Admiralty Marine's Duffel
+								i(160534),	-- Navy Blue Boat Cloak
+								i(162380, { -- Design: Tidal Amethyst Loop [Rank 3]	
+									["recipeID"] = 256519,
+									["spellID"] = 256519,
+								}), 	
+								i(162304, { -- Formula: Enchant Ring - Pact of Mastery [Rank 3]	
+									["recipeID"] = 255100,
+									["spellID"] = 255100,
+								}), 	
+								i(162317, { -- Formula: Enchant Weapon - Masterful Navigation [Rank 3]	
+									["recipeID"] = 255112,
+									["spellID"] = 255112,
+								}), 	
+								i(162316, { -- Formula: Enchant Weapon - Siphoning [Rank 3]	
+									["recipeID"] = 255112,
+									["spellID"] = 255112,
+								}), 	
+								i(163316, { -- Recipe: Battle Potion of Intellect [Rank 3]	
+									["recipeID"] = 279164,
+									["spellID"] = 279164,
+								}), 
+								i(162254, { -- Recipe: Coastal Mana Potion [Rank 3]	
+									["recipeID"] = 252387,
+									["spellID"] = 252387,
+								}), 	
+								i(162359, { -- Recipe: Contract: Proudmoore Admiralty [Rank 2]	
+									["recipeID"] = 256276,
+									["spellID"] = 256276,
+								}), 	
+								i(162134, { -- Recipe: Flask of the Vast Horizon [Rank 3]	
+									["recipeID"] = 252356,
+									["spellID"] = 252356,
+								}), 	
+								i(162414, { -- Recipe: Hardened Tempest Knuckles [Rank 3]	
+									["recipeID"] = 256784,
+									["spellID"] = 256784,
+								}), 	
+								i(162413, { -- Recipe: Mistscale Knuckles [Rank 3]	
+									["recipeID"] = 256781,
+									["spellID"] = 256781,
+								}), 	
+								i(162130, { -- Recipe: Potion of Bursting Blood [Rank 3]	
+									["recipeID"] = 252343,
+									["spellID"] = 252343,
+								}), 	
+								i(162327, { -- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2]	
+									["recipeID"] = 272063,
+									["spellID"] = 272063,
+								}), 	
+								i(162328, { -- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3]	
+									["recipeID"] = 272064,
+									["spellID"] = 272064,
+								}), 	
+							},
+						}),
 					},
 				}),
 			},

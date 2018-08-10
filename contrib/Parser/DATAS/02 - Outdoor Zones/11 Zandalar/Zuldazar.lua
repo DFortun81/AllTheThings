@@ -736,6 +736,7 @@ _.Zones =
 							["groups"] = {
 								i(160543), -- Tabard of the Tortollan Seekers
 								i(163513), -- Cou'pa
+								i(161514), -- Antiquity Handler's Gloves
 								i(161529), -- Girdle of the Scroll-Sages
 								i(161534), -- Legguards of Ai'twen's Resurgence
 								i(161494), -- Sea-Treated Footwraps

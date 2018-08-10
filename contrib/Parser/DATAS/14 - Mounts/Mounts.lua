@@ -437,6 +437,7 @@ _.Mounts =
 		i(87775),			-- Yu'lei, Daughter of Jade
 	}),
 	n(-2, { 	-- Vendor
+		i(161911),	-- Admiralty Stallion
 		i(85262),			-- Amber Scorpion
 		i(141713),			-- Arcadian War Turtle
 		{
