@@ -499,23 +499,38 @@ _.Zones =
 						i(11304),	-- Fine Longbow
 					}),
 				}),
-				n(  0, {	-- Zone Drops
-					n(594, { 	-- Defias Henchman
-						dr(03.0, i(1927)),		-- Deadmines Cleaver
+				n(0,   {	-- Zone Drops
+					i(1927, {	-- Deadmines Cleaver
+						["crs"] = {
+							594,	-- Defias Henchman
+						},
 					}),
-					n(517, {	-- Murloc Oracle
-						dr(1, i(1405)),			-- Foamspittle Staff
+					i(1405, {	-- Foamspittle Staff
+						["crs"] = {
+							517,	-- Murloc Oracle
+						},
+					}),
+					i(2087, {	-- Hard Crawler Carapace
+						["crs"] = {
+							830,	-- Sand Crawler
+						},
+					}),
+					i(2088, {	-- Long Crawler Limb
+						["crs"] = {
+							831,	-- Sea Crawler
+						},
 					}),
 					desc(i(2698), "Can drop from any mob in the zone, would recommend farming the murlocs in the north."),	-- Recipe: Cooked Crab Claw
 					desc(i(728), "Can drop from any mob in the zone, would recommend farming the Riverpaw Gnolls."),		-- Recipe: Westfall Stew
-					n(123, {	-- Riverpaw Mongrel
-						dr(3, i(821)),			-- Riverpaw Leather Vest
+					i(821,  {	-- Riverpaw Leather Vest
+						["crs"] = {
+							123,	-- Riverpaw Mongrel
+						},
 					}),
-					n(453, {	-- Riverpaw Mystic
-						dr(1, i(1391)),			-- Riverpaw Mystic Staff
-					}),
-					n(831, {	-- Sea Crawler
-						dr(1.9, i(2088)),		-- Long Crawler Limb
+					i(1391, {	-- Riverpaw Mystic Staff
+						["crs"] = {
+							453,	-- Riverpaw Mystic
+						},
 					}),
 				}),
 				n(-40, {	-- Legacy
