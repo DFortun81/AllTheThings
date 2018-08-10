@@ -216,6 +216,6 @@ _.Instances =
 			}),
 		},
 		["tierID"] = 8,
-		["lvl"] = 110,
+		["lvl"] = 110,  -- Lucetia Note: For some reason we need this here or the BfA D&R catagory swaps to needing 120.  No logic here, checking with Crieve.  DO NOT REMOVE
 	},
 };
