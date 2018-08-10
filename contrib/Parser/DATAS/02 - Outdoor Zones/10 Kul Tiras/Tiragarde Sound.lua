@@ -18,30 +18,39 @@ _.Zones =
 						ach(12852, { -- Treasures of Tiragarde Sound
 							o(279750, { -- Hay Covered Chest [Localized]
 								["questID"]  = 49963,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(281397, { -- Cutwater Treasure Chest [Localized]
 								["questID"]  = 50442,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(293962, { -- Precarious Noble Cache [Localized]
 								["questID"]  = 52866,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(293964, { -- Forgotten Smuggler's Stash [Localized]
 								["questID"]  = 52867,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(293965, { -- Scrimshaw Cache [Localized]
 								["questID"] = 52870,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							i(162571, { -- Soggy Treasure Map
 								["questID"] = 52807,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							i(162580, { -- Fading Treasure Map
 								["questID"] = 52833,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							i(162581, { -- Yellowed Treasure Map
 								["questID"] = 52836,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							i(162584, { -- Singed Treasure Map
 								["questID"] = 52845,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 						}),
 					},
@@ -95,7 +104,7 @@ _.Zones =
 			--["maps"] = { 
 			--	1163, -- Dazar'alor
 			--},
-			["description"] = "|cff66ccffTiragarde Sound sits on an inlet in the middle of Kul Tiras. It connects the Great Sea from one side of the island to the other, and is a connection point for all the major regions of Kul Tiras. The region is notably the seat of House Proudmoore. Boralus, the capital of Kul Tiras, is located here.\nThe people of Tiragarde Sound are renowned monster hunters, raging battle against the creatures of the sea, and struggle every day against pirates at their own shores. While the pirates were once content to stay at Freehold, in recent months, they have grown bolder, and began attacking Tiragarde Sound. During the war between the Alliance and Horde, the area served as the Alliance's staging point and home base.|r",
+			["description"] = "|cff66ccffTiragarde Sound sits on an inlet in the middle of Kul Tiras. It connects the Great Sea from one side of the island to the other, and is a connection point for all the major regions of Kul Tiras. The region is notably the seat of House Proudmoore. Boralus, the capital of Kul Tiras, is located here.\n\nThe people of Tiragarde Sound are renowned monster hunters, raging battle against the creatures of the sea, and struggle every day against pirates at their own shores. While the pirates were once content to stay at Freehold, in recent months, they have grown bolder, and began attacking Tiragarde Sound. During the war between the Alliance and Horde, the area served as the Alliance's staging point and home base.|r",
 		}),
 	}),
 };
