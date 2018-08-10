@@ -213,6 +213,7 @@ _.Zones =
 								--]]
 							["questID"] = 48439,
 							["icon"] = "Interface\\Icons\\INV_Misc_Urn_01",
+							["model"] = "World\\Expansion07\\Doodads\\Zandalaritroll\\8tr_zandalari_graveyard_urn03.mdx",
 						}),		
 						n(128965, { -- Uroku the Bound		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	

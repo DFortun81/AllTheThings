@@ -2491,6 +2491,8 @@ AllTheThings.Locales.enUS = {
 		[294173] = select(1,GetAchievementCriteriaInfo(12853,9)), -- Venture Co. Supply Chest
 		[289647] = select(1,GetAchievementCriteriaInfo(12853,1)), -- Weathered Treasure Chest
 		[282666] = select(1,GetAchievementCriteriaInfo(12942,25)), --  Urn of Agussu
+		[277333] = select(1,GetAchievementCriteriaInfo(12941,8)), --  Ancient Sarcophagus
+		[277897] = select(1,GetAchievementCriteriaInfo(12941,12)), --  Seething Cache
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
