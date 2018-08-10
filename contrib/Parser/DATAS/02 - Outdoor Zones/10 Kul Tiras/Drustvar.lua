@@ -156,7 +156,12 @@ _.Zones =
 						}),		
 						n(138871, { -- Ernie		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(154217), -- Pearly-White Jackknife
+								i(154217, { -- Pearly-White Jackknife
+									["crs"] = {
+										138870, -- Mick
+										138866, -- Mack
+									},
+								}),
 							}),	
 							["questID"] = 51749,	
 						}),		
@@ -204,7 +209,11 @@ _.Zones =
 						}),		
 						n(127877, { -- Longfang		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(160468), -- Longfang Paws
+								i(160468, { -- Longfang Paws
+									["crs"] =  {
+										127901, -- Henry Breakwater
+									},
+								}),
 							}),	
 							["questID"] = 48981,	
 						}),		
