@@ -11,9 +11,53 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(862, {	-- Zuldazar
 			["groups"] = {
-				--[[
 				n(-4, { -- Achievements
 					["groups"] = {
+						ach(12851, { -- Treasures of Zuldazar
+							["groups"] = {
+								o(288596, { -- Cache of Secrets	
+									["questID"] = 51338,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								}),	
+								o(284454, { -- Da White Shark's Bounty	
+									["questID"] = 50947,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								}),	
+								o(281898, { -- Dazar's Forgotten Chest	
+									["questID"] = 50707,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								}),	
+								o(281655, { -- Gift of the Brokenhearted	
+									["questID"] = 50582,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								}),	
+								o(276735, { -- Offerings of the Chosen	
+									["questID"] = 48938,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								}),	
+								o(290725, { -- Riches of Tor'nowa	
+									["questID"] = 51624,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								}),	
+								o(279609, { -- Spoils of Pandaria	
+									["questID"] = 49936,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								}),	
+								o(284455, { -- The Exile's Lament	
+									["questID"] = 50949,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								}),	
+								o(277561, { -- Warlord's Cache	
+									["questID"] = 49257,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								}),	
+								o(281092, { -- Witch Doctor's Hoard	
+									["questID"] = 50259,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								}),	
+							},
+						}),
+						--[[ NOTE: DISABLING FOR NOW WANT MORE INFORMATION FIRST
 						h(ach(13039, { -- Paku'ai
 							["groups"] = {
 								q(47438, { -- Picking a Side
@@ -27,9 +71,9 @@ _.Zones =
 								}),
 							},
 						}),
+						--]]
 					},
 				}),
-				--]]
 				n(-17, { -- Quests
 					["groups"] = {
 						h(ach(12555, {  -- Welcome to Zandalar		[TO-DO: Link to previous quests that deal with scenario)
@@ -783,7 +827,6 @@ _.Zones =
 						129515, -- Kao-Tien Battlemaster
 						128632, -- Nazeshi Overseer
 						133136, -- Rastakhan's Might Mutineer
-						129231, -- Rixxa Fluxflame <Chief Scientist>
 						121017, -- Sandfury Axe Thrower <Sandfury Tribe>
 						122504, -- Savagemane Ravasaur
 						133857, -- Shadraspawn Lurker
