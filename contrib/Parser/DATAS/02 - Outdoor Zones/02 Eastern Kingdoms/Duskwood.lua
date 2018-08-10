@@ -28,7 +28,7 @@ _.Zones =
 					},
 					["u"] = 2,					
 				}),				
-				n( -25, {	-- Pet Battle
+				n(-25,  {	-- Pet Battle
 					p(398), 	-- Black Rat
 					p(646), 	-- Chicken
 					p(396), 	-- Dusk Spiderling
@@ -45,7 +45,7 @@ _.Zones =
 						i(89125),	-- Sack of Pet Supplies
 					})),
 				}),
-				n( -17, {	-- Quests
+				n(-17,  {	-- Quests
 --					qg(43730, qa(26720)),	-- A Curse We Cannot Lift
 					qg(576, qa(26797, { -- A Daughters Love
 						i(60937),
@@ -254,7 +254,7 @@ _.Zones =
 					qg(289, qa(26660)),	-- Zombie Juice
 --]]
 				}),
-				n( -16, {	-- Rares	
+				n(-16,  {	-- Rares	
 					n(45785, { 	-- Carved One
 						dr(06.0, i(9773)),	-- Greenweave Robe
 						dr(05.0, i(9782)),	-- Bandit Jerkin
@@ -359,7 +359,7 @@ _.Zones =
 					}), 
 					n(91592, {	-- Forlorn Composer
 						["groups"] = {
-							i(122223)
+							i(122223),	-- Music Roll: Ghost
 						},
 						["description"] = "Travel to the northeast corner of Raven Hill Cemetery. Getting this music requires you to speak to Forlorn Composer while you are dead. The easiest way to do this is to fly up very high and dismount (removing armor first will avoid repair charges)."
 					}),
@@ -613,7 +613,7 @@ _.Zones =
 						dr(01.1, i(6565)),	-- Shimmering Gloves					
 					}),
 				}),
-				n(  -2, {	-- Vendors
+				n(-2,   {	-- Vendors
 					a(n(844, {	-- Antonio Perelli <Traveling Salesman>
 						["groups"] = {
 							i(4795),	-- Bear Bracers
@@ -657,7 +657,7 @@ _.Zones =
 						i(6275), 	-- Pattern: Greater Adept's Robe
 					})),
 				}),
-				n( -40, {	-- Legacy
+				n(-40,  {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(231, {	-- A Daughter's Love

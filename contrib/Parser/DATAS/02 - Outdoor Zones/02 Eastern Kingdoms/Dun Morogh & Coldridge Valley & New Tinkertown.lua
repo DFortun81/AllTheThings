@@ -244,7 +244,7 @@ _.Zones =
 					}), 			
 --					n(1137, { 	-- Edan the Howler	}), 
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					a(n(7955, {	-- Milli Featherwhistle <Mechanostrider Merchant>
 						i(18772),	-- Swift GReen Mechanostrider
 						i(18773),	-- Swift White Mechanostrider
@@ -304,7 +304,6 @@ _.Zones =
 							p(378), 	-- Rabbit
 							p(440), 	-- Snow Cub
 						}),
---[[]]--
 						n(-17, {	-- Quests					
 							qg(8416, qa( 3361)),	-- A Refugee's Quandary
 							qg(786, qa(24490)),	-- A Trip to Ironforge
@@ -357,7 +356,6 @@ _.Zones =
 								["classes"] = {5}, -- Priest
 							})),
 						}),
---[[]]--
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
 					["description"] = "|cff66ccffColdridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.|r",
@@ -583,7 +581,7 @@ _.Zones =
 --							n(1132, { -- Timber		}), 
 --]]
 						}),
-						n(-2, {		-- Vendors
+						n(-2,  {	-- Vendors
 							a(n(8508, {		-- Gretta Ganter <Fishing Supplies>
 								i(6325),	-- Recipe: Brilliant Smallfish
 							})),

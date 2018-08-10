@@ -1293,7 +1293,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					nh(734, {	-- Corporal Bluth <Camp Trader>
 						i(12231),	-- Recipe: Jungle Stew
 						i(12228),	-- Recipe: Roast Raptor

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(25, {		-- Hillsbrad Foothills
+	m(13, {	-- Eastern Kingdoms
+		m(25, {	-- Hillsbrad Foothills
 			["groups"] = {				
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken
@@ -1336,7 +1336,7 @@ _.Zones =
 						dr(01.0, i(9831)),	-- Scaled Cloak
 					}),
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(2480, {	-- Bro'kin <Alchemy Supplies>
 						i(14634),	-- Recipe: Frost Oil
 					}),
@@ -1440,7 +1440,7 @@ _.Zones =
 						i(4827),	-- Wizard's Belt
 					}),
 				}),
-				n(  0, {	-- Zone Drop
+				n(0,   {	-- Zone Drop
 					i(11152, {	-- Formula: Enchant Gloves - Fishing
 						["crs"] = {
 							14276,	-- Scargil

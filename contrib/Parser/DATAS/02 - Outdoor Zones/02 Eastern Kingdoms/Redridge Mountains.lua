@@ -595,7 +595,7 @@ _.Zones =
 						}),							
 					}), 
 				}),					
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					a(n(777, {	-- Amy Davenport <Tradeswoman>
 						i(5772),	-- Pattern: Red Woolen Bag
 						i(20576), 	-- Pattern: Black Whelp Tunic

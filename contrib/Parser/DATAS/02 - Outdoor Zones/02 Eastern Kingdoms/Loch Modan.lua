@@ -3,12 +3,9 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(48, {		-- Loch Modan
-			["groups"] = {			
-				n(0, {		-- Zone Drops
-					desc(i(2700), "Can drop from any mob in the zone, would recommend farming the crocolisks."),	-- Recipe: Succulent Pork Ribs
-				}),
+	m(13, {	-- Eastern Kingdoms
+		m(48, {	-- Loch Modan
+			["groups"] = {
 				n(-25, {	-- Pet Battle
 					p(441), 	-- Alpine Hare
 					p(437), 	-- Little Black Lamb
@@ -642,7 +639,7 @@ _.Zones =
 						dr(01.0, i(6550)),	-- Soldier's Wristguards					
 					}), 
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					a(n(1214, {	-- Aldren Cordon <Clothier>
 						i(4781),	-- Whispering Vest
 						i(4786),	-- Wise Man's Belt
@@ -683,15 +680,22 @@ _.Zones =
 						i(5640),	-- Recipe: Rage Potion
 					}),
 				}),
-				n(  0, {	-- Zone Drop
-					n(1197, {	-- Stonesplinter Shaman
-						un(7, i(2267)),	-- Stonesplinter Mace
+				n(0,   {	-- Zone Drop
+					i(2283, {	-- Rat Cloth Belt
+						["crs"] = {
+							1177,	-- Tunnel Rat Surveyor
+						},
 					}),
-					n(1176, { 	-- Tunnel Rat Forager
-						un(7, i(2281)),	 -- Rodentia Flint Axe
+					desc(i(2700), "Can drop from any mob in the zone, would recommend farming the crocolisks."),	-- Recipe: Succulent Pork Ribs
+					i(2281, {	-- Rodentia Flint Axe
+						["crs"] = {
+							1176,	-- Tunnel Rat Forager
+						},
 					}),
-					n(1177, { 	-- Tunnel Rat Surveyor
-						un(7, i(2283)),	-- Rat Cloth Belt
+					i(2267, {	-- Stonesplinter Axe
+						["crs"] = {
+							1197,	-- Stonesplinter Shaman
+						},
 					}),
 				}),
 				n(-40, {	-- Legacy
