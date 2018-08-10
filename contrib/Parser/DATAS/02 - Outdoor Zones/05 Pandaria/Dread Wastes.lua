@@ -583,6 +583,7 @@ _.Zones =
 					}),
 					q(31603, {	-- Seeds of Fear
 						["qg"] = 64599,	-- Ambersmith Zikk
+            ["repeatable"] = true,
 					}),
 					o(214562, {	-- Sha-Haunted Crystal
 						q(31661),	-- A Source of Terrifying Power
