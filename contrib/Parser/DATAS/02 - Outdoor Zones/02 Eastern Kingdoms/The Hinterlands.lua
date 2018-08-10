@@ -936,6 +936,13 @@ _.Zones =
 						i(18046),	-- Recipe: Tender Wolf Steak
 					}),
 				}),
+				n(0,   {	-- Zone Drop
+					i(15760, {	-- Pattern: Ironfeather Breastplate
+						["crs"] = {
+							2644,	-- Vilebranch Hideskinner						
+						},
+					}),
+				}),	
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)

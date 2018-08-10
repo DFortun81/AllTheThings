@@ -1203,6 +1203,11 @@ _.Zones =
 							7037,	-- Thaurissan Firewalker
 						},
 					}),
+					i(15732, {	-- Pattern: Volcanic Leggings
+						["crs"] = {
+							7035,	-- Firegut Brute
+						},
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
