@@ -744,23 +744,74 @@ _.Zones =
 								i(161544), -- Vambraces of a Thousand Year Toil
 								i(161503), -- Wristwraps of Scrollbinding
 								i(160538), -- Cape of the Scroll Keepers*
-								i(163026), -- Pattern: Embroidered Deep Sea Bag [Rank 2]
-								i(162298), -- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]
-								i(162301), -- Formula: Enchant Ring - Seal of Versatility [Rank 3]
-								i(162288), -- Recipe: Bountiful Captain's Feast [Rank 2]
-								i(162289), -- Recipe: Bountiful Captain's Feast [Rank 3]
-								i(162358), -- Recipe: Codex of the Quiet Mind [Rank 3]
-								i(162373), -- Recipe: Contract: Champions of Azeroth [Rank 2]
-								i(162371), -- Recipe: Contract: Tortollan Seekers [Rank 2]
-								i(162377), -- Recipe: Darkmoon Card of War [Rank 3]
-								i(162136), -- Recipe: Endless Tincture of Renewed Combat [Rank 3]
-								i(162287), -- Recipe: Galley Banquet [Rank 3]
-								i(162292), -- Recipe: Grilled Catfish [Rank 3]
-								i(162352), -- Recipe: Inscribed Vessel of Mysticism [Rank 3]
-								i(162293), -- Recipe: Seasoned Loins [Rank 3]
-								i(162137), -- Recipe: Siren's Alchemist Stone [Rank 3]
-								i(162376), -- Recipe: Tome of the Quiet Mind [Rank 3]
-								i(162023), -- Technique: Glyph of the Dolphin [Rank 3]
+								i(163026, { -- Pattern: Embroidered Deep Sea Bag [Rank 2]	
+									["recipeID"] = 257129,
+									["spellID"] = 257129,
+								}),	
+								i(162298, { -- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]	
+									["recipeID"] = 255094,
+									["spellID"] = 255094,
+								}),	
+								i(162301, { -- Formula: Enchant Ring - Seal of Versatility [Rank 3]	
+									["recipeID"] = 255097,
+									["spellID"] = 255097,
+								}),	
+								i(162288, { -- Recipe: Bountiful Captain's Feast [Rank 2]	
+									["recipeID"] = 259423,
+									["spellID"] = 259423,
+								}),	
+								i(162289, { -- Recipe: Bountiful Captain's Feast [Rank 3]	
+									["recipeID"] = 259422,
+									["spellID"] = 259422,
+								}),	
+								i(162358, { -- Recipe: Codex of the Quiet Mind [Rank 3]	
+									["recipeID"] = 256234,
+									["spellID"] = 256234,
+								}),	
+								i(162373, { -- Recipe: Contract: Champions of Azeroth [Rank 2]	
+									["recipeID"] = 256298,
+									["spellID"] = 256298,
+								}),	
+								i(162371, { -- Recipe: Contract: Tortollan Seekers [Rank 2]	
+									["recipeID"] = 256295,
+									["spellID"] = 256295,
+								}),	
+								i(162377, { -- Recipe: Darkmoon Card of War [Rank 3]	
+									["recipeID"] = 256246,
+									["spellID"] = 256246,
+								}),	
+								i(162136, { -- Recipe: Endless Tincture of Renewed Combat [Rank 3]	
+									["recipeID"] = 252363,
+									["spellID"] = 252363,
+								}),	
+								i(162287, { -- Recipe: Galley Banquet [Rank 3]	
+									["recipeID"] = 259420,
+									["spellID"] = 259420,
+								}),	
+								i(162292, { -- Recipe: Grilled Catfish [Rank 3]	
+									["recipeID"] = 259432,
+									["spellID"] = 259432,
+								}),	
+								i(162352, { -- Recipe: Inscribed Vessel of Mysticism [Rank 3]	
+									["recipeID"] = 256252,
+									["spellID"] = 256252,
+								}),	
+								i(162293, { -- Recipe: Seasoned Loins [Rank 3]	
+									["recipeID"] = 256249,
+									["spellID"] = 256249,
+								}),	
+								i(162137, { -- Recipe: Siren's Alchemist Stone [Rank 3]	
+									["recipeID"] = 259435,
+									["spellID"] = 259435,
+								}),	
+								i(162376, { -- Recipe: Tome of the Quiet Mind [Rank 3]	
+									["recipeID"] = 252370,
+									["spellID"] = 252370,
+								}),	
+								i(162023, { -- Technique: Glyph of the Dolphin [Rank 3]	
+									["recipeID"] = 256237,
+									["spellID"] = 256237,
+								}),	
 							},
 						}),
 						n(132114, { -- Griftah <Amazing Amulets>
