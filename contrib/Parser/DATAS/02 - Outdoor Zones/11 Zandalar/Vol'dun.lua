@@ -6,7 +6,6 @@
 ---	Do not alter or edit anything related to quests	/ items			---
 ---	Things are set in the file in a specifc order and reasoning		---
 -----------------------------------------------------------------------
-
 _.Zones =
 {
 	m(875, { -- Zandalar
@@ -62,17 +61,174 @@ _.Zones =
 				}),
 				n(-17, { -- Quests
 					["groups"] = {
-						
 					},
 				}),
 				n(-16, { -- Rares
+					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
 					["groups"] = {
-							
+							n(135852, { -- Ak'tar		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161021), -- Soaring Slateclaw Gloves
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(130439, { -- Ashmane		
+								-- ["questID"] = 	
+							}),		
+							n(128553, { -- Azer'tor		
+								-- ["questID"] = 	
+							}),		
+							n(128497, { -- Bajiani the Slick		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(162622), -- Groggy Brawler's Chestplate
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(129476, { -- Bloated Krolusk		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161037), -- Sand Scoured Girdle
+								}),	
+								 ["questID"] = 47562,
+							}),		
+							n(136393, { -- Bloodwing Bonepicker		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161019), -- Dread Vulture Waistcord
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(136346, { -- Captain Stef "Marrow" Quin
+								-- ["questID"] = 	
+							}),		
+							n(124722, { -- Commodore Calhoun		
+								-- ["questID"] = 	
+							}),		
+							n(136335, { -- Enraged Krolusk		
+								-- ["questID"] = 	
+							}),	
+							n(136323, { -- Fangcaller Xorreth		
+								-- ["questID"] = 	
+							}),
+							n(129027, { -- Golanar		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(160972), -- Herculean Golden Sword
+								}),	
+								-- ["questID"] = 	
+							}),	
+							n(128674, { -- Gut-Gut the Glutton		
+								-- ["questID"] = 	
+							}),		
+							n(130443, { -- Hivemother Kraxi		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161027), -- Venomous Hivemother Cord
+								}),	
+								["questID"] = 47533,	
+							}),		
+							n(129283, { -- Jumbo Sandsnapper		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161107), -- Brineshell Footguards
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(136341, { -- Jungleweb Hunter		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161026), -- Spiderbite Wristwraps
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(128686, { -- Kamid the Trapper		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161038), -- Sand Trapper's Legguards
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(137681, { -- King Clickyclack		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161108), -- Kingshell Legplates
+								}),	
+								["questID"] = 51424,
+							}),	
+							n(128951, { -- Nez'ara		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161024), -- Wrathful Sister's Cincture
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(136340, { -- Relic Hunter Hazaak		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(160956), -- Hazaak's Windshorn Claws
+								}),	
+								["questID"] = 51126,	
+							}),		
+							n(127776, { -- Scaleclaw Broodmother		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161039), -- Sandclaw Handguards
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(136336, { -- Scorpox		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161030), -- Vicious Scorpidsting Sandals
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(136338, { -- Sirokar		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161099), -- Wind-Scoured Greaves
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(134571, { -- Skycaller Teskris		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(160968), -- Skycaller Spellstaff
+								}),	
+								["questID"] = 50637,	
+							}),		
+							n(134745, { -- Skycarver Krakit		
+								-- ["questID"] = 	
+							}),		
+							n(136304, { -- Songstress Nahjeen		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161025), -- Wailing Sister's Gloves
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(130401, { -- Vathikur		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161097), -- Rattling Earth Armwraps
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(129180, { -- Warbringer Hozzik		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161032), -- Spire-Charged Links
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(141931, { -- Warlord Dagu		
+								-- ["questID"] = 	
+							}),
+							n(134638, { -- Warlord Zothix		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161031), -- Zothix's Conductive Vambraces
+								}),	
+								["questID"] = 50662,	
+							}),
+							n(134625, { -- Warmother Captive		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161103), -- Barbarous Captive's Wargreaves
+								}),	
+								-- ["questID"] = 	
+							}),		
+							n(129411, { -- Zunashi the Exile		
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161119), -- Ravasaur Skull Bijou
+								}),	
+								["questID"] = 48319,	
+							}),
 					},
 				}),
 				n(-2, {  -- Vendors
 					["groups"] = {
-						
 					},
 				}),
 				n(0, { -- Zone Drop
