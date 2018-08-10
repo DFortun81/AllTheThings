@@ -778,12 +778,12 @@ _.Zones =
 					h(n(9548, {	-- Cawind Trueaim <Gunsmith & Bowyer>
 						i(11308),	-- Sylvan Shortbow
 					})),
-					h(n(7854, {	-- Jangdor Swiftstrider <Leatherworking Supplies>
+					nh(7854, { -- Jangdor Swiftstrider <Leatherworking Supplies>
 						i(15734), -- Pattern: Living Shoulders						
 						i(8409), -- Pattern: Nightscape Shoulders						
 						i(8385), -- Pattern: Turtle Scale Gloves							
 						i(7451), -- Pattern: Green Whelp Bracers						
-					})),
+					}),
 					na(8157, {	-- Logannas <Alchemy Supplies>
 						i(9302),	-- Recipe: Ghost Dye
 						i(6057),	-- Recipe: Nature Protection Potion
@@ -792,11 +792,11 @@ _.Zones =
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					a(n(40226, {-- Pratt McGrubben <Leatherworking Supplies>
+					na(40226, {-- Pratt McGrubben <Leatherworking Supplies>
 						i(15734), -- Pattern: Living Shoulders						
 						i(8385), -- Pattern: Turtle Scale Gloves						
 						i(7451), -- Pattern: Green Whelp Bracers						
-					})),
+					}),
 					nh(8145, {	-- Sheendra Tallgrass <Trade Supplies>
 						i(13949),	-- Recipe: Baked Salmon
 						i(12229),	-- Recipe: Hot Wolf Ribs

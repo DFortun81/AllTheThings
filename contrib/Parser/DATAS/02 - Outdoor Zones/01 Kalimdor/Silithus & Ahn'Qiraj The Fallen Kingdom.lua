@@ -777,12 +777,12 @@ END OF MICRO-HOLIDAY --]]
 							i(22770),	-- Pattern: Bramblewood Boots
 							i(22771),	-- Pattern: Bramblewood Helm
 							i(20382),	-- Pattern: Dreamscale Breastplate
+							i(20509),	-- Pattern: Sandstalker Bracers
+							i(20511),	-- Pattern: Sandstalker Breastplate
+							i(20510),	-- Pattern: Sandstalker Gauntlets
 							i(20506),	-- Pattern: Spitfire Bracers
 							i(20507),	-- Pattern: Spitfire Gauntlets
-							i(20508),	-- Pattern: Spitfire Breastplate
-							i(20509),	-- Pattern: Sandstalker Bracers
-							i(20510),	-- Pattern: Sandstalker Gauntlets
-							i(20511),	-- Pattern: Sandstalker Breastplate
+							i(20508),	-- Pattern: Spitfire Breastplate							
 						},
 						["description"] = "Vendor is located upstairs in the northern building in Southwind Village.|r",
 					}),
