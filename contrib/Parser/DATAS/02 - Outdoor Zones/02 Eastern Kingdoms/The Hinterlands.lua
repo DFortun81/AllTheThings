@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(26, {		-- The Hinterlands
+	m(13, {	-- Eastern Kingdoms
+		m(26, {	-- The Hinterlands
 			["groups"] = {
 				n(-25, {	-- Pet Battle
 					p(449),	-- Brown Marmot
@@ -920,14 +920,10 @@ _.Zones =
 						i(12257),	-- Heavy Notched Belt
 					})),
 					n(12958, {	-- Gigget Zipcoil <Trade Supplies>
-						i(15735, {	-- Pattern: Ironfeather Shoulders
-							i(15067),	-- Ironfeather Shoulders
-						}),
+						i(15735),	-- Pattern: Ironfeather Shoulders
 					}),
 					a(n(8161, {	-- Harggan <Blacksmithing Supplies>
-						i(7995, {	-- Plans: Mithril Scale Bracers
-							i(7924),	-- Mithril Scale Bracers
-						}),
+						i(7995),	-- Plans: Mithril Scale Bracers
 					})),
 					nh(14738, {	-- Otho Moji'ko <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight

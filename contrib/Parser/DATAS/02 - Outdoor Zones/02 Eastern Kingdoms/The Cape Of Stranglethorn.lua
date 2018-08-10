@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
+	m(13, {	-- Eastern Kingdoms
 		m(210, {	-- The Cape of Stranglethorn
 			["groups"] = {			
 				n(-25, {	-- Pet Battle

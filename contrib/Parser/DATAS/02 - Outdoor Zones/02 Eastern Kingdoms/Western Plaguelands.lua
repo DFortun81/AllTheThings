@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(22, {		-- Western Plaguelands
+	m(13, {	-- Eastern Kingdoms
+		m(22, {	-- Western Plaguelands
 			["groups"] = {
 				n(-25, {	-- Pet Battle
 					p(398), 	-- Black Rat
@@ -1147,9 +1147,6 @@ _.Zones =
 						dr(01.0, i(7441)),	-- Sentinel Cap
 						dr(01.0, i(7435)),	-- Twilight Mantle					
 					}), 
-					n(1783, {	-- Skeletal Flayer
-						dr(0.03, i(9296)),	-- Recipe: Gift of Arthas
-					}),
 					n(1851, { 	-- The Husk
 						dr(12.0, i(7437)),	-- Twilight Cuffs
 						dr(05.0, i(9868)),	-- Renegade Gauntlets
@@ -1227,7 +1224,7 @@ _.Zones =
 					}), 
 --					n(111122, {	-- Large Vile Slime	}),
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
 						["groups"] = {
 							i(19446),	-- Formula: Enchant Bracer - Argent Versatility
@@ -1250,12 +1247,8 @@ _.Zones =
 						["description"] = "To view this vendor's shop, you need to be at least Honored with Argent Dawn.  Although this vendor is in an Alliance area, Horde players may still purchase from this NPC provided they have the required reputation.",
 					}),
 					a(n(12942, {	-- Leonard Porter <Leatherworking Supplies>
-						i(15741, {	-- Pattern: Stormshroud Pants
-							i(15057),	-- Stormshroud Pants
-						}),
-						i(15725, {	-- Pattern: Wicked Leather Gauntlets
-							i(15083),	-- Wicked Leather Gauntlets
-						}),
+						i(15741),	-- Pattern: Stormshroud Pants
+						i(15725),	-- Pattern: Wicked Leather Gauntlets
 					})),
 					n(11278,{	-- Magnus Frostwake
 						i(8030),	-- Plans: Ebon Shiv
@@ -1264,6 +1257,13 @@ _.Zones =
 						i(12703),	-- Plans: Storm Gauntlets
 						i(13501),	-- Recipe: Major Mana Potion
 						i(13485),	-- Recipe: Transmute Water to Air
+					}),
+				}),
+				n(0,   {	-- Zone Drop
+					i(9296, {	-- Recipe: Gift of Arthas
+						["crs"] = {
+							1783,	-- Skeletal Flayer
+						},
 					}),
 				}),
 				n(-40, {	-- Legacy

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(52, {		-- Westfall
+	m(13, {	-- Eastern Kingdoms
+		m(52, {	-- Westfall
 			["groups"] = {							
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken

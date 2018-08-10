@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(18, {		-- Tirisfal Glades
+	m(13, {	-- Eastern Kingdoms
+		m(18, {	-- Tirisfal Glades
 			["groups"] = {
 				n(-25, {	-- Pet Battle
 					p(417),		-- Bat
@@ -507,21 +507,15 @@ _.Zones =
 						i(18173),	-- Shadow Mantle of the Dawn
 					}),
 					nh(3522, { -- Constance Brisboise <Apprentice Clothier>
-						i(6270, {	-- Pattern: Blue Linen Vest
-							i(6240)	-- Blue Linen Vest
-						}),
+						i(6270),	-- Pattern: Blue Linen Vest
 					}),
 					nh(3550, { -- Martine Tramblay <Fishing Supplies>
 						i(6325),	-- Recipe: Brilliant Smallfish
 						i(6326),	-- Recipe: Slitherskin Mackerel
 					}),
 					nh(12943, { -- Werg Thickblade <Leatherworking Supplies>
-						i(15741, {	-- Pattern: Stormshroud Pants
-							i(15057)	-- Stormshroud Pants
-						}),
-						i(15725, {	-- Pattern: Wicked Leather Gauntlets
-							i(15083)	-- Wicked Leather Gauntlets
-						}),
+						i(15741),	-- Pattern: Stormshroud Pants
+						i(15725),	-- Pattern: Wicked Leather Gauntlets
 					}),
 					nh(4731, { -- Zachariah Post <Undead Horse Merchant>
 						i(13334),

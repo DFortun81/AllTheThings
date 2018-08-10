@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(21, {		-- Silverpine Forest
+	m(13, {	-- Eastern Kingdoms
+		m(21, {	-- Silverpine Forest
 			["groups"] = {				
 				n(-25, {	-- Pet Battle
 					p(455),		-- Blighted Squirrel
@@ -708,7 +708,7 @@ _.Zones =
 					}),
 --					n(46981, { 	-- Nightlash	}), 
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					nh(3552, { -- Alexandre Lefevre <Leather Armor Merchant>
 						i(4788), -- Agile Boots
 						i(4789), -- Stable Boots
@@ -828,7 +828,7 @@ _.Zones =
 							},
 							["qg"] = 57770,	-- Zazzo Twinklefingers
 							["classes"] = { 4 },	-- Rogue
-              ["lvl"] = 85,
+							["lvl"] = 85,
 							["sourceQuests"] = { 30092 },	-- Our Man in Gilneas
 						})),
 						qh(27349, {	-- Break in Communications: Dreadwatch Outpost

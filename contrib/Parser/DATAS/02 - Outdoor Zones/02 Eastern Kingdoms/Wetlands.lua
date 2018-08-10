@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(56, {		-- Wetlands
+	m(13, {	-- Eastern Kingdoms
+		m(56, {	-- Wetlands
 			["groups"] = {								
 				n(-25, {	-- Pet Battle
 					p(398), 	-- Black Rat
@@ -239,15 +239,6 @@ _.Zones =
 						["modelScale"] = 1.5,
 						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
-					}),
-					n(42043, {	-- Ebon Slavehunter
-						["groups"] = {
-							dr(0.09, i(8499)), 		-- Tiny Crimson Whelpling Pet
-						},
-						["description"] = "The best spot to farm this pet is exactly at 67.3,47.2. There is a \"battle\" going on between Ebon Slavehunters and Dragonmaw Whelpstealers. This point is an area where 4 ish of them meet to wage war with each other. They spawn in relatively 15 seconds then engage again. You don't even have to move. Having skinning helps so you can clear the big Ebon Slavehunter corpses, but it isn't needed."
-					}),
-					n(42042, {	-- Ebon Whelp
-						dr(0.08, i(10822)),		-- Dark Whelpling Pet
 					}),
 					n(2108, { 	-- Garneg Charskull
 						dr(05.0, i(9814)),	-- Fortified Belt
@@ -619,11 +610,8 @@ _.Zones =
 						dr(01.1, i(9813)),	-- Fortified Gauntlets
 						dr(01.0, i(9773)),	-- Greenweave Robe					
 					}), 
-					n(0, { 		-- Zone Drop
-						dr(0.01, i(8499)), 		-- Tiny Crimson Whelpling Pet
-					}),
 				}),
-				n( -2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					a(n(1441, {	-- Brak Durnad <Weaponsmith>
 						i(4817),	-- Blessed Claymore
 						i(4818),	-- Executioner's Sword
@@ -666,12 +654,49 @@ _.Zones =
 						i(4831),	-- Stalking Pants
 					})),
 				}),
-				n(  0, {	-- Zone Drop
-					n(1036, {	-- Dragonmaw Centurion
-						un(7, i(753)), 	-- Dragonmaw Shortsword
+				n(0,   {	-- Zone Drop
+					i(10822,      {	-- Dark Whelpling (PET!)
+						["crs"] = {
+							42042,	-- Ebon Whelp
+						},
 					}),
-					n(1035, { 	-- Dragonmaw Swamprunner
-						un(7, i(1955)), 	-- Dragonmaw Chain Boots
+					un(7, i(1955, {	-- Dragonmaw Chain Boots
+						["crs"] = {
+							1035,	-- Dragonmaw Swamprunner
+						},
+					})),
+					un(7, i(753,  {	-- Dragonmaw Shortsword
+						["crs"] = {
+							1036,	-- Dragonmaw Centurion
+						},
+					})),
+					i(8499,       {	-- Tiny Crimson Whelpling (PET!)
+						["crs"] = {
+							41425,	-- Bluegill Murloc
+							4040,	-- Cave Stalker
+							41137,	-- Displaced Threshadon
+							1038,	-- Dragonmaw Shadowwarder
+							42041,	-- Dragonmaw Whelpstealer
+							42043,	-- Ebon Slavehunter
+							42042,	-- Ebon Whelp
+							41132,	-- Flood Elemental
+							44116,	-- Harbor Crawler
+							41293,	-- Harbor Shredfin
+							1016,	-- Highland Lashtail
+							41400,	-- Highland Razormaw
+							41401,	-- Highland Scytheclaw
+							1111,	-- Leech Stalker
+							41388,	-- Living Fossil
+							41390,	-- Mosshide Gnoll
+							41391,	-- Mosshide Mystic
+							41342,	-- Mottled Screecher
+							41424,	-- Mouldering Mirebeast
+							41389,	-- Paleolithic Elemental
+							41145,	-- Silty Oozeling
+							41419,	-- Wetlands Crocolisk
+							
+						},
+						["description"] = "The best spot to farm this pet is exactly at 67.3,47.2. There is a \"battle\" going on between Ebon Slavehunters and Dragonmaw Whelpstealers. Around four of them meet at this point to wage war with each other. They spawn roughly every 15 seconds and engage again, so you don't even have to move. Having skinning helps so you can clear the big Ebon Slavehunter corpses, but it isn't needed."
 					}),
 				}),
 				n(-40, {	-- Legacy

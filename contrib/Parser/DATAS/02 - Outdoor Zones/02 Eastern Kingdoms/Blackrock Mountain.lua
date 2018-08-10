@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
+	m(13, {	-- Eastern Kingdoms
 		m(35, {	-- Blackrock Mountain
 			["groups"] = {	
 				n(-16, { 	-- Rares	
