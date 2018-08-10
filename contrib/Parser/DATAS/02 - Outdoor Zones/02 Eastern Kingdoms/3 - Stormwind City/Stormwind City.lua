@@ -534,6 +534,7 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						},
 						["qg"] = 111049, -- Master Mathias Shaw
 						["classes"] = { 4 },
+						["lvl"] = 98,
 					}),
 					qg(107574, qa( 7782, {		-- The Lord of Blackrock
 						i(19366),	-- Master Dragonslayer's Orb
