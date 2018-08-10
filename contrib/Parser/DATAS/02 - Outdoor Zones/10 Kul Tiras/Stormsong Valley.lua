@@ -135,9 +135,13 @@ _.Zones =
 						}),		
 						n(141043, { -- Jakala the Cruel		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(159179), -- Headtaker's Helm
+								i(159179, { -- Headtaker's Helm
+									["crs"] = {
+										140925, -- Doc Marrtens
+									},
+								}),
 							}),	
-							["questID"] = 52324,	
+							["questID"] = 52324, -- Possibly 52323
 						}),		
 						n(141029, { -- Kickers		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
