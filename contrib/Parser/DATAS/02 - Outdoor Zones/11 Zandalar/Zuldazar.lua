@@ -573,6 +573,7 @@ _.Zones =
 					},
 				}),
 				n(-16, { -- Rares
+					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
 					["groups"] = {
 						n(129961, { -- Atal'zul Gotaka		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	

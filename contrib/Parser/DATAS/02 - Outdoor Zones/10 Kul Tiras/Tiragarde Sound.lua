@@ -110,6 +110,7 @@ _.Zones =
 						n(132086, { -- Black-Eyed Bart			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(158650), -- Sea-Scourge Greatblade	
+								i(163718), -- Forbidden Sea Shanty of the Black Sphere
 							}),		
 							-- ["questID"] = 		
 						}),			
@@ -121,7 +122,13 @@ _.Zones =
 						}),			
 						n(132088, { -- Captain Wintersail			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(155422), -- Pirate Chief's Speargun	
+								i(155422, { -- Pirate Chief's Speargun	
+									["crs"] = {
+										132104, -- Blackpowder Smuggeler
+										136221, -- Strongarm Smuggler
+										132093, -- Wavecaller Smuggler
+									},
+								}),
 							}),		
 							-- ["questID"] = 		
 						}),			
@@ -268,7 +275,14 @@ _.Zones =
 							}),		
 							-- ["questID"] = 		
 						}),			
-						n(137176, { -- Walter Ferrell			
+						n(137176, { -- Walter Ferrell	
+							--[[
+								["crs"] = {
+									137181, -- Mead-Craving Cranee
+									137182, -- Honey-Crazed Gull
+									137183, -- Honey-Coated Slitherer
+									137175, -- Bradford Crusco
+							--]]
 							-- ["questID"] = 		
 						}),			
 					},
