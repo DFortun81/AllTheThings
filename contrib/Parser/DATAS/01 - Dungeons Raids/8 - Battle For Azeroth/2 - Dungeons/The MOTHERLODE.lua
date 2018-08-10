@@ -185,7 +185,10 @@ _.Instances =
 							e(2116, { -- Mogul Razdunk
 								["groups"] = {
 									ach(12846), -- Mythic: The MOTHERELODE!!
-									i(161135), -- Schematic: MechaMogul Mk2
+									i(161135, { -- Schematic: MechaMogul Mk2
+										["recipeID"] = 274621,
+										["spellID"] = 274621,
+									}),
 									i(159641), -- G3T-00t
 									i(158364), -- High Altitude Turban
 									i(159360), -- Crashguard Spaulders

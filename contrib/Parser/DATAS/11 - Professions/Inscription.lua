@@ -85,7 +85,6 @@ profession(773, { -- Inscription
 	}),
 	n(-100002, { -- PLACE_HOLDER
 		i(162358),	-- Recipe: Codex of the Quiet Mind
-		i(162373),	-- Recipe: Contract: Champions of Azeroth
 		i(162374),	-- Recipe: Contract: Champions of Azeroth
 		i(162361),	-- Recipe: Contract: Order of Embers
 		i(162362),	-- Recipe: Contract: Order of Embers
@@ -95,18 +94,14 @@ profession(773, { -- Inscription
 		i(162364),	-- Recipe: Contract: Storm's Wake
 		i(162368),	-- Recipe: Contract: Talanji's Expedition
 		i(162754),	-- Recipe: Contract: Talanji's Expedition
-		i(162371),	-- Recipe: Contract: Tortollan Seekers
 		i(162372),	-- Recipe: Contract: Tortollan Seekers
 		i(162370),	-- Recipe: Contract: Voldunai
 		i(162755),	-- Recipe: Contract: Voldunai
 		i(162366),	-- Recipe: Contract: Zandalari Empire
 		i(162753),	-- Recipe: Contract: Zandalari Empire
-		i(162377),	-- Recipe: Darkmoon Card of War
 		i(162353),	-- Recipe: Honorable Combatant's Etched Vessel
 		i(162354),	-- Recipe: Honorable Combatant's Etched Vessel
 		i(162355),	-- Recipe: Inked Vessel of Robust Regeneration
-		i(162352),	-- Recipe: Inscribed Vessel of Mysticism
-		i(162376),	-- Recipe: Tome of the Quiet Mind
 		i(136705),	-- Technique: Aqual Mark
 		i(141643),	-- Technique: Codex of the Clear Mind
 		i(137729),	-- Technique: Codex of the Tranquil Mind
