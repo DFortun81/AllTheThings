@@ -575,7 +575,10 @@ _.Zones =
 				n(-16, { -- Rares
 					["groups"] = {
 						n(129961, { -- Atal'zul Gotaka		
-							["questID"] = 50280	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161042),-- Gotaka's Wallopers
+							}),
+							["questID"] = 50280,
 						}),		
 						n(129343, { -- Avatar of Xolotal		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -587,37 +590,43 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161104), -- Blood Feast Gauntlets
 							}),	
-							["questID"] = 49267	
+							["questID"] = 49267,	
 						}),
 						n(133190, { -- Daggerjaw		
-							--["questID"] = 	
+							["questID"] = 50269,
 						}),		
-						n(136428, { -- Dark Chronicler		
+						n(136428, { -- Dark Chronicler
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(160979), -- Ancient Chronicler's Focus
+							}),
 							["questID"] = 51083,
 						}),		
 						n(134760, { -- Darkspeaker Jo'la		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160958), -- Darkspeaker Scepter
 							}),	
-							--["questID"] = 	
+							["questID"] = 50693,
 						}),		
-						n(129954, { -- Gahz'ralka		
-							--["questID"] = 	
+						n(129954, { -- Gahz'ralka
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161043), -- Relentless Hydra Legguards
+							}),
+							["questID"] = 50439,	
 						}),		
 						n(133155, { -- G'Naat		
-							--["questID"] = 	
+							["questID"] = 50260,
 						}),		
 						n(124185, { -- Golrakahn		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161035), -- Thundercrash Footguards
 							}),	
-							["questID"] = 47792	
+							["questID"] = 47792,
 						}),		
 						n(134738, { -- Hakbi the Risen		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160978), -- Golden Tomb Defender
 							}),	
-							["questID"] = 50677
+							["questID"] = 50677,
 						}),		
 						n(134637, { -- Headhunter Lee'za		
 							--["questID"] = 	
@@ -626,50 +635,79 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160984), -- Sauroscale Cloak of Adaptation
 							}),	
-							["questID"] = 50859	
+							["questID"] = 50859,	
 						}),		
-						n(132244, { -- Kiboku		
-							["questID"] = 50159	
+						n(132244, { -- Kiboku
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161112), --  Hillshaker Armplates
+							}),
+							["questID"] = 50159,	
 						}),		
 						n(120899, { -- Kul'krazahn		
+							["questID"] = 48333,
 						}),		
-						n(131233, { -- Lei-zhi		
+						n(131233, { -- Lei-zhi
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161033), -- Jolting Leap Legguards
+							}),
 							["questID"] = 49911,
 						}),		
-						n(134782, { -- Murderbeak		
+						n(134782, { -- Murderbeak	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161022), -- Gusting Axebeaek Anklewraps
+							}),
 							["questID"] = 50281,
 						}),		
-						n(136413, { -- Syrawon the Dominus		
+						n(136413, { -- Syrawon the Dominus
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161047), -- Shadow Wind Leggings
+							}),
 							["questID"] = 51080,	
 						}),		
 						n(131687, { -- Tambano
 							["groups"] =  {
 								i(161109), -- Coastal Hardshell Girdle
 							},
-							["questID"] = 50013	
+							["questID"] = 50013,
 						}),		
-						n(133163, { -- Tia'Kawan		
-							--["questID"] = 	
+						n(133163, { -- Tia'Kawan
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161007), -- Direhorn Studded Britches
+							}),
+							--["questID"] = 
 						}),		
-						n(127939, { -- Torraske the Eternal		
+						n(127939, { -- Torraske the Eternal
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161029), -- Ageless Toxin Grips
+							}),
 							["questID"] = 49004,	
 						}),		
 						n(130643, { -- Twisted Child of Rezan		
-							["questID"] = 50847	
+							["questID"] = 50847,	
 						}),		
-						n(122004, { -- Umbra'jin		
+						n(122004, { -- Umbra'jin
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161091), -- Swift-Talon Striders
+							}),
 							--["questID"] = 	
 						}),		
 						n(134717, { -- Umbra'rix		
-							["questID"] = 47567	
+							["questID"] = 47567,	
 						}),		
 						n(134048, { -- Vukuba
-							["crs"] = {
-								134049, -- Strange Egg
-							},
-							["questID"] = 50508,fs
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(162613, { -- Mantle of Brood Mimicry
+									["crs"] = {
+										134049, -- Strange Egg
+									},
+								}),
+							}),
+							["questID"] = 50508,
 						}),		
-						n(133842, { -- Warcrawler Karkithiss		
+						n(133842, { -- Warcrawler Karkithiss
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161040), -- Arid Dune Stompers
+							}),
 							--["questID"] = 	
 						}),		
 						n(131476, { -- Zayoos		
