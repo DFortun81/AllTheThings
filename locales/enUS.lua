@@ -1946,6 +1946,7 @@ AllTheThings.Locales.enUS = {
 		[161526] = "Crate of Foodstuffs",
 		[164820] = "Dark Keeper Nameplate",
 		[164955] = "Northern Crystal Pylon",
+		[164956] = "Western Crystal Pylon",
 		[164957] = "Eastern Crystal Pylon",
 		[169243] = "Chest of The Seven",
 		[173232] = "Blacksmithing Plans",

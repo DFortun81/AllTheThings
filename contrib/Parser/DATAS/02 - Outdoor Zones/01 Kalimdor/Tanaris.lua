@@ -321,10 +321,11 @@ _.Zones =
 					q(25521, {	-- I'm With Scorpid
 						["qg"] = 40580,	-- Gus Rustflutter
 					}),
-					qdg(q(25556, {	-- Into Zul'Farrak
+					q(25556, {	-- Into Zul'Farrak
 						["qg"] = 7804,	-- Trenton Lighthammer
 						["sourceQuests"] = { 25032 },	-- Secrets in the Oasis
-					})),
+						["isBreadcrumb"] = true,
+					}),
 					q(24953,  {  -- Just Trying to Kill Some Bugs -- awards "Bug Free" achievement criteria
 						["groups"] = {
 							i(56851),	-- Pendant of the Gaping Chasm
