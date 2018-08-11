@@ -261,7 +261,102 @@ _.Zones =
 									["recipeID"] = 269453,
 									["spellID"] = 269453,
 								}),	
-
+								i(162262, { -- Recipe: Honorable Combatant's Plate Boots [Rank 2]	
+									["recipeID"] = 269425,
+									["spellID"] = 269425,
+								}),	
+								i(162263, { -- Recipe: Honorable Combatant's Plate Boots [Rank 3]	
+									["recipeID"] = 269426,
+									["spellID"] = 269426,
+								}),	
+								i(162265, { -- Recipe: Honorable Combatant's Plate Gauntlets [Rank 2]	
+									["recipeID"] = 269422,
+									["spellID"] = 269422,
+								}),	
+								i(162266, { -- Recipe: Honorable Combatant's Plate Gauntlets [Rank 3]	
+									["recipeID"] = 269423,
+									["spellID"] = 269423,
+								}),	
+								i(162267, { -- Recipe: Honorable Combatant's Plate Greaves [Rank 2]	
+									["recipeID"] = 269446,
+									["spellID"] = 269446,
+								}),	
+								i(162268, { -- Recipe: Honorable Combatant's Plate Greaves [Rank 3]	
+									["recipeID"] = 269447,
+									["spellID"] = 269447,
+								}),	
+								i(162273, { -- Recipe: Honorable Combatant's Plate Shield [Rank 2]	
+									["recipeID"] = 269459,
+									["spellID"] = 269459,
+								}),	
+								i(162274, { -- Recipe: Honorable Combatant's Plate Shield [Rank 3]	
+									["recipeID"] = 269460,
+									["spellID"] = 269460,
+								}),	
+								i(162269, { -- Recipe: Honorable Combatant's Plate Waistguard [Rank 2]	
+									["recipeID"] = 269449,
+									["spellID"] = 269449,
+								}),	
+								i(162270, { -- Recipe: Honorable Combatant's Plate Waistguard [Rank 3]	
+									["recipeID"] = 269450,
+									["spellID"] = 269450,
+								}),	
+								i(162283, { -- Recipe: Honorable Combatant's Polearm [Rank 2]	
+									["recipeID"] = 269480,
+									["spellID"] = 269480,
+								}),	
+								i(162284, { -- Recipe: Honorable Combatant's Polearm [Rank 3]	
+									["recipeID"] = 269481,
+									["spellID"] = 269481,
+								}),	
+								i(162281, { -- Recipe: Honorable Combatant's Shanker [Rank 2]	
+									["recipeID"] = 269477,
+									["spellID"] = 269477,
+								}),	
+								i(162282, { -- Recipe: Honorable Combatant's Shanker [Rank 3]	
+									["recipeID"] = 269478,
+									["spellID"] = 269478,
+								}),	
+								i(162308, { -- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 2]	
+									["recipeID"] = 269716,
+									["spellID"] = 269716,
+								}),	
+								i(162309, { -- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 3]	
+									["recipeID"] = 269717,
+									["spellID"] = 269717,
+								}),	
+								i(162668, { -- Recipe: Honorable Combatant's Spellblade [Rank 2]	
+									["recipeID"] = 253149,
+									["spellID"] = 253149,
+								}),	
+								i(162669, { -- Recipe: Honorable Combatant's Spellblade	[Rank 3]
+									["recipeID"] = 253150,
+									["spellID"] = 253150,
+								}),	
+								i(163024, { -- Recipe: Honorable Combatant's Staff of Intuition [Rank 2]	
+									["recipeID"] = 269735,
+									["spellID"] = 269735,
+								}),	
+								i(163025, { -- Recipe: Honorable Combatant's Staff of Intuition [Rank 3]	
+									["recipeID"] = 269736,
+									["spellID"] = 269736,
+								}),	
+								i(163020, { -- Schematic: Honorable Combatant's Discombobulator [Rank 2]	
+									["recipeID"] = 269725,
+									["spellID"] = 269725,
+								}),	
+								i(163021, { -- Schematic: Honorable Combatant's Discombobulator [Rank 3]	
+									["recipeID"] = 269726,
+									["spellID"] = 269726,
+								}),	
+								i(163022, { -- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2]	
+									["recipeID"] = 296728,
+									["spellID"] = 296728,
+								}),	
+								i(163023, { -- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 3]	
+									["recipeID"] = 269729,
+									["spellID"] = 269729,
+								}),	
 							},
 							["itemID"] = 137642, -- Mark of Honor
 						}),
