@@ -613,6 +613,10 @@ GameTooltipModel:Hide();
 
 -- Localization Lib
 app.Locales = {};
+app.yell = function(msg)
+	UIErrorsFrame:AddMessage(msg or "nil", 1, 0, 0);
+	app:PlayRemoveSound();
+end
 app.print = function(msg, ...)
 	DEFAULT_CHAT_FRAME:AddMessage(app.DisplayName .. ": " .. (msg or "nil"), ...);
 end
@@ -1992,8 +1996,10 @@ local function OpenMiniList(field, id, label)
 				for _, row in ipairs(popout.data.g) do
 					if (row.difficultyID and row.difficultyID == difficultyID)
 						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-						ExpandGroupsRecursively(row, true);
-						found = true;
+						if row.visible then
+							ExpandGroupsRecursively(row, true);
+							found = true;
+						end
 					end
 				end
 			end
@@ -2002,8 +2008,10 @@ local function OpenMiniList(field, id, label)
 				for _, row in ipairs(popout.data.g) do
 					if (row.difficultyID and row.difficultyID == difficultyID)
 						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-						ExpandGroupsRecursively(row, true);
-						found = true;
+						if row.visible then
+							ExpandGroupsRecursively(row, true);
+							found = true;
+						end
 					end
 				end
 			end
@@ -2012,8 +2020,10 @@ local function OpenMiniList(field, id, label)
 				for _, row in ipairs(popout.data.g) do
 					if (row.difficultyID and row.difficultyID == difficultyID)
 						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-						ExpandGroupsRecursively(row, true);
-						found = true;
+						if row.visible then
+							ExpandGroupsRecursively(row, true);
+							found = true;
+						end
 					end
 				end
 			end
@@ -2022,13 +2032,21 @@ local function OpenMiniList(field, id, label)
 				for _, row in ipairs(popout.data.g) do
 					if (row.difficultyID and row.difficultyID == difficultyID)
 						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-						ExpandGroupsRecursively(row, true);
-						found = true;
+						if row.visible then
+							ExpandGroupsRecursively(row, true);
+							found = true;
+						end
 					end
 				end
 				
 				-- Expand them all!
-				if not found then ExpandGroupsRecursively(popout.data, true); end
+				if not found then
+					ExpandGroupsRecursively(popout.data, true);
+					if popout.data.instanceID and app.GetDataMember("WarnOnClearedDifficulty", false) then
+						AllTheThings.yell("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
+						AllTheThings.print("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
+					end
+				end
 			end
 		else
 			ExpandGroupsRecursively(popout.data, true);

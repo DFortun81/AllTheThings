@@ -286,7 +286,7 @@ local function createGeneralFrame(parent)
 	addObject(elm,alerts)
 	
 	local alertsFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-alertsFrame", child, "ThinBorderTemplate");
-	alertsFrame:SetSize(child:GetWidth(),100)
+	alertsFrame:SetSize(child:GetWidth(),130)
 	alertsFrame:SetPoint("TOPLEFT",alerts,0,-frameSpacer);
 	alertsFrame:SetAlpha(0.3);
 	addObject(elm,alertsFrame)
@@ -365,6 +365,22 @@ local function createGeneralFrame(parent)
 		end);
 	playRemoveSound:SetPoint("TOPLEFT",playCompleteSound,-5,-frameSpacer)
 	addObject(elm,playRemoveSound)	
+	
+	-- This creates the "Play a Warning when I Enter a Cleared Difficulty" Checkbox --
+	local WarnOnClearedDifficulty = createCheckBox("Play a Warning when I Enter a Cleared Difficulty", child, function(self)
+			app.SetDataMember("WarnOnClearedDifficulty", self:GetChecked());
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("WarnOnClearedDifficulty", false));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to hear a warning sound effect when you enter into an instance with multiple difficulties from which you have collected everything.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	WarnOnClearedDifficulty:SetPoint("TOPLEFT",playRemoveSound,0,-frameSpacer)
+	WarnOnClearedDifficulty.Label:SetWidth(500);
+	addObject(elm,WarnOnClearedDifficulty)
 	
 	-- specializations options
 	local spec = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
