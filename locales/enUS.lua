@@ -2059,6 +2059,7 @@ AllTheThings.Locales.enUS = {
 		[202082] = "Ravasaur Matriarch's Nest",
 		[202083] = "Razormaw Matriarch's Nest",
 		[202135] = "Dadanga's Grave",
+		[202407] = "Sandscraper's Chest",
 		[202474] = "Antediluvean Chest",
 		[202598] = "Big Nasty Plunger",
 		[202697] = "Eye of Twilight",
