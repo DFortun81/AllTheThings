@@ -442,6 +442,7 @@ _.Zones =
 					qh(14337, {	-- Shadowprey Village (wowhead says not available if 6142 or 14334 is completed)
 						["qg"] = 36034,	-- Karnum Marshweaver
 						["sourceQuests"] = { 14327 },	-- My Word is My Bond
+            ["isBreadcrumb"] = true,
 					}),
 					q(14257, {	-- Slitherblade Slaughter
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
