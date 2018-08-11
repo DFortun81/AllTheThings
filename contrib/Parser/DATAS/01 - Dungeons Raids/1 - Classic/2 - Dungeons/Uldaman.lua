@@ -108,7 +108,6 @@ _.Instances =
 						}),
 						i(9386, {	-- Excavator's Brand
 							["crs"] = {
-								6907,	-- Eric "The Swift"
 								7012,	-- Earthen Sculptor
 								7030,	-- Shadowforge Geologist
 								4847,	-- Shadowforge Relic Hunter
@@ -210,16 +209,18 @@ _.Instances =
 							},
 						}),
 					}),
-					cr( 6906, h(e(468, {	-- The Lost Dwarves (Baelog)
-						i(  9401),	-- Nordic Longshank
-						i(  9400),	-- Baelog's Shortbow
-						i(  9403),	-- Battered Viking Shield
-						i(  9404),	-- Olaf's All Purpose Shield
-						i(  9394),	-- Horned Viking Helmet
-						i(151396),	-- Erik's High-Performance Armbands
-						i(132734),	-- Viking Chain Boots
-						i(  9398),	-- Worn Running Boots
-					}))),
+					cr(6906, e(468, {	-- The Lost Dwarves (Baelog)
+            ["g"] = bubbleDown({["races"] = HORDE_ONLY}, {
+              i(9400), -- Baelog's Shortbow
+              i(9403), -- Battered Viking Shield
+              i(151396), -- Erik's High-Performance Armbands
+              i(9394),	-- Horned Viking Helmet
+              i(9401),	-- Nordic Longshank
+              i(9404),	-- Olaf's All Purpose Shield
+              i(132734),	-- Viking Chain Boots
+              i(9398),	-- Worn Running Boots
+            }),
+					})),
 					cr( 6910, e(  467, {	-- Revelosh
 						i(132736),	-- Revelosh's Pauldrons
 						i(  9389),	-- Revelosh's Spaulders
