@@ -116,7 +116,7 @@ _.Zones =
 						},
 						["qg"] = 38703,	-- Megs Dreadshredder
 						["sourceQuests"] = {
-							24925,	-- To The Ground!
+							24928,	-- To The Ground!
 							25534,	-- Going Off-Task
 							25541,	-- Filling Our Pockets
 						},
@@ -207,28 +207,84 @@ _.Zones =
 						},
 						["qg"] = 38703,	-- Megs Dreadshredder
 					}),
-	--[[					
-	--					q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)
-					qg(19935, q(11106)),	-- Defender No More
-					qg(19935, q(10475)),	-- Defender's Covenant (add'l QG 19936)
-					qg(19935, q(10471)),	-- Defender's Oath (add'l QG 19936)
-					qg(19936, q(10460)),	-- Defender's Pledge
-					qg(19935, q(10467)),	-- Defender's Vow (add'l QG 19936)
-					qg(39059, qa(25060)),	-- Define "Crazy"
-	--					q(43243),	-- Demon Commander (possibly LEGACY - Legion pre-patch)
-					qg(44833, q(27003)),	-- Easy Money
-					qg(38703, qh(25541)),	-- Filling Our Pockets
-					qg(38704, qa(26887)),	-- Filling Our Pockets
+					--q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)
+					q(11106, {	-- Defender No More
+						["groups"] = {
+							i(29301),	-- Band of the Eternal Champion
+							i(29305),	-- Band of the Eternal Sage
+							i(29309),	-- Band of the Eternal Restorer
+						},
+						["qg"] = 19935,	-- Soridormi
+					}),
+					q(10475, {	-- Defender's Covenant
+						["groups"] = {
+							i(29297),	-- Band of the Eternal Defender
+						},
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Arazmodu
+						},
+						["sourceQuests"] = { 10471 },	-- Defender's Oath
+					}),
+					q(10471, {	-- Defender's Oath
+						["groups"] = {
+							i(29296),	-- Band of Eternity
+						},
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Arazmodu
+						},
+						["sourceQuests"] = { 10467 },	-- Defender's Vow
+					}),
+					q(10460, {	-- Defender's Pledge
+						["groups"] = {
+							i(29294),	-- Band of Eternity
+						},
+						["qg"] = 19936,	-- Arazmodu
+					}),
+					q(10467, {	-- Defender's Vow
+						["groups"] = {
+							i(29295),	-- Band of Eternity
+						},
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Arazmodu
+						},
+					}),
+					qa(25060, {	-- Define "Crazy"
+						["qg"] = 39059,	-- Kelsey Steelspark
+					}),
+					--q(43243),	-- Demon Commander (possibly LEGACY - Legion pre-patch)
+					q(27003, {	-- Easy Money
+						["qg"] = 44833,	-- Adarrah
+					}),
+					qh(25541, {	-- Filling Our Pockets
+						["qg"] = 38703,	-- Megs Dreadshredder
+						["sourceQuests"] = { 
+							24927,	-- Dead Man's Chest
+							24949,	-- Booty Duty
+						},
+					}),
+					qa(26887, {	-- Filling Our Pockets
+						["qg"] = 38704,	-- Kelsey Steelspark
+						["sourceQuests"] = {
+							25052,	-- Dead Man's Chest
+							25054,	-- Lootin' Plunder
+						},
+					}),
 					i(8623, {	-- OOX-17/TN Distress Beacon
 						["groups"] = {
-						q(351),	-- Find OOX-17/TN!
+							q(351),	-- Find OOX-17/TN!
 						},
 						["description"] = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
 					}),
-					qg(38922, qh(25020)),	-- Fragments of Language
-					qg(40109, qa(25565)),	-- Fragments of Language
-	--					q(9250),	-- Frame of Atiesh (LEGACY)
-	--]]
+					qh(25020, {	-- Fragments of Language
+						["qg"] = 38922,	-- Examiner Andoren Dawnrise
+					}),
+					qa(25565, {	-- Fragments of Language
+						["qg"] = 40109,	-- Prospector Gunstan
+					}),
+					--q(9250),	-- Frame of Atiesh (LEGACY)
 					q(25522,  {  -- Gargantapid
 						["groups"] = {
 							i(56847),	-- Chelsea's Nightmare
@@ -293,10 +349,12 @@ _.Zones =
 					qa(25121, {	-- Momentum
 						["qg"] = 38535,	-- Kelsey Steelspark
 						["sourceQuests"] = { 25050 },	-- Rocket Rescue
+						["isBreadcrumb"] = true,
 					}),
 					qh(24947, {	-- Momentum
 						["qg"] = 38534,	-- Megs Dreadshredder
 						["sourceQuests"] = { 24910 },	-- Rocket Rescue
+						["isBreadcrumb"] = true,
 					}),
 					qdg(q(12513, {	-- Nice Hat...
 						["qg"] = 28126,	-- Don Carlos
@@ -414,7 +472,7 @@ _.Zones =
 						},
 						["qgs"] = {
 							19935,	-- Soridormi
-							19936,	-- Anazdormu
+							19936,	-- Arazmodu
 						},
 						["sourceQuests"] = { 10464 },	-- Sage's Vow
 					}),
@@ -422,7 +480,7 @@ _.Zones =
 						["groups"] = {
 							i(29302),	-- Band of Eternity
 						},
-						["qg"] = 19936,	-- Anazdormu
+						["qg"] = 19936,	-- Arazmodu
 					}),
 					q(10464, {	-- Sage's Vow
 						["groups"] = {
@@ -430,7 +488,7 @@ _.Zones =
 						},
 						["qgs"] = {
 							19935,	-- Soridormi
-							19935,	-- Anazdormu
+							19935,	-- Arazmodu
 						},
 					}),
 					qh(25001,  {  -- Sandscraper
@@ -654,7 +712,7 @@ _.Zones =
 					qraid(q(13432, {	-- The Vials of Eternity
 						["qgs"] = {
 							19935,	-- Soridormi
-							19936,	-- Anazdormu
+							19936,	-- Arazmodu
 						}
 					})),
 					qa(25513,  {  -- Thunderdrome: Grudge Match!
