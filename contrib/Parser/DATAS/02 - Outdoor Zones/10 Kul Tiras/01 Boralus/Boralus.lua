@@ -91,7 +91,7 @@ _.Zones =
 						n(141009, { -- Col. Tenders <Chicken Vendor>
 							i(11023), -- Ancona Chicken
 						}),
-						n(142564, { -- Leedan Gustaf <Profession Liason>
+						n(142564, { -- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
 							["groups"] = {
 								i(162439, { -- Pattern: Honorable Combatant's Satin Belt [Rank 2]
 									["recipeID"] = 269609,
@@ -434,7 +434,7 @@ _.Zones =
 								}), 	
 							},
 						}),
-						n(135446, { -- Vindicator Jaelaana <7th Legion Emissary
+						n(135446, { -- Vindicator Jaelaana <7th Legion Emissary [NOTE: PvP Factions]
 							["groups"] = {
 								i(160539),	-- Tabard of the 7th Legion
 								i(163778, { -- Lil'Siege

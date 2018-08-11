@@ -697,6 +697,7 @@ _.PetJournal =
 		p(1592),	-- Sapphire Firefly
 		p(560),		-- Sea Gull
 		p(1539),	-- Seaborne Spore
+		p(2404),	-- Seabreeze Bumblebee
 		p(51),		-- Senegal
 		p(1567),	-- Sentinel's Companion
 		p(1599),	-- Shadow Sporebat

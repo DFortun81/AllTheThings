@@ -479,6 +479,7 @@ pet(163797, 2445);	-- Scuttle
 pet(114919, 1448); 	-- Sea Calf
 pet(73953, 340);	-- Sea Pony
 pet(118105, 1539);	-- Seaborne Spore
+pet(163490, 2404);	-- Seabreeze Bumblebee
 pet(45606, 218); 	-- Sen'jin Fetish
 pet(118923, 1567); 	-- Sentinel's Companion
 pet(119431, 1601); 	-- Servant of Demidos

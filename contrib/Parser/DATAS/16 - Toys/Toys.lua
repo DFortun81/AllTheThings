@@ -566,6 +566,7 @@ _.Toys =
 		i(131812),		-- Darkshard Fragment
 		i(45021),		-- Darnassus Banner (Alliance)
 		i(129149),		-- Death's Door Charm
+		i(163463),		-- Dead Ringer
 		i(129279), 		-- Enchanted Stone Whistle
 		i(134007),		-- Eternal Black Diamond Ring
 		i(45020),		-- Exodar Banner (Alliance)

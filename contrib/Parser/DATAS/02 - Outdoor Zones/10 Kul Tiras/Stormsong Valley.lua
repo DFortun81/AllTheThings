@@ -353,6 +353,87 @@ _.Zones =
 								}),	
 							},
 						}),
+						n(135800, { -- Sister Lilyana <Storm's Wake Emissary>
+							["groups"] = {
+								i(160542),	-- Storm's Wake Tabard
+								i(161912),	-- Reins of the Dapple Gray
+								i(163463),	-- Dead Ringer
+								i(163490),	-- Pair of Bee Wings
+								i(161579),	-- Bindings of the Seacallers
+								i(161575),	-- Handwraps of Deep Faith
+								i(161582),	-- Keelbreak Girdle
+								i(161578),	-- Kelp-Encrusted Bindings
+								i(161576),	-- Sea Priest's Waistcord
+								i(161577),	-- Seabinder's Leggings
+								i(161580),	-- Stormbreaker Galoshes
+								i(161581),	-- Tidecrest Gauntlets
+								i(160533),	-- Cape of the Divine Depths
+								i(162382, { -- Design: Laribole Staff of Alacrity [Rank 3]
+									["recipeID"] = 256257,
+									["spellID"] = 256257,
+								}),	
+								i(162379, { -- Design: Owlseye Loop [Rank 3]	
+									["recipeID"] = 256517,
+									["spellID"] = 256517,
+								}),	
+								i(162385, { -- Design: Scarlet Diamond Staff of Intuition [Rank 3]	
+									["recipeID"] = 256260,
+									["spellID"] = 256260,
+								}),	
+								i(162303, { -- Formula: Enchant Ring - Pact of Haste [Rank 3]	
+									["recipeID"] = 255099,
+									["spellID"] = 255099,
+								}),	
+								i(162313, { -- Formula: Enchant Weapon - Deadly Navigation [Rank 3]	
+									["recipeID"] = 268909,
+									["spellID"] = 268909,
+								}),	
+								i(162312, { -- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]	
+									["recipeID"] = 268915,
+									["spellID"] = 268915,
+								}),	
+								i(163318, { -- Recipe: Battle Potion of Stamina [Rank 3]	
+									["recipeID"] = 279167,
+									["spellID"] = 279167,
+								}),	
+								i(162255, { -- Recipe: Coastal Healing Potion [Rank 3]	
+									["recipeID"] = 252384,
+									["spellID"] = 252384,
+								}),	
+								i(162363, { -- Recipe: Contract: Storm's Wake [Rank 2]
+									["recipeID"] = 256282,
+									["spellID"] = 256282,
+								}),	
+								i(162133, { -- Recipe: Flask of Endless Fathoms	[Rank 3]
+									["recipeID"] = 252353,
+									["spellID"] = 252353,
+								}),	
+								i(162129, { -- Recipe: Potion of Replenishment [Rank 3]	
+									["recipeID"] = 252340,
+									["spellID"] = 252340,
+								}),	
+								i(162325, { -- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]	
+									["recipeID"] = 272060,
+									["spellID"] = 272060,
+								}),	
+								i(162326, { -- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]	
+									["recipeID"] = 272061,
+									["spellID"] = 272061,
+								}),	
+								i(162342, { -- Schematic: Deployable Attire Rearranger [Rank 3]	
+									["recipeID"] = 256156,
+									["spellID"] = 256156,
+								}),	
+								i(162341, { -- Schematic: Interdimensional Companion Repository [Rank 3]	
+									["recipeID"] = 256084,
+									["spellID"] = 256084,
+								}),	
+								i(162337, { -- Schematic: Organic Discombobulation Grenade [Rank 3]	
+									["recipeID"] = 255409,
+									["spellID"] = 255409,
+								}),	
+							},
+						}),
 					},
 				}),
 				n(0, { -- Zone Drop

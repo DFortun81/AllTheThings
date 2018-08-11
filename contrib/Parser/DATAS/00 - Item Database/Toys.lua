@@ -130,6 +130,7 @@ t(54653);	-- Darkspear Pride (Horde) No Longer Available
 t(45021);	-- Darnassus Banner (Alliance)	
 t(127859);	-- Dazzling Rod	
 t(129149);	-- Death's Door Charm	
+t(163463);	-- Dead Ringer
 t(36863);	-- Decahedral Dwarven Dice	
 t(108743);	-- Deceptia's Smoldering Boots	
 t(79769);	-- Demon Hunter's Aspect	
