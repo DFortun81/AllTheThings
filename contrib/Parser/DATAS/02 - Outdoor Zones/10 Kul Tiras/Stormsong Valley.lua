@@ -358,7 +358,9 @@ _.Zones =
 								i(160542),	-- Storm's Wake Tabard
 								i(161912),	-- Reins of the Dapple Gray
 								i(163463),	-- Dead Ringer
-								i(163490),	-- Pair of Bee Wings
+								i(163036, { -- Polished Pet Charm
+									i(163490),	-- Pair of Bee Wings
+								}),
 								i(161579),	-- Bindings of the Seacallers
 								i(161575),	-- Handwraps of Deep Faith
 								i(161582),	-- Keelbreak Girdle

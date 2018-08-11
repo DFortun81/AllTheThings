@@ -437,8 +437,8 @@ _.Zones =
 						n(135446, { -- Vindicator Jaelaana <7th Legion Emissary [NOTE: PvP Factions]
 							["groups"] = {
 								i(160539),	-- Tabard of the 7th Legion
-								i(163778, { -- Lil'Siege
-									["itemID"] = 163036, -- Polished Pet Charm
+								i(163036, { -- Polished Pet Charm
+									i(163778), -- Lil'Siege
 								}),
 								i(161586),	-- Belt of the Grove Auxiliary
 								i(161588),	-- Bracers of the Allied Earthbinders
