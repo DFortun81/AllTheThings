@@ -94,6 +94,10 @@ _.Zones =
 						n(142564, { -- Leedan Gustaf <Profession Liason>
 							-- RECIPES
 						}),
+						n(145838, { -- Marshal Frazer
+							i(139775), -- Alliance Enthusiast
+							i(142379), -- Dutiful Squire
+						}),
 						n(135808, { -- Provisioner Fray <Proudmoore Admiralty Emissary>
 							["groups"] = {
 								i(160540),	-- Proudmoore Admiralty Tabard
@@ -162,6 +166,109 @@ _.Zones =
 									["recipeID"] = 272064,
 									["spellID"] = 272064,
 								}), 	
+							},
+						}),
+						n(135446, { -- Vindicator Jaelaana <7th Legion Emissary
+							["groups"] = {
+								i(160539),	-- Tabard of the 7th Legion
+								i(163778, { -- Lil'Siege
+									["itemID"] = 163036, -- Polished Pet Charm
+								}),
+								i(161586),	-- Belt of the Grove Auxiliary
+								i(161588),	-- Bracers of the Allied Earthbinders
+								i(161590),	-- Elite Footman's Legplates
+								i(161585),	-- Gloves of the Forward Skirmisher
+								i(161587),	-- Legguards of the Storm Battalion
+								i(161584),	-- Medical Corps Slippers
+								i(161589),	-- Royal Knight's Sabatons
+								i(161583),	-- Warmage's Flame-Brimming Wristcords
+								i(160536),	-- 7th Legionnaire's Cloak
+								i(162378, {	-- Design: Amberblaze Loop	
+									["recipeID"] = 256515,
+									["spellID"] = 256515,
+								}),	
+								i(162302, {	-- Formula: Enchant Ring - Pact of Critical Strike	
+									["recipeID"] = 255098,
+									["spellID"] = 255098,
+								}),	
+								i(163320, {	-- Recipe: Battle Potion of Strength	
+									["recipeID"] = 279170,
+									["spellID"] = 279170,
+								}),	
+								i(162306, {	-- Recipe: Enchanter's Sorcerous Scepter	
+									["recipeID"] = 265112,
+									["spellID"] = 265112,
+								}),	
+								i(162138, {	-- Recipe: Endless Tincture of Fractional Power	
+									["recipeID"] = 252378,
+									["spellID"] = 252378,
+								}),	
+								i(162132, {	-- Recipe: Flask of the Currents	
+									["recipeID"] = 252350,
+									["spellID"] = 252350,
+								}),	
+								i(162128, {	-- Recipe: Steelskin Potion	
+									["recipeID"] = 252336,
+									["spellID"] = 252336,
+								}),	
+								i(162275, {	-- Recipe: Stormsteel Dagger	
+									["recipeID"] = 253158,
+									["spellID"] = 253158,
+								}),	
+								i(162670, {	-- Recipe: Stormsteel Saber	
+									["recipeID"] = 278133,
+									["spellID"] = 278133,
+								}),	
+								i(162261, {	-- Recipe: Stormsteel Shield	
+									["recipeID"] = 253118,
+									["spellID"] = 253118,
+								}),	
+								i(162276, {	-- Recipe: Stormsteel Spear	
+									["recipeID"] = 253161,
+									["spellID"] = 253161,
+								}),	
+								i(162139, {	-- Recipe: Surging Alchemist Stone	
+									["recipeID"] = 252381,
+									["spellID"] = 252381,
+								}),	
+								i(162323, {	-- Schematic: AZ3-R1-T3 Synthetic Specs	
+									["recipeID"] = 272057,
+									["spellID"] = 272057,
+								}),	
+								i(162324, {	-- Schematic: AZ3-R1-T3 Synthetic Specs	
+									["recipeID"] = 272058,
+									["spellID"] = 272058,
+								}),	
+								i(162346, {	-- Schematic: Finely-Tuned Stormsteel Destroyer	
+									["recipeID"] = 255459,
+									["spellID"] = 255459,
+								}),	
+								i(162344, {	--  Schematic: Monelite Scope of Alacrity	
+									["recipeID"] = 264967,
+									["spellID"] = 264967,
+								}),	
+								i(162345, {	-- Schematic: Precision Attitude Adjuster	
+									["recipeID"] = 253152,
+									["spellID"] = 253152,
+								}),	
+								i(163043, {	-- Scouting Report: Grimwaatt's Crash
+									["f"] = 55, -- Consumable; Might change to Misc later
+								}),
+								i(163044, {	-- Scouting Report: Mistvine Ledge
+									["f"] = 55, -- Consumable; Might change to Misc later
+								}),
+								i(163047, {	-- Scouting Report: Mugamba Overlook
+									["f"] = 55, -- Consumable; Might change to Misc later
+								}),
+								i(163048, {	-- Scouting Report: Veiled Grotto
+									["f"] = 55, -- Consumable; Might change to Misc later
+								}),
+								i(163046, {	-- Scouting Report: Verdant Hollow
+									["f"] = 55, -- Consumable; Might change to Misc later
+								}),
+								i(163041, {	-- Scouting Report: Vulture's Nest
+									["f"] = 55, -- Consumable; Might change to Misc later
+								}),
 							},
 						}),
 					},

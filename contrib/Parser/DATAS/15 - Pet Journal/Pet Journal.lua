@@ -925,6 +925,7 @@ _.PetJournal =
 		p(1412),	-- Lifelike Mechanical Frostboar
 		p(95),		-- Lifelike Toad
 		p(1320),	-- Lil' Bling
+		p(2443),	-- Lil' Siege Tower
 		p(86),		-- Lil' Smoky
 		p(256),		-- Lil' XT
 		p(83),		-- Mechanical Chicken

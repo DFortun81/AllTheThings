@@ -321,6 +321,7 @@ pet(103670, 1320);	-- Lil' Bling
 pet(62540, 268);	-- Lil' Deathwing
 pet(49693, 249);	-- Lil' Phylactery (Lil' K.T.)
 pet(68385, 297);	-- Lil' Ragnaros
+pet(163778, 2443);	-- Lil' Siege Tower
 pet(11826, 86); 	-- Lil' Smoky
 pet(71033, 320);	-- Lil' Tarecgosa
 pet(54847, 256);	-- Lil' XT
