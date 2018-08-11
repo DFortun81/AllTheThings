@@ -284,23 +284,21 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 		}),]]--
-		n(-38, { -- Professions
-			n(-183, { -- Engineering
-				i(10713), -- Plans: Inlaid Mithril Cylinder
-			}),
+		n(-183, { -- Engineering
+			i(10713), -- Plans: Inlaid Mithril Cylinder
 		}),
 		n(-26, { -- Drops
 			-- Holiday --
 			un(29, i(17706)), -- Plans: Edge of Winter (Feast of Winter Veil - Holiday Gift Box)
 			
-			-- Classic --
 			--i(12835), -- Plans: Annihilator (Quartermaster Zigris - LBRS - 1 Drop - DONE)
 			--i(142370), -- Plans: Arcanite Champion (Overlord Wyrmthalak - LBRS - 1 Drop - DONE)
 			--un(1, i(12834)), -- Plans: Arcanite Champion (Goraluk Anvilcrack - UBRS (Original) - 1 Drop - REMOVED)
 			--i(12838), -- Plans: Arcanite Reaper (Bannok Grimaxe - LBRS - 1 Drop - DONE)
 			--i(22220), -- Plans: Black Grasp of the Destroyer (Moam - Ruins of Ahn'Qiraj - 1 Drop - DONE)
 			--i(142358), -- Plans: Blazing Rapier (Time Lost Chest - Searing Gorge - 1 Drop - DONE)
-			i(142337), -- Plans: Blight (Trash Drop - Stratholme - DONE)
+			--i(142337), -- Plans: Blight (Trash Drop - Stratholme - DONE)
+			--un(1, i(12831)), -- Plans: Blood Talon (Never Implemented)
 			i(7992), -- Plans: Blue Glittering Axe (World Drop)
 			i(3609), -- Plans: Copper Chain Vest (World Drop)
 			--i(12830), -- Plans: Corruption (Object Drop - Stratholme - 1 Drop - DONE)
@@ -385,7 +383,6 @@ profession(164, { -- Blacksmithing
 			recipe(19669), -- Plans: Arcanite Skeleton Key
 			recipe(10001), -- Plans: Big Black Mace
 			recipe(3491), -- Plans: Big Bronze Knife
-			un(1, recipe(16986)), -- Plans: Blood Talon (Never Implemented)
 			recipe(2741), -- Plans: Bronze Axe
 			recipe(9987), -- Plans: Bronze Battle Axe
 			recipe(9986), -- Plans: Bronze Greatsword
