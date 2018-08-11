@@ -14,8 +14,11 @@ _.Zones =
 					n(111573, { -- Kosumoth the Hungering
 						["groups"] = {
 							q(43798, { 
-								i(140261), -- Pet
-								i(138201), -- Mount
+								["groups"] = {
+									i(140261), -- Pet
+									i(138201), -- Mount
+								},
+								["repeatable"] = true,
 							}),
 						},
 						["questID"] = 45479,

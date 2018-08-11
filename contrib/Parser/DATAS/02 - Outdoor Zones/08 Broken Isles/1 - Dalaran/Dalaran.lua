@@ -144,51 +144,54 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					q(43179, { -- The Kirin Tor of Dalaran
-						i(157828, { -- Kirin Tor Chest
-							["groups"] = {
-								i(141349, { -- Strange Humming Crystal
-									q(44412, { -- Enemies Everywhere
-										i(141348), -- Wondrous Wisdomball
+						["groups"]  = {
+							i(157828, { -- Kirin Tor Chest
+								["groups"] = {
+									i(141349, { -- Strange Humming Crystal
+										q(44412, { -- Enemies Everywhere
+											i(141348), -- Wondrous Wisdomball
+										}),
 									}),
-								}),
-							},
-						}),
-						un(2, i(154909, { -- Kirin Tor Chest
-							["groups"] = {
-								i(141349, { -- Strange Humming Crystal
-									q(44412, { -- Enemies Everywhere
-										i(141348), -- Wondrous Wisdomball
+								},
+							}),
+							un(2, i(154909, { -- Kirin Tor Chest
+								["groups"] = {
+									i(141349, { -- Strange Humming Crystal
+										q(44412, { -- Enemies Everywhere
+											i(141348), -- Wondrous Wisdomball
+										}),
 									}),
-								}),
-							},
-						})),
-						un(2, i(151470, { -- Kirin Tor Chest
-							["groups"] = {
-								i(141349, { -- Strange Humming Crystal
-									q(44412, { -- Enemies Everywhere
-										i(141348), -- Wondrous Wisdomball
+								},
+							})),
+							un(2, i(151470, { -- Kirin Tor Chest
+								["groups"] = {
+									i(141349, { -- Strange Humming Crystal
+										q(44412, { -- Enemies Everywhere
+											i(141348), -- Wondrous Wisdomball
+										}),
 									}),
-								}),
-							},
-						})),
-						un(2, i(146753, { -- Kirin Tor Chest
-							["groups"] = {
-								i(141349, { -- Strange Humming Crystal
-									q(44412, { -- Enemies Everywhere
-										i(141348), -- Wondrous Wisdomball
+								},
+							})),
+							un(2, i(146753, { -- Kirin Tor Chest
+								["groups"] = {
+									i(141349, { -- Strange Humming Crystal
+										q(44412, { -- Enemies Everywhere
+											i(141348), -- Wondrous Wisdomball
+										}),
 									}),
-								}),
-							},
-						})),
-						un(2, i(141350, { -- Kirin Tor Chest
-							["groups"] = {
-								i(141349, { -- Strange Humming Crystal
-									q(44412, { -- Enemies Everywhere
-										i(141348), -- Wondrous Wisdomball
+								},
+							})),
+							un(2, i(141350, { -- Kirin Tor Chest
+								["groups"] = {
+									i(141349, { -- Strange Humming Crystal
+										q(44412, { -- Enemies Everywhere
+											i(141348), -- Wondrous Wisdomball
+										}),
 									}),
-								}),
-							},
-						})),
+								},
+							})),
+						},
+						["repeatable"] = true,
 					}),
 				}),
 				n(-17, { 	-- Quests
