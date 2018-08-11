@@ -113,7 +113,8 @@ t(131933);	-- Critter Hand Cannon
 t(153039);	-- Crystalline Campfire	
 t(131724);	-- Crystalline Eye of Undravius	
 t(122117);	-- Cursed Feather of Ikzan	
-t(130171);	-- Cursed Orb	
+t(130171);	-- Cursed Orb
+t(163200);	-- Cursed Spyglass
 t(134024);	-- Cursed Swabby Helmet	
 t(38301);	-- D.I.S.C.O.	
 t(129057);	-- Dalaran Disc	
@@ -201,7 +202,8 @@ t(117569);	-- Giant Deathweb Egg
 t(90175);	-- Gin-Ji Knife Set	
 t(164310);	-- Glorious Pennant	
 t(95589);	-- Glorious Standard of the Kirin Tor Offensive (Alliance)	
-t(95590);	-- Glorious Standard of the Sunreaver Onslaught (Horde)	
+t(95590);	-- Glorious Standard of the Sunreaver Onslaught (Horde)
+t(163201);	-- Gnoll Targetting Barrel	
 t(45019);	-- Gnomeregan Banner (Alliance)	
 t(54651);	-- Gnomeregan Pride (Alliance) No Longer Available	
 t(40727);	-- Gnomish Gravity Well (Gnomish Engineering)	

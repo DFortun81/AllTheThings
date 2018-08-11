@@ -98,6 +98,8 @@ _.Zones =
 							["groups"] = {
 								i(160540),	-- Proudmoore Admiralty Tabard
 								i(161911),	-- Reins of the Admiralty Stallion
+								i(163200),	-- Cursed Spyglass
+								i(163201),	-- Gnoll Targetting Barrel
 								i(161574),	-- Boarding Action Vambraces
 								i(161571),	-- Cordage Sliding Grips
 								i(161570),	-- First Lieutenant's Ceremonial Belt
@@ -117,8 +119,8 @@ _.Zones =
 									["spellID"] = 255100,
 								}), 	
 								i(162317, { -- Formula: Enchant Weapon - Masterful Navigation [Rank 3]	
-									["recipeID"] = 255112,
-									["spellID"] = 255112,
+									["recipeID"] = 268903,
+									["spellID"] = 268903,
 								}), 	
 								i(162316, { -- Formula: Enchant Weapon - Siphoning [Rank 3]	
 									["recipeID"] = 255112,

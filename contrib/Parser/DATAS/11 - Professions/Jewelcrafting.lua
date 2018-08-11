@@ -681,7 +681,6 @@ profession(755, { -- Jewelcrafting
 		i(32411),	-- Design: Thundering Skyfire Diamond
 		i(41787),	-- Design: Thundering Skyflare Diamond
 		i(162762),	-- Design: Tidal Amethyst Loop
-		i(162380),	-- Design: Tidal Amethyst Loop
 		i(52402),	-- Design: Timeless Demonseye
 		i(46902),	-- Design: Timeless Dreadstone
 		i(24211),	-- Design: Timeless Nightseye

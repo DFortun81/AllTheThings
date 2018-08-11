@@ -543,18 +543,12 @@ _.Toys =
 	n(-2, { 	-- Vendor
 		i(46843),		-- Argent Crusader's Banner
 		i(147537, { 	-- A Tiny Set of Warglaives -- demon hunter class hall
-			["groups"] = {
-			},
 			["classes"] = {12},
 		}),
 		i(120857, {		-- Barrel of Bandanas -- only rogue
-			["groups"] = {
-			},
 			["classes"] = {4},
 		}),
 		i(151877, { 	-- Barrel of Eyepatches -- only rogue
-			["groups"] = {
-			},
 			["classes"] = {},
 		}),
 		i(113096), 		-- Bloodmane Charm
@@ -564,10 +558,9 @@ _.Toys =
 		i(103685), 		-- Celestial Defender's Medallion
 		i(89222),		-- Cloud Ring
 		i(153039),  	-- Crystalline Campfire Toy
+		i(163200),		-- Cursed Spyglass
 		i(129057),		-- Dalaran Disc
 		i(137294, {		-- Dalaran Initiates' Pin -- only Mage
-			["groups"] = {
-			},
 			["classes"] = {8},
 		}),
 		i(131812),		-- Darkshard Fragment
@@ -581,13 +574,12 @@ _.Toys =
 		i(44719), 		-- Frenzyheart Brew
 		i(128471),		-- Frostwolf Grunt's Battlegear (Horde)
 		i(90175), 		-- Gin-Ji Knife Set
+		i(163201),		-- Gnoll Targetting Barrel
 		i(45019),		-- Gnomeregan Banner (Alliance)
 		i(159749), 		-- Haw'li's Hot & Spicy Chili
 		i(119210), 		-- Hearthstone Board
 		i(140325),		-- Home Made Party Mask
 		i(136855, {		-- Hunter's Call -- only Hunter
-			["groups"] = {
-			},
 			["classes"] = {3},
 		}),
 		i(127707),		-- Indestructible Bone
@@ -607,8 +599,6 @@ _.Toys =
 		i(70159), 		-- Mylune's Call
 		i(140231),		-- Narcissa's Mirror
 		i(136849, {		-- Nature's Beacon -- only Druid
-			["groups"] = {
-			},
 			["classes"] = {11},
 		}),
 		i(134004),		-- Noble's Eternal Elementium Signet
@@ -620,16 +610,12 @@ _.Toys =
 		i(127864),		-- Personal Spotlight
 		i(140309),		-- Prismatic Bauble
 		i(136934, { 	-- Raging Elemental Stone -- only Shaman
-			["groups"] = {
-			},
 			["classes"] = {7},
 		}),
 		i(44820),		-- Red Ribbon Pet Leash
 		i(37460),		-- Rope Pet Leash
 		i(122283), 		-- Rukhmar's Sacred Memory
 		i(136927, {		-- Scarlet Confessional Book -- only Priest
-			["groups"] = {
-			},
 			["classes"] = {5},
 		}),
 		i(45015),		-- Sen'jin Banner (Horde)
@@ -645,14 +631,10 @@ _.Toys =
 		i(150743),		-- Surviving Kalimdor (Alliance)
 		i(130157),		-- Syxsehnz Rod
 		i(136935, {		-- Tadpole Cloudseeder -- only Shaman
-			["groups"] = {
-			},
 			["classes"] = {7},
 		}),
 		i(130170),		-- Tear of the Green Aspect
 		i(136928, {		-- Thaumaturgist's Orb -- only Priest
-			["groups"] = {
-			},
 			["classes"] = {5},
 		}),
 		i(130151),		-- The "Devilsaur" Lunchbox
@@ -665,14 +647,10 @@ _.Toys =
 		i(130191), 		-- Trapped Treasure Chest Kit
 		i(45016),		-- Undercity Banner (Horde)
 		i(136937, { 	-- Vol'jin's Serpent Totem -- only Shaman
-			["groups"] = {
-			},
 			["classes"] = {7},
 		}),
 		i(150744),		-- Walking Kalimdor with the Earthmother (Horde)
 		i(138490, {		-- Waterspeaker's Totem -- only Shaman
-			["groups"] = {
-			},
 			["classes"] = {7},
 		}),
 		i(131814),		-- Whitewater Carp

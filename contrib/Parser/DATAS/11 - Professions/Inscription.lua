@@ -88,7 +88,6 @@ profession(773, { -- Inscription
 		i(162374),	-- Recipe: Contract: Champions of Azeroth
 		i(162361),	-- Recipe: Contract: Order of Embers
 		i(162362),	-- Recipe: Contract: Order of Embers
-		i(162359),	-- Recipe: Contract: Proudmoore Admiralty
 		i(162360),	-- Recipe: Contract: Proudmoore Admiralty
 		i(162363),	-- Recipe: Contract: Storm's Wake
 		i(162364),	-- Recipe: Contract: Storm's Wake

@@ -1536,7 +1536,6 @@ profession(165, { -- Leatherworking
 		i(137928),	-- Recipe: Gravenscale Warhelm
 		i(140648),	-- Recipe: Gravenscale Warhelm
 		i(162388),	-- Recipe: Hardened Tempest Boots
-		i(162414),	-- Recipe: Hardened Tempest Knuckles
 		i(162768),	-- Recipe: Hardened Tempest Knuckles
 		i(162389),	-- Recipe: Hardened Tempest Leggings
 		i(162417),	-- Recipe: Honorable Combatant's Bow
@@ -1575,7 +1574,6 @@ profession(165, { -- Leatherworking
 		i(127722),	-- Recipe: Mighty Burnished Essence
 		i(162400),	-- Recipe: Mistscale Boots
 		i(162401),	-- Recipe: Mistscale Greaves
-		i(162413),	-- Recipe: Mistscale Knuckles
 		i(162767),	-- Recipe: Mistscale Knuckles
 		i(116327),	-- Recipe: Nimble Burnished Cloak
 		i(116326),	-- Recipe: Powerful Burnished Cloak
