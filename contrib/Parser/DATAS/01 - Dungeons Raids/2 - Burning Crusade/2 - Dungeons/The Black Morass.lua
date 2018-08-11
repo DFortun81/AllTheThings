@@ -8,6 +8,18 @@ _.Instances =
 		["groups"] = {
 			inst(255, { 	-- The Black Morass
 				["groups"] = {
+					n(-17, {
+						q(10297, {	-- The Opening of the Dark Portal
+							["groups"] = {
+								i(29320),	-- Band of the Guardian
+								i(29322),	-- Keeper's Ring of Piety
+								i(29321),	-- Time-Bending Gem
+								i(29323),	-- Andormu's Tear
+							},
+							["qg"] = 20201,	-- Sa'at
+							["sourceQuests"] = { 10296 },	-- The Black Morass
+						}),
+					}),
 					n(0, {	-- Zone Drop
 						i(25730, {	-- Pattern: Stylin' Jungle Hat
 							["crs"] = {

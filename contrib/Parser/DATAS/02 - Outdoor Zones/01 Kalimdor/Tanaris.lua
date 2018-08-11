@@ -70,6 +70,7 @@ _.Zones =
 					qh(25018, {	-- Andoren Will Know
 						["qg"] = 38849,	-- Megs Dreadshredder
 						["sourceQuests"] = { 25014 },	-- Sandscraper's Treasure
+						["isBreadcrumb"] = true,
 					}),
 	--[[				q(9269),	-- Atiesh, Greatstaff of the Guardian
 					q(9270),	-- Atiesh, Greatstaff of the Guardian
@@ -85,7 +86,10 @@ _.Zones =
 					}),
 					qh(25103, {	-- Bootlegger Outpost
 						["qg"] = 38703,	-- Megs Dreadshredder
-						["sourceQuests"] = { 24950 },	-- Captain Dreadbeard
+						["sourceQuests"] = {
+							24950,	-- Captain Dreadbeard (horde)
+							25166,	-- Captain Dreadbeard (alliance)
+						},
 					}),
 					qh(24949, {	-- Booty Duty
 						["qg"] = 38703,	-- Megs Dreadshredder
@@ -93,7 +97,7 @@ _.Zones =
 					q(25112, {	-- Butcherbot
 						["qg"] = 39178,	-- Driz Plunkbow
 					}),
-					qa(25166, {	-- Captain Dreadbeard
+					qa(25166, {	-- Captain Dreadbeard -- unlocks criteria "Southsea Pirates"
 						["groups"] = {
 							i(56867),	-- Pretty Please Robes
 							i(56868),	-- Dreadbeard Strangler Gloves
@@ -107,7 +111,7 @@ _.Zones =
 							26887,	-- Filling Our Pockets
 						},
 					}),
-					qh(24950,  {  -- Captain Dreadbeard
+					qh(24950,  {  -- Captain Dreadbeard -- unlocks criteria "Southsea Pirates"
 						["groups"] = {
 							i(56871),	-- Flirtation Robes
 							i(56872),	-- Dreadbeard Strangler Gloves
@@ -298,6 +302,7 @@ _.Zones =
 					}),
 					qh(24957, {	-- Get The Centipaarty Started
 						["qg"] = 38849,	-- Megs Dreadshredder
+						["sourceQuests"] = { 24955 },	-- Un-Chartered
 					}),
 					qh(25534, {	-- Going Off-Task
 						["qg"] = 38703,	-- Megs Dreadshredder
@@ -320,7 +325,7 @@ _.Zones =
 						["qg"] = 7804,	-- Trenton Lighthammer
 						["sourceQuests"] = { 25032 },	-- Secrets in the Oasis
 					})),
-					q(24953,  {  -- Just Trying to Kill Some Bugs
+					q(24953,  {  -- Just Trying to Kill Some Bugs -- awards "Bug Free" achievement criteria
 						["groups"] = {
 							i(56851),	-- Pendant of the Gaping Chasm
 							i(56852),	-- Mostly-Amazing Gloves
@@ -367,6 +372,7 @@ _.Zones =
 					}),
 					qdg(q(10282, {	-- Old Hillsbrad
 						["qg"] = 20130,	-- Andormu
+						["sourceQuests"] = { 10277 },	-- The Caverns of Time
 					})),
 					q(29193, {	-- On a Wing and a Prayer
 						["qg"] = 15192,	-- Anachronos
@@ -491,7 +497,7 @@ _.Zones =
 							19935,	-- Arazmodu
 						},
 					}),
-					qh(25001,  {  -- Sandscraper
+					qh(25001,  {  -- Sandscraper (awards "Advancing Our Interests" achievement criteria)
 						["groups"] = {
 							i(56887),	-- Knuckle Down
 							i(56888),	-- Sandscraper Bracers
@@ -588,21 +594,25 @@ _.Zones =
 						["sourceQuests"] = { 8760 },	-- The Path of the Invoker
 					}),
 					o(202474, {	-- Antediluvean Chest
-						qa(25421,  {  -- The Grand Tablet
+						qa(25421,  {  -- The Grand Tablet (awards "The Titans" achievement criteria)
 							["groups"] = {
 								i(56897),	-- Hieroglyphic Helm
 								i(56898),	-- Translation Boots
 								i(56899),	-- Rosy Tablet Belt
 							},
+							["sourceQuests"] = { 25070 },	-- What Lies Within
 						}),
-						qh(25107,  {  -- The Grand Tablet
+						qh(25107,  {  -- The Grand Tablet (awards "The Titans" achievement criteria)
 							["groups"] = {
 								i(56900),	-- Hieroglyphic Helm
 								i(56901),	-- Translation Boots
 								i(56902),	-- Rosy Tablet Belt
 							},
+							["sourceQuests"] = { 25070 },	-- What Lies Within
 						}),
-						q(25070),	-- What Lies Within
+						q(25070, {	-- What Lies Within
+							["sourceQuests"] = { 25566 }	-- The Secrets of Uldum
+						}),
 					}),
 					q(8754, {	-- The Path of the Conqueror
 						["groups"] = {
@@ -705,9 +715,11 @@ _.Zones =
 					}),
 					qh(26896, {	-- The Thunderdrome!
 						["qg"] = 44374,	-- Sherm
+						["isBreadcrumb"] = true,
 					}),
 					qa(26895, {	-- The Thunderdrome!
 						["qg"] = 38578,	-- Flinn
+						["isBreadcrumb"] = true,
 					}),
 					qraid(q(13432, {	-- The Vials of Eternity
 						["qgs"] = {
@@ -717,19 +729,21 @@ _.Zones =
 					})),
 					qa(25513,  {  -- Thunderdrome: Grudge Match!
 						["groups"] = {
-							i(56891),	-- Thunderdome Ring
+							i(56891),	-- Thunderdrome Ring
 							i(56892),	-- Kelsey's Necklace
 							i(56893),	-- Dreadshredder Cloak
 						},
 						["qg"] = 39034,	-- Dr. Dealwell
+						["sourceQuests"] = { 25065 },	-- You Too, Brute?
 					}),
 					qh(25591,  {  -- Thunderdrome: Grudge Match!
 						["groups"] = {
-							i(56894),	-- Thunderdome Ring
+							i(56894),	-- Thunderdrome Ring
 							i(56895),	-- Kelsey's Necklace
 							i(56896),	-- Dreadshredder Cloak
 						},
 						["qg"] = 39034,	-- Dr. Dealwell
+						["sourceQuests"] = { 25001 },	-- Sandscraper
 					}),
 					q(25095, {	-- Thunderdrome: Sarinexx!
 						["qg"] = 39034,	-- Dr. Dealwell
