@@ -191,7 +191,6 @@ profession(164, { -- Blacksmithing
 		--[[n(-17, { -- Quests
 			i(142377, { -- Badly Broken Dark Spear
 				q(45044, { -- Weapon No More
-					["g"] = {},
 					["qgs"] = {
 						9376, -- Blazerunner
 						6510, -- Bloodpetal Flayer
@@ -207,12 +206,10 @@ profession(164, { -- Blacksmithing
 				}),
 			}),
 			q(45051, { -- Reverse Blacksmithing
-				["g"] = {},
 				["qg"] = 115923, -- Ko'Zan
 				["sourceQuest"] = 45044, -- Weapon No More
 			}),
 			q(45055, { -- A Taste of Their Own Medicine
-				["g"] = {},
 				["qg"] = 115923, -- Ko'Zan
 				["sourceQuest"] = 45051, -- Reverse Blacksmithing
 			}),
@@ -225,7 +222,6 @@ profession(164, { -- Blacksmithing
 			}),
 			i(142344, { -- Broken Axe Blade
 				q(44926, { -- A Familiar Axe to Grind
-					["g"] = {},
 				}),
 			}),
 			q(44927, { -- Worth Its Weight in Steel
@@ -384,8 +380,7 @@ profession(164, { -- Blacksmithing
 		}),
 		n(-15, { -- Recipes
 			un(1, recipe(20201, { -- Plans: Arcanite Rod
-				["g"] = {},
-				["description"] = "These are the Arcanite Rod plans. They were removed in 5.0.4, the Mists of Pandaria pre-patch.",
+				["description"] = "These are the Arcanite Rod plans. They were removed in Patch 5.0.4.",
 			})),
 			recipe(19669), -- Plans: Arcanite Skeleton Key
 			recipe(10001), -- Plans: Big Black Mace
@@ -415,8 +410,7 @@ profession(164, { -- Blacksmithing
 			recipe(16640), -- Plans: Dense Weightstone
 			recipe(15972), -- Plans: Glinting Steel Dagger
 			un(1, recipe(14379, { -- Plans: Golden Rod
-				["g"] = {},
-				["description"] = "These are the Golden Rod plans. They were removed in 5.0.4, the Mists of Pandaria pre-patch.",
+				["description"] = "These are the Golden Rod plans. They were removed in Patch 5.0.4.",
 			})),
 			recipe(7223), -- Plans: Golden Scale Bracers
 			recipe(19667), -- Plans: Golden Skeleton Key
@@ -464,13 +458,11 @@ profession(164, { -- Blacksmithing
 			recipe(3323), -- Plans: Runed Copper Gauntlets
 			recipe(3324), -- Plans: Runed Copper Pants
 			un(1, recipe(12779, { -- Plans: Rune Edge
-				["g"] = {},
-				["description"] = "These are the Rune Edge plans. They were removed in 4.0.1, the Cataclysm pre-patch.",
+				["description"] = "These are the Rune Edge plans. They were removed in Patch 4.0.1.",
 			})),
 			recipe(2675), -- Plans: Shining Silver Breastplate
 			un(1, recipe(7818, { -- Plans: Silver Rod
-				["g"] = {},
-				["description"] = "These are the Silver Rod plans. They were removed in 5.0.4, the Mists of Pandaria pre-patch.",
+				["description"] = "These are the Silver Rod plans. They were removed in Patch 5.0.4.",
 			})),
 			recipe(19666), -- Plans: Silver Skeleton Key
 			recipe(3331), -- Plans: Silvered Bronze Boots
@@ -483,15 +475,13 @@ profession(164, { -- Blacksmithing
 			recipe(3294), -- Plans: Thick War Axe
 			un(1, recipe(10003)), -- Plans: The Shatterer
 			un(1, recipe(12764, { -- Plans: Thorium Greatsword
-				["g"] = {},
-				["description"] = "These are the Thorium Greatsword plans. They were removed in 4.0.1, the Cataclysm pre-patch.",
+				["description"] = "These are the Thorium Greatsword plans. They were removed in Patch 4.0.1.",
 			})),
 			un(1, recipe(9974)), -- Plans: Truesilver Breastplate
 			un(1, recipe(10015)), -- Plans: Truesilver Champion
 			un(1, recipe(9954)), -- Plans: Truesilver Gauntlets
 			un(1, recipe(14380, { -- Plans: Truesilver Rod
-				["g"] = {},
-				["description"] = "These are the Truesilver Rod plans. They were removed in 5.0.4, the Mists of Pandaria pre-patch.",
+				["description"] = "These are the Truesilver Rod plans. They were removed in Patch 5.0.4.",
 			})),
 			recipe(19668), -- Plans: Truesilver Skeleton Key
 		}),
@@ -993,8 +983,7 @@ profession(164, { -- Blacksmithing
 			recipe(29548), -- Plans: Fel Iron Plate Boots
 			recipe(29549), -- Plans: Fel Iron Plate Pants
 			un(1, recipe(34983, { -- Plans: Felsteel Whisper Knives
-				["g"] = {},
-				["description"] = "These are the Felsteel Whisper Knives plans. They were removed in 5.0.4, the Mists of Pandaria pre-patch.",
+				["description"] = "These are the Felsteel Whisper Knives plans. They were removed in Patch 5.0.4.",
 			})),
 			recipe(32284), -- Plans: Lesser Rune of Warding
 		}),
@@ -1248,19 +1237,16 @@ profession(164, { -- Blacksmithing
 			recipe(55201), -- Plans: Cobalt Tenderizer
 			recipe(54550), -- Plans: Cobalt Triangle Shield
 			un(1, recipe(55183, { -- Plans: Corroded Saronite Edge
-				["g"] = {},
-				["description"] = "These are the Corroded Saronite Edge plans. They were removed in 4.0.1, the Cataclysm pre-patch.",
+				["description"] = "These are the Corroded Saronite Edge plans. They were removed in Patch 4.0.1.",
 			})),
 			un(1, recipe(55184, { -- Plans: Corroded Saronite Woundbringer
-				["g"] = {},
-				["description"] = "These are the Corroded Saronite Woundbringer plans. They were removed in 4.0.1, the Cataclysm pre-patch.",
+				["description"] = "These are the Corroded Saronite Woundbringer plans. They were removed in Patch 4.0.1.",
 			})),
 			recipe(56280), -- Plans: Cudgel of Saronite Justice
 			recipe(55301), -- Plans: Daunting Handguards
 			recipe(55303), -- Plans: Daunting Legplates
 			un(1, recipe(55206, { -- Plans: Deadly Saronite Dirk
-				["g"] = {},
-				["description"] = "These are the Deadly Saronite Dirk plans. They were removed in 5.0.4, the Mists of Pandaria pre-patch.",
+				["description"] = "These are the Deadly Saronite Dirk plans. They were removed in Patch 5.0.4.",
 			})),
 			recipe(55656), -- Plans: Eternal Belt Buckle
 			recipe(55203), -- Plans: Forged Cobalt Claymore
@@ -1302,12 +1288,10 @@ profession(164, { -- Blacksmithing
 			recipe(55307), -- Plans: Savage Saronite Waistguard
 			recipe(55308), -- Plans: Savage Saronite Walkers
 			un(1, recipe(55628, { -- Plans: Socket Bracer
-				["g"] = {},
-				["description"] = "These are the Socket Bracer plans. They were removed in 6.0.2, the Warlords of Draenor pre-patch.",
+				["description"] = "These are the Socket Bracer plans. They were removed in Patch 6.0.2.",
 			})),
 			un(1, recipe(55641, { -- Plans: Socket Gloves
-				["g"] = {},
-				["description"] = "These are the Socket Gloves plans. They were removed in 6.0.2, the Warlords of Draenor pre-patch.",
+				["description"] = "These are the Socket Gloves plans. They were removed in Patch 6.0.2.",
 			})),
 			recipe(54946), -- Plans: Spiked Cobalt Belt
 			recipe(54918), -- Plans: Spiked Cobalt Boots
@@ -1321,8 +1305,7 @@ profession(164, { -- Blacksmithing
 			recipe(55375), -- Plans: Spiked Titansteel Treads
 			recipe(55200), -- Plans: Sturdy Cobalt Quickblade
 			un(1, recipe(55202, { -- Plans: Sure-Fire Shuriken
-				["g"] = {},
-				["description"] = "These are the Sure-Fire Shuriken plans. They were removed in 5.0.4, the Mists of Pandaria pre-patch.",
+				["description"] = "These are the Sure-Fire Shuriken plans. They were removed in Patch 5.0.4.",
 			})),
 			recipe(54551), -- Plans: Tempered Saronite Belt
 			recipe(54552), -- Plans: Tempered Saronite Boots
@@ -1335,8 +1318,7 @@ profession(164, { -- Blacksmithing
 			recipe(55373), -- Plans: Tempered Titansteel Helm
 			recipe(55376), -- Plans: Tempered Titansteel Treads
 			un(1, recipe(55732, { -- Plans: Titanium Rod
-				["g"] = {},
-				["description"] = "These are the Titanium Rod plans. They were removed in 5.0.4, the Mists of Pandaria pre-patch.",
+				["description"] = "These are the Titanium Rod plans. They were removed in Patch 5.0.4.",
 			})),
 			recipe(56357), -- Plans: Titanium Shield Spike
 			recipe(59406), -- Plans: Titanium Skeleton Key
@@ -2686,7 +2668,6 @@ profession(164, { -- Blacksmithing
 			i(115343, { -- Haephest's Satchel
 				["g"] = {
 					q(36309, { -- The Strength of Iron
-						["g"] = {},
 						["qg"] = 75043, -- Karnoth
 					}),
 				},
@@ -2707,7 +2688,6 @@ profession(164, { -- Blacksmithing
 			i(114965, { -- Fractured Forge Hammer
 				["g"] = {
 					q(36205, { -- The Fractured Hammer
-						["g"] = {},
 						["qg"] = 74254, -- Dorogg the Ruthless
 					}),
 				},
@@ -2716,14 +2696,12 @@ profession(164, { -- Blacksmithing
 				["requireSkill"] = 164, -- Blacksmithing
 			}),
 			q(36207, { -- Waruk the Frostforger
-				["g"] = {},
 				["qg"] = 78989, -- Axe-Shaper Kugra
 				["sourceQuest"] = 36205, -- The Fractured Hammer
 				["races"] = HORDE_ONLY,
 				["requireSkill"] = 164, -- Blacksmithing
 			}),
 			q(36230, { -- The Restless Spirit
-				["g"] = {},
 				["qg"] = 84494, -- Waruk the Frostforger
 				["sourceQuest"] = 36207, -- Waruk the Frostforger
 				["races"] = HORDE_ONLY,
@@ -2854,7 +2832,6 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			q(38502, { -- The Methods of the Nightfallen
-				["g"] = {},
 				["qg"] = 97261, -- Alard Schmied
 				["sourceQuest"] = 39681, -- The Properties of Leystone
 			}),
@@ -2867,22 +2844,18 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 39681, -- The Properties of Leystone
 			}),
 			q(38505, { -- Engineers: Not COMPLETELY Useless
-				["g"] = {},
 				["qg"] = 97261, -- Alard Schmied
 				["sourceQuests"] = { 38501, 38502 }, -- Hatecoil Hammerwork, The Methods of the Nightfallen
 			}),
 			q(38506, { -- Chicken Scratch
-				["g"] = {},
 				["qg"] = 92194, -- Timofey Oshenko
 				["sourceQuest"] = 38505, -- Engineers: Not COMPLETELY Useless
 			}),
 			q(38507, { -- Secrets of Leysmithing
-				["g"] = {},
 				["qg"] = 92195, -- Professor Pallin
 				["sourceQuest"] = 38506, -- Chicken Scratch
 			}),
 			q(38515, { -- Nature Provides
-				["g"] = {},
 				["qg"] = 97261, -- Alard Schmied
 				["sourceQuest"] = 38507, -- Secrets of Leysmithing
 			}),
@@ -2897,17 +2870,14 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38515, -- Nature Provides
 			}),
 			q(38563, { -- Flower-Pickers and Potion-Quaffers
-				["g"] = {},
 				["qg"] = 97261, -- Alard Schmied
 				["sourceQuest"] = 38500, -- Leysmithing Mastery
 			}),
 			q(38513, { -- The Highmountain Smiths
-				["g"] = {},
 				["qg"] = 92183, -- Alard Schmied
 				["sourceQuest"] = 38563, -- Flower-Pickers and Potion-Quaffers
 			}),
 			q(38514, { -- You Are Not Worthy
-				["g"] = {},
 				["qg"] = 92242, -- Barm Stonebreaker
 				["sourceQuest"] = 38513, -- The Highmountain Smiths
 			}),
@@ -2926,7 +2896,6 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 39699, -- Ironhorn Leysmithing
 			}),
 			q(38518, { -- From One Master to Another
-				["g"] = {},
 				["qg"] = 92242, -- Barm Stonebreaker
 				["sourceQuest"] = 38519, -- Grayheft
 			}),
@@ -2945,7 +2914,6 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38522, -- Not Just Weapons and Armor
 			}),
 			q(39702, { -- Legend of Black Rook Hold
-				["g"] = {},
 				["qg"] = 92183, -- Alard Schmied
 				["sourceQuest"] = 38523, -- Leystone Hoofplates
 			}),
@@ -2957,18 +2925,15 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 39702, -- Legend of Black Rook Hold
 			}),
 			q(39726, { -- ...And the Anvil
-				["g"] = {},
 				["qg"] = 96763, -- Saris Swifthammer
 				["sourceQuest"] = 39702, -- Legend of Black Rook Hold
 			}),
 			q(39729, { -- The Knowledge of Black Rook
-				["g"] = {},
 				["qg"] = 96763, -- Saris Swifthammer
 				["requireSkill"] = 164,
 				["sourceQuests"] = { 39680, 39726 }, -- Between the Hammer..., ...And the Anvil
 			}),
 			q(38564, { -- A Sweet Bargain
-				["g"] = {},
 				["qg"] = 92183, -- Alard Schmied
 				["sourceQuest"] = 39729, -- The Knowledge of Black Rock
 			}),
@@ -2980,12 +2945,10 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38564, -- A Sweet Bargain
 			}),
 			q(38524, { -- Felsmith Nal'ryssa
-				["g"] = {},
 				["qg"] = 92183, -- Alard Schmied
 				["sourceQuest"] = 44449, -- Advanced Quenching
 			}),
 			q(38525, { -- Part of the Team
-				["g"] = {},
 				["qg"] = 92264, -- Felsmith Nal'ryssa
 				["sourceQuest"] = 38524, -- Felsmith Nal'ryssa
 			}),
@@ -2997,7 +2960,6 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38525, -- Part of the Team
 			}),
 			q(38527, { -- Nal'ryssa's Technique
-				["g"] = {},
 				["qg"] = 92264, -- Felsmith Nal'ryssa
 				["sourceQuest"] = 38526, -- Smith Under Fire
 			}),
@@ -3009,7 +2971,6 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38527, -- Nal'ryssa's Technique
 			}),
 			q(38530, { -- The Firmament Stone
-				["g"] = {},
 				["qg"] = 92264, -- Felsmith Nal'ryssa
 				["sourceQuest"] = 38528, -- Leystone's Potential
 			}),
@@ -3022,12 +2983,10 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38530, -- The Firmament Stone
 			}),
 			q(38532, { -- Maw of Souls: Hammered By The Storm
-				["g"] = {},
 				["qg"] = 92242, -- Barm Stonebreaker
 				["sourceQuest"] = 38530, -- The Firmament Stone
 			}),
 			q(38559, { -- Worthy of the Stone
-				["g"] = {},
 				["qg"] = 92242, -- Barm Stonebreaker
 				["sourceQuests"] = { 38531, 38532 }, -- Leystone Mastery, Maw of Souls: Hammered By The Storm
 			}),
@@ -3220,7 +3179,6 @@ profession(164, { -- Blacksmithing
 			}),
 			o(176090, { -- Human Remains
 				q(5103, { -- Hot Fiery Death
-					["g"] = {},
 				}),
 			}),
 			q(5124, { -- Fiery Plate Gauntlets
@@ -3281,7 +3239,6 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(2759, { -- In Search of Galvan
-				["g"] = {},
 				["qg"] = 7798, -- Hank the Hammer
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -3293,13 +3250,11 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			q(2757, { -- Booty Bay or Bust!
-				["g"] = {},
 				["qg"] = 7793, -- Ox
 				["sourceQuests"] = { 2756 }, -- The Old Ways
 				["races"] = HORDE_ONLY,
 			}),
 			q(2760, { -- The Mithril Order
-				["g"] = {},
 				["qg"] = 7794, -- McGaven
 				["sourceQuests"] = { 2757, 2759 }, -- Booty Bay or Bust! (Horde), In Search of Galvan (Alliance)
 			}),
@@ -3332,7 +3287,6 @@ profession(164, { -- Blacksmithing
 				["sourceQuests"] = { 2761, 2762, 2763 }, -- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue
 			}),
 			q(2764, { -- Galvin's Finest Pupil
-				["g"] = {},
 				["qg"] = 7802, -- Galvan the Ancient
 				["sourceQuests"] = { 2761, 2762, 2763 }, -- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue
 			}),
