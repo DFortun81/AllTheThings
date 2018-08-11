@@ -77,6 +77,7 @@ _.Instances =
 											i(48124),	-- Razormaw Hatchling
 											i(48126),	-- Razzashi Hatchling
 										},
+										["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 									}),
 								},
 								["crs"] = {
@@ -87,7 +88,6 @@ _.Instances =
 									62511,	-- Amber-Shaper Un'sok
 									62837,	-- Grand Empress Shek'zeer
 								},
-								["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 							}),
 							ach(6718, {	-- The Dread Approach
 								cr(62980, e(745, {	-- Imperial Vizier Zor'lok
