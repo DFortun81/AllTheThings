@@ -642,6 +642,7 @@ _.Mounts =
 		i(142369),		-- Ivory Hawkstrider
 		i(67107),		-- Kor'kron Annihilator
 		i(152788),		-- Lightforged Warframe Mount
+		i(163042),		-- Reins of the Mighty Caravan Brutosaur
 		i(116768),		-- Mosshide Riverwallow
 		i(73838),		-- Mountain Horse
 		{
@@ -651,6 +652,7 @@ _.Mounts =
 		i(47101),		-- Ochre Skeletal Warhorse
 		i(45595),		-- Orgrimmar Wolf
 		un(2, i(116776)),	-- Pale Thorngrazer (Rep removed from Medallion of the Legion in hotfix for 8.0)
+		i(163589),		-- Reins of the Palehide Direhorn
 		i(2414),		-- Pinto
 		{
 		["itemID"] = 91006,	-- Purple Dragon Turtle (Panda)

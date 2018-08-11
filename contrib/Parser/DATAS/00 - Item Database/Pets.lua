@@ -327,11 +327,13 @@ pet(68385, 297);	-- Lil' Ragnaros
 pet(163778, 2443);	-- Lil' Siege Tower
 pet(11826, 86); 	-- Lil' Smoky
 pet(71033, 320);	-- Lil' Tarecgosa
+pet(163779, 2444);	-- Lil' War Machine
 pet(54847, 256);	-- Lil' XT
 pet(44841, 203);	-- Little Fawn's Salt Lick (Little Fawn)
 pet(163815, 2471);	-- Littlehoof
 pet(94125, 1177); 	-- Living Sandling
 pet(127705, 1661); 	-- Lost Netherpup
+pet(163568, 2430);	-- Lost Platysaur [So Cute!]
 pet(116155, 1511); 	-- Lovebird Hatchling
 pet(85871, 671);	-- Lucky Quilen Cub
 pet(73797, 337); 	-- Lump of Coal (Lumpy)

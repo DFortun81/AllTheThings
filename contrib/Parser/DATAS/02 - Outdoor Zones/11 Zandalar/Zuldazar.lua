@@ -815,56 +815,11 @@ _.Zones =
 								}),	
 							},
 						}),
-						n(132114, { -- Griftah <Amazing Amulets>
-							["groups"] = {
-								i(156659, { -- Counterfeit Rastakhan Mask
-									["groups"] = {
-										i(156649),  -- Zandalari Effigy Amulet
-									},
-								}),
-							},
-						}),
 						n(136219, { -- Mona <Butterflies>
 							["groups"] = {
 								i(163508), -- Butterfly in a Jar
 							},
 						}),
-						n(131287, { -- Natal'hakata <Zandalari Empire Emissary
-							["groups"] = {
-								i(160546), -- Tabard of the Zandalari Empire
-								i(161516), -- Bindings of the Disparate Tribes
-								i(161497), -- Cord of the Loa Worshippers
-								i(161548), -- Gonk Adherents Vambraces
-								i(161526), -- Gral Worshipper's Waders
-								i(161546), -- Grand Fleet Legplates
-								i(161665), -- Reins of the Cobalt Pterrordax
-								i(161500), -- Shadraspun Legwraps
-								i(161524), -- Torcali's Grips of the Bounty
-								i(161517), -- Waistcord of Pa'ku's Flight
-								i(160530), -- Dinomancer's Cloak
-								i(162764), -- Design: Laribole Staff of Alacrity [Rank 3]
-								i(162761), -- Design: Owlseye Loop [Rank 3]
-								i(162765), -- Design: Scarlet Diamond Staff of Intuition [Rank 3]
-								i(162717), -- Formula: Enchant Ring - Pact of Haste [Rank 3]
-								i(162722), -- Formula: Enchant Weapon - Deadly Navigation [Rank 3]
-								i(162721), -- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]
-								i(163317), -- Recipe: Battle Potion of Stamina [Rank 3]
-								i(162704), -- Recipe: Coastal Healing Potion [Rank 3]
-								i(162753), -- Recipe: Contract: Zandalari Empire [Rank 2]
-								i(162696), -- Recipe: Flask of Endless Fathoms [Rank 3]
-								i(162692), -- Recipe: Potion of Replenishment [Rank 3]
-								i(162730), -- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]
-								i(162731), -- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]
-								i(162743), -- Schematic: Deployable Attire Rearranger [Rank 3]
-								i(162742), -- Schematic: Interdimensional Companion Repository [Rank 3]
-								i(162741), -- Schematic: Organic Discombobulation Grenade [Rank 3]
-							},
-						}),
-						n(129597, { -- Trader Haw'li
-							["groups"] = {
-								i(159749), -- Haw'li's Hot & Spicy Chili
-							},
-						}),	
 					},
 				}),
 				n(0, { -- Zone Drop
@@ -933,10 +888,12 @@ _.Zones =
 			},
 			["achievementID"] = 12559, -- Explore Zuldazar
 			["lvl"] = 108,
+			--[[
 			["maps"] = { 
 				1163, -- Dazar'alor
 				1165, -- Dazar'alor
 			},
+			--]]
 			["description"] = "|cff66ccffZuldazar is the massive capital city of the Zandalari Empire and the jewel of all troll civilizations. It is built atop the highest peaks of Zandalar, and is built in a series of giant ziggurats that look like a towering mountain from a distance. Different troll tribes distrust one another and have often fought one another, but every six years, envoys from all the troll tribes arrive at Zuldazar in order to share information and discuss matters that may affect the entire troll race. It is the oldest city on Azeroth still standing.|r",
 		}),
 	}),

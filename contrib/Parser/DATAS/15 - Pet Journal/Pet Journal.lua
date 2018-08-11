@@ -44,6 +44,7 @@ _.PetJournal =
 		p(1687), 	-- Left Shark
 		p(702), 	-- Leopard Tree Frog
 		p(1623), 	-- Leviathan Hatchling
+		p(2430),	-- Lost Platysaur
 		p(542), 	-- Mac Frog
 		p(132), 	-- Magical Crawdad
 		p(566), 	-- Mirror Strider
@@ -931,6 +932,7 @@ _.PetJournal =
 		p(1320),	-- Lil' Bling
 		p(2443),	-- Lil' Siege Tower
 		p(86),		-- Lil' Smoky
+		p(2444),	-- Lil' War Machine
 		p(256),		-- Lil' XT
 		p(83),		-- Mechanical Chicken
 		p(844),		-- Mechanical Pandaren Dragonling
