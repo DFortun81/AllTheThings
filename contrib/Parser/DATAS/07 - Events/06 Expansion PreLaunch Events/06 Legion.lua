@@ -9,33 +9,23 @@ _.WorldEvents =
 				["groups"] = {
 					n(-17, { -- Quests
 						q(44421, { -- Anomalous Anomalies
-							["groups"] = {
-							},
 							["qg"] = 113986, -- Archmage Khadgar
 							["sourceQuests"] = { 44182 }, -- City Under Siege
 						}),
 						q(44500, { -- Author! Author!
-							["groups"] = {
-							},
 							["qg"] = 113986, -- Archmage Khadgar
 							["sourceQuests"] = { 44421 }, -- Author! Author!
 						}),
 						q(40717, { -- Calling of the Council
-							["groups"] = {
-							},
 							["qg"] = 114550, -- Khadgar's Upgraded Servant
 							["races"] = { 1, 3, 4, 7, 11, 22, 25, 29, 30 }, -- Alliance Races
 						}),
 						q(40718, { -- Calling of the Council
-							["groups"] = {
-							},
 							["qg"] = 114550, -- Khadgar's Upgraded Servant
 							--["sourceQuests"] = { 
 							["races"] = { 2, 5, 6, 8, 9, 10, 26, 27, 28 }, -- Horde Races
 						}),
 						q(44182, { -- City Under Siege
-							["groups"] = {
-							},
 							["qg"] = 114561, -- Khadgar's Upgraded Servant
 							["sourceQuests"] = { 40755 }, -- Hiding in the Stacks
 						}),
@@ -723,6 +713,8 @@ _.WorldEvents =
 							["qg"] = 113655, -- Brann Bronzebeard
 							["sourceQuests"] = { 40717, 40718 }, -- Calling of the Council
 						}),
+						--q(42237),	-- Invasion: Tanaris
+						--q(43294),	-- Repel
 					}),
 					n(-2, { -- Vendors
 						n(109912, { -- Captive Wyrmtongue <Reluctant 'Quartermaster'>

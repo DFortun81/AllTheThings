@@ -23,75 +23,51 @@ _.Zones =
 						i(89125),	-- Sack of Pet Supplies
 					}),	
 					qh(31872, {	-- Merda Stronghoof
-						["groups"] = {
-						},
 						["qg"] = 66372,	-- Merda Stronghoof
 					}),
 				}),
 				n(-17, { 	-- Quests
 					qh(14195, {	-- All Becoming Clearer
-						["groups"] = {
-						},
 						["sourceQuests"] = { 14360 },	-- Nothing a Couple of Melons Won't Fix
 					}),
 					qa(14380, {	-- An Impactful Discovery
-						["groups"] = {
-						},
 						["qg"] = 36329,	-- Thargad
 						["sourceQuests"] = { 14378 },	-- Hunting Brendol
 					}),
 					q(14312, {	-- An Introduction Is In Order
-						["groups"] = {
-						},
 						["qg"] = 36052,	-- Garren Darkwind
 						["sourceQuests"] = { 14311 },	-- Taking Part
 					}),
 					q(14284, {	-- A Revenant's Vengeance
-						["groups"] = {
-						},
 						["qg"] = 35902,	-- Lord Hydronis
 						["sourceQuests"] = { 14292 },	-- The Enemy of Our Enemy
 					}),
 					q(14305, {	-- A Time to Reap
-						["groups"] = {
-						},
 						["qg"] = 36060,	-- Botanist Ferrah
 					}),
 					qh(14188, {	-- Avenge Furien!
-						["groups"] = {
-						},
 						["qg"] = 35295,	-- Cerelia
 						["sourceQuests"] = { 14184 },	-- My Time Has Passed
 					}),
 					i(38567, {	-- Maraudine Prisoner Manifest
 						q(14330, {	-- Behind Closed Doors
-							["groups"] = {
-							},
 							["qg"] = 4656,	-- Maraudine Mauler
 							["sourceQuests"] = { 14329 },	-- Not So Fast!
 						}),
 					}),
 					o(195497, {	-- Elune's Brazier
 						qr(qa(14359, {	-- Blessings From Above
-							["groups"] = {
-							},
 							["sourceQuests"] = { 14358 },	-- Ten Pounds of Flesh
 						})),
 						qr(qh(14217, {	-- Satyrical Offerings
-							["groups"] = {
-							},
 							["sourceQuests"] = { 14213 },	-- Ten Pounds of Flesh
 						})),
 						qa(14358),	-- Ten Pounds of Flesh
 						qh(14213, {	-- Ten Pounds of Flesh
-							["groups"] = {
-							},
 							["sourceQuests"] = { 14189 },	-- Translation
 						}),
 					}),
 					q(14304, {	-- Blood Theory
-						["groups"] = {
-						},
 						["qg"] = 36048,	-- Thressa Amberglen
 					}),
 					qh(14334, {	-- Blubbergut
@@ -105,13 +81,9 @@ _.Zones =
 						["sourceQuests"] = { 14337 },	-- Shadowprey Village
 					}),
 					q(5501, {	-- Bone Collector
-						["groups"] = {
-						},
 						["qg"] = 11438,	-- Bibbly F'utzbuckle
 					}),
 					q(14314, {	-- Breakout!
-						["groups"] = {
-						},
 						["qg"] = 36056,	-- Khan Leh'Prah
 						["sourceQuests"] = { 14312 },	-- An Introduction is in Order
 					}),
@@ -126,8 +98,6 @@ _.Zones =
 						["sourceQuests"] = { 14304 },	-- Blood Theory
 					}),
 					q(14316, {	-- Cenarion Property
-						["groups"] = {
-						},
 						["qg"] = 36052,	-- Garren Darkwind
 						["sourceQuests"] = { 14312 },	-- An Introduction is in Order
 					}),
@@ -180,8 +150,6 @@ _.Zones =
 						["description"] = "This quest was fixed in Patch 8.0.1 to grant Exalted reputation with both the Gelkis and Magram Kolkar factions upon completion. From our understanding, this change may not have been intentional, but never-the-less, we are very very excited when Blizzard does things like this. Please show your support for future adjustments to the old world - perhaps some day we'll get Shendralar back as well!\n\n - Crieve"
 					}),
 					q(14268, {	-- Deep Impact
-						["groups"] = {
-						},
 						["qg"] = 35827,	-- Valishj
 						["sourceQuests"] = { 14264 },	-- Wetter than Wet
 					}),
@@ -196,8 +164,6 @@ _.Zones =
 						["sourceQuests"] = { 14314, 14316 },	-- Breakout! & Cenarion Property
 					}),
 					qh(14339, {	-- Delivery Device
-						["groups"] = {
-						},
 						["qg"] = 4498,	-- Maurin Bonesplitter
 						["sourceQuests"] = { 14338 },	-- Ghost Walker Post
 					}),
@@ -210,55 +176,35 @@ _.Zones =
 					}),
 					a(i(49203, {	-- Burning Blade Ear
 						qa(14362, {	-- Ears Are Burning
-							["groups"] = {
-							},
 							["qg"] = 4665,	-- Burning Blade Adept 
 						}),
 						qa(14362, {	-- Ears Are Burning
-							["groups"] = {
-							},
 							["qg"] = 4663,	-- Burning Blade Augur
 						}),
 						qa(14362, {	-- Ears Are Burning
-							["groups"] = {
-							},
 							["qg"] = 4666,	-- Burning Blade Felsworn
 						}),
 						qa(14362, {	-- Ears Are Burning
-							["groups"] = {
-							},
 							["qg"] = 4664,	-- Burning Blade Reaver
 						}),						
 						qa(14362, {	-- Ears Are Burning
-							["groups"] = {
-							},
 							["qg"] = 4667,	-- Burning Blade Shadowmage
 						}),
 					})),
 					h(i(49010, {	-- Burning Blade Ear
 						qh(14232, {	-- Ears Are Burning
-							["groups"] = {
-							},
 							["qg"] = 4665,	-- Burning Blade Adept
 						}),						
 						qh(14232, {	-- Ears Are Burning
-							["groups"] = {
-							},
 							["qg"] = 4663,	-- Burning Blade Augur
 						}),
 						qh(14232, {	-- Ears Are Burning
-							["groups"] = {
-							},
 							["qg"] = 4666,	-- Burning Blade Felsworn
 						}),
 						qh(14232, {	-- Ears Are Burning
-							["groups"] = {
-							},
 							["qg"] = 4664,	-- Burning Blade Reaver
 						}),
 						qh(14232, {	-- Ears Are Burning
-							["groups"] = {
-							},
 							["qg"] = 4667,	-- Burning Blade Shadowmage
 						}),
 					})),
@@ -273,29 +219,21 @@ _.Zones =
 						["sourceQuests"] = { 14387 },	-- Lay of the Land
 					}),
 					qa(14365, {	-- Ethel Rethor
-						["groups"] = {
-						},
 						["qg"] = 5752,	-- Corporal Melkins
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 14354 },	-- Elune's Gifts
 					}),
 					qh(14255, {	-- Ethel Rethor
-						["groups"] = {
-						},
 						["qg"] = 35295,	-- Cerelia
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 14189 },	-- Translation
 					}),
 					o(195445, {	-- Ancient Vortex Runestone
 						qh(14196, {	-- Firestarter
-							["groups"] = {
-							},
 							["sourceQuests"] = { 14195 },	-- All Becoming Clearer
 						}),
 					}),
 					qh( 5421, {	-- Fish in a Bucket
-						["groups"] = {
-						},
 						["qg"] = 11317,	-- Jinar'Zillen
 					}),
 					q(14253, { 	-- Fletch Me Some Plumage!
@@ -309,23 +247,17 @@ _.Zones =
 					}),
 					o(195433, {	-- Ancient Tablets
 						qh(14191, {	-- Furien's Footsteps
-							["groups"] = {
-							},
 							["sourceQuests"] = { 14189 },	-- Translation
 						}),
 						qa(14193),	-- Nothing a Couple of Melons Won't Fix
 					}),
 					o(195438, {	-- Cup of Elune
 						qh(14191, {	-- Furien's Footsteps
-							["groups"] = {
-							},
 							["sourceQuests"] = { 14189 },	-- Translation
 						}),
 						qa(14193),	-- Nothing a Couple of Melons Won't Fix
 					}),
 					q(6132, {	-- Get Me Out of Here!
-						["groups"] = {
-						},
 						["qg"] = 12277,	-- Melizza Brimbuzzle
 					}),
 					q(6134, { 	-- Ghost-o-plasm Round Up
@@ -336,33 +268,23 @@ _.Zones =
 						["qg"] = 6019,	-- Hornizz Brimbuzzle
 					}),
 					qh(14338, {	-- Ghost Walker Post
-						["groups"] = {
-						},
 						["qg"] = 36034,	-- Karnum Marshweaver
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 14311 },	-- Taking Part
 					}),
 					q(14260, {	-- Going Deep
-						["groups"] = {
-						},
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
 						["sourceQuests"] = { 14257 },	-- Slitherblade Slaughter
 					}),
 					q(14252, {	-- Good Gold For Bad Tail
-						["groups"] = {
-						},
 						["qg"] = 35757,	-- Bizby
 					}),
 					o(195600, {	-- Smouldering Stone
 						q(14254, {	-- Heavy Metal
-							["groups"] = {
-							},
 							["sourceQuests"] = { 14247 },	-- Stubborn Lands
 						}),
 					}),
 					qa(14378, {	-- Hunting Brendol
-						["groups"] = {
-						},
 						["qg"] = 36329,	-- Thargad
 						["sourceQuests"] = { 14373, 14374 },	-- Infernal Encroachment & Portals of the Legion
 					}),
@@ -383,39 +305,27 @@ _.Zones =
 						["qg"] = 5395,	-- Felgur Twocuts
 					}),
 					q(14393, {	-- Into the Fray!
-						["groups"] = {
-						},
 						["qg"] = 36398,	-- Khan Leh'Prah
 						["sourceQuests"] = { 14332 },	-- Time for Change
 					}),
 					a(i(49220, {	-- Infernal Power Core
 						qa(14376, {	-- Jugkar's Undoing
-							["groups"] = {
-							},
 							["qg"] = 35591,	-- Lesser Infernal
 						}),
 					})),
 					h(i(49200, {	-- Infernal Power Core
 						qh(14344, {	-- Jugkar's Undoing
-							["groups"] = {
-							},
 							["qg"] = 35591,	-- Lesser Infernal
 						}),
 					})),
 					q(5561, {	-- Kodo Roundup
-						["groups"] = {
-						},
 						["qg"] = 11596,	-- Smeed Scrabblescrew
 					}),
 					qa(14387, {	-- Lay of the Land
-						["groups"] = {
-						},
 						["qg"] = 5396,	-- Captain Pentigast
 						["sourceQuests"] = { 14384 },	-- Rerouted!
 					}),
 					qh(14343, {	-- Maurin's Concoction
-						["groups"] = {
-						},
 						["qg"] = 4498,	-- Maurin Bonesplitter
 						["sourceQuests"] = { 14339 },	-- Delivery Device
 					}),
@@ -429,48 +339,32 @@ _.Zones =
 						["sourceQuests"] = { 14268 },	-- Deep Impact
 					}),
 					qh(14184, {	-- My Time Has Passed
-						["groups"] = {
-						},
 						["qg"] = 35286,	-- Furien
 						["sourceQuests"] = { 28548 },	-- Warchief's Command: Desolace!
 					}),
 					q(14327, {	-- My Word is My Bond (awarded "Karnum's Glade" criteria)
-						["groups"] = {
-						},
 						["qg"] = 36163,	-- Khan Kammah
 						["sourceQuests"] = { 14325 },	-- Will Work For Food
 					}),
 					q(14251, {	-- New Beginnings
-						["groups"] = {
-						},
 						["qg"] = 35757,	-- Bizby
 					}),
 					qh(14360, {	-- Nothing a Couple of Melons Won't Fix
-						["groups"] = {
-						},
 						["sourceQuests"] = { 14191 },	-- Furien's Footsteps
 					}),
 					q(14329, {	-- Not So Fast!
-						["groups"] = {
-						},
 						["qg"] = 36185,	-- Khan Shodo
 						["sourceQuests"] = { 14328 },	-- Three Princes
 					}),
 					q(14302, {	-- Official Assessment (rewarded "The Naga Threat" criteria)
-						["groups"] = {
-						},
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
 						["sourceQuests"] = { 14301 },	-- Return and Report
 					}),
 					qa(14361, {	-- Peace of Mind
-						["groups"] = {
-						},
 						["qg"] = 5396,	-- Captain Pentigast
 						["sourceQuests"] = { 14354 },	-- Elune's Gifts
 					}),
 					qh(14223, {	-- Peace of Mind
-						["groups"] = {
-						},
 						["qg"] = 35298,	-- Sorrem
 						["sourceQuests"] = { 14189 },	-- Translation
 					}),
@@ -518,8 +412,6 @@ _.Zones =
 						["sourceQuests"] = { 14225 },	-- You'll Know it When You See It
 					}),
 					qa(14384, {	-- Rerouted!
-						["groups"] = {
-						},
 						["qg"] = 36410,	-- Officer Jankie
 						["sourceQuests"] = { 28531 },	-- Hero's Call: Desolace!
 					}),
@@ -544,73 +436,49 @@ _.Zones =
 						["sourceQuests"] = { 14196 },	-- Firestarter
 					}),
 					qa(14379, {	-- Rock Lobstrock!
-						["groups"] = {
-						},
 						["qg"] = 36378,	-- Dumti
 						["sourceQuests"] = { 14373, 14374 },	-- Infernal Encroachment & Portals of the Legion
 					}),
 					qh(14337, {	-- Shadowprey Village (wowhead says not available if 6142 or 14334 is completed)
-						["groups"] = {
-						},
 						["qg"] = 36034,	-- Karnum Marshweaver
 						["sourceQuests"] = { 14327 },	-- My Word is My Bond
 					}),
 					q(14257, {	-- Slitherblade Slaughter
-						["groups"] = {
-						},
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
 						["sourceQuests"] = { 14256 },	-- The Emerging Threat
 					}),
 					qh(14341, {	-- Smeed's Harnesses
-						["groups"] = {
-						},
 						["qg"] = 11259,	-- Nataka Longhorn
 					}),
 					q(14247, {	-- Stubborn Lands
-						["groups"] = {
-						},
 						["qg"] = 35661,	-- Cenarion Embassador Thunk
 					}),
 					q(14307, {	-- Stubborn Winds
-						["groups"] = {
-						},
 						["qg"] = 36034,	-- Karnum Marshweaver
 					}),
 					q(14311, {	-- Taking Part
-						["groups"] = {
-						},
 						["qg"] = 36060,	-- Botanist Ferrah
 						["sourceQuests"] = { 14305, 14306 },	-- A Time to Reap & Pulling Weeds
 					}),
 					qa(14372, {	-- Thargad's Camp
-						["groups"] = {
-						},
 						["qg"] = 36034,	-- Karnum Marshweaver
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 14327 },	-- My Word is My Bond
 					}),
 					q(14256, {	-- The Emerging Threat
-						["groups"] = {
-						},
 						["qg"] = 35773,	-- Cenarion Researcher Korrah
 						["sourceQuests"] = { 14365, 14255 },	-- Ethel Rethor (A, H versions)
 					}),
 					q(14292, {	-- The Enemy of Our Enemy
-						["groups"] = {
-						},
 						["qg"] = 35773,	-- Cenarion Researh Korrah
 						["sourceQuests"] = { 14282 },	-- Mystery Solved
 					}),
 					qa( 1454, {	-- The Karnitol Shipwreck
-						["groups"] = {
-						},
 						["qg"] = 5638,	-- Kreldig Ungor
 						["sourceQuests"] = { 14354 },	-- Elune's Gifts
 					}),
 					o(35251, {	-- Karnitol's Chest
 						qa(1455, {	-- The Karnitol Shipwreck
-							["groups"] = {
-							},
 							["sourceQuests"] = { 1454 },	-- The Karnitol Shipwreck
 						}),
 					}),
@@ -625,22 +493,16 @@ _.Zones =
 						["sourceQuests"] = { 1455 },	-- The Karnitol Shipwreck
 					}),
 					qa(14410, {	-- The Wilds of Feralas
-						["groups"] = {
-						},
 						["qg"] = 36487,	-- Khan Shodo
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 14394 },	-- Death to Agogridon
 					}),
 					qh(26589, {	-- The Wilds of Feralas
-						["groups"] = {
-						},
 						["qg"] = 36487,	-- Khan Shodo
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 14394 },	-- Death to Agogridon
 					}),
 					q(14328, {	-- Three Princes
-						["groups"] = {
-						},
 						["qg"] = 36056,	-- Khan Leh'Prah
 						["sourceQuests"] = { 14327 },	-- My Word is My Bond
 					}),
@@ -672,116 +534,123 @@ _.Zones =
 						}),
 					}),
 					qh(14189, {	-- Translation
-						["groups"] = {
-						},
 						["qg"] = 35298,	-- Sorrem
 						["sourceQuests"] = { 14188 },	-- Avenge Furien!
 					}),
 					q(14264, {	-- Wetter Than Wet
-						["groups"] = {
-						},
 						["qg"] = 35827,	-- Valishj
 						["sourceQuests"] = { 14260 },	-- Going Deep
 					}),
 					o(196393, {	-- Broken Relic
 						q(14333, {	-- While You're Here
-							["groups"] = {
-							},
 							["sourceQuests"] = { 14330 },	-- Behind Closed Doors (may be available as early as 14328 "Three Princes" is turned in, but picked up when turning in "Behind Closed Doors")
 						}),
 					}),
 					q(14325, {	-- Will Work For Food
-						["groups"] = {
-						},
 						["qg"] = 36163,	-- Khan Kammah
 						["sourceQuests"] = { 14318 },	-- Delicate Negotiations
 					}),
 					qa(14363, {	-- You'll Know It When You See It
-						["groups"] = {
-						},
 						["sourceQuests"] = { 14361 },	-- Peace of Mind
 					}),
 					qh(14225, {	-- You'll Know It When You See It
-						["groups"] = {
-						},
 						["sourceQuests"] = { 14223 },	-- Peace of Mind
 					}),
 				}),
 				n(-16, { 	-- Rares
-					n(14229, { 		-- Accursed Slitherblade
-						dr(	4	, i(	9836	)), --	Banded Armor
-						dr(	4	, i(	7354	)), --	Elder's Boots
-						dr(	4	, i(	7446	)), --	Sentinel Cloak
-						dr(	3	, i(	9847	)), --	Conjurer's Cloak
-						dr(	3	, i(	9824	)), --	Durable Shoulders
-						dr(	3	, i(	7353	)), --	Elder's Padded Armor
-						dr(	3	, i(	7409	)), --	Infiltrator Boots
-						dr(	3	, i(	7420	)), --	Phalanx Headguard
-						dr(	3	, i(	9867	)), --	Renegade Cloak
-						dr(	3	, i(	9835	)), --	Scaled Leather Tunic
-						dr(	2	, i(	7367	)), --	Elder's Mantle
-						dr(	2	, i(	7406	)), --	Infiltrator Cord
-						dr(	2	, i(	7423	)), --	Phalanx Leggings
-						dr(	1.9	, i(	9825	)), --	Durable Pants
-						dr(	1.9	, i(	7368	)), --	Elder's Pants
-						dr(	1.9	, i(	7436	)), --	Twilight Cape
-						dr(	1.6	, i(	7408	)), --	Infiltrator Shoulders
-						dr(	1.6	, i(	9833	)), --	Scaled Leather Leggings
-						dr(	1.5	, i(	7357	)), --	Elder's Hat
-						dr(	1.3	, i(	7366	)), --	Elder's Gloves
-						dr(	1.3	, i(	7413	)), --	Infiltrator Cap
-						dr(	1.3	, i(	7421	)), --	Phalanx Gauntlets
-						dr(	1.2	, i(	9841	)), --	Banded Leggings
-						dr(	1.2	, i(	9850	)), --	Conjurer's Mantle
-						dr(	1.2	, i(	9826	)), --	Durable Robe
-						dr(	1.2	, i(	7412	)), --	Infiltrator Gloves
-						dr(	1.2	, i(	7417	)), --	Phalanx Boots
-						dr(	1.2	, i(	7424	)), --	Phalanx Spaulders
-						dr(	1.1	, i(	10289	)), --	Durable Hat
-						dr(	1.1	, i(	7422	)), --	Phalanx Girdle
-						dr(	1.1	, i(	9870	)), --	Renegade Circlet
+					n(14229, {	-- Accursed Slitherblade
+						i(9857),	-- Archer's Bracers
+						i(9860),	-- Archer's Cloak
+						i(9861),	-- Archer's Gloves
+						i(9836),	-- Banded Armor
+						i(10409),	-- Banded Boots
+						i(9841),	-- Banded Leggings
+						i(9846),	-- Conjurer's Bracers
+						i(9853),	-- Conjurer's Cinch
+						i(9847),	-- Conjurer's Cloak
+						i(9850),	-- Conjurer's Mantle
+						i(10289),	-- Durable Hat
+						i(9825),	-- Durable Pants
+						i(9826),	-- Durable Robe
+						i(9824),	-- Durable Shoulders
+						i(7354),	-- Elder's Boots
+						i(7366),	-- Elder's Gloves
+						i(7357),	-- Elder's Hat
+						i(7367),	-- Elder's Mantle
+						i(7353),	-- Elder's Padded Armor
+						i(7368),	-- Elder's Pants
+						i(7409),	-- Infiltrator Boots
+						i(7413),	-- Infiltrator Cap
+						i(7406),	-- Infiltrator Cord
+						i(7412),	-- Infiltrator Gloves
+						i(7414),	-- Infiltrator Pants
+						i(7408),	-- Infiltrator Shoulders
+						i(7460),	-- Knight's Cloak
+						i(7417),	-- Phalanx Boots
+						i(7421),	-- Phalanx Gauntlets
+						i(7422),	-- Phalanx Girdle
+						i(7420),	-- Phalanx Headguard
+						i(7423),	-- Phalanx Leggings
+						i(7424),	-- Phalanx Spaulders
+						i(9869),	-- Renegade Belt
+						i(9865),	-- Renegade Bracers
+						i(9870),	-- Renegade Circlet
+						i(9867),	-- Renegade Cloak
+						i(9868),	-- Renegade Gauntlets
+						i(6609),	-- Sage's Cloth
+						i(6616),	-- Sage's Pants
+						i(6610),	-- Sage's Robe
+						i(9833),	-- Scaled Leather Leggings
+						i(9835),	-- Scaled Leather Tunic
+						i(7446),	-- Sentinel Cloak
+						i(7448),	-- Sentinel Girdle
+						i(7436),	-- Twilight Cape
+						i(7437),	-- Twilight Cuffs
 					}), 
-					n(18241, { 		-- Crusty
-						dr(	7	, i(	10288	)), --	Sage's Circlet
-						dr(	5	, i(	6609	)), --	Sage's Cloth
-						dr(	4	, i(	9834	)), --	Scaled Leather Shoulders
-						dr(	3	, i(	9842	)), --	Banded Pauldrons
-						dr(	3	, i(	9824	)), --	Durable Shoulders
-						dr(	3	, i(	7366	)), --	Elder's Gloves
-						dr(	3	, i(	7412	)), --	Infiltrator Gloves
-						dr(	3	, i(	7422	)), --	Phalanx Girdle
-						dr(	3	, i(	10406	)), --	Scaled Leather Headband
-						dr(	2	, i(	10408	)), --	Banded Helm
-						dr(	2	, i(	9841	)), --	Banded Leggings
-						dr(	2	, i(	10289	)), --	Durable Hat
-						dr(	2	, i(	7406	)), --	Infiltrator Cord
-						dr(	2	, i(	6610	)), --	Sage's Robe
-						dr(	2	, i(	9828	)), --	Scaled Leather Boots
-						dr(	1.9	, i(	7410	)), --	Infiltrator Bracers
-						dr(	1.9	, i(	7460	)), --	Knight's Cloak
-						dr(	1.9	, i(	7416	)), --	Phalanx Bracers
-						dr(	1.8	, i(	7354	)), --	Elder's Boots
-						dr(	1.7	, i(	10409	)), --	Banded Boots
-						dr(	1.7	, i(	6616	)), --	Sage's Pants
-						dr(	1.7	, i(	9832	)), --	Scaled Leather Gloves
-						dr(	1.6	, i(	9839	)), --	Banded Gauntlets
-						dr(	1.6	, i(	7370	)), --	Elder's Sash
-						dr(	1.6	, i(	7411	)), --	Infiltrator Cloak
-						dr(	1.5	, i(	7417	)), --	Phalanx Boots
-						dr(	1.4	, i(	9820	)), --	Durable Boots
-						dr(	1.4	, i(	9823	)), --	Durable Gloves
-						dr(	1.4	, i(	7355	)), --	Elder's Bracers
-						dr(	1.4	, i(	7408	)), --	Infiltrator Shoulders
-						dr(	1.4	, i(	7424	)), --	Phalanx Spaulders
-						dr(	1.3	, i(	9865	)), --	Renegade Bracers
-						dr(	1.2	, i(	9836	)), --	Banded Armor
-						dr(	1.2	, i(	7409	)), --	Infiltrator Boots
-						dr(	1.2	, i(	7413	)), --	Infiltrator Cap
-						dr(	1.2	, i(	7423	)), --	Phalanx Leggings
-						dr(	1.2	, i(	9868	)), --	Renegade Gauntlets
-						dr(	1.1	, i(	9840	)), --	Banded Girdle
-						dr(	1.1	, i(	9867	)), --	Renegade Cloak
-						dr(	1	, i(	9833	)), --	Scaled Leather Leggings
+					n(18241, {	-- Crusty
+						i(9857),	-- Archer's Bracers
+						i(9860),	-- Archer's Cloak
+						i(9861),	-- Archer's Gloves
+						i(9836),	-- Banded Armor
+						i(10409),	-- Banded Boots
+						i(9839),	-- Banded Gauntlets
+						i(9840),	-- Banded Girdle
+						i(10408),	-- Banded Helm
+						i(9841),	-- Banded Leggings
+						i(9842),	-- Banded Pauldrons
+						i(9820),	-- Durable Boots
+						i(9823),	-- Durable Gloves
+						i(10289),	-- Durable Hat
+						i(9824),	-- Durable Shoulders
+						i(7354),	-- Elder's Boots
+						i(7355),	-- Elder's Bracers
+						i(7366),	-- Elder's Gloves
+						i(7370),	-- Elder's Sash
+						i(7409),	-- Infiltrator Boots
+						i(7410),	-- Infiltrator Bracers
+						i(7413),	-- Infiltrator Cap
+						i(7406),	-- Infiltrator Cord
+						i(7411),	-- Infiltrator Cloak
+						i(7412),	-- Infiltrator Gloves
+						i(7408),	-- Infiltrator Shoulders
+						i(7460),	-- Knight's Cloak
+						i(7417),	-- Phalanx Boots
+						i(7416),	-- Phalanx Bracers
+						i(7422),	-- Phalanx Girdle
+						i(7423),	-- Phalanx Leggings
+						i(7424),	-- Phalanx Spaulders
+						i(9865),	-- Renegade Bracers
+						i(9867),	-- Renegade Cloak
+						i(9868),	-- Renegade Gauntlets
+						i(10288),	-- Sage's Circlet
+						i(6609),	-- Sage's Cloth
+						i(6616),	-- Sage's Pants
+						i(6610),	-- Sage's Robe
+						i(9828),	-- Scaled Leather Boots
+						i(9832),	-- Scaled Leather Gloves
+						i(10406),	-- Scaled Leather Headband
+						i(9833),	-- Scaled Leather Leggings
+						i(9834),	-- Scaled Leather Shoulders
 					}),
 					n(11688, { 		-- Cursed Centaur
 						dr(	5	, i(	9855	)), --	Archer's Belt

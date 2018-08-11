@@ -18,82 +18,195 @@ _.Zones =
 						p(432), 	-- Stripe-Tailed Scorpid
 					}),
 				n(-17, {	-- Quests
-					qg(38706, q(25072,  {  -- A Few Good Goblins
-						i(56856),
-						i(56857),
-						i(56858),
+					q(25072,  {  -- A Few Good Goblins
+						["groups"] = {
+							i(56855),	-- Dangerous Machinery Piece
+							i(56856),	-- Bughunter Belt
+							i(56857),	-- Loaner Bracers
+							i(56858),	-- Goblin Treat Tin
+						},
+						["qg"] = 38706,	-- Zeke Bootscuff
+					}),
+					q(24951, {	-- A Great Idea
+						["qg"] = 38706,	-- Zeke Bootscuff
+						["sourceQuests"] = { 24933 },	-- Chicken of the Desert
+					}),
+					q(29134, {	-- A Wrinkle in Time
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = {
+							29129,	-- A Legendary Engagement (horde)
+							29132,	-- A Legendary Engagement (alliance)
+						},
+					}),
+					qa(26889, {	-- All Cheered Out
+						["qg"] = 38704,	-- Kelsey Steelspark
+						["sourceQuests"] = { 25166 },	-- Captain Dreadbeard
+					}),
+					qraid(q(29135, {	-- All-Seeing Eye
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 29134 },	-- A Wrinkle in Time
 					})),
-	--[[					
-					qg(38706, q(24951)),	-- A Great Idea
-					qg(15192, q(29134)),	-- A Wrinkle in Time
-					qg(38704, qa(26889)),	-- All Cheered Out
-					qraid(qg(15192, q(29135))),	-- All-Seeing Eye
-	--]]					
-					qg(40109, qa(25420,  {  -- Ancient Obstacles
-						i(56903),
-						i(56904),
-						i(56905),
-					})),
-					qg(38922, qh(25017,  {  -- Ancient Obstacles
-						i(56906),
-						i(56907),
-						i(56908),
-					})),
-	--					qg(38849, qh(25018)),	-- Andoren Will Know
+					qa(25420,  {  -- Ancient Obstacles
+						["groups"] = {
+							i(56903),	-- Gatewatcher Belt
+							i(56904),	-- Decomissioner's Monnions
+							i(56905),	-- Sandstone Pauldrons
+						},
+						["qg"] = 40109,	-- Prospector Gunstan
+						["sourceQuests"] = { 28881 },	-- Prospector Gunstan
+					}),
+					qh(25017,  {  -- Ancient Obstacles
+						["groups"] = {
+							i(56906),	-- Gatewatcher Belt
+							i(56907),	-- Examiner's Monnions
+							i(56908),	-- Sandstone Pauldrons
+						},
+						["qg"] = 38922,	-- Examiner Andoren Dawnrise
+						["sourceQuests"] = {
+							25019,	-- Laying Claim
+							25020,	-- Fragments of Language
+						},
+					}),
+					qh(25018, {	-- Andoren Will Know
+						["qg"] = 38849,	-- Megs Dreadshredder
+						["sourceQuests"] = { 25014 },	-- Sandscraper's Treasure
+					}),
 	--[[				q(9269),	-- Atiesh, Greatstaff of the Guardian
 					q(9270),	-- Atiesh, Greatstaff of the Guardian
 					q(9271),	-- Atiesh, Greatstaff of the Guardian
 					q(9257),	-- Atiesh, Greatstaff of the Guardian
 					q(9251),	-- Atiesh, the Befouled Greatstaff (this block is all LEGACY) --]]
-	--[[					
-					qg(39178, q(25115)),	-- Blisterpaw Butchery
-					qg(38927, q(25021)),	-- Blood to Thrive
-					qg(38703, qh(25103)),	-- Bootlegger Outpost
-					qg(38703, qh(24949)),	-- Booty Duty
-					qg(39178, q(25112)),	-- Butcherbot
-	--]]					
-					qg(38704, qa(25166,  {  -- Captain Dreadbeard
-						i(56867),
-						i(56868),
-						i(56869),
-						i(56870),
-					})),
-					qg(38703, qh(24950,  {  -- Captain Dreadbeard
-						i(56871),
-						i(56872),
-						i(56873),
-						i(56874),
-					})),
-	--[[					
-					qg(19935, q(11105)),	-- Champion No More
-					qg(19935, q(10474)),	-- Champion's Covenant (add'l QG 19936)
-					qg(19935, q(10470)),	-- Champion's Oath (add'l QG 19936)
-					qg(19936, q(10462)),	-- Champion's Pledge
-					qg(19935, q(10466)),	-- Champion's Vow (add'l QG 19936)
-					qg(38706, q(24933)),	-- Chicken of the Desert
-	--]]
-					qg(40589, q(13825, {	-- Clamlette Surprise
-						recipe(64054),	-- Clamlette Magnifique
-					})),
-					qg(40589, q(6610, {		-- Clamlette Surprise
-						recipe(64054),	-- Clamlette Magnifique
-					})),
-	--[[
-					qg(38706, q(24932)),	-- Cutting Losses
-					qg(38927, q(25026)),	-- Darkest Mojo
-	--]]					
-					qg(38704, qa(25052,  {  -- Dead Man's Chest
-						i(56875),
-						i(56876),
-						i(56877),
-						i(56878),
-					})),
-					qg(38703, qh(24927,  {  -- Dead Man's Chest
-						i(56879),
-						i(56880),
-						i(56881),
-						i(56882),
-					})),
+					q(25115, {	-- Blisterpaw Butchery
+						["qg"] = 39178,	-- Driz Plunkbow
+						["sourceQuests"] = { 25111 },	-- Scavengers Scavenged
+					}),
+					q(25021, {	-- Blood to Thrive
+						["qg"] = 38927,	-- Mazoga
+					}),
+					qh(25103, {	-- Bootlegger Outpost
+						["qg"] = 38703,	-- Megs Dreadshredder
+						["sourceQuests"] = { 24950 },	-- Captain Dreadbeard
+					}),
+					qh(24949, {	-- Booty Duty
+						["qg"] = 38703,	-- Megs Dreadshredder
+					}),
+					q(25112, {	-- Butcherbot
+						["qg"] = 39178,	-- Driz Plunkbow
+					}),
+					qa(25166, {	-- Captain Dreadbeard
+						["groups"] = {
+							i(56867),	-- Pretty Please Robes
+							i(56868),	-- Dreadbeard Strangler Gloves
+							i(56869),	-- Investigator's Belt
+							i(56870),	-- Impatient Boots
+						},
+						["qg"] = 38704,	-- Kelsey Steelspark
+						["sourceQuests"] = {
+							25053,	-- To The Ground!
+							26886,	-- Going Off-Task
+							26887,	-- Filling Our Pockets
+						},
+					}),
+					qh(24950,  {  -- Captain Dreadbeard
+						["groups"] = {
+							i(56871),	-- Flirtation Robes
+							i(56872),	-- Dreadbeard Strangler Gloves
+							i(56873),	-- Investigator's Belt
+							i(56874),	-- Impatient Boots
+						},
+						["qg"] = 38703,	-- Megs Dreadshredder
+						["sourceQuests"] = {
+							24925,	-- To The Ground!
+							25534,	-- Going Off-Task
+							25541,	-- Filling Our Pockets
+						},
+					}),	
+					q(11105, {	-- Champion No More
+						["groups"] = {
+							i(29305),	-- Band of the Eternal Sage
+							i(29297),	-- Band of the Eternal Defender
+							i(29309),	-- Band of the Eternal Restorer
+						},
+						["qg"] = 19935,	-- Soridormi
+					}),
+					q(10474, {	-- Champion's Covenant
+						["groups"] = {
+							i(29301),	-- Band of the Eternal Champion
+						},
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Arazmodu
+						},
+						["sourceQuests"] = { 10470 },	-- Champion's Oath
+					}),
+					q(10470, {	-- Champion's Oath
+						["groups"] = {
+							i(29300),	-- Band of Eternity
+						},
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Arazmodu
+						},
+						["sourceQuests"] = { 10466 },	-- Champion's Vow
+					}),
+					q(10462, {	-- Champion's Pledge
+						["groups"] = {
+							i(29298),	-- Band of Eternity
+						},
+						["qg"] = 19936,	-- Arazmodu
+					}),
+					q(10466, {	-- Champion's Vow (add'l QG 19936)
+						["groups"] = {
+							i(29299),	-- Band of Eternity
+						},
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Arazmodu
+						},
+					}),
+					q(24933, {	-- Chicken of the Desert
+						["qg"] = 38706,	-- Zeke Bootscuff
+						["sourceQuests"] = { 24932 },	-- Cutting Losses
+					}),
+					q(13825, {	-- Clamlette Surprise
+						["groups"] = {
+							recipe(64054),	-- Clamlette Magnifique
+						},
+						["qg"] = 40589,	-- Dirge Quikcleave
+						["requireSkill"] = 185,	-- Cooking
+					}),
+					q(6610, {		-- Clamlette Surprise
+						["groups"] = {
+							recipe(64054),	-- Clamlette Magnifique
+						},
+						["qg"] = 40589,	-- Dirge Quikcleave
+						["requireSkill"] = 185,	-- Cooking
+					}),
+					q(24932, {	-- Cutting Losses
+						["qg"] = 38706,	-- Zeke Bootscuff
+					}),
+					q(25026, {	-- Darkest Mojo
+						["qg"] = 38927,	-- Mazoga
+						["sourceQuests"] = { 25025 },	-- Sang'thraze the Deflector
+					}),
+					qa(25052,  {  -- Dead Man's Chest
+						["groups"] = {
+							i(56875),	-- Southsea Hood
+							i(56876),	-- Golly Gosh Leggings
+							i(56877),	-- Nose Thumber Gloves
+							i(56878),	-- Cleaned-Up Pauldrons
+						},
+						["qg"] = 38704,	-- Kelsey Steelspark
+					}),
+					qh(24927,  {  -- Dead Man's Chest
+						["groups"] = {
+							i(56879),	-- Southsea Hood
+							i(56880),	-- Dellot's Leggings
+							i(56881),	-- Branded Gloves
+							i(56882),	-- Cleaned-Up Pauldrons
+						},
+						["qg"] = 38703,	-- Megs Dreadshredder
+					}),
 	--[[					
 	--					q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)
 					qg(19935, q(11106)),	-- Defender No More
@@ -116,170 +229,505 @@ _.Zones =
 					qg(40109, qa(25565)),	-- Fragments of Language
 	--					q(9250),	-- Frame of Atiesh (LEGACY)
 	--]]
-					qg(40580, q(25522,  {  -- Gargantapid
-						i(56848),
+					q(25522,  {  -- Gargantapid
+						["groups"] = {
+							i(56847),	-- Chelsea's Nightmare
+							i(56848),	-- Rustflutter Boots
+							i(56849),	-- Gus' First Aid Kit
+						},
+						["qg"] = 40580,	-- Gus Rustflutter
+					}),
+					q(24931, {	-- Gazer Tag
+						["qg"] = 11811,	-- Narain Soothfancy
+					}),
+					qh(24957, {	-- Get The Centipaarty Started
+						["qg"] = 38849,	-- Megs Dreadshredder
+					}),
+					qh(25534, {	-- Going Off-Task
+						["qg"] = 38703,	-- Megs Dreadshredder
+						["sourceQuests"] = {
+							24927,	-- Dead Man's Chest
+							24949,	-- Booty Duty
+						},
+					}),
+					qa(26886, {	-- Going Off-Task
+						["qg"] = 38704,	-- Kelsey Steelspark
+						["sourceQuests"] = {
+							25052,	-- Dead Man's Chest
+							25054,	-- Lootin' Plunder
+						},
+					}),
+					q(25521, {	-- I'm With Scorpid
+						["qg"] = 40580,	-- Gus Rustflutter
+					}),
+					qdg(q(25556, {	-- Into Zul'Farrak
+						["qg"] = 7804,	-- Trenton Lighthammer
+						["sourceQuests"] = { 25032 },	-- Secrets in the Oasis
 					})),
-	--[[					
-					qg(11811, q(24931)),	-- Gazer Tag
-					qg(38849, qh(24957)),	-- Get The Centipaarty Started
-					qg(38703, qh(25534)),	-- Going Off-Task
-					qg(38704, qa(26886)),	-- Going Off-Task
-					qg(40580, q(25521)),	-- I'm With Scorpid
-	--]]
-					qdg(qg(7804, q(25556))),	-- Into Zul'Farrak
-	--					q(42237),	-- Invasion: Tanaris (LEGACY - Legion pre-patch)
-	--					q(43244),	-- Invasion: Tanaris (LEGACY - Legion pre-patch)
-					qg(38706, q(24953,  {  -- Just Trying to Kill Some Bugs
-						i(56852),
-						i(56853),
-						i(56854),
+					q(24953,  {  -- Just Trying to Kill Some Bugs
+						["groups"] = {
+							i(56851),	-- Pendant of the Gaping Chasm
+							i(56852),	-- Mostly-Amazing Gloves
+							i(56853),	-- Bootscuff Boots
+							i(56854),	-- Bootlegger Legplates
+						},
+						["qg"] = 38706,	-- Zeke Bootscuff
+						["sourceQuests"] = { 24951 },	-- A Great Idea
+					}),
+					qa(25061, {	-- Land's End
+						["qg"] = 11811,	-- Narain Soothfancy
+					}),
+					qh(25019, {	-- Laying Claim
+						["qg"] = 38922,	-- Examiner Andoren Dawnrise
+					}),
+					qa(25559, {	-- Laying Claim
+						["qg"] = 40109,	-- Prospector Gunstan
+					}),
+					qa(25054, {	-- Lootin' Plunder
+						["qg"] = 38704,	-- Kelsey Steelspark
+					}),
+					qh(24963, {	-- Maul 'Em With Kindness
+						["qg"] = 38849,	-- Megs Dreadshredder
+						["sourceQuests"] = { 24957 },	-- Get The Centiparty Started
+					}),
+					qa(25121, {	-- Momentum
+						["qg"] = 38535,	-- Kelsey Steelspark
+						["sourceQuests"] = { 25050 },	-- Rocket Rescue
+					}),
+					qh(24947, {	-- Momentum
+						["qg"] = 38534,	-- Megs Dreadshredder
+						["sourceQuests"] = { 24910 },	-- Rocket Rescue
+					}),
+					qdg(q(12513, {	-- Nice Hat...
+						["qg"] = 28126,	-- Don Carlos
 					})),
-	--[[					
-					qg(11811, qa(25061)),	-- Land's End
-					qg(38922, qh(25019)),	-- Laying Claim
-					qg(40109, qa(25559)),	-- Laying Claim
-					qg(38704, qa(25054)),	-- Lootin' Plunder
-					qg(38849, qh(24963)),	-- Maul 'Em With Kindness
-					qg(38535, qa(25121)),	-- Momentum
-					qg(38534, qh(24947)),	-- Momentum
-					qdg(qg(28126, q(12513))),	-- Nice Hat...
 	--					q(38890),	-- Not Dead Yet! (not in game?)
 					o(246438, {	-- Blingtron Circuit Design
-						qp202(q(40881)),	-- Oil Rags to Riches
+						q(40881, {	-- Oil Rags to Riches
+							["requireSkill"] = 202,	-- Engineering
+						}),
 					}),
-					qdg(qg(20130, q(10282))),	-- Old Hillsbrad
-					qg(15192, q(29193)),	-- On a Wing and a Prayer
-					qg(39059, qa(28881)),	-- Prospector Gunstan
-					qg(38534, qh(24907)),	-- Puddle Stomping
-					qg(38535, qa(25049)),	-- Puddle Stomping
-	--					q(43294),	-- Repel (LEGACY - Legion pre-patch)
-					qg(7784, q(648)),	-- Rescue OOX-17/TN!
-					qg(19935, q(11104)),	-- Restorer No More
-					qg(19935, q(10473)),	-- Restorer's Covenant
-					qg(19935, q(10469)),	-- Restorer's Oath
-					qg(19936, q(10461)),	-- Restorer's Pledge
-					qg(19935, q(10465)),	-- Restorer's Vow (add'l QG 19936)
-					qg(38706, qh(24905)),	-- Returning a Favor
-	--]]					
-					qg(38535, qa(25050,  {  -- Rocket Rescue
-						i(56859),
-						i(56860),
-						i(56861),
-						i(56862),
+					qdg(q(10282, {	-- Old Hillsbrad
+						["qg"] = 20130,	-- Andormu
 					})),
-					qg(38534, qh(24910,  {  -- Rocket Rescue
-						i(56863),
-						i(56864),
-						i(56865),
-						i(56866),
-					})),
-	--[[					
-					qg(19935, q(11103)),	-- Sage No More
-					qg(19935, q(10472)),	-- Sage's Covenant
-					qg(19935, q(10468)),	-- Sage's Oath (add'l QG 19936)
-					qg(19936, q(10463)),	-- Sage's Pledge
-					qg(19935, q(10464)),	-- Sage's Vow (add'l QG 19936)
-	--]]					
-					qg(38849, qh(25001,  {  -- Sandscraper
-						i(56887),
-						i(56888),
-						i(56889),
-						i(157014), -- Dunemaul Skullcracker 
-					})),
-	--[[					
+					q(29193, {	-- On a Wing and a Prayer
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 29135 },	-- All-Seeing Eye
+						["description"] = "Part of the \"Dragonwrath, Tarecgosa's Rest\" legendary quest line.",
+					}),
+					qa(28881, {	-- Prospector Gunstan
+						["qg"] = 39059,	-- Kelsey steelspark
+						["sourceQuests"] = { 25065 },	-- You Too, Brute?
+					}),
+					qh(24907, {	-- Puddle Stomping
+						["qg"] = 38534,	-- Megs Dreadshredder
+						["sourceQuests"] = { 28509 },	-- Warchief's Command: Tanaris!
+					}),
+					qa(25049, {	-- Puddle Stomping
+						["qg"] = 38535,	-- Kelsey Steelspark
+						["sourceQuests"] = { 28507 },	-- Hero's Call: Tanaris!
+					}),
+					q(648, {	-- Rescue OOX-17/TN!
+						["groups"] = {
+							i(9643),	-- Optomatic Deflector
+							i(9644),	-- Thermotastic Egg Timer
+						},
+						["qg"] = 7784,	-- Homing Robot OOX-17/TN
+						["sourceQuests"] = { 351 },	-- Find OOX-17/TN!
+					}),
+					q(11104, {	-- Restorer No More
+						["groups"] = {
+							i(29301),	-- Band of the Eternal Champion
+							i(29297),	-- Band of the Eternal Defender
+							i(29305),	-- Band of the Eternal Sage
+						},
+						["qg"] = 19935,	-- Soridormi
+					}),
+					q(10473, {	-- Restorer's Covenant
+						["groups"] = {
+							i(29309),	-- Band of the Eternal Restorer
+						},
+						["qg"] = 19935,	-- Soridormi
+						["sourceQuests"] = { 10469 },	-- Restorer's Oath
+					}),
+					q(10469, {	-- Restorer's Oath
+						["groups"] = {
+							i(29308),	-- Band of Eternity
+						},
+						["qg"] = 19935,	-- Soridormi
+						["sourceQuests"] = { 10465 },	-- Restorer's Vow
+					}),
+					q(10461, {	-- Restorer's Pledge
+						["groups"] = {
+							i(29307),	-- Band of Eternity
+						},
+						["qg"] = 19936,	-- Arazmodu
+					}),
+					q(10465, {	-- Restorer's Vow
+						["groups"] = {
+							i(29306),	-- Band of Eternity
+						},
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Arazmodu
+						},
+					}),
+					qh(24905, {	-- Returning a Favor
+						["qg"] = 38706,	-- Zeke Bootscuff
+					}),
+					qa(25050,  {  -- Rocket Rescue
+						["groups"] = {
+							i(56859),	-- Nasmira's Soup Stirrer
+							i(56860),	-- Dud Bomb
+							i(56861),	-- Salvaged Steamwheedle Helm
+							i(56862),	-- Failed Liferocket Prototype
+						},
+						["qg"] = 38535,	-- Kelsey Steelspark
+					}),
+					qh(24910,  {  -- Rocket Rescue
+						["groups"] = {
+							i(56863),	-- Nasmira's Soup Stirrer
+							i(56864),	-- Dud Bomb
+							i(56865),	-- Salvaged Steamwheedle Helm
+							i(56866),	-- Failed Liferocket Prototype
+						},
+						["qg"] = 38534,	-- Megs Dreadshredder
+					}),
+					q(11103, {	-- Sage No More
+						["groups"] = {
+							i(29301),	-- Band of the Eternal Champion
+							i(29297),	-- Band of the Eternal Defender
+							i(29309),	-- Band of the Eternal Restorer
+						},
+						["qg"] = 19935,	-- Soridormi
+					}),
+					q(10472, {	-- Sage's Covenant
+						["groups"] = {
+							i(29305),	-- Band of the Eternal Sage
+						},
+						["qg"] = 19935,	-- Soridormi
+						["sourceQuests"] = { 10468 },	-- Sage's Oath
+					}),
+					q(10468, {	-- Sage's Oath
+						["groups"] = {
+							i(29304),	-- Band of Eternity
+						},
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Anazdormu
+						},
+						["sourceQuests"] = { 10464 },	-- Sage's Vow
+					}),
+					q(10463, {	-- Sage's Pledge
+						["groups"] = {
+							i(29302),	-- Band of Eternity
+						},
+						["qg"] = 19936,	-- Anazdormu
+					}),
+					q(10464, {	-- Sage's Vow
+						["groups"] = {
+							i(29303),	-- Band of Eternity
+						},
+						["qgs"] = {
+							19935,	-- Soridormi
+							19935,	-- Anazdormu
+						},
+					}),
+					qh(25001,  {  -- Sandscraper
+						["groups"] = {
+							i(56887),	-- Knuckle Down
+							i(56888),	-- Sandscraper Bracers
+							i(56889),	-- Business Finisher
+							i(56890),	-- Bilgewater Brooch
+							i(157014),	-- Dunemaul Skullcracker 
+						},
+						["qg"] = 38849,	-- Megs Dreadshredder
+						["sourceQuests"] = { 24963 },	-- Maul 'Em With Kindness
+					}),
 					o(202407, {	-- Sandscraper's Chest
 						qh(25014),	-- Sandscraper's Treasure
 					}),
-					qg(39178, q(25091)),	-- Sandsorrow Watch
-	--]]					
-					qg(38927, q(25025,  {  -- Sang'thraze the Deflector
-						i(56844),
-						i(56845),
-						i(56846),
-						i(157024),	-- Sandfury Hatchet 
-					})),
-	--[[					
-					qg(39178, q(25111)),	-- Scavengers Scavenged
+					q(25091, {	-- Sandsorrow Watch
+						["qg"] = 39178,	-- Driz Plunkbow
+						["sourceQuests"] = { 25115 },	-- Blisterpaw Butchery
+					}),
+					q(25025,  {  -- Sang'thraze the Deflector
+						["groups"] = {
+							i(56844),	-- Bone Valley Mace
+							i(56845),	-- Blood Speaker Tunic
+							i(56846),	-- Bloodcraver Pauldrons
+							i(157024),	-- Sandfury Hatchet 
+						},
+						["qg"] = 38927,	-- Mazoga
+						["sourceQuests"] = { 25021 },	-- Blood to Thrive
+					}),	
+					q(25111, {	-- Scavengers Scavenged
+						["qg"] = 39178,	-- Driz Plunkbow
+						["sourceQuests"] = { 25112 },	-- Butcherbot
+					}),
 	--					q(38892),	-- Scouting Report (not in game?)
-					qg(38534, qh(24906)),	-- Seaside Salvage
-					qg(38535, qa(25048)),	-- Seaside Salvage
-	--]]					
-					qg(38927, q(25032,  {  -- Secrets in the Oasis
-						i(56840),
-						i(56841),
-						i(56842),
-						i(56843),
+					qh(24906, {	-- Seaside Salvage
+						["qg"] = 38534,	-- Megs Dreadshredder
+					}),
+					qa(25048, {	-- Seaside Salvage
+						["qg"] = 38535,	-- Kelsey Steelspark
+					}),
+					q(25032,  {  -- Secrets in the Oasis
+						["groups"] = {
+							i(56840),	-- Oasis Mantle
+							i(56841),	-- Half Truth Handlers
+							i(56842),	-- Mazoga's Discarded Coif
+							i(56843),	-- Lighthammer Pauldrons
+						},
+						["qg"] = 38927,	-- Mazoga
+						["sourceQuests"] = { 25026 },	-- Darkest Mojo
+					}),
+					qa(25063, {	-- Terrapination
+						["qg"] = 39059,	-- Kelsey Steelspark
+					}),
+					qdg(q(10296, {	-- The Black Morass
+						["qg"] = 20130,	-- Andormu
 					})),
-	--[[					
-					qg(39059, qa(25063)),	-- Terrapination
-					qg(39034, q(12932)),	-- The Amphitheater of Anguish: Yggdras! (this QG may be Horde-only)
-					qdg(qg(20130, q(10296))),	-- The Black Morass
-					qg(20130, q(10277)),	-- The Caverns of Time
-					qg(15192, q(8766)),	-- The Changing of Paths - Conqueror No More
-					qg(15192, q(8765)),	-- The Changing of Paths - Invoker No More
-					qg(15192, q(8764)),	-- The Changing of Paths - Protector No More
-					qg(38922, qh(25068)),	-- The Crumbling Past
-					qg(15192, q(8761)),	-- The Grand Invoker
-	--]]					
+					q(10277, {	-- The Caverns of Time
+						["qg"] = 20130,	-- Andormu
+						["sourceQuests"] = { 10279 },	-- To The Master's Lair
+					}),
+					q(8766, {	-- The Changing of Paths - Conqueror No More
+						["groups"] = {
+							i(21200),	-- Signet Ring of the Bronze Dragonflight
+							i(21210),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["repeatable"] = true,
+						["description"] = "Only available when Exalted with the Brood of Nozdormu",
+					}),
+					q(8765, {	-- The Changing of Paths - Invoker No More
+						["groups"] = {
+							i(21200),	-- Signet Ring of the Bronze Dragonflight
+							i(21205),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["repeatable"] = true,
+						["description"] = "Only available when Exalted with the Brood of Nozdormu",
+					}),
+					q(8764, {	-- The Changing of Paths - Protector No More
+						["groups"] = {
+							i(21210),	-- Signet Ring of the Bronze Dragonflight
+							i(21205),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["repeatable"] = true,
+						["description"] = "Only available when Exalted with the Brood of Nozdormu",
+					}),
+					qh(25068, {	-- The Crumbling Past
+						["qg"] = 38922,	-- Examiner Andoren Dawnrise
+					}),
+					q(8761, {	-- The Grand Invoker
+						["groups"] = {
+							i(21210),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8760 },	-- The Path of the Invoker
+					}),
 					o(202474, {	-- Antediluvean Chest
 						qa(25421,  {  -- The Grand Tablet
-							i(56897),
-							i(56898),
-							i(56899),
+							["groups"] = {
+								i(56897),	-- Hieroglyphic Helm
+								i(56898),	-- Translation Boots
+								i(56899),	-- Rosy Tablet Belt
+							},
 						}),
 						qh(25107,  {  -- The Grand Tablet
-							i(56900),
-							i(56901),
-							i(56902),
+							["groups"] = {
+								i(56900),	-- Hieroglyphic Helm
+								i(56901),	-- Translation Boots
+								i(56902),	-- Rosy Tablet Belt
+							},
 						}),
 						q(25070),	-- What Lies Within
 					}),
-	--[[					
-					qg(15192, q(8754)),	-- The Path of the Conqueror
-					qg(15192, q(8755)),	-- The Path of the Conqueror
-					qg(15192, q(8753)),	-- The Path of the Conqueror
-					qg(15192, q(8752)),	-- The Path of the Conqueror
-					qg(15192, q(8760)),	-- The Path of the Invoker
-					qg(15192, q(8759)),	-- The Path of the Invoker
-					qg(15192, q(8758)),	-- The Path of the Invoker
-					qg(15192, q(8757)),	-- The Path of the Invoker
-					qg(15192, q(8747)),	-- The Path of the Protector
-					qg(15192, q(8748)),	-- The Path of the Protector
-					qg(15192, q(8749)),	-- The Path of the Protector
-					qg(15192, q(8750)),	-- The Path of the Protector
-					qg(15192, q(8751)),	-- The Protector of Kalimdor
-					qg(15192, q(8756)),	-- The Qiraji Conqueror
-					qg(40109, qa(25566)),	-- The Secrets of Uldum
-					qg(38922, qh(25069)),	-- The Secrets of Uldum
-					qg(44374, qh(26896)),	-- The Thunderdrome!
-					qg(38578, qa(26895)),	-- The Thunderdrome!
-					qraid(qg(19935, q(13432))),	-- The Vials of Eternity (add'l QG 19936)
-	--]]
-					qg(39034, qa(25513,  {  -- Thunderdrome: Grudge Match!
-						i(56893),
+					q(8754, {	-- The Path of the Conqueror
+						["groups"] = {
+							i(21203),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8753 },	-- The Path of the Conquerer
+					}),
+					q(8755, {	-- The Path of the Conqueror
+						["groups"] = {
+							i(21204),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8754 },	-- The Path of the Conquerer
+					}),
+					q(8753, {	-- The Path of the Conqueror
+						["groups"] = {
+							i(21202),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8752 },	-- The Path of the Conquerer
+					}),
+					q(8752, {	-- The Path of the Conqueror
+						["groups"] = {
+							i(21201),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8753 },	-- The Path of the Conquerer
+					}),
+					q(8760, {	-- The Path of the Invoker
+						["groups"] = {
+							i(21209),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8759 },	-- The Path of the Invoker
+					}),
+					q(8759, {	-- The Path of the Invoker
+						["groups"] = {
+							i(21208),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8758 },	-- The Path of the Invoker
+					}),
+					q(8758, {	-- The Path of the Invoker
+						["groups"] = {
+							i(21207),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8757 },	-- The Path of the Invoker
+					}),
+					q(8757, {	-- The Path of the Invoker
+						["groups"] = {
+							i(21206),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+					}),
+					q(8747, {	-- The Path of the Protector
+						["groups"] = {
+							i(21196),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+					}),
+					q(8748, {	-- The Path of the Protector
+						["groups"] = {
+							i(21197),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8747 },	-- The Path of the Protector
+					}),
+					q(8749, {	-- The Path of the Protector
+						["groups"] = {
+							i(21198),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8748 },	-- The Path of the Protector
+					}),
+					q(8750, {	-- The Path of the Protector
+						["groups"] = {
+							i(21199),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8749 },	-- The Path of the Protector
+					}),
+					q(8751, {	-- The Protector of Kalimdor
+						["groups"] = {
+							i(21200),	-- Signet Ring of the Bronze Dragonflight
+						},
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8750 },	-- The Path of the Protector
+					}),
+					q(8756, {	-- The Qiraji Conqueror
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuests"] = { 8755 },	-- The Path of the Conqueror
+					}),
+					qa(25566, {	-- The Secrets of Uldum
+						["qg"] = 40109,	-- Prospector Gunstan
+					}),
+					qh(25069, {	-- The Secrets of Uldum
+						["qg"] = 38922,	-- Examiner Andoren Dawnrise
+					}),
+					qh(26896, {	-- The Thunderdrome!
+						["qg"] = 44374,	-- Sherm
+					}),
+					qa(26895, {	-- The Thunderdrome!
+						["qg"] = 38578,	-- Flinn
+					}),
+					qraid(q(13432, {	-- The Vials of Eternity
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Anazdormu
+						}
 					})),
-					qg(39034, qh(25591,  {  -- Thunderdrome: Grudge Match!
-						i(56896),
-					})),
-	--[[					
-					qg(39034, q(25095)),	-- Thunderdrome: Sarinexx!
-					qg(39034, q(25067)),	-- Thunderdrome: The Ginormus!
-					qg(39034, q(25094)),	-- Thunderdrome: Zumonga!
-					qg(38704, qa(25053)),	-- To The Ground!
-					qg(38703, qh(24928)),	-- To The Ground!
-					qg(20142, q(10279)),	-- To The Master's Lair
-					qg(38578, qa(24911)),	-- Tropical Paradise Beckons
-					qg(44374, qh(24911)),	-- Tropical Paradise Beckons
-					qg(38849, qh(24955)),	-- Un-Chartered
-					qg(16417, q(9268)),	-- War at Sea
-					qg(39059, qa(25062)),	-- What We Came For
-	--]]					
-					qg(39059, qa(25065,  {  -- You Too, Brute?
-						i(56883),
-						i(56884),
-						i(56885),
-						i(157015), -- Meatface's Tenderizer 
-					})),
+					qa(25513,  {  -- Thunderdrome: Grudge Match!
+						["groups"] = {
+							i(56891),	-- Thunderdome Ring
+							i(56892),	-- Kelsey's Necklace
+							i(56893),	-- Dreadshredder Cloak
+						},
+						["qg"] = 39034,	-- Dr. Dealwell
+					}),
+					qh(25591,  {  -- Thunderdrome: Grudge Match!
+						["groups"] = {
+							i(56894),	-- Thunderdome Ring
+							i(56895),	-- Kelsey's Necklace
+							i(56896),	-- Dreadshredder Cloak
+						},
+						["qg"] = 39034,	-- Dr. Dealwell
+					}),
+					q(25095, {	-- Thunderdrome: Sarinexx!
+						["qg"] = 39034,	-- Dr. Dealwell
+					}),
+					q(25067, {	-- Thunderdrome: The Ginormus!
+						["qg"] = 39034,	-- Dr. Dealwell
+					}),
+					q(25094, {	-- Thunderdrome: Zumonga!
+						["qg"] = 39034,	-- Dr. Dealwell
+					}),
+					qa(25053, {	-- To The Ground!
+						["qg"] = 38704,	-- Kelsey Steelspark
+						["sourceQuests"] = {
+							25052,	-- Dead Man's Chest
+							25054,	-- Lootin' Plunder
+						},
+					}),
+					qh(24928, {	-- To The Ground!
+						["qg"] = 38703,	-- Megs Dreadshredder
+						["sourceQuests"] = {
+							24927,	-- Dead Man's Chest
+							24949,	-- Booty Duty
+						},
+					}),
+					q(10279, {	-- To The Master's Lair
+						["qg"] = 20142,	-- 
+					}),
+					q(24911, {	-- Tropical Paradise Beckons
+						["qgs"] = {
+							38578,	-- Flinn
+							44374,	-- Sherm
+						},
+						["isBreadcrumb"] = true,
+					}),
+					qh(24955, {	-- Un-Chartered
+						["qg"] = 38849,	-- Megs Dreadshredder
+						["sourceQuests"] = { 24905 },	-- Returning a Favor
+					}),
+					q(9268, {	-- War at Sea
+						["qg"] = 16417,	-- Rumsen Fizzlebrack
+						["repeatable"] = true,
+						["description"] = "Only available with reputations of Hated or Unfriendly with Gadgetzan",
+					}),
+					qa(25062, {	-- What We Came For
+						["qg"] = 39059,	-- Kelsey Steelspark
+					}),
+					qa(25065,  {  -- You Too, Brute?
+						["groups"] = {
+							i(56883),	-- Meatface Pummeler
+							i(56884),	-- "Smart Bracers"
+							i(56885),	-- Dagger of the Ides
+							i(56886),	-- Gnomeregan Medallion of Merit
+							i(157015),	-- Meatface's Tenderizer 
+						},
+						["qg"] = 39059,	-- Kelsey Steelspark
+					}),
 				}),
 				n(-16, {	-- Rares	
 					n(47386, {	-- Ainamiss the Hive Queen
@@ -1038,35 +1486,36 @@ _.Zones =
 						i(9305),	-- Recipe: Transmute Mithril to Truesilver
 					}),
 					n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
+						i(29183),	-- Bindings of the Timewalker
+						i(29185),	-- Continuum Blade
+						i(35402),	-- Crusader's Ornamented Chestplate
+						i(35414),	-- Crusader's Scaled Helm
+						i(35356),	-- Dragonhide Gloves
+						i(35328),	-- Dreadweave Gloves
+						i(35346),	-- Evoker's Silk Raiment
+						i(31777),	-- Keepers of Time Tabard
+						i(35363),	-- Kodohide Legguards
+						i(35334),	-- Mooncloth Legguards
+						i(35369),	-- Opportunist's Leather Spaulders
+						i(29182),	-- Riftmaker
+						i(35338),	-- Satin Gloves
+						i(35410),	-- Savage Plate Legguards
+						i(35384),	-- Seer's Linked Leggings
+						i(35390),	-- Seer's Mail Spaulders
+						i(35393),	-- Seer's Ringmail Headpiece
+						i(35376),	-- Stalker's Chain Armor
+						i(29181),	-- Timelapse Shard
+						i(29184),	-- Timewarden's Leggings
+						i(35372),	-- Wyrmhide Helm
 						i(25910),	-- Design: Enigmatic Skyfire Diamond
 						i(33160),	-- Design: Facet of Eternity
 						i(24181),	-- Design: Living Ruby Serpent
 						i(24174),	-- Design: Pendant of Frozen Flame
 						i(33158),	-- Design: Stone of Blades
-						i(29713),	-- Pattern: Drums of Panic
 						i(28272),	-- Formula: Enchant Gloves - Major Spellpower
 						i(33152),	-- Formula: Enchant Gloves - Superior Agility
+						i(29713),	-- Pattern: Drums of Panic
 						i(31355),	-- Recipe: Flask of Supreme Power
-						i(29184),	-- Timewarden's Leggings
-						i(29185),	-- Continuum Blade
-						i(35328),	-- Dreadweave Gloves
-						i(35334),	-- Mooncloth Legguards
-						i(35338),	-- Satin Gloves
-						i(35346),	-- Evoker's Silk Raiment
-						i(35356),	-- Dragonhide Gloves
-						i(35363),	-- Kodohide Legguards
-						i(35369),	-- Opportunist's Leather Spaulders
-						i(35372),	-- Wyrmhide Helm
-						i(35376),	-- Stalker's Chain Armor
-						i(35384),	-- Seer's Linked Leggings
-						i(35390),	-- Seer's MAil Spaulders
-						i(35393),	-- Seer's Ringmail Headpiece
-						i(35402),	-- Crusader's Ornamented Chestplate
-						i(35410),	-- Savage Plate Legguards
-						i(35414),	-- Crusader's Scaled Helm
-						i(29183),	-- Bindings of the Timewalker
-						i(29182),	-- Riftmaker
-						i(31777),	-- Keepers of Time Tabard
 					}),
 					n(33915, {  -- Argex Irongut <Veteran Arena Vendor>
 						["groups"] = {
