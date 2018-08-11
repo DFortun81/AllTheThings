@@ -177,6 +177,91 @@ _.Zones =
 									["recipeID"] = 269529,
 									["spellID"] = 269529,
 								}),
+								i(162399, { -- Recipe: Honorable Combatant's Leather Armguards [Rank 3]	
+									["recipeID"] = 269530,
+									["spellID"] = 269530,
+								}),	
+								i(162392, { -- Recipe: Honorable Combatant's Leather Gauntlets [Rank 2]		
+									["recipeID"] = 269520,
+									["spellID"] = 269520,
+								}),	
+								i(162393, { -- Recipe: Honorable Combatant's Leather Gauntlets [Rank 3]	
+									["recipeID"] = 269521,
+									["spellID"] = 269521,
+								}),	
+								i(162394, { -- Recipe: Honorable Combatant's Leather Leggings [Rank 2]		
+									["recipeID"] = 269523,
+									["spellID"] = 269523,
+								}),	
+								i(162395, { -- Recipe: Honorable Combatant's Leather Leggings [Rank 3]	
+									["recipeID"] = 269524,
+									["spellID"] = 269524,
+								}),	
+								i(162390, { -- Recipe: Honorable Combatant's Leather Treads [Rank 2]		
+									["recipeID"] = 269517,
+									["spellID"] = 269517,
+								}),	
+								i(162391, { -- Recipe: Honorable Combatant's Leather Treads [Rank 3]
+									["recipeID"] = 269518,
+									["spellID"] = 269518,
+								}),	
+								i(162396, { -- Recipe: Honorable Combatant's Leather Waistguard [Rank 2]		
+									["recipeID"] = 269526,
+									["spellID"] = 269526,
+								}),	
+								i(162397, { -- Recipe: Honorable Combatant's Leather Waistguard [Rank 3]	
+									["recipeID"] = 269527,
+									["spellID"] = 269527,
+								}),	
+								i(162410, { -- Recipe: Honorable Combatant's Mail Armguards [Rank 2]		
+									["recipeID"] = 269544,
+									["spellID"] = 269544,
+								}),	
+								i(162411, { -- Recipe: Honorable Combatant's Mail Armguards	 [Rank 3]
+									["recipeID"] = 269545,
+									["spellID"] = 269545,
+								}),	
+								i(162404, { -- Recipe: Honorable Combatant's Mail Gauntlets [Rank 2]		
+									["recipeID"] = 269535,
+									["spellID"] = 269535,
+								}),	
+								i(162405, { -- Recipe: Honorable Combatant's Mail Gauntlets [Rank 3]	
+									["recipeID"] = 269536,
+									["spellID"] = 269536,
+								}),	
+								i(162406, { -- Recipe: Honorable Combatant's Mail Leggings [Rank 2]		
+									["recipeID"] = 269538,
+									["spellID"] = 269538,
+								}),	
+								i(162407, { -- Recipe: Honorable Combatant's Mail Leggings [Rank 3]
+									["recipeID"] = 269539,
+									["spellID"] = 269539,
+								}),	
+								i(162402, { -- Recipe: Honorable Combatant's Mail Treads [Rank 2]		
+									["recipeID"] = 269532,
+									["spellID"] = 269532,
+								}),	
+								i(162403, { -- Recipe: Honorable Combatant's Mail Treads [Rank 3]	
+									["recipeID"] = 269533,
+									["spellID"] = 269533,
+								}),	
+								i(162408, { -- Recipe: Honorable Combatant's Mail Waistguard [Rank 2]		
+									["recipeID"] = 269541,
+									["spellID"] = 269541,
+								}),	
+								i(162409, { -- Recipe: Honorable Combatant's Mail Waistguard [Rank 3]	
+									["recipeID"] = 269542,
+									["spellID"] = 269542,
+								}),	
+								i(162271, { -- Recipe: Honorable Combatant's Plate Armguards [Rank 2]		
+									["recipeID"] = 269452,
+									["spellID"] = 269452,
+								}),	
+								i(162272, { -- Recipe: Honorable Combatant's Plate Armguards [Rank 3]	
+									["recipeID"] = 269453,
+									["spellID"] = 269453,
+								}),	
+
 							},
 							["itemID"] = 137642, -- Mark of Honor
 						}),
