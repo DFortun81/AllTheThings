@@ -634,14 +634,6 @@ _.Zones =
 					q( 13429),	-- A Distraction for Akama
 					q( 10985),	-- A Distraction for Akama
 					qa(10642),	-- A Ghost in the Machine
-					q( 10708, {	-- Akama's Promise
-						i(30932),
-						i(30999),
-						i(31000),
-						i(30943),
-						i(30984),
-						i(31417),
-					}),
 					q( 10947),	-- An Artifact From the Past
 					q( 11544),	-- Ata'mal Armaments
 					q( 10781),	-- Battle of the Crimson Watch
