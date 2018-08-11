@@ -709,6 +709,7 @@ _.Mounts =
 		i(29229),		-- Silver War Talbuk (Alliance)
 		i(29104),		-- Silver War Talbuk (Horde)
 		i(45596),		-- Silvermoon Hawkstrider
+		i(161910),		-- Smoky Charger
 		i(25472),		-- Snowy Gryphon
 		i(64998),		-- Spectral Steed (Alliance)
 		i(64999),		-- Spectral Wolf (Horde)

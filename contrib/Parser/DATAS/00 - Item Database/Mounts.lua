@@ -118,3 +118,4 @@ i(163585, 278979); -- Surf Jelly
 i(163584, 279466); -- Twilight Avenger
 i(161911, 259213);	-- Admiralty Stallion
 i(161912, 260172);	-- Dapple Gray
+i(161910, 260173);	-- Reins of the Smoky Charger

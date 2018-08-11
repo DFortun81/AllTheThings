@@ -373,6 +373,88 @@ _.Zones =
 								}),	
 							},
 						}),
+						n(135815, { -- Quartermaster Alcorn <Order of Embers Emissary>
+							["groups"] = {
+								i(160541),	-- Order of Embers Tabard
+								i(163036, { -- Polished Pet Charm
+									i(163491), -- Pristine Falcon Feather
+								}),
+								i(161910),	-- Reins of the Smoky Charger
+								i(161596),	-- Coven Buster's Waistguard
+								i(161591),	-- Eternal Flamekeeper's Handwraps
+								i(161593),	-- Footpads of the Deft Exorcist
+								i(161597),	-- Gauntlets of Renewed Resolution
+								i(161595),	-- Grips of the Oathsworn
+								i(161598),	-- Hexxed-Land Treads
+								i(161592),	-- Leggings of Devout Opposition
+								i(161594),	-- Woven Thornspeaker's Leggings
+								i(160535),	-- Witch Hunter's Cape
+								i(162381, { -- Design: Royal Quartz Loop [Rank 3]
+									["recipeID"] = 256521,
+									["spellID"] = 256521,
+								}),	
+								i(162305, { -- Formula: Enchant Ring - Pact of Versatility [Rank 3]	
+									["recipeID"] = 255101,
+									["spellID"] = 255101,
+								}),	
+								i(162318, { -- Formula: Enchant Weapon - Gale-Force Striking [Rank 3]	
+									["recipeID"] = 255143,
+									["spellID"] = 255143,
+								}),	
+								i(162320, { -- Formula: Enchant Weapon - Versatile Navigation [Rank 3]	
+									["recipeID"] = 268879,
+									["spellID"] = 268879,
+								}),	
+								i(162421, { -- Pattern: Deep Sea Bag [Rank 3]	
+									["recipeID"] = 257127,
+									["spellID"] = 257127,
+								}),	
+								i(162427, { -- Pattern: Embroidered Deep Sea Cloak [Rank 3]	
+									["recipeID"] = 257116,
+									["spellID"] = 257116,
+								}),	
+								i(163314, { -- Recipe: Battle Potion of Agility [Rank 3]
+									["recipeID"] = 279161,
+									["spellID"] = 279161,
+								}),	
+								i(162256, { -- Recipe: Coastal Rejuvenation Potion [Rank 3]	
+									["recipeID"] = 252390,
+									["spellID"] = 252390,
+								}),	
+								i(162361, { -- Recipe: Contract: Order of Embers [Rank 2]
+									["recipeID"] = 256279,
+									["spellID"] = 256279,
+								}),	
+								i(162135, { -- Recipe: Flask of the Undertow [Rank 3]	
+									["recipeID"] = 252359,
+									["spellID"] = 252359,
+								}),	
+								i(162131, { -- Recipe: Potion of Rising Death [Rank 3]	
+									["recipeID"] = 252346,
+									["spellID"] = 252346,
+								}),	
+								i(162412, { -- Recipe: Recurve Bow of the Strands [Rank 3]	
+									["recipeID"] = 256789,
+									["spellID"] = 256789,
+								}),	
+								i(162329, { -- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 2]	
+									["recipeID"] = 272067,
+									["spellID"] = 272067,
+								}),	
+								i(162330, { -- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 3]	
+									["recipeID"] = 272066,
+									["spellID"] = 272066,
+								}),	
+								i(162322, { -- Schematic: Frost-Laced Ammunition [Rank 3]	
+									["recipeID"] = 265102,
+									["spellID"] = 265102,
+								}),	
+								i(163205, { -- Ghostly Pet Biscuit
+									["f"] = 55, -- Consumable
+									["description"] = "This gives your pet a ghostly appearance as a hunter for 30 minutes.",
+								}),
+							},
+						}),
 					},
 				}),
 				n(0, { -- Zone Drop

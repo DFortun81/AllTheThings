@@ -109,6 +109,7 @@ pet(49646, 244);	-- Core Hound Pup
 pet(93035, 1150); 	-- Core of Hardened Ash (Ashstone Core)
 pet(136925, 1890); 	-- Corgi Pup
 pet(140320, 1929);	-- Corgnelius
+pet(163491, 2405);	-- Corlain Falcon
 pet(152980, 2091);	-- Corrupted Blood
 pet(127749, 1672); 	-- Corrupted Nest Guardian
 pet(163513, 2427);	-- Cou'pa

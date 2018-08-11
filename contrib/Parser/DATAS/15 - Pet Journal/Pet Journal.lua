@@ -617,6 +617,7 @@ _.PetJournal =
 		p(646),		-- Chicken
 		p(1914),	-- Coastal Sandpiper
 		p(47),		-- Cockatiel
+		p(2405),	-- Corlain Falcon
 		p(1997),	-- Crackers
 		p(507),		-- Crested Owl
 		p(421),		-- Crimson Moth
