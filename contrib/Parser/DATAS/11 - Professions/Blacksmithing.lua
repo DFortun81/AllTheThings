@@ -2806,8 +2806,16 @@ profession(164, { -- Blacksmithing
 		}),]]--
 		n(-26, { -- Drops
 			i(136709, { -- Recipe: Demonsteel Stirrups
-				["g"] = {},
-				["description"] = "This item has a fairly high drop rate from horse-like creatures on the Broken Isles.",
+				["crs"] = {
+          112637, -- Devious Sunrunner
+          91308, -- Equine Sunrunner
+          104815, -- Jojo the Palestrider
+          112636, -- Sinister Leyrunner
+          110350, -- Tormented Shadowrunner
+          109349, -- Veil Shadowrunner
+          109819, -- Wild Dreamrunner
+          
+        },
 			}),
 		}),
 		n(-15, { -- Recipes
