@@ -437,6 +437,7 @@ _.Zones =
 							i(84227), -- Plans: Masterwork Spiritguard Shoulders
 						},
 						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					n(74027, {	-- Lorry Warmheart <Mythic Vendor>
 						i(105867, {	-- Essence of the Cursed Conqueror

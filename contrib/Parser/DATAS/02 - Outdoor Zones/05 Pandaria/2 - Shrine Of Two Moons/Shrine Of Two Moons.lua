@@ -487,6 +487,7 @@ _.Zones =
 							i(84227), -- Plans: Masterwork Spiritguard Shoulders
 						},
 						["races"] = HORDE_ONLY,
+						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					n(74012, {	-- Ki'agnuu <Heroic Vendor>
 						i(105858, {	-- Essence of the Cursed Conqueror
