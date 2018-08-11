@@ -1983,6 +1983,35 @@ local function createDebugFrame(parent)
 		end);
 	questGiverLists:SetPoint("TOPLEFT",creatureLists,0,-frameSpacer)
 	addObject(elm,questGiverLists)
+	
+	-- This creates the "Precision" slider.
+	local precisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", child, "OptionsSliderTemplate");
+	precisionSlider.tooltipText = 'Use this to customize your level of desired precision in percentage calculations.';
+	precisionSlider:SetOrientation('HORIZONTAL');
+	precisionSlider:SetWidth(300);
+	precisionSlider:SetHeight(20);
+	precisionSlider:SetValueStep(1);
+	precisionSlider:SetMinMaxValues(0, 8);
+	precisionSlider:SetObeyStepOnDrag(true);
+	precisionSlider:SetValue(app.GetDataMember("Precision", 0));
+	precisionSlider:SetPoint("TOPLEFT",questGiverLists,0,-(frameSpacer * 3))
+	_G[precisionSlider:GetName() .. 'Low']:SetText('0')
+	_G[precisionSlider:GetName() .. 'High']:SetText('8')
+	_G[precisionSlider:GetName() .. 'Text']:SetText("Level of Precision")
+	addObject(elm,precisionSlider)
+	
+	precisionSlider.Label = precisionSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+	precisionSlider.Label:SetPoint("BOTTOM", 0, -12);
+	precisionSlider.Label:SetText(precisionSlider:GetValue());
+	precisionSlider:SetScript("OnValueChanged", function(self, newValue)
+		if newValue == app.GetDataMember("Precision") then
+			return 1;
+		end
+		app.SetDataMember("Precision", newValue)
+		precisionSlider.Label:SetText(newValue);
+		app:UpdateWindows();
+		--app:RefreshData();
+	end);
 end
 local function createAboutFrame(parent)
 	local tabName = "About"

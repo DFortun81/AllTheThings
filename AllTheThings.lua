@@ -737,8 +737,30 @@ local function GetProgressColor(p)
 end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
+		local desiredLength, str = app.GetDataMember("Precision", 0);
 		local percent = progress / total;
-		return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. tostring(floor(percent * 100)) .. "%)|r";
+		if desiredLength > 0 then
+			str = tostring(percent * 100);
+			local length = string.len(str);
+			local pos = string.find(str,"[.]");
+			if not pos then
+				str = str .. ".";
+				for i=desiredLength,1,-1 do
+					str = str .. "0";
+				end
+			else
+				local totalExtra = desiredLength - (length - pos);
+				for i=totalExtra,1,-1 do
+					str = str .. "0";
+				end
+				if totalExtra < 1 then
+					str = string.sub(str, 1, pos + desiredLength);
+				end
+			end
+		else
+			str = tostring(floor(percent * 100));
+		end
+		return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. str .. "%) |r";
 	end
 	return "---";
 end
