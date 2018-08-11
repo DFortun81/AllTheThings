@@ -28,7 +28,9 @@ pet(23712, 1927); 	-- Ash'ana
 pet(104156, 1323); 	-- Ashleaf Spriteling
 pet(128690, 1706); 	-- Ashmaw Cub
 pet(113569, 1429);	-- Autumnal Sproutling
-pet(118599,  1429);	-- Autumnal Sproutling
+pet(118599, 1429);	-- Autumnal Sproutling
+pet(163555, 2439);  -- Azerite Puddle
+pet(163515, 2429);	-- Azeriti
 pet(104157, 1321); 	-- Azure Crane Chick
 pet(34535, 57); 	-- Azure Whelpling
 pet(44819, 202); 	-- Baby Blizzard Bear

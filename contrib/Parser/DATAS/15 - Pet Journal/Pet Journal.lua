@@ -500,6 +500,7 @@ _.PetJournal =
 		p(212),		-- Ammen Vale Lashling
 		p(1150),	-- Ashstone Core
 		p(1429),	-- Autumnal Sproutling
+		p(2429);	-- Azeriti
 		p(2086), 	-- Blazehound
 		p(1517),	-- Blazing Cindercrawler
 		un(35, p(1248)),	-- Blossoming Ancient
@@ -818,6 +819,7 @@ _.PetJournal =
 		p(1624),	-- Abyssius
 		p(1160),	-- Arcane Eye
 		p(2131),	-- Arcane Gorger
+		p(2439); 	-- Azerite Puddle
 		p(1964),	-- Blood Boil
 		un(35, p(1466)),	-- Brightpaw
 		p(1888),	-- Celestial Calf

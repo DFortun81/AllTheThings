@@ -50,6 +50,20 @@ _.Zones =
 				["qg"] = 136907, -- Magni Bronzebeard	
 				["sourceQuests"] = { 52428 }, -- Infusing the Heart	
 			}),
+			n(130216, { -- Magni Bronzebeard  [NOTE: Attaching him here instead of Silithius file so he stands out and people don't forget about him.  He will be linked via "maps" technique".   This also shoves him at the top for people who are 120+
+				["groups"] = {
+					i(160544), -- Champions of Azeroth Tabard
+					i(163555), -- Drop of Azerite
+					i(163515), -- Shard of Azerite
+					i(161555), -- Azerothian Champion's Crown
+					i(161563), -- Helm of the Azerothian Champion
+					i(161560), -- Azerothian Champion's Spaulders
+					i(161557), -- Vest of the Azerothian Champion
+					i(160537), -- Drape of the Azerothian Champion
+				},
+				["maps"] = { 81 }, -- Silithius
+				["lvl"] = 120,
+			}),
 		},
 		["achievementID"] = 12918, -- Have a Heart
 		["lvl"] = 110,
