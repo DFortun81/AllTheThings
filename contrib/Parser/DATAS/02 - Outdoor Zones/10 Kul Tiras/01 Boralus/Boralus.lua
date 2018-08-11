@@ -92,7 +92,93 @@ _.Zones =
 							i(11023), -- Ancona Chicken
 						}),
 						n(142564, { -- Leedan Gustaf <Profession Liason>
-							-- RECIPES
+							["groups"] = {
+								i(162439, { -- Pattern: Honorable Combatant's Satin Belt [Rank 2]
+									["recipeID"] = 269609,
+									["spellID"] = 269609,
+								}),	
+								i(162440, { -- Pattern: Honorable Combatant's Satin Belt [Rank 3]	
+									["recipeID"] = 269610,
+									["spellID"] = 269610,
+								}),	
+								i(162433, { -- Pattern: Honorable Combatant's Satin Boots [Rank 2]	
+									["recipeID"] = 269600,
+									["spellID"] = 269600,
+								}),	
+								i(162434, { -- Pattern: Honorable Combatant's Satin Boots [Rank 3]		
+									["recipeID"] = 269601,
+									["spellID"] = 269601,
+								}),	
+								i(162441, { -- Pattern: Honorable Combatant's Satin Bracers [Rank 2]	
+									["recipeID"] = 269612,
+									["spellID"] = 269612,
+								}),	
+								i(162442, { -- Pattern: Honorable Combatant's Satin Bracers [Rank 3]		
+									["recipeID"] = 269613,
+									["spellID"] = 269613,
+								}),	
+								i(162431, { -- Pattern: Honorable Combatant's Satin Cloak [Rank 2]	
+									["recipeID"] = 269597,
+									["spellID"] = 269597,
+								}),	
+								i(162432, { -- Pattern: Honorable Combatant's Satin Cloak [Rank 3]		
+									["recipeID"] = 269598,
+									["spellID"] = 269598,
+								}),	
+								i(162435, { -- Pattern: Honorable Combatant's Satin Mittens [Rank 2]	
+									["recipeID"] = 269603,
+									["spellID"] = 269603,
+								}),	
+								i(162436, { -- Pattern: Honorable Combatant's Satin Mittens [Rank 3]		
+									["recipeID"] = 269604,
+									["spellID"] = 269604,
+								}),	
+								i(162437, { -- Pattern: Honorable Combatant's Satin Pants [Rank 2]	
+									["recipeID"] = 269606,
+									["spellID"] = 269606,
+								}),	
+								i(162438, { -- Pattern: Honorable Combatant's Satin Pants [Rank 3]		
+									["recipeID"] = 269607,
+									["spellID"] = 269607,
+								}),	
+								i(162417, { -- Recipe: Honorable Combatant's Bow [Rank 2]	
+									["recipeID"] = 269553,
+									["spellID"] = 269553,
+								}),	
+								i(162418, { -- Recipe: Honorable Combatant's Bow [Rank 3]		
+									["recipeID"] = 269554,
+									["spellID"] = 269554,
+								}),	
+								i(162277, { -- Recipe: Honorable Combatant's Cutlass [Rank 2]	
+									["recipeID"] = 269465,
+									["spellID"] = 269465,
+								}),	
+								i(162278, { -- Recipe: Honorable Combatant's Cutlass [Rank 3]		
+									["recipeID"] = 269466,
+									["spellID"] = 269466,
+								}),	
+								i(162279, { -- Recipe: Honorable Combatant's Deckpounder [Rank 2]	
+									["recipeID"] = 269471,
+									["spellID"] = 269471,
+								}),	
+								i(162280, { -- Recipe: Honorable Combatant's Deckpounder [Rank 3]		
+									["recipeID"] = 269472,
+									["spellID"] = 269472,
+								}),	
+								i(162353, { -- Recipe: Honorable Combatant's Etched Vessel [Rank 2]	
+									["recipeID"] = 269741,
+									["spellID"] = 269741,
+								}),	
+								i(162354, { -- Recipe: Honorable Combatant's Etched Vessel [Rank 3]		
+									["recipeID"] = 269742,
+									["spellID"] = 269742,
+								}),	
+								i(162398, { -- Recipe: Honorable Combatant's Leather Armguards [Rank 2]	
+									["recipeID"] = 269529,
+									["spellID"] = 269529,
+								}),
+							},
+							["itemID"] = 137642, -- Mark of Honor
 						}),
 						n(145838, { -- Marshal Frazer
 							i(139775), -- Alliance Enthusiast
