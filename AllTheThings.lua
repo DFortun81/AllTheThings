@@ -3646,7 +3646,7 @@ end
 			elseif key == "info" then
 				return cachedNodeData[t.flightPathID];
 			elseif key == "description" then
-				return "Flight paths are cached when you look at the flight master on each continent.\n\nHave fun!\n - Crieve (with love)";
+				return "Flight paths are cached when you look at the flight master on each continent. We refresh the collection status when you look at the Flight Map.\n\nHave fun!\n - Crieve";
 			elseif key == "icon" then
 				local info = t.info;
 				if info and info.faction and info.faction == 2 then
