@@ -335,6 +335,76 @@ _.Zones =
 								}),	
 							},
 						}),
+						n(135459, { -- Provisioner Lija <Talanji's Expedition Emissary>
+							["groups"] = {
+								i(160547),	-- Talanji's Expedition Tabard
+								i(161774),	-- Reins of the Expedition Bloodswarmer
+								i(163036, {	-- Polished Pet Charm
+									i(163501), -- Tragg the Curious
+								}),
+								i(161538),	-- Gloomplate Gauntlets
+								i(161528),	-- Grips of the Swamp Hunter
+								i(161520),	-- Hir'eek Hide Leggings
+								i(161493),	-- Swamp Medic's Leggings
+								i(161506),	-- Swampstalker Footpads
+								i(161536),	-- Torga Scale Girdle
+								i(161492),	-- Zo'bal Spirit Gloves
+								i(161551),	-- Zul'jan Camp Stalkers
+								i(160531),	-- Drape of the Blood Purge
+								i(162762, { -- Design: Tidal Amethyst Loop [Rank 3]
+									["recipeID"] = 256519,
+									["spellID"] = 256519,
+								}),	
+								i(162718, { -- Formula: Enchant Ring - Pact of Mastery [Rank 3]	
+									["recipeID"] = 255100,
+									["spellID"] = 255100,
+								}),	
+								i(162724, { -- Formula: Enchant Weapon - Masterful Navigation [Rank 3]	
+									["recipeID"] = 268903,
+									["spellID"] = 268903,
+								}),	
+								i(162723, { -- Formula: Enchant Weapon - Siphoning [Rank 3]	
+									["recipeID"] = 255112,
+									["spellID"] = 255112,
+								}),	
+								i(163315, { -- Recipe: Battle Potion of Intellect [Rank 3]	
+									["recipeID"] = 279164,
+									["spellID"] = 279164,
+								}),	
+								i(162703, { -- Recipe: Coastal Mana Potion [Rank 3]	
+									["recipeID"] = 252387,
+									["spellID"] = 252387,
+								}),	
+								i(162754, { -- Recipe: Contract: Talanji's Expedition [Rank 2]	
+									["recipeID"] = 256288,
+									["spellID"] = 256288,
+								}),	
+								i(162697, { -- Recipe: Flask of the Vast Horizon [Rank 3]	
+									["recipeID"] = 252356,
+									["spellID"] = 252356,
+								}),	
+								i(162768, { -- Recipe: Hardened Tempest Knuckles [Rank 3]	
+									["recipeID"] = 256784,
+									["spellID"] = 256784,
+								}),	
+								i(162767, { -- Recipe: Mistscale Knuckles [Rank 3]	
+									["recipeID"] = 256781,
+									["spellID"] = 256781,
+								}),	
+								i(162693, { -- Recipe: Potion of Bursting Blood [Rank 3]	
+									["recipeID"] = 252343,
+									["spellID"] = 252343,
+								}),	
+								i(162732, { -- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2]	
+									["recipeID"] = 272063,
+									["spellID"] = 272063,
+								}),	
+								i(162733, { -- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3]	
+									["recipeID"] = 272064,
+									["spellID"] = 272064,
+								}),	
+							},
+						}),
 					},
 				}),
 				n(0, { -- Zone Drop

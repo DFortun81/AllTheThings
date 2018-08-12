@@ -94,6 +94,7 @@ _.PetJournal =
 		p(420), 	-- Toad
 		p(163), 	-- Toothy
 		un(6, p(2143)),	-- Tottle
+		p(2415),	-- Tragg the Curious
 		p(65), 		-- Tree Frog
 		p(536), 	-- Tundra Penguin
 		p(473), 	-- Turquoise Turtle

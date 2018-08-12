@@ -116,8 +116,10 @@ i(163582, 279469); -- Qinsho's Eternal Hound
 i(163586, 254811); -- Squawks
 i(163585, 278979); -- Surf Jelly
 i(163584, 279466); -- Twilight Avenger
-i(161911, 259213);	-- Admiralty Stallion
-i(161912, 260172);	-- Dapple Gray
-i(161910, 260173);	-- Reins of the Smoky Charger
-i(163589, 279474); -- Reins of the Palehide Direhorn
-i(163042, 264058); -- Reins of thee Mighty Caravan Brutosaur
+i(161911, 259213); -- Admiralty Stallion
+i(161912, 260172); -- Dapple Gray
+i(161910, 260173); -- Smoky Charger
+i(163589, 279474); -- Palehide Direhorn
+i(163042, 264058); -- Mighty Caravan Brutosaur
+i(161773, 237287); -- Alabaster Hyena
+i(161774, 275841); -- Expedition Bloodswarmer

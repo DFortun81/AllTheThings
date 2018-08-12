@@ -15,6 +15,7 @@ t(127670);	-- Accursed Tome of the Sargerei
 t(144072);	-- Adopted Puppy Crate	
 t(86589);	-- Ai-Li's Skymirror	
 t(147838);	-- Akazamzarak's Spare Hat	-- mage class quest
+t(163211);	-- Akunda's Firesticks
 t(119217);	-- Alliance Flag of Victory (Alliance)	
 t(119220);	-- Alliance Gladiator's Banner (Never Implemented)	
 t(153204);	-- All-Seer's Eye	
@@ -135,6 +136,7 @@ t(36863);	-- Decahedral Dwarven Dice
 t(108743);	-- Deceptia's Smoldering Boots	
 t(79769);	-- Demon Hunter's Aspect	
 t(147312);	-- Demon Noggin	
+t(159753);	-- Desert Flute
 t(30542);	-- Dimensional Ripper - Area 52 (Goblin Engineering)	
 t(18984);	-- Dimensional Ripper - Everlook (Goblin Engineering)	
 t(142496);	-- Dirty Spoon	
@@ -328,7 +330,8 @@ t(90427);	-- Pandaren Brewpack
 t(86588);	-- Pandaren Firework Launcher	
 t(89869);	-- Pandaren Scarecrow	
 t(86586);	-- Panflute of Pandaria	
-t(34499);	-- Paper Flying Machine Kit	
+t(34499);	-- Paper Flying Machine Kit
+t(163210);	-- Party Totem
 t(130158);	-- Path of Elothir	
 t(64881);	-- Pendant of the Scarab Storm	
 t(115468);	-- Permanent Frost Essence (Horde)	

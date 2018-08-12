@@ -541,6 +541,7 @@ _.Toys =
 		}),
 	}),
 	n(-2, { 	-- Vendor
+		i(163211),		-- Akunda's Firesticks
 		i(46843),		-- Argent Crusader's Banner
 		i(147537, { 	-- A Tiny Set of Warglaives -- demon hunter class hall
 			["classes"] = {12},
@@ -567,6 +568,7 @@ _.Toys =
 		i(45021),		-- Darnassus Banner (Alliance)
 		i(129149),		-- Death's Door Charm
 		i(163463),		-- Dead Ringer
+		i(159753),		-- Desert Flute
 		i(129279), 		-- Enchanted Stone Whistle
 		i(134007),		-- Eternal Black Diamond Ring
 		i(45020),		-- Exodar Banner (Alliance)
@@ -605,6 +607,7 @@ _.Toys =
 		i(134004),		-- Noble's Eternal Elementium Signet
 		i(45014),		-- Orgrimmar Banner (Horde)
 		i(89869), 		-- Pandaren Scarecrow
+		i(163210),		-- Party Totem
 		i(130158),		-- Path of Elothir
 		i(115468),		-- Permanent Frost Essence (Horde)
 		i(115472),		-- Permanent Time Bubble (Alliance)

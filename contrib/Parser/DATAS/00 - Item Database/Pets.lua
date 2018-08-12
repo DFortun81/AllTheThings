@@ -587,6 +587,7 @@ pet(97558, 1236);	-- Tito's Basket (Tito)
 pet(33816, 163); 	-- Toothy's Bucket (Toothy)
 pet(153541, 2143);	-- Tottle
 pet(50446, 251); 	-- Toxic Wasteling
+pet(163501, 2415);	-- Tragg the Curious
 pet(21277, 116); 	-- Tranquil Mechanical Yeti
 pet(126926, 1665); 	-- Translucent Shell (Ghostshell Crab)
 pet(139789, 1920); 	-- Transmutant

@@ -438,6 +438,7 @@ _.Mounts =
 	}),
 	n(-2, { 	-- Vendor
 		i(161911),	-- Admiralty Stallion
+		i(161773),	-- Alabaster Hyena
 		i(85262),		-- Amber Scorpion
 		i(141713),		-- Arcadian War Turtle
 		{
@@ -538,6 +539,7 @@ _.Mounts =
 		i(116664),		-- Dusky Rockhide
 		i(25472),		-- Ebon Gryphon
 		i(8588),		-- Emerald Raptor
+		i(161774),		-- Reins of the Expedition Bloodswarmer
 		i(45590),		-- Exodar Elekk
 		i(45597),		-- Forsaken Warhorse
 		i(19029),		-- Frostwolf Howler
