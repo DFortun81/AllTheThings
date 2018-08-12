@@ -94,82 +94,6 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1540, { 	-- Buru the Gorger
 				["groups"] = {
-					i(20890, { -- Qiraji Ornate Hilt
-						{
-							["questID"] = 8707, -- Blade of Vaulted Secrets (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {8},	-- Mage
-							["groups"] = {
-								i(21413),	-- Blade of Vaulted Secrets
-							},
-						},
-						{
-							["questID"] = 8705, -- Gavel of Infinite Wisdom (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {5},	-- Priest
-							["groups"] = {
-								i(21410),	-- Gavel of Infinite Wisdom
-							},
-						},
-						{
-							["questID"] = 8710, -- Kris of Unspoken Names (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {9},	-- Warlock
-							["groups"] = {
-								i(21416),	-- Kris of Unspoken Names
-							},
-						},
-						{
-							["questID"] = 8708, -- Mace of Unending Life (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {11},	-- Druid
-							["groups"] = {
-								i(21407),	-- Mace of Unending Life
-							},
-						},
-					}),
-					i(20886, { -- Qiraji Spiked Hilt
-						{
-							["questID"] = 8711, -- Blade of Eternal Justice (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {2},	-- Paladin
-							["groups"] = {
-								i(21395),	-- Blade of Eternal Justice
-							},
-						},
-						{
-							["questID"] = 8709, -- Dagger of Veiled Shadows (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {4},	-- Rogue
-							["groups"] = {
-								i(21404),	-- Dagger of Veiled Shadows
-							},
-						},
-						{
-							["questID"] = 8706, -- Hammer of the Gathering Storm (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {7},	-- Shaman
-							["groups"] = {
-								i(21398),	-- Hammer of the Gathering Storm
-							},
-						},
-						{
-							["questID"] = 8712, -- Scythe of the Unseen Path (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {3},	-- Hunter
-							["groups"] = {
-								i(21401),	-- Scythe of the Unseen Path
-							},
-						},
-						{
-							["questID"] = 8558, -- Sickle of Unyielding Strength (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {1},	-- Warrior
-							["groups"] = {
-								i(21392),	-- Sickle of Unyielding Strength
-							},
-						},
-					}),
 					i(21485),	-- Buru's Skull Fragment
 					i(21491),	-- Scaled Bracers of the Gorger
 					i(21487),	-- Slimy Scaled Gauntlets
@@ -209,82 +133,6 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1541, { 	-- Ayamiss the Hunter
 				["groups"] = {
-					i(20890, { -- Qiraji Ornate Hilt
-						{
-							["questID"] = 8707, -- Blade of Vaulted Secrets (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {8},	-- Mage
-							["groups"] = {
-								i(21413),	-- Blade of Vaulted Secrets
-							},
-						},
-						{
-							["questID"] = 8705, -- Gavel of Infinite Wisdom (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {5},	-- Priest
-							["groups"] = {
-								i(21410),	-- Gavel of Infinite Wisdom
-							},
-						},
-						{
-							["questID"] = 8710, -- Kris of Unspoken Names (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {9},	-- Warlock
-							["groups"] = {
-								i(21416),	-- Kris of Unspoken Names
-							},
-						},
-						{
-							["questID"] = 8708, -- Mace of Unending Life (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {11},	-- Druid
-							["groups"] = {
-								i(21407),	-- Mace of Unending Life
-							},
-						},
-					}),
-					i(20886, { -- Qiraji Spiked Hilt
-						{
-							["questID"] = 8711, -- Blade of Eternal Justice (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {2},	-- Paladin
-							["groups"] = {
-								i(21395),	-- Blade of Eternal Justice
-							},
-						},
-						{
-							["questID"] = 8709, -- Dagger of Veiled Shadows (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {4},	-- Rogue
-							["groups"] = {
-								i(21404),	-- Dagger of Veiled Shadows
-							},
-						},
-						{
-							["questID"] = 8706, -- Hammer of the Gathering Storm (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {7},	-- Shaman
-							["groups"] = {
-								i(21398),	-- Hammer of the Gathering Storm
-							},
-						},
-						{
-							["questID"] = 8712, -- Scythe of the Unseen Path (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {3},	-- Hunter
-							["groups"] = {
-								i(21401),	-- Scythe of the Unseen Path
-							},
-						},
-						{
-							["questID"] = 8558, -- Sickle of Unyielding Strength (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {1},	-- Warrior
-							["groups"] = {
-								i(21392),	-- Sickle of Unyielding Strength
-							},
-						},
-					}),
 					i(21466),	-- Stinger of Ayamiss
 					i(21478),	-- Bow of Taut Sinew
 					i(21484),	-- Helm of Regrowth
@@ -309,82 +157,6 @@ _.Instances = { tier(1, {	-- Classic
 							i(21506),	-- Pendant of the Shifting Sands
 						},
 					},
-					i(20890, { 	-- Qiraji Ornate Hilt
-						{
-							["questID"] = 8707, -- Blade of Vaulted Secrets (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {8},	-- Mage
-							["groups"] = {
-								i(21413),	-- Blade of Vaulted Secrets
-							},
-						},
-						{
-							["questID"] = 8705, -- Gavel of Infinite Wisdom (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {5},	-- Priest
-							["groups"] = {
-								i(21410),	-- Gavel of Infinite Wisdom
-							},
-						},
-						{
-							["questID"] = 8710, -- Kris of Unspoken Names (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {9},	-- Warlock
-							["groups"] = {
-								i(21416),	-- Kris of Unspoken Names
-							},
-						},
-						{
-							["questID"] = 8708, -- Mace of Unending Life (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {11},	-- Druid
-							["groups"] = {
-								i(21407),	-- Mace of Unending Life
-							},
-						},
-					}),
-					i(20886, { 	-- Qiraji Spiked Hilt
-						{
-							["questID"] = 8711, -- Blade of Eternal Justice (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {2},	-- Paladin
-							["groups"] = {
-								i(21395),	-- Blade of Eternal Justice
-							},
-						},
-						{
-							["questID"] = 8709, -- Dagger of Veiled Shadows (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {4},	-- Rogue
-							["groups"] = {
-								i(21404),	-- Dagger of Veiled Shadows
-							},
-						},
-						{
-							["questID"] = 8706, -- Hammer of the Gathering Storm (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {7},	-- Shaman
-							["groups"] = {
-								i(21398),	-- Hammer of the Gathering Storm
-							},
-						},
-						{
-							["questID"] = 8712, -- Scythe of the Unseen Path (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {3},	-- Hunter
-							["groups"] = {
-								i(21401),	-- Scythe of the Unseen Path
-							},
-						},
-						{
-							["questID"] = 8558, -- Sickle of Unyielding Strength (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {1},	-- Warrior
-							["groups"] = {
-								i(21392),	-- Sickle of Unyielding Strength
-							},
-						},
-					}),
 					i(21452),	-- Staff of the Ruins
 					i(21715),	-- Sand Polished Hammer
 					i(21459),	-- Crossbow of Imminent Doom
@@ -403,82 +175,6 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1539, { 	-- Moam
 				["groups"] = {
-					i(20890, { 	-- Qiraji Ornate Hilt
-						{
-							["questID"] = 8707, -- Blade of Vaulted Secrets (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {8},	-- Mage
-							["groups"] = {
-								i(21413),	-- Blade of Vaulted Secrets
-							},
-						},
-						{
-							["questID"] = 8705, -- Gavel of Infinite Wisdom (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {5},	-- Priest
-							["groups"] = {
-								i(21410),	-- Gavel of Infinite Wisdom
-							},
-						},
-						{
-							["questID"] = 8710, -- Kris of Unspoken Names (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {9},	-- Warlock
-							["groups"] = {
-								i(21416),	-- Kris of Unspoken Names
-							},
-						},
-						{
-							["questID"] = 8708, -- Mace of Unending Life (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {11},	-- Druid
-							["groups"] = {
-								i(21407),	-- Mace of Unending Life
-							},
-						},
-					}),
-					i(20886, { 	-- Qiraji Spiked Hilt
-						{
-							["questID"] = 8711, -- Blade of Eternal Justice (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {2},	-- Paladin
-							["groups"] = {
-								i(21395),	-- Blade of Eternal Justice
-							},
-						},
-						{
-							["questID"] = 8709, -- Dagger of Veiled Shadows (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {4},	-- Rogue
-							["groups"] = {
-								i(21404),	-- Dagger of Veiled Shadows
-							},
-						},
-						{
-							["questID"] = 8706, -- Hammer of the Gathering Storm (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {7},	-- Shaman
-							["groups"] = {
-								i(21398),	-- Hammer of the Gathering Storm
-							},
-						},
-						{
-							["questID"] = 8712, -- Scythe of the Unseen Path (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {3},	-- Hunter
-							["groups"] = {
-								i(21401),	-- Scythe of the Unseen Path
-							},
-						},
-						{
-							["questID"] = 8558, -- Sickle of Unyielding Strength (Quest)
-							["qg"] = 15499,		-- Quest Giver: Warden Haro
-							["classes"] = {1},	-- Warrior
-							["groups"] = {
-								i(21392),	-- Sickle of Unyielding Strength
-							},
-						},
-					}),
 					i(21471),	-- Talon of Furious Concentration
 					i(21455),	-- Southwind Helm
 					i(21472),	-- Dustwind Turbin
@@ -492,7 +188,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(21476),	-- Obsidian Scaled Leggings
 					i(21477),	-- Ring of Fury
 					i(21473),	-- Eye of Moam
-					i(22220), -- Plans: Black Grasp of the Destroyer
+					i(22220),	-- Plans: Black Grasp of the Destroyer
 				},
 				["creatureID"] = 15340,
 			}),
