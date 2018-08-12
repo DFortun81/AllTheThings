@@ -439,6 +439,44 @@ _.Zones =
 					},
 				}),
 				n(0, { -- Zone Drop
+					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+						i(159217), -- Sagehold Circlet
+						i(159222), -- Sagehold Mantle
+						i(159199), -- Sagehold Cloak
+						i(159220), -- Sagehold Vestments
+						i(159223), -- Sagehold Bracers
+						i(159218), -- Sagehold Gloves
+						--i(159216), -- NYI
+						i(159219), -- Sagehold Legwraps
+						--i(159221), -- NYI
+						i(159204), -- Briarback Hood
+						i(159206), -- Briarback Shoulderpads
+						i(159260), -- Briarback Greatcloak
+						i(159205), -- Briarback Vest
+						i(159200), -- Briarback Bracers
+						--i(159203), -- NYI
+						i(159207), -- Briarback Cinch
+						i(159202), -- Briarback Pants
+						--i(159201), -- NYI
+						i(159212), -- Eventide Coif
+						i(159214), -- Eventide Pauldrons
+						i(159264), -- Eventide Cape
+						i(159215), -- Eventide Breastplate
+						i(159202), -- Briarback Pants
+						--i(159210), -- NYI
+						--i(159208), -- NYI
+						--i(159213), -- NYI
+						i(159211), -- Eventide Boots
+						i(159194), -- Brineworks Helmet
+						i(159196), -- Brineworks Pauldrons
+						i(159265), -- Brineworks Drape
+						i(159191), -- Brineworks Breastplate
+						i(159198), -- Brineworks Vambraces
+						i(159192), -- Brineworks Gauntlets
+						i(159193), -- Brineworks Girdle
+						--i(159195), -- NYI
+						--i(159197), -- NYI
+					}),
 				}),
 			},
 			["achievementID"] = 12558, -- Stormsong Valley
