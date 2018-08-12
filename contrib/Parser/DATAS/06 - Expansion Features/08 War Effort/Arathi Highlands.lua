@@ -9,9 +9,9 @@
 
 -- TODO Once War Fronts launch figure out specifically what gear is awarded from the box.  So far we've had rotating on Beta as new sets come in.
 
-_.Zones =
+_.ExpansionFeatures =
 {
-	m(13, {	-- Eastern Kingdoms
+	n(-10057, {	-- War Effort
 		m(1158, {	-- Arathi Highlands
 			["groups"] = {
 				n(-4, { -- Achievements
