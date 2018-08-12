@@ -5,7 +5,16 @@ _.Zones =
 {
 	m(101, { 	-- Outland
 		m(100, {	-- Hellfire Peninsula			
-			["groups"] = {							
+			["groups"] = {	
+				n(-228, {	-- Flight Master
+					fp(102),	-- Falcon Watch, Hellfire Peninsula
+					fp(130),	-- Hellfire Peninsula, The Dark Portal
+					fp(129),	-- Hellfire Peninsula, The Dark Portal
+					fp(100),	-- Honor Hold, Hellfire Peninsula
+					fp(141),	-- Spinebreaker Ridge, Hellfire Peninsula
+					fp(101),	-- Temple of Telhamat, Hellfire Peninsula
+					fp(99),		-- Thrallmar, Hellfire Peninsula
+				}),
 				n(-25, { 	-- Pet Battle
 					p(635), -- Adder
 					p(414), -- Scorpid

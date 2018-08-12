@@ -6,6 +6,11 @@ _.Zones =
 	m(101, { 	-- Outland
 		m(109, { 	-- Netherstorm
 			["groups"] = {
+				n(-228, {	-- Flight Master
+					fp(122),	-- Area 52, Netherstorm
+					fp(150),	-- Cosmowrench, Netherstorm
+					fp(139),	-- The Stormspire, Netherstorm
+				}),
 				n(-25, {	-- Pet Battle
 					p(521), 	-- Fledgling Nether Ray
 					p(638), 	-- Nether Roach

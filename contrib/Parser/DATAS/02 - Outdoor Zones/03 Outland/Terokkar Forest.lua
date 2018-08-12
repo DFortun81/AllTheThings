@@ -5,7 +5,11 @@ _.Zones =
 {
 	m(101, { 	-- Outland
 		m(108, { 	-- Terokkar Forest
-			["groups"] = {						
+			["groups"] = {		
+				n(-228, {	-- Flight Master
+					fp(121),	-- Allerian Stronghold, Terokkar Forest
+					fp(127),	-- Stonebreaker Hold, Terokkar Forest
+				}),
 				n(-25, { 	-- Pet Battle
 					i(27445, { -- Magical Crawdad Box
 						["groups"] = {

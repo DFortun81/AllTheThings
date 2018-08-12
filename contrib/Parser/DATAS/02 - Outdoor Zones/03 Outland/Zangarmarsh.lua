@@ -5,7 +5,13 @@ _.Zones =
 {
 	m(101, { 	-- Outland
 		m(102, {	-- Zangarmarsh
-			["groups"] = {		
+			["groups"] = {
+				n(-228, {	-- Flight Master
+					fp(164),	-- Orebor Harborage, Zangarmarsh
+					fp(151),	-- Swamprat Post, Zangarmarsh
+					fp(117),	-- Telredor, Zangarmarsh
+					fp(118),	-- Zabra'jin, Zangarmarsh
+				}),
 				n(-25, {	-- Pet Battle
 					p(419), 	-- Small Frog 
 					p(387), 	-- Snake

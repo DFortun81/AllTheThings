@@ -3510,6 +3510,97 @@ app.CreateFaction = function(id, t)
 	return createInstance(constructor(id, t, "factionID"), app.BaseFaction);
 end
 
+-- Flight Path Lib
+(function()
+	local arrOfNodes = {
+		1,		-- Durotar (All of Kalimdor)
+		36,		-- Burning Steppes (All of Eastern Kingdoms)
+		100,	-- Hellfire Peninsula (All of Outland)
+		118,	-- Icecrown (All of Northrend)
+	};
+	local cachedNodeData = {};
+	app.CacheFlightPathData = function()
+		for i,mapID in ipairs(arrOfNodes) do
+			local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
+			if allNodeData then
+				for j,nodeData in ipairs(allNodeData) do
+					local node = cachedNodeData[nodeData.nodeID];
+					if not node then
+						node = {};
+						cachedNodeData[nodeData.nodeID] = node;
+					end
+					if nodeData.faction then node["faction"] = nodeData.faction; end
+					if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
+					if nodeData.name then node["text"] = nodeData.name; end
+				end
+			end
+		end
+		-- SetDataMember("CrieveIsAwesome", cachedNodeData);
+		--[[
+		for key,value in pairs(cachedNodeData) do
+			print(key, value.name, value.state);
+		end
+		]]--
+	end
+	app.CacheFlightPathDataForCurrentNode = function()
+		local allNodeData = C_TaxiMap.GetAllTaxiNodes();
+		if allNodeData then
+			for j,nodeData in ipairs(allNodeData) do
+				local node = cachedNodeData[nodeData.nodeID];
+				if not node then
+					node = {};
+					cachedNodeData[nodeData.nodeID] = node;
+				end
+				for key,value in pairs(nodeData) do
+					print(key, ": ", value);
+				end
+				if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
+				if nodeData.name then node["text"] = nodeData.name; end
+				if nodeData.state then node["state"] = nodeData.state; end
+			end
+		end
+	end
+	app:RegisterEvent("TAXIMAP_OPENED");
+	app.events.TAXIMAP_OPENED = app.CacheFlightPathDataForCurrentNode;
+	app.BaseFlightPath = {
+		__index = function(t, key)
+			if key == "key" then
+				return "flightPathID";
+			elseif key == "collectible" then
+				return GetDataMember("FlightPathsCollectible", true);
+			elseif key == "collected" then
+				if GetPersonalDataSubMember("FlightPaths", t.flightPathID) then
+					return true;
+				end
+				local info = t.info;
+				if info and info.state and info.state < 2 then
+					SetPersonalDataSubMember("FlightPaths", t.flightPathID, 1);
+					return true;
+				end
+			elseif key == "text" then
+				local info = t.info;
+				return info and info.text;
+			elseif key == "info" then
+				return cachedNodeData[t.flightPathID];
+			elseif key == "description" then
+				return "Flight paths are cached when you look at the flight master on each continent.\n\nHave fun!\n - Crieve (with love)";
+			elseif key == "icon" then
+				local info = t.info;
+				if info and info.faction == 2 then
+					return "Interface/ICONS/Ability_Rogue_Sprint_Blue";
+				end
+				return "Interface/ICONS/Ability_Rogue_Sprint";
+			else
+				-- Something that isn't dynamic.
+				return table[key];
+			end
+		end
+	};
+	app.CreateFlightPath = function(id, t)
+		return createInstance(constructor(id, t, "flightPathID"), app.BaseFlightPath);
+	end
+end)();
+
 -- Filter Lib
 app.BaseFilter = {
 	__index = function(t, key)
@@ -9165,6 +9256,8 @@ app.events.PLAYER_LOGIN = function()
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		RefreshLocation();
 		RefreshSaves();
+		
+		app.CacheFlightPathData();
 		
 		-- NOTE: The auto refresh only happens once.
 		if not app.autoRefreshedCollections then

@@ -6,6 +6,12 @@ _.Zones =
 	m(101, { 	-- Outland
 		m(104, {	-- Shadowmoon Valley (Outland)
 			["groups"] = {
+				n(-228, {	-- Flight Master
+					fp(140),	-- Altar of Sha'tar, Shadowmoon Valley
+					fp(159),	-- Sanctum of the Stars, Shadowmoon Valley
+					fp(123),	-- Shadowmoon Village, Shadowmoon Valley
+					fp(124),	-- Wildhammer Stronghold, Shadowmoon Valley
+				}),
 				n(0, { -- Zone Drop
 					["groups"] = {
 						n(20878, { -- Deathforge Guardian

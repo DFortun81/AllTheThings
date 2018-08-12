@@ -5,7 +5,11 @@ _.Zones =
 {
 	m(101, { 	-- Outland
 		m(107, { 	-- Nagrand (Outland)
-			["groups"] = {			
+			["groups"] = {	
+				n(-228, {	-- Flight Master
+					fp(120),	-- Garadar, Nagrand
+					fp(119),	-- Telaar, Nagrand
+				}),
 				n(0, { -- Zone Drop
 					["groups"] = {
 						n(18203, { -- Murkblood Raider

@@ -6,6 +6,13 @@ _.Zones =
 	m(101, {	-- Outland
 		m(105, {	-- Blade's Edge Mountains
 			["groups"] = {
+				n(-228, {	-- Flight Master
+					fp(160),	-- Evergrove, Blade's Edge Mountains
+					fp(163),	-- Mok'Nathal Village, Blade's Edge Mountains
+					fp(125),	-- Sylvanaar, Blade's Edge Mountains
+					fp(126),	-- Thunderlord Stronghold, Blade's Edge Mountains
+					fp(156),	-- Toshley's Station, Blade's Edge Mountains
+				}),
 				n(-25, {	-- Pet Battle
 					p(1164),	-- Cogblade Raptor
 					p(378),	-- Rabbit
