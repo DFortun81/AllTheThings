@@ -562,7 +562,7 @@ local function createAccountFrame(parent)
 	addObject(elm,basic)
 	
 	local basicFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-basicFrame", child, "ThinBorderTemplate");
-	basicFrame:SetSize(child:GetWidth(),100)
+	basicFrame:SetSize(child:GetWidth(),140)
 	basicFrame:SetPoint("TOPLEFT",basic,0,-frameSpacer);
 	addObject(elm,basicFrame)
 	
@@ -628,8 +628,40 @@ local function createAccountFrame(parent)
 			GameTooltip:SetText ("Enable this setting if you want to treat recipes collected by any character on your account as Collected.\n\nIf you wish to treat only recipes known by your current character as Collected, turn this setting off.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	tracker:SetPoint("TOPLEFT",prof,5,-frameSpacer)
+	tracker:SetPoint("TOPLEFT",prof,0,-frameSpacer)
 	addObject(elm,tracker)
+	
+	-- Treat Flight Paths as Collectible
+	local flightPathsAsCollectible = createCheckBox("Treat Flight Paths as Collectible", child, function(self)
+			app.SetDataMember("FlightPathsCollectible", self:GetChecked());
+			app:RefreshData();
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("FlightPathsCollectible"));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this setting if you want to treat flight paths as collectible.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	flightPathsAsCollectible:SetPoint("TOPLEFT",tracker,0,-frameSpacer)
+	addObject(elm,flightPathsAsCollectible)
+	
+	-- Track Flight Paths Account Wide mode
+	local flightPathsAccountWide = createCheckBox("Track Flight Paths Account-Wide", child, function(self)
+			app.SetDataMember("FlightPathsAccountWide", self:GetChecked());
+			app:RefreshData();
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("FlightPathsAccountWide"));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this setting if you want to treat flight paths collected by any character on your account as Collected.\n\nIf you wish to treat only flight paths known by your current character as Collected, turn this setting off.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	flightPathsAccountWide:SetPoint("TOPLEFT",flightPathsAsCollectible,0,-frameSpacer)
+	addObject(elm,flightPathsAccountWide)
 
 	-- race
 	local race = createCheckBox("Filter Items By Race", child, function(self)
@@ -670,7 +702,7 @@ local function createAccountFrame(parent)
 		function(self) 
 			self:SetChecked(app.GetDataMember("RequireBindingFilter"));
 		end);
-	boe:SetPoint("TOPLEFT",tracker,-5, -frameSpacer * 1.5)
+	boe:SetPoint("TOPLEFT",class,0, -frameSpacer)
 	addObject(elm,boe)
 	
 	--ignore
@@ -691,7 +723,7 @@ local function createAccountFrame(parent)
 			GameTooltip:SetText ("This ignores all filters for any items that are Bind on Equip or Bind on Account. Turn off if you only want to see BOE or BOA items for your filter settings.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	ignore:SetPoint("TOPLEFT",boe, child:GetWidth()/2, 0)
+	ignore:SetPoint("TOPLEFT",boe, 0, -frameSpacer)
 	addObject(elm,ignore)
 	
 	-- seasonal

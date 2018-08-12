@@ -3626,7 +3626,7 @@ end
 			if key == "key" then
 				return "flightPathID";
 			elseif key == "collectible" then
-				return GetDataMember("FlightPathsCollectible", true);
+				return GetDataMember("FlightPathsCollectible");
 			elseif key == "collected" then
 				if GetDataMember("FlightPathsAccountWide")then
 					return GetDataSubMember("FlightPaths", t.flightPathID);
