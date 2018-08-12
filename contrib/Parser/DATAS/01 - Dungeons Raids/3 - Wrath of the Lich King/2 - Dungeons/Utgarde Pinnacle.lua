@@ -75,18 +75,15 @@ _.Instances =
 							i(37371),	-- Ring of the Frenzied Wolvar
 						})),
 						cr(26693, e(643, { 	-- Skadi the Ruthless
-							i( 44151, {	-- Reins of the Blue Proto-Drake (MOUNT!)
-								["description"] = "Currently unknown if this drops on Normal Mode since 7.3.5. To be safe, you should run this instance in Heroic Mode if you're specifically targeting the mount. Please let us know if it drops for you on Normal!"
-							}),	
-							i( 37384),	-- Staff of Wayward Principles
-							i( 37377),	-- Netherbreath Spellblade
 							i( 37053),	-- Amulet of Deflected Blows
-							i( 37055),	-- Silken Amice of the Ymijar
-							i( 37057),	-- Dark Rider's Tunic
-							i( 37379),	-- Skadi's Iron Belt
 							i( 37389),	-- Crenelation Leggings
+							i( 37057),	-- Dark Rider's Tunic
 							i( 37056),	-- Harpooner's Striders
+							i( 37377),	-- Netherbreath Spellblade
+							i( 37055),	-- Silken Amice of the Ymijar
+							i( 37379),	-- Skadi's Iron Belt
 							i(157560), 	-- Skadi's Scaled Boots
+							i( 37384),	-- Staff of Wayward Principles							
 						})),
 						cr(26861, e(644, {	-- King Ymiron
 							i(37060),	-- Jeweled Coronation Sword
