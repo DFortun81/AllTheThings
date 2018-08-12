@@ -361,7 +361,7 @@ _.ExpansionFeatures =
 						i(163455), -- Honorbound Centurion's Legplates
 						i(163460), -- Honorbound Centurion's Greaves
 					},
-					["icon"] = "Interface\\Addons\\achievement_bg_abshutout",
+					["icon"] = "Interface\\Icons\\achievement_bg_abshutout",
 					["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
 				}),
 				n(-34, { -- World Quests
