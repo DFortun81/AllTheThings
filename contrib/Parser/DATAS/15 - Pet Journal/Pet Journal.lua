@@ -186,6 +186,7 @@ _.PetJournal =
 		p(2121), 	-- Fossorial Bile Larva
 		p(278),		-- Fox Kit
 		p(1542),	-- Frostwolf Pup
+		p(2432),	-- Fuzzy Creepling
 		p(475),		-- Giraffe Calf
 		p(571),		-- Grove Viper
 		p(1705),	-- Grumpy
@@ -233,6 +234,7 @@ _.PetJournal =
 		p(726),		-- Plains Monitor
 		un(3, p(124)),	-- Poley
 		p(1200),	-- Pygmy Direhorn
+		p(2437),	-- Ragepeep
 		p(399),		-- Rat Snake
 		p(431),		-- Rattlesnake
 		p(465),		-- Ravager Hatchling
@@ -246,6 +248,7 @@ _.PetJournal =
 		p(1749),	-- Rose Taipan
 		p(491),		-- Sand Kitten
 		p(1692),	-- Savage Cub
+		p(2436),	-- Scabby
 		p(528),		-- Scalded Basilisk Hatchling
 		p(414),		-- Scorpid
 		p(416),		-- Scorpling
@@ -501,6 +504,7 @@ _.PetJournal =
 		p(1304), 	-- Yu'la, Broodling of Yu'lon
 	}),	
 	pa(241, { 	-- Elemental
+		p(2433),	-- Aldrusian Sproutling
 		p(2093), 	-- Amalgam of Destruction
 		p(838),		-- Amethyst Shale Hatchling
 		p(212),		-- Ammen Vale Lashling
@@ -534,6 +538,7 @@ _.PetJournal =
 		p(1802),	-- Fetid Waveling
 		p(2127),	-- Flickering Argunite
 		p(1430),	-- Forest Sproutling
+		p(2440),	-- Fozling
 		p(253),		-- Frigid Frostling
 		p(1332),	-- Gooey Sha-ling
 		p(834),		-- Grinder
@@ -655,6 +660,7 @@ _.PetJournal =
 		p(1710),	-- Fledgling Oliveback
 		p(1716),	-- Fledgling Warden Owl
 		p(478),		-- Forest Moth
+		p(2438),	-- Foulfeather
 		p(1471),	-- Fruit Hunter
 		p(756),		-- Fungal Moth
 		p(753),		-- Garden Moth
@@ -722,6 +728,7 @@ _.PetJournal =
 		p(1326),	-- Skywisp Moth
 		p(1974),	-- Snowfeather Hatchling
 		p(69),		-- Snowy Owl
+		p(2441),	-- Squawkling
 		p(1546),	-- Stormwing
 		p(1570),	-- Sunfire Kaliri
 		p(402),		-- Swamp Moth
@@ -897,6 +904,7 @@ _.PetJournal =
 		un(10, p(242)),		-- Spectral Tiger Cub
 		p(1969),	-- Stardust
 		p(1478),	-- Syd the Squid
+		p(2435),	-- teeny Tiny Orb
 		p(251),		-- Toxic Wasteling
 		p(1920),	-- Trasmutant
 		p(1605),	-- Trunks
@@ -905,6 +913,7 @@ _.PetJournal =
 		p(1154),	-- Viscidus Globule
 		p(1244),	-- Viscous Horror
 		p(2130),	-- Void Shardling
+		p(2434),	-- Voidwiggle
 		un(20, p(157)),		-- Willy
 		p(1937),	-- Wondrous Wisdomball
 		un(6, p(1255)),	-- Zeradar

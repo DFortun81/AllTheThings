@@ -123,3 +123,9 @@ i(163589, 279474); -- Palehide Direhorn
 i(163042, 264058); -- Mighty Caravan Brutosaur
 i(161773, 237287); -- Alabaster Hyena
 i(161774, 275841); -- Expedition Bloodswarmer
+i(163644, 279569); -- Swift Ablino Raptor
+i(163645, 279611); -- Skullripper
+i(163706, 279868); -- Witherbark Direwing
+i(163646, 279608); -- Lil' Donkey
+i(163578, 279457); -- Broken Highland Mustang
+i(163579, 279456); -- Highland Mustang

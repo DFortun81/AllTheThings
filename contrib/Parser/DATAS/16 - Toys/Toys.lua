@@ -45,6 +45,7 @@ _.Toys =
 		i(119432), 		-- Botani Camouflage
 		i(134023),		-- Bottled Tornado
 		i(128223),		-- Bottomless Stygana Mushroom Brew
+		i(163713),		-- Brazier Cap
 		i(116113),		-- Breath of Talador
 		i(114227), 		-- Bubble Wand
 		i(134022), 		-- Burgy Blackheart's Handsome Hat
@@ -52,6 +53,7 @@ _.Toys =
 		i(102467),		-- Censer of Eternal Agony
 		i(89139),		-- Chain Pet Leash
 		i(86575), 		-- Chalice of Secrets
+		i(163744),		-- Coldrage's Cooler
 		i(140314),		-- Crab Shank
 		i(108633), 		-- Crashin' Thrashin' Cannon Controller
 		i(108634), 		-- Crashin' Thrashin' Mortar Controller
@@ -78,6 +80,7 @@ _.Toys =
 		}),
 		i(86581),		-- Farwater Conch
 		i(127652),		-- Felflame Campfire
+		i(163735),		-- Foulbelly
 		i(98136), 		-- Gastropod Shell
 		i(127659), 		-- Ghostly Iron Buccaneer's Hat
 		i(117569), 		-- Giant Deathweb Egg
@@ -97,6 +100,7 @@ _.Toys =
 		i(141299), 		-- Kaldorei Light Globe
 		i(86571),		-- Kang's Bindstone
 		i(116125), 		-- Klikixx's Webspinner
+		i(163750),		-- Kovork Kostume
 		i(88566), 		-- Krastinov's Bag of Horrors
 		i(140632, {		-- Lava Fountain -- only Shaman
 			["groups"] = {
@@ -106,9 +110,11 @@ _.Toys =
 		i(153194),  	-- Legion Communication Orb
 		i(140786),		-- Ley Spider Eggs
 		i(63269),		-- Loaded Gnomish Dice
+		i(163741),		-- Magic Fun Rock
 		i(164374), 		-- Magic Monkey Banana
 		i(131900),		-- Majestic Elderhorn Hoof
 		i(142536), 		-- Memory Cube
+		i(163775),		-- Molok Morion
 		i(113670),		-- Mournful Moan of Murmur
 		i(86568), 		-- Mr. Smite's Brass Compass
 		i(104262),		-- Odd Polished Stone
@@ -143,6 +149,7 @@ _.Toys =
 		}),
 		i(127669), 		-- Skull of the Mad Chief
 		i(119163),		-- Soul Inhaler
+		i(163736),		-- Spectral Visage
 		i(153124),  	-- Spire of Spite
 		i(118222), 		-- Spirit of Bashiok
 		i(113543), 		-- Spirit of Shinri
@@ -160,6 +167,7 @@ _.Toys =
 			},
 			["classes"] = {4},
 		}),
+		i(163738),		-- Syndicate Mask
 		i(116120),		-- Tasty Talador Lunch
 		i(127766),		-- The Perfect Blossom
 		i(130147), 		-- Thistleleaf Branch
@@ -181,6 +189,7 @@ _.Toys =
 		i(163924), 		-- Whiskerwax Candle
 		i(113542),		-- Whispers of Rai'Vosh
 		i(141306),		-- Wisp in a Bottle
+		i(163745),		-- Witherbark Gong
 		i(130214), 		-- Worn Doll
 		i(36862),		-- Worn Troll Dice
 		-- i(164371), 		-- Yaungol Oil Stove

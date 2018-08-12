@@ -105,6 +105,7 @@ _.Mounts =
 		i(43953),	-- Blue Drake
 		i(44151),	-- Blue Proto-Drake
 		i(21218),	-- Blue Qiraji Battle Tank
+		i(163578), 	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
 		i(147806),	-- Cloudwing Hippogryph
 		i(95059),	-- Clutch of Ji-Kun
@@ -134,6 +135,7 @@ _.Mounts =
 		i(63046),	-- Grey Riding Camel
 		i(87771),	-- Heavenly Onyx Cloud Serpent
 		i(137575),	-- Hellfire Infernal
+		i(163579),	-- Highland Mustang
 		i(147807),	-- Highmountain Elderhorn
 		i(50818),	-- Invincible
 		i(116660),	-- Ironhoof Destroyer
@@ -142,6 +144,7 @@ _.Mounts =
 		i(152844),	-- Lambent Mana Ray
 		i(143764),	-- Leywoven Flying Carpet
 		i(77069),	-- Life-Binder's Handmaiden
+		i(163646),	-- Lil' Donkey
 		i(138258),	-- Long-Forgotten Hippogryph
 		i(151623),	-- Lucid Nightmare Mount [Note: Drop's from Puzzler's Demise; a puzzle mount similar  to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
 		i(152814),	-- Maddened Chaorunner
@@ -164,6 +167,7 @@ _.Mounts =
 		i(152789),	-- Shackled Ur'zul
 		i(116663),	-- Shadowhide Pearltusk
 		i(159842),	-- Sharkbait's Favorite Crackers
+		i(163645),	-- Skullripper
 		i(94229),	-- Slate Primordial Direhorn
 		i(116786),	-- Smoky Direwolf
 		i(142552),	-- Smoldering Ember Wyrm
@@ -174,6 +178,7 @@ _.Mounts =
 		i(67151),	-- Subdued Seahorse
 		i(116792),	-- Sunhide Gronnling
 		i(163585),  -- Surf Jelly
+		i(163644),	-- Swift Albino Raptor
 		i(116773),	-- Swift Breezestrider
 		i(35513),	-- Swift White Hawkstrider
 		i(68824),	-- Swift Zulian Panther
@@ -192,6 +197,7 @@ _.Mounts =
 		i(121815),	-- Voidtalon of the Dark Star
 		i(116780),	-- Warsong Direfang
 		i(147804),	-- Wild Dreamrunner
+		i(163706),	-- Witherbark Direwing
 		i(21324),	-- Yellow Qiraji Battle Tank
 	}),
 	n(-36, { 	-- In-Game Shop

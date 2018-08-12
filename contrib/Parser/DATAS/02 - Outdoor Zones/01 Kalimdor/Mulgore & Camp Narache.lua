@@ -119,7 +119,8 @@ _.Zones =
 									i(3079),
 								}),
 							},
-							["ignoreSource"] = true
+							["ignoreSource"] = true,
+							["collectible"] = false,
 						}),
 					}),
 --[[					
@@ -179,7 +180,8 @@ _.Zones =
 									i(3079),
 								}),
 							},
-							["ignoreSource"] = true
+							["ignoreSource"] = true,
+							["collectible"] = false,
 						})
 					}),
 					n(5785, {	-- Sister Hatelash

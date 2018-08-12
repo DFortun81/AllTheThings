@@ -13,6 +13,7 @@ pet(136910, 1805);	-- Alarm-o-Bot
 pet(142448, 1984);	-- Albino Buzzard
 pet(119434, 1385); 	-- Albino Chimaeraling
 pet(44822, 74); 	-- Albino Snake
+pet(163650, 2433);	-- Aldrusian Sproutling
 pet(72042, 331); 	-- Alliance Balloon
 pet(139775, 1918); 	-- Alliance Enthusiast
 pet(106240, 1363);	-- Alterac Brandy (Alterac Brew-Pup)
@@ -30,7 +31,7 @@ pet(104156, 1323); 	-- Ashleaf Spriteling
 pet(128690, 1706); 	-- Ashmaw Cub
 pet(113569, 1429);	-- Autumnal Sproutling
 pet(118599, 1429);	-- Autumnal Sproutling
-pet(163555, 2439);  -- Azerite Puddle
+pet(163555, 2439);	-- Azerite Puddle
 pet(163515, 2429);	-- Azeriti
 pet(104157, 1321); 	-- Azure Crane Chick
 pet(34535, 57); 	-- Azure Whelpling
@@ -216,9 +217,11 @@ pet(136898, 1716); 	-- Fledgling Warden Owl
 pet(32498, 155); 	-- Fortune Coin (Lucky)
 pet(60955, 266); 	-- Fossilized Hatchling
 pet(153057, 2121);	-- Fossorial Bile Larva
+pet(163690, 2438);	-- Foulfeather
 pet(64403, 278); 	-- Fox Kit
 pet(90897, 278); 	-- Fox Kit
 pet(90898, 278); 	-- Fox Kit
+pet(163711, 2440);	-- Fozling
 pet(122107, 1625); 	-- Fragment of Anger
 pet(122109, 1627); 	-- Fragment of Desire
 pet(142094, 1963); 	-- Fragment of Frozen Bone (Boneshard)
@@ -230,6 +233,7 @@ pet(117380, 1530); 	-- Frostwolf Ghostpup
 pet(119141, 1542);	-- Frostwolf Pup
 pet(39286, 188);	-- Frosty's Collar (Frosty)
 pet(117564, 1471); 	-- Fruit Hunter
+pet(163648, 2432);	-- Fuzzy Creepling
 pet(97821, 1237); 	-- Gahz'rooki's Summoning Stone (Gahz'rooki)
 pet(152555, 2077);	-- Ghost Shark
 pet(39973, 190); 	-- Ghostly Skull
@@ -448,8 +452,9 @@ pet(142096, 1965); 	-- Putricide's Alchemy Supplies (Blightbreath)
 pet(94574, 1200); 	-- Pygmy Direhorn
 pet(130154, 1907); 	-- Pygmy Owl
 pet(97959, 1243); 	-- Quivering Blob (Living Fluid)
-pet(8497, 72); 		-- Rabbit Crate (Snowshoe) - (Snowshoe Rabbit)
+pet(8497, 72); 	-- Rabbit Crate (Snowshoe) - (Snowshoe Rabbit)
 pet(122125, 1636); 	-- Race MiniZep Controller (Race MiniZep)
+pet(163689, 2437);	-- Ragepeep
 pet(100905, 1256); 	-- Rascal-Bot
 pet(23015, 127); 	-- Rat Cage (Whiskers the Rat)
 pet(152968, 2080);	-- Rattlejaw
@@ -484,6 +489,7 @@ pet(82775, 846); 	-- Sapphire Cub
 pet(97551, 1229); 	-- Satyr Charm (Fiendish Imp)
 pet(163560, 2421);	-- Saurolisk Hatchling
 pet(128477, 1692);	-- Savage Cub
+pet(163684, 2436);	-- Scabby
 pet(34955, 172);	-- Scorched Stone (Searing Scorchling)
 pet(146953, 2042); 	-- Scraps
 pet(163797, 2445);	-- Scuttle
@@ -544,6 +550,7 @@ pet(97548, 1226); 	-- Spiky Collar (Lil' Bad Wolf)
 pet(104168, 1337); 	-- Spineclaw Crab
 pet(44794, 200); 	-- Spring Rabbit's Foot (Spring Rabbit)
 pet(11474, 87); 	-- Sprite Darter Egg (Sprite Darter Hatchling)
+pet(163712, 2441);	-- Squawkling
 pet(142100, 1969);	-- Stardust
 pet(138810, 1911); 	-- Sting Ray Pup
 pet(116402, 1515); 	-- Stonegrinder
@@ -565,6 +572,7 @@ pet(163817, 2473);	-- Sunscale Hatchling
 pet(104291, 1345); 	-- Swarmling of Gu'chi (Gu'chi Swarmling)
 pet(116064, 1478); 	-- Syd the Squid
 pet(97553, 1231); 	-- Tainted Core (Tainted Waveling)
+pet(163677, 2435);	-- Teeny Tiny Orb
 pet(44965, 204); 	-- Teldrassil Sproutling
 pet(112699, 1416); 	-- Teroclaw Hatchling
 pet(85220, 650); 	-- Terrible Turnip
@@ -626,6 +634,7 @@ pet(152977, 2088);	-- Vibrating Stone (Surger)
 pet(147541, 2037); 	-- Vilebrood Whelpling
 pet(93039, 1154); 	-- Viscidus Globule
 pet(122114, 1633); 	-- Void Collar (Chaos Pup)
+pet(163652, 2434);	-- Voidwiggle
 pet(69824, 310); 	-- Voodoo Figurine
 pet(163824, 2460);	-- Voru'kar Leecher
 pet(95621, 227); 	-- Warbot Ignition Key (Warbot)
