@@ -1059,7 +1059,7 @@ AllTheThings.Locales.enUS = {
 		[-225] = "Elemental Bonds",												-- Elemental Bonds
 		[-226] = TRANSMOG_SOURCE_4,												-- World Drop
 		[-227] = GetSpellInfo(109382),											-- Victory
-		[-228] = MINIMAP_TRACKING_FLIGHTMASTER,									-- Flight Master
+		[-228] = GetSpellInfo(218950),											-- Flight Path
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
