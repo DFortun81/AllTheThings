@@ -154,20 +154,38 @@ _.WorldEvents =
 						["maps"] = { 69 },	-- Feralas
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(-17, { -- Quests
 					a(n(110034, {	-- Historian Llore
 						a(q(43323)),	-- A Time To Reflect
 						a(q(43471)),	-- The Historians
 						a(q(47253)),	-- The Originals
-						un(31, i(147885)),	-- Bronze-Tinted Sunglasses
 					})),
 					h(n(110035, {	-- Historian Ju'pa
 						h(q(43461)),	-- A Time To Reflect
 						h(q(43472)),	-- The Historians
 						h(q(47254)),	-- The Originals
+					})),
+				}),
+				n(-2, {	-- Vendors
+					a(n(110034, {	-- Historian Llore
+						un(31, i(147885)),	-- Bronze-Tinted Sunglasses
+					})),
+					h(n(110035, {	-- Historian Ju'pa
 						un(31, i(147885)),	-- Bronze-Tinted Sunglasses
 					})),
 				}),
+			})),
+			un(36, ach(12827, { -- 14th Anniversary
+				["groups"] = {
+					n(-2, { -- Vendors
+						a(n(110034, {	-- Historian Llore
+							i(158149), -- Overrtuned Corgi Goggles
+						})),
+						h(n(110035, {	-- Historian Ju'pa
+							i(158149), -- Overrtuned Corgi Goggles
+						})),
+					}),
+				},
 			})),
 		},
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",

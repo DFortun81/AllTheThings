@@ -819,6 +819,19 @@ _.Zones =
 							["groups"] = {
 								i(163508), -- Butterfly in a Jar
 							},
+							["itemID"] = 163036, -- Polished Pet Charm
+						}),
+					},
+				}),
+				n(-34, { -- World Quests
+					["groups"] = {
+						n(-17, { -- Quests
+							q(50855, { -- Old R'gal
+								i(160509),	-- Echoes of Rezan
+							}),
+							q(50957, { -- Wrath of Rezan
+								i(160509),	-- Echoes of Rezan
+							}),
 						}),
 					},
 				}),

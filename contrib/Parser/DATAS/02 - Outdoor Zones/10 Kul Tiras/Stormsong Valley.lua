@@ -170,7 +170,10 @@ _.Zones =
 							}),	
 							["questID"] = 51959,	
 						}),		
-						n(141286, { -- Poacher Zane		
+						n(141286, { -- Poacher Zane	
+							["groups"] = {
+								i(163036), -- Polished Pet Charm
+							},
 							["questID"] = 52469,	
 						}),		
 						n(134884, { -- Ragna		
@@ -352,6 +355,21 @@ _.Zones =
 									["spellID"] = 256237,
 								}),	
 							},
+						}),
+						n(136674, { -- Madeline Netley <Stable Master>
+							["groups"] = {
+								i(163489), -- Abyssal Eel
+								i(163511), -- Barnacled Hermit Crab
+								i(163508), -- Butterfly in a Jar
+								i(163509), -- Freshwater Pincher
+								i(163512), -- Sandstinger Wasp
+								i(163560), -- Saurolisk Hatchling
+								i(163514), -- Violent Looking Flower Pot
+								i(163705), -- Imaginary Gun
+								i(163704), -- Tiny Mechanical Mouse
+								i(139003), -- Pocket Pet Portal
+							},
+							["itemID"] = 163036, -- Polished Pet Charm
 						}),
 						n(135800, { -- Sister Lilyana <Storm's Wake Emissary>
 							["groups"] = {

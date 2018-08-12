@@ -86,6 +86,7 @@ _.Toys =
 		i(118716), 		-- Goren Garb
 		i(119180), 		-- Goren "Log" Roller
 		i(86584),		-- Hardened Shell
+		i(163742),		-- Heartsbane Grimoire
 		i(86594), 		-- Helpful Wikky's Whistle
 		i(153182),  	-- Holy Lightsphere Toy
 		i(86593),		-- Hozen Beach Ball

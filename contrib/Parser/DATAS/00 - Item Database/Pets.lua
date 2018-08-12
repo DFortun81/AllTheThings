@@ -7,6 +7,7 @@ end
 
 pet(19450, 106); 	-- A Jubling's Tiny Home (Jubling)
 pet(129205, 1660); 	-- A Tiny Infernal Collar (Fel Pup)
+pet(163489, 2403);	-- Abyssal Eel
 pet(151828, 2072); 	-- Ageless Bronze Drake
 pet(136910, 1805);	-- Alarm-o-Bot
 pet(142448, 1984);	-- Albino Buzzard
@@ -40,6 +41,7 @@ pet(32588, 156); 	-- Banana Charm (Bananas)
 pet(90177, 903);	-- Baneling
 pet(147542, 2047); 	-- Ban-Fu, Cub of Ban-Lu
 pet(163799, 2456);	-- Barnaby
+pet(163511, 511);	-- Barnacled Hemit Crab
 pet(140934, 1934); 	-- Benax
 pet(10360, 75); 	-- Black Kingsnake
 pet(104158, 1322); 	-- Blackfuse Bombling
@@ -82,6 +84,7 @@ pet(163798, 2455);	-- Captain Nibs
 pet(29960, 146); 	-- Captured Firefly (Firefly)
 pet(23083, 128); 	-- Captured Flame (Spirit of Summer)
 pet(119149, 1430);	-- Captured Forest Sproutling (Forest Sproutling)
+pet(163514, 2428);	-- Carnivorous Lasher
 pet(8491, 42); 		-- Cat Carrier (Black Tabby) - (Black Tabby Cat)
 pet(8485, 40);	 	-- Cat Carrier (Bombay) - (Bombay Cat)
 pet(46398, 224); 	-- Cat Carrier (Calico) - (Calico Cat)
@@ -220,6 +223,7 @@ pet(122107, 1625); 	-- Fragment of Anger
 pet(122109, 1627); 	-- Fragment of Desire
 pet(142094, 1963); 	-- Fragment of Frozen Bone (Boneshard)
 pet(122108, 1626); 	-- Fragment of Suffering
+pet(163509, 2423);	-- Freshwater Pincher
 pet(116403, 1516); 	-- Frightened Bush Chicken (Bush Chicken)
 pet(147540, 2036); 	-- Frostbrood Whelpling
 pet(117380, 1530); 	-- Frostwolf Ghostpup
@@ -475,8 +479,10 @@ pet(63355, 271);	-- Rustberg Gull (Alliance)
 pet(64996, 271);	-- Rustberg Gull (Horde)
 pet(72153, 665);	-- Sand Scarab
 pet(163808, 2463);	-- Sandshell Chitterer
+pet(163512, 2426);	-- Sandstinger Wasp
 pet(82775, 846); 	-- Sapphire Cub
 pet(97551, 1229); 	-- Satyr Charm (Fiendish Imp)
+pet(163560, 2421);	-- Saurolisk Hatchling
 pet(128477, 1692);	-- Savage Cub
 pet(34955, 172);	-- Scorched Stone (Searing Scorchling)
 pet(146953, 2042); 	-- Scraps

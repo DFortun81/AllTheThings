@@ -318,6 +318,7 @@ _.Zones =
 								i(161773),	-- Reins of the Alabaster Hyena
 								i(163211),	-- Akunda's Firesticks
 								i(159753),	-- Desert Flute
+								-- i(163565),	-- Vulpera Scrapper's Armor [Was in beta, not there on 8/12/18]
 								i(161531),	-- Akunda's Grounding Boots
 								i(161489),	-- Alpaca Wool Gloves
 								i(161527),	-- Bracers of Zem'lan

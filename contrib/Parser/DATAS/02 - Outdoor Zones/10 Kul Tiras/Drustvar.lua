@@ -462,6 +462,10 @@ _.Zones =
 				}),
 				n(0, { -- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+						i(163603, { -- Lucille's Handkerchief
+							["description"] = "After completing the quest \"One Last Quest\" you can return back to the house, go upstairs and it will be in the closet to loot.",
+							["sourceQuests"] = { 50763 }, -- One Last Request
+						}),
 						--i(154867), -- NYI
 						--i(154870), -- NYI
 						i(154848), -- Heartsbane Greatcloak

@@ -49,6 +49,10 @@ _.Instances =
 							}),
 							e(2127, { -- Raal the Gluttonous
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+									i(163833, { -- Recipe: Heartsbane Hexwurst
+										["recipeID"] = 280282,
+										["spellID"] = 280282,
+									}),
 									i(159660), -- Servant Splitter
 									i(159294), -- Raal's Bib
 									i(159397), -- Slaughterhouse-Chain Bracers
@@ -134,6 +138,10 @@ _.Instances =
 							}),
 							e(2127, { -- Raal the Gluttonous
 								["groups"] = {
+									i(163833, { -- Recipe: Heartsbane Hexwurst
+										["recipeID"] = 280282,
+										["spellID"] = 280282,
+									}),
 									i(159660), -- Servant Splitter
 									i(159294), -- Raal's Bib
 									i(159397), -- Slaughterhouse-Chain Bracers
@@ -228,6 +236,10 @@ _.Instances =
 							}),
 							e(2127, { -- Raal the Gluttonous
 								["groups"] = {
+									i(163833, { -- Recipe: Heartsbane Hexwurst
+										["recipeID"] = 280282,
+										["spellID"] = 280282,
+									}),
 									i(159660), -- Servant Splitter
 									i(159294), -- Raal's Bib
 									i(159397), -- Slaughterhouse-Chain Bracers

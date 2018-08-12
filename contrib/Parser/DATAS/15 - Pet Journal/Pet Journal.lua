@@ -4,7 +4,9 @@
 _.PetJournal = 
 {
 	pa(240, { 	-- Aquatic
+		p(2403),	-- Abyssal Eel
 		p(836), 	-- Aqua Strider
+		p(2425),	-- Barnacled Hermit Crab
 		p(1934), 	-- Benax
 		p(649), 	-- Biletoad
 		p(1753), 	-- Bleakwater Jelly
@@ -19,6 +21,7 @@ _.PetJournal =
 		p(383), 	-- Eternal Strider
 		p(1581), 	-- Fen Crab
 		p(847), 	-- Fishy
+		p(2423),	-- Freshwater Pincher
 		p(495), 	-- Frog
 		p(1578), 	-- Frostshell Pincher
 		p(1237), 	-- Gahz'rooki
@@ -478,6 +481,7 @@ _.PetJournal =
 		p(2465),	-- Playful Frostkin
 		p(196),		-- Proto-Drake Whelp
 		p(143),		-- Red Dragonhawk Hatchling
+		p(2421),	-- Saurolisk Hatchling
 		p(144),		-- Silver Dragonhawk Hatchling
 		un(35, p(347)),		-- Soul of the Aspects
 		p(489),		-- Spawn of Onyxia
@@ -508,6 +512,7 @@ _.PetJournal =
 		un(35, p(1248)),	-- Blossoming Ancient
 		p(2082), 	-- Bound Stream
 		p(1777),	-- Broot
+		p(2428),	-- Carnivorous Lasher
 		un(35, p(1117)),	-- Cinder Kitten
 		p(2087), 	-- Cinderweb Recluse
 		p(244),		-- Core Hound Pup
@@ -697,6 +702,7 @@ _.PetJournal =
 		p(1587),	-- Royal Moth
 		p(1411),	-- Royal Peachick
 		p(271),		-- Rustberg Gull
+		p(2426),	-- Sasdstinger Wasp
 		p(573),		-- Sandy Petrel
 		p(1592),	-- Sapphire Firefly
 		p(560),		-- Sea Gull
