@@ -539,7 +539,7 @@ _.Mounts =
 		i(116664),		-- Dusky Rockhide
 		i(25472),		-- Ebon Gryphon
 		i(8588),		-- Emerald Raptor
-		i(161774),		-- Reins of the Expedition Bloodswarmer
+		i(161774),		-- Expedition Bloodswarmer
 		i(45590),		-- Exodar Elekk
 		i(45597),		-- Forsaken Warhorse
 		i(19029),		-- Frostwolf Howler
