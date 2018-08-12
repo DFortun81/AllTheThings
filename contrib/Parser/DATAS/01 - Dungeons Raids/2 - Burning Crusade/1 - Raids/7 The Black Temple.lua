@@ -38,7 +38,7 @@ _.Instances =
 						i(32737),	-- Plans: Swiftsteel Shoulders (BT ONLY)
 					}),
 					n(-2, {	-- Vendors
-						model(21345, n(23159, {	-- Okuno
+						n(23159, {		-- Okuno <Ashtongue Deathsworn Quartermaster>
 							i(32429),	-- Pattern: Boots of Shackled Souls
 							i(32430),	-- Pattern: Bracers of Shackled Souls
 							i(32431),	-- Pattern: Greaves of Shackled Souls
@@ -56,7 +56,7 @@ _.Instances =
 							i(32444),	-- Plans: Shadesteel Girdle
 							i(32443),	-- Plans: Shadesteel Greaves
 							i(32441),	-- Plans: Shadesteel Sabots
-						})),
+						}),
 					}),
 					d(14, {	-- Normal	
 						["groups"] = {

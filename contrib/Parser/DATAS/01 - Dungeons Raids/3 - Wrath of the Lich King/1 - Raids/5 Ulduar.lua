@@ -97,6 +97,8 @@ _.Instances =
 							["g"] = {
 								i(45100), -- Pattern: Belt of Arctic Life
 								i(45094), -- Pattern: Belt of Dragons
+								i(45101), -- Pattern: Boots of Wintry Endurance
+								i(45096), -- Pattern: Blue Belt of Chaos
 								i(45089), -- Plans: Battlelord's Plate Boots
 								i(45088), -- Plans: Belt of the Titans
 								i(45092), -- Plans: Indestructible Plate Girdle

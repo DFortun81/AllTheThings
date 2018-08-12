@@ -644,6 +644,12 @@ _.Instances =
 									i(78882),	-- Nightblind Cinch
 									i(72006),	-- Pattern: Bladeshadow Leggings
 									i(72010),	-- Pattern: Bladeshadow Wristguards
+									i(72008, {    -- Pattern: Bracers of Flowing Serenity
+										["crs"] = {
+											57877,    -- Flail of Go'rath
+											57388,    -- Shadowed Globule <Blood of Shu'ma>
+										},
+									}),
 									i(72008),	-- Pattern: Bracers of Flowing Serenity
 									i(72011),	-- Pattern: Bracers of the Hunter-Killer
 									i(72004),	-- Pattern: Bracers of Unconquered Power
