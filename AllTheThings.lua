@@ -3603,7 +3603,6 @@ end
 					if not GetDataSubMember("FlightPaths", nodeID) then
 						SetDataSubMember("FlightPaths", nodeID, 1);
 						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
-						print("FlightPaths", nodeID);
 						cacheNewNodeData(nodeID);
 					end
 				end
