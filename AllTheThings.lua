@@ -3536,11 +3536,6 @@ end
 			end
 		end
 		-- SetDataMember("CrieveIsAwesome", cachedNodeData);
-		--[[
-		for key,value in pairs(cachedNodeData) do
-			print(key, value.name, value.state);
-		end
-		]]--
 	end
 	app.CacheFlightPathDataForCurrentNode = function()
 		local allNodeData = C_TaxiMap.GetAllTaxiNodes();
@@ -3550,9 +3545,6 @@ end
 				if not node then
 					node = {};
 					cachedNodeData[nodeData.nodeID] = node;
-				end
-				for key,value in pairs(nodeData) do
-					print(key, ": ", value);
 				end
 				if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
 				if nodeData.name then node["text"] = nodeData.name; end
