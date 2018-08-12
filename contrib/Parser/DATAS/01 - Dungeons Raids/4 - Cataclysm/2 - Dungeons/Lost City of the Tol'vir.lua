@@ -4,82 +4,70 @@
 
 _.Instances = 
 {
-	{ -- Cataclysm
+	{	-- Cataclysm
 		["groups"] = {
-			inst(69, { 	-- Lost City of the Tol'vir
+			inst(69, {	-- Lost City of the Tol'vir
 				["groups"] = {
 					n(-17, {	-- Quests
-						n(50038,  { -- Captain Hadan
-							qg(50038, q(28781, { -- Targets of Opportunity
-								i(66905), -- Clandestine Spaulders
-								i(66906), -- Bracers of the Lost City
-								i(66907), -- Captain Hadan's Pauldrons
+						n(50038,  {	-- Captain Hadan
+							qg(50038, q(28781, {	-- Targets of Opportunity
+								i(66905),	-- Clandestine Spaulders
+								i(66906),	-- Bracers of the Lost City
+								i(66907),	-- Captain Hadan's Pauldrons
 							})),
-							qg(50038, q(28783, { -- The Source of Their Power
-								i(66910), -- Blight-Lifter's Mantle
-								i(66908), -- Treads of the Neferset
-								i(66909), -- Ramkahen Front Boots
+							qg(50038, q(28783, {	-- The Source of Their Power
+								i(66910),	-- Blight-Lifter's Mantle
+								i(66908),	-- Treads of the Neferset
+								i(66909),	-- Ramkahen Front Boots
 							})),
 						}),
 					}),
-					d(  1, {	-- Normal
-						n(0, {	-- Zone Drop
-							n(45007, {	-- Enslaved Bandit
-								dr(0.6, i(55882)),	-- Oasis Bracers
+					d(1,   {	-- Normal
+						n(0, {		-- Zone Drop
+							i(55884, {	-- Mirage Ring
+								["crs"] = {
+									45007,	-- Enslaved Bandit
+									45001,	-- Enslaved Bandit
+									44982,	-- Neferset Darkcaster
+									44976,	-- Neferset Plaguebringer
+									44980,	-- Neferset Theurgist
+									44977,	-- Neferset Torturer
+									44922,	-- Oathsworn Axemaster
+									45122,	-- Oathsworn Captain
+									44924,	-- Oathsworn Myrmidon
+									44932,	-- Oathsworn Pathfinder
+									45062,	-- Oathsworn Scorpid Keeper
+									44981,	-- Oathsworn Skinner
+									45097,	-- Oathsworn Tamer
+									44926,	-- Oathsworn Wanderer
+									44896,	-- Pygmy Brute
+									44898,	-- Pygmy Firebreather
+									44897,	-- Pygmy Scout
+								},
 							}),
-							n(45001, {	-- Enslaved Bandit
-								dr(.01, i(55882)),	-- Oasis Bracers
-							}),
-							n(44982, {	-- Neferset Darkcaster
-								dr(1.1, i(55882)),	-- Oasis Bracers
-							}),
-							n(44976, {	-- Neferset Plaguebringer
-								dr(0.9, i(55882)),	-- Oasis Bracers
-							}),
-							n(44980, {	-- Neferset Theurgist
-								dr(1.0, i(55882)),	-- Oasis Bracers
-							}),
-							n(44977, {	-- Neferset Torturer
-								dr(0.9, i(55882)),	-- Oasis Bracers
-							}),
-							n(44922, {	-- Oathsworn Axemaster
-								dr(1.0, i(55882)),	-- Oasis Bracers
-							}),
-							n(45122, {	-- Oathsworn Captain
-								dr(1.1, i(55882)),	-- Oasis Bracers
-							}),
-							n(44924, {	-- Oathsworn Myrmidon
-								dr(1.0, i(55882)),	-- Oasis Bracers
-							}),
-							n(44932, {	-- Oathsworn Pathfinder
-								dr(0.9, i(55882)),	-- Oasis Bracers
-							}),
-							n(45062, {	-- Oathsworn Scorpid Keeper
-								dr(0.9, i(55882)),	-- Oasis Bracers
-							}),
-							n(44981, {	-- Oathsworn Skinner
-								dr(1.0, i(55882)),	-- Oasis Bracers
-							}),
-							n(45097, {	-- Oathsworn Tamer
-								dr(0.5, i(55882)),	-- Oasis Bracers
-							}),
-							n(44926, {	-- Oathsworn Wanderer
-								dr(0.9, i(55882)),	-- Oasis Bracers
-							}),
-							n(44896, {	-- Pygmy Brute
-								dr(1.0, i(55882)),	-- Oasis Bracers
-							}),
-							n(44898, {	-- Pygmy Firebreather
-								dr(1.0, i(55882)),	-- Oasis Bracers
-							}),
-							n(44897, {	-- Pygmy Scout
-								dr(1.1, i(55882)),	-- Oasis Bracers
-							}),
-							n(47725, {	-- Tol'vir Merchant
-								dr(0.5, i(55882)),	-- Oasis Bracers
+							i(55882, {	-- Oasis Bracers
+								["crs"] = {
+									45007,	-- Enslaved Bandit
+									45001,	-- Enslaved Bandit
+									44982,	-- Neferset Darkcaster
+									44976,	-- Neferset Plaguebringer
+									44980,	-- Neferset Theurgist
+									44977,	-- Neferset Torturer
+									44922,	-- Oathsworn Axemaster
+									45122,	-- Oathsworn Captain
+									44924,	-- Oathsworn Myrmidon
+									44932,	-- Oathsworn Pathfinder
+									45062,	-- Oathsworn Scorpid Keeper
+									44981,	-- Oathsworn Skinner
+									45097,	-- Oathsworn Tamer
+									44926,	-- Oathsworn Wanderer
+									44896,	-- Pygmy Brute
+									44898,	-- Pygmy Firebreather
+									44897,	-- Pygmy Scout
+								},
 							}),
 						}),
-						cr(44577, e(117, { -- General Husam
+						cr(44577, e(117, {	-- General Husam
 							i( 56382),	-- Siliza's Spear
 							i(157600),	-- Necklace of Rumbling Earth
 							i( 56379),	-- Kaleti Cloak
@@ -93,7 +81,7 @@ _.Instances =
 								un(2, i(55856)),	-- Greaves of Wu the Elder (7.3.5 - Removed from Game!)
 							}),	
 						})),
-						cr(43614, e(118, { -- Lockmaw
+						cr(43614, e(118, {	-- Lockmaw
 							i(56384),	-- Resonant Kris (7.3.5 - Moved from High Prophet Barim)
 							i(56385),	-- Tauntka's Necklace
 							i(56386),	-- Balkar's Waders (7.3.5 - Moved from High Prophet Barim)
@@ -105,10 +93,10 @@ _.Instances =
 								un(2, i(55867)),	-- Sand Dune Belt (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
 							}),
 						})),
-						cr(43612, e(119, { -- High Prophet Barim
-						 -- i(56384),	-- Resonant Kris (7.3.5 - Moved to Lockmaw)
-						 -- i(56386),	-- Balkar's Waders (7.3.5 - Moved to Lockmaw)
-						 -- i(56387),	-- Greaves of Wu the Younger (7.3.5 - Moved to Lockmaw)
+						cr(43612, e(119, {	-- High Prophet Barim
+							-- i(56384),	-- Resonant Kris (7.3.5 - Moved to Lockmaw)
+							-- i(56386),	-- Balkar's Waders (7.3.5 - Moved to Lockmaw)
+							-- i(56387),	-- Greaves of Wu the Younger (7.3.5 - Moved to Lockmaw)
 							i(56390),	-- Barim's Main Gauche (7.3.5 - Moved from Lockmaw/Augh!)
 							i(56389),	-- Sand Silk Wristband (7.3.5 - Moved from Lockmaw/Augh!)
 							i(56392),	-- Sand Dune Belt (7.3.5 - Moved from Lockmaw/Augh!)
@@ -120,7 +108,7 @@ _.Instances =
 								un(2, i(55862)),	-- Greaves of Wu the Younger (7.3.5 - Removed from Game And Moved to Lockmaw!)
 							}),	
 						})),
-						cr(44819, e(122, { -- Siamat
+						cr(44819, e(122, {	-- Siamat
 							i( 56396),	-- Hammer of Sparks
 							i(157599),	-- Sceptre of  Swirling Winds
 							i( 56402),	-- Zora's Ward
@@ -143,67 +131,55 @@ _.Instances =
 							}),	
 						})),
 					}),
-					d(  2, {	-- Heroic
+					d(2,   {	-- Heroic
 						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
 							n(0, {	-- Zone Drop
-								n(45007, {	-- Enslaved Bandit
-									dr(0.6, i(55882)),	-- Oasis Bracers
+								i(55884, {	-- Mirage Ring
+									["crs"] = {
+										45007,	-- Enslaved Bandit
+										45001,	-- Enslaved Bandit
+										44982,	-- Neferset Darkcaster
+										44976,	-- Neferset Plaguebringer
+										44980,	-- Neferset Theurgist
+										44977,	-- Neferset Torturer
+										44922,	-- Oathsworn Axemaster
+										45122,	-- Oathsworn Captain
+										44924,	-- Oathsworn Myrmidon
+										44932,	-- Oathsworn Pathfinder
+										45062,	-- Oathsworn Scorpid Keeper
+										44981,	-- Oathsworn Skinner
+										45097,	-- Oathsworn Tamer
+										44926,	-- Oathsworn Wanderer
+										44896,	-- Pygmy Brute
+										44898,	-- Pygmy Firebreather
+										44897,	-- Pygmy Scout
+									},
 								}),
-								n(45001, {	-- Enslaved Bandit
-									dr(.01, i(55882)),	-- Oasis Bracers
-								}),
-								n(44982, {	-- Neferset Darkcaster
-									dr(1.1, i(55882)),	-- Oasis Bracers
-								}),
-								n(44976, {	-- Neferset Plaguebringer
-									dr(0.9, i(55882)),	-- Oasis Bracers
-								}),
-								n(44980, {	-- Neferset Theurgist
-									dr(1.0, i(55882)),	-- Oasis Bracers
-								}),
-								n(44977, {	-- Neferset Torturer
-									dr(0.9, i(55882)),	-- Oasis Bracers
-								}),
-								n(44922, {	-- Oathsworn Axemaster
-									dr(1.0, i(55882)),	-- Oasis Bracers
-								}),
-								n(45122, {	-- Oathsworn Captain
-									dr(1.1, i(55882)),	-- Oasis Bracers
-								}),
-								n(44924, {	-- Oathsworn Myrmidon
-									dr(1.0, i(55882)),	-- Oasis Bracers
-								}),
-								n(44932, {	-- Oathsworn Pathfinder
-									dr(0.9, i(55882)),	-- Oasis Bracers
-								}),
-								n(45062, {	-- Oathsworn Scorpid Keeper
-									dr(0.9, i(55882)),	-- Oasis Bracers
-								}),
-								n(44981, {	-- Oathsworn Skinner
-									dr(1.0, i(55882)),	-- Oasis Bracers
-								}),
-								n(45097, {	-- Oathsworn Tamer
-									dr(0.5, i(55882)),	-- Oasis Bracers
-								}),
-								n(44926, {	-- Oathsworn Wanderer
-									dr(0.9, i(55882)),	-- Oasis Bracers
-								}),
-								n(44896, {	-- Pygmy Brute
-									dr(1.0, i(55882)),	-- Oasis Bracers
-								}),
-								n(44898, {	-- Pygmy Firebreather
-									dr(1.0, i(55882)),	-- Oasis Bracers
-								}),
-								n(44897, {	-- Pygmy Scout
-									dr(1.1, i(55882)),	-- Oasis Bracers
-								}),
-								n(47725, {	-- Tol'vir Merchant
-									dr(0.5, i(55882)),	-- Oasis Bracers
+								i(55882, {	-- Oasis Bracers
+									["crs"] = {
+										45007,	-- Enslaved Bandit
+										45001,	-- Enslaved Bandit
+										44982,	-- Neferset Darkcaster
+										44976,	-- Neferset Plaguebringer
+										44980,	-- Neferset Theurgist
+										44977,	-- Neferset Torturer
+										44922,	-- Oathsworn Axemaster
+										45122,	-- Oathsworn Captain
+										44924,	-- Oathsworn Myrmidon
+										44932,	-- Oathsworn Pathfinder
+										45062,	-- Oathsworn Scorpid Keeper
+										44981,	-- Oathsworn Skinner
+										45097,	-- Oathsworn Tamer
+										44926,	-- Oathsworn Wanderer
+										44896,	-- Pygmy Brute
+										44898,	-- Pygmy Firebreather
+										44897,	-- Pygmy Scout
+									},
 								}),
 							}),
-							cr(44577, e(117, { -- General Husam
+							cr(44577, e(117, {	-- General Husam
 								i( 56382),	-- Siliza's Spear
 								i(157600),	-- Necklace of Rumbling Earth
 								i( 56379),	-- Kaleti Cloak
@@ -211,11 +187,11 @@ _.Instances =
 								i( 56381),	-- Greaves of Wu the Elder
 								i( 56380),	-- Spirit Creeper Ring
 							})),
-							cr(43614, e(118, { -- Lockmaw
-								n(49045, { -- Augh
-								 -- i(56390),	-- Barim's Main Gauche (7.3.5 - Moved to High Prophet Barim!)
-								 -- i(56389),	-- Sand Silk Wristband (7.3.5 - Moved to High Prophet Barim!)
-								 -- i(56392),	-- Sand Dune Belt (7.3.5 - Moved to High Prophet Barim!)
+							cr(43614, e(118, {	-- Lockmaw
+								n(49045, {	-- Augh
+									-- i(56390),	-- Barim's Main Gauche (7.3.5 - Moved to High Prophet Barim!)
+									-- i(56389),	-- Sand Silk Wristband (7.3.5 - Moved to High Prophet Barim!)
+									-- i(56392),	-- Sand Dune Belt (7.3.5 - Moved to High Prophet Barim!)
 									i(56384),	-- Resonant Kris (7.3.5 - Moved from High Prophet Barim)
 									i(56385),	-- Tauntka's Necklace
 									i(56386),	-- Balkar's Waders (7.3.5 - Moved from High Prophet Barim)
@@ -223,17 +199,17 @@ _.Instances =
 									i(56388),	-- Ring of the Darkest Day
 								}),
 							})),
-							cr(43612, e(119, { -- High Prophet Barim
-							 -- i(56384),	-- Resonant Kris (7.3.5 - Moved to Lockmaw)
-							 -- i(56386),	-- Balkar's Waders (7.3.5 - Moved to Lockmaw)
-							 -- i(56387),	-- Greaves of Wu the Younger (7.3.5 - Moved to Lockmaw)
+							cr(43612, e(119, {	-- High Prophet Barim
+								-- i(56384),	-- Resonant Kris (7.3.5 - Moved to Lockmaw)
+								-- i(56386),	-- Balkar's Waders (7.3.5 - Moved to Lockmaw)
+								-- i(56387),	-- Greaves of Wu the Younger (7.3.5 - Moved to Lockmaw)
 								i(56390),	-- Barim's Main Gauche (7.3.5 - Moved from Lockmaw/Augh!)
 								i(56389),	-- Sand Silk Wristband (7.3.5 - Moved from Lockmaw/Augh!)
 								i(56392),	-- Sand Dune Belt (7.3.5 - Moved from Lockmaw/Augh!)
 								i(56391),	-- Veneficial Band
 								i(56393),	-- Heart of Solace
 							})),
-							cr(44819, e(122, { -- Siamat
+							cr(44819, e(122, {	-- Siamat
 								i( 56396),	-- Hammer of Sparks
 								i(157599),	-- Sceptre of  Swirling Winds
 								i( 56402),	-- Zora's Ward
@@ -248,10 +224,10 @@ _.Instances =
 							})),
 						},
 					}),
-					d( 24, {	-- Timewalking
+					d(24,  {	-- Timewalking
 						["lvl"] = 80,
 						["groups"] = {
-							cr(44577, e(117, { -- General Husam
+							cr(44577, e(117, {	-- General Husam
 								i(133257),	-- Saliza's Spear
 								i(133373),	-- Necklace of Rumbling Earth
 								i(133254),	-- Kaleki Cloak
@@ -259,7 +235,7 @@ _.Instances =
 								i(133256),	-- Greaves of Wu the Elder
 								i(133255),	-- Spirit Creeper Ring
 							})),
-							cr(43614, e(118, { -- Lockmaw
+							cr(43614, e(118, {	-- Lockmaw
 								i(133259),	-- Resonant Kris
 								i(133260),	-- Tauntka's Necklace
 								i(133280),	-- Oasis Bracers
@@ -269,7 +245,7 @@ _.Instances =
 								i(133263),	-- Ring of the Darkest Day
 								i(133281),	-- Impetuous Query
 							})),
-							cr(43612, e(119, { -- High Prophet Barim
+							cr(43612, e(119, {	-- High Prophet Barim
 								i(133265),	-- Barin's Main Gauche
 								i(133277),	-- Zora's Ward
 								i(133264),	-- Sand Silk Wristband
@@ -279,7 +255,7 @@ _.Instances =
 								i(133266),	-- Veneficial Band
 								i(133268),	-- Heart of Solace
 							})),
-							cr(44819, e(122, { -- Siamat
+							cr(44819, e(122, {	-- Siamat
 								i(133271),	-- Hammer of Sparks
 								i(133376),	-- Hammer of Swirling Winds
 								i(133274),	-- Mantle of Master Cho
