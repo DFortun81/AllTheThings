@@ -416,8 +416,9 @@ app.GetTempDataSubMember = GetTempDataSubMember;
 		if not cache or invalidate then
 			cache = {};
 			SetTempDataMember("PROFESSION_CACHE", cache);
-			for i,j in ipairs({GetProfessions()}) do
-				cache[app.GetBaseTradeSkillID(select(7, GetProfessionInfo(j)))] = true;
+			local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
+			for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
+				if j ~= 0 then cache[app.GetBaseTradeSkillID(select(7, GetProfessionInfo(j)))] = true; end
 			end
 		end
 		return cache;
