@@ -1057,6 +1057,7 @@ AllTheThings.Locales.enUS = {
 		[-224] = "Illidari",													-- Illidari
 		[-225] = "Elemental Bonds",												-- Elemental Bonds
 		[-226] = TRANSMOG_SOURCE_4,												-- World Drop
+		[-227] = GetSpellInfo(109382),											-- Victory
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
