@@ -1096,6 +1096,7 @@ local fieldCache = {};
 fieldCache["currencyID"] = {};
 fieldCache["creatureID"] = {};
 fieldCache["encounterID"] = {};
+fieldCache["flightPathID"] = {};
 fieldCache["objectID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["mapID"] = {};
@@ -1150,6 +1151,7 @@ local function CacheFields(group)
 	CacheArrayFieldIDs(group, "creatureID", "crs");
 	CacheArrayFieldIDs(group, "creatureID", "qgs");
 	CacheFieldID(group, "encounterID");
+	CacheFieldID(group, "flightPathID");
 	CacheFieldID(group, "objectID");
 	CacheFieldID(group, "itemID");
 	CacheFieldID(group, "questID");
@@ -3519,6 +3521,48 @@ end
 		118,	-- Icecrown (All of Northrend)
 	};
 	local cachedNodeData = {};
+	local cacheNewNodeData = function(nodeID)
+		-- Search ATT for the related sources.
+		local searchResults = SearchForField("flightPathID", nodeID);
+		if searchResults and #searchResults > 0 then
+			-- Attempt to cleanly refresh the data.
+			local fresh = false;
+			
+			-- Mark all results as marked. This prevents a double +1 on parents.
+			for i,result in ipairs(searchResults) do
+				if result.visible and result.parent and result.parent.total then
+					result.marked = true;
+				end
+			end
+			
+			-- Only unmark and +1 marked search results.
+			for i,result in ipairs(searchResults) do
+				if result.marked then
+					result.marked = nil;
+					if result.total then
+						-- This is an item that has a relative set of groups
+						app.UpdateParentProgress(result);
+						
+						-- If this is NOT a group...
+						if not result.g then
+							-- If we've collected the item, use the "Show Collected Items" filter.
+							result.visible = app.CollectedItemVisibilityFilter(result);
+						end
+					else	
+						app.UpdateParentProgress(result.parent);
+						
+						-- If we've collected the item, use the "Show Collected Items" filter.
+						result.visible = app.CollectedItemVisibilityFilter(result);
+					end
+					fresh = true;
+				end
+			end
+			
+			-- If the data is fresh, don't force a refresh.
+			app:RefreshData(fresh, true, true);
+		end
+		
+	end
 	app.CacheFlightPathData = function()
 		for i,mapID in ipairs(arrOfNodes) do
 			local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
@@ -3540,6 +3584,7 @@ end
 	app.CacheFlightPathDataForCurrentNode = function()
 		local allNodeData = C_TaxiMap.GetAllTaxiNodes();
 		if allNodeData then
+			local knownNodeIDs = {};
 			for j,nodeData in ipairs(allNodeData) do
 				local node = cachedNodeData[nodeData.nodeID];
 				if not node then
@@ -3548,9 +3593,31 @@ end
 				end
 				if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
 				if nodeData.name then node["text"] = nodeData.name; end
-				if nodeData.state then node["state"] = nodeData.state; end
+				if nodeData.state and nodeData.state < 2 then
+					table.insert(knownNodeIDs, nodeData.nodeID);
+				end
+			end
+			
+			if GetDataMember("FlightPathsAccountWide") then
+				for i,nodeID in ipairs(knownNodeIDs) do
+					if not GetDataSubMember("FlightPaths", nodeID) then
+						SetDataSubMember("FlightPaths", nodeID, 1);
+						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
+						print("FlightPaths", nodeID);
+						cacheNewNodeData(nodeID);
+					end
+				end
+			else
+				for i,nodeID in ipairs(knownNodeIDs) do
+					if not GetPersonalDataSubMember("FlightPaths", nodeID) then
+						SetDataSubMember("FlightPaths", nodeID, 1);
+						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
+						cacheNewNodeData(nodeID);
+					end
+				end
 			end
 		end
+		--app:RefreshData();
 	end
 	app:RegisterEvent("TAXIMAP_OPENED");
 	app.events.TAXIMAP_OPENED = app.CacheFlightPathDataForCurrentNode;
@@ -3561,14 +3628,10 @@ end
 			elseif key == "collectible" then
 				return GetDataMember("FlightPathsCollectible", true);
 			elseif key == "collected" then
-				if GetPersonalDataSubMember("FlightPaths", t.flightPathID) then
-					return true;
+				if GetDataMember("FlightPathsAccountWide")then
+					return GetDataSubMember("FlightPaths", t.flightPathID);
 				end
-				local info = t.info;
-				if info and info.state and info.state < 2 then
-					SetPersonalDataSubMember("FlightPaths", t.flightPathID, 1);
-					return true;
-				end
+				return GetPersonalDataSubMember("FlightPaths", t.flightPathID);
 			elseif key == "text" then
 				local info = t.info;
 				return info and info.text;
@@ -5327,6 +5390,7 @@ local function UpdateParentProgress(group)
 	end
 end
 app.UpdateGroups = UpdateGroups;
+app.UpdateParentProgress = UpdateParentProgress;
 
 -- Helper Methods
 -- The following Helper Methods are used when you obtain a new appearance.
