@@ -3635,13 +3635,22 @@ end
 			elseif key == "text" then
 				local info = t.info;
 				return info and info.text;
+			elseif key == "nmr" then
+				local info = t.info;
+				if info and info.faction then
+					if info.faction == 2 then
+						return app.Faction == "Horde";
+					elseif info.faction == 1 then
+						return app.Faction == "Alliance";
+					end
+				end
 			elseif key == "info" then
 				return cachedNodeData[t.flightPathID];
 			elseif key == "description" then
 				return "Flight paths are cached when you look at the flight master on each continent.\n\nHave fun!\n - Crieve (with love)";
 			elseif key == "icon" then
 				local info = t.info;
-				if info and info.faction == 2 then
+				if info and info.faction and info.faction == 2 then
 					return "Interface/ICONS/Ability_Rogue_Sprint_Blue";
 				end
 				return "Interface/ICONS/Ability_Rogue_Sprint";
