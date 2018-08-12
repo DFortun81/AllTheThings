@@ -409,6 +409,38 @@ _.Zones =
 				}),
 				n(0, { -- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+						i(154833), -- Bloodhex Hood
+						i(154838), -- Bloodhex Mantle
+						i(154836), -- Bloodhex Vestments
+						i(154839), -- Bloodhex Armbands
+						i(154834), -- Bloodhex Grips
+						i(154832), -- Bloodhex Cord
+						i(154835), -- Bloodhex Legwraps
+						i(154837), -- Bloodhex Anklewraps
+						i(154819), -- Festerroot Helm
+						i(154821), -- Festerroot Shoulderpads
+						i(154820), -- Festerroot Jerkin
+						i(154815), -- Festerroot Bindings
+						i(154818), -- Festerroot Grasps
+						i(154822), -- Festerroot Belt
+						i(154817), -- Festerroot Breeches
+						i(154816), -- Festerroot Striders
+						i(154828), -- Zala'mar Helm
+						i(154830), -- Zala'mar Spaulders
+						i(154831), -- Zala'mar Chainmail
+						i(154825), -- Zala'mar Vambraces
+						i(154826), -- Zala'mar Gauntlets
+						i(154824), -- Zala'mar Chain
+						i(154829), -- Zala'mar Legguards
+						i(154827), -- Zala'mar Greaves
+						i(154809), -- Torgashell Helmet
+						i(154811), -- Torgashell Shoulderguards
+						i(154806), -- Torgashell Breastplate
+						i(154813), -- Torgashell Armplates
+						i(154807), -- Torgashell Crushers
+						i(154808), -- Torgashell Greatbelt
+						i(154810), -- Torgashell Legguards
+						i(154812), -- Torgashell Warboots
 					}),
 				}),
 			},
