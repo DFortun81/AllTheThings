@@ -6,6 +6,10 @@ _.Zones =
 	m(12, { -- Kalimdor
 		m(1, { -- Durotar
 			["groups"] = {
+				n(-228, { -- Flight Master
+					fp(537), -- Razor Hill, Durotar
+					fp(536), -- Sen'jin Village, Durotar
+				}),
 				n(-25, { -- Pet Battle
 					p(635), -- Adder
 					p(468), -- Creepy Crawly
