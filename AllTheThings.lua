@@ -5727,6 +5727,11 @@ function app.UniqueModeItemRemovalHelperOnlyMain(sourceID, oldState)
 end
 app.ActiveItemRemovalHelper = app.CompletionistItemRemovalHelper;
 
+function app.GetNumberOfItemsUntilNextPercentage(progress, total)
+	local originalPercent = progress / total;
+	local roundedPercent = math.ceil(originalPercent * 100) * 0.01;
+	return "|c" .. GetProgressColor(roundedPercent) .. math.ceil(total * (roundedPercent - originalPercent)) .. " THINGS UNTIL " .. math.floor(roundedPercent * 100) .. "%|r";
+end
 function app.QuestCompletionHelper(questID)
 	-- Search ATT for the related quests.
 	local searchResults = SearchForQuestID(questID);
@@ -5788,7 +5793,7 @@ local function MinimapButtonOnEnter(self)
 	GameTooltip:SetOwner(self, "ANCHOR_LEFT");
 	GameTooltip:ClearLines();
 	GameTooltip:AddDoubleLine(app.DisplayName, GetProgressColorText(reference.progress, reference.total));
-	GameTooltip:AddLine(GetDataMember("CompletionistMode") and "Completionist Mode" or "Unique Appearance Mode", 1, 1, 1);
+	GameTooltip:AddDoubleLine(GetDataMember("CompletionistMode") and "Completionist Mode" or "Unique Appearance Mode", app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
 	GameTooltip:AddLine(L("DESCRIPTION"), 0.4, 0.8, 1, 1);
 	GameTooltip:AddLine(L("MINIMAP_MOUSEOVER_TEXT"), 1, 1, 1);
 	GameTooltip:Show();
@@ -6940,7 +6945,7 @@ function app:GetDataCache()
 		allData = setmetatable({}, {
 			__index = function(t, key)
 				if key == "title" then
-					return GetDataMember("CompletionistMode") and "Completionist Mode" or GetDataMember("MainOnly") and "Unique Appearance Mode (Main Only)" or "Unique Appearance Mode";
+					return (GetDataMember("CompletionistMode") and "Completionist Mode" or GetDataMember("MainOnly") and "Unique Appearance Mode (Main Only)" or "Unique Appearance Mode") .. "/" .. app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total);
 				else
 					-- Something that isn't dynamic.
 					return table[key];
