@@ -1785,6 +1785,45 @@ app.SearchForSourceID = SearchForSourceID;
 app.SearchForItemLink = SearchForItemLink;
 app.SearchForCachedItemLink = SearchForCachedItemLink;
 app.SearchForField = SearchForField;
+app.UpdateSearchResults = function(searchResults)
+	if searchResults and #searchResults > 0 then
+		-- Attempt to cleanly refresh the data.
+		local fresh = false;
+		
+		-- Mark all results as marked. This prevents a double +1 on parents.
+		for i,result in ipairs(searchResults) do
+			if result.visible and result.parent and result.parent.total then
+				result.marked = true;
+			end
+		end
+		
+		-- Only unmark and +1 marked search results.
+		for i,result in ipairs(searchResults) do
+			if result.marked then
+				result.marked = nil;
+				if result.total then
+					-- This is an item that has a relative set of groups
+					app.UpdateParentProgress(result);
+					
+					-- If this is NOT a group...
+					if not result.g then
+						-- If we've collected the item, use the "Show Collected Items" filter.
+						result.visible = app.CollectedItemVisibilityFilter(result);
+					end
+				else	
+					app.UpdateParentProgress(result.parent);
+					
+					-- If we've collected the item, use the "Show Collected Items" filter.
+					result.visible = app.CollectedItemVisibilityFilter(result);
+				end
+				fresh = true;
+			end
+		end
+		
+		-- If the data is fresh, don't force a refresh.
+		app:RefreshData(fresh, true, true);
+	end
+end
 
 -- Map Information Lib
 local function ExpandGroupsRecursively(group, expanded, manual)
@@ -3522,48 +3561,6 @@ end
 		118,	-- Icecrown (All of Northrend)
 	};
 	local cachedNodeData = {};
-	local cacheNewNodeData = function(nodeID)
-		-- Search ATT for the related sources.
-		local searchResults = SearchForField("flightPathID", nodeID);
-		if searchResults and #searchResults > 0 then
-			-- Attempt to cleanly refresh the data.
-			local fresh = false;
-			
-			-- Mark all results as marked. This prevents a double +1 on parents.
-			for i,result in ipairs(searchResults) do
-				if result.visible and result.parent and result.parent.total then
-					result.marked = true;
-				end
-			end
-			
-			-- Only unmark and +1 marked search results.
-			for i,result in ipairs(searchResults) do
-				if result.marked then
-					result.marked = nil;
-					if result.total then
-						-- This is an item that has a relative set of groups
-						app.UpdateParentProgress(result);
-						
-						-- If this is NOT a group...
-						if not result.g then
-							-- If we've collected the item, use the "Show Collected Items" filter.
-							result.visible = app.CollectedItemVisibilityFilter(result);
-						end
-					else	
-						app.UpdateParentProgress(result.parent);
-						
-						-- If we've collected the item, use the "Show Collected Items" filter.
-						result.visible = app.CollectedItemVisibilityFilter(result);
-					end
-					fresh = true;
-				end
-			end
-			
-			-- If the data is fresh, don't force a refresh.
-			app:RefreshData(fresh, true, true);
-		end
-		
-	end
 	app.CacheFlightPathData = function()
 		for i,mapID in ipairs(arrOfNodes) do
 			local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
@@ -3604,7 +3601,7 @@ end
 					if not GetDataSubMember("FlightPaths", nodeID) then
 						SetDataSubMember("FlightPaths", nodeID, 1);
 						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
-						cacheNewNodeData(nodeID);
+						app.UpdateSearchResults(SearchForField("flightPathID", nodeID));
 					end
 				end
 			else
@@ -3612,7 +3609,7 @@ end
 					if not GetPersonalDataSubMember("FlightPaths", nodeID) then
 						SetDataSubMember("FlightPaths", nodeID, 1);
 						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
-						cacheNewNodeData(nodeID);
+						app.UpdateSearchResults(SearchForField("flightPathID", nodeID));
 					end
 				end
 			end
@@ -9395,12 +9392,20 @@ app.events.COMPANION_LEARNED = function(...)
 	--print("COMPANION_LEARNED", ...);
 	RefreshMountCollection();
 end
-app.events.NEW_PET_ADDED = function(...)
-	--print("NEW_PET_ADDED", ...);
-	RefreshMountCollection();
+app.events.NEW_PET_ADDED = function(petID)
+	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
+	--print("NEW_PET_ADDED", petID, speciesID);
+	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) == 1 then
+		app.UpdateSearchResults(SearchForField("speciesID", speciesID));
+		app:PlayFanfare();
+		wipe(searchCache);
+	end
 end
-app.events.PET_JOURNAL_PET_DELETED = function(...)
-	--print("PET_JOURNAL_PET_DELETED", ...);
+app.events.PET_JOURNAL_PET_DELETED = function(petID)
+	-- /dump C_PetJournal.GetPetInfoByPetID("BattlePet-0-00001006503D")
+	-- local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
+	-- NOTE: Above APIs do not work in the DELETED API, THANKS BLIZZARD
+	--print("PET_JOURNAL_PET_DELETED", petID);
 	RefreshMountCollection();
 end
 app.events.COMPANION_UNLEARNED = function(...)
