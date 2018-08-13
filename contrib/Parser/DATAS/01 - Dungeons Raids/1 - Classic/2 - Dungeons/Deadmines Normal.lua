@@ -28,23 +28,15 @@ _.Instances =
 							["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Rogue in Outlaw Specialization.|r \n|cff3399ffSTEP 2:|r|cff66ccff Go to Ironclad Cove (Wooden Catwalk & Boat)|r \n|cff3399ffSTEP 3:|r|cff66ccff Locate the Ghostly Parrot (36.5,17).|r \n|cff3399ffSTEP 4:|r|cff66ccff Summon Green Wing Macaw (Extra Action Button will appear, grapple up the wall).|r \n|cff3399ffSTEP 5:|r|cff66ccff Accept quest and kill pirates for the 100 bandanas.|r \n|cff3399ffSTEP 6:|r|cff66ccff Repeat process to get back to questgiver to turn in.|r",
 						}),
 						qa(27756, {	-- The Foreman
-							["groups"] = {
-							},
 							["qg"] = 46612,	-- Lieutenant Horatio Laine
 						}),
 						qa(27758, {	-- The Carpenter
-							["groups"] = {
-							},
 							["sourceQuests"] = { 27756 },	-- The Foreman
 						}),
 						qa(27781, {	-- The Machination
-							["groups"] = {
-							},
 							["sourceQuests"] = { 27758 },	-- The Carpenter
 						}),
 						qa(27785, {	-- The Admiral
-							["groups"] = {
-							},
 							["sourceQuests"] = { 27781 },	-- The Machination
 						}),
 						qa(27790, {	-- The Defias Kingpin
@@ -56,23 +48,15 @@ _.Instances =
 							["sourceQuests"] = { 27785 },	-- The Admiral
 						}),
 						qh(27842, {	-- Only the Beginning
-							["groups"] = {
-							},
 							["qg"] = 46889,	-- Kagtha
 						}),
 						qh(27844, {	-- Traitors!!!
-							["groups"] = {
-							},
 							["sourceQuests"] = { 27842 },	-- Only the Beginning
 						}),
 						qh(27847, {	-- Not Quite There
-							["groups"] = {
-							},
 							["sourceQuests"] = { 27844 },	-- Traitors!!!
 						}),
 						qh(27848, {	-- Good Intentions...Poor Execution
-							["groups"] = {
-							},
 							["sourceQuests"] = { 27847 },	-- Not Quite There
 						}),
 						qh(27850, {	-- The Defias Kingpin
@@ -160,66 +144,63 @@ _.Instances =
 							i(5202),	-- Corsair's Overshirt
 						})),
 						n(-40, {	-- Legacy
-							["groups"] = {
-								n(-17, {	-- Quests (Legacy)
-									["groups"] = { -- Legacy Quests
-										un(40, qa(214, { 	-- Red Silk Bandanas
-											un(34, i(6094)),	-- Piercing Axe
-											un(34, i(2089)), 	-- Scrimshaw Dagger
-											un(34, i(2074)), 	-- Solid Shortblade
-										})),
-										un(40, qa(2040, { 	-- Underground Assault
-											un(34, i(7606)),	-- Polar Gauntlets
-											un(34, i(7607)),	-- Sable Wand
-										})),
-										un(40, qa(166, { 	-- The Defias Brotherhood
-											un(34, i(6087)),	-- Chausses of Westfall 
-											un(34, i(2042)),	-- Staff of Westfall 
-											un(34, i(2041)),	-- Tunic of Westfall 
-										})),
-									},
-								}),
-								n(  0, {	-- Zone Drops
-									un(43, n(647, { 	-- Captain Greenskin
-										i(10403, {	-- Blackened Defias Belt
-											["groups"] = {
-											},	
-											["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
-										}),
-									})),
-									un(43, n(4416, { 	-- Defias Strip Miner
+							n(-17, {	-- Quests (Legacy)
+								un(40, qa(214, { 	-- Red Silk Bandanas
+									un(2, i(6094)),		-- Piercing Axe
+									un(2, i(2089)), 	-- Scrimshaw Dagger
+									un(2, i(2074)), 	-- Solid Shortblade
+								})),
+								un(40, qa(166, { 	-- The Defias Brotherhood
+									un(2, i(6087)),		-- Chausses of Westfall 
+									un(2, i(2042)),		-- Staff of Westfall 
+									un(2, i(2041)),		-- Tunic of Westfall 
+								})),
+								un(40, qa(2040, { 	-- Underground Assault
+									un(2, i(7606)),		-- Polar Gauntlets
+									un(2, i(7607)),		-- Sable Wand
+								})),
+							}),
+							n(  0, {	-- Zone Drops
+								un(43, n(647, { 	-- Captain Greenskin
+									i(10403, {	-- Blackened Defias Belt **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 										["groups"] = {
-											i(10402),	-- Blackend Defias Boots
+										},	
+										["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
+									}),
+								})),
+								un(43, n(4416, { 	-- Defias Strip Miner
+									i(10402, {	-- Blackend Defias Boots **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
+										["groups"] = {
 										},	
 										["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",		
-									})),
-									un(43, n(639, { 	-- Edwin Van Cleef
-										i(10399, {	-- Blackened Defias Armor
-											["groups"] = {
-											},	
-											["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",	
-										}),
-									})),
-									un(43, n(1731, { 	-- Goblin Craftsman 
-										un(7, i(1944)), 	-- Metalworking Gloves
-									})),
-									un(43, n(622, { 	-- Goblin Engineer 
-										un(7, i(1936)), 	-- Goblin Screwdriver
-									})),
-									un(43, n(3947, { 	-- Goblin Shipbuilder 
-										un(7, i(1943)), 	-- Goblin Mail Leggings
-									})),
-									un(43, n(641, { 	-- Goblin Woodcarver 
-										un(7, i(1945)), 	-- Woodworking Gloves
-									})),
-									un(43, n(646, { 	-- Mr. Smite
-										un(2, i(7230)),	-- Smite's Mighty Hammer
-									})),
-									un(43, n(643, { 	-- Sneed
-										un(2, i(5194)),	-- Taskmaster Axe
-									})),
-								}),
-							},
+									}),
+								})),
+								un(43, n(639, { 	-- Edwin Van Cleef
+									i(10399, {	-- Blackened Defias Armor **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
+										["groups"] = {
+										},	
+										["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",	
+									}),
+								})),
+								un(43, n(1731, { 	-- Goblin Craftsman 
+									un(7, i(1944)), 	-- Metalworking Gloves
+								})),
+								un(43, n(622, { 	-- Goblin Engineer 
+									un(7, i(1936)), 	-- Goblin Screwdriver
+								})),
+								un(43, n(3947, { 	-- Goblin Shipbuilder 
+									un(7, i(1943)), 	-- Goblin Mail Leggings
+								})),
+								un(43, n(641, { 	-- Goblin Woodcarver 
+									un(7, i(1945)), 	-- Woodworking Gloves
+								})),
+								un(43, n(646, { 	-- Mr. Smite
+									un(2, i(7230)),	-- Smite's Mighty Hammer
+								})),
+								un(43, n(643, { 	-- Sneed
+									un(2, i(5194)),	-- Taskmaster Axe
+								})),
+							}),
 						}),
 					}),
 				},

@@ -31,10 +31,6 @@ end
 --------------------------------------------------------------------------------------------------------------------------------------------
 -- Template: u(, 2);	--
 
-u(2041, 2);		-- Tunic of Westfall
-u(2042, 2);		-- Staff of Westfall
-u(2074, 2);		-- Solid Shortblade
-u(2089, 2);		-- Scrimshaw Dagger
 u(2818, 2);		-- Stretched Leather Trousers
 u(3324, 2);		-- Ghostly Mantle
 u(3449, 2);		-- Mystic Shawl
@@ -58,8 +54,6 @@ u(5194, 2);		-- Taskmaster Axe
 u(5242, 2);		-- Cinder Wand
 u(5252, 2);		-- Wand of Decay
 u(5253, 2); 	-- Goblin Igniter
-u(6087, 2);		-- Chausses of Westfall
-u(6094, 2);		-- Piercing Axe
 u(6226, 2);		-- Blood Apron
 u(6335, 2);		-- Grizzled Boots
 u(6340, 2);		-- Fenrus' Hide
@@ -70,8 +64,6 @@ u(6898, 2);		-- Org of Soran'ruk
 u(6953, 2);		-- Verigan's Fist
 u(7230, 2);		-- Smite's Mighty Hammer
 u(7298, 2);		-- Blade of Cunning
-u(7606, 2);		-- Polar Gauntlets
-u(7607, 2);		-- Sable Wand
 u(7682, 2);		-- Torturing Poker
 u(7683, 2);		-- Bloody Brass Knuckles
 u(7684,	2);		-- Bloodmage Mantle

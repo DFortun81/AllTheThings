@@ -4146,7 +4146,7 @@ _.ExpansionFeatures =
 								},
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							}),
-							ach(9478, {	-- Savage Friends
+							ach(9477, {	-- Savage Friends
 								["groups"] = {
 									i(111987),	-- Trading Post, Level 3
 								},
