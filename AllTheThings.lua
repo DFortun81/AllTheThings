@@ -5742,9 +5742,18 @@ end
 app.ActiveItemRemovalHelper = app.CompletionistItemRemovalHelper;
 
 function app.GetNumberOfItemsUntilNextPercentage(progress, total)
-	local originalPercent = progress / total;
-	local roundedPercent = math.ceil(originalPercent * 100) * 0.01;
-	return "|c" .. GetProgressColor(roundedPercent) .. math.ceil(total * (roundedPercent - originalPercent)) .. " THINGS UNTIL " .. math.floor(roundedPercent * 100) .. "%|r";
+	if total <= progress then
+		return "|c" .. GetProgressColor(1) .. "YOU DID IT!|r";
+	else
+		local originalPercent = progress / total;
+		local roundedPercent = math.ceil(originalPercent * 100) * 0.01;
+		local diff = math.ceil(total * (roundedPercent - originalPercent));
+		if diff < 1 then
+			return "|c" .. GetProgressColor(1) .. (total - progress) .. " THINGS UNTIL 100%|r";
+		else
+			return "|c" .. GetProgressColor(roundedPercent) .. diff .. " THINGS UNTIL " .. math.floor(roundedPercent * 100) .. "%|r";
+		end
+	end
 end
 function app.QuestCompletionHelper(questID)
 	-- Search ATT for the related quests.
