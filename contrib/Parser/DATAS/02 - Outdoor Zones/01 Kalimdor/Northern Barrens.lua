@@ -6,6 +6,11 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(10, {		-- Northern Barrens
 			["groups"] = {
+				n(-228, { -- Flight Paths
+					fp(458), -- Nozzlepot's Outpost, Northern Barrens
+					fp(80), -- Ratchet, Northern Barrens
+					fp(25), -- The Crossroads, Northern Barrens
+				}),
 				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder
 					desc(p(474), "Can be found under large trees alongside Plainsland Cheetahs."), -- Cheetah Cub

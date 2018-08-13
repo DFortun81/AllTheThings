@@ -6,7 +6,7 @@ _.Zones =
 	m(12, { -- Kalimdor
 		m(1, { -- Durotar
 			["groups"] = {
-				n(-228, { -- Flight Master
+				n(-228, { -- Flight Paths
 					fp(537), -- Razor Hill, Durotar
 					fp(536), -- Sen'jin Village, Durotar
 				}),

@@ -659,6 +659,9 @@ _.Zones =
 					}),						
 				}),
 				--]]
+				n(-228, { -- Flight Paths
+					fp(23), -- Orgrimmar, Durotar
+				}),
 				n(  -25, {	-- Pet Battle
 					p(467), 	-- Dung Beetle
 					p(471), 	-- Robo-Chick
