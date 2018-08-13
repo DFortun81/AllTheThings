@@ -64,6 +64,13 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-25, { 	-- Pet Battle
+					["groups"] = {
+						p(2386), -- Coastal Scuttler
+						p(2378), -- River Otter
+						p(2411), -- Wicker Pup
+					},
+				}),
 				n(-17, { -- Quests
 					["groups"] = {
 					},
@@ -379,6 +386,17 @@ _.Zones =
 									["spellID"] = 256237,
 								}),	
 							},
+						}),
+						n(127156, { -- Nigel Rifthold <Adveenturer's Society>
+							["groups"] = {
+								i(163493), -- Bloody Rabbit Fang
+								i(163510), -- Crimson Frog
+								i(163492), -- Drustvar Piglet
+								i(160708), -- Smoochums' Bloody Heart
+								i(163494), -- Wad of Spider Web
+							},
+							["itemID"] = 163036, -- Polished Pet Charm
+							
 						}),
 						n(135815, { -- Quartermaster Alcorn <Order of Embers Emissary>
 							["groups"] = {

@@ -44,6 +44,7 @@ pet(147542, 2047); 	-- Ban-Fu, Cub of Ban-Lu
 pet(163799, 2456);	-- Barnaby
 pet(163511, 511);	-- Barnacled Hemit Crab
 pet(140934, 1934); 	-- Benax
+pet(163494, 2408);	-- Bilefang Skitterer
 pet(10360, 75); 	-- Black Kingsnake
 pet(104158, 1322); 	-- Blackfuse Bombling
 pet(93037, 1153); 	-- Blackwing Banner (Death Talon Whelpguard)
@@ -55,6 +56,7 @@ pet(129188, 1753); 	-- Bleakwater Jelly
 pet(142091, 1960); 	-- Blessed Seed (Snaplasher)
 pet(93032, 1144); 	-- Blighted Spore (Fungal Abomination)
 pet(147539, 2035); 	-- Bloodbrood Whelpling
+pet(163500, 2414);	-- Bloodfeaster Larva
 pet(163818, 2451);	-- Bloodstone Tunneler
 pet(127704, 1577); 	-- Bloodthorn Hatchling
 pet(126925, 1666); 	-- Blorp's Bubble (Blorp)
@@ -125,6 +127,7 @@ pet(163805, 2448);	-- Craghoof Kid
 pet(60847, 264); 	-- Crawling Claw
 pet(110721, 1396); 	-- Crazy Carrot
 pet(71076, 321); 	-- Creepy Crate
+pet(163510, 2424);	-- Crimson Frog
 pet(70160, 318); 	-- Crimson Lasher
 pet(10392, 78); 	-- Crimson Snake
 pet(118106, 1537);	-- Crimson Spore
@@ -171,6 +174,7 @@ pet(109014, 1386);	-- Dread Hatchling
 pet(97554, 1232); 	-- Dripping Strider Egg (Coilfang Stalker)
 pet(104162, 1331); 	-- Droplet of Y'Shaarj
 pet(142098, 1967); 	-- Drudge Remains (Drudge Ghoul)
+pet(163492, 2406);	-- Drustvar Piglet
 pet(44970, 205); 	-- Dun Morogh Cub
 pet(44973, 207); 	-- Durotar Scorpion
 pet(93030, 1143); 	-- Dusty Clutch of Eggs (Giant Bone Spider)
@@ -226,6 +230,7 @@ pet(122107, 1625); 	-- Fragment of Anger
 pet(122109, 1627); 	-- Fragment of Desire
 pet(142094, 1963); 	-- Fragment of Frozen Bone (Boneshard)
 pet(122108, 1626); 	-- Fragment of Suffering
+pet(163493, 2407);	-- Frenzied Cottontail
 pet(163509, 2423);	-- Freshwater Pincher
 pet(116403, 1516); 	-- Frightened Bush Chicken (Bush Chicken)
 pet(147540, 2036); 	-- Frostbrood Whelpling
@@ -455,6 +460,7 @@ pet(97959, 1243); 	-- Quivering Blob (Living Fluid)
 pet(8497, 72); 	-- Rabbit Crate (Snowshoe) - (Snowshoe Rabbit)
 pet(122125, 1636); 	-- Race MiniZep Controller (Race MiniZep)
 pet(163689, 2437);	-- Ragepeep
+pet(163503, 2417);	-- Ranishu Runt
 pet(100905, 1256); 	-- Rascal-Bot
 pet(23015, 127); 	-- Rat Cage (Whiskers the Rat)
 pet(152968, 2080);	-- Rattlejaw
@@ -487,6 +493,7 @@ pet(163808, 2463);	-- Sandshell Chitterer
 pet(163512, 2426);	-- Sandstinger Wasp
 pet(82775, 846); 	-- Sapphire Cub
 pet(97551, 1229); 	-- Satyr Charm (Fiendish Imp)
+pet(163560, 2421);	-- Saurolisk Hatchling
 pet(163560, 2421);	-- Saurolisk Hatchling
 pet(128477, 1692);	-- Savage Cub
 pet(163684, 2436);	-- Scabby
@@ -525,6 +532,7 @@ pet(122534, 1655); 	-- Slithershock Elver
 pet(122111, 1629); 	-- Smelly Gravestone (Stinkrot)
 pet(67418, 294);	-- Smoldering Murloc Egg (Deathy)
 pet(68673, 90); 	-- Smolderweb Egg (Smolderweb Hatchling)
+pet(160708, 2189);	-- Smoochums
 pet(66073, 289);	-- Snail Shell (Scooter the Snail)
 pet(163816, 2472);	-- Snapper
 pet(35349, 173); 	-- Snarly's Bucket (Snarly)
@@ -663,6 +671,7 @@ pet(89367, 850); 	-- Yu'lon Kite
 pet(95422, 1211);	-- Zandalari Anklerender
 pet(95423, 1212);	-- Zandalari Footslasher
 pet(94126, 1180);	-- Zandalari Kneebiter
+pet(163499, 2413);	-- Zandalari Shinchomper
 pet(95424, 1213);  	-- Zandalari Toenibbler
 pet(118101, 1536);	-- Zangar Spore
 pet(102146, 1305);	-- Zao, Calfling of Niuzao

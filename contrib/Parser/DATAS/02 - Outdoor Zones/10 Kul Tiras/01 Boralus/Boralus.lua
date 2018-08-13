@@ -438,6 +438,13 @@ _.Zones =
 								}), 	
 							},
 						}),
+						n(142691, { -- Tricky Nick
+							["groups"] = {
+								i(163568), -- Lost Platysaur [So Cute!]
+								i(163589), -- Reins of the Palehide Direhorn
+								i(163042), -- Reins of the Mighty Caravan Brutosaur
+							},
+						}),
 						n(135446, { -- Vindicator Jaelaana <7th Legion Emissary [NOTE: PvP Factions]
 							["groups"] = {
 								i(160539),	-- Tabard of the 7th Legion

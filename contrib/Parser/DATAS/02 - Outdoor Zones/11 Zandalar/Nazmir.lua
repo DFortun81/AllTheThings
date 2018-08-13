@@ -63,6 +63,19 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-25, { 	-- Pet Battle
+					["groups"] = {
+						p(2388), -- Bloodfeaver Tarantula
+						p(2398), -- Boghopper
+						p(2400), -- Coastal Bounder
+						p(2389), -- Elusive Skimmer
+						p(2395), -- Glutted Bleeder
+						p(2394), -- Returned Hatchling
+						p(2397), -- Spectral Raven
+						p(2393), -- Sticky Oozeling
+						p(2392), -- Young Sand Sifter
+					},
+				}),
 				n(-17, { -- Quests
 					["groups"] = {
 					},
@@ -143,7 +156,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161221), -- Jungle King Mudtossers
 							}),	
-							["questID"] = 49469,
+							["questID"] = 49317,
 						}),		
 						n(125214, { -- Krubbs		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -175,7 +188,7 @@ _.Zones =
 									},
 								}),
 							}),	
-							["questID"] = 49317,	
+							["questID"] = 50567,	
 						}),		
 						n(128935, { -- Mala'kili
 								--[[
@@ -192,7 +205,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160951), -- Evergreen Scout's Bow
 							}),	
-							["questID"] = 49231,	
+							["questID"] = 48972,	
 						}),		
 						n(127873, { -- Scrounger Patriarch		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -207,7 +220,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(162618), -- Totem Matriarch's Headdress
 							}),	
-							["questID"] = 48052,	
+							["questID"] = 48406,	
 						}),		
 						o(282666, { -- Urn of Agussu
 								--[[
@@ -408,6 +421,14 @@ _.Zones =
 									["spellID"] = 272064,
 								}),	
 							},
+						}),
+						n(132011, { -- Shoak
+							["groups"] = {
+								i(163510), -- Crimson Frog
+								i(163500), -- Bloodfeaster Larva
+							},
+							["description"] = "You must complete the quests \"Killing Cannibals\", \"Just Say No to Cannibalism\", and \"Shoak's on the Menu\" in order him to show up at Gloom Hollow.",
+							["itemID"] = 163036, -- Polished Pet Charm
 						}),
 					},
 				}),

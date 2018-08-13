@@ -538,6 +538,8 @@ _.WorldEvents =
 			103791,	-- Madam Gosu [Rogue Class Hall]
 			100986,	-- Madam Goya [Underbelly]
 			94829, -- Zhang Yeog [Garrison]
+			142062, -- Madam Gosu [Boralus - Alliance]
+			135709, -- Madam Gosu [Dazar'alor - Horde]
 		},
 		["u"] = 9,
 	}),

@@ -63,6 +63,11 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-25, { 	-- Pet Battle
+					["groups"] = {
+						p(2399), -- Hermit Crab
+					},
+				}),
 				n(-17, { -- Quests
 					["groups"] = {
 					},
@@ -397,6 +402,16 @@ _.Zones =
 									["f"] = 55,  -- They may change it to a toy?
 								}),
 							},
+						}),
+						n(135400, { -- Jenoh
+							["groups"] = {
+								i(163511), -- Barnacled Hermit Crab
+								i(163509), -- Freshwater Pincher
+								i(163503), -- Ranishu Runt
+								i(163512), -- Sanadstinger Wasp
+								i(159753), -- Desert Flute
+							},
+							["itemID"] = 163036, -- Polished Pet Charm
 						}),
 					},
 				}),

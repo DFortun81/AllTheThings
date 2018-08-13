@@ -61,6 +61,17 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-25, { 	-- Pet Battle
+					["groups"] = {
+						p(2374), -- Freshwater Crawler
+						p(2373), -- River Frog
+						p(2378), -- River Otter
+						p(2377), -- Sandyback Crawler
+						p(2372), -- Shadowback Crawler
+						p(2375), -- Vale Marmot
+						p(2376), -- Valley Chicken
+					},
+				}),
 				n(-17, { -- Quests
 					["groups"] = {
 					},

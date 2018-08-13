@@ -83,6 +83,18 @@ _.Zones =
 								}),
 							},
 						}),
+						n(132097, { -- Happy Holaua
+							["groups"] = {
+								i(163508), -- Butterfly in a Jar
+								i(163499), -- Raptor Containment Crate
+								i(163498), -- Tiny Direhorn
+								i(163560), -- Saurolisk Hatchling
+								i(163705), -- Imaginary Gun
+								i(163704), -- Tiny Mechanical Mouse
+								i(139003), -- Pocket Pet Portal
+							},
+							["itemID"] = 163036, -- Polished Pet Charm
+						}),
 						n(131287, { -- Natal'hakata <Zandalari Empire Emissary
 							["groups"] = {
 								i(160546), -- Tabard of the Zandalari Empire

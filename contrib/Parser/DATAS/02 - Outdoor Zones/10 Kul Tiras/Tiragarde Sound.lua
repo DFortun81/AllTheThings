@@ -57,6 +57,16 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-25, { 	-- Pet Battle
+					["groups"] = {
+						p(2165), -- Francois
+						p(2383), -- Giant Woodworm
+						p(2382), -- Inland Croaker
+						p(2380), -- Parasitic Boarfly
+						p(2377), -- Sandyback Crawler
+						p(2381), -- Shack Crab
+					},
+				}),
 				n(-17, { -- Quests
 					["groups"] = {
 						a(ach(12582, { -- Come Sail Away

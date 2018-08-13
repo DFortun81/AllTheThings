@@ -78,6 +78,14 @@ _.Zones =
 						--]]
 					},
 				}),
+				n(-25, { 	-- Pet Battle
+					["groups"] = {
+						p(2385), -- Barrier Hermit
+						p(2387), -- Golden Beetle
+						p(2390), -- Leafy Flutterwing
+						p(2384), -- Shore Butterfly
+					},
+				}),
 				n(-17, { -- Quests
 					["groups"] = {
 						h(ach(12555, {  -- Welcome to Zandalar		[TO-DO: Link to previous quests that deal with scenario)
