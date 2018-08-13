@@ -289,7 +289,7 @@ profession(164, { -- Blacksmithing
 		}),
 		n(-26, { -- Drops
 			-- Holiday --
-			un(29, i(17706)), -- Plans: Edge of Winter (Feast of Winter Veil - Holiday Gift Box)
+			--un(29, i(17706)), -- Plans: Edge of Winter (Feast of Winter Veil - Holiday Gift Box)
 			
 			--i(12835), -- Plans: Annihilator (Quartermaster Zigris - LBRS - 1 Drop - DONE)
 			--i(142370), -- Plans: Arcanite Champion (Overlord Wyrmthalak - LBRS - 1 Drop - DONE)
@@ -299,8 +299,34 @@ profession(164, { -- Blacksmithing
 			--i(142358), -- Plans: Blazing Rapier (Time Lost Chest - Searing Gorge - 1 Drop - DONE)
 			--i(142337), -- Plans: Blight (Trash Drop - Stratholme - DONE)
 			--un(1, i(12831)), -- Plans: Blood Talon (Never Implemented)
-			i(7992), -- Plans: Blue Glittering Axe (World Drop)
-			i(3609), -- Plans: Copper Chain Vest (World Drop)
+			i(7992, { -- Plans: Blue Glittering Axe (World Drop)
+				["crs"] = {
+					50362, -- Blackbog the Fang
+					51042, -- Bleakheart
+					51066, -- Crystalfang
+					11475, -- Eldreth Phantasm
+					11120, -- Risen Hammersmith
+					1837, -- Scarlet Judge
+					14661, -- Stinglasher
+					7030, -- Shadowforge Geologist
+					14123, -- Steeljaw Snapper
+					8120, -- Sul'lithuz Abomination
+				},
+			}),
+			i(3609, { -- Plans: Copper Chain Vest (World Drop)
+				["crs"] = {
+					17345, -- Brown Bear
+					1911, -- Deeb
+					5822, -- Felweaver Scornn
+					7234, -- Ferocitas the Dream Eater
+					1260, -- Great Father Arctikus
+					2972, -- Kodo Calf
+					2038, -- Lord Melenas
+					32970, -- Rit'ko
+					1544, -- Vile Fin Minor Oracle
+					17298, -- Warlord Sriss'tiz
+				},
+			}),
 			--i(12830), -- Plans: Corruption (Object Drop - Stratholme - 1 Drop - DONE)
 			--i(11612), -- Plans: Dark Iron Plate (Ribbly Screwspigot - Blackrock Depths - 1 Drop - DONE)
 			--i(11610), -- Plans: Dark Iron Pulverizer (Grizzle - Blackrock Depths - 1 Drop - DONE)
@@ -308,56 +334,241 @@ profession(164, { -- Blacksmithing
 			--i(20554), -- Plans: Darkrune Breastplate (Container Drop - Silithus - 1 Drop - DONE)
 			--i(20553), -- Plans: Darkrune Gauntlets (Container Drop - Silithus - 1 Drop - DONE)
 			--i(20555), -- Plans: Darkrune Helm (Container Drop - Silithus - 1 Drop - DONE)
-			i(12698), -- Plans: Dawnbringer Shoulders (World Drop)
-			i(7993), -- Plans: Dazzling Mithril Rapier (World Drop)
-			i(2883), -- Plans: Deadly Bronze Poniard (World Drop)
+			i(12698, { -- Plans: Dawnbringer Shoulders (World Drop)
+				["crs"] = {
+					6552, -- Gorishi Worker
+					11583, -- Nefarian (Blackwing Lair)
+					15252, -- Qiraji Champion
+					9258, -- Scarshield Raider
+					9267, -- Smolderthorn Axe Thrower
+				},
+			}),
+			i(7993, { -- Plans: Dazzling Mithril Rapier (World Drop)
+				["crs"] = {
+					14351, -- Gordok Bushwacker
+					10828, -- Lynnia Abbendis
+					7453, -- Moontouched Owlbeast
+					44694, -- Noxious Tunneler
+					7604, -- Sergeant Bly
+					6513, -- Un'Goro Stomper
+					49217, -- Wintervine Lasher
+				},
+			}),
+			i(2883, { -- Plans: Deadly Bronze Poniard (World Drop)
+				["crs"] = {
+					48268, -- Battle Creeper
+					75658, -- Blindlight Murloc
+					6407, -- Holdout Technician
+					34353, -- Krom'gar Incinerator
+					3671, -- Lady Anacondra
+					1112, -- Leech Widow
+					14424, -- Mirelow
+					2242, -- Syndicate Spy
+					12678, -- Ursangous
+					2578, -- Young Mesa Buzzard
+				},
+			}),
 			--i(18264), -- Plans: Elemental Sharpening Stone (Common Boss Drop - Molten Core - 2+ Drops - DONE)
 			--i(12836), -- Plans: Frostguard (Foreman Marcrid (Rare) - EPL - 1 Drop & Vendor - DONE)
-			i(3868), -- Plans: Frost Tiger Blade (World Drop)
-			i(3610), -- Plans: Gemmed Copper Gauntlets (World Drop)
-			i(3867), -- Plans: Golden Iron Destroyer (World Drop)
+			i(3868, { -- Plans: Frost Tiger Blade (World Drop)
+				["crs"] = {
+					5347, -- Antilus the Soarer
+					11475, -- Eldreth Phantasm
+				},
+			}),
+			i(3610, { -- Plans: Gemmed Copper Gauntlets (World Drop)
+				["crs"] = {
+					435, -- Blackrock Champion
+					6407, -- Hillsbrad Worgen
+					35881, -- Lady Vesthra
+					424, -- Redridge Poacher
+					506, -- Sergeant Brashclaw
+					5809, -- Sergeant Curtis
+					48450, -- Sunwing Squawker
+					486, -- Tharil'zun
+				},
+			}),
+			i(3867, { -- Plans: Golden Iron Destroyer (World Drop)
+				["crs"] = {
+					4663, -- Burning Blade Augur
+					45227, -- Darkmist Broodqueen
+					13141, -- Deeprot Stomper
+					14228, -- Giggler
+					5362, -- Northspring Harpy
+					4466, -- Vilebranch Scalper
+				},
+			}),
 			i(3875), -- Plans: Golden Scale Boots (World Drop)
 			i(3873), -- Plans: Golden Scale Cuirass (World Drop)
-			i(3872), -- Plans: Golden Scale Leggings (World Drop)
+			i(3872, { -- Plans: Golden Scale Leggings (World Drop)
+				["crs"] = {
+					2548, -- Captain Keelhaul
+					11793, -- Celebrian Dryad
+					37091, -- Deviate Plainstrider
+					2544, -- Southern Sand Crawler
+					50770, -- Zorn
+				},
+			}),
 			i(3871), -- Plans: Golden Scale Shoulders (World Drop)
-			i(3611), -- Plans: Green Iron Boots (World Drop)
-			i(3612), -- Plans: Green Iron Gauntlets (World Drop)
-			i(3870), -- Plans: Green Iron Shoulders (World Drop)
+			i(3611, { -- Plans: Green Iron Boots (World Drop)
+				["crs"] = {
+					2780, -- Caretaker Nevlin
+					3872, -- Deathsworn Captain
+					41370, -- General Vol'tar
+					3780, -- Singed Shambler
+					2530, -- Yenniku
+					
+				},
+			}),
+			i(3612, { -- Plans: Green Iron Gauntlets (World Drop)
+				["crs"] = {
+					46122, -- Gorfax Angerfang
+					11560, -- Magrami Spectre
+					14276, -- Scargil
+					45740, -- Watcher Eva
+				},
+			}),
+			i(3870, { -- Plans: Green Iron Shoulders (World Drop)
+				["crs"] = {
+					4638, -- Magram Scout
+					4689, -- Starving Bonepaw
+				},
+			}),
 			--i(12833), -- Plans: Hammer of the Titans (Maleki the Pallid - Stratholme - 1 Drop - DONE)
 			--i(12839), -- Plans: Heartseeker (Willey Hopebreaker - Stratholme - 1 Drop - DONE)
-			i(7990), -- Plans: Heavy Mithril Helm (World Drop)
+			i(7990, { -- Plans: Heavy Mithril Helm (World Drop)
+				["crs"] = {
+					7272, -- Theka the Martyr
+					47585, -- Twilight Magus
+					10082, -- Zerillis
+				},
+			}),
 			i(7975), -- Plans: Heavy Mithril Pants (World Drop)
 			i(12716), -- Plans: Helm of the Great Chief (Nefarian + AQ/MC Trash Drop)
 			i(12728), -- Plans: Invulnerable Mail (Nefarian + World Drop)
-			i(5543), -- Plans: Iridescent Hammer (World Drop)
+			i(5543, { -- Plans: Iridescent Hammer (World Drop)
+				["crs"] = {
+					34897, -- Black Drake
+					6226, -- Mechano-Flamewalker
+					58676, -- Scarlet Defender
+					2557, -- Witherbark Shadow Hunter
+				},
+			}),
 			i(6045), -- Plans: Iron Counterweight (World Drop)
-			i(6044), -- Plans: Iron Shield Spike (World Drop)
+			i(6044, { -- Plans: Iron Shield Spike (World Drop)
+				["crs"] = {
+					6391, -- Holdout Warrior
+					4697, -- Scorpashi Lasher
+					4718, -- Slitherblade Oracle
+				},
+			}),
 			i(3866), -- Plans: Jade Serpentblade (World Drop)
 			--i(142402), -- Plans: Light Earthforged Blade (Boss/Trash Drop - Zul'Farrak/Tanaris - 2+ Drops - DONE)
 			i(12717), -- Plans: Lionheart Helm (Nefarian + World Drop)
 			--un(1, i(12837)), -- Plans: Masterwork Stormhammer (Goraluk Anvilcrack - UBRS (Original) - 1 Drop - REMOVED)
-			i(3608), -- Plans: Mighty Iron Hammer (World Drop)
+			i(3608, { -- Plans: Mighty Iron Hammer (World Drop)
+				["crs"] = {
+					13142, -- Deeprot Tangler
+					3758, -- Felmusk Satyr
+					6220, -- Irradiated Horror
+				},
+			}),
 			i(7991), -- Plans: Mithril Scale Shoulders (Nefarian + World Drop)
-			i(7976), -- Plans: Mithril Shield Spike (Nefarian + World Drop)
-			i(7989), -- Plans: Mithril Spurs (World Drop)
+			i(7976, { -- Plans: Mithril Shield Spike (Nefarian + World Drop)
+				["crs"] = {
+					10824, -- Death-Hunter Hawkspear
+					141596, -- Fleeing Grenadier
+					11583, -- Nefarian (Blackwing Lair)
+				},
+			}),
+			i(7989, { -- Plans: Mithril Spurs (World Drop)
+				["crs"] = {
+					46918, -- Darkflight Shadowspeaker
+					45410, -- Elder Stormhoof
+					48154, -- Jadefire Shifter
+					50837, -- Kash
+					11501, -- King Gordok
+					51010, -- Snips
+				},
+			}),
 			i(22390), -- Plans: Persuader (Nefarian + World Drop)
 			--i(74274), -- Plans: Phantom Blade (Trash Drop - Stratholme - 2 Drops - DONE)
 			i(3874), -- Plans: Polished Steel Boots (World Drop)
 			i(12685), -- Plans: Radiant Belt (World Drop)
-			i(12697), -- Plans: Radiant Boots (World Drop)
-			i(12689), -- Plans: Radiant Breastplate (World Drop)
+			i(12697, { -- Plans: Radiant Boots (World Drop)
+				["crs"] = {
+					12467, -- Death Talon Captain
+					10220, -- Halycon
+					46841, -- Marshtide Cleric
+				},
+			}),
+			i(12689, { -- Plans: Radiant Breastplate (World Drop)
+				["crs"] = {
+					7372, -- Deadwind Warlock
+					38329, -- Durrin Direshovel
+					2718, -- Dustbelcher Shaman
+					10081, -- Dustwraith
+					6554, -- Gorishi Stinger
+					9028, -- Grizzle
+					11733, -- Hive'Regal Slavemaker
+					11728, -- Hive'Zora Reaver
+					9042, -- Verek
+				},
+			}),
 			i(12702), -- Plans: Radiant Circlet (World Drop)
 			i(12695), -- Plans: Radiant Gloves (World Drop)
-			i(12713), -- Plans: Radiant Leggings (World Drop)
-			i(2881), -- Plans: Runed Copper Breastplate (World Drop)
+			i(12713, { -- Plans: Radiant Leggings (World Drop)
+				["crs"] = {
+					11673, -- Ancient Core Hound
+					11668, -- Firelord
+					11661, -- Flamewaker
+					15335, -- Flesh Hunter
+					15323, -- Hive'Zara Sandstalker
+					12101, -- Lava Surger
+					11659, -- Molten Destroyer
+					15324, -- Qiraji Gladiator
+				},
+			}),
+			i(2881, { -- Plans: Runed Copper Breastplate (World Drop)
+				["crs"] = {
+					6033, -- Lake Frenzy
+					8761, -- Mosshoof Courser
+					16346, -- Shadowpine Hexxer
+					14270, -- Squiddic
+					5842, -- Takk the Leaper
+					75285, -- Twilight Storm Mender
+					47484, -- Yetimus the Yeti Lord
+				},
+			}),
 			i(8028), -- Plans: Runed Mithril Hammer (Nefarian + World Drop)
 			--un(2, i(12718)), -- Plans: Runic Breastplate (Strashaz Myrmidon - Dustwallow Marsh - 1 Drop - REMOVED)
 			i(22389), -- Plans: Sageblade (Nefarian + World Drop)
 			i(12261), -- Plans: Searing Golden Blade (World Drop)
 			--i(12827), -- Plans: Serenity (Trash/Object Drop - Stratholme - 2 Drops - DONE)
-			i(3869), -- Plans: Shadow Crescent Axe (World Drop)
-			i(5578), -- Plans: Silvered Bronze Breastplate (World Drop)
-			i(10424), -- Plans: Silvered Bronze Leggings (World Drop)
+			i(3869, { -- Plans: Shadow Crescent Axe (World Drop)
+				["crs"] = {
+					45152, -- Magus Bisp
+					4347, -- Noxious Reaver
+					2929, -- Savage Owlbeast
+					1837, -- Scarlet Judge
+				},
+			}),
+			i(5578, { -- Plans: Silvered Bronze Breastplate (World Drop)
+				["crs"] = {
+					75658, -- Blindlight Murloc
+					1019, -- Elder Razormaw
+					4619, -- Geltharis
+				},
+			}),
+			i(10424, { -- Plans: Silvered Bronze Leggings (World Drop)
+				["crs"] = {
+					75658, -- Blindlight Murloc
+					6228, -- Dark Iron Ambassador
+					1112, -- Leech Widow
+					2602, -- Ruul Onestone
+					670, -- Skullsplitter Witch Doctor
+				},
+			}),
 			i(2882), -- Plans: Silvered Bronze Shoulders (World Drop)
 			i(6046), -- Plans: Steel Weapon Chain (World Drop)
 			i(12703), -- Plans: Storm Gauntlets (Nefarian + World Drop + Vendor)
