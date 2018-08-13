@@ -562,7 +562,7 @@ local function createAccountFrame(parent)
 	addObject(elm,basic)
 	
 	local basicFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-basicFrame", child, "ThinBorderTemplate");
-	basicFrame:SetSize(child:GetWidth(),140)
+	basicFrame:SetSize(child:GetWidth(),150)
 	basicFrame:SetPoint("TOPLEFT",basic,0,-frameSpacer);
 	addObject(elm,basicFrame)
 	
@@ -631,6 +631,38 @@ local function createAccountFrame(parent)
 	tracker:SetPoint("TOPLEFT",prof,0,-frameSpacer)
 	addObject(elm,tracker)
 	
+	-- Treat Factions as Collectible
+	local treatFactionsAsCollectible = createCheckBox("Treat Factions as Collectible", child, function(self)
+			app.SetDataMember("FactionsCollectible", self:GetChecked());
+			app:RefreshData();
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("FactionsCollectible", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this setting if you want to treat factions as collectible.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	treatFactionsAsCollectible:SetPoint("TOPLEFT",tracker,0,-frameSpacer)
+	addObject(elm,treatFactionsAsCollectible)
+	
+	-- Track Factions Account Wide
+	local factionsAccountWide = createCheckBox("Track Factions Account-Wide", child, function(self)
+			app.SetDataMember("TrackFactionsAccountWide", self:GetChecked());
+			app:RefreshData();
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("TrackFactionsAccountWide", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this setting if you want to treat factions collected by any character on your account as Collected.\n\nIf you wish to treat only factions known by your current character as Collected, turn this setting off.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	factionsAccountWide:SetPoint("TOPLEFT",treatFactionsAsCollectible,0,-frameSpacer)
+	addObject(elm,factionsAccountWide)
+	
 	-- Treat Flight Paths as Collectible
 	local flightPathsAsCollectible = createCheckBox("Treat Flight Paths as Collectible", child, function(self)
 			app.SetDataMember("FlightPathsCollectible", self:GetChecked());
@@ -644,7 +676,7 @@ local function createAccountFrame(parent)
 			GameTooltip:SetText ("Enable this setting if you want to treat flight paths as collectible.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	flightPathsAsCollectible:SetPoint("TOPLEFT",tracker,0,-frameSpacer)
+	flightPathsAsCollectible:SetPoint("TOPLEFT",factionsAccountWide,0,-frameSpacer)
 	addObject(elm,flightPathsAsCollectible)
 	
 	-- Track Flight Paths Account Wide mode
@@ -725,6 +757,40 @@ local function createAccountFrame(parent)
 		end);
 	ignore:SetPoint("TOPLEFT",boe, 0, -frameSpacer)
 	addObject(elm,ignore)
+	
+	-- Treat Followers as Collectible
+	local treatFollowersAsCollectible = createCheckBox("Treat Followers as Collectible", child, function(self)
+			app.SetDataMember("FollowersCollectible", self:GetChecked());
+			app:RefreshData();
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("FollowersCollectible", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this setting if you want to treat Followers as collectible.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	treatFollowersAsCollectible:SetPoint("TOPLEFT",ignore,0,-frameSpacer)
+	addObject(elm,treatFollowersAsCollectible)
+	
+	-- Track Followers Account Wide
+	local factionsAccountWide = createCheckBox("Track Followers Account-Wide", child, function(self)
+			app.SetDataMember("TrackFollowersAccountWide", self:GetChecked());
+			app:RefreshData();
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("TrackFollowersAccountWide", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this setting if you want to treat Followers collected by any character on your account as Collected.\n\nIf you wish to treat only Followers known by your current character as Collected, turn this setting off.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	factionsAccountWide:SetPoint("TOPLEFT",treatFollowersAsCollectible,0,-frameSpacer)
+	addObject(elm,factionsAccountWide)
+	
+	
 	
 	-- seasonal
 	local seasonal = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");

@@ -3510,9 +3510,13 @@ app.BaseFaction = {
 		elseif key == "f" then
 			return 112;
 		elseif key == "trackable" or key == "collectible" then
-			return true;
+			return app.GetDataMember("FactionsCollectible");
 		elseif key == "saved" or key == "collected" then
-			if GetDataSubMember("CollectedFactions", t.factionID) then return 1; end
+			if app.GetDataMember("TrackFactionsAccountWide") then
+				if GetDataSubMember("CollectedFactions", t.factionID) then return 1; end
+			else
+				if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
+			end
 			if t.isFriend and not select(9, GetFriendshipReputation(t.factionID)) or t.standing == 8 then
 				SetTempDataSubMember("CollectedFactions", t.factionID, 1);
 				SetDataSubMember("CollectedFactions", t.factionID, 1);
@@ -3683,15 +3687,24 @@ app.CreateFilter = function(id, t)
 	return createInstance(constructor(id, t, "filterID"), app.BaseFilter);
 end
 
--- Garrison Follower Lib
+-- Follower Lib
 app.BaseFollower = {
 	__index = function(t, key)
 		if key == "key" then
 			return "followerID";
 		elseif key == "collectible" then
-			return true;
+			return app.GetDataMember("FollowersCollectible");
 		elseif key == "collected" then
-			return C_Garrison.IsFollowerCollected(t.followerID);
+			if app.GetDataMember("TrackFollowersAccountWide") then
+				if GetDataSubMember("CollectedFollowers", t.followerID) then return 1; end
+			else
+				if GetTempDataSubMember("CollectedFollowers", t.followerID) then return 1; end
+			end
+			if C_Garrison.IsFollowerCollected(t.followerID) then
+				SetTempDataSubMember("CollectedFollowers", t.followerID, 1);
+				SetDataSubMember("CollectedFollowers", t.followerID, 1);
+				return 1;
+			end
 		elseif key == "text" then
 			local info = t.info;
 			return info and info.name;
@@ -3788,6 +3801,7 @@ app.BaseHeirloom = {
 		if key == "key" then
 			return "itemID";
 		elseif key == "collectible" then
+			if t.factionID then return app.GetDataMember("FactionsCollectible"); end
 			return true;
 		elseif key == "collected" then
 			if C_Heirloom.PlayerHasHeirloom(t.itemID) or (t.s and t.s > 0 and GetDataSubMember("CollectedSources", t.s)) then return 1; end
@@ -9153,6 +9167,15 @@ app.events.VARIABLES_LOADED = function()
 		myfactions = {};
 		factions[app.Me] = myfactions;
 		SetTempDataMember("CollectedFactions", myfactions);
+	end
+	
+	-- Cache your character's follower data.
+	local followers = GetDataMember("CollectedFollowersPerCharacter", {});
+	local myFollowers = GetTempDataMember("CollectedFollowers", factions[app.Me]);
+	if not myFollowers then
+		myFollowers = {};
+		followers[app.Me] = myFollowers;
+		SetTempDataMember("CollectedFollowers", myFollowers);
 	end
 	
 	-- Register for Dynamic Events and Assign Filters
