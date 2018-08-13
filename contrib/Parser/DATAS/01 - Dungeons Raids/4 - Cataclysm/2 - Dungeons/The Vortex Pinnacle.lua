@@ -172,6 +172,7 @@ _.Instances =
 							cr(43875, e(116, { -- Asaad, Caliph of Zephyrs
 								i(56366),	-- Lightningflash
 								i(56374),	-- Lunar Halo
+								i(56376),	-- Thundercall
 								i(56369),	-- Billowing Cape
 								i(56371),	-- Shadow of Perfect Bliss
 								i(56368),	-- Gloves of Haze
@@ -179,12 +180,6 @@ _.Instances =
 								i(56367),	-- Legguards of Winnowing Wind
 								i(56373),	-- Ring of Frozen Rain
 								i(56370),	-- Heart of Thunder
-								nld({     	-- Legacy
-									["groups"] = {
-										i(56376),	-- Thundercall [Heroic] (7.3.5 - Removed from Game!)
-									},
-									
-								}),
 							})),
 						},
 					}),
