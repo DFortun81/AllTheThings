@@ -15,338 +15,347 @@ _.Zones =
 					desc(p(496), "Can be found on the beaches of the western coast in Ashenvale."), -- Rusty Snail
 					p(379), 	-- Squirrel
 					p(420), 	-- Toad
-					qh( 31814),	-- Analynn
-					qg(66136, qh(31815, { -- Zonya the Sadist
+					qh(31814, {	-- Analynn
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
+						["qg"] = 66135,	-- Dagra the Fierce
+					}),
+					qh(31815, { -- Zonya the Sadist
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+						["qg"] = 66136,	-- Zonya the Sadist
 						["repeatable"] = true,
-					})),
+					}),
 				}),
 				n(-17, { 	-- Quests
-					qg(17106, qa(26453)),	-- A Helping Hand (breadcrumb quest for 26454) (No Prereq)
-					qg(3897, qa(26481, {	-- A New Adornment
+					qa(26453, {	-- A Helping Hand
+						["qg"] = 17106,	-- Vindicator Palanaar
+						["isBreadcrumb"] = true,
+					}),
+					qa(26481, {	-- A New Adornment
+						["qg"] = 3897,	-- Krolg
+						["sourceQuests"] = { 13989 },	-- King of the Foulweald
+					}),
+					qa(13874, {	-- A Not-So-Charmed Life
+						["qg"] = 34239,	-- Hephaestus Pilgrim
+						["sourceQuests"] = { 13872 },	-- Worgen Wisdom
+					}),
+					qa(26454, {	-- A Shameful Waste
+						["qg"] = 17291,	-- Architect Nemos
+						["sourceQuests"] = { 26453 },	-- A Helping Hand
+					}),
+					qa(13624, {	-- A Squad of Your Own
+						["qg"] = 11806,	-- Sentinel Onaeya
+					}),
+					qa(13919, {	-- A Trip to the Moonwell
+						["qg"] = 3894,	-- Pelturas Whitemoon
+						["sourceQuests"] = { 26475 },	-- Elune's Tear
+					}),
+					qa(26457, {	-- Agents of Destruction  (No Prereq)
 						["groups"] = {
+							i(56642),	-- Starwhisper Monnions
+							i(56643),	-- Woodguard Vest
+							i(131532),	-- Starwhisper Spaulders
 						},
-						["sourceQuests"] = {13989},
-					})),
-					qg(34239, qa(13874, {	-- A Not-So-Charmed Life
+						["qg"] = 17287,	-- Sentinel Luciel Starwhisper
+					}),
+					qh(13841, {	-- All Apologies
+						["qg"] = 33726,	-- Splintertree Demolisher
+						["sourceQuests"] = { 13798 },	-- Rain of Destruction
+					}),
+					qa(13924, {	-- All's Well
 						["groups"] = {
+							i(56676),	-- Whitemoon Gloves
+							i(56677),	-- Belt of Healing Charms
+							i(56678),	-- Boots of the Deliverer
+							i(131320),	-- Whitemoon Mender Cord
 						},
-						["sourceQuests"] = {13872},
-					})),
-					qg(17291, qa(26454, {	-- A Shameful Waste (No Prereq)
+						["qg"] = 34358,	-- Avrus the Redeemed
+						["sourceQuests"] = { 13922 },	-- In the Hands of the Perverse
+					}),
+					qh(13870, {	-- As Good as it Gets
+						["qg"] = 33889,	-- Krokk
+						["sourceQuests"] = {
+							13815,	-- Making Stumps
+							13865,	-- Wet Work
+						},
+					}),
+					qh(6503, {	-- Ashenvale Outrunners
+						["qg"] = 12867,	-- Kuray'bin
+					}),
+					qa(13646, {	-- Astranaar Bound
+						["qg"] = 33445,	-- Sentinel Avana
+						["sourceQuests"] = { 26464 },	-- The Lost Gem
+					}),
+					qa(13849, {	-- Astranaar's Burning!
+						["qg"] = 4079,	-- Sentinel Thenysil
+					}),
+					qh(13848, {	-- Bad News Bear-er
+						["qg"] = 33837,	-- Kadrak
+						["sourceQuests"] = { 13805 },	-- Pierce Their Heart!
+					}),
+					qa(13642, {	-- Bathed in Light
+						["qg"] = 3847,	-- Orendil Broadleaf
+						["sourceQuests"] = { 13623 },	-- Delivery for Orendil
+					}),
+					qa(26473, {	-- Bathran's Hair
+						["qg"] = 33204,	-- Evenar Stillwhisper
+					}),
+					qh(13920, {	-- Before You Go...
 						["groups"] = {
+							i(56721),	-- Meat Packer Ribbon
+							i(56722),	-- Je'neu's Hunting Vest
+							i(56723),	-- Deerstalker Leggings
+							i(131319),	-- Je'neu's Ringmail Jerkin
 						},
-						["sourceQuests"] = {26453},
+						["qg"] = 34122,	-- Commander Grimfang
+						["sourceQuests"] = { 13890 },	-- Keep the Fires Burning
+					}),
+					i(16408, {	-- Befouled Water Globe
+						qh(1918, {	-- The Befouled Element
+							["qg"] = 12759,	-- Tideress
+							["sourceQuests"] = { 25 },	-- Simmer Down Now
+						}),
+					}),
+					qh(216, {	-- Between a Rock and a Thistlefur
+						["qg"] = 12757,	-- Karang Amakkar
+					}),
+					qdg(qh(26894, {	-- Blackfathom Deeps	-- removed?
+						["qg"] = 34122,	-- Commander Grimfang
 					})),
-					qg(11806, qa(13624)),	-- A Squad of Your Own (No Prereq)
-					qg(3894, qa(13919, {	-- A Trip to the Moonwell
-						["groups"] = {
-						},
-						["sourceQuests"] = {26475},
+					qdg(qa(26897, {	-- Blackfathom Deeps
+						["qg"] = 3845,	-- Shindrell Swiftfire
 					})),
-					qg(17287, qa(26457, {	-- Agents of Destruction  (No Prereq)
-						i(56642),
-						i(56643),
-						i(131532),
-					})),
-					qg(33726, qh(13841, {	-- All Apologies
-						["groups"] = {
-						},
-						["sourceQuests"] = {13798},
-					})),
-					qg(34358, qa(13924, {	-- All's Well
-						["groups"] = {
-							i(56676),
-							i(56677),
-							i(56678),
-							i(131320),
-						},
-						["sourceQuests"] = {13922},
-					})),
-					qg(33889, qh(13870, {	-- As Good as it Gets
-						["groups"] = {
-						},
-						["sourceQuests"] = {13815, 13865},
-					})),
-					qg(12867, qh( 6503)),	-- Ashenvale Outrunners (No Prereq)
-					qg(33445, qa(13646, {	-- Astranaar Bound
-						["groups"] = {
-						},
-						["sourceQuests"] = {26464},
-					})),
-					qg(4079, qa(13849)),	-- Astranaar's Burning! (No Prereq)
-					qg(33837, qh(13848, {	-- Bad News Bear-er
-						["groups"] = {
-						},
-						["sourceQuests"] = {13805},
-					})),
-					qg(3847, qa(13642, {	-- Bathed in Light
-						["groups"] = {
-						},
-						["sourceQuests"] = {13623},
-					})),
-					qg(33204, qa(26473)),	-- Bathran's Hair (No Prereq)
-					qg(34122, qh(13920, {	-- Before You Go...
-						["groups"] = {
-							i(56721),
-							i(56722),
-							i(56723),
-							i(131319),
-						},
-						["sourceQuests"] = {13890},
-					})),
-					{
-						["qg"] = 12759,	-- Tideress
-						["races"] = HORDE_ONLY,
-						["itemID"] = 16408,	-- Befouled Water Globe
-						["questID"] = 1918,	-- The Befouled Element
-						["sourceQuests"] = { 25 },	-- Simmer Down Now
-					},
-					qg(12757, qh(  216)),	-- Between a Rock and a Thistlefur (No Prereq)
-					qdg(qg(34122, qh(26894))),	-- Blackfathom Deeps (No Prereq)
-					qdg(qg(3845, qa(26897))),	-- Blackfathom Deeps (No Prereq)
-					qg(34359, qh(13947, {	-- Blastranaar!
+					qh(13947, {	-- Blastranaar!
 						["groups"]	= {
-							i(56661),
-							i(56662),
-							i(56663),
-							i(131323),
+							i(56661),	-- Preemptive Striker
+							i(56662),	-- Staff of Fiery Fate
+							i(56663),	-- Leggings of Hellscream's Watch
+							i(131323),	-- Tweedle's Blastproof Legguards
 						},
-						["sourceQuests"] = {13944},
-					})),
-					qg(33837, qh(13803, {	-- Blood of the Weak
+						["qg"] = 34359,	-- Captain Goggath
+						["sourceQuests"] = { 13944 },	-- Small Hands, Short Fuse
+					}),
+					qh(13803, {	-- Blood of the Weak
+						["qg"] = 33837,	-- Kadrak
+						["sourceQuests"] = { 13712 },	-- To The Rescue!
+					}),
+					qh(13943, {	-- Breathing Room
 						["groups"] = {
+							i(56667),	-- Cloak of Readiness
+							i(56668),	-- Bracers of Humility
+							i(56669),	-- Groundwork Shield
+							i(131322),	-- Preparation Wristguards
 						},
-						["sourceQuests"] = {13712},
-					})),
-					qg(34359, qh(13943, {	-- Breathing Room
+						["qg"] = 34359,	-- Captain Goggath
+						["sourceQuests"] = { 13936 },	-- Tweedle's Dumb
+					}),
+					qh(13983, {	-- Building Your Own Coffin
+						["qg"] = 34596,	-- Foreman Jinx
+						["sourceQuests"] = { 13977 },	-- Mass Production
+					}),
+					qa(13965, {	-- Check in on the Edunes
+						["qg"] = 3996,	-- Faldreas Goeth'Shael
+						["sourceQuests"] = { 26478 },	-- Playing Possum
+						["isBreadcrumb"] = true,
+					}),
+					qa(13985, {	-- Clear the Shrine
+						["qg"] = 34599,	-- Bolyun
+						["sourceQuests"] = { 13982 },	-- In a Bind
+					}),
+					qa(13766, {	-- Closure is Only Natural
+						["qg"] = 17310,	-- Gnarl
+						["sourceQuests"] = { 26446 },	-- Reclaiming Felfire Hill
+					}),
+					qh(13958, {	-- Condition Critical!
+						["qg"] = 34359,	-- Captain Goggath
+						["sourceQuests"] = { 13947 },	-- Blastranaar!
+					}),
+					i(46128, { 	-- Troll Charm
+						qa(13868, {	-- Corrupting Influence?
+							["qgs"] = {
+								3925,	-- Thistlefur Avenger
+								3924,	-- Thistlefur Shaman
+								3926,	-- Thistlefur Pathfinder
+								3921,	-- Thistlefur Ursa
+								3922,	-- Thistlefur Totemic
+							},
+						}),
+					}),
+					qh(13653, {	-- Crisis at Splintertree
 						["groups"] = {
-							i(56667),
-							i(56668),
-							i(56669),
-							i(131322),
+							i(56639),	-- Mourner's Stole
+							i(56640),	-- Leggings of Loss
+							i(56641),	-- Burden of Sacrifice
+							i(131299),	-- Griefbearer Leggings
 						},
-						["sourceQuests"] = {13936},
-					})),
-					qg(34596, qh(13983, {	-- Building Your Own Coffin
+						["qg"] = 33421,	-- Gorka
+						["sourceQuests"] = { 13651 },	-- Needs a Little Lubrication
+					}),
+					qa(13867, {	-- Culling the Furbolg Threat
+						["qg"] = 3691,	-- Raene Wolfrunner
+					}),
+					qa(26480, {	-- Dartol's Rod
+						["qg"] = 3691,	-- Raene Wolfrunner
+						["sourceQuests"] = { 26479 },	-- Return to Raene
+					}),
+					qh(13801, {	-- Dead Elves Walking
+						["qg"] = 12724,	-- Pixel
+						["sourceQuests"] = { 13803 },	-- Blood of the Weak
+					}),
+					qh(13901, {	-- Deep Despair
+						["qg"] = 12719,	-- Marukai
+						["sourceQuests"] = { 6442 },	-- Naga at the Zoram Strand
+					}),
+					qa(13935, {	-- Defend the Tree!
 						["groups"] = {
+							i(56670),	-- Raynewood Shield
+							i(56671),	-- Shadumbra's Wrath
+							i(56672),	-- Frostshadow Crossbow
+							i(131321),	-- Shadumbra's Might
 						},
-						["sourceQuests"] = {13977},
-					})),
-					qg(3996, qa(13965, {	-- Check in on the Edunes (breadcrumb quest for 13976)
+						["qg"] = 34377,	-- Halannia
+						["sourceQuests"] = { 13928 },	-- Recover the Fallen
+					}),
+					qa(13623, {	-- Delivery for Orendil
+						["qg"] = 33204,	-- Evenar Stillwhisper
+						["sourceQuests"] = { 26473 },	-- Bathran's Hair
+					}),
+					qh(13806, {	-- Demon Duty
+						["qg"] = 11820,	-- Locke Okarr
+						["sourceQuests"] = { 26449 },	-- Never Again!
+					}),
+					qa(26444, {	-- Destroy the Legion
+						["qg"] = 17303,	-- Vindicator Vedaar
+					}),
+					qh(26448, {	-- Destroy the Legion
+						["qg"] = 17355,	-- Valusha
+					}),
+					i(23798, {	-- Diabolical Plans
+						qh(26447, {	-- Diabolical Plans
+							["qgs"] = {
+								11697,	-- Mannoroc Lasher
+								6115,	-- Roaming Felguard
+								6073,	-- Searing Felguard
+							},
+						}),
+					}),
+					i(23777, {	-- Diabolical Plans
+						qa(26443, {	-- Diabolical Plans
+							["qgs"] = {
+								11697,	-- Mannoroc Lasher
+								6115,	-- Roaming Felguard
+								6073,	-- Searing Felguard
+							},
+						}),
+					}),
+					qh(13797, {	-- Dirty Deeds
+						["qg"] = 33760,	-- Durak
+						["sourceQuests"] = { 13751 },	-- Tell No One!
+					}),
+					qa(25613, {	-- Do Yourself a Favor
+						["qg"] = 40894,	-- Gnombus the X-Terminator
+						["sourceQuests"] = {
+							13913,	-- They Took Our Gnomes
+							25607,	-- Ze Gnomecorder
+						},
+					}),
+					qa(13594, {	-- Don't Forget the Horde
+						["qg"] = 33187,	-- Sentinel Shyela
+						["sourceQuests"] = {
+							26408,	-- Ashes in Ashenvale
+							28492,	-- Hero's Call: Ashenvale!
+						},
+					}),
+					qa(26476, {	-- Dryad Delivery
+						["qg"] = 3691,	-- Raene Wolfrunner
+						["sourceQuests"] = { 26475 },	-- Elune's Tear
+					}),
+					qa(26475, {	-- Elune's Tear
+						["qg"] = 3894,	-- Pelturas Whitemoon
+						["sourceQuests"] = { 26474 },	-- Orendil's Cure
+					}),
+					qa(13698, {	-- Explosives Shredding
 						["groups"] = {
-						},
-						["sourceQuests"] = {26478},
-					})),
-					qg(34599, qa(13985, {	-- Clear the Shrine
-						["groups"] = {
-						},
-						["sourceQuests"] = {13982},
-					})),
-					qg(17310, qa(13766, {	-- Closure is Only Natural
-						["groups"] = {
-						},
-						["sourceQuests"] = {26446},
-					})),
-					qg(34359, qh(13958, {	-- Condition Critical!
-						["groups"] = {
-						},
-						["sourceQuests"] = {13947},
-					})),
-					qg(3925, 				-- Thistlefur Avenger (No Prereq)
-						i(46128, { 	-- Troll Charm
-							qa(13868),	-- Corrupting Influence?
-						})
-					),
-					qg(3926, 				-- Thistlefur Pathfinder (No Prereq)
-						i(46128, { 	-- Troll Charm
-							qa(13868),	-- Corrupting Influence?
-						})
-					),
-					qg(3924,				-- Thistlefur Shaman (No Prereq)
-						i(46128, { 	-- Troll Charm
-							qa(13868),	-- Corrupting Influence?
-						})
-					),
-					qg(3922,				-- Thistlefur Totemic (No Prereq)
-						i(46128, { 	-- Troll Charm
-							qa(13868),	-- Corrupting Influence?
-						})
-					),
-					qg(3921,				-- Thistlefur Ursa (No Prereq)
-						i(46128, { 	-- Troll Charm
-							qa(13868),	-- Corrupting Influence?
-						})
-					),
-					qg(33421, qh(13653, {	-- Crisis at Splintertree
-						["groups"] = {
-							i(56639),
-							i(56640),
-							i(56641),
-							i(131299),
-						},
-						["sourceQuests"] = {13651},
-					})),
-					qg(3691, qa(13867)),	-- Culling the Furbolg Threat (No Prereq)
-					qg(3691, qa(26480, {	-- Dartol's Rod
-						["groups"] = {
-						},
-						["sourceQuests"] = {26479},
-					})),
-					qg(12724, qh(13801, {	-- Dead Elves Walking
-						["groups"] = {
-						},
-						["sourceQuests"] = {13803},
-					})),
-					qg(12719, qh(13901, {	-- Deep Despair
-						["groups"] = {
-						},
-						["sourceQuests"] = {6442},
-					})),
-					qg(34377, qa(13935, {	-- Defend the Tree!
-						["groups"] = {
-							i(56670),
-							i(56671),
-							i(56672),
-							i(131321),
-						},
-						["sourceQuests"] = {13928},
-					})),
-					qg(33204, qa(13623, {	-- Delivery for Orendil
-						["groups"] = {
-						},
-						["sourceQuests"] = {26473},
-					})),
-					qg(11820, qh(13806, {	-- Demon Duty
-						["groups"] = {
-						},
-						["sourceQuests"] = {26449},
-					})),
-					qg(17303, qa(26444)),	-- Destroy the Legion (No Prereq)
-					qg(17355, qh(26448)),	-- Destroy the Legion (No Prereq)
-					{
-						["qgs"] = {
-							11697,	-- Mannoroc Lasher
-							 6115,	-- Roaming Felguard
-							 6073,	-- Searing Felguard
-						},
-						["races"] = HORDE_ONLY,
-						["itemID"] = 23798,	-- Diabolical Plans
-						["questID"] = 26447,	-- Diabolical Plans
-					},
-					{
-						["qgs"] = {
-							11697,	-- Mannoroc Lasher
-							 6115,	-- Roaming Felguard
-							 6073,	-- Searing Felguard
-						},
-						["races"] = ALLIANCE_ONLY,
-						["itemID"] = 23777,	-- Diabolical Plans
-						["questID"] = 26443,	-- Diabolical Plans
-					},
-					qg(33760, qh(13797, {	-- Dirty Deeds
-						["groups"] = {
-						},
-						["sourceQuests"] = {13751},
-					})),
-					qg(40894, qa(25613, {	-- Do Yourself a Favor
-						["groups"] = {
-						},
-						["sourceQuests"] = {13913, 25607},
-					})),
-					qg(33187, qa(13594, {	-- Don't Forget the Horde (No Prereq)
-						["groups"] = {
-						},
-						["sourceQuests"] = {26408, 28492},
-					})),
-					qg(3691, qa(26476, {	-- Dryad Delivery
-						["groups"] = {
-						},
-						["sourceQuests"] = {26475},
-					})),
-					qg(3894, qa(26475, {	-- Elune's Tear
-						["groups"] = {
-						},
-						["sourceQuests"] = {26474},
-					})),
-					qg(17287, qa(13698, {	-- Explosives Shredding
-						["groups"] = {
-							i(56648),
-							i(56647),
-							i(56646),
-							i(131301),
+							i(56646),	-- Shredder Blade
+							i(56647),	-- Powder Burn Vest
+							i(56648),	-- Forestkeeper Legguards
+							i(131301),	-- Soot-Stained Chainmail Breastplate
 							i(156957),	-- Shredder Piston
 						},
-						["sourceQuests"] = {26457},
-					})),
-					qg(40895, qa(25621, {	-- Field Test: Gnomecorder
+						["qg"] = 17287,	-- Sentinel Luciel Starwhisper
+						["sourceQuests"] = { 26457 },	-- Agents of Destruction
+					}),
+					qa(25621, {	-- Field Test: Gnomecorder
+						["qg"] = 40895,	-- Professor Xakxak Gyromate
+						["sourceQuests"] = { 25615 },	-- Kalen Trueshot
+					}),
+					qh(13619, {	-- Final Report
+						["qg"] = 33294,	-- Gorat
+						["sourceQuests"] = { 13618 },	-- Find Gorat!
+					}),
+					qa(26463, {	-- Finding Teronis
+						["qg"] = 3847,	-- Orendil Broadleaf
+						["sourceQuests"] = { 13623 },	-- Evenar Stillwhisper
+					}),
+					qh(6482, {	-- Freedom to Ruul
+						["qg"] = 12818,	-- Ruul Snowhoof
+					}),
+					qa(13877, {	-- Go With The Flow
+						["qg"] = 34239,	-- Hephaestus Pilgrim
+						["sourceQuests"] = { 13874 },	-- A Not-So-Charmed Life
+					}),
+					qh(13875, {	-- Gurtar's Request
 						["groups"] = {
+							i(56655),	-- Bloodcup Slippers
+							i(56656),	-- Faithful Treads
+							i(56657),	-- Gloves of Unforgotten Vows
+							i(131309),	-- Faithful Footguards
 						},
-						["sourceQuests"] = {25615},
-					})),
-					qg(33294, qh(13619, {	-- Final Report
-						["groups"] = {
-						},
-						["sourceQuests"] = {13618},	-- Find Gorat!
-					})),
-					qg(3847, qa(26463, {	-- Finding Teronis
-						["groups"] = {
-						},
-						["sourceQuests"] = {13623},
-					})),
-					qg(12818, qh( 6482)),	-- Freedom to Ruul (No Prereq)
-					qg(34239, qa(13877, {	-- Go With The Flow
-						["groups"] = {
-						},
-						["sourceQuests"] = {13874},
-					})),
-					qg(34242, qh(13875, {	-- Gurtar's Request (No Prereq)
-						i(56655),
-						i(56656),
-						i(56657),
-						i(131309),
-					})),
-					qa(13921, {				-- He Who Would Be Forgiven
-						["groups"] = {
-						},
-						["sourceQuests"] = {13919},
+						["qg"] = 34242,	-- Guardian Gurtar
+						["sourceQuests"] = { 13873 },	-- Sheelah's Last Wish
+					}),
+					qa(13921, {	-- He Who Would Be Forgiven
+						["sourceQuests"] = { 13919 },	-- A Trip to the Moonwell
 						["description"] = "This quest is auto given to you once completing A Trip To The Moonwell.",
 					}),
-					qg(3894, qa(14018, {	-- He Who Would Be Forgiven
-						["groups"] = {
-						},
-						["sourceQuests"] = {13919},
+					qa(14018, {	-- He Who Would Be Forgiven
+						["qg"] = 3894,	-- Pelturas Whitemoon
+						["sourceQuests"] = { 13919 },	-- A Trip to the Moonwell
 						["description"] = "You can pick this quest up if you abandon the quest by the same name.",
-					})),
-					qg(34354, qa(25616, {	-- Hellscream's Legacy
-						["groups"] = {
+					}),
+					qa(25616, {	-- Hellscream's Legacy
+						["qg"] = 34354,	-- Huntress Jalin
+						["sourceQuests"] = { 25615 },	-- Return to Stardust
+					}),
+					q(13880, {	-- Hot Lava
+						["qg"] = 34290,	-- Core
+						["sourceQuests"] = {
+							13877,	-- Go With The Flow
+							13879,	-- Thunder Peak
 						},
-						["sourceQuests"] = {25615},
-					})),
-					qg(34290, q(13880, {	-- Hot Lava
-						["groups"] = {
+					}),
+					qa(13982, {	-- In a Bind
+						["qg"] = 3698,	-- Bolyun
+						["sourceQuests"] = { 13976 },	-- Three Fiends of the Forest
+					}),
+					qa(13922, {	-- In the Hands of the Perverse
+						["qg"] = 34335,	-- Avrus Illwhisper
+						["sourceQuests"] = {
+							13921,	-- He Who Would Be Forgiven
+							14018,	-- He Who Would Be Forgiven
 						},
-						["sourceQuests"] = {13877, 13879},
-					})),
-					qg(	3698, qa(13982, {	-- In a Bind
+					}),
+					qa(26472, {	-- Insane Druids
 						["groups"] = {
+							i(5813),	-- Emil's Brand
+							i(156959),	-- Emil's Staff
 						},
-						["sourceQuests"] = {13976},
-					})),
-					qg(34335, qa(13922, {	-- In the Hands of the Perverse
-						["groups"] = {
-						},
-						["sourceQuests"] = {13921, 14018},
-					})),
-					qg(33777, qa(26472, {	-- Insane Druids
-						["groups"] = {
-							i(5813),
-							i(156959), -- Emil's Staff
-						},
-						["sourceQuests"] = {13792},
-					})),
+						["qg"] = 33777,	-- Gaivan Shadewalker
+						["sourceQuests"] = { 13792 },	-- The Shadewalker
+					}),
 					qh(824, { -- Je'neu of the Earthen Ring
 						["groups"] = {
 							i(16659),	-- Deftkin Belt
@@ -356,610 +365,749 @@ _.Zones =
 						["qg"] = 12737, -- Mastok Wrilehiss
 						["sourceQuests"] = { 1918 }, -- Befouled Water Globe
 					}),
-					qg(34122, qh(13890, {	-- Keep the Fires Burning (No Prereq)
-						i(56715),
-						i(56716),
-						i(56717),
-						i(131314),
-					})),
-					qg(3897, qa(13989, {	-- King of the Foulweald
+					qh(13890, {	-- Keep the Fires Burning
 						["groups"] = {
-							i(56706),
-							i(56707), -- Band of Perserverence
+							i(56715),	-- Oily Bracers
+							i(56716),	-- Alighted Boots
+							i(56717),	-- Mystlash Bracers
+							i(131314),	-- Darkbreaker Treads
 						},
-						["sourceQuests"] = {26480},
-					})),
-					qg(12696, qh( 6621, { 	-- King of the Foulweald
+						["qg"] = 34122,	-- Commander Grimfang
+					}),
+					qa(13989, {	-- King of the Foulweald
 						["groups"] = {
-							i(17005),
-							i(17006),
-							i(131234),
-							i(56703), -- Jalin's Recompense
+							i(56706),	-- Greenpaw Belt
+							i(56707),	-- Band of Perserverence
 						},
-						["sourceQuests"] = {13967},
-					})),
-					qg(34303, qh(13883)),	-- Lousy Pieces of Ship (No Prereq)
-					qg(33889, qh(13815, {	-- Making Stumps
+						["qg"] = 3897,	-- Krolg
+						["sourceQuests"] = { 26480 },	-- Dartol's Rod
+					}),
+					qh(6621, { 	-- King of the Foulweald
 						["groups"] = {
+							i(17005),	-- Boorguard Tunic
+							i(17006),	-- Cobalt Legguards
+							i(131234),	-- Feral Vestment
 						},
-						["sourceQuests"] = {13808},
-					})),
-					qg(33421, qh(13640, {	-- Management Material
+						["qg"] = 12696,	-- Senani Thunderheart
+						["sourceQuests"] = { 13967 },	-- Thinning the... Heard?
+					}),
+					qh(13883, {	-- Lousy Pieces of Ship
+						["qg"] = 34303,	-- Dagrun Ragehammer
+					}),
+					qh(13815, {	-- Making Stumps
+						["qg"] = 33889,	-- Krokk
+						["sourceQuests"] = { 13808 },	-- Mission Improbable
+					}),
+					qh(13640, {	-- Management Material
 						["groups"] = {
-							i(56627),
-							i(56628),
-							i(56629),
-							i(131297),
+							i(56627),	-- Labor Camp Frock
+							i(56628),	-- Manager's Mantle
+							i(56629),	-- Hands of Encouragement
+							i(131297),	-- Gorka's Brass Shoulderguards
 						},
-						["sourceQuests"] = {13628},
-					})),
-					qg(34569, qh(13977, {	-- Mass Production
+						["qg"] = 33421,	-- Gorka
+						["sourceQuests"] = { 13628 },	-- Got Wood?
+					}),
+					qh(13977, {	-- Mass Production
+						["qg"] = 34569,	-- Flooz
+						["sourceQuests"] = { 13974 },	-- Tweedle's Tiny Package
+					}),
+					qh(13808, {	-- Mission Improbable
+						["qg"] = 33837,	-- Kadrak
+						["sourceQuests"] = { 13805 },	-- Pierce Their Heart!
+					}),
+					qh(6442, {	-- Naga at the Zoram Strand
+						["qg"] = 12719,	-- Marukai
+					}),
+					qa(13602, {	-- Naga of the Strand
+						["qg"] = 3845,	-- Shindrell Swiftfire
+					}),
+					qh(13651, {	-- Needs a Little Lubrication
+						["qg"] = 33421,	-- Gorka
+						["sourceQuests"] = { 13640 },	-- Management Material
+					}),
+					qa(26445, {	-- Never Again!
 						["groups"] = {
+							i(24119),	-- Band of Argus
+							i(24120),	-- Seal of Argus
+							i(24118),	-- Signet of Argus
 						},
-						["sourceQuests"] = {13974},
-					})),
-					qg(33837, qh(13808, {	-- Mission Improbable
+						["qg"] = 17303,	-- Vindicator Vedaar
+						["sourceQuests"] = { 26443 },	-- Diabolical Plans
+					}),
+					qh(26449, {	-- Never Again!
 						["groups"] = {
+							i(24119),	-- Band of Argus
+							i(24120),	-- Seal of Argus
+							i(24118),	-- Signet of Argus
 						},
-						["sourceQuests"] = {13805},
-					})),
-					qg(12719, qh( 6442)),	-- Naga at the Zoram Strand (No Prereq)
-					qg(3845, qa(13602)),	-- Naga of the Strand (No Prereq)
-					qg(33421, qh(13651, {	-- Needs a Little Lubrication
+						["qg"] = 17355,	-- Valusha
+						["sourceQuests"] = { 26447 },	-- Diabolical Plans
+					}),
+					qa(13595, {	-- Of Their Own Design
+						["qg"] = 33182,	-- Bathran
+					}),
+					qa(26474, {	-- Orendil's Cure
+						["qg"] = 3847,	-- Orendil Broadleaf
+						["sourceQuests"] = { 13642 },	-- Bathed in Light
+					}),
+					qh(13805, {	-- Pierce Their Heart!
 						["groups"] = {
+							i(56727),	-- Scrupleless Bracers
+							i(56728),	-- Bloodtaint Boots
+							i(56729),	-- Forest Heart Piercer
+							i(131304),	-- Heart-Corruptor Wristguards
 						},
-						["sourceQuests"] = {13640},
-					})),
-					qg(17303, qa(26445, {	-- Never Again!
+						["qg"] = 33760,	-- Durak
+						["sourceQuests"] = { 13803 },	-- Blood of the Weak
+					}),
+					qa(26478, {	-- Playing Possum
 						["groups"] = {
-							i(24119), -- Band of Argus
-							i(24120), -- Seal of Argus
-							i(24118), -- Signet of Argus
+							i(56664),	-- Shael'dryn's Bracers
+							i(56665),	-- Possumfoot Boots
+							i(56666),	-- Dissembling Bracers
+							i(131534),	-- Possumfoot Treads
 						},
-						["sourceQuests"] = {26443},
-					})),
-					qg(17355, qh(26449, {	-- Never Again!
+						["qg"] = 3916,	-- Shael'dryn
+						["sourceQuests"] = { 26477 },	-- Search the Bole
+					}),
+					qh(13730, {	-- Playing with Felfire
 						["groups"] = {
-							i(24119), -- Band of Argus
-							i(24120), -- Seal of Argus
-							i(24118), -- Signet of Argus
-						},
-						["sourceQuests"] = {26447},
-					})),
-					qg(33182, qa(13595)),	-- Of Their Own Design (No Prereq)
-					qg(3847, qa(26474, {	-- Orendil's Cure
-						["groups"] = {
-						},
-						["sourceQuests"] = {13642},
-					})),
-					qg(33760, qh(13805, {	-- Pierce Their Heart!
-						["groups"] = {
-							i(56727),
-							i(56728),
-							i(56729),
-							i(131304),
-						},
-						["sourceQuests"] = {13803},
-					})),
-					qg(3916, qa(26478, {	-- Playing Possum
-						["groups"] = {
-							i(56664),
-							i(56665),
-							i(56666),
-							i(131534),
-						},
-						["sourceQuests"] = {26477},
-					})),
-					qg(33726, qh(13730, {	-- Playing with Felfire
-						["groups"] = {
-							i(56649),
-							i(56650),
-							i(56651),
-							i(131302),
+							i(56649),	-- Folly's Edge
+							i(56650),	-- Felfire-Tainted Vest
+							i(56651),	-- Legguards of Abandoned Virtue
+							i(131302),	-- Felfire-Scorched Chesteguard
 							i(156958),	-- Scepter of Questionable Decision Making
 						},
-						["sourceQuests"] = {13803},
-					})),
-					qg(34292, q(13884, {	-- Put Out The Fire
-						["groups"] = {
-						},
-						["sourceQuests"] = {13877, 13879},
-					})),
-					qg(33760, qh(13798, {	-- Rain of Destruction
-						["groups"] = {
-							i(56711),
-							i(56712),
-							i(56713),
-							i(56714), -- Band of Foul Strength
-						},
-						["sourceQuests"] = {13797},
-					})),
-					qg(11219, qa(13632)),	-- Rear Guard Duty (No Prereq) 
-					qg(3885, qa(26838)),	-- Rebels Without a Clue (breadcrumb quest for 26735) (No Prereq)
-					qg(17310, qa(26446)),	-- Reclaiming Felfire Hill (No Prereq)
-					qg(3880, qa(13928)),	-- Recover the Fallen (No Prereq)
-					qg(17310, qa(13869, {	-- Recover the Remains
-						["groups"] = {
-						},
-						["sourceQuests"] = {26454},
-					})),
-					qg(3880, qa(26456, {	-- Report from the Northern Front
-						["groups"] = {
-						},
-						["sourceQuests"] = {13935},
-					})),
-					qg(11806, qa(13626, {	-- Respect for the Fallen
-						["groups"] = {
-							i(56630),
-							i(56631),
-							i(56632),
-							i(131296),
-						},
-						["sourceQuests"] = {13624},
-					})),
-					qg(3885, qa(26470, {	-- Retaking Mystral Lake (No Prereq)
-						["groups"] = {
-						},
-						["sourceQuests"] = {13964},
-					})),
-					qg(4079, qa(13853, {	-- Return Fire
-						["groups"] = {
-							i(56673),
-							i(56674),
-							i(56675),
-							i(131306),
-						},
-						["sourceQuests"] = {13849},
-					})),
-					qg(3916, qa(26479, {	-- Return to Raene
-						["groups"] = {
-						},
-						["sourceQuests"] = {26478},
-					})),
-					qg(3846, qa(26466, {	-- Ruuzel
-						["groups"] = {
-							i(5812),
-						},
-						["sourceQuests"] = {26465},
-					})),
-					qg(12724, qh( 6441, {	-- Satyr Horns
-						["groups"] = {
-						},
-						["sourceQuests"] = {26449},
-					})),
-					qg(3901, qa(26469, {	-- Satyr Slaying!
-						["groups"] = {
-						},
-						["sourceQuests"] = {26468},
-					})),
-					qg(3916, qa(26477, {	-- Search the Bole
-						["groups"] = {
-						},
-						["sourceQuests"] = {26476},
-					})),
-					qg(17304, qh(13871, {	-- Security!
-						["groups"] = {
-							i(56718),
-							i(56719),
-							i(56720),
-							i(131308),
-						},
-						["sourceQuests"] = {13870},
-					})),
-					desc(qg(14753, qa( 7865)), "Requires Friendly Reputation with Silverwing Sentinels."),	-- Sentinel Advanced Care Package
-					desc(qg(14753, qa( 7863)), "Requires Friendly Reputation with Silverwing Sentinels."),	-- Sentinel Basic Care Package
-					desc(qg(14753, qa( 7864)), "Requires Friendly Reputation with Silverwing Sentinels."),	-- Sentinel Standard Care Package
-					qg(34395, qh(13942, {	-- Set Us Up the Bomb
-						["groups"] = {
-						},
-						["sourceQuests"] = {13936},
-					})),
-					{
-						["qg"] = 12677,	-- Shadumbra
-						["races"] = HORDE_ONLY,
-						["itemID"] = 16304,	-- Shadumbra's Head
-						["questID"] = 24,	-- Shadumbra's Head
-					},
-					{
-						["qg"] = 12676,	-- Sharptalon
-						["races"] = HORDE_ONLY,
-						["itemID"] = 16305,	-- Sharptalon's Claw
-						["questID"] = 2,	-- Sharptalon's Claw
-					},
-					qg(34233, qh(13873, {	-- Sheelah's Last Wish
-						["groups"] = {
-						},
-						["sourceQuests"] = {13871},
-					})),
-					qg(34559, qh(   25)),	-- Simmer Down Now (No Prereq)
-					qg(34395, qh(13944, {	-- Small Hands, Short Fuse
-						["groups"] = {
-						},
-						["sourceQuests"] = {13942},
-					})),
-					qg(34518, qh(13962, {	-- Stalemate
-						["groups"] = {
-						},
-						["sourceQuests"] = {13958},
-					})),
-					qg(33727, qa(13683, {	-- Stopping the Rituals
-						["groups"] = {
-						},
-						["sourceQuests"] = {26468},
-					})),
-					qg(33726, qh(13751, {	-- Tell No One!
-						["groups"] = {
-						},
-						["sourceQuests"] = {13730},
-					})),
-					qg(33443, qa(13644, {	-- That Which has Risen (No Prereq)
-						i(56652),
-						i(56653),
-						i(56654),
-						i(131298),
-					})),
-					qg(3846, qa(26465, {	-- The Ancient Statuettes (No Prereq)
-						["groups"] = {
-						},
-						["sourceQuests"] = {13617},
-					})),
-					{
-						["qg"] = 12759,	-- Tideress
-						["races"] = HORDE_ONLY,
-						["itemID"] = 16408,	-- Befouled Water Glove
-						["questID"] = 1918,	-- The Befouled Element
-					},
-					qg(3920, qa(26468, {	-- The Branch of Cenarius
-						["groups"] = {
-							i(5820),
-							i(11229),
-						},
-						["sourceQuests"] = {26467},
-					})),
-					qg(34303, qh(26890)),	-- The Essence of Aku'Mai (No Prereq)
-					qg(33777, qa(13796, {	-- The Forest Heart
-						["groups"] = {
-							i(56636),
-							i(56637),
-							i(56638),
-							i(131303),
-						},
-						["sourceQuests"] = {13792},
-					})),
-					qg(34354, qa(13979, {	-- The Goblin Braintrust (No Prereq)
-						i(56704),
-						i(56705),
-						i(131326),
-						i(56703), -- Jalin's Recompense
-					})),
-					qg(34604, qa(13987, {	-- The Last Stand
-						["groups"] = {
-							i(56689),
-							i(56690),
-							i(56691),
-							i(131327),
-						},
-						["sourceQuests"] = {13985},
-					})),
-					qg(3848, qa(26455)),	-- The Lost Chalice (No Prereq)
-					qg(3891, qa(26464, {	-- The Lost Gem
-						["groups"] = {
-							i(56624),
-							i(56625),
-							i(56626),
-							i(131533),
-						},
-						["sourceQuests"] = {26463},
-					})),
-					qg(33276, qa(13630)),	-- The Reason Why (No Prereq)
-					qg(17310, qa(13792, {	-- The Shadewalker
-						["groups"] = {
-						},
-						["sourceQuests"] = {13766},
-					})),
-					{
-						["questID"] = 29310,	-- The Tipping Point
-						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
-						["sourceQuest"] = 29303,	-- Source Quest: Tragedy and Family
-						["lvl"] = 85
-					},
-					o(195134, { 			-- The Bomb (No Prereq)
-						qa(13981),		-- They Set Them Up The Bomb!
+						["qg"] = 33726,	-- Splintertree Demolisher
+						["sourceQuests"] = { 13803 },	-- Kadrak
 					}),
-					qg(34354, qa(13913, {	-- They Took Our Gnomes
-						["groups"] = {
+					q(13884, {	-- Put Out The Fire
+						["qg"] = 34292,	-- Arctanus
+						["sourceQuests"] = {
+							13877,	-- Go With The Flow
+							13879,	-- Thunder Peak
 						},
+					}),
+					qh(13798, {	-- Rain of Destruction
+						["groups"] = {
+							i(56711),	-- Impish Blade
+							i(56712),	-- Accursed Mace
+							i(56713),	-- Durak's Wand
+							i(56714),	-- Band of Foul Strength
+						},
+						["qg"] = 33760,	-- Durak
+						["sourceQuests"] = { 13797 },	-- Dirty Deeds
+					}),
+					qa(13632, {	-- Rear Guard Duty (No Prereq) 
+						["qg"] = 11219,	-- Liladris Moonriver
+					}),
+					qa(26838, {	-- Rebels Without a Clue
+						["qg"] = 3885,	-- Sentinel Velene Starstrike
+						["isBreadcrumb"] = true,
+					}),
+					qa(26446, {	-- Reclaiming Felfire Hill
+						["qg"] = 17310,	-- Gnarl
+					}),
+					qa(13928, {	-- Recover the Fallen
+						["qg"] = 3880,	-- Sentinel Melyria Frostshadow
+					}),
+					qa(13869, {	-- Recover the Remains
+						["qg"] = 17310,	-- Gnarl
+						["sourceQuests"] = { 26454 },	-- A Shameful Waste
+					}),
+					qa(26456, {	-- Report from the Northern Front
+						["qg"] = 3880,	-- Sentinel Melyria Frostshadow
+						["sourceQuests"] = { 13935 },	-- Defend the Tree!
+					}),
+					qa(13626, {	-- Respect for the Fallen
+						["groups"] = {
+							i(56630),	-- Delgren's Leggings
+							i(56631),	-- Onaeya's Gloves
+							i(56632),	-- Feero's Pauldrons
+							i(131296),	-- Feero's Ringmail Grips
+						},
+						["qg"] = 11806,	-- Sentinel Onaeya
+						["sourceQuests"] = { 13624 },	-- A Squad of Your Own
+					}),
+					qa(26470, {	-- Retaking Mystral Lake
+						["qg"] = 3885,	-- Sentinel Velene Starstrike
+						["sourceQuests"] = { 13964 },	-- To the Spire
+					}),
+					qa(13853, {	-- Return Fire
+						["groups"] = {
+							i(56673),	-- Fiery Loop
+							i(56674),	-- Thenysil's Vest
+							i(56675),	-- Astranaar Legguards
+							i(131306),	-- Glaivethrower Expert's Chestpiece
+						},
+						["qg"] = 4079,	-- Sentinel Thenysil
+						["sourceQuests"] = { 13849 },	-- Astranaar's Burning!
+					}),
+					qa(26479, {	-- Return to Raene
+						["qg"] = 3916,	-- Raene Wolfrunner
+						["sourceQuests"] = { 26478 },	-- Playing Possum
+					}),
+					qa(26466, {	-- Ruuzel
+						["groups"] = {
+							i(5812),	-- Robes of Antiquity
+						},
+						["qg"] = 3846,	-- Talen
+						["sourceQuests"] = { 26465 },	-- The Ancient Statuettes
+					}),
+					qh(6441, {	-- Satyr Horns
+						["qg"] = 12724,	-- Pixel
+						["sourceQuests"] = { 26449 },	-- Never Again!
+					}),
+					qa(26469, {	-- Satyr Slaying!
+						["qg"] = 3901,	-- Illiyana
+						["sourceQuests"] = { 26468 },	-- The Branch of Cenarius
+					}),
+					qa(26477, {	-- Search the Bole
+						["qg"] = 3916,	-- Shael'dryn
+						["sourceQuests"] = { 26476 },	-- Dryad Delivery
+					}),
+					qh(13871, {	-- Security!
+						["groups"] = {
+							i(56718),	-- Detective Buckler
+							i(56719),	-- Pilfered Kaldorei Belt
+							i(56720),	-- Security Crossbow
+							i(131308),	-- Gorthak's Tool Belt
+						},
+						["qg"] = 17304,	-- Overseer Gorthak
+						["sourceQuests"] = { 13870 },	-- As Good as it Gets
+					}),
+					qa(7865, {	-- Sentinel Advanced Care Package
+						["qg"] = 14753,	-- Illiyana Moonblaze
+						["description"] = "Requires Friendly Reputation with Silverwing Sentinels.",
+					}),
+					qa(7863, {	-- Sentinel Basic Care Package
+						["qg"] = 14753,	-- Illiyana Moonblaze
+						["description"] = "Requires Friendly Reputation with Silverwing Sentinels.",
+					}),
+					qa(7864, {	-- Sentinel Standard Care Package
+						["qg"] = 14753,	-- Illiyana Moonblaze
+						["description"] = "Requires Friendly Reputation with Silverwing Sentinels.",
+					}),
+					qh(13942, {	-- Set Us Up the Bomb
+						["qg"] = 34395,	-- Tweedle
+						["sourceQuests"] = { 13936 },	-- Tweedle's Dumb
+					}),
+					i(16304, {	-- Shadumbra's Head
+						qh(24, {	-- Shadumbra's Head
+							["qg"] = 12677,	-- Shadumbra
+						}),
+					}),
+					i(16305, {	-- Sharptalon's Claw
+						qh(2, {	-- Sharptalon's Claw
+							["qg"] = 12676,	-- Sharptalon
+						}),
+					}),
+					qh(13873, {	-- Sheelah's Last Wish
+						["qg"] = 34233,	-- Guardian Menerin
+						["sourceQuests"] = { 13871 },	-- Security!
+					}),
+					qh(25, {	-- Simmer Down Now
+						["qg"] = 34559,	-- Captain Tarkan
+					}),
+					qh(13944, {	-- Small Hands, Short Fuse
+						["qg"] = 34395,	-- Tweedle
+						["sourceQuests"] = { 13942 },	-- Set Us Up The Bomb
+					}),
+					qh(13962, {	-- Stalemate
+						["qg"] = 34518,	-- Thagg
+						["sourceQuests"] = { 13958 },	-- Condition Critical!
+					}),
+					qa(13683, {	-- Stopping the Rituals
+						["qg"] = 33727,	-- Anchorite Buurq
+						["sourceQuests"] = { 26468 },	-- The Branch of Cenarius
+					}),
+					qh(13751, {	-- Tell No One!
+						["qg"] = 33726,	-- Sprintertree Demolisher
+						["sourceQuests"] = { 13730 },	-- Playing With Felfire
+					}),
+					qa(13644, {	-- That Which has Risen
+						["groups"] = {
+							i(56652),	-- Ablution Slippers
+							i(56653),	-- Somber Treads
+							i(56654),	-- Heartwise Boon
+							i(131298),	-- Somber Boots
+						},
+						["qg"] = 33443,	-- Keeper Heartwise
+					}),
+					qa(26465, {	-- The Ancient Statuettes
+						["qg"] = 3846,	-- Talen
+						["sourceQuests"] = { 13617 },	-- West to the Strand
+					}),
+					i(16408, {
+						qh(1918, {
+							["qg"] = 12759,	-- Tideress
+						}),
+					}),
+					qa(26468, {	-- The Branch of Cenarius
+						["groups"] = {
+							i(5820),	-- Faerie Mantle
+							i(11229),	-- Brightplate Girdle
+						},
+						["qg"] = 3920,	-- Anilia
+						["sourceQuests"] = { 26467 },	-- Vile Satyr! Dryads in Danger!
+					}),
+					qh(26890, {	-- The Essence of Aku'Mai
+						["qg"] = 34303,	-- Dagrun Ragehammer
+					}),
+					qa(13796, {	-- The Forest Heart
+						["groups"] = {
+							i(56636),	-- Forest Grace Mantle
+							i(56637),	-- Severed Druid's Leggings
+							i(56638),	-- Gnarlbark Shoulders
+							i(131303),	-- Barkburn Legguards
+						},
+						["qg"] = 33777,	-- Gaivan Shadewalker
+						["sourceQuests"] = { 13792 },	-- The Shadewalker
+					}),
+					qa(13979, {	-- The Goblin Braintrust
+						["groups"] = {
+							i(56703),	-- Jalin's Recompense
+							i(56704),	-- Braintrust Vest
+							i(56705),	-- Skunkworks Sword
+							i(131326),	-- Bombgineer Blasting Vest
+						},
+						["qg"] = 34354,	-- Huntress Jalin
+					}),
+					qa(13987, {	-- The Last Stand
+						["groups"] = {
+							i(56689),	-- Adansonian Cloak
+							i(56690),	-- Unringed Bands
+							i(56691),	-- Baobab Fruit Shell
+							i(131327),	-- Sheltered Aessina Wristguards
+						},
+						["qg"] = 34604,	-- Big Baobob
+						["sourceQuests"] = { 13985 },	-- Clear the Shrine
+					}),
+					qa(26455, {	-- The Lost Chalice
+						["qg"] = 3848,	-- Kayneth Stillwind
+					}),
+					qa(26464, {	-- The Lost Gem
+						["groups"] = {
+							i(56624),	-- Falathim-Washed Robes
+							i(56625),	-- Broadleaf Mantle
+							i(56626),	-- Maestra's Gloves
+							i(131533),	-- Broadleaf Spaulders
+						},
+						["qg"] = 3891,	-- Teronis' Corpse
+						["sourceQuests"] = { 26463 },	-- Finding Teronis
+					}),
+					qa(13630, {	-- The Reason Why
+						["qg"] = 33276,	-- Moon Priestess Maestra
+					}),
+					qa(13792, {	-- The Shadewalker
+						["qg"] = 17310,	-- Gnarl
+						["sourceQuests"] = { 13766 },	-- Closure is Only Natural
+					}),
+					q(29310, {	-- The Tipping Point
+						["qg"] = 11801,	-- Rabine Saturna
+						["lvl"] = 85,
+						["sourceQuests"] = { 29303 },	-- Tragedy and Family
+					}),
+					o(195134, {	-- The Bomb
+						qa(13981),	-- They Set Them Up The Bomb!
+					}),
+					qa(13913, {	-- They Took Our Gnomes
+						["qg"] = 34354,	-- Huntress Jalin
 						["sourceQuests"] = { 28539 },	-- Hero's Call: Stonetalon Mountains!
-					})),
-					qg(34596, qh(13980, {	-- They're Out There!
+					}),
+					qh(13980, {	-- They're Out There!
 						["groups"] = {
-							i(56692),
-							i(56693), -- Backwatcher's Ring
+							i(56692),	-- Weaponized Belt
+							i(56693),	-- Backwatcher's Ring
 						},
-						["sourceQuests"] = {13977},
-					})),
-					qg(12696, qh(13967)),	-- Thinning the... Herd? (No Prereq)
-					qg(24739, qa(13976, {	-- Three Friends of the Forest (No Prereq)
+						["qg"] = 34596,	-- Foreman Jinx
+						["sourceQuests"] = { 13977 },	-- Mass Production
+					}),
+					qh(13967, {	-- Thinning the... Herd?
+						["qg"] = 12696,	-- Senani Thunderheart
+					}),
+					qa(13976, {	-- Three Friends of the Forest
+						["qg"] = 24739,	-- Benjari Edune
+						["sourceQuests"] = { 13965 },	-- Check in on the Edunes
+					}),
+					qh(13879, {	-- Thunder Peak
+						["qg"] = 34510,	-- Broyk
+						["sourceQuests"] = { 13947 },	-- Blastranaar!
+					}),
+					qh(13923, {	-- To Hellscream's Watch
+						["qg"] = 34122,	-- Commander Grimfang
+						["sourceQuests"] = { 13920 },	-- Before You Go...
+					}),
+					qa(13645, {	-- To Raene Wolfrunner
+						["qg"] = 3847,	-- Orendil Broadleaf
+						["sourceQuests"] = { 26464 },	-- The Lost Gem
+					}),
+					qh(13866, {	-- To The Ramparts!
+						["qg"] = 34195,	-- Kulg Gorespatter
+						["sourceQuests"] = { 24463 },	-- Probing into Ashenvale
+						["isBreadcrumb"] = true,
+					}),
+					qa(13964, {	-- To the Spire
+						["qg"] = 4079,	-- Sentinel Thenysil
+						["sourceQuests"] = { 26478 },	-- Playing Possum
+						["isBreadcrumb"] = true,
+					}),
+					qa(13876, {	-- Too Far Gone
 						["groups"] = {
+							i(56622),	-- Thistle Ring
+							i(56623),	-- Zoram'gar Cloak
 						},
-						["sourceQuests"] = {13965},
-					})),
-					qg(34510, qh(13879, {	-- Thunder Peak
+						["qg"] = 34251,	-- Vear Darksnout
+						["sourceQuests"] = { 13868 },	-- Corrupting Influence?
+					}),
+					qh(6544, { 	-- Torek's Assault
 						["groups"] = {
+							i(16889),	-- Polished Walking Staff
+							i(16890),	-- Slatemetal Cutlass
+							i(156956),	-- Rugged Walking Staff
 						},
-						["sourceQuests"] = {13947},
-					})),
-					qg(34122, qh(13923, {	-- To Hellscream's Watch (breadcrumb for 13936)
+						["qg"] = 12858,	-- Torek
+					}),
+					qh(6462, {	-- Troll Charm
+						["qg"] = 12721,	-- Mitsuwa
+					}),
+					qa(26482, {	-- True Power of the Rod
 						["groups"] = {
+							i(56694),	-- Silverwind Bracers
+							i(56695),	-- Wolfrunner Boots
+							i(56696),	-- Legacy of Teronis
+							i(131535),	-- Wolfrunner Wristbands
 						},
-						["sourceQuests"] = {13920},
-					})),
-					qg(3847, qa(13645, {	-- To Raene Wolfrunner
+						["qg"] = 3897,	-- Krolg
+						["sourceQuests"] = { 26481 },	-- A New Adornment
+					}),
+					qh(13936, {	-- Tweedle's Dumb
+						["qg"] = 34359,	-- Captain Goggath
+						["sourceQuests"] = { 13923 },	-- To Hellscream's Watch
+					}),
+					qh(13974, {	-- Tweedle's Tiny Package
+						["qg"] = 34395,	-- Tweedle
+						["sourceQuests"] = { 13947 },	-- Blastranaar!
+					}),
+					i(16303, {
+						qh(23, {
+							["qg"] = 12678,	-- Ursangous
+						}),
+					}),
+					qa(26467, {	-- Vile Satyr! Dryads in Danger!
+						["qg"] = 3901,	-- Illiyana
+					}),
+					qh(6641, {	-- Vorsha the Lasher
 						["groups"] = {
+							i(17692), -- Horn Ring
 						},
-						["sourceQuests"] = {26464},
-					})),
-					qg(34195, qh(13866, {	-- To The Ramparts! (breadcrumb quest for 13612)
+						["qg"] = 12717,	-- Muglash
+					}),
+					qa(13886, {	-- Vortex
 						["groups"] = {
+							i(56683),	-- Blossom of the Earthen Ring
+							i(56684),	-- Subduer's Gloves
+							i(56685),	-- Belt of Equilibrium
+							i(131312),	-- Subduer's Gauntlets
 						},
-						["sourceQuests"] = {24463},
-					})),
-					qg(4079, qa(13964, {	-- To the Spire (breadcrumb quest for 26470)
+						["qg"] = 34289,	-- The Vortex
+						["sourceQuests"] = {
+							13880,	-- Hot Lava
+							13884,	-- Put Out The Fire
+						},
+					}),
+					qh(13888, {	-- Vortex
 						["groups"] = {
+							i(56686),	-- Blossom of the Earthen Ring
+							i(56687),	-- Subduer's Gloves
+							i(56688),	-- Belt of Equilibrium
+							i(131313),	-- Subduer's Gauntlets
 						},
-						["sourceQuests"] = {26478},
-					})),
-					qg(34251, qa(13876, {	-- Too Far Gone
+						["qg"] = 34289,	-- The Vortex
+						["sourceQuests"] = {
+							13880,	-- Hot Lava
+							13884,	-- Put Out The Fire
+						},
+					}),
+					qh(25945, {	-- We're Here to Do One Thing, Maybe Two...
+						["qg"] = 41678,	-- Blood Guard Aldo Rockrain
+						["sourceQuests"] = { 28532 },	-- Warchief's Command: Stonetalon Mountains!
+					}),
+					qh(26416, {	-- Well, Come to the Jungle
+						["qg"] = 43063,	-- Cromula
+					}),
+					qa(13617, {	-- West to the Strand
+						["qg"] = 33187,	-- Sentinel Shyela
+						["sourceQuests"] = { 13594 },	-- Don't Forget the Horde
+						["isBreadcrumb"] = true,
+					}),
+					qh(13865, {	-- Wet Work
 						["groups"] = {
-							i(56623),
-							i(56622), -- Thistle Ring
+							i(56724),	-- Wet Work Gloves
+							i(56725),	-- Belt of Secret Signs
+							i(56726),	-- Disarray Boots
+							i(131307),	-- Krokk's Notched Belt
 						},
-						["sourceQuests"] = {13868},
-					})),
-					qg(12858, qh( 6544, { 	-- Torek's Assault (No Prereq)
-						i(16889),
-						i(16890),
-						i(156956),	-- Rugged Walking Staff
-					})),
-					qg(12721, qh( 6462)),	-- Troll Charm (No Prereq)
-					qg(3897, qa(26482, {	-- True Power of the Rod
-						["groups"] = {
-							i(56694),
-							i(56695),
-							i(56696),
-							i(131535),
-						},
-						["sourceQuests"] = {26481},
-					})),
-					qg(34359, qh(13936, {	-- Tweedle's Dumb (No Prereq)
-						["groups"] = {
-						},
-						["sourceQuests"] = {13923},
-					})),
-					qg(34395, qh(13974, {	-- Tweedle's Tiny Package
-						["groups"] = {
-						},
-						["sourceQuests"] = {13947},
-					})),
-					{
-						["qg"] = 12678,	-- Ursangous
-						["races"] = HORDE_ONLY,
-						["itemID"] = 16303,	-- Ursangous' Paw
-						["questID"] = 23,	-- Ursangous' Paw
-					},
-					qg(3901, qa(26467)),	-- Vile Satyr! Dryads in Danger! (No Prereq)
-					qg(12717, qh( 6641, {	-- Vorsha the Lasher (No Prereq)
-						i(17692), -- Horn Ring
-					})),
-					qg(34289, qa(13886, {	-- Vortex
-						["groups"] = {
-							i(56683),
-							i(56684),
-							i(56685),
-							i(131312),
-						},
-						["sourceQuests"] = {13880,13884},
-					})),
-					qg(34289, qh(13888, {	-- Vortex
-						["groups"] = {
-							i(56686),
-							i(56687),
-							i(56688),
-							i(131313),
-						},
-						["sourceQuests"] = {13880,13884},
-					})),
-					qg(41678, qh(25945, {	-- We're Here to Do One Thing, Maybe Two... (No Prereq)
-						["groups"] = {
-						},
-						["sourceQuests"] = {28532},
-					})),
-					qg(43063, qh(26416)),	-- Well, Come to the Jungle (No Prereq)
-					qg(33187, qa(13617, {	-- West to the Strand (breadcrumb quest for 26465)
-						["groups"] = {
-						},
-						["sourceQuests"] = {13594},
-					})),
-					qg(33889, qh(13865, {	-- Wet Work
-						["groups"] = {
-							i(56724),
-							i(56725),
-							i(56726),
-							i(131307),
-						},
-						["sourceQuests"] = {13808},
-					})),
-					qg(3691, qa(13872, {	-- Worgen Wisdom
-						["groups"] = {
-						},
-						["sourceQuests"] = {13868},
-					})),
-					qg(40895, qa(25607)),	-- Ze Gnomecorder (No Prereq)
+						["qg"] = 33889,	-- Krokk
+						["sourceQuests"] = { 13808 },	-- Mission Improbable
+					}),
+					qa(13872, {	-- Worgen Wisdom
+						["qg"] = 3691,	-- Raene Wolfrunner
+						["sourceQuests"] = { 13868 },	-- Corrupting Influence?
+					}),
+					qa(25607, {	-- Ze Gnomecorder
+						["qg"] = 40895,	-- Professor Xakxak Gyromate
+					}),
 				}),
 				n(-16, { 	-- Rares
 					n(3773, { 	-- Akkrilus
-						dr(41.0, i(6569)),	-- Shimmering Robe
-						dr(04.0, i(9799)),	-- Ivycloth Sash
-						dr(04.0, i(9803)),	-- Superior Bracers
-						dr(03.0, i(6593)),	-- Battleforge Cloak
-						dr(03.0, i(6604)),	-- Dervish Cape
-						dr(03.0, i(9817)),	-- Fortified Spaulders
-						dr(03.0, i(9792)),	-- Ivycloth Boots
-						dr(03.0, i(9795)),	-- Ivycloth Gloves
-						dr(03.0, i(9802)),	-- Superior Boots
-						dr(01.9, i(6600)),	-- Dervish Belt
-						dr(01.8, i(9796)),	-- Ivycloth Mantle
-						dr(01.7, i(9806)),	-- Superior Gloves
-						dr(01.6, i(9815)),	-- Fortified Leggings
-						dr(01.6, i(9793)),	-- Ivycloth Bracelets
-						dr(01.5, i(9810)),	-- Fortified Boots
-						dr(01.5, i(6567)),	-- Shimmering Armor
-						dr(01.4, i(9818)),	-- Fortified Chain
-						dr(01.4, i(6584)),	-- Scouting Tunic
-						dr(01.3, i(6591)),	-- Battleforge Wristguards
-						dr(01.3, i(4715)),	-- Emblazoned Cloak
-						dr(01.2, i(6602)),	-- Dervish Bracers
-						dr(01.2, i(9794)),	-- Ivycloth Cloak
-						dr(01.1, i(9813)),	-- Fortified Gauntlets
+						i(9838),	-- Banded Cloak
+						i(6592),	-- Battleforge Armor
+						i(6590),	-- Battleforge Boots
+						i(6593),	-- Battleforge Cloak
+						i(6595),	-- Battleforge Gauntlets
+						i(6594),	-- Battleforge Girdle
+						i(6596),	-- Battleforge Legguards
+						i(6597),	-- Battleforge Shoulderguards
+						i(6591),	-- Battleforge Wristguards
+						i(6600),	-- Dervish Belt
+						i(6601),	-- Dervish Boots
+						i(6602),	-- Dervish Bracers
+						i(6604),	-- Dervish Cape
+						i(6605),	-- Dervish Gloves
+						i(7415),	-- Dervish Spaulders
+						i(4715),	-- Emblazoned Cloak
+						i(9810),	-- Fortified Boots
+						i(9818),	-- Fortified Chain
+						i(9813),	-- Fortified Gauntlets
+						i(9815),	-- Fortified Leggings
+						i(9817),	-- Fortified Spaulders
+						i(9792),	-- Ivycloth Boots
+						i(9793),	-- Ivycloth Bracelets
+						i(9794),	-- Ivycloth Cloak
+						i(9795),	-- Ivycloth Gloves
+						i(9796),	-- Ivycloth Mantle
+						i(9797),	-- Ivycloth Pants
+						i(9799),	-- Ivycloth Sash
+						i(9791),	-- Ivycloth Tunic
+						i(6612),	-- Sage's Boots
+						i(6613),	-- Sage's Bracers
+						i(6614),	-- Sage's Cloak
+						i(6615),	-- Sage's Gloves
+						i(6611),	-- Sage's Sash
+						i(6584),	-- Scouting Tunic
+						i(6567),	-- Shimmering Armor
+						i(6569),	-- Shimmering Robe
+						i(9801),	-- Superior Belt
+						i(9802),	-- Superior Boots
+						i(9803),	-- Superior Bracers
+						i(9806),	-- Superior Gloves
+						i(9808),	-- Superior Leggings
+						i(9807),	-- Superior Shoulders
+						i(9809),	-- Superior Tunic
 					}),
 					n(3735, { 	-- Apothecary Falthis
-						dr(32.0, i(9811)),	-- Fortified Bracers
-						dr(04.0, i(6581)),	-- Scouting Belt
-						dr(03.0, i(9781)),	-- Bandit Pants
-						dr(03.0, i(6576)),	-- Defender Girdle
-						dr(03.0, i(9812)),	-- Fortified Cloak
-						dr(03.0, i(9772)),	-- Greenweave Leggings
-						dr(03.0, i(10287)),	-- Greenweave Mantle
-						dr(03.0, i(6582)),	-- Scouting Boots
-						dr(03.0, i(6583)),	-- Scouting Bracers
-						dr(03.0, i(6562)),	-- Shimmering Boots
-						dr(03.0, i(6563)),	-- Shimmering Bracers
-						dr(03.0, i(6564)),	-- Shimmering Cloak
-						dr(03.0, i(6565)),	-- Shimmering Gloves
-						dr(03.0, i(6570)),	-- Shimmering Sash
-						dr(02.0, i(6574)),	-- Defender Bracers
-						dr(01.8, i(9805)),	-- Superior Cloak
-						dr(01.7, i(6580)),	-- Defender Tunic
-						dr(01.6, i(6587)),	-- Scouting Trousers
-						dr(01.5, i(6578)),	-- Defender Leggings
-						dr(01.4, i(6573)),	-- Defender Boots
-						dr(01.4, i(9773)),	-- Greenweave Robe
-						dr(01.3, i(9782)),	-- Bandit Jerkin
-						dr(01.3, i(9814)),	-- Fortified Belt
-						dr(01.3, i(9774)),	-- Greenweave Vest
-						dr(01.3, i(6568)),	-- Shimmering Trousers
-						dr(01.2, i(6577)),	-- Defender Gauntlets
-						dr(01.1, i(6586)),	-- Scouting Gloves
+						i(9782),	-- Bandit Jerkin
+						i(9781),	-- Bandit Pants
+						i(6573),	-- Defender Boots
+						i(6574),	-- Defender Bracers
+						i(6577),	-- Defender Gauntlets
+						i(6576),	-- Defender Girdle
+						i(6578),	-- Defender Leggings
+						i(6580),	-- Defender Tunic
+						i(9814),	-- Fortified Belt
+						i(9810),	-- Fortified Boots
+						i(9811),	-- Fortified Bracers
+						i(9818),	-- Fortified Chain
+						i(9812),	-- Fortified Cloak
+						i(9813),	-- Fortified Gauntlets
+						i(9815),	-- Fortified Leggings
+						i(9772),	-- Greenweave Leggings
+						i(10287),	-- Greenweave Mantle
+						i(9773),	-- Greenweave Robe
+						i(9774),	-- Greenweave Vest
+						i(9792),	-- Ivycloth Boots
+						i(9793),	-- Ivycloth Bracelets
+						i(9794),	-- Ivycloth Cloak
+						i(6581),	-- Scouting Belt
+						i(6582),	-- Scouting Boots
+						i(6583),	-- Scouting Bracers
+						i(6586),	-- Scouting Gloves
+						i(6587),	-- Scouting Trousers
+						i(6584),	-- Scouting Tunic
+						i(6567),	-- Shimmering Armor
+						i(6562),	-- Shimmering Boots
+						i(6563),	-- Shimmering Bracers
+						i(6564),	-- Shimmering Cloak
+						i(6565),	-- Shimmering Gloves
+						i(6569),	-- Shimmering Robe
+						i(6570),	-- Shimmering Sash
+						i(6568),	-- Shimmering Trousers
+						i(9801),	-- Superior Belt
+						i(9805),	-- Superior Cloak
 					}),
 					n(10641, { 	-- Branch Snapper
-						dr(11.0, i(6586)),	-- Scouting Gloves
-						dr(06.0, i(6580)),	-- Defender Tunic
-						dr(05.0, i(9782)),	-- Bandit Jerkin
-						dr(05.0, i(6577)),	-- Defender Gauntlets
-						dr(05.0, i(6578)),	-- Defender Leggings
-						dr(05.0, i(9774)),	-- Greenweave Vest
-						dr(04.0, i(6573)),	-- Defender Boots
-						dr(04.0, i(9773)),	-- Greenweave Robe
-						dr(03.0, i(9781)),	-- Bandit Pants
-						dr(03.0, i(9814)),	-- Fortified Belt
-						dr(03.0, i(9811)),	-- Fortified Bracers
-						dr(03.0, i(9818)),	-- Fortified Chain
-						dr(03.0, i(6587)),	-- Scouting Trousers
-						dr(03.0, i(9805)),	-- Superior Cloak
-						dr(02.0, i(6574)),	-- Defender Bracers
-						dr(02.0, i(6576)),	-- Defender Girdle
-						dr(02.0, i(9772)),	-- Greenweave Leggings
-						dr(02.0, i(10287)),	-- Greenweave Mantle
-						dr(02.0, i(6582)),	-- Scouting Boots
-						dr(02.0, i(6565)),	-- Shimmering Gloves
-						dr(01.8, i(9799)),	-- Ivycloth Sash
-						dr(01.8, i(6568)),	-- Shimmering Trousers
-						dr(01.7, i(9812)),	-- Fortified Cloak
-						dr(01.6, i(6570)),	-- Shimmering Sash
-						dr(01.3, i(9794)),	-- Ivycloth Cloak
-						dr(01.2, i(9815)),	-- Fortified Leggings
-						dr(01.2, i(9802)),	-- Superior Boots
-						dr(01.1, i(9813)),	-- Fortified Gauntlets
-						dr(01.0, i(9810)),	-- Fortified Boots
-						dr(01.0, i(6584)),	-- Scouting Tunic
-						dr(01.0, i(6567)),	-- Shimmering Armor
-						dr(01.0, i(9801)),	-- Superior Belt
+						i(9782),	-- Bandit Jerkin
+						i(9781),	-- Bandit Pants
+						i(6593),	-- Battleforge Cloak
+						i(6573),	-- Defender Boots
+						i(6574),	-- Defender Bracers
+						i(6577),	-- Defender Gauntlets
+						i(6576),	-- Defender Girdle
+						i(6578),	-- Defender Leggings
+						i(6580),	-- Defender Tunic
+						i(6604),	-- Dervish Cape
+						i(9814),	-- Fortified Belt
+						i(9810),	-- Fortified Boots
+						i(9811),	-- Fortified Bracers
+						i(9818),	-- Fortified Chain
+						i(9812),	-- Fortified Cloak
+						i(9813),	-- Fortified Gauntlets
+						i(9815),	-- Fortified Leggings
+						i(9817),	-- Fortified Spaulders
+						i(9772),	-- Greenweave Leggings
+						i(10287),	-- Greenweave Mantle
+						i(9773),	-- Greenweave Robe
+						i(9774),	-- Greenweave Vest
+						i(9792),	-- Ivycloth Boots
+						i(9793),	-- Ivycloth Bracelets
+						i(9794),	-- Ivycloth Cloak
+						i(9795),	-- Ivycloth Gloves
+						i(9799),	-- Ivycloth Sash
+						i(6582),	-- Scouting Boots
+						i(6586),	-- Scouting Gloves
+						i(6587),	-- Scouting Trousers
+						i(6584),	-- Scouting Tunic
+						i(6567),	-- Shimmering Armor
+						i(6565),	-- Shimmering Gloves
+						i(6569),	-- Shimmering Robe
+						i(6570),	-- Shimmering Sash
+						i(6568),	-- Shimmering Trousers
+						i(9801),	-- Superior Belt
+						i(9802),	-- Superior Boots
+						i(9803),	-- Superior Bracers
+						i(9805),	-- Superior Cloak
 					}),
 					n(3736, { 	-- Darkslayer Mordenthal
-						dr(72.0, i(9781)),	-- Bandit Pants
-						dr(03.0, i(6581)),	-- Scouting Belt
-						dr(03.0, i(6563)),	-- Shimmering Bracers
-						dr(02.0, i(6564)),	-- Shimmering Cloak
-						dr(01.9, i(6583)),	-- Scouting Bracers
-						dr(01.3, i(6562)),	-- Shimmering Boots
-						dr(01.2, i(6570)),	-- Shimmering Sash
-						dr(01.1, i(9780)),	-- Bandit Gloves
-						dr(01.1, i(9766)),	-- Greenweave Sash
-						dr(01.1, i(9783)),	-- Raider's Chestpiece
+						i(9776),	-- Bandit Boots
+						i(9780),	-- Bandit Gloves
+						i(9782),	-- Bandit Jerkin
+						i(9781),	-- Bandit Pants
+						i(6573),	-- Defender Boots
+						i(6574),	-- Defender Bracers
+						i(6575),	-- Defender Cloak
+						i(6577),	-- Defender Gauntlets
+						i(6576),	-- Defender Girdle
+						i(6578),	-- Defender Leggings
+						i(6580),	-- Defender Tunic
+						i(9811),	-- Fortified Bracers
+						i(9812),	-- Fortified Cloak
+						i(9771),	-- Greenweave Gloves
+						i(9772),	-- Greenweave Leggings
+						i(10287),	-- Greenweave Mantle
+						i(9773),	-- Greenweave Robe
+						i(9766),	-- Greenweave Sash
+						i(9774),	-- Greenweave Vest
+						i(9783),	-- Raider's Chestpiece
+						i(6581),	-- Scouting Belt
+						i(6582),	-- Scouting Boots
+						i(6583),	-- Scouting Bracers
+						i(6585),	-- Scouting Cloak
+						i(6586),	-- Scouting Gloves
+						i(6562),	-- Shimmering Boots
+						i(6563),	-- Shimmering Bracers
+						i(6564),	-- Shimmering Cloak
+						i(6565),	-- Shimmering Gloves
+						i(6570),	-- Shimmering Sash
+						i(6568),	-- Shimmering Trousers
 					}),
 					n(10642, { 	-- Eck'alom
-						dr(05.0, i(9818)),	-- Fortified Chain
-						dr(05.0, i(9805)),	-- Superior Cloak
-						dr(04.0, i(9814)),	-- Fortified Belt
-						dr(04.0, i(9813)),	-- Fortified Gauntlets
-						dr(04.0, i(9815)),	-- Fortified Leggings
-						dr(04.0, i(9793)),	-- Ivycloth Bracelets
-						dr(04.0, i(9794)),	-- Ivycloth Cloak
-						dr(04.0, i(6587)),	-- Scouting Trousers
-						dr(04.0, i(6584)),	-- Scouting Tunic
-						dr(04.0, i(6569)),	-- Shimmering Robe
-						dr(04.0, i(9801)),	-- Superior Belt
-						dr(03.0, i(9810)),	-- Fortified Boots
-						dr(03.0, i(9811)),	-- Fortified Bracers
-						dr(03.0, i(9817)),	-- Fortified Spaulders
-						dr(03.0, i(9792)),	-- Ivycloth Boots
-						dr(03.0, i(9795)),	-- Ivycloth Gloves
-						dr(03.0, i(6567)),	-- Shimmering Armor
-						dr(03.0, i(6568)),	-- Shimmering Trousers
-						dr(03.0, i(9802)),	-- Superior Boots
-						dr(03.0, i(9803)),	-- Superior Bracers
-						dr(02.0, i(6593)),	-- Battleforge Cloak
-						dr(02.0, i(6591)),	-- Battleforge Wristguards
-						dr(02.0, i(6602)),	-- Dervish Bracers
-						dr(02.0, i(6604)),	-- Dervish Cape
-						dr(01.8, i(4715)),	-- Emblazoned Cloak
-						dr(01.8, i(9799)),	-- Ivycloth Sash
-						dr(01.7, i(6600)),	-- Dervish Belt
-						dr(01.6, i(9796)),	-- Ivycloth Mantle
-						dr(01.6, i(9807)),	-- Superior Shoulders
-						dr(01.6, i(9809)),	-- Superior Tunic
-						dr(01.2, i(9806)),	-- Superior Gloves
-						dr(01.0, i(6605)),	-- Dervish Gloves
+						i(6593),	-- Battleforge Cloak
+						i(6595),	-- Battleforge Gauntlets
+						i(6594),	-- Battleforge Girdle
+						i(6596),	-- Battleforge Legguards
+						i(6597),	-- Battleforge Shoulderguards
+						i(6591),	-- Battleforge Wristguards
+						i(6600),	-- Dervish Belt
+						i(6601),	-- Dervish Boots
+						i(6602),	-- Dervish Bracers
+						i(6604),	-- Dervish Cape
+						i(6605),	-- Dervish Gloves
+						i(4715),	-- Emblazoned Cloak
+						i(9814),	-- Fortified Belt
+						i(9810),	-- Fortified Boots
+						i(9811),	-- Fortified Bracers
+						i(9818),	-- Fortified Chain
+						i(9813),	-- Fortified Gauntlets
+						i(9815),	-- Fortified Leggings
+						i(9817),	-- Fortified Spaulders
+						i(9792),	-- Ivycloth Boots
+						i(9793),	-- Ivycloth Bracelets
+						i(9794),	-- Ivycloth Cloak
+						i(9795),	-- Ivycloth Gloves
+						i(9796),	-- Ivycloth Mantle
+						i(9797),	-- Ivycloth Pants
+						i(9799),	-- Ivycloth Sash
+						i(6612),	-- Sage's Boots
+						i(6613),	-- Sage's Bracers
+						i(6614),	-- Sage's Cloak
+						i(6587),	-- Scouting Trousers
+						i(6584),	-- Scouting Tunic
+						i(6567),	-- Shimmering Armor
+						i(6569),	-- Shimmering Robe
+						i(6568),	-- Shimmering Trousers
+						i(9801),	-- Superior Belt
+						i(9802),	-- Superior Boots
+						i(9803),	-- Superior Bracers
+						i(9805),	-- Superior Cloak
+						i(9806),	-- Superior Gloves
+						i(9808),	-- Superior Leggings
+						i(9807),	-- Superior Shoulders
+						i(9809),	-- Superior Tunic
 					}),
 					n(10559, { 	-- Lady Vespia
-						dr(12.0, i(6576)),	-- Defender Girdle
-						dr(11.0, i(9781)),	-- Bandit Pants
-						dr(11.0, i(9812)),	-- Fortified Cloak
-						dr(11.0, i(6562)),	-- Shimmering Boots
-						dr(09.0, i(6584)),	-- Scouting Tunic
-						dr(08.0, i(14125)),	-- Ritual Leggings
-						dr(03.0, i(6583)),	-- Scouting Bracers
-						dr(03.0, i(6563)),	-- Shimmering Bracers
-						dr(03.0, i(6564)),	-- Shimmering Cloak
-						dr(03.0, i(6565)),	-- Shimmering Gloves
-						dr(03.0, i(6570)),	-- Shimmering Sash
-						dr(02.0, i(6574)),	-- Defender Bracers
-						dr(02.0, i(9772)),	-- Greenweave Leggings
-						dr(02.0, i(10287)),	-- Greenweave Mantle
-						dr(02.0, i(6581)),	-- Scouting Belt
-						dr(02.0, i(6582)),	-- Scouting Boots
-						dr(01.5, i(9805)),	-- Superior Cloak
-						dr(01.4, i(6587)),	-- Scouting Trousers
-						dr(01.3, i(9782)),	-- Bandit Jerkin
-						dr(01.2, i(6578)),	-- Defender Leggings
-						dr(01.2, i(6580)),	-- Defender Tunic
-						dr(01.2, i(9818)),	-- Fortified Chain
-						dr(01.2, i(6586)),	-- Scouting Gloves
-						dr(01.1, i(6577)),	-- Defender Gauntlets
-						dr(01.1, i(9814)),	-- Fortified Belt
-						dr(01.1, i(9774)),	-- Greenweave Vest
-						dr(01.0, i(6573)),	-- Defender Boots
-						dr(01.0, i(9811)),	-- Fortified Bracers
+						i(9782),	-- Bandit Jerkin
+						i(9781),	-- Bandit Pants
+						i(6573),	-- Defender Boots
+						i(6574),	-- Defender Bracers
+						i(6577),	-- Defender Gauntlets
+						i(6576),	-- Defender Girdle
+						i(6578),	-- Defender Leggings
+						i(6580),	-- Defender Tunic
+						i(9814),	-- Fortified Belt
+						i(9810),	-- Fortified Boots
+						i(9811),	-- Fortified Bracers
+						i(9818),	-- Fortified Chain
+						i(9812),	-- Fortified Cloak
+						i(9813),	-- Fortified Gauntlets
+						i(9815),	-- Fortified Leggings
+						i(9768),	-- Greenweave Bracers
+						i(9771),	-- Greenweave Gloves
+						i(9772),	-- Greenweave Leggings
+						i(10287),	-- Greenweave Mantle
+						i(9773),	-- Greenweave Robe
+						i(9774),	-- Greenweave Vest
+						i(9792),	-- Ivycloth Boots
+						i(9793),	-- Ivycloth Bracelets
+						i(9794),	-- Ivycloth Cloak
+						i(14125),	-- Ritual Leggings
+						i(6581),	-- Scouting Belt
+						i(6582),	-- Scouting Boots
+						i(6583),	-- Scouting Bracers
+						i(6586),	-- Scouting Gloves
+						i(6587),	-- Scouting Trousers
+						i(6584),	-- Scouting Tunic
+						i(6567),	-- Shimmering Armor
+						i(6562),	-- Shimmering Boots
+						i(6563),	-- Shimmering Bracers
+						i(6564),	-- Shimmering Cloak
+						i(6565),	-- Shimmering Gloves
+						i(6569),	-- Shimmering Robe
+						i(6570),	-- Shimmering Sash
+						i(6568),	-- Shimmering Trousers
+						i(9801),	-- Superior Belt
+						i(9805),	-- Superior Cloak
 					}),
 					o(240617, {	-- Lost Sentinel's Pouch
 						["groups"] = {
@@ -971,195 +1119,253 @@ _.Zones =
 						["description"] = "|cff66ccffLoot the Lost Sentinel's Pouch inside a large hollow tree trunk.|r",
 					}),
 					n(10644, { 	-- Mist Howler
-						dr(35.0, i(6575)),	-- Defender Cloak
-						dr(35.0, i(6587)),	-- Scouting Trousers
-						dr(03.0, i(6581)),	-- Scouting Belt
-						dr(03.0, i(6563)),	-- Shimmering Bracers
-						dr(03.0, i(6564)),	-- Shimmering Cloak
-						dr(02.0, i(6562)),	-- Shimmering Boots
-						dr(01.8, i(6583)),	-- Scouting Bracers
-						dr(01.1, i(9780)),	-- Bandit Gloves
-						dr(01.0, i(9771)),	-- Greenweave Gloves
-						dr(01.0, i(9766)),	-- Greenweave Sash
-						dr(01.0, i(9783)),	-- Raider's Chestpiece
-						dr(01.0, i(6585)),	-- Scouting Cloak
+						i(9776),	-- Bandit Boots
+						i(9780),	-- Bandit Gloves
+						i(9782),	-- Bandit Jerkin
+						i(9781),	-- Bandit Pants
+						i(6573),	-- Defender Boots
+						i(6574),	-- Defender Bracers
+						i(6575),	-- Defender Cloak
+						i(6577),	-- Defender Gauntlets
+						i(6576),	-- Defender Girdle
+						i(6578),	-- Defender Leggings
+						i(6580),	-- Defender Tunic
+						i(9814),	-- Fortified Belt
+						i(9811),	-- Fortified Bracers
+						i(9812),	-- Fortified Cloak
+						i(9771),	-- Greenweave Gloves
+						i(9772),	-- Greenweave Leggings
+						i(10287),	-- Greenweave Mantle
+						i(9773),	-- Greenweave Robe
+						i(9766),	-- Greenweave Sash
+						i(9774),	-- Greenweave Vest
+						i(9783),	-- Raider's Chestpiece
+						i(6581),	-- Scouting Belt
+						i(6582),	-- Scouting Boots
+						i(6583),	-- Scouting Bracers
+						i(6585),	-- Scouting Cloak
+						i(6586),	-- Scouting Gloves
+						i(6587),	-- Scouting Trousers
+						i(6562),	-- Shimmering Boots
+						i(6563),	-- Shimmering Bracers
+						i(6564),	-- Shimmering Cloak
+						i(6565),	-- Shimmering Gloves
+						i(6570),	-- Shimmering Sash
+						i(6568),	-- Shimmering Trousers
+						i(9805),	-- Superior Cloak
 					}),
 					n(10640, { 	-- Oakpaw
-						dr(05.0, i(9792)),	-- Ivycloth Boots
-						dr(05.0, i(6584)),	-- Scouting Tunic
-						dr(04.0, i(9814)),	-- Fortified Belt
-						dr(04.0, i(9811)),	-- Fortified Bracers
-						dr(04.0, i(9793)),	-- Ivycloth Bracelets
-						dr(04.0, i(6587)),	-- Scouting Trousers
-						dr(04.0, i(6568)),	-- Shimmering Trousers
-						dr(04.0, i(9801)),	-- Superior Belt
-						dr(04.0, i(9805)),	-- Superior Cloak
-						dr(03.0, i(4715)),	-- Emblazoned Cloak
-						dr(03.0, i(9810)),	-- Fortified Boots
-						dr(03.0, i(9818)),	-- Fortified Chain
-						dr(03.0, i(9813)),	-- Fortified Gauntlets
-						dr(03.0, i(9815)),	-- Fortified Leggings
-						dr(03.0, i(9794)),	-- Ivycloth Cloak
-						dr(03.0, i(6567)),	-- Shimmering Armor
-						dr(03.0, i(6569)),	-- Shimmering Robe
-						dr(02.0, i(6604)),	-- Dervish Cape
-						dr(02.0, i(6605)),	-- Dervish Gloves
-						dr(02.0, i(9795)),	-- Ivycloth Gloves
-						dr(02.0, i(9799)),	-- Ivycloth Sash
-						dr(02.0, i(9802)),	-- Superior Boots
-						dr(01.9, i(6593)),	-- Battleforge Cloak
-						dr(01.8, i(6602)),	-- Dervish Bracers
-						dr(01.8, i(6613)),	-- Sage's Bracers
-						dr(01.8, i(9806)),	-- Superior Gloves
-						dr(01.6, i(9807)),	-- Superior Shoulders
-						dr(01.5, i(9817)),	-- Fortified Spaulders
-						dr(01.5, i(9796)),	-- Ivycloth Mantle
-						dr(01.5, i(9803)),	-- Superior Bracers
-						dr(01.4, i(6600)),	-- Dervish Belt
-						dr(01.3, i(6591)),	-- Battleforge Wristguards
+						i(6593),	-- Battleforge Cloak
+						i(6595),	-- Battleforge Gauntlets
+						i(6594),	-- Battleforge Girdle
+						i(6596),	-- Battleforge Legguards
+						i(6597),	-- Battleforge Shoulderguards
+						i(6591),	-- Battleforge Wristguards
+						i(6600),	-- Dervish Belt
+						i(6601),	-- Dervish Boots
+						i(6602),	-- Dervish Bracers
+						i(6604),	-- Dervish Cape
+						i(6605),	-- Dervish Gloves
+						i(4715),	-- Emblazoned Cloak
+						i(9814),	-- Fortified Belt
+						i(9810),	-- Fortified Boots
+						i(9811),	-- Fortified Bracers
+						i(9818),	-- Fortified Chain
+						i(9813),	-- Fortified Gauntlets
+						i(9815),	-- Fortified Leggings
+						i(9817),	-- Fortified Spaulders
+						i(9792),	-- Ivycloth Boots
+						i(9793),	-- Ivycloth Bracelets
+						i(9794),	-- Ivycloth Cloak
+						i(9795),	-- Ivycloth Gloves
+						i(9796),	-- Ivycloth Mantle
+						i(9797),	-- Ivycloth Pants
+						i(9799),	-- Ivycloth Sash
+						i(6612),	-- Sage's Boots
+						i(6613),	-- Sage's Bracers
+						i(6614),	-- Sage's Cloak
+						i(6587),	-- Scouting Trousers
+						i(6584),	-- Scouting Tunic
+						i(6567),	-- Shimmering Armor
+						i(6569),	-- Shimmering Robe
+						i(6568),	-- Shimmering Trousers
+						i(9801),	-- Superior Belt
+						i(9802),	-- Superior Boots
+						i(9803),	-- Superior Bracers
+						i(9805),	-- Superior Cloak
+						i(9806),	-- Superior Gloves
+						i(9808),	-- Superior Leggings
+						i(9807),	-- Superior Shoulders
+						i(9809),	-- Superior Tunic
 					}),
 					n(10647, { 	-- Prince Raze
-						dr(09.0, i(6563)),	-- Shimmering Bracers
-						dr(08.0, i(6581)),	-- Scouting Belt
-						dr(08.0, i(6564)),	-- Shimmering Cloak
-						dr(07.0, i(6583)),	-- Scouting Bracers
-						dr(07.0, i(6562)),	-- Shimmering Boots
-						dr(04.0, i(9780)),	-- Bandit Gloves
-						dr(04.0, i(6585)),	-- Scouting Cloak
-						dr(03.0, i(9776)),	-- Bandit Boots
-						dr(03.0, i(9771)),	-- Greenweave Gloves
-						dr(03.0, i(9766)),	-- Greenweave Sash
-						dr(03.0, i(9783)),	-- Raider's Chestpiece
-						dr(02.0, i(9781)),	-- Bandit Pants
-						dr(02.0, i(6575)),	-- Defender Cloak
-						dr(02.0, i(6576)),	-- Defender Girdle
-						dr(02.0, i(10287)),	-- Greenweave Mantle
-						dr(02.0, i(6582)),	-- Scouting Boots
-						dr(01.8, i(9782)),	-- Bandit Jerkin
-						dr(01.6, i(6580)),	-- Defender Tunic
-						dr(01.6, i(9812)),	-- Fortified Cloak
-						dr(01.5, i(6587)),	-- Scouting Trousers
-						dr(01.5, i(6565)),	-- Shimmering Gloves
-						dr(01.4, i(9772)),	-- Greenweave Leggings
-						dr(01.4, i(9805)),	-- Superior Cloak
-						dr(01.3, i(6574)),	-- Defender Bracers
-						dr(01.3, i(9814)),	-- Fortified Belt
-						dr(01.3, i(9773)),	-- Greenweave Robe
-						dr(01.2, i(6577)),	-- Defender Gauntlets
-						dr(01.2, i(6578)),	-- Defender Leggings
-						dr(01.2, i(9774)),	-- Greenweave Vest
-						dr(01.2, i(6586)),	-- Scouting Gloves
-						dr(01.2, i(6570)),	-- Shimmering Sash
-						dr(01.1, i(6568)),	-- Shimmering Trousers
+						i(9776),	-- Bandit Boots
+						i(9780),	-- Bandit Gloves
+						i(9782),	-- Bandit Jerkin
+						i(9781),	-- Bandit Pants
+						i(6573),	-- Defender Boots
+						i(6574),	-- Defender Bracers
+						i(6575),	-- Defender Cloak
+						i(6577),	-- Defender Gauntlets
+						i(6576),	-- Defender Girdle
+						i(6578),	-- Defender Leggings
+						i(6580),	-- Defender Tunic
+						i(9814),	-- Fortified Belt
+						i(9811),	-- Fortified Bracers
+						i(9812),	-- Fortified Cloak
+						i(9771),	-- Greenweave Gloves
+						i(9772),	-- Greenweave Leggings
+						i(10287),	-- Greenweave Mantle
+						i(9773),	-- Greenweave Robe
+						i(9766),	-- Greenweave Sash
+						i(9774),	-- Greenweave Vest
+						i(9783),	-- Raider's Chestpiece
+						i(6581),	-- Scouting Belt
+						i(6582),	-- Scouting Boots
+						i(6583),	-- Scouting Bracers
+						i(6585),	-- Scouting Cloak
+						i(6586),	-- Scouting Gloves
+						i(6587),	-- Scouting Trousers
+						i(6562),	-- Shimmering Boots
+						i(6563),	-- Shimmering Bracers
+						i(6564),	-- Shimmering Cloak
+						i(6565),	-- Shimmering Gloves
+						i(6570),	-- Shimmering Sash
+						i(6568),	-- Shimmering Trousers
+						i(9805),	-- Superior Cloak
 					}),
 					n(10639, { 	-- Rorgish Jowl
-						dr(35.0, i(9817)),	-- Fortified Spaulders
-						dr(04.0, i(6577)),	-- Defender Gauntlets
-						dr(04.0, i(6580)),	-- Defender Tunic
-						dr(04.0, i(9774)),	-- Greenweave Vest
-						dr(03.0, i(9782)),	-- Bandit Jerkin
-						dr(03.0, i(6573)),	-- Defender Boots
-						dr(03.0, i(6578)),	-- Defender Leggings
-						dr(03.0, i(9773)),	-- Greenweave Robe
-						dr(03.0, i(6586)),	-- Scouting Gloves
-						dr(03.0, i(6570)),	-- Shimmering Sash
-						dr(02.0, i(9811)),	-- Fortified Bracers
-						dr(02.0, i(9805)),	-- Superior Cloak
-						dr(01.9, i(9814)),	-- Fortified Belt
-						dr(01.8, i(9781)),	-- Bandit Pants
-						dr(01.7, i(9772)),	-- Greenweave Leggings
-						dr(01.7, i(6568)),	-- Shimmering Trousers
-						dr(01.6, i(6576)),	-- Defender Girdle
-						dr(01.6, i(10287)),	-- Greenweave Mantle
-						dr(01.6, i(6587)),	-- Scouting Trousers
-						dr(01.4, i(9812)),	-- Fortified Cloak
-						dr(01.2, i(6574)),	-- Defender Bracers
-						dr(01.2, i(6582)),	-- Scouting Boots
-						dr(01.2, i(6565)),	-- Shimmering Gloves
-						dr(01.1, i(6593)),	-- Battleforge Cloak
-						dr(01.0, i(9810)),	-- Fortified Boots
+						i(9782),	-- Bandit Jerkin
+						i(9781),	-- Bandit Pants
+						i(6593),	-- Battleforge Cloak
+						i(6573),	-- Defender Boots
+						i(6574),	-- Defender Bracers
+						i(6577),	-- Defender Gauntlets
+						i(6576),	-- Defender Girdle
+						i(6578),	-- Defender Leggings
+						i(6580),	-- Defender Tunic
+						i(6604),	-- Dervish Cape
+						i(9814),	-- Fortified Belt
+						i(9810),	-- Fortified Boots
+						i(9811),	-- Fortified Bracers
+						i(9818),	-- Fortified Chain
+						i(9812),	-- Fortified Cloak
+						i(9813),	-- Fortified Gauntlets
+						i(9815),	-- Fortified Leggings
+						i(9817),	-- Fortified Spaulders
+						i(9772),	-- Greenweave Leggings
+						i(10287),	-- Greenweave Mantle
+						i(9773),	-- Greenweave Robe
+						i(9774),	-- Greenweave Vest
+						i(9792),	-- Ivycloth Boots
+						i(9793),	-- Ivycloth Bracelets
+						i(9794),	-- Ivycloth Cloak
+						i(9795),	-- Ivycloth Gloves
+						i(9799),	-- Ivycloth Sash
+						i(6582),	-- Scouting Boots
+						i(6586),	-- Scouting Gloves
+						i(6587),	-- Scouting Trousers
+						i(6584),	-- Scouting Tunic
+						i(6567),	-- Shimmering Armor
+						i(6565),	-- Shimmering Gloves
+						i(6569),	-- Shimmering Robe
+						i(6570),	-- Shimmering Sash
+						i(6568),	-- Shimmering Trousers
+						i(9801),	-- Superior Belt
+						i(9802),	-- Superior Boots
+						i(9803),	-- Superior Bracers
+						i(9805),	-- Superior Cloak
 					}),
-					n(3792, { 	-- Terrowulf Packlord
-						dr(64.0, i(9809)),	-- Superior Tunic
-						dr(64.0, i(14177)),	-- Watcher's Cuffs
-						dr(01.9, i(9814)),	-- Fortified Belt
-						dr(01.7, i(6587)),	-- Scouting Trousers
-						dr(01.7, i(9801)),	-- Superior Belt
-						dr(01.6, i(9811)),	-- Fortified Bracers
-						dr(01.5, i(9815)),	-- Fortified Leggings
-						dr(01.5, i(9792)),	-- Ivycloth Boots
-						dr(01.3, i(9794)),	-- Ivycloth Cloak
-						dr(01.3, i(6567)),	-- Shimmering Armor
-						dr(01.3, i(6568)),	-- Shimmering Trousers
-						dr(01.3, i(9805)),	-- Superior Cloak
-						dr(01.2, i(9793)),	-- Ivycloth Bracelets
-						dr(01.2, i(6569)),	-- Shimmering Robe
-						dr(01.1, i(9813)),	-- Fortified Gauntlets
-						dr(01.1, i(6584)),	-- Scouting Tunic
-						dr(01.0, i(6593)),	-- Battleforge Cloak
-						dr(01.0, i(9810)),	-- Fortified Boots
-						dr(01.0, i(9803)),	-- Superior Bracers
-						nld({     -- Legacy
-							un(7, i(5753)), 	-- Ruffled Chaplet
-						}),
+					n(3792, {	-- Terrowulf Packlord
+						i(6593),	-- Battleforge Cloak
+						i(6591),	-- Battleforge Wristguards
+						i(6600),	-- Dervish Belt
+						i(6602),	-- Dervish Bracers
+						i(6604),	-- Dervish Cape
+						i(9814),	-- Fortified Belt
+						i(9810),	-- Fortified Boots
+						i(9811),	-- Fortified Bracers
+						i(9818),	-- Fortified Chain
+						i(9813),	-- Fortified Gauntlets
+						i(9815),	-- Fortified Leggings
+						i(9817),	-- Fortified Spaulders
+						i(9792),	-- Ivycloth Boots
+						i(9793),	-- Ivycloth Bracelets
+						i(9794),	-- Ivycloth Cloak
+						i(9795),	-- Ivycloth Gloves
+						i(9796),	-- Ivycloth Mantle
+						i(9799),	-- Ivycloth Sash
+						i(9867),	-- Renegade Cloak
+						i(6587),	-- Scouting Trousers
+						i(6584),	-- Scouting Tunic
+						i(6567),	-- Shimmering Armor
+						i(6569),	-- Shimmering Robe
+						i(6568),	-- Shimmering Trousers
+						i(9801),	-- Superior Belt
+						i(9802),	-- Superior Boots
+						i(9803),	-- Superior Bracers
+						i(9805),	-- Superior Cloak
+						i(9806),	-- Superior Gloves
+						i(9807),	-- Superior Shoulders
+						i(9809),	-- Superior Tunic
 					}),
-					n(12037, { 	-- Ursol'lok
-						dr(09.0, i(9811)),	-- Fortified Bracers
-						dr(08.0, i(6587)),	-- Scouting Trousers
-						dr(08.0, i(6568)),	-- Shimmering Trousers
-						dr(07.0, i(9814)),	-- Fortified Belt
-						dr(07.0, i(9805)),	-- Superior Cloak
-						dr(04.0, i(6577)),	-- Defender Gauntlets
-						dr(03.0, i(6573)),	-- Defender Boots
-						dr(03.0, i(6580)),	-- Defender Tunic
-						dr(03.0, i(6586)),	-- Scouting Gloves
-						dr(02.0, i(9782)),	-- Bandit Jerkin
-						dr(02.0, i(6578)),	-- Defender Leggings
-						dr(02.0, i(9817)),	-- Fortified Spaulders
-						dr(02.0, i(9773)),	-- Greenweave Robe
-						dr(02.0, i(9774)),	-- Greenweave Vest
-						dr(01.9, i(9802)),	-- Superior Boots
-						dr(01.8, i(6567)),	-- Shimmering Armor
-						dr(01.7, i(6604)),	-- Dervish Cape
-						dr(01.7, i(9795)),	-- Ivycloth Gloves
-						dr(01.5, i(9815)),	-- Fortified Leggings
-						dr(01.5, i(9792)),	-- Ivycloth Boots
-						dr(01.5, i(9794)),	-- Ivycloth Cloak
-						dr(01.5, i(9803)),	-- Superior Bracers
-						dr(01.4, i(9818)),	-- Fortified Chain
-						dr(01.4, i(9813)),	-- Fortified Gauntlets
-						dr(01.4, i(9793)),	-- Ivycloth Bracelets
-						dr(01.4, i(9799)),	-- Ivycloth Sash
-						dr(01.4, i(6569)),	-- Shimmering Robe
-						dr(01.2, i(6593)),	-- Battleforge Cloak
-						dr(01.2, i(6600)),	-- Dervish Belt
-						dr(01.2, i(9810)),	-- Fortified Boots
-						dr(01.2, i(6584)),	-- Scouting Tunic
-						dr(01.2, i(9801)),	-- Superior Belt
-						dr(01.0, i(6602)),	-- Dervish Bracers
-						dr(01.0, i(9796)),	-- Ivycloth Mantle
-						dr(01.0, i(9806)),	-- Superior Gloves
-						dr(01.0, i(9807)),	-- Superior Shoulders
+					n(12037, {	-- Ursol'lok
+						i(9782),	-- Bandit Jerkin
+						i(6593),	-- Battleforge Cloak
+						i(6591),	-- Battleforge Wristguards
+						i(6573),	-- Defender Boots
+						i(6577),	-- Defender Gauntlets
+						i(6578),	-- Defender Leggings
+						i(6580),	-- Defender Tunic
+						i(6600),	-- Dervish Belt
+						i(6602),	-- Dervish Bracers
+						i(6604),	-- Dervish Cape
+						i(4715),	-- Emblazoned Cloak
+						i(9814),	-- Fortified Belt
+						i(9810),	-- Fortified Boots
+						i(9811),	-- Fortified Bracers
+						i(9818),	-- Fortified Chain
+						i(9813),	-- Fortified Gauntlets
+						i(9815),	-- Fortified Leggings
+						i(9817),	-- Fortified Spaulders
+						i(9773),	-- Greenweave Robe
+						i(9774),	-- Greenweave Vest
+						i(9792),	-- Ivycloth Boots
+						i(9793),	-- Ivycloth Bracelets
+						i(9794),	-- Ivycloth Cloak
+						i(9795),	-- Ivycloth Gloves
+						i(9796),	-- Ivycloth Mantle
+						i(9799),	-- Ivycloth Sash
+						i(6586),	-- Scouting Gloves
+						i(6587),	-- Scouting Trousers
+						i(6584),	-- Scouting Tunic
+						i(6567),	-- Shimmering Armor
+						i(6569),	-- Shimmering Robe
+						i(6568),	-- Shimmering Trousers
+						i(9801),	-- Superior Belt
+						i(9802),	-- Superior Boots
+						i(9803),	-- Superior Bracers
+						i(9805),	-- Superior Cloak
+						i(9806),	-- Superior Gloves
+						i(9807),	-- Superior Shoulders
 					}),
 				}),
-				n(-2, { 	-- Vendor
-					na(3951, { 	-- Bhaldaran Ravenshade (_)
-						i(11305),
+				n(-2, {	-- Vendor
+					na(3951, { 	-- Bhaldaran Ravenshade
+						i(11305),	-- Dense Shortbow
 					}),
-					nh(34303, { -- Dagrun Ragehammer (h)
-						i(4778),
-						i(4777),
+					nh(34303, { -- Dagrun Ragehammer
+						i(4778),	-- Heavy Spiked Mace
+						i(4777),	-- Ironwood Maul
 					}),
-					na(3954, { 	-- Dalria <Trade Goods>
-						i(20855), -- Design: Wicked Moonstone Ring
-						i(11101), -- Formula: Enchant Bracer - Lesser Strength
-						i(11039), -- Formula: Enchant Cloak - Minor Agility
+					na(3954, { 	-- Dalria
+						i(20855),	-- Design: Wicked Moonstone Ring
+						i(11101),	-- Formula: Enchant Bracer - Lesser Strength
+						i(11039),	-- Formula: Enchant Cloak - Minor Agility
 					}),
-					na(34601, { -- Harlown Darkweave (_)
+					na(34601, { -- Harlown Darkweave
 						["groups"] = {
-							i(7361, { -- Pattern: Herbalist's Gloves
-								i(7349), -- Herbalist's Gloves
-							}),
+							i(7361),	-- Pattern: Herbalist's Gloves
 						},
 						["description"] = "Vendor will only sell to those who have rescued him. Go to Benjari Edune and pick up the quest 'Three Friends of the Forest' to start the quest chain.",
 					}),
@@ -1169,8 +1375,8 @@ _.Zones =
 						},
 					}),
 					nh(12962, { -- Wik'Tar <Fish Merchant & Supplies>
-						i(17062), 	-- Recipe: Mithril Head Trout
-						i(6369), 	-- Recipe: Rockscale Cod
+						i(17062),	-- Recipe: Mithril Head Trout
+						i(6369),	-- Recipe: Rockscale Cod
 					}),
 				}),
 				n(-40, {	-- Legacy
@@ -1214,9 +1420,10 @@ _.Zones =
 							na(3808, { 	-- Forsaken Dark Stalker
 								un(7, i(1351)),	-- Fingerbone Bracers
 							}),
+							n(3792, {	-- Terrowulf Packlord
+								un(7, i(5753)),	-- Ruffled Chaplet
+							}),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 					},
 				}),
 			},
