@@ -81,6 +81,71 @@ _.Zones =
 						{
 							["itemID"] = 157801,	-- Snapjaw Tail (Random drop from Primal Snapjaw - 126723) 
 							["questID"] = 50436,	-- Guttural Voice? (Trinket for ol' Jani)
+							["groups"] = {
+								{
+									["questID"] = 50437,	-- Large Treasure Chest [Primal Wetlands]
+									["description"] = "Might be related to the Snapjaw Tail",
+								},
+							},
+						},
+						{
+							["questID"] = 49885,	-- Treasure Chest [Primal Wetlands]
+						},
+						{
+							["questID"] = 50895,	-- Treasure Chest [Primal Wetlands]
+						},
+						{
+							["questID"] = 49904,	-- Treasure Chest [Plains of Tojek]
+						},
+						{
+							["questID"] = 49916,	-- Treasure Chest [Terrace of Sorrows]
+						},
+						{
+							["questID"] = 49979,	-- Cursed Nazmani Chest [Terrace of Sorrows]
+						},
+						{
+							["questID"] = 49484,	-- Offering to Bwonsamdi [The Necropolis]
+						},
+						{
+							["questID"] = 48934,	-- Objective [The Necropolis]
+						},
+						{
+							["questID"] = 50894,	-- Treasure Chest [Zalamar]
+						},
+						{
+							["questID"] = 47247,	-- That Which Haunts the Dead [The Necropolis]
+							["groups"] = {
+								i(159049),	-- Ritual Flayer's Grasps
+								i(155339),	-- Ritual Flayer's Belt
+							},
+						},
+						{
+							["questID"] = 47249,	-- Soulbound [The Necropolis]
+							["groups"] = {
+								i(155344),	-- Ceremonial Lamb Chopper
+								i(155346),	-- Mambo Hex Axe
+								i(155365),	-- Grave Watcher's Longstaff
+								i(155369),	-- Spooky-Mon Choppa
+							},
+						},
+						{
+							["questID"] = 47530,	-- ???? [The Necropolis] (completed after soulbound, but not known)
+						},
+						{
+							["questID"] = 49313,	-- Wun'ju's Trove [Terrace of Sorrows]
+						},
+						{
+							["questID"] = 50888,	-- Urn of Ugussu [Terrace of Sorrows]
+						},
+						{
+							["questID"] = 48578,	-- There's No Eye in Skyterror
+							["groups"] = {
+								i(155377),	-- Drained Bone Band [Ring]
+								i(159074),	-- Jarkadiax's Other Eye [Trinket]
+							},
+						},
+						{
+							["questID"] = 48588,	-- Objective [Primal Wetlands]
 						},
 					},
 				}),
@@ -217,6 +282,9 @@ _.Zones =
 							}),	
 							["questID"] = 47877,	
 						}),		
+						n(124475, { -- Shambling Ambusher		
+							["questID"] = 47878,	
+						}),	
 						n(126460, { -- Tainted Guardian		
 							["questID"] = 50342,	
 						}),		
