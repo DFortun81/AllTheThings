@@ -235,8 +235,11 @@ _.Zones =
 							}),		
 							-- ["questID"] = 		
 						}),			
-						n(132280, { -- Squacks			
-							-- ["questID"] = 		
+						n(132280, { -- Squacks
+							["g"] = {
+								i(160455),	-- Parrot-Trainer Sash
+							},
+							["questID"] = 50160,
 						}),			
 						n(139135, { -- Squirgle of the Depths			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
