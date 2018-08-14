@@ -132,6 +132,13 @@ _.Zones =
 							["questID"] = 47530,	-- ???? [The Necropolis] (completed after soulbound, but not known)
 						},
 						{
+							["questID"] = 48869,	-- Payback's a Lich [Burial Mound]
+							["groups"] = {
+								i(155375),	-- Ghoulish Blood Idol
+								i(155478),	-- Zardax's Tattered Drape
+							},
+						},
+						{
 							["questID"] = 49313,	-- Wun'ju's Trove [Terrace of Sorrows]
 						},
 						{
