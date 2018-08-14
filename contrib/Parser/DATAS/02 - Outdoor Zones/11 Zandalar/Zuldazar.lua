@@ -658,6 +658,9 @@ _.Zones =
 						}),		
 						n(120899, { -- Kul'krazahn		
 							["questID"] = 48333,
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(160947), -- Amani Berserker's Chopper
+							}),
 						}),		
 						n(131233, { -- Lei-zhi
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
