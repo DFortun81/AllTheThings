@@ -14,16 +14,21 @@ _.Zones =
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(281397, { -- Cutwater Treasure Chest [Localized]
+								["g"] = {
+									i(155381),  -- Cutwater-Captain's Sapphire Ring
+								},
+								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["coord"] = { 72.5, 58.1 },
 								["questID"]  = 50442,
-									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(293962, { -- Precarious Noble Cache [Localized]
 								["questID"]  = 52866,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(293964, { -- Forgotten Smuggler's Stash [Localized]
+								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["coord"] = { 61.7, 62.7 },
 								["questID"]  = 52867,
-									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(293965, { -- Scrimshaw Cache [Localized]
 								["questID"] = 52870,
@@ -97,9 +102,9 @@ _.Zones =
 				n(-16, { -- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
 					["groups"] = {
-						n(132182, { -- Auditor Dolp			
-							-- ["questID"] = 		
-						}),			
+						n(132182, { -- Auditor Dolp
+							["questID"] = 50156,
+						}),
 						n(129181, { -- Barman Bill			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160451), -- Barman Skewer	
@@ -112,13 +117,14 @@ _.Zones =
 							}),		
 							-- ["questID"] = 		
 						}),			
-						n(132086, { -- Black-Eyed Bart			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(158650), -- Sea-Scourge Greatblade	
+						n(132086, { -- Black-Eyed Bart
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(158650), -- Sea-Scourge Greatblade
 								i(163718), -- Forbidden Sea Shanty of the Black Sphere
-							}),		
-							-- ["questID"] = 		
-						}),			
+							}),
+							["coord"] = { 56.3, 70.0 },
+							["questID"] = 50096,
+						}),
 						n(130508, { -- Broodmother Razora			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160460), -- Thick Sauroskin Gloves	
@@ -152,12 +158,13 @@ _.Zones =
 							}),		
 							-- ["questID"] = 		
 						}),			
-						n(139233, { -- Gulliver			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(158338), -- Swift-Travel Gloves	
-							}),		
-							["questID"] = 53373,		
-						}),			
+						n(139233, { -- Gulliver
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(158338), -- Swift-Travel Gloves
+							}),
+							["coord"] = { 57.7, 56.0 },
+							["questID"] = 53373,
+						}),
 						n(131520, { -- Kulett the Ornery			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(158597), -- Silvershell Defender	
@@ -187,30 +194,33 @@ _.Zones =
 								i(154416), -- Trogg Saurolisk-Breaker	
 							}),		
 						}),			
-						n(139205, { -- P4-N73R4			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(161599), -- Mechano-Cat Claw	
-							}),		
-							-- ["questID"] = 		
-						}),			
+						n(139205, { -- P4-N73R4
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(161599), -- Mechano-Cat Claw
+							}),
+							["coord"] = { 65.2, 64.5 },
+							["questID"] = 51833,
+						}),
 						n(131262, { -- Pack Leader Asenya			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160263), -- Snowpelt Mangler	
 							}),		
 							-- ["questID"] = 		
 						}),			
-						n(132179, { -- Raging Swell			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(161446), -- Blistering Seawater Seal	
-							}),		
-							-- ["questID"] = 		
-						}),			
-						n(139278, { -- Ranja			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(154478), -- Ranja-Hide Bracers	
-							}),		
-							-- ["questID"] = 		
-						}),			
+						n(132179, { -- Raging Swell
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(161446), -- Blistering Seawater Seal
+							}),
+							["coord"] = { 64.7, 58.6 },
+							["questID"] = 50148,
+						}),
+						n(139278, { -- Ranja
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(154478), -- Ranja-Hide Bracers
+							}),
+							["coord"] = { 68.3, 63.56 },
+							["questID"] = 51872,
+						}),
 						n(127289, { -- Saurolisk Tamer Mugg			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(154416), -- Trogg Saurolisk-Breaker	
@@ -253,18 +263,20 @@ _.Zones =
 						n(139289, { -- Tentulos the Drifter			
 							["questID"] = 51879,		
 						}),			
-						n(131389, { -- Teres			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(158556), -- Siren's Tongue	
-							}),		
-							-- ["questID"] = 		
-						}),			
-						n(139235, { -- Tort Jaw			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(159349), -- Dragon Turtle Handlers	
-							}),		
-							-- ["questID"] = 		
-						}),			
+						n(131389, { -- Teres
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(158556), -- Siren's Tongue
+							}),
+							["coord"] = { 63.6, 50.3 },
+							["questID"] = 49942,
+						}),
+						n(139235, { -- Tort Jaw
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(159349), -- Dragon Turtle Handlers
+							}),
+							["coord"] = { 70.4, 55.7 },
+							["questID"] = 51835,
+						}),
 						n(132076, { -- Totes			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160452), -- Goat's Tote	

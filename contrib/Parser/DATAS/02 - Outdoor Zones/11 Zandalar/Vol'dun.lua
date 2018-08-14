@@ -512,12 +512,13 @@ i(155430),
 								}),	
 								-- ["questID"] = 	
 							}),		
-							n(137681, { -- King Clickyclack		
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							n(137681, { -- King Clickyclack
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161108), -- Kingshell Legplates
-								}),	
+								}),
+								["coord"] = { 38.2, 41.3 },
 								["questID"] = 51424,
-							}),	
+							}),
 							n(128951, { -- Nez'ara		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161024), -- Wrathful Sister's Cincture
