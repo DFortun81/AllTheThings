@@ -113,7 +113,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160451), -- Barman Skewer	
 							}),		
-							-- ["questID"] = 		
+							["questID"] = 50233,
 						}),			
 						n(132068, { -- Bashmu			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
@@ -147,7 +147,7 @@ _.Zones =
 							-- ["questID"] = 		
 						}),			
 						n(139152, { -- Carla Smirk			
-							-- ["questID"] = 		
+							["questID"] = 51809,
 						}),			
 						n(132211, { -- Fowlmouth			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
