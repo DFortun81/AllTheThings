@@ -1,15 +1,6 @@
 --------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
------------------------------------------------------------------------
----							NOTE									---
----	Do not alter or edit anything related to quests	/ items			---
----	Things are set in the file in a specifc order and reasoning		---
---- I will be editing and finishing up touches through out the week	---
---- as I still have information to input that I have already stored	---
---- on my machine.													---
---- 								-- Thanks Lucetia				---
------------------------------------------------------------------------
 _.Zones =
 {
 	m(875, { -- Zandalar
@@ -69,7 +60,6 @@ _.Zones =
 					},
 				}),
 				n(-17, { -- Quests
-				---- TODO THESE QUESTS WILL BE SOURCED / ORGANIZED.  I HAVE THE DATA ALREADY PLEASE DO NOT ALTER.  THANKS!!!
 					["groups"] = {
 						q(47320),	-- A Balm to Calm
 						q(50817),	-- A Charming Tail

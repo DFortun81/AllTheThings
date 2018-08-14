@@ -2,16 +2,6 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
------------------------------------------------------------------------
----							NOTE									---
----	Do not alter or edit anything related to quests	/ items			---
----	Things are set in the file in a specifc order and reasoning		---
---- I will be editing and finishing up touches through out the week	---
---- as I still have information to input that I have already stored	---
---- on my machine.													---
---- 								-- Thanks Lucetia				---
------------------------------------------------------------------------
-
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
@@ -33,6 +23,7 @@ _.Zones =
 			--["achievementID"] = 12840, -- Tol Dagor
 			["lvl"] = 110,
 			["description"] = "|cff66ccffA prison located on an island east of Tiragarde Sound.  This use to be a real prison until the Ashvane Trading Company bought it where now it is Priscilla Ashvane's own fortress with scumbags on both sides of the bar.|r",
+			["icon"] = "Interface\\Icons\\ability_demonhunter_imprison",
 		}),
 	}),
 };

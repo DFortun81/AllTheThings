@@ -1,15 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
------------------------------------------------------------------------
----							NOTE									---
----	Do not alter or edit anything related to quests	/ items			---
----	Things are set in the file in a specifc order and reasoning		---
---- I will be editing and finishing up touches through out the week	---
---- as I still have information to input that I have already stored	---
---- on my machine.													---
---- 								-- Thanks Lucetia				---
------------------------------------------------------------------------
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras

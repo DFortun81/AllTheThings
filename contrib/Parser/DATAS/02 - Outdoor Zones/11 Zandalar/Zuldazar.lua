@@ -1,15 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
------------------------------------------------------------------------
----							NOTE									---
----	Do not alter or edit anything related to quests	/ items			---
----	Things are set in the file in a specifc order and reasoning		---
---- I will be editing and finishing up touches through out the week	---
---- as I still have information to input that I have already stored	---
---- on my machine.													---
---- 								-- Thanks Lucetia				---
------------------------------------------------------------------------
 _.Zones =
 {
 	m(875, { 	-- Zandalar
@@ -88,31 +79,6 @@ _.Zones =
 				}),
 				n(-17, { -- Quests
 					["groups"] = {
-						h(ach(12555, {  -- Welcome to Zandalar		[TO-DO: Link to previous quests that deal with scenario)
-							["groups"] = {
-								q(46957, { -- Welcome to Zuldazar
-									["qg"] = 132332, -- Princess Talanji
-									["sourceQuests"] = { 50769 },  -- The Stormwind Extraction
-								}),
-								q(46930, { -- Rastakhan
-									["qg"] = 122661, -- General Jakra'zet
-									["sourceQuests"] = { 46957 }, -- Welcome to Zuldazar
-								}),
-								q(46931, { -- Speaker of the Horde
-									["qg"] = 120740, -- King Rastakhan
-									["sourceQuests"] = { 46930 }, -- Rastakhan
-								}),
-								q(52139, { -- To Matters at Hand
-									["qg"] = 120168, -- Chronicler To'kini
-									["sourceQuests"] = { 46931 }, -- Speaker of the Horde
-								}),
-								q(52131, { -- We Need Each Other
-									["qg"] = 133050, -- Princess Talanji
-									["sourceQuests"] = { 52139 }, -- To Matters at Hand
-								}),
-							},
-							["races"] = HORDE_ONLY,
-						})),
 						h(ach(11861, { -- The Throne of Zuldazar
 							["groups"] = {
 								q(47514, {	-- Zuldazar

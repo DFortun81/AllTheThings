@@ -2,16 +2,6 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
------------------------------------------------------------------------
----							NOTE									---
----	Do not alter or edit anything related to quests	/ items			---
----	Things are set in the file in a specifc order and reasoning		---
---- I will be editing and finishing up touches through out the week	---
---- as I still have information to input that I have already stored	---
---- on my machine.													---
---- 								-- Thanks Lucetia				---
------------------------------------------------------------------------
-
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
@@ -85,11 +75,13 @@ _.Zones =
 						}),
 					},
 				}),
+				--[[
 				n(-212, { -- Treasures
-					o(1234, { -- Small Treasure Chest   [NOTE: USE PLACE HOLDER NUMBER FOR NOW.  CHANGE EVENTUALLY WHEN CORRECT INFO OUT]
+					o(1234, { -- Small Treasure Chest
 						["questID"] = 50952,
 					}),
 				}),
+				--]]
 				n(-2, {  -- Vendors
 					["groups"] = {
 						n(141009, { -- Col. Tenders <Chicken Vendor>
