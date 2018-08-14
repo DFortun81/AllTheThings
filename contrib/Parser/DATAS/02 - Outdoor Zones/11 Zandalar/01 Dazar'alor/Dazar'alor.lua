@@ -10,6 +10,9 @@ _.Zones =
 					["groups"] = {
 					},
 				}),
+				n(-228, { -- Flight Paths
+					fp(1959), -- The Great Seal
+				}),
 				n(-17, { -- Quests
 					["groups"] = {
 						h(ach(12555, {  -- Welcome to Zandalar

@@ -69,6 +69,25 @@ _.Zones =
 						--]]
 					},
 				}),
+				n(-228, { -- Flight Paths
+					fp(2046), -- Atal'dazar, Zuldazar
+					--fp(2066), -- Atal'Gral, Zuldazar (Note: This flight path is commented out, but I imagine it may be related to the Alliance's War Campaign.)
+					fp(2076), -- Atal'Gral, Zuldazar
+					fp(2071), -- Dreadpearl, Zuldazar
+					fp(2045), -- Garden of the Loa, Zuldazar
+					fp(2164), -- Isle of Fangs, Zuldazar
+					fp(1965), -- Nesingwary's Gameland, Zuldazar
+					fp(1957), -- Port of Zuldazar, Zuldazar
+					fp(2126), -- Scaletrader Post, Zuldazar
+					fp(2075), -- Seeker's Outpost, Zuldazar
+					fp(2027), -- Temple of the Prophet, Zuldazar
+					fp(2061), -- The Sliver, Zuldazar
+					fp(2165), -- Tusk Isle, Zuldazar
+					fp(1966), -- Warbeast Kraal, Zuldazar
+					fp(2009), -- Warport Rastari, Zuldazar
+					fp(1974), -- Xibala, Zuldazar
+					fp(1975), -- Zeb'ahari, Zuldazar
+				}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {
 						p(2385), -- Barrier Hermit
