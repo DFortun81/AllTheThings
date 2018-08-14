@@ -6,6 +6,10 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(70, {	-- Dustwallow Marsh
 			["groups"] = {
+				n(-228, { -- Flight Paths
+					fp(55), -- Brackenwall Village, Dustwallow Marsh
+					fp(179), -- Mudsprocket, Dustwallow Marsh
+				}),
 				n(-25, {	-- Pet Battle
 					p(398),	-- Black Rat
 					p(385),	-- Mouse

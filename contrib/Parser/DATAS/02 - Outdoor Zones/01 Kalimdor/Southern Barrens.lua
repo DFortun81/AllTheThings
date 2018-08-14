@@ -5,7 +5,15 @@ _.Zones =
 {
 	m(12, { 	-- Kalimdor
 		m(199, {	-- Southern Barrens
-			["groups"] = {			
+			["groups"] = {
+				n(-228, { -- Flight Paths
+					fp(391), -- Desolation Hold, Southern Barrens
+					fp(389), -- Fort Triumph, Southern Barrens
+					fp(387), -- Honor's Stand, Southern Barrens
+					fp(390), -- Hunter's Hill, Southern Barrens
+					fp(388), -- Northwatch Hold, Southern Barrens
+					fp(77), -- Vendetta Point, Southern Barrens
+				}),
 				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder
 					desc(p(474), "Can be found under large trees alongside Plainsland Cheetahs. There are only two spawn points for this pet in Southern Barrens. They spawn under a large tree near Hunter's Hill in the very northern-most tip of Southern Barrens."), -- Cheetah Cub

@@ -5,7 +5,13 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(21, {	-- Silverpine Forest
-			["groups"] = {				
+			["groups"] = {
+				n(-228, { -- Flight Paths
+					fp(645), -- Forsaken High Command, Silverpine Forest
+					fp(681), -- Forsaken Rear Guard, Silverpine Forest
+					fp(654), -- The Forsaken Front, Silverpine Forest
+					fp(10), -- The Sepulcher, Silverpine Forest
+				}),
 				n(-25, {	-- Pet Battle
 					p(455),		-- Blighted Squirrel
 					p(628),		-- Infected Fawn

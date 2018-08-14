@@ -5,7 +5,13 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(25, {	-- Hillsbrad Foothills
-			["groups"] = {				
+			["groups"] = {
+				n(-228, { -- Flight Paths
+					fp(669), -- Eastpoint Tower, Hillsbrad
+					fp(13), -- Tarren Mill, Hillsbrad
+					fp(667), -- Ruins of Southshore, Hillsbrad
+					fp(668), -- Southpoint Gate, Hillsbrad
+				}),
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken
 					p(648), 	-- Huge Toad

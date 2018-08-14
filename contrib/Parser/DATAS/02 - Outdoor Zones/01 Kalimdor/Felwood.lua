@@ -77,6 +77,13 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-228, { -- Flight Paths
+					fp(166), -- Emerald Sanctuary, Felwood
+					fp(597), -- Irontree Clearing, Felwood
+					fp(65), -- Talonbranch Glade, Felwood
+					fp(594), -- Whisperwind Grove, Felwood
+					fp(595), -- Wildheart Point, Felwood
+				}),
 				n(-25, {	-- Pet Battle
 					desc(p(500), "Can be found around Shatter Scar Vale near Infernal Sentries."), -- Minfernal
 					p(497), -- Tainted Cockroach
