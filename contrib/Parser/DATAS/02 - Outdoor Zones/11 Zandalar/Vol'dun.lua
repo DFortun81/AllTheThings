@@ -480,7 +480,10 @@ i(155430),
 							n(124722, { -- Commodore Calhoun		
 								-- ["questID"] = 	
 							}),		
-							n(136335, { -- Enraged Krolusk		
+							n(136335, { -- Enraged Krolusk
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161036), -- Sand-Smoothed Wristguards
+								}),							
 								-- ["questID"] = 	
 							}),	
 							n(136323, { -- Fangcaller Xorreth		
