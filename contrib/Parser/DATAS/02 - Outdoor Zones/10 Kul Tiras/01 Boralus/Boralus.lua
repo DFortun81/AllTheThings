@@ -43,7 +43,9 @@ _.Zones =
 					["groups"] = {
 						q(48752, { -- A Need For Coal
 							["groups"] = {
-								recipe(253334), -- Monelite Deposit Rank 2
+								recipe(253334, { -- Monelite Deposit Rank 2
+									["spellID"] = 253334, -- Monelite Deposit Rank 2 [Needed because Blizzard breaks things]
+								}),
 							},
 							["description"] = "Requires 50 Kul'Tiran Mining",
 							["requireSkill"] = 2565, -- Kul'Tiran Mining
@@ -51,7 +53,9 @@ _.Zones =
 						}),
 						q(48761, { -- Spiderphobia
 							["groups"] = {
-								recipe(253337), -- Storm Silver Deposit Rank 2
+								recipe(253337, { -- Storm Silver Deposit Rank 2
+									["spellID"] = 253337, -- Storm Silver Deposit Rank 2 [Needed because Blizzard breaks things]
+								}),
 							},
 							["description"] = "Requires 50 Kul'Tiran Mining",
 							["requireSkill"] = 2565, -- Kul'Tiran Mining

@@ -17,7 +17,9 @@ _.Zones =
 					["groups"] = {
 						q(51962, { -- Lumbering Away
 							["groups"] = {
-								recipe(253334), -- Monelite Deposit Rank 2
+								recipe(253334, { -- Monelite Deposit Rank 2
+									["spellID"] = 253334, -- Monelite Deposit Rank 2
+								}),
 							},
 							["description"] = "Requires 50 Zandalari Mining",
 							["requireSkill"] = 2565, -- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
@@ -25,7 +27,9 @@ _.Zones =
 						}),
 						q(52014, { -- Ritualistic Prepartions
 							["groups"] = {
-								recipe(253337), -- Storm Silver Deposit Rank 2
+								recipe(253337, { -- Storm Silver Deposit Rank 2
+									["spellID"] = 253337, -- Storm Silver Deposit Rank 2
+								}),
 							},
 							["description"] = "Requires 50 Zandalari Mining",
 							["requireSkill"] = 2565, -- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
