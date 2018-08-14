@@ -78,6 +78,10 @@ _.Zones =
 				}),
 				n(-17, { -- Quests
 					["groups"] = {
+						{
+							["itemID"] = 157801,	-- Snapjaw Tail (Random drop from Primal Snapjaw - 126723) 
+							["questID"] = 50436,	-- Guttural Voice? (Trinket for ol' Jani)
+						},
 					},
 				}),
 				n(-16, { -- Rares
