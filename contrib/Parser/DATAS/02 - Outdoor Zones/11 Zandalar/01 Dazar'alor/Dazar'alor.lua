@@ -13,6 +13,26 @@ _.Zones =
 				n(-228, { -- Flight Paths
 					fp(1959), -- The Great Seal
 				}),
+				n(-38, { -- Professions
+					["groups"] = {
+						q(51962, { -- Lumbering Away
+							["groups"] = {
+								recipe(253334), -- Monelite Deposit Rank 2
+							},
+							["description"] = "Requires 50 Zandalari Mining",
+							["requireSkill"] = 2565, -- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
+							["races"] = HORDE_ONLY,
+						}),
+						q(52014, { -- Ritualistic Prepartions
+							["groups"] = {
+								recipe(253337), -- Storm Silver Deposit Rank 2
+							},
+							["description"] = "Requires 50 Zandalari Mining",
+							["requireSkill"] = 2565, -- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
+							["races"] = HORDE_ONLY,
+						}),
+					},
+				}),
 				n(-17, { -- Quests
 					["groups"] = {
 						h(ach(12555, {  -- Welcome to Zandalar

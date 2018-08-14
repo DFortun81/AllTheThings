@@ -39,6 +39,26 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-38, { -- Professions
+					["groups"] = {
+						q(48752, { -- A Need For Coal
+							["groups"] = {
+								recipe(253334), -- Monelite Deposit Rank 2
+							},
+							["description"] = "Requires 50 Kul'Tiran Mining",
+							["requireSkill"] = 2565, -- Kul'Tiran Mining
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(48761, { -- Spiderphobia
+							["groups"] = {
+								recipe(253337), -- Storm Silver Deposit Rank 2
+							},
+							["description"] = "Requires 50 Kul'Tiran Mining",
+							["requireSkill"] = 2565, -- Kul'Tiran Mining
+							["races"] = ALLIANCE_ONLY,
+						}),
+					},
+				}),
 				n(-17, { -- Quests
 					["groups"] = {
 						a(ach(12582, { -- Come Sail Away
