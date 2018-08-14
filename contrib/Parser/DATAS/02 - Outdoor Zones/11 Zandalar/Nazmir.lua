@@ -135,7 +135,7 @@ _.Zones =
 							["questID"] = 48869,	-- Payback's a Lich [Burial Mound]
 							["groups"] = {
 								i(155375),	-- Ghoulish Blood Idol
-								i(155478),	-- Zardax's Tattered Drape
+								i(155378),	-- Zardax's Tattered Drape
 							},
 						},
 						{
