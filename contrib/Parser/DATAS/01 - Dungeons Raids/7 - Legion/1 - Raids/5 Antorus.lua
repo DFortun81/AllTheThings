@@ -1177,11 +1177,11 @@ _.Instances =
 								i(151940), -- Sandals of the Reborn Colossus
 							})),
 							cr(124828, e(2031, { -- Argus the Unmaker
-								i(152900, { -- Blood of the Unmaker (HEROIC+ ONLY)
+								un(2, i(152900, { -- Blood of the Unmaker (HEROIC+ ONLY)
 									q(48954, { -- Blood of a Titan
-										i(152901), -- Kirin Tor Summoning Cystal (MOUNT!)
+										un(2, i(152901)), -- Kirin Tor Summoning Cystal (MOUNT!)
 									}),
-								}),
+								})),
 								i(153115), -- Scythe of the Unmaker (not in DJ)
 								i(152423), -- Helm of the Awakened Soul
 								i(152005), -- Pauldrons of Colossal Burden
@@ -1569,11 +1569,11 @@ _.Instances =
 								i(151940), -- Sandals of the Reborn Colossus
 							})),
 							cr(124828, e(2031, { -- Argus the Unmaker
-								i(152900, { -- Blood of the Unmaker  (HEROIC+ ONLY)
+								un(2, i(152900, { -- Blood of the Unmaker  (HEROIC+ ONLY)
 									q(48954, { -- Blood of a Titan
-										i(152901), -- Kirin Tor Summoning Cystal (MOUNT!)
+										un(2, i(152901)), -- Kirin Tor Summoning Cystal (MOUNT!)
 									}),
-								}),
+								})),
 								i(152789), -- Shackled Ur'zul (MOUNT! MYTHIC ONLY)
 								i(155880), -- Scythe of the Unmaker (not in DJ)
 								i(152423), -- Helm of the Awakened Soul
