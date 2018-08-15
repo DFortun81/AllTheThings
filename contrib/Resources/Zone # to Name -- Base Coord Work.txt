@@ -1,4 +1,5 @@
-5	-- - QA and DVD GLOBAL -
+Zone #		Map Name
+5		-- - QA and DVD GLOBAL -
 8661	-- [PH] JT Test World
 8013	-- [PH]Mardum Treasures
 8520	-- [TEMP] Cooking Impossible
@@ -36,7 +37,7 @@
 9394	-- Allied - Orgrimmar
 9395	-- Allied - Stormwind
 9396	-- Allied - Void Elf Unlock
-36	-- Alterac Mountains
+36		-- Alterac Mountains
 2597	-- Alterac Valley
 6456	-- Ammen Vale
 8601	-- Animation Playground
@@ -47,7 +48,7 @@
 3358	-- Arathi Basin
 8526	-- Arathi Basin
 8508	-- Arathi Blizzard
-45	-- Arathi Highlands
+45		-- Arathi Highlands
 9168	-- Arathi Highlands
 9439	-- Arathi Highlands
 9679	-- Arathi Highlands
@@ -55,7 +56,7 @@
 8911	-- Arcatraz
 6219	-- Arena of Annihilation
 8008	-- Ashamane's Fall
-331	-- Ashenvale
+331		-- Ashenvale
 6941	-- Ashran
 8485	-- Ashran
 9407	-- Ashvane Company Yards
@@ -67,7 +68,7 @@
 3790	-- Auchenai Crypts
 6912	-- Auchindoun
 4277	-- Azjol-Nerub
-16	-- Azshara
+16		-- Azshara
 7838	-- Azshara
 8625	-- Azsuna
 7334	-- Azsuna
@@ -75,7 +76,7 @@
 8840	-- Azuremyst Isle
 3524	-- Azuremyst Isle
 8275	-- Azuremyst Isle
-3	-- Badlands
+3		-- Badlands
 5600	-- Baradin Hold
 8597	-- Battle for Blackrock Mountain
 6567	-- Battle on the High Seas
@@ -86,20 +87,20 @@
 7816	-- Black Rook Hold Arena
 8239	-- Black Temple
 3959	-- Black Temple
-719	-- Blackfathom Deeps
+719		-- Blackfathom Deeps
 4926	-- Blackrock Caverns
 9666	-- Blackrock Depths
 1584	-- Blackrock Depths
 10028	-- Blackrock Depths
 6967	-- Blackrock Foundry
-25	-- Blackrock Mountain
+25		-- Blackrock Mountain
 1583	-- Blackrock Spire
 5094	-- Blackwing Descent
 2677	-- Blackwing Lair
 8482	-- Blade's Edge Arena
 3702	-- Blade's Edge Arena (Blade's Edge Arena)
 3522	-- Blade's Edge Mountains
-4	-- Blasted Lands
+4		-- Blasted Lands
 9383	-- BlizzCon 2017
 6678	-- Blood in the Snow
 6874	-- Bloodmaul Slag Mines
@@ -114,7 +115,7 @@
 7534	-- Broken Shore
 7796	-- Broken Shore
 8479	-- Broken Shore DO NOT USE
-46	-- Burning Steppes
+46		-- Burning Steppes
 6452	-- Camp Narache
 8527	-- Cathedral of Eternal Night
 8546	-- Cave of the Bloodtotem
@@ -148,10 +149,10 @@
 6733	-- Dark Heart of Pandaria
 7673	-- Darkheart Thicket
 5861	-- Darkmoon Island
-148	-- Darkshore
+148		-- Darkshore
 1657	-- Darnassus
 8670	-- Dazar'alor
-41	-- Deadwind Pass
+41		-- Deadwind Pass
 8460	-- Death Knight Campaign Flight Bounds
 6454	-- Deathknell
 7955	-- Deepholm
@@ -159,7 +160,7 @@
 2257	-- Deeprun Tram
 6665	-- Deepwind Gorge
 7083	-- Defense of Karabor
-405	-- Desolace
+405		-- Desolace
 8058	-- Dev Area - A
 8059	-- Dev Area - B
 8060	-- Dev Area - C
@@ -171,23 +172,23 @@
 2557	-- Dire Maul
 6615	-- Domination Point
 5892	-- Dragon Soul
-65	-- Dragonblight
+65		-- Dragonblight
 4196	-- Drak'Tharon Keep
 6138	-- Dread Wastes
 7918	-- Dreadscar Rift
 7875	-- Dreadscar Rift
 8721	-- Drustvar
-1	-- Dun Morogh
+1		-- Dun Morogh
 8473	-- Dungeon Blockout
-14	-- Durotar
-10	-- Duskwood
-15	-- Dustwallow Marsh
+14		-- Durotar
+10		-- Duskwood
+15		-- Dustwallow Marsh
 8801	-- Dustwallow Marsh UNUSED
 9808	-- Eastern Kingdoms
-139	-- Eastern Plaguelands
+139		-- Eastern Plaguelands
 6453	-- Echo Isles
 7519	-- Edge of Reality
-12	-- Elwynn Forest
+12		-- Elwynn Forest
 7979	-- Emerald Dreamway
 5789	-- End Time
 8980	-- Endless Halls
@@ -199,8 +200,8 @@
 5799	-- Eye of the Storm
 6677	-- Fall of Shan Bu
 6756	-- Faralohn
-361	-- Felwood
-357	-- Feralas
+361		-- Felwood
+357		-- Feralas
 7634	-- Feralas (copy)
 8641	-- Fields of the Eternal Hunt
 10022	-- Firelands
@@ -217,10 +218,10 @@
 4755	-- Gilneas City
 9331	-- Gilneas Island
 8017	-- Gloaming Reef
-876	-- GM Island
+876		-- GM Island
 8647	-- Gnomeregan
 8514	-- Gnomeregan
-721	-- Gnomeregan
+721		-- Gnomeregan
 8956	-- Gol Thovas
 9786	-- Gorgrond
 6721	-- Gorgrond
@@ -235,7 +236,7 @@
 6209	-- Greenstone Village
 4950	-- Grim Batol
 6984	-- Grimrail Depot
-394	-- Grizzly Hills
+394		-- Grizzly Hills
 3923	-- Gruul's Lair
 4416	-- Gundrak
 8657	-- Hall of Communion
@@ -261,16 +262,16 @@
 6996	-- Highmaul
 8646	-- Highmountain
 7503	-- Highmountain
-267	-- Hillsbrad Foothills
+267		-- Hillsbrad Foothills
 9588	-- Hook Point
 9279	-- Hook Point
 9662	-- Hot House
 5844	-- Hour of Twilight
-495	-- Howling Fjord
+495		-- Howling Fjord
 9029	-- Hozen Island
 4742	-- Hrothgar's Landing
 3606	-- Hyjal Summit
-210	-- Icecrown
+210		-- Icecrown
 7695	-- Icecrown Citadel
 4812	-- Icecrown Citadel
 7734	-- Icecrown Citadel
@@ -308,7 +309,7 @@
 7674	-- Legion Dungeon
 6575	-- Lion's Landing
 9355	-- Little Tortolla
-38	-- Loch Modan
+38		-- Loch Modan
 5396	-- Lost City of the Tol'vir
 9661	-- Lost Spirit Lounge
 9486	-- lost world [ph]
@@ -332,11 +333,11 @@
 9496	-- Molten Cay
 2717	-- Molten Core
 5733	-- Molten Front
-493	-- Moonglade
-616	-- Mount Hyjal
+493		-- Moonglade
+616		-- Mount Hyjal
 8573	-- MSandersTest2016
 9992	-- Mugambala
-215	-- Mulgore
+215		-- Mulgore
 6755	-- Nagrand
 3518	-- Nagrand
 7822	-- Nagrand Arena
@@ -351,8 +352,8 @@
 7737	-- Niskara
 8105	-- Niskara
 8091	-- Nordrassil
-17	-- Northern Barrens
-33	-- Northern Stranglethorn
+17		-- Northern Barrens
+33		-- Northern Stranglethorn
 6170	-- Northshire
 2367	-- Old Hillsbrad Foothills
 2159	-- Onyxia's Lair
@@ -371,10 +372,10 @@
 9552	-- Quest Training
 2437	-- Ragefire Chasm
 9772	-- Rastakhan's Might
-722	-- Razorfen Downs
-491	-- Razorfen Kraul
+722		-- Razorfen Downs
+491		-- Razorfen Kraul
 8205	-- Realm of the Mage Hunter
-44	-- Redridge Mountains
+44		-- Redridge Mountains
 8250	-- Rescue Koltira
 8443	-- Return to Karazhan
 9183	-- RiverZone_Art
@@ -392,10 +393,10 @@
 6052	-- Scarlet Halls
 6109	-- Scarlet Monastery
 8285	-- Scarlet Monastery
-796	-- Scarlet Monastery
+796		-- Scarlet Monastery
 6066	-- Scholomance
 2057	-- ScholomanceOLD
-51	-- Searing Gorge
+51		-- Searing Gorge
 9136	-- Seething Shore
 3607	-- Serpentshrine Cavern
 3791	-- Sethekk Halls
@@ -405,7 +406,7 @@
 8624	-- Shado-Pan Showdown
 3789	-- Shadow Labyrinth
 9010	-- Shadow of Azeroth
-209	-- Shadowfang Keep
+209		-- Shadowfang Keep
 6450	-- Shadowglen
 8142	-- Shadowgore Citadel
 6932	-- Shadowmoon Burial Grounds
@@ -426,7 +427,7 @@
 9043	-- Silithus Brawl
 3487	-- Silvermoon City
 9313	-- Silvermoon City
-130	-- Silverpine Forest
+130		-- Silverpine Forest
 6126	-- Silvershard Mines
 9497	-- Skittering Hollow
 7813	-- Skyhold
@@ -440,7 +441,7 @@
 7827	-- Southshore vs. Tarren Mill
 6722	-- Spires of Arak
 9599	-- Spirits Be With You
-406	-- Stonetalon Mountains
+406		-- Stonetalon Mountains
 8596	-- Stormheim
 7541	-- Stormheim
 7921	-- Stormheim
