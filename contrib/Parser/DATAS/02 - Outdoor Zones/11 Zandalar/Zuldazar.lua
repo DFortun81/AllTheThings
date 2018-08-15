@@ -605,7 +605,7 @@ _.Zones =
 							}),	
 							["questID"] = 49267,	
 						}),
-						n(133190, {	-- Daggerjaw		
+						n(133190, {	-- Daggerjaw [Missing]		
 							["questID"] = 50269,
 						}),		
 						n(136428, {	-- Dark Chronicler
@@ -644,7 +644,7 @@ _.Zones =
 							}),	
 							["questID"] = 50677,
 						}),		
-						n(134637, {	-- Headhunter Lee'za		
+						n(134637, {	-- Headhunter Lee'za [Missing]		
 							--["questID"] = 	
 						}),		
 						n(126637, {	-- Kandak		
@@ -684,9 +684,9 @@ _.Zones =
 							["questID"] = 51080,	
 						}),		
 						n(131687, {	-- Tambano
-							["groups"] =  {
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(161109),	-- Coastal Hardshell Girdle
-							},
+							}),
 							["questID"] = 50013,
 						}),		
 						n(133163, {	-- Tia'Kawan
@@ -701,7 +701,7 @@ _.Zones =
 							}),
 							["questID"] = 49004,	
 						}),		
-						n(130643, {	-- Twisted Child of Rezan		
+						n(130643, {	-- Twisted Child of Rezan [Missing]		
 							["questID"] = 50847,	
 						}),		
 						n(122004, {	-- Umbra'jin
@@ -710,7 +710,7 @@ _.Zones =
 							}),
 							--["questID"] = 	
 						}),		
-						n(134717, {	-- Umbra'rix		
+						n(134717, {	-- Umbra'rix [Missing]		
 							["questID"] = 47567,	
 						}),		
 						n(134048, {	-- Vukuba
@@ -735,7 +735,7 @@ _.Zones =
 							}),	
 							["questID"] = 49972,
 						}),		
-						n(136702, {	-- Zu'shin the Infused		
+						n(136702, {	-- Zu'shin the Infused [Missing]		
 							--["questID"] = 	
 						}),		
 					},

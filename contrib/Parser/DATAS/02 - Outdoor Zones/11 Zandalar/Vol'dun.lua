@@ -444,10 +444,13 @@ i(155430),
 								}),	
 								-- ["questID"] = 	
 							}),		
-							n(130439, {	-- Ashmane		
+							n(130439, {	-- Ashmane
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161106),	-- Rabid Packleader Bracers
+								}),
 								["questID"] = 47532,
 							}),		
-							n(128553, {	-- Azer'tor		
+							n(128553, {	-- Azer'tor [Missing]
 								-- ["questID"] = 	
 							}),		
 							n(128497, {	-- Bajiani the Slick		
@@ -469,9 +472,12 @@ i(155430),
 								-- ["questID"] = 	
 							}),		
 							n(136346, {	-- Captain Stef "Marrow" Quin
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(160990),	-- Marrow's Sash
+								}),
 								-- ["questID"] = 	
 							}),		
-							n(124722, {	-- Commodore Calhoun		
+							n(124722, {	-- Commodore Calhoun [Missing]		
 								-- ["questID"] = 	
 							}),		
 							n(136335, {	-- Enraged Krolusk
@@ -480,7 +486,7 @@ i(155430),
 								}),							
 								-- ["questID"] = 	
 							}),	
-							n(136323, {	-- Fangcaller Xorreth		
+							n(136323, {	-- Fangcaller Xorreth [Missing]		
 								-- ["questID"] = 	
 							}),
 							n(129027, {	-- Golanar		
@@ -489,7 +495,10 @@ i(155430),
 								}),	
 								-- ["questID"] = 	
 							}),	
-							n(128674, {	-- Gut-Gut the Glutton		
+							n(128674, {	-- Gut-Gut the Glutton
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161105),	-- Gluttonous Carnivore Treads
+								}),
 								["questID"] = 49270,
 							}),		
 							n(130443, {	-- Hivemother Kraxi		
@@ -559,7 +568,7 @@ i(155430),
 								}),	
 								["questID"] = 50637,	
 							}),		
-							n(134745, {	-- Skycarver Krakit		
+							n(134745, {	-- Skycarver Krakit [Missing]		
 								-- ["questID"] = 	
 							}),		
 							n(136304, {	-- Songstress Nahjeen		
@@ -580,7 +589,7 @@ i(155430),
 								}),	
 								-- ["questID"] = 	
 							}),		
-							n(141931, {	-- Warlord Dagu		
+							n(141931, {	-- Warlord Dagu [Missing]	
 								-- ["questID"] = 	
 							}),
 							n(134638, {	-- Warlord Zothix		

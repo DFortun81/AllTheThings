@@ -375,7 +375,10 @@ _.Zones =
 							}),	
 							["questID"] = 51298,	
 						}),		
-						n(130897, {	-- Captain Razorspine		
+						n(130897, {	-- Captain Razorspine	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+								i(155287),	-- Razorspine's Greatmace
+							}),
 							["questID"] = 50170,	
 						}),		
 						n(139968, {	-- Corrupted Tideskipper		
@@ -428,10 +431,13 @@ _.Zones =
 							["coord"] = { 62.0, 73.9 },
 							["questID"] = 52329,	
 						}),		
-						n(141226, {	-- Haegol the Hammer		
+						n(141226, {	-- Haegol the Hammer
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+								i(154273),	-- Rockstopper Breastplate
+							}),
 							["questID"] = 52460,	
 						}),		
-						n(141039, {	-- Ice Sickle
+						n(141039, {	-- Ice Sickle [Missing]
 							["coord"] = { 63.5, 83.4 },
 							["questID"] = 52327,	
 						}),		
@@ -463,7 +469,7 @@ _.Zones =
 							}),	
 							["questID"] = 52461,	
 						}),		
-						n(137649, {	-- Pest Remover Mk. II		
+						n(137649, {	-- Pest Remover Mk. II [Missing]
 							--["questID"] = 	
 						}),		
 						n(139298, {	-- Pinku'shon		
@@ -484,7 +490,7 @@ _.Zones =
 							}),	
 							["questID"] = 50725,	
 						}),		
-						n(132047, {	-- Reinforced Hullbreaker		
+						n(132047, {	-- Reinforced Hullbreaker [Missing]	
 							--["questID"] = 	
 						}),		
 						n(139328, {	-- Sabertron		
@@ -493,10 +499,10 @@ _.Zones =
 							}),	
 							["questID"] = 51956,	
 						}),		
-						n(139988, {	-- Sandfang		
+						n(139988, {	-- Sandfang	[Missing]
 							["questID"] = 52125,	
 						}),		
-						n(139515, {	-- Sandscour		
+						n(139515, {	-- Sandscour [Missing]		
 							--["questID"] = 	
 						}),		
 						n(138938, {	-- Seabreaker Skoloth		
@@ -505,7 +511,7 @@ _.Zones =
 							}),	
 							["questID"] = 51757,	
 						}),		
-						n(140997, {	-- Severus the Outcast		
+						n(140997, {	-- Severus the Outcast [Missing]	
 							["questID"] = 50938,	
 						}),		
 						n(141143, {	-- Sister Absinthe		
@@ -566,7 +572,7 @@ _.Zones =
 							}),	
 							["questID"] = 50819,	
 						}),		
-						n(129803, {	-- Whiplash		
+						n(129803, {	-- Whiplash [Missing]
 							["questID"] = 52296,	
 						}),		
 						n(142088, {	-- Whirlwing		

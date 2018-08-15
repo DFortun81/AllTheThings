@@ -92,7 +92,10 @@ _.Zones =
 							}),	
 							["questID"] = 51383,	
 						}),		
-						n(137825, {	-- Avalanche		
+						n(137825, {	-- Avalanche
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+								i(154447),	-- Gryphon-Rider's Breastplate
+							}),
 							["questID"] = 51471,	
 						}),		
 						n(130143, {	-- Balethorn		
@@ -129,7 +132,7 @@ _.Zones =
 							}),	
 							["questID"] = 50163,	
 						}),		
-						n(138667, {	-- Blighted Monstrosity		
+						n(138667, {	-- Blighted Monstrosity	[Missing]	
 							--["questID"] = 	
 						}),		
 						n(126621, {	-- Bonesquall		
@@ -232,7 +235,7 @@ _.Zones =
 							}),	
 							["questID"] = 48981,	
 						}),		
-						n(137704, {	-- Matron Morana		
+						n(137704, {	-- Matron Morana [Missing]	
 							--["questID"] = 	
 						}),		
 						n(130138, {	-- Nevermore		
@@ -268,7 +271,7 @@ _.Zones =
 							}),	
 							["questID"] = 51748,	
 						}),		
-						n(137665, {	-- Soul Goliath		
+						n(137665, {	-- Soul Goliath	[Missing]
 							--["questID"] = 	
 						}),		
 						n(129950, {	-- Talon		

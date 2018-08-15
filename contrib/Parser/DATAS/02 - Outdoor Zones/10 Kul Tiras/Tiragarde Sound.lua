@@ -110,7 +110,7 @@ _.Zones =
 				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
 					["groups"] = {
-						n(132182, {	-- Auditor Dolp
+						n(132182, {	-- Auditor Dolp [Missing]
 							["questID"] = 50156,
 						}),
 						n(129181, {	-- Barman Bill			
@@ -151,7 +151,10 @@ _.Zones =
 							}),		
 							-- ["questID"] = 		
 						}),			
-						n(139152, {	-- Carla Smirk			
+						n(139152, {	-- Carla Smirk
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+								i(155271),	-- Monkey's Paw Chopper
+							}),
 							["questID"] = 51809,
 						}),			
 						n(132211, {	-- Fowlmouth			
@@ -235,7 +238,7 @@ _.Zones =
 							}),		
 							-- ["questID"] = 		
 						}),			
-						n(139287, {	-- Sawtooth			
+						n(139287, {	-- Sawtooth	[Missing]		
 							-- ["questID"] = 		
 						}),			
 						n(139285, {	-- Shiverscale the Toxic			
@@ -245,9 +248,9 @@ _.Zones =
 							-- ["questID"] = 		
 						}),			
 						n(132280, {	-- Squacks
-							["g"] = {
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(160455),	-- Parrot-Trainer Sash
-							},
+							}),
 							["questID"] = 50160,
 						}),			
 						n(139135, {	-- Squirgle of the Depths			
@@ -268,7 +271,7 @@ _.Zones =
 							}),		
 							-- ["questID"] = 		
 						}),			
-						n(139289, {	-- Tentulos the Drifter			
+						n(139289, {	-- Tentulos the Drifter	[Missing]		
 							["questID"] = 51879,		
 						}),			
 						n(131389, {	-- Teres

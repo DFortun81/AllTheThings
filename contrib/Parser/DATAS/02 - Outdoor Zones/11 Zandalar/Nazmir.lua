@@ -549,10 +549,10 @@ _.Zones =
 							}),	
 							["questID"] = 48063,	
 						}),		
-						n(134298, {	-- Azerite-Infused Elemental		
+						n(134298, {	-- Azerite-Infused Elemental [Missing]		
 							["questID"] = 50563,	
 						}),		
-						n(134293, {	-- Azerite-Infused Slag		
+						n(134293, {	-- Azerite-Infused Slag [Missing]		
 							["questID"] = 49305,
 						}),		
 						n(126142, {	-- Bajiatha		
@@ -561,10 +561,13 @@ _.Zones =
 							}),	
 							["questID"] = 48439,
 						}),		
-						n(126635, {	-- Blood Priest Xak'lar		
+						n(126635, {	-- Blood Priest Xak'lar
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161217),	-- Tainted Blood Vambraces
+							}),
 							["questID"] = 48057,
 						}),		
-						n(125232, {	-- Captain Mu'kala		
+						n(125232, {	-- Captain Mu'kala [Missing]		
 							["questID"] = 50361,
 						}),		
 						n(126187, {	-- Corpse Bringer Yal'kar		
@@ -597,7 +600,10 @@ _.Zones =
 							}),	
 							["questID"] = 47877,
 						}),		
-						n(133373, {	-- Jax'teb the Reanimated		
+						n(133373, {	-- Jax'teb the Reanimated
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(160969),	-- Reanimated Necromancer's Blade
+							}),
 							["questID"] = 48508,
 						}),		
 						n(133527, {	-- Juba the Scarred		
@@ -650,7 +656,7 @@ _.Zones =
 							}),	
 							["questID"] = 50567,	
 						}),		
-						n(128935, {	-- Mala'kili
+						n(128935, {	-- Mala'kili [Missing]
 								--[[
 								["crs"] = {
 									128930,  -- Rohnkor
@@ -658,7 +664,7 @@ _.Zones =
 								--]]
 							["questID"] = 48462,	
 						}),		
-						n(128974, {	-- Queen Tzxi'kik		
+						n(128974, {	-- Queen Tzxi'kik [Missing]	
 							["questID"] = 48638,	
 						}),		
 						n(127820, {	-- Scout Skrasniss		
@@ -673,10 +679,10 @@ _.Zones =
 							}),	
 							["questID"] = 47877,	
 						}),		
-						n(124475, {	-- Shambling Ambusher		
+						n(124475, {	-- Shambling Ambusher [Missing]		
 							["questID"] = 47878,	
 						}),	
-						n(126460, {	-- Tainted Guardian		
+						n(126460, {	-- Tainted Guardian [Missing]		
 							["questID"] = 50342,	
 						}),		
 						n(126056, {	-- Totem Maker Jash'ga		
@@ -685,7 +691,7 @@ _.Zones =
 							}),	
 							["questID"] = 48406,	
 						}),		
-						o(282666, {	-- Urn of Agussu
+						o(282666, {	-- Urn of Agussu [Missing]
 								--[[
 								["crs"] = {
 									135565,	-- Guardian of Agussu
@@ -707,7 +713,7 @@ _.Zones =
 							}),	
 							["questID"] = 48406,	
 						}),		
-						n(126907, {	-- Wardrummer Zurula		
+						n(126907, {	-- Wardrummer Zurula [Missing]		
 							["questID"] = 48626,	
 						}),		
 						n(133531, {	-- Xu'ba		
