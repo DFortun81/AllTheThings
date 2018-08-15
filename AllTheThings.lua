@@ -3578,7 +3578,12 @@ end
 		36,		-- Burning Steppes (All of Eastern Kingdoms)
 		100,	-- Hellfire Peninsula (All of Outland)
 		118,	-- Icecrown (All of Northrend)
+		422,	-- Dread Wastes (All of Pandaria)
+		525,	-- Frostfire Ridge (All of Draenor)
+		630,	-- Azsuna (All of Broken Isles)
+		882,	-- Mac'Aree (All of Argus)
 		862,	-- Zuldazar (All of Zuldazar)
+		896,	-- Drustvar (All of Kul Tiras)
 	};
 	local cachedNodeData = {};
 	app.CacheFlightPathData = function()
