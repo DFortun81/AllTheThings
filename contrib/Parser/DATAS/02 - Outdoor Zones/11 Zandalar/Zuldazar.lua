@@ -598,7 +598,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161040),	-- Arid Dune Stompers
 							}),
-							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
+							["questID"] = 50438,	
 						}),		
 						n(131476, {	-- Zayoos		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
