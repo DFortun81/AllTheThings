@@ -31,13 +31,16 @@ _.Zones =
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),	
 							o(297891, {	-- Runebound Cache
-								["groups"] = {
-									i(163742),	-- Heartsbane Grimoire
+								["g"] = {
+									i(163743),	-- Drust Soulcatcher
 								},
 								["questID"] = 53385,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),	
-							o(297892, {	-- Runebound Chest	
+							o(297892, {	-- Runebound Chest
+								["groups"] = {
+									i(163742),	-- Heartsbane Grimoire (TOY!)
+								},
 								["questID"] = 53386,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),	
