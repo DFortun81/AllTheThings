@@ -69,6 +69,18 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					["groups"] = {
+						a(ach(12497, {	-- Drust Do It.
+							crit(1),		-- The Final Effigy
+							crit(2),		-- The Burden of Proof
+							crit(3),		-- An Airtight Alibi
+							crit(4),		-- The Order of Embers
+							crit(5),		-- A New Order
+							crit(6),		-- Break on Through
+							crit(7),		-- Storming the Manor
+							crit(8),		-- Clear Victory
+							crit(9),		-- Fighting With Fire
+							crit(10),		-- Stick It To 'Em!
+						})),
 					},
 				}),
 				n(-16, {	-- Rares

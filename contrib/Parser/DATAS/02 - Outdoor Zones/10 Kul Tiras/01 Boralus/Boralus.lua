@@ -9,6 +9,17 @@ _.Zones =
 			["groups"] = {
 				n(-4, { -- Achievement
 					["groups"] = {
+						a(ach(12891, {	-- A Nation United
+							crit(3),		-- A Nation United
+							crit(1),		-- Kul Tourist
+							crit(2),		-- The Pride of Kul Tiras
+						})),
+						a(ach(12593, {	-- Kul Tourist
+							crit(1),		-- A Sound Plan
+							crit(2),		-- Drust Do It.
+							crit(3),		-- Stormsong and Dance
+						})),
+						a(ach(12997)),	-- The Pride of Kul Tiras
 						ach(12852, { -- Treasures of Tiragarde Sound
 							i(161342, { -- Gem of Acquiescence [MOVE TO BORALUS]
 								["groups"] = {

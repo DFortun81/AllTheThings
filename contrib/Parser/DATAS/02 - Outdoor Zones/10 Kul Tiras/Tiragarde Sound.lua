@@ -85,6 +85,15 @@ _.Zones =
 								}),
 							},
 						})),
+						a(ach(12473, {	-- A Sound Plan
+							crit(1),		-- The Ashvane Trading Company
+							crit(2),		-- Freehold
+							crit(3),		-- Defenders of Daelin's Gate
+							crit(4),		-- Enemies Within
+							crit(5),		-- The Shadow Over Anglepoint
+							crit(6),		-- The Norwington Estate
+							crit(7),		-- Castaways and Cutouts
+						})),
 						q(52128, {	-- Ferry Pass
 							["qg"] = 122370,	-- Cyrus Crestfall
 							["sourceQuests"] = { 46729 },	-- The Old Knight
