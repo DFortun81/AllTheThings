@@ -536,11 +536,12 @@ _.Zones =
 							["questID"] = 52433,	
 						}),		
 						n(135947, {	-- Strange Mushroom Ring		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(154466),	-- Fungalshroud Raiment
 								i(158224),	-- Vial of Storms
-							}),	
-							["questID"] = 50024,	
-						}),		
+							}),
+							["questID"] = 50024,
+						}),
 						n(139980, {	-- Taja the Tidehowler		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(154449),	-- Tidebound Chestguard
