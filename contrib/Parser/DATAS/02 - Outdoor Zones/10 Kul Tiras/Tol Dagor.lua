@@ -19,6 +19,31 @@ _.Zones =
 						})),
 					},
 				}),
+				n(-34, {	-- World Quests
+					["groups"] = {
+						i(159460),	-- Overseer's Lost Seal
+						i(160110),	-- Warglaive of the Sand Queen
+						n(-43, {	-- Cloth
+							["groups"] = {
+								
+							},
+						}),
+						n(-44, {	-- Leather
+							["groups"] = {
+								
+							},
+						}),
+						n(-45, {	-- Mail
+							["groups"] = {
+								
+							},
+						}),
+						n(-46, {	-- Plate
+							["groups"] = {
+							},
+						}),
+					},
+				}),
 			},
 			--["achievementID"] = 12840, -- Tol Dagor
 			["lvl"] = 110,

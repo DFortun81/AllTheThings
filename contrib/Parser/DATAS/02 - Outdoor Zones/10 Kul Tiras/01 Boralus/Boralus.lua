@@ -39,6 +39,13 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-169, { 	-- Emissary Quests
+					["groups"] = {
+						q(50599, { -- Proudmoore Admiralty
+							["isDaily"] = true,
+						}),
+					},
+				}),
 				n(-38, { -- Professions
 					["groups"] = {
 						q(48752, { -- A Need For Coal
