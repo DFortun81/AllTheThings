@@ -94,26 +94,30 @@ _.Zones =
 						n(130143, { -- Balethorn		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160475), -- Barksnapper Girdle
-							}),	
+							}),
+							["coord"] = { 58.0, 29.6 },	-- patrols, needs path added
 							["questID"] = 49602,	
 						}),		
 						n(127333, { -- Barbthorn Queen		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155425), -- Barbthorn Queen's Stinger
 							}),	
+							["coord"] = { 59.0, 16.8 },
 							["questID"] = 48842,	
 						}),		
-						n(129805, { -- Beshol		
+						n(129805, { -- Beshol (have to interact with "Obviously Safe Chest" to spawn)
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158363), -- Spiderhair Circlet
-							}),	
+							}),
+							["coord"] = { 50.5, 30.0 },
 							["questID"] = 49481,	
 						}),		
 						n(124548, { -- Betsy		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160463), -- Blue-Ribbon Belt
-							}),	
-							["questID"] = 47884,	
+							}),
+							["coord"] = { 58.4, 33.2 },	-- may have other spawnpoints (?)
+							["questID"] = 47884,
 						}),		
 						n(132319, { -- Bilefang Mother		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -198,7 +202,8 @@ _.Zones =
 						n(127129, { -- Grozgore		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160457), -- Lava-Starched Britches
-							}),	
+							}),
+							["coord"] = { 50.3, 20.7 },
 							["questID"] = 49388,	
 						}),		
 						n(138618, { -- Haywire Golem		
@@ -283,7 +288,8 @@ _.Zones =
 						n(128973, { -- Whargarble the Ill-Tempered		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155543), -- Tuskarr Whaler's Harpoon
-							}),	
+							}),
+							["coord"] = { 64.9, 21.5 },
 							["questID"] = 49311,	
 						}),		
 						n(139322, { -- Whitney "Steelclaw" Ramsay		
