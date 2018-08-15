@@ -469,12 +469,13 @@ _.Zones =
 							}),	
 							["questID"] = 52318,
 						}),		
-						n(138963, {	-- Nestmother Acada		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(138963, {	-- Nestmother Acada
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(160458),	-- Ancient Featherlight Slippers
 								i(160477),	-- Skoloth's Anchorplate Greaves
-							}),	
-							["questID"] = 51762,	
-						}),		
+							}),
+							["questID"] = 51762,
+						}),
 						n(141239, {	-- Osca the Bloodied		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(159169),	-- Bloody Bearhide Pants
