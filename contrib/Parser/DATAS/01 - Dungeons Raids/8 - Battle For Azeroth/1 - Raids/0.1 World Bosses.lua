@@ -22,6 +22,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						132701, -- T'zane <Tehe Soul Terror>
 					},
+					["isRaid"] = true,
 					["maps"] = { 863 }, -- Nazmir
 					["questID"] = 52181, -- Smoke and Shadow
 				}),
@@ -41,6 +42,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						132253, -- Ji'arak
 						132653, -- Ji'arak Broodling
 					},
+					["isRaid"] = true,
 					["maps"] = { 862 }, -- Zuldazar
 					--["questID"] = , -- The Matriarch
 				}),
@@ -61,6 +63,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						140252, -- Hailstone Construct
 					},
+					["isRaid"] = true,
 					["maps"] = { 896 }, -- Drustvar
 					["questID"] = 52157, -- A Chilling Ecnounter
 				}),
@@ -81,6 +84,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						136385, -- Azurethos, The Winged Typhoon
 					},
+					["isRaid"] = true,
 					["maps"] = { 895 }, -- Tiragarde Sound
 				}),
 				e(2198, { -- Warbringer Yenajz [QID]
@@ -98,6 +102,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						140163, -- Warbringeer Yenajz
 					},
+					["isRaid"] = true,
 					["maps"] = { 942 }, -- Stormsong Valley
 					["questID"] = 52166, -- The Faceless Herald
 				}),
@@ -117,6 +122,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						138794, -- Dunegorger Kraulok
 						139614, -- Ravenous Ranishu
 					},
+					["isRaid"] = true,
 					["maps"] = { 864 }, -- Vol'dun
 					["questID"] = 52196, -- Sandswept Bones
 				}),
@@ -148,6 +154,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					1044, -- Arathi Highlands
 					1158, -- Arathi Highlands
 				}, 
+				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["questID"] = 52847, -- Doom's Howl
 			}),
@@ -178,6 +185,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					1044, -- Arathi Highlands
 					1158, -- Arathi Highlands
 				}, 
+				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
 				["questID"] = 52848, -- The Lion's Roar
 			}),
