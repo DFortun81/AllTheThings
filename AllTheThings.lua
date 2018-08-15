@@ -3576,6 +3576,7 @@ end
 		36,		-- Burning Steppes (All of Eastern Kingdoms)
 		100,	-- Hellfire Peninsula (All of Outland)
 		118,	-- Icecrown (All of Northrend)
+		862,	-- Zuldazar (All of Zuldazar)
 	};
 	local cachedNodeData = {};
 	app.CacheFlightPathData = function()
