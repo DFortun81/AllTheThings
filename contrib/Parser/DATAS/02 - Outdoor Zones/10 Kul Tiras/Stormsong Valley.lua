@@ -75,6 +75,7 @@ _.Zones =
 				n(-17, {	-- Quests
 				---- TODO THESE QUESTS WILL BE SOURCED / ORGANIZED.  I HAVE THE DATA ALREADY PLEASE DO NOT ALTER.  THANKS!!!
 					["groups"] = {
+						--[[
 						a(ach(12496, {	-- Stormsong and Dance
 							crit(1),		-- The Tidesages of Stormsong
 							crit(2),		-- A House in Peril
@@ -85,6 +86,7 @@ _.Zones =
 							crit(7),		-- Briarback Kraul
 							crit(8),		-- Treasure in Deadwash
 						})),
+						--]]
 					q(50616, {	-- A Bit of a Bind
 					i(160345),
 					i(160371),

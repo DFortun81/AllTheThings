@@ -471,6 +471,78 @@ _.Zones =
 									}),	
 								},
 							}),
+							crit(7, {	-- Bring the Boom
+								["groups"] = {
+									q(47601, {	-- Field Evaluation	
+										["groups"] = {
+											i(158993),	-- Death-Pledged Legguards
+											i(158992),	-- Loa Speaker's Trousers
+											i(158991),	-- Nazmani Warplate Wargreaves
+											i(158994),	-- Ritual Flayer's Legwraps
+											i(155382),	-- Spare Stabilizer Band
+										},
+										["qg"] = 123544,	-- Patch
+										["sourceQuests"] = { 
+											47596,	-- There Is No Plan "B" 
+											47598,	-- Pilfering and Fencing
+											47711, 	-- Head of the Viper
+										},	
+									}),		
+									q(47245, {	-- Getting the Message	
+										["qg"] = 131213,	-- Rokhan
+										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
+									}),		
+									q(47711, {	-- Head of the Viper	
+										["qg"] = 123544,	-- Patch
+										["sourceQuests"] = { 
+											47599,	-- Revenge: Served Hot
+											47597,	-- No Goblin Left Behind
+										},	
+									}),		
+									q(47597, {	-- No Goblin Left Behind	
+										["qg"] = 123178,	-- Patch
+										["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
+									}),		
+									q(47598, {	-- Pilfering and Fencing	
+										["qg"] = 123545,	-- Newt
+										["sourceQuests"] = { 
+											47599,	-- Revenge: Served Hot
+											47597,	-- No Goblin Left Behind
+										},	
+									}),		
+									q(47602, {	-- Ready For Action	[Note: Final Quest needed to trigger criteria]
+										["qg"] = 123878,	-- Patch
+										["sourceQuests"] = { 47601 },	-- Field Evaluation
+										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
+									}),		
+									q(47631, {	-- Rendezvous with the Libation	
+										["qg"] = 131213,	-- Rokhan
+										["sourceQuests"] = { 47245 },	-- Getting the Message
+									}),		
+									q(47599, {	-- Revenge: Served Hot	
+										["groups"] = {
+											i(159002),	-- Death-Pledged Girdle
+											i(159001),	-- Loa Speaker's Cinch
+											i(159000),	-- Nazmani Warplate Waistguard
+											i(159003),	-- Ritual Flayer's Waistwrap
+											i(159077),	-- Ticker's Spare Catalyst
+										},
+										["qg"] = 123436,	-- Ticker
+										["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
+									}),		
+									q(47756, {	-- The Libation's Liberation	
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
+									}),		
+									q(47596, {	-- There Is No Plan "B"	
+										["qg"] = 123548,	-- Ticker
+										["sourceQuests"] = { 
+											47599,	-- Revenge: Served Hot
+											47597,	-- No Goblin Left Behind
+										},	
+									}),	
+								},
+							}),
 							n(132011, {	-- Shoak
 								["groups"] = {
 									q(47996, {	-- Mawfiend Extermination	
@@ -507,6 +579,7 @@ _.Zones =
 								["collectible"] = false,
 								["description"] = "You must complete this storyline in order for him to show up at Gloom Hollow.",
 							}),
+							
 							-- Crieve's List
 							{
 								["questID"] = 49484,	-- Offering to Bwonsamdi [The Necropolis]

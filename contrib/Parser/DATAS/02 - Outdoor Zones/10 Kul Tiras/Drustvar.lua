@@ -69,6 +69,7 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					["groups"] = {
+						--[[
 						a(ach(12497, {	-- Drust Do It.
 							crit(1),		-- The Final Effigy
 							crit(2),		-- The Burden of Proof
@@ -81,6 +82,7 @@ _.Zones =
 							crit(9),		-- Fighting With Fire
 							crit(10),		-- Stick It To 'Em!
 						})),
+						--]]
 					},
 				}),
 				n(-16, {	-- Rares
