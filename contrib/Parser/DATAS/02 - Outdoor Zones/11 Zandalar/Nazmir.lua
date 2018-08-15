@@ -216,49 +216,102 @@ _.Zones =
 									}),		
 								},
 							}),
-							--crit(3, 
-						},
-					})),
-						{
-							["itemID"] = 157801,	-- Snapjaw Tail (Random drop from Primal Snapjaw - 126723) 
-							["questID"] = 50436,	-- Guttural Voice? (Trinket for ol' Jani)
-							["groups"] = {
-								{
-									["questID"] = 50437,	-- Large Treasure Chest [Primal Wetlands]
-									["description"] = "Might be related to the Snapjaw Tail",
+							crit(3, {	-- The Dark Heart of Nazmir
+								["groups"] = {
+									q(49440, {	-- Blood Troll on the Outside
+										["qg"] = 122795,	-- Witch Doctor Kejabu
+										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
+									}),
+									q(49079, {	-- Hir'eek, the Bat Loa	
+										["qg"] = 129378,	-- Jo'chunga
+										["sourceQuests"] = { 
+											49078,	-- Poisoning the Brood
+											48800,	-- Mark of the Bat
+										},	
+									}),		
+									q(48890, {	-- How to Be a Blood Troll	
+										["qg"] = 127391,	-- Bloodseeker Jo'chunga
+										["sourceQuests"] = { 48699 },	-- Sneaking into Zalamar
+									}),		
+									q(48801, {	-- Isolating Zalamar	
+										["qg"] = 127391,	-- Bloodseeker Jo'chunga
+										["sourceQuests"] = { 48699 },	-- Sneaking into Zalamar
+									}),		
+									q(48800, {	-- Mark of the Bat
+										["groups"] = {
+											i(159075),	-- Bloodhex Talisman
+											i(158970),	-- Death-Pledged Vambraces
+											i(158968),	-- Loa Speaker's Wraps
+											i(158969),	-- Nazmani Warplate Bracers
+											i(158971),	-- Ritual Flayer's Wristguards
+										},
+										["qg"] = 127391,	-- Bloodseeker Jo'chunga
+										["sourceQuests"] = { 
+											48801,	-- Isolating Zalamar
+											48890,	-- How to Be a Blood Troll
+										},	
+									}),		
+									q(49078, {	-- Poisoning the Brood	
+										["qg"] = 127391,	-- Bloodseeker Jo'chunga
+										["sourceQuests"] = { 
+											48801,	-- Isolating Zalamar
+											48890,	-- How to Be a Blood Troll
+										},	
+									}),		
+									q(48699, {	-- Sneaking into Zalamar	
+										["qg"] = 122795,	-- Witch Doctor Kejabu
+										["sourceQuests"] = { 49440 },	-- Blood Troll on the Outside
+									}),		
+									q(49081, {	-- To Kill a Loa	
+										["qg"] = 128276,	-- Jo'chunga
+										["sourceQuests"] = { 49079 },	-- Hir'eek, the Bat Loa
+									}),		
+									q(49082, {	-- Upward and Onward	
+										["qg"] = 128276,	-- Jo'chunga
+										["sourceQuests"] = { 49081 },	-- To Kill a Loa
+										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
+									}),	
+									q(49406, {	-- Zalamar Slaughter
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["sourceQuests"] = { 
+											48801,	-- Isolating Zalamar
+											48890,	-- How to Be a Blood Troll
+										},	
+									}),	
+								},
+							}),
+							-- Crieve's List
+							{
+								["questID"] = 49484,	-- Offering to Bwonsamdi [The Necropolis]
+							},
+							{
+								["questID"] = 47530,	-- ???? [The Necropolis] (completed after soulbound, but not known)
+							},
+							{
+								["questID"] = 48869,	-- Payback's a Lich [Burial Mound]
+								["groups"] = {
+									i(155375),	-- Ghoulish Blood Idol
+									i(155378),	-- Zardax's Tattered Drape
 								},
 							},
-						},
-						
-						{
-							["questID"] = 49484,	-- Offering to Bwonsamdi [The Necropolis]
-						},
-						{
-							["questID"] = 47530,	-- ???? [The Necropolis] (completed after soulbound, but not known)
-						},
-						{
-							["questID"] = 48869,	-- Payback's a Lich [Burial Mound]
-							["groups"] = {
-								i(155375),	-- Ghoulish Blood Idol
-								i(155378),	-- Zardax's Tattered Drape
+							{
+								["questID"] = 49313,	-- Wun'ju's Trove [Terrace of Sorrows]
+							},
+							{
+								["questID"] = 50888,	-- Urn of Ugussu [Terrace of Sorrows]
+							},
+							{
+								["questID"] = 48578,	-- There's No Eye in Skyterror
+								["groups"] = {
+									i(155377),	-- Drained Bone Band [Ring]
+									i(159074),	-- Jarkadiax's Other Eye [Trinket]
+								},
+							},
+							{
+								["questID"] = 48588,	-- Objective [Primal Wetlands]
 							},
 						},
-						{
-							["questID"] = 49313,	-- Wun'ju's Trove [Terrace of Sorrows]
-						},
-						{
-							["questID"] = 50888,	-- Urn of Ugussu [Terrace of Sorrows]
-						},
-						{
-							["questID"] = 48578,	-- There's No Eye in Skyterror
-							["groups"] = {
-								i(155377),	-- Drained Bone Band [Ring]
-								i(159074),	-- Jarkadiax's Other Eye [Trinket]
-							},
-						},
-						{
-							["questID"] = 48588,	-- Objective [Primal Wetlands]
-						},
+					})),
 				}),
 				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
