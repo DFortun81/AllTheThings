@@ -244,6 +244,16 @@ _.Zones =
 						-- TO-DO Put in quests that are related to the city here later.  For now leave in main zone
 					},
 				}),
+				n(-212, {	-- Treasure Chest
+					["groups"] = { -- If we are going to list every treasure chest then let's make it pretty and not show quest ID# on screen.
+						o(213, { -- Treasure Chest
+							["questID"] = 49142,
+							["coords"] = {
+								{ 52.24, 12.36 },
+							},
+						}),
+					},
+				}),
 				n(-2, {  -- Vendors
 					["groups"] = {
 						n(132114, {	-- Griftah <Amazing Amulets>

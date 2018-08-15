@@ -579,10 +579,10 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161091),	-- Swift-Talon Striders
 							}),
-							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
+							["questID"] = 47567,
 						}),		
 						n(134717, {	-- Umbra'rix [Missing]		
-							["questID"] = 47567,	
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(134048, {	-- Vukuba
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
