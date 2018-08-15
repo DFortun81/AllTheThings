@@ -147,7 +147,7 @@ _.Zones =
 							["questID"] = 50163,	
 						}),		
 						n(138667, {	-- Blighted Monstrosity	[Missing]	
-							--["questID"] = 	
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(126621, {	-- Bonesquall		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -250,7 +250,7 @@ _.Zones =
 							["questID"] = 48981,	
 						}),		
 						n(137704, {	-- Matron Morana [Missing]	
-							--["questID"] = 	
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(130138, {	-- Nevermore		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -286,7 +286,7 @@ _.Zones =
 							["questID"] = 51748,	
 						}),		
 						n(137665, {	-- Soul Goliath	[Missing]
-							--["questID"] = 	
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(129950, {	-- Talon		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	

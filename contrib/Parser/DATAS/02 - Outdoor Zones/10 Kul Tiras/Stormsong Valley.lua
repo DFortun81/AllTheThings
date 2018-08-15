@@ -379,7 +379,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160459),	-- Apiarist's Stingproof Belt
 							}),	
-							--["questID"] = 	
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(137025, {	-- Broodmother		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -482,7 +482,7 @@ _.Zones =
 							["questID"] = 52461,	
 						}),		
 						n(137649, {	-- Pest Remover Mk. II [Missing]
-							--["questID"] = 	
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(139298, {	-- Pinku'shon		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -503,7 +503,7 @@ _.Zones =
 							["questID"] = 50725,	
 						}),		
 						n(132047, {	-- Reinforced Hullbreaker [Missing]	
-							--["questID"] = 	
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(139328, {	-- Sabertron		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -515,7 +515,7 @@ _.Zones =
 							["questID"] = 52125,	
 						}),		
 						n(139515, {	-- Sandscour [Missing]		
-							--["questID"] = 	
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(138938, {	-- Seabreaker Skoloth		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	

@@ -186,58 +186,6 @@ _.Zones =
 										}),	
 									},
 								}),
-								crit(2, {	-- Port of Zandalar
-									["groups"] = {
-										q(46929, {	-- Deterrent
-											["groups"] = {
-												i(155305),	-- Golden City Greatcloak
-												i(155268),	-- Rastari Vambraces
-												i(155270),	-- Jambani Armbands
-												i(155267),	-- Zanchuli Wristwraps
-												i(155269),	-- Torcalin Bracers
-											},
-											["qg"] = 135441,	-- Zolani
-											["sourceQuests"] = { 46926, 46846, }	-- Shakedown, The Word of Zul
-										}),		
-										q(48454, {	-- Evidence of Evil	
-											["qg"] = 126148,	-- Witch Doctor Jala
-											["sourceQuests"] = { 48452 },	-- The Red Market
-										}),		
-										q(46927, {	-- Punishment of Tal'aman	
-											["qg"] = 126684,	-- Yazma
-											["sourceQuests"] = { 48454 },	-- Evidence of Evil
-										}),		
-										q(46928, {	-- Punishment of Tal'farrak	
-											["qg"] = 126684,	-- Yazma
-											["sourceQuests"] = { 48454 },	-- Evidence of Evil
-										}),		
-										q(50881, {	-- Royal Report	[Note: Final Quest needed to trigger criteria]
-											["qg"] = 135441,	-- Zolani
-											["sourceQuests"] = { 46927, 46928, },	-- Punishment of Tal'aman, Punishment of Tal'farrak
-											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-										}),	
-										q(46926, {	-- Shakedown	
-											["qg"] = 135441,	-- Zolani
-											["sourceQuests"] = { 50835 },	-- The Port of Zandalar
-										}),		
-										q(50835, {	-- The Port of Zandalar	
-											["qg"] = 122915,	-- Zolani
-											["sourceQuests"] = { 49615 },	-- Trust of a King
-										}),		
-										q(48452, {	-- The Red Market	
-											["qg"] = 126148,	-- Witch Doctor Jala
-											["sourceQuests"] = { 46929, 48456, }	-- Deterrent, Witch Doctor Jala
-										}),		
-										q(46846, {	-- The Word of Zul	
-											["qg"] = 126684,	-- Yazma
-											["sourceQuests"] = { 50835 },	-- The Port of Zandalar
-										}),		
-										q(48456, {	-- Witch Doctor Jala	
-											["qg"] = 135441,	-- Zolani
-											["sourceQuests"] = { 46926, 46846, }	-- Shakedown, The Word of Zul
-										}),	
-									},
-								}),
 								crit(3, {	-- Warport Rastari
 									["groups"] = {
 										q(49122, {	-- A Port in Peril	
@@ -525,7 +473,7 @@ _.Zones =
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47433 },	-- Offensively Defensive
 										}),		
-										q(47432, {	-- The Bargain is Struck [Note: Final Quest needed to trigger criteria]
+										q(47432, {	-- The Bargain is Struck [Note: Final Quest needed to trigger criteria]; Actually Gonk/Pa'ku triggeeer
 											["qg"] = 127489,	-- Hexlord Raal
 											["sourceQuests"] = { 47440, 47439, },	-- Pa'ku, Master of Winds, Gonk, Lord of the Pack
 											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
@@ -645,7 +593,7 @@ _.Zones =
 							["questID"] = 50677,
 						}),		
 						n(134637, {	-- Headhunter Lee'za [Missing]		
-							--["questID"] = 	
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(126637, {	-- Kandak		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -693,7 +641,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161007),	-- Direhorn Studded Britches
 							}),
-							--["questID"] = 
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 
 						}),		
 						n(127939, {	-- Torraske the Eternal
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -708,7 +656,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161091),	-- Swift-Talon Striders
 							}),
-							--["questID"] = 	
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(134717, {	-- Umbra'rix [Missing]		
 							["questID"] = 47567,	
@@ -727,7 +675,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161040),	-- Arid Dune Stompers
 							}),
-							--["questID"] = 	
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(131476, {	-- Zayoos		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -736,7 +684,7 @@ _.Zones =
 							["questID"] = 49972,
 						}),		
 						n(136702, {	-- Zu'shin the Infused [Missing]		
-							--["questID"] = 	
+							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 					},
 				}),
