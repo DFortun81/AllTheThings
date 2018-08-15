@@ -31,7 +31,7 @@ _.Instances = {
 					crit(7),	-- Tol Dagor
 					crit(2),	-- Waycrest Manor
 				},
-				[lvl] = 120,	-- Putting this here so it filters properly.  Moving elsewhere breaks
+				["lvl"] = 120,	-- Putting this here so it filters properly.  Moving elsewhere breaks
 			}),
 			ach(12812, { -- Glory of the Wartorn Hero
 				["groups"] = {

@@ -116,7 +116,187 @@ _.Zones =
 							["qg"] = 139522,	-- Scouting Map
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
 						}),
+						--
+						q(49403, { -- Rodrigo's Revenge
+							i(163036),
+						}),
+						q(161083, { -- Missing Treasure!
+							i(161083),	-- Satchel of Plundered Jewels
+						}),
+						q(48903, { -- The Perfect Horse, of Course
+							i(158229),	-- Lucktail Riding Cloak
+							i(158267),	-- Tortollan Traveling Lantern
+							i(155082),	-- Durable Seashell Barrier
+						}),
+						q(49734, { -- Targeting a Turncoat
+						i(155090),	-- Lieutenant Fernn's Ring
+						i(158266),	-- Southport Searchlight
+						i(158330),	-- Proudmoore Marine's Crest
+						}),
+						q(49431, { -- Warm and Cozy
+						i(158289),	-- Navigator's Cinch
+						i(158291),	-- Freebooter Waistwrap
+						i(158290),	-- Outrigger Cincture
+						i(158288),	-- Sea Raider's Buckle
+						i(160082),	-- Griddon's Satin Towel
+						}),
+						q(48909, { -- Noble Responsibilities
+						i(155089),	-- Lord Kenning's Signet
+						i(158281),	-- Navigator's Cord
+						i(158283),	-- Freebooter Cinch
+						i(158282),	-- Outrigger Chain
+						i(158280),	-- Sea Raider's Belt
+						}),
+						q(50005, { -- Hold My Hand
+						i(158264),	-- Navigator's Handwraps
+						i(158262),	-- Freebooter Mitts
+						i(158265),	-- Outrigger Grips
+						i(158263),	-- Sea Raider's Gloves
+						i(160087),	-- Penny's Friendship Ring
+						}),
+						q(49738, { -- Hands Off My Booty!
+						i(158268),	-- Navigator's Bracers
+						i(158271),	-- Freebooter Armbands
+						i(158270),	-- Outrigger Armguards
+						i(158269),	-- Sea Raider's Vambraces
+						i(155092),	-- Master Cannoneer's Cloak
+						}),
+						q(48421, { -- Blood in the Tides
+						i(155024),	-- Navigator's Sandals
+						i(155026),	-- Freebooter Boots
+						i(155025),	-- Outrigger Boots
+						i(155023),	-- Sea Raider's Sabatons
+						i(155086),	-- Keelson's Bloody Drape
+
+						}),
+						q(53439, { -- Blood in the Tides [HORDE]
+						i(155024),	-- Navigator's Sandals
+						i(155026),	-- Freebooter Boots
+						i(155025),	-- Outrigger Boots
+						i(155023),	-- Sea Raider's Sabatons
+						i(155086),	-- Keelson's Bloody Drape
+
+						}),
+						q(49417, { -- Roughneck Riders
+						i(158239),	-- Navigator's Walkers
+						i(158241),	-- Freebooter Striders
+						i(158240),	-- Outrigger Striders
+						i(158238),	-- Sea Raider's Footguards
+						i(158228),	-- Gryphon Rider's Ring
+
+						}),
+						q(49400, { -- Recruiting Efforts
+						i(155083),	-- Crow's Nest Spotlight
+						i(155081),	-- Great Sea Buckler
+						i(158285),	-- Navigator's Belt
+						i(158287),	-- Freebooter Buckle
+						i(158286),	-- Outrigger Cinch
+						i(158284),	-- Sea Raider's Greatbelt
+						}),
+						q(49736, { -- For Kul Tiras!
+						i(155085),	-- Standard Bearer's Band
+						i(158235),	-- Navigator's Shoes
+						i(158237),	-- Freebooter Walkers
+						i(158236),	-- Outrigger Walkers
+						i(158234),	-- Sea Raider's Stompers
+						}),
+						q(49069, { -- WANTED: Ol' Frostclaw
+						i(158243),	-- Navigator's Legwraps
+						i(158245),	-- Freebooter Trousers
+						i(158244),	-- Outrigger Chausses
+						i(158242),	-- Sea Raider's Legplates
+						i(158272),	-- Navigator's Bands
+						i(158275),	-- Freebooter Wristwraps
+						i(158274),	-- Outrigger Shackles
+						i(158273),	-- Sea Raider's Armplates
+						}),
+						q(48077, { -- The Stoat Hunt
+						i(158247),	-- Navigator's Pants
+						i(158249),	-- Freebooter Pants
+						i(158248),	-- Outrigger Links
+						i(158246),	-- Sea Raider's Chausses
+						i(158276),	-- Navigator's Bindings
+						i(158279),	-- Freebooter Bindings
+						i(158278),	-- Outrigger Bindings
+						i(158277),	-- Sea Raider's Wristguards
+						}),
+						q(48558, { -- The Irontide Crew
+						i(155077),	-- Ashvane Captain's Cutlass
+						i(155071),	-- Salty Dog's Harpoon
+						i(155080),	-- Seafury Tamer
+						i(155066),	-- Overseer's Authority
+						i(155058),	-- Irontide Gambler's Dagger
+						i(155063),	-- Trickshot Speargun
+						i(155073),	-- Waverider Warstaff
+						i(155052),	-- Port-Ruffian's Cleaver
+						}),
+						q(50573, { -- Message from the Management
+						i(155036),	-- Navigator's Leggings
+						i(155038),	-- Freebooter Breeches
+						i(155037),	-- Outrigger Legguards
+						i(155035),	-- Sea Raider's Greaves
+						i(155029),	-- Navigator's Gloves
+						i(155027),	-- Freebooter Gloves
+						i(155030),	-- Outrigger Gloves
+						i(155028),	-- Sea Raider's Gauntlets
+						}),
+						q(49299, { -- Enemy Within
+						i(160083),	-- Navigator's Footwraps
+						i(160084),	-- Freebooter Shoes
+						i(160085),	-- Outrigger Waders
+						i(160086),	-- Sea Raider's Boots
+						i(160093),	-- Navigator's Waistwrap
+						i(160094),	-- Freebooter Cord
+						i(160095),	-- Outrigger Waistwrap
+						i(160096),	-- Sea Raider's Cinch
+						}),
+						q(49234, { -- A Marine Out of Water
+						i(158255),	-- Sea Raider's Crushers
+						i(158256),	-- Navigator's Mitts
+						i(158257),	-- Outrigger Strikers
+						i(158254),	-- Freebooter Grips
+						i(158251),	-- Navigator's Woolies
+						i(158253),	-- Freebooter Pantaloons
+						i(158252),	-- Outrigger Pants
+						i(158250),	-- Sea Raider's Legguards
+						}),
+						q(48352, { -- A Cure from the Sea
+						i(160097),	-- Navigator's Wristwraps
+						i(160098),	-- Freebooter Bands
+						i(160099),	-- Outrigger Bands
+						i(160100),	-- Sea Raider's Shackles
+						i(158260),	-- Navigator's Grips
+						i(158258),	-- Freebooter Handwraps
+						i(158261),	-- Outrigger Handguards
+						i(158259),	-- Sea Raider's Handguards
+						}),
+						q(49302, { -- The Deadliest Catch
+						i(155053),	-- Scaleterror Slicer
+						i(155079),	-- Thrashneck Gladius
+						i(155072),	-- Wavetamer Trident
+						i(155059),	-- Sea Priest's Spellblade
+						i(158298),	-- Fishmonger's Gutter
+						i(155057),	-- Anglepoint Repeater
+						i(158296),	-- Angler's Longstaff
+						i(158295),	-- Shark-Hunter Glaive
+						i(155064),	-- Wharf-Porter Cudgel
+						}),
+						q(48088, { -- No Party Like a Trogg Party
+						i(155065),	-- Trogg Thumper
+						i(155068),	-- Grimestone Pounder
+						i(155075),	-- Lord Aldrus' Greatstaff
+						i(155054),	-- Reveler's Edge
+						i(155070),	-- Norwington's Poleaxe
+						i(155062),	-- Stoat-Trapper's Spikefist
+						i(155076),	-- Roughneck Rider Handaxe
+						i(158297),	-- Equestrian's Saddle Knife
+						i(158294),	-- Hollowbeak Hunting Rifle
+						}),
+						--]]
+
+
 					},
+					["races"] = ALLIANCE_ONLY,
 				}),
 				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
