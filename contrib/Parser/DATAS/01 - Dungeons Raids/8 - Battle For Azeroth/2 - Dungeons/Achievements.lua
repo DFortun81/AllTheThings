@@ -5,7 +5,7 @@
 _.Instances = { 
 	tier(8, {	-- Battle For Azeroth
 		["groups"] = {
-			ach(12807, { -- Battle For Azeroth Hero
+			ach(12807, {	-- Battle For Azeroth Hero
 				["groups"] = {
 					crit(6), -- Heroic: Atal'Dazar
 					crit(4), -- Heroic: Freehold
@@ -33,7 +33,7 @@ _.Instances = {
 				},
 				["lvl"] = 120,	-- Putting this here so it filters properly.  Moving elsewhere breaks
 			}),
-			ach(12812, { -- Glory of the Wartorn Hero
+			ach(12812, {	-- Glory of the Wartorn Hero
 				["groups"] = {
 					i(161215), -- Reins of the Obsidian Krolusk
 					crit(24),	-- A Fish Out of Water

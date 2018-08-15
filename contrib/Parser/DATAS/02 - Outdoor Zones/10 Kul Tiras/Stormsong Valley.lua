@@ -55,7 +55,7 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
-						q(50601, { -- Storm's Wake
+						q(50601, {	-- Storm's Wake
 							["isDaily"] = true,
 							["lvl"] = 120,
 						}),

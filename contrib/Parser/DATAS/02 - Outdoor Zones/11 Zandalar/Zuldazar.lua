@@ -71,7 +71,7 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
-						q(50598, { -- Zandalari Empire
+						q(50598, {	-- Zandalari Empire
 							["isDaily"] = true,
 							["lvl"] = 120,
 						}),

@@ -77,7 +77,7 @@ _.Zones =
 						
 						ach(11868, {	-- The Dark Heart of Nazmir [Note: Quest line starts here and a few quests are in the zone.  So we want to make them stand out amongst the crowd.]
 							["groups"] = {
-								crit(1, { -- Deep in the Swamp
+								crit(1, {	-- Deep in the Swamp
 									["groups"] = {
 										q(47103, {	-- Journey to Nazmir
 											["qg"] = 133050,

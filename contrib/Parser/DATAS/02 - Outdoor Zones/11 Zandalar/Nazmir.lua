@@ -56,7 +56,7 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
-						q(50602, { -- Talanji's Expedition
+						q(50602, {	-- Talanji's Expedition
 							["isDaily"] = true,
 							["lvl"] = 120,
 						}),
@@ -736,7 +736,13 @@ _.Zones =
 								},
 								--]]
 							["questID"] = 48462,	
-						}),		
+						}),	
+						n(128610, {	-- Maw of Shul-Nagruth
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(160973),	-- Accursed Tuskwand
+							}),
+							--["questID"] = ,
+						}),
 						n(128974, {	-- Queen Tzxi'kik [Missing]	
 							["questID"] = 48638,	
 						}),		
@@ -811,23 +817,23 @@ _.Zones =
 				}),
 				n(-212, {	-- Treasure Chest
 					["groups"] = { -- If we are going to list every treasure chest then let's make it pretty and not show quest ID# on screen.
-						o(246309, { -- Treasure Chest
+						o(246309, {	-- Treasure Chest
 							["questID"] = 49885,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
-						o(244689, { -- Treasure Chest
+						o(244689, {	-- Treasure Chest
 							["questID"] = 50895,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
-						o(244691, { -- Treasure Chest
+						o(244691, {	-- Treasure Chest
 							["questID"] = 49904,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
-						o(245316, { -- Treasure Chest
+						o(245316, {	-- Treasure Chest
 							["questID"] = 49916,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
-						o(246562, { -- Treasure Chest
+						o(246562, {	-- Treasure Chest
 							["questID"] = 50894,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
