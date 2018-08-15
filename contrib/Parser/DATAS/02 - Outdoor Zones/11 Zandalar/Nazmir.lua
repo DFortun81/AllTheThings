@@ -366,7 +366,111 @@ _.Zones =
 									}),	
 								},
 							}),
-							
+							crit(5, {	-- A Friend of the Frogs
+								["groups"] = {
+									q(47622, {	-- A Magical Glow
+										["groups"] = {
+											i(158972),	-- Alluring Glowfly Lantern
+											i(158975),	-- Gilded Lilypad
+										},
+										["qg"] = 120551,	-- Krag'wa the Huge
+										["sourceQuests"] = { 47623 },	-- The Last Witch Doctor of Krag'wa
+									}),		
+									q(48402, {	-- A Poisonous Touch	
+										["qg"] = 126039,	-- Mag'ash the Poisonous
+										["sourceQuests"] = { 
+											52477,	-- WANTED: Ayame
+											47525,	-- Staying Hidden
+										},	
+									}),		
+									q(47621, {	-- A True Loa Feast	
+										["qg"] = 120551,	-- Krag'wa the Huge
+										["sourceQuests"] = { 47623 },	-- The Last Witch Doctor of Krag'wa
+									}),		
+									q(47660, {	-- Fallen Idols	
+										["qg"] = 124376,	-- Witch Doctor Zentimo
+										["sourceQuests"] = { 
+											52477,	-- WANTED: Ayame
+											47525,	-- Staying Hidden
+										},	
+									}),		
+									q(47659, {	-- Hunt the Hunter
+										["groups"] = {
+											i(155383),	-- Bloody Warmother's Greatcloak
+											i(159040),	-- Death-Pledged Bindings
+											i(159038),	-- Loa Speaker's Bands
+											i(159039),	-- Nazmani Warplate Armguards
+											i(159041),	-- Ritual Flayer's Armbands
+										},
+										["qg"] = 124376,	-- Witch Doctor Zentimo
+										["sourceQuests"] = { 
+											52477,	-- WANTED: Ayame
+											47525,	-- Staying Hidden
+										},	
+									}),		
+									q(47696, {	-- Krag'wa the Terrible
+										["groups"] = {
+											i(159015),	-- Death-Pledged Boots
+											i(158986),	-- Death-Pledged Gloves
+											i(158985),	-- Loa Speaker's Handwraps
+											i(159014),	-- Loa Speaker's Sandals
+											i(158984),	-- Nazmani Warplate Battlegloves
+											i(159013),	-- Nazmani Warplate Stompers
+											i(159016),	-- Ritual Flayer's Footwraps
+											i(158983),	-- Ritual Flayer's Grips
+										},
+										["qg"] = 120551,	-- Krag'wa the Huge
+										["sourceQuests"] = { 47540 }	-- Totemic Restoration
+									}),		
+									q(47697, {	-- Krag'wa's Aid	
+										["qg"] = 124641,	-- Shadow Hunter Mutumba
+										["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
+									}),	
+									q(48090, {	-- Krag'wa's Chosen	[Note: One of 3 final Quest needed to trigger criteria]
+										["qg"] = 125317,	-- Shadow Hunter Narez
+										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
+										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
+									}),	
+									q(48093, {	-- Nagating the Threat [Note: One of 3 final Quest needed to trigger criteria]
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
+										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
+									}),		
+									q(47525, {	-- Staying Hidden	
+										["qg"] = 122991,	-- Shadow Hunter Mutumba
+										["sourceQuests"] = { 49902 },	-- To Gloom Hollow
+									}),		
+									q(47623, {	-- The Last Witch Doctor of Krag'wa	
+										["qg"] = 120551,	-- Krag'wa the Huge
+										["sourceQuests"] = { 
+											47659,	-- Hunt the Hunter,
+											47660,	-- Fallen Idol
+											48402,	-- A Poisonous Touch
+										},	
+									}),		
+									q(49902, {	-- To Gloom Hollow	
+										["qg"] = 127958,	-- Kisha
+										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
+									}),		
+									q(47918, {	-- To Serve Krag'wa	
+										["qg"] = 120551,	-- Krag'wa the Huge
+										["sourceQuests"] = { 47697 },	-- Krag'wa's Aid
+									}),		
+									q(47540, {	-- Totemic Restoration	
+										["qg"] = 120551,	-- Krag'wa the Huge
+										["sourceQuests"] = { 47621, 47622, },	-- A True Loa Feast, A Magical Glow
+									}),		
+									q(48092, {	-- Vengeance of the Frogs [Note: One of 3 final Quest needed to trigger criteria]	
+										["qg"] = 125317,	-- Shadow Hunter Narez
+										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
+										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
+									}),	
+									q(52477, {	-- WANTED: Ayame	
+										["qg"] = 131987,	-- Crez
+										["sourceQuests"] = { 49902 },	-- To Gloom Hollow
+									}),	
+								},
+							}),
 							n(132011, {	-- Shoak
 								["groups"] = {
 									q(47996, {	-- Mawfiend Extermination	

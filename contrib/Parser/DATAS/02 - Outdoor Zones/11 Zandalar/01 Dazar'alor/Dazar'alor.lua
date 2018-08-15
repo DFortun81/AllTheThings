@@ -85,7 +85,7 @@ _.Zones =
 										}),	
 										q(47512, {	-- Nazmir
 											["qg"] = 133050,
-											["sourceQuests"] = { 52131 },	-- We Need Each Other
+											-- ["sourceQuests"] = { 52131 }, -- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievemnt because they can't pick anything up regardless and less spammy in Quest Chain window
 										}),
 										q(48535, {	-- Nazmir, the Forbidden Swamp
 											["qg"] = 126549,
