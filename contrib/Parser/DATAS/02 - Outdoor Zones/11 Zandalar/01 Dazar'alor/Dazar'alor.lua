@@ -129,6 +129,80 @@ _.Zones =
 										--]]
 									},
 								}),
+								crit(6, {	-- The Zanchuli Council
+									["groups"] = {
+										q(47437, {	-- Competitive Devotion	
+											["qg"] = 126564,	-- Hexlord Raal
+											["sourceQuests"] = { 47434, 47435, },	-- Restraining Order, Pterrortorial Dispute
+										}),		
+										q(47442, {	-- Curse of Jani	
+											["qg"] = 126334,	-- Jani
+											["sourceQuests"] = { 47441 },	-- Pests
+										}),		
+										q(47422, {	-- Dire Situation	
+											["groups"] = {
+												i(159102),	-- Raal's Spare Hexxer
+												i(159100),	-- Crimson Cultist Scepter
+												i(159099),	-- Pa'ku Adherent's Talons
+												i(159098),	-- Wardruid's Cutter
+												i(159101),	-- Loti's Favorite Longspear
+												i(159097),	-- Pa'ku-Blessed Greatbow
+												i(159104),	-- Crimson Cultist Pummeler
+												i(159103),	-- Dregada's Greatsword
+											},
+											["qg"] = 126560,	-- Wardruid Loti
+											["sourceQuests"] = { 47437 },	-- Competitive Devotion
+										}),	
+										q(47423, {	-- Forbidden Practices	
+											["qg"] = 126560,	-- Wardruid Loti
+											["sourceQuests"] = { 47445 },	-- The Zanchuli Council
+										}),		
+										q(47439, {	-- Gonk, Lord of the Pack f[Note: One of two final Quest needed to trigger criteria]
+											["qg"] = 126560,	-- Wardruid Loti
+											["sourceQuests"] = { 47438 },	-- Picking a Side
+											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
+										}),	
+										q(47433, {	-- Offensively Defensive
+											["groups"] = {
+												i(155246),	-- Jambani Grips
+												i(155247),	-- Rastari Gauntlets
+												i(155248),	-- Zanchuli Handwraps
+												i(155249),	-- Torcalin Gloves
+												i(155263),	-- Rastari Waistguard
+												i(155264),	-- Zanchuli Sash
+												i(155265),	-- Torcalin Girdle
+												i(155266),	-- Jambani Waistwrap
+											},
+											["qg"] = 126564,	-- Hexlord Raal
+											["sourceQuests"] = { 47423 },	-- Forbidden Practices
+										}),	
+										q(47440, {	-- Pa'ku, Master of Winds [Note: One of two final Quest needed to trigger criteria]
+											["qg"] = 126564,	-- Hexlord Raal
+											["sourceQuests"] = { 47438 },	-- Picking a Side
+											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
+										}),		
+										q(47441, {	-- Pests	
+											["qg"] = 127665,	-- Nokano
+											["sourceQuests"] = { 47445 },	-- The Zanchuli Council
+										}),	
+										q(47438, {	-- Picking a Side	
+											["qg"] = 126560,	-- Wardruid Loti
+											["sourceQuests"] = { 47422 },	-- Dire Situation
+										}),		
+										q(47435, {	-- Pterrortorial Dispute	
+											["qg"] = 126560,	-- Wardruid Loti
+											["sourceQuests"] = { 47433 },	-- Offensively Defensive
+										}),		
+										q(47434, {	-- Restraining Order	
+											["qg"] = 126560,	-- Wardruid Loti
+											["sourceQuests"] = { 47433 },	-- Offensively Defensive
+										}),		
+										q(47445, {	-- The Zanchuli Council	
+											["qg"] = 122641,	-- Yazma
+											["sourceQuests"] = { 49615 },	-- Trust of a King
+										}),	
+									},
+								}),
 							},
 						})),
 						-- TO-DO Put in quests that are related to the city here later.  For now leave in main zone
@@ -149,6 +223,15 @@ _.Zones =
 											["sourceQuests"] = { 47103 },	-- Journey to Nazmir
 										}),	
 									},
+								}),
+							},
+							["races"] = HORDE_ONLY,
+						}),
+						n(-383, { -- Miscellaneous
+							["groups"] = {
+								q(47432, {	-- The Bargain is Struck; Actually Gonk/Pa'ku triggeeer
+									["qg"] = 127489,	-- Hexlord Raal
+									["sourceQuests"] = { 47440, 47439, },	-- Pa'ku, Master of Winds, Gonk, Lord of the Pack
 								}),
 							},
 							["races"] = HORDE_ONLY,
