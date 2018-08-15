@@ -44,7 +44,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 					["isRaid"] = true,
 					["maps"] = { 862 }, -- Zuldazar
-					--["questID"] = , -- The Matriarch
+					["questID"] = 52169, -- The Matriarch
 				}),
 				e(2197, { -- Hailstone Construct [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
