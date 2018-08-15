@@ -940,9 +940,21 @@ end
 -- Quest Completion Lib
 local DirtyQuests = {};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
-  --print("Completed Quest ID #" .. key);
-  DirtyQuests[key] = true;
-  rawset(t, key, value);
+	DirtyQuests[key] = true;
+	rawset(t, key, value);
+	
+	if GetDataMember("DebugCompletedQuests") then
+		if GetDataMember("OnlyReportUnsortedQuests") then
+			local searchResults = app.SearchForQuestID(key);
+			if searchResults and #searchResults > 0 then
+				return true;
+			end
+			
+			print("Completed Quest ID #" .. key .. " NOT FOUND IN ATT!");
+		else
+			print("Completed Quest ID #" .. key);
+		end
+	end
 end});
 local IsQuestFlaggedCompleted = function(questID)
 	return questID and CompletedQuests[questID];
@@ -1780,6 +1792,7 @@ local function SearchForMissingItemNames(group)
 	end
 	return arr; 
 end
+app.SearchForQuestID = SearchForQuestID;
 app.SearchForItemID = SearchForItemID;
 app.SearchForSourceID = SearchForSourceID;
 app.SearchForItemLink = SearchForItemLink;

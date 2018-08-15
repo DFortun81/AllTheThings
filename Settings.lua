@@ -2082,6 +2082,36 @@ local function createDebugFrame(parent)
 	questGiverLists:SetPoint("TOPLEFT",creatureLists,0,-frameSpacer)
 	addObject(elm,questGiverLists)
 	
+	-- This creates the "Report Completed Quests" checkBox 
+	local reportCompletedQuests = createCheckBox("Report Completed Quests", child, function(self)
+			app.SetDataMember("DebugCompletedQuests", self:GetChecked());
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("DebugCompletedQuests", false));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see the Quest ID for any quest you complete immediately after it happens. (For reporting bugs, trackings purposes, etc)", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	reportCompletedQuests:SetPoint("TOPLEFT",questGiverLists,0,-frameSpacer)
+	addObject(elm,reportCompletedQuests)
+	
+	-- This creates the "Only Report Unsorted Quests" checkBox 
+	local reportOnlyUnsortedQuests = createCheckBox("Only Report Unsorted Quests", child, function(self)
+			app.SetDataMember("OnlyReportUnsortedQuests", self:GetChecked());
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("OnlyReportUnsortedQuests", false));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you only want to see the Quest ID for any quest you complete that isn't already listed in the addon.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	reportOnlyUnsortedQuests:SetPoint("TOPLEFT",reportCompletedQuests,5,-frameSpacer)
+	addObject(elm,reportOnlyUnsortedQuests)
+	
 	-- This creates the "Precision" slider.
 	local precisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", child, "OptionsSliderTemplate");
 	precisionSlider.tooltipText = 'Use this to customize your level of desired precision in percentage calculations.';
@@ -2092,7 +2122,7 @@ local function createDebugFrame(parent)
 	precisionSlider:SetMinMaxValues(0, 8);
 	precisionSlider:SetObeyStepOnDrag(true);
 	precisionSlider:SetValue(app.GetDataMember("Precision", 0));
-	precisionSlider:SetPoint("TOPLEFT",questGiverLists,0,-(frameSpacer * 3))
+	precisionSlider:SetPoint("TOPLEFT",reportOnlyUnsortedQuests,0,-(frameSpacer * 3))
 	_G[precisionSlider:GetName() .. 'Low']:SetText('0')
 	_G[precisionSlider:GetName() .. 'High']:SetText('8')
 	_G[precisionSlider:GetName() .. 'Text']:SetText("Level of Precision")
