@@ -405,12 +405,12 @@ _.Zones =
 							}),	
 							["questID"] = 52303,	
 						}),		
-						n(136183, {	-- Crushtacean		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(136183, {	-- Crushtacean
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154857),	-- Bonesplinter Band
-							}),	
-							["questID"] = 50731,	
-						}),		
+							}),
+							["questID"] = 52466,
+						}),
 						n(134897, {	-- Dagrus the Scorned		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160476),	-- Fogtide Warboots
