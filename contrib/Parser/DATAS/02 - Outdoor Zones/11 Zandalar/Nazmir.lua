@@ -366,9 +366,39 @@ _.Zones =
 									}),	
 								},
 							}),
+							
 							n(132011, {	-- Shoak
 								["groups"] = {
-									
+									q(47996, {	-- Mawfiend Extermination	
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+									}),		
+									q(47924, {	-- Profanity Filter	
+										["qg"] = 124666,	-- Kajosh
+									}),		
+									q(47998, {	-- Killing Cannibals	
+										["qg"] = 124933,	-- Kajosh
+										["sourceQuests"] = { 47924 },	-- Profanity Filter
+									}),		
+									q(47919, {	-- Just Say No to Cannibalism	
+										["qg"] = 125024,	-- Kajosh
+										["sourceQuests"] = { 47924 },	-- Profanity Filter
+									}),		
+									q(47925, {	-- Shoak's on the Menu  [Note: Final Quest needed to unlock Shoak]
+										["groups"] = {
+											i(158957),	-- Death-Pledged Greaves
+											i(158966),	-- Death-Pledged Links
+											i(158956),	-- Loa Speaker's Pants
+											i(158965),	-- Loa Speaker's Sash
+											i(158955),	-- Nazmani Warplate Legguards
+											i(158964),	-- Nazmani Warplate Waistplate
+											i(158958),	-- Ritual Flayer's Trousers
+											i(158967),	-- Ritual Flayer's Waistband
+										},
+										["qg"] = 125024,	-- Kajosh
+										["sourceQuests"] = { 47924 },	-- Profanity Filter
+										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
+									}),		
+
 								},
 								["collectible"] = false,
 								["description"] = "You must complete this storyline in order for him to show up at Gloom Hollow.",
