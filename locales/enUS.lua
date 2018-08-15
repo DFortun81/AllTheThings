@@ -1906,6 +1906,7 @@ AllTheThings.Locales.enUS = {
 		[277343] = "Interface\\Icons\\inv_misc_treasurechest04d",
 		[277344] = "Interface\\Icons\\inv_misc_treasurechest04d",
 		[277349] = "Interface\\Icons\\inv_misc_treasurechest04d",
+		[246562] = "Interface\\Icons\\Garrison_SilverChest",
 	};
 	["OBJECT_ID_NAMES"] = {
 		[31] = "Old Lion Statue",

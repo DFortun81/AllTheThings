@@ -49,10 +49,6 @@ _.Zones =
 					["groups"] = {
 						ach(12555, {  -- Welcome to Zandalar
 							["groups"] = {
-								q(46957, {	-- Welcome to Zuldazar
-									["qg"] = 132332,	-- Princess Talanji
-									["sourceQuests"] = { 50769 },  -- The Stormwind Extraction
-								}),
 								q(46930, {	-- Rastakhan
 									["qg"] = 122661,	-- General Jakra'zet
 									["sourceQuests"] = { 46957 },	-- Welcome to Zuldazar
@@ -68,6 +64,11 @@ _.Zones =
 								q(52131, {	-- We Need Each Other
 									["qg"] = 133050,	-- Princess Talanji
 									["sourceQuests"] = { 52139 },	-- To Matters at Hand
+									["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
+								}),
+								q(46957, {	-- Welcome to Zuldazar
+									["qg"] = 132332,	-- Princess Talanji
+									["sourceQuests"] = { 50769 },  -- The Stormwind Extraction
 								}),
 							},
 							["races"] = HORDE_ONLY,
@@ -78,15 +79,14 @@ _.Zones =
 							["groups"] = {
 								crit(1, { -- Deep in the Swamp
 									["groups"] = {
-										q(47512, {	-- Nazmir
-											["qg"] = 133050,
-											["sourceQuests"] = { 52131 },	-- We Need Each Other
-										}),
-										
 										q(47103, {	-- Journey to Nazmir
 											["qg"] = 133050,
 											["sourceQuests"] = { 47512 },	-- Nazmir
 										}),	
+										q(47512, {	-- Nazmir
+											["qg"] = 133050,
+											["sourceQuests"] = { 52131 },	-- We Need Each Other
+										}),
 										q(48535, {	-- Nazmir, the Forbidden Swamp
 											["qg"] = 126549,
 											["sourceQuests"] = { 47103 },	-- Journey to Nazmir

@@ -445,7 +445,7 @@ i(155430),
 								-- ["questID"] = 	
 							}),		
 							n(130439, {	-- Ashmane		
-								-- ["questID"] = 	
+								["questID"] = 47532,
 							}),		
 							n(128553, {	-- Azer'tor		
 								-- ["questID"] = 	
@@ -490,7 +490,7 @@ i(155430),
 								-- ["questID"] = 	
 							}),	
 							n(128674, {	-- Gut-Gut the Glutton		
-								-- ["questID"] = 	
+								["questID"] = 49270,
 							}),		
 							n(130443, {	-- Hivemother Kraxi		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -508,7 +508,7 @@ i(155430),
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161026),	-- Spiderbite Wristwraps
 								}),	
-								-- ["questID"] = 	
+								["questID"] = 51074,
 							}),		
 							n(128686, {	-- Kamid the Trapper		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	

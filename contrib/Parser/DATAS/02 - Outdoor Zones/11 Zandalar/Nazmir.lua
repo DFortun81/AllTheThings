@@ -80,13 +80,16 @@ _.Zones =
 						["groups"] = {
 							crit(1, {	-- Deep in the Swamp
 								["groups"] = {
-									q(47105, {	-- Into The Darkness	
-										["qg"] = 120904,	-- Princess Talanji
-										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
-									}),		
-									q(47264, {	-- Leave None Standing	
+									q(47263, {	-- A Time of Revelation	
 										["qg"] = 130844,	-- Princess Talanji
-										["sourceQuests"] = { 47105 },	-- Into The Darkness
+										["sourceQuests"] = { 47262 },	-- Ending the Blood Trolls	
+									}),		
+									q(47262, {	-- Ending the Blood Trolls	
+										["qg"] = 121241,	-- Princess Talanji
+										["sourceQuests"] = { 
+											47264,	-- Leave None Standing
+											47130,	-- Improper Burial
+										},
 									}),		
 									q(47130, {	-- Improper Burial
 										["groups"] = {
@@ -105,32 +108,54 @@ _.Zones =
 										["qg"] = 121241,	-- Princess Talanji
 										["sourceQuests"] = { 47105 },	-- Into The Darkness
 									}),		
-									q(47262, {	-- Ending the Blood Trolls	
-										["qg"] = 121241,	-- Princess Talanji
-										["sourceQuests"] = { 
-											47264,	-- Leave None Standing
-											47130,	-- Improper Burial
-										},
+									q(47105, {	-- Into The Darkness	
+										["qg"] = 120904,	-- Princess Talanji
+										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
 									}),		
-									q(47263, {	-- A Time of Revelation	
+									q(47264, {	-- Leave None Standing	
 										["qg"] = 130844,	-- Princess Talanji
-										["sourceQuests"] = { 47262 },	-- Ending the Blood Trolls	
+										["sourceQuests"] = { 47105 },	-- Into The Darkness
 									}),		
-									q(47188, {	-- The Aid of the Loa	
+									q(47188, {	-- The Aid of the Loa [Note: Final Quest needed to trigger criteria]
 										["qg"] = 121288,	-- Princess Talanji
 										["sourceQuests"] = { 47263 },	-- A Time of Revelation
+										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 									}),		
 								},
 							}),
 							crit(2, {	-- A Pact With Death
 								["groups"] = {
-									q(47241, {	-- The Shadow of Death	
-										["qg"] = 121288,	-- Princess Talanji
-										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
+									q(47248, {	-- 'Til Death Do Us Part	
+										["qg"] = 122706,	-- Theurgist Salazae
+										["sourceQuests"] = { 47880 },	-- A Tribute for Death
 									}),		
 									q(47244, {	-- A Culling of Souls	
 										["qg"] = 122102,	-- Hanzabu
 										["sourceQuests"] = { 47241 },	-- The Shadow of Death
+									}),		
+									q(49348, {	-- A Desecrated Temple	
+										["qg"] = 122688,	-- Bwonsamdi
+										["sourceQuests"] = { 47493 },	-- A Lonely Spirit
+									}),
+									q(47493, {	-- A Lonely Spirit	
+										["qg"] = 122688,	-- Bwonsamdi
+										["sourceQuests"] = {
+											47247,	-- That Which Haunts the Dead
+											47491,	-- Remnants of the Damned
+											47248, 	-- 'Til Death Do Us Part
+										},	
+									}),	
+									q(47880, {	-- A Tribute for Death	
+										["qg"] = 124513,	-- Hanzabu
+										["sourceQuests"] = { 47868 },	-- The Necropolis
+									}),		
+									q(48934, {	-- Mark of the Damned	
+										["sourceQuests"] = { 47493 },	-- A Lonely Spirit
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+									}),		
+									q(47491, {	-- Remnants of the Damned	
+										["qg"] = 122688,	-- Bwonsamdi
+										["sourceQuests"] = { 47880 },	-- A Tribute for Death
 									}),		
 									q(49278, {	-- Spiritual Restoration
 										["groups"] = {
@@ -140,56 +165,6 @@ _.Zones =
 										},
 										["qg"] = 124428,	-- Hanzabu
 										["sourceQuests"] = { 47244 },	-- A Culling of Souls
-									}),		
-									q(47868, {	-- The Necropolis	
-										["qg"] = 124428,	-- Hanzabu
-										["sourceQuests"] = { 49278 },	-- Spiritual Restoration
-									}),		
-									q(47880, {	-- A Tribute for Death	
-										["qg"] = 124513,	-- Hanzabu
-										["sourceQuests"] = { 47868 },	-- The Necropolis
-									}),		
-									q(47247, {	-- That Which Haunts the Dead
-										["groups"] = {
-											i(155338),	-- Death-Pledged Belt
-											i(159052),	-- Death-Pledged Grasps
-											i(155337),	-- Loa Speaker's Cord
-											i(159051),	-- Loa Speaker's Grasps
-											i(155336),	-- Nazmani Warplate Girdle
-											i(159050),	-- Nazmani Warplate Grasps
-											i(155339),	-- Ritual Flayer's Belt
-											i(159049),	-- Ritual Flayer's Grasps
-										},
-										["qg"] = 122688,	-- Bwonsamdi
-										["sourceQuests"] = { 47880 },	-- A Tribute for Death
-									}),		
-									q(47491, {	-- Remnants of the Damned	
-										["qg"] = 122688,	-- Bwonsamdi
-										["sourceQuests"] = { 47880 },	-- A Tribute for Death
-									}),		
-									q(47248, {	-- 'Til Death Do Us Part	
-										["qg"] = 122706,	-- Theurgist Salazae
-										["sourceQuests"] = { 47880 },	-- A Tribute for Death
-									}),		
-									q(47493, {	-- A Lonely Spirit	
-										["qg"] = 122688,	-- Bwonsamdi
-										["sourceQuests"] = {
-											47247,	-- That Which Haunts the Dead
-											47491,	-- Remnants of the Damned
-											47248, 	-- 'Til Death Do Us Part
-										},	
-									}),		
-									q(49432, {	-- The Forlorn Soul	
-										["qg"] = 126588,	-- Keula
-										["sourceQuests"] = { 47493 },	-- A Lonely Spirit
-									}),		
-									q(48934, {	-- Mark of the Damned	
-										["sourceQuests"] = { 47493 },	-- A Lonely Spirit
-										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
-									}),		
-									q(49348, {	-- A Desecrated Temple	
-										["qg"] = 122688,	-- Bwonsamdi
-										["sourceQuests"] = { 47493 },	-- A Lonely Spirit
 									}),		
 									q(47249, {	-- Soulbound
 										["groups"] = {
@@ -208,13 +183,40 @@ _.Zones =
 											49348,	-- A Desecrated Temple
 										},	
 									}),
-									q(47250, {	-- We'll Meet Again	
+									q(47247, {	-- That Which Haunts the Dead
+										["groups"] = {
+											i(155338),	-- Death-Pledged Belt
+											i(159052),	-- Death-Pledged Grasps
+											i(155337),	-- Loa Speaker's Cord
+											i(159051),	-- Loa Speaker's Grasps
+											i(155336),	-- Nazmani Warplate Girdle
+											i(159050),	-- Nazmani Warplate Grasps
+											i(155339),	-- Ritual Flayer's Belt
+											i(159049),	-- Ritual Flayer's Grasps
+										},
+										["qg"] = 122688,	-- Bwonsamdi
+										["sourceQuests"] = { 47880 },	-- A Tribute for Death
+									}),		
+									q(49432, {	-- The Forlorn Soul	
+										["qg"] = 126588,	-- Keula
+										["sourceQuests"] = { 47493 },	-- A Lonely Spirit
+									}),		
+									q(47868, {	-- The Necropolis	
+										["qg"] = 124428,	-- Hanzabu
+										["sourceQuests"] = { 49278 },	-- Spiritual Restoration
+									}),		
+									q(47241, {	-- The Shadow of Death	
+										["qg"] = 121288,	-- Princess Talanji
+										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
+									}),		
+									q(47250, {	-- We'll Meet Again [Note: Final Quest needed to trigger criteria]
 										["qg"] = 122766,	-- Bwonsamdi
 										["sourceQuests"] = { 47249 },	-- Soulbound
+										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 									}),		
-
 								},
 							}),
+							--crit(3, 
 						},
 					})),
 						{
@@ -277,7 +279,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161093),	-- Clutch Mother Wristwraps
 							}),	
-							["questID"] = 50567,
+							["questID"] = 48439,
 						}),		
 						n(126635, {	-- Blood Priest Xak'lar		
 							["questID"] = 48057,
@@ -313,7 +315,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161218),	-- Direhorn Studded Belt
 							}),	
-							["questID"] = 48972,
+							["questID"] = 47877,
 						}),		
 						n(133373, {	-- Jax'teb the Reanimated		
 							["questID"] = 48508,
@@ -444,7 +446,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161092),	-- Rivermarsh Quickclaw Buckle
 							}),	
-							["questID"] = 50040,	
+							["questID"] = 50423,	
 						}),		
 					},
 				}),

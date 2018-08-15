@@ -143,6 +143,7 @@ _.Zones =
 											["qg"] = 129907,	-- Zul the Prophet  [Disable for the moment.  I want to see trigger quest in-game]
 											["sourceQuests"] = { 49905 },	-- Plot Twist
 											--["icon"] = "Interface\\Addons\\AllTheThings\\assets\\star",	-- Quest Finale
+											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),	
 										q(49491, {	-- Fuel for the Voodoo	
 											["qg"] = 130706,	-- Izita's Spirit
@@ -212,7 +213,8 @@ _.Zones =
 										}),		
 										q(50881, {	-- Royal Report	[Note: Final Quest needed to trigger criteria]
 											["qg"] = 135441,	-- Zolani
-											["sourceQuests"] = { 46927, 46928, }	-- Punishment of Tal'aman, Punishment of Tal'farrak
+											["sourceQuests"] = { 46927, 46928, },	-- Punishment of Tal'aman, Punishment of Tal'farrak
+											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),	
 										q(46926, {	-- Shakedown	
 											["qg"] = 135441,	-- Zolani
@@ -283,6 +285,7 @@ _.Zones =
 										q(47879, {	-- The Betrayal of Zul [Note: Final Quest needed to trigger criteria]
 											["qg"] = 129409,	-- Zolani
 											["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
+											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),		
 										q(49310, {	-- The Prophet's Ploy	
 											["qg"] = 127837,	-- Kaza'jin the Wavebinder
@@ -329,6 +332,7 @@ _.Zones =
 												47963,	-- The Ancient One
 												47522,	-- The Hunter
 											},
+											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),		
 										q(47518, {	-- Raal	
 											["groups"] = {
@@ -393,6 +397,7 @@ _.Zones =
 										q(47740, {	-- House of the King  [Note: Final Quest needed to trigger criteria]
 											["qg"] = 124655,	-- King Rastakhan
 											["sourceQuests"] = { 47737 },	-- The Temple of Rezan
+											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),
 										q(51680, {	-- In Bwonsamdi's Shadow	
 											["qg"] = 124083,	-- Zolani
@@ -523,6 +528,7 @@ _.Zones =
 										q(47432, {	-- The Bargain is Struck [Note: Final Quest needed to trigger criteria]
 											["qg"] = 127489,	-- Hexlord Raal
 											["sourceQuests"] = { 47440, 47439, },	-- Pa'ku, Master of Winds, Gonk, Lord of the Pack
+											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),		
 										q(47445, {	-- The Zanchuli Council	
 											["qg"] = 122641,	-- Yazma
@@ -554,6 +560,7 @@ _.Zones =
 										q(50963, {	-- Of Dark Deeds and Dark Days [Note: Final Quest needed to trigger criteria]
 											["qg"] = 129757,	-- King Rastakhan
 											["sourceQuests"] = { 49901 },	-- Atal'Dazar: Yazma the Fallen Priestess
+											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),	
 										q(49424, {	-- The Full Prophecy	
 											["qg"] = 129561,	-- Wardruid Loti
@@ -619,7 +626,10 @@ _.Zones =
 							}),
 							["questID"] = 50439,	
 						}),		
-						n(133155, {	-- G'Naat		
+						n(133155, {	-- G'Naat
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161048),	-- Brutish Tidecaller Armwraps
+							}),
 							["questID"] = 50260,
 						}),		
 						n(124185, {	-- Golrakahn		
