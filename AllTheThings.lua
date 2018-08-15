@@ -733,35 +733,37 @@ local progress_colors = setmetatable({[1] = "ff15abff"}, {
 		return color;
 	end
 });
+local function GetNumberWithZeros(number, desiredLength)
+	if desiredLength > 0 then
+		local str = tostring(number);
+		local length = string.len(str);
+		local pos = string.find(str,"[.]");
+		if not pos then
+			str = str .. ".";
+			for i=desiredLength,1,-1 do
+				str = str .. "0";
+			end
+		else
+			local totalExtra = desiredLength - (length - pos);
+			for i=totalExtra,1,-1 do
+				str = str .. "0";
+			end
+			if totalExtra < 1 then
+				str = string.sub(str, 1, pos + desiredLength);
+			end
+		end
+		return str;
+	else
+		return tostring(floor(number));
+	end
+end
 local function GetProgressColor(p)
 	return progress_colors[p];
 end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
-		local desiredLength, str = app.GetDataMember("Precision", 0);
 		local percent = progress / total;
-		if desiredLength > 0 then
-			str = tostring(percent * 100);
-			local length = string.len(str);
-			local pos = string.find(str,"[.]");
-			if not pos then
-				str = str .. ".";
-				for i=desiredLength,1,-1 do
-					str = str .. "0";
-				end
-			else
-				local totalExtra = desiredLength - (length - pos);
-				for i=totalExtra,1,-1 do
-					str = str .. "0";
-				end
-				if totalExtra < 1 then
-					str = string.sub(str, 1, pos + desiredLength);
-				end
-			end
-		else
-			str = tostring(floor(percent * 100));
-		end
-		return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. str .. "%) |r";
+		return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. GetNumberWithZeros(percent * 100, app.GetDataMember("Precision", 0)) .. "%) |r";
 	end
 	return "---";
 end
@@ -6628,6 +6630,25 @@ local function RowOnEnter(self)
 		if reference.setSubHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setSubHeaderID)); end
 		if reference.description and GetDataMember("ShowDescriptions") then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
 		if reference.mapID and GetDataMember("ShowMapID") then GameTooltip:AddDoubleLine(L("MAP_ID"), tostring(reference.mapID)); end
+		if reference.coords and app.GetDataMember("ShowCoordinatesInTooltip") then
+			local j = 0;
+			for i,coord in ipairs(reference.coords) do
+				local x = coord[1];
+				local y = coord[2];
+				local str;
+				local mapID = coord[3];
+				if mapID then
+					str = tostring(mapID);
+					if mapID == app.GetCurrentMapID() then str = str .. "*"; end
+					str = str .. ": ";
+				else
+					str = "";
+				end
+				GameTooltip:AddDoubleLine(j == 0 and "Coordinates" or " ", 
+					str.. GetNumberWithZeros(math.floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math.floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
+				j = j + 1;
+			end
+		end
 		if reference.bonusID and GetDataMember("ShowBonusID") then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
 		if reference.modID and GetDataMember("ShowModID") then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
 		if reference.dr then GameTooltip:AddDoubleLine(L("DROP_RATE"), "|c" .. GetProgressColor(reference.dr * 0.01) .. tostring(reference.dr) .. "%|r"); end

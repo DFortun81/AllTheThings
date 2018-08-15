@@ -2052,6 +2052,21 @@ local function createDebugFrame(parent)
 	uncollected:SetPoint("TOPLEFT",child:GetWidth()/2,-10)
 	addObject(elm,uncollected)
 	
+	-- This creates the "Show Coordinates in the Tooltip" checkBox 
+	local showCoordinatesInTooltip = createCheckBox("Show Coordinates In Tooltip", child, function(self)
+			app.SetDataMember("ShowCoordinatesInTooltip", self:GetChecked());
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("ShowCoordinatesInTooltip", false));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	showCoordinatesInTooltip:SetPoint("TOPLEFT",uncollected,0,-frameSpacer)
+	addObject(elm,showCoordinatesInTooltip)
+	
 	-- This creates the "Show Creature List" checkBox 
 	local creatureLists = createCheckBox("Show Creature List", child, function(self)
 			app.SetDataMember("ShowCreatures", self:GetChecked());
@@ -2064,7 +2079,7 @@ local function createDebugFrame(parent)
 			GameTooltip:SetText ("Enable this option if you want to see the full list of creatures in the tooltip.\n\nNOTE: We only use this option for zone drops and other extremely long NPC ID lists.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	creatureLists:SetPoint("TOPLEFT",uncollected,0,-frameSpacer)
+	creatureLists:SetPoint("TOPLEFT",showCoordinatesInTooltip,0,-frameSpacer)
 	addObject(elm,creatureLists)
 	
 	-- This creates the "Show Quest Givers" checkBox 
