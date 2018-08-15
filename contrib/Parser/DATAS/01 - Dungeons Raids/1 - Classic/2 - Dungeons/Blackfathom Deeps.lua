@@ -252,42 +252,41 @@ _.Instances = { tier(1, {	-- Classic
 				i(151441),	-- Aku'mai Worshipper's Greatboots
 			})),
 			n(-40, {	-- Legacy
-				["groups"] = {
-					n(-17, {	-- Quests (Legacy)
-						un(40, qh(6922, {	-- Baron Aquanis
-							un(34, i(16886)),	-- Outlaw Sabre
-							un(34, i(16887)),	-- Witch's Finger
-						})),
-						un(40, qa(1200, {	-- Blackfathom Villainy
-							un(34, i(7001)),	-- Gravestone Scepter
-							un(34, i(7002)),	-- Arctic Buckler
-						})),
-						un(40, qh(6561, {	-- Blackfathom Villainy
-							un(34, i(7001)),	-- Gravestone Scepter
-							un(34, i(7002)),	-- Arctic Buckler
-						})),
-						un(40, qa(26885, {	-- Knowledge in the Deeps
-							un(34, i(56660)),	-- Dusk-Stained Cloak
-							un(34, i(56658)),	-- Eventide Bow
-						})),
-						un(40, qa(1275, {	-- Researching the Corruption
-							un(34, i(56679)),	-- Dissector
-							un(34, i(56680)),	-- Shadestar Mace
-							un(34, i(56681)),	-- Searching Wand
-							un(34, i(56682)),	-- Band of the Skull Crusher
-							un(34, i( 7004)),	-- Prelacy Cape
-							un(34, i( 7003)),	-- Beetle Clasps
-						})),	
-						un(40, qa(26883, {	-- Twilight Falls
-							un(34, i(56699)),	-- Aluwyn's Legguards
-							un(34, i(56697)),	-- Blackfathom Mace
-							un(34, i(56698)),	-- Gift of the Enigmatic Tree
-							un(34, i( 7000)),	-- Heartwood Girdle
-							un(34, i( 6998)),	-- Nimbus Boots
-						})),
-					}),
-				},
-				["u"] = 2,
+				n(-17, {	-- Quests (Legacy)
+					un(40, qh(6922, {	-- Baron Aquanis
+						un(2, i(16886)),	-- Outlaw Sabre
+						un(2, i(16887)),	-- Witch's Finger
+					})),
+					un(40, qa(1200, {	-- Blackfathom Villainy
+						un(2, i(7002)),		-- Arctic Buckler
+						un(2, i(7001)),		-- Gravestone Scepter
+					})),
+					un(40, qh(6561, {	-- Blackfathom Villainy
+						un(2, i(7002)),		-- Arctic Buckler
+						un(2, i(7001)),		-- Gravestone Scepter
+					})),
+					un(40, qa(26885, {	-- Knowledge in the Deeps
+						un(2, i(56660)),	-- Dusk-Stained Cloak
+						un(2, i(56658)),	-- Eventide Bow
+						un(2, i(56659)),	-- Gloaming Band
+						un(2, i(6743)),		-- Sustaining Ring
+					})),
+					un(40, qa(1275, {	-- Researching the Corruption
+						un(2, i(56682)),	-- Band of the Skull Crusher
+						un(2, i( 7003)),	-- Beetle Clasps
+						un(2, i(56679)),	-- Dissector
+						un(2, i( 7004)),	-- Prelacy Cape
+						un(2, i(56681)),	-- Searching Wand
+						un(2, i(56680)),	-- Shadestar Mace
+					})),	
+					un(40, qa(26883, {	-- Twilight Falls
+						un(2, i(56699)),	-- Aluwyn's Legguards
+						un(2, i(56697)),	-- Blackfathom Mace
+						un(2, i(56698)),	-- Gift of the Enigmatic Tree
+						un(1, i( 7000)),	-- Heartwood Girdle
+						un(2, i( 6998)),	-- Nimbus Boots
+					})),
+				}),
 			}),
 		},
 		["lvl"] = 15,

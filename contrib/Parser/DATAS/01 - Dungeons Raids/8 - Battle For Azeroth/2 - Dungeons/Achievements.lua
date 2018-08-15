@@ -18,6 +18,21 @@ _.Instances = {
 				},
 				["lvl"] = 120, -- Putting this here so it filters properly.  Moving elsewhere breaks
 			}),
+			ach(13075, {	-- Battle for Azeroth Keymaster
+				["groups"] = {
+					crit(4),	-- Atal'Dazar
+					crit(1),	-- Freehold
+					crit(10),	-- Kings' Rest
+					crit(3),	-- Shrine of the Storm
+					crit(9),	-- Siege of Boralus
+					crit(6),	-- Temple of Sethraliss
+					crit(8),	-- The MOTHERLODE!!
+					crit(5),	-- The Underrot
+					crit(7),	-- Tol Dagor
+					crit(2),	-- Waycrest Manor
+				},
+				[lvl] = 120,	-- Putting this here so it filters properly.  Moving elsewhere breaks
+			}),
 			ach(12812, { -- Glory of the Wartorn Hero
 				["groups"] = {
 					i(161215), -- Reins of the Obsidian Krolusk

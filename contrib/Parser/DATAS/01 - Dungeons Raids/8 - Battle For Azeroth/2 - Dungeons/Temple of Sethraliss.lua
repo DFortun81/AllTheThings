@@ -160,6 +160,7 @@ _.Instances =
 					}),
 					d(23, { -- Mythic
 						["groups"] = {
+							ach(12503),	-- Snake Eyes
 							e(2142, { -- Adderis and Aspix
 								["groups"] = {
 									i(158370), -- Twin-Strike Polearm
@@ -179,6 +180,7 @@ _.Instances =
 							}),
 							e(2143, { -- Merektha
 								["groups"] = {
+									ach(12507),	-- Snake Eater
 									i(160832, { -- Viable Cobra Egg
 										i(160831, { -- Cracking Cobra Egg
 											i(160702), -- Spawn of Merektha
@@ -214,6 +216,8 @@ _.Instances =
 							}),
 							e(2145, { -- Avatar of Sethraliss
 								["groups"] = {
+									ach(12508),	-- Good Night, Sweet Prince
+									ach(12506),	-- Mythic: The Temple of Sethraliss
 									i(158373), -- Resonating Crystal Scimitar
 									i(159318), -- Hood of the Slithering Loa
 									i(159374), -- Sethraliss' Fanged Helm

@@ -5,7 +5,11 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(37, {		-- Elwynn Forest
-			["groups"] = {						
+			["groups"] = {	
+				n(-228, {	-- Flight Master
+					fp(589),	-- Eastvale Logging Camp, Elwynn
+					fp(582),	-- Goldshire, Elwynn
+				}),
 				n(-25, {	-- Pet Battle
 					p(374), 	-- Black Lamb
 					p(459), 	-- Cat
@@ -344,16 +348,16 @@ _.Zones =
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(1667, {	-- Dead-tooth Jack
 								["groups"] = {
-									un(34, i(6979)),	-- Haggard's Axe
-									un(34, i(6983)),	-- Haggard's Hammer
-									un(34, i(6980)),	-- Haggard's Dagger
-									un(34, i(6985)),	-- Haggard's Sword
+									un(2, i(6979)),	-- Haggard's Axe
+									un(2, i(6983)),	-- Haggard's Hammer
+									un(2, i(6980)),	-- Haggard's Dagger
+									un(2, i(6985)),	-- Haggard's Sword
 								},
 								["classes"] = { 1 },	-- Warrior
 							})),
 							un(40, qa(5624, {	-- Garments of the Light
 								["groups"] = {
-									un(34, i(16605)),	-- Friar's Robes of the Light
+									un(2, i(16605)),	-- Friar's Robes of the Light
 								},
 								["races"] = { 1 },	-- Human
 								["classes"] = { 5 },	-- Priest
@@ -555,7 +559,7 @@ _.Zones =
 								--}),
 								n(-17, {	-- Quests (Legacy)
 									un(40, qa(346, {	-- Return to Kristoff
-										un(34, i(6095)),	-- Wandering Boots
+										un(2, i(6095)),	-- Wandering Boots
 									})),
 								}),
 								--n(-16, {	-- Rares (Legacy)

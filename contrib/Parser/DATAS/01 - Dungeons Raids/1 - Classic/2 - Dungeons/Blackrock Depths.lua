@@ -688,60 +688,58 @@ _.Instances =
 						})),
 					}),
 					n(-40, {	-- Legacy
-						["groups"] = {
-							n(-17, {	-- Quests (Legacy)
-								un(40, q( 4024, {		-- A Taste of Flame
-									un(34, i(12066)),	-- Shaleskin Cape
-									un(34, i(12083)),	-- Valconian Sash
-									un(34, i(12082)),	-- Wyrmhide Spaulders
-								})),
-								un(40, qa(4242, {		-- Abandoned Hope
-									un(34, i(12018)),	-- Conservator Helm
-									un(34, i(12021)),	-- Shieldplate Sabatons
-									un(34, i(12041)),	-- Windshear Leggings
-								})),
-								un(40, qh(3907, {		-- Disharmony of Fire
-									un(34, i(12112)),	-- Crypt Demon Bracers
-									un(34, i(12114)),	-- Nightfall Gloves
-									un(34, i(12115)),	-- Stalwart Clutch
-									un(34, i(12113)),	-- Sunborne Cape
-								})),
-								un(40, qa(4126, {		-- Hurley Blackbreath
-									un(34, i(12000)),	-- Limb Cleaver
-									un(34, i(11964)),	-- Swiftstrike Cudgel
-								})),
-								un(40, qa(4263, {		-- Incendius!
-									un(34, i(12112)),	-- Crypt Demon Bracers
-									un(34, i(12114)),	-- Nightfall Gloves
-									un(34, i(12115)),	-- Stalwart Clutch
-									un(34, i(12113)),	-- Sunborne Cape 
-								})),
-								un(40, qa(4322, {		-- Jail Break!
-									un(34, i(12061)),	-- Blade of Reckoning
-									un(34, i(12062)),	-- Skilled Fighting Blade
-								})),
-								un(40, qh(4134, {		-- Lost Thunderbrew Recipe
-									un(34, i(12000)),	-- Limb Cleaver
-									un(34, i(11964)),	-- Swiftstrike Cudgel
-								})),
-								un(40, q( 4136, {		-- Ribbly Screwspigot
-									un(34, i(11963)),	-- Penance Spaulders 
-									un(34, i(11865)),	-- Rancor Boots
-									un(34, i(12049)),	-- Splintsteel Armor
-								})),
-								un(40, q( 4201, {		-- The Love Potion
-									un(34, i(11962)),	-- Manacle Cuffs
-									un(34, i(11866)),	-- Nagmara's Whipping Belt
-								})),
-								un(40, qh(4063, {		-- The Rise of the Machines
-									un(34, i(12109)),	-- Azure Moon Amice
-									un(34, i(12108)),	-- Basaltscale Armor
-									un(34, i(12111)),	-- Lavaplate Gauntlets
-									un(34, i(12110)),	-- Raincaster Drape
-								})),
-							}),
-						},
-						["u"] = 2,
+						n(-17, {	-- Quests (Legacy)
+							un(40, q( 4024, {		-- A Taste of Flame
+								un(2, i(12066)),	-- Shaleskin Cape
+								un(2, i(12083)),	-- Valconian Sash
+								un(2, i(12082)),	-- Wyrmhide Spaulders
+							})),
+							un(40, qa(4242, {		-- Abandoned Hope
+								un(2, i(12018)),	-- Conservator Helm
+								un(2, i(12021)),	-- Shieldplate Sabatons
+								un(2, i(12041)),	-- Windshear Leggings
+							})),
+							un(40, qh(3907, {		-- Disharmony of Fire
+								un(2, i(12112)),	-- Crypt Demon Bracers
+								un(2, i(12114)),	-- Nightfall Gloves
+								un(2, i(12115)),	-- Stalwart Clutch
+								un(2, i(12113)),	-- Sunborne Cape
+							})),
+							un(40, qa(4126, {		-- Hurley Blackbreath
+								un(2, i(12000)),	-- Limb Cleaver
+								un(2, i(11964)),	-- Swiftstrike Cudgel
+							})),
+							un(40, qa(4263, {		-- Incendius!
+								un(2, i(12112)),	-- Crypt Demon Bracers
+								un(2, i(12114)),	-- Nightfall Gloves
+								un(2, i(12115)),	-- Stalwart Clutch
+								un(2, i(12113)),	-- Sunborne Cape 
+							})),
+							un(40, qa(4322, {		-- Jail Break!
+								un(2, i(12061)),	-- Blade of Reckoning
+								un(2, i(12062)),	-- Skilled Fighting Blade
+								un(2, i(12065)),	-- Ward of the Elements
+							})),
+							un(40, qh(4134, {		-- Lost Thunderbrew Recipe
+								un(2, i(12000)),	-- Limb Cleaver
+								un(2, i(11964)),	-- Swiftstrike Cudgel
+							})),
+							un(40, q( 4136, {		-- Ribbly Screwspigot
+								un(2, i(11963)),	-- Penance Spaulders 
+								un(2, i(11865)),	-- Rancor Boots
+								un(2, i(12049)),	-- Splintsteel Armor
+							})),
+							un(40, q( 4201, {		-- The Love Potion
+								un(2, i(11962)),	-- Manacle Cuffs
+								un(2, i(11866)),	-- Nagmara's Whipping Belt
+							})),
+							un(40, qh(4063, {		-- The Rise of the Machines
+								un(2, i(12109)),	-- Azure Moon Amice
+								un(2, i(12108)),	-- Basaltscale Armor
+								un(2, i(12111)),	-- Lavaplate Gauntlets
+								un(2, i(12110)),	-- Raincaster Drape
+							})),
+						}),
 					}),
 				},
 				["lvl"] = 42,

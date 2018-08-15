@@ -18,6 +18,12 @@ _.Instances =
 							ach(12723, { -- How to Keep a Mummy
 								i(161214), -- Thousand Year Old Mummy Wraps
 							}),
+							ach(12722, {	-- It Belongs in a Mausoleum!
+								crit(1),		-- First trinket found
+								crit(2),		-- Second trinket found
+								crit(3),		-- Third trinket found
+								crit(4),		-- Fourth trinket found
+							}),
 							e(2165, { -- The Golden Serpent
 								["groups"] = {
 									i(159137), -- Gilded Serpent's Tooth
@@ -35,6 +41,7 @@ _.Instances =
 							}),
 							e(2171, { -- Mchimba the Embalmer
 								["groups"] = {
+									ach(12721),	-- Wrap God
 									i(159642), -- Royal Purifier's Spaade
 									i(159667), -- Vessel of Last Rites
 									i(159409), -- Embalmer's Steadying Bracers

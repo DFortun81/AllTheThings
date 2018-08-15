@@ -2,14 +2,6 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
 _.Achievements = 
 {
 	n(-9959, { -- Dungeons & Raids
@@ -18,12 +10,23 @@ _.Achievements =
 				["groups"] = {
 					ach(12726),		-- A Fish Out of Water
 					ach(12490),		-- Alchemical Romance
-					ach(13075),		-- Battle for Azeroth Keymaster
+					ach(13075, {	-- Battle for Azeroth Keymaster
+						crit(4),		-- Atal'Dazar
+						crit(1),		-- Freehold
+						crit(10),		-- Kings' Rest
+						crit(3),		-- Shrine of the Storm
+						crit(9),		-- Siege of Boralus
+						crit(6),		-- Temple of Sethraliss
+						crit(8),		-- The MOTHERLODE!!
+						crit(5),		-- The Underrot
+						crit(7),		-- Tol Dagor
+						crit(2),		-- Waycrest Manor
+					}),
 					ach(12600),		-- Breath of the Shrine
 					ach(12270, {	-- Bringing Hexy Back
-						crit(1),		-- Vol'kaal defeated
 						crit(2),		-- Priestess Alun'za defeated
 						crit(3),		-- Rezan defeated
+						crit(1),		-- Vol'kaal defeated
 						crit(4),		-- Yazma defeated
 					}),
 					ach(12272),		-- Gold Fever
@@ -41,14 +44,14 @@ _.Achievements =
 					ach(12273),		-- It's Lit!
 					ach(12848),		-- Kings' Rest
 					ach(12489, {	-- Losing My Profession
-						crit(1),		-- Governess Tabitha
-						crit(2),		-- Head Vintner Justin
-						crit(3),		-- Groundskeeper Lilith
-						crit(4),		-- Seamstress Johanna
-						crit(5),		-- Huntmaster Grath
-						crit(6),		-- Threshanator 3000
 						crit(7),		-- Brutik Blackanvil
+						crit(1),		-- Governess Tabitha
+						crit(3),		-- Groundskeeper Lilith
+						crit(2),		-- Head Vintner Justin
+						crit(5),		-- Huntmaster Grath
 						crit(8),		-- Liz Vilepot
+						crit(4),		-- Seamstress Johanna
+						crit(6),		-- Threshanator 3000
 					}),					
 					ach(12826, {	-- Mythic: Atal'Dazar
 						ach(12825),		-- Heroic: Atal'Dazar

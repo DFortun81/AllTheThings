@@ -146,6 +146,7 @@ _.Instances =
 						["groups"] = {
 							e(2109, { -- Coin-Operated Crowd Pummeler
 								["groups"] = {
+									ach(12855),	-- Pitch Invasion
 									i(159663), -- G0-4W4Y Crowd Reepeller
 									i(158353), -- Servo-Arm Bindings
 									i(159357), -- Linked Pummeler Grips
@@ -190,6 +191,7 @@ _.Instances =
 							e(2116, { -- Mogul Razdunk
 								["groups"] = {
 									ach(12846), -- Mythic: The MOTHERELODE!!
+									ach(12854),	-- Ready for Raiding VI
 									i(161135, { -- Schematic: MechaMogul Mk2
 										["recipeID"] = 274621,
 										["spellID"] = 274621,

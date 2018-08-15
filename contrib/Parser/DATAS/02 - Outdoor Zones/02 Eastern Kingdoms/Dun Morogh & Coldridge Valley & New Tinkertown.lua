@@ -5,7 +5,11 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(27, {		-- Dun Morogh
-			["groups"] = {							
+			["groups"] = {	
+				n(-228, {	-- Flight Master
+					fp(619),	-- Kharanos, Dun Morogh
+					fp(620),	-- Gol'Bolar Quarry, Dun Morogh
+				}),
 				n(-25, {	-- Pet Battle
 					p(441), 	-- Alpine Hare
 					p(440), 	-- Snow Cub
@@ -269,29 +273,29 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							un(40, qa(417, {	-- A Pilot's Revenge
-								un(34, i(2218)),	-- Craftsman's Dagger
-								un(34, i(1009)),	-- Compact Hammer
+							un(40, qa(417, {	-- A Pilot's Revenge NOTE: Replaced by quest 26855 which has a different loot table
+								un(2, i(2218)),	-- Craftsman's Dagger
+								un(2, i(1009)),	-- Compact Hammer
 							})),
 							un(40, qa(5625, {	-- Garments of the Light
 								["groups"] = {
-									un(34, i(16605)),	-- Friar's Robes of the Light
+									un(2, i(16605)),	-- Friar's Robes of the Light
 								},
 								["races"] = { 3 },	-- Dwarf
 								["classes"] = { 5 },	-- Priest
 							})),
 							un(40, qdg(qa(4126, {	-- Hurley Blackbreath
-								un(34, i(11964)),	-- Swiftstrike Cudgel
-								un(34, i(12000)),	-- Limb Cleaver
+								un(2, i(11964)),	-- Swiftstrike Cudgel
+								un(2, i(12000)),	-- Limb Cleaver
 							}))),
 							un(40, qa(466, {	-- Search for Incendicite
-								un(34, i(3565)),	-- Beerstained Gloves
+								un(2, i(3565)),	-- Beerstained Gloves
 							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
-							n(1271, { 	-- Old Icebeard
+							un(43, n(1271, { 	-- Old Icebeard
 								un(7, i(2899)),	-- Wendigo Collar
-							}),
+							})),
 						}),
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
@@ -591,18 +595,18 @@ _.Zones =
 								n(-17, {	-- Quests (Legacy)
 									un(40, qa(31138, {		-- The Arts of a Monk
 										["groups"] = {
-											un(34, i(59042)), 	-- Electro-Staff
+											i(59042), 	-- Electro-Staff NOTE: Item is still in game and obtainable via quest 26197 for Mages (do not flad as unobtainable), Monk quest listed here is not available upon testing
 										},
-										["classes"] = { 10 },	-- Monk
+										["classes"] = { 8 },	-- Mage
 										["races"] = { 7 },	-- Gnome
 									})),
 								}),
 								n(-16, {	-- Rares (Legacy)
-									n(8503, { -- Gibblewilt
+									n(8503, { 	-- Gibblewilt NOTE: As of 8.0 npc still spawns but drops are still unconfirmed as obtainable again
 										un(7, i(10554)),	-- Foreman Pants
 										un(7, i(10553)),	-- Foreman Vest
 									}),	
-									n(1260,	{ 	-- Great Father Arktikus
+									n(1260,	{ 	-- Great Father Arktikus NOTE: Believe this npc has been replaced by Boss Bruggor but cannot find confirmation
 										un(7, i(3223)),	-- Frostmane Scepter
 									}),
 								}),

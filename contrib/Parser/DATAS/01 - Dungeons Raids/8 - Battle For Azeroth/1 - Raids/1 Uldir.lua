@@ -220,7 +220,7 @@ _.Instances =
 							}),
 							e(2146, { -- Fetid Devourer
 								["groups"] = {
-									ach(12828), -- Thrash Mouth - All Stars
+									ach(12823), -- Thrash Mouth - All Stars
 									i(160689), -- Regurgitated Purifier's Flamestaff
 									i(160685), -- Biomelding Cleaver
 									i(160616), -- Horrific Amalgam's Hood
@@ -604,7 +604,7 @@ _.Instances =
 							}),
 							e(2195, { -- Zul, Reborn
 								["groups"] = {
-									ach(12828), --  Mythic: Zul
+									ach(12531), --  Mythic: Zul
 									i(160684), -- Pursax, the Backborer
 									i(160691), -- Tusk of the Reborn Prophet
 									i(160630), -- Crest of the Undying Visionary

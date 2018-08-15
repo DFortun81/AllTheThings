@@ -140,6 +140,7 @@ _.Instances =
 					}),
 					d(23, { -- Mythic
 						["groups"] = {
+							ach(12600),	-- Breath of the Shrine
 							e(2153, { -- Aqu'sirr
 								["groups"] = {
 									i(159366), -- Aqui'sirr's Swirling Sash

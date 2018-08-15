@@ -133,6 +133,7 @@ _.Instances =
 							}),
 							e(2095, { -- Harlan Sweete
 								["groups"] = {
+									ach(12832),	-- Heroic: Freehold
 									i(159635), -- Bloody Tideturner
 									i(155888), -- Irontide Captain's Hat
 									i(155885), -- Sea-Brawler's Greathelm
@@ -204,6 +205,7 @@ _.Instances =
 							}),
 							e(2095, { -- Harlan Sweete
 								["groups"] = {
+									ach(12833),	-- Mythic: Freehold
 									ach(12998), -- That Sweete Booty
 									i(159842), -- Sharkbait's Favorite Crackers
 									i(159635), -- Bloody Tideturner

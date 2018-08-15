@@ -5,7 +5,14 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(15, {	-- Badlands
-			["groups"] = {						
+			["groups"] = {
+				n(-228, {	-- Flight Master
+					fp(21),		-- New Kargath, Badlands
+					fp(632),	-- Bloodwatcher Point, Badlands
+					fp(633),	-- Dustwind Dig, Badlands
+					fp(634),	-- Dragon's Mouth, Badlands
+					fp(635),	-- Fuselight, Badlands
+				}),
 				n(-25, {	-- Pet Battle
 					p(406), 	-- Beetle
 					p(398), 	-- Black Rat
@@ -927,99 +934,93 @@ _.Zones =
 					}),
 				}),
 				n(-40, {	-- Legacy
-					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
-							un(40, qa(719, {	-- A Dwarf and His Tools
-								un(34, i(4978)),	-- Ryedol's Hammer
-							})),
-							un(40, qdg(h({
-								["questID"] = 2258,	-- Badlands Reagent Run
-								["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
-							}))),
-							un(40, qdg(h({
-								["questID"] = 2258,	-- Badlands Reagent Run II
-								["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
-								["sourceQuests"] = 2202,	-- Source Quest: Uldaman Reagent Run
-								["groups"] = {
-									un(2, recipe(11452)),	-- Restorative Potion
-								},
-							}))),
-							un(40, qdg(qh(4983, {	-- Bijou's Reconnaissance Report (may only have been both factions)
-								un(34, i(15858)),	-- Freewind Gloves
-								un(34, i(15859)),	-- Seapost Girdle
-							}))),
-							un(40, qh(793, {	-- Broken Alliances
-								un(34, i(11193)),	-- Blazewind Breastplate
-								un(34, i(11194)),	-- Prismscale Hauberk
-								un(34, i(11195)),	-- Warforged Chestplate
-								un(34, i(11196)),	-- Mindburst Medallion
-							})),
-							un(40, qdg({
-								["questID"] = 715,	-- Liquid Stone
-								["qg"] = 2920,	-- Quest Giver: Lucien Tosselwrench
-								["groups"] = {
-									un(7, i(4624)),	-- Recipe: Lesser Stoneshield Potion [REMOVED FROM GAME]
-								},
-							})),
-							un(40, qdg(qh(4134, {	-- Lost Thunderbrew Recipe
-								un(34, i(11964)),	-- Swiftstrike Cudgel
-								un(34, i(12000)),	-- Limb Cleaver
-							}))),
-							un(40, q(1137, {	-- News for Fizzle
-								un(34, i(6729)),	-- Fizzle's Zippy Lighter
-								un(34, i(6732)),	-- Gnomish Mechanic's Gloves
-							})),
-							un(40, q( 705, {	-- Pearl Diving
-								un(34, i(4086)),	-- Flash Rifle
-								un(34, i(5248)),	-- Flash Wand
-							})),
-							un(40, q(2418, {	-- Power Stones
-								un(34, i( 9522)),	-- Energized Stone Circle
-								un(34, i(10358)),	-- Duracin Bracers
-								un(34, i(10359)),	-- Everlast Boots
-							})),
-							un(40, q( 709, {	-- Solution to Doom
-								un(34, i(4746)),	-- Doomsayer's Robe
-							})),
-							un(40, q( 716, {	-- Stone Is Better than Cloth
-								un(34, i(4979)),	-- Enchanted Stonecloth Bracers
-							})),
-							un(40, qdg(qh(4724, {	-- The Pack Mistress
-								un(34, i(15824)),	-- Astoria Robes
-								un(34, i(15825)),	-- Traphook Jerkin
-								un(34, i(15827)),	-- Jadescale Breastplate
-							}))),
-							un(40, qdg(qh(4063, {	-- The Rise of the Machines
-								un(34, i(12109)),	-- Azure Moon Amice
-								un(34, i(12110)),	-- Raincaster Drape
-								un(34, i(12108)),	-- Basaltscale Armor
-								un(34, i(12111)),	-- Lavaplate Gauntlets
-							}))),
-							un(40, qa(717, {	-- Tremors of the Earth
-								un(34, i(11193)),	-- Blazewind Breastplate
-								un(34, i(11194)),	-- Prismscale Hauberk
-								un(34, i(11195)),	-- Warforged Chestplate
-								un(34, i(11196)),	-- Mindburst Medallion
-							})),
-							un(40, qdg({
-								["questID"] = 2202,	-- Uldaman Reagent Run
-								["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
-								["sourceQuests"] = 2258,	-- Source Quest: Badlands Reagent Run
-							})),
-						}),
-						n(-16, {	-- Rares (Legacy)
-							n(7057, {	-- Digmaster Shovelphlange
-								un(7, i(9375)),	-- Expert Goldmaker's Helmet
-								un(7, i(9378)),	-- Shovelphlange's Mining Axe
-								un(7, i(9382)),	-- Tromping Miner's Boots
-							}),
-							n(2719, { 	-- Dustbelcher Lord
-								un(7, i(1521)),	-- Lumbering Ogre Axe
-							}),
-						}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
-					},
+					n(-17, {	-- Quests (Legacy)
+						un(40, qa(719, {	-- A Dwarf and His Tools
+							un(2, i(4978)),	-- Ryedol's Hammer
+						})),
+						un(40, qdg(h({
+							["questID"] = 2258,	-- Badlands Reagent Run II
+							["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
+							["sourceQuests"] = 2202,	-- Source Quest: Uldaman Reagent Run
+							["groups"] = {
+								un(2, recipe(11452)),	-- Restorative Potion
+							},
+						}))),
+						un(40, qdg(qh(4983, {	-- Bijou's Reconnaissance Report (may only have been both factions)
+							un(2, i(15858)),	-- Freewind Gloves
+							un(2, i(15859)),	-- Seapost Girdle
+						}))),
+						un(40, qh(793, {	-- Broken Alliances
+							un(2, i(11193)),	-- Blazewind Breastplate
+							un(2, i(11194)),	-- Prismscale Hauberk
+							un(2, i(11195)),	-- Warforged Chestplate
+							un(2, i(11196)),	-- Mindburst Medallion
+						})),
+						un(40, qdg({
+							["questID"] = 715,	-- Liquid Stone
+							["qg"] = 2920,	-- Quest Giver: Lucien Tosselwrench
+							["groups"] = {
+								un(7, i(4624)),	-- Recipe: Lesser Stoneshield Potion [REMOVED FROM GAME]
+							},
+						})),
+						un(40, qdg(qh(4134, {	-- Lost Thunderbrew Recipe
+							un(2, i(11964)),	-- Swiftstrike Cudgel
+							un(2, i(12000)),	-- Limb Cleaver
+						}))),
+						un(40, q(1137, {	-- News for Fizzle
+							un(2, i(6729)),	-- Fizzle's Zippy Lighter
+							un(2, i(6732)),	-- Gnomish Mechanic's Gloves
+						})),
+						un(40, q( 705, {	-- Pearl Diving
+							un(2, i(4086)),	-- Flash Rifle
+							un(2, i(5248)),	-- Flash Wand
+						})),
+						un(40, q(2418, {	-- Power Stones
+							un(2, i( 9522)),	-- Energized Stone Circle
+							un(2, i(10358)),	-- Duracin Bracers
+							un(2, i(10359)),	-- Everlast Boots
+						})),
+						un(40, q( 709, {	-- Solution to Doom
+							un(2, i(4746)),	-- Doomsayer's Robe
+						})),
+						un(40, q( 716, {	-- Stone Is Better than Cloth
+							un(2, i(4979)),	-- Enchanted Stonecloth Bracers
+						})),
+						un(40, qdg(qh(4724, {	-- The Pack Mistress
+							un(2, i(15824)),	-- Astoria Robes
+							un(2, i(15825)),	-- Traphook Jerkin
+							un(2, i(15827)),	-- Jadescale Breastplate
+						}))),
+						un(40, qdg(qh(4063, {	-- The Rise of the Machines
+							un(2, i(12109)),	-- Azure Moon Amice
+							un(2, i(12110)),	-- Raincaster Drape
+							un(2, i(12108)),	-- Basaltscale Armor
+							un(2, i(12111)),	-- Lavaplate Gauntlets
+						}))),
+						un(40, qa(717, {	-- Tremors of the Earth
+							un(2, i(11193)),	-- Blazewind Breastplate
+							un(2, i(11194)),	-- Prismscale Hauberk
+							un(2, i(11195)),	-- Warforged Chestplate
+							un(2, i(11196)),	-- Mindburst Medallion
+						})),
+						un(40, qdg({
+							["questID"] = 2202,	-- Uldaman Reagent Run
+							["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
+							["sourceQuests"] = 2258,	-- Source Quest: Badlands Reagent Run
+						})),
+					}),
+					n(-16, {	-- Rares (Legacy)
+						un(43, n(7057, {	-- Digmaster Shovelphlange
+							un(7, i(9375)),	-- Expert Goldmaker's Helmet
+							un(7, i(9378)),	-- Shovelphlange's Mining Axe
+							un(7, i(9382)),	-- Tromping Miner's Boots
+						})),
+						un(43, n(2719, { 	-- Dustbelcher Lord
+							un(7, i(1521)),	-- Lumbering Ogre Axe
+						})),
+					}),
+					--n(  0, {	-- Zone Drop (Legacy)
+					--}),
 				}),
 			},
 			["lvl"] = 40,	

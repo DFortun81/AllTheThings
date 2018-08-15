@@ -148,8 +148,15 @@ _.Instances =
 					}),
 					d(23, { -- Mythic
 						["groups"] = {
+							ach(12270, {	-- Bringing Hexy Back
+								crit(1),		-- Vol'kaal defeated
+								crit(2),		-- Priestess Alun'za defeated
+								crit(3),		-- Rezan defeated
+								crit(4),		-- Yazma defeated
+							}),
 							e(2082, { -- Priestess Alun'za
 								["groups"] = {
+									ach(12272),	-- Gold Fever
 									i(158321), -- Wand of Zealous Purification
 									i(158322), -- Aureus Vessel
 									i(158309), -- Wristlinks of Alchemical Transfusion
@@ -195,6 +202,7 @@ _.Instances =
 							}),
 							e(2030, { -- Yazma
 								["groups"] = {
+									ach(12273),	-- It's Lit!
 									ach(12826), -- Mythic: Atal'Dazar
 									i(158323), -- Soulrender's Fang
 									i(159358), -- Coif of the Court Spider
