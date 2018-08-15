@@ -280,6 +280,99 @@ _.Zones =
 									}),	
 								},
 							}),
+							crit(4, {	-- Turtle Power [Best Title Ever!]
+								["groups"] = {
+									q(49067, {	-- Beseeching Bwonsamdi	
+										["qg"] = 127961,	-- Princess Talanji
+										["sourceQuests"] = { 49064 },	-- Torga, the Turtle Loa
+									}),
+									q(49185, {	-- Catching Up	
+										["qg"] = 127961,	-- Princess Talanji
+										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
+									}),		
+									q(49080, {	-- Cease all Summoning
+										["groups"] = {
+											i(158981),	-- Death-Pledged Footguards
+											i(158974),	-- Fen Summoner's Cloak
+											i(158980),	-- Loa Speaker's Slippers
+											i(458979),	-- Nazmani Warplate Footguards
+											i(158982),	-- Ritual Flayer's Striders
+										},
+										["qg"] = 127961,	-- Princess Talanji
+										["sourceQuests"] = { 49067 },	-- Beseeching Bwonsamdi
+									}),		
+									q(49132, {	-- Crushing the Skullcrushers	
+										["qg"] = 127960,	-- Lashk
+										["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
+									}),		
+									q(49071, {	-- Dreadtick Combustion	
+										["qg"] = 127960,	-- Lashk
+										["sourceQuests"] = { 49067 },	-- Beseeching Bwonsamdi
+									}),		
+									q(49126, {	-- Forcing Fate's Hand
+										["groups"] = {
+											i(158973),	-- Band of Destiny
+										},
+										["qg"] = 127958,	-- Kisha
+										["sourceQuests"] = { 
+											49125,	-- Negative Blood
+											51689,	-- Tortollan Rescue
+										},	
+									}),		
+									q(49136, {	-- Jungo, Herald of G'huun
+										["qg"] = 127961,	-- Princess Talanji
+										["sourceQuests"] = { 
+											49132,	-- Crushing the Skullcrushers,
+											49131,	-- Sanctifying Ground,
+											49130,	-- Loa-Free Diet
+										},
+									}),
+									q(49130, {	-- Loa-Free Diet	
+										["qg"] = 127958,	-- Kisha
+										["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
+									}),		
+									q(49125, {	-- Negative Blood	
+										["qg"] = 127958,	-- Kisha
+										["sourceQuests"] = { 49120 },	-- Speaking with the Dead
+									}),		
+									q(49131, {	-- Sanctifying Ground	
+										["qg"] = 127961,	-- Princess Talanji
+										["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
+									}),		
+									q(49070, {	-- Souls for the Death Loa	
+										["qg"] = 128096,	-- Bwonsamdi
+										["sourceQuests"] = { 49067 },	-- Beseeching Bwonsamdi
+									}),		
+									q(49120, {	-- Speaking with the Dead	
+										["qg"] = 128096,	-- Bwonsamdi
+										["sourceQuests"] = { 
+											49080,	-- Cease all Summoning 
+											49071,	-- Dreadtick Combustion
+											49070,	-- Souls for the Death Loa
+										},	
+									}),		
+									q(49064, {	-- Torga, the Turtle Loa	
+										["qg"] = 127960,	-- Lashk
+										["sourceQuests"] = { 49185 },	-- Catching Up
+									}),		
+									q(49160, {	-- Torga's Eternal Return  [Note: Final Quest needed to trigger criteria]
+										["qg"] = 127960,	-- Lashk
+										["sourceQuests"] = { 49136 },	-- Jungo, Herald of G'huun
+										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
+									}),		
+									q(51689, {	-- Tortollan Rescue	
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["sourceQuests"] = { 49120 },	-- Speaking with the Dead
+									}),	
+								},
+							}),
+							n(132011, {	-- Shoak
+								["groups"] = {
+									
+								},
+								["collectible"] = false,
+								["description"] = "You must complete this storyline in order for him to show up at Gloom Hollow.",
+							}),
 							-- Crieve's List
 							{
 								["questID"] = 49484,	-- Offering to Bwonsamdi [The Necropolis]
