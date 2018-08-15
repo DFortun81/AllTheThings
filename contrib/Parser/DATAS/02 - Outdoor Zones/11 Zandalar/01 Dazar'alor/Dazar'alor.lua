@@ -73,8 +73,65 @@ _.Zones =
 							},
 							["races"] = HORDE_ONLY,
 						}),
+						h(ach(11861, {	-- The Throne of Zuldazar
+							["groups"] = {
+								crit(2, {	-- Port of Zandalar
+									["groups"] = {
+										q(46929, {	-- Deterrent
+											["groups"] = {
+												i(155305),	-- Golden City Greatcloak
+												i(155268),	-- Rastari Vambraces
+												i(155270),	-- Jambani Armbands
+												i(155267),	-- Zanchuli Wristwraps
+												i(155269),	-- Torcalin Bracers
+											},
+											["qg"] = 135441,	-- Zolani
+											["sourceQuests"] = { 46926, 46846, }	-- Shakedown, The Word of Zul
+										}),		
+										q(48454, {	-- Evidence of Evil	
+											["qg"] = 126148,	-- Witch Doctor Jala
+											["sourceQuests"] = { 48452 },	-- The Red Market
+										}),		
+										q(46927, {	-- Punishment of Tal'aman	
+											["qg"] = 126684,	-- Yazma
+											["sourceQuests"] = { 48454 },	-- Evidence of Evil
+										}),		
+										q(46928, {	-- Punishment of Tal'farrak	
+											["qg"] = 126684,	-- Yazma
+											["sourceQuests"] = { 48454 },	-- Evidence of Evil
+										}),		
+										q(50881, {	-- Royal Report	[Note: Final Quest needed to trigger criteria]
+											["qg"] = 135441,	-- Zolani
+											["sourceQuests"] = { 46927, 46928, },	-- Punishment of Tal'aman, Punishment of Tal'farrak
+											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
+										}),	
+										q(46926, {	-- Shakedown	
+											["qg"] = 135441,	-- Zolani
+											["sourceQuests"] = { 50835 },	-- The Port of Zandalar
+										}),		
+										q(50835, {	-- The Port of Zandalar	
+											["qg"] = 122915,	-- Zolani
+											["sourceQuests"] = { 49615 },	-- Trust of a King
+										}),		
+										q(48452, {	-- The Red Market	
+											["qg"] = 126148,	-- Witch Doctor Jala
+											["sourceQuests"] = { 46929, 48456, }	-- Deterrent, Witch Doctor Jala
+										}),		
+										q(46846, {	-- The Word of Zul	
+											["qg"] = 126684,	-- Yazma
+											["sourceQuests"] = { 50835 },	-- The Port of Zandalar
+										}),
+										--[[ Lucetia: Finished quest line on live.  Quest wasn't needed or given.
+										q(48456, {	-- Witch Doctor Jala	
+											["qg"] = 135441,	-- Zolani
+											["sourceQuests"] = { 46926, 46846, },	-- Shakedown, The Word of Zul
+										}),	
+										--]]
+									},
+								}),
+							},
+						})),
 						-- TO-DO Put in quests that are related to the city here later.  For now leave in main zone
-						
 						ach(11868, {	-- The Dark Heart of Nazmir [Note: Quest line starts here and a few quests are in the zone.  So we want to make them stand out amongst the crowd.]
 							["groups"] = {
 								crit(1, {	-- Deep in the Swamp
@@ -96,7 +153,6 @@ _.Zones =
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						
 					},
 				}),
 				n(-16, {	-- Rares

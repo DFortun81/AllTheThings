@@ -782,6 +782,7 @@ _.Zones =
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
+						i(158160),	-- Smuggler's Cove Ring
 						n(-43, {	-- Cloth
 							["groups"] = {
 								i(158033),	-- Squallshaper Hood
