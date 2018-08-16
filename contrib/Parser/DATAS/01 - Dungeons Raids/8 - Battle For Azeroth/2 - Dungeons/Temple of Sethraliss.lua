@@ -243,7 +243,7 @@ _.Instances =
 				["lvl"] = 110,
 				["maps"] = {
 					1038, -- Temple of Sethraliss
-					1039, -- Atrium of Sethraliss
+					1043, -- Atrium of Sethraliss
 				},
 			}),
 		},
