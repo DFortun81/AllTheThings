@@ -97,16 +97,18 @@ _.Zones =
 									["qg"] = 124630, -- Taelia
 									["sourceQuests"] = { 47099 }, -- Get Your Bearings
 								}),
-								--[[
 								q(47186, {	-- Sanctum of Sages
 									["qg"] = 121235, -- Taelia
 									["soureQuests"] = { 46729 }, -- The Old Knight
+								}),
+								q(52128, {	-- Ferry Pass
+									["qg"] = 122370, -- Cyrus Crestfall
+									["soureQuests"] = { 47186 }, -- Sanctum of Sages
 								}),
 								q(47189, {	-- A Nation Divided
 									["qg"] = 121235, -- Taelia
 									["soureQuests"] = { 47186 }, -- Sanctum of Sages
 								}),
-								--]]
 							},
 						})),
 						q(52462, {	-- A Load of Scrap
@@ -114,6 +116,30 @@ _.Zones =
 								ach(12741), -- Giving a Scrap
 							},
 							["qg"] = 141274, -- Crenzo Sparkshatter
+						}),
+						q(47961, {	-- Drustvar
+							["qg"] = 139522,	-- Scouting Map
+							["sourceQuests"] = { 47189 },	-- A Nation Divided
+						}),
+						q(47962, {	-- Stormsong Valley
+							["qg"] = 139522,	-- Scouting Map
+							["sourceQuests"] = { 47189 },	-- A Nation Divided
+						}),
+						q(47960, {	-- Tiragarde Sound
+							["qg"] = 139522,	-- Scouting Map
+							["sourceQuests"] = { 47189 },	-- A Nation Divided
+						}),
+						q(52654, {	-- The War Campaign
+							["qg"] = 120788,	-- Genn Greymane
+							["sourceQuests"] = { 47189 },	-- A Nation Divided
+						}),
+						q(47181, {	-- The Smoking Gun
+							["qg"] = 121239, -- Flynn Fairwind
+							["sourceQuests"] = { 47189 },	-- A Nation Divided
+						}),
+						q(47485, {	-- The Ashvane Trading Company
+							["qg"] = 122370, -- Cyrus Crestfall
+							["sourceQuests"] = { 47181 },	-- The Smoking Gun
 						}),
 					},
 				}),

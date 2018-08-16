@@ -1200,7 +1200,7 @@ local function GetNoteForGroup(group)
 	if group then
 		local key = group.key;
 		if key then
-			return GetDataSubSubMember("Notes", key, group[key]);
+			return group[key] and GetDataSubSubMember("Notes", key, group[key]);
 		else
 			return GetDataSubMember("Notes", BuildSourceTextForChat(group, 0));
 		end

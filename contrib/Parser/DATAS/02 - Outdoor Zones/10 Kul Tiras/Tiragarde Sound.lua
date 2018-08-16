@@ -73,18 +73,6 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					["groups"] = {
-						a(ach(12582, {	-- Come Sail Away
-							["groups"] = {
-								q(47186, {	-- Sanctum of Sages
-									["qg"] = 121235,	-- Taelia
-									["sourceQuests"] = { 46729 },	-- The Old Knight
-								}),
-								q(47189, {	-- A Nation Divided
-									["qg"] = 121235,	-- Taelia
-									["sourceQuests"] = { 47186 },	-- Sanctum of Sages
-								}),
-							},
-						})),
 						--[[
 						a(ach(12473, {	-- A Sound Plan
 							crit(1),		-- The Ashvane Trading Company
@@ -96,26 +84,8 @@ _.Zones =
 							crit(7),		-- Castaways and Cutouts
 						})),
 						--]]
-						q(52128, {	-- Ferry Pass
-							["qg"] = 122370,	-- Cyrus Crestfall
-							["sourceQuests"] = { 46729 },	-- The Old Knight
-						}),
-						q(52654, {	-- The War Campaign
-							["qg"] = 120788,	-- Genn Greymane
-							["sourceQuests"] = { 47189 },	-- A Nation Divided
-						}),
-						q(47962, {	-- Stormsong Valley
-							["qg"] = 139522,	-- Scouting Map
-							["sourceQuests"] = { 47189 },	-- A Nation Divided
-						}),
-						q(47960, {	-- Tiragarde Sound
-							["qg"] = 139522,	-- Scouting Map
-							["sourceQuests"] = { 47189 },	-- A Nation Divided
-						}),
-						q(47961, {	-- Drustvar
-							["qg"] = 139522,	-- Scouting Map
-							["sourceQuests"] = { 47189 },	-- A Nation Divided
-						}),
+						
+						
 						--
 						q(49403, {	-- Rodrigo's Revenge
 							i(163036),
