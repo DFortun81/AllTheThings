@@ -495,6 +495,12 @@ _.Zones =
 							}),	
 							["questID"] = 49267,	
 						}),
+						n(131718, { -- Bramblewing
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161020),	-- Sky-Hunter Breeches
+							}),	
+							["questID"] = 50034,	
+						}),
 						n(133190, {	-- Daggerjaw [Missing]		
 							["questID"] = 50269,
 						}),		
