@@ -98,7 +98,7 @@ _.Zones =
 											i(155321),	-- Loa Speaker's Gloves
 											i(155328),	-- Loa Speaker's Leggings
 											i(155320),	-- Nazmani Warplate Gauntlets
-											i(155327),	-- Nazmani Warplate Greaves
+											i(155327),	-- Nazmani Warplate Greaves 
 											i(155330),	-- Ritual Flayer's Breeches
 											i(155319),	-- Ritual Flayer's Gloves
 											i(154724, {	-- Ceremonial Torch
