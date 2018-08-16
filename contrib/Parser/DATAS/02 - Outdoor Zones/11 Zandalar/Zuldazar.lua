@@ -140,7 +140,7 @@ _.Zones =
 											}, 
 										}),
 										q(49663, {	-- False Prophecies [Note: Final Quest needed to trigger criteria]
-											["qg"] = 129907,	-- Zul the Prophet  [Disable for the moment.  I want to see trigger quest in-game]
+											["qg"] = 129907,	-- Zul the Prophet
 											["sourceQuests"] = { 49905 },	-- Plot Twist
 											--["icon"] = "Interface\\Addons\\AllTheThings\\assets\\star",	-- Quest Finale
 											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
@@ -166,7 +166,11 @@ _.Zones =
 										}),		
 										q(51663, {	-- Preparing for the Fall	
 											--["qg"] = 290750,	-- Jambani Stockpile  [IS OBJECT]
-											["sourceQuests"] = { 49492 },	-- Arrogance of Vol'jamba
+											["sourceQuests"] = {
+												49489,	-- Needs a Little Body
+												49490,	-- The Urn of Voices
+												49491,	-- Fuel for the Voodoo
+											},
 										}),		
 										q(49488, {	-- Tal'gurub	
 											["qg"] = 120740,	-- King Rastakhan
@@ -178,18 +182,27 @@ _.Zones =
 										}),		
 										q(49493, {	-- Zul's Ethical Dilemma	
 											["qg"] = 129907,	-- Zul the Prophet
-											["sourceQuests"] = { 49492 },	-- Arrogance of Vol'jamba
+											["sourceQuests"] = {
+												49489,	-- Needs a Little Body
+												49490,	-- The Urn of Voices
+												49491,	-- Fuel for the Voodoo
+											},
 										}),		
 										q(49494, {	-- Zuvembi Brew	
 											["qg"] = 129907,	-- Zul the Prophet
-											["sourceQuests"] = { 49492 },	-- Arrogance of Vol'jamba
+											["sourceQuests"] = { 
+												49492,	-- Arrogance of Vol'jamba
+												51663,	-- Preparing for the Fall
+												49493,	-- Zul's Ethical Dilemma
+											},	
 										}),	
 									},
 								}),
 								crit(3, {	-- Warport Rastari
 									["groups"] = {
 										q(49122, {	-- A Port in Peril	
-											["qg"] = 127815	-- Zolani
+											["qg"] = 127815,	-- Zolani
+											["sourceQuests"] = { 49663 },	-- False Prophecies
 										}),	
 										q(49148, {	-- Crumbling Apart	
 											["qg"] = 127815,	-- Zolani
@@ -229,15 +242,21 @@ _.Zones =
 												49145,	-- No Troll Left Behind
 												49144,	-- Wrath of the Zandalari
 											},	
-										}),		
-										q(47879, {	-- The Betrayal of Zul [Note: Final Quest needed to trigger criteria]
+										}),
+										--[[ QUEST REMOVED FROM BETA
+										q(47879, {	-- The Betrayal of Zul 
 											["qg"] = 129409,	-- Zolani
 											["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
-											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-										}),		
-										q(49310, {	-- The Prophet's Ploy	
+										}),	
+										--]]
+										q(49310, {	-- The Prophet's Ploy[Note: Final Quest needed to trigger criteria]
+											["groups"] = {
+												i(155260),	-- Rastari Pauldrons
+												-- Get rest of rewards
+											},
 											["qg"] = 127837,	-- Kaza'jin the Wavebinder
 											["sourceQuests"] = { 49309 },	-- Thunder's Fall
+											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),
 										q(49309, {	-- Thunder's Fall
 											["sourceQuests"] = {
@@ -248,7 +267,7 @@ _.Zones =
 										}),
 										q(49144, {	-- Wrath of the Zandalari	
 											["qg"] = 127815,	-- Zolani
-											["sourceQuests"] = { 49145 },	-- No Troll Left Behind
+											["sourceQuests"] = { 49122 },	-- A Port in Peril
 										}),	
 									},
 								}),
@@ -609,6 +628,22 @@ _.Zones =
 						n(136702, {	-- Zu'shin the Infused [Missing]		
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
+					},
+				}),
+				n(-212, {	-- Treasure Chest
+					["groups"] = { -- If we are going to list every treasure chest then let's make it pretty and not show quest ID# on screen.
+						o(9999999, { -- Treasure Chest
+							["questID"] = 50716,
+							["coords"] = {
+								{ 71.39, 40.89 },
+							},
+						}),
+						o(9999998, { -- Treasure Chest
+							["questID"] = 50720,
+							["coords"] = {
+								{ 66.41, 29.61 },
+							},
+						}),
 					},
 				}),
 				n(-2, {  -- Vendors
