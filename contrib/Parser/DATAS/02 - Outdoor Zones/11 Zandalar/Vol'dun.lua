@@ -457,7 +457,7 @@ i(155430),
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(162622),	-- Groggy Brawler's Chestplate
 								}),	
-								-- ["questID"] = 	
+								["questID"] = 49251,
 							}),		
 							n(129476, {	-- Bloated Krolusk		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -486,8 +486,11 @@ i(155430),
 								}),							
 								-- ["questID"] = 	
 							}),	
-							n(136323, {	-- Fangcaller Xorreth [Missing]		
-								-- ["questID"] = 	
+							n(136323, {	-- Fangcaller Xorreth
+								["g"] = {
+									i(162612),	-- Cobra Priest's Headdress
+								},
+								["questID"] = 51065,
 							}),
 							n(129027, {	-- Golanar		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -511,7 +514,7 @@ i(155430),
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161107),	-- Brineshell Footguards
 								}),	
-								-- ["questID"] = 	
+								["questID"] = 49392,
 							}),		
 							n(136341, {	-- Jungleweb Hunter		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -561,16 +564,16 @@ i(155430),
 									i(161099),	-- Wind-Scoured Greaves
 								}),	
 								-- ["questID"] = 	
-							}),		
+							}),
 							n(134571, {	-- Skycaller Teskris		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(160968),	-- Skycaller Spellstaff
 								}),	
 								["questID"] = 50637,	
-							}),		
-							n(134745, {	-- Skycarver Krakit [Missing]		
-								-- ["questID"] = 	
-							}),		
+							}),
+							n(134745, {	-- Skycarver Krakit
+								["questID"] = 50686,
+							}),
 							n(136304, {	-- Songstress Nahjeen		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161025),	-- Wailing Sister's Gloves
@@ -583,12 +586,12 @@ i(155430),
 								}),	
 								-- ["questID"] = 	
 							}),		
-							n(129180, {	-- Warbringer Hozzik		
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							n(129180, {	-- Warbringer Hozzik
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161032),	-- Spire-Charged Links
-								}),	
-								-- ["questID"] = 	
-							}),		
+								}),
+								["questID"] = 49373,
+							}),
 							n(141931, {	-- Warlord Dagu [Missing]	
 								-- ["questID"] = 	
 							}),
@@ -602,7 +605,7 @@ i(155430),
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161103),	-- Barbarous Captive's Wargreaves
 								}),	
-								-- ["questID"] = 	
+								["questID"] = 50658,
 							}),		
 							n(129411, {	-- Zunashi the Exile		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
