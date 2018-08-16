@@ -6,6 +6,12 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(76, {	-- Azshara
 			["groups"] = {
+				n(-228, { -- Flight Paths
+					fp(44), -- Bilgewater Harbor, Azshara
+					fp(614), -- Northern Rocketway, Azshara
+					fp(613), -- Southern Rocketway, Azshara
+					fp(683), -- Valormok, Azshara
+				}),
 				n(-25, {	-- Pet Battle
 					p(378), 	-- Rabbit
 					p(472), 	-- Rabid Nut Varmint 5000
