@@ -978,6 +978,7 @@ _.PetJournal =
 		p(2078),	-- Tinytron
 		p(116),		-- Tranquil Mechanical Yeti
 		p(1886),	-- Trigger
+		p(2192),	-- Vengeful Chicken
 		p(227),		-- Warbot
 	}),
 	pa(242, { 	-- Undead

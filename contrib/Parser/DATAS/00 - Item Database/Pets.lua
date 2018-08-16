@@ -635,6 +635,7 @@ pet(139790, 1921); 	-- Untethered Wyrmling
 pet(153195, 2136);	-- Uuna
 pet(38658, 187); 	-- Vampiric Batling
 pet(120050, 1596);	-- Veilwatcher Hatchling
+pet(160940, 2192);	-- Vengeful Chicken
 pet(103637, 1344);	-- Vengeful Porcupette
 pet(89736, 855);	-- Venus
 pet(129216, 1764);	-- Vibrating Arcane Crystal (Energized Manafiend)

@@ -13,6 +13,24 @@ _.Instances =
 		["groups"] = {
 			inst(1021, { -- Waycrest Manor
 				["groups"] = {
+					n(-17, {	-- Quests
+						["groups"] = {
+							n(-34, {	-- World Quests
+								["groups"] = {
+									q(51212, { -- Waycrest   Manor: Witchy Kithcen
+										["collectible"] = false,
+										["isDaily"] = true,
+									}),
+								},
+							}),
+							q(50990, { -- Cutting Edge Poultry Science
+								["groups"] = {
+									i(160940),	-- Intact Chicken Brain
+								},
+								["description"] = "This quest pops up when killing mobs in the kitchen.  It is unknown for certain if the World Quest \"Witchy Kitchen\"  is required.",
+							}),
+						},
+					}),
 					d(1, { -- Normal
 						["groups"] = {
 							e(2125, { -- Heartsbane Triad
