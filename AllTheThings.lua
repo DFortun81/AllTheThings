@@ -4231,7 +4231,7 @@ app.BaseMap = {
 		elseif key == "link" then
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
-			return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
+			return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or "Interface/ICONS/INV_Misc_Map09";
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -8092,6 +8092,7 @@ app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+app:RegisterEvent("NEW_WMO_CHUNK");
 app:RegisterEvent("TOYS_UPDATED");
 app:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 app:RegisterEvent("TRADE_SKILL_SHOW");
@@ -9426,6 +9427,7 @@ app.events.ACHIEVEMENT_EARNED = function(achievementID, ...)
 end
 app.events.SCENARIO_UPDATE = RefreshLocation;
 app.events.ZONE_CHANGED_NEW_AREA = RefreshLocation;
+app.events.NEW_WMO_CHUNK = RefreshLocation;
 app.events.ACTIVE_TALENT_GROUP_CHANGED = function()
 	app.Spec = GetLootSpecialization();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end

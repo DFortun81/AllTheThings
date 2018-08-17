@@ -88,7 +88,110 @@ _.Zones =
 							crit(7),		-- Castaways and Cutouts
 						})),
 						--]]
+						a(q(49234, {	-- A Marine Out of Water
+							["qg"] = 130101, -- Recruit Brutis
+							["sourceQuests"] = { 50700 },	-- Drust in Time
+							["groups"] = {
+								i(158255),	-- Sea Raider's Crushers
+								i(158256),	-- Navigator's Mitts
+								i(158257),	-- Outrigger Strikers
+								i(158254),	-- Freebooter Grips
+								i(158251),	-- Navigator's Woolies
+								i(158253),	-- Freebooter Pantaloons
+								i(158252),	-- Outrigger Pants
+								i(158250),	-- Sea Raider's Legguards
+							},
+						})),
+						a(q(49225, {	-- Chasing the Leader
+							["qg"] = 128381, -- Drogrin Alewhisker
+							["sourceQuests"] = { 50700 },	-- Drust in Time
+						})),
+						a(q(50700, {	-- Drust in Time
+							["qg"] = 139089, -- Hatherford Guard
+							-- ["sourceQuests"] = { 47189 },	-- Tiragarde Sound??
+						})),
+						a(q(48369, {	-- Emergent Strategy
+							["qg"] = 129613, -- Maynard Algerson
+							["sourceQuests"] = { 49452, 49451, 49465  },	-- Inventory Deficit / Maximizing Resources / Time Off Requests
+						})),
+						a(o(281230, {	-- Formal Invitation
+							q(48070, {	-- The Norwington Festival
+								-- ["sourceQuests"] = { 47189 },	-- Tiragarde Sound??
+							}),
+						})),
+						a(q(49453, {	-- Give a Dam
+							["qg"] = 129670, -- Lyssa Treewarden
+							["sourceQuests"] = { 50699 },	-- Worker's Rights
+						})),
+						a(q(49450, {	-- Incident Reports
+							["qg"] = 129669, -- Benjamin Algerson
+							["sourceQuests"] = { 48369  },	-- Emergent Strategy
+						})),
+						a(q(49452, {	-- Inventory Deficit
+							["qg"] = 129613, -- Maynard Algerson
+							["sourceQuests"] = { 50699 },	-- Worker's Rights
+						})),
+						a(q(49465, {	-- Maximizing Resources
+							["qg"] = 129613, -- Maynard Algerson
+							["sourceQuests"] = { 50699 },	-- Worker's Rights
+						})),
+						a(q(49454, {	-- Pest Prevention
+							["qg"] = 129669, -- Benjamin Algerson
+							["sourceQuests"] = { 48369  },	-- Emergent Strategy
+						})),
+						a(q(49468, {	-- Required Webinar
+							["qg"] = 129669, -- Benjamin Algerson
+							["sourceQuests"] = { 48369  },	-- Emergent Strategy
+						})),
+						a(q(48557, {	-- Sowing Saplings
+							["qg"] = 129670, -- Lyssa Treewarden
+							["sourceQuests"] = { 50699 },	-- Worker's Rights
+						})),
+						a(q(49229, {	-- The Ruins Fought Back
+							["qg"] = 128381, -- Drogrin Alewhisker
+							["sourceQuests"] = { 50700 },	-- Drust in Time
+						})),
+						a(q(50058, {	-- The Witch's Pet
+							["qg"] = 134325, -- Terrence Foster
+							["sourceQuests"] = { 48369  },	-- Emergent Strategy
+						})),
+						a(q(49451, {	-- Time Off Requests
+							["qg"] = 129669, -- Benjamin Algerson
+							["sourceQuests"] = { 50699 },	-- Worker's Rights
+						})),
+						a(o(288641, {	-- WANTED: Gryphon 'Nappers (sign)
+							q(51358, {	-- WANTED: Gryphon 'Nappers
+								-- ["sourceQuests"] = { 47189 },	-- Tiragarde Sound??
+							}),
+						})),
+						a(q(49467, {	-- Witch of the Woods
+							["qg"] = 129669, -- Benjamin Algerson
+							["sourceQuests"] = { 50058  },	-- The Witch's Pet
+							["groups"] = {
+								i(158219),	-- Petula's Locket
+							},
+						})),
+						a(q(50699, {	-- Worker's Rights
+							["qg"] = 134776, -- Davey Brindle
+							-- ["sourceQuests"] = { 47189 },	-- Tiragarde Sound??
+						})),
 						
+						m(1171, {	-- Gol Thovas
+							a(q(49260, {	-- Backup While I Pack Up
+								["qg"] = 128349, -- Hilde Firebreaker
+								["sourceQuests"] = { 49225 },	-- Chasing the Leader
+							})),
+							a(q(49233, {	-- I'm a Druid, Not a Priest
+								["qg"] = 128354, -- Birch Tomlin
+								["sourceQuests"] = { 50700 },	-- Drust in Time
+							})),
+							a(q(49232, {	-- Salvaging a Disaster
+								["qg"] = 128353, -- Pendi Cranklefuse
+								["sourceQuests"] = { 50700 },	-- Drust in Time
+							})),
+						}),
+						
+						q(48619),	-- Small Treasure Chest
 						
 						--
 						q(49403, {	-- Rodrigo's Revenge
@@ -223,16 +326,6 @@ _.Zones =
 						i(160094),	-- Freebooter Cord
 						i(160095),	-- Outrigger Waistwrap
 						i(160096),	-- Sea Raider's Cinch
-						}),
-						q(49234, {	-- A Marine Out of Water
-						i(158255),	-- Sea Raider's Crushers
-						i(158256),	-- Navigator's Mitts
-						i(158257),	-- Outrigger Strikers
-						i(158254),	-- Freebooter Grips
-						i(158251),	-- Navigator's Woolies
-						i(158253),	-- Freebooter Pantaloons
-						i(158252),	-- Outrigger Pants
-						i(158250),	-- Sea Raider's Legguards
 						}),
 						q(48352, {	-- A Cure from the Sea
 						i(160097),	-- Navigator's Wristwraps
@@ -463,7 +556,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160473),	-- Wickerthorn Stompers	
 							}),		
-							-- ["questID"] = 		
+							["questID"] = 50073,
 						}),			
 						n(132052, {	-- Vol'Jim			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
