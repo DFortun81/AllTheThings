@@ -1009,10 +1009,19 @@ _.Zones =
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
+						i(158154),	-- Embleem of Zandalar
 						i(158153),	-- Gilded Loa Figurine
+						i(158152),	-- Golden Empire Signet
 						n(-43, {	-- Cloth
 							["groups"] = {
-								
+								i(157873),	-- Fen Spirit Headdress
+								i(157875),	-- Fen Spirit Mantle
+								i(157898),	-- Fen Spirit Wraps
+								i(157877),	-- Fen Spirit Wristwraps
+								i(157872),	-- Fen Spirit Handwraps
+								i(157876),	-- Fen Spirit Cinch
+								i(157874),	-- Fen Spirit Leggings
+								i(157871),	-- Fen Spirit Footwraps
 							},
 						}),
 						n(-44, {	-- Leather
@@ -1029,11 +1038,26 @@ _.Zones =
 						}),
 						n(-45, {	-- Mail
 							["groups"] = {
-								
+								i(157889),	-- Dreadmire Helm
+								i(157891),	-- Dreadmire Shoulderguards
+								i(157886),	-- Dreadmire Vest
+								i(157893),	-- Dreadmire Vambraces
+								i(157888),	-- Dreadmire Handguards
+								i(157892),	-- Dreadmire Links
+								i(157890),	-- Dreadmire Legguards
+								i(157887),	-- Dreadmire Treads
 							},
 						}),
 						n(-46, {	-- Plate
 							["groups"] = {
+								i(157897),	-- Bone-Fetished Faceguard
+								i(157900),	-- Bone-Fetished Shoulderplates
+								i(157894),	-- Bone-Fetished Chestplate
+								i(157902),	-- Bone-Fetished Armguards
+								i(157896),	-- Bone-Fetished Crushers
+								i(157901),	-- Bone-Fetished Greatbelt
+								i(157899),	-- Bone-Fetished Wargreaves
+								i(157895),	-- Bone-Fetished Stompers
 								i(161041),	-- Gutrip's Tramplers
 							},
 						}),

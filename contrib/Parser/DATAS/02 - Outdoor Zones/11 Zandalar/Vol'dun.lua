@@ -56,6 +56,10 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
+						q(50603, {	-- Voldunai
+							["isDaily"] = true,
+							["lvl"] = 120,
+						}),
 					},
 				}),
 				n(-25, { 	-- Pet Battle
@@ -798,6 +802,7 @@ i(155430),
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
+						i(158155),	-- Dinobone Charm
 						n(-43, {	-- Cloth
 							["groups"] = {
 								i(157937),	-- Sandspinner Headdress

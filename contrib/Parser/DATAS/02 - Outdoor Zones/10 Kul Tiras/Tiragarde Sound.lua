@@ -55,6 +55,10 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
+						q(50605, { 	-- Alliance War Effort [7th Legion]
+							["isDaily"] = true,
+							["lvl"] = 120,
+						}),
 						q(50599, {	-- Proudmoore Admiralty
 							["isDaily"] = true,
 							["lvl"] = 120,

@@ -783,6 +783,7 @@ _.Zones =
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
+						i(158163),	-- First Mate's Spyglass
 						i(158160),	-- Smuggler's Cove Ring
 						n(-43, {	-- Cloth
 							["groups"] = {
@@ -822,6 +823,7 @@ _.Zones =
 						}),
 						n(-46, {	-- Plate
 							["groups"] = {
+								i(154389),	-- Abyssal-Serpent Pauldrons
 								i(158057),	-- Shoalbreach Helm
 								i(158060),	-- Shoalbreach Pauldrons
 								i(158054),	-- Shoalbreach Breastplate

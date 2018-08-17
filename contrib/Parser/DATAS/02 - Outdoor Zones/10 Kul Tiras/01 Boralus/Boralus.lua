@@ -52,8 +52,13 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
+						q(50605, { 	-- Alliance War Effort [7th Legion]
+							["isDaily"] = true,
+							["lvl"] = 120,
+						}),
 						q(50599, {	-- Proudmoore Admiralty
 							["isDaily"] = true,
+							["lvl"] = 120,
 						}),
 					},
 				}),
@@ -608,6 +613,33 @@ _.Zones =
 								}),
 							},
 						}),
+					},
+				}),
+				n(-34, {	-- World Quests
+					["groups"] = {
+						i(158159),	-- Boralus Sailor's Cloak
+						--[[
+						n(-43, {	-- Cloth
+							["groups"] = {
+								
+							},
+						}),
+						n(-44, {	-- Leather
+							["groups"] = {
+								
+							},
+						}),
+						n(-45, {	-- Mail
+							["groups"] = {
+								
+							},
+						}),
+						n(-46, {	-- Plate
+							["groups"] = {
+								
+							},
+						}),
+						--]]
 					},
 				}),
 			},

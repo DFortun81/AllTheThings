@@ -71,6 +71,10 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
+						q(50606, {	-- Horde War Effort [The Honorbound]
+							["isDaily"] = true,
+							["lvl"] = 120,
+						}),
 						q(50598, {	-- Zandalari Empire
 							["isDaily"] = true,
 							["lvl"] = 120,
@@ -763,6 +767,8 @@ _.Zones =
 								i(160509),	-- Echoes of Rezan
 							}),
 						}),
+						i(158152),	-- Golden Empire Signet
+						i(158150),	-- Loa-Pledged Drape
 						n(-43, {	-- Cloth
 							["groups"] = {
 								
@@ -775,7 +781,14 @@ _.Zones =
 						}),
 						n(-45, {	-- Mail
 							["groups"] = {
-								
+								i(157921),	-- Pa'ku Windrider Helm
+								i(157923),	-- Pa'ku Windrider Shoulderguards
+								i(157918),	-- Pa'ku Windrider Jerkin
+								i(157925),	-- Pa'ku Windrider Bracers
+								i(157920),	-- Pa'ku Windrider Gloves
+								i(157924),	-- Pa'ku Windrider Girdle
+								i(157922),	-- Pa'ku Windrider Breeches
+								i(157919),	-- Pa'ku Windrider Treads
 							},
 						}),
 						n(-46, {	-- Plate

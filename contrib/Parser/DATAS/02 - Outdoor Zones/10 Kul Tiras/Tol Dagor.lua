@@ -22,6 +22,7 @@ _.Zones =
 				n(-34, {	-- World Quests
 					["groups"] = {
 						i(159460),	-- Overseer's Lost Seal
+						i(159293),	-- Turncoat's Cape
 						i(160110),	-- Warglaive of the Sand Queen
 						n(-43, {	-- Cloth
 							["groups"] = {

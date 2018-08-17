@@ -12,6 +12,10 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
+						q(50606, {	-- Horde War Effort [The Honorbound]
+							["isDaily"] = true,
+							["lvl"] = 120,
+						}),
 						q(50598, {	-- Zandalari Empire
 							["isDaily"] = true,
 							["lvl"] = 120,
