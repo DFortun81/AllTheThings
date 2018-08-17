@@ -155,9 +155,9 @@ _.Zones =
 							}),	
 							["questID"] = 50163,	
 						}),		
-						n(138667, {	-- Blighted Monstrosity	[Missing]	
-							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
-						}),		
+						n(138667, {	-- Blighted Monstrosity
+							["questID"] = 52001,
+						}),
 						n(126621, {	-- Bonesquall		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(154376),	-- Bonecurse Gauntlets
@@ -194,17 +194,17 @@ _.Zones =
 							}),	
 							["questID"] = 49530,	
 						}),		
-						n(138871, {	-- Ernie		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(138871, {	-- Ernie
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154217, {	-- Pearly-White Jackknife
 									["crs"] = {
 										138870,	-- Mick
 										138866,	-- Mack
 									},
 								}),
-							}),	
-							["questID"] = 51749,	
-						}),		
+							}),
+							["questID"] = 51749,
+						}),
 						n(134213, {	-- Executioner Blackwell		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155055),	-- Soul-Curse Executioner
@@ -303,12 +303,12 @@ _.Zones =
 							}),	
 							["questID"] = 49528,	
 						}),		
-						n(139358, {	-- The Caterer		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(139358, {	-- The Caterer
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155560),	-- Lazy-Baker's Ring
-							}),	
+							}),
 							["questID"] = 51949,
-						}),		
+						}),
 						n(127651, {	-- Vicemaul		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160474),	-- Vicemaul Wristpinchers
