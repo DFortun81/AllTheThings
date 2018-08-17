@@ -647,7 +647,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161102),	-- Corpseblood Belt
 							}),	
-							["questID"] = 49312,
+							["questID"] = 48462,
 						}),		
 						n(121242, {	-- Glompmaw		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -659,7 +659,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161041),	-- Gutrip's Tramplers
 							}),	
-							["questID"] = 47843,
+							["questID"] = 49231,
 						}),		
 						n(127001, {	-- Gwugnug the Cursed		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -677,7 +677,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160969),	-- Reanimated Necromancer's Blade
 							}),
-							["questID"] = 48508,
+							["questID"] = 50307,
 						}),		
 						n(133527, {	-- Juba the Scarred		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -735,16 +735,19 @@ _.Zones =
 									128930,  -- Rohnkor
 								},
 								--]]
-							["questID"] = 48462,	
+							["g"] = {
+								i(163703),	-- Crawg Gnawed Femur
+							},
+							["questID"] = 50040,	
 						}),	
 						n(128610, {	-- Maw of Shul-Nagruth
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160973),	-- Accursed Tuskwand
 							}),
-							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon
+							["questID"] = 50467,
 						}),
-						n(128974, {	-- Queen Tzxi'kik [Missing]	
-							["questID"] = 48638,	
+						n(128974, {	-- Queen Tzxi'kik
+							["questID"] = 49312,
 						}),		
 						n(127820, {	-- Scout Skrasniss		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -758,9 +761,9 @@ _.Zones =
 							}),	
 							["questID"] = 47877,	
 						}),		
-						n(124475, {	-- Shambling Ambusher [Missing]		
-							["questID"] = 47878,	
-						}),	
+						n(124475, {	-- Shambling Ambusher
+							["questID"] = 47878,
+						}),
 						n(126460, {	-- Tainted Guardian [Missing]		
 							["questID"] = 50342,	
 						}),		
@@ -776,7 +779,7 @@ _.Zones =
 									135565,	-- Guardian of Agussu
 								},
 								--]]
-							["questID"] = 48439,
+							["questID"] = 50888,
 							["icon"] = "Interface\\Icons\\INV_Misc_Urn_01",
 							["model"] = "World\\Expansion07\\Doodads\\Zandalaritroll\\8tr_zandalari_graveyard_urn03.mdx",
 						}),		
@@ -784,23 +787,23 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161094),	-- Voodoo-Bound Handwraps
 							}),	
-							["questID"] = 48980,	
+							["questID"] = 49305,
 						}),		
 						n(126926, {	-- Venomjaw		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161028),	-- Noxious Crocolisk Trousers
 							}),	
-							["questID"] = 48406,	
+							["questID"] = 48626,
 						}),		
-						n(126907, {	-- Wardrummer Zurula [Missing]		
-							["questID"] = 48626,	
+						n(126907, {	-- Wardrummer Zurula
+							["questID"] = 48623,
 						}),		
-						n(133531, {	-- Xu'ba		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(133531, {	-- Xu'ba
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(162619),	-- Bone Collector's Chestcage
-							}),	
-							["questID"] = 50348,	
-						}),		
+							}),
+							["questID"] = 50348,
+						}),
 						n(129657, {	-- Za'amar the Queen's Blade		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161095),	-- Queensguard Specter Legwraps

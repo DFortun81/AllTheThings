@@ -475,7 +475,7 @@ i(155430),
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(160990),	-- Marrow's Sash
 								}),
-								-- ["questID"] = 	
+								["questID"] = 51073,
 							}),		
 							n(124722, {	-- Commodore Calhoun [Missing]		
 								-- ["questID"] = 	
@@ -484,7 +484,7 @@ i(155430),
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161036),	-- Sand-Smoothed Wristguards
 								}),							
-								-- ["questID"] = 	
+								["questID"] = 51077,
 							}),	
 							n(136323, {	-- Fangcaller Xorreth
 								["g"] = {
@@ -569,17 +569,17 @@ i(155430),
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(160968),	-- Skycaller Spellstaff
 								}),	
-								["questID"] = 50637,	
+								["questID"] = 50637,
 							}),
 							n(134745, {	-- Skycarver Krakit
 								["questID"] = 50686,
 							}),
-							n(136304, {	-- Songstress Nahjeen		
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							n(136304, {	-- Songstress Nahjeen
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161025),	-- Wailing Sister's Gloves
-								}),	
-								-- ["questID"] = 	
-							}),		
+								}),
+								["questID"] = 51063,
+							}),
 							n(130401, {	-- Vathikur		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161097),	-- Rattling Earth Armwraps
@@ -591,9 +591,6 @@ i(155430),
 									i(161032),	-- Spire-Charged Links
 								}),
 								["questID"] = 49373,
-							}),
-							n(141931, {	-- Warlord Dagu [Missing]	
-								-- ["questID"] = 	
 							}),
 							n(134638, {	-- Warlord Zothix		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
