@@ -7693,7 +7693,17 @@ app:GetWindow("Debugger", UIParent, function(self)
 					end
 					info.faction = UnitFactionGroup(npc);
 				end
-				info = { ["mapID"] = mapID, ["g"] = { info } };
+				
+				-- Bubble Up the Maps
+				local mapInfo;
+				repeat
+					mapInfo = C_Map.GetMapInfo(mapID);
+					if mapInfo then
+						info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
+						mapID = mapInfo.parentMapID
+					end
+				until not mapInfo or not mapID;
+				
 				self:MergeObject(self.data.g, self:CreateObject(info));
 				self:MergeObject(self.rawData, info);
 				self:Update();
@@ -9263,58 +9273,24 @@ app.events.VARIABLES_LOADED = function()
 		end
 		return mapID;
 	end
-	app.BFA = select(4, GetBuildInfo()) >= 80000;	-- If this is for BFA, run the BFA code, otherwise the Legion/Legacy code.
-	if app.BFA then
-		-- BFA specific code!
-		app.SetPortraitTexture = _G["SetPortraitTextureFromCreatureDisplayID"];
-		app.GetCurrentMapID = function()
-			local uiMapID = C_Map.GetBestMapForUnit("player");
-			
-			-- Onyxia's Lair fix
-			local text_to_mapID = app.L("ZONE_TEXT_TO_MAP_ID");
-			local otherMapID = text_to_mapID[GetRealZoneText()] or text_to_mapID[GetSubZoneText()];
-			if otherMapID then uiMapID = otherMapID; end
-			
-			-- print("Current UI Map ID: ", uiMapID);
-			return uiMapID;--app.BFAToLegionMapID(uiMapID);
-		end
-		app.GetMapName = function(mapID)
-			if mapID and mapID > 0 then
-				local info = C_Map.GetMapInfo(mapID);--app.LegionToBFAMapID(mapID));
-				return (info and info.name) or ("Map ID #" .. mapID);
-			else
-				return "Map ID #???";
-			end
-		end
-	else
-		-- Legion / Legacy code!
-		app.SetPortraitTexture = _G["SetPortraitTexture"];
-		app.GetCurrentMapID = function()
-			-- Cache the original map ID.
-			local originalMapID = GetCurrentMapAreaID();
-			SetMapToCurrentZone();
-			local mapID = GetCurrentMapAreaID();
-			
-			-- Onyxia's Lair fix
-			local text_to_mapID = app.L("ZONE_TEXT_TO_MAP_ID");
-			local otherMapID = text_to_mapID[GetRealZoneText()] or text_to_mapID[GetSubZoneText()];
-			if otherMapID then
-				mapID = otherMapID;
-			else
-				-- This is necessary because the map area ID for instances
-				-- is -1 when you initially enter them for a few moments. (not even a full second)
-				mapID = GetCurrentMapAreaID();
-			end
-			
-			SetMapByID(originalMapID);
-			return mapID;
-		end
-		app.GetMapName = function(mapID)
-			if mapID and mapID > 0 then
-				return GetMapNameByID(mapID) or ("Map ID #" .. mapID);
-			else
-				return "Map ID #???";
-			end
+	app.SetPortraitTexture = _G["SetPortraitTextureFromCreatureDisplayID"];
+	app.GetCurrentMapID = function()
+		local uiMapID = C_Map.GetBestMapForUnit("player");
+		
+		-- Onyxia's Lair fix
+		local text_to_mapID = app.L("ZONE_TEXT_TO_MAP_ID");
+		local otherMapID = text_to_mapID[GetRealZoneText()] or text_to_mapID[GetSubZoneText()];
+		if otherMapID then uiMapID = otherMapID; end
+		
+		-- print("Current UI Map ID: ", uiMapID);
+		return uiMapID;
+	end
+	app.GetMapName = function(mapID)
+		if mapID and mapID > 0 then
+			local info = C_Map.GetMapInfo(mapID);
+			return (info and info.name) or ("Map ID #" .. mapID);
+		else
+			return "Map ID #???";
 		end
 	end
 	
