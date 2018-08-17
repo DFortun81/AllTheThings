@@ -7540,6 +7540,180 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
+--[[
+app:GetWindow("Debugger", UIParent, function(self)
+	if not self.initialized then
+		self.initialized = true;
+		self.data = {
+			['text'] = "Debugger",
+			['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp", 
+			["description"] = "This builds a list of all of the quests you have encountered recently.",
+			['visible'] = true, 
+			['expanded'] = true,
+			['back'] = 1,
+			['g'] = {},
+		};
+		self.rawData = {};
+		self.Clear = function(self)
+			self.rawData = {};
+			app.SetDataMember("Debugger", self.rawData);
+			wipe(self.data.g);
+			self:Update();
+		end
+		self.CreateObject = function(self, t)
+			local s = {};
+			if t[1] then
+				-- array
+				for i,o in ipairs(t) do
+					table.insert(s, self:CreateObject(o));
+				end
+				return s;
+			else
+				for key,value in pairs(t) do
+					s[key] = value;
+				end
+				if t.g then
+					s.g = {};
+					for i,o in ipairs(t.g) do
+						table.insert(s.g, self:CreateObject(o));
+					end
+					t = s;
+				end
+				if t.mapID then
+					t = app.CreateMap(t.mapID, t);
+				elseif t.objectID then
+					t = app.CreateObject(t.objectID, t);
+				elseif t.achievementID then
+					t = app.CreateAchievement(t.achievementID, t);
+				elseif t.questID then
+					t = app.CreateQuest(t.questID, t);
+				elseif t.itemID then
+					t = app.CreateItem(t.itemID, t);
+				end
+				t.visible = true;
+				t.expanded = true;
+				return t;
+			end
+		end
+		self.MergeObject = function(self, g, t)
+			local key = t.key;
+			if not key then
+				if t.mapID then
+					key = "mapID";
+				elseif t.objectID then
+					key = "objectID";
+				elseif t.achievementID then
+					key = "achievementID";
+				elseif t.questID then
+					key = "questID";
+				elseif t.itemID then
+					key = "itemID";
+				end
+			end
+			for i,o in ipairs(g) do
+				if o[key] == t[key] then
+					t.visible = nil;
+					t.expanded = nil;
+					if t.g then
+						local tg = t.g;
+						t.g = nil;
+						if o.g then
+							for j,k in ipairs(tg) do
+								self:MergeObject(o.g, k);
+							end
+						else
+							o.g = tg;
+						end
+					end
+					for key,value in pairs(t) do
+						o[key] = value;
+					end
+					return true;
+				end
+			end
+			table.insert(g, t);
+			return true;
+		end
+		
+		-- Setup Event Handlers and register for events
+		-- /script AllTheThings:GetWindow("Debugger"):Show();
+		-- /script AllTheThings:GetWindow("Debugger"):Clear();
+		self.events = {};
+		self:SetScript("OnEvent", function(self, e, ...)
+			print(e, ...);
+			if e == "PLAYER_LOGIN" then
+				self.rawData = app.GetDataMember("Debugger", {});
+				self.data.g = self:CreateObject(self.rawData);
+				self:Update();
+			elseif e == "CURSOR_UPDATE" then
+				local npcName, npcUnit = GameTooltip:GetUnit();
+				if not npcName then
+					npcName = UnitName("target") or UnitGUID("target");
+					npcUnit = "target";
+				end
+				print(npcName, npcUnit, GetLootSourceInfo(1));
+				StartCoroutine("ApplyObjectTooltip", function()
+					local text;
+					repeat
+						coroutine.yield();
+						text = _G["GameTooltipTextLeft1"]:GetText();
+					until text;
+					AttachTooltip(GameTooltip);
+				end);
+			elseif e == "QUEST_DETAIL" then
+				local questStartItemID = ...;
+				local questID = GetQuestID();
+				local mapID = app.GetCurrentMapID();
+				local npc = "questnpc";
+				local guid = UnitGUID(npc);
+				if not guid then
+					npc = "npc";
+					guid = UnitGUID(npc);
+				end
+				local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
+				if guid then type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
+				print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id);
+				
+				local rawGroups = {};
+				for i=1,GetNumQuestRewards(),1 do
+					table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(GetQuestItemLink("reward", i)) });
+				end
+				for i=1,GetNumQuestChoices(),1 do
+					table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(GetQuestItemLink("choice", i)) });
+				end
+				local info = { ["questID"] = questID, ["g"] = rawGroups };
+				if questStartItemID and questStartItemID > 0 then info.itemID = questStartItemID; end
+				if npc_id then
+					npc_id = tonumber(npc_id);
+					if type == "GameObject" then
+						info = { ["objectID"] = npc_id, ["text"] = UnitName(npc), ["g"] = { info } };
+					else
+						info.qgs = {npc_id};
+						info.name = UnitName(npc);
+					end
+					info.faction = UnitFactionGroup(npc);
+				end
+				info = { ["mapID"] = mapID, ["g"] = { info } };
+				self:MergeObject(self.data.g, self:CreateObject(info));
+				self:MergeObject(self.rawData, info);
+				self:Update();
+			end
+			
+		end);
+		self:RegisterEvent("PLAYER_LOGIN");
+		self:RegisterEvent("QUEST_DETAIL");
+		self:RegisterEvent("QUEST_LOOT_RECEIVED");
+		--self:RegisterAllEvents();
+	end
+	
+	-- Update the window and all of its row data
+	if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+	for i,g in ipairs(self.data.g) do
+		if g.OnUpdate then g.OnUpdate(g); end
+	end
+	UpdateWindow(self, true);
+end):Show();
+]]--
 app:GetWindow("CurrentInstance");
 app:GetWindow("RaidAssistant", UIParent, function(self)
 	if not self.initialized then
