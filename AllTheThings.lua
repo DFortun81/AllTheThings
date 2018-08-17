@@ -2071,7 +2071,7 @@ local function OpenMiniList(field, id, label)
 			
 			local found = false;
 			local difficultyID = select(3, GetInstanceInfo());
-			if difficultyID and difficultyID > 0 then
+			if difficultyID and difficultyID > 0 and popout.data.g then
 				for _, row in ipairs(popout.data.g) do
 					if (row.difficultyID and row.difficultyID == difficultyID)
 						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
