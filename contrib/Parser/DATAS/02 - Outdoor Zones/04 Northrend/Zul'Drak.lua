@@ -388,7 +388,7 @@ _.Zones =
 							},
 						}),
 						n(29235, { -- Gundrak Savage
-							["g"] = {
+							["groups"] = {
 								i(41120), -- Plans: Reinforced Cobalt Legplates
 							},
 						}),

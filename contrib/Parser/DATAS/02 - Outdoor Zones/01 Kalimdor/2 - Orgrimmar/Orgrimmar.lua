@@ -528,13 +528,13 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qp185(qg(42506, qh(26226))),	-- Crawfish Creole
 --]]					
 					q(6385, { -- Doras the Wind Rider Master
-						["g"] = {},
+						["groups"] = {},
 						["qg"] = 6929, -- Innkeeper Gryshka
 						["races"] = { 2, 8 }, -- Orcs/Trolls
 						["sourceQuests"] = { 6384 }, -- Ride to Orgrimmar
 					}),
 					q(6386, { -- Return to Razor Hill
-						["g"] = {},
+						["groups"] = {},
 						["qg"] = 3310, -- Doras
 						["races"] = { 2, 8}, -- Orcs/Trolls
 						["sourceQuests"] = { 6385 }, -- Doras the Wind Rider Master

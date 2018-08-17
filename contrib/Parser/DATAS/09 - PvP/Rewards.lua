@@ -338,7 +338,7 @@ _.PVP =
 			["races"] = HORDE_ONLY,	
 		}),
 		i(123950, { -- Recipe: Demonsteel Pauldrons (Rank 3)
-			["g"] = {
+			["groups"] = {
 				recipe(182984), -- Recipe: Demonsteel Pauldrons (Rank 3)
 			},
 			["description"] = "This has a CHANCE to drop from any rated battleground win.",

@@ -30,7 +30,7 @@ _.Zones =
 					},
 				}),
 				n(0, { -- Zone Drop
-					["g"] = {
+					["groups"] = {
 						i(41123, { -- Plans: Reinforced Cobalt Helm
 							["crs"] = {
 								26270, -- Iron Rune-Shaper

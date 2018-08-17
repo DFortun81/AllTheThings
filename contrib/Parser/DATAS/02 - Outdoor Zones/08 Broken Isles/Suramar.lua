@@ -434,39 +434,39 @@ _.Zones =
 						}),
 					}),
 					n(-181, { -- Blacksmithing
-						["g"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
+						["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
 							q(38525, { -- Part of the Team
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38524, -- Felsmith Nal'ryssa
 							}),
 							q(38526, { -- Smith Under Fire
-								["g"] = {
+								["groups"] = {
 									recipe(182968), -- Plans: Leystone Boots (Rank 2)
 								},
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38525, -- Part of the Team
 							}),
 							q(38527, { -- Nal'ryssa's Technique
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38526, -- Smith Under Fire
 							}),
 							q(38528, { -- Leystone's Potential
-								["g"] = {
+								["groups"] = {
 									recipe(182962), -- Plans: Leystone Armguards (Rank 2)
 								},
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38527, -- Nal'ryssa's Technique
 							}),
 							q(38530, { -- The Firmament Stone
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38528, -- Leystone's Potential
 							}),
 							n(-34, { -- World Quests
 								q(41637, { -- Work Order: Leystone Pauldrons
-									["g"] = {
+									["groups"] = {
 										i(123938, { -- Recipe: Leystone Pauldrons (Rank 3)
 											recipe(182972), -- Recipe: Leystone Pauldrons (Rank 3)
 										}),
@@ -1459,7 +1459,7 @@ _.Zones =
 						i(140638),	-- Recipe: Dreadleather Shoulderguard Rank 1
 					}),
 					n(92265, { -- Urael <Nal'ryssa's Minion>
-						["g"] = {
+						["groups"] = {
 							i(123920), -- Recipe: Demonsteel Armguards (Rank 1)
 							i(123926), -- Recipe: Demonsteel Boots (Rank 1)
 							i(123927), -- Recipe: Demonsteel Breastplate (Rank 1)

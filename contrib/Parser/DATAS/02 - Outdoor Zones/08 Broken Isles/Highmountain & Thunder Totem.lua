@@ -881,33 +881,33 @@ _.Zones =
 							  q(41189),	-- A New Lead              
 							}),
 							n(-181, { -- Blacksmithing
-								["g"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
+								["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
 									q(38514, { -- You Are Not Worthy
-										["g"] = {},
+										["groups"] = {},
 										["qg"] = 92242, -- Barm Stonebreaker
 										["sourceQuest"] = 38513, -- The Highmountain Smiths
 									}),
 									q(39699, { -- Ironhorn Leysmithing
-										["g"] = {
+										["groups"] = {
 											recipe(182967), -- Plans: Leystone Gauntlets (Rank 2)
 										},
 										["qg"] = 92242, -- Barm Stonebreaker
 										["sourceQuest"] = 38514, -- You Are Not Worthy
 									}),
 									q(38519, { -- Grayheft
-										["g"] = {
+										["groups"] = {
 											recipe(182965), -- Plans: Leystone Greaves (Rank 2)
 										},
 										["qg"] = 92245, -- Thala Steeltotem
 										["sourceQuest"] = 39699, -- Ironhorn Leysmithing
 									}),
 									q(38518, { -- From One Master to Another
-										["g"] = {},
+										["groups"] = {},
 										["qg"] = 92242, -- Barm Stonebreaker
 										["sourceQuest"] = 38519, -- Grayheft
 									}),
 									q(38531, { -- Leystone Mastery
-										["g"] = {
+										["groups"] = {
 											recipe(182966), -- Plans: Leystone Helm (Rank 2)
 											recipe(182964), -- Plans: Leystone Pauldrons (Rank 2)
 										},
@@ -915,24 +915,24 @@ _.Zones =
 										["sourceQuest"] = 38530, -- The Firmament Stone
 									}),
 									q(38532, { -- Maw of Souls: Hammered By The Storm
-										["g"] = {},
+										["groups"] = {},
 										["qg"] = 92242, -- Barm Stonebreaker
 										["sourceQuest"] = 38530, -- The Firmament Stone
 									}),
 									q(38559, { -- Worthy of the Stone
-										["g"] = {},
+										["groups"] = {},
 										["qg"] = 92242, -- Barm Stonebreaker
 										["sourceQuests"] = { 38531, 38532 }, -- Leystone Mastery, Maw of Souls: Hammered By The Storm
 									}),
 									q(38833, { -- The Art of Demonsteel
-										["g"] = {
+										["groups"] = {
 											recipe(184442), -- Plans: Demonsteel Bar
 										},
 										["qg"] = 92243, -- Muirn Ironhorn
 										["sourceQuest"] = 38559, -- Worthy of the Stone
 									}),
 									q(38533, { -- Tribal Knowledge
-										["g"] = {
+										["groups"] = {
 											recipe(182944), -- Plans: Demonsteel Armguards (Rank 1)
 										},
 										["qg"] = 92243, -- Muirn Ironhorn
@@ -940,7 +940,7 @@ _.Zones =
 									}),
 									recipe(182944, { -- Plans: Demonsteel Armguards (Rank 1)
 										q(38534, { -- Demonsteel Armguards
-											["g"] = {
+											["groups"] = {
 												i(123940), -- Recipe: Demonsteel Armguards (Rank 2)
 											},
 											["qg"] = 92243, -- Muirn Ironhorn
@@ -948,7 +948,7 @@ _.Zones =
 									}),
 									recipe(182950, { -- Recipe: Demonsteel Boots (Rank 1)
 										i(123946, { -- Recipe: Demonsteel Boots (Rank 2)
-											["g"] = {
+											["groups"] = {
 												recipe(182980), -- Recipe: Demonsteel Boots (Rank 2) 
 											},
 											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
@@ -956,7 +956,7 @@ _.Zones =
 									}),
 									recipe(182951, { -- Recipe: Demonsteel Breastplate (Rank 1)
 										i(123947, { -- Recipe: Demonsteel Breastplate (Rank 2)
-											["g"] = {
+											["groups"] = {
 												recipe(182981), -- Recipe: Demonsteel Breastplate (Rank 2) 
 											},
 											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
@@ -964,7 +964,7 @@ _.Zones =
 									}),
 									recipe(182949, { -- Recipe: Demonsteel Gauntlets (Rank 1)
 										i(123945, { -- Recipe: Demonsteel Gauntlets (Rank 2)
-											["g"] = {
+											["groups"] = {
 												recipe(182979), -- Recipe: Demonsteel Gauntlets (Rank 2) 
 											},
 											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
@@ -972,7 +972,7 @@ _.Zones =
 									}),
 									recipe(182947, { -- Recipe: Demonsteel Greaves (Rank 1)
 										i(123943, { -- Recipe: Demonsteel Greaves (Rank 2)
-											["g"] = {
+											["groups"] = {
 												recipe(182977), -- Recipe: Demonsteel Greaves (Rank 2) 
 											},
 											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
@@ -980,7 +980,7 @@ _.Zones =
 									}),
 									recipe(182948, { -- Recipe: Demonsteel Helm (Rank 1)
 										i(123944, { -- Recipe: Demonsteel Helm (Rank 2)
-											["g"] = {
+											["groups"] = {
 												recipe(182978), -- Recipe: Demonsteel Helm (Rank 2) 
 											},
 											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
@@ -988,7 +988,7 @@ _.Zones =
 									}),
 									recipe(182946, { -- Recipe: Demonsteel Pauldrons (Rank 1)
 										i(123942, { -- Recipe: Demonsteel Pauldrons (Rank 2)
-											["g"] = {
+											["groups"] = {
 												recipe(182976), -- Recipe: Demonsteel Pauldrons (Rank 2) 
 											},
 											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
@@ -996,7 +996,7 @@ _.Zones =
 									}),
 									recipe(182945, { -- Recipe: Demonsteel Waistguard (Rank 1)
 										i(123941, { -- Recipe: Demonsteel Waistguard (Rank 2)
-											["g"] = {
+											["groups"] = {
 												recipe(182975), -- Recipe: Demonsteel Waistguard (Rank 2) 
 											},
 											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
@@ -1004,7 +1004,7 @@ _.Zones =
 									}),
 									n(-34, { -- World Quests
 										q(41635, { -- Work Order: Leystone Boots
-											["g"] = {
+											["groups"] = {
 												i(137605, { -- Recipe: Leystone Boots (Rank 3)
 													recipe(191928), -- Recipe: Leystone Boots (Rank 3)
 												}),
@@ -1015,9 +1015,9 @@ _.Zones =
 								}),
 							}),
 							n(-189, { -- Skinning
-								["g"] = bubbleDown({["requireSkill"] = 393}, { -- Skinning
+								["groups"] = bubbleDown({["requireSkill"] = 393}, { -- Skinning
 									q(40134, { -- Highmountain Hides
-										["g"] = { 
+										["groups"] = { 
 											i(130064, { -- Deadeye Monocle
 												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 											}),
@@ -1688,25 +1688,25 @@ _.Zones =
 					}),
 					n(106902, {	-- Ransa Greyfeather <Highmountain Emissary>
 						i(123948, { -- Recipe: Demonsteel Armguards (Rank 3)
-							["g"] = {
+							["groups"] = {
 								recipe(182982), -- Recipe: Demonsteel Armguards (Rank 3)
 							},
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(123955, { -- Recipe: Demonsteel Breastplate (Rank 3)
-							["g"] = {
+							["groups"] = {
 								recipe(182989), -- Recipe: Demonsteel Breastplate (Rank 3)
 							},
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(123953, { -- Recipe: Demonsteel Gauntlets (Rank 3)
-							["g"] = {
+							["groups"] = {
 								recipe(182987), -- Recipe: Demonsteel Gauntlets (Rank 3)
 							},
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(136697, { -- Recipe: Gleaming Iron Spike
-							["g"] = {
+							["groups"] = {
 								recipe(209497), -- Recipe: Gleaming Iron Spike
 							},
 							["requireSkill"] = 164, -- Blacksmithing

@@ -147,7 +147,7 @@ _.Zones =
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
 					}),
 					q(32726, { -- So You Want to Be a Blacksmith...
-						["g"] = {},
+						["groups"] = {},
 						["qg"] = 64058, -- Jorunga Stonehoof
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 164, -- Blacksmithing
@@ -458,7 +458,7 @@ _.Zones =
 						i(44694),	-- Antiseptic-Soaked Dressing Shirt
 					}),
 					n(64058, { -- Jorunga Stonehoof <Blacksmithing Supplies>
-						["g"] = {
+						["groups"] = {
 							i(84158), -- Plans: Contender's Revenant Belt
 							i(84159), -- Plans: Contender's Revenant Boots
 							i(84160), -- Plans: Contender's Revenant Bracers

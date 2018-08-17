@@ -655,9 +655,9 @@ _.Zones =
 						-- }),
 						sz(775, 7, { -- Blackrock Stronghold
 							i(142344, { -- Broken Axe Blade
-								["g"] = {
+								["groups"] = {
 									q(44926, { -- A Familiar Axe to Grind
-										["g"] = {},
+										["groups"] = {},
 										["qgs"] = {
 											48201,	-- Blackrock Sergeant
 											7027,	-- Blackrock Slayer
@@ -670,7 +670,7 @@ _.Zones =
 								["requireSkill"] = 164, -- Classic Blacksmithing
 							}),
 							q(44927, { -- Worth Its Weight in Steel
-								["g"] = {
+								["groups"] = {
 									i(142346), -- Plans: Bleakwood Hew
 								},
 								["qg"] = 115805, -- Hoddruc Bladebender

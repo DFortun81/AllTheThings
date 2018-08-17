@@ -440,7 +440,7 @@ i(155430),
 					["races"] = HORDE_ONLY,
 				}),
 				n(-16, {	-- Rares
-					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
+					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 							n(135852, {	-- Ak'tar		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -454,7 +454,7 @@ i(155430),
 								}),
 								["questID"] = 47532,
 							}),		
-							n(128553, {	-- Azer'tor [Missing]
+							n(128553, {	-- Azer'tor [MissingL]
 								-- ["questID"] = 	
 							}),		
 							n(128497, {	-- Bajiani the Slick		
@@ -481,7 +481,10 @@ i(155430),
 								}),
 								["questID"] = 51073,
 							}),		
-							n(124722, {	-- Commodore Calhoun [Missing]		
+							n(124722, {	-- Commodore Calhoun
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+									i(162615),	-- Commodore Calhoun's Tricorne
+								}),
 								-- ["questID"] = 	
 							}),		
 							n(136335, {	-- Enraged Krolusk
@@ -491,7 +494,7 @@ i(155430),
 								["questID"] = 51077,
 							}),	
 							n(136323, {	-- Fangcaller Xorreth
-								["g"] = {
+								["groups"] = {
 									i(162612),	-- Cobra Priest's Headdress
 								},
 								["questID"] = 51065,
@@ -597,7 +600,7 @@ i(155430),
 								["questID"] = 49373,
 							}),
 							--[[  Curently not used in Live, but was present in Beta
-							n(141931, {	-- Warlord Dagu [Missing]
+							n(141931, {	-- Warlord Dagu [MissingL]
 								-- ["questID"] =
 							}),
 							--]]

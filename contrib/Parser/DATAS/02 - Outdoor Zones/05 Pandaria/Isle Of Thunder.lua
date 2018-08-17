@@ -189,9 +189,9 @@ _.Zones =
 --]]
 					i(94721, { -- Strange Metal Ingot (Isle of Thunder)
 						q(32621, { -- Lightning Steel
-							["g"] = {
+							["groups"] = {
 								i(94553, { -- Notes on Lightning Steel
-									["g"] = {
+									["groups"] = {
 										i(94568), -- Plans: Drakefist Hammer, Reborn
 										i(94572), -- Plans: Fireguard, Reborn
 										i(94552), -- Plans: Lightning Steel Ingot

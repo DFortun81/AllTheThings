@@ -1681,7 +1681,7 @@ _.Zones =
 						n(-181, { -- Blacksmithing
 							n(-34, { -- World Quests
 								q(41633, { -- Work Order: Leystone Greaves
-									["g"] = {
+									["groups"] = {
 										i(123931, { -- Recipe: Leystone Greaves (Rank 3)
 											recipe(191931), -- Recipe: Leystone Greaves (Rank 3)
 										}),

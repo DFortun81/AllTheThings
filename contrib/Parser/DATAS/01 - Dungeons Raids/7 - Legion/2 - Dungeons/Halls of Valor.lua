@@ -174,7 +174,7 @@ _.Instances =
 							})),
 							cr(95676, e(1489, {	-- Odyn
 								i(137607, { -- Recipe: Leystone Helm (Rank 3)
-									["g"] = {
+									["groups"] = {
 										recipe(191929), -- Recipe: Leystone Helm (Rank 3)
 									},
 									["requireSkill"] = 164, -- Blacksmithing

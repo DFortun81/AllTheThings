@@ -19,7 +19,7 @@ _.Zones =
 					p(420), -- Toad
 					p(418), -- Water Snake
 					n(63061, { -- Narzak
-						["g"] = {
+						["groups"] = {
 							p(75, {	-- Black Kingsnake
 								["races"] = {8,2} -- Troll, Orc
 							}),
@@ -42,7 +42,7 @@ _.Zones =
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
 					q(31813, { -- Dagra the Fierce
-						["g"] = {
+						["groups"] = {
 							i(89125), -- Sack of Pet Supplies
 						},
 						["qg"] = 66126, -- Zunta
@@ -245,7 +245,7 @@ _.Zones =
               ["races"] = HORDE_ONLY,
             }),
             q(25206, { -- Ignoring the Warnings
-              ["g"] = {
+              ["groups"] = {
                 i(53368), -- Feckless Armbands
                 i(53374), -- Heedless Treads
                 i(131410), -- Bindings of Disregard
@@ -256,7 +256,7 @@ _.Zones =
               ["sourceQuests"] = { 25205 }, -- The Wolf and The Kodo
             }),
             q(25260, { -- Fizzled
-              ["g"] = {
+              ["groups"] = {
                 i(53369), -- Fizzle's Gloves
                 i(53366), -- Enforcer's Gloves
                 i(131413), -- Gor's Re-Inforced Gloves
@@ -288,7 +288,7 @@ _.Zones =
               ["races"] = HORDE_ONLY,
             }),
             q(25262, { -- Skull Rock
-              ["g"] = {
+              ["groups"] = {
                 i(53358), -- Blade Cultist Slippers
                 i(53387), -- Searing Bracers
                 i(53390), -- Skull Rock Belt
@@ -325,7 +325,7 @@ _.Zones =
 						["races"] = {9},
 					}),
 					q(25267,  {	-- Message for Saurfang
-						["g"] = {
+						["groups"] = {
 							i(118217),	-- Staff of Dubious Pacts
 							i(118219),	-- Harness of Forward Directions
 							i(131898),	-- Chestguard of Forward Directions
@@ -365,7 +365,7 @@ _.Zones =
 						["races"] = { 24 },
 					}),
 					qh(40518, {	-- The Battle for Broken Shore
-						["g"] = {
+						["groups"] = {
 							i(136582), -- Bonegrinder of the Horde Vanguard
 							i(136583), -- Longbow of the Horde Vanguard
 							i(136584), -- Dagger of the Horde Vanguard
@@ -482,12 +482,12 @@ _.Zones =
 					--n(5809, {}), -- Sergeant Curtis -- NO TRANSMOGGABLE LOOT!
 				}),
 				n(-2, {	-- Vendors
-					["g"] = bubbleDown({["races"] = HORDE_ONLY}, { -- Horde-only Vendors
+					["groups"] = bubbleDown({["races"] = HORDE_ONLY}, { -- Horde-only Vendors
 						n(3881, { -- Grimtak
 							i(5483), -- Recipe: Scorpid Surprise
 						}),
 						n(113615, {	-- Ravika <Darkspear Quartermaster>
-							["g"] = {
+							["groups"] = {
 								i(97901), -- Griftah's Authentic Troll Shoes
 								i(97919), -- Whole-Body Shinka' Toy
 								i(97942), -- Sen'jin Spirit Drum Toy
@@ -510,7 +510,7 @@ _.Zones =
 					}),
 				}),
 				n(-40, { -- Legacy
-					["g"] = {
+					["groups"] = {
 						n(-17, { -- Quests (Legacy)
               i(46883, { -- Riding Trainer Pamphlet
                 q(14088, { -- Learn to Ride in Durotar
@@ -519,7 +519,7 @@ _.Zones =
                 }),
               }),
 							q(5648, { -- Garments of Spirituality
-								["g"] = {
+								["groups"] = {
 									un(34, i(16606)), -- Juju Hex Robes
 								},
 								["qg"] = 3706, -- Tai'jin
@@ -528,7 +528,7 @@ _.Zones =
 								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
 							q(827, { -- Skull Rock
-								["g"] = {
+								["groups"] = {
 									un(34, i(4947)), -- Jagged Dagger
 									un(34, i(4939)), -- Steady Bastard Sword
 									un(34, i(4948)), -- Stinging Mace
@@ -538,7 +538,7 @@ _.Zones =
 								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
 							q(924, { -- The Demon Seed
-								["g"] = {
+								["groups"] = {
 									un(34, i(5420)), -- Banshee Armor
 								},
 								["qg"] = 3521, -- Ak'Zeloth
@@ -553,7 +553,7 @@ _.Zones =
 					},
 				}),
 				m(463, { -- Echo Isles
-					["g"] = {
+					["groups"] = {
 						n(-25, { -- Pet Battle
 							p(467), -- Dung Beetle
 							p(466), -- Spiny Lizard
@@ -578,7 +578,7 @@ _.Zones =
 								["sourceQuests"] = { 24765 }, -- The Basics: Hitting Things (Druid)
 							}),
 							q(24768, { -- Proving Pit (Druid)
-								["g"] = {
+								["groups"] = {
 									i(52870), -- Darkspear Druidic Staff
 								},
 								["qg"] = 38243, -- Zen'tabra
@@ -611,7 +611,7 @@ _.Zones =
 								["sourceQuests"] = { 24777 }, -- The Basics: Hitting Things (Hunter)
 							}),
 							q(24780, { -- Proving Pit (Hunter)
-								["g"] = {
+								["groups"] = {
 									i(52872), -- Darkspear Hunter's Bow
 								},
 								["qg"] = 38247, -- Ortezza
@@ -645,7 +645,7 @@ _.Zones =
 								["sourceQuests"] = { 24751 }, -- The Basics: Hitting Things (Mage)
 							}),
 							q(24754, { -- Proving Pit (Mage)
-								["g"] = {
+								["groups"] = {
 									i(52873), -- Darkspear Magic Weaver Tunic
 								},
 								["qg"] = 38246, -- Soratha
@@ -678,7 +678,7 @@ _.Zones =
 								["sourceQuests"] = { 31158 }, -- The Basics: Hitting Things (Monk)
 							}),
 							q(31161, { -- Proving Pit (Monk)
-								["g"] = {
+								["groups"] = {
 									i(85574), -- Darkspear Monk's Staff
 								},
 								["qg"] = 63310, -- Zabrax
@@ -711,7 +711,7 @@ _.Zones =
 								["sourceQuests"] = { 24783 }, -- The Basics: Hitting Things (Priest)
 							}),
 							q(24786, { -- Proving Pit (Priest)
-								["g"] = {
+								["groups"] = {
 									i(52874), -- Darkspear Soothsayer Robes
 								},
 								["qg"] = 38245, -- Tunari
@@ -744,7 +744,7 @@ _.Zones =
 								["sourceQuests"] = { 24770 }, -- The Basics: Hitting Things (Rogue)
 							}),
 							q(24774, { -- Proving Pit (Rogue)
-								["g"] = {
+								["groups"] = {
 									i(52889), -- Blooded Darkspear Dagger
 								},
 								["qg"] = 38244, -- Legati
@@ -777,7 +777,7 @@ _.Zones =
 								["sourceQuests"] = { 24759 }, -- The Basics: Hitting Things (Shaman)
 							}),
 							q(24762, { -- Proving Pit (Shaman)
-								["g"] = {
+								["groups"] = {
 									i(52875), -- Darkspear Shamanic Staff
 								},
 								["qg"] = 38242, -- Nekali
@@ -810,7 +810,7 @@ _.Zones =
 								["sourceQuests"] = { 26273 }, -- The Basics: Hitting Things (Warlock)
 							}),
 							q(26276, { -- Proving Pit (Warlock)
-								["g"] = {
+								["groups"] = {
 									i(52873), -- Darkspear Magic Weaver Tunic
 								},
 								["qg"] = 42618, -- Voldreka
@@ -843,7 +843,7 @@ _.Zones =
 								["sourceQuests"] = { 24639 }, -- The Basics: Hitting Things (Warrior)
 							}),
 							q(24642, { -- Proving Pit (Warrior)
-								["g"] = {
+								["groups"] = {
 									i(52876), -- Darkspear Battle Axe
 								},
 								["qg"] = 38037, -- Nortet
@@ -936,7 +936,7 @@ _.Zones =
 						}),
 						n(-2, { -- Vendors
 							n(113615, { -- Ravika <Darkspear Quartermaster>
-								["g"] = {
+								["groups"] = {
 									i(97901), -- Griftah's Authentic Troll Shoes
 									i(97919), -- Whole-Body Shinka' Toy
 									i(97942), -- Sen'jin Spirit Drum Toy

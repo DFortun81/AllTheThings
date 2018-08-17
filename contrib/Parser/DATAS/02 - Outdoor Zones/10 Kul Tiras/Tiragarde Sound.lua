@@ -14,7 +14,7 @@ _.Zones =
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(281397, {	-- Cutwater Treasure Chest [Localized]
-								["g"] = {
+								["groups"] = {
 									i(155381),  -- Cutwater-Captain's Sapphire Ring
 								},
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
@@ -430,9 +430,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				n(-16, {	-- Rares
-					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
+					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
-						n(132182, {	-- Auditor Dolp [Missing]
+						n(132182, {	-- Auditor Dolp [MissingL]
 							["questID"] = 50156,
 						}),
 						n(129181, {	-- Barman Bill			
@@ -560,7 +560,10 @@ _.Zones =
 							}),		
 							-- ["questID"] = 		
 						}),			
-						n(139287, {	-- Sawtooth	[Missing]		
+						n(139287, {	-- Sawtooth
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+								i(155273),	-- Shartook Hatchet
+							}),
 							-- ["questID"] = 		
 						}),			
 						n(139285, {	-- Shiverscale the Toxic			
@@ -593,7 +596,10 @@ _.Zones =
 							}),		
 							-- ["questID"] = 		
 						}),			
-						n(139289, {	-- Tentulos the Drifter	[Missing]		
+						n(139289, {	-- Tentulos the Drifter
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+								i(154448),	-- Medusa-Drifter's Chainmail
+							}),
 							["questID"] = 51879,		
 						}),			
 						n(131389, {	-- Teres

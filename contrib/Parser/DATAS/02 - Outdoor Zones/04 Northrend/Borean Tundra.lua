@@ -2374,7 +2374,7 @@ _.Zones =
 						}),
 					}),
 					n(32565, { -- Gara Skullcrush (Borean Tundra)
-						["g"] = {
+						["groups"] = {
 							i(44938), -- Plans: Titanium Plating
 						},
 						["races"] = HORDE_ONLY,
@@ -2386,7 +2386,7 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
 					n(32564, { -- Logistics Officer Silverstone (Borean Tundra)
-						["g"] = {
+						["groups"] = {
 							i(44937), -- Plans: Titanium Plating
 						},
 						["races"] = ALLIANCE_ONLY,

@@ -199,9 +199,9 @@ _.Zones =
 							i(117504),
 						}),
 						i(114965, { -- Fractured Forge Hammer
-							["g"] = {
+							["groups"] = {
 								q(36205, { -- The Fractured Hammer
-									["g"] = {},
+									["groups"] = {},
 									["qg"] = 74254, -- Dorogg the Ruthless
 								}),
 							},
@@ -210,21 +210,21 @@ _.Zones =
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						q(36207, { -- Waruk the Frostforger
-							["g"] = {},
+							["groups"] = {},
 							["qg"] = 78989, -- Axe-Shaper Kugra
 							["sourceQuest"] = 36205, -- The Fractured Hammer
 							["races"] = HORDE_ONLY,
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						q(36230, { -- The Restless Spirit
-							["g"] = {},
+							["groups"] = {},
 							["qg"] = 84494, -- Waruk the Frostforger
 							["sourceQuest"] = 36207, -- Waruk the Frostforger
 							["races"] = HORDE_ONLY,
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						q(36238, { -- Mending A Broken Heart
-							["g"] = {
+							["groups"] = {
 								i(115356, { -- Draenor Blacksmithing
 									["collectible"] = false,
 								}),

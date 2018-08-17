@@ -109,9 +109,9 @@ _.Zones =
 						i(113177),
 					}),
 					i(115343, { -- Haephest's Satchel
-						["g"] = {
+						["groups"] = {
 							q(36309, { -- The Strength of Iron
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 75043, -- Karnoth
 							}),
 						},
@@ -120,7 +120,7 @@ _.Zones =
 						["requireSkill"] = 164, -- Blacksmithing
 					}),
 					q(36311, { -- Father and Son
-						["g"] = {
+						["groups"] = {
 							i(115356, { -- Draenor Blacksmithing
 								["collectible"] = false,
 							}),

@@ -862,7 +862,7 @@ _.Zones =
 								un(34, i(10706)),	-- Nightscale Girdle
 							})),
 							un(40, q(2853, { -- Master of the Wild Leather (Feralas)
-								["g"] = {
+								["groups"] = {
 									un(2, i(8408)), -- Pattern: Wild Leather Cloak
 								},
 								["qg"] = 7852, -- Pratt McGrubben                
@@ -890,31 +890,31 @@ _.Zones =
 								un(34, i(10652)),	-- Will of the Mountain Giant
 							})),
 							un(40, q(2851, { -- Wild Leather Boots (Feralas)
-								["g"] = {
+								["groups"] = {
 									un(2, i(8406)), -- Pattern: Wild Leather Boots
 								},
 								["qg"] = 7852, -- Pratt McGrubben				
 							})),
 							un(40, q(2850, { -- Wild Leather Helmet (Feralas)
-								["g"] = {
+								["groups"] = {
 									un(2, i(8405)), -- Pattern: Wild Leather Helmet
 								},
 								["qg"] = 7852, -- Pratt McGrubben				
 							})),
 							un(40, q(2852, { -- Wild Leather Leggings (Feralas)
-								["g"] = {
+								["groups"] = {
 									un(2, i(8407)), -- Pattern: Wild Leather Leggings
 								},
 								["qg"] = 7852, -- Pratt McGrubben				
 							})),
 							un(40, q(2848, { -- Wild Leather Shoulders (Feralas)
-								["g"] = {
+								["groups"] = {
 									un(2, i(8403)), -- Pattern: Wild Leather Shoulders
 								},
 								["qg"] = 7852, -- Pratt McGrubben				
 							})),
 							un(40, q(2849, { -- Wild Leather Vest (Feralas)
-								["g"] = {
+								["groups"] = {
 									un(2, i(8404)), -- Pattern: Wild Leather Vest
 								},
 								["qg"] = 7852, -- Pratt McGrubben				

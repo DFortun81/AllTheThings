@@ -1748,7 +1748,7 @@ _.Zones =
 						i(6097),	-- Acolyte's Shirt
 					}),
 					n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
-						["g"] = {
+						["groups"] = {
 							i(38453),	-- Shield of the Lion-Hearted
 							i(38455),	-- Hammer of hte Alliance Vanguard
 							i(38457),	-- Sawed-Off Hand Cannon
@@ -1764,7 +1764,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					n(32774, {	-- Sebastian Crane <Horde Expedition Quartermaster>
-						["g"] = {
+						["groups"] = {
 							i(38452),	-- Bulwark of the Warchief
 							i(38454),	-- Warsong Punisher
 							i(38456),	-- Sin'dorei Recurve Bow

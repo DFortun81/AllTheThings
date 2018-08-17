@@ -1138,28 +1138,28 @@ _.Zones =
 							["sourceQuests"] = { 44112 }, -- Trading for Dreams
 						}),
 						n(-181, { -- Blacksmithing
-							["g"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
+							["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
 								q(39680, { -- Between the Hammer...
-									["g"] = {
+									["groups"] = {
 										recipe(182963), -- Plans: Leystone Waistguard (Rank 2)
 									},
 									["qg"] = 96763, -- Saris Swifthammer
 									["sourceQuest"] = 39702, -- Legend of Black Rook Hold
 								}),
 								q(39726, { -- ...And the Anvil
-									["g"] = {},
+									["groups"] = {},
 									["qg"] = 96763, -- Saris Swifthammer
 									["sourceQuest"] = 39702, -- Legend of Black Rook Hold
 								}),
 								q(39729, { -- The Knowledge of Black Rook
-									["g"] = {},
+									["groups"] = {},
 									["qg"] = 96763, -- Saris Swifthammer
 									["requireSkill"] = 164,
 									["sourceQuests"] = { 39680, 39726 }, -- Between the Hammer..., ...And the Anvil
 								}),
 								n(-34, { -- World Quests
 									q(41634, { -- Work Order: Leystone Armguards
-										["g"] = {
+										["groups"] = {
 											i(123936, { -- Recipe: Leystone Armguards (Rank 3)
 												recipe(182970), -- Recipe: Leystone Armguards (Rank 3)
 											}),

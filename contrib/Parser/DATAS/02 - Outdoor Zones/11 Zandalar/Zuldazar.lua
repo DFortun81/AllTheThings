@@ -13,11 +13,7 @@ _.Zones =
 								o(288596, {	-- Cache of Secrets	
 									["questID"] = 51338,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
-								o(284454, {	-- Da White Shark's Bounty	
-									["questID"] = 50947,
-									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(281898, {	-- Dazar's Forgotten Chest	
 									["questID"] = 50707,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
@@ -479,10 +475,11 @@ _.Zones =
 					},
 				}),
 				n(-16, {	-- Rares
-					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
+					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(129961, {	-- Atal'zul Gotaka		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								sz(12944, 1),	-- Atal'zul Gotaka
 								i(161042),-- Gotaka's Wallopers
 							}),
 							["questID"] = 50280,
@@ -505,11 +502,15 @@ _.Zones =
 							}),	
 							["questID"] = 50034,	
 						}),
-						n(133190, {	-- Daggerjaw [Missing]		
+						n(133190, {	-- Daggerjaw
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+								i(160952),	-- Daggerjaw's Incisor
+							}),
 							["questID"] = 50269,
 						}),		
 						n(136428, {	-- Dark Chronicler
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								sz(12944, 3),	-- Dark Chronicler
 								i(160979),	-- Ancient Chronicler's Focus
 							}),
 							["questID"] = 51083,
@@ -519,12 +520,6 @@ _.Zones =
 								i(160958),	-- Darkspeaker Scepter
 							}),	
 							["questID"] = 50693,
-						}),		
-						n(129954, {	-- Gahz'ralka
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(161043),	-- Relentless Hydra Legguards
-							}),
-							["questID"] = 50439,	
 						}),		
 						n(133155, {	-- G'Naat
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -544,9 +539,11 @@ _.Zones =
 							}),	
 							["questID"] = 50677,
 						}),		
-						n(134637, {	-- Headhunter Lee'za [Missing]		
+						--[[ May not have transitioned from Beta to Live
+						n(134637, {	-- Headhunter Lee'za [MissingL]		
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
+						--]]
 						n(126637, {	-- Kandak		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160984),	-- Sauroscale Cloak of Adaptation
@@ -558,12 +555,6 @@ _.Zones =
 								i(161112),	--  Hillshaker Armplates
 							}),
 							["questID"] = 50159,	
-						}),		
-						n(120899, {	-- Kul'krazahn		
-							["questID"] = 48333,
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(160947),	-- Amani Berserker's Chopper
-							}),
 						}),		
 						n(131233, {	-- Lei-zhi
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -578,7 +569,8 @@ _.Zones =
 							["questID"] = 50281,
 						}),		
 						n(136413, {	-- Syrawon the Dominus
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								sz(12944, 4},	-- Syrawon the Dominus
 								i(161047),	-- Shadow Wind Leggings
 							}),
 							["questID"] = 51080,	
@@ -601,7 +593,10 @@ _.Zones =
 							}),
 							["questID"] = 49004,	
 						}),		
-						n(130643, {	-- Twisted Child of Rezan [Missing]		
+						n(130643, {	-- Twisted Child of Rezan
+							["groups"] = { -- Level 120 mob which means no gear scaling	
+								i(162620),	-- Devilbone Shoulderguards
+							},
 							["questID"] = 50847,	
 						}),		
 						n(122004, {	-- Umbra'jin
@@ -610,7 +605,7 @@ _.Zones =
 							}),
 							["questID"] = 47567,
 						}),		
-						n(134717, {	-- Umbra'rix [Missing]		
+						n(134717, {	-- Umbra'rix [MissingL]		
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(134048, {	-- Vukuba
@@ -630,12 +625,13 @@ _.Zones =
 							["questID"] = 50438,	
 						}),		
 						n(131476, {	-- Zayoos		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								sz(12944, 5},	-- Zayoos
 								i(161125),	-- Kaja-fied Banana
 							}),	
 							["questID"] = 49972,
 						}),		
-						n(136702, {	-- Zu'shin the Infused [Missing]		
+						n(136702, {	-- Zu'shin the Infused [MissingL]		
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 					},

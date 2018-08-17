@@ -825,7 +825,7 @@ _.Zones =
 						}),
 					})),
 					n(50381, {	-- Misty Merriweather <Hide & Leather Trader>
-						["g"] = {						
+						["groups"] = {						
 							i(67095), -- Pattern: Assassin's Chestplate
 							i(67070), -- Pattern: Belt of Nefarious Whispers
 							i(67084), -- Pattern: Charscale Leg Armor
@@ -917,7 +917,7 @@ _.Zones =
 						}),
 					})),
 					n(50172, {	-- Threm Blackscalp <Hide & Leather Trader>
-						["g"] = {						
+						["groups"] = {						
 							i(67095), -- Pattern: Assassin's Chestplate
 							i(67070), -- Pattern: Belt of Nefarious Whispers
 							i(67084), -- Pattern: Charscale Leg Armor

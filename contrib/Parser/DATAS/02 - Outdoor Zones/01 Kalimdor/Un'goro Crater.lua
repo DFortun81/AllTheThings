@@ -20,7 +20,7 @@ _.Zones =
 					p(405), 	-- Tree Python
 				}),
 				n(-17, {	-- Quests
-					["g"] = {
+					["groups"] = {
 						q(24735, {	-- A Little Help From My Friends
 							["groups"] = {
 								i(53566),	-- Woodland Leggings
@@ -821,9 +821,9 @@ _.Zones =
 					}),
 				}),
 				n(0,   {	-- Zone Drops
-					["g"] = {
+					["groups"] = {
 						i(142377, {	-- Badly Broken Dark Spear
-							["g"] = {
+							["groups"] = {
 								q(45044, {	-- Weapon No More
 									["qgs"] = {
 										9376,	-- Blazerunner

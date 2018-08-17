@@ -95,7 +95,7 @@ _.Zones =
 					},
 				}),
 				n(-16, {	-- Rares
-					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
+					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						o(277333, {	-- Ancient Sarcophagus		
 							["questID"] = 49137,
@@ -258,7 +258,7 @@ _.Zones =
 							}),	
 							["questID"] = 48981,	
 						}),		
-						n(137704, {	-- Matron Morana [Missing]	
+						n(137704, {	-- Matron Morana [MissingL]	
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(130138, {	-- Nevermore		
@@ -294,7 +294,7 @@ _.Zones =
 							}),	
 							["questID"] = 51748,	
 						}),		
-						n(137665, {	-- Soul Goliath	[Missing]
+						n(137665, {	-- Soul Goliath	[MissingL]
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(129950, {	-- Talon		

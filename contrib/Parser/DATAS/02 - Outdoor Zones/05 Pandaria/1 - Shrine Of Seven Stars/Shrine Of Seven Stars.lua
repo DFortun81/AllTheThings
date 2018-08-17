@@ -127,7 +127,7 @@ _.Zones =
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
 					}),
 					q(32683, { -- So You Want to Be a Blacksmith...
-						["g"] = {},
+						["groups"] = {},
 						["qg"] = 64085, -- Cullen Hammerbrow
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 164, -- Blacksmithing
@@ -408,7 +408,7 @@ _.Zones =
 						i(99206),	-- Helmet of the Prehistoric MarauderWarrior
 					}),
 					n(64085, { -- Cullen Hammerbrow <Blacksmithing Supplies>
-						["g"] = {
+						["groups"] = {
 							i(84158), -- Plans: Contender's Revenant Belt
 							i(84159), -- Plans: Contender's Revenant Boots
 							i(84160), -- Plans: Contender's Revenant Bracers

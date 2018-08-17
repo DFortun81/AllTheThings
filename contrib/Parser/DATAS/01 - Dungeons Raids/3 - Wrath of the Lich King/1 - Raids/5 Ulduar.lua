@@ -94,7 +94,7 @@ _.Instances =
 								33271, -- General Vezax
 								33288, -- Yogg-Saron
 							},
-							["g"] = {
+							["groups"] = {
 								i(45100), -- Pattern: Belt of Arctic Life
 								i(45094), -- Pattern: Belt of Dragons
 								i(45101), -- Pattern: Boots of Wintry Endurance

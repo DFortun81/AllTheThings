@@ -613,7 +613,7 @@ _.Instances =
 							}),
 							cr(123371, e(1992, { -- Garothi Worldbreaker
 								i(151713, { -- Recipe: Empyrial Breastplate (Rank 3)
-									["g"] = {
+									["groups"] = {
 										recipe(247714), -- Recipe: Empyrial Breastplate (Rank 3)
 									},
 									["requireSkill"] = 164, -- Blacksmithing
@@ -1006,7 +1006,7 @@ _.Instances =
 							}),
 							cr(123371, e(1992, { -- Garothi Worldbreaker
 								i(151713, { -- Recipe: Empyrial Breastplate (Rank 3)
-									["g"] = {
+									["groups"] = {
 										recipe(247714), -- Recipe: Empyrial Breastplate (Rank 3)
 									},
 									["requireSkill"] = 164, -- Blacksmithing

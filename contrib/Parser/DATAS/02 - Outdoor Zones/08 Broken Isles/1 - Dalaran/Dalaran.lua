@@ -390,15 +390,15 @@ _.Zones =
 						["requireSkill"] = 171,
 					}),
 					n(-181, { -- Blacksmithing
-						["g"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
+						["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
 							q(38499, { -- Strange New Ores
-								["g"] = {
+								["groups"] = {
 									recipe(195097), -- Legion Blacksmithing
 								},
 								["qg"] = 92183, -- Alard Schmied
 							}),
 							q(39681, { -- The Properties of Leystone
-								["g"] = {
+								["groups"] = {
 									recipe(182928), -- Recipe: Leystone Armguards (Rank 1)
 									recipe(182929),	-- Recipe: Leystone Waistguard (Rank 1)
 								},
@@ -422,12 +422,12 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 							}),
 							q(38502, { -- The Methods of the Nightfallen
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 97261, -- Alard Schmied
 								["sourceQuest"] = 39681, -- The Properties of Leystone
 							}),
 							q(38501, { -- Hatecoil Hammerwork
-								["g"] = {
+								["groups"] = {
 									recipe(182935), -- Recipe: Leystone Breastplate (Rank 1)
 									recipe(182930), -- Recipe: Leystone Pauldrons (Rank 1)
 								},
@@ -435,27 +435,27 @@ _.Zones =
 								["sourceQuest"] = 39681, -- The Properties of Leystone
 							}),
 							q(38505, { -- Engineers: Not COMPLETELY Useless
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 97261, -- Alard Schmied
 								["sourceQuests"] = { 38501, 38502 }, -- Hatecoil Hammerwork, The Methods of the Nightfallen
 							}),
 							q(38506, { -- Chicken Scratch
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 92194, -- Timofey Oshenko
 								["sourceQuest"] = 38505, -- Engineers: Not COMPLETELY Useless
 							}),
 							q(38507, { -- Secrets of Leysmithing
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 92195, -- Professor Pallin
 								["sourceQuest"] = 38506, -- Chicken Scratch
 							}),
 							q(38515, { -- Nature Provides
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 97261, -- Alard Schmied
 								["sourceQuest"] = 38507, -- Secrets of Leysmithing
 							}),
 							q(38500, { -- Leysmithing Mastery
-								["g"] = {
+								["groups"] = {
 									recipe(182934), -- Recipe: Leystone Boots (Rank 1)
 									recipe(182933), -- Recipe: Leystone Gauntlets (Rank 1)
 									recipe(182931), -- Recipe: Leystone Greaves (Rank 1)
@@ -465,54 +465,54 @@ _.Zones =
 								["sourceQuest"] = 38515, -- Nature Provides
 							}),
 							q(38563, { -- Flower-Pickers and Potion-Quaffers
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 97261, -- Alard Schmied
 								["sourceQuest"] = 38500, -- Leysmithing Mastery
 							}),
 							q(38513, { -- The Highmountain Smiths
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 92183, -- Alard Schmied
 								["sourceQuest"] = 38563, -- Flower-Pickers and Potion-Quaffers
 							}),
 							q(38522, { -- Not Just Weapons and Armor
-								["g"] = {
+								["groups"] = {
 									recipe(182999),	-- Recipe: Leystone Hoofplates
 								},
 								["qg"] = 92183, -- Alard Schmied
 								["sourceQuest"] = 38518, -- From One Master to Another
 							}),
 							q(38523, { -- Leystone Hoofplates
-								["g"] = {
+								["groups"] = {
 									recipe(182999),	-- Recipe: Leystone Hoofplates
 								},
 								["qg"] = 92183, -- Alard Schmied
 								["sourceQuest"] = 38522, -- Not Just Weapons and Armor
 							}),
 							q(39702, { -- Legend of Black Rook Hold
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 92183, -- Alard Schmied
 								["sourceQuest"] = 38523, -- Leystone Hoofplates
 							}),
 							q(38564, { -- A Sweet Bargain
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 92183, -- Alard Schmied
 								["sourceQuest"] = 39729, -- The Knowledge of Black Rock
 							}),
 							q(44449, { -- Advanced Quenching
-								["g"] = {
+								["groups"] = {
 									recipe(182969), -- Recipe: Leystone Breastplate (Rank 2)
 								},
 								["qg"] = 92183, -- Alard Schmied
 								["sourceQuest"] = 38564, -- A Sweet Bargain
 							}),
 							q(38524, { -- Felsmith Nal'ryssa
-								["g"] = {},
+								["groups"] = {},
 								["qg"] = 92183, -- Alard Schmied
 								["sourceQuest"] = 44449, -- Advanced Quenching
 							}),
 							n(-34, { -- World Quests
 								q(41638, { -- Work Order: Leystone Gauntlets
-									["g"] = {
+									["groups"] = {
 										i(137606, { -- Recipe: Leystone Gauntlets (Rank 3)
 											recipe(191930), -- Recipe: Leystone Gauntlets (Rank 3)
 										}),
@@ -7689,13 +7689,13 @@ _.Zones =
 					n(107109, { -- Xur'ios <Vaultkeeper of the Void>
 						currency(1275, { -- Curious Coin
 							i(136702, { -- Formula: Soul Fibril
-								["g"] = {
+								["groups"] = {
 									recipe(209507), -- Formula: Soul Fibril
 								},
 								["requireSkill"] = 333, -- Enchanting
 							}),
 							i(136699, { -- Recipe: Flamespike
-								["g"] = {
+								["groups"] = {
 									recipe(209499), -- Recipe: Flamespike
 								},
 								["requireSkill"] = 164, -- Blacksmithing
@@ -8032,7 +8032,7 @@ _.Zones =
 									i(128898),	-- Battlebound Girdle
 								}),
 								i(123949, { -- Recipe: Demonsteel Waistguard (Rank 3)
-									["g"] = {
+									["groups"] = {
 										recipe(182983), -- Recipe: Demonsteel Waistguard (Rank 3)
 									},
 									["requireSkill"] = 164, -- Blacksmithing

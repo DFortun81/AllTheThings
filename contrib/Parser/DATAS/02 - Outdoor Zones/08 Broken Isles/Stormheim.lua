@@ -969,7 +969,7 @@ _.Zones =
 						n(-38, { -- Professions
 							n(-181, { -- Blacksmithing
 								q(41636, { -- Work Order: Leystone Breastplate
-									["g"] = {
+									["groups"] = {
 										i(123939, { -- Recipe: Leystone Breastplate
 											recipe(182973), -- Recipe: Leystone Breastplate
 										}),
@@ -1375,25 +1375,25 @@ _.Zones =
 					}),
 					n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
 						i(136698, { -- Recipe: Consecrated Spike
-							["g"] = {
+							["groups"] = {
 								recipe(209498), -- Recipe: Consecrated Spike
 							},
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(123954, { -- Recipe: Demonsteel Boots (Rank 3)
-							["g"] = {
+							["groups"] = {
 								recipe(182988), -- Recipe: Demonsteel Boots (Rank 3)
 							},
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(123951, { -- Recipe: Demonsteel Greaves (Rank 3)
-							["g"] = {
+							["groups"] = {
 								recipe(182985), -- Recipe: Demonsteel Greaves (Rank 3)
 							},
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						i(123951, { -- Recipe: Demonsteel Helm (Rank 3)
-							["g"] = {
+							["groups"] = {
 								recipe(182986), -- Recipe: Demonsteel Helm (Rank 3)
 							},
 							["requireSkill"] = 164, -- Blacksmithing

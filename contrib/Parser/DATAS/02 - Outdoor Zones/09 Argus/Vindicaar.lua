@@ -721,7 +721,7 @@ _.Zones =
 				n(-2, { -- Vendors
 					n(127120, { -- Vindicator Jaelaana <Army of the Light Emissary>
 						i(151712, { -- Recipe: Empyrial Breastplate (Rank 2)
-							["g"] = {
+							["groups"] = {
 								recipe(247713), -- Recipe: Empyrial Breastplate (Rank 2)
 							},
 							["requireSkill"] = 164, -- Blacksmithing

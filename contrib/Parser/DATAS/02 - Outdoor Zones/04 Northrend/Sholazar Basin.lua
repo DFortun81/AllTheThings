@@ -219,7 +219,7 @@ _.Zones =
 					},
 				}),
 				n(0, { -- Zone Drop
-					["g"] = {
+					["groups"] = {
 						i(41122, { -- Plans: Reinforced Cobalt Chestpiece
 							["crs"] = {
 								28123, -- Venture Co. Excavator

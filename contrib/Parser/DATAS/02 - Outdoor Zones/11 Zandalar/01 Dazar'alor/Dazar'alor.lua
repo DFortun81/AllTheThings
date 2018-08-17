@@ -8,7 +8,14 @@ _.Zones =
 			["groups"] = {
 				n(-4, {	-- Achievements
 					["groups"] = {
-					},
+						ach(12851, {	-- Treasures of Zuldazar
+							["groups"] = {
+								o(284454, {	-- Da White Shark's Bounty	
+									["questID"] = 50947,
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								}),
+							},
+						}),
 				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
@@ -243,9 +250,28 @@ _.Zones =
 					},
 				}),
 				n(-16, {	-- Rares
-					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
+					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
-						-- TO-DO Put in quests that are related to the city here later.  For now leave in main zone
+						n(133208, {	-- Da White Shark
+							["groups"] = {
+								sz(12851, 7),	-- Da White Shark's Bounty
+							},
+							["questID"] = 50948,
+							--["questID"] = 50947, -- This is the unlock for actual chest
+						}),
+						n(129954, {	-- Gahz'ralka
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								sz(12944, 2),	-- Gahz'ralka
+								i(161043),	-- Relentless Hydra Legguards
+							}),
+							["questID"] = 50439,	
+						}), 
+						n(120899, {	-- Kul'krazahn
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(160947),	-- Amani Berserker's Chopper
+							}),		
+							["questID"] = 48333,
+						}),	
 					},
 				}),
 				n(-212, {	-- Treasure Chest

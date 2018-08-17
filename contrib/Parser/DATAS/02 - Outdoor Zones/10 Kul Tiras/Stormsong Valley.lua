@@ -373,7 +373,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				n(-16, {	-- Rares
-					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
+					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(134147, {	-- Beehemoth		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -449,8 +449,13 @@ _.Zones =
 							}),
 							["questID"] = 52460,	
 						}),		
-						n(141039, {	-- Ice Sickle [Missing]
-							["coord"] = { 63.5, 83.4 },
+						n(141039, {	-- Ice Sickle
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+								i(154464),
+							}),
+							["coords"] = { 
+								{63.5, 83.4 },
+							},
 							["questID"] = 52327,	
 						}),		
 						n(141043, {	-- Jakala the Cruel		
@@ -482,7 +487,7 @@ _.Zones =
 							}),	
 							["questID"] = 52461,	
 						}),		
-						n(137649, {	-- Pest Remover Mk. II [Missing]
+						n(137649, {	-- Pest Remover Mk. II [MissingL]
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(139298, {	-- Pinku'shon		
@@ -503,7 +508,7 @@ _.Zones =
 							}),	
 							["questID"] = 50725,	
 						}),		
-						n(132047, {	-- Reinforced Hullbreaker [Missing]	
+						n(132047, {	-- Reinforced Hullbreaker [MissingL]	
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(139328, {	-- Sabertron		
@@ -512,10 +517,13 @@ _.Zones =
 							}),	
 							["questID"] = 51956,	
 						}),		
-						n(139988, {	-- Sandfang	[Missing]
+						n(139988, {	-- Sandfang
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(154389),	-- Abyssal-Serpent Pauldrons
+							}),
 							["questID"] = 52125,	
 						}),		
-						n(139515, {	-- Sandscour [Missing]		
+						n(139515, {	-- Sandscour [MissingL]		
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						n(138938, {	-- Seabreaker Skoloth		
@@ -524,7 +532,7 @@ _.Zones =
 							}),	
 							["questID"] = 51757,	
 						}),		
-						n(140997, {	-- Severus the Outcast [Missing]	
+						n(140997, {	-- Severus the Outcast [MissingL]	
 							["questID"] = 50938,	
 						}),		
 						n(141143, {	-- Sister Absinthe		
@@ -585,7 +593,7 @@ _.Zones =
 							}),	
 							["questID"] = 50819,	
 						}),		
-						n(129803, {	-- Whiplash [Missing]
+						n(129803, {	-- Whiplash [MissingL]
 							["questID"] = 52296,	
 						}),		
 						n(142088, {	-- Whirlwing		

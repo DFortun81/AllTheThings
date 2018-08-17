@@ -16,19 +16,19 @@ profession(164, { -- Blacksmithing
 	tier(1, { -- Classic
 		--[[n(-2, { -- Vendors
 			n(10857, { -- Argent Quartermaster Lightspark (Western Plaguelands)
-				["g"] = {
+				["groups"] = {
 					i(19203), -- Plans: Girdle of the Dawn
 					i(19205), -- Plans: Gloves of the Dawn
 				},
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(50129, { -- Daleohm (Winterspring)
-				["g"] = {
+				["groups"] = {
 					i(12836), -- Plans: Frostguard
 				},
 			}),
 			n(38561, { -- Dram Riverhorn (Un'Goro Crater)
-				["g"] = {
+				["groups"] = {
 					i(12707), -- Plans: Runic Plate Boots
 					i(12714), -- Plans: Runic Plate Helm
 					i(12719), -- Plans: Runic Plate Leggings
@@ -36,67 +36,67 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(8176, { -- Gharash (Swamp of Sorrows)
-				["g"] = {
+				["groups"] = {
 					i(7995), -- Plans: Mithril Scale Bracers
 				},
 				["races"] = HORDE_ONLY,
 			}),
 			n(132139, { -- Hagras Wartaker (Silithus)
-				["g"] = {
+				["groups"] = {
 					i(12162), -- Plans: Hardened Iron Shortsword
 				},
 				["races"] = HORDE_ONLY,
 			}),
 			n(8161, { -- Harggan (The Hinterlands)
-				["g"] = {
+				["groups"] = {
 					i(7995), -- Plans: Mithril Scale Bracers
 				},
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(1741, { -- Jannos Ironwill (Arathi Highlands)
-				["g"] = {
+				["groups"] = {
 					i(10858), -- Plans: Solid Iron Maul
 				},
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(2483, { -- Jaquilina Dramet (Northern Stranglethorn)
-				["g"] = {
+				["groups"] = {
 					i(12164), -- Plans: Massive Iron Axe
 				},
 			}),
 			n(2843, { -- Jutak (The Cape of Stranglethorn)
-				["g"] = {
+				["groups"] = {
 					i(12162), -- Plans: Hardened Iron Shortsword
 				},
 			}),
 			n(5512, { -- Kaita Deepforge (Stormwind City)
-				["g"] = {
+				["groups"] = {
 					i(12162), -- Plans: Hardened Iron Shortsword
 				},
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(5411, { -- Krinkle Goodsteel (Tanaris)
-				["g"] = {
+				["groups"] = {
 					i(6047), -- Plans: Golden Scale Coif
 				},
 			}),
 			n(52641, { -- Layna Karner (Darnassus)
-				["g"] = {
+				["groups"] = {
 					i(12162), -- Plans: Hardened Iron Shortsword
 				},
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(15471, { -- Lieutenant General Andorov (Ruins of Ahn'Qiraj)
-				["g"] = {
+				["groups"] = {
 					i(22219), -- Plans: Jagged Obsidian Shield
 					i(22221), -- Plans: Obsidian Mail Tunic
 				},
 				["description"] = "This NPC spawns after you defeat Kurinnaxx, the first boss in the Ruins of Ahn'Qiraj. He will aid you in battle of the last boss, and if he lives, will sell a few limited-quantity items for two minutes.",
 			}),
 			n(12944, { -- Lokhtos Darkbargainer (Blackrock Depths)
-				["g"] = {
+				["groups"] = {
 					i(18628, { -- Thorium Brotherhood Contract
-						["g"] = {
+						["groups"] = {
 							q(7604, { -- A Binding Contract
 								i(18592), -- Plans: Sulfuron Hammer
 							}),
@@ -120,7 +120,7 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(11278, { -- Magnus Frostwake (Western Plaguelands)
-				["g"] = {
+				["groups"] = {
 					i(8030), -- Plans: Ebon Shiv
 					i(12823), -- Plans: Huge Thorium Battleaxe
 					i(12819), -- Plans: Ornate Thorium Handaxe
@@ -128,31 +128,31 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(11557, { -- Meilosh (Felwood)
-				["g"] = {
+				["groups"] = {
 					i(19202), -- Plans: Heavy Timbermaw Belt
 					i(19204), -- Plans: Heavy Timbermaw Boots
 				},
 			}),
 			n(8878, { -- Muuran (Desolace)
-				["g"] = {
+				["groups"] = {
 					i(10858), -- Plans: Solid Iron Maul
 				},
 				["races"] = HORDE_ONLY,
 			}),
 			n(46359, { -- Punra (Orgrimmar)
-				["g"] = {
+				["groups"] = {
 					i(12162), -- Plans: Hardened Iron Shortsword
 				},
 				["races"] = HORDE_ONLY,
 			}),
 			n(11536, { -- Quartermaster Miranda Breechlock (EPL)
-				["g"] = {
+				["groups"] = {
 					i(19203), -- Plans: Girdle of the Dawn
 					i(19205), -- Plans: Gloves of the Dawn
 				},
 			}),
 			un(43, n(14921, { -- Rin'wosho the Trader (Northern Stranglethorn)
-				["g"] = {
+				["groups"] = {
 					un(1, i(19776)), -- Plans: Bloodsoul Breastplate
 					un(1, i(19778)), -- Plans: Bloodsoul Gauntlets
 					un(1, i(19777)), -- Plans: Bloodsoul Shoulders
@@ -162,13 +162,13 @@ profession(164, { -- Blacksmithing
 				},
 			})),
 			n(3356, { -- Sumi (Orgrimmar)
-				["g"] = {
+				["groups"] = {
 					i(12162), -- Plans: Hardened Iron Shortsword
 				},
 				["races"] = HORDE_ONLY,
 			}),
 			n(15176, { -- Vargus (Silithus)
-				["g"] = {
+				["groups"] = {
 					i(22209), -- Plans: Heavy Obsidian Belt
 					i(22768), -- Plans: Ironvine Belt
 					i(22766), -- Plans: Ironvine Breastplate
@@ -177,13 +177,13 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(1146, { -- Vharr (Northern Stranglethorn)
-				["g"] = {
+				["groups"] = {
 					i(12164), -- Plans: Massive Iron Axe
 				},
 				["races"] = HORDE_ONLY,
 			}),
 			n(2482, { -- Zarena Cromwind (The Cape of Stranglethorn)
-				["g"] = {
+				["groups"] = {
 					i(12163), -- Plans: Moonsteel Broadsword
 				},
 			}),
@@ -214,7 +214,7 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 45051, -- Reverse Blacksmithing
 			}),
 			q(45057, { -- Saving My Head
-				["g"] = {
+				["groups"] = {
 					i(142383), -- Plans: Darkspear
 				},
 				["qg"] = 115923, -- Ko'Zan
@@ -225,34 +225,34 @@ profession(164, { -- Blacksmithing
 				}),
 			}),
 			q(44927, { -- Worth Its Weight in Steel
-				["g"] = {
+				["groups"] = {
 					i(142346), -- Plans: Bleakwood Hew
 				},
 				["qg"] = 115805, -- Hoddruc Bladebender
 				["sourceQuests"] = { 44926 }, -- A Familiar Axe to Grind
 			}),
 			q(44952, { -- Blackrock Depths: Jewel of the Depths (Winterspring)
-				["g"] = {
+				["groups"] = {
 					i(142357), -- Plans: Dawn's Edge
 				},
 				["qg"] = 11184, -- Wixxrak
 			}),
 			q(2751, { -- Barbaric Battlements
-				["g"] = {
+				["groups"] = {
 					i(7979), -- Plans: Barbaric Iron Breastplate
 				},
 				["qg"] = 7790, -- Orokk Omosh
 				["races"] = HORDE_ONLY,
 			}),
 			q(1618, { -- Gearing Redridge
-				["g"] = {
+				["groups"] = {
 					i(6735), -- Plans: Ironforge Breastplate
 				},
 				["qg"] = 6031, -- Tormus Deepforge
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(2752, { -- On Iron Pauldrons
-				["g"] = {
+				["groups"] = {
 					i(7978), -- Plans: Barbaric Iron Pauldrons
 				},
 				["qg"] = 7790, -- Orokk Omosh
@@ -260,7 +260,7 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			q(2753, { -- Trampled Under Foot
-				["g"] = {
+				["groups"] = {
 					i(7981), -- Plans: Barbaric Iron Boots
 				},
 				["qg"] = 7790, -- Orokk Omosh
@@ -268,7 +268,7 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			q(2754, { -- Horns of Frenzy
-				["g"] = {
+				["groups"] = {
 					i(7980), -- Plans: Barbaric Iron Helm
 				},
 				["qg"] = 7790, -- Orokk Omosh
@@ -276,7 +276,7 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			q(2755, { -- Joys of Omosh
-				["g"] = {
+				["groups"] = {
 					i(7982), -- Plans: Barbaric Iron Gloves
 				},
 				["qg"] = 7790, -- Orokk Omosh
@@ -696,15 +696,15 @@ profession(164, { -- Blacksmithing
 		n(-10032, { -- Appearances
 			n(-318, { -- Armor
 				n(-582, { -- Armorsmith
-					["g"] = {
+					["groups"] = {
 						n(-45, { -- Mail
-							["g"] = {
+							["groups"] = {
 								-- Classic --
 								un(5, i(30070)), -- Windforged Leggings
 							},
 						}),
 						n(-46, { -- Plate
-							["g"] = {
+							["groups"] = {
 								-- Classic --
 								un(5, i(30069)), -- Earthforged Leggings
 							},
@@ -849,11 +849,11 @@ profession(164, { -- Blacksmithing
 				}),
 			}),
       n(-319, { -- Weapons
-        ["g"] = {
+        ["groups"] = {
           n(-578, { -- Weaponsmith
-            ["g"] = {
+            ["groups"] = {
               n(-579, { -- Master Axesmith
-                ["g"] = {
+                ["groups"] = {
                   i(12798), -- Annihilator
                   i(12784), -- Arcanite Reaper
                   i(17016), -- Dark Iron Destroyer
@@ -862,7 +862,7 @@ profession(164, { -- Blacksmithing
                 },
               }),
               n(-580, { -- Master Hammersmith
-                ["g"] = {
+                ["groups"] = {
                   i(19170), -- Ebon Hand
                   un(8, i(12776)), -- Enchanted Battlehammer
                   i(12796), -- Hammer of the Titans
@@ -872,7 +872,7 @@ profession(164, { -- Blacksmithing
                 },
               }),
               n(-581, { -- Master Swordsmith
-                ["g"] = {
+                ["groups"] = {
                   i(12790), -- Arcanite Champion
                   i(19168), -- Blackguard
                   i(12777), -- Blazing Rapier
@@ -941,7 +941,7 @@ profession(164, { -- Blacksmithing
 	tier(2, { -- The Burning Crusade
 		--[[n(-2, { -- Vendors
 			n(19662, { -- Aaron Hollman (Shattrath City)
-				["g"] = {
+				["groups"] = {
 					i(23591), -- Plans: Adamantite Cleaver
 					i(23592), -- Plans: Adamantite Dagger
 					i(23590), -- Plans: Adamantite Maul
@@ -950,7 +950,7 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(16713, { -- Arras (The Exodar)
-				["g"] = {
+				["groups"] = {
 					i(23591), -- Plans: Adamantite Cleaver
 					i(23592), -- Plans: Adamantite Dagger
 					i(23590), -- Plans: Adamantite Maul
@@ -959,7 +959,7 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(16670, { -- Eriden (Silvermoon City)
-				["g"] = {
+				["groups"] = {
 					i(23591), -- Plans: Adamantite Cleaver
 					i(23592), -- Plans: Adamantite Dagger
 					i(23590), -- Plans: Adamantite Maul
@@ -968,7 +968,7 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			n(17904, { -- Fedryen Swiftspear (Zangarmarsh)
-				["g"] = {
+				["groups"] = {
 					i(23618), -- Plans: Adamantite Sharpening Stone
 					i(28632), -- Plans: Adamantite Weightstone
 					i(25526), -- Plans: Greater Rune of Warding
@@ -978,21 +978,21 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(16388, { -- Koren (Karazhan (Raid))
-				["g"] = {	
+				["groups"] = {	
 					i(31393), -- Plans: Iceguard Breastplate
 					i(31395), -- Plans: Iceguard Helm
 					i(31394), -- Plans: Iceguard Leggings
 				},
 			}),
 			n(114815, { -- Koren (Return to Karazhan)
-				["g"] = {	
+				["groups"] = {	
 					i(31393), -- Plans: Iceguard Breastplate
 					i(31395), -- Plans: Iceguard Helm
 					i(31394), -- Plans: Iceguard Leggings
 				},
 			}),
 			n(19342, { -- Krek Cragcrush (Shadowmoon Valley (Outland))
-				["g"] = {
+				["groups"] = {
 					i(23596), -- Plans: Adamantite Breastplate
 					i(23594), -- Plans: Adamantite Plate Bracers
 					i(23595), -- Plans: Adamantite Plate Gloves
@@ -1000,7 +1000,7 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			n(19694, { -- Loolruna (Zangarmarsh)
-				["g"] = {
+				["groups"] = {
 					i(23596), -- Plans: Adamantite Breastplate
 					i(23594), -- Plans: Adamantite Plate Bracers
 					i(23595), -- Plans: Adamantite Plate Gloves
@@ -1008,12 +1008,12 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(17657, { -- Logistics Officer Ulrike (Hellfire Peninsula)
-				["g"] = {
+				["groups"] = {
 					i(23619), -- Plans: Felsteel Shield Spike
 				},
 			}),
 			n(115546, { -- Lunelli (Shattrath City)
-				["g"] = {
+				["groups"] = {
 					i(142287), -- Plans: Great Earthforged Hammer
 					i(142286), -- Plans: Lavaforged Warhammer
 					i(142283), -- Plans: Skyforged Great Axe
@@ -1023,14 +1023,14 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(19373, { -- Mari Stonehand (Shadowmoon Valley (Outland))
-				["g"] = {
+				["groups"] = {
 					un(1, i(25847)), -- Plans: Eternium Rod
 					i(23638), -- Plans: Lesser Ward of Shielding
 				},
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(23159, { -- Okuno (Black Temple)
-				["g"] = {
+				["groups"] = {
 					i(32442), -- Plans: Shadesteel Bracers
 					i(32444), -- Plans: Shadesteel Girdle
 					i(32443), -- Plans: Shadesteel Greaves
@@ -1038,7 +1038,7 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(19321, { -- Quartermaster Endarin (Shattrath City)
-				["g"] = {
+				["groups"] = {
 					i(23601), -- Plans: Flamebane Bracers
 					i(23604), -- Plans: Flamebane Breastplate
 					i(23603), -- Plans: Flamebane Gloves
@@ -1046,7 +1046,7 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(19331, { -- Quartermaster Enuril (Shattrath City)
-				["g"] = {
+				["groups"] = {
 					i(23597), -- Plans: Enchanted Adamantite Belt
 					i(23598), -- Plans: Enchanted Adamantite Boots
 					i(23599), -- Plans: Enchanted Adamantite Breastplate
@@ -1054,20 +1054,20 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(17585, { -- Quartermaster Urgronn (Hellfire Peninsula)
-				["g"] = {
+				["groups"] = {
 					i(24002), -- Plans: Felsteel Shield Spike
 				},
 				["races"] = HORDE_ONLY,
 			}),
 			n(16583, { -- Rohok (Hellfire Peninsula)
-				["g"] = {
+				["groups"] = {
 					un(1, i(25847)), -- Plans: Eternium Rod
 					i(23638), -- Plans: Lesser Ward of Shielding
 				},
 				["races"] = HORDE_ONLY,
 			}),
 			n(138021, { -- Sally Boltwrench (Drustvar) [THIS MAY BE FALSE!]
-				["g"] = {
+				["groups"] = {
 					i(23596), -- Plans: Adamantite Breastplate
 					i(23591), -- Plans: Adamantite Cleaver
 					i(23592), -- Plans: Adamantite Dagger
@@ -1283,9 +1283,9 @@ profession(164, { -- Blacksmithing
 			}),
 			n(-319, { -- Weapons
 				n(-578, { -- Weaponsmith
-					["g"] = {
+					["groups"] = {
 						n(-579, { -- Master Axesmith
-							["g"] = {
+							["groups"] = {
 								un(5, i(28434), { -- Lunar Crescent
 									un(5, i(28435), { -- Mooncleaver
 										un(5, i(28436)), -- Bloodmoon
@@ -1299,7 +1299,7 @@ profession(164, { -- Blacksmithing
 							},
 						}),
 						n(-580, { -- Master Hammersmith
-							["g"] = {
+							["groups"] = {
 								un(5, i(28437), { -- Drakefist Hammer
 									un(5, i(28438), { -- Dragonmaw
 										un(5, i(28439)), -- Dragonstrike
@@ -1313,7 +1313,7 @@ profession(164, { -- Blacksmithing
 							},
 						}),
 						n(-581, { -- Master Swordsmith
-							["g"] = {
+							["groups"] = {
 								un(5, i(28425), { -- Fireguard
 									un(5, i(28426), { -- Blazeguard
 										un(5, i(28427)), -- Blazefury
@@ -1361,7 +1361,7 @@ profession(164, { -- Blacksmithing
 	tier(3, { -- Wrath of the Lich King
 		--[[n(-2, { -- Vendors
 			n(37687, { -- Alchemist Finklestein (Icecrown Citadel)
-				["g"] = {
+				["groups"] = {
 					i(49974), -- Plans: Boots of Kingly Upheaval
 					i(49972), -- Plans: Hellfrozen Bonegrinders
 					i(49971), -- Plans: Legplates of Painful Death
@@ -1371,25 +1371,25 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(32773, { -- Logistics Officer Brighton (Howling Fjord)
-				["g"] = {
+				["groups"] = {
 					i(44937), -- Plans: Titanium Plating
 				},
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(32564, { -- Logistics Officer Silverstone (Borean Tundra)
-				["g"] = {
+				["groups"] = {
 					i(44937), -- Plans: Titanium Plating
 				},
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(32565, { -- Gara Skullcrush (Borean Tundra)
-				["g"] = {
+				["groups"] = {
 					i(44938), -- Plans: Titanium Plating
 				},
 				["races"] = HORDE_ONLY,
 			}),
 			n(32774, { -- Sebastian Crane (Howling Fjord)
-				["g"] = {
+				["groups"] = {
 					i(44938), -- Plans: Titanium Plating
 				},
 				["races"] = HORDE_ONLY,
@@ -1667,7 +1667,7 @@ profession(164, { -- Blacksmithing
 	tier(4, { -- Cataclysm
 		--[[n(-2, { -- Vendors
 			n(16713, { -- Arras (The Exodar)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -1705,7 +1705,7 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(50382, { -- Brundall Chiselgut (Twilight Highlands)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -1743,7 +1743,7 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(53214, { -- Damek Bloombeard (Molten Front)
-				["g"] = {
+				["groups"] = {
 					i(70166), -- Plans: Brainsplinter
 					i(70169), -- Plans: Elementium-Edged Scalper
 					i(70168), -- Plans: Lightforged Elementium Hammer
@@ -1755,7 +1755,7 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(16670, { -- Eriden (Silvermoon City)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -1793,7 +1793,7 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			n(132139, { -- Hagras Wartaker (Silithus)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -1831,7 +1831,7 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			n(55684, { -- Jordan Smith (Stormwind City)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -1869,7 +1869,7 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(5512, { -- Kaita Deepforge (Stormwind City)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -1907,7 +1907,7 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(52641, { -- Layna Karner (Darnassus)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -1945,7 +1945,7 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(46359, { -- Punra (Orgrimmar)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -1983,7 +1983,7 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			n(4597, { -- Samuel Van Brunt (Undercity)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -2021,7 +2021,7 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			n(3356, { -- Sumi (Orgrimmar)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -2059,7 +2059,7 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			n(2999, { -- Taur Stonehoof (Thunder Bluff)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -2097,7 +2097,7 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
 			n(4259, { -- Thurgrum Deepforge (Ironforge)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -2135,7 +2135,7 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(45549, { -- Zido Helmbreaker (Orgrimmar)
-				["g"] = {
+				["groups"] = {
 					i(66100), -- Plans: Ebonsteel Belt Buckle
 					i(66113), -- Plans: Elementium Bonesplitter
 					i(66106), -- Plans: Elementium Deathplate
@@ -2317,7 +2317,7 @@ profession(164, { -- Blacksmithing
 	tier(5, { -- Mists of Pandaria
 		--[[n(-2, { -- Vendors
 			n(64599, { -- Ambersmith Zikk (Dread Wastes)
-				["g"] = {
+				["groups"] = {
 					i(83791), -- Plans: Breastplate of Ancient Steel
 					i(83792), -- Plans: Gauntlets of Ancient Steel
 					i(90531), -- Plans: Ghost Iron Shield Spike
@@ -2335,7 +2335,7 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(64085, { -- Cullen Hammerbrow (Shrine of Seven Stars)
-				["g"] = {
+				["groups"] = {
 					i(84158), -- Plans: Contender's Revenant Belt
 					i(84159), -- Plans: Contender's Revenant Boots
 					i(84160), -- Plans: Contender's Revenant Bracers
@@ -2366,7 +2366,7 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(64058, { -- Jorunga Stonehoof (Shrine of Two Moons)
-				["g"] = {
+				["groups"] = {
 					i(84158), -- Plans: Contender's Revenant Belt
 					i(84159), -- Plans: Contender's Revenant Boots
 					i(84160), -- Plans: Contender's Revenant Bracers
@@ -2401,7 +2401,7 @@ profession(164, { -- Blacksmithing
 			i(100865, { -- Plans: Balanced Trillium Ingot and Its Uses
 				["spellID"] = 0,
 				["description"] = "This is a World drop from practically any creature in Pandaria; you'll need a 75 skill level in Pandaria Blacksmithing to get the drop.",
-				["g"] = {
+				["groups"] = {
 					recipe(146921), -- Plans: Accelerated Balanced Trillium Ingot
 					recipe(143255), -- Plans: Balanced Trillium Ingot
 				},
@@ -2456,7 +2456,7 @@ profession(164, { -- Blacksmithing
 		}),
 		n(-37, { -- Discovery
 			recipe(143255, { -- Plans: Balanced Trillium Ingot
-				["g"] = {
+				["groups"] = {
 					recipe(142959), -- Plans: Avenger's Trillium Legplates
 					recipe(142968), -- Plans: Avenger's Trillium Waistplate
 					recipe(142963), -- Plans: Blessed Trillium Belt
@@ -2511,7 +2511,7 @@ profession(164, { -- Blacksmithing
 				}),
 			}),
 			recipe(138646, { -- Plans: Lightning Steel Ingot
-				["g"] = {
+				["groups"] = {
 					recipe(137792), -- Plans: Crafted Dreadful Gladiator's Armplates of Alacrity
 					recipe(137791), -- Plans: Crafted Dreadful Gladiator's Armplates of Proficiency
 					recipe(137781), -- Plans: Crafted Dreadful Gladiator's Bracers of Meditation
@@ -2576,9 +2576,9 @@ profession(164, { -- Blacksmithing
 		--[[n(-17, { -- Quests
 			i(94721, { -- Strange Metal Ingot (Isle of Thunder)
 				q(32621, { -- Lightning Steel
-					["g"] = {
+					["groups"] = {
 						i(94553, { -- Notes on Lightning Steel
-							["g"] = {
+							["groups"] = {
 								i(94568), -- Plans: Drakefist Hammer, Reborn
 								i(94572), -- Plans: Fireguard, Reborn
 								i(94552), -- Plans: Lightning Steel Ingot
@@ -2779,15 +2779,15 @@ profession(164, { -- Blacksmithing
 	}),
 	tier(6, { -- Warlords of Draenor
 		gb(118, { -- The Forge
-			["g"] = {
+			["groups"] = {
 				n(-2, { -- Vendors
 					n(77359, { -- Auria Irondreamer
-						["g"] = {
+						["groups"] = {
 							i(115356, { -- Draenor Blacksmithing
 								["collectible"] = false,
 								--["spellID"] = 0,
 								["description"] = "This is a quest reward for completing The Fractured Hammer quest line, which begins at The Forge in your Garrison. Also sold at The Forge for 100 gold.",
-								["g"] = {
+								["groups"] = {
 									recipe(171692),	-- Smoldering Breastplate
 									recipe(171693),	-- Smoldering Greaves
 									recipe(171691),	-- Smoldering Helm
@@ -2796,7 +2796,7 @@ profession(164, { -- Blacksmithing
 								},
 							}),
 							i(118720, { -- Secret of Draenor Blacksmithing
-								["g"] = {
+								["groups"] = {
 									i(119329), -- Recipe: Soul of the Forge
 									i(120262), -- Recipe: Steelforged Aegis
 									i(120260), -- Recipe: Steelforged Axe
@@ -2824,12 +2824,12 @@ profession(164, { -- Blacksmithing
 						["races"] = ALLIANCE_ONLY,
 					}),
 					n(79867, { -- Orgek Ironhand
-						["g"] = {
+						["groups"] = {
 							i(115356, { -- Draenor Blacksmithing
 								["collectible"] = false,
 								--["spellID"] = 0,
 								["description"] = "This is a quest reward for completing The Fractured Hammer quest line, which begins at The Forge in your Garrison. Also sold at The Forge for 100 gold.",
-								["g"] = {
+								["groups"] = {
 									recipe(171692),	-- Smoldering Breastplate
 									recipe(171693),	-- Smoldering Greaves
 									recipe(171691),	-- Smoldering Helm
@@ -2838,7 +2838,7 @@ profession(164, { -- Blacksmithing
 								},
 							}),
 							i(118720, { -- Secret of Draenor Blacksmithing
-								["g"] = {
+								["groups"] = {
 									i(119329), -- Recipe: Soul of the Forge
 									i(120262), -- Recipe: Steelforged Aegis
 									i(120260), -- Recipe: Steelforged Axe
@@ -2874,7 +2874,7 @@ profession(164, { -- Blacksmithing
 		}),
 		--[[n(-17, { -- Quests
 			i(115343, { -- Haephest's Satchel
-				["g"] = {
+				["groups"] = {
 					q(36309, { -- The Strength of Iron
 						["qg"] = 75043, -- Karnoth
 					}),
@@ -2884,7 +2884,7 @@ profession(164, { -- Blacksmithing
 				["requireSkill"] = 164, -- Blacksmithing
 			}),
 			q(36311, { -- Father and Son
-				["g"] = {
+				["groups"] = {
 					i(115356), -- Draenor Blacksmithing
 					i(111813), -- The Forge, Level 1
 				},
@@ -2894,7 +2894,7 @@ profession(164, { -- Blacksmithing
 				["requireSkill"] = 164, -- Blacksmithing
 			}),
 			i(114965, { -- Fractured Forge Hammer
-				["g"] = {
+				["groups"] = {
 					q(36205, { -- The Fractured Hammer
 						["qg"] = 74254, -- Dorogg the Ruthless
 					}),
@@ -2916,7 +2916,7 @@ profession(164, { -- Blacksmithing
 				["requireSkill"] = 164, -- Blacksmithing
 			}),
 			q(36238, { -- Mending A Broken Heart
-				["g"] = {
+				["groups"] = {
 					i(115356), -- Draenor Blacksmithing
 					i(111813), -- The Forge, Level 1
 				},
@@ -2958,14 +2958,14 @@ profession(164, { -- Blacksmithing
 	tier(7, { -- Legion
 		--[[n(-2, { -- Vendors
 			n(106902, { -- Ransa Greyfeather (Highmountain)
-				["g"] = {
+				["groups"] = {
 					i(123948), -- Recipe: Demonsteel Armguards (Rank 3)
 					i(123955), -- Recipe: Demonsteel Breastplate (Rank 3)
 					i(123953), -- Recipe: Demonsteel Gauntlets (Rank 3)
 				},
 			}),
 			n(92265, { -- Urael (Suramar)
-				["g"] = {
+				["groups"] = {
 					i(123920), -- Recipe: Demonsteel Armguards (Rank 1)
 					i(123926), -- Recipe: Demonsteel Boots (Rank 1)
 					i(123927), -- Recipe: Demonsteel Breastplate (Rank 1)
@@ -2977,7 +2977,7 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(106904, {	-- Valdemar Stormseeker (Stormheim)
-				["g"] = {
+				["groups"] = {
 					i(136698), -- Recipe: Consecrated Spike
 					i(123954), -- Recipe: Demonsteel Boots (Rank 3)
 					i(123951), -- Recipe: Demonsteel Greaves (Rank 3)
@@ -2985,7 +2985,7 @@ profession(164, { -- Blacksmithing
 				},
 			}),
 			n(107109, { -- Xur'ios (Dalaran)
-				["g"] = {
+				["groups"] = {
 					i(136699), -- Recipe: Flamespike
 				},
 			}),
@@ -3010,13 +3010,13 @@ profession(164, { -- Blacksmithing
 		--[[n(-17, { -- Quests
 			-- Main Blacksmithing Chain --
 			q(38499, { -- Strange New Ores
-				["g"] = {
+				["groups"] = {
 					recipe(195097), -- Legion Blacksmithing
 				},
 				["qg"] = 92183, -- Alard Schmied
 			}),
 			q(39681, { -- The Properties of Leystone
-				["g"] = {
+				["groups"] = {
 					recipe(182928), -- Plans: Leystone Armguards (Rank 1)
 					recipe(182929),	-- Plans: Leystone Waistguard (Rank 1)
 				},
@@ -3044,7 +3044,7 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 39681, -- The Properties of Leystone
 			}),
 			q(38501, { -- Hatecoil Hammerwork
-				["g"] = {
+				["groups"] = {
 					recipe(182935), -- Plans: Leystone Breastplate (Rank 1)
 					recipe(182930), -- Plans: Leystone Pauldrons (Rank 1)
 				},
@@ -3068,7 +3068,7 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38507, -- Secrets of Leysmithing
 			}),
 			q(38500, { -- Leysmithing Mastery
-				["g"] = {
+				["groups"] = {
 					recipe(182934), -- Plans: Leystone Boots (Rank 1)
 					recipe(182933), -- Plans: Leystone Gauntlets (Rank 1)
 					recipe(182931), -- Plans: Leystone Greaves (Rank 1)
@@ -3090,14 +3090,14 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38513, -- The Highmountain Smiths
 			}),
 			q(39699, { -- Ironhorn Leysmithing
-				["g"] = {
+				["groups"] = {
 					recipe(182967), -- Plans: Leystone Gauntlets (Rank 2)
 				},
 				["qg"] = 92242, -- Barm Stonebreaker
 				["sourceQuest"] = 38514, -- You Are Not Worthy
 			}),
 			q(38519, { -- Grayheft
-				["g"] = {
+				["groups"] = {
 					recipe(182965), -- Plans: Leystone Greaves (Rank 2)
 				},
 				["qg"] = 92245, -- Thala Steeltotem
@@ -3108,14 +3108,14 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38519, -- Grayheft
 			}),
 			q(38522, { -- Not Just Weapons and Armor
-				["g"] = {
+				["groups"] = {
 					recipe(182999),	-- Plans: Leystone Hoofplates
 				},
 				["qg"] = 92183, -- Alard Schmied
 				["sourceQuest"] = 38518, -- From One Master to Another
 			}),
 			q(38523, { -- Leystone Hoofplates
-				["g"] = {
+				["groups"] = {
 					recipe(182999),	-- Recipe: Leystone Hoofplates
 				},
 				["qg"] = 92183, -- Alard Schmied
@@ -3126,7 +3126,7 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38523, -- Leystone Hoofplates
 			}),
 			q(39680, { -- Between the Hammer...
-				["g"] = {
+				["groups"] = {
 					recipe(182963), -- Plans: Leystone Waistguard (Rank 2)
 				},
 				["qg"] = 96763, -- Saris Swifthammer
@@ -3146,7 +3146,7 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 39729, -- The Knowledge of Black Rock
 			}),
 			q(44449, { -- Advanced Quenching
-				["g"] = {
+				["groups"] = {
 					recipe(182969), -- Plans: Leystone Breastplate (Rank 2)
 				},
 				["qg"] = 92183, -- Alard Schmied
@@ -3161,7 +3161,7 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38524, -- Felsmith Nal'ryssa
 			}),
 			q(38526, { -- Smith Under Fire
-				["g"] = {
+				["groups"] = {
 					recipe(182968), -- Plans: Leystone Boots (Rank 2)
 				},
 				["qg"] = 92264, -- Felsmith Nal'ryssa
@@ -3172,7 +3172,7 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38526, -- Smith Under Fire
 			}),
 			q(38528, { -- Leystone's Potential
-				["g"] = {
+				["groups"] = {
 					recipe(182962), -- Plans: Leystone Armguards (Rank 2)
 				},
 				["qg"] = 92264, -- Felsmith Nal'ryssa
@@ -3183,7 +3183,7 @@ profession(164, { -- Blacksmithing
 				["sourceQuest"] = 38528, -- Leystone's Potential
 			}),
 			q(38531, { -- Leystone Mastery
-				["g"] = {
+				["groups"] = {
 					recipe(182966), -- Plans: Leystone Helm (Rank 2)
 					recipe(182964), -- Plans: Leystone Pauldrons (Rank 2)
 				},
@@ -3199,14 +3199,14 @@ profession(164, { -- Blacksmithing
 				["sourceQuests"] = { 38531, 38532 }, -- Leystone Mastery, Maw of Souls: Hammered By The Storm
 			}),
 			q(38833, { -- The Art of Demonsteel
-				["g"] = {
+				["groups"] = {
 					recipe(184442), -- Plans: Demonsteel Bar
 				},
 				["qg"] = 92243, -- Muirn Ironhorn
 				["sourceQuest"] = 38559, -- Worthy of the Stone
 			}),
 			q(38533, { -- Tribal Knowledge
-				["g"] = {
+				["groups"] = {
 					recipe(182944), -- Plans: Demonsteel Armguards (Rank 1)
 				},
 				["qg"] = 92243, -- Muirn Ironhorn
@@ -3215,7 +3215,7 @@ profession(164, { -- Blacksmithing
 			-- Crafting Rank Quests --
 			recipe(182944, { -- Plans: Demonsteel Armguards (Rank 1)
 				q(38534, { -- Demonsteel Armguards
-					["g"] = {
+					["groups"] = {
 						i(123940), -- Recipe: Demonsteel Armguards (Rank 2)
 					},
 					["qg"] = 92243, -- Muirn Ironhorn
@@ -3249,7 +3249,7 @@ profession(164, { -- Blacksmithing
 	tier(8, { -- Battle for Azeroth
 		n(-2, { -- Vendors
 			n(135447, { -- Ransa Greyfeather (Zuldazar)
-				["g"] = {
+				["groups"] = {
 					i(162707), -- Recipe: Stormsteel Dagger (Rank 3)
 					i(162774), -- Recipe: Stormsteel Saber (Rank 3)
 					i(162706), -- Recipe: Stormsteel Shield (Rank 3)
@@ -3258,7 +3258,7 @@ profession(164, { -- Blacksmithing
 				["races"] = HORDE_ONLY,
 			}),
       n(135446, { -- Vindicator Jaelanna (Tiragarde Sound)
-				["g"] = {
+				["groups"] = {
 					i(162707), -- Recipe: Stormsteel Dagger (Rank 3)
 					i(162774), -- Recipe: Stormsteel Saber (Rank 3)
 					i(162706), -- Recipe: Stormsteel Shield (Rank 3)
@@ -3359,28 +3359,28 @@ profession(164, { -- Blacksmithing
 		})),
 		un(40, n(-17, { -- Quests
 			q(5307, { -- Corruption
-				["g"] = {
+				["groups"] = {
 					i(12825), -- Plans: Blazing Rapier
 				},
 				["qg"] = 11193, -- Seril Scourgebane
 			}),
 			i(18769, { -- Enchanted Thorium Platemail
 				q(7649, { -- Enchanted Thorium Platemail: Volume I
-					["g"] = {
+					["groups"] = {
 						i(12727), -- Plans: Enchanted Thorium Breastplate
 					},
 				}),
 			}),
 			i(18770, { -- Enchanted Thorium Platemail
 				q(7650, { -- Enchanted Thorium Platemail: Volume II
-					["g"] = {
+					["groups"] = {
 						i(12726), -- Plans: Enchanted Thorium Leggings
 					},
 				}),
 			}),
 			i(18771, { -- Enchanted Thorium Platemail
 				q(7651, { -- Enchanted Thorium Platemail: Volume III
-					["g"] = {
+					["groups"] = {
 						i(12725), -- Plans: Enchanted Thorium Helm
 					},
 				}),
@@ -3390,7 +3390,7 @@ profession(164, { -- Blacksmithing
 				}),
 			}),
 			q(5124, { -- Fiery Plate Gauntlets
-				["g"] = {
+				["groups"] = {
 					i(12699), -- Plans: Fiery Plate Gauntlets
 					i(12631), -- Fiery Plate Gauntlets
 				},
@@ -3398,40 +3398,40 @@ profession(164, { -- Blacksmithing
 				["sourceQuests"] = { 5103 }, -- Hot Fiery Death
 			}),
 			q(9235, { -- Icebane Bracers
-				["g"] = {
+				["groups"] = {
 					recipe(28244), -- Plans: Icebane Bracers
 				},
 				["qg"] = 16376, -- Craftsmen Wilhelm
 			}),
 			q(9236, { -- Icebane Breastplate
-				["g"] = {
+				["groups"] = {
 					recipe(28242), -- Plans: Icebane Breastplate
 				},
 				["qg"] = 16376, -- Craftsmen Wilhelm
 			}),
 			q(9234, { -- Icebane Gauntlets
-				["g"] = {
+				["groups"] = {
 					recipe(28243), -- Plans: Icebane Gauntlets
 				},
 				["qg"] = 16376, -- Craftsmen Wilhelm
 			}),
 			q(5305, { -- Sweet Serenity
-				["g"] = {
+				["groups"] = {
 					i(12824), -- Plans: Enchanted Battlehammer
 				},
 				["qg"] = 11191, -- Lilith the Lithe
 			}),
 			q(5306, { -- Snakestone of the Shadow Huntress
-				["g"] = {
+				["groups"] = {
 					i(12821), -- Plans: Dawn's Edge
 				},
 				["qg"] = 11192, -- Kilram
 			}),
 			q(5107, { -- The Demon Forge
-				["g"] = {
+				["groups"] = {
 					i(12696), -- Plans: Demon Forged Breastplate
 					i(12849, { -- Demon Kissed Sack
-						["g"] = {
+						["groups"] = {
 							i(10383), -- Commander's Pauldrons
 							i(10377), -- Commander's Vambraces
 						},
@@ -3440,7 +3440,7 @@ profession(164, { -- Blacksmithing
 				["qg"] = 10918, -- Lorax
 			}),
 			q(2758, { -- The Origins of Smithing
-				["g"] = {
+				["groups"] = {
 					i(9367), -- Plans: Golden Scale Gauntlets
 				},
 				["qg"] = 7798, -- Hank the Hammer
@@ -3451,7 +3451,7 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(2756, { -- The Old Ways
-				["g"] = {
+				["groups"] = {
 					recipe(9957), -- Plans: Orcish War Leggings
 				},
 				["qg"] = 7792, -- Aturk the Anvil
@@ -3467,28 +3467,28 @@ profession(164, { -- Blacksmithing
 				["sourceQuests"] = { 2757, 2759 }, -- Booty Bay or Bust! (Horde), In Search of Galvan (Alliance)
 			}),
 			q(2761, { -- Smelt On, Smelt Off
-				["g"] = {
+				["groups"] = {
 					i(7983), -- Plans: Ornate Mithril Pants
 				},
 				["qg"] = 7802, -- Galvan the Ancient
 				["sourceQuests"] = { 2760 }, -- The Mithril Order
 			}),
 			q(2762, { -- The Great Silver Deceiver
-				["g"] = {
+				["groups"] = {
 					i(7984), -- Plans: Ornate Mithril Gloves
 				},
 				["qg"] = 7802, -- Galvan the Ancient
 				["sourceQuests"] = { 2760 }, -- The Mithril Order
 			}),
 			q(2763, { -- The Art of the Imbue
-				["g"] = {
+				["groups"] = {
 					i(7985), -- Plans: Ornate Mithril Shoulders
 				},
 				["qg"] = 7802, -- Galvan the Ancient
 				["sourceQuests"] = { 2760 }, -- The Mithril Order
 			}),
 			q(2765, { -- Expert Blacksmith!
-				["g"] = {
+				["groups"] = {
 					i(8703), -- Signet of Expertise
 				},
 				["qg"] = 7802, -- Galvan the Ancient
@@ -3499,28 +3499,28 @@ profession(164, { -- Blacksmithing
 				["sourceQuests"] = { 2761, 2762, 2763 }, -- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue
 			}),
 			q(2772, { -- The World At Your Feet
-				["g"] = {
+				["groups"] = {
 					recipe(9979), -- Plans: Ornate Mithril Boots
 				},
 				["qg"] = 7804, -- Trenton Lighthammer
 				["sourceQuests"] = { 2761, 2762, 2763 }, -- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue
 			}),
 			q(2771, { -- A Good Head On Your Shoulders
-				["g"] = {
+				["groups"] = {
 					recipe(9980), -- Plans: Ornate Mithril Helm
 				},
 				["qg"] = 7804, -- Trenton Lighthammer
 				["sourceQuests"] = { 2761, 2762, 2763 }, -- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue
 			}),
 			q(2773, { -- The Mithril Kid
-				["g"] = {
+				["groups"] = {
 					recipe(9972), -- Plans: Ornate Mithril Breastplate
 				},
 				["qg"] = 7804, -- Trenton Lighthammer
 				["sourceQuests"] = { 2761, 2762, 2763 }, -- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue
 			}),
 			q(3321, { -- Did You Lose This?
-				["g"] = {
+				["groups"] = {
 					i(10418), -- Glimmering Mithril Insignia
 				},
 				["qg"] = 7804, -- Trenton Lighthammer

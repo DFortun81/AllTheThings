@@ -337,7 +337,7 @@ _.Instances =
 							})),
 							cr(103685, e(1762, {	-- Tichondrius
 								i(137687, { -- Recipe: Fel Core Hound Harness
-									["g"] = {
+									["groups"] = {
 										recipe(213916), -- Recipe: Fel Core Hound Harness
 									},
 									["requireSkill"] = 164, -- Blacksmithing
@@ -561,7 +561,7 @@ _.Instances =
 							})),
 							cr(103685, e(1762, {	-- Tichondrius
 								i(137687, { -- Recipe: Fel Core Hound Harness
-									["g"] = {
+									["groups"] = {
 										recipe(213916), -- Recipe: Fel Core Hound Harness
 									},
 									["requireSkill"] = 164, -- Blacksmithing
@@ -785,7 +785,7 @@ _.Instances =
 							})),
 							cr(103685, e(1762, {	-- Tichondrius
 								i(137687, { -- Recipe: Fel Core Hound Harness
-									["g"] = {
+									["groups"] = {
 										recipe(213916), -- Recipe: Fel Core Hound Harness
 									},
 									["requireSkill"] = 164, -- Blacksmithing

@@ -614,7 +614,7 @@ _.Zones =
 					})),
 				}),
 				n(-16, {	-- Rares
-					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts.
+					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(125250, {	-- Ancient Jawbreaker		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -622,10 +622,13 @@ _.Zones =
 							}),	
 							["questID"] = 48063,	
 						}),		
-						n(134298, {	-- Azerite-Infused Elemental [Missing]		
+						n(134298, {	-- Azerite-Infused Elemental [MissingL]		
 							["questID"] = 50563,	
 						}),		
-						n(134293, {	-- Azerite-Infused Slag [Missing]		
+						n(134293, {	-- Azerite-Infused Slag
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								i(161100),	-- Fused-Slag Girdle
+							}),
 							["questID"] = 49305,
 						}),		
 						n(126142, {	-- Bajiatha		
@@ -639,8 +642,8 @@ _.Zones =
 								i(161217),	-- Tainted Blood Vambraces
 							}),
 							["questID"] = 48057,
-						}),		
-						n(125232, {	-- Captain Mu'kala [Missing]		
+						}),
+						n(125232, {	-- Captain Mu'kala [MissingL]		
 							["questID"] = 50361,
 						}),		
 						n(126187, {	-- Corpse Bringer Yal'kar		
@@ -729,15 +732,14 @@ _.Zones =
 							}),	
 							["questID"] = 50567,	
 						}),		
-						n(128935, {	-- Mala'kili [Missing]
-								--[[
-								["crs"] = {
-									128930,  -- Rohnkor
-								},
-								--]]
-							["g"] = {
-								i(163703),	-- Crawg Gnawed Femur
-							},
+						n(128935, {	-- Mala'kili
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+								i(163703, {	-- Crawag Gnawed Femur
+									["crs"] = {
+										128930,  -- Rohnkor
+									},
+								}),
+							}),
 							["questID"] = 50040,	
 						}),	
 						n(128610, {	-- Maw of Shul-Nagruth
@@ -764,7 +766,10 @@ _.Zones =
 						n(124475, {	-- Shambling Ambusher
 							["questID"] = 47878,
 						}),
-						n(126460, {	-- Tainted Guardian [Missing]		
+						n(126460, {	-- Tainted Guardian
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+								i(162621),	-- Nazmani Golem's Greathelm
+							}),
 							["questID"] = 50342,	
 						}),		
 						n(126056, {	-- Totem Maker Jash'ga		
@@ -773,7 +778,7 @@ _.Zones =
 							}),	
 							["questID"] = 48406,	
 						}),		
-						o(282666, {	-- Urn of Agussu [Missing]
+						o(282666, {	-- Urn of Agussu [MissingL]
 								--[[
 								["crs"] = {
 									135565,	-- Guardian of Agussu
