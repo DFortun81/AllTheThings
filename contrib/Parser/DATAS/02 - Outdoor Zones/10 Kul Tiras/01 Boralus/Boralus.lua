@@ -119,6 +119,7 @@ _.Zones =
 						q(47961, {	-- Drustvar
 							["qg"] = 139522,	-- Scouting Map
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
+							["isBreadcrumb"] = true,
 						}),
 						q(51144, {	-- A Bundle of Furs
 							["qg"] = 124289, -- "Risky" Liz Seminario <Fur Trader>
@@ -133,10 +134,12 @@ _.Zones =
 						q(47962, {	-- Stormsong Valley
 							["qg"] = 139522,	-- Scouting Map
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
+							["isBreadcrumb"] = true,
 						}),
 						q(47960, {	-- Tiragarde Sound
 							["qg"] = 139522,	-- Scouting Map
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
+							["isBreadcrumb"] = true,
 						}),
 						q(47485, {	-- The Ashvane Trading Company
 							["qg"] = 122370, -- Cyrus Crestfall

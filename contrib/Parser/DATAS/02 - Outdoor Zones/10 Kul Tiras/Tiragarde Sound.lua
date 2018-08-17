@@ -88,6 +88,9 @@ _.Zones =
 							crit(7),		-- Castaways and Cutouts
 						})),
 						--]]
+						--------------------------------------
+						-- Hatherford
+						--------------------------------------
 						a(q(49234, {	-- A Marine Out of Water
 							["qg"] = 130101, -- Recruit Brutis
 							["sourceQuests"] = { 50700 },	-- Drust in Time
@@ -117,6 +120,7 @@ _.Zones =
 						a(o(281230, {	-- Formal Invitation
 							q(48070, {	-- The Norwington Festival
 								-- ["sourceQuests"] = { 47189 },	-- Tiragarde Sound??
+								["isBreadcrumb"] = true,
 							}),
 						})),
 						a(q(49453, {	-- Give a Dam
@@ -176,6 +180,9 @@ _.Zones =
 							-- ["sourceQuests"] = { 47189 },	-- Tiragarde Sound??
 						})),
 						
+						--------------------------------------
+						-- Gol Thovas
+						--------------------------------------
 						m(1171, {	-- Gol Thovas
 							a(q(49260, {	-- Backup While I Pack Up
 								["qg"] = 128349, -- Hilde Firebreaker
@@ -191,6 +198,72 @@ _.Zones =
 							})),
 						}),
 						
+						--------------------------------------
+						-- Eastpoint Station / Ashvane Foundry
+						--------------------------------------
+						-- sz(12473, 1) -- A Sound Plan: The Ashvane Trading
+						a(q(47487, {	-- Labor Dispute
+							["qg"] = 122671, -- Cagney
+							["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
+						})),
+						o(281647, {		-- Posted Notice [Object]
+							a(q(50573, {	-- Message from the Management
+								["sourceQuests"] = { 47486 },	-- Suspicious Shipments
+								["groups"] = {
+									i(155036),	-- Navigator's Leggings
+									i(155038),	-- Freebooter Breeches
+									i(155037),	-- Outrigger Legguards
+									i(155035),	-- Sea Raider's Greaves
+									i(155029),	-- Navigator's Gloves
+									i(155027),	-- Freebooter Gloves
+									i(155030),	-- Outrigger Gloves
+									i(155028),	-- Sea Raider's Gauntlets
+								},
+							})),
+						}),
+						a(q(47488, {	-- Small Haulers
+							["qg"] = 122672, -- Olive
+							["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
+						})),
+						a(q(47486, {	-- Suspicious Shipments
+							["qg"] = 122671, -- Cagney
+							["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
+						})),
+						a(q(50531, {	-- Under Their Noses
+							["qg"] = 121239, -- Flynn Fairwind
+							["sourceQuests"] = { 50573, 47488, 47485 },	-- Message from the Management / Small Haulers / Suspicious Shipments
+							-- CRIEVE NOTE: This triggered sz(12473, 1) -- A Sound Plan: The Ashvane Trading Company for me.
+						})),
+						
+						--------------------------------------
+						-- Bridgeport
+						--------------------------------------
+						o(281551, {		-- Help Wanted Poster [Object]
+							a(q(50544, {	-- The Hunters of Kennings Lodge
+								-- ["sourceQuests"] = { 50531 },	-- Under Their Noses ?
+								["isBreadcrumb"] = true,
+							})),
+						}),
+						a(q(50349, {	-- On Overrun Mine
+							["qg"] = 133550, -- Junior Miner Joe
+							-- ["sourceQuests"] = { 50531 },	-- Under Their Noses ?
+							["isBreadcrumb"] = true,
+						})),
+						a(q(51149, {	-- Left at the Port
+							["qg"] = 136576, -- Dockmaster Leighton
+							-- ["sourceQuests"] = { 50531 },	-- Under Their Noses ?
+							["isBreadcrumb"] = true,
+						})),
+						a(q(53041, {	-- Sampling the Goods
+							["qg"] = 121239, -- Flynn Fairwind
+							["sourceQuests"] = { 50531 },	-- Under Their Noses
+						})),
+						a(q(47489, {	-- Stow and Go
+							["qg"] = 121239, -- Flynn Fairwind
+							["sourceQuests"] = { 53041 },	-- Sampling the Goods
+						})),
+						
+						q(48607),	-- Small Treasure Chest
 						q(48619),	-- Small Treasure Chest
 						
 						--
@@ -307,16 +380,7 @@ _.Zones =
 						i(155073),	-- Waverider Warstaff
 						i(155052),	-- Port-Ruffian's Cleaver
 						}),
-						q(50573, {	-- Message from the Management
-						i(155036),	-- Navigator's Leggings
-						i(155038),	-- Freebooter Breeches
-						i(155037),	-- Outrigger Legguards
-						i(155035),	-- Sea Raider's Greaves
-						i(155029),	-- Navigator's Gloves
-						i(155027),	-- Freebooter Gloves
-						i(155030),	-- Outrigger Gloves
-						i(155028),	-- Sea Raider's Gauntlets
-						}),
+						
 						q(49299, {	-- Enemy Within
 						i(160083),	-- Navigator's Footwraps
 						i(160084),	-- Freebooter Shoes
