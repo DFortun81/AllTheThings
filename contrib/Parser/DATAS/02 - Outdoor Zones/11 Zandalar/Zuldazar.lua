@@ -251,7 +251,9 @@ _.Zones =
 										--]]
 										q(49310, {	-- The Prophet's Ploy[Note: Final Quest needed to trigger criteria]
 											["groups"] = {
+												i(155250),	-- Rastari Helm
 												i(155260),	-- Rastari Pauldrons
+												i(155239),	-- Rastari Breastplate
 												-- Get rest of rewards
 											},
 											["qg"] = 127837,	-- Kaza'jin the Wavebinder

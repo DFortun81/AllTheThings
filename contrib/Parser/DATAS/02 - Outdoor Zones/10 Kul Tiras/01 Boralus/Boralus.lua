@@ -104,15 +104,15 @@ _.Zones =
 								}),
 								q(47186, {	-- Sanctum of Sages
 									["qg"] = 121235, -- Taelia
-									["soureQuests"] = { 46729 }, -- The Old Knight
+									["sourceQuests"] = { 46729 }, -- The Old Knight
 								}),
 								q(52128, {	-- Ferry Pass
 									["qg"] = 122370, -- Cyrus Crestfall
-									["soureQuests"] = { 47186 }, -- Sanctum of Sages
+									["sourceQuests"] = { 47186 }, -- Sanctum of Sages
 								}),
 								q(47189, {	-- A Nation Divided
 									["qg"] = 121235, -- Taelia
-									["soureQuests"] = { 47186 }, -- Sanctum of Sages
+									["sourceQuests"] = { 47186 }, -- Sanctum of Sages
 								}),
 							},
 						})),
