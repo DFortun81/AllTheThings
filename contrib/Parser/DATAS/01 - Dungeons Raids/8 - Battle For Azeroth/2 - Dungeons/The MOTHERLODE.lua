@@ -72,7 +72,8 @@ _.Instances =
 									i(159611), -- Razdunk's Big Red Button
 								}),
 								["crs"] = {
-									131227, -- Mogul Razdunk
+									129232,	-- Mogul Razdunk
+									132713, -- Mogul Razdunk
 								},
 							}),
 						},
@@ -136,7 +137,8 @@ _.Instances =
 									i(159611), -- Razdunk's Big Red Button
 								},
 								["crs"] = {
-									131227, -- Mogul Razdunk
+									129232,	-- Mogul Razdunk
+									132713, -- Mogul Razdunk
 								},
 							}),
 						},
@@ -207,7 +209,8 @@ _.Instances =
 									i(159611), -- Razdunk's Big Red Button
 								},
 								["crs"] = {
-									131227, -- Mogul Razdunk
+									129232,	-- Mogul Razdunk
+									132713, -- Mogul Razdunk
 								},
 							}),
 						},
