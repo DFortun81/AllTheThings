@@ -116,15 +116,19 @@ _.Zones =
 								}),
 							},
 						})),
+						q(47961, {	-- Drustvar
+							["qg"] = 139522,	-- Scouting Map
+							["sourceQuests"] = { 47189 },	-- A Nation Divided
+						}),
+						q(51144, {	-- A Bundle of Furs
+							["qg"] = 124289, -- "Risky" Liz Seminario <Fur Trader>
+							["sourceQuests"] = { 47189 },	-- Tiragarde Sound
+						}),
 						q(52462, {	-- A Load of Scrap
 							["groups"] = {
 								ach(12741), -- Giving a Scrap
 							},
 							["qg"] = 141274, -- Crenzo Sparkshatter
-						}),
-						q(47961, {	-- Drustvar
-							["qg"] = 139522,	-- Scouting Map
-							["sourceQuests"] = { 47189 },	-- A Nation Divided
 						}),
 						q(47962, {	-- Stormsong Valley
 							["qg"] = 139522,	-- Scouting Map
@@ -134,17 +138,21 @@ _.Zones =
 							["qg"] = 139522,	-- Scouting Map
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
 						}),
-						q(52654, {	-- The War Campaign
-							["qg"] = 120788,	-- Genn Greymane
-							["sourceQuests"] = { 47189 },	-- A Nation Divided
-						}),
-						q(47181, {	-- The Smoking Gun
-							["qg"] = 121239, -- Flynn Fairwind
-							["sourceQuests"] = { 47189 },	-- A Nation Divided
-						}),
 						q(47485, {	-- The Ashvane Trading Company
 							["qg"] = 122370, -- Cyrus Crestfall
 							["sourceQuests"] = { 47181 },	-- The Smoking Gun
+						}),
+						q(47181, {	-- The Smoking Gun
+							["qg"] = 121239, -- Flynn Fairwind
+							["sourceQuests"] = { 47189 },	-- Tiragarde Sound
+						}),
+						q(52544, {	-- The War Cache
+							["qg"] = 135612, -- Halford Wyrmbane <7th Legion High Commander>
+							["sourceQuests"] = { 52654 },	-- The War Campaign
+						}),
+						q(52654, {	-- The War Campaign
+							["qg"] = 120788,	-- Genn Greymane
+							["sourceQuests"] = { 47189 },	-- A Nation Divided
 						}),
 					},
 				}),
@@ -152,6 +160,10 @@ _.Zones =
 				n(-212, {	-- Treasures
 					o(1234, {	-- Small Treasure Chest
 						["questID"] = 50952,
+					}),
+					o(293965, {	-- Scrimshaw Cache
+						["coord"] = { 72.5, 21.7 },
+						["questID"] = ,
 					}),
 				}),
 				--]]

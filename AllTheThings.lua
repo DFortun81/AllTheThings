@@ -448,7 +448,7 @@ GameTooltipModel:SetBackdrop(backdrop);
 GameTooltipModel:SetBackdropBorderColor(1, 1, 1, 1);
 GameTooltipModel:SetBackdropColor(0, 0, 0, 1);
 GameTooltipModel.Models = {};
-GameTooltipModel.Model = CreateFrame("DressUpModel", nil, GameTooltipModel);
+GameTooltipModel.Model = CreateFrame("PlayerModel", nil, GameTooltipModel);
 GameTooltipModel.Model:SetPoint("TOPLEFT", GameTooltipModel ,"TOPLEFT", 4, -4)
 GameTooltipModel.Model:SetPoint("BOTTOMRIGHT", GameTooltipModel ,"BOTTOMRIGHT", -4, 4)
 GameTooltipModel.Model:SetFacing(MODELFRAME_DEFAULT_ROTATION);

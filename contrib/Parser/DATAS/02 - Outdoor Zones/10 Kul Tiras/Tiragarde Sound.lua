@@ -472,14 +472,17 @@ _.Zones =
 							-- ["questID"] = 		
 						}),			
 						n(137176, {	-- Walter Ferrell	
-							--[[
-								["crs"] = {
-									137181,	-- Mead-Craving Cranee
-									137182,	-- Honey-Crazed Gull
-									137183,	-- Honey-Coated Slitherer
-									137175,	-- Bradford Crusco
-							--]]
-							-- ["questID"] = 		
+							["crs"] = {
+								137181,	-- Mead-Craving Cranee
+								137182,	-- Honey-Crazed Gull
+								137183,	-- Honey-Coated Slitherer
+								137175,	-- Bradford Crusco
+							},
+							["questID"] = 51321,
+							["coord"] = { 64.2, 19.2 },
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
+								i(160472),	-- Honey-Glazed Gauntlets	
+							}),	
 						}),			
 					},
 				}),
