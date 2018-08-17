@@ -261,6 +261,53 @@ _.Zones =
 						a(q(47489, {	-- Stow and Go
 							["qg"] = 121239, -- Flynn Fairwind
 							["sourceQuests"] = { 53041 },	-- Sampling the Goods
+							["isBreadcrumb"] = true,
+						})),
+						
+						--------------------------------------
+						-- Castaway Point
+						--------------------------------------
+						a(q(48421, {	-- Blood in the Tides
+							["qg"] = 125342, -- Captain Keelson
+							["sourceQuests"] = { 47489 },	-- Stow and Go
+							["groups"] = {
+								i(155024),	-- Navigator's Sandals
+								i(155026),	-- Freebooter Boots
+								i(155025),	-- Outrigger Boots
+								i(155023),	-- Sea Raider's Sabatons
+								i(155086),	-- Keelson's Bloody Drape
+							},
+						})),
+						h(q(53439, {	-- Blood in the Tides [HORDE]
+							["qg"] = 125342, -- Captain Keelson
+							-- ["sourceQuests"] = { },	-- ???
+							["groups"] = {
+								i(155024),	-- Navigator's Sandals
+								i(155026),	-- Freebooter Boots
+								i(155025),	-- Outrigger Boots
+								i(155023),	-- Sea Raider's Sabatons
+								i(155086),	-- Keelson's Bloody Drape
+							},
+						})),
+						a(q(49230, {	-- Local Flavor
+							["qg"] = 128228, -- Hungry Sam
+							["sourceQuests"] = { 49218 },	-- The Castaways
+						})),
+						a(q(48419, {	-- Lured and Allured
+							["qg"] = 128377, -- Beachcomber Bob
+							["sourceQuests"] = { 47489 },	-- Stow and Go
+						})),
+						a(q(49178, {	-- My Favorite Things
+							["qg"] = 128229, -- Stabby Jane
+							["sourceQuests"] = { 49218 },	-- The Castaways
+						})),
+						a(q(49226, {	-- Silencing the Sisters
+							["qg"] = 128229, -- Stabby Jane
+							["sourceQuests"] = { 49218 },	-- The Castaways
+						})),
+						a(q(49218, {	-- The Castaways
+							["qg"] = 128377, -- Beachcomber Bob
+							["sourceQuests"] = { 47489 },	-- Stow and Go
 						})),
 						
 						q(48607),	-- Small Treasure Chest
@@ -310,22 +357,6 @@ _.Zones =
 						i(158270),	-- Outrigger Armguards
 						i(158269),	-- Sea Raider's Vambraces
 						i(155092),	-- Master Cannoneer's Cloak
-						}),
-						q(48421, {	-- Blood in the Tides
-						i(155024),	-- Navigator's Sandals
-						i(155026),	-- Freebooter Boots
-						i(155025),	-- Outrigger Boots
-						i(155023),	-- Sea Raider's Sabatons
-						i(155086),	-- Keelson's Bloody Drape
-
-						}),
-						q(53439, {	-- Blood in the Tides [HORDE]
-						i(155024),	-- Navigator's Sandals
-						i(155026),	-- Freebooter Boots
-						i(155025),	-- Outrigger Boots
-						i(155023),	-- Sea Raider's Sabatons
-						i(155086),	-- Keelson's Bloody Drape
-
 						}),
 						q(49417, {	-- Roughneck Riders
 						i(158239),	-- Navigator's Walkers
