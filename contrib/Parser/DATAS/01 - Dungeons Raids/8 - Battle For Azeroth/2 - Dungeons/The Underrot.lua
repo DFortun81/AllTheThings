@@ -154,10 +154,11 @@ _.Instances =
 								["groups"] = {
 									ach(12498), -- Taint Nobody Got Time For That
 									i(159324), -- Blood Elder's Bindings
-									i(159402), -- Waistguard of Sanguine Fervor
+									i(159652), -- Leaxa's Thought-Piercer
 									i(159443), -- Legplates of Profane Sacrifice
 									i(159463), -- Loop of Pulsing Veins
 									i(159624), -- Rotcrusted Voodoo Doll
+									i(159402), -- Waistguard of Sanguine Fervor									
 								},
 								["crs"] = {
 									131318, -- Elder Leaxa <Voice of G'huun>

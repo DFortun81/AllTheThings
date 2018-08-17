@@ -509,6 +509,14 @@ profession(165, { -- Leatherworking
 		n(-17, { -- Quests			
 		}),	
 		n(-15, { -- Recipes
+			recipe(50949), -- Pattern: Arctic Belt
+			recipe(50948), -- Pattern: Arctic Boots
+			recipe(50944), -- Pattern: Arctic Chestpiece
+			recipe(50947), -- Pattern: Arctic Gloves
+			recipe(51572), -- Pattern: Arctic Helm
+			recipe(50945), -- Pattern: Arctic Leggings
+			recipe(50946), -- Pattern: Arctic Shoulderpads
+			recipe(50948), -- Pattern: Arctic Wristguards
 			recipe(51568), -- Pattern: Black Chitinguard Boots
 			recipe(60620), -- Pattern: Bugsquashers
 			recipe(60631), -- Pattern: Cloak of Harsh Winds
@@ -538,7 +546,9 @@ profession(165, { -- Leatherworking
 			recipe(60671), -- Pattern: Purehorn Spaulders
 			recipe(60649), -- Pattern: Razorstrike Breastplate			
 			recipe(60630), -- Pattern: Scaled Icewalkers			
-			recipe(60665), -- Pattern: Seafoam Gauntlets			
+			recipe(60665), -- Pattern: Seafoam Gauntlets		
+			recipe(60651), -- Pattern: Virulent Spaulders		
+			recipe(60669), -- Pattern: Wildscale Breastplate	
 		}),	
 		n(-2, { -- Vendors
 			i(49958), -- Pattern: Blessed Cenarion Boots
@@ -550,17 +560,8 @@ profession(165, { -- Leatherworking
 			i(44585), -- Pattern: Polar Cord
 			i(44584), -- Pattern: Polar Vest
 		}),
-		n(-44, { 	-- Leather
-			i(38405),	-- Arctic Belt
-			i(38404),	-- Arctic Boots
-			i(38400),	-- Arctic Chestpiece
-			i(38403),	-- Arctic Gloves
-			i(38437),	-- Arctic Helm
-			i(38401),	-- Arctic Leggings
-			i(38402),	-- Arctic Shoulderpads
-			i(38433),	-- Arctic Wristguards			
-			
-	
+		n(-44, { 	-- Leather			
+				
 			i(45555),	-- Death-Warmed Belt
 			i(43502),	-- Earthgiving Boots
 			i(43495),	-- Earthgiving Legguards
@@ -599,7 +600,7 @@ profession(165, { -- Leatherworking
 			i(43262),	-- Overcast Spaulders
 			i(43484),	-- Trollwoven Girdle
 			i(43481),	-- Trollwoven Spaulders			
-			i(43257),	-- Wildscale Breastplate
+			
 			i(44930),	-- Windripper Boots
 			i(44931),	-- Windripper Leggings
 		}),
@@ -651,7 +652,7 @@ profession(165, { -- Leatherworking
 			i(43447),	-- Swiftarrow Helm
 			i(43448),	-- Swiftarrow Leggings
 			i(43449),	-- Swiftarrow Shoulderguards
-			i(43130),	-- Virulent Spaulders
+		
 		}),
 	}),
 	tier(4, { 	-- Cataclysm
@@ -673,6 +674,8 @@ profession(165, { -- Leatherworking
 			recipe(78423), -- Pattern: Tsunami Chestguard
 			recipe(78415), -- Pattern: Tsunami Shoulders
 			recipe(78420), -- Pattern: Twilight Leg Armor
+			recipe(99536), -- Pattern: Vicious Fur Cloak
+			recipe(99535), -- Pattern: Vicious Hide Cloak
 		}),	
 		n(-2, { -- Vendors			
 		}),
@@ -683,8 +686,7 @@ profession(165, { -- Leatherworking
 			i(56548),	-- Razor-Edged Cloak
 			i(56480),	-- Savage Cloak
 			i(56549),	-- Twilight Dragonscale Cloak
-			i(75076),	-- Vicious Fur Cloak
-			i(75077),	-- Vicious Hide Cloak
+			
 		}),
 		n(-44, { 	-- Leather
 			i(56562),	-- Assassin's Chestplate

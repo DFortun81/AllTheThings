@@ -16,7 +16,8 @@ _.Zones =
 								}),
 							},
 						}),
-				}),
+					},
+				}),	
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
 						q(50606, {	-- Horde War Effort [The Honorbound]

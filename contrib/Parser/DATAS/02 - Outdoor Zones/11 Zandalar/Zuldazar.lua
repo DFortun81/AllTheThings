@@ -570,7 +570,7 @@ _.Zones =
 						}),		
 						n(136413, {	-- Syrawon the Dominus
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								sz(12944, 4},	-- Syrawon the Dominus
+								sz(12944, 4),	-- Syrawon the Dominus
 								i(161047),	-- Shadow Wind Leggings
 							}),
 							["questID"] = 51080,	
@@ -626,7 +626,7 @@ _.Zones =
 						}),		
 						n(131476, {	-- Zayoos		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								sz(12944, 5},	-- Zayoos
+								sz(12944, 5),	-- Zayoos
 								i(161125),	-- Kaja-fied Banana
 							}),	
 							["questID"] = 49972,
