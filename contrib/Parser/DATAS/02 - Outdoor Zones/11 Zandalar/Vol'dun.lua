@@ -592,7 +592,12 @@ i(155430),
 								}),
 								["questID"] = 49373,
 							}),
-							n(134638, {	-- Warlord Zothix		
+							--[[  Curently not used in Live, but was present in Beta
+							n(141931, {	-- Warlord Dagu [Missing]
+								-- ["questID"] =
+							}),
+							--]]
+							n(134638, {	-- Warlord Zothix
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161031),	-- Zothix's Conductive Vambraces
 								}),	
