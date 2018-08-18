@@ -3245,7 +3245,6 @@ profession(164, { -- Blacksmithing
 			}),
 		}),
 	}),
-	--[[ Lucetia: Do NOT activate.  Need to fix some things and adjust for BfA.
 	tier(8, { -- Battle for Azeroth
 		n(-2, { -- Vendors
 			n(135447, { -- Ransa Greyfeather (Zuldazar)
@@ -3268,62 +3267,77 @@ profession(164, { -- Blacksmithing
 			}),
 		}),
 		n(-15, { -- Recipes
-			recipe(269464), -- Recipe: Honorable Combatant's Cutlass (Rank 1)
-			recipe(269465), -- Recipe: Honorable Combatant's Cutlass (Rank 2)
-			recipe(269466), -- Recipe: Honorable Combatant's Cutlass (Rank 3)
-			recipe(269470), -- Recipe: Honorable Combatant's Deckpounder (Rank 1)
-			recipe(269471), -- Recipe: Honorable Combatant's Deckpounder (Rank 2)
-			recipe(269472), -- Recipe: Honorable Combatant's Deckpounder (Rank 3)
-			recipe(269451), -- Recipe: Honorable Combatant's Plate Armguards (Rank 1)
-			recipe(269452), -- Recipe: Honorable Combatant's Plate Armguards (Rank 2)
-			recipe(269453), -- Recipe: Honorable Combatant's Plate Armguards (Rank 3)
-			recipe(269424), -- Recipe: Honorable Combatant's Plate Boots (Rank 1)
-			recipe(269425), -- Recipe: Honorable Combatant's Plate Boots (Rank 2)
-			recipe(269426), -- Recipe: Honorable Combatant's Plate Boots (Rank 3)
-			recipe(269421), -- Recipe: Honorable Combatant's Plate Gauntlets (Rank 1)
-			recipe(269422), -- Recipe: Honorable Combatant's Plate Gauntlets (Rank 2)
-			recipe(269423), -- Recipe: Honorable Combatant's Plate Gauntlets (Rank 3)
-			recipe(269444), -- Recipe: Honorable Combatant's Plate Greaves (Rank 1)
-			recipe(269446), -- Recipe: Honorable Combatant's Plate Greaves (Rank 2)
-			recipe(269447), -- Recipe: Honorable Combatant's Plate Greaves (Rank 3)
-			recipe(269448), -- Recipe: Honorable Combatant's Plate Waistguard (Rank 1)
-			recipe(269449), -- Recipe: Honorable Combatant's Plate Waistguard (Rank 2)
-			recipe(269450), -- Recipe: Honorable Combatant's Plate Waistguard (Rank 3)
-			recipe(269479), -- Recipe: Honorable Combatant's Polearm (Rank 1)
-			recipe(269480), -- Recipe: Honorable Combatant's Polearm (Rank 2)
-			recipe(269481), -- Recipe: Honorable Combatant's Polearm (Rank 3)
-			recipe(269476), -- Recipe: Honorable Combatant's Shanker (Rank 1)
-			recipe(269477), -- Recipe: Honorable Combatant's Shanker (Rank 2)
-			recipe(269478), -- Recipe: Honorable Combatant's Shanker (Rank 3)
-			recipe(269458), -- Recipe: Honorable Combatant's Shield (Rank 1)
-			recipe(269459), -- Recipe: Honorable Combatant's Shield (Rank 2)
-			recipe(269460), -- Recipe: Honorable Combatant's Shield (Rank 3)
-			recipe(256786), -- Recipe: Honorable Combatant's Spellblade (Rank 1)
-			recipe(253149), -- Recipe: Honorable Combatant's Spellblade (Rank 2)
-			recipe(253144), -- Recipe: Honorable Combatant's Spellblade (Rank 3)
-			recipe(253183), -- Recipe: Monel-Hardened Armguards
-			recipe(253165), -- Recipe: Monel-Hardened Boots
-			recipe(253162), -- Recipe: Monel-Hardened Breastplate
-			recipe(253135), -- Recipe: Monel-Hardened Claymore
-			recipe(253125), -- Recipe: Monel-Hardened Cutlass
-			recipe(253132), -- Recipe: Monel-Hardened Deckpounder
-			recipe(253168), -- Recipe: Monel-Hardened Gauntlets
-			recipe(253174), -- Recipe: Monel-Hardened Greaves
-			recipe(253171), -- Recipe: Monel-Hardened Helm
-			recipe(253177), -- Recipe: Monel-Hardened Pauldrons
-			recipe(253141), -- Recipe: Monel-Hardened Polearm
-			recipe(253138), -- Recipe: Monel-Hardened Shanker
-			recipe(253113), -- Recipe: Monel-Hardened Shield
-			recipe(253180), -- Recipe: Monel-Hardened Waistguard
-			recipe(253156), -- Recipe: Stormsteel Dagger (Rank 1)
-			recipe(253157), -- Recipe: Stormsteel Dagger (Rank 2)
-			recipe(253186), -- Recipe: Stormsteel Legguards
-			recipe(278131), -- Recipe: Stormsteel Saber (Rank 1)
-			recipe(278132), -- Recipe: Stormsteel Saber (Rank 2)
-			recipe(253116), -- Recipe: Stormsteel Shield (Rank 1)
-			recipe(253117), -- Recipe: Stormsteel Shield (Rank 2)
-			recipe(253159), -- Recipe: Stormsteel Spear (Rank 1)
-			recipe(253160), -- Recipe: Stormsteel Spear (Rank 2)
+			recipe(253192, { ["spellID"] = 253192, }),	-- Emblazoned Stormsteel Girdle
+			recipe(253188, { ["spellID"] = 253188, }),	-- Emblazoned Stormsteel Legguards
+			recipe(269464, { ["spellID"] = 269464, }),	-- Honorable Combatant's Cutlass
+			recipe(269465, { ["spellID"] = 269465, }),	-- Honorable Combatant's Cutlass
+			recipe(269466, { ["spellID"] = 269466, }),	-- Honorable Combatant's Cutlass
+			recipe(269470, { ["spellID"] = 269470, }),	-- Honorable Combatant's Deckpounder
+			recipe(269471, { ["spellID"] = 269471, }),	-- Honorable Combatant's Deckpounder
+			recipe(269472, { ["spellID"] = 269472, }),	-- Honorable Combatant's Deckpounder
+			recipe(269451, { ["spellID"] = 269451, }),	-- Honorable Combatant's Plate Armguards
+			recipe(269452, { ["spellID"] = 269452, }),	-- Honorable Combatant's Plate Armguards
+			recipe(269453, { ["spellID"] = 269453, }),	-- Honorable Combatant's Plate Armguards
+			recipe(269424, { ["spellID"] = 269424, }),	-- Honorable Combatant's Plate Boots
+			recipe(269425, { ["spellID"] = 269425, }),	-- Honorable Combatant's Plate Boots
+			recipe(269426, { ["spellID"] = 269426, }),	-- Honorable Combatant's Plate Boots
+			recipe(269421, { ["spellID"] = 269421, }),	-- Honorable Combatant's Plate Gauntlets
+			recipe(269422, { ["spellID"] = 269422, }),	-- Honorable Combatant's Plate Gauntlets
+			recipe(269423, { ["spellID"] = 269423, }),	-- Honorable Combatant's Plate Gauntlets
+			recipe(269444, { ["spellID"] = 269444, }),	-- Honorable Combatant's Plate Greaves
+			recipe(269446, { ["spellID"] = 269446, }),	-- Honorable Combatant's Plate Greaves
+			recipe(269447, { ["spellID"] = 269447, }),	-- Honorable Combatant's Plate Greaves
+			recipe(269448, { ["spellID"] = 269448, }),	-- Honorable Combatant's Plate Waistguard
+			recipe(269449, { ["spellID"] = 269449, }),	-- Honorable Combatant's Plate Waistguard
+			recipe(269450, { ["spellID"] = 269450, }),	-- Honorable Combatant's Plate Waistguard
+			recipe(269479, { ["spellID"] = 269479, }),	-- Honorable Combatant's Polearm
+			recipe(269480, { ["spellID"] = 269480, }),	-- Honorable Combatant's Polearm
+			recipe(269481, { ["spellID"] = 269481, }),	-- Honorable Combatant's Polearm
+			recipe(269476, { ["spellID"] = 269476, }),	-- Honorable Combatant's Shanker
+			recipe(269477, { ["spellID"] = 269477, }),	-- Honorable Combatant's Shanker
+			recipe(269478, { ["spellID"] = 269478, }),	-- Honorable Combatant's Shanker
+			recipe(269458, { ["spellID"] = 269458, }),	-- Honorable Combatant's Shield
+			recipe(269459, { ["spellID"] = 269459, }),	-- Honorable Combatant's Shield
+			recipe(269460, { ["spellID"] = 269460, }),	-- Honorable Combatant's Shield
+			recipe(256786, { ["spellID"] = 256786, }),	-- Honorable Combatant's Spellblade
+			recipe(253149, { ["spellID"] = 253149, }),	-- Honorable Combatant's Spellblade
+			recipe(253144, { ["spellID"] = 253144, }),	-- Honorable Combatant's Spellblade
+			recipe(253191, { ["spellID"] = 253191, }),	-- Imbued Stormsteel Girdle
+			recipe(253187, { ["spellID"] = 253187, }),	-- Imbued Stormsteel Legguards
+			recipe(278416, { ["spellID"] = 278416, }),	-- Magnetic Mining Pick
+			recipe(253183, { ["spellID"] = 253183, }),	-- Monel-Hardened Armguards
+			recipe(253165, { ["spellID"] = 253165, }),	-- Monel-Hardened Boots
+			recipe(253162, { ["spellID"] = 253162, }),	-- Monel-Hardened Breastplate
+			recipe(253135, { ["spellID"] = 253135, }),	-- Monel-Hardened Claymore
+			recipe(253125, { ["spellID"] = 253125, }),	-- Monel-Hardened Cutlass
+			recipe(253132, { ["spellID"] = 253132, }),	-- Monel-Hardened Deckpounder
+			recipe(253168, { ["spellID"] = 253168, }),	-- Monel-Hardened Gauntlets
+			recipe(253174, { ["spellID"] = 253174, }),	-- Monel-Hardened Greaves
+			recipe(253171, { ["spellID"] = 253171, }),	-- Monel-Hardened Helm
+			recipe(253110, { ["spellID"] = 253110, }),	-- Monel-Hardened Hoofplates
+			recipe(253177, { ["spellID"] = 253177, }),	-- Monel-Hardened Pauldrons
+			recipe(253141, { ["spellID"] = 253141, }),	-- Monel-Hardened Polearm
+			recipe(253138, { ["spellID"] = 253138, }),	-- Monel-Hardened Shanker
+			recipe(253113, { ["spellID"] = 253113, }),	-- Monel-Hardened Shield
+			recipe(253112, { ["spellID"] = 253112, }),	-- Monel-Hardened Stirrups
+			recipe(253180, { ["spellID"] = 253180, }),	-- Monel-Hardened Waistguard
+			recipe(269064, { ["spellID"] = 269064, }),	-- Monelite Skeleton Key
+			recipe(278417, { ["spellID"] = 278417, }),	-- Platinum Whetstone
+			recipe(278415, { ["spellID"] = 278415, }),	-- Storm Silver Spurs
+			recipe(253156, { ["spellID"] = 253156, }),	-- Stormsteel Dagger
+			recipe(253157, { ["spellID"] = 253157, }),	-- Stormsteel Dagger
+			recipe(253158, { ["spellID"] = 253158, }),	-- Stormsteel Dagger
+			recipe(253190, { ["spellID"] = 253190, }),	-- Stormsteel Girdle
+			recipe(253186, { ["spellID"] = 253186, }),	-- Stormsteel Legguards
+			recipe(278131, { ["spellID"] = 278131, }),	-- Stormsteel Saber
+			recipe(278132, { ["spellID"] = 278132, }),	-- Stormsteel Saber
+			recipe(278133, { ["spellID"] = 278133, }),	-- Stormsteel Saber
+			recipe(253116, { ["spellID"] = 253116, }),	-- Stormsteel Shield
+			recipe(253117, { ["spellID"] = 253117, }),	-- Stormsteel Shield
+			recipe(253118, { ["spellID"] = 253118, }),	-- Stormsteel Shield
+			recipe(253159, { ["spellID"] = 253159, }),	-- Stormsteel Spear
+			recipe(253160, { ["spellID"] = 253160, }),	-- Stormsteel Spear
+			recipe(253161, { ["spellID"] = 253161, }),	-- Stormsteel Spear
 		}),
 		n(-37, { -- Discovery
 			recipe(253190, { -- Recipe: Stormsteel Girdle
@@ -3338,14 +3352,7 @@ profession(164, { -- Blacksmithing
 			}),
 		}),
 	}),
-    NOT YET IMPLEMENTED
-		recipe(253145), -- Recipe: Khaz'gorian Hammer
-		recipe(278416), -- Recipe: Magnetic Mining Pick
-		recipe(253110), -- Recipe: Monel-Hardened Hoofplates
-		recipe(253112), -- Recipe: Monel-Hardened Stirrups
-		recipe(269064), -- Recipe: Monelite Skeleton Key
-		recipe(278417), -- Recipe: Platinum Whetstone
-		recipe(278415), -- Recipe: Storm Silver Spurs
+
 		n(-10032, { -- Appearances
 			n(-318, { -- Armor
 			}),
