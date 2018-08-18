@@ -7540,7 +7540,7 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
---[[
+--
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
@@ -7747,7 +7747,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 	end
 	UpdateWindow(self, true);
 end):Show();
-]]--
+--]]
 app:GetWindow("CurrentInstance");
 app:GetWindow("RaidAssistant", UIParent, function(self)
 	if not self.initialized then

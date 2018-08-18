@@ -17,7 +17,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),	
+				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
 						q(50606, {	-- Horde War Effort [The Honorbound]
@@ -37,9 +37,7 @@ _.Zones =
 					["groups"] = {
 						q(51962, {	-- Lumbering Away
 							["groups"] = {
-								recipe(253334, {	-- Monelite Deposit Rank 2
-									["spellID"] = 253334,	-- Monelite Deposit Rank 2
-								}),
+								recipe(253334),	-- Monelite Deposit Rank 2
 							},
 							["description"] = "Requires 50 Zandalari Mining",
 							["requireSkill"] = 2565,	-- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
@@ -47,9 +45,7 @@ _.Zones =
 						}),
 						q(52014, {	-- Ritualistic Prepartions
 							["groups"] = {
-								recipe(253337, {	-- Storm Silver Deposit Rank 2
-									["spellID"] = 253337,	-- Storm Silver Deposit Rank 2
-								}),
+								recipe(253337),	-- Storm Silver Deposit Rank 2
 							},
 							["description"] = "Requires 50 Zandalari Mining",
 							["requireSkill"] = 2565,	-- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
@@ -99,36 +95,36 @@ _.Zones =
 											},
 											["qg"] = 135441,	-- Zolani
 											["sourceQuests"] = { 46926, 46846, }	-- Shakedown, The Word of Zul
-										}),		
+										}),	
 										q(48454, {	-- Evidence of Evil	
 											["qg"] = 126148,	-- Witch Doctor Jala
 											["sourceQuests"] = { 48452 },	-- The Red Market
-										}),		
+										}),	
 										q(46927, {	-- Punishment of Tal'aman	
 											["qg"] = 126684,	-- Yazma
 											["sourceQuests"] = { 48454 },	-- Evidence of Evil
-										}),		
+										}),	
 										q(46928, {	-- Punishment of Tal'farrak	
 											["qg"] = 126684,	-- Yazma
 											["sourceQuests"] = { 48454 },	-- Evidence of Evil
-										}),		
+										}),	
 										q(50881, {	-- Royal Report	[Note: Final Quest needed to trigger criteria]
 											["qg"] = 135441,	-- Zolani
 											["sourceQuests"] = { 46927, 46928, },	-- Punishment of Tal'aman, Punishment of Tal'farrak
 											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-										}),	
+										}),
 										q(46926, {	-- Shakedown	
 											["qg"] = 135441,	-- Zolani
 											["sourceQuests"] = { 50835 },	-- The Port of Zandalar
-										}),		
+										}),	
 										q(50835, {	-- The Port of Zandalar	
 											["qg"] = 122915,	-- Zolani
 											["sourceQuests"] = { 49615 },	-- Trust of a King
-										}),		
+										}),	
 										q(48452, {	-- The Red Market	
 											["qg"] = 126148,	-- Witch Doctor Jala
 											["sourceQuests"] = { 46929, 48456, }	-- Deterrent, Witch Doctor Jala
-										}),		
+										}),	
 										q(46846, {	-- The Word of Zul	
 											["qg"] = 126684,	-- Yazma
 											["sourceQuests"] = { 50835 },	-- The Port of Zandalar
@@ -137,7 +133,7 @@ _.Zones =
 										q(48456, {	-- Witch Doctor Jala	
 											["qg"] = 135441,	-- Zolani
 											["sourceQuests"] = { 46926, 46846, },	-- Shakedown, The Word of Zul
-										}),	
+										}),
 										--]]
 									},
 								}),
@@ -146,11 +142,11 @@ _.Zones =
 										q(47437, {	-- Competitive Devotion	
 											["qg"] = 126564,	-- Hexlord Raal
 											["sourceQuests"] = { 47434, 47435, },	-- Restraining Order, Pterrortorial Dispute
-										}),		
+										}),	
 										q(47442, {	-- Curse of Jani	
 											["qg"] = 126334,	-- Jani
 											["sourceQuests"] = { 47441 },	-- Pests
-										}),		
+										}),	
 										q(47422, {	-- Dire Situation	
 											["groups"] = {
 												i(159102),	-- Raal's Spare Hexxer
@@ -164,16 +160,16 @@ _.Zones =
 											},
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47437 },	-- Competitive Devotion
-										}),	
+										}),
 										q(47423, {	-- Forbidden Practices	
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47445 },	-- The Zanchuli Council
-										}),		
+										}),	
 										q(47439, {	-- Gonk, Lord of the Pack f[Note: One of two final Quest needed to trigger criteria]
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47438 },	-- Picking a Side
 											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-										}),	
+										}),
 										q(47433, {	-- Offensively Defensive
 											["groups"] = {
 												i(155246),	-- Jambani Grips
@@ -187,32 +183,32 @@ _.Zones =
 											},
 											["qg"] = 126564,	-- Hexlord Raal
 											["sourceQuests"] = { 47423 },	-- Forbidden Practices
-										}),	
+										}),
 										q(47440, {	-- Pa'ku, Master of Winds [Note: One of two final Quest needed to trigger criteria]
 											["qg"] = 126564,	-- Hexlord Raal
 											["sourceQuests"] = { 47438 },	-- Picking a Side
 											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-										}),		
+										}),	
 										q(47441, {	-- Pests	
 											["qg"] = 127665,	-- Nokano
 											["sourceQuests"] = { 47445 },	-- The Zanchuli Council
-										}),	
+										}),
 										q(47438, {	-- Picking a Side	
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47422 },	-- Dire Situation
-										}),		
+										}),	
 										q(47435, {	-- Pterrortorial Dispute	
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47433 },	-- Offensively Defensive
-										}),		
+										}),	
 										q(47434, {	-- Restraining Order	
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47433 },	-- Offensively Defensive
-										}),		
+										}),	
 										q(47445, {	-- The Zanchuli Council	
 											["qg"] = 122641,	-- Yazma
 											["sourceQuests"] = { 49615 },	-- Trust of a King
-										}),	
+										}),
 									},
 								}),
 							},
@@ -225,7 +221,7 @@ _.Zones =
 										q(47103, {	-- Journey to Nazmir
 											["qg"] = 133050,
 											["sourceQuests"] = { 47512 },	-- Nazmir
-										}),	
+										}),
 										q(47512, {	-- Nazmir
 											["qg"] = 133050,
 											-- ["sourceQuests"] = { 52131 }, -- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievemnt because they can't pick anything up regardless and less spammy in Quest Chain window
@@ -233,7 +229,7 @@ _.Zones =
 										q(48535, {	-- Nazmir, the Forbidden Swamp
 											["qg"] = 126549,
 											["sourceQuests"] = { 47103 },	-- Journey to Nazmir
-										}),	
+										}),
 									},
 								}),
 							},
@@ -270,9 +266,9 @@ _.Zones =
 						n(120899, {	-- Kul'krazahn
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160947),	-- Amani Berserker's Chopper
-							}),		
+							}),	
 							["questID"] = 48333,
-						}),	
+						}),
 					},
 				}),
 				n(-212, {	-- Treasure Chest
@@ -339,338 +335,256 @@ _.Zones =
 								i(161524),	-- Torcali's Grips of the Bounty
 								i(161517),	-- Waistcord of Pa'ku's Flight
 								i(160530),	-- Dinomancer's Cloak
-								i(162764, {	-- Design: Laribole Staff of Alacrity [Rank 3]	
-									["recipeID"] = 256257,
+								i(162764, {	-- Design: Laribole Staff of Alacrity [Rank 3]
 									["spellID"] = 256257,
-								}),	
-								i(162761, {	-- Design: Owlseye Loop [Rank 3]	
-									["recipeID"] = 256517,
+								}),
+								i(162761, {	-- Design: Owlseye Loop [Rank 3]
 									["spellID"] = 256517,
-								}),	
-								i(162765, {	-- Design: Scarlet Diamond Staff of Intuition [Rank 3]	
-									["recipeID"] = 256260,
+								}),
+								i(162765, {	-- Design: Scarlet Diamond Staff of Intuition [Rank 3]
 									["spellID"] = 256260,
-								}),	
-								i(162717, {	-- Formula: Enchant Ring - Pact of Haste [Rank 3]	
-									["recipeID"] = 255099,
+								}),
+								i(162717, {	-- Formula: Enchant Ring - Pact of Haste [Rank 3]
 									["spellID"] = 255099,
-								}),	
-								i(162722, {	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3]	
-									["recipeID"] = 268909,
+								}),
+								i(162722, {	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3]
 									["spellID"] = 268909,
-								}),	
-								i(162721, {	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]	
-									["recipeID"] = 268915,
+								}),
+								i(162721, {	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]
 									["spellID"] = 268915,
-								}),	
-								i(163317, {	-- Recipe: Battle Potion of Stamina [Rank 3]	
-									["recipeID"] = 279167,
+								}),
+								i(163317, {	-- Recipe: Battle Potion of Stamina [Rank 3]
 									["spellID"] = 279167,
-								}),	
-								i(162704, {	-- Recipe: Coastal Healing Potion [Rank 3]	
-									["recipeID"] = 252384,
+								}),
+								i(162704, {	-- Recipe: Coastal Healing Potion [Rank 3]
 									["spellID"] = 252384,
-								}),	
-								i(162753, {	-- Recipe: Contract: Zandalari Empire [Rank 2]	
-									["recipeID"] = 256285,
+								}),
+								i(162753, {	-- Recipe: Contract: Zandalari Empire [Rank 2]
 									["spellID"] = 256285,
-								}),	
-								i(162696, {	-- Recipe: Flask of Endless Fathoms [Rank 3]	
-									["recipeID"] = 252353,
+								}),
+								i(162696, {	-- Recipe: Flask of Endless Fathoms [Rank 3]
 									["spellID"] = 252353,
-								}),	
-								i(162692, {	-- Recipe: Potion of Replenishment [Rank 3]	
-									["recipeID"] = 252340,
+								}),
+								i(162692, {	-- Recipe: Potion of Replenishment [Rank 3]
 									["spellID"] = 252340,
-								}),	
-								i(162730, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]	
-									["recipeID"] = 272060,
+								}),
+								i(162730, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]
 									["spellID"] = 272060,
-								}),	
-								i(162731, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]	
-									["recipeID"] = 272061,
+								}),
+								i(162731, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]
 									["spellID"] = 272061,
-								}),	
-								i(162743, {	-- Schematic: Deployable Attire Rearranger [Rank 3]	
-									["recipeID"] = 256156,
+								}),
+								i(162743, {	-- Schematic: Deployable Attire Rearranger [Rank 3]
 									["spellID"] = 256156,
-								}),	
-								i(162742, {	-- Schematic: Interdimensional Companion Repository [Rank 3]	
-									["recipeID"] = 256084,
+								}),
+								i(162742, {	-- Schematic: Interdimensional Companion Repository [Rank 3]
 									["spellID"] = 256084,
-								}),	
-								i(162741, {	-- Schematic: Organic Discombobulation Grenade [Rank 3]	
-									["recipeID"] = 255409,
+								}),
+								i(162741, {	-- Schematic: Organic Discombobulation Grenade [Rank 3]
 									["spellID"] = 255409,
-								}),	
+								}),
 							},
 						}),
 						n(142552, {	-- Ozgrom Ragefang <Profession Liason> [NOTE: PvP Craftable Recipes]
 							["groups"] = {
 								i(162439, {	-- Pattern: Honorable Combatant's Satin Belt [Rank 2]
-									["recipeID"] = 269609,
 									["spellID"] = 269609,
-								}),	
-								i(162440, {	-- Pattern: Honorable Combatant's Satin Belt [Rank 3]	
-									["recipeID"] = 269610,
+								}),
+								i(162440, {	-- Pattern: Honorable Combatant's Satin Belt [Rank 3]
 									["spellID"] = 269610,
-								}),	
-								i(162433, {	-- Pattern: Honorable Combatant's Satin Boots [Rank 2]	
-									["recipeID"] = 269600,
+								}),
+								i(162433, {	-- Pattern: Honorable Combatant's Satin Boots [Rank 2
 									["spellID"] = 269600,
-								}),	
-								i(162434, {	-- Pattern: Honorable Combatant's Satin Boots [Rank 3]		
-									["recipeID"] = 269601,
+								}),
+								i(162434, {	-- Pattern: Honorable Combatant's Satin Boots [Rank 3]
 									["spellID"] = 269601,
-								}),	
-								i(162441, {	-- Pattern: Honorable Combatant's Satin Bracers [Rank 2]	
-									["recipeID"] = 269612,
+								}),
+								i(162441, {	-- Pattern: Honorable Combatant's Satin Bracers [Rank 2]
 									["spellID"] = 269612,
-								}),	
-								i(162442, {	-- Pattern: Honorable Combatant's Satin Bracers [Rank 3]		
-									["recipeID"] = 269613,
+								}),
+								i(162442, {	-- Pattern: Honorable Combatant's Satin Bracers [Rank 3]
 									["spellID"] = 269613,
-								}),	
-								i(162431, {	-- Pattern: Honorable Combatant's Satin Cloak [Rank 2]	
-									["recipeID"] = 269597,
+								}),
+								i(162431, {	-- Pattern: Honorable Combatant's Satin Cloak [Rank 2]
 									["spellID"] = 269597,
-								}),	
-								i(162432, {	-- Pattern: Honorable Combatant's Satin Cloak [Rank 3]		
-									["recipeID"] = 269598,
+								}),
+								i(162432, {	-- Pattern: Honorable Combatant's Satin Cloak [Rank 3]
 									["spellID"] = 269598,
-								}),	
-								i(162435, {	-- Pattern: Honorable Combatant's Satin Mittens [Rank 2]	
-									["recipeID"] = 269603,
+								}),
+								i(162435, {	-- Pattern: Honorable Combatant's Satin Mittens [Rank 2]
 									["spellID"] = 269603,
-								}),	
-								i(162436, {	-- Pattern: Honorable Combatant's Satin Mittens [Rank 3]		
-									["recipeID"] = 269604,
+								}),
+								i(162436, {	-- Pattern: Honorable Combatant's Satin Mittens [Rank 3]
 									["spellID"] = 269604,
-								}),	
-								i(162437, {	-- Pattern: Honorable Combatant's Satin Pants [Rank 2]	
-									["recipeID"] = 269606,
+								}),
+								i(162437, {	-- Pattern: Honorable Combatant's Satin Pants [Rank 2]
 									["spellID"] = 269606,
-								}),	
-								i(162438, {	-- Pattern: Honorable Combatant's Satin Pants [Rank 3]		
-									["recipeID"] = 269607,
+								}),
+								i(162438, {	-- Pattern: Honorable Combatant's Satin Pants [Rank 3]
 									["spellID"] = 269607,
-								}),	
-								i(162417, {	-- Recipe: Honorable Combatant's Bow [Rank 2]	
-									["recipeID"] = 269553,
+								}),
+								i(162417, {	-- Recipe: Honorable Combatant's Bow [Rank 2]
 									["spellID"] = 269553,
-								}),	
-								i(162418, {	-- Recipe: Honorable Combatant's Bow [Rank 3]		
-									["recipeID"] = 269554,
+								}),
+								i(162418, {	-- Recipe: Honorable Combatant's Bow [Rank 3]
 									["spellID"] = 269554,
-								}),	
-								i(162277, {	-- Recipe: Honorable Combatant's Cutlass [Rank 2]	
-									["recipeID"] = 269465,
+								}),
+								i(162277, {	-- Recipe: Honorable Combatant's Cutlass [Rank 2]
 									["spellID"] = 269465,
-								}),	
-								i(162278, {	-- Recipe: Honorable Combatant's Cutlass [Rank 3]		
-									["recipeID"] = 269466,
+								}),
+								i(162278, {	-- Recipe: Honorable Combatant's Cutlass [Rank 3]
 									["spellID"] = 269466,
-								}),	
-								i(162279, {	-- Recipe: Honorable Combatant's Deckpounder [Rank 2]	
-									["recipeID"] = 269471,
+								}),
+								i(162279, {	-- Recipe: Honorable Combatant's Deckpounder [Rank 2]
 									["spellID"] = 269471,
-								}),	
-								i(162280, {	-- Recipe: Honorable Combatant's Deckpounder [Rank 3]		
-									["recipeID"] = 269472,
+								}),
+								i(162280, {	-- Recipe: Honorable Combatant's Deckpounder [Rank 3]
 									["spellID"] = 269472,
-								}),	
-								i(162353, {	-- Recipe: Honorable Combatant's Etched Vessel [Rank 2]	
-									["recipeID"] = 269741,
+								}),
+								i(162353, {	-- Recipe: Honorable Combatant's Etched Vessel [Rank 2]
 									["spellID"] = 269741,
-								}),	
-								i(162354, {	-- Recipe: Honorable Combatant's Etched Vessel [Rank 3]		
-									["recipeID"] = 269742,
+								}),
+								i(162354, {	-- Recipe: Honorable Combatant's Etched Vessel [Rank 3]
 									["spellID"] = 269742,
-								}),	
-								i(162398, {	-- Recipe: Honorable Combatant's Leather Armguards [Rank 2]	
-									["recipeID"] = 269529,
+								}),
+								i(162398, {	-- Recipe: Honorable Combatant's Leather Armguards [Rank 2]
 									["spellID"] = 269529,
 								}),
-								i(162399, {	-- Recipe: Honorable Combatant's Leather Armguards [Rank 3]	
-									["recipeID"] = 269530,
+								i(162399, {	-- Recipe: Honorable Combatant's Leather Armguards [Rank 3]
 									["spellID"] = 269530,
-								}),	
-								i(162392, {	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 2]		
-									["recipeID"] = 269520,
+								}),
+								i(162392, {	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 2]
 									["spellID"] = 269520,
-								}),	
-								i(162393, {	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 3]	
-									["recipeID"] = 269521,
+								}),
+								i(162393, {	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 3]
 									["spellID"] = 269521,
-								}),	
-								i(162394, {	-- Recipe: Honorable Combatant's Leather Leggings [Rank 2]		
-									["recipeID"] = 269523,
+								}),
+								i(162394, {	-- Recipe: Honorable Combatant's Leather Leggings [Rank 2]
 									["spellID"] = 269523,
-								}),	
-								i(162395, {	-- Recipe: Honorable Combatant's Leather Leggings [Rank 3]	
-									["recipeID"] = 269524,
+								}),
+								i(162395, {	-- Recipe: Honorable Combatant's Leather Leggings [Rank 3]
 									["spellID"] = 269524,
-								}),	
-								i(162390, {	-- Recipe: Honorable Combatant's Leather Treads [Rank 2]		
-									["recipeID"] = 269517,
+								}),
+								i(162390, {	-- Recipe: Honorable Combatant's Leather Treads [Rank 2]
 									["spellID"] = 269517,
-								}),	
+								}),
 								i(162391, {	-- Recipe: Honorable Combatant's Leather Treads [Rank 3]
-									["recipeID"] = 269518,
 									["spellID"] = 269518,
-								}),	
-								i(162396, {	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 2]		
-									["recipeID"] = 269526,
+								}),
+								i(162396, {	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 2]
 									["spellID"] = 269526,
-								}),	
-								i(162397, {	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 3]	
-									["recipeID"] = 269527,
+								}),
+								i(162397, {	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 3]
 									["spellID"] = 269527,
-								}),	
-								i(162410, {	-- Recipe: Honorable Combatant's Mail Armguards [Rank 2]		
-									["recipeID"] = 269544,
+								}),
+								i(162410, {	-- Recipe: Honorable Combatant's Mail Armguards [Rank 2]
 									["spellID"] = 269544,
-								}),	
+								}),
 								i(162411, {	-- Recipe: Honorable Combatant's Mail Armguards	 [Rank 3]
-									["recipeID"] = 269545,
 									["spellID"] = 269545,
-								}),	
-								i(162404, {	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 2]		
-									["recipeID"] = 269535,
+								}),
+								i(162404, {	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 2]
 									["spellID"] = 269535,
-								}),	
-								i(162405, {	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 3]	
-									["recipeID"] = 269536,
+								}),
+								i(162405, {	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 3]
 									["spellID"] = 269536,
-								}),	
-								i(162406, {	-- Recipe: Honorable Combatant's Mail Leggings [Rank 2]		
-									["recipeID"] = 269538,
+								}),
+								i(162406, {	-- Recipe: Honorable Combatant's Mail Leggings [Rank 2]
 									["spellID"] = 269538,
-								}),	
+								}),
 								i(162407, {	-- Recipe: Honorable Combatant's Mail Leggings [Rank 3]
-									["recipeID"] = 269539,
 									["spellID"] = 269539,
-								}),	
-								i(162402, {	-- Recipe: Honorable Combatant's Mail Treads [Rank 2]		
-									["recipeID"] = 269532,
+								}),
+								i(162402, {	-- Recipe: Honorable Combatant's Mail Treads [Rank 2]
 									["spellID"] = 269532,
-								}),	
-								i(162403, {	-- Recipe: Honorable Combatant's Mail Treads [Rank 3]	
-									["recipeID"] = 269533,
+								}),
+								i(162403, {	-- Recipe: Honorable Combatant's Mail Treads [Rank 3]
 									["spellID"] = 269533,
-								}),	
-								i(162408, {	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 2]		
-									["recipeID"] = 269541,
+								}),
+								i(162408, {	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 2]
 									["spellID"] = 269541,
-								}),	
-								i(162409, {	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 3]	
-									["recipeID"] = 269542,
+								}),
+								i(162409, {	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 3]
 									["spellID"] = 269542,
-								}),	
-								i(162271, {	-- Recipe: Honorable Combatant's Plate Armguards [Rank 2]		
-									["recipeID"] = 269452,
+								}),
+								i(162271, {	-- Recipe: Honorable Combatant's Plate Armguards [Rank 2]
 									["spellID"] = 269452,
-								}),	
-								i(162272, {	-- Recipe: Honorable Combatant's Plate Armguards [Rank 3]	
-									["recipeID"] = 269453,
+								}),
+								i(162272, {	-- Recipe: Honorable Combatant's Plate Armguards [Rank 3]
 									["spellID"] = 269453,
-								}),	
-								i(162262, {	-- Recipe: Honorable Combatant's Plate Boots [Rank 2]	
-									["recipeID"] = 269425,
+								}),
+								i(162262, {	-- Recipe: Honorable Combatant's Plate Boots [Rank 2]
 									["spellID"] = 269425,
-								}),	
-								i(162263, {	-- Recipe: Honorable Combatant's Plate Boots [Rank 3]	
-									["recipeID"] = 269426,
+								}),
+								i(162263, {	-- Recipe: Honorable Combatant's Plate Boots [Rank 3]
 									["spellID"] = 269426,
-								}),	
-								i(162265, {	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 2]	
-									["recipeID"] = 269422,
+								}),
+								i(162265, {	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 2]
 									["spellID"] = 269422,
-								}),	
-								i(162266, {	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 3]	
-									["recipeID"] = 269423,
+								}),
+								i(162266, {	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 3]
 									["spellID"] = 269423,
-								}),	
-								i(162267, {	-- Recipe: Honorable Combatant's Plate Greaves [Rank 2]	
-									["recipeID"] = 269446,
+								}),
+								i(162267, {	-- Recipe: Honorable Combatant's Plate Greaves [Rank 2]
 									["spellID"] = 269446,
-								}),	
-								i(162268, {	-- Recipe: Honorable Combatant's Plate Greaves [Rank 3]	
-									["recipeID"] = 269447,
+								}),
+								i(162268, {	-- Recipe: Honorable Combatant's Plate Greaves [Rank 3]
 									["spellID"] = 269447,
-								}),	
-								i(162273, {	-- Recipe: Honorable Combatant's Plate Shield [Rank 2]	
-									["recipeID"] = 269459,
+								}),
+								i(162273, {	-- Recipe: Honorable Combatant's Plate Shield [Rank 2]
 									["spellID"] = 269459,
-								}),	
-								i(162274, {	-- Recipe: Honorable Combatant's Plate Shield [Rank 3]	
-									["recipeID"] = 269460,
+								}),
+								i(162274, {	-- Recipe: Honorable Combatant's Plate Shield [Rank 3]
 									["spellID"] = 269460,
-								}),	
-								i(162269, {	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 2]	
-									["recipeID"] = 269449,
+								}),
+								i(162269, {	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 2]
 									["spellID"] = 269449,
-								}),	
-								i(162270, {	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 3]	
-									["recipeID"] = 269450,
+								}),
+								i(162270, {	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 3]
 									["spellID"] = 269450,
-								}),	
-								i(162283, {	-- Recipe: Honorable Combatant's Polearm [Rank 2]	
-									["recipeID"] = 269480,
+								}),
+								i(162283, {	-- Recipe: Honorable Combatant's Polearm [Rank 2]
 									["spellID"] = 269480,
-								}),	
-								i(162284, {	-- Recipe: Honorable Combatant's Polearm [Rank 3]	
-									["recipeID"] = 269481,
+								}),
+								i(162284, {	-- Recipe: Honorable Combatant's Polearm [Rank 3]
 									["spellID"] = 269481,
-								}),	
-								i(162281, {	-- Recipe: Honorable Combatant's Shanker [Rank 2]	
-									["recipeID"] = 269477,
+								}),
+								i(162281, {	-- Recipe: Honorable Combatant's Shanker [Rank 2]
 									["spellID"] = 269477,
-								}),	
-								i(162282, {	-- Recipe: Honorable Combatant's Shanker [Rank 3]	
-									["recipeID"] = 269478,
+								}),
+								i(162282, {	-- Recipe: Honorable Combatant's Shanker [Rank 3]
 									["spellID"] = 269478,
-								}),	
-								i(162308, {	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 2]	
-									["recipeID"] = 269716,
+								}),
+								i(162308, {	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 2]
 									["spellID"] = 269716,
-								}),	
-								i(162309, {	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 3]	
-									["recipeID"] = 269717,
+								}),
+								i(162309, {	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 3]
 									["spellID"] = 269717,
-								}),	
-								i(162668, {	-- Recipe: Honorable Combatant's Spellblade [Rank 2]	
-									["recipeID"] = 253149,
+								}),
+								i(162668, {	-- Recipe: Honorable Combatant's Spellblade [Rank 2]
 									["spellID"] = 253149,
-								}),	
+								}),
 								i(162669, {	-- Recipe: Honorable Combatant's Spellblade	[Rank 3]
-									["recipeID"] = 253150,
 									["spellID"] = 253150,
-								}),	
-								i(163024, {	-- Recipe: Honorable Combatant's Staff of Intuition [Rank 2]	
-									["recipeID"] = 269735,
+								}),
+								i(163024, {	-- Recipe: Honorable Combatant's Staff of Intuition [Rank 2]
 									["spellID"] = 269735,
-								}),	
-								i(163025, {	-- Recipe: Honorable Combatant's Staff of Intuition [Rank 3]	
-									["recipeID"] = 269736,
+								}),
+								i(163025, {	-- Recipe: Honorable Combatant's Staff of Intuition [Rank 3]
 									["spellID"] = 269736,
-								}),	
-								i(163020, {	-- Schematic: Honorable Combatant's Discombobulator [Rank 2]	
-									["recipeID"] = 269725,
+								}),
+								i(163020, {	-- Schematic: Honorable Combatant's Discombobulator [Rank 2]
 									["spellID"] = 269725,
-								}),	
-								i(163021, {	-- Schematic: Honorable Combatant's Discombobulator [Rank 3]	
-									["recipeID"] = 269726,
+								}),
+								i(163021, {	-- Schematic: Honorable Combatant's Discombobulator [Rank 3]
 									["spellID"] = 269726,
-								}),	
-								i(163022, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2]	
-									["recipeID"] = 296728,
+								}),
+								i(163022, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2]
 									["spellID"] = 296728,
-								}),	
-								i(163023, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 3]	
-									["recipeID"] = 269729,
+								}),
+								i(163023, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 3]
 									["spellID"] = 269729,
-								}),	
+								}),
 							},
 							["itemID"] = 137642,	-- Mark of Honor
 						}),
@@ -696,73 +610,56 @@ _.Zones =
 								i(161498),	-- Wristwraps of the Dutiful Apothecary
 								i(160532),	-- Drape of the Horde's Fury
 								i(162760, {	-- Design: Amberblaze Loop [Rank 3]
-									["recipeID"] = 256515,
 									["spellID"] = 256515,
-								}),	
-								i(162716, {	-- Formula: Enchant Ring - Pact of Critical Strike [Rank 3]	
-									["recipeID"] = 255098,
+								}),
+								i(162716, {	-- Formula: Enchant Ring - Pact of Critical Strike [Rank 3]
 									["spellID"] = 255098,
-								}),	
-								i(163319, {	-- Recipe: Battle Potion of Strength [Rank 3]	
-									["recipeID"] = 279170,
+								}),
+								i(163319, {	-- Recipe: Battle Potion of Strength [Rank 3]
 									["spellID"] = 279170,
-								}),	
-								i(162720, {	-- Recipe: Enchanter's Sorcerous Scepter [Rank 3]	
-									["recipeID"] = 265112,
+								}),
+								i(162720, {	-- Recipe: Enchanter's Sorcerous Scepter [Rank 3]
 									["spellID"] = 265112,
-								}),	
-								i(162701, {	-- Recipe: Endless Tincture of Fractional Power [Rank 3]	
-									["recipeID"] = 252378,
+								}),
+								i(162701, {	-- Recipe: Endless Tincture of Fractional Power [Rank 3]
 									["spellID"] = 252378,
-								}),	
-								i(162695, {	-- Recipe: Flask of the Currents [Rank 3]	
-									["recipeID"] = 252350,
+								}),
+								i(162695, {	-- Recipe: Flask of the Currents [Rank 3]
 									["spellID"] = 252350,
-								}),	
-								i(162691, {	-- Recipe: Steelskin Potion [Rank 3]	
-									["recipeID"] = 252336,
+								}),
+								i(162691, {	-- Recipe: Steelskin Potion [Rank 3]
 									["spellID"] = 252336,
-								}),	
-								i(162707, {	-- Recipe: Stormsteel Dagger [Rank 3]	
-									["recipeID"] = 253158,
+								}),
+								i(162707, {	-- Recipe: Stormsteel Dagger [Rank 3]
 									["spellID"] = 253158,
-								}),	
-								i(162774, {	-- Recipe: Stormsteel Saber [Rank 3]	
-									["recipeID"] = 278133,
+								}),
+								i(162774, {	-- Recipe: Stormsteel Saber [Rank 3]
 									["spellID"] = 278133,
-								}),	
-								i(162706, {	-- Recipe: Stormsteel Shield [Rank 3]	
-									["recipeID"] = 253118,
+								}),
+								i(162706, {	-- Recipe: Stormsteel Shield [Rank 3]
 									["spellID"] = 253118,
-								}),	
-								i(162708, {	-- Recipe: Stormsteel Spear [Rank 3]	
-									["recipeID"] = 253161,
+								}),
+								i(162708, {	-- Recipe: Stormsteel Spear [Rank 3]
 									["spellID"] = 253161,
-								}),	
-								i(162702, {	-- Recipe: Surging Alchemist Stone [Rank 3]	
-									["recipeID"] = 252381,
+								}),
+								i(162702, {	-- Recipe: Surging Alchemist Stone [Rank 3]
 									["spellID"] = 252381,
-								}),	
+								}),
 								i(162728, {	-- Schematic: AZ3-R1-T3 Synthetic Specs	[Rank 2]
-									["recipeID"] = 272057,
 									["spellID"] = 272057,
-								}),	
-								i(162729, {	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 3]	
-									["recipeID"] = 272058,
+								}),
+								i(162729, {	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 3]
 									["spellID"] = 272058,
-								}),	
-								i(162746, {	-- Schematic: Finely-Tuned Stormsteel Destroyer [Rank 3]	
-									["recipeID"] = 255459,
+								}),
+								i(162746, {	-- Schematic: Finely-Tuned Stormsteel Destroyer [Rank 3]
 									["spellID"] = 255459,
-								}),	
-								i(162744, {	-- Schematic: Monelite Scope of Alacrity [Rank 3]	
-									["recipeID"] = 264967,
+								}),
+								i(162744, {	-- Schematic: Monelite Scope of Alacrity [Rank 3]
 									["spellID"] = 264967,
-								}),	
-								i(162745, {	-- Schematic: Precision Attitude Adjuster [Rank 3]	
-									["recipeID"] = 253152,
+								}),
+								i(162745, {	-- Schematic: Precision Attitude Adjuster [Rank 3]
 									["spellID"] = 253152,
-								}),	
+								}),
 								i(162533, {	-- Scouting Report: Hillcrest Pasture
 									["f"] = 55,	-- Consumable; Might change to Misc later
 								}),
@@ -797,7 +694,7 @@ _.Zones =
 							["groups"] = {
 								i(159749),	-- Haw'li's Hot & Spicy Chili
 							},
-						}),	
+						}),
 						n(145837, {	-- Violet Shadowmend
 							i(139775),	-- Alliance Enthusiast
 							i(142379),	-- Dutiful Squire

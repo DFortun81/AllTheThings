@@ -17,35 +17,35 @@ _.Zones =
 								o(281898, {	-- Dazar's Forgotten Chest	
 									["questID"] = 50707,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(281655, {	-- Gift of the Brokenhearted	
 									["questID"] = 50582,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(276735, {	-- Offerings of the Chosen	
 									["questID"] = 48938,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(290725, {	-- Riches of Tor'nowa	
 									["questID"] = 51624,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(279609, {	-- Spoils of Pandaria	
 									["questID"] = 49936,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(284455, {	-- The Exile's Lament	
 									["questID"] = 50949,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(277561, {	-- Warlord's Cache	
 									["questID"] = 49257,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(281092, {	-- Witch Doctor's Hoard	
 									["questID"] = 50259,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 							},
 						}),
 						--[[ NOTE: DISABLING FOR NOW WANT MORE INFORMATION FIRST
@@ -130,7 +130,7 @@ _.Zones =
 												49490,	-- The Urn of Voices
 												49491,	-- Fuel for the Voodoo
 											},
-										}),	
+										}),
 										q(49495, {	-- Enforcing Fate	
 											["qg"] = 129907,	-- Zul the Prophet
 											["sourceQuests"] = {
@@ -144,11 +144,11 @@ _.Zones =
 											["sourceQuests"] = { 49905 },	-- Plot Twist
 											--["icon"] = "Interface\\Addons\\AllTheThings\\assets\\star",	-- Quest Finale
 											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-										}),	
+										}),
 										q(49491, {	-- Fuel for the Voodoo	
 											["qg"] = 130706,	-- Izita's Spirit
 											["sourceQuests"] = { 49488 },	-- Tal'gurub	
-										}),		
+										}),	
 										q(49489, {	-- Needs a Little Body
 											["groups"] = {
 												i(161139),	-- Spirit Twister's Band
@@ -159,11 +159,11 @@ _.Zones =
 											},
 											["qg"] = 129907,	-- Zul the Prophet
 											["sourceQuests"] = { 49488 },	-- Tal'gurub
-										}),		
+										}),	
 										q(49905, {	-- Plot Twist	
 											["qg"] = 129907,	-- Zul the Prophet
 											["sourceQuests"] = { 49495 },	-- Enforcing Fate
-										}),		
+										}),	
 										q(51663, {	-- Preparing for the Fall	
 											--["qg"] = 290750,	-- Jambani Stockpile  [IS OBJECT]
 											["sourceQuests"] = {
@@ -171,7 +171,7 @@ _.Zones =
 												49490,	-- The Urn of Voices
 												49491,	-- Fuel for the Voodoo
 											},
-										}),		
+										}),	
 										q(49488, {	-- Tal'gurub	
 											["qg"] = 120740,	-- King Rastakhan
 											["sourceQuests"] = { 49615 },	-- Trust of a King
@@ -179,7 +179,7 @@ _.Zones =
 										q(49490, {	-- The Urn of Voices	
 											["qg"] = 129907,	-- Zul the Prophet
 											["sourceQuests"] = { 49488 },	-- Tal'gurub
-										}),		
+										}),	
 										q(49493, {	-- Zul's Ethical Dilemma	
 											["qg"] = 129907,	-- Zul the Prophet
 											["sourceQuests"] = {
@@ -187,7 +187,7 @@ _.Zones =
 												49490,	-- The Urn of Voices
 												49491,	-- Fuel for the Voodoo
 											},
-										}),		
+										}),	
 										q(49494, {	-- Zuvembi Brew	
 											["qg"] = 129907,	-- Zul the Prophet
 											["sourceQuests"] = { 
@@ -195,7 +195,7 @@ _.Zones =
 												51663,	-- Preparing for the Fall
 												49493,	-- Zul's Ethical Dilemma
 											},	
-										}),	
+										}),
 									},
 								}),
 								crit(3, {	-- Warport Rastari
@@ -203,7 +203,7 @@ _.Zones =
 										q(49122, {	-- A Port in Peril	
 											["qg"] = 127815,	-- Zolani
 											["sourceQuests"] = { 49663 },	-- False Prophecies
-										}),	
+										}),
 										q(49148, {	-- Crumbling Apart	
 											["qg"] = 127815,	-- Zolani
 											["sourceQuests"] = { 
@@ -223,11 +223,11 @@ _.Zones =
 										q(49145, {	-- No Troll Left Behind	
 											["qg"] = 127814,	-- Habutu
 											["sourceQuests"] = { 49122 },	-- A Port in Peril
-										}),		
+										}),	
 										q(49146, {	-- Spirits' Belongings	
 											["qg"] = 127837,	-- Kaza'jin the Wavebinder
 											["sourceQuests"] = { 49122 },	-- A Port in Peril
-										}),	
+										}),
 										q(49147, {	-- Show of Strength
 											["groups"] = {
 												i(155304),	-- Stormbinder Signet Ring
@@ -247,7 +247,7 @@ _.Zones =
 										q(47879, {	-- The Betrayal of Zul 
 											["qg"] = 129409,	-- Zolani
 											["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
-										}),	
+										}),
 										--]]
 										q(49310, {	-- The Prophet's Ploy[Note: Final Quest needed to trigger criteria]
 											["groups"] = {
@@ -270,21 +270,21 @@ _.Zones =
 										q(49144, {	-- Wrath of the Zandalari	
 											["qg"] = 127815,	-- Zolani
 											["sourceQuests"] = { 49122 },	-- A Port in Peril
-										}),	
+										}),
 									},
 								}),
 								crit(4, {	-- Web of Lies
 									["groups"] = {
 										q(51111, {	-- King or Prey	
 											["qg"] = 124915	-- King Rastakhan
-										}),		
+										}),	
 										q(47521, {	-- Midnight in the Garden of the Loa	
 											["qg"] = 133324,	-- Hexlord Raal
 											["sourceQuests"] = { 
 												47520,	-- Walls Have Ears
 												47518,	-- Raal
 											},
-										}),		
+										}),	
 										q(47528, {	-- Mistress of Lies [Note: Final Quest needed to trigger criteria]
 											["groups"] = {
 												i(159105),	-- Spy Mistress Chopper
@@ -302,7 +302,7 @@ _.Zones =
 												47522,	-- The Hunter
 											},
 											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-										}),		
+										}),	
 										q(47518, {	-- Raal	
 											["groups"] = {
 												i(158399),	-- Rastari Wargreaves
@@ -319,34 +319,34 @@ _.Zones =
 												47897,	-- Zanchuli Traitors
 												47915,	-- Rescuing the Taken
 											},
-										}),		
+										}),	
 										q(47915, {	-- Rescuing the Taken	
 											["qg"] = 124629,	-- Kaza'jin the Wavebinder
 											["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
-										}),		
+										}),	
 										q(47509, {	-- Terrace of the Chosen	
 											["qg"] = 141555,	-- Baine Bloodhoof
 											["sourceQuests"] = { 51111 },	-- King or Prey
-										}),		
+										}),	
 										q(47963, {	-- The Ancient One	
 											["qg"] = 133653,	-- Hexlord Raal
 											["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
-										}),		
+										}),	
 										q(47522, {	-- The Hunter	
 											["qg"] = 122760,	-- Wardruid Loti
 											["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
-										}),		
+										}),	
 										q(47520, {	-- Walls Have Ears	
 											["qg"] = 133302,	-- Druid of Gonk
 											["sourceQuests"] = { 
 												47897,	-- Zanchuli Traitors
 												47915,	-- Rescuing the Taken
 											},
-										}),	
+										}),
 										q(47897, {	-- Zanchuli Traitors	
 											["qg"] = 124629,	-- Kaza'jin the Wavebinder
 											["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
-										}),	
+										}),
 									},
 								}),
 								crit(5, {	-- Among the People
@@ -354,15 +354,15 @@ _.Zones =
 										q(51679, {	-- A Strange Port of Call	
 											["qg"] = 124083,	-- Zolani
 											["sourceQuests"] = { 47738 },	-- The Will of the Loa
-										}),		
+										}),	
 										q(47735, {	-- Ancient Tortollan Remedies	
 											["qg"] = 124063,	-- Jol the Ancient
 											["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
-										}),	
+										}),
 										q(47736, {	-- Heads Will Roll	
 											["qg"] = 124656,	-- Zolani
 											["sourceQuests"] = { 47737 },	-- The Temple of Rezan
-										}),		
+										}),	
 										q(47740, {	-- House of the King  [Note: Final Quest needed to trigger criteria]
 											["qg"] = 124655,	-- King Rastakhan
 											["sourceQuests"] = { 47737 },	-- The Temple of Rezan
@@ -371,7 +371,7 @@ _.Zones =
 										q(51680, {	-- In Bwonsamdi's Shadow	
 											["qg"] = 124083,	-- Zolani
 											["sourceQuests"] = { 51101 },	-- The Wounded King
-										}),	
+										}),
 										q(51677, {	-- Mending Body and Soul	
 											["qg"] = 124063,	-- Jol the Ancient
 											["sourceQuests"] = {
@@ -380,11 +380,11 @@ _.Zones =
 												47733,	-- The Loa-Speaker's Betrayal
 												50235,	-- No Safe Haven
 											},
-										}),		
+										}),	
 										q(50235, {	-- No Safe Haven	
 											["qg"] = 124083,	-- Zolani
 											["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
-										}),		
+										}),	
 										q(51678, {	-- Rastakhan's Might
 											["groups"] = {
 												i(155242),	-- Rastari Warboots
@@ -398,15 +398,15 @@ _.Zones =
 											},
 											["qg"] = 124062,	-- King Rastakhan
 											["sourceQuests"] = { 47738 },	-- The Will of the Loa
-										}),		
+										}),	
 										q(47733, {	-- The Loa-Speaker's Betrayal	
 											["qg"] = 138520,	-- Zeb'ahari Villager
 											["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
-										}),		
+										}),	
 										q(47739, {	-- The Scent of Vengeance	
 											["qg"] = 132637,	-- Jamil Abul'housin
 											["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
-										}),		
+										}),	
 										q(47737, {	-- The Temple of Rezan	
 											["qg"] = 124062,	-- King Rastakhan
 											["sourceQuests"] = {
@@ -414,18 +414,18 @@ _.Zones =
 												51678,	-- Rastakhan's Might
 												47742,	-- Zul's Mutiny
 											},
-										}),	
+										}),
 										q(51101, {	-- The Wounded King	
 											["qg"] = 141555	-- Baine Bloodhoof
-										}),		
+										}),	
 										q(47738, {	-- The Will of the Loa	
 											["qg"] = 132637,	-- Jamil Abul'housin
 											["sourceQuests"] = { 51677 },	-- Mending Body and Soul
-										}),		
+										}),	
 										q(47742, {	-- Zul's Mutiny	
 											["qg"] = 124062,	-- King Rastakhan
 											["sourceQuests"] = { 47738 },	-- The Will of the Loa
-										}),		
+										}),	
 									},
 								}),
 								crit(7, {	-- March of the Loa
@@ -433,7 +433,7 @@ _.Zones =
 										q(49901, {	-- Atal'Dazar: Yazma the Fallen Priestess	
 											["qg"] = 129757,	-- King Rastakhan
 											["sourceQuests"] = { 49426 },	-- The King's Gambit
-										}),	
+										}),
 										q(49425, {	-- City of Gold	
 											["qg"] = 129703,	-- Hexlord Raal
 											["sourceQuests"] = { 
@@ -444,7 +444,7 @@ _.Zones =
 										q(49422, {	-- Heretics	
 											["qg"] = 129740,	-- Gonk
 											["sourceQuests"] = { 49965 },	-- The Warpack
-										}),	
+										}),
 										q(49421, {	-- Hunting Zul	
 											["qg"] = 141555,	-- Baine Bloodhoof
 											["sourceQuests"] = { 50433 },	-- Zanchuli Disbanded
@@ -453,19 +453,19 @@ _.Zones =
 											["qg"] = 129757,	-- King Rastakhan
 											["sourceQuests"] = { 49901 },	-- Atal'Dazar: Yazma the Fallen Priestess
 											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-										}),	
+										}),
 										q(49424, {	-- The Full Prophecy	
 											["qg"] = 129561,	-- Wardruid Loti
 											["sourceQuests"] = { 49965 },	-- The Warpack
-										}),		
+										}),	
 										q(49426, {	-- The King's Gambit	
 											["qg"] = 131049,	-- Rezan
 											["sourceQuests"] = { 49425 },	-- City of Gold
-										}),		
+										}),	
 										q(49965, {	-- The Warpack	
 											["qg"] = 129491,	-- King Rastakhan
 											["sourceQuests"] = { 49421 },	-- Hunting Zul
-										}),		
+										}),	
 										q(50433, {	-- Zanchuli Disbanded	
 											["qg"] = 122760	-- Wardruid Loti
 										}),
@@ -485,7 +485,7 @@ _.Zones =
 								i(161042),-- Gotaka's Wallopers
 							}),
 							["questID"] = 50280,
-						}),		
+						}),	
 						n(129343, {	-- Avatar of Xolotal
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161034),	-- Thunderhowl Gauntlets
@@ -495,13 +495,13 @@ _.Zones =
 						n(128699, {	-- Bloodbulge		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161104),	-- Blood Feast Gauntlets
-							}),	
+							}),
 							["questID"] = 49267,	
 						}),
 						n(131718, { -- Bramblewing
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161020),	-- Sky-Hunter Breeches
-							}),	
+							}),
 							["questID"] = 50034,	
 						}),
 						n(133190, {	-- Daggerjaw
@@ -509,18 +509,18 @@ _.Zones =
 								i(160952),	-- Daggerjaw's Incisor
 							}),
 							["questID"] = 50269,
-						}),		
+						}),	
 						n(136428, {	-- Dark Chronicler
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								sz(12944, 3),	-- Dark Chronicler
 								i(160979),	-- Ancient Chronicler's Focus
 							}),
 							["questID"] = 51083,
-						}),		
+						}),	
 						n(134760, {	-- Darkspeaker Jo'la		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160958),	-- Darkspeaker Scepter
-							}),	
+							}),
 							["questID"] = 50693,
 						}),
 						n(133155, {	-- G'Naat
@@ -528,23 +528,23 @@ _.Zones =
 								i(161048),	-- Brutish Tidecaller Armwraps
 							}),
 							["questID"] = 50260,
-						}),		
+						}),	
 						n(124185, {	-- Golrakahn		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161035),	-- Thundercrash Footguards
-							}),	
+							}),
 							["questID"] = 47792,
-						}),		
+						}),	
 						n(134738, {	-- Hakbi the Risen		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160978),	-- Golden Tomb Defender
-							}),	
+							}),
 							["questID"] = 50677,
-						}),		
+						}),	
 						--[[ May not have transitioned from Beta to Live
-						n(134637, {	-- Headhunter Lee'za [MissingL]		
+						n(134637, {	-- Headhunter Lee'za [MissingL]
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
-						}),		
+						}),	
 						--]]
 						n(126637, {	-- Kandak
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -557,19 +557,19 @@ _.Zones =
 								i(161112),	--  Hillshaker Armplates
 							}),
 							["questID"] = 50159,	
-						}),		
+						}),	
 						n(131233, {	-- Lei-zhi
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161033),	-- Jolting Leap Legguards
 							}),
 							["questID"] = 49911,
-						}),		
+						}),	
 						n(134782, {	-- Murderbeak	
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161022),	-- Gusting Axebeaek Anklewraps
 							}),
 							["questID"] = 50281,
-						}),		
+						}),	
 						n(136413, {	-- Syrawon the Dominus
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								sz(12944, 4),	-- Syrawon the Dominus
@@ -582,13 +582,13 @@ _.Zones =
 								i(161109),	-- Coastal Hardshell Girdle
 							}),
 							["questID"] = 50013,
-						}),		
+						}),	
 						n(133163, {	-- Tia'Kawan
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161007),	-- Direhorn Studded Britches
 							}),
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 
-						}),		
+						}),	
 						n(127939, {	-- Torraske the Eternal
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161029),	-- Ageless Toxin Grips
@@ -600,16 +600,16 @@ _.Zones =
 								i(162620),	-- Devilbone Shoulderguards
 							},
 							["questID"] = 50847,	
-						}),		
+						}),	
 						n(122004, {	-- Umbra'jin
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161091),	-- Swift-Talon Striders
 							}),
 							["questID"] = 47567,
-						}),		
-						n(134717, {	-- Umbra'rix [MissingL]		
+						}),	
+						n(134717, {	-- Umbra'rix [MissingL]
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
-						}),		
+						}),	
 						n(134048, {	-- Vukuba
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(162613, {	-- Mantle of Brood Mimicry
@@ -619,13 +619,13 @@ _.Zones =
 								}),
 							}),
 							["questID"] = 50508,
-						}),		
+						}),	
 						n(133842, {	-- Warcrawler Karkithiss
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161040),	-- Arid Dune Stompers
 							}),
 							["questID"] = 50438,	
-						}),		
+						}),	
 						n(131476, {	-- Zayoos
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								sz(12944, 5),	-- Zayoos
@@ -633,9 +633,9 @@ _.Zones =
 							}),
 							["questID"] = 49972,
 						}),
-						n(136702, {	-- Zu'shin the Infused [MissingL]		
+						n(136702, {	-- Zu'shin the Infused [MissingL]
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
-						}),		
+						}),	
 					},
 				}),
 				n(-212, {	-- Treasure Chest
@@ -677,74 +677,57 @@ _.Zones =
 								i(161544),	-- Vambraces of a Thousand Year Toil
 								i(161503),	-- Wristwraps of Scrollbinding
 								i(160538),	-- Cape of the Scroll Keepers*
-								i(163026, {	-- Pattern: Embroidered Deep Sea Bag [Rank 2]	
-									["recipeID"] = 257129,
+								i(163026, {	-- Pattern: Embroidered Deep Sea Bag [Rank 2]
 									["spellID"] = 257129,
-								}),	
-								i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]	
-									["recipeID"] = 255094,
+								}),
+								i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]
 									["spellID"] = 255094,
-								}),	
-								i(162301, {	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]	
-									["recipeID"] = 255097,
+								}),
+								i(162301, {	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]
 									["spellID"] = 255097,
-								}),	
-								i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2]	
-									["recipeID"] = 259423,
+								}),
+								i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2]
 									["spellID"] = 259423,
-								}),	
-								i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3]	
-									["recipeID"] = 259422,
+								}),
+								i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3]
 									["spellID"] = 259422,
-								}),	
-								i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3]	
-									["recipeID"] = 256234,
+								}),
+								i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3]
 									["spellID"] = 256234,
-								}),	
-								i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2]	
-									["recipeID"] = 256298,
+								}),
+								i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2]
 									["spellID"] = 256298,
-								}),	
-								i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2]	
-									["recipeID"] = 256295,
+								}),
+								i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2]
 									["spellID"] = 256295,
-								}),	
-								i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3]	
-									["recipeID"] = 256246,
+								}),
+								i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3]
 									["spellID"] = 256246,
-								}),	
-								i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]	
-									["recipeID"] = 252363,
+								}),
+								i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]
 									["spellID"] = 252363,
-								}),	
-								i(162287, {	-- Recipe: Galley Banquet [Rank 3]	
-									["recipeID"] = 259420,
+								}),
+								i(162287, {	-- Recipe: Galley Banquet [Rank 3]
 									["spellID"] = 259420,
-								}),	
-								i(162292, {	-- Recipe: Grilled Catfish [Rank 3]	
-									["recipeID"] = 259432,
+								}),
+								i(162292, {	-- Recipe: Grilled Catfish [Rank 3]
 									["spellID"] = 259432,
-								}),	
-								i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]	
-									["recipeID"] = 256252,
+								}),
+								i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]
 									["spellID"] = 256252,
-								}),	
-								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]	
-									["recipeID"] = 256249,
+								}),
+								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]
 									["spellID"] = 256249,
-								}),	
-								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]	
-									["recipeID"] = 259435,
+								}),
+								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]
 									["spellID"] = 259435,
-								}),	
-								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]	
-									["recipeID"] = 252370,
+								}),
+								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]
 									["spellID"] = 252370,
-								}),	
-								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]	
-									["recipeID"] = 256237,
+								}),
+								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]
 									["spellID"] = 256237,
-								}),	
+								}),
 							},
 						}),
 						n(136219, {	-- Mona <Butterflies>
@@ -759,10 +742,26 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests
 							q(50855, {	-- Old R'gal
-								i(160509),	-- Echoes of Rezan
+								["groups"] = {
+									i(160509, {	-- Echoes of Rezan
+										["crs"] = {
+											122639,	-- Old R'gal
+										},
+									}),
+								},
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
 							}),
 							q(50957, {	-- Wrath of Rezan
-								i(160509),	-- Echoes of Rezan
+								["groups"] = {
+									i(160509),	-- Echoes of Rezan
+								},
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
 							}),
 						}),
 						i(158152),	-- Golden Empire Signet

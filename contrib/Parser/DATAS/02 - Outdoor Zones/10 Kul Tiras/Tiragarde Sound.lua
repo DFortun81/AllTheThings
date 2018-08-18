@@ -685,15 +685,15 @@ _.Zones =
 									["achievementID"] = 13057,	-- Shanty Raid [Achievement]
 									["criteriaID"] = 4,	-- Shanty of Josephus [Criteria]
 								},
-							}),		
+							}),	
 							["questID"] = 50233,
-						}),			
+						}),		
 						n(132068, {	-- Bashmu			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160467),	-- Hydra-Hunter Legguards	
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(132086, {	-- Black-Eyed Bart
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158650),	-- Sea-Scourge Greatblade
@@ -709,9 +709,9 @@ _.Zones =
 						n(130508, {	-- Broodmother Razora			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160460),	-- Thick Sauroskin Gloves	
-							}),		
+							}),	
 							["questID"] = 49999,		
-						}),			
+						}),		
 						n(132088, {	-- Captain Wintersail			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(155422, {	-- Pirate Chief's Speargun	
@@ -721,28 +721,28 @@ _.Zones =
 										132093,	-- Wavecaller Smuggler
 									},
 								}),
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(139152, {	-- Carla Smirk
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(155271),	-- Monkey's Paw Chopper
 							}),
 							["questID"] = 51809,
-						}),			
+						}),		
 						n(132211, {	-- Fowlmouth
 							["coord"] = { 89.8, 78.1 },
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(154467),	-- Parrot-Trainer Mantle	
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(132127, {	-- Foxhollow Skyterror			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160454),	-- Foxhollow Falconer's Bracers	
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(139233, {	-- Gulliver
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158338),	-- Swift-Travel Gloves
@@ -753,32 +753,32 @@ _.Zones =
 						n(131520, {	-- Kulett the Ornery			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(158597),	-- Silvershell Defender	
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(134106, {	-- Lumbergrasp Sentinel			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(155524),	-- Cursetouched Lumberjack's Axe	
-							}),		
+							}),	
 							["questID"] = 50525,
-						}),			
+						}),		
 						n(139290, {	-- Maison the Portable			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(154458),	-- Shellbreaker Warhelm	
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(131252, {	-- Merianae			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160461),	-- Thick Sauroskin Pants	
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(127290, {	-- Mugg			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(154416),	-- Trogg Saurolisk-Breaker	
-							}),		
-						}),			
+							}),	
+						}),		
 						n(139205, {	-- P4-N73R4
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161599),	-- Mechano-Cat Claw
@@ -789,9 +789,9 @@ _.Zones =
 						n(131262, {	-- Pack Leader Asenya			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160263),	-- Snowpelt Mangler	
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(132179, {	-- Raging Swell
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161446),	-- Blistering Seawater Seal
@@ -809,39 +809,39 @@ _.Zones =
 						n(127289, {	-- Saurolisk Tamer Mugg			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(154416),	-- Trogg Saurolisk-Breaker	
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(139287, {	-- Sawtooth
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(155273),	-- Shartook Hatchet
 							}),
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(139285, {	-- Shiverscale the Toxic			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(155278),	-- Shiverscale Spellknife	
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(132280, {	-- Squacks
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(160455),	-- Parrot-Trainer Sash
 							}),
 							["questID"] = 50160,
-						}),			
+						}),		
 						n(139135, {	-- Squirgle of the Depths			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(155551),	-- Squirgle's Deepstone Wand	
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(139280, {	-- Sythian the Swift			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(154474),	-- Sythian Swiftbelt	
-							}),		
+							}),	
 							["questID"] = 51873,		
-						}),			
+						}),		
 						n(133356, {	-- Tempestria
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160466),	-- Saurolisk Broodmother Boots
@@ -853,7 +853,7 @@ _.Zones =
 								i(154448),	-- Medusa-Drifter's Chainmail
 							}),
 							["questID"] = 51879,		
-						}),			
+						}),		
 						n(131389, {	-- Teres
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158556),	-- Siren's Tongue
@@ -871,21 +871,21 @@ _.Zones =
 						n(132076, {	-- Totes			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160452),	-- Goat's Tote	
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(131984, {	-- Twin-hearted Construct			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160473),	-- Wickerthorn Stompers	
-							}),		
+							}),	
 							["questID"] = 50073,
-						}),			
+						}),		
 						n(132052, {	-- Vol'Jim			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(155074),	-- Toll Enforcer	
-							}),		
+							}),	
 							-- ["questID"] = 		
-						}),			
+						}),		
 						n(137176, {	-- Walter Ferrell
 							["crs"] = {
 								137181,	-- Mead-Craving Cranee
@@ -916,74 +916,57 @@ _.Zones =
 								i(161544),	-- Vambraces of a Thousand Year Toil
 								i(161503),	-- Wristwraps of Scrollbinding
 								i(160538),	-- Cape of the Scroll Keepers*
-								i(163026, {	-- Pattern: Embroidered Deep Sea Bag [Rank 2]	
-									["recipeID"] = 257129,
+								i(163026, {	-- Pattern: Embroidered Deep Sea Bag [Rank 2]
 									["spellID"] = 257129,
-								}),	
-								i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]	
-									["recipeID"] = 255094,
+								}),
+								i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]
 									["spellID"] = 255094,
-								}),	
-								i(162301, {	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]	
-									["recipeID"] = 255097,
+								}),
+								i(162301, {	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]
 									["spellID"] = 255097,
-								}),	
-								i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2]	
-									["recipeID"] = 259423,
+								}),
+								i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2]
 									["spellID"] = 259423,
-								}),	
-								i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3]	
-									["recipeID"] = 259422,
+								}),
+								i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3]
 									["spellID"] = 259422,
-								}),	
-								i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3]	
-									["recipeID"] = 256234,
+								}),
+								i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3]
 									["spellID"] = 256234,
-								}),	
-								i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2]	
-									["recipeID"] = 256298,
+								}),
+								i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2]
 									["spellID"] = 256298,
-								}),	
-								i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2]	
-									["recipeID"] = 256295,
+								}),
+								i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2]
 									["spellID"] = 256295,
-								}),	
-								i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3]	
-									["recipeID"] = 256246,
+								}),
+								i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3]
 									["spellID"] = 256246,
-								}),	
-								i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]	
-									["recipeID"] = 252363,
+								}),
+								i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]
 									["spellID"] = 252363,
-								}),	
-								i(162287, {	-- Recipe: Galley Banquet [Rank 3]	
-									["recipeID"] = 259420,
+								}),
+								i(162287, {	-- Recipe: Galley Banquet [Rank 3]
 									["spellID"] = 259420,
-								}),	
-								i(162292, {	-- Recipe: Grilled Catfish [Rank 3]	
-									["recipeID"] = 259432,
+								}),
+								i(162292, {	-- Recipe: Grilled Catfish [Rank 3]
 									["spellID"] = 259432,
-								}),	
-								i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]	
-									["recipeID"] = 256252,
+								}),
+								i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]
 									["spellID"] = 256252,
-								}),	
-								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]	
-									["recipeID"] = 256249,
+								}),
+								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]
 									["spellID"] = 256249,
-								}),	
-								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]	
-									["recipeID"] = 259435,
+								}),
+								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]
 									["spellID"] = 259435,
-								}),	
-								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]	
-									["recipeID"] = 252370,
+								}),
+								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]
 									["spellID"] = 252370,
-								}),	
-								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]	
-									["recipeID"] = 256237,
+								}),
+								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]
 									["spellID"] = 256237,
-								}),	
+								}),
 							},
 						}),
 					},

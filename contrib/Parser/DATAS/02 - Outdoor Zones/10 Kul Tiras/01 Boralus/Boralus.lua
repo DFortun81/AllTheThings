@@ -66,9 +66,7 @@ _.Zones =
 					["groups"] = {
 						q(48752, {	-- A Need For Coal
 							["groups"] = {
-								recipe(253334, {	-- Monelite Deposit Rank 2
-									["spellID"] = 253334, -- Monelite Deposit Rank 2 [Needed because Blizzard breaks things]
-								}),
+								recipe(253334),	-- Monelite Deposit Rank 2
 							},
 							["description"] = "Requires 50 Kul'Tiran Mining",
 							["requireSkill"] = 2565, -- Kul'Tiran Mining
@@ -76,9 +74,7 @@ _.Zones =
 						}),
 						q(48761, {	-- Spiderphobia
 							["groups"] = {
-								recipe(253337, {	-- Storm Silver Deposit Rank 2
-									["spellID"] = 253337, -- Storm Silver Deposit Rank 2 [Needed because Blizzard breaks things]
-								}),
+								recipe(253337),	-- Storm Silver Deposit Rank 2
 							},
 							["description"] = "Requires 50 Kul'Tiran Mining",
 							["requireSkill"] = 2565, -- Kul'Tiran Mining
@@ -227,271 +223,205 @@ _.Zones =
 						n(142564, {	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
 							["groups"] = {
 								i(162439, {	-- Pattern: Honorable Combatant's Satin Belt [Rank 2]
-									["recipeID"] = 269609,
 									["spellID"] = 269609,
-								}),	
-								i(162440, {	-- Pattern: Honorable Combatant's Satin Belt [Rank 3]	
-									["recipeID"] = 269610,
+								}),
+								i(162440, {	-- Pattern: Honorable Combatant's Satin Belt [Rank 3]
 									["spellID"] = 269610,
-								}),	
-								i(162433, {	-- Pattern: Honorable Combatant's Satin Boots [Rank 2]	
-									["recipeID"] = 269600,
+								}),
+								i(162433, {	-- Pattern: Honorable Combatant's Satin Boots [Rank 2
 									["spellID"] = 269600,
-								}),	
-								i(162434, {	-- Pattern: Honorable Combatant's Satin Boots [Rank 3]		
-									["recipeID"] = 269601,
+								}),
+								i(162434, {	-- Pattern: Honorable Combatant's Satin Boots [Rank 3]
 									["spellID"] = 269601,
-								}),	
-								i(162441, {	-- Pattern: Honorable Combatant's Satin Bracers [Rank 2]	
-									["recipeID"] = 269612,
+								}),
+								i(162441, {	-- Pattern: Honorable Combatant's Satin Bracers [Rank 2]
 									["spellID"] = 269612,
-								}),	
-								i(162442, {	-- Pattern: Honorable Combatant's Satin Bracers [Rank 3]		
-									["recipeID"] = 269613,
+								}),
+								i(162442, {	-- Pattern: Honorable Combatant's Satin Bracers [Rank 3]
 									["spellID"] = 269613,
-								}),	
-								i(162431, {	-- Pattern: Honorable Combatant's Satin Cloak [Rank 2]	
-									["recipeID"] = 269597,
+								}),
+								i(162431, {	-- Pattern: Honorable Combatant's Satin Cloak [Rank 2]
 									["spellID"] = 269597,
-								}),	
-								i(162432, {	-- Pattern: Honorable Combatant's Satin Cloak [Rank 3]		
-									["recipeID"] = 269598,
+								}),
+								i(162432, {	-- Pattern: Honorable Combatant's Satin Cloak [Rank 3]
 									["spellID"] = 269598,
-								}),	
-								i(162435, {	-- Pattern: Honorable Combatant's Satin Mittens [Rank 2]	
-									["recipeID"] = 269603,
+								}),
+								i(162435, {	-- Pattern: Honorable Combatant's Satin Mittens [Rank 2]
 									["spellID"] = 269603,
-								}),	
-								i(162436, {	-- Pattern: Honorable Combatant's Satin Mittens [Rank 3]		
-									["recipeID"] = 269604,
+								}),
+								i(162436, {	-- Pattern: Honorable Combatant's Satin Mittens [Rank 3]
 									["spellID"] = 269604,
-								}),	
-								i(162437, {	-- Pattern: Honorable Combatant's Satin Pants [Rank 2]	
-									["recipeID"] = 269606,
+								}),
+								i(162437, {	-- Pattern: Honorable Combatant's Satin Pants [Rank 2]
 									["spellID"] = 269606,
-								}),	
-								i(162438, {	-- Pattern: Honorable Combatant's Satin Pants [Rank 3]		
-									["recipeID"] = 269607,
+								}),
+								i(162438, {	-- Pattern: Honorable Combatant's Satin Pants [Rank 3]
 									["spellID"] = 269607,
-								}),	
-								i(162417, {	-- Recipe: Honorable Combatant's Bow [Rank 2]	
-									["recipeID"] = 269553,
+								}),
+								i(162417, {	-- Recipe: Honorable Combatant's Bow [Rank 2]
 									["spellID"] = 269553,
-								}),	
-								i(162418, {	-- Recipe: Honorable Combatant's Bow [Rank 3]		
-									["recipeID"] = 269554,
+								}),
+								i(162418, {	-- Recipe: Honorable Combatant's Bow [Rank 3]
 									["spellID"] = 269554,
-								}),	
-								i(162277, {	-- Recipe: Honorable Combatant's Cutlass [Rank 2]	
-									["recipeID"] = 269465,
+								}),
+								i(162277, {	-- Recipe: Honorable Combatant's Cutlass [Rank 2]
 									["spellID"] = 269465,
-								}),	
-								i(162278, {	-- Recipe: Honorable Combatant's Cutlass [Rank 3]		
-									["recipeID"] = 269466,
+								}),
+								i(162278, {	-- Recipe: Honorable Combatant's Cutlass [Rank 3]
 									["spellID"] = 269466,
-								}),	
-								i(162279, {	-- Recipe: Honorable Combatant's Deckpounder [Rank 2]	
-									["recipeID"] = 269471,
+								}),
+								i(162279, {	-- Recipe: Honorable Combatant's Deckpounder [Rank 2]
 									["spellID"] = 269471,
-								}),	
-								i(162280, {	-- Recipe: Honorable Combatant's Deckpounder [Rank 3]		
-									["recipeID"] = 269472,
+								}),
+								i(162280, {	-- Recipe: Honorable Combatant's Deckpounder [Rank 3]
 									["spellID"] = 269472,
-								}),	
-								i(162353, {	-- Recipe: Honorable Combatant's Etched Vessel [Rank 2]	
-									["recipeID"] = 269741,
+								}),
+								i(162353, {	-- Recipe: Honorable Combatant's Etched Vessel [Rank 2]
 									["spellID"] = 269741,
-								}),	
-								i(162354, {	-- Recipe: Honorable Combatant's Etched Vessel [Rank 3]		
-									["recipeID"] = 269742,
+								}),
+								i(162354, {	-- Recipe: Honorable Combatant's Etched Vessel [Rank 3]
 									["spellID"] = 269742,
-								}),	
-								i(162398, {	-- Recipe: Honorable Combatant's Leather Armguards [Rank 2]	
-									["recipeID"] = 269529,
+								}),
+								i(162398, {	-- Recipe: Honorable Combatant's Leather Armguards [Rank 2]
 									["spellID"] = 269529,
 								}),
-								i(162399, {	-- Recipe: Honorable Combatant's Leather Armguards [Rank 3]	
-									["recipeID"] = 269530,
+								i(162399, {	-- Recipe: Honorable Combatant's Leather Armguards [Rank 3]
 									["spellID"] = 269530,
-								}),	
-								i(162392, {	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 2]		
-									["recipeID"] = 269520,
+								}),
+								i(162392, {	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 2]
 									["spellID"] = 269520,
-								}),	
-								i(162393, {	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 3]	
-									["recipeID"] = 269521,
+								}),
+								i(162393, {	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 3]
 									["spellID"] = 269521,
-								}),	
-								i(162394, {	-- Recipe: Honorable Combatant's Leather Leggings [Rank 2]		
-									["recipeID"] = 269523,
+								}),
+								i(162394, {	-- Recipe: Honorable Combatant's Leather Leggings [Rank 2]
 									["spellID"] = 269523,
-								}),	
-								i(162395, {	-- Recipe: Honorable Combatant's Leather Leggings [Rank 3]	
-									["recipeID"] = 269524,
+								}),
+								i(162395, {	-- Recipe: Honorable Combatant's Leather Leggings [Rank 3]
 									["spellID"] = 269524,
-								}),	
-								i(162390, {	-- Recipe: Honorable Combatant's Leather Treads [Rank 2]		
-									["recipeID"] = 269517,
+								}),
+								i(162390, {	-- Recipe: Honorable Combatant's Leather Treads [Rank 2]
 									["spellID"] = 269517,
-								}),	
+								}),
 								i(162391, {	-- Recipe: Honorable Combatant's Leather Treads [Rank 3]
-									["recipeID"] = 269518,
 									["spellID"] = 269518,
-								}),	
-								i(162396, {	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 2]		
-									["recipeID"] = 269526,
+								}),
+								i(162396, {	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 2]
 									["spellID"] = 269526,
-								}),	
-								i(162397, {	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 3]	
-									["recipeID"] = 269527,
+								}),
+								i(162397, {	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 3]
 									["spellID"] = 269527,
-								}),	
-								i(162410, {	-- Recipe: Honorable Combatant's Mail Armguards [Rank 2]		
-									["recipeID"] = 269544,
+								}),
+								i(162410, {	-- Recipe: Honorable Combatant's Mail Armguards [Rank 2]
 									["spellID"] = 269544,
-								}),	
+								}),
 								i(162411, {	-- Recipe: Honorable Combatant's Mail Armguards	 [Rank 3]
-									["recipeID"] = 269545,
 									["spellID"] = 269545,
-								}),	
-								i(162404, {	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 2]		
-									["recipeID"] = 269535,
+								}),
+								i(162404, {	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 2]
 									["spellID"] = 269535,
-								}),	
-								i(162405, {	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 3]	
-									["recipeID"] = 269536,
+								}),
+								i(162405, {	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 3]
 									["spellID"] = 269536,
-								}),	
-								i(162406, {	-- Recipe: Honorable Combatant's Mail Leggings [Rank 2]		
-									["recipeID"] = 269538,
+								}),
+								i(162406, {	-- Recipe: Honorable Combatant's Mail Leggings [Rank 2]
 									["spellID"] = 269538,
-								}),	
+								}),
 								i(162407, {	-- Recipe: Honorable Combatant's Mail Leggings [Rank 3]
-									["recipeID"] = 269539,
 									["spellID"] = 269539,
-								}),	
-								i(162402, {	-- Recipe: Honorable Combatant's Mail Treads [Rank 2]		
-									["recipeID"] = 269532,
+								}),
+								i(162402, {	-- Recipe: Honorable Combatant's Mail Treads [Rank 2]
 									["spellID"] = 269532,
-								}),	
-								i(162403, {	-- Recipe: Honorable Combatant's Mail Treads [Rank 3]	
-									["recipeID"] = 269533,
+								}),
+								i(162403, {	-- Recipe: Honorable Combatant's Mail Treads [Rank 3]
 									["spellID"] = 269533,
-								}),	
-								i(162408, {	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 2]		
-									["recipeID"] = 269541,
+								}),
+								i(162408, {	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 2]
 									["spellID"] = 269541,
-								}),	
-								i(162409, {	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 3]	
-									["recipeID"] = 269542,
+								}),
+								i(162409, {	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 3]
 									["spellID"] = 269542,
-								}),	
-								i(162271, {	-- Recipe: Honorable Combatant's Plate Armguards [Rank 2]		
-									["recipeID"] = 269452,
+								}),
+								i(162271, {	-- Recipe: Honorable Combatant's Plate Armguards [Rank 2]
 									["spellID"] = 269452,
-								}),	
-								i(162272, {	-- Recipe: Honorable Combatant's Plate Armguards [Rank 3]	
-									["recipeID"] = 269453,
+								}),
+								i(162272, {	-- Recipe: Honorable Combatant's Plate Armguards [Rank 3]
 									["spellID"] = 269453,
-								}),	
-								i(162262, {	-- Recipe: Honorable Combatant's Plate Boots [Rank 2]	
-									["recipeID"] = 269425,
+								}),
+								i(162262, {	-- Recipe: Honorable Combatant's Plate Boots [Rank 2]
 									["spellID"] = 269425,
-								}),	
-								i(162263, {	-- Recipe: Honorable Combatant's Plate Boots [Rank 3]	
-									["recipeID"] = 269426,
+								}),
+								i(162263, {	-- Recipe: Honorable Combatant's Plate Boots [Rank 3]
 									["spellID"] = 269426,
-								}),	
-								i(162265, {	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 2]	
-									["recipeID"] = 269422,
+								}),
+								i(162265, {	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 2]
 									["spellID"] = 269422,
-								}),	
-								i(162266, {	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 3]	
-									["recipeID"] = 269423,
+								}),
+								i(162266, {	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 3]
 									["spellID"] = 269423,
-								}),	
-								i(162267, {	-- Recipe: Honorable Combatant's Plate Greaves [Rank 2]	
-									["recipeID"] = 269446,
+								}),
+								i(162267, {	-- Recipe: Honorable Combatant's Plate Greaves [Rank 2]
 									["spellID"] = 269446,
-								}),	
-								i(162268, {	-- Recipe: Honorable Combatant's Plate Greaves [Rank 3]	
-									["recipeID"] = 269447,
+								}),
+								i(162268, {	-- Recipe: Honorable Combatant's Plate Greaves [Rank 3]
 									["spellID"] = 269447,
-								}),	
-								i(162273, {	-- Recipe: Honorable Combatant's Plate Shield [Rank 2]	
-									["recipeID"] = 269459,
+								}),
+								i(162273, {	-- Recipe: Honorable Combatant's Plate Shield [Rank 2]
 									["spellID"] = 269459,
-								}),	
-								i(162274, {	-- Recipe: Honorable Combatant's Plate Shield [Rank 3]	
-									["recipeID"] = 269460,
+								}),
+								i(162274, {	-- Recipe: Honorable Combatant's Plate Shield [Rank 3]
 									["spellID"] = 269460,
-								}),	
-								i(162269, {	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 2]	
-									["recipeID"] = 269449,
+								}),
+								i(162269, {	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 2]
 									["spellID"] = 269449,
-								}),	
-								i(162270, {	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 3]	
-									["recipeID"] = 269450,
+								}),
+								i(162270, {	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 3]
 									["spellID"] = 269450,
-								}),	
-								i(162283, {	-- Recipe: Honorable Combatant's Polearm [Rank 2]	
-									["recipeID"] = 269480,
+								}),
+								i(162283, {	-- Recipe: Honorable Combatant's Polearm [Rank 2]
 									["spellID"] = 269480,
-								}),	
-								i(162284, {	-- Recipe: Honorable Combatant's Polearm [Rank 3]	
-									["recipeID"] = 269481,
+								}),
+								i(162284, {	-- Recipe: Honorable Combatant's Polearm [Rank 3]
 									["spellID"] = 269481,
-								}),	
-								i(162281, {	-- Recipe: Honorable Combatant's Shanker [Rank 2]	
-									["recipeID"] = 269477,
+								}),
+								i(162281, {	-- Recipe: Honorable Combatant's Shanker [Rank 2]
 									["spellID"] = 269477,
-								}),	
-								i(162282, {	-- Recipe: Honorable Combatant's Shanker [Rank 3]	
-									["recipeID"] = 269478,
+								}),
+								i(162282, {	-- Recipe: Honorable Combatant's Shanker [Rank 3]
 									["spellID"] = 269478,
-								}),	
-								i(162308, {	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 2]	
-									["recipeID"] = 269716,
+								}),
+								i(162308, {	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 2]
 									["spellID"] = 269716,
-								}),	
-								i(162309, {	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 3]	
-									["recipeID"] = 269717,
+								}),
+								i(162309, {	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 3]
 									["spellID"] = 269717,
-								}),	
-								i(162668, {	-- Recipe: Honorable Combatant's Spellblade [Rank 2]	
-									["recipeID"] = 253149,
+								}),
+								i(162668, {	-- Recipe: Honorable Combatant's Spellblade [Rank 2]
 									["spellID"] = 253149,
-								}),	
+								}),
 								i(162669, {	-- Recipe: Honorable Combatant's Spellblade	[Rank 3]
-									["recipeID"] = 253150,
 									["spellID"] = 253150,
-								}),	
-								i(163024, {	-- Recipe: Honorable Combatant's Staff of Intuition [Rank 2]	
-									["recipeID"] = 269735,
+								}),
+								i(163024, {	-- Recipe: Honorable Combatant's Staff of Intuition [Rank 2]
 									["spellID"] = 269735,
-								}),	
-								i(163025, {	-- Recipe: Honorable Combatant's Staff of Intuition [Rank 3]	
-									["recipeID"] = 269736,
+								}),
+								i(163025, {	-- Recipe: Honorable Combatant's Staff of Intuition [Rank 3]
 									["spellID"] = 269736,
-								}),	
-								i(163020, {	-- Schematic: Honorable Combatant's Discombobulator [Rank 2]	
-									["recipeID"] = 269725,
+								}),
+								i(163020, {	-- Schematic: Honorable Combatant's Discombobulator [Rank 2]
 									["spellID"] = 269725,
-								}),	
-								i(163021, {	-- Schematic: Honorable Combatant's Discombobulator [Rank 3]	
-									["recipeID"] = 269726,
+								}),
+								i(163021, {	-- Schematic: Honorable Combatant's Discombobulator [Rank 3]
 									["spellID"] = 269726,
-								}),	
-								i(163022, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2]	
-									["recipeID"] = 296728,
+								}),
+								i(163022, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2]
 									["spellID"] = 296728,
-								}),	
-								i(163023, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 3]	
-									["recipeID"] = 269729,
+								}),
+								i(163023, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 3]
 									["spellID"] = 269729,
-								}),	
+								}),
 							},
-							["itemID"] = 137642, -- Mark of Honor
+							["itemID"] = 137642,	-- Mark of Honor
 						}),
 						n(145838, {	-- Marshal Frazer
 							i(139775), -- Alliance Enthusiast
@@ -513,56 +443,43 @@ _.Zones =
 								i(161572),	-- Yardarm Sharpshooter's Boots
 								i(161976),	-- Admiralty Marine's Duffel
 								i(160534),	-- Navy Blue Boat Cloak
-								i(162380, {	-- Design: Tidal Amethyst Loop [Rank 3]	
-									["recipeID"] = 256519,
+								i(162380, {	-- Design: Tidal Amethyst Loop [Rank 3]
 									["spellID"] = 256519,
 								}), 	
-								i(162304, {	-- Formula: Enchant Ring - Pact of Mastery [Rank 3]	
-									["recipeID"] = 255100,
+								i(162304, {	-- Formula: Enchant Ring - Pact of Mastery [Rank 3]
 									["spellID"] = 255100,
 								}), 	
-								i(162317, {	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3]	
-									["recipeID"] = 268903,
+								i(162317, {	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3]
 									["spellID"] = 268903,
 								}), 	
-								i(162316, {	-- Formula: Enchant Weapon - Siphoning [Rank 3]	
-									["recipeID"] = 255112,
+								i(162316, {	-- Formula: Enchant Weapon - Siphoning [Rank 3]
 									["spellID"] = 255112,
 								}), 	
-								i(163316, {	-- Recipe: Battle Potion of Intellect [Rank 3]	
-									["recipeID"] = 279164,
+								i(163316, {	-- Recipe: Battle Potion of Intellect [Rank 3]
 									["spellID"] = 279164,
 								}), 
-								i(162254, {	-- Recipe: Coastal Mana Potion [Rank 3]	
-									["recipeID"] = 252387,
+								i(162254, {	-- Recipe: Coastal Mana Potion [Rank 3]
 									["spellID"] = 252387,
 								}), 	
-								i(162359, {	-- Recipe: Contract: Proudmoore Admiralty [Rank 2]	
-									["recipeID"] = 256276,
+								i(162359, {	-- Recipe: Contract: Proudmoore Admiralty [Rank 2]
 									["spellID"] = 256276,
 								}), 	
-								i(162134, {	-- Recipe: Flask of the Vast Horizon [Rank 3]	
-									["recipeID"] = 252356,
+								i(162134, {	-- Recipe: Flask of the Vast Horizon [Rank 3]
 									["spellID"] = 252356,
 								}), 	
-								i(162414, {	-- Recipe: Hardened Tempest Knuckles [Rank 3]	
-									["recipeID"] = 256784,
+								i(162414, {	-- Recipe: Hardened Tempest Knuckles [Rank 3]
 									["spellID"] = 256784,
 								}), 	
-								i(162413, {	-- Recipe: Mistscale Knuckles [Rank 3]	
-									["recipeID"] = 256781,
+								i(162413, {	-- Recipe: Mistscale Knuckles [Rank 3]
 									["spellID"] = 256781,
 								}), 	
-								i(162130, {	-- Recipe: Potion of Bursting Blood [Rank 3]	
-									["recipeID"] = 252343,
+								i(162130, {	-- Recipe: Potion of Bursting Blood [Rank 3]
 									["spellID"] = 252343,
 								}), 	
-								i(162327, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2]	
-									["recipeID"] = 272063,
+								i(162327, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2]
 									["spellID"] = 272063,
 								}), 	
-								i(162328, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3]	
-									["recipeID"] = 272064,
+								i(162328, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3]
 									["spellID"] = 272064,
 								}), 	
 							},
@@ -589,74 +506,57 @@ _.Zones =
 								i(161589),	-- Royal Knight's Sabatons
 								i(161583),	-- Warmage's Flame-Brimming Wristcords
 								i(160536),	-- 7th Legionnaire's Cloak
-								i(162378, {	-- Design: Amberblaze Loop	
-									["recipeID"] = 256515,
+								i(162378, {	-- Design: Amberblaze Loop
 									["spellID"] = 256515,
-								}),	
+								}),
 								i(162302, {	-- Formula: Enchant Ring - Pact of Critical Strike	
-									["recipeID"] = 255098,
 									["spellID"] = 255098,
-								}),	
-								i(163320, {	-- Recipe: Battle Potion of Strength	
-									["recipeID"] = 279170,
+								}),
+								i(163320, {	-- Recipe: Battle Potion of Strength
 									["spellID"] = 279170,
-								}),	
+								}),
 								i(162306, {	-- Recipe: Enchanter's Sorcerous Scepter	
-									["recipeID"] = 265112,
 									["spellID"] = 265112,
-								}),	
+								}),
 								i(162138, {	-- Recipe: Endless Tincture of Fractional Power	
-									["recipeID"] = 252378,
 									["spellID"] = 252378,
-								}),	
+								}),
 								i(162132, {	-- Recipe: Flask of the Currents	
-									["recipeID"] = 252350,
 									["spellID"] = 252350,
-								}),	
+								}),
 								i(162128, {	-- Recipe: Steelskin Potion	
-									["recipeID"] = 252336,
 									["spellID"] = 252336,
-								}),	
-								i(162275, {	-- Recipe: Stormsteel Dagger	
-									["recipeID"] = 253158,
+								}),
+								i(162275, {	-- Recipe: Stormsteel Dagger
 									["spellID"] = 253158,
-								}),	
+								}),
 								i(162670, {	-- Recipe: Stormsteel Saber	
-									["recipeID"] = 278133,
 									["spellID"] = 278133,
-								}),	
-								i(162261, {	-- Recipe: Stormsteel Shield	
-									["recipeID"] = 253118,
+								}),
+								i(162261, {	-- Recipe: Stormsteel Shield
 									["spellID"] = 253118,
-								}),	
+								}),
 								i(162276, {	-- Recipe: Stormsteel Spear	
-									["recipeID"] = 253161,
 									["spellID"] = 253161,
-								}),	
+								}),
 								i(162139, {	-- Recipe: Surging Alchemist Stone	
-									["recipeID"] = 252381,
 									["spellID"] = 252381,
-								}),	
+								}),
 								i(162323, {	-- Schematic: AZ3-R1-T3 Synthetic Specs	
-									["recipeID"] = 272057,
 									["spellID"] = 272057,
-								}),	
+								}),
 								i(162324, {	-- Schematic: AZ3-R1-T3 Synthetic Specs	
-									["recipeID"] = 272058,
 									["spellID"] = 272058,
-								}),	
+								}),
 								i(162346, {	-- Schematic: Finely-Tuned Stormsteel Destroyer	
-									["recipeID"] = 255459,
 									["spellID"] = 255459,
-								}),	
+								}),
 								i(162344, {	--  Schematic: Monelite Scope of Alacrity	
-									["recipeID"] = 264967,
 									["spellID"] = 264967,
-								}),	
+								}),
 								i(162345, {	-- Schematic: Precision Attitude Adjuster	
-									["recipeID"] = 253152,
 									["spellID"] = 253152,
-								}),	
+								}),
 								i(163043, {	-- Scouting Report: Grimwaatt's Crash
 									["f"] = 55, -- Consumable; Might change to Misc later
 								}),

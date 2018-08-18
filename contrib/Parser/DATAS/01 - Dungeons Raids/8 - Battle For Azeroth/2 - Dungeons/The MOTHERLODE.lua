@@ -195,7 +195,6 @@ _.Instances =
 									ach(12846), -- Mythic: The MOTHERELODE!!
 									ach(12854),	-- Ready for Raiding VI
 									i(161135, { -- Schematic: MechaMogul Mk2
-										["recipeID"] = 274621,
 										["spellID"] = 274621,
 									}),
 									i(159641), -- G3T-00t

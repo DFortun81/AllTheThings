@@ -13,43 +13,43 @@ _.Zones =
 								o(280951, {	-- Ashvane Spoils	
 									["questID"] = 50237,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(294317, {	-- Deadwood Chest	
 									["questID"] = 52994,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(287324, {	-- Excavator's Greed	
 									["questID"] = 51136,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(999999, {	-- Grayal's Last Offering	
 									["questID"] = 51093,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(287304, {	-- Lost Explorer's Bounty	
 									["questID"] = 51132,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(294316, {	-- Lost Offerings of Kimbul	
 									["questID"] = 52992,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(287318, {	-- Sandfury Reserve	
 									["questID"] = 51133,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(294319, {	-- Sandsunken Treasure	
 									["questID"] = 53004,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(287320, {	-- Stranded Cache	
 									["questID"] = 51135,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(287326, {	-- Zem'lan's Buried Treasure	
 									["questID"] = 51137,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 							},
 						}),
 					},
@@ -445,54 +445,54 @@ i(155430),
 							n(135852, {	-- Ak'tar		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161021),	-- Soaring Slateclaw Gloves
-								}),	
+								}),
 								-- ["questID"] = 	
-							}),		
+							}),	
 							n(130439, {	-- Ashmane
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161106),	-- Rabid Packleader Bracers
 								}),
 								["questID"] = 47532,
-							}),		
+							}),	
 							n(128553, {	-- Azer'tor [MissingL]
 								-- ["questID"] = 	
-							}),		
+							}),	
 							n(128497, {	-- Bajiani the Slick		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(162622),	-- Groggy Brawler's Chestplate
-								}),	
+								}),
 								["questID"] = 49251,
-							}),		
+							}),	
 							n(129476, {	-- Bloated Krolusk		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161037),	-- Sand Scoured Girdle
-								}),	
+								}),
 								 ["questID"] = 47562,
-							}),		
+							}),	
 							n(136393, {	-- Bloodwing Bonepicker		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161019),	-- Dread Vulture Waistcord
-								}),	
+								}),
 								-- ["questID"] = 	
-							}),		
+							}),	
 							n(136346, {	-- Captain Stef "Marrow" Quin
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(160990),	-- Marrow's Sash
 								}),
 								["questID"] = 51073,
-							}),		
+							}),	
 							n(124722, {	-- Commodore Calhoun
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 									i(162615),	-- Commodore Calhoun's Tricorne
 								}),
 								-- ["questID"] = 	
-							}),		
+							}),	
 							n(136335, {	-- Enraged Krolusk
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161036),	-- Sand-Smoothed Wristguards
-								}),							
+								}),						
 								["questID"] = 51077,
-							}),	
+							}),
 							n(136323, {	-- Fangcaller Xorreth
 								["groups"] = {
 									i(162612),	-- Cobra Priest's Headdress
@@ -504,37 +504,37 @@ i(155430),
 									i(160972),	-- Herculean Golden Sword
 								}),
 								["questID"] = 50362,
-							}),	
+							}),
 							n(128674, {	-- Gut-Gut the Glutton
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161105),	-- Gluttonous Carnivore Treads
 								}),
 								["questID"] = 49270,
-							}),		
+							}),	
 							n(130443, {	-- Hivemother Kraxi		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161027),	-- Venomous Hivemother Cord
-								}),	
+								}),
 								["questID"] = 47533,	
-							}),		
+							}),	
 							n(129283, {	-- Jumbo Sandsnapper		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161107),	-- Brineshell Footguards
-								}),	
+								}),
 								["questID"] = 49392,
-							}),		
+							}),	
 							n(136341, {	-- Jungleweb Hunter		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161026),	-- Spiderbite Wristwraps
-								}),	
+								}),
 								["questID"] = 51074,
-							}),		
+							}),	
 							n(128686, {	-- Kamid the Trapper		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161038),	-- Sand Trapper's Legguards
-								}),	
+								}),
 								-- ["questID"] = 	
-							}),		
+							}),	
 							n(137681, {	-- King Clickyclack
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161108),	-- Kingshell Legplates
@@ -545,37 +545,37 @@ i(155430),
 							n(128951, {	-- Nez'ara		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161024),	-- Wrathful Sister's Cincture
-								}),	
+								}),
 								-- ["questID"] = 	
-							}),		
+							}),	
 							n(136340, {	-- Relic Hunter Hazaak		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(160956),	-- Hazaak's Windshorn Claws
-								}),	
+								}),
 								["questID"] = 51126,	
-							}),		
+							}),	
 							n(127776, {	-- Scaleclaw Broodmother		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161039),	-- Sandclaw Handguards
-								}),	
+								}),
 								-- ["questID"] = 	
-							}),		
+							}),	
 							n(136336, {	-- Scorpox		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161030),	-- Vicious Scorpidsting Sandals
-								}),	
+								}),
 								-- ["questID"] = 	
-							}),		
+							}),	
 							n(136338, {	-- Sirokar		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161099),	-- Wind-Scoured Greaves
-								}),	
+								}),
 								-- ["questID"] = 	
 							}),
 							n(134571, {	-- Skycaller Teskris		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(160968),	-- Skycaller Spellstaff
-								}),	
+								}),
 								["questID"] = 50637,
 							}),
 							n(134745, {	-- Skycarver Krakit
@@ -590,9 +590,9 @@ i(155430),
 							n(130401, {	-- Vathikur		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161097),	-- Rattling Earth Armwraps
-								}),	
+								}),
 								-- ["questID"] = 	
-							}),		
+							}),	
 							n(129180, {	-- Warbringer Hozzik
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161032),	-- Spire-Charged Links
@@ -607,19 +607,19 @@ i(155430),
 							n(134638, {	-- Warlord Zothix
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161031),	-- Zothix's Conductive Vambraces
-								}),	
+								}),
 								["questID"] = 50662,	
 							}),
 							n(134625, {	-- Warmother Captive		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161103),	-- Barbarous Captive's Wargreaves
-								}),	
+								}),
 								["questID"] = 50658,
-							}),		
+							}),	
 							n(129411, {	-- Zunashi the Exile		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161119),	-- Ravasaur Skull Bijou
-								}),	
+								}),
 								["questID"] = 48319,	
 							}),
 					},
@@ -639,74 +639,57 @@ i(155430),
 								i(161544),	-- Vambraces of a Thousand Year Toil
 								i(161503),	-- Wristwraps of Scrollbinding
 								i(160538),	-- Cape of the Scroll Keepers*
-								i(163026, {	-- Pattern: Embroidered Deep Sea Bag [Rank 2]	
-									["recipeID"] = 257129,
+								i(163026, {	-- Pattern: Embroidered Deep Sea Bag [Rank 2]
 									["spellID"] = 257129,
-								}),	
-								i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]	
-									["recipeID"] = 255094,
+								}),
+								i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]
 									["spellID"] = 255094,
-								}),	
-								i(162301, {	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]	
-									["recipeID"] = 255097,
+								}),
+								i(162301, {	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]
 									["spellID"] = 255097,
-								}),	
-								i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2]	
-									["recipeID"] = 259423,
+								}),
+								i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2]
 									["spellID"] = 259423,
-								}),	
-								i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3]	
-									["recipeID"] = 259422,
+								}),
+								i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3]
 									["spellID"] = 259422,
-								}),	
-								i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3]	
-									["recipeID"] = 256234,
+								}),
+								i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3]
 									["spellID"] = 256234,
-								}),	
-								i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2]	
-									["recipeID"] = 256298,
+								}),
+								i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2]
 									["spellID"] = 256298,
-								}),	
-								i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2]	
-									["recipeID"] = 256295,
+								}),
+								i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2]
 									["spellID"] = 256295,
-								}),	
-								i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3]	
-									["recipeID"] = 256246,
+								}),
+								i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3]
 									["spellID"] = 256246,
-								}),	
-								i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]	
-									["recipeID"] = 252363,
+								}),
+								i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]
 									["spellID"] = 252363,
-								}),	
-								i(162287, {	-- Recipe: Galley Banquet [Rank 3]	
-									["recipeID"] = 259420,
+								}),
+								i(162287, {	-- Recipe: Galley Banquet [Rank 3]
 									["spellID"] = 259420,
-								}),	
-								i(162292, {	-- Recipe: Grilled Catfish [Rank 3]	
-									["recipeID"] = 259432,
+								}),
+								i(162292, {	-- Recipe: Grilled Catfish [Rank 3]
 									["spellID"] = 259432,
-								}),	
-								i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]	
-									["recipeID"] = 256252,
+								}),
+								i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]
 									["spellID"] = 256252,
-								}),	
-								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]	
-									["recipeID"] = 256249,
+								}),
+								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]
 									["spellID"] = 256249,
-								}),	
-								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]	
-									["recipeID"] = 259435,
+								}),
+								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]
 									["spellID"] = 259435,
-								}),	
-								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]	
-									["recipeID"] = 252370,
+								}),
+								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]
 									["spellID"] = 252370,
-								}),	
-								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]	
-									["recipeID"] = 256237,
+								}),
+								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]
 									["spellID"] = 256237,
-								}),	
+								}),
 							},
 						}),
 						n(135804, {	-- Hoarder Jena <Voldunai Emissary>
@@ -726,66 +709,51 @@ i(155430),
 								i(161507),	-- Silent Scavenger Leggings
 								i(160529),	-- Dune Shroud
 								i(161999),	-- Pack of Many Pockets
-								i(162763, {	-- Design: Royal Quartz Loop [Rank 3]	
-									["recipeID"] = 256521,
+								i(162763, {	-- Design: Royal Quartz Loop [Rank 3]
 									["spellID"] = 256521,
-								}),	
-								i(162719, {	-- Formula: Enchant Ring - Pact of Versatility [Rank 3]	
-									["recipeID"] = 255101,
+								}),
+								i(162719, {	-- Formula: Enchant Ring - Pact of Versatility [Rank 3]
 									["spellID"] = 255101,
-								}),	
-								i(162725, {	-- Formula: Enchant Weapon - Gale-Force Striking [Rank 3]	
-									["recipeID"] = 255143,
+								}),
+								i(162725, {	-- Formula: Enchant Weapon - Gale-Force Striking [Rank 3]
 									["spellID"] = 255143,
-								}),	
-								i(162726, {	-- Formula: Enchant Weapon - Versatile Navigation [Rank 3]	
-									["recipeID"] = 268879,
+								}),
+								i(162726, {	-- Formula: Enchant Weapon - Versatile Navigation [Rank 3]
 									["spellID"] = 268879,
-								}),	
-								i(162769, {	-- Pattern: Deep Sea Bag [Rank 3]	
-									["recipeID"] = 257127,
+								}),
+								i(162769, {	-- Pattern: Deep Sea Bag [Rank 3]
 									["spellID"] = 257127,
-								}),	
-								i(162772, {	-- Pattern: Embroidered Deep Sea Cloak [Rank 3]	
-									["recipeID"] = 257116,
+								}),
+								i(162772, {	-- Pattern: Embroidered Deep Sea Cloak [Rank 3]
 									["spellID"] = 257116,
-								}),	
-								i(163313, {	-- Recipe: Battle Potion of Agility [Rank 3]	
-									["recipeID"] = 279161,
+								}),
+								i(163313, {	-- Recipe: Battle Potion of Agility [Rank 3]
 									["spellID"] = 279161,
-								}),	
-								i(162705, {	-- Recipe: Coastal Rejuvenation Potion [Rank 3]	
-									["recipeID"] = 252390,
+								}),
+								i(162705, {	-- Recipe: Coastal Rejuvenation Potion [Rank 3]
 									["spellID"] = 252390,
-								}),	
-								i(162755, {	-- Recipe: Contract: Voldunai [Rank 2]	
-									["recipeID"] = 256291,
+								}),
+								i(162755, {	-- Recipe: Contract: Voldunai [Rank 2]
 									["spellID"] = 256291,
-								}),	
-								i(162698, {	-- Recipe: Flask of the Undertow [Rank 3]	
-									["recipeID"] = 252359,
+								}),
+								i(162698, {	-- Recipe: Flask of the Undertow [Rank 3]
 									["spellID"] = 252359,
-								}),	
-								i(162694, {	-- Recipe: Potion of Rising Death [Rank 3]	
-									["recipeID"] = 252346,
+								}),
+								i(162694, {	-- Recipe: Potion of Rising Death [Rank 3]
 									["spellID"] = 252346,
-								}),	
-								i(162766, {	-- Recipe: Recurve Bow of the Strands [Rank 3]	
-									["recipeID"] = 256789,
+								}),
+								i(162766, {	-- Recipe: Recurve Bow of the Strands [Rank 3]
 									["spellID"] = 256789,
-								}),	
-								i(162734, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 2]	
-									["recipeID"] = 272066,
+								}),
+								i(162734, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 2]
 									["spellID"] = 272066,
-								}),	
-								i(162735, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 3]	
-									["recipeID"] = 272067,
+								}),
+								i(162735, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 3]
 									["spellID"] = 272067,
-								}),	
-								i(162727, {	-- Schematic: Frost-Laced Ammunition [Rank 3]	
-									["recipeID"] = 265102,
+								}),
+								i(162727, {	-- Schematic: Frost-Laced Ammunition [Rank 3]
 									["spellID"] = 265102,
-								}),	
+								}),
 								i(163213, {	-- Ghostly Explorer's Skull
 									["f"] = 55,  -- They may change it to a toy?
 								}),
@@ -805,6 +773,22 @@ i(155430),
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
+						n(-17, { -- Quests
+							["groups"] = {
+								q(51108, { -- Hivemother Kraxi
+									["groups"] = {
+										i(161027, {	-- Venomous Hivemother Cord
+											["crs"] = {
+												130443,	-- Hivemother Kraxi
+											},
+										}),
+									},
+									["repeatable"] = true,
+									["isDaily"] = true,
+									["lvl"] = 120,
+								}),
+							},
+						}),
 						i(158155),	-- Dinobone Charm
 						n(-43, {	-- Cloth
 							["groups"] = {
@@ -844,6 +828,14 @@ i(155430),
 						}),
 						n(-46, {	-- Plate
 							["groups"] = {
+								i(157961),	-- Dunecrawler Faceguard
+								i(157964),	-- Dunecrawler Spaulders
+								i(157958),	-- Dunecrawler Chestplate
+								i(157966),	-- Dunecrawler Vambraces
+								i(157960),	-- Dunecrawler Crushers
+								i(157965),	-- Dunecrawler Waistguard
+								i(157963),	-- Dunecrawler Legplates
+								i(157959),	-- Dunecrawler Footguards
 								i(161036),	-- Sand-Smoothed Wristguards
 							},
 						}),

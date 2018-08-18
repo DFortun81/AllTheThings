@@ -13,19 +13,19 @@ _.Zones =
 								o(279260, {	-- Cleverly Disguised Chest	
 									["questID"] = 49885,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(277715, {	-- Cursed Nazmani Chest	
 									["questID"] = 49979,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(279689, {	-- Lost Nazmani Treasure	
 									["questID"] = 49891,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(279253, {	-- Lucky Horace's Lucky Chest	
 									["questID"] = 49867,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(278437, {	-- Offering to Bwonsamdi
 									["questID"] = 49484,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
@@ -33,7 +33,7 @@ _.Zones =
 								o(280522, {	-- Partially-Digested Treasure	
 									["questID"] = 50061,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(278436, {	-- Shipwrecked Chest
 									["questID"] = 49483,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
@@ -41,15 +41,15 @@ _.Zones =
 								o(280504, {	-- Swallowed Naga Chest	
 									["questID"] = 50045,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(279299, {	-- Venomous Seal	
 									["questID"] = 49889,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(277885, {	-- Wunja's Trove	
 									["questID"] = 49313,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 							},
 						}),
 					},
@@ -83,14 +83,14 @@ _.Zones =
 									q(47263, {	-- A Time of Revelation	
 										["qg"] = 130844,	-- Princess Talanji
 										["sourceQuests"] = { 47262 },	-- Ending the Blood Trolls	
-									}),		
+									}),	
 									q(47262, {	-- Ending the Blood Trolls	
 										["qg"] = 121241,	-- Princess Talanji
 										["sourceQuests"] = { 
 											47264,	-- Leave None Standing
 											47130,	-- Improper Burial
 										},
-									}),		
+									}),	
 									q(47130, {	-- Improper Burial
 										["groups"] = {
 											i(155322),	-- Death-Pledged Gauntlets
@@ -107,20 +107,20 @@ _.Zones =
 										},
 										["qg"] = 121241,	-- Princess Talanji
 										["sourceQuests"] = { 47105 },	-- Into The Darkness
-									}),		
+									}),	
 									q(47105, {	-- Into The Darkness	
 										["qg"] = 120904,	-- Princess Talanji
 										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
-									}),		
+									}),	
 									q(47264, {	-- Leave None Standing	
 										["qg"] = 130844,	-- Princess Talanji
 										["sourceQuests"] = { 47105 },	-- Into The Darkness
-									}),		
+									}),	
 									q(47188, {	-- The Aid of the Loa [Note: Final Quest needed to trigger criteria]
 										["qg"] = 121288,	-- Princess Talanji
 										["sourceQuests"] = { 47263 },	-- A Time of Revelation
 										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-									}),		
+									}),	
 								},
 							}),
 							crit(2, {	-- A Pact With Death
@@ -128,11 +128,11 @@ _.Zones =
 									q(47248, {	-- 'Til Death Do Us Part	
 										["qg"] = 122706,	-- Theurgist Salazae
 										["sourceQuests"] = { 47880 },	-- A Tribute for Death
-									}),		
+									}),	
 									q(47244, {	-- A Culling of Souls	
 										["qg"] = 122102,	-- Hanzabu
 										["sourceQuests"] = { 47241 },	-- The Shadow of Death
-									}),		
+									}),	
 									q(49348, {	-- A Desecrated Temple	
 										["qg"] = 122688,	-- Bwonsamdi
 										["sourceQuests"] = { 47493 },	-- A Lonely Spirit
@@ -144,19 +144,19 @@ _.Zones =
 											47491,	-- Remnants of the Damned
 											47248, 	-- 'Til Death Do Us Part
 										},	
-									}),	
+									}),
 									q(47880, {	-- A Tribute for Death	
 										["qg"] = 124513,	-- Hanzabu
 										["sourceQuests"] = { 47868 },	-- The Necropolis
-									}),		
+									}),	
 									q(48934, {	-- Mark of the Damned	
 										["sourceQuests"] = { 47493 },	-- A Lonely Spirit
 										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
-									}),		
+									}),	
 									q(47491, {	-- Remnants of the Damned	
 										["qg"] = 122688,	-- Bwonsamdi
 										["sourceQuests"] = { 47880 },	-- A Tribute for Death
-									}),		
+									}),	
 									q(49278, {	-- Spiritual Restoration
 										["groups"] = {
 											i(153514, {	-- Hanzabu's Charm
@@ -165,7 +165,7 @@ _.Zones =
 										},
 										["qg"] = 124428,	-- Hanzabu
 										["sourceQuests"] = { 47244 },	-- A Culling of Souls
-									}),		
+									}),	
 									q(47249, {	-- Soulbound
 										["groups"] = {
 											i(155347),	-- Bloodrite Headchopper
@@ -196,24 +196,24 @@ _.Zones =
 										},
 										["qg"] = 122688,	-- Bwonsamdi
 										["sourceQuests"] = { 47880 },	-- A Tribute for Death
-									}),		
+									}),	
 									q(49432, {	-- The Forlorn Soul	
 										["qg"] = 126588,	-- Keula
 										["sourceQuests"] = { 47493 },	-- A Lonely Spirit
-									}),		
+									}),	
 									q(47868, {	-- The Necropolis	
 										["qg"] = 124428,	-- Hanzabu
 										["sourceQuests"] = { 49278 },	-- Spiritual Restoration
-									}),		
+									}),	
 									q(47241, {	-- The Shadow of Death	
 										["qg"] = 121288,	-- Princess Talanji
 										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
-									}),		
+									}),	
 									q(47250, {	-- We'll Meet Again [Note: Final Quest needed to trigger criteria]
 										["qg"] = 122766,	-- Bwonsamdi
 										["sourceQuests"] = { 47249 },	-- Soulbound
 										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-									}),		
+									}),	
 								},
 							}),
 							crit(3, {	-- The Dark Heart of Nazmir
@@ -228,15 +228,15 @@ _.Zones =
 											49078,	-- Poisoning the Brood
 											48800,	-- Mark of the Bat
 										},	
-									}),		
+									}),	
 									q(48890, {	-- How to Be a Blood Troll	
 										["qg"] = 127391,	-- Bloodseeker Jo'chunga
 										["sourceQuests"] = { 48699 },	-- Sneaking into Zalamar
-									}),		
+									}),	
 									q(48801, {	-- Isolating Zalamar	
 										["qg"] = 127391,	-- Bloodseeker Jo'chunga
 										["sourceQuests"] = { 48699 },	-- Sneaking into Zalamar
-									}),		
+									}),	
 									q(48800, {	-- Mark of the Bat
 										["groups"] = {
 											i(159075),	-- Bloodhex Talisman
@@ -250,34 +250,34 @@ _.Zones =
 											48801,	-- Isolating Zalamar
 											48890,	-- How to Be a Blood Troll
 										},	
-									}),		
+									}),	
 									q(49078, {	-- Poisoning the Brood	
 										["qg"] = 127391,	-- Bloodseeker Jo'chunga
 										["sourceQuests"] = { 
 											48801,	-- Isolating Zalamar
 											48890,	-- How to Be a Blood Troll
 										},	
-									}),		
+									}),	
 									q(48699, {	-- Sneaking into Zalamar	
 										["qg"] = 122795,	-- Witch Doctor Kejabu
 										["sourceQuests"] = { 49440 },	-- Blood Troll on the Outside
-									}),		
+									}),	
 									q(49081, {	-- To Kill a Loa	
 										["qg"] = 128276,	-- Jo'chunga
 										["sourceQuests"] = { 49079 },	-- Hir'eek, the Bat Loa
-									}),		
+									}),	
 									q(49082, {	-- Upward and Onward	
 										["qg"] = 128276,	-- Jo'chunga
 										["sourceQuests"] = { 49081 },	-- To Kill a Loa
 										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-									}),	
+									}),
 									q(49406, {	-- Zalamar Slaughter
 										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = { 
 											48801,	-- Isolating Zalamar
 											48890,	-- How to Be a Blood Troll
 										},	
-									}),	
+									}),
 								},
 							}),
 							crit(4, {	-- Turtle Power [Best Title Ever!]
@@ -289,7 +289,7 @@ _.Zones =
 									q(49185, {	-- Catching Up	
 										["qg"] = 127961,	-- Princess Talanji
 										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
-									}),		
+									}),	
 									q(49080, {	-- Cease all Summoning
 										["groups"] = {
 											i(158981),	-- Death-Pledged Footguards
@@ -300,15 +300,15 @@ _.Zones =
 										},
 										["qg"] = 127961,	-- Princess Talanji
 										["sourceQuests"] = { 49067 },	-- Beseeching Bwonsamdi
-									}),		
+									}),	
 									q(49132, {	-- Crushing the Skullcrushers	
 										["qg"] = 127960,	-- Lashk
 										["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
-									}),		
+									}),	
 									q(49071, {	-- Dreadtick Combustion	
 										["qg"] = 127960,	-- Lashk
 										["sourceQuests"] = { 49067 },	-- Beseeching Bwonsamdi
-									}),		
+									}),	
 									q(49126, {	-- Forcing Fate's Hand
 										["groups"] = {
 											i(158973),	-- Band of Destiny
@@ -318,7 +318,7 @@ _.Zones =
 											49125,	-- Negative Blood
 											51689,	-- Tortollan Rescue
 										},	
-									}),		
+									}),	
 									q(49136, {	-- Jungo, Herald of G'huun
 										["qg"] = 127961,	-- Princess Talanji
 										["sourceQuests"] = { 
@@ -330,19 +330,19 @@ _.Zones =
 									q(49130, {	-- Loa-Free Diet	
 										["qg"] = 127958,	-- Kisha
 										["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
-									}),		
+									}),	
 									q(49125, {	-- Negative Blood	
 										["qg"] = 127958,	-- Kisha
 										["sourceQuests"] = { 49120 },	-- Speaking with the Dead
-									}),		
+									}),	
 									q(49131, {	-- Sanctifying Ground	
 										["qg"] = 127961,	-- Princess Talanji
 										["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
-									}),		
+									}),	
 									q(49070, {	-- Souls for the Death Loa	
 										["qg"] = 128096,	-- Bwonsamdi
 										["sourceQuests"] = { 49067 },	-- Beseeching Bwonsamdi
-									}),		
+									}),	
 									q(49120, {	-- Speaking with the Dead	
 										["qg"] = 128096,	-- Bwonsamdi
 										["sourceQuests"] = { 
@@ -350,20 +350,20 @@ _.Zones =
 											49071,	-- Dreadtick Combustion
 											49070,	-- Souls for the Death Loa
 										},	
-									}),		
+									}),	
 									q(49064, {	-- Torga, the Turtle Loa	
 										["qg"] = 127960,	-- Lashk
 										["sourceQuests"] = { 49185 },	-- Catching Up
-									}),		
+									}),	
 									q(49160, {	-- Torga's Eternal Return  [Note: Final Quest needed to trigger criteria]
 										["qg"] = 127960,	-- Lashk
 										["sourceQuests"] = { 49136 },	-- Jungo, Herald of G'huun
 										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-									}),		
+									}),	
 									q(51689, {	-- Tortollan Rescue	
 										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = { 49120 },	-- Speaking with the Dead
-									}),	
+									}),
 								},
 							}),
 							crit(5, {	-- A Friend of the Frogs
@@ -375,25 +375,25 @@ _.Zones =
 										},
 										["qg"] = 120551,	-- Krag'wa the Huge
 										["sourceQuests"] = { 47623 },	-- The Last Witch Doctor of Krag'wa
-									}),		
+									}),	
 									q(48402, {	-- A Poisonous Touch	
 										["qg"] = 126039,	-- Mag'ash the Poisonous
 										["sourceQuests"] = { 
 											52477,	-- WANTED: Ayame
 											47525,	-- Staying Hidden
 										},	
-									}),		
+									}),	
 									q(47621, {	-- A True Loa Feast	
 										["qg"] = 120551,	-- Krag'wa the Huge
 										["sourceQuests"] = { 47623 },	-- The Last Witch Doctor of Krag'wa
-									}),		
+									}),	
 									q(47660, {	-- Fallen Idols	
 										["qg"] = 124376,	-- Witch Doctor Zentimo
 										["sourceQuests"] = { 
 											52477,	-- WANTED: Ayame
 											47525,	-- Staying Hidden
 										},	
-									}),		
+									}),	
 									q(47659, {	-- Hunt the Hunter
 										["groups"] = {
 											i(155383),	-- Bloody Warmother's Greatcloak
@@ -407,7 +407,7 @@ _.Zones =
 											52477,	-- WANTED: Ayame
 											47525,	-- Staying Hidden
 										},	
-									}),		
+									}),	
 									q(47696, {	-- Krag'wa the Terrible
 										["groups"] = {
 											i(159015),	-- Death-Pledged Boots
@@ -421,25 +421,25 @@ _.Zones =
 										},
 										["qg"] = 120551,	-- Krag'wa the Huge
 										["sourceQuests"] = { 47540 }	-- Totemic Restoration
-									}),		
+									}),	
 									q(47697, {	-- Krag'wa's Aid	
 										["qg"] = 124641,	-- Shadow Hunter Mutumba
 										["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
-									}),	
+									}),
 									q(48090, {	-- Krag'wa's Chosen	[Note: One of 3 final Quest needed to trigger criteria]
 										["qg"] = 125317,	-- Shadow Hunter Narez
 										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
 										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-									}),	
+									}),
 									q(48093, {	-- Nagating the Threat [Note: One of 3 final Quest needed to trigger criteria]
 										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
 										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-									}),		
+									}),	
 									q(47525, {	-- Staying Hidden	
 										["qg"] = 122991,	-- Shadow Hunter Mutumba
 										["sourceQuests"] = { 49902 },	-- To Gloom Hollow
-									}),		
+									}),	
 									q(47623, {	-- The Last Witch Doctor of Krag'wa	
 										["qg"] = 120551,	-- Krag'wa the Huge
 										["sourceQuests"] = { 
@@ -447,28 +447,28 @@ _.Zones =
 											47660,	-- Fallen Idol
 											48402,	-- A Poisonous Touch
 										},	
-									}),		
+									}),	
 									q(49902, {	-- To Gloom Hollow	
 										["qg"] = 127958,	-- Kisha
 										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
-									}),		
+									}),	
 									q(47918, {	-- To Serve Krag'wa	
 										["qg"] = 120551,	-- Krag'wa the Huge
 										["sourceQuests"] = { 47697 },	-- Krag'wa's Aid
-									}),		
+									}),	
 									q(47540, {	-- Totemic Restoration	
 										["qg"] = 120551,	-- Krag'wa the Huge
 										["sourceQuests"] = { 47621, 47622, },	-- A True Loa Feast, A Magical Glow
-									}),		
-									q(48092, {	-- Vengeance of the Frogs [Note: One of 3 final Quest needed to trigger criteria]	
+									}),	
+									q(48092, {	-- Vengeance of the Frogs [Note: One of 3 final Quest needed to trigger criteria]
 										["qg"] = 125317,	-- Shadow Hunter Narez
 										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
 										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-									}),	
+									}),
 									q(52477, {	-- WANTED: Ayame	
 										["qg"] = 131987,	-- Crez
 										["sourceQuests"] = { 49902 },	-- To Gloom Hollow
-									}),	
+									}),
 								},
 							}),
 							crit(7, {	-- Bring the Boom
@@ -487,38 +487,38 @@ _.Zones =
 											47598,	-- Pilfering and Fencing
 											47711, 	-- Head of the Viper
 										},	
-									}),		
+									}),	
 									q(47245, {	-- Getting the Message	
 										["qg"] = 131213,	-- Rokhan
 										["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
-									}),		
+									}),	
 									q(47711, {	-- Head of the Viper	
 										["qg"] = 123544,	-- Patch
 										["sourceQuests"] = { 
 											47599,	-- Revenge: Served Hot
 											47597,	-- No Goblin Left Behind
 										},	
-									}),		
+									}),	
 									q(47597, {	-- No Goblin Left Behind	
 										["qg"] = 123178,	-- Patch
 										["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
-									}),		
+									}),	
 									q(47598, {	-- Pilfering and Fencing	
 										["qg"] = 123545,	-- Newt
 										["sourceQuests"] = { 
 											47599,	-- Revenge: Served Hot
 											47597,	-- No Goblin Left Behind
 										},	
-									}),		
+									}),	
 									q(47602, {	-- Ready For Action	[Note: Final Quest needed to trigger criteria]
 										["qg"] = 123878,	-- Patch
 										["sourceQuests"] = { 47601 },	-- Field Evaluation
 										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-									}),		
+									}),	
 									q(47631, {	-- Rendezvous with the Libation	
 										["qg"] = 131213,	-- Rokhan
 										["sourceQuests"] = { 47245 },	-- Getting the Message
-									}),		
+									}),	
 									q(47599, {	-- Revenge: Served Hot	
 										["groups"] = {
 											i(159002),	-- Death-Pledged Girdle
@@ -529,36 +529,36 @@ _.Zones =
 										},
 										["qg"] = 123436,	-- Ticker
 										["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
-									}),		
+									}),	
 									q(47756, {	-- The Libation's Liberation	
 										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
-									}),		
+									}),	
 									q(47596, {	-- There Is No Plan "B"	
 										["qg"] = 123548,	-- Ticker
 										["sourceQuests"] = { 
 											47599,	-- Revenge: Served Hot
 											47597,	-- No Goblin Left Behind
 										},	
-									}),	
+									}),
 								},
 							}),
 							n(132011, {	-- Shoak
 								["groups"] = {
 									q(47996, {	-- Mawfiend Extermination	
 										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
-									}),		
+									}),	
 									q(47924, {	-- Profanity Filter	
 										["qg"] = 124666,	-- Kajosh
-									}),		
+									}),	
 									q(47998, {	-- Killing Cannibals	
 										["qg"] = 124933,	-- Kajosh
 										["sourceQuests"] = { 47924 },	-- Profanity Filter
-									}),		
+									}),	
 									q(47919, {	-- Just Say No to Cannibalism	
 										["qg"] = 125024,	-- Kajosh
 										["sourceQuests"] = { 47924 },	-- Profanity Filter
-									}),		
+									}),	
 									q(47925, {	-- Shoak's on the Menu  [Note: Final Quest needed to unlock Shoak]
 										["groups"] = {
 											i(158957),	-- Death-Pledged Greaves
@@ -573,7 +573,7 @@ _.Zones =
 										["qg"] = 125024,	-- Kajosh
 										["sourceQuests"] = { 47924 },	-- Profanity Filter
 										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-									}),		
+									}),	
 
 								},
 								["collectible"] = false,
@@ -622,96 +622,90 @@ _.Zones =
 							}),
 							["questID"] = 48063,
 						}),
-						n(134298, {	-- Azerite-Infused Elemental [MissingL]		
+						n(134298, {	-- Azerite-Infused Elemental [MissingL]
 							["questID"] = 50563,	
-						}),		
+						}),	
 						n(134293, {	-- Azerite-Infused Slag
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161100),	-- Fused-Slag Girdle
 							}),
 							["questID"] = 49305,
-						}),		
+						}),	
 						n(126142, {	-- Bajiatha		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161093),	-- Clutch Mother Wristwraps
-							}),	
+							}),
 							["questID"] = 48439,
-						}),		
+						}),	
 						n(126635, {	-- Blood Priest Xak'lar
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161217),	-- Tainted Blood Vambraces
 							}),
 							["questID"] = 48057,
 						}),
-						n(125232, {	-- Captain Mu'kala [MissingL]		
+						n(125232, {	-- Captain Mu'kala [MissingL]
 							["questID"] = 50361,
-						}),		
+						}),	
 						n(126187, {	-- Corpse Bringer Yal'kar		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161102),	-- Corpseblood Belt
-							}),	
+							}),
 							["questID"] = 48462,
-						}),		
+						}),	
 						n(121242, {	-- Glompmaw		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160985),	-- Glompmaw's Ring
-							}),	
+							}),
 							["questID"] = 50307,
-						}),		
+						}),	
 						n(128426, {	-- Gutrip		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161041),	-- Gutrip's Tramplers
-							}),	
+							}),
 							["questID"] = 49231,
-						}),		
+						}),	
 						n(127001, {	-- Gwugnug the Cursed		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(162614),	-- Gwugnug's Cursed Wraps
-							}),	
+							}),
 							["questID"] = 50565,
-						}),		
+						}),	
 						n(124399, {	-- Infected Direhorn		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161218),	-- Direhorn Studded Belt
-							}),	
+							}),
 							["questID"] = 47877,
-						}),		
+						}),	
 						n(133373, {	-- Jax'teb the Reanimated
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160969),	-- Reanimated Necromancer's Blade
 							}),
 							["questID"] = 50307,
-						}),		
+						}),	
 						n(133527, {	-- Juba the Scarred		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160950),	-- Nicked Nazmani Greataxe
-							}),	
+							}),
 							["questID"] = 50342,
-						}),		
-						n(124397, {	-- Kal'draxa		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(161018),	-- Winged Terror Wristwraps
-							}),	
-							["questID"] = 48623,
-						}),		
+						}),	
 						n(129005, {	-- King Kooba		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161221),	-- Jungle King Mudtossers
-							}),	
+							}),
 							["questID"] = 49317,
-						}),		
+						}),	
 						n(125214, {	-- Krubbs		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161110),	-- Crusty Chitin Armguards
-							}),	
+							}),
 							["questID"] = 50355,	
-						}),		
+						}),	
 						n(133539, {	-- Lo'kuno		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161111),	-- Marshqueen's Crushers
-							}),	
+							}),
 							["questID"] = 50569,	
-						}),		
+						}),	
 						n(134295, {	-- Lost Scroll		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161045, {	-- Scrollbound Hurricane Slippers
@@ -719,9 +713,9 @@ _.Zones =
 										134294,	-- Enraged Water Elemental
 									},
 								}),
-							}),	
+							}),
 							["questID"] = 48541,	
-						}),		
+						}),	
 						n(134296, {	-- Lucille
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161046, {	-- Scrollbound Arachnid Gloves
@@ -741,7 +735,7 @@ _.Zones =
 								}),
 							}),
 							["questID"] = 50040,	
-						}),	
+						}),
 						n(128610, {	-- Maw of Shul-Nagruth
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160973),	-- Accursed Tuskwand
@@ -750,19 +744,19 @@ _.Zones =
 						}),
 						n(128974, {	-- Queen Tzxi'kik
 							["questID"] = 49312,
-						}),		
+						}),	
 						n(127820, {	-- Scout Skrasniss		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160951),	-- Evergreen Scout's Bow
-							}),	
+							}),
 							["questID"] = 48972,	
-						}),		
+						}),	
 						n(127873, {	-- Scrounger Patriarch		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161219),	-- Raptor Patriarch Gloves
-							}),	
+							}),
 							["questID"] = 47877,	
-						}),		
+						}),	
 						n(124475, {	-- Shambling Ambusher
 							["questID"] = 47878,
 						}),
@@ -771,13 +765,13 @@ _.Zones =
 								i(162621),	-- Nazmani Golem's Greathelm
 							}),
 							["questID"] = 48508,
-						}),		
+						}),	
 						n(126056, {	-- Totem Maker Jash'ga		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(162618),	-- Totem Matriarch's Headdress
-							}),	
+							}),
 							["questID"] = 48406,	
-						}),		
+						}),	
 						o(282666, {	-- Urn of Agussu [MissingL]
 								--[[
 								["crs"] = {
@@ -787,22 +781,22 @@ _.Zones =
 							["questID"] = 50888,
 							["icon"] = "Interface\\Icons\\INV_Misc_Urn_01",
 							["model"] = "World\\Expansion07\\Doodads\\Zandalaritroll\\8tr_zandalari_graveyard_urn03.mdx",
-						}),		
+						}),	
 						n(128965, {	-- Uroku the Bound		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161094),	-- Voodoo-Bound Handwraps
-							}),	
+							}),
 							["questID"] = 49305,
-						}),		
+						}),	
 						n(126926, {	-- Venomjaw		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161028),	-- Noxious Crocolisk Trousers
-							}),	
+							}),
 							["questID"] = 48626,
-						}),		
+						}),	
 						n(126907, {	-- Wardrummer Zurula
 							["questID"] = 48623,
-						}),		
+						}),	
 						n(133531, {	-- Xu'ba
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(162619),	-- Bone Collector's Chestcage
@@ -818,9 +812,9 @@ _.Zones =
 						n(133812, {	-- Zanxib		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161092),	-- Rivermarsh Quickclaw Buckle
-							}),	
+							}),
 							["questID"] = 50423,	
-						}),		
+						}),	
 					},
 				}),
 				n(-212, {	-- Treasure Chest
@@ -862,74 +856,57 @@ _.Zones =
 								i(161544),	-- Vambraces of a Thousand Year Toil
 								i(161503),	-- Wristwraps of Scrollbinding
 								i(160538),	-- Cape of the Scroll Keepers*
-								i(163026, {	-- Pattern: Embroidered Deep Sea Bag [Rank 2]	
-									["recipeID"] = 257129,
+								i(163026, {	-- Pattern: Embroidered Deep Sea Bag [Rank 2]
 									["spellID"] = 257129,
-								}),	
-								i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]	
-									["recipeID"] = 255094,
+								}),
+								i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]
 									["spellID"] = 255094,
-								}),	
-								i(162301, {	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]	
-									["recipeID"] = 255097,
+								}),
+								i(162301, {	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]
 									["spellID"] = 255097,
-								}),	
-								i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2]	
-									["recipeID"] = 259423,
+								}),
+								i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2]
 									["spellID"] = 259423,
-								}),	
-								i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3]	
-									["recipeID"] = 259422,
+								}),
+								i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3]
 									["spellID"] = 259422,
-								}),	
-								i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3]	
-									["recipeID"] = 256234,
+								}),
+								i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3]
 									["spellID"] = 256234,
-								}),	
-								i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2]	
-									["recipeID"] = 256298,
+								}),
+								i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2]
 									["spellID"] = 256298,
-								}),	
-								i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2]	
-									["recipeID"] = 256295,
+								}),
+								i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2]
 									["spellID"] = 256295,
-								}),	
-								i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3]	
-									["recipeID"] = 256246,
+								}),
+								i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3]
 									["spellID"] = 256246,
-								}),	
-								i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]	
-									["recipeID"] = 252363,
+								}),
+								i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]
 									["spellID"] = 252363,
-								}),	
-								i(162287, {	-- Recipe: Galley Banquet [Rank 3]	
-									["recipeID"] = 259420,
+								}),
+								i(162287, {	-- Recipe: Galley Banquet [Rank 3]
 									["spellID"] = 259420,
-								}),	
-								i(162292, {	-- Recipe: Grilled Catfish [Rank 3]	
-									["recipeID"] = 259432,
+								}),
+								i(162292, {	-- Recipe: Grilled Catfish [Rank 3]
 									["spellID"] = 259432,
-								}),	
-								i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]	
-									["recipeID"] = 256252,
+								}),
+								i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]
 									["spellID"] = 256252,
-								}),	
-								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]	
-									["recipeID"] = 256249,
+								}),
+								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]
 									["spellID"] = 256249,
-								}),	
-								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]	
-									["recipeID"] = 259435,
+								}),
+								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]
 									["spellID"] = 259435,
-								}),	
-								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]	
-									["recipeID"] = 252370,
+								}),
+								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]
 									["spellID"] = 252370,
-								}),	
-								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]	
-									["recipeID"] = 256237,
+								}),
+								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]
 									["spellID"] = 256237,
-								}),	
+								}),
 							},
 						}),
 						n(135459, {	-- Provisioner Lija <Talanji's Expedition Emissary>
@@ -949,57 +926,44 @@ _.Zones =
 								i(161551),	-- Zul'jan Camp Stalkers
 								i(160531),	-- Drape of the Blood Purge
 								i(162762, {	-- Design: Tidal Amethyst Loop [Rank 3]
-									["recipeID"] = 256519,
 									["spellID"] = 256519,
-								}),	
-								i(162718, {	-- Formula: Enchant Ring - Pact of Mastery [Rank 3]	
-									["recipeID"] = 255100,
+								}),
+								i(162718, {	-- Formula: Enchant Ring - Pact of Mastery [Rank 3]
 									["spellID"] = 255100,
-								}),	
-								i(162724, {	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3]	
-									["recipeID"] = 268903,
+								}),
+								i(162724, {	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3]
 									["spellID"] = 268903,
-								}),	
-								i(162723, {	-- Formula: Enchant Weapon - Siphoning [Rank 3]	
-									["recipeID"] = 255112,
+								}),
+								i(162723, {	-- Formula: Enchant Weapon - Siphoning [Rank 3]
 									["spellID"] = 255112,
-								}),	
-								i(163315, {	-- Recipe: Battle Potion of Intellect [Rank 3]	
-									["recipeID"] = 279164,
+								}),
+								i(163315, {	-- Recipe: Battle Potion of Intellect [Rank 3]
 									["spellID"] = 279164,
-								}),	
-								i(162703, {	-- Recipe: Coastal Mana Potion [Rank 3]	
-									["recipeID"] = 252387,
+								}),
+								i(162703, {	-- Recipe: Coastal Mana Potion [Rank 3]
 									["spellID"] = 252387,
-								}),	
-								i(162754, {	-- Recipe: Contract: Talanji's Expedition [Rank 2]	
-									["recipeID"] = 256288,
+								}),
+								i(162754, {	-- Recipe: Contract: Talanji's Expedition [Rank 2]
 									["spellID"] = 256288,
-								}),	
-								i(162697, {	-- Recipe: Flask of the Vast Horizon [Rank 3]	
-									["recipeID"] = 252356,
+								}),
+								i(162697, {	-- Recipe: Flask of the Vast Horizon [Rank 3]
 									["spellID"] = 252356,
-								}),	
-								i(162768, {	-- Recipe: Hardened Tempest Knuckles [Rank 3]	
-									["recipeID"] = 256784,
+								}),
+								i(162768, {	-- Recipe: Hardened Tempest Knuckles [Rank 3]
 									["spellID"] = 256784,
-								}),	
-								i(162767, {	-- Recipe: Mistscale Knuckles [Rank 3]	
-									["recipeID"] = 256781,
+								}),
+								i(162767, {	-- Recipe: Mistscale Knuckles [Rank 3]
 									["spellID"] = 256781,
-								}),	
-								i(162693, {	-- Recipe: Potion of Bursting Blood [Rank 3]	
-									["recipeID"] = 252343,
+								}),
+								i(162693, {	-- Recipe: Potion of Bursting Blood [Rank 3]
 									["spellID"] = 252343,
-								}),	
-								i(162732, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2]	
-									["recipeID"] = 272063,
+								}),
+								i(162732, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2]
 									["spellID"] = 272063,
-								}),	
-								i(162733, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3]	
-									["recipeID"] = 272064,
+								}),
+								i(162733, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3]
 									["spellID"] = 272064,
-								}),	
+								}),
 							},
 						}),
 						n(132011, {	-- Shoak
@@ -1014,6 +978,23 @@ _.Zones =
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
+						n(-17, { -- Quests
+							["groups"] = {
+								q(50505, { -- Kal'draxa
+									["groups"] = {
+										i(161018, {	-- Winged Terror Wristwraps
+											["crs"] = {
+												124397,	-- Kal'draxa
+											},
+										}),
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+							},
+						}),
 						i(158154),	-- Embleem of Zandalar
 						i(158153),	-- Gilded Loa Figurine
 						i(158152),	-- Golden Empire Signet

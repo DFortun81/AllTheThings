@@ -12,27 +12,27 @@ _.Zones =
 							o(293350, {	-- Carved Wooden Chest	
 								["questID"] = 52429,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							}),	
+							}),
 							o(293349, {	-- Discarded Lunchbox	
 								["questID"] = 52326,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							}),	
+							}),
 							o(294174, {	-- Forgotten Chest	
 								["questID"] = 52980,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							}),	
+							}),
 							o(281494, {	-- Frosty Treasure Chest	
 								["questID"] = 50526,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							}),	
+							}),
 							o(284448, {	-- Hidden Scholar's Chest	
 								["questID"] = 50937,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							}),	
+							}),
 							o(280619, {	-- Old Ironbound Chest	
 								["questID"] = 50089,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							}),	
+							}),
 							o(279042, {	-- Smuggler's Stash
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["coord"] = { 58.6, 83.8 },
@@ -41,15 +41,15 @@ _.Zones =
 							o(282153, {	-- Sunken Strongbox	
 								["questID"] = 50734,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							}),	
+							}),
 							o(294173, {	-- Venture Co. Supply Chest	
 								["questID"] = 52976,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							}),	
+							}),
 							o(289647, {	-- Weathered Treasure Chest	
 								["questID"] = 51449,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							}),	
+							}),
 						}),
 					},
 				}),
@@ -375,12 +375,6 @@ _.Zones =
 				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
-						n(134147, {	-- Beehemoth		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(160459),	-- Apiarist's Stingproof Belt
-							}),	
-							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
-						}),		
 						n(137025, {	-- Broodmother
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160470),	-- Broodcrawler Wristguards
@@ -392,19 +386,19 @@ _.Zones =
 								i(155287),	-- Razorspine's Greatmace
 							}),
 							["questID"] = 50170,	
-						}),		
+						}),	
 						n(139968, {	-- Corrupted Tideskipper		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(154183),	-- Boralus-Captain's Chain Boots
-							}),	
+							}),
 							["questID"] = 52121,	
-						}),		
+						}),	
 						n(140938, {	-- Croaker		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(154460),	-- Treasure-Seeker's Diving Helmet
-							}),	
+							}),
 							["questID"] = 52303,	
-						}),		
+						}),	
 						n(136183, {	-- Crushtacean
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154857),	-- Bonesplinter Band
@@ -414,35 +408,35 @@ _.Zones =
 						n(134897, {	-- Dagrus the Scorned		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160476),	-- Fogtide Warboots
-							}),	
+							}),
 							["questID"] = 50731,	
-						}),		
+						}),	
 						n(139385, {	-- Deepfang		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160464),	-- Dire Hill Wolfsteppers
-							}),	
+							}),
 							["questID"] = 50692,	
-						}),		
+						}),	
 						n(131404, {	-- Foreman Scripps		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160471),	-- Foreman's Stability Belt
 							}),
 							["coord"] = { 64.4, 65.9 },
 							["questID"] = 49951,	
-						}),		
+						}),	
 						n(132007, {	-- Galestorm		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155568),	-- Galewind Chimes
-							}),	
+							}),
 							["questID"] = 50075,	
-						}),		
+						}),	
 						n(141059, {	-- Grimscowl the Harebrained		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155572),	-- Yeti-Rager's Cloak
 							}),
 							["coord"] = { 62.0, 73.9 },
 							["questID"] = 52329,	
-						}),		
+						}),	
 						n(141226, {	-- Haegol the Hammer
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154273),	-- Rockstopper Breastplate
@@ -457,7 +451,7 @@ _.Zones =
 								{63.5, 83.4 },
 							},
 							["questID"] = 52327,	
-						}),		
+						}),	
 						n(141043, {	-- Jakala the Cruel		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(159179, {	-- Headtaker's Helm
@@ -465,9 +459,9 @@ _.Zones =
 										140925,	-- Doc Marrtens
 									},
 								}),
-							}),	
+							}),
 							["questID"] = 52324,	-- Possibly 52323
-						}),		
+						}),	
 						n(141029, {	-- Kickers
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154475),	-- Goathair Bindings
@@ -484,18 +478,18 @@ _.Zones =
 						n(141239, {	-- Osca the Bloodied		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(159169),	-- Bloody Bearhide Pants
-							}),	
+							}),
 							["questID"] = 52461,	
-						}),		
+						}),	
 						n(137649, {	-- Pest Remover Mk. II [MissingL]
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
-						}),		
+						}),	
 						n(139298, {	-- Pinku'shon		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(163678),	-- Pinku'shon's Impaler
-							}),	
+							}),
 							["questID"] = 51959,	
-						}),		
+						}),	
 						n(141286, {	-- Poacher Zane
 							["groups"] = {
 								i(163036),	-- Polished Pet Charm
@@ -505,58 +499,58 @@ _.Zones =
 						n(134884, {	-- Ragna		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160465),	-- Raging-Earth Wranglers
-							}),	
+							}),
 							["questID"] = 50725,	
-						}),		
-						n(132047, {	-- Reinforced Hullbreaker [MissingL]	
+						}),	
+						n(132047, {	-- Reinforced Hullbreaker [MissingL]
 							["questID"] = 53611,
-						}),		
+						}),	
 						n(139328, {	-- Sabertron		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(154664),	-- Lionsight Omensword
-							}),	
+							}),
 							["questID"] = 51956,	
-						}),		
+						}),	
 						n(139988, {	-- Sandfang
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154389),	-- Abyssal-Serpent Pauldrons
 							}),
 							["questID"] = 52125,	
-						}),		
-						n(139515, {	-- Sandscour [MissingL]		
+						}),	
+						n(139515, {	-- Sandscour [MissingL]
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
-						}),		
+						}),	
 						n(138938, {	-- Seabreaker Skoloth		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160477),	-- Skoloth's Anchorplate Greaves
-							}),	
+							}),
 							["questID"] = 51757,	
-						}),		
+						}),	
 						n(140997, {	-- Severus the Outcast
 							["g"] = {
 								i(163679),	-- Severus' Bindings
 							},
 							["questID"] = 50938,	
-						}),		
+						}),	
 						n(141143, {	-- Sister Absinthe		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155164),	-- Beryl-Tide Greatcloak
 							}),
 							["coord"] = { 61.5, 57.0 },
 							["questID"] = 52441,	
-						}),		
+						}),	
 						n(139319, {	-- Slickspill		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158216),	-- Living Oil Cannister
-							}),	
+							}),
 							["questID"] = 51958,	
-						}),		
+						}),	
 						n(141175, {	-- Song Mistress Dadalea		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158218),	-- Dadalea's Wing
-							}),	
+							}),
 							["questID"] = 52448,
-						}),		
+						}),	
 						n(141088, {	-- Squall		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155287),	-- Razorspine's Greatmace
@@ -564,7 +558,7 @@ _.Zones =
 							}),
 							["coord"] = { 56.9, 76.0 },	-- patrols, needs path added
 							["questID"] = 52433,	
-						}),		
+						}),	
 						n(135947, {	-- Strange Mushroom Ring		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154466),	-- Fungalshroud Raiment
@@ -575,36 +569,36 @@ _.Zones =
 						n(139980, {	-- Taja the Tidehowler		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(154449),	-- Tidebound Chestguard
-							}),	
+							}),
 							["questID"] = 52123,	
-						}),		
+						}),	
 						n(136189, {	-- The Lichen King		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(150909),	-- Morel Coils
-							}),	
+							}),
 							["questID"] = 50974,	
-						}),		
+						}),	
 						n(135939, {	-- Vinespeaker Ratha		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158299),	-- Ratha's Thornscepter
-							}),	
+							}),
 							["questID"] = 50037,
-						}),		
+						}),	
 						n(130079, {	-- Wagga Snarltusk		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(154431),	-- Earthshaker's Flame
-							}),	
+							}),
 							["questID"] = 50819,	
-						}),		
+						}),	
 						n(129803, {	-- Whiplash [MissingL]
 							["questID"] = 52296,	
-						}),		
+						}),	
 						n(142088, {	-- Whirlwing		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158215),	-- Whirlwing's Plumage
-							}),	
+							}),
 							["questID"] = 52457,	
-						}),		
+						}),	
 					},
 				}),
 				n(-2, { 	-- Vendors
@@ -622,74 +616,57 @@ _.Zones =
 								i(161544),	-- Vambraces of a Thousand Year Toil
 								i(161503),	-- Wristwraps of Scrollbinding
 								i(160538),	-- Cape of the Scroll Keepers*
-								i(163026, {	-- Pattern: Embroidered Deep Sea Bag [Rank 2]	
-									["recipeID"] = 257129,
+								i(163026, {	-- Pattern: Embroidered Deep Sea Bag [Rank 2]
 									["spellID"] = 257129,
-								}),	
-								i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]	
-									["recipeID"] = 255094,
+								}),
+								i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]
 									["spellID"] = 255094,
-								}),	
-								i(162301, {	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]	
-									["recipeID"] = 255097,
+								}),
+								i(162301, {	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]
 									["spellID"] = 255097,
-								}),	
-								i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2]	
-									["recipeID"] = 259423,
+								}),
+								i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2]
 									["spellID"] = 259423,
-								}),	
-								i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3]	
-									["recipeID"] = 259422,
+								}),
+								i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3]
 									["spellID"] = 259422,
-								}),	
-								i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3]	
-									["recipeID"] = 256234,
+								}),
+								i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3]
 									["spellID"] = 256234,
-								}),	
-								i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2]	
-									["recipeID"] = 256298,
+								}),
+								i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2]
 									["spellID"] = 256298,
-								}),	
-								i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2]	
-									["recipeID"] = 256295,
+								}),
+								i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2]
 									["spellID"] = 256295,
-								}),	
-								i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3]	
-									["recipeID"] = 256246,
+								}),
+								i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3]
 									["spellID"] = 256246,
-								}),	
-								i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]	
-									["recipeID"] = 252363,
+								}),
+								i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]
 									["spellID"] = 252363,
-								}),	
-								i(162287, {	-- Recipe: Galley Banquet [Rank 3]	
-									["recipeID"] = 259420,
+								}),
+								i(162287, {	-- Recipe: Galley Banquet [Rank 3]
 									["spellID"] = 259420,
-								}),	
-								i(162292, {	-- Recipe: Grilled Catfish [Rank 3]	
-									["recipeID"] = 259432,
+								}),
+								i(162292, {	-- Recipe: Grilled Catfish [Rank 3]
 									["spellID"] = 259432,
-								}),	
-								i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]	
-									["recipeID"] = 256252,
+								}),
+								i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]
 									["spellID"] = 256252,
-								}),	
-								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]	
-									["recipeID"] = 256249,
+								}),
+								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]
 									["spellID"] = 256249,
-								}),	
-								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]	
-									["recipeID"] = 259435,
+								}),
+								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]
 									["spellID"] = 259435,
-								}),	
-								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]	
-									["recipeID"] = 252370,
+								}),
+								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]
 									["spellID"] = 252370,
-								}),	
-								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]	
-									["recipeID"] = 256237,
+								}),
+								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]
 									["spellID"] = 256237,
-								}),	
+								}),
 							},
 						}),
 						n(136674, {	-- Madeline Netley <Stable Master>
@@ -725,75 +702,76 @@ _.Zones =
 								i(161581),	-- Tidecrest Gauntlets
 								i(160533),	-- Cape of the Divine Depths
 								i(162382, {	-- Design: Laribole Staff of Alacrity [Rank 3]
-									["recipeID"] = 256257,
 									["spellID"] = 256257,
-								}),	
-								i(162379, {	-- Design: Owlseye Loop [Rank 3]	
-									["recipeID"] = 256517,
+								}),
+								i(162379, {	-- Design: Owlseye Loop [Rank 3]
 									["spellID"] = 256517,
-								}),	
-								i(162385, {	-- Design: Scarlet Diamond Staff of Intuition [Rank 3]	
-									["recipeID"] = 256260,
+								}),
+								i(162385, {	-- Design: Scarlet Diamond Staff of Intuition [Rank 3]
 									["spellID"] = 256260,
-								}),	
-								i(162303, {	-- Formula: Enchant Ring - Pact of Haste [Rank 3]	
-									["recipeID"] = 255099,
+								}),
+								i(162303, {	-- Formula: Enchant Ring - Pact of Haste [Rank 3]
 									["spellID"] = 255099,
-								}),	
-								i(162313, {	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3]	
-									["recipeID"] = 268909,
+								}),
+								i(162313, {	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3]
 									["spellID"] = 268909,
-								}),	
-								i(162312, {	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]	
-									["recipeID"] = 268915,
+								}),
+								i(162312, {	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]
 									["spellID"] = 268915,
-								}),	
-								i(163318, {	-- Recipe: Battle Potion of Stamina [Rank 3]	
-									["recipeID"] = 279167,
+								}),
+								i(163318, {	-- Recipe: Battle Potion of Stamina [Rank 3]
 									["spellID"] = 279167,
-								}),	
-								i(162255, {	-- Recipe: Coastal Healing Potion [Rank 3]	
-									["recipeID"] = 252384,
+								}),
+								i(162255, {	-- Recipe: Coastal Healing Potion [Rank 3]
 									["spellID"] = 252384,
-								}),	
+								}),
 								i(162363, {	-- Recipe: Contract: Storm's Wake [Rank 2]
-									["recipeID"] = 256282,
 									["spellID"] = 256282,
-								}),	
+								}),
 								i(162133, {	-- Recipe: Flask of Endless Fathoms	[Rank 3]
-									["recipeID"] = 252353,
 									["spellID"] = 252353,
-								}),	
-								i(162129, {	-- Recipe: Potion of Replenishment [Rank 3]	
-									["recipeID"] = 252340,
+								}),
+								i(162129, {	-- Recipe: Potion of Replenishment [Rank 3]
 									["spellID"] = 252340,
-								}),	
-								i(162325, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]	
-									["recipeID"] = 272060,
+								}),
+								i(162325, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]
 									["spellID"] = 272060,
-								}),	
-								i(162326, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]	
-									["recipeID"] = 272061,
+								}),
+								i(162326, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]
 									["spellID"] = 272061,
-								}),	
-								i(162342, {	-- Schematic: Deployable Attire Rearranger [Rank 3]	
-									["recipeID"] = 256156,
+								}),
+								i(162342, {	-- Schematic: Deployable Attire Rearranger [Rank 3]
 									["spellID"] = 256156,
-								}),	
-								i(162341, {	-- Schematic: Interdimensional Companion Repository [Rank 3]	
-									["recipeID"] = 256084,
+								}),
+								i(162341, {	-- Schematic: Interdimensional Companion Repository [Rank 3]
 									["spellID"] = 256084,
-								}),	
-								i(162337, {	-- Schematic: Organic Discombobulation Grenade [Rank 3]	
-									["recipeID"] = 255409,
+								}),
+								i(162337, {	-- Schematic: Organic Discombobulation Grenade [Rank 3]
 									["spellID"] = 255409,
-								}),	
+								}),
 							},
 						}),
 					},
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
+						n(-17, { -- Quests
+							["groups"] = {
+								q(52330, { -- Beehemoth
+									["groups"] = {
+										i(160459, {	-- Apiarist's Stingproof Belt
+											["crs"] = {
+												134147,	-- Beehemoth
+											},
+										}),
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+							},
+						}),
 						i(158163),	-- First Mate's Spyglass
 						i(158160),	-- Smuggler's Cove Ring
 						n(-43, {	-- Cloth

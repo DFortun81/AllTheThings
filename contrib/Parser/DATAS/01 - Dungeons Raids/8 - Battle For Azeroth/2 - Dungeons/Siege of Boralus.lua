@@ -20,7 +20,8 @@ _.Instances =
 								crit(8), -- Liz Vilepot
 								crit(6), -- Threshanator 3000
 							}),
-							e(2132, {	-- Choppere Redhook [NOTE: This was added in Beta -> Live patch day.  This can be seen by having no encounter journal entry on 8/17/2018.
+							e(2132, {	-- Choppere Redhook [1st Encounter - Alliance]
+								-- This fight is Alliance only.  We are going to set the boss as such, but leave the items not Alliance written due to Horde should be able to tranmog it and in the event Blizzard makes them available for opposite faaction later.
 								["groups"] = {
 									i(159973),	-- Boarder's Billy Club
 									i(159972),	-- Mutineer's Fate
@@ -34,8 +35,10 @@ _.Instances =
 								["crs"] = {
 									144160,	-- Chopper Redhook
 								},
+								["races"] = ALLIANCE_ONLY
 							}),
-							e(2133, { -- Sergeant Bainbridge
+							e(2133, { -- Sergeant Bainbridge [1st Encounter - Horde]
+								-- This fight is Horde only.  We are going to set the boss as such, but leave the items not Horde written due to Horde should be able to tranmog it and in the event Blizzard makes them available for opposite faaction later.
 								["groups"] = {
 									i(159648), -- Bainbridge's Blackjack
 									i(159328), -- Wharf Warden's Gloves
@@ -47,10 +50,10 @@ _.Instances =
 								},
 								["crs"] = {
 									144158, -- Sergeant Bainbridge
-									--144160, -- Chopper Redhook [Note: Made into his own encounter on Beta -> Live transition]
 								},
+								["races"] = HORDE_ONLY,
 							}),
-							e(2173, { -- Dread Captain Lockwood
+							e(2173, { -- Dread Captain Lockwood [2nd Encounter - Both Factions]
 								["groups"] = {
 									ach(12727), -- Stand by Me
 									i(159649), -- Saber of Dread Pirate Lockwood
@@ -68,7 +71,7 @@ _.Instances =
 									129208, -- Dread Captain Lockwood
 								},
 							}),
-							e(2134, { -- Hadal Darkfathom
+							e(2134, { -- Hadal Darkfathom [3rd Encounter - Both Factions]
 								["groups"] = {
 									i(159650), -- Dismembered Submersible Claw
 									i(159386), -- Anchor Chain Girdle
@@ -81,7 +84,7 @@ _.Instances =
 									130836, -- Hadal Darkfathom
 								},
 							}),
-							e(2140, { -- Viq'Goth
+							e(2140, { -- Viq'Goth [4th Encounter - Both Factions]
 								["groups"] = {
 									ach(12726), -- A Fish Out of Water
 									ach(12847), -- Siege of Boralus
