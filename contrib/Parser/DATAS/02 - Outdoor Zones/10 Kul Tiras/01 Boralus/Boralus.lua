@@ -86,30 +86,30 @@ _.Zones =
 					["groups"] = {
 						a(ach(12582, {	-- Come Sail Away
 							["groups"] = {
-								q(51341, {	-- Daughter of the Sea
+								a(q(51341, {	-- Daughter of the Sea
 									["qg"] = 120922, -- Lady Jaina Proudmoore
 									["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
-								}),
-								q(47099, {	-- Get Your Bearings
-									["qg"] = 121235, -- Taeliaa
+								})),
+								a(q(47099, {	-- Get Your Bearings
+									["qg"] = 121235, -- Taelia
 									["sourceQuests"] = { 47098 }, -- Out Like Flynn
-								}),
-								q(46729, {	-- The Old Knight
+								})),
+								a(q(46729, {	-- The Old Knight
 									["qg"] = 124630, -- Taelia
 									["sourceQuests"] = { 47099 }, -- Get Your Bearings
-								}),
-								q(47186, {	-- Sanctum of Sages
+								})),
+								a(q(47186, {	-- Sanctum of Sages
 									["qg"] = 121235, -- Taelia
 									["sourceQuests"] = { 46729 }, -- The Old Knight
-								}),
-								q(52128, {	-- Ferry Pass
+								})),
+								a(q(52128, {	-- Ferry Pass
 									["qg"] = 122370, -- Cyrus Crestfall
 									["sourceQuests"] = { 47186 }, -- Sanctum of Sages
-								}),
-								q(47189, {	-- A Nation Divided
+								})),
+								a(q(47189, {	-- A Nation Divided
 									["qg"] = 121235, -- Taelia
 									["sourceQuests"] = { 47186 }, -- Sanctum of Sages
-								}),
+								})),
 							},
 						})),
 						a(sz(12473, 4, {	-- A Sound Plan: Enemies Within
@@ -152,56 +152,76 @@ _.Zones =
 						})),
 						
 						
-						q(51144, {	-- A Bundle of Furs
+						a(q(51144, {	-- A Bundle of Furs
 							["qg"] = 124289, -- "Risky" Liz Seminario <Fur Trader>
 							["sourceQuests"] = { 47189 },	-- Tiragarde Sound
-						}),
-						q(52462, {	-- A Load of Scrap
+						})),
+						a(q(52462, {	-- A Load of Scrap
 							["groups"] = {
 								ach(12741), -- Giving a Scrap
 							},
 							["qg"] = 141274, -- Crenzo Sparkshatter
-						}),
-						q(47961, {	-- Drustvar
+						})),
+						a(q(47961, {	-- Drustvar
 							["qg"] = 139522,	-- Scouting Map
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
 							["isBreadcrumb"] = true,
-						}),
-						q(47962, {	-- Stormsong Valley
+						})),
+						a(q(51714, {	-- Mission from the King
+							["qg"] = 135618,	-- Falstad Wildhammer
+							["sourceQuests"] = { 53332 },	-- Time for War [Alliance Only]
+							["groups"] = {
+								follower(1065),	-- Falstad Wildhammer
+							},
+						})),
+						a(q(47962, {	-- Stormsong Valley
 							["qg"] = 139522,	-- Scouting Map
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
 							["isBreadcrumb"] = true,
-						}),
-						q(47960, {	-- Tiragarde Sound
+						})),
+						a(q(47960, {	-- Tiragarde Sound
 							["qg"] = 139522,	-- Scouting Map
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
 							["isBreadcrumb"] = true,
-						}),
-						q(47485, {	-- The Ashvane Trading Company
+						})),
+						a(q(47485, {	-- The Ashvane Trading Company
 							["qg"] = 122370, -- Cyrus Crestfall
 							["sourceQuests"] = { 47181 },	-- The Smoking Gun
-						}),
-						q(47181, {	-- The Smoking Gun
+						})),
+						a(q(47952, {	-- The Missing Fleet
+							["qg"] = 121235,	-- Taelia
+							["sourceQuests"] = { 47962 },	-- Stormsong Valley [Alliance Only]
+							["isBreadcrumb"] = true,
+						})),
+						a(q(47181, {	-- The Smoking Gun
 							["qg"] = 121239, -- Flynn Fairwind
 							["sourceQuests"] = { 47189 },	-- Tiragarde Sound
-						}),
-						q(52544, {	-- The War Cache
+						})),
+						a(q(52544, {	-- The War Cache
 							["qg"] = 135612, -- Halford Wyrmbane <7th Legion High Commander>
 							["sourceQuests"] = { 52654 },	-- The War Campaign
-						}),
-						q(52654, {	-- The War Campaign
+						})),
+						a(q(52654, {	-- The War Campaign
 							["qg"] = 120788,	-- Genn Greymane
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
-						}),
+						})),
+						a(q(51569, {	-- The Zandalar Campaign
+							["qg"] = 135612,	-- Halford Wyrmbane <7th Legion High Commander>
+							["sourceQuests"] = { 51714 },	-- Mission from the King [Alliance Only]
+						})),
 						a(q(53332, {	-- Time for War
 							["qg"] = 135612, -- Halford Wyrmbane <7th Legion High Commander>
 							["sourceQuests"] = { 52544 },	-- The War Cache
 						})),
-						q(49715, {	-- Trouble at Greystone Keep
+						a(q(49715, {	-- Trouble at Greystone Keep
 							["qg"] = 130377,	-- Courier Gerald
 							["sourceQuests"] = { 50790 },	-- Hot Pursuit [Alliance Only]
 							["isBreadcrumb"] = true,
-						}),
+						})),
+						a(q(51715, {	-- War of Shadows
+							["qg"] = 135614,	-- Master Mathias Shaw
+							["sourceQuests"] = { 51714 },	-- Mission from the King [Alliance Only]
+						})),
 					},
 				}),
 				--[[
