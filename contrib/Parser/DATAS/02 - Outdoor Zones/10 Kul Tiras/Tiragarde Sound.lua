@@ -842,12 +842,12 @@ _.Zones =
 							}),		
 							["questID"] = 51873,		
 						}),			
-						n(133356, {	-- Tempestria			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(160466),	-- Saurolisk Broodmother Boots	
-							}),		
-							-- ["questID"] = 		
-						}),			
+						n(133356, {	-- Tempestria
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(160466),	-- Saurolisk Broodmother Boots
+							}),
+							["questID"] = 50301,
+						}),
 						n(139289, {	-- Tentulos the Drifter
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(154448),	-- Medusa-Drifter's Chainmail
@@ -886,7 +886,7 @@ _.Zones =
 							}),		
 							-- ["questID"] = 		
 						}),			
-						n(137176, {	-- Walter Ferrell	
+						n(137176, {	-- Walter Ferrell
 							["crs"] = {
 								137181,	-- Mead-Craving Cranee
 								137182,	-- Honey-Crazed Gull
@@ -895,10 +895,10 @@ _.Zones =
 							},
 							["questID"] = 51321,
 							["coord"] = { 64.2, 19.2 },
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(160472),	-- Honey-Glazed Gauntlets	
-							}),	
-						}),			
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(160472),	-- Honey-Glazed Gauntlets
+							}),
+						}),
 					},
 				}),
 				n(-2, {  -- Vendors

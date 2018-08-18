@@ -499,11 +499,11 @@ i(155430),
 								},
 								["questID"] = 51065,
 							}),
-							n(129027, {	-- Golanar		
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							n(129027, {	-- Golanar
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(160972),	-- Herculean Golden Sword
-								}),	
-								-- ["questID"] = 	
+								}),
+								["questID"] = 50362,
 							}),	
 							n(128674, {	-- Gut-Gut the Glutton
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	

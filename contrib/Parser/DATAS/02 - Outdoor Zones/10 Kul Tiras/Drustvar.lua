@@ -103,18 +103,18 @@ _.Zones =
 							["model"] = "World\\SkillActivated\\Containers\\TreasureChest06.mdx",
 							["modelScale"] = 2,
 						}),		
-						n(137824, {	-- Arclight		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(137824, {	-- Arclight
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160469),	-- Arclight Jumpers
-							}),	
-							["questID"] = 51470,	
-						}),		
-						n(137529, {	-- Arvon the Betrayed		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							}),
+							["questID"] = 51470,
+						}),
+						n(137529, {	-- Arvon the Betrayed
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160449),	-- Spectral Revenger
-							}),	
-							["questID"] = 51383,	
-						}),		
+							}),
+							["questID"] = 51383,
+						}),
 						n(137825, {	-- Avalanche
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(154447),	-- Gryphon-Rider's Breastplate
@@ -164,12 +164,12 @@ _.Zones =
 							}),	
 							["questID"] = 48978,	
 						}),		
-						n(139321, {	-- Braedan Whitewall		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(139321, {	-- Braedan Whitewall
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154500),	-- Moonwood Bramblespire
-							}),	
-							["questID"] = 51922,	
-						}),		
+							}),
+							["questID"] = 51922,
+						}),
 						n(135796, {	-- Captain Leadfist		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160450),	-- Leadshot Heavy Rifle
@@ -182,12 +182,12 @@ _.Zones =
 							}),	
 							["questID"] = 49216,	
 						}),		
-						n(134706, {	-- Deathcap		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(134706, {	-- Deathcap
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158555),	-- Doom Shroom
-							}),	
-							["questID"] = 50669,	
-						}),		
+							}),
+							["questID"] = 50669,
+						}),
 						n(129995, {	-- Emily Mayville		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160447),	-- Soul-Pillar Lantern
@@ -242,12 +242,12 @@ _.Zones =
 							}),	
 							["questID"] = 51698,	
 						}),		
-						n(134754, {	-- Hyo'gi		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(134754, {	-- Hyo'gi
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160462),	-- Hyo'gi Basket Binders
-							}),	
-							["questID"] = 50688,	
-						}),		
+							}),
+							["questID"] = 50688,
+						}),
 						n(127877, {	-- Longfang		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160468, {	-- Longfang Paws
@@ -288,15 +288,15 @@ _.Zones =
 							["model"] = "World\\Expansion07\\Doodads\\Witch\\8wi_witch_treasurechest02.mdx",
 							["modelScale"] = 2
 						}),		
-						n(138863, {	-- Sister Martha		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(138863, {	-- Sister Martha
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155299),	-- Sister Martha's Soulstealer
-							}),	
-							["questID"] = 51748,	
-						}),		
-						n(137665, {	-- Soul Goliath	[MissingL]
-							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
-						}),		
+							}),
+							["questID"] = 51748,
+						}),
+						n(137665, {	-- Soul Goliath
+							["questID"] = 52002,
+						}),
 						n(129950, {	-- Talon		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161444),	-- Frosted Talonfeather Mantle
@@ -322,12 +322,12 @@ _.Zones =
 							["coord"] = { 64.9, 21.5 },
 							["questID"] = 49311,	
 						}),		
-						n(139322, {	-- Whitney "Steelclaw" Ramsay		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(139322, {	-- Whitney "Steelclaw" Ramsay
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154315),	-- Rusty Steelclaw
-							}),	
-							["questID"] = 51923,	
-						}),		
+							}),
+							["questID"] = 51923,
+						}),
 					},
 				}),
 				n(-2, {  -- Vendors

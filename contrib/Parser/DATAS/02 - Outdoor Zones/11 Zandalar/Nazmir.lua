@@ -26,18 +26,18 @@ _.Zones =
 									["questID"] = 49867,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),	
-								o(278437, {	-- Offering to Bwonsamdi	
+								o(278437, {	-- Offering to Bwonsamdi
 									["questID"] = 49484,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(280522, {	-- Partially-Digested Treasure	
 									["questID"] = 50061,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),	
-								o(278436, {	-- Shipwrecked Chest	
+								o(278436, {	-- Shipwrecked Chest
 									["questID"] = 49483,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								}),	
+								}),
 								o(280504, {	-- Swallowed Naga Chest	
 									["questID"] = 50045,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
@@ -616,12 +616,12 @@ _.Zones =
 				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
-						n(125250, {	-- Ancient Jawbreaker		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(125250, {	-- Ancient Jawbreaker
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161113),	-- Incessantly Ticking Clock
-							}),	
-							["questID"] = 48063,	
-						}),		
+							}),
+							["questID"] = 48063,
+						}),
 						n(134298, {	-- Azerite-Infused Elemental [MissingL]		
 							["questID"] = 50563,	
 						}),		
@@ -686,7 +686,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160950),	-- Nicked Nazmani Greataxe
 							}),	
-							["questID"] = 50888,
+							["questID"] = 50342,
 						}),		
 						n(124397, {	-- Kal'draxa		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -722,16 +722,16 @@ _.Zones =
 							}),	
 							["questID"] = 48541,	
 						}),		
-						n(134296, {	-- Lucille		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(134296, {	-- Lucille
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161046, {	-- Scrollbound Arachnid Gloves
 									["crs"] = {
 										134297,	-- Chag
 									},
 								}),
-							}),	
-							["questID"] = 50567,	
-						}),		
+							}),
+							["questID"] = 50567,
+						}),
 						n(128935, {	-- Mala'kili
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(163703, {	-- Crawag Gnawed Femur
@@ -770,7 +770,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(162621),	-- Nazmani Golem's Greathelm
 							}),
-							["questID"] = 50342,	
+							["questID"] = 48508,
 						}),		
 						n(126056, {	-- Totem Maker Jash'ga		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -809,12 +809,12 @@ _.Zones =
 							}),
 							["questID"] = 50348,
 						}),
-						n(129657, {	-- Za'amar the Queen's Blade		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(129657, {	-- Za'amar the Queen's Blade
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161095),	-- Queensguard Specter Legwraps
-							}),	
-							["questID"] = 50423,	
-						}),		
+							}),
+							["questID"] = 49469,
+						}),
 						n(133812, {	-- Zanxib		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161092),	-- Rivermarsh Quickclaw Buckle

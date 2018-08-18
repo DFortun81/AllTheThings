@@ -486,12 +486,12 @@ _.Zones =
 							}),
 							["questID"] = 50280,
 						}),		
-						n(129343, {	-- Avatar of Xolotal		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(129343, {	-- Avatar of Xolotal
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161034),	-- Thunderhowl Gauntlets
-							}),	
+							}),
 							["questID"] = 49410,
-						}),		
+						}),
 						n(128699, {	-- Bloodbulge		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161104),	-- Blood Feast Gauntlets
@@ -522,7 +522,7 @@ _.Zones =
 								i(160958),	-- Darkspeaker Scepter
 							}),	
 							["questID"] = 50693,
-						}),		
+						}),
 						n(133155, {	-- G'Naat
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161048),	-- Brutish Tidecaller Armwraps
@@ -546,12 +546,12 @@ _.Zones =
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
 						--]]
-						n(126637, {	-- Kandak		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(126637, {	-- Kandak
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160984),	-- Sauroscale Cloak of Adaptation
-							}),	
-							["questID"] = 50859,	
-						}),		
+							}),
+							["questID"] = 48453,
+						}),
 						n(132244, {	-- Kiboku
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161112),	--  Hillshaker Armplates
@@ -575,8 +575,8 @@ _.Zones =
 								sz(12944, 4),	-- Syrawon the Dominus
 								i(161047),	-- Shadow Wind Leggings
 							}),
-							["questID"] = 51080,	
-						}),		
+							["questID"] = 51080,
+						}),
 						n(131687, {	-- Tambano
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(161109),	-- Coastal Hardshell Girdle
@@ -590,11 +590,11 @@ _.Zones =
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 
 						}),		
 						n(127939, {	-- Torraske the Eternal
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161029),	-- Ageless Toxin Grips
 							}),
-							["questID"] = 49004,	
-						}),		
+							["questID"] = 49004,
+						}),
 						n(130643, {	-- Twisted Child of Rezan
 							["groups"] = { -- Level 120 mob which means no gear scaling	
 								i(162620),	-- Devilbone Shoulderguards
@@ -626,13 +626,13 @@ _.Zones =
 							}),
 							["questID"] = 50438,	
 						}),		
-						n(131476, {	-- Zayoos		
+						n(131476, {	-- Zayoos
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								sz(12944, 5),	-- Zayoos
 								i(161125),	-- Kaja-fied Banana
-							}),	
+							}),
 							["questID"] = 49972,
-						}),		
+						}),
 						n(136702, {	-- Zu'shin the Infused [MissingL]		
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		

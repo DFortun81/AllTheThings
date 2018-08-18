@@ -381,12 +381,12 @@ _.Zones =
 							}),	
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),		
-						n(137025, {	-- Broodmother		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(137025, {	-- Broodmother
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160470),	-- Broodcrawler Wristguards
-							}),	
-							["questID"] = 51298,	
-						}),		
+							}),
+							["questID"] = 51298,
+						}),
 						n(130897, {	-- Captain Razorspine	
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(155287),	-- Razorspine's Greatmace
@@ -444,11 +444,11 @@ _.Zones =
 							["questID"] = 52329,	
 						}),		
 						n(141226, {	-- Haegol the Hammer
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154273),	-- Rockstopper Breastplate
 							}),
-							["questID"] = 52460,	
-						}),		
+							["questID"] = 52460,
+						}),
 						n(141039, {	-- Ice Sickle
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(154464),
@@ -468,12 +468,12 @@ _.Zones =
 							}),	
 							["questID"] = 52324,	-- Possibly 52323
 						}),		
-						n(141029, {	-- Kickers		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(141029, {	-- Kickers
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154475),	-- Goathair Bindings
-							}),	
+							}),
 							["questID"] = 52318,
-						}),		
+						}),
 						n(138963, {	-- Nestmother Acada
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160458),	-- Ancient Featherlight Slippers
@@ -496,12 +496,12 @@ _.Zones =
 							}),	
 							["questID"] = 51959,	
 						}),		
-						n(141286, {	-- Poacher Zane	
+						n(141286, {	-- Poacher Zane
 							["groups"] = {
 								i(163036),	-- Polished Pet Charm
 							},
-							["questID"] = 52469,	
-						}),		
+							["questID"] = 52469,
+						}),
 						n(134884, {	-- Ragna		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160465),	-- Raging-Earth Wranglers
@@ -509,7 +509,7 @@ _.Zones =
 							["questID"] = 50725,	
 						}),		
 						n(132047, {	-- Reinforced Hullbreaker [MissingL]	
-							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
+							["questID"] = 53611,
 						}),		
 						n(139328, {	-- Sabertron		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -532,7 +532,10 @@ _.Zones =
 							}),	
 							["questID"] = 51757,	
 						}),		
-						n(140997, {	-- Severus the Outcast [MissingL]	
+						n(140997, {	-- Severus the Outcast
+							["g"] = {
+								i(163679),	-- Severus' Bindings
+							},
 							["questID"] = 50938,	
 						}),		
 						n(141143, {	-- Sister Absinthe		
