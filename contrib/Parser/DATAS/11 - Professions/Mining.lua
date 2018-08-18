@@ -402,4 +402,25 @@ profession(186, { -- Mining
 		i(67282), -- Elementium Geode
 		i(118919), -- Red Goren Egg
 	}),
+	
+	tier(8, {	-- Battle For Azeroth
+		n(-15, { -- Recipes
+			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
+			recipe(253333, { ["spellID"] = 253333, }),	-- Monelite Deposit
+			recipe(253335, { ["spellID"] = 253335, }),	-- Monelite Deposit
+			recipe(253334, { ["spellID"] = 253334, }),	-- Monelite Deposit
+			recipe(253344, { ["spellID"] = 253344, }),	-- Monelite Seam
+			recipe(253343, { ["spellID"] = 253343, }),	-- Monelite Seam
+			recipe(253342, { ["spellID"] = 253342, }),	-- Monelite Seam
+			recipe(253339, { ["spellID"] = 253339, }),	-- Platinum Deposit
+			recipe(253340, { ["spellID"] = 253340, }),	-- Platinum Deposit
+			recipe(253341, { ["spellID"] = 253341, }),	-- Platinum Deposit
+			recipe(253338, { ["spellID"] = 253338, }),	-- Storm Silver Deposit
+			recipe(253337, { ["spellID"] = 253337, }),	-- Storm Silver Deposit
+			recipe(253336, { ["spellID"] = 253336, }),	-- Storm Silver Deposit
+			recipe(253345, { ["spellID"] = 253345, }),	-- Storm Silver Seam
+			recipe(253346, { ["spellID"] = 253346, }),	-- Storm Silver Seam
+			recipe(253347, { ["spellID"] = 253347, }),	-- Storm Silver Seam
+		}),
+	}),
 });
