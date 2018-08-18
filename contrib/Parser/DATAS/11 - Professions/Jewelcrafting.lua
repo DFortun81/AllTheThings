@@ -774,4 +774,53 @@ profession(755, { -- Jewelcrafting
 		i(116095),	-- Recipe: Whispering Taladite Pendant
 		i(116092),	-- Recipe: Whispering Taladite Ring
 	}),
+	tier(8, {	-- Battle For Azeroth
+		n(-15, { -- Recipes
+			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
+				recipe(256510, { ["spellID"] = 256510, }),	-- Amberblaze Loop
+				recipe(256514, { ["spellID"] = 256514, }),	-- Amberblaze Loop
+				recipe(256515, { ["spellID"] = 256515, }),	-- Amberblaze Loop
+				recipe(256696, { ["spellID"] = 256696, }),	-- Deadly Amberblaze
+				recipe(256689, { ["spellID"] = 256689, }),	-- Deadly Solstone
+				recipe(272227, { ["spellID"] = 272227, }),	-- Golden Beryl Ring
+				recipe(269734, { ["spellID"] = 269734, }),	-- Honorable Combatant's Staff of Intuition
+				recipe(269735, { ["spellID"] = 269735, }),	-- Honorable Combatant's Staff of Intuition
+				recipe(269736, { ["spellID"] = 269736, }),	-- Honorable Combatant's Staff of Intuition
+				recipe(256693, { ["spellID"] = 256693, }),	-- Insightful Rubellite
+				recipe(278419, { ["spellID"] = 278419, }),	-- Kaleidoscopic Lens
+				recipe(256701, { ["spellID"] = 256701, }),	-- Kraken's Eye of Agility
+				recipe(256702, { ["spellID"] = 256702, }),	-- Kraken's Eye of Intellect
+				recipe(256700, { ["spellID"] = 256700, }),	-- Kraken's Eye of Strength
+				recipe(272228, { ["spellID"] = 272228, }),	-- Kubiline Ring
+				recipe(272230, { ["spellID"] = 272230, }),	-- Kyanite Ring
+				recipe(256255, { ["spellID"] = 256255, }),	-- Laribole Staff of Alacrity
+				recipe(256256, { ["spellID"] = 256256, }),	-- Laribole Staff of Alacrity
+				recipe(256257, { ["spellID"] = 256257, }),	-- Laribole Staff of Alacrity
+				recipe(256612, { ["spellID"] = 256612, }),	-- Mass Prospect Monelite
+				recipe(256623, { ["spellID"] = 256623, }),	-- Mass Prospect Platinum
+				recipe(256614, { ["spellID"] = 256614, }),	-- Mass Prospect Storm Silver
+				recipe(256692, { ["spellID"] = 256692, }),	-- Masterful Kubiline
+				recipe(256698, { ["spellID"] = 256698, }),	-- Masterful Tidal Amethyst
+				recipe(256511, { ["spellID"] = 256511, }),	-- Owlseye Loop
+				recipe(256516, { ["spellID"] = 256516, }),	-- Owlseye Loop
+				recipe(256517, { ["spellID"] = 256517, }),	-- Owlseye Loop
+				recipe(256694, { ["spellID"] = 256694, }),	-- Quick Golden Beryl
+				recipe(256699, { ["spellID"] = 256699, }),	-- Quick Owlseye
+				recipe(256513, { ["spellID"] = 256513, }),	-- Royal Quartz Loop
+				recipe(256520, { ["spellID"] = 256520, }),	-- Royal Quartz Loop
+				recipe(256521, { ["spellID"] = 256521, }),	-- Royal Quartz Loop
+				recipe(256254, { ["spellID"] = 256254, }),	-- Rubellite Staff of Intuition
+				recipe(256258, { ["spellID"] = 256258, }),	-- Scarlet Diamond Staff of Intuition
+				recipe(256259, { ["spellID"] = 256259, }),	-- Scarlet Diamond Staff of Intuition
+				recipe(256260, { ["spellID"] = 256260, }),	-- Scarlet Diamond Staff of Intuition
+				recipe(272226, { ["spellID"] = 272226, }),	-- Solstone Ring
+				recipe(256691, { ["spellID"] = 256691, }),	-- Straddling Viridium
+				recipe(256512, { ["spellID"] = 256512, }),	-- Tidal Amethyst Loop
+				recipe(256518, { ["spellID"] = 256518, }),	-- Tidal Amethyst Loop
+				recipe(256519, { ["spellID"] = 256519, }),	-- Tidal Amethyst Loop
+				recipe(256690, { ["spellID"] = 256690, }),	-- Versatile Kyanite
+				recipe(256695, { ["spellID"] = 256695, }),	-- Versatile Royal Quartz
+				recipe(256253, { ["spellID"] = 256253, }),	-- Viridium Staff of Alacrity
+		}),
+	}),
 });
