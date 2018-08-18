@@ -242,7 +242,7 @@ profession(185, { -- Cooking
 			}),
 		},
 	}),
-	n(-15, { 	-- Recipes
+	filter(200, { 	-- Recipes
 		n(-3, { 	-- Holiday
 			recipe(65454),	-- Bread of the Dead
 			recipe(21143),	-- Gingerbread Cookie
@@ -723,7 +723,7 @@ profession(185, { -- Cooking
 		}),
 		
 		tier(8, {	-- Battle For Azeroth
-			n(-15, { -- Recipes
+			filter(200, { -- Recipes
 				-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
 				recipe(259422, { ["spellID"] = 259422, }),	-- Bountiful Captain's Feast
 				recipe(259423, { ["spellID"] = 259423, }),	-- Bountiful Captain's Feast

@@ -224,28 +224,27 @@ profession(393, { -- Skinning
 		["groups"] = { i(130064) },	-- Deadeye Monocle
 		["requireSkill"] = 393
 	}),
-	n(-15, { -- Recipes
+	filter(200, { -- Recipes
 		-- Legion
-		recipe(194167),	-- Felhide [Rank 1]
-		recipe(194168),	-- Felhide [Rank 2]
-		recipe(194169),	-- Felhide [Rank 3]
-		recipe(247842),	-- Fiendish Leather [Rank 1]
-		recipe(247843),	-- Fiendish Leather [Rank 2]
-		recipe(247844),	-- Fiendish Leather [Rank 3]
-		recipe(194173),	-- Legion Butchery
-		recipe(194203),	-- Legion Gutting
-		recipe(194161),	-- Stonehide Leather [Rank 1]
-		recipe(194162),	-- Stonehide Leather [Rank 2]
-		recipe(194163),	-- Stonehide Leather [Rank 3]
-		recipe(194164),	-- Stormscale [Rank 1]
-		recipe(194165),	-- Stormscale [Rank 2]
-		recipe(194166),	-- Stormscale [Rank 3]
-		recipe(194171),	-- Unbroken Claw
-		recipe(194170),	-- Unbroken Tooth
-	}),
-	
-	tier(8, {	-- Battle For Azeroth
-		n(-15, { -- Recipes
+		tier(7, {	-- Legion
+			recipe(194167),	-- Felhide [Rank 1]
+			recipe(194168),	-- Felhide [Rank 2]
+			recipe(194169),	-- Felhide [Rank 3]
+			recipe(247842),	-- Fiendish Leather [Rank 1]
+			recipe(247843),	-- Fiendish Leather [Rank 2]
+			recipe(247844),	-- Fiendish Leather [Rank 3]
+			recipe(194173),	-- Legion Butchery
+			recipe(194203),	-- Legion Gutting
+			recipe(194161),	-- Stonehide Leather [Rank 1]
+			recipe(194162),	-- Stonehide Leather [Rank 2]
+			recipe(194163),	-- Stonehide Leather [Rank 3]
+			recipe(194164),	-- Stormscale [Rank 1]
+			recipe(194165),	-- Stormscale [Rank 2]
+			recipe(194166),	-- Stormscale [Rank 3]
+			recipe(194171),	-- Unbroken Claw
+			recipe(194170),	-- Unbroken Tooth
+		}),
+		tier(8, {	-- Battle For Azeroth
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
 			recipe(257152, { ["spellID"] = 257152, }),	-- Bone Gathering
 			recipe(257153, { ["spellID"] = 257153, }),	-- Bone Gathering

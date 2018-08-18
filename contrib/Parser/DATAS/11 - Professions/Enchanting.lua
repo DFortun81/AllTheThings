@@ -402,7 +402,7 @@ profession(333, { -- Enchanting
 		i(11287),	-- Lesser Magic Wand
 		i(11289),	-- Lesser Mystic Wand
 	}),
-	n(-15, { 	-- Recipes
+	filter(200, { 	-- Recipes
 		-- Holiday
 		n(-3, { 	-- Holiday
 			recipe(46578),	-- Deathfrost
@@ -913,7 +913,7 @@ profession(333, { -- Enchanting
 			recipe(191017),	-- Word of Strength [Rank 3]
 		}),
 		tier(8, {	-- Battle for Azeroth
-			n(-15, {	-- Recipes
+			filter(200, {	-- Recipes
 				-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
 				recipe(271433, { ["spellID"] = 271433, }),	-- Cooled Hearthing
 				recipe(278418, { ["spellID"] = 278418, }),	-- Disenchanting Rod

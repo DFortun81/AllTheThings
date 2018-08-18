@@ -962,7 +962,7 @@ profession(197, { -- Tailoring
 			},
 		})),
 	}),
-	n(-15, { 	-- Recipes
+	filter(200, { 	-- Recipes
 		n(-3, { 	-- Holiday
 			un(17, recipe(26403)),	-- Festival Dress
 			un(17, recipe(26407)),	-- Festival Suit
@@ -1727,10 +1727,7 @@ profession(197, { -- Tailoring
 			recipe(185940),	-- Silkweave Slippers [Rank 2]
 			recipe(208352),	-- Silkweave Slippers [Rank 3]
 		}),
-	}),
-	
-	tier(8, {	-- Battle For Azeroth
-		n(-15, { -- Recipes
+		tier(8, {	-- Battle For Azeroth
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
 			recipe(257134, { ["spellID"] = 257134, }),	-- Battle Flag: Phalanx Defense
 			recipe(257136, { ["spellID"] = 257136, }),	-- Battle Flag: Phalanx Defense

@@ -316,7 +316,11 @@ profession(186, { -- Mining
 			},
 		}),
 	}),
-	n(-15, { -- Recipes
+	n(-25, { -- Pet Battles
+		i(67282), -- Elementium Geode
+		i(118919), -- Red Goren Egg
+	}),
+	filter(200, { -- Recipes
 		-- Classic
 		recipe(2657),	-- Smelt Copper
 		recipe(3304),	-- Smelt Tin
@@ -397,14 +401,8 @@ profession(186, { -- Mining
 		recipe(184488),	-- Living Leystone [Rank 1]
 		recipe(184489),	-- Living Leystone [Rank 2]
 		recipe(184490),	-- Living Leystone [Rank 3]
-	}),
-	n(-25, { -- Pet Battles
-		i(67282), -- Elementium Geode
-		i(118919), -- Red Goren Egg
-	}),
-	
-	tier(8, {	-- Battle For Azeroth
-		n(-15, { -- Recipes
+		
+		tier(8, {	-- Battle For Azeroth
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
 			recipe(253333, { ["spellID"] = 253333, }),	-- Monelite Deposit
 			recipe(253335, { ["spellID"] = 253335, }),	-- Monelite Deposit

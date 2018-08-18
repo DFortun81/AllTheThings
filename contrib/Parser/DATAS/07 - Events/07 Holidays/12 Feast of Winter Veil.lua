@@ -887,7 +887,7 @@ _.WorldEvents =
 						}),
 					},
 				}),
-				n(-15, { -- Recipes
+				filter(200, { -- Recipes
 					["groups"] = {
 						n(-297, { -- Mailbox
 							["groups"] = {

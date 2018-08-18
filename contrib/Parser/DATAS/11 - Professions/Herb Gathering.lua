@@ -289,7 +289,7 @@ profession(182, { -- Herb Gathering
 			},
 		}),
 	}),
-	n(-15, { -- Recipes
+	filter(200, { -- Recipes
 		-- Legion
 		recipe(193292),	-- Aethril [Rank 1]
 		recipe(193293),	-- Aethril [Rank 2]
@@ -314,7 +314,7 @@ profession(182, { -- Herb Gathering
 		recipe(193306),	-- Starlight Rose [Rank 3]
 	}),
 	tier(8, {	-- Battle For Azeroth
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
 			recipe(252411, { ["spellID"] = 252411, }),	-- Akunda's Bite
 			recipe(252412, { ["spellID"] = 252412, }),	-- Akunda's Bite

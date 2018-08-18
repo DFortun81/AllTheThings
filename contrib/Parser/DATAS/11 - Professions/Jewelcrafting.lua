@@ -775,7 +775,7 @@ profession(755, { -- Jewelcrafting
 		i(116092),	-- Recipe: Whispering Taladite Ring
 	}),
 	tier(8, {	-- Battle For Azeroth
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
 				recipe(256510, { ["spellID"] = 256510, }),	-- Amberblaze Loop
 				recipe(256514, { ["spellID"] = 256514, }),	-- Amberblaze Loop

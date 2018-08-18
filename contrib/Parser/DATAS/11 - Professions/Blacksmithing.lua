@@ -587,7 +587,7 @@ profession(164, { -- Blacksmithing
 			i(8029), -- Plans: Wicked Mithril Blade (World Drop)
 			i(12691), -- Plans: Wildthorn Mail (World Drop)
 		}),
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			un(1, recipe(20201, { -- Plans: Arcanite Rod
 				["description"] = "These are the Arcanite Rod plans. They were removed in Patch 5.0.4.",
 			})),
@@ -1127,7 +1127,7 @@ profession(164, { -- Blacksmithing
 			--i(23615), -- Plans: Swiftsteel Gloves (Zone Drop - Mana-Tombs - 1 Drop - DONE)
 			--i(32737), -- Plans: Swiftsteel Shoulders (Zone Drop - Black Temple - 2+ Drops - DONE)
 		}),
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			n(-582, { -- Armorsmith
 				un(1, recipe(34533), { -- Plans: Breastplate of Kings
 					un(1, recipe(34534), { -- Plans: Bulwark of Kings
@@ -1419,7 +1419,7 @@ profession(164, { -- Blacksmithing
 			--h(i(47645)), -- Plans: Titanium Spikeguards (Common Boss Drop - Trial of the Crusader (25-player) - 2+ Drops - DONE)
 			--i(45091), -- Plans: Treads of Destiny (Common Boss Drop - Ulduar - 2+ Drops - DONE)
 		}),]]--
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			recipe(59436), -- Plans: Brilliant Saronite Belt
 			recipe(55057), -- Plans: Brilliant Saronite Boots
 			recipe(59438), -- Plans: Brilliant Saronite Bracers
@@ -2187,7 +2187,7 @@ profession(164, { -- Blacksmithing
 			i(72012), -- Plans: Unstoppable Destroyer's Legplates (Zone Drop - Dragon Soul - 2+ Drops - DONE)
 			i(69968), -- Plans: Warboots of Mighty Lords (Zone Drop - Firelands - 2+ Drops - DONE)
 		}),]]--
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			recipe(76434), -- Plans: Cold-Forged Shank
 			recipe(76433), -- Plans: Decapitator's Razor
 			recipe(76441), -- Plans: Elementium Shield Spike
@@ -2413,7 +2413,7 @@ profession(164, { -- Blacksmithing
 			--i(87410), -- Plans: Ornate Battleplate of the Master (Zone Drop - MSV/HoF/ToES - 2+ Drops - DONE)
 			--i(87408), -- Plans: Unyielding Bloodplate (Zone Drop - MSV/HoF/ToES - 2+ Drops - DONE)
 		}),
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			recipe(122637), -- Plans: Forgewire Axe
 			recipe(122583), -- Plans: Ghost-Forged Belt
 			recipe(122638), -- Plans: Ghost-Forged Blade
@@ -3004,7 +3004,7 @@ profession(164, { -- Blacksmithing
         },
 			}),
 		}),
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			recipe(239415), -- Rethu's Incessant Courage
 		}),
 		--[[n(-17, { -- Quests
@@ -3266,7 +3266,7 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 		}),
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
 			recipe(253192, { ["spellID"] = 253192, }),	-- Emblazoned Stormsteel Girdle
 			recipe(253188, { ["spellID"] = 253188, }),	-- Emblazoned Stormsteel Legguards
@@ -3362,7 +3362,7 @@ profession(164, { -- Blacksmithing
 		}),
 	--]]
 	n(-40, { -- Legacy
-		un(1, n(-15, { -- Recipes
+		un(1, filter(200, { -- Recipes
 			un(2, i(12818)), -- Plans: Inlaid Thorium Hammer
 		})),
 		un(40, n(-17, { -- Quests

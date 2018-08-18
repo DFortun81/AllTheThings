@@ -331,7 +331,7 @@ profession(773, { -- Inscription
 		i(139639),	-- Vantus Rune Technique: Xavius
 	}),
 	tier(8, {	-- Battle For Azeroth
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
 			recipe(256232, { ["spellID"] = 256232, }),	-- Codex of the Quiet Mind
 			recipe(256233, { ["spellID"] = 256233, }),	-- Codex of the Quiet Mind

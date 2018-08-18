@@ -165,7 +165,7 @@ profession(165, { -- Leatherworking
 				["qg"] = 7852, -- Pratt McGrubben				
 			})),
 		}),
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			recipe(6661), -- Pattern: Barbaric Harness		
 			recipe(7151), -- Pattern: Barbaric Shoulders					
 			recipe(226115), -- Pattern: Blue Chain Leggings
@@ -382,7 +382,7 @@ profession(165, { -- Leatherworking
 		}),	
 		n(-17, { -- Quests
 		}),	
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			recipe(36074), -- Pattern: Blackstorm Leggings
 			recipe(163231), -- Pattern: Cobra Scales
 			recipe(32482), -- Pattern: Comfortable Insoles
@@ -508,7 +508,7 @@ profession(165, { -- Leatherworking
 		}),	
 		n(-17, { -- Quests			
 		}),	
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			recipe(50949), -- Pattern: Arctic Belt
 			recipe(50948), -- Pattern: Arctic Boots
 			recipe(50944), -- Pattern: Arctic Chestpiece
@@ -665,7 +665,7 @@ profession(165, { -- Leatherworking
 		}),	
 		n(-17, { -- Quests			
 		}),	
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			recipe(78438), -- Pattern: Cloak of Beasts
 			recipe(78439), -- Pattern: Cloak of War
 			recipe(78399), -- Pattern: Darkbrand Gloves
@@ -768,7 +768,7 @@ profession(165, { -- Leatherworking
 		}),	
 		n(-17, { -- Quests
 		}),
-		n(-15, { -- Recipes	
+		filter(200, { -- Recipes	
 			recipe(131865), -- Pattern: Magnificent Hide
 			recipe(124635), -- Pattern: Misthide Drape
 			recipe(124637), -- Pattern: Quick Strike Cloak
@@ -1041,7 +1041,7 @@ profession(165, { -- Leatherworking
 				["qg"] = 3050, -- Veren Tallstrider				
 			}),
 		}),	
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			recipe(32482), -- Pattern: Comfortable Insoles
 		}),	
 		n(-2, { -- Vendors
@@ -1093,7 +1093,7 @@ profession(165, { -- Leatherworking
 		}),	
 		n(-17, { -- Quests			
 		}),	
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			recipe(239413), -- Pattern: The Sentinel's Eternal Refuge
 			recipe(239414), -- Pattern: Vigilance Perch
 		}),	
@@ -1154,7 +1154,7 @@ profession(165, { -- Leatherworking
 		}),	
 		n(-17, { -- Quests			
 		}),	
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 		}),	
 		n(-2, { -- Vendors
 		}),
@@ -1586,7 +1586,7 @@ profession(165, { -- Leatherworking
 		i(116341),	-- Recipe: Wayfaring Tunic
 	}),
 	tier(8, {	-- Battle For Azeroth
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
 			recipe(278423, { ["spellID"] = 278423, }),	-- Amber Rallying Horn
 			recipe(256756, { ["spellID"] = 256756, }),	-- Coarse Leather Armguards

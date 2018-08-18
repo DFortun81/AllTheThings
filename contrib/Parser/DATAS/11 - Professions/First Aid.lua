@@ -180,7 +180,7 @@ profession(129, { -- First Aid
 				["description"] = "No longer required.",
 			})),
 		}),
-		n(-15, { -- Recipes
+		filter(200, { -- Recipes
 			-- Classic
 			un(2, recipe(3275)),	-- Linen Bandage
 			un(2, recipe(3276)),	-- Heavy Linen Bandage
