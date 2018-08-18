@@ -1728,4 +1728,70 @@ profession(197, { -- Tailoring
 			recipe(208352),	-- Silkweave Slippers [Rank 3]
 		}),
 	}),
+	
+	tier(8, {	-- Battle For Azeroth
+		n(-15, { -- Recipes
+			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
+			recipe(257134, { ["spellID"] = 257134, }),	-- Battle Flag: Phalanx Defense
+			recipe(257136, { ["spellID"] = 257136, }),	-- Battle Flag: Phalanx Defense
+			recipe(257135, { ["spellID"] = 257135, }),	-- Battle Flag: Phalanx Defense
+			recipe(257137, { ["spellID"] = 257137, }),	-- Battle Flag: Rallying Swiftness
+			recipe(257139, { ["spellID"] = 257139, }),	-- Battle Flag: Rallying Swiftness
+			recipe(257138, { ["spellID"] = 257138, }),	-- Battle Flag: Rallying Swiftness
+			recipe(257131, { ["spellID"] = 257131, }),	-- Battle Flag: Spirit of Freedom
+			recipe(257132, { ["spellID"] = 257132, }),	-- Battle Flag: Spirit of Freedom
+			recipe(257133, { ["spellID"] = 257133, }),	-- Battle Flag: Spirit of Freedom
+			recipe(257125, { ["spellID"] = 257125, }),	-- Deep Sea Bag
+			recipe(257126, { ["spellID"] = 257126, }),	-- Deep Sea Bag
+			recipe(257127, { ["spellID"] = 257127, }),	-- Deep Sea Bag
+			recipe(267202, { ["spellID"] = 267202, }),	-- Deep Sea Bandage
+			recipe(279183, { ["spellID"] = 279183, }),	-- Discreet Spellthread
+			recipe(257124, { ["spellID"] = 257124, }),	-- Emblazoned Deep Sea Breeches
+			recipe(257121, { ["spellID"] = 257121, }),	-- Emblazoned Deep Sea Gloves
+			recipe(257130, { ["spellID"] = 257130, }),	-- Embroidered Deep Sea Bag
+			recipe(257128, { ["spellID"] = 257128, }),	-- Embroidered Deep Sea Bag
+			recipe(257129, { ["spellID"] = 257129, }),	-- Embroidered Deep Sea Bag
+			recipe(257122, { ["spellID"] = 257122, }),	-- Embroidered Deep Sea Breeches
+			recipe(257114, { ["spellID"] = 257114, }),	-- Embroidered Deep Sea Cloak
+			recipe(257115, { ["spellID"] = 257115, }),	-- Embroidered Deep Sea Cloak
+			recipe(257116, { ["spellID"] = 257116, }),	-- Embroidered Deep Sea Cloak
+			recipe(257118, { ["spellID"] = 257118, }),	-- Embroidered Deep Sea Gloves
+			recipe(272440, { ["spellID"] = 272440, }),	-- Embroidered Deep Sea Satin
+			recipe(279184, { ["spellID"] = 279184, }),	-- Feathery Spellthread
+			recipe(269608, { ["spellID"] = 269608, }),	-- Honorable Combatant's Satin Belt
+			recipe(269609, { ["spellID"] = 269609, }),	-- Honorable Combatant's Satin Belt
+			recipe(269610, { ["spellID"] = 269610, }),	-- Honorable Combatant's Satin Belt
+			recipe(269599, { ["spellID"] = 269599, }),	-- Honorable Combatant's Satin Boots
+			recipe(269600, { ["spellID"] = 269600, }),	-- Honorable Combatant's Satin Boots
+			recipe(269601, { ["spellID"] = 269601, }),	-- Honorable Combatant's Satin Boots
+			recipe(269611, { ["spellID"] = 269611, }),	-- Honorable Combatant's Satin Bracers
+			recipe(269612, { ["spellID"] = 269612, }),	-- Honorable Combatant's Satin Bracers
+			recipe(269613, { ["spellID"] = 269613, }),	-- Honorable Combatant's Satin Bracers
+			recipe(269596, { ["spellID"] = 269596, }),	-- Honorable Combatant's Satin Cloak
+			recipe(269597, { ["spellID"] = 269597, }),	-- Honorable Combatant's Satin Cloak
+			recipe(269598, { ["spellID"] = 269598, }),	-- Honorable Combatant's Satin Cloak
+			recipe(269602, { ["spellID"] = 269602, }),	-- Honorable Combatant's Satin Mittens
+			recipe(269603, { ["spellID"] = 269603, }),	-- Honorable Combatant's Satin Mittens
+			recipe(269604, { ["spellID"] = 269604, }),	-- Honorable Combatant's Satin Mittens
+			recipe(269605, { ["spellID"] = 269605, }),	-- Honorable Combatant's Satin Pants
+			recipe(269606, { ["spellID"] = 269606, }),	-- Honorable Combatant's Satin Pants
+			recipe(269607, { ["spellID"] = 269607, }),	-- Honorable Combatant's Satin Pants
+			recipe(268983, { ["spellID"] = 268983, }),	-- Hooked Deep Sea Net
+			recipe(257123, { ["spellID"] = 257123, }),	-- Imbued Deep Sea Breeches
+			recipe(257120, { ["spellID"] = 257120, }),	-- Imbued Deep Sea Gloves
+			recipe(279182, { ["spellID"] = 279182, }),	-- Resilient Spellthread
+			recipe(278414, { ["spellID"] = 278414, }),	-- Rough-hooked Tidespray Linen
+			recipe(267201, { ["spellID"] = 267201, }),	-- Tidespray Linen Bandage
+			recipe(257102, { ["spellID"] = 257102, }),	-- Tidespray Linen Belt
+			recipe(257103, { ["spellID"] = 257103, }),	-- Tidespray Linen Bracers
+			recipe(257107, { ["spellID"] = 257107, }),	-- Tidespray Linen Cloak
+			recipe(257097, { ["spellID"] = 257097, }),	-- Tidespray Linen Hood
+			recipe(257096, { ["spellID"] = 257096, }),	-- Tidespray Linen Mittens
+			recipe(268982, { ["spellID"] = 268982, }),	-- Tidespray Linen Net
+			recipe(257099, { ["spellID"] = 257099, }),	-- Tidespray Linen Pants
+			recipe(257104, { ["spellID"] = 257104, }),	-- Tidespray Linen Robe
+			recipe(257095, { ["spellID"] = 257095, }),	-- Tidespray Linen Sandals
+			recipe(257101, { ["spellID"] = 257101, }),	-- Tidespray Linen Spaulders
+		}),
+	}),
 });
