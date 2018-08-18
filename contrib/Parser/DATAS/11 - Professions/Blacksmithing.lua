@@ -3267,6 +3267,7 @@ profession(164, { -- Blacksmithing
 			}),
 		}),
 		n(-15, { -- Recipes
+			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
 			recipe(253192, { ["spellID"] = 253192, }),	-- Emblazoned Stormsteel Girdle
 			recipe(253188, { ["spellID"] = 253188, }),	-- Emblazoned Stormsteel Legguards
 			recipe(269464, { ["spellID"] = 269464, }),	-- Honorable Combatant's Cutlass

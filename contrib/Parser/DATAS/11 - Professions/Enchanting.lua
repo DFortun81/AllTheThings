@@ -912,10 +912,81 @@ profession(333, { -- Enchanting
 			recipe(191000),	-- Word of Strength [Rank 2]
 			recipe(191017),	-- Word of Strength [Rank 3]
 		}),
-		--[[
 		tier(8, {	-- Battle for Azeroth
-			
+			n(-15, {	-- Recipes
+				-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
+				recipe(271433, { ["spellID"] = 271433, }),	-- Cooled Hearthing
+				recipe(278418, { ["spellID"] = 278418, }),	-- Disenchanting Rod
+				recipe(265110, { ["spellID"] = 265110, }),	-- Enchanter's Sorcerous Scepter
+				recipe(265112, { ["spellID"] = 265112, }),	-- Enchanter's Sorcerous Scepter
+				recipe(265111, { ["spellID"] = 265111, }),	-- Enchanter's Sorcerous Scepter
+				recipe(265106, { ["spellID"] = 265106, }),	-- Enchanter's Umbral Wand
+				recipe(269715, { ["spellID"] = 269715, }),	-- Honorable Combatant's Sorcerous Scepter
+				recipe(269716, { ["spellID"] = 269716, }),	-- Honorable Combatant's Sorcerous Scepter
+				recipe(269719, { ["spellID"] = 269719, }),	-- Honorable Combatant's Sorcerous Scepter
+				recipe(255070, { ["spellID"] = 255070, }),	-- Kul Tiran Crafting
+				recipe(255035, { ["spellID"] = 255035, }),	-- Kul Tiran Herbalism
+				recipe(255040, { ["spellID"] = 255040, }),	-- Kul Tiran Mining
+				recipe(255065, { ["spellID"] = 255065, }),	-- Kul Tiran Skinning
+				recipe(255066, { ["spellID"] = 255066, }),	-- Kul Tiran Surveying
+				recipe(255075, { ["spellID"] = 255075, }),	-- Pact of Critical Strike
+				recipe(255098, { ["spellID"] = 255098, }),	-- Pact of Critical Strike
+				recipe(255090, { ["spellID"] = 255090, }),	-- Pact of Critical Strike
+				recipe(255076, { ["spellID"] = 255076, }),	-- Pact of Haste
+				recipe(255099, { ["spellID"] = 255099, }),	-- Pact of Haste
+				recipe(255091, { ["spellID"] = 255091, }),	-- Pact of Haste
+				recipe(255077, { ["spellID"] = 255077, }),	-- Pact of Mastery
+				recipe(255100, { ["spellID"] = 255100, }),	-- Pact of Mastery
+				recipe(255092, { ["spellID"] = 255092, }),	-- Pact of Mastery
+				recipe(255078, { ["spellID"] = 255078, }),	-- Pact of Versatility
+				recipe(255101, { ["spellID"] = 255101, }),	-- Pact of Versatility
+				recipe(255093, { ["spellID"] = 255093, }),	-- Pact of Versatility
+				recipe(271366, { ["spellID"] = 271366, }),	-- Safe Hearthing
+				recipe(255071, { ["spellID"] = 255071, }),	-- Seal of Critical Strike
+				recipe(255086, { ["spellID"] = 255086, }),	-- Seal of Critical Strike
+				recipe(255094, { ["spellID"] = 255094, }),	-- Seal of Critical Strike
+				recipe(255072, { ["spellID"] = 255072, }),	-- Seal of Haste
+				recipe(255087, { ["spellID"] = 255087, }),	-- Seal of Haste
+				recipe(255095, { ["spellID"] = 255095, }),	-- Seal of Haste
+				recipe(255073, { ["spellID"] = 255073, }),	-- Seal of Mastery
+				recipe(255088, { ["spellID"] = 255088, }),	-- Seal of Mastery
+				recipe(255096, { ["spellID"] = 255096, }),	-- Seal of Mastery
+				recipe(255074, { ["spellID"] = 255074, }),	-- Seal of Versatility
+				recipe(255089, { ["spellID"] = 255089, }),	-- Seal of Versatility
+				recipe(255097, { ["spellID"] = 255097, }),	-- Seal of Versatility
+				recipe(255068, { ["spellID"] = 255068, }),	-- Swift Hearthing
+				recipe(267495, { ["spellID"] = 267495, }),	-- Swift Hearthing
+				recipe(255103, { ["spellID"] = 255103, }),	-- Weapon Enchant - Coastal Surge
+				recipe(255104, { ["spellID"] = 255104, }),	-- Weapon Enchant - Coastal Surge
+				recipe(255105, { ["spellID"] = 255105, }),	-- Weapon Enchant - Coastal Surge
+				recipe(268907, { ["spellID"] = 268907, }),	-- Weapon Enchant - Deadly Navigation
+				recipe(268908, { ["spellID"] = 268908, }),	-- Weapon Enchant - Deadly Navigation
+				recipe(268909, { ["spellID"] = 268909, }),	-- Weapon Enchant - Deadly Navigation
+				recipe(255141, { ["spellID"] = 255141, }),	-- Weapon Enchant - Gale-Force Striking
+				recipe(255142, { ["spellID"] = 255142, }),	-- Weapon Enchant - Gale-Force Striking
+				recipe(255143, { ["spellID"] = 255143, }),	-- Weapon Enchant - Gale-Force Striking
+				recipe(268901, { ["spellID"] = 268901, }),	-- Weapon Enchant - Masterful Navigation
+				recipe(268902, { ["spellID"] = 268902, }),	-- Weapon Enchant - Masterful Navigation
+				recipe(268903, { ["spellID"] = 268903, }),	-- Weapon Enchant - Masterful Navigation
+				recipe(268894, { ["spellID"] = 268894, }),	-- Weapon Enchant - Quick Navigation
+				recipe(268895, { ["spellID"] = 268895, }),	-- Weapon Enchant - Quick Navigation
+				recipe(268897, { ["spellID"] = 268897, }),	-- Weapon Enchant - Quick Navigation
+				recipe(255110, { ["spellID"] = 255110, }),	-- Weapon Enchant - Siphoning
+				recipe(255111, { ["spellID"] = 255111, }),	-- Weapon Enchant - Siphoning
+				recipe(255112, { ["spellID"] = 255112, }),	-- Weapon Enchant - Siphoning
+				recipe(268913, { ["spellID"] = 268913, }),	-- Weapon Enchant - Stalwart Navigation
+				recipe(268914, { ["spellID"] = 268914, }),	-- Weapon Enchant - Stalwart Navigation
+				recipe(268915, { ["spellID"] = 268915, }),	-- Weapon Enchant - Stalwart Navigation
+				recipe(255129, { ["spellID"] = 255129, }),	-- Weapon Enchant - Torrent of Elements
+				recipe(255130, { ["spellID"] = 255130, }),	-- Weapon Enchant - Torrent of Elements
+				recipe(255131, { ["spellID"] = 255131, }),	-- Weapon Enchant - Torrent of Elements
+				recipe(268852, { ["spellID"] = 268852, }),	-- Weapon Enchant - Versatile Navigation
+				recipe(268879, { ["spellID"] = 268879, }),	-- Weapon Enchant - Versatile Navigation
+				recipe(268878, { ["spellID"] = 268878, }),	-- Weapon Enchant - Versatile Navigation
+				recipe(267498, { ["spellID"] = 267498, }),	-- Zandalari Crafting
+				recipe(267458, { ["spellID"] = 267458, }),	-- Zandalari Herbalism
+				recipe(267482, { ["spellID"] = 267482, }),	-- Zandalari Mining
+			}),
 		}),
-		]]--
 	}),
 });
