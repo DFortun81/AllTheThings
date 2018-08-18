@@ -243,4 +243,19 @@ profession(393, { -- Skinning
 		recipe(194171),	-- Unbroken Claw
 		recipe(194170),	-- Unbroken Tooth
 	}),
+	
+	tier(8, {	-- Battle For Azeroth
+		n(-15, { -- Recipes
+			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
+			recipe(257152, { ["spellID"] = 257152, }),	-- Bone Gathering
+			recipe(257153, { ["spellID"] = 257153, }),	-- Bone Gathering
+			recipe(257154, { ["spellID"] = 257154, }),	-- Bone Gathering
+			recipe(257146, { ["spellID"] = 257146, }),	-- Leather Gathering
+			recipe(257147, { ["spellID"] = 257147, }),	-- Leather Gathering
+			recipe(257148, { ["spellID"] = 257148, }),	-- Leather Gathering
+			recipe(257149, { ["spellID"] = 257149, }),	-- Scale Gathering
+			recipe(257150, { ["spellID"] = 257150, }),	-- Scale Gathering
+			recipe(257151, { ["spellID"] = 257151, }),	-- Scale Gathering
+		}),
+	}),
 });
