@@ -20,6 +20,21 @@ _.Instances =
 								crit(8), -- Liz Vilepot
 								crit(6), -- Threshanator 3000
 							}),
+							e(2132, {	-- Choppere Redhook [NOTE: This was added in Beta -> Live patch day.  This can be seen by having no encounter journal entry on 8/17/2018.
+								["groups"] = {
+									i(159973),	-- Boarder's Billy Club
+									i(159972),	-- Mutineer's Fate
+									i(159968),	-- Gloves of the Iron Reavers
+									i(159965),	-- Redhook's Command
+									i(159969),	-- Powdershot Leggings
+									i(159427),	-- Legplates of the Irontide Raider
+									i(159251),	-- Top-Sail Footwraps
+									i(162541),	-- Band of the Roving Scalawag
+								},
+								["crs"] = {
+									144160,	-- Chopper Redhook
+								},
+							}),
 							e(2133, { -- Sergeant Bainbridge
 								["groups"] = {
 									i(159648), -- Bainbridge's Blackjack
@@ -32,7 +47,7 @@ _.Instances =
 								},
 								["crs"] = {
 									144158, -- Sergeant Bainbridge
-									144160, -- Chopper Redhook
+									--144160, -- Chopper Redhook [Note: Made into his own encounter on Beta -> Live transition]
 								},
 							}),
 							e(2173, { -- Dread Captain Lockwood
