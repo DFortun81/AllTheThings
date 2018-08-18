@@ -819,25 +819,37 @@ _.Zones =
 				}),
 				n(-212, {	-- Treasure Chest
 					["groups"] = { -- If we are going to list every treasure chest then let's make it pretty and not show quest ID# on screen.
-						o(246309, {	-- Treasure Chest
+						o(9999998, {	-- Treasure Chest
 							["questID"] = 49885,
+							["isDaily"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
-						o(244689, {	-- Treasure Chest
+						o(9999997, {	-- Treasure Chest
 							["questID"] = 50895,
+							["isDaily"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
-						o(244691, {	-- Treasure Chest
+						o(9999996, {	-- Treasure Chest
 							["questID"] = 49904,
+							["isDaily"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
-						o(245316, {	-- Treasure Chest
+						o(9999995, {	-- Treasure Chest
 							["questID"] = 49916,
+							["isDaily"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
-						o(246562, {	-- Treasure Chest
+						o(9999994, {	-- Treasure Chest
 							["questID"] = 50894,
+							["isDaily"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						}),
+						o(9999999, { -- Treasure Chest
+							["questID"] = 50855,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 46.91, 73.90 },
+							},
 						}),
 					},
 				}),

@@ -642,14 +642,65 @@ _.Zones =
 					["groups"] = { -- If we are going to list every treasure chest then let's make it pretty and not show quest ID# on screen.
 						o(9999999, { -- Treasure Chest
 							["questID"] = 50716,
+							["isDaily"] = true,
 							["coords"] = {
 								{ 71.39, 40.89 },
 							},
 						}),
 						o(9999998, { -- Treasure Chest
 							["questID"] = 50720,
+							["isDaily"] = true,
 							["coords"] = {
 								{ 66.41, 29.61 },
+							},
+						}),
+						o(9999997, { -- Treasure Chest
+							["questID"] = 50723,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 46.18, 60.61 },
+							},
+						}),
+						o(9999996, { -- Treasure Chest
+							["questID"] = 50726,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 43.12, 72.95 },
+							},
+						}),
+						o(9999995, { -- Treasure Chest
+							["questID"] = 51346,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 77.13, 51.15 },
+							},
+						}),
+						o(9999994, { -- Treasure Chest
+							["questID"] = 50724,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 79.84, 13.87 },
+							},
+						}),
+						o(9999993, { -- Treasure Chest
+							["questID"] = 50711,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 50.22, 32.56 },
+							},
+						}),
+						o(9999992, { -- Treasure Chest
+							["questID"] = 50722,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 48.94, 41.40 },
+							},
+						}),
+						o(9999991, { -- Treasure Chest
+							["questID"] = 50715,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 69.10, 19.82 },
 							},
 						}),
 					},
