@@ -7583,6 +7583,12 @@ app:GetWindow("Debugger", UIParent, function(self)
 					t = app.CreateMap(t.mapID, t);
 				elseif t.objectID then
 					t = app.CreateObject(t.objectID, t);
+				elseif t.followerID then
+					t = app.CreateFollower(t.followerID, t);
+				elseif t.recipeID then
+					t = app.CreateRecipe(t.recipeID, t);
+				elseif t.spellID then
+					t = app.CreateSpell(t.spellID, t);
 				elseif t.achievementID then
 					t = app.CreateAchievement(t.achievementID, t);
 				elseif t.questID then
@@ -7602,6 +7608,12 @@ app:GetWindow("Debugger", UIParent, function(self)
 					key = "mapID";
 				elseif t.objectID then
 					key = "objectID";
+				elseif t.followerID then
+					key = "followerID";
+				elseif t.recipeID then
+					key = "recipeID";
+				elseif t.spellID then
+					key = "spellID";
 				elseif t.achievementID then
 					key = "achievementID";
 				elseif t.questID then
@@ -7680,6 +7692,18 @@ app:GetWindow("Debugger", UIParent, function(self)
 				end
 				for i=1,GetNumQuestChoices(),1 do
 					table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(GetQuestItemLink("choice", i)) });
+				end
+				for i=1,GetNumQuestLogRewardSpells(questID),1 do
+					local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
+					if garrFollowerID then
+						table.insert(rawGroups, { ["followerID"] = garrFollowerID, ["name"] = name });
+					elseif spellID then
+						if isTradeskillSpell then
+							table.insert(rawGroups, { ["recipeID"] = spellID, ["name"] = name });
+						else
+							table.insert(rawGroups, { ["spellID"] = spellID, ["name"] = name });
+						end
+					end
 				end
 				local info = { ["questID"] = questID, ["g"] = rawGroups };
 				if questStartItemID and questStartItemID > 0 then info.itemID = questStartItemID; end
