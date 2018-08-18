@@ -456,4 +456,76 @@ profession(202, { -- Engineering
 		i(162339),	-- Schematic: XA-1000 Surface Skimmer
 		i(23888),	-- Schematic: Zapthrottle Mote Extractor
 	}),
+	tier(8, {	-- Battle For Azeroth
+		n(-15, { -- Recipes
+			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
+			recipe(272062, { ["spellID"] = 272062, }),	-- AZ3-R1-T3 Bionic Bifocals
+			recipe(272063, { ["spellID"] = 272063, }),	-- AZ3-R1-T3 Bionic Bifocals
+			recipe(272064, { ["spellID"] = 272064, }),	-- AZ3-R1-T3 Bionic Bifocals
+			recipe(272059, { ["spellID"] = 272059, }),	-- AZ3-R1-T3 Gearspun Goggles
+			recipe(272060, { ["spellID"] = 272060, }),	-- AZ3-R1-T3 Gearspun Goggles
+			recipe(272061, { ["spellID"] = 272061, }),	-- AZ3-R1-T3 Gearspun Goggles
+			recipe(272065, { ["spellID"] = 272065, }),	-- AZ3-R1-T3 Orthogonal Optics
+			recipe(272066, { ["spellID"] = 272066, }),	-- AZ3-R1-T3 Orthogonal Optics
+			recipe(272067, { ["spellID"] = 272067, }),	-- AZ3-R1-T3 Orthogonal Optics
+			recipe(272056, { ["spellID"] = 272056, }),	-- AZ3-R1-T3 Synthetic Specs
+			recipe(272057, { ["spellID"] = 272057, }),	-- AZ3-R1-T3 Synthetic Specs
+			recipe(272058, { ["spellID"] = 272058, }),	-- AZ3-R1-T3 Synthetic Specs
+			recipe(255936, { ["spellID"] = 255936, }),	-- Belt Enchant: Holographic Horror Projector
+			recipe(269123, { ["spellID"] = 269123, }),	-- Belt Enchant: Miniaturized Plasma Shield
+			recipe(255940, { ["spellID"] = 255940, }),	-- Belt Enchant: Personal Space Amplifier
+			recipe(264960, { ["spellID"] = 264960, }),	-- Crow's Nest Scope
+			recipe(264961, { ["spellID"] = 264961, }),	-- Crow's Nest Scope
+			recipe(264962, { ["spellID"] = 264962, }),	-- Crow's Nest Scope
+			recipe(256154, { ["spellID"] = 256154, }),	-- Deployable Attire Rearranger
+			recipe(256155, { ["spellID"] = 256155, }),	-- Deployable Attire Rearranger
+			recipe(256156, { ["spellID"] = 256156, }),	-- Deployable Attire Rearranger
+			recipe(256070, { ["spellID"] = 256070, }),	-- Electroshock Mount Motivator
+			recipe(256071, { ["spellID"] = 256071, }),	-- Electroshock Mount Motivator
+			recipe(256072, { ["spellID"] = 256072, }),	-- Electroshock Mount Motivator
+			recipe(255392, { ["spellID"] = 255392, }),	-- F.R.I.E.D.
+			recipe(255393, { ["spellID"] = 255393, }),	-- F.R.I.E.D.
+			recipe(255394, { ["spellID"] = 255394, }),	-- F.R.I.E.D.
+			recipe(255457, { ["spellID"] = 255457, }),	-- Finely-Tuned Stormsteel Destroyer
+			recipe(255458, { ["spellID"] = 255458, }),	-- Finely-Tuned Stormsteel Destroyer
+			recipe(255459, { ["spellID"] = 255459, }),	-- Finely-Tuned Stormsteel Destroyer
+			recipe(265100, { ["spellID"] = 265100, }),	-- Frost-Laced Ammunition
+			recipe(265101, { ["spellID"] = 265101, }),	-- Frost-Laced Ammunition
+			recipe(265102, { ["spellID"] = 265102, }),	-- Frost-Laced Ammunition
+			recipe(269724, { ["spellID"] = 269724, }),	-- Honorable Combatant's Discombobulator
+			recipe(269725, { ["spellID"] = 269725, }),	-- Honorable Combatant's Discombobulator
+			recipe(269726, { ["spellID"] = 269726, }),	-- Honorable Combatant's Discombobulator
+			recipe(269727, { ["spellID"] = 269727, }),	-- Honorable Combatant's Stormsteel Destroyer
+			recipe(269728, { ["spellID"] = 269728, }),	-- Honorable Combatant's Stormsteel Destroyer
+			recipe(269729, { ["spellID"] = 269729, }),	-- Honorable Combatant's Stormsteel Destroyer
+			recipe(265097, { ["spellID"] = 265097, }),	-- Incendiary Ammunition
+			recipe(265098, { ["spellID"] = 265098, }),	-- Incendiary Ammunition
+			recipe(265099, { ["spellID"] = 265099, }),	-- Incendiary Ammunition
+			recipe(256080, { ["spellID"] = 256080, }),	-- Interdimensional Companion Repository
+			recipe(256082, { ["spellID"] = 256082, }),	-- Interdimensional Companion Repository
+			recipe(256084, { ["spellID"] = 256084, }),	-- Interdimensional Companion Repository
+			recipe(280732, { ["spellID"] = 280732, }),	-- Magical Intrusion Dampener
+			recipe(280733, { ["spellID"] = 280733, }),	-- Magical Intrusion Dampener
+			recipe(280734, { ["spellID"] = 280734, }),	-- Magical Intrusion Dampener
+			recipe(253122, { ["spellID"] = 253122, }),	-- Magnetic Discombobulator
+			recipe(278411, { ["spellID"] = 278411, }),	-- Makeshift Azerite Detector
+			recipe(274621, { ["spellID"] = 274621, }),	-- Mecha-Mogul Mk2
+			recipe(278413, { ["spellID"] = 278413, }),	-- Monelite Fish Finder
+			recipe(264964, { ["spellID"] = 264964, }),	-- Monelite Scope of Alacrity
+			recipe(264966, { ["spellID"] = 264966, }),	-- Monelite Scope of Alacrity
+			recipe(264967, { ["spellID"] = 264967, }),	-- Monelite Scope of Alacrity
+			recipe(255407, { ["spellID"] = 255407, }),	-- Organic Discombobulation Grenade
+			recipe(255408, { ["spellID"] = 255408, }),	-- Organic Discombobulation Grenade
+			recipe(255409, { ["spellID"] = 255409, }),	-- Organic Discombobulation Grenade
+			recipe(253150, { ["spellID"] = 253150, }),	-- Precision Attitude Adjuster
+			recipe(253151, { ["spellID"] = 253151, }),	-- Precision Attitude Adjuster
+			recipe(253152, { ["spellID"] = 253152, }),	-- Precision Attitude Adjuster
+			recipe(255395, { ["spellID"] = 255395, }),	-- Thermo-Accelerated Plague Spreader
+			recipe(255396, { ["spellID"] = 255396, }),	-- Thermo-Accelerated Plague Spreader
+			recipe(255397, { ["spellID"] = 255397, }),	-- Thermo-Accelerated Plague Spreader
+			recipe(256073, { ["spellID"] = 256073, }),	-- XA-1000 Surface Skimmer
+			recipe(256074, { ["spellID"] = 256074, }),	-- XA-1000 Surface Skimmer
+			recipe(256075, { ["spellID"] = 256075, }),	-- XA-1000 Surface Skimmer
+		}),
+	}),
 });
