@@ -313,6 +313,32 @@ profession(182, { -- Herb Gathering
 		recipe(193305),	-- Starlight Rose [Rank 2]
 		recipe(193306),	-- Starlight Rose [Rank 3]
 	}),
+	tier(8, {	-- Battle For Azeroth
+		n(-15, { -- Recipes
+			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
+			recipe(252411, { ["spellID"] = 252411, }),	-- Akunda's Bite
+			recipe(252412, { ["spellID"] = 252412, }),	-- Akunda's Bite
+			recipe(252413, { ["spellID"] = 252413, }),	-- Akunda's Bite
+			recipe(252426, { ["spellID"] = 252426, }),	-- Anchor Weed
+			recipe(252425, { ["spellID"] = 252425, }),	-- Anchor Weed
+			recipe(252424, { ["spellID"] = 252424, }),	-- Anchor Weed
+			recipe(252405, { ["spellID"] = 252405, }),	-- Riverbud
+			recipe(252407, { ["spellID"] = 252407, }),	-- Riverbud
+			recipe(252406, { ["spellID"] = 252406, }),	-- Riverbud
+			recipe(252421, { ["spellID"] = 252421, }),	-- Sea Stalk
+			recipe(252422, { ["spellID"] = 252422, }),	-- Sea Stalk
+			recipe(252423, { ["spellID"] = 252423, }),	-- Sea Stalk
+			recipe(252418, { ["spellID"] = 252418, }),	-- Siren's Pollen
+			recipe(252419, { ["spellID"] = 252419, }),	-- Siren's Pollen
+			recipe(252420, { ["spellID"] = 252420, }),	-- Siren's Pollen
+			recipe(252410, { ["spellID"] = 252410, }),	-- Star Moss
+			recipe(252409, { ["spellID"] = 252409, }),	-- Star Moss
+			recipe(252408, { ["spellID"] = 252408, }),	-- Star Moss
+			recipe(252415, { ["spellID"] = 252415, }),	-- Winter's Kiss
+			recipe(252417, { ["spellID"] = 252417, }),	-- Winter's Kiss
+			recipe(252416, { ["spellID"] = 252416, }),	-- Winter's Kiss
+		}),
+	}),
 	n(-25, { -- Pet Battles
 		i(153045), -- Fel Lasher
 		i(118595), -- Nightshade Sproutling
