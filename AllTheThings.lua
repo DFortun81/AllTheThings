@@ -4537,9 +4537,11 @@ app.BaseProfession = {
 		if key == "key" then
 			return "requireSkill";
 		elseif key == "text" then
-			return select(1, GetSpellInfo(t.spellID));
+			if t.requireSkill == 129 then return select(1, GetSpellInfo(t.spellID)); end
+			return C_TradeSkillUI.GetTradeSkillDisplayName(t.requireSkill);
 		elseif key == "icon" then
-			return select(3, GetSpellInfo(t.spellID));
+			if t.requireSkill == 129 then return select(3, GetSpellInfo(t.spellID)); end
+			return C_TradeSkillUI.GetTradeSkillTexture(t.requireSkill);
 		elseif key == "spellID" then
 			return SkillIDToSpellID[t.requireSkill];
 		else
