@@ -329,6 +329,70 @@ profession(773, { -- Inscription
 		i(137751),	-- Vantus Rune Technique: Xavius
 		i(137771),	-- Vantus Rune Technique: Xavius
 		i(139639),	-- Vantus Rune Technique: Xavius
-
+	}),
+	tier(8, {	-- Battle For Azeroth
+		n(-15, { -- Recipes
+			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
+			recipe(256232, { ["spellID"] = 256232, }),	-- Codex of the Quiet Mind
+			recipe(256233, { ["spellID"] = 256233, }),	-- Codex of the Quiet Mind
+			recipe(256234, { ["spellID"] = 256234, }),	-- Codex of the Quiet Mind
+			recipe(256297, { ["spellID"] = 256297, }),	-- Contract: Champions of Azeroth
+			recipe(256298, { ["spellID"] = 256298, }),	-- Contract: Champions of Azeroth
+			recipe(256299, { ["spellID"] = 256299, }),	-- Contract: Champions of Azeroth
+			recipe(256278, { ["spellID"] = 256278, }),	-- Contract: Order of Embers
+			recipe(256279, { ["spellID"] = 256279, }),	-- Contract: Order of Embers
+			recipe(256280, { ["spellID"] = 256280, }),	-- Contract: Order of Embers
+			recipe(256275, { ["spellID"] = 256275, }),	-- Contract: Proudmoore Admiralty
+			recipe(256276, { ["spellID"] = 256276, }),	-- Contract: Proudmoore Admiralty
+			recipe(256277, { ["spellID"] = 256277, }),	-- Contract: Proudmoore Admiralty
+			recipe(256281, { ["spellID"] = 256281, }),	-- Contract: Storm's Wake
+			recipe(256282, { ["spellID"] = 256282, }),	-- Contract: Storm's Wake
+			recipe(256283, { ["spellID"] = 256283, }),	-- Contract: Storm's Wake
+			recipe(256287, { ["spellID"] = 256287, }),	-- Contract: Talanji's Expedition
+			recipe(256288, { ["spellID"] = 256288, }),	-- Contract: Talanji's Expedition
+			recipe(256289, { ["spellID"] = 256289, }),	-- Contract: Talanji's Expedition
+			recipe(256294, { ["spellID"] = 256294, }),	-- Contract: Tortollan Seekers
+			recipe(256295, { ["spellID"] = 256295, }),	-- Contract: Tortollan Seekers
+			recipe(256296, { ["spellID"] = 256296, }),	-- Contract: Tortollan Seekers
+			recipe(256290, { ["spellID"] = 256290, }),	-- Contract: Voldunai
+			recipe(256291, { ["spellID"] = 256291, }),	-- Contract: Voldunai
+			recipe(256293, { ["spellID"] = 256293, }),	-- Contract: Voldunai
+			recipe(256284, { ["spellID"] = 256284, }),	-- Contract: Zandalari Empire
+			recipe(256285, { ["spellID"] = 256285, }),	-- Contract: Zandalari Empire
+			recipe(256286, { ["spellID"] = 256286, }),	-- Contract: Zandalari Empire
+			recipe(264777, { ["spellID"] = 264777, }),	-- Crimson Ink
+			recipe(278422, { ["spellID"] = 278422, }),	-- Crimson Ink Well
+			recipe(278527, { ["spellID"] = 278527, }),	-- Darkmoon Card of War
+			recipe(256246, { ["spellID"] = 256246, }),	-- Darkmoon Card of War
+			recipe(256245, { ["spellID"] = 256245, }),	-- Darkmoon Card of War
+			recipe(276059, { ["spellID"] = 276059, }),	-- Glyph of the Dolphin
+			recipe(276121, { ["spellID"] = 276121, }),	-- Glyph of the Humble Flyer
+			recipe(276088, { ["spellID"] = 276088, }),	-- Glyph of the Tideskipper
+			recipe(269740, { ["spellID"] = 269740, }),	-- Honorable Combatant's Etched Vessel
+			recipe(269741, { ["spellID"] = 269741, }),	-- Honorable Combatant's Etched Vessel
+			recipe(269742, { ["spellID"] = 269742, }),	-- Honorable Combatant's Etched Vessel
+			recipe(256247, { ["spellID"] = 256247, }),	-- Inscribed Vessel of Mysticism
+			recipe(256249, { ["spellID"] = 256249, }),	-- Inscribed Vessel of Mysticism
+			recipe(256248, { ["spellID"] = 256248, }),	-- Inscribed Vessel of Mysticism
+			recipe(256219, { ["spellID"] = 256219, }),	-- Mass Mill Akunda's Bite
+			recipe(256308, { ["spellID"] = 256308, }),	-- Mass Mill Anchor Weed
+			recipe(256217, { ["spellID"] = 256217, }),	-- Mass Mill Riverbud
+			recipe(256223, { ["spellID"] = 256223, }),	-- Mass Mill Sea Stalk
+			recipe(256221, { ["spellID"] = 256221, }),	-- Mass Mill Siren's Pollen
+			recipe(256218, { ["spellID"] = 256218, }),	-- Mass Mill Star Moss
+			recipe(256220, { ["spellID"] = 256220, }),	-- Mass Mill Winter's Kiss
+			recipe(269065, { ["spellID"] = 269065, }),	-- Scroll of Unlocking
+			recipe(256235, { ["spellID"] = 256235, }),	-- Tome of the Quiet Mind
+			recipe(256237, { ["spellID"] = 256237, }),	-- Tome of the Quiet Mind
+			recipe(256236, { ["spellID"] = 256236, }),	-- Tome of the Quiet Mind
+			recipe(264776, { ["spellID"] = 264776, }),	-- Ultramarine Ink
+			recipe(256305, { ["spellID"] = 256305, }),	-- Vantus Rune: Uldir
+			recipe(256303, { ["spellID"] = 256303, }),	-- Vantus Rune: Uldir
+			recipe(256304, { ["spellID"] = 256304, }),	-- Vantus Rune: Uldir
+			recipe(264778, { ["spellID"] = 264778, }),	-- Viridescent Ink
+			recipe(264767, { ["spellID"] = 264767, }),	-- War-Scroll of Battle Shout
+			recipe(264769, { ["spellID"] = 264769, }),	-- War-Scroll of Fortitude
+			recipe(264766, { ["spellID"] = 264766, }),	-- War-Scroll of Intellect
+		}),
 	}),
 });
