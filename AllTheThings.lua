@@ -2175,12 +2175,32 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 			-- Cache Learned Spells
 			local skillCache = fieldCache["spellID"];
 			if skillCache then
+				local currentCategoryID, categories = -1, {};
+				local categoryIDs = { C_TradeSkillUI.GetCategories() };
+				for i = 1,#categoryIDs do
+					currentCategoryID = categoryIDs[i];
+					local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+					if categoryData then
+						if not categories[currentCategoryID] then
+							app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
+							categories[currentCategoryID] = true;
+						end
+					end
+				end
+				
 				-- Cache learned recipes
 				local learned = 0;
-				
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				for i = 1,#recipeIDs do
 					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+						currentCategoryID = spellRecipeInfo.categoryID;
+						if not categories[currentCategoryID] then
+							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+							if categoryData then
+								app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
+								categories[currentCategoryID] = true;
+							end
+						end
 						if spellRecipeInfo.learned then
 							SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
 							if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
@@ -3305,6 +3325,29 @@ app.BaseArtifact = {
 };
 app.CreateArtifact = function(id, t)
 	return setmetatable(constructor(id, t, "artifactID"), app.BaseArtifact);
+end
+
+-- Category Lib
+app.BaseCategory = {
+	__index = function(t, key)
+		if key == "key" then
+			return "categoryID";
+		elseif key == "f" then
+			return 200;
+		elseif key == "text" then
+			local info = app.GetDataSubMember("Categories", t.categoryID);
+			if info then return info; end
+			return "Open your Professions to Cache";
+		elseif key == "icon" then
+			return "Interface/ICONS/INV_Garrison_Blueprints1";
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateCategory = function(id, t)
+	return createInstance(constructor(id, t, "categoryID"), app.BaseCategory);
 end
 
 -- Character Class Lib
@@ -7587,8 +7630,12 @@ app:GetWindow("Debugger", UIParent, function(self)
 					t = app.CreateFollower(t.followerID, t);
 				elseif t.recipeID then
 					t = app.CreateRecipe(t.recipeID, t);
+				elseif t.professionID then
+					t = app.CreateProfession(t.professionID, t);
 				elseif t.spellID then
 					t = app.CreateSpell(t.spellID, t);
+				elseif t.categoryID then
+					t = app.CreateCategory(t.categoryID, t);
 				elseif t.achievementID then
 					t = app.CreateAchievement(t.achievementID, t);
 				elseif t.questID then
@@ -7612,8 +7659,12 @@ app:GetWindow("Debugger", UIParent, function(self)
 					key = "followerID";
 				elseif t.recipeID then
 					key = "recipeID";
+				elseif t.professionID then
+					key = "professionID";
 				elseif t.spellID then
 					key = "spellID";
+				elseif t.categoryID then
+					key = "categoryID";
 				elseif t.achievementID then
 					key = "achievementID";
 				elseif t.questID then
@@ -7657,21 +7708,80 @@ app:GetWindow("Debugger", UIParent, function(self)
 				self.rawData = app.GetDataMember("Debugger", {});
 				self.data.g = self:CreateObject(self.rawData);
 				self:Update();
-			elseif e == "CURSOR_UPDATE" then
-				local npcName, npcUnit = GameTooltip:GetUnit();
-				if not npcName then
-					npcName = UnitName("target") or UnitGUID("target");
-					npcUnit = "target";
+			elseif e == "TRADE_SKILL_LIST_UPDATE" then
+				local tradeSkillID = AllTheThings.GetTradeSkillLine();
+				local spellRecipeInfo = {};
+				local currentCategoryGroup, currentCategoryID, categories = {}, -1, {};
+				local categoryList, rawGroups = {}, {};
+				local categoryIDs = { C_TradeSkillUI.GetCategories() };
+				for i = 1,#categoryIDs do
+					currentCategoryID = categoryIDs[i];
+					local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+					if categoryData then
+						if not categories[currentCategoryID] then
+							local category = { 
+								["parentCategoryID"] = categoryData.parentCategoryID,
+								["categoryID"] = currentCategoryID,
+								["name"] = categoryData.name,
+								["g"] = {}
+							};
+							categories[currentCategoryID] = category;
+							table.insert(categoryList, category);
+						end
+					end
 				end
-				print(npcName, npcUnit, GetLootSourceInfo(1));
-				StartCoroutine("ApplyObjectTooltip", function()
-					local text;
-					repeat
-						coroutine.yield();
-						text = _G["GameTooltipTextLeft1"]:GetText();
-					until text;
-					AttachTooltip(GameTooltip);
-				end);
+				
+				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
+				for i = 1,#recipeIDs do
+					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+						currentCategoryID = spellRecipeInfo.categoryID;
+						if not categories[currentCategoryID] then
+							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+							if categoryData then
+								local category = { 
+									["parentCategoryID"] = categoryData.parentCategoryID,
+									["categoryID"] = currentCategoryID,
+									["name"] = categoryData.name, 
+									["g"] = {}
+								};
+								categories[currentCategoryID] = category;
+								table.insert(categoryList, category);
+							end
+						end
+						table.insert(categories[currentCategoryID].g, {
+							["recipeID"] = spellRecipeInfo.recipeID,
+							["requireSkill"] = tradeSkillID,
+							["name"] = spellRecipeInfo.name,
+						});
+					end
+				end
+				
+				-- Make each category parent have children. (not as gross as that sounds)
+				for i=#categoryList,1,-1 do
+					local category = categoryList[i];
+					if category.parentCategoryID then
+						local parentCategory = categories[category.parentCategoryID];
+						category.parentCategoryID = nil;
+						if parentCategory then
+							table.insert(parentCategory.g, 1, category); 
+							table.remove(categoryList, i);
+						end
+					end
+				end
+				
+				-- Now merge the categories into the raw groups table.
+				for i,category in ipairs(categoryList) do
+					table.insert(rawGroups, category);
+				end
+				local info = { 
+					["professionID"] = tradeSkillID, 
+					["icon"] = C_TradeSkillUI.GetTradeSkillTexture(tradeSkillID),
+					["name"] = C_TradeSkillUI.GetTradeSkillDisplayName(tradeSkillID),
+					["g"] = rawGroups
+				};
+				self:MergeObject(self.data.g, self:CreateObject(info));
+				self:MergeObject(self.rawData, info);
+				self:Update();
 			elseif e == "QUEST_DETAIL" then
 				local questStartItemID = ...;
 				local questID = GetQuestID();
@@ -7737,6 +7847,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self:RegisterEvent("PLAYER_LOGIN");
 		self:RegisterEvent("QUEST_DETAIL");
 		self:RegisterEvent("QUEST_LOOT_RECEIVED");
+		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		--self:RegisterAllEvents();
 	end
 	
