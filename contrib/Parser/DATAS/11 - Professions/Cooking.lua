@@ -721,5 +721,48 @@ profession(185, { -- Cooking
 			recipe(201556),		-- Nightborne Delicacy Platter [Rank 3]
 			recipe(230046),		-- Spiced Falcosaur Omelet
 		}),
+		
+		tier(8, {	-- Battle For Azeroth
+			n(-15, { -- Recipes
+				-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
+				recipe(259422, { ["spellID"] = 259422, }),	-- Bountiful Captain's Feast
+				recipe(259423, { ["spellID"] = 259423, }),	-- Bountiful Captain's Feast
+				recipe(259421, { ["spellID"] = 259421, }),	-- Bountiful Captain's Feast
+				recipe(259418, { ["spellID"] = 259418, }),	-- Galley Banquet
+				recipe(259419, { ["spellID"] = 259419, }),	-- Galley Banquet
+				recipe(259420, { ["spellID"] = 259420, }),	-- Galley Banquet
+				recipe(259430, { ["spellID"] = 259430, }),	-- Grilled Catfish
+				recipe(259431, { ["spellID"] = 259431, }),	-- Grilled Catfish
+				recipe(259432, { ["spellID"] = 259432, }),	-- Grilled Catfish
+				recipe(280282, { ["spellID"] = 280282, }),	-- Heartsbane Hexwurst
+				recipe(259414, { ["spellID"] = 259414, }),	-- Honey-Glazed Haunches
+				recipe(259415, { ["spellID"] = 259415, }),	-- Honey-Glazed Haunches
+				recipe(259416, { ["spellID"] = 259416, }),	-- Honey-Glazed Haunches
+				recipe(259411, { ["spellID"] = 259411, }),	-- Kul Tiramisu
+				recipe(259412, { ["spellID"] = 259412, }),	-- Kul Tiramisu
+				recipe(259413, { ["spellID"] = 259413, }),	-- Kul Tiramisu
+				recipe(259436, { ["spellID"] = 259436, }),	-- Loa Loaf
+				recipe(259437, { ["spellID"] = 259437, }),	-- Loa Loaf
+				recipe(259438, { ["spellID"] = 259438, }),	-- Loa Loaf
+				recipe(259442, { ["spellID"] = 259442, }),	-- Mon'Dazi
+				recipe(259443, { ["spellID"] = 259443, }),	-- Mon'Dazi
+				recipe(259444, { ["spellID"] = 259444, }),	-- Mon'Dazi
+				recipe(259424, { ["spellID"] = 259424, }),	-- Ravenberry Tarts
+				recipe(259425, { ["spellID"] = 259425, }),	-- Ravenberry Tarts
+				recipe(259426, { ["spellID"] = 259426, }),	-- Ravenberry Tarts
+				recipe(259439, { ["spellID"] = 259439, }),	-- Sailor's Pie
+				recipe(259440, { ["spellID"] = 259440, }),	-- Sailor's Pie
+				recipe(259441, { ["spellID"] = 259441, }),	-- Sailor's Pie
+				recipe(259433, { ["spellID"] = 259433, }),	-- Seasoned Loins
+				recipe(259434, { ["spellID"] = 259434, }),	-- Seasoned Loins
+				recipe(259435, { ["spellID"] = 259435, }),	-- Seasoned Loins
+				recipe(259445, { ["spellID"] = 259445, }),	-- Spiced Snapper
+				recipe(259446, { ["spellID"] = 259446, }),	-- Spiced Snapper
+				recipe(259447, { ["spellID"] = 259447, }),	-- Spiced Snapper
+				recipe(259427, { ["spellID"] = 259427, }),	-- Swamp Fish 'n Chips
+				recipe(259428, { ["spellID"] = 259428, }),	-- Swamp Fish 'n Chips
+				recipe(259429, { ["spellID"] = 259429, }),	-- Swamp Fish 'n Chips
+			}),
+		}),
 	}),
 });
