@@ -1585,4 +1585,88 @@ profession(165, { -- Leatherworking
 		i(116337),	-- Recipe: Wayfaring Shoulderguards
 		i(116341),	-- Recipe: Wayfaring Tunic
 	}),
+	tier(8, {	-- Battle For Azeroth
+		n(-15, { -- Recipes
+			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
+			recipe(278423, { ["spellID"] = 278423, }),	-- Amber Rallying Horn
+			recipe(256756, { ["spellID"] = 256756, }),	-- Coarse Leather Armguards
+			recipe(256790, { ["spellID"] = 256790, }),	-- Coarse Leather Barding
+			recipe(256778, { ["spellID"] = 256778, }),	-- Coarse Leather Cestus
+			recipe(256750, { ["spellID"] = 256750, }),	-- Coarse Leather Gauntlets
+			recipe(256751, { ["spellID"] = 256751, }),	-- Coarse Leather Helm
+			recipe(256752, { ["spellID"] = 256752, }),	-- Coarse Leather Leggings
+			recipe(256754, { ["spellID"] = 256754, }),	-- Coarse Leather Pauldrons
+			recipe(256748, { ["spellID"] = 256748, }),	-- Coarse Leather Treads
+			recipe(256749, { ["spellID"] = 256749, }),	-- Coarse Leather Vest
+			recipe(256755, { ["spellID"] = 256755, }),	-- Coarse Leather Waistguard
+			recipe(256791, { ["spellID"] = 256791, }),	-- Drums of the Maelstrom
+			recipe(256773, { ["spellID"] = 256773, }),	-- Emblazoned Mistscale Boots
+			recipe(256776, { ["spellID"] = 256776, }),	-- Emblazoned Mistscale Leggings
+			recipe(256767, { ["spellID"] = 256767, }),	-- Emblazoned Tempest Boots
+			recipe(256770, { ["spellID"] = 256770, }),	-- Emblazoned Tempest Leggings
+			recipe(256765, { ["spellID"] = 256765, }),	-- Hardened Tempest Boots
+			recipe(272278, { ["spellID"] = 272278, }),	-- Hardened Tempest Hide
+			recipe(256782, { ["spellID"] = 256782, }),	-- Hardened Tempest Knuckles
+			recipe(256783, { ["spellID"] = 256783, }),	-- Hardened Tempest Knuckles
+			recipe(256784, { ["spellID"] = 256784, }),	-- Hardened Tempest Knuckles
+			recipe(256768, { ["spellID"] = 256768, }),	-- Hardened Tempest Leggings
+			recipe(269552, { ["spellID"] = 269552, }),	-- Honorable Combatant's Bow
+			recipe(269553, { ["spellID"] = 269553, }),	-- Honorable Combatant's Bow
+			recipe(269554, { ["spellID"] = 269554, }),	-- Honorable Combatant's Bow
+			recipe(269528, { ["spellID"] = 269528, }),	-- Honorable Combatant's Leather Armguards
+			recipe(269529, { ["spellID"] = 269529, }),	-- Honorable Combatant's Leather Armguards
+			recipe(269530, { ["spellID"] = 269530, }),	-- Honorable Combatant's Leather Armguards
+			recipe(269519, { ["spellID"] = 269519, }),	-- Honorable Combatant's Leather Gauntlets
+			recipe(269520, { ["spellID"] = 269520, }),	-- Honorable Combatant's Leather Gauntlets
+			recipe(269521, { ["spellID"] = 269521, }),	-- Honorable Combatant's Leather Gauntlets
+			recipe(269522, { ["spellID"] = 269522, }),	-- Honorable Combatant's Leather Leggings
+			recipe(269523, { ["spellID"] = 269523, }),	-- Honorable Combatant's Leather Leggings
+			recipe(269524, { ["spellID"] = 269524, }),	-- Honorable Combatant's Leather Leggings
+			recipe(269516, { ["spellID"] = 269516, }),	-- Honorable Combatant's Leather Treads
+			recipe(269517, { ["spellID"] = 269517, }),	-- Honorable Combatant's Leather Treads
+			recipe(269518, { ["spellID"] = 269518, }),	-- Honorable Combatant's Leather Treads
+			recipe(269525, { ["spellID"] = 269525, }),	-- Honorable Combatant's Leather Waistguard
+			recipe(269526, { ["spellID"] = 269526, }),	-- Honorable Combatant's Leather Waistguard
+			recipe(269527, { ["spellID"] = 269527, }),	-- Honorable Combatant's Leather Waistguard
+			recipe(269543, { ["spellID"] = 269543, }),	-- Honorable Combatant's Mail Armguards
+			recipe(269544, { ["spellID"] = 269544, }),	-- Honorable Combatant's Mail Armguards
+			recipe(269545, { ["spellID"] = 269545, }),	-- Honorable Combatant's Mail Armguards
+			recipe(269534, { ["spellID"] = 269534, }),	-- Honorable Combatant's Mail Gauntlets
+			recipe(269535, { ["spellID"] = 269535, }),	-- Honorable Combatant's Mail Gauntlets
+			recipe(269536, { ["spellID"] = 269536, }),	-- Honorable Combatant's Mail Gauntlets
+			recipe(269537, { ["spellID"] = 269537, }),	-- Honorable Combatant's Mail Leggings
+			recipe(269538, { ["spellID"] = 269538, }),	-- Honorable Combatant's Mail Leggings
+			recipe(269539, { ["spellID"] = 269539, }),	-- Honorable Combatant's Mail Leggings
+			recipe(269531, { ["spellID"] = 269531, }),	-- Honorable Combatant's Mail Treads
+			recipe(269532, { ["spellID"] = 269532, }),	-- Honorable Combatant's Mail Treads
+			recipe(269533, { ["spellID"] = 269533, }),	-- Honorable Combatant's Mail Treads
+			recipe(269540, { ["spellID"] = 269540, }),	-- Honorable Combatant's Mail Waistguard
+			recipe(269541, { ["spellID"] = 269541, }),	-- Honorable Combatant's Mail Waistguard
+			recipe(269542, { ["spellID"] = 269542, }),	-- Honorable Combatant's Mail Waistguard
+			recipe(256772, { ["spellID"] = 256772, }),	-- Imbued Mistscale Boots
+			recipe(256775, { ["spellID"] = 256775, }),	-- Imbued Mistscale Leggings
+			recipe(256766, { ["spellID"] = 256766, }),	-- Imbued Tempest Boots
+			recipe(256769, { ["spellID"] = 256769, }),	-- Imbued Tempest Leggings
+			recipe(256771, { ["spellID"] = 256771, }),	-- Mistscale Boots
+			recipe(256779, { ["spellID"] = 256779, }),	-- Mistscale Knuckles
+			recipe(256780, { ["spellID"] = 256780, }),	-- Mistscale Knuckles
+			recipe(256781, { ["spellID"] = 256781, }),	-- Mistscale Knuckles
+			recipe(256774, { ["spellID"] = 256774, }),	-- Mistscale Leggings
+			recipe(256787, { ["spellID"] = 256787, }),	-- Recurve Bow of the Strands
+			recipe(256788, { ["spellID"] = 256788, }),	-- Recurve Bow of the Strands
+			recipe(256789, { ["spellID"] = 256789, }),	-- Recurve Bow of the Strands
+			recipe(256757, { ["spellID"] = 256757, }),	-- Shimmerscale Armguards
+			recipe(256793, { ["spellID"] = 256793, }),	-- Shimmerscale Diving Helmet
+			recipe(256792, { ["spellID"] = 256792, }),	-- Shimmerscale Diving Suit
+			recipe(256762, { ["spellID"] = 256762, }),	-- Shimmerscale Gauntlets
+			recipe(256761, { ["spellID"] = 256761, }),	-- Shimmerscale Helm
+			recipe(256760, { ["spellID"] = 256760, }),	-- Shimmerscale Leggings
+			recipe(256759, { ["spellID"] = 256759, }),	-- Shimmerscale Pauldrons
+			recipe(256777, { ["spellID"] = 256777, }),	-- Shimmerscale Striker
+			recipe(256764, { ["spellID"] = 256764, }),	-- Shimmerscale Treads
+			recipe(256763, { ["spellID"] = 256763, }),	-- Shimmerscale Vest
+			recipe(256758, { ["spellID"] = 256758, }),	-- Shimmerscale Waistguard
+			recipe(276256, { ["spellID"] = 276256, }),	-- Tempest Hide Pouch
+		}),
+	}),
 });
