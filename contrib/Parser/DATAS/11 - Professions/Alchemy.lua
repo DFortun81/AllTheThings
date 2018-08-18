@@ -860,10 +860,92 @@ profession(171, { -- Alchemy
 				}
 			}),
 		}),
-		--[[
-		tier(8, {	-- Battle for Azeroth
-			
+		tier(8, {	-- Battle For Azeroth
+			n(-15, { -- Recipes
+				-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
+				recipe(279159, { ["spellID"] = 279159, }),	-- Battle Potion of Agility
+				recipe(279160, { ["spellID"] = 279160, }),	-- Battle Potion of Agility
+				recipe(279161, { ["spellID"] = 279161, }),	-- Battle Potion of Agility
+				recipe(279162, { ["spellID"] = 279162, }),	-- Battle Potion of Intellect
+				recipe(279163, { ["spellID"] = 279163, }),	-- Battle Potion of Intellect
+				recipe(279164, { ["spellID"] = 279164, }),	-- Battle Potion of Intellect
+				recipe(279165, { ["spellID"] = 279165, }),	-- Battle Potion of Stamina
+				recipe(279166, { ["spellID"] = 279166, }),	-- Battle Potion of Stamina
+				recipe(279167, { ["spellID"] = 279167, }),	-- Battle Potion of Stamina
+				recipe(279168, { ["spellID"] = 279168, }),	-- Battle Potion of Strength
+				recipe(279169, { ["spellID"] = 279169, }),	-- Battle Potion of Strength
+				recipe(279170, { ["spellID"] = 279170, }),	-- Battle Potion of Strength
+				recipe(252382, { ["spellID"] = 252382, }),	-- Coastal Healing Potion
+				recipe(252383, { ["spellID"] = 252383, }),	-- Coastal Healing Potion
+				recipe(252384, { ["spellID"] = 252384, }),	-- Coastal Healing Potion
+				recipe(252385, { ["spellID"] = 252385, }),	-- Coastal Mana Potion
+				recipe(252386, { ["spellID"] = 252386, }),	-- Coastal Mana Potion
+				recipe(252387, { ["spellID"] = 252387, }),	-- Coastal Mana Potion
+				recipe(252388, { ["spellID"] = 252388, }),	-- Coastal Rejuvenation Potion
+				recipe(252389, { ["spellID"] = 252389, }),	-- Coastal Rejuvenation Potion
+				recipe(252390, { ["spellID"] = 252390, }),	-- Coastal Rejuvenation Potion
+				recipe(252391, { ["spellID"] = 252391, }),	-- Demitri's Draught of Deception
+				recipe(252392, { ["spellID"] = 252392, }),	-- Demitri's Draught of Deception
+				recipe(252393, { ["spellID"] = 252393, }),	-- Demitri's Draught of Deception
+				recipe(252376, { ["spellID"] = 252376, }),	-- Endless Tincture of Fractional Power
+				recipe(252377, { ["spellID"] = 252377, }),	-- Endless Tincture of Fractional Power
+				recipe(252378, { ["spellID"] = 252378, }),	-- Endless Tincture of Fractional Power
+				recipe(252361, { ["spellID"] = 252361, }),	-- Endless Tincture of Renewed Combat
+				recipe(252362, { ["spellID"] = 252362, }),	-- Endless Tincture of Renewed Combat
+				recipe(252363, { ["spellID"] = 252363, }),	-- Endless Tincture of Renewed Combat
+				recipe(252351, { ["spellID"] = 252351, }),	-- Flask of Endless Fathoms
+				recipe(252352, { ["spellID"] = 252352, }),	-- Flask of Endless Fathoms
+				recipe(252353, { ["spellID"] = 252353, }),	-- Flask of Endless Fathoms
+				recipe(252348, { ["spellID"] = 252348, }),	-- Flask of the Currents
+				recipe(252349, { ["spellID"] = 252349, }),	-- Flask of the Currents
+				recipe(252350, { ["spellID"] = 252350, }),	-- Flask of the Currents
+				recipe(252357, { ["spellID"] = 252357, }),	-- Flask of the Undertow
+				recipe(252358, { ["spellID"] = 252358, }),	-- Flask of the Undertow
+				recipe(252359, { ["spellID"] = 252359, }),	-- Flask of the Undertow
+				recipe(252354, { ["spellID"] = 252354, }),	-- Flask of the Vast Horizon
+				recipe(252355, { ["spellID"] = 252355, }),	-- Flask of the Vast Horizon
+				recipe(252356, { ["spellID"] = 252356, }),	-- Flask of the Vast Horizon
+				recipe(252394, { ["spellID"] = 252394, }),	-- Lightfoot Potion
+				recipe(252395, { ["spellID"] = 252395, }),	-- Lightfoot Potion
+				recipe(252396, { ["spellID"] = 252396, }),	-- Lightfoot Potion
+				recipe(276977, { ["spellID"] = 276977, }),	-- Mystical Cauldron
+				recipe(276976, { ["spellID"] = 276976, }),	-- Mystical Cauldron
+				recipe(276975, { ["spellID"] = 276975, }),	-- Mystical Cauldron
+				recipe(252341, { ["spellID"] = 252341, }),	-- Potion of Bursting Blood
+				recipe(252342, { ["spellID"] = 252342, }),	-- Potion of Bursting Blood
+				recipe(252343, { ["spellID"] = 252343, }),	-- Potion of Bursting Blood
+				recipe(252400, { ["spellID"] = 252400, }),	-- Potion of Concealment
+				recipe(252401, { ["spellID"] = 252401, }),	-- Potion of Concealment
+				recipe(252402, { ["spellID"] = 252402, }),	-- Potion of Concealment
+				recipe(278420, { ["spellID"] = 278420, }),	-- Potion of Herb Tracking
+				recipe(252337, { ["spellID"] = 252337, }),	-- Potion of Replenishment
+				recipe(252339, { ["spellID"] = 252339, }),	-- Potion of Replenishment
+				recipe(252340, { ["spellID"] = 252340, }),	-- Potion of Replenishment
+				recipe(252344, { ["spellID"] = 252344, }),	-- Potion of Rising Death
+				recipe(252345, { ["spellID"] = 252345, }),	-- Potion of Rising Death
+				recipe(252346, { ["spellID"] = 252346, }),	-- Potion of Rising Death
+				recipe(252397, { ["spellID"] = 252397, }),	-- Sea Mist Potion
+				recipe(252398, { ["spellID"] = 252398, }),	-- Sea Mist Potion
+				recipe(252399, { ["spellID"] = 252399, }),	-- Sea Mist Potion
+				recipe(252368, { ["spellID"] = 252368, }),	-- Siren's Alchemist Stone
+				recipe(252369, { ["spellID"] = 252369, }),	-- Siren's Alchemist Stone
+				recipe(252370, { ["spellID"] = 252370, }),	-- Siren's Alchemist Stone
+				recipe(252334, { ["spellID"] = 252334, }),	-- Steelskin Potion
+				recipe(252335, { ["spellID"] = 252335, }),	-- Steelskin Potion
+				recipe(252336, { ["spellID"] = 252336, }),	-- Steelskin Potion
+				recipe(252379, { ["spellID"] = 252379, }),	-- Surging Alchemist Stone
+				recipe(252380, { ["spellID"] = 252380, }),	-- Surging Alchemist Stone
+				recipe(252381, { ["spellID"] = 252381, }),	-- Surging Alchemist Stone
+				recipe(251314, { ["spellID"] = 251314, }),	-- Transmute: Cloth to Skins
+				recipe(251832, { ["spellID"] = 251832, }),	-- Transmute: Expulsom
+				recipe(251822, { ["spellID"] = 251822, }),	-- Transmute: Fish to Gems
+				recipe(251306, { ["spellID"] = 251306, }),	-- Transmute: Herbs to Cloth
+				recipe(251305, { ["spellID"] = 251305, }),	-- Transmute: Herbs to Ore
+				recipe(251808, { ["spellID"] = 251808, }),	-- Transmute: Meat to Pet
+				recipe(251310, { ["spellID"] = 251310, }),	-- Transmute: Ore to Cloth
+				recipe(251311, { ["spellID"] = 251311, }),	-- Transmute: Ore to Gems
+				recipe(251309, { ["spellID"] = 251309, }),	-- Transmute: Ore to Herbs
+			}),
 		}),
-		]]--
 	}),
 });
