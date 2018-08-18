@@ -116,11 +116,46 @@ _.Zones =
 								}),
 							},
 						})),
-						q(47961, {	-- Drustvar
-							["qg"] = 139522,	-- Scouting Map
-							["sourceQuests"] = { 47189 },	-- A Nation Divided
-							["isBreadcrumb"] = true,
-						}),
+						a(sz(12473, 4, {	-- A Sound Plan: Enemies Within
+							a(q(50789, {	-- Clear the Air [Alliance Only]
+								["qg"] = 135259, -- Taelia
+								["sourceQuests"] = { 50787 },	-- Make Our Case [Alliance Only]
+							})),
+							a(q(50788, {	-- Enemies Within [Alliance Only]
+								["qg"] = 135259, -- Taelia
+								["sourceQuests"] = { 50787 },	-- Make Our Case [Alliance Only]
+							})),
+							a(q(50790, {	-- Hot Pursuit [Alliance Only]
+								["qg"] = 135259, -- Taelia
+								["sourceQuests"] = { 50789, 50788 },	-- Clear the Air / Enemies Within [Alliance Only]
+							})),
+							a(q(50787, {	-- Make Our Case [Alliance Only]
+								["qg"] = 135335, -- Proudmoore Guard
+								["sourceQuests"] = { 50795 },	-- Prepare for Trouble [Alliance Only]
+							})),
+							a(q(50795, {	-- Prepare for Trouble [Alliance Only]
+								["qg"] = 135259, -- Taelia
+								["sourceQuests"] = { 50110 },	-- Bearers of Bad News [Alliance Only]
+							})),
+							a(q(50972, {	-- Proudmoore's Parley [Alliance Only]
+								["qg"] = 135259, -- Taelia
+								["sourceQuests"] = { 50790 },	-- Hot Pursuit [Alliance Only]
+								["groups"] = {
+									i(155031),	-- Sea Raider's Greathelm
+									i(155020),	-- Sea Raider's Breastplate
+								},
+							})),
+							q(51825, {	-- ??? Hidden ???
+								-- These two quest IDs fired after I turned in Proudmoore's Parley
+								["sourceQuests"] = { 50972 },	-- Proudmoore's Parley [Alliance Only]
+							}),
+							q(51826, {	-- ??? Hidden ???
+								-- These two quest IDs fired after I turned in Proudmoore's Parley
+								["sourceQuests"] = { 50972 },	-- Proudmoore's Parley [Alliance Only]
+							}),
+						})),
+						
+						
 						q(51144, {	-- A Bundle of Furs
 							["qg"] = 124289, -- "Risky" Liz Seminario <Fur Trader>
 							["sourceQuests"] = { 47189 },	-- Tiragarde Sound
@@ -130,6 +165,11 @@ _.Zones =
 								ach(12741), -- Giving a Scrap
 							},
 							["qg"] = 141274, -- Crenzo Sparkshatter
+						}),
+						q(47961, {	-- Drustvar
+							["qg"] = 139522,	-- Scouting Map
+							["sourceQuests"] = { 47189 },	-- A Nation Divided
+							["isBreadcrumb"] = true,
 						}),
 						q(47962, {	-- Stormsong Valley
 							["qg"] = 139522,	-- Scouting Map
@@ -156,6 +196,15 @@ _.Zones =
 						q(52654, {	-- The War Campaign
 							["qg"] = 120788,	-- Genn Greymane
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
+						}),
+						a(q(53332, {	-- Time for War
+							["qg"] = 135612, -- Halford Wyrmbane <7th Legion High Commander>
+							["sourceQuests"] = { 52544 },	-- The War Cache
+						})),
+						q(49715, {	-- Trouble at Greystone Keep
+							["qg"] = 130377,	-- Courier Gerald
+							["sourceQuests"] = { 50790 },	-- Hot Pursuit [Alliance Only]
+							["isBreadcrumb"] = true,
 						}),
 					},
 				}),
