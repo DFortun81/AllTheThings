@@ -273,6 +273,7 @@ AllTheThings.Locales.enUS = {
 	["FILTER_ID_ICONS"] = {
 		[27] = "Interface\\Icons\\inv_wand_02",								-- Wands
 		[102] = "Interface\\Icons\\INV_Misc_Toy_10",						-- Toy
+		[200] = "Interface\\Icons\\inv_scroll_05",							-- Recipes
 	},
 
 	-- These need to be localized manually.
