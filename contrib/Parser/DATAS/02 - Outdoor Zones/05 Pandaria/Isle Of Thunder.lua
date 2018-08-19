@@ -29,6 +29,51 @@ _.Zones =
 							["itemID"] = 95408,	-- Waterlogged Zandalari Journal [Item]
 						},
 					}),
+					ach(8110, {	-- These Mogu Have Gotta Go-gu
+						{
+							["achievementID"] = 8109,	-- The Mogu Below-gu
+						},
+						{
+							["criteriaID"] = 1,	-- Haqin of the Hundred Spears slain [Criteria]
+							["itemID"] = 94130,	-- Incantation of Haqin [Item]
+						},
+						{
+							["criteriaID"] = 2,	-- Forgemaster Deng slain [Criteria]
+							["itemID"] = 94233,	-- Incantation of Deng [Item]
+						},
+						{
+							["criteriaID"] = 3,	-- Sparkmancer Vu slain [Criteria]
+							["itemID"] = 95350,	-- Incantation of Vu [Item]
+						},
+						i(94566, {	-- Fortuitous Coffer
+							currency(697),	-- Elder Charm of Good Fortune
+							{
+								["achievementID"] = 8212,	-- Zandalari Library Card
+								["criteriaID"] = 1,	-- Iron-Bound Zandalari Journal [Criteria]
+								["itemID"] = 95409,	-- Iron-Bound Zandalari Journal [Item]
+							},
+							{
+								["achievementID"] = 8212,	-- Zandalari Library Card
+								["criteriaID"] = 2,	-- Blood-Spattered Zandalari Journal [Criteria]
+								["itemID"] = 95410,	-- Blood-Spattered Zandalari Journal [Item]
+							},
+							{
+								["achievementID"] = 8212,	-- Zandalari Library Card
+								["criteriaID"] = 3,	-- Torn Zandalari Journal [Criteria]
+								["itemID"] = 95411,	-- Torn Zandalari Journal [Item]
+							},
+							{
+								["achievementID"] = 8212,	-- Zandalari Library Card
+								["criteriaID"] = 4,	-- Frayed Zandalari Journal [Criteria]
+								["itemID"] = 95412,	-- Frayed Zandalari Journal [Item]
+							},
+							{
+								["achievementID"] = 8212,	-- Zandalari Library Card
+								["criteriaID"] = 5,	-- Waterlogged Zandalari Journal [Criteria]
+								["itemID"] = 95408,	-- Waterlogged Zandalari Journal [Item]
+							},
+						}),
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					p(1181), 	-- Elder Python
@@ -322,6 +367,48 @@ _.Zones =
 					n(50358, { 		-- Haywire Sunreaver Construct
 						dr(20, i(94124)),	-- Sunreaver Micro-Sentry
 					}),  
+					{
+						["achievementID"] = 8110,	-- These Mogu Have Gotta Go-gu
+						["criteriaID"] = 1,	-- Haqin of the Hundred Spears slain [Criteria]
+						["itemID"] = 94130,	-- Incantation of Haqin [Item]
+						["groups"] = {
+							{
+								["criteriaID"] = 1,	-- Haqin of the Hundred Spears slain [Criteria]
+								["creatureID"] = 69800,	-- Haqin of the Hundred Spears
+								["groups"] = {
+									i(94566),	-- Fortuitous Coffer
+								},
+							},
+						},
+					},
+					{
+						["achievementID"] = 8110,	-- These Mogu Have Gotta Go-gu
+						["criteriaID"] = 2,	-- Forgemaster Deng slain [Criteria]
+						["itemID"] = 94233,	-- Incantation of Deng [Item]
+						["groups"] = {
+							{
+								["criteriaID"] = 2,	-- Forgemaster Deng slain [Criteria]
+								["creatureID"] = 69809,	-- Forgemaster Deng
+								["groups"] = {
+									i(94566),	-- Fortuitous Coffer
+								},
+							},
+						},
+					},
+					{
+						["achievementID"] = 8110,	-- These Mogu Have Gotta Go-gu
+						["criteriaID"] = 3,	-- Sparkmancer Vu slain [Criteria]
+						["itemID"] = 95350,	-- Incantation of Vu [Item]
+						["groups"] = {
+							{
+								["criteriaID"] = 3,	-- Sparkmancer Vu slain [Criteria]
+								["creatureID"] = 69961,	-- Sparkmancer Vu
+								["groups"] = {
+									i(94566),	-- Fortuitous Coffer
+								},
+							},
+						},
+					},
 					n(69347, { 		-- Incomplete Drakkari Colossus
 						["groups"] = {	
 							dr(8, i(94823)),	-- Drakkari Decapitator
