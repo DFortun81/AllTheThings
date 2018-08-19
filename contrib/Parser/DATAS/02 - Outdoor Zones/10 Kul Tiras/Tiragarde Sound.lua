@@ -716,7 +716,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(155422, {	-- Pirate Chief's Speargun	
 									["crs"] = {
-										132104,	-- Blackpowder Smuggeler
+										132104,	-- Blackpowder Smuggler
 										136221,	-- Strongarm Smuggler
 										132093,	-- Wavecaller Smuggler
 									},
@@ -743,6 +743,17 @@ _.Zones =
 							}),	
 							-- ["questID"] = 		
 						}),		
+						n(130350, {	-- Guardian of the Spring
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(155571, {	-- Garyl's Riding Blanket
+									["crs"] = {
+										131453,	-- Roan Berthold
+									},
+								}),
+							}),
+							["questID"] = 49983,	-- additionally 49963?  It looks like 83 for bringing the horse to the NPC and 63 for clicking the reward.
+							["description"] = "Mount the horse and ride it to Roan Berthold at 67.3 51.6 to collect the reward.",
+						}),
 						n(139233, {	-- Gulliver
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158338),	-- Swift-Travel Gloves
