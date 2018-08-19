@@ -99,7 +99,8 @@ _.Zones =
 					}),
 				}),
 				na(-17, {	-- Quests
-					q(53370, {	-- Hour of Reckoning		
+					qa(53370, {	-- Hour of Reckoning
+						["qg"] = 144095, -- Master Mathias Shaw
 						["groups"] = {		
 							i(163542), -- Footman's Warmace
 							i(163541), -- Longbow of the Hunt
@@ -111,22 +112,21 @@ _.Zones =
 							i(163538), -- Footman's Gladius
 							i(163536), -- Warmage's Spire
 							i(163533), -- Footman's Cleaver
-						},		
+						},
 					}),
-					q(51795, {	-- The Battle for Lordaeron
-						["qg"] = 120590, -- Lady Jaina Proudmoore
+					qa(51795, {	-- The Battle for Lordaeron
+						["qg"] = 144095, -- Master Mathias Shaw
 						["sourceQuests"] = { 53370 }, -- Hour of Reckoning
 					}),	
-					q(52946, {	-- A Dying World
-						["groups"] = {
-						},
+					qa(52946, {	-- A Dying World
+						["qg"] = 142930, -- Halford Wyrmbane
 						["sourceQuests"] = { 51795 }, -- The Battle for Lordaeron
 					}),
-					q(46727, { -- Tides of War
+					qa(46727, { -- Tides of War
 						["qg"] = 142930, -- Halford Wyrmbane
 						["sourceQuests"] = { 51403 }, -- The Speaker's Imperative
 					}),
-					q(46728, { -- The Nation of Kul Tiras
+					qa(46728, { -- The Nation of Kul Tiras
 						["qg"] = 120756, -- Anduin Wyrnn
 						["sourceQuests"] = { 46727 }, -- Tides of War
 					}),
