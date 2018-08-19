@@ -10,7 +10,7 @@ _.Zones =
 					["groups"] = {
 						ach(13027, {	-- Mushroom Harvest
 							n(143313, {	-- Portakillo
-								--["questID"] = ,
+								--["questID"] = ,	-- did not trigger a quest completion upon death
 								["criteriaID"] = 3,	-- Portakillo
 							}),
 						}),

@@ -52,7 +52,7 @@ _.Zones =
 									["questID"] = 50045,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(279299, {	-- Venomous Seal	
+								o(279299, {	-- Venomous Seal
 									["questID"] = 49889,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
@@ -677,12 +677,12 @@ _.Zones =
 							}),
 							["questID"] = 49231,
 						}),	
-						n(127001, {	-- Gwugnug the Cursed		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(127001, {	-- Gwugnug the Cursed
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(162614),	-- Gwugnug's Cursed Wraps
 							}),
-							["questID"] = 50565,
-						}),	
+							["questID"] = 48638,
+						}),
 						n(124399, {	-- Infected Direhorn		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161218),	-- Direhorn Studded Belt

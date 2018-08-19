@@ -10,7 +10,7 @@ _.Zones =
 					["groups"] = {
 						ach(13027, {	-- Mushroom Harvest
 							n(143314, {	-- Bane of the Woods
-								--["questID"] = ,
+								-- ["questID"] = ,	-- didn't trigger quest completion when killed
 								["criteriaID"] = 2,	-- Bane of the Woods
 							}),
 						}),
@@ -498,11 +498,11 @@ _.Zones =
 							}),
 							["questID"] = 49410,
 						}),
-						n(128699, {	-- Bloodbulge		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(128699, {	-- Bloodbulge
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161104),	-- Blood Feast Gauntlets
 							}),
-							["questID"] = 49267,	
+							["questID"] = 49267,
 						}),
 						n(131718, { -- Bramblewing
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -511,7 +511,7 @@ _.Zones =
 							["questID"] = 50034,	
 						}),
 						n(133190, {	-- Daggerjaw
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160952),	-- Daggerjaw's Incisor
 							}),
 							["questID"] = 50269,
@@ -523,30 +523,30 @@ _.Zones =
 							}),
 							["questID"] = 51083,
 						}),	
-						n(134760, {	-- Darkspeaker Jo'la		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(134760, {	-- Darkspeaker Jo'la
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160958),	-- Darkspeaker Scepter
 							}),
 							["questID"] = 50693,
 						}),
 						n(133155, {	-- G'Naat
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161048),	-- Brutish Tidecaller Armwraps
 							}),
 							["questID"] = 50260,
-						}),	
+						}),
 						n(124185, {	-- Golrakahn		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161035),	-- Thundercrash Footguards
 							}),
 							["questID"] = 47792,
 						}),	
-						n(134738, {	-- Hakbi the Risen		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(134738, {	-- Hakbi the Risen
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160978),	-- Golden Tomb Defender
 							}),
 							["questID"] = 50677,
-						}),	
+						}),
 						--[[ May not have transitioned from Beta to Live
 						n(134637, {	-- Headhunter Lee'za [MissingL]
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
@@ -565,17 +565,17 @@ _.Zones =
 							["questID"] = 50159,	
 						}),	
 						n(131233, {	-- Lei-zhi
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161033),	-- Jolting Leap Legguards
 							}),
 							["questID"] = 49911,
-						}),	
-						n(134782, {	-- Murderbeak	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						}),
+						n(134782, {	-- Murderbeak
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161022),	-- Gusting Axebeaek Anklewraps
 							}),
 							["questID"] = 50281,
-						}),	
+						}),
 						n(136413, {	-- Syrawon the Dominus
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								sz(12944, 4),	-- Syrawon the Dominus
@@ -608,11 +608,11 @@ _.Zones =
 							["questID"] = 50847,	
 						}),	
 						n(122004, {	-- Umbra'jin
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161091),	-- Swift-Talon Striders
 							}),
 							["questID"] = 47567,
-						}),	
+						}),
 						n(134717, {	-- Umbra'rix [MissingL]
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
 						}),	
@@ -627,11 +627,11 @@ _.Zones =
 							["questID"] = 50508,
 						}),	
 						n(133842, {	-- Warcrawler Karkithiss
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161040),	-- Arid Dune Stompers
 							}),
-							["questID"] = 50438,	
-						}),	
+							["questID"] = 50438,
+						}),
 						n(131476, {	-- Zayoos
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								sz(12944, 5),	-- Zayoos
