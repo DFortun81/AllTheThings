@@ -2750,7 +2750,7 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 										right = GetProgressColorText(j.progress, j.total);
 									end
 								end
-							elseif j.itemID and j.itemID ~= itemID  then
+							elseif not j.itemID or (j.itemID and j.itemID ~= itemID) then
 								if j.collectible then
 									if j.collected or (j.trackable and j.saved) then
 										if GetDataMember("ShowCollectedItems") then
