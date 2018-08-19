@@ -132,7 +132,10 @@ _.Instances =
 							["crs"] = {
 								69465,	-- Jin'rokh the Breaker
 								68476,	-- Horridon
-								69134,	-- Council of Elders (Kazra'jin)
+								69131,	-- Frost King Malakk
+								69132,	-- High Priestess Mar'li
+								69134,	-- Kazra'jin
+								69078,	-- Sul the Sandrawler
 								67977,	-- Tortos
 								70212,	-- Megaera (Flaming Head)
 								69712,	-- Ji-Kun
@@ -140,7 +143,8 @@ _.Instances =
 								69017,	-- Primordius
 								69427,	-- Dark Animus
 								68078,	-- Iron Qon
-								68905,	-- Twin Consorts (Lu'lin)
+								68904,	-- Suen <Mistress of Anger>
+								68905,	-- Lu'lin <Mistress of Solitude>
 								68397,	-- Lei Shen
 							},
 							["description"] = "Don't be confused by the name, these are the rarest items in the zone and can drop from any of the bosses other than Ra-den.",
@@ -685,7 +689,10 @@ _.Instances =
 								["crs"] = {
 									69465,	-- Jin'rokh the Breaker
 									68476,	-- Horridon
-									69134,	-- Council of Elders (Kazra'jin)
+									69131,	-- Frost King Malakk
+									69132,	-- High Priestess Mar'li
+									69134,	-- Kazra'jin
+									69078,	-- Sul the Sandrawler
 									67977,	-- Tortos
 									70212,	-- Megaera (Flaming Head)
 									69712,	-- Ji-Kun
@@ -693,7 +700,8 @@ _.Instances =
 									69017,	-- Primordius
 									69427,	-- Dark Animus
 									68078,	-- Iron Qon
-									68905,	-- Twin Consorts (Lu'lin)
+									68904,	-- Suen <Mistress of Anger>
+									68905,	-- Lu'lin <Mistress of Solitude>
 									68397,	-- Lei Shen
 								},
 							}),
@@ -1514,7 +1522,10 @@ _.Instances =
 								["crs"] = {
 									69465,	-- Jin'rokh the Breaker
 									68476,	-- Horridon
-									69134,	-- Council of Elders (Kazra'jin)
+									69131,	-- Frost King Malakk
+									69132,	-- High Priestess Mar'li
+									69134,	-- Kazra'jin
+									69078,	-- Sul the Sandrawler
 									67977,	-- Tortos
 									70212,	-- Megaera (Flaming Head)
 									69712,	-- Ji-Kun
@@ -1522,7 +1533,8 @@ _.Instances =
 									69017,	-- Primordius
 									69427,	-- Dark Animus
 									68078,	-- Iron Qon
-									68905,	-- Twin Consorts (Lu'lin)
+									68904,	-- Suen <Mistress of Anger>
+									68905,	-- Lu'lin <Mistress of Solitude>
 									68397,	-- Lei Shen
 								},
 							}),
