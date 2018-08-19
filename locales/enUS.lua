@@ -1993,6 +1993,7 @@ AllTheThings.Locales.enUS = {
 		[181336] = "Flame of Orgrimmar",
 		[181337] = "Flame of Thunder Bluff",
 		[181748] = "Blood Crystal",
+		[181756] = "Battered Ancient Book",
 		[181889] = "Wanted Poster",
 		[182032] = "Galaen's Journal",
 		[182115] = "Wanted Poster",
