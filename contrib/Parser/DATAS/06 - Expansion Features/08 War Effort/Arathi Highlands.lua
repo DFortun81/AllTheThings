@@ -17,7 +17,7 @@ _.ExpansionFeatures =
 				n(-4, { -- Achievements
 				}),
 				n(-1, { -- Common Boss Drop
-					["groups"] = {
+					["groups"] = bubbleDown({["modID"] = 28}, {
 									-- ALLIANCE SET --
 						i(163339), -- 7th Legionnaire's Hood
 						i(163337), -- 7th Legionnaire's Amice
@@ -84,7 +84,7 @@ _.ExpansionFeatures =
 						i(163461), -- Honorbound Centurion's Greatbelt
 						i(163455), -- Honorbound Centurion's Legplates
 						i(163460), -- Honorbound Centurion's Greaves
-					},
+					}),
 					["crs"] = {
 						142709, -- Beastrider Kama
 						126427, -- Branchlord Aldrus
@@ -121,6 +121,7 @@ _.ExpansionFeatures =
 					},
 					["description"] = "These can drop off any rare or world boss in the zone.",
 				}),
+				--[[
 				n(-17, { -- Quests
 					q(53148, { -- Boulderfist Beatdown
 						currency(1560),
@@ -368,6 +369,7 @@ _.ExpansionFeatures =
 					qa(52847), -- Doom's Howl
 					qh(52848), -- The Lion's Roar
 				}),
+				--]]
 			},
 			["lvl"] = 120,	
 			["achievementID"] = 12874, -- An Eventful Battle
