@@ -22,7 +22,7 @@ _.Zones =
 									["sourceQuests"] =  { 47326 },    -- Mine Cart Ride
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(294317, {	-- Deadwood Chest	
+								o(294317, {	-- Deadwood Chest
 									["questID"] = 52994,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
@@ -450,12 +450,12 @@ i(155430),
 				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
-							n(135852, {	-- Ak'tar		
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							n(135852, {	-- Ak'tar
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161021),	-- Soaring Slateclaw Gloves
 								}),
-								-- ["questID"] = 	
-							}),	
+								["questID"] = 51058,
+							}),
 							n(130439, {	-- Ashmane
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161106),	-- Rabid Packleader Bracers
@@ -463,7 +463,7 @@ i(155430),
 								["questID"] = 47532,
 							}),	
 							n(128553, {	-- Azer'tor [MissingL]
-								-- ["questID"] = 	
+								["questID"] = 49252
 							}),	
 							n(128497, {	-- Bajiani the Slick		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -493,7 +493,7 @@ i(155430),
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 									i(162615),	-- Commodore Calhoun's Tricorne
 								}),
-								-- ["questID"] = 	
+								["questID"] = 50905,
 							}),	
 							n(136335, {	-- Enraged Krolusk
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -550,24 +550,24 @@ i(155430),
 								["coord"] = { 38.2, 41.3 },
 								["questID"] = 51424,
 							}),
-							n(128951, {	-- Nez'ara		
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							n(128951, {	-- Nez'ara
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161024),	-- Wrathful Sister's Cincture
 								}),
-								-- ["questID"] = 	
-							}),	
+								["questID"] = 50898,
+							}),
 							n(136340, {	-- Relic Hunter Hazaak		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(160956),	-- Hazaak's Windshorn Claws
 								}),
 								["questID"] = 51126,	
 							}),	
-							n(127776, {	-- Scaleclaw Broodmother		
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							n(127776, {	-- Scaleclaw Broodmother
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161039),	-- Sandclaw Handguards
 								}),
-								-- ["questID"] = 	
-							}),	
+								["questID"] = 48960,
+							}),
 							n(136336, {	-- Scorpox		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161030),	-- Vicious Scorpidsting Sandals
