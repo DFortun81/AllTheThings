@@ -2740,7 +2740,7 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 					for i,j in ipairs(cache.g) do
 						if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
 							local right = nil;
-							if j.total and j.total > 0 then
+							if j.total and (j.total > 1 or (j.total > 0 and not j.collectible)) then
 								if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
 									if j.itemID and j.itemID ~= itemID  then
 										if j.total > 1 or not j.collectible then
