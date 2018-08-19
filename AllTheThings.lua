@@ -6603,7 +6603,7 @@ local function RowOnEnter(self)
 					GameTooltipTextRight1:SetText(GetCollectionText(reference.collected));
 				elseif reference.trackable then
 					GameTooltipTextRight1:SetText(GetCompletionText(reference.saved));
-				else
+				elseif string.len(GameTooltipTextRight1:GetText() or "") < 1 then
 					GameTooltipTextRight1:SetText("---");
 				end
 				GameTooltipTextRight1:Show();

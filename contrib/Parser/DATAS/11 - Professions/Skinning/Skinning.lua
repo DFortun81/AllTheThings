@@ -224,8 +224,8 @@ profession(393, { -- Skinning
 		["groups"] = { i(130064) },	-- Deadeye Monocle
 		["requireSkill"] = 393
 	}),
+	--[==[--
 	filter(200, { -- Recipes
-		-- Legion
 		tier(7, {	-- Legion
 			recipe(194167),	-- Felhide [Rank 1]
 			recipe(194168),	-- Felhide [Rank 2]
@@ -245,16 +245,16 @@ profession(393, { -- Skinning
 			recipe(194170),	-- Unbroken Tooth
 		}),
 		tier(8, {	-- Battle For Azeroth
-			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
-			recipe(257152, { ["spellID"] = 257152, }),	-- Bone Gathering
-			recipe(257153, { ["spellID"] = 257153, }),	-- Bone Gathering
-			recipe(257154, { ["spellID"] = 257154, }),	-- Bone Gathering
-			recipe(257146, { ["spellID"] = 257146, }),	-- Leather Gathering
-			recipe(257147, { ["spellID"] = 257147, }),	-- Leather Gathering
-			recipe(257148, { ["spellID"] = 257148, }),	-- Leather Gathering
-			recipe(257149, { ["spellID"] = 257149, }),	-- Scale Gathering
-			recipe(257150, { ["spellID"] = 257150, }),	-- Scale Gathering
-			recipe(257151, { ["spellID"] = 257151, }),	-- Scale Gathering
+			recipe(257152),	-- Bone Gathering [Rank 1]
+			recipe(257153),	-- Bone Gathering [Rank 2]
+			recipe(257154),	-- Bone Gathering [Rank 3]
+			recipe(257146),	-- Leather Gathering [Rank 1]
+			recipe(257147),	-- Leather Gathering [Rank 2]
+			recipe(257148),	-- Leather Gathering [Rank 3]
+			recipe(257149),	-- Scale Gathering [Rank 1]
+			recipe(257150),	-- Scale Gathering [Rank 2]
+			recipe(257151),	-- Scale Gathering [Rank 3]
 		}),
 	}),
+	--]==]--
 });
