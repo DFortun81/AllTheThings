@@ -1382,7 +1382,7 @@ local function GetGearSetCache()
 	return db;
 end
 local function GetProgressText(data)
-	if data.total and data.total > 0 then
+	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
 		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.trackable then
 		return GetCompletionIcon(data.saved);
@@ -1423,8 +1423,13 @@ local function GetRelativeDifficulty(group, difficultyID)
 					end
 				end
 			end
+			return false;
 		end
-		if group.parent then return GetRelativeDifficulty(group.parent, difficultyID); end
+		if group.parent then
+			return GetRelativeDifficulty(group.parent, difficultyID);
+		else
+			return true;
+		end
 	end
 end
 local function GetRelativeField(group, field, value)
@@ -2722,120 +2727,103 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 			end
 		end
 		
-		local itemID;
-		local link = select(2, self:GetItem());
-		if link then itemID = (tonumber(select(2, strsplit(":", link)) or "0") or 0); end
-		
-		-- Merge the Search Results into a compact list.
-		-- TODO: Potentially optimize this?
-		group = MergeSearchResults(group, itemID);
-		if group then
-			-- If this is a Merged group, then we need to recalculate totals since it isn't directly from the DB
-			if group.merged then RecalculateGroupTotals(group); end
+		if group and #group > 0 then
+			local itemID;
+			local link = select(2, self:GetItem());
+			if link then itemID = (tonumber(select(2, strsplit(":", link)) or "0") or 0); end
 			
-			-- If the group has relative contents, we should show that information
-			if group.g and not group.hideText and GetDataMember("ShowContents") 
-				and (app.RecursiveClassAndRaceFilter(group) or GetDataMember("IgnoreAllFilters")) then
-				local parents = {};
-				local items = {};
-				for i,j in ipairs(group.g) do
-					if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
-						if not contains(parents, j.parent) then tinsert(parents, j.parent); end
-						
-						local right = nil;
-						if j.total and j.total > 0 then
-							if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
-								right = GetProgressColorText(j.progress, j.total);
-							end
-						elseif j.collectible then
-							if j.collected or (j.trackable and j.saved) then
-								if GetDataMember("ShowCollectedItems") then
-									right = L("COLLECTED_ICON");
+			local cache = MergeSearchResults(group, itemID);
+			if cache then
+				RecalculateGroupTotals(cache);
+				if cache.g and GetDataMember("ShowContents") then
+					local items = {};
+					for i,j in ipairs(cache.g) do
+						if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
+							local right = nil;
+							if j.total and j.total > 0 then
+								if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
+									if j.itemID and j.itemID ~= itemID  then
+										if j.total > 1 or not j.collectible then
+											right = GetProgressColorText(j.progress, j.total);
+										end
+									else
+										right = GetProgressColorText(j.progress, j.total);
+									end
 								end
-							else
-								right = L("NOT_COLLECTED_ICON");
-							end
-						elseif j.trackable then
-							if j.saved then
-								if GetDataMember("ShowCollectedItems") then
-									right = L("COMPLETE_ICON");
+							elseif j.itemID and j.itemID ~= itemID  then
+								if j.collectible then
+									if j.collected or (j.trackable and j.saved) then
+										if GetDataMember("ShowCollectedItems") then
+											right = L("COLLECTED_ICON");
+										end
+									else
+										right = L("NOT_COLLECTED_ICON");
+									end
+								elseif j.trackable then
+									if j.saved then
+										if GetDataMember("ShowCollectedItems") then
+											right = L("COMPLETE_ICON");
+										end
+									elseif app.ShowIncompleteQuests(j) then
+										right = L("NOT_COLLECTED_ICON");
+									end
+								elseif j.visible then
+									right = "---";
 								end
-							elseif app.ShowIncompleteQuests(j) then
-								right = L("NOT_COLLECTED_ICON");
 							end
-						elseif j.visible then
-							right = "---";
+							
+							-- If there's progress to display, then let's summarize a bit better.
+							if right then
+								-- If this group has a droprate, add it to the display.
+								if j.dr then right = "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. right; end
+								
+								-- If this group has specialization requirements, let's attempt to show the specialization icons.
+								local specs = GetDataMember("ShowLootSpecializationRequirements") and j.specs;
+								if specs and #specs > 0 then
+									table.sort(specs);
+									for i,spec in ipairs(specs) do
+										local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+										if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+									end
+								end
+								
+								-- Insert into the display.
+								tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), right });
+							end
 						end
-						
-						-- If there's progress to display, then let's summarize a bit better.
-						if right then
-							-- If this group has a droprate, add it to the display.
-							if j.dr then right = "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. right; end
-							
-							-- If this group has specialization requirements, let's attempt to show the specialization icons.
-							local specs = GetDataMember("ShowLootSpecializationRequirements") and j.specs;
-							if specs and #specs > 0 then
-								table.sort(specs);
-								for i,spec in ipairs(specs) do
-									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
-								end
+					end
+				
+					if #items > 0 then
+						self:AddLine("Contains:");
+						if #items < 25 then
+							for i,pair in ipairs(items) do
+								self:AddDoubleLine(pair[1], pair[2]);
 							end
-							
-							-- Insert into the display.
-							tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), right });
+						else
+							for i=1,math.min(25, #items) do
+								self:AddDoubleLine(items[i][1], items[i][2]);
+							end
+							local more = #items - 25;
+							if more > 0 then self:AddLine("And " .. more .. " more..."); end
 						end
 					end
 				end
 				
-				if #items > 0 then
-					self:AddLine("Contains:");
-					if #items < 5 then
-						for i,pair in ipairs(items) do
-							self:AddDoubleLine(pair[1], pair[2]);
+				-- If the user has Show Collection Progress turned on.
+				if self:NumLines() > 0 and GetDataMember("ShowProgress") then
+					local rightSide = _G[self:GetName() .. "TextRight1"];
+					if rightSide then
+						if cache.total and (cache.total > 1 or (cache.total > 0 and not cache.collectible)) then
+							rightSide:SetText(GetProgressColorText(cache.progress, cache.total));
+						elseif cache.collectible then
+							rightSide:SetText(GetCollectionText(cache.collected));
+						elseif cache.trackable then
+							rightSide:SetText(GetCompletionText(cache.saved));
+						else
+							rightSide:SetText("---");
 						end
-					elseif #parents < 2 then
-						for i=1,math.min(5, #items) do
-							self:AddDoubleLine(items[i][1], items[i][2]);
-						end
-						local more = #items - 5;
-						if more > 0 then self:AddLine("And " .. more .. " more..."); end
-					else
-						for i,j in ipairs(parents) do
-							local title = "  ";
-							if j.parent then
-								if j.parent.parent then
-									if j.creatureID then
-										title = title .. (j.parent.parent.icon and ("|T" .. j.parent.parent.icon .. ":0|t") or "") .. (j.parent.parent.text or RETRIEVING_DATA) .. " -> " .. (j.text or RETRIEVING_DATA) .. " (" .. (j.parent.text or RETRIEVING_DATA) .. ")";
-									else
-										title = title .. (j.parent.parent.icon and ("|T" .. j.parent.parent.icon .. ":0|t") or "") .. (j.parent.parent.text or RETRIEVING_DATA) .. " -> " .. (j.parent.text or RETRIEVING_DATA);
-									end
-								else
-									title = title .. (j.parent.icon and ("|T" .. j.parent.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA) .. " (" .. (j.parent.text or RETRIEVING_DATA) .. ")";
-								end
-							else
-								title = title .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA);
-							end
-							self:AddDoubleLine(title, GetProgressColorText(j.progress, j.total));
-						end
+						rightSide:Show();
 					end
-				end
-			end
-			
-			-- If the user has Show Collection Progress turned on.
-			if self:NumLines() > 0 and GetDataMember("ShowProgress") then
-				local rightSide = _G[self:GetName() .. "TextRight1"];
-				if rightSide then
-					if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
-						rightSide:SetText(GetProgressColorText(group.progress, group.total));
-					elseif group.collectible then
-						rightSide:SetText(GetCollectionText(group.collected));
-					elseif group.trackable then
-						rightSide:SetText(GetCompletionText(group.saved));
-					else
-						rightSide:SetText("---");
-					end
-					rightSide:Show();
 				end
 			end
 		end
@@ -6596,29 +6584,27 @@ local function RowOnEnter(self)
 		if GetDataMember("ShowProgress") then
 			local style = GameTooltip:NumLines() < 1;
 			if style then
-				if not reference.total or reference.total < 1 then
-					if reference.collectible then
-						GameTooltip:AddDoubleLine(self.Label:GetText(), GetCollectionText(reference.collected));
-					elseif reference.trackable then
-						GameTooltip:AddDoubleLine(self.Label:GetText(), "---");
-					else
-						GameTooltip:AddLine(self.Label:GetText());
-					end
-				else
+				if reference.total and (reference.total > 1 or (reference.total > 0 and not reference.collectible)) then
 					GameTooltip:AddDoubleLine(self.Label:GetText(), GetProgressColorText(reference.progress, reference.total));
+				elseif reference.collectible then
+					GameTooltip:AddDoubleLine(self.Label:GetText(), GetCollectionText(reference.collected));
+				elseif reference.trackable then
+					GameTooltip:AddDoubleLine(self.Label:GetText(), GetCompletionText(reference.saved));
+				else
+					GameTooltip:AddDoubleLine(self.Label:GetText(), "---");
 				end
 				if reference.trackable then
 					GameTooltip:AddDoubleLine("Quest Progress", GetCompletionText(reference.saved));
 				end
 			else
-				if not reference.total or reference.total < 1 then
-					if reference.collectible then
-						GameTooltipTextRight1:SetText(GetCollectionText(reference.collected));
-					elseif reference.trackable then
-						GameTooltipTextRight1:SetText(GetCompletionText(reference.saved));
-					end
-				else
+				if reference.total and (reference.total > 1 or (reference.total > 0 and not reference.collectible)) then
 					GameTooltipTextRight1:SetText(GetProgressColorText(reference.progress, reference.total));
+				elseif reference.collectible then
+					GameTooltipTextRight1:SetText(GetCollectionText(reference.collected));
+				elseif reference.trackable then
+					GameTooltipTextRight1:SetText(GetCompletionText(reference.saved));
+				else
+					GameTooltipTextRight1:SetText("---");
 				end
 				GameTooltipTextRight1:Show();
 			end
