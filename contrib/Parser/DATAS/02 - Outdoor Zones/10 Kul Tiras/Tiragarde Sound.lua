@@ -39,11 +39,11 @@ _.Zones =
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							i(162580, {	-- Fading Treasure Map
-								["questID"] = 52833,
+								["questID"] = 52844,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							i(162581, {	-- Yellowed Treasure Map
-								["questID"] = 52836,
+								["questID"] = 52859,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							i(162584, {	-- Singed Treasure Map

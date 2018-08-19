@@ -10,8 +10,16 @@ _.Zones =
 					["groups"] = {
 						ach(12849, {	-- Treasures of Vol'dun
 							["groups"] = {
-								o(280951, {	-- Ashvane Spoils	
+								o(280951, {	-- Ashvane Spoils
+									["groups"] = {
+										n(132662,  { -- Mine Cart
+											["questID"] = 47326,
+											["coords"] = { 46.59, 88.00 },
+											["description"] = "Hop into the cart here to arrive at the end for the chest",
+										}),
+									},
 									["questID"] = 50237,
+									["sourceQuests"] =  { 47326 },    -- Mine Cart Ride
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
 								o(294317, {	-- Deadwood Chest	
