@@ -8,6 +8,16 @@ _.Zones =
 			["groups"] = {
 				n(-4, {	-- Achievements
 					["groups"] = {
+						ach(13027, {	-- Mushroom Harvest
+							n(143316, {	-- Skullcap
+								--["questID"] = ,
+								["criteriaID"] = 1,	-- Skullcap
+							}),
+							n(143311, {	-- Toadcruel
+								["questID"] = 50893,
+								["criteriaID"] = 4,	-- Toadcruel
+							}),
+						}),
 						ach(12771, {	-- Treasures of Nazmir
 							["groups"] = {
 								o(279260, {	-- Cleverly Disguised Chest	
@@ -30,7 +40,7 @@ _.Zones =
 									["questID"] = 49484,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(280522, {	-- Partially-Digested Treasure	
+								o(280522, {	-- Partially-Digested Treasure
 									["questID"] = 50061,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
@@ -643,8 +653,11 @@ _.Zones =
 							}),
 							["questID"] = 48057,
 						}),
-						n(125232, {	-- Captain Mu'kala [MissingL]
-							["questID"] = 50361,
+						n(125232, {	-- Captain Mu'kala
+							["g"] = {
+								i(161115),	-- Cursed Captain's Charm
+							},
+							["questID"] = 48057,
 						}),	
 						n(126187, {	-- Corpse Bringer Yal'kar		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -652,11 +665,11 @@ _.Zones =
 							}),
 							["questID"] = 48462,
 						}),	
-						n(121242, {	-- Glompmaw		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(121242, {	-- Glompmaw
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160985),	-- Glompmaw's Ring
 							}),
-							["questID"] = 50307,
+							["questID"] = 50361,
 						}),	
 						n(128426, {	-- Gutrip		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -700,12 +713,12 @@ _.Zones =
 							}),
 							["questID"] = 50355,	
 						}),	
-						n(133539, {	-- Lo'kuno		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(133539, {	-- Lo'kuno
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161111),	-- Marshqueen's Crushers
 							}),
-							["questID"] = 50569,	
-						}),	
+							["questID"] = 50355,
+						}),
 						n(134295, {	-- Lost Scroll		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161045, {	-- Scrollbound Hurricane Slippers
@@ -741,6 +754,12 @@ _.Zones =
 								i(160973),	-- Accursed Tuskwand
 							}),
 							["questID"] = 50467,
+						}),
+						n(124375, {	-- Overstuffed Saurolisk
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(160987),	-- Ring of Incomplete Digestion
+							}),
+							["questID"] = 47827,
 						}),
 						n(128974, {	-- Queen Tzxi'kik
 							["questID"] = 49312,

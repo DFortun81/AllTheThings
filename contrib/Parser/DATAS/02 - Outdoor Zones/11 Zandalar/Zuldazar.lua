@@ -8,6 +8,12 @@ _.Zones =
 			["groups"] = {
 				n(-4, {	-- Achievements
 					["groups"] = {
+						ach(13027, {	-- Mushroom Harvest
+							n(143314, {	-- Bane of the Woods
+								--["questID"] = ,
+								["criteriaID"] = 2,	-- Bane of the Woods
+							}),
+						}),
 						ach(12851, {	-- Treasures of Zuldazar
 							["groups"] = {
 								o(288596, {	-- Cache of Secrets	
