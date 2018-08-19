@@ -14,6 +14,8 @@ _.Instances =
 							i(39427),	-- Omen of Ruin
 							i(39468),	-- The Stray
 							i(39473),	-- Contortion
+							i(39472),	-- Chain of Latent Energies
+							i(39470),	-- Medallion of the Disgraced
 						}),
 						n(-368, {	-- The Arachnid Quarter
 							cr(15956, e(1601, {	-- Anub'Rehkan
@@ -520,6 +522,7 @@ _.Instances =
 							i(40408),	-- Haunting Call
 							i(40407),	-- Silent Crusader
 							i(40406),	-- Inevitable Defeat
+							i(40412),	-- Ousted Bead Necklace
 						}),
 						n(-368, { 	-- The Arachnid Quarter
 							cr(15956, e(1601, {	-- Anub'Rekhan
