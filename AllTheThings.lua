@@ -4275,6 +4275,8 @@ app.BaseMap = {
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
 			return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or "Interface/ICONS/INV_Misc_Map09";
+		elseif key == "lvl" then
+			return select(1, C_Map.GetMapLevels(t.mapID));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -6642,7 +6644,8 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine(title, 1, 1, 1);
 			end
 		end
-		if reference.lvl then GameTooltip:AddDoubleLine(L("REQUIRES_LEVEL"), tostring(reference.lvl)); end
+		local lvl = reference.lvl or 0;
+		if lvl > 1 then GameTooltip:AddDoubleLine(L("REQUIRES_LEVEL"), tostring(lvl)); end
 		--if reference.b then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
 		if reference.requireSkill then
 			GameTooltip:AddDoubleLine(L("REQUIRES"), tostring(GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0)));
