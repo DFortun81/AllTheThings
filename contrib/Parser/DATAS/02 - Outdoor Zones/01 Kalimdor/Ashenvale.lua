@@ -6,6 +6,17 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(63, {		-- Ashenvale
 			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(28),	-- Astranaar
+					fp(58),	-- Zoram'gar Outpost
+					fp(61),	-- Splintertree Post
+					fp(167),	-- Forest Song
+					fp(338),	-- Blackfathom Camp
+					fp(350),	-- Hellscream's Watch
+					fp(351),	-- Stardust Spire
+					fp(354),	-- The Mor'Shan Ramparts
+					fp(356),	-- Silverwind Refuge
+				}),
 				n(-25, { 	-- Pet Battle
 					p(478), 	-- Forest Moth
 					p(495), 	-- Frog
