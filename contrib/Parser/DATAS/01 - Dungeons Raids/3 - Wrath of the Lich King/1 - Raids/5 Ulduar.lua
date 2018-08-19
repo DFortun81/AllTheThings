@@ -8,6 +8,38 @@ _.Instances =
 		["groups"] = {
 			inst(759, { 	-- Ulduar
 				["groups"] = {
+					i(45038, {	-- Fragment of Val'anyr
+						["classes"] = { 2, 5, 7, 10, 11 },
+						["crs"] = {
+							33113, -- Flame Leviathan
+							33118, -- Ignis the Furnace Master
+							33293, -- XT-002 Deconstructor
+							32871, -- Algalon the Observer
+							32927, -- Runemaster Molgeim
+							32857, -- Stormcaller Brundir
+							32867, -- Steelbreaker
+							32930, -- Kologarn
+							33515, -- Auriaya
+							32845, -- Hodir
+							32865, -- Thorim
+							32906, -- Freya
+							33350, -- Mimiron
+							33271, -- General Vezax
+							33288, -- Yogg-Saron
+						},
+						["groups"] = {
+							i(45039, {	-- Shattered Fragments of Val'anyr
+								q(13622),	-- Ancient History
+								{
+									["questID"] = 13629,	-- Val'anyr, Hammer of Ancient Kings
+									["sourceQuest"] = 13622,	-- Ancient History
+									["groups"] = {
+										i(46017) 	-- Val'anyr, Hammer of Ancient Kings
+									},
+								},
+							})
+						},
+					}),
 					d(14, {	-- Normal
 						n(0, {		-- Zone Drop
 							["groups"] = {
@@ -87,14 +119,21 @@ _.Instances =
 								33113, -- Flame Leviathan
 								33118, -- Ignis the Furnace Master
 								33293, -- XT-002 Deconstructor
+								32871, -- Algalon the Observer
 								32927, -- Runemaster Molgeim
 								32857, -- Stormcaller Brundir
 								32867, -- Steelbreaker
+								32930, -- Kologarn
 								33515, -- Auriaya
+								32845, -- Hodir
+								32865, -- Thorim
+								32906, -- Freya
+								33350, -- Mimiron
 								33271, -- General Vezax
 								33288, -- Yogg-Saron
 							},
 							["groups"] = {
+								i(45087),	-- Runed Orb
 								i(45100), -- Pattern: Belt of Arctic Life
 								i(45094), -- Pattern: Belt of Dragons
 								i(45101), -- Pattern: Boots of Wintry Endurance
@@ -119,14 +158,6 @@ _.Instances =
 								i(45135),	-- Boots of Fiery Resolution
 								i(45297),	-- Shimmering Seal
 							}),
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
-							i(45087),	-- Runed Orb
 							i(45282),	-- Ironsoul
 							i(45287),	-- Firesoul
 							i(45284),	-- Kinetic Ripper
@@ -154,15 +185,7 @@ _.Instances =
 							i(46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
 						cr(33118, e(1638, {	-- Ignis the Furnace Master
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(142086),	-- Red-Hot Coal (PET!)
-							i( 45087),	-- Runed Orb
 							i( 45171),	-- Intensity
 							i( 45311),	-- Relentless Edge
 							i( 45165),	-- Worldcarver
@@ -191,15 +214,7 @@ _.Instances =
 							i( 46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
 						cr(33186, e(1639, {	-- Razorscale
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(142087),	-- Ironbound Collar (PET!)
-							i( 45087),	-- Runed Orb
 							i( 45147),	-- Guiding Star
 							i( 45298),	-- Razorscale Talon
 							i( 45142),	-- Remorse
@@ -237,14 +252,6 @@ _.Instances =
 								i(45444),	-- Gloves of the Steady Hand
 								i(45871),	-- Seal of Ulduar
 							}),
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
-							i(45087),	-- Runed Orb
 							i(45256),	-- Twisted Visage
 							i(45246),	-- Golem-Shard Sticker
 							i(45685),	-- Plasma Foil
@@ -288,14 +295,6 @@ _.Instances =
 									i(45614),	-- Starshine Circle
 								}),
 							}),
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
-							i(45087),	-- Runed Orb
 							i(45613),	-- Dreambinder
 							i(45612),	-- Constellus
 							i(45607),	-- Fang of Oblivion
@@ -342,14 +341,6 @@ _.Instances =
 								i(45244),	-- Greaves of Swift Vengeance
 								i(45456),	-- Loop of the Agile
 							}),
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
-							i( 45087),	-- Runed Orb
 							i(142088),	-- Stormforged Rune (PET!)
 							i( 45234),	-- Rapture
 							i( 45233),	-- Stormrune Edge
@@ -380,14 +371,6 @@ _.Instances =
 							i( 46348),	-- Formula: Enchant Weapon - Blood Draining
 						})),
 						cr(32930, e(1642, {	-- Kologarn
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
-							i(45087),	-- Runed Orb
 							i(45695),	-- Spire of Withering Dreams
 							i(45266),	-- Malice
 							i(45700),	-- Stoneguard
@@ -414,15 +397,7 @@ _.Instances =
 							i(45263),	-- Wrathstone
 						})),
 						cr(33515, e(1643, {	-- Auriaya
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(142089),	-- Glittering Ball of Yarn (PET!)
-							i( 45087),	-- Runed Orb
 							i( 45437),	-- Runescribed Blade
 							i( 45315),	-- Stonerender
 							i( 45713),	-- Nurturing Touch
@@ -489,13 +464,6 @@ _.Instances =
 								i(46130),	-- Conqueror's Kirin Tor Tunic
 								i(46123),	-- Conqueror's Terrorblade Breastplate
 							}),
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(138800),	-- Illusion: Blade Ward
 							i( 45650, {	-- Leggings of the Wayward Conqueror
 								i(45371),	-- Valorous Aegis Greaves
@@ -523,7 +491,6 @@ _.Instances =
 								i(45399),	-- Valorous Terrorblade Legplates
 							}),
 							i(142090),	-- Ominous Pile of Snow (PET!)
-							i( 45087),	-- Runed Orb
 							i( 45458),	-- Stormedge
 							i( 45872),	-- Avalanche
 							i( 45450),	-- Northern Barrier
@@ -574,15 +541,7 @@ _.Instances =
 								i(46129),	-- Conqueror's Kirin Tor Hood
 								i(46125),	-- Conqueror's Terrorblade Helmet
 							}),
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(138800),	-- Illusion: Blade Ward
-							i( 45087),	-- Runed Orb
 							i( 45659, {	-- Spaulders of the Wayward Conqueror
 								i(45385),	-- Valorous Aegis Shoulderguards
 								i(45380),	-- Valorous Aegis Shoulderplates
@@ -634,13 +593,6 @@ _.Instances =
 								i(45946),	-- Fire Orchid Signet
 							}),
 							i(142091),	-- Blessed Seed (PET!)
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i( 45644, {	-- Gloves of the Wayward Conqueror
 								i(45376),	-- Valorous Aegis Gauntlets
 								i(45370),	-- Valorous Aegis Gloves
@@ -692,7 +644,6 @@ _.Instances =
 								i(46133),	-- Conqueror's Kirin Tor Leggings
 								i(46126),	-- Conqueror's Terrorblade Legplates
 							}),
-							i( 45087),	-- Runed Orb
 							i( 45479),	-- The Lifebinder
 							i( 45934),	-- Unraveling Reach
 							i( 45935),	-- Ironbark Faceguard
@@ -717,13 +668,6 @@ _.Instances =
 								i(45988),	-- Greaves of the Iron Army
 								i(45989),	-- Tempered Mercury Greaves
 								i(45495),	-- Conductive Seal
-							}),
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
 							i( 45641, {	-- Gauntlets of the Wayward Conqueror
 								i(46163),	-- 
@@ -777,7 +721,6 @@ _.Instances =
 							}),
 							i(138800),	-- Illusion: Blade Ward
 							i(142092),	-- Overcomplicated Controller (PET!)
-							i( 45087),	-- Runed Orb
 							i( 45489),	-- Insanity's Grip
 							i( 45972),	-- Pulse Baton
 							i( 45492),	-- Malleable Steelweave Mantle
@@ -802,14 +745,7 @@ _.Instances =
 								i(46034),	-- Leggings of Profound Darkness
 								i(45518),	-- Flare of the Heavens
 							}),
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
-							i(45087),	-- Runed Orb
+							
 							i(45996),	-- Hoperender
 							i(45498),	-- Lotrafen, Spear of the Damned
 							i(46011),	-- Shadowbite
@@ -838,7 +774,8 @@ _.Instances =
 						})),
 						cr(33288, e(1649, {	-- Yogg-Saron
 							ach(12388, {	-- Alone in the Darkness
-								i(45693)	-- Mimiron's Head (MOUNT!)
+								i(45693),	-- Mimiron's Head (MOUNT!)
+								i(46312),	-- Vanquished Clutches of Yogg-Saron
 							}),	
 							ach(12387, {	-- One Light in the Darkness
 								i(45533),	-- Dark Edge of Depravity
@@ -847,7 +784,10 @@ _.Instances =
 								i(46068),	-- Amice of Inconceivable Horror
 								i(46095),	-- Soul-Devouring Cinch
 								i(45536),	-- Legguards of Cunning Deception
-								i(45537),	-- 
+								i(45537),	-- Treads of the False Oracle
+								i(45534),	-- Seal of the Betrayed King
+								i(46096),	-- Signet of Soft Lament
+								i(45535),	-- Show of Faith
 							}),
 							i( 45635, {	-- Chestguard of the Wayward Conqueror
 								i(45375),	-- Valorous Aegis Battleplate
@@ -874,14 +814,6 @@ _.Instances =
 								i(45368),	-- Valorous Kirin Tor Tunic
 								i(45396),	-- Valorous Terrorblade Robe
 							}),
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
-							i(138801),	-- Illusion: Blood Draining
 							i( 45656, {	-- Mantle of the Wayward Conqueror
 								i(46177),	-- Conqueror's Aegis Shoulderguards
 								i(46152),	-- Conqueror's Aegis Shoulderplates
@@ -907,7 +839,8 @@ _.Instances =
 								i(46134),	-- Conqueror's Kirin Tor Shoulderpads
 								i(46127),	-- Conqueror's Terrorblade Pauldrons
 							}),
-							i( 45087),	-- Runed Orb
+							i( 46348),	-- Formula: Enchant Weapon - Blood Draining
+							i(138801),	-- Illusion: Blood Draining
 							i(142093),	-- Wriggling Darkness (PET!)
 							i( 46016),	-- Abaddon
 							i( 46025),	-- Devotion
@@ -925,23 +858,14 @@ _.Instances =
 							i( 45531),	-- Chestguard of the Fallen God
 							i( 46019),	-- Leggings of the Insatiable
 							i( 46030),	-- Treads of the Dragon Council
-							i( 46348),	-- Formula: Enchant Weapon - Blood Draining
+							i( 45525),	-- Godbane Signet
+							i( 46021),	-- Royal Seal of King Llane
+							i( 45530),	-- Sanity's Bond
+							i( 45522),	-- Blood of the Old God
 						})),
 					}),
 					d(33, {	-- Timewalking
 						n(0, {		-- Zone Drop
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-									i(45039, {	-- Shattered Fragments of Val'anyr
-										q(13622, {	-- Ancient History
-											q(13629, {	-- Val'anyr, Hammer of Ancient Kings
-												i(46017) 	-- Val'anyr, Hammer of Ancient Kings
-											})
-										})
-									})
-								},
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(156462),	-- Drape of the Spellweaver
 							-- i(156468),	-- Cloak of the Dormant Blaze	(no equivalent in TW, 'Retrieving Data' on possible item, no data on WoWHead)
 							-- i(156465),	-- Iceshear Mantle	(no equivalent in TW, 'Retrieving Data' on possible item, no data on WoWHead)
@@ -962,14 +886,6 @@ _.Instances =
 							i(156257),	-- Daschal's Bite
 						}),
 						cr(33113, e(1637, {	-- Flame Leviathan
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
-							i( 45087),	-- Runed Orb
 							i(156012),	-- Ironsoul
 							i(156017),	-- Firesoul
 							i(155933),	-- Golden Saronite Dragon
@@ -997,15 +913,7 @@ _.Instances =
 							i(156016),	-- Pyrite Infuser
 						})),
 						cr(33118, e(1638, {	-- Ignis the Furnace Master
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(142086),	-- Red-Hot Coal (PET!)
-							i( 45087),	-- Runed Orb
 							i(155961),	-- Intensity
 							i(156039),	-- Relentless Edge
 							i(155956),	-- Worldcarver
@@ -1030,15 +938,7 @@ _.Instances =
 							i(155952),	-- Heart of Iron
 						})),
 						cr(33186, e(1639, {	-- Razorscale
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(142087),	-- Ironbound Collar (PET!)
-							i( 45087),	-- Runed Orb
 							i(155946),	-- Guiding Star
 							i(156026),	-- Razorscale Talon
 							i(155943),	-- Remorse
@@ -1063,14 +963,6 @@ _.Instances =
 							i(155947),	-- Living Flame
 						})),
 						cr(33293, e(1640, {	-- XT-002 Deconstructor
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
-							i( 45087),	-- Runed Orb
 							i(156290),	-- Aesir's Edge
 							i(155993),	-- Twisted Visage
 							i(155985),	-- Golem-Shard Sticker
@@ -1103,14 +995,6 @@ _.Instances =
 					  --cr(32871, e(1650, {	-- Algalon the Observer
 					  --})),
 						cr(32867, e(1641, {	-- The Assembly of Iron
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
-							i( 45087),	-- Runed Orb
 							i(142088),	-- Stormforged Rune (PET!)
 							i(155973),	-- Rapture
 							i(155972),	-- Stormrune Edge
@@ -1143,14 +1027,6 @@ _.Instances =
 							i(155971),	-- Runed Ironhide Boots
 						})),
 						cr(32930, e(1642, {	-- Kologarn
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
-							i( 45087),	-- Runed Orb
 							i(156269),	-- Spire of Withering Dreams
 							i(156003),	-- Malice
 							i(156274),	-- Stoneguard
@@ -1173,15 +1049,7 @@ _.Instances =
 							i(156000),	-- Wrathstone
 						})),
 						cr(33515, e(1643, {	-- Auriaya
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(142089),	-- Glittering Ball of Yarn (PET!)
-							i( 45087),	-- Runed Orb
 							i(156159),	-- Runescribed Blade
 							i(156043),	-- Stonerender
 							i(156284),	-- Nurturing Touch
@@ -1206,16 +1074,8 @@ _.Instances =
 							i(156288),	-- Elemental Focus Stone
 						})),
 						cr(32845, e(1644, {	-- Hodir
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(138800),	-- Illusion: Blade Ward
 							i(142090),	-- Ominous Pile of Snow
-							i( 45087),	-- Runed Orb
 							i(156299),	-- Icecore Staff
 							i(156179),	-- Staff of Endless Winter
 							i(156180),	-- Stormedge
@@ -1260,15 +1120,7 @@ _.Instances =
 							i(156132),	-- Valorous Worldbreaker Kilt
 						})),
 						cr(32865, e(1645, {	-- Thorim
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(138800),	-- Illusion: Blade Ward
-							i( 45087),	-- Runed Orb
 							i(156309),	-- Combatant's Bootblade
 							i(156302),	-- Legacy of Thunder
 							i(156185),	-- Vulmir, the Northern Tempest
@@ -1314,15 +1166,7 @@ _.Instances =
 						})),
 						cr(32906, e(1646, {	-- Freya
 							i(142091),	-- Blessed Seed
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(138800),	-- Illusion: Blade Ward
-							i( 45087),	-- Runed Orb
 							i(156613),	-- Dreambinder
 							i(156196),	-- The Lifebinder
 							i(156312),	-- Unraveling Reach
@@ -1366,16 +1210,8 @@ _.Instances =
 							i(156200),	-- Boots of the Servant
 						})),
 						cr(33350, e(1647, {	-- Mimiron
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
 							i(138800),	-- Illusion: Blade Ward
 							i(142092),	-- Overcomplicated Controller
-							i( 45087),	-- Runed Orb
 							i(156211),	-- Delirium's Touch
 							i(156329),	-- Fusion Blade
 							i(156206),	-- Insanity's Grip
@@ -1422,14 +1258,6 @@ _.Instances =
 							i(156207),	-- Pandora's Plea
 						})),
 						cr(33271, e(1648, {	-- General Vezax
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
-							}),
-							i( 45087),	-- Runed Orb
 							i(156331),	-- Hoperender
 							i(156215),	-- Lotrafen, Spear of the Damned
 							i(156353),	-- Tortured Earth
@@ -1461,16 +1289,8 @@ _.Instances =
 						cr(33288, e(1649, {	-- Yogg-Saron
 							ach(12388, {	-- Alone in the Darkness
 								i(45693)	-- Mimiron's Head (MOUNT!)
-							}),	
-							i(45038, {	-- Fragment of Val'anyr
-								["groups"] = {
-								},
-								
-								["questID"] = 13629, -- Fragment of Val'anyr
-								["classes"] = { 2, 5, 7, 10, 11 }
 							}),
 							i(138801),	-- Illusion: Blood Draining
-							i( 45087),	-- Runed Orb
 							i(142093),	-- Wriggling Darkness (PET!)
 							i(156341),	-- Abaddon
 							i(156243),	-- Dark Edge of Depravity
