@@ -7710,6 +7710,23 @@ app:GetWindow("Debugger", UIParent, function(self)
 				self.rawData = app.GetDataMember("Debugger", {});
 				self.data.g = self:CreateObject(self.rawData);
 				self:Update();
+			elseif e == "ZONE_CHANGED_NEW_AREA" or e == "NEW_WMO_CHUNK" then
+				-- Bubble Up the Maps
+				local mapInfo, info;
+				local mapID = app.GetCurrentMapID();
+				if mapID then
+					repeat
+						mapInfo = C_Map.GetMapInfo(mapID);
+						if mapInfo then
+							info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
+							mapID = mapInfo.parentMapID
+						end
+					until not mapInfo or not mapID;
+					
+					self:MergeObject(self.data.g, self:CreateObject(info));
+					self:MergeObject(self.rawData, info);
+					self:Update();
+				end
 			elseif e == "TRADE_SKILL_LIST_UPDATE" then
 				local tradeSkillID = AllTheThings.GetTradeSkillLine();
 				local spellRecipeInfo = {};
@@ -7850,6 +7867,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self:RegisterEvent("QUEST_DETAIL");
 		self:RegisterEvent("QUEST_LOOT_RECEIVED");
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
+		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+		self:RegisterEvent("NEW_WMO_CHUNK");
 		--self:RegisterAllEvents();
 	end
 	
