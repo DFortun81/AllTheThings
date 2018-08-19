@@ -162,9 +162,19 @@ _.Zones =
 							},
 							["qg"] = 141274, -- Crenzo Sparkshatter
 						})),
+						a(q(51488, {	-- Archived Knowledge
+							["qg"] = 137871,	-- Taelia
+							["sourceQuests"] = { 51487 },	-- Searching for Answers [Alliance Only]
+							-- NOTE: This might have to move to a different map. - Crieve
+						})),
 						a(q(47961, {	-- Drustvar
 							["qg"] = 139522,	-- Scouting Map
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
+							["isBreadcrumb"] = true,
+						})),
+						a(q(51570, {	-- Foothold: Zuldazar
+							["qg"] = 135612,	-- Halford Wyrmbane <7th Legion High Commander>
+							["sourceQuests"] = { 51569 },	-- The Zandalar Campaign [Alliance Only]
 							["isBreadcrumb"] = true,
 						})),
 						a(q(51714, {	-- Mission from the King
@@ -173,6 +183,15 @@ _.Zones =
 							["groups"] = {
 								follower(1065),	-- Falstad Wildhammer
 							},
+						})),
+						a(q(53074, {	-- Reinforcements
+							["qg"] = 135614,	-- Master Mathias Shaw
+							["sourceQuests"] = { 51715 },	-- War of Shadows [Alliance Only]
+						})),
+						a(q(51487, {	-- Searching for Answers
+							["qg"] = 137871,	-- Taelia
+							["sourceQuests"] = { 47952 },	-- The Missing Fleet [Alliance Only]
+							-- NOTE: This might have to move to a different map. - Crieve
 						})),
 						a(q(47962, {	-- Stormsong Valley
 							["qg"] = 139522,	-- Scouting Map
@@ -213,6 +232,11 @@ _.Zones =
 							["qg"] = 135612, -- Halford Wyrmbane <7th Legion High Commander>
 							["sourceQuests"] = { 52544 },	-- The War Cache
 						})),
+						a(q(51489, {	-- Time to Leave
+							["qg"] = 137871,	-- Taelia
+							["sourceQuests"] = { 51488 },	-- Archived Knowledge [Alliance Only]
+							-- NOTE: This might have to move to a different map. - Crieve
+						})),
 						a(q(49715, {	-- Trouble at Greystone Keep
 							["qg"] = 130377,	-- Courier Gerald
 							["sourceQuests"] = { 50790 },	-- Hot Pursuit [Alliance Only]
@@ -221,6 +245,10 @@ _.Zones =
 						a(q(51715, {	-- War of Shadows
 							["qg"] = 135614,	-- Master Mathias Shaw
 							["sourceQuests"] = { 51714 },	-- Mission from the King [Alliance Only]
+						})),
+						a(q(51308, {	-- Zuldazar Foothold
+							["qg"] = 135612,	-- Halford Wyrmbane <7th Legion High Commander>
+							["sourceQuests"] = { 51570 },	-- Foothold: Zuldazar [Alliance Only]
 						})),
 					},
 				}),

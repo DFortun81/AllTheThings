@@ -6688,6 +6688,11 @@ local function RowOnEnter(self)
 				j = j + 1;
 			end
 		end
+		if reference.coord and app.GetDataMember("ShowCoordinatesInTooltip") then
+			GameTooltip:AddDoubleLine("Coordinate",
+				GetNumberWithZeros(math.floor(reference.coord[1] * 10) * 0.1, 1) .. ", " .. 
+				GetNumberWithZeros(math.floor(reference.coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
+		end
 		if reference.bonusID and GetDataMember("ShowBonusID") then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
 		if reference.modID and GetDataMember("ShowModID") then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
 		if reference.dr then GameTooltip:AddDoubleLine(L("DROP_RATE"), "|c" .. GetProgressColor(reference.dr * 0.01) .. tostring(reference.dr) .. "%|r"); end
@@ -7575,6 +7580,19 @@ end
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
 --[[
+-- split a string
+function string:split(delimiter)
+  local result = { }
+  local from  = 1
+  local delim_from, delim_to = string.find( self, delimiter, from  )
+  while delim_from do
+    table.insert( result, string.sub( self, from , delim_from-1 ) )
+    from  = delim_to + 1
+    delim_from, delim_to = string.find( self, delimiter, from  )
+  end
+  table.insert( result, string.sub( self, from  ) )
+  return result
+end
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
@@ -7823,7 +7841,10 @@ app:GetWindow("Debugger", UIParent, function(self)
 						end
 					end
 				end
-				local info = { ["questID"] = questID, ["g"] = rawGroups };
+				
+				local px, py = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"):GetXY();
+				local info = { ["questID"] = questID, ["g"] = rawGroups, ["coord"] = { px * 100, py * 100 } };
+				print(px, py);
 				if questStartItemID and questStartItemID > 0 then info.itemID = questStartItemID; end
 				if npc_id then
 					npc_id = tonumber(npc_id);

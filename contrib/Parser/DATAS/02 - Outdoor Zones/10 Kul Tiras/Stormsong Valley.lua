@@ -72,9 +72,72 @@ _.Zones =
 						p(2376),	-- Valley Chicken
 					},
 				}),
+				n(-17, {	-- Quests [Crieve]
+					a(q(49725, {	-- A Risky Ploy
+						["qg"] = 129999,	-- Taelia
+						["sourceQuests"] = { 51401 },	-- Carry On [Alliance Only]
+					})),
+					a(q(52795, {	-- A Saur Point
+						["qg"] = 141603,	-- Mallory Hood
+						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
+						["coord"] = { 64.9, 76.8 },
+					})),
+					a(q(51490, {	-- Border Issues
+						["qg"] = 137866,	-- Taelia
+						["sourceQuests"] = { 51489 },	-- Time to Leave [Alliance Only]
+					})),
+					a(q(51401, {	-- Carry On
+						["qg"] = 137866,	-- Taelia
+						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
+						-- This gave "The Tidesages of Stormsong" criteria achievement - Crieve
+					})),
+					a(q(52793, {	-- Circle the Wagons
+						["qg"] = 141769,	-- Marilyn Hood
+						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
+					})),
+					a(q(49704, {	-- Haywire Harvesters
+						["qg"] = 130715,	-- Taelia
+						["sourceQuests"] = { 49703 },	-- House Stormsong [Alliance Only]
+						["coord"] = { 63.4, 64.7 },
+					})),
+					a(q(49703, {	-- House Stormsong
+						["qg"] = 130576,	-- Brother Pike
+						["sourceQuests"] = { 49725 },	-- A Risky Ploy [Alliance Only]
+					})),
+					a(q(49706, {	-- Proclamation Investigation
+						["qg"] = 130714,	-- Brother Pike
+						["sourceQuests"] = { 49703 },	-- House Stormsong [Alliance Only]
+						["coord"] = { 63.4, 64.7 },
+					})),
+					a(q(52796, {	-- Sometimes Less is More
+						["qg"] = 141769,	-- Marilyn Hood
+						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
+					})),
+					a(q(49705, {	-- Unnecessary Duress
+						["qg"] = 130714,	-- Brother Pike
+						["sourceQuests"] = { 49703 },	-- House Stormsong [Alliance Only]
+						["coord"] = { 63.4, 64.7 },
+						["groups"] = {
+							i(155173),	-- Darkwater Gloves
+							i(155174),	-- Dread Corsair Gauntlets
+							i(155176),	-- Stormchaser Gloves
+							i(155175),	-- Tidespeaker Gloves
+							i(155172),	-- Darkwater Boots
+							i(155169),	-- Dread Corsair Sabatons
+							i(155171),	-- Stormchaser Boots
+							i(155170),	-- Tidespeaker Sandals
+						},
+					})),
+					
+					
+					-- Small Treasure Chests
+					{
+						["questID"] = 51184,	-- Scripps Lumber Co (Crieve)
+						["coord"] = { 61.8, 65.3 },
+					},
+				}),
 				n(-17, {	-- Quests
-				---- TODO THESE QUESTS WILL BE SOURCED / ORGANIZED.  I HAVE THE DATA ALREADY PLEASE DO NOT ALTER.  THANKS!!!
-					["groups"] = {
+					["groups"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
 						--[[
 						a(ach(12496, {	-- Stormsong and Dance
 							crit(1),		-- The Tidesages of Stormsong
@@ -87,290 +150,281 @@ _.Zones =
 							crit(8),		-- Treasure in Deadwash
 						})),
 						--]]
-					q(50616, {	-- A Bit of a Bind
-					i(160345),
-					i(160371),
-					i(160374),
-					i(160377),
-					i(160380),
-					}),
-					q(50694),	-- A Bloody Mess
-					q(50593),	-- A Bloody Mess
-					q(50781),	-- A Bridge Too Far
-					q(50779),	-- A Clean Slate
-					q(50814),	-- A Horrible Place
-					q(50612),	-- A House Divided
-					q(50733),	-- A New Dawn
-					q(50041),	-- A Pocketful of Shells
-					q(50640),	-- A Question of Quillpower
-					q(50065),	-- A Reason to Stay
-					q(49725),	-- A Risky Ploy
-					q(52795),	-- A Saur Point
-					q(50705),	-- A Snake with Three Heads
-					q(50132),	-- A Sticky Proposition
-					q(50797),	-- A Turtle's Invitation
-					q(50742),	-- All Laid Out For Us
-					q(49832),	-- An Illegible Scroll
-					q(50704, {	-- Anchors Aweigh Too Much
-					i(160332),
-					i(158684),
-					i(158682),
-					}),
-					q(51354),	-- Anger in a Bottle
-					q(50367),	-- Anger in a Bottle
-					q(50672),	-- Any Ammo Will Do
-					q(51488),	-- Archived Knowledge
-					q(51205),	-- Aww, Rats!
-					q(49908),	-- Back to Brennadam
-					q(50553, {	-- Back to the Lab
-						i(158558),
-					}),
-					q(51251),	-- Basement Dwellers
-					q(51386, {	-- Battle Victorious
-					i(160335),
-					i(160338),
-					i(160341),
-					i(160344),
-					i(160373),
-					i(160376),
-					i(160379),
-					i(160382),
-					}),
-					q(52070),	-- Bauer Backup
-					q(51214),	-- Be A Dear
-					q(50594, {	-- Beneath the Veil
-					i(155229),
-					i(155228),
-					i(155231),
-					}),
-					q(50353),	-- Boaring Company
-					q(50697),	-- Bomb Beats Rock
-					q(49744),	-- Bombs, Away
-					q(51490),	-- Border Issues
-					q(49792),	-- Bound and Oppressed
-					q(50810),	-- Break 'Em Out
-					q(51545),	-- Breaker Bad
-					q(51159),	-- Bring out the Big Gun
-					q(51728),	-- Burn It All Down
-					q(51401),	-- Carry On
-					q(50621),	-- Caught in the Net
-					q(50793),	-- Cave Commotion
-					q(51353),	-- Cave of Ai'twen
-					q(53106),	-- Censership
-					q(50158),	-- Checking Out the Collapse
-					q(52793),	-- Circle the Wagons
-					q(51339, {	-- Cleaning Bills
-					i(155237),
-					i(160384),
-					i(160387),
-					i(160390),
-					i(160393),
-					}),
-					q(50359),	-- Cleanup Duty
-					q(50706),	-- Clearing the Delta
-					q(51110),	-- Clearing the Skies
-					q(51504),	-- Cookie Delivery
-					q(51335),	-- Cookies and Cream
-					q(51203),	-- Cry Wolf
-					q(50910),	-- Dangerous Game
-					q(52130),	-- Deadliest Cache: Carpe Diem
-					q(50391),	-- Deadliest Cache: Gun Fishin'
-					q(50376),	-- Deadliest Cache: Reel Big Fish
-					q(50418),	-- Deadliest Cache: Sink and Swim
-					q(50622),	-- Deal's Off
-					q(51220),	-- Deep Sea Venture
-					q(53097),	-- Despondent Ablutions
-					q(51066),	-- Destroy Mine Carts
-					q(50070),	-- Detective Mildenhall
-					q(50285),	-- Don't Be Crabby
-					q(50064, {	-- Don't Go in the Basement
-					i(160331),
-					i(160346),
-					}),
-					q(51352),	-- Don't Play with Matches
-					q(50741),	-- Don't Turtle
-					q(49746),	-- Dousing the Flames
-					q(50753, {	-- Earl-E Bot Gets the Worm
-						i(160514, { --
-							i(158679),
+						
+						q(50616, {	-- A Bit of a Bind
+						i(160345),
+						i(160371),
+						i(160374),
+						i(160377),
+						i(160380),
 						}),
-					}),
-					q(51756),	-- Economic Downturn
-					q(50645),	-- Eeling in a Big One
-					q(51207, {	-- Ettin It Done
-					i(160333),
-					i(160336),
-					i(160339),
-					i(160342),
-					i(160383),
-					i(160386),
-					i(160389),
-					i(160392),
-					}),
-					q(49732),	-- Evacuate!
-					q(51540),	-- Explosive Situation
-					q(51712),	-- Eye for an Eye
-					q(50784),	-- Eye of the Storm
-					q(49995),	-- Fabricated Fabrications
-					q(50644),	-- Facing the Invaders
-					q(50136, {	-- Farming Stimulator
-					i(155235),
-					i(155197),
-					i(155194),
-					i(155196),
-					i(155195),
-					}),
-					q(50493),	-- Fetching Wrex
-					q(51750),	-- Field Promotions
-					q(50649),	-- Filching from Thieves
-					q(51371),	-- Flavorable Offering
-					q(49886),	-- Follow Your Nose
-					q(50608),	-- Forbidden Rites
-					q(49887),	-- Forced Labor
-					q(50264),	-- Free the Farmhands
-					q(50614),	-- Freedom for the Sea
-					q(49831, {	-- From the Depths
-					i(160519),
-					i(155219),
-					i(160521),
-					i(155198),
-					i(155211),
-					i(155217),
-					i(155226),
-					i(155212),
-					}),
-					q(50609),	-- From the Maw of Madness
-					q(50696),	-- Fun With Magnets
-					q(50134),	-- Gadgets and Gizmos Aplenty
-					q(50610),	-- Gathering Storm
-					q(51726),	-- Get Out of Here
-					q(51720),	-- Get Shredded
-					q(50088),	-- Golden Fields Forever
-					q(50069),	-- Goldfield's War
-					q(51314),	-- Grain Drain
-					q(51883),	-- Grizz's Lunch
-					q(51752),	-- Grizzled
-					q(51492),	-- Gunpowder Plot
-					q(51711),	-- Having a Blast
-					q(49704),	-- Haywire Harvesters
-					q(49755),	-- Heavy Artillery
-					q(52068),	-- Helping Out, Somewhere Else
-					q(50504),	-- Honey Glazed Sam
-					q(50060),	-- Honey, Slimes!
-					q(49703),	-- House Stormsong
-					q(51427),	-- I like Turtles
-					q(50803),	-- I Want It All Now
-					q(50802),	-- Iron Low Tide
-					q(51557),	-- Irontide Warning
-					q(50354),	-- Look Out!
-					q(51278),	-- Lost and Forgotten
-					q(49791),	-- Lost, Not Forgotten
-					q(51582),	-- Make it Mildenhall
-					q(53369),	-- Make Loh Go
-					q(50383),	-- Mankrik's Wrath
-					q(50343),	-- Mayhem at Mildenhall Meadery
-					q(49793),	-- Means to an End
-					q(51209),	-- Mighty Grokkfist
-					q(51215),	-- Milking Goats
-					q(51202),	-- Millstone Hamlet Quest Template
-					q(52069),	-- More Fodder
-					q(50909),	-- Never Outgunned
-					q(50774),	-- No Bot Left Behind
-					q(50595),	-- No Quarter
-					q(50691),	-- Not On Our Payroll
-					q(50780),	-- Oathbound
-					q(50815),	-- Orcs Versus Humans
-					q(50679),	-- Piercing the Shield
-					q(50907),	-- Poor Souls
-					q(51724),	-- Powered Up
-					q(50698),	-- Problem Solving with Gunpowder
-					q(49706),	-- Proclamation Investigation
-					q(51310),	-- Raiders of the Lost Crop
-					q(49996),	-- Rearmament
-					q(50653),	-- Reclaiming our Defenses
-					q(50161),	-- Recovering Raimond
-					q(51554),	-- Reloading
-					q(49742),	-- Respect Your Elders
-					q(51221),	-- Response Required
-					q(49975),	-- Rest in the Depths
-					q(50816),	-- Roarke's Missing
-					q(50168),	-- Royal Succession
-					q(50365),	-- Run For the Hills
-					q(51723),	-- Saw Dusted
-					q(51320),	-- Sealed Fate
-					q(51487),	-- Searching for Answers
-					q(51334),	-- Securing The Square
-					q(51140),	-- Share the Wealth
-					q(49743),	-- Shoot First, Questions Later
-					q(49960),	-- Sic 'Em!
-					q(50908),	-- Smells like Trouble
-					q(52796),	-- Sometimes Less Is More
-					q(50340),	-- Steal Them Back
-					q(50162),	-- Sticky Situation
-					q(50135),	-- Stop Vining!
-					q(50824),	-- Storm's End
-					q(51846),	-- Storm's End
-					q(49997),	-- Storm's Judgment
-					q(50611),	-- Storm's Vengeance
-					q(53045),	-- Surveying the Wharf
-					q(52067),	-- Survivors
-					q(51343),	-- Swimming Lessons
-					q(50368),	-- Terror of the Kraul
-					q(50783),	-- The Abyssal Council
-					q(51534),	-- The Battle for Brennadam
-					q(50165),	-- The Bee Team
-					q(51200),	-- The Black Sheep
-					q(51552),	-- The Days Are Just Packed
-					q(51319),	-- The Final Ascent
-					q(50743),	-- The Immediate Problem
-					q(51881),	-- The Mine Sweeper
-					q(47952),	-- The Missing Fleet
-					q(50139),	-- The Missing Link
-					q(52132),	-- The Proof of Piracy
-					q(49794),	-- The Rising Tide
-					q(50635),	-- The Shifting Tides
-					q(50777),	-- The Storm Awakens
-					q(50157),	-- There's Gold in Them There Fields
-					q(51489),	-- Time to Leave
-					q(50111),	-- Totems, Totems, Totems!
-					q(50675),	-- Treasure Hunting
-					q(49818),	-- Trouble at Fort Daelin
-					q(50778),	-- Twisted Intentions
-					q(50674),	-- Two Faced Pirate Scum
-					q(51218),	-- Undelivered Package
-					q(49705),	-- Unnecessary Duress
-					q(49998),	-- Voices Below
-					q(50956),	-- Walking-Around Money
-					q(51204),	-- WANTED: Razorclaw Alpha
-					q(53330),	-- WANTED: Razorclaw Alpha
-					q(53348),	-- WANTED: Thundersnout
-					q(49730),	-- WANTED: Thundersnout
-					q(52876),	-- WANTED: War Gore
-					q(51217),	-- WANTED: Yarsel'ghun
-					q(50363),	-- War Pigs
-					q(51708),	-- Warfang Hold Quest Template
-					q(50955),	-- We're Not Friends
-					q(50133),	-- Weed Whacking
-					q(50534),	-- Wendigo Away
-					q(51222),	-- What's Yours is Mined
-					q(51208),	-- Wheat A Minute
-					q(52065),	-- Worse Than It Looks
-					q(49745),	-- You Have Their Orders
-					q(50773),	-- You're a Shark
-					q(48533),	-- Vol'duni Fried Chicken
-					q(51164),	-- WANTED: Cobra Excursion Participants
-					q(51165),	-- WANTED: Sandscout Vesarik
-					q(51162),	-- WANTED: Taz'raka the Traitor
-					q(51161),	-- WANTED: Za'roco
-					q(48585),	-- Wasteland Survivor
-					q(48838),	-- Water Reclamation
-					q(48555),	-- We Can Salvage the Seeds
-					q(48551),	-- Wither Without Water
-					q(47576),	-- Wrath of the Tiger
-					q(48330),	-- Zandalari Treasure Trove
+						q(50694),	-- A Bloody Mess
+						q(50593),	-- A Bloody Mess
+						q(50781),	-- A Bridge Too Far
+						q(50779),	-- A Clean Slate
+						q(50814),	-- A Horrible Place
+						q(50612),	-- A House Divided
+						q(50733),	-- A New Dawn
+						q(50041),	-- A Pocketful of Shells
+						q(50640),	-- A Question of Quillpower
+						q(50065),	-- A Reason to Stay
+						q(50705),	-- A Snake with Three Heads
+						q(50132),	-- A Sticky Proposition
+						q(50797),	-- A Turtle's Invitation
+						q(50742),	-- All Laid Out For Us
+						q(49832),	-- An Illegible Scroll
+						q(50704, {	-- Anchors Aweigh Too Much
+						i(160332),
+						i(158684),
+						i(158682),
+						}),
+						q(51354),	-- Anger in a Bottle
+						q(50367),	-- Anger in a Bottle
+						q(50672),	-- Any Ammo Will Do
+						q(51488),	-- Archived Knowledge
+						q(51205),	-- Aww, Rats!
+						q(49908),	-- Back to Brennadam
+						q(50553, {	-- Back to the Lab
+							i(158558),
+						}),
+						q(51251),	-- Basement Dwellers
+						q(51386, {	-- Battle Victorious
+						i(160335),
+						i(160338),
+						i(160341),
+						i(160344),
+						i(160373),
+						i(160376),
+						i(160379),
+						i(160382),
+						}),
+						q(52070),	-- Bauer Backup
+						q(51214),	-- Be A Dear
+						q(50594, {	-- Beneath the Veil
+						i(155229),
+						i(155228),
+						i(155231),
+						}),
+						q(50353),	-- Boaring Company
+						q(50697),	-- Bomb Beats Rock
+						q(49744),	-- Bombs, Away
+						q(49792),	-- Bound and Oppressed
+						q(50810),	-- Break 'Em Out
+						q(51545),	-- Breaker Bad
+						q(51159),	-- Bring out the Big Gun
+						q(51728),	-- Burn It All Down
+						q(50621),	-- Caught in the Net
+						q(50793),	-- Cave Commotion
+						q(51353),	-- Cave of Ai'twen
+						q(53106),	-- Censership
+						q(50158),	-- Checking Out the Collapse
+						q(51339, {	-- Cleaning Bills
+						i(155237),
+						i(160384),
+						i(160387),
+						i(160390),
+						i(160393),
+						}),
+						q(50359),	-- Cleanup Duty
+						q(50706),	-- Clearing the Delta
+						q(51110),	-- Clearing the Skies
+						q(51504),	-- Cookie Delivery
+						q(51335),	-- Cookies and Cream
+						q(51203),	-- Cry Wolf
+						q(50910),	-- Dangerous Game
+						q(52130),	-- Deadliest Cache: Carpe Diem
+						q(50391),	-- Deadliest Cache: Gun Fishin'
+						q(50376),	-- Deadliest Cache: Reel Big Fish
+						q(50418),	-- Deadliest Cache: Sink and Swim
+						q(50622),	-- Deal's Off
+						q(51220),	-- Deep Sea Venture
+						q(53097),	-- Despondent Ablutions
+						q(51066),	-- Destroy Mine Carts
+						q(50070),	-- Detective Mildenhall
+						q(50285),	-- Don't Be Crabby
+						q(50064, {	-- Don't Go in the Basement
+						i(160331),
+						i(160346),
+						}),
+						q(51352),	-- Don't Play with Matches
+						q(50741),	-- Don't Turtle
+						q(49746),	-- Dousing the Flames
+						q(50753, {	-- Earl-E Bot Gets the Worm
+							i(160514, { --
+								i(158679),
+							}),
+						}),
+						q(51756),	-- Economic Downturn
+						q(50645),	-- Eeling in a Big One
+						q(51207, {	-- Ettin It Done
+						i(160333),
+						i(160336),
+						i(160339),
+						i(160342),
+						i(160383),
+						i(160386),
+						i(160389),
+						i(160392),
+						}),
+						q(49732),	-- Evacuate!
+						q(51540),	-- Explosive Situation
+						q(51712),	-- Eye for an Eye
+						q(50784),	-- Eye of the Storm
+						q(49995),	-- Fabricated Fabrications
+						q(50644),	-- Facing the Invaders
+						q(50136, {	-- Farming Stimulator
+						i(155235),
+						i(155197),
+						i(155194),
+						i(155196),
+						i(155195),
+						}),
+						q(50493),	-- Fetching Wrex
+						q(51750),	-- Field Promotions
+						q(50649),	-- Filching from Thieves
+						q(51371),	-- Flavorable Offering
+						q(49886),	-- Follow Your Nose
+						q(50608),	-- Forbidden Rites
+						q(49887),	-- Forced Labor
+						q(50264),	-- Free the Farmhands
+						q(50614),	-- Freedom for the Sea
+						q(49831, {	-- From the Depths
+						i(160519),
+						i(155219),
+						i(160521),
+						i(155198),
+						i(155211),
+						i(155217),
+						i(155226),
+						i(155212),
+						}),
+						q(50609),	-- From the Maw of Madness
+						q(50696),	-- Fun With Magnets
+						q(50134),	-- Gadgets and Gizmos Aplenty
+						q(50610),	-- Gathering Storm
+						q(51726),	-- Get Out of Here
+						q(51720),	-- Get Shredded
+						q(50088),	-- Golden Fields Forever
+						q(50069),	-- Goldfield's War
+						q(51314),	-- Grain Drain
+						q(51883),	-- Grizz's Lunch
+						q(51752),	-- Grizzled
+						q(51492),	-- Gunpowder Plot
+						q(51711),	-- Having a Blast
+						q(49704),	-- Haywire Harvesters
+						q(49755),	-- Heavy Artillery
+						q(52068),	-- Helping Out, Somewhere Else
+						q(50504),	-- Honey Glazed Sam
+						q(50060),	-- Honey, Slimes!
+						q(51427),	-- I like Turtles
+						q(50803),	-- I Want It All Now
+						q(50802),	-- Iron Low Tide
+						q(51557),	-- Irontide Warning
+						q(50354),	-- Look Out!
+						q(51278),	-- Lost and Forgotten
+						q(49791),	-- Lost, Not Forgotten
+						q(51582),	-- Make it Mildenhall
+						q(53369),	-- Make Loh Go
+						q(50383),	-- Mankrik's Wrath
+						q(50343),	-- Mayhem at Mildenhall Meadery
+						q(49793),	-- Means to an End
+						q(51209),	-- Mighty Grokkfist
+						q(51215),	-- Milking Goats
+						q(51202),	-- Millstone Hamlet Quest Template
+						q(52069),	-- More Fodder
+						q(50909),	-- Never Outgunned
+						q(50774),	-- No Bot Left Behind
+						q(50595),	-- No Quarter
+						q(50691),	-- Not On Our Payroll
+						q(50780),	-- Oathbound
+						q(50815),	-- Orcs Versus Humans
+						q(50679),	-- Piercing the Shield
+						q(50907),	-- Poor Souls
+						q(51724),	-- Powered Up
+						q(50698),	-- Problem Solving with Gunpowder
+						q(51310),	-- Raiders of the Lost Crop
+						q(49996),	-- Rearmament
+						q(50653),	-- Reclaiming our Defenses
+						q(50161),	-- Recovering Raimond
+						q(51554),	-- Reloading
+						q(49742),	-- Respect Your Elders
+						q(51221),	-- Response Required
+						q(49975),	-- Rest in the Depths
+						q(50816),	-- Roarke's Missing
+						q(50168),	-- Royal Succession
+						q(50365),	-- Run For the Hills
+						q(51723),	-- Saw Dusted
+						q(51320),	-- Sealed Fate
+						q(51487),	-- Searching for Answers
+						q(51334),	-- Securing The Square
+						q(51140),	-- Share the Wealth
+						q(49743),	-- Shoot First, Questions Later
+						q(49960),	-- Sic 'Em!
+						q(50908),	-- Smells like Trouble
+						q(50340),	-- Steal Them Back
+						q(50162),	-- Sticky Situation
+						q(50135),	-- Stop Vining!
+						q(50824),	-- Storm's End
+						q(51846),	-- Storm's End
+						q(49997),	-- Storm's Judgment
+						q(50611),	-- Storm's Vengeance
+						q(53045),	-- Surveying the Wharf
+						q(52067),	-- Survivors
+						q(51343),	-- Swimming Lessons
+						q(50368),	-- Terror of the Kraul
+						q(50783),	-- The Abyssal Council
+						q(51534),	-- The Battle for Brennadam
+						q(50165),	-- The Bee Team
+						q(51200),	-- The Black Sheep
+						q(51552),	-- The Days Are Just Packed
+						q(51319),	-- The Final Ascent
+						q(50743),	-- The Immediate Problem
+						q(51881),	-- The Mine Sweeper
+						q(47952),	-- The Missing Fleet
+						q(50139),	-- The Missing Link
+						q(52132),	-- The Proof of Piracy
+						q(49794),	-- The Rising Tide
+						q(50635),	-- The Shifting Tides
+						q(50777),	-- The Storm Awakens
+						q(50157),	-- There's Gold in Them There Fields
+						q(51489),	-- Time to Leave
+						q(50111),	-- Totems, Totems, Totems!
+						q(50675),	-- Treasure Hunting
+						q(49818),	-- Trouble at Fort Daelin
+						q(50778),	-- Twisted Intentions
+						q(50674),	-- Two Faced Pirate Scum
+						q(51218),	-- Undelivered Package
+						q(49998),	-- Voices Below
+						q(50956),	-- Walking-Around Money
+						q(51204),	-- WANTED: Razorclaw Alpha
+						q(53330),	-- WANTED: Razorclaw Alpha
+						q(53348),	-- WANTED: Thundersnout
+						q(49730),	-- WANTED: Thundersnout
+						q(52876),	-- WANTED: War Gore
+						q(51217),	-- WANTED: Yarsel'ghun
+						q(50363),	-- War Pigs
+						q(51708),	-- Warfang Hold Quest Template
+						q(50955),	-- We're Not Friends
+						q(50133),	-- Weed Whacking
+						q(50534),	-- Wendigo Away
+						q(51222),	-- What's Yours is Mined
+						q(51208),	-- Wheat A Minute
+						q(52065),	-- Worse Than It Looks
+						q(49745),	-- You Have Their Orders
+						q(50773),	-- You're a Shark
+						q(48533),	-- Vol'duni Fried Chicken
+						q(51164),	-- WANTED: Cobra Excursion Participants
+						q(51165),	-- WANTED: Sandscout Vesarik
+						q(51162),	-- WANTED: Taz'raka the Traitor
+						q(51161),	-- WANTED: Za'roco
+						q(48585),	-- Wasteland Survivor
+						q(48838),	-- Water Reclamation
+						q(48555),	-- We Can Salvage the Seeds
+						q(48551),	-- Wither Without Water
+						q(47576),	-- Wrath of the Tiger
+						q(48330),	-- Zandalari Treasure Trove
 
-					},
-					["races"] = ALLIANCE_ONLY,
+					}),
 				}),
 				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
@@ -442,6 +496,13 @@ _.Zones =
 								i(154273),	-- Rockstopper Breastplate
 							}),
 							["questID"] = 52460,
+						}),
+						o(281646, { -- Honey Vat
+							["coord"] = {66.6, 71.1 },
+							["questID"] = 50576,
+							["groups"] = {
+								i(154476),	-- Honey-Glazed Vambraces
+							},
 						}),
 						n(141039, {	-- Ice Sickle
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
