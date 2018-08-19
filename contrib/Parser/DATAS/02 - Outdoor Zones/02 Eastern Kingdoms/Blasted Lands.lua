@@ -14,6 +14,13 @@ _.Zones =
 					p(412), 	-- Spider
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(4909, {		-- Blasted Lands Quests
+						crit(1),		-- Razelikh
+						crit(2),		-- The Tainted Forest
+						crit(3),		-- Avenging the Rockpool
+					}),
+--]]
 					qg(42298, qa(26172, { -- A Bloodmage's Gotta Eat Too
 						i(59384),
 						i(59386),
@@ -921,6 +928,10 @@ _.Zones =
 									un(34, i(18602)),	-- Tome of Sacrifice
 								},
 								["classes"] = { 9 },	-- Warlock
+							})),
+							un(40, q(3628, {	-- You Are Rakh'likh, Demon
+								un(2, i(10779)),	-- Demon's Blood
+								un(2, i(10778)),	-- Necklace of Sanctuary
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)

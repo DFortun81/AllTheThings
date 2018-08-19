@@ -5,7 +5,13 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(51, {	-- Swamp of Sorrows
-			["groups"] = {						
+			["groups"] = {		
+				n(-228, {	-- Flight Path
+					fp(599),	-- Bogpaddle, Swamp of Sorrows
+					fp(598),	-- Marshtide Watch, Swamp of Sorrows
+					fp(56),		-- Stonard, Swamp of Sorrows
+					fp(600),	-- The Harborage, Swamp of Sorrows
+				}),
 				n(-25, {	-- Pet Battle
 							-- q(31913, {	-- Everessa
 							-- 	["groups"] = {
@@ -964,14 +970,22 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							un(40, qh(1430, {	-- [DEPRECATED]Fresh Meat
+								un(2, i(9682)),	-- Leather Chef's Belt
+							})),
 							un(40, qa(1393, { -- Galen's Escape
-								un(34, i(6828)),	-- Visionary Buckler
+								un(2, i(6828)),	-- Visionary Buckler
+							})),
+							un(40, qh(1427, {	-- [DEPRECATED]Threat From the Sea
+								un(2, i(9680)),	-- Tok'kar's Murloc Shanker
+								un(2, i(9678)),	-- Tok'kar's Murloc Basher
+								un(2, i(9679)),	-- Tok'kar's Murloc Chopper
 							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
-							n(766, { 	-- Tangled Horror
+							un(43, n(766, { 	-- Tangled Horror
 								un(7, i(5608)), 	-- Living Cowl
-							}),
+							})),
 						}),
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),

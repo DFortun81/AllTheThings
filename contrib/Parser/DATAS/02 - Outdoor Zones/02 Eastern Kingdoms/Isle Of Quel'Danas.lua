@@ -266,10 +266,6 @@ _.Zones =
 						i(32989),	-- Veteran's Ornamented Bracers
 						i(32997),	-- Veteran's Ringmail Bracers
 						i(32818),	-- Veteran's Plate Bracers
-
-
-					
-					
 					}),
 					n(26091, {	-- Olus <Exotic Gear Purveyor>
 						i(32006),	-- Merciless Gladiator's Linked Helm

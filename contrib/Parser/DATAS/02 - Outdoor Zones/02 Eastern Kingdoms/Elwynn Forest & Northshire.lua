@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(37, {		-- Elwynn Forest
 			["groups"] = {	
-				n(-228, {	-- Flight Master
+				n(-228, {	-- Flight Path
 					fp(589),	-- Eastvale Logging Camp, Elwynn
 					fp(582),	-- Goldshire, Elwynn
 				}),
@@ -168,9 +168,7 @@ _.Zones =
 							i(  6084),	-- Stormwind Guard Leggings
 							i( 60219),	-- Balanced Spell Staff
 							i(131199),	-- Lion Guard Chainmail
-							nld({	-- Legacy
-								un(34, i(6215)),	-- Balanced Fighting Stick
-							}),
+							un(2, i(6215)),	-- Balanced Fighting Stick
 						}),
 					}),
 --[[					
@@ -349,8 +347,8 @@ _.Zones =
 							un(40, qa(1667, {	-- Dead-tooth Jack
 								["groups"] = {
 									un(2, i(6979)),	-- Haggard's Axe
-									un(2, i(6983)),	-- Haggard's Hammer
 									un(2, i(6980)),	-- Haggard's Dagger
+									un(2, i(6983)),	-- Haggard's Hammer
 									un(2, i(6985)),	-- Haggard's Sword
 								},
 								["classes"] = { 1 },	-- Warrior

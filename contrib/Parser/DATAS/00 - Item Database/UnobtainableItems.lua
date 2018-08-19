@@ -31,35 +31,16 @@ end
 --------------------------------------------------------------------------------------------------------------------------------------------
 -- Template: u(, 2);	--
 
-u(2818, 2);		-- Stretched Leather Trousers
 u(3324, 2);		-- Ghostly Mantle
-u(3449, 2);		-- Mystic Shawl
-u(3450, 2);		-- Faerleia's Shield
-u(3452, 2);		-- Ceranium Rod
-u(3457, 2);		-- Stamped Trousers
-u(3458, 2);		-- Rugged Mail Gloves
-u(3461, 2);		-- High Robe of the Adjudicator
-u(3462, 2);		-- Talonstrike
-u(3570, 2);		-- Bonegrinding Pestle
-u(3581, 2);		-- Serrated Knife
-u(3582, 2);		-- Acidproof Cloak
-u(3585, 2);		-- Camouflaged Tunic
-u(3586, 2);		-- Logsplitter
-u(4128, 2); 	-- Silver Spade
 u(4534, 2);		-- Steel-Clasped Bracers
-u(4643, 2);		-- Grimsteel Cape
 u(4964, 2);		-- Goblin Smasher
 u(4974, 2);		-- Compact Fighting Knife
 u(5194, 2);		-- Taskmaster Axe
-u(5242, 2);		-- Cinder Wand
-u(5252, 2);		-- Wand of Decay
-u(5253, 2); 	-- Goblin Igniter
 u(6226, 2);		-- Blood Apron
 u(6335, 2);		-- Grizzled Boots
 u(6340, 2);		-- Fenrus' Hide
 u(6392, 2);		-- Belt of Arugal
 u(6633, 2);		-- Butcher's Slicer
-u(6828, 2);		-- Visionary Buckler
 u(6898, 2);		-- Org of Soran'ruk
 u(6953, 2);		-- Verigan's Fist
 u(7230, 2);		-- Smite's Mighty Hammer
@@ -88,8 +69,6 @@ u(7721, 2);		-- Hand of Righteousness
 u(7723, 2);		-- Mograine's Might
 u(7724, 2);		-- Gauntlets of Divinity
 u(7726, 2);		-- Aegis of the Scarlet Commander
-u(7750, 2);		-- Mantle of Woe
-u(7751, 2);		-- Vorrel's Boots
 u(7756, 2);		-- Dog Training Gloves
 u(10330, 2);	-- Scarlet Leggings
 u(13315, 2); 	-- Testament of Hope
@@ -122,33 +101,6 @@ u(18424, 2); 	-- Sedge Boots
 u(19507, 2);	-- Inquisitor's Shawl
 u(19508, 2);	-- Branded Leather Bracers
 u(19509, 2);	-- Dusty Mail Boots
-u(19822, 2);	-- Zandalar Vindicator's Breastplate
-u(19823, 2);	-- Zandalar Vindicator's Belt
-u(19824, 2);	-- Zandalar Vindicator's Armguards
-u(19825, 2);	-- Zandalar Freethinker's Breastplate
-u(19826, 2);	-- Zandalar Freethinker's Belt
-u(19827, 2);	-- Zandalar Freethinker's Armguards
-u(19828, 2);	-- Zandalar Augur's Hauberk
-u(19829, 2);	-- Zandalar Augur's Belt
-u(19830, 2);	-- Zandalar Augur's Bracers
-u(19831, 2);	-- Zandalar Predator's Mantle
-u(19832, 2);	-- Zandalar Predator's Belt
-u(19833, 2);	-- Zandalar Predator's Bracers
-u(19834, 2);	-- Zandalar Madcap's Tunic
-u(19835, 2);	-- Zandalar Madcap's Mantle
-u(19836, 2);	-- Zandalar Madcap's Bracers
-u(19838, 2);	-- Zandalar Haruspex's Tunic
-u(19839, 2);	-- Zandalar Haruspex's Belt
-u(19840, 2);	-- Zandalar Haruspex's Bracers
-u(19841, 2);	-- Zandalar Confessor's Mantle
-u(19842, 2);	-- Zandalar Confessor's Bindings
-u(19843, 2);	-- Zandalar Confessor's Wraps
-u(19845, 2);	-- Zandalar Illusionist's Mantle
-u(19846, 2);	-- Zandalar Illusionist's Wraps
-u(19848, 2);	-- Zandalar Demoniac's Wraps
-u(19849, 2);	-- Zandalar Demoniac's Mantle
-u(20033, 2);	-- Zandalar Demoniac's Robe
-u(20034, 2);	-- Zandalar Illusionist's Robe
 u(21994, 2);	-- Belt of Heroism
 u(21995, 2);	-- Boots of Heroism
 u(21996, 2);	-- Bracers of Heroism
@@ -583,8 +535,6 @@ u(56131, 2);	-- Wild Hammer (7.3.5 - Removed from Game!)
 u(56133, 2);	-- Crown of Enfeebled Bodies (7.3.5 - Removed from Game!)
 u(56135, 2);	-- Bracers of Umbral Mending (7.3.5 - Removed from Game!)
 u(56137, 2);	-- Staff of Siphoned Essences (7.3.5 - Removed from Game!)
-u(58976, 2);	-- Rat Ear Cloak
-u(58977, 2);	-- Algaz Shield
 u(61931, 2); 	-- Polished Helm of Valor
 u(61935, 2); 	-- Tarnished Raging Berserker's Helm
 u(61936, 2); 	-- Mystical Coif of Elements

@@ -6,6 +6,11 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(49, {		-- Redridge Mountains
 			["groups"] = {							
+				n(-228, {	-- Flight Path
+					fp(615),	-- Camp Everstill, Redridge
+					fp(5),		-- Lakeshire, Redridge
+					fp(596),	-- Shalewind Canyon, Redridge
+				}),
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken
 					p(395), 	-- Fledgling Buzzard
@@ -371,9 +376,7 @@ _.Zones =
 						dr(01.9, i(9748)),	-- Simple Robe
 						dr(01.8, i(9788)),	-- Raider's Belt
 						dr(01.8, i(6550)),	-- Soldier's Wristguards	
-						nld({     -- Legacy
-							un(7, i(3229)), 	-- Tarantula Silk Sash
-						}),							
+						un(7, i(3229)), 	-- Tarantula Silk Sash					
 					}), 
 					n(52146, { 	-- Chitter
 						dr(09.0, i(6545)),	-- Soldier's Armor
@@ -431,10 +434,8 @@ _.Zones =
 						dr(01.0, i(6552)),	-- Bard's Tunic
 						dr(01.0, i(9768)),	-- Greenweave Bracers
 						dr(01.0, i(9770)),	-- Greenweave Cloak		
-						nld({     -- Legacy
-							un(7, i(3231)),		-- Cutthroat Pauldrons	
-							un(7, i(2058)),		-- Kazon's Maul
-						}),						
+						un(7, i(3231)),		-- Cutthroat Pauldrons	
+						un(7, i(2058)),		-- Kazon's Maul			
 					}), 
 					n(14271, { 	-- Ribchaser
 						dr(09.0, i(6557)),	-- Bard's Boots
@@ -496,9 +497,7 @@ _.Zones =
 						dr(01.1, i(6562)),	-- Shimmering Boots
 						dr(01.0, i(9776)),	-- Bandit Boots
 						dr(01.0, i(9766)),	-- Greenweave Sash	
-						nld({     -- Legacy
-							un(7, i(4447)),		-- Cloak of Night					
-						}),						
+						un(7, i(4447)),		-- Cloak of Night				
 					}), 
 					n(14269, { 	-- Seeker Aqualon
 						dr(07.0, i(6540)),	-- Willow Pants
@@ -590,9 +589,7 @@ _.Zones =
 						dr(01.9, i(6553)),	-- Bard's Trousers
 						dr(01.7, i(9788)),	-- Raider's Belt
 						dr(01.7, i(6550)),	-- Soldier's Wristguards
-						nld({     -- Legacy
-							un(7, i(1469)), 	-- Scimitar of Atun				
-						}),							
+						un(7, i(1469)), 	-- Scimitar of Atun	
 					}), 
 				}),					
 				n(-2,  {	-- Vendors
@@ -633,48 +630,49 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(116, {	-- Dry Times
-								un(34, i(1270)), 	-- Finely Woven Cloak
+								un(2, i(1270)), 	-- Finely Woven Cloak
 							})),
 							un(40, qa(126, {	-- Howling in the Hills
-								un(34, i(2910)),	-- Gold Militia Boots
+								un(2, i(2910)),	-- Gold Militia Boots
+								un(2, i(1319)),	-- Ring of Iron Will
 							})),
 							un(40, qa(219, {	-- Missing in Action
-								un(34, i(3431)),	-- Bone-Studded Leather 
-								un(34, i(1275)),	-- Deputy Chain Coat
-								un(34, i(3555)),	-- Robe of Solomon
+								un(2, i(3431)),	-- Bone-Studded Leather 
+								un(2, i(1275)),	-- Deputy Chain Coat
+								un(2, i(3555)),	-- Robe of Solomon
 							})),
 							o(31, {	-- Old Lion Statue
 								un(40, qa(249, { 	-- Morganth
-									un(34, i(5274)),-- Rose Mantle 
+									un(2, i(5274)),-- Rose Mantle 
 								})),
 							}),
 							un(40, qa(150, {	-- Murloc Poachers
-								un(34, i(3567)),	-- Dwarven Fishing Pole
+								un(2, i(3567)),	-- Dwarven Fishing Pole
 							})),
 							un(40, qa(19, {	-- Tharil'zun
-								un(34, i(1276)),	-- Fire Hardened Buckler
-								un(34, i(6093)),	-- Orc Crusher
+								un(2, i(1276)),	-- Fire Hardened Buckler
+								un(2, i(6093)),	-- Orc Crusher
 							})),
 							un(40, qa(89, {	-- The Everstill Bridge
-								un(34, i(1310)),	-- Smith's Trousers
-								un(34, i(1303)),	-- Bridgeworker's Gloves
-								un(34, i(1304)),	-- Riding Gloves
+								un(2, i(1303)),	-- Bridgeworker's Gloves
+								un(2, i(1304)),	-- Riding Gloves
+								un(2, i(1310)),	-- Smith's Trousers
 							})),
 							un(40, qa(122, {	-- Underbelly Scales
-								un(34, i(6092)),	-- Black Whelp Boots 
-								un(34, i(1302)),	-- Black Whelp Gloves
+								un(2, i(6092)),	-- Black Whelp Boots 
+								un(2, i(1302)),	-- Black Whelp Gloves
 							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
-							n(440, { 	-- Blackrock Grunt
+							un(43, n(440, { 	-- Blackrock Grunt
 								un(7, i(1446)), 	-- Blackrock Boots 
-							}),
+							})),
 							n(435, { 	-- Blackrock Champion
 								un(7, i(1455)), 	-- Blackrock Champion's Axe 
 							}),							
-							n(485, { 	-- Blackrock Outrunner
+							un(43, n(485, { 	-- Blackrock Outrunner
 								un(7, i(1448)), 	-- Blackrock Gauntlets 
-							}),							
+							})),							
 							n(4065, { 	-- Blackrock Sentry
 								un(7, i(1296)), 	-- Blackrock Mace 
 							}),	

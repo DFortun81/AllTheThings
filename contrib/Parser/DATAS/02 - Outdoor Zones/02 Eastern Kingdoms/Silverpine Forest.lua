@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(21, {	-- Silverpine Forest
 			["groups"] = {
-				n(-228, { -- Flight Paths
+				n(-228, { 	-- Flight Path
 					fp(645), -- Forsaken High Command, Silverpine Forest
 					fp(681), -- Forsaken Rear Guard, Silverpine Forest
 					fp(654), -- The Forsaken Front, Silverpine Forest
@@ -23,6 +23,16 @@ _.Zones =
 					p(420)		-- Toad
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					h(ach(4894, {	-- Silverpine Forest Quests
+						crit(1),		-- Forsaken High Command
+						crit(2),		-- Forsaken Rear Guard
+						crit(3),		-- The Sepulcher
+						crit(4),		-- The Ruins of Gilneas
+						crit(5),		-- Ambermill
+						crit(6),		-- On the Battlefront
+					})),
+]]--
 					qh(27577, {	-- 7th Legion Battle Plans
 						["groups"] = {
 						},
@@ -766,56 +776,59 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							un(40, qh(530, {	-- A Husband's Revenge
+								un(2, i(3235)),	-- Ring of Scorn
+							})),
 							un(40, qh(451, { 	-- A Recipe for Death
-								un(34, i(3582)),	-- Acidproof Cloak
-								un(34, i(3451)),	-- Nightglow Concoction
+								un(2, i(3582)),	-- Acidproof Cloak
+								un(2, i(3451)),	-- Nightglow Concoction
 							})),
 							un(40, qh(99, { 	-- Arugal's Folly 
-								un(34, i(3586)),	-- Logsplitter
-								un(34, i(3570)),	-- Bonegrinding Pestle
-								un(34, i(5242)),	-- Cinder Wand
+								un(2, i(3570)),	-- Bonegrinding Pestle
+								un(2, i(5242)),	-- Cinder Wand
+								un(2, i(3586)),	-- Logsplitter
 							})),
 							un(40, qh(442, { 	-- Assault on Fenris Isle
-								un(34, i(3461)),	-- High Robe of the Adjudicator
-								un(34, i(3462)),	-- Talonstrike
+								un(2, i(3461)),	-- High Robe of the Adjudicator
+								un(2, i(3462)),	-- Talonstrike
 							})),
 							un(40, qh(516, { 	-- Beren's Peril
-								un(34, i(5252)),	-- Wand of Decay
+								un(2, i(5252)),	-- Wand of Decay
 							})),
 							un(40, qh(452, { 	-- Pyrewood Ambush 
-								un(34, i(3450)),	-- Faerleia's Shield 
-								un(34, i(2818)),	-- Stretched Leather Trousers 
-								un(34, i(3449)),	-- Mystic Shawl 
+								un(2, i(3450)),	-- Faerleia's Shield 
+								un(2, i(3449)),	-- Mystic Shawl 
+								un(2, i(2818)),	-- Stretched Leather Trousers 
 							})),
 							un(40, qh(480, { 	-- The Weaver
-								un(34, i(3452)),	-- Ceranium Rod
-								un(34, i(3585)),	-- Camouflaged Tunic
+								un(2, i(3585)),	-- Camouflaged Tunic
+								un(2, i(3452)),	-- Ceranium Rod
 							})),
 							un(40, qh(491, { 	-- Wand to Bethor
-								un(34, i(3457)),	-- Stamped Trousers
-								un(34, i(3458)),	-- Rugged Mail Gloves
-								un(34, i(3581)),	-- Serrated Knife
+								un(2, i(3581)),	-- Serrated Knife
+								un(2, i(3457)),	-- Stamped Trousers
+								un(2, i(3458)),	-- Rugged Mail Gloves
 							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							nh(3578, { 	-- Ambermill Miner
 								un(7, i(4767)),	-- Coppercloth Gloves
 							}),
-							nh(1920, {	-- Dalaran Spellscribe
+							un(43, nh(1920, {	-- Dalaran Spellscribe
 								un(7, i(4437)),	-- Channeler's Staff
 								un(7, i(4436)),	-- Jewel-Encrusted Sash
-							}),
-							n(1944, {	-- Rot Hide Bruiser
+							})),
+							un(43, n(1944, {	-- Rot Hide Bruiser
 								un(7, i(4439)),	-- Bruiser Club
 								un(7, i(5975)),	-- Ruffian Belt
-							}),
-							n(2283,	{	-- Ravenclaw Regent
+							})),
+							un(43, n(2283,	{	-- Ravenclaw Regent
 								un(7, i(6628)),	-- Raven's Claws
 								un(7, i(5969)),	-- Regent's Cloak
-							}),
-							n(1948, {	-- Snarlmane
+							})),
+							un(43, n(1948, {	-- Snarlmane
 								un(7, i(4445)),	-- Flesh Carver
-							}),
+							})),
 						}),
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),

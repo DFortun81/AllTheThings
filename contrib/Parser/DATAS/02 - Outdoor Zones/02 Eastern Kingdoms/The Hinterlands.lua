@@ -6,6 +6,12 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(26, {	-- The Hinterlands
 			["groups"] = {
+				n(-228, {	-- Flight Path
+					fp(43), -- Aerie Peak, The Hinterlands
+					fp(617), -- Hiri'watha Research Station, The Hinterlands
+					fp(76), -- Revantusk Village, The Hinterlands
+					fp(618), -- Stormfeather Outpost, The Hinterlands
+				}),
 				n(-25, {	-- Pet Battle
 					p(449),	-- Brown Marmot
 					p(393),	-- Cockroach
@@ -16,6 +22,13 @@ _.Zones =
 					q(31910),	-- David Kosse (DAILY)
 				}),
 				n(-17, { 	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(4897, {		-- Hinterlands Quests
+						crit(1),		-- Stormfeather Outpost / Jintha'Alor
+						crit(2),		-- Jintha'Alor / Hiri'watha
+						crit(3),		-- Quel'Danil Lodge / Revantusk Village
+					}),
+]]--				
 					qa(26486, {	-- 99 Bottles of Booze on the Beach
 						["groups"] = {
 						},
@@ -947,29 +960,46 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qh(7850, {	-- Dark Vessels
-								un(34, i(19118)),	-- Nature's Breath
+								un(2, i(19118)),	-- Nature's Breath
 							})),
 							un(40, q( 1446, {	-- Jammal'an the Prophet
-								un(34, i(11123)),	-- Rainstrider Leggings
-								un(34, i(11124)),	-- Helm of Exile
+								un(2, i(11124)),	-- Helm of Exile
+								un(2, i(11123)),	-- Rainstrider Leggings
+							})),
+							un(40, qh(7862, {	-- Job Opening: Guard Captain of Revantusk Village
+								un(2, i(19120)),	-- Rune of the Guard Captain
+							})),
+							un(40, qh(7847, {	-- Return to Primal Torntusk
+								un(2, i(19115)),	-- Flask of Forest Mojo
+								un(2, i(19114)),	-- Highland Bow
 							})),
 							un(40, qa(2994, {	-- Saving Sharpbeak
-								un(34, i(9651)),	-- Gryphon Rider's Stormhammer
-								un(34, i(9652)),	-- Gryphon Rider's Leggings
+								un(2, i(9652)),	-- Gryphon Rider's Leggings
+								un(2, i(9651)),	-- Gryphon Rider's Stormhammer
 							})),
 							un(40, qh(7849, {	-- Separation Anxiety
-								un(34, i(19117)),	-- Laquered Wooden Plate Legplates
-								un(34, i(19116)),	-- Greenleaf Handwraps
+								un(2, i(19116)),	-- Greenleaf Handwraps
+								un(2, i(19117)),	-- Laquered Wooden Plate Legplates
+							})),
+							un(40, qh(7815, {	-- Snapjaws, Mon!
+								i(19022),	-- Nat Pagle's Extreme Angler FC-5000 NOTE: Now available from quests 26485 & 26211
+							})),
+							un(40, qh(7843, {	-- The Final Message to the Wildhammer
+								un(2, i(19119)),	-- Owlbeast Hide Gloves
+							})),
+							un(40, qh(7861, {	-- Wanted: Vile Priestess Hexx and Her Minions
+								un(2, i(19121)),	-- Deep Woodlands Cloak
+								un(2, i(19159)),	-- Woven Ivy Necklace
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
 						n(  0, {	-- Zone Drop (Legacy)
-							n(7996, { -- Qiaga the Keeper
-								i(9241, {  -- Sacred Mallet
+							un(43, n(7996, { -- Qiaga the Keeper
+								un(2, i(9241, {  -- Sacred Mallet
 									un(2, i(9240)), -- Mallet of Zul'Farrak
-								}),
-							}),
+								})),
+							})),
 						}),
 					},
 				}),

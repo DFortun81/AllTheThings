@@ -16,6 +16,13 @@ _.Zones =
 					p(420)		-- Toad
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					h(ach(4908, {	-- Ghostlands Quests
+						crit(1),		-- Citizens of Tranquillien
+						crit(2),		-- Farstrider Enclave
+						crit(3),		-- Dar'Khan Drathir
+					})),
+]]--				
 					qh( 9275, {	-- A Little Dash of Seasoning
 						["groups"] = {
 						},

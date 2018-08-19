@@ -6,6 +6,10 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(18, {	-- Tirisfal Glades
 			["groups"] = {
+				n(-228, {	-- Flight Path
+					fp(460),	-- Brill, Tirisfal Glades
+					fp(384),	-- The Bulwark, Tirisfal
+				}),
 				n(-25, {	-- Pet Battle
 					p(417),		-- Bat
 					p(646),		-- Chicken
@@ -567,19 +571,24 @@ _.Zones =
 						n(-17, {	-- Quests (Legacy)
 							un(40, qh(5650, {	-- Garments of Darkness
 								["groups"] = {
-									un(34, i(16607)),	-- Garments of Darkness
+									un(2, i(16607)),	-- Garments of Darkness
 								},
 								["races"] =  { 5 },	-- Undead
 								["classes"] = { 5 },	-- Priest
 							})),
 							un(40, qh(1822, {	-- Heirloom Weapon
 								["groups"] = {
-									un(34, i(7115)),	-- Heirloom Axe
-									un(34, i(7117)),	-- Heirloom Hammer
-									un(34, i(7116)),	-- Heirloom Dagger
-									un(34, i(7118)),	-- Heirloom Sword
+									un(2, i(7115)),	-- Heirloom Axe
+									un(2, i(7117)),	-- Heirloom Hammer
+									un(2, i(7116)),	-- Heirloom Dagger
+									un(2, i(7118)),	-- Heirloom Sword
 								},
 								["classes"] = { 1 },	-- Warrior
+							})),
+							un(40, qh(5237, {	-- Mission Accomplished!
+								un(2, i(15799)),	-- Heroic Commendation Medal
+								un(2, i(15800)),	-- Intrepid Shortsword
+								un(2, i(15801)),	-- Valiant Shortsword
 							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
@@ -703,7 +712,7 @@ _.Zones =
 									})),
 									un(40, q(5650, {	-- Garments of Darkness
 										["groups"] = {
-											un(34, i(16607)),	-- Garments of Darkness
+											un(2, i(16607)),	-- Garments of Darkness
 										},
 										["races"] =  { 5 },	-- Undead
 										["classes"] = { 5 },	-- Priest
@@ -725,10 +734,10 @@ _.Zones =
 									})),
 									un(40, qh(1822, {	-- Heirloom Weapon
 										["groups"] = {
-											un(34, i(7115)),	-- Heirloom Axe
-											un(34, i(7117)),	-- Heirloom Hammer
-											un(34, i(7116)),	-- Heirloom Dagger
-											un(34, i(7118)),	-- Heirloom Sword
+											un(2, i(7115)),	-- Heirloom Axe
+											un(2, i(7117)),	-- Heirloom Hammer
+											un(2, i(7116)),	-- Heirloom Dagger
+											un(2, i(7118)),	-- Heirloom Sword
 										},
 										["classes"] = { 1 },	-- Warrior
 									})),

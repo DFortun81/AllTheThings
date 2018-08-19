@@ -28,6 +28,10 @@ _.Zones =
 					},
 					["u"] = 2,					
 				}),				
+				n(-228, {	-- Flight Path
+					fp(12),	-- Darkshire, Duskwood
+					fp(622), -- Raven Hill, Duskwood
+				}),
 				n(-25,  {	-- Pet Battle
 					p(398), 	-- Black Rat
 					p(646), 	-- Chicken
@@ -46,6 +50,15 @@ _.Zones =
 					})),
 				}),
 				n(-17,  {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(12430, {	-- Duskwood Quests
+						crit(1),		-- The Legend of Stalvan
+						crit(2),		-- Morbent Fel
+						crit(3),		-- A Hermit's Errand
+						crit(4),		-- Mor'ladim
+						crit(5),		-- Citizens of Darkshire
+					})),
+]]--				
 --					qg(43730, qa(26720)),	-- A Curse We Cannot Lift
 					qg(576, qa(26797, { -- A Daughters Love
 						i(60937),
@@ -352,10 +365,8 @@ _.Zones =
 						dr(01.6, i(6578)),	-- Defender Leggings
 						dr(01.5, i(6577)),	-- Defender Gauntlets
 						dr(01.3, i(9773)),	-- Greenweave Robe
-						nld({     -- Legacy
-							un(7, i(4474)), 	-- Ravenwood Bow
-							un(7, i(6204)),	-- Tribal Worg Helm
-						}),						
+						un(7, i(4474)), 	-- Ravenwood Bow
+						un(7, i(6204)),		-- Tribal Worg Helm			
 					}), 
 					n(91592, {	-- Forlorn Composer
 						["groups"] = {
@@ -395,11 +406,9 @@ _.Zones =
 						dr(01.0, i(6574)),	-- Defender Bracers
 						dr(01.0, i(6576)),	-- Defender Girdle
 						dr(01.0, i(9812)),	-- Fortified Cloak
-						dr(01.0, i(9774)),	-- Greenweave Vest					
-						nld({     -- Legacy
-							un(7, i(3018)),	-- Hide of Lupos
-							un(7, i(3227)),	-- Nightbane Staff
-						}),					
+						dr(01.0, i(9774)),	-- Greenweave Vest	
+						un(7, i(3018)),	-- Hide of Lupos
+						un(7, i(3227)),	-- Nightbane Staff
 					}), 
 					n(45811, { 	-- Marina DeSirrus
 						dr(05.0, i(9814)),	-- Fortified Belt
@@ -498,10 +507,8 @@ _.Zones =
 						dr(01.1, i(6577)),	-- Defender Gauntlets
 						dr(01.0, i(9772)),	-- Greenweave Leggings
 						dr(01.0, i(6587)),	-- Scouting Trousers	
-						nld({     -- Legacy
-							un(7, i(4448)),	-- Husk of Naraxis
-							un(7, i(4449)),	-- Naraxis' Fang						
-						}),						
+						un(7, i(4448)),	-- Husk of Naraxis
+						un(7, i(4449)),	-- Naraxis' Fang
 					}), 
 					n(534, { 	-- Nefaru
 						dr(09.0, i(9814)),	-- Fortified Belt
@@ -536,11 +543,9 @@ _.Zones =
 						dr(01.0, i(6593)),	-- Battleforge Cloak
 						dr(01.0, i(6602)),	-- Dervish Bracers
 						dr(01.0, i(9817)),	-- Fortified Spaulders
-						dr(01.0, i(9795)),	-- Ivycloth Gloves		
-						nld({     -- Legacy
-							un(7, i(4477)),	-- Nefarious Buckler
-							un(7, i(4476)),	-- Beastwalker Robe
-						}),								
+						dr(01.0, i(9795)),	-- Ivycloth Gloves	
+						un(7, i(4477)),	-- Nefarious Buckler
+						un(7, i(4476)),	-- Beastwalker Robe		
 					}), 
 					n(45739, { 	-- The Unknown Soldier
 						dr(06.0, i(9776)),	-- Bandit Boots
@@ -661,64 +666,68 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(231, {	-- A Daughter's Love
-								un(34, i(2000)),	-- Archeus
+								un(2, i(2000)),	-- Archeus
 							})),
 							un(40, qa(253, {	-- Bride of the Embalmer
-								un(34, i(3560)),	-- Mantle of Honor
-								un(34, i(6223)),	-- Crest of Darkshire
+								un(2, i(6223)),	-- Crest of Darkshire
+								un(2, i(3560)),	-- Mantle of Honor
+							})),
+							un(40, qa(245, {	-- [DEPRECATED]Eight-Legged Menaces
+								un(2, i(3559)),	-- Night Watch Gauntlets
 							})),
 							un(40, qa(181, {	-- Look to the Stars
-								un(34, i(7106)),	-- Zodiac Gloves
-								un(34, i(7107)),	-- Belt of the Stars
+								un(2, i(7107)),	-- Belt of the Stars
+								un(2, i(7106)),	-- Zodiac Gloves
 							})),
 							un(40, qa( 55, {	-- Morbent Fel
-								un(34, i(2954)),	-- Night Watch Pantaloons
-								un(34, i(2953)),	-- Watch Master's Cloak
-								un(34, i(1282)),	-- Sparkmetal Coif
-								un(34, i(7344)),	-- Torch of Holy Flame
+								un(2, i(2954)),	-- Night Watch Pantaloons
+								un(2, i(1282)),	-- Sparkmetal Coif
+								un(2, i(7344)),	-- Torch of Holy Flame
+								un(2, i(2953)),	-- Watch Master's Cloak
 							})),
 							un(40, qh(1383, {	-- Nothing But The Truth
-								un(34, i(6832)),	-- Cloak of Blight
-								un(34, i(11265)),	-- Cragwood Maul
+								un(2, i(6832)),	-- Cloak of Blight
+								un(2, i(11265)),	-- Cragwood Maul
 							})),
 							un(40, qa( 98, {	-- The Legend of Stalvan
-								un(34, i(2044)),	-- Crescent of Forlorn Spirits
+								un(2, i(2044)),	-- Crescent of Forlorn Spirits
+								un(2, i(2043)),	-- Ring of Forlorn Spirits
 							})),
 							un(40, qa(101, {	-- The Totem of Infliction
-								un(34, i(1131)),	-- Totem of Infliction
+								un(2, i(1131)),	-- Totem of Infliction
 							})),
 							un(40, qa(223, {	-- Worgen in the Woods
-								un(34, i(2902)),	-- Cloak of the Faith
-								un(34, i(1547)),	-- Shield of the Faith
-								un(34, i(5244)),	-- Consecrated Wand
+								un(2, i(2902)),	-- Cloak of the Faith
+								un(2, i(5244)),	-- Consecrated Wand
+								un(2, i(1547)),	-- Shield of the Faith
 							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(210, { 	-- Bone Chewer
 								un(7, i(886)),		-- Black Metal Shortsword
 							}),
-							n(570, { 	-- Brain Eater
+							un(43, n(570, { 	-- Brain Eater
 								un(7, i(2015)), 	-- Black Metal War Axe
-							}),
-							n(771, {	-- Commander Felstrom
+							})),
+							un(43, n(771, {	-- Commander Felstrom
 								un(7, i(4465)),	-- Felstrom's Gauntlets
 								un(7, i(4464)),	-- Trouncing Boots
-							}),
-							n(910, {	-- Defias Enchanter
+							})),
+							un(43, n(910, {	-- Defias Enchanter
 								un(7, i(5773)),	-- Pattern: Robes of Arcana
-							}),
+							})),
 							n(1270, { 	-- Fetid Corpse
 								un(7, i(2014)),	-- Black Metal Greatsword
 							}),
 							n(3, {		-- Flesh Eater
 								un(7, i(885)),		-- Black Metal Axe
 							}),
-							n(569, { 	-- Green Recluse
+							un(43, n(569, { 	-- Green Recluse
 								un(7, i(2021)), 	-- Green Carapace Shield
-							}),
-							n(503, {	-- Lord Malathrom
+							})),
+							un(43, n(503, {	-- Lord Malathrom
 								un(7, i(4462)),	-- Cloak of Rot
-							}),
+							})),
 							n(205, { 	-- Nightbane Dark Runner
 								un(7, i(2232)),	-- Dark Runner Boots
 							}),
@@ -731,36 +740,36 @@ _.Zones =
 							n(206, {	-- Nightbane Vile Fang
 								un(7, i(897)),		-- Madwolf Bracers
 							}),
-							n(539, { 	-- Pygmy Venom Web Spider
+							un(43, n(539, { 	-- Pygmy Venom Web Spider
 								un(7, i(2020)),	-- Hollowfang Blade
-							}),
+							})),
 							n(202, { 	-- Rotting Horror
 								un(7, i(880)),		-- Staff of Horrors
 							}),
-							n(787, { 	-- Skeletal Healer
+							un(43, n(787, { 	-- Skeletal Healer
 								un(7, i(2013)),	-- Cryptbone Staff
-							}),
-							n(1110, {	-- Skeletal Raider
+							})),
+							un(43, n(1110, {	-- Skeletal Raider
 								un(7, i(2018)),	-- Skeletal Longsword
-							}),
-							n(785, { 	-- Skeletal Warder 
+							})),
+							un(43, n(785, { 	-- Skeletal Warder 
 								un(7, i(2017)),	-- Glowing Leather Bracers
-							}),
-							n(1487, { 	-- Splinter Fist Enslaver
+							})),
+							un(43, n(1487, { 	-- Splinter Fist Enslaver
 								un(7, i(914)), 	-- Large Ogre Chain Vest
-							}),
+							})),
 							n(1251, { 	-- Splinter Fist Firemonger
 								un(7, i(2226)),	-- Ogremage Staff
 							}),	
-							n(891, { 	-- Splinter Fist Fire Weaver
+							un(43, n(891, { 	-- Splinter Fist Fire Weaver
 								un(7, i(2226)),	-- Ogremage Staff
-							}),
+							})),
 							n(889, {	-- Splinter Fist Ogre
 								un(7, i(911)),	-- Ironwood Treebranch
 							}),
-							n(892, { 	-- Splinter Fist Taskmaster
+							un(43, n(892, { 	-- Splinter Fist Taskmaster
 								un(7, i(2227)),	-- Heavy Ogre War Axe
-							}),
+							})),
 							n(217, {	-- Venom Web Spider
 								un(7, i(899)),	-- Venom Web Fang
 							}),

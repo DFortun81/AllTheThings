@@ -6,6 +6,10 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(48, {	-- Loch Modan
 			["groups"] = {
+				n(-228, {	-- Flight Path
+					fp(555),	-- Farstrider Lodge, Loch Modan
+					fp(8),		-- Thelsamar, Loch Modan
+				}),
 				n(-25, {	-- Pet Battle
 					p(441), 	-- Alpine Hare
 					p(437), 	-- Little Black Lamb
@@ -16,6 +20,14 @@ _.Zones =
 					p(379), 	-- Squirrel
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(4899, {	-- Loch Modan Quests
+						crit(1),		-- The Road to Thelsamar
+						crit(2),		-- The Axis of Awful
+						crit(3),		-- Twilight Threats
+						crit(4),		-- The Farstrider Lodge
+					})),
+]]--				
 					qg(1092, qa(26148, { -- A Decisive Strike
 						i(58989),	-- Belt of the Valley of Kings
 						i(58990),	-- Rugelfuss Bracers
@@ -224,10 +236,8 @@ _.Zones =
 						dr(02.0, i(6540)),	-- Willow Pants
 						dr(01.9, i(6550)),	-- Soldier's Wristguards
 						dr(01.6, i(9749)),	-- Simple Blouse	
-						nld({     -- Legacy
-							un(7, i(1938)),	-- Block Mallet
-							un(7, i(1215)),	-- Support Girdle						
-						}),						
+						un(7, i(1938)),	-- Block Mallet
+						un(7, i(1215)),	-- Support Girdle			
 					}), 
 					o(207496, { -- Dark Iron Treasure Chest
 						["groups"] = {
@@ -346,10 +356,8 @@ _.Zones =
 						dr(01.3, i(9788)),	-- Raider's Belt
 						dr(01.3, i(6545)),	-- Soldier's Armor
 						dr(01.3, i(6540)),	-- Willow Pants
-						nld({     -- Legacy
-							un(7, i(6197)),	-- Loch Croc Hide Vest
-							un(7, i(3563)),	-- Seafarer's Pantaloons						
-						}),		
+						un(7, i(6197)),	-- Loch Croc Hide Vest
+						un(7, i(3563)),	-- Seafarer's Pantaloons	
 					}), 
 					n(45398, { 	-- Grizlak
 						dr(13.0, i(9756)),	-- Gypsy Trousers
@@ -378,11 +386,9 @@ _.Zones =
 						dr(01.3, i(6542)),	-- Willow Cape
 						dr(01.2, i(9785)),	-- Raider's Bracers
 						dr(01.1, i(6554)),	-- Bard's Gloves
-						dr(01.1, i(6550)),	-- Soldier's Wristguards					
-						nld({     -- Legacy
-							un(7, i(2284)),	-- Rat Cloth Cloak
-							un(7, i(3305)),	-- Brackwater Leggings
-						}),	
+						dr(01.1, i(6550)),	-- Soldier's Wristguards		
+						un(7, i(2284)),	-- Rat Cloth Cloak
+						un(7, i(3305)),	-- Brackwater Leggings
 					}), 
 					n(1425, { 	-- Kubb
 						dr(11.0, i(6336)),	-- Infantry Tunic
@@ -407,9 +413,7 @@ _.Zones =
 						dr(01.1, i(9786)),	-- Raider's Cloak
 						dr(01.0, i(6556)),	-- Bard's Bracers
 						dr(01.0, i(6537)),	-- Willow Boots
-						nld({     -- Legacy
-							un(7, i(6195)),	-- Wax-Polished Armor						
-						}),	
+						un(7, i(6195)),	-- Wax-Polished Armor	
 					}), 
 					n(14268, { 	-- Lord Condar
 						dr(10.0, i(6547)),	-- Soldier's Gauntlets
@@ -464,10 +468,8 @@ _.Zones =
 						dr(01.9, i(6336)),	-- Infantry Tunic
 						dr(01.8, i(68753)),	-- Imbued Infantry Bracers
 						dr(01.5, i(9763)),	-- Cadet Leggings
-						nld({     -- Legacy
-							un(7, i(2241)),	-- Desperado Cape
-							un(7, i(3571)),	-- Trogg Beater
-						}),						
+						un(7, i(2241)),	-- Desperado Cape
+						un(7, i(3571)),	-- Trogg Beater
 					}), 
 					n(45369, { 	-- Morick Darkbrew
 						dr(11.0, i(6512)),	-- Disciple's Robe
@@ -702,103 +704,105 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(283, { -- A Dark Threat Looms
-								un(34, i(2907)),	-- Dwarven Tree Chopper
-								un(34, i(2908)),	-- Thornblade 
+								un(2, i(2907)),	-- Dwarven Tree Chopper
+								un(2, i(2908)),	-- Thornblade 
 							})),
 							un(40, qa(26155, {	-- A Dark Threat, Remembered
-								un(34, i(59013)),	-- Stonesmirk Breastplate
-								un(34, i(59012)),	-- Disarming Gloves
-								un(34, i(59011)),	-- Nicolette's Robes
+								un(2, i(59012)),	-- Disarming Gloves
+								un(2, i(59011)),	-- Nicolette's Robes
+								un(2, i(59013)),	-- Stonesmirk Breastplate
 							})),
 							un(40, qa(257, { -- A Hunter's Boast
-								un(34, i(2903)),	-- Daryl's Hunting Bow 
-								un(34, i(2904)),	-- Daryl's Hunting Rifle
+								un(2, i(2903)),	-- Daryl's Hunting Bow 
+								un(2, i(2904)),	-- Daryl's Hunting Rifle
 							})),
 							un(40, qa(258, { -- A Hunter's Challenge
-								un(34, i(59000)),	-- Daryl's Axe
-								un(34, i(859)),		-- Fine Cloth Shirt
-								un(34, i(59001)),	-- Ill-Worn Belt
-								un(34, i(59002)),	-- Unabashed Vest
-								un(32, i(3572)),	-- Daryl's Shortsword
+								un(2, i(59000)),	-- Daryl's Axe
+								un(2, i(3572)),		-- Daryl's Shortsword
+								un(2, i(859)),		-- Fine Cloth Shirt
+								un(2, i(59001)),	-- Ill-Worn Belt
+								un(2, i(59002)),	-- Unabashed Vest
 							})),
 							un(40, qa(704, {	-- Agmond's Fate
-								un(34, i(4980)),	-- Prospector Gloves
+								un(2, i(4980)),	-- Prospector Gloves
 							})),
 							un(40, qa(2038, { -- Bingles' Missing Supplies
-								un(34, i(58975)),	-- Gnomish All-Purpose Ray Gun
-								un(34, i(58974)),	-- Mechanical Wand
-								un(34, i(58973)),	-- Monte's Scythe
-								un(32, i(12522)),	-- Bingles' Flying Gloves 
+								un(2, i(12522)),	-- Bingles' Flying Gloves 
+								un(2, i(58975)),	-- Gnomish All-Purpose Ray Gun
+								un(2, i(58974)),	-- Mechanical Wand
+								un(2, i(58973)),	-- Monte's Scythe
 							})),
 							un(40, qa(385, { -- Crocolisk Hunting
-								un(34, i(59007)),	-- Croc-Scale Gloves
-								un(34, i(59006)),	-- Croc-Skin Boots
-								un(34, i(59005)),	-- Marek's Dagger
+								un(2, i(59007)),	-- Croc-Scale Gloves
+								un(2, i(59006)),	-- Croc-Skin Boots
+								un(2, i(59005)),	-- Marek's Dagger
 							})),
 							un(40, qa(307, { -- Filthy Paws
-								un(32, i(3166)),	-- Ironheart Chain 
-								un(32, i(3160)),	-- Ironplate Buckler 
-								un(32, i(3161)),	-- Robe of the Keeper 
+								un(2, i(3166)),	-- Ironheart Chain 
+								un(2, i(3160)),	-- Ironplate Buckler 
+								un(2, i(3161)),	-- Robe of the Keeper 
 							})),
 							un(40, qa(297, { -- Gathering Idols	
-								un(32, i(5241)),	-- Dwarven Flamestick 
-								un(32, i(6186)),	-- Trogg Slicer 
-								un(32, i(3154)),	-- Thelsamar Axe
+								un(2, i(5241)),	-- Dwarven Flamestick 
+								un(2, i(3154)),	-- Thelsamar Axe
+								un(2, i(6186)),	-- Trogg Slicer 
 							})),
 							un(40, qa(217, { -- In Defense of the King's Lands
-								un(34, i(1436)),	-- Frontier Britches 
-								un(34, i(6187)),	-- Dwarven Defender 
-								un(34, i(1832)),	-- Lucky Trousers 
+								un(2, i(6187)),	-- Dwarven Defender 
+								un(2, i(1436)),	-- Frontier Britches 
+								un(2, i(1832)),	-- Lucky Trousers 
 							})),
 							un(40, qa(309, { -- Protecting the Shipment
-								un(32, i(3217)),	-- Foreman Belt 
-								un(32, i(6188)),	-- Mud Stompers 
+								un(2, i(3217)),	-- Foreman Belt 
+								un(2, i(6188)),	-- Mud Stompers 
 							})),
 							un(40, qa(416, { -- Rat Catching
-								un(34, i(58977)), 	-- Algaz Shield
-								un(34, i(58976)), 	-- Rat Ear Cloak
-								un(32, i(3217)),	-- Foreman Belt 
-								un(32, i(6188)),	-- Mud Stompers 
+								un(2, i(58977)), 	-- Algaz Shield
+								un(2, i(3217)),	-- Foreman Belt 
+								un(2, i(6188)),	-- Mud Stompers 
+								un(2, i(58976)), 	-- Rat Ear Cloak
 							})),
 							un(40, qa(25117, {	-- Scout's Dishonor
-								un(34, i(59017)),	-- Strange Smelling Boots
-								un(34, i(59016)),	-- Clue-Finder's Leggings
-								un(34, i(59015)),	-- Bracers of Alarm
-								un(34, i(59014)),	-- Kizmet's Wrap
+								un(2, i(59016)),	-- Clue-Finder's Leggings
+								un(2, i(59015)),	-- Bracers of Alarm
+								un(2, i(59014)),	-- Kizmet's Wrap
+								un(2, i(59017)),	-- Strange Smelling Boots
 							})),
 							un(40, qa(256, { -- WANTED: Chok'sul
-								un(34, i(59026)), 	-- Bounty Hunter's Bracers
-								un(34, i(59027)), 	-- Thelsamar Chainmail
-								un(32, i(6191)),	-- Kimbra Boots 
+								un(2, i(59028)),	-- Bluntnose's Signet
+								un(2, i(59026)), 	-- Bounty Hunter's Bracers
+								un(2, i(6191)),		-- Kimbra Boots 
+								un(2, i(1449)),		-- Minor Channeling Ring
+								un(2, i(59027)), 	-- Thelsamar Chainmail
 							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
-							na(7170, { 	-- Thragomm <Horde Runner>
+							un(43, na(7170, { 	-- Thragomm <Horde Runner>
 								un(7, i(4949)),	-- Orcish Cleaver
-							}),
+							})),
 						}),
 						n(  0, {	-- Zone Drop (Legacy)
-							n(1222, {	-- Dark Iron Sapper
+							un(43, n(1222, {	-- Dark Iron Sapper
 								un(7, i(2274)),	-- Sapper's Gloves
-							}),
-							n(1180, {	-- Mo'grosh Brute
+							})),
+							un(43, n(1180, {	-- Mo'grosh Brute
 								un(7, i(2823)),	-- Mo'grosh Can Opener
-							}),
-							n(1179, {	-- Mo'grosh Enforcer
+							})),
+							un(43, n(1179, {	-- Mo'grosh Enforcer
 								un(7, i(2821)),	-- Mo'grosh Masher
-							}),
-							n(1178, {	-- Mo'grosh Ogre
+							})),
+							un(43, n(1178, {	-- Mo'grosh Ogre
 								un(7, i(2822)),	-- Mo'grosh Toothpick
-							}),
-							n(1166, { 	-- Stonesplinter Seer
+							})),
+							un(43, n(1166, { 	-- Stonesplinter Seer
 								un(7, i(2266)),	-- Stonesplinter Dagger
-							}),
-							n(1163, { 	-- Stonesplinter Skullthumper	
-								un(7, i(2265)),	-- Stonesplinter Axe
-							}),
-							n(1202, { 	-- Tunnel Rat Kobold
-								un(7, i(2281)),	 -- Rodentia Flint Axe
-							}),
+							})),
+							un(43, n(1163, { 	-- Stonesplinter Skullthumper	
+								i(2265),	-- Stonesplinter Axe NOTE: Item now drops from Stonesplinter Shaman (1197)
+							})),
+							un(43, n(1202, { 	-- Tunnel Rat Kobold
+								i(2281),	 -- Rodentia Flint Axe NOTE: Item now drops from Tunnel Rat Forager (1176)
+							})),
 						}),
 					},
 				}),

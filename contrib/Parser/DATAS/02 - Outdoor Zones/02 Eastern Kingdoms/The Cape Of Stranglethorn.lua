@@ -6,6 +6,12 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(210, {	-- The Cape of Stranglethorn
 			["groups"] = {			
+				n(-228, {	-- Flight Path
+					fp(18),		-- Booty Bay, Stranglethorn
+					fp(19),		-- Booty Bay, Stranglethorn
+					fp(591),	-- Explorers' League Digsite, Stranglethorn
+					fp(592),	-- Hardwrench Hideaway, Stranglethorn
+				}),
 				n(-25, {	-- Pet Battle
 					{			-- Baby Ape
 					["speciesID"] = 411,
@@ -945,25 +951,58 @@ _.Zones =
 				n(-40, {	-- Legacy
 				  	n(-17, {	-- Quests (Legacy)
 						un(40, q( 617, {	-- Akiris by the Bundle
-							un(34, i(4117)),	-- Scorching Sash
+							un(2, i(4117)),	-- Scorching Sash
+						})),
+						un(40, qa(613, {	-- Cracking Maury's Foot
+							un(2, i(4129)),	-- Collection Plate
+						})),
+						un(40, qa(628, {	-- Excelsior
+							un(2, i(4109)),	-- Excelsior Boots
+						})),
+						un(40, qa(618, {	-- Facing Negolash
+							i(4130),	-- Smotts' Compass NOTE: Now rewarded from quest 26602 A Dish Best Served Cold
+						})),
+						un(40, qh(8554, {	-- Facing Negolash
+							i(4130),	-- Smotts' Compass NOTE: Now rewarded from quest 26602 A Dish Best Served Cold
 						})),
 						un(40, q( 213, {	-- Hostile Takeover
-							un(34, i(4121)),	-- Gemmed Gloves
+							un(2, i(4121)),	-- Gemmed Gloves
+						})),
+						un(40, qa(576, {	-- Keep An Eye Out
+							i(4114),	-- Darktide Cape NOTE: Awarded from new version of quest 26614
+						})),
+						un(40, q(630, {	-- Message in a Bottle
+							un(2, i(4118)),	-- Poobah's Nose Ring
+						})),
+						un(40, qh(573, {	-- Mok'thardin's Enchantment
+							un(2, i(4112)),	-- Choker of the High Shaman
 						})),
 						un(40, q( 348, {	-- Stranglethorn Fever
-							un(34, i(4113)),	-- Medicine Blanket
+							un(2, i(4113)),	-- Medicine Blanket
+						})),
+						un(40, q(608, {	-- The Bloodsail Buccaneers
+							un(2,  i(4138)),	-- Blackwater Tunic
+						})),
+						un(40, qa(614, {	-- The Captain's Chest
+							i(11469),	-- Bloodband Bracers NOTE: Awarded from new version of quest 26599
+						})),
+						un(40, qh(8551, {	-- The Captain's Chest
+							i(11469),	-- Bloodband Bracers NOTE: Awarded from new version of quest 26599
 						})),
 						un(40, qa(611, {	-- The Curse of the Tides
-							un(34, i(4120)),	-- Robe of Crystal Waters
+							un(2, i(4120)),	-- Robe of Crystal Waters
 						})),
 						un(40, q( 600, {	-- Venture Company Mining
-							un(34, i(5253)), -- Goblin Igniter
-							un(34, i(4128)), -- Silver Spade
+							un(2, i(5253)), -- Goblin Igniter
+							un(2, i(4128)), -- Silver Spade
+						})),
+						un(40, qa(621, {	-- Zanzil's Secret
+							un(2, i(4131)),	-- Belt of Corruption
 						})),
 					}),
 					n(-16, {	-- Rares (Legacy)
 						n(1493, {	-- Mok'rash the Cleaver
-							un( 2, i(3985)),	-- Monogrammed Sash
+							un(2, i(3985)),	-- Monogrammed Sash
 						}),
 					}),
 					--n(  0, {	-- Zone Drop (Legacy)

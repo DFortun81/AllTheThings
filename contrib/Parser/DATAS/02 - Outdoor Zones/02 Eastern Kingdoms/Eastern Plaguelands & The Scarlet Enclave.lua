@@ -6,6 +6,16 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(23, {		-- Eastern Plaguelands
 			["groups"] = {
+				n(-228, {	-- Flight Path
+					fp(87), -- Crown Guard Tower, Eastern Plaguelands
+					fp(86), -- Eastwall Tower, Eastern Plaguelands
+					fp(67), -- Light's Hope Chapel, Eastern Plaguelands
+					fp(68), -- Light's Hope Chapel, Eastern Plaguelands
+					fp(630), -- Light's Shield Tower, Eastern Plaguelands
+					fp(85), -- Northpass Tower, Eastern Plaguelands
+					fp(84), -- Plaguewood Tower, Eastern Plaguelands
+					fp(383), -- Thondroril River, Eastern Plaguelands
+				}),
 				n(-25, {	-- Pet Battle
 					p(626), 	-- Bat
 					p(398), 	-- Black Rat
@@ -1437,101 +1447,107 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qr(q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
-								un(34, i(22657)),	-- Amulet of the Dawn
-								un(34, i(22667)),	-- Bracers of Hope
-								un(34, i(22668)),	-- Bracers of Subterfuge
-								un(34, i(22659)),	-- Medallion of the Dawn
-								un(34, i(22678)),	-- Talisman of Ascendance
-								un(34, i(22656)),	-- The Purifier
+								un(2, i(22657)),	-- Amulet of the Dawn
+								un(2, i(22667)),	-- Bracers of Hope
+								un(2, i(22668)),	-- Bracers of Subterfuge
+								un(2, i(22659)),	-- Medallion of the Dawn
+								un(2, i(22678)),	-- Talisman of Ascendance
+								un(2, i(22656)),	-- The Purifier
 							}))),
 							un(40, qr(q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
-								un(34, i(22657)),	-- Amulet of the Dawn
-								un(34, i(22667)),	-- Bracers of Hope
-								un(34, i(22668)),	-- Bracers of Subterfuge
-								un(34, i(22659)),	-- Medallion of the Dawn
-								un(34, i(22678)),	-- Talisman of Ascendance
-								un(34, i(22656)),	-- The Purifier
+								un(2, i(22657)),	-- Amulet of the Dawn
+								un(2, i(22667)),	-- Bracers of Hope
+								un(2, i(22668)),	-- Bracers of Subterfuge
+								un(2, i(22659)),	-- Medallion of the Dawn
+								un(2, i(22678)),	-- Talisman of Ascendance
+								un(2, i(22656)),	-- The Purifier
 							}))),
 							un(40, qr(q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
-								un(34, i(22657)),	-- Amulet of the Dawn
-								un(34, i(22667)),	-- Bracers of Hope
-								un(34, i(22668)),	-- Bracers of Subterfuge
-								un(34, i(22659)),	-- Medallion of the Dawn
-								un(34, i(22678)),	-- Talisman of Ascendance
-								un(34, i(22656)),	-- The Purifier
+								un(2, i(22657)),	-- Amulet of the Dawn
+								un(2, i(22667)),	-- Bracers of Hope
+								un(2, i(22668)),	-- Bracers of Subterfuge
+								un(2, i(22659)),	-- Medallion of the Dawn
+								un(2, i(22678)),	-- Talisman of Ascendance
+								un(2, i(22656)),	-- The Purifier
 							}))),
 							un(40, qr(q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
-								un(34, i(22657)),	-- Amulet of the Dawn
-								un(34, i(22667)),	-- Bracers of Hope
-								un(34, i(22668)),	-- Bracers of Subterfuge
-								un(34, i(22659)),	-- Medallion of the Dawn
-								un(34, i(22678)),	-- Talisman of Ascendance
-								un(34, i(22656)),	-- The Purifier
+								un(2, i(22657)),	-- Amulet of the Dawn
+								un(2, i(22667)),	-- Bracers of Hope
+								un(2, i(22668)),	-- Bracers of Subterfuge
+								un(2, i(22659)),	-- Medallion of the Dawn
+								un(2, i(22678)),	-- Talisman of Ascendance
+								un(2, i(22656)),	-- The Purifier
 							}))),
 							un(40, qr(q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
-								un(34, i(22681)),	-- Band of Piety
-								un(34, i(22680)),	-- Band of Resolution
-								un(34, i(22688)),	-- Verimonde's Last Resort
-								un(34, i(22690)),	-- Leggings of the Plague Hunter
-								un(34, i(22689)),	-- Sanctified Leather Helm
+								un(2, i(22681)),	-- Band of Piety
+								un(2, i(22680)),	-- Band of Resolution
+								un(2, i(22688)),	-- Verimonde's Last Resort
+								un(2, i(22690)),	-- Leggings of the Plague Hunter
+								un(2, i(22689)),	-- Sanctified Leather Helm
 							}))),
 							un(40, qr(q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
-								un(34, i(22681)),	-- Band of Piety
-								un(34, i(22680)),	-- Band of Resolution
-								un(34, i(22688)),	-- Verimonde's Last Resort
-								un(34, i(22690)),	-- Leggings of the Plague Hunter
-								un(34, i(22689)),	-- Sanctified Leather Helm
+								un(2, i(22681)),	-- Band of Piety
+								un(2, i(22680)),	-- Band of Resolution
+								un(2, i(22688)),	-- Verimonde's Last Resort
+								un(2, i(22690)),	-- Leggings of the Plague Hunter
+								un(2, i(22689)),	-- Sanctified Leather Helm
 							}))),
 							un(40, qr(q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
-								un(34, i(22681)),	-- Band of Piety
-								un(34, i(22680)),	-- Band of Resolution
-								un(34, i(22688)),	-- Verimonde's Last Resort
-								un(34, i(22690)),	-- Leggings of the Plague Hunter
-								un(34, i(22689)),	-- Sanctified Leather Helm
+								un(2, i(22681)),	-- Band of Piety
+								un(2, i(22680)),	-- Band of Resolution
+								un(2, i(22688)),	-- Verimonde's Last Resort
+								un(2, i(22690)),	-- Leggings of the Plague Hunter
+								un(2, i(22689)),	-- Sanctified Leather Helm
 							}))),
 							un(40, qr(q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
-								un(34, i(22681)),	-- Band of Piety
-								un(34, i(22680)),	-- Band of Resolution
-								un(34, i(22688)),	-- Verimonde's Last Resort
-								un(34, i(22690)),	-- Leggings of the Plague Hunter
-								un(34, i(22689)),	-- Sanctified Leather Helm
+								un(2, i(22681)),	-- Band of Piety
+								un(2, i(22680)),	-- Band of Resolution
+								un(2, i(22688)),	-- Verimonde's Last Resort
+								un(2, i(22690)),	-- Leggings of the Plague Hunter
+								un(2, i(22689)),	-- Sanctified Leather Helm
 							}))),
 							un(40, q(4971, {	-- A Matter of Time
-								un(34, i(15812)),	-- Orchid Amice
-								un(34, i(15813)),	-- Gold Link Belt
+								un(2, i(15813)),	-- Gold Link Belt
+								un(2, i(15812)),	-- Orchid Amice
+							})),
+							un(40, qh(6135, {	-- Duskwing, Oh How I Hate Thee...
+								un(2, i(16994)),	-- Duskwing Gloves
+								un(2, i(16995)),	-- Duskwing Mantle
 							})),
 							un(40, qg(16376, q(9237, {	-- Glacial Cloak [Quest]
-								un(34, i(22658)),	-- Glacial Cloak
+								un(8, i(22658)),	-- Glacial Cloak
 							}))),
 							un(40, q(6024, {	-- Hameya's Plea
-								un(34, i(15814)),	-- Hameya's Slayer
-								un(34, i(15815)),	-- Hameya's Cloak
+								un(2, i(15815)),	-- Hameya's Cloak
+								un(2, i(15814)),	-- Hameya's Slayer
 							})),
 							un(40, q( 5942, {	-- Hidden Treasures
-								un(34, i(15857)),	-- Magebane Scion
+								un(2, i(15856)),	-- Archlight Talisman
+								un(2, i(15857)),	-- Magebane Scion
+								un(2, i(15855)),	-- Ring of Protection
 							})),
-							un(40, qdg({
+							un(40, qdg({		-- Houses of the Holy
 								["questID"] = 5243,	-- Houses of the Holy
 								["qg"]	= 11036, -- Leonid Barthalomew the Revered
 								["groups"] = {
-									un(34, i(13216)),	-- Crown of the Penitent
-									un(34, i(13217)),	-- Band of the Penitent
+									un(2, i(13217)),	-- Band of the Penitent
+									un(2, i(13216)),	-- Crown of the Penitent
 								},
 							})),
 							un(40, q( 5265, {	-- The Argent Hold
-								un(34, i(13246)),	-- Argent Avenger
-								un(34, i(13243)),	-- Argent Defender
-								un(34, i(13249)),	-- Argent Crusader
+								un(2, i(13246)),	-- Argent Avenger
+								un(2, i(13249)),	-- Argent Crusader
+								un(2, i(13243)),	-- Argent Defender
 							})),
 							un(40, qh(6136, {	-- The Corpulent One
-								un(34, i(17002)),	-- Ichor Spitter
-								un(34, i(17003)),	-- Skullstone Hammer
-								un(34, i(17004)),	-- Sarah's Guide
+								un(2, i(17002)),	-- Ichor Spitter
+								un(2, i(17004)),	-- Sarah's Guide
+								un(2, i(17003)),	-- Skullstone Hammer
 							})),
 							un(40, q( 6041, {	-- When Smokey Sings, I Get Violent
-								un(34, i(16992)),	-- Smokey's Explosive Launcher
-								un(34, i(16993)),	-- Smokey's Fireshooter
-								un(34, i(17523)),	-- Smokey's Drape
+								un(2, i(17523)),	-- Smokey's Drape
+								un(2, i(16992)),	-- Smokey's Explosive Launcher
+								un(2, i(16993)),	-- Smokey's Fireshooter
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)

@@ -274,8 +274,8 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(417, {	-- A Pilot's Revenge NOTE: Replaced by quest 26855 which has a different loot table
-								un(2, i(2218)),	-- Craftsman's Dagger
 								un(2, i(1009)),	-- Compact Hammer
+								un(2, i(2218)),	-- Craftsman's Dagger
 							})),
 							un(40, qa(5625, {	-- Garments of the Light
 								["groups"] = {
@@ -285,8 +285,8 @@ _.Zones =
 								["classes"] = { 5 },	-- Priest
 							})),
 							un(40, qdg(qa(4126, {	-- Hurley Blackbreath
-								un(2, i(11964)),	-- Swiftstrike Cudgel
 								un(2, i(12000)),	-- Limb Cleaver
+								un(2, i(11964)),	-- Swiftstrike Cudgel
 							}))),
 							un(40, qa(466, {	-- Search for Incendicite
 								un(2, i(3565)),	-- Beerstained Gloves

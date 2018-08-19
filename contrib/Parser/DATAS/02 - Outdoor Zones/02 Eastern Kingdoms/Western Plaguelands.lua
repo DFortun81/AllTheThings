@@ -6,6 +6,13 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(22, {	-- Western Plaguelands
 			["groups"] = {
+				n(-228, {	-- Flight Path
+					fp(649), -- Andorhal, Western Plaguelands
+					fp(650), -- Andorhal, Western Plaguelands
+					fp(66),  -- Chillwind Camp, Western Plaguelands
+					fp(672), -- Hearthglen, Western Plaguelands
+					fp(651), -- The Menders' Stead, Western Plaguelands
+				}),
 				n(-25, {	-- Pet Battle
 					p(398), 	-- Black Rat
 					p(456), 	-- Blighthawk
@@ -1269,10 +1276,42 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							un(40, qa(211, {	-- Alas, Andorhal
+								un(2, i(17759)),	-- Mark of Resolution
+							})),
+							un(40, qh(105, {	-- Alas, Andorhal
+								un(2, i(17759)),	-- Mark of Resolution
+							})),
+							un(40, qa(4986, {	-- Glyphed Oaken Branch
+								un(2, i(15804)),	-- Cerise Drape
+							})),
+							un(40, qh(4987, {	-- Glyphed Oaken Branch
+								un(2, i(15804)),	-- Cerise Drape
+							})),
 							un(40, q(5944, {	-- In Dreams
-								un(34, i(15413)),	-- Ornate Adamantium Breastplate
-								un(34, i(15418)),	-- Shimmering Platinum Warhammer
-								un(34, i(15421)),	-- Shroud of the Exile
+								un(2, i(16058)),	-- Fordring's Seal
+								un(2, i(15411)),	-- Mark of Fordring
+								un(2, i(15413)),	-- Ornate Adamantium Breastplate
+								un(2, i(15418)),	-- Shimmering Platinum Warhammer
+								un(2, i(15421)),	-- Shroud of the Exile
+							})),
+							un(40, q(5060, {	-- Locked Away
+								un(2, i(13474)),	-- Farmer Dalson's Shotgun
+								un(2, i(13475)),	-- Dalson Family Wedding Ring
+							})),
+							un(40, qa(5238, {	-- Mission Accomplished!
+								un(2, i(15799)),	-- Heroic Commendation Medal
+								un(2, i(15800)),	-- Intrepid Shortsword
+								un(2, i(15801)),	-- Valiant Shortsword
+							})),
+							un(40, qa(5344, {	-- The Last Barov
+								un(2, i(14023)),	-- Barov Peasant Caller
+							})),
+							un(40, qh(5342, {	-- The Last Barov
+								un(2, i(14022)),	-- Barov Peasant Caller
+							})),
+							un(40, q(5051, {	-- Two Halves Become One
+								un(2, i(13473)),	-- Felstone Good Luck Charm
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)

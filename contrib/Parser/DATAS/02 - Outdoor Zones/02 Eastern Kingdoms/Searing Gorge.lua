@@ -5,7 +5,12 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(32, {	-- Searing Gorge
-			["groups"] = {			
+			["groups"] = {	
+				n(-228, {	-- Flight Path
+					fp(673),	-- Iron Summit, Searing Gorge
+					fp(74),		-- Thorium Point, Searing Gorge
+					fp(75),		-- Thorium Point, Searing Gorge
+				}),
 				n(-25, {	-- Pet Battle
 					-- q(31912, {	--Kortas Darkhammer
 					-- }),
@@ -752,13 +757,6 @@ _.Zones =
 						},
 						["description"] = "As of 7.3, Dark Iron Steamsmiths drop |cff3399ffPattern: Shadoweave Mask|r, which is required for the |cff3399ffLucid Nightmare|r mount."
 					}),
-					un(2, i(21547, {	-- Recipe: Elixir of Greater Firepower
-						["crs"] = {
-							5844,	-- Dark Iron Slaver
-							5846,	-- Dark Iron Taskmaster
-							8637,	-- Dark Iron Watchman
-						},
-					})),
 					n(47463,       { 	-- Searing Flamewraith
 						["groups"] = {
 							i(142359, { 	-- Lava Oil
@@ -788,46 +786,64 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(7723, {	-- Curse These Fat Fingers
-								un(34, i(19126)),	-- Slagplate Gauntlets
+								un(2, i(19126)),	-- Slagplate Gauntlets
 							})),
 							un(40, qa(7724, {	-- Fiery Menace!
-								un(34, i(19125)),	-- Seared Mail Girdle
+								un(2, i(19125)),	-- Seared Mail Girdle
+							})),
+							un(40, qa(7727, {	-- Incendosaurs? Whateverosaur is More Like It
+								un(2, i(19141)),	-- Luffa
 							})),
 							un(40, qh(4450, {	-- Ledger from Tanaris
-								un(34, i(11860)),	-- Charged Lightning Rod
-								un(34, i(11861)),	-- Girdle of Reprisal
+								un(2, i(11860)),	-- Charged Lightning Rod
+								un(2, i(11861)),	-- Girdle of Reprisal
+							})),
+							un(40, qa(3378, {	-- Prayer to Elune
+								un(2, i(10745)),	-- Kaylari Shoulders
+								un(2, i(10746)),	-- Runesteel Vambraces
 							})),
 							un(40, q(3566, {	-- Rise, Obsidion!
-								un(34, i(10740)),	-- Centurion Legplates
-								un(34, i(10741)),	-- Lordrec Helmet
-								un(34, i(10739)),	-- Ring of Fortitude
+								un(2, i(10740)),	-- Centurion Legplates
+								un(2, i(10741)),	-- Lordrec Helmet
+								un(2, i(10739)),	-- Ring of Fortitude
 							})),
 							un(40, q( 7728, {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
-								un(34, i(19124)),	-- Slagplate Leggings
-								un(34, i(19123)),	-- Everwarm Handwraps
+								un(2, i(19123)),	-- Everwarm Handwraps
+								un(2, i(19124)),	-- Slagplate Leggings
 							})),
 							un(40, q( 3463, {	-- Set Them Ablaze
-								un(34, i(10742)),	-- Dragonflight Leggings
-								un(34, i(10743)),	-- Drakefire Headguard
-								un(34, i(10744)),	-- Axe of the Ebon Blade
+								un(2, i(10744)),	-- Axe of the Ebon Blade
+								un(2, i(10742)),	-- Dragonflight Leggings
+								un(2, i(10743)),	-- Drakefire Headguard
 							})),
 							un(40, q( 3379, {	-- Shadoweaver
 								["groups"] = {
-									un(34, i(10461)),	-- Shadowy Bracers
+									un(2, i(10461)),	-- Shadowy Bracers
 								},
 								["requireSkill"] = 197,	-- Tailoring
 							})),
 							un(40, q( 3385, {	-- The Undermarket
 								["groups"] = {
-									un(34, i(10462)),	-- Shadowy Belt
+									un(2, i(10462)),	-- Shadowy Belt
 								},
 								["requireSkill"] = 197,	-- Tailoring
+							})),
+							un(40, qa(7701, {	-- WANTED: Overseer Maltorius
+								un(2, i(19127)),	-- Charred Leather Tunic
+								un(2, i(19128)),	-- Seared Mail Vest
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
+						n(  0, {	-- Zone Drop (Legacy)
+							un(2, i(21547, {	-- Recipe: Elixir of Greater Firepower
+								["crs"] = {
+									5844,	-- Dark Iron Slaver
+									5846,	-- Dark Iron Taskmaster
+									8637,	-- Dark Iron Watchman
+								},
+							})),
+						}),
 					},
 				}),
 			},

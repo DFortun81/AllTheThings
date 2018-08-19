@@ -6,12 +6,15 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(15, {	-- Badlands
 			["groups"] = {
-				n(-228, {	-- Flight Master
-					fp(21),		-- New Kargath, Badlands
+				n(-4, {		-- Achievement
+					ach(5444),	-- Ready, Set, Goat!
+				}),
+				n(-228, {	-- Flight Path
 					fp(632),	-- Bloodwatcher Point, Badlands
-					fp(633),	-- Dustwind Dig, Badlands
 					fp(634),	-- Dragon's Mouth, Badlands
+					fp(633),	-- Dustwind Dig, Badlands
 					fp(635),	-- Fuselight, Badlands
+					fp(21),		-- New Kargath, Badlands
 				}),
 				n(-25, {	-- Pet Battle
 					p(406), 	-- Beetle
@@ -915,11 +918,6 @@ _.Zones =
 					}),
 				}),
 				n(0,   {	-- Zone Drop
-					un(7, i(2621, {	-- Cowl of Necromancy
-						["crs"] = {
-							2740,	-- Shadowforge Darkweaver
-						},
-					})),
 					i(10822, {	-- Dark Whelpling (PET!)
 						["crs"] = {
 							46916,	-- Nyxondra's Broodling
@@ -938,7 +936,10 @@ _.Zones =
 						un(40, qa(719, {	-- A Dwarf and His Tools
 							un(2, i(4978)),	-- Ryedol's Hammer
 						})),
-						un(40, qdg(h({
+						un(40, qa(762, {	-- An Ambassador of Evil
+							un(2, i(4987)),	-- Dwarf Captain's Sword
+						})),
+						un(40, qdg(h({		-- Badlands Reagent Run II
 							["questID"] = 2258,	-- Badlands Reagent Run II
 							["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
 							["sourceQuests"] = 2202,	-- Source Quest: Uldaman Reagent Run
@@ -952,11 +953,11 @@ _.Zones =
 						}))),
 						un(40, qh(793, {	-- Broken Alliances
 							un(2, i(11193)),	-- Blazewind Breastplate
+							un(2, i(11196)),	-- Mindburst Medallion
 							un(2, i(11194)),	-- Prismscale Hauberk
 							un(2, i(11195)),	-- Warforged Chestplate
-							un(2, i(11196)),	-- Mindburst Medallion
 						})),
-						un(40, qdg({
+						un(40, qdg({		-- Liquid Stone
 							["questID"] = 715,	-- Liquid Stone
 							["qg"] = 2920,	-- Quest Giver: Lucien Tosselwrench
 							["groups"] = {
@@ -964,21 +965,34 @@ _.Zones =
 							},
 						})),
 						un(40, qdg(qh(4134, {	-- Lost Thunderbrew Recipe
-							un(2, i(11964)),	-- Swiftstrike Cudgel
 							un(2, i(12000)),	-- Limb Cleaver
+							un(2, i(11964)),	-- Swiftstrike Cudgel
 						}))),
+						un(40, qa(739, {	-- Murdaloc
+							un(2, i(4983)),	-- Rock Pulverizer
+						})),
 						un(40, q(1137, {	-- News for Fizzle
 							un(2, i(6729)),	-- Fizzle's Zippy Lighter
 							un(2, i(6732)),	-- Gnomish Mechanic's Gloves
 						})),
+						un(40, qdg(qh(2341, {	-- Necklace Recovery, Take 3
+							un(2, i(7888)),		-- Jarkal's Enhancing Necklace
+						}))),
 						un(40, q( 705, {	-- Pearl Diving
 							un(2, i(4086)),	-- Flash Rifle
 							un(2, i(5248)),	-- Flash Wand
 						})),
 						un(40, q(2418, {	-- Power Stones
-							un(2, i( 9522)),	-- Energized Stone Circle
 							un(2, i(10358)),	-- Duracin Bracers
+							un(2, i( 9522)),	-- Energized Stone Circle
 							un(2, i(10359)),	-- Everlast Boots
+						})),
+						un(40, qdg(qa(2361, {	-- Restoring the Necklace
+							un(2, i(7673)),		-- Talvash's Enhancing Necklace
+						}))),
+						un(40, qa(733, {	-- Scrounging
+							un(2, i(4653)),	-- Ironheel Boots
+							un(2, i(4652)),	-- Salbac Shield
 						})),
 						un(40, q( 709, {	-- Solution to Doom
 							un(2, i(4746)),	-- Doomsayer's Robe
@@ -986,24 +1000,30 @@ _.Zones =
 						un(40, q( 716, {	-- Stone Is Better than Cloth
 							un(2, i(4979)),	-- Enchanted Stonecloth Bracers
 						})),
+						un(40, qdg(qa(1139, {	-- The Lost Tablets of Will
+							un(2, i(6723)),		-- Medal of Courage
+						}))),
 						un(40, qdg(qh(4724, {	-- The Pack Mistress
 							un(2, i(15824)),	-- Astoria Robes
-							un(2, i(15825)),	-- Traphook Jerkin
 							un(2, i(15827)),	-- Jadescale Breastplate
+							un(2, i(15825)),	-- Traphook Jerkin
 						}))),
 						un(40, qdg(qh(4063, {	-- The Rise of the Machines
 							un(2, i(12109)),	-- Azure Moon Amice
-							un(2, i(12110)),	-- Raincaster Drape
 							un(2, i(12108)),	-- Basaltscale Armor
 							un(2, i(12111)),	-- Lavaplate Gauntlets
+							un(2, i(12110)),	-- Raincaster Drape
 						}))),
+						un(40, q(778, {	-- This Is Going to Be Hard
+							un(2, i(2820)),	-- Nifty Stopwatch
+						})),
 						un(40, qa(717, {	-- Tremors of the Earth
 							un(2, i(11193)),	-- Blazewind Breastplate
+							un(2, i(11196)),	-- Mindburst Medallion
 							un(2, i(11194)),	-- Prismscale Hauberk
 							un(2, i(11195)),	-- Warforged Chestplate
-							un(2, i(11196)),	-- Mindburst Medallion
 						})),
-						un(40, qdg({
+						un(40, qdg({		-- Uldaman Reagent Run
 							["questID"] = 2202,	-- Uldaman Reagent Run
 							["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
 							["sourceQuests"] = 2258,	-- Source Quest: Badlands Reagent Run
@@ -1019,8 +1039,13 @@ _.Zones =
 							un(7, i(1521)),	-- Lumbering Ogre Axe
 						})),
 					}),
-					--n(  0, {	-- Zone Drop (Legacy)
-					--}),
+					n(  0, {	-- Zone Drop (Legacy)
+						un(7, i(2621, {	-- Cowl of Necromancy
+						["crs"] = {
+							2740,	-- Shadowforge Darkweaver
+						},
+					})),
+					}),
 				}),
 			},
 			["lvl"] = 40,	

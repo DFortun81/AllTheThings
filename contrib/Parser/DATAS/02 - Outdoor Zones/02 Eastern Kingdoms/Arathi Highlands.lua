@@ -6,6 +6,10 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(14, {	-- Arathi Highlands
 			["groups"] = {
+				n(-228, {	-- Flight Path
+					fp(17), -- Hammerfall, Arathi
+					fp(16),	-- Refuge Pointe, Arathi
+				}),
 				n(-25, {	-- Pet Battle
 					p(443), 	-- Grasslands Cottontail
 					p(386), 	-- Prairie Dog
@@ -14,6 +18,13 @@ _.Zones =
 					p(445), 	-- Tiny Twister
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(4896, {		-- Arathi Highlands Quests
+						crit(1),		-- Faldir's Cove
+						crit(2),		-- Refuge Pointe / Galen's Fall
+						crit(3),		-- Myzrael's Tale / Hammerfall
+					}),
+]]--
 					qh(26081, {	-- Alina's Reward (awarded "Galen's Fall" criteria)
 						["groups"] = {
 							i( 59194),	-- Sandals of Satisfaction
@@ -1056,67 +1067,85 @@ _.Zones =
 							2557,	-- Witherbark Shadow Hunter
 						},
 					}),
-					un(7, i(3341,  {	-- Gauntlets of Ogre Strength
-						["crs"] = {
-							2564,	-- Bounderfist Enforcer
-						},
-					})),
 					i(1297,        {	-- Robes of the Shadowcaster
 						["crs"] = {
 							2553,	-- Witherbark Shadowcaster
 						},
 					}),
-					un(7, i(2623,  {	-- Holy Diadem
-						["crs"] = {
-							2782,	-- Caretaker Alaric
-							2780,	-- Caretaker Nevlin
-							2781,	-- Caretaker Weston
-						},
-					})),
-					un(7, i(5624,  {	-- Circlet of the Order
-						["crs"] = {
-							2584,	-- Stromgarde Defender
-						},
-					})),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qh(679, {	-- Call to Arms
-								un(34, i(9520)),	-- Silent Hunter
-								un(34, i(9521)),	-- Skullsplitter
+								un(2, i(9520)),	-- Silent Hunter
+								un(2, i(9521)),	-- Skullsplitter
+							})),
+							un(40, q(667, {		-- Death From Below
+								un(2, i(4550)),	-- Coldwater Ring
+								un(2, i(4549)),	-- Seafire Band
 							})),
 							un(40, q(  662, {	-- Deep Sea Salvage
-								un(34, i(4511)),	-- Black Water Hammer
+								un(2, i(4511)),	-- Black Water Hammer
 							})),
-							un(40, qh(4545, {	-- Foul Magics
-								un(34, i(4543)),	-- White Drakeskin Cap
-								un(34, i(4545)),	-- Radiant Silver Bracers
+							un(40, q(664, {		-- Drowned Sorrows
+								un(2, i(4509)),	-- Seawolf Gloves
+							})),
+							un(40, qh(673, {	-- Foul Magics
+								un(2, i(4545)),	-- Radiant Silver Bracers
+								un(2, i(4543)),	-- White Drakeskin Cap
 							})),
 							un(40, qa( 661, {	-- Hints of a New Plague?
-								un(34, i(15455)),	-- Dustfall Robes
-								un(34, i(15456)),	-- Lightstep Leggings
+								un(2, i(15455)),	-- Dustfall Robes
+								un(2, i(15456)),	-- Lightstep Leggings
 							})),
 							un(40, qa( 697, {	-- Malin's Request
-								un(34, i( 4975)),	-- Vigilant Buckler
-								un(34, i(15104)),	-- Wingborne Boots
+								un(2, i( 4975)),	-- Vigilant Buckler
+								un(2, i(15104)),	-- Wingborne Boots
+							})),
+							un(40, qa(682, {	-- Stromgarde Badges
+								un(2, i(4741)),	-- Stromgarde Cavalry Leggings
 							})),
 							un(40, q(  666, {	-- Sunken Treasure
-								un(34, i(4547)),	-- Gnomish Zapper
-								un(34, i(4548)),	-- Servomechanic Sledgehammer
+								un(2, i(4547)),	-- Gnomish Zapper
+								un(2, i(4548)),	-- Servomechanic Sledgehammer
 							})),
-							un(40, qa( 685, {	-- Wanted! Otto and Falconcrest
-								un(34, i(5247)),	-- Rod of Sorrow
-								un(34, i(4745)),	-- War Rider Bracers
+							un(40, qh(680, {	-- The Real Threat
+								un(2, i(4976)),	-- Mistspray Kilt
+								un(2, i(4977)),	-- Sword of Hammerfall
+							})),
+							un(40, q(646, {		-- Trol'kalar
+								un(2, i(4508)),	-- Blood-Tinged Armor
+								un(2, i(4507)),	-- Pit Fighter's Shield
 							})),
 							un(40, qa( 684, {	-- Wanted! Marez Cowl
-								un(34, i(4744)),	-- Arcane Runed Bracers
+								un(2, i(4744)),	-- Arcane Runed Bracers
+							})),
+							un(40, qa( 685, {	-- Wanted! Otto and Falconcrest
+								un(2, i(5247)),	-- Rod of Sorrow
+								un(2, i(4745)),	-- War Rider Bracers
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
+						n(  0, {	-- Zone Drop (Legacy)
+							un(7, i(3341,  {	-- Gauntlets of Ogre Strength
+								["crs"] = {
+									2564,	-- Bounderfist Enforcer
+								},
+							})),
+							un(7, i(2623,  {	-- Holy Diadem
+								["crs"] = {
+									2782,	-- Caretaker Alaric
+									2780,	-- Caretaker Nevlin
+									2781,	-- Caretaker Weston
+								},
+							})),
+							un(7, i(5624,  {	-- Circlet of the Order
+								["crs"] = {
+									2584,	-- Stromgarde Defender
+								},
+							})),
+						}),
 					},
 				}),
 			},

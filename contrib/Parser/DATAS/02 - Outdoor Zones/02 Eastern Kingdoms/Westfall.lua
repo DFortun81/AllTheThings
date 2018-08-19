@@ -5,7 +5,12 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(52, {	-- Westfall
-			["groups"] = {							
+			["groups"] = {
+				n(-228, {	-- Flight Path
+					fp(584), -- Furlbrow's Pumpkin Farm, Westfall
+					fp(583), -- Moonbrook, Westfall
+					fp(4),   -- Sentinel Hill, Westfall
+				}),
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken
 					p(385), 	-- Mouse
@@ -38,6 +43,13 @@ _.Zones =
 					}),
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(4903, {	-- Westfall Quests
+						crit(1),		-- Crime Scene Investigation
+						crit(2),		-- Investigating the Shadows
+						crit(3),		-- The Defias Brotherhood Reborn
+					})),
+]]--
 --					qg(, qa(26320)),	-- A Vision of the Past
 					qg(7024, qa(26291, { -- Big Trouble in Moonbrook
 						i(58926),	-- Gryan's Boots
@@ -214,10 +226,8 @@ _.Zones =
 						dr(01.1, i(9785)),	-- Raider's Bracers
 						dr(01.1, i(6546)),	-- Soldier's Leggings
 						dr(01.1, i(6543)),	-- Willow Bracers	
-						nld({     -- Legacy
-							un(7, i(2235)),		-- Brackclaw
-							un(7, i(6179)),		-- Privateer's Cape	
-						}),						
+						un(7, i(2235)),		-- Brackclaw
+						un(7, i(6179)),		-- Privateer's Cape						
 					}), 
 					n(596, { 	-- Brainwashed Noble
 						dr(18.0, i(9763)),	-- Cadet Leggings
@@ -248,9 +258,7 @@ _.Zones =
 						dr(01.2, i(9788)),	-- Raider's Belt
 						dr(01.1, i(9779)),	-- Bandit Cloak
 						dr(01.1, i(6545)),	-- Soldier's Armor	
-						nld({     -- Legacy
-							un(7, i(3902)),		-- Staff of Nobles
-						}),						
+						un(7, i(3902)),		-- Staff of Nobles			
 						
 					}), 
 					n(573, { 	-- Foe Reaper 4000
@@ -274,9 +282,7 @@ _.Zones =
 						dr(01.6, i(68755)),	-- Imbued Disciple's Gloves
 						dr(01.3, i(6550)),	-- Soldier's Wristguards
 						dr(01.0, i(6537)),	-- Willow Boots
-						nld({     -- Legacy
-							un(7, i(4434)),		-- Scarecrow Trousers
-						}),						
+						un(7, i(4434)),		-- Scarecrow Trousers				
 					}), 
 					n(115, {	-- Harvest Reaper
 						dr(1.1, i(820)),		-- Slicer Blade
@@ -299,11 +305,9 @@ _.Zones =
 						dr(01.6, i(9756)),	-- Gypsy Trousers
 						dr(01.6, i(68761)),	-- Imbued Infantry Boots
 						dr(01.5, i(68754)),	-- Imbued Disciple's Boots
-						dr(01.1, i(68760)),	-- Imbued Infantry Gauntlets	
-						nld({     -- Legacy
-							un(7, i(1387)),		-- Ghoulfang								
-							un(7, i(1314)),		-- Ghoul Fingers								
-						}),							
+						dr(01.1, i(68760)),	-- Imbued Infantry Gauntlets
+						un(7, i(1387)),		-- Ghoulfang								
+						un(7, i(1314)),		-- Ghoul Fingers	
 					}), 
 					n(599, { 	-- Marisa du'Paige
 						dr(07.0, i(9756)),	-- Gypsy Trousers
@@ -334,10 +338,8 @@ _.Zones =
 						dr(01.2, i(6545)),	-- Soldier's Armor
 						dr(01.1, i(6553)),	-- Bard's Trousers
 						dr(01.1, i(9788)),	-- Raider's Belt
-						nld({     -- Legacy
-							un(7, i(3019)),		-- Noble's Robe
-							un(7, i(4660)), 	-- Walking Boots								
-						}),							
+						un(7, i(3019)),		-- Noble's Robe
+						un(7, i(4660)), 	-- Walking Boots		
 					}),
 					n(1424, { 	-- Master Digger
 						dr(05.0, i(68759)),	-- Imbued Gypsy Cloak
@@ -365,9 +367,7 @@ _.Zones =
 						dr(02.0, i(6336)),	-- Infantry Tunic
 						dr(02.0, i(9747)),	-- Simple Britches
 						dr(01.9, i(9756)),	-- Gypsy Trousers
-						nld({     -- Legacy
-							un(7, i(6205)),		-- Burrowing Shovel
-						}),				
+						un(7, i(6205)),		-- Burrowing Shovel
 					}),					
 					n(506, { 	-- Sergeant Brashclaw
 						dr(12.0, i(6512)),	-- Disciple's Robe
@@ -393,10 +393,8 @@ _.Zones =
 						dr(01.0, i(6556)),	-- Bard's Bracers
 						dr(01.0, i(6548)),	-- Soldier's Girdle
 						dr(01.0, i(6543)),	-- Willow Bracers
-						nld({     -- Legacy
-							un(7, i(2203)),		-- Brashclaw's Chopper
-							un(7, i(2204)),		-- Brashclaw's Skewer
-						}),							
+						un(7, i(2203)),		-- Brashclaw's Chopper
+						un(7, i(2204)),		-- Brashclaw's Skewer		
 					}), 
 					n(519, { 	-- Slark
 						dr(08.0, i(68752)),	-- Imbued Infantry Belt
@@ -423,10 +421,8 @@ _.Zones =
 						dr(01.1, i(6266)),	-- Disciple's Vest
 						dr(01.1, i(68762)),	-- Imbued Cadet Cloak
 						dr(01.1, i(68761)),	-- Imbued Infantry Boots
-						nld({     -- Legacy
-							un(7, i(3188)),		-- Coral Claymore
-							un(7, i(6180)),		-- Slarkskin
-						}),								
+						un(7, i(3188)),		-- Coral Claymore
+						un(7, i(6180)),		-- Slarkskin		
 					}), 
 					n(462, { 	-- Vultros
 						dr(08.0, i(68743)),	-- Imbued Infantry Cloak
@@ -455,10 +451,8 @@ _.Zones =
 						dr(01.3, i(68754)),	-- Imbued Disciple's Boots
 						dr(00.7, i(115349)),	-- Talon of Vultros
 						dr(00.5, i(115348)),	-- Feathered Cape
-						nld({     -- Legacy
-							un(7, i(5971)),		-- Feathered Cape
-							un(7, i(4454)),		-- Talon of Vultros
-						}),							
+						un(7, i(5971)),		-- Feathered Cape
+						un(7, i(4454)),		-- Talon of Vultros
 					}), 
 				}),
 				n(-77, {	-- Special
@@ -537,51 +531,54 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, q(153, {	-- Red Leather Bandanas
-								un(34, i(3511)),	-- Cloak of the People's Militia
-								un(34, i(5944)),	-- Greaves of the People's Militia
-								un(34, i(12295)),	-- Leggings of the People's Militia
+								un(2, i(3511)),	-- Cloak of the People's Militia
+								un(2, i(5944)),	-- Greaves of the People's Militia
+								un(2, i(12295)),-- Leggings of the People's Militia
+							})),
+							un(40, qa(53, {	-- Sweet Amber
+								un(2, i(744)),	-- Thunderbrew's Boot Flask
 							})),
 							un(40, q(9, {	-- The Killing Fields
-								un(34, i(3578)),	-- Harvester's Pants
-								un(34, i(1561)),	-- Harvester's Robe
+								un(2, i(3578)),	-- Harvester's Pants
+								un(2, i(1561)),	-- Harvester's Robe
 							})),
 							un(40, q(14, {	-- The People's Militia
-								un(34, i(1566)),	-- Edge of the People's Militia 
-								un(34, i(1480)),	-- Fist of the People's Militia
-								un(34, i(12296)),	-- Spark of the People's Militia
+								un(2, i(1566)),	-- Edge of the People's Militia 
+								un(2, i(1480)),	-- Fist of the People's Militia
+								un(2, i(12296)),-- Spark of the People's Militia
 							})),
 							un(40, qc2(q(1652, { 	-- The Tome of Valor
-								un(34, i(9607)),	-- Bastion of Stormwind 
+								un(2, i(9607)),	-- Bastion of Stormwind 
 							}))),
 						}),
 						n(-16, {	-- Rares (Legacy)
-							n(619, { 	-- Defias Conjurer 
+							un(43, n(619, { 	-- Defias Conjurer 
 								un(7, i(1933)), 	-- Staff of Conjuring
-							}),
-							n(1726, { 	-- Defias Magician
+							})),
+							un(43, n(1726, { 	-- Defias Magician
 								un(7, i(1928)), 	-- Defias Mage Staff
-							}),
-							n(121, { 	-- Defias Pathstalker
+							})),
+							un(43, n(121, { 	-- Defias Pathstalker
 								un(7, i(832)),		-- Silver Defias Belt
-							}),
-							n(1725, { 	-- Defias Watchman
+							})),
+							un(43, n(1725, { 	-- Defias Watchman
 								un(7, i(1925)), 	-- Defias Rapier
-							}),
-							n(48334, { 	-- Dust Devil
+							})),
+							n(832, { 	-- Dust Devil (Reused ID is now Unbound Cyclone which is not attackable)
 								un(7, i(4290)), 	-- Dust Bowl
 							}),
-							n(36, {		-- Harvest Golem
+							un(43, n(36, {		-- Harvest Golem
 								un(7, i(816)),		-- Small Hand Blade
-							}),
+							})),
 							n(171, { 	-- Murloc Warrior
 								un(7, i(1394)),		-- Driftwood Club
 							}),
 							n(124, {	-- Riverpaw Brute
 								un(7, i(826)),		-- Brutish Riverpaw Axe
 							}),
-							n(125, { 	-- Riverpaw Overseer
+							un(43, n(125, { 	-- Riverpaw Overseer
 								un(7, i(1190)),		-- Overseer's Cloak
-							}),
+							})),
 						}),
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),

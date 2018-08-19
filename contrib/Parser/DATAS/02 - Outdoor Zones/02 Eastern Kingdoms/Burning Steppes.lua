@@ -6,11 +6,11 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(36, {	-- Burning Steppes
 			["groups"] = {
-				n(-228, {	-- Flight Master
-					fp(70),		-- Flame Crest, Burning Steppes
-					fp(71),		-- Morgan's Vigil, Burning Steppes
-					fp(675),	-- Flamestar Post, Burning Steppes
+				n(-228, {	-- Flight Path
 					fp(676),	-- Chiselgrip, Burning Steppes
+					fp(70),		-- Flame Crest, Burning Steppes
+					fp(675),	-- Flamestar Post, Burning Steppes
+					fp(71),		-- Morgan's Vigil, Burning Steppes
 				}),
 				n(-25, { 	-- Pet Battle
 					p(425), 	-- Ash Viper
@@ -1219,33 +1219,40 @@ _.Zones =
 					n(-17, {	-- Quests (Legacy)
 						un(40, qdg(q(4024, {	-- A Taste of Flame
 							un(2, i(12066)),	-- Shaleskin Cape
-							un(2, i(12082)),	-- Wyrmhide Spaulders
 							un(2, i(12083)),	-- Valconian Sash
+							un(2, i(12082)),	-- Wyrmhide Spaulders
 						}))),
 						un(40, qdg(qa(4263, {	-- Incendius!
-							un(2, i(12113)),	-- Sunborne Cape
-							un(2, i(12114)),	-- Nightfall Gloves
 							un(2, i(12112)),	-- Crypt Demon Bracers
+							un(2, i(12114)),	-- Nightfall Gloves
 							un(2, i(12115)),	-- Stalwart Clutch
+							un(2, i(12113)),	-- Sunborne Cape
 						}))),
+						un(40, qh(3822, {		-- Krom'Grul
+							un(2, i(11869)),	-- Sha'ni's Ring
+						})),
 						un(40, qdg(qa(5081, {	-- Maxwell's Mission
-							un(2, i(13958)),	-- Wyrmthalak's Shackles
-							un(2, i(13959)),	-- Omokk's Girth Restrainer
 							un(2, i(13961)),	-- Halcyon's Muzzle
-							un(2, i(13962)),	-- Vosh'gajin's Strand
+							un(2, i(13959)),	-- Omokk's Girth Restrainer
 							un(2, i(13963)),	-- Voone's Vice Grips
+							un(2, i(13962)),	-- Vosh'gajin's Strand
+							un(2, i(13958)),	-- Wyrmthalak's Shackles
 						}))),
+						un(40, qa(3825, {		-- Ogre Head On A Stick = Party
+							un(2, i(11868)),	-- Choking Band
+							un(2, i(11867)),	-- Maddening Gauntlets
+						})),
 						un(40, qdg(qa(4701, {	-- Put Her Down
 							un(2, i(15824)),	-- Astoria Robes
-							un(2, i(15825)),	-- Traphook Jerkin
 							un(2, i(15827)),	-- Jadescale Breastplate
+							un(2, i(15825)),	-- Traphook Jerkin
 						}))),
 						un(40, qdg(qh(4903, {	-- Warlord's Command
-							un(2, i(13958)),	-- Wyrmthalak's Shackles
-							un(2, i(13959)),	-- Omokk's Girth Restrainer
 							un(2, i(13961)),	-- Halcyon's Muzzle
-							un(2, i(13962)),	-- Vosh'gajin's Strand
+							un(2, i(13959)),	-- Omokk's Girth Restrainer
 							un(2, i(13963)),	-- Voone's Vice Grips
+							un(2, i(13962)),	-- Vosh'gajin's Strand
+							un(2, i(13958)),	-- Wyrmthalak's Shackles
 						}))),
 					}),
 					--n(-16, {	-- Rares (Legacy)

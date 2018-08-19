@@ -5,7 +5,14 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(56, {	-- Wetlands
-			["groups"] = {								
+			["groups"] = {	
+				n(-228, {	-- Flight Path
+					fp(553), -- Dun Modr, Wetlands
+					fp(552), -- Greenwarden's Grove, Wetlands
+					fp(7),   -- Menethil Harbor, Wetlands
+					fp(554), -- Slabchisel's Survey, Wetlands
+					fp(551), -- Whelgar's Retreat, Wetlands
+				}),
 				n(-25, {	-- Pet Battle
 					p(398), 	-- Black Rat
 					p(393), 	-- Cockroach
@@ -17,6 +24,14 @@ _.Zones =
 					p(418), 	-- Water Snake
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(12429, {	-- Wetlands Quests
+						crit(1),		-- Slabchisel Survey
+						crit(2),		-- The Flooding of Menethil
+						crit(3),		-- Engineers and Archaeologists
+						crit(4),		-- Wardens of the Wetlands
+					})),
+]]--				
 --[[
 					qg(, qa(25726)),	-- A Dumpy Job
 					qg(, qa(25820)),	-- A Mother's Worries
@@ -660,16 +675,6 @@ _.Zones =
 							42042,	-- Ebon Whelp
 						},
 					}),
-					un(7, i(1955, {	-- Dragonmaw Chain Boots
-						["crs"] = {
-							1035,	-- Dragonmaw Swamprunner
-						},
-					})),
-					un(7, i(753,  {	-- Dragonmaw Shortsword
-						["crs"] = {
-							1036,	-- Dragonmaw Centurion
-						},
-					})),
 					i(8499,       {	-- Tiny Crimson Whelpling (PET!)
 						["crs"] = {
 							41425,	-- Bluegill Murloc
@@ -702,76 +707,90 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							un(40, q(304, {	-- A Grim Task
+								un(2, i(2916)),	-- Gold Lion Shield
+								un(2, i(2917)),	-- Tranquil Ring
+							})),
 							un(40, qa(471, {	-- Apprentice's Duties
-								un(34, i(2545)),	-- Malleable Chain Leggings
-								un(34, i(3561)),	-- Resilient Poncho
-								-- i(3681),	-- Recipe: Crocolisk Gumbo (not unobtainable)
+								un(2, i(2545)),	-- Malleable Chain Leggings
+								un(2, i(3561)),	-- Resilient Poncho
+								i(3681),	-- Recipe: Crocolisk Gumbo (not unobtainable)
 							})),
 							un(40, qa(275, {	-- Blisters on The Land
-								un(34, i(3558)),	-- Fen Keeper Robe
-								un(34, i(1273)),	-- Forest Chain
-								un(34, i(2263)),	-- Phytoblade
+								un(2, i(3558)),	-- Fen Keeper Robe
+								un(2, i(1273)),	-- Forest Chain
+								un(2, i(2263)),	-- Phytoblade
 							})),
 							un(40, qa(293, {	-- Cleansing the Eye
-								un(34, i(2943)),	-- Eye of Paleth
+								un(2, i(2943)),	-- Eye of Paleth
 							})),
 							un(40, qa(474, {	-- Defeat Nek'rosh
-								un(34, i(3209)),	-- Ancient War Sword
-								un(34, i(6194)),	-- Barreling Reaper
+								un(2, i(3209)),	-- Ancient War Sword
+								un(2, i(6194)),	-- Barreling Reaper
 							})),
 							un(40, qa(296, {	-- Ormer's Revenge
-								un(34, i(3493)),	-- Raptor's End
-								un(34, i(3566)),	-- Raptorbane Armor
-								un(34, i(5246)),	-- Excavation Rod
+								un(2, i(5246)),	-- Excavation Rod
+								un(2, i(3493)),	-- Raptor's End
+								un(2, i(3566)),	-- Raptorbane Armor
 							})),
 							un(40, qa(286, {	-- Return the Statuette
-								un(34, i(2950)),	-- Icicle Rod
-								un(34, i(2949)),	-- Mariner Boots
+								un(2, i(2950)),	-- Icicle Rod
+								un(2, i(2949)),	-- Mariner Boots
 							})),
 							un(40, qa(633, {	-- The Thandol Span
-								un(34, i(4504)),	-- Dwarven Guard Cloak
-								un(34, i(4505)),	-- Swampland Trousers
+								un(2, i(4504)),	-- Dwarven Guard Cloak
+								un(2, i(4505)),	-- Swampland Trousers
 							})),
 							un(40, qa(299, {	-- Uncovering the Past
-								un(34, i(2913)),	-- Silk Mantle of Gamn
+								un(2, i(2913)),	-- Silk Mantle of Gamn
 							})),
 						}),
 						-- n(-16, {	-- Rares (Legacy)
 						-- }),
 						n(  0, {	-- Zone Drop (Legacy)
-							n(1028, { 	-- Bluegill Muckdweller
+							un(43, n(1028, { 	-- Bluegill Muckdweller
 								un(7, i(3022)),	-- Bluegill Breeches
-							}),
+							})),
 							n(1025, { 	-- Bluegill Puddlejumper
 								un(7, i(1560)),	-- Bluegill Sandals
 							}),
-							n(1027, { 	-- Bluegill Warrior
+							un(43, n(1027, { 	-- Bluegill Warrior
 								un(7, i(2046)),	-- Bluegill Kukri
-							}),
-							n(1069, { 	-- Crimson Whelp
+							})),
+							un(43, n(1069, { 	-- Crimson Whelp
 								un(7, i(3073)), 	-- Smoldering Pants
-							}),
-							n(1054, { 	-- Dark Iron Demolitionist
+							})),
+							un(43, n(1054, { 	-- Dark Iron Demolitionist
 								un(7, i(2084)), 	-- Darksteel Bastard Sword
-							}),
-							n(6523, {	-- Dark Iron Rifleman
+							})),
+							un(43, n(6523, {	-- Dark Iron Rifleman
 								un(7, i(6315)),	-- Steelarrow Crossbow
-							}),
-							n(1053, { 	-- Dark Iron Tunneler
+							})),
+							un(43, n(1053, { 	-- Dark Iron Tunneler
 								un(7, i(756)), 	-- Tunnel Pick
-							}),
-							n(1044, { 	-- Flamesnorting Whelp
+							})),
+							un(43, n(1044, { 	-- Flamesnorting Whelp
 								un(7, i(3072)), 	-- Smoldering Robe
-							}),
-							n(1043, { 	-- Lost Whelp
+							})),
+							un(43, n(1043, { 	-- Lost Whelp
 								un(7, i(3074)),	-- Smoldering Gloves
-							}),
-							n(1009, {	-- Mosshide Mistweaver
+							})),
+							un(43, n(1009, {	-- Mosshide Mistweaver
 								un(7, i(892)),		-- Gnoll Casting Gloves
-							}),
-							n(1042, {	-- Red Whelp
+							})),
+							un(43, n(1042, {	-- Red Whelp
 								un(7, i(3076)),	-- Smoldering Boots
-							}),
+							})),
+							un(7, i(1955, {	-- Dragonmaw Chain Boots
+								["crs"] = {
+									1035,	-- Dragonmaw Swamprunner
+								},
+							})),
+							un(7, i(753,  {	-- Dragonmaw Shortsword
+								["crs"] = {
+									1036,	-- Dragonmaw Centurion
+								},
+							})),
 						}),
 					},
 				}),
