@@ -13,8 +13,7 @@ profession(165, { -- Leatherworking
 	tier(1, {	-- Classic			
 		n(-26, { -- Drops
 			-- Holiday --
-			un(29, i(17722)), -- Pattern: Gloves of the Greatfather (Feast of Winter Veil - Smokywood Pastures Special Gift/Ticking Present)
-			
+			un(29, i(17722)), -- Pattern: Gloves of the Greatfather (Feast of Winter Veil - Smokywood Pastures Special Gift/Ticking Present)			
 			-- Classic --
 			i(4301), -- Pattern: Barbaric Belt
 			i(4297), -- Pattern: Barbaric Gloves
@@ -75,6 +74,13 @@ profession(165, { -- Leatherworking
 			un(8, i(19769)), -- Pattern: Primal Batskin Jerkin
 			un(8, i(15730)), -- Pattern: Red Dragonscale Breastplate
 			i(7288), -- Pattern: Rugged Leather Pants
+			un(8, i(15776)), -- Pattern: Runic Leather Armor
+			un(8, i(15745)), -- Pattern: Runic Leather Belt
+			un(8, i(15739)), -- Pattern: Runic Leather Bracers
+			un(8, i(15731)), -- Pattern: Runic Leather Gauntlets
+			un(8, i(15756)), -- Pattern: Runic Leather Headband
+			un(8, i(15765)), -- Pattern: Runic Leather Pants
+			un(8, i(15777)), -- Pattern: Runic Leather Shoulders
 			un(8, i(18519)), -- Pattern: Shifting Cloak
 			un(8, i(15753)), -- Pattern: Stormshroud Armor
 			un(8, i(21548)), -- Pattern: Stormshroud Gloves
@@ -99,7 +105,13 @@ profession(165, { -- Leatherworking
 			i(15749), -- Pattern: Volcanic Breastplate
 			i(15732), -- Pattern: Volcanic Leggings
 			i(15775), -- Pattern: Volcanic Shoulders
-			i(2407), -- Pattern: White Leather Jerkin			
+			i(2407), -- Pattern: White Leather Jerkin
+			un(8, i(15573)), -- Pattern: Wicked Leather Armor
+			un(8, i(15768)), -- Pattern: Wicked Leather Belt
+			un(8, i(19052)), -- Pattern: Wicked Leather Bracers
+			un(8, i(15725)), -- Pattern: Wicked Leather Gauntlets
+			un(8, i(15744)), -- Pattern: Wicked Leather Headband
+			un(8, i(15757)), -- Pattern: Wicked Leather Pants
 		}),	
 		n(-17, { -- Quests
 			qh(769, { -- Kodo Hide Bag (Thunder Bluff)
@@ -164,123 +176,6 @@ profession(165, { -- Leatherworking
 				},
 				["qg"] = 7852, -- Pratt McGrubben				
 			})),
-		}),
-		filter(200, { -- Recipes
-			recipe(6661), -- Pattern: Barbaric Harness		
-			recipe(7151), -- Pattern: Barbaric Shoulders					
-			recipe(226115), -- Pattern: Blue Chain Leggings
-			recipe(24654), -- Pattern: Blue Dragonscale Leggings
-			recipe(226119), -- Pattern: Chain Belt			
-			recipe(226113), -- Pattern: Chain Boots		
-			recipe(226116), -- Pattern: Chain Bracers		
-			recipe(226118), -- Pattern: Chain Gauntlets		
-			recipe(226112), -- Pattern: Chain Hauberk		
-			recipe(226117), -- Pattern: Chain Leggings		
-			recipe(226121), -- Pattern: Chain Pauldrons
-			recipe(226114), -- Pattern: Crackling Scale Breastplate
-			recipe(3818), -- Pattern: Cured Heavy Hide			
-			recipe(3816), -- Pattern: Cured Light Hide			
-			recipe(3817), -- Pattern: Cured Medium Hide			
-			recipe(19047), -- Pattern: Cured Rugged Hide		
-			recipe(10482), -- Pattern: Cured Thick Hide			
-			recipe(3766), -- Pattern: Dark Leather Belt		
-			recipe(2167), -- Pattern: Dark Leather Boots		
-			recipe(2168), -- Pattern: Dark Leather Cloak			
-			recipe(7135), -- Pattern: Dark Leather Pants
-			recipe(10650), -- Pattern: Dragonscale Breastplate			
-			recipe(36076), -- Pattern: Dragonstrike Leggings
-			recipe(9206), -- Pattern: Dusky Belt
-			recipe(9201), -- Pattern: Dusky Bracers
-			recipe(9196), -- Pattern: Dusky Leather Armor			
-			recipe(226122), -- Pattern: Element Grips			
-			recipe(2161), -- Pattern: Embossed Leather Boots			
-			recipe(2162), -- Pattern: Embossed Leather Cloak
-			recipe(3756), -- Pattern: Embossed Leather Gloves
-			recipe(3759), -- Pattern: Embossed Leather Pants
-			recipe(2160), -- Pattern: Embossed Leather Vest
-			recipe(10647), -- Pattern: Feathered Breastplate
-			recipe(3763), -- Pattern: Fine Leather Belt
-			recipe(2159), -- Pattern: Fine Leather Cloak
-			recipe(3761), -- Pattern: Fine Leather Tunic
-			recipe(9145), -- Pattern: Fletcher's Gloves
-			recipe(9198), -- Pattern: Frost Leather Cloak
-			recipe(10630), -- Pattern: Gauntlets of the Sea
-			recipe(24655), -- Pattern: Green Dragonscale Gauntlets
-			recipe(3774), -- Pattern: Green Leather Belt
-			recipe(3776), -- Pattern: Green Leather Bracers
-			recipe(7156), -- Pattern: Guardian Gloves				
-			recipe(7147), -- Pattern: Guardian Pants				
-			recipe(3753), -- Pattern: Handstitched Leather Belt			
-			recipe(2149), -- Pattern: Handstitched Leather Boots
-			recipe(9059), -- Pattern: Handstitched Leather Bracers
-			recipe(9058), -- Pattern: Handstitched Leather Cloak
-			recipe(2153), -- Pattern: Handstitched Leather Pants
-			recipe(7126), -- Pattern: Handstitched Leather Vest
-			recipe(3780), -- Pattern: Heavy Armor Kit
-			recipe(20649), -- Pattern: Heavy Leather				
-			recipe(226132), -- Pattern: Heavy Scale Belt				
-			recipe(226134), -- Pattern: Heavy Scale Boots				
-			recipe(226123), -- Pattern: Heavy Scale Gauntlets			
-			recipe(226135), -- Pattern: Heavy Scale Hood				
-			recipe(226126), -- Pattern: Heavy Scale Pants				
-			recipe(226129), -- Pattern: Heavy Scale Pauldrons				
-			recipe(226128), -- Pattern: Heavy Scale Shirt				
-			recipe(226124), -- Pattern: Heavy Scale Wraps				
-			recipe(10632), -- Pattern: Helm of Fire				
-			recipe(3760), -- Pattern: Hillman's Cloak			
-			recipe(3764), -- Pattern: Hillman's Leather Gloves			
-			recipe(3768), -- Pattern: Hillman's Shoulders			
-			recipe(2152), -- Pattern: Light Armor Kit
-			recipe(2881), -- Pattern: Light Leather
-			recipe(9065), -- Pattern: Light Leather Bracers		
-			recipe(9068), -- Pattern: Light Leather Pants		
-			recipe(226107), -- Pattern: Light Scale Belt	
-			recipe(226109), -- Pattern: Light Scale Boots		
-			recipe(226106), -- Pattern: Light Scale Bracers		
-			recipe(226105), -- Pattern: Light Scale Gloves		
-			recipe(226108), -- Pattern: Light Scale Jerkin		
-			recipe(226111), -- Pattern: Light Scale Pants		
-			recipe(2165), -- Pattern: Medium Armor Kit		
-			recipe(20648), -- Pattern: Medium Leather			
-			recipe(10558), -- Pattern: Nightscape Boots
-			recipe(10507), -- Pattern: Nightscape Headband
-			recipe(10548), -- Pattern: Nightscape Pants
-			recipe(10499), -- Pattern: Nightscape Tunic
-			recipe(9074), -- Pattern: Nimble Leather Gloves
-			recipe(19102), -- Pattern: Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
-			recipe(19072), -- Pattern: Runic Leather Belt (Trainable now, old Pattern id 15745 used to teach this.)
-			recipe(19065), -- Pattern: Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
-			recipe(19055), -- Pattern: Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
-			recipe(19082), -- Pattern: Runic Leather Headband (Trainable now, old Pattern id 15756 used to teach this.)
-			recipe(19091), -- Pattern: Runic Leather Pants (Trainable now, old Pattern id 15765 used to teach this.)
-			recipe(19103), -- Pattern: Runic Leather Shoulders (Trainable now, old Pattern id 15777 used to teach this.)
-			recipe(19058), -- Pattern: Rugged Armor Kit
-			recipe(22331), -- Pattern: Rugged Leather
-			recipe(226110), -- Pattern: Shamanic Treads
-			recipe(226137), -- Pattern: Spritescale Boots
-			recipe(226125), -- Pattern: Spritescale Britches
-			recipe(226127), -- Pattern: Spritescale Cinch
-			recipe(226136), -- Pattern: Spritescale Circlet
-			recipe(226120), -- Pattern: Spritescale Epaulets
-			recipe(226131), -- Pattern: Spritescale Gloves
-			recipe(226130), -- Pattern: Spritescale Jerkin
-			recipe(226133), -- Pattern: Spritescale Wraps
-			recipe(10487), -- Pattern: Thick Armor Kit			
-			recipe(20650), -- Pattern: Thick Leather			
-			recipe(2166), -- Pattern: Toughened Leather Armor	
-			recipe(3770), -- Pattern: Toughened Leather Gloves			
-			recipe(10518), -- Pattern: Turtle Scale Bracers	
-			recipe(10511), -- Pattern: Turtle Scale Breastplate
-			recipe(10552), -- Pattern: Turtle Scale Helm
-			recipe(10556), -- Pattern: Turtle Scale Leggings
-			recipe(19098), -- Pattern: Wicked Leather Armor (Trainable now, old Pattern id 15773 used to teach this.)
-			recipe(19092), -- Pattern: Wicked Leather Belt (Trainable now, old Pattern id 15768 used to teach this.)
-			recipe(19052), -- Pattern: Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
-			recipe(19049), -- Pattern: Wicked Leather Gauntlets (Trainable now, old Pattern id 15725 used to teach this.)
-			recipe(19071), -- Pattern: Wicked Leather Headband (Trainable now, old Pattern id 15744 used to teach this.)
-			recipe(19083), -- Pattern: Wicked Leather Pants (Trainable now, old Pattern id 15757 used to teach this.)
-			recipe(36075), -- Pattern: Wildfeather Leggings
-			recipe(10621), -- Pattern: Wolfshead Helm
 		}),
 		n(-2,  { -- Vendors
 			i(67095), -- Pattern: Assassin's Chestplate
