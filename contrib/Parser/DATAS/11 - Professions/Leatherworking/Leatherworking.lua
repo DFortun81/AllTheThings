@@ -377,6 +377,12 @@ profession(165, { -- Leatherworking
 			i(29726), -- Pattern: Hood of Primal Life
 			i(35216), -- Pattern: Leather Chestguard of the Sun
 			i(35212), -- Pattern: Leather Gauntlets of the Sun
+			i(25730), -- Pattern: Stylin' Jungle Hat
+			i(25728), -- Pattern: Stylin' Purple Hat
+			i(32746), -- Pattern: Swiftstrike Bracers
+			i(32747), -- Pattern: Swiftstrike Shoulders	
+			i(29725), -- Pattern: Windscale Hood
+			i(29728), -- Pattern: Windslayer Wraps
 		}),	
 		n(-17, { -- Quests
 		}),	
@@ -438,23 +444,15 @@ profession(165, { -- Leatherworking
 			un(5, i(29527)), -- Pattern: Primalstrike Bracers
 			un(5, i(29525)), -- Pattern: Primalstrike Vest
 			i(32436), -- Pattern: Redeemed Soul Cinch
+			i(32435), -- Pattern: Redeemed Soul Legguards
+			i(32433), -- Pattern: Redeemed Soul Moccasins
+			i(32434), -- Pattern: Redeemed Soul Wristguards
+			i(33205), -- Pattern: Shadowprowler's Chestguard
+			i(32745), -- Pattern: Shoulderpads of Renewed Life
 			un(5, i(29524)), -- Pattern: Windhawk Belt
 			un(5, i(29523)), -- Pattern: Windhawk Bracers
 			un(5, i(29522)), -- Pattern: Windhawk Hauberk
-		}),				
-		n(-44, { 	-- Leather				
-			i(32396),	-- Redeemed Soul Legguards
-			i(32394),	-- Redeemed Soul Moccasins
-			i(32395),	-- Redeemed Soul Wristguards
-			i(33204),	-- Shadowprowler's Chestguard
-			i(32583),	-- Shoulderpads of Renewed Life
-			i(25682),	-- Stylin' Jungle Hat
-			i(25680),	-- Stylin' Purple Hat
-			i(32580),	-- Swiftstrike Bracers
-			i(32581),	-- Swiftstrike Shoulders						
-			i(29504),	-- Windscale Hood
-			i(29507),	-- Windslayer Wraps
-		}),
+		}),		
 		n(-45, { 	-- Mail						
 			i(29512),	-- Earthen Netherscale Boots
 			i(34373),	-- Embrace of the Phoenix
@@ -1361,10 +1359,7 @@ profession(165, { -- Leatherworking
 		i(44522),	-- Pattern: Overcast Spaulders				
 		i(86283),	-- Pattern: Raiment of Blood and Bone			
 		i(86284),	-- Pattern: Raven Lord's Gloves
-		i(67082),	-- Pattern: Razor-Edged Cloak		
-		i(32435),	-- Pattern: Redeemed Soul Legguards
-		i(32433),	-- Pattern: Redeemed Soul Moccasins
-		i(32434),	-- Pattern: Redeemed Soul Wristguards
+		i(67082),	-- Pattern: Razor-Edged Cloak	
 		i(29664),	-- Pattern: Reinforced Mining Bag
 		i(30444),	-- Pattern: Reinforced Mining Bag
 		i(72007),	-- Pattern: Rended Earth Leggings
@@ -1373,9 +1368,7 @@ profession(165, { -- Leatherworking
 		i(25725),	-- Pattern: Riding Crop
 		i(49966),	-- Pattern: Rock-Steady Treads
 		i(70174),	-- Pattern: Royal Scribe's Satchel		
-		i(86295),	-- Pattern: Shadowleather Leg Armor
-		i(33205),	-- Pattern: Shadowprowler's Chestguard			
-		i(32745),	-- Pattern: Shoulderpads of Renewed Life
+		i(86295),	-- Pattern: Shadowleather Leg Armor		
 		i(32749),	-- Pattern: Shoulders of Lightning Reflexes		
 		i(86297),	-- Pattern: Stormbreaker Chestguard
 		i(44543),	-- Pattern: Stormhide Belt
@@ -1388,9 +1381,7 @@ profession(165, { -- Leatherworking
 		i(44541),	-- Pattern: Stormhide Wristguards
 		i(67072),	-- Pattern: Stormleather Sash	
 		i(25729),	-- Pattern: Stylin' Adventure Hat
-		i(25731),	-- Pattern: Stylin' Crimson Hat
-		i(25730),	-- Pattern: Stylin' Jungle Hat
-		i(25728),	-- Pattern: Stylin' Purple Hat
+		i(25731),	-- Pattern: Stylin' Crimson Hat		
 		i(35219),	-- Pattern: Sun-Drenched Scale Chestguard
 		i(35215),	-- Pattern: Sun-Drenched Scale Gloves	
 		i(44535),	-- Pattern: Swiftarrow Belt
@@ -1400,9 +1391,7 @@ profession(165, { -- Leatherworking
 		i(44532),	-- Pattern: Swiftarrow Hauberk
 		i(44530),	-- Pattern: Swiftarrow Helm
 		i(44536),	-- Pattern: Swiftarrow Leggings
-		i(44531),	-- Pattern: Swiftarrow Shoulderguards
-		i(32746),	-- Pattern: Swiftstrike Bracers
-		i(32747),	-- Pattern: Swiftstrike Shoulders		
+		i(44531),	-- Pattern: Swiftarrow Shoulderguards		
 		i(29734),	-- Pattern: Thick Netherscale Breastplate
 		i(72009),	-- Pattern: Thundering Deathscale Wristguards		
 		i(44509),	-- Pattern: Trapper's Traveling Pack
@@ -1449,9 +1438,7 @@ profession(165, { -- Leatherworking
 		i(86308),	-- Pattern: Wildblood Gloves
 		i(86309),	-- Pattern: Wildblood Vest
 		i(44932),	-- Pattern: Windripper Boots
-		i(44933),	-- Pattern: Windripper Leggings
-		i(29725),	-- Pattern: Windscale Hood
-		i(29728),	-- Pattern: Windslayer Wraps
+		i(44933),	-- Pattern: Windripper Leggings		
 		i(29731),	-- Pattern: Windstrike Gloves
 		i(35300),	-- Pattern: Windstrike Gloves
 		i(34262),	-- Pattern: Winter Boots

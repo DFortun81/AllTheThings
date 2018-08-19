@@ -163,7 +163,19 @@ _.Instances =
 					 -- i(32749),	-- Pattern: Shoulders of Lightning Reflexes (BT ONLY)
 					 -- i(32753),	-- Pattern: Swiftheal Mantle(BT ONLY)
 						i(32752),	-- Pattern: Swiftheal Wraps (Hyjal ONLY)
-						i(32746),	-- Pattern: Swiftstrike Bracers (Hyjal ONLY)
+						i(32746, {		-- Pattern: Swiftstrike Bracers (Hyjal ONLY)
+							["crs"] = {
+								17898,    -- Abomination
+								17905,    -- Banshee
+								17897,    -- Crypt Fiend
+								17916,    -- Fel Stalker
+								17907,    -- Frost Wyrm
+								17906,    -- Gargoyle
+								17895,    -- Ghoul
+								17908,    -- Giant Infernal
+								17899,    -- Shadowy Necromancer
+							},
+						}),						
 					 -- i(32747),	-- Pattern: Swiftstrike Shoulders (BT ONLY)
 					 -- i(32738),	-- Plans: Dawnsteel Bracers (BT ONLY)
 						i(32739),	-- Plans: Dawnsteel Shoulders (BT & Hyjal)
