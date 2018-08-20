@@ -770,12 +770,12 @@ _.Zones =
 							}),
 							["questID"] = 48972,	
 						}),	
-						n(127873, {	-- Scrounger Patriarch		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(127873, {	-- Scrounger Patriarch
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161219),	-- Raptor Patriarch Gloves
 							}),
-							["questID"] = 47877,	
-						}),	
+							["questID"] = 48980,
+						}),
 						n(124475, {	-- Shambling Ambusher
 							["questID"] = 47878,
 						}),
