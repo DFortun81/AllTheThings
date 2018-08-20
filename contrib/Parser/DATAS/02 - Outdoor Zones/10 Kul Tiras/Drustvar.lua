@@ -83,6 +83,12 @@ _.Zones =
 							["coord"] = { 36.8, 50.1 },
 							["sourceQuests"] = { 48986 },	-- Take the High Road
 						}),
+						qa(50174, {	-- All Wrapped Up
+							["qg"] = 132374,	-- Elsie Wright
+							["coord"] = { 34.6, 30.71 },
+							["sourceQuests"] = { 50149 },	-- A Weather Eye
+							-- May be available earlier; needs confirmation.
+						}),
 						qa(48538, {	-- An Airtight Alibi
 							["qg"] = 126310,	-- Evelyn Pare
 							["coord"] = { 70.0, 60.2 },
@@ -106,6 +112,12 @@ _.Zones =
 							["coord"] = { 70.0, 42.8 },
 							["sourceQuests"] = { 48538 },	-- An Airtight Alibi
 						}),
+						qa(50175, {	-- An Eight-Legged Curse
+							["qg"] = 132374,	-- Elsie Wright
+							["coord"] = { 34.6, 30.71 },
+							["sourceQuests"] = { 50149 },	-- A Weather Eye
+							-- May be available earlier; needs confirmation.
+						}),
 						qa(49807, {	-- A New Order
 							["g"] = {
 								i(160888),	-- Banisher Jerkin
@@ -122,6 +134,16 @@ _.Zones =
 								-- Definitely requires "Changing of the Guard;" may not require others.  Needs confirmation.
 								-- Awarded "A New Order" criteria.
 							},
+						}),
+						qa(50253, {	-- An Improvised Arsenal
+							["qg"] = 131638,	-- Lucille Waycrest
+							["coord"] = { 31.4, 30.2 },
+							["sourceQuests"] = { 50151 },	-- A Steady Ballast
+						}),
+						qa(50450, {	-- An Offensive Harvest
+							["qg"] = 133839,	-- Harris Hocking
+							["coord"] = { 27.0, 25.2 },
+							["sourceQuests"] = { 50449 },	-- Reeking Refuge
 						}),
 						qa(48113, {	-- A Pungent Solution
 							["qg"] = 125380,	-- Lucille Waycrest
@@ -145,10 +167,31 @@ _.Zones =
 							["coord"] = { 69.6, 43.3 },
 							["sourceQuests"] = { 49259 },	-- And Justice For All
 						}),
+						qa(50151, {	-- A Steady Ballast
+							["qg"] = 131636,	-- Marshal Everit Reade
+							["coord"] = { 31.36, 30.31 },
+							["sourceQuests"] = { 50149 },	-- A Weather Eye
+						}),
+						qa(50149, {	-- A Weather Eye
+							["qg"] = 131636,	-- Marshal Everit Reade
+							["coord"] = { 31.2, 29.9 },
+							["sourceQuests"] = { 50003 },	-- The First Watch
+						}),
 						qa(49803, {	-- Changing of the Guard
 							["qg"] = 129643,	-- Marshal Everit Reade
 							["coord"] = { 36.9, 50.0 },
 							["sourceQuests"] = { 49443 },	-- A Lesson in Witch Hunting
+						}),
+						qa(50453, {	-- Barrier Buster
+							["qg"] = 132193,	-- Angus Ballaster
+							["coord"] = { 31.7, 29.5 },
+							["sourceQuests"] = { 50446 },	-- Witchrending
+						}),
+						qa(50457, {	-- Break on Through
+							["qg"] = 131642,	-- Inquisitor Sterntide
+							["coord"] = { 30.6, 21.6 },
+							["sourceQuests"] = { 50453 },	-- Barrier Buster
+							-- Awarded "Break on Through" criteria."
 						}),
 						o(273814, {	-- Bladed Charm
 							qa(48521, {	-- Charming the Lifeless
@@ -176,6 +219,12 @@ _.Zones =
 								48520,	-- The Three Sisters
 							},
 						}),
+						qa(50152, {	-- Digging for Scraps
+							["qg"] = 131641,	-- Inquisitor Yorrick
+							["coord"] = { 26.2, 36.0 },
+							["sourceQuests"] = { 50149 },	-- A Weather Eye
+							-- May be available earlier; needs confirmation.
+						}),
 						qa(48963, {	-- Diversionary Tactics
 							["qg"] = 127715,	-- Lucille Waycrest
 							["coord"] = { 44.7, 28.5 },
@@ -184,6 +233,11 @@ _.Zones =
 								48942,	-- Yeti to Rumble
 							},
 							-- May only require "Yeti to Rumble;" needs confirmation.
+						}),
+						qa(50451, {	-- Eating Through the Defenses
+							["qg"] = 133839,	-- Harris Hocking
+							["coord"] = { 27.0, 25.2 },
+							["sourceQuests"] = { 50449 },	-- Reeking Refuge
 						}),
 						qa(47980, {	-- Furious Familiars
 							["qg"] = 125093,	-- Fallhaven Villager
@@ -220,6 +274,13 @@ _.Zones =
 								48518,	-- Save Who We Can
 							},
 						}),
+						{
+							["races"] = ALLIANCE_ONLY,
+							["itemID"] = 159748,	-- Rune-Etched Bone
+							["questID"] = 51134,	-- If Bones Could Talk
+							["sourceQuests"] = { 48941 },	-- A Slight Detour
+							-- Needs confirmation -- the quest didn't auto-pop and I didn't notice the item in my bags until later.  This source is based on a wowhead comment.
+						},
 						o(292523, {	-- Heartsbane Grimoire
 							qa(49805, {	-- Implements of Ill Intent
 								["coord"] = { 37.7, 50.3 },
@@ -236,11 +297,39 @@ _.Zones =
 							["coord"] = { 70.0, 42.8 },
 							["sourceQuests"] = { 48111 },	-- Trial by Superstition
 						}),
+						qa(50452, {	-- Potent Protection
+							["g"] = {
+								i(155564),	-- Mercy's Psalter
+							},
+							["qg"] = 133839,	-- Harris Hocking
+							["coord"] = { 27.0, 25.2 },
+							["sourceQuests"] = { 
+								50450,	-- An Offensive Harvest
+								50451,	-- Eating Through the Defenses
+							},
+						}),
+						qa(50173, {	-- Precious Metals
+							["qg"] = 131638,	-- Lucille Waycrest
+							["coord"] = { 31.4, 30.2 },
+							["sourceQuests"] = { 50149 },	-- A Weather Eye
+						}),
 						qa(49242, {	-- Quill or Be Quilled
 							["qg"] = 128494,	-- Adela Hawthorne
 							["coord"] = { 66.9, 42.1 },
 							["sourceQuests"] = { 48111 },	-- Trial by Superstition
 							-- May be available slightly earlier; needs confirmation.
+						}),
+						qa(50449, {	-- Reeking Refuge
+							["qg"] = 131639,	-- Inquisitor Mace
+							["coord"] = { 28.5, 25.6 },
+							["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
+							-- May be available earlier; needs confirmation.
+						}),
+						qa(50447, {	-- Remembering the Fallen
+							["qg"] = 134009,	-- Corlain Townsperson
+							["coord"] = { 29.2, 29.8 },
+							["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
+							-- May be available earlier; needs confirmation.
 						}),
 						qa(48943, {	-- Salvage Rights
 							["qg"] = 127715,	-- Lucille Waycrest
@@ -311,6 +400,16 @@ _.Zones =
 								-- Awarded "The Final Effigy" criteria
 							}),
 						}),
+						qa(50003, {	-- The First Watch
+							["g"] = {
+								i(155163),	-- Rise-Breacher's Band
+								i(155156),	-- First-Watcher's Lantern
+								i(155155),	-- Waycrest Inquisitor's Shield
+							},
+							["qg"] = 131636,	-- Marshal Everit Reade
+							["coord"] = { 32.0, 30.9 },
+							["sourceQuests"] = { 49926 },	-- The Road to Corlain
+						}),
 						qa(48523, {	-- The Murderous Matron
 							["qg"] = 126310,	-- Evelyn Pare
 							["coord"] = { 70.0, 60.2 },
@@ -325,6 +424,11 @@ _.Zones =
 							["coord"] = { 42.5, 25.2 },
 							["sourceQuests"] = { 48945 },	-- The Ruins of Gol Var
 							-- Awarder "The Order of Embers" criteria.
+						}),
+						qa(49926, {	-- The Road to Corlain
+							["qg"] = 129643,	-- Marshal Everit Reade
+							["coord"] = { 36.9, 50.0 },
+							["sourceQuests"] = { 49807 },	-- A New Order
 						}),
 						qa(48945, {	-- The Ruins of Gol Var
 							["qg"] = 127715,	-- Lucille Waycrest
@@ -367,6 +471,21 @@ _.Zones =
 							["coord"] = { 60.5, 31.6 },
 							["sourceQuests"] = { 47978 },	-- The Wayward Crone
 						}),
+						qa(50446, {	-- Witchrending
+							["g"] = {
+								i(158584),	-- Wickerwoven Sandals
+								i(158585),	-- Banisher Walkers
+								i(158586),	-- Crone-Seeker's Walkers
+								i(158587),	-- Waycrest Militia Stompers
+								i(158627),	-- Wickerwoven Bands
+								i(158628),	-- Banisher Wristwraps
+								i(158629),	-- Crone-Seeker's Shackles
+								i(158630),	-- Waycrest Militia Armplates
+							},
+							["qg"] = 131638,	-- Lucille Waycrest
+							["coord"] = { 31.4, 30.2 },
+							["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
+						}),
 						qa(48942, {	-- Yeti to Rumble
 							["qg"] = 127715,	-- Lucille Waycrest
 							["coord"] = { 46.1, 33.4 },
@@ -377,6 +496,70 @@ _.Zones =
 						
 						
 						
+						
+						
+						
+						
+						
+						o(288622, {	-- Wanted Poster
+							qa(51356, {	-- WANTED: Sister Lilias
+								["coord"] = { 31.7, 30.7 },
+								["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
+							}),
+						}),
+						qa(50454, {	-- A Traitor's Death
+							["g"] = {
+								i(158599),	-- Wickerwoven Grips
+								i(158600),	-- Banisher Handwraps
+								i(158601),	-- Crone-Seeker's Handguards
+								i(158602),	-- Waycrest Militia Handguards
+								i(155462),	-- Wickerwoven Legwraps
+								i(155471),	-- Banisher Trousers
+								i(155479),	-- Crone-Seeker's Chausses
+								i(155487),	-- Waycrest Militia Legplates
+							},
+							["qg"] = 131636,	-- Marshal Everit Reade
+							["coord"] = { 31.3, 30.2 },
+							["sourceQuests"] = { 50453 },	-- Barrier Buster (must be ON quest to pick up this one)
+						}),
+						qa(50456, {	-- Hexed Hatchlings
+							["qg"] = 131640,	-- Inquisitor Notley
+							["coord"] = { 31.2, 22.7 },
+							["sourceQuests"] = { 50446 },	-- Witchrending
+							-- May be available earlier; needs confirmation.
+						}),
+						qa(50455, {	-- Leaving the Nest
+							["qg"] = 131640,	-- Inquisitor Notley
+							["coord"] = { 31.2, 22.7 },
+							["sourceQuests"] = { 50446 },	-- Witchrending
+							-- May be available earlier; needs confirmation.
+						}),
+						qa(50754, {	-- To Have Loved and Lost
+							["qg"] = 131638,	-- Lucille Waycrest
+							["coord"] = { 31.4, 30.2 },
+							["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
+						}),
+						qa(50583, {	-- To the Other Side
+							["qg"] = 131638,	-- Lucille Waycrest
+							["coord"] = { 30.9, 20.2 },
+							["sourceQuests"] = { 50457 },	-- Break on Through
+						}),
+						o(281673, {	-- Corlain Citizen's Journal
+							qa(50586, {	-- The Fall of Corlain
+								["coord"] = { 30.7, 19.5 },
+								["sourceQuests"] = { 50457 },	-- Break on Through
+							}),
+						}),
+						qa(50585, {	-- Hexecutioner
+							["qg"] = 131636,	-- Marshal Everit Reade
+							["coord"] = { 31.0, 20.2 },
+							["sourceQuests"] = { 50457 },	-- Break on Through
+						}),
+						qa(50584, {	-- Ruinous Rituals
+							["qg"] = 131636,	-- Marshal Everit Reade
+							["coord"] = { 31.0, 20.2 },
+							["sourceQuests"] = { 50457 },	-- Break on Through
+						}),
 						
 						
 						
@@ -420,6 +603,11 @@ _.Zones =
 								["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 								-- May have additional sourceQuests; needs confirmation.  Picked up after turning in "The Order of Embers."
 							}),
+						}),
+						qa(48504, {	-- Through the Old Roads
+							["qg"] = 135021,	-- Inquisitor Cleardawn
+							["coord"] = { 37.3, 50.3 },
+							["sourceQuests"] = { 49926 },	-- The Road to Corlain (must be ON quest to pick this up)
 						}),
 						
 						
@@ -465,6 +653,24 @@ _.Zones =
 							["sourceQuests"] = { 48880, 48904 },	-- Mean Gulls & Take the Bait
 							-- May also require "The Reel Deal;" needs confirmation.
 						}),
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
 						o(290419, {	-- Wanted Poster
 							qa(51547, {	-- WANTED: Rindlewoe 
 								["coord"] = { 55.7, 34.9 },
