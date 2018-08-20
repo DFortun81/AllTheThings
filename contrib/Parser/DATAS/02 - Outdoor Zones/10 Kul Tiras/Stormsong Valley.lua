@@ -86,32 +86,110 @@ _.Zones =
 						["qg"] = 137866,	-- Taelia
 						["sourceQuests"] = { 51489 },	-- Time to Leave [Alliance Only]
 					})),
+					a(q(49792, {	-- Bound and Oppressed
+						["qg"] = 130904,	-- Samuel Williams
+						["sourceQuests"] = { 49887 },	-- Forced Labor [Alliance Only]
+						["coord"] = { 64.6, 62.1 },
+					})),
 					a(q(51401, {	-- Carry On
 						["qg"] = 137866,	-- Taelia
 						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
 						-- This gave "The Tidesages of Stormsong" criteria achievement - Crieve
 					})),
+					a(o(280727, {	-- Charred Note
+						["coord"] = { 68.7, 54.4 },
+						a(q(50139, {	-- The Missing Link
+							["sourceQuests"] = { 49975 },	-- Rest in the Depths [Alliance Only](needs verification)
+						})),
+					})),
 					a(q(52793, {	-- Circle the Wagons
 						["qg"] = 141769,	-- Marilyn Hood
 						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
 					})),
+					a(q(49995, {	-- Fabricated Fabrications
+						["qg"] = 131248,	-- Samuel Williams
+						["sourceQuests"] = { 49975 },	-- Rest in the Depths [Alliance Only]
+						["coord"] = { 66.4, 56.4 },
+					})),
+					a(q(49887, {	-- Forced Labor
+						["qg"] = 130904,	-- Samuel Williams
+						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
+						["coord"] = { 64.5, 62.2 },
+					})),
 					a(q(49704, {	-- Haywire Harvesters
 						["qg"] = 130715,	-- Taelia
 						["sourceQuests"] = { 49703 },	-- House Stormsong [Alliance Only]
-						["coord"] = { 63.4, 64.7 },
+						["coord"] = { 63.5, 64.8 },
+					})),
+					a(o(290537, {	-- Help Wanted
+						["coord"] = { 66.3, 57.2 },
+						a(q(51582, {	-- Make it Mildenhall
+							["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only](needs verification)
+							["isBreadcrumb"] = true,
+						})),
 					})),
 					a(q(49703, {	-- House Stormsong
 						["qg"] = 130576,	-- Brother Pike
 						["sourceQuests"] = { 49725 },	-- A Risky Ploy [Alliance Only]
+					})),
+					a(q(49791, {	-- Lost, Not Forgotten
+						["qg"] = 130714,	-- Brother Pike
+						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
+						["coord"] = { 63.4, 64.7 },
+					})),
+					a(q(49793, {	-- Means to an End
+						["qg"] = 130714,	-- Brother Pike
+						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
+						["coord"] = { 63.4, 64.7 },
 					})),
 					a(q(49706, {	-- Proclamation Investigation
 						["qg"] = 130714,	-- Brother Pike
 						["sourceQuests"] = { 49703 },	-- House Stormsong [Alliance Only]
 						["coord"] = { 63.4, 64.7 },
 					})),
+					a(q(49996, {	-- Rearmament
+						["qg"] = 131249,	-- Taelia
+						["sourceQuests"] = { 49975 },	-- Rest in the Depths [Alliance Only]
+						["coord"] = { 66.4, 56.5 },
+						["groups"] = {
+							i(155204),	-- Brineworks Boot Knife
+							i(155214),	-- Brineworks Hullcracker
+							i(155199),	-- Great Sea Waraxe
+							i(155221),	-- Stormfused Spire
+							i(155208),	-- Stormfused Striker
+							i(155216),	-- Tideguard Harpoon
+							i(155224),	-- Tideguard Spellblade
+							i(155209),	-- Thundershot Rifle
+						},
+					})),
+					a(q(49975, {	-- Rest in the Depths
+						["qg"] = 130714,	-- Brother Pike
+						["sourceQuests"] = { 49791 },	-- Lost, Not Forgotten [Alliance Only]
+						["coord"] = { 66.3, 56.5 },
+					})),
 					a(q(52796, {	-- Sometimes Less is More
 						["qg"] = 141769,	-- Marilyn Hood
 						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
+					})),
+					a(q(51552, {	-- The Days Are Just Packed
+						["qg"] = 130786,	-- Hobbs
+						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
+						["coord"] = { 66.7, 56.4 },
+					})),
+					a(q(49794, {	-- The Rising Tide
+						["qg"] = 130715,	-- Taelia
+						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
+						["coord"] = { 63.5, 64.8 },
+						["groups"] = {
+							i(155193),	-- Darkwater Belt
+							i(155190),	-- Dread Corsair Girdle
+							i(155192),	-- Stormchaser Belt
+							i(155191),	-- Tidespeaker Sash
+							i(155184),	-- Darkwater Breeches
+							i(155181),	-- Dread Corsair Greaves
+							i(155183),	-- Stormchaser Legguards
+							i(155182),	-- Tidespeaker Leggings
+						},
 					})),
 					a(q(49705, {	-- Unnecessary Duress
 						["qg"] = 130714,	-- Brother Pike
@@ -134,6 +212,10 @@ _.Zones =
 					{
 						["questID"] = 51184,	-- Scripps Lumber Co (Crieve)
 						["coord"] = { 61.8, 65.3 },
+					},
+					{
+						["questID"] = 51927,	-- Layson & Sons Rigging (Crieve)
+						["coord"] = { 69.3, 57.9 },
 					},
 				}),
 				n(-17, {	-- Quests
@@ -311,7 +393,6 @@ _.Zones =
 						q(51752),	-- Grizzled
 						q(51492),	-- Gunpowder Plot
 						q(51711),	-- Having a Blast
-						q(49704),	-- Haywire Harvesters
 						q(49755),	-- Heavy Artillery
 						q(52068),	-- Helping Out, Somewhere Else
 						q(50504),	-- Honey Glazed Sam
@@ -482,7 +563,8 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155568),	-- Galewind Chimes
 							}),
-							["questID"] = 50075,	
+							["questID"] = 50075,
+							["coord"] = { 71.5, 54.3 },
 						}),	
 						n(141059, {	-- Grimscowl the Harebrained		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
