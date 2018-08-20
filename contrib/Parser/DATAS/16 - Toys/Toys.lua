@@ -326,6 +326,7 @@ _.Toys =
 		i(88531),		-- Lao Chin's Last Mug
 		i(71259), 		-- Leyara's Locket
 		i(119039), 		-- Lilian's Warning Sign
+		i(163607),		-- Lucille's Sewing Needle
 		i(118938), 		-- Manastorm's Duplicator
 		i(119092),		-- Moroes' Famous Polish
 		i(52201), 		-- Muradin's Favor

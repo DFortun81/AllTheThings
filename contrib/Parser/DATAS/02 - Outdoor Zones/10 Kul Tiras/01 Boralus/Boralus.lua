@@ -216,6 +216,11 @@ _.Zones =
 							["qg"] = 121239, -- Flynn Fairwind
 							["sourceQuests"] = { 47189 },	-- Tiragarde Sound
 						})),
+						qa(48622, {	-- The Vanishing Lord
+							["qg"] = 121235,	-- Taelia
+							["coord"] = { 68.0, 22.0 },
+							-- ["sourceQuests"] = {  },	-- slumber is dumb and forgot lol :)
+						}),
 						a(q(52544, {	-- The War Cache
 							["qg"] = 135612, -- Halford Wyrmbane <7th Legion High Commander>
 							["sourceQuests"] = { 52654 },	-- The War Campaign

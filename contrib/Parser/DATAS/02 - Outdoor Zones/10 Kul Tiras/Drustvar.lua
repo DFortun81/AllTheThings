@@ -78,6 +78,551 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					["groups"] = {
+						qa(49443, {	-- A Lesson in Witch Hunting
+							["qg"] = 129642,	-- Lucille Waycrest
+							["coord"] = { 36.8, 50.1 },
+							["sourceQuests"] = { 48986 },	-- Take the High Road
+						}),
+						qa(48538, {	-- An Airtight Alibi
+							["qg"] = 126310,	-- Evelyn Pare
+							["coord"] = { 70.0, 60.2 },
+							["sourceQuests"] = { 48523 },	-- The Murderous Matron
+							-- Awarded "An Airtight Alibi" criteria.
+						}),
+						qa(49259, {	-- And Justice For All
+							["g"] = {
+								i(155126),	-- Reade's Waraxe
+								i(155152),	-- Witchrend Greatsword
+								i(155148),	-- Silverwood Spire
+								i(155583),	-- Hexward Spellblade
+								i(158647),	-- Everit's Morning Star
+								i(155130),	-- Hag-Hunter Crossbow
+								i(155584),	-- Crone Sticker
+								i(158646),	-- Curseform Sickle
+								i(155143),	-- Marshal's Halberd
+								i(159536),	-- Gol Osigr Hammer
+							},
+							["qg"] = 125380,	-- Lucille Waycrest
+							["coord"] = { 70.0, 42.8 },
+							["sourceQuests"] = { 48538 },	-- An Airtight Alibi
+						}),
+						qa(49807, {	-- A New Order
+							["g"] = {
+								i(160888),	-- Banisher Jerkin
+								i(155107),	-- Banisher Cowl
+								-- Assuming there are additional rewards, but wowhead only lists "Inquisitor's Regalia" and azerite.  Non-leather rewards need confirmation.
+							},
+							["qg"] = 129642,	-- Lucille Waycrest
+							["coord"] = { 36.8, 50.1 },
+							["sourceQuests"] = {
+								49803,	-- Changing of the Guard
+								49806,	-- Hidden Dealings
+								49805,	-- Implements of Ill Intent
+								49804,	-- Sharp Thinking
+								-- Definitely requires "Changing of the Guard;" may not require others.  Needs confirmation.
+								-- Awarded "A New Order" criteria.
+							},
+						}),
+						qa(48113, {	-- A Pungent Solution
+							["qg"] = 125380,	-- Lucille Waycrest
+							["coord"] = { 70.0, 42.8 },
+							["sourceQuests"] = { 48111 },	-- Trial by Superstition
+						}),
+						{
+							["qgs"] = {
+								126144,	-- Sister Ashwell
+								126522,	-- Sister Early
+								126523,	-- Sister Mooring
+							},
+							["races"] = ALLIANCE_ONLY,
+							["itemID"] = 152587,	-- Levae's Missive
+							["questID"] = 48522,	-- A Revealing Missive
+							["description"] = "This quest appears to drop from whichever Sister you kill last.",
+							["sourceQuests"] = { 48520 },	-- The Three Sisters
+						},
+						qa(48941, {	-- A Slight Detour
+							["qg"] = 125380,	-- Lucille Waycrest
+							["coord"] = { 69.6, 43.3 },
+							["sourceQuests"] = { 49259 },	-- And Justice For All
+						}),
+						qa(49803, {	-- Changing of the Guard
+							["qg"] = 129643,	-- Marshal Everit Reade
+							["coord"] = { 36.9, 50.0 },
+							["sourceQuests"] = { 49443 },	-- A Lesson in Witch Hunting
+						}),
+						o(273814, {	-- Bladed Charm
+							qa(48521, {	-- Charming the Lifeless
+								["coord"] = { 70.0, 62.8 },
+								["sourceQuests"] = { 48519 },	-- Hope They Can't Swim
+							}),
+						}),
+						qa(49295, {	-- Clear-Cutting
+							["qg"] = 126310,	-- Evelyn Pare
+							["coord"] = { 70.0, 60.2 },
+							["sourceQuests"] = { 48171 },	-- The Curse of Fletcher's Hollow
+						}),
+						o(272422, {	-- Gentle's Spellbook
+							qa(47981, {	-- Cracking the Curse
+								["coord"] = { 60.5, 31.4 },
+								["sourceQuests"] = { 47979 },	-- Witch Hunt (must be ON this quest and sit on the stool for this quest to become available)
+							}),
+						}),
+						qa(48524, {	-- Culling the Coven
+							["qg"] = 126310,	-- Evelyn Pare
+							["coord"] = { 70.0, 60.2 },
+							["sourceQuests"] = { 
+								48522,	-- A Revealing Missive
+								48521,	-- Charming the Lifeless
+								48520,	-- The Three Sisters
+							},
+						}),
+						qa(48963, {	-- Diversionary Tactics
+							["qg"] = 127715,	-- Lucille Waycrest
+							["coord"] = { 44.7, 28.5 },
+							["sourceQuests"] = { 
+								48943,	-- Salvage Rights
+								48942,	-- Yeti to Rumble
+							},
+							-- May only require "Yeti to Rumble;" needs confirmation.
+						}),
+						qa(47980, {	-- Furious Familiars
+							["qg"] = 125093,	-- Fallhaven Villager
+							["coord"] = { 60.8, 30.6 },
+							["sourceQuests"] = { 47979 },	-- Witch Hunt (must be ON this quest and sit on the stool for this quest to become available)
+						}),
+						qa(48165, {	-- Harmful If Swallowed
+							["qg"] = 125380,	-- Lucille Waycrest
+							["coord"] = { 70.0, 42.8 },
+							["sourceQuests"] = { 48111 },	-- Trial by Superstition
+						}),
+						{
+							["qgs"] = {
+								129575,	-- Corlain Refugee
+								129641,	-- Corlain Refugee
+							},
+							["races"] = ALLIANCE_ONLY,
+							["itemID"] = 156517,	-- Hastily Drawn Map
+							["questID"] = 49806,	-- Hidden Dealings
+							["sourceQuests"] = { 49804 },	-- Sharp Thinking
+						},
+						qa(48519, {	-- Hope They Can't Swim
+							["g"] = {
+								i(155118),	-- Wickerwoven Sash
+								i(155120),	-- Banisher Belt
+								i(155119),	-- Crone-Seeker's Belt
+								i(155117),	-- Waycrest Militia Girdle
+								i(155158),	-- Alderwood Loop
+							},
+							["qg"] = 126310,	-- Evelyn Pare
+							["coord"] = { 70.0, 60.2 },
+							["sourceQuests"] = { 
+								49295,	-- Clear-Cutting
+								48518,	-- Save Who We Can
+							},
+						}),
+						o(292523, {	-- Heartsbane Grimoire
+							qa(49805, {	-- Implements of Ill Intent
+								["coord"] = { 37.7, 50.3 },
+								["sourceQuests"] = { 49443 },	-- A Lesson in Witch Hunting
+							}),
+						}),
+						qa(48110, {	-- In Case of Ambush
+							["qg"] = 125385,	-- Marshal Everit Reade
+							["coord"] = { 69.7, 43.1 },
+							["sourceQuests"] = { 48283 },	-- Standing Accused
+						}),
+						qa(48170, {	-- Once Bitten, Twice Shy
+							["qg"] = 125380,	-- Lucille Waycrest
+							["coord"] = { 70.0, 42.8 },
+							["sourceQuests"] = { 48111 },	-- Trial by Superstition
+						}),
+						qa(49242, {	-- Quill or Be Quilled
+							["qg"] = 128494,	-- Adela Hawthorne
+							["coord"] = { 66.9, 42.1 },
+							["sourceQuests"] = { 48111 },	-- Trial by Superstition
+							-- May be available slightly earlier; needs confirmation.
+						}),
+						qa(48943, {	-- Salvage Rights
+							["qg"] = 127715,	-- Lucille Waycrest
+							["coord"] = { 46.1, 33.4 },
+							["sourceQuests"] = { 48941 },	-- A Slight Detour
+						}),
+						qa(48518, {	-- Save Who We Can
+							["qg"] = 126310,	-- Evelyn Pare
+							["coord"] = { 70.0, 60.2 },
+							["sourceQuests"] = { 48171 },	-- The Curse of Fletcher's Hollow
+						}),
+						qa(49804, {	-- Sharp Thinking
+							["g"] = {
+								i(163607),	-- Lucille's Sewing Needle
+							},
+							["qg"] = 129642,	-- Lucille Waycrest
+							["coord"] = { 36.8, 50.1 },
+							["sourceQuests"] = { 49443 },	-- A Lesson in Witch Hunting
+						}),
+						o(272179, {	-- Mayor's Bulletin
+							qa(47968, {	-- Signs and Portents
+								["coord"] = { 56.1, 35.2 },
+								["sourceQuests"] = { 48622, }	-- The Vanishing Lord
+							}),
+						}),
+						qa(48283, {	-- Standing Accused
+							["qg"] = 125394,	-- Constable Henry Framer
+							["coord"] = { 70.1, 42.9 },
+							["sourceQuests"] = { 48108 },	-- The Waycrest Daughter
+						}),
+						qa(48986, {	-- Take the High Road
+							["qg"] = 127715,	-- Lucille Waycrest
+							["coord"] = { 42.5, 25.2 },
+							["sourceQuests"] = { 48946 },	-- The Order of Embers
+						}),
+						qa(48198, {	-- The Burden of Proof
+							["g"] = {
+								i(155102),	-- Wickerwoven Gloves
+								i(155100),	-- Banisher Gloves
+								i(155103),	-- Crone-Seeker's Gloves
+								i(155101),	-- Waycrest Militia Gauntlets
+								i(155570),	-- Ravenfeather Drape
+							},
+							["qg"] = 125380,	-- Lucille Waycrest
+							["coord"] = { 70.0, 42.8 },
+							["sourceQuests"] = { 48113, 48165, 48170 },	-- A Pungent Solution, Harmful If Swallowed, & Once Bitten, Twice Shy
+							-- Awarded "The Burden of Proof" criteria.
+						}),
+						qa(48171, {	-- The Curse of Fletcher's Hollow
+							["qg"] = 125380,	-- Lucille Waycrest
+							["coord"] = { 70.0, 42.8 },
+							["sourceQuests"] = { 48198 },	-- The Burden of Proof
+						}),
+						o(278675, {	-- Cursed Effigy
+							qa(47982, {	-- The Final Effigy
+								["g"] = {
+									i(155109),	-- Wickerwoven Leggings
+									i(155111),	-- Banisher Breeches
+									i(155110),	-- Crone-Seeker's Legguards
+									i(155108),	-- Waycrest Militia Greaves
+									i(155121),	-- Wickerwoven Cuffs
+									i(155124),	-- Banisher Bracers
+									i(155123),	-- Crone-Seeker's Bracers
+									i(155122),	-- Waycrest Militia Bracers
+								},
+								["coord"] = { 55.8, 35.0 },
+								["sourceQuests"] = { 47981 },	-- Cracking the Curse
+								-- Awarded "The Final Effigy" criteria
+							}),
+						}),
+						qa(48523, {	-- The Murderous Matron
+							["qg"] = 126310,	-- Evelyn Pare
+							["coord"] = { 70.0, 60.2 },
+							["sourceQuests"] = { 
+								48522,	-- A Revealing Missive
+								48521,	-- Charming the Lifeless
+								48520,	-- The Three Sisters
+							},
+						}),
+						qa(48946, {	-- The Order of Embers
+							["qg"] = 127715,	-- Lucille Waycrest
+							["coord"] = { 42.5, 25.2 },
+							["sourceQuests"] = { 48945 },	-- The Ruins of Gol Var
+							-- Awarder "The Order of Embers" criteria.
+						}),
+						qa(48945, {	-- The Ruins of Gol Var
+							["qg"] = 127715,	-- Lucille Waycrest
+							["coord"] = { 44.9, 27.5 },
+							["sourceQuests"] = { 48944 },	-- Unlocking History
+						}),
+						qa(48520, {	-- The Three Sisters
+							["qg"] = 126310,	-- Evelyn Pare
+							["coord"] = { 70.0, 60.2 },
+							["sourceQuests"] = { 48519 },	-- Hope They Can't Swim
+						}),
+						qa(48108, {	-- The Waycrest Daughter
+							["qg"] = 124417,	-- Cyril White
+							["coord"] = { 55.8, 35.0 },
+							["sourceQuests"] = { 47982 },	-- The Final Effigy
+						}),
+						o(278669, {	-- Fallhaven Ledger
+							qa(47978, {	-- The Wayward Crone
+								["coord"] = { 55.6, 35.73 },
+								["sourceQuests"] = { 47968 },	-- Signs and Portents
+							}),
+						}),
+						qa(48109, {	-- The Woods Have Eyes
+							["qg"] = 125385,	-- Marshal Everit Reade
+							["coord"] = { 69.7, 43.1 },
+							["sourceQuests"] = { 48283 },	-- Standing Accused
+						}),
+						qa(48111, {	-- Trial by Superstition
+							["qg"] = 125380,	-- Lucille Waycrest
+							["coord"] = { 70.0, 42.8 },
+							["sourceQuests"] = { 48110, 48109 },	-- In Case of Ambush & The Woods Have Eyes
+						}),
+						qa(48944, {	-- Unlocking History
+							["qg"] = 127715,	-- Lucille Waycrest
+							["coord"] = { 45.0, 27.7 },
+							["sourceQuests"] = { 48963 },	-- Diversionary Tactics
+						}),
+						qa(47979, {	-- Witch Hunt
+							["qg"] = 124922,	-- Helena Gentle
+							["coord"] = { 60.5, 31.6 },
+							["sourceQuests"] = { 47978 },	-- The Wayward Crone
+						}),
+						qa(48942, {	-- Yeti to Rumble
+							["qg"] = 127715,	-- Lucille Waycrest
+							["coord"] = { 46.1, 33.4 },
+							["sourceQuests"] = { 48941 },	-- A Slight Detour
+						}),
+
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+--[[
+						qa(, {	-- 
+							["qg"] = ,	-- 
+							["coord"] = {  },
+							["sourceQuests"] = {  },	-- 
+						}),
+--]]
+						
+						
+						
+						
+						
+						
+						
+						qa(48947, {	-- Gol Koval
+							["qg"] = 127743,	-- Auntie Amanda Hale
+							["coord"] = { 69.5, 43.7 },
+							["sourceQuests"] = { 49259 },	-- And Justice For All
+						}),
+						qa(48475, {	-- Seeing Spirits
+							["qg"] = 126210,	-- Caretaker Allen
+							["coord"] = { 62.5, 42.9 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have additional sourceQuests; needs confirmation.  Picked up after turning in "And Justice For All."
+						}),
+						qa(47289, {	-- Teddies and Tea
+							["qg"] = 121603,	-- Abby Lewis
+							["coord"] = { 54.4, 39.3 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have additional sourceQuests; needs confirmation.  Picked up after turning in "And Justice For All."
+						}),
+						o(292523, {	-- Wanted Poster
+							qa(52033, {	-- WANTED: The Rime Huntress
+								["coord"] = { 41.2, 40.9 },
+								["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+								-- May have additional sourceQuests; needs confirmation.  Picked up after turning in "The Order of Embers."
+							}),
+						}),
+						
+						
+						
+						
+						
+						
+						
+						
+						qa(48880, {	-- Mean Gulls
+							["qg"] = 127558,	-- Art Hughie
+							["coord"] = { 71.7, 50.4 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have different source quest(s); needs confirmation.
+						}),
+						qa(48904, {	-- Take the Bait
+							["qg"] = 127558,	-- Art Hughie
+							["coord"] = { 71.7, 50.4 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have different source quest(s); needs confirmation.
+						}),
+						o(276515, {	-- Fishing Rod
+							qa(48881, {	-- The Reel Deal
+								["coord"] = { 71.1, 52.3 },
+								["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
+							}),
+						}),
+						o(276513, {	-- Intact Mudfish
+							qa(48882, {	-- I Like Fish Guts and I Cannot Lie
+								["coord"] = { 70.7, 50.8 },
+								["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
+							}),
+						}),
+						qa(48883, {	-- Big Gulls Won't Die
+							["g"] = {
+								i(155459),	-- Anglin' Art's Sandals
+								i(155468),	-- Anglin' Art's Treads
+								i(155476),	-- Anglin' Art's Waders
+								i(155484),	-- Anglin' Art's Stompers
+							},
+							["qg"] = 127558,	-- Art Hughie
+							["coord"] = { 71.7, 50.4 },
+							["sourceQuests"] = { 48880, 48904 },	-- Mean Gulls & Take the Bait
+							-- May also require "The Reel Deal;" needs confirmation.
+						}),
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						o(290419, {	-- Wanted Poster
+							qa(51547, {	-- WANTED: Rindlewoe 
+								["coord"] = { 55.7, 34.9 },
+								["sourceQuests"] = { 47982 },	-- The Final Effigy
+							}),
+						}),
+						qa(47945, {	-- To Market, To Market
+							["qg"] = 128467,	-- Elijah Eggleton
+							["coord"] = { 55.5, 34.8 },
+							["sourceQuests"] = { 47982 },	-- The Final Effigy
+						}),
+						qa(47946, {	-- Save Their Bacon
+							["qg"] = 124786,	-- Thomas Staughton
+							["coord"] = { 63.2, 27.1 },
+							["sourceQuests"] = { 47945 },	-- To Market, To Market
+						}),
+						qa(47947, {	-- Big Bad Wolves
+							["qg"] = 124786,	-- Thomas Staughton
+							["coord"] = { 63.2, 27.1 },
+							["sourceQuests"] = { 47945 },	-- To Market, To Market
+						}),
+						qa(47948, {	-- Pork Chop
+							["g"] = {
+								i(155150),	-- Swinestained Saber
+								i(158641),	-- Pork-Chopper Pike
+								i(155139),	-- Mad-Butcher's Mallet
+								i(155153),	-- Elder Crone's Ladle
+								i(155131),	-- Hacksaw Carving Knife
+								i(155127),	-- Fallhaven Hatchet
+								i(155128),	-- Roland's Tenderizer
+								i(155136),	-- Autumnvale Long Rifle
+							},
+							["qg"] = 124786,	-- Thomas Staughton
+							["coord"] = { 63.2, 27.1 },
+							["sourceQuests"] = { 47945 },	-- To Market, To Market
+						}),
+						o(277459, {	-- Pig Effigy
+							qa(47949, {	-- That's Not My Fetish
+								["coord"] = { 63.3, 30.1 },
+								["sourceQuests"] = { 47945 },	-- To Market, To Market
+							}),
+						}),
+						qa(47950, {	-- Cured Ham
+							["qg"] = 124786,	-- Thomas Staughton
+							["coord"] = { 63.2, 27.1 },
+							["sourceQuests"] = { 47949 },	-- That's Not My Fetish
+							-- May have additional source quests; needs confirmation.
+						}),
+						qa(48948, {	-- The North Pass Caverns
+							["qg"] = 128457,	-- Maude Rifthold
+							["coord"] = { 55.1, 35.1 },
+							["sourceQuests"] = { 47982 },	-- The Final Effigy
+						}),
+						qa(48793, {	-- The Adventurer's Society
+							["qg"] = 127015,	-- Thaddeus "Gramps" Rifthold
+							["coord"] = { 53.9, 27.0 },
+							["sourceQuests"] = { 48948 },	-- The North Pass Caverns
+						}),
+						qa(48804, {	-- Mistakes Were Made
+							["qg"] = 127157,	-- Marcus Howlingdale
+							["coord"] = { 51.4, 23.2 },
+							["sourceQuests"] = { 48793 },	-- The Adventurer's Society
+						}),
+						qa(48853, {	-- Terminal Degree
+							["g"] = {
+								i(160262),	-- Relic of the Makers
+							},
+							["qg"] = 127157,	-- Marcus Howlingdale
+							["coord"] = { 50.6, 24.3 },
+							["sourceQuests"] = { 48804 },	-- Mistakes Were Made
+						}),
+						o(276251, {	-- Excavation Inventory
+							qa(48805, {	-- Research Recovery
+								["coord"] = { 51.8, 22.8 },
+								["sourceQuests"] = { 48793 },	-- The Adventurer's Society
+							}),
+						}),
+						qa(48792, {	-- Menace to Society
+							["qg"] = 127015,	-- Thaddeus "Gramps" Rifthold
+							["coord"] = { 53.9, 27.0 },
+							["sourceQuests"] = { 48948 },	-- The North Pass Caverns
+						}),
+						qa(48677, {	-- Wicker Worship
+							["qg"] = 127296,	-- David Maldus
+							["coord"] = { 62.5, 23.9 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have other/different source quest(s); needs confirmation.
+						}),
+						qa(48678, {	-- Questionable Offerings
+							["qg"] = 127080,	-- Lord Autumnvale
+							["coord"] = { 59.4, 21.9 },
+							["sourceQuests"] = { 48677 },	-- Wicker Worship
+						}),
+						qa(48679, {	-- Mind the Hives
+							["qg"] = 127080,	-- Lord Autumnvale
+							["coord"] = { 59.4, 21.9 },
+							["sourceQuests"] = { 48678 },	-- Questionable Offerings
+						}),
+						qa(48682, {	-- A Simple Sacrifice
+							["qg"] = 127396,	-- Initiate Peony
+							["coord"] = { 59.0, 22.3 },
+							["sourceQuests"] = { 48679 },	-- Mind the Hives
+						}),
+						qa(48683, {	-- Changing Seasons
+							["g"] = {
+								i(158592),	-- Wickerwood Torch
+								i(158594),	-- Barbthorn Bulwark
+								i(158615),	-- Wickerwoven Belt
+								i(158616),	-- Banisher Waistcord
+								i(158617),	-- Crone-Seeker's Cinch
+								i(158618),	-- Waycrest Militia Greatbelt
+							},
+							["qg"] = 127418,	-- Edwin Maldus
+							["coord"] = { 56.5, 23.9 },
+							["sourceQuests"] = { 48682 },	-- A Simple Sacrifice
+						}),
+						
+						
+						
+						
+						
+
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 						--[[
 						a(ach(12497, {	-- Drust Do It.
 							crit(1),		-- The Final Effigy
@@ -97,12 +642,12 @@ _.Zones =
 				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
-						o(277333, {	-- Ancient Sarcophagus		
+						o(277333, {	-- Ancient Sarcophagus
 							["questID"] = 49137,
 							["icon"] = "Interface\\Icons\\inv_misc_treasurechest01c",
 							["model"] = "World\\SkillActivated\\Containers\\TreasureChest06.mdx",
 							["modelScale"] = 2,
-						}),	
+						}),
 						n(137824, {	-- Arclight
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160469),	-- Arclight Jumpers
@@ -142,13 +687,13 @@ _.Zones =
 							["coord"] = { 50.5, 30.0 },
 							["questID"] = 49481,	
 						}),	
-						n(124548, {	-- Betsy		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(124548, {	-- Betsy
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160463),	-- Blue-Ribbon Belt
 							}),
 							["coord"] = { 58.4, 33.2 },	-- may have other spawnpoints (?)
 							["questID"] = 47884,
-						}),	
+						}),
 						n(132319, {	-- Bilefang Mother		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155284),	-- Bleak Hills Swatter
