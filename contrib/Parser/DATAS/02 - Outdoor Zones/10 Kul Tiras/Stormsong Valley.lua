@@ -97,7 +97,7 @@ _.Zones =
 						-- This gave "The Tidesages of Stormsong" criteria achievement - Crieve
 					})),
 					a(o(280727, {	-- Charred Note
-						groups = {
+						["groups"] = {
 							a(q(50139, {	-- The Missing Link
 								["sourceQuests"] = { 49975 },	-- Rest in the Depths [Alliance Only](needs verification)
 							})),
@@ -124,7 +124,7 @@ _.Zones =
 						["coord"] = { 63.5, 64.8 },
 					})),
 					a(o(290537, {	-- Help Wanted
-						groups = {
+						["groups"] = {
 							a(q(51582, {	-- Make it Mildenhall
 								["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only](needs verification)
 								["isBreadcrumb"] = true,
