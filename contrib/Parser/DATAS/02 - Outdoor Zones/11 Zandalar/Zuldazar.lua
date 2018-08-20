@@ -25,7 +25,7 @@ _.Zones =
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
 								o(281655, {	-- Gift of the Brokenhearted	
-									["questID"] = 50582,
+									["questID"] = 50582,	-- 50950 for using the Incense prior to opening the chest itself.
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
 								o(276735, {	-- Offerings of the Chosen	
@@ -613,9 +613,9 @@ _.Zones =
 							}),
 							["questID"] = 47567,
 						}),
-						n(134717, {	-- Umbra'rix [MissingL]
-							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
-						}),	
+						n(134717, {	-- Umbra'rix
+							["questID"] = 50673,
+						}),
 						n(134048, {	-- Vukuba
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(162613, {	-- Mantle of Brood Mimicry
@@ -798,7 +798,7 @@ _.Zones =
 				n(-34, {	-- World Quests
 					["groups"] = {
 						n(-17, {	-- Quests
-							q(50855, {	-- Old R'gal
+							q(50855, {	-- Old R'gal (triggered add'l questID 50856 upon killing for WQ)
 								["groups"] = {
 									i(160509, {	-- Echoes of Rezan
 										["crs"] = {
