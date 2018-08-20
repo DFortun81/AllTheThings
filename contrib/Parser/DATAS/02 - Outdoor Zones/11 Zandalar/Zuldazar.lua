@@ -821,11 +821,14 @@ _.Zones =
 								["lvl"] = 120,	-- WQ is 120+ only
 							}),
 						}),
-						i(158152),	-- Golden Empire Signet
 						i(158150),	-- Loa-Pledged Drape
+						i(158152),	-- Golden Empire Signet
+						i(158151),	-- Zandalari Band
 						n(-43, {	-- Cloth
 							["groups"] = {
-								
+								i(157907),	-- Shadra Silk Mantle
+								i(157909),	-- Shadra Silk Cuffs
+								i(157904),	-- Shadra Silk Gloves
 							},
 						}),
 						n(-44, {	-- Leather

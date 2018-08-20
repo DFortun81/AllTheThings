@@ -483,12 +483,12 @@ i(155430),
 								}),
 								 ["questID"] = 47562,
 							}),	
-							n(136393, {	-- Bloodwing Bonepicker		
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							n(136393, {	-- Bloodwing Bonepicker
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161019),	-- Dread Vulture Waistcord
 								}),
-								-- ["questID"] = 	
-							}),	
+								["questID"] = 51079,
+							}),
 							n(136346, {	-- Captain Stef "Marrow" Quin
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(160990),	-- Marrow's Sash
