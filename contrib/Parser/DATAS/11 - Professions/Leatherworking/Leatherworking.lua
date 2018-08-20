@@ -266,50 +266,28 @@ profession(165, { -- Leatherworking
 			un(8, i(29724)), -- Pattern: Cobrascale Gloves
 			i(35302), -- Pattern: Cobrascale Gloves			
 			i(29723), -- Pattern: Cobrascale Hood
+			i(29730), -- Pattern: Earthen Netherscale Boots
+			i(35217), -- Pattern: Embrace of the Phoenix
 			i(35214), -- Pattern: Gloves of Immortal Dusk
 			un(8, i(29727)), -- Pattern: Gloves of the Living Touch
 			i(35303), -- Pattern: Gloves of the Living Touch
 			i(29726), -- Pattern: Hood of Primal Life
+			i(30308), -- Pattern: Hurricane Boots	
 			i(35216), -- Pattern: Leather Chestguard of the Sun
 			i(35212), -- Pattern: Leather Gauntlets of the Sun
+			i(29729), -- Pattern: Living Dragonscale Helm
+			i(32750), -- Pattern: Living Earth Bindings
+			i(32751), -- Pattern: Living Earth Shoulders
+			i(30304), -- Pattern: Monsoon Belt
+			i(29733), -- Pattern: Netherdrake Gloves
+			i(35301), -- Pattern: Netherdrake Gloves			
 			i(25730), -- Pattern: Stylin' Jungle Hat
 			i(25728), -- Pattern: Stylin' Purple Hat
 			i(32746), -- Pattern: Swiftstrike Bracers
 			i(32747), -- Pattern: Swiftstrike Shoulders	
 			i(29725), -- Pattern: Windscale Hood
 			i(29728), -- Pattern: Windslayer Wraps
-		}),	
-		n(-17, { -- Quests
-		}),	
-		filter(200, { -- Recipes
-			recipe(36074), -- Pattern: Blackstorm Leggings
-			recipe(163231), -- Pattern: Cobra Scales
-			recipe(32482), -- Pattern: Comfortable Insoles
-			recipe(163226), -- Pattern: Crystal Infused Leather
-			recipe(36076), -- Pattern: Dragonstrike Leggings
-			recipe(163229), -- Pattern: Fel Hide
-			recipe(163228), -- Pattern: Fel Scales
-			recipe(32463), -- Pattern: Felscale Boots
-			recipe(32465), -- Pattern: Felscale Breastplate
-			recipe(32462), -- Pattern: Felscale Gloves
-			recipe(32464), -- Pattern: Felscale Pants
-			recipe(36079), -- Pattern: Golden Dragonstrike Breastplate
-			recipe(45100), -- Pattern: Leatherworker's Satchel
-			recipe(36078), -- Pattern: Living Crystal Breastplate
-			recipe(36077), -- Pattern: Primalstorm Breastplate
-			recipe(32469), -- Pattern: Scaled Draenic Boots
-			recipe(32467), -- Pattern: Scaled Draenic Gloves
-			recipe(32466), -- Pattern: Scaled Draenic Pants
-			recipe(32468), -- Pattern: Scaled Draenic Vest
-			recipe(32472), -- Pattern: Thick Draenic Boots
-			recipe(32470), -- Pattern: Thick Draenic Gloves
-			recipe(32471), -- Pattern: Thick Draenic Pants
-			recipe(32473), -- Pattern: Thick Draenic Vest
-			recipe(32478), -- Pattern: Wild Draenish Boots
-			recipe(32479), -- Pattern: Wild Draenish Gloves
-			recipe(32480), -- Pattern: Wild Draenish Leggings
-			recipe(32481), -- Pattern: Wild Draenish Boots
-		}),	
+		}),				
 		n(-2,  { -- Vendors
 			i(29704), -- Pattern: Blastguard Belt
 			i(29703), -- Pattern: Blastguard Boots
@@ -328,7 +306,14 @@ profession(165, { -- Leatherworking
 			i(29677), -- Pattern: Enchanted Felscale Leggings
 			i(29693), -- Pattern: Flamescale Belt
 			i(29691), -- Pattern: Flamescale Boots
-			i(29689), -- Pattern: Flamescale Leggings
+			i(29689), -- Pattern: Flamescale Leggings			
+			i(25738), -- Pattern: Felstalker Belt (Horde Only)
+			i(29213), -- Pattern: Felstalker Belt (Alliance Only)
+			i(25739), -- Pattern: Felstalker Bracers(Horde Only)
+			i(29214), -- Pattern: Felstalker Bracers(Alliance Only)
+			i(25740), -- Pattern: Felstalker Breastplate(Horde Only)
+			i(29215), -- Pattern: Felstalker Breastplate(Alliance Only)			
+			i(32431), -- Pattern: Greaves of Shackled Souls		
 			i(25737), -- Pattern: Heavy Clefthoof Boots
 			i(25736), -- Pattern: Heavy Clefthoof Leggings
 			i(25735), -- Pattern: Heavy Clefthoof Vest			
@@ -348,22 +333,7 @@ profession(165, { -- Leatherworking
 			un(5, i(29523)), -- Pattern: Windhawk Bracers
 			un(5, i(29522)), -- Pattern: Windhawk Hauberk
 		}),		
-		n(-45, { 	-- Mail						
-			i(29512),	-- Earthen Netherscale Boots
-			i(34373),	-- Embrace of the Phoenix
-			i(29491),	-- Enchanted Felscale Boots
-			i(29490),	-- Enchanted Felscale Gloves
-			i(29489),	-- Enchanted Felscale Leggings			
-			i(25695),	-- Felstalker Belt
-			i(25697),	-- Felstalker Bracers
-			i(25696),	-- Felstalker Breastplate			
-			i(32400),	-- Greaves of Shackled Souls
-			i(30043),	-- Hurricane Boots
-			i(29508),	-- Living Dragonscale Helm
-			i(32577),	-- Living Earth Bindings
-			i(32579),	-- Living Earth Shoulders
-			i(30044),	-- Monsoon Belt
-			i(29511),	-- Netherdrake Gloves
+		n(-45, { 	-- Mail				
 			i(29510),	-- Netherdrake Helm
 			i(25694),	-- Netherfury Belt
 			i(25693),	-- Netherfury Boots
@@ -388,9 +358,7 @@ profession(165, { -- Leatherworking
 			i(45096), -- Pattern: Blue Belt of Chaos
 			i(45095), -- Pattern: Boots of Living Scale
 			i(45101), -- Pattern: Boots of Wintry Endurance
-		}),	
-		n(-17, { -- Quests			
-		}),	
+		}),			
 		filter(200, { -- Recipes
 			recipe(50949), -- Pattern: Arctic Belt
 			recipe(50948), -- Pattern: Arctic Boots
@@ -541,9 +509,7 @@ profession(165, { -- Leatherworking
 			i(72006), -- Pattern: Bladeshadow Leggings
 			i(72010), -- Pattern: Bladeshadow Wristguards
 			i(72008), -- Pattern: Bracers of Flowing Serenity	
-		}),	
-		n(-17, { -- Quests			
-		}),	
+		}),			
 		filter(200, { -- Recipes
 			recipe(78438), -- Pattern: Cloak of Beasts
 			recipe(78439), -- Pattern: Cloak of War
@@ -636,9 +602,7 @@ profession(165, { -- Leatherworking
 	tier(5, { 	-- Mists of Pandaria
 		n(-26, { -- Drops
 			-- Mists of Pandaria --		
-		}),	
-		n(-17, { -- Quests
-		}),
+		}),			
 		filter(200, { -- Recipes	
 			recipe(131865), -- Pattern: Magnificent Hide
 			recipe(124635), -- Pattern: Misthide Drape
@@ -900,9 +864,7 @@ profession(165, { -- Leatherworking
 	tier(6, { 	-- Warlords of Draenor
 		n(-26, { -- Drops
 			-- Warlords of Draenor --			
-		}),	
-		n(-17, { -- Quests		
-		}),	
+		}),
 		filter(200, { -- Recipes			
 		}),	
 		n(-2, { -- Vendors		
@@ -947,12 +909,8 @@ profession(165, { -- Leatherworking
 	}),
 	tier(7, { 	-- Legion
 		n(-26, { -- Drops
-			-- Holiday --
-
 			-- Legion --
-		}),	
-		n(-17, { -- Quests			
-		}),	
+		}),
 		filter(200, { -- Recipes
 			recipe(239413), -- Pattern: The Sentinel's Eternal Refuge
 			recipe(239414), -- Pattern: Vigilance Perch
@@ -1011,8 +969,6 @@ profession(165, { -- Leatherworking
 	tier(8, { 	-- Battle for Azeroth
 		n(-26, { -- Drops							
 			-- Battle for Azeroth --			
-		}),	
-		n(-17, { -- Quests			
 		}),			
 		filter(200, { -- Recipes
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
@@ -1110,8 +1066,7 @@ profession(165, { -- Leatherworking
 		i(29720),	-- Pattern: Clefthide Leg Armor		
 		i(69962),	-- Pattern: Clutches of Evil
 		i(29719),	-- Pattern: Cobrahide Leg Armor
-		i(31361),	-- Pattern: Cobrahide Leg Armor			
-		i(25726),	-- Pattern: Comfortable Insoles		
+		i(31361),	-- Pattern: Cobrahide Leg Armor					
 		i(86240),	-- Pattern: Contender's Dragonscale Belt
 		i(86241),	-- Pattern: Contender's Dragonscale Boots
 		i(86242),	-- Pattern: Contender's Dragonscale Bracers
@@ -1164,13 +1119,11 @@ profession(165, { -- Leatherworking
 		i(34175),	-- Pattern: Drums of Restoration
 		i(29718),	-- Pattern: Drums of Speed
 		i(34173),	-- Pattern: Drums of Speed
-		i(34172),	-- Pattern: Drums of Speed					
-		i(29730),	-- Pattern: Earthen Netherscale Boots
+		i(34172),	-- Pattern: Drums of Speed			
 		i(69971),	-- Pattern: Earthen Scale Sabatons
 		i(44553),	-- Pattern: Earthgiving Boots
 		i(44552),	-- Pattern: Earthgiving Legguards
-		i(49963),	-- Pattern: Earthsoul Boots
-		i(35217),	-- Pattern: Embrace of the Phoenix	
+		i(49963),	-- Pattern: Earthsoul Boots			
 		i(47628),	-- Pattern: Ensorcelled Nerubian Breastplate
 		i(47650),	-- Pattern: Ensorcelled Nerubian Breastplate
 		i(69974),	-- Pattern: Ethereal Footfalls
@@ -1184,29 +1137,20 @@ profession(165, { -- Leatherworking
 		i(44518),	-- Pattern: Eviscerator's Waistguard
 		i(25733),	-- Pattern: Fel Leather Boots
 		i(25732),	-- Pattern: Fel Leather Gloves
-		i(25734),	-- Pattern: Fel Leather Leggings
-		i(25738),	-- Pattern: Felstalker Belt
-		i(29213),	-- Pattern: Felstalker Belt
-		i(25739),	-- Pattern: Felstalker Bracers
-		i(29214),	-- Pattern: Felstalker Bracers
-		i(29215),	-- Pattern: Felstalker Breastplate
-		i(25740),	-- Pattern: Felstalker Breastplate			
+		i(25734),	-- Pattern: Fel Leather Leggings				
 		i(86272),	-- Pattern: Fists of Lightning			
 		i(49961),	-- Pattern: Footpads of Impending Death
 		i(45099),	-- Pattern: Footpads of Silence
 		i(69972),	-- Pattern: Footwraps of Quenched Fire
 		i(44547),	-- Pattern: Giantmaim Bracers
 		i(44546),	-- Pattern: Giantmaim Legguards	
-		i(86273),	-- Pattern: Gloves of Earthen Harmony		
-		i(17722),	-- Pattern: Gloves of the Greatfather		
-		i(69961),	-- Pattern: Gloves of Unforgiving Flame		
-		i(32431),	-- Pattern: Greaves of Shackled Souls					
+		i(86273),	-- Pattern: Gloves of Earthen Harmony			
+		i(69961),	-- Pattern: Gloves of Unforgiving Flame							
 		i(86274),	-- Pattern: Greyshadow Chestguard
 		i(86275),	-- Pattern: Greyshadow Gloves			
 		i(100864),	-- Pattern: Hardened Magnificent Hide and Its Uses
 		i(69963),	-- Pattern: Heavenly Gloves of the Moon			
-		i(25720),	-- Pattern: Heavy Knothide Leather			
-		i(30308),	-- Pattern: Hurricane Boots		
+		i(25720),	-- Pattern: Heavy Knothide Leather				
 		i(86276),	-- Pattern: Ironscale Leg Armor
 		i(47634),	-- Pattern: Knightbane Carapace
 		i(47651),	-- Pattern: Knightbane Carapace			
@@ -1217,25 +1161,19 @@ profession(165, { -- Leatherworking
 		i(86279),	-- Pattern: Liferuned Leather Gloves
 		i(45097),	-- Pattern: Lightning Grounded Boots
 		i(67068),	-- Pattern: Lightning Lash
-		i(49962),	-- Pattern: Lightning-Infused Leggings		
-		i(29729),	-- Pattern: Living Dragonscale Helm
-		i(32750),	-- Pattern: Living Earth Bindings
-		i(32751),	-- Pattern: Living Earth Shoulders			
+		i(49962),	-- Pattern: Lightning-Infused Leggings					
 		i(47632),	-- Pattern: Lunar Eclipse Robes
 		i(47652),	-- Pattern: Lunar Eclipse Robes
 		i(25722),	-- Pattern: Magister's Armor Kit
 		i(95467),	-- Pattern: Magnificence of Leather
 		i(95468),	-- Pattern: Magnificence of Scales
-		i(44510),	-- Pattern: Mammoth Mining Bag		
-		i(30304),	-- Pattern: Monsoon Belt
+		i(44510),	-- Pattern: Mammoth Mining Bag			
 		i(47633),	-- Pattern: Moonshadow Armguards
 		i(47653),	-- Pattern: Moonshadow Armguards
 		i(86280),	-- Pattern: Murderer's Gloves		
 		i(29721),	-- Pattern: Nethercleft Leg Armor
 		i(29722),	-- Pattern: Nethercobra Leg Armor
 		i(31362),	-- Pattern: Nethercobra Leg Armor
-		i(29733),	-- Pattern: Netherdrake Gloves
-		i(35301),	-- Pattern: Netherdrake Gloves
 		i(29732),	-- Pattern: Netherdrake Helm
 		i(25741),	-- Pattern: Netherfury Belt
 		i(29217),	-- Pattern: Netherfury Belt
