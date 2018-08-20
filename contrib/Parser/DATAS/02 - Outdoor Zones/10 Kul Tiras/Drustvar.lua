@@ -465,24 +465,6 @@ _.Zones =
 							["sourceQuests"] = { 48880, 48904 },	-- Mean Gulls & Take the Bait
 							-- May also require "The Reel Deal;" needs confirmation.
 						}),
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
 						o(290419, {	-- Wanted Poster
 							qa(51547, {	-- WANTED: Rindlewoe 
 								["coord"] = { 55.7, 34.9 },

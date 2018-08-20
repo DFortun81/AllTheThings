@@ -52,7 +52,7 @@ _.Instances =
 									i(159242), -- Leggings of the Drowned Lord
 								}),
 								["crs"]  = {
-									139737, -- Lord Stormsong
+									134060, -- Lord Stormsong
 								},
 							}),
 							e(2156, { -- Vol'zith the Whisperer
@@ -114,7 +114,7 @@ _.Instances =
 									i(159242), -- Leggings of the Drowned Lord
 								},
 								["crs"]  = {
-									139737, -- Lord Stormsong
+									134060, -- Lord Stormsong
 								},
 							}),
 							e(2156, { -- Vol'zith the Whisperer
@@ -205,7 +205,7 @@ _.Instances =
 									i(159242), -- Leggings of the Drowned Lord
 								},
 								["crs"]  = {
-									139737, -- Lord Stormsong
+									134060, -- Lord Stormsong
 								},
 							}),
 							e(2156, { -- Vol'zith the Whisperer

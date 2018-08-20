@@ -5,6 +5,7 @@ _.Zones =
 {
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
+			-- Note: This expansion we do NOT want to mark this city as Horde Only because both factions will have various World Quests here
 			["groups"] = {
 				n(-4, {	-- Achievements
 					["groups"] = {
@@ -698,6 +699,15 @@ _.Zones =
 						n(145837, {	-- Violet Shadowmend
 							i(139775),	-- Alliance Enthusiast
 							i(142379),	-- Dutiful Squire
+						}),
+					},
+				}),
+				n(-34, {	-- World Quests
+					["groups"] = {
+						q(52348, {	-- Work Order: Mon'Dazi
+							i(162296, {	-- Recipe: Mon'Dazi [Rank 3]
+								["spellID"] = 259444,
+							}),
 						}),
 					},
 				}),

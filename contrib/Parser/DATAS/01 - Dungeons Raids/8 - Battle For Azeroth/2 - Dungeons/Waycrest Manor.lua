@@ -46,9 +46,9 @@ _.Instances =
 									i(159404), -- Bramble Looped Boots
 								}),
 								["crs"] = {
-									135360, -- Sister Briar
-									135358, -- Sister Malady
-									135359, -- Sister Solena
+									131825, -- Sister Briar
+									131823, -- Sister Malady
+									131824, -- Sister Malady
 								},
 							}),
 							e(2126, { -- Soulbound Goliath
@@ -134,9 +134,9 @@ _.Instances =
 									i(159404), -- Bramble Looped Boots
 								},
 								["crs"] = {
-									135360, -- Sister Briar
-									135358, -- Sister Malady
-									135359, -- Sister Solena
+									131825, -- Sister Briar
+									131823, -- Sister Malady
+									131824, -- Sister Malady
 								},
 							}),
 							e(2126, { -- Soulbound Goliath
@@ -230,9 +230,9 @@ _.Instances =
 									i(159404), -- Bramble Looped Boots
 								},
 								["crs"] = {
-									135360, -- Sister Briar
-									135358, -- Sister Malady
-									135359, -- Sister Solena
+									131825, -- Sister Briar
+									131823, -- Sister Malady
+									131824, -- Sister Malady
 								},
 							}),
 							e(2126, { -- Soulbound Goliath
@@ -309,11 +309,11 @@ _.Instances =
 				},
 				["lvl"] = 110,
 				["maps"] = {
-					--, Upstairs [There is a 5th map we need here; not in traditional order.  Will get data later. 03-12-18 Lucetia
-					1015, -- The Grand Foyer
-					1016, -- The Cellar
-					1017, -- Catacombs
-					1018, -- The Rupture
+					1015,	-- The Grand Foyer
+					1016,	-- The Cellar
+					1017,	-- Catacombs
+					1018,	-- The Rupture
+					1029,	-- Waycrest Dimension
 				},
 			}),
 		},
