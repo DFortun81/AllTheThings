@@ -97,10 +97,12 @@ _.Zones =
 						-- This gave "The Tidesages of Stormsong" criteria achievement - Crieve
 					})),
 					a(o(280727, {	-- Charred Note
+						groups = {
+							a(q(50139, {	-- The Missing Link
+								["sourceQuests"] = { 49975 },	-- Rest in the Depths [Alliance Only](needs verification)
+							})),
+						},
 						["coord"] = { 68.7, 54.4 },
-						a(q(50139, {	-- The Missing Link
-							["sourceQuests"] = { 49975 },	-- Rest in the Depths [Alliance Only](needs verification)
-						})),
 					})),
 					a(q(52793, {	-- Circle the Wagons
 						["qg"] = 141769,	-- Marilyn Hood
@@ -122,11 +124,13 @@ _.Zones =
 						["coord"] = { 63.5, 64.8 },
 					})),
 					a(o(290537, {	-- Help Wanted
+						groups = {
+							a(q(51582, {	-- Make it Mildenhall
+								["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only](needs verification)
+								["isBreadcrumb"] = true,
+							})),
+						},
 						["coord"] = { 66.3, 57.2 },
-						a(q(51582, {	-- Make it Mildenhall
-							["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only](needs verification)
-							["isBreadcrumb"] = true,
-						})),
 					})),
 					a(q(49703, {	-- House Stormsong
 						["qg"] = 130576,	-- Brother Pike
