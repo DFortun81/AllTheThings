@@ -280,13 +280,22 @@ profession(165, { -- Leatherworking
 			i(32751), -- Pattern: Living Earth Shoulders
 			i(30304), -- Pattern: Monsoon Belt
 			i(29733), -- Pattern: Netherdrake Gloves
-			i(35301), -- Pattern: Netherdrake Gloves			
+			i(35301), -- Pattern: Netherdrake Gloves
+			i(29732), -- Pattern: Netherdrake Helm
+			i(32749), -- Pattern: Shoulders of Lightning Reflexes
+			i(25729), -- Pattern: Stylin' Adventure Hat
+			i(25731), -- Pattern: Stylin' Crimson Hat		
 			i(25730), -- Pattern: Stylin' Jungle Hat
 			i(25728), -- Pattern: Stylin' Purple Hat
+			i(35219), -- Pattern: Sun-Drenched Scale Chestguard
+			i(35215), -- Pattern: Sun-Drenched Scale Gloves
 			i(32746), -- Pattern: Swiftstrike Bracers
-			i(32747), -- Pattern: Swiftstrike Shoulders	
+			i(32747), -- Pattern: Swiftstrike Shoulders
+			i(29734), -- Pattern: Thick Netherscale Breastplate
 			i(29725), -- Pattern: Windscale Hood
 			i(29728), -- Pattern: Windslayer Wraps
+			i(29731), -- Pattern: Windstrike Gloves
+			i(35300), -- Pattern: Windstrike Gloves
 		}),				
 		n(-2,  { -- Vendors
 			i(29704), -- Pattern: Blastguard Belt
@@ -316,7 +325,13 @@ profession(165, { -- Leatherworking
 			i(32431), -- Pattern: Greaves of Shackled Souls		
 			i(25737), -- Pattern: Heavy Clefthoof Boots
 			i(25736), -- Pattern: Heavy Clefthoof Leggings
-			i(25735), -- Pattern: Heavy Clefthoof Vest			
+			i(25735), -- Pattern: Heavy Clefthoof Vest
+			i(25741), -- Pattern: Netherfury Belt(Horde Only)
+			i(29217), -- Pattern: Netherfury Belt(Alliance Only)
+			i(25743),	-- Pattern: Netherfury Boots(Horde Only)
+			i(29218),	-- Pattern: Netherfury Boots(Alliance Only)
+			i(25742),	-- Pattern: Netherfury Leggings(Horde Only)
+			i(29219),	-- Pattern: Netherfury Leggings(Alliance Only)
 			un(5, i(29520)), -- Pattern: Netherstrike Belt
 			un(5, i(29521)), -- Pattern: Netherstrike Bracers
 			un(5, i(29519)), -- Pattern: Netherstrike Breastplate
@@ -329,23 +344,10 @@ profession(165, { -- Leatherworking
 			i(32434), -- Pattern: Redeemed Soul Wristguards
 			i(33205), -- Pattern: Shadowprowler's Chestguard
 			i(32745), -- Pattern: Shoulderpads of Renewed Life
+			i(32432), -- Pattern: Waistguard of Shackled Souls
 			un(5, i(29524)), -- Pattern: Windhawk Belt
 			un(5, i(29523)), -- Pattern: Windhawk Bracers
 			un(5, i(29522)), -- Pattern: Windhawk Hauberk
-		}),		
-		n(-45, { 	-- Mail				
-			i(29510),	-- Netherdrake Helm
-			i(25694),	-- Netherfury Belt
-			i(25693),	-- Netherfury Boots
-			i(25692),	-- Netherfury Leggings		
-			i(32575),	-- Shoulders of Lightning Reflexes
-			i(25681),	-- Stylin' Adventure Hat
-			i(25683),	-- Stylin' Crimson Hat
-			i(34375),	-- Sun-Drenched Scale Chestguard
-			i(34376),	-- Sun-Drenched Scale Gloves
-			i(29514),	-- Thick Netherscale Breastplate
-			i(32397),	-- Waistguard of Shackled Souls
-			i(29509),	-- Windstrike Gloves
 		}),
 	}),
 	tier(3, { 	-- Wrath of the Lich King
@@ -1173,14 +1175,7 @@ profession(165, { -- Leatherworking
 		i(86280),	-- Pattern: Murderer's Gloves		
 		i(29721),	-- Pattern: Nethercleft Leg Armor
 		i(29722),	-- Pattern: Nethercobra Leg Armor
-		i(31362),	-- Pattern: Nethercobra Leg Armor
-		i(29732),	-- Pattern: Netherdrake Helm
-		i(25741),	-- Pattern: Netherfury Belt
-		i(29217),	-- Pattern: Netherfury Belt
-		i(25743),	-- Pattern: Netherfury Boots
-		i(29218),	-- Pattern: Netherfury Boots
-		i(25742),	-- Pattern: Netherfury Leggings
-		i(29219),	-- Pattern: Netherfury Leggings
+		i(31362),	-- Pattern: Nethercobra Leg Armor		
 		i(86281),	-- Pattern: Nightfire Robe		
 		i(44526),	-- Pattern: Overcast Belt
 		i(44528),	-- Pattern: Overcast Boots
@@ -1201,8 +1196,7 @@ profession(165, { -- Leatherworking
 		i(25725),	-- Pattern: Riding Crop
 		i(49966),	-- Pattern: Rock-Steady Treads
 		i(70174),	-- Pattern: Royal Scribe's Satchel		
-		i(86295),	-- Pattern: Shadowleather Leg Armor		
-		i(32749),	-- Pattern: Shoulders of Lightning Reflexes		
+		i(86295),	-- Pattern: Shadowleather Leg Armor			
 		i(86297),	-- Pattern: Stormbreaker Chestguard
 		i(44543),	-- Pattern: Stormhide Belt
 		i(44538),	-- Pattern: Stormhide Crown
@@ -1212,11 +1206,7 @@ profession(165, { -- Leatherworking
 		i(44539),	-- Pattern: Stormhide Shoulders
 		i(44545),	-- Pattern: Stormhide Stompers
 		i(44541),	-- Pattern: Stormhide Wristguards
-		i(67072),	-- Pattern: Stormleather Sash	
-		i(25729),	-- Pattern: Stylin' Adventure Hat
-		i(25731),	-- Pattern: Stylin' Crimson Hat		
-		i(35219),	-- Pattern: Sun-Drenched Scale Chestguard
-		i(35215),	-- Pattern: Sun-Drenched Scale Gloves	
+		i(67072),	-- Pattern: Stormleather Sash			
 		i(44535),	-- Pattern: Swiftarrow Belt
 		i(44537),	-- Pattern: Swiftarrow Boots
 		i(44533),	-- Pattern: Swiftarrow Bracers
@@ -1225,7 +1215,6 @@ profession(165, { -- Leatherworking
 		i(44530),	-- Pattern: Swiftarrow Helm
 		i(44536),	-- Pattern: Swiftarrow Leggings
 		i(44531),	-- Pattern: Swiftarrow Shoulderguards		
-		i(29734),	-- Pattern: Thick Netherscale Breastplate
 		i(72009),	-- Pattern: Thundering Deathscale Wristguards		
 		i(44509),	-- Pattern: Trapper's Traveling Pack
 		i(69973),	-- Pattern: Treads of the Craft
@@ -1267,13 +1256,10 @@ profession(165, { -- Leatherworking
 		i(67085),	-- Pattern: Vicious Wyrmhide Legs
 		i(67074),	-- Pattern: Vicious Wyrmhide Shoulders
 		i(25721),	-- Pattern: Vindicator's Armor Kit		
-		i(32432),	-- Pattern: Waistguard of Shackled Souls
 		i(86308),	-- Pattern: Wildblood Gloves
 		i(86309),	-- Pattern: Wildblood Vest
 		i(44932),	-- Pattern: Windripper Boots
 		i(44933),	-- Pattern: Windripper Leggings		
-		i(29731),	-- Pattern: Windstrike Gloves
-		i(35300),	-- Pattern: Windstrike Gloves
 		i(34262),	-- Pattern: Winter Boots
 		i(137900),	-- Recipe: Battlebound Armbands
 		i(137908),	-- Recipe: Battlebound Armbands
