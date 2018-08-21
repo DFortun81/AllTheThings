@@ -14,6 +14,7 @@ _.Zones =
 								q(47098, { -- Out Like Flynn
 									["qg"] = 121239, -- Flynn Fairwind
 									["sourceQuests"] = { 51341 }, -- Tol Dagor
+									["coord"] = { 47.3, 46.2 },
 								}),
 							},
 						})),

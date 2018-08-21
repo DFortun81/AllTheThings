@@ -89,26 +89,32 @@ _.Zones =
 								a(q(51341, {	-- Daughter of the Sea
 									["qg"] = 120922, -- Lady Jaina Proudmoore
 									["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
+									["coord"] = { 65.7, 50.6 },
 								})),
 								a(q(47099, {	-- Get Your Bearings
 									["qg"] = 121235, -- Taelia
 									["sourceQuests"] = { 47098 }, -- Out Like Flynn
+									["coord"] = { 75.7, 23.5 },
 								})),
 								a(q(46729, {	-- The Old Knight
 									["qg"] = 124630, -- Taelia
 									["sourceQuests"] = { 47099 }, -- Get Your Bearings
+									["coord"] = { 67.1, 15.3 },
 								})),
 								a(q(47186, {	-- Sanctum of Sages
 									["qg"] = 121235, -- Taelia
 									["sourceQuests"] = { 46729 }, -- The Old Knight
+									["coord"] = { 68.1, 21.9 },
 								})),
 								a(q(52128, {	-- Ferry Pass
 									["qg"] = 122370, -- Cyrus Crestfall
 									["sourceQuests"] = { 47186 }, -- Sanctum of Sages
+									["coord"] = { 68.0, 21.9 },
 								})),
 								a(q(47189, {	-- A Nation Divided
 									["qg"] = 121235, -- Taelia
 									["sourceQuests"] = { 47186 }, -- Sanctum of Sages
+									["coord"] = { 68.1, 21.9 },
 								})),
 							},
 						})),
@@ -154,13 +160,14 @@ _.Zones =
 						
 						a(q(51144, {	-- A Bundle of Furs
 							["qg"] = 124289, -- "Risky" Liz Seminario <Fur Trader>
-							["sourceQuests"] = { 47189 },	-- Tiragarde Sound
+							["sourceQuests"] = { 47960 },	-- Tiragarde Sound
 						})),
 						a(q(52462, {	-- A Load of Scrap
+							["qg"] = 141274, -- Crenzo Sparkshatter
+							["coord"] = { 77.1, 16.4 },
 							["groups"] = {
 								ach(12741), -- Giving a Scrap
 							},
-							["qg"] = 141274, -- Crenzo Sparkshatter
 						})),
 						a(q(51488, {	-- Archived Knowledge
 							["qg"] = 137871,	-- Taelia
@@ -206,6 +213,7 @@ _.Zones =
 						a(q(47485, {	-- The Ashvane Trading Company
 							["qg"] = 122370, -- Cyrus Crestfall
 							["sourceQuests"] = { 47181 },	-- The Smoking Gun
+							["coord"] = { 67.9, 21.9 },
 						})),
 						a(q(47952, {	-- The Missing Fleet
 							["qg"] = 121235,	-- Taelia
@@ -224,10 +232,12 @@ _.Zones =
 						a(q(52544, {	-- The War Cache
 							["qg"] = 135612, -- Halford Wyrmbane <7th Legion High Commander>
 							["sourceQuests"] = { 52654 },	-- The War Campaign
+							["coord"] = { 69.2, 27.0 },
 						})),
 						a(q(52654, {	-- The War Campaign
 							["qg"] = 120788,	-- Genn Greymane
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
+							["coord"] = { 68.0, 22.1 },
 						})),
 						a(q(51569, {	-- The Zandalar Campaign
 							["qg"] = 135612,	-- Halford Wyrmbane <7th Legion High Commander>

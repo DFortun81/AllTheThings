@@ -98,9 +98,19 @@ _.Zones =
 						["description"] = "Account-Wide Weekly Quest.|r",
 					}),
 				}),
-				na(-17, {	-- Quests
+				na(-17, {	-- Quests	
+					qa(52946, {	-- A Dying World
+						["qg"] = 142930, -- Halford Wyrmbane
+						["sourceQuests"] = { 51795 }, -- The Battle for Lordaeron
+						["coord"] = { 27.7, 21.5 },
+					}),
+					qa(49976, {	-- Gifts of the Fallen
+						["qg"] = 132255, -- Master Mathias Shawa
+						["sourceQuests"] = { 50371 } , -- Summons to Stormwind
+					}),
 					qa(53370, {	-- Hour of Reckoning
 						["qg"] = 144095, -- Master Mathias Shaw
+						["coord"] = { 22.3, 32.3 },
 						["groups"] = {		
 							i(163542), -- Footman's Warmace
 							i(163541), -- Longbow of the Hunt
@@ -114,27 +124,22 @@ _.Zones =
 							i(163533), -- Footman's Cleaver
 						},
 					}),
+					qa(50371),	-- Summons to Stormwind
 					qa(51795, {	-- The Battle for Lordaeron
 						["qg"] = 144095, -- Master Mathias Shaw
 						["sourceQuests"] = { 53370 }, -- Hour of Reckoning
-					}),	
-					qa(52946, {	-- A Dying World
-						["qg"] = 142930, -- Halford Wyrmbane
-						["sourceQuests"] = { 51795 }, -- The Battle for Lordaeron
-					}),
-					qa(46727, { -- Tides of War
-						["qg"] = 142930, -- Halford Wyrmbane
-						["sourceQuests"] = { 51403 }, -- The Speaker's Imperative
+						["coord"] = { 22.3, 32.3 },
 					}),
 					qa(46728, { -- The Nation of Kul Tiras
 						["qg"] = 120756, -- Anduin Wyrnn
 						["sourceQuests"] = { 46727 }, -- Tides of War
+						["coord"] = { 85.2, 32.1 },
 					}),
-					qa(50371),	-- Summons to Stormwind
-					qa(49976, {	-- Gifts of the Fallen
-						["qg"] = 132255, -- Master Mathias Shawa
-						["sourceQuests"] = { 50371 } , -- Summons to Stormwind
-					}),	
+					qa(46727, { -- Tides of War
+						["qg"] = 142930, -- Halford Wyrmbane
+						["sourceQuests"] = { 51403 }, -- The Speaker's Imperative
+						["coord"] = { 27.6, 21.2 },
+					}),
 					qa(49981, {	-- Witness to the Wound
 						["qg"] = 132255, -- Master Mathias Shawa
 						["sourceQuests"] = { 49976 } , -- Gifts of the Fallen
