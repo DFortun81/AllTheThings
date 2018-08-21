@@ -7,8 +7,12 @@ _.Zones =
 		m(70, {	-- Dustwallow Marsh
 			["groups"] = {
 				n(-228, { -- Flight Paths
-					fp(55), -- Brackenwall Village, Dustwallow Marsh
-					fp(179), -- Mudsprocket, Dustwallow Marsh
+					fp(55, { -- Brackenwall Village, Dustwallow Marsh
+						["coord"] = { 35.6, 31.8 },
+					}),
+					fp(179, { -- Mudsprocket, Dustwallow Marsh
+						["coord"] = { 42.8, 72.4 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(398),	-- Black Rat

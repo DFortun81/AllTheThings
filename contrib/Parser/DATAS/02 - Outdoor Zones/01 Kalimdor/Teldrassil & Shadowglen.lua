@@ -5,7 +5,15 @@ _.Zones =
 {
 	m(12, { 	-- Kalimdor
 		m(57, {		-- Teldrassil
-			["groups"] = {			
+			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(456, { -- Dolanaar, Teldrassil
+						["coord"] = { 55.4, 50.4 },
+					}),
+					fp(27, { -- Rut'theran Village, Teldrassil
+						["coord"] = { 55.4, 88.4 },
+					}),
+				}),
 				n(-25, {	-- Pet Battle
 					p(507), 	-- Crested Owl
 					p(479), 	-- Elfin Rabbit

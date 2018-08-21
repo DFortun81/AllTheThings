@@ -6,7 +6,12 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(89, { 	-- Darnassus
 			["groups"] = {
-			n(-25, { 	-- Pet Battle
+				n(-228, {	-- Flight Path
+					fp(457, { -- Darnassus, Teldrassil
+						["coord"] = { 36.6, 48 },
+					}),
+				}),
+				n(-25, { 	-- Pet Battle
 					p(479), 	-- Elfin Rabbit
 					p(478), 	-- Forest Moth
 					p(452), 	-- Red-Tailed Chipmunk

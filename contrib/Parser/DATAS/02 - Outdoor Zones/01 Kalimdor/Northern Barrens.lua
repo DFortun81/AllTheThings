@@ -7,9 +7,15 @@ _.Zones =
 		m(10, {		-- Northern Barrens
 			["groups"] = {
 				n(-228, { -- Flight Paths
-					fp(458), -- Nozzlepot's Outpost, Northern Barrens
-					fp(80), -- Ratchet, Northern Barrens
-					fp(25), -- The Crossroads, Northern Barrens
+					fp(458, { -- Nozzlepot's Outpost, Northern Barrens
+						["coord"] = { 62.4, 17.2 },
+					}),
+					fp(80, { -- Ratchet, Northern Barrens
+						["coord"] = { 69, 70.6 },
+					}),
+					fp(25, { -- The Crossroads, Northern Barrens
+						["coord"] = { 48.6, 58.6 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder

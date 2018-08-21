@@ -6,6 +6,11 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(7, { 		-- Mulgore
 			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(402, { -- Bloodhoof Village, Mulgore
+						["coord"] = { 47.4, 58.6 },
+					}),
+				}),
 				n(-25, {	-- Pet Battle
 					p(477),		-- Gazelle Fawn
 					p(385), 	-- Mouse

@@ -5,7 +5,18 @@ _.Zones =
 {
 	m(12, { 	-- Kalimdor
 		m(249, {	-- Uldum
-			["groups"] = {			
+			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(653, { -- Oasis of Vir'sar, Uldum
+						["coord"] = { 26.6, 8.2 },
+					}),
+					fp(652, { -- Ramkahen, Uldum
+						["coord"] = { 56.2, 33.6 },
+					}),
+					fp(674, { -- Schnottz's Landing, Uldum
+						["coord"] = { 22.2, 64.8 },
+					}),
+				}),
 				n(-25, {	-- Pet Battle
 					p(484), 	-- Desert Spider
 					p(467), 	-- Dung Beetle

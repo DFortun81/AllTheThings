@@ -5,7 +5,24 @@ _.Zones =
 {
 	m(12, { 	-- Kalimdor
 		m(198, {	-- Mount Hyjal
-			["groups"] = {	
+			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(616, { -- Gates of Sothann, Hyjal
+						["coord"] = { 71.6, 75.2 },
+					}),
+					fp(558, { -- Grove of Aessina, Hyjal
+						["coord"] = { 19.6, 36.4 },
+					}),
+					fp(559, { -- Nordrassil, Hyjal
+						["coord"] = { 62.2, 21.6 },
+					}),
+					fp(781, { -- Sanctuary of Malorne, Hyjal
+						["coord"] = { 27.8, 63.4 },
+					}),
+					fp(557, { -- Shrine of Aviana, Hyjal
+						["coord"] = { 41.2, 42.6 },
+					}),
+				}),
 				n(-25, {	-- Pet Battle
 					p(487), 	-- Alpine Chipmunk
 					p(632), 	-- Ash Lizard
@@ -839,14 +856,16 @@ _.Zones =
 				}),	--]]
 				m(338, {	-- Molten Front
 					["groups"] = {
-						ach(5859, {	-- Legacy of Leyara
-							crit(1),
-							crit(2),
-							crit(3),
-							{
-								["itemID"] = 69854,		-- Smoke-Stained Locket
-								["questID"] = 29298,	-- Quest: A Smoke-Stained Locket
-							},
+						n(-4, {	-- Achievements
+							ach(5859, {	-- Legacy of Leyara
+								crit(1),
+								crit(2),
+								crit(3),
+								{
+									["itemID"] = 69854,		-- Smoke-Stained Locket
+									["questID"] = 29298,	-- Quest: A Smoke-Stained Locket
+								},
+							}),
 						}),
 --[[
 					n(-17, { -- Quests						

@@ -7,8 +7,12 @@ _.Zones =
 		m(1, { -- Durotar
 			["groups"] = {
 				n(-228, { -- Flight Paths
-					fp(537), -- Razor Hill, Durotar
-					fp(536), -- Sen'jin Village, Durotar
+					fp(537, { -- Razor Hill, Durotar
+						["coord"] = { 53, 43.6 },
+					}),
+					fp(536, { -- Sen'jin Village, Durotar
+						["coord"] = { 55.4, 73.4 },
+					}),
 				}),
 				n(-25, { -- Pet Battle
 					p(635), -- Adder

@@ -55,6 +55,14 @@ _.Zones =
 						["sourceQuests"] = { 29032 },	-- Get Them While They're Young
 					}),
 				})),
+				n(-228, {	-- Flight Paths
+					fp(52, { -- Everlook, Winterspring
+						["coord"] = { 61, 48.6 },
+					}),
+					fp(53, { -- Everlook, Winterspring
+						["coord"] = { 58.8, 48.2 },
+					}),
+				}),
 				n(-25, {	-- Pet Battle
 					p(487),  	-- Alpine Chipmunk
 					p(441),  	-- Alpine Hare

@@ -182,7 +182,9 @@ _.Zones =
 					}),
 				--]]
 				n(-228, { -- Flight Paths
-					fp(23), -- Orgrimmar, Durotar
+					fp(23, { -- Orgrimmar, Durotar
+						["coord"] = { 49.4, 59.2 },
+					}),
 				}),
 				n(  -25, {	-- Pet Battle
 					p(467), 	-- Dung Beetle

@@ -5,7 +5,15 @@ _.Zones =
 {
 	m(12, { 	-- Kalimdor
 		m(62, {		-- Darkshore
-			["groups"] = {					
+			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(339, { -- Grove of the Ancients, Darkshore
+						["coord"] = { 44.4, 75.4 },
+					}),
+					fp(26, { -- Lor'danel, Darkshore
+						["coord"] = { 51.6, 17.6 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					desc(p(508), "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach."),	-- Darkshore Cub
 					p(378), 	-- Rabbit

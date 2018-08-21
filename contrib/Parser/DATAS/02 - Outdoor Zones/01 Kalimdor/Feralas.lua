@@ -6,6 +6,29 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(69, {	-- Feralas
 			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(568, { -- Camp Ataya, Feralas
+						["coord"] = { 41.4, 15.4 },
+					}),
+					fp(42, { -- Camp Mojache, Feralas
+						["coord"] = { 75.4, 44.2 },
+					}),
+					fp(565, { -- Dreamer's Rest, Feralas
+						["coord"] = { 50.2, 16.6 },
+					}),
+					fp(41, { -- Feathermoon, Feralas
+						["coord"] = { 46.8, 45.2 },
+					}),
+					fp(31, { -- Shadebough, Feralas
+						["coord"] = { 77.2, 56.8 },
+					}),
+					fp(569, { -- Stonemaul Hold, Feralas
+						["coord"] = { 51, 48.4 },
+					}),
+					fp(567, { -- Tower of Estulan, Feralas
+						["coord"] = { 57, 54 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					desc(p(557), "Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas."), -- Nether Faerie Dragon
 					p(378), 	-- Rabbit
@@ -289,7 +312,7 @@ _.Zones =
 					qg(39725, qa(25429)),	-- Zukk'ash Infestation	
 --]]
 				}),
-				n(-16, { -- Rares	
+				n(-16, { 	-- Rares	
 					n(5347, { 		-- Antilus the Soarer
 						dr(04.0, i(9854)),	-- Archer's Jerkin
 						dr(04.0, i(7462)),	-- Knight's Girdle
@@ -814,7 +837,7 @@ _.Zones =
 						i(12253),	-- Brilliant Red Cloak
 					})),
 				}),
-				n(0, { -- Zone Drop
+				n(0, { 		-- Zone Drop
 					h(n(5300, {		-- Frayfeather Hippogryph
 						dr(0.02, i(11474)), -- Sprite Darter Egg
 					})),

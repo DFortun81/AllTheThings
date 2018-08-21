@@ -78,11 +78,21 @@ _.Zones =
 					},
 				}),
 				n(-228, { -- Flight Paths
-					fp(166), -- Emerald Sanctuary, Felwood
-					fp(597), -- Irontree Clearing, Felwood
-					fp(65), -- Talonbranch Glade, Felwood
-					fp(594), -- Whisperwind Grove, Felwood
-					fp(595), -- Wildheart Point, Felwood
+					fp(166, { -- Emerald Sanctuary, Felwood
+						["coord"] = { 51.4, 80.8 },
+					}),
+					fp(597, { -- Irontree Clearing, Felwood
+						["coord"] = { 56.2, 8.6 },
+					}),
+					fp(65, { -- Talonbranch Glade, Felwood
+						["coord"] = { 60.6, 25.2 },
+					}),
+					fp(594, { -- Whisperwind Grove, Felwood
+						["coord"] = { 43.6, 28.6 },
+					}),
+					fp(595, { -- Wildheart Point, Felwood
+						["coord"] = { 44.2, 61.8 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					desc(p(500), "Can be found around Shatter Scar Vale near Infernal Sentries."), -- Minfernal
