@@ -7809,8 +7809,9 @@ app:GetWindow("Debugger", UIParent, function(self)
 				self:MergeObject(self.rawData, info);
 				self:Update();
 			elseif e == "QUEST_DETAIL" then
-				local questStartItemID = ...;
 				local questID = GetQuestID();
+				if questID == 0 then return false; end
+				local questStartItemID = ...;
 				local mapID = app.GetCurrentMapID();
 				local npc = "questnpc";
 				local guid = UnitGUID(npc);
@@ -7824,10 +7825,12 @@ app:GetWindow("Debugger", UIParent, function(self)
 				
 				local rawGroups = {};
 				for i=1,GetNumQuestRewards(),1 do
-					table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(GetQuestItemLink("reward", i)) });
+					local link = GetQuestItemLink("reward", i);
+					if link then table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
 				end
 				for i=1,GetNumQuestChoices(),1 do
-					table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(GetQuestItemLink("choice", i)) });
+					local link = GetQuestItemLink("choice", i);
+					if link then table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
 				end
 				for i=1,GetNumQuestLogRewardSpells(questID),1 do
 					local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
