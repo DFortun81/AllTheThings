@@ -201,10 +201,10 @@ _.Zones =
 						--------------------------------------
 						-- Eastpoint Station / Ashvane Foundry
 						--------------------------------------
-						-- sz(12473, 1) -- A Sound Plan: The Ashvane Trading
 						a(q(47487, {	-- Labor Dispute
 							["qg"] = 122671, -- Cagney
 							["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
+							["coord"] = { 76.8, 43.4 },
 						})),
 						o(281647, {		-- Posted Notice [Object]
 							a(q(50573, {	-- Message from the Management
@@ -224,14 +224,22 @@ _.Zones =
 						a(q(47488, {	-- Small Haulers
 							["qg"] = 122672, -- Olive
 							["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
+							["coord"] = { 76.8, 43.4 },
 						})),
 						a(q(47486, {	-- Suspicious Shipments
 							["qg"] = 122671, -- Cagney
 							["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
+							["coord"] = { 76.8, 43.4 },
 						})),
 						a(q(50531, {	-- Under Their Noses
 							["qg"] = 121239, -- Flynn Fairwind
 							["sourceQuests"] = { 50573, 47488, 47485 },	-- Message from the Management / Small Haulers / Suspicious Shipments
+							["groups"] = {
+								{
+									["achievementID"] = 12473,	-- A Sound Plan [Achievement]
+									["criteriaID"] = 1,	-- The Ashvane Trading Company [Criteria]
+								},
+							},
 							-- CRIEVE NOTE: This triggered sz(12473, 1) -- A Sound Plan: The Ashvane Trading Company for me.
 						})),
 						
