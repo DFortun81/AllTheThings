@@ -257,12 +257,15 @@ _.Zones =
 							["questID"] = 50948,
 							--["questID"] = 50947, -- This is the unlock for actual chest
 						}),
-						n(129954, {	-- Gahz'ralka
+						n(129954, {	-- Gahz'ralka [CQLS]
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								sz(12944, 2),	-- Gahz'ralka
 								i(161043),	-- Relentless Hydra Legguards
 							}),
-							["questID"] = 50439,	
+							["questID"] = 50439,
+							["coords"] = {
+								{ 64.28, 32.67 },
+							},
 						}), 
 						n(120899, {	-- Kul'krazahn
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
