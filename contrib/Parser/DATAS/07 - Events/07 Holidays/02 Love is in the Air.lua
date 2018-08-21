@@ -169,6 +169,36 @@ _.WorldEvents =
 							},
 							["lvl"] = 98,
 						}),
+						
+						un(2, i(51808)),	-- Choker of the Pure Heart [Level 80]
+						un(2, i(68173)),	-- Choker of the Pure Heart [Level 85]
+						un(2, i(93394)),	-- Choker of the Pure Heart [Level 90]
+						un(2, i(117369)),	-- Choker of the Pure Heart [Level 100]
+						i(143908),	-- Choker of the Pure Heart [Level 110]
+						
+						un(2, i(51805)),	-- Heartbreak Charm [Level 80]
+						un(2, i(68176)),	-- Heartbreak Charm [Level 85]
+						un(2, i(93391)),	-- Heartbreak Charm [Level 90]
+						un(2, i(117366)),	-- Heartbreak Charm [Level 100]
+						i(143906),	-- Heartbreak Charm [Level 110]
+						
+						un(2, i(51806)),	-- Shard of Pirouetting Happiness [Level 80]
+						un(2, i(68172)),	-- Shard of Pirouetting Happiness [Level 85]
+						un(2, i(93395)),	-- Shard of Pirouetting Happiness [Level 90]
+						un(2, i(117370)),	-- Shard of Pirouetting Happiness [Level 100]
+						i(143907),	-- Shard of Pirouetting Happiness [Level 110]
+						
+						un(2, i(51807)),	-- Sweet Perfume Brooch [Level 80]
+						un(2, i(68174)),	-- Sweet Perfume Brooch [Level 85]
+						un(2, i(93393)),	-- Sweet Perfume Brooch [Level 90]
+						un(2, i(117368)),	-- Sweet Perfume Brooch [Level 100]
+						i(143909),	-- Sweet Perfume Brooch [Level 110]
+						
+						un(2, i(51804)),	-- Winking Eye of Love [Level 80]
+						un(2, i(68175)),	-- Winking Eye of Love [Level 85]
+						un(2, i(93392)),	-- Winking Eye of Love [Level 90]
+						un(2, i(117367)),	-- Winking Eye of Love [Level 100]
+						i(143905),	-- Winking Eye of Love [Level 110]
 					}),
 					n(-9978, { -- Northrend
 						inst(277, { -- Halls of Stone
