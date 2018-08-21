@@ -16,53 +16,92 @@ _.Zones =
 						}),
 						ach(12849, {	-- Treasures of Vol'dun
 							["groups"] = {
-								o(280951, {	-- Ashvane Spoils
+								o(280951, {	-- Ashvane Spoils [D]
 									["groups"] = {
 										n(132662,  { -- Mine Cart
 											["questID"] = 47326,
-											["coords"] = { 46.59, 88.00 },
+											["coords"] = { 
+												{ 46.59, 88.00 },
+											},
 											["description"] = "Hop into the cart here to arrive at the end for the chest",
 										}),
 									},
 									["questID"] = 50237,
 									["sourceQuests"] =  { 47326 },    -- Mine Cart Ride
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+									["coords"] = { 
+										{ 44.37, 92.22 },
+									},
 								}),
 								o(294317, {	-- Deadwood Chest
 									["questID"] = 52994,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(287324, {	-- Excavator's Greed	
+								o(287324, {	-- Excavator's Greed [D]
 									["questID"] = 51136,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+									["coords"] = { 
+										{ 57.68, 64.68 },
+									},
 								}),
 								o(999999, {	-- Grayal's Last Offering	
 									["questID"] = 51093,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(287304, {	-- Lost Explorer's Bounty	
+								o(287304, {	-- Lost Explorer's Bounty [D]
 									["questID"] = 51132,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+									["coords"] = {
+										{ 49.76, 79.35 },
+									},
 								}),
-								o(294316, {	-- Lost Offerings of Kimbul	
+								o(294316, {	-- Lost Offerings of Kimbul	[D]
 									["questID"] = 52992,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+									["coords"] = {
+										{ 57.02, 11.12 },
+									},
 								}),
 								o(287318, {	-- Sandfury Reserve	
 									["questID"] = 51133,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(294319, {	-- Sandsunken Treasure	
+								o(294319, {	-- Sandsunken Treasure [D]
+									["groups"] = {
+										n(124736,  { -- Fishing Bobber
+											["questID"] = 53005,
+											["coords"] = {
+												{ 26.52, 45.42 },
+											},
+											["description"] = "Click the bobber to spawn the chest",
+										}),
+									},
 									["questID"] = 53004,
+									["sourceQuests"] = { 53005 },	-- Fishing Bobber
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+									["coord"] = { 26.53, 45.40 },
 								}),
 								o(287320, {	-- Stranded Cache	
 									["questID"] = 51135,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(287326, {	-- Zem'lan's Buried Treasure	
+								o(287326, {	-- Zem'lan's Buried Treasure [D]
+									["groups"] = {
+										o(282628, {	-- Sand Pile
+											["questID"] = 51138,
+											["coords"] = {
+												{ 29.36, 87.47 },
+											},
+											["description"] = "Click sand to spawn chest.",
+											["icon"] = "Interface\\Icons\\spell_quicksand",
+										}),
+									},
 									["questID"] = 51137,
+									["sourceQuests"] = { 51138 },
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+									["coords"] = {
+										{ 29.36, 87.47 },
+									},
 								}),
 							},
 						}),
@@ -578,7 +617,7 @@ i(155430),
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161030),	-- Vicious Scorpidsting Sandals
 								}),
-								-- ["questID"] = 	
+								["questID"] = 51076,
 							}),	
 							n(136338, {	-- Sirokar		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -636,6 +675,73 @@ i(155430),
 								}),
 								["questID"] = 48319,	
 							}),
+					},
+				}),
+				n(-212, {	-- Treasure Chest
+					["groups"] = { -- If we are going to list every treasure chest then let's make it pretty and not show quest ID# on screen.
+						o(9999999, { -- Treasure Chest
+							["questID"] = 50922,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 29.58, 48.10 },
+							},
+						}),
+						o(9999998, { -- Treasure Chest
+							["questID"] = 50920,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 43.95, 91.86 },
+							},
+						}),
+						o(9999997, { -- Treasure Chest
+							["questID"] = 51673,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 49.36, 80.18 },
+							},
+						}),
+						o(9999996, { -- Treasure Chest
+							["questID"] = 50926,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 56.49, 69.88 },
+							},
+						}),
+						o(9999995, { -- Treasure Chest
+							["questID"] = 50928,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 58.48, 56.84 },
+							},
+						}),
+						o(9999994, { -- Treasure Chest
+							["questID"] = 50916,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 61.32, 32.36 },
+							},
+						}),
+						o(9999993, { -- Treasure Chest
+							["questID"] = 50914,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 60.90, 12.72 },
+							},
+						}),
+						o(9999992, { -- Treasure Chest
+							["questID"] = 50918,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 65.83, 23.52 },
+							},
+						}),
+						o(9999991, { -- Treasure Chest
+							["questID"] = 50923,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 28.19, 68.92 },
+							},
+						}),
 					},
 				}),
 				n(-2, {  -- Vendors

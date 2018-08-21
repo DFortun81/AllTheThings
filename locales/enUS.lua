@@ -2528,6 +2528,7 @@ AllTheThings.Locales.enUS = {
 		[282666] = select(1,GetAchievementCriteriaInfo(12942,25)), --  Urn of Agussu
 		[277333] = select(1,GetAchievementCriteriaInfo(12941,8)), --  Ancient Sarcophagus
 		[277897] = select(1,GetAchievementCriteriaInfo(12941,12)), --  Seething Cache
+		[282628] = GetSpellInfo(245476),	-- Sand Pile
 		[9999999] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Start with this one and go down the list when entering.
 		[9999998] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Continue on down.
 		[9999997] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Continue on down.
