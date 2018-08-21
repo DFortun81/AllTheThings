@@ -50,15 +50,18 @@ _.Zones =
 							i(159905),	-- Breastplate of the Champion
 						},		
 						["qg"] = 136907, -- Magni Bronzebeard		
-						["sourceQuests"] = { 53028 }, -- The Heart of Azeroth		
+						["sourceQuests"] = { 53028 }, -- The Heart of Azeroth
+						["coord"] = { 50.3, 54.4 },
 					}),	
 					qh(53031, {	-- The Speaker's Imperative	
 						["qg"] = 136907, -- Magni Bronzebeard	
 						["sourceQuests"] = { 52428 }, -- Infusing the Heart	
+						["coord"] = { 50.1, 53.6 },
 					}),
 					qa(51403, { -- The Speaker's Imperative
 						["qg"] = 136907, -- Magni Bronzebeard	
-						["sourceQuests"] = { 52428 }, -- Infusing the Heart	
+						["sourceQuests"] = { 52428 }, -- Infusing the Heart
+						["coord"] = { 50.1, 53.6 },
 					}),
 				},
 			}),

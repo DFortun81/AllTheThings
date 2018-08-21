@@ -318,7 +318,17 @@ _.Zones =
 					}),
 				}),
 				h(n(-17, {	-- Quests
-					q(53372, {	-- Hour of Reckoning		
+					q(53028, {	-- A Dying World
+						["qg"] = 140176, -- Nathanos Blightcaller
+						["sourceQuests"] = { 51796 }, -- The Battle for Lordaeron
+						["coord"] = { 48.8, 91.5 },
+					}),
+					q(50341, {	-- A Recent Discovery
+						["qg"] = 132254, -- Nathanos Blightcaller
+						["sourceQuests"] = { 49977 } , -- Summons to Orgrimmar
+					}),	
+					q(53372, {	-- Hour of Reckoning
+						["qg"] = 14720, -- High Overlord Saurfang
 						["groups"] = {		
 							i(163528),	-- Deathguard's Gladius
 							i(163525),	-- Grunt's Boot Knife
@@ -332,27 +342,22 @@ _.Zones =
 							i(163530),	-- Warmage's Spire
 						},		
 					}),
-					q(51796, {	-- The Battle for Lordaeron
-						["qg"] = 14720, -- High Overlord Saurfang
-						["sourceQuests"] = { 53372 }, -- Hour of Reckoning
-					}),	
-					q(53028, {	-- A Dying World
-						--["qg"] = 140176, -- Nathanos Blightcaller [Changed on Live]
-						["sourceQuests"] = { 51796 }, -- The Battle for Lordaeron
-					}),	
-					q(49977),	-- Summons to Orgrimmar
 					q(51443, {  -- Mission Statement
 						["qg"] = 140176, -- Nathanos Blightcaller
 						["sourceQuests"] = { 53031 }, -- The Speaker's Imperative
+						["coord"] = { 48.9, 91.4 },
 					}),
+					q(51796, {	-- The Battle for Lordaeron
+						["qg"] = 14720, -- High Overlord Saurfang
+						["sourceQuests"] = { 53372 }, -- Hour of Reckoning
+						["coord"] = { 48.5, 70.7 },
+					}),
+					q(49977),	-- Summons to Orgrimmar
 					q(50769, {  -- The Stormwind Extraction
 						["qg"] = 135205,  -- Nathanos Blightcaller
 						["sourceQuests"] = { 51443 }, -- Mission Statement
+						["coord"] = { 54.4, 78.4 },
 					}),
-					q(50341, {	-- A Recent Discovery
-						["qg"] = 132254, -- Nathanos Blightcaller
-						["sourceQuests"] = { 49977 } , -- Summons  to Orgrimmar
-					}),	
 					qh(49982, {	-- Witness to the Wound
 						["qg"] = 132254, -- Nathanos Blightcaller
 						["sourceQuests"] = { 50341 } , -- A Recent Discovery

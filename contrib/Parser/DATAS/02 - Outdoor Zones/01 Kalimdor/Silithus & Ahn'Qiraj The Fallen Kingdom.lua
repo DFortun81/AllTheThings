@@ -1258,7 +1258,8 @@ END OF MICRO-HOLIDAY --]]
 										}),
 									},
 									["qg"] = 130216, -- The Heart of Azeroth
-									["sourceQuests"] = { 52946 }, -- A Dyying World
+									["sourceQuests"] = { 52946 }, -- A Dying World
+									["coord"] = { 42.2, 44.2 },
 								}),
 								qh(53028, {	-- The Heart of Azeroth		
 									["groups"] = {		
@@ -1268,7 +1269,8 @@ END OF MICRO-HOLIDAY --]]
 										}),
 									},		
 									["qg"] = 130216, -- Magni Bronzebeard		
-									["sourceQuests"] = { 53028 }, -- A Dying World		
+									["sourceQuests"] = { 53028 }, -- A Dying World
+									["coord"] = { 42.2, 44.2 },
 								}),
 								qa(50047, {	-- Free Samples
 									["groups"] = {
