@@ -7,8 +7,12 @@ _.Zones =
 		m(18, {	-- Tirisfal Glades
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(460),	-- Brill, Tirisfal Glades
-					fp(384),	-- The Bulwark, Tirisfal
+					fp(460, { -- Brill, Tirisfal Glades
+						["coord"] = { 58.8, 51.8 },
+					}),
+					fp(384, { -- The Bulwark, Tirisfal
+						["coord"] = { 83.4, 70 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(417),		-- Bat

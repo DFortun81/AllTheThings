@@ -7,9 +7,15 @@ _.Zones =
 		m(32, {	-- Searing Gorge
 			["groups"] = {	
 				n(-228, {	-- Flight Path
-					fp(673),	-- Iron Summit, Searing Gorge
-					fp(74),		-- Thorium Point, Searing Gorge
-					fp(75),		-- Thorium Point, Searing Gorge
+					fp(673, { -- Iron Summit, Searing Gorge
+						["coord"] = { 41, 68.6 },
+					}),
+					fp(74, { -- Thorium Point, Searing Gorge
+						["coord"] = { 37.8, 30.6 },
+					}),
+					fp(75, { -- Thorium Point, Searing Gorge
+						["coord"] = { 34.8, 30.8 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					-- q(31912, {	--Kortas Darkhammer

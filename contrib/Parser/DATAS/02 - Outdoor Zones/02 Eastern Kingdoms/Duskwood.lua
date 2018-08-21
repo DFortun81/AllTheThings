@@ -29,8 +29,12 @@ _.Zones =
 					["u"] = 2,					
 				}),				
 				n(-228, {	-- Flight Path
-					fp(12),	-- Darkshire, Duskwood
-					fp(622), -- Raven Hill, Duskwood
+					fp(12, {	-- Darkshire, Duskwood
+						["coord"] = { 77.4, 44.2 },
+					}),
+					fp(622, { -- Raven Hill, Duskwood
+						["coord"] = { 21, 56.6 },
+					}),
 				}),
 				n(-25,  {	-- Pet Battle
 					p(398), 	-- Black Rat

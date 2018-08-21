@@ -7,10 +7,18 @@ _.Zones =
 		m(210, {	-- The Cape of Stranglethorn
 			["groups"] = {			
 				n(-228, {	-- Flight Path
-					fp(18),		-- Booty Bay, Stranglethorn
-					fp(19),		-- Booty Bay, Stranglethorn
-					fp(591),	-- Explorers' League Digsite, Stranglethorn
-					fp(592),	-- Hardwrench Hideaway, Stranglethorn
+					fp(18, { -- Booty Bay, Stranglethorn
+						["coord"] = { 40.6, 73.2 },
+					}),
+					fp(19, { -- Booty Bay, Stranglethorn
+						["coord"] = { 41.6, 74.4 },
+					}),
+					fp(591, { -- Explorers' League Digsite, Stranglethorn
+						["coord"] = { 55.6, 41.2 },
+					}),
+					fp(592, { -- Hardwrench Hideaway, Stranglethorn
+						["coord"] = { 35, 29.2 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					{			-- Baby Ape

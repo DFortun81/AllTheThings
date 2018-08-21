@@ -7,8 +7,12 @@ _.Zones =
 		m(27, {		-- Dun Morogh
 			["groups"] = {	
 				n(-228, {	-- Flight Master
-					fp(619),	-- Kharanos, Dun Morogh
-					fp(620),	-- Gol'Bolar Quarry, Dun Morogh
+					fp(620, {	-- Gol'Bolar Quarry, Dun Morogh
+						["coord"] = { 75.8, 54.4 },
+					}),
+					fp(619, {	-- Kharanos, Dun Morogh
+						["coord"] = { 53.8, 52.6 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(441), 	-- Alpine Hare

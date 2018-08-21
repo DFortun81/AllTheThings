@@ -7,10 +7,18 @@ _.Zones =
 		m(25, {	-- Hillsbrad Foothills
 			["groups"] = {
 				n(-228, { 	-- Flight Path
-					fp(669), -- Eastpoint Tower, Hillsbrad
-					fp(667), -- Ruins of Southshore, Hillsbrad
-					fp(668), -- Southpoint Gate, Hillsbrad
-					fp(13),  -- Tarren Mill, Hillsbrad
+					fp(669, { -- Eastpoint Tower, Hillsbrad
+						["coord"] = { 59.6, 63.2 },
+					}),
+					fp(667, { -- Ruins of Southshore, Hillsbrad
+						["coord"] = { 49, 66.2 },
+					}),
+					fp(668, { -- Southpoint Gate, Hillsbrad
+						["coord"] = { 29, 64.4 },
+					}),
+					fp(13, { -- Tarren Mill, Hillsbrad
+						["coord"] = { 56, 46 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken

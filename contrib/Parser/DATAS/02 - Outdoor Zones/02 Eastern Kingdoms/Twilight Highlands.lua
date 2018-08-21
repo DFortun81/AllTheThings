@@ -5,7 +5,42 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(241, {	-- Twilight Highlands
-			["groups"] = {							
+			["groups"] = {
+				n(-228, {	-- Flight Path
+					fp(659, { -- Bloodgulch, Twilight Highlands
+						["coord"] = { 54, 42.2 },
+					}),
+					fp(656, { -- Crushblow, Twilight Highlands
+						["coord"] = { 45.6, 76.2 },
+					}),
+					fp(661, { -- Dragonmaw Port, Twilight Highlands
+						["coord"] = { 73.8, 52.8 },
+					}),
+					fp(664, { -- Firebeard's Patrol, Twilight Highlands
+						["coord"] = { 60.4, 57.6 },
+					}),
+					fp(662, { -- Highbank, Twilight Highlands
+						["coord"] = { 81.6, 77 },
+					}),
+					fp(666, { -- Kirthaven, Twilight Highlands
+						["coord"] = { 56.6, 15.2 },
+					}),
+					fp(657, { -- The Gullet, Twilight Highlands
+						["coord"] = { 36.8, 38 },
+					}),
+					fp(660, { -- The Krazzworks, Twilight Highlands
+						["coord"] = { 75.4, 18 },
+					}),
+					fp(665, { -- Thundermar, Twilight Highlands
+						["coord"] = { 48.4, 28.2 },
+					}),
+					fp(658, { -- Vermillion Redoubt, Twilight Highlands
+						["coord"] = { 28.4, 24.8 },
+					}),
+					fp(663, { -- Victor's Point, Twilight Highlands
+						["coord"] = { 43.8, 57.2 },
+					}),
+				}),
 				n(-25, {	-- Pet Battle
 					p(398), 	-- Black Rat
 					p(393), 	-- Cockroach

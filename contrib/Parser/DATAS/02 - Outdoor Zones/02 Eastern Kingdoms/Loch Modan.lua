@@ -7,8 +7,12 @@ _.Zones =
 		m(48, {	-- Loch Modan
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(555),	-- Farstrider Lodge, Loch Modan
-					fp(8),		-- Thelsamar, Loch Modan
+					fp(555, { -- Farstrider Lodge, Loch Modan
+						["coord"] = { 81.8, 64.2 },
+					}),
+					fp(8, { -- Thelsamar, Loch Modan
+						["coord"] = { 33.8, 50.8 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(441), 	-- Alpine Hare

@@ -7,10 +7,18 @@ _.Zones =
 		m(26, {	-- The Hinterlands
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(43), -- Aerie Peak, The Hinterlands
-					fp(617), -- Hiri'watha Research Station, The Hinterlands
-					fp(76), -- Revantusk Village, The Hinterlands
-					fp(618), -- Stormfeather Outpost, The Hinterlands
+					fp(43, { -- Aerie Peak, The Hinterlands
+						["coord"] = { 11, 46 },
+					}),
+					fp(617, { -- Hiri'watha Research Station, The Hinterlands
+						["coord"] = { 32.4, 58 },
+					}),
+					fp(76, { -- Revantusk Village, The Hinterlands
+						["coord"] = { 81.6, 81.8 },
+					}),
+					fp(618, { -- Stormfeather Outpost, The Hinterlands
+						["coord"] = { 65.6, 44.8 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(449),	-- Brown Marmot

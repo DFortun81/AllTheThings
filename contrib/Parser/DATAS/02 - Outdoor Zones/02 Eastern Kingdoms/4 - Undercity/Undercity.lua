@@ -5,7 +5,12 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(90, { 	-- Undercity
-			["groups"] = {				
+			["groups"] = {
+				n(-228, {	-- Flight Path
+					fp(11, { -- Undercity, Tirisfal
+						["coord"] = { 63, 48.2 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					p(424),		-- Roach
 					p(450),		-- Maggot
@@ -169,8 +174,6 @@ _.Zones =
 					}),
 --]]
 				}),
-				
---]]				
 				n(-16, { 	-- Rare	
 					o(240623, {	-- Sylvanas' Strongbox
 						["groups"] = {

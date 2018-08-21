@@ -7,10 +7,18 @@ _.Zones =
 		m(51, {	-- Swamp of Sorrows
 			["groups"] = {		
 				n(-228, {	-- Flight Path
-					fp(599),	-- Bogpaddle, Swamp of Sorrows
-					fp(598),	-- Marshtide Watch, Swamp of Sorrows
-					fp(56),		-- Stonard, Swamp of Sorrows
-					fp(600),	-- The Harborage, Swamp of Sorrows
+					fp(599, { -- Bogpaddle, Swamp of Sorrows
+						["coord"] = { 72, 12 },
+					}),
+					fp(598, { -- Marshtide Watch, Swamp of Sorrows
+						["coord"] = { 70, 38.4 },
+					}),
+					fp(56, { -- Stonard, Swamp of Sorrows
+						["coord"] = { 47.6, 55 },
+					}),
+					fp(600, { -- The Harborage, Swamp of Sorrows
+						["coord"] = { 30.6, 34.6 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 							-- q(31913, {	-- Everessa

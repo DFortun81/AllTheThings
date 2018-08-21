@@ -7,10 +7,18 @@ _.Zones =
 		m(21, {	-- Silverpine Forest
 			["groups"] = {
 				n(-228, { 	-- Flight Path
-					fp(645), -- Forsaken High Command, Silverpine Forest
-					fp(681), -- Forsaken Rear Guard, Silverpine Forest
-					fp(654), -- The Forsaken Front, Silverpine Forest
-					fp(10), -- The Sepulcher, Silverpine Forest
+					fp(645, { -- Forsaken High Command, Silverpine Forest
+						["coord"] = { 57.8, 8.8 },
+					}),
+					fp(681, { -- Forsaken Rear Guard, Silverpine Forest
+						["coord"] = { 45.8, 21.8 },
+					}),
+					fp(654, { -- The Forsaken Front, Silverpine Forest
+						["coord"] = { 50.8, 63.6 },
+					}),
+					fp(10, { -- The Sepulcher, Silverpine Forest
+						["coord"] = { 45.4, 42.4 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(455),		-- Blighted Squirrel

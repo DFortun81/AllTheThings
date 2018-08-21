@@ -7,10 +7,18 @@ _.Zones =
 		m(36, {	-- Burning Steppes
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(676),	-- Chiselgrip, Burning Steppes
-					fp(70),		-- Flame Crest, Burning Steppes
-					fp(675),	-- Flamestar Post, Burning Steppes
-					fp(71),		-- Morgan's Vigil, Burning Steppes
+					fp(676, { -- Chiselgrip, Burning Steppes
+						["coord"] = { 46, 41.8 },
+					}),
+					fp(70, { -- Flame Crest, Burning Steppes
+						["coord"] = { 54.2, 24.2 },
+					}),
+					fp(675, { -- Flamestar Post, Burning Steppes
+						["coord"] = { 17.6, 52.6 },
+					}),
+					fp(71, { -- Morgan's Vigil, Burning Steppes
+						["coord"] = { 72.2, 65.6 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					p(425), 	-- Ash Viper

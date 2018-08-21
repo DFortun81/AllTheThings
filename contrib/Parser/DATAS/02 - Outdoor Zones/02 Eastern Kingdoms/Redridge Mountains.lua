@@ -7,9 +7,15 @@ _.Zones =
 		m(49, {		-- Redridge Mountains
 			["groups"] = {							
 				n(-228, {	-- Flight Path
-					fp(615),	-- Camp Everstill, Redridge
-					fp(5),		-- Lakeshire, Redridge
-					fp(596),	-- Shalewind Canyon, Redridge
+					fp(615, { -- Camp Everstill, Redridge
+						["coord"] = { 52.8, 54.6 },
+					}),
+					fp(5, { -- Lakeshire, Redridge
+						["coord"] = { 29.4, 53.6 },
+					}),
+					fp(596, { -- Shalewind Canyon, Redridge
+						["coord"] = { 77.8, 65.8 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken

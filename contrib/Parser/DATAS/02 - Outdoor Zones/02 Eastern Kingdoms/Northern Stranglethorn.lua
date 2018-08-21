@@ -689,10 +689,18 @@ _.Zones =
 					ach(940),		-- The Green Hills of Stranglethorn
 				}),
 				n(-228, {	-- Flight Path
-					fp(593),	-- Bambala, Stranglethorn
-					fp(590),	-- Fort Livingston, Stranglethorn
-					fp(20),		-- Grom'gol, Stranglethorn
-					fp(195),	-- Rebel Camp, Stranglethorn Vale
+					fp(593, { -- Bambala, Stranglethorn
+						["coord"] = { 62.4, 39.2 },
+					}),
+					fp(590, { -- Fort Livingston, Stranglethorn
+						["coord"] = { 52.6, 66.2 },
+					}),
+					fp(20, { -- Grom'gol, Stranglethorn
+						["coord"] = { 39, 51.2 },
+					}),
+					fp(195, { -- Rebel Camp, Stranglethorn Vale
+						["coord"] = { 47.8, 11.8 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(406), 	-- Beetle

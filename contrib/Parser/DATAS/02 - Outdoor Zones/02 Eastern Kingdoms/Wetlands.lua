@@ -7,11 +7,21 @@ _.Zones =
 		m(56, {	-- Wetlands
 			["groups"] = {	
 				n(-228, {	-- Flight Path
-					fp(553), -- Dun Modr, Wetlands
-					fp(552), -- Greenwarden's Grove, Wetlands
-					fp(7),   -- Menethil Harbor, Wetlands
-					fp(554), -- Slabchisel's Survey, Wetlands
-					fp(551), -- Whelgar's Retreat, Wetlands
+					fp(553, { -- Dun Modr, Wetlands
+						["coord"] = { 50, 18.4 },
+					}),
+					fp(552, { -- Greenwarden's Grove, Wetlands
+						["coord"] = { 56.4, 41.8 },
+					}),
+					fp(7, { -- Menethil Harbor, Wetlands
+						["coord"] = { 9.4, 59.6 },
+					}),
+					fp(554, { -- Slabchisel's Survey, Wetlands
+						["coord"] = { 56.8, 71.2 },
+					}),
+					fp(551, { -- Whelgar's Retreat, Wetlands
+						["coord"] = { 38.6, 39 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(398), 	-- Black Rat

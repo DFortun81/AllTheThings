@@ -7,8 +7,12 @@ _.Zones =
 		m(37, {		-- Elwynn Forest
 			["groups"] = {	
 				n(-228, {	-- Flight Path
-					fp(589),	-- Eastvale Logging Camp, Elwynn
-					fp(582),	-- Goldshire, Elwynn
+					fp(589, { -- Eastvale Logging Camp, Elwynn
+						["coord"] = { 81.8, 66.4 },
+					}),
+					fp(582, { -- Goldshire, Elwynn
+						["coord"] = { 41.8, 64.6 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(374), 	-- Black Lamb

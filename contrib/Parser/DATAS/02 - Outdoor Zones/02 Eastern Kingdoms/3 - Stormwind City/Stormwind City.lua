@@ -6,6 +6,11 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(84, {	-- Stormwind City
 			["groups"] = {
+				n(-228, {	-- Flight Point
+					fp(2, { -- Stormwind, Elwynn
+						["coord"] = { 71, 72.6 },
+					}),
+				}),
 				n( -25, {	-- Pet Battle
 					p(378), 	-- Rabbit
 					p(379), 	-- Squirrel

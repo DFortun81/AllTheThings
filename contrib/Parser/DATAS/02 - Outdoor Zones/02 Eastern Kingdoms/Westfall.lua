@@ -7,9 +7,15 @@ _.Zones =
 		m(52, {	-- Westfall
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(584), -- Furlbrow's Pumpkin Farm, Westfall
-					fp(583), -- Moonbrook, Westfall
-					fp(4),   -- Sentinel Hill, Westfall
+					fp(584, { -- Furlbrow's Pumpkin Farm, Westfall
+						["coord"] = { 49.8, 18.8 },
+					}),
+					fp(583, { -- Moonbrook, Westfall
+						["coord"] = { 42, 63.4 },
+					}),
+					fp(4, { -- Sentinel Hill, Westfall
+						["coord"] = { 56.6, 49.4 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(646), 	-- Chicken
