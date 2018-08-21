@@ -8,6 +8,40 @@ _.Zones =
 			["groups"] = {
 				n(-4, {	-- Achievement
 					["groups"] = {
+						ach(13051, {	-- Legends of the Tidesages
+							{
+								["criteriaID"] = 1,	-- Legends of the Tidesages - Part 1
+								["coord"] = { 49.51, 80.90 },
+							},
+							{
+								["criteriaID"] = 2,	-- Legends of the Tidesages - Part 2
+								["coord"] = { 59.02, 59.54 },
+							},
+							{
+								["criteriaID"] = 3,	-- Legends of the Tidesages - Part 3
+								["coord"] = { 31.95, 72.91 },
+							},
+							{
+								["criteriaID"] = 4,	-- Legends of the Tidesages - Part 4
+								["coord"] = { 33.81, 33.23 },
+							},
+							{
+								["criteriaID"] = 5,	-- Legends of the Tidesages - Part 5
+								["coord"] = { 56.02, 38.53 },
+							},
+							{
+								["criteriaID"] = 6,	-- Legends of the Tidesages - Part 6
+								["coord"] = { 44.18, 36.60 },
+							},
+							{
+								["criteriaID"] = 7,	-- Legends of the Tidesages - Part 7
+								["coord"] = { 62.08, 30.22 },
+							},
+							{
+								["criteriaID"] = 8,	-- Legends of the Tidesages - Part 8
+								["coord"] = { 75.07, 31.13 },
+							},
+						}),
 						ach(12853, {	-- Treasures of Stormsong
 							o(293350, {	-- Carved Wooden Chest	
 								["questID"] = 52429,
@@ -73,6 +107,29 @@ _.Zones =
 					},
 				}),
 				n(-17, {	-- Quests [Crieve]
+					a(q(50781, {	-- A Bridge Too Far
+						["qg"] = 136933,	-- Brother Pike
+						["sourceQuests"] = { 50784 },	-- Eye of the Storm [Alliance Only]
+						["coord"] = { 69.8, 36.1 },
+					})),
+					a(q(50779, {	-- A Clean Slate
+						["qg"] = 135415,	-- Umbral Hulk
+						["sourceQuests"] = { 50612 },	-- A House Divided [Alliance Only]
+						["coord"] = { 63.2, 41.2 },
+						["description"] = "The Umbral Hulks will ruin your day unless you have a group. Do NOT try soloing them.",
+					})),
+					a(q(50612, {	-- A House Divided
+						["qg"] = 134639,	-- Brother Pike
+						["sourceQuests"] = { 50611 },	-- Storm's Vengeance [Alliance Only]
+						["coord"] = { 66.1, 47.4 },
+						["isBreadcrumb"] = true,
+					})),
+					a(q(50733, {	-- A New Dawn
+						["qg"] = 137692,	-- Taelia
+						["sourceQuests"] = { 50824 },	-- Storm's End [Alliance Only]
+						["coord"] = { 78.3, 28.8 },
+						["isBreadcrumb"] = true,
+					})),
 					a(q(49725, {	-- A Risky Ploy
 						["qg"] = 129999,	-- Taelia
 						["sourceQuests"] = { 51401 },	-- Carry On [Alliance Only]
@@ -81,6 +138,16 @@ _.Zones =
 						["qg"] = 141603,	-- Mallory Hood
 						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
 						["coord"] = { 64.9, 76.8 },
+					})),
+					a(q(50594, {	-- Beneath the Veil
+						["qg"] = 134639,	-- Brother Pike
+						["sourceQuests"] = { 49998 },	-- Voices Below [Alliance Only]
+						["coord"] = { 66.1, 47.4 },
+						["groups"] = {
+							i(155229),	-- Abyssal Beacon
+							i(155228),	-- Tideguard Bulwark
+							i(155231),	-- Purified Tideblood Band
+						}
 					})),
 					a(q(51490, {	-- Border Issues
 						["qg"] = 137866,	-- Taelia
@@ -94,6 +161,12 @@ _.Zones =
 					a(q(51401, {	-- Carry On
 						["qg"] = 137866,	-- Taelia
 						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
+						["groups"] = {
+							{
+								["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
+								["criteriaID"] = 1,	-- The Tidesages of Stormsong [Criteria]
+							},
+						},
 						-- This gave "The Tidesages of Stormsong" criteria achievement - Crieve
 					})),
 					a(o(280727, {	-- Charred Note
@@ -108,15 +181,45 @@ _.Zones =
 						["qg"] = 141769,	-- Marilyn Hood
 						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
 					})),
+					a(q(50784, {	-- Eye of the Storm
+						["qg"] = 136497,	-- Tideguard Victoria
+						["sourceQuests"] = { 50780, 50783 },	-- Oathbound / The Abyssal Council [Alliance Only]
+						["coord"] = { 61.8, 36.2 },
+					})),
 					a(q(49995, {	-- Fabricated Fabrications
 						["qg"] = 131248,	-- Samuel Williams
 						["sourceQuests"] = { 49975 },	-- Rest in the Depths [Alliance Only]
 						["coord"] = { 66.4, 56.4 },
 					})),
+					a(q(50608, {	-- Forbidden Rites
+						["qg"] = 134639,	-- Brother Pike
+						["sourceQuests"] = { 50593, 50594, 50595 },	-- A Bloody Mess / Beneath the Veil / No Quarter [Alliance Only]
+						["coord"] = { 66.1, 47.4 },
+					})),
 					a(q(49887, {	-- Forced Labor
 						["qg"] = 130904,	-- Samuel Williams
 						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
 						["coord"] = { 64.5, 62.2 },
+					})),
+					a(q(50609, {	-- From the Maw of Madness
+						["qg"] = 134623,	-- Taelia
+						["sourceQuests"] = { 50593, 50594, 50595 },	-- A Bloody Mess / Beneath the Veil / No Quarter [Alliance Only]
+						["coord"] = { 66.3, 47.0 },
+					})),
+					a(i(158195, {	-- Frothing Vial
+						["qg"] = 130094,	-- Tidesage Seacaller
+						["groups"] = {
+							a(q(50593, {	-- A Bloody Mess
+								["qg"] = 130094,	-- Tidesage Seacaller
+								["sourceQuests"] = { 49998 },	-- Voices Below [Alliance Only]
+								["coord"] = { 66.3, 47.0 },
+							})),
+						},
+					})),
+					a(q(50610, {	-- Gathering Storm
+						["qg"] = 134639,	-- Brother Pike
+						["sourceQuests"] = { 50593, 50594, 50595 },	-- A Bloody Mess / Beneath the Veil / No Quarter [Alliance Only]
+						["coord"] = { 66.1, 47.4 },
 					})),
 					a(q(49704, {	-- Haywire Harvesters
 						["qg"] = 130715,	-- Taelia
@@ -136,6 +239,11 @@ _.Zones =
 						["qg"] = 130576,	-- Brother Pike
 						["sourceQuests"] = { 49725 },	-- A Risky Ploy [Alliance Only]
 					})),
+					a(q(51278, {	-- Lost and Forgotten
+						["qg"] = 136933,	-- Brother Pike
+						["sourceQuests"] = { 50781 },	-- A Bridge Too Far [Alliance Only]
+						["coord"] = { 70.3, 36.1 },
+					})),
 					a(q(49791, {	-- Lost, Not Forgotten
 						["qg"] = 130714,	-- Brother Pike
 						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
@@ -145,6 +253,16 @@ _.Zones =
 						["qg"] = 130714,	-- Brother Pike
 						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
 						["coord"] = { 63.4, 64.7 },
+					})),
+					a(q(50595, {	-- No Quarter
+						["qg"] = 134623,	-- Taelia
+						["sourceQuests"] = { 49998 },	-- Voices Below [Alliance Only]
+						["coord"] = { 66.3, 47.0 },
+					})),
+					a(q(50780, {	-- Oathbound
+						["qg"] = 135517,	-- Tideguard Victoria
+						["sourceQuests"] = { 50612 },	-- A House Divided [Alliance Only]
+						["coord"] = { 60.9, 41.3 },
 					})),
 					a(q(49706, {	-- Proclamation Investigation
 						["qg"] = 130714,	-- Brother Pike
@@ -171,14 +289,85 @@ _.Zones =
 						["sourceQuests"] = { 49791 },	-- Lost, Not Forgotten [Alliance Only]
 						["coord"] = { 66.3, 56.5 },
 					})),
+					a(q(51320, {	-- Sealed Fate
+						["qg"] = 136933,	-- Brother Pike
+						["sourceQuests"] = { 50781 },	-- A Bridge Too Far [Alliance Only]
+						["coord"] = { 70.3, 36.1 },
+					})),
+					a(q(50825, {	-- Shrine of the Storm: Whispers Below
+						["qg"] = 137691,	-- Brother Pike
+						["sourceQuests"] = { 50824 },	-- Storm's End [Alliance Only]
+						["coord"] = { 78.3, 28.7 },
+					})),
 					a(q(52796, {	-- Sometimes Less is More
 						["qg"] = 141769,	-- Marilyn Hood
 						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
+					})),
+					a(q(50824, {	-- Storm's End
+						["qg"] = 137506,	-- Brother Pike
+						["sourceQuests"] = { 51319 },	-- The Final Ascent [Alliance Only]
+						["coord"] = { 75.6, 27.0 },
+						["groups"] = {
+							{
+								["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
+								["criteriaID"] = 4,	-- At the Edge of Madness [Criteria]
+							},
+							i(155180),	-- Darkwater Hood
+							i(155177),	-- Dread Corsair Greathelm
+							i(155187),	-- Dread Corsair Shoulderplates
+						},
+						-- This gave "At the Edge of Madness" criteria achievement - Crieve
+					})),
+					a(q(49997, {	-- Storm's Judgment
+						["qg"] = 130714,	-- Brother Pike
+						["sourceQuests"] = { 49996 },	-- Rearmament [Alliance Only]
+						["coord"] = { 66.3, 56.5 },
+						["groups"] = {
+							{
+								["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
+								["criteriaID"] = 2,	-- A House In Peril [Criteria]
+							},
+							i(155166),	-- Dread Corsair Breastplate
+							i(160880),	-- Dread Corsair Pauldrons
+							
+							-- TODO: Find out what the other quest rewards for this quest are, they aren't listed in WoWHead. - Crieve
+						},
+						-- This gave "A House In Peril" criteria achievement - Crieve
+					})),
+					a(q(50611, {	-- Storm's Vengeance
+						["qg"] = 134639,	-- Brother Pike
+						["sourceQuests"] = { 50608, 50609, 50610 },	-- Forbidden Rites / From the Maw of Madness / Gathering Storm [Alliance Only]
+						["coord"] = { 66.1, 47.4 },
+						["groups"] = {
+							{
+								["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
+								["criteriaID"] = 3,	-- The Growing Tempest [Criteria]
+							},
+							i(158681),	-- Lightning Tether
+						},
+						-- This gave "The Growing Tempest" criteria achievement - Crieve
+					})),
+					a(q(50783, {	-- The Abyssal Council
+						["qg"] = 136498,	-- Taelia
+						["sourceQuests"] = { 50777, 50778 },	-- The Storm Awakens / Twisted Intentions [Alliance Only]
+						["coord"] = { 60.0, 37.8 },
+						["groups"] = {
+							i(158702),	-- Darkwater Bindings
+							i(158700),	-- Dread Corsair Vambraces
+							i(158701),	-- Stormchaser Shackles
+							i(158699),	-- Tidespeaker Bindings
+							i(155236),	-- Stormwarden Seal
+						},
 					})),
 					a(q(51552, {	-- The Days Are Just Packed
 						["qg"] = 130786,	-- Hobbs
 						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
 						["coord"] = { 66.7, 56.4 },
+					})),
+					a(q(51319, {	-- The Final Ascent
+						["qg"] = 137220,	-- Brother Pike / Awakened Tidesage
+						["sourceQuests"] = { 51278, 51320 },	-- Lost and Forgotten / Sealed Fate [Alliance Only]
+						["coord"] = { 74.2, 30.6 },
 					})),
 					a(q(49794, {	-- The Rising Tide
 						["qg"] = 130715,	-- Taelia
@@ -195,6 +384,16 @@ _.Zones =
 							i(155182),	-- Tidespeaker Leggings
 						},
 					})),
+					a(q(50777, {	-- The Storm Awakens
+						["qg"] = 135534,	-- Brother Pike
+						["sourceQuests"] = { 50612 },	-- A House Divided [Alliance Only]
+						["coord"] = { 63.2, 43.1 },
+					})),
+					a(q(50778, {	-- Twisted Intentions
+						["qg"] = 136053,	-- Samuel Williams
+						["sourceQuests"] = { 50612 },	-- A House Divided [Alliance Only]
+						["coord"] = { 63.1, 43.1 },
+					})),
 					a(q(49705, {	-- Unnecessary Duress
 						["qg"] = 130714,	-- Brother Pike
 						["sourceQuests"] = { 49703 },	-- House Stormsong [Alliance Only]
@@ -210,16 +409,34 @@ _.Zones =
 							i(155170),	-- Tidespeaker Sandals
 						},
 					})),
+					a(q(49998, {	-- Voices Below
+						["qg"] = 130714,	-- Brother Pike
+						["sourceQuests"] = { 49997 },	-- Storm's Judgment [Alliance Only]
+						["coord"] = { 66.3, 56.5 },
+						["isBreadcrumb"] = true,
+					})),
 					
 					
 					-- Small Treasure Chests
+					{
+						["questID"] = 51930,	-- Port Fogtide (Crieve)
+						["coord"] = { 65.7, 42.9 },
+					},
+					{
+						["questID"] = 51927,	-- Layson & Sons Rigging (Crieve)
+						["coord"] = { 69.3, 57.9 },
+					},
+					{
+						["questID"] = 51935,	-- Sagehold (Crieve)
+						["coord"] = { 61.1, 38.8 },
+					},
 					{
 						["questID"] = 51184,	-- Scripps Lumber Co (Crieve)
 						["coord"] = { 61.8, 65.3 },
 					},
 					{
-						["questID"] = 51927,	-- Layson & Sons Rigging (Crieve)
-						["coord"] = { 69.3, 57.9 },
+						["questID"] = 51938,	-- Tempest's Edge (Crieve)
+						["coord"] = { 74.1, 32.2 },
 					},
 				}),
 				n(-17, {	-- Quests
@@ -245,12 +462,7 @@ _.Zones =
 						i(160380),
 						}),
 						q(50694),	-- A Bloody Mess
-						q(50593),	-- A Bloody Mess
-						q(50781),	-- A Bridge Too Far
-						q(50779),	-- A Clean Slate
 						q(50814),	-- A Horrible Place
-						q(50612),	-- A House Divided
-						q(50733),	-- A New Dawn
 						q(50041),	-- A Pocketful of Shells
 						q(50640),	-- A Question of Quillpower
 						q(50065),	-- A Reason to Stay
@@ -286,11 +498,6 @@ _.Zones =
 						}),
 						q(52070),	-- Bauer Backup
 						q(51214),	-- Be A Dear
-						q(50594, {	-- Beneath the Veil
-						i(155229),
-						i(155228),
-						i(155231),
-						}),
 						q(50353),	-- Boaring Company
 						q(50697),	-- Bomb Beats Rock
 						q(49744),	-- Bombs, Away
@@ -355,7 +562,6 @@ _.Zones =
 						q(49732),	-- Evacuate!
 						q(51540),	-- Explosive Situation
 						q(51712),	-- Eye for an Eye
-						q(50784),	-- Eye of the Storm
 						q(49995),	-- Fabricated Fabrications
 						q(50644),	-- Facing the Invaders
 						q(50136, {	-- Farming Stimulator
@@ -370,7 +576,6 @@ _.Zones =
 						q(50649),	-- Filching from Thieves
 						q(51371),	-- Flavorable Offering
 						q(49886),	-- Follow Your Nose
-						q(50608),	-- Forbidden Rites
 						q(49887),	-- Forced Labor
 						q(50264),	-- Free the Farmhands
 						q(50614),	-- Freedom for the Sea
@@ -384,10 +589,8 @@ _.Zones =
 						i(155226),
 						i(155212),
 						}),
-						q(50609),	-- From the Maw of Madness
 						q(50696),	-- Fun With Magnets
 						q(50134),	-- Gadgets and Gizmos Aplenty
-						q(50610),	-- Gathering Storm
 						q(51726),	-- Get Out of Here
 						q(51720),	-- Get Shredded
 						q(50088),	-- Golden Fields Forever
@@ -406,8 +609,6 @@ _.Zones =
 						q(50802),	-- Iron Low Tide
 						q(51557),	-- Irontide Warning
 						q(50354),	-- Look Out!
-						q(51278),	-- Lost and Forgotten
-						q(49791),	-- Lost, Not Forgotten
 						q(51582),	-- Make it Mildenhall
 						q(53369),	-- Make Loh Go
 						q(50383),	-- Mankrik's Wrath
@@ -419,27 +620,22 @@ _.Zones =
 						q(52069),	-- More Fodder
 						q(50909),	-- Never Outgunned
 						q(50774),	-- No Bot Left Behind
-						q(50595),	-- No Quarter
 						q(50691),	-- Not On Our Payroll
-						q(50780),	-- Oathbound
 						q(50815),	-- Orcs Versus Humans
 						q(50679),	-- Piercing the Shield
 						q(50907),	-- Poor Souls
 						q(51724),	-- Powered Up
 						q(50698),	-- Problem Solving with Gunpowder
 						q(51310),	-- Raiders of the Lost Crop
-						q(49996),	-- Rearmament
 						q(50653),	-- Reclaiming our Defenses
 						q(50161),	-- Recovering Raimond
 						q(51554),	-- Reloading
 						q(49742),	-- Respect Your Elders
 						q(51221),	-- Response Required
-						q(49975),	-- Rest in the Depths
 						q(50816),	-- Roarke's Missing
 						q(50168),	-- Royal Succession
 						q(50365),	-- Run For the Hills
 						q(51723),	-- Saw Dusted
-						q(51320),	-- Sealed Fate
 						q(51487),	-- Searching for Answers
 						q(51334),	-- Securing The Square
 						q(51140),	-- Share the Wealth
@@ -449,20 +645,15 @@ _.Zones =
 						q(50340),	-- Steal Them Back
 						q(50162),	-- Sticky Situation
 						q(50135),	-- Stop Vining!
-						q(50824),	-- Storm's End
 						q(51846),	-- Storm's End
-						q(49997),	-- Storm's Judgment
-						q(50611),	-- Storm's Vengeance
 						q(53045),	-- Surveying the Wharf
 						q(52067),	-- Survivors
 						q(51343),	-- Swimming Lessons
 						q(50368),	-- Terror of the Kraul
-						q(50783),	-- The Abyssal Council
 						q(51534),	-- The Battle for Brennadam
 						q(50165),	-- The Bee Team
 						q(51200),	-- The Black Sheep
 						q(51552),	-- The Days Are Just Packed
-						q(51319),	-- The Final Ascent
 						q(50743),	-- The Immediate Problem
 						q(51881),	-- The Mine Sweeper
 						q(47952),	-- The Missing Fleet
@@ -470,7 +661,6 @@ _.Zones =
 						q(52132),	-- The Proof of Piracy
 						q(49794),	-- The Rising Tide
 						q(50635),	-- The Shifting Tides
-						q(50777),	-- The Storm Awakens
 						q(50157),	-- There's Gold in Them There Fields
 						q(51489),	-- Time to Leave
 						q(50111),	-- Totems, Totems, Totems!
@@ -536,7 +726,8 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(154460),	-- Treasure-Seeker's Diving Helmet
 							}),
-							["questID"] = 52303,	
+							["questID"] = 52303,
+							["coord"] = { 62.9, 32.9 },
 						}),	
 						n(136183, {	-- Crushtacean
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
