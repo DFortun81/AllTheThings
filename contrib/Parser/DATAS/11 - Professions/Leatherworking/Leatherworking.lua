@@ -360,49 +360,8 @@ profession(165, { -- Leatherworking
 			i(45096), -- Pattern: Blue Belt of Chaos
 			i(45095), -- Pattern: Boots of Living Scale
 			i(45101), -- Pattern: Boots of Wintry Endurance
+			un(8, i(38599)), -- Pattern: Dark Arctic Chestpiece
 		}),			
-		filter(200, { -- Recipes
-			recipe(50949), -- Pattern: Arctic Belt
-			recipe(50948), -- Pattern: Arctic Boots
-			recipe(50944), -- Pattern: Arctic Chestpiece
-			recipe(50947), -- Pattern: Arctic Gloves
-			recipe(51572), -- Pattern: Arctic Helm
-			recipe(50945), -- Pattern: Arctic Leggings
-			recipe(50946), -- Pattern: Arctic Shoulderpads
-			recipe(50948), -- Pattern: Arctic Wristguards
-			recipe(51568), -- Pattern: Black Chitinguard Boots
-			recipe(60620), -- Pattern: Bugsquashers
-			recipe(60631), -- Pattern: Cloak of Harsh Winds
-			recipe(55199), -- Pattern: Cloak of Tormented Skies
-			recipe(51570), -- Pattern: Dark Arctic Chestpiece
-			recipe(51569), -- Pattern: Dark Arctic Leggings
-			recipe(51569), -- Pattern: Dark Frostscale Breastplate
-			recipe(60601), -- Pattern: Dark Frostscale Leggings
-			recipe(60613), -- Pattern: Dark Iceborne Chestguard
-			recipe(60611), -- Pattern: Dark Iceborne Leggings
-			recipe(60629), -- Pattern: Dark Nerubian Chestpiece
-			recipe(60627), -- Pattern: Dark Nerubian Leggings
-			recipe(60605), -- Pattern: Dragonstompers
-			recipe(60640), -- Pattern: Durable Nerubhide Cape
-			recipe(62448), -- Pattern: Earthen Leg Armor
-			recipe(60652), -- Pattern: Eaglebane Bracers
-			recipe(50965), -- Pattern: Frosthide Leg Armor
-			recipe(60637), -- Pattern: Ice Striker's Cloak
-			recipe(50967), -- Pattern: Icescale Leg Armor
-			recipe(60666), -- Pattern: Jormscale Footpads
-			recipe(50964), -- Pattern: Jormungar Leg Armor
-			recipe(60660), -- Pattern: Leggings of Visceral Strikes
-			recipe(50966), -- Pattern: Nerubian Leg Armor
-			recipe(60658), -- Pattern: Nightshock Girdle
-			recipe(60655), -- Pattern: Nightshock Hood
-			recipe(60643), -- Pattern: Pack of Endless Pockets
-			recipe(60671), -- Pattern: Purehorn Spaulders
-			recipe(60649), -- Pattern: Razorstrike Breastplate			
-			recipe(60630), -- Pattern: Scaled Icewalkers			
-			recipe(60665), -- Pattern: Seafoam Gauntlets		
-			recipe(60651), -- Pattern: Virulent Spaulders		
-			recipe(60669), -- Pattern: Wildscale Breastplate	
-		}),	
 		n(-2, { -- Vendors
 			i(49958), -- Pattern: Blessed Cenarion Boots
 			i(49959), -- Pattern: Bladeborn Leggings
