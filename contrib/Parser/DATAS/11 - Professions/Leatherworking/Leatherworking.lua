@@ -361,88 +361,68 @@ profession(165, { -- Leatherworking
 			i(45095), -- Pattern: Boots of Living Scale
 			i(45101), -- Pattern: Boots of Wintry Endurance
 			un(8, i(38599)), -- Pattern: Dark Arctic Chestpiece
+			i(45098), -- Pattern: Death-Warmed Belt	
+			i(45099), -- Pattern: Footpads of Silence
+			i(47634), -- Pattern: Knightbane Carapace(Alliance Only)
+			i(47651), -- Pattern: Knightbane Carapace(Horde Only)
+			i(47632), -- Pattern: Lunar Eclipse Robes(Alliance Only)
+			i(47652), -- Pattern: Lunar Eclipse Robes(Horde Only)
+			i(47633), -- Pattern: Moonshadow Armguards(Alliance Only)
+			i(47653), -- Pattern: Moonshadow Armguards(Horde Only)
 		}),			
 		n(-2, { -- Vendors
-			i(49958), -- Pattern: Blessed Cenarion Boots
 			i(49959), -- Pattern: Bladeborn Leggings
+			i(49958), -- Pattern: Blessed Cenarion Boots
+			i(49965), -- Pattern: Draconic Bonesplinter Legguards
+			i(44553), -- Pattern: Earthgiving Boots
+			i(44552), -- Pattern: Earthgiving Legguards
+			i(49963), -- Pattern: Earthsoul Boots
+			i(44516), -- Pattern: Eviscerator's Bindings
+			i(44515), -- Pattern: Eviscerator's Chestguard
+			i(44513), -- Pattern: Eviscerator's Facemask
+			i(44517), -- Pattern: Eviscerator's Gauntlets
+			i(44519), -- Pattern: Eviscerator's Legguards
+			i(44514), -- Pattern: Eviscerator's Shoulderpads
+			i(44520), -- Pattern: Eviscerator's Treads
+			i(44518), -- Pattern: Eviscerator's Waistguard
+			i(49961), -- Pattern: Footpads of Impending Death
 			i(44588), -- Pattern: Icy Scale Belt
 			i(44589), -- Pattern: Icy Scale Boots
 			i(44587), -- Pattern: Icy Scale Chestguard
+			i(49957), -- Pattern: Legwraps of Unleashed Nature
+			i(49962), -- Pattern: Lightning-Infused Leggings
+			i(44526), -- Pattern: Overcast Belt
+			i(44528), -- Pattern: Overcast Boots
+			i(44524), -- Pattern: Overcast Bracers
+			i(44523), -- Pattern: Overcast Chestguard
+			i(44525), -- Pattern: Overcast Handwraps
+			i(44521), -- Pattern: Overcast Headguard
+			i(44527), -- Pattern: Overcast Leggings
+			i(44522), -- Pattern: Overcast Spaulders				
 			i(44586), -- Pattern: Polar Boots
 			i(44585), -- Pattern: Polar Cord
 			i(44584), -- Pattern: Polar Vest
-		}),
-		n(-44, { 	-- Leather				
-			i(45555),	-- Death-Warmed Belt
-			i(43502),	-- Earthgiving Boots
-			i(43495),	-- Earthgiving Legguards
-			i(43435),	-- Eviscerator's Bindings
-			i(43434),	-- Eviscerator's Chestguard
-			i(43260),	-- Eviscerator's Facemask
-			i(43436),	-- Eviscerator's Gauntlets
-			i(43438),	-- Eviscerator's Legguards
-			i(43433),	-- Eviscerator's Shoulderpads
-			i(43439),	-- Eviscerator's Treads
-			i(43437),	-- Eviscerator's Waistguard
-			i(49895),	-- Footpads of Impending Death
-			i(45564),	-- Footpads of Silence
-			i(38406),	-- Iceborne Belt
-			i(38407),	-- Iceborne Boots
-			i(38408),	-- Iceborne Chestguard
-			i(38409),	-- Iceborne Gloves
-			i(38438),	-- Iceborne Helm
-			i(38410),	-- Iceborne Leggings
-			i(38411),	-- Iceborne Shoulderpads
-			i(38434),	-- Iceborne Wristguards			
-			i(47599),	-- Knightbane Carapace
-			i(47600),	-- Knightbane Carapace			
-			i(49898),	-- Legwraps of Unleashed Nature
-			i(47601),	-- Lunar Eclipse Robes
-			i(47602),	-- Lunar Eclipse Robes
-			i(47583),	-- Moonshadow Armguards
-			i(47584),	-- Moonshadow Armguards
-			i(43266),	-- Overcast Belt
-			i(43273),	-- Overcast Boots
-			i(43264),	-- Overcast Bracers
-			i(43263),	-- Overcast Chestguard
-			i(43265),	-- Overcast Handwraps
-			i(43261),	-- Overcast Headguard
-			i(43271),	-- Overcast Leggings
-			i(43262),	-- Overcast Spaulders
-			i(43484),	-- Trollwoven Girdle
-			i(43481),	-- Trollwoven Spaulders				
-			i(44930),	-- Windripper Boots
-			i(44931),	-- Windripper Leggings
+			i(44551), -- Pattern: Trollwoven Girdle
+			i(44550), -- Pattern: Trollwoven Spaulders
+			i(44932), -- Pattern: Windripper Boots
+			i(44933), -- Pattern: Windripper Leggings	
 		}),
 		n(-45, { 	-- Mail
 			i(47577),	-- Crusader's Dragonscale Bracers
 			i(47576),	-- Crusader's Dragonscale Bracers
 			i(47595),	-- Crusader's Dragonscale Breastplate
 			i(47596),	-- Crusader's Dragonscale Breastplate			
-			i(49901),	-- Draconic Bonesplinter Legguards		
-			i(49896),	-- Earthsoul Boots
 			i(47597),	-- Ensorcelled Nerubian Breastplate
-			i(47598),	-- Ensorcelled Nerubian Breastplate
-			i(38412),	-- Frostscale Belt
-			i(38413),	-- Frostscale Boots
-			i(38436),	-- Frostscale Bracers
-			i(38414),	-- Frostscale Chestguard
-			i(38415),	-- Frostscale Gloves
-			i(38440),	-- Frostscale Helm
+			i(47598),	-- Ensorcelled Nerubian Breastplate			
+			i(38413),	-- Frostscale Boots			
+			i(38414),	-- Frostscale Chestguard			
 			i(38416),	-- Frostscale Leggings
 			i(38424),	-- Frostscale Shoulders
 			i(43459),	-- Giantmaim Bracers
 			i(43458),	-- Giantmaim Legguards			
-			i(45563),	-- Lightning Grounded Boots
-			i(49900),	-- Lightning-Infused Leggings
-			i(38418),	-- Nerubian Belt
-			i(38419),	-- Nerubian Boots
-			i(38435),	-- Nerubian Bracers
-			i(38420),	-- Nerubian Chestguard
-			i(38421),	-- Nerubian Gloves
-			i(38439),	-- Nerubian Helm
-			i(38422),	-- Nerubian Legguards
-			i(38417),	-- Nerubian Shoulders			
+			i(45563),	-- Lightning Grounded Boots	
+			i(38421),	-- Nerubian Gloves		
+			i(38422),	-- Nerubian Legguards			
 			i(43461),	-- Revenant's Breastplate
 			i(43469),	-- Revenant's Treads
 			i(49897),	-- Rock-Steady Treads
@@ -469,7 +449,8 @@ profession(165, { -- Leatherworking
 			-- Cataclysm --	
 			i(72006), -- Pattern: Bladeshadow Leggings
 			i(72010), -- Pattern: Bladeshadow Wristguards
-			i(72008), -- Pattern: Bracers of Flowing Serenity	
+			i(72008), -- Pattern: Bracers of Flowing Serenity
+			i(72011), -- Pattern: Bracers of the Hunter-Killer
 		}),			
 		filter(200, { -- Recipes
 			recipe(78438), -- Pattern: Cloak of Beasts
@@ -483,13 +464,11 @@ profession(165, { -- Leatherworking
 			recipe(99536), -- Pattern: Vicious Fur Cloak
 			recipe(99535), -- Pattern: Vicious Hide Cloak
 		}),	
-		n(-2, { -- Vendors			
-		}),
-		n(-322, { 	-- Cloak					
-			i(56489),	-- Hardened Scale Cloak
-			i(56548),	-- Razor-Edged Cloak
-			i(56480),	-- Savage Cloak
-			i(56549),	-- Twilight Dragonscale Cloak			
+		n(-2, { -- Vendors
+			i(67084), -- Pattern: Charscale Leg Armor
+			i(67082), -- Pattern: Razor-Edged Cloak	
+			i(67083), -- Pattern: Twilight Dragonscale Cloak
+			i(67042), -- Pattern: Vicious Wyrmhide Bracers
 		}),
 		n(-44, { 	-- Leather
 			i(56562),	-- Assassin's Chestplate			
@@ -515,16 +494,14 @@ profession(165, { -- Leatherworking
 			i(75112),	-- Vicious Leather Legs
 			i(75113),	-- Vicious Leather Shoulders
 			i(75117),	-- Vicious Wyrmhide Belt
-			i(75101),	-- Vicious Wyrmhide Boots
-			i(75106),	-- Vicious Wyrmhide Bracers
+			i(75101),	-- Vicious Wyrmhide Boots			
 			i(75107),	-- Vicious Wyrmhide Chest
 			i(75109),	-- Vicious Wyrmhide Gloves
 			i(75111),	-- Vicious Wyrmhide Helm
 			i(75080),	-- Vicious Wyrmhide Legs
 			i(75099),	-- Vicious Wyrmhide Shoulders
 		}),
-		n(-45, { 	-- Mail
-			i(71996),	-- Bracers of the Hunter-Killer
+		n(-45, { 	-- Mail			
 			i(56539),	-- Corded Viper Belt
 			i(71988),	-- Deathscale Leggings
 			i(69939),	-- Dragonfire Gloves
@@ -562,7 +539,8 @@ profession(165, { -- Leatherworking
 	}),
 	tier(5, { 	-- Mists of Pandaria
 		n(-26, { -- Drops
-			-- Mists of Pandaria --		
+			-- Mists of Pandaria --	
+			i(86238), -- Pattern: Chestguard of Nemeses
 		}),			
 		filter(200, { -- Recipes	
 			recipe(131865), -- Pattern: Magnificent Hide
@@ -573,8 +551,7 @@ profession(165, { -- Leatherworking
 		n(-2,  { -- Vendors
 			i(86235), -- Pattern: Angerhide Leg Armor
 		}),		
-		n(-44, { 	-- Leather
-			i(85788),	-- Chestguard of Nemeses
+		n(-44, { 	-- Leather			
 			i(85797),	-- Contender's Leather Belt
 			i(85798),	-- Contender's Leather Boots
 			i(85799),	-- Contender's Leather Bracers
@@ -1019,11 +996,8 @@ profession(165, { -- Leatherworking
 	n(-100002, { -- PLACE_HOLDER
 		i(132124),	-- Pattern: Battlebound Treads
 		i(132123),	-- Pattern: Battlebound Warhelm			
-		i(72011),	-- Pattern: Bracers of the Hunter-Killer		
-		i(67084),	-- Pattern: Charscale Leg Armor
 		i(86237),	-- Pattern: Chestguard of Earthen Harmony
-		i(67094),	-- Pattern: Chestguard of Nature's Fury
-		i(86238),	-- Pattern: Chestguard of Nemeses
+		i(67094),	-- Pattern: Chestguard of Nature's Fury		
 		i(29720),	-- Pattern: Clefthide Leg Armor		
 		i(69962),	-- Pattern: Clutches of Evil
 		i(29719),	-- Pattern: Cobrahide Leg Armor
@@ -1065,9 +1039,7 @@ profession(165, { -- Leatherworking
 		i(47648),	-- Pattern: Crusader's Dragonscale Bracers
 		i(47630),	-- Pattern: Crusader's Dragonscale Breastplate
 		i(47649),	-- Pattern: Crusader's Dragonscale Breastplate			
-		i(72005),	-- Pattern: Deathscale Leggings
-		i(45098),	-- Pattern: Death-Warmed Belt			
-		i(49965),	-- Pattern: Draconic Bonesplinter Legguards
+		i(72005),	-- Pattern: Deathscale Leggings		
 		i(69960),	-- Pattern: Dragonfire Gloves
 		i(67100),	-- Pattern: Dragonkiller Tunic
 		i(68193),	-- Pattern: Dragonscale Leg Armor
@@ -1081,27 +1053,14 @@ profession(165, { -- Leatherworking
 		i(29718),	-- Pattern: Drums of Speed
 		i(34173),	-- Pattern: Drums of Speed
 		i(34172),	-- Pattern: Drums of Speed			
-		i(69971),	-- Pattern: Earthen Scale Sabatons
-		i(44553),	-- Pattern: Earthgiving Boots
-		i(44552),	-- Pattern: Earthgiving Legguards
-		i(49963),	-- Pattern: Earthsoul Boots			
+		i(69971),	-- Pattern: Earthen Scale Sabatons					
 		i(47628),	-- Pattern: Ensorcelled Nerubian Breastplate
 		i(47650),	-- Pattern: Ensorcelled Nerubian Breastplate
-		i(69974),	-- Pattern: Ethereal Footfalls
-		i(44516),	-- Pattern: Eviscerator's Bindings
-		i(44515),	-- Pattern: Eviscerator's Chestguard
-		i(44513),	-- Pattern: Eviscerator's Facemask
-		i(44517),	-- Pattern: Eviscerator's Gauntlets
-		i(44519),	-- Pattern: Eviscerator's Legguards
-		i(44514),	-- Pattern: Eviscerator's Shoulderpads
-		i(44520),	-- Pattern: Eviscerator's Treads
-		i(44518),	-- Pattern: Eviscerator's Waistguard
+		i(69974),	-- Pattern: Ethereal Footfalls		
 		i(25733),	-- Pattern: Fel Leather Boots
 		i(25732),	-- Pattern: Fel Leather Gloves
 		i(25734),	-- Pattern: Fel Leather Leggings				
 		i(86272),	-- Pattern: Fists of Lightning			
-		i(49961),	-- Pattern: Footpads of Impending Death
-		i(45099),	-- Pattern: Footpads of Silence
 		i(69972),	-- Pattern: Footwraps of Quenched Fire
 		i(44547),	-- Pattern: Giantmaim Bracers
 		i(44546),	-- Pattern: Giantmaim Legguards	
@@ -1112,41 +1071,24 @@ profession(165, { -- Leatherworking
 		i(100864),	-- Pattern: Hardened Magnificent Hide and Its Uses
 		i(69963),	-- Pattern: Heavenly Gloves of the Moon			
 		i(25720),	-- Pattern: Heavy Knothide Leather				
-		i(86276),	-- Pattern: Ironscale Leg Armor
-		i(47634),	-- Pattern: Knightbane Carapace
-		i(47651),	-- Pattern: Knightbane Carapace			
-		i(71999),	-- Pattern: Leggings of Nature's Champion
-		i(49957),	-- Pattern: Legwraps of Unleashed Nature
+		i(86276),	-- Pattern: Ironscale Leg Armor		
+		i(71999),	-- Pattern: Leggings of Nature's Champion		
 		i(86277),	-- Pattern: Lifekeeper's Gloves
 		i(86278),	-- Pattern: Lifekeeper's Robe
 		i(86279),	-- Pattern: Liferuned Leather Gloves
 		i(45097),	-- Pattern: Lightning Grounded Boots
-		i(67068),	-- Pattern: Lightning Lash
-		i(49962),	-- Pattern: Lightning-Infused Leggings					
-		i(47632),	-- Pattern: Lunar Eclipse Robes
-		i(47652),	-- Pattern: Lunar Eclipse Robes
+		i(67068),	-- Pattern: Lightning Lash						
 		i(25722),	-- Pattern: Magister's Armor Kit
 		i(95467),	-- Pattern: Magnificence of Leather
 		i(95468),	-- Pattern: Magnificence of Scales
 		i(44510),	-- Pattern: Mammoth Mining Bag			
-		i(47633),	-- Pattern: Moonshadow Armguards
-		i(47653),	-- Pattern: Moonshadow Armguards
 		i(86280),	-- Pattern: Murderer's Gloves		
 		i(29721),	-- Pattern: Nethercleft Leg Armor
 		i(29722),	-- Pattern: Nethercobra Leg Armor
 		i(31362),	-- Pattern: Nethercobra Leg Armor		
-		i(86281),	-- Pattern: Nightfire Robe		
-		i(44526),	-- Pattern: Overcast Belt
-		i(44528),	-- Pattern: Overcast Boots
-		i(44524),	-- Pattern: Overcast Bracers
-		i(44523),	-- Pattern: Overcast Chestguard
-		i(44525),	-- Pattern: Overcast Handwraps
-		i(44521),	-- Pattern: Overcast Headguard
-		i(44527),	-- Pattern: Overcast Leggings
-		i(44522),	-- Pattern: Overcast Spaulders				
+		i(86281),	-- Pattern: Nightfire Robe					
 		i(86283),	-- Pattern: Raiment of Blood and Bone			
-		i(86284),	-- Pattern: Raven Lord's Gloves
-		i(67082),	-- Pattern: Razor-Edged Cloak	
+		i(86284),	-- Pattern: Raven Lord's Gloves		
 		i(29664),	-- Pattern: Reinforced Mining Bag
 		i(30444),	-- Pattern: Reinforced Mining Bag
 		i(72007),	-- Pattern: Rended Earth Leggings
@@ -1177,10 +1119,7 @@ profession(165, { -- Leatherworking
 		i(72009),	-- Pattern: Thundering Deathscale Wristguards		
 		i(44509),	-- Pattern: Trapper's Traveling Pack
 		i(69973),	-- Pattern: Treads of the Craft
-		i(70175),	-- Pattern: Triple-Reinforced Mining Bag
-		i(44551),	-- Pattern: Trollwoven Girdle
-		i(44550),	-- Pattern: Trollwoven Spaulders		
-		i(67083),	-- Pattern: Twilight Dragonscale Cloak
+		i(70175),	-- Pattern: Triple-Reinforced Mining Bag		
 		i(67096),	-- Pattern: Twilight Scale Chestguard
 		i(67064),	-- Pattern: Vicious Charscale Belt
 		i(67063),	-- Pattern: Vicious Charscale Boots
@@ -1207,8 +1146,7 @@ profession(165, { -- Leatherworking
 		i(67089),	-- Pattern: Vicious Leather Legs
 		i(67062),	-- Pattern: Vicious Leather Shoulders
 		i(67044),	-- Pattern: Vicious Wyrmhide Belt
-		i(67058),	-- Pattern: Vicious Wyrmhide Boots
-		i(67042),	-- Pattern: Vicious Wyrmhide Bracers
+		i(67058),	-- Pattern: Vicious Wyrmhide Boots		
 		i(67075),	-- Pattern: Vicious Wyrmhide Chest
 		i(67056),	-- Pattern: Vicious Wyrmhide Gloves
 		i(67086),	-- Pattern: Vicious Wyrmhide Helm
@@ -1216,9 +1154,7 @@ profession(165, { -- Leatherworking
 		i(67074),	-- Pattern: Vicious Wyrmhide Shoulders
 		i(25721),	-- Pattern: Vindicator's Armor Kit		
 		i(86308),	-- Pattern: Wildblood Gloves
-		i(86309),	-- Pattern: Wildblood Vest
-		i(44932),	-- Pattern: Windripper Boots
-		i(44933),	-- Pattern: Windripper Leggings		
+		i(86309),	-- Pattern: Wildblood Vest			
 		i(34262),	-- Pattern: Winter Boots
 		i(137900),	-- Recipe: Battlebound Armbands
 		i(137908),	-- Recipe: Battlebound Armbands
