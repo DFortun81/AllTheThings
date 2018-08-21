@@ -7,13 +7,27 @@ _.Zones =
 		m(100, {	-- Hellfire Peninsula			
 			["groups"] = {	
 				n(-228, {	-- Flight Master
-					fp(102),	-- Falcon Watch, Hellfire Peninsula
-					fp(130),	-- Hellfire Peninsula, The Dark Portal
-					fp(129),	-- Hellfire Peninsula, The Dark Portal
-					fp(100),	-- Honor Hold, Hellfire Peninsula
-					fp(141),	-- Spinebreaker Ridge, Hellfire Peninsula
-					fp(101),	-- Temple of Telhamat, Hellfire Peninsula
-					fp(99),		-- Thrallmar, Hellfire Peninsula
+					fp(102, { -- Falcon Watch, Hellfire Peninsula
+						["coord"] = { 27.8, 60 },
+					}),
+					fp(129, { -- Hellfire Peninsula, The Dark Portal
+						["coord"] = { 87.4, 52.4 },
+					}),
+					fp(130, { -- Hellfire Peninsula, The Dark Portal
+						["coord"] = { 87.4, 48.2 },
+					}),
+					fp(100, { -- Honor Hold, Hellfire Peninsula
+						["coord"] = { 54.6, 62.4 },
+					}),
+					fp(141, { -- Spinebreaker Ridge, Hellfire Peninsula
+						["coord"] = { 61.6, 81.2 },
+					}),
+					fp(101, { -- Temple of Telhamat, Hellfire Peninsula
+						["coord"] = { 25.2, 37.2 },
+					}),
+					fp(99, { -- Thrallmar, Hellfire Peninsula
+						["coord"] = { 56.2, 36.2 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					p(635), -- Adder

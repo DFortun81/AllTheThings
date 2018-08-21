@@ -7,23 +7,12 @@ _.Zones =
 		m(107, { 	-- Nagrand (Outland)
 			["groups"] = {	
 				n(-228, {	-- Flight Master
-					fp(120),	-- Garadar, Nagrand
-					fp(119),	-- Telaar, Nagrand
-				}),
-				n(0, { -- Zone Drop
-					["groups"] = {
-						n(18203, { -- Murkblood Raider
-							["groups"] = {
-								i(23608), -- Plans: Khorium Belt
-							},
-						}),
-						i(23611, { -- Plans: Ragesteel Gloves
-							["crs"] = {
-								17137, -- Boulderfist Mage
-								17136, -- Boulderfist Warrior
-							},
-						}),
-					},
+					fp(120, { -- Garadar, Nagrand
+						["coord"] = { 57.2, 35.2 },
+					}),
+					fp(119, { -- Telaar, Nagrand
+						["coord"] = { 54.2, 75 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					p(635), 	-- Adder
@@ -632,6 +621,21 @@ _.Zones =
 						i(27691),	-- Recipe: Roasted Clefthoof
 						i(27693),	-- Recipe: Talbuk Steak
 					}),
+				}),
+				n(0, { -- Zone Drop
+					["groups"] = {
+						n(18203, { -- Murkblood Raider
+							["groups"] = {
+								i(23608), -- Plans: Khorium Belt
+							},
+						}),
+						i(23611, { -- Plans: Ragesteel Gloves
+							["crs"] = {
+								17137, -- Boulderfist Mage
+								17136, -- Boulderfist Warrior
+							},
+						}),
+					},
 				}),
 			},
 			["lvl"] = 64,	

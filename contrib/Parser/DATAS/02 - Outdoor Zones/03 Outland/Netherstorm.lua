@@ -7,9 +7,15 @@ _.Zones =
 		m(109, { 	-- Netherstorm
 			["groups"] = {
 				n(-228, {	-- Flight Master
-					fp(122),	-- Area 52, Netherstorm
-					fp(150),	-- Cosmowrench, Netherstorm
-					fp(139),	-- The Stormspire, Netherstorm
+					fp(122, { -- Area 52, Netherstorm
+						["coord"] = { 33.8, 64 },
+					}),
+					fp(150, { -- Cosmowrench, Netherstorm
+						["coord"] = { 65.2, 66.6 },
+					}),
+					fp(139, { -- The Stormspire, Netherstorm
+						["coord"] = { 45.2, 34.8 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(521), 	-- Fledgling Nether Ray

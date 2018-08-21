@@ -7,8 +7,12 @@ _.Zones =
 		m(108, { 	-- Terokkar Forest
 			["groups"] = {		
 				n(-228, {	-- Flight Master
-					fp(121),	-- Allerian Stronghold, Terokkar Forest
-					fp(127),	-- Stonebreaker Hold, Terokkar Forest
+					fp(121, { -- Allerian Stronghold, Terokkar Forest
+						["coord"] = { 59.4, 55.4 },
+					}),
+					fp(127, { -- Stonebreaker Hold, Terokkar Forest
+						["coord"] = { 49.2, 43.4 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					i(27445, { -- Magical Crawdad Box
@@ -597,7 +601,7 @@ _.Zones =
 						i(27692),	-- Recipe: Warp Burger
 					}),
 				}),
-				n(0, {    -- Zone Drops
+				n(0, {    	-- Zone Drops
 					i(34491, {    -- Pattern: Bag of Many Hides
 						["crs"] = {
 							22143,    -- Gordunni Back-Breaker

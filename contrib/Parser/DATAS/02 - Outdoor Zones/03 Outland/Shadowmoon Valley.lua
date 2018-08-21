@@ -7,33 +7,18 @@ _.Zones =
 		m(104, {	-- Shadowmoon Valley (Outland)
 			["groups"] = {
 				n(-228, {	-- Flight Master
-					fp(140),	-- Altar of Sha'tar, Shadowmoon Valley
-					fp(159),	-- Sanctum of the Stars, Shadowmoon Valley
-					fp(123),	-- Shadowmoon Village, Shadowmoon Valley
-					fp(124),	-- Wildhammer Stronghold, Shadowmoon Valley
-				}),
-				n(0, { -- Zone Drop
-					["groups"] = {
-						n(20878, { -- Deathforge Guardian
-							["groups"] = {
-								i(23609), -- Plans: Khorium Pants
-							},
-						}),
-						i(23613, { -- Plans: Ragesteel Breastplate
-							["crs"] = {
-								21454, -- Ashtongue Warrior
-								23324, -- Crazed Murkblood Miner
-							},
-						}),
-						i(33174, { -- Plans: Ragesteel Shoulders
-							["crs"] = {
-								21060, -- Enraged Air Spirit
-								21050, -- Enraged Earth Spirit
-								21061, -- Enraged Fire Spirit
-								21059, -- Enraged Water Spirit
-							},
-						}),
-					},
+					fp(140, { -- Altar of Sha'tar, Shadowmoon Valley
+						["coord"] = { 63.2, 30.4 },
+					}),
+					fp(159, { -- Sanctum of the Stars, Shadowmoon Valley
+						["coord"] = { 56.2, 57.8 },
+					}),
+					fp(123, { -- Shadowmoon Village, Shadowmoon Valley
+						["coord"] = { 30.2, 29.2 },
+					}),
+					fp(124, { -- Wildhammer Stronghold, Shadowmoon Valley
+						["coord"] = { 37.6, 55.4 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					p(425), 	-- Ash Viper
@@ -1184,7 +1169,7 @@ _.Zones =
 						dr(0.2, i(31680)),	-- Recipe: Fel Strength Elixir
 					}),
 				}),
-				n(-2, {	-- Vendors
+				n(-2, {		-- Vendors
 					n(19521, {	-- Arrond <Tailoring Supplies>
 						i(21900), 	-- Pattern: Imbued Netherweave Robe
 						i(21901), 	-- Pattern: Imbued Netherweave Tunic
@@ -1243,6 +1228,29 @@ _.Zones =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
+				}),
+				n(0, { 		-- Zone Drop
+					["groups"] = {
+						n(20878, { -- Deathforge Guardian
+							["groups"] = {
+								i(23609), -- Plans: Khorium Pants
+							},
+						}),
+						i(23613, { -- Plans: Ragesteel Breastplate
+							["crs"] = {
+								21454, -- Ashtongue Warrior
+								23324, -- Crazed Murkblood Miner
+							},
+						}),
+						i(33174, { -- Plans: Ragesteel Shoulders
+							["crs"] = {
+								21060, -- Enraged Air Spirit
+								21050, -- Enraged Earth Spirit
+								21061, -- Enraged Fire Spirit
+								21059, -- Enraged Water Spirit
+							},
+						}),
+					},
 				}),
 			},
 			["lvl"] = 67,	

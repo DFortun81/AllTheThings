@@ -7,10 +7,18 @@ _.Zones =
 		m(102, {	-- Zangarmarsh
 			["groups"] = {
 				n(-228, {	-- Flight Master
-					fp(164),	-- Orebor Harborage, Zangarmarsh
-					fp(151),	-- Swamprat Post, Zangarmarsh
-					fp(117),	-- Telredor, Zangarmarsh
-					fp(118),	-- Zabra'jin, Zangarmarsh
+					fp(164, { -- Orebor Harborage, Zangarmarsh
+						["coord"] = { 41.2, 28.8 },
+					}),
+					fp(151, { -- Swamprat Post, Zangarmarsh
+						["coord"] = { 84.8, 55 },
+					}),
+					fp(117, { -- Telredor, Zangarmarsh
+						["coord"] = { 67.8, 51.4 },
+					}),
+					fp(118, { -- Zabra'jin, Zangarmarsh
+						["coord"] = { 33, 51 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(419), 	-- Small Frog 

@@ -7,7 +7,9 @@ _.Zones =
 		m(111, { -- Shattrath City
 			["groups"] = {
 				n(-228, {	-- Flight Master
-					fp(128),	-- Shattrath, Terokkar Forest
+					fp(128, { -- Shattrath, Terokkar Forest
+						["coord"] = { 63.8, 41 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					q(31925, {	-- Morulu The Elder
