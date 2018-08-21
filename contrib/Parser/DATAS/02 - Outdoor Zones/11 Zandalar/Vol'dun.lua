@@ -582,12 +582,12 @@ i(155430),
 								}),
 								["questID"] = 51074,
 							}),	
-							n(128686, {	-- Kamid the Trapper		
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							n(128686, {	-- Kamid the Trapper
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161038),	-- Sand Trapper's Legguards
 								}),
-								-- ["questID"] = 	
-							}),	
+								["questID"] = 50528,
+							}),
 							n(137681, {	-- King Clickyclack
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161108),	-- Kingshell Legplates
@@ -613,12 +613,12 @@ i(155430),
 								}),
 								["questID"] = 48960,
 							}),
-							n(136336, {	-- Scorpox		
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							n(136336, {	-- Scorpox
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161030),	-- Vicious Scorpidsting Sandals
 								}),
 								["questID"] = 51076,
-							}),	
+							}),
 							n(136338, {	-- Sirokar		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161099),	-- Wind-Scoured Greaves

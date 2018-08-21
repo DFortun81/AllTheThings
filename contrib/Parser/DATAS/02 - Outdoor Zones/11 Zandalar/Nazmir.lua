@@ -48,7 +48,7 @@ _.Zones =
 									["questID"] = 49483,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(280504, {	-- Swallowed Naga Chest	
+								o(280504, {	-- Swallowed Naga Chest
 									["questID"] = 50045,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
@@ -719,16 +719,16 @@ _.Zones =
 							}),
 							["questID"] = 50355,
 						}),
-						n(134295, {	-- Lost Scroll		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(134295, {	-- Lost Scroll
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161045, {	-- Scrollbound Hurricane Slippers
 									["crs"] = {
 										134294,	-- Enraged Water Elemental
 									},
 								}),
 							}),
-							["questID"] = 48541,	
-						}),	
+							["questID"] = 50565,
+						}),
 						n(134296, {	-- Lucille
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161046, {	-- Scrollbound Arachnid Gloves
@@ -838,6 +838,14 @@ _.Zones =
 				}),
 				n(-212, {	-- Treasure Chest
 					["groups"] = { -- If we are going to list every treasure chest then let's make it pretty and not show quest ID# on screen.
+						o(9999999, { -- Treasure Chest
+							["questID"] = 50855,
+							["isDaily"] = true,
+							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+							["coords"] = {
+								{ 46.91, 73.90 },
+							},
+						}),
 						o(9999998, {	-- Treasure Chest
 							["questID"] = 49885,
 							["isDaily"] = true,
@@ -863,13 +871,16 @@ _.Zones =
 							["isDaily"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
-						o(9999999, { -- Treasure Chest
-							["questID"] = 50855,
+						o(9999986, {	-- Treasure Chest
+							["questID"] = 49913,
 							["isDaily"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
-							["coords"] = {
-								{ 46.91, 73.90 },
-							},
+						}),
+						o(9999985, {	-- Treasure Chest
+							["questID"] = 49914,
+							["isDaily"] = true,
+							["coord"] = { 49.2, 33.3 },
+							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
 					},
 				}),

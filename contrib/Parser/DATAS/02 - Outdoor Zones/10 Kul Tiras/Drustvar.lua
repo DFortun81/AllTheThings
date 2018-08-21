@@ -1239,12 +1239,12 @@ _.Zones =
 						n(138667, {	-- Blighted Monstrosity
 							["questID"] = 52001,
 						}),
-						n(126621, {	-- Bonesquall		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(126621, {	-- Bonesquall
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154376),	-- Bonecurse Gauntlets
 							}),
-							["questID"] = 48978,	
-						}),	
+							["questID"] = 48978,
+						}),
 						n(139321, {	-- Braedan Whitewall
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154500),	-- Moonwood Bramblespire
@@ -1257,12 +1257,12 @@ _.Zones =
 							}),
 							["questID"] = 50939,	
 						}),	
-						n(129904, {	-- Cottontail Matron		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(129904, {	-- Cottontail Matron
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(163036),	-- Polished Pet Charm
 							}),
-							["questID"] = 49216,	
-						}),	
+							["questID"] = 49216,
+						}),
 						n(134706, {	-- Deathcap
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158555),	-- Doom Shroom
