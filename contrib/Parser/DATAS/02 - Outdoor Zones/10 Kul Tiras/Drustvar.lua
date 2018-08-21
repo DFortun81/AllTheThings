@@ -553,6 +553,28 @@ _.Zones =
 							-- Picked up after turning in "Drustfall."
 							-- Not required for "Drust Do It."
 						}),
+						qa(50953, {	-- Greenstalker
+							["qg"] = 135861,	-- Adalyn Forestwatcher
+							["coord"] = { 33.4, 65.1 },
+							["sourceQuests"] = { 51543 },	-- Saplings in the Snow
+							-- Not required for "Drust Do It."
+						}),
+						qa(51472, {	-- Life Preserver
+							["g"] = {
+								i(155097),	-- Wickerwoven Sandals
+								i(155099),	-- Banisher Boots
+								i(155098),	-- Crone-Seeker's Boots
+								i(155096),	-- Waycrest Militia Sabatons
+								i(155460),	-- Wickerwoven Mitts
+								i(155469),	-- Banisher Grips
+								i(155477),	-- Crone-Seeker's Strikers
+								i(155485),	-- Waycrest Militia Crushers
+							},
+							["qg"] = 137732,	-- Zallestrasza
+							["coord"] = { 33.5, 65.1 },
+							["sourceQuests"] = { 50953 },	-- Greenstalker
+							-- Not required for "Drust Do It."
+						}),
 						qa(48518, {	-- Save Who We Can
 							["qg"] = 126310,	-- Evelyn Pare
 							["coord"] = { 70.0, 60.2 },
@@ -907,6 +929,66 @@ _.Zones =
 							},
 							-- Not required for "Drust Do It."
 						}),
+						qa(50988, {	-- An Economic Opportunity
+							["qg"] = 136234,	-- Cesi Loosecannon
+							["coord"] = { 22.8, 46.2 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have other/later sourceQuests; needs confirmation.
+							-- Not required for "Drust Do It."
+						}),
+						qa(51020, {	-- Cutthroat Business Practices
+							["qg"] = 136227,	-- Fixi Slyshiv
+							["coord"] = { 20.8, 46.1 },
+							["sourceQuests"] = { 50988 },	-- An Economic Opportunity
+							-- Not required for "Drust Do It."
+						}),
+						qa(51019, {	-- She's Got it Where it Counts
+							["qg"] = 136233,	-- Klause Fairwind
+							["coord"] = { 19.8, 44.3 },
+							["sourceQuests"] = { 50988 },	-- An Economic Opportunity
+							-- Not required for "Drust Do It."
+						}),
+						qa(50978, {	-- Out With the Old Boss
+							["g"] = {
+								i(158640),	-- Boss o' the Port
+								i(158642),	-- Tornsail Skull Cracker
+								i(158639),	-- Innkeep's Slyshiv
+								i(160207),	-- Freeport Falchion
+								i(158644),	-- Bilgewater Beatstick
+								i(158649),	-- Kane's Flayer
+								i(158643),	-- Anyport Repeater
+								i(158648),	-- Boss Cesi's Gavel
+								i(158645),	-- Smuggler's Pass
+							},
+							["qg"] = 136234,	-- Cesi Loosecannon
+							["coord"] = { 20.6, 46.1 },
+							["sourceQuests"] = {
+								51020,	-- Cutthroat Business Practices
+								51019,	-- She's Got it Where it Counts
+								-- Definitely requires Cutthroat Business Practices; may not require other.  Needs confirmation.
+							},
+							-- Not required for "Drust Do It."
+						}),
+						o(288214, {	-- Wanted Poster
+							qa(51240, {	-- WANTED: Anchorface
+								["coord"] = { 19.5, 43.6 },
+								["sourceQuests"] = { 50978 },	-- Out With the Old Boss
+								-- Not required for "Drust Do It."
+							}),
+						}),
+						qa(51001, {	-- Every Day I'm Smugglin'
+							["qg"] = 136140,	-- Clonk Greaseybit
+							["coord"] = { 20.9, 43.6 },
+							["sourceQuests"] = { 50978 },	-- Out With the Old Boss
+							-- Not required for "Drust Do It."
+						}),
+						qa(51018, {	-- Asking for a Friend
+							["qg"] = 136184,	-- Kane Carlyle
+							["coord"] = { 20.8, 46.0 },
+							["sourceQuests"] = { 50978 },	-- Out With the Old Boss
+							-- Not required for "Drust Do It."
+						}),
+						
 						
 						
 
@@ -1408,6 +1490,28 @@ _.Zones =
 								i(154315),	-- Rusty Steelclaw
 							}),
 							["questID"] = 51923,
+						}),
+					},
+				}),
+				n(-212, {	-- Treasure Chest
+					["g"] = {
+						o(9999984, {	-- Small Treasure Chest
+							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+							["coord"] = { 43.4, 33.0 },
+							["isDaily"] = true,
+							["questID"] = 51878,
+						}),
+						o(9999983, {	-- Small Treasure Chest
+							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+							["coord"] = { 26.1, 42.3 },
+							["isDaily"] = true,
+							["questID"] = 51911,
+						}),
+						o(9999982, {	-- Small Treasure Chest
+							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+							["coord"] = { 25.9, 65.4 },
+							["isDaily"] = true,
+							["questID"] = 51913,
 						}),
 					},
 				}),
