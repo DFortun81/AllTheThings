@@ -1006,6 +1006,8 @@ _.WorldEvents =
 									un(7, i(93625)), -- Miniature Winter Veil Tree (Level 90)
 									un(7, i(117371)), -- Miniature Winter Veil Tree (Level 1-110)
 									un(29, i(143898)), -- Miniature Winter Veil Tree (Level 1 - Cosmetic)
+									-- Trinkets
+									un(29, i(151351)),	-- Glowing Gift
 								},
 							}),
 						},
