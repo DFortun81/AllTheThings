@@ -79,6 +79,11 @@ _.Zones =
 					fp(1955, { -- Gloom Hollow, Nazmir
 						["coord"] = { 67, 43.6 },
 					}),
+					--[[	Need to figure out where this flight point is, not showing on in game maps
+					fp(2080, { -- Grimwatt's Crash, Nazmir
+							["coord"] = { },
+					}),
+					]]--
 					fp(2161, { -- Redfield's Watch, Nazmir
 						["coord"] = { 50.8, 20.8 },
 					}),

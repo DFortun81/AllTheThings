@@ -115,6 +115,39 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-228, {	-- Flight Paths
+					--[[	Need to figure out where these flight points are, not showing on in game maps
+					fp(2162, { -- Devoted Sanctuary, Vol'dun
+							["coord"] = { },
+					}),
+					fp(2144, { -- Goldtusk Inn, Vol'dun
+							["coord"] = { },
+					}),
+					]]--
+					fp(2119, { -- Sanctuary of the Devoted, Vol'dun
+						["coord"] = { 27.6, 50.4 },
+					}),
+					fp(2143, { -- Scorched Sands Outpost, Vol'dun
+						["coord"] = { 43.8, 76.0 },
+					}),
+					fp(2118, { -- Temple of Akunda, Vol'dun
+						["coord"] = { 53.6, 89.2 },
+					}),
+					fp(2120, { -- Tortaka Refuge, Vol'dun
+						["coord"] = { 61.8, 21.6 },
+					}),
+					fp(2111, { -- Vorrik's Sanctum, Vol'dun
+						["coord"] = { 47.2, 35.2 },
+					}),
+					fp(2117, { -- Vulpera Hideaway, Vol'dun
+						["coord"] = { 57.0, 49.2 },
+					}),
+					--[[	Need to figure out where this flight point is, not showing on in game maps
+					fp(2112, { -- Vulture's Nest, Vol'dun
+							["coord"] = { },
+					}),
+					]]--
+				}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {
 						p(2399),	-- Hermit Crab
