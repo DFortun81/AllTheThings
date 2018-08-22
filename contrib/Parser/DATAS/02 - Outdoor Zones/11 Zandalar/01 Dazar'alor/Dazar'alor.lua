@@ -32,7 +32,9 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Paths
-					fp(1959),	-- The Great Seal
+					fp(1959, { -- The Great Seal
+						["coord"] = { 51.8, 41.2 },
+					}),
 				}),
 				n(-38, {	-- Professions
 					["groups"] = {
