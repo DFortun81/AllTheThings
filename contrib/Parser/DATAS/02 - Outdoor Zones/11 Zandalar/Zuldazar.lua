@@ -431,7 +431,7 @@ _.Zones =
 										q(47742, {	-- Zul's Mutiny	
 											["qg"] = 124062,	-- King Rastakhan
 											["sourceQuests"] = { 47738 },	-- The Will of the Loa
-										}),	
+										}),
 									},
 								}),
 								crit(7, {	-- March of the Loa
@@ -480,6 +480,16 @@ _.Zones =
 							},
 							["races"] = HORDE_ONLY,
 						})),
+						qh(52113, {	-- Vol'jin, Son of Sen'jin
+							["qg"] = 137878,	-- Master Gadrin
+							["coord"] = { 45.5, 35.8 },
+							["sourceQuests"] = { 52114 },	-- Honoring a True Leader
+						}),
+						qh(51516, {	-- Atal'Dazr: Ashes of a Warchief
+							["qg"] = 138138,	-- Princess Telanji
+							["coord"] = { 43.7, 39.5 },
+							["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
+						}),
 					},
 				}),
 				n(-16, {	-- Rares

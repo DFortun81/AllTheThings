@@ -937,6 +937,29 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 32320 }, -- The Horde is Family
 							}),
+							qh(51514, {	-- Broken Bargain
+								["qg"] = 137878,	-- Master Gadrin
+								["coord"] = { 59.5, 51.5 },
+								["sourceQuests"] = { 51513 },	-- Zalazane Returns
+							}),
+							qh(51533, {	-- The Glaive of Vol'jin
+								["qg"] = 120173,	-- Zen'tarba
+								["coord"] = { 59.2, 52.0 },
+								["sourceQuests"] = { 51513 },	-- Zalazane Returns
+							}),
+							qh(51515, {	-- Vengeance for Vol'jin
+								["qg"] = 137878,	-- Master Gadrin
+								["coord"] = { 59.5, 51.5 },
+								["sourceQuests"] = {
+									51514,	-- Broken Bargain
+									51533,	-- The Glaive of Vol'jin
+								},
+							}),
+							qh(52114, {
+								["qg"] = 137878,	-- Master Gadrin
+								["coord"] = { 59.5, 51.5 },
+								["sourceQuests"] = { 51515 },	-- Vengeance for Vol'jin
+							}),
 						}),
 						n(-2, { -- Vendors
 							n(113615, { -- Ravika <Darkspear Quartermaster>

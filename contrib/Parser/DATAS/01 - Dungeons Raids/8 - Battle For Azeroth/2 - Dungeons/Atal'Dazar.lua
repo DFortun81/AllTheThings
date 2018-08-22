@@ -13,6 +13,12 @@ _.Instances =
 		["groups"] = {
 			inst(968, { -- Atal'Dazar
 				["groups"] = {
+					n(-17, {	-- Quests
+						q(51517, {	-- You Owe Me a Spirit -- awards ach(12719) criteria 1
+							["qg"] = 140405, -- Bwonsamdi -- need to verify this specific ID
+							["sourceQuests"] = { 51516 },	-- Atal'Dazar: Ashes of a Warchief
+						}),
+					}),
 					d(1, { -- Normal
 						["groups"] = {
 							e(2082, { -- Priestess Alun'za
