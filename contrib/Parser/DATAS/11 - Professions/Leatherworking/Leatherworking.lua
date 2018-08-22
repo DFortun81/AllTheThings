@@ -460,9 +460,7 @@ profession(165, { -- Leatherworking
 			recipe(78419), -- Pattern: Scorched Leg Armor
 			recipe(78423), -- Pattern: Tsunami Chestguard
 			recipe(78415), -- Pattern: Tsunami Shoulders
-			recipe(78420), -- Pattern: Twilight Leg Armor
-			recipe(99536), -- Pattern: Vicious Fur Cloak
-			recipe(99535), -- Pattern: Vicious Hide Cloak
+			recipe(78420), -- Pattern: Twilight Leg Armor			
 		}),	
 		n(-2, { -- Vendors
 			i(67084), -- Pattern: Charscale Leg Armor
@@ -802,8 +800,6 @@ profession(165, { -- Leatherworking
 	tier(6, { 	-- Warlords of Draenor
 		n(-26, { -- Drops
 			-- Warlords of Draenor --			
-		}),
-		filter(200, { -- Recipes			
 		}),	
 		n(-2, { -- Vendors		
 		}),
@@ -849,10 +845,6 @@ profession(165, { -- Leatherworking
 		n(-26, { -- Drops
 			-- Legion --
 		}),
-		filter(200, { -- Recipes
-			recipe(239413), -- Pattern: The Sentinel's Eternal Refuge
-			recipe(239414), -- Pattern: Vigilance Perch
-		}),	
 		n(-2, { -- Vendors			
 		}),
 		n(-349, { 	-- Cosmetic		
