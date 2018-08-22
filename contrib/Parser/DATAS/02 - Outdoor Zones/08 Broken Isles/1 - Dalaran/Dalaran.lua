@@ -6,142 +6,6 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(627, { 	-- Dalaran
 			["groups"] = {
-				--[[
-				-- REMOVED FROM THE GAME, LEFT IN A COMMENT SO THAT IF THEY ADD IT BACK, WE HAVE THE INFO ALREADY
-				ach(11139, {	-- Field Medic!
-					["description"] = "This title was made unobtainable with the 8.0.1 Prepatch for BFA.",
-					["groups"] = {
-						title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!\nNOTE: You should use Premade Group Finder. You have much better odds in a group.\n\nWARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-							["groups"] = {
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 1, 		-- Bloody Letter (Criteria)
-									["itemID"] = 139534,		-- Bloody Letter
-									--["questID"] = 42350,		-- Bloody Letter (Quest)
-									["description"] = "Northwest Suramar."
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 2, 		-- Bloody Note (Criteria)
-									["itemID"] = 139522,		-- Bloody Note (Item)
-									--["questID"] = 42255,		-- Bloody Note (Quest)
-									["description"] = "Pirates in southern-east Azsuna."
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 3, 		-- Bloody Plea (Criteria)
-									["itemID"] = 139527,		-- Bloody Plea
-									--["questID"] = 42308,		-- Bloody Plea (Quest)
-									["description"] = "Furbolgs in southern Val'sharah"
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 4, 		-- Bloody Prayer (Criteria)
-									["itemID"] = 139535,		-- Bloody Prayer
-									--["questID"] = 42351,		-- Bloody Prayer (Quest)
-									["description"] = "Southwest Suramar City."
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 5, 		-- Bloody Request (Criteria)
-									["itemID"] = 139528,		-- Bloody Request
-									--["questID"] = 42309,		-- Bloody Request (Quest)
-									["description"] = "Grizzleweald (68, 73) in Val'sharah"
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 6, 		-- Crumpled Letter (Criteria)
-									["itemID"] = 139524,		-- Crumpled Letter
-									--["questID"] = 42333,		-- Crumpled Letter (Quest)
-									["description"] = "Western Highmountain next to Skyhorn.",
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 7, 		-- Crumpled Note (Criteria)
-									["itemID"] = 139525,		-- Crumpled Note
-									--["questID"] = 42334,		-- Crumpled Note (Quest)
-									["description"] = "Northern Highmountain."
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 8, 		-- Crumpled Request (Criteria)
-									["itemID"] = 139531,		-- Crumpled Request
-									--["questID"] = 42058,		-- Crumpled Request (Quest)
-									["description"] = "Vampirates. (Stormheim)"
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 9, 		-- Fevered Letter (Criteria)
-									["itemID"] = 139523,		-- Fevered Letter
-									--["questID"] = 42323,		-- Fevered Letter (Quest)
-									["description"] = "Southern Highmountain."
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 10, 		-- Fevered Note (Criteria)
-									["itemID"] = 139526,		-- Fevered Note
-									--["questID"] = 42303,		-- Fevered Note (Quest)
-									["description"] = "Southern Val'sharah"
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 11, 		-- Fevered Plea (Criteria)
-									["itemID"] = 139520,		-- Fevered Plea (Item)
-									--["questID"] = 42250,		-- Fevered Plea (Quest)
-									["description"] = "Murlocs at the southern tip in Azsuna."
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 12, 		-- Fevered Prayer (Criteria)
-									["itemID"] = 139532,		-- Fevered Prayer
-									--["questID"] = 42345,		-- Fevered Prayer (Quest)
-									["description"] = "Northwest Suramar."
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 13, 		-- Fevered Request (Criteria)
-									["itemID"] = 139529,		-- Fevered Request
-									--["questID"] = 41985,		-- Fevered Request (Quest)
-									["description"] = "Murlocs at Morheim (eastern Stormheim)."
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 14, 		-- Singed Letter (Criteria)
-									["itemID"] = 139530,		-- Singed Letter
-									--["questID"] = 42215,		-- Singed Letter (Quest)
-									["description"] = "Southern Stormheim."
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 15, 		-- Singed Note (Criteria)
-									["itemID"] = 139521,		-- Singed Note (Item)
-									--["questID"] = 42245,		-- Singed Note (Quest)
-									["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy."
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 16, 		-- Singed Plea (Criteria)
-									["itemID"] = 139533,		-- Singed Plea
-									--["questID"] = 42340,		-- Singed Plea (Quest)
-									["description"] = "Fal'dorei Tunnels."
-								}
-							}
-						})
-					},
-				}),
-				]]--
-				n(-25, { 	-- Pet Battle
-					["groups"] = {
-						p(1778),	-- Dust Bunny
-						qg(98725, qa(   45540)),	-- A Call from the Caverns
-						qg(115287, qh(  45540)),	-- A Call from the Caverns
-						ach(12431, {	-- Post Haste
-							i(156721),		-- Mailemental
-						}),
-					},
-					["description"] = "In order to see this battle pet you must first obtain the buff |cFFFFD700Spring Cleaning|r, which is a 15 minute buff..  Multiple people can click the rug.  If there are none present you can realm hop until you find one. You obtain this buff by clicking on a |cFFFFD700Dusty Rug|r.  The rug can spawn in one of five locations:\n\n|cFFFFFFFFBarber Shop|r - Upper Level (|cFFFFFFFF52.52, 30.31|r),\n\n|cFFFFFFFFBreanni's Shop|r - Behind the counter (|cFFFFFFFF58.9, 38.3|r),\n\n|cFFFFFFFFFilthy  Animal [Horde]|r - Outside the building on top of the sewer gate to the right before you enter. (|cFFFFFFFF64.15, 37.9|r)\n\n|cFFFFFFFFGreyfang Enclave [Alliance]|r - Behind the Paladin Portal\n\n|cFFFFFFFFLegerdemain Lounge|r - Top Floor",
-				}),
 				n(-169, { 	-- Emissary Quests
 					q(43179, { -- The Kirin Tor of Dalaran
 						["groups"]  = {
@@ -192,6 +56,275 @@ _.Zones =
 							})),
 						},
 						["repeatable"] = true,
+					}),
+				}),
+				n(-228, {	-- Flight Points
+					fp(1774, { -- Dalaran
+						["coord"] = { 69.8, 50.8 },
+					}),
+				}),
+				n(-25, { 	-- Pet Battle
+					["groups"] = {
+						p(1778),	-- Dust Bunny
+						qg(98725, qa(   45540)),	-- A Call from the Caverns
+						qg(115287, qh(  45540)),	-- A Call from the Caverns
+						ach(12431, {	-- Post Haste
+							i(156721),		-- Mailemental
+						}),
+					},
+					["description"] = "In order to see this battle pet you must first obtain the buff |cFFFFD700Spring Cleaning|r, which is a 15 minute buff..  Multiple people can click the rug.  If there are none present you can realm hop until you find one. You obtain this buff by clicking on a |cFFFFD700Dusty Rug|r.  The rug can spawn in one of five locations:\n\n|cFFFFFFFFBarber Shop|r - Upper Level (|cFFFFFFFF52.52, 30.31|r),\n\n|cFFFFFFFFBreanni's Shop|r - Behind the counter (|cFFFFFFFF58.9, 38.3|r),\n\n|cFFFFFFFFFilthy  Animal [Horde]|r - Outside the building on top of the sewer gate to the right before you enter. (|cFFFFFFFF64.15, 37.9|r)\n\n|cFFFFFFFFGreyfang Enclave [Alliance]|r - Behind the Paladin Portal\n\n|cFFFFFFFFLegerdemain Lounge|r - Top Floor",
+				}),
+				n(-38, { 	-- Profession
+					prof(356, { -- Fishing
+						n(-100001, { 	-- Artifact
+							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+							["lvl"] = 110,
+							["groups"] = {
+								{
+									["questID"] = 40961,			-- The Dalaran Fountain
+									["sourceQuest"] = 40960,		-- (Source Quest: Luminous Pearl)
+									["qg"] = 90417,					-- Quest Giver: Archmage Khadgar
+									["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item to start this chain.",
+								},
+								{
+									["questID"] = 41010,			-- Fish Frenzy
+									["sourceQuest"] = 40961,		-- (Source Quest: The Dalaran Fountain)
+									["qg"] = 102639,				-- Quest Giver: Archmage Khadgar
+									["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
+									["groups"] = {
+										i(133755, { -- Underlight Angler
+											["groups"] = {
+												{
+													["artifactID"] = 841, -- Base Skin
+													["itemID"] = 133755, -- Underlight Angler
+													["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+													["modelScale"] = 1.25,
+													["modelRotation"] = 55,
+												},
+												qg({120456,120457,120458,120459,120460}, ach(11725, { 	-- Fisherfriend of the Isles
+													["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
+													["groups"] = {
+														i(152583, { -- Underlight Emerald
+															{
+																["artifactID"] = 988, -- Fisherfriend of the Isles
+																["itemID"] = 133755, -- Underlight Angler
+																["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+																["modelScale"] = 1.25,
+																["modelRotation"] = 55,
+															},
+															{
+																["artifactID"] = 989, -- Fisherfriend of the Isles
+																["itemID"] = 133755, -- Underlight Angler
+																["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+																["modelScale"] = 1.25,
+																["modelRotation"] = 55,
+															},
+														})
+													},
+												})),
+											},
+											["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+											["modelScale"] = 1.25,
+											["modelRotation"] = 55,
+											["ignoreSource"] = true,
+											["sourceQuest"] = 40961
+										}),
+									},
+								},
+							},
+						}),
+						faction(1975, {	-- Conjurer Margoss
+							["groups"] = {
+								q(42911),	-- Drowned Mana (Quest)
+								i(138777, { -- Drowned Mana
+									i(138811),	-- Brinedeep Bottom Feeder Mount
+									i(142532),	-- Crate of Bobbers: Murloc Head Toy
+									i(142531),	-- Crate of Bobbers: Squeaky Duck Toy
+									i(138810),	-- Sting Ray Pup
+									i(143842),	-- Trashy
+								}),
+							},
+							["description"] = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+							["requireSkill"] = 356,
+							["creatureID"] = 108825
+						}),
+						n(95844, {	-- Marcia Chase <Fishing Trainer & Supplies>
+							ach(10722, { 	-- The Wish Remover
+								["groups"] = {
+									{
+										["criteriaID"] = 1,		-- Stellagosa's Silver Coin (Criteria)
+										["itemID"] = 138894,	-- Stellagosa's Silver Coin (Item)
+									},
+									{
+										["criteriaID"] = 2,
+									},
+									{
+										["criteriaID"] = 3,
+									},
+									{
+										["criteriaID"] = 4,
+									},
+									{
+										["criteriaID"] = 5,
+									},
+									{
+										["criteriaID"] = 6,
+									},
+									{
+										["criteriaID"] = 7,
+									},
+									{
+										["criteriaID"] = 8,
+									},
+									{
+										["criteriaID"] = 9,
+									},
+									{
+										["criteriaID"] = 10,
+									},
+									{
+										["criteriaID"] = 11,
+									},
+									{
+										["criteriaID"] = 12,
+									},
+									{
+										["criteriaID"] = 13,
+									},
+									{
+										["criteriaID"] = 14,
+									},
+									{
+										["criteriaID"] = 15,
+									},
+									{
+										["criteriaID"] = 16,
+									},
+									{
+										["criteriaID"] = 17,
+									},
+									{
+										["criteriaID"] = 18,
+									},
+									{
+										["criteriaID"] = 19,
+									},
+									{
+										["criteriaID"] = 20,
+									},
+									{
+										["criteriaID"] = 21,
+									},
+									{
+										["criteriaID"] = 22,
+									},
+									{
+										["criteriaID"] = 23,
+									},
+									{
+										["criteriaID"] = 24,
+									},
+									{
+										["criteriaID"] = 25,
+									},
+									{
+										["criteriaID"] = 26,
+									},
+									{
+										["criteriaID"] = 27,
+									},
+									{
+										["criteriaID"] = 28,
+									},
+									{
+										["criteriaID"] = 29,
+									},
+									{
+										["criteriaID"] = 30,
+									},
+									{
+										["criteriaID"] = 31,
+									},
+									{
+										["criteriaID"] = 32,
+									},
+									{
+										["criteriaID"] = 33,
+									},
+									{
+										["criteriaID"] = 34,
+									},
+									{
+										["criteriaID"] = 35,
+									},
+									{
+										["criteriaID"] = 36,
+									},
+									{
+										["criteriaID"] = 37,
+									},
+									{
+										["criteriaID"] = 38,
+									},
+									{
+										["criteriaID"] = 39,
+									},
+									{
+										["criteriaID"] = 40,
+									},
+									{
+										["criteriaID"] = 41,
+									},
+									{
+										["criteriaID"] = 42,
+									},
+									{
+										["criteriaID"] = 43,
+									},
+									{
+										["criteriaID"] = 44,
+									},
+									{
+										["criteriaID"] = 45,
+									},
+									{
+										["criteriaID"] = 46,
+									},
+									{
+										["criteriaID"] = 47,
+									},
+									{
+										["criteriaID"] = 48,
+									},
+									{
+										["criteriaID"] = 49,
+									},
+									{
+										["criteriaID"] = 50,
+									},
+									{
+										["criteriaID"] = 51,
+									},
+									{
+										["criteriaID"] = 52,
+									},
+									{
+										["criteriaID"] = 53,
+									},
+									{
+										["criteriaID"] = 54,
+									},
+									{
+										["criteriaID"] = 55,
+									},
+									{
+										["criteriaID"] = 56,
+									},
+								},
+								["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
+								["requireSkill"] = 356,
+							}),
+						}),
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -2950,7 +3083,6 @@ _.Zones =
 						["qg"] = 99531, -- Aggra
 						["classes"] = { 7 },
 					}),														
-				}),
 --[[
 					The following quests have been removed from the game:
 					q(49472)	-- A Titanic Effort
@@ -2971,6 +3103,7 @@ _.Zones =
 					q(47791),	-- Unsettled Power
 					q(44115),	-- Welcome to Legion!
 ]]--
+				}),
 				n(-16, { 	-- Rares 
 					o(244965, { -- Sheddle's Chest
 						["groups"] = {
@@ -7718,259 +7851,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-38, { 	-- Profession
-					prof(356, { -- Fishing
-						n(-100001, { 	-- Artifact
-							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-							["lvl"] = 110,
-							["groups"] = {
-								{
-									["questID"] = 40961,			-- The Dalaran Fountain
-									["sourceQuest"] = 40960,		-- (Source Quest: Luminous Pearl)
-									["qg"] = 90417,					-- Quest Giver: Archmage Khadgar
-									["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item to start this chain.",
-								},
-								{
-									["questID"] = 41010,			-- Fish Frenzy
-									["sourceQuest"] = 40961,		-- (Source Quest: The Dalaran Fountain)
-									["qg"] = 102639,				-- Quest Giver: Archmage Khadgar
-									["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
-									["groups"] = {
-										i(133755, { -- Underlight Angler
-											["groups"] = {
-												{
-													["artifactID"] = 841, -- Base Skin
-													["itemID"] = 133755, -- Underlight Angler
-													["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-													["modelScale"] = 1.25,
-													["modelRotation"] = 55,
-												},
-												qg({120456,120457,120458,120459,120460}, ach(11725, { 	-- Fisherfriend of the Isles
-													["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
-													["groups"] = {
-														i(152583, { -- Underlight Emerald
-															{
-																["artifactID"] = 988, -- Fisherfriend of the Isles
-																["itemID"] = 133755, -- Underlight Angler
-																["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-																["modelScale"] = 1.25,
-																["modelRotation"] = 55,
-															},
-															{
-																["artifactID"] = 989, -- Fisherfriend of the Isles
-																["itemID"] = 133755, -- Underlight Angler
-																["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-																["modelScale"] = 1.25,
-																["modelRotation"] = 55,
-															},
-														})
-													},
-												})),
-											},
-											["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-											["modelScale"] = 1.25,
-											["modelRotation"] = 55,
-											["ignoreSource"] = true,
-											["sourceQuest"] = 40961
-										}),
-									},
-								},
-							},
-						}),
-						faction(1975, {	-- Conjurer Margoss
-							["groups"] = {
-								q(42911),	-- Drowned Mana (Quest)
-								i(138777, { -- Drowned Mana
-									i(138811),	-- Brinedeep Bottom Feeder Mount
-									i(142532),	-- Crate of Bobbers: Murloc Head Toy
-									i(142531),	-- Crate of Bobbers: Squeaky Duck Toy
-									i(138810),	-- Sting Ray Pup
-									i(143842),	-- Trashy
-								}),
-							},
-							["description"] = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-							["requireSkill"] = 356,
-							["creatureID"] = 108825
-						}),
-						n(95844, {	-- Marcia Chase <Fishing Trainer & Supplies>
-							ach(10722, { 	-- The Wish Remover
-								["groups"] = {
-									{
-										["criteriaID"] = 1,		-- Stellagosa's Silver Coin (Criteria)
-										["itemID"] = 138894,	-- Stellagosa's Silver Coin (Item)
-									},
-									{
-										["criteriaID"] = 2,
-									},
-									{
-										["criteriaID"] = 3,
-									},
-									{
-										["criteriaID"] = 4,
-									},
-									{
-										["criteriaID"] = 5,
-									},
-									{
-										["criteriaID"] = 6,
-									},
-									{
-										["criteriaID"] = 7,
-									},
-									{
-										["criteriaID"] = 8,
-									},
-									{
-										["criteriaID"] = 9,
-									},
-									{
-										["criteriaID"] = 10,
-									},
-									{
-										["criteriaID"] = 11,
-									},
-									{
-										["criteriaID"] = 12,
-									},
-									{
-										["criteriaID"] = 13,
-									},
-									{
-										["criteriaID"] = 14,
-									},
-									{
-										["criteriaID"] = 15,
-									},
-									{
-										["criteriaID"] = 16,
-									},
-									{
-										["criteriaID"] = 17,
-									},
-									{
-										["criteriaID"] = 18,
-									},
-									{
-										["criteriaID"] = 19,
-									},
-									{
-										["criteriaID"] = 20,
-									},
-									{
-										["criteriaID"] = 21,
-									},
-									{
-										["criteriaID"] = 22,
-									},
-									{
-										["criteriaID"] = 23,
-									},
-									{
-										["criteriaID"] = 24,
-									},
-									{
-										["criteriaID"] = 25,
-									},
-									{
-										["criteriaID"] = 26,
-									},
-									{
-										["criteriaID"] = 27,
-									},
-									{
-										["criteriaID"] = 28,
-									},
-									{
-										["criteriaID"] = 29,
-									},
-									{
-										["criteriaID"] = 30,
-									},
-									{
-										["criteriaID"] = 31,
-									},
-									{
-										["criteriaID"] = 32,
-									},
-									{
-										["criteriaID"] = 33,
-									},
-									{
-										["criteriaID"] = 34,
-									},
-									{
-										["criteriaID"] = 35,
-									},
-									{
-										["criteriaID"] = 36,
-									},
-									{
-										["criteriaID"] = 37,
-									},
-									{
-										["criteriaID"] = 38,
-									},
-									{
-										["criteriaID"] = 39,
-									},
-									{
-										["criteriaID"] = 40,
-									},
-									{
-										["criteriaID"] = 41,
-									},
-									{
-										["criteriaID"] = 42,
-									},
-									{
-										["criteriaID"] = 43,
-									},
-									{
-										["criteriaID"] = 44,
-									},
-									{
-										["criteriaID"] = 45,
-									},
-									{
-										["criteriaID"] = 46,
-									},
-									{
-										["criteriaID"] = 47,
-									},
-									{
-										["criteriaID"] = 48,
-									},
-									{
-										["criteriaID"] = 49,
-									},
-									{
-										["criteriaID"] = 50,
-									},
-									{
-										["criteriaID"] = 51,
-									},
-									{
-										["criteriaID"] = 52,
-									},
-									{
-										["criteriaID"] = 53,
-									},
-									{
-										["criteriaID"] = 54,
-									},
-									{
-										["criteriaID"] = 55,
-									},
-									{
-										["criteriaID"] = 56,
-									},
-								},
-								["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
-								["requireSkill"] = 356,
-							}),
-						}),
-					}),
-				}),
 				n(-213, {	-- The Underbelly
 					n(-4, {	-- Achievements
 						currency(1149, { -- Sightless Eyes
@@ -8079,6 +7959,130 @@ _.Zones =
 				}),	
 				n(-40, {    -- Legacy
 					["groups"] = {
+						n(-4, {		-- Achievements
+							un(2, ach(11139, {	-- Field Medic!
+								["description"] = "This title was made unobtainable with the 8.0.1 Prepatch for BFA.",
+								["groups"] = {
+									un(39, title(340, {	-- TITLE: Field Medic!
+										["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!\nNOTE: You should use Premade Group Finder. You have much better odds in a group.\n\nWARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
+										["groups"] = {
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 1, 		-- Bloody Letter (Criteria)
+												["itemID"] = 139534,		-- Bloody Letter
+												--["questID"] = 42350,		-- Bloody Letter (Quest)
+												["description"] = "Northwest Suramar."
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 2, 		-- Bloody Note (Criteria)
+												["itemID"] = 139522,		-- Bloody Note (Item)
+												--["questID"] = 42255,		-- Bloody Note (Quest)
+												["description"] = "Pirates in southern-east Azsuna."
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 3, 		-- Bloody Plea (Criteria)
+												["itemID"] = 139527,		-- Bloody Plea
+												--["questID"] = 42308,		-- Bloody Plea (Quest)
+												["description"] = "Furbolgs in southern Val'sharah"
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 4, 		-- Bloody Prayer (Criteria)
+												["itemID"] = 139535,		-- Bloody Prayer
+												--["questID"] = 42351,		-- Bloody Prayer (Quest)
+												["description"] = "Southwest Suramar City."
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 5, 		-- Bloody Request (Criteria)
+												["itemID"] = 139528,		-- Bloody Request
+												--["questID"] = 42309,		-- Bloody Request (Quest)
+												["description"] = "Grizzleweald (68, 73) in Val'sharah"
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 6, 		-- Crumpled Letter (Criteria)
+												["itemID"] = 139524,		-- Crumpled Letter
+												--["questID"] = 42333,		-- Crumpled Letter (Quest)
+												["description"] = "Western Highmountain next to Skyhorn.",
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 7, 		-- Crumpled Note (Criteria)
+												["itemID"] = 139525,		-- Crumpled Note
+												--["questID"] = 42334,		-- Crumpled Note (Quest)
+												["description"] = "Northern Highmountain."
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 8, 		-- Crumpled Request (Criteria)
+												["itemID"] = 139531,		-- Crumpled Request
+												--["questID"] = 42058,		-- Crumpled Request (Quest)
+												["description"] = "Vampirates. (Stormheim)"
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 9, 		-- Fevered Letter (Criteria)
+												["itemID"] = 139523,		-- Fevered Letter
+												--["questID"] = 42323,		-- Fevered Letter (Quest)
+												["description"] = "Southern Highmountain."
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 10, 		-- Fevered Note (Criteria)
+												["itemID"] = 139526,		-- Fevered Note
+												--["questID"] = 42303,		-- Fevered Note (Quest)
+												["description"] = "Southern Val'sharah"
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 11, 		-- Fevered Plea (Criteria)
+												["itemID"] = 139520,		-- Fevered Plea (Item)
+												--["questID"] = 42250,		-- Fevered Plea (Quest)
+												["description"] = "Murlocs at the southern tip in Azsuna."
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 12, 		-- Fevered Prayer (Criteria)
+												["itemID"] = 139532,		-- Fevered Prayer
+												--["questID"] = 42345,		-- Fevered Prayer (Quest)
+												["description"] = "Northwest Suramar."
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 13, 		-- Fevered Request (Criteria)
+												["itemID"] = 139529,		-- Fevered Request
+												--["questID"] = 41985,		-- Fevered Request (Quest)
+												["description"] = "Murlocs at Morheim (eastern Stormheim)."
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 14, 		-- Singed Letter (Criteria)
+												["itemID"] = 139530,		-- Singed Letter
+												--["questID"] = 42215,		-- Singed Letter (Quest)
+												["description"] = "Southern Stormheim."
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 15, 		-- Singed Note (Criteria)
+												["itemID"] = 139521,		-- Singed Note (Item)
+												--["questID"] = 42245,		-- Singed Note (Quest)
+												["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy."
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 16, 		-- Singed Plea (Criteria)
+												["itemID"] = 139533,		-- Singed Plea
+												--["questID"] = 42340,		-- Singed Plea (Quest)
+												["description"] = "Fal'dorei Tunnels."
+											}
+										},
+									})),
+								},
+							})),
+						}),
 						n(-17, {    -- Quests
 							un(40, q(43473, {	-- Experimental Potion: Test Subjects Needed
 								["qg"] = 110642, -- Fizzi Liverzapper
