@@ -879,7 +879,7 @@ _.Zones =
 						i(9768),	-- Greenweave Bracers
 						i(9770),	-- Greenweave Cloak
 						i(9771),	-- Greenweave Gloves
-						i(0287),	-- Greenweave Mantle
+						i(9287),	-- Greenweave Mantle
 						i(9767),	-- Greenweave Sandals
 						i(9766),	-- Greenweave Sash
 						i(9788),	-- Raider's Belt

@@ -1659,6 +1659,7 @@ _.Zones =
 									["description"] = "This gives your pet a ghostly appearance as a hunter for 30 minutes.",
 								}),
 							},
+							["races"] = ALLIANCE_ONLY,
 						}),
 					},
 				}),
