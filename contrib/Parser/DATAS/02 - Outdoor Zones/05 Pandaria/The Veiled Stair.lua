@@ -6,7 +6,7 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(433, {	-- The Veiled Stair
 			["groups"] = {
-				n(-4, { -- Achievement
+				n(-4, { 	-- Achievement
 										ach(7997, {	-- Riches of Pandaria
 						o(213845, {	-- The Hammer of Folly
 							["groups"] = {
@@ -18,12 +18,17 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(-228, {	-- Flight Paths
+					fp(1029, { -- Tavern in the Mists, The Veiled Stair
+						["coord"] = { 56.6, 75.8 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					p(706), 	-- Bandicoon
 					p(708), 	-- Malayan Quillrat
 					p(709), 	-- Malayan Quillrat Pup
 				}),
-				n(-17, { -- Quests
+				n(-17, { 	-- Quests
 --[[				
 					q(32026),	-- Candy Bucket
 					q(31287),	-- Educating Saurok
@@ -51,7 +56,15 @@ _.Zones =
 --				n(-16, { 	-- Rares
 				--	n(70126, { 	-- Willy Wilder	}),
 --				}),
-				n(-2, {	-- Vendors
+				n(-222, {	-- Treasure Hunter
+					o(214325, {	-- Forgotten Lockbox
+						["groups"] = {
+							q(31867),	-- Forgotten Lockbox
+						},
+						["description"] = "Located on a box on the second floor of the inn",
+					}),
+				}),
+				n(-2, {		-- Vendors
 					n(70436, {	-- Blacktalon Quartermaster <Supplier to the Black Prince>
 						["groups"] = {
 							un(4, i(98149)),	-- Cranewing Cloak
@@ -70,14 +83,6 @@ _.Zones =
 							}),
 						},
 						["description"] = "To purchase the epic cloaks you must have obtained the achievement |r |cFFFFD700'Chapter IV: Celestial Blessings'|r during Mists of Pandaria.  To purchase the legendary cloak token you must have obtained the achievement |r |cFFFFD700'Chapter V: Judgment of the Black Prince'|r during Mists of Pandaria.",
-					}),
-				}),
-				n(-222, {	-- Treasure Hunter
-					o(214325, {	-- Forgotten Lockbox
-						["groups"] = {
-							q(31867),	-- Forgotten Lockbox
-						},
-						["description"] = "Located on a box on the second floor of the inn",
 					}),
 				}),
 			},	

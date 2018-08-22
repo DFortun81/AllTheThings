@@ -6,6 +6,14 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(554, {	-- Timeless Isle
 			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(1294, { -- Huojin Landing, Timeless Isle
+						["coord"] = { 21.8, 39.8 },
+					}),
+					fp(1293, { -- Tushui Landing, Timeless Isle
+						["coord"] = { 23.2, 71 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battles
 					p(1324), 	-- Ashwing Moth
 					p(1325), 	-- Flamering Moth
@@ -1024,7 +1032,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(0, { -- Zone Drops
+				n(0, { 		-- Zone Drops
 					i(102318, { -- Timeless Cloak
 						i(103982, { -- Burden of Eternity
 							i(101889), -- Amaranthine Cloak

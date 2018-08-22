@@ -5,8 +5,13 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(393, { 	-- Shrine of Seven Stars
-			["groups"] = {		
-				n(-17, { -- Quests	
+			["groups"] = {
+				n(-228, { 	-- Flight Paths
+					fp(1057, { -- Shrine of Seven Stars, Vale of Eternal Blossoms
+						["coord"] = { 84.6, 62.4 },
+					}),
+				}),
+				n(-17, { 	-- Quests	
 					qa(32900, { -- Heroic Deeds
 						["groups"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
@@ -138,7 +143,7 @@ _.Zones =
 					qa(31386),	-- The Shado-Pan Offensive
 --]]
 				}),
-				na(-2, {		-- Vendors
+				na(-2, {	-- Vendors
 					n(74021, {	-- Clarice Chapmann <Heroic Vendor>
 						i(105858, {	-- Essence of the Cursed Conqueror
 							i(99686, {	-- Chest of the Cursed Conquerer

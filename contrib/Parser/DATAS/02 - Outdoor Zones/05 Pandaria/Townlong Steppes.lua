@@ -6,7 +6,7 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(388, {	-- Townlong Steppes
 			["groups"] = {
-				n(-4, { -- Achievements
+				n(-4, { 	-- Achievements
 					ach(7284, {	-- Is Another Man's Treasure
 						o(213960, {		-- Yaungol Fire Carrier
 							["groups"] = {
@@ -48,6 +48,20 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(-228, {	-- Flight Paths
+					fp(1054, { -- Gao-Ran Battlefront, Townlong Steppes
+						["coord"] = { 74.4, 81.4 },
+					}),
+					fp(1053, { -- Longying Outpost, Townlong Steppes
+						["coord"] = { 71, 57.2 },
+					}),
+					fp(1055, { -- Rensai's Watchpost, Townlong Steppes
+						["coord"] = { 54.2, 79 },
+					}),
+					fp(1056, { -- Shado-Pan Garrison, Townlong Steppes
+						["coord"] = { 50, 71.8 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battles
 					p(724), 	-- Alpine Foxling
 					p(725), 	-- Alpine Foxling Kit
@@ -73,6 +87,13 @@ _.Zones =
 							})
 						},
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
+					}),
+				}),
+				n(-38, { 	-- Profession
+					prof(356, { -- Fishing
+						desc(i(94933), "The Tiny Blue Carp can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms.|nAnother way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms.|r"),	-- Tiny Blue Carp Pet
+						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
+						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -1047,7 +1068,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-2, {	-- Vendors
+				n(-2, {		-- Vendors
 					n(65171, {	-- Alin the Finder <Adventuring Supplies>
 						i(82614),	-- Mountainscaler Satin Hood
 						i(82615),	-- Mountainscaler Hide Helm
@@ -2228,13 +2249,6 @@ _.Zones =
 						i(83273),	-- Wasteland Shield
 						i(83274),	-- Wasteland Blade
 						i(83275),	-- Wasteland Axe
-					}),
-				}),
-				n(-38, { -- Profession
-					prof(356, { -- Fishing
-						desc(i(94933), "The Tiny Blue Carp can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms.|nAnother way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms.|r"),	-- Tiny Blue Carp Pet
-						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
-						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
 					}),
 				}),
 			},

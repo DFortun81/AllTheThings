@@ -10,6 +10,11 @@ _.Zones =
 				n(-4, { -- Achievement
 				}),
 				--]]
+				n(-228, {	-- Flight Paths
+					fp(1073, { -- Serpent's Spine, Vale of Eternal Blossoms
+						["coord"] = { 14.2, 79.2 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battles
 					q(32603, { -- Beasts of Fable
 						["groups"] = {
@@ -84,6 +89,11 @@ _.Zones =
 					p(749), 	-- Golden Civet
 					p(750), 	-- Golden Civet Kitten
 					p(752), 	-- Yellow-Bellied Bullfrog
+				}),
+				n(-38, {	-- Profession
+					prof(356, { -- Fishing
+						desc(i(94933), "The Tiny Blue Carp can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms.|nAnother way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms.|r"),	-- Tiny Blue Carp Pet
+					}),
 				}),
 				n(-17, { 	-- Quests	
 					q(32806, {	-- The King and the Council
@@ -460,7 +470,7 @@ _.Zones =
 					}), 
 					--n(50843, { 		-- Portent	}), 
 				}),
-				n(-2, {	-- Vendors
+				n(-2, {		-- Vendors
 					na(64028, {	-- Challenger Soong <Challenge Dungeons>
 						["groups"] = {
 							un(4, i(90049)),	-- Girdle of the Lich Lord
@@ -916,11 +926,6 @@ _.Zones =
 						i(122221),	-- Music Roll: Song of Liu Lang
 						i(89795),	-- Lorewalkers Tabard
 						i(93230),	-- Grand Commendation of the Lorewalkers
-					}),
-				}),
-				n(-38, {	-- Profession
-					prof(356, { -- Fishing
-						desc(i(94933), "The Tiny Blue Carp can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms.|nAnother way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms.|r"),	-- Tiny Blue Carp Pet
 					}),
 				}),
 			},

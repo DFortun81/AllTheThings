@@ -6,7 +6,7 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(504, {	-- Isle of Thunder
 			["groups"] = {
-				n(-4, {	-- Achievements
+				n(-4, {		-- Achievements
 					ach(8212, {	-- Zandalari Library Card
 						{
 							["criteriaID"] = 1,	-- Iron-Bound Zandalari Journal [Criteria]
@@ -80,6 +80,11 @@ _.Zones =
 					p(1179), 	-- Electrified Razortooth
 					p(1182), 	-- Swamp Croaker
 					p(1175), 	-- Thundertail Flapper
+				}),
+				n(-38, { 	-- Profession
+					prof(356, { -- Fishing
+						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
+					}),
 				}),
 				n(-17, { 	-- Quests
 --[[				
@@ -481,7 +486,7 @@ _.Zones =
 				--	n(69997, { 		-- Progenitus	}), 
 --]]
 				}),
-				n(-2, {	-- Vendors
+				n(-2, {		-- Vendors
 					a(n(68000, {	-- Hiren Loresong <Kirin Tor Offensive Quartermaster>
 						i(95545),	-- Grand Commendation of the Kirin Tor Offensive
 						i(95564),	-- Reins of the Golden Primal Direhorn (MOUNT!)
@@ -940,11 +945,6 @@ _.Zones =
 						i(95524),	-- Thunder Caressed Waistguard
 						i(97208),	-- Thunder-Chaser Cloak
 					})),
-				}),
-				n(-38, { -- Profession
-					prof(356, { -- Fishing
-						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
-					}),
 				}),
 			},
 			["lvl"] = 85,	

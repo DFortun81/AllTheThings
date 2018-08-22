@@ -6,7 +6,7 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(376, {	-- Valley of the Four Winds
 			["groups"] = {
-				n(-4, { -- Achievement
+				n(-4, { 	-- Achievement
 					ach(7284, {	-- Is Another Man's Treasure
 						n(64004, { 		-- Ghostly Pandaren Fisherman
 							["groups"] = {
@@ -59,6 +59,20 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(-228, {	-- Flight Paths
+					fp(1052, { -- Grassy Cline, Valley of the Four Winds
+						["coord"] = { 70.8, 24.2 },
+					}),
+					fp(985, { -- Halfhill, Valley of the Four Winds
+						["coord"] = { 56.4, 50.2 },
+					}),
+					fp(984, { -- Pang's Stead, Valley of the Four Winds
+						["coord"] = { 84.4, 21 },
+					}),
+					fp(989, { -- Stoneplow, Valley of the Four Winds
+						["coord"] = { 20.2, 58.6 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battles
 					p(706), 	-- Bandicoon
 					p(707), 	-- Bandicoon Kit
@@ -75,6 +89,12 @@ _.Zones =
 						},
 						["qg"] = 66734,	-- Farmer Nishi
 						["isDaily"] = true,
+					}),
+				}),
+				n(-38, {	-- Profession
+					prof(356, { -- Fishing
+						desc(i(94934), "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r"),	-- Tiny Green Carp Pet
+						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -1741,7 +1761,12 @@ _.Zones =
 						})),
 					}),
 				}),
-				n(-2, {	-- Vendors
+				n(-222, {	-- Treasure Hunter
+					o(226956, {	-- Mysterious Fruit Pile
+						i(110505),	-- Mesmerizing Fruit Hat [Not a toy, but should be.]
+					}),
+				}),
+				n(-2, {		-- Vendors
 					n(58713, {	-- Anthea Ironpaw <Master of the Wok>
 						un(1, i(74666)),	-- Recipe: Sauteed Carrots
 						recipe(104301),	-- Sauteed Carrots
@@ -3117,17 +3142,6 @@ _.Zones =
 						recipe(125598),	-- Banquet of the Steamer
 						un(1, i(87241)),	-- Recipe: Great Banquet of the Steamer
 						recipe(125599),	-- Great Banquet of the Steamer
-					}),
-				}),
-				n(-38, {	-- Profession
-					prof(356, { -- Fishing
-						desc(i(94934), "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r"),	-- Tiny Green Carp Pet
-						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
-					}),
-				}),
-				n(-222, {	-- Treasure Hunter
-					o(226956, {	-- Mysterious Fruit Pile
-						i(110505),	-- Mesmerizing Fruit Hat [Not a toy, but should be.]
 					}),
 				}),
 			},

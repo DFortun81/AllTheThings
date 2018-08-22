@@ -6,7 +6,12 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(391, { 	-- Shrine of Two Moons
 			["groups"] = {
-				n(-17, { -- Quests
+				n(-228, {	-- Flight Paths
+					fp(1058, { -- Shrine of Two Moons, Vale of Eternal Blossoms
+						["coord"] = { 62.8, 21.6 },
+					}),
+				}),
+				n(-17, { 	-- Quests
 --[[
 					qh(32352),	-- A Gathering Storm
 					qh(31511),	-- A Witness to History

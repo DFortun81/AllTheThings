@@ -6,7 +6,7 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(379, { 	-- Kun-Lai Summit
 			["groups"] = {
-				n(-4, { -- Achievement
+				n(-4, { 	-- Achievement
 					ach(7284, {	-- Is Another Man's Treasure
 						o(213768, {	-- Hozen Warrior Spear
 							["groups"] = {
@@ -98,6 +98,38 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(-228, {	-- Flight Paths
+					fp(1017, { -- Binan Village, Kun-Lai Summit
+						["coord"] = { 72.4, 94 },
+					}),
+					fp(1019, { -- Eastwind Rest, Kun-Lai Summit
+						["coord"] = { 62.4, 80.6 },
+					}),
+					fp(1023, { -- Kota Basecamp, Kun-Lai Summit
+						["coord"] = { 42.8, 69.6 },
+					}),
+					fp(1022, { -- One Keg, Kun-Lai Summit
+						["coord"] = { 57.6, 59.8 },
+					}),
+					fp(1117, { -- Serpent's Spine, Kun-Lai Summit
+						["coord"] = { 36, 83.6 },
+					}),
+					fp(1024, { -- Shado-Pan Fallback, Kun-Lai Summit
+						["coord"] = { 43.8, 89.6 },
+					}),
+					fp(1018, { -- Temple of the White Tiger, Kun-Lai Summit
+						["coord"] = { 66.2, 50.6 },
+					}),
+					fp(1020, { -- Westwind Rest, Kun-Lai Summit
+						["coord"] = { 54, 84.2 },
+					}),
+					fp(1025, { -- Winter's Blossom, Kun-Lai Summit
+						["coord"] = { 34.6, 59 },
+					}),
+					fp(1021, { -- Zouchin Village, Kun-Lai Summit
+						["coord"] = { 62.4, 30 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					p(724), 	-- Alpine Foxling
 					p(725), 	-- Alpine Foxling Kit
@@ -122,6 +154,12 @@ _.Zones =
 							})
 						},
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
+					}),
+				}),
+				n(-38, {	-- Profession
+					prof(356, { -- Fishing
+						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
+						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -975,6 +1013,14 @@ _.Zones =
 								}),
 							}),
 						}),
+					}),
+				}),
+				n(-222, {	-- Treasure Hunter
+					o(214407, {	-- Mo-Mo's Treasure Chest
+						["groups"] = {
+							q(31868),	-- Mo-Mo's Treasure Chest
+						},
+						["description"] = "Located inside Mo-Mo's Cave at (47.8,73.5)",
 					}),
 				}),
 				n(-2, {		-- Vendors
@@ -2202,20 +2248,7 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\ability_monk_legacyoftheemperor",
 					["description"] = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.|r",
 				}),
-				n(-38, {	-- Profession
-					prof(356, { -- Fishing
-						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
-						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
-					}),
-				}),
-				n(-222, {	-- Treasure Hunter
-					o(214407, {	-- Mo-Mo's Treasure Chest
-						["groups"] = {
-							q(31868),	-- Mo-Mo's Treasure Chest
-						},
-						["description"] = "Located inside Mo-Mo's Cave at (47.8,73.5)",
-					}),
-				}),
+				
 			},
 			["lvl"] = 82,
 			["achievementID"] = 6976,

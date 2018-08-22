@@ -5,7 +5,7 @@ _.ExpansionFeatures =
 {
 	m(123, { -- Wintergrasp
 		["groups"] = {
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
 				["groups"] = {
 					a(ach(1737, {	-- Destruction Derby (Alliance)
 						crit(1),		-- Wintergrasp Catapult
@@ -51,6 +51,14 @@ _.ExpansionFeatures =
 					}),
 					ach(1755),		-- Within Our Grasp
 				},
+			}),
+			n(-228, {	-- Flight Points
+				fp(303, { -- Valiance Landing Camp, Wintergrasp
+					["coord"] = { 72, 31 },
+				}),
+				fp(332, { -- Warsong Camp, Wintergrasp
+					["coord"] = { 21.6, 34.8 },
+				}),
 			}),
 --[[			
 			n(-17, { 	-- Quests

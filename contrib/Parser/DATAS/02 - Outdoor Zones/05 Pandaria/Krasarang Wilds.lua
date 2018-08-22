@@ -6,7 +6,7 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(418, {	-- Krasarang Wilds
 			["groups"] = {
-				n(-4, { -- Achievements
+				n(-4, { 	-- Achievements
 					ach(7284, {	-- Is Another Man's Treasure
 						o(214439, {		-- Barrel of Banana Infused Rum
 							["groups"] = {
@@ -49,6 +49,35 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(-228, {	-- Flight Points
+					fp(992, { -- Cradle of Chi-Ji, Krasarang Wilds
+						["coord"] = { 31.2, 63.2 },
+					}),
+					fp(990, { -- Dawnchaser Retreat, Krasarang Wilds
+						["coord"] = { 29, 50.4 },
+					}),
+					fp(1195, { -- Domination Point, Krasarang Wilds
+						["coord"] = { 9.6, 52.6 },
+					}),
+					fp(1190, { -- Lion's Landing, Krasarang Wilds
+						["coord"] = { 88.4, 34.6 },
+					}),
+					fp(993, { -- Marista, Krasarang Wilds
+						["coord"] = { 52.4, 76.6 },
+					}),
+					fp(991, { -- Sentinel Basecamp, Krasarang Wilds
+						["coord"] = { 25.2, 33.4 },
+					}),
+					fp(988, { -- The Incursion, Krasarang Wilds
+						["coord"] = { 67.6, 32.4 },
+					}),
+					fp(987, { -- Thunder Cleft, Krasarang Wilds
+						["coord"] = { 59.2, 24.6 },
+					}),
+					fp(986, { -- Zhu's Watch, Krasarang Wilds
+						["coord"] = { 76.6, 8.4 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					p(716), 	-- Amethyst Spiderling
 					p(714), 	-- Feverbite Hatchling
@@ -72,6 +101,12 @@ _.Zones =
 					}),
 					q(31954, { 	-- Grand Master Mo'ruk
 						i(89125),	-- Sack of Pet Supplies
+					}),
+				}),
+				n(-38, { 	-- Profession
+					prof(356, { -- Fishing
+						desc(i(94934), "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r"),	-- Tiny Green Carp Pet
+						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -1591,7 +1626,17 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-2, {	-- Vendor
+				n(-222, {	-- Treasure Hunter
+					o(214403, {	-- Stack of Papers
+						["groups"] = {
+							i(87798, {	-- Stack of Papers
+								["questID"] = 31869,
+							}),
+						},
+						["description"] = "Located on top of a hill just north of Marista at (52.1,73.4)",
+					}),
+				}),
+				n(-2, {		-- Vendor
 					na(69059, {	-- Agent Malley <Operation: Shieldwall Quartermaster>
 						i(93231),	-- Grand Commendation of Operation: Shieldwall
 						i(93168),	-- Grand Armored Gryphon Mount
@@ -1704,22 +1749,6 @@ _.Zones =
 						i(93268),	-- Treads of Rejuvenating Mists
 						i(93269),	-- Troll-Toe Tabi
 						i(93253),	-- Woundripper Medallion
-					}),
-				}),
-				n(-38, { -- Profession
-					prof(356, { -- Fishing
-						desc(i(94934), "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r"),	-- Tiny Green Carp Pet
-						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
-					}),
-				}),
-				n(-222, {	-- Treasure Hunter
-					o(214403, {	-- Stack of Papers
-						["groups"] = {
-							i(87798, {	-- Stack of Papers
-								["questID"] = 31869,
-							}),
-						},
-						["description"] = "Located on top of a hill just north of Marista at (52.1,73.4)",
 					}),
 				}),
 			},

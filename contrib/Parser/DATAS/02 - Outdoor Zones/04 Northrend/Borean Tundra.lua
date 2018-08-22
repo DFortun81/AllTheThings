@@ -137,6 +137,9 @@ _.Zones =
 					fp(257, { -- Warsong Hold, Borean Tundra
 						["coord"] = { 40.4, 51.4 },
 					}),
+					fp(226, { -- Transitus Shield, Coldarra
+						["coord"] = { 33, 34.4 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					p(641), 	-- Arctic Hare

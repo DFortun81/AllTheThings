@@ -6,7 +6,7 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(422, {	-- Dread Wastes
 			["groups"] = {
-				n(-4, { -- Achievemeents
+				n(-4, { 	-- Achievemeents
 					ach(7284, { -- Is Another Man's Treasure
 						o(213972, {		-- Blade of the Poisoned Mind
 							["groups"] = {
@@ -68,6 +68,23 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(-228, {	-- Flight Points
+					fp(1070, { -- Klaxxi'vess, Dread Wastes
+						["coord"] = { 55.8, 34.8 },
+					}),
+					fp(1071, { -- Soggy's Gamble, Dread Wastes
+						["coord"] = { 56, 70.2 },
+					}),
+					fp(1090, { -- The Briny Muck, Dread Wastes
+						["coord"] = { 42.6, 55.6 },
+					}),
+					fp(1115, { -- The Lion's Redoubt, Dread Wastes
+						["coord"] = { 12, 32.8 },
+					}),
+					fp(1072, { -- The Sunset Brewgarden, Dread Wastes
+						["coord"] = { 50.2, 12.2 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battles
 					p(732), 	-- Amber Moth
 					p(742), 	-- Clouded Hedgehog
@@ -88,6 +105,12 @@ _.Zones =
 							})
 						},
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
+					}),
+				}),
+				n(-38, { -- Profession
+					prof(356, { -- Fishing
+						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
+						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -1113,12 +1136,6 @@ _.Zones =
 						i(89091),	-- Swarmkeeper's Leggings
 						i(89089),	-- Wind-Reaver Greaves
 						i(89068),	-- Wire of the Wakener
-					}),
-				}),
-				n(-38, { -- Profession
-					prof(356, { -- Fishing
-						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
-						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
 					}),
 				}),
 			},

@@ -74,6 +74,41 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-228, { -- Flight Paths
+					fp(895, { -- Dawn's Blossom, Jade Forest
+						["coord"] = { 47, 46.2 },
+					}),
+					fp(970, { -- Emperor's Omen, Jade Forest
+						["coord"] = { 50.8, 26.8 },
+					}),
+					fp(894, { -- Grookin Hill, Jade Forest
+						["coord"] = { 27.8, 47.8 },
+					}),
+					fp(973, { -- Honeydew Village, Jade Forest
+						["coord"] = { 28, 15.6 },
+					}),
+					fp(968, { -- Jade Temple Grounds, Jade Forest
+						["coord"] = { 54.6, 61.6 },
+					}),
+					fp(966, { -- Paw'Don Village, Jade Forest
+						["coord"] = { 46, 85 },
+					}),
+					fp(972, { -- Pearlfin Village, Jade Forest
+						["coord"] = { 58, 82.4 },
+					}),
+					fp(1080, { -- Serpent's Overlook, Jade Forest
+						["coord"] = { 43, 68.4 },
+					}),
+					fp(969, { -- Sri-La Village, Jade Forest
+						["coord"] = { 55.4, 23.6 },
+					}),
+					fp(967, { -- The Arboretum, Jade Forest
+						["coord"] = { 57, 44 },
+					}),
+					fp(971, { -- Tian Monastery, Jade Forest
+						["coord"] = { 43.6, 24.6 },
+					}),
+				}),
 				n(-25, { -- Pet Battle
 					p(380), 	-- Bucktooth Flapper
 					p(562), 	-- Coral Adder
@@ -2221,6 +2256,26 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(-222, { -- Treasure Hunter
+					o(214339, { -- Chest of Supplies
+						["groups"] = {
+							q(31864),	-- Chest of Supplies
+						},
+						["description"] = "Located near a waterfall on the Murky Bank bordering The Jade Forest and The Valley of Four Winds at (24,53)",
+					}),
+					o(214338, { -- Offering of Remembrance
+						["groups"] = {
+							q(31865),	-- Offering of Remembrance
+						},
+						["description"] = "Located on the Shrine of Rememberance at (46.3,80.7)",
+					}),
+					o(214337, { -- Stash of Gems
+						["groups"] = {
+							q(31866),	-- Stash of Gems
+						},
+						["description"] = "Located in a cave on Windward Isle at (62.4,27.5)",
+					}),
+				}),
 				n(-2, { -- Vendors
 					n(56707, { 		-- Chin <Master of Noodles>
 						recipe(124233),	-- Blanched Needle Mushrooms
@@ -2547,27 +2602,7 @@ _.Zones =
 						i(81686),	-- Faded Forest Axe
 					}),
 				}),
-				n(-222, { -- Treasure Hunter
-					o(214339, { -- Chest of Supplies
-						["groups"] = {
-							q(31864),	-- Chest of Supplies
-						},
-						["description"] = "Located near a waterfall on the Murky Bank bordering The Jade Forest and The Valley of Four Winds at (24,53)",
-					}),
-					o(214338, { -- Offering of Remembrance
-						["groups"] = {
-							q(31865),	-- Offering of Remembrance
-						},
-						["description"] = "Located on the Shrine of Rememberance at (46.3,80.7)",
-					}),
-					o(214337, { -- Stash of Gems
-						["groups"] = {
-							q(31866),	-- Stash of Gems
-						},
-						["description"] = "Located in a cave on Windward Isle at (62.4,27.5)",
-					}),
-				}),
-				n(0, { -- Zone Drops
+				n(0, { 	-- Zone Drops
 					["groups"] = {
 						i(87426, {	-- Deathspite Breastplate
 							["crs"] = {
