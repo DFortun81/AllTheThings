@@ -72,6 +72,23 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-228, {	-- Flight Paths
+					fp(2078, { -- Fort Victory, Nazmir
+						["coord"] = { 62.2, 41.2 },
+					}),
+					fp(1955, { -- Gloom Hollow, Nazmir
+						["coord"] = { 67, 43.6 },
+					}),
+					fp(2161, { -- Redfield's Watch, Nazmir
+						["coord"] = { 50.8, 20.8 },
+					}),
+					fp(1954, { -- Zo'bal Ruins, Nazmir
+						["coord"] = { 40.2, 42.8 },
+					}),
+					fp(1953, { -- Zul'jan, Nazmir
+						["coord"] = { 38.8, 78 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {
 						p(2388),	-- Bloodfeaver Tarantula
