@@ -84,23 +84,83 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Paths
-					fp(2046),	-- Atal'dazar, Zuldazar
-					--fp(2066),	-- Atal'Gral, Zuldazar (Note: This flight path is commented out, but I imagine it may be related to the Alliance's War Campaign.)
-					fp(2076),	-- Atal'Gral, Zuldazar
-					fp(2071),	-- Dreadpearl, Zuldazar
-					fp(2045),	-- Garden of the Loa, Zuldazar
-					fp(2164),	-- Isle of Fangs, Zuldazar
-					fp(1965),	-- Nesingwary's Gameland, Zuldazar
-					fp(1957),	-- Port of Zuldazar, Zuldazar
-					fp(2126),	-- Scaletrader Post, Zuldazar
-					fp(2075),	-- Seeker's Outpost, Zuldazar
-					fp(2027),	-- Temple of the Prophet, Zuldazar
-					fp(2061),	-- The Sliver, Zuldazar
-					fp(2165),	-- Tusk Isle, Zuldazar
-					fp(1966),	-- Warbeast Kraal, Zuldazar
-					fp(2009),	-- Warport Rastari, Zuldazar
-					fp(1974),	-- Xibala, Zuldazar
-					fp(1975),	-- Zeb'ahari, Zuldazar
+					fp(2046, { -- Atal'dazar, Zuldazar
+						["coord"] = { 46.0, 35.8 },
+					}),
+					--[[	Need to figure out where this flight point is, not showing on in game maps
+					fp(2066, { -- Atal'Gral, Zuldazar
+						["coord"] = {  },
+					}),
+					]]--
+					fp(2076, { -- Atal'Gral, Zuldazar
+						["coord"] = { 80.0, 41.4 },
+					}),
+					fp(2147, { -- Castaway Encampment, Zuldazar
+						["coord"] = { 77.6, 54.4 },
+					}),
+					--[[	Need to figure out where this flight point is, not showing on in game maps
+					fp(2071, { -- Dreadpearl, Zuldazar
+						["coord"] = {  },
+					}),
+					]]--
+					fp(2045, { -- Garden of the Loa, Zuldazar
+						["coord"] = { 49.6, 26.2 },
+					}),
+					fp(2164, { -- Isle of Fangs, Zuldazar
+						["coord"] = { 54.4, 87.0 },
+					}),
+					--[[	Need to figure out where these flight points are, not showing on in game maps
+					fp(2153, { -- Mistvine Ledge, Zuldazar
+						["coord"] = {  },
+					}),
+					fp(2148, { -- Mugamba Overlook, Zuldazar
+						["coord"] = {  },
+					}),
+					]]--
+					fp(1965, { -- Nesingwary's Gameland, Zuldazar
+						["coord"] = { 66.2, 17.6 },
+					}),
+					fp(1957, { -- Port of Zandalar, Zuldazar
+						["coord"] = { 52.0, 90.0 },
+					}),
+					fp(2126, { -- Scaletrader Post, Zuldazar
+						["coord"] = { 70.8, 29.6 },
+					}),
+					fp(2075, { -- Seeker's Outpost, Zuldazar
+						["coord"] = { 70.4, 65.2 },
+					}),
+					fp(2027, { -- Temple of the Prophet, Zuldazar
+						["coord"] = { 49.8, 44.6 },
+					}),
+					fp(2061, { -- The Sliver, Zuldazar
+						["coord"] = { 53.0, 19.2 },
+					}),
+					fp(2165, { -- Tusk Isle, Zuldazar
+						["coord"] = { 59.4, 78.0 },
+					}),
+					--[[	Need to figure out where these flight points are, not showing on in game maps
+					fp(2157, { -- Veiled Grotto, Zuldazar
+						["coord"] = {  },
+					}),
+					fp(2145, { -- Verdant Hollow, Zuldazar
+						["coord"] = {  },
+					}),
+					]]--
+					fp(1966, { -- Warbeast Kraal, Zuldazar
+						["coord"] = { 67.2, 43.0 },
+					}),
+					fp(2009, { -- Warport Rastari, Zuldazar
+						["coord"] = { 48.2, 60.2 },
+					}),
+					fp(1974, { -- Xibala, Zuldazar
+						["coord"] = { 44.8, 72.2 },
+					}),
+					fp(2012, { -- Xibala, Zuldazar
+						["coord"] = { 40.6, 71.4 },
+					}),
+					fp(1975, { -- Zeb'ahari, Zuldazar
+						["coord"] = { 77.2, 15.4 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {
