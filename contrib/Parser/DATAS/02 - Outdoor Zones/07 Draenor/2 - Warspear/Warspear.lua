@@ -12,6 +12,11 @@ _.Zones =
 					["creatureID"] = 91483, -- Fen Tao
 					["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
 				}),
+				n(-228, {	-- Flight Paths
+					fp(1408, { -- Warspear, Ashran
+						["coord"] = { 44.2, 34.2 },
+					}),
+				}),
 				n(-17, {	-- Quests
 					q(36707, { -- Warspear Welcome
 						["groups"] = {

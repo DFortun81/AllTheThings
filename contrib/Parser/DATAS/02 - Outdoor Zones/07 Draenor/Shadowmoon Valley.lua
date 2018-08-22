@@ -5,7 +5,42 @@ _.Zones =
 {
 	m(572, { 	-- Draenor
 		m(539, { 	-- Shadowmoon Valley
-			["groups"] = {						
+			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(1569, { -- Akeeta's Hovel, Shadowmoon Valley
+						["coord"] = { 65.6, 17.6 },
+					}),
+					fp(1529, { -- Darktide Roost, Shadowmoon Valley
+						["coord"] = { 59.8, 81.4 },
+					}),
+					fp(1468, { -- Elodor (Alliance), Shadowmoon Valley
+						["coord"] = { 58.6, 31.8 },
+					}),
+					fp(1381, { -- Embaari Village, Shadowmoon Valley
+						["coord"] = { 45.6, 38.8 },
+					}),
+					fp(1384, { -- Exile's Rise, Shadowmoon Valley
+						["coord"] = { 45.6, 25.4 },
+					}),
+					fp(1476, { -- Lunarfall (Alliance), Shadowmoon Valley
+						["coord"] = { 47.6, 49.6 },
+					}),
+					fp(1383, { -- Path of the Light, Shadowmoon Valley
+						["coord"] = { 59.4, 46 },
+					}),
+					fp(1475, { -- Socrethar's Rise, Shadowmoon Valley
+						["coord"] = { 43.8, 77.4 },
+					}),
+					fp(1467, { -- The Draakorium, Shadowmoon Valley
+						["coord"] = { 57, 56.6 },
+					}),
+					fp(1556, { -- Tranquil Court, Shadowmoon Valley
+						["coord"] = { 70.4, 50.4 },
+					}),
+					fp(1382, { -- Twilight Glade, Shadowmoon Valley
+						["coord"] = { 40.6, 55.2 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					p(407), 	-- Forest Spiderling
 					p(1447), 	-- Moonshell Crab
