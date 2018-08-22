@@ -6,6 +6,11 @@ _.Zones =
 	m(113, { 	-- Northrend
 		n(-363, {	-- The Argent Tournament
 			["groups"] = {
+				n(-228, {	-- Flight Point
+					fp(340, { -- Argent Tournament Grounds, Icecrown
+						["coord"] = { 72.6, 22.6 },
+					}),
+				}),
 				n(-2, { -- Vendors
 					n(33602, { -- Anuur <Jewelcrafting Supplies>
 						currency(61, { -- Dalaran Jewelcrafter's Token

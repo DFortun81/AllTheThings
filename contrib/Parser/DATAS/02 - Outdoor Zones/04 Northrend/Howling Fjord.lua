@@ -35,28 +35,56 @@ _.Zones =
 						},
 					},
 				}),
-				ach(2257, {	-- Frostbitten
-					{
-						["criteriaID"] = 9,	-- King Ping [Criteria]
-						["qg"] = 32398,		-- King Ping [NPC]
-						["groups"] = {
-							i(44668),	-- Egg-Warming Blanket
+				n(-4, {		-- Achievements
+					ach(2257, {	-- Frostbitten
+						{
+							["criteriaID"] = 9,	-- King Ping [Criteria]
+							["qg"] = 32398,		-- King Ping [NPC]
+							["groups"] = {
+								i(44668),	-- Egg-Warming Blanket
+							},
 						},
-					},
-					{
-						["criteriaID"] = 7,	-- Perobas the Bloodthirster [Criteria]
-						["qg"] = 32377,		-- Perobas the Bloodthirster [NPC]
-						["groups"] = {
-							i(44669),	-- Worgen-Scored Shackles
+						{
+							["criteriaID"] = 7,	-- Perobas the Bloodthirster [Criteria]
+							["qg"] = 32377,		-- Perobas the Bloodthirster [NPC]
+							["groups"] = {
+								i(44669),	-- Worgen-Scored Shackles
+							},
 						},
-					},
-					{
-						["criteriaID"] = 8,	-- Vigdis the War Maiden [Criteria]
-						["qg"] = 32386,		-- Vigdis the War Maiden [NPC]
-						["groups"] = {
-							i(44670),	-- Soul-Sealed Belt
+						{
+							["criteriaID"] = 8,	-- Vigdis the War Maiden [Criteria]
+							["qg"] = 32386,		-- Vigdis the War Maiden [NPC]
+							["groups"] = {
+								i(44670),	-- Soul-Sealed Belt
+							},
 						},
-					},
+					}),
+				}),
+				n(-228, {	-- Flight Points
+					fp(248, { -- Apothecary Camp, Howling Fjord	
+						["coord"] = { 26, 25 },
+					}),
+					fp(192, { -- Camp Winterhoof, Howling Fjord
+						["coord"] = { 49.4, 11.6 },
+					}),
+					fp(184, { -- Fort Wildervar, Howling Fjord
+						["coord"] = { 60, 16 },
+					}),
+					fp(295, { -- Kamagua, Howling Fjord
+						["coord"] = { 24.6, 57.8 },
+					}),
+					fp(190, { -- New Agamand, Howling Fjord	
+						["coord"] = { 52, 67.4 },
+					}),
+					fp(183, { -- Valgarde Port, Howling Fjord
+						["coord"] = { 59.8, 63.2 },
+					}),
+					fp(191, { -- Vengeance Landing, Howling Fjord
+						["coord"] = { 79, 29.6 },
+					}),
+					fp(185, { -- Westguard Keep, Howling Fjord
+						["coord"] = { 31.2, 44 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					p(646), 	-- Chicken

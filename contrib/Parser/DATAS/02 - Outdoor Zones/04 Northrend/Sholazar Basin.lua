@@ -6,7 +6,6 @@ _.Zones =
 	m(113, { 	-- Northrend
 		m(119, { 	-- Sholazar Basin
 			["groups"] = {
-				ach(952),	-- Mercenary of Sholazar
 				faction(1104, {	-- Frenzyheart Tribe
 					["achievementID"] = 950,	-- Frenzyheart Tribe
 					["groups"] = {
@@ -194,39 +193,40 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(2257, {	-- Frostbitten
-					{
-						["criteriaID"] = 19,	-- Aotona [Criteria]
-						["qg"] = 32481,			-- Aotona [NPC]
-						["groups"] = {
-							i(44691),	-- Aotona's Collar
-						},
-					},
-					{
-						["criteriaID"] = 20,	-- King Krush [Criteria]
-						["qg"] = 32485,			-- King Krush [NPC]
-						["groups"] = {
-							i(44683),	-- King's Eyesocket
-						},
-					},
-					{
-						["criteriaID"] = 1,	-- Loque'nahak [Criteria]
-						["qg"] = 32517,		-- Loque'nahak <Mate of Har'koa> [NPC]
-						["groups"] = {
-							i(44688),	-- Loque'Nahak's Severed Fang [Neck]
-							i(44687),	-- Loque'Nahak's Pelt
-						},
-					},
-				}),
-				n(0, { -- Zone Drop
-					["groups"] = {
-						i(41122, { -- Plans: Reinforced Cobalt Chestpiece
-							["crs"] = {
-								28123, -- Venture Co. Excavator
-								28124, -- Venture Co. Ruffian
+				n(-4, {		-- Achievements
+					ach(2257, {	-- Frostbitten
+						{
+							["criteriaID"] = 19,	-- Aotona [Criteria]
+							["qg"] = 32481,			-- Aotona [NPC]
+							["groups"] = {
+								i(44691),	-- Aotona's Collar
 							},
-						}),
-					},
+						},
+						{
+							["criteriaID"] = 20,	-- King Krush [Criteria]
+							["qg"] = 32485,			-- King Krush [NPC]
+							["groups"] = {
+								i(44683),	-- King's Eyesocket
+							},
+						},
+						{
+							["criteriaID"] = 1,	-- Loque'nahak [Criteria]
+							["qg"] = 32517,		-- Loque'nahak <Mate of Har'koa> [NPC]
+							["groups"] = {
+								i(44688),	-- Loque'Nahak's Severed Fang [Neck]
+								i(44687),	-- Loque'Nahak's Pelt
+							},
+						},
+					}),
+					ach(952),	-- Mercenary of Sholazar
+				}),
+				n(-228, {	-- Flight Points
+					fp(309, { -- Nesingwary Base Camp, Sholazar Basin
+						["coord"] = { 25.2, 58.4 },
+					}),
+					fp(308, { -- River's Heart, Sholazar Basin
+						["coord"] = { 50, 61.4 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					p(649), 	-- Biletoad
@@ -479,6 +479,16 @@ _.Zones =
 						},
 						["classes"] = {3},
 					}),
+				}),
+				n(0, { 		-- Zone Drop
+					["groups"] = {
+						i(41122, { -- Plans: Reinforced Cobalt Chestpiece
+							["crs"] = {
+								28123, -- Venture Co. Excavator
+								28124, -- Venture Co. Ruffian
+							},
+						}),
+					},
 				}),
 			},
 			["lvl"] = 66,	

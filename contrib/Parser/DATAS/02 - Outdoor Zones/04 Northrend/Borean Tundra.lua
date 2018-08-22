@@ -90,28 +90,53 @@ _.Zones =
 						},
 					},
 				}),
-				ach(2257, {	-- Frostbitten
-					{
-						["criteriaID"] = 5,	-- Fumblub Gearwind [Criteria]
-						["qg"] = 32358,		-- Fumblub Gearwind [NPC]
-						["groups"] = {
-							i(44666),	-- Fumblub's Seat Cushion
+				n(-4, {		-- Achievements
+					ach(2257, {	-- Frostbitten
+						{
+							["criteriaID"] = 5,	-- Fumblub Gearwind [Criteria]
+							["qg"] = 32358,		-- Fumblub Gearwind [NPC]
+							["groups"] = {
+								i(44666),	-- Fumblub's Seat Cushion
+							},
 						},
-					},
-					{
-						["criteriaID"] = 6,	-- Icehorn [Criteria]
-						["qg"] = 32361,		-- Icehorn [NPC]
-						["groups"] = {
-							i(44667),	-- Mammoth-Hair Crown
+						{
+							["criteriaID"] = 6,	-- Icehorn [Criteria]
+							["qg"] = 32361,		-- Icehorn [NPC]
+							["groups"] = {
+								i(44667),	-- Mammoth-Hair Crown
+							},
 						},
-					},
-					{
-						["criteriaID"] = 4,	-- Old Crystalbark [Criteria]
-						["qg"] = 32357,		-- Old Crystalbark [NPC]
-						["groups"] = {
-							i(44649),	-- Crystalbark's Toenail
+						{
+							["criteriaID"] = 4,	-- Old Crystalbark [Criteria]
+							["qg"] = 32357,		-- Old Crystalbark [NPC]
+							["groups"] = {
+								i(44649),	-- Crystalbark's Toenail
+							},
 						},
-					},
+					}),
+				}),
+				n(-228, {	-- Flight Paths
+					fp(289, { -- Amber Ledge, Borean Tundra
+						["coord"] = { 45.2, 34.4 },
+					}),
+					fp(259, { -- Bor'gorok Outpost, Borean Tundra
+						["coord"] = { 49.6, 11 },
+					}),
+					fp(246, { -- Fizzcrank Airstrip, Borean Tundra
+						["coord"] = { 56.6, 20 },
+					}),
+					fp(258, { -- Taunka'le Village, Borean Tundra
+						["coord"] = { 77.6, 37.8 },
+					}),
+					fp(296, { -- Unu'pe, Borean Tundra
+						["coord"] = { 78.4, 51.4 },
+					}),
+					fp(245, { -- Valiance Keep, Borean Tundra
+						["coord"] = { 58.8, 68.2 },
+					}),
+					fp(257, { -- Warsong Hold, Borean Tundra
+						["coord"] = { 40.4, 51.4 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					p(641), 	-- Arctic Hare
@@ -2365,7 +2390,7 @@ _.Zones =
 					-- q( 46055),	-- FLAG - March of the Tadpoles Bit 05
 					-- q( 46064),	-- The Ways of the World
 				}),
-				n(-2, { -- Vendors
+				n(-2, { 	-- Vendors
 					n(25206, { -- Ahlurglgr <Clam Vendor>
 						i(34597, { --  Winterfin Clam
 							i(37461),	-- Tidebreaker Trident

@@ -55,28 +55,44 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(2257, {	-- Frostbitten
-					{
-						["criteriaID"] = 2,	-- High Thane Jorfus [Criteria]
-						["qg"] = 32501,		-- High Thane Jorfus [NPC]
-						["groups"] = {
-							i(44695),	-- Corroded Faceguard
+				n(-4, {		-- Achievements
+					ach(2257, {	-- Frostbitten
+						{
+							["criteriaID"] = 2,	-- High Thane Jorfus [Criteria]
+							["qg"] = 32501,		-- High Thane Jorfus [NPC]
+							["groups"] = {
+								i(44695),	-- Corroded Faceguard
+							},
 						},
-					},
-					{
-						["criteriaID"] = 3,	-- Hildana Deathstealer [Criteria]
-						["qg"] = 32495,		-- Hildana Deathstealer [NPC]
-						["groups"] = {
-							i(44697),	-- Val'kyr Vestments
+						{
+							["criteriaID"] = 3,	-- Hildana Deathstealer [Criteria]
+							["qg"] = 32495,		-- Hildana Deathstealer [NPC]
+							["groups"] = {
+								i(44697),	-- Val'kyr Vestments
+							},
 						},
-					},
-					{
-						["criteriaID"] = 23,	-- Putridus the Ancient [Criteria]
-						["qg"] = 32487,			-- Putridus the Ancient [NPC]
-						["groups"] = {
-							i(44696),	-- Giant's Toewrap
+						{
+							["criteriaID"] = 23,	-- Putridus the Ancient [Criteria]
+							["qg"] = 32487,			-- Putridus the Ancient [NPC]
+							["groups"] = {
+								i(44696),	-- Giant's Toewrap
+							},
 						},
-					},
+					}),
+				}),
+				n(-228, {	-- Flight Points
+					fp(335, { -- Crusaders' Pinnacle, Icecrown
+						["coord"] = { 79.4, 72.2 },
+					}),
+					fp(325, { -- Death's Rise, Icecrown
+						["coord"] = { 19.4, 47.8 },
+					}),
+					fp(334, { -- The Argent Vanguard, Icecrown
+						["coord"] = { 87.8, 78 },
+					}),
+					fp(333, { -- The Shadow Vault, Icecrown
+						["coord"] = { 43.6, 24.4 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battles
 					p(641),		-- Arctic Hare
@@ -927,7 +943,7 @@ _.Zones =
 						i(43846),
 					}),
 				}),	
-				n(0, {	-- Zone Drops
+				n(0, {		-- Zone Drops
 					n(32290, {	-- Cult Alchemist <Cult of the Damned>
 						{
 							["itemID"] = 37330,		-- Formula: Enchant Cloak - Superior Nature Resistance

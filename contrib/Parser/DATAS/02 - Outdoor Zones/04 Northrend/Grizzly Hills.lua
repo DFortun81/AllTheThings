@@ -6,38 +6,44 @@ _.Zones =
 	m(113, { 	-- Northrend
 		m(116, {	-- Grizzly Hills
 			["groups"] = {
-				ach(2257, {	-- Frostbitten
-					{
-						["criteriaID"] = 13,	-- Grocklar [Criteria]
-						["qg"] = 32422,			-- Grocklar [NPC]
-						["groups"] = {
-							i(44675),	-- Rock-Giant's Pinky Cover
-						},
-					},
-					{
-						["criteriaID"] = 14,	-- Seething Hate [Criteria]
-						["qg"] = 32429,			-- Seething Hate [NPC]
-						["groups"] = {
-							i(44674),	-- Ichor-Stained Wraps
-						},
-					},
-					{
-						["criteriaID"] = 15,	-- Syreian the Bonecarver [Criteria]
-						["qg"] = 32438,			-- Syreian the Bonecarver [NPC]
-						["groups"] = {
-							i(44676),	-- Syreian's Leggings
-						},
-					},
-				}),
-				n(0, { -- Zone Drop
-					["groups"] = {
-						i(41123, { -- Plans: Reinforced Cobalt Helm
-							["crs"] = {
-								26270, -- Iron Rune-Shaper
-								26268, -- Rune Reaver
+				n(-4, {		-- Achievements
+					ach(2257, {	-- Frostbitten
+						{
+							["criteriaID"] = 13,	-- Grocklar [Criteria]
+							["qg"] = 32422,			-- Grocklar [NPC]
+							["groups"] = {
+								i(44675),	-- Rock-Giant's Pinky Cover
 							},
-						}),
-					},
+						},
+						{
+							["criteriaID"] = 14,	-- Seething Hate [Criteria]
+							["qg"] = 32429,			-- Seething Hate [NPC]
+							["groups"] = {
+								i(44674),	-- Ichor-Stained Wraps
+							},
+						},
+						{
+							["criteriaID"] = 15,	-- Syreian the Bonecarver [Criteria]
+							["qg"] = 32438,			-- Syreian the Bonecarver [NPC]
+							["groups"] = {
+								i(44676),	-- Syreian's Leggings
+							},
+						},
+					}),
+				}),
+				n(-228, {	-- Flight Points
+					fp(253, { -- Amberpine Lodge, Grizzly Hills
+						["coord"] = { 31.2, 59.2 },
+					}),
+					fp(249, { -- Camp Oneqwah, Grizzly Hills
+						["coord"] = { 64.8, 46.8 },
+					}),
+					fp(250, { -- Conquest Hold, Grizzly Hills
+						["coord"] = { 22, 64.4 },
+					}),
+					fp(255, { -- Westfall Brigade, Grizzly Hills
+						["coord"] = { 59.8, 26.6 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					p(647), 	-- Grizzly Squirrel
@@ -949,6 +955,16 @@ _.Zones =
 					desc(n(91632, {	-- Remington Brode <Traveling Lumberjack>
 						i(122236)
 					}), "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\""),
+				}),
+				n(0, { 		-- Zone Drop
+					["groups"] = {
+						i(41123, { -- Plans: Reinforced Cobalt Helm
+							["crs"] = {
+								26270, -- Iron Rune-Shaper
+								26268, -- Rune Reaver
+							},
+						}),
+					},
 				}),
 			},
 			["lvl"] = 63,	

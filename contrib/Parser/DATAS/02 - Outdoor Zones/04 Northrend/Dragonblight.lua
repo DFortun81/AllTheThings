@@ -60,28 +60,56 @@ _.Zones =
 				}),
 				-- The Taunka 1064
 				-- The Hand of Vengeance 1067
-				ach(2257, {	-- Frostbitten
-					{
-						["criteriaID"] = 11,	-- Crazed Indu'le Survivor [Criteria]
-						["qg"] = 32409,			-- Crazed Indu'le Survivor [NPC]
-						["groups"] = {
-							i(44672),	-- Seal-Fur Spaulders
+				n(-4, {		-- Achievements
+					ach(2257, {	-- Frostbitten
+						{
+							["criteriaID"] = 11,	-- Crazed Indu'le Survivor [Criteria]
+							["qg"] = 32409,			-- Crazed Indu'le Survivor [NPC]
+							["groups"] = {
+								i(44672),	-- Seal-Fur Spaulders
+							},
 						},
-					},
-					{
-						["criteriaID"] = 12,	-- Scarlet Highlord Daion [Criteria]
-						["qg"] = 32417,			-- Scarlet Highlord Daion [NPC]
-						["groups"] = {
-							i(44671),	-- Highlord's Padded Legguards
+						{
+							["criteriaID"] = 12,	-- Scarlet Highlord Daion [Criteria]
+							["qg"] = 32417,			-- Scarlet Highlord Daion [NPC]
+							["groups"] = {
+								i(44671),	-- Highlord's Padded Legguards
+							},
 						},
-					},
-					{
-						["criteriaID"] = 10,	-- Tukemuth [Criteria]
-						["qg"] = 32400,			-- Tukemuth [NPC]
-						["groups"] = {
-							i(44673),	-- Mammoth-Riding Boots
+						{
+							["criteriaID"] = 10,	-- Tukemuth [Criteria]
+							["qg"] = 32400,			-- Tukemuth [NPC]
+							["groups"] = {
+								i(44673),	-- Mammoth-Riding Boots
+							},
 						},
-					},
+					}),
+				}),
+				n(-228, {	-- Flight Points
+					fp(256, { -- Agmar's Hammer, Dragonblight
+						["coord"] = { 37.4, 45.6 },
+					}),
+					fp(251, { -- Fordragon Hold, Dragonblight
+						["coord"] = { 39.4, 25.8 },
+					}),
+					fp(260, { -- Kor'kron Vanguard, Dragonblight
+						["coord"] = { 43.8, 16.8 },
+					}),
+					fp(294, { -- Moa'ki, Dragonblight
+						["coord"] = { 48.4, 74.4 },
+					}),
+					fp(247, { -- Stars' Rest, Dragonblight
+						["coord"] = { 29.2, 55.4 },
+					}),
+					fp(254, { -- Venomspite, Dragonblight
+						["coord"] = { 76.4, 62.2 },
+					}),
+					fp(244, { -- Wintergarde Keep, Dragonblight
+						["coord"] = { 77, 49.8 },
+					}),
+					fp(252, { -- Wyrmrest Temple, Dragonblight
+						["coord"] = { 60.2, 51.4 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					p(641), 	-- Arctic Hare
@@ -1911,7 +1939,7 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
 				}),
-				n(0, { -- Zone Drop
+				n(0, { 		-- Zone Drop
 					i(50406, { -- Formula: Enchant Gloves - Angler
 						["crs"] = {
 							26343, -- Indu'le Fisherman

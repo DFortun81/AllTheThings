@@ -5,7 +5,15 @@ _.Zones =
 {
 	m(113, { 	-- Northrend
 		m(127, {	-- Crystalsong Forest
-			["groups"] = {				
+			["groups"] = {	
+				n(-228, {	-- Flight Points
+					fp(337, { -- Sunreaver's Command, Crystalsong Forest
+						["coord"] = { 78.4, 50.2 },
+					}),
+					fp(336, { -- Windrunner's Overlook, Crystalsong Forest
+						["coord"] = { 72, 80.8 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					p(385), 	-- Mouse
 					p(378), 	-- Rabbit

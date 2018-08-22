@@ -144,22 +144,47 @@ _.Zones =
 						},
 					},
 				}),
-				ach(2257, {	-- Frostbitten
-					{
-						["criteriaID"] = 22,	-- Dirkee [Criteria]
-						["qg"] = 32500,			-- Dirkee [NPC]
-						["groups"] = {
-							i(44708),	-- Dirkee's Superstructure
-							i(44681),	-- Titanium Brain-Gear
+				n(-4, {		-- Achievements
+					ach(2257, {	-- Frostbitten
+						{
+							["criteriaID"] = 22,	-- Dirkee [Criteria]
+							["qg"] = 32500,			-- Dirkee [NPC]
+							["groups"] = {
+								i(44708),	-- Dirkee's Superstructure
+								i(44681),	-- Titanium Brain-Gear
+							},
 						},
-					},
-					{
-						["criteriaID"] = 21,	-- Vyragosa [Criteria]
-						["qg"] = 32630,			-- Vyragosa [NPC]
-						["groups"] = {
-							i(44732),	-- Azure Dragonleather Helm
+						{
+							["criteriaID"] = 21,	-- Vyragosa [Criteria]
+							["qg"] = 32630,			-- Vyragosa [NPC]
+							["groups"] = {
+								i(44732),	-- Azure Dragonleather Helm
+							},
 						},
-					},
+					}),
+				}),
+				n(-228, {	-- Flight Paths
+					fp(327, { -- Bouldercrag's Refuge, The Storm Peaks
+						["coord"] = { 30.6, 36.4 },
+					}),
+					fp(324, { -- Camp Tunka'lo, The Storm Peaks
+						["coord"] = { 65.4, 50.6 },
+					}),
+					fp(322, { -- Dun Niffelem, The Storm Peaks
+						["coord"] = { 62.6, 60.8 },
+					}),
+					fp(321, { -- Frosthold, The Storm Peaks
+						["coord"] = { 29.4, 74.2 },
+					}),
+					fp(323, { -- Grom'arsh Crash-Site, The Storm Peaks
+						["coord"] = { 36.2, 49.2 },
+					}),
+					fp(320, { -- K3, The Storm Peaks
+						["coord"] = { 40.6, 84.6 },
+					}),
+					fp(326, { -- Ulduar, The Storm Peaks
+						["coord"] = { 44.4, 28.2 },
+					}),
 				}),
 				n(-25, { 	-- Pet Battle
 					p(558), 	-- Arctic Fox Kit
