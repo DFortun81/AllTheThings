@@ -6,70 +6,6 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(641, {	-- Val'sharah
 			["groups"] = {
-				--[[
-				-- REMOVED FROM THE GAME, LEFT IN A COMMENT SO THAT IF THEY ADD IT BACK, WE HAVE THE INFO ALREADY
-				ach(11139, {	-- Field Medic! 
-					["groups"] = {
-						title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-							["groups"] = {
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 3, 		-- Bloody Plea (Criteria)
-									["itemID"] = 139527,		-- Bloody Plea
-									--["questID"] = 42308,		-- Bloody Plea (Quest)
-									["description"] = "Furbolgs in southern Val'sharah",
-									["qgs"] = {93577, 91288}
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 5, 		-- Bloody Request (Criteria)
-									["itemID"] = 139528,		-- Bloody Request
-									--["questID"] = 42309,		-- Bloody Request (Quest)
-									["description"] = "Grizzleweald (68, 73) in Val'sharah",
-									["qgs"] = {109045}
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 10, 		-- Fevered Note (Criteria)
-									["itemID"] = 139526,		-- Fevered Note
-									--["questID"] = 42303,		-- Fevered Note (Quest)
-									["description"] = "Southern Val'sharah",
-									["qgs"] = {108675}
-								}
-							}
-						})
-					},
-				}),
-				]]--
-				n(-25, { 	-- Pet Battles
-					p(1738), 	-- Auburn Ringtail
-					p(398), 	-- Black Rat
-					p(380), 	-- Bucktooth Flapper
-					p(393), 	-- Cockroach
-					p(396), 	-- Dusk Spiderling
-					p(479), 	-- Elfin Rabbit
-					p(1913), 	-- Gleamhoof Fawn
-					p(1734), 	-- Shimmering Aquafly
-					p(397), 	-- Skunk
-					p(1736), 	-- Slithering Brownsnake
-					p(1739), 	-- Spring Strider
-					p(379), 	-- Squirrel
-					p(1735), 	-- Terror Larva
-					p(1737), 	-- Vale Flitter
-					n(115740, {	-- Orphaned Sharptalon
-						["groups"] = {
-							p(1976), 	-- Sharptalon Hatchling
-							q(45007, { -- Sharptalon Bonding
-								i(142496), -- Dirty Spoon
-							}),
-							q(45019, { -- Sharptalon Reunion
-								i(137580), -- Viridian Sharptalon
-							}),
-						},
-						["description"] = "1. Buy Dried Bilberries from Fialla Sweetberry in Dalaran.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling|r",
-					}),	
-				}),
 				n(-169, { 	-- Emissary Quess
 					q(42170, { -- The Dreamweavers
 						["groups"] = {
@@ -614,6 +550,51 @@ _.Zones =
 							["repeatable"] = true,
 						}),
 					}),
+				}),
+				n(-228, {	-- Flight Paths
+					fp(1713, { -- Bradensbrook, Val'sharah
+						["coord"] = { 42.2, 58.4 },
+					}),
+					fp(1766, { -- Garden of the Moon, Val'sharah
+						["coord"] = { 56.6, 57.8 },
+					}),
+					fp(1885, { -- Gloaming Reef, Val'sharah
+						["coord"] = { 25.8, 66.4 },
+					}),
+					fp(1673, { -- Lorlathil, Val'sharah
+						["coord"] = { 55, 72.4 },
+					}),
+					fp(1764, { -- Starsong Refuge, Val'sharah
+						["coord"] = { 69, 50.8 },
+					}),
+				}),
+				n(-25, { 	-- Pet Battles
+					p(1738), 	-- Auburn Ringtail
+					p(398), 	-- Black Rat
+					p(380), 	-- Bucktooth Flapper
+					p(393), 	-- Cockroach
+					p(396), 	-- Dusk Spiderling
+					p(479), 	-- Elfin Rabbit
+					p(1913), 	-- Gleamhoof Fawn
+					p(1734), 	-- Shimmering Aquafly
+					p(397), 	-- Skunk
+					p(1736), 	-- Slithering Brownsnake
+					p(1739), 	-- Spring Strider
+					p(379), 	-- Squirrel
+					p(1735), 	-- Terror Larva
+					p(1737), 	-- Vale Flitter
+					n(115740, {	-- Orphaned Sharptalon
+						["groups"] = {
+							p(1976), 	-- Sharptalon Hatchling
+							q(45007, { -- Sharptalon Bonding
+								i(142496), -- Dirty Spoon
+							}),
+							q(45019, { -- Sharptalon Reunion
+								i(137580), -- Viridian Sharptalon
+							}),
+						},
+						["description"] = "1. Buy Dried Bilberries from Fialla Sweetberry in Dalaran.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling|r",
+					}),	
 				}),
 				n(-38, { 	-- Profession
 					n(-184, { -- Herbalism
@@ -1778,6 +1759,45 @@ _.Zones =
 						95138,	-- Wormtalon Witch
 						97504,	-- Wraithtalon
 						95319,	-- Xandris the Dishonored
+					},
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-4, {	-- Achievements
+							un(2, ach(11139, {	-- Field Medic! 
+								["groups"] = {
+									un(39, title(340, {	-- TITLE: Field Medic!
+										["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
+										["groups"] = {
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 3, 		-- Bloody Plea (Criteria)
+												["itemID"] = 139527,		-- Bloody Plea
+												--["questID"] = 42308,		-- Bloody Plea (Quest)
+												["description"] = "Furbolgs in southern Val'sharah",
+												["qgs"] = {93577, 91288}
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 5, 		-- Bloody Request (Criteria)
+												["itemID"] = 139528,		-- Bloody Request
+												--["questID"] = 42309,		-- Bloody Request (Quest)
+												["description"] = "Grizzleweald (68, 73) in Val'sharah",
+												["qgs"] = {109045}
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 10, 		-- Fevered Note (Criteria)
+												["itemID"] = 139526,		-- Fevered Note
+												--["questID"] = 42303,		-- Fevered Note (Quest)
+												["description"] = "Southern Val'sharah",
+												["qgs"] = {108675}
+											}
+										},
+									})),
+								},
+							})),
+						}),
 					},
 				}),
 			},

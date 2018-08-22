@@ -6,76 +6,6 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(630, {	-- Azsuna
 			["groups"] = {
-				--[[
-				-- REMOVED FROM THE GAME, LEFT IN A COMMENT SO THAT IF THEY ADD IT BACK, WE HAVE THE INFO ALREADY
-				ach(11139, {	-- Field Medic!
-					["groups"] = {
-						title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-							["groups"] = {
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 2, 		-- Bloody Note (Criteria)
-									["itemID"] = 139522,		-- Bloody Note (Item)
-									--["questID"] = 42255,		-- Bloody Note (Quest)
-									["description"] = "Pirates in southern-east Azsuna.",
-									["qgs"] = {108133, 108139, 108153, 108146}
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 11, 		-- Fevered Plea (Criteria)
-									["itemID"] = 139520,		-- Fevered Plea (Item)
-									--["questID"] = 42250,		-- Fevered Plea (Quest)
-									["description"] = "Murlocs at the southern tip in Azsuna.",
-									["qgs"] = {111598, 111630, 111586 }
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 15, 		-- Singed Note (Criteria)
-									["itemID"] = 139521,		-- Singed Note (Item)
-									--["questID"] = 42245,		-- Singed Note (Quest)
-									["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy.",
-									["qgs"] = {88101, 88099, 108146}
-								},
-							}
-						})
-					},
-				}),
-				]]--
-				n(-25, { 	-- Pet Battle
-					p(1708), 	-- Albatross Chick
-					p(706), 	-- Bandicoon
-					p(1914), 	-- Coastal Sandpiper
-					p(396), 	-- Dusk Spiderling
-					p(1774), 	-- Eldritch Manafiend
-					p(1773), 	-- Erudite Manafiend
-					p(1731), 	-- Felspider
-					p(1709), 	-- Fledgling Kingfeather
-					p(1710), 	-- Fledgling Oliveback
-					p(478), 	-- Forest Moth
-					p(464), 	-- Grey Moth
-					p(647), 	-- Grizzly Squirrel
-					p(699), 	-- Jumping Spider
-					p(1728),	-- Juvenile Scuttleback
-					p(1583), 	-- Kelp Scuttler
-					p(1729), 	-- Olivetail Hare
-					p(743), 	-- Rapana Whelk
-					p(1587), 	-- Royal Moth
-					p(1736), 	-- Slithering Brownscale
-					p(1935), 	-- Squirky
-					n(115741, {	-- Orphaned Bloodgazer
-						["groups"] = {
-							p(1977),  	-- Bloodgazer Hatchling
-							q(45008, { -- Bloodgazer Bonding
-								i(142494), -- Purple Blossom
-							}),
-							q(45020, { -- Bloodgazer Reunion
-								i(137577), -- Predatory Bloodgazer
-							}),
-						},
-						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling|r",
-					}),	
-				}),
 				n(-169, { 	-- Emissary Quests
 					q(42420, { -- Court of Farondis
 						["groups"] = {
@@ -1154,6 +1084,247 @@ _.Zones =
 								})),
 							},
 							["repeatable"] = true,
+						}),
+					}),
+				}),
+				n(-228, {	-- Flight Paths
+					fp(1613, { -- Azurewing Repose, Azsuna
+						["coord"] = { 48.4, 28 },
+					}),
+					fp(1615, { -- Challiane's Terrace, Azsuna
+						["coord"] = { 40.8, 9 },
+					}),
+					fp(1859, { -- Felblaze Ingress, Azsuna
+						["coord"] = { 63.8, 28.4 },
+					}),
+					fp(1861, { -- Illidari Perch, Azsuna
+						["coord"] = { 31.8, 46.2 },
+					}),
+					fp(1622, { -- Illidari Stand, Azsuna
+						["coord"] = { 44.6, 43.8 },
+					}),
+					fp(1633, { -- Shackle's Den, Azsuna
+						["coord"] = { 56.2, 59 },
+					}),
+					fp(1837, { -- Wardens' Redoubt, Azsuna
+						["coord"] = { 48.2, 73 },
+					}),
+					fp(1860, { -- Watchers' Aerie, Azsuna
+						["coord"] = { 51.8, 82.2 },
+					}),
+				}),
+				n(-25, { 	-- Pet Battle
+					p(1708), 	-- Albatross Chick
+					p(706), 	-- Bandicoon
+					p(1914), 	-- Coastal Sandpiper
+					p(396), 	-- Dusk Spiderling
+					p(1774), 	-- Eldritch Manafiend
+					p(1773), 	-- Erudite Manafiend
+					p(1731), 	-- Felspider
+					p(1709), 	-- Fledgling Kingfeather
+					p(1710), 	-- Fledgling Oliveback
+					p(478), 	-- Forest Moth
+					p(464), 	-- Grey Moth
+					p(647), 	-- Grizzly Squirrel
+					p(699), 	-- Jumping Spider
+					p(1728),	-- Juvenile Scuttleback
+					p(1583), 	-- Kelp Scuttler
+					p(1729), 	-- Olivetail Hare
+					p(743), 	-- Rapana Whelk
+					p(1587), 	-- Royal Moth
+					p(1736), 	-- Slithering Brownscale
+					p(1935), 	-- Squirky
+					n(115741, {	-- Orphaned Bloodgazer
+						["groups"] = {
+							p(1977),  	-- Bloodgazer Hatchling
+							q(45008, { -- Bloodgazer Bonding
+								i(142494), -- Purple Blossom
+							}),
+							q(45020, { -- Bloodgazer Reunion
+								i(137577), -- Predatory Bloodgazer
+							}),
+						},
+						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling|r",
+					}),	
+				}),
+				n(-38, { 	-- Profession
+					prof(356, { -- Fishing
+						n(-100001, { 	-- Artifact
+							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+							["lvl"] = 110,
+							["groups"] = {
+								{
+									["itemID"] = 133887,	-- Luminous Pearl (Item)
+									["questID"] = 40960,	-- Luminous Pearl (Quest)
+								}
+							},
+						}),
+						ach(10596, {	-- Bigger Fish to Fry
+							n(-218, {		-- Coastal
+								i(133722, {		-- Axefish Lure
+									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 133740,		-- Axefish (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 139667,		-- Axefish (Item)
+										},
+									},
+								}),
+								i(133724, {		-- Decayed Whale Blubber
+									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
+									["groups"] = {
+										i(133795),	-- Ravenous Fly
+									}
+								}),
+								i(133721, {		-- Message in a Bottle
+									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+									["groups"] = {
+										i(133722)		-- Axefish Lure
+									},
+								}),
+								i(133795, {		-- Ravenous Fly
+									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
+										},
+									},
+								}),
+								i(133723, {		-- Stunned, Angry Shark
+									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
+									["groups"] = {
+										n(102359, {		-- Landlocked Shark
+											["description"] = "Drops 7-9 Seabottom Squid when killed.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 133741,		-- Seabottom Squid (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 139668,		-- Seabottom Squid (Item)
+												},
+											},
+										})
+									},
+								}),
+							}),
+							i(133702, {		-- Aromatic Murloc Slime
+								["description"] = "This item will allow you to catch the Rare fish Leyshimmer Blenny in Azsuna.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 8,			-- Leyshimmer Blenny (Criteria)
+										["itemID"] = 133725,		-- Leyshimmer Blenny (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 8,			-- Leyshimmer Blenny (Criteria)
+										["itemID"] = 139652,		-- Leyshimmer Blenny (Item)
+									},
+								},
+							}),
+							i(133703, {		-- Pearlescent Conch
+								["description"] = "This item will allow you to catch the Rare fish Nar'thalas Hermit in Azsuna.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
+										["itemID"] = 133726,		-- Nar'thalas Hermit (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
+										["itemID"] = 139653,		-- Nar'thalas Hermit (Item)
+									},
+								},
+							}),
+							i(133704, {		-- Rusty Queenfish Brooch
+								["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
+								["groups"] = {
+									spell(201807, { -- Rusty Queenfish Brooch (Buff)
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
+											["itemID"] = 133727,		-- Ghostly Queenfish (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
+											["itemID"] = 139654,		-- Ghostly Queenfish (Item)
+										},
+									}),
+								},
+							}),
+							i(133701, {		-- Skrog Toenail
+								["description"] = "You receive the buff Skrog Toenail; on expiration of this buff, a Murloc mob is summoned. When killed, this mob will drop Aromatic Murloc Slime.",
+								["groups"] = {
+									n(102338, {		-- Salteye Skrog-Hunter
+										dr(93, i(133702)),	-- Aromatic Murloc Slime
+									}),
+								},
+							}),
+						}),
+						ach(11725, { 	-- Fisherfriend of the Isles
+							faction(2097, {	-- Ilyssia of the Waters
+								["groups"] = {
+									i(146848, {		-- Fragmented Enchantment
+										i(147308), 	-- Enchanted Bobber
+										i(152555), 	-- Ghost Shark
+										i(133703, {		-- Pearlescent Conch
+											["description"] = "This item will allow you to catch the Rare fish Nar'thalas Hermit in Azsuna.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
+													["itemID"] = 133726,		-- Nar'thalas Hermit (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
+													["itemID"] = 139653,		-- Nar'thalas Hermit (Item)
+												},
+											},
+										}),
+										i(133704, {		-- Rusty Queenfish Brooch
+											["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
+											["groups"] = {
+												spell(201807, { -- Rusty Queenfish Brooch (Buff)
+													{
+														["achievementID"] = 10596,	-- Bigger Fish to Fry
+														["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
+														["itemID"] = 133727,		-- Ghostly Queenfish (Item)
+													},
+													{
+														["achievementID"] = 10596,	-- Bigger Fish to Fry
+														["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
+														["itemID"] = 139654,		-- Ghostly Queenfish (Item)
+													},
+												}),
+											},
+										}),
+										i(133701),		-- Skrog Toenail
+									}),
+								},
+								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF43.2, 40.6|r north of Illidari Stand.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								["requireSkill"] = 356,
+								["creatureID"] = 120266
+							}),
 						}),
 					}),
 				}),
@@ -2360,196 +2531,6 @@ _.Zones =
 						--i(139556), 				-- Hunter Legendary Appearance
 					}),
 				}),
-				n(-40, {    -- Legacy
-					["groups"] = {
-						n(-17, {    -- Quests
-							n(-193, { -- First Aid
-								un(40, q(42255)), -- Bloody Note
-							}),
-						}),
-					},
-				}),
-				n(-38, { 	-- Profession
-					prof(356, { -- Fishing
-						n(-100001, { 	-- Artifact
-							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-							["lvl"] = 110,
-							["groups"] = {
-								{
-									["itemID"] = 133887,	-- Luminous Pearl (Item)
-									["questID"] = 40960,	-- Luminous Pearl (Quest)
-								}
-							},
-						}),
-						ach(10596, {	-- Bigger Fish to Fry
-							n(-218, {		-- Coastal
-								i(133722, {		-- Axefish Lure
-									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["groups"] = {
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish (Criteria)
-											["itemID"] = 133740,		-- Axefish (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish (Criteria)
-											["itemID"] = 139667,		-- Axefish (Item)
-										},
-									},
-								}),
-								i(133724, {		-- Decayed Whale Blubber
-									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["groups"] = {
-										i(133795),	-- Ravenous Fly
-									}
-								}),
-								i(133721, {		-- Message in a Bottle
-									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["groups"] = {
-										i(133722)		-- Axefish Lure
-									},
-								}),
-								i(133795, {		-- Ravenous Fly
-									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["groups"] = {
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
-										},
-									},
-								}),
-								i(133723, {		-- Stunned, Angry Shark
-									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["groups"] = {
-										n(102359, {		-- Landlocked Shark
-											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["groups"] = {
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-													["itemID"] = 133741,		-- Seabottom Squid (Item)
-												},
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-													["itemID"] = 139668,		-- Seabottom Squid (Item)
-												},
-											},
-										})
-									},
-								}),
-							}),
-							i(133702, {		-- Aromatic Murloc Slime
-								["description"] = "This item will allow you to catch the Rare fish Leyshimmer Blenny in Azsuna.",
-								["groups"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 8,			-- Leyshimmer Blenny (Criteria)
-										["itemID"] = 133725,		-- Leyshimmer Blenny (Item)
-									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 8,			-- Leyshimmer Blenny (Criteria)
-										["itemID"] = 139652,		-- Leyshimmer Blenny (Item)
-									},
-								},
-							}),
-							i(133703, {		-- Pearlescent Conch
-								["description"] = "This item will allow you to catch the Rare fish Nar'thalas Hermit in Azsuna.",
-								["groups"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
-										["itemID"] = 133726,		-- Nar'thalas Hermit (Item)
-									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
-										["itemID"] = 139653,		-- Nar'thalas Hermit (Item)
-									},
-								},
-							}),
-							i(133704, {		-- Rusty Queenfish Brooch
-								["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
-								["groups"] = {
-									spell(201807, { -- Rusty Queenfish Brooch (Buff)
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
-											["itemID"] = 133727,		-- Ghostly Queenfish (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
-											["itemID"] = 139654,		-- Ghostly Queenfish (Item)
-										},
-									}),
-								},
-							}),
-							i(133701, {		-- Skrog Toenail
-								["description"] = "You receive the buff Skrog Toenail; on expiration of this buff, a Murloc mob is summoned. When killed, this mob will drop Aromatic Murloc Slime.",
-								["groups"] = {
-									n(102338, {		-- Salteye Skrog-Hunter
-										dr(93, i(133702)),	-- Aromatic Murloc Slime
-									}),
-								},
-							}),
-						}),
-						ach(11725, { 	-- Fisherfriend of the Isles
-							faction(2097, {	-- Ilyssia of the Waters
-								["groups"] = {
-									i(146848, {		-- Fragmented Enchantment
-										i(147308), 	-- Enchanted Bobber
-										i(152555), 	-- Ghost Shark
-										i(133703, {		-- Pearlescent Conch
-											["description"] = "This item will allow you to catch the Rare fish Nar'thalas Hermit in Azsuna.",
-											["groups"] = {
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
-													["itemID"] = 133726,		-- Nar'thalas Hermit (Item)
-												},
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
-													["itemID"] = 139653,		-- Nar'thalas Hermit (Item)
-												},
-											},
-										}),
-										i(133704, {		-- Rusty Queenfish Brooch
-											["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
-											["groups"] = {
-												spell(201807, { -- Rusty Queenfish Brooch (Buff)
-													{
-														["achievementID"] = 10596,	-- Bigger Fish to Fry
-														["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
-														["itemID"] = 133727,		-- Ghostly Queenfish (Item)
-													},
-													{
-														["achievementID"] = 10596,	-- Bigger Fish to Fry
-														["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
-														["itemID"] = 139654,		-- Ghostly Queenfish (Item)
-													},
-												}),
-											},
-										}),
-										i(133701),		-- Skrog Toenail
-									}),
-								},
-								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF43.2, 40.6|r north of Illidari Stand.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requireSkill"] = 356,
-								["creatureID"] = 120266
-							}),
-						}),
-					}),
-				}),
 				n(-34, { 	-- World Quests
 					n(-322, { -- Cloak
 						i(134334), -- Disgraced Court Cloak
@@ -2661,7 +2642,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 					}),			
 				}),	
-				n(0, { -- Zone Drops
+				n(0, { 		-- Zone Drops
 					["groups"] = {
 						i(121015, { -- Academy Faculty Pin
 							["groups"] = {
@@ -3011,6 +2992,50 @@ _.Zones =
 						110102,	-- Withered Ravager
 						89801,	-- Withered Scavenger
 						121039,	-- Wrathguard Harbinger
+					},
+				}),
+				n(-40, {    -- Legacy
+					["groups"] = {
+						n(-4, {		-- Achievements
+							un(2, ach(11139, {	-- Field Medic!
+								["groups"] = {
+									un(39, title(340, {	-- TITLE: Field Medic!
+										["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
+										["groups"] = {
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 2, 		-- Bloody Note (Criteria)
+												["itemID"] = 139522,		-- Bloody Note (Item)
+												--["questID"] = 42255,		-- Bloody Note (Quest)
+												["description"] = "Pirates in southern-east Azsuna.",
+												["qgs"] = {108133, 108139, 108153, 108146}
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 11, 		-- Fevered Plea (Criteria)
+												["itemID"] = 139520,		-- Fevered Plea (Item)
+												--["questID"] = 42250,		-- Fevered Plea (Quest)
+												["description"] = "Murlocs at the southern tip in Azsuna.",
+												["qgs"] = {111598, 111630, 111586 }
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 15, 		-- Singed Note (Criteria)
+												["itemID"] = 139521,		-- Singed Note (Item)
+												--["questID"] = 42245,		-- Singed Note (Quest)
+												["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy.",
+												["qgs"] = {88101, 88099, 108146}
+											},
+										}
+									})),
+								},
+							})),
+						}),
+						n(-17, {    -- Quests
+							n(-193, { -- First Aid
+								un(40, q(42255)), -- Bloody Note
+							}),
+						}),
 					},
 				}),
 			},

@@ -6,75 +6,7 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
 			["groups"] = {
-				--[[
-				-- REMOVED FROM THE GAME, LEFT IN A COMMENT SO THAT IF THEY ADD IT BACK, WE HAVE THE INFO ALREADY
-				ach(11139, {	-- Field Medic!
-					["groups"] = {
-						title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-							["groups"] = {
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 1, 		-- Bloody Letter (Criteria)
-									["itemID"] = 139534,		-- Bloody Letter
-									--["questID"] = 42350,		-- Bloody Letter (Quest)
-									["description"] = "Northwest Suramar.",
-									["qgs"] = {101783}
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 4, 		-- Bloody Prayer (Criteria)
-									["itemID"] = 139535,		-- Bloody Prayer
-									--["questID"] = 42351,		-- Bloody Prayer (Quest)
-									["description"] = "Southwest Suramar City.",
-									["qgs"] = {114470}
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 12, 		-- Fevered Prayer (Criteria)
-									["itemID"] = 139532,		-- Fevered Prayer
-									--["questID"] = 42345,		-- Fevered Prayer (Quest)
-									["description"] = "Northwest Suramar.",
-									["qgs"] = {101784}
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 16, 		-- Singed Plea (Criteria)
-									["itemID"] = 139533,		-- Singed Plea
-									--["questID"] = 42340,		-- Singed Plea (Quest)
-									["description"] = "Fal'dorei Tunnels.",
-									["qgs"] = {105753, 105625, 113162}
-								}
-							}
-						})
-					},
-				}),
-				]]--
-				n(-214, { -- Nightborne Home
-					["groups"] = {
-						n(-17, { -- Quests
-							q(49933, { -- For the Horde
-								["groups"] = {
-									--i(157028), -- Letter from Lady Sylvanas Windrunner
-									i(157759), -- Shal'dorei Tabard
-								},
-								["qg"] = 131326, -- First Arcanist Thalyssra
-							}),
-						}),	
-					},
-					["races"]  = { 27 }, -- Nightborne
-				}),
-				n(-25, { -- Pet Battle
-					p(425), 	-- Ash Viper
-					p(706), 	-- Bandicoon
-					p(1914), 	-- Coastal Sandpiper
-					p(1809), 	-- Crystalline Broodling
-					p(1325), 	-- Flamering Moth
-					p(1810), 	-- Thornclaw Broodling
-					p(1807), 	-- Vicious Broodling
-					p(1591), 	-- Violet Firefly
-				}),
-				n(-169, { -- Emissary Quests
+				n(-169, { 	-- Emissary Quests
 					q(42421, { -- The Nightfallen
 						["groups"] = {
 							i(157826, { -- Nightfallen Hoard
@@ -400,7 +332,211 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-17, { -- Quests
+				n(-228, {	-- Flight Paths
+					fp(1879, { -- Crimson Thicket, Suramar
+						["coord"] = { 64.2, 42 },
+					}),
+					fp(1880, { -- Irongrove Retreat, Suramar
+						["coord"] = { 25.4, 31.8 },
+					}),
+					fp(1858, { -- Meredil, Suramar
+						["coord"] = { 34.2, 49.4 },
+					}),
+				}),
+				n(-214, { 	-- Nightborne Home
+					["groups"] = {
+						n(-17, { -- Quests
+							q(49933, { -- For the Horde
+								["groups"] = {
+									--i(157028), -- Letter from Lady Sylvanas Windrunner
+									i(157759), -- Shal'dorei Tabard
+								},
+								["qg"] = 131326, -- First Arcanist Thalyssra
+							}),
+						}),	
+					},
+					["races"]  = { 27 }, -- Nightborne
+				}),
+				n(-25, {	-- Pet Battle
+					p(425), 	-- Ash Viper
+					p(706), 	-- Bandicoon
+					p(1914), 	-- Coastal Sandpiper
+					p(1809), 	-- Crystalline Broodling
+					p(1325), 	-- Flamering Moth
+					p(1810), 	-- Thornclaw Broodling
+					p(1807), 	-- Vicious Broodling
+					p(1591), 	-- Violet Firefly
+				}),
+				n(-38, { 	-- Profession
+					n(-184, { -- Herbalism
+						i(129121, {	-- Starlight Rosedust
+							q(40034), -- Starlight Rosedust
+						}),
+						i(129140, {	-- Jeweled Spade Handle
+							q(40036), -- Jeweled Spade Handle
+						}),
+						i(129143, { -- Scribbled Ramblings
+							q(40038), -- Insame Ramblings
+						}),
+					}),
+					prof(185, { -- Cooking
+						{
+							["itemID"] = 141011,	-- Recipe: Surf
+							["description"] = "Drops from any marine mob in the zone.",
+							["groups"] = {
+								i(133817), 	-- Recipe: Suramar Surf and Turf
+							},
+						},
+						{
+							["itemID"] = 141012,	-- Recipe: Turf
+							["description"] = "Fly to Crimson Thicket, Suramar. Kill the Heartwood stag. 3-4 and you should have it.",
+							["groups"] = {
+								i(133817), 	-- Recipe: Suramar Surf and Turf
+							},
+						},
+					}),
+					prof(356, { -- Fishing
+						n(-100001, { 	-- Artifact
+							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+							["lvl"] = 110,
+							["groups"] = {
+								{
+									["itemID"] = 133887,	-- Luminous Pearl (Item)
+									["questID"] = 40960,	-- Luminous Pearl (Quest)
+								}
+							},
+						}),
+						ach(10596, {	-- Bigger Fish to Fry
+							n(-218, {		-- Coastal
+								i(133722, {		-- Axefish Lure
+									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 133740,		-- Axefish (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 139667,		-- Axefish (Item)
+										},
+									},
+								}),
+								i(133724, {		-- Decayed Whale Blubber
+									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
+									["groups"] = {
+										i(133795),	-- Ravenous Fly
+									}
+								}),
+								i(133721, {		-- Message in a Bottle
+									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+									["groups"] = {
+										i(133722)		-- Axefish Lure
+									},
+								}),
+								i(133795, {		-- Ravenous Fly
+									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
+										},
+									},
+								}),
+								i(133723, {		-- Stunned, Angry Shark
+									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
+									["groups"] = {
+										n(102359, {		-- Landlocked Shark
+											["description"] = "Drops 7-9 Seabottom Squid when killed.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 133741,		-- Seabottom Squid (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 139668,		-- Seabottom Squid (Item)
+												},
+											},
+										})
+									},
+								}),
+							}),
+							i(133720, {		-- Demonic Detritus
+								["description"] = "This item will allow you to catch the Rare fish Tainted Runescale Koi in Suramar.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 14,		-- Tainted Runescale Koi (Criteria)
+										["itemID"] = 133739,		-- Tainted Runescale Koi (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 14,		-- Tainted Runescale Koi (Criteria)
+										["itemID"] = 139666,		-- Tainted Runescale Koi (Item)
+									},
+								},
+							}),
+							i(133717, {		-- Enchanted Lure
+								["description"] = "This item will allow you to catch the Rare fish Magic-Eater Frog in Suramar.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 9,			-- Magic-Eater Frog (Criteria)
+										["itemID"] = 133737,		-- Magic-Eater Frog (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 9,			-- Magic-Eater Frog (Criteria)
+										["itemID"] = 139664,		-- Magic-Eater Frog (Item)
+									},
+								},
+							}),
+							i(133719, {		-- Sleeping Murloc
+								["description"] = "Using this item will awaken a Confused Seerspine Murloc, who will run around briefly and drop some Seerspine Puffer (as well as other fish) onto the ground/water nearby.",
+								["groups"] = {
+									n(102350, {		-- Confused Seerspine Murloc
+										["description"] = "Runs around briefly and drop some Seerspine Puffer (as well as other fish) onto the ground/water nearby.\n\nIn order to collect the fish, you simply have to run over them - they will be added to your bags.",
+										["groups"] = {
+											{
+												["achievementID"] = 10596,	-- Bigger Fish to Fry
+												["criteriaID"] = 16,		-- Seerspine Puffer (Criteria)
+												["itemID"] = 133738,		-- Seerspine Puffer (Item)
+											},
+											{
+												["achievementID"] = 10596,	-- Bigger Fish to Fry
+												["criteriaID"] = 16,		-- Seerspine Puffer (Criteria)
+												["itemID"] = 139665,		-- Seerspine Puffer (Item)
+											},
+										},
+									}),
+								},
+							}),
+						}),
+						ach(11725, { 	-- Fisherfriend of the Isles
+							faction(2101, {	-- Sha'leth
+								["groups"] = {
+									i(146962, {		-- Golden Minnow
+										i(147311), 	-- Replica Gondola
+									}),
+								},
+								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF50.7, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								["requireSkill"] = 356,
+								["creatureID"] = 120459
+							}),
+						}),
+					}),
+				}),
+				n(-17, { 	-- Quests
 					ach(11133, { -- Why Can't I Hold All This Mana
 						q(41138), -- Feeding Shal'Aran
 						q(42230), -- The Valewalker's Burden
@@ -1195,7 +1331,7 @@ _.Zones =
 						i(139791), -- Lurking Owl Kitten
 					}),	
 				}),
-				n(-16, { -- Rares
+				n(-16, { 	-- Rares
 					n(111649, { 	-- Ambassador D'vwinn
 						["groups"] = {
 							i(139918),
@@ -1353,7 +1489,7 @@ _.Zones =
 				--	v(45474, { 		-- Volshax, Breaker of Will	}), 
 --]]
 				}),
-				n(-2, { -- Vendors
+				n(-2, { 	-- Vendors
 					n(115710, { -- Chief Telemancer Oculeth
 						i(140324), -- Mobile Telemancy Beacon Toy
 					}),
@@ -1471,176 +1607,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-38, { -- Profession
-					n(-184, { -- Herbalism
-						i(129121, {	-- Starlight Rosedust
-							q(40034), -- Starlight Rosedust
-						}),
-						i(129140, {	-- Jeweled Spade Handle
-							q(40036), -- Jeweled Spade Handle
-						}),
-						i(129143, { -- Scribbled Ramblings
-							q(40038), -- Insame Ramblings
-						}),
-					}),
-					prof(185, { -- Cooking
-						{
-							["itemID"] = 141011,	-- Recipe: Surf
-							["description"] = "Drops from any marine mob in the zone.",
-							["groups"] = {
-								i(133817), 	-- Recipe: Suramar Surf and Turf
-							},
-						},
-						{
-							["itemID"] = 141012,	-- Recipe: Turf
-							["description"] = "Fly to Crimson Thicket, Suramar. Kill the Heartwood stag. 3-4 and you should have it.",
-							["groups"] = {
-								i(133817), 	-- Recipe: Suramar Surf and Turf
-							},
-						},
-					}),
-					prof(356, { -- Fishing
-						n(-100001, { 	-- Artifact
-							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-							["lvl"] = 110,
-							["groups"] = {
-								{
-									["itemID"] = 133887,	-- Luminous Pearl (Item)
-									["questID"] = 40960,	-- Luminous Pearl (Quest)
-								}
-							},
-						}),
-						ach(10596, {	-- Bigger Fish to Fry
-							n(-218, {		-- Coastal
-								i(133722, {		-- Axefish Lure
-									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["groups"] = {
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish (Criteria)
-											["itemID"] = 133740,		-- Axefish (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish (Criteria)
-											["itemID"] = 139667,		-- Axefish (Item)
-										},
-									},
-								}),
-								i(133724, {		-- Decayed Whale Blubber
-									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["groups"] = {
-										i(133795),	-- Ravenous Fly
-									}
-								}),
-								i(133721, {		-- Message in a Bottle
-									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["groups"] = {
-										i(133722)		-- Axefish Lure
-									},
-								}),
-								i(133795, {		-- Ravenous Fly
-									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["groups"] = {
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
-										},
-									},
-								}),
-								i(133723, {		-- Stunned, Angry Shark
-									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["groups"] = {
-										n(102359, {		-- Landlocked Shark
-											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["groups"] = {
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-													["itemID"] = 133741,		-- Seabottom Squid (Item)
-												},
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-													["itemID"] = 139668,		-- Seabottom Squid (Item)
-												},
-											},
-										})
-									},
-								}),
-							}),
-							i(133720, {		-- Demonic Detritus
-								["description"] = "This item will allow you to catch the Rare fish Tainted Runescale Koi in Suramar.",
-								["groups"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 14,		-- Tainted Runescale Koi (Criteria)
-										["itemID"] = 133739,		-- Tainted Runescale Koi (Item)
-									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 14,		-- Tainted Runescale Koi (Criteria)
-										["itemID"] = 139666,		-- Tainted Runescale Koi (Item)
-									},
-								},
-							}),
-							i(133717, {		-- Enchanted Lure
-								["description"] = "This item will allow you to catch the Rare fish Magic-Eater Frog in Suramar.",
-								["groups"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 9,			-- Magic-Eater Frog (Criteria)
-										["itemID"] = 133737,		-- Magic-Eater Frog (Item)
-									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 9,			-- Magic-Eater Frog (Criteria)
-										["itemID"] = 139664,		-- Magic-Eater Frog (Item)
-									},
-								},
-							}),
-							i(133719, {		-- Sleeping Murloc
-								["description"] = "Using this item will awaken a Confused Seerspine Murloc, who will run around briefly and drop some Seerspine Puffer (as well as other fish) onto the ground/water nearby.",
-								["groups"] = {
-									n(102350, {		-- Confused Seerspine Murloc
-										["description"] = "Runs around briefly and drop some Seerspine Puffer (as well as other fish) onto the ground/water nearby.\n\nIn order to collect the fish, you simply have to run over them - they will be added to your bags.",
-										["groups"] = {
-											{
-												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 16,		-- Seerspine Puffer (Criteria)
-												["itemID"] = 133738,		-- Seerspine Puffer (Item)
-											},
-											{
-												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 16,		-- Seerspine Puffer (Criteria)
-												["itemID"] = 139665,		-- Seerspine Puffer (Item)
-											},
-										},
-									}),
-								},
-							}),
-						}),
-						ach(11725, { 	-- Fisherfriend of the Isles
-							faction(2101, {	-- Sha'leth
-								["groups"] = {
-									i(146962, {		-- Golden Minnow
-										i(147311), 	-- Replica Gondola
-									}),
-								},
-								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF50.7, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requireSkill"] = 356,
-								["creatureID"] = 120459
-							}),
-						}),
-					}),
-				}),
-				n(-34, { -- World Quests
+				n(-34, { 	-- World Quests
 					["groups"] = {
 						n(-322, { -- Cloak
 							i(121798), -- Moon Guard Drape
@@ -1700,7 +1667,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0, { -- Zone Drops
+				n(0, { 		-- Zone Drops
 					["groups"] = {
 						i(141292, {	-- Crystallizing Mana
 							["groups"] = {
@@ -2039,6 +2006,53 @@ _.Zones =
 						100014,	-- Withered Husk
 						98555,	-- Withered Shambler
 						114874,	-- Wyrmtongue Pilferer
+					},
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-4, {	-- Achievements
+							un(2, ach(11139, {	-- Field Medic!
+								["groups"] = {
+									un( 39, title(340, {	-- TITLE: Field Medic!
+										["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
+										["groups"] = {
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 1, 		-- Bloody Letter (Criteria)
+												["itemID"] = 139534,		-- Bloody Letter
+												--["questID"] = 42350,		-- Bloody Letter (Quest)
+												["description"] = "Northwest Suramar.",
+												["qgs"] = {101783}
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 4, 		-- Bloody Prayer (Criteria)
+												["itemID"] = 139535,		-- Bloody Prayer
+												--["questID"] = 42351,		-- Bloody Prayer (Quest)
+												["description"] = "Southwest Suramar City.",
+												["qgs"] = {114470}
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 12, 		-- Fevered Prayer (Criteria)
+												["itemID"] = 139532,		-- Fevered Prayer
+												--["questID"] = 42345,		-- Fevered Prayer (Quest)
+												["description"] = "Northwest Suramar.",
+												["qgs"] = {101784}
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 16, 		-- Singed Plea (Criteria)
+												["itemID"] = 139533,		-- Singed Plea
+												--["questID"] = 42340,		-- Singed Plea (Quest)
+												["description"] = "Fal'dorei Tunnels.",
+												["qgs"] = {105753, 105625, 113162}
+											}
+										},
+									})),
+								},
+							})),
+						}),
 					},
 				}),
 			},

@@ -18,7 +18,7 @@ _.Achievements =
 				["groups"] = {
 					un(2, ach(11139, { -- Field Medic!
 						["groups"] = {
-							title(340, {	-- TITLE: Field Medic!
+							un(39, title(340, {	-- TITLE: Field Medic!
 								["groups"] = {
 									{
 										["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -133,7 +133,7 @@ _.Achievements =
 										["description"] = "Fal'dorei Tunnels."
 									},
 								},
-							}),
+							})),
 						},
 					})),
 					un(2, ach(10580, { -- Heroic Skills to Pay the Bills(800)

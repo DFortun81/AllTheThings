@@ -6,75 +6,7 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(634, {	-- Stormheim
 			["groups"] = {
-				--[[
-				-- REMOVED FROM THE GAME, LEFT IN A COMMENT SO THAT IF THEY ADD IT BACK, WE HAVE THE INFO ALREADY
-				ach(11139, {	-- Field Medic!
-					["groups"] = {
-						title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-							["groups"] = {
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 8, 		-- Crumpled Request (Criteria)
-									["itemID"] = 139531,		-- Crumpled Request
-									--["questID"] = 42058,		-- Crumpled Request (Quest)
-									["description"] = "Vampirates.\n  - Crieve (This was the best farming spot by far.)",
-									["qgs"] = {108030}
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 13, 		-- Fevered Request (Criteria)
-									["itemID"] = 139529,		-- Fevered Request
-									--["questID"] = 41985,		-- Fevered Request (Quest)
-									["description"] = "Murlocs at Morheim (eastern Stormheim).",
-									["qgs"] = {98498, 98500, 98501, 98502, 110258}
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 14, 		-- Singed Letter (Criteria)
-									["itemID"] = 139530,		-- Singed Letter
-									--["questID"] = 42215,		-- Singed Letter (Quest)
-									["description"] = "Southern Stormheim.",
-									["qgs"] = {116600}
-								}
-							}
-						})
-					},
-				}),
-				]]--
-				n(-25, { -- Pet Battle
-					p(1708), 	-- Albatross Chick
-					p(1743), 	-- Black-Footed Fox Kit
-					p(380), 	-- Bucktooth Flapper
-					p(1712), 	-- Golden Eaglet
-					p(647), 	-- Grizzly Squirrel
-					p(550), 	-- Highlands Mouse
-					p(645), 	-- Highlands Turkey
-					p(1579), 	-- Ironclaw Scuttler
-					p(1583), 	-- Kelp Scuttler
-					p(1713), 	-- Long-Eared Owl
-					p(1744), 	-- Mist Fox Kit
-					p(633), 	-- Mountain Skunk
-					p(1441), 	-- Mud Jumper
-					p(743), 	-- Rapana Whelk
-					p(1749), 	-- Rose Taipan
-					p(1736), 	-- Slithering Brownscale
-					p(1917), 	-- Stormstruck Beaver
-					p(1750), 	-- Tiny Apparition
-					n(115742, {	-- Orphaned Direbeak
-						["groups"] = {
-							p(1975), 	-- Direbeak Hatchling
-							q(44982, { -- Direbeak Bonding
-								i(142495), -- Fake Teeth
-							}),
-							q(44988, { -- Direbeak Reunion
-								i(137579), -- Brilliant Direbeak
-							}),
-						},
-						["description"] = "1. Buy Pungent Vrykul Gamalost from Steward Dayton in Stormheim.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy new Direbeak Hatchling|r",
-					}),
-				}),
-				n(-169, { -- Emissary Quests
+				n(-169, { 	-- Emissary Quests
 					q(42234, { -- The Valarjar
 						["groups"] = {
 							i(157824, { -- Valarjar Cache
@@ -429,7 +361,325 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-17, { -- Quests
+				n(-228, {	-- Flight Paths
+					fp(1738, { -- Cullen's Post, Stormheim
+						["coord"] = { 44.8, 59.2 },
+					}),
+					fp(1739, { -- Dreadwake's Landing, Stormheim
+						["coord"] = { 54.4, 73 },
+					}),
+					fp(1741, { -- Forsaken Foothold, Stormheim
+						["coord"] = { 36.4, 30.6 },
+					}),
+					fp(1744, { -- Greywatch, Stormheim
+						["coord"] = { 72, 59.8 },
+					}),
+					fp(1863, { -- Hafr Fjall, Stormheim
+						["coord"] = { 55.6, 87.4 },
+					}),
+					fp(1745, { -- Lorna's Watch, Stormheim
+						["coord"] = { 37.4, 64 },
+					}),
+					fp(1855, { -- Shield's Rest, Stormheim
+						["coord"] = { 89.8, 10.6 },
+					}),
+					fp(1747, { -- Skyfire Triage Camp, Stormheim
+						["coord"] = { 33.6, 50.6 },
+					}),
+					fp(1857, { -- Stormtorn Foothills, Stormheim
+						["coord"] = { 52, 34.6 },
+					}),
+					fp(1742, { -- Valdisdall, Stormheim
+						["coord"] = { 60.6, 50.8 },
+					}),
+				}),
+				m(649, { 	-- Helheim
+					["groups"] = {
+						n(-17, { -- Quests
+							qg(97319, q(39837)),					-- An Unworthy Task / Ashildir <Queen of the Valkyra>
+							sq(39837, qg(91531, q(38324, {			-- Accessories of the Cursed / Colborn the Unworthy
+								i(129331), -- Soulflayer Cord
+								i(129332), -- Belt of the Eternally Tortured
+								i(129333), -- Mistcaller Mail Belt
+								i(129334), -- Girdle of the Unworthy
+								i(121563), -- Soulflayer's Collar of Bones
+							}))),
+							sq(39837, qg(91531, q(38339))),			-- A Little Kelp From My Foes / Colborn the Unworthy
+							sq({38324,38339}, qg(91531, q(38347, {	-- Stealth by Seaweed / Colborn the Unworthy
+								desc(n(91386), "Walk by him. Don't get killed."),	-- Guarm
+							}))),
+							sq(38347, qg(97319, q(39848))),			-- A Desperate Bargain / Ashildir <Queen of the Valkyra>
+							sq(39848, qg(91387, q(39857))),			-- The Eternal Nemesis / Helya's Altar
+							sq(39857, qg(97319, q(39849, {			-- To Light the Way / Ashildir <Queen of the Valkyra>
+								i(129339), -- Drape of the Undying Raider
+								i(129239), -- Bloodbeard's Seal
+							}))),
+							sq(39849, qg(97319, q(39849))),			-- Sundered / Ashildir <Queen of the Valkyra>
+							sq(39849, qg(97319, q(39851))),			-- Allies in Death / Ashildir <Queen of the Valkyra>
+							-- sq(39849, qg(97319, q(39852))),			-- [PH] Collect Weapons / Ashildir <Queen of the Valkyra>
+							sq({39849,39851,39852}, qg(97319, q(39853, {			-- Victory is Eternal / Ashildir <Queen of the Valkyra>
+								desc(n(91948), "Soloable, but might require a group."),	-- Geir <The Eternal Nemesis>
+							}))),
+							sq(39853, qg(97319, q(39855, { -- Paid in Lifeblood / Ashildir <Queen of the Valkyra>
+								i(132832), -- Bones of Geir	
+								i(132830), -- Cursebinder Chains	
+								i(132826), -- Cursed Kvaldir Blood	
+								i(132827), -- Gaze of Helya	
+								i(132824), -- Helheim Waylight	
+								i(132828), -- Helhound Core	
+								i(132829), -- Silver of Heost	
+								i(132825), -- Val'kyra Boon	
+								i(132834), -- Wailing Wings	
+								i(132831), -- Worthy Soul	
+							}))),
+						}),
+						n(-16, { -- Rares
+							desc(n(109163), "Objective of the World Quest 'DANGER: Captain Dargun'. Is not up otherwise."),			-- Captain Dargun
+							n(92040, {	-- Fenri
+								["groups"] = {
+									i(129044),	-- Frothing Helhound's Fury
+								},
+								["questID"] = 38461
+							}), 
+							n(115732, {			-- Jorvild the Trusted
+								["description"] = "Starting from Helya's Throne, head down the stairs and along the path. When you hit the first bridge, turn right 90 degrees and start swimming lengthwise down the pond. Directly in front of you there's a tiny \"beach\" with a door-sized cave entrance. If you get to the part of the pond where it gets narrow and turns around a corner, you went too far. The cave is just left of the bend between some rocks.",
+								["questID"] = 46949,
+								["groups"] = {
+									i(144437, {	-- Lost Legend of the Valarjar
+										["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
+										["classes"] = {1},
+										["dr"] = 100,
+										["groups"] = {
+											desc(q(46229), "His Name Is Dragonblood"),	-- Valarjar Lore Unlock 1
+											desc(q(46230), "The Last Words of Asgrim the Dreadkiller"),	-- Valarjar Lore Unlock 2
+											desc(q(46231), "A Shieldmaiden's Creed"),	-- Valarjar Lore Unlock 3
+											desc(q(46232), "The Prophecy of Rythas the Oracle"),	-- Valarjar Lore Unlock 4
+											desc(q(46233), "The Lessons of the Blackfist"),	-- Valarjar Lore Unlock 5
+											desc(q(46234), "Volund's Folly"),	-- Valarjar Lore Unlock 6
+										}
+									}),
+								}
+							}),
+							n(97630, { -- Soulthirster
+								["groups"] = {
+									i(129188), -- Pet
+								},
+								["questID"] = 39870,	
+							}),
+						}),
+					},	
+					["icon"] = "Interface\\Icons\\achievement_boss_helyra",	
+					["description"] = "|cff66ccffHelheim is the desolate realm of the val'kyr Helya. She created it below the Halls of Valor after having sealed Odyn's fortress in an impregnable barrier. Here, the spirits of the dishonorable spend eternity in an endless futile battle, always seeking glory but never able to attain it. It has recently become connected to Haustvald.|r",
+				}),
+				n(-25, { 	-- Pet Battle
+					p(1708), 	-- Albatross Chick
+					p(1743), 	-- Black-Footed Fox Kit
+					p(380), 	-- Bucktooth Flapper
+					p(1712), 	-- Golden Eaglet
+					p(647), 	-- Grizzly Squirrel
+					p(550), 	-- Highlands Mouse
+					p(645), 	-- Highlands Turkey
+					p(1579), 	-- Ironclaw Scuttler
+					p(1583), 	-- Kelp Scuttler
+					p(1713), 	-- Long-Eared Owl
+					p(1744), 	-- Mist Fox Kit
+					p(633), 	-- Mountain Skunk
+					p(1441), 	-- Mud Jumper
+					p(743), 	-- Rapana Whelk
+					p(1749), 	-- Rose Taipan
+					p(1736), 	-- Slithering Brownscale
+					p(1917), 	-- Stormstruck Beaver
+					p(1750), 	-- Tiny Apparition
+					n(115742, {	-- Orphaned Direbeak
+						["groups"] = {
+							p(1975), 	-- Direbeak Hatchling
+							q(44982, { -- Direbeak Bonding
+								i(142495), -- Fake Teeth
+							}),
+							q(44988, { -- Direbeak Reunion
+								i(137579), -- Brilliant Direbeak
+							}),
+						},
+						["description"] = "1. Buy Pungent Vrykul Gamalost from Steward Dayton in Stormheim.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy new Direbeak Hatchling|r",
+					}),
+				}),
+				n(-38, { 	-- Profession
+					n(-184, { -- Herbalism
+						i(129120, {	-- Fjarnskaggl Sample
+							q(40029, { -- Fjarnskaggl Sample
+								sp(193424),	-- Herbalism Technique: Fjarnskaggl (Rank 1)
+							}),
+						}),
+						i(129138, {	-- Ram's-Horn Trowel
+							q(40030), -- Ram's-Horn Trowl
+						}),
+						i(129142, { -- Runed Journal Page
+							q(40032), -- The Missing Page
+						}),
+						i(129122, {	-- Felwort Sample
+							q(40040, { --Felwort Sample
+								sp(193430), -- Herbalism Technique: Felwort (Rank 1)
+							}),
+						}),
+					}),
+					prof(356, { -- Fishing
+						n(-100001, { 	-- Artifact
+							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+							["lvl"] = 110,
+							["groups"] = {
+								{
+									["itemID"] = 133887,	-- Luminous Pearl (Item)
+									["questID"] = 40960,	-- Luminous Pearl (Quest)
+								}
+							},
+						}),
+						ach(10596, {	-- Bigger Fish to Fry
+							n(-218, {		-- Coastal
+								i(133722, {		-- Axefish Lure
+									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 133740,		-- Axefish (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 139667,		-- Axefish (Item)
+										},
+									},
+								}),
+								i(133724, {		-- Decayed Whale Blubber
+									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
+									["groups"] = {
+										i(133795),	-- Ravenous Fly
+									}
+								}),
+								i(133721, {		-- Message in a Bottle
+									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+									["groups"] = {
+										i(133722)		-- Axefish Lure
+									},
+								}),
+								i(133795, {		-- Ravenous Fly
+									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
+										},
+									},
+								}),
+								i(133723, {		-- Stunned, Angry Shark
+									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
+									["groups"] = {
+										n(102359, {		-- Landlocked Shark
+											["description"] = "Drops 7-9 Seabottom Squid when killed.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 133741,		-- Seabottom Squid (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 139668,		-- Seabottom Squid (Item)
+												},
+											},
+										})
+									},
+								}),
+							}),
+							i(133715, {		-- Ancient Vrykul Ring
+								["description"] = "This item will give you a buff that will allow you to see and fish from Oodelfjisk schools.",
+								["groups"] = {
+									spell(201818, {		-- Ancient Vrykul Ring (Buff)
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 12,		-- Oodelfjisk (Criteria)
+											["itemID"] = 133734,		-- Oodelfjisk (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 12,		-- Oodelfjisk (Criteria)
+											["itemID"] = 139661,		-- Oodelfjisk (Item)
+										},
+									}),
+								},
+							}),
+							i(133713, {		-- Moosehorn Hook
+								["description"] = "An important note - if you use this item with another bait active (or vice versa) the new buff WILL REPLACE the previous one! As such, it's best to wait until your bait buff expires before using this item. This does not apply to Arcane Lure, which can be used concurrently with any other bait/lure.",
+								["groups"] = {
+									i(133714),		-- Silverscale Minnow
+								},
+							}),
+							i(133714, {		-- Silverscale Minnow
+								["description"] = "This item will allow you to catch the Rare fish Thundering Stormray in Stormheim.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
+										["itemID"] = 133736,		-- Thundering Stormray (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
+										["itemID"] = 139663,		-- Thundering Stormray (Item)
+									},
+								},
+							}),
+							i(133716, {		-- Soggy Drakescale
+								["description"] = "This item will allow you to catch the Rare fish Graybelly Lobster in Stormheim.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 7,			-- Graybelly Lobster (Criteria)
+										["itemID"] = 133735,		-- Graybelly Lobster (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 7,			-- Graybelly Lobster (Criteria)
+										["itemID"] = 139662,		-- Graybelly Lobster (Item)
+									},
+								},
+							}),
+						}),
+						ach(11725, { 	-- Fisherfriend of the Isles
+							faction(2100, {	-- Corbyn
+								["groups"] = {
+									i(146961, {		-- Shiny Bauble
+										i(147307), -- Carved Wooden Helm
+										i(152574), -- Corbyn's Beacon
+									}),
+								},
+								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.5, 10.7|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								["requireSkill"] = 356,
+								["creatureID"] = 120458
+							}),
+						}),
+					}),
+					prof(393, { -- Skinning
+						n(91799, {	-- Juvenile Stormwing
+							{
+								["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw
+								["collectible"] = false,
+								["dr"] = 17,
+								["groups"] = {
+									recipe(194171),	-- Unbroken Claw
+								},
+							},
+						}),
+					}),
+				}),
+				n(-17, { 	-- Quests
 --[[					
 					n(-34, {	-- World Quests					
 						q(43964),	-- A Jarl's Feast
@@ -1143,7 +1393,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-16, { -- Rares
+				n(-16, { 	-- Rares
 					n(91874, { 		-- Bladesquall
 						["groups"] = {	
 							i(129048),
@@ -1355,7 +1605,7 @@ _.Zones =
 				--	n(100224, { 	-- Vrykul Earthmaiden Spirit	}), 
 --]]
 				}),
-				n(-2, { -- Vendors
+				n(-2, { 	-- Vendors
 					n(98367, { -- Tigrid the Charmer <Enchantress>
 						i(124440, {	-- Arkhana
 							i(128617),	-- Formula: Enchant Gloves - Legion Herbalism
@@ -1407,183 +1657,7 @@ _.Zones =
 						--i(140656), -- Rod of the Ascended - Priest Artifact Appearance item
 					}),
 				}),
-				n(-38, { -- Profession
-					n(-184, { -- Herbalism
-						i(129120, {	-- Fjarnskaggl Sample
-							q(40029, { -- Fjarnskaggl Sample
-								sp(193424),	-- Herbalism Technique: Fjarnskaggl (Rank 1)
-							}),
-						}),
-						i(129138, {	-- Ram's-Horn Trowel
-							q(40030), -- Ram's-Horn Trowl
-						}),
-						i(129142, { -- Runed Journal Page
-							q(40032), -- The Missing Page
-						}),
-						i(129122, {	-- Felwort Sample
-							q(40040, { --Felwort Sample
-								sp(193430), -- Herbalism Technique: Felwort (Rank 1)
-							}),
-						}),
-					}),
-					prof(356, { -- Fishing
-						n(-100001, { 	-- Artifact
-							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-							["lvl"] = 110,
-							["groups"] = {
-								{
-									["itemID"] = 133887,	-- Luminous Pearl (Item)
-									["questID"] = 40960,	-- Luminous Pearl (Quest)
-								}
-							},
-						}),
-						ach(10596, {	-- Bigger Fish to Fry
-							n(-218, {		-- Coastal
-								i(133722, {		-- Axefish Lure
-									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["groups"] = {
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish (Criteria)
-											["itemID"] = 133740,		-- Axefish (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish (Criteria)
-											["itemID"] = 139667,		-- Axefish (Item)
-										},
-									},
-								}),
-								i(133724, {		-- Decayed Whale Blubber
-									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["groups"] = {
-										i(133795),	-- Ravenous Fly
-									}
-								}),
-								i(133721, {		-- Message in a Bottle
-									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["groups"] = {
-										i(133722)		-- Axefish Lure
-									},
-								}),
-								i(133795, {		-- Ravenous Fly
-									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["groups"] = {
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
-										},
-									},
-								}),
-								i(133723, {		-- Stunned, Angry Shark
-									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["groups"] = {
-										n(102359, {		-- Landlocked Shark
-											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["groups"] = {
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-													["itemID"] = 133741,		-- Seabottom Squid (Item)
-												},
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-													["itemID"] = 139668,		-- Seabottom Squid (Item)
-												},
-											},
-										})
-									},
-								}),
-							}),
-							i(133715, {		-- Ancient Vrykul Ring
-								["description"] = "This item will give you a buff that will allow you to see and fish from Oodelfjisk schools.",
-								["groups"] = {
-									spell(201818, {		-- Ancient Vrykul Ring (Buff)
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 12,		-- Oodelfjisk (Criteria)
-											["itemID"] = 133734,		-- Oodelfjisk (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 12,		-- Oodelfjisk (Criteria)
-											["itemID"] = 139661,		-- Oodelfjisk (Item)
-										},
-									}),
-								},
-							}),
-							i(133713, {		-- Moosehorn Hook
-								["description"] = "An important note - if you use this item with another bait active (or vice versa) the new buff WILL REPLACE the previous one! As such, it's best to wait until your bait buff expires before using this item. This does not apply to Arcane Lure, which can be used concurrently with any other bait/lure.",
-								["groups"] = {
-									i(133714),		-- Silverscale Minnow
-								},
-							}),
-							i(133714, {		-- Silverscale Minnow
-								["description"] = "This item will allow you to catch the Rare fish Thundering Stormray in Stormheim.",
-								["groups"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
-										["itemID"] = 133736,		-- Thundering Stormray (Item)
-									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
-										["itemID"] = 139663,		-- Thundering Stormray (Item)
-									},
-								},
-							}),
-							i(133716, {		-- Soggy Drakescale
-								["description"] = "This item will allow you to catch the Rare fish Graybelly Lobster in Stormheim.",
-								["groups"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 7,			-- Graybelly Lobster (Criteria)
-										["itemID"] = 133735,		-- Graybelly Lobster (Item)
-									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 7,			-- Graybelly Lobster (Criteria)
-										["itemID"] = 139662,		-- Graybelly Lobster (Item)
-									},
-								},
-							}),
-						}),
-						ach(11725, { 	-- Fisherfriend of the Isles
-							faction(2100, {	-- Corbyn
-								["groups"] = {
-									i(146961, {		-- Shiny Bauble
-										i(147307), -- Carved Wooden Helm
-										i(152574), -- Corbyn's Beacon
-									}),
-								},
-								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.5, 10.7|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requireSkill"] = 356,
-								["creatureID"] = 120458
-							}),
-						}),
-					}),
-					prof(393, { -- Skinning
-						n(91799, {	-- Juvenile Stormwing
-							{
-								["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw
-								["collectible"] = false,
-								["dr"] = 17,
-								["groups"] = {
-									recipe(194171),	-- Unbroken Claw
-								},
-							},
-						}),
-					}),
-				}),
-				n(-34, { -- World Quests
+				n(-34, { 	-- World Quests
 					n(-322, { -- Cloak
 						i(134202), -- Stormsky Cloak
 					}),
@@ -1653,85 +1727,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
 				}),				
-				m(649, { -- Helheim
-					["groups"] = {
-						n(-17, { -- Quests
-							qg(97319, q(39837)),					-- An Unworthy Task / Ashildir <Queen of the Valkyra>
-							sq(39837, qg(91531, q(38324, {			-- Accessories of the Cursed / Colborn the Unworthy
-								i(129331), -- Soulflayer Cord
-								i(129332), -- Belt of the Eternally Tortured
-								i(129333), -- Mistcaller Mail Belt
-								i(129334), -- Girdle of the Unworthy
-								i(121563), -- Soulflayer's Collar of Bones
-							}))),
-							sq(39837, qg(91531, q(38339))),			-- A Little Kelp From My Foes / Colborn the Unworthy
-							sq({38324,38339}, qg(91531, q(38347, {	-- Stealth by Seaweed / Colborn the Unworthy
-								desc(n(91386), "Walk by him. Don't get killed."),	-- Guarm
-							}))),
-							sq(38347, qg(97319, q(39848))),			-- A Desperate Bargain / Ashildir <Queen of the Valkyra>
-							sq(39848, qg(91387, q(39857))),			-- The Eternal Nemesis / Helya's Altar
-							sq(39857, qg(97319, q(39849, {			-- To Light the Way / Ashildir <Queen of the Valkyra>
-								i(129339), -- Drape of the Undying Raider
-								i(129239), -- Bloodbeard's Seal
-							}))),
-							sq(39849, qg(97319, q(39849))),			-- Sundered / Ashildir <Queen of the Valkyra>
-							sq(39849, qg(97319, q(39851))),			-- Allies in Death / Ashildir <Queen of the Valkyra>
-							-- sq(39849, qg(97319, q(39852))),			-- [PH] Collect Weapons / Ashildir <Queen of the Valkyra>
-							sq({39849,39851,39852}, qg(97319, q(39853, {			-- Victory is Eternal / Ashildir <Queen of the Valkyra>
-								desc(n(91948), "Soloable, but might require a group."),	-- Geir <The Eternal Nemesis>
-							}))),
-							sq(39853, qg(97319, q(39855, { -- Paid in Lifeblood / Ashildir <Queen of the Valkyra>
-								i(132832), -- Bones of Geir	
-								i(132830), -- Cursebinder Chains	
-								i(132826), -- Cursed Kvaldir Blood	
-								i(132827), -- Gaze of Helya	
-								i(132824), -- Helheim Waylight	
-								i(132828), -- Helhound Core	
-								i(132829), -- Silver of Heost	
-								i(132825), -- Val'kyra Boon	
-								i(132834), -- Wailing Wings	
-								i(132831), -- Worthy Soul	
-							}))),
-						}),
-						n(-16, { -- Rares
-							desc(n(109163), "Objective of the World Quest 'DANGER: Captain Dargun'. Is not up otherwise."),			-- Captain Dargun
-							n(92040, {	-- Fenri
-								["groups"] = {
-									i(129044),	-- Frothing Helhound's Fury
-								},
-								["questID"] = 38461
-							}), 
-							n(115732, {			-- Jorvild the Trusted
-								["description"] = "Starting from Helya's Throne, head down the stairs and along the path. When you hit the first bridge, turn right 90 degrees and start swimming lengthwise down the pond. Directly in front of you there's a tiny \"beach\" with a door-sized cave entrance. If you get to the part of the pond where it gets narrow and turns around a corner, you went too far. The cave is just left of the bend between some rocks.",
-								["questID"] = 46949,
-								["groups"] = {
-									i(144437, {	-- Lost Legend of the Valarjar
-										["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
-										["classes"] = {1},
-										["dr"] = 100,
-										["groups"] = {
-											desc(q(46229), "His Name Is Dragonblood"),	-- Valarjar Lore Unlock 1
-											desc(q(46230), "The Last Words of Asgrim the Dreadkiller"),	-- Valarjar Lore Unlock 2
-											desc(q(46231), "A Shieldmaiden's Creed"),	-- Valarjar Lore Unlock 3
-											desc(q(46232), "The Prophecy of Rythas the Oracle"),	-- Valarjar Lore Unlock 4
-											desc(q(46233), "The Lessons of the Blackfist"),	-- Valarjar Lore Unlock 5
-											desc(q(46234), "Volund's Folly"),	-- Valarjar Lore Unlock 6
-										}
-									}),
-								}
-							}),
-							n(97630, { -- Soulthirster
-								["groups"] = {
-									i(129188), -- Pet
-								},
-								["questID"] = 39870,	
-							}),
-						}),
-					},	
-					["icon"] = "Interface\\Icons\\achievement_boss_helyra",	
-					["description"] = "|cff66ccffHelheim is the desolate realm of the val'kyr Helya. She created it below the Halls of Valor after having sealed Odyn's fortress in an impregnable barrier. Here, the spirits of the dishonorable spend eternity in an endless futile battle, always seeking glory but never able to attain it. It has recently become connected to Haustvald.|r",
-				}),
-				n(0, { -- Zone Drops
+				n(0, { 		-- Zone Drops
 					["groups"] = {
 						i(141287, { -- Law of Strength
 							["groups"] = {
@@ -2077,6 +2073,45 @@ _.Zones =
 						90748,	-- Whitewater Tempest
 						92152,	-- Whitewater Typhoon
 						107803,	-- Wild Plains Runehorn
+					},
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-4, {	-- Achievements
+							un(2, ach(11139, {	-- Field Medic!
+								["groups"] = {
+									un(39, title(340, {	-- TITLE: Field Medic!
+										["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
+										["groups"] = {
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 8, 		-- Crumpled Request (Criteria)
+												["itemID"] = 139531,		-- Crumpled Request
+												--["questID"] = 42058,		-- Crumpled Request (Quest)
+												["description"] = "Vampirates.\n  - Crieve (This was the best farming spot by far.)",
+												["qgs"] = {108030}
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 13, 		-- Fevered Request (Criteria)
+												["itemID"] = 139529,		-- Fevered Request
+												--["questID"] = 41985,		-- Fevered Request (Quest)
+												["description"] = "Murlocs at Morheim (eastern Stormheim).",
+												["qgs"] = {98498, 98500, 98501, 98502, 110258}
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 14, 		-- Singed Letter (Criteria)
+												["itemID"] = 139530,		-- Singed Letter
+												--["questID"] = 42215,		-- Singed Letter (Quest)
+												["description"] = "Southern Stormheim.",
+												["qgs"] = {116600}
+											}
+										},
+									})),
+								},
+							})),
+						}),
 					},
 				}),
 			},

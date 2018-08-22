@@ -7,85 +7,12 @@ _.Zones =
 		m(650, {	-- Highmountain
 			["maps"] = {750},
 			["groups"] = {
-				--[[
-				-- REMOVED FROM THE GAME, LEFT IN A COMMENT SO THAT IF THEY ADD IT BACK, WE HAVE THE INFO ALREADY
-				ach(11139, {	-- Field Medic!
-					["groups"] = {
-						title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-							["groups"] = {
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 6, 		-- Crumpled Letter (Criteria)
-									["itemID"] = 139524,		-- Crumpled Letter
-									--["questID"] = 42333,		-- Crumpled Letter (Quest)
-									["description"] = "Western Highmountain next to Skyhorn.",
-									["qgs"] = {96774}
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 7, 		-- Crumpled Note (Criteria)
-									["itemID"] = 139525,		-- Crumpled Note
-									--["questID"] = 42334,		-- Crumpled Note (Quest)
-									["description"] = "Northern Highmountain.",
-									["qgs"] = {104323}
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 9, 		-- Fevered Letter (Criteria)
-									["itemID"] = 139523,		-- Fevered Letter
-									--["questID"] = 42323,		-- Fevered Letter (Quest)
-									["description"] = "Southern Highmountain.",
-									["qgs"] = {103177}
-								}
-							}
-						})
-					},
-				}),
-				]]--
-				n(-4, { -- Achievement
+				n(-4, { 	-- Achievement
 					["groups"] = {
 						ach(10398, { -- Drum Circle
 							["description"] = "You need 5 people jumping on the drum on lower floor of Thunder Totem. Can NOT be completed while you are on 'Assault on Thunder Totem'."
 						}),
 					},
-				}),
-				n(-25, { 	-- Pet Battle
-					p(487), 	-- Alpine Chipmonk
-					p(1743), 	-- Black-Footed Fox Kit
-					p(1726), 	-- Burrow Spiderling
-					p(1775), 	-- Coralback Fiddler
-					p(1761), 	-- Echo Batling
-					p(1731), 	-- Felspider
-					p(407), 	-- Forest Spiderling
-					p(1762), 	-- Hog-Nosed Bat
-					p(1713),	-- Long-Eared Owl
-					p(1744), 	-- Mist Fox Kit
-					p(391), 	-- Mountain Cottontail
-					p(1441), 	-- Mud Jumper
-					p(1776), 	-- Mudshell Conch
-					p(1714), 	-- Northern Hawk Owl
-					p(378), 	-- Rabbit
-					p(417), 	-- Rat
-					p(496), 	-- Rusty Snail
-					p(1763), 	-- Spiketail Beaver
-					p(379), 	-- Squirrel
-					p(1590), 	-- Swamplighter Firefly
-					ach(10626, { 	-- Zoom!
-						i(137298), 		-- Zoom
-					}),
-					n(115737, {	-- Orphaned Snowfeather
-						["groups"] = {
-							p(1974),  	-- Snowfeather Hatchling
-							q(44959, { -- Snowfeather Bonding
-								i(142497), -- Tiny Pack
-							}),
-							q(44969, { -- Snowfeather Reunion
-								i(137578), -- Snowfeather Hunter
-							}),
-						},
-						["description"] = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling|r",
-					}),	
 				}),
 				n(-169, { 	-- Emissary Quests
 					q(42233, { -- Highmountain Tribes
@@ -557,176 +484,275 @@ _.Zones =
 						}),
 					}),
 				}),
-				--[[					
-					n(-34, {	-- World Quests					
-						q(43985),	-- A Dark Tide
-						q(45840),	-- Assault on Highmountain
-						q(41705),	-- Assault on Thunder Totem
-						q(41026),	-- Back to the Shadows
-						q(46191),	-- Balinar
-						q(45071),	-- Barrels o' Fun
-						q(40978),	-- Bears Behaving Badly
-						q(40951),	-- Bitestone Bazaar
-						q(40925),	-- Bitestone Burglary
-						q(40980),	-- Boilback Plague
-						q(41310),	-- Border Reinforcements
-						q(41308),	-- Border Reinforcements
-						q(46193),	-- Borne of Fel
-						q(41203),	-- Bright Leystone Deposits
-						q(41208),	-- Brimstone Destroyer
-						q(41209),	-- Brimstone Destroyer
-						q(41210),	-- Brimstone Destroyer
-						q(41706),	-- Briny Waters
-						q(41233),	-- Bristled Bear Skin
-						q(41526),	-- Bushy Foxflower
-						q(41238),	-- Calcified Wormscales
-						q(41623),	-- Champions of Highmountain
-						q(46196),	-- Class Dismissed
-						q(41201),	-- Coarse Leystone Outcropping
-						q(46183),	-- Commander Zarthak
-						q(41699),	-- Crabby Crunchies
-						q(41622),	-- Crawliac's Legacy
-						q(41095),	-- Critical Crops
-						q(41202),	-- Crude Leystone Seams
-						q(41685),	-- DANGER: Ala'washte
-						q(41695),	-- DANGER: Defilia
-						q(41093),	-- DANGER: Durguth
-						q(41696),	-- DANGER: Mawat'aki
-						q(41686),	-- DANGER: Olokk the Shipbreaker
-						q(41703),	-- DANGER: Ormagrogg
-						q(41816),	-- DANGER: Oubdob da Smasher
-						q(41884),	-- Dark Tales
-						q(41013),	-- Darkbrul Arena
-						q(41835),	-- Deworming
-						q(41024),	-- Dirge of the Dead
-						q(43767),	-- Enigmatic
-						q(39424),	-- Everything!
-						q(41561),	-- Felhide
-						q(41560),	-- Felhide
-						q(41239),	-- Felhide
-						q(41512),	-- Felwort
-						q(41225),	-- Felwort
-						q(41511),	-- Felwort
-						q(41432),	-- Fiery Leystone Deposits
-						q(41219),	-- Flourishing Foxflower
-						q(41228),	-- Foxflower Cluster
-						q(41544),	-- Foxflower Cluster
-						q(46197),	-- From the Skies They Fel
-						q(41014),	-- Fury Road
-						q(46184),	-- Gelgothar
-						q(41701),	-- Gettin' Tuffer
-						q(41882),	-- Grey Idols
-						q(41127),	-- Gunksnout Infestation
-						q(41204),	-- Hard Leystone Deposits
-						q(44746),	-- Helarjar Landing: Rockaway Coast
-						q(41243),	-- Huge Highmountain Salmon
-						q(41609),	-- Huge Highmountain Salmon
-						q(46185),	-- Iroxus
-						q(42064),	-- It's Illid... Wait.
-						q(46186),	-- Ix'dreloth
-						q(46187),	-- Larthogg
-						q(43764),	-- Ley Race
-						q(41196),	-- Leystone Basilisks
-						q(41198),	-- Leystone Basilisks
-						q(41199),	-- Leystone Rumblers
-						q(45048),	-- Like the Wind
-						q(41596),	-- Lively Highmountain Salmon
-						q(41244),	-- Lively Highmountain Salmon
-						q(41597),	-- Lively Highmountain Salmon
-						q(41091),	-- Lords of the Hills
-						q(41090),	-- Lords of the Hills
-						q(41089),	-- Lords of the Hills
-						q(41433),	-- Massive Leystone Deposits
-						q(41253),	-- Migrating Highmountain Salmon
-						q(41122),	-- Mists Take You
-						q(41076),	-- Munitions Testing
-						q(41077),	-- Munitions Testing
-						q(41078),	-- Munitions Testing
-						q(46188),	-- Orgrokk
-						q(41057),	-- Primal Payback
-						q(39462),	-- Primal Payback
-						q(41055),	-- Primal Payback
-						q(41416),	-- Retake the Skyhorn
-						q(41789),	-- Return to the Crag
-						q(41144),	-- Return to the River
-						q(40985),	-- Rimescale Naga Incursion: Highmountain
-						q(41025),	-- Rise of the Fallen
-						q(40966),	-- Ritualists in Our Midsts
-						q(41624),	-- Rocko Needs a Shave
-						q(41200),	-- Rough Leystone Outcropping
-						q(46262),	-- Save the Tadpoles!
-						q(41691),	-- Sea of Feathers
-						q(41234),	-- Shaggy Saber Hide
-						q(46189),	-- Shel'zuul
-						q(41692),	-- Shipwreck Scavengers
-						q(41242),	-- Slab of Bacon
-						q(41549),	-- Slab of Bacon
-						q(41550),	-- Slab of Bacon
-						q(41687),	-- Snail Fight!
-						q(44892),	-- Snowfeather Swarm!
-						q(40920),	-- Stonebinder Bounty
-						q(41224),	-- Supplies Needed: Foxflower
-						q(41207),	-- Supplies Needed: Leystone
-						q(41237),	-- Supplies Needed: Stonehide Leather
-						q(46195),	-- Swarming Skies
-						q(42086),	-- The Feltotem
-						q(43448),	-- The Frozen King
-						q(43766),	-- The Magic of Flight
-						q(41232),	-- Thick Ironhorn Hide
-						q(40896),	-- Threnody of Chieftains
-						q(44823),	-- Thunder Totem Cleanup Detail
-						q(40282),	-- Tiny Poacher, Tiny Animals
-						q(40280),	-- Training with Bredda
-						q(46190),	-- Ulgrom
-						q(41011),	-- Umbralshard Rituals
-						q(41428),	-- Unstable Portal
-						q(41665),	-- Vantus Rune Work Order: Ursoc
-						q(41824),	-- WANTED: Arru
-						q(44289),	-- WANTED: Arru
-						q(41836),	-- WANTED: Bodash the Hoarder
-						q(43616),	-- WANTED: Bodash the Hoarder
-						q(41828),	-- WANTED: Bristlemaul
-						q(44290),	-- WANTED: Bristlemaul
-						q(41826),	-- WANTED: Crawshuk the Hungry
-						q(44291),	-- WANTED: Crawshuk the Hungry
-						q(43455),	-- WANTED: Devouring Darkness
-						q(43617),	-- WANTED: Devouring Darkness
-						q(41819),	-- WANTED: Gurbog da Basher
-						q(43618),	-- WANTED: Gurbog da Basher
-						q(41818),	-- WANTED: Majestic Elderhorn
-						q(44292),	-- WANTED: Majestic Elderhorn
-						q(41844),	-- WANTED: Sekhan
-						q(44294),	-- WANTED: Sekhan
-						q(41821),	-- WANTED: Shara Felbreath
-						q(43619),	-- WANTED: Shara Felbreath
-						q(41838),	-- WANTED: Slumber
-						q(44293),	-- WANTED: Slumber
-						q(41227),	-- Warden Tower Assault: Cordana's Apex
-						q(41257),	-- Warden Tower Assault: Cordana's Apex
-						q(41420),	-- Warden Tower Assault: Nightwatcher's Perch
-						q(41421),	-- Warden Tower Assault: Nightwatcher's Perch
-						q(41205),	-- Warm Leystone Deposits
-						q(41145),	-- Water of Life
-						q(41321),	-- Weapons of Deathwing
-						q(41414),	-- Weapons of Deathwing
-						q(41252),	-- Wild Northern Barracuda
-						q(41766),	-- Wildlife Protection Force
-						q(41525),	-- Wispy Foxflower
-						q(46194),	-- Wolves of the Legion
-						q(41677),	-- Work Order: Auto-Hammer
-						q(41659),	-- Work Order: Avalanche Elixirs
-						q(41641),	-- Work Order: Battlebound Armbands
-						q(41223),	-- Work Order: Foxflower
-						q(41240),	-- Work Order: Highmountain Salmon
-						q(41206),	-- Work Order: Leystone
-						q(41647),	-- Work Order: Silkweave Robe
-						q(41653),	-- Work Order: Skystone Pendant
-						q(41235),	-- Work Order: Stonehide Leather
-						q(41671),	-- Work Order: Word of Strength
-						q(46192),	-- Zar'vok
-						q(46279),	-- Zargrom
+				n(-228, {	-- Flight Paths
+					fp(1755, { -- Felbane Camp, Highmountain
+						["coord"] = { 30, 39.2 },
 					}),
---]]					
+					fp(1759, { -- Ironhorn Enclave, Highmountain
+						["coord"] = { 56.8, 83.8 },
+					}),
+					fp(1767, { -- Nesingwary, Highmountain
+						["coord"] = { 40.2, 52.6 },
+					}),
+					fp(1758, { -- Obsidian Overlook, Highmountain
+						["coord"] = { 47.2, 84.6 },
+					}),
+					fp(1761, { -- Prepfoot, Highmountain
+						["coord"] = { 58, 28.6 },
+					}),
+					fp(1756, { -- Shipwreck Cove, Highmountain
+						["coord"] = { 41.8, 10.4 },
+					}),
+					fp(1753, { -- Skyhorn, Highmountain
+						["coord"] = { 52.6, 45.2 },
+					}),
+					fp(1778, { -- Stonehoof Watch, Highmountain
+						["coord"] = { 59.2, 65 },
+					}),
+					fp(1777, { -- Sylvan Falls, Highmountain
+						["coord"] = { 35.8, 66 },
+					}),
+					fp(1754, { -- The Witchwood, Highmountain
+						["coord"] = { 38.2, 39.2 },
+					}),
+					fp(1719, { -- Thunder Totem, Highmountain
+						["coord"] = { 44.6, 38.8 },
+					}),
+				}),
+				n(-25, { 	-- Pet Battle
+					p(487), 	-- Alpine Chipmonk
+					p(1743), 	-- Black-Footed Fox Kit
+					p(1726), 	-- Burrow Spiderling
+					p(1775), 	-- Coralback Fiddler
+					p(1761), 	-- Echo Batling
+					p(1731), 	-- Felspider
+					p(407), 	-- Forest Spiderling
+					p(1762), 	-- Hog-Nosed Bat
+					p(1713),	-- Long-Eared Owl
+					p(1744), 	-- Mist Fox Kit
+					p(391), 	-- Mountain Cottontail
+					p(1441), 	-- Mud Jumper
+					p(1776), 	-- Mudshell Conch
+					p(1714), 	-- Northern Hawk Owl
+					p(378), 	-- Rabbit
+					p(417), 	-- Rat
+					p(496), 	-- Rusty Snail
+					p(1763), 	-- Spiketail Beaver
+					p(379), 	-- Squirrel
+					p(1590), 	-- Swamplighter Firefly
+					ach(10626, { 	-- Zoom!
+						i(137298), 		-- Zoom
+					}),
+					n(115737, {	-- Orphaned Snowfeather
+						["groups"] = {
+							p(1974),  	-- Snowfeather Hatchling
+							q(44959, { -- Snowfeather Bonding
+								i(142497), -- Tiny Pack
+							}),
+							q(44969, { -- Snowfeather Reunion
+								i(137578), -- Snowfeather Hunter
+							}),
+						},
+						["description"] = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling|r",
+					}),	
+				}),
+				n(-38, { 	-- Profession
+					prof(185, { -- Cooking
+						desc(i(133820), "Can drop from any Drogbar."), 	-- Recipe: Drogbar-Style Salmon
+					}),
+					n(-184, { -- Herbalism
+						i(129119, {	-- Foxflower Sample
+							q(40024, { -- Foxflower Sample
+								sp(193421),	-- Herbalism Technique: Foxflower (Rank 1)
+							}),
+						}),
+						i(129137, {	-- Nibbled Foxflower Stem
+							q(40025) -- Teeny Bite Marks
+						}),
+						i(129278, { -- Foxflower Scent Gland
+							q(40028, { -- The Pied Picker
+								sp(193423),	-- Herbalism Technique: Foxflower (Rank 3)
+							}),
+						}),
+						i(129122, {	-- Felwort Sample
+							q(40040, { --Felwort Sample
+								sp(193430), -- Herbalism Technique: Felwort (Rank 1)
+							}),
+						}),
+					}),
+					prof(393, { -- Skinning
+						n(97449, { 		-- Bristlemaul
+							["groups"] = {
+								{
+									["itemID"] = 139893,	-- Skinning Technique: Unbroken Claw
+									["collectible"] = false,
+									["dr"] = 6,
+									["groups"] = {
+										recipe(194170),	-- Unbroken Tooth
+									},
+								},
+							},
+							["questID"] = 40405,
+						}),
+					}),
+					prof(356, { -- Fishing
+						n(-100001, { 	-- Artifact
+							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+							["lvl"] = 110,
+							["groups"] = {
+								{
+									["itemID"] = 133887,	-- Luminous Pearl (Item)
+									["questID"] = 40960,	-- Luminous Pearl (Quest)
+								}
+							},
+						}),
+						ach(10596, {	-- Bigger Fish to Fry
+							n(-218, {		-- Coastal
+								i(133722, {		-- Axefish Lure
+									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 133740,		-- Axefish (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 139667,		-- Axefish (Item)
+										},
+									},
+								}),
+								i(133724, {		-- Decayed Whale Blubber
+									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
+									["groups"] = {
+										i(133795),	-- Ravenous Fly
+									}
+								}),
+								i(133721, {		-- Message in a Bottle
+									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+									["groups"] = {
+										i(133722)		-- Axefish Lure
+									},
+								}),
+								i(133795, {		-- Ravenous Fly
+									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
+										},
+									},
+								}),
+								i(133723, {		-- Stunned, Angry Shark
+									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
+									["groups"] = {
+										n(102359, {		-- Landlocked Shark
+											["description"] = "Drops 7-9 Seabottom Squid when killed.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 133741,		-- Seabottom Squid (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 139668,		-- Seabottom Squid (Item)
+												},
+											},
+										})
+									},
+								}),
+							}),
+							i(133712, {		-- Frost Worm
+								["description"] = "This item will allow you to catch the Rare fish Coldriver Carp in Highmountain.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 5,			-- Coldriver Carp (Criteria)
+										["itemID"] = 133732,		-- Coldriver Carp (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 5,			-- Coldriver Carp (Criteria)
+										["itemID"] = 139659,		-- Coldriver Carp (Item)
+									},
+								},
+							}),
+							i(133709, {		-- Funky Sea Snail
+								["description"] = "The short buff will eventually expire and this item will disappear from your inventory. When it does, the attached mob will spawn.",
+								["groups"] = {
+									n(102347, {
+										["description"] = "After the short buff expires, this mob spawns. Kill it for the lure.",
+										["groups"] = {
+											dr(95, i(133710)), 	-- Salmon Lure
+										},
+									}),
+								},
+							}),
+							i(133710, {		-- Salmon Lure
+								["description"] = "This item will allow you to catch the Rare fish Ancient Highmountain Salmon in Highmountain.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 2,			-- Ancient Highmountain Salmon (Criteria)
+										["itemID"] = 133733,		-- Ancient Highmountain Salmon (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 2,			-- Ancient Highmountain Salmon (Criteria)
+										["itemID"] = 139660,		-- Ancient Highmountain Salmon (Item)
+									},
+								},
+							}),
+							i(133711, {		-- Swollen Murloc Egg
+								["description"] = "This item that will spawn a Swamprock Tadpole that grants the Blessing of the Murlocs buff, increasing your chance to fish up Mountain Puffer.",
+								["groups"] = {
+									n(102339, {		-- Swamprock Tadpole
+										["description"] = "Casts the Blessing of the Murlocs buff on you, increasing your chance to fish up Mountain Puffer.",
+										["groups"] = {
+											spell(202056, {		-- Blessing of the Murlocs
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 10,		-- Mountain Puffer (Criteria)
+													["itemID"] = 133731,		-- Mountain Puffer (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 10,		-- Mountain Puffer (Criteria)
+													["itemID"] = 139658,		-- Mountain Puffer (Item)
+												},
+											}),
+										},
+									}),
+								},
+							}),
+						}),
+						ach(11725, { 	-- Fisherfriend of the Isles
+							faction(2099, {	-- Akule Riverhorn
+								["groups"] = {
+									i(146960, {		-- Ancient Totem Fragment
+										i(147310),	-- Floating Totem
+										i(152556), 	-- Trawler Totem
+									}),
+								},
+								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF32.4, 41.8|r at the bottom of Thunder Totem in the boat on the water.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								["requireSkill"] = 356,
+								["creatureID"] = 120457
+							}),
+						}),
+					}),
+					prof(197, {	-- Tailoring
+						desc(i(137681), "Can drop from any Feltotem."),	-- Recipe: Bloodtotem Saddle Blanket
+					}),
+				}),
 				n(-17, { 	-- Quests
 						ach(10059, { -- Ain't No Mountain High Enough
 							crit(1, { -- The Rivermane Tribe
@@ -1454,6 +1480,176 @@ _.Zones =
 							["qg"] = 98948, -- Hrul Sharphoof
 							["requireSkill"] = 165,
 						}),
+						--[[					
+					n(-34, {	-- World Quests					
+						q(43985),	-- A Dark Tide
+						q(45840),	-- Assault on Highmountain
+						q(41705),	-- Assault on Thunder Totem
+						q(41026),	-- Back to the Shadows
+						q(46191),	-- Balinar
+						q(45071),	-- Barrels o' Fun
+						q(40978),	-- Bears Behaving Badly
+						q(40951),	-- Bitestone Bazaar
+						q(40925),	-- Bitestone Burglary
+						q(40980),	-- Boilback Plague
+						q(41310),	-- Border Reinforcements
+						q(41308),	-- Border Reinforcements
+						q(46193),	-- Borne of Fel
+						q(41203),	-- Bright Leystone Deposits
+						q(41208),	-- Brimstone Destroyer
+						q(41209),	-- Brimstone Destroyer
+						q(41210),	-- Brimstone Destroyer
+						q(41706),	-- Briny Waters
+						q(41233),	-- Bristled Bear Skin
+						q(41526),	-- Bushy Foxflower
+						q(41238),	-- Calcified Wormscales
+						q(41623),	-- Champions of Highmountain
+						q(46196),	-- Class Dismissed
+						q(41201),	-- Coarse Leystone Outcropping
+						q(46183),	-- Commander Zarthak
+						q(41699),	-- Crabby Crunchies
+						q(41622),	-- Crawliac's Legacy
+						q(41095),	-- Critical Crops
+						q(41202),	-- Crude Leystone Seams
+						q(41685),	-- DANGER: Ala'washte
+						q(41695),	-- DANGER: Defilia
+						q(41093),	-- DANGER: Durguth
+						q(41696),	-- DANGER: Mawat'aki
+						q(41686),	-- DANGER: Olokk the Shipbreaker
+						q(41703),	-- DANGER: Ormagrogg
+						q(41816),	-- DANGER: Oubdob da Smasher
+						q(41884),	-- Dark Tales
+						q(41013),	-- Darkbrul Arena
+						q(41835),	-- Deworming
+						q(41024),	-- Dirge of the Dead
+						q(43767),	-- Enigmatic
+						q(39424),	-- Everything!
+						q(41561),	-- Felhide
+						q(41560),	-- Felhide
+						q(41239),	-- Felhide
+						q(41512),	-- Felwort
+						q(41225),	-- Felwort
+						q(41511),	-- Felwort
+						q(41432),	-- Fiery Leystone Deposits
+						q(41219),	-- Flourishing Foxflower
+						q(41228),	-- Foxflower Cluster
+						q(41544),	-- Foxflower Cluster
+						q(46197),	-- From the Skies They Fel
+						q(41014),	-- Fury Road
+						q(46184),	-- Gelgothar
+						q(41701),	-- Gettin' Tuffer
+						q(41882),	-- Grey Idols
+						q(41127),	-- Gunksnout Infestation
+						q(41204),	-- Hard Leystone Deposits
+						q(44746),	-- Helarjar Landing: Rockaway Coast
+						q(41243),	-- Huge Highmountain Salmon
+						q(41609),	-- Huge Highmountain Salmon
+						q(46185),	-- Iroxus
+						q(42064),	-- It's Illid... Wait.
+						q(46186),	-- Ix'dreloth
+						q(46187),	-- Larthogg
+						q(43764),	-- Ley Race
+						q(41196),	-- Leystone Basilisks
+						q(41198),	-- Leystone Basilisks
+						q(41199),	-- Leystone Rumblers
+						q(45048),	-- Like the Wind
+						q(41596),	-- Lively Highmountain Salmon
+						q(41244),	-- Lively Highmountain Salmon
+						q(41597),	-- Lively Highmountain Salmon
+						q(41091),	-- Lords of the Hills
+						q(41090),	-- Lords of the Hills
+						q(41089),	-- Lords of the Hills
+						q(41433),	-- Massive Leystone Deposits
+						q(41253),	-- Migrating Highmountain Salmon
+						q(41122),	-- Mists Take You
+						q(41076),	-- Munitions Testing
+						q(41077),	-- Munitions Testing
+						q(41078),	-- Munitions Testing
+						q(46188),	-- Orgrokk
+						q(41057),	-- Primal Payback
+						q(39462),	-- Primal Payback
+						q(41055),	-- Primal Payback
+						q(41416),	-- Retake the Skyhorn
+						q(41789),	-- Return to the Crag
+						q(41144),	-- Return to the River
+						q(40985),	-- Rimescale Naga Incursion: Highmountain
+						q(41025),	-- Rise of the Fallen
+						q(40966),	-- Ritualists in Our Midsts
+						q(41624),	-- Rocko Needs a Shave
+						q(41200),	-- Rough Leystone Outcropping
+						q(46262),	-- Save the Tadpoles!
+						q(41691),	-- Sea of Feathers
+						q(41234),	-- Shaggy Saber Hide
+						q(46189),	-- Shel'zuul
+						q(41692),	-- Shipwreck Scavengers
+						q(41242),	-- Slab of Bacon
+						q(41549),	-- Slab of Bacon
+						q(41550),	-- Slab of Bacon
+						q(41687),	-- Snail Fight!
+						q(44892),	-- Snowfeather Swarm!
+						q(40920),	-- Stonebinder Bounty
+						q(41224),	-- Supplies Needed: Foxflower
+						q(41207),	-- Supplies Needed: Leystone
+						q(41237),	-- Supplies Needed: Stonehide Leather
+						q(46195),	-- Swarming Skies
+						q(42086),	-- The Feltotem
+						q(43448),	-- The Frozen King
+						q(43766),	-- The Magic of Flight
+						q(41232),	-- Thick Ironhorn Hide
+						q(40896),	-- Threnody of Chieftains
+						q(44823),	-- Thunder Totem Cleanup Detail
+						q(40282),	-- Tiny Poacher, Tiny Animals
+						q(40280),	-- Training with Bredda
+						q(46190),	-- Ulgrom
+						q(41011),	-- Umbralshard Rituals
+						q(41428),	-- Unstable Portal
+						q(41665),	-- Vantus Rune Work Order: Ursoc
+						q(41824),	-- WANTED: Arru
+						q(44289),	-- WANTED: Arru
+						q(41836),	-- WANTED: Bodash the Hoarder
+						q(43616),	-- WANTED: Bodash the Hoarder
+						q(41828),	-- WANTED: Bristlemaul
+						q(44290),	-- WANTED: Bristlemaul
+						q(41826),	-- WANTED: Crawshuk the Hungry
+						q(44291),	-- WANTED: Crawshuk the Hungry
+						q(43455),	-- WANTED: Devouring Darkness
+						q(43617),	-- WANTED: Devouring Darkness
+						q(41819),	-- WANTED: Gurbog da Basher
+						q(43618),	-- WANTED: Gurbog da Basher
+						q(41818),	-- WANTED: Majestic Elderhorn
+						q(44292),	-- WANTED: Majestic Elderhorn
+						q(41844),	-- WANTED: Sekhan
+						q(44294),	-- WANTED: Sekhan
+						q(41821),	-- WANTED: Shara Felbreath
+						q(43619),	-- WANTED: Shara Felbreath
+						q(41838),	-- WANTED: Slumber
+						q(44293),	-- WANTED: Slumber
+						q(41227),	-- Warden Tower Assault: Cordana's Apex
+						q(41257),	-- Warden Tower Assault: Cordana's Apex
+						q(41420),	-- Warden Tower Assault: Nightwatcher's Perch
+						q(41421),	-- Warden Tower Assault: Nightwatcher's Perch
+						q(41205),	-- Warm Leystone Deposits
+						q(41145),	-- Water of Life
+						q(41321),	-- Weapons of Deathwing
+						q(41414),	-- Weapons of Deathwing
+						q(41252),	-- Wild Northern Barracuda
+						q(41766),	-- Wildlife Protection Force
+						q(41525),	-- Wispy Foxflower
+						q(46194),	-- Wolves of the Legion
+						q(41677),	-- Work Order: Auto-Hammer
+						q(41659),	-- Work Order: Avalanche Elixirs
+						q(41641),	-- Work Order: Battlebound Armbands
+						q(41223),	-- Work Order: Foxflower
+						q(41240),	-- Work Order: Highmountain Salmon
+						q(41206),	-- Work Order: Leystone
+						q(41647),	-- Work Order: Silkweave Robe
+						q(41653),	-- Work Order: Skystone Pendant
+						q(41235),	-- Work Order: Stonehide Leather
+						q(41671),	-- Work Order: Word of Strength
+						q(46192),	-- Zar'vok
+						q(46279),	-- Zargrom
+					}),
+--]]					
 				}),	
 				n(-16, { 	-- Rares
 					{
@@ -1680,7 +1876,7 @@ _.Zones =
 	--				n(97928, { 		-- Tamed Coralback 	}), 
 --]]
 				}),
-				n(-2, { -- Vendors
+				n(-2, { 	-- Vendors
 					n(93975, { -- Leyweaver Yaphisteia
 						i(127027, { -- Pattern: Imbued Silkweave Slippers
 							i(126996), -- Imbued Silkweave Slippers
@@ -1723,203 +1919,6 @@ _.Zones =
 					}),
 					n(115887, { -- Trinket
 						i(142369), -- Ivory Hawkstrider Mount
-					}),
-				}),
-				n(-38, { 	-- Profession
-					prof(185, { -- Cooking
-						desc(i(133820), "Can drop from any Drogbar."), 	-- Recipe: Drogbar-Style Salmon
-					}),
-					n(-184, { -- Herbalism
-						i(129119, {	-- Foxflower Sample
-							q(40024, { -- Foxflower Sample
-								sp(193421),	-- Herbalism Technique: Foxflower (Rank 1)
-							}),
-						}),
-						i(129137, {	-- Nibbled Foxflower Stem
-							q(40025) -- Teeny Bite Marks
-						}),
-						i(129278, { -- Foxflower Scent Gland
-							q(40028, { -- The Pied Picker
-								sp(193423),	-- Herbalism Technique: Foxflower (Rank 3)
-							}),
-						}),
-						i(129122, {	-- Felwort Sample
-							q(40040, { --Felwort Sample
-								sp(193430), -- Herbalism Technique: Felwort (Rank 1)
-							}),
-						}),
-					}),
-					prof(393, { -- Skinning
-						n(97449, { 		-- Bristlemaul
-							["groups"] = {
-								{
-									["itemID"] = 139893,	-- Skinning Technique: Unbroken Claw
-									["collectible"] = false,
-									["dr"] = 6,
-									["groups"] = {
-										recipe(194170),	-- Unbroken Tooth
-									},
-								},
-							},
-							["questID"] = 40405,
-						}),
-					}),
-					prof(356, { -- Fishing
-						n(-100001, { 	-- Artifact
-							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-							["lvl"] = 110,
-							["groups"] = {
-								{
-									["itemID"] = 133887,	-- Luminous Pearl (Item)
-									["questID"] = 40960,	-- Luminous Pearl (Quest)
-								}
-							},
-						}),
-						ach(10596, {	-- Bigger Fish to Fry
-							n(-218, {		-- Coastal
-								i(133722, {		-- Axefish Lure
-									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["groups"] = {
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish (Criteria)
-											["itemID"] = 133740,		-- Axefish (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish (Criteria)
-											["itemID"] = 139667,		-- Axefish (Item)
-										},
-									},
-								}),
-								i(133724, {		-- Decayed Whale Blubber
-									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["groups"] = {
-										i(133795),	-- Ravenous Fly
-									}
-								}),
-								i(133721, {		-- Message in a Bottle
-									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["groups"] = {
-										i(133722)		-- Axefish Lure
-									},
-								}),
-								i(133795, {		-- Ravenous Fly
-									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["groups"] = {
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
-										},
-									},
-								}),
-								i(133723, {		-- Stunned, Angry Shark
-									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["groups"] = {
-										n(102359, {		-- Landlocked Shark
-											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["groups"] = {
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-													["itemID"] = 133741,		-- Seabottom Squid (Item)
-												},
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-													["itemID"] = 139668,		-- Seabottom Squid (Item)
-												},
-											},
-										})
-									},
-								}),
-							}),
-							i(133712, {		-- Frost Worm
-								["description"] = "This item will allow you to catch the Rare fish Coldriver Carp in Highmountain.",
-								["groups"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 5,			-- Coldriver Carp (Criteria)
-										["itemID"] = 133732,		-- Coldriver Carp (Item)
-									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 5,			-- Coldriver Carp (Criteria)
-										["itemID"] = 139659,		-- Coldriver Carp (Item)
-									},
-								},
-							}),
-							i(133709, {		-- Funky Sea Snail
-								["description"] = "The short buff will eventually expire and this item will disappear from your inventory. When it does, the attached mob will spawn.",
-								["groups"] = {
-									n(102347, {
-										["description"] = "After the short buff expires, this mob spawns. Kill it for the lure.",
-										["groups"] = {
-											dr(95, i(133710)), 	-- Salmon Lure
-										},
-									}),
-								},
-							}),
-							i(133710, {		-- Salmon Lure
-								["description"] = "This item will allow you to catch the Rare fish Ancient Highmountain Salmon in Highmountain.",
-								["groups"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 2,			-- Ancient Highmountain Salmon (Criteria)
-										["itemID"] = 133733,		-- Ancient Highmountain Salmon (Item)
-									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 2,			-- Ancient Highmountain Salmon (Criteria)
-										["itemID"] = 139660,		-- Ancient Highmountain Salmon (Item)
-									},
-								},
-							}),
-							i(133711, {		-- Swollen Murloc Egg
-								["description"] = "This item that will spawn a Swamprock Tadpole that grants the Blessing of the Murlocs buff, increasing your chance to fish up Mountain Puffer.",
-								["groups"] = {
-									n(102339, {		-- Swamprock Tadpole
-										["description"] = "Casts the Blessing of the Murlocs buff on you, increasing your chance to fish up Mountain Puffer.",
-										["groups"] = {
-											spell(202056, {		-- Blessing of the Murlocs
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 10,		-- Mountain Puffer (Criteria)
-													["itemID"] = 133731,		-- Mountain Puffer (Item)
-												},
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 10,		-- Mountain Puffer (Criteria)
-													["itemID"] = 139658,		-- Mountain Puffer (Item)
-												},
-											}),
-										},
-									}),
-								},
-							}),
-						}),
-						ach(11725, { 	-- Fisherfriend of the Isles
-							faction(2099, {	-- Akule Riverhorn
-								["groups"] = {
-									i(146960, {		-- Ancient Totem Fragment
-										i(147310),	-- Floating Totem
-										i(152556), 	-- Trawler Totem
-									}),
-								},
-								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF32.4, 41.8|r at the bottom of Thunder Totem in the boat on the water.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requireSkill"] = 356,
-								["creatureID"] = 120457
-							}),
-						}),
-					}),
-					prof(197, {	-- Tailoring
-						desc(i(137681), "Can drop from any Feltotem."),	-- Recipe: Bloodtotem Saddle Blanket
 					}),
 				}),
 				n(-34, { 	-- World Quests
@@ -2018,7 +2017,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
 				}),
-				n(0, { -- Zone Drops
+				n(0, { 		-- Zone Drops
 					["groups"] = {
 						i(121069, { -- Brulwurm Scale
 							["groups"] = {
@@ -2390,6 +2389,45 @@ _.Zones =
 						95310,	-- Witchwood Hag
 						90633,	-- Wrathguard
 						115677,	-- Young Snowfeather
+					},
+				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-4, {	-- Achievements
+							un(2, ach(11139, {	-- Field Medic!
+								["groups"] = {
+									un(39, title(340, {	-- TITLE: Field Medic!
+										["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
+										["groups"] = {
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 6, 		-- Crumpled Letter (Criteria)
+												["itemID"] = 139524,		-- Crumpled Letter
+												--["questID"] = 42333,		-- Crumpled Letter (Quest)
+												["description"] = "Western Highmountain next to Skyhorn.",
+												["qgs"] = {96774}
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 7, 		-- Crumpled Note (Criteria)
+												["itemID"] = 139525,		-- Crumpled Note
+												--["questID"] = 42334,		-- Crumpled Note (Quest)
+												["description"] = "Northern Highmountain.",
+												["qgs"] = {104323}
+											},
+											{
+												["achievementID"] = 11139,	-- Field Medic (Achievement)
+												["criteriaID"] = 9, 		-- Fevered Letter (Criteria)
+												["itemID"] = 139523,		-- Fevered Letter
+												--["questID"] = 42323,		-- Fevered Letter (Quest)
+												["description"] = "Southern Highmountain.",
+												["qgs"] = {103177}
+											}
+										},
+									})),
+								},
+							})),
+						}),
 					},
 				}),
 			},

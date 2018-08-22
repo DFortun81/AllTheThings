@@ -5,7 +5,12 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(790, {	-- Eye of Azshara
-			["groups"] = {			
+			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(1870, { -- Eye of Azshara, Azsuna
+						["coord"] = { 38.2, 46 },
+					}),
+				}),
 				n(-25, { -- Pet Battle
 					p(1914), -- Coastal Sandpiper
 					p(1728), -- Juvenile Scuttleback

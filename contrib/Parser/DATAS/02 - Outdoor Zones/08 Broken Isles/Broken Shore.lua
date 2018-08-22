@@ -6,414 +6,6 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(646, { 	-- Broken Shore
 			["groups"] = {
-				n(-10048, { -- Mage Tower
-					["groups"] = bubbleDown({["u"] = 41}, {
-						q(46065, { -- An Impossible Foe
-							["groups"] = {
-								{ 	-- Apocalypse
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactsoulrend_d_06.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 6 },
-									["artifactID"] = 947,
-								},
-								{	-- Fangs of Ashamane
-									["ignoreSource"] = true,
-									["classes"] = { 11 },
-									["artifactID"] = 435,
-								},
-								{	-- Felo'melorn
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactfelomelorn_d_05.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 8 },
-									["artifactID"] = 489,
-								},
-								{	-- The Dreadblades
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_03.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 4 },
-									["artifactID"] = 702,
-								},
-								{	-- The Fist of Ra-den
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactstormfist_d_04.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 7 },
-									["artifactID"] = 684,
-								},
-								{	-- Warswords of the Valarjar
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_04.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 1 },
-									["artifactID"] = 665,
-								},
-							},
-							["classes"] = {
-								6, -- Unholy Death Knight
-								11, -- Feral Druid
-								8, -- Fire Mage
-								4, -- Outlaw Rogue
-								7, -- Elemental Shaman
-								1, -- Fury Warrior
-							},
-							["qgs"] = {
-								115638,	-- Agatha
-								115719,	-- Imp Servant
-								115641,	-- Smoldering Imp
-								115642,	-- Umbral Imp
-								115640,	-- Fuming Imp
-							},
-						}),
-						q(44925, { -- Closing the Eye
-							["groups"] = {
-								{ 	-- Blades of the Fallen Prince
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_03.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 6 },
-									["artifactID"] = 383,
-								},
-								{ 	-- Twinblades of the Deceiver
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_04.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 12 },
-									["artifactID"] = 39,
-								},
-								{ 	-- Talonclaw
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_polearm_2h_artifacteagle_d_06.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 3 },
-									["artifactID"] = 973,
-								},
-								{ 	-- Fangs of the Devourer
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_05.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 4 },
-									["artifactID"] = 84,
-								},
-								{ 	-- Strom'kar, the Warbreaker
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactarathor_d_05.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 1 },
-									["artifactID"] = 806,
-								},
-							},
-							["classes"] = {
-								6, -- Frost Death Knight
-								12, -- Havoc Demon Hunter
-								3, -- Survival Hunter
-								4, -- Subtlety Rogue
-								1, -- Arms Warrior
-							},
-							["qgs"] = {
-								115244,	-- Archmage Xylem
-								116839,	-- Corrupting Shadows
-							},
-						}),
-						q(46035, { -- End of the Risen Threat
-							["groups"] = {
-								{ 	-- G'Hanir, the Mother Tree
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactnordrassil_d_06.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 11 },
-									["artifactID"] = 875,
-								},
-								{ 	-- The Silver Hand
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_2h_artifactsilverhand_d_03.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 2 },
-									["artifactID"] = 584,
-								},
-								{ 	-- Sheilun, Staff of the Mists
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactshaohao_d_06.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 10 },
-									["artifactID"] = 933,
-								},
-								{ 	-- T'uure, Beacon of the Naaru
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactheartofkure_d_04.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 5 },
-									["artifactID"] = 758,
-								},
-								{ 	-- Sharas'dal, Scepter of Tides
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactazshara_d_05.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 7 },
-									["artifactID"] = 787,
-								},
-							},
-							["classes"] = {
-								11, -- Restoration Druid
-								2, -- Holy Paladin
-								10, -- Mistweaver Monk
-								5, -- Holy Priest
-								7, -- Restoration Shaman
-							},
-							["qgs"] = {
-								118447,	-- Commander Jarod Shadowsong
-								118448,	-- Granny Marl
-								118451,	-- Callie Carrington
-								118982,	-- Lord Erdris Thorn <The Rooksguard>
-								122397,	-- Corrupted Risen Arbalest
-								119478,	-- Corrupted Risen Mage
-								119474,	-- Corrupted Risen Soldier
-							},
-						}),
-						q(45627, { -- Feltotem's Fall
-							["groups"] = {
-								{ 	-- Titanstrike
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_firearm_2h_artifactlegion_d_05.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 3 },
-									["artifactID"] = 466,
-								},
-								{ 	-- Fists of the Heavens
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_06.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 10 },
-									["artifactID"] = 941,
-								},
-								{ 	-- Light's Wrath
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifacttome_d_04.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 5 },
-									["artifactID"] = 956,
-								},
-								{ 	-- Scepter of Sargeras
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactsargeras_d_06.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 9 },
-									["artifactID"] = 915,
-								},
-							},
-							["classes"] = {
-								3, -- Beast Mastery Hunter
-								10, -- Windwalker Monk
-								5, -- Discipline Priest
-								9, -- Destruction Warlock
-							},
-							["qgs"] = {
-								117230,	-- Tugar Bloodtotem
-								117484,	-- Jormog the Behemoth
-							},
-						}),
-						q(45526, { -- The God-Queen's Fury
-							["groups"] = {
-								{ 	-- Aluneth
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactaegwynsstaff_d_05.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 8 },
-									["artifactID"] = 144,
-								},
-								{ 	-- Ashbringer
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactashbringerlightning_d_03.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 2 },
-									["artifactID"] = 23,
-								},
-								{ 	-- The Kingslayers
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_06.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 4 },
-									["artifactID"] = 901,
-								},
-								{ 	-- Doomhammer
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactdoomhammer_d_05.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 7 },
-									["artifactID"] = 301,
-								},
-								{ 	-- Skull of the Man'ari
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactskulloferedar_d_05.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 9 },
-									["artifactID"] = 828,
-								},
-							},
-							["classes"] = {
-								8, -- Arcane Mage
-								2, -- Retribution Paladin
-								4, -- Assassination Rogue
-								7, -- Enhancemeent Shaman
-								9, -- Demonology Warlock
-							},
-							["qgs"] = {
-								116484,	-- Sigryn
-								116499,	-- Jarl Velbrand
-								116496,	-- Runeseer Faljar
-							},
-						}),
-						q(45416, { -- The Highlord's Return
-							["groups"] = {
-								{ 	-- Maw of the Damned
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_2h_artifactmaw_d_03.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 6 },
-									["artifactID"] = 364,
-								},
-								{ 	-- Aldrachi Warblades
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_06right.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 12 },
-									["artifactID"] = 857,
-								},
-								{ 	-- Claws of Ursoc
-									["ignoreSource"] = true,
-									["classes"] = { 11 },
-									["artifactID"] = 990,
-								},
-								{ 	-- Fu Zan, the Wanderer's Companion
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactmonkeyking_d_05.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 10 },
-									["artifactID"] = 352,
-								},
-								{ 	-- Truthguard
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactnorgannon_d_04.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 2 },
-									["artifactID"] = 718,
-								},
-								{ 	-- Scale of the Earth-Warder
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactmagnar_d_06.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 1 },
-									["artifactID"] = 861,
-								},
-							},
-							["classes"] = {
-								6, -- Blood Death Knight
-								12, -- Vengeance Demon Hunter
-								11, -- Guardian Druid
-								10, -- Brewmaster Monk
-								2, -- Protection Paladin 
-								1, -- Protection Warrior
-							},
-							["qgs"] = {
-								117933,	-- Inquisitor Variss
-								118032, -- Tormenting Eye
-								103928,	-- Smoldering Infernal
-								118044,	-- Nether Horror
-								117198,	-- Highlord Kruul
-							},
-						}),
-						q(46127, { -- Thwarting the Twins
-							["groups"] = {
-								{ 	-- Scythe of Elune
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactelune_d_06.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 11 },
-									["artifactID"] = 929,
-								},
-								{ 	-- Thas'dorah, Legacy of the Windrunners
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_bow_1h_artifactwindrunner_d_06.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 3 },
-									["artifactID"] = 965,
-								},
-								{ 	-- Ebonchill
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactantonidas_d_06.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 8 },
-									["artifactID"] = 885,
-								},
-								{ 	-- Xal'atath, Blade of the Black Empire
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactcthun_d_05.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 5 },
-									["artifactID"] = 261,
-								},
-								{ 	-- Ulthalesh, the Deadwind Harvester
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactdeadwind_d_06.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 9 },
-									["artifactID"] = 972,
-								},
-							},
-							["classes"] = {
-								11, -- Balance Druid
-								3, -- Marksmanship Hunter
-								8, -- Frost Mage
-								5, -- Shadow Priest
-								9, -- Affliction Warlock
-							},
-							["qgs"] = {
-								116410,	-- Karam Magespear
-								116409,	-- Raest Magespear
-								118698,	-- Hand from Beyond
-								119098,	-- Thing of Nightmare
-							},
-						}),
-					}),
-					["description"] = "The Mage Tower Challenges were solo encounters designed for all of the 36 talent specializations in the game during Legion. They were designed to be challenging, but beatable. Access to these challenges was removed with the BFA Prepatch 8.0.1.\n\nCongratulations to everyone that worked really hard attempting to collect all of these appearances!\n\n - Crieve (31/36)",
-					["u"] = 41,
-				}),
 				n(-10049, { -- Command Center
 					["groups"] =  {
 						n(122719, { -- Scouting Map
@@ -433,64 +25,7 @@ _.Zones =
 					},
 					["achievementID"] = 11736, -- Assume Command
 				}),
-				n(-10050, { -- Nether Disruptor
-					["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
-						q(46774, { -- The Nether Disruptor
-							["groups"] = {
-								i(147451), -- Armorcrafter's Commendation
-							},
-							["qg"] = 120183, -- Commander Chambers
-						}),
-						i(147451, { -- Armorcrafter's Commendation
-							q(46696, { -- Fashion History and a Philosophy of Style
-								["groups"] = {},
-								["qg"] = 120221, -- Eliezer Hammerbeard
-								["description"] = "You must turn in the Commendation before this quest becomes available.",
-								["sourceQuest"] = 46774, -- The Nether Disruptor
-							}),
-						}),
-						q(46696, { -- The Legend of the Four Hammers
-							["groups"] = {},
-							["qg"] = 120221, -- Eliezer Hammerbeard
-							["sourceQuest"] = 46696, -- Fashion History and a Philosophy of Style
-						}),
-						q(46700, { -- Armor of the Ancients
-							["groups"] = {},
-							["qg"] = 120221, -- Eliezer Hammerbeard
-							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
-						}),
-						q(46698, { -- The Dragonhunter
-							["groups"] = {},
-							["qg"] = 120221, -- Eliezer Hammerbeard
-							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
-						}),
-						q(46697, { -- The Godfighter
-							["groups"] = {},
-							["qg"] = 120221, -- Eliezer Hammerbeard
-							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
-						}),
-						q(46699, { -- The Hellslayer
-							["groups"] = {},
-							["qg"] = 120221, -- Eliezer Hammerbeard
-							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
-						}),
-						q(46701, { -- Hammer of Forgotten Heroes
-							["groups"] = {},
-							["qg"] = 120221, -- Eliezer Hammerbeard
-							["description"] = "Once you've completed this quest, you should earn the ability to craft the legendary belt.",
-							["sourceQuests"] = { 46700, 46698, 46697, 46699 }, -- Armor of the Ancients, The Dragonhunter, The Godfighter, The Hellslayer
-						}),
-					}),
-				}),
-				n(119305, {	-- Legionfall Construction Table
-					ach(11735),	-- Take Command
-					ach(11736),	-- Assume Command
-					ach(11731),	-- A Magic Contribution
-					ach(11732),	-- A Magnificent Contribution
-					ach(11737),	-- Disrupting the Nether
-					ach(11738),	-- It'll Nether Happen
-				}),
-				n(-169, { -- Emissary Quests
+				n(-169, { 	-- Emissary Quests
 					q(48641, { -- Armies of Legionfall
 						["groups"] = {
 							i(157830, { -- Legionfall Spoils
@@ -713,7 +248,163 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-17, { -- Quests
+				n(-228, {	-- Flight Paths
+					fp(1942, { -- Aalgen Point, Broken Shore
+						["coord"] = { 70.6, 47.6 },
+					}),
+					fp(1862, { -- Acherus: The Ebon Hold
+						["coord"] = { 97.4, 56 },
+						["classes"] = { 6 },	-- Death Knight
+					}),
+					fp(1941, { -- Deliverance Point, Broken Shore
+						["coord"] = { 45.2, 64 },
+					}),
+					fp(1856, { -- Vengeance Point, Broken Shore
+						["coord"] = { 49.6, 21 },
+					}),
+				}),
+				n(119305, {	-- Legionfall Construction Table
+					ach(11735),	-- Take Command
+					ach(11736),	-- Assume Command
+					ach(11731),	-- A Magic Contribution
+					ach(11732),	-- A Magnificent Contribution
+					ach(11737),	-- Disrupting the Nether
+					ach(11738),	-- It'll Nether Happen
+				}),
+				n(-10050, { -- Nether Disruptor
+					["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
+						q(46774, { -- The Nether Disruptor
+							["groups"] = {
+								i(147451), -- Armorcrafter's Commendation
+							},
+							["qg"] = 120183, -- Commander Chambers
+						}),
+						i(147451, { -- Armorcrafter's Commendation
+							q(46696, { -- Fashion History and a Philosophy of Style
+								["groups"] = {},
+								["qg"] = 120221, -- Eliezer Hammerbeard
+								["description"] = "You must turn in the Commendation before this quest becomes available.",
+								["sourceQuest"] = 46774, -- The Nether Disruptor
+							}),
+						}),
+						q(46696, { -- The Legend of the Four Hammers
+							["groups"] = {},
+							["qg"] = 120221, -- Eliezer Hammerbeard
+							["sourceQuest"] = 46696, -- Fashion History and a Philosophy of Style
+						}),
+						q(46700, { -- Armor of the Ancients
+							["groups"] = {},
+							["qg"] = 120221, -- Eliezer Hammerbeard
+							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
+						}),
+						q(46698, { -- The Dragonhunter
+							["groups"] = {},
+							["qg"] = 120221, -- Eliezer Hammerbeard
+							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
+						}),
+						q(46697, { -- The Godfighter
+							["groups"] = {},
+							["qg"] = 120221, -- Eliezer Hammerbeard
+							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
+						}),
+						q(46699, { -- The Hellslayer
+							["groups"] = {},
+							["qg"] = 120221, -- Eliezer Hammerbeard
+							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
+						}),
+						q(46701, { -- Hammer of Forgotten Heroes
+							["groups"] = {},
+							["qg"] = 120221, -- Eliezer Hammerbeard
+							["description"] = "Once you've completed this quest, you should earn the ability to craft the legendary belt.",
+							["sourceQuests"] = { 46700, 46698, 46697, 46699 }, -- Armor of the Ancients, The Dragonhunter, The Godfighter, The Hellslayer
+						}),
+					}),
+				}),
+				n(-38, { 	-- Profession
+					prof(356, { -- Fishing
+						ach(10596, {	-- Bigger Fish to Fry
+							n(-218, {		-- Coastal
+								i(133722, {		-- Axefish Lure
+									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 133740,		-- Axefish (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 139667,		-- Axefish (Item)
+										},
+									},
+								}),
+								i(133724, {		-- Decayed Whale Blubber
+									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
+									["groups"] = {
+										i(133795),	-- Ravenous Fly
+									}
+								}),
+								i(133721, {		-- Message in a Bottle
+									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+									["groups"] = {
+										i(133722)		-- Axefish Lure
+									},
+								}),
+								i(133795, {		-- Ravenous Fly
+									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
+										},
+									},
+								}),
+								i(133723, {		-- Stunned, Angry Shark
+									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
+									["groups"] = {
+										n(102359, {		-- Landlocked Shark
+											["description"] = "Drops 7-9 Seabottom Squid when killed.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 133741,		-- Seabottom Squid (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 139668,		-- Seabottom Squid (Item)
+												},
+											},
+										})
+									},
+								}),
+							}),
+						}),
+						ach(11725, { 	-- Fisherfriend of the Isles
+							faction(2102, {	-- Impus
+								["groups"] = {
+									i(146963, {		-- Desecrated Seaweed
+										i(147312), -- Demon Noggin
+										i(152554), -- Desecrated Seaweed Shirt
+									}),
+								},
+								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF34.0, 54.0|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								["requireSkill"] = 356,
+								["creatureID"] = 120460,
+								--["factionID"] = 2102
+							}),
+						}),
+					}),
+				}),
+				n(-17, { 	-- Quests
 					ach(11546, { -- Breaching the Tomb
 						["groups"] = {
 							crit(1, { -- Armies of Legionfall
@@ -1534,7 +1225,7 @@ _.Zones =
 				}),
 				--]]
 				}),
-				n(-16, { -- Rares
+				n(-16, { 	-- Rares
 					{
 						["achievementID"] = 11841,	-- Naxt Victim
 						["description"] = "How to summon the specific bosses is very simple. Each different Sentinax Beacon summons mobs that drop additional Sentinax Beacons for that specific Beacon and ultimately the Portal Stone (boss).\n\nYou get the Uncommon (green quality) Sentinax Beacons from the standard mobs in the area, you then need to farm the mobs that come out of the Sentinax Portal until they drop a Rare (blue quality) Sentinax Beacon and use it to empower the portal, it is only after this that the Portal Stone can drop. Keep using all the Rare Sentinax Beacons you get to extend the duration of the Sentinax Beacon.",
@@ -1701,7 +1392,7 @@ _.Zones =
 						["questID"] = 46100,	-- Rare Elite 11
 					},
 				}),
-				n(-77, { -- Special
+				n(-77, { 	-- Special
 					["groups"] = {
 						n(111573, { 	-- Kosumoth the Hungering
 							["groups"] = {
@@ -1803,7 +1494,7 @@ _.Zones =
 					},		
 					["icon"] = "Interface\\Icons\\Ability_Racial_PackHobgoblin",	
 				}),				
-				n(-2, { -- Vendors
+				n(-2, { 	-- Vendors
 					n(120076, { -- Treasure Master Iks'reeged
 						currency(1226, { -- Nethershard
 							i(142452), -- Lingering Wyrmtongue Essence Toy
@@ -1916,91 +1607,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-38, { -- Profession
-					prof(356, { -- Fishing
-						ach(10596, {	-- Bigger Fish to Fry
-							n(-218, {		-- Coastal
-								i(133722, {		-- Axefish Lure
-									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["groups"] = {
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish (Criteria)
-											["itemID"] = 133740,		-- Axefish (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish (Criteria)
-											["itemID"] = 139667,		-- Axefish (Item)
-										},
-									},
-								}),
-								i(133724, {		-- Decayed Whale Blubber
-									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["groups"] = {
-										i(133795),	-- Ravenous Fly
-									}
-								}),
-								i(133721, {		-- Message in a Bottle
-									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["groups"] = {
-										i(133722)		-- Axefish Lure
-									},
-								}),
-								i(133795, {		-- Ravenous Fly
-									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["groups"] = {
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
-										},
-										{
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
-										},
-									},
-								}),
-								i(133723, {		-- Stunned, Angry Shark
-									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["groups"] = {
-										n(102359, {		-- Landlocked Shark
-											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["groups"] = {
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-													["itemID"] = 133741,		-- Seabottom Squid (Item)
-												},
-												{
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-													["itemID"] = 139668,		-- Seabottom Squid (Item)
-												},
-											},
-										})
-									},
-								}),
-							}),
-						}),
-						ach(11725, { 	-- Fisherfriend of the Isles
-							faction(2102, {	-- Impus
-								["groups"] = {
-									i(146963, {		-- Desecrated Seaweed
-										i(147312), -- Demon Noggin
-										i(152554), -- Desecrated Seaweed Shirt
-									}),
-								},
-								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF34.0, 54.0|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requireSkill"] = 356,
-								["creatureID"] = 120460,
-								--["factionID"] = 2102
-							}),
-						}),
-					}),
-				}),
-				n(-34, { -- World Quests
+				n(-34, { 	-- World Quests
 					n(-322, { -- Cloak
 						i(146886), -- Felknight Greatcloak
 						i(146857), -- Mo'arg Overseer's Cloak
@@ -2104,62 +1711,472 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-40, { -- Legacy
-					n(121589, { -- Thaumaturge Vashreen <Purveryor of Exquisite Furnishings>
-						["groups"] = {
-							un(2, i(147796, { -- Relinquished Hood
-								i(146786), -- Cloth
-								i(146772), -- Leather
-								i(146781), -- Mail
-								i(146761), -- Plate
-							})),
-							un(2, i(147800, { -- Relinquished Spaulders
-								i(146791), -- Cloth
-								i(146774), -- Leather
-								i(146783), -- Mail
-								i(146763), -- Plate
-							})),
-							un(2, i(147794, { -- Relinquished Cloak
-								i(146766), -- Cloak
-							})),
-							un(2, i(147793, { -- Relinquished Chestguard
-								i(146789), -- Cloth
-								i(146773), -- Leather
-								i(146784), -- Mail
-								i(146758), -- Plate
-							})),
-							un(2, i(147786, { -- Relinquished Bracers
-								i(146792), -- Cloth
-								i(146768), -- Leather
-								i(146778), -- Mail
-								i(146765), -- Plate
-							})),
-							un(2, i(147795, { -- Relinquished Gauntlets
-								i(146787), -- Cloth
-								i(146771), -- Leather
-								i(146779), -- Mail
-								i(146759), -- Plate
-							})),
-							un(2, i(147791, { -- Relinquished Girdle
-								i(146785), -- Cloth
-								i(146775), -- Leather
-								i(146777), -- Mail
-								i(146760), -- Plate
-							})),
-							un(2, i(147797, { -- Relinquished Leggings
-								i(146788), -- Cloth
-								i(146770), -- Leather
-								i(146782), -- Mail
-								i(146762), -- Plate
-							})),
-							un(2, i(147792, { -- Relinquished Treads
-								i(146790), -- Cloth
-								i(146769), -- Leather
-								i(146780), -- Mail
-								i(146764), -- Plate
-							})),
-						},
-						["description"] = "|cff66ccffThis vendor no longer exists on the Broken Shore and the only way to obtain these appearances are by the Legion Invasion bosses, and Legion Invasion quests only.|r"
+				n(-40, { 	-- Legacy
+					n(-10048, { -- Mage Tower
+						["groups"] = bubbleDown({["u"] = 41}, {
+							q(46065, { -- An Impossible Foe
+								["groups"] = {
+									{ 	-- Apocalypse
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactsoulrend_d_06.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 6 },
+										["artifactID"] = 947,
+									},
+									{	-- Fangs of Ashamane
+										["ignoreSource"] = true,
+										["classes"] = { 11 },
+										["artifactID"] = 435,
+									},
+									{	-- Felo'melorn
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactfelomelorn_d_05.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 8 },
+										["artifactID"] = 489,
+									},
+									{	-- The Dreadblades
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactskywall_d_03.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 4 },
+										["artifactID"] = 702,
+									},
+									{	-- The Fist of Ra-den
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactstormfist_d_04.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 7 },
+										["artifactID"] = 684,
+									},
+									{	-- Warswords of the Valarjar
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactvigfus_d_04.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 1 },
+										["artifactID"] = 665,
+									},
+								},
+								["classes"] = {
+									6, -- Unholy Death Knight
+									11, -- Feral Druid
+									8, -- Fire Mage
+									4, -- Outlaw Rogue
+									7, -- Elemental Shaman
+									1, -- Fury Warrior
+								},
+								["qgs"] = {
+									115638,	-- Agatha
+									115719,	-- Imp Servant
+									115641,	-- Smoldering Imp
+									115642,	-- Umbral Imp
+									115640,	-- Fuming Imp
+								},
+							}),
+							q(44925, { -- Closing the Eye
+								["groups"] = {
+									{ 	-- Blades of the Fallen Prince
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_1h_artifactruneblade_d_03.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 6 },
+										["artifactID"] = 383,
+									},
+									{ 	-- Twinblades of the Deceiver
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactazgalor_d_04.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 12 },
+										["artifactID"] = 39,
+									},
+									{ 	-- Talonclaw
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_polearm_2h_artifacteagle_d_06.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 3 },
+										["artifactID"] = 973,
+									},
+									{ 	-- Fangs of the Devourer
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactfangs_d_05.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 4 },
+										["artifactID"] = 84,
+									},
+									{ 	-- Strom'kar, the Warbreaker
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactarathor_d_05.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 1 },
+										["artifactID"] = 806,
+									},
+								},
+								["classes"] = {
+									6, -- Frost Death Knight
+									12, -- Havoc Demon Hunter
+									3, -- Survival Hunter
+									4, -- Subtlety Rogue
+									1, -- Arms Warrior
+								},
+								["qgs"] = {
+									115244,	-- Archmage Xylem
+									116839,	-- Corrupting Shadows
+								},
+							}),
+							q(46035, { -- End of the Risen Threat
+								["groups"] = {
+									{ 	-- G'Hanir, the Mother Tree
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactnordrassil_d_06.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 11 },
+										["artifactID"] = 875,
+									},
+									{ 	-- The Silver Hand
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_2h_artifactsilverhand_d_03.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 2 },
+										["artifactID"] = 584,
+									},
+									{ 	-- Sheilun, Staff of the Mists
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactshaohao_d_06.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 10 },
+										["artifactID"] = 933,
+									},
+									{ 	-- T'uure, Beacon of the Naaru
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactheartofkure_d_04.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 5 },
+										["artifactID"] = 758,
+									},
+									{ 	-- Sharas'dal, Scepter of Tides
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactazshara_d_05.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 7 },
+										["artifactID"] = 787,
+									},
+								},
+								["classes"] = {
+									11, -- Restoration Druid
+									2, -- Holy Paladin
+									10, -- Mistweaver Monk
+									5, -- Holy Priest
+									7, -- Restoration Shaman
+								},
+								["qgs"] = {
+									118447,	-- Commander Jarod Shadowsong
+									118448,	-- Granny Marl
+									118451,	-- Callie Carrington
+									118982,	-- Lord Erdris Thorn <The Rooksguard>
+									122397,	-- Corrupted Risen Arbalest
+									119478,	-- Corrupted Risen Mage
+									119474,	-- Corrupted Risen Soldier
+								},
+							}),
+							q(45627, { -- Feltotem's Fall
+								["groups"] = {
+									{ 	-- Titanstrike
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_firearm_2h_artifactlegion_d_05.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 3 },
+										["artifactID"] = 466,
+									},
+									{ 	-- Fists of the Heavens
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_hand_1h_artifactskywall_d_06.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 10 },
+										["artifactID"] = 941,
+									},
+									{ 	-- Light's Wrath
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifacttome_d_04.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 5 },
+										["artifactID"] = 956,
+									},
+									{ 	-- Scepter of Sargeras
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactsargeras_d_06.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 9 },
+										["artifactID"] = 915,
+									},
+								},
+								["classes"] = {
+									3, -- Beast Mastery Hunter
+									10, -- Windwalker Monk
+									5, -- Discipline Priest
+									9, -- Destruction Warlock
+								},
+								["qgs"] = {
+									117230,	-- Tugar Bloodtotem
+									117484,	-- Jormog the Behemoth
+								},
+							}),
+							q(45526, { -- The God-Queen's Fury
+								["groups"] = {
+									{ 	-- Aluneth
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactaegwynsstaff_d_05.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 8 },
+										["artifactID"] = 144,
+									},
+									{ 	-- Ashbringer
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_sword_2h_artifactashbringerlightning_d_03.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 2 },
+										["artifactID"] = 23,
+									},
+									{ 	-- The Kingslayers
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactgarona_d_06.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 4 },
+										["artifactID"] = 901,
+									},
+									{ 	-- Doomhammer
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_mace_1h_artifactdoomhammer_d_05.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 7 },
+										["artifactID"] = 301,
+									},
+									{ 	-- Skull of the Man'ari
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_offhand_1h_artifactskulloferedar_d_05.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 9 },
+										["artifactID"] = 828,
+									},
+								},
+								["classes"] = {
+									8, -- Arcane Mage
+									2, -- Retribution Paladin
+									4, -- Assassination Rogue
+									7, -- Enhancemeent Shaman
+									9, -- Demonology Warlock
+								},
+								["qgs"] = {
+									116484,	-- Sigryn
+									116499,	-- Jarl Velbrand
+									116496,	-- Runeseer Faljar
+								},
+							}),
+							q(45416, { -- The Highlord's Return
+								["groups"] = {
+									{ 	-- Maw of the Damned
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_axe_2h_artifactmaw_d_03.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 6 },
+										["artifactID"] = 364,
+									},
+									{ 	-- Aldrachi Warblades
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_glaive_1h_artifactaldrochi_d_06right.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 12 },
+										["artifactID"] = 857,
+									},
+									{ 	-- Claws of Ursoc
+										["ignoreSource"] = true,
+										["classes"] = { 11 },
+										["artifactID"] = 990,
+									},
+									{ 	-- Fu Zan, the Wanderer's Companion
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactmonkeyking_d_05.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 10 },
+										["artifactID"] = 352,
+									},
+									{ 	-- Truthguard
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactnorgannon_d_04.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 2 },
+										["artifactID"] = 718,
+									},
+									{ 	-- Scale of the Earth-Warder
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_shield_1h_artifactmagnar_d_06.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 1 },
+										["artifactID"] = 861,
+									},
+								},
+								["classes"] = {
+									6, -- Blood Death Knight
+									12, -- Vengeance Demon Hunter
+									11, -- Guardian Druid
+									10, -- Brewmaster Monk
+									2, -- Protection Paladin 
+									1, -- Protection Warrior
+								},
+								["qgs"] = {
+									117933,	-- Inquisitor Variss
+									118032, -- Tormenting Eye
+									103928,	-- Smoldering Infernal
+									118044,	-- Nether Horror
+									117198,	-- Highlord Kruul
+								},
+							}),
+							q(46127, { -- Thwarting the Twins
+								["groups"] = {
+									{ 	-- Scythe of Elune
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactelune_d_06.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 11 },
+										["artifactID"] = 929,
+									},
+									{ 	-- Thas'dorah, Legacy of the Windrunners
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_bow_1h_artifactwindrunner_d_06.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 3 },
+										["artifactID"] = 965,
+									},
+									{ 	-- Ebonchill
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactantonidas_d_06.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 8 },
+										["artifactID"] = 885,
+									},
+									{ 	-- Xal'atath, Blade of the Black Empire
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_knife_1h_artifactcthun_d_05.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 5 },
+										["artifactID"] = 261,
+									},
+									{ 	-- Ulthalesh, the Deadwind Harvester
+										["ignoreSource"] = true,
+										["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_staff_2h_artifactdeadwind_d_06.mdx",
+										["modelScale"] = 0.95,
+										["modelRotation"] = 45,
+										["classes"] = { 9 },
+										["artifactID"] = 972,
+									},
+								},
+								["classes"] = {
+									11, -- Balance Druid
+									3, -- Marksmanship Hunter
+									8, -- Frost Mage
+									5, -- Shadow Priest
+									9, -- Affliction Warlock
+								},
+								["qgs"] = {
+									116410,	-- Karam Magespear
+									116409,	-- Raest Magespear
+									118698,	-- Hand from Beyond
+									119098,	-- Thing of Nightmare
+								},
+							}),
+						}),
+						["description"] = "The Mage Tower Challenges were solo encounters designed for all of the 36 talent specializations in the game during Legion. They were designed to be challenging, but beatable. Access to these challenges was removed with the BFA Prepatch 8.0.1.\n\nCongratulations to everyone that worked really hard attempting to collect all of these appearances!\n\n - Crieve (31/36)",
+						["u"] = 41,
+					}),
+					n(-2, {	-- Vendors	
+						n(121589, { -- Thaumaturge Vashreen <Purveryor of Exquisite Furnishings>
+							["groups"] = {
+								un(2, i(147796, { -- Relinquished Hood
+									i(146786), -- Cloth
+									i(146772), -- Leather
+									i(146781), -- Mail
+									i(146761), -- Plate
+								})),
+								un(2, i(147800, { -- Relinquished Spaulders
+									i(146791), -- Cloth
+									i(146774), -- Leather
+									i(146783), -- Mail
+									i(146763), -- Plate
+								})),
+								un(2, i(147794, { -- Relinquished Cloak
+									i(146766), -- Cloak
+								})),
+								un(2, i(147793, { -- Relinquished Chestguard
+									i(146789), -- Cloth
+									i(146773), -- Leather
+									i(146784), -- Mail
+									i(146758), -- Plate
+								})),
+								un(2, i(147786, { -- Relinquished Bracers
+									i(146792), -- Cloth
+									i(146768), -- Leather
+									i(146778), -- Mail
+									i(146765), -- Plate
+								})),
+								un(2, i(147795, { -- Relinquished Gauntlets
+									i(146787), -- Cloth
+									i(146771), -- Leather
+									i(146779), -- Mail
+									i(146759), -- Plate
+								})),
+								un(2, i(147791, { -- Relinquished Girdle
+									i(146785), -- Cloth
+									i(146775), -- Leather
+									i(146777), -- Mail
+									i(146760), -- Plate
+								})),
+								un(2, i(147797, { -- Relinquished Leggings
+									i(146788), -- Cloth
+									i(146770), -- Leather
+									i(146782), -- Mail
+									i(146762), -- Plate
+								})),
+								un(2, i(147792, { -- Relinquished Treads
+									i(146790), -- Cloth
+									i(146769), -- Leather
+									i(146780), -- Mail
+									i(146764), -- Plate
+								})),
+							},
+							["description"] = "|cff66ccffThis vendor no longer exists on the Broken Shore and the only way to obtain these appearances are by the Legion Invasion bosses, and Legion Invasion quests only.|r"
+						}),
 					}),
 				}),
 			},
