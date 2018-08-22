@@ -26,8 +26,13 @@ _.Zones =
 								["questID"] = 53471,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
-							o(297828, {	-- Merchant's Chest	
+							o(297828, {	-- Merchant's Chest
+								-- ["crs"] = 137468,	-- Gorging Raven
+								-- ["itemID"] = 163710,	-- Merchant's Key
+								-- Not sure the best way to display this information.
+								["description"] = "Look for the Gorging Raven flying above with the 'Holding Keys' buff, and kill it to get the key to open this chest.",
 								["questID"] = 53357,
+								["coord"] = { 25.7, 19.9 },
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(297891, {	-- Runebound Cache
@@ -78,6 +83,13 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					["groups"] = {
+						qa(50970, {	-- A Farmer's Fate
+							["qg"] = 135976,	-- Morwin Gladeheart
+							["coord"] = { 29.9, 40.4 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have additional/different source quest(s); needs confirmation.
+							-- Not required for "Drust Do It."
+						}),
 						qa(49443, {	-- A Lesson in Witch Hunting
 							["qg"] = 129642,	-- Lucille Waycrest
 							["coord"] = { 36.8, 50.1 },
@@ -94,6 +106,11 @@ _.Zones =
 							["coord"] = { 34.6, 30.71 },
 							["sourceQuests"] = { 50149 },	-- A Weather Eye
 							-- May be available earlier; needs confirmation.
+						}),
+						qa(50903, {	-- A Missing Master
+							["qg"] = 131469,	-- Marten Webb
+							["coord"] = { 25.5, 70.1 },
+							["sourceQuests"] = { 49939 },	-- So Long, Sister
 						}),
 						qa(48538, {	-- An Airtight Alibi
 							["qg"] = 126310,	-- Evelyn Pare
@@ -117,6 +134,13 @@ _.Zones =
 							["qg"] = 125380,	-- Lucille Waycrest
 							["coord"] = { 70.0, 42.8 },
 							["sourceQuests"] = { 48538 },	-- An Airtight Alibi
+						}),
+						qa(50988, {	-- An Economic Opportunity
+							["qg"] = 136234,	-- Cesi Loosecannon
+							["coord"] = { 22.8, 46.2 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have other/later sourceQuests; needs confirmation.
+							-- Not required for "Drust Do It."
 						}),
 						qa(50175, {	-- An Eight-Legged Curse
 							["qg"] = 132374,	-- Elsie Wright
@@ -146,11 +170,6 @@ _.Zones =
 							["coord"] = { 31.4, 30.2 },
 							["sourceQuests"] = { 50151 },	-- A Steady Ballast
 						}),
-						qa(50903, {	-- A Missing Master
-							["qg"] = 131469,	-- Marten Webb
-							["coord"] = { 25.5, 70.1 },
-							["sourceQuests"] = { 49939 },	-- So Long, Sister
-						}),
 						qa(50450, {	-- An Offensive Harvest
 							["qg"] = 133839,	-- Harris Hocking
 							["coord"] = { 27.0, 25.2 },
@@ -173,6 +192,17 @@ _.Zones =
 							["description"] = "This quest appears to drop from whichever Sister you kill last.",
 							["sourceQuests"] = { 48520 },	-- The Three Sisters
 						},
+						qa(48682, {	-- A Simple Sacrifice
+							["qg"] = 127396,	-- Initiate Peony
+							["coord"] = { 59.0, 22.3 },
+							["sourceQuests"] = { 48679 },	-- Mind the Hives
+						}),
+						qa(51018, {	-- Asking for a Friend
+							["qg"] = 136184,	-- Kane Carlyle
+							["coord"] = { 20.8, 46.0 },
+							["sourceQuests"] = { 50978 },	-- Out With the Old Boss
+							-- Not required for "Drust Do It."
+						}),
 						qa(48941, {	-- A Slight Detour
 							["qg"] = 125380,	-- Lucille Waycrest
 							["coord"] = { 69.6, 43.3 },
@@ -208,25 +238,44 @@ _.Zones =
 							["coord"] = { 31.2, 29.9 },
 							["sourceQuests"] = { 50003 },	-- The First Watch
 						}),
-						qa(49803, {	-- Changing of the Guard
-							["qg"] = 129643,	-- Marshal Everit Reade
-							["coord"] = { 36.9, 50.0 },
-							["sourceQuests"] = { 49443 },	-- A Lesson in Witch Hunting
-						}),
-						qa(50092, {	-- Curiously Strong
-							["qg"] = 131448,	-- Warren Ashton
-							["coord"] = { 25.3, 67.8 },
-							["sourceQuests"] = { 50903 },	-- A Missing Master
-						}),
 						qa(50453, {	-- Barrier Buster
 							["qg"] = 132193,	-- Angus Ballaster
 							["coord"] = { 31.7, 29.5 },
 							["sourceQuests"] = { 50446 },	-- Witchrending
 						}),
+						qa(47947, {	-- Big Bad Wolves
+							["qg"] = 124786,	-- Thomas Staughton
+							["coord"] = { 63.2, 27.1 },
+							["sourceQuests"] = { 47945 },	-- To Market, To Market
+						}),
+						qa(48883, {	-- Big Gulls Won't Die
+							["g"] = {
+								i(155459),	-- Anglin' Art's Sandals
+								i(155468),	-- Anglin' Art's Treads
+								i(155476),	-- Anglin' Art's Waders
+								i(155484),	-- Anglin' Art's Stompers
+							},
+							["qg"] = 127558,	-- Art Hughie
+							["coord"] = { 71.7, 50.4 },
+							["sourceQuests"] = { 48880, 48904 },	-- Mean Gulls & Take the Bait
+							-- May also require "The Reel Deal;" needs confirmation.
+						}),
 						qa(50266, {	-- Bittersweet
 							["qg"] = 133101,	-- Samantha Sweet
 							["coord"] = { 21.1, 55.0 },
 							["sourceQuests"] = { 50265 },	-- Saving Master Ashton (must be ON quest to pick this one up)
+						}),
+						qa(50761, {	-- Blood in the Chapel
+							["qg"] = 132994,	-- Lord Arthur Waycrest
+							["coord"] = { 23.2, 12.6 },
+							["sourceQuests"] = { 50760 },	-- From This Day Forward
+							-- Not required for "Drust Do It."
+						}),
+						qa(52075, {	-- Boned
+							["qg"] = 139912,	-- Ranger Wons
+							["coord"] = { 61.9, 59.2 },
+							["sourceQuests"] = { 52074 },	-- Deliverance
+							-- Not required for "Drust Do It."
 						}),
 						qa(50238, {	-- Bramblethorn
 							["qg"] = 132966,	-- Lynn Sweet
@@ -260,6 +309,24 @@ _.Zones =
 							["coord"] = { 25.5, 70.1 },
 							["sourceQuests"] = { 50903 },	-- A Missing Master
 							-- Not required for "Drust Do It."
+						}),
+						qa(49803, {	-- Changing of the Guard
+							["qg"] = 129643,	-- Marshal Everit Reade
+							["coord"] = { 36.9, 50.0 },
+							["sourceQuests"] = { 49443 },	-- A Lesson in Witch Hunting
+						}),
+						qa(48683, {	-- Changing Seasons
+							["g"] = {
+								i(158592),	-- Wickerwood Torch
+								i(158594),	-- Barbthorn Bulwark
+								i(158615),	-- Wickerwoven Belt
+								i(158616),	-- Banisher Waistcord
+								i(158617),	-- Crone-Seeker's Cinch
+								i(158618),	-- Waycrest Militia Greatbelt
+							},
+							["qg"] = 127418,	-- Edwin Maldus
+							["coord"] = { 56.5, 23.9 },
+							["sourceQuests"] = { 48682 },	-- A Simple Sacrifice
 						}),
 						o(273814, {	-- Bladed Charm
 							qa(48521, {	-- Charming the Lifeless
@@ -301,10 +368,33 @@ _.Zones =
 								48520,	-- The Three Sisters
 							},
 						}),
+						qa(47950, {	-- Cured Ham
+							["qg"] = 124786,	-- Thomas Staughton
+							["coord"] = { 63.2, 27.1 },
+							["sourceQuests"] = { 47949 },	-- That's Not My Fetish
+							-- May have additional source quests; needs confirmation.
+						}),
+						qa(50092, {	-- Curiously Strong
+							["qg"] = 131448,	-- Warren Ashton
+							["coord"] = { 25.3, 67.8 },
+							["sourceQuests"] = { 50903 },	-- A Missing Master
+						}),
+						qa(51020, {	-- Cutthroat Business Practices
+							["qg"] = 136227,	-- Fixi Slyshiv
+							["coord"] = { 20.8, 46.1 },
+							["sourceQuests"] = { 50988 },	-- An Economic Opportunity
+							-- Not required for "Drust Do It."
+						}),
 						qa(50370, {	-- Deeper Into the Woods
 							["qg"] = 133098,	-- Inquisitor Cleardawn
 							["coord"] = { 20.6, 57.4 },
 							["sourceQuests"] = { 50327 },	-- A Little 'Pick Me Up'
+						}),
+						qa(52074, {	-- Deliverance
+							["qg"] = 125457,	-- Rebecca Hale
+							["coord"] = { 64.5, 54.8 },
+							["sourceQuests"] = { 48947 },	-- Gol Koval
+							-- Not required for "Drust Do It."
 						}),
 						qa(50152, {	-- Digging for Scraps
 							["qg"] = 131641,	-- Inquisitor Yorrick
@@ -332,7 +422,7 @@ _.Zones =
 								48517,	-- Honorable Discharge
 								48184,	-- Pieces of History
 							},
-							-- Awarded "Clear Victory" criteria.
+							-- Awarded "Clear Victory" criteria.  Presumably this should be awarded by the "Clear Victory" quest, but "Drustfall" must also be required for the criteria.
 						}),
 						qa(50451, {	-- Eating Through the Defenses
 							["qg"] = 133839,	-- Harris Hocking
@@ -344,6 +434,12 @@ _.Zones =
 							["coord"] = { 36.8, 50.1 },
 							["sourceQuests"] = { 50533 },	-- Stick It To 'Em!
 						}),
+						qa(51001, {	-- Every Day I'm Smugglin'
+							["qg"] = 136140,	-- Clonk Greaseybit
+							["coord"] = { 20.9, 43.6 },
+							["sourceQuests"] = { 50978 },	-- Out With the Old Boss
+							-- Not required for "Drust Do It."
+						}),
 						qa(50063, {	-- Fighting with Fire
 							["g"] = {
 								i(155162),	-- Band of Wortcunning
@@ -354,10 +450,29 @@ _.Zones =
 							["sourceQuests"] = { 50036 },	-- A Weapon of Old
 							-- Awarded "Fighting with Fire" criteria.
 						}),
+						qa(50760, {	-- From This Day Forward
+							["qg"] = 134953,	-- Alexander Treadward
+							["coord"] = { 23.3, 12.5 },
+							["sourceQuests"] = { 50759 },	-- Running Late
+							-- Not required for "Drust Do It."
+						}),
 						qa(47980, {	-- Furious Familiars
 							["qg"] = 125093,	-- Fallhaven Villager
 							["coord"] = { 60.8, 30.6 },
 							["sourceQuests"] = { 47979 },	-- Witch Hunt (must be ON this quest and sit on the stool for this quest to become available)
+						}),
+						qa(48947, {	-- Gol Koval
+							["qg"] = 127743,	-- Auntie Amanda Hale
+							["coord"] = { 69.5, 43.7 },
+							["isBreadcrumb"] = true,	-- for "Deliverance"
+							["sourceQuests"] = { 49259 },	-- And Justice For All
+							-- Not required for "Drust Do It."
+						}),
+						qa(50953, {	-- Greenstalker
+							["qg"] = 135861,	-- Adalyn Forestwatcher
+							["coord"] = { 33.4, 65.1 },
+							["sourceQuests"] = { 51543 },	-- Saplings in the Snow
+							-- Not required for "Drust Do It."
 						}),
 						qa(48165, {	-- Harmful If Swallowed
 							["qg"] = 125380,	-- Lucille Waycrest
@@ -368,6 +483,13 @@ _.Zones =
 							["qg"] = 131636,	-- Marshal Everit Reade
 							["coord"] = { 31.0, 20.2 },
 							["sourceQuests"] = { 50457 },	-- Break on Through
+						}),
+						qa(50456, {	-- Hexed Hatchlings
+							["qg"] = 131640,	-- Inquisitor Notley
+							["coord"] = { 31.2, 22.7 },
+							["sourceQuests"] = { 50446 },	-- Witchrending
+							-- May be available earlier; needs confirmation.
+							-- Not required for "Drust Do It."
 						}),
 						{			-- Hidden Dealings
 							["qgs"] = {
@@ -430,6 +552,12 @@ _.Zones =
 							-- Needs confirmation -- the quest didn't auto-pop and I didn't notice the item in my bags until later.  This source is based on a wowhead comment.
 							-- Not required for "Drust Do It."
 						},
+						o(276513, {	-- Intact Mudfish
+							qa(48882, {	-- I Like Fish Guts and I Cannot Lie
+								["coord"] = { 70.7, 50.8 },
+								["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
+							}),
+						}),
 						o(292523, {	-- Heartsbane Grimoire
 							qa(49805, {	-- Implements of Ill Intent
 								["coord"] = { 37.7, 50.3 },
@@ -467,16 +595,67 @@ _.Zones =
 							["sourceQuests"] = { 47289 },	-- Teddies and Tea
 							-- Not required for "Drust Do It."
 						}),
+						qa(50455, {	-- Leaving the Nest
+							["qg"] = 131640,	-- Inquisitor Notley
+							["coord"] = { 31.2, 22.7 },
+							["sourceQuests"] = { 50446 },	-- Witchrending
+							-- May be available earlier; needs confirmation.
+							-- Not required for "Drust Do It."
+						}),
+						qa(51472, {	-- Life Preserver
+							["g"] = {
+								i(155097),	-- Wickerwoven Sandals
+								i(155099),	-- Banisher Boots
+								i(155098),	-- Crone-Seeker's Boots
+								i(155096),	-- Waycrest Militia Sabatons
+								i(155460),	-- Wickerwoven Mitts
+								i(155469),	-- Banisher Grips
+								i(155477),	-- Crone-Seeker's Strikers
+								i(155485),	-- Waycrest Militia Crushers
+							},
+							["qg"] = 137732,	-- Zallestrasza
+							["coord"] = { 33.5, 65.1 },
+							["sourceQuests"] = { 50953 },	-- Greenstalker
+							-- Not required for "Drust Do It."
+						}),
 						qa(48477, {	-- Looking for One More
 							["qg"] = 126240,	-- Bridget Fairwater
 							["coord"] = { 59.8, 48.9 },
 							["sourceQuests"] = { 48476 },	-- Split Party
 							-- Not required for "Drust Do It."
 						}),
+						qa(50967, {	-- Lost in the Woods
+							["qg"] = 135976,	-- Morwin Gladeheart
+							["coord"] = { 29.9, 40.4 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have additional/different source quest(s); needs confirmation.
+							-- Not required for "Drust Do It."
+						}),
 						qa(50329, {	-- Matrons of the Crimsonwood
 							["qg"] = 133105,	-- Warren Ashton
 							["coord"] = { 24.5, 56.6 },
 							["sourceQuests"] = { 50370 },	-- Deeper Into the Woods
+						}),
+						qa(48880, {	-- Mean Gulls
+							["qg"] = 127558,	-- Art Hughie
+							["coord"] = { 71.7, 50.4 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have different source quest(s); needs confirmation.
+						}),
+						qa(48792, {	-- Menace to Society
+							["qg"] = 127015,	-- Thaddeus "Gramps" Rifthold
+							["coord"] = { 53.9, 27.0 },
+							["sourceQuests"] = { 48948 },	-- The North Pass Caverns
+						}),
+						qa(48679, {	-- Mind the Hives
+							["qg"] = 127080,	-- Lord Autumnvale
+							["coord"] = { 59.4, 21.9 },
+							["sourceQuests"] = { 48678 },	-- Questionable Offerings
+						}),
+						qa(48804, {	-- Mistakes Were Made
+							["qg"] = 127157,	-- Marcus Howlingdale
+							["coord"] = { 51.4, 23.2 },
+							["sourceQuests"] = { 48793 },	-- The Adventurer's Society
 						}),
 						qa(50306, {	-- Odds and Ends
 							["g"] = {
@@ -496,10 +675,59 @@ _.Zones =
 							["coord"] = { 70.0, 42.8 },
 							["sourceQuests"] = { 48111 },	-- Trial by Superstition
 						}),
+						qa(50763, {	-- One Last Request
+							["qg"] = 135200,	-- Alexander Treadward
+							["coord"] = { 23.3, 17.4 },
+							["sourceQuests"] = { 50762 },	-- The Lady's Fate
+							-- Not required for "Drust Do It."
+						}),
+--						   50911	-- One Man Against the Horde (WQ?  War Mode quest?)
+						qa(50978, {	-- Out With the Old Boss
+							["g"] = {
+								i(158640),	-- Boss o' the Port
+								i(158642),	-- Tornsail Skull Cracker
+								i(158639),	-- Innkeep's Slyshiv
+								i(160207),	-- Freeport Falchion
+								i(158644),	-- Bilgewater Beatstick
+								i(158649),	-- Kane's Flayer
+								i(158643),	-- Anyport Repeater
+								i(158648),	-- Boss Cesi's Gavel
+								i(158645),	-- Smuggler's Pass
+							},
+							["qg"] = 136234,	-- Cesi Loosecannon
+							["coord"] = { 20.6, 46.1 },
+							["sourceQuests"] = {
+								51020,	-- Cutthroat Business Practices
+								51019,	-- She's Got it Where it Counts
+								-- Definitely requires Cutthroat Business Practices; may not require other.  Needs confirmation.
+							},
+							-- Not required for "Drust Do It."
+						}),
+						qa(50758, {	-- Painful Memories
+							["qg"] = 135200,	-- Alexander Treadward
+							["coord"] = { 23.2, 17.4 },
+							["sourceQuests"] = { 50754 },	-- To Have Loved and Lost
+							-- Not required for "Drust Do It."
+						}),
 						qa(48184, {	-- Pieces of History
 							["qg"] = 129983,	-- Inquisitor Cleardawn
 							["coord"] = { 40.2, 56.4 },
 							["sourceQuests"] = { 48504 },	-- Through the Old Roads
+						}),
+						qa(47948, {	-- Pork Chop
+							["g"] = {
+								i(155150),	-- Swinestained Saber
+								i(158641),	-- Pork-Chopper Pike
+								i(155139),	-- Mad-Butcher's Mallet
+								i(155153),	-- Elder Crone's Ladle
+								i(155131),	-- Hacksaw Carving Knife
+								i(155127),	-- Fallhaven Hatchet
+								i(155128),	-- Roland's Tenderizer
+								i(155136),	-- Autumnvale Long Rifle
+							},
+							["qg"] = 124786,	-- Thomas Staughton
+							["coord"] = { 63.2, 27.1 },
+							["sourceQuests"] = { 47945 },	-- To Market, To Market
 						}),
 						qa(50452, {	-- Potent Protection
 							["g"] = {
@@ -512,16 +740,29 @@ _.Zones =
 								50451,	-- Eating Through the Defenses
 							},
 						}),
+--						   50929	-- Powder to the People (WQ?  War Mode quest?)
 						qa(50173, {	-- Precious Metals
 							["qg"] = 131638,	-- Lucille Waycrest
 							["coord"] = { 31.4, 30.2 },
 							["sourceQuests"] = { 50149 },	-- A Weather Eye
+						}),
+						qa(48678, {	-- Questionable Offerings
+							["qg"] = 127080,	-- Lord Autumnvale
+							["coord"] = { 59.4, 21.9 },
+							["sourceQuests"] = { 48677 },	-- Wicker Worship
 						}),
 						qa(49242, {	-- Quill or Be Quilled
 							["qg"] = 128494,	-- Adela Hawthorne
 							["coord"] = { 66.9, 42.1 },
 							["sourceQuests"] = { 48111 },	-- Trial by Superstition
 							-- May be available slightly earlier; needs confirmation.
+						}),
+						qa(48180, {	-- Really Big Problem
+							["qg"] = 140048,	-- Arthur Tradewind
+							["coord"] = { 58.4, 63.1 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have other/later sourceQuests; needs confirmation.  Picked up after turning in "Deliverance."
+							-- Not required for "Drust Do It."
 						}),
 						qa(50449, {	-- Reeking Refuge
 							["qg"] = 131639,	-- Inquisitor Mace
@@ -535,10 +776,39 @@ _.Zones =
 							["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
 							-- May be available earlier; needs confirmation.
 						}),
+--						   50912	-- Remix to Ignition (WQ?  War Mode quest?)
+						qa(48179, {	-- Rescue Rangers
+							["g"] = {
+								i(158607),	-- Wickerwoven Pants
+								i(158608),	-- Banisher Pants
+								i(158609),	-- Crone-Seeker's Links
+								i(158610),	-- Waycrest Militia Chausses
+								i(155466),	-- Wickerwoven Bracers
+								i(155474),	-- Banisher Armbands
+								i(155482),	-- Crone-Seeker's Armguards
+								i(155490),	-- Waycrest Militia Vambraces
+							},
+							["qg"] = 139912,	-- Ranger Wons
+							["coord"] = { 61.9, 59.2 },
+							["sourceQuests"] = { 52074 },	-- Deliverance
+							-- Not required for "Drust Do It."
+						}),
+						o(276251, {	-- Excavation Inventory
+							qa(48805, {	-- Research Recovery
+								["coord"] = { 51.8, 22.8 },
+								["sourceQuests"] = { 48793 },	-- The Adventurer's Society
+							}),
+						}),
 						qa(50584, {	-- Ruinous Rituals
 							["qg"] = 131636,	-- Marshal Everit Reade
 							["coord"] = { 31.0, 20.2 },
 							["sourceQuests"] = { 50457 },	-- Break on Through
+						}),
+						qa(50759, {	-- Running Late
+							["qg"] = 134953,	-- Alexander Treadward
+							["coord"] = { 23.3, 12.5 },
+							["sourceQuests"] = { 50758 },	-- Painful Memories
+							-- Not required for "Drust Do It."
 						}),
 						qa(48943, {	-- Salvage Rights
 							["qg"] = 127715,	-- Lucille Waycrest
@@ -553,27 +823,10 @@ _.Zones =
 							-- Picked up after turning in "Drustfall."
 							-- Not required for "Drust Do It."
 						}),
-						qa(50953, {	-- Greenstalker
-							["qg"] = 135861,	-- Adalyn Forestwatcher
-							["coord"] = { 33.4, 65.1 },
-							["sourceQuests"] = { 51543 },	-- Saplings in the Snow
-							-- Not required for "Drust Do It."
-						}),
-						qa(51472, {	-- Life Preserver
-							["g"] = {
-								i(155097),	-- Wickerwoven Sandals
-								i(155099),	-- Banisher Boots
-								i(155098),	-- Crone-Seeker's Boots
-								i(155096),	-- Waycrest Militia Sabatons
-								i(155460),	-- Wickerwoven Mitts
-								i(155469),	-- Banisher Grips
-								i(155477),	-- Crone-Seeker's Strikers
-								i(155485),	-- Waycrest Militia Crushers
-							},
-							["qg"] = 137732,	-- Zallestrasza
-							["coord"] = { 33.5, 65.1 },
-							["sourceQuests"] = { 50953 },	-- Greenstalker
-							-- Not required for "Drust Do It."
+						qa(47946, {	-- Save Their Bacon
+							["qg"] = 124786,	-- Thomas Staughton
+							["coord"] = { 63.2, 27.1 },
+							["sourceQuests"] = { 47945 },	-- To Market, To Market
 						}),
 						qa(48518, {	-- Save Who We Can
 							["qg"] = 126310,	-- Evelyn Pare
@@ -599,6 +852,12 @@ _.Zones =
 							["qg"] = 129642,	-- Lucille Waycrest
 							["coord"] = { 36.8, 50.1 },
 							["sourceQuests"] = { 49443 },	-- A Lesson in Witch Hunting
+						}),
+						qa(51019, {	-- She's Got it Where it Counts
+							["qg"] = 136233,	-- Klause Fairwind
+							["coord"] = { 19.8, 44.3 },
+							["sourceQuests"] = { 50988 },	-- An Economic Opportunity
+							-- Not required for "Drust Do It."
 						}),
 						o(272179, {	-- Mayor's Bulletin
 							qa(47968, {	-- Signs and Portents
@@ -655,6 +914,15 @@ _.Zones =
 								-- Awarded "Storming the Manor" criteria.
 							},
 						}),
+--						   51851	-- Storming the Manor \	-- Not sure why, but there are three versions of this quest on wowhead.
+--						   51852	-- Storming the Manor /	-- Not sure why, but there are three versions of this quest on wowhead.
+--						   50960	-- Sweete's Orders
+						qa(48904, {	-- Take the Bait
+							["qg"] = 127558,	-- Art Hughie
+							["coord"] = { 71.7, 50.4 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have different source quest(s); needs confirmation.
+						}),
 						qa(48986, {	-- Take the High Road
 							["qg"] = 127715,	-- Lucille Waycrest
 							["coord"] = { 42.5, 25.2 },
@@ -677,6 +945,25 @@ _.Zones =
 							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 							-- May have additional sourceQuests; needs confirmation.  Picked up after turning in "And Justice For All."
 							-- Not required for "Drust Do It."
+						}),
+						qa(48853, {	-- Terminal Degree
+							["g"] = {
+								i(160262),	-- Relic of the Makers
+							},
+							["qg"] = 127157,	-- Marcus Howlingdale
+							["coord"] = { 50.6, 24.3 },
+							["sourceQuests"] = { 48804 },	-- Mistakes Were Made
+						}),
+						o(277459, {	-- Pig Effigy
+							qa(47949, {	-- That's Not My Fetish
+								["coord"] = { 63.3, 30.1 },
+								["sourceQuests"] = { 47945 },	-- To Market, To Market
+							}),
+						}),
+						qa(48793, {	-- The Adventurer's Society
+							["qg"] = 127015,	-- Thaddeus "Gramps" Rifthold
+							["coord"] = { 53.9, 27.0 },
+							["sourceQuests"] = { 48948 },	-- The North Pass Caverns
 						}),
 						qa(48198, {	-- The Burden of Proof
 							["g"] = {
@@ -729,6 +1016,30 @@ _.Zones =
 							["coord"] = { 32.0, 30.9 },
 							["sourceQuests"] = { 49926 },	-- The Road to Corlain
 						}),
+						qa(53110, {	-- The High Thornspeaker
+							["qg"] = 139926,	-- Thornspeaker Birchgrove
+							["coord"] = { 61.8, 59.3 },
+							["sourceQuests"] = {
+								52075,	-- Boned
+								48179,	-- Rescue Rangers
+								48183,	-- The Hills Are Alive
+								48182,	-- Total Cairnage
+								-- Definitely requires "The Hills Are Alive;" may not require others -- needs confirmation.
+							},
+							-- Not required for "Drust Do It."
+						}),
+						qa(48183, {	-- The Hills Are Alive
+							["qg"] = 139926,	-- Thornspeaker Birchgrove
+							["coord"] = { 61.9, 59.2 },
+							["sourceQuests"] = { 52074 },	-- Deliverance
+							-- Not required for "Drust Do It."
+						}),
+						qa(50762, {	-- The Lady's Fate
+							["qg"] = 132994,	-- Lord Arthur Waycrest
+							["coord"] = { 23.2, 12.6 },
+							["sourceQuests"] = { 50761 },	-- Blood in the Chapel
+							-- Not required for "Drust Do It."
+						}),
 						qa(48523, {	-- The Murderous Matron
 							["qg"] = 126310,	-- Evelyn Pare
 							["coord"] = { 70.0, 60.2 },
@@ -738,11 +1049,22 @@ _.Zones =
 								48520,	-- The Three Sisters
 							},
 						}),
+						qa(48948, {	-- The North Pass Caverns
+							["qg"] = 128457,	-- Maude Rifthold
+							["coord"] = { 55.1, 35.1 },
+							["sourceQuests"] = { 47982 },	-- The Final Effigy
+						}),
 						qa(48946, {	-- The Order of Embers
 							["qg"] = 127715,	-- Lucille Waycrest
 							["coord"] = { 42.5, 25.2 },
 							["sourceQuests"] = { 48945 },	-- The Ruins of Gol Var
 							-- Awarder "The Order of Embers" criteria.
+						}),
+						o(276515, {	-- Fishing Rod
+							qa(48881, {	-- The Reel Deal
+								["coord"] = { 71.1, 52.3 },
+								["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
+							}),
 						}),
 						qa(49926, {	-- The Road to Corlain
 							["qg"] = 129643,	-- Marshal Everit Reade
@@ -782,20 +1104,48 @@ _.Zones =
 							["coord"] = { 69.7, 43.1 },
 							["sourceQuests"] = { 48283 },	-- Standing Accused
 						}),
+						{			-- Those Who Remain
+							["qgs"] = {
+								135902,	-- Bloodbough Fungalmancer
+								135901,	-- Bloodbough Funggarian
+							},
+							["races"] = ALLIANCE_ONLY,
+							["itemID"] = 160027,	-- Ashenwood Relic
+							["questID"] = 50965,	-- Those Who Remain
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May only drop while on A Farmer's Fate / Lost in the Woods as that was the point I picked it up; needs confirmation.
+						},
+						qa(48504, {	-- Through the Old Roads
+							["qg"] = 135021,	-- Inquisitor Cleardawn
+							["coord"] = { 37.3, 50.3 },
+							["sourceQuests"] = { 49926 },	-- The Road to Corlain (must be ON quest to pick this up)
+						}),
 						qa(49896, {	-- To Falconhurst!
 							["qg"] = 130933,	-- Inquisitor Cleardawn
 							["coord"] = { 40.5, 62.4 },
 							["sourceQuests"] = { 49890 },	-- Drustfall
 						}),
+						qa(50754, {	-- To Have Loved and Lost
+							["qg"] = 131638,	-- Lucille Waycrest
+							["coord"] = { 31.4, 30.2 },
+							["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
+							-- Not required for "Drust Do It."
+						}),
+						qa(47945, {	-- To Market, To Market
+							["qg"] = 128467,	-- Elijah Eggleton
+							["coord"] = { 55.5, 34.8 },
+							["sourceQuests"] = { 47982 },	-- The Final Effigy
+						}),
+						qa(48182, {	-- Total Cairnage
+							["qg"] = 139926,	-- Thornspeaker Birchgrove
+							["coord"] = { 61.9, 59.2 },
+							["sourceQuests"] = { 52074 },	-- Deliverance
+							-- Not required for "Drust Do It."
+						}),
 						qa(50583, {	-- To the Other Side
 							["qg"] = 131638,	-- Lucille Waycrest
 							["coord"] = { 30.9, 20.2 },
 							["sourceQuests"] = { 50457 },	-- Break on Through
-						}),
-						qa(48504, {	-- Through the Old Roads
-							["qg"] = 135021,	-- Inquisitor Cleardawn
-							["coord"] = { 37.3, 50.3 },
-							["sourceQuests"] = { 49926 },	-- The Road to Corlain (must be ON quest to pick this up)
 						}),
 						qa(48111, {	-- Trial by Superstition
 							["qg"] = 125380,	-- Lucille Waycrest
@@ -806,6 +1156,20 @@ _.Zones =
 							["qg"] = 127715,	-- Lucille Waycrest
 							["coord"] = { 45.0, 27.7 },
 							["sourceQuests"] = { 48963 },	-- Diversionary Tactics
+						}),
+						o(288214, {	-- Wanted Poster
+							q(51240, {	-- WANTED: Anchorface
+								["coord"] = { 19.5, 43.6 },
+								["sourceQuests"] = { 50978 },	-- Out With the Old Boss
+								-- Not required for "Drust Do It."
+								-- Wowhead says both factions can do this quest.  Other "Wanted" quests have separate versions for Horde/Alliance.  Needs confirmation.
+							}),
+						}),
+						o(290419, {	-- Wanted Poster
+							qa(51547, {	-- WANTED: Rindlewoe 
+								["coord"] = { 55.7, 34.9 },
+								["sourceQuests"] = { 47982 },	-- The Final Effigy
+							}),
 						}),
 						o(288622, {	-- Wanted Poster
 							qa(51356, {	-- WANTED: Sister Lilias
@@ -821,10 +1185,24 @@ _.Zones =
 								-- Not required for "Drust Do It."
 							}),
 						}),
+						o(292523, {	-- Wanted Poster
+							qa(52033, {	-- WANTED: The Rime Huntress
+								["coord"] = { 41.2, 40.9 },
+								["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+								-- May have additional sourceQuests; needs confirmation.  Picked up after turning in "The Order of Embers."
+								-- Not required for "Drust Do It."
+							}),
+						}),
 						qa(50639, {	-- Waycrest Manor: The Fallen Mother
 							["qg"] = 131638,	-- Lucille Waycrest
 							["coord"] = { 32.8, 15.3 },
 							["sourceQuests"] = { 50588 },	-- Storming the Manor
+						}),
+						qa(48677, {	-- Wicker Worship
+							["qg"] = 127296,	-- David Maldus
+							["coord"] = { 62.5, 23.9 },
+							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
+							-- May have other/different source quest(s); needs confirmation.
 						}),
 						qa(47979, {	-- Witch Hunt
 							["qg"] = 124922,	-- Helena Gentle
@@ -856,391 +1234,6 @@ _.Zones =
 							["coord"] = { 46.1, 33.4 },
 							["sourceQuests"] = { 48941 },	-- A Slight Detour
 						}),
-
-						
-						
-						
-						
-						
-						
-						qa(48947, {	-- Gol Koval
-							["qg"] = 127743,	-- Auntie Amanda Hale
-							["coord"] = { 69.5, 43.7 },
-							["isBreadcrumb"] = true,	-- for "Deliverance"
-							["sourceQuests"] = { 49259 },	-- And Justice For All
-							-- Not required for "Drust Do It."
-						}),
-						qa(52074, {	-- Deliverance
-							["qg"] = 125457,	-- Rebecca Hale
-							["coord"] = { 64.5, 54.8 },
-							["sourceQuests"] = { 48947 },	-- Gol Koval
-							-- Not required for "Drust Do It."
-						}),
-						qa(48179, {	-- Rescue Rangers
-							["g"] = {
-								i(158607),	-- Wickerwoven Pants
-								i(158608),	-- Banisher Pants
-								i(158609),	-- Crone-Seeker's Links
-								i(158610),	-- Waycrest Militia Chausses
-								i(155466),	-- Wickerwoven Bracers
-								i(155474),	-- Banisher Armbands
-								i(155482),	-- Crone-Seeker's Armguards
-								i(155490),	-- Waycrest Militia Vambraces
-							},
-							["qg"] = 139912,	-- Ranger Wons
-							["coord"] = { 61.9, 59.2 },
-							["sourceQuests"] = { 52074 },	-- Deliverance
-							-- Not required for "Drust Do It."
-						}),
-						qa(52075, {	-- Boned
-							["qg"] = 139912,	-- Ranger Wons
-							["coord"] = { 61.9, 59.2 },
-							["sourceQuests"] = { 52074 },	-- Deliverance
-							-- Not required for "Drust Do It."
-						}),
-						qa(48182, {	-- Total Cairnage
-							["qg"] = 139926,	-- Thornspeaker Birchgrove
-							["coord"] = { 61.9, 59.2 },
-							["sourceQuests"] = { 52074 },	-- Deliverance
-							-- Not required for "Drust Do It."
-						}),
-						qa(48183, {	-- The Hills Are Alive
-							["qg"] = 139926,	-- Thornspeaker Birchgrove
-							["coord"] = { 61.9, 59.2 },
-							["sourceQuests"] = { 52074 },	-- Deliverance
-							-- Not required for "Drust Do It."
-						}),
-						qa(48180, {	-- Really Big Problem
-							["qg"] = 140048,	-- Arthur Tradewind
-							["coord"] = { 58.4, 63.1 },
-							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-							-- May have other/later sourceQuests; needs confirmation.  Picked up after turning in "Deliverance."
-							-- Not required for "Drust Do It."
-						}),
-						qa(53110, {	-- The High Thornspeaker
-							["qg"] = 139926,	-- Thornspeaker Birchgrove
-							["coord"] = { 61.8, 59.3 },
-							["sourceQuests"] = {
-								52075,	-- Boned
-								48179,	-- Rescue Rangers
-								48183,	-- The Hills Are Alive
-								48182,	-- Total Cairnage
-								-- Definitely requires "The Hills Are Alive;" may not require others -- needs confirmation.
-							},
-							-- Not required for "Drust Do It."
-						}),
-						qa(50988, {	-- An Economic Opportunity
-							["qg"] = 136234,	-- Cesi Loosecannon
-							["coord"] = { 22.8, 46.2 },
-							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-							-- May have other/later sourceQuests; needs confirmation.
-							-- Not required for "Drust Do It."
-						}),
-						qa(51020, {	-- Cutthroat Business Practices
-							["qg"] = 136227,	-- Fixi Slyshiv
-							["coord"] = { 20.8, 46.1 },
-							["sourceQuests"] = { 50988 },	-- An Economic Opportunity
-							-- Not required for "Drust Do It."
-						}),
-						qa(51019, {	-- She's Got it Where it Counts
-							["qg"] = 136233,	-- Klause Fairwind
-							["coord"] = { 19.8, 44.3 },
-							["sourceQuests"] = { 50988 },	-- An Economic Opportunity
-							-- Not required for "Drust Do It."
-						}),
-						qa(50978, {	-- Out With the Old Boss
-							["g"] = {
-								i(158640),	-- Boss o' the Port
-								i(158642),	-- Tornsail Skull Cracker
-								i(158639),	-- Innkeep's Slyshiv
-								i(160207),	-- Freeport Falchion
-								i(158644),	-- Bilgewater Beatstick
-								i(158649),	-- Kane's Flayer
-								i(158643),	-- Anyport Repeater
-								i(158648),	-- Boss Cesi's Gavel
-								i(158645),	-- Smuggler's Pass
-							},
-							["qg"] = 136234,	-- Cesi Loosecannon
-							["coord"] = { 20.6, 46.1 },
-							["sourceQuests"] = {
-								51020,	-- Cutthroat Business Practices
-								51019,	-- She's Got it Where it Counts
-								-- Definitely requires Cutthroat Business Practices; may not require other.  Needs confirmation.
-							},
-							-- Not required for "Drust Do It."
-						}),
-						o(288214, {	-- Wanted Poster
-							qa(51240, {	-- WANTED: Anchorface
-								["coord"] = { 19.5, 43.6 },
-								["sourceQuests"] = { 50978 },	-- Out With the Old Boss
-								-- Not required for "Drust Do It."
-							}),
-						}),
-						qa(51001, {	-- Every Day I'm Smugglin'
-							["qg"] = 136140,	-- Clonk Greaseybit
-							["coord"] = { 20.9, 43.6 },
-							["sourceQuests"] = { 50978 },	-- Out With the Old Boss
-							-- Not required for "Drust Do It."
-						}),
-						qa(51018, {	-- Asking for a Friend
-							["qg"] = 136184,	-- Kane Carlyle
-							["coord"] = { 20.8, 46.0 },
-							["sourceQuests"] = { 50978 },	-- Out With the Old Boss
-							-- Not required for "Drust Do It."
-						}),
-						
-						
-						
-
-						
-						
-						
---[[
-						qa(, {	-- 
-							["qg"] = ,	-- 
-							["coord"] = {  },
-							["sourceQuests"] = {  },	-- 
-							-- Not required for "Drust Do It."
-						}),
---]]
-						
-						
-						
-						
-						
-						
-						
-						qa(50456, {	-- Hexed Hatchlings
-							["qg"] = 131640,	-- Inquisitor Notley
-							["coord"] = { 31.2, 22.7 },
-							["sourceQuests"] = { 50446 },	-- Witchrending
-							-- May be available earlier; needs confirmation.
-							-- Not required for "Drust Do It."
-						}),
-						qa(50455, {	-- Leaving the Nest
-							["qg"] = 131640,	-- Inquisitor Notley
-							["coord"] = { 31.2, 22.7 },
-							["sourceQuests"] = { 50446 },	-- Witchrending
-							-- May be available earlier; needs confirmation.
-							-- Not required for "Drust Do It."
-						}),
-						qa(50754, {	-- To Have Loved and Lost
-							["qg"] = 131638,	-- Lucille Waycrest
-							["coord"] = { 31.4, 30.2 },
-							["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
-							-- Not required for "Drust Do It."
-						}),
-						
-						
-						
-						
-						o(292523, {	-- Wanted Poster
-							qa(52033, {	-- WANTED: The Rime Huntress
-								["coord"] = { 41.2, 40.9 },
-								["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-								-- May have additional sourceQuests; needs confirmation.  Picked up after turning in "The Order of Embers."
-								-- Not required for "Drust Do It."
-							}),
-						}),
-						
-
-						
-						
-						
-						qa(48880, {	-- Mean Gulls
-							["qg"] = 127558,	-- Art Hughie
-							["coord"] = { 71.7, 50.4 },
-							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-							-- May have different source quest(s); needs confirmation.
-						}),
-						qa(48904, {	-- Take the Bait
-							["qg"] = 127558,	-- Art Hughie
-							["coord"] = { 71.7, 50.4 },
-							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-							-- May have different source quest(s); needs confirmation.
-						}),
-						o(276515, {	-- Fishing Rod
-							qa(48881, {	-- The Reel Deal
-								["coord"] = { 71.1, 52.3 },
-								["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
-							}),
-						}),
-						o(276513, {	-- Intact Mudfish
-							qa(48882, {	-- I Like Fish Guts and I Cannot Lie
-								["coord"] = { 70.7, 50.8 },
-								["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
-							}),
-						}),
-						qa(48883, {	-- Big Gulls Won't Die
-							["g"] = {
-								i(155459),	-- Anglin' Art's Sandals
-								i(155468),	-- Anglin' Art's Treads
-								i(155476),	-- Anglin' Art's Waders
-								i(155484),	-- Anglin' Art's Stompers
-							},
-							["qg"] = 127558,	-- Art Hughie
-							["coord"] = { 71.7, 50.4 },
-							["sourceQuests"] = { 48880, 48904 },	-- Mean Gulls & Take the Bait
-							-- May also require "The Reel Deal;" needs confirmation.
-						}),
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						o(290419, {	-- Wanted Poster
-							qa(51547, {	-- WANTED: Rindlewoe 
-								["coord"] = { 55.7, 34.9 },
-								["sourceQuests"] = { 47982 },	-- The Final Effigy
-							}),
-						}),
-						qa(47945, {	-- To Market, To Market
-							["qg"] = 128467,	-- Elijah Eggleton
-							["coord"] = { 55.5, 34.8 },
-							["sourceQuests"] = { 47982 },	-- The Final Effigy
-						}),
-						qa(47946, {	-- Save Their Bacon
-							["qg"] = 124786,	-- Thomas Staughton
-							["coord"] = { 63.2, 27.1 },
-							["sourceQuests"] = { 47945 },	-- To Market, To Market
-						}),
-						qa(47947, {	-- Big Bad Wolves
-							["qg"] = 124786,	-- Thomas Staughton
-							["coord"] = { 63.2, 27.1 },
-							["sourceQuests"] = { 47945 },	-- To Market, To Market
-						}),
-						qa(47948, {	-- Pork Chop
-							["g"] = {
-								i(155150),	-- Swinestained Saber
-								i(158641),	-- Pork-Chopper Pike
-								i(155139),	-- Mad-Butcher's Mallet
-								i(155153),	-- Elder Crone's Ladle
-								i(155131),	-- Hacksaw Carving Knife
-								i(155127),	-- Fallhaven Hatchet
-								i(155128),	-- Roland's Tenderizer
-								i(155136),	-- Autumnvale Long Rifle
-							},
-							["qg"] = 124786,	-- Thomas Staughton
-							["coord"] = { 63.2, 27.1 },
-							["sourceQuests"] = { 47945 },	-- To Market, To Market
-						}),
-						o(277459, {	-- Pig Effigy
-							qa(47949, {	-- That's Not My Fetish
-								["coord"] = { 63.3, 30.1 },
-								["sourceQuests"] = { 47945 },	-- To Market, To Market
-							}),
-						}),
-						qa(47950, {	-- Cured Ham
-							["qg"] = 124786,	-- Thomas Staughton
-							["coord"] = { 63.2, 27.1 },
-							["sourceQuests"] = { 47949 },	-- That's Not My Fetish
-							-- May have additional source quests; needs confirmation.
-						}),
-						qa(48948, {	-- The North Pass Caverns
-							["qg"] = 128457,	-- Maude Rifthold
-							["coord"] = { 55.1, 35.1 },
-							["sourceQuests"] = { 47982 },	-- The Final Effigy
-						}),
-						qa(48793, {	-- The Adventurer's Society
-							["qg"] = 127015,	-- Thaddeus "Gramps" Rifthold
-							["coord"] = { 53.9, 27.0 },
-							["sourceQuests"] = { 48948 },	-- The North Pass Caverns
-						}),
-						qa(48804, {	-- Mistakes Were Made
-							["qg"] = 127157,	-- Marcus Howlingdale
-							["coord"] = { 51.4, 23.2 },
-							["sourceQuests"] = { 48793 },	-- The Adventurer's Society
-						}),
-						qa(48853, {	-- Terminal Degree
-							["g"] = {
-								i(160262),	-- Relic of the Makers
-							},
-							["qg"] = 127157,	-- Marcus Howlingdale
-							["coord"] = { 50.6, 24.3 },
-							["sourceQuests"] = { 48804 },	-- Mistakes Were Made
-						}),
-						o(276251, {	-- Excavation Inventory
-							qa(48805, {	-- Research Recovery
-								["coord"] = { 51.8, 22.8 },
-								["sourceQuests"] = { 48793 },	-- The Adventurer's Society
-							}),
-						}),
-						qa(48792, {	-- Menace to Society
-							["qg"] = 127015,	-- Thaddeus "Gramps" Rifthold
-							["coord"] = { 53.9, 27.0 },
-							["sourceQuests"] = { 48948 },	-- The North Pass Caverns
-						}),
-						qa(48677, {	-- Wicker Worship
-							["qg"] = 127296,	-- David Maldus
-							["coord"] = { 62.5, 23.9 },
-							["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-							-- May have other/different source quest(s); needs confirmation.
-						}),
-						qa(48678, {	-- Questionable Offerings
-							["qg"] = 127080,	-- Lord Autumnvale
-							["coord"] = { 59.4, 21.9 },
-							["sourceQuests"] = { 48677 },	-- Wicker Worship
-						}),
-						qa(48679, {	-- Mind the Hives
-							["qg"] = 127080,	-- Lord Autumnvale
-							["coord"] = { 59.4, 21.9 },
-							["sourceQuests"] = { 48678 },	-- Questionable Offerings
-						}),
-						qa(48682, {	-- A Simple Sacrifice
-							["qg"] = 127396,	-- Initiate Peony
-							["coord"] = { 59.0, 22.3 },
-							["sourceQuests"] = { 48679 },	-- Mind the Hives
-						}),
-						qa(48683, {	-- Changing Seasons
-							["g"] = {
-								i(158592),	-- Wickerwood Torch
-								i(158594),	-- Barbthorn Bulwark
-								i(158615),	-- Wickerwoven Belt
-								i(158616),	-- Banisher Waistcord
-								i(158617),	-- Crone-Seeker's Cinch
-								i(158618),	-- Waycrest Militia Greatbelt
-							},
-							["qg"] = 127418,	-- Edwin Maldus
-							["coord"] = { 56.5, 23.9 },
-							["sourceQuests"] = { 48682 },	-- A Simple Sacrifice
-						}),
-						
-						
-						
-						
-						
-
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 						--[[
 						a(ach(12497, {	-- Drust Do It.
 							crit(1),		-- The Final Effigy
@@ -1512,6 +1505,12 @@ _.Zones =
 							["coord"] = { 25.9, 65.4 },
 							["isDaily"] = true,
 							["questID"] = 51913,
+						}),
+						o(9999981, {	-- Small Treasure Chest
+							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+							["coord"] = { 29.5, 17.2 },
+							["isDaily"] = true,
+							["questID"] = 51902,
 						}),
 					},
 				}),

@@ -28,6 +28,32 @@ _.Zones =
 					["questID"] = 39380,
 					["isRaid"] = true,
 				})),
+				n(-228, {-- Flight Paths
+					fp(1643, { -- Aktar's Post, Tanaan Jungle
+						["coord"] = { 26, 38.8 },
+					}),
+					fp(1620, { -- Lion's Watch, Tanaan Jungle
+						["coord"] = { 57.4, 58.8 },
+					}),
+					fp(1647, { -- Malo's Lookout, Tanaan Jungle
+						["coord"] = { 43.4, 42.2 },
+					}),
+					fp(1648, { -- Sha'naari Refuge, Tanaan Jungle
+						["coord"] = { 29.6, 63 },
+					}),
+					fp(1644, { -- The Iron Front, Tanaan Jungle
+						["coord"] = { 9.2, 55.8 },
+					}),
+					fp(1645, { -- The Iron Front, Tanaan Jungle
+						["coord"] = { 10, 53 },
+					}),
+					fp(1646, { -- Vault of the Earth, Tanaan Jungle
+						["coord"] = { 47, 70.2 },
+					}),
+					fp(1621, { -- Vol'mar, Tanaan Jungle
+						["coord"] = { 60.4, 46.4 },
+					}),
+				}),
 				n(-25, { -- Pet Battle
 					p(1468),	-- Bloodbeak
 					p(1586),	-- Cerulean Moth
@@ -177,6 +203,15 @@ _.Zones =
 							i(124578),
 							i(124575),
 						}),
+					}),
+				}),
+				n(-38, { -- Profession
+					prof(182, { -- Herb Gathering
+						o(243334, {		-- Withered Herb
+							n(95132, {	-- Disturbed Podling
+								dr(0.3, i(118595)), -- Nightshade Sproutling
+							}),
+						})
 					}),
 				}),
 				n(-16, { -- Rares
@@ -1077,15 +1112,6 @@ _.Zones =
 								follower(580), -- Pallas
 							}),
 						}),
-					}),
-				}),
-				n(-38, { -- Profession
-					prof(182, { -- Herb Gathering
-						o(243334, {		-- Withered Herb
-							n(95132, {	-- Disturbed Podling
-								dr(0.3, i(118595)), -- Nightshade Sproutling
-							}),
-						})
 					}),
 				}),
 			},

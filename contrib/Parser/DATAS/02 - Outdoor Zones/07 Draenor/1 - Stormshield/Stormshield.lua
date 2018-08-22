@@ -12,6 +12,11 @@ _.Zones =
 					["creatureID"] = 91483, -- Fen Tao
 					["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
 				}),
+				n(-228, {	-- Flight Paths
+					fp(1420, { -- Stormshield (Alliance), Ashran
+						["coord"] = { 30.8, 48.8 },
+					}),
+				}),
 				n(-17, {	-- Quests
 					q(36626, { -- Host Howell
 						["groups"] = {
