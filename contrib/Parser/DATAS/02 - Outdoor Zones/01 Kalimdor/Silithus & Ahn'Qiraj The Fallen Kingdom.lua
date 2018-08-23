@@ -6,6 +6,14 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(81, {	-- Silithus
 			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(72, { -- Cenarion Hold, Silithus
+						["coord"] = { 52.8, 34.6 },
+					}),
+					fp(73, { -- Cenarion Hold, Silithus
+						["coord"] = { 54.4, 32.8 },
+					}),
+				}),
 				n(-25, {	-- Pet Battle
 					p(406), -- Beetle
 					p(484), -- Desert Spider

@@ -13,6 +13,9 @@ _.Zones =
 					fp(179, { -- Mudsprocket, Dustwallow Marsh
 						["coord"] = { 42.8, 72.4 },
 					}),
+					fp(32, { -- Theramore, Dustwallow Marsh
+						["coord"] = { 67.4, 51.2 },
+					}),					
 				}),
 				n(-25, {	-- Pet Battle
 					p(398),	-- Black Rat
