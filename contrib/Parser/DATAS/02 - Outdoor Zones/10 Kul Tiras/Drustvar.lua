@@ -99,6 +99,14 @@ _.Zones =
 					fp(2135, { -- Krazzlefrazz Outpost, Drustvar {NOTE: Verification Required]
 						["coord"] = { 37.4, 24 },
 					}),
+					fp(2275, { -- Mudfisher Cove, Drustvar
+						["coord"] = { 62, 16.8 },
+						["description"] = "Requires completion of Mission Report: Mudfisher Cove and related quest line to unlock.",
+					}),
+					fp(2274, { -- Swiftwind Post, Drustvar
+						["coord"] = { 66.4, 59.2 },
+						["description"] = "Requires completion of Mission Report: Swiftwind Post and related quest line to unlock.",
+					}),
 					fp(2107, { -- Watchman's Rise, Drustvar
 						["coord"] = { 31.8, 30.4 },
 					}),

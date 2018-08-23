@@ -115,6 +115,10 @@ _.Zones =
 					fp(2138, { -- Fort Daelin, Stormsong Valley
 						["coord"] = { 34.2, 47.2 },
 					}),
+					fp(2090, { -- Hillcrest Pasture, Stormsong Valley
+						["coord"] = { 52.8, 80.2 },
+						["description"] = "Requires completion of Mission Report: Hillcrest Pasture and related quest line to unlock.",
+					}),
 					fp(2093, { -- Ironmaul Overlook, Stormsong Valley
 						["coord"] = { 75.8, 64.2 },
 					}),
@@ -133,6 +137,10 @@ _.Zones =
 					fp(2133, { -- Shrine of the Storm, Stormsong Valley
 						["coord"] = { 78.2, 28.8 },
 					}),
+					fp(2091, { -- Stonetusk Watch, Stormsong Valley
+						["coord"] = { 38.8, 66.6 },
+						["description"] = "Requires completion of Mission Report: Stonetusk Watch and related quest line to unlock.",
+					}),
 					fp(2101, { -- The Amber Waves, Stormsong Valley
 						["coord"] = { 50.8, 70.2 },
 					}),
@@ -141,6 +149,10 @@ _.Zones =
 					}),
 					fp(2094, { -- Warfang Hold, Stormsong Valley [NOTE: Verification Required]
 						["coord"] = { 51.4, 33.6 },
+					}),
+					fp(2139, { -- Windfall Cave, Stormsong Valley
+						["coord"] = { 60.8, 27 },
+						["description"] = "Requires completion of Mission Report: Windfall Cavern and related quest line to unlock.",
 					}),
 				}),
 				n(-25, { 	-- Pet Battle

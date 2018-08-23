@@ -93,11 +93,19 @@ _.Zones =
 					fp(2102, { -- Roughneck Camp, Tiragarde Sound
 						["coord"] = { 42.4, 23.0 },
 					}),
+					fp(2279, { -- Stonefist Watch, Tiragarde Sound
+						["coord"] = { 53.2, 63 },
+						["description"] = "Requires completion of Mission Report: Stonefist Watch and related quest line to unlock.",
+					}),
 					fp(2042, { -- Vigil Hill, Tiragarde Sound
 						["coord"] = { 57.6, 61.6 },
 					}),
 					fp(2273, { -- Waning Glacier, Tiragarde Sound
 						["coord"] = { 39.6, 18.4 },
+					}),
+					fp(2062, { -- Wolf's Den, Tiragarde Sound
+						["coord"] = { 62, 13.4 },
+						["description"] = "Requires completion of Mission Report: Wolf's Den and related quest line to unlock.",
 					}),
 				}),
 				n(-25, { 	-- Pet Battle
