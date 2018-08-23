@@ -62,6 +62,7 @@ _.Zones =
 							o(284448, {	-- Hidden Scholar's Chest	
 								["questID"] = 50937,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["coord"] = { 59.9, 39.1 },
 							}),
 							o(280619, {	-- Old Ironbound Chest	
 								["questID"] = 50089,
@@ -139,6 +140,14 @@ _.Zones =
 						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
 						["coord"] = { 64.9, 76.8 },
 					})),
+					a(q(50553, {	-- Back to the Lab
+						["qg"] = 134447,	-- Lost Farmhand
+						["sourceQuests"] = { 50493, 50264, 50165, 50534 },	-- Fetching Wrex / Free the Farmhands / The Bee Team / Wendigo Away [Alliance Only]
+						["coord"] = { 72.7, 72.2 },
+						["groups"] = {
+							i(158558),	-- Back to the Lab
+						},
+					})),
 					a(q(50594, {	-- Beneath the Veil
 						["qg"] = 134639,	-- Brother Pike
 						["sourceQuests"] = { 49998 },	-- Voices Below [Alliance Only]
@@ -181,6 +190,25 @@ _.Zones =
 						["qg"] = 141769,	-- Marilyn Hood
 						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
 					})),
+					a(q(50359, {	-- Cleanup Duty
+						["qg"] = 132017,	-- Ancel Mildenhall
+						["sourceQuests"] = { 50343 },	-- Mayhem at Mildenhall Meadery [Alliance Only]
+						["coord"] = { 68.8, 65.1 },
+					})),
+					a(q(50070, {	-- Detective Mildenhall
+						["qg"] = 132017,	-- Ancel Mildenhall
+						["sourceQuests"] = { 50343 },	-- Mayhem at Mildenhall Meadery [Alliance Only]
+						["coord"] = { 68.8, 65.1 },
+					})),
+					a(q(50064, {	-- Don't Go in the Basement
+						["qg"] = 132017,	-- Ancel Mildenhall
+						["sourceQuests"] = { 50359, 50070 },	-- Cleanup Duty / Detective Mildenhall [Alliance Only]
+						["coord"] = { 70.6, 69.6 },
+						["groups"] = {
+							i(160331),	-- Apiarist's Protective Drape
+							i(160346),	-- Honey-Artisan's Ring
+						},
+					})),
 					a(q(50784, {	-- Eye of the Storm
 						["qg"] = 136497,	-- Tideguard Victoria
 						["sourceQuests"] = { 50780, 50783 },	-- Oathbound / The Abyssal Council [Alliance Only]
@@ -191,6 +219,11 @@ _.Zones =
 						["sourceQuests"] = { 49975 },	-- Rest in the Depths [Alliance Only]
 						["coord"] = { 66.4, 56.4 },
 					})),
+					a(q(50493, {	-- Fetching Wrex
+						["qg"] = 134028,	-- Sam Robinson
+						["sourceQuests"] = { 50504 },	-- Honey Glazed Sam [Alliance Only]
+						["coord"] = { 72.7, 72.2 },
+					})),
 					a(q(50608, {	-- Forbidden Rites
 						["qg"] = 134639,	-- Brother Pike
 						["sourceQuests"] = { 50593, 50594, 50595 },	-- A Bloody Mess / Beneath the Veil / No Quarter [Alliance Only]
@@ -200,6 +233,11 @@ _.Zones =
 						["qg"] = 130904,	-- Samuel Williams
 						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
 						["coord"] = { 64.5, 62.2 },
+					})),
+					a(q(50264, {	-- Free the Farmhands
+						["qg"] = 134028,	-- Sam Robinson
+						["sourceQuests"] = { 50504 },	-- Honey Glazed Sam [Alliance Only]
+						["coord"] = { 72.7, 72.2 },
 					})),
 					a(q(50609, {	-- From the Maw of Madness
 						["qg"] = 134623,	-- Taelia
@@ -235,6 +273,11 @@ _.Zones =
 						},
 						["coord"] = { 66.3, 57.2 },
 					})),
+					a(q(50504, {	-- Honey Glazed Sam
+						["qg"] = 132292,	-- Raimond Mildenhall
+						["sourceQuests"] = { 50168, 50162 },	-- Royal Succession / Sticky Situation [Alliance Only]
+						["coord"] = { 74.1, 72.7 },
+					})),
 					a(q(49703, {	-- House Stormsong
 						["qg"] = 130576,	-- Brother Pike
 						["sourceQuests"] = { 49725 },	-- A Risky Ploy [Alliance Only]
@@ -248,6 +291,11 @@ _.Zones =
 						["qg"] = 130714,	-- Brother Pike
 						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
 						["coord"] = { 63.4, 64.7 },
+					})),
+					a(q(50343, {	-- Mayhem at Mildenhall Meadery
+						["qg"] = 131793,	-- Ancel Mildenhall
+						["sourceQuests"] = { 51582 },	-- Make it Mildenhall [Alliance Only]
+						["coord"] = { 68.8, 65.1 },
 					})),
 					a(q(49793, {	-- Means to an End
 						["qg"] = 130714,	-- Brother Pike
@@ -284,10 +332,20 @@ _.Zones =
 							i(155209),	-- Thundershot Rifle
 						},
 					})),
+					a(q(50161, {	-- Recovering Raimond
+						["qg"] = 132647,	-- Ancel Mildenhall
+						["sourceQuests"] = { 50064 },	-- Don't Go in the Basement [Alliance Only]
+						["coord"] = { 70.6, 69.6 },
+					})),
 					a(q(49975, {	-- Rest in the Depths
 						["qg"] = 130714,	-- Brother Pike
 						["sourceQuests"] = { 49791 },	-- Lost, Not Forgotten [Alliance Only]
 						["coord"] = { 66.3, 56.5 },
+					})),
+					a(q(50168, {	-- Royal Succession
+						["qg"] = 132292,	-- Raimond Mildenhall
+						["sourceQuests"] = { 50161 },	-- Recovering Raimond [Alliance Only]
+						["coord"] = { 74.1, 72.7 },
 					})),
 					a(q(51320, {	-- Sealed Fate
 						["qg"] = 136933,	-- Brother Pike
@@ -302,6 +360,11 @@ _.Zones =
 					a(q(52796, {	-- Sometimes Less is More
 						["qg"] = 141769,	-- Marilyn Hood
 						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
+					})),
+					a(q(50162, {	-- Sticky Situation
+						["qg"] = 132292,	-- Raimond Mildenhall
+						["sourceQuests"] = { 50161 },	-- Recovering Raimond [Alliance Only]
+						["coord"] = { 74.1, 72.7 },
 					})),
 					a(q(50824, {	-- Storm's End
 						["qg"] = 137506,	-- Brother Pike
@@ -359,6 +422,11 @@ _.Zones =
 							i(155236),	-- Stormwarden Seal
 						},
 					})),
+					a(q(50165, {	-- The Bee Team
+						["qg"] = 134447,	-- Lost Farmhand
+						["sourceQuests"] = { 50504 },	-- Honey Glazed Sam [Alliance Only]
+						["coord"] = { 72.7, 72.2 },
+					})),
 					a(q(51552, {	-- The Days Are Just Packed
 						["qg"] = 130786,	-- Hobbs
 						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
@@ -415,7 +483,11 @@ _.Zones =
 						["coord"] = { 66.3, 56.5 },
 						["isBreadcrumb"] = true,
 					})),
-					
+					a(q(50534, {	-- Wendigo Away
+						["qg"] = 134447,	-- Lost Farmhand
+						["sourceQuests"] = { 50504 },	-- Honey Glazed Sam [Alliance Only]
+						["coord"] = { 72.7, 72.2 },
+					})),
 					
 					-- Small Treasure Chests
 					{
@@ -425,6 +497,10 @@ _.Zones =
 					{
 						["questID"] = 51927,	-- Layson & Sons Rigging (Crieve)
 						["coord"] = { 69.3, 57.9 },
+					},
+					{
+						["questID"] = 51939,	-- Rosaline's Apiary (Crieve)
+						["coord"] = { 72.1, 65.8 },
 					},
 					{
 						["questID"] = 51935,	-- Sagehold (Crieve)
@@ -533,12 +609,7 @@ _.Zones =
 						q(51220),	-- Deep Sea Venture
 						q(53097),	-- Despondent Ablutions
 						q(51066),	-- Destroy Mine Carts
-						q(50070),	-- Detective Mildenhall
 						q(50285),	-- Don't Be Crabby
-						q(50064, {	-- Don't Go in the Basement
-						i(160331),
-						i(160346),
-						}),
 						q(51352),	-- Don't Play with Matches
 						q(50741),	-- Don't Turtle
 						q(49746),	-- Dousing the Flames
@@ -612,7 +683,6 @@ _.Zones =
 						q(51582),	-- Make it Mildenhall
 						q(53369),	-- Make Loh Go
 						q(50383),	-- Mankrik's Wrath
-						q(50343),	-- Mayhem at Mildenhall Meadery
 						q(49793),	-- Means to an End
 						q(51209),	-- Mighty Grokkfist
 						q(51215),	-- Milking Goats
@@ -1206,11 +1276,7 @@ _.Zones =
 			},
 			["achievementID"] = 12558,	-- Stormsong Valley
 			["lvl"] = 110,
-			--["maps"] = { 
-			--	1163,	-- Dazar'alor
-			--},
 			["description"] = "|cff66ccffStormsong Valley is lush and green. It is ruled by House Stormsong, and the people of the region are devoted to the sea with a fanatical, religious fervor.This includes the religious sect known as the Tidesages. It was the current Lord Stormsong's grandfather who led the Tidesages to the valley. Stormsong Valley contributes the largest amount of ships–and of the highest quality–to Kul Tiras, and the Tidesages bless each ship methodically. All of its people are devoted to this singular endeavor, but recent troubles have led to a stoppage of construction. The Alliance will need to get to the bottom of this to secure their new navy.|r",
 		}),
 	}),
 };
---]]

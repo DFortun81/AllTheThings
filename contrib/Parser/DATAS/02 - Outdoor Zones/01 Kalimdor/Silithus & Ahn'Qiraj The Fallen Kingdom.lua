@@ -1257,7 +1257,7 @@ END OF MICRO-HOLIDAY --]]
 											["questID"] =  51211, -- The Heart of Azeroth
 										}),
 									},
-									["qg"] = 130216, -- The Heart of Azeroth
+									["qg"] = 130216, -- Magni Bronzebeard
 									["sourceQuests"] = { 52946 }, -- A Dying World
 									["coord"] = { 42.2, 44.2 },
 								}),
