@@ -50,6 +50,12 @@ _.Zones =
 							o(293349, {	-- Discarded Lunchbox	
 								["questID"] = 52326,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["coord"] = { 58.2, 63.7 },
+								["groups"] = {
+									i(160485, {	-- An Unforgettable Luncheon
+										
+									}),
+								},
 							}),
 							o(294174, {	-- Forgotten Chest	
 								["questID"] = 52980,
@@ -158,6 +164,11 @@ _.Zones =
 							i(155231),	-- Purified Tideblood Band
 						}
 					})),
+					a(q(49744, {	-- Bombs, Away
+						["qg"] = 130190,	-- Sergeant Calvin
+						["sourceQuests"] = { 51552 },	-- The Days Are Just Packed [Alliance Only]
+						["coord"] = { 57.6, 66.4 },
+					})),
 					a(q(51490, {	-- Border Issues
 						["qg"] = 137866,	-- Taelia
 						["sourceQuests"] = { 51489 },	-- Time to Leave [Alliance Only]
@@ -186,6 +197,12 @@ _.Zones =
 						},
 						["coord"] = { 68.7, 54.4 },
 					})),
+					a(q(50158, {	-- Checking Out the Collapse
+						["qg"] = 130694,	-- Mayor Roz
+						["sourceQuests"] = { 49755 },	-- Heavy Artillery [Alliance Only]
+						["coord"] = { 57.6, 66.4 },
+						["isBreadcrumb"] = true,
+					})),
 					a(q(52793, {	-- Circle the Wagons
 						["qg"] = 141769,	-- Marilyn Hood
 						["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
@@ -194,6 +211,11 @@ _.Zones =
 						["qg"] = 132017,	-- Ancel Mildenhall
 						["sourceQuests"] = { 50343 },	-- Mayhem at Mildenhall Meadery [Alliance Only]
 						["coord"] = { 68.8, 65.1 },
+					})),
+					a(q(50910, {	-- Dangerous Game
+						["qg"] = 135682,	-- Patrick Eckhart
+						-- ["sourceQuests"] = { 52067 },	-- Survivors [Alliance Only] ??? (potentially not required)
+						["coord"] = { 57.8, 55.3 },
 					})),
 					a(q(50070, {	-- Detective Mildenhall
 						["qg"] = 132017,	-- Ancel Mildenhall
@@ -208,6 +230,11 @@ _.Zones =
 							i(160331),	-- Apiarist's Protective Drape
 							i(160346),	-- Honey-Artisan's Ring
 						},
+					})),
+					a(q(49746, {	-- Dousing the Flames
+						["qg"] = 130694,	-- Mayor Roz
+						-- ["sourceQuests"] = { 51552 },	-- The Days Are Just Packed [Alliance Only] ??? (verification required)
+						["coord"] = { 57.6, 66.4 },
 					})),
 					a(q(50784, {	-- Eye of the Storm
 						["qg"] = 136497,	-- Tideguard Victoria
@@ -264,6 +291,21 @@ _.Zones =
 						["sourceQuests"] = { 49703 },	-- House Stormsong [Alliance Only]
 						["coord"] = { 63.5, 64.8 },
 					})),
+					a(q(49755, {	-- Heavy Artillery
+						["qg"] = 130694,	-- Mayor Roz
+						["sourceQuests"] = { 49744, 49746, 49745 },	-- Bombs, Away / Dousing the Flames / You Have Their Orders [Alliance Only]
+						["coord"] = { 57.6, 66.4 },
+						["groups"] = {
+							i(158692),	-- Darkwater Cinch
+							i(160364),	-- Darkwater Legwraps
+							i(158689),	-- Dread Corsair Greatbelt
+							i(160370),	-- Dread Corsair Wargreaves
+							i(158691),	-- Stormchaser Cincture
+							i(160367),	-- Stormchaser Greaves
+							i(158690),	-- Tidespeaker Cord
+							i(160361),	-- Tidespeaker Pants
+						},
+					})),
 					a(o(290537, {	-- Help Wanted
 						["groups"] = {
 							a(q(51582, {	-- Make it Mildenhall
@@ -302,6 +344,11 @@ _.Zones =
 						["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
 						["coord"] = { 63.4, 64.7 },
 					})),
+					a(q(50909, {	-- Never Outgunned
+						["qg"] = 135874,	-- Lea Martinel
+						-- ["sourceQuests"] = { 52067 },	-- Survivors [Alliance Only] ??? (potentially not required)
+						["coord"] = { 57.9, 55.5 },
+					})),
 					a(q(50595, {	-- No Quarter
 						["qg"] = 134623,	-- Taelia
 						["sourceQuests"] = { 49998 },	-- Voices Below [Alliance Only]
@@ -337,6 +384,11 @@ _.Zones =
 						["sourceQuests"] = { 50064 },	-- Don't Go in the Basement [Alliance Only]
 						["coord"] = { 70.6, 69.6 },
 					})),
+					a(q(51554, {	-- Reloading
+						["qg"] = 135874,	-- Lea Martinel
+						["sourceQuests"] = { 50909 },	-- Never Outgunned [Alliance Only] ??? (might require more??)
+						["coord"] = { 57.9, 55.5 },
+					})),
 					a(q(49975, {	-- Rest in the Depths
 						["qg"] = 130714,	-- Brother Pike
 						["sourceQuests"] = { 49791 },	-- Lost, Not Forgotten [Alliance Only]
@@ -356,6 +408,11 @@ _.Zones =
 						["qg"] = 137691,	-- Brother Pike
 						["sourceQuests"] = { 50824 },	-- Storm's End [Alliance Only]
 						["coord"] = { 78.3, 28.7 },
+					})),
+					a(q(50908, {	-- Smells like Trouble
+						["qg"] = 135682,	-- Patrick Eckhart
+						-- ["sourceQuests"] = { 52067 },	-- Survivors [Alliance Only] ??? (potentially not required)
+						["coord"] = { 57.8, 55.3 },
 					})),
 					a(q(52796, {	-- Sometimes Less is More
 						["qg"] = 141769,	-- Marilyn Hood
@@ -410,6 +467,12 @@ _.Zones =
 						},
 						-- This gave "The Growing Tempest" criteria achievement - Crieve
 					})),
+					a(q(52067, {	-- Survivors
+						["qg"] = 130190,	-- Sergeant Calvin
+						["sourceQuests"] = { 49755 },	-- Heavy Artillery [Alliance Only]
+						["coord"] = { 57.6, 66.4 },
+						["isBreadcrumb"] = true,
+					})),
 					a(q(50783, {	-- The Abyssal Council
 						["qg"] = 136498,	-- Taelia
 						["sourceQuests"] = { 50777, 50778 },	-- The Storm Awakens / Twisted Intentions [Alliance Only]
@@ -421,6 +484,11 @@ _.Zones =
 							i(158699),	-- Tidespeaker Bindings
 							i(155236),	-- Stormwarden Seal
 						},
+					})),
+					a(q(51534, {	-- The Battle for Brennadam (Objective)
+						["qg"] = 130694,	-- Mayor Roz
+						-- ["sourceQuests"] = { 51552 },	-- The Days Are Just Packed [Alliance Only] ??? (verification required)
+						["coord"] = { 57.6, 66.4 },
 					})),
 					a(q(50165, {	-- The Bee Team
 						["qg"] = 134447,	-- Lost Farmhand
@@ -457,6 +525,12 @@ _.Zones =
 						["sourceQuests"] = { 50612 },	-- A House Divided [Alliance Only]
 						["coord"] = { 63.2, 43.1 },
 					})),
+					a(q(50157, {	-- There's Gold in Them There Fields
+						["qg"] = 130694,	-- Mayor Roz
+						["sourceQuests"] = { 49755 },	-- Heavy Artillery [Alliance Only]
+						["coord"] = { 57.6, 66.4 },
+						["isBreadcrumb"] = true,
+					})),
 					a(q(50778, {	-- Twisted Intentions
 						["qg"] = 136053,	-- Samuel Williams
 						["sourceQuests"] = { 50612 },	-- A House Divided [Alliance Only]
@@ -488,6 +562,24 @@ _.Zones =
 						["sourceQuests"] = { 50504 },	-- Honey Glazed Sam [Alliance Only]
 						["coord"] = { 72.7, 72.2 },
 					})),
+					a(q(49745, {	-- You Have Their Orders
+						["qg"] = 130694,	-- Mayor Roz
+						-- ["sourceQuests"] = { 51552 },	-- The Days Are Just Packed [Alliance Only] ??? (verification required)
+						["coord"] = { 57.6, 66.4 },
+					})),
+					a(o(288157, {	-- WANTED: Yarsel'ghun
+						["coord"] = { 57.8, 55.8 },
+						["groups"] = {
+							a(q(51217, {	-- WANTED: Yarsel'ghun
+								["sourceQuests"] = { 52067 },	-- Survivors [Alliance Only] ??? (potentially required)
+							})),
+						},
+					})),
+					a(q(52065, {	-- Worse Than it Looks
+						["qg"] = 135682,	-- Patrick Eckhart
+						["sourceQuests"] = { 50910, 50909, 50908 },	-- Dangerous Game / Never Outgunned / Smells like Trouble [Alliance Only] ???
+						["coord"] = { 57.8, 55.3 },
+					})),
 					
 					-- Small Treasure Chests
 					{
@@ -513,6 +605,10 @@ _.Zones =
 					{
 						["questID"] = 51938,	-- Tempest's Edge (Crieve)
 						["coord"] = { 74.1, 32.2 },
+					},
+					{
+						["questID"] = 51946,	-- Winshorn Hills (Crieve)
+						["coord"] = { 60.9, 51.2 },
 					},
 				}),
 				n(-17, {	-- Quests
@@ -671,7 +767,6 @@ _.Zones =
 						q(51752),	-- Grizzled
 						q(51492),	-- Gunpowder Plot
 						q(51711),	-- Having a Blast
-						q(49755),	-- Heavy Artillery
 						q(52068),	-- Helping Out, Somewhere Else
 						q(50504),	-- Honey Glazed Sam
 						q(50060),	-- Honey, Slimes!
