@@ -79,7 +79,7 @@ _.Zones =
 					fp(1955, { -- Gloom Hollow, Nazmir
 						["coord"] = { 67, 43.6 },
 					}),
-					fp(2080, { -- Grimwatt's Crash, Nazmir
+					fp(2080, { -- Grimwatt's Crash, Nazmir (Confirmed by Vandiel)
 						["description"] = "Requires completion of Mission Report: Grimwatt's Crash and related quest line to unlock.",
 						["coord"] = { 34.2, 63.2 },
 					}),

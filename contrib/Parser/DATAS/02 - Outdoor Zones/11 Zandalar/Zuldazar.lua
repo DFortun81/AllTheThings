@@ -132,7 +132,7 @@ _.Zones =
 					fp(2165, { -- Tusk Isle, Zuldazar
 						["coord"] = { 59.4, 78.0 },
 					}),
-					fp(2157, { -- Veiled Grotto, Zuldazar
+					fp(2157, { -- Veiled Grotto, Zuldazar (Confrimed by Vandiel)
 						["description"] = "Requires completion of Mission Report: Veiled Grotto and related quest line to unlock.",
 						["coord"] = { 44.4, 36.8 },
 					}),
