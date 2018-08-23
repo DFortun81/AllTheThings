@@ -109,19 +109,16 @@ _.Zones =
 					fp(2164, { -- Isle of Fangs, Zuldazar
 						["coord"] = { 54.4, 87.0 },
 					}),
-					--[[	Need to figure out where these flight points are, not showing on in game maps
 					fp(2153, { -- Mistvine Ledge, Zuldazar
-						["coord"] = {  },
+						["description"] = "Requires completion of Mission Report: Mistvine Ledge and related quest line to unlock.",
+						["coord"] = { 64.4, 47.2 },
 					}),
 					fp(2148, { -- Mugamba Overlook, Zuldazar
-						["coord"] = {  },
+						["description"] = "Requires completion of Mission Report: Mugamba Overlook and related quest line to unlock.",
+						["coord"] = { 44.8, 27.0 },
 					}),
-					]]--
 					fp(1965, { -- Nesingwary's Gameland, Zuldazar
 						["coord"] = { 66.2, 17.6 },
-					}),
-					fp(1957, { -- Port of Zandalar, Zuldazar
-						["coord"] = { 52.0, 90.0 },
 					}),
 					fp(2126, { -- Scaletrader Post, Zuldazar
 						["coord"] = { 70.8, 29.6 },
@@ -132,20 +129,17 @@ _.Zones =
 					fp(2027, { -- Temple of the Prophet, Zuldazar
 						["coord"] = { 49.8, 44.6 },
 					}),
-					fp(2061, { -- The Sliver, Zuldazar
-						["coord"] = { 53.0, 19.2 },
-					}),
 					fp(2165, { -- Tusk Isle, Zuldazar
 						["coord"] = { 59.4, 78.0 },
 					}),
-					--[[	Need to figure out where these flight points are, not showing on in game maps
 					fp(2157, { -- Veiled Grotto, Zuldazar
-						["coord"] = {  },
+						["description"] = "Requires completion of Mission Report: Veiled Grotto and related quest line to unlock.",
+						["coord"] = { 44.4, 36.8 },
 					}),
 					fp(2145, { -- Verdant Hollow, Zuldazar
-						["coord"] = {  },
+						["description"] = "Requires completion of Mission Report: Verdant Hollow and related quest line to unlock.",
+						["coord"] = { 55.6, 24.8 },
 					}),
-					]]--
 					fp(1966, { -- Warbeast Kraal, Zuldazar
 						["coord"] = { 67.2, 43.0 },
 					}),

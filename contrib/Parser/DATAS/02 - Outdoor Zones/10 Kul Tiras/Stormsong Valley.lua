@@ -102,6 +102,47 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-228, {	-- Flight Paths
+					fp(2086, { -- Brennadam, Stormsong Valley
+						["coord"] = { 59.6, 70.6 },
+					}),
+					fp(2097, { -- Deadwash, Stormsong Valley
+						["coord"] = { 42.8, 57.4 },
+					}),
+					fp(2092, { -- Diretusk Hollow, Stormsong Valley
+						["coord"] = { 54.2, 49.2 },
+					}),
+					fp(2138, { -- Fort Daelin, Stormsong Valley
+						["coord"] = { 34.2, 47.2 },
+					}),
+					fp(2093, { -- Ironmaul Overlook, Stormsong Valley
+						["coord"] = { 75.8, 64.2 },
+					}),
+					fp(2088, { -- Mildenhall Meadery, Stormsong Valley
+						["coord"] = { 68.6, 65.0 },
+					}),
+					fp(2137, { -- Millstone Hamlet, Stormsong Valley
+						["coord"] = { 30.8, 66.6 },
+					}),
+					fp(2089, { -- Seekers Vista, Stormsong Valley
+						["coord"] = { 40.0, 37.2 },
+					}),
+					fp(2095, { -- Shrine of the Storm, Stormsong Valley
+						["coord"] = { 77.8, 24.0 },
+					}),
+					fp(2133, { -- Shrine of the Storm, Stormsong Valley
+						["coord"] = { 78.2, 28.8 },
+					}),
+					fp(2101, { -- The Amber Waves, Stormsong Valley
+						["coord"] = { 50.8, 70.2 },
+					}),
+					fp(2085, { -- Tidecross, Stormsong Valley
+						["coord"] = { 65.6, 48.0 },
+					}),
+					fp(2094, { -- Warfang Hold, Stormsong Valley [NOTE: Verification Required]
+						["coord"] = { 51.4, 33.6 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {
 						p(2374),	-- Freshwater Crawler

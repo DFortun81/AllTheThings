@@ -79,11 +79,10 @@ _.Zones =
 					fp(1955, { -- Gloom Hollow, Nazmir
 						["coord"] = { 67, 43.6 },
 					}),
-					--[[	Need to figure out where this flight point is, not showing on in game maps
 					fp(2080, { -- Grimwatt's Crash, Nazmir
-							["coord"] = { },
+						["description"] = "Requires completion of Mission Report: Grimwatt's Crash and related quest line to unlock.",
+						["coord"] = { 34.2, 63.2 },
 					}),
-					]]--
 					fp(2161, { -- Redfield's Watch, Nazmir
 						["coord"] = { 50.8, 20.8 },
 					}),

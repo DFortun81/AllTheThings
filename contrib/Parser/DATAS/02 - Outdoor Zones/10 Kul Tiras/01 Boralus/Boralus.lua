@@ -62,6 +62,17 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-228, {	-- Flight Paths
+					fp(2278, { -- Mariner's Row, Tiragarde Sound
+						["coord"] = { 76.6, 72.6 },
+					}),
+					fp(2277, { -- Proudmoore Keep, Tiragarde Sound
+						["coord"] = { 47.7, 65.4 },
+					}),
+					fp(2083, { -- Tradewinds Market, Tiragarde Sound
+						["coord"] = { 66.9, 15.0 },
+					}),
+				}),
 				n(-38, {	-- Professions
 					["groups"] = {
 						q(48752, {	-- A Need For Coal

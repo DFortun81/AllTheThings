@@ -7,6 +7,14 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(1169, {	-- -- Tol Dagor
 			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(2096, { -- Tol Dagor, Tiragarde Sound [NOTE: Verification and Coords Required]
+						["coord"] = {  },
+					}),
+					fp(2276, { -- Tol Dagor, Tiragarde Sound [NOTE: Verification and Coords Required]
+						["coord"] = {  },
+					}),
+				}),
 				n(-17, { -- Quests
 					["groups"] = {
 						a(ach(12582, { -- Come Sail Away

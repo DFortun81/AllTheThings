@@ -32,8 +32,14 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Paths
+					fp(1957, { -- Port of Zandalar, Zuldazar
+						["coord"] = { 52.0, 90.0 },
+					}),
 					fp(1959, { -- The Great Seal
 						["coord"] = { 51.8, 41.2 },
+					}),
+					fp(2061, { -- The Sliver, Zuldazar
+						["coord"] = { 53.0, 19.2 },
 					}),
 				}),
 				n(-38, {	-- Professions

@@ -65,6 +65,41 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-228, {	-- Flight Paths
+					fp(2074, { -- Bridgeport, Tiragarde Sound
+						["coord"] = { 75.8, 48.6 },
+					}),
+					fp(2077, { -- Castaway Point, Tiragarde Sound
+						["coord"] = { 86.4, 80.8 },
+					}),
+					fp(2023, { -- Freehold, Tiragarde Sound
+						["coord"] = { 77.8, 82.8 },
+					}),
+					fp(2060, { -- Hatherford, Tiragarde Sound
+						["coord"] = { 66.8, 23.0 },
+					}),
+					fp(2079, { -- Kennings Lodge, Tiragarde Sound
+						["coord"] = { 76.6, 65.4 },
+					}),
+					fp(2084, { -- Norwington Estate, Tiragarde Sound
+						["coord"] = { 52.8, 28.8 },
+					}),
+					fp(2087, { -- Outrigger Post, Tiragarde Sound
+						["coord"] = { 35.6, 24.8 },
+					}),
+					fp(2140, { -- Plunder Harbor, Tiragarde Sound [NOTE: Verification Required]
+						["coord"] = {  },
+					}),
+					fp(2102, { -- Roughneck Camp, Tiragarde Sound
+						["coord"] = { 42.4, 23.0 },
+					}),
+					fp(2042, { -- Vigil Hill, Tiragarde Sound
+						["coord"] = { 57.6, 61.6 },
+					}),
+					fp(2273, { -- Waning Glacier, Tiragarde Sound
+						["coord"] = { 39.6, 18.4 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {
 						p(2165),	-- Francois

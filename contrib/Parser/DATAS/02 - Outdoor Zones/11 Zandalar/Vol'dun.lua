@@ -116,7 +116,7 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Paths
-					--[[	Need to figure out where these flight points are, not showing on in game maps
+					--[[	Need to figure out where these flight points are, not showing on in game maps and not showing up as a mission report unlock
 					fp(2162, { -- Devoted Sanctuary, Vol'dun
 							["coord"] = { },
 					}),
@@ -142,11 +142,10 @@ _.Zones =
 					fp(2117, { -- Vulpera Hideaway, Vol'dun
 						["coord"] = { 57.0, 49.2 },
 					}),
-					--[[	Need to figure out where this flight point is, not showing on in game maps
 					fp(2112, { -- Vulture's Nest, Vol'dun
-							["coord"] = { },
+						["description"] = "Requires completion of Mission Report: Vulture's Nest and related quest line to unlock.",
+						["coord"] = { 53.6, 37.6 },
 					}),
-					]]--
 				}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {

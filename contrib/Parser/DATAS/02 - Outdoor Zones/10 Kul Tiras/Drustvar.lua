@@ -74,6 +74,38 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-228, {	-- Flight Paths
+					fp(2127, { -- Anyport, Drustvar
+						["coord"] = { 19.2, 43.2 },
+					}),
+					fp(2106, { -- Arom's Stand, Drustvar
+						["coord"] = { 38.2, 52.4 },
+					}),
+					fp(2037, { -- Barbthorn Ridge, Drustvar
+						["coord"] = { 62.6, 23.8 },
+					}),
+					fp(2108, { -- Falconhurst, Drustvar
+						["coord"] = { 27, 72.2 },
+					}),
+					fp(2033, { -- Fallhaven, Drustvar
+						["coord"] = { 55.2, 34.8 },
+					}),
+					fp(2035, { -- Fletcher's Hollow, Drustvar
+						["coord"] = { 70.2, 60.4 },
+					}),
+					fp(2034, { -- Hangman's Point, Drustvar
+						["coord"] = { 71, 40.8 },
+					}),
+					fp(2135, { -- Krazzlefrazz Outpost, Drustvar {NOTE: Verification Required]
+						["coord"] = { 37.4, 24 },
+					}),
+					fp(2107, { -- Watchman's Rise, Drustvar
+						["coord"] = { 31.8, 30.4 },
+					}),
+					fp(2109, { -- Whitegrove Chapel, Drustvar
+						["coord"] = { 25.6, 16.6 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {
 						p(2386),	-- Coastal Scuttler
