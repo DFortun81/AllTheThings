@@ -6004,8 +6004,8 @@ local function CreateMiniListForGroup(group)
 					sourceQuest = SearchForField("questID", sourceQuestID);
 					if sourceQuest and #sourceQuest > 0 then
 						-- Only care about the first search result.
-						if app.GroupFilter(sourceQuest[1]) then
-							sourceQuest = setmetatable({ ['collectible'] = true, ['visible'] = true, ['hideText'] = true }, { __index = sourceQuest[1] });
+						if app.GroupFilter(sourceQuest[1]) and app.RecursiveClassAndRaceFilter(sourceQuest[1]) then
+							sourceQuest = setmetatable({ --[[['collectible'] = true,]] ['visible'] = true, ['hideText'] = true }, { __index = sourceQuest[1] });
 							if sourceQuest.sourceQuests and #sourceQuest.sourceQuests > 0 and (not sourceQuest.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
 								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
 								for j, subsourceQuests in ipairs(sourceQuest.sourceQuests) do
