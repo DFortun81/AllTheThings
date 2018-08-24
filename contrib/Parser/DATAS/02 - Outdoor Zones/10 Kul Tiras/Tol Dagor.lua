@@ -9,10 +9,10 @@ _.Zones =
 			["groups"] = {
 				n(-228, {	-- Flight Paths
 					fp(2096, { -- Tol Dagor, Tiragarde Sound [NOTE: Verification and Coords Required]
-						["coord"] = {  },
+						["coord"] = { 37.8, 92.4 },
 					}),
 					fp(2276, { -- Tol Dagor, Tiragarde Sound [NOTE: Verification and Coords Required]
-						["coord"] = {  },
+						["coord"] = { 23.4, 48.2 },
 					}),
 				}),
 				n(-17, { -- Quests
