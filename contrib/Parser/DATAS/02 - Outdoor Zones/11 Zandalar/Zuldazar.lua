@@ -649,11 +649,12 @@ _.Zones =
 								{ 42.11, 36.14 },
 							},
 						}),
-						--[[ May not have transitioned from Beta to Live
-						n(134637, {	-- Headhunter Lee'za [MissingL]
-							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
-						}),	
-						--]]
+						n(134637, {	-- Headhunter Lee'za
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(161117),	-- Berserker's Juju
+							}),
+							["questID"] = 50661,	-- WQ ID is 50846
+						}),
 						n(126637, {	-- Kandak  [CLQS]
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								sz(12944, 10),	-- Kandak
@@ -665,15 +666,15 @@ _.Zones =
 							},
 						}),
 						n(132244, {	-- Kiboku  [CLQS]
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								sz(12944, 21),	-- Kiboku
 								i(161112),	--  Hillshaker Armplates
 							}),
-							["questID"] = 50159,
+							["questID"] = 50159,	-- WQ ID is 50869
 							["coords"] = {
 								{ 75.62, 36.25 },
 							},
-						}),	
+						}),
 						n(131233, {	-- Lei-zhi [CLQS]
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								sz(12944, 6),	-- Lei-zhi
@@ -816,6 +817,7 @@ _.Zones =
 							["isDaily"] = true,
 							["coords"] = {
 								{ 43.12, 72.95 },
+								{ 41.11, 74.84 },
 							},
 						}),
 						o(9999995, { -- Treasure Chest
@@ -851,6 +853,13 @@ _.Zones =
 							["isDaily"] = true,
 							["coords"] = {
 								{ 69.10, 19.82 },
+							},
+						}),
+						o(9999978, { -- Treasure Chest
+							["questID"] = 50728,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 80.06, 38.41 },
 							},
 						}),
 					},
@@ -984,6 +993,8 @@ _.Zones =
 								i(157907),	-- Shadra Silk Mantle
 								i(157909),	-- Shadra Silk Cuffs
 								i(157904),	-- Shadra Silk Gloves
+								i(157906),	-- Shadra Silk Legwraps
+								i(157903),	-- Shadra Silk Footwraps
 							},
 						}),
 						n(-44, {	-- Leather

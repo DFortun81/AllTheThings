@@ -669,10 +669,10 @@ _.Zones =
 							["questID"] = 48439,
 						}),	
 						n(126635, {	-- Blood Priest Xak'lar
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161217),	-- Tainted Blood Vambraces
 							}),
-							["questID"] = 48057,
+							["questID"] = 48541,
 						}),
 						n(125232, {	-- Captain Mu'kala
 							["g"] = {
@@ -902,6 +902,13 @@ _.Zones =
 							["isDaily"] = true,
 							["coord"] = { 49.2, 33.3 },
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						}),
+						o(9999979, { -- Treasure Chest
+							["questID"] = 49899,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 61.4, 57.6 },
+							},
 						}),
 					},
 				}),

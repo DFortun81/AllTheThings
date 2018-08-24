@@ -1037,9 +1037,9 @@ _.Zones =
 							}),
 							["questID"] = 52461,	
 						}),	
-						n(137649, {	-- Pest Remover Mk. II [MissingL]
-							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
-						}),	
+						n(137649, {	-- Pest Remover Mk. II
+							["questID"] = 53612,	-- WQ is 51806
+						}),
 						n(139298, {	-- Pinku'shon		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(163678),	-- Pinku'shon's Impaler
