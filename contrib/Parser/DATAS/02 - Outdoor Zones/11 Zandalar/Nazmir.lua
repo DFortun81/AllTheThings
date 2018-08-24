@@ -653,9 +653,9 @@ _.Zones =
 							}),
 							["questID"] = 48063,
 						}),
-						n(134298, {	-- Azerite-Infused Elemental [MissingL]
-							["questID"] = 50563,	
-						}),	
+						n(134298, {	-- Azerite-Infused Elemental
+							["questID"] = 50569,	
+						}),
 						n(134293, {	-- Azerite-Infused Slag
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161100),	-- Fused-Slag Girdle

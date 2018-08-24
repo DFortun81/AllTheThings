@@ -7,7 +7,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
 			["groups"] = {
-				n(-4, {	-- Achievement
+				n(-4,   {	-- Achievement
 					["groups"] = {
 						ach(12995, {	-- Treasures of Drustvar
 							o(297879, {	-- Bespelled Chest	
@@ -114,14 +114,14 @@ _.Zones =
 						["coord"] = { 25.6, 16.6 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  { 	-- Pet Battle
 					["groups"] = {
 						p(2386),	-- Coastal Scuttler
 						p(2378),	-- River Otter
 						p(2411),	-- Wicker Pup
 					},
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					["groups"] = {
 						qa(50970, {	-- A Farmer's Fate
 							["qg"] = 135976,	-- Morwin Gladeheart
@@ -1290,7 +1290,7 @@ _.Zones =
 						--]]
 					},
 				}),
-				n(-16, {	-- Rares
+				n(-16,  {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						o(277333, {	-- Ancient Sarcophagus
@@ -1552,9 +1552,21 @@ _.Zones =
 							["isDaily"] = true,
 							["questID"] = 51902,
 						}),
+						o(9999977, {	-- Small Treasure Chest
+							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+							["coord"] = { 65.12, 51.85 },
+							["isDaily"] = true,
+							["questID"] = 51885,
+						}),
+						o(9999976, {	-- Small Treasure Chest
+							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+							["coord"] = { 69.41, 63.11 },
+							["isDaily"] = true,
+							["questID"] = 51899,
+						}),
 					},
 				}),
-				n(-2, {  -- Vendors
+				n(-2,   {	-- Vendors
 					["groups"] = {
 						n(144353, {	-- Collector Kojo <Tortollan Seekers Emissary> [NOTE: Will need correct npcID when located]
 							["groups"] = {
@@ -1703,7 +1715,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-34, {	-- World Quests
+				n(-34,  {	-- World Quests
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
@@ -1786,7 +1798,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0, {	-- Zone Drop
+				n(0,    {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						i(163603, {	-- Lucille's Handkerchief
 							["description"] = "After completing the quest \"One Last Quest\" you can return back to the house, go upstairs and it will be in the closet to loot.",

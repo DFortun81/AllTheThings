@@ -651,11 +651,11 @@ i(155430),
 								}),
 								["questID"] = 51076,
 							}),
-							n(136338, {	-- Sirokar		
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							n(136338, {	-- Sirokar
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161099),	-- Wind-Scoured Greaves
 								}),
-								-- ["questID"] = 	
+								["questID"] = 51075,
 							}),
 							n(134571, {	-- Skycaller Teskris		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -672,12 +672,12 @@ i(155430),
 								}),
 								["questID"] = 51063,
 							}),
-							n(130401, {	-- Vathikur		
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							n(130401, {	-- Vathikur
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161097),	-- Rattling Earth Armwraps
 								}),
-								-- ["questID"] = 	
-							}),	
+								["questID"] = 49674,
+							}),
 							n(129180, {	-- Warbringer Hozzik
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161032),	-- Spire-Charged Links
@@ -716,6 +716,7 @@ i(155430),
 							["isDaily"] = true,
 							["coords"] = {
 								{ 29.58, 48.10 },
+								{ 31.28, 49.15 },
 							},
 						}),
 						o(9999998, { -- Treasure Chest
@@ -737,6 +738,7 @@ i(155430),
 							["isDaily"] = true,
 							["coords"] = {
 								{ 56.49, 69.88 },
+								{ 52.74, 76.49 },
 							},
 						}),
 						o(9999995, { -- Treasure Chest
@@ -772,6 +774,7 @@ i(155430),
 							["isDaily"] = true,
 							["coords"] = {
 								{ 28.19, 68.92 },
+								{ 27.15, 65.09 },
 							},
 						}),
 						o(9999980, { -- Treasure Chest
@@ -779,6 +782,7 @@ i(155430),
 							["isDaily"] = true,
 							["coords"] = {
 								{ 33.71, 77.40 },
+								{ 34.74, 77.24 },
 							},
 						}),
 					},
