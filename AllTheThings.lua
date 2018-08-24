@@ -6769,6 +6769,13 @@ local function RowOnEnter(self)
 			end
 			GameTooltipIcon:Show();
 		end
+		if reference.cost then
+			local cost = tostring(reference.cost);
+			if reference.parent and (reference.parent.currencyID or reference.parent.itemID) then
+				cost = (reference.parent.icon and ("|T" .. reference.parent.icon .. ":0|t") or "") .. (reference.parent.text or "???") .. " x" .. cost;
+			end
+			GameTooltip:AddDoubleLine("Cost", cost); 
+		end
 		
 		-- Show Quest Prereqs
 		if reference.sourceQuests then
@@ -7633,6 +7640,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 				end
 				if t.mapID then
 					t = app.CreateMap(t.mapID, t);
+				elseif t.currencyID then
+					t = app.CreateCurrencyClass(t.currencyID, t);
 				elseif t.objectID then
 					t = app.CreateObject(t.objectID, t);
 				elseif t.followerID then
@@ -7649,6 +7658,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 					t = app.CreateAchievement(t.achievementID, t);
 				elseif t.questID then
 					t = app.CreateQuest(t.questID, t);
+				elseif t.npcID or t.creatureID then
+					t = app.CreateNPC(t.npcID or t.creatureID, t);
 				elseif t.itemID then
 					t = app.CreateItem(t.itemID, t);
 				end
@@ -7662,6 +7673,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 			if not key then
 				if t.mapID then
 					key = "mapID";
+				elseif t.currencyID then
+					key = "currencyID";
 				elseif t.objectID then
 					key = "objectID";
 				elseif t.followerID then
@@ -7678,14 +7691,16 @@ app:GetWindow("Debugger", UIParent, function(self)
 					key = "achievementID";
 				elseif t.questID then
 					key = "questID";
+				elseif t.npcID then
+					key = "npcID";
+				elseif t.creatureID then
+					key = "creatureID";
 				elseif t.itemID then
 					key = "itemID";
 				end
 			end
 			for i,o in ipairs(g) do
 				if o[key] == t[key] then
-					t.visible = nil;
-					t.expanded = nil;
 					if t.g then
 						local tg = t.g;
 						t.g = nil;
@@ -7697,14 +7712,14 @@ app:GetWindow("Debugger", UIParent, function(self)
 							o.g = tg;
 						end
 					end
-					for key,value in pairs(t) do
-						o[key] = value;
+					for k,value in pairs(t) do
+						o[k] = value;
 					end
-					return true;
+					return o;
 				end
 			end
 			table.insert(g, t);
-			return true;
+			return t;
 		end
 		
 		-- Setup Event Handlers and register for events
@@ -7734,6 +7749,84 @@ app:GetWindow("Debugger", UIParent, function(self)
 					self:MergeObject(self.rawData, info);
 					self:Update();
 				end
+			elseif e == "MERCHANT_SHOW" or "MERCHANT_UPDATE" then
+				MerchantFrame_SetFilter(MerchantFrame, 1);
+				C_Timer.After(0.6, function()
+					local guid = UnitGUID("npc");
+					local ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
+					if guid then ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
+					if npc_id then
+						npc_id = tonumber(npc_id);
+						local numItems = GetMerchantNumItems();
+						print("MERCHANT DETAILS", ty, npc_id, numItems);
+						
+						local rawGroups = {};
+						for i=1,numItems,1 do
+							local link = GetMerchantItemLink(i);
+							if link then
+								local parent = rawGroups;
+								local name, texture, cost, quantity, numAvailable, isPurchasable, isUsable, extendedCost = GetMerchantItemInfo(i);
+								-- print(link, cost, extendedCost);
+								if extendedCost then
+									local itemCount = GetMerchantItemCostInfo(i);
+									for j=1,itemCount,1 do
+										local itemTexture, itemValue, itemLink = GetMerchantItemCostItem(i, j);
+										if itemLink then
+											-- print("  ", itemValue, itemLink, gsub(itemLink, "\124", "\124\124"));
+											local m = itemLink:match("currency:(%d+)");
+											if m then
+												-- Parse as a CURRENCY LINK.
+												parent = self:MergeObject(parent, {["currencyID"] = tonumber(m), ["g"] = {}}).g;
+												cost = itemValue;
+											else
+												-- Parse as an ITEM LINK.
+												m = itemLink:match("item:(%d+)");
+												if m then
+													cost = itemValue;
+													parent = self:MergeObject(parent, {["itemID"] = tonumber(m), ["g"] = {}}).g;
+												end
+											end
+										end
+									end
+								end
+								
+								-- Parse as an ITEM LINK.
+								m = link:match("item:(%d+)");
+								if m then table.insert(parent, {["itemID"] = tonumber(m), ["cost"] = cost}); end
+								--[===[
+								local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(link);
+								print(" ", itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice);
+								]===]--
+							end
+						end
+						
+						
+						
+						local info = { [(ty == "GameObject") and "objectID" or "npcID"] = npc_id };
+						info.faction = UnitFactionGroup("npc");
+						info.text = UnitName("npc");
+						info.g = rawGroups;
+						
+						local px, py = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"):GetXY();
+						info.coord = { px * 100, py * 100 };
+						print(px, py);
+						
+						-- Bubble Up the Maps
+						local mapInfo;
+						local mapID = app.GetCurrentMapID();
+						repeat
+							mapInfo = C_Map.GetMapInfo(mapID);
+							if mapInfo then
+								info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
+								mapID = mapInfo.parentMapID
+							end
+						until not mapInfo or not mapID;
+						
+						self:MergeObject(self.data.g, self:CreateObject(info));
+						self:MergeObject(self.rawData, info);
+						self:Update();
+					end
+				end);
 			elseif e == "TRADE_SKILL_LIST_UPDATE" then
 				local tradeSkillID = AllTheThings.GetTradeSkillLine();
 				local spellRecipeInfo = {};
@@ -7812,7 +7905,6 @@ app:GetWindow("Debugger", UIParent, function(self)
 				local questID = GetQuestID();
 				if questID == 0 then return false; end
 				local questStartItemID = ...;
-				local mapID = app.GetCurrentMapID();
 				local npc = "questnpc";
 				local guid = UnitGUID(npc);
 				if not guid then
@@ -7862,6 +7954,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 				
 				-- Bubble Up the Maps
 				local mapInfo;
+				local mapID = app.GetCurrentMapID();
 				repeat
 					mapInfo = C_Map.GetMapInfo(mapID);
 					if mapInfo then
@@ -7882,6 +7975,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 		self:RegisterEvent("NEW_WMO_CHUNK");
+		self:RegisterEvent("MERCHANT_SHOW");
+		self:RegisterEvent("MERCHANT_UPDATE");
 		--self:RegisterAllEvents();
 	end
 	
