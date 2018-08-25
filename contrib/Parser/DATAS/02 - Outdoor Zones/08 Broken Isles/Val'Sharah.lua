@@ -567,6 +567,10 @@ _.Zones =
 					fp(1764, { -- Starsong Refuge, Val'sharah
 						["coord"] = { 69, 50.8 },
 					}),
+					fp(1847, { -- The Dream Grove (Eagle)
+						["coord"] = { 44, 15 },
+						["classes"] = { 3 },	-- Hunter
+					}),
 				}),
 				n(-25, { 	-- Pet Battles
 					p(1738), 	-- Auburn Ringtail

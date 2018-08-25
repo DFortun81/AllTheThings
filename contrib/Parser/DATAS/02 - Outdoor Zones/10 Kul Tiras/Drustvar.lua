@@ -87,8 +87,14 @@ _.Zones =
 					fp(2108, { -- Falconhurst, Drustvar
 						["coord"] = { 27, 72.2 },
 					}),
+					fp(2056, { -- Fallhaven, Drustvar (Ferry)
+						["coord"] = { 61.6, 36.6 },
+					}),
 					fp(2033, { -- Fallhaven, Drustvar
 						["coord"] = { 55.2, 34.8 },
+					}),
+					fp(2057, { -- Fletcher's Hollow, Drustvar (Ferry)
+						["coord"] = { 69.4, 57.2 },
 					}),
 					fp(2035, { -- Fletcher's Hollow, Drustvar
 						["coord"] = { 70.2, 60.4 },

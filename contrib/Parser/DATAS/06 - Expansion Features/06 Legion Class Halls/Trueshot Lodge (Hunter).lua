@@ -108,6 +108,16 @@ _.ExpansionFeatures =
 						a(ach(10743)),	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
 						h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 					}),
+					n(-228, { -- Flight Paths
+						fp(1760, { -- Trueshot Lodge, Highmountain
+							["coord"] = { 36.0, 27.8 },
+							["classes"] = { 3 },	-- Hunter
+						}),
+						fp(1848, { -- Trueshot Lodge (Eagle)
+							["coord"] = { 39.8, 29.6 },
+							["classes"] = { 3 },	-- Hunter
+						}),
+					}),
 					n(-17, { -- Quests
 						qart(qg(107317, q(41541, {	-- A Beastly Expedition 
 							["groups"] = {

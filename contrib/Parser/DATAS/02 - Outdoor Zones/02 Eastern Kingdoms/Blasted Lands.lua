@@ -6,6 +6,20 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(17, {	-- Blasted Lands
 			["groups"] = {					
+				n(-228, { 	-- Flight Paths
+					fp(604, { -- Dreadmaul Hold, Blasted Lands
+						["coord"] = { 43.6, 14.2 },
+					}),
+					fp(45, { -- Nethergarde Keep, Blasted Lands
+						["coord"] = { 61.2, 21.6 },
+					}),
+					fp(603, { -- Sunveil Excursion, Blasted Lands
+						["coord"] = { 50.8, 72.8 },
+					}),
+					fp(602, { -- Surwich, Blasted Lands
+						["coord"] = { 47, 89.2 },
+					}),
+				}),
 				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder
 					p(415), 	-- Fire Beetle

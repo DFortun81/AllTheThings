@@ -69,6 +69,9 @@ _.Zones =
 					fp(2277, { -- Proudmoore Keep, Tiragarde Sound
 						["coord"] = { 47.7, 65.4 },
 					}),
+					fp(2105, { -- Tradewinds Market, Tiragarde Sound (Ferry)
+						["coord"] = { 74.2, 24.6 },
+					}),
 					fp(2083, { -- Tradewinds Market, Tiragarde Sound
 						["coord"] = { 66.9, 15.0 },
 					}),

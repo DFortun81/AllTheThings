@@ -485,6 +485,10 @@ _.Zones =
 					}),
 				}),
 				n(-228, {	-- Flight Paths
+					fp(1850, { -- Eastern Highmountain (Eagle)
+						["coord"] = { 56.6, 67.8 },
+						["classes"] = { 3 },	-- Hunter
+					}),
 					fp(1755, { -- Felbane Camp, Highmountain
 						["coord"] = { 30, 39.2 },
 					}),

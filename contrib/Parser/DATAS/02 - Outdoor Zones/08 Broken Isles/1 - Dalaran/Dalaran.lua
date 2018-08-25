@@ -62,6 +62,12 @@ _.Zones =
 					fp(1774, { -- Dalaran
 						["coord"] = { 69.8, 50.8 },
 					}),
+--[[			Point does not register and check off after taking flight from Eagle Master		
+					fp(1849, { -- Dalaran (Eagle)
+						["coord"] = { 72.6, 41.6 },
+						["classes"] = { 3 },	-- Hunter
+					}),
+]]--					
 				}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {

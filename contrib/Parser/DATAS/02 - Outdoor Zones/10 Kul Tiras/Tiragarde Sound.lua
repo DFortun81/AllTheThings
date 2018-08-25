@@ -66,11 +66,20 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Paths
+					fp(2052, { -- Anglepoint Wharf, Tiragarde Sound (Ferry)
+						["coord"] = { 42, 30.6 },
+					}),
 					fp(2074, { -- Bridgeport, Tiragarde Sound
 						["coord"] = { 75.8, 48.6 },
 					}),
 					fp(2077, { -- Castaway Point, Tiragarde Sound
 						["coord"] = { 86.4, 80.8 },
+					}),
+					fp(2104, { -- Eastpoint Station, Tiragarde Sound (Ferry)
+						["coord"] = { 74.2, 44.2 },
+					}),
+					fp(2054, { -- Firebreaker Expedition, Tiragarde Sound (Ferry)
+						["coord"] = { 63.8, 30.2 },
 					}),
 					fp(2023, { -- Freehold, Tiragarde Sound
 						["coord"] = { 77.8, 82.8 },
@@ -84,6 +93,9 @@ _.Zones =
 					fp(2084, { -- Norwington Estate, Tiragarde Sound
 						["coord"] = { 52.8, 28.8 },
 					}),
+					fp(2053, { -- Old Drust Road, Tiragarde Sound (Ferry)
+						["coord"] = { 54, 53.2 },
+					}),
 					fp(2087, { -- Outrigger Post, Tiragarde Sound
 						["coord"] = { 35.6, 24.8 },
 					}),
@@ -92,6 +104,9 @@ _.Zones =
 					}),
 					fp(2102, { -- Roughneck Camp, Tiragarde Sound
 						["coord"] = { 42.4, 23.0 },
+					}),
+					fp(2055, { -- Southwind Station, Tiragarde Sound (Ferry)
+						["coord"] = { 66.6, 49.8 },
 					}),
 					fp(2279, { -- Stonefist Watch, Tiragarde Sound
 						["coord"] = { 53.2, 63 },

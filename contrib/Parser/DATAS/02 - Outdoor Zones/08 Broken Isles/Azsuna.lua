@@ -1094,6 +1094,10 @@ _.Zones =
 					fp(1615, { -- Challiane's Terrace, Azsuna
 						["coord"] = { 40.8, 9 },
 					}),
+					fp(1846, { -- Faronaar (Eagle)
+						["coord"] = { 24.4, 43 },
+						["classes"] = { 3 },	-- Hunter
+					}),
 					fp(1859, { -- Felblaze Ingress, Azsuna
 						["coord"] = { 63.8, 28.4 },
 					}),
@@ -1102,6 +1106,10 @@ _.Zones =
 					}),
 					fp(1622, { -- Illidari Stand, Azsuna
 						["coord"] = { 44.6, 43.8 },
+					}),
+					fp(1845, { -- Isle of the Watchers (Eagle)
+						["coord"] = { 51, 79.8 },
+						["classes"] = { 3 },	-- Hunter
 					}),
 					fp(1633, { -- Shackle's Den, Azsuna
 						["coord"] = { 56.2, 59 },
