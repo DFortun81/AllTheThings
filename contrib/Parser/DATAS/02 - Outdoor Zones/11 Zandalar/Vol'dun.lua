@@ -14,6 +14,78 @@ _.Zones =
 								["criteriaID"] = 3,	-- Portakillo
 							}),
 						}),
+						ach(13016, {	-- Scavenger of the Sands
+							{	-- Jason's Rusty Blade
+								["criteriaID"] = 1,	-- Jason's Rusty Blade
+								["questID"] = 53132,
+								["coord"] = { 56.3, 70.1 },
+							},
+							{	-- Ian's Empty Bottle
+								["criteriaID"] = 2,	-- Ian's Empty Bottle
+								["questID"] = 53133,
+								["coord"] = { 36.21, 78.37 },
+							},
+							{	-- Julie's Cracked Dish
+								["criteriaID"] = 3,	-- Julie's Cracked Dish
+								["questID"] = 53134,
+								["coord"] = { 53.6, 89.7 },
+							},
+							{	-- Brian's Broken Compass
+								["criteriaID"] = 4,	-- Brian's Broken Compass
+								["questID"] = 53135,
+								["coord"] = { 37.8, 30.4 },
+							},
+							{	-- Ofer's Bound Journal
+								["criteriaID"] = 5,	-- Ofer's Bound Journal
+								-- ["questID"] = ,
+								["coord"] = { 26.8, 52.9 },
+							},
+							{	-- Skye's Pet Rock
+								["criteriaID"] = 6,	-- Skye's Pet Rock
+								["questID"] = 53137,
+								["coord"] = { 29.5, 59.5 },
+							},
+							{	-- Julien's Left Boot
+								["criteriaID"] = 7,	-- Julien's Left Boot
+								-- ["questID"] = ,
+								["coord"] = { 52.5, 14.5 },
+							},
+							{	-- Navarro's Flask
+								["criteriaID"] = 8,	-- Navarro's Flask
+								["questID"] = 53139,
+								["coord"] = { 43.2, 77.0 },
+							},
+							{	-- Zach's Canteen
+								["criteriaID"] = 9,	-- Zach's Canteen
+								["questID"] = 53140,
+								["coord"] = { 47.0, 75.8 },
+							},
+							{	-- Damarcus' Backpack
+								["criteriaID"] = 10,	-- Damarcus' Backpack
+								["questID"] = 53141,
+								["coord"] = { 45.9, 30.8 },
+							},
+							{	-- Rachel's Flute
+								["criteriaID"] = 11,	-- Rachel's Flute
+								["questID"] = 53142,
+								["coord"] = { 66.4, 36.0 },
+							},
+							{	-- Josh's Fang Necklace
+								["criteriaID"] = 12,	-- Josh's Fang Necklace
+								["questID"] = 53143,
+								["coord"] = { 47.92, 36.73 },
+							},
+							{	-- Portrait of Commander Martens
+								["criteriaID"] = 13,	-- Portrait of Commander Martens
+								["questID"] = 53144,
+								["coord"] = { 45.2, 91.1 },
+							},
+							{	-- Kurt's Ornate Key
+								["criteriaID"] = 14,	-- Kurt's Ornate Key
+								-- ["questID"] = ,
+								["coord"] = { 62.9, 22.7 },
+							},
+						}),
 						ach(12849, {	-- Treasures of Vol'dun
 							["groups"] = {
 								o(280951, {	-- Ashvane Spoils [D]
@@ -40,12 +112,13 @@ _.Zones =
 								o(287324, {	-- Excavator's Greed [D]
 									["questID"] = 51136,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-									["coords"] = { 
+									["coords"] = {
 										{ 57.68, 64.68 },
 									},
 								}),
-								o(999999, {	-- Grayal's Last Offering	
-									["questID"] = 51093,
+								o(999999, {	-- Grayal's Last Offering
+									-- Have to interact with object 287238 first to access the chest.
+									["questID"] = 51093,	-- quest for object is 51094
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
 								o(287304, {	-- Lost Explorer's Bounty [D]
@@ -534,11 +607,11 @@ i(155430),
 								["questID"] = 51058,
 							}),
 							n(130439, {	-- Ashmane
-								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161106),	-- Rabid Packleader Bracers
 								}),
 								["questID"] = 47532,
-							}),	
+							}),
 							n(128553, {	-- Azer'tor [MissingL]
 								["questID"] = 49252
 							}),	
@@ -716,6 +789,7 @@ i(155430),
 							["isDaily"] = true,
 							["coords"] = {
 								{ 29.58, 48.10 },
+								{ 30.33, 52.80 },
 								{ 31.28, 49.15 },
 							},
 						}),
@@ -738,6 +812,7 @@ i(155430),
 							["isDaily"] = true,
 							["coords"] = {
 								{ 56.49, 69.88 },
+								{ 55.85, 67.23 },
 								{ 52.74, 76.49 },
 							},
 						}),
@@ -759,6 +834,7 @@ i(155430),
 							["questID"] = 50914,
 							["isDaily"] = true,
 							["coords"] = {
+								{ 60.69, 12.23 },
 								{ 60.90, 12.72 },
 							},
 						}),
@@ -783,6 +859,20 @@ i(155430),
 							["coords"] = {
 								{ 33.71, 77.40 },
 								{ 34.74, 77.24 },
+							},
+						}),
+						o(9999974, { -- Treasure Chest
+							["questID"] = 50921,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 46.07, 44.28 },
+							},
+						}),
+						o(9999973, { -- Treasure Chest
+							["questID"] = 50917,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 47.58, 31.63 },
 							},
 						}),
 					},
