@@ -7749,7 +7749,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 					self:MergeObject(self.rawData, info);
 					self:Update();
 				end
-			elseif e == "MERCHANT_SHOW" or "MERCHANT_UPDATE" then
+			elseif e == "MERCHANT_SHOW" or e == "MERCHANT_UPDATE" then
 				MerchantFrame_SetFilter(MerchantFrame, 1);
 				C_Timer.After(0.6, function()
 					local guid = UnitGUID("npc");
@@ -7902,9 +7902,9 @@ app:GetWindow("Debugger", UIParent, function(self)
 				self:MergeObject(self.rawData, info);
 				self:Update();
 			elseif e == "QUEST_DETAIL" then
+				local questStartItemID = ...;
 				local questID = GetQuestID();
 				if questID == 0 then return false; end
-				local questStartItemID = ...;
 				local npc = "questnpc";
 				local guid = UnitGUID(npc);
 				if not guid then
