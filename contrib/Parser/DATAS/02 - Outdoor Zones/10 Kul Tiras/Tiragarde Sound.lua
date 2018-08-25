@@ -6,7 +6,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(895, {	-- -- Tiragarde Sound
 			["groups"] = {
-				n(-4, {	-- Achievement
+				n(-4,   {	-- Achievement
 					["groups"] = {
 						ach(12852, {	-- Treasures of Tiragarde Sound
 							o(279750, {	-- Hay Covered Chest [Localized]
@@ -108,7 +108,7 @@ _.Zones =
 						["description"] = "Requires completion of Mission Report: Wolf's Den and related quest line to unlock.",
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  { 	-- Pet Battle
 					["groups"] = {
 						p(2165),	-- Francois
 						p(2383),	-- Giant Woodworm
@@ -118,7 +118,7 @@ _.Zones =
 						p(2381),	-- Shack Crab
 					},
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					["groups"] = {
 						--[[
 						a(ach(12473, {	-- A Sound Plan
@@ -722,7 +722,7 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
-				n(-16, {	-- Rares
+				n(-16,  {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(132182, {	-- Auditor Dolp [MissingL]
@@ -963,7 +963,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-2, {  -- Vendors
+				n(-2,   {	-- Vendors
 					["groups"] = {
 						n(144353, {	-- Collector Kojo <Tortollan Seekers Emissary> [NOTE: Will need correct npcID when located]
 							["groups"] = {
@@ -1033,9 +1033,10 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-34, {	-- World Quests
+				n(-34,  {	-- World Quests
 					["groups"] = {
 						i(158650),	-- Sea-Scourge Greatblade
+						i(158160),	-- Smuggler's Cove Ring
 						n(-43, {	-- Cloth
 							["groups"] = {
 								i(157969),	-- Sirensong Headdress
