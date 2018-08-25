@@ -671,6 +671,7 @@ _.PetJournal =
 		p(1573),	-- Golden Dawnfeather
 		p(1712),	-- Golden Eaglet
 		p(68),		-- Great Horned Owl
+		p(2409),	-- Greatwing Macaw
 		p(50),		-- Green Wing Macaw
 		p(464),		-- Grey Moth
 		un(2, p(245)),		-- Gryphon Hatchling
@@ -679,6 +680,7 @@ _.PetJournal =
 		p(645),		-- Highlands Turkey
 		un(35, p(130)),		-- Hippogryph Hatchling
 		p(1762),	-- Hog-Nosed Bat
+		p(2379),	-- Honey Bee
 		h(p(332)),	-- Horde Balloon (Horde)
 		p(49),		-- Hyacinth Macaw
 		p(1532),	-- Ikky
@@ -952,6 +954,7 @@ _.PetJournal =
 		p(256),		-- Lil' XT
 		p(83),		-- Mechanical Chicken
 		p(844),		-- Mechanical Pandaren Dragonling
+		p(2410),	-- Mechanical Prairie Dog
 		p(1565),	-- Mechanical Scorpid
 		p(39),		-- Mechanical Squirrel
 		p(215),		-- Mechanopeep

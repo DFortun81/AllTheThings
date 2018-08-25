@@ -257,6 +257,7 @@ pet(34518, 170);	-- Golden Pig Coin (Golden Pig)
 pet(104163, 1332); 	-- Gooey Sha-ling
 pet(153056, 2120);	-- Grasping Manifestation
 pet(8500, 68); 		-- Great Horned Owl
+pet(163495, 2409);	-- Greatwing Macaw
 pet(19055, 757);	-- Green Dragon Orb (Tiny Green Dragon)
 pet(21301, 119); 	-- Green Helper Box (Father WInter's Helper)
 pet(72134, 333);	-- Grell Moss (Gregarious Grell)
@@ -364,6 +365,7 @@ pet(114834, 1446);	-- Meadowstomper Calf
 pet(111402, 1403); 	-- Mechanical Axebeak
 pet(10398, 83); 	-- Mechanical Chicken
 pet(87526, 844); 	-- Mechanical Pandaren Dragonling
+pet(163496, 2410);	-- Mechanical Prairie Dog
 pet(118741, 1565); 	-- Mechanical Scorpid
 pet(4401, 39); 		-- Mechanical Squirrel Box (Mechanical Squirrel)
 pet(45002, 215); 	-- Mechanopeep

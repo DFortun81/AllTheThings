@@ -297,6 +297,15 @@ _.Zones =
 						n(141009, {	-- Col. Tenders <Chicken Vendor>
 							i(11023), -- Ancona Chicken
 						}),
+						n(142065, {	-- Dana Pull
+							["groups"] = {
+								i(163036, {	-- Polished Pet Charm
+									i(163495),	-- Greatwing Macaw Feather
+									i(163496),	-- Strange Looking Mechanical Squirrel
+								}),
+							},
+							["coord"] = { 50.8, 46.0 },
+						}),
 						n(142564, {	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
 							["groups"] = {
 								i(162439, {	-- Pattern: Honorable Combatant's Satin Belt [Rank 2]

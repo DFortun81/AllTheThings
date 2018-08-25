@@ -157,6 +157,7 @@ _.Zones =
 				}),
 				n(-25, { 	-- Pet Battle
 					["groups"] = {
+						p(2379),	-- Honey Bee
 						p(2374),	-- Freshwater Crawler
 						p(2373),	-- River Frog
 						p(2378),	-- River Otter
