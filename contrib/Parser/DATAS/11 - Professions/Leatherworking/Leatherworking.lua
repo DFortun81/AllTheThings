@@ -1,14 +1,5 @@
 -- Leatherworking - Skill ID  165 / Spell ID  2108
-profession(165, { -- Leatherworking
-	n(-160, {	-- Mounts
-		i(129962), -- Elderhorn Riding Harness
-		i(108883), -- Riding Harness
-	}),
-	n(-161, {	-- Toy		
-		i(129956), -- Leather Love Seat
-		i(129960), -- Leather Pet Bed
-		i(129958), -- Leather Pet Leash
-	}),
+profession(165, { -- Leatherworking		
 	tier(1, {	-- Classic			
 		n(-26, { -- Drops
 			-- Holiday --
@@ -176,7 +167,10 @@ profession(165, { -- Leatherworking
 				["qg"] = 7852, -- Pratt McGrubben				
 			})),
 		}),
-		n(-2,  { -- Vendors			
+		n(-2,  { -- Vendors
+			-- Holiday --
+			un(29, i(34262)), -- Pattern: Winter Boots
+			-- Classic --		
 			i(18949), -- Pattern: Barbaric Bracers
 			i(5973), -- Pattern: Barbaric Leggings
 			i(17025), -- Pattern: Black Dragonscale Boots
@@ -192,6 +186,7 @@ profession(165, { -- Leatherworking
 			i(22771), -- Pattern: Bramblewood Helm
 			un(8, i(15729)), -- Pattern: Chimeric Gloves
 			i(19331), -- Pattern: Chromatic Gauntlets
+			i(29720), -- Pattern: Clefthide Leg Armor	
 			i(19332), -- Pattern: Corehound Belt
 			i(17022), -- Pattern: Corehound Boots
 			i(19328), -- Pattern: Dawn Treaders
@@ -302,6 +297,16 @@ profession(165, { -- Leatherworking
 			i(32429), -- Pattern: Boots of Shackled Souls
 			i(32430), -- Pattern: Bracers of Shackled Souls
 			i(33124), -- Pattern: Cloak of Darkness
+			i(29719), -- Pattern: Cobrahide Leg Armor (Alliance Only)
+			i(31361), -- Pattern: Cobrahide Leg Armor (Horde Only)
+			i(29717), -- Pattern: Drums of Battle
+			i(29713), -- Pattern: Drums of Panic
+			un(8, i(29714)), -- Pattern: Drums of Restoration
+			i(34174),	-- Pattern: Drums of Restoration (Horde Only)
+			i(34175),	-- Pattern: Drums of Restoration (Alliance Only)
+			un(8, i(29718)), -- Pattern: Drums of Speed (Horde Only)
+			i(34172), -- Pattern: Drums of Speed (Horde Only)
+			i(34173), -- Pattern: Drums of Speed (Alliance Only)			
 			un(5, i(29516)), -- Pattern: Ebon Netherscale Belt
 			un(5, i(29517)), -- Pattern: Ebon Netherscale Bracers
 			un(5, i(29515)), -- Pattern: Ebon Netherscale Breastplate
@@ -313,23 +318,31 @@ profession(165, { -- Leatherworking
 			i(29677), -- Pattern: Enchanted Felscale Leggings
 			i(29693), -- Pattern: Flamescale Belt
 			i(29691), -- Pattern: Flamescale Boots
-			i(29689), -- Pattern: Flamescale Leggings			
+			i(29689), -- Pattern: Flamescale Leggings
+			i(25733), -- Pattern: Fel Leather Boots
+			i(25732), -- Pattern: Fel Leather Gloves
+			i(25734), -- Pattern: Fel Leather Leggings
 			i(25738), -- Pattern: Felstalker Belt (Horde Only)
 			i(29213), -- Pattern: Felstalker Belt (Alliance Only)
-			i(25739), -- Pattern: Felstalker Bracers(Horde Only)
-			i(29214), -- Pattern: Felstalker Bracers(Alliance Only)
-			i(25740), -- Pattern: Felstalker Breastplate(Horde Only)
-			i(29215), -- Pattern: Felstalker Breastplate(Alliance Only)			
+			i(25739), -- Pattern: Felstalker Bracers (Horde Only)
+			i(29214), -- Pattern: Felstalker Bracers (Alliance Only)
+			i(25740), -- Pattern: Felstalker Breastplate (Horde Only)
+			i(29215), -- Pattern: Felstalker Breastplate (Alliance Only)			
 			i(32431), -- Pattern: Greaves of Shackled Souls		
 			i(25737), -- Pattern: Heavy Clefthoof Boots
 			i(25736), -- Pattern: Heavy Clefthoof Leggings
 			i(25735), -- Pattern: Heavy Clefthoof Vest
-			i(25741), -- Pattern: Netherfury Belt(Horde Only)
-			i(29217), -- Pattern: Netherfury Belt(Alliance Only)
-			i(25743),	-- Pattern: Netherfury Boots(Horde Only)
-			i(29218),	-- Pattern: Netherfury Boots(Alliance Only)
-			i(25742),	-- Pattern: Netherfury Leggings(Horde Only)
-			i(29219),	-- Pattern: Netherfury Leggings(Alliance Only)
+			un(8, i(25720)), -- Pattern: Heavy Knothide Leather
+			i(25722), -- Pattern: Magister's Armor Kit
+			i(29721), -- Pattern: Nethercleft Leg Armor
+			i(29722), -- Pattern: Nethercobra Leg Armor (Alliance Only)
+			i(31362), -- Pattern: Nethercobra Leg Armor (Horde Only)
+			i(25741), -- Pattern: Netherfury Belt (Horde Only)
+			i(29217), -- Pattern: Netherfury Belt (Alliance Only)
+			i(25743), -- Pattern: Netherfury Boots (Horde Only)
+			i(29218), -- Pattern: Netherfury Boots (Alliance Only)
+			i(25742), -- Pattern: Netherfury Leggings (Horde Only)
+			i(29219), -- Pattern: Netherfury Leggings (Alliance Only)
 			un(5, i(29520)), -- Pattern: Netherstrike Belt
 			un(5, i(29521)), -- Pattern: Netherstrike Bracers
 			un(5, i(29519)), -- Pattern: Netherstrike Breastplate
@@ -340,8 +353,12 @@ profession(165, { -- Leatherworking
 			i(32435), -- Pattern: Redeemed Soul Legguards
 			i(32433), -- Pattern: Redeemed Soul Moccasins
 			i(32434), -- Pattern: Redeemed Soul Wristguards
+			i(29664), -- Pattern: Reinforced Mining Bag (Horde Only)
+			i(30444), -- Pattern: Reinforced Mining Bag (Alliance Only)
+			i(25725), -- Pattern: Riding Crop
 			i(33205), -- Pattern: Shadowprowler's Chestguard
 			i(32745), -- Pattern: Shoulderpads of Renewed Life
+			i(25721), -- Pattern: Vindicator's Armor Kit (Aldor Only)
 			i(32432), -- Pattern: Waistguard of Shackled Souls
 			un(5, i(29524)), -- Pattern: Windhawk Belt
 			un(5, i(29523)), -- Pattern: Windhawk Bracers
@@ -398,6 +415,7 @@ profession(165, { -- Leatherworking
 			i(44587), -- Pattern: Icy Scale Chestguard
 			i(49957), -- Pattern: Legwraps of Unleashed Nature
 			i(49962), -- Pattern: Lightning-Infused Leggings
+			i(44510), -- Pattern: Mammoth Mining Bag	
 			i(44526), -- Pattern: Overcast Belt
 			i(44528), -- Pattern: Overcast Boots
 			i(44524), -- Pattern: Overcast Bracers
@@ -428,6 +446,7 @@ profession(165, { -- Leatherworking
 			i(44530), -- Pattern: Swiftarrow Helm
 			i(44536), -- Pattern: Swiftarrow Leggings
 			i(44531), -- Pattern: Swiftarrow Shoulderguards
+			i(44509), -- Pattern: Trapper's Traveling Pack
 			i(44551), -- Pattern: Trollwoven Girdle
 			i(44550), -- Pattern: Trollwoven Spaulders
 			i(44932), -- Pattern: Windripper Boots
@@ -517,19 +536,18 @@ profession(165, { -- Leatherworking
 		n(-26, { -- Drops
 			-- Mists of Pandaria --	
 			i(86238), -- Pattern: Chestguard of Nemeses
+			i(100864), -- Pattern: Hardened Magnificent Hide and Its Uses
+			i(102513), -- Pattern: Drums of Rage
 			i(86272), -- Pattern: Fists of Lightning	
 			i(86279), -- Pattern: Liferuned Leather Gloves
+			i(95467), -- Pattern: Magnificence of Leather
+			i(95468), -- Pattern: Magnificence of Scales
 			i(86280), -- Pattern: Murderer's Gloves
 			i(86281), -- Pattern: Nightfire Robe
 			i(86283), -- Pattern: Raiment of Blood and Bone
 			i(86284), -- Pattern: Raven Lord's Gloves
 			i(86297), -- Pattern: Stormbreaker Chestguard	
-		}),			
-		filter(200, { -- Recipes			
-			recipe(124635), -- Pattern: Misthide Drape
-			recipe(124637), -- Pattern: Quick Strike Cloak
-			recipe(124636), -- Pattern: Stormscale Drape
-		}),	
+		}),
 		n(-2,  { -- Vendors
 			i(86235), -- Pattern: Angerhide Leg Armor
 			i(86237), -- Pattern: Chestguard of Earthen Harmony
@@ -568,8 +586,10 @@ profession(165, { -- Leatherworking
 			i(86273), -- Pattern: Gloves of Earthen Harmony	
 			i(86274), -- Pattern: Greyshadow Chestguard
 			i(86275), -- Pattern: Greyshadow Gloves
+			i(86276), -- Pattern: Ironscale Leg Armor	
 			i(86277), -- Pattern: Lifekeeper's Gloves
 			i(86278), -- Pattern: Lifekeeper's Robe
+			i(86295), -- Pattern: Shadowleather Leg Armor	
 			i(86308), -- Pattern: Wildblood Gloves
 			i(86309), -- Pattern: Wildblood Vest	
 		}),
@@ -578,7 +598,14 @@ profession(165, { -- Leatherworking
 		n(-26, { -- Drops
 			-- Warlords of Draenor --			
 		}),	
-		n(-2, { -- Vendors		
+		n(-2, { -- Vendors
+			i(116328), -- Recipe: Brilliant Burnished Cloak
+			i(116345), -- Recipe: Burnished Essence
+			i(116349), -- Recipe: Burnished Inscription Bag
+			i(116347), -- Recipe: Burnished Leather Bag
+			i(116348), -- Recipe: Burnished Mining Bag
+			i(120258), -- Recipe: Drums of Fury
+			i(116350), -- Recipe: Riding Harness
 		}),
 		n(-322, { 	-- Cloak
 			i(128014, { -- Burnished Essence
@@ -622,19 +649,35 @@ profession(165, { -- Leatherworking
 		n(-26, { -- Drops
 			-- Legion --
 		}),
+		n(-17, { -- Quests
+			q(40201, { -- Playthings (Dalaran)
+				["groups"] = {
+					i(137933), -- Recipe: Leather Pet Bed
+				},
+				["qg"] = 93523, -- Namha Moonwater				
+			}),
 		n(-2, { -- Vendors
+			i(140637), -- Recipe: Dreadleather Belt (Rank 1)
+			i(137885), -- Recipe: Dreadleather Belt (Rank 2)
+			i(137893), -- Recipe: Dreadleather Belt (Rank 3)
+			i(140640), -- Recipe: Dreadleather Mask (Rank 1)
+			i(137888), -- Recipe: Dreadleather Mask (Rank 2)
+			i(137896), -- Recipe: Dreadleather Mask (Rank 3)
+			i(140638), -- Recipe: Dreadleather Shoulderguard (Rank 1)
+			i(137886), -- Recipe: Dreadleather Shoulderguard (Rank 2)
+			i(137894), -- Recipe: Dreadleather Shoulderguard (Rank 3)
+			i(142407), -- Recipe: Drums of the Mountain (Rank 1)
+			i(142408), -- Recipe: Drums of the Mountain (Rank 2)
+			i(142409), -- Recipe: Drums of the Mountain (Rank 3)
+			i(141850), -- Recipe: Elderhorn Riding Harness
 			i(137932), -- Recipe: Flaming Hoop
-		}),
-		n(-349, { 	-- Cosmetic		
-			un(29, i(151791)),	-- Winter Boots
+			i(137935), -- Recipe: Leather Love Seat
+			i(137934), -- Recipe: Leather Pet Leash
 		}),
 		n(-44, { 	-- Leather
-			i(128887),	-- Dreadleather Mask
-			i(128889),	-- Dreadleather Shoulderguard
 			i(128884),	-- Dreadleather Jerkin
 			i(128891),	-- Dreadleather Bindings
-			i(128886),	-- Dreadleather Gloves
-			i(128890),	-- Dreadleather Belt
+			i(128886),	-- Dreadleather Gloves		
 			i(128888),	-- Dreadleather Pants
 			i(128885),	-- Dreadleather Footpads
 			i(151577),	-- Fiendish Shoulderguards			
@@ -764,39 +807,7 @@ profession(165, { -- Leatherworking
 	}),
 	n(-100002, { -- PLACE_HOLDER
 		i(132124),	-- Pattern: Battlebound Treads
-		i(132123),	-- Pattern: Battlebound Warhelm				
-		i(29720),	-- Pattern: Clefthide Leg Armor			
-		i(29719),	-- Pattern: Cobrahide Leg Armor
-		i(31361),	-- Pattern: Cobrahide Leg Armor							
-		i(29717),	-- Pattern: Drums of Battle
-		i(29713),	-- Pattern: Drums of Panic
-		i(102513),	-- Pattern: Drums of Rage
-		i(29714),	-- Pattern: Drums of Restoration
-		i(34174),	-- Pattern: Drums of Restoration
-		i(34175),	-- Pattern: Drums of Restoration
-		i(29718),	-- Pattern: Drums of Speed
-		i(34173),	-- Pattern: Drums of Speed
-		i(34172),	-- Pattern: Drums of Speed			
-		i(25733),	-- Pattern: Fel Leather Boots
-		i(25732),	-- Pattern: Fel Leather Gloves
-		i(25734),	-- Pattern: Fel Leather Leggings				
-		i(100864),	-- Pattern: Hardened Magnificent Hide and Its Uses				
-		i(25720),	-- Pattern: Heavy Knothide Leather				
-		i(86276),	-- Pattern: Ironscale Leg Armor			
-		i(25722),	-- Pattern: Magister's Armor Kit
-		i(95467),	-- Pattern: Magnificence of Leather
-		i(95468),	-- Pattern: Magnificence of Scales
-		i(44510),	-- Pattern: Mammoth Mining Bag			
-		i(29721),	-- Pattern: Nethercleft Leg Armor
-		i(29722),	-- Pattern: Nethercobra Leg Armor
-		i(31362),	-- Pattern: Nethercobra Leg Armor	
-		i(29664),	-- Pattern: Reinforced Mining Bag
-		i(30444),	-- Pattern: Reinforced Mining Bag			
-		i(25725),	-- Pattern: Riding Crop				
-		i(86295),	-- Pattern: Shadowleather Leg Armor						
-		i(44509),	-- Pattern: Trapper's Traveling Pack
-		i(25721),	-- Pattern: Vindicator's Armor Kit				
-		i(34262),	-- Pattern: Winter Boots
+		i(132123),	-- Pattern: Battlebound Warhelm			
 		i(137900),	-- Recipe: Battlebound Armbands
 		i(137908),	-- Recipe: Battlebound Armbands
 		i(137901),	-- Recipe: Battlebound Girdle
@@ -812,15 +823,7 @@ profession(165, { -- Leatherworking
 		i(137906),	-- Recipe: Battlebound Treads
 		i(137912),	-- Recipe: Battlebound Treads
 		i(137904),	-- Recipe: Battlebound Warhelm
-		i(137910),	-- Recipe: Battlebound Warhelm
-		i(116328),	-- Recipe: Brilliant Burnished Cloak
-		i(116345),	-- Recipe: Burnished Essence
-		i(116349),	-- Recipe: Burnished Inscription Bag
-		i(116347),	-- Recipe: Burnished Leather Bag
-		i(116348),	-- Recipe: Burnished Mining Bag
-		i(137885),	-- Recipe: Dreadleather Belt
-		i(137893),	-- Recipe: Dreadleather Belt
-		i(140637),	-- Recipe: Dreadleather Belt
+		i(137910),	-- Recipe: Battlebound Warhelm				
 		i(137884),	-- Recipe: Dreadleather Bindings
 		i(137892),	-- Recipe: Dreadleather Bindings
 		i(140636),	-- Recipe: Dreadleather Bindings
@@ -832,21 +835,10 @@ profession(165, { -- Leatherworking
 		i(137897),	-- Recipe: Dreadleather Gloves
 		i(137891),	-- Recipe: Dreadleather Jerkin
 		i(137899),	-- Recipe: Dreadleather Jerkin
-		i(140643),	-- Recipe: Dreadleather Jerkin
-		i(137888),	-- Recipe: Dreadleather Mask
-		i(137896),	-- Recipe: Dreadleather Mask
-		i(140640),	-- Recipe: Dreadleather Mask
+		i(140643),	-- Recipe: Dreadleather Jerkin		
 		i(137887),	-- Recipe: Dreadleather Pants
 		i(137895),	-- Recipe: Dreadleather Pants
-		i(140639),	-- Recipe: Dreadleather Pants
-		i(137886),	-- Recipe: Dreadleather Shoulderguard
-		i(137894),	-- Recipe: Dreadleather Shoulderguard
-		i(140638),	-- Recipe: Dreadleather Shoulderguard
-		i(120258),	-- Recipe: Drums of Fury
-		i(142407),	-- Recipe: Drums of the Mountain
-		i(142408),	-- Recipe: Drums of the Mountain
-		i(142409),	-- Recipe: Drums of the Mountain
-		i(141850),	-- Recipe: Elderhorn Riding Harness
+		i(140639),	-- Recipe: Dreadleather Pants		
 		i(162504),	-- Recipe: Emblazoned Mistscale Boots
 		i(162506),	-- Recipe: Emblazoned Mistscale Leggings
 		i(162500),	-- Recipe: Emblazoned Tempest Boots
@@ -913,10 +905,7 @@ profession(165, { -- Leatherworking
 		i(162501),	-- Recipe: Imbued Tempest Leggings
 		i(116319),	-- Recipe: Journeying Helm
 		i(116320),	-- Recipe: Journeying Robes
-		i(116321),	-- Recipe: Journeying Slacks
-		i(137935),	-- Recipe: Leather Love Seat
-		i(137933),	-- Recipe: Leather Pet Bed
-		i(137934),	-- Recipe: Leather Pet Leash
+		i(116321),	-- Recipe: Journeying Slacks		
 		i(116325),	-- Recipe: Leather Refurbishing Kit
 		i(127722),	-- Recipe: Mighty Burnished Essence
 		i(162400),	-- Recipe: Mistscale Boots
@@ -928,8 +917,7 @@ profession(165, { -- Leatherworking
 		i(122547),	-- Recipe: Powerful Burnished Essence
 		i(162412),	-- Recipe: Recurve Bow of the Strands
 		i(162766),	-- Recipe: Recurve Bow of the Strands
-		i(162419),	-- Recipe: REUSE ME (DNT)
-		i(116350),	-- Recipe: Riding Harness
+		i(162419),	-- Recipe: REUSE ME (DNT)		
 		i(127740),	-- Recipe: Savage Burnished Essence
 		i(122715),	-- Recipe: Spiritual Leathercraft
 		i(137952),	-- Recipe: Stonehide Leather Barding
@@ -968,5 +956,6 @@ profession(165, { -- Leatherworking
 		i(116339),	-- Recipe: Wayfaring Leggings
 		i(116337),	-- Recipe: Wayfaring Shoulderguards
 		i(116341),	-- Recipe: Wayfaring Tunic
+		}),
 	}),	
 });
