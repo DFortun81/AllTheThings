@@ -980,7 +980,7 @@ _.Zones =
 								}),
 							},
 						}),
-						n(135459, {	-- Provisioner Lija <Talanji's Expedition Emissary>
+						nh(135459, {	-- Provisioner Lija <Talanji's Expedition Emissary>
 							["groups"] = {
 								i(160547),	-- Talanji's Expedition Tabard
 								i(161774),	-- Reins of the Expedition Bloodswarmer
