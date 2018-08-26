@@ -362,8 +362,12 @@ _.Zones =
 						n(142065, {	-- Dana Pull
 							["groups"] = {
 								i(163036, {	-- Polished Pet Charm
-									i(163495),	-- Greatwing Macaw Feather
-									i(163496),	-- Strange Looking Mechanical Squirrel
+									i(163495, {	-- Greatwing Macaw Feather
+										["description"] = "Pet will not appear on vendor until Tiragarde Sound quest Rodrigo's Revenge has been completed.",
+									}),
+									i(163496, {	-- Strange Looking Mechanical Squirrel
+										["description"] = "Pet will not appear on vendor until Tiragarde Sound quest Inspection Gadget has been completed.",
+									}),
 								}),
 							},
 							["coord"] = { 50.8, 46.0 },
