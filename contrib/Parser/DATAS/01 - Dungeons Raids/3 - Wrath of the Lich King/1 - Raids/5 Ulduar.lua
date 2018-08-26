@@ -341,6 +341,9 @@ _.Instances =
 								i(45244),	-- Greaves of Swift Vengeance
 								i(45456),	-- Loop of the Agile
 							}),
+							ach(12335, {	-- But I'm On Your Side!
+								["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
+							}),
 							i(142088),	-- Stormforged Rune (PET!)
 							i( 45234),	-- Rapture
 							i( 45233),	-- Stormrune Edge
