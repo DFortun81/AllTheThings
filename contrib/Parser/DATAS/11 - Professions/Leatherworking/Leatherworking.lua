@@ -648,8 +648,25 @@ profession(165, { -- Leatherworking
 	tier(7, { 	-- Legion
 		n(-26, { -- Drops
 			-- Legion --
+			i(137892), -- Recipe: Dreadleather Bindings (Rank 3)
+			i(137897), -- Recipe: Dreadleather Gloves (Rank 3)
+			i(137899), -- Recipe: Dreadleather Jerkin (Rank 3)
 		}),
 		n(-17, { -- Quests
+			q(40214, { -- Fel Tanning (Dalaran)
+				["groups"] = {
+					i(132124), -- Pattern: Battlebound Treads
+					i(140636), -- Pattern: Dreadleather Bindings (Rank 1)
+				},
+				["qg"] = 93523, -- Namha Moonwater				
+			}),
+			q(40176, { -- From Head to Toe (Dalaran)
+				["groups"] = {
+					i(132124), -- Pattern: Battlebound Treads
+					i(194701), -- Recipe: Warhide Footpads
+				},
+				["qg"] = 93523, -- Namha Moonwater				
+			}),
 			q(40201, { -- Playthings (Dalaran)
 				["groups"] = {
 					i(137933), -- Recipe: Leather Pet Bed
@@ -660,6 +677,14 @@ profession(165, { -- Leatherworking
 			i(140637), -- Recipe: Dreadleather Belt (Rank 1)
 			i(137885), -- Recipe: Dreadleather Belt (Rank 2)
 			i(137893), -- Recipe: Dreadleather Belt (Rank 3)
+			i(137884), -- Recipe: Dreadleather Bindings (Rank 2)
+			i(140642), -- Recipe: Dreadleather Footpads (Rank 1)
+			i(137890), -- Recipe: Dreadleather Footpads (Rank 2)
+			i(137898), -- Recipe: Dreadleather Footpads (Rank 3)
+			i(140641), -- Recipe: Dreadleather Gloves (Rank 1)
+			i(137889), -- Recipe: Dreadleather Gloves (Rank 2)
+			i(140643), -- Recipe: Dreadleather Jerkin (Rank 1)
+			i(137891), -- Recipe: Dreadleather Jerkin (Rank 2)
 			i(140640), -- Recipe: Dreadleather Mask (Rank 1)
 			i(137888), -- Recipe: Dreadleather Mask (Rank 2)
 			i(137896), -- Recipe: Dreadleather Mask (Rank 3)
@@ -674,12 +699,8 @@ profession(165, { -- Leatherworking
 			i(137935), -- Recipe: Leather Love Seat
 			i(137934), -- Recipe: Leather Pet Leash
 		}),
-		n(-44, { 	-- Leather
-			i(128884),	-- Dreadleather Jerkin
-			i(128891),	-- Dreadleather Bindings
-			i(128886),	-- Dreadleather Gloves		
-			i(128888),	-- Dreadleather Pants
-			i(128885),	-- Dreadleather Footpads
+		n(-44, { 	-- Leather							
+			i(128888),	-- Dreadleather Pants			
 			i(151577),	-- Fiendish Shoulderguards			
 			i(128879),	-- Warhide Mask
 			i(128881),	-- Warhide Shoulderguard
@@ -806,7 +827,7 @@ profession(165, { -- Leatherworking
 		}),
 	}),
 	n(-100002, { -- PLACE_HOLDER
-		i(132124),	-- Pattern: Battlebound Treads
+		
 		i(132123),	-- Pattern: Battlebound Warhelm			
 		i(137900),	-- Recipe: Battlebound Armbands
 		i(137908),	-- Recipe: Battlebound Armbands
@@ -823,19 +844,7 @@ profession(165, { -- Leatherworking
 		i(137906),	-- Recipe: Battlebound Treads
 		i(137912),	-- Recipe: Battlebound Treads
 		i(137904),	-- Recipe: Battlebound Warhelm
-		i(137910),	-- Recipe: Battlebound Warhelm				
-		i(137884),	-- Recipe: Dreadleather Bindings
-		i(137892),	-- Recipe: Dreadleather Bindings
-		i(140636),	-- Recipe: Dreadleather Bindings
-		i(137890),	-- Recipe: Dreadleather Footpads
-		i(137898),	-- Recipe: Dreadleather Footpads
-		i(140642),	-- Recipe: Dreadleather Footpads
-		i(140641),	-- Recipe: Dreadleather Gloves
-		i(137889),	-- Recipe: Dreadleather Gloves
-		i(137897),	-- Recipe: Dreadleather Gloves
-		i(137891),	-- Recipe: Dreadleather Jerkin
-		i(137899),	-- Recipe: Dreadleather Jerkin
-		i(140643),	-- Recipe: Dreadleather Jerkin		
+		i(137910),	-- Recipe: Battlebound Warhelm			
 		i(137887),	-- Recipe: Dreadleather Pants
 		i(137895),	-- Recipe: Dreadleather Pants
 		i(140639),	-- Recipe: Dreadleather Pants		

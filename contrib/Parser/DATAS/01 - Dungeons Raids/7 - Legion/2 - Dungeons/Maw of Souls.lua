@@ -43,7 +43,7 @@ _.Instances =
 								i(133770),
 								i(133769),
 								i(137334),
-								i(133608)
+								i(133608),								
 							}))
 						}
 					}),
@@ -92,6 +92,7 @@ _.Instances =
 									["sourceQuest"] = 38532, -- Maw of Souls: Hammered By The Storm
 									["requireSkill"] = 164, -- Blacksmithing
 								}),
+								i(137899), -- Recipe: Dreadleather Jerkin (Rank 3)
 							}))
 						}
 					}),
