@@ -149,7 +149,7 @@ _.Instances =
 						cr(33113, e(1637, {	-- Flame Leviathan
 							ach(12320, {	-- Orbit-uary
 								i(45132),	-- Golden Saronite Dragon
-								i(45113),	-- Pendant of Fiery Havoc
+								i(45133),	-- Pendant of Fiery Havoc
 								i(45300),	-- Mantle of Fiery Vengeance
 								i(45136),	-- Shoulderpads of Dormant Energies
 								i(45293),	-- Handguards of Potent Cures
