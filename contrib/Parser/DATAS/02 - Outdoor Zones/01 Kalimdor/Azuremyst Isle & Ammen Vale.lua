@@ -5,7 +5,13 @@ _.Zones =
 {
 	m(12, { 	-- Kalimdor
 		m(97, {	-- Azuremyst Isle
-			["groups"] = {	
+			["groups"] = {
+				--[[	-- Need to find IDs for these two flight paths
+				n(-228, {	-- Flight Path
+					fp(),	-- Azure Watch
+					fp(),	-- The Exodar
+				}),
+				]]--
 				n(-25, { 	-- Pet Battle
 					p(464), 	-- Grey Moth
 					p(378), 	-- Rabbit
@@ -65,31 +71,52 @@ _.Zones =
 							i(24113),	-- Cowlen's Bracers of Kinship
 						},
 						["qg"] = 17312,	-- Magwin
+						["coord"] = { 13.6, 73.2 },
 					}),
 					qa(9612, {	-- A Hearty Thanks!
 						["qg"] = 17587,	-- Draenei Youngling
+						["coord"] = { 58.0, 41.6 },
 						["races"] = { 11 },	-- Draenei
+						["description"] = "1. Find a |cFFFFD700Draenei Youngling|r\n2. Get them to engage in combat with an aggressive mob\n3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.",
 					}),
 					qa(9506, {	-- A Small Start
 						["qg"] = 17240,	-- Admiral Odesyus
-						["sourceQuests"] = { 9505 },	-- The Prophecy of Velen
+						["coord"] = { 47.0, 70.2 },
+						["sourceQuests"] = { 9505 },	-- The Prophecy of Velen (breadcrumb?)
 					}),
 					qa(9527, {	-- All That Remains
 						["qg"] = 17311,	-- Cowlen
+						["coord"] = { 16.6, 94.4 },
 						["sourceQuests"] = { 10428 },	-- The Missing Fisherman
 					}),
 					qa(9473, {	-- An Alternative Alternative
 						["qg"] = 17215,	-- Daedal
-						["races"] = { 11 },	-- Druid
+						["coord"] = { 48.4, 51.4 },
+						["races"] = { 11 },	-- Draenei
+						["sourceQuests"] = { 9463 },	-- Medicinal Purpose
 					}),
 					qa(27273, {	-- An Invitation from Moonglade
 						["qg"] = 16721,	-- Shalannius
-						["classes"] = { 11 },	-- Druid
+						["coord"] = { 24.4, 54.4 },
+						["classes"] = { 11 },	-- Draenei
 						["isBreadcrumb"] = true,
 					}),
 					i(23910, {	-- Blood Elf Communications
 						qa(9616, {	-- Bandits!
 							["qg"] = 17591,	-- Blood Elf Bandit
+							["coords"] = {
+								{ 37.0, 20.8 },
+								{ 36.4, 32.4 },
+								{ 51.6, 18.4 },
+								{ 59.2, 18.2 },
+								{ 50.2, 29.0 },
+								{ 27.4, 52.0 },
+								{ 32.4, 62.8 },
+								{ 36.0, 60.8 },
+								{ 35.2, 64.4 },
+								{ 33.6, 70.6 },
+								{ 43.0, 63.2 },
+							},
 						}),
 					}),
 					qa(9560, {	-- Beasts of the Apocalypse!
@@ -100,9 +127,11 @@ _.Zones =
 							i(131257),	-- Ravager Scale Pants
 						},
 						["qg"] = 17442,	-- Moordo
+						["coord"] = { 44.8, 23.8 },
 					}),
 					qa(9603, {	-- Beds, Bandages, and Beyond
 						["qg"] = 16553,	-- Caregiver Chellan
+						["coord"] = { 48.3, 49.1 },
 						["races"] = { 11 },	-- Draenei
 					}),
 					qa(10350, {	-- Behomat
@@ -113,29 +142,42 @@ _.Zones =
 							i(23430),	-- Mercenary Sword
 						},
 						["qg"] = 17480,	-- Ruada
+						["coord"] = { 49.8, 50.4 },
 						["classes"] = { 1 },	-- Warrior
 						["sourceQuests"] = { 9582 },	-- Strength of One
 					}),
 					o(181748,	{	-- Blood Crystal
-						qa(9566, {	-- Blood Crystals
-							["sourceQuests"] = { 9565 },	-- Search Stillpine Hold
-						}),
+						["groups"] = {
+							qa(9566, {	-- Blood Crystals
+								["sourceQuests"] = { 9565 },	-- Search Stillpine Hold
+							}),
+						},
+						["coord"] = { 50.5, 11.6 },
 					}),
 					qa(9573, {	-- Chieftain Oomooroo
 						["qg"] = 17445,	-- Stillpine the Younger
+						["coord"] = { 46.8, 21.2 },
+						["sourceQuests"] = {
+							9560,	-- Beasts of the Apocalypse
+							9562,	-- Murlocs... Why Here? Why Now?
+						},
 					}),
-					qa(9623, {	-- Coming of Age
+					qa(9623, {	-- Coming of Age -- unlocks at lvl 10
 						["qg"] = 17116,	-- Exarch Menelaous
+						["coord"] = { 47.2, 50.6 },
 					}),
 					qa(9512, {	-- Cookie's Jumbo Gumbo
 						["qg"] = 17246,	-- "Cookie" McWeaksauce
+						["coord"] = { 46.7, 70.5 },
 					}),
 					qa(9602, {	-- Deliver Them From Evil...
 						["qg"] = 17240,	-- Admiral Odesyus
+						["coord"] = { 47.0, 70.2 },
 						["sourceQuests"] = { 9537 },	-- Show Gnomercy
 					}),
 					qa(9453, {	-- Find Acteon!
 						["qg"] = 17101,	-- Diktynna
+						["coord"] = { 61.0, 54.2 },
 						["sourceQuests"] = { 9452 },	-- Red Snapper - Very Tasty!
 					}),
 					i(23850, {	-- Gurf's Dignity
@@ -151,34 +193,44 @@ _.Zones =
 					}),
 					qa(9530, {	-- I've Got a Plant
 						["qg"] = 17240,	-- Admiral Odesyus
+						["coord"] = { 47.0, 70.2 },
 						["sourceQuests"] = { 9506 },	-- A Small Start
 					}),
 					qa(9538, {	-- Learning the Language
 						["qg"] = 17232,	-- Cryptographer Aurren
+						["coord"] = { 49.4, 51.0 },
 					}),
 					qa(9463, {	-- Medicinal Purpose
 						["qg"] = 17214,	-- Anchorite Fateema
+						["coord"] = { 48.4, 51.8 },
 						["races"] = { 11 },	-- Draenei
 					}),
 					qa(9562, {	-- Murlocs... Why Here? Why Now?
 						["qg"] = 17441,	-- Gurf
+						["coord"] = { 44.6, 23.4 },
 					}),
 					qa(9456, {	-- Nightstalker Clean Up, Isle 2...
 						["qg"] = 17116,	-- Exarch Menelaous
+						["coord"] = { 47.1, 50.6 },
 						["sourceQuests"] = { 9455 },	-- Strange Findings
 					}),
 					qa(9604, {	-- On the Wings of a Hippogryph
 						["qg"] = 43991,	-- Zaldaan
+						["coord"] = { 49.7, 49.1 },
 						["races"] = { 11 },	-- Draenei
+						["sourceQuests"] = { 9603 },	-- Beds, Bandages, and Beyond
 					}),
-					qa(9523, {	-- Precious and Fragile Things Need Special Handling
+					qa(9523, {	-- Precious and Fragile Things Need Special Handling -- unlocks at lvl 10
 						["qg"] = 17242,	-- Archaeologist Adamant Ironheart
+						["coord"] = { 47.2, 70.0 },
 					}),
-					qa(9513, {	-- Reclaiming the Ruins
+					qa(9513, {	-- Reclaiming the Ruins -- unlocks at lvl 10
 						["qg"] = 17241,	-- Priestess Kyleen Il'dinare
+						["coord"] = { 47.0, 70.2 },
 					}),
 					qa(9452, {	-- Red Snapper - Very Tasty!
 						["qg"] = 17101,	-- Diktynna
+						["coord"] = { 61.1, 54.2 }
 					}),
 					i(23759, {	-- Rune Covered Tablet
 						qa(9514, { -- Rune Covered Tablet
@@ -191,13 +243,21 @@ _.Zones =
 					}),
 					qa(9565, {	-- Search Stillpine Hold
 						["qg"] = 17440,	-- High Chief Stillpine
+						["coord"] = { 46.6, 20.6 },
+						["sourceQuests"] = {
+							9560,	-- Beasts of the Apocalypse
+							9562,	-- Murlocs... Why Here? Why Now?
+						},
 					}),
 					qa(9537, {	-- Show Gnomercy
 						["qg"] = 17240,	-- Admiral Odesyus
+						["coord"] = { 47.0, 70.2 },
 						["sourceQuests"] = { 9531 },	-- Tree's Company
 					}),
 					qa(9559, {	-- Stillpine Hold
 						["qg"] = 17114,	-- Arugoo of the Stillpine
+						["coord"] = { 49.4, 51.0 },
+						["sourceQuests"] = { 9544 },	-- The Prophecy of Akida
 					}),
 					i(23678, {	-- Faintly Glowing Crystal
 						qa(9455, {	-- Strange Findings
@@ -206,6 +266,7 @@ _.Zones =
 					}),
 					qa(9582, {	-- Strength of One
 						["qg"] = 17480,	-- Ruada
+						["coord"] = { 49.8, 50.4 },
 						["classes"] = { 1 },	-- Warrior
 					}),
 					qa(9454, {	-- The Great Moongraze Hunt
@@ -213,13 +274,20 @@ _.Zones =
 							i(27686),	-- Recipe: Roasted Moongraze Tenderloin
 						},
 						["qg"] = 17110,	-- Acteon
+						["coord"] = { 49.8, 51.9 },
 					}),
 					qa(10324, {	-- The Great Moongraze Hunt
 						["qg"] = 17110,	-- Acteon
+						["coord"] = { 49.8, 51.8 },
 						["sourceQuests"] = { 9454 },	-- The Great Moongraze Hunt
 					}),
 					qa(9570, {	-- The Kurken is Lurkin'
 						["qg"] = 17443,	-- Kurz the Revelator
+						["coord"] = { 46.8, 22.2 },
+						["sourceQuests"] = {
+							9560,	-- Beasts of the Apocalypse
+							9562,	-- Murlocs... Why Here? Why Now?
+						},
 					}),
 					qa(9571, {	-- The Kurken's Hide
 						["groups"] = {
@@ -228,10 +296,12 @@ _.Zones =
 							i(131259),	-- Kurken Padded Chainmail
 						},
 						["qg"] = 17443,	-- Kurz the Revelator
+						["coord"] = { 46.8, 22.2 },
 						["sourceQuests"] = { 9570 },	-- The Kurken is Lurkin'
 					}),
 					qa(10428, {	-- The Missing Fisherman
 						["qg"] = 17488,	-- Dulvi
+						["coord"] = { 49.0, 51.1 },
 						["isBreadcrumb"] = true,
 					}),
 					qa(9544, {	-- The Prophecy of Akida
@@ -241,46 +311,63 @@ _.Zones =
 							i(27401),	-- Arugoo's Crossbow of Destruction
 						},
 						["qg"] = 17364,	-- Totem of Vark
+						["coord"] = { 28.2, 62.4 },
 						["sourceQuests"] = { 9542 },	-- Totem of Vark
 					}),
-					qa(9505, {	-- The Prophecy of Velen
+					qa(9505, {	-- The Prophecy of Velen -- Unavailable if "A Small Start" has been accepted or completed
 						["qg"] = 17215,	-- Daedal
+						["coord"] = { 48.4, 51.4 },
 						["races"] = { 11 },	-- Draenei
+						["sourceQuests"] = { 9473 },	-- An Alternative Alternative
 						["isBreadcrumb"] = true,
 					}),
 					qa(9539, {	-- Totem of Coo
 						["qg"] = 17360,	-- Totem of Akida
+						["coord"] = { 49.4, 51.0 },
 						["sourceQuests"] = { 9538 },	-- Learning the Language
 					}),
 					qa(9540, {	-- Totem of Tikti
 						["qg"] = 17361,	-- Totem of Coo
+						["coord"] = { 55.2, 41.6 },
 						["sourceQuests"] = { 9539 },	-- Totem of Coo
 					}),
 					qa(9542, {	-- Totem of Vark
-						["qg"] = 17363,	-- 
+						["qg"] = 17363,	-- Totem of Yor
+						["coord"] = { 63.1, 67.9, },
+						["sourceQuests"] = { 9541 },	-- Totem of Yor
 					}),
 					qa(9541, {	-- Totem of Yor
 						["qg"] = 17362,	-- Totem of Tikti
+						["coord"] = { 64.5, 39.8 },
 						["sourceQuests"] = { 9540 },	-- Totem of Tikti
 					}),
 					qa(9531, {	-- Tree's Company
 						["qg"] = 17240,	-- Admiral Odesyus
+						["coord"] = { 47.0, 70.2 },
 						["sourceQuests"] = { 9530 },	-- I've Got a Plant
 					}),
 					qa(9515, {	-- Warlord Sriss'tiz
 						["qg"] = 17241,	-- Priestess Kyleen Il'dinare
+						["coord"] = { 47.0, 70.2 },
+						["sourceQuests"] = { 9514 },	-- Rune Covered Tablet
 					}),
 					qa(9622, {	-- Warn Your People
 						["qg"] = 17440,	-- High Chief Stillpine
+						["coord"] = { 46.6, 20.6 },
+						["sourceQuests"] = { 9570 },	-- The Kurken is Lurkin'
 					}),
-					qa(9314, {	-- Word from Azure Watch (unlocks at lvl 5)
+					qa(9314, {	-- Word from Azure Watch -- unlocks at lvl 5
 						["qg"] = 16554,	-- Aeun
+						["coord"] = { 64.5, 54.0 },
 					}),
 				}),
 				n(-2, {	-- Vendors
 					na(17246, {	-- "Cookie" McWeaksauce <Cooking Trainer & Supplies>
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						["groups"] = {
+							i(21219),	-- Recipe: Sagefish Delight
+							i(21099),	-- Recipe: Smoked Sagefish
+						},
+						["coord"] = { 46.6, 70.6 },
 					}),
 				}),
 				n(-40, {	-- Legacy
@@ -306,25 +393,19 @@ _.Zones =
 							n(-64, { 	-- Main Questline
 								qa(9279, {	-- You Survived! -- breadcrumb for 9280
 									["qg"] = 16475,	-- Megelon
-									["coords"] = {
-										{ 61.2, 29.5 },
-									},
+									["coord"] = { 61.2, 29.5 },
 									["races"] = { 11 },	-- Draenei
 									["isBreadcrumb"] = true,
 								}),
 								q(9280, {	-- Replenishing the Healing Crystals
 									["qg"] = 16477,	-- Proenitus
-									["coords"] = {
-										{ 52.7, 35.9 },
-									},
+									["coord"] = { 52.7, 35.9 },
 									["races"] = { 11 },	-- Draenei
 									["sourceQuests"] = { 9279 },
 								}),
 								q(9369, {	-- Replenishing the Healing Crystals
 									["qg"] = 16477,	-- Proenitus
-									["coords"] = {
-										{ 52.7, 35.9 },
-									},
+									["coord"] = { 52.7, 35.9 },
 									["races"] = {
 										1,	-- Human
 										4,	-- Night Elf
@@ -335,9 +416,7 @@ _.Zones =
 								}),					
 								qa(9409, {	-- Urgent Delivery!
 									["qg"] = 16477,	-- Proenitus
-									["coords"] = {
-										{ 52.7, 35.9 },
-									},
+									["coord"] = { 52.7, 35.9 },
 									["sourceQuests"] = {
 										9369,	-- Replenishing the Healing Crystals (All other ally races)
 										9280,	-- Replenishing the Healing Crystals (Draenei)
@@ -345,25 +424,19 @@ _.Zones =
 								}),
 								qa(9283, {	-- Rescue the Survivors!
 									["qg"] = 16502,	-- Zalduun
-									["coords"] = {
-										{ 52.1, 42.4 },
-									},
+									["coord"] = { 52.1, 42.4 },
 									["races"] = { 11 },	-- Draenei
 									["sourceQuests"] = { 9409 },	-- Urgent Delivery!
 								}),
 								qa(9371, {	-- Botanist Taerix 
 									["qg"] = 16477,	-- Proenitus
-									["coords"] = {
-										{ 52.7, 35.9 },
-									},
+									["coord"] = { 52.7, 35.9 },
 									["sourceQuests"] = { 9409 },	-- Urgent Delivery!
 									["isBreadcrumb"] = true,
 								}),
 								qa(10302, {	-- Volatile Mutations
 									["qg"] = 16514,	-- Botanist Taerix
-									["coords"] = {
-										{ 49.9, 37.3 },
-									},
+									["coord"] = { 49.9, 37.3 },
 									["sourceQuests"] = {
 										9369,	-- Replenishing the Healing Crystal (All other ally races)
 										9280,	-- Replenishing the Healing Crystal (Draenei)
@@ -372,30 +445,22 @@ _.Zones =
 								}),
 								qa(9293, {	-- What Must Be Done...
 									["qg"] = 16514,	-- Botanist Taerix
-									["coords"] = {
-										{ 49.9, 37.3 },
-									},
+									["coord"] = { 49.9, 37.3 },
 									["sourceQuests"] = { 10302 },	-- Volatile Mutations
 								}),
 								qa(9294, {	-- Healing the Lake	
 									["qg"] = 16514,	-- Botanist Taerix
-									["coords"] = {
-										{ 49.9, 37.3 },
-									},
+									["coord"] = { 49.9, 37.3 },
 									["sourceQuests"] = { 9293 },	-- What Must Be Done...
 								}),
 								qa(10304, {	-- Vindicator Aldar (can't get if 37444 is done)
 									["qg"] = 16514,	-- Botanist Taerix
-									["coords"] = {
-										{ 49.9, 37.3 },
-									},
+									["coord"] = { 49.9, 37.3 },
 									["isBreadcrumb"] = true,
 								}),
 								qa(9303, {	-- Inoculation
 									["qg"] = 16535,	-- Vindicator Aldar
-									["coords"] = {
-										{ 50.6, 48.7 },
-									},
+									["coord"] = { 50.6, 48.7 },
 									["description"] = "This quest is given if you turn-in Vindicator Aldar quest first.",
 									["sourceQuests"] = {
 										10302,	-- Volatile Mutations
@@ -404,17 +469,13 @@ _.Zones =
 								}),
 								qa(37444, {	-- Inoculation
 									["qg"] = 16535,	-- Vindicator Aldar
-									["coords"] = {
-										{ 50.6, 48.7 },
-									},
+									["coord"] = { 50.6, 48.7 },
 									["description"] = "This quest is given if you pick-up before getting or turning in the 'Vindicator Aldar' quest.",
 									["sourceQuests"] = { 10302 },	-- Volatile Mutations
 								}),
 								qa(9309, {	-- The Missing Scout
 									["qg"] = 16535,	-- Vindicator Aldar
-									["coords"] = {
-										{ 50.6, 48.7 },
-									},
+									["coord"] = { 50.6, 48.7 },
 									["sourceQuests"] = {
 										9303,	-- Inoculation
 										37444,	-- Inoculation
@@ -422,30 +483,22 @@ _.Zones =
 								}),
 								qa(10303, {	-- The Blood Elves
 									["qg"] = 16546,	-- Tolaan
-									["coords"] = {
-										{ 33.9, 69.4 },
-									},
+									["coord"] = { 33.9, 69.4 },
 									["sourceQuests"] = { 9309 },	-- The Missing Scout
 								}),
 								qa(9311, {	-- Blood Elf Spy
 									["qg"] = 16546,	-- Tolaan
-									["coords"] = {
-										{ 33.9, 69.4 },
-									},
+									["coord"] = { 33.9, 69.4 },
 									["sourceQuests"] = { 10303 },	-- The Blood Elves
 								}),
 								qa(9312, {	-- The Emitter	
 									["qg"] = 16535,	-- Vindicator Aldar
-									["coords"] = {
-										{ 50.6, 48.8 },
-									},
+									["coord"] = { 50.6, 48.8 },
 									["sourceQuests"] = { 9311 },	-- Blood Elf Spy
 								}),
 								qa(9313, {	-- Travel to Azure Watch
 									["qg"] = 17071,	-- Technician Zhanaa
-									["coords"] = {
-										{ 50.5, 47.9 },
-									},
+									["coord"] = { 50.5, 47.9 },
 									["sourceQuests"] = { 9312 }, -- The Emitter
 								}),
 							}),
@@ -453,23 +506,17 @@ _.Zones =
 								i(24414, {	-- Blood Elf Plans
 									qa(9798, {	-- Blood Elf Plans
 										["qg"] = 16522,	-- Surveyor Candress
-										["coords"] = {
-											{ 27.8, 80.4 },
-										},
+										--["coord"] = { 27.8, 80.4 },
 									}),
 								}),
 								qa(9799, {	-- Botanical Legwork
 									["qg"] = 20233,	-- Apprentice Vishael
-									["coords"] = {
-										{ 49.7, 37.5 },
-									},
+									["coord"] = { 49.7, 37.5 },
 									["sourceQuests"] = { 10302 },	-- Volatile Mutations
 								}),
 								qa(37445, {	-- Spare Parts 
 									["qg"] = 17071,	-- Technician Zhanaa
-									["coords"] = {
-										{ 50.7, 48.0 },
-									},
+									["coord"] = { 50.7, 48.0 },
 									["sourceQuests"] = { 10302 },	-- Volatile Mutations
 								}),
 							}),

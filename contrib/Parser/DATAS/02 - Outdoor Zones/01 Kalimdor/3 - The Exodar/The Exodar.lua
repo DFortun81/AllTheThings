@@ -127,7 +127,13 @@ _.Zones =
 					})),
 					qg(16817, qa( 9365)),	-- A Thief's Reward
 					qg(17538, qa(10968)),	-- Call on the Farseer
-					qg(17584, qa( 9625)),	-- Elekks Are Serious Business
+					]]--
+					qa(9625, {	-- Elekks Are Serious Business
+						["qg"] = 17584,	-- Torallius the Pack Handler
+						["coord"] = { 81.5, 51.5 },
+						["sourceQuests"] = { 9623 },	-- Coming of Age
+					}),
+					--[[
 					o(207322, { -- Hero's Call Board (Exodar)
 						qa(28492),	-- Hero's Call: Ashenvale!
 						qa(28559),	-- Hero's Call: Bloodmyst Isle!
@@ -149,11 +155,14 @@ _.Zones =
 						qa(28544),	-- Hero's Call: Winterspring!
 						qa(29156),	-- The Troll Incursion
 					}),	
-					qg(16768, qa( 9605, {	-- Hippogryph Master Stephanos
-						["groups"] = {
-						},
-						["races"] = {11},
-					})),
+					]]--
+					q(605, {	-- Hippogryph Master Stephanos
+						["qg"] = 16768,	-- Nurguni
+						["coord"] = { 57.0, 50.1 },
+						["races"] = { 11 },	-- Draenei
+						["sourceQuests"] = { 9604 },	-- On the Wings of a Hippogryph
+					}),
+					--[[
 					qg(16749, qa(27271, {	-- Journey to the Wizard's Sanctum
 						["groups"] = {
 						},
@@ -195,11 +204,14 @@ _.Zones =
 						},
 						["classes"] = {3},
 					})),
-					qg(17555, qa( 9606, {	-- Return to Caregiver Chellan (qg Exodar)
-						["groups"] = {
-						},
-						["races"] = {11},
-					})),
+					]]--
+					q(9606, {	-- Return to Caregiver Chellan (qg Exodar)
+						["qg"] = 17555,	-- Stephanos
+						["coord"] = { 54.8, 35.8 },
+						["races"] = { 11 },	-- Draenei
+						["sourceQuests"] = { 9605 },	-- Hippogryph Master Stephanos
+					}),
+					--[[
 					qg(17468, qa( 9762)),	-- The Unwritten Prophecy
 					qg(17468, qa( 9699)),	-- Truth or Fiction
 					qg(17122, qa(27266, {	-- Wulf Calls
