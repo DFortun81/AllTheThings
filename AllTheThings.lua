@@ -7613,6 +7613,25 @@ app:GetWindow("Debugger", UIParent, function(self)
 			['g'] = {},
 		};
 		self.rawData = {};
+		self.AddObject = function(self, info)
+			local px, py = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"):GetXY();
+			info.coord = { px * 100, py * 100 };
+			
+			-- Bubble Up the Maps
+			local mapInfo;
+			local mapID = app.GetCurrentMapID();
+			repeat
+				mapInfo = C_Map.GetMapInfo(mapID);
+				if mapInfo then
+					info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
+					mapID = mapInfo.parentMapID
+				end
+			until not mapInfo or not mapID;
+			
+			self:MergeObject(self.data.g, self:CreateObject(info));
+			self:MergeObject(self.rawData, info);
+			self:Update();
+		end
 		self.Clear = function(self)
 			self.rawData = {};
 			app.SetDataMember("Debugger", self.rawData);
@@ -7800,31 +7819,11 @@ app:GetWindow("Debugger", UIParent, function(self)
 							end
 						end
 						
-						
-						
 						local info = { [(ty == "GameObject") and "objectID" or "npcID"] = npc_id };
 						info.faction = UnitFactionGroup("npc");
 						info.text = UnitName("npc");
 						info.g = rawGroups;
-						
-						local px, py = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"):GetXY();
-						info.coord = { px * 100, py * 100 };
-						print(px, py);
-						
-						-- Bubble Up the Maps
-						local mapInfo;
-						local mapID = app.GetCurrentMapID();
-						repeat
-							mapInfo = C_Map.GetMapInfo(mapID);
-							if mapInfo then
-								info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
-								mapID = mapInfo.parentMapID
-							end
-						until not mapInfo or not mapID;
-						
-						self:MergeObject(self.data.g, self:CreateObject(info));
-						self:MergeObject(self.rawData, info);
-						self:Update();
+						self:AddObject(info);
 					end
 				end);
 			elseif e == "TRADE_SKILL_LIST_UPDATE" then
@@ -7937,9 +7936,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 					end
 				end
 				
-				local px, py = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"):GetXY();
-				local info = { ["questID"] = questID, ["g"] = rawGroups, ["coord"] = { px * 100, py * 100 } };
-				print(px, py);
+				local info = { ["questID"] = questID, ["g"] = rawGroups };
 				if questStartItemID and questStartItemID > 0 then info.itemID = questStartItemID; end
 				if npc_id then
 					npc_id = tonumber(npc_id);
@@ -7951,21 +7948,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 					end
 					info.faction = UnitFactionGroup(npc);
 				end
-				
-				-- Bubble Up the Maps
-				local mapInfo;
-				local mapID = app.GetCurrentMapID();
-				repeat
-					mapInfo = C_Map.GetMapInfo(mapID);
-					if mapInfo then
-						info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
-						mapID = mapInfo.parentMapID
-					end
-				until not mapInfo or not mapID;
-				
-				self:MergeObject(self.data.g, self:CreateObject(info));
-				self:MergeObject(self.rawData, info);
-				self:Update();
+				self:AddObject(info);
 			end
 			
 		end);
