@@ -57,7 +57,8 @@ _.Instances =
 								i(137416),
 								i(137413),
 								i(134475),
-								i(137417)
+								i(137417),
+								i(137897), -- Recipe: Dreadleather Gloves (Rank 3)
 							}))
 						}
 					}),
@@ -110,7 +111,8 @@ _.Instances =
 								i(137413),
 								i(137416),
 								i(134475),
-								i(137417)
+								i(137417),
+								i(137897), -- Recipe: Dreadleather Gloves (Rank 3)
 							}))
 						}
 					})
