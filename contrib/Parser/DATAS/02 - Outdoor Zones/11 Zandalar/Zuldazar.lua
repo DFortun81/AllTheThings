@@ -6,7 +6,7 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(862, {	-- Zuldazar
 			["groups"] = {
-				n(-4, {	-- Achievements
+				n(-4,   {	-- Achievements
 					["groups"] = {
 						ach(13027, {	-- Mushroom Harvest
 							n(143314, {	-- Bane of the Woods
@@ -44,7 +44,7 @@ _.Zones =
 									["questID"] = 50949,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(277561, {	-- Warlord's Cache	
+								o(277561, {	-- Warlord's Cache
 									["questID"] = 49257,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
@@ -156,7 +156,7 @@ _.Zones =
 						["coord"] = { 77.2, 15.4 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  { 	-- Pet Battle
 					["groups"] = {
 						p(2385),	-- Barrier Hermit
 						p(2387),	-- Golden Beetle
@@ -164,7 +164,7 @@ _.Zones =
 						p(2384),	-- Shore Butterfly
 					},
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					["groups"] = {
 						h(ach(11861, {	-- The Throne of Zuldazar
 							["groups"] = {
@@ -546,7 +546,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-16, {	-- Rares
+				n(-16,  {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(129961, {	-- Atal'zul Gotaka [CLQS]
@@ -816,8 +816,9 @@ _.Zones =
 							["questID"] = 50726,
 							["isDaily"] = true,
 							["coords"] = {
-								{ 43.12, 72.95 },
 								{ 41.11, 74.84 },
+								{ 42.08, 72.52 },
+								{ 43.12, 72.95 },
 							},
 						}),
 						o(9999995, { -- Treasure Chest
@@ -864,7 +865,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-2, {  -- Vendors
+				n(-2,   {	-- Vendors
 					["groups"] = {
 						n(140137, {	-- Bugcatacher Cal'yoon
 							["groups"] = {
@@ -948,7 +949,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-34, {	-- World Quests
+				n(-34,  {	-- World Quests
 					["groups"] = {
 						n(-17, {	-- Quests
 							q(52349, {	-- Work Order: Loa Loaf
@@ -1020,8 +1021,9 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0, {	-- Zone Drop
+				n(0,    {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+						i(159594),	-- Zem'lan Saber of the Quickblade
 						i(160146),	-- Saurifeather Crest
 						i(160151),	-- Saurifeather Mantle
 						i(160149),	-- Saurifeather Garments

@@ -886,6 +886,9 @@ _.Zones =
 							["questID"] = 49916,
 							["isDaily"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+							["coords"] = {
+								{ 43.53, 48.91 },
+							},
 						}),
 						o(9999994, {	-- Treasure Chest
 							["questID"] = 50894,

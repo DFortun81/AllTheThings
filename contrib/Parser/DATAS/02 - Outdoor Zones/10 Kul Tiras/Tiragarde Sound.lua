@@ -11,7 +11,7 @@ _.Zones =
 						ach(12852, {	-- Treasures of Tiragarde Sound
 							o(279750, {	-- Hay Covered Chest [Localized]
 								["questID"]  = 49963,
-									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(281397, {	-- Cutwater Treasure Chest [Localized]
 								["groups"] = {
@@ -23,7 +23,7 @@ _.Zones =
 							}),
 							o(293962, {	-- Precarious Noble Cache [Localized]
 								["questID"]  = 52866,
-									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(293964, {	-- Forgotten Smuggler's Stash [Localized]
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
@@ -32,23 +32,38 @@ _.Zones =
 							}),
 							o(293965, {	-- Scrimshaw Cache [Localized]
 								["questID"] = 52870,
-									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
+						-- Even though the criteria are named "_____ Treasure Map," they aren't awarded until you open the chest associated with the map.
+						-- It doesn't appear that you need to pick up the map to loot the chest.
+						-- I went straight to the chest for the Soggy Treasure Map without having looted it (to my knowledge).  Needs verification though.
 							i(162571, {	-- Soggy Treasure Map
 								["questID"] = 52807,
-									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								-- The actual criteria is awarded by:
+									-- opening object 293852 "Buried Treasure Chest"
+									-- at 55.0, 46.1
 							}),
 							i(162580, {	-- Fading Treasure Map
-								["questID"] = 52854,
-									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["questID"] = 52833,
+								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								-- The actual criteria is awarded by:
+									-- opening object 293880 "Buried Treasure Chest"
+									-- at 29.3, 25.3
 							}),
 							i(162581, {	-- Yellowed Treasure Map
-								["questID"] = 52859,
-									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["questID"] = 52836,
+								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								-- The actual criteria is awarded by:
+									-- opening object 293881 "Buried Treasure Chest"
+									-- at 90.5, 75.6
 							}),
 							i(162584, {	-- Singed Treasure Map
 								["questID"] = 52860,
-									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								-- Could not test because I already did it, but presume this is awarded by:
+									-- opening object 293884 "Buried Treasure Chest"
+									-- at 49.0, 37.6
 							}),
 						}),
 					},
@@ -738,7 +753,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				n(-16,  {	-- Rares
-					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
+					-- Note: While these are all technically Achievement Criteria we don't want to use that in the information on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(132182, {	-- Auditor Dolp [MissingL]
 							["questID"] = 50156,
@@ -772,24 +787,32 @@ _.Zones =
 							["coord"] = { 56.3, 70.0 },
 							["questID"] = 50096,
 						}),
+						n(139145, {	-- Blackthorne
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(154411),	-- Vlaros Corps Rifle
+							}),
+							["coord"] = { 85.2, 73.6 },
+							["questID"] = 51808,
+						}),
 						n(130508, {	-- Broodmother Razora			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160460),	-- Thick Sauroskin Gloves	
 							}),	
 							["questID"] = 49999,		
 						}),		
-						n(132088, {	-- Captain Wintersail			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(155422, {	-- Pirate Chief's Speargun	
+						n(132088, {	-- Captain Wintersail
+							-- have to interact with object 280649 Smuggler's Cache to spawn
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(155422, {	-- Pirate Chief's Speargun
 									["crs"] = {
 										132104,	-- Blackpowder Smuggler
 										136221,	-- Strongarm Smuggler
 										132093,	-- Wavecaller Smuggler
 									},
 								}),
-							}),	
-							-- ["questID"] = 		
-						}),		
+							}),
+							["questID"] = 50097,
+						}),
 						n(139152, {	-- Carla Smirk
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(155271),	-- Monkey's Paw Chopper

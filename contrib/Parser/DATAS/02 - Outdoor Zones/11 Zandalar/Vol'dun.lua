@@ -6,7 +6,7 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(864, {	-- Vol'dun
 			["groups"] = {
-				n(-4, {	-- Achievements
+				n(-4,   {	-- Achievements
 					["groups"] = {
 						ach(13027, {	-- Mushroom Harvest
 							n(143313, {	-- Portakillo
@@ -220,12 +220,12 @@ _.Zones =
 						["coord"] = { 53.6, 37.6 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  { 	-- Pet Battle
 					["groups"] = {
 						p(2399),	-- Hermit Crab
 					},
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					["groups"] = {
 						q(47320),	-- A Balm to Calm
 						q(50817),	-- A Charming Tail
@@ -597,7 +597,7 @@ i(155430),
 					},
 					["races"] = HORDE_ONLY,
 				}),
-				n(-16, {	-- Rares
+				n(-16,  {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 							n(135852, {	-- Ak'tar
@@ -859,6 +859,7 @@ i(155430),
 							["coords"] = {
 								{ 33.71, 77.40 },
 								{ 34.74, 77.24 },
+								{ 37.56, 82.71 },
 							},
 						}),
 						o(9999974, { -- Treasure Chest
@@ -866,6 +867,7 @@ i(155430),
 							["isDaily"] = true,
 							["coords"] = {
 								{ 46.07, 44.28 },
+								{ 48.20, 44.26 },
 							},
 						}),
 						o(9999973, { -- Treasure Chest
@@ -877,7 +879,7 @@ i(155430),
 						}),
 					},
 				}),
-				n(-2, {  -- Vendors
+				n(-2,   {	-- Vendors
 					["groups"] = {
 						n(144353, {	-- Collector Kojo <Tortollan Seekers Emissary>
 							["groups"] = {
@@ -1024,7 +1026,7 @@ i(155430),
 						}),
 					},
 				}),
-				n(-34, {	-- World Quests
+				n(-34,  {	-- World Quests
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
@@ -1094,8 +1096,9 @@ i(155430),
 						}),
 					},
 				}),
-				n(0, {	-- Zone Drop
+				n(0,    {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+						i(159575),	-- Warport Longstaff
 						i(160180),	-- Skycaller Cowl
 						i(160185),	-- Skycaller Mantle
 						i(160183),	-- Skycaller Robes
