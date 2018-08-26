@@ -7614,19 +7614,23 @@ app:GetWindow("Debugger", UIParent, function(self)
 		};
 		self.rawData = {};
 		self.AddObject = function(self, info)
-			local px, py = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"):GetXY();
-			info.coord = { px * 100, py * 100 };
-			
 			-- Bubble Up the Maps
 			local mapInfo;
 			local mapID = app.GetCurrentMapID();
-			repeat
-				mapInfo = C_Map.GetMapInfo(mapID);
-				if mapInfo then
-					info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
-					mapID = mapInfo.parentMapID
+			if mapID then
+				local pos = C_Map.GetPlayerMapPosition(mapID, "player");
+				if pos then
+					local px, py = pos:GetXY();
+					info.coord = { px * 100, py * 100 };
 				end
-			until not mapInfo or not mapID;
+				repeat
+					mapInfo = C_Map.GetMapInfo(mapID);
+					if mapInfo then
+						info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
+						mapID = mapInfo.parentMapID
+					end
+				until not mapInfo or not mapID;
+			end
 			
 			self:MergeObject(self.data.g, self:CreateObject(info));
 			self:MergeObject(self.rawData, info);
