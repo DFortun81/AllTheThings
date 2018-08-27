@@ -7587,6 +7587,7 @@ end
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
 --[[
+-- AllTheThings:GetWindow("Unsorted"):Show();
 -- split a string
 function string:split(delimiter)
   local result = { }
@@ -7748,6 +7749,11 @@ app:GetWindow("Debugger", UIParent, function(self)
 		-- Setup Event Handlers and register for events
 		-- /script AllTheThings:GetWindow("Debugger"):Show();
 		-- /script AllTheThings:GetWindow("Debugger"):Clear();
+		
+		-- /script _G.info = AllTheThings:GetWindow("Debugger"):CreateObject({itemID = 137642});
+		-- /script AllTheThings:GetWindow("Debugger"):MergeObject(AllTheThings:GetWindow("Debugger").data.g, _G.info);
+		-- /script AllTheThings:GetWindow("Debugger"):MergeObject(AllTheThings:GetWindow("Debugger").rawData, {itemID = 137642});
+		-- /script AllTheThings:GetWindow("Debugger"):Update();
 		self.events = {};
 		self:SetScript("OnEvent", function(self, e, ...)
 			print(e, ...);

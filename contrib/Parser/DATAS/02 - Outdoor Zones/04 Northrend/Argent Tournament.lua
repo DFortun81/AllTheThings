@@ -660,7 +660,14 @@ _.Zones =
 						currency(241, { -- Champion's Seal
 							i(45725),	-- Argent Hippogryph Mount
 							i(45125),	-- Stormwind Steed Mount
-							i(46752),	-- Swift Gray Steed Mount
+							{
+								["itemID"] = 46752,	-- Swift Gray Steed
+								["races"] = { 1 },
+							},
+							{
+								["itemID"] = 46758,	-- Swift Gray Steed
+								["races"] = { 3, 4, 7, 11, 22, 25, 29, 30, 32, 34 },
+							},
 							i(122232),	-- Music Roll: The Argent Tournament
 							i(44974),	-- Elwynn Lamb Pet
 							i(45011),	-- Stormwind Banner Toy
@@ -737,7 +744,14 @@ _.Zones =
 						currency(241, { -- Champion's Seal
 							i(45725),	-- Argent Hippogryph Mount
 							i(45586),	-- Ironforge Ram Mount
-							i(46748),	-- Swift Violet Ram Mount
+							{
+								["itemID"] = 46748,	-- Swift Violet Ram
+								["races"] = { 3 },
+							},
+							{
+								["itemID"] = 46762,	-- Swift Violet Ram
+								["races"] = { 1, 4, 7, 11, 22, 25, 29, 30, 32, 34 },
+							},
 							i(122232),	-- Music Roll: The Argent Tournament
 							i(44970),	-- Dun Morogh Cub Pet
 							i(45018),	-- Ironforge Banner Toy
@@ -853,7 +867,14 @@ _.Zones =
 						currency(241, { -- Champion's Seal
 							i(45725),	-- Argent Hippogryph Mount
 							i(45590),	-- Exodar Elekk Mount
-							i(46745),	-- Great Red Elekk Mount
+							{
+								["itemID"] = 46745,	-- Great Red Elekk
+								["races"] = { 11 },
+							},
+							{
+								["itemID"] = 46756,	-- Great Red Elekk
+								["races"] = { 1, 3, 4, 7, 22, 25, 29, 30, 32, 34 },
+							},
 							i(122232),	-- Music Roll: The Argent Tournament
 							i(44984),	-- Ammen Vale Lashling Pet
 							i(45020),	-- Exodar Banner Toy
@@ -1010,7 +1031,14 @@ _.Zones =
 						currency(241, { -- Champion's Seal
 							i(45725),	-- Argent Hippogryph Mount
 							i(45589),	-- Gnomeragan Mechanostrider Mount
-							i(46747),	-- Turbostrider Mount
+							{
+								["itemID"] = 46747,	-- Turbostrider
+								["races"] = { 7 },
+							},
+							{
+								["itemID"] = 46763,	-- Turbostrider
+								["races"] = { 1, 3, 4, 11, 22, 25, 29, 30, 32, 34 },
+							},
 							i(122232),	-- Music Roll: The Argent Tournament
 							i(45002),	-- Mechanopeep Pet
 							i(45019),	-- Gnomeragan Banner Toy
@@ -1037,7 +1065,14 @@ _.Zones =
 						currency(241, { -- Champion's Seal
 							i(45725),	-- Argent Hippogryph Mount
 							i(45591),	-- Darnassian Mount
-							i(46744),	-- Swift Moonsaber Mount
+							{
+								["itemID"] = 46744,	-- Swift Moonsaber
+								["races"] = { 4 },
+							},
+							{
+								["itemID"] = 46759,	-- Swift Moonsaber
+								["races"] = { 1, 3, 7, 11, 22, 25, 29, 30, 32, 34 },
+							},
 							i(122232),	-- Music Roll: The Argent Tournament
 							i(44965),	-- Teldrassil Sproutling Pet
 							i(45021),	-- Darnassus Banner Toy
@@ -1091,7 +1126,14 @@ _.Zones =
 						currency(241, { -- Champion's Seal
 							i(45725),	-- Argent Hippogryph Mount 
 							i(45596),	-- Silvermoon Mount
-							i(46751),	-- Swift Red Hawkstrider Mount
+							{
+								["itemID"] = 46751,	-- Swift Red Hawkstriderv
+								["races"] = { 10 },
+							},
+							{
+								["itemID"] = 46761,	-- Swift Red Hawkstrider
+								["races"] = { 2, 5, 6, 8, 9, 26, 27, 28,  31, 36 },
+							},
 							i(122232),	-- Music Roll: The Argent Tournament
 							i(44982),	-- Enchanted Broom Pet
 							i(45017),	-- Silvermoon Banner Toy

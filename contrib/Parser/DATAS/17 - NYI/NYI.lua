@@ -9,6 +9,7 @@ _.NeverImplemented =
 	un(1, i(115371)),	-- [PLACEHOLDER TIER 3 ITEM]
 	un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
 	un(1, i(143752)),	-- Sound Test Mount
+	un(1, i(37598)),	-- Swift Zhevra OLD
 	un(1, i(44557)),	-- Swift Ebonweave Carpet (NOT IN GAME)
 	un(1, i(44556)),	-- Swift Spellfire Carpet (NOT IN GAME)
 	un(1, i(44555)),	-- Swift Mooncloth Carpet (NOT IN GAME)
