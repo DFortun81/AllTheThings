@@ -7,8 +7,6 @@ _.GearSets =
 	}),
 	n(-100001, { -- Artifacts
 	}),
-	n(-5351, { -- Character Boosts Item Sets
-	}),
 	n(-5350, { -- Class Trial Item Sets
 	}),
 	gsh(330, { -- Class Hall Order Item Sets

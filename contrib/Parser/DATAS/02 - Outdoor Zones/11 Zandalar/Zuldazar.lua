@@ -71,25 +71,6 @@ _.Zones =
 						--]]
 					},
 				}),
-				n(-169, { 	-- Emissary Quests
-					["groups"] = {
-						q(50606, {	-- Horde War Effort [The Honorbound]
-							["groups"] = bubbleDown({["modID"] = 28}, {
-								i(163357),	-- Honorbound Artificer's Cloak [Speculation]
-								i(163358),	-- Honorbound Artificer's Greeatcloak [Speculation]
-							}),
-							["qg"] = 135446,	-- Vindicator Jaelaana
-							["isDaily"] = true,
-							["lvl"] = 120,
-							["repeatable"] = true,
-						}),
-						q(50598, {	-- Zandalari Empire
-							["isDaily"] = true,
-							["lvl"] = 120,
-							["repeatable"] = true,
-						}),
-					},
-				}),
 				n(-228, {	-- Flight Paths
 					fp(2046, { -- Atal'dazar, Zuldazar
 						["coord"] = { 46.0, 35.8 },
@@ -962,6 +943,19 @@ _.Zones =
 				n(-34,  {	-- World Quests
 					["groups"] = {
 						n(-17, {	-- Quests
+							q(50855, {	-- Old R'gal (triggered add'l questID 50856 upon killing for WQ)
+								["groups"] = {
+									i(160509, {	-- Echoes of Rezan
+										["crs"] = {
+											122639,	-- Old R'gal
+										},
+									}),
+								},
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
 							q(52349, {	-- Work Order: Loa Loaf
 								["groups"] = {
 									i(162294, {	-- Recipe: Loa Loaf [Rank 3]
@@ -973,14 +967,37 @@ _.Zones =
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
 							}),
-							q(50855, {	-- Old R'gal (triggered add'l questID 50856 upon killing for WQ)
+							q(52345, {	-- Work Order: Ravenberry Tarts [Rank 3]
 								["groups"] = {
-									i(160509, {	-- Echoes of Rezan
-										["crs"] = {
-											122639,	-- Old R'gal
-										},
+									i(162290, {	-- Recipe: Ravenberry Tarts [Rank 3]
+										["spellID"] = 259426,
 									}),
 								},
+								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
+							q(52351, {	-- Work Order: Spiced Snapper [Rank 3]
+								["groups"] = {
+									i(162297, {	-- Recipe: Spiced Snapper [Rank 3]
+										["spellID"] = 259447,
+									}),
+								},
+								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
+							q(52350, {	-- Work Order: Waamp Fish 'n Chips [Rank 3]
+								["groups"] = {
+									i(162291, {	-- Recipe: Swamp Fish 'n Chips [Rank 3]
+										["spellID"] = 259429,
+									}),
+								},
+								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -1010,7 +1027,14 @@ _.Zones =
 						}),
 						n(-44, {	-- Leather
 							["groups"] = {
-								
+								i(157913),	-- Gonk Outrunner Mask
+								i(157915),	-- Gonk Outrunner Shoulderguards
+								i(157910),	-- Gonk Outrunner Vest
+								i(157917),	-- Gonk Outrunner Armbands
+								i(157912),	-- Gonk Outrunner Grips
+								i(157916),	-- Gonk Outrunner Belt
+								i(157914),	-- Gonk Outrunner Breeches
+								i(157911),	-- Gonk Outrunner Striders
 							},
 						}),
 						n(-45, {	-- Mail
@@ -1027,6 +1051,14 @@ _.Zones =
 						}),
 						n(-46, {	-- Plate
 							["groups"] = {
+								i(157929),	-- Greathelm of Rezan's Bodyguard
+								i(157932),	-- Pauldrons of Rezan's Bodyguard
+								i(157926),	-- Breastplate of Rezan's Bodyguard
+								i(157934),	-- Vambraces of Rezan's Bodyguard
+								i(157928),	-- Battlegloves of Rezan's Bodyguard
+								i(157933),	-- Greatbelt of Rezan's Bodyguard
+								i(157931),	-- Wargreaves of Rezan's Bodyguard
+								i(157927),	-- Warboots of Rezan's Bodyguard
 							},
 						}),
 					},

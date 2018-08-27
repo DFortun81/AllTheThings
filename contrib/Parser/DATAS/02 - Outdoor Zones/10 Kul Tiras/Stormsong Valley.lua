@@ -955,10 +955,33 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					["groups"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
-						--[[
 						a(ach(12496, {	-- Stormsong and Dance
-							crit(1),		-- The Tidesages of Stormsong
-							crit(2),		-- A House in Peril
+							crit(1, {		-- The Tidesages of Stormsong
+								["groups"] = {
+									q(51488, {	-- Archived Knowledge
+										["qg"] = 137866,	-- Taelia
+										["sourceQuests"] = { 51487 },	-- Searching for Answers
+									}),
+									q(51490, {	-- Border Issues
+										["qg"] = 137866,	-- Taelia
+										["sourceQuests"] = { 51489 },	-- Time to Leave
+									}),	
+									q(51401, {	-- Carry On
+										["qg"] = 137866,	-- Taelia
+										["sourceQuests"] = { 51490 },	-- Border Issues
+									}),	
+									q(51487, {	-- Searching for Answers
+										["qg"] = 137866,	-- Taelia
+										["sourceQuests"] = { 47952 },	-- The Missing Fleet
+									}),	
+									q(51489, {	-- Time to Leave
+										["qg"] = 137866,	-- Taelia
+										["sourceQuests"] = { 51488 },	-- Archived Knowledge
+									}),	
+								},
+							}),
+							crit(2, {		-- A House in Peril
+							}),
 							crit(3),		-- The Growing Tempest
 							crit(4),		-- At the Edge of Madness
 							crit(5),		-- Cycle of Hatred
@@ -1573,6 +1596,42 @@ _.Zones =
 											},
 										}),
 									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52347, {	-- Work Order: Honey-Glazed Haunchs [Rank 3]
+									["groups"] = {
+										i(162286, {	-- Recipe: Honey-Glazed Haunchs [Rank 3]
+											["spellID"] = 259416,
+										}),
+									},
+									["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52344, {	-- Work Order: Kul Tiramisu [Rank 3]
+									["groups"] = {
+										i(162285, {	-- Recipe: Kul Tiramisu [Rank 3]
+											["spellID"] = 259413,
+										}),
+									},
+									["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52346, {	-- Work Order: Sailor's Pie [Rank 3]
+									["groups"] = {
+										i(162295, {	-- Recipe: Sailor's Pie [Rank 3]
+											["spellID"] = 259441,
+										}),
+									},
+									["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]

@@ -917,7 +917,14 @@ _.Zones =
 				}),
 				n(-2, {  -- Vendors
 					["groups"] = {
-						n(144353, {	-- Collector Kojo <Tortollan Seekers Emissary> [NOTE: Will need correct npcID when located]
+						n(126833, {	-- Blind Wunja <Medicine Woman>
+							["groups"] = {
+								i(163500),	-- Bloodfeaster Larva
+								i(163510),	-- Crimson  Frog
+							},
+							["itemID"] = 163036,	-- Polished Pet Charm
+						}),
+						n(144352, {	-- Collector Kojo <Tortollan Seekers Emissary> [NOTE: Will need correct npcID when located]
 							["groups"] = {
 								i(160543),	-- Tabard of the Tortollan Seekers
 								i(163513),	-- Cou'pa
