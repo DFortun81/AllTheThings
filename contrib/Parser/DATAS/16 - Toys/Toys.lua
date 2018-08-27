@@ -3,7 +3,7 @@
 ---------------------------------------------
 _.Toys =
 {
-	n(-4, { 	-- Achievement
+	n(-4,  { 	-- Achievement
 		i(134032),		-- Elite Pennant
 		i(139773),		-- Emerald Winds
 		i(164310),		-- Glorious Pennant
@@ -67,6 +67,7 @@ _.Toys =
 		i(141298),		-- Displacer Meditation Stone
 		i(134019), 		-- Don Carlos' Famous Hat
 		i(134831),		-- Doomsayer's Robes
+		i(163740),		-- Drust Ritual Knife
 		i(164373),		-- Enchanted Soup Stone
 		i(86590),		-- Essence of the Breeze
 		i(104309),		-- Eternal Kiln
@@ -381,7 +382,7 @@ _.Toys =
 		un(10, i(38578)),	-- The Flag of Ownership
 		un(10, i(69215)), 	-- War Party Hitching Post
 	}),
-	n(-3, {		-- World Event
+	n(-3,  {	-- World Event
 		n(-173, {	-- Timewalking
 			i(144072),	-- Adopted Puppy Crate
 			i(129929),	-- Ever-Shifting Mirror
@@ -551,7 +552,7 @@ _.Toys =
 			["u"] = 23,
 		}),
 	}),
-	n(-2, { 	-- Vendor
+	n(-2,  { 	-- Vendor
 		i(163211),		-- Akunda's Firesticks
 		i(46843),		-- Argent Crusader's Banner
 		i(147537, { 	-- A Tiny Set of Warglaives -- demon hunter class hall

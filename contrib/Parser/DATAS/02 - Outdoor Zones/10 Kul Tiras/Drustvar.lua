@@ -52,6 +52,9 @@ _.Zones =
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(297893, {	-- Runebound Coffer	
+								["g"] = {
+									i(163740),	-- Drust Ritual Knife (TOY!)
+								},
 								["questID"] = 53387,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
