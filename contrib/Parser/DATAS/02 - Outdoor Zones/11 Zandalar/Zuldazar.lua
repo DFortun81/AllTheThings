@@ -544,6 +544,9 @@ _.Zones =
 							["coord"] = { 43.7, 39.5 },
 							["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
 						}),
+						qh(50944, {	-- Down, But Not Out
+							i(159146),	-- Kua'fon's Harness
+						}),
 					},
 				}),
 				n(-16,  {	-- Rares

@@ -23,6 +23,9 @@ _.Mounts =
 		i(163577),	-- Conquerer's Scythemaw
 		i(69230),	-- Corrupted Fire Hawk
 		i(87769),	-- Crimson Cloud Serpent
+		i(161331, {	-- Dark Iron Core Hound [Dark Iron Dwarf Allied Race]
+			["mountID"] = 271646,
+		}),
 		i(62901),	-- Drake of the East Wind
 		i(118676),	-- Emerald Drake
 		i(69226),	-- Felfire Hawk
@@ -83,6 +86,9 @@ _.Mounts =
 		i(70910),	-- Vicious War Wolf*
 		i(44177),	-- Violet Proto-Drake
 		i(62900),	-- Volcanic Stone Drake
+		i(159870, {	-- Zandalari Direhorn  [Zandalari Allied Race Quest Chain]
+			["mountID"] = 263707,
+		}),
 	}),
 	n(-26, { 	-- Drop
 		i(143643),	-- Abyss Worm
@@ -228,6 +234,9 @@ _.Mounts =
 		i(83088),	-- Jade Panther
 		i(82453),	-- Jeweled Onyx Panther
 		i(44558),	-- Magnificent Flying Carpet
+		i(161134, {	-- Mecha-Mogul Mk2
+			["mountID"] = 261437,
+		}),
 		i(41508),	-- Mechano-Hog
 		i(44413),	-- Mekgineer's Chopper
 		i(152912),	-- Pond Nettle [Note: Fishing]
@@ -353,6 +362,9 @@ _.Mounts =
 		},
 		i(79802),		-- Jade Cloud Serpent
 		i(137573),		-- Llothien Prowler
+		i(161330, {		-- Mag'har Direwolf [Mag'har Orc Quest Chain]
+			["mountID"] = 267274,
+		}),
 		i(116769),		-- Mudback Riverbeast
 		{
 		["mountID"] = 232412,	-- Netherlord's Chaotic Wrathsteed
@@ -970,6 +982,14 @@ _.Mounts =
 			}),
 		},
 		["collectible"] = false,
+		})),
+		un(2, ach(12961, {	-- Gladiator: Battle for Azeroth Season 1
+			["groups"] = {
+				i(156879, {	-- Dread Gladiator's Proto-Drake
+					["mountID"] = 262022,
+				}),
+			},
+			["collectible"] = false,
 		})),
 	}),
 };

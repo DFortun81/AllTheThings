@@ -26,6 +26,35 @@ _.NeverImplemented =
 	un(1, i(32190)),	-- Chancellor's Spellblade
 	un(1, i(32183)),	-- Chancellor's Maul
 	un(1, i(77587)),	-- Replica High Warlord's Destroyer
+	un(1, i(84728)),	-- Reins of the Crimson Riding Crane
+	un(1, i(87785)),	-- Reins of the Albino Riding Crane
+	un(1, i(87794)),	-- Reins of the Golden Water Strider
+	un(1, i(116657)),	-- Ancient Leatherhide
+	un(1, i(129744)),	-- Iron Warhorse
+	un(1, i(137576)),	-- Dim Coldflame Core
+	un(1, i(137615)),	-- Molten Flarecore
+	un(1, i(156798)),	-- The Hivemind
+	
+	un(1, i(156884, {	-- Black Gladiator's Proto-Drake
+		["mountID"] = 262027,
+	})),
+	un(1, i(156880, {	-- Blue Gladiator's Proto-Drake
+		["mountID"] = 262023,
+	})),
+	un(1, i(156885, {	-- Gold Gladiator's Proto-Drake
+		["mountID"] = 262028,
+	})),
+	un(1, i(156883, {	-- Green Gladiator's Proto-Drake
+		["mountID"] = 262026,
+	})),
+	un(1, i(156882, {	-- Pale Gladiator's Proto-Drake
+		["mountID"] = 262025,
+	})),
+	un(1, i(156881, {	-- Purple Gladiator's Proto-Drake
+		["mountID"] = 262024,
+	})),
+	
+	
 	un(1, i(129738)), -- Verus
 	un(1, i(147204)), -- Black Apron - TEST
 	un(1, i(23388)), -- Tranquillen Tabard

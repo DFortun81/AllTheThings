@@ -11,6 +11,7 @@ profession(202, { -- Engineering
 		i(34060),	-- Flying Machine
 		i(87251),	-- Geosynchronous World Spinner
 		i(41508),	-- Mechano-Hog
+		i(161134),	-- Mecha-Mogul Mk2
 		i(44413),	-- Mekgineer's Chopper
 		i(95416),	-- Sky Golem
 		i(34061),	-- Turbo-Charged Flying Machine
