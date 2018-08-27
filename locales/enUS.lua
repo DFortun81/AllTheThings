@@ -2626,6 +2626,7 @@ AllTheThings.Locales.enUS = {
 		[9999978] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Continue on down.
 		[9999974] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Continue on down.
 		[9999973] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Continue on down.
+		[9999972] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Continue on down.
 		[9999971] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Continue on down.
 	};
 

@@ -883,6 +883,7 @@ i(155430),
 							["coords"] = {
 								{ 37.84, 55.50 },
 							},
+							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
 					},
 				}),

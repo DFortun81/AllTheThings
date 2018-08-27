@@ -6,7 +6,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			["groups"] = {
-				n(-4, {	-- Achievement
+				n(-4,   {	-- Achievement
 					["groups"] = {
 						ach(13051, {	-- Legends of the Tidesages
 							{
@@ -159,7 +159,7 @@ _.Zones =
 						["description"] = "Requires completion of Mission Report: Windfall Cavern and related quest line to unlock.",
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  { 	-- Pet Battle
 					["groups"] = {
 						p(2379),	-- Honey Bee
 						p(2374),	-- Freshwater Crawler
@@ -171,7 +171,7 @@ _.Zones =
 						p(2376),	-- Valley Chicken
 					},
 				}),
-				n(-17, {	-- Quests [Crieve]
+				n(-17,  {	-- Quests [Crieve]
 					a(q(50781, {	-- A Bridge Too Far
 						["qg"] = 136933,	-- Brother Pike
 						["sourceQuests"] = { 50784 },	-- Eye of the Storm [Alliance Only]
@@ -953,7 +953,7 @@ _.Zones =
 						["coord"] = { 60.9, 51.2 },
 					},
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					["groups"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
 						a(ach(12496, {	-- Stormsong and Dance
 							crit(1, {		-- The Tidesages of Stormsong
@@ -1188,7 +1188,7 @@ _.Zones =
 
 					}),
 				}),
-				n(-16, {	-- Rares
+				n(-16,  {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(137025, {	-- Broodmother
@@ -1432,7 +1432,7 @@ _.Zones =
 						}),	
 					},
 				}),
-				n(-2, { 	-- Vendors
+				n(-2,   { 	-- Vendors
 					["groups"] = {
 						n(135793, {	-- Collector Kojo <Tortollan Seekers Emissary>
 							["groups"] = {
@@ -1584,7 +1584,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-34, {	-- World Quests
+				n(-34,  {	-- World Quests
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
@@ -1639,8 +1639,9 @@ _.Zones =
 								}),
 							},
 						}),
-						i(158163),	-- First Mate's Spyglass
+						i(158159),	-- Boralus Sailor's Cloak
 						i(158160),	-- Smuggler's Cove Ring
+						i(158163),	-- First Mate's Spyglass
 						n(-43, {	-- Cloth
 							["groups"] = {
 								i(158033),	-- Squallshaper Hood
@@ -1692,7 +1693,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0, {	-- Zone Drop
+				n(0,    {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						i(159217),	-- Sagehold Circlet
 						i(159222),	-- Sagehold Mantle

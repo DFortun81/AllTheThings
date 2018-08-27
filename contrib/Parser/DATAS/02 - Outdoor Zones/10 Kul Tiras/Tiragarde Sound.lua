@@ -1074,8 +1074,10 @@ _.Zones =
 				}),
 				n(-34,  {	-- World Quests
 					["groups"] = {
+						i(158159),	-- Boralus Sailor's Cloak
 						i(158650),	-- Sea-Scourge Greatblade
 						i(158160),	-- Smuggler's Cove Ring
+						i(158164),	-- Plunderbeard's Flask
 						n(-43, {	-- Cloth
 							["groups"] = {
 								i(157969),	-- Sirensong Headdress
