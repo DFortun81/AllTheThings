@@ -116,7 +116,7 @@ _.Zones =
 										{ 57.68, 64.68 },
 									},
 								}),
-								o(999999, {	-- Grayal's Last Offering
+								o(287239, {	-- Grayal's Last Offering
 									-- Have to interact with object 287238 first to access the chest.
 									["questID"] = 51093,	-- quest for object is 51094
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
