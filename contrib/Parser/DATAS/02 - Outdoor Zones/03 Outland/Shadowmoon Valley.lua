@@ -26,13 +26,9 @@ _.Zones =
 					p(414), 	-- Scorpid
 					p(497), 	-- Tainted Cockroach
 					qa(31981, {	-- Exceeding Expectations
-						["groups"] = {
-						},
 						["qg"] = 66557,	-- Bloodknight Antari
 					}),
 					qh(31982, {	-- Exceeding Expectations
-						["groups"] = {
-						},
 						["qg"] = 66557,	-- Bloodknight Antari
 					}),
 					q( 31926, { 	-- Grand Master Antari
@@ -41,46 +37,34 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 					qh(10702, {	-- A Grunt's Work...
-						["groups"] = {
-						},
 						["qg"] = 21769,	-- Overlord Or'barokh
 					}),
 					
 					
 					qh(10624, {	-- A Haunted History
-						["groups"] = {
-						},
 						["qg"] = 21772,	-- Chief Apothecary Hildagard
 					}),
 					
 					
 					q( 10515, {	-- A Lesson Learned
-						["groups"] = {
-						},
 						["qg"] = 21183,	-- Oronok Torn-heart
 						["sourceQuests"] = { 10514 },	-- I Was a Lot of Things...
 					}),
 					
 					
 					q( 10527, {	-- Ar'tor, Son of Oronok
-						["groups"] = {
-						},
 						["qg"] = 21183,	-- Oronok Torn-heart
 						["sourceQuests"] = { 10519 },	-- The Cipher of Damnation - Truth and History
 					}),
 					
 					
 					q( 10777, {	-- Asghar's Totem
-						["groups"] = {
-						},
 						["qg"] = 22024,	-- Parshah
 						["sourceQuests"] = { 10761 },	-- Find the Deserter
 					}),
 					
 					
 					qh(10595, {	-- Besieged!
-						["groups"] = {
-						},
 						["qg"] = 21359,	-- Blood Guard Gulmok
 						["sourceQuests"] = { 49532 },	-- Warchief's Command: Shadowmoon Valley!
 					}),
@@ -99,24 +83,18 @@ _.Zones =
 					
 					
 					q( 10546, {	-- Borak, Son of Oronok
-						["groups"] = {
-						},
 						["qg"] = 21183,	-- Oronok Torn-heart
 						["sourceQuests"] = { 10519 },	-- The Cipher of Damnation - Truth and History
 					}),
 					
 					
 					qh(10751, {	-- Breaching the Path
-						["groups"] = {
-						},
 						["qg"] = 21998,	-- Kor'kron Wind Rider
 						["sourceQuests"] = { 10750 },	-- The Path of Conquest
 					}),
 					
 					
 					qh(10603, {	-- Bring Down the Warbringer!
-						["groups"] = {
-						},
 						["qg"] = 21475,	-- Scout Zagran
 						["sourceQuests"] = { 10601, 10602 },	-- The Fate of Kagrosh & The Summoning Chamber
 					}),
@@ -135,40 +113,30 @@ _.Zones =
 					
 					
 					q( 10528, {	-- Demonic Crystal Prisons
-						["groups"] = {
-						},
 						["qg"] = 21292,	-- Ar'tor, Son of Oronok
 						["sourceQuests"] = { 10527 },	-- Ar'tor, Son of Oronok
 					}),
 					
 					
 					qh(10769, {	-- Dissension Amongst the Ranks...
-						["groups"] = {
-						},
 						["qg"] = 21998,	-- Kor'kron Wind Rider
 						["sourceQuests"] = { 10768 },	-- Tabards of the Illidari
 					}),
 					
 					
 					q( 10634, {	-- Divination: Gorefiend's Armor
-						["groups"] = {
-						},
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
 						["sourceQuests"] = { 10633 },	-- Teron Gorefiend - Lore and Legend
 					}),
 					
 					
 					q( 10635, {	-- Divination: Gorefiend's Cloak
-						["groups"] = {
-						},
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
 						["sourceQuests"] = { 10633 },	-- Teron Gorefiend - Lore and Legend
 					}),
 					
 					
 					q( 10636, {	-- Divination: Gorefiend's Truncheon
-						["groups"] = {
-						},
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
 						["sourceQuests"] = { 10633 },	-- Teron Gorefiend - Lore and Legend
 					}),
@@ -186,56 +154,42 @@ _.Zones =
 					
 					
 					q( 10458, {	-- Enraged Spirits of Fire and Earth
-						["groups"] = {
-						},
 						["qg"] = 21024,	-- Earthmender Torlok
 						["sourceQuests"] = { 10680, 10681 },	-- The Hand of Gul'dan (A/H)
 					}),
 					
 
 					q( 10480, {	-- Enraged Spirits of Water
-						["groups"] = {
-						},
 						["qg"] = 21024,	-- Earthmender Torlok
 						["sourceQuests"] = { 10458 },	-- Enraged Spirits of Fire and Earth
 					}),
 					
 					
 					qh(10673, {	-- Felspine the Greater (awarded "Shadowmoon Village" criteria)
-						["groups"] = {
-						},
 						["qg"] = 21770,	-- Researcher Tiorus
 						["sourceQuests"] = { 10672 },	-- Frankly, It Makes No Sense...
 					}),
 					
 					
 					qh(10761, {	-- Find the Deserter
-						["groups"] = {
-						},
 						["qg"] = 22043,	-- Sergeant Kargrul
 						["sourceQuests"] = { 10760 },	-- The Sketh'lon Wreckage
 					}),
 
 					
 					qh(10672, {	-- Frankly, It Makes No Sense...
-						["groups"] = {
-						},
 						["qg"] = 21770,	-- Researcher Tiorus
 						["sourceQuests"] = { 10660 },	-- What Strange Creatures
 					}),
 					
 					
 					qh(10604, {	-- Gaining Access
-						["groups"] = {
-						},
 						["qg"] = 21359,	-- Blood Guard Gulmok
 						["sourceQuests"] = { 10603 },	-- Bring Down the Warbringer!
 					}),
 					
 					
 					q( 10521, {	-- Grom'tor, Son of Oronok
-						["groups"] = {
-						},
 						["qg"] = 21183,	-- Oronok Torn-heart
 						["sourceQuests"] = { 10519 },	-- The Cipher of Damnation - Truth and History
 					}),
@@ -243,48 +197,36 @@ _.Zones =
 					
 					i( 30579, {	-- Illidari Bane-Shard
 						qh(10623, {	-- Illidari-Bane Shard
-							["groups"] = {
-							},
 							["qg"] = 21499,	-- Overseer Ripsaw
 						}),
 					}),
 					
 					
 					q( 10782, {	-- Imbuing the Headpiece
-						["groups"] = {
-						},
 						["qg"] = 22024,	-- Parshah
 						["sourceQuests"] = { 10780 },	-- Sketh'lon Feathers
 					}),
 					
 					
 					qh(10767, {	-- Invasion Point: Cataclysm
-						["groups"] = {
-						},
 						["qg"] = 21359,	-- Blood Guard Gulmok
 						["sourceQuests"] = { 10604 },	-- Gaining Access
 					}),
 					
 					
 					q( 10514, {	-- I Was A Lot Of Things...
-						["groups"] = {
-						},
 						["qg"] = 21183,	-- Oronok Torn-heart
 						["sourceQuests"] = { 10513 },	-- Oronok Torn-heart
 					}),
 					
 					
 					q( 10537, {	-- Lohn'goron, Bow of the Torn-heart
-						["groups"] = {
-						},
 						["qg"] = 21318,	-- Spirit of Ar'tor
 						["sourceQuests"] = { 10528 },	-- Demonic Crystal Prisons
 					}),
 					
 					
 					qh(10600, {	-- Minions of the Shadow Council
-						["groups"] = {
-						},
 						["qg"] = 21475,	-- Scout Zagran
 						["sourceQuests"] = { 10599 },	-- The Deathforge
 					}),
@@ -300,48 +242,36 @@ _.Zones =
 					
 					
 					q( 10547, {	-- Of Thistleheads and Eggs...
-						["groups"] = {
-						},
 						["qg"] = 21293,	-- Borak, Son of Oronok
 						["sourceQuests"] = { 10546 },	-- Borak, Son of Oronok
 					}),
 					
 					
 					q( 10513, {	-- Oronok Torn-heart
-						["groups"] = {
-						},
 						["qg"] = 21024,	-- Earthmender Torlok
 						["sourceQuests"] = { 10481 },	-- Enraged Spirits of Air
 					}),
 					
 					
 					qh(10597, {	-- Setting Up the Bomb
-						["groups"] = {
-						},
 						["qg"] = 21359,	-- Blood Guard Gulmok
 						["sourceQuests"] = { 10596 },	-- To Legion Hold
 					}),
 					
 
 					q( 10780, {	-- Sketh'lon Feathers
-						["groups"] = {
-						},
 						["qg"] = 22024,	-- Parshah
 						["sourceQuests"] = { 10778 },	-- The Rod of Lianthe
 					}),
 
 					
 					qh(10625, {	-- Spectrecles
-						["groups"] = {
-						},
 						["qg"] = 21772,	-- Chief Apothecary Hildagard
 						["sourceQuests"] = { 10624 },	-- A Haunted History
 					}),
 					
 					
 					qh(10768, {	-- Tabards of the Illidari
-						["groups"] = {
-						},
 						["qg"] = 21998,	-- Kor'kron Wind Rider
 						["sourceQuests"] = { 10765 },	-- When Worlds Collide
 					}),
@@ -362,16 +292,12 @@ _.Zones =
 					
 					
 					qh(10633, {	-- Teron Gorefiend - Lore and Legend
-						["groups"] = {
-						},
 						["qg"] = 21772,	-- Chief Apothecary Hildagard
 						["sourceQuests"] = { 10625 },	-- Spectrecles
 					}),
 					
 					
 					qh(10611, {	-- The Art of Fel Reaver Maintenance
-						["groups"] = {
-						},
 						["qg"] = 21789,	-- Nakansi
 						["sourceQuests"] = { 10767 },	-- Invasion Point: Cataclysm
 					}),
@@ -392,24 +318,18 @@ _.Zones =
 					
 					
 					q( 10540, {	-- The Cipher of Damnation - Ar'tor's Charge
-						["groups"] = {
-						},
 						["qg"] = 21318,	-- Spirit of Ar'tor
 						["sourceQuests"] = { 10537 },	-- Lohn'goron, Bow of the Torn-heart
 					}),
 					
 					
 					q( 10578, {	-- The Cipher of Damnation - Borak's Charge
-						["groups"] = {
-						},
 						["qg"] = 21293,	-- Borak, Son of Oronok
 						["sourceQuests"] = { 10577 },	-- What Illidan Wants, Illidan Gets...
 					}),
 					
 					
 					q( 10522, {	-- The Cipher of Damnation - Grom'tor's Charge
-						["groups"] = {
-						},
 						["qg"] = 21291,	-- Grom'tor, Son of Oronok
 						["sourceQuests"] = { 10521 },	-- Grom'tor, Son of Oronok
 					}),
@@ -454,86 +374,64 @@ _.Zones =
 					
 					
 					q( 10519, {	-- The Cipher of Damnation - Truth and History
-						["groups"] = {
-						},
 						["qg"] = 21183,	-- Oronok Torn-heart
 						["sourceQuests"] = { 10515 },	-- A Lesson Learned
 					}),
 					
 					
 					qh(10599, {	-- The Deathforge
-						["groups"] = {
-						},
 						["qg"] = 21359,	-- Blood Guard Gulmok
 						["sourceQuests"] = { 10598 },	-- Blast the Infernals!
 					}),
 					
 					
 					qh(10601, {	-- The Fate of Kagrosh
-						["groups"] = {
-						},
 						["qg"] = 21475,	-- Scout Zagran
 						["sourceQuests"] = { 10600 },	-- Minions of the Shadow Council
 					}),
 					
 					
 					qh(10613, {	-- The Fel and the Furious
-						["groups"] = {
-						},
 						["qg"] = 21789,	-- Nakansi
 						["sourceQuests"] = { 10611 },	-- The Art of Fel Reaver Maintenance
 					}),
 					
 					
 					qh(10681, {	-- The Hand of Gul'dan
-						["groups"] = {
-						},
 						["qg"] = 21938,	-- Earthmender Splinthoof
 						["isBreadcrumb"] = true,	-- for Enraged Spirits of Fire and Earth
 					}),
 					
 					
 					qh(10663, {	-- The Hermit Smith
-						["groups"] = {
-						},
 						["qg"] = 19333,	-- Grokom Deatheye
 						["sourceQuests"] = { 10627 },	-- Capture the Weapons
 					}),
 					
 					
 					qh(10750, {	-- The Path of Conquest
-						["groups"] = {
-						},
 						["qg"] = 21769,	-- Overlord Or'barokh
 					}),
 					
 				
 					q( 10778, {	-- The Rod of Lianthe
-						["groups"] = {
-						},
 						["qg"] = 22024,	-- Parshah
 						["sourceQuests"] = { 10777 },	-- Asghar's Totem
 					}),
 				
 				
 					q( 10576, {	-- The Shadowmoon Shuffle
-						["groups"] = {
-						},
 						["qg"] = 21293,	-- Borak, Son of Oronok
 						["sourceQuests"] = { 10570 },	-- To Catch a Thistlehead
 					}),
 				
 				
 					qh(10760, {	-- The Sketh'lon Wreckage
-						["groups"] = {
-						},
 						["qg"] = 22043,	-- Sergeant Kargrul
 					}),
 				
 				
 					qh(10602, {	-- The Summoning Chamber
-						["groups"] = {
-						},
 						["qg"] = 21475,	-- Scout Zagran
 						["sourceQuests"] = { 10600 },	-- Minions of the Shadow Council
 					}),
@@ -552,16 +450,12 @@ _.Zones =
 
 				
 					q( 10570, {	-- To Catch A Thistlehead
-						["groups"] = {
-						},
 						["qg"] = 21293,	-- Borak, Son of Oronok
 						["sourceQuests"] = { 10550 },	-- The Bundle of Bloodthistle
 					}),
 				
 				
 					qh(10596, {	-- To Legion Hold
-						["groups"] = {
-						},
 						["qg"] = 21359,	-- Blood Guard Gulmok
 						["sourceQuests"] = { 10595 },	-- Besieged!
 					}),
@@ -578,50 +472,22 @@ _.Zones =
 				
 				
 					q( 10577, {	-- What Illidan Wants, Illidan Gets...
-						["groups"] = {
-						},
 						["qg"] = 21293,	-- Borak, Son of Oronok
 						["sourceQuests"] = { 10576 },	-- The Shadowmoon Shuffle
 					}),
 				
 				
 					qh(10660, {	-- What Strange Creatures...
-						["groups"] = {
-						},
 						["qg"] = 21770,	-- Researcher Tiorus
 					}),
 				
 				
 					qh(10765, {	-- When Worlds Collide...
-						["groups"] = {
-						},
 						["qg"] = 21998,	-- Kor'kron Wind Rider
 						["sourceQuests"] = { 10751 },	-- Breaching the Path
 					}),
 				
-				
-				
---[[					["groups"] = {
-						},
-						["qg"] = ,	-- 
-						["sourceQuests"] = {  },	-- 
-					}),
-					
-						["groups"] = {
-						},
-						["qg"] = ,	-- 
-					}),
-					
-						["groups"] = {
-						},
-						["sourceQuests"] = {  },	-- 
-					}),
---]]
-				
-				
-				
-				
-				
+
 					q( 13429),	-- A Distraction for Akama
 					q( 10985),	-- A Distraction for Akama
 					qa(10642),	-- A Ghost in the Machine
@@ -706,8 +572,6 @@ _.Zones =
 					qa(10583),	-- The Fate of Flanis
 					qa(10612),	-- The Fel and the Furious
 					qa(10680, {	-- The Hand of Gul'dan
-						["groups"] = {
-						},
 						["qg"] = 21937,	-- Earthmender Sophurus
 						["isBreadcrumb"] = true,	-- for Enraged Spirits of Fire and Earth
 					}),
@@ -730,38 +594,18 @@ _.Zones =
 						i(31115),
 					}),
 					qa(11045),	-- Zorus the Judicator
-					
-					
-					
-					
---[[						["groups"] = {
-							},
-							["qg"] = ,	-- 
-							["sourceQuests"] = {  },	-- 
-						}),
---]]
-					
-					
-					
-					
-					
+
 					faction( 932, {	-- The Aldor
 						["groups"] = {
 							qr(q(10828, {	-- Single Mark of Sargeras
-								["groups"] = {
-								},
 								["qg"] = 22214,	-- Harbinger Saronen
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							})),
 							qr(q(10827, {	-- More Marks of Sargeras
-								["groups"] = {
-								},
 								["qg"] = 22214,	-- Harbinger Saronen
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							})),
 							q(10619, {	-- The Ashtongue Tribe
-								["groups"] = {
-								},
 								["qg"] = 21822,	-- Vindicator Aluumen
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
@@ -776,20 +620,14 @@ _.Zones =
 								["sourceQuests"] = { 10619 },	-- The Ashtongue Tribe
 							}),
 							q(10587, {	-- Karabor Training Grounds
-								["groups"] = {
-								},
 								["qg"] = 21860,	-- Exarch Onaala
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
 							q(10637, {	-- A Necessary Distraction
-								["groups"] = {
-								},
 								["qg"] = 21860,	-- Exarch Onaala
 								["sourceQuests"] = { 10587 },	-- Karabor Training Grounds
 							}),
 							q(10640, {	-- Altruis
-								["groups"] = {
-								},
 								["qg"] = 21860,	-- Exarch Onaala
 								["sourceQuests"] = { 10637 },	-- A Necessary Distraction
 							}),
@@ -806,50 +644,34 @@ _.Zones =
 								["sourceQuests"] = { 10650 },  	-- Return to the Aldor
 							}),
 							q(10568, {	-- Tablets of Baa'ri
-								["groups"] = {
-								},
 								["qg"] = 21402,	-- Anchorite Ceyla
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
 							q(10571, {	-- Oronu the Elder
-								["groups"] = {
-								},
 								["qg"] = 21402,	-- Anchorite Ceyla
 								["sourceQuests"] = { 10568 },	-- Tablets of Baa'ri
 							}),
 							q(10574, {	-- The Ashtongue Corruptors
-								["groups"] = {
-								},
 								["qg"] = 21402,	-- Anchorite Ceyla
 								["sourceQuests"] = { 10571 },	-- Oronu the Elder
 							}),
 							q(10575, {	-- The Warden's Cage
-								["groups"] = {
-								},
 								["qg"] = 21402,	-- Anchorite Ceyla
 								["sourceQuests"] = { 10574 },	-- The Ashtongue Corruptors
 							}),
 							q(10622, {	-- Proof of Allegiance
-								["groups"] = {
-								},
 								["qg"] = 21826,	-- Sanoru
 								["sourceQuests"] = { 10575 },	-- The Warden's Cage
 							}),
 							q(10628, {	-- Akama
-								["groups"] = {
-								},
 								["qg"] = 21826,	-- Sanoru
 								["sourceQuests"] = { 10622 },	-- Proof of Allegiance
 							}),
 							qdg(q(10705, {	-- Seer Udalo
-								["groups"] = {
-								},
 								["qg"] = 21700,	-- Akama
 								["sourceQuests"] = { 10628 },	-- Akama
 							})),
 							q(10707, {	-- The Ata'mal Terrace
-								["groups"] = {
-								},
 								["qg"] = 21770,	-- Akama
 								["sourceQuests"] = { 10706 },	-- A Mysterious Portent
 							}),
@@ -870,49 +692,33 @@ _.Zones =
 					}),
 					faction(1015, {	-- Netherwing
 						q( 10804, {	-- Kindness
-							["groups"] = {
-							},
 							["qg"] = 22113,	-- Mordenai
 						}),
 						q( 10811, {	-- Seek Out Neltharaku
-							["groups"] = {
-							},
 							["qg"] = 22113,	-- Mordenai
 							["sourceQuests"] = { 10804 },	-- Kindness
 						}),
 						q( 10814, {	-- Neltharaku's Tale
-							["groups"] = {
-							},
 							["qg"] = 21657,	-- Neltharaku
 							["sourceQuests"] = { 10811 },	-- Seek Out Neltharaku
 						}),
 						q( 10836, {	-- Infiltrating Dragonmaw Fortress
-							["groups"] = {
-							},
 							["qg"] = 21657,	-- Neltharaku
 							["sourceQuests"] = { 10814 },	-- Neltharaku's Tale
 						}),
 						q( 10837, {	-- To Netherwing Ledge!
-							["groups"] = {
-							},
 							["qg"] = 21657,	-- Neltharaku
 							["sourceQuests"] = { 10836 },	-- Infiltrating Dragonmaw Fortress
 						}),
 						q( 10854, {	-- The Force of Neltharaku
-							["groups"] = {
-							},
 							["qg"] = 21657,	-- Neltharaku
 							["sourceQuests"] = { 10837 },	-- To Netherwing Ledge!
 						}),
 						q( 10858, {	-- Karynaku
-							["groups"] = {
-							},
 							["qg"] = 21657,	-- Neltharaku
 							["sourceQuests"] = { 10854 },	-- The Force of Neltharaku
 						}),
 						q( 10866, {	-- Zuluhed the Whacked
-							["groups"] = {
-							},
 							["qg"] = 22112,	-- Karynaku
 							["sourceQuests"] = { 10858 },	-- Karynaku
 						}),
@@ -928,77 +734,53 @@ _.Zones =
 							["sourceQuests"] = { 10866 },	-- Zuluhed the Whacked
 						}),
 						q( 11012, {	-- Blood Oath of the Netherwing
-							["groups"] = {
-							},
 							["qg"] = 22113,	-- Mordenai
 							["sourceQuests"] = { 10870 },	-- Ally of the Netherwing
 						}),
 						q( 11013, {	-- In Service of the Illidari
-							["groups"] = {
-							},
 							["qg"] = 22113,	-- Mordenai
 							["sourceQuests"] = { 11012 },	-- Blood Oath of the Netherwing
 						}),
 						q( 11014, {	-- Enter the Taskmaster
-							["groups"] = {
-							},
 							["qg"] = 23139,	-- Overlord Mor'ghor
 							["sourceQuests"] = { 11013 },	-- In Service of the Illidari
 						}),
 						q( 11015, {	-- Netherwing Crystals
-							["groups"] = {
-							},
 							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
 						}),
 						q( 11018, {	-- Nethercite Ore
-							["groups"] = {
-							},
 							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
 							["requireSkill"] = 186,	-- Mining
 						}),
 						q( 11016, {	-- Nethermine Flayer Hide
-							["groups"] = {
-							},
 							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
 							["requireSkill"] = 393,	-- Skinning
 						}),
 						q( 11017, {	-- Netherdust Pollen
-							["groups"] = {
-							},
 							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
 							["requireSkill"] = 182,	-- Herbalism
 						}),
 						q( 11019, {	-- Your Friend On The Inside
-							["groups"] = {
-							},
 							["qg"] = 23141,	-- Yarzill the Merc
 							["sourceQuests"] = { 11013 },	-- In Service of the Illidari
 						}),
 						q( 11049, {	-- The Great Netherwing Egg Hunt
-							["groups"] = {
-							},
 							["qg"] = 23141,	-- Yarzill the Merc
 							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
 						}),
 						qr(q(11050, {	-- Accepting All Eggs
-							["groups"] = {
-							},
 							["qg"] = 23141,	-- Yarzill the Merc
 							["sourceQuests"] = { 11050 },	-- The Great Netherwing Egg Hunt
 						})),
 						q( 11020, {	-- A Slow Death
-							["groups"] = {
-							},
 							["qg"] = 23141,	-- Yarzill the Merc
 							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
 						}),
 						q( 11035, {	-- The Not-So-Friendly Skies...
-							["groups"] = {
-							},
 							["qg"] = 23141,	-- Yarzill the Merc
 							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
 						}),
@@ -1031,23 +813,15 @@ _.Zones =
 						q( 11089),	-- The Soul Cannon of Reth'hedron
 						q( 11086),	-- Disrupting the Twilight Portal
 						q( 11099, {	-- Kill Them All!
-							["groups"] = {
-							},
 							["description"] = "For players aligned with The Aldor.",
 						}),
 						q( 11094, {	-- Kill Them All!
-							["groups"] = {
-							},
 							["description"] = "For players aligned with The Scryers.",
 						}),
 						q( 11101, {	-- The Deadliest Trap Ever Laid
-							["groups"] = {
-							},
 							["description"] = "For players aligned with The Aldor.",
 						}),
 						q( 11097, {	-- The Deadliest Trap Ever Laid
-							["groups"] = {
-							},
 							["description"] = "For players aligned with The Scryers.",
 						}),
 					}),

@@ -47,8 +47,6 @@ _.Zones =
 				n(-17, {	-- Quests
 --[[
 					qg(3079, qh( 6361, {	-- A Bundle of Hides
-						["groups"] = {
-						},
 						["races"]= {6},
 					})),
 --]]					
@@ -63,14 +61,10 @@ _.Zones =
 --					qh(14436),	-- Dwarven Digging (LEGACY)
 --					qh(14439),	-- Journey into Thunder Bluff (LEGACY - removed per wowhead comments)
 					qg(37024, qh(24550, {	-- Journey into Thunder Bluff
-						["groups"] = {
-						},
 						["races"]= {6},
 					})),
 --					qg(23618, qh(11129)),	-- Kyle's Gone Missing!
 					desc(qh(32670),	"This quest is available Tauren upon reaching level 20.", {	-- Learn To Ride
-						["groups"] = {
-						},
 						["races"]= {6},
 					}),
 --					qh(14087),	-- Learn to Ride in Mulgore LEGACY, replaced with previous quest)
@@ -79,8 +73,6 @@ _.Zones =
 					qg(3685, qh( 7663)),	-- New Kodo - Green
 					qg(3685, qh( 7662)),	-- New Kodo - Teal
 					qg(2948, qh(20440, {	-- Poison Water
-						["groups"] = {
-						},
 						["races"]= {6},
 					})),
 --]]					
@@ -92,23 +84,15 @@ _.Zones =
 					})),
 --[[					
 					qg(40809, qh( 6362, {	-- Ride to Thunder Bluff
-						["groups"] = {
-						},
 						["races"]= {6},
 					})),
 					qg(2948, qh(24457, {	-- Rite of Vision
-						["groups"] = {
-						},
 						["races"]= {6},
 					})),
 					qg(3054, qh(20441, {	-- Rite of Vision
-						["groups"] = {
-						},
 						["races"]= {6},
 					})),
 					qg(3233, qh(  773, {	-- Rite of Wisdom
-						["groups"] = {
-						},
 						["races"]= {6},
 					})),
 					qg(36644, qh(14438)),	-- Sharing the Land
@@ -130,8 +114,6 @@ _.Zones =
 					}),
 --[[					
 					qg(3052, qh(  861, {	-- The Hunter's Way
-						["groups"] = {
-						},
 						["races"]= {6,8,10},
 					})),
 					qg(2988, qh(  749)),	-- The Ravaged Caravan
@@ -142,13 +124,9 @@ _.Zones =
 					qg(2988, qh(26179)),	-- The Venture Co.
 --					qh(  764),	-- The Venture Co. (LEGACY - replaced with previous quest)
 					qg(2948, qh(24456, {	-- Thunderhorn Cleansing
-						["groups"] = {
-						},
 						["races"]= {6},
 					})),
 					qg(2948, qh(24441, {	-- Thunderhorn Totem
-						["groups"] = {
-						},
 						["races"]= {6},
 					})),
 --]]					
@@ -164,13 +142,9 @@ _.Zones =
 					})),
 --[[					
 					qg(37024, qh(24523, {	-- Wildmane Totem
-						["groups"] = {
-						},
 						["races"]= {6},
 					})),
 					qg(2948, qh(24440, {	-- Winterhoof Cleansing
-						["groups"] = {
-						},
 						["races"]= {6},
 					})),
 --]]					
@@ -251,8 +225,6 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)						
 							un(40, qh(765,  {  -- Supervisor Fizsprocket
 								un(2, i(4974)),
@@ -287,8 +259,6 @@ _.Zones =
 							qg(36694, qh(14459)),	-- The Battleboars
 							qg(2981, qh(14449)),	-- The First Step
 							qg(63327, qh(31166, {	-- Tiger Palm
-								["groups"] = {
-								},
 								["classes"]= {10},
 							})),
 						}),

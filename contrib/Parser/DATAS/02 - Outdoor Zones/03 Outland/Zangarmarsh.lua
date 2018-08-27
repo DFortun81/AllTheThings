@@ -25,8 +25,6 @@ _.Zones =
 					p(387), 	-- Snake
 					p(515), 	-- Sporeling Sprout
 					q(31923, {	-- Ras'an
-						["groups"] = {
-						},
 						["qg"] = 66551,	-- Ras'an
 					}),
 				}),
@@ -166,20 +164,14 @@ _.Zones =
 						}),
 						crit(4, {	-- Don't Eat THOSE Mushrooms!
 							q(9701, {	-- Observing the Sporelings
-								["groups"] = {
-								},
 								["qg"] = 17831,	-- Watcher Leesa'oh
 								["sourceQuests"] = { 9697 },	-- Watcher Leesa'oh
 							}),
 							q(9702, {	-- A Question of Gluttony
-								["groups"] = {
-								},
 								["qg"] = 17831,	-- Watcher Leesa'oh
 								["sourceQuests"] = { 9701 },	-- Observing the Sporelings
 							}),
 							q(9708, {	-- Familiar Fungi
-								["groups"] = {
-								},
 								["qg"] = 17831,	-- Watcher Leesa'oh
 								["sourceQuests"] = { 9702 },	-- A Question of Gluttony
 							}),
@@ -196,20 +188,14 @@ _.Zones =
 						}),
 						crit(5, {	-- Draining the Marsh
 							q(9716, {	-- Disturbance at Umbrafen Lake
-								["groups"] = {
-								},
 								["qg"] = 17841,	-- Ysiel Windsinger
 								["sourceQuests"] = { 39181, 39180 },	-- Hero's Call: Zangarmarsh! & Warchief's Command: Zangarmarsh!
 							}),
 							q(9718, {	-- As the Crow Flies
-								["groups"] = {
-								},
 								["qg"] = 17841,	-- Ysiel Windsinger
 								["sourceQuests"] = { 9716 },	-- Disturbance at Umbrafen Lake
 							}),
 							q(9720, {	-- Balance Must Be Preserved
-								["groups"] = {
-								},
 								["qg"] = 17841,	-- Ysiel Windsinger
 								["description"] = "You don't have to complete this quest for this criteria, but you need to at least pick it up to loot the item that starts 'Drain Schematics.'",
 								["sourceQuests"] = { 9718 },	-- As the Crow Flies
@@ -227,8 +213,6 @@ _.Zones =
 								["sourceQuests"] = { 9720 },	-- Balance Must Be Preserved
 							},
 							q(9724, {	-- Warning the Cenarion Circle
-								["groups"] = {
-								},
 								["qg"] = 17841,	-- Ysiel Windsinger
 								["sourceQuests"] = { 9731 },	-- Drain Schematics
 							}),
@@ -244,8 +228,6 @@ _.Zones =
 						}),
 						crit(6, {	-- Saving the Sporeloks
 							 q(9747, {	-- The Umbrafen Tribe
-								["groups"] = {
-								},
 								["qg"] = 17956,	-- Ikeyen
 							}),
 							 q(9788, {	-- A Damp, Dark Place
@@ -269,8 +251,6 @@ _.Zones =
 								["sourceQuests"] = { 9747 },	-- The Umbrafen Tribe
 							}),
 							 q(9894, {	-- Safeguarding the Watchers (awarded "Saving the Sporeloks" criteria)
-								["groups"] = {
-								},
 								["qg"] = 18070,	-- Windcaller Blackhoof
 								["sourceQuests"] = { 9747 },	-- The Umbrafen Tribe
 							}),
@@ -283,22 +263,16 @@ _.Zones =
 								["qg"] = 17923,	-- Fahssn
 							}),
 							q(9919, {	-- Sporeggar (awarded "A Trip With the Sporelings" criteria)
-								["groups"] = {
-								},
 								["qg"] = 17923,	-- Fahssn
 								["description"] = "Invisible until you reach Neutral with Sporeggar.",
 								["sourceQuests"] = { 9743, 9739 },	-- Natural Enemies, The Sporelings' Plight + Neutral reputation
 							}),
 							q(9808, {	-- Glowcap Mushrooms
-								["groups"] = {
-								},
 								["qg"] = 17924,	-- Msshi'fn
 								["description"] = "Available from Neutral to Friendly with Sporeggar.",
 								["sourceQuests"] = { 9919 },	-- Sporeggar
 							}),
 							q(9806, {	-- Fertile Spores
-								["groups"] = {
-								},
 								["qg"] = 17925,	-- Gshaff
 								["description"] = "Invisible until you reach Neutral with Sporeggar.",
 								["sourceQuests"] = { 9919 },	-- Sporeggar
@@ -326,8 +300,6 @@ _.Zones =
 					}),
 					n(  -168, {	-- Other Quests
 						q(9728, {	-- A Warm Welcome
-							["groups"] = {
-							},
 							["qg"] = 17858,	-- Warden Hamoot
 							["sourceQuests"] = { 9778 },	-- Warden Hamoot
 						}),
@@ -336,8 +308,6 @@ _.Zones =
 							["sourceQuests"] = { 10116 },	-- WANTED: Chieftain Mummaki
 						}),
 						q(9785, {	-- Blessings of the Ancients
-							["groups"] = {
-							},
 							["qg"] = 18070,	-- Windcaller Blackhoof
 						}),
 						qa(10104, {	-- Concerns About Tuurem
@@ -377,8 +347,6 @@ _.Zones =
 							["questID"] = 9911,	-- The Count of the Marshes
 						},
 						q(9895, {	-- The Dying Balance
-							["groups"] = {
-							},
 							["qg"] = 17834,	-- Lethyn Moonfire
 						}),
 						qa(9793, {	-- The Fate of Tuurem
@@ -402,8 +370,6 @@ _.Zones =
 							["isBreadcrumb"] = true,	-- for "A Warm Welcome"
 						}),
 						q(9697, {	-- Watcher Leesa'oh
-							["groups"] = {
-							},
 							["qg"] = 17834,	-- Lethyn Moonfire
 							["isBreadcrumb"] = true,	-- for "Observing the Sporelings"
 						}),
@@ -432,16 +398,12 @@ _.Zones =
 							
 							
 						qh(9899, {	-- A Job Undone (awarded "Swamprat Post" criteria)
-							["groups"] = {
-							},
 							["qg"] = 18016,	-- Magasha
 							["sourceQuests"] = { 9773 },	-- No More Mushrooms!
 						}),
 						
 						
 						qh(9845, {	-- Angling to Beat the Competition
-							["groups"] = {
-							},
 							["qg"] = 18018,	-- Zurjaya
 						}),
 						
@@ -457,8 +419,6 @@ _.Zones =
 						
 						
 						qh(9814, {	-- Burstcap Mushrooms, Mon!
-							["groups"] = {
-							},
 							["qg"] = 18014,	-- Witch Doctor Tor'gash
 						}),
 						
@@ -575,15 +535,11 @@ _.Zones =
 						
 						
 						qh(9795, {	-- The Ogre Threat
-							["groups"] = {
-							},
 							["qg"] = 18013,	-- Shadow Hunter Denjai
 						}),
 						
 						
 						qh(9769, {	-- There's No Explanation for Fashion
-							["groups"] = {
-							},
 							["qg"] = 18016,	-- Magasha
 						}),
 						
@@ -601,8 +557,6 @@ _.Zones =
 						
 						
 						qh(9774, {	-- Thick Hydra Scales
-							["groups"] = {
-							},
 							["qg"] = 18011,	-- Zurai
 						}),
 					
@@ -625,13 +579,9 @@ _.Zones =
 
 -- DUNGEON QUESTS
 					qdg(q(29566, {	-- Checking Up
-						["groups"] = {
-						},
 						["qg"] = 17841,	-- Ysiel Windsinger
 					})),
 					qdg(q(29616, {	-- Storming the Steamvault
-						["groups"] = {
-						},
 						["qg"] = 17841,	-- Ysiel Windsinger
 					})),
 
@@ -639,23 +589,17 @@ _.Zones =
 					faction(942, {	-- Cenarion Expedition
 						["groups"] = {
 							qr(q(9784, {	-- Identify Plant Parts
-								["groups"] = {
-								},
 								["qg"] = 17909,	-- Lauranna Thar'well
 								["description"] = "Only available until you are Honored with Cenarion Expedition.",
 								["sourceQuests"] = { 9802 },	-- Plants of Zangarmarsh
 							})),
 							qr(q( 9802, {	-- Plants of Zangarmarsh
-								["groups"] = {
-								},
 								["qg"] = 17909,	-- Lauranna Thar'well
 								["description"] = "This quest is repeatable until you are Honored with Cenarion Expedition.",
 							})),
 							i(24402, {	-- Package of Identified Plants
 								i(24407, {	-- Uncatalogued Species
 									qr(q(9875, {	-- Uncatalogued Species
-										["groups"] = {
-										},
 										["description"] = "Only available until you are Honored with Cenarion Expedition.",
 										["sourceQuests"] = { 9784 },	-- Identify Plant Parts
 									})),
@@ -680,28 +624,20 @@ _.Zones =
 								["sourceQuests"] = { 9808 },	-- Glowcap Mushrooms
 							}),
 							qr(q(9742, {	-- More Spore Sacs
-								["groups"] = {
-								},
 								["qg"] = 17923,	-- Fahssn
 								["description"] = "Unavailable after you reach Friendly with Sporeggar.",
 								["sourceQuests"] = { 9739 },	-- The Sporelings' Plight
 							})),
 							qr(q(9744, {	-- More Tendrils!
-								["groups"] = {
-								},
 								["qg"] = 17923,	-- Fahssn
 								["description"] = "Unavailable after you reach Friendly with Sporeggar.",
 								["sourceQuests"] = { 9743 },	-- Natural Enemies
 							})),
 							qr(q(9807, {	-- More Fertile Spores
-								["groups"] = {
-								},
 								["qg"] = 17925,	-- Gshaff
 								["sourceQuests"] = { 9806 },	-- Fertile Spores
 							})),
 							qr(q(9727, {	-- Now That We're Still Friends...
-								["groups"] = {
-								},
 								["qg"] = 17856,	-- Gzhun'tt
 								["sourceQuests"] = { 9726 },	-- Now That We're Friends...
 							})),

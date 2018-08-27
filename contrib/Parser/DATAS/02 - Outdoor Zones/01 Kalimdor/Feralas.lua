@@ -240,8 +240,6 @@ _.Zones =
 					qg(39653, qa(25400)),	-- The Gordunni Threat
 --]]
 					qa(25486, {	-- The Grimtotem are Coming
-						["groups"] = {
-						},
 						["qg"] = 39946,	-- Caryssia Moonhunter
 						["sourceQuests"] = { 28503 },	-- Hero's Call: Thousand Needles!
 					}),

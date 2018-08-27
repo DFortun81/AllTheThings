@@ -106,8 +106,6 @@ _.Zones =
 					ach(4931, {	-- Felwood Quests
 						crit(1, {	-- Emerald Sanctuary
 							q( 27997, {	-- The Corruption of the Jadefire
-								["groups"] = {
-								},
 								["qg"] = 10923,	-- Tenell Leafrunner
 								["sourceQuests"] = { 28543 },	-- Hero's Call: Felwood!
 							}),
@@ -121,19 +119,13 @@ _.Zones =
 								["qg"] = 10921,	-- Taronn Redfeather
 							}),
 							q( 28100, {	-- A Talking Totem
-								["groups"] = {
-								},
 								["qg"] = 11554,	-- Grazle
 							}),
 							o(206585, {	-- Totem of Ruumbo
 								q(27989, {	-- Ruumbo Demands Honey
-									["groups"] = {
-									},
 									["sourceQuests"] = { 28100 },	-- A Talking Totem
 								}),
 								q(27994, {	-- Ruumbo Demands Justice
-									["groups"] = {
-									},
 									["sourceQuests"] = { 28100 },	-- A Talking Totem
 								}),
 								q(27995, {	-- Dance for Ruumbo!
@@ -149,15 +141,11 @@ _.Zones =
 						}),
 						crit(2, {	-- Ruins of Constellas
 							q( 28150, {	-- An Arcane Ally
-								["groups"] = {
-								},
 								["qg"] = 10923,	-- Tenell Leafrunner
 								["isBreadcrumb"] = true,	-- for Do the Imp-Possible
 								["sourceQuests"] = { 28148, 27995, 27997 },	-- Culling the Corrupted, Dance for Ruumbo!, and The Corruption of the Jadefire
 							}),
 							q( 28000, {	-- Do the Imp-Possible
-								["groups"] = {
-								},
 								["qg"] = 47341,	-- Arcanist Delaris
 								["sourceQuests"] = { 28150 },	-- An Arcane Ally
 							}),
@@ -172,8 +160,6 @@ _.Zones =
 								["sourceQuests"] = { 28000 },	-- Do the Imp-Possible
 							}),
 							q( 28044, {	-- Touch the Untouchable
-								["groups"] = {
-								},
 								["qg"] = 47366,	-- Impsy
 								["sourceQuests"] = { 28049 },	-- See the Invisible
 							}),
@@ -188,8 +174,6 @@ _.Zones =
 								["sourceQuests"] = { 28044 },	-- Touch the Untouchable
 							}),
 							q( 28102, {	-- Fight the Power
-								["groups"] = {
-								},
 								["qg"] = 9116,	-- Eridan Bluewind
 								["sourceQuests"] = { 28044 },	-- Touch the Untouchable
 							}),
@@ -206,26 +190,18 @@ _.Zones =
 						}),
 						crit(3, {	-- Wildheart Point
 							q( 28152, {	-- Jaedenar Awaits
-								["groups"] = {
-								},
 								["qg"] = 9116,	-- Eridan Bluewind
 								["isBreadcrumb"] = true,	-- for "Crying Violet"
 								["sourceQuests"] = { 28113 },	-- Break the Unbreakable
 							}),
 							q( 28116, {	-- Crying Violet
-								["groups"] = {
-								},
 								["qg"] = 10922,	-- Greta Mosshoof
 								["sourceQuests"] = { 28152 },	-- Jaedenar Awaits
 							}),
 							q( 28121, {	-- Forces of Jaedenar
-								["groups"] = {
-								},
 								["qg"] = 11019,	-- Jessir Moonbow
 							}),
 							q( 28119, {	-- Purity From Corruption
-								["groups"] = {
-								},
 								["qg"] = 51664,	-- Andalar Shadevale
 								["sourceQuests"] = { 28116, 28121 },	-- Crying Violet & Forces of Jaedenar
 							}),
@@ -240,19 +216,13 @@ _.Zones =
 								["sourceQuests"] = { 28119 },	-- Purity From Corruption
 							}),
 							q( 28129, {	-- The Demon Prince
-								["groups"] = {
-								},
 								["qg"] = 51664,	-- Andalar Shadevale
 								["sourceQuests"] = { 28119 },	-- Purity from Corruption
 							}),
 							q( 28131, {	-- Twin Temptresses
-								["groups"] = {
-								},
 								["sourceQuests"] = { 28129 },	-- The Demon Prince
 							}),
 							q( 28153, {	-- Shadow Lord Fel'dan
-								["groups"] = {
-								},
 								["sourceQuests"] = { 28131 },	-- Twin Temptresses
 							}),
 							q( 28155, {	-- Lord Banehollow (awarded "Lord Banehollow" criteria)
@@ -275,26 +245,18 @@ _.Zones =
 						}),
 						crit(4, {	-- Bloodvenom Post
 							q( 28305, {	-- The Fate of Bloodvenom Post
-								["groups"] = {
-								},
 								["qg"] = 47617,	-- Farlus Wildheart
 								["isBreadcrumb"] = true,	-- for "A Slimy Situation"
 								["sourceQuests"] = { 28126, 28155, 28128 },	-- Dousing the Flames of Protection, Lord Banehollow, & The Inner Circle
 							}),
 							q( 28190, {	-- The Tainted Ooze
-								["groups"] = {
-								},
 								["qg"] = 47692,	-- Altsoba Ragetotem
 							}),
 							q( 28207, {	-- A Slimy Situation
-								["groups"] = {
-								},
 								["qg"] = 47696,	-- Kelnir Leafsong
 								["sourceQuests"] = { 28305 },	-- The Fate of Bloodvenom Post
 							}),
 							q( 28208, {	-- Winna's Kitten
-								["groups"] = {
-								},
 								["qg"] = 47696,	-- Kelnir Leafsong
 								["sourceQuests"] = { 28207, 28190 },	-- A Slimy Situation & The Tainted Ooze
 							}),
@@ -309,29 +271,21 @@ _.Zones =
 								["sourceQuests"] = { 28208 },	-- Winna's Kitten
 							}),
 							q( 28214, {	-- Cleanup at Bloodvenom Post (awarded "Bloodvenom Post" criteria)
-								["groups"] = {
-								},
 								["qg"] = 47692,	-- Altsoba Ragetotem
 								["sourceQuests"] = { 28208 },	-- Winna's Kitten
 							}),
 						}),
 						crit(5, {	-- Whisperwind Grove
 							q( 28306, {	-- Whisperwind Grove
-								["groups"] = {
-								},
 								["qg"] = 47696,	-- Kelnir Leafsong
 								["isBreadcrumb"] = true,	-- for "Running Their Course"
 								["sourceQuests"] = { 28214, 28213 },	-- Cleanup at Bloodvenom Post & Hazzard Disposal
 							}),
 							q( 28360, {	-- Running Their Course
-								["groups"] = {
-								},
 								["qg"] = 48459,	-- Tender Puregrove
 								["sourceQuests"] = { 28306 },	-- Whisperwind Grove
 							}),
 							q( 28361, {	-- Squirrely Clean
-								["groups"] = {
-								},
 								["qg"] = 48459,	-- Tender Puregrove
 							}),
 							q( 28374, {	-- Weeding the Lawn
@@ -345,18 +299,12 @@ _.Zones =
 								["sourceQuests"] = { 28360, 28361 },	-- Running Their Course & Squirrely Clean
 							}),
 							q( 28341, {	-- Collecting Corruption
-								["groups"] = {
-								},
 								["qg"] = 48339,	-- Elessa Starbreeze
 							}),
 							q( 28342, {	-- Fel To Pieces
-								["groups"] = {
-								},
 								["qg"] = 48339,	-- Elessa Starbreeze
 							}),
 							q( 28358, {	-- Hunting the Damned
-								["groups"] = {
-								},
 								["qg"] = 48349,	-- Hurak Wildhorn
 							}),
 							q( 28359, {	-- The Core of Kroshius
@@ -371,36 +319,24 @@ _.Zones =
 						}),
 						crit(6, {	-- Rejoining the Forest
 							q( 28229, {	-- Nature and Nurture
-								["groups"] = {
-								},
 								["qg"] = 48126,	-- Isural Forestsworn
 								["sourceQuests"] = { 28374 },	-- Weeding the Lawn
 							}),
 							q( 28220, {	-- Seeking Soil
-								["groups"] = {
-								},
 								["sourceQuests"] = { 28229 },	-- Nature and Nurture
 							}),
 							q( 28219, {	-- Buzzers for Baby
-								["groups"] = {
-								},
 								["qg"] = 48032,	-- Seedling Protector
 								["sourceQuests"] = { 28229 },	-- Nature and Nurture
 							}),
 							q( 28222, {	-- Singin' in the Sun
-								["groups"] = {
-								},
 								["sourceQuests"] = { 28219, 28220 },	-- Buzzers for Baby & Seeking Soil
 							}),
 							q( 28221, {	-- These Roots Were Made For Stompin'
-								["groups"] = {
-								},
 								["qg"] = 48042,	-- Sapling Protector
 								["sourceQuests"] = { 28219, 28220 },	-- Buzzers for Baby & Seeking Soil
 							}),
 							q( 28224, {	-- The Last Protector
-								["groups"] = {
-								},
 								["qg"] = 48044,	-- Flourishing Protector
 								["sourceQuests"] = { 28222, 28221 },	-- Singin' in the Sun & These Roots Were Made For Stompin'
 							}),
@@ -416,20 +352,14 @@ _.Zones =
 						}),
 						crit(7, {	-- A Destiny of Flame and Sorrow
 							q( 28217, {	-- Wanted: The Demon Hunter
-								["groups"] = {
-								},
 								["qg"] = 47843,	-- Huntress Selura
 								["sourceQuests"] = { 28374 },	-- Weeding the Lawn
 							}),
 							q( 28218, {	-- A Destiny of Flame and Sorrow
-								["groups"] = {
-								},
 								["qg"] = 47923,	-- Feronas Sindweller
 								["sourceQuests"] = { 28217 },	-- Wanted: The Demon Hunter
 							}),
 							q( 28256, {	-- The Skull of Gul'dan
-								["groups"] = {
-								},
 								["qg"] = 47923,	-- Feronas Sindweller
 								["sourceQuests"] = { 28218 },	-- A Destiny of Flame and Shadow
 							}),
@@ -443,8 +373,6 @@ _.Zones =
 								["sourceQuests"] = { 28256 },	-- The Skull of Gul'dan
 							}),
 							q( 28261, {	-- Deceivers In Our Midst
-								["groups"] = {
-								},
 								["qg"] = 47923,	-- Feronas Sindweller
 								["sourceQuests"] = { 28257 },	-- The Fall of Tichondrius
 							}),
@@ -459,8 +387,6 @@ _.Zones =
 						}),
 						crit(8, {	-- War in the Forest
 							qa(28381, {	-- The Denmother
-								["groups"] = {
-								},
 								["qg"] = 48491,	-- James Hallow
 								["isBreadcrumb"] = true,	-- for "Enemy at Our Roots"
 								["sourceQuests"] = { 28264 },	-- Navarax's Gambit
@@ -476,25 +402,17 @@ _.Zones =
 								["sourceQuests"] = { 28381 },	-- The Denmother
 							}),
 							qa(28383, {	-- Wisps of the Woods
-								["groups"] = {
-								},
 								["qg"] = 48492,	-- Lyros Swiftwind
 							}),
 							qa(28384, {	-- Into the Clearing
-								["groups"] = {
-								},
 								["qg"] = 47931,	-- Denmother Ulrica
 								["sourceQuests"] = { 28382, 28383 },	-- Enemy at our Roots & Wisps of the Woods
 							}),
 							qa(28337, {	-- The Shredders of Irontree
-								["groups"] = {
-								},
 								["qg"] = 48493,	-- Alton Redding
 								["sourceQuests"] = { 28384 },	-- Into the Clearing
 							}),
 							qa(28385, {	-- Oil and Irony
-								["groups"] = {
-								},
 								["qg"] = 48493,	-- Alton Redding
 								["sourceQuests"] = { 28337 },	-- The Shredders of Irontree
 							}),
@@ -509,14 +427,10 @@ _.Zones =
 								["sourceQuests"] = { 28337 },	-- The Shredders of Irontree
 							}),
 							qa(28387, {	-- Burnout
-								["groups"] = {
-								},
 								["qg"] = 48493,	-- Alton Redding
 								["sourceQuests"] = { 28386, 28385 },	-- Borrowed Bombs & Oil and Irony
 							}),
 							qa(28388, {	-- Bloody Wages
-								["groups"] = {
-								},
 								["qg"] = 48493,	-- Alton Redding
 								["sourceQuests"] = { 28386, 28385 },	-- Borrowed Bombs & Oil and Irony
 							}),
@@ -570,8 +484,6 @@ _.Zones =
 					}),			
 					n(-168, { -- Other Quests
 						q( 28479, {	-- The Ruins of Kel'theril -- bcrumb?  unsure
-								["groups"] = {
-								},
 								["qg"] = 10920,	-- Kelek Skykeeper
 							}),
 							q( 28768, {	-- Winterspring!
@@ -594,8 +506,6 @@ _.Zones =
 
 							-- UNSORTED HORDE QUESTS
 							qh(28340, {	-- A Bomb Deal
-								["groups"] = {
-								},
 								["qg"] = 48333, -- Foreman Pikwik
 								["sourceQuests"] = { 28380 }, -- Pikwik in Peril
 							}),

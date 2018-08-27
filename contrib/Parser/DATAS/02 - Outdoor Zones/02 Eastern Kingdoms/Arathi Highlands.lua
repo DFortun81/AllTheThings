@@ -58,18 +58,12 @@ _.Zones =
 					}),
 					o(  2702, {	-- Stone of Inner Binding
 						q( 26042, {	-- Breaking the Keystone
-							["groups"] = {
-							},
 							["sourceQuests"] = { 26041 },	-- Stones of Binding
 						}),
 						qa(26346, {	-- Myzrael's Tale
-							["groups"] = {
-							},
 							["sourceQuests"] = { 26042 },	-- Breaking the Keystone
 						}),
 						qh(26911, {	-- Myzrael's Tale
-							["groups"] = {
-							},
 							["sourceQuests"] = { 26042 },	-- Breaking the Keystone
 						}),
 					}),
@@ -86,13 +80,9 @@ _.Zones =
 						["sourceQuests"] = { 26053 },	-- Clearing the Highlands
 					}),
 					qh(26053, {	-- Clearing the Highlands
-						["groups"] = {
-						},
 						["qg"] = 41966,	-- Deathstalker Maudria
 					}),
 					qh(26429, {	-- Crush the Witherbark
-						["groups"] = {
-						},
 						["qg"] = 2771,	-- Drum Fel
 					}),
 					q( 26628, {	-- Death From Below (awarded "Faldir's Cover" criteria)
@@ -118,8 +108,6 @@ _.Zones =
 						["sourceQuests"] = { 26083 },	-- Hello Lolo
 					}),
 					qh(26022, {	-- First Blood
-						["groups"] = {
-						},
 						["qg"] = 41949,	-- Dark Ranger Alina
 						["sourceQuests"] = { 28619 },	-- Warchief's Command: Arathi Highlands!
 					}),
@@ -134,8 +122,6 @@ _.Zones =
 						["sourceQuests"] = { 26116 },	-- Kinelory Strikes
 					}),
 					q( 26050, {	-- Goggle Boggle
-						["groups"] = {
-						},
 						["qg"] = 2768,	-- Professor Phizzlethorpe
 						["sourceQuests"] = { 26083 },	-- Hello Lolo
 					}),
@@ -151,90 +137,60 @@ _.Zones =
 						["sourceQuests"] = { 26107 },	-- Raising Spirits
 					}),
 					qh(26084, {	-- Hammerfall
-						["groups"] = {
-						},
 						["qg"] = 41949,	-- Dark Ranger Alina
 						["sourceQuests"] = { 26081 },	-- Alina's Reward
 					}),
 					qh(26083, {	-- Hello Lolo
-						["groups"] = {
-						},
 						["qg"] = 42088,	-- Goutgut
 						["sourceQuests"] = { 26081 },	-- Alina's Reward
 					}),
 					qa(26110, {	-- Just Like Old Times
-						["groups"] = {
-						},
 						["qg"] = 2712,	-- Quae
 						["sourceQuests"] = { 26113 },	-- Quae and Kinelory
 					}),
 					qa(26116, {	-- Kinelory Strikes
-						["groups"] = {
-						},
 						["qg"] = 2713,	-- Kinelory
 						["sourceQuests"] = { 26114 },	-- Quae Trusts You
 					}),
 					qa(26093, {	-- Northfold Manor
-						["groups"] = {
-						},
 						["qg"] = 2700,	-- Captain Nials
 						["sourceQuests"] = { 28573 },	-- Hero's Call: Arathi Highlands!
 					}),
 					qa(26113, {	-- Quae and Kinelory
-						["groups"] = {
-						},
 						["qg"] = 2608,	-- Commander Amaren
 					}),
 					qa(26114, {	-- Quae Trusts You
-						["groups"] = {
-						},
 						["qg"] = 2712,	-- Quae
 						["sourceQuests"] = { 26110 },	-- Just Like Old Times
 					}),
 					qh(26107, {	-- Raising Spirits
-						["groups"] = {
-						},
 						["qg"] = 42130,	-- Gor'mul
 					}),
 					qh(26430, {	-- Revantusk Village
-						["groups"] = {
-						},
 						["qg"] = 2771,	-- Drum Fel
 						["isBreadcrumb"] = true,	-- bcrumb for The Hinterlands (not sure if mutually exclusive with Warchief's Command quest)
 					}),
 					qa(26336, {	-- Shakes O'Breen
-						["groups"] = {
-						},
 						["qg"] = 2789,	-- Skuerto
 					}),
 					qh(26032, {	-- Sigil of Arathor
-						["groups"] = {
-						},
 						["qg"] = 41944,	-- Galen Trollbane
 						["sourceQuests"] = { 26031 },	-- Sigil of Thoradin
 					}),
 					qh(26030, {	-- Sigil of Strom
-						["groups"] = {
-						},
 						["qg"] = 41944,	-- Galen Trollbane
 						["sourceQuests"] = { 26023 },	-- The Forsaken Trollbane
 					}),
 					qh(26031, {	-- Sigil of Thoradin
-						["groups"] = {
-						},
 						["qg"] = 41944,	-- Galen Trollbane
 						["sourceQuests"] = { 26030 },	-- Sigil of Strom
 					}),
 					q( 26052, {	-- Speak to Shakes
-						["groups"] = {
-						},
 						["qg"] = 2774,	-- Doctor Draxlegauge
 						["sourceQuests"] = { 26051 },	-- Sunken Treasure
 					}),
 					o(  2701, {	-- Iridescent Shards
 						q(26041, {	-- Stones of Binding
-							["groups"] = {
-							},
 							["sourceQuests"] = { 26039 },	-- The Princess Trapped
 						}),
 					}),
@@ -261,15 +217,11 @@ _.Zones =
 						["sourceQuests"] = { 26050 },	-- Goggle Boggle
 					}),
 					qh(26023, {	-- The Forsaken Trollbane
-						["groups"] = {
-						},
 						["qg"] = 41949,	-- Dark Ranger Alina
 						["sourceQuests"] = { 26022 },	-- First Blood
 					}),
 					o(138492, {	-- Shards of Myzrael
 						q(26039, {	-- The Princess Trapped
-							["groups"] = {
-							},
 							["sourceQuests"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
 						}),
 					}),
@@ -307,13 +259,9 @@ _.Zones =
 						["sourceQuests"] = { 26027 },	-- Call to Arms
 					}),
 					qa(26341, {	-- The Stone Shards
-						["groups"] = {
-						},
 						["qg"] = 2789,	-- Skuerto
 					}),
 					qh(26909, {	-- The Stone Shards
-						["groups"] = {
-						},
 						["qg"] = 2787,	-- Zaruk
 						["isBreadcrumb"] = true,	-- for "The Princess Trapped"
 					}),
@@ -339,14 +287,10 @@ _.Zones =
 						["qg"] = 4486,	-- Genavie Callow
 					}),
 					qa(26037, {	-- Trelane's Defenses
-						["groups"] = {
-						},
 						["qg"] = 2789,	-- Skuerto
 						["sourceQuests"] = { 26036 },	-- Wand Over Fist
 					}),
 					qh( 6622, {	-- Triage
-						["groups"] = {
-						},
 						["qg"] = 12920,	--	Doctor Gregory Victor
 						["description"] = "This quest requires a skill of 225 in First Aid.",
 						["requireSkill"] = 356,	-- First Aid
@@ -354,14 +298,10 @@ _.Zones =
 						["u"] = 2,
 					}),
 					qh(26033, {	-- Trol'kalar
-						["groups"] = {
-						},
 						["qg"] = 41944,	-- Galen Trollbane
 						["sourceQuests"] = { 26032 },	-- Sigil of Arathor
 					}),
 					qa(26036, {	-- Wand over Fist
-						["groups"] = {
-						},
 						["qg"] = 2789,	-- Skuerto
 						["sourceQuests"] = { 26035 },	-- Worth Its Weight in Gold
 					}),
@@ -383,75 +323,51 @@ _.Zones =
 						}),
 					}),
 					qa(26035, {	-- Worth Its Weight in Gold
-						["groups"] = {
-						},
 						["qg"] = 2789,	-- Skuerto
 					}),
 					
 -- DUNGEON QUESTS
 					qdg(qa(26943, {	-- Home Sweet Gnome (mutually exclusive with 26944 "Exploring Gnomeregan")
-						["groups"] = {
-						},
 						["qg"] = 2789,	-- Skuerto
 					})),
 
 -- PVP QUESTS
 					qpvp(qa(8262, {	-- Arathor Advanced Care Package
-						["groups"] = {
-						},
 						["qg"] = 15127,	-- Samuel Hawke
 						["description"] = "To get this quest, you must be Friendly with The League of Arathor.",
 					})),
 					qpvp(qa(8260, {	-- Arathor Basic Care Package
-						["groups"] = {
-						},
 						["qg"] = 15127,	-- Samuel Hawke
 --						["description"] = "To get this quest, you must be ??? with The League of Arathor.",
 					})),
 					qpvp(qa(8261, {	-- Arathor Standard Care Package
-						["groups"] = {
-						},
 						["qg"] = 15127,	-- Samuel Hawke
 --						["description"] = "To get this quest, you must be ??? with The League of Arathor.",
 					})),
 					qpvp(qh(8265, {	-- Defiler's Advanced Care Package
-						["groups"] = {
-						},
 						["qg"] = 15126,	-- Rutherford Twing
 						["description"] = "To get this quest, you must be Friendly with The Defilers.",
 					})),
 					qpvp(qh(8263, {	-- Defiler's Basic Care Package
-						["groups"] = {
-						},
 						["qg"] = 15126,	-- Rutherford Twing
 --						["description"] = "To get this quest, you must be ??? with The Defilers.",
 					})),
 					qpvp(qh(8264, {	-- Defiler's Standard Care Package
-						["groups"] = {
-						},
 						["qg"] = 15126,	-- Rutherford Twing
 --						["description"] = "To get this quest, you must be ??? with The Defilers.",
 					})),
 					
 -- CLASS HALL QUESTS
 					qg(107806, q(42535, {	-- Death... and Decay
-						["groups"] = {
-						},
 						["classes"] = { 6 },	-- Death Knight
 					})),
 					qg(107806, q(42534, {	-- Our Oldest Enemies
-						["groups"] = {
-						},
 						["classes"] = { 6 },	-- Death Knight
 					})),
 					qg(108042, q(42536, {	-- Regicide
-						["groups"] = {
-						},
 						["classes"] = { 6 },	-- Death Knight
 					})),
 					qg(108042, q(42537, {	-- The King Rises
-						["groups"] = {
-						},
 						["classes"] = { 6 },	-- Death Knight
 					})),	
 					

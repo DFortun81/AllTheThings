@@ -79,8 +79,6 @@ _.Zones =
 --[[					
 					qg(41804, qa(25979)),	-- Dealing with the Surge
 					qg(46274, qa(27635, {	-- Decontamination
-						["groups"] = {
-						},
 						["races"] = {7},
 					})),
 --					q(43291),	-- Defend (REMOVED, pre-Legion invasions)
@@ -109,8 +107,6 @@ _.Zones =
 					qg(41578, qa(25933)),	-- Help for the Quarry
 					qg(40950, qa(25838)),	-- Help from Steelgrill's Depot
 					qg(1699, qa( 6387, {	-- Honor Students
-						["groups"] = {
-						},
 						["races"] = {3,7}, -- Dwarf, Gnome
 					})),
 					qg(15011, qa( 8149)),	-- Honoring a Hero
@@ -119,13 +115,9 @@ _.Zones =
 --					q(42803),	-- Invasion: Dun Morogh (REMOVED, pre-Legion invasions)
 					qg(41578, qa(25932)),	-- It's Raid Night Every Night
 					desc(qa(32663), "This quest is available to Gnomes upon reaching level 20.", {	-- Learn To Ride
-						["groups"] = {
-						},
 						["races"] = {7},
 					}),
 					desc(qa(32662), "This quest is available to Dwarves upon reaching level 20.", {	-- Learn To Ride
-						["groups"] = {
-						},
 						["races"] = {3},
 					}),
 --					qa(14084),	-- Learn to Ride in Dun Morogh (REMOVED)
@@ -135,8 +127,6 @@ _.Zones =
 					qg(1269, qa(  412)),	-- Operation Recombobulation
 					qg(40951, qa(25668)),	-- Pilfered Supplies
 					qg(45966, q(27670, {	-- Pinned Down
-						["groups"] = {
-						},
 						["races"] = {7,9}, -- Gnome, Goblin
 					})),
 --					q(25295),	-- Press Fire (REMOVED)
@@ -154,8 +144,6 @@ _.Zones =
 					qg(1261, qa(25905)),	-- Rams on the Lam
 --					q(43292),	-- Repel (REMOVED, pre-Legion invasions)
 					qg(45966, q(28167, {	-- Report to Carvo Blastbolt
-						["groups"] = {
-						},
 						["races"] = {7,9}, -- Gnome, Goblin
 					})),
 					qg(1374, qa(  320)),	-- Return to Bellowfiz
@@ -163,36 +151,24 @@ _.Zones =
 						qa(  311),	-- Return to Marleth
 					}),
 					qg(43701, qa( 6391, {	-- Ride to Ironforge
-						["groups"] = {
-						},
 						["races"] = {3,7}, -- Dwarf, Gnome
 					})),
 					qg(47250, q(27671, {	-- See to the Survivors
-						["groups"] = {
-						},
 						["races"] = {7,9}, -- Gnome, Goblin
 					})),
 					qg(1378, qa(  317, {	-- Stocking Jetsteam
-						["groups"] = {
-						},
 						["races"] = {3,7}, -- Dwarf, Gnome
 					})),
 					qg(41298, qa(25841)),	-- Strike From Above
 					qg(41853, qa(26094)),	-- Striking Back
 					qg(34481, qa(14168, {	-- The Grateful Dead
-						["groups"] = {
-						},
 						["races"] = {7}, -- Gnome
 					})),
 					qg(34478, qa(14167, {	-- The Grateful Dead
-						["groups"] = {
-						},
 						["races"] = {3}, -- Dwarf
 					})),
 					qg(1374, qa(  315)),	-- The Perfect Stout
 					qg(926, qa(24528, {	-- The Power of the Light
-						["groups"] = {
-						},
 						["classes"] = {2}, -- Paladin
 						["races"] = {3}, -- Dwarf
 					})),
@@ -210,15 +186,11 @@ _.Zones =
 					qg(50601, qa(28868)),	-- The View from Down Here
 					qg(1254, q(432)),	-- Those Blasted Troggs!
 					qg(46255, qa(27674, {	-- To the Surface
-						["groups"] = {
-						},
 						["races"] = {7}, -- Gnome
 					})),
 					qg(1872, qa(  400)),	-- Tools for Steelgrill
 					qg(1977, qa(25986)),	-- Trouble at the Lake
 					qg(47250, qa(28169, {	-- Withdraw to the Loading Room!
-						["groups"] = {
-						},
 						["races"] = {7}, -- Gnome
 					})),
 --]]
@@ -317,27 +289,19 @@ _.Zones =
 							qg(786, qa(24490)),	-- A Trip to Ironforge
 							qg(37087, qa(24475)),	-- All the Other Stuff
 							qg(37087, qa(24496, {	-- Arcane Rune
-								["groups"] = {
-								},
 								["races"] = {3}, -- Dwarf
 								["classes"] = {8},
 							})),
 							qg(37087, qa(24493)),	-- Don't Forget About Us
 							qg(1104, qa(24477)),	-- Dwarven Artifacts
 							qg(37087, qa(31150, {	-- Elegant Rune
-								["groups"] = {
-								},
 								["classes"] = {10}, -- Monk
 							})),
 							qg(37087, qa( 3109, {	-- Encrypted Rune
-								["groups"] = {
-								},
 								["races"] = {3,7}, -- Dwarf, Gnome
 								["classes"] = {4}, -- Rogue
 							})),
 							qg(916, qa(24532, {	-- Evisceratin' the Enemy
-								["groups"] = {
-								},
 								["races"] = {3}, -- Dwarf
 								["classes"] = {4}, -- Rogue
 							})),
@@ -347,8 +311,6 @@ _.Zones =
 							qg(37081, qa(24469)),	-- Hold the Line!
 							qg(786, qa(  218)),	-- Ice and Fire
 							qg(63285, qa(31151, {	-- Kick, Punch, It's All in the Mind
-								["groups"] = {
-								},
 								["classes"] = {10},	-- Monk
 							})),
 							qg(37081, qa(24473)),	-- Lockdown in Anvilmar
@@ -358,8 +320,6 @@ _.Zones =
 							qg(1354, qa(24489)),	-- Trolling for Information
 							qg(37087, qa(24487)),	-- Whitebeard Needs Ye
 							qg(837, qa(24533, {	-- Words of Power
-								["groups"] = {
-								},
 								["races"] = {3}, -- Dwarf
 								["classes"] = {5}, -- Priest
 							})),
@@ -388,130 +348,82 @@ _.Zones =
 							["groups"] = {
 --[[							
 								qg(42553, q(26205, {	-- A Job for the Multi-Bot
-									["groups"] = {
-									},
 									["races"] = {7},
 								})),
 								qg(42317, q(26566, {	-- A Triumph of Gnomish Ingenuity
-									["groups"] = {
-									},
 									["races"] = {7},
 								})),
 								qg(42317, q(26331, {	-- Crushcog's Minions
-									["groups"] = {
-									},
 									["races"] = {7,9},
 								})),
 								qg(42630, q(26265, {	-- Dealing with the Fallout
-									["groups"] = {
-									},
 									["races"] = {7,9},
 								})),
 								qg(42353, qa(26364, {	-- Down with Crushcog!
-									["groups"] = {
-									},
 									["races"] = {7},
 								})),
 								qg(42708, qa(26318, {	-- Finishin' the Job
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 								})),
 								qg(42708, qa(26285, {	-- Get Me Explosives Back!
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 								})),
 								qg(42366, qa(26423, {	-- Meet the High Tinker
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 									["classes"] = {4}, -- Rogue
 								})),
 								qg(63238, qa(31137, {	-- Meet the High Tinker
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 									["classes"] = {10}, -- Monk
 								})),
 								qg(42323, qa(26422, {	-- Meet the High Tinker
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 									["classes"] = {5}, -- Priest
 								})),
 								qg(42331, qa(26421, {	-- Meet the High Tinker
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 									["classes"] = {8}, -- Mage
 								})),
 								qg(42324, qa(26425, {	-- Meet the High Tinker
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 									["classes"] = {1}, -- Warrior
 								})),
-								qg(460, qa(26424, {	-- Meet the High Tinker	
-									["groups"] = {
-									},
+								qg(460, qa(26424, {	-- Meet the High Tinker
 									["races"] = {7}, -- Gnome
 									["classes"] = {9}, -- Warlock
 								})),
 								qg(103614, q(41218, {	-- Meet the High Tinker
-									["groups"] = {
-									},
 									["races"] = {7,9}, -- Gnome, Goblin
 									["classes"] = {3}, -- Hunter
 								})),
 								qg(42708, qa(26284, {	-- Missing in Action
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 								})),
 								qg(42491, qa(26333, {	-- No Tanks!
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 								})),
 								qg(42353, qa(26373, {	-- On to Kharanos
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 								})),
 								qg(42708, qa(26329, {	-- One More Thing
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 								})),
 								qg(42353, qa(26342, {	-- Paint it Black
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 								})),
 								qg(42553, q(26222, {	-- Scrounging for Parts
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 								})),
 								qg(42366, qa(26339, {	-- Staging in Brewnall
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 								})),
 								qg(63238, qa(31138, {	-- The Arts of a Monk
-									["groups"] = {
-									},
 									["classes"] = {10}, -- Monk
 								})),
 								qg(42366, qa(26207, {	-- The Arts of a Rogue
-									["groups"] = {
-									},
 									["classes"] = {4}, -- Rogue
 								})),
 								qg(42317, q(26208, {	-- The Fight Continues
-									["groups"] = {
-									},
 									["races"] = {7,9}, -- Gnome, Goblin
 								})),
 --]]
@@ -547,8 +459,6 @@ _.Zones =
 									["classes"] = {4}, -- Rogue
 								})),
 								qg(42396, qa(31135, {	-- The Future of Gnomeregan
-									["groups"] = {
-									},
 									["classes"] = {10}, -- Monk
 								})),
 								qg(42396, q(41217, { -- The Future of Gnomeregan
@@ -560,13 +470,9 @@ _.Zones =
 --[[								
 								qg(124280, qa(47709)),	-- The Great Gnomeregan Race
 								qg(42489, qa(26316, {	-- What's Keeping Jessup?
-									["groups"] = {
-									},
 									["races"] = {7}, -- Gnome
 								})),
 								qg(42611, q(26264, {	-- What's Left Behind
-									["groups"] = {
-									},
 									["races"] = {7,9}, -- Gnome, Goblin
 								})),
 --]]								

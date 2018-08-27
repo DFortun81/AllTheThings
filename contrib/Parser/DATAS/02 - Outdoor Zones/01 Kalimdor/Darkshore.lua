@@ -605,16 +605,12 @@ _.Zones =
 						-- Need Header for "Cliffspring Hollow"
 							i(44927, {	-- Corruptor's Master Key
 								q(13557, {	-- Bearer of Good Fortune
-									["groups"] = {
-									},
 									["qgs"] = { 33022, 33020 },	-- Vile Corruptor & Zenn Foulhoof
 								}),
 							}),
 							o(194714, {	-- Disgusting Workbench
 								["groups"] = {
 									q(13831, {	-- A Troubling Prescription
-										["groups"] = {
-										},
 										["sourceQuests"] = { 13528 },	-- Buzzbox 723
 									}),
 								},

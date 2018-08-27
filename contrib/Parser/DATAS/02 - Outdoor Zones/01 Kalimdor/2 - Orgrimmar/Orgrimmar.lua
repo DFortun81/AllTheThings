@@ -436,8 +436,6 @@ _.Zones =
 					})),
 --					qp129(qg(43239, qh( 26557))),	-- A Staggering Effort
 					qh(32309, {	-- A Tale of Six Masters
-						["groups"] = {
-						},
 						["qg"] = 88705,	-- Kranosh
 						["classes"] = { 9 },	-- Warlock
 					}),
@@ -457,8 +455,6 @@ _.Zones =
 						["qg"] = 54870, -- General Nazgrim
 					}),
 					qg(14720, q(  9627, {	-- Allegiance to the Horde
-						["groups"] = {
-						},
 						["races"] = {10},
 					})),
 --[[					
@@ -468,8 +464,6 @@ Legacy				q(1433),	-- Alliance Relations
 Legacy				qh( 1436),	-- Alliance Relations 	
 --]]				
 					qg(97296, qh( 40976, {	-- Audience with the Warchief
-						["groups"] = {
-						},
 						["classes"] = {12},
 					})),
 --]]					
@@ -535,13 +529,11 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qp185(qg(42506, qh(26226))),	-- Crawfish Creole
 --]]					
 					q(6385, { -- Doras the Wind Rider Master
-						["groups"] = {},
 						["qg"] = 6929, -- Innkeeper Gryshka
 						["races"] = { 2, 8 }, -- Orcs/Trolls
 						["sourceQuests"] = { 6384 }, -- Ride to Orgrimmar
 					}),
 					q(6386, { -- Return to Razor Hill
-						["groups"] = {},
 						["qg"] = 3310, -- Doras
 						["races"] = { 2, 8}, -- Orcs/Trolls
 						["sourceQuests"] = { 6385 }, -- Doras the Wind Rider Master
@@ -599,8 +591,6 @@ Legacy				qh( 1436),	-- Alliance Relations
 					}),
 --]]
 					qh(26293, {	-- Machines of War
-						["groups"] = {
-						},
 						["qg"] = 14720,	-- High Overlord Saurfang
 						["sourceQuests"] = { 28717 },	-- Warchief's Command: Twilight Highlands!
 					}),
@@ -628,8 +618,6 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qp129(qg(43239, qh(26556))),	-- No Dumping Allowed
 --]]
 					qdg(qg(3412, qh(2950, {	-- Nogg's Ring Redo
-						["groups"] = {
-						},
 						["sourceQuests"] = { 2949 },	-- Return of the Ring
 					}))),
 --[[
@@ -645,8 +633,6 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qg(14720, qh( 26840)),	-- Return to the Highlands (add'l QGs 39605 and 86832, previous Horde leaders)
 --]]
 					qh(28909, {	-- Sauranok Will Point the Way
-						["groups"] = {
-						},
 						["qg"] = 14720,	-- High Overlord Saurfang
 						["sourceQuests"] = { 26294 },	-- Weapons of Mass Dysfunction
 					}),
@@ -671,14 +657,10 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["classes"] = { 5 },	-- Priest
 					})),	
 					qg(42506, q(26234, {	-- Stealing From Our Own
-						["groups"] = {
-						},
 						["races"] = { 8 },
 						["requireSkill"] = 185,	-- Cooking
 					})),
 					qg(42506, q(26233, {	-- Stealing From Our Own
-						["groups"] = {
-						},
 						["races"] = { 2, 5, 6, 10, 9, 26 },
 						["requireSkill"] = 185,	-- Cooking
 					})),
@@ -735,8 +717,6 @@ Legacy				qh( 1436),	-- Alliance Relations
 					})),
 --					qh(43472),	-- The Historians (LEGACY - 2016 anniversary)
 					qg(39605, q(31013, {	-- The Horde Way
-						["groups"] = {
-						},
 						["races"] = { 26 },	-- Pandaren
 					})),
 					qg(14392, qh( 7493)),	-- The Journey Has Just Begun
@@ -941,8 +921,6 @@ Legacy				qh( 1436),	-- Alliance Relations
 --						["sourceQuests"] = { 28303 },	-- Meet with Master Pyreanor (unknown if breadcrumb)
 					})),
 					qh(26324, {	-- Where Is My Warfleet?
-						["groups"] = {
-						},
 						["qg"] = 14720,	-- High Overlord Saurfang
 						["sourceQuests"] = { 26311 },	-- Unfamiliar Waters
 					}),
@@ -3066,74 +3044,50 @@ Legacy				qh( 1436),	-- Alliance Relations
 					}),
 					n(66022, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
 						i(91008, { 	-- Black Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87795), 	-- Black Dragon Turtle
 						i(91009, {	-- Blue Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87796), 	-- Blue Dragon Turtle 
 						i(91005, { 	-- Brown Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87797),	-- Brown Dragon Turtle 
 						i(91011, {	-- Great Black Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87802),	-- Great Black Dragon Turtle 
 						i(91013, {	-- Great Blue Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87803),	-- Great Blue Dragon Turtle
 						i(91014, {	-- Great Brown Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87804),	-- Great Brown Dragon Turtle
 						i(91012, {	-- Great Green Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87801),	-- Great Green Dragon Turtle
 						i(91015, {	-- Great Purple Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87805),	-- Great Purple Dragon Turtle 
 						i(91010, {	-- Great Red Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(82811),	-- Great Red Dragon Turtle 
 						i(91004, {	-- Green Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(82765),	-- Green Dragon Turtle
 						i(91006, {	-- Purple Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87799),	-- Purple Dragon Turtle
 						i(91007, {	-- Red Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87800),	-- Red Dragon Turtle

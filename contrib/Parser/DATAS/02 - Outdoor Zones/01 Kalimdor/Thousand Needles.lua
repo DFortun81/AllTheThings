@@ -61,14 +61,10 @@ _.Zones =
 						["sourceQuests"] = { 25779 },	-- Fake Gold for Black Gold
 					}),
 					qa(25517, {	-- Bar Fight!
-						["groups"] = {
-						},
 						["qg"] = 40554,	-- Rizzle Brassbolts
 						["sourceQuests"] = { 25488 },	-- Two if By Boat
 					}),
 					qh(25518, {	-- Bar Fight!
-						["groups"] = {
-						},
 						["qg"] = 40556,	-- Zamek
 						["sourceQuests"] = { 25489 },	-- Two if By Boat
 					}),
@@ -83,14 +79,10 @@ _.Zones =
 						["sourceQuests"] = { 28127, 28125 },	-- Break Them Out & Something to Wear						
 					}),
 					q( 28127, {	-- Break Them Out
-						["groups"] = {
-						},
 						["qg"] = 47580,	-- Lakota Windsong
 						["sourceQuests"] = { 28124 },	-- On to the Bulwark
 					}),
 					q( 25672, {	-- Carcass Collection
-						["groups"] = {
-						},
 						["qg"] = 41060,	-- Ajamon Ghostcaller
 						["sourceQuests"] = { 25661 },	-- With a Little Help...
 					}),
@@ -115,8 +107,6 @@ _.Zones =
 						["sourceQuests"] = { 25533 },	-- Pirate Accuracy Increasing
 					}),
 					q( 28139, {	-- Codemaster's Code
-						["groups"] = {
-						},
 						["qg"] = 47580,	-- Lakota Windsong
 						["sourceQuests"] = { 28127, 28125 },	-- Break Them Out & Something to Wear
 					}),
@@ -149,14 +139,10 @@ _.Zones =
 						["sourceQuests"] = { 28085 },	-- Trouble at Highperch
 					}),
 					qa(25798, {	-- Defend the Drill
-						["groups"] = {
-						},
 						["qg"] = 41190,	-- Crazzle Sprysprocket
 						["sourceQuests"] = { 25790 },	-- Back to Crazzle
 					}),
 					qh(25799, {	-- Defend the Drill
-						["groups"] = {
-						},
 						["qg"] = 41184,	-- Riznek
 						["sourceQuests"] = { 25791 },	-- Back to Riznek
 					}),
@@ -179,14 +165,10 @@ _.Zones =
 						["sourceQuests"] = { 25814 },	-- Go Blow that Horn
 					}),
 					qa(25504, {	-- Do Me a Favor?
-						["groups"] = {
-						},
 						["qg"] = 40027,	-- Fizzle Brassbolts
 						["sourceQuests"] = { 25488 },	-- Two if By Boat
 					}),
 					qh(25505, {	-- Do Me a Favor?
-						["groups"] = {
-						},
 						["qg"] = 40028,	-- Pozzik
 						["sourceQuests"] = { 25489 },	-- Two if By Boat
 					}),
@@ -213,92 +195,62 @@ _.Zones =
 						["sourceQuests"] = { 25505 },	-- Do Me a Favor?
 					}),
 					qa(25796, {	-- Eminent Domain
-						["groups"] = {
-						},
 						["qg"] = 41190,	-- Crazzle Sprysprocket
 						["sourceQuests"] = { 25790 },	-- Back to Crazzle
 					}),
 					qh(25797, {	-- Eminent Domain
-						["groups"] = {
-						},
 						["qg"] = 41184,	-- Riznek
 						["sourceQuests"] = { 25791 },	-- Back to Riznek
 					}),
 					qa(25778, {	-- Fake Gold for Black Gold
-						["groups"] = {
-						},
 						["qg"] = 41190,	-- Crazzle Sprysprocket
 						["sourceQuests"] = { 25774 },	-- Fool's Gold
 					}),
 					qh(25779, {	-- Fake Gold for Black Gold
-						["groups"] = {
-						},
 						["qg"] = 41184,	-- Riznek
 						["sourceQuests"] = { 25775 },	-- Fool's Gold
 					}),
 					qa(25774, {	-- Fool's Gold
-						["groups"] = {
-						},
 						["qg"] = 41190,	-- Crazzle Sprysprocket
 						["sourceQuests"] = { 25756 },	-- Get Zherin!
 					}),
 					qh(25775, {	-- Fool's Gold
-						["groups"] = {
-						},
 						["qg"] = 41184,	-- Riznek
 						["sourceQuests"] = { 25757 },	-- Get Koalbeard!
 					}),
 					q( 28157, {	-- Four Twilight Elements
-						["groups"] = {
-						},
 						["qg"] = 47745,	-- Magatha Grimtotem
 						["sourceQuests"] = { 28142 },	-- To the Withering
 					}),
 					qa(25835, {	-- Free Freewind Post
-						["groups"] = {
-						},
 						["qg"] = 40027,	-- Fizzle Brassbolts
 						["sourceQuests"] = { 25825, 25704 },	-- Deliver the Goods & The Mad Magus
 					}),
 					qh(25836, {	-- Free Freewind Post
-						["groups"] = {
-						},
 						["qg"] = 40028,	-- Pozzik
 						["sourceQuests"] = { 25826, 25704 },	-- Deliver the Goods & The Mad Magus
 					}),
 					q( 28086, {	-- Free the Pridelings
-						["groups"] = {
-						},
 						["qg"] = 47471,	-- Pao'ka Swiftmountain
 						["sourceQuests"] = { 28085 },	-- Trouble at Highperch
 					}),
 					q( 28047, {	-- Freezing the Pipes
-						["groups"] = {
-						},
 						["qg"] = 47383,	-- Brivelthwerp
 						["sourceQuests"] = { 28045, 28051 },	-- The Greatest Flavor in the World! & We All Scream for Ice Cream... and then Die!
 					}),
 					qh(25757, {	-- Get Koalbeard!
-						["groups"] = {
-						},
 						["qg"] = 41184,	-- Riznek
 						["sourceQuests"] = { 25745 },	-- Negotiations
 					}),
 					qa(25756, {	-- Get Zherin!
-						["groups"] = {
-						},
 						["qg"] = 41190,	-- Crazzle Sprysprocket
 						["sourceQuests"] = { 25744 },	-- Negotiations
 					}),
 					qa(25813, {	-- Go Blow that Horn
-						["groups"] = {
-						},
 						["qg"] = 41190,	-- Crazzle Sprysprocket
 						["sourceQuests"] = { 25798, 25796 },	-- Defend the Drill & Eminent Domain
 					}),
 					qh(25814, {	-- Go Blow that Horn
-						["groups"] = {
-						},
 						["qg"] = 41184,	-- Riznek
 						["sourceQuests"] = { 25799, 25797 },	-- Defend the Drill & Eminent Domain
 					}),
@@ -323,26 +275,18 @@ _.Zones =
 						["sourceQuests"] = { 27315 },	-- Grimtotem Chiefs: Isha Gloomaxe
 					}),
 					qa(27323, {	-- Grimtotem Chiefs: Grundig Darkcloud
-						["groups"] = {
-						},
 						["qg"] = 45277,	-- Feralas Sentinel
 						["sourceQuests"] = { 27318 },	-- Grimtotem Chiefs: Elder Stormhoof
 					}),
 					qh(27324, {	-- Grimtotem Chiefs: Grundig Darkcloud
-						["groups"] = {
-						},
 						["qg"] = 45278,	-- Freewind Brave
 						["sourceQuests"] = { 27319 },	-- Grimtotem Chiefs: Elder Stormhoof
 					}),
 					qa(27314, {	-- Grimtotem Chiefs: Isha Gloomaxe
-						["groups"] = {
-						},
 						["qg"] = 45277,	-- Feralas Sentinel
 						["sourceQuests"] = { 27275 },	-- Together Again
 					}),
 					qh(27315, {	-- Grimtotem Chiefs: Isha Gloomaxe
-						["groups"] = {
-						},
 						["qg"] = 45278,	-- Freewind Brave
 						["sourceQuests"] = { 27276 },	-- Together Again
 					}),
@@ -365,44 +309,30 @@ _.Zones =
 						["sourceQuests"] = { 27324 },	-- Grimtotem Chiefs: Grundig Darkcloud
 					}),
 					qa(25869, {	-- Grimtotem in the Post
-						["groups"] = {
-						},
 						["qg"] = 41392,	-- Quentin
 						["sourceQuests"] = { 25835 },	-- Free Freewind Post
 					}),
 					qh(25870, {	-- Grimtotem in the Post
-						["groups"] = {
-						},
 						["qg"] = 41446,	-- Thalia Amberhide
 						["sourceQuests"] = { 25836 },	-- Free Freewind Post
 					}),
 					q( 25660, {	-- Haunted
-						["groups"] = {
-						},
 						["qg"] = 41058,	-- Spirit of Tony Two-Tusk
 						["sourceQuests"] = { 25627, 25628 },	-- Two-Tusk Takedown (A/H versions)
 					}),
 					qa(25873, {	-- Horn of the Traitor
-						["groups"] = {
-						},
 						["qg"] = 45271,	-- Montarr
 						["sourceQuests"] = { 25835 },	-- Free Freewind Post
 					}),
 					qh(25874, {	-- Horn of the Traitor
-						["groups"] = {
-						},
 						["qg"] = 45271,	-- Montarr
 						["sourceQuests"] = { 25836 },	-- Free Freewind Post
 					}),
 					o(202975, {	-- Submerged Outhouse
 						qh(25526, {	-- In the Outhouse
-							["groups"] = {
-							},
 							["sourceQuests"] = { 25505 },	-- Do Me a Favor?
 						}),
 						qa(25524, {	-- In the Outhouse
-							["groups"] = {
-							},
 							["sourceQuests"] = { 25504 },	-- Do Me a Favor?
 						}),
 					}),
@@ -426,68 +356,46 @@ _.Zones =
 						["sourceQuests"] = { 27358 },	-- The Captive Bride
 					}),
 					qa(25744, {	-- Negotiations
-						["groups"] = {
-						},
 						["qg"] = 40027,	-- Fizzle Brassbolts
 						["sourceQuests"] = { 25542 },	-- Circle the Wagons... er, Boats
 					}),
 					qh(25745, {	-- Negotiations
-						["groups"] = {
-						},
 						["qg"] = 40028,	-- Pozzik
 						["sourceQuests"] = { 25543 },	-- Circle the Wagons... er, Boats
 					}),
 					qa(27310, {	-- No Weapons For You!
-						["groups"] = {
-						},
 						["qg"] = 45277,	-- Feralas Sentinel
 						["sourceQuests"] = { 27275 },	-- Together Again
 					}),
 					qh(27311, {	-- No Weapons For You!
-						["groups"] = {
-						},
 						["qg"] = 45278,	-- Freewind Brave
 						["sourceQuests"] = { 27276 },	-- Together Again
 					}),
 					q( 28124, {	-- On to the Bulwark
-						["groups"] = {
-						},
 						["qg"] = 47471,	-- Pao'ka Swiftmountain
 						["sourceQuests"] = { 28098 },	-- The Twilight Skymaster
 					}),
 					qa(25532, {	-- Pirate Accuracy Increasing
-						["groups"] = {
-						},
 						["qg"] = 40475,	-- Jinky Twizzlefixxit
 						["sourceQuests"] = { 25515 },	-- Down in the Deeps
 					}),
 					qh(25533, {	-- Pirate Accuracy Increasing
-						["groups"] = {
-						},
 						["qg"] = 40487,	-- Razzeric
 						["sourceQuests"] = { 25516 },	-- Down in the Deeps
 					}),
 					qa(25585, {	-- Quiet the Cannons
-						["groups"] = {
-						},
 						["qg"] = 40475,	-- Jinky Twizzlefixxit
 						["sourceQuests"] = { 25542 },	-- Circle the Wagons... er, Boats
 					}),
 					qh(25586, {	-- Quiet the Cannons
-						["groups"] = {
-						},
 						["qg"] = 40487,	-- Razzeric
 						["sourceQuests"] = { 25543 },	-- Circle the Wagons... er, Boats
 					}),
 					q( 28088, {	-- Release Heartrazor
-						["groups"] = {
-						},
 						["qg"] = 47471,	-- Pao'ka Swiftmountain
 						["sourceQuests"] = { 28087, 28086 },	-- Death to All Trappers! & Free the Pridelings
 					}),
 					qa(25871, {	-- Save the Sentinel
-						["groups"] = {
-						},
 						["qg"] = 41444,	-- Brienna Starglow
 						["sourceQuests"] = { 25835 },	-- Free Freewind Post
 					}),
@@ -502,14 +410,10 @@ _.Zones =
 						["sourceQuests"] = { 28124 },	-- On to the Bulwark
 					}),
 					qa(28031, {	-- Special Delivery for Brivelthwerp
-						["groups"] = {
-						},
 						["qg"] = 40726,	-- Mazzer Stripscrew
 						["sourceQuests"] = { 25542 },	-- Circle the Wagons... er, Boats
 					}),
 					qh(28042, {	-- Special Delivery for Brivelthwerp
-						["groups"] = {
-						},
 						["qg"] = 40727,	-- Griznak
 						["sourceQuests"] = { 25543 },	-- Circle the Wagons... er, Boats
 					}),
@@ -538,25 +442,17 @@ _.Zones =
 						["sourceQuests"] = { 28159 },	-- The Doomstone
 					}),
 					qa(25609, {	-- Sunken Treasure
-						["groups"] = {
-						},
 						["qg"] = 40885,	-- Wizzle Brassbolts
 						["sourceQuests"] = { 25590 },	-- Where's Wizzle?
 					}),
 					qh(25610, {	-- Sunken Treasure
-						["groups"] = {
-						},
 						["qg"] = 40888,	-- Synge
 						["sourceQuests"] = { 25596 },	-- Where's Synge?
 					}),
 					qa(27446, {	-- Tanaris is Calling
-						["groups"] = {
-						},
 						["qg"] = 40027,	-- Fizzle Brassbolts
 					}),
 					qh(27447, {	-- Tanaris is Calling (NOT mutually exclusive with "Warchief's Command: Tanaris!")
-						["groups"] = {
-						},
 						["qg"] = 40028,	-- Pozzik
 						["isBreadcrumb"] = true,
 					}),
@@ -579,20 +475,14 @@ _.Zones =
 						["sourceQuests"] = { 25744, 25745 },	-- Negotiations (A/H versions)
 					}),
 					qh(25872, {	-- The Brave and the Bold
-						["groups"] = {
-						},
 						["qg"] = 41421,	-- Rau Cliffrunner
 						["sourceQuests"] = { 25836 },	-- Free Freewind Post
 					}),
 					qa(27357, {	-- The Captive Bride
-						["groups"] = {
-						},
 						["qg"] = 45277,	-- Feralas Sentinel
 						["sourceQuests"] = { 27327 },	-- Grimtotem Chiefs: The Chief of Chiefs
 					}),
 					qh(27358, {	-- The Captive Bride
-						["groups"] = {
-						},
 						["qg"] = 45278,	-- Freewind Brave
 						["sourceQuests"] = { 27328 },	-- Grimtotem Chiefs: The Chief of Chiefs
 					}),
@@ -607,32 +497,22 @@ _.Zones =
 						["sourceQuests"] = { 28157, 28158 },	-- Four Twilight Elements & Unbound
 					}),
 					qa(27325, {	-- The Drums of War
-						["groups"] = {
-						},
 						["qg"] = 45277,	-- Feralas Sentinel
 						["sourceQuests"] = { 27316 },	-- The Rattle of Bones
 					}),
 					qh(27326, {	-- The Drums of War
-						["groups"] = {
-						},
 						["qg"] = 45278,	-- Freewind Brave
 						["sourceQuests"] = { 27317 },	-- The Rattle of Bones
 					}),
 					q( 28140, {	-- The Elder Crone
-						["groups"] = {
-						},
 						["qg"] = 47580,	-- Lakota Windsong
 						["sourceQuests"] = { 28136, 28139 },	-- Behind You! & Codemaster's Code
 					}),
 					q( 28045, {	-- The Greatest Flavor in the World!
-						["groups"] = {
-						},
 						["qg"] = 47383,	-- Brivelthwerp
 						["sourceQuests"] = { 28042 },	-- Special Delivery for Brivelthwerp
 					}),
 					qh(25487, {	-- The Grimtotem are Coming
-						["groups"] = {
-						},
 						["qg"] = 39895,	-- Kanati Greycloud
 						["sourceQuests"] = { 25478 },	-- To the Summit
 					}),
@@ -647,14 +527,10 @@ _.Zones =
 						["sourceQuests"] = { 25672 },	-- Carcass Collection
 					}),
 					qa(27316, {	-- The Rattle of Bones
-						["groups"] = {
-						},
 						["sourceQuests"] = { 27275 },	-- Together Again
 						["sourceQuests"] = { 28283 },	-- What's that Rattle?
 					}),
 					qh(27317, {	-- The Rattle of Bones
-						["groups"] = {
-						},
 						["sourceQuests"] = { 27276 },	-- Together Again
 						["sourceQuests"] = { 28284 },	-- What's that Rattle?
 					}),
@@ -669,42 +545,28 @@ _.Zones =
 						["sourceQuests"] = { 28088 },	-- Release Heartrazor
 					}),
 					qa(27320, {	-- The Writ of History
-						["groups"] = {
-						},
 						["qg"] = 45277,	-- Feralas Sentinel
 						["sourceQuests"] = { 27316 },	-- The Rattle of Bones
 					}),
 					qh(27321, {	-- The Writ of History
-						["groups"] = {
-						},
 						["qg"] = 45278,	-- Freewind Brave
 						["sourceQuests"] = { 27317 },	-- The Rattle of Bones
 					}),
 					qa(27275, {	-- Together Again
-						["groups"] = {
-						},
 						["qg"] = 41444,	-- Brienna Starglow
 						["sourceQuests"] = { 25871 },	-- Save the Sentinel
 					}),
 					qh(27276, {	-- Together Again
-						["groups"] = {
-						},
 						["qg"] = 41421,	-- Rau Cliffrunner
 						["sourceQuests"] = { 25872 },	-- The Brave and the Bold
 					}),
 --[[				q( 28143, {	-- To the Withering (didn't encounter this version in game)
-						["groups"] = {
-						},
 						["sourceQuests"] = { 28140 },	-- The Elder Crone
 					}),	--]]
 					q( 28142, {	-- To the Withering
-						["groups"] = {
-						},
 						["sourceQuests"] = { 28140 },	-- The Elder Crone
 					}),
 					q( 28085, {	-- Trouble at Highperch
-						["groups"] = {
-						},
 						["qg"] = 45442,	-- Lakota Windsong
 						["sourceQuests"] = { 27329, 27330 },	-- Invoking the Serpent (A/H versions)
 					}),
@@ -739,8 +601,6 @@ _.Zones =
 						["sourceQuests"] = { 25610 },	-- Sunken Treasure
 					}),
 					q( 28158, {	-- Unbound
-						["groups"] = {
-						},
 						["qg"] = 47745,	-- Magatha Grimtotem
 						["sourceQuests"] = { 28142 },	-- To the Withering
 					}),
@@ -757,28 +617,20 @@ _.Zones =
 						["sourceQuests"] = { 28042 },	-- Special Delivery for Brivelthwerp
 					}),
 					qa(28283, {	-- What's that Rattle? (only pops up if you complete "Grimtotem Chiefs: Isha Gloomaxe" and haven't picked up "The Rattle of Bones")
-						["groups"] = {
-						},
 						["qg"] = 45277,	-- Feralas Sentinel
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 27314 },	-- Grimtotem Chiefs: Isha Gloomaxe
 					}),
 					qh(28284, {	-- What's that Rattle? (only pops up if you complete "Grimtotem Chiefs: Isha Gloomaxe" and haven't picked up "The Rattle of Bones")
-						["groups"] = {
-						},
 						["qg"] = 45278,	-- Freewind Brave
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 27315 },	-- Grimtotem Chiefs: Isha Gloomaxe
 					}),
 					qh(25596, {	-- Where's Synge?
-						["groups"] = {
-						},
 						["qg"] = 40556,	-- Zamek
 						["sourceQuests"] = { 25543 },	-- Circle the Wagons... er, Boats
 					}),
 					qa(25590, {	-- Where's Wizzle?
-						["groups"] = {
-						},
 						["qg"] = 40554,	-- Rizzle Brassbolts
 						["sourceQuests"] = { 25542 },	-- Circle the Wagons... er, Boats
 					}),
@@ -804,29 +656,19 @@ _.Zones =
 					q(45811),	-- The Goblins Stole Our Bombs! (WORLD QUEST)	--]]
 -- DUNGEON QUESTS					
 					qdg(qh(27062, {	-- Looming Threat
-						["groups"] = {
-						},
 						["qg"] = 39895,	-- Kanati Greycloud
 					})),
 -- SHAMAN CLASS HALL QUESTS					
 					qg(120244, q(44800, {	-- Against Magatha's Will
-						["groups"] = {
-						},
 						["classes"] = { 7 },	-- Shaman
 					})),
 					qg(120244, q(45725, {	-- Breaking Chains
-						["groups"] = {
-						},
 						["classes"] = { 7 },	-- Shaman
 					})),
 					qg(120244, q(45724, {	-- Snakes and Stones
-						["groups"] = {
-						},
 						["classes"] = { 7 },	-- Shaman
 					})),
 					qg(120244, q(45723, {	-- The Crone's Wrath
-						["groups"] = {
-						},
 						["classes"] = { 7 },	-- Shaman
 					})),
 				}),

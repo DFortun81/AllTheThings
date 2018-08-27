@@ -173,11 +173,11 @@ _.Zones =
 							["lvl"] = 8,
 							["races"] = HORDE_ONLY,
 						}),
-            q(25196, { -- The Dranosh'ar Blockade
-              ["qg"] = 3142, -- Orgnil Soulscar
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25232 }, -- The Burning Blade
-            }),
+						q(25196, { -- The Dranosh'ar Blockade
+							["qg"] = 3142, -- Orgnil Soulscar
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25232 }, -- The Burning Blade
+						}),
 						q(840, { -- Conscript of the Horde
 							["qg"] = 3336, -- Takrin Pathseeker
 							["lvl"] = 10,
@@ -199,35 +199,35 @@ _.Zones =
 						--q(6385, { -- Doras the Wind Rider Master (Orgrimmar)
 						--q(6386, { -- Return to Razor Hill (Orgrimmar)
 					}),
-          sz(728, 3, { -- Southfury Watershed
-            q(25193, { -- Lost But Not Forgotten
-              ["qg"] = 3193, -- Misha Tor'kren
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25187 }, -- Lost in the Floods
-            }),
-            q(25194, { -- Unbidden Visitors
-              ["qg"] = 39324, -- Zen'Taji
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25187 }, -- Lost in the Floods
-            }),
-            q(25195, { -- That's the End of That Raptor
-              ["qg"] = 39324, -- Zen'Taji
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25194 }, -- Unbidden Visitors
-            }),
-          }),
-          sz(728, 8, { -- Razormane Grounds
-            q(25190, { -- Raggaran's Rage
-              ["qg"] = 39326, -- Raggaran
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25187 }, -- Lost in the Floods
-            }),
-            q(25192, { -- Raggaran's Fury
-              ["qg"] = 39326, -- Raggaran
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25190 }, -- Raggaran's Rage
-            }),
-          }),
+					sz(728, 3, { -- Southfury Watershed
+						q(25193, { -- Lost But Not Forgotten
+							["qg"] = 3193, -- Misha Tor'kren
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25187 }, -- Lost in the Floods
+						}),
+						q(25194, { -- Unbidden Visitors
+							["qg"] = 39324, -- Zen'Taji
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25187 }, -- Lost in the Floods
+						}),
+						q(25195, { -- That's the End of That Raptor
+							["qg"] = 39324, -- Zen'Taji
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25194 }, -- Unbidden Visitors
+						}),
+					}),
+					sz(728, 8, { -- Razormane Grounds
+						q(25190, { -- Raggaran's Rage
+							["qg"] = 39326, -- Raggaran
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25187 }, -- Lost in the Floods
+						}),
+						q(25192, { -- Raggaran's Fury
+							["qg"] = 39326, -- Raggaran
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25190 }, -- Raggaran's Rage
+						}),
+					}),
 					n(-168, { -- Other Quests
 						q(25179, { -- Loss Reduction
 							["qg"] = 39270, -- Injured Razor Hill Grunt
@@ -235,93 +235,93 @@ _.Zones =
 							["sourceQuests"] = { 25173 }, -- From Bad to Worse
 							["description"] = "Talk to an Injured Razor Hill Grunt on the beach.",
 						}),
-            q(834, { -- Winds in the Desert
-              ["qg"] = 3293, -- Rezlak
-              ["lvl"] = 7,
-            }),
-            q(835, { -- Securing the Lines
-              ["qg"] = 3293, -- Rezlak
-              ["lvl"] = 7,
-            }),
-            q(25205, { -- The Wolf and The Kodo
-              ["qg"] = 39380, -- Shin Stonepillar
-              ["lvl"] = 8,
-              ["races"] = HORDE_ONLY,
-            }),
-            q(25206, { -- Ignoring the Warnings
-              ["groups"] = {
-                i(53368), -- Feckless Armbands
-                i(53374), -- Heedless Treads
-                i(131410), -- Bindings of Disregard
-              },
-              ["qg"] = 39379, -- Gor the Enforcer
-              ["lvl"] = 8,
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25205 }, -- The Wolf and The Kodo
-            }),
-            q(25260, { -- Fizzled
-              ["groups"] = {
-                i(53369), -- Fizzle's Gloves
-                i(53366), -- Enforcer's Gloves
-                i(131413), -- Gor's Re-Inforced Gloves
-              },
-              ["qg"] = 39379, -- Gor the Enforcer
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25196 }, -- The Dranosh'ar Blockade
-            }),
-            q(25261, { -- Margoz
-              ["qg"] = 39379, -- Gor the Enforcer
-              ["races"] = { 2, 8 }, -- Orcs/Trolls
-              ["sourceQuests"] = { 25260 }, -- Fizzled
-            }),
-            q(25236, { -- Thunder Down Under
-              ["qg"] = 39379, -- Gor the Enforcer
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25196 }, -- The Dranosh'ar Blockade
-            }),
-            q(25648, { -- Beyond Durotar
-              ["qg"] = 39379, -- Gor the Enforcer
-              ["races"] = HORDE_ONLY,
-              ["description"] = "Not available if \"Warchief's Command: Azshara!\" is complete.",
-              ["sourceQuests"] = { 25236, 25205, 25206 }, -- Thunder Down Under, The Wolf and The Kodo, Ignoring the Warnings
-              ["isBreadcrumb"] = true,
-            }),
-            q(25256, { -- Sent for Help
-              ["qg"] = 39604, -- Vek'nag
-              ["lvl"] = 8,
-              ["races"] = HORDE_ONLY,
-            }),
-            q(25262, { -- Skull Rock
-              ["groups"] = {
-                i(53358), -- Blade Cultist Slippers
-                i(53387), -- Searing Bracers
-                i(53390), -- Skull Rock Belt
-                i(131414), -- Burning Armbands
-              },
-              ["qg"] = 3208, -- Margoz
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25261 }, -- Margoz
-            }),
-            q(25257, { -- Ghislania
-              ["qg"] = 39590, -- Spiketooth
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25256 } -- Sent for Help
-            }),
-            q(25258, { -- Griswold Hanniston
-              ["qg"] = 39590, -- Spiketooth
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25256 } -- Sent for Help
-            }),
-            q(25259, { -- Gaur Icehorn
-              ["qg"] = 39590, -- Spiketooth
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25256 } -- Sent for Help
-            }),
-            q(25263, { -- Arnak Fireblade
-              ["qg"] = 3208, -- Margoz
-              ["races"] = HORDE_ONLY,
-              ["sourceQuests"] = { 25262 }, -- Skull Rock
-            }),
+						q(834, { -- Winds in the Desert
+							["qg"] = 3293, -- Rezlak
+							["lvl"] = 7,
+						}),
+						q(835, { -- Securing the Lines
+							["qg"] = 3293, -- Rezlak
+							["lvl"] = 7,
+						}),
+						q(25205, { -- The Wolf and The Kodo
+							["qg"] = 39380, -- Shin Stonepillar
+							["lvl"] = 8,
+							["races"] = HORDE_ONLY,
+						}),
+						q(25206, { -- Ignoring the Warnings
+							["groups"] = {
+								i(53368), -- Feckless Armbands
+								i(53374), -- Heedless Treads
+								i(131410), -- Bindings of Disregard
+							},
+							["qg"] = 39379, -- Gor the Enforcer
+							["lvl"] = 8,
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25205 }, -- The Wolf and The Kodo
+						}),
+						q(25260, { -- Fizzled
+							["groups"] = {
+								i(53369), -- Fizzle's Gloves
+								i(53366), -- Enforcer's Gloves
+								i(131413), -- Gor's Re-Inforced Gloves
+							},
+							["qg"] = 39379, -- Gor the Enforcer
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25196 }, -- The Dranosh'ar Blockade
+						}),
+						q(25261, { -- Margoz
+							["qg"] = 39379, -- Gor the Enforcer
+							["races"] = { 2, 8 }, -- Orcs/Trolls
+							["sourceQuests"] = { 25260 }, -- Fizzled
+						}),
+						q(25236, { -- Thunder Down Under
+							["qg"] = 39379, -- Gor the Enforcer
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25196 }, -- The Dranosh'ar Blockade
+						}),
+						q(25648, { -- Beyond Durotar
+							["qg"] = 39379, -- Gor the Enforcer
+							["races"] = HORDE_ONLY,
+							["description"] = "Not available if \"Warchief's Command: Azshara!\" is complete.",
+							["sourceQuests"] = { 25236, 25205, 25206 }, -- Thunder Down Under, The Wolf and The Kodo, Ignoring the Warnings
+							["isBreadcrumb"] = true,
+						}),
+						q(25256, { -- Sent for Help
+							["qg"] = 39604, -- Vek'nag
+							["lvl"] = 8,
+							["races"] = HORDE_ONLY,
+						}),
+						q(25262, { -- Skull Rock
+							["groups"] = {
+								i(53358), -- Blade Cultist Slippers
+								i(53387), -- Searing Bracers
+								i(53390), -- Skull Rock Belt
+								i(131414), -- Burning Armbands
+							},
+							["qg"] = 3208, -- Margoz
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25261 }, -- Margoz
+						}),
+						q(25257, { -- Ghislania
+							["qg"] = 39590, -- Spiketooth
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25256 } -- Sent for Help
+						}),
+						q(25258, { -- Griswold Hanniston
+							["qg"] = 39590, -- Spiketooth
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25256 } -- Sent for Help
+						}),
+						q(25259, { -- Gaur Icehorn
+							["qg"] = 39590, -- Spiketooth
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25256 } -- Sent for Help
+						}),
+						q(25263, { -- Arnak Fireblade
+							["qg"] = 3208, -- Margoz
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25262 }, -- Skull Rock
+						}),
 					}),
 					q(25266, {	-- Warchief's Emissary (QG in The Lost Isles, MAY NO LONGER BE IN GAME per wowhead comments)
 						["qg"] = 38935, -- Thrall
@@ -516,12 +516,12 @@ _.Zones =
 				n(-40, { -- Legacy
 					["groups"] = {
 						n(-17, { -- Quests (Legacy)
-              i(46883, { -- Riding Trainer Pamphlet
-                q(14088, { -- Learn to Ride in Durotar
-                  ["races"] = HORDE_ONLY,
-                  ["u"] = 40, -- Legacy Quest/Quest Item
-                }),
-              }),
+							i(46883, { -- Riding Trainer Pamphlet
+								q(14088, { -- Learn to Ride in Durotar
+									["races"] = HORDE_ONLY,
+									["u"] = 40, -- Legacy Quest/Quest Item
+								}),
+							}),
 							q(5648, { -- Garments of Spirituality
 								["groups"] = {
 									un(34, i(16606)), -- Juju Hex Robes

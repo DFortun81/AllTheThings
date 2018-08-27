@@ -21,35 +21,23 @@ _.Zones =
 --[[				
 					qp129(qg(4156, qa(29325))),	-- A Slippery Snack
 					qg(4087, qa(27225, {	-- A Summons from Ander Germaine (breadcrumb quest for 27337)
-						["groups"] = {
-						},
-						["classes"] = {1},
+					["classes"] = {1},
 					})),
 					qg(52292, qa(27270, {	-- An Audience with the Farseer (breadcrumb quest for 27353)
-						["groups"] = {
-						},
 						["classes"] = {7},
 					})),
 					qg(4217, qa(27273, {	-- An Invitation from Moonglade (breadcrumb quest for 27356)
-						["groups"] = {
-						},
 						["classes"] = {11},
 					})),
 					qp129(qg(4156, qa(29359))),	-- An Old Favorite
 					qg(7316, qa( 6342, {	-- An Unexpected Gift
-						["groups"] = {
-						},
 						["races"] = {4},
 					})),
 					qp185(qg(4210, qa(29316))),	-- Back to Basics
 					qg(42936, qa(26383, {	-- Breaking Waves of Change (breadcrumb quest for 13518, not available if 26385, 28490 are completed)
-						["groups"] = {
-						},
 						["races"]= {1,3,4,7,11,22,24,25},
 					})),
 					qg(48736, qa(26385, {	-- Breaking Waves of Change (breadcrumb quest for 13518, not available if 26383, 28490 are completed)
-						["groups"] = {
-						},
 						["races"] = {22},
 					})),
 					qg(67940, qa(32414)),	-- Darnassus Attacked? (QG in Krasarang Wilds)
@@ -92,103 +80,67 @@ _.Zones =
 					}),					
 					qg(3515, qa(14039)),	-- Home of the Kaldorei
 					qg(50690, qa(27271, {	-- Journey to the Wizard's Sanctum (breadcrumb quest for 27354)
-						["groups"] = {
-						},
 						["classes"] = {8},
 					})),
 					desc(qa(32664), "This quest is available to Night Elves upon reaching level 20.", {	-- Learn To Ride
-						["groups"] = {
-						},
 						["races"] = {4},
 					}),
 					-- qa(14085),	-- Learn to Ride in Darnassus (REMOVED according to wowhead, replaced with race-specific riding quests)
 					qg(35281, qa(27265, {	-- Lord Grayson Shadowbreaker (breadcrumb quest for 27343)
-						["groups"] = {
-						},
 						["classes"] = {2},
 					})),
 					qg(4214, qa(27267, {	-- Make Contact with SI:7 (breadcrumb quest for 27351)
-						["groups"] = {
-						},
 						["classes"] = {4},
 					})),
 					qg(11401, qa(27268, {	-- Make Haste to the Cathedral (breadcrumb quest for 27361)
-						["groups"] = {
-						},
 						["classes"] = {5},
 					})),
 					qg(4087, qa(28258, {	-- Meet with Ander Germaine (breadcrumb quest for 28393)
-						["groups"] = {
-						},
 						["classes"] = {1},
 					})),
 					qg(52292, qa(28287, {	-- Meet with Farseer Umbrua  (breadcrumb quest for 28401)
-						["groups"] = {
-						},
 						["classes"] = {7},
 					})),
 					qg(11401, qa(28285, {	-- Meet with High Priestess Laurena (breadcrumb quest for 28328)
-						["groups"] = {
-						},
 						["classes"] = {5},
 					})),
 					qg(35281, qa(28268, {	-- Meet with Lord Grayson Shadowbreaker  (breadcrumb quest for 28405)
-						["groups"] = {
-						},
 						["classes"] = {2},
 					})),
 					qg(4214, qa(28262, {	-- Meet with Lord Tony Romano (breadcrumb quest for 28406)
-						["groups"] = {
-						},
 						["classes"] = {4},
 					})),
 					qg(50690, qa(28263, {	-- Meet with Maginor Dumas (breadcrumb quest for 28398)
-						["groups"] = {
-						},
 						["classes"] = {8},
 					})),
 					qg(4138, qa(28260, {	-- Meet with Wulf Hansreim (breadcrumb quest for 28394)
-						["groups"] = {
-						},
 						["classes"] = {3},
 					})),
 					qg(4217, q(28289, {	-- Moonglade Calls (breadcrumb quest for 28343)
-						["groups"] = {
-						},
 						["classes"] = {11},
 					})),
 					qp165(qg(6034, qa( 1582))),	-- Moonglow Vest
 					qp185(qg(4210, qa(29314))),	-- Remembering the Ancestors
 					qg(40552, qa( 6343, {	-- Return to Nyoma
-						["groups"] = {
-						},
 						["races"] = {4},
 					})),
 					qp185(qg(4210, qa(29318))),	-- Ribs for the Sentinels
 					qp185(qg(4210, qa(29357))),	-- Spice Bread Aplenty
 					qp129(qg(4156, qa(29323))),	-- Stocking Up
 					qg(46908, qa(27846, {	-- The Grateful Dead (HOLIDAY: day of the dead)
-						["groups"] = {
-						},
 						["races"] = {22},
 					})),
 					qg(34479, qa(14170, {	-- The Grateful Dead (HOLIDAY: day of the dead)
-						["groups"] = {
-						},
 						["races"] = {4},
 					})),
 					qp185(qg(4210, qa(29313))),	-- The Secret to Perfect Kimchi
 					qp129(qg(4156, qa(29324))),	-- The Sister's Pendant
 					qg(11401, qa(27269, {	-- The Temple of the Moon (breadcrumb quest for 27362)
-						["groups"] = {
-						},
 						["races"] = {4},
 						["classes"] = {5},
 					})),
 					desc(qg(68651, qa(32460)), "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up."),	-- Tracking the Thieves
 					qg(4138, qa(27266, {	-- Wulf Calls (breadcrumb quest for 27344)
-						["groups"] = {
-						},
 						["classes"] = {3},
 					})),
 --]]
@@ -667,8 +619,6 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(1693, {	-- Weapons of Elunite
 								["groups"] = {
@@ -680,8 +630,6 @@ _.Zones =
 								["classes"] = { 1 },	-- Warrior
 							})),
 						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
 					},
 				}),
 			},

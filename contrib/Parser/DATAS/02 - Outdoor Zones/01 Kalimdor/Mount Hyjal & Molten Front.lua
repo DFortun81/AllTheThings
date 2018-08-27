@@ -47,8 +47,6 @@ _.Zones =
 					qg(39406, q(25494)),	-- A Champion's Collar
 					qg(41006, q(25758)),	-- A Gap in Their Armor
 					qg(106250, q(42046), {	-- A New Beginning
-						["groups"] = {
-						},
 						["classes"]= {11},
 					}),
 					qg(39933, q(25411)),	-- A New Master
@@ -123,8 +121,6 @@ _.Zones =
 					qg(39433, qa(25278)),	-- Cleaning House
 					qg(40289, q(25597)),	-- Commander Jarod Shadowsong
 					qg(106204, q(42045, {	-- Communing With Malorne (QG in Emerald Dreamway)
-						["groups"] = {
-						},
 						["classes"]= {11},
 					})),
 --]]					
@@ -301,8 +297,6 @@ _.Zones =
 					})),
 --[[					
 					qg(115802, q(45532, {	-- Mother's Orders (add'l QG 119982)
-						["groups"] = {
-						},
 						["classes"]= {11},
 					})),
 ]]--

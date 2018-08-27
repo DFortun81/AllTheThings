@@ -33,8 +33,6 @@ _.Zones =
 					qg(24967, q(11526)),	-- The Missing Magistrix
 					qg(37527, qh(24564)),	-- The Purification of Quel'Delar
 					qg(37527, qh(24594, {	-- The Purification of Quel'Delar
-						["groups"] = {
-						},
 						["races"] = {10},	-- Blood Elf
 					})),
 					qg(37527, qa(24595)),	-- The Purification of Quel'Delar

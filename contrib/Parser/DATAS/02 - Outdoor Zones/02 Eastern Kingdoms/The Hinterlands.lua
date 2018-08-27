@@ -38,23 +38,15 @@ _.Zones =
 					}),
 ]]--				
 					qa(26486, {	-- 99 Bottles of Booze on the Beach
-						["groups"] = {
-						},
 						["qg"] = 43109,	-- Dron Blastbrew
 					}),
 					qa(26523, {	-- All That Skitters
-						["groups"] = {
-						},
 						["qg"] = 43156,	-- Fraggar Thundermantle
 					}),
 					qh(26310, {	-- All That Skitters
-						["groups"] = {
-						},
 						["qg"] = 42622,	-- Eliza Darkgrin
 					}),
 					qa(26547, {	-- A Mangy Threat
-						["groups"] = {
-						},
 						["qg"] = 5636,	-- Gryphon Master Talonaxe
 						["sourceQuests"] = { 26542 },	-- Hero's Call: The Hinterlands!
 					}),
@@ -82,8 +74,6 @@ _.Zones =
 						["qg"] = 42896,	-- Apothecary Surlis
 					}),
 					qh(26384, {	-- Darkcleric Marnal
-						["groups"] = {
-						},
 						["qg"] = 42622,	-- Eliza Darkgrin
 						["sourceQuests"] = { 26369 },	-- Hunt the Keeper
 					}),
@@ -111,21 +101,15 @@ _.Zones =
 						["qg"] = 42622,	-- Eliza Darkgrin
 						["sourceQuests"] = { 26310 },	-- All That Skitters
 					}),
-					qa(26498, {	-- Death to the Vilebranch 
-						["groups"] = {
-						},
+					qa(26498, {	-- Death to the Vilebranch
 						["qg"] = 43157,	-- Doran Steelwing
 						["sourceQuests"] = { 26497 },	-- Vilebranch Scum
 					}),
 					qh(26307, {	-- Death to the Vilebranch
-						["groups"] = {
-						},
 						["qg"] = 42642,	-- Death to the Vilebranch
 						["sourceQuests"] = { 26306 },	-- Start Taking Back
 					}),
 					qa(26496, {	-- Down with the Vilebranch
-						["groups"] = {
-						},
 						["qg"] = 43108,	-- Kerr Ironsight
 						["sourceQuests"] = { 26491, 26492 },	-- Skulk Rock Clean-Up & Skulk Rock Supplies
 					}),
@@ -173,13 +157,9 @@ _.Zones =
 					}),
 --					q(26527),	-- Gryphon Master Talonaxe (NEVER IMPLEMENTED?)
 					qa(26518, {	-- Heads Up
-						["groups"] = {
-						},
 						["qg"] = 43157,	-- Doran Steelwing
 					}),
 					qh(26366, {	-- Heads Up
-						["groups"] = {
-						},
 						["qg"] = 42642,	-- Primal Torntusk
 					}),
 					qa(26526, {	-- Hunt the Keeper
@@ -207,14 +187,10 @@ _.Zones =
 						["sourceQuests"] = { 26363 },	-- Summit of Fate
 					}),
 					qh(26224, {	-- Hunt the Savages
-						["groups"] = {
-						},
 						["qg"] = 14741,	-- Huntsman Markhor
 						["sourceQuests"] = { 26223 },	-- Stalking the Stalkers
 					}),
 					qa(27625, {	-- In Defense of Quel'Danil
-						["groups"] = {
-						},
 						["qg"] = 46475,	-- Anchorite Traska
 						["sourceQuests"] = { 27725 },	-- Quel'Danil Lodge
 					}),
@@ -237,25 +213,17 @@ _.Zones =
 						["sourceQuests"] = { 26307 },	-- Death to the Vilebranch
 					}),
 					qh(26212, {	-- Lard Lost His Lunch
-						["groups"] = {
-						},
 						["qg"] = 14731,	-- Lard
 					}),
 					qa(26515, {	-- Ongo'longo's Revenge
-						["groups"] = {
-						},
 						["qg"] = 43157,	-- Doran Steelwing
 						["sourceQuests"] = { 26518 },	-- Heads Up
 					}),
 					qh(26367, {	-- Ongo'longo's Revenge
-						["groups"] = {
-						},
 						["qg"] = 42642,	-- Primal Torntusk
 						["sourceQuests"] = { 26307 },	-- Death to the Vilebranch
 					}),
 					qa(26548, {	-- Out to the Front
-						["groups"] = {
-						},
 						["qg"] = 5636,	-- Gryphon Master Talonaxe
 						["sourceQuests"] = { 26547, 26546 },	-- A Mangy Threat & Razorbeak Friends
 					}),
@@ -282,13 +250,9 @@ _.Zones =
 						["sourceQuests"] = { 26238, 26263 },	-- The Savage Dwarves & Thornar Thunderclash						
 					}),
 					qh(26225, {	-- Pupellyverbos Port
-						["groups"] = {
-						},
 						["qg"] = 42464,	-- Grognard
 					}),
 					qa(27725, {	-- Quel'Danil Lodge
-						["groups"] = {
-						},
 						["qg"] = 46476,	-- Tracker Yoro
 						["sourceQuests"] = { 26526 },	-- Hunt the Keeper
 					}),
@@ -326,26 +290,18 @@ _.Zones =
 						["sourceQuests"] = { 26558 },	-- Summoning Shadra
 					}),
 					qa(26491, {	-- Skulk Rock Clean-Up
-						["groups"] = {
-						},
 						["qg"] = 43108,	-- Kerr Ironsight
 						["sourceQuests"] = { 26483, 26462 },	-- Gan'dranda & The Wicked Revantusk
 					}),
 					qh(26267, {	-- Skulk Rock Clean-Up
-						["groups"] = {
-						},
 						["qg"] = 42613,	-- Elder Torntusk
 						["sourceQuests"] = { 26238, 26263 },	-- The Savage Dwarves & Thornar Thunderclash
 					}),
 					qa(26492, {	-- Skulk Rock Supplies
-						["groups"] = {
-						},
 						["qg"] = 43108,	-- Kerr Ironsight
 						["sourceQuests"] = { 26483, 26462 },	-- Gan'dranda & The Wicked Revantusk
 					}),
 					qh(26268, {	-- Skulk Rock Supplies
-						["groups"] = {
-						},
 						["qg"] = 42613,	-- Elder Torntusk
 						["sourceQuests"] = { 26238, 26263 },	-- The Savage Dwarves & Thornar Thunderclash
 					}),
@@ -362,108 +318,72 @@ _.Zones =
 						["qg"] = 14740,	-- Katoom the Angler
 					}),
 					qh(26223, {	-- Stalking the Stalkers
-						["groups"] = {
-						},
 						["qg"] = 14741,	-- Huntsman Markhor
 					}),
 					qh(26306, {	-- Start Taking Back
-						["groups"] = {
-						},
 						["qg"] = 42642,	-- Primal Torntusk
 						["sourceQuests"] = { 26432 },	-- The Fall of Jintha'Alor
 					}),
 					qa(26643, {	-- Starvation Diet
-						["groups"] = {
-						},
 						["qg"] = 43200,	-- Gilda Cloudcaller
 						["sourceQuests"] = { 26641 },	-- Can't Make an Omelette Without...
 					}),
 					qh(26387, {	-- Starvation Diet
-						["groups"] = {
-						},
 						["qg"] = 42896,	-- Apothecary Surlis
 						["sourceQuests"] = { 26382 },	-- Can't Make an Omelette Without...
 					}),
 					qh(26240, {	-- Stomp To My Beat
-						["groups"] = {
-						},
 						["qg"] = 14739,	-- Mystic Yayo'jin
 					}),
 					qa(26517, {	-- Summit of Fate
-						["groups"] = {
-						},
 						["qg"] = 43156,	-- Fraggar Thundermantle
 						["sourceQuests"] = { 26515 },	-- Ongo'longo's Revenge
 					}),
 					qh(26363, {	-- Summit of Fate
-						["groups"] = {
-						},
 						["qg"] = 42642,	-- Primal Torntusk
 						["sourceQuests"] = { 26308, 26367 },	-- It's Ours Now & Ongo'longo's Revenge
 					}),
 					qa(26531, {	-- Summoning Shadra
-						["groups"] = {
-						},
 						["qg"] = 43200,	-- Gilda Cloudcaller
 						["sourceQuests"] = { 26530 },	-- The Shell of Shadra
 					}),
 					qh(26558, {	-- Summoning Shadra
-						["groups"] = {
-						},
 						["qg"] = 42898,	-- Darkcleric Marnal
 						["sourceQuests"] = { 26418 },	-- The Shell of Shadra
 					}),
 					qa(28505, {	-- The Battle for Andorhal
-						["groups"] = {
-						},
 						["qg"] = 5636,	-- Gryphon Master Talonaxe
 						["lvl"] = 35,
 					}),
 					qh(28508, {	-- The Battle for Andorhal (can't be picked up if you have "Warchief's Command: Western Plaguelands")
-						["groups"] = {
-						},
 						["qg"] = 42898,	-- Darkcleric Marnal
 						["lvl"] = 35,
 					}),
 					qa(26528, {	-- The Eye of Shadra
-						["groups"] = {
-						},
 						["qg"] = 43200,	-- Gilda Cloudcaller
 						["sourceQuests"] = { 27625, 27626 },	-- In Defense of Quel'Danil & The Highvale Documents
 					}),
 					qh(26381, {	-- The Eye of Shadra
-						["groups"] = {
-						},
 						["qg"] = 42898,	-- Darkcleric Marnal
 					}),
 					qh(26432, {	-- The Fall of Jintha'Alor
-						["groups"] = {
-						},
 						["qg"] = 42613,	-- Elder Torntusk
 						["sourceQuests"] = { 26267, 26268 },	-- Skulk Rock Clean-Up & Skulk Rock Supplies
 					}),
 					qa(26529, {	-- The Fang of Shadra
-						["groups"] = {
-						},
 						["qg"] = 43200,	-- Gilda Cloudcaller
 						["sourceQuests"] = { 26528 },	-- The Eye of Shadra
 					}),
 					qh(26406, {	-- The Fang of Shadra
-						["groups"] = {
-						},
 						["qg"] = 42898,	-- Darkcleric Marnal
 						["sourceQuests"] = { 26381 },	-- The Eye of Shadra
 					}),
 --					q(26282),	-- The Favor of Akil'darah (NEVER IMPLEMENTED?)
 					qa(27626, {	-- The Highvale Documents
-						["groups"] = {
-						},
 						["qg"] = 46475,	-- Anchorite Traska
 						["sourceQuests"] = { 27725 },	-- Quel'Danil Lodge
 					}),
 					qh(26238, {	-- The Savage Dwarves
-						["groups"] = {
-						},
 						["qg"] = 42613,	-- Elder Torntusk
 						["sourceQuests"] = { 28574 },	-- Warchief's Command: The Hinterlands!
 					}),
@@ -492,8 +412,6 @@ _.Zones =
 						["sourceQuests"] = { 26406 },	-- The Fang of Shadra
 					}),
 					qa(26462, {	-- The Wicked Revantusk
-						["groups"] = {
-						},
 						["qg"] = 43108,	-- Kerr Ironsight
 					}),
 					qh(26263, {	-- Thornar Thunderclash
@@ -507,20 +425,14 @@ _.Zones =
 						["qg"] = 42613,	-- Elder Torntusk
 					}),
 					qa(26525, {	-- Venomous Secrets
-						["groups"] = {
-						},
 						["qg"] = 43156,	-- Fraggar Thundermantle
 						["sourceQuests"] = { 26517 },	-- Summit of Fate
 					}),
 					qh(26368, {	-- Venomous Secrets
-						["groups"] = {
-						},
 						["qg"] = 42622,	-- Eliza Darkgrin
 						["sourceQuests"] = { 26309 },	-- Dark Vessels
 					}),
 					qa(26497, {	-- Vilebranch Scum
-						["groups"] = {
-						},
 						["qg"] = 43157,	-- Doran Steelwing
 						["sourceQuests"] = { 26496 },	-- Down with the Vilebranch
 					}),

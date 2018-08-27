@@ -595,8 +595,6 @@ _.Zones =
 					qg(, qh(28166)),	-- Thog's Nightlight
 --]]
 					ql(q(29934, {	-- To Ravenholdt
-						["groups"] = {
-						},
 						["qg"] = 55488,	-- Corastrasza
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 29802 },	-- A Hidden Message

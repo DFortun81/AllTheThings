@@ -48,22 +48,16 @@ _.Zones =
 								["qg"] = 47779,	-- Mouton Flamestar
 							}),
 							qa(28174, {	-- Burning Vengeance
-								["groups"] = {
-								},
 								["qg"] = 47811,	-- John J. Keeshan
 								["sourceQuests"] = { 28666 },	-- Hero's Call: Burning Steppes!
 								["description"] = "This version of the quest is provided for players who DID NOT complete John J. Keeshan's questline in Redridge Mountains."
 							}),
 							qa(28416, {	-- Burning Vengeance (for players who completed Redridge Keeshan questline)
-								["groups"] = {
-								},
 								["qg"] = 47811,	-- John J. Keeshan
 								["sourceQuests"] = { 28666 },	-- Hero's Call: Burning Steppes!
 								["description"] = "This version of the quest is provided for players who DID complete John J. Keeshan's questline in Redridge Mountains."
 							}),
 							qh(28418, {	-- Burning Vengeance
-								["groups"] = {
-								},
 								["qg"] = 48559,	-- Ariok
 								["sourceQuests"] = { 28667 },	-- Warchief's Command: Burning Steppes!
 							}),
@@ -85,14 +79,10 @@ _.Zones =
 								["sourceQuests"] = { 28418 },	-- Burning Vengeance
 							}),
 							qa(28178, {	-- A Future Project
-								["groups"] = {
-								},
 								["qg"] = 47811,	-- John J. Keeshan
 								["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance
 							}),
 							qh(28420, {	-- A Future Project
-								["groups"] = {
-								},
 								["qg"] = 48559,	-- Ariok
 								["sourceQuests"] = { 28418 },	-- Burning Vengeance
 							}),
@@ -111,50 +101,34 @@ _.Zones =
 								["sourceQuests"] = { 28418 },	-- Burning Vengeance						
 							}),
 							qa(28180, {	-- The Sand, the Cider, and the Orb
-								["groups"] = {
-								},
 								["qg"] = 47811,	-- John J. Keeshan
 								["sourceQuests"] = { 28178, 28179, 28177 },	-- A Future Project, Mud Hunter, & Stocking Up
 							}),
 							qh(28422, {	-- The Sand, the Cider, and the Orb
-								["groups"] = {
-								},
 								["qg"] = 48559,	-- Ariok
 								["sourceQuests"] = { 28420, 28421, 28419 },	-- A Future Project, Mud Hunter, & Stocking Up
 							}),
 							qa(28181, {	-- Warlocks Have the Neatest Stuff
-								["groups"] = {
-								},
 								["qg"] = 14437,	-- Gorzeeki Wildeyes
 								["sourceQuests"] = { 28180 },	-- The Sand, the Cider, and the Orb
 							}),
 							qh(28423, {	-- Warlocks Have the Neatest Stuff
-								["groups"] = {
-								},
 								["qg"] = 14437,	-- Gorzeeki Wildeyes
 								["sourceQuests"] = { 28422 },	-- The Sand, the Cider, and the Orb
 							}),
 							qa(28182, {	-- Shadow Boxing
-								["groups"] = {
-								},
 								["qg"] = 14437,	-- Gorzeeki Wildeyes
 								["sourceQuests"] = { 28180 },	-- The Sand, the Cider, and the Orb
 							}),
 							qh(28424, {	-- Shadow Boxing
-								["groups"] = {
-								},
 								["qg"] = 14437,	-- Gorzeeki Wildeyes
 								["sourceQuests"] = { 28422 },	-- The Sand the Cider, and the Orb
 							}),
 							qh(28425, {	-- Return to Ariok
-								["groups"] = {
-								},
 								["qg"] = 14437,	-- Gorzeeki Wildeyes
 								["sourceQuests"] = { 28424, 28423 },	-- Shadow Boxing & Warlocks Have the Neatest Stuff
 							}),
 							qa(28183, {	-- Return to Keeshan (awarded "Preparation" criteria)
-								["groups"] = {
-								},
 								["qg"] = 14437,	-- Gorzeeki Wildeyes
 								["sourceQuests"] = { 28182, 28181 },	-- Shadow Boxing & Warlocks Have the Neatest Stuff
 							}),
@@ -181,82 +155,58 @@ _.Zones =
 								["sourceQuests"] = { 28425 },	-- Return to Ariok
 							}),
 							qa(28254, {	-- A Needle in a Hellhole
-								["groups"] = {
-								},
 								["qg"] = 48109,	-- John J. Keeshan
 								["sourceQuests"] = { 28184 },	-- Chiselgrip, Heart of the Steppes
 							}),
 							qh(28427, {	-- A Needle in a Hellhole
-								["groups"] = {
-								},
 								["qg"] = 48568,	-- Eitrigg
 								["sourceQuests"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
 							}),
 							q( 28202, {	-- A Perfect Costume
-								["groups"] = {
-								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 3, 29 },	-- Dwarf, Void Elf
 								["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 							}),
 							q( 28203, {	-- A Perfect Costume
-								["groups"] = {
-								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 11, 22 },	-- Draenei, Worgen, Lightforged Draenei
 								["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 							}),
 							q( 28204, {	-- A Perfect Costume
-								["groups"] = {
-								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 7 },	-- Gnome
 								["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 							}),
 							q( 28205, {	-- A Perfect Costume
-								["groups"] = {
-								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 4 },	-- Night Elf
 								["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 							}),
 							q( 28428, {	-- A Perfect Costume
-								["groups"] = {
-								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 2, 5 },	-- Orc, Undead
 								["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 							}),
 							q( 28429, {	-- A Perfect Costume (NEEDS CONFIRMATION ON HIGHMOUNTAIN TAUREN)
-								["groups"] = {
-								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 6, 26, 28 },	-- Tauren, Pandaren, Highmountain Tauren (UNCONFIRMED)
 								["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 							}),
 							q( 28430, {	-- A Perfect Costume
-								["groups"] = {
-								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 9 },	-- Goblin
 								["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 							}),
 							q( 28431, {	-- A Perfect Costume
-								["groups"] = {
-								},
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 8, 10, 27 },	-- Troll, Blood Elf, Nightborne
 								["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 							}),
 							q( 28225, {	-- Prove Yer Allegiance
-								["groups"] = {
-								},
 								["qg"] = 48033,	-- Stebben Oreknuckle
 								["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
 							}),
 							q( 28226, {	-- Scrapped Golems
-								["groups"] = {
-								},
 								["qg"] = 48033,	-- Stebben Oreknuckle
 								["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
 							}),
@@ -271,48 +221,32 @@ _.Zones =
 								["sourceQuests"] = { 28225, 28226 },	-- Prove Yer Allegiance & Scrapped Golems
 							}),
 							qa(28239, {	-- Into the Black Tooth Hovel
-								["groups"] = {
-								},
 								["qg"] = 48109,	-- John J. Keeshan
 								["sourceQuests"] = { 28202, 28203, 28204, 28205 },	-- A Perfect Costume (Alliance Versions)
 							}),
 							qh(28432, {	-- Into the Black Tooth Hovel
-								["groups"] = {
-								},
 								["qg"] = 48568,	-- Eitrigg
 								["sourceQuests"] = { 28428, 28429, 28430, 28431 },	-- A Perfect Costume (Horde versions)
 							}),
 							qa(28245, {	-- Grunt Work
-								["groups"] = {
-								},
 								["qg"] = 48085,	-- Quartermaster Kaoshin
 								["sourceQuests"] = { 28239 },	-- Into the Black Tooth Hovel
 							}),
 							qh(28433, {	-- Grunt Work
-								["groups"] = {
-								},
 								["qg"] = 48085,	-- Quartermaster Kaoshin
 								["sourceQuests"] = { 28432 },	-- Into the Black Tooth Hovel
 							}),
 							qa(28246, {	-- Strategic Cuts
-								["groups"] = {
-								},
 								["sourceQuests"] = { 28245 },	-- Grunt Work
 							}),
 							qh(28434, {	-- Strategic Cuts
-								["groups"] = {
-								},
 								["sourceQuests"] = { 28433 },	-- Grunt Work (procs after accepting)
 							}),
 							qa(28252, {	-- The Kodocaller's Horn
-								["groups"] = {
-								},
 								["qg"] = 48085,	-- Quartermaster Kaoshin
 								["sourceQuests"] = { 28245 },	-- Grunt Work
 							}),
 							qh(28435, {	-- The Kodocaller's Horn
-								["groups"] = {
-								},
 								["qg"] = 48085,	-- Quartermaster Kaoshin
 								["sourceQuests"] = { 28433, 28434 },	-- Grunt Work & Strategic Cuts
 							}),
@@ -333,14 +267,10 @@ _.Zones =
 								["sourceQuests"] = { 28435 },	-- The Kodocaller's Horn
 							}),
 							qa(28265, {	-- General Thorg'izog
-								["groups"] = {
-								},
 								["qg"] = 48109,	-- John J. Keeshan
 								["sourceQuests"] = { 28227 },	-- Golem Training
 							}),
 							qh(28437, {	-- General Thorg'izog
-								["groups"] = {
-								},
 								["qg"] = 48568,	-- Eitrigg
 								["sourceQuests"] = { 28227 },	-- Golem Training
 							}),
@@ -363,25 +293,17 @@ _.Zones =
 								["sourceQuests"] = { 28437 },	-- General Thorg'izog
 							}),
 							qa(28278, {	-- I Am the Law and I Am the Lash
-								["groups"] = {
-								},
 								["qg"] = 48133,	-- General Thorg'izog
 								["sourceQuests"] = { 28266 },	-- Trial by Magma
 							}),
 							qh(28439, {	-- I Am the Law and I Am the Lash
-								["groups"] = {
-								},
 								["qg"] = 48133,	-- General Thorg'izog
 								["sourceQuests"] = { 28438 },	-- Trial by Magma
 							}),
 							qa(28279, {	-- Abuse of Power
-								["groups"] = {
-								},
 								["sourceQuests"] = { 28278 },	-- I Am the Law and I Am the Lash
 							}),
 							qh(28440, {	-- Abuse of Power
-								["groups"] = {
-								},
 								["sourceQuests"] = { 28439 },	-- I Am the Law and I Am the Lash
 							}),
 							qa(28286, {	-- Enough Damage For One Day (awarded "Infiltration" criteria)
@@ -405,86 +327,58 @@ _.Zones =
 						}),
 						crit(4, { -- Anticipation (28326)
 							qa(28310, {	-- Morgan's Vigil
-								["groups"] = {
-								},
 								["qg"] = 48110,	-- Colonel Troteman
 								["sourceQuests"] = { 28286 },	-- Enough Damage for One Day
 							}),
 							qh(28442, {	-- Flame Crest
-								["groups"] = {
-								},
 								["qg"] = 48568,	-- Eitrigg
 								["sourceQuests"] = { 28441 },	-- Enough Damage for One Day
 							}),
 							qa(28311, {	-- Blackened Ashes
-								["groups"] = {
-								},
 								["qg"] = 48307,	-- Colonel Troteman
 								["sourceQuests"] = { 28310 },	-- Morgan's Vigil
 							}),
 							qh(28443, {	-- Blackened Ashes
-								["groups"] = {
-								},
 								["qg"] = 48569,	-- Eitrigg
 								["sourceQuests"] = { 28442 },	-- Flame Crest
 							}),
 							qa(28312, {	-- Latent Demons of the Land
-								["groups"] = {
-								},
 								["qg"] = 48307,	-- Colonel Troteman
 								["sourceQuests"] = { 28310 },	-- Morgan's Vigil
 							}),
 							qh(28444, {	-- Latent Demons of the Land
-								["groups"] = {
-								},
 								["qg"] = 48569,	-- Eitrigg
 								["sourceQuests"] = { 28442 },	-- Flame Crest
 							}),
 							qa(28313, {	-- A Heap of Delicious Worg
-								["groups"] = {
-								},
 								["qg"] = 48307,	-- Colonel Troteman
 								["sourceQuests"] = { 28310 },	-- Morgan's Vigil
 							}),
 							qh(28445, {	-- A Heap of Delicious Worg
-								["groups"] = {
-								},
 								["qg"] = 48569,	-- Eitrigg
 								["sourceQuests"] = { 28442 },	-- Flame Crest
 							}),
 							qa(28314, {	-- Blood Tour (secondary QG ID 48346)
-								["groups"] = {
-								},
 								["qg"] = 48306,	-- John J. Keeshan
 								["sourceQuests"] = { 28313, 28311, 28312 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
 							}),
 							qh(28446, {	-- Blood Tour
-								["groups"] = {
-								},
 								["qg"] = 48565,	-- Ariok
 								["sourceQuests"] = { 28445, 28443, 28444 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
 							}),
 							qa(28315, {	-- Draconic Vanguard
-								["groups"] = {
-								},
 								["qg"] = 48346,	-- John J. Keeshan (can be 48306, same NPC, if you pick up Blood Tour last)
 								["sourceQuests"] = { 28313, 28311, 28312 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
 							}),
 							qh(28447, {	-- Draconic Vanguard (secondary QG ID 48567)
-								["groups"] = {
-								},
 								["qg"] = 48567,	-- Ariok (secondary ID can be 48565, same NPC, if you pick up Blood Tour last)
 								["sourceQuests"] = { 28445, 28443, 28444 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
 							}),
 							qa(28316, {	-- A Deal With a Dragon (secondary QG ID 48346)
-								["groups"] = {
-								},
 								["qgs"] = {48346, 48306},	-- John J. Keeshan (can be 48306, same NPC, if you pick up Blood Tour last)
 								["sourceQuests"] = { 28313, 28311, 28312 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
 							}),
 							qh(28448, {	-- A Deal With a Dragon (secondary QG ID 48567)
-								["groups"] = {
-								},
 								["qgs"] = {48567, 48565},	-- Ariok (secondary ID can be 48565, same NPC, if you pick up Blood Tour last)
 								["sourceQuests"] = { 28445, 28443, 28444 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
 							}),
@@ -509,38 +403,26 @@ _.Zones =
 						}),
 						crit(2, { -- Annihilation (28322)
 							qa(28317, {	-- A Delivery for Thorg'izog
-								["groups"] = {
-								},
 								["qg"] = 48307,	-- Colonel Troteman
 								["sourceQuests"] = { 28326 },	-- Placing the Pawns
 							}),
 							qh(28450, {	-- A Delivery for Thorg'izog
-								["groups"] = {
-								},
 								["qg"] = 48569,	-- Eitrigg
 								["sourceQuests"] = { 28449 },	-- Placing the Pawns
 							}),
 							qa(28318, {	-- A Delivery for Neeralak
-								["groups"] = {
-								},
 								["qg"] = 48307,	-- Colonel Troteman
 								["sourceQuests"] = { 28326 },	-- Placing the Pawns
 							}),
 							qh(28451, {	-- A Delivery for Neeralak
-								["groups"] = {
-								},
 								["qg"] = 48569,	-- Eitrigg
 								["sourceQuests"] = { 28449 },	-- Placing the Pawns
 							}),
 							qa(28319, {	-- A Delivery for Xi'lun
-								["groups"] = {
-								},
 								["qg"] = 48307,	-- Colonel Troteman
 								["sourceQuests"] = { 28326 },	-- Placing the Pawns
 							}),
 							qh(28452, {	-- A Delivery for Xi'lun
-								["groups"] = {
-								},
 								["qg"] = 48569,	-- Eitrigg
 								["sourceQuests"] = { 28449 },	-- Placing the Pawns
 							}),
@@ -563,26 +445,18 @@ _.Zones =
 								["sourceQuests"] = { 28451, 28450, 28452 },	-- A Delivery for Neeralak, A Delivery for Thorg'izog, & A Delivery for Xi'lun
 							}),
 							qa(28320, {	-- Assault on Dreadmaul Rock
-								["groups"] = {
-								},
 								["qg"] = 48306,	-- John J. Keeshan
 								["sourceQuests"] = { 28327 },	-- Locked and Loaded
 							}),
 							qh(28454, {	-- Assault on Dreadmaul Rock
-								["groups"] = {
-								},
 								["qg"] = 48565,	-- Ariok
 								["sourceQuests"] = { 28453 },	-- Locked and Loaded
 							}),
 							qa(28321, {	-- Glory Amidst Chaos
-								["groups"] = {
-								},
 								["qg"] = 48307,	-- Colonel Troteman
 								["sourceQuests"] = { 28320 },	-- Assault on Dreadmaul Rock
 							}),
 							qh(28455, {	-- Glory Amidst Chaos
-								["groups"] = {
-								},
 								["qg"] = 48569,	-- Eitrigg
 								["sourceQuests"] = { 28454 },	-- Assault on Dreadmaul Rock
 							}),
@@ -615,13 +489,9 @@ _.Zones =
 						-- }),
 						sz(775, 2, { -- Morgan's Vigil
 							qdg(qa(27471, {	-- Blackrock Anomaly
-								["groups"] = {
-								},
 								["qg"] = 9562,	-- Hellendis Riverhorn
 							})),
 							qa(28569, {	-- The Bogpaddle Bullet (mutually exclusive with "Hero's Call: Swamp of Sorrows!")
-								["groups"] = {
-								},
 								["qg"] = 9177,	-- Oralius
 								["isBreadcrumb"] = true,
 							}),
@@ -642,8 +512,6 @@ _.Zones =
 						-- }),
 						sz(775, 5, { -- Ruins of Thaurissan NOTE: Should be Flame Crest
 							qh(28570, {	-- The Bogpaddle Bullet (mutually exclusive with "Warchief's Command: Swamp of Sorrows!")
-								["groups"] = {
-								},
 								["qg"] = 10260,	-- Kibler
 								["lvl"] = 40,
 								["isBreadcrumb"] = true,
@@ -665,7 +533,6 @@ _.Zones =
 							i(142344, { -- Broken Axe Blade
 								["groups"] = {
 									q(44926, { -- A Familiar Axe to Grind
-										["groups"] = {},
 										["qgs"] = {
 											48201,	-- Blackrock Sergeant
 											7027,	-- Blackrock Slayer
@@ -692,8 +559,6 @@ _.Zones =
 						-- }),
 						sz(775, 10, { -- Blackrock Mountain
 							qdg(q(7848, {	-- Attunement to the Core
-								["groups"] = {
-								},
 								["qg"] = 14387,	-- Lothos Riftwalker
 								["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
 							})),
@@ -705,13 +570,9 @@ _.Zones =
 							qdg(qh(28069)),	-- Adventurers Wanted: Blackrock Depths
 						}), --]]					
 	--[[				qdg(qg(9563, qa(27469))),	-- Friends on The Other Side (Alliance NPC doesn't seem to offer the quest - marked Horde NPC as "q" instead of "qh")
-							["groups"] = {
-							},
 							["qg"] = 9563,	-- Ragged John
 						})),	--]]
 						qdg(q(27469, {	-- Friends on The Other Side
-							["groups"] = {
-							},
 							["qg"] = 56899,	-- Ragged Jong
 						})),
 					}),

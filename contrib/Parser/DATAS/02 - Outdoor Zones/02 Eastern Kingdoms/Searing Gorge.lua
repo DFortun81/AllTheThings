@@ -38,22 +38,16 @@ _.Zones =
 								["sourceQuests"] = { 28512,28581,28582 }, -- "To the Aid of the Thorium Brotherhood", "Warchief's Command: Searing Gorge", "Hero's Call: Searing Gorge"
 							}),
 							q(27964, {	--Dig-Boss Dinwhisker
-								["groups"] = {
-								},
 								["qg"] = 47266,	-- Jack Rockleg
 								["sourceQuests"] = { 27963 }, -- "A New Master...But Who?"
 							}),
 						}),
 						crit(2, { -- The Seat of the Brotherhood (qID 27979)
 							q(27965, {	--Thorium Point: The Seat of the Brotherhood
-								["groups"] = {
-								},
 								["qg"] = 47266,	-- Jack Rockleg
 								["sourceQuests"] = { 27957,27964 }, -- 
 							}),
 							q(27981, {	--Heat That Just Don't Quit
-								["groups"] = {
-								},
 								["qg"] = 14627,	-- Hansel Heavyhands
 							}),
 							q(27976, { -- Curse These Fat Fingers
@@ -77,46 +71,32 @@ _.Zones =
 								["sourceQuests"] = { 27965 }, -- 
 							}),
 							q(27983, {	--Lunk's Adventure: Cranky Little Dwarfs
-								["groups"] = {
-								},
 								["qg"] = 47429,	-- Lunk
 								["sourceQuests"] = { 27977 },
 							}),
 							q(28099, {	--Rasha'krak
-								["groups"] = {
-								},
 								["qg"] = 14625,	-- Overseer Oilfist
 								["sourceQuests"] = { 27965 }, -- 
 							}),
 							q(27982, {	--Twilight Collars
-								["groups"] = {
-								},
 								["qg"] = 14626,	-- Taskmaster Scrange
 								["sourceQuests"] = { 27977 }, -- 
 							}),
 							q(27979, {	--Dark Ministry
-								["groups"] = {
-								},
 								["qg"] = 14627,	-- Hansel Heavyhands
 								["sourceQuests"] = { 27976,27977 }, -- 
 							}),
 						}),
 						crit(3, { -- In the Hall of the Mountain-Lord (qID 28035)
 							q(27986, {	--In the Hall of the Mountain-Lord
-								["groups"] = {
-								},
 								["qg"] = 14627,	-- Hansel Heavyhands
 								["sourceQuests"] = { 27979 }, -- Dark Ministry
 							}),
 							q(28028, {	--Siege!
-								["groups"] = {
-								},
 								["qg"] = 47393,	-- Mountain-Lord Rendan
 								["sourceQuests"] = { 27986 }, -- 
 							}),
 							q(28029, {	--Set Them Ablaze!
-								["groups"] = {
-								},
 								["qg"] = 47393,	-- Mountain-Lord Rendan
 								["sourceQuests"] = { 27986 }, -- 
 							}),
@@ -134,20 +114,14 @@ _.Zones =
 								["sourceQuests"] = { 27986 }, -- 
 							}),
 							q(28033, {	--Deceit
-								["groups"] = {
-								},
 								["qg"] = 47393,	-- Mountain-Lord Rendan
 								["sourceQuests"] = { 28028,28029,28030 }, -- "Siege!", "Set Them Ablaze!", "They Build a Better Bullet"
 							}),
 							q(28034, {	--Lunk's Adventure: Rendan's Weakness
-								["groups"] = {
-								},
 								["qg"] = 47429,	-- Lunk
 								["sourceQuests"] = { 28033 }, -- Deceit
 							}),
 							q(28035, {	--The Mountain-Lord's Support
-								["groups"] = {
-								},
 								["qg"] = 47393,	-- Mountain-Lord Rendan
 								["sourceQuests"] = { 28034 }, -- Lunk's Adventure: Rendan's Weakness
 							}),
@@ -163,14 +137,10 @@ _.Zones =
 								["sourceQuests"] = { 28035 },
 							}),
 							q(28054, {	--Slavery is Bad
-								["groups"] = {
-								},
 								["qg"] = 47393,	-- Mountain-Lord Rendan
 								["sourceQuests"] = { 28052 }, -- 
 							}),
 							q(28055, {	--Sweet, Horrible Freedom
-								["groups"] = {
-								},
 								["qg"] = 47393,	-- Mountain-Lord Rendan
 								["sourceQuests"] = { 28052 }, -- 
 							}),
@@ -186,8 +156,6 @@ _.Zones =
 								["sourceQuests"] = { 28052 }, -- 
 							}),
 							q(28057, {	--Kill 'em With Sleep Deprivation
-								["groups"] = {
-								},
 								["qg"] = 14628,	-- Evonice Sootsmoker
 								["sourceQuests"] = { 28054,28055,28056 }, -- "Slavery Is Bad", "Sweet, Horrible Freedom", "Rise, Obsidion"
 							}),
@@ -202,20 +170,14 @@ _.Zones =
 								}),
 							}),
 							q(28060, {	--Twisted Twilight Ties
-								["groups"] = {
-								},
 								["qg"] = 14626,	-- Taskmaster Scrange
 								["sourceQuests"] = { 28057 }, -- Kill 'em With Sleep Deprivation
 							}),
 							q(28061, {	--Minions of Calcinder
-								["groups"] = {
-								},
 								["qg"] = 14625,	-- Overseer Oilfist
 								["sourceQuests"] = { 28060 },
 							}),
 							q(28062, {	--From Whence He Came
-								["groups"] = {
-								},
 								["qg"] = 14625,	-- Overseer Oilfist
 								["sourceQuests"] = { 28060 }, -- Twisted Twilight Ties
 							}),
@@ -232,21 +194,15 @@ _.Zones =
 					n(-168, { -- Other Quests
 						sz(774, 1, { -- Firewatch Ridge
 							q(27984, {	--Lunthistle's Tale
-								["groups"] = {
-								},
 								["qg"] = 8436,	-- Zamael Lunthistle
 							}),
 							q(27985, {	--Prayer to Elune
-								["groups"] = {
-								},
 								["qg"] = 8436,	-- Zamael Lunthistle
 								["sourceQuests"] = { 27984 }, -- Lunthistle's Tale
 							}),
 						}),
 						sz(774, 2, { -- The Cauldron
 							qdg(q(27470, {	-- A Potential Ally
-								["groups"] = {
-								},
 								["qg"] = 14625,	-- Overseer Oilfist
 							})),
 						}),
@@ -266,13 +222,9 @@ _.Zones =
 						}),
 						sz(774, 5, { -- Grimesilt Dig Site
 							q(27956, {	--Lunk's Task
-								["groups"] = {
-								},
 								["qg"] = 47269,	-- Lunk
 							}),
 							q(27957, {	--Lunk No Kill
-								["groups"] = {
-								},
 								["qg"] = 47269,	-- Lunk
 								["sourceQuests"] = { 27956 }, -- Lunk's Task
 							}),
@@ -286,14 +238,10 @@ _.Zones =
 								["sourceQuests"] = { 27957 }, -- Lunk No Kill
 							}),
 							q(27959, {	--Lunk's Adventure: Spider Rider
-								["groups"] = {
-								},
 								["qg"] = 47429,	-- Lunk
 								["sourceQuests"] = { 27958 }, -- A Proper Antivenom
 							}),
 							q(27960, {	--The Fewer, the Better
-								["groups"] = {
-								},
 								["qg"] = 47267,	-- Burrian Coalpart
 							}),
 							q(27961, { -- Out of Place
@@ -307,8 +255,6 @@ _.Zones =
 								["sourceQuests"] = { 27960 }, -- The Fewer, the Better
 							}),
 							q(27962, {	--A Lumbering Relic
-								["groups"] = {
-								},
 								["qg"] = 47267,	-- Burrian Coalpart
 								["sourceQuests"] = { 27960 }, -- The Fewer, the Better
 							}),
@@ -317,29 +263,19 @@ _.Zones =
 						-- }),
 						sz(774, 7, { -- Thorium Point
 							qh(28515, {	--Mouton Flamestar
-								["groups"] = {
-								},
 								["qg"] = 14625,	-- Overseer Oilfist
 							}),
 							qa(28514, {	--Mouton Flamestar
-								["groups"] = {
-								},
 								["qg"] = 14625,	-- Overseer Oilfist
 							}),
 							q(27980, {	--The Spiders Have to Go
-								["groups"] = {
-								},
 								["qg"] = 14634,	-- Lookout Captain Lolo Longstriker
 							}),
 							q(13662, {	--Gaining Acceptance
-								["groups"] = {
-								},
 								["qg"] = 14624,	-- Master Smith Burninate
 								["sourceQuests"] = { 28064 }, -- Welcome to the Brotherhood
 							}),
 							q(7737, {	--Gaining Even More Acceptance
-								["groups"] = {
-								},
 								["qg"] = 14624,	-- Master Smith Burninate
 								["sourceQuests"] = { 28064 }, -- Welcome to the Brotherhood
 							}),

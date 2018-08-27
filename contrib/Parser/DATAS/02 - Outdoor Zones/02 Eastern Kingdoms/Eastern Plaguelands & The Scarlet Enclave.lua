@@ -48,43 +48,33 @@ _.Zones =
 					ach(4892, { -- Eastern Plaugelands Quests
 						crit(1, { -- The Paladin Pals
 							q(27684, {	-- Visitors
-								["groups"] = {
-								},
 								["qg"] = 11034,	-- Lord Maxwell Tyrosus
 								["isBreadcrumb"] = true,	-- for "Gidwin Goldbraids"
 							}),
 							q(27367, {	-- Gidwin Goldbraids
-								["groups"] = {
-								},
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
 							}),
 							q(27368, {	-- Just Encased
-								["groups"] = {
-								},
 								["qg"] = 45428,	-- Gidwin Goldbraids
 								["sourceQuests"] = { 27367 },	-- Gidwin Goldbraids
 							}),
 							q(27369, { -- Greasing the Wheel
 								["groups"] = {
-								i(62938),  -- Giddy's Old Gloves
-								i(62937),  -- Thorondoril River Boots
-								i(62936),  -- Treads of Banshee Bells
-								i(62935),  -- Flower Picker's Gloves
-								i(131668), -- Stem-Laced Boots
+									i(62938),  -- Giddy's Old Gloves
+									i(62937),  -- Thorondoril River Boots
+									i(62936),  -- Treads of Banshee Bells
+									i(62935),  -- Flower Picker's Gloves
+									i(131668), -- Stem-Laced Boots
 								},
 								["qg"] = 45428, -- Gidwin Goldbraids
 								["sourceQuests"] = { 27368 },	-- Just Encased
 							}),
 							q(27370, {	-- Tarenar Sunstrike
-								["groups"] = {
-								},
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
 							}),
 							q(27371, {  -- What I Do Best
-								["groups"] = {
-								},
 								["qg"] = 45429, -- Tarenar Sunstrike
 								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 							}),
@@ -102,21 +92,15 @@ _.Zones =
 								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 							}),
 							q(27373, {	-- Onward, to Light's Hope Chapel
-								["groups"] = {
-								},
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27369, 27372 },	-- "Greasing the Wheel", "A Gift For Fiona"
 							}),
 						}),
 						crit(2, { -- The Redpaths of Darrowshire
 							q(27383, {	-- Little Pamela
-								["groups"] = {
-								},
 								["qg"] = 11063,	-- Carlin Redpath
 							}),
 							q(27384, {	-- Pamela's Doll
-								["groups"] = {
-								},
 								["qg"] = 10926,	-- Pamela Redpath
 								["sourceQuests"] = { 27383 },	-- "Little Pamela"
 							}),
@@ -130,14 +114,10 @@ _.Zones =
 								["sourceQuests"] = { 27383 },	-- "Little Pamela"
 							}),
 							q(27385, {	-- Uncle Carlin
-								["groups"] = {
-								},
 								["qg"] = 10926,	-- Pamela Redpath
 								["sourceQuests"] = { 27384,27392 },	-- "Little Pamela"
 							}),
 							q(27386, {	-- A Strange Historian
-								["groups"] = {
-								},
 								["qg"] = 11063,	-- Carlin Redpath
 								["sourceQuests"] = { 27385 },	-- "Little Pamela"
 							}),
@@ -152,14 +132,10 @@ _.Zones =
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 							}),
 							q(27388, {	-- Heroes of Darrowshire
-								["groups"] = {
-								},
 								["qg"] = 10667,	-- Chromie
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 							}),
 							q(27389, {	-- Marauders of Darrowshire
-								["groups"] = {
-								},
 								["qg"] = 10667,	-- Chromie
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 							}),
@@ -179,38 +155,28 @@ _.Zones =
 									i(62959),   -- Hidden Treasure
 									i(62958),   -- Militia Hatchet
 									i(157007),	-- Militia Dagger
-									},
+								},
 								["qg"] = 10926,	-- Pamela Redpath
 								["sourceQuests"] = { 27390 },	-- "The Battle of Darrowshire"
 							}),
 						}),
 						crit(3, { -- Tyr's Hand
 							q(27459, {	-- The Brotherhood of Light
-								["groups"] = {
-								},
 								["qg"] = 11036,	-- Leonid Barthalomew the Revered
 							}),
 							q(27460, {	-- Soft Landing
-								["groups"] = {
-								},
 								["qg"] = 16116,	-- 
 								["sourceQuests"] = {27459},
 							}),
 							o(205875, {	-- Crusader's Flare
 								q(27461, {	-- To Take the Abbey
-									["groups"] = {
-									},
 									["sourceQuests"] = {27460},
 								}),
 								q(27462, {	-- To Take the Barracks
-									["groups"] = {
-									},
 									["sourceQuests"] = {27460},
 								}),
 							}),
 							q(27612, {	-- Victory From Within
-								["groups"] = {
-								},
 								["qg"] = 16115,
 								["sourceQuests"] = {27461},
 							}),
@@ -224,26 +190,18 @@ _.Zones =
 								["sourceQuests"] = {27461},
 							}),
 							q(27617, {	-- Befouled No More
-								["groups"] = {
-								},
 								["qg"] = 16115,
 								["sourceQuests"] = {27612,27613},
 							}),
 							q(27614, {	-- Scarlet Salvage
-								["groups"] = {
-								},
 								["qg"] = 16112,
 								["sourceQuests"] = {27462},
 							}),
 							q(27615, {	-- The Wrathcaster
-								["groups"] = {
-								},
 								["qg"] = 16112,
 								["sourceQuests"] = {27462},
 							}),
 							q(27616, {	-- The Huntsman
-								["groups"] = {
-								},
 								["qg"] = 16112,
 								["sourceQuests"] = {27462},
 							}),
@@ -257,8 +215,6 @@ _.Zones =
 								["sourceQuests"] = {27462},
 							}),
 							q(27618, {	-- Argent Upheaval
-								["groups"] = {
-								},
 								["qg"] = 16112,
 								["sourceQuests"] = {27614,27615,27616,27619},
 							}),
@@ -274,26 +230,18 @@ _.Zones =
 						}),
 						crit(4, { -- Serving the Argent Crusade
 							q(27463, {	-- A Boyhood Dream
-								["groups"] = {
-								},
 								["qg"] = 45431,	-- Gidwin Goldbraids
 								["sourceQuests"] = {27455}, -- "Boys Will Be Boys"
 							}),
 							q(27464, {	-- Argent Call: The Trial of the Crypt
-								["groups"] = {
-								},
 								["qg"] = 11034,	-- Lord Maxwell Tyrosus
 								["sourceQuests"] = {27463}, -- "A Boyhood Dream"
 							}),
 							q(27465, {	-- Argent Call: The Noxious Glade
-								["groups"] = {
-								},
 								["qg"] = 11034,	-- Lord Maxwell Tyrosus
 								["sourceQuests"] = {27464}, -- "Argent Call: The Trial of the Crypt"
 							}),
 							q(27466, {	-- Argent Call: Northdale
-								["groups"] = {
-								},
 								["qg"] = 45729,	-- Tarenar Sunstrike
 								["sourceQuests"] = {27465}, -- "Argent Call: The Noxious Glade"
 							}),
@@ -308,34 +256,24 @@ _.Zones =
 								["sourceQuests"] = {27466}, -- "Argent Call: Northdale"
 							}),
 							q(27488, {	-- Impatience
-								["groups"] = {
-								},
 								["qg"] = 45729,	-- Tarenar Sunstrike
 								["sourceQuests"] = {27487}, -- "Ix'lar the Underlord"
 							}),
 							q(27489, {	-- Nobody to Blame but Myself
-								["groups"] = {
-								},
 								["qg"] = 45729,	-- Tarenar Sunstrike
 								["sourceQuests"] = {27488}, -- "Impatience"
 							}),
 						}),
 						crit(5, { -- Journey's End
 							q(27522, {	-- Beat it Out of Them
-								["groups"] = {
-								},
 								["qg"] = 45729,	-- Tarenar Sunstrike
 								["sourceQuests"] = {27489}, -- "Nobody to Blame but Myself"
 							}),
 							q(27524, {	-- Blind Fury
-								["groups"] = {
-								},
 								["qg"] = 45417,	-- Tarenar Sunstrike
 								["sourceQuests"] = {27522}, -- "Beat it Out of Them"
 							}),
 							q(27525, {	-- Guardians of Stratholme
-								["groups"] = {
-								},
 								["qg"] = 45729,	-- Tarenar Sunstrike
 								["sourceQuests"] = {27524}, -- "Blind Fury"
 							}),
@@ -349,8 +287,6 @@ _.Zones =
 								["sourceQuests"] = { 27525 },	-- Guardians of Stratholme
 							},
  							q(27526, {	-- Gidwin's Fate Revealed
-								["groups"] = {
-								},
 								["qg"] = 45729,	-- Tarenar Sunstrike
 								["sourceQuests"] = {27551}, -- "The Baroness' Missive"
 							}),
@@ -370,31 +306,25 @@ _.Zones =
 					ach(5442, { -- Full Caravan
 						crit(1, { -- Fiona
 							q(27684, {	-- Visitors
-								["groups"] = {
-								},
 								["qg"] = 11034,	-- Lord Maxwell Tyrosus
 							}),
 						}),
 						crit(2, { -- Gidwin Goldbraids
 							q(27367, {	-- Gidwin Goldbraids
-								["groups"] = {
-								},
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
 							}),
 							q(27368, {	-- Just Encased
-								["groups"] = {
-								},
 								["qg"] = 45428,	-- Gidwin Goldbraids
 								["sourceQuests"] = { 27367 },	-- Gidwin Goldbraids
 							}),
 							q(27369, { -- Greasing the Wheel
 								["groups"] = {
-								i(62938),  -- Giddy's Old Gloves
-								i(62937),  -- Thorondoril River Boots
-								i(62936),  -- Treads of Banshee Bells
-								i(62935),  -- Flower Picker's Gloves
-								i(131668), -- Stem-Laced Boots
+									i(62938),  -- Giddy's Old Gloves
+									i(62937),  -- Thorondoril River Boots
+									i(62936),  -- Treads of Banshee Bells
+									i(62935),  -- Flower Picker's Gloves
+									i(131668), -- Stem-Laced Boots
 								},
 								["qg"] = 45428, -- Gidwin Goldbraids
 								["sourceQuests"] = { 27368 },	-- Just Encased
@@ -402,14 +332,10 @@ _.Zones =
 						}),
 						crit(3, { -- Tarenar Sunstrike
 							q(27370, {	-- Tarenar Sunstrike
-								["groups"] = {
-								},
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
 							}),
 							q(27371, {  -- What I Do Best
-								["groups"] = {
-								},
 								["qg"] = 45429, -- Tarenar Sunstrike
 								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 							}),
@@ -429,8 +355,6 @@ _.Zones =
 						}),
 						crit(4, { -- Argus Highbeacon
 							q(27381, {	-- Traveling Companions
-								["groups"] = {
-								},
 								["qg"] = 45429,	-- Tarenar Sunstrike
 								["sourceQuests"] = { 27373 },	-- Onward, to Light's Hope Chapel
 							}),
@@ -440,25 +364,19 @@ _.Zones =
 									i(62946), -- Crown Guard Armbands
 									i(62945), -- Plaguebat Vest
 									i(62944), -- Slippers of the Lonely Road
-									},
+								},
 								["qg"] = 45451,	-- Argus Highbeacon
 							}),
 							q(27448, {	-- The Trek Continues
-								["groups"] = {
-								},
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27381,27382 },	-- "Traveling Companion", "Rough Roads"
 							}),
 						}),
 						crit(5, { -- Pamela Redpath
 							q(27383, {	-- Little Pamela
-								["groups"] = {
-								},
 								["qg"] = 11063,	-- Carlin Redpath
 							}),
 							q(27384, {	-- Pamela's Doll
-								["groups"] = {
-								},
 								["qg"] = 10926,	-- Pamela Redpath
 								["sourceQuests"] = { 27383 },	-- "Little Pamela"
 							}),
@@ -467,19 +385,15 @@ _.Zones =
 									i(62950), -- Joseph's Spare Belt
 									i(62949), -- Finder's Keepers
 									i(62948), -- Hide of the Lone Hunter
-									},
+								},
 								["qg"] = 10926,	-- Pamela Redpath
 								["sourceQuests"] = { 27383 },	-- "Little Pamela"
 							}),
 							q(27385, {	-- Uncle Carlin
-								["groups"] = {
-								},
 								["qg"] = 10926,	-- Pamela Redpath
 								["sourceQuests"] = { 27384,27392 },	-- "Little Pamela"
 							}),
 							q(27386, {	-- A Strange Historian
-								["groups"] = {
-								},
 								["qg"] = 11063,	-- Carlin Redpath
 								["sourceQuests"] = { 27385 },	-- "Little Pamela"
 							}),
@@ -494,14 +408,10 @@ _.Zones =
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 							}),
 							q(27388, {	-- Heroes of Darrowshire
-								["groups"] = {
-								},
 								["qg"] = 10667,	-- Chromie
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 							}),
 							q(27389, {	-- Marauders of Darrowshire
-								["groups"] = {
-								},
 								["qg"] = 10667,	-- Chromie
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 							}),
@@ -517,13 +427,9 @@ _.Zones =
 						}),
 						crit(6, { -- Vex'thul
 							q(27432, {	-- Zaeldarr the Outcast
-								["groups"] = {
-								},
 								["qg"] = 45500,	-- Urk Gagbaz
 							}),
 							q(27449, {	-- Honor and Strength
-								["groups"] = {
-								},
 								["qg"] = 45574,	-- Vex'tul
 								["sourceQuests"] = {27432}, -- Zaeldarr the Outcast
 							}),
@@ -539,8 +445,6 @@ _.Zones =
 								["qg"] = 16134,	-- Rimblat Earthshatter
 							}),
 							q(27457, {	-- An Opportune Alliance
-								["groups"] = {
-								},
 								["qg"] = 16134,	-- Rimblat Earthshatter
 								["sourceQuests"] = {27456,27465}, -- "Gathering Some Grub(s)", "Argent Call: The Noxious Glade"
 							}),
@@ -551,8 +455,6 @@ _.Zones =
 					n(-168, { -- Other Quests
 						sz(771, 4, { -- Crown Guard Tower
 							q(27544, {	-- Cenarion Tenacity
-								["groups"] = {
-								},
 								["qg"] = 45500,	-- Urk Gagbaz
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 								["isBreadcrumb"] = true, -- for "Postponing the Inevitable"
@@ -560,8 +462,6 @@ _.Zones =
 						}),
 						sz(771, 5, { -- The Fungal Vale
 							q(27420, {	-- Postponing the Inevitable
-								["groups"] = {
-								},
 								["qg"] = 16135,	-- Rayne
 								["sourceQuests"] = {27544}, -- for "Cenarion Tenacity"
 							}),
@@ -577,8 +477,6 @@ _.Zones =
 						}),
 						sz(771, 11, { -- Light's Hope Chapel
 							q(27458, {	-- Smokey and the Bandage
-								["groups"] = {
-								},
 								["qg"] = 11033,	-- Smokey LaRue
 							}),
 							q(27467, { -- Buried Blades
@@ -590,20 +488,14 @@ _.Zones =
 								["qg"] = 16365,	-- Master Craftsman Omarion
 							}),
  							qdg(q(28756, {	-- Aberrations of Bone
-								["groups"] = {
-								},
 								["qg"] = 49856,	-- 
 								["sourceQuests"] = {27464},
 							})),
 							qdg(q(28755, {	-- Annals of the Silver Hand
-								["groups"] = {
-								},
 								["qg"] = 49856,	-- 
 								["sourceQuests"] = {27464},
 							})),
 							q( 27762, {	-- Fuselight, Ho!
-								["groups"] = {
-								},
 								["qg"] = 48704,	-- Gek Nozzlerocket
 								["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
 								["sourceQuests"] = { 28579, 28580 },	-- Hero's Call/Warchief's Command: Badlands!
@@ -611,26 +503,20 @@ _.Zones =
 						}),
 						sz(771, 12, { -- The Infectis Scar
 							q(27450, { -- Frederick's Fish Fancy
-							["groups"] = {
-								i(62974), -- Infectis Scuttler Helm
-								i(62973), -- Infectis Puffer Gloves
-								i(62972), -- Infectis Incher Leggings
-								},
-							["qg"] = 45575,	-- Frederick Calston
+								["groups"] = {
+									i(62974), -- Infectis Scuttler Helm
+									i(62973), -- Infectis Puffer Gloves
+									i(62972), -- Infectis Incher Leggings
+									},
+								["qg"] = 45575,	-- Frederick Calston
 							}),
 							q(27451, {	-- To Kill With Purpose
-								["groups"] = {
-								},
 								["qg"] = 11035,	-- Betina Bigglezink
 							}),
 							q(27452, {	-- Dark Garb
-								["groups"] = {
-								},
 								["qg"] = 11035,	-- Betina Bigglezink
 							}),
 							q(27453, {	-- Catalysm
-								["groups"] = {
-								},
 								["qg"] = 11035,	-- Betina Bigglezink
 								["sourceQuests"] = {27451,27452} -- "To Kill With Purpose", "Dark Garb"
 							}),
@@ -646,16 +532,12 @@ _.Zones =
 								["sourceQuests"] = {27453} -- "Catalysm"
 							}),
 							q(27455, {	-- Boys Will Be Boys
-								["groups"] = {
-								},
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = {27448} -- "The Trek Continues"
 							}),
 						}),
 						sz(771, 14, { -- Eastwall Tower
 							q(27481, {	-- Out of the Ziggurat
-								["groups"] = {
-								},
 								["qg"] = 45574,	-- Vex'tul
 								["sourceQuests"] = {27449,27465} -- "Honor and Strength", "Argent Call: The Noxious Glade"
 							}),
@@ -667,8 +549,6 @@ _.Zones =
 								["sourceQuests"] = {27481} -- "Out of the Ziggurat"
 							}),
 							q(27479, {	-- Righteous Indignation
-								["groups"] = {
-								},
 								["qg"] = 45736,	-- Deacon Andaal
 							}),
 							q(27477, { -- The Corpulent One
@@ -676,19 +556,15 @@ _.Zones =
 									i(62987), -- Eastwall Gauntlets
 									i(62986), -- Borelgore's Skin
 									i(62985), -- Corpulent Shoulderpads
-									},
+								},
 								["qg"] = 45735,	-- Gamella Cracklefizz
 							}),
 						}),
 						sz(771, 18, { -- Northpass Tower
  							qdg(q(27422, {	-- A City Under Siege
-								["groups"] = {
-								},
 								["qg"] = 45482,	-- Argent Officer Irizarry
 							})),
  							q(27521, {	-- Wretched Hive of Scum and Villainy
-								["groups"] = {
-								},
 								["qg"] = 45826,	-- Kirkian Dawnshield
 							}),
 							q(27523, { -- Duskwing, Oh How I Hate Thee...
@@ -697,25 +573,19 @@ _.Zones =
 									i(63000),
 									i(62999),
 									i(62990),
-									},
+								},
 								["qg"] = 45816,	-- Corpseburner Tim
 							}),
 							q(27532, {	-- The Plaguewood Tower
-								["groups"] = {
-								},
 								["qg"] = 45451,	-- Argus Highbeacon
 								["sourceQuests"] = {27522} , -- "Beat it Out of Them"
 							}),
 						}),
 						sz(771, 21, { -- The Plaguewood
 							q(27528, {	-- Scourged Mass
-								["groups"] = {
-								},
 								["qg"] = 45831,	-- Crusader Kevin Frost
 							}),
 							q(27529, {	-- Defenders of Darrowshire
-								["groups"] = {
-								},
 								["qg"] = 45831,	-- Crusader Kevin Frost
 							}),
 							q(27539, { -- Add'em to the Pile
@@ -724,7 +594,7 @@ _.Zones =
 									i(63013),
 									i(63011),
 									i(62989),
-									},
+								},
 								["qg"] = 45831,	-- Crusader Kevin Frost
 							}),
 							q(27530, { -- The Corpsebeasts
@@ -732,13 +602,11 @@ _.Zones =
 									i(63017),
 									i(63016),
 									i(63015),
-									},
+								},
 								["qg"] = 45831,	-- Crusader Kevin Frost
 								["sourceQuests"] = {27528,27529,27539}, 
 							}),
 							q(27535, {	-- Just a Little Touched
-								["groups"] = {
-								},
 								["qg"] = 45828,	-- Argent Apotehcary Judkins
 								["isBreadcrumb"] = true,
 							}),
@@ -753,8 +621,6 @@ _.Zones =
 								["sourceQuests"] = 27532,
 							}),
 							q(27534, {	-- Augustus' Receipt Book
-								["groups"] = {
-								},
 								["qg"] = 12384,	-- Augustus the Touched
 							}),
 							q(27533, { -- A Fate Worse Than Butchery
@@ -810,8 +676,6 @@ _.Zones =
 					--[[
 					Class Hall Quests
 					qg(111616, q(43797, {	-- Aiding the Conclave (QG in Paladin order hall?)
-						["groups"] = {
-						},
 						["classes"] = {5}, -- Priest
 					})),
 					qg(110969, q(43491)),	-- Allies of the Light (in scenario?)
@@ -830,8 +694,6 @@ _.Zones =
 --[[
 					qg(31084, qh(13189)),	-- Saurfang's Blessing
 					qg(31084, q(13166, {	-- The Battle For The Ebon Hold
-						["groups"] = {
-						},
 						["classes"] = {6}, -- Death Knight
 					})),
 					qg(31084, qa(13188)),	-- Where Kings Walk

@@ -26,8 +26,6 @@ _.Zones =
 							qg(34913, qa(14093)),	-- All Hell Breaks Loose
 							qg(36170, qa(14313)),	-- Among Humans Again
 							qg(35840, qa(14277, {	-- Arcane Inquiries
-								["groups"] = {
-								},
 								["classes"] = {8}, -- Mage
 							})),
 							qg(36290, qa(14396)),	-- As the Land Shatters
@@ -43,8 +41,6 @@ _.Zones =
 							qg(35618, qa(14218)),	-- By Blood and Ash
 							qg(35077, qa(14154)),	-- By the Skin of His Teeth
 							qg(35869, qa(14274, {	-- Corruption
-								["groups"] = {
-								},
 								["classes"] = {9}, -- Warlock
 							})),
 							qg(43727, qa(26706)),	-- Endgame
@@ -52,16 +48,12 @@ _.Zones =
 							qg(34913, qa(14098)),	-- Evacuate the Merchant Square
 							qg(36451, qa(14397)),	-- Evacuation
 							qg(35871, qa(14272, {	-- Eviscerate
-								["groups"] = {
-								},
 								["classes"] = {4}, -- Rogue
 							})),
 							qg(36743, qa(24438)),	-- Exodus
 							qg(37876, qa(24677)),	-- Flank the Forsaken
 							qg(35378, qa(14204)),	-- From the Shadows
 							qg(35872, qa(14281, {	-- Frost Nova
-								["groups"] = {
-								},
 								["classes"] = {8}, -- Mage
 							})),
 							qg(36451, qa(14395)),	-- Gasping for Breath
@@ -123,51 +115,33 @@ _.Zones =
 							qg(34913, qa(14099)),	-- Royal Orders
 							qg(35552, qa(14212)),	-- Sacrifices
 							qg(35874, qa(14290, {	-- Safety in Numbers
-								["groups"] = {
-								},
 								["classes"] = {3}, -- Hunter
 							})),
 							qg(35872, qa(14288, {	-- Safety in Numbers
-								["groups"] = {
-								},
 								["classes"] = {8}, -- Mage
 							})),
 							qg(35871, qa(14285, {	-- Safety in Numbers
-								["groups"] = {
-								},
 								["classes"] = {4}, -- Rogue
 							})),
 							qg(35870, qa(14289, {	-- Safety in Numbers
-								["groups"] = {
-								},
 								["classes"] = {5}, -- Priest
 							})),
 							qg(35873, qa(14291, {	-- Safety in Numbers
-								["groups"] = {
-								},
 								["classes"] = {11}, -- Druid
 							})),
 							qg(35869, qa(14287, {	-- Safety in Numbers
-								["groups"] = {
-								},
 								["classes"] = {9}, -- Warlock
 							})),
 							qg(35839, qa(14286, {	-- Safety in Numbers
-								["groups"] = {
-								},
 								["classes"] = {1}, -- Warrior
 							})),
 							qg(34936, qa(14094)),	-- Salvage the Supplies
 							qg(35550, qa(14293)),	-- Save Krennan Aranas
 							qg(36291, qa(14368)),	-- Save the Children!
 							qg(35840, qa(14278, {	-- Seek the Sister
-								["groups"] = {
-								},
 								["classes"] = {5}, -- Priest
 							})),
 							qg(35840, qa(14273, {	-- Shady Associates
-								["groups"] = {
-								},
 								["classes"] = {9}, -- Warlock
 							})),
 --]]							
@@ -179,13 +153,9 @@ _.Zones =
 --[[							
 							qg(38539, qa(24920)),	-- Slowing the Inevitable
 							qg(35840, qa(14275, {	-- Someone's Keeping Track of You
-								["groups"] = {
-								},
 								["classes"] = {3}, -- Hunter
 							})),
 							qg(35840, qa(14269, {	-- Someone's Looking for You
-								["groups"] = {
-								},
 								["classes"] = {4}, -- Rogue
 							})),
 							qg(34863, qa(14091)),	-- Something's Amiss
@@ -218,8 +188,6 @@ _.Zones =
 							qg(50371, qa(28850)),	-- The Prison Rooftop
 							qg(35112, qa(14159)),	-- The Rebel Lord's Arsenal
 							qg(35840, qa(14280, {	-- The Winds Know Your Name... Apparently
-								["groups"] = {
-								},
 								["classes"] = {11}, -- Druid
 							})),
 --]]							
@@ -236,8 +204,6 @@ _.Zones =
 							qg(36456, qa(14412)),	-- Washed Up	
 							qg(35115, qa(24930)),	-- While You're At It
 							qg(35840, qa(14265, {	-- Your Instructor
-								["groups"] = {
-								},
 								["classes"] = {1}, -- Warrior
 							})),
 --]]							

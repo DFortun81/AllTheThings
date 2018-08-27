@@ -124,8 +124,6 @@ _.Zones =
 					qh(  6322),	-- Michael Garrett
 					qh( 29361),	-- Moat Monster!
 					qg(52319, q(28289, {	-- Moonglade Calls
-						["groups"] = {
-						},
 						["classes"] = {11},
 					})),
 					qh( 11925),	-- More Torch Catching

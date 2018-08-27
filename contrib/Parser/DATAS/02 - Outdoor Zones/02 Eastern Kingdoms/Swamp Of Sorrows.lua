@@ -22,8 +22,6 @@ _.Zones =
 				}),
 				n(-25, {	-- Pet Battle
 							-- q(31913, {	-- Everessa
-							-- 	["groups"] = {
-							-- 	},
 							-- 	["qg"] = ,
 							-- }),
 					p(648), 	-- Huge Toad
@@ -38,8 +36,6 @@ _.Zones =
 					ach(4904, { -- Swamp of Sorrows Quests
 						crit(1, { -- Bogpaddle
 							q(27587, {	-- Maliciously Delicious
-								["groups"] = {
-								},
 								["qg"] = 45786,
 								["sourceQuests"] = { 28569,28570,28675,28677 },
 							}),
@@ -53,20 +49,14 @@ _.Zones =
 								["sourceQuests"] = { 27587 },
 							}),
 							q(27656, {	-- Croc-Out
-								["groups"] = {
-								},
 								["qg"] = 45786,
 								["sourceQuests"] = { 27587 },
 							}),
 							q(27597, {	-- Crazy Larry
-								["groups"] = {
-								},
 								["qg"] = 45786,
 								["sourceQuests"] = { 27536,27656 },
 							}),
 							q(27598, {	-- Kill Gil
-								["groups"] = {
-								},
 								["qg"] = 45948,
 								["sourceQuests"] = { 27597 },
 							}),
@@ -93,8 +83,6 @@ _.Zones =
 						}),
 						crit(2, { -- The Bloodmire
 							qa(27821, {	-- Orcs and Humans
-								["groups"] = {
-								},
 								["qg"] = 46676,
 								["sourceQuests"] = { 27870 },
 							}),
@@ -119,20 +107,14 @@ _.Zones =
 								["sourceQuests"] = { 27821,27822 },
 							}),
 							qa(27843, {	-- Reinforcements Denied
-								["groups"] = {
-								},
 								["qg"] = 46676,
 								["sourceQuests"] = { 27821,27822 },
 							}),
 							qa(27845, {	-- Marking the Fallen
-								["groups"] = {
-								},
 								["qg"] = 46676,
 								["sourceQuests"] = { 27821,27822 },
 							}),
 							qa(27851, {	-- Cutting Supply
-								["groups"] = {
-								},
 								["qg"] = 46676,
 								["sourceQuests"] = { 27795,27843,27845 },
 							}),
@@ -150,24 +132,16 @@ _.Zones =
 						}),
 						crit(3, { -- The Shifting Mire
 							qa(27875, {	-- Prayerblossom
-								["groups"] = {
-								},
 								["qg"] = 17127,
 							}),
 							qa(27904, {	-- Breath of Mist
-								["groups"] = {
-								},
 								["qg"] = 17127,
 								["sourceQuests"] = { 27875 },
 							}),
 							qa(27876, {	-- Secrets of the Mire
-								["groups"] = {
-								},
 								["qg"] = 17127,
 							}),
 							qa(27902, {	-- The Purespring
-								["groups"] = {
-								},
 								["qg"] = 17127,
 								["sourceQuests"] = { 27875,27876 },
 							}),
@@ -181,14 +155,10 @@ _.Zones =
 						}),
 						crit(4, { -- The Sunken Temple
 							q(27740, {	-- Baba Bogbrew
-								["groups"] = {
-								},
 								["qg"] = 45948,
 								["sourceQuests"] = { 27600 },
 							}),
 							q(27691, {	-- Marshfin Madness
-								["groups"] = {
-								},
 								["qg"] = 46172,
 							}),
 							q(27757, { -- The Darkest Depths
@@ -202,44 +172,30 @@ _.Zones =
 								["sourceQuests"] = { 27691 },
 							}),
 							q(27818, {	-- Slithering Signs
-								["groups"] = {
-								},
 								["qg"] = 46172,
 								["sourceQuests"] = { 27757 },
 							}),
 							q(27869, {	-- The Dragon and the Temple
-								["groups"] = {
-								},
 								["qg"] = 46172,	-- Baba Bogbrew
 								["sourceQuests"] = { 27818 },
 							}),
 							q(27694, {	-- Pool of Tears
-								["groups"] = {
-								},
 								["qg"] = 46071,	-- Lord Itharius
 								["sourceQuests"] = { 27869 },
 							}),
 							q(27704, {	-- Legends of the Sunken Temple
-								["groups"] = {
-								},
 								["qg"] = 46071,	-- Lord Itharius
 								["sourceQuests"] = { 27694 },
 							}),
 							q(27705, {	-- Step One: The Priestess
-								["groups"] = {
-								},
 								["qg"] = 46071,	-- Lord Itharius
 								["sourceQuests"] = { 27704 },
 							}),
 							q(27768, {	-- Step Two: The Bloodletter
-								["groups"] = {
-								},
 								["qg"] = 46071,	-- Lord Itharius
 								["sourceQuests"] = { 27705 },
 							}),
 							q(27773, {	-- Step Three: Prophet
-								["groups"] = {
-								},
 								["qg"] = 46071,	-- Lord Itharius
 								["sourceQuests"] = { 27768 },
 							}),
@@ -259,20 +215,14 @@ _.Zones =
 						}),
 						sz(782,  2, { -- The Harborage
 							qa(27919, {	-- Onward to the Blasted Lands
-								["groups"] = {
-								},
 								["qg"] = 17127,
 							}),
 						}),
 						sz(782,  3, { -- Splinterspear Junction
 							qh(27910, {	-- Last Regrets
-								["groups"] = {
-								},
 								["qg"] = 47041,
 							}),
 							qh(27907, {	-- Prayerblossom
-								["groups"] = {
-								},
 								["qg"] = 47041,
 							}),
 							qh(27911, {	-- With Dying Breath
@@ -282,19 +232,13 @@ _.Zones =
 								["qg"] = 47041,
 							}),
 							qh(27916, {	-- Ruag's Report
-								["groups"] = {
-								},
 								["qg"] = 47041,
 								["sourceQuests"] = { 27911 },
 							}),
 							qh(27908, {	-- Secrets of the Mire
-								["groups"] = {
-								},
 								["qg"] = 47041,
 							}),
 							qh(27909, {	-- The Purespring
-								["groups"] = {
-								},
 								["qg"] = 47041,
 							}),
 						}),
@@ -311,29 +255,19 @@ _.Zones =
 								["sourceQuests"] = { 27870 },
 							}),
 							qh(27856, {	-- Marking the Fallen
-								["groups"] = {
-								},
 								["qg"] = 7623,
 							}),
 							qh(27906, {	-- Neeka Bloodscar
-								["groups"] = {
-								},
 								["qg"] = 7623,
 							}),
 							qh(28553, {	-- Okrilla and the Blasted Lands
-								["groups"] = {
-								},
 								["qg"] = 7623,
 								["sourceQuests"] = { 27196 },
 							}),
 							qh(27852, {	-- Orcs and Humans
-								["groups"] = {
-								},
 								["qg"] = 7623,
 							}),
 							qh(27855, {	-- Reinforcements Denied
-								["groups"] = {
-								},
 								["qg"] = 7623,
 							}),
 							qh(27854, { -- Tides of Darkness
@@ -363,20 +297,14 @@ _.Zones =
 						}),
 						sz(782,  8, { -- Sorrowmurk NOTE: This should be Temple of Atal'Hakkar
 							q(27915, {	-- The Heart of the Temple
-								["groups"] = {
-								},
 								["qg"] = 46071,	-- Lord Itharius
 								["sourceQuests"] = { 27914 },
 							}),
 							qa(27870, {	-- To Marshtide Watch
-								["groups"] = {
-								},
 								["qg"] = 46071,	-- Lord Itharius
 								["sourceQuests"] = { 27914 },
 							}),
 							qh(27871, {	-- To Stonard
-								["groups"] = {
-								},
 								["qg"] = 46071,	-- Lord Itharius
 							}),
 						}),
@@ -393,8 +321,6 @@ _.Zones =
 								["qg"] = 46010,
 							}),
 							q(27663, { -- Tastes Like Strider
-								["groups"] = {
-								},
 								["qg"] = 46182, -- Pierre Fishflay
 							}),
 						}),
@@ -404,18 +330,12 @@ _.Zones =
 						}),
 						sz(782, 12, { -- Marshtide Watch
 							qa(27840, {	-- Draenethyst Crystals
-								["groups"] = {
-								},
 								["qg"] = 18221,
 							}),
 							qa(27860, {	-- The Lost Ones
-								["groups"] = {
-								},
 								["qg"] = 18221,
 							}),
 							qa(27918, {	-- The Harborage
-								["groups"] = {
-								},
 								["qg"] = 18221,
 								["sourceQuests"] = { 27840,27860 },
 							}),

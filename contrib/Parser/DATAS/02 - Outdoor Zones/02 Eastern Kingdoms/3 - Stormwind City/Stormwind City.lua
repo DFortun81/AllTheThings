@@ -231,13 +231,9 @@ _.Zones =
 --[[
 					qg(, qa(11451)),	-- Alicia's Poem
 					qg(44395, qa(27273, {	-- An Invitation from Moonglade
-						["groups"] = {
-						},
 						["classes"] = {11},
 					})),
 COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
-						["groups"] = {
-						},
 						["classes"] = {11},
 					})),
 					qg(, qa(  325)),	-- Armed and Ready
@@ -326,8 +322,6 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(28578)),	-- Hero's Call: Eastern Plaguelands!
 --]]
 					qa(28543, {	-- Hero's Call: Felwood!
-						["groups"] = {
-						},
 						["isBreadcrumb"] = true,	-- for "The Corruption of the Jadefire"
 					}),
 --[[
@@ -391,8 +385,6 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(28295)),	-- Meetup with the Caravan
 					qg(, qa(29392)),	-- Missing Heirlooms
 					qg(44395, q(28289, {	-- Moonglade Calls
-						["groups"] = {
-						},
 						["classes"] = {11},
 					})),
 					qg(, qa(11924)),	-- More Torch Catching
@@ -2195,8 +2187,6 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 							i(142234),	-- Vicious War Bear
 							i(140350),	-- Vicious War Elekk
 							i(152870, {	-- Vicious War Fox
-								["groups"] = {
-								},
 								["mountID"] = 242896, -- Vicious War Fox
 							}),
 							i(142237),	-- Vicious War Lion
@@ -2208,123 +2198,75 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					}),
 					n(65068, {	-- Old Whitenose <Dragon Turtle Breeder>
 						i(91008, { 	-- Black Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87795, { 	-- Black Dragon Turtle
-							["groups"] = {
-							},
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),
 						i(91009, {	-- Blue Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
-						i(87796, { 	-- Blue Dragon Turtle 
-							["groups"] = {
-							},
+						i(87796, { 	-- Blue Dragon Turtle
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),
 						i(91005, { 	-- Brown Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
-						i(87797, { 	-- Brown Dragon Turtle 
-							["groups"] = {
-							},
+						i(87797, { 	-- Brown Dragon Turtle
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),
 						i(91011,  {	-- Great Black Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
-						i(87802,  {	-- Great Black Dragon Turtle 
-							["groups"] = {
-							},
+						i(87802,  {	-- Great Black Dragon Turtle
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),			
 						i(91013,  {	-- Great Blue Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
-						i(87803,  {	-- Great Blue Dragon Turtle 
-							["groups"] = {
-							},
+						i(87803,  {	-- Great Blue Dragon Turtle
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),	
 						i(91014,  {	-- Great Brown Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87804,  {	-- Great Brown Dragon Turtle
-							["groups"] = {
-							},
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),			
 						i(91012,  {	-- Great Green Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
-						i(87801,  {	-- Great Green Dragon Turtle 
-							["groups"] = {
-							},
+						i(87801,  {	-- Great Green Dragon Turtle
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),		
 						i(91015,  {	-- Great Purple Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
-						i(87805,  {	-- Great Purple Dragon Turtle 
-							["groups"] = {
-							},
+						i(87805,  {	-- Great Purple Dragon Turtle
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),	
 						i(91010,  {	-- Great Red Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
-						i(82811,  {	-- Great Red Dragon Turtle 
-							["groups"] = {
-							},
+						i(82811,  {	-- Great Red Dragon Turtle
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),	
 						i(91004,  {	-- Green Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(82765,  {	-- Green Dragon Turtle
-							["groups"] = {
-							},
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),		
 						i(91006, {	-- Purple Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
 						i(87799,  {	-- Purple Dragon Turtle
-							["groups"] = {
-							},
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),	
 						i(91007, {	-- Red Dragon Turtle (Panda)
-							["groups"] = {
-							},
 							["races"] = {25,26},
 						}),			
-						i(87800, {	-- Red Dragon Turtle 
-							["groups"] = {
-							},
+						i(87800, {	-- Red Dragon Turtle
 							["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 						}),
 						un(1, i(91016)),	-- Reins of the Great Red Dragon Turtle (Never Implemented?)

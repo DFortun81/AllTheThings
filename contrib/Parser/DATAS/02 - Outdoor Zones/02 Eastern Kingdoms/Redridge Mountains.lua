@@ -41,25 +41,17 @@ _.Zones =
 								},
 								["sourceQuests"] = {26365},	-- Hero's Call: Redridge Mountains!
 							})),
-							qg(464, qa(26505, {	-- Parker's Report					
-								["groups"] = {
-								},
+							qg(464, qa(26505, {	-- Parker's Report
 								["sourceQuests"] = {26503},	-- Still Assessing the Threat
 							})),
 							qg(344, qa(26510)),	-- We Must Prepare!
 							qg(344, qa(26512, {	-- Tuning the Gnomecorder
-								["groups"] = {
-								},
 								["sourceQuests"] = {26510},	-- We Must Prepare!
 							})),
 							qg(344, qa(26514, {	-- Canyon Romp
-								["groups"] = {
-								},
 								["sourceQuests"] = {26512},	-- Tuning the Gnomecorder
 							})),
 							qg(344, qa(26544, {	-- They've Wised Up...
-								["groups"] = {
-								},
 								["sourceQuests"] = {26514},	-- Canyon Romp
 							})),
 							{
@@ -107,48 +99,30 @@ _.Zones =
 						})),
 						a(crit(2, { -- Keeshan's Raiders
 							qg(43221, qa(26567, {	-- John J. Keeshan
-								["groups"] = {
-								},
 								["sourceQuests"] = {26545},	-- Yowler Must Die!
 							})),
-							qg(43184, qa(26568, {	-- This Ain't My War					
-								["groups"] = {
-								},
+							qg(43184, qa(26568, {	-- This Ain't My War
 								["sourceQuests"] = {26567},	-- John J. Keeshan
 							})),
 							qg(43221, qa(26571, {	-- Weapons of War
-								["groups"] = {
-								},
 								["sourceQuests"] = {26568},	-- This Ain't My War
 							})),
 							qg(43221, qa(26586, {	-- In Search of Bravo Company
-								["groups"] = {
-								},
 								["sourceQuests"] = {26568},	-- This Ain't My War
 							})),
 							qg(43270, qa(26587, {	-- Breaking Out is Hard to Do
-								["groups"] = {
-								},
 								["sourceQuests"] = {26586},	-- In Search of Bravo Company
 							})),
 							qg(43300, qa(26560, {	-- Jorgensen
-								["groups"] = {
-								},
 								["sourceQuests"] = {26587},	-- Breaking Out is Hard to Do
 							})),
 							qg(43305, qa(26561, {	-- Krakauer
-								["groups"] = {
-								},
 								["sourceQuests"] = {26560},	-- Jorgensen
 							})),
 							qg(43303, qa(26562, {	-- And Last But Not Least... Danforth
-								["groups"] = {
-								},
 								["sourceQuests"] = {26561},	-- Krakauer
 							})),
 							qg(382, qa(26570, {	-- Render's Army
-								["groups"] = {
-								},
 								["sourceQuests"] = {26568},	-- This Ain't My War
 							})),
 							qg(43194, qa(26569, {	-- Surveying Equipment
@@ -161,8 +135,6 @@ _.Zones =
 								["sourceQuests"] = {26568},	-- This Ain't My War
 							})),
 							qg(43302, qa(26563, {	-- Return of the Bravo Company
-								["groups"] = {
-								},
 								["sourceQuests"] = {26562},	-- And Last But Not Least... Danforth
 							})),
 							qg(43221, qa(26573, {	-- His Heart Must Be In It
@@ -174,20 +146,14 @@ _.Zones =
 								["sourceQuests"] = {26571},	-- Weapons of War
 							})),
 							qg(43221, qa(26607, {	-- They Drew First Blood
-								["groups"] = {
-								},
 								["sourceQuests"] = {26563},	-- Return of the Bravo Company
 							})),
 						})),
 						a(crit(3, { -- First Blood
 							qg(43184, qa(26616, {	-- It's Never Over
-								["groups"] = {
-								},
 								["sourceQuests"] = {26607},	-- They Drew First Blood
 							})),
 							qg(43461, qa(26636, {	-- Bravo Company Field Kit: Camouflage
-								["groups"] = {
-								},
 								["sourceQuests"] = {26616},	-- It's Never Over
 							})),
 							qg(43459, qa(26637, {	-- Bravo Company Field Kit: Chloroform
@@ -200,28 +166,18 @@ _.Zones =
 								["sourceQuests"] = {26616},	-- It's Never Over
 							})),
 							qg(43462, qa(26638, {	-- Hunting the Hunters
-								["groups"] = {
-								},
 								["sourceQuests"] = {26616},	-- It's Never Over
 							})),
 							qg(43458, qa(26639, {	-- Point of Contact: Brubaker
-								["groups"] = {
-								},
 								["sourceQuests"] = {26616},	-- It's Never Over
 							})),
 							qg(43508, qa(26640, {	-- Unspeakable Atrocities
-								["groups"] = {
-								},
 								["sourceQuests"] = {26639},	-- Point of Contact: Brubaker
 							})),
 							qg(43458, qa(26646, {	-- Prisoners of War
-								["groups"] = {
-								},
 								["sourceQuests"] = {26640},	-- Unspeakable Atrocities
 							})),
 							qg(43458, qa(26651, {	-- To Win a War, You Gotta Become War
-								["groups"] = {
-								},
 								["sourceQuests"] = {26646},	-- Prisoners of War
 							})),
 							qg(43611, qa(26668, {	-- Detonation
@@ -244,8 +200,6 @@ _.Zones =
 								["sourceQuests"] = {26668},	-- Detonation
 							})),
 							qg(43611, qa(26693, {	-- The Dark Tower
-								["groups"] = {
-								},
 								["sourceQuests"] = {26668},	-- Detonation
 							})),
 							qg(43611, qa(26694, {	-- The Grand Magus Doane
@@ -269,13 +223,9 @@ _.Zones =
 								["sourceQuests"] = {26692, 26694},	-- Shadowhide Extinction, The Grand Magus Doane
 							})),
 							qg(43733, qa(26713, {	-- Showdown at Stonewatch
-								["groups"] = {
-								},
 								["sourceQuests"] = {26708},	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 							})),
 							qg(43733, qa(26714, {	-- Darkblaze, Brood of the Worldbreaker
-								["groups"] = {
-								},
 								["sourceQuests"] = {26713},	-- Showdown at Stonewatch
 							})),
 							qg(43733, qa(26726, {	-- Triumphant Return

@@ -96,8 +96,6 @@ _.Zones =
 					qg(3515, qa( 7383)),	-- Teldrassil: The Burden of the Kaldorei
 					qg(3515, qa(  933)),	-- Teldrassil: The Coming Dawn
 					qg(3515, qa(  929, {	-- Teldrassil: The Refusal of the Aspects
-						["groups"] = {
-						},
 						["races"] = {4},
 					})),
 					qg(68077, qh(32327)),	-- The Darnassus Mission
@@ -113,8 +111,6 @@ _.Zones =
 						qa(930),	-- The Glowing Fruit
 					}),
 					qg(42968, qa(28517, {	-- The Howling Oak
-						["groups"] = {
-						},
 						["races"] = {22},
 					})),
 					n(3535, {	-- Blackmoss the Fetid
@@ -158,21 +154,15 @@ _.Zones =
 					qg(2080, qa(  918)),	-- Timberling Seeds
 					qg(2080, qa(  919)),	-- Timberling Sprouts
 					qg(40553, qa(6341, {	-- To Darnassus
-						["groups"] = {
-						},
 						["races"] = {4},
 					})),
 					qg(3567, qa(  932)),	-- Twisted Hatred
 					qg(2078, qa(  486)),	-- Ursal the Mauler
 					qg(68077, qh(32328)),	-- Victorious Return
 					qg(49480, qa(28727, {	-- Vile Touch
-						["groups"] = {
-						},
 						["races"] = {4},
 					})),
 					qg(49480, qa(28726, {	-- Webwood Corruption
-						["groups"] = {
-						},
 						["races"] = {4},
 					})),
 					qg(2150, qa(  488)),	-- Zenn's Bidding					
@@ -270,67 +260,45 @@ _.Zones =
 						n(-17, {	-- Quests
 							qg(2079, qa(28734)),	-- A Favor for Melithar
 							qg(2077, qa(31168, {	-- Calligraphed Sigil
-								["groups"] = {
-								},
 								["races"] = {4, 22},
 								["classes"] = {10},
 							})),
 							qg(2077, qa(28715)),	-- Demonic Thieves
 							qg(6780, qa( 2159)),	-- Dolanaar Delivery
 							qg(2077, qa( 3118, {	-- Encrypted Sigil
-								["groups"] = {
-								},
 								["races"] = {4},
 								["classes"] = {4},
 							})),
 							qg(2079, qa(28714)),	-- Fel Moss Corruption
 							qg(2077, qa( 3119, {	-- Hallowed Sigil
-								["groups"] = {
-								},
 								["races"] = {4},
 								["classes"] = {5},
 							})),
 							qg(49479, qa(28724, {	-- Iverron's Antidote
-								["groups"] = {
-								},
 								["races"] = {4},
 							})),
 							qg(3595, qa(26949, {	-- Learning the Word
-								["groups"] = {
-								},
 								["races"] = {4},
 								["classes"] = {5},
 							})),
 							qg(49479, qa(28730, {	-- Precious Waters
-								["groups"] = {
-								},
 								["races"] = {4},
 							})),
 							qg(2079, qa(28723, {	-- Priestess of the Moon (add'l QGs 3593, 3594, 3595, 3596, 3597, 43006)
-								["groups"] = {
-								},
 								["races"] = {4},
 							})),
 							qg(2077, qa( 3116, {	-- Simple Sigil (add'l QG 2079)
-								["groups"] = {
-								},
 								["races"] = {4, 22},
 								["classes"] = {1},
 							})),
 							qg(49479, qa(28729, {	-- Teldrassil: Crown of Azeroth
-								["groups"] = {
-								},
 								["races"] = {4},
 							})),
 							qg(3514, qa(28731, {	-- Teldrassil: Passing Awareness
-								["groups"] = {
-								},
 								["races"] = {4},
 							})),
 							qg(2079, qa(28713)),	-- The Balance of Nature
 							qg(49479, qa(28725, {	-- The Woodland Protector
-								["groups"] = {
-								},
 								["races"] = {4},
 							})),
 						}),

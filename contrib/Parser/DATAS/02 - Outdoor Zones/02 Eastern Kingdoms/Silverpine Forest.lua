@@ -42,14 +42,10 @@ _.Zones =
 					})),
 ]]--
 					qh(27577, {	-- 7th Legion Battle Plans
-						["groups"] = {
-						},
 						["qg"] = 45879,	-- Lord Walden
 						["sourceQuests"] = { 27548, 27550 },	-- Lessons in Fear / Pyrewood's Fall
 					}),
 					qh(26992, {	-- Agony Abounds
-						["groups"] = {
-						},
 						["qg"] = 44778,	-- Apothecary Witherbloom
 						["sourceQuests"] = { 26965 },	-- The Warchief Cometh
 					}),
@@ -64,14 +60,10 @@ _.Zones =
 						["sourceQuests"] = { 27484 },	-- Only One May Enter
 					}),
 					qh(27056, {	-- Belmont's Report
-						["groups"] = {
-						},
 						["qg"] = 44789,	-- Deathstalker Commander Belmont
 						["sourceQuests"] = { 27045 },	-- Waiting to Exsanguinate
 					}),
 					qh(27474, {	-- Breaking the Barrier
-						["groups"] = {
-						},
 						["qg"] = 45617,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27472 },	-- Rise, Godfrey
 					}),
@@ -86,19 +78,13 @@ _.Zones =
 						["sourceQuests"] = { 27594 }	-- On Her Majesty's Secret Service
 					}),
 					qh(27194, {	-- Cornered and Crushed!
-						["groups"] = {
-						},
 						["sourceQuests"] = { 27193 },	-- Seek and Destroy
 					}),
 					qh(27476, {	-- Dalar Dawnweaver
-						["groups"] = {
-						},
 						["qg"] = 45617,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27474, 27475 },	-- Breaking the Barrier / Unyielding Servitors
 					}),
 					qh(27039, {	-- Dangerous Intentions
-						["groups"] = {
-						},
 						["qg"] = 44789,	-- Deathstalker Commander Belmont
 						["sourceQuests"] = { 26998 },	-- Iterating Upon Success
 					}),
@@ -112,14 +98,10 @@ _.Zones =
 						["sourceQuests"] = { 27095 },	-- Skitterweb Menace
 					}),
 					qh(27746, {	-- Empire of Dirt
-						["groups"] = {
-						},
 						["qg"] = 46124,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27601 },	-- Cities in Dust
 					}),
 					qh(27181, {	-- Excising the Taint
-						["groups"] = {
-						},
 						["qg"] = 45195,	-- Bloodfang Stalker
 						["sourceQuests"] = { 27180 },	-- Honor the Dead
 					}),
@@ -135,14 +117,10 @@ _.Zones =
 						["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r"
 					}),
 					qh(27073, {	-- Give 'em Hell!
-						["groups"] = {
-						},
 						["qg"] = 44917,	-- Warlord Torok
 						["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
 					}),
 					qh(26995, {	-- Guts and Gore
-						["groups"] = {
-						},
 						["qg"] = 44784,	-- High Apothecary Shana T'veen
 						["sourceQuests"] = { 26965 },	-- The Warchief Cometh
 					}),
@@ -157,18 +135,17 @@ _.Zones =
 						["sourceQuests"] = { 27098 },	-- Lordaeron
 					}),
 					qh(27180, {	-- Honor the Dead
-						["groups"] = {
-						},
 						["qg"] = 44365,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27098 },	-- Lordaeron
 					}),
-					{
-						["qg"] = 45896,	-- Marsh Crocolisk
-						["races"] = HORDE_ONLY,
-						["itemID"] = 61505,	-- Partially Digested Head
-						["questID"] = 27574,	-- I Never Forget a Faces
+					i(61505, {	-- Partially Digested Head
+						["groups"] = {
+							qh(27574, {	-- I Never Forget a Face
+								["qg"] = 45896,	-- March Crocolisk
+							}),
+						},
 						["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r"
-					},
+					}),
 					qh(26998, {	-- Iterating Upon Success
 						["groups"] = {
 							i(131629),	-- Maggot-Ridden Greaves
@@ -189,20 +166,14 @@ _.Zones =
 						["sourceQuests"] = { 27082 },	-- Playing Dirty
 					}),
 					qh(27548, {	-- Lessons in Fear
-						["groups"] = {
-						},
 						["qg"] = 45879,	-- Lord Walden
 						["sourceQuests"] = { 27542 },	-- Taking the Battlefront
 					}),
 					qh(27098, {	-- Lordaeron
-						["groups"] = {
-						},
 						["qg"] = 44365,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27099 },	-- No Escape
 					}),
 					qh(27093, {	-- Lost in the Darkness
-						["groups"] = {
-						},
 						["qg"] = 44916,	-- Admiral Hatchet
 						["sourceQuests"] = { 27073, 27069 },	-- Give 'em Hell! / Steel Thunder
 					}),
@@ -225,32 +196,22 @@ _.Zones =
 						["sourceQuests"] = { 27194 },	-- Cornered and Crushed
 					}),
 					qh(27547, {	-- Of No Consequence
-						["groups"] = {
-						},
 						["qg"] = 45880,	-- Baron Ashbury
 						["sourceQuests"] = { 27542 },	-- Taking the Battlefront
 					}),
 					qh(27594, {	-- On Her Majesty's Secret Service
-						["groups"] = {
-						},
 						["qg"] = 45878,	-- Lord Godfrey
 						["sourceQuests"] = { 27580 },	-- Sowing Discord
 					}),
 					qh(27484, {	-- Only One May Enter
-						["groups"] = {
-						},
 						["qg"] = 1938,	-- Dalar Dawnweaver
 						["sourceQuests"] = { 27478 },	-- Relios the Relic Keeper
 					}),
 					qh(27096, {	-- Orcs are in Order
-						["groups"] = {
-						},
 						["qg"] = 44916,	-- Admiral Hatchet
 						["sourceQuests"] = { 27088, 27093 },	-- It's Only Poisonous if You Ingest It / Lost in the Darkness
 					}),
 					qh(27082, {	-- Playing Dirty
-						["groups"] = {
-						},
 						["qg"] = 44912,	-- Apothecary Wormcrud
 						["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
 					}),
@@ -265,14 +226,10 @@ _.Zones =
 						["sourceQuests"] = { 27476 },	-- Dalar Dawnweaver
 					}),
 					qh(27550, {	-- Pyrewood's Fall
-						["groups"] = {
-						},
 						["qg"] = 45878,	-- Lord Godfrey
 						["sourceQuests"] = { 27542 },	-- Taking the Battlefront
 					}),
 					qh(27231, {	-- Reinforcements from Fenris
-						["groups"] = {
-						},
 						["qg"] = 44916,	-- Admiral Hatchet
 						["sourceQuests"] = { 27098 },	-- Lordaeron
 					}),
@@ -287,31 +244,21 @@ _.Zones =
 						["sourceQuests"] = { 27476 },	-- Dalar Dawnweaver
 					}),
 					qh(27097, {	-- Rise, Forsaken
-						["groups"] = {
-						},
 						["qg"] = 44365,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27096 },	-- Orcs are in Order
 					}),
 					qh(27472, {	-- Rise, Godfrey
-						["groups"] = {
-						},
 						["qg"] = 45525,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27438 },	-- The Great Escape
 					}),
 					qh(27193, {	-- Seek and Destroy
-						["groups"] = {
-						},
 						["sourceQuests"] = { 27181 },	-- Excising the Taint
 					}),
 					qh(27095, {	-- Skitterweb Menace
-						["groups"] = {
-						},
 						["qg"] = 44917,	-- Warlord Torok
 						["sourceQuests"] = { 27073 },	-- Give 'em Hell!
 					}),
 					qh(27580, {	-- Sowing Discord
-						["groups"] = {
-						},
 						["qg"] = 45878,	-- Lord Godfrey
 						["sourceQuests"] = { 27550 },	-- Pyrewood's Fall
 					}),
@@ -326,8 +273,6 @@ _.Zones =
 						["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
 					}),
 					qh(27542, {	-- Taking the Battlefront
-						["groups"] = {
-						},
 						["qg"] = 45617,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27518 },	-- Transdimensional Warfare: Chapter III
 					}),
@@ -341,14 +286,10 @@ _.Zones =
 						["sourceQuests"] = { 26965 },	-- The Warchief Cometh
 					}),
 					qh(26965, {	-- The Warchief Cometh
-						["groups"] = {
-						},
 						["qg"] = 44615,	-- Grand Executor Mortuus
 						["sourceQuests"] = { 26964 },	-- Warchief's Command: Silverpine Forest!
 					}),
 					qh(27065, {	-- The Warchief's Fleet
-						["groups"] = {
-						},
 						["qg"] = 44365,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27056 },	-- Belmont's Report
 					}),
@@ -363,20 +304,14 @@ _.Zones =
 						}),
 					}),
 					qh(27290, {	-- To Forsaken Forward Command
-						["groups"] = {
-						},
 						["qg"] = 44365,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27195 },	-- Nowhere to Run
 					}),
 					qh(27512, {	-- Transdimensional Warfare: Chapter I
-						["groups"] = {
-						},
 						["qg"] = 45617,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27484 },	-- Only One May Enter
 					}),
 					qh(27513, {	-- Transdimensional Warfare: Chapter II
-						["groups"] = {
-						},
 						["sourceQuests"] = { 27512 },	-- Transdimensional Warfare: Chapter I
 					}),
 					qh(27518, {	-- Transdimensional Warfare: Chapter III
@@ -388,8 +323,6 @@ _.Zones =
 						["sourceQuests"] = { 27513 },	-- Transdimensional Warfare: Chapter II
 					}),					
 					qh(27475, {	-- Unyielding Servitors (secondary QG ID 45626)
-						["groups"] = {
-						},
 						["qg"] = 45626,	-- Daschla (secondary QG ID 45610)
 						["sourceQuests"] = { 27472 },	-- Rise, Godfrey
 					}),
@@ -845,28 +778,20 @@ _.Zones =
 				m(217, {	-- Ruins of Gilneas
 					n(-17, { -- Quests
 						qh(27406, {	-- A Man Named Godfrey
-							["groups"] = {
-							},
 							["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
 							["sourceQuests"] = { 27405 },	-- Fall Back!
 						}),
 						ql(q(30093, {	-- Assassinate Creed
-							["groups"] = {
-							},
 							["qg"] = 57770,	-- Zazzo Twinklefingers
 							["classes"] = { 4 },	-- Rogue
 							["lvl"] = 85,
 							["sourceQuests"] = { 30092 },	-- Our Man in Gilneas
 						})),
 						qh(27349, {	-- Break in Communications: Dreadwatch Outpost
-							["groups"] = {
-							},
 							["qg"] = 45315,	-- Forward Commander Onslaught
 							["sourceQuests"] = { 27333, 27345 },	-- Losing Ground / The F.C.D.
 						}),
 						qh(27350, {	-- Break in Communications: Rutsak's Guard
-							["groups"] = {
-							},
 							["sourceQuests"] = { 27349 },	-- Break in Communications: Dreadwatch Outpost
 						}),
 						qh(27405, {	-- Fall Back!
@@ -901,19 +826,13 @@ _.Zones =
 							}),
 						}),
 						qh(27333, {	-- Losing Ground
-							["groups"] = {
-							},
 							["qg"] = 45315,	-- Forward Commander Onslaught
 							["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 						}),
 						qh(27364, {	-- On Whose Orders?
-							["groups"] = {
-							},
 							["sourceQuests"] = { 27360 },	-- Vengeance for Our Soldiers
 						}),
 						qh(27423, {	-- Resistance is Futile
-							["groups"] = {
-							},
 							["sourceQuests"] = { 27405 },	-- Fall Back!
 						}),
 						ql(q(30106, {	-- The Deed is Done
@@ -927,8 +846,6 @@ _.Zones =
 							["sourceQuests"] = { 30093 },	-- Assassinate Creed
 						})),						
 						qh(27345, {	-- The F.C.D.
-							["groups"] = {
-							},
 							["qg"] = 45315,	-- Forward Commander Onslaught
 							["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 						}),
@@ -953,8 +870,6 @@ _.Zones =
 							["sourceQuests"] = { 27350 },	-- Break in Communication: Rutsak's Guard
 						}),
 						qh(27401, {	-- What Tomorrow Brings
-							["groups"] = {
-							}, 
 							["sourceQuests"] = { 27364 },	-- On Whose Orders?
 						}),
 					}),

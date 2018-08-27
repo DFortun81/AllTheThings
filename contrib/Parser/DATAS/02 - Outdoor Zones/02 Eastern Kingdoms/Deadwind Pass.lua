@@ -21,8 +21,6 @@ _.Zones =
 				n(-17, { 	-- Quests
 --[[			
 					qart(qg(100729, q(40933, {	-- A Grisly Task
-						["groups"] = {
-						},
 						["classes"] = {6},
 					}))),
 					qg(113986, q(44421)),	-- Anomalous Anomalies
@@ -31,8 +29,6 @@ _.Zones =
 					qg(113986, q(44500)),	-- Author! Author!
 --]]
 					ql(q(30109, {	-- Blood of the Betrayer
-						["groups"] = {
-						},
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 30108 },	-- Our Man in Karazhan
@@ -42,42 +38,28 @@ _.Zones =
 					qg(114631, qa(44684)),	-- Corruption Runs Deep
 					qg(114631, qa(44764)),	-- Demon in Disguise
 					qart(qg(100729, q(40604, {	-- Disturbing the Past
-						["groups"] = {
-						},
 						["classes"] = {9},
 					}))),
 					qart(qg(100729, q(40835, {	-- Disturbing the Past
-						["groups"] = {
-						},
 						["classes"] = {11},
 					}))),
 					qart(qg(100729, q(40932, {	-- Disturbing the Past
-						["groups"] = {
-						},
 						["classes"] = {6},
 					}))),
 					qg(114310, q(44557)),	-- Finite Numbers
 					qart(qg(100323, q(40931, {	-- Following the Curse
-						["groups"] = {
-						},
 						["classes"] = {6},
 					}))),
 					qart(qg(100323, q(40588, {	-- Following the Curse
-						["groups"] = {
-						},
 						["classes"] = {9},
 					}))),
 					qart(qg(100323, q(40834, {	-- Following the Curse
-						["groups"] = {
-						},
 						["classes"] = {11},
 					}))),
 					qdg(qg(114310, q(44734))),	-- Fragments of the Past
 					qg(101547, q(40755)),	-- Hiding in the Stacks
 					qg(114310, q(44683)),	-- Holding the Lines
 					qdg(qg(18255, q(45296, {	-- No Bones About It
-					     ["groups"] = {
-						 },
 						 ["description"] = "This quest is offered after completion of 'Return to Karazhan: Clearing Out the Cobwebs.'",
 					}))),
 					qg(18253, q(10731)),	-- Path of the Violet Assassin
@@ -104,69 +86,45 @@ _.Zones =
 					qdg(qg(18255, q(45293))),	-- Return to Karazhan: New Shoes
 					qdg(qg(18255, q(45292))),	-- Return to Karazhan: Rebooting the Cleaner
 					qart(qg(101282, q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)
-						["groups"] = {
-						},
 						["classes"] = {11},
 					}))),
 					qart(qg(101282, q(40935, {	-- The Call of Vengeance (map blank
-						["groups"] = {
-						},
 						["classes"] = {6},
 					}))),
 					qart(qg(101282, q(40987, {	-- The Call of Vengeance (map blank
-						["groups"] = {
-						},
 						["classes"] = {6},
 					}))),
 					qart(qg(100812, q(40934, {	-- The Dark Riders
-						["groups"] = {
-						},
 						["classes"] = {6},
 					}))),
 					qart(qg(100812, q(40986, {	-- The Dark Riders
-						["groups"] = {
-						},
 						["classes"] = {6},
 					}))),
 					qart(qg(100812, q(40838, {	-- The Dark Riders
-						["groups"] = {
-						},
 						["classes"] = {11},
 					}))),
 					qart(qg(100812, q(41155, {	-- The Dark Riders
-						["groups"] = {
-						},
 						["classes"] = {9},
 					}))),
 					qart(qg(100812, q(40623, {	-- The Dark Riders
-						["groups"] = {
-						},
 						["classes"] = {9},
 					}))),
 					qart(qg(100729, q(40837, {	-- The Deadwind Hunt
-						["groups"] = {
-						},
 						["classes"] = {11},
 					}))),
 					qg(113655, q(42970)),	-- The Diamond King
 					qart(qg(100729, q(40611, {	-- The Fate of Deadwind
-						["groups"] = {
-						},
 						["classes"] = {9},
 					}))),
 					qg(114310, q(44733)),	-- The Power of Corruption
 					o(254007, {	-- Executioner's Altar
 						qart(q(44154, {	-- The Rite of the Executioner
-							["groups"] = {
-							},
 							["classes"] = {9},
 						})),
 					}),
 					qg(114631, qa(44686)),	-- Thought Collection
 					o(245793, {	-- Battered Journal
 						qart(q(40606, {	-- To Point the Way
-						["groups"] = {
-						},
 						["classes"] = {9},
 						})),
 					}),

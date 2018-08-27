@@ -37,20 +37,14 @@ _.Zones =
 					h(ach(1271, { -- To Hellfire and Back [Horde Version]
 						crit(1, { -- Disrupt the Burning Legion
 							qh(10120, { -- Arrival in Outland
-								["groups"] = {
-								},
 								["qg"] = 19253, -- Lieutenant General Orion
 								["sourceQuests"] = { 49816 }, -- To Outland [Breadcrumb]
 							}),
 							qh(10289, { -- Journey to Thrallmar
-								["groups"] = {
-								},
 								["qg"] = 18930, -- Vlagga Freyfeather
 								["sourceQuests"] = { 10120 }, -- Arrival in Outlanad
 							}),
 							qh(10291, { -- Report to Nazgrel
-								["groups"] = {
-								},
 								["qg"] = 19255, -- General Krakork
 								["sourceQuests"] = { 10289 }, -- Journey to Thrallmar
 							}),
@@ -64,8 +58,6 @@ _.Zones =
 								["qg"] = 21283, -- Megzeg Nukklebust
 							}),
 							qh(10121, { -- Eradicate the Burning Legion
-								["groups"] = {
-								},
 								["qg"] = 3230, -- Nazgrel
 								["sourceQuests"] = { 10291 }, -- Report to Nazgrel
 							}),
@@ -102,14 +94,10 @@ _.Zones =
 								["sourceQuests"] = { 10121 }, -- Eradicate the Burning Legion
 							}),
 							qh(10449, { -- Apothecary Zelana
-								["groups"] = {
-								},
 								["qg"] = 21256, -- Vurtok Axebreaker
 								["sourceQuests"] = { 10450 }, -- Bonechewer Blood
 							}),
 							qh(10124, { -- Forward Base: Reaver's Fall
-								["groups"] = {
-								},
 								["qg"] = 19256, -- Sergeeant Shatterskull
 								["sourceQuests"] = { 10123 }, -- Felspark Ravine
 							}),
@@ -135,8 +123,6 @@ _.Zones =
 								["sourceQuests"] = { 10208 }, -- Disrupt Their Reinforcements
 							}),
 							qh(10388, { -- Return to Thrallmar
-								["groups"] = {
-								},
 								["qg"] = 19273, -- Forwarad Commander To'arch
 								["sourceQuests"] = { 10129 }, -- Mission: Gatewayas Murketh and Shaadraz 
 							}),
@@ -147,21 +133,15 @@ _.Zones =
 						}),
 						--]]
 						crit(3, { -- The Hand of Kargath
-							qh(10538,{	-- Boiling Blood	
-								["groups"] = {	
-								},	
+							qh(10538,{	-- Boiling Blood
 								["qg"] = 21279,	--Apothecary Albreck
 								["sourceQuests"] = { 10242 }, -- Spinebreaker Post
 							}),
-							qh(10835, {	-- Apothecary Antonivich	
-								["groups"] = {	
-								},	
+							qh(10835, {	-- Apothecary Antonivich
 								["qg"] = 21279,	-- Apothecary Albreck
 								["sourceQuests"] = { 10242 },	-- Boiling Blood
 							}),		
-							qh(10864, {	-- A Burden of Souls	
-								["groups"] = {	
-								},	
+							qh(10864, {	-- A Burden of Souls
 								["qg"] = 16588,	-- Apothecary Antonivich
 								["sourceQuests"] = { 10835 },	-- Apothecary Antonivich
 							}),		
@@ -172,9 +152,7 @@ _.Zones =
 								["qg"] = 16588,	-- Apothecary Antonivichk
 								["sourceQuests"] = { 10864 },	-- A Burden of Souls
 							}),		
-							qh(10875, {	-- Report to Nazgrel	
-								["groups"] = {	
-								},	
+							qh(10875, {	-- Report to Nazgrel
 								["qg"] = 16588,	-- Apothecary Antonivich
 								["sourceQuests"] = { 10838 },	-- The Demonaic Scryer
 							}),		
@@ -195,26 +173,18 @@ _.Zones =
 						--]]
 						crit(5, { -- The Mag'har
 							qh(9400, { -- The Assassin
-								["groups"] = {
-								},
 								["qg"] = 3230, -- Nazgrel
 								["sourceQuests"] = { 10388 }, -- Return to Thrallmar
 							}),
 							qh(9401, { -- A Strange Weapon
-								["groups"] = {
-								},
 								["qg"] = 17062, -- Fel Orc Corpse
 								["sourceQuests"] = { 9400 }, -- The Assassin
 							}),
 							qh(9405, { -- The Warchief's Mandate
-								["groups"] = {
-								},
 								["qg"] = 3230, -- Nazgrel
 								["sourceQuests"] = { 9401 }, -- The Warchief's Mandate
 							}),
 							qh(9410, { -- A Spirit Guide
-								["groups"] = {
-								},
 								["qg"] = 16574, -- Far Seer Regulkut
 								["sourceQuests"] = { 9405 }, -- The Warchief's Mandate
 							}),
@@ -234,21 +204,15 @@ _.Zones =
 						}),
 						--]]
 						crit(7, { -- Green, But Not Orcs [Missing Rest that procs achieve]
-							q(10236, {	-- Outland Sucks!	
-								["groups"] = {	
-								},	
+							q(10236, {	-- Outland Sucks!
 								["qg"] = 16915,	-- Foreman Razelcraz
 								["sourceQuests"] = { 0 },	-- 
 							}),		
-							q(10238, {	-- How to Serve Goblins	
-								["groups"] = {	
-								},	
+							q(10238, {	-- How to Serve Goblins
 								["qg"] = 16915,	-- Foreman Razelcraz
 								["sourceQuests"] = { 10236 },	-- Outland Sucks!
 							}),		
-							q(10629, {	-- Shizz Work	
-								["groups"] = {	
-								},	
+							q(10629, {	-- Shizz Work
 								["qg"] = 16915,	-- Foreman Razelcraz
 								["sourceQuests"] = { 10238 },	-- How to Serve Goblins
 							}),		
@@ -265,14 +229,10 @@ _.Zones =
 						crit(8, { -- Cenarion Post
 							i(29476, { -- Crimson Crystal Shard
 								q(10134, { -- Crimson Crystal Clue
-									["groups"] = {
-									},
 									["qg"] = 19188, -- Raging Colossus
 								}),
 							}),
 							q(10349, { -- The Earthbinder
-								["groups"] = {
-								},
 								["qg"] = 19293, -- Tola'thion
 								["sourceQuests"] = { 10134 }, -- Crimson Crystal Clue
 							}),
@@ -294,13 +254,9 @@ _.Zones =
 								["qg"] = 19293, -- Tola'thion
 							}),
 							q(9372, { -- Demonic Contamination
-								["groups"] = {
-								},
 								["qg"] = 16991, -- Thiah Redmane
 							}),
 							q(10159, { -- Keep Thornfang Hill Clear!
-								["groups"] = {
-								},
 								["qg"] = 16888, -- Mahuram Stouthoof
 							}),
 							q(10255, { -- Testing the Antidote
@@ -317,20 +273,14 @@ _.Zones =
 					a(ach(1189, { -- To Hellfire and Back [Horde Version]
 						crit(1, { -- Disrupt the Burning Legion
 							qa(10288, { -- Arrival in Outland
-								["groups"] = {
-								},
 								["qg"] = 19229, -- Commander Duron
 								["sourceQuests"] = { 49862 }, -- To Outland [Breadcrumb]
 							}),
 							qa(10140, { -- Journey to Honor Hold
-								["groups"] = {
-								},
 								["qg"] = 18931, -- Amish Wildhammer
 								["sourceQuests"] = { 10288 }, -- Arrival in Outland
 							}),
 							qa(10254, { -- Force Commander Danath
-								["groups"] = {
-								},
 								["qg"] = 19308, -- Marshal Isildor
 								["sourceQuests"] = { 10140 }, -- Journey to Honor Hold
 							}),
@@ -345,14 +295,10 @@ _.Zones =
 								["sourceQuests"] = { 10254 }, -- Force Commander Danath
 							}),
 							qa(10141, { -- The Legion Reborn
-								["groups"] = {
-								},
 								["qg"] = 16819, -- Force Commander Danath Trollbane
 								["sourceQuests"] = { 10254 }, -- Force Commander Danath
 							}),
 							qa(10160, { -- Know Your Enemy
-								["groups"] = {
-								},
 								["qg"] = 16819, -- Force Commander Danath Trollbane
 								["sourceQuests"] = { 10254 }, -- Force Commander Danath
 							}),
@@ -368,8 +314,6 @@ _.Zones =
 								["sourceQuests"] = { 10160 }, -- Know Your Enemy
 							}),
 							qa(10078, { -- Laying Waste to the Unwanted
-								["groups"] = {
-								},
 								["qg"] = 21209, -- Dumphry
 								["sourceQuests"] = { 10055 }, -- Waste Not, Want Not
 							}),
@@ -385,14 +329,10 @@ _.Zones =
 								["sourceQuests"] = { 10141 }, -- The Legion Reborn
 							}),
 							qa(10483, { -- Ill Omens
-								["groups"] = {
-								},
 								["qg"] = 16820, -- Lieutenant Amadi
 								["sourceQuests"] = { 10482 }, -- Fel Orc Scavengers
 							}),
 							qa(10143, { -- Expedition Point
-								["groups"] = {
-								},
 								["qg"] = 19309, -- Sergeant Altumus
 								["sourceQuests"] = { 10142 }, -- The Path of Anguish
 							}),
@@ -436,14 +376,10 @@ _.Zones =
 						crit(8, { -- Cenarion Post
 							i(29476, { -- Crimson Crystal Shard
 								q(10134, { -- Crimson Crystal Clue
-									["groups"] = {
-									},
 									["qg"] = 19188, -- Raging Colossus
 								}),
 							}),
 							q(10349, { -- The Earthbinder
-								["groups"] = {
-								},
 								["qg"] = 19293, -- Tola'thion
 								["sourceQuests"] = { 10134 }, -- Crimson Crystal Clue
 							}),
@@ -465,13 +401,9 @@ _.Zones =
 								["qg"] = 19293, -- Tola'thion
 							}),
 							q(9372, { -- Demonic Contamination
-								["groups"] = {
-								},
 								["qg"] = 16991, -- Thiah Redmane
 							}),
 							q(10159, { -- Keep Thornfang Hill Clear!
-								["groups"] = {
-								},
 								["qg"] = 16888, -- Mahuram Stouthoof
 							}),
 							q(10255, { -- Testing the Antidote
@@ -486,20 +418,17 @@ _.Zones =
 						}),
 					})),
 					n(-168, { -- Other Quests
-						qh(49816, { -- To Outland! [Breadcrumb]
-							["groups"] = {
-							},
+						qh(49816, { -- To Outland!
+							["isBreadcrumb"] = true,
 						}),
-						qa(49862, { -- To Outland! [Breadcrumb]
-							["groups"] = {
-							},
+						qa(49862, { -- To Outland!
+							["isBreadcrumb"] = true,
 						}),
 						sz(1271,8, { -- Cenarion Post
 							["groups"] = {
-								q(9912, { -- The Cenarion Expedition [Breadcrumb]
-									["groups"] = {
-									},
+								q(9912, { -- The Cenarion Expedition
 									["qg"] = 16885,
+									["isBreadcrumb"] = true,
 								}),
 							},
 							["collectible"] = false,	-- Turn off Collectible flags.
@@ -507,8 +436,6 @@ _.Zones =
 						h(sz(862,3, { -- Falcon Watch
 							["groups"] = {
 								qh(10442, { -- Helping the Cenarion Post
-									["groups"] = {
-									},
 									["qg"] = 16790, -- Falconer Drenna Riverwind
 								}),
 							},
@@ -526,24 +453,16 @@ _.Zones =
 						}),
 						h(sz(862,4, { -- Spinebreaker Post
 							["groups"] = {
-								qh(10220,{	-- Make Them Listen	
-									["groups"] = {	
-									},	
+								qh(10220,{	-- Make Them Listen
 									["qg"] = 19682,	-- Emissary Mordiba
 								}),		
-								qh(10278,{	-- The Warp Rifts	
-									["groups"] = {	
-									},	
+								qh(10278,{	-- The Warp Rifts
 									["qg"] = 19683,	-- Ogath the Mad
 								}),		
-								qh(9345,{	-- Preparing the Salve	
-									["groups"] = {	
-									},	
+								qh(9345,{	-- Preparing the Salve
 									["qg"] = 16858,	-- Grelag
 								}),		
-								qh(10809,{	-- Wanted: Worg Master Kruush	
-									["groups"] = {	
-									},	
+								qh(10809,{	-- Wanted: Worg Master Kruush
 									--["qg"] = Wanted Poster,	
 								}),
 							},
@@ -552,15 +471,11 @@ _.Zones =
 						h(sz(862,11, { -- Thrallmar
 							["groups"] = {
 								q(9498, { -- Falcon Watch [Breadcrumb]
-									["groups"] = {
-									},
 									["qg"] = 21256, -- Vurtok Axebreaker
 									["sourceQuests"] = { 10450 }, -- Bonechewer Blood
 									["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 }, -- Every race but Blood Elves
 								}),
 								q(9499, { -- Falcon Watch [Breadcrumb]
-									["groups"] = {
-									},
 									["qg"] = 21256, -- Vurtok Axebreaker
 									["sourceQuests"] = { 10450 }, -- Bonechewer Blood
 									["races"] = { 10 }, -- Blood Elves
@@ -573,14 +488,10 @@ _.Zones =
 									["sourceQuests"] = { 10124 }, -- Forward Base: Reaver's Fall
 								}),
 								qh(10110, { -- Hellfire Fortifications
-									["groups"] = {
-									},
 									["qg"] = 18267, -- Battlecryer Blackeye
 									["sourceQuests"] = { 13409 }, -- Hellfire Fortifications
 								}),
 								qh(10390, { -- Forge Camp: Mageddon
-									["groups"] = {
-									},
 									["qg"] = 3230, -- Nazgrel
 									["sourceQuests"] = { 10388 }, -- Return to Thrallmar
 								}),
@@ -589,8 +500,6 @@ _.Zones =
 						})),
 						-- Need a Reaver's Fall Section, but none in achievement
 						qh(10242, { -- Spinebreaker Post
-							["groups"] = {
-							},
 							["qg"] = 21257, -- Apothecary Zelana
 							["sourceQuests"] = { 10449 }, -- Apothecary Zelana
 						}),

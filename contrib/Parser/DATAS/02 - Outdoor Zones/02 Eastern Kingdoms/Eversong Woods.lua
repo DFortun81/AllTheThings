@@ -41,8 +41,6 @@ _.Zones =
 						qh(8891),	-- Abandoned Investigations
 					}),
 					qh( 8476, {	-- Amani Encroachment
-						["groups"] = {
-						},
 						["qg"] = 15399,	-- Lieutenant Dawnrunner
 						["sourceQuests"] = { 9359 },	-- Farstrider Retreat
 					}),
@@ -53,14 +51,10 @@ _.Zones =
 						["questID"] = 9360,	-- Amani Invasion
 					},
 					qh( 8473, {	-- A Somber Task
-						["groups"] = {
-						},
 						["qg"] = 15398,	-- Larianna Riverwind
 						["sourceQuests"] = { 9258 },	-- The Scorched Grove
 					}),
 					qh( 8486, {	-- Arcane Instability
-						["groups"] = {
-						},
 						["qg"] = 15401,	-- Ley-Keeper Velania
 						["sourceQuests"] = { 9119 },	-- Malfunction at the West Sanctum
 					}),
@@ -77,44 +71,30 @@ _.Zones =
 						["questID"] = 8887,	-- Captain Kelisendra's Lost Rutters
 					},
 					qh( 8894, {	-- Cleaning up the Grounds
-						["groups"] = {
-						},
 						["qg"] = 15969,	-- Groundskeeper Wyllithen
 						["sourceQuests"] = { 9394 },	-- Where's Wyllithen?
 					}),
 					qh( 8350, {	-- Completing the Delivery
-						["groups"] = {
-						},
 						["qg"] = 15301,	-- Outrunner Alarion
 						["sourceQuests"] = { 9705 },	-- Package Recovery
 					}),
 					qh( 8487, {	-- Corrupted Soil
-						["groups"] = {
-						},
 						["qg"] = 15402,	-- Apprentice Mirveda
 						["sourceQuests"] = { 9254 },	-- The Wayward Apprentice
 					}),
 					qh( 9352, {	-- Darnassian Intrusions
-						["groups"] = {
-						},
 						["qg"] = 15403,	-- Aeldon Sunbrand
 						["sourceQuests"] = { 8463 },	-- Unstable Mana Crystals
 					}),
 					qh( 8889, {	-- Deactivating the Spire
-						["groups"] = {
-						},
 						["qg"] = 15924,	-- Apprentice Loralthalis
 						["sourceQuests"] = { 8888 },	-- The Magister's Apprentice
 					}),
 					qh( 9252, {	-- Defending Fairbreeze Village
-						["groups"] = {
-						},
 						["qg"] = 15942,	-- Ranger Sareyn
 						["sourceQuests"] = { 9358 },	-- Ranger Sareyn
 					}),
 					qh( 8895, {	-- Delivery to the North Sanctum
-						["groups"] = {
-						},
 						["qg"] = 15418,	-- Magister Jaronis
 						["sourceQuests"] = { 8472 },	-- Major Malfunction
 					}),
@@ -129,44 +109,30 @@ _.Zones =
 						["sourceQuests"] = { 9147 },	-- The Fallen Courier
 					}),
 					qh( 9256, {	-- Fairbreeze Village
-						["groups"] = {
-						},
 						["qg"] = 15403,	-- Aeldon Sunbrand
 						["sourceQuests"] = { 8483 },	-- The Dwarven Spy
 					}),
 					qh( 9359, {	-- Farstrider Retreat
-						["groups"] = {
-						},
 						["qg"] = 15939,	-- Ranger Degolien
 						["sourceQuests"] = { 8892 },	-- Situation at Sunsail Anchorage
 					}),
 					qh( 9402, {	-- Fetch!
-						["groups"] = {
-						},
 						["qg"] = 15970,	-- Instructor Antheol
 						["classes"] = {8}, -- Mage
 					}),
 					qh( 8884, {	-- Fish Heads, Fish Heads...
-						["groups"] = {
-						},
 						["qg"] = 15920,	-- Hathvelion Sungaze
 					}),
 					q(  9133, {	-- Fly to Silvermoon City
-						["groups"] = {
-						},
 						["qg"] = 44036,	-- Skymaster Brightdawn
 						["sourceQuests"] = { 9130 },	-- Goods from Silvermoon City
 						["races"] = {10}, -- Blood Elf
 					}),
 					q(  9130, {	-- Goods from Silvermoon City
-						["groups"] = {
-						},
 						["qg"] = 16261,	-- Sathiel
 						["races"] = {10}, -- Blood Elf
 					}),
 					qh( 8886, {	-- Grimscale Pirates!
-						["groups"] = {
-						},
 						["qg"] = 15921,	-- Captain Kelisendra
 					}),
 					{
@@ -177,31 +143,21 @@ _.Zones =
 						["sourceQuests"] = { 9352 },	-- Darnassian Intrusions
 					},
 					q( 32668, {	-- Learn To Ride
-						["groups"] = {
-						},
 						["races"] = { 10 }, -- Blood Elf
 						["description"] = "This quest is automatically offered to Blood Elves upon reaching Level 20.",
 					}),
 --					qh(14081),	-- Learn to Ride in the Eversong Woods (REMOVED)
 					qh( 8480, {	-- Lost Armaments
-						["groups"] = {
-						},
 						["qg"] = 15404,	-- Velendris Whitemorn
 					}),
 					qh( 8472, {	-- Major Malfunction
-						["groups"] = {
-						},
 						["qg"] = 15418,	-- Magister Jaronis
 					}),
 					qh( 9119, {	-- Malfunction at the West Sanctum
-						["groups"] = {
-						},
 						["qg"] = 15405,	-- Ley-Keeper Caidanis
 						["sourceQuests"] = { 8895 },	-- Delivery to the North Sanctum
 					}),
 					qh( 9144, {	-- Missing in the Ghostlands (requires level 10)
-						["groups"] = {
-						},
 						["qg"] = 16210,	-- Magistrix Landra Dawnstrider
 					}),
 					{
@@ -211,24 +167,16 @@ _.Zones =
 						["questID"] = 8474,	-- Old Whitebark's Pendant
 					},
 					qh( 9705, {	-- Package Recovery
-						["groups"] = {
-						},
 						["sourceQuests"] = { 9704 },	-- Slain by the Wretched
 					}),
 					qh( 8491, {	-- Pelt Collection
-						["groups"] = {
-						},
 						["qg"] = 15417,	-- Velan Brightoak
 					}),
 					qh( 8490, {	-- Powering our Defenses
-						["groups"] = {
-						},
 						["qg"] = 16362,	-- Runewarden Deryan
 						["sourceQuests"] = { 9253 },	-- Runewarden Deryan
 					}),
 					qh( 9358, {	-- Ranger Sareyn
-						["groups"] = {
-						},
 						["qg"] = 15397,	-- Marniel Amberlight
 					}),
 					qh( 9404, {	-- Recently Living
@@ -241,165 +189,111 @@ _.Zones =
 						["sourceQuests"] = { 9403 },	-- The Purest Water
 					}),
 					qh( 9255, {	-- Research Notes
-						["groups"] = {
-						},
 						["qg"] = 15402,	-- Apprentice Mirveda
 						["sourceQuests"] = { 8488 },	-- Unexpected Results
 					}),
 					q(  9135, {	-- Return to Sathiel
-						["groups"] = {
-						},
 						["qg"] = 16192,	-- Skymistress Gloaming
 						["sourceQuests"] = { 9134 },	-- Skymistress Gloaming
 						["races"] = {10}, -- Blood Elf
 					}),
 					qh( 9035, {	-- Roadside Ambush
-						["groups"] = {
-						},
 						["qg"] = 15941,	-- Apprentice Ralen
 						["description"] = "This quest counts towards Loremaster and is unavailable after you do the quest Soaked Pages.",
 					}),
 					qh( 9253, {	-- Runewarden Deryan
-						["groups"] = {
-						},
 						["qg"] = 15942,	-- Ranger Sareyn
 						["sourceQuests"] = { 9252 },	-- Defending Fairbreeze Village
 					}),
 					qh( 9395, {	-- Saltheril's Haven
-						["groups"] = {
-						},
 						["qg"] = 16210,	-- Magistrix Landra Dawnstrider
 					}),
 					qh( 8892, {	-- Situation at Sunsail Anchorage
-						["groups"] = {
-						},
 						["qg"] = 15939,	-- Ranger Degolien
 						["sourceQuests"] = { 9256 },	-- Fairbreeze Village
 					}),
 					q(  9134, {	-- Skymistress Gloaming
-						["groups"] = {
-						},
 						["qg"] = 16191,	-- Sathren Azuredawn
 						["sourceQuests"] = { 9133 },	-- Fly to Silvermoon City
 						["races"] = {10}, -- Blood Elf
 					}),
 					qh( 9704, {	-- Slain by the Wretched
-						["groups"] = {
-						},
 						["qg"] = 15301,	-- Outrunner Alarion
 						["sourceQuests"] = { 8347 },	-- Aiding the Outrunners (BLOOD ELF ONLY)
 					}),
 					qh( 9062, {	-- Soaked Pages
-						["groups"] = {
-						},
 						["qg"] = 15945,	-- Apprentice Meledor
 						["sourceQuests"] = { 9035 },	-- Roadside Ambush
 						["description"] = "If you are working towards Loremaster, make sure you pick up Roadside Ambush before doing this quest - it counts toward the achievement and is unavailable after turning in Soaked Pages.",
 					}),
 					qh( 9066, {	-- Swift Discipline
-						["groups"] = {
-						},
 						["qg"] = 15970,	-- Instructor Antheol
 						["sourceQuests"] = { 9064 },	-- Taking the Fall
 					}),
 					qh( 9064, {	-- Taking the Fall
-						["groups"] = {
-						},
 						["qg"] = 15945,	-- Apprentice Meledor
 						["sourceQuests"] = { 9062 },	-- Soaked Pages
 					}),
 					qh( 8475, {	-- The Dead Scar
-						["groups"] = {
-						},
 						["qg"] = 15416,	-- Ranger Jaela
 					}),
 					qh( 8483, {	-- The Dwarven Spy
-						["groups"] = {
-						},
 						["qg"] = 15403,	-- Aeldon Sunbrand
 						["sourceQuests"] = { 8482 },	-- Incriminating Documents
 					}),
 					qh( 9147, {	-- The Fallen Courier
-						["groups"] = {
-						},
 						["qg"] = 16196,	-- Apothecary Thedra
 						["sourceQuests"] = { 9144 },	-- Missing in the Ghostlands
 					}),
 --[[					
 					q( 14171, {	-- The Grateful Dead (HOLIDAY! Day of the Dead)
-						["groups"] = {
-						},
 						["qg"] = 34483,	-- Cheerful Blood Elf Spirit
 						["races"] = { 10 }, -- Blood Elf
 					}),
 --]]
 					qh( 8888, {	-- The Magister's Apprentice
-						["groups"] = {
-						},
 						["qg"] = 15951,	-- Magister Duskwither
 					}),
 					qh( 9067, {	-- The Party Never Ends
-						["groups"] = {
-						},
 						["qg"] = 16144,	-- Lord Saltheril
 						["sourceQuests"] = { 9395 },	-- Saltheril's Haven
 					}),
 					qh( 9403, {	-- The Purest Water
-						["groups"] = {
-						},
 						["qg"]	= 15970,	-- Instructor Antheol
 						["classes"] = {8}, -- Mage
 						["sourceQuests"] = { 9402 },	-- Fetch!
 					}),
 					qh( 8885, {	-- The Ring of Mmmrrrggglll
-						["groups"] = {
-						},
 						["qg"] = 15920,	-- Hathvelion Sungaze
 						["sourceQuests"] = { 8884 },	-- Fish Heads, Fish Heads...
 					}),
 					qh( 9258, {	-- The Scorched Grove
-						["groups"] = {
-						},
 						["qg"] = 16397,	-- Ardeyn Riverwind
 					}),
 					qh( 8477, {	-- The Spearcrafter's Hammer
-						["groups"] = {
-						},
 						["qg"] = 15400,	-- Arathel Sunforge
 					}),
 					qh( 9254, {	-- The Wayward Apprentice
-						["groups"] = {
-						},
 						["qg"] = 16210,	-- Magistrix Landra Dawnstrider
 					}),
 					qh( 8488, {	-- Unexpected Results
-						["groups"] = {
-						},
 						["qg"] = 15402,	-- Apprentice Mirveda
 						["sourceQuests"] = { 8487 },	-- Corrupted Soil
 					}),
 					qh( 8463, {	-- Unstable Mana Crystals
-						["groups"] = {
-						},
 						["qg"] = 15403,	-- Aeldon Sunbrand
 					}),
 					o(180918, {	-- Wanted: Thaelis the Hungerer
 						qh(8468),	-- Wanted: Thaelis the Hungerer
 					}),
-					qh( 9363, {	-- Warning Fairbreeze Village					
-						["groups"] = {
-						},
+					qh( 9363, {	-- Warning Fairbreeze Village
 						["qg"] = 15399,	-- Lieutenant Dawnrunner
 						["sourceQuests"] = { 9360 },	-- Amani Invasion
 					}),
 					qh( 9394, {	-- Where's Wyllithen?
-						["groups"] = {
-						},
 						["qg"] = 15924,	-- Apprentice Loralthalis
 					}),
 					qh(10166, {	-- Whitebark's Memory
-						["groups"] = {
-						},
 						["qg"] = 15398,	-- Larianna Riverwind
 						["sourceQuests"] = { 15409 },	-- Old Whitebark's Pendant
 					}),
@@ -411,8 +305,6 @@ _.Zones =
 						["sourceQuests"] = { 8889 },	-- Deactivating the Spire
 					}),
 					qh( 9076, {	-- Wretched Ringleader
-						["groups"] = {
-						},
 						["qg"] = 15404,	-- Velendris Whitemorn
 						["sourceQuests"] = { 8480 },	-- Lost Armaments
 					}),

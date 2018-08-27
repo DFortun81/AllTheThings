@@ -39,19 +39,13 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					qh(24542, {	-- A Curious Bloom
-						["groups"] = {
-						},
 						["qg"] = 37515,	-- Lane Tallgrass
 						["sourceQuests"] = { 24539 },	-- When Plants Attack
 					}),
 					qa(25022, {	-- A Failure to Communicate
-						["groups"] = {
-						},
 						["qg"] = 38871,	-- Corporal Teegan
 					}),
 					qh(24543, {	-- A Family Divided
-						["groups"] = {
-						},
 						["qg"] = 37516,	-- Tawane
 						["sourceQuests"] = { 24529 },	-- Bad to Worse
 					}),
@@ -75,36 +69,24 @@ _.Zones =
 						["sourceQuests"] = { 24543 },	-- A Family Divided
 					}),
 					q( 24570, {	-- Adder Subtraction
-						["groups"] = {
-						},
 						["qg"] = 38314,	-- Muyoh
 					}),
 					qa(25084, {	-- A Growing Threat
-						["groups"] = {
-						},
 						["qg"] = 37835,	-- Dorn Redearth
 					}),
 					qa(25183, {	-- ...And Bury the Rest
-						["groups"] = {
-						},
 						["qg"] = 39118,	-- General Twinbraid
 						["sourceQuests"] = { 25174 },	-- Twinbraid Needs to Know
 					}),
 					qh(24684, {	-- A Weezil in the Henhouse
-						["groups"] = {
-						},
 						["qg"] = 3341,	-- Gann Stonespire
 						["sourceQuests"] = { 24632 },	-- Tauren Vengeance
 					}),
 					qa(24944, {	-- Back in the Fight
-						["groups"] = {
-						},
 						["qg"] = 38804,	-- Tolliver Houndstooth
 						["sourceQuests"] = { 24941 },	-- Langridge Shot
 					}),
 					qh(24529, {	-- Bad to Worse
-						["groups"] = {
-						},
 						["qg"] = 11857,	-- Makaba Flathoof
 					}),
 					qa(25153, {	-- Bael'dun Rescue
@@ -129,34 +111,24 @@ _.Zones =
 						["sourceQuests"] = { 25079 },	-- Powder Play
 					}),
 					q( 24565, {	-- Biological Intervention
-						["groups"] = {
-						},
 						["qg"] = 37570,	-- Naralex
 					}),
 					i( 49932, {	-- Carved Boar Idol
 						q(24606, {	-- Blood of the Barrens
-							["groups"] = {
-							},
 							["qg"] = 37560,	-- Razormane Pathfinder
 						}),
 					}),
 					i( 49932, {	-- Carved Boar Idol
 						q(24606, {	-- Blood of the Barrens
-							["groups"] = {
-							},
 							["qg"] = 37661,	-- Razormane Seer
 						}),
 					}),
 					i( 49932, {	-- Carved Boar Idol
 						q(24606, {	-- Blood of the Barrens
-							["groups"] = {
-							},
 							["qg"] = 37660,	-- Razormane Warfrenzy
 						}),
 					}),
 					qa(24863, {	-- Breaking the Siege
-						["groups"] = {
-						},
 						["qg"] = 38378,	-- Commander Walpole
 					}),
 					qh(24591, {	-- Changing of the Gar'dul
@@ -170,42 +142,28 @@ _.Zones =
 						["sourceQuests"] = { 24577 },	-- Desolation Hold Inspection
 					}),
 					qa(25081, {	-- Claim the Battlescar
-						["groups"] = {
-						},
 						["qg"] = 39083,	-- Commander Roberts
 					}),
 					qh(24618, {	-- Claim the Battle Scar
-						["groups"] = {
-						},
 						["qg"] = 37837,	-- Warlord Bloodhilt
 						["sourceQuests"] = { 24591 },	-- Changing of the Gar'dul
 					}),
 					qa(25057, {	-- Clap 'Em In Irons
-						["groups"] = {
-						},
 						["qg"] = 38323,	-- General Hawthorne
 						["sourceQuests"] = { 25045, 25043 },	-- A Line in the Dirt & Fields of Blood
 					}),
 					qh(24504, {	-- Clear the High Road
-						["groups"] = {
-						},
 						["qg"] = 37135,	-- Nura Pathfinder
 						["sourceQuests"] = { 28549 },	-- Warchief's Command: Southern Barrens!
 					}),
 					qh(24604, {	-- Concern for Mankrik
-						["groups"] = {
-						},
 						["qg"] = 37812,	-- Mahka
 					}),
 					qh(24577, {	-- Desolation Hold Inspection
-						["groups"] = {
-						},
 						["qg"] = 37679,	-- Warlord Bloodhilt
 						["sourceQuests"] = { 24572 },	-- Taking Back Taurajo
 					}),
 					qa(25104, {	-- Digsite Status
-						["groups"] = {
-						},
 						["qg"] = 39118,	-- General Twinbraid
 					}),
 					qa(25044, {	-- Diplomacy By Another Means
@@ -218,31 +176,21 @@ _.Zones =
 						["sourceQuests"] = { 25022 }	-- A Failure to Communicate
 					}),
 					qh(24603, {	-- Don't Stop Bereavin'
-						["groups"] = {
-						},
 						["qg"] = 37847,	-- Mankrik
 						["sourceQuests"] = { 24604 },	-- Concern for Mankrik
 					}),
 					qh(24685, {	-- Dwarf Fortress
-						["groups"] = {
-						},
 						["qg"] = 38140,	-- Weezil Slipshadow
 						["sourceQuests"] = { 24684 },	-- A Weezil in the Henhouse
 					}),
 					q( 24653, {	-- Echoes of Agamaggan
-						["groups"] = {
-						},
 						["qg"] = 37812,	-- Mahka
 						["sourceQuests"] = { 24606 },	-- Blood of the Barrens
 					}),
 					qh(24513, {	-- Eye for an Eye
-						["groups"] = {
-						},
 						["qg"] = 37136,	-- Oltarg
 					}),
 					qh(25284, {	-- Feeding the Fear
-						["groups"] = {
-						},
 						["qg"] = 37153,	-- Holgom
 					}),
 					qa(25108, {	-- Feegly the Exiled
@@ -256,14 +204,10 @@ _.Zones =
 						["sourceQuests"] = { 25104 },	-- Digsite Status
 					}),
 					qdg(q(26908, {	-- Feeling Thorny
-						["groups"] = {
-						},
 						["qg"] = 37812,	-- Mahka
 						["lvl"] = 30,
 					})),
 					qa(25043, {	-- Fields of Blood
-						["groups"] = {
-						},
 						["qg"] = 38323,	-- General Hawthorne
 					}),
 					qa(25008, {	-- Filthy Animals
@@ -274,14 +218,10 @@ _.Zones =
 						["qg"] = 38873,	-- Goucho
 					}),
 					qa(25086, {	-- Firestone Point
-						["groups"] = {
-						},
 						["qg"] = 39085,	-- Logan Talonstrike
 						["sourceQuests"] = { 25082 },	-- Working the Bugs Out
 					}),
 					qh(24667, {	-- Firestone Point
-						["groups"] = {
-						},
 						["qg"] = 37910,	-- Crawgol
 						["sourceQuests"] = { 24654 },	-- Silithissues
 					}),
@@ -304,87 +244,57 @@ _.Zones =
 						["sourceQuests"] = { 24863, 24862 },	-- Breaking the Siege & Running the Gauntlet
 					}),
 					qa(25106, {	-- Hands Off Me Dig!
-						["groups"] = {
-						},
 						["qg"] = 39155,	-- Marley Twinbraid
 						["sourceQuests"] = { 25104 },	-- Digsite Status
 					}),
 					qh(24620, {	-- Hearts-is-Hearts
-						["groups"] = {
-						},
 						["qg"] = 37908,	-- Calder Gray
 						["sourceQuests"] = { 24619 },	-- Parts-is-Parts
 					}),
 					qa(25151, {	-- He Needs Ale!
-						["groups"] = {
-						},
 						["qg"] = 39188,	-- Marley Twinbraid
 						["sourceQuests"] = { 25120 },	-- Marley's Final Flight
 					}),
 					qh(24505, {	-- Holdout at Hunter's Hill
-						["groups"] = {
-						},
 						["qg"] = 37137,	-- Tunawa Stillwind
 						["sourceQuests"] = { 24504 },	-- Clear the High Road
 					}),
 					qh(24573, {	-- Honoring the Dead (awarded "Vendetta Point" criteria)
-						["groups"] = {
-						},
 						["qg"] = 37717,	-- Winnoa Pineforest
 						["sourceQuests"] = { 24569 },	-- Siegebreaker
 					}),
 					qh(24634, {	-- Intelligence Warfare
-						["groups"] = {
-						},
 						["qg"] = 37837,	-- Warlord Bloodhilt
 						["sourceQuests"] = { 24591 },	-- Changing of the Gar'dul
 					}),
 					qh(24525, {	-- Keeping the Dogs at Bay
-						["groups"] = {
-						},
 						["qg"] = 11857,	-- Makaba Flathoof
 					}),
 					qa(25182, {	-- Kill 'em All!
-						["groups"] = {
-						},
 						["qg"] = 39118,	-- General Twinbraid
 						["sourceQuests"] = { 25174 },	-- Twinbraid Needs to Know
 					}),
 					qa(24941, {	-- Langridge Shot
-						["groups"] = {
-						},
 						["qg"] = 38620,	-- Thomas Paxton
 					}),
 					q( 24571, {	-- Lashvine Seeds
-						["groups"] = {
-						},
 						["qg"] = 38314,	-- Muyoh
 					}),
 					qa(24948, {	-- Lifting the Siege
-						["groups"] = {
-						},
 						["qg"] = 38620,	-- Thomas Paxton
 						["sourceQuests"] = { 24943 },	-- Re-Take the Courtyard
 					}),
 					qa(25041, {	-- Lion's Pride
-						["groups"] = {
-						},
 						["qg"] = 39003,	-- Sam Trawley
 					}),
 					qh(24552, {	-- Lion's Pride
-						["groups"] = {
-						},
 						["qg"] = 3387,	-- Jorn Skyseer
 					}),
 					qh(24633, {	-- Mahka's Plea
-						["groups"] = {
-						},
 						["qg"] = 37812,	-- Mahka
 						["sourceQuests"] = { 24653 },	-- Echoes of Agamaggan
 					}),
 					qa(25015, {	-- Make 'em Squeal
-						["groups"] = {
-						},
 						["qg"] = 38871,	-- Corporal Teegan
 						["sourceQuests"] = { 25036 },	-- Teegan's Troubles
 					}),
@@ -418,25 +328,17 @@ _.Zones =
 						["sourceQuests"] = { 25041 }	-- Lion's Pride
 					}),
 					qa(25120, {	-- Marley's Final Flight
-						["groups"] = {
-						},
 						["qg"] = 39155,	-- Marley Twinbraid
 						["sourceQuests"] = { 25108, 25106 },	-- Feegly the Exiled & Hands Off Me Dig!
 					}),
 					qa(25074, {	-- Meet Me at Triumph
-						["groups"] = {
-						},
 						["qg"] = 38323,	-- General Hawthorne
 						["sourceQuests"] = { 25057 },	-- Clap 'em In Irons
 					}),
 					qh(24551, {	-- Meet the New Boss
-						["groups"] = {
-						},
 						["qg"] = 3433,	-- Tatternack Steelforge
 					}),
 					qh(25292, {	-- Next of Kin (UNTESTED, was unavailable on 110 and I don't have anything at the minimum level)
-						["groups"] = {
-						},
 						["qg"] = 39697,	-- Nato Raintree
 						["lvl"] = 35,
 					}),
@@ -450,24 +352,16 @@ _.Zones =
 						["qg"] = 39154,	-- Hurlston Stonesthrow
 					}),
 					qh(24619, {	-- Parts-is-Parts
-						["groups"] = {
-						},
 						["qg"] = 37908,	-- Calder Gray
 					}),
 					qa(25075, {	-- Pick-a-Part
-						["groups"] = {
-						},
 						["qg"] = 39084,	-- Mizzy Pistonhammer
 					}),
 					qa(25079, {	-- Powder Play
-						["groups"] = {
-						},
 						["qg"] = 39084,	-- Mizzy Pistonhammer
 						["sourceQuests"] = { 25075 },	-- Pick-a-Part
 					}),
 					qh(24517, {	-- Put the Fear in Them
-						["groups"] = {
-						},
 						["qg"] = 37154,	-- Kilrok Gorehammer
 					}),
 					qh(24514, {	-- Raptor Scraps
@@ -480,27 +374,19 @@ _.Zones =
 						["qg"] = 37138,	-- Onatay
 					}),
 					qa(24934, {	-- Repel Boarders!
-						["groups"] = {
-						},
 						["qg"] = 38619,	-- Admiral Aubrey
 						["sourceQuests"] = { 24921 },	-- Report to Aubrey
 					}),
 					qa(26687, {	-- Reinforcements From Theramore (UNTESTED - unavailable on lv100 and don't have any Alliance at 35 to test)
-						["groups"] = {
-						},
 						["qg"] = 39119,	-- General Twinbraid
 						["lvl"] = 35,
 						["sourceQuests"] = { 25182 },	-- Kill 'em All!
 					}),
 					qa(24921, {	-- Report to Aubrey
-						["groups"] = {
-						},
 						["qg"] = 38623,	-- Dockmaster Lewis
 						["sourceQuests"] = { 28551, 28550 },	-- Hero's Call: Southern Barrens! (same quest name, different IDs)
 					}),
 					qa(25087, {	-- Report to Twinbraid
-						["groups"] = {
-						},
 						["qg"] = 39083,	-- Commander Roberts
 						["sourceQuests"] = { 25081 },	-- Claim the Battlescar
 					}),
@@ -515,15 +401,13 @@ _.Zones =
 						["sourceQuests"] = { 24941 },	-- Langridge Shot
 					}),
 					qa(24862, {	-- Running the Gauntlet
-						["groups"] = {
-						},
 						["qg"] = 38378,	-- Commander Walpole
 					}),
 					qa(24939, {	-- Run Out the Guns
 						["groups"] = {
-						i(53282),
-						i(53268),
-						i(131385),
+							i(53282),
+							i(53268),
+							i(131385),
 						},
 						["qg"] = 3454,	-- Cannoneer Smythe
 						["sourceQuests"] = { 24938 },	-- The Guns of Northwatch
@@ -538,8 +422,6 @@ _.Zones =
 						["sourceQuests"] = { 24685 },	-- Dwarf Fortress
 					}),
 					qa(25002, {	-- Scavenged
-						["groups"] = {
-						},
 						["qg"] = 38878,	-- Mangled Body
 					}),
 					qh(24569, {	-- Siegebreaker
@@ -554,8 +436,6 @@ _.Zones =
 						["sourceQuests"] = { 24546, 24551 },	-- A Line in the Dirt & Meet the New Boss
 					}),
 					qh(24515, {	-- Signals in the Sky
-						["groups"] = {
-						},
 						["qg"] = 37138,	-- Onatay
 					}),
 					qa(24956, {	-- Silencing Rageroar
@@ -567,8 +447,6 @@ _.Zones =
 						["sourceQuests"] = { 24944 }	-- Back in the Fight
 					}),
 					qh(24654, {	-- Silithissues
-						["groups"] = {
-						},
 						["qg"] = 37910,	-- Crawgol
 					}),
 					qh(24621, {	-- Smarts-is-Smarts (awarded "Desolation Hold" criteria)
@@ -582,8 +460,6 @@ _.Zones =
 						["sourceQuests"] = { 24620 },	-- Hearts-is-Hearts
 					}),
 					q( 24566, {	-- Sowing a Solution
-						["groups"] = {
-						},
 						["qg"] = 38314,	-- Muyoh
 						["sourceQuests"] = { 24570, 24571 },	-- Adder Subtraction & Lashvine Seeds
 					}),
@@ -606,43 +482,29 @@ _.Zones =
 						["sourceQuests"] = { 24518 }	-- The Low Road
 					}),
 					qa(25191, {	-- Survey the Destruction
-						["groups"] = {
-						},
 						["qg"] = 38383,	-- Nibb Spindlegear
 					}),
 					qh(24572, {	-- Taking Back Taurajo
-						["groups"] = {
-						},
 						["qg"] = 37679,	-- Warlord Bloodhilt
 						["sourceQuests"] = { 24569 },	-- Siegebreaker
 					}),
 					qh(24632, {	-- Tauren Vengeance
-						["groups"] = {
-						},
 						["qg"] = 37909,	-- Tomusa
 						["sourceQuests"] = { 24631 },	-- Flightmare
 					}),
 					qa(25000, {	-- Teegan's People
-						["groups"] = {
-						},
 						["qg"] = 38621,	-- Jeffrey Long
 					}),
 					qa(25036, {	-- Teegan's Troubles
-						["groups"] = {
-						},
 						["qg"] = 38620,	-- Thomas Paxton
 						["sourceQuests"] = { 24948 },	-- Lifting the Siege
 					}),
 					qa(25197, {	-- The Admiral Won't Back Down
-						["groups"] = {
-						},
 						["qg"] = 39322,	-- Horton Gimbleheart
 						["description"] = "The only way to do both this and 'Report to Aubrey' is if you do it before accepting and completing 'Repel Boarders.'",
 						["sourceQuests"] = { 25191 },	-- Survey the Destruction
 					}),
 					qa(25175, {	-- The Bad News
-						["groups"] = {
-						},
 						["qg"] = 39188,	-- Marley Twinbraid
 						["sourceQuests"] = { 25151 },	-- He Needs Ale!
 					}),
@@ -667,20 +529,14 @@ _.Zones =
 						}),
 					}),
 					q( 24824, {	-- The Disturbed Earth (awarded "Firestone Point" criteria)
-						["groups"] = {
-						},
 						["qg"] = 37834,	-- Tauna Skychaser
 					}),
 					qa(24938, {	-- The Guns of Northwatch
-						["groups"] = {
-						},
 						["qg"] = 38619,	-- Admiral Aubrey
 						["sourceQuests"] = { 24934 },	-- Repel Boarders!
 					}),
 					i( 49776, {	-- Roadway Plans
 						qh(24518, {	-- The Low Road
-							["groups"] = {
-							},
 							["qg"] = 37216,	-- Honor's Stand Officer
 						}),
 					}),
@@ -696,33 +552,23 @@ _.Zones =
 						["sourceQuests"] = { 24574 }	-- To Harvest Chaos
 					}),
 					qa(25059, {	-- The Taurajo Briefs
-						["groups"] = {
-						},
 						["qg"] = 38986,	-- Ambassador Gaines
 						["sourceQuests"] = { 25045, 25043 },	-- A Line in the Dirt & Fields of Blood
 					}),
 					q( 24574, {	-- To Harvest Chaos
-						["groups"] = {
-						},
 						["qg"] = 37570,	-- Naralex
 						["sourceQuests"] = { 24565 },	-- Biological Intervention
 					}),
 					qa(25034, {	-- To the Front!
-						["groups"] = {
-						},
 						["qg"] = 38871,	-- Corporal Teegan
 						["sourceQuests"] = { 25027 },	-- You Flicked a Fine Vine to Leaf Me
 					}),
 --					q( 24568),	-- To the Walls! (LEGACY)
 					qa(25028, {	-- Trouble From the Ground Up
-						["groups"] = {
-						},
 						["qg"] = 38876,	-- Hannah Bridgewater
 						["sourceQuests"] = { 25022, 25015 }	-- A Failure to Communicate & Make 'Em Squeal
 					}),
 					qa(25174, {	-- Twinbraid Needs to Know
-						["groups"] = {
-						},
 						["qg"] = 38152,	-- Weezil Slipshadow
 						["sourceQuests"] = { 25163 },	-- Who Did This?
 					}),
@@ -735,25 +581,17 @@ _.Zones =
 						["qg"] = 37153,	-- Holgom
 					}),
 					qh(24539, {	-- When Plants Attack
-						["groups"] = {
-						},
 						["qg"] = 37515,	-- Lane Tallgrass
 					}),
 					qa(25163, {	-- Who Did This?
-						["groups"] = {
-						},
 						["qg"] = 39220,	-- Wounded Bael'dun Officer
 						["sourceQuests"] = { 25120 },	-- Marley's Final Flight
 					}),
 					qh(24807, {	-- Winnoa Pineforest
-						["groups"] = {
-						},
 						["qg"] = 37570,	-- Naralex
 						["sourceQuests"] = { 24601 },	-- The Nightmare Scar
 					}),
 					qa(25082, {	-- Working the Bugs Out
-						["groups"] = {
-						},
 						["qg"] = 39085,	-- Logan Talonstrike
 					}),
 					qa(25027, {	-- You Flicked a Fine Vine to Leaf Me

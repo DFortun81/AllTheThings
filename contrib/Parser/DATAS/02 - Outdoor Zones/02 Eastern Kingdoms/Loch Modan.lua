@@ -48,8 +48,6 @@ _.Zones =
 --]]
 --[[
 					qg(6241, qa( 1655, {	-- Bailor's Ore Shipment (REMOVED)
-						["groups"] = {
-						},
 						["classes"] = {2},	-- Paladin
 					})),
 --]]					

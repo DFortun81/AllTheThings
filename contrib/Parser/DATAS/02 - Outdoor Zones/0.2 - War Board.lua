@@ -24,10 +24,7 @@ _.Zones =
 				["qg"] = 107574, -- Anduin Wrynn <King of Stormwind> 
 			}),
 			--[[  Might be Horde Version
-			q(49846, { -- Wars on Two Fronts [Cataclysm] 
-				["groups"] = {
-					
-				},
+			q(49846, { -- Wars on Two Fronts [Cataclysm]
 				["itemID"] = 156477, -- Special Duty Assignments
 			}),
 			--]]

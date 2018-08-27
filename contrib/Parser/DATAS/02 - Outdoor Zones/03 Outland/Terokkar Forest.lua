@@ -16,8 +16,6 @@ _.Zones =
 				}),
 				n(-25, { 	-- Pet Battle
 					i(27445, { -- Magical Crawdad Box
-						["groups"] = {
-						},
 						["description"] = "This is obtained by fishing in Highland Mixed School.",
 					}),
 					p(514), -- Flayer Youngling
@@ -36,8 +34,6 @@ _.Zones =
 					q(10210),	-- A'dal
 --]]
 					q( 10664, {	-- Additional Materials
-						["groups"] = {
-						},
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10663 },	-- The Hermit Smith
 					}),
@@ -58,8 +54,6 @@ _.Zones =
 						}),
 					}),	
 					q(10676, {	-- Bane of the Illidari
-						["groups"] = {
-						},
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10670, 10667 },	-- Tear of the Earthmother & Underworld Loam
 					}),
@@ -138,8 +132,6 @@ _.Zones =
 					q(10920),	-- For the Fallen
 --]]
 					qdg(q(10665, {	-- Fresh from the Mechanar
-						["groups"] = {
-						},
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10664 },	-- Additional Materials
 					})),
@@ -246,8 +238,6 @@ _.Zones =
 					qh(11506),	-- Spirits of Auchindoun					
 					qa(11505),	-- Spirits of Auchindoun
 					q(  9968, {	-- Strange Energy
-						["groups"] = {
-						},
 						["qg"] = 18446,	-- Earthbinder Tavgren
 						["sourceQuests"] = { 9957 },	-- What's Wrong at Cenarion Thicket?
 					}),
@@ -258,8 +248,6 @@ _.Zones =
 					q(10873),	-- Taken in the Night
 --]]
 					qdg(q(10670, {	-- Tear of the Earthmother
-						["groups"] = {
-						},
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10665, 10666 },	-- Fresh From the Mechanar & The Lexicon Demonica
 					})),
@@ -316,8 +304,6 @@ _.Zones =
 					q(10896),	-- The Infested Protectors
 --]]
 					qdg(q(10666, {	-- The Lexicon Demonica
-						["groups"] = {
-						},
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10664 },	-- Additional Materials
 					})),
@@ -346,8 +332,6 @@ _.Zones =
 					qa( 10035),	-- Torgos!
 --]]
 					qdg(q(10667, {	-- Underworld Loam
-						["groups"] = {
-						},
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10665, 10666 },	-- Fresh From the Mechanar & The Lexicon Demonica
 					})),
@@ -413,8 +397,6 @@ _.Zones =
 					faction(1031, {	-- Sha'tari Skyguard
 						["groups"] = {
 							q(11008, {	-- Fires Over Skettis
-								["groups"] = {
-								},
 								["qg"] = 23048,	-- Sky Sergeant Doryn
 								["sourceQuests"] = { 11098 },	-- To Skettis!
 							}),

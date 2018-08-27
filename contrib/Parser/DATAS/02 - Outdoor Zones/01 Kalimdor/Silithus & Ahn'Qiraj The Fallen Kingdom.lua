@@ -26,8 +26,6 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					q(  8287, {	-- A Terrible Purpose (awarded "A Terrible Purpose" criteria)
-						["groups"] = {
-						},
 						["qg"] = 15194,	-- Hermit Ortell
 						["sourceQuests"] = { 8279 },	-- The Twilight Lexicon
 					}),
@@ -56,25 +54,17 @@ _.Zones =
 						["sourceQuests"] = { 8304 },	-- Dearest Natalia
 					},
 					q(  8310, {	-- Breaking the Code
-						["groups"] = {
-						},
 						["qg"] = 15171,	-- Frankal Stonebridge
 						["sourceQuests"] = { 8304 },	-- Dearest Natalia
 					}),
 					qh(28865, {	-- Call of the Warmatron (bcrumb for Blasted Lands)
-						["groups"] = {
-						},
 						["qg"] = 50587,	-- Okril'on Mage
 						["isBreadcrumb"] = true,
 					}),
 					q(  8277, {	-- Deadly Desert Venom
-						["groups"] = {
-						},
 						["qg"] = 15189,	-- Beetix Ficklespragg
 					}),
 					q(  8304, {	-- Dearest Natalia
-						["groups"] = {
-						},
 						["qg"] = 15181,	-- Commander Mar'alith
 						["sourceQuests"] = { 8321 },	-- Vyral the Vile
 					}),
@@ -87,8 +77,6 @@ _.Zones =
 						["requiredSkill"] = 185,	-- Cooking
 					}),
 					q(  8309, {	-- Glyph Chasing
-						["groups"] = {
-						},
 						["qg"] = 15170,	-- Rutgar Glyphshaper
 						["sourceQuests"] = { 8304 },	-- Dearest Natalia
 					}),
@@ -99,97 +87,65 @@ _.Zones =
 						["sourceQuests"] = { 8304 },	-- Dearest Natalia
 					}),
 					q(  8317, {	-- Kitchen Assistance
-						["groups"] = {
-						},
 						["qg"] = 15174,	-- Calandrath.
 						["sourceQuests"] = { 8313 },	-- Sharing the Knowledge
 						["requiredSkill"] = 185,	-- Cooking
 					}),
 					qa(28867, {	-- Nethergarde Needs You! (bcrumb for Blasted Lands)
-						["groups"] = {
-						},
 						["qg"] = 50588,	-- Nethergarde Mage
 						["isBreadcrumb"] = true,
 					}),
 					q(  8278, {	-- Noggle's Last Hope
-						["groups"] = {
-						},
 						["qg"] = 15189,	-- Beetix Ficklespragg
 						["sourceQuests"] = { 8277 },	-- Deadly Desert Venom
 					}),
 					q(  8282, {	-- Noggle's Lost Satchel
-						["groups"] = {
-						},
 						["qg"] = 15190,	-- Noggle Ficklespragg
 						["sourceQuests"] = { 8278 },	-- Noggle's Last Hope
 					}),
 					qh( 9416, {	-- Report to General Kirika
-						["groups"] = {
-						},
 						["qg"] = 17081,	-- Scout Bloodfist
 					}),
 					qa( 9415, {	-- Report to Marshal Bluewall
-						["groups"] = {
-						},
 						["qg"] = 17082,	-- Rifleman Torrig
 					}),
 					q(  8318, {	-- Secret Communication
-						["groups"] = {
-						},
 						["qg"] = 15306,	-- Bor Wildmane
 					}),
 					q(  8280, {	-- Securing the Supply Lines
-						["groups"] = {
-						},
 						["qg"] = 15191,	-- Windcaller Proudhorn
 						["sourceQuests"] = { 28528, 28527 },	-- Hero's Call: Silithus! & Warchief's Command: Silithus!
 					}),
 					o(180503, {	-- Sandy Cookbook
 						q(8313, {	-- Sharing the Knowledge
-							["groups"] = {
-							},
 							["sourceQuests"] = { 8307 },	-- Desert Recipe
 							["requiredSkill"] = 185,	-- Cooking
 						}),
 					}),
 					q(  8281, {	-- Stepping Up Security
-						["groups"] = {
-						},
 						["qg"] = 15191,	-- Windcaller Proudhorn
 						["sourceQuests"] = { 8280 },	-- Securing the Suppy Lines
 					}),
 					q(  8285, {	-- The Deserter
-						["groups"] = {
-						},
 						["qg"] = 15183,	-- Geologist Larksbane
 						["sourceQuests"] = { 8284 },	-- The Twilight Mystery
 					}),
 					q(  8279, {	-- The Twilight Lexicon
-						["groups"] = {
-						},
 						["qg"] = 15194,	-- Hermit Ortell
 						["sourceQuests"] = { 8285 },	-- The Deserter
 					}),
 					q(  8284, {	-- The Twilight Mystery
-						["groups"] = {
-						},
 						["qg"] = 15183,	-- Geologist Larksbane
 						["sourceQuests"] = { 8321 },	-- Vyral the Vile
 					}),
 					q(  8323, {	-- True Believers (awarded "Twilight Lexicon" criteria & overall "Silithus Quests" achievement)
-						["groups"] = {
-						},
 						["qg"] = 15194,	-- Hermit Ortell
 						["sourceQuests"] = { 8279 },	-- The Twilight Lexicon
 					}),
 					q(  8320, {	-- Twilight Geolords
-						["groups"] = {
-						},
 						["qg"] = 15270,	-- Huum Wildmane
 					}),
 					q(  8314, {	-- Unraveling the Mystery (awarded "Unraveling the Mystery" criteria)
-						["groups"] = {
-						},
 						["qg"] = 15170,	-- Rutgar Glyphshaper
 						["sourceQuests"] = { 8310, 8309 },	-- Breaking the Code & Glyph Chasing
 					}),
@@ -208,8 +164,6 @@ _.Zones =
 					}),
 -- REPEATABLE QUESTS
 					qr(q(8319, {	-- Encrypted Twilight Texts
-						["groups"] = {
-						},
 						["qg"] = 15306,	-- Bor Wildmane
 						["sourceQuests"] = { 8318 },	-- Secret Communication
 					})),
@@ -230,8 +184,6 @@ _.Zones =
 					})),
 -- LEGENDARY QUESTS
 					ql(q(7785, {	-- Examine the Vessel
-						["groups"] = {
-						},
 						["qg"] = 14347,	-- Highlord Demitrian
 						["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
 --						["sourceQuests"] = {  },	-- 
@@ -246,16 +198,12 @@ _.Zones =
 						})),
 					}),
 					ql(q(7786, {	-- Thunderaan the Windseeker
-						["groups"] = {
-						},
 						["qg"] = 14347,	-- Highlord Demitrian
 						["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
 						["sourceQuests"] = { 7785 },	-- Examine the Vessel
 					})),
 -- CLASS HALL QUESTS
 					q(43002, {	-- Blessed Blade of the Windseeker
-						["groups"] = {
-						},
 						["qg"] = 14347,	-- Highlord Demitrian
 						["classes"]= { 7 },	-- Shaman
 					}),
@@ -1281,128 +1229,86 @@ END OF MICRO-HOLIDAY --]]
 									["coord"] = { 42.2, 44.2 },
 								}),
 								qa(50047, {	-- Free Samples
-									["groups"] = {
-									},
 									["qg"] = 131963, -- Nolan Speed
 									["sourceQuests"] = { 49981 } , -- Witness to the Wound
 								}),	
 								qa(50046, {	-- It's a Sabotage
-									["groups"] = {
-									},
 									["qg"] = 130030, -- Kelsey Steelspark
 									["sourceQuests"] = { 49981 } , -- Witness to the Wound
 								}),	
 								qa(50228, {	-- The Twilight Survivor
-									["groups"] = {
-									},
 									["qg"] = 131963, -- Nolan Speed
 									["sourceQuests"] = { 50047 , 50046 } , -- Free Samples / It's a Sabotage
 								}),	
 								qa(50372, {	-- Desert Research
-									["groups"] = {
-									},
 									["qg"] = 131963, -- Nolan Speed
 									["sourceQuests"] = { 50047 , 50046 } , -- Free Samples / It's a Sabotage
 								}),	
 								qa(50227, {	-- Larvae By The Dozen
-									["groups"] = {
-									},
 									["qg"] = 132606, -- Tammy Tinkspinner
 									["sourceQuests"] = { 50372 } , -- Desert Research
 								}),	
 								qa(50226, {	-- The Source of Power
-									["groups"] = {
-									},
 									["qg"] = 132606, -- Tammy Tinkspinner
 									["sourceQuests"] = { 50372 } , -- Desert Research
 								}),	
 								qa(50373, {	-- A Recent Arrival
-									["groups"] = {
-									},
 									["qg"] = 131963, -- Nolan Speed
 									["sourceQuests"] = { 50228 } , -- The Twilight Survivor
 								}),	
 								qa(50049, {	-- The Speaker's Perspective
-									["groups"] = {
-									},
 									["qg"] = 130032, -- Archmage Khadgar
 									["sourceQuests"] = { 50373 } , -- A Recent Arrival
 								}),	
 								qa(50374, {	-- The Blood of Azeroth
-									["groups"] = {
-									},
 									["qg"] = 130216, -- Magni Bronzebeard
 									["sourceQuests"] = { 50049 } , -- The Speaker's Perspective
 								}),	
 								qa(50056, {	-- The Speaker's Call
-									["groups"] = {
-									},
 									["qg"] = 131963, -- Nolan Speed
 									["sourceQuests"] = { 50374 } , -- The Blood of Azeroth
 								}),	
 								qh(50053, {	-- Lazy Prospectors
-									["groups"] = {
-									},
 									["qg"] = 132147, -- Grol Warblade
 									["sourceQuests"] = { 49982 } , -- Witness to the Wound
 								}),	
 								qh(50052, {	-- No Spies Allowed
-									["groups"] = {
-									},
 									["qg"] = 132045, -- Gizmax Greasebolt
 									["sourceQuests"] = { 49982 } , -- Witness to the Wound
 								}),	
 								qh(50232, {	-- The Twilight Survivor
-									["groups"] = {
-									},
 									["qg"] = 132147, -- Grol Warblade
 									["sourceQuests"] = { 50053 } , -- Lazy Prospectors
 								}),	
 								qh(50358, {	-- Desert Research
-									["groups"] = {
-									},
 									["qg"] = 132147, -- Grol Warblade
 									["sourceQuests"] = { 50053 } , -- Lazy Prospectors
 								}),	
 								qh(50231, {	-- Larvae By The Dozen
-									["groups"] = {
-									},
 									["qg"] = 132040, -- Pixni Rustbomb
 									["sourceQuests"] = { 50358 } , -- Desert Research
 								}),	
 								qh(50230, {	-- The Source of Power
-									["groups"] = {
-									},
 									["qg"] = 132040, -- Pixni Rustbomb
 									["sourceQuests"] = { 50358 } , -- Desert Research
 								}),	
 								q(50229, {	-- A Wee Bit O' Cloth
-									["groups"] = {
-									},
 									["description"] = "You get this quest by visiting the Twilight Outhouse located at 29.6, 69.6",
 									["sourceQuests"] = { 50358, 50372 } , -- Desert Research 
 								}),	
 								qh(50360, {	-- Khadgar's Request
-									["groups"] = {
-									},
 									["qg"] = 132147, -- Grol Warblade
 									["sourceQuests"] = { 50232 } , -- The Twilight Survivor
 								}),	
 								qh(50055, {	-- The Speaker's Perspective
-									["groups"] = {
-									},
 									["qg"] = 130033, -- Archmage Khadgar
 									["sourceQuests"] = { 50360 } , -- Khadgar's Request
 								}),	
 								qh(50364, {	-- The Blood of Azeroth
-									["groups"] = {
-									},
 									["qg"] = 130216, -- Magni Bronzebear
 									["sourceQuests"] = { 50055 } , -- The Speaker's Perspective
 								}),	
 								qh(50300, {	-- The Speaker's Call
-									["groups"] = {
-									},
 									["qg"] = 132147, -- Grol Warblade
 									["sourceQuests"] = { 50364 } , -- The Blood of Azeroth
 								}),	
@@ -1417,8 +1323,6 @@ END OF MICRO-HOLIDAY --]]
 						}),
 						n(-16, { -- Rares
 							n(132591, {	-- Ogmot the Mad
-								["groups"] = {
-								},
 								["questID"] = 50334,
 							}),
 							n(132578, {	-- Qroshekx

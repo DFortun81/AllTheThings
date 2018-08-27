@@ -39,15 +39,11 @@ _.Zones =
 					ach(4900, { -- Badlands Quests
 						crit(1, { --	Rhea
 							q( 27763, {	-- To Fuselight Proper
-								["groups"] = {
-								},
 								["qg"] = 46650,	-- Eddie Flofizzle
 								["isBreadcrumb"] = true,	-- for "Easily Swayed"
 								["sourceQuests"] = { 27762 },	-- Fuselight Ho!
 							}),
 							q( 27774, {	-- Easily Swayed
-								["groups"] = {
-								},
 								["qg"] = 46652,	-- Dolph Blastus
 								["sourceQuests"] = { 27763 },	-- To Fuselight Proper
 							}),
@@ -63,20 +59,14 @@ _.Zones =
 								["sourceQuests"] = { 27774 },	-- Easily Swayed
 							}),
 							q( 27765, {	-- First Sample: Wild Eggs
-								["groups"] = {
-								},
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27764 },	-- A Strange Request
 							}),
 							q( 27766, {	-- Second Sample: Whelps
-								["groups"] = {
-								},
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27764 },	-- A Strange Request
 							}),
 							q( 27770, {	-- Lifting the Veil
-								["groups"] = {
-								},
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27765, 27766 },	-- First Sample: Wild Eggs & Second Sample: Whelps
 							}),
@@ -91,8 +81,6 @@ _.Zones =
 								["sourceQuests"] = { 27770 },	-- Lifting the Veil
 							}),
 							q( 27769, {	-- Rhea Revealed
-								["groups"] = {
-								},
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27771 },	-- Third Sample: Implanted Eggs
 							}),
@@ -103,8 +91,6 @@ _.Zones =
 						--]]
 						crit(3, { --	The Titan's Knowledge (A/H)
 							q( 27772, {	-- The Venerable Doctor Blam
-								["groups"] = {
-								},
 								["qg"] = 46655,	-- Rheastrasza
 								["sourceQuests"] = { 27769 },	-- Rhea Revealed
 							}),
@@ -118,14 +104,10 @@ _.Zones =
 								["sourceQuests"] = { 27772 },	-- The Venerable Doctor Blam
 							}),
 							qa(27791, {	-- Dustwind Dig
-								["groups"] = {
-								},
 								["qg"] = 46664,	-- Dr. Hieronymus Blam
 								["sourceQuests"] = { 27789 },	-- Troggish Troubles
 							}),
 							qh(27881, {	-- Bloodwatcher Point
-								["groups"] = {
-								},
 								["qg"] = 46664,	-- Dr. Hieronymus Blam
 								["sourceQuests"] = { 27789 },	-- Troggish Troubles
 							}),
@@ -150,71 +132,47 @@ _.Zones =
 								["sourceQuests"] = { 27881 },	-- Bloodwatcher Point
 							}),
 							qa(27797, {	-- The Sentinel's Pawn
-								["groups"] = {
-								},
 								["qg"] = 46760,	-- Lead Prospector Durdin
 								["sourceQuests"] = { 27792 },	-- All's Fair in Love, War, and Archaeology
 							}),
 							qh(27884, {	-- The Sentinel's Pawn
-								["groups"] = {
-								},
 								["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
 								["sourceQuests"] = { 27882 },	-- It's Not About History, It's About Power
 							}),
 							o(206336, {	-- Marble Slab
 								qa(27709, {	-- The Sentinel's Game
-									["groups"] = {
-									},
 									["sourceQuests"] = { 27797 },	-- The Sentinel's Pawn
 								}),
 								qh(27886, {	-- The Sentinel's Game
-									["groups"] = {
-									},
 									["sourceQuests"] = { 27884 },	-- The Sentinel's Pawn
 								}),
 							}),
 							qa(27796, {	-- The Warden's Pawn
-								["groups"] = {
-								},
 								["qg"] = 46760,	-- Lead Prospector Durdin
 								["sourceQuests"] = { 27792 },	-- All's Fair in Love, War, and Archaeology
 							}),
 							qh(27883, {	-- The Warden's Pawn
-								["groups"] = {
-								},
 								["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
 								["sourceQuests"] = { 27882 },	-- It's Not About History, It's About Power
 							}),
 							o(206335, {	-- Stone Slab
 								qa(27693, {	-- The Warden's Game
-									["groups"] = {
-									},
 									["sourceQuests"] = { 27796 },	-- The Warden's Pawn
 								}),
 								qh(27885, {	-- The Warden's Game
-									["groups"] = {
-									},
 									["sourceQuests"] = { 27883 },	-- The Warden's Pawn
 								}),
 							}),
 							qa(27793, {	-- Ancient Protectors
-								["groups"] = {
-								},
 								["sourceQuests"] = { 27709, 27693 },	-- The Sentinel's Game & The Warden's Game
 							}),
 							qh(27887, {	-- Ancient Protectors
-								["groups"] = {
-								},
 								["sourceQuests"] = { 27885 },	-- The Warden's Game
 							}),
 							qa(27912, {	-- The Titans' Trove
-								["groups"] = {
-								},
 								["sourceQuests"] = { 27793 },	-- Ancient Protectors
 							}),
 							qh(27913, {	-- The Titans' Trove
-								["groups"] = {
-								},
 								["sourceQuests"] = { 27887 },	-- Ancient Protectors
 							}),
 							o(206374, {	-- Trove of the Watchers
@@ -244,65 +202,43 @@ _.Zones =
 						--]]
 						a(crit(2, { --	The Fate of a Dragonflight
 							qa(27826, {	-- Into the Dragon's Mouth
-								["groups"] = {
-								},
 								["qg"] = 46664,	-- Dr. Hieronymus Blam
 								["sourceQuests"] = { 27794 },	-- Return to Blam
 							}),
 							qa(27827, {	-- The Swift, the Fierce, and the Stout
-								["groups"] = {
-								},
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27826 },	-- Into the Dragon's Mouth
 							}),
 							qa(27828, {	-- Eric, the Utility Dwarf
-								["groups"] = {
-								},
 								["qgs"] = { 46852, 46855 },	-- Eric "The Swift"
 								["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 							}),
 							qa(27835, {	-- Olaf, the Big Fella' (secondary QG ID 46857)
-								["groups"] = {
-								},
 								["qgs"] = { 46854, 46857 },	-- Olaf
 								["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 							}),
 							qa(27834, {	-- Baelog, the Glass Cannon
-								["groups"] = {
-								},
 								["qgs"] = { 46853, 46856 },	-- Baelog
 								["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 							}),
 							qa(27829, {	-- The Wrath of a Dragonflight
-								["groups"] = {
-								},
 								["qgs"] = { 46856, 46855, 46857 },	-- Baelog, Eric "The Swift," & Olaf
 								["sourceQuests"] = { 27834, 27828, 27835 },	-- Baelog, the Glass Cannon; Eric, the Utility Dwarf; & Olaf, the Big Fella
 							}),
 							qa(27830, {	-- Their Hunt Continues
-								["groups"] = {
-								},
 								["sourceQuests"] = { 27829 },	-- The Wrath of a Dragonflight
 							}),
 							qa(27831, {	-- The Sorrow and the Fury
-								["groups"] = {
-								},
 								["sourceQuests"] = { 27830 },	-- Their Hunt Continues
 							}),
 							qa(27832, {	-- The Hidden Clutch
-								["groups"] = {
-								},
 								["sourceQuests"] = { 27831 },	-- The Sorrow and the Fury
 							}),
 							qa(27858, {	-- Rheastrasza's Gift
-								["groups"] = {
-								},
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27832 },	-- The Hidden Clutch
 							}),
 							q( 27930, {	-- Devastation
-								["groups"] = {
-								},
 								["sourceQuests"] = { 27858 },	-- Rheastrasza's Gift
 							}),
 							q( 27859, {	-- The Egg Lives On
@@ -315,90 +251,60 @@ _.Zones =
 						})),
 						h(crit(2, { --  The Fate of a Dragonflight
 							qh(27889, {	-- New Kargath
-								["groups"] = {
-								},
 								["qg"] = 46664,	-- Dr. Hieronymus Blam
 								["sourceQuests"] = { 27888 },	-- Return to Blam
 							}),
 							qh(27890, {	-- The Bad Dogs
-								["groups"] = {
-								},
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27889 },	-- New Kargath
 							}),
 							qh(27891, {	-- Amakkar, Jack of All Trades
-								["groups"] = {
-								},
 								["qgs"] = { 47011, 47021 },	-- Amakkar (same QG, different IDs)
 								["sourceQuests"] = { 27890 },	-- The Bad Dogs
 							}),
 							qh(27893, {	-- Gargal, the Behemoth
-								["groups"] = {
-								},
 								["qgs"] = { 47013, 47022 },	-- Gargal (same QG, different IDs)
 								["sourceQuests"] = { 27890 },	-- The Bad Dogs
 							}),
 							qh(27892, {	-- Jurrix the Striker (secondary QG ID 47024)
-								["groups"] = {
-								},
 								["qgs"] = { 47018, 47024 },	-- Jurrix Whitemane
 								["sourceQuests"] = { 27890 },	-- The Bad Dogs
 							}),
 							qh(27894, {	-- The Wrath of a Dragonflight
-								["groups"] = {
-								},
 								["qgs"] = { 47021, 47022, 47024 },	-- Amakkar, Gargal, & Jurrix Whitemane
 								["sourceQuests"] = { 27891, 27893, 27892 },	-- Amakkar, Jack of All Trades; Gargal, the Behemoth; & Jurrix the Striker
 							}),
 							qh(27895, {	-- Their Hunt Continues
-								["groups"] = {
-								},
 								["sourceQuests"] = { 27894 },	-- The Wrath of a Dragonflight
 							}),
 							qh(27896, {	-- The Sorrow and the Fury
-								["groups"] = {
-								},
 								["sourceQuests"] = { 27895 },	-- Their Hunt Continues
 							}),
 							qh(27897, {	-- The Hidden Clutch
-								["groups"] = {
-								},
 								["sourceQuests"] = { 27896 },	-- The Sorrow and the Fury
 							}),
 							qh(27898, {	-- Rheastrasza's Gift
-								["groups"] = {
-								},
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27897 },	-- The Hidden Clutch
 							}),
 							q( 27930, {	-- Devastation
-								["groups"] = {
-								},
 								["sourceQuests"] = { 27898 },	-- Rheastrasza's Gift
 							}),
 							q( 27859, {	-- The Egg Lives On
-								["groups"] = {
-								},
 								["qg"] = 46664,	-- Dr. Hieronymus Blam
 								["sourceQuests"] = { 27930 },	-- Devastation
 							}),
 						})),
 						crit(4, { --	The Day that Deathwing Came
 							q( 27927, {	-- Down to the Scar
-								["groups"] = {
-								},
 								["qgs"] = { 46660, 46930 },	-- Aidan Summerwind & Veronica Dolen
 								["isBreadcrumb"] = true,	-- for "The Day that Deathwing Came"
 							}),
 							q( 27713, {	-- The Day that Deathwing Came
-								["groups"] = {
-								},
 								["qg"] = 2785,	-- Theldurin the Lost
 								["sourceQuests"] = { 27927 },	-- Down to the Scar
 							}),
 							q( 27714, {	-- The Day that Deathwing Came: The Real Story
-								["groups"] = {
-								},
 								["qg"] = 2920,	-- Lucien Tosselwrench
 								["sourceQuests"] = { 27713 },	-- The Day that Deathwing Came
 							}),
@@ -429,8 +335,6 @@ _.Zones =
 								["qg"] = 46653,	-- Garyanne Fleezlebop
 							}),
 							q( 27776, {	-- It's Goat Time, Baby
-								["groups"] = {
-								},
 								["qg"] = 46653,	-- Garyanne Fleezlebop
 								["sourceQuests"] = { 27775 },	-- When the Going Gets Tough, Cheat
 							}),
@@ -463,26 +367,18 @@ _.Zones =
 								["qg"] = 1068,	-- Gorn
 							}),
 							qa(27825, {	-- Survival of the Fattest
-								["groups"] = {
-								},
 								["qg"] = 46930,	-- Victoria Delen
 							}),
 							qh(27879, {	-- Survival of the Fattest
-								["groups"] = {
-								},
 								["qg"] = 46660,	-- Aidan Summerwind
 							}),
 							q( 28512, {	-- To the Aid of the Thorium Brotherhood
-								["groups"] = {
-								},
 								["qgs"] = { 46930, 46660 },	-- Victoria Dolen (A) & Aidan Summerwind (H)
 								["isBreadcrumb"] = true,	-- for "A New Master... But Who?" in Searing Gorge, mutually exclusive with other bcrumb quests for SG
 							}),
 						}),
 						sz(765, 6, {	-- The Dustbowl
 							qa(27823, {	-- A Dwarf's Got Needs
-								["groups"] = {
-								},
 								["qg"] = 2860,	-- Sigrun Ironhew
 							}),
 							qa(27824, {	-- The Good Stuff
@@ -517,8 +413,6 @@ _.Zones =
 						-- }),
 					}),
 					qh(27877, {	-- The Morons' League
-						["groups"] = {
-						},
 						["qg"] = 46759,	-- Lidia Sunglow
 					}),
 				}),

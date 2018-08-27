@@ -24,8 +24,6 @@ _.Zones =
 				n(-17, {	-- Quests
 					i( 29234, {	-- Belmara's Tome
 						q(10305, {	-- Abjurist Belmara
-							["groups"] = {
-							},
 							["qg"] = 19546,	-- Abjurist Belmara
 						}),
 					}),
@@ -41,31 +39,21 @@ _.Zones =
 					}),
 					o(184300, {	-- Necromantic Focus
 						q(10314, {	-- A Lingering Suspicion
-							["groups"] = {
-							},
 							["sourceQuests"] = { 10316 },	-- Searching for Evidence
 						}),
 					}),
 					q( 10436, {	-- All Clear!
-						["groups"] = {
-						},
 						["qg"] = 20913,	-- Tashar
 						["sourceQuests"] = { 10430 },	-- Testing the Prototype
 					}),
 					q( 10268, {	-- An Audience with the Prince
-						["groups"] = {
-						},
 						["qg"] = 20066,	-- Gahruj
 						["sourceQuests"] = { 10267 },	-- Rightful Repossession
 					}),
 					q( 10270, {	-- A Not-So-Modest Proposal
-						["groups"] = {
-						},
 						["qg"] = 20071,	-- Wind Trader Marid
 					}),
 					q( 10272, {	-- A Promising Start
-						["groups"] = {
-						},
 						["qg"] = 20110,	-- Tyri
 						["sourceQuests"] = { 10281 },	-- Formal Introductions
 					}),
@@ -98,14 +86,10 @@ _.Zones =
 					}),
 					i( 29233, {	-- Dathric's Blade
 						q( 10182, {	-- Battle-Mage Dathric
-							["groups"] = {
-							},
 							["qg"] = 19543,	-- Battle-Mage Dathric
 						}),
 					}),
 					q( 10924, {	-- Bloody Imp-ossible!
-						["groups"] = {
-						},
 						["qg"] = 22479,	-- Sab'aoth
 					}),
 					o(183811, {	-- Wanted Poster
@@ -132,45 +116,31 @@ _.Zones =
 						["sourceQuests"] = { 10239 },	-- Potential Energy Source
 					}),
 					q( 10422, {	-- Captain Tyralius
-						["groups"] = {
-						},
 						["qg"] = 20450,	-- Flesh Handler Viridius
 					}),
 					q( 10319, {	-- Capturing the Phylactery
-						["groups"] = {
-						},
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10314 },	-- A Lingering Suspicion
 					}),
 					i( 29236, {	-- Cohlien's Cap
 						q(10307, {	-- Cohlien Frostweaver
-							["groups"] = {
-							},
 							["qg"] = 19545,	-- Cohlien Frostweaver
 						}),
 					}),
 					i( 29235, {	-- Luminrath's Mantle
 						q( 10306, {	-- Conjurer Luminrath
-							["groups"] = {
-							},
 							["qg"] = 19544,	-- Conjurer Luminrath
 						}),
 					}),
 					q( 10427, {	-- Creatures of the Eco-Domes
-						["groups"] = {
-						},
 						["qg"] = 20871,	-- Aurine Moonblaze
 						["sourceQuests"] = { 10426 },	-- Flora of the Eco-Domes
 					}),
 					q( 10174, {	-- Curse of the Violet Tower
-						["groups"] = {
-						},
 						["qg"] = 19217,	-- Ravandwyr
 						["sourceQuests"] = { 10300 },	-- Rebuilding the Staff
 					}),
 					q( 10317, {	-- Dealing with the Foreman
-						["groups"] = {
-						},
 						["qg"] = 20112,	-- Wind Trader Tuluman
 					}),
 					q( 10318, {	-- Dealing with the Overmaster
@@ -183,8 +153,6 @@ _.Zones =
 						["sourceQuests"] = { 10317 },	-- Dealing with the Foreman
 					}),
 					q( 10418, {	-- Deal With the Saboteurs
-						["groups"] = {
-						},
 						["qg"] = 20810,	-- Mehrdad
 						["sourceQuests"] = { 10417 },	-- Run a Diagnostic!
 					}),
@@ -218,8 +186,6 @@ _.Zones =
 						["sourceQuests"] = { 10319 },	-- Capturing the Phylactery
 					}),
 					q( 10424, {	-- Diagnosis: Critical
-						["groups"] = {
-						},
 						["qg"] = 20811,	-- Ghabar
 						["sourceQuests"] = { 10423 },	-- To the Stormspire
 					}),
@@ -233,8 +199,6 @@ _.Zones =
 						["sourceQuests"] = { 10438 },	-- On Nethery Wings
 					}),
 					q( 10247, {	-- Doctor Vomisa, Ph.T.
-						["groups"] = {
-						},
 						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["sourceQuests"] = { 10237 },	-- Warn Area 52!
 					}),
@@ -256,14 +220,10 @@ _.Zones =
 						["sourceQuests"] = { 10203 },	-- Invaluable Asset Zapping
 					}),
 					q( 10311, {	-- Drijya Needs Your Help
-						["groups"] = {
-						},
 						["qg"] = 20066,	-- Gahruj
 						["isBreadcrumb"] = true,	-- for "Sabotage the Warp-Gate!"
 					}),
 					q( 10411, {	-- Electro-Shock Goodness!
-						["groups"] = {
-						},
 						["qg"] = 20449,	-- Researcher Navuud
 					}),
 					q( 10226, {	-- Elemental Power Extraction
@@ -286,54 +246,36 @@ _.Zones =
 						["qg"] = 20763,	-- Captured Protectorate Vanguard
 					}),
 					q( 10224, {	-- Essence for the Engines
-						["groups"] = {
-						},
 						["qg"] = 19709,	-- Chief Engineer Trep
 						["sourceQuests"] = { 10225 },	-- Report to Engineering
 					}),
 					q( 10384, {	-- Ethereum Data
-						["groups"] = {
-						},
 						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuests"] = { 10339 },	-- The Ethereum
 					}),
 					q( 10855, {	-- Fel Reavers, No Thanks!
-						["groups"] = {
-						},
 						["qg"] = 20471,	-- Nether-Stalker Nauthis
 					}),
 					q( 10256, {	-- Finding the Keymaster
-						["groups"] = {
-						},
 						["qg"] = 19481,	-- Archmage Vargoth
 						["sourceQuests"] = { 10176 },	-- Ar'kelos the Guardian
 					}),
 					q( 10426, {	-- Flora of the Eco-Domes
-						["groups"] = {
-						},
 						["qg"] = 20871,	-- Aurine Moonblaze
 					}),
 					q( 10281, {	-- Formal Introductions
-						["groups"] = {
-						},
 						["qg"] = 20154,	-- Shrouded Figure
 						["sourceQuests"] = { 10271 },	-- Getting Down to Business
 					}),
 					q( 10276, {	-- Full Triangle
-						["groups"] = {
-						},
 						["qg"] = 20112,	-- Wind Trader Tuluman
 						["sourceQuests"] = { 10275 },	-- Triangulation Point Two
 					}),
 					q( 10271, {	-- Getting Down to Business
-						["groups"] = {
-						},
 						["qg"] = 20518,	-- Image of Wind Trader Marid
 						["sourceQuests"] = { 10270 },	-- A Not-So-Modest Proposal
 					}),
 					q( 10333, {	-- Help Mama Wheeler
-						["groups"] = {
-						},
 						["qg"] = 19645,	-- Papa Wheeler
 						["sourceQuests"] = { 10206 },	-- Pick Your Part
 					}),
@@ -345,24 +287,16 @@ _.Zones =
 						["sourceQuests"] = { 10290 },	-- In Search of Farahlite
 					}),
 					q( 10232, {	-- In A Scrap With The Legion
-						["groups"] = {
-						},
 						["qg"] = 19645,	-- Papa Wheeler
 						["sourceQuests"] = { 10206 },	-- Pick Your Part
 					}),
 					q( 10331, {	-- Indispensable Tools
-						["groups"] = {
-						},
 						["qg"] = 20463,	-- Apprentice Andrethan
 					}),
 					q( 10290, {	-- In Search of Farahlite
-						["groups"] = {
-						},
 						["qg"] = 20067,	-- Zuben Elgenubi
 					}),
 					q( 10203, {	-- Invaluable Asset Zapping
-						["groups"] = {
-						},
 						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["sourceQuests"] = { 10186 },	-- You're Hired!
 					}),
@@ -375,19 +309,13 @@ _.Zones =
 						["qg"] = 19690,	-- N. D. Meancamp
 					}),
 					q( 10433, {	-- Keeping Up Appearances
-						["groups"] = {
-						},
 						["qg"] = 20921,	-- Shauly Pore
 					}),
 					q( 10192, {	-- Krasus's Compendium
-						["groups"] = {
-						},
 						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuests"] = { 10188 },	-- The Sigil of Krasus
 					}),
 					q( 10184, {	-- Malevolent Remnants
-						["groups"] = {
-						},
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10174 },	-- Curse of the Violet Tower (NEEDS CONFIRMATION)
 					}),
@@ -409,18 +337,12 @@ _.Zones =
 						["sourceQuests"] = { 10331 },	-- Indispensable Tools
 					}),
 					q( 10334, {	-- Needs More Cowbell
-						["groups"] = {
-						},
 						["qg"] = 20464,	-- Thadell
 					}),
 					q( 10315, {	-- Neutralizing the Nethermancers
-						["groups"] = {
-						},
 						["qg"] = 20341,	-- Nether-Stalker Oazul
 					}),
 					q( 10348, {	-- New Opportunities
-						["groups"] = {
-						},
 						["qg"] = 20810,	-- Mehrdad
 					}),
 					q( 10408, {	-- Nexus-King Salhadaar
@@ -435,20 +357,14 @@ _.Zones =
 						["sourceQuests"] = { 10406 },	-- Delivering the Message
 					}),
 					q( 10183, {	-- Off To Area 52
-						["groups"] = {
-						},
 						["qg"] = 19569,	-- Netherologist Coppernickels
 						["isBreadcrumb"] = true,	-- for "You're Hired!" (mutually exclusive with other bcrumb quests)
 					}),
 					q( 10234, {	-- One Demon's Trash...
-						["groups"] = {
-						},
 						["qg"] = 19728,	-- Mama Wheeler
 						["sourceQuests"] = { 10333 },	-- Help Mama Wheeler
 					}),
 					q( 10438, {	-- On Nethery Wings
-						["groups"] = {
-						},
 						["qg"] = 20907,	-- Professor Dabiri
 						["sourceQuests"] = { 10437 },	-- Recipe for Destruction
 					}),
@@ -461,42 +377,28 @@ _.Zones =
 						["sourceQuests"] = { 10265 },	-- Consortium Crystal Collection
 					}),
 					q( 10239, {	-- Potential Energy Source
-						["groups"] = {
-						},
 						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuests"] = { 10343 },	-- The Unending Invasion
 					}),
 					q( 10385, {	-- Potential for Brain Damage = High
-						["groups"] = {
-						},
 						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuests"] = { 10384 },	-- Ethereum Data
 					}),
 					q( 10300, {	-- Rebuilding the Staff
-						["groups"] = {
-						},
 						["qg"] = 19217,	-- Ravandwyr
 						["sourceQuests"] = { 10173 },	-- The Archmage's Staff
 					}),
 					q( 10190, {	-- Recharging the Batteries
-						["groups"] = {
-						},
 						["qg"] = 19578,	-- Bot-Specialist Alley
 					}),
 					q( 10437, {	-- Recipe for Destruction
-						["groups"] = {
-						},
 						["qg"] = 20907,	-- Professor Dabiri
 					}),
 					q( 10225, {	-- Report to Engineering
-						["groups"] = {
-						},
 						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["sourceQuests"] = { 10186 },	-- You're Hired!
 					}),
 					q( 10266, {	-- Request for Assistance
-						["groups"] = {
-						},
 						["qg"] = 19880,	-- Nether-Stalker Khay-ji
 						["sourceQuests"] = { 10205 },	-- Warp-Raider Nesaad
 					}),
@@ -520,13 +422,9 @@ _.Zones =
 						["sourceQuests"] = { 10266 },	-- Request for Assistance
 					}),
 					q( 10417, {	-- Run a Diagnostic!
-						["groups"] = {
-						},
 						["qg"] = 20810,	-- Mehrdad
 					}),
 					q( 10405, {	-- S-A-B-O-T-A-G-E
-						["groups"] = {
-						},
 						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuests"] = { 10385 },	-- Potential for Brain Damage = High
 					}),
@@ -540,8 +438,6 @@ _.Zones =
 						["sourceQuests"] = { 10311 },	-- Drijya Needs Your Help
 					}),
 					q( 10316, {	-- Searching for Evidence
-						["groups"] = {
-						},
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10312 },	-- The Annals of Kirin'Var
 					}),
@@ -556,13 +452,9 @@ _.Zones =
 						["sourceQuests"] = { 10273 },	-- Troublesome Distractions
 					}),
 					q( 10342, {	-- Securing the Shaleskin Shale
-						["groups"] = {
-						},
 						["qg"] = 19617,	-- Boots
 					}),
 					q( 10280, {	-- Special Delivery to Shattrath City
-						["groups"] = {
-						},
 						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
 						["sourceQuests"] = { 10276 },	-- Full Triangle
 					}),
@@ -576,8 +468,6 @@ _.Zones =
 						["sourceQuests"] = { 10436 },	-- All Clear!
 					}),
 					q( 10209, {	-- Summoner Kanthin's Prize
-						["groups"] = {
-						},
 						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuests"] = { 10301 },	-- Unlocking the Compendium
 					}),
@@ -600,8 +490,6 @@ _.Zones =
 						["sourceQuests"] = { 10856 },	-- The Best Defense
 					}),
 					q( 10430, {	-- Testing the Prototype
-						["groups"] = {
-						},
 						["qg"] = 20811,	-- Ghabar
 						["sourceQuests"] = { 10424 },	-- Diagnosis: Critical
 					}),
@@ -616,31 +504,21 @@ _.Zones =
 						["sourceQuests"] = { 10342 },	-- Securing the Shaleskin Shale
 					}),
 					q( 10312, {	-- The Annals of Kirin'Var
-						["groups"] = {
-						},
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10184 },	-- Malevolent Remnants
 					}),
 					q( 10173, {	-- The Archmage's Staff
-						["groups"] = {
-						},
 						["qg"] = 19217,	-- Ravandwyr
 					}),
 					q( 10856, {	-- The Best Defense
-						["groups"] = {
-						},
 						["qg"] = 20471,	-- Nether-Stalker Nauthis
 						["sourceQuests"] = { 10855 },	-- Fel Reavers, No Thanks!
 					}),
 					q( 10434, {	-- The Dynamic Duo
-						["groups"] = {
-						},
 						["qg"] = 20921,	-- Shauly Pore
 						["sourceQuests"] = { 10433 },	-- Keeping Up Appearances
 					}),
 					q( 10339, {	-- The Ethereum
-						["groups"] = {
-						},
 						["qg"] = 20448,	-- Commander Ameer
 					}),
 					q( 10345, {	-- The Flesh Lies...
@@ -661,8 +539,6 @@ _.Zones =
 						}),
 					}),
 					q( 10336, {	-- The Minions of Culuthas
-						["groups"] = {
-						},
 						["qg"] = 20471,	-- Nether-Stalker Nauthis
 					}),
 					q( 10188, {	-- The Sigil of Krasus
@@ -676,56 +552,38 @@ _.Zones =
 						["sourceQuests"] = { 10174 },	-- Curse of the Violet Tower
 					}),
 					q( 10222, {	-- The Sunfury Garrison
-						["groups"] = {
-						},
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10188 },	-- The Sigil of Krasus (NEEDS CONFIRMATION)
 					}),
 					q( 10343, {	-- The Unending Invasion
-						["groups"] = {
-						},
 						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuests"] = { 10174 },	-- Curse of the Violet Tower
 					}),
 					q( 10233, {	-- Torching Sunfury Hold
-						["groups"] = {
-						},
 						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuests"] = { 10192 },	-- Krasus's Compendium
 					}),
 					q( 10423, {	-- To the Stormspire
-						["groups"] = {
-						},
 						["qg"] = 20810,	-- Mehrdad
 						["sourceQuests"] = { 10418 },	-- Deal With the Saboteurs
 					}),
 					q( 10269, {	-- Triangulation Point One
-						["groups"] = {
-						},
 						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
 						["sourceQuests"] = { 10268 },	-- An Audience With the Prince
 					}),
 					q( 10275, {	-- Triangulation Point Two
-						["groups"] = {
-						},
 						["qg"] = 20092,	-- Dealer Hazzin
 						["sourceQuests"] = { 10269 },	-- Triangulation Point One
 					}),
 					q( 10273, {	-- Troublesome Distractions
-						["groups"] = {
-						},
 						["qg"] = 20110,	-- Tyri
 						["sourceQuests"] = { 10272 },	-- A Promising Start
 					}),
 					q( 10301, {	-- Unlocking the Compendium
-						["groups"] = {
-						},
 						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuests"] = { 10192 },	-- Krasus's Compendium
 					}),
 					q( 10237, {	-- Warn Area 52!
-						["groups"] = {
-						},
 						["qg"] = 19728,	-- Mama Wheeler
 						["sourceQuests"] = { 10235 },	-- Declawing Doomclaw
 					}),
@@ -739,8 +597,6 @@ _.Zones =
 						["sourceQuests"] = { 10262 },	-- A Heap of Ethereals
 					}),
 					q( 10429, {	-- When Nature Goes Too Far
-						["groups"] = {
-						},
 						["qg"] = 20871,	-- Aurine Moonblaze
 						["sourceQuests"] = { 10427 },	-- Creatures of the Eco-Domes
 					}),
@@ -766,31 +622,12 @@ _.Zones =
 						["sourceQuests"] = { 39201 },	-- Warchief's Command: Netherstorm!
 					}),
 					q( 10248, {	-- You, Robot
-						["groups"] = {
-						},
 						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["sourceQuests"] = { 10247 },	-- Doctor Vomisa, Ph.T.
 					}),
---[[
-							["groups"] = {
-							},
-							["qg"] = ,	-- 
-							["sourceQuests"] = {  },	-- 
-						}),
-							["groups"] = {
-							},
-							["qg"] = ,	-- 
-						}),
-							["groups"] = {
-							},
-							["sourceQuests"] = {  },	-- 
-						}),
---]]
 				-- q(10850),	-- Nether Gas In a Fel Fire Engine (doesn't ever register as completed and irrelevant, it's only part of "Fel Reavers, No Thanks!")
 -- DUNGEON QUESTS
 					qdg(q( 10257, {	-- Capturing the Keystone (awarded "The Violet Tower" criteria)
-						["groups"] = {
-						},
 						["qg"] = 19481,	-- Archmage Vargoth
 						["sourceQuests"] = { 10256 },	-- Finding the Keymaster
 					})),
@@ -798,15 +635,11 @@ _.Zones =
 					faction(932, {	-- The Aldor
 						["groups"] = {
 							q(10263, {	-- Assisting the Consortium
-								["groups"] = {
-								},
 								["qg"] = 19467,	-- Anchorite Karja
 								["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
 							q(10241, {	-- Distraction at Manaforge B'naar
-								["groups"] = {
-								},
 								["qg"] = 19466,	-- Exarch Orelis
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 								["sourceQuests"] = { 11038 },	-- Assist Exarch Orelis
@@ -822,63 +655,43 @@ _.Zones =
 								["sourceQuests"] = { 10241 },	-- Distraction at Manaforge B'naar
 							}),
 							q(10243, {	-- Naaru Technology
-								["groups"] = {
-								},
 								["qg"] = 19467,	-- Anchorite Karja
 								["sourceQuests"] = { 10241 },	-- Distraction at Manaforge B'naar
 							}),
 							o(183770, {	-- B'naar Control Console
 								q(10245, {	-- B'naar Console Transcription
-									["groups"] = {
-									},
 									["sourceQuests"] = { 10243 },	-- Naaru Technology
 								}),
 							}),
 							q(10299, {	-- Shutting Down Manaforge B'naar
-								["groups"] = {
-								},
 								["qg"] = 19467,	-- Anchorite Karja
 								["sourceQuests"] = { 10245 },	-- B'naar Console Transcription
 							}),
 							q(10246, {	-- Attack on Manaforge Coruu
-								["groups"] = {
-								},
 								["qg"] = 19466,	-- Exarch Orelis
 								["sourceQuests"] = { 10299 },	-- Shutting Down Manaforge B'naar
 							}),
 							q(10321, {	-- Shutting Down Manaforge Coruu
-								["groups"] = {
-								},
 								["qg"] = 19467,	-- Anchorite Karja
 								["sourceQuests"] = { 10299 },	-- Shutting Down Manaforge B'naar
 							}),
 							q(10322, {	-- Shutting Down Manaforge Duro
-								["groups"] = {
-								},
 								["qg"] = 19467,	-- Anchorite Karja
 								["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
 							}),
 							q(10323, {	-- Shutting Down Manaforge Ara
-								["groups"] = {
-								},
 								["qg"] = 19467,	-- Anchorite Karja
 								["sourceQuests"] = { 10322 },	-- Shutting Down Manaforge Duro
 							}),
 							q(10328, {	-- Sunfury Briefings
-								["groups"] = {
-								},
 								["qg"] = 19466,	-- Exarch Orelis
 								["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
 							}),
 							q(10431, {	-- Outside Assistance
-								["groups"] = {
-								},
 								["qg"] = 19466,	-- Exarch Orelis
 								["sourceQuests"] = { 10328 },	-- Sunfury Briefings
 							}),
 							q(10380, {	-- A Dark Pact
-								["groups"] = {
-								},
 								["qg"] = 20780,	-- Kaylaan
 								["sourceQuests"] = { 10431 },	-- Outside Assistance
 							}),
@@ -893,14 +706,10 @@ _.Zones =
 								["sourceQuests"] = { 10380 },	-- A Dark Pact
 							}),
 							q(10407, {	-- Socrethar's Shadow
-								["groups"] = {
-								},
 								["qg"] = 19467,	-- Anchorite Karja
 								["sourceQuests"] = { 10323, 10381 },	-- Shutting Down Manaforge Ara & Aldor No More
 							}),
 							q(10410, {	-- Ishanah's Help
-								["groups"] = {
-								},
 								["qg"] = 19467,	-- Anchorite Karja
 								["sourceQuests"] = { 10407 },	-- Socrethar's Shadow
 							}),
@@ -910,58 +719,40 @@ _.Zones =
 					faction(933, {	-- The Consortium
 						["groups"] = {
 							q( 10265, {	-- Consortium Crystal Collection
-								["groups"] = {
-								},
 								["qg"] = 19880,	-- Nether-Stalker Khay'ji
 							}),
 							q( 10262, {	-- A Heap of Ethereals
-								["groups"] = {
-								},
 								["qg"] = 19880,	-- Nether-Stalker Khay'ji
 								["sourceQuests"] = { 10265 },	-- Consortium Crystal Collection
 							}),
 							qr(q(10308, {	-- Another Heap of Ethereals
-								["groups"] = {
-								},
 								["qg"] = 19880,	-- Nether-Stalker Khay'ji
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10262 },	-- A Heap of Ethereals
 							})),
 							q( 10969, {	-- Seek Out Ameer
-								["groups"] = {
-								},
 								["qg"] = 22899,	-- Protectorate Advisor Rahim
 								["description"] = "Requires Honored with The Consortium.",
 								["isBreadcrumb"] = true, 	-- for "A Mission of Mercy"
 							}),
 							q( 10970, {	-- A Mission of Mercy
-								["groups"] = {
-								},
 								["qg"] = 20448,	-- Commander Ameer
 								["description"] = "Requires Honored with The Consortium.",
 							}),
 							q( 10971, {	-- Ethereum Secrets
-								["groups"] = {
-								},
 								["qg"] = 20448,	-- Commander Ameer
 								["sourceQuests"] = { 10970 },	-- A Mission of Mercy
 							}),
 							qr(q(10972, {	-- Ethereum Prisoner I.D. Catalogue
-								["groups"] = {
-								},
 								["qg"] = 20448,	-- Commander Ameer
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10971},	-- Ethereum Secrets
 							})),
 							q( 10973, {	-- A Thousand Worlds
-								["groups"] = {
-								},
 								["qg"] = 20448,	-- Commander Ameer
 								["description"] = "Requires Revered with The Consortium.",
 							}),
 							q( 10974, {	-- Stasis Chambers of Bash'ir
-								["groups"] = {
-								},
 								["qg"] = 20448,	-- Commander Ameer
 								["sourceQuests"] = { 10973 },	-- A Thousand Worlds
 							}),
@@ -971,8 +762,6 @@ _.Zones =
 					faction(934, {	-- The Scryers
 						["groups"] = {
 							q( 10264, {	-- Assisting the Consortium
-								["groups"] = {
-								},
 								["qg"] = 19468,	-- Spymaster Thalodien
 								["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
 							}),

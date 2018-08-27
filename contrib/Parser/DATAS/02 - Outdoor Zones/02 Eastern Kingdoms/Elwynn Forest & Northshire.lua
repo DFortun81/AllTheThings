@@ -109,8 +109,6 @@ _.Zones =
 					qg(42256, qa(26378)),	-- Hero's Call: Westfall! (add'l QGs 240, 261, 294, 963)
 					qg(253, qa(   60)),	-- Kobold Candles
 					desc(qa(32618), "This quest is available to Humans upon reaching level 20.", {	-- Learn To Ride	-- Learn To Ride
-						["groups"] = {
-						},
 						["races"] = {1}, -- Human
 					}),
 --					qa(14079),	-- Learn to Ride in Elwynn Forest (LEGACY)
@@ -375,49 +373,31 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests
 							qg(197, qa(28762, {	-- Beating Them Back!
-								["groups"] = {
-								},
 								--["races"] = {11}, -- Draenei (assuming this is improperly noted in wowhead)
 								["classes"] = {2}, -- Paladin
 							})),
 							qg(197, qa(29078, {	-- Beating Them Back!
-								["groups"] = {
-								},
 								["races"] = {3,4,7,11,22,25}, -- non-Human Alliance races
 							})),
 							qg(197, qa(28767, {	-- Beating Them Back!
-								["groups"] = {
-								},
 								["classes"] = {3}, -- Hunter
 							})),
 							qg(197, qa(28766, {	-- Beating Them Back!
-								["groups"] = {
-								},
 								["classes"] = {1}, -- Warrior
 							})),
 							qg(197, qa(28763, {	-- Beating Them Back!
-								["groups"] = {
-								},
 								["classes"] = {5}, -- Priest
 							})),
 							qg(197, qa(28764, {	-- Beating Them Back!
-								["groups"] = {
-								},
 								["classes"] = {4}, -- Rogue
 							})),
 							qg(197, qa(28757, {	-- Beating Them Back!
-								["groups"] = {
-								},
 								["classes"] = {8}, -- Mage
 							})),
 							qg(197, qa(28765, {	-- Beating Them Back!
-								["groups"] = {
-								},
 								["classes"] = {9}, -- Warlock
 							})),
 							qg(197, qa(31139, {	-- Beating Them Back!
-								["groups"] = {
-								},
 								["classes"] = {10}, -- Monk
 							})),
 							qg(197, qa(26389)),	-- Blackrock Invasion
@@ -433,89 +413,55 @@ _.Zones =
 							qg(951, qa(28809)),	-- Fear No Evil --]]
 --							qg(197, qa(29080)),	-- Join the Battle! (can't verify class -- maybe this one is for non-Humans?)
 							qg(911, qa(28789, {	-- Join the Battle!
-								["groups"] = {
-								},
 								["classes"] = {1}, -- Warrior
 							})),
 							qg(375, qa(28786, {	-- Join the Battle!
-								["groups"] = {
-								},
 								["classes"] = {5}, -- Priest
 							})),
 							qg(925, qa(28785, {	-- Join the Battle!
-								["groups"] = {
-								},
 								["classes"] = {2}, -- Paladin
 							})),
 							qg(915, qa(28787, {	-- Join the Battle!
-								["groups"] = {
-								},
 								["classes"] = {4}, -- Rogue
 							})),
 							qg(198, qa(28784, {	-- Join the Battle!
-								["groups"] = {
-								},
 								["classes"] = {8}, -- Mage
 							})),
 							qg(43278, qa(28780, {	-- Join the Battle!
-								["groups"] = {
-								},
 								["classes"] = {3}, -- Hunter
 							})),
 							qg(459, qa(28788, {	-- Join the Battle!
-								["groups"] = {
-								},
 								["classes"] = {9}, -- Warlock
 							})),
 							qg(63258, qa(31143, {	-- Join the Battle! (unsure of QG, add'l listed 197)
-								["groups"] = {
-								},
 								["classes"] = {10}, -- Monk (unsure)
 							})),
 							qg(197, qa(28771, {	-- Lions for Lambs
-								["groups"] = {
-								},
 								["classes"] = {5}, -- Priest
 							})),
 							qg(197, qa(28772, {	-- Lions for Lambs
-								["groups"] = {
-								},
 								["classes"] = {4}, -- Rogue
 							})),
 							qg(197, qa(28773, {	-- Lions for Lambs
-								["groups"] = {
-								},
 								["classes"] = {9}, -- Warlock
 --								["races"] = {7}, -- Gnome (doubtful, but what wowhead says)
 							})),
 							qg(197, qa(28774, {	-- Lions for Lambs
-								["groups"] = {
-								},
 								["classes"] = {1}, -- Warrior
 							})),
 							qg(197, qa(28759, {	-- Lions for Lambs
-								["groups"] = {
-								},
 								["classes"] = {3}, -- Hunter
 							})),
 							qg(197, qa(29079, {	-- Lions for Lambs
-								["groups"] = {
-								},
 								["races"] = {3,4,7,11,22,25}, -- non-Human
 							})),
 							qg(197, qa(31140, {	-- Lions for Lambs
-								["groups"] = {
-								},
 								["classes"] = {10}, -- Monk (can't verify)
 							})),
 							qg(197, qa(28769, {	-- Lions for Lambs
-								["groups"] = {
-								},
 								["classes"] = {8}, -- Mage
 							})),
 							qg(197, qa(28770, {	-- Lions for Lambs
-								["groups"] = {
-								},
 								["classes"] = {2}, -- Paladin
 --								["races"] = {11}, -- Draenei (doubtful, but what wowhead says)
 							})),
@@ -526,8 +472,6 @@ _.Zones =
 							qg(823, qa(28822)),	-- The Rear is Clear
 							qg(823, qa(31145)),	-- The Rear is Clear
 							qg(823, qa(28821, {	-- The Rear is Clear
-								["groups"] = {
-								},
 								["classes"] = {4}, -- Rogue
 --								["races"] = {22}, -- Worgen (doubtful, but what wowhead says)
 							})),
@@ -541,8 +485,6 @@ _.Zones =
 							qg(823, qa(28794)),	-- They Sent Assassins
 							qg(823, qa(28793)),	-- They Sent Assassins
 							qg(823, qa(28795, {	-- They Sent Assassins
-								["groups"] = {
-								},
 								["classes"] = {4}, -- Rogue
 --								["races"] = {22}, -- Worgen (doubtful, but what wowhead says)
 							})),
@@ -557,15 +499,11 @@ _.Zones =
 						}), --]]
 						n(-40, {	-- Legacy
 							["groups"] = {
-								--n(  0, {	-- Zone Drop (Legacy)
-								--}),
 								n(-17, {	-- Quests (Legacy)
 									un(40, qa(346, {	-- Return to Kristoff
 										un(2, i(6095)),	-- Wandering Boots
 									})),
 								}),
-								--n(-16, {	-- Rares (Legacy)
-								--}),
 							},
 						}),
 					},

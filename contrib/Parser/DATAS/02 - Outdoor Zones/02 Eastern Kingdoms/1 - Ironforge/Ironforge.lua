@@ -54,40 +54,30 @@ _.Zones =
 						i(23323),	-- Crown of the Fire Festival (reportedly transmoggable since 6.2.1)
 					})),
 					qa( 6625, {	-- Alliance Trauma
-						["groups"] = {
-						},
 						["qg"] = 5150,	-- Nissa Firestone
 						["isBreadcrumb"] = true,	-- for Triage
 						["requireSkill"] = 129,	-- First Aid
 					}),
 --[[
 					qg(23127, qa(27270, {	-- An Audience with the Farseer
-						["groups"] = {
-						},
 						["classes"] = {7}, -- Shaman
 					})),
 					qg(6294, qa(38394)),	-- Completionism
 					qg(15119, qa( 8229)),	-- Could I get a Fishing Flier?
 					qg(41853, qa(26112)),	-- Demanding Answers
 					qg(5173, qa(27272, {	-- Demisette Sends Word
-						["groups"] = {
-						},
 						["classes"] = {9}, -- Warlock
 					})),
 					qg(6569, qa( 2039)),	-- Find Bingles
 					qg(6031, qa( 1618)),	-- Gearing Redridge
 --]]
 					qdg(qg(6826, qa( 2948, {	-- Gnome Improvement
-						["groups"] = {
-						},
 						["sourceQuests"] = { 2947 },	-- Return of the Ring
 					}))),
 --[[
 					qp202(qg(5174, q 29477))),	-- Gnomish Engineering
 					qp202(qg(5174, q 29475))),	-- Goblin Engineering
 					qg(4256, qa( 6388, {	-- Gryth Thurden
-						["groups"] = {
-						},
 						["races"] = {3,7}, -- Dwarf, Gnome
 					})),
 					o(207320, {	-- Hero's Call Board
@@ -116,58 +106,36 @@ _.Zones =
 					qp129(qg(5161, qa( 6609))),	-- I Got Nothin' Left!
 					qg(5159, qa( 6612)),	-- I Know A Guy...
 					qg(5146, qa(27271, {	-- Journey to the Wizard's Sanctum
-						["groups"] = {
-						},
 						["classes"] = {8}, -- Mage
 					})),
 					qg(5147, qa(27265, {	-- Lord Grayson Shadowbreaker
-						["groups"] = {
-						},
 						["classes"] = {2}, -- Paladin
 					})),
 					qg(5165, qa(27267, {	-- Make Contact with SI:7
-						["groups"] = {
-						},
 						["classes"] = {4}, -- Rogue
 					})),
 					qg(11406, qa(27268, {	-- Make Haste to the Cathedral
-						["groups"] = {
-						},
 						["classes"] = {5}, -- Priest
 					})),
 					qg(5173, qa(28259, {	-- Meet with Demisette Cloyce
-						["groups"] = {
-						},
 						["classes"] = {9}, -- Warlock
 					})),
 					qg(23127, qa(28287, {	-- Meet with Farseer Umbrua
-						["groups"] = {
-						},
 						["classes"] = {7}, -- Shaman
 					})),
 					qg(11406, qa(28285, {	-- Meet with High Priestess Laurena
-						["groups"] = {
-						},
 						["classes"] = {5}, -- Priest
 					})),
 					qg(5147, qa(28268, {	-- Meet with Lord Grayson Shadowbreaker
-						["groups"] = {
-						},
 						["classes"] = {2}, -- Paladin
 					})),
 					qg(5165, qa(28262, {	-- Meet with Lord Tony Romano
-						["groups"] = {
-						},
 						["classes"] = {4}, -- Rogue
 					})),
 					qg(5146, qa(28263, {	-- Meet with Maginor Dumas
-						["groups"] = {
-						},
 						["classes"] = {8}, -- Mage
 					})),
 					qg(5115, qa(28260, {	-- Meet with Wulf Hansreim
-						["groups"] = {
-						},
 						["classes"] = {3}, -- Hunter
 					})),
 					qg(6294, qa(38345)),	-- Numismatics
@@ -176,8 +144,6 @@ _.Zones =
 					qg(5637, qa( 1453)),	-- Reclaimers' Business in Desolace
 					qg(1959, qa(26131)),	-- Reinforcements for Loch Modan
 					qg(1573, qa( 6392, {	-- Return to Gremlock
-						["groups"] = {
-						},
 						["races"] = {3,7}, -- Dwarf, Gnome
 					})),
 --]]					
@@ -194,8 +160,6 @@ _.Zones =
 					}))),
 --[[
 					qg(11406, qa(27274, {	-- The Chief Surgeon
-						["groups"] = {
-						},
 						["races"] = {7}, -- Gnome
 						["classes"] = {5}, -- Priest
 					})),
@@ -205,19 +169,13 @@ _.Zones =
 					qg(92195, qa(39955)),	-- The Plot Thickens
 					qg(6294, qa(38402)),	-- The Same, But Different
 					qg(6179, qa( 1789, {	-- The Symbol of Life
-						["groups"] = {
-						},
 						["classes"] = {2}, -- Paladin
 					})),
 					qg(11406, qa(27269, {	-- The Temple of the Moon
-						["groups"] = {
-						},
 						["races"] = {4}, -- Night Elf
 						["classes"] = {5}, -- Priest
 					})),
 					qg(5115, qa(27266, {	-- Wulf Calls
-						["groups"] = {
-						},
 						["classes"] = {3}, -- Hunter
 					})),
 --]]

@@ -221,14 +221,10 @@ _.Zones =
 					qh( 10714),	-- On Spirit's Wings
 --]]
 					qh(11036, {	-- Out of This World Produce!
-						["groups"] = {
-						},
 						["qg"] = 19471,	-- Old Orok
 						["isBreadcrumb"] = true,	-- for "You're Hired!" (mutually exclusive with other breadcrumb quests)
 					}),
 					qa(11040, {	-- Parts for the Rocket-Chief
-						["groups"] = {
-						},
 						["qg"] = 21112,	-- Bossi Pentapiston
 						["isBreadcrumb"] = true,	-- for "You're Hired!" (mutually exclusive with other breadcrumb quests)
 					}),
@@ -414,133 +410,89 @@ _.Zones =
 					faction(1038, {	-- Ogri'la
 						["groups"] = {
 							q(11057, {	-- The Trouble Below
-								["groups"] = {
-								},
 								["qg"] = 23233,	-- Chu'a'lor
 								["isBreadcrumb"] = true,	-- for following Mog'dorg quests
 							}),
 							q(10997, {	-- Even Gronn Have Standards
-								["groups"] = {
-								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 10983 },	-- Mog'dorg the Wizened
 							}),
 							q(10995, {	-- Grulloc Has Two Skulls
-								["groups"] = {
-								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 10983 },	-- Mog'dorg the Wizened
 							}),
 							q(10996, {	-- Maggoc's Treasure Chest
-								["groups"] = {
-								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 10983 },	-- Mog'dorg the Wizened
 							}),
 							q(10998, {	-- Grim(oire) Business
-								["groups"] = {
-								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 10997, 10995, 10996 },	-- Even Gronn Have Standards, Grulloc Has Two Skulls, & Maggoc's Treasure Chest
 							}),
 							q(11000, {	-- Into the Soulgrinder
-								["groups"] = {
-								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 10998 },	-- Grim(oire) Business
 							}),
 							q(11009, {	-- Ogre Heaven
-								["groups"] = {
-								},
 								["qg"] = 22941,	-- Mog'dorg the Wizened
 								["sourceQuests"] = { 11000 },	-- Into the Soulgrinder
 							}),
 							q(11025, {	-- The Crystals
-								["groups"] = {
-								},
 								["qg"] = 23233,	-- Chu'a'lor
 							}),
 							q(11058, {	-- An Apexis Relic
-								["groups"] = {
-								},
 								["qg"] = 23233,	-- Chu'a'lor
 								["sourceQuests"] = { 11025 },	-- The Crystals
 							}),
 							q(11080, {	-- The Relic's Emanation
-								["groups"] = {
-								},
 								["qg"] = 23233,	-- Chu'a'lor
 								["sourceQuests"] = { 11058 },	-- An Apexis Relic
 							}),
 							q(11059, {	-- Guardian of the Monument
-								["groups"] = {
-								},
 								["qg"] = 23233,	-- Chu'a'lor
 								["sourceQuests"] = { 11080 },	-- The Relic's Emanation (available before turn-in)
 							}),
 							q(11091, {	-- A Special Thank You
-								["groups"] = {
-								},
 								["qg"] = 23233,	-- Chu'a'lor
 								["sourceQuests"] = { 11059 },	-- Guardian of the Monument
 							}),
 							q(11030, {	-- Our Boy Wants To Be A Skyguard Ranger
-								["groups"] = {
-								},
 								["qg"] = 23316,	-- Torkus
 								["sourceQuests"] = { 11025 },	-- The Crystals
 							}),
 							q(11061, {	-- A Father's Duty
-								["groups"] = {
-								},
 								["qg"] = 23316,	-- Torkus
 								["sourceQuests"] = { 11030 },	-- Our Boy Wants To Be A Skyguard Ranger
 							}),
 							q(11079, {	-- A Fel Whip For Gahk (awarded "Ogres of Ogri'la" criteria)
-								["groups"] = {
-								},
 								["qg"] = 23300,	-- Gahk
 								["sourceQuests"] = { 11061 },	-- A Father's Duty
 							}),
 							q(11062, {	-- The Skyguard Outpost
-								["groups"] = {
-								},
 								["qg"] = 23233,	-- Chu'a'lor
 								["sourceQuests"] = { 11030 },	-- Our Boy Wants To Be A Skyguard Ranger
 							}),
 							q(11010, {	-- Bombing Run
-								["groups"] = {
-								},
 								["qg"] = 23120,	-- Sky Sergeant Vanderlip
 								["sourceQuests"] = { 11062 },	-- The Skyguard Outpost
 							}),
 							q(11023, {	-- Bomb Them Again!
-								["groups"] = {
-								},
 								["qg"] = 23120,	-- Sky Sergeant Vanderlip
 								["sourceQuests"] = { 11010 },	-- Bombing Run
 							}),
 							q(11119, {	-- Assault on Bash'ir Landing!
-								["groups"] = {
-								},
 								["qg"] = 23334,	-- Sky Commander Keller
 								["sourceQuests"] = { 11010 },	-- Bombing Run
 							}),
 							q(11065, {	-- Wrangle Some Aether Rays!
-								["groups"] = {
-								},
 								["qg"] = 23335,	-- Skyguard Khatie
 								["sourceQuests"] = { 11010 },	-- Bombing Run
 							}),
 							q(11066, {	-- Wrangle More Aether Rays!
-								["groups"] = {
-								},
 								["qg"] = 23335,	-- Skyguard Khatie
 								["sourceQuests"] = { 11065 },	-- Wrangle Some Aether Rays!
 							}),
 							q(11078, {	-- To Rule The Skies
-								["groups"] = {
-								},
 								["qg"] = 23334,	-- Sky Commander Keller
 								["sourceQuests"] = { 11010, 11065 },	-- Bombing Run & Wrangle Some Aether Rays!
 							}),

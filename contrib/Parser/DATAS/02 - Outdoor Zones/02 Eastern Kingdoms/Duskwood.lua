@@ -79,8 +79,6 @@ _.Zones =
 					})),
 --[[					
 					qart(qg(101651, q(40785, {	-- A Foe of the Dark
-						["groups"] = {
-						},
 						["classes"] = {11}, -- Druid
 					}))),
 --]]
@@ -99,8 +97,6 @@ _.Zones =
 						qa(26722),	-- Buried Below
 					}),
 					qg(110684, q(43382, {	-- Champion: Natalie Seline
-						["groups"] = {
-						},
 						["classes"] = {5}, -- Priest
 					})),
 --]]					qg(276, qa(26685, { -- Classy Glass
@@ -132,18 +128,12 @@ _.Zones =
 					})),
 --[[
 					qg(100323, q(40834, {	-- Following the Curse
-						["groups"] = {
-						},
 						["classes"] = {11}, -- Druid
 					})),
 					qg(100323, q(40588, {	-- Following the Curse
-						["groups"] = {
-						},
 						["classes"] = {9}, -- Warlock
 					})),
 					qg(100323, q(40931, {	-- Following the Curse
-						["groups"] = {
-						},
 						["classes"] = {6}, -- Death Knight
 					})),
 					qg(273, qa(26661)),	-- Gather Rot Blossoms
@@ -152,13 +142,9 @@ _.Zones =
 					qg(43731, qa(26725)),	-- Guided by the Light
 					qg(267, qa(26669)),	-- In A Dark Corner
 					qg(111041, q(43392, {	-- Into the Void
-						["groups"] = {
-						},
 						["classes"] = {5}, -- Priest
 					})),
 					qg(101656, q(40784, {	-- Its Rightful Place
-						["groups"] = {
-						},
 						["classes"] = {11}, -- Druid
 					})),
 --]]
@@ -191,8 +177,6 @@ _.Zones =
 					qg(43731, qa(26838)),	-- Rebels Without a Clue 
 					qg(302, qa(26654)),	-- Return the Comb
 					qg(110684, q(43393, {	-- Rising Shadows
-						["groups"] = {
-						},
 						["classes"] = {5}, -- Priest
 					})),
 --]]					
@@ -207,8 +191,6 @@ _.Zones =
 --[[					
 					qg(272, qa(26620)),	-- Seasoned Wolf Kabobs
 					qg(111041, q(43391, {	-- Secrets of the Void
-						["groups"] = {
-						},
 						["classes"] = {5}, -- Priest
 					})),
 					qg(43731, qa(26777)),	-- Soothing Spirits
@@ -780,8 +762,6 @@ _.Zones =
 						}),
 						n(  0, {	-- Zone Drop (Legacy)
 							un(7, i(920, {	-- Wicked Spiked Mace
-								["groups"] = {
-								},
 								["description"] = "This dropped off of Defias mobs in Duskwood.",
 							})),
 						}),
