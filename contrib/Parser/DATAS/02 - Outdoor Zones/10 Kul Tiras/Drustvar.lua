@@ -1426,7 +1426,7 @@ _.Zones =
 						}),
 						n(126621, {	-- Bonesquall
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								i(154376),	-- Bonecurse Gauntlets
+								un(1, i(154376)),	-- Bonecurse Gauntlets [NOTE: Not dropping on live, but did on beta]
 							}),
 							["questID"] = 48978,
 						}),
@@ -1671,13 +1671,7 @@ _.Zones =
 						o(291217, {	-- Small Treasure Chest
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 							["coords"] = {
-								{ 63.3, 58.2 },
-								{ 65.1, 54.3 },
-								{ 65.1, 51.8 },
-								{ 66.3, 53.8 },
-								{ 66.8, 50.8 },
-								{ 67.6, 57.5 },
-								{ 70.5, 53.7 },
+								{ 65.29, 54.22 },
 							},
 							["isDaily"] = true,
 							["questID"] = 51885,
