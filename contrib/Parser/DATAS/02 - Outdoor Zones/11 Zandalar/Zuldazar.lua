@@ -74,12 +74,19 @@ _.Zones =
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
 						q(50606, {	-- Horde War Effort [The Honorbound]
+							["groups"] = bubbleDown({["modID"] = 28}, {
+								i(163357),	-- Honorbound Artificer's Cloak [Speculation]
+								i(163358),	-- Honorbound Artificer's Greeatcloak [Speculation]
+							}),
+							["qg"] = 135446,	-- Vindicator Jaelaana
 							["isDaily"] = true,
 							["lvl"] = 120,
+							["repeatable"] = true,
 						}),
 						q(50598, {	-- Zandalari Empire
 							["isDaily"] = true,
 							["lvl"] = 120,
+							["repeatable"] = true,
 						}),
 					},
 				}),

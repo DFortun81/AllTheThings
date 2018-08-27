@@ -58,12 +58,20 @@ _.Zones =
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
 						q(50605, { 	-- Alliance War Effort [7th Legion]
+							["groups"] = bubbleDown({["modID"] = 28}, {
+								i(163355),	-- 7th Legionnaire's Bloody Drape
+								i(163347),	-- 7th Legionnaire's Long Cloak
+								i(163246),	-- 7th Legionnaire's Silk Cloak
+							}),
+							["qg"] = 135446,	-- Vindicator Jaelaana
 							["isDaily"] = true,
 							["lvl"] = 120,
+							["repeatable"] = true,
 						}),
 						q(50599, {	-- Proudmoore Admiralty
 							["isDaily"] = true,
 							["lvl"] = 120,
+							["repeatable"] = true,
 						}),
 					},
 				}),
