@@ -10,21 +10,45 @@ _.Zones =
 				n(-4,   {	-- Achievement
 					["groups"] = {
 						ach(12995, {	-- Treasures of Drustvar
-							o(297879, {	-- Bespelled Chest	
+							o(297879, {	-- Bespelled Chest
+								["groups"] = {
+									i(163790),	-- Spooky Incantation
+								},
 								["questID"] = 53472,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["coords"] = {
+									{ 55.60,  51.80 }
+								},
 							}),
-							o(297881, {	-- Enchanted Chest	
+							o(297881, {	-- Enchanted Chest
+								["groups"] = {
+									i(163796),	-- Wolf Pup Spine
+								},
 								["questID"] = 53474,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["coords"] = {
+									{ 25.50, 24.20 }
+								},
 							}),
-							o(297880, {	-- Ensorcelled Chest	
+							o(297880, {	-- Ensorcelled Chest
+								["groups"] = {
+									i(163791),	-- Miniature Stag Skull
+								},
 								["questID"] = 53473,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["coords"] = {
+									{ 67.70, 73.70 },
+								},
 							}),
-							o(297878, {	-- Hexed Chest	
+							o(297878, {	-- Hexed Chest
+								["groups"] = {
+									i(163789),	-- Bundle of Wicker Sticks
+								},
 								["questID"] = 53471,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["coords"] = {
+									{ 18.50, 51.30 },
+								},
 							}),
 							o(297828, {	-- Merchant's Chest
 								-- ["crs"] = 137468,	-- Gorging Raven
@@ -51,18 +75,18 @@ _.Zones =
 								["questID"] = 53386,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
-							o(297893, {	-- Runebound Coffer	
+							o(297893, {	-- Runebound Coffer
 								["g"] = {
 									i(163740),	-- Drust Ritual Knife (TOY!)
 								},
 								["questID"] = 53387,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
-							o(298920, {	-- Stolen Thornspeaker Cache	
+							o(298920, {	-- Stolen Thornspeaker Cache
 								["questID"] = 53475,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
-							o(297825, {	-- Web-Covered Chest	
+							o(297825, {	-- Web-Covered Chest
 								["questID"] = 53356,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
@@ -127,7 +151,21 @@ _.Zones =
 					["groups"] = {
 						p(2386),	-- Coastal Scuttler
 						p(2378),	-- River Otter
-						p(2411),	-- Wicker Pup
+						p(2411, {	-- Wicker Pup
+							["groups"] = {
+								i(163789), 	-- Bundle of Wicker Sticks
+								i(163791), 	-- Miniature Stag Skull
+								i(163790), 	-- Spooky Incantation
+								i(163796), 	-- Wolf Pup Spine
+							},
+							["description"] = "You must find each of the four parts and combine them to form this battle pet.  Coordinates for each chest is listed in the coordinate section.",
+							["coords"] = {
+								{ 18.50, 51.30 }, 	-- Bundle of Wicker Sticks
+								{ 67.70, 73.70 }, 	-- Miniature Stag Skull
+								{ 55.60, 51.80 }, 	-- Spooky Incantation
+								{ 25.20, 24.20 }, 	-- Wolf Pup Spine
+							},
+						}),
 					},
 				}),
 				n(-17,  {	-- Quests
