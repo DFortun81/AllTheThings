@@ -1576,6 +1576,12 @@ _.Zones =
 							["isDaily"] = true,
 							["questID"] = 51914,
 						}),
+						o(9999972, {	-- Small Treasure Chest
+							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+							["coord"] = { 28.27, 30.40 },
+							["isDaily"] = true,
+							["questID"] = 51907,
+						}),
 					},
 				}),
 				n(-2,   {	-- Vendors

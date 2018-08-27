@@ -625,6 +625,7 @@ _.Zones =
 						q(48607),	-- Small Treasure Chest
 						q(48618),	-- Small Treasure Chest
 						q(48619),	-- Small Treasure Chest
+						q(48599),	-- Small Treasure Chest
 						i(163856, {	-- Ancient Pilgrimage Scrollcasing
 							q(53476, {	-- The Great Sea Scrolls
 								i(163863),	-- Bartered Vrykul Cowl
@@ -1126,7 +1127,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0, {	-- Zone Drop
+				n(0,    {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						--Note: Commented out items are because they were in at one point, but then removed later on.  Might be patched in on release date
 						--i(159538),	-- Coldscale Cudgel
