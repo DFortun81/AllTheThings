@@ -185,6 +185,8 @@ AllTheThings.Locales.enUS = {
 		["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
 		["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
 		["Mini World Events"] = GetSpellInfo(57055),
+		["Emissary Quests"] = "Emissary",
+		["World Quests"] = "WQ",
 		
 	};
 
