@@ -651,8 +651,16 @@ profession(165, { -- Leatherworking
 			i(137892), -- Recipe: Dreadleather Bindings (Rank 3)
 			i(137897), -- Recipe: Dreadleather Gloves (Rank 3)
 			i(137899), -- Recipe: Dreadleather Jerkin (Rank 3)
+			i(137894), -- Recipe: Dreadleather Shoulderguard (Rank 3)
+			i(151742), -- Recipe: Fiendish Shoulderguards (Rank 3)
 		}),
 		n(-17, { -- Quests
+			q(48078, { -- Counterbalancing (Dalaran)
+				["groups"] = {
+					i(151740), -- Recipe: Fiendish Shoulderguards (Rank 1)					
+				},
+				["qg"] = 125349, -- Enstraa			
+			}),
 			q(40214, { -- Fel Tanning (Dalaran)
 				["groups"] = {
 					i(132124), -- Pattern: Battlebound Treads
@@ -688,20 +696,21 @@ profession(165, { -- Leatherworking
 			i(140640), -- Recipe: Dreadleather Mask (Rank 1)
 			i(137888), -- Recipe: Dreadleather Mask (Rank 2)
 			i(137896), -- Recipe: Dreadleather Mask (Rank 3)
+			i(140639), -- Recipe: Dreadleather Pants (Rank 1)
+			i(137887), -- Recipe: Dreadleather Pants (Rank 2)
+			i(137895), -- Recipe: Dreadleather Pants (Rank 3)
 			i(140638), -- Recipe: Dreadleather Shoulderguard (Rank 1)
-			i(137886), -- Recipe: Dreadleather Shoulderguard (Rank 2)
-			i(137894), -- Recipe: Dreadleather Shoulderguard (Rank 3)
+			i(137886), -- Recipe: Dreadleather Shoulderguard (Rank 2)			
 			i(142407), -- Recipe: Drums of the Mountain (Rank 1)
 			i(142408), -- Recipe: Drums of the Mountain (Rank 2)
 			i(142409), -- Recipe: Drums of the Mountain (Rank 3)
 			i(141850), -- Recipe: Elderhorn Riding Harness
+			i(151741), -- Recipe: Fiendish Shoulderguards (Rank 2)
 			i(137932), -- Recipe: Flaming Hoop
 			i(137935), -- Recipe: Leather Love Seat
 			i(137934), -- Recipe: Leather Pet Leash
 		}),
-		n(-44, { 	-- Leather							
-			i(128888),	-- Dreadleather Pants			
-			i(151577),	-- Fiendish Shoulderguards			
+		n(-44, { 	-- Leather						
 			i(128879),	-- Warhide Mask
 			i(128881),	-- Warhide Shoulderguard
 			i(128876),	-- Warhide Jerkin
@@ -844,17 +853,11 @@ profession(165, { -- Leatherworking
 		i(137906),	-- Recipe: Battlebound Treads
 		i(137912),	-- Recipe: Battlebound Treads
 		i(137904),	-- Recipe: Battlebound Warhelm
-		i(137910),	-- Recipe: Battlebound Warhelm			
-		i(137887),	-- Recipe: Dreadleather Pants
-		i(137895),	-- Recipe: Dreadleather Pants
-		i(140639),	-- Recipe: Dreadleather Pants		
+		i(137910),	-- Recipe: Battlebound Warhelm					
 		i(162504),	-- Recipe: Emblazoned Mistscale Boots
 		i(162506),	-- Recipe: Emblazoned Mistscale Leggings
 		i(162500),	-- Recipe: Emblazoned Tempest Boots
 		i(162502),	-- Recipe: Emblazoned Tempest Leggings
-		i(151740),	-- Recipe: Fiendish Shoulderguards
-		i(151741),	-- Recipe: Fiendish Shoulderguards
-		i(151742),	-- Recipe: Fiendish Shoulderguards
 		i(151743),	-- Recipe: Fiendish Spaulders
 		i(151744),	-- Recipe: Fiendish Spaulders
 		i(151745),	-- Recipe: Fiendish Spaulders		

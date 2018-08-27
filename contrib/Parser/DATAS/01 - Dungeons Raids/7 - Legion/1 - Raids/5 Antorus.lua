@@ -238,6 +238,7 @@ _.Instances =
 								})),
 								cr(122367, e(1997, { -- Antoran High Command
 									-- Start Tier Cloaks
+									i(151742), -- Recipe: Fiendish Shoulderguards (Rank 3)
 									i(151985), -- General Erodus' Tricorne
 									i(152019), -- Pauldrons of the Eternal Offensive
 									i(152125), -- Bearmantle Cloak
@@ -640,6 +641,7 @@ _.Instances =
 								i(151983), -- Vicious Flamepaws
 							})),
 							cr(122367, e(1997, { -- Antoran High Command
+								i(151742), -- Recipe: Fiendish Shoulderguards (Rank 3)
 								i(151985), -- General Erodus' Tricorne
 								i(152019), -- Pauldrons of the Eternal Offensive
 								i(152125), -- Bearmantle Cloak
@@ -1033,6 +1035,7 @@ _.Instances =
 								i(151983), -- Vicious Flamepaws
 							})),
 							cr(122367, e(1997, { -- Antoran High Command
+								i(151742), -- Recipe: Fiendish Shoulderguards (Rank 3)
 								i(151985), -- General Erodus' Tricorne
 								i(152019), -- Pauldrons of the Eternal Offensive
 								i(152125), -- Bearmantle Cloak
@@ -1425,6 +1428,7 @@ _.Instances =
 								i(151983), -- Vicious Flamepaws
 							})),
 							cr(122367, e(1997, { -- Antoran High Command
+								i(151742), -- Recipe: Fiendish Shoulderguards (Rank 3)
 								i(151985), -- General Erodus' Tricorne
 								i(152019), -- Pauldrons of the Eternal Offensive
 								i(152125), -- Bearmantle Cloak

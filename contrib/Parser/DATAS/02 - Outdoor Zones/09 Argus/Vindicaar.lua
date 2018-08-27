@@ -720,15 +720,24 @@ _.Zones =
 				}),
 				n(-2, { -- Vendors
 					n(127120, { -- Vindicator Jaelaana <Army of the Light Emissary>
+						i(152399), -- Army of the Light Tabard
+						i(151725), -- Design: Empyrial Cosmic Crown (Rank 2)
+						i(151728), -- Design: Empyrial Deep Crown (Rank 2)
+						i(151731), -- Design: Empyrial Elemental Crown (Rank 2)
+						i(151734), -- Design: Empyrial Titan Crown (Rank 2)
+						i(152726), -- Design: Mass Prospect Empyrium
+						i(152400), -- Embroidered Lightforged Drape
+						i(152788), -- Lightforged Warframe Mount
 						i(151712, { -- Recipe: Empyrial Breastplate (Rank 2)
 							["groups"] = {
 								recipe(247713), -- Recipe: Empyrial Breastplate (Rank 2)
 							},
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
-						i(152788), -- Lightforged Warframe Mount
-						i(152399), -- Army of the Light Tabard
-						i(152400), -- Embroidered Lightforged Drape
+						i(151741), -- Recipe: Fiendish Shoulderguards (Rank 2)
+						i(151744), -- Recipe: Fiendish Spaulders (Rank 2)
+						i(151747), -- Recipe: Lightweave Breeches (Rank 2)
+						i(153032), -- Technique: Glyph of the Lightspawn
 					}),
 					n(127151, { -- Toraan the Revered <Argussian Reach Emissary>
 						i(152658),	-- Formula: Chaos Shatter
