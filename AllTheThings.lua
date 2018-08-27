@@ -7600,7 +7600,7 @@ function string:split(delimiter)
   end
   table.insert( result, string.sub( self, from  ) )
   return result
-end--]]
+end
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
