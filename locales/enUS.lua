@@ -1964,6 +1964,7 @@ AllTheThings.Locales.enUS = {
 		[9999974] = "Interface\\Icons\\Garrison_SilverChest",
 		[9999973] = "Interface\\Icons\\Garrison_SilverChest",
 		[9999972] = "Interface\\Icons\\Garrison_SilverChest",
+		[9999971] = "Interface\\Icons\\Garrison_SilverChest",
 	};
 	["OBJECT_ID_NAMES"] = {
 		[31] = "Old Lion Statue",
@@ -2620,6 +2621,7 @@ AllTheThings.Locales.enUS = {
 		[9999974] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Continue on down.
 		[9999973] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Continue on down.
 		[9999972] = "Small Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Continue on down.
+		[9999971] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Continue on down.
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
