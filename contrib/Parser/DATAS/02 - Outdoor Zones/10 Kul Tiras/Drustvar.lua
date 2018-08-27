@@ -12,8 +12,11 @@ _.Zones =
 						ach(12995, {	-- Treasures of Drustvar
 							o(297879, {	-- Bespelled Chest
 								["groups"] = {
-									i(163790),	-- Spooky Incantation
+									i(163790, {	-- Spooky Incantation
+										["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
+									}),
 								},
+								["description"] = "Click the inactive torches.",
 								["questID"] = 53472,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["coords"] = {
@@ -22,8 +25,11 @@ _.Zones =
 							}),
 							o(297881, {	-- Enchanted Chest
 								["groups"] = {
-									i(163796),	-- Wolf Pup Spine
+									i(163796, {	-- Wolf Pup Spine
+										["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
+									}),
 								},
+								["description"] = "Click the inactive torches.",
 								["questID"] = 53474,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["coords"] = {
@@ -32,7 +38,9 @@ _.Zones =
 							}),
 							o(297880, {	-- Ensorcelled Chest
 								["groups"] = {
-									i(163791),	-- Miniature Stag Skull
+									i(163791, {	-- Miniature Stag Skull
+										["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
+									}),
 								},
 								["questID"] = 53473,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
@@ -42,8 +50,11 @@ _.Zones =
 							}),
 							o(297878, {	-- Hexed Chest
 								["groups"] = {
-									i(163789),	-- Bundle of Wicker Sticks
+									i(163789, {	-- Bundle of Wicker Stick
+										["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
+									}),
 								},
+								["description"] = "Click the inactive torches.",
 								["questID"] = 53471,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["coords"] = {
@@ -51,12 +62,15 @@ _.Zones =
 								},
 							}),
 							o(297828, {	-- Merchant's Chest
-								-- ["crs"] = 137468,	-- Gorging Raven
-								-- ["itemID"] = 163710,	-- Merchant's Key
-								-- Not sure the best way to display this information.
+								["groups"] = {
+									n(137468, {	-- Gorging Raven
+										i(163710),	-- Merchant's Key
+									}),
+									i(163036),	-- Polished Pet Charm
+								},
 								["description"] = "Look for the Gorging Raven flying above with the 'Holding Keys' buff, and kill it to get the key to open this chest.",
 								["questID"] = 53357,
-								["coord"] = { 25.7, 19.9 },
+								["coord"] = { 25.69, 20.03 },
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(297891, {	-- Runebound Cache
@@ -153,11 +167,20 @@ _.Zones =
 						p(2378),	-- River Otter
 						p(2411, {	-- Wicker Pup
 							["groups"] = {
-								i(163789), 	-- Bundle of Wicker Sticks
-								i(163791), 	-- Miniature Stag Skull
-								i(163790), 	-- Spooky Incantation
-								i(163796), 	-- Wolf Pup Spine
+								i(163789, {	-- Bundle of Wicker Sticks
+									["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
+								}),
+								i(163791, {	-- Miniature Stag Skull
+									["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
+								}),
+								i(163790, {	-- Spooky Incantation
+									["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
+								}),
+								i(163796, {	-- Wolf Pup Spine
+									["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
+								}),
 							},
+							["itemID"] = 163497,	-- Spooky Bundle of Sticks
 							["description"] = "You must find each of the four parts and combine them to form this battle pet.  Coordinates for each chest is listed in the coordinate section.",
 							["coords"] = {
 								{ 18.50, 51.30 }, 	-- Bundle of Wicker Sticks
@@ -1574,6 +1597,7 @@ _.Zones =
 					},
 				}),
 				n(-212, {	-- Treasure Chest
+					-- Note: Only list one coordinate per treasure chest. They each have a different questID.
 					["g"] = {
 						o(291201, {	-- Small Treasure Chest
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
@@ -1661,15 +1685,7 @@ _.Zones =
 						o(291222, {	-- Small Treasure Chest
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 							["coords"] = {
-								{ 58.2, 65.5 },
-								{ 59.1, 66.2 },
-								{ 59.5, 61.9 },
-								{ 59.6, 69.7 },
-								{ 60.3, 68.6 },
-								{ 61.2, 63.8 },
-								{ 61.5, 64.8 },
-								{ 62.3, 63.0 },
-								{ 64.7, 61.9 },
+								{ 64.75, 61.94 },
 							},
 							["isDaily"] = true,
 							["questID"] = 51896,
@@ -1677,16 +1693,7 @@ _.Zones =
 						o(291223, {	-- Small Treasure Chest
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 							["coords"] = {
-								{ 68.0, 63.0 },
-								{ 69.2, 64.6 },
-								{ 69.5, 63.1 },
-								{ 69.5, 66.7 },
-								{ 69.6, 64.8 },
-								{ 70.2, 58.1 },
-								{ 71.0, 60.0 },
-								{ 71.0, 63.3 },
-								{ 71.6, 58.0 },
-								{ 72.0, 60.0 },
+								{ 69.62, 66.59 },
 							},
 							["isDaily"] = true,
 							["questID"] = 51899,
@@ -1728,15 +1735,7 @@ _.Zones =
 						o(291226, {	-- Small Treasure Chest
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 							["coords"] = {
-								{ 22.2, 13.7 },
-								{ 23.2, 12.7 },
-								{ 23.2, 15.6 },
-								{ 24.1, 14.1 },
-								{ 24.5, 15.9 },
-								{ 26.2, 17.5 },
-								{ 27.3, 13.2 },
-								{ 28.7, 12.1 },
-								{ 29.4, 11.2 },
+								{ 26.17, 17.51 },
 							},
 							["isDaily"] = true,
 							["questID"] = 51910,
@@ -1761,17 +1760,7 @@ _.Zones =
 						o(291228, {	-- Small Treasure Chest
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 							["coords"] = {
-								{ 18.2, 59.5 },
-								{ 18.5, 54.2 },
-								{ 19.5, 57.7 },
-								{ 20.4, 52.0 },
-								{ 20.5, 55.0 },
-								{ 21.0, 57.8 },
-								{ 22.1, 55.7 },
-								{ 23.1, 52.7 },
-								{ 24.1, 56.5 },
-								{ 25.2, 49.9 },
-								{ 26.7, 51.6 },
+								{ 20.30, 52.03 },
 							},
 							["isDaily"] = true,
 							["questID"] = 51912,
