@@ -59,6 +59,26 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(4925, {	-- Ashenvale Quests (Alliance)
+						crit(1),		-- Maestra's Post
+						crit(2),		-- Saving Astranaar
+						crit(3),		-- Stardust Spire
+						crit(4),		-- The Power of Dartol's Rod
+						crit(5),		-- Bringing Harmony to the Elements
+						crit(6),		-- The Satyr of Satyrnaar
+						crit(7),		-- The Corrupted Heart of the Forest
+					})),
+					h(ach(4976, {	-- Ashenvale Quests (Horde)
+						crit(1),		-- The Corrupted Heart of the Forest
+						crit(2),		-- The Diplomat from Silvermoon
+						crit(3),		-- Splintertree's Demonic Defense
+						crit(4),		-- Zoram'gar Outpost
+						crit(5),		-- The Bombing of Astranaar
+						crit(6),		-- Weapons of Their Destruction
+						crit(7),		-- Bringing Harmony to the Elements
+					})),
+]]--				
 					qa(26453, {	-- A Helping Hand
 						["qg"] = 17106,	-- Vindicator Palanaar
 						["isBreadcrumb"] = true,
@@ -387,9 +407,10 @@ _.Zones =
 					}),
 					qh(824, { -- Je'neu of the Earthen Ring
 						["groups"] = {
-							i(16659),	-- Deftkin Belt
-							i(16660),	-- Driftmire Shield
-							i(16661),	-- Soft Willow Cape
+							un(2, i(16659)),	-- Deftkin Belt
+							un(2, i(16660)),	-- Driftmire Shield
+							un(2, i(16661)),	-- Soft Willow Cape
+							i(131216),	-- Nimblereed Chain
 						},
 						["qg"] = 12737, -- Mastok Wrilehiss
 						["sourceQuests"] = { 1918 }, -- Befouled Water Globe
@@ -1412,43 +1433,44 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qdg(qh(6565, {	-- Allegiance to the Old Gods
-								un(34, i(17694)),	-- Band of the Fist
-								un(34, i(17695)),	-- Chestnut Mantle
+								un(2, i(17694)),	-- Band of the Fist
+								un(2, i(17695)),	-- Chestnut Mantle
 							}))),
 							un(40, qa(1044, {	-- Answered Questions
-								un(34, i(5817)),	-- Lunaris Bow
-								un(34, i(5818)),	-- Moonbeam Wand
+								un(2, i(5817)),	-- Lunaris Bow
+								un(2, i(5818)),	-- Moonbeam Wand
 							})),
 							un(40, qa(1035, {	-- Fallen Sky Lake
-								un(34, i( 5814)),	-- Snapbrook Armor
-								un(34, i( 6722)),	-- Beastial Manacles
-								un(34, i(17047)),	-- Luminescent Amice
+								un(2, i( 5814)),	-- Snapbrook Armor
+								un(2, i( 6722)),	-- Beastial Manacles
+								un(2, i(17047)),	-- Luminescent Amice
 							})),
 							un(40, qa(1046, {	-- Raene's Cleansing
-								un(34, i( 5815)),	-- Glacial Stone
-								un(34, i(17046)),	-- Gutterblade
+								un(2, i( 5815)),	-- Glacial Stone
+								un(2, i(17046)),	-- Gutterblade
+								un(2, i(1116)),	-- Ring of Pure Silver
 							})),
 							un(40, qa( 976, {	-- Supplies to Auberdine
-								un(34, i(5323)),	-- Everglow Lantern
-								un(34, i(6721)),	-- Chestplate of Kor
+								un(2, i(6721)),	-- Chestplate of Kor
+								un(2, i(5323)),	-- Everglow Lantern
 							})),
 							un(40, qh( 247, {	-- The Hunt Completed
-								un(34, i(16658)),	-- Wildhunter Cloak
+								un(2, i(16658)),	-- Wildhunter Cloak
 							})),
 							un(40, qh(6504, {	-- The Lost Pages
-								un(34, i(16740)),	-- Shredder Operating Gloves
-								un(34, i(16741)),	-- Oilrag Handwraps
+								un(2, i(16741)),	-- Oilrag Handwraps
+								un(2, i(16740)),	-- Shredder Operating Gloves
 							})),
 							un(40, qh(6571, {	-- Warsong Supplies
-								un(34, i(16975)),	-- Warsong Supplies
-								un(34, i(16977)),	-- Warsong Boots
-								un(34, i(16978)),	-- Warsong Gauntlets
+								un(2, i(16977)),	-- Warsong Boots
+								un(2, i(16978)),	-- Warsong Gauntlets
+								un(2, i(16975)),	-- Warsong Supplies
 							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
-							na(3808, { 	-- Forsaken Dark Stalker
+							un(43, na(3808, { 	-- Forsaken Dark Stalker
 								un(7, i(1351)),	-- Fingerbone Bracers
-							}),
+							})),
 							n(3792, {	-- Terrowulf Packlord
 								un(7, i(5753)),	-- Ruffled Chaplet
 							}),

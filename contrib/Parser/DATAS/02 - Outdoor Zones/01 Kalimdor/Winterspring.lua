@@ -55,6 +55,17 @@ _.Zones =
 						["sourceQuests"] = { 29032 },	-- Get Them While They're Young
 					}),
 				})),
+				n(-4, {		-- Achievements
+					ach(5443, {	-- E'ko Madness (Winterspring)
+						crit(1),	-- Winterspring Furbolg
+						crit(2),	-- Wildkin
+						crit(3),	-- Shardtooth Bears
+						crit(4),	-- Frostmaul Giants
+						crit(5),	-- Frostsabers
+						crit(6),	-- Chillwind Chimaera
+						crit(7),	-- Ice Thistle Yeti
+					}),
+				}),
 				n(-228, {	-- Flight Paths
 					fp(52, { -- Everlook, Winterspring
 						["coord"] = { 61, 48.6 },
@@ -1002,30 +1013,6 @@ _.Zones =
 						dr(	1	, i(	10203	)), --	Overlord's Chestplate
 					}),
 				}),
-				n(0,   {	-- Zone Drop
-					i(16223, {	-- Formula: Enchant Weapon - Icy Chill
-						["crs"] = {
-							7524,	-- Anguished Highborne
-							7523,	-- Suffering Highborne
-						},
-					}),
-					i(15761, {	-- Pattern: Frostsaber Gloves
-						["crs"] = {
-							7441,	-- Winterfall Totemic
-						},
-					}),
-					i(15747, {	-- Pattern: Frostsaber Leggings
-						["crs"] = {
-							7440,	-- Winterfall Den Watcher
-						},
-					}),
-					i(15779, {	-- Pattern: Frostsaber Tunic
-						["crs"] = {
-							7438,	-- Winterfall Ursa
-						},
-					}),
-					dr(0.01, i(34535)),	-- Azure Whelpling (PET!)
-				}),
 				n(-2,  {	-- Vendors
 					n(50129, {		-- Daleohm <Blacksmithing Supplies>
 						i(12836),	-- Plans: Frostguard
@@ -1059,6 +1046,30 @@ _.Zones =
 						["description"] = "Vendor only sells the plans to those who have completed the quest 'Blackrock Depths: Jewel of the Depths'|r",
 					}),
 				}),
+				n(0,   {	-- Zone Drop
+					i(16223, {	-- Formula: Enchant Weapon - Icy Chill
+						["crs"] = {
+							7524,	-- Anguished Highborne
+							7523,	-- Suffering Highborne
+						},
+					}),
+					i(15761, {	-- Pattern: Frostsaber Gloves
+						["crs"] = {
+							7441,	-- Winterfall Totemic
+						},
+					}),
+					i(15747, {	-- Pattern: Frostsaber Leggings
+						["crs"] = {
+							7440,	-- Winterfall Den Watcher
+						},
+					}),
+					i(15779, {	-- Pattern: Frostsaber Tunic
+						["crs"] = {
+							7438,	-- Winterfall Ursa
+						},
+					}),
+					dr(0.01, i(34535)),	-- Azure Whelpling (PET!)
+				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
@@ -1072,26 +1083,33 @@ _.Zones =
 							un(40, q(28516)),	-- Centuries of Suffering
 							un(40, qa(4970)),	-- Frostsaber Provisions
 							un(40, q( 5121, {	-- High Chief Winterfall
-								un(34, i(15784)),	-- Crystal Breeze Mantle
-								un(34, i(15786)),	-- Fempulse Jerkin
-								un(34, i(15787)),	-- Willow Band Hauberk
+								un(2, i(15784)),	-- Crystal Breeze Mantle
+								un(2, i(15786)),	-- Fempulse Jerkin
+								un(2, i(15787)),	-- Willow Band Hauberk
+							})),
+							un(40, qh(5057, {	-- Past Endeavors
+								un(2, i(15704)),	-- Hunter's Insignia Medal
 							})),
 							un(40, qg(10618, qa( 5981))),	-- Rampaging Giants
 							un(40, q( 4810, {	-- Return to Tinkee
-								un(34, i(15862)),	-- Blitzcleaver
-								un(34, i(15863)),	-- Grave Scepter
+								un(2, i(15862)),	-- Blitzcleaver
+								un(2, i(15863)),	-- Grave Scepter
 							})),
 							un(40, q( 5056, {	-- Shy-Rotam
-								un(34, i(15783)),	-- Beasthunter Dagger
-								un(34, i(15782)),	-- Beaststalker Blade
+								un(2, i(15783)),	-- Beasthunter Dagger
+								un(2, i(15782)),	-- Beaststalker Blade
 							})),
 							un(40, q( 4842, {	-- Strange Sources
-								un(34, i(15789)),	-- Deep River Cloak
+								un(2, i(15789)),	-- Deep River Cloak
 							})),
 							un(40, qa(5253, {	-- The Crystal of Zin-Malor
-								un(34, i(15791)),	-- Turquoise Sash
-								un(34, i(15792)),	-- Plow Wood Spaulders
-								un(34, i(15795)),	-- Emerald Mist Gauntlets
+								un(2, i(15795)),	-- Emerald Mist Gauntlets
+								un(2, i(15792)),	-- Plow Wood Spaulders
+								un(2, i(15791)),	-- Turquoise Sash
+							})),
+							un(40, qa(4902, {	-- Wildkin of Elune
+								un(2, i(16623)),	-- Opaline Medallion
+								un(2, i(16622)),	-- Thornflinger
 							})),
 							un(40, q( 28462)),	-- Winterfall Firewater (removed with Cata)
 							un(40, qg(10618, qa( 5201))),	-- Winterfall Intrusion

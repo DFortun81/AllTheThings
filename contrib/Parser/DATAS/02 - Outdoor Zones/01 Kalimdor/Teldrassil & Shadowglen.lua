@@ -120,9 +120,7 @@ _.Zones =
 					}),
 --]]
 					qg(2078, qa(483, {	-- The Relics of Wakening
-						nld({	-- Legacy
-							un(34, i(9603)),	-- Gritroot Staff
-						}),
+						un(2, i(9603)),	-- Gritroot Staff NOTE: This is an old reward, quest has been repurposed
 					})),
 --[[
 					qg(2151, qa(  487)),	-- The Road to Darnassus
@@ -157,7 +155,12 @@ _.Zones =
 						["races"] = {4},
 					})),
 					qg(3567, qa(  932)),	-- Twisted Hatred
-					qg(2078, qa(  486)),	-- Ursal the Mauler
+--]]					
+					qg(2078, qa(486, {	-- Ursal the Mauler
+						un(2, i(5459)),	-- Defender Axe	NOTE: This is an old reward, quest has been repurposed
+						un(2, i(5587)),	-- Thornroot Club	NOTE: This is an old reward, quest has been repurposed
+					})),
+--[[					
 					qg(68077, qh(32328)),	-- Victorious Return
 					qg(49480, qa(28727, {	-- Vile Touch
 						["races"] = {4},
@@ -235,14 +238,10 @@ _.Zones =
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(5621, {	-- Garments of the Moon
 								["groups"] = {
-									un(34, i(16604)),	-- Moon Robes of Elune
+									un(2, i(16604)),	-- Moon Robes of Elune
 								},
 								["races"] = { 4 },	-- Night Elf
 								["classes"] = { 5 },	-- Priest
-							})),
-							un(40, qa(486, {	-- Ursal the Mauler
-								un(34, i(5459)),	-- Defender Axe
-								un(34, i(5587)),	-- Thornroot Club
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)

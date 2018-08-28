@@ -35,6 +35,15 @@ _.Zones =
 						p(432), 	-- Stripe-Tailed Scorpid
 					}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(4935, {		-- Tanaris Quests
+						crit(1),		-- Southsea Pirates
+						crit(2),		-- Bug Free
+						crit(3),		-- Advancing Our Interests
+						crit(4),		-- Grudge Match!
+						crit(5),		-- The Titans
+					}),
+]]--				
 					q(25072,  {  -- A Few Good Goblins
 						["groups"] = {
 							i(56855),	-- Dangerous Machinery Piece
@@ -2361,29 +2370,37 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qr(q(8181, {	-- Confront Yeh'kinya
-								un(34, i(20218)),	-- Faded Hakkari Cloak
-								un(34, i(20219)),	-- Tattered Hakkari Cape
+								un(2, i(20218)),	-- Faded Hakkari Cloak
+								un(2, i(20219)),	-- Tattered Hakkari Cape
 							}))),
+							un(40, q(2874, {	-- Deliver to MacKinley
+								un(2, i(9637)),	-- Shinkicker Boots
+								un(2, i(9636)),	-- Swashbuckler Sash
+							})),
 							un(40, q( 3161, {	-- Gahz'ridian
-								un(34, i(10827)),	-- Surveyor's Tunic
-								un(34, i(10826)),	-- Staff of Lore
+								un(2, i(10827)),	-- Surveyor's Tunic
+								un(2, i(10826)),	-- Staff of Lore
 							})),
 							un(40, qh( 864, {	-- Return to Apothecary Zinge
-								un(34, i( 9634)),	-- Skilled Handling Gloves
-								un(34, i( 9635)),	-- Master Apothecary Cape
-								un(34, i(11502)),	-- Loreskin Shoulders
+								un(2, i(11502)),	-- Loreskin Shoulders
+								un(2, i( 9635)),	-- Master Apothecary Cape
+								un(2, i( 9634)),	-- Skilled Handling Gloves
 							})),
 							un(40, qh(1189, {	-- Safety First
-								un(34, i(6726)),	-- Razzeric's Customized Seatbelt
-								un(34, i(6727)),	-- Razzeric's Racing Grips
+								un(2, i(6726)),	-- Razzeric's Customized Seatbelt
+								un(2, i(6727)),	-- Razzeric's Racing Grips
 							})),
 							un(40, q(8366, {	-- Southsea Shakedown
-								un(34, i(20640)),	-- Southsea Head Bucket
-								un(34, i(20641)),	-- Southsea Mojo Boots
+								un(2, i(20640)),	-- Southsea Head Bucket
+								un(2, i(20641)),	-- Southsea Mojo Boots
 							})),
 							un(40, q( 5863, {	-- The Dunemaul Compound
-								un(34, i(16738)),	-- Witherseed Gloves
-								un(34, i(16739)),	-- Rugwood Mantle
+								un(2, i(16739)),	-- Rugwood Mantle
+								un(2, i(16738)),	-- Witherseed Gloves
+							})),
+							un(40, q(1560, {	-- Tooga's Quest
+								un(2, i(9642)),	-- Band of the Great Tortoise
+								un(2, i(9638)),	-- Chelonian Cuffs
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)

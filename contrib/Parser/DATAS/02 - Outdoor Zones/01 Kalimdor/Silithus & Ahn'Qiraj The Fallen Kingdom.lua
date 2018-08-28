@@ -25,6 +25,15 @@ _.Zones =
 					p(433), -- Spiky Lizard 
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(4934, {		-- Silithus Quests
+						crit(1),		-- Twilight's Run
+						crit(2),		-- Mistress Natalia Mar'alith
+						crit(3),		-- Unraveling the Mystery
+						crit(4),		-- A Terrible Purpose
+						crit(5),		-- Twilight Lexicon
+					}),
+]]--				
 					q(  8287, {	-- A Terrible Purpose (awarded "A Terrible Purpose" criteria)
 						["qg"] = 15194,	-- Hermit Ortell
 						["sourceQuests"] = { 8279 },	-- The Twilight Lexicon
@@ -152,6 +161,7 @@ _.Zones =
 					q(  8321, {	-- Vyral the Vile (awarded "Twilight's Run" criteria)
 						["groups"] = {
 							i(20650),	-- Desert Wind Gauntlets
+							i(20649),	-- Sunprism Pendant
 						},
 						["qg"] = 15270,	-- Huum Wildmane
 						["sourceQuests"] = { 8320 },	-- Twilight Geolords
@@ -817,75 +827,87 @@ END OF MICRO-HOLIDAY --]]
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							["groups"] = bubbleDown({["u"] = 40}, {
-								q(8361, { 	-- Abyssal Contacts
-									un(2, i(20603, { 	-- Bag of Spoils
-										un(7, i(20694)), 	-- Glowing Black Orb
-										un(7, i(20693)), 	-- Weighted Cloak
-									})),
-								}),
-								q(8316, {	-- Armaments of War (Warrior)
-									un(34, i(20699)),	-- Cenarion Reservist's Legplates
-									un(34, i(20710)),	-- Crystal Encrusted Greaves
-								}),
-								q(8376, {	-- Armaments of War (Paladin)
-									un(34, i(20700)),	-- Cenarion Reservist's Legplates
-									un(34, i(20711)),	-- Crystal Lined Greaves
-								}),
-								q(8377, {	-- Armaments of War (Hunter)
-									un(34, i(20702)),	-- Cenarion Reservist's Legguards
-									un(34, i(20713)),	-- Desertstalkers' Gauntlets
-								}),
-								q(8378, {	-- Armaments of War (Rogue)
-									un(34, i(20703)),	-- Cenarion Reservist's Leggings
-									un(34, i(20715)),	-- Dunestalker's Boots
-								}),
-								q(8379, {	-- Armaments of War (Priest)
-									un(34, i(20707)),	-- Cenarion Reservist's Pants
-									un(34, i(20717)),	-- Desert Bloom Gloves
-								}),
-								q(8380, {	-- Armaments of War (Shaman)
-									un(34, i(20701)),	-- Cenarion Reservist's Legguards
-									un(34, i(20712)),	-- Wastewalker's Gauntlets
-								}),
-								q(8381, {	-- Armaments of War (Mage, Warlock)
-									un(34, i(20705)),	-- Cenarion Reservist's Pants
-									un(34, i(20716)),	-- Sandworm Skin Gloves
-								}),
-								q(8382, {	-- Armaments of War (Rogue)
-									un(34, i(20704)),	-- Cenarion Reservist's Leggings
-									un(34, i(20714)),	-- Sandstorm Boots
-								}),
-								q(8352, { 	-- Scepter of the Council
-									un(2, i(20602, { 	-- Chest of Spoils
-										un(7, i(20720)), 	-- Dark Whisper Blade
-										un(7, i(20722)), 	-- Crystal Slugthrower
-									})),
-								}),
-								q(8348, { 	-- Signet of the Dukes
-									un(2, i(20601, { 	-- Sack of Spoils
-										un(7, i(20696)), 	-- Crystal Spiked Maul
-									})),
-								}),
-								q(8574, {	-- Stalwart's Battlegear
-									un(34, i(21184)),	-- Deeprock Bracers
-									un(34, i(21185)),	-- Earthcalm Orb
-									un(34, i(21186)),	-- Rockfury Bracers
-								}),
-								q(9023, {	-- The Perfect Poison
-									un(34, i(22378)),	-- Ravenholdt Slicer
-									un(34, i(22379)),	-- Shivsprocket's Shiv
-									un(34, i(22377)),	-- The Thunderwood Poker
-									un(34, i(22348)),	-- Doomulus Prime
-									un(34, i(22347)),	-- Fahrad's Reloading Repeater
-									un(34, i(22380)),	-- Simone's Cultivating Hammer
-								}),
-								q(8572, {	-- Veteran's Battlegear
-									un(34, i(21181)),	-- Grace of Earth
-									un(34, i(21182)),	-- Band of Earthen Might
-									un(34, i(21183)),	-- Earthpower Vest
-								}),
-							}),
+							un(40, q(9248, {	-- A Humble Offering
+								un(2, i(22725)),	-- Band of Cenarius
+							})),
+							un(40, q(8361, { 	-- Abyssal Contacts
+								un(2, i(20603, { 	-- Bag of Spoils
+									un(7, i(20694)), 	-- Glowing Black Orb
+									un(7, i(20693)), 	-- Weighted Cloak
+								})),
+							})),
+							un(40, q(8316, {	-- Armaments of War (Warrior)
+								un(2, i(20699)),	-- Cenarion Reservist's Legplates
+								un(2, i(20710)),	-- Crystal Encrusted Greaves
+							})),
+							un(40, q(8376, {	-- Armaments of War (Paladin)
+								un(2, i(20700)),	-- Cenarion Reservist's Legplates
+								un(2, i(20711)),	-- Crystal Lined Greaves
+							})),
+							un(40, q(8377, {	-- Armaments of War (Hunter)
+								un(2, i(20702)),	-- Cenarion Reservist's Legguards
+								un(2, i(20713)),	-- Desertstalkers' Gauntlets
+							})),
+							un(40, q(8378, {	-- Armaments of War (Rogue)
+								un(2, i(20703)),	-- Cenarion Reservist's Leggings
+								un(2, i(20715)),	-- Dunestalker's Boots
+							})),
+							un(40, q(8379, {	-- Armaments of War (Priest)
+								un(2, i(20707)),	-- Cenarion Reservist's Pants
+								un(2, i(20717)),	-- Desert Bloom Gloves
+							})),
+							un(40, q(8380, {	-- Armaments of War (Shaman)
+								un(2, i(20701)),	-- Cenarion Reservist's Legguards
+								un(2, i(20712)),	-- Wastewalker's Gauntlets
+							})),
+							un(40, q(8381, {	-- Armaments of War (Mage, Warlock)
+								un(2, i(20705)),	-- Cenarion Reservist's Pants
+								un(2, i(20716)),	-- Sandworm Skin Gloves
+							})),
+							un(40, q(8382, {	-- Armaments of War (Rogue)
+								un(2, i(20704)),	-- Cenarion Reservist's Leggings
+								un(2, i(20714)),	-- Sandstorm Boots
+							})),
+							un(40, q(8573, {	-- Champion's Battlegear
+								un(2, i(21180)),	-- Earthstrike
+								un(2, i(21188)),	-- Fist of Cenarius
+								un(2, i(21190)),	-- Wrath of Cenarius
+							})),
+							un(40, q(8352, { 	-- Scepter of the Council
+								un(2, i(20602, { 	-- Chest of Spoils
+									un(7, i(20720)), 	-- Dark Whisper Blade
+									un(7, i(20722)), 	-- Crystal Slugthrower
+								})),
+							})),
+							un(40, q(8348, { 	-- Signet of the Dukes
+								un(2, i(20601, { 	-- Sack of Spoils
+									un(7, i(20696)), 	-- Crystal Spiked Maul
+								})),
+							})),
+							un(40, q(8574, {	-- Stalwart's Battlegear
+								un(2, i(21184)),	-- Deeprock Bracers
+								un(2, i(21185)),	-- Earthcalm Orb
+								un(2, i(21189)),	-- Might of Cenarius
+								un(2, i(21186)),	-- Rockfury Bracers
+							})),
+							un(40, q(9023, {	-- The Perfect Poison
+								un(2, i(22348)),	-- Doomulus Prime
+								un(2, i(22347)),	-- Fahrad's Reloading Repeater
+								un(2, i(22378)),	-- Ravenholdt Slicer
+								un(2, i(22379)),	-- Shivsprocket's Shiv
+								un(2, i(22380)),	-- Simone's Cultivating Hammer
+								un(2, i(22377)),	-- The Thunderwood Poker
+							})),
+							un(40, q(8572, {	-- Veteran's Battlegear
+								un(2, i(21182)),	-- Band of Earthen Might
+								un(2, i(21183)),	-- Earthpower Vest
+								un(2, i(21181)),	-- Grace of Earth
+							})),
+							un(40, q(8548, {	-- Volunteer's Battlegear
+								un(2, i(21179)),	-- Band of Earthen Wrath
+								un(2, i(21187)),	-- Earthweave Cloak
+								un(2, i(21178)),	-- Gloves of Earthen Power
+							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							n(15211, { 	-- Azure Templar

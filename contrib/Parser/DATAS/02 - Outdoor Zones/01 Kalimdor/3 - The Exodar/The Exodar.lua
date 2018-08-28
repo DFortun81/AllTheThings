@@ -118,8 +118,8 @@ _.Zones =
 					p(464), 	-- Grey Moth
 					p(385), 	-- Mouse
 				}),
---[[
 				n(-17, { 	-- Quests
+--[[
 					qg(17120, qa(27225, {	-- A Summons from Ander Germaine
 						["groups"] = {
 						},
@@ -219,9 +219,8 @@ _.Zones =
 						},
 						["classes"] = {3},
 					})),				
-					
-				}),
 --]]				
+				}),
 				n( -2, {	-- Vendors
 					na(16705, {		-- Altaa <Alchemy Supplies>
 						i(22900),	-- Recipe: Elixir of Camouflage
@@ -632,7 +631,7 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests
 							un(40, q(9675, {	-- Beast Training
-								un(34, i(24138)),	-- Silver Crossbow
+								un(2, i(24138)),	-- Silver Crossbow
 							})),
 						}),
 					},

@@ -524,7 +524,7 @@ _.Zones =
 							}),
 							q(5648, { -- Garments of Spirituality
 								["groups"] = {
-									un(34, i(16606)), -- Juju Hex Robes
+									un(2, i(16606)), -- Juju Hex Robes
 								},
 								["qg"] = 3706, -- Tai'jin
 								["races"] = { 8 }, -- Troll
@@ -533,9 +533,9 @@ _.Zones =
 							}),
 							q(827, { -- Skull Rock
 								["groups"] = {
-									un(34, i(4947)), -- Jagged Dagger
-									un(34, i(4939)), -- Steady Bastard Sword
-									un(34, i(4948)), -- Stinging Mace
+									un(2, i(4947)), -- Jagged Dagger
+									un(2, i(4939)), -- Steady Bastard Sword
+									un(2, i(4948)), -- Stinging Mace
 								},
 								["qg"] = 3208, -- Margoz
 								["races"] = HORDE_ONLY,
@@ -543,7 +543,7 @@ _.Zones =
 							}),
 							q(924, { -- The Demon Seed
 								["groups"] = {
-									un(34, i(5420)), -- Banshee Armor
+									un(2, i(5420)), -- Banshee Armor
 								},
 								["qg"] = 3521, -- Ak'Zeloth
 								["races"] = HORDE_ONLY,

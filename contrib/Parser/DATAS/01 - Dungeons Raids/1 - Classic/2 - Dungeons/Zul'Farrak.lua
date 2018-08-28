@@ -161,7 +161,15 @@ _.Instances =
 						i(9467), 	-- Gahz'rilla Fang
 						i(151455), 	-- Gahz'rilla Scale Cloak
 						i(9469), 	-- Gahz'rilla Scale Armor
-					})),				
+					})),
+					n(-40, {	-- Legacy
+						n(-17, {	-- Quests (Legacy)
+							un(40, q(2768, {	-- Divino-matic Rod
+								un(2, i(9534)),	-- Engineer's Guild Headpiece
+								un(2, i(9533)),	-- Masons Fraternity Ring
+							})),
+						}),
+					}),
 				},
 				["lvl"] = 39,
 				["mapID"] = 219

@@ -30,12 +30,6 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 					{
-						["questID"] = 5527,	-- A Reliquary of Purity
-						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
-						["u"] = 40,	-- LEGACY
-						["lvl"] = 56,
-					},
-					{
 						["questID"] = 25316,	-- As Hyjal Burns
 						["qg"] = 39865,	-- Quest Giver: Emissary Windsong
 						["sourceQuests"] = { 49855, 27726, 27721 },	-- Source Quests: Disaster at Mount Hyjal / Hero's Call: Mount Hyjal! / Warchief's Command: Mount Hyjal!
@@ -48,15 +42,6 @@ _.Zones =
 						["classes"]= { 11 },	-- Druid
 						["lvl"] = 98,
 					},
-					un(2, {
-						["questID"] = 40962,	-- Dark Waters
-						["qg"] = 102432,	-- Malfurion Stormrage
-						["sourceQuest"] = 40904,	-- Shadow of the Defiler
-						["lvl"] = 100,
-						["groups"] = {
-							i(128422),	-- Reins of the Grove Warden
-						},
-					}),
 					{
 						["questID"] = 13074,	-- Hope Within the Emerald Nightmare
 						["qg"] = 11832, -- Quest Giver: Keeper Remulos
@@ -88,16 +73,6 @@ _.Zones =
 						["sourceQuest"] = 46924,	-- Source Quest: The Wolf's Tale
 						["classes"]= { 11 },	-- Druid
 						["lvl"] = 110,
-					},
-					{
-						["questID"] = 5526,	-- Shards of the Felvine
-						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
-						["u"] = 40,	-- LEGACY
-						["lvl"] = 56,
-						["groups"] = {
-							un(34, i(18535)),	-- Milli's Shield
-							un(34, i(18536)),	-- Milli's Lexicon
-						},
 					},
 					{
 						["questID"] = 45528,	-- The Befouled Barrows
@@ -185,23 +160,6 @@ _.Zones =
 						["sourceQuest"] = 29298,	-- Source Quest: A Smoke-Stained Locket
 						["lvl"] = 85,
 					},
-					{
-						["questID"] = 8447,	-- Waking Legends
-						["qg"] = 11832,	-- Quest Giver: Keeper Remulos
-						["sourceQuest"] = 8446,	-- Source Quest: Shrouded in Nightmare
-						["u"] = 40,	-- LEGACY
-						["lvl"] = 60,
-						["groups"] = {
-							un(34, i(20600)),	-- Malfurion's Signet Ring
-						},
-					},
-					{
-						["questID"] = 1124,	-- Wasteland
-						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
-						["sourceQuest"] = 1123,	-- Source Quest: Rabine Saturna
-						["u"] = 40,	-- LEGACY
-						["lvl"] = 56,
-					},
 				}),
 				n(-2, {		-- Vendors
 					n(12023, {	-- Kharedon <Light Armor Merchant>
@@ -223,6 +181,57 @@ _.Zones =
 					}),
 					n(12029, {	-- Narianna <Bowyer>
 						i(11308),	-- Sylvan Shortbow
+					}),
+				}),
+				n(-40, {	-- Legacy
+					n(-17, {	-- Quests (Legacy)
+						{
+							["questID"] = 5527,	-- A Reliquary of Purity
+							["qg"] = 11801,	-- Quest Giver: Rabine Saturna
+							["u"] = 40,	-- LEGACY
+							["lvl"] = 56,
+						},
+						{
+							["questID"] = 40962,	-- Dark Waters
+							["qg"] = 102432,	-- Malfurion Stormrage
+							["sourceQuest"] = 40904,	-- Shadow of the Defiler
+							["u"] = 40, -- LEGACY
+							["lvl"] = 100,
+							["groups"] = {
+								un(2, i(128422)),	-- Reins of the Grove Warden
+							},
+						},
+						{
+							["questID"] = 5526,	-- Shards of the Felvine
+							["qg"] = 11801,	-- Quest Giver: Rabine Saturna
+							["u"] = 40,	-- LEGACY
+							["lvl"] = 56,
+							["groups"] = {
+								un(2, i(18535)),	-- Milli's Shield
+								un(2, i(18536)),	-- Milli's Lexicon
+							},
+						},
+						un(40, q(6845, {	-- Uncovering Past Secrets
+							un(2, i(18402)),	-- Glowing Crystal Ring
+							un(2, i(18400)),	-- Ring of Living Stone
+						})),
+						{
+							["questID"] = 8447,	-- Waking Legends
+							["qg"] = 11832,	-- Quest Giver: Keeper Remulos
+							["sourceQuest"] = 8446,	-- Source Quest: Shrouded in Nightmare
+							["u"] = 40,	-- LEGACY
+							["lvl"] = 60,
+							["groups"] = {
+								un(2, i(20600)),	-- Malfurion's Signet Ring
+							},
+						},
+						{
+							["questID"] = 1124,	-- Wasteland
+							["qg"] = 11801,	-- Quest Giver: Rabine Saturna
+							["sourceQuest"] = 1123,	-- Source Quest: Rabine Saturna
+							["u"] = 40,	-- LEGACY
+							["lvl"] = 56,
+						},
 					}),
 				}),
 			},

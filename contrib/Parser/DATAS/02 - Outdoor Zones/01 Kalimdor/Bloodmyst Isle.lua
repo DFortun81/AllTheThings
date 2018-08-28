@@ -13,7 +13,19 @@ _.Zones =
 					p(465),		-- Ravager Hatchling
 					p(397),		-- Skunk
 				}),
-				n(-17, { 	-- Quests 
+				n(-17, { 	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(4926, {	-- Bloodmyst Isle Quests
+						crit(1),		-- The Triumvirate's First, Boros
+						crit(2),		-- The Triumvirate's Second, Kuros
+						crit(3),		-- The Triumvirate's Third, Aesom
+						crit(4),		-- Galaen's Fate
+						crit(5),		-- Defending Vindicator's Rest
+						crit(6),		-- Ending the Bloodcurse
+						crit(7),		-- Loreth'Aran
+						crit(8),		-- The Unwritten Prophecy
+					})),
+]]--				
 					qa(9624, { 	-- A Favorite Treat
 						["groups"] = {
 							i(26018),	-- Elekk Handler's Leathers

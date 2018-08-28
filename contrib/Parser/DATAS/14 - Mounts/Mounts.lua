@@ -860,8 +860,8 @@ _.Mounts =
 		un(2, ach(8898, {	-- Challenge Warlord: Silver
 		un(2, i(116791)),	-- Challenger's War Yeti
 		})),
-		un(2, q(40962, {	-- Dark Waters
-		un(2, i(128422)),	-- Grove Warden
+		un(40, q(40962, {	-- Dark Waters
+			un(2, i(128422)),	-- Grove Warden
 		})),
 		un(2, ach(2138, {	-- Glory of the Raider (25 Player) Pre 3.1
 		["groups"] = {

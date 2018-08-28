@@ -27,13 +27,31 @@ _.Zones =
 					qg(66436, qh(31905)),	-- Grazzle the Great
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
+						crit(1),		-- 	Disgrace the Defectors
+						crit(2),		-- "Swamp Eye" Story
+						crit(3),		-- The Terror of Theramore
+						crit(4),		-- Defias in Dustwallow
+						crit(5),		-- Prisoners of the Grimtotem
+						crit(6),		-- The Hyal Family
+						crit(7),		-- The Challenge of the Stonemaul
+					})),
+					h(ach(4978, {	-- Dustwallow Marsh Quests (Horde)
+						crit(1),		-- Wild Threats
+						crit(2),		-- Work Left Undone
+						crit(3),		-- "Swamp Eye" Story
+						crit(4),		-- Connection to the Grimtotem
+						crit(5),		-- Onyxia's Brood
+						crit(6),		-- Challenging the Overlord
+						crit(7),		-- The Challenge of the Stonemaul
+					})),
+]]--				
 					qa(1258, { --... and Bugs
 						["groups"] = {
 							i(57843),	-- Baroque Shield
 							i(57844),	-- Crawling Wand
-							nld({	-- Legacy
-								un(34, i(6801)),	-- Baroque Apron
-							}),
+							un(2, i(6801)),	-- Baroque Apron
 						},
 						["qg"] = 4794,	-- Morgan Stern
 						["sourceQuests"] = { 1204 },	-- Mudrock Soup and Bugs
@@ -552,10 +570,8 @@ _.Zones =
 							i( 33250),	-- Archer's Wristguard
 							i( 57851),	-- Swamp Gas Gauntlets
 							i(131253),	-- Archer's Chain Bracer
-								nld({	-- Legacy
-									un(34, i(33269)),	-- Bejeweled Dagger
-									un(34, i(33252)),	-- Gleaming Scale Breastplate
-								}),
+							un(2, i(33269)),	-- Bejeweled Dagger
+							un(2, i(33252)),	-- Gleaming Scale Breastplate
 						},
 						["qg"] = 17095,	-- Balandar Brightstar
 					}),
@@ -1306,66 +1322,84 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests
 							un(40, qa(11148, {	-- Arms of the Grimtotems
-								un(34, i(33272)),	-- Biting Axe
+								un(2, i(33272)),	-- Biting Axe
+								i(33268),	-- Bone Dirk NOTE: Item is still available from new version of quest
+								i(33264), 	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
 							})),
 							un(40, q(1958, {	-- Celestial Power
 								["groups"] = {
-									un(34, i(7515)),	-- Celestial Orb
-									un(34, i(9517)),	-- Celestial Stave
+									un(2, i(7515)),	-- Celestial Orb
+									un(2, i(9517)),	-- Celestial Stave
 								},
 								["classes"] = { 8 },	-- Mage
 							})),
 							un(40, qh(1173, {	-- Challenge Overlord Mok'Morokk
-								un(34, i(10703)),	-- Fiendish Skiv
-								un(34, i(10704)),	-- Chillnail Splinter
+								un(2, i(10704)),	-- Chillnail Splinter
+								un(2, i(10703)),	-- Fiendish Skiv
+							})),
+							un(40, qa(1135, {	-- Highperch Venom
+								un(2, i(6719)),	-- Windborne Belt
 							})),
 							un(40, qh(1169, {	-- Identifying the Brood
-								un(34, i(9703)),	-- Scorched Cape
-								un(34, i(9704)),	-- Rustler Gloves
+								un(2, i(9703)),	-- Scorched Cape
+								un(2, i(9704)),	-- Rustler Gloves
 							})),
 							un(40, qh(11206, {	-- Justice Dispensed
-								un(34, i(33230)),	-- Leggings of the Long Road
-								un(34, i(33243)),	-- Skirmisher's Cover
-								un(34, i(33251)),	-- Steel-banded Hauberk
+								un(2, i(33230)),	-- Leggings of the Long Road
+								un(2, i(33243)),	-- Skirmisher's Cover
+								un(2, i(33251)),	-- Steel-banded Hauberk
 							})),
 							un(40, qh(11200, {	-- More than Coincidence
-								un(34, i(33272)),	-- Biting Axe
+								un(2, i(33272)),	-- Biting Axe
+								i(33268),	-- Bone Dirk NOTE: Item is still available from new version of quest
+								i(33264), 	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
 							})),
 							un(40, qa(11152, {	-- Peace at Last
-								un(34, i(33230)),	-- Leggings of the Long Road
-								un(34, i(33243)),	-- Skirmisher's Cover
-								un(34, i(33251)),	-- Steel-banded Hauberk
+								un(2, i(33230)),	-- Leggings of the Long Road
+								un(2, i(33243)),	-- Skirmisher's Cover
+								un(2, i(33251)),	-- Steel-banded Hauberk
 							})),
 							un(40, qa(11223, {	-- Return to Jaina
-								un(34, i(33269)),	-- Bejeweled Dagger
-								un(34, i(33252)),	-- Gleaming Scale Breastplate
+								i(33250),	-- Archer's Wristguard NOTE: This is now available from Survey Alcaz Island or Twilight of the Dawn Runner
+								un(2, i(33269)),	-- Bejeweled Dagger
+								un(2, i(33252)),	-- Gleaming Scale Breastplate
+							})),
+							un(40, qh(11204, {	-- Return to Krog
+								i(33259),	-- Crimson Barbut NOTE: This item is now available from Recover the Cargo or the new version of Return to Krog
+								i(33267),	-- Fleshripper NOTE: This item is now available from Recover the Cargo or the new version of Return to Krog
+								un(2, i(33270)),	-- Mariner's Sword
+							})),
+							un(40, qh(7541, {	-- Service to the Horde
+								un(2, i(18585)),	-- Band of Allegiance
+								un(2, i(18586)),	-- Lonetree's Circle
 							})),
 							un(40, qa(11198, {	-- Take Down Tethyr!
-								un(34, i(33228)),	-- Crimson Tunic
+								un(2, i(33228)),	-- Crimson Tunic
 								i(33247),	-- Swift Wind Spaulders (moved to new version of quest)
-								un(34, i(33253)),	-- Golden Helm
+								un(2, i(33253)),	-- Golden Helm
 							})),
 							un(40, qh(1172, {	-- The Brood of Onyxia
-								un(34, i(10700)),	-- Encarmine Boots
-								un(34, i(10701)),	-- Boots of Zua'tec
+								un(2, i(10700)),	-- Encarmine Boots
+								un(2, i(10701)),	-- Boots of Zua'tec
 							})),
 							un(40, qa(11134, {	-- The End of the Deserters
-								un(34, i(33232)),	-- Journeyman's Cowl
-								un(34, i(33249)),	-- Boots of the Skirmisher
-								un(34, i(33274)),	-- Mercenary's Crossbow
+								i(33249),	-- Boots of the Skirmisher NOTE: This is still available from the new verison of the quest
+								un(2, i(33232)),	-- Journeyman's Cowl
+								un(2, i(33274)),	-- Mercenary's Crossbow
+							})),
+							un(40, qa(1267, {	-- The Missing Diplomat
+								un(2, i(6757)),	-- Jaina's Signet Ring
 							})),
 							un(40, qdg(q(2846, {	-- Tiara of the Deep
-								un(34, i(9527)),	-- Spellshifter Rod
-								un(34, i(9531)),	-- Gemshale Pauldrons
+								un(2, i(9527)),	-- Spellshifter Rod
+								un(2, i(9531)),	-- Gemshale Pauldrons
 							}))),
 						}),
-						un(43, n(4368), { -- Strashaz Myrmidon
-							["groups"] = {
+						n(-16, {	-- Rares (Legacy)
+							un(43, n(4368, { -- Strashaz Myrmidon
 								un(2, i(12718)), -- Plans: Runic Breastplate
-							},
+							})),
 						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},

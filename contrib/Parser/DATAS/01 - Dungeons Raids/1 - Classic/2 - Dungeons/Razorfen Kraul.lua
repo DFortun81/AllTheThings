@@ -185,11 +185,16 @@ _.Instances =
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {
-							nlq({	-- Quests (Legacy)
-								qa(1142, {	-- Mortality Wanes
-									un(34, i(6751)),	-- Mourning Shawl
-									un(34, i(6752)),	-- Lancer Boots
-								}),
+							n(-17, {	-- Quests (Legacy)
+								un(40, qa(1142, {	-- Mortality Wanes
+									un(2, i(6751)),	-- Mourning Shawl
+									un(2, i(6752)),	-- Lancer Boots
+								})),
+								un(40, q(1144, {	-- Willix the Importer
+									un(2, i(6748)),	-- Monkey Ring
+									un(2, i(6750)),	-- Snake Hoop
+									un(2, i(6749)),	-- Tiger Band
+								})),
 							}),
 							n(  0, {	-- Zone Drop (Legacy)
 								n(4517, {	-- Death's Head Priest

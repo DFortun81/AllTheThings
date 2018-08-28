@@ -1031,9 +1031,9 @@ _.Instances =
 							})),
 							cr(91331, e(1438, {	-- Archimonde
 								un(2, i(133762, {
-									q(40962, {
+									un(40, q(40962, {
 										un(2, i(128422)),  -- Reins of the Grove Warden Mount
-									}),
+									})),
 								})),
 								i(124389),	-- Calamity's Edge
 								i(124382),	-- Edict of Argus

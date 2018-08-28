@@ -50,6 +50,15 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(4930, {		-- Desolace Quests
+						crit(1),		-- The Naga Threat
+						crit(2),		-- Karnum's Glade
+						crit(3),		-- Threats from Sar'theris Stand
+						crit(4),		-- Uniting the Tribes
+						crit(5),		-- Nijel's Point
+					}),
+]]--				
 					qh(14195, {	-- All Becoming Clearer
 						["sourceQuests"] = { 14360 },	-- Nothing a Couple of Melons Won't Fix
 					}),
@@ -104,6 +113,9 @@ _.Zones =
 						["sourceQuests"] = { 14337 },	-- Shadowprey Village
 					}),
 					q(5501, {	-- Bone Collector
+						["groups"] = {
+							un(2, i(15690)),	-- Kodobone Necklace NOTE: Reward has been removed from quest but quest is still available
+						},
 						["qg"] = 11438,	-- Bibbly F'utzbuckle
 					}),
 					q(14314, {	-- Breakout!
@@ -342,6 +354,10 @@ _.Zones =
 						}),
 					})),
 					q(5561, {	-- Kodo Roundup
+						["groups"] = {
+							un(2, i(15697)),	-- Kodo Rustler Boots
+							un(2, i(15698)),	-- Wrangling Spaulders
+						},
 						["qg"] = 11596,	-- Smeed Scrabblescrew
 					}),
 					qa(14387, {	-- Lay of the Land
@@ -406,6 +422,8 @@ _.Zones =
 							i(55941),	-- Spaulders of Sealing
 							i(55939),	-- Binding Staff
 							i(131233),	-- Securing Bindings
+							un(2, i(16873)),	-- Braidfur Gloves
+							un(2, i(16794)),	-- Gripsteel Wristguards
 						},
 						["qg"] = 5395,	-- Felgur Twocuts
 					}),
@@ -910,78 +928,82 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							un(40, qg(11625, q(5821, {	-- Bodyguard for Hire (REMOVED per wowhead comment)
+								un(2, i(15689)),	-- Trader's Ring
+							}))),
 							un(40, q( 6027, {	-- Book of the Ancients
-								un(34, i(16791)),	-- Silkstream Cuffs
-								un(34, i(16793)),	-- Arcmetal Shoulders
+								un(2, i(16793)),	-- Arcmetal Shoulders
+								un(2, i(16791)),	-- Silkstream Cuffs
 							})),
 							un(40, qh(1366, {	-- Centaur Bounty
-								un(34, i(6780)),	-- Lilac Sash
-								un(34, i(6784)),	-- Braced Handguards
+								un(2, i(6784)),	-- Braced Handguards
+								un(2, i(6780)),	-- Lilac Sash
+							})),
+							un(40, qa(1387, {	-- Centaur Bounty
+								un(2, i(6790)),	-- Ring of Calm
 							})),
 							un(40, q(6161, {	-- Claim Rackmore's Treasure!
-								un(34, i(16788)),	-- Captain Rackmore's Wheel
-								un(34, i(16789)),	-- Captain Rackmore's Tiller
+								un(2, i(16789)),	-- Captain Rackmore's Tiller
+								un(2, i(16788)),	-- Captain Rackmore's Wheel
 							})),
-							un(40, qh(6142, {	-- Clam Bait
-								un(34, i(15585)),	-- Pardoc Grips
-								un(34, i(15587)),	-- Ringtail Girdle
-								un(34, i(15588)),	-- Bracesteel Belt
+							un(40, qh(6142, {	-- Clam Bait (REMOVED with Cata per wowhead comment)
+								un(2, i(15588)),	-- Bracesteel Belt
+								un(2, i(15585)),	-- Pardoc Grips
+								un(2, i(15587)),	-- Ringtail Girdle
 							})),
-							un(40, qdg(qa(7064, {	-- Corruption of Earth and Seed
-								un(34, i(17705)),	-- Thrash Blade
-								un(34, i(17743)),	-- Resurgence Rod
-								un(34, i(17753)),	-- Verdant Keeper's Aim
+							un(40, qdg(qa(7065, {	-- Corruption of Earth and Seed
+								un(2, i(17705)),	-- Thrash Blade
+								un(2, i(17743)),	-- Resurgence Rod
+								un(2, i(17753)),	-- Verdant Keeper's Aim
 							}))),
 							un(40, qdg(qh(7064, {	-- Corruption of Earth and Seed
-								un(34, i(17705)),	-- Thrash Blade
-								un(34, i(17743)),	-- Resurgence Rod
-								un(34, i(17753)),	-- Verdant Keeper's Aim
+								un(2, i(17705)),	-- Thrash Blade
+								un(2, i(17743)),	-- Resurgence Rod
+								un(2, i(17753)),	-- Verdant Keeper's Aim
 							}))),
-							un(40, q( 5943, {	-- Gizelton Caravan
-								un(34, i(15691)),	-- Sidegunner Shottie
-								un(34, i(15692)),	-- Kodo Brander
-								un(34, i(15695)),	-- Studded Ring Shield
+							un(40, q( 5943, {	-- Gizelton Caravan (REMOVED per wowhead comment)
+								un(2, i(15692)),	-- Kodo Brander
+								un(2, i(15691)),	-- Sidegunner Shottie
+								un(2, i(15695)),	-- Studded Ring Shield
 							})),
 							un(40, q( 1381, {	-- Khan Hratha
-								un(34, i(6788)),	-- Magram Hunter's Belt
-								un(34, i(6789)),	-- Ceremonial Centaur Blanket
+								un(2, i(6789)),	-- Ceremonial Centaur Blanket
+								un(2, i(6788)),	-- Magram Hunter's Belt
 							})),
 							un(40, q( 1380, {	-- Khan Kratha
-								un(34, i(6773)),	-- Gelkis Marauder Chain
-								un(34, i(6774)),	-- Uthek's Finger
+								un(2, i(6773)),	-- Gelkis Marauder Chain
+								un(2, i(6774)),	-- Uthek's Finger
 							})),
-							un(40, q( 5561, {	-- Kodo Roundup
-								un(34, i(15697)),	-- Kodo Rustler Boots
-								un(34, i(15698)),	-- Wrangling Spaulders
+							un(40, q(1467, {	-- Reagents for Reclaimers Inc. (REMOVED per wowhead comments)
+								un(2, i(6793)),	-- Auric Bracers
+								un(2, i(131232)),	-- Stormfire Gauntlets
+								un(2, i(6794)),	--Tawny Gloves
 							})),
 							un(40, qa(1440, {	-- Return to Vahlarriel
-								un(34, i( 9687)),	-- Grappler's Belt
-								un(34, i( 9698)),	-- Gloves of Insight
-								un(34, i( 9699)),	-- Garrison Cloak
-								un(34, i(11884)),	-- Moonlit Amice
+								un(2, i( 9699)),	-- Garrison Cloak
+								un(2, i( 9698)),	-- Gloves of Insight
+								un(2, i( 9687)),	-- Grappler's Belt
+								un(2, i(11884)),	-- Moonlit Amice
 							})),
 							un(40, qa(1457, {	-- The Karnitol Shipwreck
-								un(34, i(6791)),	-- Hellion Boots
-								un(34, i(6792)),	-- Sanguine Pauldrons
+								un(2, i(6791)),	-- Hellion Boots
+								un(2, i(6792)),	-- Sanguine Pauldrons
 							})),
 							un(40, qdg(q(7028, {	-- Twisted Evils
-								un(34, i(17775)),	-- Acumen Robes
-								un(34, i(17776)),	-- Sprightring Helm
-								un(34, i(17777)),	-- Relentless Chain
-								un(34, i(17779)),	-- Hulkstone Pauldrons
+								un(2, i(17775)),	-- Acumen Robes
+								un(2, i(17779)),	-- Hulkstone Pauldrons
+								un(2, i(17777)),	-- Relentless Chain
+								un(2, i(17776)),	-- Sprightring Helm
 							}))),
 --[[  NO REWARDS			qg(12340, qh( 6143)),	-- Other Fish to Fry (REMOVED with Cata per wowhead comment)
 							qh( 1432),	-- Alliance Relations (REMOVED per wowhead comment)
 							qh( 1434),	-- Befouled by Satyr (REMOVED per wowhead comment)
-							qg(11625, q(5821)),	-- Bodyguard for Hire (REMOVED per wowhead comment)
-							qh( 6142),	-- Clam Bait (REMOVED with Cata per wowhead comment)
-							qg(11626, q(5943)),	-- Gizelton Caravan (REMOVED per wowhead comment)
-							q(1467),	-- Reagents for Reclaimers Inc. (REMOVED per wowhead comments) --]]
+--]]							
 						}),
 						n(-16, {	-- Rares (Legacy)
-							n(4684, { 	-- Nether Sorceress
+							un(43, n(4684, { 	-- Nether Sorceress
 								un(7, i(2620)),	-- Augural Shroud
-							}),
+							})),
 						}),
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),

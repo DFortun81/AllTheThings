@@ -1041,26 +1041,34 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, q( 5242, {	-- A Final Blow
-								un(34, i(15707)),	-- Brantwood Sash
-								un(34, i(15708)),	-- Blight Leather Gloves
-								un(34, i(15709)),	-- Gearforge Girdle
+								un(2, i(15708)),	-- Blight Leather Gloves
+								un(2, i(15707)),	-- Brantwood Sash
+								un(2, i(15709)),	-- Gearforge Girdle
 							})),
 							un(40, qa(4261, {	-- Ancient Spirit
-								un(34, i(11873)),	-- Ethereal Mist Cape
-								un(34, i(11874)),	-- Clouddrift Mantle
+								un(2, i(11874)),	-- Clouddrift Mantle
+								un(2, i(11873)),	-- Ethereal Mist Cape
 							})),
 							un(40, qa(4906, {	-- Further Corruption
-								un(34, i(11875)),	-- Breezecloud Bracers
+								un(2, i(11875)),	-- Breezecloud Bracers
+							})),
+							un(40, qh(4883, {	-- Guarding Secrets
+								un(2, i(15796)),	-- Seaspray Bracers
+								un(2, i(15797)),	-- Shining Armplates
 							})),
 							un(40, q( 7603, {	-- Kroshius' Infernal Core
 								["groups"] = {
-									un(34, i(18762)),	-- Shard of the Green Flame
+									un(2, i(18762)),	-- Shard of the Green Flame
 								},
 								["classes"] = { 9 },	-- Warlock
 							})),
 							un(40, q( 5385, {	-- The Remains of Trey Lightforge
-								un(34, i(15706)),	-- Hunt Tracker Blade
-								un(34, i(15705)),	-- Tidecrest Blade
+								un(2, i(15706)),	-- Hunt Tracker Blade
+								un(2, i(15705)),	-- Tidecrest Blade
+							})),
+							un(40, q(8460, {	-- [DEPRECATED]Timbermaw Ally
+								un(2, i(21312)),	-- Belt of the Den Watcher
+								un(2, i(21311)),	-- Earth Warder's Vest
 							})),
 --[[
 							o(164885, {	-- Corrupted Night Dragon -- this block of quests has been REMOVED per wowhead comments)

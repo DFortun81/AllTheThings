@@ -122,113 +122,113 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				}),
 			},
 		}),
-		n(-3185, { -- Tier 0.5 (Dungeon Set 2)
+		n(-3185, { -- Tier 0.5 (Dungeon Set 2) [Unobtainable]
 			n(-3209, { -- Vestments of the Virtuous
 				["groups"] = {
-					i(22080),	-- Virtuous Crown
-					i(22082),	-- Virtuous Mantle
-					i(22083),	-- Virtuous Robe
-					i(22079),	-- Virtuous Bracers
-					i(22081),	-- Virtuous Gloves
-					i(22078),	-- Virtuous Belt
-					i(22085),	-- Virtuous Skirt
-					i(22084),	-- Virtuous Sandals
+					un(2, i(22080)),	-- Virtuous Crown
+					un(2, i(22082)),	-- Virtuous Mantle
+					un(2, i(22083)),	-- Virtuous Robe
+					un(2, i(22079)),	-- Virtuous Bracers
+					un(2, i(22081)),	-- Virtuous Gloves
+					un(2, i(22078)),	-- Virtuous Belt
+					un(2, i(22085)),	-- Virtuous Skirt
+					un(2, i(22084)),	-- Virtuous Sandals
 				},
 			}),
 			n(-3210, { -- Sorcerer's Regalia
 				["groups"] = {
-					i(22065),	-- Sorcerer's Crown
-					i(22068),	-- Sorcerer's Mantle
-					i(22069),	-- Sorcerer's Robes
-					i(22063),	-- Sorcerer's Bindings
-					i(22066),	-- Sorcerer's Gloves
-					i(22062),	-- Sorcerer's Belt
-					i(22067),	-- Sorcerer's Leggings
-					i(22064),	-- Sorcerer's Boots
+					un(2, i(22065)),	-- Sorcerer's Crown
+					un(2, i(22068)),	-- Sorcerer's Mantle
+					un(2, i(22069)),	-- Sorcerer's Robes
+					un(2, i(22063)),	-- Sorcerer's Bindings
+					un(2, i(22066)),	-- Sorcerer's Gloves
+					un(2, i(22062)),	-- Sorcerer's Belt
+					un(2, i(22067)),	-- Sorcerer's Leggings
+					un(2, i(22064)),	-- Sorcerer's Boots
 				},
 			}),
 			n(-3211, { -- Deathmist Rainment
 				["groups"] = {
-					i(22074),	-- Deathmist Mask
-					i(22073),	-- Deathmist Mantle
-					i(22075),	-- Deathmist Robe
-					i(22071),	-- Deathmist Bracers
-					i(22077),	-- Deathmist Wraps
-					i(22070),	-- Deathmist Belt
-					i(22072),	-- Deathmist Leggings
-					i(22076),	-- Deathmist Sandals
+					un(2, i(22074)),	-- Deathmist Mask
+					un(2, i(22073)),	-- Deathmist Mantle
+					un(2, i(22075)),	-- Deathmist Robe
+					un(2, i(22071)),	-- Deathmist Bracers
+					un(2, i(22077)),	-- Deathmist Wraps
+					un(2, i(22070)),	-- Deathmist Belt
+					un(2, i(22072)),	-- Deathmist Leggings
+					un(2, i(22076)),	-- Deathmist Sandals
 				},
 			}),
 			n(-3212, { -- Feralheart Rainment
 				["groups"] = {
-					i(22109),	-- Feralheart Cowl
-					i(22112),	-- Feralheart Spaulders
-					i(22113),	-- Feralheart Vest
-					i(22108),	-- Feralheart Bracers
-					i(22110),	-- Feralheart Gloves
-					i(22106),	-- Feralheart Belt
-					i(22111),	-- Feralheart Kilt
-					i(22107),	-- Feralheart Boots
+					un(2, i(22109)),	-- Feralheart Cowl
+					un(2, i(22112)),	-- Feralheart Spaulders
+					un(2, i(22113)),	-- Feralheart Vest
+					un(2, i(22108)),	-- Feralheart Bracers
+					un(2, i(22110)),	-- Feralheart Gloves
+					un(2, i(22106)),	-- Feralheart Belt
+					un(2, i(22111)),	-- Feralheart Kilt
+					un(2, i(22107)),	-- Feralheart Boots
 				},
 			}),
 			n(-3213, { -- Darkmantle Armor
 				["groups"] = {
-					i(22005),	-- Darkmantle Cap
-					i(22008),	-- Darkmantle Spaulders
-					i(22009),	-- Darkmantle Tunic
-					i(22004),	-- Darkmantle Bracers
-					i(22006),	-- Darkmantle Gloves
-					i(22002),	-- Darkmantle Belt
-					i(22007),	-- Darkmantle Pants
-					i(22003),	-- Darkmantle Boots
+					un(2, i(22005)),	-- Darkmantle Cap
+					un(2, i(22008)),	-- Darkmantle Spaulders
+					un(2, i(22009)),	-- Darkmantle Tunic
+					un(2, i(22004)),	-- Darkmantle Bracers
+					un(2, i(22006)),	-- Darkmantle Gloves
+					un(2, i(22002)),	-- Darkmantle Belt
+					un(2, i(22007)),	-- Darkmantle Pants
+					un(2, i(22003)),	-- Darkmantle Boots
 				},
 			}),
 			n(-3214, { -- Beastmaster Armor
 				["groups"] = {
-					i(22013),	-- Beastmaster's Cap
-					i(22016),	-- Beastmaster's Mantle
-					i(22060),	-- Beastmaster's Tunic
-					i(22011),	-- Beastmaster's Bindings
-					i(22015),	-- Beastmaster's Gloves
-					i(22010),	-- Beastmaster's Belt
-					i(22017),	-- Beastmaster's Pants
-					i(22061),	-- Beastmaster's Boots
+					un(2, i(22013)),	-- Beastmaster's Cap
+					un(2, i(22016)),	-- Beastmaster's Mantle
+					un(2, i(22060)),	-- Beastmaster's Tunic
+					un(2, i(22011)),	-- Beastmaster's Bindings
+					un(2, i(22015)),	-- Beastmaster's Gloves
+					un(2, i(22010)),	-- Beastmaster's Belt
+					un(2, i(22017)),	-- Beastmaster's Pants
+					un(2, i(22061)),	-- Beastmaster's Boots
 				},
 			}),
 			n(-3215, { -- The Five Thunders
 				["groups"] = {
-					i(22097),	-- Coif of The Five Thunders
-					i(22101),	-- Pauldrons of The Five Thunders
-					i(22102),	-- Vest of The Five Thunders
-					i(22095),	-- Bindings of The Five Thunders
-					i(22099),	-- Gauntlets of The Five Thunders
-					i(22098),	-- Cord of The Five Thunders
-					i(22100),	-- Kilt of The Five Thunders
-					i(22096),	-- Boots of The Five Thunders
+					un(2, i(22097)),	-- Coif of The Five Thunders
+					un(2, i(22101)),	-- Pauldrons of The Five Thunders
+					un(2, i(22102)),	-- Vest of The Five Thunders
+					un(2, i(22095)),	-- Bindings of The Five Thunders
+					un(2, i(22099)),	-- Gauntlets of The Five Thunders
+					un(2, i(22098)),	-- Cord of The Five Thunders
+					un(2, i(22100)),	-- Kilt of The Five Thunders
+					un(2, i(22096)),	-- Boots of The Five Thunders
 				},
 			}),
 			n(-3216, { -- Soulforge Armor
 				["groups"] = {
-					i(22091),	-- Soulforge Helm
-					i(22093),	-- Soulforge Spaulders
-					i(22089),	-- Soulforge Breastplate
-					i(22088),	-- Soulforge Bracers
-					i(22090),	-- Soulforge Gauntlets
-					i(22086),	-- Soulforge Belt
-					i(22092),	-- Soulforge Legplates
-					i(22087),	-- Soulforge Boots
+					un(2, i(22091)),	-- Soulforge Helm
+					un(2, i(22093)),	-- Soulforge Spaulders
+					un(2, i(22089)),	-- Soulforge Breastplate
+					un(2, i(22088)),	-- Soulforge Bracers
+					un(2, i(22090)),	-- Soulforge Gauntlets
+					un(2, i(22086)),	-- Soulforge Belt
+					un(2, i(22092)),	-- Soulforge Legplates
+					un(2, i(22087)),	-- Soulforge Boots
 				},
 			}),
 			n(-3217, { -- Battlegear of Heroism
 				["groups"] = {
-					i(21999),	-- Helm of Heroism
-					i(22001),	-- Spaulders of Heroism
-					i(21997),	-- Breastplate of Heroism
-					i(21996),	-- Bracers of Heroism
-					i(21998),	-- Gauntlets of Heroism
-					i(21994),	-- Belt of Heroism
-					i(22000),	-- Legplates of Heroism
-					i(21995),	-- Boots of Heroism
+					un(2, i(21999)),	-- Helm of Heroism
+					un(2, i(22001)),	-- Spaulders of Heroism
+					un(2, i(21997)),	-- Breastplate of Heroism
+					un(2, i(21996)),	-- Bracers of Heroism
+					un(2, i(21998)),	-- Gauntlets of Heroism
+					un(2, i(21994)),	-- Belt of Heroism
+					un(2, i(22000)),	-- Legplates of Heroism
+					un(2, i(21995)),	-- Boots of Heroism
 				},
 			}),
 		}),

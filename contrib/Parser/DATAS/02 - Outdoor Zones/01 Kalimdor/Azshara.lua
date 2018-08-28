@@ -6,6 +6,12 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(76, {	-- Azshara
 			["groups"] = {
+				n(-4, {		-- Achievements
+					ach(5448),	-- Glutton for Fiery Punishment (Azshara)
+					ach(5546),	-- Glutton for Icy Punishment (Azshara)
+					ach(5547),	-- Glutton for Shadowy Punishment (Azshara)
+					h(ach(5454)),	-- Joy Ride (Azshara)
+				}),
 				n(-228, { -- Flight Paths
 					fp(44, { -- Bilgewater Harbor, Azshara
 						["coord"] = { 53, 49.8 },
@@ -35,6 +41,18 @@ _.Zones =
 					p(470), 	-- Twilight Spider
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					h(ach(4927, {	-- Azshara Quests
+						crit(1),		-- Defending Orgrimmar
+						crit(2),		-- Redirecting the Ley Lines
+						crit(3),		-- Sisters of the Sea
+						crit(4),		-- Subject Nine from Space!
+						crit(5),		-- The Rarest Substance on Azeroth
+						crit(6),		-- Heart of Arkkoroc
+						crit(7),		-- The Best Apprentice
+						crit(8),		-- The Conquest of Azshara
+					})),
+]]--				
 					qh(14323, {	-- Absorbent
 						["qg"] = 35142,	-- Ergll
 						["sourceQuests"] = { 14130 },	-- Friends Come in All Colors
@@ -950,9 +968,9 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							un(40, qa(3461, {	-- Return to Tymor
-								un(34, i(10707)),	-- Steelsmith Greaves
-								un(34, i(10708)),	-- Skullspell Orb
+							un(40, qh(7486, {	-- A Hero's Reward
+								un(2, i(18399)),	-- Ocean's Breeze
+								un(2, i(18398)),	-- Tidal Loop
 							})),
 							un(40, q(9364, {	-- Fragmented Magic (removed with Cataclysm, Mage-only)
 								["groups"] = {
@@ -960,6 +978,10 @@ _.Zones =
 								},
 								["classes"] = { 8 },	-- Mage
 								["sourceQuests"] = { 9362 },	-- Warlord Krellian
+							})),
+							un(40, qa(3461, {	-- Return to Tymor
+								un(2, i(10707)),	-- Steelsmith Greaves
+								un(2, i(10708)),	-- Skullspell Orb
 							})),
 							--q(14231),	-- Useless quest record (appears to have been replaced with Waste of Thyme)
 						}),

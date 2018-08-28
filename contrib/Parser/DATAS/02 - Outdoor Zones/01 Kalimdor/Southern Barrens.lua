@@ -38,6 +38,26 @@ _.Zones =
 					qg(66422, qh(31918)),	-- A Tamer's Homecoming
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(4937, {	-- Southern Barrens Quests (Alliance)
+						crit(1),		-- Honor's Stand
+						crit(2),		-- Northwatch Hold
+						crit(3),		-- Teegan's Expedition
+						crit(4),		-- Life from the Dream
+						crit(5),		-- Forward Command
+						crit(6),		-- Firestone Point
+						crit(7),		-- Fort Triumph
+					})),
+					h(ach(4981, {	-- Southern Barrens Quests (Horde)
+						crit(1),		-- Hunter's Hill
+						crit(2),		-- Camp Una'fe
+						crit(3),		-- Life from the Dream
+						crit(4),		-- Vendetta Point
+						crit(5),		-- Desolation Hold
+						crit(6),		-- Firestone Point
+						crit(7),		-- Spearhead
+					})),
+]]--				
 					qh(24542, {	-- A Curious Bloom
 						["qg"] = 37515,	-- Lane Tallgrass
 						["sourceQuests"] = { 24539 },	-- When Plants Attack
@@ -1055,13 +1075,16 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qh(913, {	-- Cry of the Thunderhawk
-								un(34, i(5302)),	-- Cobalt Buckler
-								un(34, i(5306)),	-- Wind Rider Staff
-								un(34, i(5299)),	-- Gloves of the Moon
+								un(2, i(5302)),	-- Cobalt Buckler
+								un(2, i(5299)),	-- Gloves of the Moon
+								un(2, i(5306)),	-- Wind Rider Staff
+							})),
+							un(40, qh(849, {	-- Revenge of Gann
+								un(2, i(5313)),	-- Totemic Clan Ring
 							})),
 							un(40, qh(893, {	-- Weapons of Choice
-								un(34, i(5322)),	-- Demolition Hammer
-								un(34, i(5323)),	-- Everglow Lantern
+								un(2, i(5322)),	-- Demolition Hammer
+								un(2, i(5323)),	-- Everglow Lantern
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)

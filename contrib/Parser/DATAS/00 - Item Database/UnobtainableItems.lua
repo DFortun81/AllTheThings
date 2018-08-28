@@ -33,8 +33,6 @@ end
 
 u(3324, 2);		-- Ghostly Mantle
 u(4534, 2);		-- Steel-Clasped Bracers
-u(4964, 2);		-- Goblin Smasher
-u(4974, 2);		-- Compact Fighting Knife
 u(5194, 2);		-- Taskmaster Axe
 u(6226, 2);		-- Blood Apron
 u(6335, 2);		-- Grizzled Boots
@@ -44,7 +42,6 @@ u(6633, 2);		-- Butcher's Slicer
 u(6898, 2);		-- Org of Soran'ruk
 u(6953, 2);		-- Verigan's Fist
 u(7230, 2);		-- Smite's Mighty Hammer
-u(7298, 2);		-- Blade of Cunning
 u(7682, 2);		-- Torturing Poker
 u(7683, 2);		-- Bloody Brass Knuckles
 u(7684,	2);		-- Bloodmage Mantle
@@ -101,78 +98,6 @@ u(18424, 2); 	-- Sedge Boots
 u(19507, 2);	-- Inquisitor's Shawl
 u(19508, 2);	-- Branded Leather Bracers
 u(19509, 2);	-- Dusty Mail Boots
-u(21994, 2);	-- Belt of Heroism
-u(21995, 2);	-- Boots of Heroism
-u(21996, 2);	-- Bracers of Heroism
-u(21997, 2);	-- Breastplate of Heroism
-u(21998, 2);	-- Gauntlets of Heroism
-u(21999, 2);	-- Helm of Heroism
-u(22000, 2);	-- Legplates of Heroism
-u(22001, 2);	-- Spaulders of Heroism
-u(22002, 2);	-- Darkmantle Belt
-u(22003, 2);	-- Darkmantle Boots
-u(22004, 2);	-- Darkmantle Bracers
-u(22005, 2);	-- Darkmantle Cap
-u(22006, 2);	-- Darkmantle Gloves
-u(22007, 2);	-- Darkmantle Pants
-u(22008, 2);	-- Darkmantle Spaulders
-u(22009, 2);	-- Darkmantle Tunic
-u(22010, 2);	-- Beastmaster's Belt
-u(22011, 2);	-- Beastmaster's Bindings
-u(22013, 2);	-- Beastmaster's Cap
-u(22015, 2);	-- Beastmaster's Gloves
-u(22016, 2);	-- Beastmaster's Mantle
-u(22017, 2);	-- Beastmaster's Pants
-u(22060, 2);	-- Beastmaster's Tunic
-u(22061, 2);	-- Beastmaster's Boots
-u(22062, 2);	-- Sorcerer's Belt
-u(22063, 2);	-- Sorcerer's Bindings
-u(22064, 2);	-- Sorcerer's Boots
-u(22065, 2);	-- Sorcerer's Crown
-u(22066, 2);	-- Sorcerer's Gloves
-u(22067, 2);	-- Sorcerer's Leggings
-u(22068, 2);	-- Sorcerer's Mantle
-u(22069, 2);	-- Sorcerer's Robes
-u(22070, 2);	-- Deathmist Belt
-u(22071, 2);	-- Deathmist Bracers
-u(22072, 2);	-- Deathmist Leggings
-u(22073, 2);	-- Deathmist Mantle
-u(22074, 2);	-- Deathmist Mask
-u(22075, 2);	-- Deathmist Robe
-u(22076, 2);	-- Deathmist Sandals
-u(22077, 2);	-- Deathmist Wraps
-u(22078, 2);	-- Virtuous Belt
-u(22079, 2);	-- Virtuous Bracers
-u(22080, 2);	-- Virtuous Crown
-u(22081, 2);	-- Virtuous Gloves
-u(22082, 2);	-- Virtuous Mantle
-u(22083, 2);	-- Virtuous Robe
-u(22084, 2);	-- Virtuous Sandals
-u(22085, 2);	-- Virtuous Skirt
-u(22086, 2);	-- Soulforge Belt
-u(22087, 2);	-- Soulforge Boots
-u(22088, 2);	-- Soulforge Bracers
-u(22089, 2);	-- Soulforge Breastplate
-u(22090, 2);	-- Soulforge Gauntlets
-u(22091, 2);	-- Soulforge Helm
-u(22092, 2);	-- Soulforge Legplates
-u(22093, 2);	-- Soulforge Spaulders
-u(22095, 2);	-- Bindings of the Five Thunders
-u(22096, 2);	-- Boots of the Five Thunders
-u(22097, 2);	-- Coif of the Five Thunders
-u(22098, 2);	-- Cord of the Five Thunders
-u(22099, 2);	-- Gauntlets of the Five Thunders
-u(22100, 2);	-- Kilt of the Five Thunders
-u(22101, 2);	-- Pauldrons of the Five Thunders
-u(22102, 2);	-- Vest of the Five Thunders
-u(22106, 2);	-- Feralheart Belt
-u(22107, 2);	-- Feralheart Boots
-u(22108, 2);	-- Feralheart Bracers
-u(22109, 2);	-- Feralheart Cowl
-u(22110, 2);	-- Feralheart Gloves
-u(22111, 2);	-- Feralheart Kilt
-u(22112, 2);	-- Feralheart Spaulders
-u(22113, 2);	-- Feralheart Vest
 u(22301, 2);	-- Ironweave Robe
 u(22328, 2);	-- Legplates of Vigilance
 u(22329, 2);	-- Scepter of Interminable Focus

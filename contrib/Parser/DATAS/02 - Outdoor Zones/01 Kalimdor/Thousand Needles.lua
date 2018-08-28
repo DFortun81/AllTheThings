@@ -22,6 +22,15 @@ _.Zones =
 					qg(66452, qh(31906)),	-- Kela Grimtotem
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(4938, {		-- Thousand Needles Quests
+						crit(1),		-- The Treasure Trove
+						crit(2),		-- Bugs in the Ice Cream
+						crit(3),		-- The Chief of Chiefs
+						crit(4),		-- Mind the Drop
+						crit(5),		-- The Evil You Know...
+					}),
+]]--				
 					qa(25588, {	-- A Little Payback
 						["groups"] = {
 							i(63574),	-- Paper Roll Bracers
@@ -1112,32 +1121,39 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qh(4904, {	-- Free at Last
-								un(34, i(15469)),	-- Windsong Cinch
-								un(34, i(15468)),	-- Windsong Drape
+								un(2, i(15469)),	-- Windsong Cinch
+								un(2, i(15468)),	-- Windsong Drape
 							})),
 							un(40, qdg(q(2770, {	-- Gahz'rilla (may have been Horde-only)
-								un(34, i( 9653)),	-- Speedy Racer Goggles
-								un(34, i(11122)),	-- Carrot on a Stick
+								un(2, i(11122)),	-- Carrot on a Stick
+								un(2, i( 9653)),	-- Speedy Racer Goggles
 							}))),
 							un(40, qh(5064, {	-- Grimtotem Spying
-								un(34, i(15457)),	-- Desert Shoulders
-								un(34, i(15458)),	-- Tundra Boots
-								un(34, i(15459)),	-- Grimtoll Wristguards
+								un(2, i(15457)),	-- Desert Shoulders
+								un(2, i(15459)),	-- Grimtoll Wristguards
+								un(2, i(15458)),	-- Tundra Boots
+							})),
+							un(40, qh(5151, {	-- Hypercapacitor Gizmo
+								un(2, i(15467)),	-- Inventor's League Ring
 							})),
 							un(40, qh(1184, {	-- Parts of the Swarm
-								un(34, i(6737)),	-- Dryleaf Pants
-								un(34, i(6738)),	-- Bleeding Crescent
+								un(2, i(6738)),	-- Bleeding Crescent
+								un(2, i(6737)),	-- Dryleaf Pants
 							})),
 							un(40, qh(4966, {	-- Protect Kanati Greycloud
-								un(34, i(15461)),	-- Lightheel Boots
-								un(34, i(15462)),	-- Loamflake Bracers
-								un(34, i(15463)),	-- Palestrider Gloves
+								un(2, i(15461)),	-- Lightheel Boots
+								un(2, i(15462)),	-- Loamflake Bracers
+								un(2, i(15463)),	-- Palestrider Gloves
+							})),
+							un(40, qh(5147, {	-- Wanted - Arnak Grimtotem
+								un(2, i(15471)),	-- Brawnhide Armor
+								un(2, i(15470)), 	-- Plainsguard Leggings
 							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
-							n(4099, { 	-- Galak Marauder
+							un(43, n(4099, { 	-- Galak Marauder
 								un(7, i(1493)),	-- Heaver Marauder Scimitar
-							}),
+							})),
 						}),
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),

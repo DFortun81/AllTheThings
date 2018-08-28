@@ -53,10 +53,25 @@ _.Zones =
 					}),
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					h(ach(4933, {	-- Northern Barrens Quests
+						crit(1),		-- Far Watch
+						crit(2),		-- Grol'dom Farm
+						crit(3),		-- Defeating the Kolkar
+						crit(4),		-- Mysteries of the Oases
+						crit(5),		-- Ratchet
+						crit(6),		-- Nozzlepot's Outpost
+						crit(7),		-- Inspiration and Hope
+					})),
+]]--				
 					qh(29090, {	-- A Burning Threat
 						["qg"] = 52192,	-- Brogor
 					}),
 					qh(  891, {	-- A Captain's Vengeance
+						["groups"] = {
+							un(2, i(5309)),	-- Privateer Musket  NOTE: Old reward, quest repurposed, original quest name was The Guns of Northwatch
+							un(2, i(5310)),	-- Sea Dog Britches  NOTE: Old reward, quest repurposed, original quest name was The Guns of Northwatch
+						},
 						["qg"] = 3339,	-- Captain Thalo'thas Brightsun
 					}),
 					qh(13988, {	-- A Growing Problem
@@ -91,9 +106,12 @@ _.Zones =
 					}),
 					qh(  855, {	-- Centuar Bracers
 						["groups"] = {
-							i(59583),	-- Marauding Belt
 							i(59584),	-- Foolhardy Bracers
+							i(59583),	-- Marauding Belt
 							i(131221),	-- Marauding Cord
+							un(2, i(5346)),	-- Orcish Battle Bow NOTE: Old rewards, quest reused
+							un(2, i(5344)),	-- Pointed Axe NOTE: Old rewards, quest reused
+							un(2, i(5345)),	-- Stonewood Hammer NOTE: Old rewards, quest reused
 						},
 						["qg"] = 3389,	-- Regthar Deathgate
 					}),
@@ -112,6 +130,8 @@ _.Zones =
 							i(59540),	-- Quilboar Skin Gloves
 							i(59541),	-- Mankrik's Boar Slicer
 							i(131227),	-- Quilboar Linked Gauntlets
+							un(2, i(5314)),	-- Boar Hunter's Cape NOTE: Old rewards, quest reused
+							un(2, i(6477)),	-- Grassland Sash NOTE: Old rewards, quest reused
 						},
 						["qg"] = 3432,	-- Mankrik
 					}),
@@ -234,6 +254,7 @@ _.Zones =
 							i(59586),	-- Gloves of Unfocused Rage
 							i(59587),	-- Fractured Belt
 							i(131220),	-- Hands of Unfocused Rage
+							un(2, i(5351)),	-- Bounty Hunter's Ring  NOTE: Old rewards, quest reused
 						},
 						["qg"] = 3389,	-- Regthar Deathgate
 						["sourceQuests"] = { 14073 },	-- Deathgate's Reinforcements
@@ -279,6 +300,7 @@ _.Zones =
 							i(59581),	-- Smart Shoes
 							i(59582),	-- Shrewd Crossbow
 							i(131223),	-- Smart Sandals
+							un(2, i(5343)),	-- Barkeeper's Cloak NOTE: Old reward, quest repurposed, original quest name was Raptor Horns
 						},
 						["qg"] = 3446,	-- Mebok Mizzyrix
 					}),
@@ -433,9 +455,9 @@ _.Zones =
 					qh(  876, {	-- Serena Bloodfeather
 						["groups"] = {
 							nld({	-- Legacy
-								un(34, i(5321)),	-- 	Elegant Shortsword
-								un(34, i(5279)),	-- 	Harpy Skinner
-								un(34, i(5318)),	-- 	Zhovur Axe
+								un(2, i(5321)),	-- 	Elegant Shortsword
+								un(2, i(5279)),	-- 	Harpy Skinner
+								un(2, i(5318)),	-- 	Zhovur Axe
 							}),
 						},
 						["sourceQuests"] = { 875 },	-- Harpy Lieutenants
@@ -471,6 +493,8 @@ _.Zones =
 							i(59578),	-- Bracers of Angry Mutterings
 							i(59579),	-- Nozzlepot Leggings
 							i(131222),	-- Nozzlepot Legwraps
+							un(2, i(5326)),	-- Flaring Baton  NOTE: Old reward, quest repurposed
+							un(2, i(5327)),	-- Greasy Tinker's Pants  NOTE: Old reward, quest repurposed
 						},
 						["qg"] = 3439,	-- Wizzlecrank's Shredder
 						["sourceQuests"] = { 858 },	-- Ignition
@@ -481,6 +505,8 @@ _.Zones =
 							i(59543),	-- Pigman Belt
 							i(59544),	-- Kargal's Breastplate
 							i(131224),	-- Pigman Waistband
+							un(2, i(5275)),	-- Binding Girdle NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
+							un(2, i(5328)),	-- Cinched Belt NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
 						},
 						["qg"] = 3337,	-- Kargal Battlescar
 						["sourceQuests"] = { 871 },	-- In Defense of Far Watch
@@ -1139,102 +1165,97 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 						n(-17, {	-- Quests
+							un(40, qh(853, {	-- [DEPRECATED] Apothecary Zamah
+								un(2, i(5340)),	-- Cauldron Stirrer
+							})),
+							un(40, qh(906, {	-- Betrayal from Within
+								un(2, i(5316)),	-- Barkshell Tunic
+								un(2, i(5317)),	-- Dry Moss Tunic
+							})),
 							un(40, qh(1848, {	-- Brutal Hauberk
-								un(34, i(7133)),	-- Brutal Hauberk
-							})),
-							un(40, qh(855, {	-- Centaur Bracers
-								un(34, i(5346)),	-- Orcish Battle Bow
-								un(34, i(5344)),	-- Pointed Axe
-								un(34, i(5345)),	-- Stonewood Hammer
-							})),
-							un(40, qh(899, {	-- Consumed by Hatred
-								un(34, i(5314)),	-- Boar Hunter's Cape
-								un(34, i(6477)),	-- Grassland Sash
+								un(2, i(7133)),	-- Brutal Hauberk
 							})),
 							un(40, qh(862, {	-- Dig Rat Stew
-								un( 7, i( 5487)),	-- Recipe: Dig Rat Stew
-								un(34, i(10919)),	-- Apothecary Gloves
+								un(2, i(10919)),	-- Apothecary Gloves
+								i( 5487),	-- Recipe: Dig Rat Stew NOTE: This recipe is still available, only quest was retired
 							})),
 							un(40, qh(868, {	-- Egg Hunt
-								un(34, i(6503)),	-- Harlequin Robes
-								un(34, i(6502)),	-- Violet Scale Armor
+								un(2, i(6503)),	-- Harlequin Robes
+								un(2, i(6502)),	-- Violet Scale Armor
+							})),
+							un(40, qh(898, {	-- Free From the Hold
+								un(2, i(5311)),	-- Buckled Boots
+								un(2, i(5312)),	-- Riveted Gauntlets
 							})),
 							un(40, qh(1503, {	-- Forged Steel
 								["groups"] = {
-									un(34, i(7326)),	-- Thun'grim's Axe
-									un(34, i(7328)),	-- Thun'grim's Mace
-									un(34, i(7327)),	-- Thun'grim's Dagger
-									un(34, i(7329)),	-- Thun'grim's Sword
+									un(2, i(7326)),	-- Thun'grim's Axe
+									un(2, i(7328)),	-- Thun'grim's Mace
+									un(2, i(7327)),	-- Thun'grim's Dagger
+									un(2, i(7329)),	-- Thun'grim's Sword
 								},
 								["classes"] = { 1 }	-- Warrior
 							})),
 							un(40, qh(3514, {	-- Horde Presence
-								un(34, i(10653)),	-- Trailblazer Boots
-								un(34, i(10654)),	-- Jutebraid Gloves
+								un(2, i(10654)),	-- Jutebraid Gloves
+								un(2, i(10653)),	-- Trailblazer Boots
 							})),
 							un(40, qa(3370, {	-- In Nightmares
-								un(34, i(10657)),	-- Talbar Mantle
-								un(34, i(10658)),	-- Quagmire Galoshes
+								un(2, i(10658)),	-- Quagmire Galoshes
+								un(2, i(10657)),	-- Talbar Mantle
 							})),
 							un(40, qh(3369, {	-- In Nightmares
-								un(34, i(10657)),	-- Talbar Mantle
-								un(34, i(10658)),	-- Quagmire Galoshes
+								un(2, i(10658)),	-- Quagmire Galoshes
+								un(2, i(10657)),	-- Talbar Mantle
 							})),
 							un(40, qh( 873, {	-- Isha Awak
-								un(34, i(5356)),	-- Branding Rod
-								un(34, i(5357)),	-- Ward of the Vale
-								un(34, i(5355)),	-- Beastmaster's Girdle
+								un(2, i(5355)),	-- Beastmaster's Girdle
+								un(2, i(5356)),	-- Branding Rod
+								un(2, i(5357)),	-- Ward of the Vale
 							})),
 							un(40, qh(3301, {	-- Mura Runetotem [This quest was repurposed and made obsolete twice]
-								un(34, i(10820)),	-- Jackseed Belt [WotLK version of quest]
-								un(34, i(10821)),	-- Sower's Cloak [WotLK version of quest]
-								un(34, i(59556)),	-- Shield of Inner Glow [Cata version of quest]
-								un(34, i(59557)),	-- Belt of Unwanted Aid [Cata version of quest]
-							})),
-							un(40, q(865, {	-- Raptor Horns
-								un(34, i(5343)),	-- Barkeeper's Cloak
+								un(2, i(59557)),	-- Belt of Unwanted Aid [Cata version of quest]
+								un(2, i(10820)),	-- Jackseed Belt [WotLK version of quest]
+								un(2, i(59556)),	-- Shield of Inner Glow [Cata version of quest]
+								un(2, i(10821)),	-- Sower's Cloak [WotLK version of quest]
 							})),
 							un(40, qh(902, {	-- Samophlange
-								un(34, i(5324)),	-- Engineer's Hammer
-								un(34, i(5325)),	-- Welding Shield
+								un(2, i(5324)),	-- Engineer's Hammer
+								un(2, i(5325)),	-- Welding Shield
 							})),
 							un(40, qh(888, {	-- Stolen Booty
-								un(34, i(5337)),	-- Wayfaring Gloves
-								un(34, i(5320)),	-- Padded Lamellar Boots
+								un(2, i(5320)),	-- Padded Lamellar Boots
+								un(2, i(5337)),	-- Wayfaring Gloves
+							})),
+							un(40, qh(3281, {	-- [DEPRECATED] Stolen Silver
+								un(2, i(11853)),	-- Rambling Boots
+								un(2, i(2694)),	-- Settler's Leggings
 							})),
 							un(40, q(4964, {	-- The Completed Orb of Dar'Orahil
 								["groups"] = {
-									un(34, i(15108)),	-- Orb of Dar'Orahil
-									un(34, i(15106)),	-- Staff of Dar'Orahil
+									un(2, i(15108)),	-- Orb of Dar'Orahil
+									un(2, i(15106)),	-- Staff of Dar'Orahil
 								},
 								["classes"] = { 9 },	-- Warlock
 							})),
 							un(40, q(4975, {	-- The Completed Orb of Noh'Orahil
 								["groups"] = {
-									un(34, i(15107)),	-- Orb of Noh'Orahil
-									un(34, i(15105)),	-- Staff of Noh'Orahil
+									un(2, i(15107)),	-- Orb of Noh'Orahil
+									un(2, i(15105)),	-- Staff of Noh'Orahil
 								},
 								["classes"] = { 9 },	-- Warlock
 							})),
 							un(40, q(4786, {	-- The Completed Robe
 								["groups"] = {
-									un(34, i(6900)),	-- Enchanted Gold Bloodrobe
+									un(2, i(6900)),	-- Enchanted Gold Bloodrobe
 								},
 								["classes"] = { 9 },	-- Warlock
 							})),
-							un(40, qh( 863, {	-- The Escape
-								un(34, i(5326)),	-- Flaring Baton
-								un(34, i(5327)),	-- Greasy Tinker's Pants
-							})),
-							un(40, qh( 891, {	-- The Guns of Northwatch
-								un(34, i(5309)),	-- Privateer Musket
-								un(34, i(5310)),	-- Sea Dog Britches
-							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
+						--}),
+						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),

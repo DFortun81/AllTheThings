@@ -54,6 +54,20 @@ _.Zones =
 					qg(66137, qh(31862)),	-- Zonya the Sadist
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(4936, {	-- Stonetalon Mountains Quests (Alliance)
+						crit(1),		-- Clearing a Path
+						crit(2),		-- Slay the Warlord
+						crit(3),		-- Seldarria
+						crit(4),		-- An Unconventional Ally
+					})),
+					h(ach(4980, {	-- Stonetalon Mountains Quests (Horde)
+						crit(1),		-- A Short-Lived Victory
+						crit(2),		-- Legionnaire
+						crit(3),		-- Da Voodoo
+						crit(4),		-- Honor... Never Forsake It
+					})),
+]]--				
 					qh(26002, {	-- Alliance Attack Plans
 						["qg"] = 40901,	-- Blastgineer Fuzzwhistle
 						["sourceQuests"] = { 26001 },	-- The Missing Blastgineer
@@ -895,30 +909,47 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					n(-17, {	-- Quests (Legacy)
+						un(40, qh(6284, {	-- Arachnophobia
+							un(2, i(16891)),	-- Claystone Shortsword
+							un(2, i(16894)),	-- Clear Crystal Rod
+						})),
 						un(40, qh(6283, {	-- Bloodfury Bloodline
-							un(2, i(16990)),	-- Spritekin Cloak
 							un(2, i(16987)),	-- Screecher Belt
+							un(2, i(16990)),	-- Spritekin Cloak
 						})),
 						un(40, qh(6481, {	-- Earthen Arise
 							un(2, i(16981)),	-- Owlbeard Bracers
 							un(2, i(1306)),	-- Wolfmane Wristguards
 						})),
 						un(40, q(1096, {	-- Gerenzo Wrenchwhistle
-							un(2, i(6667)),	-- Engineer's Cloak
 							un(2, i(6668)),	-- Draftsman Boots
+							un(2, i(6667)),	-- Engineer's Cloak
+						})),
+						un(40, q(1092, {	-- Gerenzo's Orders
+							un(2, i(6666)),	-- Dredge Boots
 						})),
 						un(40, qh(1058, {	-- Jin'Zil's Forest Magic
-							un(2, i(6664)),	-- Voodoo Mantle
 							un(2, i(6665)),	-- Hexed Bracers
+							un(2, i(6664)),	-- Voodoo Mantle
 						})),
 						un(40, qh(6381, {	-- New Life
-							un(2, i(16985)),	-- Windseeker Boots
 							un(2, i(16986)),	-- Sandspire Gloves
+							un(2, i(16985)),	-- Windseeker Boots
 						})),
 						un(40, qa(1081, {	-- Reception from Tyrande
+							un(2, i(6678)),	-- Band of Elven Grace
 							un(2, i(7334)),	-- Efflorescent Robe
 							un(2, i(7335)),	-- Grizzly Tunic
 							un(2, i(7336)),	-- Wildwood Chain
+						})),
+						un(40, qa(1059, {	-- Reclaiming the Charred Vale
+							un(2, i(6676)),	-- Constable Buckler
+							un(2, i(6675)),	-- Tempered Bracers
+						})),
+						un(40, qh(1089, {	-- The Den
+							un(2, i(6671)),	-- Juggernaut Leggings
+							un(2, i(6670)),	-- Panther Armor
+							un(2, i(6669)),	-- Sacred Band
 						})),
 					}),
 				}),

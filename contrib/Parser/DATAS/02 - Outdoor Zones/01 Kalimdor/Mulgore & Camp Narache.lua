@@ -104,8 +104,8 @@ _.Zones =
 						i(4854, {	-- Demon Scarred Cloak
 							["groups"] = {
 								qh(770,  {  -- The Demon Scarred Cloak
-									i(4971),
-									i(3079),
+									i(4971),	-- Skorn's Hammer
+									i(3079),	-- Skorn's Rifle
 								}),
 							},
 							["ignoreSource"] = true,
@@ -226,9 +226,12 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)						
+							un(40, qh(776, {	-- Rites of the Earthmother
+								un(2, i(4909)),	-- Kodo Hunter's Leggings
+							})),
 							un(40, qh(765,  {  -- Supervisor Fizsprocket
-								un(2, i(4974)),
-								un(2, i(4964)),
+								un(2, i(4974)),	-- Compact Fighting Knife
+								un(2, i(4964)),	-- Goblin Smasher
 							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
