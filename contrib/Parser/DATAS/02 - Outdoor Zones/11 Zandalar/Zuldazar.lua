@@ -69,6 +69,127 @@ _.Zones =
 							},
 						}),
 						--]]
+						h(ach(13030, {	-- How to Ptrain Your Pterrordax
+							["groups"] = {
+								crit(1, {	-- Nature Versus Nurture
+									["groups"] = {
+										i(157782, {	-- Pterrordax Egg
+											qh(50393, {	-- A Child of Pa'ku
+												["qgs"] = {
+													125207,	-- Peering Shriker
+													126618,	-- Bloodraged Pterrordax
+													128647,	-- Seaspray Hatchling
+													122113,	-- Pterrordax Skyrender
+													126702,	-- Primal Skyterror
+													128343,	-- Skyterror Hatchling
+												},
+											}),
+										}),
+										qh(50394, {	-- Your Problem Now
+											["qg"] = 127377,	-- Pa'ku
+											["coord"] = { 71.4, 49.2 },	
+											["sourceQuests"] = { 50393 },	-- A Child of Pa'ku
+										}),
+										qh(50402, {	-- SKREEEEE!
+											["qg"] = 133678,	-- Kua'fon
+											["coord"] = { 70.8, 50.9 },
+											["sourceQuests"] = { 50394 },	-- Your Problem Now
+										}),
+										qh(52305, {	-- Nature vs Nurture
+											["qg"] = 135308,	-- Wingminder Goja
+											["coord"] = { 70.8, 50.9 },
+											["sourceQuests"] = { 50402 },	-- SKREEEE!
+										}),
+									},
+									["description"] = "Must complete ~7 days worth of daily quests to fill Kua'fon's experience bar.",
+								}),
+								crit(2, {	-- Room to Grow
+									["groups"] = {
+										qh(50395, {	-- The Call of the Skies
+											["qg"] = 133678,	-- Kua'fon
+											["coord"] = { 70.8, 50.9 },
+											["sourceQuests"] = { 52305 },	-- Nature vs Nurture
+										}),
+										qh(50401, {	-- Fear of Falling
+											["qg"] = 127377,	-- Pa'ku
+											["coord"] = { 70.9, 50.8 },
+											["sourceQuests"] = { 50395 },	-- The Call of the Skies
+										}),
+										qh(50412, {	-- Back to the Nest
+											["qg"] = 133678,	-- Kua'fon
+											["coord"] = { 74.3, 51.9 },
+											["sourceQuests"] = { 50401 },	-- Fear of Falling
+										}),
+										qh(52447, {	-- Room to Grow
+											["qg"] = 135308,	-- Wingminder Goja
+											["coord"] = { 70.8, 50.9 },
+											["sourceQuests"] = { 50412 },	-- Back to the Nest
+										}),
+									},
+									["description"] = "Must complete ~14 days worth of daily quests to fill Kua'fon's experience bar.",
+								}),
+								crit(3, {	-- Eyes on the Skies
+									["groups"] = {
+										qh(50396, {	-- A Pterrible Fate
+											["qg"] = 133679,	-- Kua'fon
+											--["coord"] = {}
+											["sourceQuests"] = { 52447 },	-- Room to Grow
+										}),
+										qh(50886, {	-- Surrogate Wings
+											["qg"] = 127377,	-- Pa'ku
+											--["coord"] = {},
+											["sourceQuests"] = { 50396 },	-- A Pterrible Fate
+										}),
+										qh(50887, {	-- Ptrust Fall
+											["qg"] = 135308,	-- Wingminder Goja
+											--["coord"] = {},
+											["sourceQuests"] = { 50886 },	-- Surrogate Wings
+										}),
+										qh(50900, {	-- Maybe When You're Older
+											["qg"] = 135595,	-- Pa'ku
+											--["coord"] = {},
+											["sourceQuests"] = { 50887 },	-- Ptrust Fall
+										}),
+										qh(52748, {	-- Eyes on the Skies
+											["qg"] = 135308,	-- Wingminder Goja
+											--["coord"] = {},
+											["sourceQuests"] = { 50900 },	-- Maybe When You're Older
+										}),
+									},
+									["description"] = "Must complete 4-7 days worth of daily quests to fill Kua'fon's experience bar.",
+								}),
+								crit(4, {	-- Down, But Not Out
+									qh(50397, {	-- Aerial Aspirations
+										["qg"] = 133682,	-- Kua'fon
+										--["coord"] = {},
+										["sourceQuests"] = { 52748 },	-- Eyes on the Skies
+									}),
+									qh(50940, {	-- Wisdom of the Wingless
+										["qg"] = 133682,	-- Kua'fon
+										--["coord"] = {},
+										["sourceQuests"] = { 50397 },	-- Aerial Aspirations
+									}),
+									qh(50942, {	-- Dress for the Slide, Not the Ride
+										["qg"] = 135801,	-- Hexlord Raal
+										--["coord"] = {},
+										["sourceQuests"] = { 50940 },	-- Wisdom of the Wingless
+									}),
+									qh(50943, {	-- The Joy of Flight
+										["qg"] = 135801,	-- Hexlord Raal
+										--["coord"] = {},
+										["sourceQuests"] = { 50942 },	-- Dress for the Slide, Not the Ride
+									}),
+									qh(50944, {	-- Down, But Not Out
+										["groups"] = {
+											i(159146),	-- Kua'fon's Harness
+										},
+										["qg"] = 135744,	-- Kua'fon
+										--["coord"] = {},
+										["sourceQuests"] = { 50943 },	-- The Joy of Flight
+									}),
+								}),
+							},
+						})),
 					},
 				}),
 				n(-228, {	-- Flight Paths
@@ -531,9 +652,6 @@ _.Zones =
 							["qg"] = 138138,	-- Princess Telanji
 							["coord"] = { 43.7, 39.5 },
 							["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
-						}),
-						qh(50944, {	-- Down, But Not Out
-							i(159146),	-- Kua'fon's Harness
 						}),
 					},
 				}),
