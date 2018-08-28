@@ -774,7 +774,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160467),	-- Hydra-Hunter Legguards	
 							}),	
-							-- ["questID"] = 		
+							["questID"] = 50994,	
 						}),		
 						n(132086, {	-- Black-Eyed Bart
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
