@@ -6,7 +6,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			["groups"] = {
-				n(-4,   {	-- Achievement
+				n(-4, {	-- Achievement
 					["groups"] = {
 						ach(13051, {	-- Legends of the Tidesages
 							{
@@ -159,7 +159,7 @@ _.Zones =
 						["description"] = "Requires completion of Mission Report: Windfall Cavern and related quest line to unlock.",
 					}),
 				}),
-				n(-25,  { 	-- Pet Battle
+				n(-25, { 	-- Pet Battle
 					["groups"] = {
 						p(2379),	-- Honey Bee
 						p(2374),	-- Freshwater Crawler
@@ -930,7 +930,7 @@ _.Zones =
 					},
 					{
 						["questID"] = 51939,	-- Rosaline's Apiary (Crieve)
-						["coord"] = { 72.1, 65.8 },
+						["coord"] = { 72.04, 65.87 },
 					},
 					{
 						["questID"] = 51935,	-- Sagehold (Crieve)
@@ -950,10 +950,16 @@ _.Zones =
 					},
 					{
 						["questID"] = 51946,	-- Winshorn Hills (Crieve)
-						["coord"] = { 60.9, 51.2 },
+						["coord"] = { 60.30, 49.61 },
+					},
+					{
+						["questID"] = 51941,	-- STC
+						["coords"] = {
+							{ 47.83, 55.40 }
+						},
 					},
 				}),
-				n(-17,  {	-- Quests
+				n(-17, {	-- Quests
 					["groups"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
 						a(ach(12496, {	-- Stormsong and Dance
 							crit(1, {		-- The Tidesages of Stormsong
@@ -1188,7 +1194,7 @@ _.Zones =
 
 					}),
 				}),
-				n(-16,  {	-- Rares
+				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(137025, {	-- Broodmother
@@ -1268,12 +1274,19 @@ _.Zones =
 							}),
 							["questID"] = 52460,
 						}),
+						n(141985, {	-- Herald Zaxuthril [CLQ] [No S]
+							["questID"] = 50075,
+							["coords"] = {
+								{ 71.48, 54.26 },
+							},
+						}),
 						o(281646, { -- Honey Vat
-							["coord"] = {66.6, 71.1 },
-							["questID"] = 50576,
 							["groups"] = {
 								i(154476),	-- Honey-Glazed Vambraces
 							},
+							["coord"] = { 66.6, 71.1 },
+							["questID"] = 50576,
+							
 						}),
 						n(141039, {	-- Ice Sickle
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
@@ -1303,9 +1316,13 @@ _.Zones =
 						n(138963, {	-- Nestmother Acada
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160458),	-- Ancient Featherlight Slippers
-								i(160477),	-- Skoloth's Anchorplate Greaves
 							}),
+							["description"] = "Path starts at 41.27, 44.10",
 							["questID"] = 51762,
+							["coords"] = {
+								{ 43.46, 44.98 }, -- Nestmother
+								{ 41.27, 44.10 }, -- Path
+							},
 						}),
 						n(141239, {	-- Osca the Bloodied		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -1366,7 +1383,7 @@ _.Zones =
 						}),	
 						n(141143, {	-- Sister Absinthe		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(155164),	-- Beryl-Tide Greatcloak
+								un(1, i(155164)),	-- Beryl-Tide Greatcloak [NOTE: Not dropping on live, but did on beta]
 							}),
 							["coord"] = { 61.5, 57.0 },
 							["questID"] = 52441,	
@@ -1424,10 +1441,12 @@ _.Zones =
 						n(129803, {	-- Whiplash [MissingL]
 							["questID"] = 52296,	
 						}),	
-						n(142088, {	-- Whirlwing		
+						n(142088, {	-- Whirlwing
+							--[[ Note: No leveling version drops
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158215),	-- Whirlwing's Plumage
 							}),
+							--]]
 							["questID"] = 52457,	
 						}),	
 					},
