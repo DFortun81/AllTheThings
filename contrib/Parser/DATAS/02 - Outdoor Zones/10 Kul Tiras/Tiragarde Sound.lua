@@ -38,7 +38,7 @@ _.Zones =
 						-- It doesn't appear that you need to pick up the map to loot the chest.
 						-- I went straight to the chest for the Soggy Treasure Map without having looted it (to my knowledge).  Needs verification though.
 							i(162571, {	-- Soggy Treasure Map
-								["questID"] = 52807,
+								["questID"] = 52807,	-- Looting the map itself possibly completes quest ID 52853?
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								-- The actual criteria is awarded by:
 									-- opening object 293852 "Buried Treasure Chest"
@@ -619,13 +619,6 @@ _.Zones =
 						})),
 						
 						
-						q(48593),	-- Small Treasure Chest
-						q(48595),	-- Small Treasure Chest
-						q(48596),	-- Small Treasure Chest
-						q(48607),	-- Small Treasure Chest
-						q(48618),	-- Small Treasure Chest
-						q(48619),	-- Small Treasure Chest
-						q(48599),	-- Small Treasure Chest
 						i(163856, {	-- Ancient Pilgrimage Scrollcasing
 							q(53476, {	-- The Great Sea Scrolls
 								i(163863),	-- Bartered Vrykul Cowl
@@ -795,12 +788,12 @@ _.Zones =
 							["coord"] = { 85.2, 73.6 },
 							["questID"] = 51808,
 						}),
-						n(130508, {	-- Broodmother Razora			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(160460),	-- Thick Sauroskin Gloves	
-							}),	
-							["questID"] = 49999,		
-						}),		
+						n(130508, {	-- Broodmother Razora
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(160460),	-- Thick Sauroskin Gloves
+							}),
+							["questID"] = 49999,
+						}),
 						n(132088, {	-- Captain Wintersail
 							-- have to interact with object 280649 Smuggler's Cache to spawn
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -822,17 +815,17 @@ _.Zones =
 						}),		
 						n(132211, {	-- Fowlmouth
 							["coord"] = { 89.8, 78.1 },
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(154467),	-- Parrot-Trainer Mantle	
-							}),	
-							-- ["questID"] = 		
-						}),		
-						n(132127, {	-- Foxhollow Skyterror			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(160454),	-- Foxhollow Falconer's Bracers	
-							}),	
-							-- ["questID"] = 		
-						}),		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(154467),	-- Parrot-Trainer Mantle
+							}),
+							["questID"] = 50155,
+						}),
+						n(132127, {	-- Foxhollow Skyterror
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(160454),	-- Foxhollow Falconer's Bracers
+							}),
+							["questID"] = 50137,
+						}),
 						n(130350, {	-- Guardian of the Spring
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155571, {	-- Garyl's Riding Blanket
@@ -851,30 +844,30 @@ _.Zones =
 							["coord"] = { 57.7, 56.0 },
 							["questID"] = 53373,
 						}),
-						n(131520, {	-- Kulett the Ornery			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(158597),	-- Silvershell Defender	
-							}),	
-							-- ["questID"] = 		
-						}),		
-						n(134106, {	-- Lumbergrasp Sentinel			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(155524),	-- Cursetouched Lumberjack's Axe	
-							}),	
+						n(131520, {	-- Kulett the Ornery
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(158597),	-- Silvershell Defender
+							}),
+							["questID"] = 49984,
+						}),
+						n(134106, {	-- Lumbergrasp Sentinel
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(155524),	-- Cursetouched Lumberjack's Axe
+							}),
 							["questID"] = 50525,
-						}),		
+						}),
 						n(139290, {	-- Maison the Portable			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(154458),	-- Shellbreaker Warhelm	
 							}),	
 							-- ["questID"] = 		
 						}),		
-						n(131252, {	-- Merianae			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(160461),	-- Thick Sauroskin Pants	
-							}),	
-							-- ["questID"] = 		
-						}),		
+						n(131252, {	-- Merianae
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(160461),	-- Thick Sauroskin Pants
+							}),
+							-- ["questID"] = 
+						}),
 						n(127290, {	-- Mugg			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(154416),	-- Trogg Saurolisk-Breaker	
@@ -907,24 +900,24 @@ _.Zones =
 							["coord"] = { 68.3, 63.56 },
 							["questID"] = 51872,
 						}),
-						n(127289, {	-- Saurolisk Tamer Mugg			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(154416),	-- Trogg Saurolisk-Breaker	
-							}),	
-							-- ["questID"] = 		
-						}),		
+						n(127289, {	-- Saurolisk Tamer Mugg
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(154416),	-- Trogg Saurolisk-Breaker
+							}),
+							["questID"] = 48806,
+						}),
 						n(139287, {	-- Sawtooth
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155273),	-- Shartook Hatchet
 							}),
-							-- ["questID"] = 		
-						}),		
-						n(139285, {	-- Shiverscale the Toxic			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(155278),	-- Shiverscale Spellknife	
-							}),	
-							-- ["questID"] = 		
-						}),		
+							["questID"] = 51877,
+						}),
+						n(139285, {	-- Shiverscale the Toxic
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(155278),	-- Shiverscale Spellknife
+							}),
+							["questID"] = 51876,
+						}),
 						n(132280, {	-- Squacks
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(160455),	-- Parrot-Trainer Sash
@@ -937,12 +930,12 @@ _.Zones =
 							}),	
 							-- ["questID"] = 		
 						}),		
-						n(139280, {	-- Sythian the Swift			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(154474),	-- Sythian Swiftbelt	
-							}),	
-							["questID"] = 51873,		
-						}),		
+						n(139280, {	-- Sythian the Swift
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(154474),	-- Sythian Swiftbelt
+							}),
+							["questID"] = 51873,
+						}),
 						n(133356, {	-- Tempestria
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160466),	-- Saurolisk Broodmother Boots
@@ -969,12 +962,12 @@ _.Zones =
 							["coord"] = { 70.4, 55.7 },
 							["questID"] = 51835,
 						}),
-						n(132076, {	-- Totes			
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(160452),	-- Goat's Tote	
-							}),	
-							-- ["questID"] = 		
-						}),		
+						n(132076, {	-- Totes
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(160452),	-- Goat's Tote
+							}),
+							["questID"] = 50095,
+						}),
 						n(131984, {	-- Twin-hearted Construct			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160473),	-- Wickerthorn Stompers	
@@ -1001,6 +994,225 @@ _.Zones =
 							}),
 						}),
 					},
+				}),
+				n(-212, {	-- Treasure Chest
+					o(273900, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 77.0, 75.4 },
+							{ 77.0, 77.3 },
+							{ 77.9, 78.4 },
+							{ 78.5, 76.3 },
+							{ 79.0, 79.2 },
+							{ 81.7, 73.1 },
+							{ 82.1, 74.0 },
+							{ 82.6, 75.6 },
+							{ 83.3, 74.7 },
+							{ 83.5, 72.1 },
+							{ 83.9, 73.9 },
+						},
+						["isDaily"] = true,
+						["questID"] = 48593,
+					}),
+					o(273902, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 76.3, 80.9 },
+							{ 76.6, 81.2 },
+							{ 76.8, 83.5 },
+							{ 77.0, 85.5 },
+							{ 77.5, 82.7 },
+							{ 77.7, 85.0 },
+							{ 78.0, 80.5 },
+						},
+						["isDaily"] = true,
+						["questID"] = 48595,
+					}),
+					o(273903, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 73.2, 84.3 },
+							{ 73.3, 82.5 },
+							{ 73.5, 83.2 },
+							{ 74.3, 84.4 },
+							{ 74.5, 81.8 },
+							{ 74.5, 83.2 },
+							{ 75.3, 84.0 },
+							{ 75.7, 82.8 },
+						},
+						["isDaily"] = true,
+						["questID"] = 48596,
+					}),
+					o(273905, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 37.0, 30.6 },
+							{ 37.2, 28.3 },
+							{ 37.6, 29.5 },
+							{ 38.2, 31.9 },
+							{ 38.5, 28.7 },
+							{ 38.5, 33.2 },
+							{ 38.8, 30.5 },
+							{ 39.6, 32.4 },
+						},
+						["isDaily"] = true,
+						["questID"] = 48598,
+					}),
+					o(273910, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 38.2, 25.7 },
+							{ 38.8, 26.8 },
+							{ 38.9, 25.0 },
+							{ 39.7, 25.9 },
+							{ 40.8, 27.5 },
+							{ 40.9, 29.4 },
+							{ 41.1, 25.9 },
+							{ 41.9, 26.6 },
+							{ 42.8, 28.2 },
+							{ 43.0, 30.2 },
+							{ 43.2, 27.4 },
+						},
+						["isDaily"] = true,
+						["questID"] = 48599,
+					}),
+					o(273917, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 78.1, 49.0 },
+							{ 78.8, 47.6 },
+							{ 79.2, 50.5 },
+							{ 79.5, 45.7 },
+							{ 79.7, 48.2 },
+							{ 80.2, 47.2 },
+							{ 80.5, 49.6 },
+							{ 80.7, 45.8 },
+							{ 81.3, 49.4 },
+							{ 82.3, 47.8 },
+						},
+						["isDaily"] = true,
+						["questID"] = 48607,
+					}),
+					o(273918, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 75.9, 60.9 },
+							{ 76.0, 57.5 },
+							{ 76.1, 67.4 },
+							{ 76.7, 59.6 },
+							{ 77.6, 65.8 },
+							{ 78.3, 67.8 },
+							{ 78.3, 60.0 },
+						},
+						["isDaily"] = true,
+						["questID"] = 48608,
+					}),
+					o(273919, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 65.9, 57.8 },
+							{ 66.1, 54.0 },
+							{ 67.2, 59.5 },
+							{ 67.4, 64.1 },
+							{ 67.4, 65.0 },
+							{ 67.9, 62.8 },
+							{ 68.3, 53.9 },
+							{ 68.5, 64.6 },
+							{ 68.6, 51.1 },
+							{ 69.4, 59.2 },
+							{ 69.9, 52.4 },
+							{ 70.0, 57.1 },
+							{ 70.9, 54.1 },
+						},
+						["isDaily"] = true,
+						["questID"] = 48609,
+					}),
+					o(275070, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 55.5, 17.2 },
+							{ 55.7, 15.8 },
+							{ 56.1, 18.8 },
+							{ 56.3, 14.7 },
+							{ 56.7, 16.0 },
+							{ 57.3, 14.4 },
+							{ 57.3, 17.6 },
+							{ 58.4, 16.4 },
+							{ 58.5, 14.6 },
+						},
+						["isDaily"] = true,
+						["questID"] = 48617,
+					}),
+					o(275071, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 87.3, 73.8 },
+							{ 87.8, 75.9 },
+							{ 88.0, 79.6 },
+							{ 88.5, 78.5 },
+							{ 88.7, 72.8 },
+							{ 88.9, 79.9 },
+							{ 89.0, 76.3 },
+							{ 89.3, 71.1 },
+							{ 89.9, 78.2 },
+							{ 90.0, 75.2 },
+						},
+						["isDaily"] = true,
+						["questID"] = 48618,
+					}),
+					o(275074, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 66.9, 16.4 },
+							{ 67.1, 21.3 },
+							{ 68.8, 17.5 },
+							{ 68.9, 19.3 },
+							{ 69.6, 14.8 },
+							{ 69.8, 12.7 },
+							{ 70.5, 17.0 },
+							{ 71.5, 18.3 },
+							{ 72.3, 17.0 },
+						},
+						["isDaily"] = true,
+						["questID"] = 48619,
+					}),
+					o(275076, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 44.0, 19.5 },
+							{ 44.5, 21.0 },
+							{ 44.7, 18.2 },
+							{ 45.5, 20.2 },
+							{ 45.5, 22.4 },
+							{ 45.8, 18.6 },
+							{ 46.5, 18.2 },
+							{ 46.5, 23.6 },
+							{ 47.4, 19.6 },
+							{ 47.6, 20.6 },
+							{ 48.5, 18.3 },
+							{ 48.9, 16.7 },
+						},
+						["isDaily"] = true,
+						["questID"] = 48621,
+					}),
+					o(280751, {	-- Small Treasure Chest
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["coords"] = {
+							{ 39.5, 15.8 },
+							{ 39.6, 13.4 },
+							{ 41.0, 12.1 },
+							{ 41.0, 14.2 },
+							{ 41.2, 16.1 },
+							{ 41.5, 13.9 },
+							{ 42.6, 17.1 },
+							{ 43.3, 15.0 },
+							{ 45.1, 15.3 },
+							{ 46.5, 15.1 },
+							{ 49.1, 14.7 },
+						},
+						["isDaily"] = true,
+						["questID"] = 50166,
+					}),
 				}),
 				n(-2,   {	-- Vendors
 					["groups"] = {
