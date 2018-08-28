@@ -308,7 +308,7 @@ _.Zones =
 							["groups"] = {
 								q(47514, {	-- Zuldazar
 									["qg"] = 135775,	-- Scouting Map
-									-- ["sourceQuests"] = { 52131 }, -- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievemnt because they can't pick anything up regardless and less spammy in Quest Chain window
+									-- ["sourceQuests"] = { 52131 }, -- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievement because they can't pick anything up regardless and less spammy in Quest Chain window
 								}),
 								q(49615, {	-- Trust of a King
 									["qg"] = 133050,	-- Princes Talanji
@@ -681,6 +681,14 @@ _.Zones =
 							["qg"] = 138138,	-- Princess Telanji
 							["coord"] = { 43.7, 39.5 },
 							["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
+						}),
+						q(49285, {	-- Tiny Treasures
+							["g"] = {
+								i(156871),	-- Spitzy (TOY!)
+							},
+							["qg"] = 128888,	-- Koba
+							["coord"] = { 70.2, 65.0 },
+							["sourceQuests"] = { 49283 },	-- Who Seeks the Seekers? (Horde) - NEEDS VERIFICATION, per wowhead comment.  Also need to make sure Alliance side has no prereqs.
 						}),
 					},
 				}),

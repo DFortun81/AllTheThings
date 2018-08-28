@@ -346,6 +346,7 @@ _.Toys =
 		i(122674),		-- S.E.L.F.I.E. Camera MkII
 		i(88387), 		-- Shushen's Spittoon
 		i(88381), 		-- Silversage Incense
+		i(156871),		-- Spitzy
 		i(95568),		-- Sunreaver Beacon (Horde)
 		i(52253), 		-- Sylvanas' Music Box
 		i(80822), 		-- The Golden Banana
