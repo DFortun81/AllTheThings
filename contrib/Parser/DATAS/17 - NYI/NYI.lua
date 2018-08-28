@@ -494,6 +494,24 @@ i(49422),
 i(54331),
 i(55047),
 i(21163),
+
+------------------------
+-- CLASS TRIAL UNUSED --
+------------------------
+
+un(1, i(154041)), -- Oathsworn Faceguard
+un(1, i(154048)), -- Oathsworn Shoulderguards
+un(1, i(154038)), -- Oathsworn Cloak of Stoicism
+un(1, i(154037)), -- Oathsworn Chestguard
+un(1, i(154050)), -- Oathsworn Armguards
+un(1, i(154040)), -- Oathsworn Handguards
+un(1, i(154049)), -- Oathsworn Waistband
+un(1, i(154042)), -- Oathsworn Legguards
+un(1, i(154039)), -- Oathsworn Greaves
+un(1, i(154045)), -- Oathsworn Band of Stoicism
+un(1, i(154046)), -- Oathsworn Ring of Stoicism
+un(1, i(154044)), -- Oathsworn Defender Idol
+un(1, i(154047)), -- Oathsworn Defender Stone
 	
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --
