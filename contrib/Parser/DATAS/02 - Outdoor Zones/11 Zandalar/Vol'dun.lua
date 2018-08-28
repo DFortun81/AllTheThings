@@ -8,6 +8,66 @@ _.Zones =
 			["groups"] = {
 				n(-4,   {	-- Achievements
 					["groups"] = {
+						ach(12482, {	-- Get Hek'd
+							["g"] = {
+								{	-- Charged Ranishu Antennae
+									["crs"] = {
+										129464,	-- Ranishu Nibbler
+										129473,	-- Ranishu Nibbler
+										135727,	-- Ranishu Ravager
+										129474,	-- Ranishu Ravager
+									},
+									["coord"] = { 46.94, 46.57 },	-- Trashpile turn-in
+									["itemID"] = 158910,	-- Charged Ranishu Antennae
+									["questID"] = 50883,	-- 50884 for giving Jani the item
+									["criteriaID"] = 3,	-- Charged Ranishu Antennae
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
+								{	-- Polished Ringhorn Hoof
+									["crs"] = {
+										130317,	-- Ringhorn Fawn
+										130321,	-- Ringhorn Stag
+										130316,	-- Ringhorn Strider
+									},
+									["coord"] = { 56.24, 15.26 },	-- Trashpile turn-in
+									["itemID"] = 158915,	-- Polished Ringhorn Hoof
+									["questID"] = 50890,	-- NEEDS CONFIRMATION, TAKEN FROM WOWHEAD
+									["criteriaID"] = 6,	-- Polished Ringhorn Hoof
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
+								{	-- Sturdy Redrock Jaw
+									["crs"] = {	
+										134744,	-- Redrock Howler
+										134718,	-- Redrock Scavenger
+									},
+									["coord"] = { 49.33, 84.35 },	-- Trashpile turn-in
+									["itemID"] = 158916,	-- Sturdy Redrock Jaw
+									["questID"] = 50892,	-- NEEDS CONFIRMATION, TAKEN FROM WOWHEAD
+									["criteriaID"] = 9,	-- Sturdy Redrock Jaw
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
+								{	-- Saurid Surprise
+									["qg"] = 133859,	-- Jani
+									["coord"] = { 42.2, 72.0 },	-- Trashpile pick-up
+									["questID"] = 50901,	-- Saurid Surprise
+									["criteriaID"] = 12,	-- Saurid Surprise
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
+							},
+							["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
+						}),
 						ach(13027, {	-- Mushroom Harvest
 							n(143313, {	-- Portakillo
 								--["questID"] = ,	-- did not trigger a quest completion upon death

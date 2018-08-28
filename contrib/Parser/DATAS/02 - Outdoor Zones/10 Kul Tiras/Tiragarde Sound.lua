@@ -12,7 +12,6 @@ _.Zones =
 							o(279750, {	-- Hay Covered Chest [Localized]
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["questID"]  = 49963,
-								["criteriaID"] = 1,
 							}),
 							o(281397, {	-- Cutwater Treasure Chest [Localized]
 								["groups"] = {
@@ -21,23 +20,19 @@ _.Zones =
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["coord"] = { 72.5, 58.1 },
 								["questID"]  = 50442,
-								["criteriaID"] = 2,
 							}),
 							o(293962, {	-- Precarious Noble Cache [Localized]
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["questID"]  = 52866,
-								["criteriaID"] = 3,
 							}),
 							o(293964, {	-- Forgotten Smuggler's Stash [Localized]
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["coord"] = { 61.7, 62.7 },
 								["questID"]  = 52867,
-								["criteriaID"] = 4,
 							}),
 							o(293965, {	-- Scrimshaw Cache [Localized]
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["questID"] = 52870,
-								["criteriaID"] = 5,
 							}),
 						-- Even though the criteria are named "_____ Treasure Map," they aren't awarded until you open the chest associated with the map.
 						-- It seems the maps ARE required to loot the chests that award the criteria.  I was mistaken before.
@@ -51,7 +46,6 @@ _.Zones =
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["coord"] = { 55.0, 46.1 },
 								["questID"] = 52807,
-							--	["criteriaID"] = 7,	-- listing this causes the criteria name to override the object name
 								["description"] = "This chest can only be opened after looting the Soggy Treasure Map.",
 								["sourceQuests"] = { 52853 },	-- Soggy Treasure Map
 							}),
@@ -63,7 +57,6 @@ _.Zones =
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["coord"] = { 29.3, 25.3 },
 								["questID"] = 52833,
-							--	["criteriaID"] = 8,	-- listing this causes the criteria name to override the object name
 								["description"] = "This chest can only be opened after looting the Fading Treasure Map.",
 								["sourceQuests"] = { 52854 },	-- Fading Treasure Map
 							}),
@@ -75,7 +68,6 @@ _.Zones =
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["coord"] = { 90.5, 75.6 },
 								["questID"] = 52836,
-							--	["criteriaID"] = 9,	-- listing this causes the criteria name to override the object name
 								["description"] = "This chest can only be opened after looting the Yellowed Treasure Map.",
 								["sourceQuests"] = { 52859 },	-- Yellowed Treasure Map
 							}),
@@ -87,7 +79,6 @@ _.Zones =
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["coord"] = { 49.0, 37.6 },
 								["questID"] = 52845,	-- NEEDS CONFIRMATION, THIS # TAKEN FROM WOWHEAD
-							--	["criteriaID"] = 10,	-- listing this causes the criteria name to override the object name
 								["description"] = "This chest can only be opened after looting the Singed Treasure Map.",
 								["sourceQuests"] = { 52860 },	-- Singed Treasure Map
 							}),

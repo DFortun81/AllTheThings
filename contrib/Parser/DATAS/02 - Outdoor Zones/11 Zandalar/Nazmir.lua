@@ -8,6 +8,90 @@ _.Zones =
 			["groups"] = {
 				n(-4, {	-- Achievements
 					["groups"] = {
+						ach(12482, {	-- Get Hek'd
+							["g"] = {
+								{	-- Golden Ravasaur Egg
+									["crs"] = {
+										131560,	-- Feral Ravasaur
+										122504,	-- Savagemane Ravasaur
+									},
+									["coord"] = { 71.69, 41.28 },	-- Trashpile turn-in
+									["itemID"] = 156963,	-- Golden Ravasaur Egg
+									["questID"] = 50308,	-- NEEDS CONFIRMATION, TAKEN FROM WOWHEAD
+									["criteriaID"] = 1,	-- Golden Ravasaur Egg
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
+								{	-- Vilescale Pearl
+									["crs"] = {
+										125328,	-- Priestess Zaldraxia
+										125393,	-- Vilescale Guardian
+										125392,	-- Vilescale Mana Taster
+										125366,	-- Vilescale Poacher
+									},
+									["coord"] = { 80.95, 46.82 },	-- Trashpile turn-in
+									["itemID"] = 157797,	-- Vilescale Pearl
+									["questID"] = 50435,	-- NEEDS CONFIRMATION, TAKEN FROM WOWHEAD
+									["criteriaID"] = 2,	-- Vilescale Pearl
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
+								{	-- Big Hunter Mon
+									["qg"] = 113490,	-- Jani
+									["coord"] = { 66.2, 16.6 },	-- Trashpile pick-up
+									["questID"] = 50332,	-- Big Hunter Mon
+									["criteriaID"] = 4,	-- Big Hunter Mon
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
+								{	-- Snapjaw Tail
+									["crs"] = {
+										126723,	-- Primal Snapjaw
+										120588,	-- Rivermarsh Snapjaw
+									},
+									["coord"] = { 34.00, 75.07 },	-- Trashpile turn-in
+									["itemID"] = 157801,	-- Snapjaw Tail
+									["questID"] = 50437,	-- NEEDS CONFIRMATION, TAKEN FROM WOWHEAD
+									["criteriaID"] = 5,	-- Snapjaw Tail
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
+								{	-- Nazwathan Relic
+									["crs"] = {
+										131157,	-- Nazwathan Blood Bender
+										131155,	-- Nazwathan Guardian
+										131156,	-- Nazwathan Hulk
+									},
+									["coord"] = { 68.58, 32.78 },	-- Trashpile turn-in
+									["itemID"] = 157802,	-- Nazwathan Relic
+									["questID"] = 50441,	-- NEEDS CONFIRMATION, TAKEN FROM WOWHEAD
+									["criteriaID"] = 8,	-- Nazwathan Relic
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
+								{	-- Taking the Loa Road
+									["qg"] = 136608,	-- Jani
+									["coord"] = { 54.0, 74.2 },	-- Trashpile pick-up
+									["questID"] = 50444,	-- Taking the Loa Road
+									["criteriaID"] = 11,	-- Taking the Loa Road
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
+							},
+							["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
+						}),
 						ach(13027, {	-- Mushroom Harvest
 							n(143316, {	-- Skullcap
 								--["questID"] = ,

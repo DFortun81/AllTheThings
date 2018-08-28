@@ -8,6 +8,35 @@ _.Zones =
 			["groups"] = {
 				n(-4,   {	-- Achievements
 					["groups"] = {
+						ach(12482, {	-- Get Hek'd
+							["g"] = {
+								{	-- The Great Hat Robbery
+									["qg"] = 133612,	-- Jani
+									["coord"] = { 61.8, 46.8 },	-- Trashpile pick-up
+									["questID"] = 50381,	-- The Great Hat Robbery
+									["criteriaID"] = 7,	-- The Great Hat Robbery
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
+								{	-- Feathered Viper Scale
+									["crs"] = {
+										132410,	-- Feathered Viper
+										132409,	-- Feathered Viper
+									},
+									["coord"] = { 62.73, 20.58 },	-- Trashpile turn-in
+									["itemID"] = 157794,	-- Feathered Viper Scale
+									["questID"] = 50431,	-- 50430 for giving Jani the item
+									["criteriaID"] = 10,	-- Feathered Viper Scale
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
+							},
+							["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
+						}),
 						ach(13027, {	-- Mushroom Harvest
 							n(143314, {	-- Bane of the Woods
 								-- ["questID"] = ,	-- didn't trigger quest completion when killed
