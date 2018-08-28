@@ -10,8 +10,9 @@ _.Zones =
 					["groups"] = {
 						ach(12852, {	-- Treasures of Tiragarde Sound
 							o(279750, {	-- Hay Covered Chest [Localized]
-								["questID"]  = 49963,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["questID"]  = 49963,
+								["criteriaID"] = 1,
 							}),
 							o(281397, {	-- Cutwater Treasure Chest [Localized]
 								["groups"] = {
@@ -20,50 +21,75 @@ _.Zones =
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["coord"] = { 72.5, 58.1 },
 								["questID"]  = 50442,
+								["criteriaID"] = 2,
 							}),
 							o(293962, {	-- Precarious Noble Cache [Localized]
-								["questID"]  = 52866,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["questID"]  = 52866,
+								["criteriaID"] = 3,
 							}),
 							o(293964, {	-- Forgotten Smuggler's Stash [Localized]
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["coord"] = { 61.7, 62.7 },
 								["questID"]  = 52867,
+								["criteriaID"] = 4,
 							}),
 							o(293965, {	-- Scrimshaw Cache [Localized]
-								["questID"] = 52870,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["questID"] = 52870,
+								["criteriaID"] = 5,
 							}),
 						-- Even though the criteria are named "_____ Treasure Map," they aren't awarded until you open the chest associated with the map.
-						-- It doesn't appear that you need to pick up the map to loot the chest.
-						-- I went straight to the chest for the Soggy Treasure Map without having looted it (to my knowledge).  Needs verification though.
-							i(162571, {	-- Soggy Treasure Map
-								["questID"] = 52807,	-- Looting the map itself possibly completes quest ID 52853?
+						-- It seems the maps ARE required to loot the chests that award the criteria.  I was mistaken before.
+						-- The maps all appear to be zone drops.  I kept them in this section because I felt like it was more obvious that they're required for the achievement this way.
+						-- Feel free to reorganize if you disagree/can think of a better organizational method to link the MAP+QUEST with the CHEST+QUEST for each criteria.
+							{			-- Soggy Treasure Map
+								["itemID"] = 162571,	-- Soggy Treasure Map
+								["questID"] = 52853,	-- Rewarded for looting the map
+							},
+							o(293852, {	-- Buried Treasure Chest (Soggy)
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								-- The actual criteria is awarded by:
-									-- opening object 293852 "Buried Treasure Chest"
-									-- at 55.0, 46.1
+								["coord"] = { 55.0, 46.1 },
+								["questID"] = 52807,
+							--	["criteriaID"] = 7,	-- listing this causes the criteria name to override the object name
+								["description"] = "This chest can only be opened after looting the Soggy Treasure Map.",
+								["sourceQuests"] = { 52853 },	-- Soggy Treasure Map
 							}),
-							i(162580, {	-- Fading Treasure Map
+							{			-- Fading Treasure Map
+								["itemID"] = 162580,	-- Fading Treasure Map
+								["questID"] = 52854,	-- Rewarded for looting the map
+							},
+							o(293880, {	-- Buried Treasure Chest (Fading)
+								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["coord"] = { 29.3, 25.3 },
 								["questID"] = 52833,
-								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								-- The actual criteria is awarded by:
-									-- opening object 293880 "Buried Treasure Chest"
-									-- at 29.3, 25.3
+							--	["criteriaID"] = 8,	-- listing this causes the criteria name to override the object name
+								["description"] = "This chest can only be opened after looting the Fading Treasure Map.",
+								["sourceQuests"] = { 52854 },	-- Fading Treasure Map
 							}),
-							i(162581, {	-- Yellowed Treasure Map
+							{			-- Yellowed Treasure Map
+								["itemID"] = 162581,	-- Yellowed Treasure Map
+								["questID"] = 52859,	-- Rewarded for looting the map
+							},
+							o(293881, {	-- Buried Treasure Chest (Yellowed)
+								["icon"] = "Interface\\Icons\\garrison_bronzechest",
+								["coord"] = { 90.5, 75.6 },
 								["questID"] = 52836,
-								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								-- The actual criteria is awarded by:
-									-- opening object 293881 "Buried Treasure Chest"
-									-- at 90.5, 75.6
+							--	["criteriaID"] = 9,	-- listing this causes the criteria name to override the object name
+								["description"] = "This chest can only be opened after looting the Yellowed Treasure Map.",
+								["sourceQuests"] = { 52859 },	-- Yellowed Treasure Map
 							}),
-							i(162584, {	-- Singed Treasure Map
-								["questID"] = 52860,
+							{			-- Singed Treasure Map
+								["itemID"] = 162584,	-- Singed Treasure Map
+								["questID"] = 52860,	-- Rewarded for looting the map
+							},
+							o(293884, {	-- Buried Treasure Chest (Singed)
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
-								-- Could not test because I already did it, but presume this is awarded by:
-									-- opening object 293884 "Buried Treasure Chest"
-									-- at 49.0, 37.6
+								["coord"] = { 49.0, 37.6 },
+								["questID"] = 52845,	-- NEEDS CONFIRMATION, THIS # TAKEN FROM WOWHEAD
+							--	["criteriaID"] = 10,	-- listing this causes the criteria name to override the object name
+								["description"] = "This chest can only be opened after looting the Singed Treasure Map.",
+								["sourceQuests"] = { 52860 },	-- Singed Treasure Map
 							}),
 						}),
 					},
@@ -626,16 +652,6 @@ _.Zones =
 								i(163862),	-- Bartered Vrykul Hood
 								i(163865),	-- Bartered Vrykul Warhelm
 							}),
-						}),
-						
-						q(52859, {	-- Yellowed Treasure Map [Item ID 162581] Eligibility? (Not Named - Hidden)
-							["description"] = "This triggered when I picked up the Yellowed Treasure Map [Item ID 162581]",
-						}),
-						q(52860, {	-- Singed Treasure Map [Item ID 162584] Eligibility? (Not Named - Hidden)
-							["description"] = "This triggered when I picked up the Singed Treasure Map [Item ID 162584]",
-						}),
-						q(52854, {	-- Fading Treasure Map [Item ID 162580] Eligibility? (Not Named - Hidden)
-							["description"] = "This triggered when I picked up the Fading Treasure Map [Item ID 162580]",
 						}),
 						
 						--
