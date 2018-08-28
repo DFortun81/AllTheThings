@@ -77,6 +77,7 @@ _.Zones =
 									["description"] = "This cache comes from any WQ and any emissary, but will be found in ATT under Zandalari Empire / Proudmore Admiralty.  Honorbound and 7th Legion pieces come strictly from their respect faction's emissaries",
 								}),
 								i(163355),	-- 7th Legionnaire's Bloody Drape
+								i(163351),	-- 7th Legionnaire's Chain Drape
 								i(163347),	-- 7th Legionnaire's Long Cloak
 								i(163246),	-- 7th Legionnaire's Silk Cloak
 								i(163339), -- 7th Legionnaire's Hood
