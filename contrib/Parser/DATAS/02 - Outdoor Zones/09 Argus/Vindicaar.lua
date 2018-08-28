@@ -647,8 +647,6 @@ _.Zones =
 				}),
 				n(-17, { -- Quests
 					q(48075, { -- A Colorful Key
-						["groups"] = {
-						},
 						["requireSkill"] = 755, -- Jewelcrafting
 						["sourceQuests"] = { 46941 }, -- The Path Forward
 					}),
@@ -682,8 +680,6 @@ _.Zones =
 						["qg"] = 129674, -- Maras
 					}),
 					q(48069, { -- The Wrench Calls
-						["groups"] = {
-						},
 						["requireSkill"] = 202, -- Engineering
 						["sourceQuests"] = { 46941 }, -- The Path Forward
 					}),
@@ -756,8 +752,6 @@ _.Zones =
 						i(153039), -- Crystalline Campfire Toy				
 						i(153290), -- Krokul Mining Pick
 						i(152964, { -- Krokul Flute
-							["groups"] = {
-							},
 							["collectible"] = false,
 							["f"] = 55, -- Consumables
 						}),

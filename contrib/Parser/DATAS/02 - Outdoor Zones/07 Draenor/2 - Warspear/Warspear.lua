@@ -7,8 +7,6 @@ _.Zones =
 		m(624, {	-- Warspear
 			["groups"] = {
 				follower(467, { -- Fen Tao
-					["groups"] = {
-					},
 					["creatureID"] = 91483, -- Fen Tao
 					["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
 				}),
@@ -19,20 +17,14 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					q(36707, { -- Warspear Welcome
-						["groups"] = {
-						},
 						["qg"] = 86315, -- Stomphoof
 						["sourceQuests"] = { 36706 }, -- Ashran Appearance
 					}),
 					q(36708, { -- Inspiring Ashran
-						["groups"] = {
-						},
 						["qg"] = 86312, -- Lieutenant Kragil
 						["sourceQuests"] = { 36707 }, -- Warspear Welcome
 					}),
 					q(36709, { -- Burning Beauty
-						["groups"] = {
-						},
 						["qg"] = 86312, -- Lieutenant Kragil
 						["sourceQuests"] = { 36708 }, -- Inspiring Ashran
 					}),
@@ -1388,28 +1380,18 @@ _.Zones =
 					n(88253, {  -- Srikka
 						["groups"] = {
 							i(118727, { -- Frostfire Treasure Map
-								["groups"] = {
-								},
 								["questID"] = 34557,
 							}),
 							i(118729, { -- Gorgrond Treasure Map
-								["groups"] = {
-								},
 								["questID"] = 36465,
 							}),
 							i(118732, { -- Nagrand Treasure Map
-								["groups"] = {
-								},
 								["questID"] = 36468,
 							}),
 							i(118731, { -- Spires of Arak Treasure Map
-								["groups"] = {
-								},
 								["questID"] = 36467,
 							}),
 							i(118730, { -- Talador Treasure Map
-								["groups"] = {
-								},
 								["questID"] = 36466,
 							}),
 						},

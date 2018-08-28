@@ -5,167 +5,115 @@ _.Zones =
 {
 	m(948, { 	-- The Maelstrom
 		m(174, { 	-- The Lost Isles
-			["groups"] = {		
+			["groups"] = {
 				n(-17, { -- Quests
 					["groups"] = {
-						qh(14239, { -- Don't Go Into the Light!
-							["groups"] = {
-							},
+						q(14239, { -- Don't Go Into the Light!
 							["description"] = "You must have finished Kezan before starting this chain.",
 							["qg"] = 36608, -- Doc Zapnozzle
 							-- ["sourceQuests"] = { 14126 }, -- Life Savings   NOTE: CRIEVE SAID TO UNLINK FROM KEZAN SINCE YOU HAVE NO CHOICE BUT TO GO TO LOST ISLES FROM KEZAN.
 						}),
-						qh(14001, { -- Goblin Escape Pods
-							["groups"] = {
-							},
+						q(14001, { -- Goblin Escape Pods
 							["qg"] = 36600, -- Geargrinder Gizmo
 							["sourceQuests"] = { 14239 }, -- Don't Go Into the Light!
 						}),
-						qh(14014, { -- Get Our Stuff Back!
-							["groups"] = {
-							},
+						q(14014, { -- Get Our Stuff Back!
 							["qg"] = 35650, -- Sassy Hardwrench
 							["sourceQuests"] = { 14001 }, -- Goblin Escape Pods
 						}),
-						qh(14473, { -- It's Our Problem Now
-							["groups"] = {
-							},
+						q(14473, { -- It's Our Problem Now
 							["qg"] = 35786, -- Maxx Avalanche
 							["sourceQuests"] = { 14001 }, -- Goblin Escape Pods
 						}),
-						qh(14019, { -- Monkey Business
-							["groups"] = {
-							},
+						q(14019, { -- Monkey Business
 							["qg"] = 35758, -- Bamm Megabomb
 							["sourceQuests"] = { 14001 }, -- Goblin Escape Pods
 						}),
-						qh(14248, { -- Help Wanted
-							["groups"] = {
-							},
+						q(14248, { -- Help Wanted
 							["qg"] = 35650, -- Sassy Hardwrench
 							["sourceQuests"] = { 14014, 14473, 14019 }, -- Get Our Stuff Back! / It's Our Problem Now / Monkey Business
 						}),
-						qh(14021, {  -- Miner Troubles
-							["groups"] = {
-							},
+						q(14021, {  -- Miner Troubles
 							["qg"] = 35769, -- Foreman Dampwick
 							["sourceQuests"] = { 14248 }, -- Help Wanted
 						}),
-						qh(14031, { -- Capturing the Unknown
-							["groups"] = {
-							},
+						q(14031, { -- Capturing the Unknown
 							["qg"] = 35769, -- Foreman Dampwick
 							["sourceQuests"] = { 14248 }, -- Help Wanted
 						}),
-						qh(14233, { -- Orcs Can Write?
-							["groups"] = {
-							},
+						q(14233, { -- Orcs Can Write?
 							["qg"] = 35837, -- Dead Orc Scout
 							["sourceQuests"] = { 14248 }, -- Help Wanted
 						}),
-						qh(14234, { -- The Enemy of My Enemy
-							["groups"] = {
-							},
+						q(14234, { -- The Enemy of My Enemy
 							["qg"] = 35650, -- Sassy Hardwrench
 							["sourceQuests"] = { 14021, 14031, 14233 }, -- Miner Troubles / Capturing the Unknown / The Enemy of My Enemy
 						}),
-						qh(14235, { -- The Vicious Vale
-							["groups"] = {
-							},
+						q(14235, { -- The Vicious Vale
 							["qg"] = 35875, -- Aggra
 							["sourceQuests"] = { 14234 }, -- The Enemy of My Enemy
 						}),
-						qh(14236, { -- Weed Whacker
-							["groups"] = {
-							},
+						q(14236, { -- Weed Whacker
 							["qg"] = 35893, -- Kilag Gorefang
 							["sourceQuests"] = { 14235 }, -- The Vicious Vale
 						}),
-						qh(14303, { -- Back to Aggra
-							["groups"] = {
-							},
+						q(14303, { -- Back to Aggra
 							["qg"] = 35893, -- Kilag Gorefang
 							["sourceQuests"] = { 14236 }, -- Weed Whacker
 						}),
-						qh(14237, { -- Forward Movement
-							["groups"] = {
-							},
+						q(14237, { -- Forward Movement
 							["qg"] = 35875, -- Aggra
 							["sourceQuests"] = { 14303 }, -- Back to Aggra
 						}),
-						qh(14238, { -- Infrared = Infradead
-							["groups"] = {
-							},
+						q(14238, { -- Infrared = Infradead
 							["qg"] = 35917, -- Kilag Gorefang
 							["sourceQuests"] = { 14237 }, -- Forward Movement
 						}),
-						qh(14240, { -- To the Cliffs
-							["groups"] = {
-							},
+						q(14240, { -- To the Cliffs
 							["qg"] = 35917, -- Kilag Gorefang
 							["sourceQuests"] = { 14238 }, -- Infrared = Infradead
 						}),
-						qh(14241, { -- Get to the Gyrochoppa
-							["groups"] = {
-							},
+						q(14241, { -- Get to the Gyrochoppa
 							["qg"] = 36112, -- Scout Brax
 							["sourceQuests"] = { 14240 }, -- Get to the Gyrochoppa
 						}),
-						qh(14242, { -- Precious Cargo
-							["groups"] = {
-							},
+						q(14242, { -- Precious Cargo
 							["qg"] = 36127, -- Gyrochoppa
 							["sourceQuests"] = { 14241 },  -- Get to the Gyrochoppa
 						}),
-						qh(14326, { -- Meet Me Up Top
-							["groups"] = {
-							},
+						q(14326, { -- Meet Me Up Top
 							["qg"] = 36145, -- Thrall
 							["sourceQuests"] = { 14242 }, -- Precious Cargo
 						}),
-						qh(14243, { -- Warchief's Revenge
-							["groups"] = {
-							},
+						q(14243, { -- Warchief's Revenge
 							["qg"] = 36161, -- Thrall
 							["sourceQuests"] = { 14326 }, -- Meet Me Up Top
 						}),
-						qh(14445, { -- Farewell, For Now
-							["groups"] = {
-							},
+						q(14445, { -- Farewell, For Now
 							["qg"] = 36188, -- Thrall
 							["sourceQuests"] = { 14243 }, -- Warchief's Revenge
 						}),
-						qh(14244, { -- Up, Up & Away!
-							["groups"] = {
-							},
+						q(14244, { -- Up, Up & Away!
 							["qg"] = 36425, -- Sassy Hardwrench
 							["sourceQuests"] = { 14445 }, -- Farewell, For Now
 						}),
-						qh(14245, { -- It's a Town-In-A-Box
-							["groups"] = {
-							},
+						q(14245, { -- It's a Town-In-A-Box
 							["qg"] = 36470, -- Foreman Dampwick
 							["sourceQuests"] = { 14244 }, -- Up, Up, & Away!
 						}),
-						qh(27139, { -- Hobart Needs You
-							["groups"] = {
-							},
+						q(27139, { -- Hobart Needs You
 							["qg"] = 36471, -- Foreman Dampwick
 							["sourceQuests"] = { 14245 }, -- It's a Town-In-A-Box
 						}),
-						qh(24671, { -- Cluster Cluck
-							["groups"] = {
-							},
+						q(24671, { -- Cluster Cluck
 							["qg"] = 38120, -- Hobart Grapplehammer
 							["sourceQuests"] = { 27139 }, -- Hobart Needs You
 						}),
-						qh(24741, { -- Trading Up
-							["groups"] = {
-							},
+						q(24741, { -- Trading Up
 							["qg"] = 38122, -- Bamm Megabomb
 							["sourceQuests"] = { 24671 }, -- Cluster Cluck
 						}),
-						qh(24744, { -- The Biggest Egg Ever	
+						q(24744, { -- The Biggest Egg Ever
 							["groups"] = {
 								i(52933), -- Mechachicken Feather Cloak
 								i(52951), -- Chicken Chopper
@@ -174,14 +122,12 @@ _.Zones =
 							},
 							["qg"] = 38120, -- Hobart Grapplehammer
 							["sourceQuests"] = { 24741 }, --Trading Up
-						}),	
-						qh(24816, { -- Who's Top of the Food Chain Now?	
-							["groups"] = {
-							},
+						}),
+						q(24816, { -- Who's Top of the Food Chain Now?
 							["qg"] = 38120, -- Hobart Grapplehammer
 							["sourceQuests"] = { 24744 }, -- The Biggest Egg Ever
-						}),	
-						qh(24817, { -- A Goblin in Shark's Clothing
+						}),
+						q(24817, { -- A Goblin in Shark's Clothing
 							["groups"] = {
 								i(52952), -- The Hammer
 								i(52906), -- Leftover Mechachicken Legs
@@ -189,33 +135,27 @@ _.Zones =
 							["qg"] = 38124, -- Assistant Greely
 							["sourceQuests"] = { 24816 }, -- Who's Top of the Food Chain Now?
 						}),
-						qh(24856, { -- Invasion Imminent!	
-							["groups"] = {
-							},
+						q(24856, { -- Invasion Imminent!
 							["qg"] = 38120, -- Hobart Grapplehammer
 							["sourceQuests"] = { 24817 }, -- A Goblin in Shark's Clothing
-						}),	
-						qh(24858, { -- Bilgewater Cartel Represent	
+						}),
+						q(24858, { -- Bilgewater Cartel Represent
 							["groups"] = {
 								i(52953), -- Banner Cloak
 								i(52907), -- Snake Plate Belt
 							},
 							["qg"] = 38432, -- Megs Dreadshredder
 							["sourceQuests"] = { 24856 }, --Invasion Imminent!
-						}),	
-						qh(24859, { -- Naga Hide	
-							["groups"] = {
-							},
+						}),
+						q(24859, { -- Naga Hide
 							["qg"] = 38381, -- Brett "Coins" McQuid
 							["sourceQuests"] = { 24856 }, --Invasion Imminent!
-						}),	
-						qh(24864, { -- Irresistable Pool Pony	
-							["groups"] = {	
-							},
+						}),
+						q(24864, { -- Irresistable Pool Pony
 							["qg"] = 38432, -- Megs Dreadshredder
 							["sourceQuests"] = { 24858, 24859 }, --Bilgewater Cartel Represent / Naga Hide
-						}),	
-						qh(24868, { -- Surrender or Else!	
+						}),
+						q(24868, { -- Surrender or Else!
 							["groups"] = {
 								i(52954), -- Hatchling Prodder
 								i(52908), -- Hathcling Handlers
@@ -223,13 +163,11 @@ _.Zones =
 							},
 							["qg"] = 38432, -- Megs Dreadshredder
 							["sourceQuests"] = { 24864 }, --Irresistable Pool Pony
-						}),	
-						qh(24897, { -- Get Back to Town	
-							["groups"] = {
-							},
+						}),
+						q(24897, { -- Get Back to Town
 							["qg"] = 38432, -- Megs Dreadshredder
 							["sourceQuests"] = { 24868 }, --Surrender or Else!
-						}),	
+						}),
 						q(24901, { -- Town-In-A-Box: Under Attack
 							["groups"] = {
 								i(52955), -- Town-In-A-Box Lid Fragment
@@ -239,111 +177,91 @@ _.Zones =
 							["sourceQuests"] = { 24897 }, -- Get Back to Town
 						}),
 						q(24924, { -- Oomlot Village
-							["groups"] = {
-							},
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 24901 }, -- Town-In-A-Box: Under Attack
 						}),
-						qh(24925, { -- Free the Captives		
-							["groups"] = {	
-							},	
-							["qg"] = 38647, -- Izzy	
+						q(24925, { -- Free the Captives
+							["qg"] = 38647, -- Izzy
 							["sourceQuests"] = { 24924 }, -- Oomlot Village
-						}),		
-						qh(24929, { -- Send a Message		
+						}),
+						q(24929, { -- Send a Message
 							["groups"] = {
 								i(52956), -- Oomlot Staff
 								i(52934), -- Pygmy Cloak
 								i(52910), -- Yngwie's Vest
 								i(131831), -- Yngwie's Tunic
-							},	
-							["qg"] = 38647, -- Izzy	
-							["sourceQuests"] = { 24925 }, -- Free the Captives	
-						}),		
-						qh(24937, { -- Oomlot Dealt With		
-							["groups"] = {	
-							},	
-							["qg"] = 38647, -- Izzy	
-							["sourceQuests"] = { 24929 }, -- Send a Message	
-						}),		
-						qh(24940, { -- Up the Volcano		
-							["groups"] = {	
-							},	
-							["qg"] = 38387, -- Sassy Hardwrench	
-							["sourceQuests"] = { 24937 }, -- Oomlot Dealt With	
-						}),		
-						qh(24942, { -- Zombies vs Super Booster Rocket Boots		
-							["groups"] = {	
+							},
+							["qg"] = 38647, -- Izzy
+							["sourceQuests"] = { 24925 }, -- Free the Captives
+						}),
+						q(24937, { -- Oomlot Dealt With
+							["qg"] = 38647, -- Izzy
+							["sourceQuests"] = { 24929 }, -- Send a Message
+						}),
+						q(24940, { -- Up the Volcano
+							["qg"] = 38387, -- Sassy Hardwrench
+							["sourceQuests"] = { 24937 }, -- Oomlot Dealt With
+						}),
+						q(24942, { -- Zombies vs Super Booster Rocket Boots
+							["groups"] = {
 								i(52912), -- S.B.R.B. Prototype 1
 								i(52958), -- S.B.R.B. Prototype 2
 								i(131842), -- S.B.R.B. Prototype 3
 								i(52936), -- S.B.R.B. Prototype 4
-							},	
-							["qg"] = 38738, -- Coach Crosscheck	
-							["sourceQuests"] = { 24940 }, -- Up the Volcano	
-						}),		
-						qh(24945, { -- Three Little Pygmies		
+							},
+							["qg"] = 38738, -- Coach Crosscheck
+							["sourceQuests"] = { 24940 }, -- Up the Volcano
+						}),
+						q(24945, { -- Three Little Pygmies
 							["groups"] = {	
 								i(52913), -- Witchdoctor Leggings
 								i(131832), -- Witchdoctor Legwraps
 								i(52959), -- Oystein Bracers
-							},	
-							["qg"] = 36471, -- Foreman Dampwick	
-							["sourceQuests"] = { 24940 }, -- Up the Volcano	
-						}),		
-						qh(24946, { -- Rockin' Powder		
-							["groups"] = {	
-							},	
-							["qg"] = 38124, -- Assistant Greely	
-							["sourceQuests"] = { 24940 }, -- Up the Volcano	
-						}),		
-						qh(24952, { -- Rocket Boot Boost		
-							["groups"] = {	
-							},	
-							["qg"] = 38738, -- Coach Crosscheck	
+							},
+							["qg"] = 36471, -- Foreman Dampwick
+							["sourceQuests"] = { 24940 }, -- Up the Volcano
+						}),
+						q(24946, { -- Rockin' Powder
+							["qg"] = 38124, -- Assistant Greely
+							["sourceQuests"] = { 24940 }, -- Up the Volcano
+						}),
+						q(24952, { -- Rocket Boot Boost
+							["qg"] = 38738, -- Coach Crosscheck
 							["sourceQuests"] = { 24942, 24945, 24946 }, -- Zombies vs Super Booster Rocket Boots / Three Little Pygmies / Rockin' Powder	
-						}),		
-						qh(24954, { -- Children of a Turtle God		
-							["groups"] = {	
-							},	
-							["qg"] = 38120, -- Hobart Grapplehammer	
-							["sourceQuests"] = { 24952 }, -- Rocket Boot Boost	
-						}),		
-						qh(24958, { -- Volcanoth!		
+						}),
+						q(24954, { -- Children of a Turtle God
+							["qg"] = 38120, -- Hobart Grapplehammer
+							["sourceQuests"] = { 24952 }, -- Rocket Boot Boost
+						}),
+						q(24958, { -- Volcanoth!
 							["groups"] = {
 								i(52914), -- Rescue Ladder Cord
 								i(131833), -- Rescue Ladder Waistband
-							},	
-							["qg"] = 38120, -- Hobart  Grapplehammer	
-							["sourceQuests"] = { 24954 }, -- Children of a Turtle God	
-						}),		
-						qh(25023, { -- Old Friends		
-							["groups"] = {	
-							},	
-							["qg"] = 38928, -- Sassy Hardwrench	
-							["sourceQuests"] = { 24958 }, -- Volcanoth!	
-						}),		
-						qh(25024, { -- Repel the  Paratroopers	
-							["groups"] = {
 							},
+							["qg"] = 38120, -- Hobart  Grapplehammer
+							["sourceQuests"] = { 24954 }, -- Children of a Turtle God
+						}),
+						q(25023, { -- Old Friends
+							["qg"] = 38928, -- Sassy Hardwrench
+							["sourceQuests"] = { 24958 }, -- Volcanoth!
+						}),
+						q(25024, { -- Repel the Paratroopers
 							["qg"] = 38935, -- Thrall
 							["sourceQuests"] = { 25023 }, -- Old Friends
-						}),	
-						qh(25093, { -- The Heads of the SI:7	
+						}),
+						q(25093, { -- The Heads of the SI:7
 							["groups"] = {
 								i(52960), -- Silver Platter
 								i(52915), -- Aggra's Sash
 							},
 							["qg"] = 39065, -- Aggra
 							["sourceQuests"] = { 25024 }, -- Old Friends
-						}),	
-						qh(25058, { -- Mine Disposal, the Goblin Way	
-							["groups"] = {
-							},
+						}),
+						q(25058, { -- Mine Disposal, the Goblin Way
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25024 }, -- Old Friends
-						}),	
-						qh(25066, { -- The Pride of Kezan	
+						}),
+						q(25066, { -- The Pride of Kezan
 							["groups"] = {
 								i(52961), -- Gnomish Parachute Scrap
 								i(52916), -- Gunner's Gloves
@@ -351,46 +269,36 @@ _.Zones =
 							},
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25024, 25093, 25058 }, -- Repel the Paratroopers / The Heads of SI:7 / Mine Disposal, the Goblin Way
-						}),	
-						qh(25098, { -- The Warchief Wants You	
-							["groups"] = {
-							},
+						}),
+						q(25098, { -- The Warchief Wants You
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25066 }, -- The Pride of Kezan
-						}),	
-						qh(25099, { -- Borrow Bastia	
-							["groups"] = {
-							},
+						}),
+						q(25099, { -- Borrow Bastia
 							["qg"] = 38935, -- Thrall
 							["sourceQuests"] = { 25098 }, -- The Warchief Wants You
-						}),	
-						qh(25100, { -- Let's Ride	
-							["groups"] = {
-							},
+						}),
+						q(25100, { -- Let's Ride
 							["qg"] = 39066, -- Kilag Gorefang
 							["sourceQuests"] = { 25099 }, -- Borrow Bastia
-						}),	
-						qh(25109, { -- The Gallywix Labor Mine	
+						}),
+						q(25109, { -- The Gallywix Labor Mine	
 							["groups"] = {
 								i(52962), -- Greely's Spare Dagger
 								i(52917), -- Gallywix Laborer's Gloves
 							},
 							["qg"] = 38517, -- Slinky Sharpshiv
 							["sourceQuests"] = { 25100 }, -- Let's Ride
-						}),	
-						qh(25110, { -- Kaja'Cola Gives you IDEAS!™	
-							["groups"] = {
-							},
+						}),
+						q(25110, { -- Kaja'Cola Gives you IDEAS!™
 							["qg"] = 38124, -- Assistant Greely
 							["sourceQuests"] = { 25109 }, -- The Gallywix Labor Mine
-						}),	
-						qh(25122, { -- Morale Boost	
-							["groups"] = {
-							},
+						}),
+						q(25122, { -- Morale Boost
 							["qg"] = 39199, -- Assistant Greely
 							["sourceQuests"] = { 25110 }, -- Kaja'Cola Gives you IDEAS!™
-						}),	
-						qh(25123, { -- Throw It On the Ground!	
+						}),
+						q(25123, { -- Throw It On the Ground!	
 							["groups"] = {
 								i(52918), -- Delicia's Tights
 								i(52963), -- Soulstone Breaker Wristbands
@@ -398,56 +306,46 @@ _.Zones =
 							},
 							["qg"] = 39199, -- Assistant Greely
 							["sourceQuests"] = { 25110 }, -- Kaja'Cola Gives you IDEAS!™
-						}),	
+						}),
 						--[[ NEVER IMPLEMENTED
-						qh(25124, { -- Brute Brutality	
-							["groups"] = {
-							},
+						q(25124, { -- Brute Brutality
 							["qg"] = 39199, -- Assistant Greely
 							["sourceQuests"] = { 25110 }, -- Kaja'Cola Gives you IDEAS!™
 						}),	
 						--]]
-						qh(25125, { -- Light at the End of the Tunnel	
-							["groups"] = {
-							},
+						q(25125, { -- Light at the End of the Tunnel
 							["qg"] = 39199, -- Assistant Greely
 							["sourceQuests"] = { 25122, 25123 }, -- Morale Boost / Throw It On the Ground!
-						}),	
-						qh(25184, { -- Wild Mine Cart Ride	
+						}),
+						q(25184, { -- Wild Mine Cart Ride
 							["groups"] = {
 								i(52919), -- Oxidizing Axe
 								i(52964), -- Heeat-Applied Metalalic Cooking Container
 							},
 							["qg"] = 39341, -- Mine Cart
 							["sourceQuests"] = { 25125 }, -- Light at the End of the Tunnel
-						}),	
-						qh(25200, { -- Shredder Shutdown	
-							["groups"] = {
-							},
+						}),
+						q(25200, { -- Shredder Shutdown
 							["qg"] = 38124, -- Assistant Greely
 							["sourceQuests"] = { 25184 }, -- Wild Mine Cart Ride
-						}),	
-						qh(25201, { -- The Ultimate Footbomb Uniform	
-							["groups"] = {
-							},
+						}),
+						q(25201, { -- The Ultimate Footbomb Uniform
 							["qg"] = 38738, -- Coach Crosscheck
 							["sourceQuests"] = { 25184 }, -- Wild Mine Cart Ride
-						}),	
-						qh(25204, { -- Release the Valves	
-							["groups"] = {
-							},
+						}),
+						q(25204, { -- Release the Valves
 							["qg"] = 38124, -- Assistant Greely
 							["sourceQuests"] = { 25200, 25201 }, -- Shredder Shutdown / The Ultimate Footbomb Uniform
-						}),	
-						qh(25207, { -- Good-bye, Sweet Oil	
+						}),
+						q(25207, { -- Good-bye, Sweet Oil
 							["groups"] = {
 								i(52922), -- Demolitionist's Boots
 								i(131836), -- Demolitionist's Footguards
 								i(52967), -- Oil-Stained Leggings
 							},
 							["sourceQuests"] = { 25200, 25201 }, -- Shredder Shutdown / The Ultimate Footbomb Uniform
-						}),	
-						qh(25203, { -- What Kind of Name is Chip, Anyway? [Male Version]	
+						}),
+						q(25203, { -- What Kind of Name is Chip, Anyway? [Male Version]
 							["groups"] = {
 								i(131844), -- Fickle Cord
 								i(52921), -- Ex-Stealer's Gloves
@@ -456,8 +354,8 @@ _.Zones =
 							},
 							["qg"] = 38441, -- Ace
 							["sourceQuests"] = { 25204, 25207 }, -- Release the Valces / Good-bye, Sweet Oil
-						}),	
-						qh(25202, { -- The Fastest Way to His Heart [Female Version]	
+						}),
+						q(25202, { -- The Fastest Way to His Heart [Female Version]
 							["groups"] = {
 								i(52965), -- Heartache Dagger
 								i(52937), -- Chip's Cloak
@@ -466,14 +364,12 @@ _.Zones =
 							},
 							["qg"] = 38647, -- Izzy
 							["sourceQuests"] = { 25204, 25207 }, -- Release the Valces / Good-bye, Sweet Oil
-						}),	
-						qh(25213, { -- The Slave Pits	
-							["groups"] = {
-							},
+						}),
+						q(25213, { -- The Slave Pits
 							["qg"] = 38124, -- Assistant Greely
 							["sourceQuests"] = { 25202 }, -- The Fastest Way to His Heart [Female Version]
-						}),	
-						qh(25214, { -- Escape Velocity	
+						}),
+						q(25214, { -- Escape Velocity
 							["groups"] = {
 								i(52923), -- Rocket-Fuel Soaked Bracers
 								i(52968), -- Orbital Leggings
@@ -482,8 +378,8 @@ _.Zones =
 							},
 							["qg"] = 38120, -- Hobart Grapplehammer
 							["sourceQuests"] = { 25213 }, -- The Slave Pits
-						}),	
-						qh(25243, { -- She Loves Me, She Loves Me NOT! [Male Version]	
+						}),
+						q(25243, { -- She Loves Me, She Loves Me NOT! [Male Version]	
 							["groups"] = {
 								i(52920), -- Cardio-Extractor Gloves
 								i(52937), -- Chip's Cloak
@@ -493,7 +389,7 @@ _.Zones =
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25214 }, -- Escape Velocity
 						}),
-						qh(25244, { -- What Kind of Name is Candy, Anyway? [Male Version]	
+						q(25244, { -- What Kind of Name is Candy, Anyway? [Male Version]
 							["groups"] = {
 								i(52972), -- Ex-Stealer's Gloves
 								i(52970), -- Fickle Belt
@@ -503,14 +399,12 @@ _.Zones =
 							},
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25214 }, -- Escape Velocity
-						}),	
-						qh(25251, { -- Final Confrontation	
-							["groups"] = {
-							},
+						}),
+						q(25251, { -- Final Confrontation
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25243, 25244 }, -- She Loves Me, She Loves Me NOT! [Male Version] / What Kind of Name is Candy, Anyway? [Male Version]
-						}),	
-						qh(25265, { -- Victory!	
+						}),
+						q(25265, { -- Victory!	
 							["groups"] = {
 								i(52927), -- Victor's Robes
 								i(52971), -- Igneous Leggings
@@ -521,23 +415,18 @@ _.Zones =
 							},
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25251 }, -- Final Confrontation
-						}),	
-						qh(25266, { -- Warchief's Emissary	
-							["groups"] = {
-							},
+						}),
+						q(25266, { -- Warchief's Emissary
 							["qg"] = 38935, -- Thrall
 							["sourceQuests"] = { 25265 }, -- Victory!
-						}),	
-						qh(25267, { -- Message for Saurfang	
-							["groups"] = {
-							},
+						}),
+						q(25267, { -- Message for Saurfang
 							["qg"] = 39609, -- Ko'kron Loyalist
 							["sourceQuests"] = { 25266 }, -- Warchief's Emissary
-						}),						
+						}),
 					},
-					["races"] = {9},
 				}),
-				nh(-2, {	-- Vendors
+				n(-2, {	-- Vendors
 					n(45286, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
@@ -552,12 +441,12 @@ _.Zones =
 									un(34, i(52957)), -- Oomlot Staff
 									un(34, i(52935)), -- Pygmy Cloak
 								},
-								["races"] = HORDE_ONLY,
 							})),
 						}),
 					},
-				}),	
+				}),
 			},
+			["races"] = { 9 }, -- Goblin
 			["description"] = "|cff66ccffThe Lost Isles are a chain of islands to the south of Azshara that the Bilgewater Cartel goblins reached after their shipwreck. Things get interesting when the orc ship Draka's Fury also crashes. This is a phased area that only leveling goblins can reach.|r",
 			["icon"] = "Interface\\Icons\\achievement_femalegoblinhead",
 		}),

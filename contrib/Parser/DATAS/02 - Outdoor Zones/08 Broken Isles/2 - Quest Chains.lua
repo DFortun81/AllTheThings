@@ -38,97 +38,65 @@ _.Zones =
 						qg(126065, qh(50242, {	-- A Choice for Allies
 							nh(-209, {	-- Highmountain Tauren
 								q(48066, { -- A Feast for Our Kin
-									["groups"] = {
-									},
 									["qg"] = 125285, -- Baine Bloodhoof <High Chieftain>
 								}),
 								q(48067, { -- Shadow Over Thunder Bluff
-									["groups"] = {
-									},
 									["qg"] = 129914, -- Baine Bloodhoof <High Chieftain>
 									["sourceQuests"] = { 48066 }, --A Feast for Our Kin
 								}),
 								q(49756, { -- Dark Forces
-									["groups"] = {
-									},
 									["qg"] = 130773, -- Baine Bloodhoof <High Chieftain>
 									["sourceQuests"] = { 48067 }, -- Shadow Over Thunder Bluff
 								}),
 								q(48079, { -- Return to Highmountain
-									["groups"] = {
-									},
 									["qg"] = 130773, -- Baine Bloodhoof <High Chieftain>
 									["sourceQuests"] = { 49756 }, -- Dark Forces
 								}),
 								q(41884, { -- Dark Tales
-									["groups"] = {
-									},
 									["qg"] = 105085, -- Spiritwalker Graysky
 									["sourceQuests"] = { 48079 }, -- Return to Highmountain
 								}),
 								q(41764, { -- Walking in Their Footsteps
-									["groups"] = {
-									},
 									["qg"] = 125454, -- Spiritwalker Graysky
 									["sourceQuests"] = { 41884 }, -- Dark Tales
 								}),
 								q(48185, { -- Shadow of the Sepulcher
-									["groups"] = {
-									},
 									["qg"] = 125454, -- Spiritwalker Graysky
 									["sourceQuests"] = { 41764 }, -- Walking in Their Footsteps
 								}),
 								q(41799, { -- Minions of the Darkness
-									["groups"] = {
-									},
 									["qg"] = 125459, -- Spiritwalker Graysky
 									["sourceQuests"] = { 48185 }, -- Shadows of the Sepulcher
 								}),
 								q(48190, { -- Huln's Mountain
-									["groups"] = {
-									},
 									["qg"] = 125459, -- Spiritwalker Graysky
 									["sourceQuests"] = { 41799 }, -- Minions of the Darkness
 								}),
 								q(41800, { -- Servants of the Darkness
-									["groups"] = {
-									},
 									["qg"] = 125466, -- Spiritwalker Graysky
 									["sourceQuests"] = { 48190 }, -- Huln's Mountain
 								}),
 								q(48434, { -- How Fares Ebonhorn?
-									["groups"] = {
-									},
 									["qg"] = 125466, -- Spiritwalker Graysky
 									["sourceQuests"] = { 41800 }, -- Servants of the Darkness
 								}),
 								q(41815, { -- Curse of the Necrodark
-									["groups"] = {
-									},
 									["qg"] = 108434, -- Mayla Highmountain
 									["sourceQuests"] = { 48434 }, -- How Fares Ebonhorn?
 								}),
 								q(41840, { -- Ice and Shadow
-									["groups"] = {
-									},
 									["qg"] = 130423, -- Baine Bloodhoof <High Chieftain>
 									["sourceQuests"] = { 41815 }, -- Curse of the Necrodark
 								}),
 								q(41882, { -- Whispers of the Darnkess
-									["groups"] = {
-									},
 									["qg"] = 97662, -- Jale Rivermane
 									["sourceQuests"] = { 41815 }, -- Curse of the Necrodark
 								}),
 								q(41841, { -- The Final Ward
-									["groups"] = {
-									},
 									["qg"] = 105213, -- Spiritwalker Ebonhorn
 									["sourceQuests"] = { 41840, 41882 }, -- Ice and Shadow / Whispers of the Darkness
 								}),
 								q(48403, { -- The Darkness
-									["groups"] = {
-									},
 									["qg"] = 105213, -- Spiritwalker Ebonhorn
 									["sourceQuests"] = { 41841 }, -- The Final Ward
 								}),

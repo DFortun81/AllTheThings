@@ -8,128 +8,78 @@ _.Zones =
 			["groups"] = {
 				n(-17, { -- Quests
 					qa(35872, {	-- A Bunch of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qh(36064, {	-- A Bunch of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(35690, {	-- A Bunch of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qh(36067, {	-- A Bunch of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qh(36031, {	-- A Bunch of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(35264, {	-- A Bunch of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(35868, {	-- A Bunch of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qh(36026, {	-- A Bunch of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(35638, {	-- A Few Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qh(36063, {	-- A Few Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(35867, {	-- A Few Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(35871, {	-- A Few Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(35689, {	-- A Few Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qh(36030, {	-- A Few Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qh(36024, {	-- A Few Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qh(36066, {	-- A Few Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(36630, {	-- A Surly Dwarf
-						["groups"] = {
-						},
 						["sourceQuest"] = 36629, -- Inspiring Ashran
 					}),
 					qh(36025, {	-- A TON of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(35873, {	-- A TON of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qh(36068, {	-- A TON of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qh(36032, {	-- A TON of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(35639, {	-- A TON of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(35691, {	-- A TON of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qh(36065, {	-- A TON of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(35869, {	-- A TON of Artifact Fragments
-						["groups"] = {
-						},
 						["repeatable"] = true,
 					}),
 					qa(38925, { -- Ashran Dominance
@@ -213,13 +163,9 @@ _.Zones =
 						["repeatable"] = true,
 					}),
 					qa(36626, { -- Host Howell
-						["groups"] = {
-						},
 						["sourceQuest"] = 36624, -- Ashran Appearance
 					}),
 					qa(36629, { -- Inspiring Ashran
-						["groups"] = {
-						},
 						["sourceQuest"] = 36626, -- Host Howell
 					}),
 					qa(39096, { -- Slay Them All!

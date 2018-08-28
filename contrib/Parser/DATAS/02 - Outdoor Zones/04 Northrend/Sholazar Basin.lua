@@ -339,14 +339,10 @@ _.Zones =
 					q(12660),	-- Weapons of Destruction
 					--]]
 					q(12489, { -- Welcome to Sholazar Basin
-						["groups"] = {
-						},
 						["qg"] = 27987, -- Monte Muzzleshot
 						["sourceQuests"] = { 12521 }, -- Where in the World is Hemet Nesingwary?
 					}),
 					q(12524, { -- Venture Co. Misadventure
-						["groups"] = {
-						},
 						["qg"] = 28032, -- Debaar
 						["sourceQuests"] = { 27987 }, -- Welcome to Scholazar Basin
 					}),

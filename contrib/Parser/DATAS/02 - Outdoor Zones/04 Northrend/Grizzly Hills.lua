@@ -66,20 +66,14 @@ _.Zones =
 								["sourceQuests"] = {12511,39207},
 							}),
 							q(12293, {	--  Close the Deal [A]
-								["groups"] = {
-								},
 								["qg"] = 26875,	-- Lieutenant Dumont
 								["sourceQuests"] = {12292},
 							}),
 							q(12294, {	--  A Tentative Pact [A]
-								["groups"] = {
-								},
 								["qg"] = 27469,	-- Ivan
 								["sourceQuests"] = {12293},
 							}),
 							q(12295, {	--  An Exercise in Diplomacy [A]
-								["groups"] = {
-								},
 								["qg"] = 26875,	-- Lieutenant Dumont
 								["sourceQuests"] = {12294},
 							}),
@@ -102,14 +96,10 @@ _.Zones =
 								["sourceQuests"] = {12295},
 							}),
 							q(12300, {	--  Test of Mettle [A]
-								["groups"] = {
-								},
 								["qg"] = 27486,	-- Sergei
 								["sourceQuests"] = {12307,12299},
 							}),
 							q(12302, {	--  Words of Warning [A]
-								["groups"] = {
-								},
 								["qg"] = 27497,	-- Captured Trapper
 								["sourceQuests"] = {12300},
 							}),
@@ -125,8 +115,6 @@ _.Zones =
 								["sourceQuests"] = {12302},
 							}),
 							q(12310, {	--  A Swift Response [A]
-								["groups"] = {
-								},
 								["qg"] = 26875,	-- Lieutenant Dumont
 								["sourceQuests"] = {12308},
 							}),
@@ -141,8 +129,6 @@ _.Zones =
 								["sourceQuests"] = {12310},
 							}),
 							q(12220, {	--  A Dark Influence [A]
-								["groups"] = {
-								},
 								["qg"] = 27295,	-- Hierophant Thayreen
 								["sourceQuests"] = {12310},
 							}),
@@ -157,14 +143,10 @@ _.Zones =
 								["sourceQuests"] = {12219,12220},
 							}),
 							q(12247, {	--  Children of Ursoc [A]
-								["groups"] = {
-								},
 								["qg"] = 27295,	-- Hierophant Thayreen
 								["sourceQuests"] = {12219,12220},
 							}),
 							q(12248, {	--  Vordrassil's Sapling [A]
-								["groups"] = {
-								},
 								["qg"] = 27295,	-- Hierophant Thayreen
 								["sourceQuests"] = {12246,12247},
 							}),
@@ -571,10 +553,7 @@ _.Zones =
 							}),
 							o(188261, {	-- Battered Journal
 								["groups"] = {
-									q(11986, {	--  The Damaged Journal [A]
-										["groups"] = {
-										},
-									}),
+									q(11986),	--  The Damaged Journal [A]
 								},
 								["model"] = "World\\Goober\\g_booktraplightgood.mdx",
 							}),
@@ -611,16 +590,11 @@ _.Zones =
 							}),
 							o(188667, {	-- Amberseed
 								["groups"] = {
-									q(12225, {	--  Mmm... Amberseeds! [A]
-										["groups"] = {
-										},
-									}),
+									q(12225),	--  Mmm... Amberseeds! [A]
 								},
 								["model"] = "World\\Kalimdor\\Mulgore\\Passivedoodads\\Pinecone\\Pinecone.mdx",
 							}),
 							q(12226, {	--  Just Passing Through [A]
-								["groups"] = {
-								},
 								["qg"] = 27277,	-- Master Woodsman Anderhol
 								["sourceQuests"] = {12225},
 							}),
@@ -634,36 +608,24 @@ _.Zones =
 								["sourceQuests"] = {12226},
 							}),
 							q(12212, {	--  Replenishing the Storehouse [A]
-								["groups"] = {
-								},
 								["qg"] = 27277,	-- Master Woodsman Anderhol
 							}),
 							q(12216, {	--  Take Their Rear! [A]
-								["groups"] = {
-								},
 								["qg"] = 27277,	-- Master Woodsman Anderhol
 								["sourceQuests"] = {12212},
 							}),
 							q(12215, {	--  Them or Us! [A]
-								["groups"] = {
-								},
 								["qg"] = 27277,	-- Master Woodsman Anderhol
 							}),
 							q(12217, {	--  Eagle Eyes [A]
-								["groups"] = {
-								},
 								["qg"] = 27277,	-- Master Woodsman Anderhol
 								["sourceQuests"] = {12215},
 							}),
 							q(12222, {	--  Secrets of the Flamebinders [A]
-								["groups"] = {
-								},
 								["qg"] = 27391,	-- Woodsman Drake
 								["sourceQuests"] = {12294},
 							}),
 							q(12223, {	--  Thinning the Ranks [A]
-								["groups"] = {
-								},
 								["qg"] = 27391,	-- Woodsman Drake
 								["sourceQuests"] = {12294},
 							}),

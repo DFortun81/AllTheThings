@@ -7,8 +7,6 @@ _.Zones =
 		m(622, {	-- Stormshield
 			["groups"] = {
 				follower(467, { -- Fen Tao
-					["groups"] = {
-					},
 					["creatureID"] = 91483, -- Fen Tao
 					["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
 				}),
@@ -19,20 +17,14 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					q(36626, { -- Host Howell
-						["groups"] = {
-						},
 						["qg"] = 86095, -- Private Tristan
 						["sourceQuests"] = { 36624 }, -- Ashran Appearance
 					}),
 					q(36629, { -- Inspiring Ashran
-						["groups"] = {
-						},
 						["qg"] = 86069, -- Lieutenant Howell
 						["sourceQuests"] = { 36626 }, -- Host Howell
 					}),
 					q(36630 , { -- A Surly Dwarf
-						["groups"] = {
-						},
 						["qg"] = 86069, -- Lieutenant Howell
 						["sourceQuests"] = { 36629 }, -- Inspiring Ashran
 					}),
@@ -915,28 +907,18 @@ _.Zones =
 					n(87365, {  -- Grakis
 						["groups"] = {
 							i(118729, { -- Gorgrond Treasure Map
-								["groups"] = {
-								},
 								["questID"] = 36465,
 							}),
 							i(118732, { -- Nagrand Treasure Map
-								["groups"] = {
-								},
 								["questID"] = 36468,
 							}),
 							i(118728, { -- Shadowmoon Valley Treasure Map
-								["groups"] = {
-								},
 								["questID"] = 36464,
 							}),
 							i(118731, { -- Spires of Arak Treasure Map
-								["groups"] = {
-								},
 								["questID"] = 36467,
 							}),
 							i(118730, { -- Talador Treasure Map
-								["groups"] = {
-								},
 								["questID"] = 36466,
 							}),
 						},

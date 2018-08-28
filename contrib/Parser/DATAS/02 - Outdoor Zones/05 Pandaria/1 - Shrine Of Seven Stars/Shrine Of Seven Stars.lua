@@ -132,7 +132,6 @@ _.Zones =
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
 					}),
 					q(32683, { -- So You Want to Be a Blacksmith...
-						["groups"] = {},
 						["qg"] = 64085, -- Cullen Hammerbrow
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 164, -- Blacksmithing

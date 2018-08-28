@@ -257,8 +257,6 @@ _.Zones =
 						}),
 					}),
 					q(32307, {	-- Reader for the Dead Tongue
-						["groups"] = {
-						},
 						["classes"] = {9},
 						["description"] = "This is part of the Warlock's green fire questline. It will be offered after the player summons their demons and speaks to them about The Codex of Xerrath.",
 					}),

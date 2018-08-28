@@ -52,24 +52,17 @@ _.Zones =
 						ach(8671, { -- Frostfire Ridge
 							["groups"] = {
 								crit(1, { -- Foothold in a Savage Land
-									q(33868, { -- The Home of the Frostwolves	
-										["groups"] = {
-										},
-									}),	
-									q(33815, { -- A Song of Frost and Fire	
-										["groups"] = {
-										},
+									q(33868),	-- The Home of the Frostwolves
+									q(33815, { -- A Song of Frost and Fire
 										["qg"] = 76411, -- Farseer Drek'Thar
 										["sourceQuests"] = { 33868 }, -- The Home of the Frostwolves
 										["isBreadcrumb"] = true,
-									}),	
-									q(34402, { -- of Wolves and  Warriors	
-										["groups"] = {
-										},
+									}),
+									q(34402, { -- of Wolves and  Warriors
 										["qg"] = 78272, -- Durotan
 										["sourceQuests"] = { 33815 }, -- A Song of Frost and Fire
-									}),	
-									q(34364, { -- For the Horde!	
+									}),
+									q(34364, { -- For the Horde!
 										["groups"] = {
 											i(111540), -- Frostwolf Augury Staff
 											i(111539), -- Frostwolf Boot Knife
@@ -83,70 +76,47 @@ _.Zones =
 										["qg"] = 70859, -- Thrall
 										["sourceQuests"] = { 34402 }, -- of Wolves and  Warriors
 									}),
-									q(34375, { -- Back to Work	
-										["groups"] = {
-										},
+									q(34375, { -- Back to Work
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34364 }, -- For the Horde!
 									}),	
-									q(34592, { -- A Gronnling Problem	
-										["groups"] = {
-										},
+									q(34592, { -- A Gronnling Problem
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34364 }, -- For the Horde!
 									}),	
-									q(34765, { -- The Den of Skog	
-										["groups"] = {
-										},
+									q(34765, { -- The Den of Skog
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34592, 34375 }, -- A Gronnling Problem / Back to Work
 									}),	
-									q(34378, { -- Establish Your Garrison	
-										["groups"] = {
-										},
+									q(34378, { -- Establish Your Garrison
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34765 }, -- The Den of Skog
 									}),	
-									q(34823, { -- The Ogron Live?	
-										["groups"] = {
-										},
+									q(34823, { -- The Ogron Live?
 										["qg"] = 78487, -- Rokhan
 										["sourceQuests"] = { 34378 }, -- Establish Your Garrison
 									}),	
-									q(34824, { -- What We Got	
-										["groups"] = {
-										},
+									q(34824, { -- What We Got
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34378 }, -- Establish Your Garrison
 									}),	
-									q(34822, { -- What We Need	
-										["groups"] = {
-										},
+									q(34822, { -- What We Need
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34378 }, -- Establish Your Garrison
 									}),	
-									q(34461, { -- Build Your Barracks	
-										["groups"] = {
-										},
+									q(34461, { -- Build Your Barracks
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34823, 34824, 34822 }, -- The Ogron Live? / What We Got / What We Need
 									}),	
-									q(34861, { -- We Need An Army	
-										["groups"] = {
-										},
+									q(34861, { -- We Need An Army
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34461 }, -- Build Your Barracks
 									}),	
-									q(34462, { -- Winds of Change	
-										["groups"] = {
-										},
+									q(34462, { -- Winds of Change
 										["qg"] = 79740, -- Warmaster Zog
 										["sourceQuests"] = { 34861 }, -- We Need An Army
-									}),	
-									
-									q(34775, { -- Mission  Probable	
-										["groups"] = {
-										},
+									}),
+									q(34775, { -- Mission Probable
 										["qg"] = 79740, -- Warmaster Zog
 										["sourceQuests"] = { 34462 }, -- Winds of Change
 									}),	
@@ -233,7 +203,6 @@ _.Zones =
 						i(114965, { -- Fractured Forge Hammer
 							["groups"] = {
 								q(36205, { -- The Fractured Hammer
-									["groups"] = {},
 									["qg"] = 74254, -- Dorogg the Ruthless
 								}),
 							},
@@ -242,14 +211,12 @@ _.Zones =
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						q(36207, { -- Waruk the Frostforger
-							["groups"] = {},
 							["qg"] = 78989, -- Axe-Shaper Kugra
 							["sourceQuest"] = 36205, -- The Fractured Hammer
 							["races"] = HORDE_ONLY,
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
 						q(36230, { -- The Restless Spirit
-							["groups"] = {},
 							["qg"] = 84494, -- Waruk the Frostforger
 							["sourceQuest"] = 36207, -- Waruk the Frostforger
 							["races"] = HORDE_ONLY,

@@ -232,8 +232,6 @@ _.Zones =
 						["groups"] = {
 							dr(34, i(127650)), 	-- Belgork's Bastion 
 							i(126950, { -- Equipment Blueprint: Bilge Pump
-								["groups"] = {
-								},
 								["questID"] = 38932, -- Equipment Blueprint: Bilge Pump
 								-- ["collectible"] = true,
 							}),
@@ -294,8 +292,6 @@ _.Zones =
 						["groups"] = {
 							dr(36, i(127659)),	-- Ghostly Iron Buccaneer's Hat Toy
 							i(128257, { -- Equipment Blueprint: Ghostly Spyglass
-								["groups"] = {
-								},
 								["questID"] = 39365, -- Equipment Blueprint: Ghostly Spyglass
 								-- ["collectible"] = true,
 							}),
@@ -315,8 +311,6 @@ _.Zones =
 						["groups"] = {
 							i(127660), -- Contained Flame
 							i(128255, { -- Equipment Blueprint: Ice Cutter
-								["groups"] = {
-								},
 								["questID"] = 39363, -- Equipment Blueprint: Ice Cutter
 								-- ["collectible"] = true,
 							}),
@@ -425,8 +419,6 @@ _.Zones =
 						["groups"] = {		
 							dr(35, i(127302)),	-- Chemical Resistant Apron
 							i(128258, { -- Equipment Blueprint: Felsmoke Launchers
-								["groups"] = {
-								},
 								["questID"] = 39366, -- Equipment Blueprint: Felsmoke Launchers
 								-- ["collectible"] = true,
 							}),
@@ -530,8 +522,6 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\INV_jewelcrafting_ImmacTaladite_Red",
 					}),
 					n(80398, { 	-- Keravnos
-						["groups"] = {
-						},
 						["questID"] = 37407, -- Keravnos
 					}),
 					n(92517, { 	-- Krell the Serene
@@ -664,8 +654,6 @@ _.Zones =
 					n(94472, {	-- Savage Whale Shark
 						["groups"] = {
 							i(128231, { -- Equipment Blueprint: Trained Shark Tank
-								["groups"] = {
-								},
 								["questID"] = 39355, -- Equipment Blueprint: Trained Shark Tank
 								-- ["collectible"] = true,
 							}),
@@ -856,8 +844,6 @@ _.Zones =
 						["groups"] = {	
 							dr(36, i(127658)),	-- Eye of the Beholder 
 							i(128232, { -- Equipment Blueprint: High Intensity Fog Lights
-								["groups"] = {
-								},
 								["questID"] = 39356, -- Equipment Blueprint: High Intensity Fog Lights
 								-- ["collectible"] = true,
 							}),
@@ -881,8 +867,6 @@ _.Zones =
 						["groups"] = {	
 							dr(36, i(127308)),	-- Zoug's Lifting Belt
 							i(128252, { -- Equipment Blueprint: True Iron Rudder
-								["groups"] = {
-								},
 								["questID"] = 39360, -- Equipment Blueprint: True Iron Rudder
 								-- ["collectible"] = true,
 							}),
@@ -1002,8 +986,6 @@ _.Zones =
 							i(128460),	-- Frostwolf Snowstalkers
 						}),
 						i(128490, {	-- Blueprint: Oil
-							["groups"] = {
-							},
 							["questID"] = 39561,
 						}),
 						i(128440, { -- Contract: Dowser Bigspark
@@ -1014,32 +996,22 @@ _.Zones =
 						i(128526),	-- Deathtusk Felboar
 						i(128475),	-- Empowered Augment Rune
 						i(128251, {	-- Equipment Blueprint: Tuskarr Fishing Net
-							["groups"] = {
-							},
 							["questID"] = 39359, -- Equipment Blueprint: Tuskarr Fishing Net
 							-- ["collectible"] = true,
 						}),
 						i(128489, { -- Equipment Blueprint: Unsinkable
-							["groups"] = {
-							},
 							["questID"] = 39358, -- Equipment Blueprint: Unsinkable
 							-- ["collectible"] = true,
 						}),
 						i(128471),	-- Frostwolf Grint's Battlegear
 						i(127269, { -- Ship Blueprint: Battleship
-							["groups"] = {
-							},
 							["questID"] = 39604, -- I Sunk Your Battleship
 							--["collectible"] = true,
 						}),	
 						i(128294, {	-- Trade Agreement: Arakkoa Outcasts
-							["groups"] = {
-							},
 							["questID"] = 37485,
 						}),
 						i(113212, {	-- Treasure Map: Tanaan Jungle
-							["groups"] = {
-							},
 							["questID"] = 39463,
 						}),
 					}),
@@ -1051,8 +1023,6 @@ _.Zones =
 					}),
 					na(90974, {	-- Vindicator Krethos <Hand of the Prophet>
 						i(128444, {	-- Blueprint: Oil
-							["groups"] = {
-							},
 							["questID"] = 39561,
 						}),
 						i(128445, { -- Contract: Dowser Bigspark
@@ -1063,14 +1033,10 @@ _.Zones =
 						i(128527),	-- Deathtusk Felboar
 						i(128482),	-- Empowered Augment Rune
 						i(128491, {	-- Equipment Blueprint: Tuskarr Fishing Net
-							["groups"] = {
-							},
 							["questID"] = 39359, -- Equipment Blueprint: Tuskarr Fishing Net
 							-- ["collectible"] = true,
 						}),
 						i(128250, { -- Equipment Blueprint: Unsinkable
-							["groups"] = {
-							},
 							["questID"] = 39358, -- Equipment Blueprint: Unsinkable
 							-- ["collectible"] = true,
 						}),
@@ -1086,19 +1052,13 @@ _.Zones =
 							i(128465),	-- Ceremonial Slippers of Karabor
 						}),
 						i(127269, { -- Ship Blueprint: Battleship
-							["groups"] = {
-							},
 							["questID"] = 39601, -- I Sunk Your Battleship
 							--["collectible"] = true,
 						}),	
 						i(128294, {	-- Trade Agreement: Arakkoa Outcasts
-							["groups"] = {
-							},
 							["questID"] = 37485,
 						}),
 						i(113212, { -- Treasure Map: Tanaan Jungle
-							["groups"] = {
-							},
 							["questID"] = 39463,
 						}),
 					}),

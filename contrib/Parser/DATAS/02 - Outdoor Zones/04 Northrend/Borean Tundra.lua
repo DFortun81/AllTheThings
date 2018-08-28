@@ -155,20 +155,14 @@ _.Zones =
 					a(ach(33, {		-- Nothing Boring About Borean [Alliance]
 						crit(1, {	-- Hiding in Plain Sight
 							q(11789, {	--  A Soldier in Need [A]
-								["groups"] = {
-								},
 								["qg"] = 25825,	-- Medic Hawthorn
 							}),
 							o(187851, { -- Cultist Shrine
 								q(11920, {	--  Cultists Among Us [A]
-									["groups"] = {
-									},
 									["sourceQuest"] = 11789,
 								}),
 							}),
 							q(11791, {	--  Notify Arlos [A]
-								["groups"] = {
-								},
 								["qg"] = 25299,	-- Admiral Cantlebree
 								["sourceQuest"] = 11920,
 							}),
@@ -183,8 +177,6 @@ _.Zones =
 								["sourceQuest"] = 11791,
 							}),
 							q(11793, {	--  Further Investigation [A]
-								["groups"] = {
-								},
 								["qg"] = 25285,	-- Harbinger Vurenn
 								["sourceQuest"] = 11792,
 							}),
@@ -200,14 +192,10 @@ _.Zones =
 						}),
 						crit(2, {	-- To the Aid of Farshire
 							q(11672, {	--  Enlistment Day [A]
-								["groups"] = {
-								},
 								["qg"] = 25307,	-- Recruitment Officer Blythe
 								["sourceQuests"] = {28709},
 							}),
 							q(11727, {	--  A Time for Heroes [A]
-								["groups"] = {
-								},
 								["qg"] = 25250,	-- General Arlos
 								["sourceQuest"] = 11672,
 							}),
@@ -223,8 +211,6 @@ _.Zones =
 								["qg"] = 25816,	-- Sergeant Hammerhill
 							}),
 							q(11889, {	--  Death From Above [A]
-								["groups"] = {
-								},
 								["qg"] = 25816,	-- Sergeant Hammerhill
 								["sourceQuest"] = 11797,
 							}),
@@ -239,22 +225,16 @@ _.Zones =
 								["sourceQuest"] = 11889,
 							}),
 							q(11928, {	--  Farshire [A]
-								["groups"] = {
-								},
 								["qg"] = 25816,	-- Sergeant Hammerhill
 								["sourceQuest"] = 11897,
 								["isBreadcrumb"] = true,
 							}),
 							q(11901, {	--  Military? What Military? [A]
-								["groups"] = {
-								},
 								["qg"] = 26083,	-- Gerald Green
 								["sourceQuests"] = {11928},
 							}),
 							o(188085, { -- Plagued Grain
 								q(11902, {	--  Pernicious Evidence [A]
-									["groups"] = {
-									},
 									["sourceQuest"] = 11901,
 								}),
 							}),
@@ -269,8 +249,6 @@ _.Zones =
 								["sourceQuest"] = 11902,
 							}),
 							q(11908, {	--  Reference Material [A]
-								["groups"] = {
-								},
 								["qg"] = 26084,	-- Jeremiah Hawning
 								["sourceQuest"] = 11902,
 							}),
@@ -295,20 +273,14 @@ _.Zones =
 								["sourceQuest"] = 11902,
 							}),
 							q(11904, {	--  Fruits of Our Labor [A]
-								["groups"] = {
-								},
 								["qg"] = 26083,	-- Gerald Green
 								["sourceQuest"] = 11903,
 							}),
 							q(11962, {	--  One Last Delivery [A]
-								["groups"] = {
-								},
 								["qg"] = 26083,	-- Gerald Green
 								["sourceQuest"] = 11904,
 							}),
 							q(11963, {	--  Weapons for Farshire [A]
-								["groups"] = {
-								},
 								["qg"] = 25235,	-- Hilda Stoneforge
 								["sourceQuest"] = 11962,
 							}),
@@ -324,19 +296,13 @@ _.Zones =
 						}),
 						crit(3, {	-- D.E.H.T.A.
 							q(11864, {	--  A Mission Statement
-								["groups"] = {
-								},
 								["qg"] = 25809,	-- Archdruid Lathorius
 							}),
 							q(11866, {	--  Ears of Our Enemies
-								["groups"] = {
-								},
 								["qg"] = 25809,	-- Archdruid Lathorius
 								["sourceQuest"] = 11864,
 							}),
 							-- q(11867, {	--  Can't Get Ear-nough... [Repeatable]
-							-- 	["groups"] = {
-							-- 	},
 							-- 	["qg"] = 25809,	-- Archdruid Lathorius
 							--	["sourceQuest"] = 11866,
 							-- }),
@@ -351,14 +317,10 @@ _.Zones =
 								["sourceQuest"] = 11864,
 							}),
 							q(11876, {	--  Help Those That Cannot Help Themselves
-								["groups"] = {
-								},
 								["qg"] = 25809,	-- Archdruid Lathorius
 								["sourceQuest"] = 11864,
 							}),
 							q(11878, {	--  Khu'nok Will Know
-								["groups"] = {
-								},
 								["qg"] = 25809,	-- Archdruid Lathorius
 								["sourceQuest"] = 11876,
 							}),
@@ -373,8 +335,6 @@ _.Zones =
 								["sourceQuest"] = 11878,
 							}),
 							q(11865, {	--  Unfit for Death
-								["groups"] = {
-								},
 								["qg"] = 25811,	-- Zaza
 								["sourceQuest"] = 11864,
 							}),
@@ -389,20 +349,14 @@ _.Zones =
 								["sourceQuest"] = 11865,
 							}),
 							q(11869, {	--  Happy as a Clam
-								["groups"] = {
-								},
 								["qg"] = 25810,	-- Hierophant Cenius
 								["sourceQuest"] = 11864,
 							}),
 							q(11870, {	--  The Abandoned Reach
-								["groups"] = {
-								},
 								["qg"] = 25810,	-- Hierophant Cenius
 								["sourceQuest"] = 11869,
 							}),
 							q(11871, {	--  Not On Our Watch
-								["groups"] = {
-								},
 								["qg"] = 25838,	-- Hierophant Liandra
 								["sourceQuest"] = 11870,
 							}),
@@ -432,13 +386,9 @@ _.Zones =
 						--Note: Need to determine if Coldarra quests are part of this criteria.
 						--		Monitoring the Rift quests are confirmed
 							q(11576, {	--  Monitoring the Rift: Cleftcliff Anomaly
-								["groups"] = {
-								},
 								["qg"] = 25291,	-- Librarian Garren
 							}),
 							q(11582, {	--  Monitoring the Rift: Sundered Chasm
-								["groups"] = {
-								},
 								["qg"] = 25291,	-- Librarian Garren
 								["sourceQuest"] = 11576,
 							}),
@@ -453,50 +403,34 @@ _.Zones =
 								["sourceQuest"] = 11582,
 							}),
 							q(11587, {	--  Prison Break
-								["groups"] = {
-								},
 								["qg"] = 25262,	-- Librarian Donathan
 								["sourceQuests"] = {11574,11575},
 							}),
 							q(11590, {	--  Abduction
-								["groups"] = {
-								},
 								["qg"] = 25262,	-- Librarian Donathan
 								["sourceQuest"] = 11587,
 							}),
 							q(11646, {	--  The Borean Inquisition
-								["groups"] = {
-								},
 								["qg"] = 25262,	-- Librarian Donathan
 								["sourceQuest"] = 11590,
 							}),
 							q(11648, {	--  The Art of Persuasion
-								["groups"] = {
-								},
 								["qg"] = 25480,	-- Librarian Normantis
 								["sourceQuest"] = 11646,
 							}),
 							q(11663, {	--  Sharing Intelligence
-								["groups"] = {
-								},
 								["qg"] = 25480,	-- Librarian Normantis
 								["sourceQuest"] = 11648,
 							}),
 							q(11671, {	--  A Race Against Time
-								["groups"] = {
-								},
 								["qg"] = 25262,	-- Librarian Donathan
 								["sourceQuest"] = 11663,
 							}),
 							q(11679, {	--  Reforging the Key
-								["groups"] = {
-								},
 								["qg"] = 25262,	-- Librarian Donathan
 								["sourceQuest"] = 11671,
 							}),
 							q(11680, {	--  Taking Wing
-								["groups"] = {
-								},
 								["qg"] = 24795,	-- Surristrasz
 								["sourceQuest"] = 11679,
 							}),
@@ -511,20 +445,14 @@ _.Zones =
 								["sourceQuest"] = 11680,
 							}),
 							q(11682, {	--  Dragonspeak
-								["groups"] = {
-								},
 								["qg"] = 25785,	-- Archmage Evanor
 								["sourceQuest"] = 11681,
 							}),
 							q(11733, {	--  Traversing the Rift
-								["groups"] = {
-								},
 								["qg"] = 24795,	-- Surristrasz
 								["sourceQuest"] = 11682,
 							}),
 							q(11912, {	--  Nuts for Berries
-								["groups"] = {
-								},
 								["qg"] = 26110,	-- Librarian Serrah
 							}),
 							q(11914, {	-- Keep the Secret Safe
@@ -562,14 +490,10 @@ _.Zones =
 								["sourceQuest"] = 11613,
 							}),
 							q(11620, {	--  A Father's Words
-								["groups"] = {
-								},
 								["qg"] = 25435,	-- Karuk
 								["sourceQuest"] = 11619,
 							}),
 							q(11625, {	--  The Trident of Naz'jan
-								["groups"] = {
-								},
 								["qg"] = 25450,	-- Veehja
 								["sourceQuest"] = 11620,
 							}),
@@ -593,14 +517,10 @@ _.Zones =
 								["qg"] = 26169,	-- Ataika
 							}),
 							q(11950, {	--  Muahit's Wisdom
-								["groups"] = {
-								},
 								["qg"] = 26169,	-- Ataika
 								["sourceQuest"] = 11949,
 							}),
 							q(11961, {	--  Spirits Watch Over Us
-								["groups"] = {
-								},
 								["qg"] = 26218,	-- Elder Muahit
 								["sourceQuest"] = 11950,
 							}),
@@ -617,39 +537,27 @@ _.Zones =
 						}),
 						crit(6, {	-- Participant Observation
 							q(11707, {	--  Distress Call [A]
-								["groups"] = {
-								},
 								["qg"] = 25737,	-- Airman Skyhopper
 								["sourceQuest"] = 11897,
 							}),
 							q(11708, {	--  The Mechagnomes [A]
-								["groups"] = {
-								},
 								["qg"] = 25590,	-- Fizzcrank Fullthrottle
 								["sourceQuest"] = 11707,
 							}),
 							q(11704, {	--  King Mrgl-Mrgl [A]
-								["groups"] = {
-								},
 								["qg"] = 25702,	-- Mordle Cogspinner
 								["sourceQuest"] = 11708,
 								["isBreadcrumb"] = true,
 							}),
 							q(11571, {	--  Learning to Communicate
-								["groups"] = {
-								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
 								["sourceQuests"] = { 11702 } ,
 							}),
 							q(11559, {	--  Winterfin Commerce
-								["groups"] = {
-								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
 								["sourceQuest"] = 11571,
 							}),
 							q(11561, {	--  Them!
-								["groups"] = {
-								},
 								["qg"] = 25199,	-- Brglmurgl
 								["sourceQuest"] = 11559,
 							}),
@@ -664,26 +572,18 @@ _.Zones =
 								["sourceQuest"] = 11559,
 							}),
 							q(11562, {	--  I'm Being Blackmailed By My Cleaner
-								["groups"] = {
-								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
 								["sourceQuest"] = 11560,
 							}),
 							q(11564, {	--  Succulent Orca Stew
-								["groups"] = {
-								},
 								["qg"] = 25211,	-- Cleaver Bmurglbrm
 								["sourceQuest"] = 11562,
 							}),
 							q(11563, {	--  Grmmurggll Mrllggrl Glrggl!!!
-								["groups"] = {
-								},
 								["qg"] = 25205,	-- Mrmrglmr
 								["sourceQuest"] = 11562,
 							}),
 							q(11565, {	--  The Spare Suit
-								["groups"] = {
-								},
 								["qg"] = 25205,	-- Mrmrglmr
 								["sourceQuest"] = 11563,
 							}),
@@ -698,8 +598,6 @@ _.Zones =
 								["sourceQuest"] = 11565,
 							}),
 							q(11569, {	--  Keymaster Urmgrgl
-								["groups"] = {
-								},
 								["qg"] = 28375,	-- Glrglrglr
 								["sourceQuest"] = 11571,
 							}),
@@ -718,15 +616,11 @@ _.Zones =
 						}),
 						crit(7, {	-- A Family Reunion
 							q(11927, {	--  Word on the Street [A]
-								["groups"] = {
-								},
 								["qg"] = 26155,	-- Mark Hanes
 								["sourceQuest"] = 11897,
 								["isBreadcrumb"] = true,
 							}),
 							q(11599, {	--  Thassarian, My Brother [A]
-								["groups"] = {
-								},
 								["qg"] = 25251,	-- Leryssa
 								["sourceQuests"] = {11927},
 							}),
@@ -740,32 +634,22 @@ _.Zones =
 								["qg"] = 25385,	-- William Allerton
 							}),
 							q(11601, {	--  Lost and Found [A]
-								["groups"] = {
-								},
 								["qg"] = 25251,	-- Leryssa
 								["sourceQuest"] = 11600,
 							}),
 							q(11603, {	--  In Wine, Truth [A]
-								["groups"] = {
-								},
 								["qg"] = 25245,	-- James Deacon
 								["sourceQuest"] = 11601,
 							}),
 							q(11604, {	--  A Deserter [A]
-								["groups"] = {
-								},
 								["qg"] = 25302,	-- Old Man Colburn
 								["sourceQuest"] = 11603,
 							}),
 							q(11932, {	--  Cowards and Fools [A]
-								["groups"] = {
-								},
 								["qg"] = 25395,	-- Private Brau
 								["sourceQuest"] = 11604,
 							}),
 							q(12086, {	--  The Son of Karkut [A]
-								["groups"] = {
-								},
 								["qg"] = 26169,	-- Ataika
 								["sourceQuest"] = 11932,
 							}),
@@ -780,16 +664,12 @@ _.Zones =
 								["sourceQuest"] = 12086,
 							}),
 							q(12088, {	--  Thassarian, the Death Knight [A]
-								["groups"] = {
-								},
 								["qg"] = 26187,	-- Corporal Venn
 								["sourceQuest"] = 11944,
 							}),
 						}),
 						crit(8, {	-- Last Rites
 							q(11956, {	--  Finding the Phylactery [A]
-								["groups"] = {
-								},
 								["qg"] = 26170,	-- Thassarian
 							}),
 							q(11938, {	-- Buying Some Time [A]
@@ -803,8 +683,6 @@ _.Zones =
 								["sourceQuest"] = 11956,
 							}),
 							q(11942, {	--  Words of Power [A]
-								["groups"] = {
-								},
 								["qg"] = 26170,	-- Thassarian
 								["sourceQuest"] = 11938,
 							}),
@@ -825,13 +703,9 @@ _.Zones =
 					h(ach(1358, {	-- Nothing Boring About Borean [Horde]
 						crit(1, {	-- The Fate of Farseer Grimwalker
 							q(11635, {	--  Farseer Grimwalker's Spirit [H]
-								["groups"] = {
-								},
 								["qg"] = 25339,	-- Spirit Talker Snarlfang
 							}),
 							q(11637, {	--  Kaganishu [H]
-								["groups"] = {
-								},
 								["qg"] = 25425,	-- Farseer Grimwalker's Spirit
 								["sourceQuest"] = 11635,
 							}),
@@ -847,41 +721,29 @@ _.Zones =
 						}),
 						crit(2, {	-- Return of the Dread Citadel
 							q(11585, {	--  Hellscream's Vigil [H]
-								["groups"] = {
-								},
 								["qg"] = 25273,	-- Warsong Recruitment Officer
 								["description"] = "This version of the quest is only available if you have completed the quest 'There Is No Hope' from from Greatmother Geyah in Nagrand (Outland). However, it seems to be currently unavailable."
 								}),
 							q(11586, {	--  Hellscream's Vigil [H]
-								["groups"] = {
-								},
 								["qg"] = 25273,	-- Warsong Recruitment Officer
 								["description"] = "This version of the quest is only available if you have NOT completed the quest  'There Is No Hope' from from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently."
 								}),
 							q(11595, {	--  The Defense of Warsong Hold [H]
-								["groups"] = {
-								},
 								["qg"] = 25256,	-- High Overlord Saurfang
 								["sourceQuests"] = {11585,11586},
 								["description"] = "This version of the quest is only available if you have completed the quest 'The Lord of Blackrock' from the Head of Nefarian and do NOT have the Scarab Lord title."
 							}),
 							q(11596, {	--  The Defense of Warsong Hold [H]
-								["groups"] = {
-								},
 								["qg"] = 25256,	-- High Overlord Saurfang
 								["sourceQuests"] = {11585,11586},
 								["description"] = "This version of the quest is only available if you have NOT completed the quest 'The Lord of Blackrock' from the Head of Nefarian and do NOT have the Scarab Lord title."
 							}),
 							q(11597, {	--  The Defense of Warsong Hold [H]
-								["groups"] = {
-								},
 								["qg"] = 25256,	-- High Overlord Saurfang
 								["sourceQuests"] = {11585,11586},
 								["description"] = "This version of the quest is only available if you have the Scarab Lord title."
 							}),
 							q(11598, {	--  Taking Back Mightstone Quarry [H]
-								["groups"] = {
-								},
 								["qg"] = 25279,	-- Overlord Razgor
 								["sourceQuests"] = {11595,11596,11597},
 							}),
@@ -898,38 +760,26 @@ _.Zones =
 								["sourceQuest"] = 11598,
 							}),
 							q(11634, {	--  Wind Master To'bor [H]
-								["groups"] = {
-								},
 								["qg"] = 25279,	-- Overlord Razgor
 								["sourceQuest"] = 11602,
 							}),
 							q(11636, {	--  Magic Carpet Ride [H]
-								["groups"] = {
-								},
 								["qg"] = 25289,	-- Wind Master To'bor
 								["sourceQuest"] = 11634,
 							}),
 							q(11642, {	--  Tank Ain't Gonna Fix Itself [H]
-								["groups"] = {
-								},
 								["qg"] = 25329,	-- Gorge the Corpsegrinder
 								["sourceQuest"] = 11636,
 							}),
 							q(11643, {	--  Mobu's Pneumatic Tank Transjigamarig [H]
-								["groups"] = {
-								},
 								["qg"] = 25475,	-- Mobu
 								["sourceQuest"] = 11642,
 							}),
 							q(11644, {	--  Super Strong Metal Plates! [H]
-								["groups"] = {
-								},
 								["qg"] = 25475,	-- Mobu
 								["sourceQuest"] = 11642,
 							}),
 							q(11651, {	--  Tanks a lot... [H]
-								["groups"] = {
-								},
 								["qg"] = 25475,	-- Mobu
 								["sourceQuests"] = {11643, 11644},
 							}),
@@ -945,38 +795,26 @@ _.Zones =
 						}),
 						crit(3, {	-- The Scourge Necrolord
 							q(11614, {	--  Untold Truths [H]
-								["groups"] = {
-								},
 								["qg"] = 25394,	-- Shadowstalker Barthus
 								["sourceQuest"] = 11598,
 							}),
 							q(11615, {	--  Nerub'ar Secrets [H]
-								["groups"] = {
-								},
 								["qg"] = 25328,	-- Shadowstalker Luther
 								["sourceQuest"] = 11614,
 							}),
 							q(11616, {	--  Message to Hellscream [H]
-								["groups"] = {
-								},
 								["qg"] = 25394,	-- Shadowstalker Barthus
 								["sourceQuest"] = 11615,
 							}),
 							q(11618, {	--  Reinforcements Incoming... [H]
-								["groups"] = {
-								},
 								["qg"] = 25237,	-- Garrosh Hellscream
 								["sourceQuest"] = 11616,
 							}),
 							q(11686, {	--  The Warsong Farms [H]
-								["groups"] = {
-								},
 								["qg"] = 25437,	-- Shadowstalker Ickoris
 								["sourceQuest"] = 11618,
 							}),
 							q(11703, {	--  Get to Getry [H]
-								["groups"] = {
-								},
 								["qg"] = 25437,	-- Shadowstalker Ickoris
 								["sourceQuest"] = 11686,
 							}),
@@ -993,19 +831,13 @@ _.Zones =
 						}),
 						crit(4, {	-- D.E.H.T.A.
 							q(11864, {	--  A Mission Statement
-								["groups"] = {
-								},
 								["qg"] = 25809,	-- Archdruid Lathorius
 							}),
 							q(11866, {	--  Ears of Our Enemies
-								["groups"] = {
-								},
 								["qg"] = 25809,	-- Archdruid Lathorius
 								["sourceQuest"] = 11864,
 							}),
 							-- q(11867, {	--  Can't Get Ear-nough... [Repeatable]
-							-- 	["groups"] = {
-							-- 	},
 							-- 	["qg"] = 25809,	-- Archdruid Lathorius
 							--	["sourceQuest"] = 11866,
 							-- }),
@@ -1020,14 +852,10 @@ _.Zones =
 								["sourceQuest"] = 11864,
 							}),
 							q(11876, {	--  Help Those That Cannot Help Themselves
-								["groups"] = {
-								},
 								["qg"] = 25809,	-- Archdruid Lathorius
 								["sourceQuest"] = 11864,
 							}),
 							q(11878, {	--  Khu'nok Will Know
-								["groups"] = {
-								},
 								["qg"] = 25809,	-- Archdruid Lathorius
 								["sourceQuest"] = 11876,
 							}),
@@ -1042,8 +870,6 @@ _.Zones =
 								["sourceQuest"] = 11878,
 							}),
 							q(11865, {	--  Unfit for Death
-								["groups"] = {
-								},
 								["qg"] = 25811,	-- Zaza
 								["sourceQuest"] = 11864,
 							}),
@@ -1058,20 +884,14 @@ _.Zones =
 								["sourceQuest"] = 11865,
 							}),
 							q(11869, {	--  Happy as a Clam
-								["groups"] = {
-								},
 								["qg"] = 25810,	-- Hierophant Cenius
 								["sourceQuest"] = 11864,
 							}),
 							q(11870, {	--  The Abandoned Reach
-								["groups"] = {
-								},
 								["qg"] = 25810,	-- Hierophant Cenius
 								["sourceQuest"] = 11869,
 							}),
 							q(11871, {	--  Not On Our Watch
-								["groups"] = {
-								},
 								["qg"] = 25838,	-- Hierophant Liandra
 								["sourceQuest"] = 11870,
 							}),
@@ -1099,8 +919,6 @@ _.Zones =
 						}),
 						crit(5, {	-- The Blue Dragonflight
 							q(11912, {	--  Nuts for Berries
-								["groups"] = {
-								},
 								["qg"] = 26110,	-- Librarian Serrah
 							}),
 							q(11914, {	-- Keep the Secret Safe
@@ -1124,46 +942,32 @@ _.Zones =
 								["qg"] = 26169,	-- Ataika
 							}),
 							q(11950, {	--  Muahit's Wisdom
-								["groups"] = {
-								},
 								["qg"] = 26169,	-- Ataika
 								["sourceQuest"] = 11949,
 							}),
 							q(11961, {	--  Spirits Watch Over Us
-								["groups"] = {
-								},
 								["qg"] = 26218,	-- Elder Muahit
 								["sourceQuest"] = 11950,
 							}),
 							q(11968, {	--  The Tides Turn
-								["groups"] = {
-								},
 								["qg"] = 26218,	-- Elder Muahit
 								["sourceQuest"] = 11961,
 							}),
 						}),
 						crit(7, {	-- Participant Observation
 							q(11702, {	--  King Mrgl-Mrgl [H]
-								["groups"] = {
-								},
 								["qg"] = 25736,	-- Supply Master Taz'ishi
 								["isBreadcrumb"] = true,
 							}),
 							q(11571, {	--  Learning to Communicate
-								["groups"] = {
-								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
 								["sourceQuests"] = { 11704 },
 							}),
 							q(11559, {	--  Winterfin Commerce
-								["groups"] = {
-								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
 								["sourceQuest"] = 11571,
 							}),
 							q(11561, {	--  Them!
-								["groups"] = {
-								},
 								["qg"] = 25199,	-- Brglmurgl
 								["sourceQuest"] = 11559,
 							}),
@@ -1178,26 +982,18 @@ _.Zones =
 								["sourceQuest"] = 11559,
 							}),
 							q(11562, {	--  I'm Being Blackmailed By My Cleaner
-								["groups"] = {
-								},
 								["qg"] = 25197,	-- King Mrgl-Mrgl
 								["sourceQuest"] = 11560,
 							}),
 							q(11564, {	--  Succulent Orca Stew
-								["groups"] = {
-								},
 								["qg"] = 25211,	-- Cleaver Bmurglbrm
 								["sourceQuest"] = 11562,
 							}),
 							q(11563, {	--  Grmmurggll Mrllggrl Glrggl!!!
-								["groups"] = {
-								},
 								["qg"] = 25205,	-- Mrmrglmr
 								["sourceQuest"] = 11562,
 							}),
 							q(11565, {	--  The Spare Suit
-								["groups"] = {
-								},
 								["qg"] = 25205,	-- Mrmrglmr
 								["sourceQuest"] = 11563,
 							}),
@@ -1212,8 +1008,6 @@ _.Zones =
 							["sourceQuest"] = 11565,
 						}),
 							q(11569, {	--  Keymaster Urmgrgl
-								["groups"] = {
-								},
 								["qg"] = 28375,	-- Glrglrglr
 								["sourceQuest"] = 11571,
 							}),
@@ -1232,31 +1026,21 @@ _.Zones =
 						}),
 						crit(8, {	-- Hellscream's Champion
 							q(11716, {	--  The Wondrous Bloodspore [H]
-								["groups"] = {
-								},
 								["qg"] = 25381,	-- Bloodmage Laurith
 							}),
 							q(11717, {	--  Pollen from the Source [H]
-								["groups"] = {
-								},
 								["qg"] = 25381,	-- Bloodmage Laurith
 								["sourceQuest"] = 11716,
 							}),
 							q(11719, {	--  A Suitable Test Subject [H]
-								["groups"] = {
-								},
 								["qg"] = 25381,	-- Bloodmage Laurith
 								["sourceQuest"] = 11717,
 							}),
 							q(11720, {	--  The Invasion of Gammoth [H]
-								["groups"] = {
-								},
 								["qg"] = 25381,	-- Bloodmage Laurith
 								["sourceQuest"] = 11719,
 							}),
 							q(11721, {	--  Gammothra the Tormentor [H]
-								["groups"] = {
-								},
 								["qg"] = 25380,	-- Primal Mighthorn
 								["sourceQuest"] = 11720,
 							}),
@@ -1285,19 +1069,13 @@ _.Zones =
 						}),
 						crit(9, {	-- To the Aid of the Taunka
 							q(11684, {	--  Scouting the Sinkholes [H]
-								["groups"] = {
-								},
 								["qg"] = 24702,	-- Greatfather Mahan
 							}),
 							q(11685, {	--  The Heart of the Elements [H]
-								["groups"] = {
-								},
 								["qg"] = 24702,	-- Greatfather Mahan
 								["sourceQuest"] = 11684,
 							}),
 							q(11695, {	--  The Horn of Elemental Fury [H]
-								["groups"] = {
-								},
 								["qg"] = 24730,	-- Wind Tamer Barah
 								["sourceQuest"] = 11685,
 							}),
@@ -1314,13 +1092,9 @@ _.Zones =
 						}),
 						crit(10, {	-- Somber Realization
 							q(11881, {	--  Load'er Up! [H]
-								["groups"] = {
-								},
 								["qg"] = 25849,	-- Fezzix Geartwist
 							}),
 							q(11893, {	--  The Power of the Elements [H]
-								["groups"] = {
-								},
 								["qg"] = 25983,	-- Dorain Frosthoof
 								["sourceQuest"] = 11881,
 							}),
@@ -1335,32 +1109,22 @@ _.Zones =
 								["sourceQuest"] = 11893,
 							}),
 							q(11628, {	--  Shrouds of the Scourge [H]
-								["groups"] = {
-								},
 								["qg"] = 24703,	-- Chieftain Wintergale
 								["sourceQuest"] = 11894,
 							}),
 							q(11630, {	--  The Bad Earth [H]
-								["groups"] = {
-								},
 								["qg"] = 24703,	-- Chieftain Wintergale
 								["sourceQuest"] = 11628,
 							}),
 							q(11633, {	--  Blending In [H]
-								["groups"] = {
-								},
 								["qg"] = 24703,	-- Chieftain Wintergale
 								["sourceQuest"] = 11630,
 							}),
 							q(11641, {	--  A Courageous Strike [H]
-								["groups"] = {
-								},
 								["qg"] = 24706,	-- Durm Icehide
 								["sourceQuest"] = 11633,
 							}),
 							q(11640, {	--  Words of Power [H]
-								["groups"] = {
-								},
 								["qg"] = 24703,	-- Chieftain Wintergale
 								["sourceQuest"] = 11633,
 							}),
@@ -1374,14 +1138,10 @@ _.Zones =
 								["sourceQuest"] = 11640, -- NOTE: Maybe?
 							}),
 							q(11929, {	--  The Fall of Taunka'le Village [H]
-								["groups"] = {
-								},
 								["qg"] = 24703,	-- Chieftain Wintergale
 								["sourceQuest"] = 11898, -- NOTE: Maybe?
 							}),
 							q(11930, {	--  Across Transborea [H]
-								["groups"] = {
-								},
 								["qg"] = 26158,	-- Mother Tauranook
 								["sourceQuest"] = 11929,
 							}),
@@ -1389,19 +1149,13 @@ _.Zones =
 					})),
 					ach(561, {		-- D.E.H.T.A's Little P.I.T.A.
 						q(11864, {	--  A Mission Statement
-							["groups"] = {
-							},
 							["qg"] = 25809,	-- Archdruid Lathorius
 						}),
 						q(11866, {	--  Ears of Our Enemies
-							["groups"] = {
-							},
 							["qg"] = 25809,	-- Archdruid Lathorius
 							["sourceQuest"] = 11864,
 						}),
 						-- q(11867, {	--  Can't Get Ear-nough... [Repeatable]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 25809,	-- Archdruid Lathorius
 						--	["sourceQuest"] = 11866,
 						-- }),
@@ -1416,14 +1170,10 @@ _.Zones =
 							["sourceQuest"] = 11864,
 						}),
 						q(11876, {	--  Help Those That Cannot Help Themselves
-							["groups"] = {
-							},
 							["qg"] = 25809,	-- Archdruid Lathorius
 							["sourceQuest"] = 11864,
 						}),
 						q(11878, {	--  Khu'nok Will Know
-							["groups"] = {
-							},
 							["qg"] = 25809,	-- Archdruid Lathorius
 							["sourceQuest"] = 11876,
 						}),
@@ -1438,8 +1188,6 @@ _.Zones =
 							["sourceQuest"] = 11878,
 						}),
 						q(11865, {	--  Unfit for Death
-							["groups"] = {
-							},
 							["qg"] = 25811,	-- Zaza
 							["sourceQuest"] = 11864,
 						}),
@@ -1454,20 +1202,14 @@ _.Zones =
 							["sourceQuest"] = 11865,
 						}),
 						q(11869, {	--  Happy as a Clam
-							["groups"] = {
-							},
 							["qg"] = 25810,	-- Hierophant Cenius
 							["sourceQuest"] = 11864,
 						}),
 						q(11870, {	--  The Abandoned Reach
-							["groups"] = {
-							},
 							["qg"] = 25810,	-- Hierophant Cenius
 							["sourceQuest"] = 11869,
 						}),
 						q(11871, {	--  Not On Our Watch
-							["groups"] = {
-							},
 							["qg"] = 25838,	-- Hierophant Liandra
 							["sourceQuest"] = 11870,
 						}),
@@ -1496,22 +1238,15 @@ _.Zones =
 					n(-168, {		-- Other Quests
 						sz(1264, 1, {	-- Temple City of En'kilah
 							i(34815, { -- Vial of Fresh Blood
-								qh(11654, {	--  The Spire of Blood [H]
-									["groups"] = {
-									},
-								}),
+								qh(11654),	--  The Spire of Blood [H]
 							}),
 							qh(11659, {	--  Shatter the Orbs! [H]
-								["groups"] = {
-								},
 								["qg"] = 25516,	-- Snow Tracker Grumm
 								["sourceQuest"] = 11654,
 							}),
 						}),
 						h(sz(1264, 2, {	-- Steeljaw's Caravan
 							q(11594, {	--  Put Them to Rest [H]
-								["groups"] = {
-								},
 								["qg"] = 25336,	-- Grunt Ragefist
 								["sourceQuests"] = {11591},
 							}),
@@ -1525,22 +1260,16 @@ _.Zones =
 								["qg"] = 25335,	-- Longrunner Proudhoof
 							}),
 							q(11593, {	--  The Honored Dead [H]
-								["groups"] = {
-								},
 								["qg"] = 25336,	-- Grunt Ragefist
 							}),
 						})),
 						sz(1264, 3, {	-- Riplash Strand
 							q(12471, {	--  Cruelty of the Kvaldir
-								["groups"] = {
-								},
 								["qg"] = 25636,	-- Captured Tuskarr Prisoner
 							}),
 						}),
 						sz(1264, 4, {	-- Kaskala
 							-- q(11945, {	--  Preparing for the Worst [Daily]
-							-- 	["groups"] = {
-							-- 	},
 							-- 	["qg"] = 26213,	-- Utaik
 							-- }),
 							q(12117, {	--  Travel to Moa'ki Harbor
@@ -1555,14 +1284,10 @@ _.Zones =
 						}),
 						h(sz(1264, 5, {	-- Garrosh's Landing
 							q(11662, {	--  Seek Out Karuk! [H]
-								["groups"] = {
-								},
 								["qg"] = 25476,	-- Waltor of Pal'ea
 								["isBreadcrumb"] = true,
 							}),
 							q(11655, {	--  Into the Mist [H]
-								["groups"] = {
-								},
 								["qg"] = 25476,	-- Waltor of Pal'ea
 							}),
 							q(11656, {	-- Burn in Effigy [H]
@@ -1576,8 +1301,6 @@ _.Zones =
 								["sourceQuest"] = 11655,
 							}),
 							q(11709, {	--  Nork Bloodfrenzy's Charge [H]
-								["groups"] = {
-								},
 								["qg"] = 25237,	-- Garrosh Hellscream
 								["sourceQuest"] = 11705,
 							}),
@@ -1590,8 +1313,6 @@ _.Zones =
 								["qg"] = 25504,	-- Mootoo the Younger
 							}),
 							q(11660, {	--  Horn of the Ancient Mariner [H]
-								["groups"] = {
-								},
 								["qg"] = 25476,	-- Waltor of Pal'ea
 							}),
 							q(11661, {	-- Orabus the Helmsman [H]
@@ -1607,45 +1328,31 @@ _.Zones =
 						})),
 						sz(1264, 6, {	-- Death's Stand
 							qa(12157, {	--  The Lost Courier [A]
-								["groups"] = {
-								},
 								["qg"] = 26186,	-- Private Casey
 								["isBreadcrumb"] = true,
 							}),
 						}),
 						sz(1264, 7, {	-- Coldarra
 							q(11900, {	--  Reading the Meters
-								["groups"] = {
-								},
 								["qg"] = 25314,	-- Archmage Berinand
 							}),
 							q(11910, {	--  Secrets of the Ancients
-								["groups"] = {
-								},
 								["qg"] = 25314,	-- Archmage Berinand
 							}),
 							i(35648, {	-- Scintillating Fragment
 								q(11941, {	--  Puzzling...
-									["groups"] = {
-									},
 									["qg"] = 25719,	-- Coldarra Spellbinder
 								}),
 							}),
 							q(11943, {	--  The Cell
-								["groups"] = {
-								},
 								["qg"] = 26117,	-- Raelorasz
 								["sourceQuest"] = 11941,
 							}),
 							q(11946, {	--  Keristrasza
-								["groups"] = {
-								},
 								["qg"] = 26206,	-- Keristrasza
 								["sourceQuest"] = 11943,
 							}),
 							q(11951, {	--  Bait and Switch
-								["groups"] = {
-								},
 								["qg"] = 26206,	-- Keristrasza
 								["sourceQuest"] = 11946,
 							}),
@@ -1660,8 +1367,6 @@ _.Zones =
 								["sourceQuest"] = 11951,
 							}),
 							q(11967, {	--  Mustering the Reds
-								["groups"] = {
-								},
 								["qg"] = 26206,	-- Keristrasza
 								["sourceQuest"] = 11957,
 							}),
@@ -1678,31 +1383,21 @@ _.Zones =
 								["sourceQuest"] = 11967,
 							}),
 							q(11918, {	--  Basic Training
-								["groups"] = {
-								},
 								["qg"] = 26117,	-- Raelorasz
 							}),
 							q(11936, {	--  Hatching a Plan
-								["groups"] = {
-								},
 								["qg"] = 26117,	-- Raelorasz
 								["sourceQuest"] = 11918,
 							}),
 							q(11919, {	--  Drake Hunt
-								["groups"] = {
-								},
 								["qg"] = 26117,	-- Raelorasz
 								["sourceQuest"] = 11936,
 							}),
 							-- q(11940, {	-- Drake Hunt [Daily]
-							-- 	["groups"] = {
-							-- 	},
 							-- 	["qg"] = 26117,	-- Raelorasz
 							-- 	["sourceQuest"] = 11919,
 							-- }),
 							q(11931, {	--  Cracking the Code
-								["groups"] = {
-								},
 								["qg"] = 26117,	-- Raelorasz
 								["sourceQuest"] = 11919,
 							}),
@@ -1761,8 +1456,6 @@ _.Zones =
 								["sourceQuest"] = 29285,	-- Alignment
 							})),
 							q(13412, {	--  Corastrasza
-								["groups"] = {
-								},
 								["qg"] = 26110,	-- Librarian Serrah
 							}),
 							q(13413, {	-- Aces High!
@@ -1776,33 +1469,23 @@ _.Zones =
 								["sourceQuest"] = 13412,
 							}),
 							-- q(13414, {	--  Aces High! [Daily]
-							-- 	["groups"] = {
-							-- 	},
 							-- 	["qg"] = 32548,	-- Corastrasza
 							-- }),
 						}),
 						h(sz(1264, 8, {	-- Bor'gorok Outpost
 							q(11624, {	--  The Sky Will Know [H]
-								["groups"] = {
-								},
 								["qg"] = 25339,	-- Spirit Talker Snarlfang
 								["sourceQuests"] = {12486},
 							}),
 							q(11627, {	--  Boiling Point [H]
-								["groups"] = {
-								},
 								["qg"] = 25376,	-- Imperean
 								["sourceQuest"] = 11624,
 							}),
 							q(11649, {	--  Motes of the Enraged [H]
-								["groups"] = {
-								},
 								["qg"] = 25376,	-- Imperean
 								["sourceQuest"] = 11627,
 							}),
 							q(11629, {	--  Return to the Spirit Talker [H]
-								["groups"] = {
-								},
 								["qg"] = 25376,	-- Imperean
 								["sourceQuest"] = 11649,
 							}),
@@ -1827,8 +1510,6 @@ _.Zones =
 								["sourceQuest"] = 11631,
 							}),
 							q(11591, {	--  Report to Steeljaw's Caravan [H]
-								["groups"] = {
-								},
 								["qg"] = 25326,	-- Overlord Bor'gorok
 							}),
 						})),
@@ -1836,25 +1517,17 @@ _.Zones =
 						-- }),
 						h(sz(1264, 10, {	-- Warsong Hold
 							q(11574, {	--  Too Close For Comfort [H]
-								["groups"] = {
-								},
 								["qg"] = 25247,	-- Endorah
 								["sourceQuests"] = {11595,11596,11597},
 							}),
 							q(13270, {	--  Cloth Scavenging [H]
-								["groups"] = {
-								},
 								["qg"] = 26969,	-- Raenah
 								["requireSkill"] = 197,	-- Tailoring
 							}),
 							q(29609, {	--  Friends in Dalaran [H]
-								["groups"] = {
-								},
 								["qg"] = 25288,	-- Turida Coldwind
 							}),
 							q(12791, {	--  The Magical Kingdom of Dalaran [H]
-								["groups"] = {
-								},
 								["qg"] = 29155,	-- Magistrix Kaelana
 							}),
 							q(11611, {	-- Taken by the Scourge [H]
@@ -1868,14 +1541,10 @@ _.Zones =
 								["sourceQuests"] = {11595,11596,11597},
 							}),
 							q(11888, {	--  Ride to Taunka'le Village [H]
-								["groups"] = {
-								},
 								["qg"] = 25978,	-- Ambassador Talonga
 								["sourceQuests"] = {11595,11596,11597},
 							}),
 							q(12486, {	--  To Bor'gorok Outpost, Quickly! [H]
-								["groups"] = {
-								},
 								["qg"] = 25272,	-- Sauranok the Mystic
 								["sourceQuests"] = {11595,11596,11597},
 							}),
@@ -1890,8 +1559,6 @@ _.Zones =
 								}),
 							}),
 							q(11688, {	--  Damned Filthy Swine [H]
-								["groups"] = {
-								},
 								["qg"] = 25607,	-- Farmer Torp
 							}),
 							q(11690, {	-- Bring 'Em Back Alive [H]
@@ -1905,8 +1572,6 @@ _.Zones =
 								["sourceQuest"] = 11988,
 							}),
 							q(11606, {	--  Patience is a Virtue that We Don't Need [H]
-								["groups"] = {
-								},
 								["qg"] = 25327,	-- Quartermaster Holgoth
 								["sourceQuests"] = {11595,11596,11597},
 							}),
@@ -1921,8 +1586,6 @@ _.Zones =
 								["sourceQuest"] = 11606,
 							}),
 							q(11711, {	--  Coward Delivery... Under 30 Minutes or it's Free [H]
-								["groups"] = {
-								},
 								["qg"] = 25379,	-- Warden Nork Bloodfrenzy
 								["sourceQuest"] = 11709,
 							}),
@@ -1937,38 +1600,26 @@ _.Zones =
 								["sourceQuest"] = 11711,
 							}),
 							q(11676, {	--  Merciful Freedom [H]
-								["groups"] = {
-								},
 								["qg"] = 25438,	-- Shadowstalker Canarius
 								["sourceQuest"] = 11618,
 							}),
 						})),
 						a(sz(1264, 11, {	-- Valiance Keep
 							q(29608, {	--  Allies in Dalaran [A]
-								["groups"] = {
-								},
 								["qg"] = 26879,	-- Tomas Riverwell
 							}),
 							q(12794, {	--  The Magical Kingdom of Dalaran [A]
-								["groups"] = {
-								},
 								["qg"] = 29158,	-- Magister Dath'omere
 							}),
 							q(13265, {	--  Cloth Scavenging [A]
-								["groups"] = {
-								},
 								["qg"] = 27001,	-- Darin Goodstitch
 								["requireSkill"] = 197,	-- Tailoring
 							}),
 							q(12141, {	--  A Diplomatic Mission [A]
-								["groups"] = {
-								},
 								["qg"] = 25301,	-- Counselor Talbot
 								["isBreadcrumb"] = true,
 							}),
 							q(11575, {	--  Nick of Time [A]
-								["groups"] = {
-								},
 								["qg"] = 25249,	-- Midge
 								["sourceQuest"] = 11897,
 							}),
@@ -1986,8 +1637,6 @@ _.Zones =
 								["sourceQuest"] = 11708,
 							}),
 							qa(11788, {	--  Lefty Loosey, Righty Tighty [A]
-								["groups"] = {
-								},
 								["qg"] = 25747,	-- Jinky Wingnut
 								["sourceQuest"] = 11712,
 							}),
@@ -2002,32 +1651,22 @@ _.Zones =
 								["sourceQuest"] = 11788,
 							}),
 							qa(11725, {	--  Finding Pilot Tailspin [A]
-								["groups"] = {
-								},
 								["qg"] = 25590,	-- Fizzcrank Fullthrottle
 								["sourceQuest"] = 11712,
 							}),
 							qa(11726, {	--  A Little Bit of Spice [A]
-								["groups"] = {
-								},
 								["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 								["sourceQuest"] = 11725,
 							}),
 							qa(11728, {	--  Lupus Pupus [A]
-								["groups"] = {
-								},
 								["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 								["sourceQuest"] = 11726,
 							}),
 							qa(11795, {	--  Emergency Protocol: Section 8.2, Paragraph C [A]
-								["groups"] = {
-								},
 								["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 								["sourceQuest"] = 11728,
 							}),
 							qa(11796, {	--  Emergency Protocol: Section 8.2, Paragraph D [A]
-								["groups"] = {
-								},
 								["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 								["sourceQuest"] = 11795,
 							}),
@@ -2042,20 +1681,14 @@ _.Zones =
 								["sourceQuest"] = 11796,
 							}),
 							qa(11713, {	--  Scouting the Sinkholes [A]
-								["groups"] = {
-								},
 								["qg"] = 25780,	-- Abner Fizzletorque
 								["sourceQuest"] = 11873,
 							}),
 							qa(11715, {	--  Fueling the Project [A]
-								["groups"] = {
-								},
 								["qg"] = 25780,	-- Abner Fizzletorque
 								["sourceQuest"] = 11713,
 							}),
 							qa(11718, {	--  A Bot in Mammoth's Clothing [A]
-								["groups"] = {
-								},
 								["qg"] = 25780,	-- Abner Fizzletorque
 								["sourceQuest"] = 11715,
 							}),
@@ -2070,14 +1703,10 @@ _.Zones =
 								["sourceQuest"] = 11718,
 							}),
 							qa(11645, {	--  Dirty, Stinkin' Snobolds! [A]
-								["groups"] = {
-								},
 								["qg"] = 25477,	-- Crafty Wobblesprocket
 								["sourceQuest"] = 11708,
 							}),
 							qa(11650, {	--  Just a Few More Things... [A]
-								["groups"] = {
-								},
 								["qg"] = 25477,	-- Crafty Wobblesprocket
 								["sourceQuest"] = 11645,
 							}),
@@ -2092,8 +1721,6 @@ _.Zones =
 								["sourceQuest"] = 11650,
 							}),
 							qa(11658, {	--  Plan B [A]
-								["groups"] = {
-								},
 								["qg"] = 25477,	-- Crafty Wobblesprocket
 								["sourceQuest"] = 11653,
 							}),
@@ -2117,10 +1744,7 @@ _.Zones =
 								["qg"] = 25589,	-- Bonker Togglevolt
 							}),
 							i(34984, {	-- The Ultrasonic Screwdriver
-								qa(11729, {	--  The Ultrasonic Screwdriver [A]
-									["groups"] = {
-									},
-								}),
+								qa(11729),	--  The Ultrasonic Screwdriver [A]
 							}),
 							qa(11730, {	-- Master and Servant [A]
 								["groups"] = {
@@ -2133,14 +1757,10 @@ _.Zones =
 								["sourceQuest"] = 11729,
 							}),
 							qa(11710, {	--  What's the Matter with the Transmatter? [A]
-								["groups"] = {
-								},
 								["qg"] = 25702,	-- Mordle Cogspinner
 								["sourceQuest"] = 11708,
 							}),
 							qa(11692, {	--  Check in With Bixie [A]
-								["groups"] = {
-								},
 								["qg"] = 25702,	-- Mordle Cogspinner
 								["sourceQuest"] = 11710,
 							}),
@@ -2156,18 +1776,12 @@ _.Zones =
 								["sourceQuest"] = 11633,
 							}),
 							qh(11887, {	--  Emergency Supplies [H]
-								["groups"] = {
-								},
 								["qg"] = 25984,	-- Crashed Recon Pilot
 							}),
 							qh(11890, {	--  What Are They Up To? [H]
-								["groups"] = {
-								},
 								["qg"] = 25982,	-- Sage Earth and Sky
 							}),
 							qh(11895, {	--  Master the Storm [H]
-								["groups"] = {
-								},
 								["qg"] = 25982,	-- Sage Earth and Sky
 								["sourceQuest"] = 11890,
 							}),
@@ -2182,14 +1796,10 @@ _.Zones =
 								["sourceQuest"] = 11895,
 							}),
 							qh(11899, {	--  Souls of the Decursed [H]
-								["groups"] = {
-								},
 								["qg"] = 25602,	-- Greatmother Taiga
 								["sourceQuest"] = 11895,
 							}),
 							qh(11896, {	--  Weakness to Lightning [H]
-								["groups"] = {
-								},
 								["qg"] = 25982,	-- Sage Earth and Sky
 								["sourceQuest"] = 11895,
 							}),
@@ -2218,13 +1828,9 @@ _.Zones =
 						}),
 						sz(1264, 13, {	-- The Dens of the Dying
 							qh(11674, {	--  Sage Highmesa is Missing [H]
-								["groups"] = {
-								},
 								["qg"] = 25602,	-- Greatmother Taiga
 							}),
 							qh(11675, {	--  A Proper Death [H]
-								["groups"] = {
-								},
 								["qg"] = 25604,	-- Sage Highmesa
 								["sourceQuest"] = 11674,
 							}),
@@ -2249,14 +1855,10 @@ _.Zones =
 								["sourceQuest"] = 11677,
 							}),
 							qh(11678, {	--  Find Bristlehorn [H]
-								["groups"] = {
-								},
 								["qg"] = 25604,	-- Sage Highmesa
 								["sourceQuest"] = 11677,
 							}),
 							qh(11687, {	--  The Doctor and the Lich-Lord [H]
-								["groups"] = {
-								},
 								["qg"] = 25658,	-- Longrunner Bristlehorn
 								["sourceQuest"] = 11678,
 							}),
@@ -2272,8 +1874,6 @@ _.Zones =
 								["sourceQuest"] = 11687,
 							}),
 							qa(11693, {	--  Oh Great... Plagued Magnataur! [A]
-								["groups"] = {
-								},
 								["qg"] = 25705,	-- Bixie Wrenchshanker
 								["sourceQuest"] = 11692,
 							}),
@@ -2298,20 +1898,14 @@ _.Zones =
 								["sourceQuest"] = 11694,
 							}),
 							qa(11697, {	--  Rats, Tinky Went into the Necropolis! [A]
-								["groups"] = {
-								},
 								["qg"] = 25705,	-- Bixie Wrenchshanker
 								["sourceQuest"] = 11694,
 							}),
 							qa(11699, {	--  I'm Stuck in this Damned Cage... But Not For Long! [A]
-								["groups"] = {
-								},
 								["qg"] = 25714,	-- Tinky Wickwhistle
 								["sourceQuest"] = 11697,
 							}),
 							qa(11700, {	--  Let Bixie Know [A]
-								["groups"] = {
-								},
 								["qg"] = 25714,	-- Tinky Wickwhistle
 								["sourceQuest"] = 11699,
 							}),
@@ -2329,13 +1923,9 @@ _.Zones =
 						}),
 						-- Need "Coldrock Quarry" Header
 						q(11612, {	--  Reclaiming the Quarry
-							["groups"] = {
-							},
 							["qg"] = 25292,	-- Etaruk
 						}),
 						q(11617, {	--  Hampering Their Escape
-							["groups"] = {
-							},
 							["qg"] = 25292,	-- Etaruk
 							["sourceQuest"] = 11612,
 						}),
@@ -2350,18 +1940,11 @@ _.Zones =
 							["sourceQuest"] = 11617,
 						}),
 						o(187565, {	-- Elder Atkanok
-							q(11605, {	--  The Honored Ancestors
-								["groups"] = {
-								},
-							}),
+							q(11605),	--  The Honored Ancestors
 							q(11607, {	--  The Lost Spirits
-								["groups"] = {
-								},
 								["sourceQuest"] = 11605,
 							}),
 							q(11609, {	--  Picking Up the Pieces
-								["groups"] = {
-								},
 								["sourceQuest"] = 11607,
 							}),
 							q(11610, {	-- Leading the Ancestors Home
@@ -2377,8 +1960,6 @@ _.Zones =
 						-- Need "Bloodspore Plains" Header
 						o(187905, {	-- Massive Glowing Egg
 							q(11724, {	--  Massive Moth Omelet? [H]
-								["groups"] = {
-								},
 								["races"] = HORDE_ONLY,
 							}),
 						}),

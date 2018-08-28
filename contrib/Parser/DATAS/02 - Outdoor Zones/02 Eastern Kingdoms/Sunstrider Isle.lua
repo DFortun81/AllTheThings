@@ -5,54 +5,54 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(467, {	-- Sunstrider Isle
-			["groups"] = {					
+			["groups"] = {
 				n(-17, {	-- Quests
-					qh(37440, {	-- A Fistful of Slivers
+					q(37440, {	-- A Fistful of Slivers
 						["qg"] = 15296,	-- Arcanist Ithanas
 						["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 					}),
-					qh( 8334, {	-- Aggression
+					q(8334, {	-- Aggression
 						["qg"] = 15281,	-- Lanthan Perilon
 						["sourceQuests"] = { 8327 },	-- Report to Lanthan Perilon
 					}),
-					qh( 8347, {	-- Aiding the Outrunners
+					q(8347, {	-- Aiding the Outrunners
 						["qg"] = 15281,	-- Lanthan Perilon
 						["sourceQuests"] = { 8335 },	-- Felendren the Banished
 					}),
-					qh( 8335, {	-- Felendren the Banished
+					q(8335, {	-- Felendren the Banished
 						["qg"] = 15281,	-- Lanthan Perilon
 						["sourceQuests"] = { 8334 },	-- Aggression
 					}),
-					qh( 8325, {	-- Reclaiming Sunstrider Isle
+					q(8325, {	-- Reclaiming Sunstrider Isle
 						["qg"] = 15278,	-- Magistrix Erona
 					}),
-					qh( 8327, {	-- Report to Lanthan Perilon
+					q(8327, {	-- Report to Lanthan Perilon
 						["qg"] = 15278,	-- Magistrix Erona
 						["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 					}),
-					qh(37443, {	-- Solanian's Belongings
+					q(37443, {	-- Solanian's Belongings
 						["qg"] = 15295,	-- Well Watcher Solanian
 						["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 					}),
 					i(20483, {	-- Tained Arcane Sliver
-						qh(8338, {
+						q(8338, {
 							["qg"] = 15298,	-- Tainted Arcane Wraith
 						}),
 					}),
-					qh(37442, {	-- The Shrine of Dath'Remar
+					q(37442, {	-- The Shrine of Dath'Remar
 						["qg"] = 15295,	-- Well Watcher Solanian
 						["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 					}),
-					qh(37439, {	-- Thirst Unending
+					q(37439, {	-- Thirst Unending
 						["qg"] = 15297,	-- Arcanist Helion
 						["sourceQuests"] = { 8326 },	-- Unfortunate Measures
 					}),
-					qh( 8326, {	-- Unfortunate Measures
+					q( 8326, {	-- Unfortunate Measures
 						["qg"] = 15278,	-- Magistrix Erona
 						["sourceQuests"] = { 8325 },	-- Reclaiming Sunstrider Isle
 					}),
 				}),
-			},		
+			},
 			["races"] = { 10 }, -- Blood Elves
 			["lvl"] = 1,	
 			["achievementID"] = 859,

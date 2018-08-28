@@ -146,7 +146,6 @@ _.Zones =
 					i(115343, { -- Haephest's Satchel
 						["groups"] = {
 							q(36309, { -- The Strength of Iron
-								["groups"] = {},
 								["qg"] = 75043, -- Karnoth
 							}),
 						},

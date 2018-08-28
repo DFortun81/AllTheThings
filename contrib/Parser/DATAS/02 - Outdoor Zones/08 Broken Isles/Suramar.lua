@@ -552,35 +552,24 @@ _.Zones =
 						q(42833), -- How It's Made: Arcwinee
 						q(42792), -- Make Your Mark
 						i(136269, { -- Kel'danath's Manaflask
-							["groups"] = {
-							},
 							["questID"] = 42842,
 						}),
 						i(140328, { -- Volatile Leyline Crystal
-							["groups"] = {
-							},
 							["questID"] = 43988,
 						}),
 						i(140329, { -- Infinite Stone
-							["groups"] = {
-							},
 							["questID"] = 43989,
 						}),
 						i(140326, { -- Enchanted Burial Urn
-							["groups"] = {
-							},
 							["questID"] = 43986,
 						}),
 						i(140327, { -- Krytos's Research Notes
-							["groups"] = {
-							},
 							["questID"] = 43987,
 						}),
 					}),
 					n(-181, { -- Blacksmithing
 						["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
 							q(38525, { -- Part of the Team
-								["groups"] = {},
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38524, -- Felsmith Nal'ryssa
 							}),
@@ -592,7 +581,6 @@ _.Zones =
 								["sourceQuest"] = 38525, -- Part of the Team
 							}),
 							q(38527, { -- Nal'ryssa's Technique
-								["groups"] = {},
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38526, -- Smith Under Fire
 							}),
@@ -604,7 +592,6 @@ _.Zones =
 								["sourceQuest"] = 38527, -- Nal'ryssa's Technique
 							}),
 							q(38530, { -- The Firmament Stone
-								["groups"] = {},
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38528, -- Leystone's Potential
 							}),
@@ -1515,8 +1502,6 @@ _.Zones =
 						i(139979), -- Footpads of the Nightrunners
 						i(140015), -- Scavenged Felsoul Sabaton
 						i(140746, { -- Treasure Map: Suramar
-							["groups"] = {
-							},
 							["f"] = 55, -- Consumable
 						}),
 						i(140324), -- Mobile Telemancy Beacon
@@ -1678,203 +1663,123 @@ _.Zones =
 				n(0, { 		-- Zone Drops
 					["groups"] = {
 						i(141292, {	-- Crystallizing Mana
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121236, {	-- Dawnswood Hunter's Fletchings
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121234, { -- Koralune Keepsake
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121248, { -- Nightfall Chain
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121247, {	-- Nightfall Loop
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121232, {	-- Nightfallen Outcast's Cloak
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121235, { -- Sashj'tar Brooch
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(141293, {	-- Spellfire Oil
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121269, {	-- Moonfall Cowl
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121274, {	-- Moonfall Shoulderpads
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121272, {	-- Moonfall Robe
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121275, {	-- Moonfall Wristwraps
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121270, {	-- Moonfall Handwraps
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121268, {	-- Moonfall Cord
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121271, {	-- Moonfall Leggings
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121273, {	-- Moonfall Sandals
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121241, {	-- Ambervale Hood
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121243, {	-- Ambervale Shoulders
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121242, {	-- Ambervale Jerkin
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121237, {	-- Ambervale Bindings
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121240, {	-- Ambervale Gloves
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121244, {	-- Ambervale Waistband
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121239, {	-- Ambervale Britches
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121238, {	-- Ambervale Boots
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121264, {	-- Warpwind Helm
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121266, {	-- Warpwind Spaulders
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121267, {	-- Warpwind Vest
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121261, {	-- Warpwind Bracers
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121262, {	-- Warpwind Gauntlets
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121260, {	-- Warpwind Belt
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121265, {	-- Warpwind Legguards
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121263, {	-- Warpwind Greaves
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121224, {	-- Jandvik Helm
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121226, {	-- Jandvik Pauldrons
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121221, {	-- Jandvik Breastplate
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121228, {	-- Jandvik Vambraces
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121222, {	-- Jandvik Gauntlets
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121223, {	-- Jandvik Girdle
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121225, {	-- Jandvik Legplates
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121227, {	-- Jandvik Sabatons
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 					},

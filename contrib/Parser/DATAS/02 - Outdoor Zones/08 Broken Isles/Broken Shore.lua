@@ -281,39 +281,32 @@ _.Zones =
 						}),
 						i(147451, { -- Armorcrafter's Commendation
 							q(46696, { -- Fashion History and a Philosophy of Style
-								["groups"] = {},
 								["qg"] = 120221, -- Eliezer Hammerbeard
 								["description"] = "You must turn in the Commendation before this quest becomes available.",
 								["sourceQuest"] = 46774, -- The Nether Disruptor
 							}),
 						}),
 						q(46696, { -- The Legend of the Four Hammers
-							["groups"] = {},
 							["qg"] = 120221, -- Eliezer Hammerbeard
 							["sourceQuest"] = 46696, -- Fashion History and a Philosophy of Style
 						}),
 						q(46700, { -- Armor of the Ancients
-							["groups"] = {},
 							["qg"] = 120221, -- Eliezer Hammerbeard
 							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
 						}),
 						q(46698, { -- The Dragonhunter
-							["groups"] = {},
 							["qg"] = 120221, -- Eliezer Hammerbeard
 							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
 						}),
 						q(46697, { -- The Godfighter
-							["groups"] = {},
 							["qg"] = 120221, -- Eliezer Hammerbeard
 							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
 						}),
 						q(46699, { -- The Hellslayer
-							["groups"] = {},
 							["qg"] = 120221, -- Eliezer Hammerbeard
 							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
 						}),
 						q(46701, { -- Hammer of Forgotten Heroes
-							["groups"] = {},
 							["qg"] = 120221, -- Eliezer Hammerbeard
 							["description"] = "Once you've completed this quest, you should earn the ability to craft the legendary belt.",
 							["sourceQuests"] = { 46700, 46698, 46697, 46699 }, -- Armor of the Ancients, The Dragonhunter, The Godfighter, The Hellslayer
@@ -423,8 +416,6 @@ _.Zones =
 							crit(2, { -- Assault on Broken Shore
 								["groups"] = {
 									q(46734, { -- Assault on Broken Shore
-										["groups"] = {
-										},
 										["qg"] = 120215, -- Archmage Khadgar
 										["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
 									}),
@@ -437,20 +428,14 @@ _.Zones =
 											q(46245, { -- Begin Construction
 												["groups"] = {
 													q(46773, { -- The Command Center
-														["groups"] = {
-														},
 														["qg"] = 120183, -- Commander Chambers
 														["sourceQuests"] = { 46245 }, -- Begin Construction
 													}),
 													q(46772, { -- The Mage Tower
-														["groups"] = {
-														},
 														["qg"] = 120183, -- Commander Chambers
 														["sourceQuests"] = { 46245 }, -- Begin Construction
 													}),
 													q(46774, { -- The Nether Disruptor
-														["groups"] = {
-														},
 														["qg"] = 120183, -- Commander Chambers
 														["sourceQuests"] = { 46245 }, -- Begin Construction
 													}),
@@ -467,8 +452,6 @@ _.Zones =
 							crit(4, { -- Aalgen Point
 								["groups"] = {
 									q(46832, { -- Aalgen Point
-										["groups"] = {
-										},
 										["qg"] = 120183, -- Commander Chambers
 										["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
 									}),
@@ -477,8 +460,6 @@ _.Zones =
 							crit(5, { -- Vengeance Point
 								["groups"] = {
 									q(46845, { -- Vengeance Point
-										["groups"] = {
-										},
 										["qg"] = 120118, -- Heidirk the Scalekeeper
 										["sourceQuests"] = { 46832 }, -- Aalgen Point
 									}),
@@ -487,8 +468,6 @@ _.Zones =
 							crit(6, { -- Defending Broken Isles
 								["groups"] = {
 									q(46247, { -- Defending Broken Isles
-										["groups"] = {
-										},
 										["qg"] = 116576, -- Maiev Shadowsong
 										["sourceQuests"] = { 46286 }, -- Legionfall Supplies
 									}),
@@ -500,63 +479,43 @@ _.Zones =
 										["groups"] = {
 											cl(10, { -- Monk
 												["groups"] = {
-													q(45440, { -- A Brewing Situation	
-														["groups"] = {
-														},
+													q(45440, { -- A Brewing Situation
 														["qg"] = 116929, -- Brewmaster Blancee
 														["sourceQuests"] = { 47137 }, -- Champions of Legionfall
 													}),	
-													q(45404, { -- Panic at the Brewery	
-														["groups"] = {
-														},
+													q(45404, { -- Panic at the Brewery
 														["qg"] = 119664, -- Brewmaster Almai
 														["sourceQuests"] = { 45440 }, -- A Brewing Situation
 													}),	
-													q(45459, { -- Storming the Legion	
-														["groups"] = {
-														},
+													q(45459, { -- Storming the Legion
 														["qg"] = 119765, -- Spirit of Brewmaster Blanche
 														["sourceQuests"] = { 45404 }, -- Panic at the Brewery
 													}),	
-													q(45574, { -- Fel Ingredients	
-														["groups"] = {
-														},
+													q(45574, { -- Fel Ingredients
 														["qg"] = 117305, -- Brewmaster Almai
 														["sourceQuests"] = { 45459 }, -- Storming the Legion
 													}),	
-													q(45449, { -- Alchemist Koryla	
-														["groups"] = {
-														},
+													q(45449, { -- Alchemist Koryla
 														["qg"] = 117305, -- Brewer Almai
 														["sourceQuests"] = { 45459 }, -- Storming the Legion
 													}),	
-													q(45545, { -- Barrel Toss	
-														["groups"] = {
-														},
+													q(45545, { -- Barrel Toss
 														["qg"] = 117305, -- Brewer Almai
 														["sourceQuests"] = { 45459 }, -- Storming the Legion
 													}),	
-													q(46320, { -- Hope For a Cure	
-														["groups"] = {
-														},
+													q(46320, { -- Hope For a Cure
 														["qg"] = 117305, -- Brewer Almai
 														["sourceQuests"] = { 45574, 45449, 45545 }, -- Fel Ingredients / Alchemist Koryla / Barrel Toss
 													}),	
-													q(45442, { -- Not Felling Well	
-														["groups"] = {
-														},
+													q(45442, { -- Not Felling Well
 														["qg"] = 119765, -- Spirit of Brewmaster Blanche
 														["sourceQuests"] = { 46320 }, -- Hope For a Cure
 													}),	
-													q(45771, { -- A Time for Everything	
-														["groups"] = {
-														},
+													q(45771, { -- A Time for Everything
 														["qg"] = 119765, -- Spirit of Brewmaster Blanche
 														["sourceQuests"] = { 45442 }, -- Not Felling Well
 													}),	
-													q(45790, { -- Champion: Almai	
-														["groups"] = {
-														},
+													q(45790, { -- Champion: Almai
 														["qg"] = 117504, -- Brewer Almai
 														["sourceQuests"] = { 45771 }, -- A Time for Everything
 													}),
@@ -571,8 +530,6 @@ _.Zones =
 							crit(8, { -- Shard Times
 								["groups"] = {
 									q(46251, { -- Shard Times
-										["groups"] = {
-										},
 										["qg"] = 116302, -- Archmage Khadgar
 										["sourceQuests"] = { 47137 }, -- Champions of Legionfall
 									}),
@@ -581,8 +538,6 @@ _.Zones =
 							crit(9, { -- Mark of the Sentinax
 								["groups"] = {
 									q(47139, { -- Mark of the Sentinax
-										["groups"] = {
-										},
 										["qg"] = 117873, -- Illidan Stormrage
 										["sourceQuests"] = { 46251 }, -- Shard Times
 									}),
@@ -591,8 +546,6 @@ _.Zones =
 							crit(10, { -- Self-Fulfilling Prophecy
 								["groups"] = {
 									q(46248, { -- Self-Fulfilling Prophecy
-										["groups"] = {
-										},
 										["qg"] = 120372, -- Prophet Velen
 										["sourceQuests"] = { 47139 }, -- Mark of the Sentinax
 									}),
@@ -601,8 +554,6 @@ _.Zones =
 							crit(11, { -- Intolerable Infestation
 								["groups"] = {
 									q(46252, { -- Intolerable Infestation
-										["groups"] = {
-										},
 										["qg"] = 116576, -- Maiev Shadowsong
 										["sourceQuests"] = { 46248 }, -- Self-Fulfilling Prophecy
 									}),
@@ -611,8 +562,6 @@ _.Zones =
 							crit(12, { -- Relieved of Thier Valuables
 								["groups"] = {
 									q(46769, { -- Relieved of Their Valuables
-										["groups"] = {
-										},
 										["qg"] = 116302, -- Archmage Khadgar
 										["sourceQuests"] = { 46252 }, -- Intolerable Infestation
 									}),
@@ -621,8 +570,6 @@ _.Zones =
 							crit(13, { -- Take Out the Head...
 								["groups"] = {
 									q(46250, { -- Take Out the Head...
-										["groups"] = {
-										},
 										["qg"] = 116576, -- Maiev Shadowsong
 										["sourceQuests"] = { 46769 }, -- Relieved of Their Valuables
 									}),
@@ -631,8 +578,6 @@ _.Zones =
 							crit(14, { -- Championing Our Cause
 								["groups"] = {
 									q(46249, { -- Championing Our Cause
-										["groups"] = {
-										},
 										["qg"] = 116302, -- Archmage Khadgar
 										["sourceQuests"] = { 46250 }, -- Take Out the Head...
 									}),
@@ -641,8 +586,6 @@ _.Zones =
 							crit(15, { -- Strike Them Down
 								["groups"] = {
 									q(46246, { -- Strike Them Down
-										["groups"] = {
-										},
 										["qg"] = 116576, -- Maiev Shadowsong
 										["sourceQuests"] = { 46249 }, -- Championing Our Cause
 									}),
@@ -669,14 +612,10 @@ _.Zones =
 								["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
 							}),
 							q(46253, { -- Pillars of Creation
-								["groups"] = {
-								},
 								["qg"] = 116302, -- Archmage Khadgar
 								["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
 							}),
 							q(47067, { -- Seeking Lost Knowledge
-								["groups"] = {
-								},
 								["qg"] = 116302, -- Archmage Khadgar
 								["u"] = 2,
 							}),
@@ -684,38 +623,26 @@ _.Zones =
 						}),
 						i(143559, { -- Wyrmtongue's Cache Key
 							q(46499, { -- Spiders, Huh?
-								["groups"] = {
-								},
 								["qg"] = 119886, -- Excavator Karla
 								["sourceQuests"] = { 46734 }, -- Assault on Brokeen Shore
 							}),
 							q(46501, { -- Grave Robbin'
-								["groups"] = {
-								},
 								["qg"] = 119886, -- Excavator Karla
 								["sourceQuests"] = { 46499 }, -- Spiders, Huh?
 							}),
 							q(46509, { -- Tomb Raidering
-								["groups"] = {
-								},
 								["qg"] = 119886, -- Excavator Karla
 								["sourceQuests"] = { 46501 }, -- Grave Robbin'
 							}),
 							q(46510, { -- Ship Graveyard
-								["groups"] = {
-								},
 								["qg"] = 119886, -- Excavator Karla
 								["sourceQuests"] = { 46509 }, -- Tomb Raidering
 							}),
 							q(46511, { -- We're Treasure Hunters
-								["groups"] = {
-								},
 								["qg"] = 119886, -- Excavator Karla
 								["sourceQuests"] = { 46510 }, -- Ship Graveyard
 							}),
 							q(46666, { -- The Motherlode
-								["groups"] = {
-								},
 								["qg"] = 119886, -- Excavator Karla
 								["sourceQuests"] = { 46511 }, -- We're Treasure Hunters
 							}),
@@ -728,8 +655,6 @@ _.Zones =
 							},
 						}),
 						q(46317, { -- Talon's Call
-							["groups"] = {
-							},
 							["qg"] = 118105, -- Grovewarden Proudhorn
 							["sourceQuests"] = { 46246 }, -- Strike Them Down
 							["classes"] = { 11 },  -- Druid
@@ -1397,85 +1322,61 @@ _.Zones =
 						n(111573, { 	-- Kosumoth the Hungering
 							["groups"] = {
 								n(-84, { 	-- Drak'thul
-									["groups"] = {
-									},
 									["modelID"] = 71795,
 									["questID"] = 43715,
 									["description"] = "|cFFFFFFFFStep 1:|r Head to |cFFFFFFFF37.17, 71.82|r. Speak with |cFFFFD700Drak'thul|r and choose option 1. \n\n|cffcc33ffThe demons are taking over this island, you may want to leave.|r \n\nChoose option 1 again. \n\n|cffcc33ffYou must know much. Will you help us defeat them?|r \n\nHe tells you to go away.",
 								}),	
 								o(252412, { -- Mound of Dirt
-									["groups"] = {
-									},
 									["icon"] = "Interface\\Icons\\INV_MISC_DUST_05",
 									["questID"] = 43729,						
 									["description"] = "|cFFFFFFFFStep :2|r Head to the |cFFFFD700Feldust Cavern|r at |cFFFFFFFF58.56, 53.99|r.  Walk inside to |cFFFFFFFF57.45, 55.95|r and click the |cFFFFD700Mound of Dirt|r to loot the |cFFFFD700Weathered Relic|r\n\nHead back to |cFFFFFFFF37.17, 71.82|r. Speak with |cFFFFD700Drak'thul|r and choose option 1. \n\n|cffcc33ffDo you recognize this relic?|r \n\nSpeak to him again and choose option 1. \n\n|cffcc33ffTell me of these whispers.|r\n\nSpeak to him again and choose option 1.\n\n|cffcc33ffDrak'thul?|r.\n\nSpeak to him again and choose option 1. \n\n|cffcc33ffYou are yourself again. What happened?|r \n\nSpeak to him again and he will tell you to go away",
 								}),	
 								o(252557, { -- Hungering Orb 1
-									["groups"] = {
-									},
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43730,						
 									["description"] = "|cFFFFFFFFStep 3:|r This step will send you to |cFFFFD700Azsuna|r.  Head to |cFFFFFFFF37.96, 37.41|r, walk down into the cave and click on the purple |cFFFFD700Hungering Orb|r in the fountain.",
 								}),
-								o(252558, { -- Hungering Orb 2					
-									["groups"] = {
-									},
+								o(252558, { -- Hungering Orb 2
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43731,						
 									["description"] = "|cFFFFFFFFStep 4:|r This step will send you to |cFFFFD700Stormheim|r.  Head to |cFFFFFFFF32.92, 75.90|r, walk into the cave and make sure to avoid the |cFFFFD700Kangaxx|r.  Click on the |cFFFFD700Hungering Orb|r at the back of the cave in the sack of scrolls.",
 								}),
-								o(252559, { -- Hungering Orb 3					
-									["groups"] = {
-									},
+								o(252559, { -- Hungering Orb 3
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43732,						
 									["description"] = "|cFFFFFFFFStep 5:|r This step will send you to Val'sharah|r.  Head to |cFFFFFFFF41.51, 84.18|r, walk into the cave and take a left to see a table with a note on it.  Turn left and walk over the rocks, turn back right and kill the |cFFFFD700Arcane Servitor|r.  Click the |cFFFFD700Hungering Orb|r sitting on the ground between two sleeping pads.",
 								}),
-								o(252560, { -- Hungering Orb 4					
-									["groups"] = {
-									},
+								o(252560, { -- Hungering Orb 4
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43733,						
 									["description"] = "|cFFFFFFFFStep 6:|r This step will send you to |cFFFFD700The Great Sea|r near |cFFFFD700Broken Shore|r.  Head to |cFFFFFFFF29.16, 78.57|r, swim down and the cave is under the rock ledge.  Walk forward avoiding the steam explosions and click on the |cFFFFD700Hungering Orb|r sitting under a leanto in some leaves.\n\n|cffcc33ffNote: Be careful not to die to fatigue, fatigue will stop once in the cave.|r",
 								}),
-								o(252561, { -- Hungering Orb 5					
-									["groups"] = {
-									},
+								o(252561, { -- Hungering Orb 5
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43734,						
 									["description"] = "|cFFFFFFFFStep 7:|r This step will send you to |cFFFFD700Azsuna|r.  Head to |cFFFFFFFF59.37, 13.13|r, walk down into the cave and click on the |cFFFFD700Hungering Orb|r that is wrapped in stone beside a broken table.",
 								}),
-								o(252562, { -- Hungering Orb 6					
-									["groups"] = {
-									},
+								o(252562, { -- Hungering Orb 6
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43735,						
 									["description"] = "|cFFFFFFFFStep 8:|r This step will send you to |cFFFFD700The Great Sea|r near |cFFFFD700Stormheim|r.  Head to the |cFFFFD700Shield's Rest|r flight point.  Fly northwest until you see a broken statue with a large axe in the water named |cFFFFD700Sotnar's Rest|r.  Swim down where the hand comes out of the water between the 2 jutting  stones and you should see a |cFFFFD700Toothless Great White|r.  Swim down beneath the shark and turn into the opening then swim up into the cave.  Avoid the steam explosions and click on the |cFFFFD700Hungering Orb|r.",
 								}),
-								o(252563, { -- Hungering Orb 7					
-									["groups"] = {
-									},
+								o(252563, { -- Hungering Orb 7
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43736,						
 									["description"] = "|cFFFFFFFFStep 9:|r This step will send you to |cFFFFD700Highmountain|r.  Head to |cFFFFFFFF55.84, 38.47|r.  This cave is to the right of the main cave here through the bushes.  Click on the |cFFFFD700Hungering Orb|r that is under the dead animal skull on the ground.",
 								}),
-								o(252564, { -- Hungering Orb 8					
-									["groups"] = {
-									},
+								o(252564, { -- Hungering Orb 8
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43737,						
 									["description"] = "|cFFFFFFFFStep 10:|r This step will send you to |cFFFFD700Azsuna|r.  Head to |cFFFFFFFF54.02, 26.18|r, walk down into the cave and click the |cFFFFD700Hungering Orb|r that is under the plant next to the second pillar.",
 								}),
-								o(252565, { -- Hungering Orb 9					
-									["groups"] = {
-									},
+								o(252565, { -- Hungering Orb 9
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43760,						
 									["description"] = "|cFFFFFFFFStep 11:|r This step will send you to |cFFFFD700Eye of Azshara|r, the zone.  Head to |cFFFFFFFF79.52, 89.31|r.  Swim down to find a wrecked ship, you can swim into the ship between the anchor and the rock throught the seaweed.  Swim up and to the platform above and through the hole on right side.  Now swim through the seaweed hole on left and down.  Turn around and swim under the beam then through the seaweed to the left.  Click the  |cFFFFD700Hungering Orb|r that is on the right side in the water.",
 								}),
-								o(252434, { -- Hungering Orb 10					
-									["groups"] = {
-									},
+								o(252434, { -- Hungering Orb 10
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43761,						
 									["description"] = "|cFFFFFFFFStep 12:|r This step will send you to |cFFFFD700Broken Shore|r.  Head to |cFFFFFFFF37.17, 71.82|r.  Click the |cFFFFD700Hungering Orb|r that is on the stone table near |cFFFFD700Drak'Thul|r",

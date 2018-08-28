@@ -121,20 +121,14 @@ _.Zones =
 					a(ach(35, {		-- Might of Dragonblight
 						crit(1, {	--The Warden's Task
 							q(12166, {	--  The Liquid Fire of Elune [A]
-								["groups"] = {
-								},
 								["qg"] = 26973,	-- Warden Jodi Moonsong
 							}),
 							q(12167, {	--  Kill the Cultists [A]
-								["groups"] = {
-								},
 								["qg"] = 26973,	-- Warden Jodi Moonsong
 								["sourceQuests"] = {12166},
 							}),
 							i(36958, {	-- The Favor of Zangus
 								q(12168, {	--  The Favor of Zangus [A]
-									["groups"] = {
-									},
 									["sourceQuests"] = {12167},
 									["qg"] = 26319,	-- Anub'ar Cultist
 								}),
@@ -152,8 +146,6 @@ _.Zones =
 						}),
 						crit(2, {	--Redirecting the Ley Lines
 							q(12000, {	--  Rifle the Bodies [A]
-								["groups"] = {
-								},
 								["qg"] = 26673,	-- Image of Archmage Modera
 								["sourceQuests"] = {11995,12439,12440,39204},
 							}),
@@ -169,21 +161,15 @@ _.Zones =
 							}),
 							i(36742, {	-- Goramosh's Strange Device
 								q(12055, {	--  A Strange Device [A]
-									["groups"] = {
-									},
 									["sourceQuests"] = {12004},
 									["qg"] = 26349,	-- Goramosh
 								}),
 							}),
 							q(12060, {	--  Projections and Plans
-								["groups"] = {
-								},
 								["qg"] = 26673,	-- Image of Archmage Modera
 								["sourceQuests"] = {12055},
 							}),
 							q(12065, {	--  The Focus on the Beach
-								["groups"] = {
-								},
 								["qg"] = 26673,	-- Image of Archmage Modera
 								["sourceQuests"] = {12060},
 							}),
@@ -198,8 +184,6 @@ _.Zones =
 								["sourceQuests"] = {12065},
 							}),
 							q(12098, {	--  Search Indu'le Village
-								["groups"] = {
-								},
 								["qg"] = 26673,	-- Image of Archmage Modera
 								["sourceQuests"] = {12083},
 							}),
@@ -217,32 +201,22 @@ _.Zones =
 						}),
 						crit(3, {	--Informing the Queen
 							q(12119, {	--  Gaining an Audience [A]
-								["groups"] = {
-								},
 								["qg"] = 26673,	-- Image of Archmage Modera
 								["sourceQuests"] = {12107},
 							}),
 							q(12766, {	--  Speak with your Ambassador [A]
-								["groups"] = {
-								},
 								["qg"] = 26443,	-- Tariolstrasz
 								["sourceQuests"] = {12119},
 							}),
 							q(12460, {	--  Report to the Ruby Dragonshrine [A]
-								["groups"] = {
-								},
 								["qg"] = 27803,	-- Lauriel Trueblade
 								["sourceQuests"] = {12766},
 							}),
 							q(12416, {	--  Heated Battle
-								["groups"] = {
-								},
 								["qg"] = 27506,	-- Ceristrasz
 								["sourceQuests"] = {12460},
 							}),
 							q(12417, {	--  Return to the Earth
-								["groups"] = {
-								},
 								["qg"] = 27506,	-- Ceristrasz
 								["sourceQuests"] = {12416},
 							}),
@@ -257,14 +231,10 @@ _.Zones =
 								["sourceQuests"] = {12417},
 							}),
 							q(12768, {	--  The Steward of Wyrmrest Temple
-								["groups"] = {
-								},
 								["qg"] = 27506,	-- Ceristrasz
 								["sourceQuests"] = {12418},
 							}),
 							q(12123, {	--  Informing the Queen
-								["groups"] = {
-								},
 								["qg"] = 26443,	-- Tariolstrasz
 								["sourceQuests"] = {12768},
 							}),
@@ -272,8 +242,6 @@ _.Zones =
 						crit(4, {	--The Dragonflights
 							i(37833, {	--	Ruby Brooch
 								q(12419, {	--  The Fate of the Ruby Dragonshrine
-									["groups"] = {
-									},
 									["qg"] = 27680,	-- Dahlia Suntouch
 									["sourceQuests"] = {12418},
 								}),
@@ -297,37 +265,25 @@ _.Zones =
 								["sourceQuests"] = {12470},
 							}),
 							q(12447, {	--  The Obsidian Dragonshrine
-								["groups"] = {
-								},
 								["qg"] = 27765,	-- Nalice
 							}),
 							q(12261, {	--  No Place to Run
-								["groups"] = {
-								},
 								["qg"] = 26593,	-- Serinar
 								["sourceQuests"] = {12447},
 							}),
 							q(12262, {	--  No One to Save You
-								["groups"] = {
-								},
 								["qg"] = 26593,	-- Serinar
 								["sourceQuests"] = {12447},
 							}),
 							q(12263, {	--  The Best of Intentions
-								["groups"] = {
-								},
 								["qg"] = 26593,	-- Serinar
 								["sourceQuests"] = {12261,12262},
 							}),
 							q(12264, {	--  Culling the Damned
-								["groups"] = {
-								},
 								["qg"] = 26593,	-- Serinar
 								["sourceQuests"] = {12263},
 							}),
 							q(12265, {	--  Defiling the Defilers
-								["groups"] = {
-								},
 								["qg"] = 26593,	-- Serinar
 								["sourceQuests"] = {12263},
 							}),
@@ -342,14 +298,10 @@ _.Zones =
 								["sourceQuests"] = {12264,12265},
 							}),
 							q(12266, {	--  Tales of Destruction
-								["groups"] = {
-								},
 								["qg"] = 26593,	-- Serinar
 								["sourceQuests"] = {12266},
 							}),
 							q(12458, {	--  Seeds of the Lashers
-								["groups"] = {
-								},
 								["qg"] = 27785,	-- Lord Itharius
 							}),
 							q(12459, {	-- That Which Creates Can Also Destroy
@@ -363,13 +315,9 @@ _.Zones =
 								["sourceQuests"] = {12458},
 							}),
 							q(12435, {	--  Report to Lord Afrasastrasz
-								["groups"] = {
-								},
 								["qg"] = 26917,	-- Alexstrasza the Life-Binder
 							}),
 							q(12454, {	--  Cycle of Life
-								["groups"] = {
-								},
 								["qg"] = 27255,	-- Nishera the Garden Keeper
 							}),
 							q(12456, {	-- The Plume of Alystros
@@ -385,32 +333,22 @@ _.Zones =
 						}),
 						crit(5, {	--Angrathar the Wrathgate
 							q(12157, {	--  The Lost Courier [A]
-								["groups"] = {
-								},
 								["qg"] = 26186,	-- Private Casey
 								["isBreadcrumb"] = true,
 							}),
 							q(12171, {	--  Of Traitors and Treason [A]
-								["groups"] = {
-								},
 								["qg"] = 27060,	-- Courier Lanson
 								["sourceQuests"] = {12157},
 							}),
 							q(12174, {	--  High Commander Halford Wyrmbane [A]
-								["groups"] = {
-								},
 								["qg"] = 26881,	-- Palena Silvercloud
 								["sourceQuests"] = {12171},
 							}),
 							q(12235, {	--  Naxxramas and the Fall of Wintergarde [A]
-								["groups"] = {
-								},
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12174,12298},
 							}),
 							q(12237, {	--  Flight of the Wintergarde Defender [A]
-								["groups"] = {
-								},
 								["qg"] = 27317,	-- Gryphon Commander Urik
 								["sourceQuests"] = {12235},
 							}),
@@ -425,36 +363,26 @@ _.Zones =
 								["sourceQuests"] = {12237},
 							}),
 							q(12253, {	--  Rescue from Town Square [A]
-								["groups"] = {
-								},
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12251},
 							}),
 							q(12309, {	--  Find Durkon! [A]
-								["groups"] = {
-								},
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12253},
 							}),
 							o(189311, {	--	Flesh-bound Tome
 								["groups"] = {
 									q(12312, {	--  Secrets of the Scourge [A]
-										["groups"] = {
-										},
 										["sourceQuests"] = {12309},
 									}),
 								},
 								["model"] = "World\\Goober\\g_bookopenmedium07.mdx",
 							}),
 							q(12319, {	--  Mystery of the Tome [A]
-								["groups"] = {
-								},
 								["qg"] = 27318,	-- Cavalier Durkon
 								["sourceQuests"] = {12312},
 							}),
 							q(12320, {	--  Understanding the Language of Death [A]
-								["groups"] = {
-								},
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12319},
 							}),
@@ -469,20 +397,14 @@ _.Zones =
 								["sourceQuests"] = {12320},
 							}),
 							q(12275, {	--  The Demo-gnome [A]
-								["groups"] = {
-								},
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12251},
 							}),
 							q(12272, {	--  The Bleeding Ore [A]
-								["groups"] = {
-								},
 								["qg"] = 27159,	-- Siege Engineer Quarterflash
 								["sourceQuests"] = {12275},
 							}),
 							q(12276, {	--  The Search for Slinkin [A]
-								["groups"] = {
-								},
 								["qg"] = 27159,	-- Siege Engineer Quarterflash
 								["sourceQuests"] = {12275},
 							}),
@@ -497,14 +419,10 @@ _.Zones =
 								["sourceQuests"] = {12276},
 							}),
 							q(12281, {	--  Understanding the Scourge War Machine [A]
-								["groups"] = {
-								},
 								["qg"] = 27159,	-- Siege Engineer Quarterflash
 								["sourceQuests"] = {12277,12272},
 							}),
 							q(12325, {	--  Into Hostile Territory [A]
-								["groups"] = {
-								},
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12321,12281},
 							}),
@@ -518,32 +436,22 @@ _.Zones =
 								["sourceQuests"] = {12325},
 							}),
 							q(12455, {	--  Scattered To The Wind [A]
-								["groups"] = {
-								},
 								["qg"] = 1293,	-- Ambo Cash
 								["sourceQuests"] = {12326},
 							}),
 							q(12457, {	--  The Chain Gun And You [A]
-								["groups"] = {
-								},
 								["qg"] = 1293,	-- Ambo Cash
 								["sourceQuests"] = {12455},
 							}),
 							q(12463, {	--  Plunderbeard Must Be Found! [A]
-								["groups"] = {
-								},
 								["qg"] = 1293,	-- Ambo Cash
 								["sourceQuests"] = {12457},
 							}),
 							q(12465, {	--  Plunderbeard's Journal [A]
-								["groups"] = {
-								},
 								["qg"] = 27828,	-- Plunderbeard
 								["sourceQuests"] = {12463},
 							}),
 							q(12466, {	--  Chasing Icestorm: The 7th Legion Front [A]
-								["groups"] = {
-								},
 								["qg"] = 1293,	-- Ambo Cash
 								["sourceQuests"] = {12465},
 							}),
@@ -558,14 +466,10 @@ _.Zones =
 								["sourceQuests"] = {12466},
 							}),
 							q(12472, {	--  Finality [A]
-								["groups"] = {
-								},
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12467},
 							}),
 							q(12473, {	--  An End And A Beginning [A]
-								["groups"] = {
-								},
 								["qg"] = 27857,	-- Legion Commander Yorik
 								["sourceQuests"] = {12472},
 							}),
@@ -580,14 +484,10 @@ _.Zones =
 								["sourceQuests"] = {12473},
 							}),
 							q(12495, {	--  Audience With The Dragon Queen [A]
-								["groups"] = {
-								},
 								["qg"] = 27872,	-- Highlord Bolvar Fordragon
 								["sourceQuests"] = {12474},
 							}),
 							q(12497, {	--  Galakrond and the Scourge
-								["groups"] = {
-								},
 								["qg"] = 26917,	-- Alexstrasza the Life-Binder
 								["sourceQuests"] = {12495},
 							}),
@@ -602,8 +502,6 @@ _.Zones =
 								["sourceQuests"] = {12497},
 							}),
 							q(12499, {	--  Return To Angrathar [A]
-								["groups"] = {
-								},
 								["qg"] = 26917,	-- Alexstrasza the Life-Binder
 								["sourceQuests"] = {12498},
 							}),
@@ -620,26 +518,18 @@ _.Zones =
 								["sourceQuests"] = {12251},
 							}),
 							q(12287, {	--  Orik Trueheart and the Forgotten Shore [A]
-								["groups"] = {
-								},
 								["qg"] = 27314,	-- Zelig the Visionary
 								["sourceQuests"] = {12282},
 							}),
 							q(12290, {	--  The Murkweed Elixir [A]
-								["groups"] = {
-								},
 								["qg"] = 27347,	-- Orik Trueheart
 								["sourceQuests"] = {12287},
 							}),
 							q(12291, {	--  The Forgotten Tale [A]
-								["groups"] = {
-								},
 								["qg"] = 27347,	-- Orik Trueheart
 								["sourceQuests"] = {12290},
 							}),
 							q(12301, {	--  The Truth Shall Set Us Free [A]
-								["groups"] = {
-								},
 								["qg"] = 27347,	-- Orik Trueheart
 								["sourceQuests"] = {12291},
 							}),
@@ -655,8 +545,6 @@ _.Zones =
 								["sourceQuests"] = {12301},
 							}),
 							q(12475, {	--  What Secrets Men Hide [A]
-								["groups"] = {
-								},
 								["qg"] = 27314,	-- Zelig the Visionary
 								["sourceQuests"] = {12305},
 							}),
@@ -673,26 +561,18 @@ _.Zones =
 						}),
 						crit(7, {	--"Strategic Alliance"
 							q(12075, {	--  Slim Pickings
-								["groups"] = {
-								},
 								["qg"] = 26659,	-- Zort
 								["sourceQuests"] = {12112},
 							}),
 							q(12076, {	--  Messy Business
-								["groups"] = {
-								},
 								["qg"] = 26659,	-- Zort
 								["sourceQuests"] = {12075},
 							}),
 							q(12077, {	--  Apply This Twice A Day
-								["groups"] = {
-								},
 								["qg"] = 26659,	-- Zort
 								["sourceQuests"] = {12076},
 							}),
 							q(12078, {	--  Worm Wrangler
-								["groups"] = {
-								},
 								["qg"] = 26659,	-- Zort
 								["sourceQuests"] = {12077},
 							}),
@@ -709,8 +589,6 @@ _.Zones =
 						}),
 						crit(8, {	--Oacha'noa
 							q(11958, {	--  Let Nothing Go To Waste
-								["groups"] = {
-								},
 								["qg"] = 26194,	-- Elder Ko'nani
 								["sourceQuests"] = {12117},
 							}),
@@ -725,22 +603,16 @@ _.Zones =
 								["sourceQuests"] = {11958},
 							}),
 							q(12028, {	--  Spiritual Insight
-								["groups"] = {
-								},
 								["qg"] = 26595,	-- Toalu'u the Mystic
 								["sourceQuests"] = {11959},
 							}),
 							q(12030, {	--  Elder Mana'loa
-								["groups"] = {
-								},
 								["qg"] = 26595,	-- Toalu'u the Mystic
 								["sourceQuests"] ={12028},
 							}),
 							o(188419, {	--	Elder Mana'loa
 								["groups"] = {
 									q(12031, {	--  Freedom for the Lingering
-										["groups"] = {
-										},
 										["sourceQuests"] = {12030},
 									}),
 									q(12032, {	-- Conversing With the Depths
@@ -805,8 +677,6 @@ _.Zones =
 								["sourceQuests"] = {12542},
 							}),
 							q(12789, {	--  Into the Breach!
-								["groups"] = {
-								},
 								["qg"] = 28228,	-- Crusader Valus
 								["sourceQuests"] = {12545},
 							}),
@@ -823,8 +693,6 @@ _.Zones =
 						-- }),
 						sz(1265, 12, {	--Wyrmrest Temple
 							q(12372, {	--  Defending Wyrmrest Temple
-								["groups"] = {
-								},
 								["qg"] = 27575,	-- Lord Afrasastrasz
 								["sourceQuests"] = {12435},
 							}),
@@ -837,15 +705,11 @@ _.Zones =
 						-- }),
 						sz(1265, 16, {	--The Crystal Vice
 							q(12112, {	--  Stiff Negotiations
-								["groups"] = {
-								},
 								["qg"] = 26647,	-- Narf
 								["sourceQuests"] = {12052},
 								["isBreadcrumb"] = true,
 							}),
 							q(12079, {	--  Stomping Grounds
-								["groups"] = {
-								},
 								["qg"] = 26473,	-- Ko'char the Unbreakable
 								["sourceQuests"] = {12075},
 							}),
@@ -854,30 +718,20 @@ _.Zones =
 						-- }),
 						-- Need "Nozzlerust Post" Header
 						q(12043, {	--  Nozzlerust Defense
-							["groups"] = {
-							},
 							["qg"] = 26647,	-- Narf
 						}),
 						q(12044, {	--  Stocking Up
-							["groups"] = {
-							},
 							["qg"] = 26660,	-- Xink
 							["sourceQuests"] = {12469},
 						}),
 						q(12045, {	--  Shaved Ice
-							["groups"] = {
-							},
 							["qg"] = 26661,	-- Zivlix
 						}),
 						q(12046, {	--  Soft Packaging
-							["groups"] = {
-							},
 							["qg"] = 26661,	-- Zivlix
 							["sourceQuests"] ={12045},
 						}),
 						q(12049, {	--  Hard to Swallow
-							["groups"] = {
-							},
 							["qg"] = 26660,	-- Xink
 							["sourceQuests"] = {12046},
 						}),
@@ -916,8 +770,6 @@ _.Zones =
 						}),
 						-- Need "Moonrest Gardens" Header
 						q(12006, {	--  Avenge this Atrocity!
-							["groups"] = {
-							},
 							["qg"] = 26501,	-- Ethenial Moonshadow
 						}),
 						q(12013, {	-- End Arcanimus
@@ -933,8 +785,6 @@ _.Zones =
 						-- Need "Glittering Strand" Header
 						a(i(36756, {	-- Captain Malin's Letter
 							q(12067, {	--  A Letter for Home [A]
-								["groups"] = {
-								},
 								["qg"] = 26762,	-- Captain Emmy Malin
 								["sourceQuests"] = {12065},
 							}),
@@ -951,40 +801,27 @@ _.Zones =
 							["sourceQuests"] = {12065},
 						}),
 						q(12172, {	--  Attunement to Dalaran [A]
-							["groups"] = {
-							},
 							["classes"] = {8},
 							["qg"] = 26673,	-- Image of Archmage Modera
 						}),
 						q(12794, {	--  The Magical Kingdom of Dalaran [A]
-							["groups"] = {
-							},
 							["qg"] = 26673,	-- Image of Archmage Modera 
 						}),
 						-- Need "Moa'ki Harbor" Header
 						q(12009, {	--  Tua'kea's Crab Traps
-							["groups"] = {
-							},
 							["qg"] = 26245,	-- Tua'kea
 							["sourceQuests"] = {11959},
 						}),
 						q(11960, {	--  Planning for the Future [Daily]
-							["groups"] = {
-							},
 							["qg"] = 26228,	-- Trapper Mau'i
 						}),
 						o(188364, {	-- Wrecked Crab Trap
 							["groups"] = {
-								q(12011, {	--  Signs of Big Watery Trouble
-									["groups"] = {
-									},
-								}),
+								q(12011),	--  Signs of Big Watery Trouble
 							},
 							["model"] = "World\\Expansion02\\Doodads\\Generic\\Tuskarr\\ts_crabbasket_broken.mdx",
 						}),
 						q(12016, {	--  The Bait
-							["groups"] = {
-							},
 							["qg"] = 26245,	-- Tua'kea
 							["sourceQuests"] = {12011},
 						}),
@@ -999,8 +836,6 @@ _.Zones =
 							["sourceQuests"] = {12016},
 						}),
 						q(11995, {	--  Your Presence is Required at Stars' Rest [A]
-							["groups"] = {
-							},
 							["qg"] = 26440,	-- Emissary Skyhaven
 							["isBreadcrumb"] = true,
 						}),
@@ -1037,14 +872,10 @@ _.Zones =
 							["sourceQuests"] = {12237},
 						}),
 						q(12269, {	--  Not In Our Mine [A]
-							["groups"] = {
-							},
 							["qg"] = 27156,	-- Highlord Leoric Von Zeldig
 							["sourceQuests"] = {12275},
 						}),
 						q(12511, {	--  The Hills Have Us [A]
-							["groups"] = {
-							},
 							["qg"] = 27317,	-- Gryphon Commander Urik
 						}),
 						q(12462, {	-- Breaking Off A Piece [A]
@@ -1058,26 +889,18 @@ _.Zones =
 							["sourceQuests"] = {12326},
 						}),
 						q(12477, {	--  The Path of Redemption [A]
-							["groups"] = {
-							},
 							["qg"] = 27136,	-- High Commander Halford Wyrmbane
 							["sourceQuests"] = {12305},
 						}),
 						q(12439, {	--  A Disturbance In The West [A]
-							["groups"] = {
-							},
 							["qg"] = 27158,	-- Vas the Unstable
 							["isBreadcrumb"] = true,	-- For q12000 "Rifle the Bodies"
 						}),
 						q(12476, {	--  The Return of the Crusade? [A]
-							["groups"] = {
-							},
 							["qg"] = 27155,	-- Commander Lynore Windstryke
 							["sourceQuests"] = {12305},
 						}),
 						q(12440, {	--  To Stars' Rest! [A]
-							["groups"] = {
-							},
 							["qg"] = 26878,	-- Rodney Wells
 							["isBreadcrumb"] = true,
 						}),
@@ -1114,14 +937,10 @@ _.Zones =
 						}),
 						-- Need "The Dragon Wastes" Header
 						q(12469, {	--  Return to Sender
-							["groups"] = {
-							},
 							["qg"] = 26896,	-- Nozzlerust Supply Runner
 							["isBreadcrumb"] = true,
 						}),
 						q(12142, {	--  Pest Control [A]
-							["groups"] = {
-							},
 							["qg"] = 26978,	-- Duane
 						}),
 						q(12143, {	-- Canyon Chase [A]
@@ -1136,26 +955,18 @@ _.Zones =
 						}),
 						i(36855, {	-- Emblazoned Battle Horn
 							qa(12146, {	--  Disturbing Implications [A]
-								["groups"] = {
-								},
 								["qg"] = 27005,	-- Chilltusk
 							}),
 						}),
 						q(12148, {	--  One of a Kind
-							["groups"] = {
-							},
 							["qg"] = 26983,	-- Aurastrasza
 							["sourceQuests"] = {12146,12147},
 						}),
 						q(12149, {	--  Mighty Magnataur
-							["groups"] = {
-							},
 							["qg"] = 26983,	-- Aurastrasza
 							["sourceQuests"] = {12148},
 						}),
 						q(12150, {	--  Reclusive Runemaster
-							["groups"] = {
-							},
 							["qg"] = 26983,	-- Aurastrasza
 							["sourceQuests"] = {12149},
 						}),
@@ -1173,8 +984,6 @@ _.Zones =
 						}),
 						-- Need "Dawn's Reach" Header
 						q(12542, {	--  The Call Of The Crusade
-							["groups"] = {
-							},
 							["qg"] = 27348,	-- Tilda Darathan
 							["isBreadcrumb"] = true,
 						}),
@@ -1184,28 +993,18 @@ _.Zones =
 						--
 						--
 						-- q(47904, {	--  Preserve the True Future
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
 						-- }),
 						-- q(47545, {	--  Rewind
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
 						-- }),
 						-- q(47543, {	--  The Day That Chromie Dies
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
 						-- }),
 						-- q(47906, {	--  The Deaths of Chromie
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
 						-- }),
 						-- q(47550, {	--  The Many Advantages of Being a Time Dragon
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
 						-- }),
 					}),
@@ -1218,344 +1017,208 @@ _.Zones =
 						--
 
 						-- q(12274, {	--  A Fall From Grace [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27350,	-- Agent Skully
 						-- }),
 						-- q(12085, {	--  A Letter for Home [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead
 						-- }),
 						-- q(12240, {	--  A Means to an End [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27248,	-- Apothecary Vicky Levine
 						-- }),
 						-- q(12059, {	--  A Strange Device [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
 						-- }),
 						-- q(11977, {	--  A Tauren Among Taunka [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26156,	-- Wartook Iceborn
 						-- }),
 						-- q(11930, {	--  Across Transborea [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26158,	-- Mother Tauranook
 						-- }),
 						-- q(12008, {	--  Agmar's Hammer [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26181,	-- Emissary Brighthoof
 						-- }),
 						-- q(12040, {	--  An Enemy in Arthas [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26653,	-- Kilix the Unraveler
 						-- }),
 						-- q(12071, {	--  Attack by Air! [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26415,	-- Senior Sergeant Juktok
 						-- }),
 						-- q(12173, {	--  Attunement to Dalaran [H]
-						-- 	["groups"] = {
-						-- 	},
 						--	["classes"] = {8},
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
 						-- q(12496, {	--  Audience With The Dragon Queen [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 25257,	-- Saurfang the Younger
 						-- }),
 						-- q(12304, {	--  Beachfront Property [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 32599,	-- Surveyor Hansen
 						-- }),
 						-- q(12039, {	--  Black Blood of Yogg-Saron [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26564,	-- Borus Ironbender
 						-- }),
 						-- q(12206, {	--  Blighted Last Rites [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27248,	-- Apothecary Vicky Levine
 						-- }),
 						-- q(11983, {	--  Blood Oath of the Horde [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26181,	-- Emissary Brighthoof
 						-- }),
 						-- q(12100, {	--  Containing the Rot [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26504,	-- Soar Hawkfury
 						-- }),
 						-- q(12147, {	--  Disturbing Implications [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
 						-- }),
 						-- q(12200, {	--  Emerald Dragon Tears [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27172,	-- Chief Plaguebringer Middleton
 						-- }),
 						-- q(12214, {	--  Fresh Remounts [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27028,	-- Hansel Bauer
 						-- }),
 						-- q(12036, {	--  From the Depths of Azjol-Nerub [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26415,	-- Senior Sergeant Juktok
 						-- }),
 						-- q(12122, {	--  Gaining an Audience [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
 						-- q(12448, {	--  Heated Battle [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27763,	-- Vargastrasz
 						-- }),
 						-- q(12189, {	--  Imbeciles Abound! [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26505,	-- Doctor Sintar Malefious
 						-- }),
 						-- q(12102, {	--  In Search of the Ruby Lilac [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26505,	-- Doctor Sintar Malefious
 						-- }),
 						-- q(12125, {	--  In Service of Blood [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26581,	-- Koltira Deathweaver
 						-- }),
 						-- q(12127, {	--  In Service of Frost [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26581,	-- Koltira Deathweaver
 						-- }),
 						-- q(12126, {	--  In Service of the Unholy [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26581,	-- Koltira Deathweaver
 						-- }),
 						-- q(12124, {	--  Informing the Queen [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26443,	-- Tariolstrasz
 						-- }),
 						-- q(11978, {	--  Into the Fold [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26181,	-- Emissary Brighthoof
 						-- }),
 						-- q(12115, {	--  Koltira and the Language of Death [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26618,	-- Captain Gort
 						-- }),
 						-- q(12056, {	--  Marked for Death: High Cultist Zangus [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26618,	-- Captain Gort
 						-- }),
 						-- q(12209, {	--  Materiel Plunder [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27267,	-- Quartermaster Bartlett
 						-- }),
 						-- q(12033, {	--  Message from the West [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26649,	-- Messenger Torvus
 						-- }),
 						-- q(12234, {	--  Need to Know [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27337,	-- Spy Mistress Repine
 						-- }),
 						-- q(12245, {	--  No Mercy for the Captured [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27337,	-- Spy Mistress Repine
 						-- }),
 						-- q(12144, {	--  Pest Control [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26979,	-- Kontokanis
 						-- }),
 						-- q(12061, {	--  Projections and Plans [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
 						-- q(12461, {	--  Report to the Ruby Dragonshrine [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27804,	-- Golluck Rockfist
 						-- }),
 						-- q(12069, {	--  Return of the High Chief [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26733,	-- Banthok Icemist
 						-- }),
 						-- q(12500, {	--  Return To Angrathar [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26917,	-- Alexstrasza the Life-Binder
 						-- }),
 						-- q(12104, {	--  Return to Soar [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26505,	-- Doctor Sintar Malefious
 						-- }),
 						-- q(12449, {	--  Return to the Earth [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27763,	-- Vargastrasz
 						-- }),
 						-- q(11999, {	--  Rifle the Bodies [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
 						-- q(12106, {	--  Search Indu'le Village [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
 						-- q(12767, {	--  Speak with your Ambassador [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26443,	-- Tariolstrasz
 						-- }),
 						-- q(12218, {	--  Spread the Good Word [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27172,	-- Chief Plaguebringer Middleton
 						-- }),
 						-- q(12230, {	--  Stealing from the Siegesmiths [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27320,	-- Deathguard Molder
 						-- }),
 						-- q(12063, {	--  Strength of Icemist [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26652,	-- Greatmother Icemist
 						-- }),
 						-- q(12057, {	--  The Flesh-Bound Tome [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
 						-- }),
 						-- q(12066, {	--  The Focus on the Beach [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
 						-- q(12101, {	--  The Good Doctor... [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26504,	-- Soar Hawkfury
 						-- }),
 						-- q(12488, {	--  The High Executor Needs You [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26415,	-- Senior Sergeant Juktok
 						-- }),
 						-- q(12791, {	--  The Magical Kingdom of Dalaran [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
 						-- q(12260, {	--  The Perfect Dissemblance [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27350,	-- Agent Skully
 						-- }),
 						-- q(12132, {	--  The Power to Destroy [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26581,	-- Koltira Deathweaver
 						-- }),
 						-- q(12271, {	--  The Rod of Compulsion [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
 						-- }),
 						-- q(12239, {	--  The Spy in New Hearthglen [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27337,	-- Spy Mistress Repine
 						-- }),
 						-- q(12769, {	--  The Steward of Wyrmrest Temple [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27763,	-- Vargastrasz
 						-- }),
 						-- q(11979, {	--  The Taunka and the Tauren [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26415,	-- Senior Sergeant Juktok
 						-- }),
 						-- q(12283, {	--  The Truth Will Out [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27350,	-- Agent Skully
 						-- }),
 						-- q(12487, {	--  To Conquest Hold, But Be Careful! [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27243,	-- High Executor Wroth
 						-- }),
 						-- q(12095, {	--  To Dragon's Fall [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26618,	-- Captain Gort
 						-- }),
 						-- q(12182, {	--  To Venomspite! [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 24155,	-- Tobias Sarkhoff
 						-- }),
 						-- q(26012, {	--  Trouble at Wyrmrest [DALARAN]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 16128,	-- Rhonin
 						-- }),
 						-- q(12034, {	--  Victory Nears... [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26379,	-- Overlord Agmar
 						-- }),
 						-- q(12205, {	--  Wanted: The Scarlet Onslaught [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
 						-- }),
 						-- q(12254, {	--  Without a Prayer [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 27350,	-- Agent Skully
 						-- }),
 						-- q(11996, {	--  Your Presence is Required at Agmar's Hammer [H]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 26441,	-- Envoy Ripfang
 						-- }),
 						--
@@ -1564,14 +1227,10 @@ _.Zones =
 						o(248398, {	-- Ethereal Communication Device
 							["groups"] = {
 								q(42007, {	--  A Forgotten Enemy
-									["groups"] = {
-									},
 									["lvl"] = 98,
 									["classes"] = {5},	-- Priest
 								}),
 								q(41627, {	--  A Forgotten Enemy
-									["groups"] = {
-									},
 									["lvl"] = 98,
 									["classes"] = {8},	-- Mage
 								}),
@@ -1579,54 +1238,38 @@ _.Zones =
 							["model"] = "World\\Expansion01\\Doodads\\Generic\\Ethereal\\Holographicstand\\et_holographic_stand.mdx"
 						}),
 						q(43388, {	--  Apostate Liberation
-							["groups"] = {
-							},
 							["classes"] = {5},	-- Priest
 							["lvl"] = 110,
 							["qg"] = 110683,	-- Mariella the Heretic
 						}),
 						q(43386, {	--  Onslaught Envoy
-							["groups"] = {
-							},
 							["classes"] = {5},	-- Priest
 							["lvl"] = 110,
 							["qg"] = 110564,	-- Alonsus Faol
 						}),
 						q(43387, {	--  Scarlet Redemption
-							["groups"] = {
-							},
 							["lvl"] = 110,
 							["classes"] = {5},
 							["qg"] = 110683,	-- Mariella the Heretic
 						}),
 						-- q(41626, {	--  A New Threat [DALARAN:BROKEN ISLES]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 105081,	-- Archmage Kalec
 						-- }),
 						-- q(42006, {	--  A New Threat [DALARAN:BROKEN ISLES]
-						-- 	["groups"] = {
-						-- 	},
 						-- 	["qg"] = 105081,	-- Archmage Kalec
 						-- }),
 						q(13077, {	--  The Touch of an Aspect
 							-- This is part of the Icecrown Achiev...because Blizz
-							["groups"] = {
-							},
 							["qg"] = 31044,	-- Highlord Tirion Fordring
 							["sourceQuests"] = {13076},
 						}),
 						q(13078, {	--  Dahlia's Tears
 							-- This is part of the Icecrown Achiev...because Blizz
-							["groups"] = {
-							},
 							["qg"] = 26917,	-- Alexstrasza the Life-Binder
 							["sourceQuests"] = {13077},
 						}),
 						q(13079, {	--  The Boon of Alexstrasza
 							-- This is part of the Icecrown Achiev...because Blizz
-							["groups"] = {
-							},
 							["qg"] = 26917,	-- Alexstrasza the Life-Binder
 							["sourceQuests"] = {13078},
 						}),
