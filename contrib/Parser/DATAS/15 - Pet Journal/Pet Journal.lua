@@ -7,20 +7,27 @@ _.PetJournal =
 		p(2403),	-- Abyssal Eel
 		p(836), 	-- Aqua Strider
 		p(2425),	-- Barnacled Hermit Crab
+		p(2385),	-- Barrier Hermit
 		p(1934), 	-- Benax
 		p(649), 	-- Biletoad
 		p(1753), 	-- Bleakwater Jelly
-		p(1666), 	-- Blorp 
+		p(1666), 	-- Blorp
+		p(2398),	-- Boghopper
 		p(174), 	-- Chuck
+		p(2400),	-- Coastal Bounder
+		p(2386),	-- Coastal Scuttler
 		p(1775), 	-- Coralback Fiddler 
 		p(2427),	-- Cou'pa
+		p(2424),	-- Crimson Frog
 		p(751), 	-- Dancing Water Skimmer 
-		p(335), 	-- Darkmoon Turtle 
+		p(335), 	-- Darkmoon Turtle
+		p(2389),	-- Elusive Swimmer
 		p(564), 	-- Emerald Turtle 
 		p(746), 	-- Emperor Crab 
 		p(383), 	-- Eternal Strider
 		p(1581), 	-- Fen Crab
 		p(847), 	-- Fishy
+		p(2374),	-- Freshwater Crawler
 		p(2423),	-- Freshwater Pincher
 		p(495), 	-- Frog
 		p(1578), 	-- Frostshell Pincher
@@ -30,11 +37,13 @@ _.PetJournal =
 		p(1665), 	-- Ghostshell Crab
 		p(749), 	-- Golden Civet
 		p(750), 	-- Golden Civet Kitten
-		p(1338), 	-- Gulp Froglet 
+		p(1338), 	-- Gulp Froglet
+		p(2399),	-- Hermit Crab
 		p(483), 	-- Horny Toad
 		p(648), 	-- Huge Toad
 		p(1541), 	-- Hydraling
 		p(2461),	-- Inky
+		p(2382),	-- Inland Croker
 		p(1579), 	-- Ironclaw Scuttler
 		p(106), 	-- Jubling
 		p(565), 	-- Jungle Darter
@@ -63,10 +72,14 @@ _.PetJournal =
 		p(1755), 	-- Plump Jelly
 		p(1568), 	-- Puddle Terror
 		un(10, p(328)), 	-- Purple Puffer
+		p(2373),	-- River Frog
+		p(2378),	-- River Otter
+		p(2377),	-- Sandyback Crawler
 		p(2445),	-- Scuttle
 		p(1448), 	-- Sea Calf
 		p(340), 	-- Sea Pony
 		p(1754), 	-- Sewer-Pipe Jelly
+		p(2381),	-- Shack Crab
 		p(388), 	-- Shore Crab
 		p(629), 	-- Shore Crawler
 		p(711), 	-- Sifang Otter
@@ -105,6 +118,7 @@ _.PetJournal =
 		p(64),	 	-- Wood Frog
 		p(752), 	-- Yellow-Bellied Bullfrog
 		p(1912), 	-- Young Mutant Warturtle
+		p(2392),	-- Young Sand Sifteeer
 		p(1582), 	-- Zangar Crawler
 	}),
 	pa(237, { 	-- Beast
@@ -132,6 +146,7 @@ _.PetJournal =
 		p(75),		-- Black Kingsnake
 		p(42),		-- Black Tabby Cat
 		p(1743),	-- Black-Footed Fox Kit
+		p(2388),	-- Bloodfever Tarantula
 		p(2451),	-- Bloodstone Tunneler
 		p(1577),	-- Bloodthorn Hatchling
 		p(40),		-- Bombay Cat
@@ -142,6 +157,7 @@ _.PetJournal =
 		p(459),		-- Cat
 		p(1999),	-- Cavern Moccasin
 		p(474),		-- Cheetah Cub
+		p(2418),	-- Child of Jani
 		p(1662),	-- Cinder Pup
 		p(518),		-- Clefthoof Runt
 		p(742),		-- Clouded Hedgehog
@@ -159,6 +175,7 @@ _.PetJournal =
 		p(343),		-- Darkmoon Cub
 		p(330),		-- Darkmoon Monkey
 		p(508),		-- Darkshore Cub
+		p(2157),	-- Dart
 		p(232),		-- Darting Hatchling
 		p(1330),	-- Death Adder Hatchling
 		p(2464),	-- Deathsting Scorpid
@@ -169,6 +186,7 @@ _.PetJournal =
 		p(504),		-- Diemetradon Hatchling
 		p(1205),	-- Direhorn Runt
 		p(1952),	-- Dreadmaw
+		p(2406),	-- Drustvar Piglet
 		p(205),		-- Dun Morogh Cub
 		p(207),		-- Durotar Scorpion
 		p(396),		-- Dusk Spiderling
@@ -190,6 +208,7 @@ _.PetJournal =
 		p(475),		-- Giraffe Calf
 		p(571),		-- Grove Viper
 		p(1705),	-- Grumpy
+		p(2190),	-- Guardian Cobra Hatchling
 		p(234),		-- Gundrak Hatchling
 		p(851),		-- Horned Lizard
 		p(317),		-- Hyjal Bear Cub
@@ -206,6 +225,8 @@ _.PetJournal =
 		p(1435),	-- Leatherhide Runt
 		p(545),		-- Leopard Scorpid
 		p(1808),	-- Leyline Broodling
+		p(2416),	-- Lil' Ben'fon
+		p(2196),	-- Lil' Tika
 		p(437),		-- Little Black Ram
 		p(408),		-- Lizard Hatchling
 		p(1661),	-- Lost Netherpup
@@ -232,6 +253,7 @@ _.PetJournal =
 		p(1615),	-- Parched Lizard
 		p(1663),	-- Periwinkle Calf
 		p(726),		-- Plains Monitor
+		p(2188),	-- Poda
 		un(3, p(124)),	-- Poley
 		p(1200),	-- Pygmy Direhorn
 		p(2437),	-- Ragepeep
@@ -278,16 +300,19 @@ _.PetJournal =
 		p(679),		-- Summit Kid
 		p(1128),	-- Sumprush Rodent
 		p(1196),	-- Sunfur Panda
+		p(2198),	-- Taptaf
 		p(567),		-- Temple Snake
 		p(1735),	-- Terror Larva
 		p(1759),	-- Thaumaturgical Piglet
 		p(1456),	-- Thicket Skitterer
 		p(1810),	-- Thornclaw Broodling
+		p(2412),	-- Tiny Direhorn
 		p(1236),	-- Tito
 		p(405),		-- Tree Python
 		un(35, p(2051)),	-- Twilight
 		p(505),		-- Twilight Iguana
 		p(470),		-- Twilight Spider
+		p(2375),	-- Vale Marmot
 		p(1344),	-- Vengeful Porcupette
 		p(506),		-- Venomspitter Hatchling
 		p(1807),	-- Vicious Broodling
@@ -305,6 +330,7 @@ _.PetJournal =
 		p(1211),	-- Zandalari Anklerender
 		p(1212),	-- Zandalari Footslasher
 		p(1180),	-- Zandalari Kneebiter
+		p(2413),	-- Zandalari Shinchomper
 		p(1213),	-- Zandalari Toenibbler
 		p(1305),	-- Zao, Calfling of Niuzao
 		p(731),		-- Zooey Snake		
@@ -322,6 +348,7 @@ _.PetJournal =
 		p(374),		-- Black Lamb
 		p(398),		-- Black Rat
 		p(1915),	-- Blind Rat
+		p(2414),	-- Bloodfeaster Larva
 		p(639),		-- Borean Marmot
 		p(449),		-- Brown Marmot
 		p(70),		-- Brown Prairie Dog
@@ -346,12 +373,16 @@ _.PetJournal =
 		p(2113), 	-- Felclaw Marsuul
 		p(415),		-- Fire Beetle
 		p(541),		-- Fire-Proof Roach
-		p(644),		-- Fjord Rat
+		p(2407),	-- Frenzied Cottontail
 		p(1427),	-- Frostfur Rat
+		p(644),		-- Fjord Rat
 		p(477),		-- Gazelle Fawn
 		p(193),		-- Giant Sewer Rat
+		p(2383),	-- Giant Woodworm
 		p(1913),	-- Gleamhoof Fawn
+		p(2395),	-- Glutted Bleeder
 		p(430),		-- Gold Beetle
+		p(2387),	-- Golden Beetle
 		p(170),		-- Golden Pig
 		p(733),		-- Grassland Hopper
 		p(443),		-- Grasslands Cottontail
@@ -661,6 +692,7 @@ _.PetJournal =
 		p(1716),	-- Fledgling Warden Owl
 		p(478),		-- Forest Moth
 		p(2438),	-- Foulfeather
+		p(2165),	-- Francois
 		p(1471),	-- Fruit Hunter
 		p(756),		-- Fungal Moth
 		p(753),		-- Garden Moth
@@ -690,6 +722,7 @@ _.PetJournal =
 		p(1202),	-- Ji-Kun Hatchling
 		p(1469),	-- Junglebeak
 		p(1597),	-- Kaliri Hatchling
+		p(2390),	-- Leafy Flutterwing
 		p(1713),	-- Long-Eared Owl
 		p(718),		-- Luyu Moth
 		p(1403),	-- Mechanical Axebeak
@@ -701,6 +734,7 @@ _.PetJournal =
 		p(1714),	-- Northern Hawk Owl
 		p(544),		-- Oasis Moth
 		p(2050),	-- Orphaned Felbat
+		p(2380),	-- Parasitic Boarfly
 		p(403),		-- Parrot
 		p(201),		-- Plump Turkey
 		p(409),		-- Polly
@@ -721,6 +755,7 @@ _.PetJournal =
 		p(1599),	-- Shadow Sporebat
 		p(1976),	-- Sharptalon Hatchling
 		p(1734),	-- Shimmering Firefly
+		p(2384),	-- Shore Butterfly
 		p(754),		-- Shrine Fly
 		p(503),		-- Silky Moth
 		p(1575),	-- Sky Fry
@@ -747,6 +782,7 @@ _.PetJournal =
 		p(1464),	-- Twilight Wasp
 		p(1538),	-- Umbrafen Spore
 		p(1737),	-- Vale Flitter
+		p(2376),	-- Valley Chicken
 		p(1596),	-- Veilwatcher Hatchling
 		p(1591),	-- Violet Firefly
 		p(1593),	-- Waterfly
@@ -814,6 +850,7 @@ _.PetJournal =
 		un(35, p(248)),		-- Pandaren Monk
 		p(122),		-- Peddlefeet
 		p(513),		-- Qiraji Guardling
+		p(2417),	-- Ranishu Runt
 		p(2135), 	-- Rebellious Imp
 		p(1349),	-- Rotten Little Helper
 		p(1628),	-- Sister of Temptation
@@ -867,6 +904,7 @@ _.PetJournal =
 		p(2132),	-- Felcrazed Wyrm
 		p(342),		-- Festival Lantern
 		p(1245),	-- Filthling
+		p(2187),	-- Filthy Slime
 		p(2120), 	-- Grasping Manifestation
 		un(10, p(1174)),	-- Gusting Grimoire
 		p(1346),	-- Harmonious Porcupette
@@ -905,6 +943,7 @@ _.PetJournal =
 		p(1185),	-- Spectral Porcupette
 		un(10, p(242)),		-- Spectral Tiger Cub
 		p(1969),	-- Stardust
+		p(2393),	-- Sticky Oozeling
 		p(1478),	-- Syd the Squid
 		p(2435),	-- teeny Tiny Orb
 		p(251),		-- Toxic Wasteling
@@ -986,6 +1025,7 @@ _.PetJournal =
 	}),
 	pa(242, { 	-- Undead
 		p(2456),	-- Barnaby
+		p(2408),	-- Bilefang Skitter
 		p(1965),	-- Blightbreath
 		p(455),		-- Blighted Squirrel
 		p(456),		-- Blighthawk
@@ -1027,10 +1067,13 @@ _.PetJournal =
 		p(1954),	-- Nerubian Swarmer
 		p(2080), 	-- Rattlejaw
 		p(439),		-- Restless Shadeling
+		p(2394),	-- Returned Hatchling
 		p(1804),	-- Risen Saber Kitten
 		p(538),		-- Scourged Whelpling
 		p(2042),	-- Scraps
 		p(218),		-- Sen'jin Fetish
+		p(2397),	-- Spectral Raven
+		p(2189),	-- Smoochums
 		p(1574),	-- Son of Sethe
 		p(1966),	-- Soulbroken Whelpling
 		p(1730),	-- Spectral Spinner
@@ -1044,6 +1087,7 @@ _.PetJournal =
 		p(310),		-- Voodoo Figurine
 		p(1394),	-- Weebomination
 		p(1968),	-- Wicked Soul
+		p(2411),	-- Wicker Pup
 		p(1523),	-- Widget the Departed
 		p(1428),	-- Zomstrok
 	}),

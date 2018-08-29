@@ -165,6 +165,25 @@ _.Zones =
 					["groups"] = {
 						p(2386),	-- Coastal Scuttler
 						p(2378),	-- River Otter
+						p(2198, {	-- Taptaf
+							["groups"] = {
+								q(5061, { -- Taptaf the Pig!
+									["groups"] = {
+										i(161081, {	-- Taptaf
+											["crs"] = {
+												139380,	-- Taptaf
+												131735,	-- Idej the Wisee
+											},
+										}),
+									},
+									["qg"] = 139380,	-- Taptaf
+									["coords"] = {
+										{ 65.0, 83.2 },
+									},
+									["description"] = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
+								}),
+							},
+						}),
 						p(2411, {	-- Wicker Pup
 							["groups"] = {
 								i(163789, {	-- Bundle of Wicker Sticks
@@ -1872,14 +1891,18 @@ _.Zones =
 						}),
 						n(127156, {	-- Nigel Rifthold <Adveenturer's Society>
 							["groups"] = {
-								i(163493),	-- Bloody Rabbit Fang
+								i(163493, {	-- Bloody Rabbit Fang
+									["description"] = "Defeat Cottontail Matron (located at 52.20, 46.80) for this item to appear on the vendor.",
+								}),
 								i(163510),	-- Crimson Frog
 								i(163492),	-- Drustvar Piglet
-								i(160708),	-- Smoochums' Bloody Heart
+								i(160708, {	-- Smoochums' Bloody Heart
+									["description"] = "Complete the questline given by Abby Lewis (located at 54.60, 39.20 and 56.40, 49.00) for this item to appear on the vendor.",
+								}),
 								i(163494),	-- Wad of Spider Web
 							},
 							["itemID"] = 163036,	-- Polished Pet Charm
-							
+							["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at 52.00, 31.00 and then click on the chest twice.",
 						}),
 						n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary>
 							["groups"] = {
@@ -2039,6 +2062,15 @@ _.Zones =
 						i(163603, {	-- Lucille's Handkerchief
 							["description"] = "After completing the quest \"One Last Quest\" you can return back to the house, go upstairs and it will be in the closet to loot.",
 							["sourceQuests"] = { 50763 },	-- One Last Request
+						}),
+						i(163574, {	-- Chewed- On Reins of the Terrified Pack Mule
+							["crs"] = {
+								133892,	-- Hexthralled Crossbowman
+								131534,	-- Hexthralled Guardsman
+								131530,	-- Hexthralled Guardsman
+								141642,	-- Hexthralled Halberdier
+								133889,	-- Hexthralled Halberdier
+							},
 						}),
 						--i(154867),	-- NYI
 						--i(154870),	-- NYI

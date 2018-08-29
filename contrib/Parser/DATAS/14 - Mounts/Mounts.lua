@@ -113,6 +113,8 @@ _.Mounts =
 		i(21218),	-- Blue Qiraji Battle Tank
 		i(163578), 	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
+		i(163516),	-- Capture Dune Scavenger
+		i(163574),	-- Chewed-On Reins of the Terrified Pack Mule
 		i(147806),	-- Cloudwing Hippogryph
 		i(95059),	-- Clutch of Ji-Kun
 		i(94228),	-- Cobalt Primordial Direhorn
@@ -132,6 +134,7 @@ _.Mounts =
 		i(116779),	-- Garn Steelmaw
 		i(116673),	-- Giant Coldsnout
 		i(153042),	-- Glorious Felcrusher Mount
+		i(163573),	-- Goldenmane's Rein's
 		i(43959),	-- Grand Black War Mammoth (Alliance)
 		i(44083),	-- Grand Black War Mammoth (Horde)
 		i(116674),	-- Great Greytusk
@@ -158,6 +161,7 @@ _.Mounts =
 		i(45693),	-- Mimiron's Head
 		i(116661),	-- Mottled Meadowstomper
 		i(159921), 	-- Mummified Raptor Skull
+		i(161479),	-- Nazjatar Blood Serpentr
 		i(142233),	-- Netherlord's Accursed Wrathsteed
 		i(49636),	-- Onyxian Drake
 		i(63042),	-- Phosphorescent Stone Drake
@@ -166,6 +170,7 @@ _.Mounts =
 		i(32768),	-- Raven Lord
 		i(94291),	-- Red Primal Raptor
 		i(21321),	-- Red Qiraji Battle Tank
+		i(163575),	-- Reins of a Tamed Bloodfeaster
 		i(147835),	-- Riddler's Mind-Worm
 		i(13335),	-- Rivendare's Deathcharger
 		i(116767),	-- Sapphire Riberbeast
@@ -361,6 +366,7 @@ _.Mounts =
 		["classes"] = {3},
 		},
 		i(79802),		-- Jade Cloud Serpent
+		i(159146),		-- Kua'fon's Harness
 		i(137573),		-- Llothien Prowler
 		i(161330, {		-- Mag'har Direwolf [Mag'har Orc Quest Chain]
 			["mountID"] = 267274,

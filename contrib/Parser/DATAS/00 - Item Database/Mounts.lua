@@ -111,21 +111,27 @@ i(163216, 250735);  -- Bloodgorged Crawg
 i(163577, 279454);	-- Conquerer's Scythemaw
 i(161665, 275837);	-- Cobalt Pterrordax
 i(153594, 256123);	-- Xiwyllag ATV
-i(163583, 279467); -- Craghorn Chasm-Leaper
-i(163582, 279469); -- Qinsho's Eternal Hound
-i(163586, 254811); -- Squawks
-i(163585, 278979); -- Surf Jelly
-i(163584, 279466); -- Twilight Avenger
-i(161911, 259213); -- Admiralty Stallion
-i(161912, 260172); -- Dapple Gray
-i(161910, 260173); -- Smoky Charger
-i(163589, 279474); -- Palehide Direhorn
-i(163042, 264058); -- Mighty Caravan Brutosaur
-i(161773, 237287); -- Alabaster Hyena
-i(161774, 275841); -- Expedition Bloodswarmer
-i(163644, 279569); -- Swift Ablino Raptor
-i(163645, 279611); -- Skullripper
-i(163706, 279868); -- Witherbark Direwing
-i(163646, 279608); -- Lil' Donkey
-i(163578, 279457); -- Broken Highland Mustang
-i(163579, 279456); -- Highland Mustang
+i(163583, 279467);	-- Craghorn Chasm-Leaper
+i(163582, 279469);	-- Qinsho's Eternal Hound
+i(163586, 254811);	-- Squawks
+i(163585, 278979);	-- Surf Jelly
+i(163584, 279466);	-- Twilight Avenger
+i(161911, 259213);	-- Admiralty Stallion
+i(161912, 260172);	-- Dapple Gray
+i(161910, 260173);	-- Smoky Charger
+i(163589, 279474);	-- Palehide Direhorn
+i(163042, 264058);	-- Mighty Caravan Brutosaur
+i(161773, 237287);	-- Alabaster Hyena
+i(161774, 275841);	-- Expedition Bloodswarmer
+i(163644, 279569);	-- Swift Ablino Raptor
+i(163645, 279611);	-- Skullripper
+i(163706, 279868);	-- Witherbark Direwing
+i(163646, 279608);	-- Lil' Donkey
+i(163578, 279457);	-- Broken Highland Mustang
+i(163579, 279456);	-- Highland Mustang
+i(163516, 237286);	-- Captured Dune Scavenger
+i(163574, 260174);	-- Chewed-On Reins of the Terrified Pack Mule
+i(163575, 243795);	-- Reins of a Tamed Bloodfeaster
+i(163573, 260175);	-- Goldenmane's Reins
+i(161479, 275623);	-- Nazjatar Blood Serpent
+i(159146, 267270);	-- Kua'fon's Harness

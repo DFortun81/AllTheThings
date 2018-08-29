@@ -8,6 +8,7 @@ end
 pet(19450, 106); 	-- A Jubling's Tiny Home (Jubling)
 pet(129205, 1660); 	-- A Tiny Infernal Collar (Fel Pup)
 pet(163489, 2403);	-- Abyssal Eel
+pet(163506, 2420);	-- Accursed Hexxer
 pet(151828, 2072); 	-- Ageless Bronze Drake
 pet(136910, 1805);	-- Alarm-o-Bot
 pet(142448, 1984);	-- Albino Buzzard
@@ -42,7 +43,7 @@ pet(32588, 156); 	-- Banana Charm (Bananas)
 pet(90177, 903);	-- Baneling
 pet(147542, 2047); 	-- Ban-Fu, Cub of Ban-Lu
 pet(163799, 2456);	-- Barnaby
-pet(163511, 511);	-- Barnacled Hemit Crab
+pet(163511, 2425);	-- Barnacled Hemit Crab
 pet(140934, 1934); 	-- Benax
 pet(163494, 2408);	-- Bilefang Skitterer
 pet(10360, 75); 	-- Black Kingsnake
@@ -101,8 +102,9 @@ pet(136923, 1888);	-- Celestial Calf
 pet(54810, 255);	-- Celestial Dragon
 pet(70099, 316);	-- Cenarion Hatchling
 pet(102145, 1303);	-- Chi-Chi, Hatchling of Chi-Ji
-pet(11110, 84); 	-- Chicken Egg (Westfall Chicken)
 pet(89368, 849); 	-- Chi-Ji Kite
+pet(11110, 84); 	-- Chicken Egg (Westfall Chicken)
+pet(163504, 2418);	-- Child of Jani
 pet(35350, 174); 	-- Chuck's Bucket (Chuck)
 pet(92707, 1117);	-- Cinder Kitten
 pet(127748, 1662); 	-- Cinder Pup
@@ -201,6 +203,7 @@ pet(136899, 1717); 	-- Extinguished Eye
 pet(136901, 1719); 	-- Eye of Inquisition
 pet(119170, 1576); 	-- Eye of Observation
 pet(79744, 348);	-- Eye of the Legion
+pet(158077, 2165);	-- Francois
 pet(152979, 2090);	-- Faceless Mindlasher
 pet(152972, 2083);	-- Faceless Minion
 pet(163806, 2449);	-- False Knucklebump
@@ -214,6 +217,7 @@ pet(85578, 821);	-- Feral Vermling
 pet(74611, 342); 	-- Festival Lantern
 pet(130168, 1802); 	-- Fetid Waveling
 pet(76062, 346);	-- Fetish Shaman's Spear (Fetish Shaman)
+pet(160704, 2187);	-- Filthy Slime
 pet(140316, 1928);	-- Firebat Pup
 pet(118578, 1545); 	-- Firewing
 pet(84105, 847); 	-- Fishy
@@ -335,12 +339,14 @@ pet(136914, 1808);	-- Leyline Broodling
 pet(112057, 1412); 	-- Lifelike Mechanical Frostboar
 pet(15996, 95); 	-- Lifelike Mechanical Toad (Lifelike Toad)
 pet(103670, 1320);	-- Lil' Bling
+pet(163502, 2416);	-- Lil Ben'fon
 pet(62540, 268);	-- Lil' Deathwing
 pet(49693, 249);	-- Lil' Phylactery (Lil' K.T.)
 pet(68385, 297);	-- Lil' Ragnaros
 pet(163778, 2443);	-- Lil' Siege Tower
 pet(11826, 86); 	-- Lil' Smoky
 pet(71033, 320);	-- Lil' Tarecgosa
+pet(161016, 2196);	-- Lil' Tika
 pet(163779, 2444);	-- Lil' War Machine
 pet(54847, 256);	-- Lil' XT
 pet(44841, 203);	-- Little Fawn's Salt Lick (Little Fawn)
@@ -449,6 +455,7 @@ pet(129798, 1755);	-- Plump Jelly
 pet(150739, 2041); 	-- Pocket Cannon
 pet(22781, 124); 	-- Polar Bear Collar (Poley)
 pet(89587, 381); 	-- Porcupette
+pet(158464, 2188);	-- Poda
 pet(163800, 2452);	-- Poro
 pet(10394, 70); 	-- Prairie Dog Whistle (Brown Prairie Dog)
 pet(44721, 196); 	-- Proto-Drake Whelp
@@ -536,6 +543,7 @@ pet(67418, 294);	-- Smoldering Murloc Egg (Deathy)
 pet(68673, 90); 	-- Smolderweb Egg (Smolderweb Hatchling)
 pet(160708, 2189);	-- Smoochums
 pet(66073, 289);	-- Snail Shell (Scooter the Snail)
+pet(160847, 2190);	-- Snake Charmer's Flute [Guardian Cobra Hatchling]
 pet(163816, 2472);	-- Snapper
 pet(35349, 173); 	-- Snarly's Bucket (Snarly)
 pet(151569, 2063); 	-- Sneaky Marmot
@@ -558,6 +566,7 @@ pet(94190, 1185);	-- Spectral Porcupette
 pet(49343, 242);	-- Spectral Tiger Cub
 pet(97548, 1226); 	-- Spiky Collar (Lil' Bad Wolf)
 pet(104168, 1337); 	-- Spineclaw Crab
+pet(163789, 2411);	-- Spooky Bundle of Sticks [Wicker Pup]
 pet(44794, 200); 	-- Spring Rabbit's Foot (Spring Rabbit)
 pet(11474, 87); 	-- Sprite Darter Egg (Sprite Darter Hatchling)
 pet(163712, 2441);	-- Squawkling
@@ -582,6 +591,7 @@ pet(163817, 2473);	-- Sunscale Hatchling
 pet(104291, 1345); 	-- Swarmling of Gu'chi (Gu'chi Swarmling)
 pet(116064, 1478); 	-- Syd the Squid
 pet(97553, 1231); 	-- Tainted Core (Tainted Waveling)
+pet(161081, 2198);	-- Taptaf
 pet(163677, 2435);	-- Teeny Tiny Orb
 pet(44965, 204); 	-- Teldrassil Sproutling
 pet(112699, 1416); 	-- Teroclaw Hatchling
@@ -596,6 +606,7 @@ pet(118675, 1563);	-- Time-Locked Box (Bronze Whelpling)
 pet(163807, 2450);	-- Tinder Pup
 pet(94933, 1207); 	-- Tiny Blue Carp
 pet(8499, 58); 		-- Tiny Crimson Whelpling (Crimson Whelpling)
+pet(163498, 2412);	-- Tiny Direhorn
 pet(97555, 1233); 	-- Tiny Fel Engine Key (Pocket Reaver)
 pet(66080, 287); 	-- Tiny Flamefly
 pet(85447, 652); 	-- Tiny Goldfish
@@ -608,6 +619,7 @@ pet(94935, 1209); 	-- Tiny White Carp
 pet(152966, 2078);	-- Tinytron
 pet(44971, 206); 	-- Tirisfal Batling
 pet(97558, 1236);	-- Tito's Basket (Tito)
+pet(163505, 2419);	-- Toad in a Box [Swamp Toad]
 pet(33816, 163); 	-- Toothy's Bucket (Toothy)
 pet(153541, 2143);	-- Tottle
 pet(50446, 251); 	-- Toxic Wasteling

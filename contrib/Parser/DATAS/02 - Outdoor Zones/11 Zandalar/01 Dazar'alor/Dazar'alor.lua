@@ -525,9 +525,18 @@ _.Zones =
 						n(132097, {	-- Happy Holaua
 							["groups"] = {
 								i(163508),	-- Butterfly in a Jar
+								i(163504, {	-- Child of Jani
+									["description"] = "Complete the \"Get Hek'd\" achievement for this item to appear on the vendor.",
+								}),
+								i(163502, {	-- Lil' Ben'fon
+									["description"] = "Complete the questline given by Cala Cruzpot for this item to appear on the vendor.",
+								}),
+								i(161016, {	-- Lil' Tika
+									["description"] = "Complete the questline \"Lil' Tika\" for this item to appear on the vendor.",
+								}),
 								i(163499),	-- Raptor Containment Crate
-								i(163498),	-- Tiny Direhorn
 								i(163560),	-- Saurolisk Hatchling
+								i(163498),	-- Tiny Direhorn
 								i(163705),	-- Imaginary Gun
 								i(163704),	-- Tiny Mechanical Mouse
 								i(139003),	-- Pocket Pet Portal
@@ -793,7 +802,7 @@ _.Zones =
 									["spellID"] = 269726,
 								}),
 								i(163022, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2]
-									["spellID"] = 296728,
+									["spellID"] = 269728,
 								}),
 								i(163023, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 3]
 									["spellID"] = 269729,
@@ -913,6 +922,7 @@ _.Zones =
 							i(142379),	-- Dutiful Squire
 						}),
 					},
+					["races"] = HORDE_ONLY,
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {

@@ -431,7 +431,9 @@ _.Zones =
 						q(49337),	-- Matters of the Heart
 						q(47497),	-- Meet the Goldtusk Gang
 						q(48988),	-- Memory Breach
-						q(50739),	-- Missing Business
+						q(50739, {	-- Missing Business
+							i(158464),	-- Poda
+						}),
 						q(51668, {	-- Mojambo
 							i(155424),
 							i(155419),
@@ -445,6 +447,7 @@ _.Zones =
 						}),
 						q(47647),	-- Monsters of Zem'lan
 						q(50980, {	-- My Hungry Neighbor
+							i(160847),	-- Snake Charmer's Flute
 							i(160005),
 							i(160006),
 							i(160007),
@@ -1091,6 +1094,7 @@ i(155430),
 								i(159753),	-- Desert Flute
 							},
 							["itemID"] = 163036,	-- Polished Pet Charm
+							["description"] = "Complete the questline \"A Lost Flute\" to unlock this vendor.",
 						}),
 					},
 				}),
@@ -1166,6 +1170,24 @@ i(155430),
 				}),
 				n(0,    {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+						i(163576, {	-- Captured Dune Scavenger
+							["crs"] = {
+								134429,	-- Diamondback Warbringer
+								134560,	-- Faithless Auditor
+								128682,	-- Faithless Defender
+								123864,	-- Faithless Ravager
+								129778,	-- Faithless Skycaller
+								122746,	-- Faithless Skycaller
+								134559,	-- Faithless Slaver
+								136191,	-- Faithless Suppressor
+								123774,	-- Sethrak Aggressor
+								123773,	-- Sethrak Ravager
+								127406,	-- Sethrak Relic Hunter
+								134103,	-- Sethrak Site Guardian
+								134427,	-- Sethrak Skycaller
+								123775,	-- Sethrak Warden
+							},
+						}),
 						i(159575),	-- Warport Longstaff
 						i(160180),	-- Skycaller Cowl
 						i(160185),	-- Skycaller Mantle

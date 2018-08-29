@@ -148,6 +148,11 @@ _.Instances =
 					}),
 					d(23, { -- Mythic
 						["groups"] = {
+							n(135448, {	-- Gol'than the Malodorous
+								["groups"] = {
+									i(160704),	--  Filthy Bucket
+								},
+							}),
 							e(2097, { -- The Sand Queen
 								["groups"] = {
 									i(160110), -- Warglaive of the Sand Queen

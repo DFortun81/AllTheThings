@@ -1003,6 +1003,9 @@ _.Zones =
 					["groups"] = {
 						n(126833, {	-- Blind Wunja <Medicine Woman>
 							["groups"] = {
+								i(163506, {	-- Accursed Hexxer
+									["description"] = "Complete the questline \"An Ancient Curse\" for this item to appear on the vendor.",
+								}),
 								i(163500),	-- Bloodfeaster Larva
 								i(163510),	-- Crimson  Frog
 							},
@@ -1133,8 +1136,12 @@ _.Zones =
 						}),
 						n(132011, {	-- Shoak
 							["groups"] = {
+								i(163506, {	-- Accursed Hexxer
+									["description"] = "Complete the questline \"An Ancient Curse\" for this item to appear on the vendor.",
+								}),
 								i(163510),	-- Crimson Frog
 								i(163500),	-- Bloodfeaster Larva
+								i(163505),	-- Toad in a Box
 							},
 							["description"] = "You must complete the quests \"Killing Cannibals\", \"Just Say No to Cannibalism\", and \"Shoak's on the Menu\" in order him to show up at Gloom Hollow.",
 							["itemID"] = 163036,	-- Polished Pet Charm
@@ -1216,6 +1223,21 @@ _.Zones =
 				}),
 				n(0, {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+						i(163575, {	-- Reins of a Tamed Bloodfeaster
+							["crs"] = {
+								136293,	-- Blood Troll Berserker
+								120607,	-- Blood Troll Brutalizer
+								126888,	-- Blood Witch Vashera
+								122239,	-- Bloodhunter Stalker
+								126187,	-- Corpse Bringer Yal'kar
+								127224,	-- Empowered Worshipper
+								127928,	-- Loa-Gutter Drudge
+								127919,	-- Loa-Gutter Skullcrusher
+								133279,	-- Nazmani Drudge
+								133077,	-- Nazmani War Slave
+								136639,	-- Zalamar Worshipper
+							},
+						}),
 						i(154833),	-- Bloodhex Hood
 						i(154838),	-- Bloodhex Mantle
 						i(154836),	-- Bloodhex Vestments

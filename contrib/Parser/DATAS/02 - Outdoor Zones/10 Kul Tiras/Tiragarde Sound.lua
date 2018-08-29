@@ -192,7 +192,13 @@ _.Zones =
 				}),
 				n(-25,  { 	-- Pet Battle
 					["groups"] = {
-						p(2165),	-- Francois
+						p(2165, {	-- Francois
+							["description"] = "Must have 1 million gold in your inventory before he will talk to you.  You do NOT lose any gold in this transaction.",
+							["coords"] = {
+								{ 52.8, 31.1 },
+							},
+							["itemID"] = 158077,
+						}),
 						p(2383),	-- Giant Woodworm
 						p(2382),	-- Inland Croaker
 						p(2380),	-- Parasitic Boarfly

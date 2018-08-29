@@ -504,10 +504,10 @@ _.Zones =
 							["groups"] = {
 								i(163036, {	-- Polished Pet Charm
 									i(163495, {	-- Greatwing Macaw Feather
-										["description"] = "Pet will not appear on vendor until Tiragarde Sound quest Rodrigo's Revenge has been completed.",
+										["description"] = "Complete the questline \"Rodrigo's Revenge\" for this item to appear on the vendor.",
 									}),
 									i(163496, {	-- Strange Looking Mechanical Squirrel
-										["description"] = "Pet will not appear on vendor until Tiragarde Sound quest Inspection Gadget has been completed.",
+										["description"] = "Complete the questline \"An Explosive Opportunity\" for this item to appear on the vendor.",
 									}),
 								}),
 							},
@@ -708,7 +708,7 @@ _.Zones =
 									["spellID"] = 269726,
 								}),
 								i(163022, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2]
-									["spellID"] = 296728,
+									["spellID"] = 269728,
 								}),
 								i(163023, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 3]
 									["spellID"] = 269729,
@@ -871,6 +871,7 @@ _.Zones =
 							},
 						}),
 					},
+					["races"] = ALLIANCE_ONLY,
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
