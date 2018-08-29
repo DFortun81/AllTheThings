@@ -129,7 +129,7 @@ i(163706, 279868);	-- Witherbark Direwing
 i(163646, 279608);	-- Lil' Donkey
 i(163578, 279457);	-- Broken Highland Mustang
 i(163579, 279456);	-- Highland Mustang
-i(163516, 237286);	-- Captured Dune Scavenger
+i(163576, 237286);	-- Captured Dune Scavenger
 i(163574, 260174);	-- Chewed-On Reins of the Terrified Pack Mule
 i(163575, 243795);	-- Reins of a Tamed Bloodfeaster
 i(163573, 260175);	-- Goldenmane's Reins
