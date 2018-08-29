@@ -7586,7 +7586,7 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
---[[
+--
 -- AllTheThings:GetWindow("Unsorted"):Show();
 -- split a string
 function string:split(delimiter)

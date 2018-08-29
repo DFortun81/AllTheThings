@@ -8,21 +8,39 @@ _.Instances =
 		["groups"] = {
 			inst(248, { 	-- Hellfire Ramparts
 				["groups"] = {
-					d(1, {		-- Normal
-						n(-17, {	-- Quests 				
-							qa(29528, {	-- War on the Ramparts
-								i(25718),	-- Mantle of Magical Might
-								i(25717),	-- Sure-Step Boots
-								i(25716),	-- Handguards of Precision
-								i(25715),	-- Jade Warrior Pauldrons
-							}),	
-							qh(29527, {	-- War on the Ramparts
-								i(25718),	-- Mantle of Magical Might
-								i(25717),	-- Sure-Step Boots
-								i(25716),	-- Handguards of Precision
-								i(25715),	-- Jade Warrior Pauldrons
-							}),	
+					n(-17, {	-- Quests
+						qa(29529, {	-- Demons in the Citadel
+							["qg"] = 54603,	-- Advance Scout Chadwick
 						}),
+						qa(29594, {	-- Hitting Them Where It Hurts
+							["qg"] = 54603,	-- Advance Scout Chadwick
+						}),
+						qa(29528, {	-- War on the Ramparts
+							["groups"] = {
+								i(25718),	-- Mantle of Magical Might
+								i(25717),	-- Sure-Step Boots
+								i(25716),	-- Handguards of Precision
+								i(25715),	-- Jade Warrior Pauldrons
+							},
+							["qg"] = 54603,	-- Advance Scout Chadwick
+						}),	
+						qh(29530, {	-- Demons in the Citadel
+							["qg"] = 54606,	-- Stone Guard Stok'ton
+						}),
+						qh(29593, {	-- Hitting Them Where It Hurts
+							["qg"] = 54606,	-- Stone Guard Stok'ton
+						}),
+						qh(29527, {	-- War on the Ramparts
+							["groups"] = {
+								i(25718),	-- Mantle of Magical Might
+								i(25717),	-- Sure-Step Boots
+								i(25716),	-- Handguards of Precision
+								i(25715),	-- Jade Warrior Pauldrons
+							},
+							["qg"] = 54606,	-- Stone Guard Stok'ton
+						}),	
+					}),
+					d(1, {		-- Normal
 						e(527, { 	-- Watchkeeper Gargolmar
 							["groups"] = {
 								i(24020),	-- Shadowrend Longblade

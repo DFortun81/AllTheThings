@@ -2037,6 +2037,7 @@ AllTheThings.Locales.enUS = {
 		[182165] = "Wanted Poster",
 		[183770] = "B'naar Control Console",
 		[183811] = "Wanted Posted",
+		[184300] = "Necromantic Focus",
 		[184465] = "Cache of the Legion",
 		[184945] = "Wanted Poster",
 		[185168] = "Reinforced Fel Iron Chest",
