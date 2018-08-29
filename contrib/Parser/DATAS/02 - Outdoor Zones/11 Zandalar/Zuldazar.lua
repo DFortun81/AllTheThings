@@ -10,6 +10,20 @@ _.Zones =
 					["groups"] = {
 						ach(12482, {	-- Get Hek'd
 							["g"] = {
+								{	-- Golden Ravasaur Egg
+									["crs"] = {
+										131560,	-- Feral Ravasaur
+										122504,	-- Savagemane Ravasaur
+									},
+									["coord"] = { 71.69, 41.28 },	-- Trashpile turn-in
+									["itemID"] = 156963,	-- Golden Ravasaur Egg
+									["questID"] = 50308,	-- 50311 for giving her the actual item
+									["criteriaID"] = 1,	-- Golden Ravasaur Egg
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
 								{	-- The Great Hat Robbery
 									["qg"] = 133612,	-- Jani
 									["coord"] = { 61.8, 46.8 },	-- Trashpile pick-up

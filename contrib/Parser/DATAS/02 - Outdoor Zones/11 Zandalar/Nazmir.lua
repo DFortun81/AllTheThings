@@ -10,20 +10,6 @@ _.Zones =
 					["groups"] = {
 						ach(12482, {	-- Get Hek'd
 							["g"] = {
-								{	-- Golden Ravasaur Egg
-									["crs"] = {
-										131560,	-- Feral Ravasaur
-										122504,	-- Savagemane Ravasaur
-									},
-									["coord"] = { 71.69, 41.28 },	-- Trashpile turn-in
-									["itemID"] = 156963,	-- Golden Ravasaur Egg
-									["questID"] = 50308,	-- NEEDS CONFIRMATION, TAKEN FROM WOWHEAD
-									["criteriaID"] = 1,	-- Golden Ravasaur Egg
-									["sourceQuests"] = { 
-										51145,	-- Curse of Jani (Alliance)
-										47442,	-- Curse of Jani (Horde)
-									},
-								},
 								{	-- Vilescale Pearl
 									["crs"] = {
 										125328,	-- Priestess Zaldraxia
