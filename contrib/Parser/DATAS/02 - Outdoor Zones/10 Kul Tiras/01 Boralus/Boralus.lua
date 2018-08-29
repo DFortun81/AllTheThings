@@ -117,6 +117,7 @@ _.Zones =
 							["isDaily"] = true,
 							["lvl"] = 120,
 							["repeatable"] = true,
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(50599, {	-- Proudmoore Admiralty
 							["groups"] = {
@@ -205,6 +206,7 @@ _.Zones =
 							["isDaily"] = true,
 							["lvl"] = 120,
 							["repeatable"] = true,
+							["races"] = ALLIANCE_ONLY,
 						}),
 					},
 				}),
@@ -498,7 +500,10 @@ _.Zones =
 				n(-2, {  -- Vendors
 					["groups"] = {
 						n(141009, {	-- Col. Tenders <Chicken Vendor>
-							i(11023), -- Ancona Chicken
+							["groups"] = {
+								i(11023), -- Ancona Chicken
+							},
+							["races"] = ALLIANCE_ONLY,
 						}),
 						n(142065, {	-- Dana Pull
 							["groups"] = {
@@ -512,6 +517,7 @@ _.Zones =
 								}),
 							},
 							["coord"] = { 50.8, 46.0 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						n(142564, {	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
 							["groups"] = {
@@ -715,10 +721,14 @@ _.Zones =
 								}),
 							},
 							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						n(145838, {	-- Marshal Frazer
-							i(139775), -- Alliance Enthusiast
-							i(142379), -- Dutiful Squire
+							["groups"] = {
+								i(139775), -- Alliance Enthusiast
+								i(142379), -- Dutiful Squire
+							},
+							["races"] = ALLIANCE_ONLY,
 						}),
 						n(135808, {	-- Provisioner Fray <Proudmoore Admiralty Emissary>
 							["groups"] = {
@@ -776,6 +786,7 @@ _.Zones =
 									["spellID"] = 272064,
 								}), 	
 							},
+							["races"] = ALLIANCE_ONLY,
 						}),
 						n(142691, {	-- Tricky Nick
 							["groups"] = {
@@ -783,6 +794,7 @@ _.Zones =
 								i(163589), -- Reins of the Palehide Direhorn
 								i(163042), -- Reins of the Mighty Caravan Brutosaur
 							},
+							["races"] = ALLIANCE_ONLY,
 						}),
 						n(135446, {	-- Vindicator Jaelaana <7th Legion Emissary [NOTE: PvP Factions]
 							["groups"] = {

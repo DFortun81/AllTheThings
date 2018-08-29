@@ -84,6 +84,7 @@ _.Zones =
 							["isDaily"] = true,
 							["lvl"] = 120,
 							["repeatable"] = true,
+							["races"] = HORDE_ONLY,
 						}),
 						q(50598, {	-- Zandalari Empire
 							["groups"] = {
@@ -172,6 +173,7 @@ _.Zones =
 							["isDaily"] = true,
 							["lvl"] = 120,
 							["repeatable"] = true,
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),

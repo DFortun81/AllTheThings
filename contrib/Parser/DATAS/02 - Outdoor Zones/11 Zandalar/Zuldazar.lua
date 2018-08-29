@@ -1034,6 +1034,7 @@ _.Zones =
 								i(10393),	-- Undercity Cockroach
 								i(29903),	-- Yellow Moth Egg
 							},
+							["races"] = HORDE_ONLY,
 						}),
 						n(134345, {	-- Collector Kojo <Tortollan Seekers Emissary>
 							["groups"] = {
@@ -1246,6 +1247,7 @@ _.Zones =
 								128647,	-- Seaspray Hatchling
 								128343,	-- Skyterror Hatchling
 							},
+							["races"] = HORDE_ONLY,
 						}),
 						i(159594),	-- Zem'lan Saber of the Quickblade
 						i(160146),	-- Saurifeather Crest

@@ -103,6 +103,7 @@ _.Zones =
 						q(50601, {	-- Storm's Wake
 							["isDaily"] = true,
 							["lvl"] = 120,
+							["races"] = ALLIANCE_ONLY,
 						}),
 					},
 				}),
@@ -1533,6 +1534,7 @@ _.Zones =
 								i(139003),	-- Pocket Pet Portal
 							},
 							["itemID"] = 163036,	-- Polished Pet Charm
+							["races"] = ALLIANCE_ONLY,
 						}),
 						n(135800, {	-- Sister Lilyana <Storm's Wake Emissary>
 							["groups"] = {
@@ -1600,6 +1602,7 @@ _.Zones =
 									["spellID"] = 255409,
 								}),
 							},
+							["races"] = ALLIANCE_ONLY,
 						}),
 					},
 				}),

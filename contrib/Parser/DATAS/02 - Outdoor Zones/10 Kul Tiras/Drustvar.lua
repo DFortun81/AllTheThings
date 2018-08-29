@@ -112,6 +112,7 @@ _.Zones =
 						q(50600, {	-- Order of Embers
 							["isDaily"] = true,
 							["lvl"] = 120,
+							["races"] = ALLIANCE_ONLY,
 						}),
 					},
 				}),
@@ -1903,6 +1904,7 @@ _.Zones =
 							},
 							["itemID"] = 163036,	-- Polished Pet Charm
 							["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at 52.00, 31.00 and then click on the chest twice.",
+							["races"] = ALLIANCE_ONLY,
 						}),
 						n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary>
 							["groups"] = {

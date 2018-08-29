@@ -139,6 +139,7 @@ _.Zones =
 						q(50602, {	-- Talanji's Expedition
 							["isDaily"] = true,
 							["lvl"] = 120,
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),
@@ -1119,6 +1120,7 @@ _.Zones =
 									["spellID"] = 272064,
 								}),
 							},
+							["races"] = HORDE_ONLY,
 						}),
 						n(132011, {	-- Shoak
 							["groups"] = {
@@ -1131,6 +1133,7 @@ _.Zones =
 							},
 							["description"] = "You must complete the quests \"Killing Cannibals\", \"Just Say No to Cannibalism\", and \"Shoak's on the Menu\" in order him to show up at Gloom Hollow.",
 							["itemID"] = 163036,	-- Polished Pet Charm
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),

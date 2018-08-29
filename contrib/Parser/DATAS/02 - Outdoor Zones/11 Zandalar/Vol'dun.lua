@@ -242,9 +242,10 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
-						qh(50603, {	-- Voldunai
+						q(50603, {	-- Voldunai
 							["isDaily"] = true,
 							["lvl"] = 120,
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),
@@ -282,7 +283,10 @@ _.Zones =
 				}),
 				n(-25,  { 	-- Pet Battle
 					["groups"] = {
+						p(2388),	-- Bloodfeaver Tarantula
 						p(2399),	-- Hermit Crab
+						p(2390),	-- Leafy Flutterwing
+						p(2392),	-- Young Sand Sifter
 					},
 				}),
 				n(-17,  {	-- Quests
@@ -1084,8 +1088,9 @@ i(155430),
 									["f"] = 55,  -- They may change it to a toy?
 								}),
 							},
+							["races"] = HORDE_ONLY,
 						}),
-						nh(135400, {	-- Jenoh
+						n(135400, {	-- Jenoh
 							["groups"] = {
 								i(163511),	-- Barnacled Hermit Crab
 								i(163509),	-- Freshwater Pincher
@@ -1095,6 +1100,7 @@ i(155430),
 							},
 							["itemID"] = 163036,	-- Polished Pet Charm
 							["description"] = "Complete the questline \"A Lost Flute\" to unlock this vendor.",
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),
