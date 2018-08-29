@@ -1873,19 +1873,19 @@ _.Zones =
 									["spellID"] = 259432,
 								}),
 								i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]
-									["spellID"] = 256252,
-								}),
-								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]
 									["spellID"] = 256249,
 								}),
-								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]
+								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]
 									["spellID"] = 259435,
 								}),
-								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]
+								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]
 									["spellID"] = 252370,
 								}),
-								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]
+								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]
 									["spellID"] = 256237,
+								}),
+								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]
+									["spellID"] = 276059,
 								}),
 							},
 						}),
