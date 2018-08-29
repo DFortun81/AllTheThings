@@ -242,7 +242,7 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
-						q(50603, {	-- Voldunai
+						qh(50603, {	-- Voldunai
 							["isDaily"] = true,
 							["lvl"] = 120,
 						}),
@@ -1085,7 +1085,7 @@ i(155430),
 								}),
 							},
 						}),
-						n(135400, {	-- Jenoh
+						nh(135400, {	-- Jenoh
 							["groups"] = {
 								i(163511),	-- Barnacled Hermit Crab
 								i(163509),	-- Freshwater Pincher
