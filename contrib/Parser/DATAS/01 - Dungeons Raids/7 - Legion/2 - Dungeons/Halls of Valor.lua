@@ -8,68 +8,82 @@ _.Instances =
 		["groups"] = {
 			inst(721, { 	-- Halls of Valor
 				["groups"] = {
-					n(-17, {	-- Quests 		
-						q(43349, {
-							i(130016),
-							i(129989),
-							i(129997),
-							i(130005),
-						}),	
+					n(-17, {	-- Quests
+						o(251991, {	-- The Aegis of Aggramar
+							q(43349, {	-- The Aegis of Aggramar
+								["groups"] = {
+									i(130016),	-- Valor-Bound Legplates
+									i(129997),	-- Valor-Bound Legwraps
+									i(129989),	-- Valor-Bound Trousers
+									i(130005),	-- Valor-Bound Greaves
+								},
+							}),
+						}),
 					}),
 					d(1, {		-- Normal
 						["groups"] = {
 							cr(94960, e(1485, {	-- Hymdall
-								i(134216),
-								i(134213),
-								i(134179),
-								i(133621),
-								i(133628),
-								i(133805),
-								i(134194),
-								i(136774)
+								i(133621),	-- Adorned Guardian's Bracers
+								i(133628),	-- Battleborne Sentinel Gauntlets
+								i(134194),	-- Biornskin Leggings
+								i(134216),	-- Bonespeaker Cowl
+								i(136774),	-- Cushioned Treads of Glory
+								i(133642),	-- Horn of Valor
+								i(134179),	-- Skoldiir Breastplate
+								i(133805),	-- Thundercaller's Chain
+								i(134213),	-- Tideskorn Mantle
 							})),
 							cr(95833, e(1486, {	-- Hyrja
-								i(134196),
-								i(133620),
-								i(134219),
-								i(133622),
-								i(134186),
-								i(134209),
-								i(133613),
-								i(136772)
+								i(133620),	-- Amice of the Enlightened
+								i(134196),	-- Biornskin Hood
+								i(134219),	-- Bonespeaker Robes
+								i(133646),	-- Mote of Sanctification
+								i(134186),	-- Skoldiir Bracers
+								i(133613),	-- Solsten's Arcing Runecord
+								i(133622),	-- Thunderfused Val'kyr Hauberk
+								i(134209),	-- Tideskorn Gauntlets
+								i(133679),	-- Val'kyr Ascension Signet
+								i(136772),	-- Valkyra Protector Greatboots
 							})),
 							cr(95674, e(1487, {	-- Fenryr
-								i(133639),
-								i(133615),
-								i(133626),
-								i(133609),
-								i(136773)
+								i(133639),	-- Goldscar Pelt
+								i(136773),	-- Greatbelt of Alpha Dominance
+								i(133615),	-- Hide of Fenryr
+								i(136975),	-- Hunger of the Pack
+								i(133626),	-- Runebands of the Worthy
+								i(133609),	-- Silken Bloodscent Gloves
+								i(133633),	-- Wolfstride Pendant
 							})),
 							cr(95675, e(1488, {	-- God-King Skovald
-								i(134182),
-								i(136775),
-								i(134222),
-								i(133617),
-								i(134212),
-								i(133630),
-								i(134193),
-								i(133623),
 								i(140660),	-- Haft of the God-King
+								i(134193),	-- Biornskin Moccasins
+								i(134222),	-- Bonespeaker Bracers
+								i(133617),	-- Cruel Vice Grips
+								i(133641),	-- Eye of Skovald
+								i(133623),	-- Felstep Footguards
+								i(133630),	-- Greaves of the God-King
+								i(136775),	-- Infernal Mantle of Conquest
+								i(134182),	-- Skoldiir Helm
+								i(134212),	-- Tideskorn Leggings
+								i(133638),	-- Woe-Bearer's Band
 							})),
 							cr(95676, e(1489, {	-- Odyn
-								i(139281),
-								i(136777),
-								i(133631),
-								i(133765),
-								i(139283),
-								i(134192),
-								i(139282),
-								i(134217),
-								i(134180),
-								i(134207),
-								i(136776),
-								i(133610),
-								i(139280)
+								ach(10786),	-- Halls of Valor
+								i(134192),	-- Biornskin Bracer
+								i(136776),	-- Bjorn's Hunting Strap
+								i(134217),	-- Bonespeaker Gloves
+								i(133765),	-- Cape of Valarjar Courage
+								i(136777),	-- Collar of  Honorable Exultation
+								i(133647),	-- Gift of Radiance
+								i(139281),	-- Glory Seeker's Helm
+								i(133610),	-- Leggings of Swirling Runes
+								i(133631),	-- Pauldrons of the All-Father
+								i(133767),	-- Pendant of the Stormforger
+								i(134180),	-- Skoldiir Gauntlets
+								i(139282),	-- Solid Gold Bracelets
+								i(134207),	-- Tideskorn Cinch
+								i(139280),	-- Treads of Light
+								i(139283),	-- Wristbands of Magnificent Splender
 							}))
 						}
 					}),
@@ -77,121 +91,149 @@ _.Instances =
 						["lvl"] = 110,
 						["groups"] = {
 							cr(94960, e(1485, {	-- Hymdall
-								i(134216),
-								i(134213),
-								i(134179),
-								i(133621),
-								i(133628),
-								i(133805),
-								i(134194),
-								i(136774)
+								i(133621),	-- Adorned Guardian's Bracers
+								i(133628),	-- Battleborne Sentinel Gauntlets
+								i(134194),	-- Biornskin Leggings
+								i(134216),	-- Bonespeaker Cowl
+								i(136774),	-- Cushioned Treads of Glory
+								i(133642),	-- Horn of Valor
+								i(134179),	-- Skoldiir Breastplate
+								i(133805),	-- Thundercaller's Chain
+								i(134213),	-- Tideskorn Mantle
 							})),
 							cr(95833, e(1486, {	-- Hyrja
-								i(134196),
-								i(133620),
-								i(133622),
-								i(134219),
-								i(134186),
-								i(134209),
-								i(133613),
-								i(136772)
+								i(133620),	-- Amice of the Enlightened
+								i(134196),	-- Biornskin Hood
+								i(134219),	-- Bonespeaker Robes
+								i(133646),	-- Mote of Sanctification
+								i(134186),	-- Skoldiir Bracers
+								i(133613),	-- Solsten's Arcing Runecord
+								i(133622),	-- Thunderfused Val'kyr Hauberk
+								i(134209),	-- Tideskorn Gauntlets
+								i(133679),	-- Val'kyr Ascension Signet
+								i(136772),	-- Valkyra Protector Greatboots
 							})),
 							cr(95674, e(1487, {	-- Fenryr
-								i(133639),
-								i(133615),
-								i(133626),
-								i(133609),
-								i(136773)
+								i(133639),	-- Goldscar Pelt
+								i(136773),	-- Greatbelt of Alpha Dominance
+								i(133615),	-- Hide of Fenryr
+								i(136975),	-- Hunger of the Pack
+								i(133626),	-- Runebands of the Worthy
+								i(133609),	-- Silken Bloodscent Gloves
+								i(133633),	-- Wolfstride Pendant
 							})),
 							cr(95675, e(1488, {	-- God-King Skovald
-								i(134182),
-								i(136775),
-								i(134222),
-								i(133617),
-								i(134212),
-								i(133630),
-								i(134193),
-								i(133623),
 								i(140660),	-- Haft of the God-King
+								i(134193),	-- Biornskin Moccasins
+								i(134222),	-- Bonespeaker Bracers
+								i(133617),	-- Cruel Vice Grips
+								i(133641),	-- Eye of Skovald
+								i(133623),	-- Felstep Footguards
+								i(133630),	-- Greaves of the God-King
+								i(136775),	-- Infernal Mantle of Conquest
+								i(134182),	-- Skoldiir Helm
+								i(134212),	-- Tideskorn Leggings
+								i(133638),	-- Woe-Bearer's Band
 							})),
 							cr(95676, e(1489, {	-- Odyn
-								i(136777),
-								i(139281),
-								i(133631),
-								i(133765),
-								i(139283),
-								i(139282),
-								i(134192),
-								i(134217),
-								i(134180),
-								i(134207),
-								i(136776),
-								i(133610),
-								i(139280)
+								ach(10788),	-- Heroic: Halls of Valor
+								i(134192),	-- Biornskin Bracer
+								i(136776),	-- Bjorn's Hunting Strap
+								i(134217),	-- Bonespeaker Gloves
+								i(133765),	-- Cape of Valarjar Courage
+								i(136777),	-- Collar of  Honorable Exultation
+								i(133647),	-- Gift of Radiance
+								i(139281),	-- Glory Seeker's Helm
+								i(133610),	-- Leggings of Swirling Runes
+								i(133631),	-- Pauldrons of the All-Father
+								i(133767),	-- Pendant of the Stormforger
+								i(134180),	-- Skoldiir Gauntlets
+								i(139282),	-- Solid Gold Bracelets
+								i(134207),	-- Tideskorn Cinch
+								i(139280),	-- Treads of Light
+								i(139283),	-- Wristbands of Magnificent Splender
 							}))
 						}
 					}),
 					d(23, {		-- Mythic
 						["lvl"] = 110,
 						["groups"] = {
+							n(-4, {	-- Achievements
+								ach(10542),	-- I Got What You Mead
+								ach(10544),	-- Stag Party
+							}),
 							cr(94960, e(1485, {	-- Hymdall
-								i(134216),
-								i(134213),
-								i(134179),
-								i(133621),
-								i(133628),
-								i(133805),
-								i(134194),
-								i(136774)
+								i(133621),	-- Adorned Guardian's Bracers
+								i(133628),	-- Battleborne Sentinel Gauntlets
+								i(134194),	-- Biornskin Leggings
+								i(134216),	-- Bonespeaker Cowl
+								i(136774),	-- Cushioned Treads of Glory
+								i(133642),	-- Horn of Valor
+								i(134179),	-- Skoldiir Breastplate
+								i(133805),	-- Thundercaller's Chain
+								i(134213),	-- Tideskorn Mantle
 							})),
 							cr(95833, e(1486, {	-- Hyrja
-								i(134196),
-								i(133620),
-								i(133622),
-								i(134219),
-								i(134186),
-								i(134209),
-								i(133613),
-								i(136772)
+								i(133620),	-- Amice of the Enlightened
+								i(134196),	-- Biornskin Hood
+								i(134219),	-- Bonespeaker Robes
+								i(133646),	-- Mote of Sanctification
+								i(134186),	-- Skoldiir Bracers
+								i(133613),	-- Solsten's Arcing Runecord
+								i(133622),	-- Thunderfused Val'kyr Hauberk
+								i(134209),	-- Tideskorn Gauntlets
+								i(133679),	-- Val'kyr Ascension Signet
+								i(136772),	-- Valkyra Protector Greatboots
 							})),
 							cr(95674, e(1487, {	-- Fenryr
-								i(133639),
-								i(133615),
-								i(133626),
-								i(133609),
-								i(136773)
+								i(133639),	-- Goldscar Pelt
+								i(136773),	-- Greatbelt of Alpha Dominance
+								i(133615),	-- Hide of Fenryr
+								i(136975),	-- Hunger of the Pack
+								i(133626),	-- Runebands of the Worthy
+								i(133609),	-- Silken Bloodscent Gloves
+								i(133633),	-- Wolfstride Pendant
 							})),
 							cr(95675, e(1488, {	-- God-King Skovald
-								i(134182),
-								i(136775),
-								i(134222),
-								i(133617),
-								i(134212),
-								i(133630),
-								i(134193),
-								i(133623),
 								i(140660),	-- Haft of the God-King
+								i(134193),	-- Biornskin Moccasins
+								i(134222),	-- Bonespeaker Bracers
+								i(133617),	-- Cruel Vice Grips
+								i(133641),	-- Eye of Skovald
+								i(133623),	-- Felstep Footguards
+								i(133630),	-- Greaves of the God-King
+								i(136775),	-- Infernal Mantle of Conquest
+								i(134182),	-- Skoldiir Helm
+								i(134212),	-- Tideskorn Leggings
+								i(133638),	-- Woe-Bearer's Band
 							})),
 							cr(95676, e(1489, {	-- Odyn
+								ach(10789),	-- Mythic: Halls of Valor
+								ach(10543),	-- Surge Protector
 								i(137607, { -- Recipe: Leystone Helm (Rank 3)
-									["groups"] = {
-										recipe(191929), -- Recipe: Leystone Helm (Rank 3)
-									},
 									["requireSkill"] = 164, -- Blacksmithing
 								}),
-								i(136777),
-								i(139281),
-								i(133631),
-								i(133765),
-								i(139282),
-								i(134192),
-								i(139283),
-								i(134217),
-								i(134180),
-								i(136776),
-								i(134207),
-								i(133610),
-								i(139280)
+								i(137911, {	-- Recipe: Battlebound Grips (Rank 3)
+									["requireSkill"] = 165,	-- Leatherworking
+								}),
+								i(127933, {	-- Recipe: Flask of Ten Thousand Scars (Rank 2)
+									["requireSkill"] = 171,	-- Alchemy
+								}),
+								i(134192),	-- Biornskin Bracer
+								i(136776),	-- Bjorn's Hunting Strap
+								i(134217),	-- Bonespeaker Gloves
+								i(133765),	-- Cape of Valarjar Courage
+								i(136777),	-- Collar of  Honorable Exultation
+								i(133647),	-- Gift of Radiance
+								i(139281),	-- Glory Seeker's Helm
+								i(133610),	-- Leggings of Swirling Runes
+								i(133631),	-- Pauldrons of the All-Father
+								i(133767),	-- Pendant of the Stormforger
+								i(134180),	-- Skoldiir Gauntlets
+								i(139282),	-- Solid Gold Bracelets
+								i(134207),	-- Tideskorn Cinch
+								i(139280),	-- Treads of Light
+								i(139283),	-- Wristbands of Magnificent Splender
 							}))
 						}
 					})
