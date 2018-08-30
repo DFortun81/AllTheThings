@@ -8,6 +8,61 @@ _.Zones =
 			["groups"] = {
 				n(-4, {	-- Achievements
 					["groups"] = {
+						ach(12588, {	-- Eat Your Greens
+							-- Add more coordinates when full object data is available on wowhead.
+							o(291233, {	-- Saurolisk Tail
+								["icon"] = "Interface\\Icons\\inv_misc_herb_whiptail",
+								["coords"] = {
+									{ 30.3, 52.7 },
+									{ 30.1, 39.7 },
+									{ 47.5, 35.1 },
+								},
+								["criteriaID"] = 1,	-- Saurolisk Tail
+							}),
+							o(291238, {	-- Bwonsamdi's Tears
+								["icon"] = "Interface\\Icons\\inv_misc_herb_riverbud",
+								["coords"] = {
+									{ 55.6, 74.7 },
+									{ 46.1, 71.9 },
+								},
+								["criteriaID"] = 2,	-- Bwonsamdi's Tears
+							}),
+							o(291241, {	-- Gnarl Root
+								["icon"] = "Interface\\Icons\\inv_misc_herb_07",
+								["coords"] = {
+									{ 28.0, 35.3 },
+									{ 35.2, 66.4 },
+									{ 48.7, 74.9 },
+								},
+								["criteriaID"] = 3,	-- Gnarl Root
+							}),
+							o(292812, {	-- Sapphire Amaraina
+								["icon"] = "Interface\\Icons\\inv_misc_herb_taladororchid",
+								["coords"] = {
+									{ 73.7, 39.7 },
+									{ 81.9, 55.9 },
+								},
+								["criteriaID"] = 4,	-- Sapphire Amaraina
+							}),
+							o(292823, {	-- Krag'wa's Ire
+								["icon"] = "Interface\\Icons\\inv_misc_herb_talandrasrose_petal",
+								["coords"] = {
+									{ 52.6, 35.8 },
+									{ 50.4, 39.7 },
+								},
+								["criteriaID"] = 5,	-- Krag'wa's Ire
+							}),
+							o(275059, {	-- Stonebloom
+								["icon"] = "Interface\\Icons\\INV_Misc_SpineLeaf _01",
+								["coords"] = {
+									{ 54.5, 56.1 },
+									{ 55.4, 67.1 },
+									{ 76.3, 61.0 },
+									{ 49.4, 48.9 },
+								},
+								["criteriaID"] = 6,	-- Stonebloom
+							}),
+						}),
 						ach(12482, {	-- Get Hek'd
 							["g"] = {
 								{	-- Vilescale Pearl
