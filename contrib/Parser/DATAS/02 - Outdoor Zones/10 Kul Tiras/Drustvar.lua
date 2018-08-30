@@ -168,7 +168,7 @@ _.Zones =
 						p(2378),	-- River Otter
 						p(2198, {	-- Taptaf
 							["groups"] = {
-								q(5061, { -- Taptaf the Pig!
+								q(52061, { -- Taptaf the Pig!
 									["groups"] = {
 										i(161081, {	-- Taptaf
 											["crs"] = {
@@ -178,9 +178,7 @@ _.Zones =
 										}),
 									},
 									["qg"] = 139380,	-- Taptaf
-									["coords"] = {
-										{ 65.0, 83.2 },
-									},
+									["coord"] = { 65.0, 83.2 },
 									["description"] = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
 								}),
 							},
