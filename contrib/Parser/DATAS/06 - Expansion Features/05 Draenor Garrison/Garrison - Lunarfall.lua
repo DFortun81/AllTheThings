@@ -420,6 +420,11 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
+				n(-228, {	-- Flight Paths
+					fp(1476, { -- Lunarfall (Alliance), Shadowmoon Valley
+						["coord"] = { 47.6, 49.6 },
+					}),
+				}),
 				n(-136, { 	-- Invasions
 					["groups"] = {
 						ach(9208),	-- Botani Invasion

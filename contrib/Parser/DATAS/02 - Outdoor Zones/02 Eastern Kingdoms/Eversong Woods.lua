@@ -6,6 +6,17 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(94, {	-- Eversong Woods
 			["groups"] = {			
+				n(-228, {	-- Flight Paths
+					fp(625, {	-- Fairbreeze Village, Eversong Woods
+						["coord"] = { 44, 70 },
+					}),
+					fp(631, {	-- Falconwing Square, Eversong Woods
+						["coord"] = { 46.2, 46.8 },
+					}),
+					fp(82, {	-- Silvermoon City
+						["coord"] = { 54.4, 50.8 },
+					}),
+				}),
 				n(-25, {	-- Pet Battle
 					p(459), 	-- Cat
 					p(460), 	-- Ruby Sapling

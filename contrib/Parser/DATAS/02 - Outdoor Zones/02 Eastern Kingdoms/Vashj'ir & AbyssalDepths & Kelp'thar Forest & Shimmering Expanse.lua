@@ -8,6 +8,14 @@ _.Zones =
 			["groups"] = {
 				m(204, {	-- Abyssal Depths
 					["groups"] = {			
+						n(-228, {	-- Flight Paths
+							fp(524, {	-- Daybreak Cove, Vashj'ir
+								["coord"]	= { 56.8, 75.4 },
+							}),
+							fp(526, {	-- Tenebrous Cavern, Vashj'ir
+								["coord"]	= { 53.8, 59.6 },
+							}),
+						}),
 						n(-17, { -- Quests
 --							qg(, qa(26017)),  	-- A Lure
 							qg(41667, qa(25977, {  	-- A Standard Day for Azrajar
@@ -193,8 +201,19 @@ _.Zones =
 					["description"] = "|cff66ccffAbyssal Depths is the last, and darkest zone, players reach when questing in Vash'jir. They are home to the ancient god L'ghorek, which the Twilight Hammer is siphoning energy from to be prepared when fighting Neptulon in the future.|r",
 				}),
 				m(201, {	-- Kelp'thar Forest
-					["groups"] = {		
-				n(-17, { -- Quests
+					["groups"] = {
+						n(-228, {	-- Flight Paths
+							fp(607, {	-- Sandy Beach, Vashj'ir
+								["coord"] = { 42.4, 66.2 },
+							}),
+							fp(609, {	-- Sandy Beach, Vashj'ir
+								["coord"] = { 49.2, 87.8 },
+							}),
+							fp(521, {	-- Smuggler's Scar, Vashj'ir
+								["coord"] = { 56.2, 31 },
+							}),
+						}),
+						n(-17, { -- Quests
 --[[
 							qg(, q(25732)),		-- A Bone To Pick
 							qg(, q(25388)),		-- A Case of Crabs
@@ -907,7 +926,36 @@ _.Zones =
 					["description"] = "|cff66ccffKelp'thar Forest is the first subzone players reach when questing in Vash'jir. It has tropical underwater life and is closer to the surface than other subzones. Quests introduce the threat of the naga while also reacquainting the player with stranded members of the Zul'Aman exploratory crew.|r",
 				}),
 				m(205, {	-- Shimmering Expanse
-					["groups"] = {			
+					["groups"] = {
+						n(-228, {	-- Flight Paths
+							fp(525, {	-- Legion's Rest, Vashj'ir
+								["coord"] = { 50.8, 63.4 },
+							}),
+							fp(606, {	-- Sandy Beach, Vashj'ir (Alliance - Flight Master)
+								["coord"] = { 57, 17 },
+							}),
+							fp(608, {	-- Sandy Beach, Vashj'ir (Horde - Flight Master)
+								["coord"] = { 61, 28.2 },
+							}),
+							fp(522, {	-- Silver Tide Hollow, Vashj'ir
+								["coord"] = { 49.4, 41.2 },
+							}),
+							fp(610, {	-- Stygian Bounty, Vashj'ir (Horde - Flight Master)
+								["coord"] = { 64.8, 68 },
+							}),
+							fp(612, {	-- Stygian Bounty, Vashj'ir (Horde - Seahorse)
+								["coord"] = { 49.4, 65.6 },
+							}),
+							fp(523, {	-- Tranquil Wash Hollow, Vashj'ir
+								["coord"] = { 48.6, 57.4 },
+							}),
+							fp(605, {	-- Voldrin's Hold, Vashj'ir (Alliance - Flight Master)
+								["coord"] = { 69.4, 75.2 },
+							}),
+							fp(611, {	-- Voldrin's Hold, Vashj'ir (Alliance - Seahorse)
+								["coord"] = { 57., 75.2 },
+							}),
+						}),
 						n(-17, { -- Quests
 --[[						
 							qg(, qa(25582)),	-- A Better Vantage

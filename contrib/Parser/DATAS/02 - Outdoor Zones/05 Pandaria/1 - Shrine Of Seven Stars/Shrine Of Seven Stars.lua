@@ -6,11 +6,6 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(393, { 	-- Shrine of Seven Stars
 			["groups"] = {
-				n(-228, { 	-- Flight Paths
-					fp(1057, { -- Shrine of Seven Stars, Vale of Eternal Blossoms
-						["coord"] = { 84.6, 62.4 },
-					}),
-				}),
 				n(-17, { 	-- Quests	
 					qa(32900, { -- Heroic Deeds
 						["groups"] = {

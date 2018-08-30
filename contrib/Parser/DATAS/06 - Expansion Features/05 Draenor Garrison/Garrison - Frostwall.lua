@@ -420,6 +420,11 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
+				nh(-228, {	-- Flight Path
+					fp(1432, { -- Frostwall Garrison, Frostfire Ridge
+						["coord"] = { 45.8, 50.2 },
+					}),
+				}),
 				nh(-136, { 	-- Invasions
 					["groups"] = {
 						ach(9208),	-- Botani Invasion

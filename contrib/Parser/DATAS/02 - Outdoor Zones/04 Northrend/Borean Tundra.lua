@@ -128,6 +128,9 @@ _.Zones =
 					fp(258, { -- Taunka'le Village, Borean Tundra
 						["coord"] = { 77.6, 37.8 },
 					}),
+					fp(226, { -- Transitus Shield, Coldarra
+						["coord"] = { 33, 34.4 },
+					}),
 					fp(296, { -- Unu'pe, Borean Tundra
 						["coord"] = { 78.4, 51.4 },
 					}),
@@ -136,9 +139,6 @@ _.Zones =
 					}),
 					fp(257, { -- Warsong Hold, Borean Tundra
 						["coord"] = { 40.4, 51.4 },
-					}),
-					fp(226, { -- Transitus Shield, Coldarra
-						["coord"] = { 33, 34.4 },
 					}),
 				}),
 				n(-25, { 	-- Pet Battle

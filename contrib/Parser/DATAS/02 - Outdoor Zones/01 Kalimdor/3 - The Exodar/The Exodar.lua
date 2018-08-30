@@ -114,6 +114,11 @@ _.Zones =
 					}),
 				}),
 				--]]
+				n(-228, {	-- Flight Paths
+					fp(94, {	-- The Exodar
+						["coord"] = { 54.5, 36.3 },
+					}),
+				}),
 				n(-25, {	-- Pet Battle
 					p(464), 	-- Grey Moth
 					p(385), 	-- Mouse

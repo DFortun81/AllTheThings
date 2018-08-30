@@ -28,9 +28,6 @@ _.Zones =
 					fp(351, { -- Stardust Spire, Ashenvale
 						["coord"] = { 35, 72 },
 					}),
-					fp(354, { -- The Mor'Shan Ramparts, Ashenvale
-						["coord"] = { 42, 15.8 },
-					}),
 					fp(58, { -- Zoram'gar Outpost, Ashenvale
 						["coord"] = { 11.2, 34.4 },
 					}),

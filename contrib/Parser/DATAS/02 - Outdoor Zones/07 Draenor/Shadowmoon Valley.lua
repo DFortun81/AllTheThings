@@ -22,19 +22,17 @@ _.Zones =
 					fp(1384, { -- Exile's Rise, Shadowmoon Valley
 						["coord"] = { 45.6, 25.4 },
 					}),
-					fp(1476, { -- Lunarfall (Alliance), Shadowmoon Valley
-						["coord"] = { 47.6, 49.6 },
-					}),
 					fp(1383, { -- Path of the Light, Shadowmoon Valley
 						["coord"] = { 59.4, 46 },
 					}),
 					fp(1475, { -- Socrethar's Rise, Shadowmoon Valley
 						["coord"] = { 43.8, 77.4 },
 					}),
+					--fp(1567),	-- Temple of Karabor, Shadowmoon Valley (See 1556 Tranquil Court, cannot locate point that checks this item off)
 					fp(1467, { -- The Draakorium, Shadowmoon Valley
 						["coord"] = { 57, 56.6 },
 					}),
-					fp(1556, { -- Tranquil Court, Shadowmoon Valley
+					fp(1556, { -- Tranquil Court, Shadowmoon Valley (This is the point that checks off at Temple of Karabor)
 						["coord"] = { 70.4, 50.4 },
 					}),
 					fp(1382, { -- Twilight Glade, Shadowmoon Valley

@@ -6,6 +6,11 @@ _.Zones =
 	m(12, {		-- Kalimdor
 		m(106, {	-- Bloodmyst Isle
 			["groups"] = {
+				n(-228, {	-- Flight Path
+					fp(93, {	-- Blood Watch, Bloodmyst Isle
+						["coord"] = { 57.6, 54 },
+					}),
+				}),
 				n(-25, { 	-- Pet Battle
 					p(628),		-- Infected Fawn
 					p(627),		-- Infected Squirrel

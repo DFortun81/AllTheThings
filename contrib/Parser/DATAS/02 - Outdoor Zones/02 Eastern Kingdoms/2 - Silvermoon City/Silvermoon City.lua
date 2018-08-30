@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(110, { 	-- Silvermoon City
-			["groups"] = {				
+			["groups"] = {
 				n(-25, { 	-- Pet Battle
 					p(459), -- Cat
 				}),

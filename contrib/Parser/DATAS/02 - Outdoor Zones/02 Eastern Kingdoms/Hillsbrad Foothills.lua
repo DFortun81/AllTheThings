@@ -16,6 +16,9 @@ _.Zones =
 					fp(668, { -- Southpoint Gate, Hillsbrad
 						["coord"] = { 29, 64.4 },
 					}),
+					fp(670, { -- Strahnbrad, Alterac Mountains
+						["coord"] = { 58.2, 26.4 },
+					}),
 					fp(13, { -- Tarren Mill, Hillsbrad
 						["coord"] = { 56, 46 },
 					}),

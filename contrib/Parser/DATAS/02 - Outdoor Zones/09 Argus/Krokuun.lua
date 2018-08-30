@@ -39,6 +39,18 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(-228, {	-- Flight Paths
+					fp(1976, {	-- Destiny Point, Krokruun
+						["coord"] = { 62.7, 49.1 },
+					}),
+					fp(1928, {	-- Krokul Hovel, Krokruun
+						["coord"] = { 55.4, 67.3 },
+					}),
+					fp(1967, {	-- Shattered Fields, Krokruun
+						["coord"] = { 40.3, 63.5 },
+					}),
+					fp(1944),	-- Vindicaar, Krokruun
+				}),
 				n(-25, {	-- Pet Battle
 					["groups"] = {
 						ach(12088, { -- Anomalous Animals of Argus

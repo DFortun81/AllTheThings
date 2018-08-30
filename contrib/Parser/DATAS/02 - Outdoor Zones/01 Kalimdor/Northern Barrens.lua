@@ -16,6 +16,9 @@ _.Zones =
 					fp(25, { -- The Crossroads, Northern Barrens
 						["coord"] = { 48.6, 58.6 },
 					}),
+					fp(354, { -- The Mor'Shan Ramparts, Ashenvale
+						["coord"] = { 42, 15.8 },
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder

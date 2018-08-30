@@ -114,6 +114,7 @@ _.Zones =
 					fp(1982, { -- Triumvirate's End, Mac'Aree
 						["coord"] = { 52.8, 75.4 },
 					}),
+					fp(1977), -- Vindicaar, Mac'Aree
 				}),
 				n(-25, {	-- Pet Battle
 					["groups"] = {

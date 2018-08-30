@@ -16,9 +16,6 @@ _.Zones =
 					fp(1396, { -- Darkspear's Edge, Frostfire Ridge
 						["coord"] = { 51.8, 41 },
 					}),
-					fp(1432, { -- Frostwall Garrison, Frostfire Ridge
-						["coord"] = { 45.8, 50.2 },
-					}),
 					fp(1528, { -- Iron Siegeworks, Frostfire Ridge
 						["coord"] = { 87.4, 62.6 },
 					}),
