@@ -920,8 +920,9 @@ _.Zones =
 						}),
 						n(127290, {	-- Mugg			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(154416),	-- Trogg Saurolisk-Breaker	
-							}),	
+								un(1, i(154416)),	-- Trogg Saurolisk-Breaker	[Was in beta, not there on 8/30/18]
+							}),
+							["questID"] = 48806,
 						}),		
 						n(139205, {	-- P4-N73R4
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {

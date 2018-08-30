@@ -1563,7 +1563,7 @@ _.Zones =
 						}),	
 						n(125453, {	-- Quillrat Matriarch		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(158583),	-- Quillstitch Greatcloak
+								un(1, i(158583)),	-- Quillstitch Greatcloak [Was in beta, not there on 8/30/18]
 							}),
 							["questID"] = 48178,	
 						}),	
