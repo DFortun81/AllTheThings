@@ -381,19 +381,22 @@ _.Zones =
 						--------------------------------------
 						o(281551, {		-- Help Wanted Poster [Object]
 							a(q(50544, {	-- The Hunters of Kennings Lodge
-								-- ["sourceQuests"] = { 50531 },	-- Under Their Noses ?
+								["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
 								["isBreadcrumb"] = true,
+								-- Not required for "A Sound Plan."
 							})),
 						}),
 						a(q(50349, {	-- On Overrun Mine
 							["qg"] = 133550, -- Junior Miner Joe
-							-- ["sourceQuests"] = { 50531 },	-- Under Their Noses ?
+							["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
 							["isBreadcrumb"] = true,
+							-- Not required for "A Sound Plan."
 						})),
 						a(q(51149, {	-- Left at the Port
 							["qg"] = 136576, -- Dockmaster Leighton
-							-- ["sourceQuests"] = { 50531 },	-- Under Their Noses ?
+							["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
 							["isBreadcrumb"] = true,
+							-- Not required for "A Sound Plan."
 						})),
 						a(q(53041, {	-- Sampling the Goods
 							["qg"] = 121239, -- Flynn Fairwind
@@ -419,6 +422,7 @@ _.Zones =
 								i(155023),	-- Sea Raider's Sabatons
 								i(155086),	-- Keelson's Bloody Drape
 							},
+							-- Not required for "A Sound Plan."
 						})),
 						h(q(53439, {	-- Blood in the Tides [Horde]
 							["qg"] = 143777, -- Tall Hasani
@@ -441,10 +445,13 @@ _.Zones =
 									["sourceQuests"] = { 53443 },	-- My Favorite Things [Horde]
 								})),
 							},
+							-- Not required for "A Sound Plan."
 						}),
 						a(q(49230, {	-- Local Flavor [Alliance]
 							["qg"] = 128228, -- Hungry Sam
+							["coord"] = { 85.4, 80.7 },
 							["sourceQuests"] = { 49218 },	-- The Castaways
+							-- Not required for "A Sound Plan."
 						})),
 						h(q(53446, {	-- Local Flavor [Horde]
 							["qg"] = 128228, -- Hungry Sam
@@ -458,10 +465,14 @@ _.Zones =
 						a(q(48419, {	-- Lured and Allured [Alliance Only]
 							["qg"] = 128377, -- Beachcomber Bob
 							["sourceQuests"] = { 47489 },	-- Stow and Go
+							["coord"] = { 85.5, 83.5 },
+							-- Not required for "A Sound Plan."
 						})),
 						a(q(49178, {	-- My Favorite Things [Alliance]
 							["qg"] = 128229, -- Stabby Jane
+							["coord"] = { 85.4, 80.8 },
 							["sourceQuests"] = { 49218 },	-- The Castaways
+							-- Not required for "A Sound Plan."
 						})),
 						h(q(53443, {	-- My Favorite Things [Horde]
 							["qg"] = 128229, -- Stabby Jane
@@ -469,7 +480,9 @@ _.Zones =
 						})),
 						a(q(49226, {	-- Silencing the Sisters [Alliance]
 							["qg"] = 128229, -- Stabby Jane
+							["coord"] = { 85.4, 80.8 },
 							["sourceQuests"] = { 49218 },	-- The Castaways
+							-- Not required for "A Sound Plan."
 						})),
 						h(q(53445, {	-- Silencing the Sisters [Horde]
 							["qg"] = 128229, -- Stabby Jane
@@ -477,7 +490,10 @@ _.Zones =
 						})),
 						a(q(49218, {	-- The Castaways [Alliance]
 							["qg"] = 128377, -- Beachcomber Bob
-							["sourceQuests"] = { 47489 },	-- Stow and Go
+							["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
+							["isBreadcrumb"] = true,	-- for Local Flavor, My Favorite Things, and Silencing the Sisters
+							["coord"] = { 85.5, 83.5 },
+							-- Not required for "A Sound Plan."
 						})),
 						h(q(53442, {	-- The Castaways [Horde]
 							["qg"] = 128377, -- Beachcomber Bob

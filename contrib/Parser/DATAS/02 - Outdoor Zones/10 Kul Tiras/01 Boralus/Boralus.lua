@@ -313,6 +313,7 @@ _.Zones =
 								a(q(47099, {	-- Get Your Bearings
 									["qg"] = 121235, -- Taelia
 									["sourceQuests"] = { 47098 }, -- Out Like Flynn
+									-- If you skip the scenario, the SQ is just 46728 "The Nation of Kul Tiras."
 									["coord"] = { 75.7, 23.5 },
 								})),
 								a(q(46729, {	-- The Old Knight
@@ -387,6 +388,7 @@ _.Zones =
 							["groups"] = {
 								ach(12741), -- Giving a Scrap
 							},
+							["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 						})),
 						a(q(51488, {	-- Archived Knowledge
 							["qg"] = 137871,	-- Taelia
