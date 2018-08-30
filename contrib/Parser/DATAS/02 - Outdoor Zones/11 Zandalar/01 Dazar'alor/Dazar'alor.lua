@@ -498,6 +498,12 @@ _.Zones =
 				}),
 				n(-2, {  -- Vendors
 					["groups"] = {
+						n(138033, {	-- Elly Fraze <Toys and Curiosities>
+							["groups"] = {
+								i(104324),	-- Foot Ball
+								i(104323),	-- The Pigskin
+							},
+						}),
 						n(132114, {	-- Griftah <Amazing Amulets>
 							["groups"] = {
 								i(156659, {	-- Counterfeit Rastakhan Mask

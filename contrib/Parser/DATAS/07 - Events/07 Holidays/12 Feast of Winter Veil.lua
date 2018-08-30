@@ -1332,27 +1332,27 @@ _.WorldEvents =
 						-- NEUTRAL VENDORS --
 						n(29716, { -- Clockwork Assistant
 							["groups"] = {
-								un(29, i(104324)), -- Foot Ball
+								i(104324), -- Foot Ball
 							},
 						}),
 						n(96484, { -- Clockwork Assistant
 							["groups"] = {
-								un(29, i(104324)), -- Foot Ball
+								i(104324), -- Foot Ball
 							},
 						}),
 						n(29478, { -- Jepetto Joybuzz
 							["groups"] = {
-								un(29, i(104324)), -- Foot Ball
+								i(104324), -- Foot Ball
 							},
 						}),
 						n(96483, { -- Jepetto Joybuzz
 							["groups"] = {
-								un(29, i(104324)), -- Foot Ball
+								i(104324), -- Foot Ball
 							},
 						}),
 						n(84212, { -- Kazbala
 							["groups"] = {
-								un(29, i(104324)), -- Foot Ball
+								i(104324), -- Foot Ball
 							},
 						}),
 						n(23064, { -- Eebee Jinglepocket
