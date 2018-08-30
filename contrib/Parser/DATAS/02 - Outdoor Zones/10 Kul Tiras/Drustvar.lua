@@ -817,7 +817,12 @@ _.Zones =
 							["sourceQuests"] = { 50762 },	-- The Lady's Fate
 							-- Not required for "Drust Do It."
 						}),
---						   50911	-- One Man Against the Horde (WQ?  War Mode quest?)
+						qa(50911, {	-- One Man Against the Horde
+							["qg"] = 135673,	-- Scout McKellis
+							["coord"] = { 34.6, 39.7 },
+							--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
+							-- Not required for "Drust Do It."
+						}),
 						qa(50978, {	-- Out With the Old Boss
 							["g"] = {
 								i(158640),	-- Boss o' the Port
@@ -876,7 +881,12 @@ _.Zones =
 								50451,	-- Eating Through the Defenses
 							},
 						}),
---						   50929	-- Powder to the People (WQ?  War Mode quest?)
+						qa(50929, {	-- Powder to the People
+							["qg"] = 135673,	-- Scout McKellis
+							["coord"] = { 34.6, 39.7 },
+							--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
+							-- Not required for "Drust Do It."
+						}),
 						qa(50173, {	-- Precious Metals
 							["qg"] = 131638,	-- Lucille Waycrest
 							["coord"] = { 31.4, 30.2 },
@@ -912,7 +922,13 @@ _.Zones =
 							["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
 							-- May be available earlier; needs confirmation.
 						}),
---						   50912	-- Remix to Ignition (WQ?  War Mode quest?)
+						o(284426, {	-- Buried Mining Machine
+							qa(50912, {	-- Remix to Ignition
+								["coord"] = { 34.7, 40.0 },
+							--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
+							}),
+							-- Not required for "Drust Do It."
+						}),
 						qa(48179, {	-- Rescue Rangers
 							["g"] = {
 								i(158607),	-- Wickerwoven Pants
@@ -1288,6 +1304,14 @@ _.Zones =
 							["coord"] = { 70.0, 42.8 },
 							["sourceQuests"] = { 48110, 48109 },	-- In Case of Ambush & The Woods Have Eyes
 						}),
+						{			-- Turn the Heat Around
+							["qg"] = 135541,	-- Bilgewater Incinerator
+							["itemID"] = 158918,
+							["questID"] = 50897,	-- Turn the Heat Around
+							["sourceQuests"] = { 50911 },	-- One Man Against the Horde
+							-- May have earlier sourceQuest or no prerequisite; needs confirmation.
+							-- Not required for "Drust Do It."
+						},
 						qa(48944, {	-- Unlocking History
 							["qg"] = 127715,	-- Lucille Waycrest
 							["coord"] = { 45.0, 27.7 },
