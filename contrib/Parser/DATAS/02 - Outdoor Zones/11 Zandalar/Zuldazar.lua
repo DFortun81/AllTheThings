@@ -1113,6 +1113,17 @@ _.Zones =
 				n(-34,  {	-- World Quests
 					["groups"] = {
 						n(-17, {	-- Quests
+							q(50869, {	-- Kiboku
+								["groups"] = {
+									i(161112),	--  Hillshaker Armplates
+								},
+								["coord"] =
+									{ 75.62, 36.25 },
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
 							q(50855, {	-- Old R'gal (triggered add'l questID 50856 upon killing for WQ)
 								["groups"] = {
 									i(160509, {	-- Echoes of Rezan
