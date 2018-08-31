@@ -6,7 +6,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(895, {	-- -- Tiragarde Sound
 			["groups"] = {
-				n(-4,   {	-- Achievement
+				n(-4, {	-- Achievement
 					["groups"] = {
 						ach(12852, {	-- Treasures of Tiragarde Sound
 							o(279750, {	-- Hay Covered Chest [Localized]
@@ -192,7 +192,7 @@ _.Zones =
 						["description"] = "Requires completion of Mission Report: Wolf's Den and related quest line to unlock.",
 					}),
 				}),
-				n(-25,  { 	-- Pet Battle
+				n(-25, { 	-- Pet Battle
 					["groups"] = {
 						p(2165, {	-- Francois
 							["description"] = "Must have 1 million gold in your inventory before he will talk to you.  You do NOT lose any gold in this transaction.",
@@ -208,7 +208,7 @@ _.Zones =
 						p(2381),	-- Shack Crab
 					},
 				}),
-				n(-17,  {	-- Quests
+				n(-17, {	-- Quests
 					["groups"] = {
 						--[[
 						a(ach(12473, {	-- A Sound Plan
@@ -812,7 +812,7 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
-				n(-16,  {	-- Rares
+				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the information on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(132182, {	-- Auditor Dolp [MissingL]
@@ -1281,7 +1281,7 @@ _.Zones =
 						["questID"] = 50166,
 					}),
 				}),
-				n(-2,   {	-- Vendors
+				n(-2, {	-- Vendors
 					["groups"] = {
 						n(144353, {	-- Collector Kojo <Tortollan Seekers Emissary> [NOTE: Will need correct npcID when located]
 							["groups"] = {
@@ -1351,7 +1351,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-34,  {	-- World Quests
+				n(-34, {	-- World Quests
 					["groups"] = {
 						i(158159),	-- Boralus Sailor's Cloak
 						i(158650),	-- Sea-Scourge Greatblade
@@ -1408,9 +1408,10 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0,    {	-- Zone Drop
+				n(0, {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						--Note: Commented out items are because they were in at one point, but then removed later on.  Might be patched in on release date
+						--Not going to mark them NYI as they only return "Retrieving Data"
 						--i(159538),	-- Coldscale Cudgel
 						i(159525),	-- Coldscale Dagger
 						--i(159498),	-- Coldscale Pistol
@@ -1437,12 +1438,23 @@ _.Zones =
 						i(159560),	-- Dockyard Pike
 						--i(159500),	-- Dockyard Sidearm
 						i(159806),	-- Dockyard Targe
+						i(159493),	-- Gnarlwood Crossbow
+						--i(159591),	-- Gnarlwood Cutlass
+						--i(159553),	-- Gnarlwood Hammer
+						i(159509),	-- Gnarlwood Spikes
+						--i(159567),	-- Gnarlwood Staff
 						i(159496),	-- Gol Osigr Crossbow
 						i(159536),	-- Gol Osigr Hammer
 						--i(159512),	-- Gol Osigr Handblade
 						--i(159801),	-- Gol Osigr Targe
 						--i(159817),	-- Gol Osigr Torch
 						i(159602),	-- Gol Osigr Wand
+						i(159605),	-- Ironcrest Baton
+						i(159539),	-- Ironcrest Club
+						i(159519),	-- Ironcrest Knife
+						i(159820),	-- Ironcrest Lantern
+						--i(159499),	-- Ironcrest Longrifle
+						i(159585),	-- Ironcrest Sword
 						i(159475),	-- Shipwrecker Axe
 						i(159590),	-- Shipwrecker Blade
 						i(159504),	-- Shipwrecker Crescents
@@ -1450,6 +1462,13 @@ _.Zones =
 						--i(159552),	-- Shipwrecker Maul
 						i(159797),	-- Shipwrecker Shield
 						i(159566),	-- Shipwrecker Spire
+						--i(159588),	-- Stagheart Falchion
+						--i(159542),	-- Stagheart Gavel
+						--i(159472),	-- Stagheart Hatchet
+						i(159522),	-- Stagheart Knife
+						--i(159561),	-- Stagheart Poleaxe
+						i(159564),	-- Stagheart Staff
+						i(159502),	-- Stagheart Warglaives
 						i(155228),	-- Tideguard Bulwark
 						i(159474),	-- Tideguard Handaxe
 						i(155216),	-- Tideguard Harpoon

@@ -7,7 +7,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
 			["groups"] = {
-				n(-4,   {	-- Achievement
+				n(-4, {	-- Achievement
 					["groups"] = {
 						ach(12995, {	-- Treasures of Drustvar
 							o(297879, {	-- Bespelled Chest
@@ -162,7 +162,7 @@ _.Zones =
 						["coord"] = { 25.6, 16.6 },
 					}),
 				}),
-				n(-25,  { 	-- Pet Battle
+				n(-25, { 	-- Pet Battle
 					["groups"] = {
 						p(2386),	-- Coastal Scuttler
 						p(2378),	-- River Otter
@@ -209,7 +209,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-17,  {	-- Quests
+				n(-17, {	-- Quests
 					["groups"] = {
 						qa(50970, {	-- A Farmer's Fate
 							["qg"] = 135976,	-- Morwin Gladeheart
@@ -1410,7 +1410,7 @@ _.Zones =
 						--]]
 					},
 				}),
-				n(-16,  {	-- Rares
+				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						o(277333, {	-- Ancient Sarcophagus
@@ -1844,7 +1844,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-2,   {	-- Vendors
+				n(-2, {	-- Vendors
 					["groups"] = {
 						n(144353, {	-- Collector Kojo <Tortollan Seekers Emissary> [NOTE: Will need correct npcID when located]
 							["groups"] = {
@@ -1998,7 +1998,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-34,  {	-- World Quests
+				n(-34, {	-- World Quests
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
@@ -2081,8 +2081,10 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0,    {	-- Zone Drop
+				n(0, {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+						--Note: Commented out items are because they were in at one point, but then removed later on.  Might be patched in on release date
+						--Not going to mark them NYI as they only return "Retrieving Data"
 						i(163603, {	-- Lucille's Handkerchief
 							["description"] = "After completing the quest \"One Last Quest\" you can return back to the house, go upstairs and it will be in the closet to loot.",
 							["sourceQuests"] = { 50763 },	-- One Last Request
@@ -2096,6 +2098,86 @@ _.Zones =
 								133889,	-- Hexthralled Halberdier
 							},
 						}),
+						--i(159538),	-- Coldscale Cudgel
+						i(159525),	-- Coldscale Dagger
+						--i(159498),	-- Coldscale Pistol
+						i(159604),	-- Coldscale Rod
+						i(159584),	-- Coldscale Saber
+						i(159803),	-- Coldscale Shield
+						i(159805),	-- Coralshell Barrier
+						--i(159586),	-- Coralshell Blade
+						i(159520),	-- Coralshell Dagger
+						i(159501),	-- Coralshell Glaives
+						--i(159559),	-- Coralshell Halberd
+						i(159540),	-- Coralshell Hammer
+						--i(159513),	-- Deepwarden Fangs
+						i(159497),	-- Deepwarden Flintlock
+						i(159537),	-- Deepwarden Gavel
+						i(159802),	-- Deepwarden Redoubt
+						--i(159603),	-- Deepwarden Spark
+						i(159571),	-- Deepwarden Staff
+						i(159818),	-- Deepwarden Torch
+						i(159473),	-- Dockyard Axe
+						i(159587),	-- Dockyard Cutlass
+						i(159521),	-- Dockyard Dagger
+						--i(159541),	-- Dockyard Mace
+						i(159560),	-- Dockyard Pike
+						--i(159500),	-- Dockyard Sidearm
+						i(159806),	-- Dockyard Targe
+						i(159493),	-- Gnarlwood Crossbow
+						--i(159591),	-- Gnarlwood Cutlass
+						--i(159553),	-- Gnarlwood Hammer
+						i(159509),	-- Gnarlwood Spikes
+						--i(159567),	-- Gnarlwood Staff
+						i(159496),	-- Gol Osigr Crossbow
+						i(159536),	-- Gol Osigr Hammer
+						--i(159512),	-- Gol Osigr Handblade
+						--i(159801),	-- Gol Osigr Targe
+						--i(159817),	-- Gol Osigr Torch
+						i(159602),	-- Gol Osigr Wand
+						i(159605),	-- Ironcrest Baton
+						i(159539),	-- Ironcrest Club
+						i(159519),	-- Ironcrest Knife
+						i(159820),	-- Ironcrest Lantern
+						--i(159499),	-- Ironcrest Longrifle
+						i(159585),	-- Ironcrest Sword
+						i(159475),	-- Shipwrecker Axe
+						i(159590),	-- Shipwrecker Blade
+						i(159504),	-- Shipwrecker Crescents
+						i(159524),	-- Shipwrecker Knife
+						--i(159552),	-- Shipwrecker Maul
+						i(159797),	-- Shipwrecker Shield
+						i(159566),	-- Shipwrecker Spire
+						--i(159588),	-- Stagheart Falchion
+						--i(159542),	-- Stagheart Gavel
+						--i(159472),	-- Stagheart Hatchet
+						i(159522),	-- Stagheart Knife
+						--i(159561),	-- Stagheart Poleaxe
+						i(159564),	-- Stagheart Staff
+						i(159502),	-- Stagheart Warglaives
+						i(155228),	-- Tideguard Bulwark
+						i(159474),	-- Tideguard Handaxe
+						i(155216),	-- Tideguard Harpoon
+						i(159551),	-- Tideguard Maul
+						--i(159562),	-- Tideguard Pike
+						i(159523),	-- Tideguard Shanker
+						--i(159503),	-- Tideguard Slicers
+						i(155224),	-- Tideguard Spellblade
+						--i(159565),	-- Tideguard Spire
+						i(159589),	-- Tideguard Sword
+						i(159800),	-- Wavecaller Buckler
+						i(159593),	-- Wavecaller Cutlass
+						i(159511),	-- Wavecaller Fists
+						i(159535),	-- Wavecaller Mace
+						--i(159495),	-- Wavecaller Speargun
+						i(159569),	-- Wavecaller Spire
+						i(159799),	-- Wintersail Bulwark
+						--i(159526),	-- Wintersail Dirk
+						--i(159554),	-- Wintersail Hammer
+						i(159494),	-- Wintersail Repeater
+						--i(159592),	-- Wintersail Sabre
+						i(159568),	-- Wintersail Staff
+						--i(159510),	-- Wintersail Strikers
 						--i(154867),	-- NYI
 						--i(154870),	-- NYI
 						i(154848),	-- Heartsbane Greatcloak
