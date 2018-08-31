@@ -6,7 +6,7 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(864, {	-- Vol'dun
 			["groups"] = {
-				n(-4,   {	-- Achievements
+				n(-4, {	-- Achievements
 					["groups"] = {
 						ach(12482, {	-- Get Hek'd
 							["g"] = {
@@ -281,7 +281,7 @@ _.Zones =
 						["coord"] = { 53.6, 37.6 },
 					}),
 				}),
-				n(-25,  { 	-- Pet Battle
+				n(-25, { 	-- Pet Battle
 					["groups"] = {
 						p(2388),	-- Bloodfeaver Tarantula
 						p(2399),	-- Hermit Crab
@@ -289,7 +289,7 @@ _.Zones =
 						p(2392),	-- Young Sand Sifter
 					},
 				}),
-				n(-17,  {	-- Quests
+				n(-17, {	-- Quests
 					["groups"] = {
 						q(47320),	-- A Balm to Calm
 						q(50817),	-- A Charming Tail
@@ -664,7 +664,7 @@ i(155430),
 					},
 					["races"] = HORDE_ONLY,
 				}),
-				n(-16,  {	-- Rares
+				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 							n(135852, {	-- Ak'tar
@@ -954,7 +954,7 @@ i(155430),
 						}),
 					},
 				}),
-				n(-2,   {	-- Vendors
+				n(-2, {	-- Vendors
 					["groups"] = {
 						n(144353, {	-- Collector Kojo <Tortollan Seekers Emissary>
 							["groups"] = {
@@ -1104,7 +1104,7 @@ i(155430),
 						}),
 					},
 				}),
-				n(-34,  {	-- World Quests
+				n(-34, {	-- World Quests
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
@@ -1175,7 +1175,7 @@ i(155430),
 						}),
 					},
 				}),
-				n(0,    {	-- Zone Drop
+				n(0, {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						i(163576, {	-- Captured Dune Scavenger
 							["crs"] = {
@@ -1195,7 +1195,79 @@ i(155430),
 								123775,	-- Sethrak Warden
 							},
 						}),
+						i(159545),	-- Bleached Bone Club
+						i(159595),	-- Bleached Bone Cutlass
+						i(159508),	-- Bleached Bone Glaive
+						i(159480),	-- Bleached Bone Handaxe
+						i(159529),	-- Bleached Bone Knife
+						i(159489),	-- Bleached Bone Longbow
+						i(159808),	-- Bleached Bone Shield
+						i(159558),	-- Bleached Bone Skullcracker
+						i(159573),	-- Bleached Bone Staff
+						i(159606),	-- Bleached Bone Wand
+						i(159492),	-- Golden Fleet Bow
+						i(159811),	-- Golden Fleet Buckler
+						i(159124),	-- Golden Fleet Buckler
+						i(159532),	-- Golden Fleet Dagger
+						i(159516),	-- Golden Fleet Fists
+						i(159485),	-- Golden Fleet Greataxe
+						i(159598),	-- Golden Fleet Longsword
+						i(159548),	-- Golden Fleet Mace
+						i(159823),	-- Golden Fleet Mojo Charm
+						i(159609),	-- Golden Fleet Wand
+						i(159476),	-- Golden Fleet Waraxe
+						i(159576),	-- Golden Fleet Warstaff
+						i(159487),	-- Loa-Blessed Battleaxe
+						i(159600),	-- Loa-Blessed Broadsword
+						i(159506),	-- Loa-Blessed Crescent
+						i(159527),	-- Loa-Blessed Fang
+						i(159556),	-- Loa-Blessed Greathammer
+						i(159478),	-- Loa-Blessed Headchopper
+						i(159563),	-- Loa-Blessed Longspear
+						i(159543),	-- Loa-Blessed Maul
+						i(159578),	-- Loa-Blessed Stave
+						i(159813),	-- Loa-Blessed Warshield
+						i(159546),	-- Rivermarsh Basher
+						i(159514),	-- Rivermarsh Claws
+						i(159490),	-- Rivermarsh Composite
+						i(159530),	-- Rivermarsh Dagger
+						i(159809),	-- Rivermarsh Defender
+						i(159821),	-- Rivermarsh Juju
+						i(159596),	-- Rivermarsh Machete
+						i(159574),	-- Rivermarsh Spellstaff
+						i(159607),	-- Rivermarsh Wand
+						i(159481),	-- Rivermarsh Waraxe
+						i(159810),	-- Warport Aegis
+						i(159547),	-- Warport Clobberer
+						i(159531),	-- Warport Dirk
+						i(159482),	-- Warport Handaxe
+						i(159822),	-- Warport Hex Focus
+						i(159608),	-- Warport Hexxer
+						i(159515),	-- Warport Knuckles
 						i(159575),	-- Warport Longstaff
+						i(159597),	-- Warport Quickblade
+						i(159491),	-- Warport Short Bow
+						i(159807),	-- Zem'lan Buckler
+						i(159479),	-- Zem'lan Chopper
+						i(159488),	-- Zem'lan Cleaver
+						i(155456),	-- Zem'lan Crewman's Cloak
+						i(159528),	-- Zem'lan Dagger
+						i(159557),	-- Zem'lan Headsmasher
+						i(159601),	-- Zem'lan Longsword
+						i(159572),	-- Zem'lan Pummeler
+						i(159594),	-- Zem'lan Saber
+						i(159544),	-- Zem'lan Smasher
+						i(159507),	-- Zem'lan Warglaive
+						i(159477),	-- Zocali Carver
+						i(159517),	-- Zocali Claws
+						i(159599),	-- Zocali Greatsword
+						i(159577),	-- Zocali Longstaff
+						i(159533),	-- Zocali Ripper
+						i(159812),	-- Zocali Shield
+						i(159824),	-- Zocali Voodoo Idol
+						i(159486),	-- Zocali Waraxe
+						i(159505),	-- Zocali Warglaive
+						i(159549),	-- Zocali Warhammer
 						i(160180),	-- Skycaller Cowl
 						i(160185),	-- Skycaller Mantle
 						i(160183),	-- Skycaller Robes
