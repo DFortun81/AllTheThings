@@ -976,33 +976,6 @@ _.Zones =
 						i(160123),	-- Direbone Frill Legplates
 						i(160125),	-- Direbone Frill Stompers
 					}),
-					["crs"] = {
-						120900,	-- Amani Warrior
-						122872,	-- Atal'Shadra Bloodletter
-						126618,	-- Bloodraged Pterrodax
-						126153,	-- Crimson Cultist
-						130954,	-- Da'kani Highbrow
-						125037,	-- Dreadcoil Myrmidon
-						125174,	-- Dreeadcoil Seeker
-						128434,	-- Feasting Skyscreamer
-						132409,	-- Feathered Viper
-						135886,	-- Forsaken Deathguard
-						139440,	-- Jabra'kan the Poacher
-						129487,	-- Jambani Crusher
-						129515,	-- Kao-Tien Battlemaster
-						128632,	-- Nazeshi Overseer
-						133136,	-- Rastakhan's Might Mutineer
-						121017,	-- Sandfury Axe Thrower <Sandfury Tribe>
-						122504,	-- Savagemane Ravasaur
-						133857,	-- Shadraspawn Lurker
-						127879,	-- Shieldbearer of Zul
-						127836,	-- Squalfin Oracle
-						127839,	-- Squalfin Sailsplitter
-						128712,	-- Tidemistress Nazesh
-						130661,	-- Venture Co. Earthshaper
-						123135,	-- Wild Sabertusk
-						143678,	-- Zandalari Axe Thrower
-					},
 				}),
 			},
 			["isRaid"] = true,
