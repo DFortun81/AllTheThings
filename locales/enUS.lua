@@ -1620,7 +1620,13 @@ AllTheThings.Locales.enUS = {
 		[-10058] = select(1,GetCategoryInfo(15283)),		-- World
 		[-10059] = select(1,GetCategoryInfo(15302)),		-- Pandaria Scenarios
 		[-10060] = select(2,GetAchievementInfo(7333)),		-- The Four Celestials
-
+		
+		 [-99995] = BATTLE_PET_BREED_QUALITY1,			-- "Poor";
+		 [-99996] = BATTLE_PET_BREED_QUALITY2,			-- "Common";
+		 [-99997] = BATTLE_PET_BREED_QUALITY3,			-- "Uncommon";
+		 [-99998] = BATTLE_PET_BREED_QUALITY4,			-- "Rare";
+		 [-99999] = BATTLE_PET_BREED_QUALITY5,			-- "Epic";
+		[-100000] = BATTLE_PET_BREED_QUALITY6,			-- "Legendary";
 		[-100001] = ITEM_QUALITY6_DESC, 				-- Artifact
 		[-100002] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
 
