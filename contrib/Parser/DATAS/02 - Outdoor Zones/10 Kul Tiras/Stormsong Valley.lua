@@ -1824,7 +1824,19 @@ _.Zones =
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
-								q(52330, { -- Beehemoth
+								q(52871, {	-- Azerite Empowerment
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51618, {	-- Azerite Madness
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52330, {	-- Beehemoth
 									["groups"] = {
 										i(160459, {	-- Apiarist's Stingproof Belt
 											["crs"] = {
@@ -1832,7 +1844,24 @@ _.Zones =
 											},
 										}),
 									},
-									-- kill quest = 50541
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51782, {	-- Captain Razorspine
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52889, {	-- Sandscour
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52209, {	-- Turtle Tactics
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]

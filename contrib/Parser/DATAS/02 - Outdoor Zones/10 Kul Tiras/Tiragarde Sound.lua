@@ -1353,9 +1353,59 @@ _.Zones =
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
+						n(-17, {	-- Quests
+							["groups"] = {
+								q(52869, {	-- Azerite Empowerment
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52755, {	-- Bringing the Heat
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51632, {	-- Make Loh Go
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51656, {	-- Saurolisk Tamer Mugg
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51893, {	-- Sawtooth
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(53078, {	-- Treasure in the Ttides
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52455, {	-- Unbreakable
+									["groups"] = {
+										i(163036),	-- Polished Pet Charm
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+							},
+						}),
 						i(158159),	-- Boralus Sailor's Cloak
 						i(158650),	-- Sea-Scourge Greatblade
 						i(158160),	-- Smuggler's Cove Ring
+						i(158161),	-- Spearfisheer's Ban
 						i(158164),	-- Plunderbeard's Flask
 						n(-43, {	-- Cloth
 							["groups"] = {

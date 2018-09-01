@@ -1196,7 +1196,22 @@ _.Zones =
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
-								q(50505, { -- Kal'draxa
+								q(50735, {	-- Burial Detail
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52779, {	-- Crawg in the Bog
+									["groups"] = {
+										i(163036),	-- Polished Pet Charm
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(50505, {	-- Kal'draxa
 									["groups"] = {
 										i(161018, {	-- Winged Terror Wristwraps
 											["crs"] = {
@@ -1204,6 +1219,24 @@ _.Zones =
 											},
 										}),
 									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(50497, {	-- Krag'wa's Favor
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51628, {	-- Shell Game
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(50514, {	-- Totem Maker Jash'ga
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]

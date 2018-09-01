@@ -1585,7 +1585,7 @@ _.Zones =
 						}),	
 						n(125453, {	-- Quillrat Matriarch		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								un(1, i(158583)),	-- Quillstitch Greatcloak [Was in beta, not there on 8/30/18]
+								i(158583),	-- Quillstitch Greatcloak
 							}),
 							["questID"] = 48178,	
 						}),	
@@ -1612,6 +1612,9 @@ _.Zones =
 						}),
 						n(137665, {	-- Soul Goliath
 							["questID"] = 52002,
+						}),
+						n(137708, {	-- Stone Golem
+							["questID"] = 51999,
 						}),
 						n(129950, {	-- Talon		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -2002,7 +2005,7 @@ _.Zones =
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
-								q(51491, { -- Balethorn
+								q(51491, {	-- Balethorn
 									["groups"] = {
 										i(160475, {	-- Barksnapper Girdle
 											["crs"] = {
@@ -2015,7 +2018,13 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
-								q(51468, { -- Bonesquall
+								q(51637, {	-- Beachhead
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51468, {	-- Bonesquall
 									["groups"] = {
 										i(154376, {	-- Bonecurse Gauntlets
 											["crs"] = {
@@ -2024,7 +2033,36 @@ _.Zones =
 										}),
 									},
 									["repeatable"] = true,
-									["isDaily"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51527, {	-- Executioner Blackwell
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52278, {	-- Rogue Azerite
+									["groups"] = {
+										i(163036),	-- Polished Pet Charm
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51434, {	-- Stone Golem
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51767, {	-- Trapline
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
 								}),
 							},
 						}),

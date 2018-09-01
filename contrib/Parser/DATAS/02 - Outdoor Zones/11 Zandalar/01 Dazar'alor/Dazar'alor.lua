@@ -934,10 +934,34 @@ _.Zones =
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
+						q(49413, {	-- Scamps With Scrolls
+							["repeatable"] = true,
+							["isDaily"] = true, -- Would like to swap it to WQ below
+							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+							["lvl"] = 120,	-- WQ is 120+ only
+						}),
+						q(51038, {	-- Supplies Needed: Akunda's Bite
+							["repeatable"] = true,
+							["isDaily"] = true, -- Would like to swap it to WQ below
+							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+							["lvl"] = 120,	-- WQ is 120+ only
+						}),
+						q(51042, {	-- Supplies Needed: Monelite Ore
+							["repeatable"] = true,
+							["isDaily"] = true, -- Would like to swap it to WQ below
+							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+							["lvl"] = 120,	-- WQ is 120+ only
+						}),
 						q(52348, {	-- Work Order: Mon'Dazi
-							i(162296, {	-- Recipe: Mon'Dazi [Rank 3]
-								["spellID"] = 259444,
-							}),
+							["groups"] = {
+								i(162296, {	-- Recipe: Mon'Dazi [Rank 3]
+									["spellID"] = 259444,
+								}),
+							},
+							["repeatable"] = true,
+							["isDaily"] = true, -- Would like to swap it to WQ below
+							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+							["lvl"] = 120,	-- WQ is 120+ only
 						}),
 					},
 				}),

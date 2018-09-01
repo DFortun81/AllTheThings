@@ -2,17 +2,22 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-------------------------------------------------------
---	If there are any errors please let Lucetia know	--
---	first before editing.  Thanks!					--
-------------------------------------------------------
-
 _.Instances =
 {
 	{
 		["groups"] = {
 			inst(1012, { -- The MOTHERLODE!!
 				["groups"] = {
+					n(-34, {	-- World Quests
+						["groups"] = {
+							q(52295, {	-- The MOTHERLODE!!: Elementals on the Payroll
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
+						},
+					}),
 					d(1, { -- Normal
 						["groups"] = {
 							e(2109, { -- Coin-Operated Crowd Pummeler
