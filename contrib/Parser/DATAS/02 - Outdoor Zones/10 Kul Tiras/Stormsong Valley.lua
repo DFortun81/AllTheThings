@@ -1832,6 +1832,7 @@ _.Zones =
 											},
 										}),
 									},
+									-- kill quest = 50541
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]

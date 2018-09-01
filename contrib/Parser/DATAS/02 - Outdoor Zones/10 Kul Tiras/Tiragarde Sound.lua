@@ -951,7 +951,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
 								i(160263),	-- Snowpelt Mangler	
 							}),	
-							-- ["questID"] = 		
+							["questID"] = 49923,
 						}),		
 						n(132179, {	-- Raging Swell
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
