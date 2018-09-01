@@ -957,12 +957,14 @@ _.Zones =
 							["isDaily"] = true, -- Would like to swap it to WQ below
 							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 							["lvl"] = 120,	-- WQ is 120+ only
+							["races"] = HORDE_ONLY,
 						}),
 						q(51042, {	-- Supplies Needed: Monelite Ore
 							["repeatable"] = true,
 							["isDaily"] = true, -- Would like to swap it to WQ below
 							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 							["lvl"] = 120,	-- WQ is 120+ only
+							["races"] = HORDE_ONLY,
 						}),
 						q(49444, {	-- Underfoot
 							["repeatable"] = true,
