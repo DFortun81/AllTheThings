@@ -4,122 +4,152 @@
 
 _.Instances = 
 {
-	{ -- Legion
+	{	-- Legion
 		["groups"] = {
-			inst(726, { 	-- The Arcway
+			inst(726, {	-- The Arcway
 				["groups"] = {
-					d(2, {		-- Heroic
-						
+					d(2, {	-- Heroic
 						["groups"] = {
 							cr(98203, e(1497, {	-- Ivanyr
-								i(134309),
-								i(134501),
-								i(134280),
-								i(134421),
-								i(134467),
-								i(134269),
-								i(137397),
-								i(134298)
+								i(134269),	-- Arcane Defender's Belt
+								i(134501),	-- Crackling Overcharge Chestguard
+								i(134526),	-- Gnawed Thumb Ring
+								i(134421),	-- Ink-Smudged Handwraps
+								i(134298),	-- Ley Dragoon's Stompers
+								i(134309),	-- Manawracker Shoulders
+								i(134467),	-- Nether Mindsnappers
+								i(137398),	-- Portable Manacracker
+								i(134280),	-- Swordsinger's Wristguards
+								i(137397),	-- Tunnel Trudger Footguards
 							})),
 							cr(98205, e(1498, {	-- Corstilax
-								i(134424),
-								i(134453),
-								i(134402),
-								i(134463),
-								i(134522)
+								i(134402),	-- Cape of Rigid Order
+								i(137400),	-- Coagulated Nightwell Residue
+								i(134424),	-- Collar of Enclosure
+								i(134463),	-- Decontaminated Chain Tunic
+								i(134522),	-- Detention Wristclamps
+								i(134453),	-- Spaulders of Aberrant Inhibition
+								i(134488),	-- Stabilized Energy Pendant
 							})),
 							cr(98206, e(1499, {	-- General Xakal
-								i(134387),
-								i(134373),
-								i(137405),
-								i(134509),
-								i(137404),
-								i(134449),
-								i(134359),
-								i(134396)
+								i(134449),	-- Bloodclaw Leggings
+								i(134373),	-- Felbat Leather Vest
+								i(134509),	-- Fists of the Legion
+								i(137404),	-- Legwraps of Reverberating Shadows
+								i(134387),	-- Mardum Chain Helm
+								i(134396),	-- Netherwhisper Slippers
+								i(134359),	-- Portalguard Legplates
+								i(137405),	-- Remorseless Chain Armbands
+								i(134533),	-- Ring of Looming Menace
+								i(137406),	-- Terrorbound Nexus
 							})),
 							cr(98207, e(1500, {	-- Nal'tira
-								i(137410),
-								i(134472),
-								i(134410),
-								i(134435),
-								i(137409)
+								i(134472),	-- Arcane Exterminator's Shoulderguards
+								i(134410),	-- Cloak of Mana-Spun Silk
+								i(137410),	-- Greathelm of Barbed Chelicerae
+								i(137409),	-- Manafang Waistguard
+								i(133766),	-- Nether Anti-Toxin
+								i(134540),	-- Ring of Twisted Webbing
+								i(134435),	-- Tunnel Fiend Bracers
 							})),
 							cr(98208, e(1501, {	-- Advisor Vandros
-								i(134304),
-								i(137415),
-								i(134286),
-								i(134518),
-								i(134413),
-								i(134267),
-								i(134444),
-								i(134297),
-								i(137416),
-								i(137413),
-								i(134475),
-								i(137417)								
-							}))
-						}
+								i(137897),	-- Recipe: Dreadleather Gloves (Rank 3)
+								i(127927),	-- Recipe: Potion of the Old War (Rank 2)
+								i(137712),	-- Schematic: Tactical Headgun (Rank 3)
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+								i(134267),	-- Arcane Defender's Breastplate
+								i(137416),	-- Chain of Causal Links
+								i(137419),	-- Chrono Shard
+								i(137418),	-- Erratically Ticking Talisman
+								i(134413),	-- Fluxflow Robes
+								i(134518),	-- Frozen Pendulum Shoulderguards
+								i(137415),	-- Gaze of Fleeting Hours
+								i(134297),	-- Ley Dragoon's Gloves
+								i(134444),	-- Mana-Lanced Gloves
+								i(134304),	-- Manawracker Crown
+								i(134475),	-- Mute Erasure Legguards
+								i(134286),	-- Swordsinger's Shoulders
+								i(137413),	-- Time-Breached Waistband
+								i(137417),	-- Treads of Fates Entwined
+							})),
+						},
 					}),
-					d(23, {		-- Mythic
-						
+					d(23, {	-- Mythic
 						["groups"] = {
 							cr(98203, e(1497, {	-- Ivanyr
-								i(134309),
-								i(134501),
-								i(134280),
-								i(134467),
-								i(134421),
-								i(134269),
-								i(134298),
-								i(137397)
+								ach(10773),	-- Arcanic Cling
+								i(134269),	-- Arcane Defender's Belt
+								i(134501),	-- Crackling Overcharge Chestguard
+								i(134526),	-- Gnawed Thumb Ring
+								i(134421),	-- Ink-Smudged Handwraps
+								i(134298),	-- Ley Dragoon's Stompers
+								i(134309),	-- Manawracker Shoulders
+								i(134467),	-- Nether Mindsnappers
+								i(137398),	-- Portable Manacracker
+								i(134280),	-- Swordsinger's Wristguards
+								i(137397),	-- Tunnel Trudger Footguards
 							})),
 							cr(98205, e(1498, {	-- Corstilax
-								i(134424),
-								i(134453),
-								i(134402),
-								i(134463),
-								i(134522)
+								ach(10775),	-- Clean House
+								i(134402),	-- Cape of Rigid Order
+								i(137400),	-- Coagulated Nightwell Residue
+								i(134424),	-- Collar of Enclosure
+								i(134463),	-- Decontaminated Chain Tunic
+								i(134522),	-- Detention Wristclamps
+								i(134453),	-- Spaulders of Aberrant Inhibition
+								i(134488),	-- Stabilized Energy Pendant
 							})),
 							cr(98206, e(1499, {	-- General Xakal
-								i(134387),
-								i(134373),
-								i(137405),
-								i(134509),
-								i(134359),
-								i(137404),
-								i(134449),
-								i(134396)
+								i(134449),	-- Bloodclaw Leggings
+								i(134373),	-- Felbat Leather Vest
+								i(134509),	-- Fists of the Legion
+								i(137404),	-- Legwraps of Reverberating Shadows
+								i(134387),	-- Mardum Chain Helm
+								i(134396),	-- Netherwhisper Slippers
+								i(134359),	-- Portalguard Legplates
+								i(137405),	-- Remorseless Chain Armbands
+								i(134533),	-- Ring of Looming Menace
+								i(137406),	-- Terrorbound Nexus
 							})),
 							cr(98207, e(1500, {	-- Nal'tira
-								i(137410),
-								i(134472),
-								i(134410),
-								i(134435),
-								i(137409)
+								i(136969),	-- Tome of Hex: Spider
+								i(134472),	-- Arcane Exterminator's Shoulderguards
+								i(134410),	-- Cloak of Mana-Spun Silk
+								i(137410),	-- Greathelm of Barbed Chelicerae
+								i(137409),	-- Manafang Waistguard
+								i(133766),	-- Nether Anti-Toxin
+								i(134540),	-- Ring of Twisted Webbing
+								i(134435),	-- Tunnel Fiend Bracers
 							})),
 							cr(98208, e(1501, {	-- Advisor Vandros
-								i(134304),
-								i(137415),
-								i(134286),
-								i(134518),
-								i(134413),
-								i(134267),
-								i(134297),
-								i(134444),
-								i(137413),
-								i(137416),
-								i(134475),
-								i(137417),
-								i(137897), -- Recipe: Dreadleather Gloves (Rank 3)
-							}))
-						}
-					})
+								ach(10813),	-- Mythic: The Arcway
+								ach(10776),	-- No Time to Waste
+								i(137851),	-- Design: Tranquil Necklace of Prophecy (Rank 3)
+								i(137897),	-- Recipe: Dreadleather Gloves (Rank 3)
+								i(127927),	-- Recipe: Potion of the Old War (Rank 2)
+								i(137712),	-- Schematic: Tactical Headgun (Rank 3)
+								i(134267),	-- Arcane Defender's Breastplate
+								i(137416),	-- Chain of Causal Links
+								i(137419),	-- Chrono Shard
+								i(137418),	-- Erratically Ticking Talisman
+								i(134413),	-- Fluxflow Robes
+								i(134518),	-- Frozen Pendulum Shoulderguards
+								i(137415),	-- Gaze of Fleeting Hours
+								i(134297),	-- Ley Dragoon's Gloves
+								i(134444),	-- Mana-Lanced Gloves
+								i(134304),	-- Manawracker Crown
+								i(134475),	-- Mute Erasure Legguards
+								i(134286),	-- Swordsinger's Shoulders
+								i(137413),	-- Time-Breached Waistband
+								i(137417),	-- Treads of Fates Entwined
+							})),
+						},
+					}),
 				},
 				["lvl"] = 110,
-				["mapID"] = 749
+				["mapID"] = 749,
 			}),
-		},					
-		["tierID"] = 7
-	},	
+		},
+		["tierID"] = 7,
+	},
 };

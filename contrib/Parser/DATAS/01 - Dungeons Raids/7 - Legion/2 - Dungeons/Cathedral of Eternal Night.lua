@@ -6,31 +6,23 @@ _.Instances =
 {
 	{ -- Legion
 		["groups"] = {
-			inst(900, { 	-- Cathedral of Eternal Night
+			inst(900, {	-- Cathedral of Eternal Night
 				["groups"] = {
 					n(0, { -- Zone Drops
 						["groups"] = {
 							i(147517, { -- Inquisitor's Battle Cowl
-								["groups"] = {
-								},
 								["bonusID"] = 1812,
 								["modID"] = 0,
 							}),
 							i(147516, { -- Legion Stalker's Hood
-								["groups"] = {
-								},
 								["bonusID"] = 1812,
 								["modID"] = 0,
 							}),
 							i(147515, { -- Hellblaze Invader's Greaves
-								["groups"] = {
-								},
 								["bonusID"] = 1812,
 								["modID"] = 0,
 							}),
 							i(147514, { -- Felguard Destroyer's Legplates
-								["groups"] = {
-								},
 								["bonusID"] = 1812,
 								["modID"] = 0,
 							}),
@@ -45,98 +37,114 @@ _.Instances =
 							120717, -- Mistress Dominix
 						},
 					}),
-					d(2, {		-- Heroic
-						
+					d(2, {	-- Heroic
 						["groups"] = {
 							cr(117193, e(1905, {	-- Agronox
-								i(144469),
-								i(144468),
-								i(144483),
-								i(144491),
-								i(144498),
-								i(144470),
-								i(144497),
-								i(144490)
+								i(144469),	-- Caretaker's Budding Mantle
+								i(144491),	-- Choking Vine Bindings
+								i(144490),	-- Corruption-Fused Stompers
+								i(144468),	-- Felpruner's Shroud
+								i(144470),	-- Grovetender's Handwraps
+								i(144497),	-- Petrified Hust Girdle
+								i(144477),	-- Splinters of Agronox
+								i(144483),	-- Spore-Coated Vest
+								i(144498),	-- Vambraces of Fel Crust
 							})),
 							cr(117194, e(1906, {	-- Thrashbite the Scornful
-								i(144493),
-								i(144499),
-								i(144485),
-								i(144492),
-								i(144472),
-								i(144484),
-								i(144471)
+								i(144492),	-- Chain-Draped Gauntlets
+								i(144482),	-- Fel-Oiled Infernal Machine
+								i(144493),	-- Link-Lashed Spaulders
+								i(144479),	-- Master Thrasher's Lockcollar
+								i(144485),	-- Mo'arg Heavyweight's Wristwraps
+								i(144471),	-- Pulverizing Felsoles
+								i(144484),	-- Tattered Scornful Leggings
+								i(144499),	-- Tenderized Breastplate
+								i(144472),	-- Thrashbite's Cummerbund
 							})),
 							cr(119542, e(1904, {	-- Domatrax
-								i(144503),
-								i(144489),
-								i(144476),
-								i(144495),
-								i(144475),
-								i(144488),
-								i(144496),
-								i(144474),
-								i(144500)
+								i(144496),	-- Burning Chain Waistguard
+								i(144476),	-- Cloak of the Unending Assault
+								i(144475),	-- Dark Mistress' Cuffs
+								i(144495),	-- Domatrax's Chain Hauberk
+								i(144488),	-- Feaster Hide Gloves
+								i(144503),	-- Helm of Domatrax
+								i(144481),	-- Ring of Fel Domination
+								i(144474),	-- Sheer Felwoven Hosiery
+								i(144489),	-- Shoulderguards of Legion Domination
+								i(144500),	-- Two-Toed Trashstompers
 							})),
 							cr(120793, e(1878, {	-- Mephistroth
-								i(144494),
-								i(144501),
-								i(144473),
-								i(144502),
-								i(144486),
-								i(144487)
-							}))
-						}
+								ach(11700),	-- Cathedral of Eternal Night
+								ach(11701),	-- Heroic: Cathedral of Eternal Night
+								i(144478),	-- Band of Dark Solitude
+								i(144486),	-- Cerulean Shadowfade Belt
+								i(144501),	-- Dread Commander's Pauldrons
+								i(144480),	-- Dreadstone of Endless Shadows
+								i(144494),	-- Imposing Dreadsoul Headgear
+								i(144473),	-- Nathrezim Acolyte's Robes
+								i(144502),	-- Shadowed Grips of the Nathrezim
+								i(144487),	-- Treads of Creeping Shadows
+							})),
+						},
 					}),
-					d(23, {		-- Mythic
-						
+					d(23, {	-- Mythic
 						["groups"] = {
 							cr(117193, e(1905, {	-- Agronox
-								i(144469),
-								i(144468),
-								i(144483),
-								i(144491),
-								i(144498),
-								i(144470),
-								i(144497),
-								i(144490)
+								ach(11768),	-- Boom Boom
+								i(144469),	-- Caretaker's Budding Mantle
+								i(144491),	-- Choking Vine Bindings
+								i(144490),	-- Corruption-Fused Stompers
+								i(144468),	-- Felpruner's Shroud
+								i(144470),	-- Grovetender's Handwraps
+								i(144497),	-- Petrified Hust Girdle
+								i(144477),	-- Splinters of Agronox
+								i(144483),	-- Spore-Coated Vest
+								i(144498),	-- Vambraces of Fel Crust
 							})),
 							cr(117194, e(1906, {	-- Thrashbite the Scornful
-								i(144493),
-								i(144499),
-								i(144485),
-								i(144492),
-								i(144472),
-								i(144484),
-								i(144471)
+								ach(11769),	-- A Steamy Romance Saga
+								i(144492),	-- Chain-Draped Gauntlets
+								i(144482),	-- Fel-Oiled Infernal Machine
+								i(144493),	-- Link-Lashed Spaulders
+								i(144479),	-- Master Thrasher's Lockcollar
+								i(144485),	-- Mo'arg Heavyweight's Wristwraps
+								i(144471),	-- Pulverizing Felsoles
+								i(144484),	-- Tattered Scornful Leggings
+								i(144499),	-- Tenderized Breastplate
+								i(144472),	-- Thrashbite's Cummerbund
 							})),
 							cr(119542, e(1904, {	-- Domatrax
-								i(144503),
-								i(144489),
-								i(144476),
-								i(144495),
-								i(144475),
-								i(144488),
-								i(144496),
-								i(144474),
-								i(144500)
+								i(144496),	-- Burning Chain Waistguard
+								i(144476),	-- Cloak of the Unending Assault
+								i(144475),	-- Dark Mistress' Cuffs
+								i(144495),	-- Domatrax's Chain Hauberk
+								i(144488),	-- Feaster Hide Gloves
+								i(144503),	-- Helm of Domatrax
+								i(144481),	-- Ring of Fel Domination
+								i(144474),	-- Sheer Felwoven Hosiery
+								i(144489),	-- Shoulderguards of Legion Domination
+								i(144500),	-- Two-Toed Trashstompers
 							})),
 							cr(120793, e(1878, {	-- Mephistroth
-								i(144494),
-								i(144501),
-								i(144473),
-								i(144502),
-								i(144486),
-								i(144487)
-							}))
-						}
-					})
+								ach(11703),	-- Master of Shadows
+								ach(11702),	-- Mythic: Cathedral of Eternal Night
+								i(144478),	-- Band of Dark Solitude
+								i(144486),	-- Cerulean Shadowfade Belt
+								i(144501),	-- Dread Commander's Pauldrons
+								i(144480),	-- Dreadstone of Endless Shadows
+								i(144494),	-- Imposing Dreadsoul Headgear
+								i(144473),	-- Nathrezim Acolyte's Robes
+								i(144502),	-- Shadowed Grips of the Nathrezim
+								i(144487),	-- Treads of Creeping Shadows
+							})),
+						},
+					}),
 				},
 				["lvl"] = 110,
 				["mapID"] = 845,
 				["maps"] = { 846, 847, 848, 849 },
 			}),
-		},					
-		["tierID"] = 7
-	},	
+		},
+		["tierID"] = 7,
+	},
 };

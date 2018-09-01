@@ -1968,6 +1968,9 @@ _.Zones =
 						["classes"] = { 5 },
 					}),
 					q(45239, {	-- Cubic Coalescing
+						["groups"] = {
+							i(142536),	-- Memory Cube
+						},
 						["qg"] = 93538, -- Dariness the Learned
 						["sourceQuests"] = { 45238 }, -- Return to Karazhan: Cubic Cynosure
 					}),
@@ -2703,6 +2706,24 @@ _.Zones =
 						["qg"] = 102700, -- Meryl Felstorm
 						["classes"] = { 2 },
 						["sourceQuests"] = { 42663 }, -- Rise, Champions
+					}),
+					q(43473, {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642, -- Fizzi Liverzapper
+					}),
+					q(43474, {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642, -- Fizzi Liverzapper
+					}),
+					q(43475, {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642, -- Fizzi Liverzapper
+					}),
+					q(43477, {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642, -- Fizzi Liverzapper
+					}),
+					q(43476, {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642, -- Fizzi Liverzapper
+					}),
+					q(43478, {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642, -- Fizzi Liverzapper
 					}),
 					q(45916, {	-- The Acolyte Imperiled
 						["qg"] = 116714, -- Ritssyn Flamescowl
@@ -8063,24 +8084,6 @@ _.Zones =
 							})),
 						}),
 						n(-17, {    -- Quests
-							un(40, q(43473, {	-- Experimental Potion: Test Subjects Needed
-								["qg"] = 110642, -- Fizzi Liverzapper
-							})),
-							un(40, q(43474, {	-- Experimental Potion: Test Subjects Needed
-								["qg"] = 110642, -- Fizzi Liverzapper
-							})),
-							un(40, q(43475, {	-- Experimental Potion: Test Subjects Needed
-								["qg"] = 110642, -- Fizzi Liverzapper
-							})),
-							un(40, q(43477, {	-- Experimental Potion: Test Subjects Needed
-								["qg"] = 110642, -- Fizzi Liverzapper
-							})),
-							un(40, q(43476, {	-- Experimental Potion: Test Subjects Needed
-								["qg"] = 110642, -- Fizzi Liverzapper
-							})),
-							un(40, q(43478, {	-- Experimental Potion: Test Subjects Needed
-								["qg"] = 110642, -- Fizzi Liverzapper
-							})),
 							un(40, q(40994, {	-- Right Tools for the Job
 								["qg"] = 101513, -- Lord Jorach Ravenholdt
 								["classes"] = { 4 },
