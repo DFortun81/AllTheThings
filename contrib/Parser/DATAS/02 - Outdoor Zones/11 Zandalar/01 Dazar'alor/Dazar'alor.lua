@@ -964,6 +964,12 @@ _.Zones =
 							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 							["lvl"] = 120,	-- WQ is 120+ only
 						}),
+						q(49444, {	-- Underfoot
+							["repeatable"] = true,
+							["isDaily"] = true, -- Would like to swap it to WQ below
+							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+							["lvl"] = 120,	-- WQ is 120+ only
+						}),
 						q(52348, {	-- Work Order: Mon'Dazi
 							["groups"] = {
 								i(162296, {	-- Recipe: Mon'Dazi [Rank 3]
