@@ -1143,6 +1143,7 @@ _.Zones =
 										["spellID"] = 259438,
 									}),
 								},
+									["requireSkill"] = 185,	-- Cooking
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -1154,6 +1155,7 @@ _.Zones =
 										["spellID"] = 259426,
 									}),
 								},
+									["requireSkill"] = 185,	-- Cooking
 								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
@@ -1166,6 +1168,7 @@ _.Zones =
 										["spellID"] = 259447,
 									}),
 								},
+									["requireSkill"] = 185,	-- Cooking
 								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
@@ -1178,6 +1181,7 @@ _.Zones =
 										["spellID"] = 259429,
 									}),
 								},
+									["requireSkill"] = 185,	-- Cooking
 								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below

@@ -1189,6 +1189,7 @@ i(155430),
 											["spellID"] = 268897,
 										}),
 									},
+									["requireSkill"] = 333,	-- Enchanting
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]

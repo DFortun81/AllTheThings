@@ -1187,6 +1187,7 @@ _.Zones =
 											["spellID"] = 257133,
 										}),
 									},
+									["requireSkill"] = 197,	-- Tailoring
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -1203,6 +1204,7 @@ _.Zones =
 											["spellID"] = 256286,
 										}),
 									},
+									["requireSkill"] = 773,	-- Inscription
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -1215,6 +1217,7 @@ _.Zones =
 											["spellID"] = 256072,
 										}),
 									},
+									["requireSkill"] = 202,	-- Engineering
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -1227,6 +1230,7 @@ _.Zones =
 											["spellID"] = 259444,
 										}),
 									},
+									["requireSkill"] = 185,	-- Cooking
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
