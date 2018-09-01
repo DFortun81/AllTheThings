@@ -946,42 +946,294 @@ _.Zones =
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
-						q(49413, {	-- Scamps With Scrolls
-							["repeatable"] = true,
-							["isDaily"] = true, -- Would like to swap it to WQ below
-							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-							["lvl"] = 120,	-- WQ is 120+ only
-						}),
-						q(51038, {	-- Supplies Needed: Akunda's Bite
-							["repeatable"] = true,
-							["isDaily"] = true, -- Would like to swap it to WQ below
-							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-							["lvl"] = 120,	-- WQ is 120+ only
-							["races"] = HORDE_ONLY,
-						}),
-						q(51042, {	-- Supplies Needed: Monelite Ore
-							["repeatable"] = true,
-							["isDaily"] = true, -- Would like to swap it to WQ below
-							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-							["lvl"] = 120,	-- WQ is 120+ only
-							["races"] = HORDE_ONLY,
-						}),
-						q(49444, {	-- Underfoot
-							["repeatable"] = true,
-							["isDaily"] = true, -- Would like to swap it to WQ below
-							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-							["lvl"] = 120,	-- WQ is 120+ only
-						}),
-						q(52348, {	-- Work Order: Mon'Dazi
+						n(-17, { -- Quests
 							["groups"] = {
-								i(162296, {	-- Recipe: Mon'Dazi [Rank 3]
-									["spellID"] = 259444,
+								q(49413, {	-- Scamps With Scrolls
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								q(51038, {	-- Supplies Needed: Akunda's Bite
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51044, {	-- Supplies Needed: Blood-Stained Bone
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51045, {	-- Supplies Needed: Calcified Bone
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51046, {	-- Supplies Needed: Deep Sea Satin
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(52387, {	-- Supplies Needed: Frenzied Fangtooth
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(52382, {	-- Supplies Neeeded: Great Sea Catfish
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(52388, {	-- Supplies Needed: Lane Snapper
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51049, {	-- Supplies Neeeded: Mistscale
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51042, {	-- Supplies Needed: Monelite Ore
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51036, {	-- Supplies Needed: Riverbud
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(52383, {	-- Supplies Needed: Sand Shifter
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51041, {	-- Supplis Needed: Sea Stalk
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51048, {	-- Supplies Needed: Shimmerscale
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51040, {	-- Supplies Needed: Siren's Pollen
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51037, {	-- Supplies Needed: Star Moss
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51043, {	-- Supplies Needed: Storm Silver Ore
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51047, {	-- Supplies Needed: Tempest Hide
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51050, {	-- Supplies Needed: Tidespray Line
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(52384, {	-- Supplies Needed: Tiragarde Perch
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(51039, {	-- Supplies Needed: Winter's Kiss
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = HORDE_ONLY,
+									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+									["coord"] = {
+										44.01, 32.21
+									},
+								}),
+								q(49444, {	-- Underfoot
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
+								q(52425, {	-- Work Order: Battle Flag: Spirit of Freedom
+									["groups"] = {
+										i(162443, {	-- Pattern: Battle Flag: Spirit of Freedom [Rank 3]
+											["spellID"] = 257133,
+										}),
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+									["qg"] = 131287,	-- Natal'hakata
+									["coord"] = {
+										65.61, 72.01,
+									},
+								}),
+								q(52395, {	-- Work Order: Contract: Zandalari Empire
+									["groups"] = {
+										i(162366, {	-- Recipe: Contract: Zandalari Empire [Rank 3]
+											["spellID"] = 256286,
+										}),
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
+								q(52373, {	-- Work Order: Electroshock Mount Motivator
+									["groups"] = {
+										i(162340, {	-- Schematic: Electroshock Mount Motivator
+											["spellID"] = 256072,
+										}),
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
+								q(52348, {	-- Work Order: Mon'Dazi
+									["groups"] = {
+										i(162296, {	-- Recipe: Mon'Dazi [Rank 3]
+											["spellID"] = 259444,
+										}),
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								
 							},
-							["repeatable"] = true,
-							["isDaily"] = true, -- Would like to swap it to WQ below
-							--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-							["lvl"] = 120,	-- WQ is 120+ only
 						}),
 					},
 				}),

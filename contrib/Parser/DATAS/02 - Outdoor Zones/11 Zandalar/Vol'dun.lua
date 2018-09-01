@@ -1183,6 +1183,18 @@ i(155430),
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								q(52362, {	--  Work Order: Enchant Weapon - Quick Navigation
+									["groups"] = {
+										i(162314, {	-- Formula: Enchant Weapon - Quick Navigation [Rank 3]
+											["spellID"] = 268897,
+										}),
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
 							},
 						}),
 						i(158155),	-- Dinobone Charm

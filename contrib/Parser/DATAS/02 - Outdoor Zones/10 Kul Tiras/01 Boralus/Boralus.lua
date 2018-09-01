@@ -921,6 +921,242 @@ _.Zones =
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
+						n(-17, {	-- Quests
+							["groups"] = {
+								q(51024, {	-- Supplies Needed: Akunda's Bite
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51028, {	-- Supplies Needed: Blood-Stained Bone
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51029, {	-- Supplies Needed: Calcified Bone
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51035, {	-- Supplies Needed: Deep Sea Satin
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(52375, {	-- Supplies Neeeded: Great Sea Catfish
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51033, {	-- Supplies Neeeded: Mistscale
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51017, {	-- Supplies Needed: Monelite Ore
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(52379, {	-- Supplies Needed: Redtail Loaach
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51022, {	-- Supplies Needed: Riverbud
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(52376, {	-- Supplies Needed: Sand Shifter
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51027, {	-- Supplis Needed: Sea Stalk
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51032, {	-- Supplies Needed: Shimmerscale
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51026, {	-- Supplies Needed: Siren's Pollen
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(52378, {	-- Supplies Needed: Slimy Mackerel
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51023, {	-- Supplies Needed: Star Moss
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51021, {	-- Supplies Needed: Storm Silver Ore
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51031, {	-- Supplies Needed: Tempest Hide
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51034, {	-- Supplies Needed: Tidespray Line
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(52377, {	-- Supplies Needed: Tiragarde Perch
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(51025, {	-- Supplies Needed: Winter's Kiss
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+									["coord"] = {
+										73.21, 11.01
+									},
+								}),
+								q(52389, {	-- Work Order: Contract: Proudmoore Admiralty
+									["groups"] = {
+										i(162360, {	-- Recipe: Contract: Proudmoore Admiralty [Rank 3]
+											["spellID"] = 256277,
+										}),
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								}),
+							},
+						}),
 						i(158159),	-- Boralus Sailor's Cloak
 						--[[
 						n(-43, {	-- Cloth

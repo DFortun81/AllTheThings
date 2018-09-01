@@ -1879,6 +1879,18 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								q(52367, {	-- Work Order: Electroshock Mount Motivator
+									["groups"] = {
+										i(162340, {	-- Schematic: Electroshock Mount Motivator
+											["spellID"] = 256072,
+										}),
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
 								q(52344, {	-- Work Order: Kul Tiramisu [Rank 3]
 									["groups"] = {
 										i(162285, {	-- Recipe: Kul Tiramisu [Rank 3]
