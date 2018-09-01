@@ -50,6 +50,17 @@ _.Zones =
 					p(1582), 	-- Zangar Crawler
 				}),
 				n(-17, { 	-- Quests
+					i(122293, {	-- Trans-Dimensional Bird Whistle
+						["groups"] = {
+							{
+								["itemID"] = 127870,	-- A Tiny Pirate Hat
+								["questID"] = 39268,	-- Pepe can be sometimes be summoned with this mask
+								["coord"] = {
+									54.11, 83.61	-- Pepe Location
+								},
+							},
+						},
+					}),
 --[[				
 					q(34756),	-- A Charming Deception
 					q(34883),	-- A Feast of Shadows

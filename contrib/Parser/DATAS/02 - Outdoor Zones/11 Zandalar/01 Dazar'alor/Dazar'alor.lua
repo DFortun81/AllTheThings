@@ -267,6 +267,18 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					["groups"] = {
+						i(122293, {	-- Trans-Dimensional Bird Whistle
+							["groups"] = {
+								{
+									["itemID"] = 161443,	-- A Tiny Voodo Mask
+									["questID"] = 52269,	-- Pepe can be sometimes be summoned with this mask
+									["coord"] = {
+										38.98, 15.80,	-- Pepe Location
+									},
+									["description"] = "Located inside the \"Hot House\" with it's entrance at 37.88, 15.98.",
+								},
+							},
+						}),
 						ach(12555, {  -- Welcome to Zandalar
 							["groups"] = {
 								q(46930, {	-- Rastakhan

@@ -62,6 +62,17 @@ _.Zones =
 					p(1593), 	-- Waterfly
 				}),
 				n(-17, { 	-- Quests
+					i(122293, {	-- Trans-Dimensional Bird Whistle
+						["groups"] = {
+							{
+								["itemID"] = 127869,	-- A Tiny Plated Helm
+								["questID"] = 39266,	-- Pepe can be sometimes be summoned with this mask
+								["coord"] = {
+									51.01, 63.31	-- Pepe Location
+								},
+							},
+						},
+					}),
 --[[				
 					qa( 34802),	-- A Pilgrimage Gone Awry
 					qh( 34801),	-- A Pilgrimage Gone Awry

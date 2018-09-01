@@ -2086,6 +2086,14 @@ _.ExpansionFeatures =
 					}),
 				}),
 				nh(-17, { 	-- Quests
+					{	-- A Tiny Scarecrow Costume
+						["itemID"] = 128874,	-- A Tiny Scarecrow Costume
+						["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
+						["coords"] = {
+							70.71, 90.21,	-- Pepe Location [Horde]
+						},
+						["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
+					},
 					qh(37961, { -- Bringing the Bass					
 						i(122613, { -- Stash of Dusty Music Rolls
 							i(122210), -- Music Roll: Orgrimmar

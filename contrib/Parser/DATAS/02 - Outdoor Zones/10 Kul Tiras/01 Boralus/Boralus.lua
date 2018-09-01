@@ -303,6 +303,18 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					["groups"] = {
+						i(122293, {	-- Trans-Dimensional Bird Whistle
+							["groups"] = {
+								{
+									["itemID"] = 161451,	-- A Tiny Diving Helmet
+									["questID"] = 52277,	-- Pepe can be sometimes be summoned with this mask
+									["coord"] = {
+										54.01, 71.01,	-- Pepe Location
+									},
+									["description"] = "Located inside the fish tank of \"Catherine Morgan's\" cat house.",
+								},
+							},
+						}),
 						a(ach(12582, {	-- Come Sail Away
 							["groups"] = {
 								a(q(51341, {	-- Daughter of the Sea

@@ -47,6 +47,17 @@ _.Zones =
 					p(379), 	-- Squirrel
 				}),
 				n(-17, { 	-- Quests
+					i(122293, {	-- Trans-Dimensional Bird Whistle
+						["groups"] = {
+							{
+								["itemID"] = 127865,	-- A Tiny Viking Helmets
+								["questID"] = 39265,	-- Pepe can be sometimes be summoned with this mask
+								["coord"] = {
+									80.11, 50.4	-- Pepe Location
+								},
+							},
+						},
+					}),
 					a(ach(8927, { -- Nagrandeur (Alliance)
 						["groups"] = {
 							crit(1, { -- The Might of Steel and Blood

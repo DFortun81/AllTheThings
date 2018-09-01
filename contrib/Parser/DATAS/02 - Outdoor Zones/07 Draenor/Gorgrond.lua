@@ -60,6 +60,17 @@ _.Zones =
 					p(1463), 	-- Wood Wasp
 				}),
 				n(-17, { 	-- Quests
+					i(122293, {	-- Trans-Dimensional Bird Whistle
+						["groups"] = {
+							{
+								["itemID"] = 127867,	-- A Tiny Ninja Shroud
+								["questID"] = 39267,	-- Pepe can be sometimes be summoned with this mask
+								["coord"] = {
+									47.51, 41.31	-- Pepe Location
+								},
+							},
+						},
+					}),
 --[[				
 					q(36037),	-- A Centurion Without a Cause
 					qh( 33593),	-- A Flare for the Dramatic
