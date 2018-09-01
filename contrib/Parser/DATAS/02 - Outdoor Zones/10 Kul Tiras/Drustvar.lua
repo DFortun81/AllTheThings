@@ -2043,7 +2043,14 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
-								q(52009, {	-- Crab People [Pet Battle
+								q(52009, {	-- Crab People [Pet Battle]
+									["groups"] = {
+										i(163036),	-- Polished Pet Charm
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
 								}),
 								q(51527, {	-- Executioner Blackwell
 									["repeatable"] = true,
@@ -2127,6 +2134,20 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 								}),
 								q(51619, {	-- Trapline
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(51397, {	-- Up In Your Drill
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(51530, {	-- Wedding Crashers
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]

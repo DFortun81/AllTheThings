@@ -1355,6 +1355,18 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests
 							["groups"] = {
+								q(51610, {	-- Adhara White
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52874, {	-- Azerite Mining
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
 								q(52869, {	-- Azerite Empowerment
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
@@ -1366,6 +1378,21 @@ _.Zones =
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
+								q(51647, {	-- Crews of Freehold
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
+								q(50234, {	-- Crews of Freehold
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
 								}),
 								q(51632, {	-- Make Loh Go
 									["repeatable"] = true,
@@ -1380,6 +1407,15 @@ _.Zones =
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
 								q(51893, {	-- Sawtooth
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51651, {	-- Squacks
+									["groups"]  = {
+										i(160455),	-- Parrot-Trainer Sash
+									},
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]

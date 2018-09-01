@@ -1824,6 +1824,27 @@ _.Zones =
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
+								q(51855, {	-- A Pirate's Life For Me
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(52140, {	-- A Thorny Problem
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(52236, {	-- A Thorny Problme
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
 								q(52871, {	-- Azerite Empowerment
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
@@ -1850,6 +1871,22 @@ _.Zones =
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
 								q(51782, {	-- Captain Razorspine
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52179, {	-- Fortified Resistance
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(52321, {	-- Kickers
+									["groups"] = {
+										i(154475),	-- Goathair Bindings
+									},
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]

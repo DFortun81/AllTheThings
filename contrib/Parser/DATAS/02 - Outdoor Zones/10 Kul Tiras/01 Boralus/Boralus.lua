@@ -1156,6 +1156,18 @@ _.Zones =
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
+								q(52405, {	-- Work Order: Kubiline
+									["requireSkill"] = 755,	-- Jewelcrafting
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+									["qg"] = 135808,	-- Provisioner Fray
+									["coord"] = {
+										67.61, 21.81
+									},
+								}),
 							},
 						}),
 						i(158159),	-- Boralus Sailor's Cloak
