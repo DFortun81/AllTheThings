@@ -199,17 +199,17 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Paths
-					fp(2078, { -- Fort Victory, Nazmir
+					fp(2078, { -- Fort Victory, Nazmir (A)
 						["coord"] = { 62.2, 41.2 },
 					}),
 					fp(1955, { -- Gloom Hollow, Nazmir
 						["coord"] = { 67, 43.6 },
 					}),
-					fp(2080, { -- Grimwatt's Crash, Nazmir (Confirmed by Vandiel)
+					fp(2080, { -- Grimwatt's Crash, Nazmir (A) (Confirmed by Vandiel)
 						["description"] = "Requires completion of Mission Report: Grimwatt's Crash and related quest line to unlock.",
 						["coord"] = { 34.2, 63.2 },
 					}),
-					fp(2161, { -- Redfield's Watch, Nazmir
+					fp(2161, { -- Redfield's Watch, Nazmir (A)
 						["coord"] = { 50.8, 20.8 },
 					}),
 					fp(1954, { -- Zo'bal Ruins, Nazmir

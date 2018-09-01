@@ -247,35 +247,33 @@ _.Zones =
 					fp(2076, { -- Atal'Gral, Zuldazar
 						["coord"] = { 80.0, 41.4 },
 					}),
-					fp(2147, { -- Castaway Encampment, Zuldazar
+					fp(2147, { -- Castaway Encampment, Zuldazar (A)
 						["coord"] = { 77.6, 54.4 },
 					}),
-					--[[	Need to figure out where this flight point is, not showing on in game maps
-					fp(2071, { -- Dreadpearl, Zuldazar
-						["coord"] = {  },
+					fp(2071, { -- Dreadpearl, Zuldazar (N)
+						["coord"] = { 54.4, 87 },
 					}),
-					]]--
 					fp(2045, { -- Garden of the Loa, Zuldazar
 						["coord"] = { 49.6, 26.2 },
 					}),
 					fp(2164, { -- Isle of Fangs, Zuldazar
 						["coord"] = { 54.4, 87.0 },
 					}),
-					fp(2153, { -- Mistvine Ledge, Zuldazar
+					fp(2153, { -- Mistvine Ledge, Zuldazar (A)
 						["description"] = "Requires completion of Mission Report: Mistvine Ledge and related quest line to unlock.",
 						["coord"] = { 64.4, 47.2 },
 					}),
-					fp(2148, { -- Mugamba Overlook, Zuldazar
+					fp(2148, { -- Mugamba Overlook, Zuldazar (A)
 						["description"] = "Requires completion of Mission Report: Mugamba Overlook and related quest line to unlock.",
 						["coord"] = { 44.8, 27.0 },
 					}),
-					fp(1965, { -- Nesingwary's Gameland, Zuldazar
+					fp(1965, { -- Nesingwary's Gameland, Zuldazar (N)
 						["coord"] = { 66.2, 17.6 },
 					}),
-					fp(2126, { -- Scaletrader Post, Zuldazar
+					fp(2126, { -- Scaletrader Post, Zuldazar (N)
 						["coord"] = { 70.8, 29.6 },
 					}),
-					fp(2075, { -- Seeker's Outpost, Zuldazar
+					fp(2075, { -- Seeker's Outpost, Zuldazar (N)
 						["coord"] = { 70.4, 65.2 },
 					}),
 					fp(2027, { -- Temple of the Prophet, Zuldazar
@@ -284,11 +282,11 @@ _.Zones =
 					fp(2165, { -- Tusk Isle, Zuldazar
 						["coord"] = { 59.4, 78.0 },
 					}),
-					fp(2157, { -- Veiled Grotto, Zuldazar (Confrimed by Vandiel)
+					fp(2157, { -- Veiled Grotto, Zuldazar (A) (Confrimed by Vandiel)
 						["description"] = "Requires completion of Mission Report: Veiled Grotto and related quest line to unlock.",
 						["coord"] = { 44.4, 36.8 },
 					}),
-					fp(2145, { -- Verdant Hollow, Zuldazar
+					fp(2145, { -- Verdant Hollow, Zuldazar (A)
 						["description"] = "Requires completion of Mission Report: Verdant Hollow and related quest line to unlock.",
 						["coord"] = { 55.6, 24.8 },
 					}),
@@ -301,7 +299,7 @@ _.Zones =
 					fp(1974, { -- Xibala, Zuldazar
 						["coord"] = { 44.8, 72.2 },
 					}),
-					fp(2012, { -- Xibala, Zuldazar
+					fp(2012, { -- Xibala, Zuldazar (A)
 						["coord"] = { 40.6, 71.4 },
 					}),
 					fp(1975, { -- Zeb'ahari, Zuldazar

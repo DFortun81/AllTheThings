@@ -250,24 +250,30 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Paths
-					--[[	Need to figure out where these flight points are, not showing on in game maps and not showing up as a mission report unlock
-					fp(2162, { -- Devoted Sanctuary, Vol'dun
-							["coord"] = { },
+					fp(2162, { -- Devoted Sanctuary, Vol'dun (N)
+							["coord"] = { 43.8, 76.0 },
 					}),
+					--[[	Need to figure out where these flight points are, not showing on in game maps and not showing up as a mission report unlock
 					fp(2144, { -- Goldtusk Inn, Vol'dun
 							["coord"] = { },
 					}),
 					]]--
-					fp(2119, { -- Sanctuary of the Devoted, Vol'dun
+					fp(2114, {	-- Deadwood Cove, Vol'dun (A)
+						["coord"] = { 39.8, 83.8 },
+					}),
+					fp(2119, { -- Sanctuary of the Devoted, Vol'dun (N)
 						["coord"] = { 27.6, 50.4 },
 					}),
 					fp(2143, { -- Scorched Sands Outpost, Vol'dun
-						["coord"] = { 43.8, 76.0 },
+						["coord"] = { 42.8, 61.0 },
+					}),
+					fp(2110, {	-- Shatterstone Harbor, Vol'dun (A)
+						["coord"] = { 36.6, 34.2 },
 					}),
 					fp(2118, { -- Temple of Akunda, Vol'dun
 						["coord"] = { 53.6, 89.2 },
 					}),
-					fp(2120, { -- Tortaka Refuge, Vol'dun
+					fp(2120, { -- Tortaka Refuge, Vol'dun (N)
 						["coord"] = { 61.8, 21.6 },
 					}),
 					fp(2111, { -- Vorrik's Sanctum, Vol'dun
@@ -276,7 +282,7 @@ _.Zones =
 					fp(2117, { -- Vulpera Hideaway, Vol'dun
 						["coord"] = { 57.0, 49.2 },
 					}),
-					fp(2112, { -- Vulture's Nest, Vol'dun
+					fp(2112, { -- Vulture's Nest, Vol'dun (A)
 						["description"] = "Requires completion of Mission Report: Vulture's Nest and related quest line to unlock.",
 						["coord"] = { 53.6, 37.6 },
 					}),
