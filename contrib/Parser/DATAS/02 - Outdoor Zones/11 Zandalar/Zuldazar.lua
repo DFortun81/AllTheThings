@@ -952,27 +952,31 @@ _.Zones =
 						o(9999999, { -- Treasure Chest
 							["questID"] = 50716,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 71.39, 40.89 },
+							["repeatable"] = true,
+							["coord"] = {
+								71.39, 40.89
 							},
 						}),
 						o(9999998, { -- Treasure Chest
 							["questID"] = 50720,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 66.41, 29.61 },
+							["repeatable"] = true,
+							["coord"] = {
+								66.41, 29.61
 							},
 						}),
 						o(9999997, { -- Treasure Chest
 							["questID"] = 50723,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 46.18, 60.61 },
+							["repeatable"] = true,
+							["coord"] = {
+								46.18, 60.61
 							},
 						}),
 						o(9999996, { -- Treasure Chest
 							["questID"] = 50726,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["coords"] = {
 								{ 41.11, 74.84 },
 								{ 42.08, 72.52 },
@@ -982,43 +986,49 @@ _.Zones =
 						o(9999995, { -- Treasure Chest
 							["questID"] = 51346,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 77.13, 51.15 },
+							["repeatable"] = true,
+							["coord"] = {
+								77.13, 51.15
 							},
 						}),
 						o(9999994, { -- Treasure Chest
 							["questID"] = 50724,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 79.84, 13.87 },
+							["repeatable"] = true,
+							["coord"] = {
+								79.84, 13.87
 							},
 						}),
 						o(9999993, { -- Treasure Chest
 							["questID"] = 50711,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 50.22, 32.56 },
+							["repeatable"] = true,
+							["coord"] = {
+								50.22, 32.56
 							},
 						}),
 						o(9999992, { -- Treasure Chest
 							["questID"] = 50722,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 48.94, 41.40 },
+							["repeatable"] = true,
+							["coord"] = {
+								48.94, 41.40
 							},
 						}),
 						o(9999991, { -- Treasure Chest
 							["questID"] = 50715,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 69.10, 19.82 },
+							["repeatable"] = true,
+							["coord"] = {
+								69.10, 19.82
 							},
 						}),
 						o(9999978, { -- Treasure Chest
 							["questID"] = 50728,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 80.06, 38.41 },
+							["repeatable"] = true,
+							["coord"] = {
+								80.06, 38.41
 							},
 						}),
 					},
@@ -1111,6 +1121,33 @@ _.Zones =
 				n(-34, {	-- World Quests
 					["groups"] = {
 						n(-17, {	-- Quests
+							q(50864, {	-- Atal'zul Gotaka
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
+							q(52858, {	-- Azerite Empowerment
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
+							q(51642, {	-- Beachhead
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
+							q(52892, {	-- Critters are Friends, Not Food [Pet Battle]
+								["groups"] = {
+									i(163036),	-- Polished Pet Charm
+								},
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
 							q(50869, {	-- Kiboku
 								["groups"] = {
 									i(161112),	--  Hillshaker Armplates
@@ -1130,6 +1167,40 @@ _.Zones =
 										},
 									}),
 								},
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
+							q(51816, {	-- Pterrible Ingredients
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(50633, {	-- Pterrible Ingredients
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+								["races"] = HORDE_ONLY,
+							}),
+							q(50581, {	-- Scrolls and Scales
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+								["races"] = HORDE_ONLY,
+							}),
+							q(51822, { 	-- Scrolls and Scales
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(51494, {	-- The Blood Gate
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -1173,7 +1244,7 @@ _.Zones =
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
 							}),
-							q(52350, {	-- Work Order: Waamp Fish 'n Chips [Rank 3]
+							q(52350, {	-- Work Order: Swamp Fish 'n Chips [Rank 3]
 								["groups"] = {
 									i(162291, {	-- Recipe: Swamp Fish 'n Chips [Rank 3]
 										["spellID"] = 259429,

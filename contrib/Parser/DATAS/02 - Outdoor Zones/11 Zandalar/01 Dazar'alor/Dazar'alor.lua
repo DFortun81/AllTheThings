@@ -502,8 +502,10 @@ _.Zones =
 					["groups"] = { -- If we are going to list every treasure chest then let's make it pretty and not show quest ID# on screen.
 						o(9999999, { -- Treasure Chest
 							["questID"] = 49142,
-							["coords"] = {
-								{ 52.24, 12.36 },
+							["isDaily"] = true,
+							["repeatable"] = true,
+							["coord"] = {
+								52.24, 12.36
 							},
 						}),
 					},
@@ -953,6 +955,13 @@ _.Zones =
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(50858, {	-- Sky Queeen
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only							
+									["races"] = ALLIANCE_ONLY,
 								}),
 								q(51038, {	-- Supplies Needed: Akunda's Bite
 									["repeatable"] = true,

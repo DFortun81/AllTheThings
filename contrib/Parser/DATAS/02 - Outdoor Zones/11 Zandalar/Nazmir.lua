@@ -988,55 +988,66 @@ _.Zones =
 						o(9999999, {	-- Treasure Chest
 							["questID"] = 50855,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
-							["coords"] = {
-								{ 46.91, 73.90 },
+							["coord"] = {
+								46.91, 73.90
 							},
 						}),
 						o(9999998, {	-- Treasure Chest
 							["questID"] = 49885,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
 						o(9999997, {	-- Treasure Chest
 							["questID"] = 50895,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
 						o(9999996, {	-- Treasure Chest
 							["questID"] = 49904,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
 						o(9999995, {	-- Treasure Chest
 							["questID"] = 49916,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
-							["coords"] = {
-								{ 43.53, 48.91 },
+							["coord"] = {
+								43.53, 48.91
 							},
 						}),
 						o(9999994, {	-- Treasure Chest
 							["questID"] = 50894,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
 						o(9999986, {	-- Treasure Chest
 							["questID"] = 49913,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
 						o(9999985, {	-- Treasure Chest
 							["questID"] = 49914,
 							["isDaily"] = true,
-							["coord"] = { 49.2, 33.3 },
+							["repeatable"] = true,
+							["coord"] = {
+								49.2, 33.3
+							},
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
 						o(9999979, { -- Treasure Chest
 							["questID"] = 49899,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 61.4, 57.6 },
+							["repeatable"] = true,
+							["coord"] = {
+								61.4, 57.6
 							},
 						}),
 					},
@@ -1196,13 +1207,26 @@ _.Zones =
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
-								q(50735, {	-- Burial Detail
+								q(51415, {	-- Azerite Madness
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
-								q(52779, {	-- Crawg in the Bog
+								q(52884, {	-- Azerite Wounds
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(50735, {	-- Burial Detail
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
+								q(52779, {	-- Crawg in the Bog [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
 									},
@@ -1216,6 +1240,28 @@ _.Zones =
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
+								q(50899, {	-- Don't Stalk Me, Troll
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(51172, {	-- Forked Lightning
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(50545, {	-- Forked Lightning
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
 								}),
 								q(50505, {	-- Kal'draxa
 									["groups"] = {
@@ -1236,7 +1282,37 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								q(52006, {	-- Preemptive Assault
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
 								q(51628, {	-- Shell Game
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(50650, {	-- Smashing Zalamar
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
+								q(52785, {	-- Smashing Zalamar
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(50513, {	-- Tainted Guardian
+									["groups"] = {
+										i(162621),	-- Naazmani Golem's Greathelm
+									},
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]

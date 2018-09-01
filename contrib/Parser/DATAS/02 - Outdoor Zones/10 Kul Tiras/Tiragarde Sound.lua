@@ -1391,7 +1391,7 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
-								q(52455, {	-- Unbreakable
+								q(52455, {	-- Unbreakable [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
 									},

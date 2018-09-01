@@ -706,6 +706,12 @@ i(155430),
 								}),
 								["questID"] = 51079,
 							}),
+							n(134643, {	-- Brgl-Lrgl the Basher
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+									i(161044),	-- Tideflat Brute's Greatbelt
+								}),
+								["questID"] = 50663,
+							}),
 							n(136346, {	-- Captain Stef "Marrow" Quin
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(160990),	-- Marrow's Sash
@@ -860,6 +866,7 @@ i(155430),
 						o(9999999, { -- Treasure Chest
 							["questID"] = 50922,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["coords"] = {
 								{ 29.58, 48.10 },
 								{ 30.33, 52.80 },
@@ -869,20 +876,22 @@ i(155430),
 						o(9999998, { -- Treasure Chest
 							["questID"] = 50920,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 43.95, 91.86 },
+							["repeatable"] = true,
+							["coord"] = {
+								43.95, 91.86
 							},
 						}),
 						o(9999997, { -- Treasure Chest
 							["questID"] = 51673,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 49.36, 80.18 },
+							["coord"] = {
+								49.36, 80.18
 							},
 						}),
 						o(9999996, { -- Treasure Chest
 							["questID"] = 50926,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["coords"] = {
 								{ 56.49, 69.88 },
 								{ 55.85, 67.23 },
@@ -892,20 +901,22 @@ i(155430),
 						o(9999995, { -- Treasure Chest
 							["questID"] = 50928,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 58.48, 56.84 },
+							["repeatable"] = true,
+							["coord"] = {
+								58.48, 56.84
 							},
 						}),
 						o(9999994, { -- Treasure Chest
 							["questID"] = 50916,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 61.32, 32.36 },
+							["coord"] = {
+								61.32, 32.36
 							},
 						}),
 						o(9999993, { -- Treasure Chest
 							["questID"] = 50914,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["coords"] = {
 								{ 60.69, 12.23 },
 								{ 60.90, 12.72 },
@@ -914,13 +925,15 @@ i(155430),
 						o(9999992, { -- Treasure Chest
 							["questID"] = 50918,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 65.83, 23.52 },
+							["repeatable"] = true,
+							["coord"] = {
+								65.83, 23.52
 							},
 						}),
 						o(9999991, { -- Treasure Chest
 							["questID"] = 50923,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["coords"] = {
 								{ 28.19, 68.92 },
 								{ 27.15, 65.09 },
@@ -929,6 +942,7 @@ i(155430),
 						o(9999980, { -- Treasure Chest
 							["questID"] = 50924,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["coords"] = {
 								{ 33.71, 77.40 },
 								{ 34.74, 77.24 },
@@ -938,6 +952,7 @@ i(155430),
 						o(9999974, { -- Treasure Chest
 							["questID"] = 50921,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["coords"] = {
 								{ 46.07, 44.28 },
 								{ 48.20, 44.26 },
@@ -946,15 +961,17 @@ i(155430),
 						o(9999973, { -- Treasure Chest
 							["questID"] = 50917,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 47.58, 31.63 },
+							["repeatable"] = true,
+							["coord"] = {
+								47.58, 31.63
 							},
 						}),
 						o(9999972, { -- Treasure Chest
 							["questID"] = 50919,
 							["isDaily"] = true,
-							["coords"] = {
-								{ 37.84, 55.50 },
+							["repeatable"] = true,
+							["coord"] = {
+								37.84, 55.50
 							},
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
@@ -1120,17 +1137,48 @@ i(155430),
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								q(51155, {	-- Brgl-Lrgl the Basher
+									["groups"] = {
+										i(161044),	-- Tideflat Brute's Greatbelt
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
 								q(51098, {	-- Commodore Calhoun
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								q(51562, {	-- Damaged Goods
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(51599, {	-- Damaged Goods
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
 								q(51792, {	-- Erupting Totem Testing
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
+								q(51794, {	-- Erupting Totem Testing
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
 								}),
 								q(51156, {	-- Fangcaller Xorreth
 									["repeatable"] = true,
@@ -1173,11 +1221,39 @@ i(155430),
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
 								}),
-								q(52856, {	-- Snakes on a Terrace
+								q(51853, {	-- Preserve the Oasis
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(52856, {	-- Snakes on a Terrace [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
 									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51558, {	-- Spider Scorching
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
+								q(51561, {	-- Spider Scorching
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(51113, {	-- Warlord Zothix
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -1189,7 +1265,7 @@ i(155430),
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
-								q(52362, {	--  Work Order: Enchant Weapon - Quick Navigation
+								q(52362, {	-- Work Order: Enchant Weapon - Quick Navigation
 									["groups"] = {
 										i(162314, {	-- Formula: Enchant Weapon - Quick Navigation [Rank 3]
 											["spellID"] = 268897,
