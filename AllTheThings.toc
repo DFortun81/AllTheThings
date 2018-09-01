@@ -16,6 +16,7 @@ locales\enUS.lua
 db\Presets.lua
 db\RaceDB.lua
 db\NPCDB.lua
+db\ItemDB.lua
 db\Categories.lua
 Settings.lua
 ScrollFrame.xml
