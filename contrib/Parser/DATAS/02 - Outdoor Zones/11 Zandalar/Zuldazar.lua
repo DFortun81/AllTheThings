@@ -1148,6 +1148,12 @@ _.Zones =
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
 							}),
+							q(50846, {	-- Headhunter Lee'za
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
 							q(50869, {	-- Kiboku
 								["groups"] = {
 									i(161112),	--  Hillshaker Armplates
@@ -1159,7 +1165,7 @@ _.Zones =
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
 							}),
-							q(50855, {	-- Old R'gal (triggered add'l questID 50856 upon killing for WQ)
+							q(50855, {	-- Old R'gal
 								["groups"] = {
 									i(160509, {	-- Echoes of Rezan
 										["crs"] = {
@@ -1186,6 +1192,13 @@ _.Zones =
 								["lvl"] = 120,	-- WQ is 120+ only
 								["races"] = HORDE_ONLY,
 							}),
+							q(50540, {	-- Rally the Rastari
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+								["races"] = HORDE_ONLY,
+							}),
 							q(50581, {	-- Scrolls and Scales
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
@@ -1199,6 +1212,12 @@ _.Zones =
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
 								["races"] = ALLIANCE_ONLY,
+							}),
+							q(50867, {	-- Tambano
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
 							}),
 							q(51494, {	-- The Blood Gate
 								["repeatable"] = true,
@@ -1266,6 +1285,16 @@ _.Zones =
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
 							}),
+							q(52937, {	-- You've Never Seen Jammer Upset [Pet Battle]
+								["groups"] = {
+									i(163036),	-- Polished Pet Charm
+								},
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
+							
 						}),
 						i(158116),	-- Bonehex Claws
 						i(158125),	-- Bonehex Warmaul
