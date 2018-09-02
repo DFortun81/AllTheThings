@@ -29,6 +29,26 @@ _.Instances =
 						["u"] = 17,
 					}),
 					--]]
+					n(-17, {	-- Quests
+						q(29850, {	-- Corrupt Constructs
+							["qg"] = 55835,	-- Kaldir Ironbane
+							["coord"] = { 35.6, 35.2 },
+						}),
+						q(13207, {	-- Halls of Stone
+							["qg"] = 28070,	-- Brann Bronzebeard
+							["coord"] = { 70.8, 50.0 },
+							["groups"] = {
+								i(44370),	-- Mantle of the Intrepid Explorer
+								i(44373),	-- Pauldrons of Reconnaissance
+								i(44371),	-- Shoulderpads of the Adventurer
+								i(44372),	-- Spaulders of Lost Secrets
+							},
+						}),
+						q(29848, {	-- The Forlorn Watcher
+							["qg"] = 55835,	-- Kaldir Ironbane
+							["coord"] = { 35.6, 35.2 },
+						}),
+					}),
 					d(1, {	-- Normal
 						n(0, {		-- Zone Drop
 							i(35682, {	-- Rune Giant Bindings

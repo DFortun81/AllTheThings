@@ -247,7 +247,6 @@ _.Zones =
 					qa( 13298),	-- Coprous the Defiled
 					qh( 13278),	-- Coprous the Defiled
 					qh( 13349),	-- Cradle of the Frostbrood
-					q(12992),	-- Crush Dem Vrykuls!
 					q(13040),	-- Curing The Incurable
 					q(13120),	-- Death's Gaze
 					q(14105),	-- Deathspeaker Kharos
@@ -262,22 +261,18 @@ _.Zones =
 					qa( 13323),	-- Drag and Drop
 					q(14101),	-- Drottinn Hrothgar
 					q(13794),	-- Eadric the Pure
-					q(12982),	-- Ebon Blade Prisoners
-					q(12955),	-- Eliminate the Competition
 					qh( 13259),	-- Establishing Superiority
 					qa( 13386),	-- Exploiting an Opening
 					qa( 13393),	-- Field Repairs
 					qh( 13304),	-- Field Repairs
 					q(13133),	-- Find the Ancient Hero
 					qa( 13232),	-- Finish Me!
-					q(12893),	-- Free Your Mind
 					q(12813),	-- From Their Corpses, Rise!
 					q(13171),	-- From Whence They Came
 					qa( 13396),	-- Futility
 					qh( 13348),	-- Futility
 					q(13146),	-- Generosity Abounds
 					q(14108),	-- Get Kraken!
-					q(12949),	-- Get the Key
 					qa( 13314),	-- Get the Message
 					qh( 13293),	-- Get to Ymirheim!
 					qa( 13296),	-- Get to Ymirheim!
@@ -288,25 +283,19 @@ _.Zones =
 					q(31928),	-- Grand Master Payne
 					q(13212),	-- He's Gone to Pieces
 					q(13036),	-- Honor Above All Else
-					q(12939),	-- Honor Challenge
 					q(13170),	-- Honor is for the Weak
 					q(13074),	-- Hope Within the Emerald Nightmare
 					q(13080),	-- Hope Yet Remains
-					q(12891),	-- I Have an Idea, But First...
 					qh( 13229),	-- I'm Not Dead Yet!
 					qa( 13221),	-- I'm Not Dead Yet!
 					q(13138),	-- I'm Smelting... Smelting!
 					q(14095),	-- Identifying the Remains
-					qa( 12896),	-- If He Cannot Be Turned
-					qh( 12897),	-- If He Cannot Be Turned
 					q(13044),	-- If There Are Survivors...
 					q(12840),	-- In Strict Confidence
 					q(12838),	-- Intelligence Gathering
 					q(13139),	-- Into The Frozen Heart Of Northrend
 					q(13045),	-- Into The Wild Green Yonder
-					q(13135),	-- It Could Kill Us All					
-					qh( 12892),	-- It's All Fun and Games
-					qa( 12887),	-- It's All Fun and Games
+					q(13135),	-- It Could Kill Us All
 					q(13136),	-- Jagged Shards
 					qh( 13340),	-- Joining the Assault
 					qa( 13341),	-- Joining the Assault
@@ -322,8 +311,6 @@ _.Zones =
 					qa( 13401),	-- Knowledge is a Terrible Burden
 					qh( 13677),	-- Learning The Reins
 					qa( 13625),	-- Learning The Reins
-					q(12995),	-- Leave Our Mark
-					q(12951),	-- Let the Baron Know
 					qa( 13482),	-- Let's Get Out of Here
 					qh( 13481),	-- Let's Get Out of Here!
 					q(13083),	-- Light Within the Darkness
@@ -431,14 +418,12 @@ _.Zones =
 					q(13664),	-- The Black Knight's Fall
 					q(14017),	-- The Black Knight's Fate
 					q(13663),	-- The Black Knight's Orders
-					q(12999),	-- The Bone Witch
 					q(13082),	-- The Boon of A'dal
 					q(13079),	-- The Boon of Alexstrasza
 					q(13075),	-- The Boon of Remulos
 					qa( 13231),	-- The Broken Front
 					qh( 13228),	-- The Broken Front
 					q(13157),	-- The Crusaders' Pinnacle
-					q(12938),	-- The Duke
 					qh( 13770),	-- The Edge Of Winter
 					qh( 13675),	-- The Edge Of Winter
 					qa( 13754),	-- The Edge Of Winter
@@ -491,8 +476,6 @@ _.Zones =
 					q(13795),	-- The Scourgebane
 					q(13122),	-- The Scourgestone
 					q(13641),	-- The Seer's Crystal
-					qh( 12899),	-- The Shadow Vault
-					qa( 12898),	-- The Shadow Vault
 					qa( 13225),	-- The Skybreaker
 					qa( 13292),	-- The Solution Solution
 					q(13130),	-- The Stone That Started A Revolution
@@ -539,7 +522,6 @@ _.Zones =
 					qh( 13676),	-- Training In The Field
 					qa( 13672),	-- Up To The Challenge
 					qh( 13678),	-- Up To The Challenge
-					q(13085),	-- Vaelen Has Returned
 					qa( 13706),	-- Valiant Of Darnassus
 					qa( 13704),	-- Valiant Of Gnomeregan
 					qa( 13703),	-- Valiant Of Ironforge
@@ -550,7 +532,6 @@ _.Zones =
 					qa( 13705),	-- Valiant Of The Exodar
 					qh( 13709),	-- Valiant Of Thunder Bluff
 					qh( 13710),	-- Valiant Of Undercity
-					q(13084),	-- Vandalizing Jotunheim
 					q(13155),	-- Vereth the Cunning
 					q(13071),	-- Vile Like Fire!
 					qh( 13239),	-- Volatility
@@ -646,44 +627,59 @@ _.Zones =
 						i(39130),
 						i(39133),
 					}),
-					q(12992,  {  -- Crush Dem Vrykuls!
-						i(43929),
-						i(43858),
-						i(43927),
-						i(43911),
-						i(43928),
+					q(12992, {	-- Crush Dem Vrykuls!
+						["qg"] = 30216,	-- Vile
+						["sourceQuests"] = { 12951 },	-- Let the Baron Know
+						["coord"] = { 43.6, 24.2 },
+						["groups"] = {
+							i(43928),	-- Bow of Bone and Sinew
+							i(43911),	-- Vile's Poker
+							i(43929),	-- Vile's Uglystick
+							i(43858),	-- Vrykul Crusher
+							i(43927),	-- Wrought-Iron Staff
+						},
 					}),
-					q(13039,  {  -- Defending The Vanguard
+					q(13039, {	-- Defending The Vanguard
 						i(43828),
 						i(43841),
 						i(43831),
 					}),
-					qa(13394,  {  -- Do Your Worst
+					qa(13394, {	-- Do Your Worst
 						i(43881),
 						i(43892),
 						i(43932),
 						i(43930),
 						i(43847),
 					}),
-					qh(13305,  {  -- Do Your Worst
+					qh(13305, {	-- Do Your Worst
 						i(43881),
 						i(43892),
 						i(43932),
 						i(43930),
 						i(43847),
 					}),
-					q(12982,  {  -- Ebon Blade Prisoners
-						i(43859),
-						i(43910),
-						i(43935),
-						i(43844),
+					q(12982, {	-- Ebon Blade Prisoners
+						["qg"] = 30218,	-- Vaelen the Flayed
+						["sourceQuests"] = { 13085 },	-- Vaelen Has Returned
+						["coord"] = { 43.1, 21.0 },
+						["groups"] = {
+							i(43859),	-- Shadow Vault Cowl
+							i(43844),	-- Ebon Pauldrons
+							i(43935),	-- Links of the Battlemender
+							i(43910),	-- Gloves of the Flayed
+						},
 					}),
 					q(12955,  {  -- Eliminate the Competition
-						i(43856),
-						i(43913),
-						i(43981),
-						i(43946),
-						i(43843),
+						["qg"] = 30074,	-- The Leaper
+						["sourceQuests"] = { 12938 },	-- The Duke
+						["coord"] = { 43.4, 25.0 },
+						["groups"] = {
+							i(43843),	-- Iron Coffin Lid
+							i(43946),	-- Chestplate of the Glacial Crusader
+							i(43913),	-- Efrem's Bracers
+							i(43981),	-- Gauntlets of Onu'zun
+							i(43856),	-- Sigrid's Mittens
+						},
 					}),
 					qh(13259,  {  -- Establishing Superiority
 						i(38737),
@@ -692,7 +688,40 @@ _.Zones =
 						i(39102),
 					}),
 					q(12893,  {  -- Free Your Mind
-						i(43925),
+						["qg"] = 29804,	-- Baron Sliver
+						["sourceQuests"] = { 12891 },	-- I Have an Idea, But First...
+						["coord"] = { 44.1, 24.7 },
+						["groups"] = {
+							i(43849),	-- Chain of the Sovereign
+							i(43925),	-- Shadow Vault Shawl
+							i(43874),	-- Lady Nightswood's Engagement Ring
+							i(43926),	-- Signet of Baron Sliver
+						},
+					}),
+					q(12949, {	-- Get the Key
+						["qg"] = 30056,	-- Vaelen the Flayed
+						["sourceQuests"] = { 12943 },	-- Shadow Vault Decree
+						["coord"] = { 41.0, 23.8 },
+					}),
+					q(12939, {	-- Honor Challenge
+						["qg"] = 30002,	-- Duke Lankral
+						["sourceQuests"] = { 12938 },	-- The Duke
+						["coord"] = { 44.6, 20.4 },
+					}),
+					q(12891, {	-- I Have an Idea, But First...
+						["qg"] = 29804,	-- Baron Sliver
+						["sourceQuests"] = { 12887, 12892 },	-- It's All Fun and Games [A/H]
+						["coord"] = { 44.1, 24.7 },
+					}),
+					qa(12896, {	-- If He Cannot Be Turned
+						["qg"] = 29804,	-- Baron Sliver
+						["sourceQuests"] = { 12893 },	-- Free Your Mind
+						["coord"] = { 44.1, 24.7 },
+					}),
+					qh(12897, {	-- If He Cannot Be Turned
+						["qg"] = 29804,	-- Baron Sliver
+						["sourceQuests"] = { 12893 },	-- Free Your Mind
+						["coord"] = { 44.1, 24.7 },
 					}),
 					q(12840,  {  -- In Strict Confidence
 						i(43883),
@@ -701,11 +730,30 @@ _.Zones =
 						i(43890),
 						i(43921),
 					}),
-					q(13144,  {  -- Killing Two Scourge With One Skeleton
+					qh(12892, {	-- It's All Fun and Games
+						["qg"] = 29795,	-- Koltira Deathweaver
+						["coord"] = { 62.0, 40.2 },
+					}),
+					qa(12887, {	-- It's All Fun and Games
+						["qg"] = 29799,	-- Thassarian
+						["coord"] = { 59.6, 44.4 },
+					}),
+					q(13144, {	-- Killing Two Scourge With One Skeleton
 						i(38739),
 						i(39038),
 						i(39068),
 						i(39104),
+					}),
+					q(12995, {	-- Leave Our Mark
+						["qg"] = 29343,	-- Baron Sliver
+						["sourceQuests"] = { 12951 },	-- Let the Baron Know
+						["coord"] = { 42.8, 25.0 },
+						["isDaily"] = true,
+					}),
+					q(12951, {	-- Let the Baron Know
+						["qg"] = 30056,	-- Vaelen the Flayed
+						["sourceQuests"] = { 12949 },	-- Get the Key
+						["coord"] = { 41.0, 23.8 },
 					}),
 					q(13083,  {  -- Light Within the Darkness
 						i(44018),
@@ -787,11 +835,16 @@ _.Zones =
 						i(43941),
 						i(43923),
 					}),
-					q(12943,  {  -- Shadow Vault Decree
-						i(43857),
-						i(43912),
-						i(43980),
-						i(43945),
+					q(12943, {	-- Shadow Vault Decree
+						["qg"] = 30002,	-- Duke Lankral
+						["sourceQuests"] = { 12939 },	-- Honor Challenge
+						["coord"] = { 44.6, 20.4 },
+						["groups"] = {
+							i(43945),	-- Blackened Breastplate of the Vault
+							i(43912),	-- Vest of Jotunheim
+							i(43980),	-- Thane's Restraints
+							i(43857),	-- Duke Lankral's Velvet Slippers
+						},
 					}),
 					qa(13397,  {  -- Sindragosa's Fall
 						i(39115),
@@ -824,12 +877,22 @@ _.Zones =
 						i(43977),
 						i(43942),
 					}),
+					q(12999,  {  -- The Bone Witch
+						["qg"] = 30074,	-- The Leaper
+						["sourceQuests"] = { 12955 },	-- Eliminate the Competition
+						["coord"] = { 43.4, 25.0 },
+					}),
 					q(13157,  {  -- The Crusaders' Pinnacle
 						i(44019),
 						i(44044),
 						i(44045),
 						i(44046),
 						i(44040),
+					}),
+					q(12938, {	-- The Duke
+						["qg"] = 29343,	-- Baron Sliver
+						["sourceQuests"] = { 12898, 12899 },	-- The Shadow Vault [A/H]
+						["coord"] = { 44.1, 24.7 },
 					}),
 					q(13164,  {  -- The Fate of Bloodbane
 						i(44027),
@@ -884,6 +947,33 @@ _.Zones =
 						i(43940),
 						i(43873),
 					}),
+					qa(12898, {	-- The Shadow Vault
+						["qg"] = 29799,	-- Thassarian
+						["sourceQuests"] = { 12896 },	-- If He Cannot Be Turned
+						["coord"] = { 59.6, 44.4 },
+						["groups"] = {
+							i(43838),	-- Chuchu's Tiny Box of Horrors
+							i(43837),	-- Softly Glowing Orb
+							i(43836),	-- Thorny Rose Brooch
+						},
+					}),
+					qh(12899, {	-- The Shadow Vault
+						["qg"] = 29795,	-- Koltira Deathweaver
+						["sourceQuests"] = { 12897 },	-- If He Cannot Be Turned
+						["coord"] = { 62.0, 40.2 },
+						["groups"] = {
+							i(43838),	-- Chuchu's Tiny Box of Horrors
+							i(43837),	-- Softly Glowing Orb
+							i(43836),	-- Thorny Rose Brooch
+						},
+					}),
+					q(12840,  {  -- In Strict Confidence
+						i(43883),
+						i(43920),
+						i(43919),
+						i(43890),
+						i(43921),
+					}),
 					q(13130,  {  -- The Stone That Started A Revolution 
 						i(43855),
 						i(43914),
@@ -929,6 +1019,16 @@ _.Zones =
 						i(44747),
 						i(44746),
 						i(44748),
+					}),
+					q(13085, {	-- Vaelen Has Returned
+						["qg"] = 29343,	-- Baron Sliver
+						["sourceQuests"] = { 12951 },	-- Let the Baron Know
+						["coord"] = { 42.8, 25.0 },
+					}),
+					q(13084, {	-- Vandalizing Jotunheim
+						["qg"] = 30002,	-- Duke Lankral
+						["sourceQuests"] = { 12951 },	-- Let the Baron Know
+						["coord"] = { 44.6, 20.4 },
 					}),
 					qh(13239,  {  -- Volatility
 						i(38736),
