@@ -809,7 +809,7 @@ _.Zones =
 									["spellID"] = 253149,
 								}),
 								i(162669, {	-- Recipe: Honorable Combatant's Spellblade	[Rank 3]
-									["spellID"] = 253150,
+									["spellID"] = 253144,
 								}),
 								i(163024, {	-- Recipe: Honorable Combatant's Staff of Intuition [Rank 2]
 									["spellID"] = 269735,
