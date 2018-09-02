@@ -173,6 +173,7 @@ pet(119142, 1450);	-- Draenei Micro Defender
 pet(152974, 2085);	-- Drafty
 pet(34493, 169); 	-- Dragon Kite
 pet(109014, 1386);	-- Dread Hatchling
+pet(163634, 2431);	-- Dreadtick Leecher
 pet(97554, 1232); 	-- Dripping Strider Egg (Coilfang Stalker)
 pet(104162, 1331); 	-- Droplet of Y'Shaarj
 pet(142098, 1967); 	-- Drudge Remains (Drudge Ghoul)

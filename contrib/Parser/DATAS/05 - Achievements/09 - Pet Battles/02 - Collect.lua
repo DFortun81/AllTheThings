@@ -16,8 +16,9 @@ _.Achievements =
 		["groups"] = {
 			n(-10027, { -- Collect (need to review locations for future use, some from wowhead are questionable)
 				["groups"] = {
-					ach(7465),		-- An Uncommon Find
+					ach(7465),		-- An Uncommon Find*
 					ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
+						i(163634),		-- Dreadtick Leecher
 						crit(1),		-- Shadowback Crawler
 						crit(2),		-- River Frog
 						crit(3),		-- Freshwater Crawler
@@ -46,7 +47,7 @@ _.Achievements =
 						crit(26),		-- Coastal Bounder
 						crit(27),		-- Honey Bee
 					}),
-					ach(11233, {	-- Broken Isles Safari
+					ach(11233, {	-- Broken Isles Safari*
 						crit(1),		-- Albatross Chick (Azsuna, Stormheim)
 						crit(2),		-- Fledgling Kingfeather (Azsuna)
 						crit(3),		-- Fledgling Oliveback (Azsuna)
@@ -83,20 +84,20 @@ _.Achievements =
 						crit(34),		-- Blind Rat (Dalaran)
 						crit(35),		-- Stormstruck Beaver (Stormheim)
 					}),
-					ach(8519, {		-- Celestial Family
+					ach(8519, {		-- Celestial Family*
 						crit(1),		-- Xu-Fu, Cub of Xuen
 						crit(2),		-- Chi-Chi, Hatchling of Chi-Ji
 						crit(3),		-- Yu'la, Broodling of Yu'lon
 						crit(4),		-- Zao, Calfling of Niuzao
 					}),
-					ach(6611, {		-- Continental Tamer
+					ach(6611, {		-- Continental Tamer*
 						crit(1),		-- Outland Tamer
 						crit(2),		-- Kalimdor Tamer
 						crit(3),		-- Northrend Tamer
 						crit(4),		-- Eastern Kingdoms Tamer
 						crit(5),		-- Pandaria Tamer
 					}),
-					ach(8397, {		-- Crazy for Cats (need to add locations to comments for future use - wowhead did not link)
+					ach(8397, {		-- Crazy for Cats* (need to add locations to comments for future use - wowhead did not link)
 						title(240, {	-- the Crazy Cat Lady
 							["groups"] = {
 							},
@@ -134,7 +135,7 @@ _.Achievements =
 						crit(25),		-- Winterspring Cub
 						crit(26),		-- Xu-Fu, Cub of Xuen
 					}),
-					ach(9685, {		-- Draenor Safari
+					ach(9685, {		-- Draenor Safari*
 						i(111866),		-- Royal Peacock
 						crit(1),		-- Amberbarb Wasp (Gorgrond)
 						crit(2),		-- Axebeak Hatchling (Gorgrond)
@@ -162,7 +163,7 @@ _.Achievements =
 						crit(24),		-- Wood Wasp (Gorgrond)
 						crit(25),		-- Zangar Crawler (Shadowmoon Valley, Spires of Arak)
 					}),
-					ach(6586, {		-- Eastern Kingdoms Safari
+					ach(6586, {		-- Eastern Kingdoms Safari*
 						crit(1),		-- Adder (Northern Barrens, Southern Barrens, Durotar, Hellfire Peninsula, Nagrand (Outland), Spires of Arak, Valley of Trials, Nagrand (Draenor), Blasted Lands)
 						crit(2),		-- Alpine Hare (Winterspring, Dun Morogh, New Tinkertown, Coldridge Valley)
 						crit(3),		-- Ash Spiderling (Searing Gorge, Talador)
@@ -253,7 +254,7 @@ _.Achievements =
 						crit(88),		-- Wildhammer Gryphon Hatchling (Twilight Highlands)
 						crit(89),		-- Yellow-Bellied Marmot (Twilight Highlands)
 					}),
-					ach(6613, {		-- Eastern Kingdoms Tamer
+					ach(6613, {		-- Eastern Kingdoms Tamer*
 						crit(1),		-- Arathi Highlands
 						crit(2),		-- Badlands
 						crit(3),		-- Blasted Lands
@@ -279,7 +280,7 @@ _.Achievements =
 						crit(23),		-- Westfall
 						crit(24),		-- Wetlands
 					}),
-					ach(6608, {		-- Family Reunion
+					ach(6608, {		-- Family Reunion*
 						crit(1),		-- Humanoid
 						crit(2),		-- Dragonkin
 						crit(3),		-- Undead
@@ -291,7 +292,7 @@ _.Achievements =
 						crit(9),		-- Aquatic
 						crit(10),		-- Mechanical
 					}),
-					ach(6585, {		-- Kalimdor Safari
+					ach(6585, {		-- Kalimdor Safari*
 						crit(1),		-- Adder (Northern Barrens, Southern Barrens, Durotar, Hellfire Peninsula, Nagrand, Spires of Arak, Valley of Trials, Nagrand, Blasted Lands)
 						crit(2),		-- Alpine Chipmunk (Winterspring, Stonetalon Mountains, Mount Hyjal, Highmountain)
 						crit(3),		-- Alpine Hare (Winterspring, Dun Morogh, New Tinkertown, Coldridge Valley)
@@ -391,7 +392,7 @@ _.Achievements =
 						crit(97),		-- Venomspitter Hatchling (Stonetalon Mountains)
 						crit(98),		-- Water Snake (Durotar, Swamp of Sorrows, Orgrimmar, Wetlands, Twilight Highlands)
 					}),
-					ach(6612, {		-- Kalimdor Tamer
+					ach(6612, {		-- Kalimdor Tamer*
 						crit(1),		-- Ashenvale
 						crit(2),		-- Azshara
 						crit(1),		-- Blade's Edge Mountains
@@ -415,7 +416,7 @@ _.Achievements =
 						crit(20),		-- Un'Goro Crater
 						crit(21),		-- Winterspring
 					}),
-					ach(12958, {	-- Master of Minions (1000)
+					ach(12958, {	-- Master of Minions (1000) *
 						i(163218),		-- Hearthy
 						ach(12992, {	-- Pet Emporium
 							i(163220),		-- Rooter
@@ -448,7 +449,7 @@ _.Achievements =
 						ach(15),		-- Plenty of Pets (15)
 						ach(1017),		-- Can I Keep Him? (1)
 					}),
-					ach(6588, {		-- Northrend Safari
+					ach(6588, {		-- Northrend Safari*
 						crit(1),		-- Arctic Fox Kit (The Storm Peaks)
 						crit(2),		-- Arctic Hare (Dragonblight, The Storm Peaks, Borean Tundra, Zul'Drak)
 						crit(3),		-- Biletoad (Sholazar Basin)
@@ -483,7 +484,7 @@ _.Achievements =
 						crit(32),		-- Turkey (Howling Fjord)
 						crit(33),		-- Water Waveling (Zul'Drak)
 					}),
-					ach(6615, {		-- Northrend Tamer
+					ach(6615, {		-- Northrend Tamer*
 						crit(1),		-- Borean Tundra
 						crit(2),		-- Crystalsong Forest
 						crit(3),		-- Dragonblight
@@ -494,7 +495,7 @@ _.Achievements =
 						crit(8),		-- The Storm Peaks
 						crit(9),		-- Zul'Drak
 					}),
-					ach(6587, {		-- Outland Safari
+					ach(6587, {		-- Outland Safari*
 						crit(1),		-- Adder (Northern Barrens, Southern Barrens, Durotar, Hellfire Peninsula, Nagrand, Spires of Arak, Valley of Trials, Nagrand, Blasted Lands)
 						crit(2),		-- Ash Viper (Burning Steppes, Shadowmoon Valley, Suramar)
 						crit(3),		-- Brown Marmot (The Hinterlands, Gorgrond)
@@ -522,7 +523,7 @@ _.Achievements =
 						crit(25),		-- Toad (Durotar, Ashenvale, Felwood, Dustwallow Marsh, Orgrimmar, Nagrand, Wetlands, Ghostlands, Hillsbrad Foothills, Eversong Woods, Silverpine Forest)
 						crit(26),		-- Warpstalker Hatchling (Terokkar Forest, Shadowmoon Valley)
 					}),
-					ach(6614, {		-- Outland Tamer
+					ach(6614, {		-- Outland Tamer*
 						crit(2),		-- Hellfire Peninsula
 						crit(3),		-- Nagrand
 						crit(4),		-- Netherstorm
@@ -530,7 +531,7 @@ _.Achievements =
 						crit(6),		-- Terokkar Forest
 						crit(7),		-- Zangarmarsh
 					}),
-					ach(6589, {		-- Pandaria Safari
+					ach(6589, {		-- Pandaria Safari*
 						crit(1),		-- Alpine Foxling (Kun-Lai Summit, Townlong Steppes)
 						crit(2),		-- Alpine Foxling Kit (Kun-Lai Summit, Townlong Steppes)
 						crit(3),		-- Amber Moth (Townlong Steppes, Dread Wastes)
@@ -587,7 +588,7 @@ _.Achievements =
 						crit(54),		-- Yakrat (Townlong Steppes)
 						crit(55),		-- Zooey Snake (Kun-Lai Summit)
 					}),
-					ach(6616, {		-- Pandaria Tamer
+					ach(6616, {		-- Pandaria Tamer*
 						crit(1),		-- Dread Wastes
 						crit(2),		-- The Jade Forest
 						crit(3),		-- Krasarang Wilds
@@ -596,11 +597,11 @@ _.Achievements =
 						crit(6),		-- Vale of Eternal Blossoms
 						crit(7),		-- Valley of the Four Winds
 					}),
-					ach(7464, {		-- Quality & Quantity (50)
+					ach(7464, {		-- Quality & Quantity* (50)
 						ach(7463),		-- High Quality (10)
 						ach(7462),		-- A Rare Catch (1)
 					}),
-					ach(7934, {		-- Raiding with Leashes
+					ach(7934, {		-- Raiding with Leashes*
 						i(93031),		-- Mr. Bigglesworth
 						crit(1),		-- Mini Mindslayer (Temple of Ahn'Qiraj - The Prophet Skeram)
 						crit(2),		-- Anubisath Idol (Temple of Ahn'Qiraj - Emperor Vek'tor)
@@ -615,7 +616,7 @@ _.Achievements =
 						crit(11),		-- Death Talon Whelpguard (Blackwing Lair - Broodlord Lashlayer)
 						crit(12),		-- Viscidus Globule (Temple of Ahn'Qiraj - Viscidus)
 					}),
-					ach(8293, {		-- Raiding with Leashes II: Attunement Edition
+					ach(8293, {		-- Raiding with Leashes II: Attunement Edition*
 						i(97558),		-- Tito's Basket
 						crit(1),		-- Lil' Bad Wolf (Karazhan - The Big Bad Wolf)
 						crit(2),		-- Menagerie Custodian (Karazhan - The Curator)
@@ -628,7 +629,7 @@ _.Achievements =
 						crit(9),		-- Lesser Voidcaller (The Eye - High Astromancer Solarian) 
 						crit(10),		-- Phoenix Hawk Hatchling (The Eye - Al'ar)
 					}),
-					ach(9824, {		-- Raiding with Leashes III: Drinkin' From the Sunwell
+					ach(9824, {		-- Raiding with Leashes III: Drinkin' From the Sunwell*
 						i(122116),		-- Holy Chime
 						crit(1),		-- Grotesque (Hyjal Summit - Azgalor)
 						crit(2),		-- Leviathan Hatchling (Black Temple - High Warlord Naj'entus)
@@ -643,7 +644,7 @@ _.Achievements =
 						crit(11),		-- Chaos Pup (Sunwell Plateau - M'uru)
 						crit(12),		-- Wretched Servant (Sunwell Plateau - Eredar Twins)
 					}),
-					ach(11320, {	-- Raiding with Leashes IV: Wrath of the Lick King
+					ach(11320, {	-- Raiding with Leashes IV: Wrath of the Lick King*
 						i(142210),		-- Celestial Invitation (Begins a quest for a pet)
 						crit(1),		-- Dreadmaw (Trial of the Crusader - Icehowl)
 						crit(2),		-- Nerubian Swarmer (Trial of the Crusader - Anub'arak)
@@ -662,7 +663,7 @@ _.Achievements =
 						crit(15),		-- Drudge Ghoul (Icecrown Citadel - The Lich King)
 						crit(16),		-- Wicked Soul (Icecrown Citadel - The Lich King)
 					}),
-					ach(12079, {	-- Raiding with Leashes V: Cuteaclysm
+					ach(12079, {	-- Raiding with Leashes V: Cuteaclysm*
 						i(152963),		-- Amalgam of Destruction
 						crit(1),		-- Tinytron (Blackwing Descent - Magmatron)
 						crit(2),		-- Discarded Experiment (Blackwing Descent - Maloriak)
@@ -680,8 +681,8 @@ _.Achievements =
 						crit(14),		-- Corrupted Blood (Dragon Soul - Greater Cache of the Aspects from Spine of Deathwing)
 						crit(15),		-- Unstable Tendril (Dragon Soul - Elementium Fragment from Madness of Deathwing)
 					}),
-					ach(6571),		-- That Was Close!
-					ach(6590, {		-- World Safari
+					ach(6571),		-- That Was Close!*
+					ach(6590, {		-- World Safari*
 						title(199),		-- Zookeeper
 						crit(1),		-- Eastern Kingdoms Safari
 						crit(2),		-- Kalimdor Safari
@@ -689,7 +690,7 @@ _.Achievements =
 						crit(4),		-- Northrend Safari
 						crit(5),		-- Pandaria Safari
 					}),
-					ach(7436, {		-- Zen Pet Hunter (200)
+					ach(7436, {		-- Zen Pet Hunter (200)*
 						ach(6557),		-- Master Pet Hunter (100)
 						ach(6556, {		-- Going to Need More Traps (50)
 							pa(77),			-- Strong Trap

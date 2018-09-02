@@ -276,6 +276,7 @@ t(163750);	-- Kovork Kostume
 t(88566);	-- Krastinov's Bag of Horrors
 t(129111);	-- Kvaldir Raiding Horn (Never Implemented)
 t(88531);	-- Lao Chin's Last Mug
+t(163697);	-- Laser Pointer
 t(140632);	-- Lava Fountain
 t(129956);	-- Leather Love Seat
 t(129960);	-- Leather Pet Bed

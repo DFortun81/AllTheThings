@@ -9,6 +9,7 @@ _.Toys =
 		i(164310),		-- Glorious Pennant
 		i(87528),		-- Honorary Brewmaster Keg
 		i(134026),		-- Honorable Pennant
+		i(163697),		-- Laser Pointer
 		un(4, i(89205)),	-- Mini Mana Bomb (Horde) No Longer Available
 		i(143660), 		-- Mrgrglhjorn
 		i(86596),		-- Nat's Fishing Chair
