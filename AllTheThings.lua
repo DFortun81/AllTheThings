@@ -1537,6 +1537,21 @@ local function SearchForItemID(itemID)
 		return fieldCache["itemID"][itemID];
 	end
 end
+local function SearchForMapRecursively(group, mapID)
+	if group.mapID == mapID or (group.maps and contains(group.maps, mapID)) then
+		-- OH BOY, WE FOUND IT!
+		return true;
+	end
+	
+	if group.g then
+		-- Go through the sub groups and determine if any of them have a response.
+		for i, subgroup in ipairs(group.g) do
+			if SearchForMapRecursively(subgroup, mapID) then
+				return true;
+			end
+		end
+	end
+end
 local function SearchForQuestID(questID)
 	if questID and app:GetDataCache() then
 		return fieldCache["questID"][questID];
@@ -2065,76 +2080,87 @@ local function OpenMiniList(field, id, label)
 		end
 		
 		-- Check to see if it is empty.
-		if popout.data then ExpandGroupsRecursively(popout.data, false); end
+		local expandible = true;
+		if popout.data and field == "mapID"
+			and SearchForMapRecursively(popout.data, id) then
+			expandible = false;
+		end
+		
+		-- If we have determined that we want to expand this section, then do it
+		if expandible then
+			if popout.data then
+				ExpandGroupsRecursively(popout.data, false);
+			end
+			
+			-- if enabled minimize rows based on difficulty 
+			if GetDataMember("AutoMinimize",true) then
+				ExpandGroupsRecursively(results, false);
+				
+				local found = false;
+				local difficultyID = select(3, GetInstanceInfo());
+				if difficultyID and difficultyID > 0 and results.g then
+					for _, row in ipairs(results.g) do
+						if (row.difficultyID and row.difficultyID == difficultyID)
+							or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+							if row.visible then
+								ExpandGroupsRecursively(row, true);
+								found = true;
+							end
+						end
+					end
+				end
+				if not found then
+					difficultyID = GetDungeonDifficultyID();
+					for _, row in ipairs(results.g) do
+						if (row.difficultyID and row.difficultyID == difficultyID)
+							or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+							if row.visible then
+								ExpandGroupsRecursively(row, true);
+								found = true;
+							end
+						end
+					end
+				end
+				if not found then
+					difficultyID = GetRaidDifficultyID();
+					for _, row in ipairs(results.g) do
+						if (row.difficultyID and row.difficultyID == difficultyID)
+							or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+							if row.visible then
+								ExpandGroupsRecursively(row, true);
+								found = true;
+							end
+						end
+					end
+				end
+				if not found then
+					difficultyID = GetLegacyRaidDifficultyID();
+					for _, row in ipairs(results.g) do
+						if (row.difficultyID and row.difficultyID == difficultyID)
+							or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+							if row.visible then
+								ExpandGroupsRecursively(row, true);
+								found = true;
+							end
+						end
+					end
+					
+					-- Expand them all!
+					if not found then
+						ExpandGroupsRecursively(results, true);
+						if results.instanceID and app.GetDataMember("WarnOnClearedDifficulty", false) then
+							AllTheThings.yell("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
+							AllTheThings.print("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
+						end
+					end
+				end
+			else
+				ExpandGroupsRecursively(results, true);
+			end
+		end
 		
 		-- Check to see completion...
 		popout.data = results;
-		
-		-- if enabled minimize rows based on difficulty 
-		if GetDataMember("AutoMinimize",true) then
-			ExpandGroupsRecursively(popout.data, false);
-			
-			local found = false;
-			local difficultyID = select(3, GetInstanceInfo());
-			if difficultyID and difficultyID > 0 and popout.data.g then
-				for _, row in ipairs(popout.data.g) do
-					if (row.difficultyID and row.difficultyID == difficultyID)
-						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-						if row.visible then
-							ExpandGroupsRecursively(row, true);
-							found = true;
-						end
-					end
-				end
-			end
-			if not found then
-				difficultyID = GetDungeonDifficultyID();
-				for _, row in ipairs(popout.data.g) do
-					if (row.difficultyID and row.difficultyID == difficultyID)
-						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-						if row.visible then
-							ExpandGroupsRecursively(row, true);
-							found = true;
-						end
-					end
-				end
-			end
-			if not found then
-				difficultyID = GetRaidDifficultyID();
-				for _, row in ipairs(popout.data.g) do
-					if (row.difficultyID and row.difficultyID == difficultyID)
-						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-						if row.visible then
-							ExpandGroupsRecursively(row, true);
-							found = true;
-						end
-					end
-				end
-			end
-			if not found then
-				difficultyID = GetLegacyRaidDifficultyID();
-				for _, row in ipairs(popout.data.g) do
-					if (row.difficultyID and row.difficultyID == difficultyID)
-						or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-						if row.visible then
-							ExpandGroupsRecursively(row, true);
-							found = true;
-						end
-					end
-				end
-				
-				-- Expand them all!
-				if not found then
-					ExpandGroupsRecursively(popout.data, true);
-					if popout.data.instanceID and app.GetDataMember("WarnOnClearedDifficulty", false) then
-						AllTheThings.yell("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
-						AllTheThings.print("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
-					end
-				end
-			end
-		else
-			ExpandGroupsRecursively(popout.data, true);
-		end
 
 		-- Reset to the first object.
 		popout.ScrollBar:SetValue(1);
