@@ -946,6 +946,21 @@ _.Zones =
 						i(18239), -- Pattern: Shadowskin Gloves							
 						i(14635), -- Pattern: Gem-Studded Leather Belt						
 					}),
+					n(105637, {	-- Scowling Rosa <Texts and Specialty Goods>
+						["description"] = "These are completely useless as far as we know. I bought one of each and they're sitting in my bank just in case Blizzard ever removes the vendor.\b - Crieve",
+						["groups"] = {
+							i(140101),	-- A Hypothetical Examination of the Legion's Weaknesses
+							i(140133),	-- Axe, Blade, and Fist
+							i(140109),	-- How to Meditate in a Hurricane
+							i(140113),	-- Legends of the Silver Hand
+							i(139403),	-- Powerful Magical Foci and Those Who Wielded Them
+							i(140097),	-- The Fall of Lordaeron and the Scouring of the Eastweald
+							i(140125),	-- The Fall of the Warchief
+							i(140117),	-- The Hunt for Light's Wrath
+							i(140121),	-- The Seven Curses of the Southern Seas
+							i(140093),	-- The Untold Tales of the War of the Ancients
+						},
+					}),
 					n(2670, {	-- Xizk Goodstitch <Tailoring Supplies>
 						i(7087), 	-- Pattern: Crimson Silk Cloak
 						i(14630), 	-- Pattern: Enchanter's Cowl
