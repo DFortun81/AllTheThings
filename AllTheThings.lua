@@ -2427,36 +2427,57 @@ local function RefreshSavesCoroutine()
 				lock.reset = reset;
 			end
 			
-			-- Create the pseudo "shared" lock
-			local shared = locks["shared"];
-			if not shared then
-				shared = {};
-				shared.id = id;
-				shared.reset = reset;
-				shared.encounters = {};
-				locks["shared"] = shared;
-				
-				-- Check Encounter locks
-				for encounterIter=1,numEncounters do
-					local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-					table.insert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-					
-					-- Shared Encounter is always assigned if this is the first lock seen for this instance
-					table.insert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+			-- If this is LFR, then don't share.
+			if difficulty == 7 or difficulty == 17 then
+				if #lock.encounters == 0 then
+					-- Check Encounter locks
+					for encounterIter=1,numEncounters do
+						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
+						table.insert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+					end
+				else
+					-- Check Encounter locks
+					for encounterIter=1,numEncounters do
+						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
+						if not lock.encounters[encounterIter] then
+							table.insert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+						elseif isKilled then
+							lock.encounters[encounterIter].isKilled = true;
+						end
+					end
 				end
 			else
-				-- Check Encounter locks
-				for encounterIter=1,numEncounters do
-					local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-					if not lock.encounters[encounterIter] then
+				-- Create the pseudo "shared" lock
+				local shared = locks["shared"];
+				if not shared then
+					shared = {};
+					shared.id = id;
+					shared.reset = reset;
+					shared.encounters = {};
+					locks["shared"] = shared;
+					
+					-- Check Encounter locks
+					for encounterIter=1,numEncounters do
+						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
 						table.insert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-					elseif isKilled then
-						lock.encounters[encounterIter].isKilled = true;
-					end
-					if not shared.encounters[encounterIter] then
+						
+						-- Shared Encounter is always assigned if this is the first lock seen for this instance
 						table.insert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-					elseif isKilled then
-						shared.encounters[encounterIter].isKilled = true;
+					end
+				else
+					-- Check Encounter locks
+					for encounterIter=1,numEncounters do
+						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
+						if not lock.encounters[encounterIter] then
+							table.insert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+						elseif isKilled then
+							lock.encounters[encounterIter].isKilled = true;
+						end
+						if not shared.encounters[encounterIter] then
+							table.insert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+						elseif isKilled then
+							shared.encounters[encounterIter].isKilled = true;
+						end
 					end
 				end
 			end
@@ -3479,13 +3500,9 @@ app.BaseDifficulty = {
 		elseif key == "saved" then
 			return t.locks;
 		elseif key == "locks" and t.parent then
-			if t.difficultyID == 7 or t.difficultyID == 17 then
-				-- LFR difficulties are giving me... difficulty.
-				return nil;
-			end
 			local locks = t.parent.locks;
 			if locks then
-				if t.parent.isLockoutShared then
+				if t.parent.isLockoutShared and not (t.difficultyID == 7 or t.difficultyID == 17) then
 					rawset(t, key, locks.shared);
 					return locks.shared;
 				else
