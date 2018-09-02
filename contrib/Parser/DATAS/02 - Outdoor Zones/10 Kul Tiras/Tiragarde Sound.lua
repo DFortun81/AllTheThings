@@ -1373,12 +1373,24 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								q(51638, {	-- Beachhead
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
 								q(52755, {	-- Bringing the Heat
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
+								}),
+								q(51842, {	-- Carla Smirk
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
 								}),
 								q(51647, {	-- Crews of Freehold
 									["repeatable"] = true,
@@ -1393,6 +1405,13 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
+								}),
+								q(52760, {	-- Like a Fish in a Barrel
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
 								}),
 								q(51632, {	-- Make Loh Go
 									["repeatable"] = true,
@@ -1412,9 +1431,25 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								q(51463, {	-- Sky Drop Rescue
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
 								q(51651, {	-- Squacks
 									["groups"]  = {
 										i(160455),	-- Parrot-Trainer Sash
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(52471, {	-- That's a Big Carcass [Pet Battle]
+									["groups"] = {
+										i(163036),	-- Polished Pet Charm
 									},
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below

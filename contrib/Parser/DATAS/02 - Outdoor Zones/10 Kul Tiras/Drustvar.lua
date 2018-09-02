@@ -2030,6 +2030,12 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								q(51469, {	-- Betsy
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
 								q(51468, {	-- Bonesquall
 									["groups"] = {
 										i(154376, {	-- Bonecurse Gauntlets
@@ -2052,20 +2058,27 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
-								q(51527, {	-- Executioner Blackwell
-									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
-								}),
-								q(51761, {	-- Familiar Foes
+								q(51747, {	-- Early Warning
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
-								q(51588, {	-- Familiar Foes
+								q(51527, {	-- Executioner Blackwell
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51761, {	-- Familiar Foes [H]
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+								}),
+								q(51588, {	-- Familiar Foes [A]
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -2078,14 +2091,14 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
-								q(51604, {	-- Hunters Hunted
+								q(51604, {	-- Hunters Hunted [A]
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
-								q(51764, {	-- Hunters Hunted
+								q(51764, {	-- Hunters Hunted [H]
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -2126,14 +2139,20 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
-								q(51767, {	-- Trapline
+								q(51431, {	-- Soul Goliath
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51767, {	-- Trapline [H]
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
-								q(51619, {	-- Trapline
+								q(51619, {	-- Trapline [A]
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]

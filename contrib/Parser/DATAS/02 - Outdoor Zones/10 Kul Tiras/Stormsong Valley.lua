@@ -1898,6 +1898,12 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								q(52446, {	-- Sister Absinthe
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
 								q(52209, {	-- Turtle Tactics
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
