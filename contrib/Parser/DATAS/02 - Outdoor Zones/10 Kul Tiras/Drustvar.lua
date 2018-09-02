@@ -7,8 +7,145 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
 			["groups"] = {
-				n(-4, {	-- Achievement
+				n(-4,   {	-- Achievement
 					["groups"] = {
+						ach(13094, {	-- Cursed Game Hunter
+							{	-- Goats
+								["crs"] = {
+									143929,	-- Hexed Craghopper
+								},
+								["criteriaID"] = 1,	-- Goats
+							},
+							{	-- Deer
+								["crs"] = {
+									129835,	-- Gorehorn
+									129764,	-- Hexcrazed Doe
+									128361,	-- Hexcrazed Greatstag
+								},
+								["criteriaID"] = 2,	-- Deer
+							},
+							{	-- Pigs
+								["crs"] = {
+									124548,	-- Betsy
+									124170,	-- Fallhaven Pig
+								},
+								["criteriaID"] = 3,	-- Pigs
+							},
+							{	-- Thornclaws
+								["crs"] = {
+									135868,	-- Greenstalker
+									135869,	-- Greenstalker
+									142278,	-- Hexed Thornclaw
+								},
+								["criteriaID"] = 4,	-- Thornclaws
+							},
+							{	-- Wolves
+								["crs"] = {
+									124885,	-- Bewitched Darkmaw
+									132194,	-- Hexenwolf Alpha
+									132195,	-- Hexenwolf Tracker
+								},
+								["criteriaID"] = 5,	-- Wolves
+							},
+							{	-- Ravens
+								["crs"] = {
+									124382,	-- Bonepicker Raven
+									124890,	-- Ensorcelled Bonepicker
+								},
+								["criteriaID"] = 6,	-- Ravens
+							},
+							{	-- Rabbits
+								["crs"] = {
+									129904,	-- Cottontail Matron
+									129877,	-- Ensorcelled Hare
+									129899,	-- Frenzied Cottontail
+								},
+								["criteriaID"] = 7,	-- Rabbits
+							},
+							{	-- Falcons
+								["crs"] = {
+									131518,	-- Cursed Falcon
+									132240,	-- Cursed Falcon
+									122961,	-- Cursed Game-hawk
+									133988,	-- Cursed Gyrfalcon
+								},
+								["criteriaID"] = 8,	-- Falcons
+							},
+							{	-- Bramblebacks
+								["crs"] = {
+									134753,	-- Cursed Brambleback
+									133501,	-- Hexed Brambleback
+								},
+								["criteriaID"] = 9,	-- Bramblebacks
+							},
+							{	-- Sea Lions
+								["crs"] = {
+									143953,	-- Bewitched Seal
+								},
+								["criteriaID"] = 10,	-- Sea Lions
+							},
+							{	-- Horses
+								["crs"] = {
+									134307,	-- Hexthralled Courser
+									131534,	-- Hexthralled Guardsman
+								},
+								["criteriaID"] = 11,	-- Horses
+							},
+							{	-- Sharks
+								["crs"] = {
+									143951,	-- Hexed Dreadmaw
+								},
+								["criteriaID"] = 12,	-- Sharks
+							},
+							{	-- Crabs
+								["crs"] = {
+									143928,	-- Cursed Snapclaw
+								},
+								["criteriaID"] = 13,	-- Crabs
+							},
+						}),
+						ach(13064, {	-- Drust the Facts, Ma'am
+							o(296915, {	-- Drust Stele: The Circle
+								["coord"] = { 36.8, 64.5 },
+								["criteriaID"] = 1,
+							}),
+							o(296916, {	-- Drust Stele: The Ritual
+								["coord"] = { 50.8, 73.7 },
+								["criteriaID"] = 2,
+							}),
+							o(296917, {	-- Drust Stele: The Tree
+								["coord"] = { 27.3, 48.3 },
+								["criteriaID"] = 3,
+							}),
+							o(296918, {	-- Drust Stele: Breath Into Stone
+								["coord"] = { 59.5, 66.7 },
+								["criteriaID"] = 4,
+							}),
+							o(297627, {	-- Drust Stele: Sacrifice
+								["coord"] = { 27.6, 57.6 },
+								["criteriaID"] = 5,
+							}),
+							o(297628, {	-- Drust Stele: Constructs
+								["coord"] = { 50.2, 42.5 },
+								["criteriaID"] = 6,
+							}),
+							o(297629, {	-- Drust Stele: The Cycle
+								["coord"] = { 19.0, 57.9 },
+								["criteriaID"] = 7,
+							}),
+							o(297630, {	-- Drust Stele: Conflict
+								["coord"] = { 46.5, 37.3 },
+								["criteriaID"] = 8,
+							}),
+							o(297631, {	-- Drust Stele: The Flayed Man
+								["coord"] = { 56.6, 86.0 },
+								["criteriaID"] = 9,
+							}),
+							o(297632, {	-- Drust Stele: Protectors of the Forest
+								["coord"] = { 44.6, 45.7 },
+								["criteriaID"] = 10,
+							}),
+						}),
 						ach(12995, {	-- Treasures of Drustvar
 							o(297879, {	-- Bespelled Chest
 								["groups"] = {
@@ -162,7 +299,7 @@ _.Zones =
 						["coord"] = { 25.6, 16.6 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  { 	-- Pet Battle
 					["groups"] = {
 						p(2386),	-- Coastal Scuttler
 						p(2378),	-- River Otter
@@ -209,7 +346,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					["groups"] = {
 						qa(50970, {	-- A Farmer's Fate
 							["qg"] = 135976,	-- Morwin Gladeheart
@@ -1410,7 +1547,7 @@ _.Zones =
 						--]]
 					},
 				}),
-				n(-16, {	-- Rares
+				n(-16,  {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						o(277333, {	-- Ancient Sarcophagus
@@ -1847,7 +1984,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-2, {	-- Vendors
+				n(-2,   {	-- Vendors
 					["groups"] = {
 						n(144353, {	-- Collector Kojo <Tortollan Seekers Emissary> [NOTE: Will need correct npcID when located]
 							["groups"] = {
@@ -2001,7 +2138,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-34, {	-- World Quests
+				n(-34,  {	-- World Quests
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
@@ -2275,7 +2412,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0, {	-- Zone Drop
+				n(0,    {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						--Note: Commented out items are because they were in at one point, but then removed later on.  Might be patched in on release date
 						--Not going to mark them NYI as they only return "Retrieving Data"
