@@ -1,3 +1,4 @@
+
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
@@ -8,7 +9,7 @@ _.WorldEvents =
 			n(-527, { -- Battle For Azeroth
 				["groups"] = {
 					n(-17, { -- Quests
-						["groups"] = { -- [Note: Do not adjust ordering.]
+						["groups"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, { -- [Note: Do not adjust ordering.]
 							-- ALLIANCE PART I
 							qa(52062, {	-- A Disturbancee in Ashenvale
 								["qg"] = 139798, -- Master Mathias Shaw
@@ -266,7 +267,7 @@ _.WorldEvents =
 									53610, -- Driving Them Out
 								}, 
 							}),
-						},
+						}),
 						-- Attaching the quests to each zone that is involved in the "War of the Thorns" Campaign.  Excluding Undercity, Stomrwind and Northern Barrens due to only one quest taking place in these zones and it's not relevant to link for just the one.
 						["maps"] = { 
 							63, -- Ashenvale
@@ -276,65 +277,68 @@ _.WorldEvents =
 					}),
 					n(-34, { -- World Quests
 						["groups"] = {
-							qa(52895, { -- Arboria
-								["isDaily"] = true,
-							}),
-							qa(52506, { -- Blunt the Spikes
-								["isDaily"] = true,
-							}),
-							qa(53497, { -- Break Free
-								["isDaily"] = true,
-							}),
-							qa(53520, { -- Detonate!
-								["isDaily"] = true,
-							}),
-							qh(52894, { -- Don't Stop  Me Now
-								["isDaily"] = true,
-							}),
-							qh(52312, { -- Extinguish the Light
-								["isDaily"] = true,
-							}),
-							qa(52885, { -- Fey There
-								["isDaily"] = true,
-							}),
-							qh(52243, { -- Fuel for the Demolishers
-								["isDaily"] = true,
-							}),
-							qa(52983, { -- I Want It All
-								["isDaily"] = true,
-							}),
-							qh(52890, { -- It's a Kind of Magic
-								["isDaily"] = true,
-							}),
-							qa(52893, { -- One Vision
-								["isDaily"] = true,
-							}),
-							qh(52505, { -- Pruning the Thorns
-								["isDaily"] = true,
-							}),
-							qa(52504, { -- So We Meat Again
-								["isDaily"] = true,
-							}),
-							qa(52307, { -- Spiritual Aid
-								["isDaily"] = true,
-							}),
-							qh(53498, { -- Staying Power
-								["isDaily"] = true,
-							}),
-							qa(52244, { -- Stop the Drilling
-								["isDaily"] = true,
-							}),
-							qh(52343, { -- They Eat Like Orcs
-								["isDaily"] = true,
-							}),
-							qh(52896, { -- Under Pressure
-								["isDaily"] = true,
-							}),
-							qa(52897, { -- We Will "Rock" You
-								["isDaily"] = true,
-							}),
-							qa(53552, { -- Wicked Kegger
-								["isDaily"] = true,
+							n(-17, {	-- Quests
+								["groups"] = bubbleDown({["u"] = 3, ["lvl"] = 110},
+									qa(52895, { -- Arboria
+										["isDaily"] = true,
+									}),
+									qa(52506, { -- Blunt the Spikes
+										["isDaily"] = true,
+									}),
+									qa(53497, { -- Break Free
+										["isDaily"] = true,
+									}),
+									qa(53520, { -- Detonate!
+										["isDaily"] = true,
+									}),
+									qh(52894, { -- Don't Stop  Me Now
+										["isDaily"] = true,
+									}),
+									qh(52312, { -- Extinguish the Light
+										["isDaily"] = true,
+									}),
+									qa(52885, { -- Fey There
+										["isDaily"] = true,
+									}),
+									qh(52243, { -- Fuel for the Demolishers
+										["isDaily"] = true,
+									}),
+									qa(52983, { -- I Want It All
+										["isDaily"] = true,
+									}),
+									qh(52890, { -- It's a Kind of Magic
+										["isDaily"] = true,
+									}),
+									qa(52893, { -- One Vision
+										["isDaily"] = true,
+									}),
+									qh(52505, { -- Pruning the Thorns
+										["isDaily"] = true,
+									}),
+									qa(52504, { -- So We Meat Again
+										["isDaily"] = true,
+									}),
+									qa(52307, { -- Spiritual Aid
+										["isDaily"] = true,
+									}),
+									qh(53498, { -- Staying Power
+										["isDaily"] = true,
+									}),
+									qa(52244, { -- Stop the Drilling
+										["isDaily"] = true,
+									}),
+									qh(52343, { -- They Eat Like Orcs
+										["isDaily"] = true,
+									}),
+									qh(52896, { -- Under Pressure
+										["isDaily"] = true,
+									}),
+									qa(52897, { -- We Will "Rock" You
+										["isDaily"] = true,
+									}),
+									qa(53552, { -- Wicked Kegger
+										["isDaily"] = true,
+									}),
 							}),
 							cl(5, { -- Priest
 								["groups"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
