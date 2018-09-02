@@ -278,7 +278,7 @@ _.WorldEvents =
 					n(-34, { -- World Quests
 						["groups"] = {
 							n(-17, {	-- Quests
-								["groups"] = bubbleDown({["u"] = 3, ["lvl"] = 110},
+								["groups"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
 									qa(52895, { -- Arboria
 										["isDaily"] = true,
 									}),
@@ -339,6 +339,7 @@ _.WorldEvents =
 									qa(53552, { -- Wicked Kegger
 										["isDaily"] = true,
 									}),
+								}),
 							}),
 							cl(5, { -- Priest
 								["groups"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
