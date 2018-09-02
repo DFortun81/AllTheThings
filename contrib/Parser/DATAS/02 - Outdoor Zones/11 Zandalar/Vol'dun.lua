@@ -1115,13 +1115,14 @@ i(155430),
 						}),
 						n(135400, {	-- Jenoh
 							["groups"] = {
-								i(163511),	-- Barnacled Hermit Crab
-								i(163509),	-- Freshwater Pincher
-								i(163503),	-- Ranishu Runt
-								i(163512),	-- Sanadstinger Wasp
 								i(159753),	-- Desert Flute
+								i(163036, {	-- Polished Pet Charms
+									i(163511),	-- Barnacled Hermit Crab
+									i(163509),	-- Freshwater Pincher
+									i(163503),	-- Ranishu Runt
+									i(163512),	-- Sandstinger Wasp
+								}),								
 							},
-							["itemID"] = 163036,	-- Polished Pet Charm
 							["description"] = "Complete the questline \"A Lost Flute\" to unlock this vendor.",
 							["races"] = HORDE_ONLY,
 						}),
