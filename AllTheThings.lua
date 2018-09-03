@@ -4636,6 +4636,11 @@ app.BaseQuest = {
 		if key == "key" then
 			return "questID";
 		elseif key == "text" then
+			if t.title then
+				rawset(t, "text", t.title);
+				t.title = nil;
+				return t.text;
+			end
 			local questName = QuestTitleFromID[t.questID];
 			if questName then
 				if t.retries then
@@ -4645,7 +4650,6 @@ app.BaseQuest = {
 				return "|Hquest:" .. t.questID .. "|h[" .. questName .. "]|h";
 			end
 			if t.retries and t.retries > 120 then
-				t.title = "Failed to acquire information. This quest may have been removed from the game.";
 				if t.npcID then
 					if t.npcID > 0 then
 						return t.npcID > 0 and NPCNameFromID[t.npcID];
@@ -4653,14 +4657,9 @@ app.BaseQuest = {
 						return L("NPC_ID_NAMES")[t.npcID];
 					end
 				end
-				if t.title then
-					rawset(t, "text", t.title);
-					t.title = nil;
-					return t.text;
-				else
-					t.title = "Failed to acquire information. This quest may have been removed from the game.";
-				end
-				return "|Hquest:" .. t.questID .. "|h[Quest #" .. t.questID .. "*]|h";
+				rawset(t, "text", "|Hquest:" .. t.questID .. "|h[Quest #" .. t.questID .. "*]|h");
+				t.title = "Failed to acquire information. This quest may have been removed from the game.";
+				return t.text;
 			else
 				t.retries = (t.retries or 0) + 1;
 				return "|Hquest:" .. t.questID .. "|h[]|h";

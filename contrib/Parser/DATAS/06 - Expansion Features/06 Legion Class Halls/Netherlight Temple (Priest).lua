@@ -244,6 +244,103 @@ _.ExpansionFeatures =
 									}),	
 								},
 							}),
+							i(141332, {	-- The Annals of Light and Shadow
+								["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\nStart with Archivist Inkforge in your Order Hall.",
+								["maps"] = {
+									630, -- Azsuna
+									627, -- Dalaran
+									628, -- The Underbelly (Dalaran)
+									629, -- Aegwynn's Gallery (Dalaran)
+									115, -- New Hearthglen in Northrend
+									476, -- Scholomance
+									477, -- Scholomance
+									478, -- Scholomance
+									479, -- Scholomance
+									634, -- Stormheim
+									680, -- Suramar
+									350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366,	-- Karazhan
+								},
+								["groups"] = {
+									q(44339, {	-- Volume I
+										["title"] = "|cFFFFFFFFVolume I|r | The Violet Citadel in new Dalaran.",
+										["description"] = "The Violet Citadel in new Dalaran is where Khadgar is located. On the left side, there is an NPC named Archivist Elysiana. Behind her are two bookshelves, in the right one you will find volume 1.\n\nWorld Spawn - might be on cooldown!",
+										["qg"] = 113873,	-- Archivist Elysiana <Curator>
+										["coord"] = { 30.6, 50.8 },
+									}),
+									q(44340, {	-- Volume II
+										["title"] = "|cFFFFFFFFVolume II|r | Behind Juvess the Duskwhisperer in the Class Order Hall.",
+										["description"] = "This is a bit vague - on the other side of that little room is High Priestess Ishanah, right next to her an Dranei Anchorite.\n\nWorld Spawn - might be on cooldown!",
+										["qg"] = 111738,	-- Juvess the Duskwhisperer
+										["coord"] = { 59.6, 28.6 },
+									}),
+									q(44341, {	-- Volume III
+										["title"] = "|cFFFFFFFFVolume III|r | New Hearthglen in Northrend.",
+										["description"] = "Book is on a bookshelf in the Library Wing (left side) of the cloister - Ground level - Entrance at 72,73.\n\nWorld Spawn - might be on cooldown (60 Minutes Respawn)",
+										["icon"] = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",
+										["coord"] = { 73.0, 72.0 },
+									}),
+									q(44344, {	-- Volume IV
+										["title"] = "|cFFFFFFFFVolume IV|r | Bookshelf to the left of Meridelle Lightspark in the Class Order Hall. ",
+										["description"] = "This is fairly easy, on the left side of Meridelle Lightspark (whom is also selling your Priest Set) there is a shelf. On the lower board, there are some stacked books, on the right side of them you'll find it.\n\nWorld Spawn - might be on cooldown!",
+										["qg"] = 112401,	-- Meridelle Lightspark <Logistics>
+										["coord"] = { 39.0, 24.6 },
+									}),
+									q(44343, {	-- Volume V
+										["title"] = "|cFFFFFFFFVolume V|r | Chillheart's room in Scholomance.",
+										["description"] = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trashpack on the right side. The book is on the 6th bookshelve from the right.",
+										["qg"] = 58633,	-- Instructor Chillheart
+										["coord"] = { 62.2, 60.4 },
+									}),
+									q(44342, {	-- Volume VI
+										["title"] = "|cFFFFFFFFVolume VI|r | Archivist Inkforge in the class order hall.",
+										["description"] = "For the Archivist you need to talk to him. Always choose the middle answer (passive curious, not judging) and he will give you the first Page.",
+										["qg"] = 111119,	-- Archivist Inkforge
+										["coord"] = { 62.6, 37.0 },
+									}),
+									q(44345, {	-- Volume VII
+										["title"] = "|cFFFFFFFFVolume VII|r | The Flameweaver's library in Scarlet Halls.",
+										["description"] = "Run through the instance, kill Flameweaver Koegler. on the left hand side of the room there's a table with a tri-candle. On the bench between the table and the bookshelve you will find volume 7.",
+										["qg"] = 59150,	-- Flameweaver Koegler
+										["coord"] = { 39.3, 15.6 },
+									}),
+									q(44350, {	-- Volume VIII
+										["title"] = "|cFFFFFFFFVolume VIII|r | A rare in the cave south-west of Halls of Valor in Stormheim (Inquisitor Ernstenbok).",
+										["description"] = "You must kill him after you have at least one of the books in your inventory and he will drop the book.\n\nIf several kill the mob, only one Priest is able to loot the book!",
+										["qg"] = 90139,	-- Inquisitor Ernstenbok
+										["coord"] = { 63.6, 74.6 },
+									}),
+									q(44347, {	-- Volume IX
+										["title"] = "|cFFFFFFFFVolume IX|r | Artificer Lothaire in Moon Guard Stronghold, Suramar.",
+										["description"] = "You must kill him after you have at least one of the books in your inventory and he will drop the book.\n\nIf several kill the mob, only one Priest is able to loot the book!",
+										["qg"] = 106351,	-- Artificer Lothaire
+										["coord"] = { 33.8, 15.0 },
+									}),
+									q(44348, {	-- Volume X
+										["title"] = "|cFFFFFFFFVolume X|r | Black Rook Hold in corner of room with ghosts and bookshelves.",
+										["description"] = "After defeating the first boss, you will get into the Map-Room with a large setup in the middle. Head along the left side, the book is on one of the tables.",
+										["qg"] = 98542,	-- Amalgam of Souls
+										["coord"] = { 39.1, 61.4 },
+									}),
+									q(44349, {	-- Volume XI
+										["title"] = "|cFFFFFFFFVolume XI|r | Guardian's Library in old Karazhan.",
+										["description"] = "After the Curator jump down to the right, head straight into the first alley / nook. There is a tapestry and 3 bookshelves below. On the left bookshelf socket lies Chapter 11.",
+										["qg"] = 15691,	-- The Curator
+										["coord"] = { 48.6, 70.5 },
+									}),
+									q(44346, {	-- Volume XII
+										["title"] = "|cFFFFFFFFVolume XII|r | Chief Bitterbrine on the Queen's Reprisal in Azsuna.",
+										["description"] = "Fly to the Shakle's Den and head East.\n\nIf several kill the mob, only one Priest is able to loot the book!",
+										["qg"] = 106990,	-- Chief Bitterbrine
+										["coord"] = { 65.6, 56.8 },
+									}),
+									i(139567, {	-- Writings of the End
+										["description"] = "In order to get this item, you must gather all 12 of the Volumes. Turn on \"Show Incomplete Quests\" to track your progress.",
+										["groups"] = {
+											artifact(738), -- Discipline Priest Hidden Artifact Skin
+										},
+									}),
+								},
+							}),
 						}),
 						qg(110564, q(43390, {	-- Forgotten Shadows
 							["groups"] = {
