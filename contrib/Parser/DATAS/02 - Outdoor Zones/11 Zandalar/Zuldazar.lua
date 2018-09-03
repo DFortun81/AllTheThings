@@ -8,6 +8,36 @@ _.Zones =
 			["groups"] = {
 				n(-4, {	-- Achievements
 					["groups"] = {
+						ach(13036, {	-- A Loa of a Tale
+							{
+								["criteriaID"] = 3,	-- Tales of de Loa: Gonk
+								["coord"] = { 51.7, 28.3 },
+							},
+							{
+								["criteriaID"] = 4,	-- Tales of de Loa: Gral
+								["coord"] = { 75.5, 67.6 },
+							},
+							{
+								["criteriaID"] = 6,	-- Tales of de Loa: Jani
+								["coord"] = {48.6, 54.6 },
+							},
+							{
+								["criteriaID"] = 9,	-- Tales of de Loa: Pa'ku
+								["coord"] = { 49.0, 41.3 },
+							},
+							{
+								["criteriaID"] = 10, -- Tales of de Loa: Rezan
+								["coord"] = { 43.8, 76.7 }
+							},
+							{
+								["criteriaID"] = 12, -- Tales of de Loa: Shadra
+								["coord"] = { 47.8, 28.9 },
+							},
+							{
+								["criteriaID"] = 13, -- Tales of de Loa: Torcali
+								["coord"] = { 67.3, 17.7 },
+							},
+						}),
 						ach(12482, {	-- Get Hek'd
 							["g"] = {
 								{	-- Golden Ravasaur Egg

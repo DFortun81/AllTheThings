@@ -8,6 +8,20 @@ _.Zones =
 			["groups"] = {
 				n(-4, {	-- Achievements
 					["groups"] = {
+						ach(13036, {	-- A Loa of a Tale
+							{
+								["criteriaID"] = 1,	-- Tales of de Loa: Akunda
+								["coord"] = { 42.2, 62.0 },
+							},
+							{
+								["criteriaID"] = 7,	-- Tales of de Loa: Kimbul
+								["coord"] = { 27.7, 62.1 },
+							},
+							{
+								["criteriaID"] = 11, -- Tales of de Loa: Sethraliss
+								["coord"] = { 49.6, 24.5 },
+							},
+						}),
 						ach(12482, {	-- Get Hek'd
 							["g"] = {
 								{	-- Charged Ranishu Antennae

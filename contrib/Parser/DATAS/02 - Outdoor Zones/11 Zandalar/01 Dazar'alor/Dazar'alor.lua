@@ -9,6 +9,12 @@ _.Zones =
 			["groups"] = {
 				n(-4, {		-- Achievements
 					["groups"] = {
+						ach(13036, {	-- A Loa of a Tale
+							{
+								["criteriaID"] = 15, -- Tales of de Loa: Zandalar
+								["coord"] = { 53.4, 9.5 },
+							},
+						}),
 						ach(12740, {	-- Full of Scrap!
 							ach(12739),		-- Scraptastic!
 							ach(12738),		-- Holy Scrap!

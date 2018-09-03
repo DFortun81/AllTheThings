@@ -8,6 +8,24 @@ _.Zones =
 			["groups"] = {
 				n(-4, {	-- Achievements
 					["groups"] = {
+						ach(13036, {	-- A Loa of a Tale
+							{
+								["criteriaID"] = 2,	-- Tales of de Loa: Bwonsamdi
+								["coord"] = { 39.1, 38.6 },
+							},
+							{
+								["criteriaID"] = 5,	-- Tales of de Loa: Hir'eek
+								["coord"] = { 39.6, 54.6 },
+							},
+							{
+								["criteriaID"] = 8,	-- Tales of de Loa: Krag'wa
+								["coord"] = { 58.9, 48.7 },
+							},
+							{
+								["criteriaID"] = 14, -- Tales of de Loa: Torga
+								["coord"] = { 72.8, 7.6 },
+							},
+						}),
 						ach(12588, {	-- Eat Your Greens
 							-- Add more coordinates when full object data is available on wowhead.
 							o(291233, {	-- Saurolisk Tail
