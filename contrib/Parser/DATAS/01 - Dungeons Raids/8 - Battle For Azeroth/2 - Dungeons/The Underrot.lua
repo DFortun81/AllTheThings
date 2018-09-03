@@ -54,7 +54,7 @@ _.Instances =
 									i(159384),	-- Corpuscular Greaves
 									i(159338),	-- Pustule Bearer's Pants
 									i(159270),	-- Blood Warder's Moccasins
-									i(159262),	-- Lingering Sporepods
+									i(159626),	-- Lingering Sporepods
 								}),
 								["crs"] = {
 									131383, -- Sporecaller Zancha
@@ -122,7 +122,7 @@ _.Instances =
 									i(159384),	-- Corpuscular Greaves
 									i(159338),	-- Pustule Bearer's Pants
 									i(159270),	-- Blood Warder's Moccasins
-									i(159262),	-- Lingering Sporepods
+									i(159626),	-- Lingering Sporepods
 								},
 								["crs"] = {
 									131383, -- Sporecaller Zancha
@@ -193,7 +193,7 @@ _.Instances =
 									i(159384),	-- Corpuscular Greaves
 									i(159338),	-- Pustule Bearer's Pants
 									i(159270),	-- Blood Warder's Moccasins
-									i(159262),	-- Lingering Sporepods
+									i(159626),	-- Lingering Sporepods
 								},
 								["crs"] = {
 									131383, -- Sporecaller Zancha
