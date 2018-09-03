@@ -7,13 +7,16 @@ _.ExpansionFeatures =
 		["groups"] = {
 			cl(1, { -- Skyhold -- Warrior
 				["groups"] = {
-					i(141069, {	-- Skyhold Chest of Glory
-						["groups"] = {
-							i(140160), -- Stormforged Vrykul Horn
-						},
-						["lvl"] = 103,
-						["classes"]  = {1},
-						["description"] = "\nThe chests spawn every 3 hours in the Arena of Glory, starting at 0:00 Realm Time or 02:00 Realm Time if Daylight Savings Time is active. You must research the 2nd tier order hall upgrade |cFFFFD700For Honor and Glory|r from Einar the Runecaster to see the chest. You can only loot it once a week.\n",
+					gt(408, {	-- For Honor and Glory
+						i(141069, {	-- Skyhold Chest of Riches
+							["groups"] = {
+								i(140160),	-- Stormforged Vrykul Horn
+								i(140161),	-- Hargal's Favorite Trinket
+							},
+							["lvl"] = 103,
+							["classes"]  = {1},
+							["description"] = "\nThe chests spawn every 3 hours in the Arena of Glory, starting at 0:00 Realm Time or 02:00 Realm Time if Daylight Savings Time is active. You must research the 2nd tier order hall upgrade |cFFFFD700For Honor and Glory|r from Einar the Runecaster to see the chest. You can only loot it once a week.\n",
+						}),
 					}),
 					n(97389, { -- Eye of Odin
 						["groups"] = {
@@ -133,6 +136,40 @@ _.ExpansionFeatures =
 						h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 					}),
 					n(-17, { -- Quests
+						i(144436, {	-- Lost Legend of Odyn
+							["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
+							["groups"] = {
+								desc(q(46223), "Great Odyn and the Firelord"),	-- Odyn Lore Unlock 1
+								desc(q(46224), "The Wanderer and the Serpent"),	-- Odyn Lore Unlock 2
+								desc(q(46225), "Halls of Gold and Glory"),	-- Odyn Lore Unlock 3
+								desc(q(46226), "The Keeper's Eye"),	-- Odyn Lore Unlock 4
+								desc(q(46227), "First of the Val'kyr"),	-- Odyn Lore Unlock 5
+								desc(q(46228), "The Sealing of the Halls of Valor"),	-- Odyn Lore Unlock 6
+							}
+						}),
+						i(144437, {	-- Lost Legend of the Valarjar
+							["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
+							["groups"] = {
+								desc(q(46229), "His Name Is Dragonblood"),	-- Valarjar Lore Unlock 1
+								desc(q(46230), "The Last Words of Asgrim the Dreadkiller"),	-- Valarjar Lore Unlock 2
+								desc(q(46231), "A Shieldmaiden's Creed"),	-- Valarjar Lore Unlock 3
+								desc(q(46232), "The Prophecy of Rythas the Oracle"),	-- Valarjar Lore Unlock 4
+								desc(q(46233), "The Lessons of the Blackfist"),	-- Valarjar Lore Unlock 5
+								desc(q(46234), "Volund's Folly"),	-- Valarjar Lore Unlock 6
+							}
+						}),
+						q(43643, {	-- Secrets of the Axes
+							["description"] = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
+							["qg"] = 96586,	-- Master Smith Helgar
+							["groups"] = {
+								i(139578, {	-- The Arcanite Bladebreaker
+									artifact(908), -- Arms Warrior Hidden Artifact Skin
+								}),
+							},
+						}),
+						
+						
+						-- NASTY QUEST LIST
 						q(44057),	-- A "Noble" Event
 						q(45128),	-- A Glorious Reunion
 						q(46208),	-- A Godly Invitation
@@ -168,28 +205,7 @@ _.ExpansionFeatures =
 						q(45987),	-- Investigate the Broken Shore
 						q(42204),	-- Jorhuttam
 						q(39191),	-- Legacy of the Icebreaker
-						i(144436, {	-- Lost Legend of Odyn
-							["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
-							["groups"] = {
-								desc(q(46223), "Great Odyn and the Firelord"),	-- Odyn Lore Unlock 1
-								desc(q(46224), "The Wanderer and the Serpent"),	-- Odyn Lore Unlock 2
-								desc(q(46225), "Halls of Gold and Glory"),	-- Odyn Lore Unlock 3
-								desc(q(46226), "The Keeper's Eye"),	-- Odyn Lore Unlock 4
-								desc(q(46227), "First of the Val'kyr"),	-- Odyn Lore Unlock 5
-								desc(q(46228), "The Sealing of the Halls of Valor"),	-- Odyn Lore Unlock 6
-							}
-						}),
-						i(144437, {	-- Lost Legend of the Valarjar
-							["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
-							["groups"] = {
-								desc(q(46229), "His Name Is Dragonblood"),	-- Valarjar Lore Unlock 1
-								desc(q(46230), "The Last Words of Asgrim the Dreadkiller"),	-- Valarjar Lore Unlock 2
-								desc(q(46231), "A Shieldmaiden's Creed"),	-- Valarjar Lore Unlock 3
-								desc(q(46232), "The Prophecy of Rythas the Oracle"),	-- Valarjar Lore Unlock 4
-								desc(q(46233), "The Lessons of the Blackfist"),	-- Valarjar Lore Unlock 5
-								desc(q(46234), "Volund's Folly"),	-- Valarjar Lore Unlock 6
-							}
-						}),
+						
 						q(44267),	-- Maw of Souls
 						q(43586),	-- Maw of Souls: Message to Helya
 						q(43604),	-- Maw of Souls: Ymiron's Broken Blade
@@ -211,7 +227,6 @@ _.ExpansionFeatures =
 						q(44917),	-- Return to Karazhan: The Tower of Power
 						qa( 42815),	-- Return to the Broken Shore
 						qh( 38904),	-- Return to the Broken Shore
-						q(43643),	-- Secrets of the Axes
 						q(42651),	-- Svergan's Promise
 						q(46173),	-- Tactical Planning
 						q(44263),	-- The Arcway

@@ -4653,6 +4653,13 @@ app.BaseQuest = {
 						return L("NPC_ID_NAMES")[t.npcID];
 					end
 				end
+				if t.title then
+					rawset(t, "text", t.title);
+					t.title = nil;
+					return t.text;
+				else
+					t.title = "Failed to acquire information. This quest may have been removed from the game.";
+				end
 				return "|Hquest:" .. t.questID .. "|h[Quest #" .. t.questID .. "*]|h";
 			else
 				t.retries = (t.retries or 0) + 1;

@@ -177,14 +177,16 @@ _.GearSets =
 						["modelScale"] = 0.95,
 						["modelRotation"] = 45,
 						["groups"] = {
-							{
-								["artifactID"] = 964,	-- Find Hidden Artifact Skin
-								["groups"] = {
-									i(140660),	-- Haft of the God-King
-									i(140658),	-- Skull of Nithogg
-									i(140659),	-- Skull of Shar'thos
+							i(139579, {	-- The Dragonslayers
+								{
+									["artifactID"] = 964,	-- Find Hidden Artifact Skin
+									["groups"] = {
+										i(140660),	-- Haft of the God-King
+										i(140658),	-- Skull of Nithogg
+										i(140659),	-- Skull of Shar'thos
+									},
 								},
-							},
+							}),
 							artifact(962), -- Complete 30 Legion Dungeons Hidden
 							artifact(961), -- Complete 200 WQ Hidden
 							artifact(963), -- Kill 1,000 Players Hidden
@@ -264,14 +266,16 @@ _.GearSets =
 						["modelScale"] = 0.95,
 						["modelRotation"] = 45,
 						["groups"] = {
-							{
-								["artifactID"] = 964,	-- Find Hidden Artifact Skin
-								["groups"] = {
-									i(140660),	-- Haft of the God-King
-									i(140658),	-- Skull of Nithogg
-									i(140659),	-- Skull of Shar'thos
+							i(139579, {	-- The Dragonslayers
+								{
+									["artifactID"] = 964,	-- Find Hidden Artifact Skin
+									["groups"] = {
+										i(140660),	-- Haft of the God-King
+										i(140658),	-- Skull of Nithogg
+										i(140659),	-- Skull of Shar'thos
+									},
 								},
-							},
+							}),
 							artifact(962), -- Complete 30 Legion Dungeons Hidden
 							artifact(961), -- Complete 200 WQ Hidden
 							artifact(963), -- Kill 1,000 Players Hidden
