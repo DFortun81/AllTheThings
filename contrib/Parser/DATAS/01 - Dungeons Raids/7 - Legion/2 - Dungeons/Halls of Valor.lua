@@ -34,6 +34,7 @@ _.Instances =
 								i(134213),	-- Tideskorn Mantle
 							})),
 							cr(95833, e(1486, {	-- Hyrja
+								i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 								i(133620),	-- Amice of the Enlightened
 								i(134196),	-- Biornskin Hood
 								i(134219),	-- Bonespeaker Robes
@@ -102,6 +103,7 @@ _.Instances =
 								i(134213),	-- Tideskorn Mantle
 							})),
 							cr(95833, e(1486, {	-- Hyrja
+								i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 								i(133620),	-- Amice of the Enlightened
 								i(134196),	-- Biornskin Hood
 								i(134219),	-- Bonespeaker Robes
@@ -174,6 +176,7 @@ _.Instances =
 								i(134213),	-- Tideskorn Mantle
 							})),
 							cr(95833, e(1486, {	-- Hyrja
+								i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 								i(133620),	-- Amice of the Enlightened
 								i(134196),	-- Biornskin Hood
 								i(134219),	-- Bonespeaker Robes

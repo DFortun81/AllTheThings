@@ -1653,7 +1653,15 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-									artifact(910), -- Find Hidden Artifact Skin
+									i(139568, {	-- Staff of the Lightborn
+										{
+											["artifactID"] = 910,	-- Find Hidden Artifact Skin
+											["groups"] = {
+												i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
+												i(140656), -- Rod of the Ascended - Priest Artifact Appearance item
+											},
+										},
+									}),
 									artifact(909), -- Complete 30 Legion Dungeons Hidden
 									artifact(911), -- Complete 200 WQ Hidden
 									artifact(912), -- Kill 1,000 Players Hidden

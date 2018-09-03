@@ -8,6 +8,18 @@ _.Instances =
 		["groups"] = {
 			inst(716, {	-- Eye of Azshara
 				["groups"] = {
+					n(-100001, {	-- Artifacts
+						i(139574, {	-- Coil of the Drowned Queen (shaman appearance)
+							["description"] = "Drops from the first two bosses on any difficulty.",
+							["crs"] = {
+								91784,	-- Warlord Parjesh
+								91789,	-- Lady Hatecoil
+							},
+							["groups"] = {
+								artifact(926), -- Resto Shaman Hidden Artifact Skin
+							},
+						}),
+					}),
 					n(-17, {	-- Quests
 						o(106780, {	-- Tidestone of Golganneth
 							q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
@@ -24,7 +36,6 @@ _.Instances =
 					d(1, {	-- Normal
 						["groups"] = {
 							cr(91784, e(1480, {	-- Warlord Parjesh
-								i(139574),	-- Coil of the Drowned Queen (shaman appearance)
 								i(134240),	-- Brinewashed Leather Cowl
 								i(134223),	-- Coralplate Chestguard
 								i(134484),	-- Crestrider Conduit Bracers
@@ -94,7 +105,6 @@ _.Instances =
 						["lvl"] = 110,
 						["groups"] = {
 							cr(91784, e(1480, {	-- Warlord Parjesh
-								i(139574),	-- Coil of the Drowned Queen (shaman appearance)
 								i(134240),	-- Brinewashed Leather Cowl
 								i(134223),	-- Coralplate Chestguard
 								i(134484),	-- Crestrider Conduit Bracers
@@ -165,7 +175,6 @@ _.Instances =
 						["groups"] = {
 							cr(91784, e(1480, {	-- Warlord Parjesh
 								ach(10456),	-- But Y ou Say He's Just a Friend
-								i(139574),	-- Coil of the Drowned Queen (shaman appearance)
 								i(134240),	-- Brinewashed Leather Cowl
 								i(134223),	-- Coralplate Chestguard
 								i(134484),	-- Crestrider Conduit Bracers

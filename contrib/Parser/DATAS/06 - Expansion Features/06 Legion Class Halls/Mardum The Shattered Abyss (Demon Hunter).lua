@@ -8,13 +8,8 @@ _.ExpansionFeatures =
 			cl(12, { -- Mardum, The Shattered Abyss -- Demon Hunter
 				["groups"] = {
 					n(-498, { -- Twisting Nether Class Hall Ability
-						["groups"] = {
-							i(139550, {	-- Bulwark of the Iron Warden [Hidden Artifact Appearance]
-								artifact(571), -- Find Hidden Artifact Skin
-							}),
-							i(136900), -- Hateful Eye Pet
-						},
 						["questID"] = 44707,
+						["lvl"] = 105,
 						["crs"] = {
 							112385,	-- Argothel
 							112380,	-- Balzorok
@@ -36,6 +31,12 @@ _.ExpansionFeatures =
 							112379,	-- Rek'zelok
 							112388,	-- Thel'draz
 							112375,	-- Zaldrok
+						},
+						["groups"] = {
+							i(139550, {	-- Bulwark of the Iron Warden [Hidden Artifact Appearance]
+								artifact(571), -- Find Hidden Artifact Skin
+							}),
+							i(136900), -- Hateful Eye Pet
 						},
 					}),
 					n(-4, {	-- Achievements

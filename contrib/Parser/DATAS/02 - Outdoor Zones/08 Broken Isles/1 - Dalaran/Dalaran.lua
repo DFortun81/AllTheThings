@@ -7946,6 +7946,36 @@ _.Zones =
 							}),
 						}),
 					}),
+					n(0, { 		-- Zone Drops
+						i(139572, {	-- Lost Codex of the Amani
+							["crs"] = {
+								97380,	-- Splint
+								97387,	-- Mana Seeper
+								97587,	-- Crazed Mage
+								97390,	-- Thieving Scoundrel
+								97388,	-- Xullorax
+								97381,	-- Screek
+								97384,	-- Segacedi
+							},
+							["groups"] = {
+								artifact(900), --  Hidden Artifact Skin
+							},
+						}),
+						i(139570, {	-- The Cypher of Broken Bone
+							["crs"] = {
+								97380,	-- Splint
+								97387,	-- Mana Seeper
+								97587,	-- Crazed Mage
+								97390,	-- Thieving Scoundrel
+								97388,	-- Xullorax
+								97381,	-- Screek
+								97384,	-- Segacedi
+							},
+							["groups"] = {
+								artifact(611), -- Assassination Rogue Hidden Artifact Skin
+							},
+						}),
+					}),
 				}),	
 				n(-40, {    -- Legacy
 					["groups"] = {

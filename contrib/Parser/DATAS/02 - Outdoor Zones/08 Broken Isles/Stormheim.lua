@@ -6,6 +6,28 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(634, {	-- Stormheim
 			["groups"] = {
+				n(-100001, {	-- Artifacts
+					q(43560, {	-- Audience with the Windlord
+						["qg"] = 92218, -- Thrymjaris <Mother of the Thorignir>
+						["classes"] = { 4 },	-- Rogue Only
+						["sourceQuests"] = { 43558 },	-- Bindings of the Windlord
+						["groups"] = {
+							i(139536, {	-- Emanation of the Winds
+								artifact(881), -- Outlaw Rogue Hidden Artifact Skin
+							}),
+						},
+					}),
+					q(43558, {	-- Bindings of the Windlord
+						["description"] = "You need to first collect the two bindings and then be in Outlaw spec to get this quest.",
+						["qg"] = 92218, -- Thrymjaris <Mother of the Thorignir>
+						["classes"] = { 4 },	-- Rogue Only
+						["sourceQuests"] = { 39652 },	-- Where Dragons Rule
+						["groups"] = {
+							i(139468),	-- Bindings of the Windlord
+							i(139466),	-- Bindings of the Windlord
+						},
+					}),
+				}),
 				n(-169, { 	-- Emissary Quests
 					q(42234, { -- The Valarjar
 						["groups"] = {
@@ -1261,7 +1283,6 @@ _.Zones =
 					q(42025),	-- Bareback Brawl
 					q(42397),	-- Baron and the Huntsman
 					q(46110),	-- Battle for Stormheim
-					q(43558),	-- Bindings of the Windlord
 					q(42391),	-- Bite of the Beast
 					q(40857),	-- Bits and Pieces
 					q(42650),	-- Break the Bonds
@@ -1632,6 +1653,7 @@ _.Zones =
 						i(23805),	-- Schematic: Ultra-Spectropic Detection Goggles
 					}),
 					n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
+						i(140656), -- Rod of the Ascended - Priest Artifact Appearance item
 						i(136698, { -- Recipe: Consecrated Spike
 							["groups"] = {
 								recipe(209498), -- Recipe: Consecrated Spike
@@ -1662,7 +1684,6 @@ _.Zones =
 						i(139602), -- Valarjar Runepriest's Vesture
 						i(140579), -- Valarjar Tabard
 						i(129367), -- Vrykul Toy Boat Kit
-						--i(140656), -- Rod of the Ascended - Priest Artifact Appearance item
 					}),
 				}),
 				n(-34, { 	-- World Quests

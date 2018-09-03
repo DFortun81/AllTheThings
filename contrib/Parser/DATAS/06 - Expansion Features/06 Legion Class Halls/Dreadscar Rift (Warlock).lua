@@ -108,10 +108,33 @@ _.ExpansionFeatures =
 						a(ach(10743)),	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
 						h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 					}),
-					n(-497, { 	-- Demonic Offering Class Hall Ability
-						["icon"] = "Interface\\Icons\\ability_warlock_cremation",
+					gt(366, { 	-- Demonic Offering Class Hall Ability //-497
+						--["icon"] = "Interface\\Icons\\ability_warlock_cremation",
 						["description"] = "This class hall ability allows you and two other members to summon a demon that you must kill. As part of the ritual, one of your party members (or you) will be sacrificed, so make sure to Soulstone yourself prior to summoning. Upon killing them they have a chance of dropping these items. This also has a chance to drop the destruction Hidden Appearance item.",
 						["questID"] = 42481,	-- Daily Quest
+						["lvl"] = 105,
+						["crs"] = {
+							112385,	-- Argothel
+							112380,	-- Balzorok
+							112378,	-- Dal'grozz
+							112397,	-- Dargrol
+							112376,	-- Dro'zek
+							112377,	-- Erdu'un
+							112374,	-- Firecaller Rok'duun
+							112399,	-- Gelgothar
+							112381,	-- Gelthrak
+							112396,	-- Gloth
+							112395,	-- Gurgstok
+							112391,	-- Idra'zuul
+							112384,	-- Ko'razz
+							112394,	-- Kur'zok
+							112398,	-- Maglothar
+							112387,	-- Mordrethal
+							112389,	-- Ra'thuzek
+							112379,	-- Rek'zelok
+							112388,	-- Thel'draz
+							112375,	-- Zaldrok
+						},
 						["groups"] = {
 							i(139577, { -- The Burning Jewel of Sargeras
 								artifact(207), -- Find Hidden Artifact Skin

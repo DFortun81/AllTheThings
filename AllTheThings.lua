@@ -3910,6 +3910,7 @@ app.BaseGarrisonTalent = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "saved" then
+			if t.questID then return IsQuestFlaggedCompleted(t.questID); end
 			local info = t.info;
 			if info.researched then return info.researched; end
 		elseif key == "icon" then

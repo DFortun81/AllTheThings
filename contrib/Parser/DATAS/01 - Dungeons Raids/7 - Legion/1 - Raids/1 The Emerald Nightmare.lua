@@ -126,6 +126,9 @@ _.Instances =
 								i(139219)
 							})),
 							cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
+								i(139569, {	-- Claw of N'Zoth
+									artifact(950), -- Shadow Priest Hidden Artifact Appearance
+								}),
 								i(139188),
 								i(139233),
 								i(139206),
@@ -292,6 +295,9 @@ _.Instances =
 							i(139212)
 						})),
 						cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
+							i(139569, {	-- Claw of N'Zoth
+								artifact(950), -- Shadow Priest Hidden Artifact Appearance
+							}),
 							i(139233),
 							i(139227),
 							i(139206),
@@ -464,6 +470,9 @@ _.Instances =
 							i(139212)
 						})),
 						cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
+							i(139569, {	-- Claw of N'Zoth
+								artifact(950), -- Shadow Priest Hidden Artifact Appearance
+							}),
 							i(139233),
 							i(139227),
 							i(139206),
@@ -637,6 +646,9 @@ _.Instances =
 							i(139212)
 						})),
 						cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
+							i(139569, {	-- Claw of N'Zoth
+								artifact(950), -- Shadow Priest Hidden Artifact Appearance
+							}),
 							i(139233),
 							i(139227),
 							i(139206),
