@@ -693,6 +693,7 @@ profession(164, { -- Blacksmithing
 			})),
 			recipe(19668), -- Plans: Truesilver Skeleton Key
 		}),
+		--[[
 		n(-10032, { -- Appearances
 			n(-318, { -- Armor
 				n(-582, { -- Armorsmith
@@ -848,95 +849,96 @@ profession(164, { -- Blacksmithing
 					i(12633), -- Whitesoul Helm
 				}),
 			}),
-      n(-319, { -- Weapons
-        ["groups"] = {
-          n(-578, { -- Weaponsmith
-            ["groups"] = {
-              n(-579, { -- Master Axesmith
-                ["groups"] = {
-                  i(12798), -- Annihilator
-                  i(12784), -- Arcanite Reaper
-                  i(17016), -- Dark Iron Destroyer
-                  i(12774), -- Dawn's Edge
-                  i(19169), -- Nightfall
-                },
-              }),
-              n(-580, { -- Master Hammersmith
-                ["groups"] = {
-                  i(19170), -- Ebon Hand
-                  un(8, i(12776)), -- Enchanted Battlehammer
-                  i(12796), -- Hammer of the Titans
-                  un(8, i(12794)), -- Masterwork Stormhammer
-                  i(22384), -- Persuader
-                  i(12781), -- Serenity
-                },
-              }),
-              n(-581, { -- Master Swordsmith
-                ["groups"] = {
-                  i(12790), -- Arcanite Champion
-                  i(19168), -- Blackguard
-                  i(12777), -- Blazing Rapier
-                  i(12782), -- Corruption
-                  i(17015), -- Dark Iron Reaver
-                  i(12797), -- Frostguard
-                  i(22383), -- Sageblade
-                },
-              }),
-              i(19166), -- Black Amnesty
-              i(19167), -- Blackfury
-              i(7959), -- Blight
-              i(11608), -- Dark Iron Pulverizer
-              i(11607), -- Dark Iron Sunderer
-              i(12783), -- Heartseeker
-              i(7961), -- Phantom Blade
-              un(8, i(7954)),	-- The Shatterer
-              un(8, i(7960)),	-- Truesilver Champion
-            },
-          }),
-          i(7945), -- Big Black Mace
-          i(3848), -- Big Bronze Knife
-          i(12769), -- Bleakwood Hew	
-          i(7942), -- Blue Glittering Axe
-          i(2849), -- Bronze Axe
-          i(7958), -- Bronze Battle Axe
-          i(7957), -- Bronze Greatsword
-          i(2848), -- Bronze Mace
-          i(2850), -- Bronze Shortsword
-          i(7956), -- Bronze Warhammer
-          i(3488), -- Copper Battle Axe
-          i(12802), -- Darkspear
-          i(7944), -- Dazzling Mithril Rapier
-          i(3490), -- Deadly Bronze Poniard
-          i(7947), -- Ebon Shiv
-          i(17704), -- Edge of Winter
-          i(3854), -- Frost Tiger Blade
-          i(12259), -- Glinting Steel Dagger
-          i(3852), -- Golden Iron Destroyer
-          i(3849), -- Hardened Iron Shortsword
-          i(3491), -- Heavy Bronze Mace
-          i(3487), -- Heavy Copper Broadsword
-          i(6214), -- Heavy Copper Maul
-          i(7941), -- Heavy Mithril Axe
-          i(12775), -- Huge Thorium Battleaxe
-          i(5541), -- Iridescent Hammer
-          i(3850), -- Jade Serpentblade
-          i(22198), -- Jagged Obsidian Shield
-          i(3855), -- Massive Iron Axe
-          i(3492), -- Mighty Iron Hammer
-          i(3853), -- Moonsteel Broadsword
-          i(12773), -- Ornate Thorium Handaxe
-          i(5540), -- Pearl-Handled Dagger
-          i(7946), -- Runed Mithril Hammer
-          i(12260), -- Searing Golden Blade
-          i(3856), -- Shadow Crescent Axe
-          i(3851), -- Solid Iron Maul
-          i(17193), -- Sulfuron Hammer
-          i(3489), -- Thick War Axe
-          i(12792), -- Volcanic Hammer
-          i(7943), -- Wicked Mithril Blade
-        },
+			n(-319, { -- Weapons
+				["groups"] = {
+				  n(-578, { -- Weaponsmith
+					["groups"] = {
+					  n(-579, { -- Master Axesmith
+						["groups"] = {
+						  i(12798), -- Annihilator
+						  i(12784), -- Arcanite Reaper
+						  i(17016), -- Dark Iron Destroyer
+						  i(12774), -- Dawn's Edge
+						  i(19169), -- Nightfall
+						},
+					  }),
+					  n(-580, { -- Master Hammersmith
+						["groups"] = {
+						  i(19170), -- Ebon Hand
+						  un(8, i(12776)), -- Enchanted Battlehammer
+						  i(12796), -- Hammer of the Titans
+						  un(8, i(12794)), -- Masterwork Stormhammer
+						  i(22384), -- Persuader
+						  i(12781), -- Serenity
+						},
+					  }),
+					  n(-581, { -- Master Swordsmith
+						["groups"] = {
+						  i(12790), -- Arcanite Champion
+						  i(19168), -- Blackguard
+						  i(12777), -- Blazing Rapier
+						  i(12782), -- Corruption
+						  i(17015), -- Dark Iron Reaver
+						  i(12797), -- Frostguard
+						  i(22383), -- Sageblade
+						},
+					  }),
+					  i(19166), -- Black Amnesty
+					  i(19167), -- Blackfury
+					  i(7959), -- Blight
+					  i(11608), -- Dark Iron Pulverizer
+					  i(11607), -- Dark Iron Sunderer
+					  i(12783), -- Heartseeker
+					  i(7961), -- Phantom Blade
+					  un(8, i(7954)),	-- The Shatterer
+					  un(8, i(7960)),	-- Truesilver Champion
+					},
+			  }),
+			  i(7945), -- Big Black Mace
+			  i(3848), -- Big Bronze Knife
+			  i(12769), -- Bleakwood Hew	
+			  i(7942), -- Blue Glittering Axe
+			  i(2849), -- Bronze Axe
+			  i(7958), -- Bronze Battle Axe
+			  i(7957), -- Bronze Greatsword
+			  i(2848), -- Bronze Mace
+			  i(2850), -- Bronze Shortsword
+			  i(7956), -- Bronze Warhammer
+			  i(3488), -- Copper Battle Axe
+			  i(12802), -- Darkspear
+			  i(7944), -- Dazzling Mithril Rapier
+			  i(3490), -- Deadly Bronze Poniard
+			  i(7947), -- Ebon Shiv
+			  i(17704), -- Edge of Winter
+			  i(3854), -- Frost Tiger Blade
+			  i(12259), -- Glinting Steel Dagger
+			  i(3852), -- Golden Iron Destroyer
+			  i(3849), -- Hardened Iron Shortsword
+			  i(3491), -- Heavy Bronze Mace
+			  i(3487), -- Heavy Copper Broadsword
+			  i(6214), -- Heavy Copper Maul
+			  i(7941), -- Heavy Mithril Axe
+			  i(12775), -- Huge Thorium Battleaxe
+			  i(5541), -- Iridescent Hammer
+			  i(3850), -- Jade Serpentblade
+			  i(22198), -- Jagged Obsidian Shield
+			  i(3855), -- Massive Iron Axe
+			  i(3492), -- Mighty Iron Hammer
+			  i(3853), -- Moonsteel Broadsword
+			  i(12773), -- Ornate Thorium Handaxe
+			  i(5540), -- Pearl-Handled Dagger
+			  i(7946), -- Runed Mithril Hammer
+			  i(12260), -- Searing Golden Blade
+			  i(3856), -- Shadow Crescent Axe
+			  i(3851), -- Solid Iron Maul
+			  i(17193), -- Sulfuron Hammer
+			  i(3489), -- Thick War Axe
+			  i(12792), -- Volcanic Hammer
+			  i(7943), -- Wicked Mithril Blade
+			},
+				}),
 			}),
-		}),
+		--]]
 	}),
 	tier(2, { -- The Burning Crusade
 		--[[n(-2, { -- Vendors
@@ -1195,6 +1197,7 @@ profession(164, { -- Blacksmithing
 			})),
 			recipe(32284), -- Plans: Lesser Rune of Warding
 		}),
+		--[[
 		n(-10032, { -- Appearances
 			n(-318, { -- Armor
 				n(-582, { -- Armorsmith
@@ -1357,6 +1360,7 @@ profession(164, { -- Blacksmithing
 				i(30077), -- Windforged Rapier
 			}),
 		}),
+		--]]
 	}),
 	tier(3, { -- Wrath of the Lich King
 		--[[n(-2, { -- Vendors
@@ -1539,6 +1543,7 @@ profession(164, { -- Blacksmithing
 			recipe(63182), -- Plans: Titansteel Spellblade
 			recipe(55298), -- Plans: Vengeance Bindings
 		}),
+		--[[
 		n(-10032, { -- Appearances
 			n(-318, { -- Armor
 				un(5, i(41189)), -- Chestplate of Conquest
@@ -1663,6 +1668,7 @@ profession(164, { -- Blacksmithing
 				i(45085), -- Titansteel Spellblade
 			}),
 		}),
+		--]]
 	}),
 	tier(4, { -- Cataclysm
 		--[[n(-2, { -- Vendors
@@ -2224,6 +2230,7 @@ profession(164, { -- Blacksmithing
 			recipe(76293), -- Plans: Stormforged Shield
 			recipe(76286), -- Plans: Stormforged Shoulders
 		}),
+		--[[
 		n(-10032, { -- Appearances
 			n(-318, { -- Armor
 				i(71992), -- Bracers of Destructive Strength
@@ -2313,6 +2320,7 @@ profession(164, { -- Blacksmithing
 				i(70165), -- Witch-Hunter's Harvester
 			}),
 		}),
+		--]]
 	}),
 	tier(5, { -- Mists of Pandaria
 		--[[n(-2, { -- Vendors
@@ -2595,6 +2603,7 @@ profession(164, { -- Blacksmithing
 				}),
 			}),
 		}),]]--
+		--[[
 		n(-10032, { -- Appearances
 			n(-318, { -- Armor
 				i(98607), -- Avenger's Trillium Legplates
@@ -2776,6 +2785,7 @@ profession(164, { -- Blacksmithing
 				}),
 			}),
 		}),
+		--]]
 	}),
 	tier(6, { -- Warlords of Draenor
 		gb(118, { -- The Forge
@@ -2926,6 +2936,7 @@ profession(164, { -- Blacksmithing
 				["requireSkill"] = 164, -- Blacksmithing
 			}),
 		}),]]--
+		--[[
 		n(-10032, { -- Appearances
 			n(-318, { -- Armor
 				i(116426), -- Smoldering Helm
@@ -2954,6 +2965,7 @@ profession(164, { -- Blacksmithing
 				}),
 			}),
 		}),
+		--]]
 	}),
 	tier(7, { -- Legion
 		--[[n(-2, { -- Vendors
@@ -3222,6 +3234,7 @@ profession(164, { -- Blacksmithing
 				}),
 			}),
 		}),]]--
+		--[[
 		n(-10032, { -- Appearances
 			n(-318, { -- Armor
 				i(123917), -- Demonsteel Armguards
@@ -3244,8 +3257,10 @@ profession(164, { -- Blacksmithing
 				i(146667), -- Rethu's Incessant Courage
 			}),
 		}),
+		--]]
 	}),
 	tier(8, { -- Battle for Azeroth
+		--[[
 		n(-2, { -- Vendors
 			n(135447, { -- Ransa Greyfeather (Zuldazar)
 				["groups"] = {
@@ -3256,7 +3271,7 @@ profession(164, { -- Blacksmithing
 				},
 				["races"] = HORDE_ONLY,
 			}),
-      n(135446, { -- Vindicator Jaelanna (Tiragarde Sound)
+		n(135446, { -- Vindicator Jaelanna (Tiragarde Sound)
 				["groups"] = {
 					i(162707), -- Recipe: Stormsteel Dagger (Rank 3)
 					i(162774), -- Recipe: Stormsteel Saber (Rank 3)
@@ -3266,6 +3281,7 @@ profession(164, { -- Blacksmithing
 				["races"] = ALLIANCE_ONLY,
 			}),
 		}),
+		--]]
 		filter(200, { -- Recipes
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
 			recipe(253192, { ["spellID"] = 253192, }),	-- Emblazoned Stormsteel Girdle
@@ -3353,14 +3369,6 @@ profession(164, { -- Blacksmithing
 			}),
 		}),
 	}),
-
-		n(-10032, { -- Appearances
-			n(-318, { -- Armor
-			}),
-			n(-319, { -- Weapons
-			}),
-		}),
-	--]]
 	n(-40, { -- Legacy
 		un(1, filter(200, { -- Recipes
 			un(2, i(12818)), -- Plans: Inlaid Thorium Hammer
