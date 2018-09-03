@@ -767,6 +767,12 @@ _.Zones =
 								i(140495, { -- Torn Invitation [Fox Mount Quest]
 									i(137573), -- Reins of the Llothien Prowler
 								}),
+								i(139565, {	-- Spark of the Fallen Exarch [Protection Paladin Hidden Artifact Appearance]
+									artifact(720), -- Find Hidden Artifact Skin
+								}),
+								i(139563, {	-- The Stormfist [Windwalker Monk Hidden Artifact Appearance]
+									artifact(527), -- Find Hidden Artifact Skin
+								}),
 								i(139546, {	-- Twisting Anima of Souls [Death Knight Hidden Artifact Appearance]
 									artifact(921), -- Find Hidden Artifact Skin
 								}),

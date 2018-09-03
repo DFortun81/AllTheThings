@@ -6,6 +6,11 @@ _.PVP =
 	n(-304, {	-- Battlegrounds
 		m(91 , {	-- Alterac Valley
 			["groups"] = {
+				n(  0, {	-- Zone Drop
+					i(18229, {	-- Nat Pagle's Guide to Extreme Anglin'
+						["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nLooted from Player Corpses in Alterac Valley.",
+					}),
+				}),
 				n(13419, { -- Ivus the Forest Lord
 					["groups"] = {
 						i(19110, { -- Cold Forged Blade

@@ -109,6 +109,9 @@ _.ExpansionFeatures =
 						h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 					}),
 					n(-17, { -- Quests
+						q(44250, { -- Champion of the Light
+							i(139693), -- Crown of the Silver Hand
+						}),
 						q(45770, { -- Stirring in the Shadows
 							["groups"] = {
 								i(143502), -- Highlord's Golden Charge
@@ -116,33 +119,29 @@ _.ExpansionFeatures =
 							["lvl"] = 110,
 							["classes"] = {2},
 						}),
-						q(44250, { -- Champion of the Light
-							i(139693), -- Crown of the Silver Hand
+						q(42005, {	--  The End of the Saga [Moved from Howling Fjord]
+							["lvl"] = 98,
+							["qg"] = 105724,	-- Orik Trueheart
+						}),
+						q(46071, {	-- The Hammer of Dalaran
+							["qg"] = 90250, -- Lord Grayson Shadowbreaker
+							["sourceQuests"] = { 46070 }, -- Preparations Underway
+						}),
+						q(43687, { -- Walking in the Shadows (Artifact Appearance)
+							["qg"] = 90259,	-- Lord Maxwell Tyrosus
+							["description"] = "You must have the Shard of Darkness in your inventory in order for him to give you this quest. Once you have it, go to the Legion version of Acherus: The Ebon Hold using the Dalaran flight master.",
+							["sourceQuests"] = { 43685 }, -- Phylactery Used
+							["groups"] = {
+								i(139566, { -- Heart of Corruption
+									artifact(865), -- Retribution Hidden Artifact Appearance
+								}),
+							},
 						}),
 						q(43697, { -- Warriors of the Light
 							i(139690), -- Breastplate of the Silver Hand
 						}),
 						q(43541, { -- United As One
 							i(139697), -- Bindings of the Silver Hand
-						}),
-						q(42005, {	--  The End of the Saga [Moved from Howling Fjord]
-							["groups"] = {
-							},
-							["lvl"] = 98,
-							["qg"] = 105724,	-- Orik Trueheart
-						}),
-						--[[ Artifact Appearance  Quests Commented Out For Now
-						q(43687, { -- Walking in the Shadows (Artifact Appearance)
-							i(139566), -- Heart of Corruption
-							sp(220701, { i(139566) }), -- Heart of  Corruption
-						}),
-						q(43424, { -- A Hero's Weapon
-							sp(219663) -- Heroic Weapons [No item associated]
-						}),
-						--]]
-						q(46071, {	-- The Hammer of Dalaran
-							["qg"] = 90250, -- Lord Grayson Shadowbreaker
-							["sourceQuests"] = { 46070 }, -- Preparations Underway
 						}),
 					}),
 					n(93787, { -- Scouting Map
@@ -188,6 +187,19 @@ _.ExpansionFeatures =
 							i(140558), -- Greatsword of the Silver Hand
 							i(140547), -- Warhammer of the Silver Hand
 						}),		
+						n(91190, {	-- Sister Elda <Keeper of the Ancient Tomes>
+							["description"] = "Your spec must be Retribution for her to respond to your books. Bring both of the books to her and she'll give you the completed book to use in the next part.",
+							["groups"] = {
+								i(139620, {	-- A Complete Copy of "Nat Pagle's Guide to Extreme Anglin'."
+									i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
+										["description"] = "Looted from A Dusty Tome in Dire Maul.",
+									}),
+									i(18229, {	-- Nat Pagle's Guide to Extreme Anglin'
+										["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nLooted from Player Corpses in Alterac Valley.",
+									}),
+								}),
+							},
+						}),
 					}),
 				},
 				["mapID"] = 24, -- Light's Hope Chapel: Sanctum of Light

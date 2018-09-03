@@ -913,7 +913,22 @@ _.Zones =
 				}),
 				n(0, {	-- Zone Drop
 					["groups"] = {
-						
+						i(139564, {	-- Lost Edicts of the Watcher
+							["crs"] = {
+								121531,	-- Felscarred Destroyer
+								123422,	-- Felsiege Champion
+								127597,	-- Eredar War-Mind
+								119533,	-- Felsiege Doomcaller
+								119597,	-- Felsiege Champion
+								123421,	-- Felsiege Doomcaller
+								120704,	-- Annihilan Warden
+								124435,	-- Antoran Fiendmaster
+								120395,	-- Eredar Conqueror
+							},
+							["groups"] = {
+								artifact(977), -- Holy Paladin Hidden Artifact Appearance
+							},
+						}),
 						n(-318, { -- Armor
 							i(152740, { -- Unsullied Cloak
 								i(152778), -- Conservatory Ward's Drape

@@ -6093,23 +6093,31 @@ local function CreateMiniListForGroup(group)
 			while sourceQuests and #sourceQuests > 0 do
 				subSourceQuests = {}; prereqs = {};
 				for i,sourceQuestID in ipairs(sourceQuests) do
-					sourceQuest = SearchForField("questID", sourceQuestID);
+					sourceQuest = sourceQuestID > 0 and SearchForField("questID", sourceQuestID) or SearchForField("creatureID", math.abs(sourceQuestID));
 					if sourceQuest and #sourceQuest > 0 then
-						-- Only care about the first search result.
-						if app.GroupFilter(sourceQuest[1]) and app.RecursiveClassAndRaceFilter(sourceQuest[1]) then
-							sourceQuest = setmetatable({ --[[['collectible'] = true,]] ['visible'] = true, ['hideText'] = true }, { __index = sourceQuest[1] });
-							if sourceQuest.sourceQuests and #sourceQuest.sourceQuests > 0 and (not sourceQuest.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
-								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
-								for j, subsourceQuests in ipairs(sourceQuest.sourceQuests) do
-									subSourceQuests[subsourceQuests] = true;
+						local found = false;
+						for i=1,#sourceQuest,1 do
+							-- Only care about the first search result.
+							local sq = sourceQuest[i];
+							if sq and app.GroupFilter(sq) and app.RecursiveClassAndRaceFilter(sq) then
+								sourceQuest = setmetatable({ --[[['collectible'] = true,]] ['visible'] = true, ['hideText'] = true }, { __index = sq });
+								if sourceQuest.sourceQuests and #sourceQuest.sourceQuests > 0 and (not sourceQuest.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
+									-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
+									for j, subsourceQuests in ipairs(sourceQuest.sourceQuests) do
+										subSourceQuests[subsourceQuests] = true;
+									end
 								end
+								found = true;
+								break;
 							end
-						else
-							sourceQuest = nil;
 						end
-					else
+						if not found then sourceQuest = nil; end
+					elseif sourceQuestID > 0 then
 						-- Create a Quest Object.
 						sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
+					else
+						-- Create a NPC Object.
+						sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true });
 					end
 					
 					-- If the quest was valid, attach it.

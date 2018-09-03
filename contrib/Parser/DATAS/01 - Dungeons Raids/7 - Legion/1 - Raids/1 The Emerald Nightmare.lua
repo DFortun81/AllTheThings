@@ -154,6 +154,9 @@ _.Instances =
 								i(139234)
 							})),
 							cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
+								i(139562, {	-- Breath of the Undying Serpent
+									artifact(519), -- Mistweaver Hidden Artifact Appearance
+								}),
 								i(136903),	-- Nightmare Whelpling (PET!)
 								i(139205),	-- Cowl of Fright
 								i(138215),	-- Dreamscale Inlaid Vestments
@@ -326,6 +329,9 @@ _.Instances =
 							i(139220)
 						})),
 						cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
+							i(139562, {	-- Breath of the Undying Serpent
+								artifact(519), -- Mistweaver Hidden Artifact Appearance
+							}),
 							i(136903),	-- Nightmare Whelpling (PET!)
 							i(139205),	-- Cowl of Fright
 							i(138215),	-- Dreamscale Inlaid Vestments
@@ -495,6 +501,9 @@ _.Instances =
 							i(139220)
 						})),
 						cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
+							i(139562, {	-- Breath of the Undying Serpent
+								artifact(519), -- Mistweaver Hidden Artifact Appearance
+							}),
 							i(136903),	-- Nightmare Whelpling (PET!)
 							i(139205),	-- Cowl of Fright
 							i(138215),	-- Dreamscale Inlaid Vestments
@@ -665,6 +674,9 @@ _.Instances =
 							i(139220)
 						})),
 						cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
+							i(139562, {	-- Breath of the Undying Serpent
+								artifact(519), -- Mistweaver Hidden Artifact Appearance
+							}),
 							i(136903),	-- Nightmare Whelpling (PET!)
 							i(139205),	-- Cowl of Fright
 							i(138215),	-- Dreamscale Inlaid Vestments

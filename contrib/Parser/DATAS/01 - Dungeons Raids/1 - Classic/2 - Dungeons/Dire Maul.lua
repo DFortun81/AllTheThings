@@ -24,6 +24,9 @@ _.Instances =
 								qg(44969, q( 27103)),	-- Shards of the Felvine
 							}),
 							n(  0, {	-- Zone Drop
+								i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
+									["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nEastern Wall of Garden\nLedge Above Garden\nBeside Lethtendris\nBeside Alzzin the Wildshaper",
+								}),
 								i(8384, {	-- Pattern: Comfortable Leather Hat
 									["crs"] = {
 										13197,	-- Fel Lash
@@ -143,6 +146,11 @@ _.Instances =
 									i(18366),	-- Gordok's Handguards
 									i(18369),	-- Gordok's Handwraps
 								})),
+							}),
+							n(  0, {	-- Zone Drop
+								i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
+									["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nSW Corner of Guard Fengus's courtyard\nBeside King Gordok and Cho'Rush the Observer",
+								}),
 							}),
 							cr(14326, e(411, {	-- Guard Mol'dar
 								i(18498),	-- Hedgecutter
@@ -278,6 +286,9 @@ _.Instances =
 								}),
 							}),
 							n(  0, {	-- Zone Drop
+								i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
+									["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nSouthern Generator in Immol'thar's room",
+								}),
 								i(18339, {	-- Eidolon Cloak
 									["crs"] = {
 										11471,	-- Eldreth Apparition
@@ -372,8 +383,19 @@ _.Instances =
 								i(18380),	-- Eldritch Reinforced Legplates
 								i(18378),	-- Silvermoon Leggings
 								i(18395),	-- Emerald Flame Ring
+								i(139620, {	-- A Complete Copy of "Nat Pagle's Guide to Extreme Anglin'."
+									["questID"] = 43682,	-- Book Presented [Retribution Paladin Hidden Artifact Appearance]
+									["description"] = "You need to bring the Complete Copy of Nat Pagle's Fishing Guide and the Head of Nefarian for him to grant you this interaction.\n\nAlliance: Go to Western Plaguelands and talk to Alexia Ironknife.\n\nHorde: Go to Tirisfall Glades and talk to Bardu Sharpeye.",
+									["classes"] = { 2 },	-- Paladin Only
+									["sourceQuests"] = { -91190 }, -- Special Quest ID for Sister Elda <Keeper of the Ancient Tomes>
+									["lvl"] = 110,
+									["groups"] = {
+										a(i(19003)),	-- Head of Nefarian [Alliance]
+										h(i(19002)),	-- Head of Nefarian [Horde]
+									},
+								}),
 							})),
-							n(  2, {	-- Vendors
+							n(  -2, {	-- Vendors
 								n(14371, { -- Shen'dralar Provisioner
 									i(18487), -- Pattern: Mooncloth Robe
 								}),
