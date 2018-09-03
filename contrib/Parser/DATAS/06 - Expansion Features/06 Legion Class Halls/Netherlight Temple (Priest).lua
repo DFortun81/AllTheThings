@@ -258,6 +258,7 @@ _.ExpansionFeatures =
 									479, -- Scholomance
 									634, -- Stormheim
 									680, -- Suramar
+									431, 432, -- Scarlet Halls
 									350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366,	-- Karazhan
 								},
 								["groups"] = {
@@ -334,7 +335,7 @@ _.ExpansionFeatures =
 										["coord"] = { 65.6, 56.8 },
 									}),
 									i(139567, {	-- Writings of the End
-										["description"] = "In order to get this item, you must gather all 12 of the Volumes. Turn on \"Show Incomplete Quests\" to track your progress.",
+										["description"] = "Once you have obtained all 12 of the Volumes, return to Archivist Inkforge in the class order hall and give them to him and he will give you this item. Turn on \"Show Incomplete Quests\" to track your progress.",
 										["groups"] = {
 											artifact(738), -- Discipline Priest Hidden Artifact Skin
 										},

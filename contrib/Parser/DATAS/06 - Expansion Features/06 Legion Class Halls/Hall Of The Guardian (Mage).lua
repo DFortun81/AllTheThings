@@ -63,6 +63,7 @@ _.ExpansionFeatures =
 					}),
 					gt(386, {	-- Teleportation Nexus
 						["description"] = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
+						["classes"] = { 8 },
 						["maps"] = {
 							630,	-- Azsuna
 							650,	-- Highmountain
