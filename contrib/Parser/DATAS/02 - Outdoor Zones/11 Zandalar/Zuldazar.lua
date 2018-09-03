@@ -244,7 +244,7 @@ _.Zones =
 						["coord"] = {  },
 					}),
 					]]--
-					fp(2076, { -- Atal'Gral, Zuldazar
+					fp(2076, { -- Atal'Gral, Zuldazar (N)
 						["coord"] = { 80.0, 41.4 },
 					}),
 					fp(2147, { -- Castaway Encampment, Zuldazar (A)
@@ -1043,6 +1043,7 @@ _.Zones =
 								i(29903),	-- Yellow Moth Egg
 							},
 							["races"] = HORDE_ONLY,
+							["coord"] = { 77.0, 15.8 },
 						}),
 						n(134345, {	-- Collector Kojo <Tortollan Seekers Emissary>
 							["groups"] = {
@@ -1109,12 +1110,14 @@ _.Zones =
 									["spellID"] = 276059,
 								}),
 							},
+							["coord"] = { 71.4, 30.2 },
 						}),
 						n(136219, {	-- Mona <Butterflies>
 							["groups"] = {
 								i(163508),	-- Butterfly in a Jar
 							},
 							["itemID"] = 163036,	-- Polished Pet Charm
+							["coord"] = { 71.6, 29.4 },
 						}),
 					},
 				}),
