@@ -2528,6 +2528,9 @@ _.Zones =
 						i(140580), 					-- Warden's Tabard	
 					}),
 					n(107376, {	-- Veridis Fallon <Court of Farondis Emissary>
+						i(139556, {	-- Syriel Crescentfall's Notes: Ravenguard
+							artifact(224), -- Marksmanship Hunter Hidden Appearance
+						}),
 						i(140672), 					-- Court Scribe Pet
 						i(129279), 					-- Enchanted Stone Whistle Toy
 						i(139606), 					-- Cadet's Gaudy Scarf
@@ -2536,7 +2539,6 @@ _.Zones =
 						i(129276, {					-- Beginner's Guide to Dimensional Rifting
 							ach(11175),					-- Higher Dimensional Rifting
 						}),
-						--i(139556), 				-- Hunter Legendary Appearance
 					}),
 				}),
 				n(-34, { 	-- World Quests

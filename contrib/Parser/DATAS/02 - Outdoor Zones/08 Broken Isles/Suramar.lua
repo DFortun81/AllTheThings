@@ -6,6 +6,26 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
 			["groups"] = {
+				i(141409, {	-- Candrael's Charm
+					["description"] = "Find this item on mobs in Suramar.",
+					["classes"] = { 12 },	-- Demon Hunters Only!
+					["groups"] = {
+						n(113935, {	-- Candrael Twinshadow
+							["description"] = "They will fling you up in the air to flying demon Downfall.",
+							["coord"] = { 28.2, 70.2 },
+							["groups"] = {
+								n(111110, {	-- Downfall
+									["description"] = "If you are near him his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back, make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
+									["groups"] = {
+										i(139549, {	-- Guise of the Deathwalker
+											artifact(982), -- Find Hidden Artifact Skin
+										}),
+									},
+								}),
+							},
+						}),
+					},
+				}),
 				n(-169, { 	-- Emissary Quests
 					q(42421, { -- The Nightfallen
 						["groups"] = {
@@ -747,6 +767,9 @@ _.Zones =
 								i(140495, { -- Torn Invitation [Fox Mount Quest]
 									i(137573), -- Reins of the Llothien Prowler
 								}),
+								i(139546, {	-- Twisting Anima of Souls [Death Knight Hidden Artifact Appearance]
+									artifact(921), -- Find Hidden Artifact Skin
+								}),
 								i(141296),	-- Ancient Mana Basin
 								i(141297),	-- Arcano-Shower
 								i(141298),	-- Displacer Meditation Stone
@@ -1427,7 +1450,7 @@ _.Zones =
 						},
 						["questID"] = 40680,	
 					}), 
-					n(113425, { -- Rovendros
+					n(113425, { 	-- Rovendros
 						["questID"] = 43795, -- Tracking - Rovendros Found
 						["description"] = "This is a hdiden NPC that you find in a cave within Crimson Thicket located at 55, 46.  Once you free him he will show up in Shal'aran as a vendor.",
 					}),
@@ -1437,7 +1460,7 @@ _.Zones =
 						},
 						["questID"] = 42831,	
 					}),
-					n(110824, { 		-- Tideclaw
+					n(110824, { 	-- Tideclaw
 						{
 							["itemID"] = 141011,	-- Recipe: Surf
 							["description"] = "Drops from any marine mob in the zone.",
@@ -1662,6 +1685,9 @@ _.Zones =
 				}),
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(139559, {	-- The Stars' Design
+							artifact(893), -- Fire Mage Hidden Appearance
+						}),
 						i(141292, {	-- Crystallizing Mana
 							["bonusID"] = 1812,
 						}),

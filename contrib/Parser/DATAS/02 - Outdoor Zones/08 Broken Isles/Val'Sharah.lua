@@ -1303,18 +1303,20 @@ _.Zones =
 						sp(185927, { i(127001) }), -- Imbued Silkweave Cinch
 					}),
 					n(106901, {	-- Sylvia Hartshorn <Dreamweaver Emissary>
-						i(23712), -- Ash'ana
-						i(140578), -- Dreamweaver Initiate's Tabard
-						i(130232), -- Moonfeather Statue
-						i(130158), -- Path of Elothir
-						i(139596), -- Pauldrons of Entwined Roots
-						i(137898), -- Recipe: Dreadleather Footpads
-						i(137896), -- Recipe: Dreadleather Mask	
-						i(137895), -- Recipe: Dreadleather Pants						
-						i(137883), -- Recipe: Warhide Jerkin						
-						--i(140652), --Seed of Solar Fire - Druid Artifact Skin
-						i(140667), -- Tabard of the Dreamweavers
-						i(130170), -- Tear of the Green Aspect
+						i(140652),	-- Seed of Solar Fire - Druid Artifact Skin
+						i(137898),	-- Recipe: Dreadleather Footpads
+						i(137896),	-- Recipe: Dreadleather Mask
+						i(137895),	-- Recipe: Dreadleather Pants
+						i(137883),	-- Recipe: Warhide Jerkin
+						i(140578),	-- Dreamweaver Initiate's Tabard
+						i(140667),	-- Tabard of the Dreamweavers
+						i(23712),	-- Ash'ana
+						i(130232),	-- Moonfeather Statue
+						i(130158),	-- Path of Elothir
+						i(130170),	-- Tear of the Green Aspect
+						i(139605),	-- Pendant of the Moon Temple
+						i(139596),	-- Pauldrons of Entwined Roots
+						i(140745),	-- Treasure Map: Val'sharah
 					}),
 				}),
 				n(-34, { 	-- World Quests

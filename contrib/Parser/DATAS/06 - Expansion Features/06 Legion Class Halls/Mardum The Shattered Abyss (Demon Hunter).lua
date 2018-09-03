@@ -9,88 +9,34 @@ _.ExpansionFeatures =
 				["groups"] = {
 					n(-498, { -- Twisting Nether Class Hall Ability
 						["groups"] = {
-							n(112385, {-- Argothel
-									dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
+							i(139550, {	-- Bulwark of the Iron Warden [Hidden Artifact Appearance]
+								artifact(571), -- Find Hidden Artifact Skin
 							}),
-							n(112380, {-- Balzorok
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112378, {-- Dal'grozz
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112397, {-- Dargrol
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112376, {-- Dro'zek
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112377, {-- Erdu'un
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112374, {-- Firecaller Rok'duun
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112399, {-- Gelgothar
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112381, {-- Gelthrak
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112396, {-- Gloth
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112395, {-- Gurgstok
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112391, {-- Idra'zuul
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112384, {-- Ko'razz
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112394, {-- Kur'zok
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112398, {-- Maglothar
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112387, {-- Mordrethal
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112389, {-- Ra'thuzek
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112379, {-- Rek'zelok
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112388, {-- Thel'draz
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
-							n(112375, {-- Zaldrok
-								dr(3, i(136900)), -- Hateful Eye Pet
-								--dr(4, sp(220662, { i(139550) })), -- Bulwark of the Iron Warden
-							}),
+							i(136900), -- Hateful Eye Pet
 						},
 						["questID"] = 44707,
+						["crs"] = {
+							112385,	-- Argothel
+							112380,	-- Balzorok
+							112378,	-- Dal'grozz
+							112397,	-- Dargrol
+							112376,	-- Dro'zek
+							112377,	-- Erdu'un
+							112374,	-- Firecaller Rok'duun
+							112399,	-- Gelgothar
+							112381,	-- Gelthrak
+							112396,	-- Gloth
+							112395,	-- Gurgstok
+							112391,	-- Idra'zuul
+							112384,	-- Ko'razz
+							112394,	-- Kur'zok
+							112398,	-- Maglothar
+							112387,	-- Mordrethal
+							112389,	-- Ra'thuzek
+							112379,	-- Rek'zelok
+							112388,	-- Thel'draz
+							112375,	-- Zaldrok
+						},
 					}),
 					n(-4, {	-- Achievements
 						ach(11298, {	-- A Classy Outfit

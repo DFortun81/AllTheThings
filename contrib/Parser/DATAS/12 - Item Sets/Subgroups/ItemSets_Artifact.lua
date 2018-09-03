@@ -921,15 +921,10 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-								{
-									["artifactID"] = 918, -- Find Artifact Skin
-									["groups"] = {
-										i(139555), -- Designs of the Grand Architect
-									},
-								},
-								artifact(917), -- Complete 30 Legion Dungeons Hidden
-								artifact(919), -- Complete 200 WQ Hidden
-								artifact(920), -- Kill 1,000 Players Hidden
+									artifact(918), -- Find Artifact Skin
+									artifact(917), -- Complete 30 Legion Dungeons Hidden
+									artifact(919), -- Complete 200 WQ Hidden
+									artifact(920), -- Kill 1,000 Players Hidden
 								}
 							}),
 						},
@@ -3688,7 +3683,15 @@ _.GearSets =
 								["modelScale"] = 0.95,
 								["modelRotation"] = 45,
 								["groups"] = {
-								artifact(425), -- Find Hidden Artifact Skin
+								i(139551, {	-- The Sunbloom
+									{
+										["artifactID"] = 425,	-- Find Hidden Artifact Skin
+										["groups"] = {
+											i(140652),	-- Seed of Solar Fire
+											i(140653),	-- Pure Drop of Shaladrassil's Sap
+										},
+									},
+								}),
 								artifact(423), -- Complete 30 Legion Dungeons Hidden
 								artifact(424), -- Complete 200 WQ Hidden
 								artifact(410), -- Kill 1,000 Players Hidden

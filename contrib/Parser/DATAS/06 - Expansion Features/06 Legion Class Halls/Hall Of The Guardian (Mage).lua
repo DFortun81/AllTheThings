@@ -7,6 +7,88 @@ _.ExpansionFeatures =
 		["groups"] = {
 			cl(8, { -- Hall of the Guardian -- Mage
 				["groups"] = {
+					spell(118, {	-- Polymorph
+						n(89386, {	-- Cliffwing Hippogryph [Azsuna]
+							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Azsuna Teleportation Nexus.",
+							["questID"] = 43787,
+						}),
+						n(110043, {	-- Heartwood Doe [Suramar]
+							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Suramar Teleportation Nexus.",
+							["questID"] = 43791,
+						}),
+						n(99636, {	-- Highpeak Goat [Highmountain]
+							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Highmountain Teleportation Nexus.",
+							["questID"] = 43788,
+						}),
+						n(107808, {	-- Plains Runehorn Calf [Stormheim]
+							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Stormheim Teleportation Nexus.",
+							["questID"] = 43789,
+						}),
+						n(109819, {	-- Wild Dreamrunner [Val'Sharah]
+							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Val'Sharah Teleportation Nexus.",
+							["questID"] = 43790,
+						}),
+						
+						n(111107, {	-- Volatile Sheep
+							["description"] = "If this quest has a checkmark next to it, then that means that you right click it a few times and it will explode.",
+							-- ["questID"] = , -- TODO: Get Quest ID for right clicking it. [Volatile Sheep]
+							["sourceQuests"] = { 43828 },	-- Sheep Summon Daily Roll
+							["groups"] = {
+								n(-159, { -- Daily Event Roll
+									["isDaily"] = true,
+									["questID"] = 43828,	-- "Sheep Summon Daily Roll" on WoWHead
+									["description"] = "If this quest has a checkmark next to it, then check below to see if you can find the Volatile Sheep in the class hall. If not, that means that you should come back tomorrow.",
+									["icon"] = "Interface\\Icons\\INV_Staff_2h_SheepStick_D_01",
+									["sourceQuests"] = {
+										43787,	-- Cliffwing Hippogryph [Azsuna]
+										43791,	-- Heartwood Doe [Suramar]
+										43788,	-- Highpeak Goat [Highmountain]
+										43789,	-- Plains Runehorn Calf [Stormheim]
+										43790,	-- Wild Dreamrunner [Val'Sharah]
+									},
+								}),
+							},
+						}),
+						n(111691, {	-- Extremely Volatile Stormheim Sheep
+							-- ["sourceQuests"] = {  },	-- TODO: Get Quest ID for right clicking it. [Volatile Sheep]
+						}),
+						n(111704, {	-- Cote "Shepherd" Metcalf
+							-- ["sourceQuests"] = {  },	-- TODO: Get Quest ID for right clicking it. [Extremely Volatile Stormheim Sheep]
+							["groups"] = {
+								i(139558, {	-- The Woolomancer's Charge
+									artifact(846), -- Arcane Mage Hidden Appearance
+								}),
+							}
+						}),
+					}),
+					gt(386, {	-- Teleportation Nexus
+						["description"] = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
+						["maps"] = {
+							630,	-- Azsuna
+							650,	-- Highmountain
+							634,	-- Stormheim
+							680,	-- Suramar
+							641,	-- Val'Sharah
+						},
+						["groups"] = {
+							n(-159, { -- Daily Event Roll
+								["isDaily"] = true,
+								["isBreadcrumb"] = true,
+								["questID"] = 44384,	-- "Daily Portal Event Roll" on WoWHead
+								["description"] = "If this quest has a checkmark next to it, then check below to see if you are eligible for the scenario portal. If not, that means that you should come back tomorrow.",
+								["icon"] = "Interface\\Icons\\Achievement_Zone_Frostfire",
+							}),
+							n(113513, {	-- Asher <Fury of Frostfire>
+								["description"] = "If this quest has a checkmark next to it, then that means the scenario portal is active. He only appears in a special phase in Frostfire Ridge upon taking the portal.",
+								["sourceQuests"] = { 44384 }, -- Daily Portal Event Roll
+								["groups"] = {
+									i(139560, {	-- Everburning Crystal
+										artifact(180), -- Frost Mage Hidden Appearance
+									}),
+								},
+							}),
+						},
+					}),
 					n(-4, {	-- Achievements
 						ach(11298, {	-- A Classy Outfit
 							["groups"] = {

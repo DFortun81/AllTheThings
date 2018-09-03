@@ -3899,6 +3899,39 @@ app.CreateGarrisonMission = function(id, t)
 	return createInstance(constructor(id, t, "missionID"), app.BaseGarrisonMission);
 end
 
+-- Garrison Talent Lib
+app.BaseGarrisonTalent = {
+	__index = function(t, key)
+		if key == "key" then
+			return "talentID";
+		elseif key == "text" then
+			local info = t.info;
+			if info.name then return info.name; end
+		elseif key == "trackable" then
+			return true;
+		elseif key == "saved" then
+			local info = t.info;
+			if info.researched then return info.researched; end
+		elseif key == "icon" then
+			local info = t.info;
+			if info.icon then return info.icon; end
+			return "Interface/ICONS/INV_Icon_Mission_Complete_Order";
+		elseif key == "description" then
+			local info = t.info;
+			if info.description then return info.description; end
+		elseif key == "info" then
+			-- TODO: Add "perkSpellID"
+			return C_Garrison.GetTalent(t.talentID);
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateGarrisonTalent = function(id, t)
+	return createInstance(constructor(id, t, "talentID"), app.BaseGarrisonTalent);
+end
+
 -- Heirloom Lib
 app.BaseHeirloom = {
 	__index = function(t, key)
@@ -4612,6 +4645,13 @@ app.BaseQuest = {
 			end
 			if t.retries and t.retries > 120 then
 				t.title = "Failed to acquire information. This quest may have been removed from the game.";
+				if t.npcID then
+					if t.npcID > 0 then
+						return t.npcID > 0 and NPCNameFromID[t.npcID];
+					else
+						return L("NPC_ID_NAMES")[t.npcID];
+					end
+				end
 				return "|Hquest:" .. t.questID .. "|h[Quest #" .. t.questID .. "*]|h";
 			else
 				t.retries = (t.retries or 0) + 1;
@@ -6036,7 +6076,7 @@ local function CreateMiniListForGroup(group)
 		BuildGroups(popout.data, popout.data.g);
 		UpdateGroups(popout.data, popout.data.g, 1);
 		mainItem.visible = true;
-	elseif group.questID then
+	elseif group.questID or group.sourceQuests then
 		-- This is a quest object. Let's show prereqs and breadcrumbs.
 		local mainQuest = setmetatable({ ['collectible'] = true, ['hideText'] = true }, { __index = group });
 		if group.g then

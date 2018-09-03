@@ -9,6 +9,9 @@ _.ExpansionFeatures =
 				["groups"] = {
 					o(253161, { -- Grove Vine
 						["groups"] = {
+							i(139554, {	-- Acorn of the Endless
+								artifact(62), -- Restoration Druid Hidden Artifact Appearance
+							}),
 							i(129362), -- Broot Pet
 							i(140741), -- Nightmare Lasher Pet
 						},
@@ -358,64 +361,65 @@ _.ExpansionFeatures =
 					}),
 					m(715, { -- Emerald Dreamway
 						["groups"] = {
-							i(139552, { -- Feather of the Moonspirit  [Lucetia Note: Leave as is for the moment.  My goal is to convert the Quest #XXXX to the zone names without using maps]
+							n(-159, { -- Daily Dreamway Event Roll
+								["isDaily"] = true,
+								["isBreadcrumb"] = true,
+								["questID"] = 44326,	-- "daily dreamway event roll" on WoWHead
+								["description"] = "If this quest has a checkmark next to it, then check below which stone is active. If none of them are checked, that means that none of the owlcat stones can be interacted with today and that you should come back tomorrow.",
+								["icon"] = "Interface\\Icons\\inv_misc_druidstone04",
 								["groups"] = {
-									{ -- Fangs of Ashamane
-										["ignoreSource"] = true,
-										["classes"] = { 11 }, -- Druid
-										["artifactID"] = 830, -- Hidden Appearance Base
-									},
-									n(-159, { -- Daily Dreamway Event Roll
-										["groups"] = {
-											n(-132, { -- Feralas Active
-												["groups"] = {
-													n(-158, { -- Feralas Activated
-														["questID"] = 44331, -- Owlcat Stone Touched [Feralas]
-														["description"] = "|CFFFF0000This quest indicates if you have activated the Feralas Owlcat Stone.|r",
-														["sourceQuests"] = { 44327 }, -- Owlcat Stone Touched [Feralas]
-														["icon"] = "Interface\\Icons\\achievement_zone_feralas",
-													}),
-												},
-												["questID"] = 44327, -- Owlcat Stone Activate [Feralas]
-												["isBreadcrumb"] = true,
-												["description"] = "|CFFFF0000If this quest has a checkmark next to it, then that means the stone is active.|r",
-												["icon"] = "Interface\\Icons\\achievement_zone_feralas",
-											}),
-											n(-131, { -- The Hinterlands Active
-												["groups"] = {
-													n(-157, { -- The Hinterlands Activated
-														["questID"] = 44332, -- Owlcat Stone Touched [Hinterlands]
-														["description"] = "|CFFFF0000This quest indicates if you have activated the Hinterlands Owlcat Stone.|r",
-														["sourceQuests"] = { 44328 }, -- Owlcat Stone Touched [Hinterlands]
-														["icon"] = "Interface\\Icons\\achievement_zone_hinterlands_01",
-													}),
-												},
-												["questID"] = 44328, -- Owlcat Stone Activate [Hinterlands]
-												["isBreadcrumb"] = true,
-												["description"] = "|CFFFF0000If this quest has a checkmark next to it, then that means the stone is active.|r",
-												["icon"] = "Interface\\Icons\\achievement_zone_hinterlands_01",
-											}),
-											n(-130, { -- Duskwood Active
-												["groups"] = {
-													n(-133, { -- Duskwood Activated
-														["questID"] = 44330, -- Owlcat Stone Touched [Duskwood]
-														["description"] = "|CFFFF0000This quest indicates if you have activated the Duskwood Owlcat Stone.|r",
-														["sourceQuests"] = { 44329 }, -- Owlcat Stone Touched [Duskwood]
-														["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
-													}),
-												},
-												["questID"] = 44329, -- Owlcat Stone Activate [Duskwood]
-												["isBreadcrumb"] = true,
-												["description"] = "|CFFFF0000If this quest has a checkmark next to it, then that means the stone is active.|r",
-												["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
-											}),
-										},
-										["description"] = "|CFFFF0000If this quest has a checkmark next to it, then check below which stone is active.|r",
-										["icon"] = "Interface\\Icons\\inv_misc_druidstone04",
+									n(-130, { -- Duskwood Active
+										["isDaily"] = true,
+										["isBreadcrumb"] = true,
+										["questID"] = 44329, -- Owlcat Stone Activate [Duskwood]
+										["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
+										["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
+										["sourceQuests"] = { 44326 }, -- Daily Dreamway Event Roll
+									}),
+									n(-132, { -- Feralas Active
+										["isDaily"] = true,
+										["isBreadcrumb"] = true,
+										["questID"] = 44327, -- Owlcat Stone Activate [Feralas]
+										["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
+										["icon"] = "Interface\\Icons\\achievement_zone_feralas",
+										["sourceQuests"] = { 44326 }, -- Daily Dreamway Event Roll
+									}),
+									n(-131, { -- The Hinterlands Active
+										["isDaily"] = true,
+										["isBreadcrumb"] = true,
+										["questID"] = 44328, -- Owlcat Stone Activate [Hinterlands]
+										["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
+										["icon"] = "Interface\\Icons\\achievement_zone_hinterlands_01",
+										["sourceQuests"] = { 44326 }, -- Daily Dreamway Event Roll
 									}),
 								},
-								["description"] = "|CFFFF0000Turn on \"Show Incomplete Quests\" to see which stones you are still missing.  Each quest has a descripton added to it on it's location.|r"
-								
+							}),
+							n(-133, { -- Duskwood Activated
+								["questID"] = 44330, -- Owlcat Stone Touched [Duskwood]
+								["description"] = "This quest indicates if you have activated the Duskwood Owlcat Stone.",
+								["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
+								["sourceQuests"] = { 44329 }, -- Owlcat Stone Activate [Duskwood]
+							}),
+							n(-158, { -- Feralas Activated
+								["questID"] = 44331, -- Owlcat Stone Touched [Feralas]
+								["description"] = "This quest indicates if you have activated the Feralas Owlcat Stone.",
+								["icon"] = "Interface\\Icons\\achievement_zone_feralas",
+								["sourceQuests"] = { 44327 }, -- Owlcat Stone Activate [Feralas]
+							}),
+							n(-157, { -- The Hinterlands Activated
+								["questID"] = 44332, -- Owlcat Stone Touched [Hinterlands]
+								["description"] = "This quest indicates if you have activated the Hinterlands Owlcat Stone.",
+								["icon"] = "Interface\\Icons\\achievement_zone_hinterlands_01",
+								["sourceQuests"] = { 44328 }, -- Owlcat Stone Activate [Hinterlands]
+							}),
+							n(113663, {	-- Ela'lothen <The Moonspirit>
+								["description"] = "Turn on \"Show Incomplete Quests\" to see which stones you are still missing.  Each quest has a descripton added to it on it's location.\n\nOnce all 3 of the Owlcat stones are activated, you will be able to see Ela'lothen. Type /sit at him for the Feather of the Moonspirit to appear in your inventory.",
+								["sourceQuests"] = { 44330, 44331, 44332 }, -- 
+								["groups"] = {
+									i(139552, { -- Feather of the Moonspirit
+										artifact(830),	-- Feral Druid Hidden Artifact Appearance
+									}),
+								},
 							}),
 						},
 						["icon"] = "Interface\\Icons\\spell_arcane_portalshattrath", -- Dream Portal Icon

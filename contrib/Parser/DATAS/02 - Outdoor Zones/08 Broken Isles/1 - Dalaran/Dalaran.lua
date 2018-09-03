@@ -4740,19 +4740,9 @@ _.Zones =
 						}),
 					}),
 					n(93539, { 	-- Hobart Grapplehammer <Engineering Supplies>
-						{ 	-- Titanstrike Hunter Hidden Appearance [Lucetia: Putting this here because we want it to stand out]
-							["itemID"] = 139555, -- Designs of the Grand Architect
-							["groups"] = {
-								{
-									["ignoreSource"] = true,
-									["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_bow_2h_crossbow_artifactwindrunner_d_05.mdx",
-									["modelScale"] = 0.95,
-									["modelRotation"] = 45,
-									["classes"] = { 3 },
-									["artifactID"] = 918,
-								},
-							},
-						},
+						i(139555, { -- Designs of the Grand Architect
+							artifact(918),	-- Titanstrike Hunter Hidden Appearance
+						}),
 						i(144328, { -- Boon of the Builder
 							i(136630),	-- "Twirling Bottom" Repeater
 							i(136632),	-- Chaos Blaster

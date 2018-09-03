@@ -344,6 +344,18 @@ _.Instances =
 								},
 							},
 							{
+								["npcID"] = 111093, -- Stitchwork
+								["questID"] = 44188,	-- Hidden Tracking
+								["classes"] = { 6 },	-- Death Knight Only!
+								["collectible"] = false,
+								["description"] = "\"Professor Putricide's Lost Journal\" drops from ghouls summoned by your Apocalypse or Army of the Dead spells anywhere in the world. If this is checked off as completed, you will be eligible to enter the trap door in Putricide's room under the Green Slime Pipe. You do not have to interact with the book to be eligible.",
+								["groups"] = {
+									i(139548, {	-- The Bonereaper's Hook
+										artifact(404), -- Find Hidden Artifact Skin
+									}),
+								},
+							},
+							{
 								["questID"] = 24748,	-- The Lich King's Last Stand
 								["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
 								["sourceQuest"] = 24549,	-- Source Quest: Shadowmourne...

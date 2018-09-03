@@ -428,6 +428,12 @@ end
 gm = function(id, t)									-- Create an GARRISON MISSION Object (Alternative)
 	return struct("missionID", id, t);
 end
+garrisonTalent = function(id, t)						-- Create an GARRISON TALENT Object
+	return struct("talentID", id, t);
+end
+gt = function(id, t)									-- Create an GARRISON TALENT Object (Alternative)
+	return struct("talentID", id, t);
+end
 gs = function(id, t)									-- Create a GEAR SET Object (IE: "Vestments of Prophecy")
 	return struct("setID", id, t);
 end
