@@ -290,10 +290,8 @@ _.Instances =
 									["crs"] = {
 										11480,	-- Arcane Aberration
 										14399,	-- Arcane Torrent
-										 6010,	-- Felhound
 										11483,	-- Mana Remnant
 										11484,	-- Residual Monstrosity
-										11737,	-- Stonelash Flayer
 									},
 								}),
 								i(18344, {	-- Stonebark Gauntlets
