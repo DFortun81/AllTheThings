@@ -121,8 +121,9 @@ _.Zones =
 					qh(14034, {	-- Club Foote
 						["qg"] = 3391,	-- Gazlowe
 					}),
-					q(  3861, {	-- CLUCK!
+					q(3861, {	-- CLUCK!
 						["qg"] = 620,	-- Chicken
+						["repeatable"] = true,
 					}),
 					qh(29086, {	-- Competition Schmompetition
 						["qg"] = 3442,	-- Sputtervalve

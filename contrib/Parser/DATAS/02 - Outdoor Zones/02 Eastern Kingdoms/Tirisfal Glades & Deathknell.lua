@@ -21,7 +21,8 @@ _.Zones =
 						["groups"] = {
 							i(11110) -- Chicken Egg
 						},
-						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, William Saldean sells the Special Chicken Feed you need."
+						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, William Saldean sells the Special Chicken Feed you need.",
+						["repeatable"] = true,
 					}),
 					p(458),		-- Lost of Lordaeron
 					p(417),		-- Rat

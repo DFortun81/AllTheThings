@@ -30,7 +30,8 @@ _.Zones =
 						["groups"] = {
 							i(11110) -- Chicken Egg
 						},
-						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, Farmer Saldean, sells the Special Chicken Feed you need."
+						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",
+						["repeatable"] = true,
 					}),
 					qa(31725, { -- Lindsay
 						i(89125),	-- Sack of Pet Supplies
@@ -74,7 +75,6 @@ _.Zones =
 					qg(, qa(26353)),	-- Captain Sanders' Hidden Treasure
 					qg(, qa(26355)),	-- Captain Sanders' Hidden Treasure
 					qg(, qa(26354)),	-- Captain Sanders' Hidden Treasure
-					qg(, q(3861)),	-- CLUCK!
 					qg(, q(46293)),	-- Deadmines, Part Three?
 					qg(, q(43287)),	-- Defend
 					qg(, q(43242)),	-- Demon Commander

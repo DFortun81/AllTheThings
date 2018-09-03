@@ -252,7 +252,10 @@ _.Zones =
 								})),
 								qg(900, qa(26728)),	-- Hero's Call: Duskwood! (BREADCRUMB)
 								qg(620, q(3861, {	-- CLUCK!
-									i(11110), -- Chicken Egg
+									["groups"] = {
+										i(11110), -- Chicken Egg
+									},
+									["repeatable"] = true,
 								})),
 							},
 							["collectible"] = false,
