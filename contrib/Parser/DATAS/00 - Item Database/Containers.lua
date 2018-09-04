@@ -1125,3 +1125,7 @@ i(51315);		-- Sealed Chest
 
 i(23247);		-- Burning Blossom
 i(103982);		-- Burden of Eternity
+
+i(164261);		-- Steel Strongbox [A]
+i(164262);		-- Steel Strongbox [H]
+i(163826);		-- Raider's Supply Cache

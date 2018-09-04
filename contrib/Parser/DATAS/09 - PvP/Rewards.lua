@@ -344,5 +344,144 @@ _.PVP =
 			["description"] = "This has a CHANCE to drop from any rated battleground win.",
 			["requireSkill"] = 164, -- Blacksmithing
 		}),
+		i(164262, {	-- Steel Strongbox [H]
+			["groups"] = {
+				i(162966),	-- Dread Aspirant's Badge
+				i(162896),	-- Dread Aspirant's Band
+				i(162866),	-- Dread Aspirant's Barrier
+				i(162872),	-- Dread Aspirant's Bonegrinder
+				i(162968),	-- Dread Aspirant's Cape
+				i(162961),	-- Dread Aspirant's Chain Armbands
+				i(162935),	-- Dread Aspirant's Chain Armor
+				i(162944),	-- Dread Aspirant's Chain Gauntlets
+				i(162946),	-- Dread Aspirant's Chain Helm
+				i(162950),	-- Dread Aspirant's Chain Leggings
+				i(162939),	-- Dread Aspirant's Chain Sabatons
+				i(162955),	-- Dread Aspirant's Chain Spaulders
+				i(162957),	-- Dread Aspirant's Chain Waistguard
+				i(162868),	-- Dread Aspirant's Cleaver
+				i(162864),	-- Dread Aspirant's Cloak
+				i(162877),	-- Dread Aspirant's Decapitator
+				i(162967),	-- Dread Aspirant's Drape
+				i(162898),	-- Dread Aspirant's Emblem
+				i(162893),	-- Dread Aspirant's Gavel
+				i(162895),	-- Dread Aspirant's Greatcloak
+				i(162899),	-- Dread Aspirant's Insignia
+				i(162958),	-- Dread Aspirant's Leather Belt
+				i(162962),	-- Dread Aspirant's Leather Bindings
+				i(162940),	-- Dread Aspirant's Leather Boots
+				i(162941),	-- Dread Aspirant's Leather Gloves
+				i(162947),	-- Dread Aspirant's Leather Helm
+				i(162951),	-- Dread Aspirant's Leather Legguards
+				i(162952),	-- Dread Aspirant's Leather Spaulders
+				i(162936),	-- Dread Aspirant's Leather Tunic
+				i(162889),	-- Dread Aspirant's Longbow
+				i(162897),	-- Dread Aspirant's Medallion
+				i(162873),	-- Dread Aspirant's Pike
+				i(162960),	-- Dread Aspirant's Plate Armguards
+				i(162934),	-- Dread Aspirant's Plate Chestpiece
+				i(162942),	-- Dread Aspirant's Plate Gauntlets
+				i(162956),	-- Dread Aspirant's Plate Girdle
+				i(162932),	-- Dread Aspirant's Plate Helm
+				i(162948),	-- Dread Aspirant's Plate Legguards
+				i(162953),	-- Dread Aspirant's Plate Pauldrons
+				i(162937),	-- Dread Aspirant's Plate Warboots
+				i(162867),	-- Dread Aspirant's Reprieve
+				i(162878),	-- Dread Aspirant's Rifle
+				i(162865),	-- Dread Aspirant's Ring
+				i(162965),	-- Dread Aspirant's Seal
+				i(162970),	-- Dread Aspirant's Shanker
+				i(162882),	-- Dread Aspirant's Shield Wall
+				i(162964),	-- Dread Aspirant's Signet
+				i(162963),	-- Dread Aspirant's Silk Cord
+				i(162959),	-- Dread Aspirant's Silk Cuffs
+				i(162943),	-- Dread Aspirant's Silk Gloves
+				i(162945),	-- Dread Aspirant's Silk Hood
+				i(162949),	-- Dread Aspirant's Silk Leggings
+				i(162954),	-- Dread Aspirant's Silk Mantle
+				i(162933),	-- Dread Aspirant's Silk Robe
+				i(162938),	-- Dread Aspirant's Silk Treads
+				i(162875),	-- Dread Aspirant's Slicer
+				i(162894),	-- Dread Aspirant's Spellblade
+				i(162874),	-- Dread Aspirant's Staff
+				i(162876),	-- Dread Aspirant's Wand
+				i(162880),	-- Dread Aspirant's Warglaive
+				i(137642),	-- Mark of Honor
+				i(163826, {	-- Raider's Supply Cache
+					["description"] = "Contains only trade goods.",
+				}),
+			},
+			["races"] = HORDE_ONLY,
+		}),
+		i(164261, {	-- Steel Strongbox [A]
+			["groups"] = {
+				i(162966),	-- Dread Aspirant's Badge
+				i(162896),	-- Dread Aspirant's Band
+				i(162885),	-- Dread Aspirant's Barrier
+				i(162890),	-- Dread Aspirant's Bonegrinder
+				i(163724),	-- Dread Aspirant's Cape
+				i(162930),	-- Dread Aspirant's Chain Armbands
+				i(162903),	-- Dread Aspirant's Chain Armor
+				i(162912),	-- Dread Aspirant's Chain Gauntlets
+				i(162914),	-- Dread Aspirant's Chain Helm
+				i(162918),	-- Dread Aspirant's Chain Leggings
+				i(162907),	-- Dread Aspirant's Chain Sabatons
+				i(162923),	-- Dread Aspirant's Chain Spaulders
+				i(162926),	-- Dread Aspirant's Chain Waistguard
+				i(163721),	-- Dread Aspirant's Cloak
+				i(163723),	-- Dread Aspirant's Drape
+				i(162898),	-- Dread Aspirant's Emblem
+				i(162871),	-- Dread Aspirant's Gavel
+				i(163722),	-- Dread Aspirant's Greatcloak
+				i(162879),	-- Dread Aspirant's Greatsword
+				i(162899),	-- Dread Aspirant's Insignia
+				i(162927),	-- Dread Aspirant's Leather Belt
+				i(162931),	-- Dread Aspirant's Leather Bindings
+				i(162908),	-- Dread Aspirant's Leather Boots
+				i(162909),	-- Dread Aspirant's Leather Gloves
+				i(162915),	-- Dread Aspirant's Leather Helm
+				i(162919),	-- Dread Aspirant's Leather Legguards
+				i(162920),	-- Dread Aspirant's Leather Spaulders
+				i(162904),	-- Dread Aspirant's Leather Tunic
+				i(162869),	-- Dread Aspirant's Longbow
+				i(162897),	-- Dread Aspirant's Medallion
+				i(162887),	-- Dread Aspirant's Pike
+				i(162929),	-- Dread Aspirant's Plate Armguards
+				i(162902),	-- Dread Aspirant's Plate Chestpiece
+				i(162910),	-- Dread Aspirant's Plate Gauntlets
+				i(162924),	-- Dread Aspirant's Plate Girdle
+				i(162900),	-- Dread Aspirant's Plate Helm
+				i(162916),	-- Dread Aspirant's Plate Legguards
+				i(162921),	-- Dread Aspirant's Plate Pauldrons
+				i(162905),	-- Dread Aspirant's Plate Warboots
+				i(162969),	-- Dread Aspirant's Pummeler
+				i(162883),	-- Dread Aspirant's Reprieve
+				i(162888),	-- Dread Aspirant's Rifle
+				i(162865),	-- Dread Aspirant's Ring
+				i(162965),	-- Dread Aspirant's Seal
+				i(162971),	-- Dread Aspirant's Shanker
+				i(162884),	-- Dread Aspirant's Shield Wall
+				i(162964),	-- Dread Aspirant's Signet
+				i(162925),	-- Dread Aspirant's Silk Cord
+				i(162928),	-- Dread Aspirant's Silk Cuffs
+				i(162911),	-- Dread Aspirant's Silk Gloves
+				i(162913),	-- Dread Aspirant's Silk Hood
+				i(162917),	-- Dread Aspirant's Silk Leggings
+				i(162922),	-- Dread Aspirant's Silk Mantle
+				i(162901),	-- Dread Aspirant's Silk Robe
+				i(162906),	-- Dread Aspirant's Silk Treads
+				i(162892),	-- Dread Aspirant's Slicer
+				i(162870),	-- Dread Aspirant's Spellblade
+				i(162886),	-- Dread Aspirant's Staff
+				i(162891),	-- Dread Aspirant's Wand
+				i(162881),	-- Dread Aspirant's Warglaive
+				i(137642),	-- Mark of Honor
+				i(163826, {	-- Raider's Supply Cache
+					["description"] = "Contains only trade goods.",
+				}),
+			},
+			["races"] = ALLIANCE_ONLY,
+		}),
+
 	}),
 };

@@ -346,6 +346,78 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					["groups"] = {
+						n(-9, {	-- PvP
+							["groups"] = {
+								q(52958, {	-- Call to Arms: Drustvar
+									["groups"] = {
+										i(164262, {	-- Steel Strongbox
+											i(137642),	-- Mark of Honor
+										}),
+									},
+									["qg"] = 143536,	-- High Warlord Volrath
+									["coord"] = {
+										51.54, 58.21
+									},
+									["repeatable"] = true,
+									["isWeekly"] = true,
+									["races"] = HORDE_ONLY,
+								}),
+								q(52954, {	-- Call to Arms: Nazmir
+									["groups"] = {
+										i(164262, {	-- Steel Strongbox
+											i(137642),	-- Mark of Honor
+										}),
+									},
+									["qg"] = 143536,	-- High Warlord Volrath
+									["coord"] = {
+										51.54, 58.21
+									},
+									["repeatable"] = true,
+									["isWeekly"] = true,
+									["races"] = HORDE_ONLY,
+								}),
+								q(52957, {	-- Call to Arms: Stormsong Valley
+									["groups"] = {
+										i(164262, {	-- Steel Strongbox
+											i(137642),	-- Mark of Honor
+										}),
+									},
+									["qg"] = 143536,	-- High Warlord Volrath
+									["coord"] = {
+										51.54, 58.21
+									},
+									["repeatable"] = true,
+									["isWeekly"] = true,
+									["races"] = HORDE_ONLY,
+								}),
+								q(52953, {	-- Call to Arms: Vol'dun
+									["groups"] = {
+										i(164262, {	-- Steel Strongbox
+											i(137642),	-- Mark of Honor
+										}),
+									},
+									["qg"] = 143536,	-- High Warlord Volrath
+									["coord"] = {
+										51.54, 58.21
+									},
+									["repeatable"] = true,
+									["isWeekly"] = true,
+									["races"] = HORDE_ONLY,
+								}),
+								q(53338, {	-- Prove Your Worth
+									["groups"] = {
+										i(163604, {	-- Net-O-Matic 5000
+											["f"] = 55,	-- Consumable
+										}),
+									},
+									["qg"] = 143551,	--  Centurion Firescream
+									["coord"] = {
+										51.56, 58.06
+									},
+									["races"] = HORDE_ONLY,
+								}),
+							},
+						}),
 						h(ach(11861, {	-- The Throne of Zuldazar
 							["groups"] = {
 								q(47514, {	-- Zuldazar

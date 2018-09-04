@@ -335,6 +335,78 @@ _.Zones =
 								},
 							},
 						}),
+						n(-9, {	-- PvP
+							["groups"] = {
+								q(52944, {	-- Call to Arms: Drustvar
+									["groups"] = {
+										i(164261, {	-- Steel Strongbox
+											i(137642),	-- Mark of Honor
+										}),
+									},
+									["qg"] = 143559,	-- Grand Marshal Tremblade
+									["coord"] = {
+										56.41, 26.01
+									},
+									["repeatable"] = true,
+									["isWeekly"] = true,
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(52949, {	-- Call to Arms: Nazmir
+									["groups"] = {
+										i(164261, {	-- Steel Strongbox
+											i(137642),	-- Mark of Honor
+										}),
+									},
+									["qg"] = 143559,	-- Grand Marshal Tremblade
+									["coord"] = {
+										56.41, 26.01
+									},
+									["repeatable"] = true,
+									["isWeekly"] = true,
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(52782, {	-- Call to Arms: Stormsong Valley
+									["groups"] = {
+										i(164261, {	-- Steel Strongbox
+											i(137642),	-- Mark of Honor
+										}),
+									},
+									["qg"] = 143559,	-- Grand Marshal Tremblade
+									["coord"] = {
+										56.41, 26.01
+									},
+									["repeatable"] = true,
+									["isWeekly"] = true,
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(52950, {	-- Call to Arms: Vol'dun
+									["groups"] = {
+										i(164261, {	-- Steel Strongbox
+											i(137642),	-- Mark of Honor
+										}),
+									},
+									["qg"] = 143559,	-- Grand Marshal Tremblade
+									["coord"] = {
+										56.41, 26.01
+									},
+									["repeatable"] = true,
+									["isWeekly"] = true,
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(53295, {	-- Do Your Part
+									["groups"] = {
+										i(163604, {	-- Net-O-Matic 5000
+											["f"] = 55,	-- Consumable
+										}),
+									},
+									["qg"] = 141698,	--  Kort Ceefer
+									["coord"] = {
+										56.41, 25.81
+									},
+									["races"] = ALLIANCE_ONLY,
+								}),
+							},
+						}),
 						a(ach(12582, {	-- Come Sail Away
 							["groups"] = {
 								a(q(51341, {	-- Daughter of the Sea
