@@ -4203,6 +4203,7 @@ app.BaseItem = {
 				if link then
 					t.link = link;
 					t.icon = icon;
+					t.retries = nil;
 					return link;
 				else
 					if t.retries then
@@ -4286,6 +4287,7 @@ app.BaseItemSource = {
 			if link then
 				t.link = link;
 				t.icon = icon;
+				t.retries = nil;
 				return link;
 			else
 				if t.retries then
@@ -4636,17 +4638,15 @@ app.BaseQuest = {
 		if key == "key" then
 			return "questID";
 		elseif key == "text" then
-			if t.title then
-				rawset(t, "text", t.title);
-				t.title = nil;
+			if rawget(t, "title") then
+				rawset(t, "text", rawget(t, "title"));
+				t.title = false;
 				return t.text;
 			end
 			local questName = QuestTitleFromID[t.questID];
 			if questName then
-				if t.retries then
-					t.retries = nil;
-					t.title = nil;
-				end
+				t.retries = nil;
+				t.title = nil;
 				return "|Hquest:" .. t.questID .. "|h[" .. questName .. "]|h";
 			end
 			if t.retries and t.retries > 120 then
@@ -4657,9 +4657,7 @@ app.BaseQuest = {
 						return L("NPC_ID_NAMES")[t.npcID];
 					end
 				end
-				rawset(t, "text", "|Hquest:" .. t.questID .. "|h[Quest #" .. t.questID .. "*]|h");
-				t.title = "Failed to acquire information. This quest may have been removed from the game.";
-				return t.text;
+				return "|Hquest:" .. t.questID .. "|h[Quest #" .. t.questID .. "*]|h";
 			else
 				t.retries = (t.retries or 0) + 1;
 				return "|Hquest:" .. t.questID .. "|h[]|h";
@@ -5097,17 +5095,12 @@ app.BaseVignette = {
 					t.retries = nil;
 					t.title = nil;
 				end
-				questName = "|Hquest:" .. t.questID .. "|h[" .. questName .. "]|h";
-				t.text = questName;
-				return questName;
+				return "|Hquest:" .. t.questID .. "|h[" .. questName .. "]|h";
 			end
 			if t.retries then
 				t.retries = t.retries + 1;
 				if t.retries > 40 then
-					questName = "|Hquest:" .. t.questID .. "|h[Quest #" .. t.questID .. "*]|h";
-					t.title = "Failed to acquire quest information. The quest made be invalid or unintended to appear in a tooltip.";
-					t.text = questName;
-					return questName;
+					return "|Hquest:" .. t.questID .. "|h[Quest #" .. t.questID .. "*]|h";
 				end
 			else
 				t.retries = 1;
@@ -6736,6 +6729,8 @@ local function RowOnEnter(self)
 			else
 				GameTooltip:AddLine(title, 1, 1, 1);
 			end
+		elseif reference.retries then
+			GameTooltip:AddLine("Failed to acquire information. This quest may have been removed from the game. " .. tostring(reference.retries), 1, 1, 1);
 		end
 		local lvl = reference.lvl or 0;
 		if lvl > 1 then GameTooltip:AddDoubleLine(L("REQUIRES_LEVEL"), tostring(lvl)); end
