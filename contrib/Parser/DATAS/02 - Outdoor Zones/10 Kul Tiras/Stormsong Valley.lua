@@ -1313,6 +1313,13 @@ _.Zones =
 						}),	
 						n(139328, {	-- Sabertron		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								ach(13054, {	-- Sabertron Assemble
+									crit(1),	-- Red Sabertron
+									crit(2),	-- Yellow Sabertron
+									crit(3),	-- Orange Sabertron
+									crit(4),	-- Green Sabertron
+									crit(5),	-- Copper Sabertron
+								}),
 								i(154664),	-- Lionsight Omensword
 							}),
 							["questID"] = 51956,	

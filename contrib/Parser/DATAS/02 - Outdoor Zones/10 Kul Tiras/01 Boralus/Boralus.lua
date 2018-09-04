@@ -329,7 +329,7 @@ _.Zones =
 									["itemID"] = 161451,	-- A Tiny Diving Helmet
 									["questID"] = 52277,	-- Pepe can be sometimes be summoned with this mask
 									["coord"] = {
-										54.01, 71.01,	-- Pepe Location
+										54.31, 72.61,	-- Pepe Location
 									},
 									["description"] = "Located inside the fish tank of \"Catherine Morgan's\" cat house.",
 								},
