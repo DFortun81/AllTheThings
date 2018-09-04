@@ -141,7 +141,22 @@ _.ExpansionFeatures =
 					}),
 					qa(53153, {	-- Death to the Defilers
 						i(164578, {	-- Warfronts Equipment Cache
-							["groups"] = bubbleDown({["modID"] = 6}, {
+							["groups"] = bubbleDown({["modID"] = 3}, {
+								i(163891),	-- 7th Legionnaire's Aegis
+								i(163884),	-- 7th Legionnaire's Battle Hammer
+								i(163892),	-- 7th Legionnaire's Censer
+								i(163890),	-- 7th Legionnaire's Claymore
+								i(163882),	-- 7th Legionnaire's Dagger
+								i(163885),	-- 7th Legionnaire's Halberd
+								i(163889),	-- 7th Legionnaire's Hand Cannon
+								i(163881),	-- 7th Legionnaire's Longbow
+								i(163887),	-- 7th Legionnaire's Longsword
+								i(163895),	-- 7th Legionnaire's Shield
+								i(163894),	-- 7th Legionnaire's Spellhammer
+								i(163886),	-- 7th Legionnaire's Stave
+								i(163888),	-- 7th Legionnaire's Wand
+								i(163893),	-- 7th Legionnaire's Warglaive
+								i(163883),	-- 7th Legionnaire's Warhammer
 								i(163339),	-- 7th Legionnaire's Hood
 								i(163337),	-- 7th Legionnaire's Amice
 								i(163248),	-- 7th Legionnaire's Robes
@@ -196,7 +211,22 @@ _.ExpansionFeatures =
 					}),
 					qh(53154, {	-- The League Will Lose
 						i(164577, {	-- Warfronts Equipment Cache
-							["groups"] = bubbleDown({["modID"] = 6}, {
+							["groups"] = bubbleDown({["modID"] = 3}, {
+								i(163878),	-- Honorbound Barrier
+								i(163870),	-- Honorbound Bonebreaker
+								i(163868),	-- Honorbound Dagger
+								i(163874),	-- Honorbound Decapitator
+								i(163876),	-- Honorbound Focus
+								i(163880),	-- Honorbound Gladius
+								i(163867),	-- Honorbound Longbow
+								i(163871),	-- Honorbound Pigsticker
+								i(163879),	-- Honorbound Portable Cannon
+								i(163875),	-- Honorbound Protectorate
+								i(163866),	-- Honorbound Skullcleaver
+								i(163869),	-- Honorbound Skullcrusher
+								i(163873),	-- Honorbound Wand
+								i(163872),	-- Honorbound War Staff
+								i(163877),	-- Honorbound Warglaive
 								i(163426),	-- Honorbound Artificer's Guise
 								i(163424),	-- Honorbound Artificer's Amice
 								i(163280),	-- Honorbound Artificer's Robes
@@ -257,7 +287,10 @@ _.ExpansionFeatures =
 							i(163677),	-- Teeny Tiny Orb
 						}),
 						n(142686, {	-- Foulbelly
-							i(163735),	-- Foulbelly
+							["groups"] = {
+								i(163735),	-- Foulbelly
+							},
+							-- ["questID"]  = 
 						}),
 						n(126462, {	-- Fozruk
 							i(163711),	-- Shard of Fozruk
