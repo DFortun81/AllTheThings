@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = 
+_.Instances =
 {
 	{ -- Classic
 		["groups"] = {
@@ -15,7 +15,7 @@ _.Instances =
 								},
 								["qg"] = 6212,	-- Dark Iron Agent
 							}),
-						}),	
+						}),
 						o(142487, {	-- The Sparklematic 5200
 --[[						qr(q(2953, {	-- More Sparklematic Action
 								a(i(122207)),	-- Music Roll: Tinkertown
@@ -33,7 +33,7 @@ _.Instances =
 							}),
 --[[						q(   2951),		-- The Sparklematic 5200!
 							q(   2952),		-- The Sparklematic 5200!	--]]
-						}),	
+						}),
 						qa(26939, {	-- The G-Team
 							["groups"] = {
 							},
@@ -78,22 +78,22 @@ _.Instances =
 						i(9510, {	-- Caverndeep Trudgers
 							["crs"] = {
 								6235,  -- Electrocutioner 6000
-								7800,  -- Mekgineer Thermaplugg 
+								7800,  -- Mekgineer Thermaplugg
 								7079,  -- Viscous Fallout
 							},
 						}),
-						i(9490, {	-- Gizmotron Megachopper 
-							["crs"] = { 
-								6207,  -- Caverndeep Ambusher 
-								6206,  -- Caverndeep Burrower 
-								6212,  -- Dark Iron Agent 
-								6329,  -- Irradiated Pillager 
-								6223,  -- Leprous Defender 
-								6226,  -- Mechano-Flamewalker 
-								6227,  -- Mechano-Frostwalker 
-								6225,  -- Mechano-Tank 
-								6230,  -- Peacekeeper Security Suit 
-							}, 
+						i(9490, {	-- Gizmotron Megachopper
+							["crs"] = {
+								6207,  -- Caverndeep Ambusher
+								6206,  -- Caverndeep Burrower
+								6212,  -- Dark Iron Agent
+								6329,  -- Irradiated Pillager
+								6223,  -- Leprous Defender
+								6226,  -- Mechano-Flamewalker
+								6227,  -- Mechano-Frostwalker
+								6225,  -- Mechano-Tank
+								6230,  -- Peacekeeper Security Suit
+							},
 						}),
 						i(9308, {	-- Grime-Encrusted Object
 							q(2952, { 	-- The Sparklematic 5200!
@@ -142,58 +142,58 @@ _.Instances =
 										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
 									}),
 								}), --]]
-							}),	
+							}),
 						}),
-						i(9489, {	-- Gyromatic Icemaker 
-							["crs"] = { 
-								6232,  -- Arcane Nullifier X-21 
+						i(9489, {	-- Gyromatic Icemaker
+							["crs"] = {
+								6232,  -- Arcane Nullifier X-21
 								6212,  -- Dark Iron Agent
 								6235,  -- Electrocutioner 6000
-								6220,  -- Irradiated Horror 
+								6220,  -- Irradiated Horror
 								6223,  -- Leprous Defender
-								6234,  -- Mechanized Guardian 
-								6233,  -- Mechanized Sentry 
+								6234,  -- Mechanized Guardian
+								6233,  -- Mechanized Sentry
 								6227,  -- Mechano-Frostwalker
 								7800,  -- Mekgineer Thermaplugg
-								6230,  -- Peacekeeper Security Suit 
+								6230,  -- Peacekeeper Security Suit
 								7079,  -- Viscous Fallout
-							}, 
-						}), 
-						i(9487, {	-- Hi-Tech Supergun 
-							["crs"] = { 
-								6232,  -- Arcane Nullifier X-21 
-								6207,  -- Caverndeep Ambusher 
-								6206,  -- Caverndeep Burrower 
-								6212,  -- Dark Iron Agent 
-								6329,  -- Irradiated Pillager 
-								6223,  -- Leprous Defender 
-								6233,  -- Mechanized Sentry 
-								6230,  -- Peacekeeper Security Suit 
-							}, 
-						}), 
+							},
+						}),
+						i(9487, {	-- Hi-Tech Supergun
+							["crs"] = {
+								6232,  -- Arcane Nullifier X-21
+								6207,  -- Caverndeep Ambusher
+								6206,  -- Caverndeep Burrower
+								6212,  -- Dark Iron Agent
+								6329,  -- Irradiated Pillager
+								6223,  -- Leprous Defender
+								6233,  -- Mechanized Sentry
+								6230,  -- Peacekeeper Security Suit
+							},
+						}),
 						i(9491),	-- Hotshot Pilot's Gloves
-						i(9508, {	-- Mechbuilder's Overalls 
-							["crs"] = { 
-								6212,  -- Dark Iron Agent 
-								6223,  -- Leprous Defender 
-								6233,  -- Mechanized Sentry 
-								6230,  -- Peacekeeper Security Suit 
-							}, 
-						}), 
-						i(9488, {	-- Oscillating Power Hammer 
-							["crs"] = { 
-								6232,  -- Arcane Nullifier X-21 
-								6206,  -- Caverndeep Burrower 
-								6211,  -- Caverndeep Reaver 
-								6329,  -- Irradiated Pillager 
-								6234,  -- Mechanized Guardian 
-								6233,  -- Mechanized Sentry 
-								6225,  -- Mechano-Tank 
-							}, 
-						}),i(7360, {	-- Pattern: Dark Leather Gloves 
-							["crs"] = { 
-								6230,  -- Peacekeeper Security Suit  
-							}, 
+						i(9508, {	-- Mechbuilder's Overalls
+							["crs"] = {
+								6212,  -- Dark Iron Agent
+								6223,  -- Leprous Defender
+								6233,  -- Mechanized Sentry
+								6230,  -- Peacekeeper Security Suit
+							},
+						}),
+						i(9488, {	-- Oscillating Power Hammer
+							["crs"] = {
+								6232,  -- Arcane Nullifier X-21
+								6206,  -- Caverndeep Burrower
+								6211,  -- Caverndeep Reaver
+								6329,  -- Irradiated Pillager
+								6234,  -- Mechanized Guardian
+								6233,  -- Mechanized Sentry
+								6225,  -- Mechano-Tank
+							},
+						}),i(7360, {	-- Pattern: Dark Leather Gloves
+							["crs"] = {
+								6230,  -- Peacekeeper Security Suit
+							},
 						}),
 						i(9509, {	-- Petrolspill Leggings
 							["crs"] = {
@@ -261,7 +261,7 @@ _.Instances =
 						i(  9450),	-- Gnomebot Operating Boots
 					})),
 					n(  6228, {			-- Dark Iron Ambassador
-						["groups"] = {	
+						["groups"] = {
 							dr(38, i(9456)),	-- Glass Shooter
 							dr(28, i(9457)),	-- Royal Diplomatic Scepter
 							dr(26, i(9455)),	-- Emissary Cuffs
@@ -273,7 +273,7 @@ _.Instances =
 						["groups"] = {
 							i(141331), -- Vial of Green Goo (TOY!)
 						},
-						["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Head to the last boss in Gnomeregan, and kill him.|r\n|cff3399ffSTEP 2:|r|cff66ccff Go to the back of the pillar on the left side of the entrance as you enter the room, and press the small button.|r\n|cff3399ffSTEP 3:|r|cff66ccff Endgineer Omegaplugg will spawn, with 1.8M health.|r\n|cff3399ffSTEP 4:|r|cff66ccff To stop the bombs from spawning, you must disable the conduits in the room by pressing all the large red buttons in an anticlockwise format. (This is the first conduit on the right as you enter the room.)|r\n|cff3399ffSTEP 5:|r|cff66ccff Kill the boss, and all players can loot the toy. Good luck, have fun!"
+						["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Head to the last boss in Gnomeregan, and kill him.|r\n|cff3399ffSTEP 2:|r|cff66ccff Go to the back of the pillar on the left side of the entrance as you enter the room, and press the small button.|r\n|cff3399ffSTEP 3:|r|cff66ccff Endgineer Omegaplugg will spawn with 8.65M health.|r\n|cff3399ffSTEP 4:|r|cff66ccff To stop the bombs from spawning, you must disable the conduits in the room by pressing all the large red buttons in an anticlockwise format. (This is the first conduit on the right as you enter the room.)|r\n|cff3399ffSTEP 5:|r|cff66ccff Kill the boss, and all players can loot the toy. Good luck, have fun!"
 					}),
 					cr( 7800, e(422, {	-- Mekgineer Thermaplugg
 						ach(634),	-- Gnomeregan
@@ -282,30 +282,30 @@ _.Instances =
 						i( 9492),	-- Electromagnetic Gigaflux Reactivator
 						i( 9461),	-- Charged Gear
 						i( 4415), 	-- Schematic: Craftsman's Monocle
-						i(11828), 	-- Schematic: Pet Bombling	
+						i(11828), 	-- Schematic: Pet Bombling
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
 								un(40, q( 2904, {	-- A Fine Mess
-									un(34, i(9536)),	-- Fairywing Mantle 
+									un(34, i(9536)),	-- Fairywing Mantle
 									un(34, i(9535)),	-- Fire-welded Bracers
 								})),
 								un(40, qa(2930, {	-- Data Rescue
-									un(34, i(9604)),	-- Mechanic's Pipehammer 
+									un(34, i(9604)),	-- Mechanic's Pipehammer
 									un(34, i(9605)),	-- Repairman's Cape
 								})),
 								un(40, qa(2928, { 	-- Gyrodrillmatic Excavationators
-									un(34, i(9609)),	-- Shilly Mitts 
+									un(34, i(9609)),	-- Shilly Mitts
 									un(34, i(9608)),	-- Shoni's Disarming Tool
 								})),
 								un(40, qh(2841, {	-- Rig Wars
-									un(34, i(9623)),	-- Civinad Robes 
+									un(34, i(9623)),	-- Civinad Robes
 									un(34, i(9625)),	-- Dual Reinforced Leggings
 									un(34, i(9624)),	-- Triprunner Dungarees
 								})),
 								un(40, qa(2929, {	-- The Grand Betrayal
-									un(34, i(9623)),	-- Civinad Robes 
+									un(34, i(9623)),	-- Civinad Robes
 									un(34, i(9625)),	-- Dual Reinforced Leggings
 									un(34, i(9624)),	-- Triprunner Dungarees
 								})),
@@ -318,7 +318,7 @@ _.Instances =
 				["mapID"] = 226,
 				["maps"] = { 227, 228, 229 },
 			}),
-		},					
+		},
 		["tierID"] = 1
-	},	
+	},
 };
