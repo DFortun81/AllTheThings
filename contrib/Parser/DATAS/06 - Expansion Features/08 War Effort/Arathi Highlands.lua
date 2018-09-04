@@ -12,78 +12,78 @@
 _.ExpansionFeatures =
 {
 	n(-10057, {	-- War Effort
-		m(1158, {	-- Arathi Highlands
+		m(14, {	-- Arathi Highlands	[Why Blizzard why reuse the old one when you have new mapID's to use]
 			["groups"] = {
-				n(-4, { -- Achievements
+				n(-4, {	-- Achievements
 				}),
-				n(-1, { -- Common Boss Drop
+				n(-1, {	-- Common Boss Drop
 					["groups"] = bubbleDown({["modID"] = 28}, {
 									-- ALLIANCE SET --
-						i(163339), -- 7th Legionnaire's Hood
-						i(163337), -- 7th Legionnaire's Amice
-						i(163248), -- 7th Legionnaire's Robes
-						i(163275), -- 7th Legionnaire's Cuffs
-						i(163341), -- 7th Legionnaire's Handwraps
-						i(163342), -- 7th Legionnaire's Cord
-						i(163264), -- 7th Legionnaire's Legwraps
-						i(163253), -- 7th Legionnaire's Slippers
-						i(163380), -- 7th Legionnaire's Visage
-						i(163377), -- 7th Legionnaire's Leather Mantle
-						i(163251), -- 7th Legionnaire's Vest
-						i(163278), -- 7th Legionnaire's Bracers
-						i(163256), -- 7th Legionnaire's Gloves
-						i(163384), -- 7th Legionnaire's Buckle
-						i(163266), -- 7th Legionnaire's Britches
-						i(163255), -- 7th Legionnaire's Treads
-						i(163394), -- 7th Legionnaire's Helm
-						i(163389), -- 7th Legionnaire's Monnion
-						i(163398), -- 7th Legionnaire's Chainmail
-						i(163277), -- 7th Legionnaire's Bindings
-						i(163397), -- 7th Legionnaire's Handguards
-						i(163401), -- 7th Legionnaire's Cincture
-						i(163265), -- 7th Legionnaire's Leggings
-						i(163400), -- 7th Legionnaire's Sabatons
-						i(163410), -- 7th Legionnaire's Headpiece
-						i(163405), -- 7th Legionnaire's Shoulderplates
-						i(163418), -- 7th Legionnaire's Chestguard
-						i(163403), -- 7th Legionnaire's Armguards
-						i(163414), -- 7th Legionnaire's Gauntlets
-						i(163422), -- 7th Legionnaire's Greatbelt
-						i(163409), -- 7th Legionnaire's Legguards
-						i(163421), -- 7th Legionnaire's Greaves
+						i(163339),	-- 7th Legionnaire's Hood
+						i(163337),	-- 7th Legionnaire's Amice
+						i(163248),	-- 7th Legionnaire's Robes
+						i(163275),	-- 7th Legionnaire's Cuffs
+						i(163341),	-- 7th Legionnaire's Handwraps
+						i(163342),	-- 7th Legionnaire's Cord
+						i(163264),	-- 7th Legionnaire's Legwraps
+						i(163253),	-- 7th Legionnaire's Slippers
+						i(163380),	-- 7th Legionnaire's Visage
+						i(163377),	-- 7th Legionnaire's Leather Mantle
+						i(163251),	-- 7th Legionnaire's Vest
+						i(163278),	-- 7th Legionnaire's Bracers
+						i(163256),	-- 7th Legionnaire's Gloves
+						i(163384),	-- 7th Legionnaire's Buckle
+						i(163266),	-- 7th Legionnaire's Britches
+						i(163255),	-- 7th Legionnaire's Treads
+						i(163394),	-- 7th Legionnaire's Helm
+						i(163389),	-- 7th Legionnaire's Monnion
+						i(163398),	-- 7th Legionnaire's Chainmail
+						i(163277),	-- 7th Legionnaire's Bindings
+						i(163397),	-- 7th Legionnaire's Handguards
+						i(163401),	-- 7th Legionnaire's Cincture
+						i(163265),	-- 7th Legionnaire's Leggings
+						i(163400),	-- 7th Legionnaire's Sabatons
+						i(163410),	-- 7th Legionnaire's Headpiece
+						i(163405),	-- 7th Legionnaire's Shoulderplates
+						i(163418),	-- 7th Legionnaire's Chestguard
+						i(163403),	-- 7th Legionnaire's Armguards
+						i(163414),	-- 7th Legionnaire's Gauntlets
+						i(163422),	-- 7th Legionnaire's Greatbelt
+						i(163409),	-- 7th Legionnaire's Legguards
+						i(163421),	-- 7th Legionnaire's Greaves
 									-- HORDE SET --
-						i(163426), -- Honorbound Artificer's Guise
-						i(163424), -- Honorbound Artificer's Amice
-						i(163280), -- Honorbound Artificer's Robes
-						i(163306), -- Honorbound Artificer's Cuffs
-						i(163428), -- Honorbound Artificer's Mitts
-						i(163430), -- Honorbound Artificer's Cord
-						i(163296), -- Honorbound Artificer's Legwraps
-						i(163285), -- Honorbound Artificer's Sandals
-						i(163435), -- Honorbound Outrider's Headpiece
-						i(163432), -- Honorbound Outrider's Shoulderguards
-						i(163283), -- Honorbound Outrider's Tunic
-						i(163309), -- Honorbound Outrider's Bracers
-						i(163437), -- Honorbound Outrider's Gloves
-						i(163439), -- Honorbound Outrider's Buckle
-						i(163298), -- Honorbound Outrider's Pants
-						i(163438), -- Honorbound Outrider's Boots
-						i(163446), -- Honorbound Vanguard's Skullguard
-						i(163441), -- Honorbound Vanguard's Shoulderguards
-						i(163282), -- Honorbound Vanguard's Chainmail
-						i(163308), -- Honorbound Vanguard's Bindings
-						i(163448), -- Honorbound Vanguard's Handguards
-						i(163451), -- Honorbound Vanguard's Clasp
-						i(163445), -- Honorbound Vanguard's Leggings
-						i(163449), -- Honorbound Vanguard's Sabatons
-						i(163456), -- Honorbound Centurion's Greathelm
-						i(163453), -- Honorbound Centurion's Shoulderplates
-						i(163459), -- Honorbound Centurion's Breastplate
-						i(163307), -- Honorbound Centurion's Vambraces
-						i(163458), -- Honorbound Centurion's Gauntlets
-						i(163461), -- Honorbound Centurion's Greatbelt
-						i(163455), -- Honorbound Centurion's Legplates
-						i(163460), -- Honorbound Centurion's Greaves
+						i(163426),	-- Honorbound Artificer's Guise
+						i(163424),	-- Honorbound Artificer's Amice
+						i(163280),	-- Honorbound Artificer's Robes
+						i(163306),	-- Honorbound Artificer's Cuffs
+						i(163428),	-- Honorbound Artificer's Mitts
+						i(163430),	-- Honorbound Artificer's Cord
+						i(163296),	-- Honorbound Artificer's Legwraps
+						i(163285),	-- Honorbound Artificer's Sandals
+						i(163435),	-- Honorbound Outrider's Headpiece
+						i(163432),	-- Honorbound Outrider's Shoulderguards
+						i(163283),	-- Honorbound Outrider's Tunic
+						i(163309),	-- Honorbound Outrider's Bracers
+						i(163437),	-- Honorbound Outrider's Gloves
+						i(163439),	-- Honorbound Outrider's Buckle
+						i(163298),	-- Honorbound Outrider's Pants
+						i(163438),	-- Honorbound Outrider's Boots
+						i(163446),	-- Honorbound Vanguard's Skullguard
+						i(163441),	-- Honorbound Vanguard's Shoulderguards
+						i(163282),	-- Honorbound Vanguard's Chainmail
+						i(163308),	-- Honorbound Vanguard's Bindings
+						i(163448),	-- Honorbound Vanguard's Handguards
+						i(163451),	-- Honorbound Vanguard's Clasp
+						i(163445),	-- Honorbound Vanguard's Leggings
+						i(163449),	-- Honorbound Vanguard's Sabatons
+						i(163456),	-- Honorbound Centurion's Greathelm
+						i(163453),	-- Honorbound Centurion's Shoulderplates
+						i(163459),	-- Honorbound Centurion's Breastplate
+						i(163307),	-- Honorbound Centurion's Vambraces
+						i(163458),	-- Honorbound Centurion's Gauntlets
+						i(163461),	-- Honorbound Centurion's Greatbelt
+						i(163455),	-- Honorbound Centurion's Legplates
+						i(163460),	-- Honorbound Centurion's Greaves
 					}),
 					["crs"] = {
 						142709, -- Beastrider Kama
@@ -121,264 +121,380 @@ _.ExpansionFeatures =
 					},
 					["description"] = "These can drop off any rare or world boss in the zone.",
 				}),
-				--[[
-				n(-17, { -- Quests
-					q(53148, { -- Boulderfist Beatdown
+				n(-17, {	-- Quests
+					q(53212, {	-- Back to Zuldazar
+						["groups"] = {
+							spell(279443, {	-- Warfront: The Battle for Stromgarde [H]	
+								["questID"] = 53220,
+								["sourceQuests"] = { 53210 },	-- Touring the Front [H]
+							}),
+						},
+						["sourceQuests"] = { 53210 },	-- Touring the Front [H]
+						["qg"] = 143019,	-- Wistel Sliversnitch
+						["coord"] = {
+							26.11, 35.59
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					q(53148, {	-- Boulderfist Beatdown
 						currency(1560),
 					}),
-					qa(53153, { -- Death to the Defilers
-						i(164578, { -- Warfronts Equipment Cache
-							["groups"] = {
-								i(163339), -- 7th Legionnaire's Hood
-								i(163337), -- 7th Legionnaire's Amice
-								i(163248), -- 7th Legionnaire's Robes
-								i(163275), -- 7th Legionnaire's Cuffs
-								i(163341), -- 7th Legionnaire's Handwraps
-								i(163342), -- 7th Legionnaire's Cord
-								i(163264), -- 7th Legionnaire's Legwraps
-								i(163253), -- 7th Legionnaire's Slippers
-								i(163380), -- 7th Legionnaire's Visage
-								i(163377), -- 7th Legionnaire's Leather Mantle
-								i(163251), -- 7th Legionnaire's Vest
-								i(163278), -- 7th Legionnaire's Bracers
-								i(163256), -- 7th Legionnaire's Gloves
-								i(163384), -- 7th Legionnaire's Buckle
-								i(163266), -- 7th Legionnaire's Britches
-								i(163383), -- 7th Legionnaire's Boots
-								i(163394), -- 7th Legionnaire's Helm
-								i(163389), -- 7th Legionnaire's Monnion
-								i(163398), -- 7th Legionnaire's Chainmail
-								i(163277), -- 7th Legionnaire's Bindings
-								i(163397), -- 7th Legionnaire's Handguards
-								i(163401), -- 7th Legionnaire's Cincture
-								i(163265), -- 7th Legionnaire's Leggings
-								i(163400), -- 7th Legionnaire's Sabatons
-								i(163410), -- 7th Legionnaire's Headpiece
-								i(163405), -- 7th Legionnaire's Shoulderplates
-								i(163418), -- 7th Legionnaire's Chestguard
-								i(163403), -- 7th Legionnaire's Armguards
-								i(163414), -- 7th Legionnaire's Gauntlets
-								i(163422), -- 7th Legionnaire's Greatbelt
-								i(163409), -- 7th Legionnaire's Legguards
-								i(163421), -- 7th Legionnaire's Greaves
-							},
+					qa(53153, {	-- Death to the Defilers
+						i(164578, {	-- Warfronts Equipment Cache
+							["groups"] = bubbleDown({["modID"] = 6}, {
+								i(163339),	-- 7th Legionnaire's Hood
+								i(163337),	-- 7th Legionnaire's Amice
+								i(163248),	-- 7th Legionnaire's Robes
+								i(163275),	-- 7th Legionnaire's Cuffs
+								i(163341),	-- 7th Legionnaire's Handwraps
+								i(163342),	-- 7th Legionnaire's Cord
+								i(163264),	-- 7th Legionnaire's Legwraps
+								i(163253),	-- 7th Legionnaire's Slippers
+								i(163380),	-- 7th Legionnaire's Visage
+								i(163377),	-- 7th Legionnaire's Leather Mantle
+								i(163251),	-- 7th Legionnaire's Vest
+								i(163278),	-- 7th Legionnaire's Bracers
+								i(163256),	-- 7th Legionnaire's Gloves
+								i(163384),	-- 7th Legionnaire's Buckle
+								i(163266),	-- 7th Legionnaire's Britches
+								i(163383),	-- 7th Legionnaire's Boots
+								i(163394),	-- 7th Legionnaire's Helm
+								i(163389),	-- 7th Legionnaire's Monnion
+								i(163398),	-- 7th Legionnaire's Chainmail
+								i(163277),	-- 7th Legionnaire's Bindings
+								i(163397),	-- 7th Legionnaire's Handguards
+								i(163401),	-- 7th Legionnaire's Cincture
+								i(163265),	-- 7th Legionnaire's Leggings
+								i(163400),	-- 7th Legionnaire's Sabatons
+								i(163410),	-- 7th Legionnaire's Headpiece
+								i(163405),	-- 7th Legionnaire's Shoulderplates
+								i(163418),	-- 7th Legionnaire's Chestguard
+								i(163403),	-- 7th Legionnaire's Armguards
+								i(163414),	-- 7th Legionnaire's Gauntlets
+								i(163422),	-- 7th Legionnaire's Greatbelt
+								i(163409),	-- 7th Legionnaire's Legguards
+								i(163421),	-- 7th Legionnaire's Greaves
+							}),
 						}),
 					}),
-					q(53179, { -- Executing Exorcisms
+					q(53179, {	-- Executing Exorcisms
 						currency(1553),
 					}),
-					q(53173, { -- Sins of the Syndicate
+					q(53173, {	-- Sins of the Syndicate
 						currency(1560),
 					}),
-					q(53192, { -- Twice-Exiled
+					q(53210, {	-- Touring the Front [H]
+						["sourceQuests"] = { 53208 },	-- To The Front
+						["qg"] = 143019,	-- Wistel Sliversnitch
+						["coord"] = {
+							26.11, 35.59
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					q(53192, {	-- Twice-Exiled
 						currency(1560),
 					}),
-					qh(53154, { -- The League Will Lose
-						i(164577, { -- Warfronts Equipment Cache
+					qh(53154, {	-- The League Will Lose
+						i(164577, {	-- Warfronts Equipment Cache
+							["groups"] = bubbleDown({["modID"] = 6}, {
+								i(163426),	-- Honorbound Artificer's Guise
+								i(163424),	-- Honorbound Artificer's Amice
+								i(163280),	-- Honorbound Artificer's Robes
+								i(163306),	-- Honorbound Artificer's Cuffs
+								i(163428),	-- Honorbound Artificer's Mitts
+								i(163430),	-- Honorbound Artificer's Cord
+								i(163296),	-- Honorbound Artificer's Legwraps
+								i(163285),	-- Honorbound Artificer's Sandals
+								i(163435),	-- Honorbound Outrider's Headpiece
+								i(163432),	-- Honorbound Outrider's Shoulderguards
+								i(163283),	-- Honorbound Outrider's Tunic
+								i(163309),	-- Honorbound Outrider's Bracers
+								i(163437),	-- Honorbound Outrider's Gloves
+								i(163439),	-- Honorbound Outrider's Buckle
+								i(163298),	-- Honorbound Outrider's Pants
+								i(163438),	-- Honorbound Outrider's Boots
+								i(163446),	-- Honorbound Vanguard's Skullguard
+								i(163441),	-- Honorbound Vanguard's Shoulderguards
+								i(163282),	-- Honorbound Vanguard's Chainmail
+								i(163308),	-- Honorbound Vanguard's Bindings
+								i(163448),	-- Honorbound Vanguard's Handguards
+								i(163451),	-- Honorbound Vanguard's Clasp
+								i(163445),	-- Honorbound Vanguard's Leggings
+								i(163449),	-- Honorbound Vanguard's Sabatons
+								i(163456),	-- Honorbound Centurion's Greathelm
+								i(163453),	-- Honorbound Centurion's Shoulderplates
+								i(163459),	-- Honorbound Centurion's Breastplate
+								i(163307),	-- Honorbound Centurion's Vambraces
+								i(163458),	-- Honorbound Centurion's Gauntlets
+								i(163461),	-- Honorbound Centurion's Greatbelt
+								i(163445),	-- Honorbound Vanguard's Leggings
+								i(163460),	-- Honorbound Centurion's Greaves
+							}),
+						}),
+					}),
+					q(53150, {	-- Wiping Out the Winterbark
+						currency(1560),
+					}),
+				}),
+				n(-16, {	-- Rares
+					["groups"] = {
+						n(142709, {	-- Beastrider Kama
+							i(163644),	-- Swift Albino Raptor
+						}),
+						n(126427, {	-- Branchlord Aldrus
 							["groups"] = {
-								i(163426), -- Honorbound Artificer's Guise
-								i(163424), -- Honorbound Artificer's Amice
-								i(163280), -- Honorbound Artificer's Robes
-								i(163306), -- Honorbound Artificer's Cuffs
-								i(163428), -- Honorbound Artificer's Mitts
-								i(163430), -- Honorbound Artificer's Cord
-								i(163296), -- Honorbound Artificer's Legwraps
-								i(163285), -- Honorbound Artificer's Sandals
-								i(163435), -- Honorbound Outrider's Headpiece
-								i(163432), -- Honorbound Outrider's Shoulderguards
-								i(163283), -- Honorbound Outrider's Tunic
-								i(163309), -- Honorbound Outrider's Bracers
-								i(163437), -- Honorbound Outrider's Gloves
-								i(163439), -- Honorbound Outrider's Buckle
-								i(163298), -- Honorbound Outrider's Pants
-								i(163438), -- Honorbound Outrider's Boots
-								i(163446), -- Honorbound Vanguard's Skullguard
-								i(163441), -- Honorbound Vanguard's Shoulderguards
-								i(163282), -- Honorbound Vanguard's Chainmail
-								i(163308), -- Honorbound Vanguard's Bindings
-								i(163448), -- Honorbound Vanguard's Handguards
-								i(163451), -- Honorbound Vanguard's Clasp
-								i(163445), -- Honorbound Vanguard's Leggings
-								i(163449), -- Honorbound Vanguard's Sabatons
-								i(163456), -- Honorbound Centurion's Greathelm
-								i(163453), -- Honorbound Centurion's Shoulderplates
-								i(163459), -- Honorbound Centurion's Breastplate
-								i(163307), -- Honorbound Centurion's Vambraces
-								i(163458), -- Honorbound Centurion's Gauntlets
-								i(163461), -- Honorbound Centurion's Greatbelt
-								i(163445), -- Honorbound Vanguard's Leggings
-								i(163460), -- Honorbound Centurion's Greaves
+								i(163650),	-- Aldrusian Sproutling
 							},
+							["questID"] 53505,
 						}),
-					}),
-					q(53150, { -- Wiping Out the Winterbark
-						currency(1560),
-					}),
-				}),
-				n(-16, { -- Rares
-					["groups"] = {
-						n(142709, { -- Beastrider Kama
-							i(163644), -- Swift Albino Raptor
+						n(142688, {	-- Darbel Montrose
+							i(163652),	-- Tiny Grimoire
 						}),
-						n(126427, { -- Branchlord Aldrus
-							i(163650), -- Aldrusian Sproutling
+						n(142741, {	-- Doomrider Helgrim
+							i(163579),	-- Highland Mustang
 						}),
-						n(142688, { -- Darbel Montrose
-							i(163652), -- Tiny Grimoire
+						n(141668, {	-- Echo of Myzrael
+							i(163677),	-- Teeny Tiny Orb
 						}),
-						n(142741, { -- Doomrider Helgrim
-							i(163579), -- Highland Mustang
+						n(142686, {	-- Foulbelly
+							i(163735),	-- Foulbelly
 						}),
-						n(141668, { -- Echo of Myzrael
-							i(163677), -- Teeny Tiny Orb
+						n(126462, {	-- Fozruk
+							i(163711),	-- Shard of Fozruk
 						}),
-						n(142686, { -- Foulbelly
-							i(163735), -- Foulbelly
+						n(142662, {	-- Geomancer Flintdagger
+							i(163713),	-- Brazier Cap
 						}),
-						n(126462, { -- Fozruk
-							i(163711), -- Shard of Fozruk
+						n(142725, {	-- Horrific Apparition
+							["groups"] = {
+								i(163736),	-- Spectral Visage
+							},
+							["questID"] = 53512,
 						}),
-						n(142662, { -- Geomancer Flintdagger
-							i(163713), -- Brazier Cap
+						n(142739, {	-- Knight-Captaian Aldrin
+							i(163578),	-- Broken Highland Mustang
 						}),
-						n(142725, { -- Horrific  Apparition
-							i(163736), -- Spectral Visage
+						n(135058, {	-- Kor'gresh Coldrage
+							i(163744),	-- Coldrage's Cooler
 						}),
-						n(142739, { -- Knight-Captaian Aldrin
-							i(163578), -- Broken Highland Mustang
+						n(142684, {	-- Kovork
+							i(163750),	-- Kovork Kostume
 						}),
-						n(135058, { -- Kor'gresh Coldrage
-							i(163744), -- Coldrage's Cooler
+						n(142716, {	-- Man-Hunter Rog
+							i(163712),	-- Mana-Warped Egg
 						}),
-						n(142684, { -- Kovork
-							i(163750), -- Kovork Kostume
+						n(132965, {	-- Molok the Crusher
+							i(163775),	-- Molok Morion
 						}),
-						n(142716, { -- Man-Hunter Rog
-							i(163712), -- Mana-Warped Egg
+						n(142692, {	-- Nimar the Slayer
+							i(163706),	-- Witherbark Direwing
 						}),
-						n(132965, { -- Molok the Crusher
-							i(163775), -- Molok Morion
+						n(132074, {	-- Overseer Krix
+							["groups"] = {
+								i(163646),	-- Lil' Donkey
+							},
+							["questID"] = 53518,
 						}),
-						n(142692, { -- Nimar the Slayer
-							i(163706), -- Witherbark Direwing
+						n(142361, {	-- Plaguefeather
+							i(163690),	-- Plague Egg
 						}),
-						n(132074, { -- Overseer Krix
-							i(163646), -- Lil' Donkey
+						n(142321, {	-- Ragebeak
+							i(163689),	-- Angry Egg
 						}),
-						n(142361, { -- Plaguefeather
-							i(163690), -- Plague Egg
+						n(142683, {	-- Ruul Onestone
+							i(163741),	-- Magic Fun Rock
 						}),
-						n(142321, { -- Ragebeak
-							i(163689), -- Angry Egg
+						n(142690, {	-- Singer
+							i(163738),	-- Syndicate Mask
 						}),
-						n(142683, { -- Ruul Onestone
-							i(163741), -- Magic Fun Rock
+						n(142312, {	-- Skullripper
+							i(163645),	-- Skullripper
 						}),
-						n(142690, { -- Singer
-							i(163738), -- Syndicate Mask
+						n(142301, {	-- Venomarus
+							i(163648),	-- Fuzzy Creepling
 						}),
-						n(142312, { -- Skullripper
-							i(163645), -- Skullripper
+						n(142251, {	-- Yogursa
+							i(163684),	-- Scabby
 						}),
-						n(142301, { -- Venomarus
-							i(163648), -- Fuzzy Creepling
-						}),
-						n(142251, { -- Yogursa
-							i(163684), -- Scabby
-						}),
-						n(142682, { -- Zalas Witherbark <Warband Leader>
-							i(163745), -- Witherbark Gong
+						n(142682, {	-- Zalas Witherbark <Warband Leader>
+							i(163745),	-- Witherbark Gong
 						}),
 					},
 				}),
-				n(-2, { -- Vendors
+				--[[ There's suppose to be vendors, but we'll see
+				n(-2, {	-- Vendors
 				}),
-				n(-227, { -- Victory
-					["groups"] = {
+				--]]
+				n(-227, {	-- Victory
+					["groups"] = bubbleDown({["modID"] = 2}, {
 									-- ALLIANCE SET --
-						i(163339), -- 7th Legionnaire's Hood
-						i(163337), -- 7th Legionnaire's Amice
-						i(163248), -- 7th Legionnaire's Robes
-						i(163275), -- 7th Legionnaire's Cuffs
-						i(163341), -- 7th Legionnaire's Handwraps
-						i(163342), -- 7th Legionnaire's Cord
-						i(163264), -- 7th Legionnaire's Legwraps
-						i(163253), -- 7th Legionnaire's Slippers
-						i(163380), -- 7th Legionnaire's Visage
-						i(163377), -- 7th Legionnaire's Leather Mantle
-						i(163251), -- 7th Legionnaire's Vest
-						i(163278), -- 7th Legionnaire's Bracers
-						i(163256), -- 7th Legionnaire's Gloves
-						i(163384), -- 7th Legionnaire's Buckle
-						i(163266), -- 7th Legionnaire's Britches
-						i(163255), -- 7th Legionnaire's Treads
-						i(163394), -- 7th Legionnaire's Helm
-						i(163389), -- 7th Legionnaire's Monnion
-						i(163398), -- 7th Legionnaire's Chainmail
-						i(163277), -- 7th Legionnaire's Bindings
-						i(163397), -- 7th Legionnaire's Handguards
-						i(163401), -- 7th Legionnaire's Cincture
-						i(163265), -- 7th Legionnaire's Leggings
-						i(163400), -- 7th Legionnaire's Sabatons
-						i(163410), -- 7th Legionnaire's Headpiece
-						i(163405), -- 7th Legionnaire's Shoulderplates
-						i(163418), -- 7th Legionnaire's Chestguard
-						i(163403), -- 7th Legionnaire's Armguards
-						i(163414), -- 7th Legionnaire's Gauntlets
-						i(163422), -- 7th Legionnaire's Greatbelt
-						i(163409), -- 7th Legionnaire's Legguards
-						i(163421), -- 7th Legionnaire's Greaves
+						i(163339),	-- 7th Legionnaire's Hood
+						i(163337),	-- 7th Legionnaire's Amice
+						i(163248),	-- 7th Legionnaire's Robes
+						i(163275),	-- 7th Legionnaire's Cuffs
+						i(163341),	-- 7th Legionnaire's Handwraps
+						i(163342),	-- 7th Legionnaire's Cord
+						i(163264),	-- 7th Legionnaire's Legwraps
+						i(163253),	-- 7th Legionnaire's Slippers
+						i(163380),	-- 7th Legionnaire's Visage
+						i(163377),	-- 7th Legionnaire's Leather Mantle
+						i(163251),	-- 7th Legionnaire's Vest
+						i(163278),	-- 7th Legionnaire's Bracers
+						i(163256),	-- 7th Legionnaire's Gloves
+						i(163384),	-- 7th Legionnaire's Buckle
+						i(163266),	-- 7th Legionnaire's Britches
+						i(163255),	-- 7th Legionnaire's Treads
+						i(163394),	-- 7th Legionnaire's Helm
+						i(163389),	-- 7th Legionnaire's Monnion
+						i(163398),	-- 7th Legionnaire's Chainmail
+						i(163277),	-- 7th Legionnaire's Bindings
+						i(163397),	-- 7th Legionnaire's Handguards
+						i(163401),	-- 7th Legionnaire's Cincture
+						i(163265),	-- 7th Legionnaire's Leggings
+						i(163400),	-- 7th Legionnaire's Sabatons
+						i(163410),	-- 7th Legionnaire's Headpiece
+						i(163405),	-- 7th Legionnaire's Shoulderplates
+						i(163418),	-- 7th Legionnaire's Chestguard
+						i(163403),	-- 7th Legionnaire's Armguards
+						i(163414),	-- 7th Legionnaire's Gauntlets
+						i(163422),	-- 7th Legionnaire's Greatbelt
+						i(163409),	-- 7th Legionnaire's Legguards
+						i(163421),	-- 7th Legionnaire's Greaves
 									-- HORDE SET --
-						i(163426), -- Honorbound Artificer's Guise
-						i(163424), -- Honorbound Artificer's Amice
-						i(163280), -- Honorbound Artificer's Robes
-						i(163306), -- Honorbound Artificer's Cuffs
-						i(163428), -- Honorbound Artificer's Mitts
-						i(163430), -- Honorbound Artificer's Cord
-						i(163296), -- Honorbound Artificer's Legwraps
-						i(163285), -- Honorbound Artificer's Sandals
-						i(163435), -- Honorbound Outrider's Headpiece
-						i(163432), -- Honorbound Outrider's Shoulderguards
-						i(163283), -- Honorbound Outrider's Tunic
-						i(163309), -- Honorbound Outrider's Bracers
-						i(163437), -- Honorbound Outrider's Gloves
-						i(163439), -- Honorbound Outrider's Buckle
-						i(163298), -- Honorbound Outrider's Pants
-						i(163438), -- Honorbound Outrider's Boots
-						i(163446), -- Honorbound Vanguard's Skullguard
-						i(163441), -- Honorbound Vanguard's Shoulderguards
-						i(163282), -- Honorbound Vanguard's Chainmail
-						i(163308), -- Honorbound Vanguard's Bindings
-						i(163448), -- Honorbound Vanguard's Handguards
-						i(163451), -- Honorbound Vanguard's Clasp
-						i(163445), -- Honorbound Vanguard's Leggings
-						i(163449), -- Honorbound Vanguard's Sabatons
-						i(163456), -- Honorbound Centurion's Greathelm
-						i(163453), -- Honorbound Centurion's Shoulderplates
-						i(163459), -- Honorbound Centurion's Breastplate
-						i(163307), -- Honorbound Centurion's Vambraces
-						i(163458), -- Honorbound Centurion's Gauntlets
-						i(163461), -- Honorbound Centurion's Greatbelt
-						i(163455), -- Honorbound Centurion's Legplates
-						i(163460), -- Honorbound Centurion's Greaves
-					},
+						i(163426),	-- Honorbound Artificer's Guise
+						i(163424),	-- Honorbound Artificer's Amice
+						i(163280),	-- Honorbound Artificer's Robes
+						i(163306),	-- Honorbound Artificer's Cuffs
+						i(163428),	-- Honorbound Artificer's Mitts
+						i(163430),	-- Honorbound Artificer's Cord
+						i(163296),	-- Honorbound Artificer's Legwraps
+						i(163285),	-- Honorbound Artificer's Sandals
+						i(163435),	-- Honorbound Outrider's Headpiece
+						i(163432),	-- Honorbound Outrider's Shoulderguards
+						i(163283),	-- Honorbound Outrider's Tunic
+						i(163309),	-- Honorbound Outrider's Bracers
+						i(163437),	-- Honorbound Outrider's Gloves
+						i(163439),	-- Honorbound Outrider's Buckle
+						i(163298),	-- Honorbound Outrider's Pants
+						i(163438),	-- Honorbound Outrider's Boots
+						i(163446),	-- Honorbound Vanguard's Skullguard
+						i(163441),	-- Honorbound Vanguard's Shoulderguards
+						i(163282),	-- Honorbound Vanguard's Chainmail
+						i(163308),	-- Honorbound Vanguard's Bindings
+						i(163448),	-- Honorbound Vanguard's Handguards
+						i(163451),	-- Honorbound Vanguard's Clasp
+						i(163445),	-- Honorbound Vanguard's Leggings
+						i(163449),	-- Honorbound Vanguard's Sabatons
+						i(163456),	-- Honorbound Centurion's Greathelm
+						i(163453),	-- Honorbound Centurion's Shoulderplates
+						i(163459),	-- Honorbound Centurion's Breastplate
+						i(163307),	-- Honorbound Centurion's Vambraces
+						i(163458),	-- Honorbound Centurion's Gauntlets
+						i(163461),	-- Honorbound Centurion's Greatbelt
+						i(163455),	-- Honorbound Centurion's Legplates
+						i(163460),	-- Honorbound Centurion's Greaves
+					}),
 					["icon"] = "Interface\\Icons\\achievement_bg_abshutout",
 					["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
 				}),
-				n(-34, { -- World Quests
-					qa(52847), -- Doom's Howl
-					qh(52848), -- The Lion's Roar
+				n(-34, {	-- World Quests
+					qa(52847),	-- Doom's Howl
+					qh(52848),	-- The Lion's Roar
 				}),
-				--]]
 			},
 			["lvl"] = 120,	
 			["achievementID"] = 12874, -- An Eventful Battle
 			["description"] = "|cff66ccffLocated in the Arathi Highlands, Stromgarde is one of the key locations in the struggle for controlling of the Eastern Kingdoms. For the Alliance, Stromgarde sits in a critical defensive position. Following the battle for Lordaeron, the Horde threat still looms over the continent and holding Stromgarde will be key if you hope to keep the Horde's aggression at bay.\n\nFor the Horde, securing Stromgarde would set the stage for an assault on the heart of the Eastern Kingdoms and serve as a launching point for a campaign against the worgen of the kingdom of Gilneas. This location is also key in the defense of the blood elven capital, Silvermoon City, in the north.|r",
-			["maps"] = { -- MapID tuning once BfA hits
+			["maps"] = {	-- MapID tuning once BfA hits
 				1044,
 				943,
 				906,
 			},
+		}),
+		m(1163, {	-- Dazar'alor
+			["groups"] = {
+				n(-17, {	-- Quests
+					["groups"] = {
+						n(-229, {	-- Weekly
+							["groups"] = {
+								q(53416, {	-- Warfront: The Battle For Stromgarde
+									["groups"] = {
+										i(164577, {	-- Warfronts Equipment Cache
+											["groups"] = {
+												i(163426),	-- Honorbound Artificer's Guise
+												i(163424),	-- Honorbound Artificer's Amice
+												i(163280),	-- Honorbound Artificer's Robes
+												i(163306),	-- Honorbound Artificer's Cuffs
+												i(163428),	-- Honorbound Artificer's Mitts
+												i(163430),	-- Honorbound Artificer's Cord
+												i(163296),	-- Honorbound Artificer's Legwraps
+												i(163285),	-- Honorbound Artificer's Sandals
+												i(163435),	-- Honorbound Outrider's Headpiece
+												i(163432),	-- Honorbound Outrider's Shoulderguards
+												i(163283),	-- Honorbound Outrider's Tunic
+												i(163309),	-- Honorbound Outrider's Bracers
+												i(163437),	-- Honorbound Outrider's Gloves
+												i(163439),	-- Honorbound Outrider's Buckle
+												i(163298),	-- Honorbound Outrider's Pants
+												i(163438),	-- Honorbound Outrider's Boots
+												i(163446),	-- Honorbound Vanguard's Skullguard
+												i(163441),	-- Honorbound Vanguard's Shoulderguards
+												i(163282),	-- Honorbound Vanguard's Chainmail
+												i(163308),	-- Honorbound Vanguard's Bindings
+												i(163448),	-- Honorbound Vanguard's Handguards
+												i(163451),	-- Honorbound Vanguard's Clasp
+												i(163445),	-- Honorbound Vanguard's Leggings
+												i(163449),	-- Honorbound Vanguard's Sabatons
+												i(163456),	-- Honorbound Centurion's Greathelm
+												i(163453),	-- Honorbound Centurion's Shoulderplates
+												i(163459),	-- Honorbound Centurion's Breastplate
+												i(163307),	-- Honorbound Centurion's Vambraces
+												i(163458),	-- Honorbound Centurion's Gauntlets
+												i(163461),	-- Honorbound Centurion's Greatbelt
+												i(163455),	-- Honorbound Centurion's Legplates
+												i(163460),	-- Honorbound Centurion's Greaves
+											},
+										}),
+									},
+									["sourceQuests"] = { 53212 },	-- Back to Zuldazar
+									["qg"] = 138949,	-- Throk <Recruitment Officer>
+									["coord"] = {
+										52.97, 94.35
+									},
+								}),
+								q(52930, {	-- Wartime Donation: Gold
+									["qg"] = 142157,	-- Paymasteer Grintooth
+									["coord"] = {
+										51.71, 95.55
+									},
+									["repeatable"] = true,
+									["isWeekly"] = true,
+								}),
+							},
+						}),
+						q(53208, {	-- To The Front
+							["sourceQuests"] = { 138949 },	-- The Warfront Looms
+							["qg"] = 138949,	-- Throk <Recruitment Officer>
+							["coord"] = {
+								52.97, 94.35
+							},
+						}),
+						q(53209, {	-- Warfront Contribution
+							["qg"] = 138949,	-- Throk <Recruitment Officer>
+							["coord"] = {
+								52.97, 94.35
+							},
+						}),
+						q(53207, {	-- The Warfront Looms
+							["qg"] = 138949,	-- Throk <Recruitment Officer>
+							["coord"] = {
+								52.97, 94.35
+							},
+						}),
+					},
+				}),
+			},
+			["races"] = HORDE_ONLY,
 		}),
 	}),
 };

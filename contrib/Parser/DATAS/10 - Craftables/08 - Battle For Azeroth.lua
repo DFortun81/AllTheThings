@@ -49,9 +49,19 @@ _.Craftables =
 			i(152835),	-- Stormsteel Dagger
 			i(161889),	-- Stormsteel Girdle
 			i(161888),	-- Stormsteel Legguards
-			i(162655),	-- Stormsteel Saber
+			i(162655, {	-- Stormsteel Saber [What you actually craft]
+				["bonusID"] = 4927,
+				["s"] = 98603,
+			}),
 			i(152819),	-- Stormsteel Shield
 			i(152834),	-- Stormsteel Spear
+			-- NOTE: This category is here because Blizzard messed up and made the Crafting UI show one sourceID while crafting it gives another.  When you learn one you learn both.  Having to place it under this category so that it properly moves them out of unsorted since two itemID's can't be in the same section even with different sourceID's.
+			n(-77, {	-- Special
+				i(162655, {	-- Stormsteel Saber	[Listed in the Blizzard UI and gives credit]
+					["s"] = 98596,
+					["bonusID"] = 3524,
+				}),
+			}),
 		}),
 		n(-182, { -- Enchanting
 			i(152874),	-- Enchanter's Sorcerous Scepter

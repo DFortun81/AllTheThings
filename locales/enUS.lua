@@ -1007,7 +1007,7 @@ AllTheThings.Locales.enUS = {
 		[-173] = PLAYER_DIFFICULTY_TIMEWALKER,									-- Timewalking
 		[-174] = CALENDAR_FILTER_DARKMOON,										-- Darkmoon Faire
 		[-175] = CALENDAR_REPEAT_MONTHLY.." "..WORLD.." "..EVENTS_LABEL,		-- Monthly World Events
-		[-176] = CALENDAR_REPEAT_WEEKLY.." "..WORLD.." "..EVENTS_LABEL,			-- Weekly World Events
+		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
 		[-177] = GetSpellInfo(57055).." "..WORLD.." "..EVENTS_LABEL,			-- Mini Holidays
 -- Professions
 		[-178] = GetSpellInfo(20221), 											-- Goblin Engineering"Goblin Engineering",
@@ -1061,6 +1061,7 @@ AllTheThings.Locales.enUS = {
 		[-226] = TRANSMOG_SOURCE_4,												-- World Drop
 		[-227] = GetSpellInfo(109382),											-- Victory
 		[-228] = GetSpellInfo(218950),											-- Flight Path
+		[-229] = CALENDAR_REPEAT_WEEKLY,										-- Weekly
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
