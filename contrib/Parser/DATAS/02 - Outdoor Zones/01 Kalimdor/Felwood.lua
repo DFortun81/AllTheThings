@@ -792,11 +792,21 @@ _.Zones =
 							dr(06.0, i(10167)),	-- Templar Boots
 							dr(04.0, i(10264)),	-- Adventurer's Tunic
 							dr(02.0, i(9951)),	-- Chieftain's Cloak
+							dr(50.0, i(9942)),	-- Abjurer's Pants
+							dr(33.0, i(10252)),	-- Master's Leggings
 						},
 						["description"] = "|cff66ccffMob scales with level, this is the daytime light grey bear model.|r"
 					}), 
 					n(107596, { 	-- Grimrot
 						["groups"] = {
+							dr(24.0, i(10384)),	-- Hyperion Armor
+							dr(16.0, i(10266)),	-- Masterwork Breastplate
+							dr(14.0, i(10185)),	-- Swashbuckler's Cape
+							dr(08.0, i(10104)),	-- Councillor's Tunic
+							dr(06.0, i(10246)),	-- Master's Vest
+							dr(06.0, i(10167)),	-- Templar Boots
+							dr(04.0, i(10264)),	-- Adventurer's Tunic
+							dr(02.0, i(9951)),	-- Chieftain's Cloak
 							dr(50.0, i(9942)),	-- Abjurer's Pants
 							dr(33.0, i(10252)),	-- Master's Leggings
 						},
