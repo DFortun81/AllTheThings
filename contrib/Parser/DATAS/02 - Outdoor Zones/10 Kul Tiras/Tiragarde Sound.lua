@@ -866,7 +866,7 @@ _.Zones =
 								i(155422, {	-- Pirate Chief's Speargun
 									["crs"] = {
 										132104,	-- Blackpowder Smuggler
-										136221,	-- Strongarm Smuggler
+										-- 136221,	-- Strongarm Smuggler  [Apparently we need to comment this out because it triggers people seeing the tag during a WQ
 										132093,	-- Wavecaller Smuggler
 									},
 								}),
