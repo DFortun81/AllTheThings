@@ -245,7 +245,7 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163650),	-- Aldrusian Sproutling
 							},
-							["questID"] 53505,
+							["questID"] = 53505,
 						}),
 						n(142688, {	-- Darbel Montrose
 							i(163652),	-- Tiny Grimoire
