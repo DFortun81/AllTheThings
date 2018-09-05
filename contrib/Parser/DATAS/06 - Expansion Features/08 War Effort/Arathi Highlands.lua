@@ -1,13 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
------------------------------------------------------------------------
----							NOTE									---
----	Do not alter or edit anything related to quests	/ items			---
----	Things are set in the file in a specifc order and reasoning		---
------------------------------------------------------------------------
-
--- TODO Once War Fronts launch figure out specifically what gear is awarded from the box.  So far we've had rotating on Beta as new sets come in.
 
 _.ExpansionFeatures =
 {
@@ -359,7 +352,7 @@ _.ExpansionFeatures =
 				}),
 				--]]
 				n(-227, {	-- Victory
-					["groups"] = bubbleDown({["modID"] = 2}, {
+					["groups"] = bubbleDown({["modID"] = 6}, {
 									-- ALLIANCE SET --
 						i(163339),	-- 7th Legionnaire's Hood
 						i(163337),	-- 7th Legionnaire's Amice
