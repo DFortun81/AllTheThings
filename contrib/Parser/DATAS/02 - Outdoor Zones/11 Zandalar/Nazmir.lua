@@ -26,6 +26,24 @@ _.Zones =
 								["coord"] = { 72.8, 7.6 },
 							},
 						}),
+						ach(13024, {	-- Carved in Stone, Written in Blood
+							o(298921, {	-- Ancient Nazmani Tablet
+								["coord"] = { 56.3, 57.3 },
+								["criteriaID"] = 1,	-- Ancient Nazmani Tablet
+							}),
+							o(298963, {	-- Weathered Nazmani Tablet
+								["coord"] = { 43.4, 48.1 },
+								["criteriaID"] = 2,	-- Weathered Nazmani Tablet
+							}),
+							o(298965, {	-- Cracked Tablet
+								["coord"] = { 51.2, 85.1 },
+								["criteriaID"] = 3,	-- Cracked Tablet
+							}),
+							o(299073, {	-- Fractured Tablet
+								["coord"] = { 42.6, 57.1 },
+								["criteriaID"] = 4,	-- Fractured Tablet
+							}),
+						}),
 						ach(12588, {	-- Eat Your Greens
 							-- Add more coordinates when full object data is available on wowhead.
 							o(291233, {	-- Saurolisk Tail
@@ -116,7 +134,7 @@ _.Zones =
 									},
 									["coord"] = { 34.00, 75.07 },	-- Trashpile turn-in
 									["itemID"] = 157801,	-- Snapjaw Tail
-									["questID"] = 50437,	-- NEEDS CONFIRMATION, TAKEN FROM WOWHEAD
+									["questID"] = 50437,	-- 50436 for giving Jani the item
 									["criteriaID"] = 5,	-- Snapjaw Tail
 									["sourceQuests"] = { 
 										51145,	-- Curse of Jani (Alliance)
