@@ -1401,60 +1401,6 @@ _.Zones =
 								["qg"] = 26117,	-- Raelorasz
 								["sourceQuest"] = 11919,
 							}),
-							ql(q(29194, {	--  Through a Glass, Darkly
-								["qg"] = 52835,	-- Tarecgosa
-								["lvl"] = 85,
-								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
-								["sourceQuest"] = 29193,	-- On a Wing and a Prayer
-							})),
-							ql(q(29239, {	-- Nordrassil's Bough
-								["groups"] = {
-									i(71084),  -- Branch of Nordrassil
-								},
-								["qg"] = 53009,	-- Kalecgos
-								["lvl"] = 85,
-								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
-								["sourceQuest"] = 29234,	-- Delegation
-							})),
-							ql(q(29240, {	--  Emergency Extraction
-								["qg"] = 53009,	-- Kalecgos
-								["lvl"] = 85,
-								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
-								["sourceQuest"] = 29239,	-- Nordrassil's Bough
-							})),
-							ql(q(29269, {	--  At One
-								["qg"] = 53149,	-- Kalecgos
-								["lvl"] = 85,
-								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
-								["sourceQuest"] = 29240,	-- Emergency Extraction
-							})),
-							ql(q(29270, {	--  Time Grows Short
-								["qg"] = 53210,	-- Kalecgos
-								["lvl"] = 85,
-								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
-								["sourceQuest"] = 29269,	-- At One
-							})),
-							ql(q(29285, {	-- Alignment
-								["groups"] = {
-									i(71085),  --Runestaff of Nordrassil
-								},
-								["qg"] = 53215,	-- Kalecgos
-								["lvl"] = 85,
-								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
-								["sourceQuest"] = 29270,	-- Time Grows Short
-							})),
-							ql(qa(29307, {	--  Heart of Flame [A]
-								["qg"] = 53349,	-- Kalecgos
-								["lvl"] = 85,
-								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
-								["sourceQuest"] = 29285,	-- Alignment
-							})),
-							ql(qh(29308, {	--  Heart of Flame [H]
-								["qg"] = 53349,	-- Kalecgos
-								["lvl"] = 85,
-								["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
-								["sourceQuest"] = 29285,	-- Alignment
-							})),
 							q(13412, {	--  Corastrasza
 								["qg"] = 26110,	-- Librarian Serrah
 							}),

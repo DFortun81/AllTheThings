@@ -404,12 +404,6 @@ _.Zones =
 						["classes"] = {11},	-- Druid Only
 						["isBreadcrumb"] = true,
 					},
-					ql(qh(29129, {	-- A Legendary Engagement
-						["qg"] = 52382,	-- Ziradormi
-						["lvl"] = 85,
-						["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
-						["sourceQuests"] = { 29452 },	-- Your Time Has Come
-					})),
 					qdg(qh( 27395, {	-- A Marksman's Weapon
 						["groups"] = {
 							i(65466),	-- Bow of the Great Hunter
@@ -745,15 +739,6 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["classes"] = { 5 },	-- Priest
 					})),
 --					qh(40786),	-- The Smoldering Ember (QG item received from final boss in TW dungeons)
-					ql(qh(29309, {  	-- The Stuff of Legends
-						["groups"] = {
-							i(71086),	-- Dragonwrath, Tarecgosa's Rest (LEGENDARY!)
-						},
-						["qg"] = 53371,	-- Hallegosa
-						["lvl"] = 85,
-						["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
-						["sourceQuests"] = { 29308 },	-- Heart of Flame
-					})),
 --[[					
 					qg(52234, qh(29220)),	-- To Bambala
 					qp185(qg(3399, qh( 6611))),	-- To Gadgetzan You Go!
@@ -1725,16 +1710,8 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(71110),	-- Obsidian Arborweave Vestment
 						i(71111),	-- Obsidian Arborweave Shoulderwraps
 						i(71130),	-- Flamebinder Bracers
-						i(71150, {	-- Scorchvine Wand
-							i(71617, {	-- Crystallized Firestone
-								i(71579),	-- Scorchvine Wand
-							}),
-						}),
-						i(71151, {	-- Trail of Embers
-							i(71617, {	-- Crystallized Firestone
-								i(71575),	-- Trail of Embers
-							}),
-						}),
+						i(71150), 	-- Scorchvine Wand
+						i(71151),	-- Trail of Embers
 						i(71260),	-- Bracers of Imperious Truths
 						i(71261),	-- Gigantiform Bracers
 						i(71262),	-- Smolderskull Bindings

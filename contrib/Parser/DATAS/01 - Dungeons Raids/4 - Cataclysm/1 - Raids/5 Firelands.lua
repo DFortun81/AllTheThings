@@ -7,32 +7,239 @@ _.Instances =
 		["groups"] = {
 			inst(78, { 	-- Firelands
 				["groups"] = {
-					n(-17, {	-- Quests
-						ql(qa(29453, {    -- Your Time Has Come
-                            ["classes"] = { 5, 7, 8, 9, 11 },    -- Priest, Shaman, Mage, Warlock, Druid
-                            ["description"] = "This quest is auto accepted upon killing a Molten Giant.",
-                            ["isBreadcrumb"] = true,    -- for A Legendary Engagement
-                        })),
-                        ql(qh(29452, {    -- Your Time Has Come
-                            ["classes"] = { 5, 7, 8, 9, 11 },    -- Priest, Shaman, Mage, Warlock, Druid
-                            ["description"] = "This quest is auto accepted upon killing a Molten Giant.",
-                            ["isBreadcrumb"] = true,    -- for A Legendary Engagement
-                        })),
+					n(-100000, {	-- Legendary Questline
+						["classes"] = { 5, 7, 8, 9, 11 },    -- Priest, Shaman, Mage, Warlock, Druid
+						["title"] = "Dragonwrath, Tarecgosa's Rest",
+						["icon"] = "Interface\\Icons\\Stave_2H_Tarecgosa_E_01StageFinal",
+						["isRaid"] = true,
+						["lvl"] = 85,
+						["maps"] = {
+							71,	-- Tanaris
+							74, -- Tanaris: Caverns of Time Entrance
+							75, -- Tanaris: Caverns of Time
+							84,	-- Stormwind City
+							85,	-- Orgrimmar
+							86,	-- Orgrimmar: The Drag
+							129,	-- The Nexus
+							198,	-- Mount Hyjal
+						},
+						["groups"] = {
+							qa(29453, {	-- Your Time Has Come
+								["description"] = "This quest is auto accepted upon killing a Molten Lord.",
+								["qg"] = 53115, -- Molten Lord
+								["isBreadcrumb"] = true,    -- for A Legendary Engagement
+							}),
+							qh(29452, {	-- Your Time Has Come
+								["description"] = "This quest is auto accepted upon killing a Molten Lord.",
+								["qg"] = 53115, -- Molten Lord
+								["isBreadcrumb"] = true,    -- for A Legendary Engagement
+							}),
+							qa(29129, {	-- A Legendary Engagement
+								["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind.",
+								["qg"] = 52382,	-- Ziradormi
+								["sourceQuests"] = { 29453 },	-- Your Time Has Come
+							}),
+							qh(29132, {	-- A Legendary Engagement
+								["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Orgrimmar.",
+								["qg"] = 52382,	-- Ziradormi
+								["sourceQuests"] = { 29452 },	-- Your Time Has Come
+							}),
+							q(29134, {	-- A Wrinkle in Time
+								["qg"] = 15192,	-- Anachronos
+								["sourceQuests"] = {
+									29129,	-- A Legendary Engagement (horde)
+									29132,	-- A Legendary Engagement (alliance)
+								},
+							}),
+							q(29135, {	-- All-Seeing Eye
+								["qg"] = 15192,	-- Anachronos
+								["sourceQuests"] = { 29134 },	-- A Wrinkle in Time
+								["groups"] = {
+									i(71141, {	-- Eternal Ember
+										["description"] = "Need 25 of these for the All-Seeing Eye quest.",
+										["questID"] = 29135,
+										["crs"] = {
+											53691,	-- Shannox
+											52498,	-- Beth'tilac <The Red Widow>
+											52530,	-- Alysrazor
+											52558,	-- Lord Rhyolith
+											53494,	-- Baleroc <The Gatekeeper>
+											52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+											52409,	-- Ragnaros
+										},
+									}),
+									i(65893, {	-- Sands of Time
+										["description"] = "Need 3 of these for the All-Seeing Eye quest.",
+										["questID"] = 29135,
+										["crs"] = {
+											61650,	-- Big Keech <Rare Antiquities>
+											49406,	-- Yasmin <Innkeeper>
+										},
+									}),
+								},
+							}),
+							q(29193, {	-- On a Wing and a Prayer
+								["qg"] = 15192,	-- Anachronos
+								["sourceQuests"] = { 29135 },	-- All-Seeing Eye
+							}),
+							q(29194, {	-- Through a Glass, Darkly
+								["qg"] = 52835,	-- Tarecgosa
+								["sourceQuests"] = { 29193 },	-- On a Wing and a Prayer
+							}),
+							q(29225, {	-- Actionable Intelligence
+								["qg"] = 53567,	-- Tarecgosa
+								["sourceQuests"] = { 29194 },	-- Through a Glass, Darkly
+							}),
+							q(29234, {	-- Delegation
+								["description"] = "This is exactly how to do the quest... Start by walking into Firelands. DO NOT KILL ANY OF THE BOSSES. You will need them alive so that you can loot the items for the next phase of the quest after this one.\n\nMouseover each of the requirements below for further instructions.\n\nAfter you are finished, go to Borean Tundra.",
+								["qg"] = 52995,	-- Kalecgos
+								["sourceQuests"] = { 29225 },	-- Actionable Intelligence
+								["groups"] = {
+									i(71008, {	-- Charged Rhyolite Focus
+										["description"] = "While fighting Lord Rhyolith you loot the Rhyolite Fragments which randomly spawn around the edge of the area (note: possible link to the volcano spawns, but those are random as well). Gather three of these and create a Dull Rhyolite Focus, which is then used just before he uses Concussive Stomp. (STOMP NOW!) He has to stand on it almost directly so make sure you're pretty close before using it. Loot the Charged Rhyolite Focus afterwards.",
+										["crs"] = { 52558 },	-- Lord Rhyolith
+										["questID"] = 29432,	-- Delegation Tracker
+										["groups"] = {
+											i(70997),	-- Rhyolite Fragment
+											i(70996),	-- Dull Rhyolite Focus
+										},
+									}),
+									i(71017, {	-- Charged Chitinous Focus
+										["description"] = "While fighting Beth'tilac you loot the Obsidian-Flecked Chitin Fragments, three of which spawn when a Cinderweb Drone is killed. Gather them and create a Dull Chitinous Focus, which is then used on top of the web just before she uses Smoldering Devastation at 0 Energy.\n\nThis may take a while, just keep an eye on her energy bar and don't fall through the holes created by the meteors.",
+										["crs"] = { 52498 },	-- Beth'tilac <The Red Widow>
+										["questID"] = 29432,	-- Delegation Tracker
+										["groups"] = {
+											i(70999),	-- Obsidian-Flecked Chitin Fragment
+											i(70998),	-- Dull Chitinous Focus
+										},
+									}),
+									i(71015, {	-- Charged Emberstone Focus
+										["description"] = "While fighting Shannox you loot the Emberstone Fragments, one of which spawns when a Crystal Prison Trap is destroyed. Gather three of them and create a Dull Emberstone Focus, which is then used just before he uses Hurl Spear. The spear has to hit the focus so make sure you're close. Once the fire has died down loot the Charged Emberstone Focus.\n\nNOTE: This requires at least two targets:\nA mage can use the Frost Elemental.\nA shaman can summon the Earth Elemental.\nA Warlock can use its pet.\nA Priest or Druid needs a friend. :(",
+										["crs"] = { 53691 },	-- Shannox
+										["questID"] = 29432,	-- Delegation Tracker
+										["groups"] = {
+											i(71000),	-- Emberstone Fragment
+											i(71001),	-- Dull Emberstone Focus
+										},
+									}),
+									i(71016, {	-- Charged Pyreshell Focus
+										["description"] = "While fighting Alysrazor you loot the Pyreshell Fragments, one of which spawns when a Molten Egg hatches. Gather three and create a Dull Pyreshell Focus, which is then used just after she starts the Firestorm.\n\nIf she stays grounded and you need more fragments or need to charge your focus, you can fly out of the instance to reset, no more Eggs will spawn at this time.",
+										["crs"] = { 52530 },	-- Alysrazor
+										["questID"] = 29432,	-- Delegation Tracker
+										["groups"] = {
+											i(70994),	-- Pyreshell Fragment
+											i(70995),	-- Dull Pyreshell Focus
+										},
+									}),
+									i(69646, {	-- Branch of Nordrassil
+										["crs"] = { 53833 },	-- Volcanus <Firelord>
+										["questID"] = 29234,	-- Delegation
+									}),
+									un(37, title(146, {	-- <Name>, Blessed Defender of Nordrassil
+										["collectible"] = false,
+										["description"] = "You only have this title for as long as you are in tree form. :(",
+									})),
+								},
+							}),
+							q(29239, {	-- Nordrassil's Bough
+								["qg"] = 53009,	-- Kalecgos
+								["sourceQuests"] = { 29234 },	-- Delegation
+								["groups"] = {
+									i(71084),  -- Branch of Nordrassil
+								},
+							}),
+							q(29240, {	-- Emergency Extraction
+								["qg"] = 53009,	-- Kalecgos
+								["sourceQuests"] = { 29239 },	-- Nordrassil's Bough
+							}),
+							q(29269, {	--  At One
+								["qg"] = 53149,	-- Kalecgos
+								["sourceQuests"] = { 29240 },	-- Emergency Extraction
+							}),
+							q(29270, {	-- Time Grows Short
+								["description"] = "You should clear this raid on 25H difficulty for the most gain per boss:\n\n10 Man\n    Normal ---- 18-23\n    Heroic ------ 23-26\n\n25 Man\n    Normal ---- 48-55\n    Heroic ----- 55-66",
+								["qg"] = 53210,	-- Kalecgos
+								["sourceQuests"] = { 29269 },	-- At One
+								["groups"] = {
+									i(69815, {	-- Seething Cinder
+										["description"] = "Need 1000 of these for the Time Grows Short quest.",
+										["questID"] = 29270,
+										["crs"] = {
+											53691,	-- Shannox
+											52498,	-- Beth'tilac <The Red Widow>
+											52530,	-- Alysrazor
+											52558,	-- Lord Rhyolith
+											53494,	-- Baleroc <The Gatekeeper>
+											52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+											52409,	-- Ragnaros
+										},
+									}),
+								},
+							}),
+							q(29285, {	-- Alignment
+								["qg"] = 53215,	-- Kalecgos
+								["sourceQuests"] = { 29270 },	-- Time Grows Short
+								["groups"] = {
+									i(71085),	-- Runestaff of Nordrassil
+								},
+							}),
+							qa(29307, {	--  Heart of Flame [A]
+								["qg"] = 53349,	-- Kalecgos
+								["sourceQuests"] = { 29285 },	-- Alignment
+								["groups"] = {
+									i(69848, {	-- Heart of Flame
+										["description"] = "The heart has 100% drop rate from Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty.\n\nGather Essences by killing the bosses and syphoning the essences with your staff.",
+										["questID"] = 29307,
+										["crs"] = {
+											53691,	-- Shannox
+											52498,	-- Beth'tilac <The Red Widow>
+											52530,	-- Alysrazor
+											52558,	-- Lord Rhyolith
+											53494,	-- Baleroc <The Gatekeeper>
+											52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+											54198,	-- Smoldering Essence
+											52409,	-- Ragnaros
+										},
+									}),
+								},
+							}),
+							qh(29308, {	--  Heart of Flame [H]
+								["qg"] = 53349,	-- Kalecgos
+								["sourceQuests"] = { 29285 },	-- Alignment
+								["groups"] = {
+									i(69848, {	-- Heart of Flame
+										["description"] = "The heart has 100% drop rate from Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty.\n\nGather Essences by killing the bosses and syphoning the essences with your staff.",
+										["questID"] = 29308,
+										["crs"] = {
+											53691,	-- Shannox
+											52498,	-- Beth'tilac <The Red Widow>
+											52530,	-- Alysrazor
+											52558,	-- Lord Rhyolith
+											53494,	-- Baleroc <The Gatekeeper>
+											52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+											54198,	-- Smoldering Essence
+											52409,	-- Ragnaros
+										},
+									}),
+								},
+							}),
+							qa(29312, {	-- The Stuff of Legends
+								["qgs"] = { 53466, 53422 },	-- Hallegosa / Dragonwrath, Tarecgosa's Rest
+								["sourceQuests"] = { 29308 },	-- Heart of Flame
+								["groups"] = {
+									i(71086),	-- Dragonwrath, Tarecgosa's Rest
+								},
+							}),
+							qh(29309, {	-- The Stuff of Legends
+								["qgs"] = { 53466, 53422 },	-- Hallegosa / Dragonwrath, Tarecgosa's Rest
+								["sourceQuests"] = { 29308 },	-- Heart of Flame
+								["groups"] = {
+									i(71086),	-- Dragonwrath, Tarecgosa's Rest
+								},
+							}),
+						},
 					}),
 					n( -2, {	-- Vendors
-						n(54402, { -- Lurah Wrathvine
-							i(71617, {	-- Crystallized Firestone
-								i(71641),	-- Riplimb's Lost Collar
-								i(71561),	-- Hide-Bound Chains
-								i(71560),	-- Chelley's Sterilized Scalpel
-								i(71562),	-- Obsidium Cleaver
-								i(71557),	-- Ranseur of Hatred
-								i(71559),	-- Spire of Scarlet Pain
-								i(71558),	-- Lava Bolt Crossbow
-								i(71579),	-- Scorchvine Wand
-								i(71575),	-- Trail of Embers
-							}),
-						}),
 						n(54401, { -- Naresir Stormfury
 							i(70930),
 							i(71229),
@@ -69,83 +276,17 @@ _.Instances =
 							i(69958),	-- Plans: Eternal Elementium Handguards
 							i(69957),	-- Plans: Fists of Fury
 							i(69959),	-- Plans: Holy Flame Gauntlets
-							i(71640, {	-- Riplimb's Lost Collar
-								["groups"] = {
-									i(71617, {	-- Crystallized Firestone
-										i(71641),	-- Riplimb's Lost Collar
-									})
-								},
-							}),
-							i(71365, {	-- Hide-Bound Chains
-								["groups"] = {
-									i(71617, {	-- Crystallized Firestone
-										i(71561),	-- Hide-Bound Chains
-									}),
-								},
-							}),
-							i(71359, {	-- Chelley's Sterilized Scalpel
-								["groups"] = {
-									i(71617, {	-- Crystallized Firestone
-										i(71560),	-- Chelley's Sterilized Scalpel
-									}),
-								},							
-							}),
-							i(71362, {	-- Obsidium Cleaver
-								["groups"] = {
-									i(71617, {	-- Crystallized Firestone
-										i(71562),	-- Obsidium Cleaver
-									}),
-								},						
-							}),
-							i(71361, {	-- Ranseur of Hatred
-								["groups"] = {
-									i(71617, {	-- Crystallized Firestone
-										i(71557),	-- Ranseur of Hatred
-									}),
-								},
-							}),
-							i(71360, {	-- Spire of Scarlet Pain
-								["groups"] = {
-									i(71617, {	-- Crystallized Firestone
-										i(71559),	-- Spire of Scarlet Pain
-									}),
-								},
-							}),
-							i(71366, {	-- Lava Bolt Crossbow
-								["groups"] = {
-									i(71617, {	-- Crystallized Firestone
-										i(71558),	-- Lava Bolt Crossbow
-									}),
-								},
-							}),
-							i(68972, { 	-- Apparatus of Khaz'goroth
-								["groups"] = {
-									i(71617, {	-- Crystallized Firestone
-										 i(69113),	-- Apparatus of Khaz'goroth
-									}),
-								},
-							}),
-							i(70929, {  -- Firebound Gorget
-								["groups"] = {
-									i(71617, {	-- Crystallized Firestone
-										i(71563),	-- Firebound Gorget
-									}),
-								},
-							}),
-							i(68915, { 	-- Scales of Life
-								["groups"] = {
-									i(71617, {	-- Crystallized Firestone
-										i(69109),	-- Scales of Life
-									}),
-								},
-							}),
-							i(71367, {	-- Theck's Emberseal
-								["groups"] = {
-									i(71617, {	-- Crystallized Firestone
-										i(71564),	-- Theck's Emberseal
-									}),
-								},
-							}),
+							i(68972), 	-- Apparatus of Khaz'goroth
+							i(71359),	-- Chelley's Sterilized Scalpel
+							i(70929),	-- Firebound Gorget
+							i(71365),	-- Hide-Bound Chains
+							i(71366),	-- Lava Bolt Crossbow
+							i(71362),	-- Obsidium Cleaver
+							i(71361),	-- Ranseur of Hatred
+							i(71640),	-- Riplimb's Lost Collar
+							i(71360),	-- Spire of Scarlet Pain
+							i(68915), 	-- Scales of Life
+							i(71367), 	-- Theck's Emberseal
 						},
 						["crs"] = {
 							53134,	-- Ancient Core Hound
@@ -181,29 +322,30 @@ _.Instances =
 					d(  1, {	-- Normal
 						["difficulties"] = { 3, 4 },
 						["groups"] = {
-							n(-1, { -- Common Boss Drops
+							n( -1, { 	-- Common Boss Drops
+								["crs"] = {
+									53691,	-- Shannox
+									52498,	-- Beth'tilac <The Red Widow>
+									52530,	-- Alysrazor
+									52558,	-- Lord Rhyolith
+									53494,	-- Baleroc <The Gatekeeper>
+									52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+									52409,	-- Ragnaros
+								},
 								["groups"] = {
-									i(71775),	-- Smoldering Censer of Purity
-									i(71780),	-- Zoid's Firelit Greatsword
 									i(71779),	-- Avool's Incendiary Shanker
 									i(71787),	-- Entrail Disgorger
 									i(71776),	-- Eye of Purification
 									i(71785),	-- Firethorn Mindslicer
 									i(71782),	-- Shatterskull Bonecrusher
-								},
-								["crs"] = {
-									52498, -- Beth'tilac
-									52558, -- Lord Rhyolith
-									52530, -- Alysrazor
-									53691, -- Shannox
-									53494, -- Baleroc
-									52571, -- Majordomo Staghelm
+									i(71775),	-- Smoldering Censer of Purity
+									i(71780),	-- Zoid's Firelit Greatsword
+									i(69237),	-- Living Ember
 								},
 							}),
 							e(192, {	-- Beth'tilac		
 								["groups"] = {		
 									i(152976),	-- Cinderweb Egg (PET!)
-									i(69237),	-- Living Ember
 									i(71039),	-- Funeral Pyre
 									i(70922),	-- Mandible of Beth'tilac
 									i(71038),	-- Ward of the Red Widow
@@ -223,7 +365,6 @@ _.Instances =
 							}),			
 							e(193, {	-- Lord Rhyolith		
 								["groups"] = {
-									i(69237),	-- Living Ember
 									i(71006),	-- Volcanospike
 									i(70991),	-- Arbalest of Erupting Fury
 									i(71011),	-- Flickering Cowl
@@ -243,7 +384,6 @@ _.Instances =
 							e(194, {	-- Alysrazor		
 								["groups"] = {		
 									i(71665),	-- Flametalon of Alysrazor (MOUNT!)
-									i(69237),	-- Living Ember
 									i(70733),	-- Alysra's Razor
 									i(70734),	-- Greathelm of the Voracious Maw
 									i(70985),	-- Craterflame Spaulders
@@ -263,7 +403,6 @@ _.Instances =
 							}),			
 							e(195, {	-- Shannox		
 								["groups"] = {
-									i(69237),	-- Living Ember
 									i(152975),	-- Smoldering Treat (PET!)
 									i(71014),	-- Skullstealer Greataxe
 									i(71013),	-- Feeding Frenzy
@@ -284,7 +423,6 @@ _.Instances =
 							}),			
 							e(196, {	-- Baleroc, the Gatekeeper		
 								["groups"] = {
-									i(69237),	-- Living Ember
 									i(152977),	-- Vibrating Stone (PET!)
 									i(71312),	-- Gatecrasher
 									i(70915),	-- Shard of Torment
@@ -306,7 +444,6 @@ _.Instances =
 								["groups"] = {		
 									i(152978),	-- Fandral's Pet Carrier (PET!)
 									i(122304),	-- Fandral's Seed Pouch (TOY!)
-									i(69237),	-- Living Ember
 									i(71681, {	-- Mantle of the Fiery Conqueror		
 										i(71275),	-- Mantle of the Cleansing Flame	
 										i(71280),	-- Shoulderwraps of the Cleansing Flame	
@@ -374,7 +511,6 @@ _.Instances =
 										i(70954),	-- Elementium Deathplate Faceguard
 										i(71060),	-- Elementium Deathplate Helmet
 									}),
-									i(69237),	-- Living Ember
 									i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
 									i(71798),	-- Sho'ravon, Greatstaff of Annihilation
 									i(71352),	-- Sulfuras, the Extinguished Hand
@@ -396,30 +532,90 @@ _.Instances =
 					d(  2, {	-- Heroic
 						["difficulties"] = { 5, 6 },
 						["groups"] = {
-							n(-1, { -- Common Boss Drops
+							n( -2, {	-- Vendors
+								n(54402, { -- Lurah Wrathvine
+									["description"] = "Bring this vendor Crystallized Firestones from the bosses and the BoE and she'll upgrade it to the Heroic version.",
+									["groups"] = {
+										i(71617, {	-- Crystallized Firestone
+											["description"] = "This item drops from the Firelands bosses. You can trade this with one of the BoEs below and she will upgrade it to the Heroic version attached below.",
+											["crs"] = {
+												53691,	-- Shannox
+												52498,	-- Beth'tilac <The Red Widow>
+												52530,	-- Alysrazor
+												52558,	-- Lord Rhyolith
+												53494,	-- Baleroc <The Gatekeeper>
+												52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+												52409,	-- Ragnaros
+											},
+											["groups"] = {
+												i(68972, { 	-- Apparatus of Khaz'goroth
+													i(69113),	-- Apparatus of Khaz'goroth
+												}),
+												i(71359, {	-- Chelley's Sterilized Scalpel
+													i(71560),	-- Chelley's Sterilized Scalpel						
+												}),
+												i(70929, {  -- Firebound Gorget
+													i(71563),	-- Firebound Gorget
+												}),
+												i(71365, {	-- Hide-Bound Chains
+													i(71561),	-- Hide-Bound Chains
+												}),
+												i(71366, {	-- Lava Bolt Crossbow
+													i(71558),	-- Lava Bolt Crossbow
+												}),
+												i(71362, {	-- Obsidium Cleaver
+													i(71562),	-- Obsidium Cleaver						
+												}),
+												i(71361, {	-- Ranseur of Hatred
+													i(71557),	-- Ranseur of Hatred
+												}),
+												i(71640, {	-- Riplimb's Lost Collar
+													i(71641),	-- Riplimb's Lost Collar
+												}),
+												i(68915, { 	-- Scales of Life
+													i(69109),	-- Scales of Life
+												}),
+												i(71150, {	-- Scorchvine Wand
+													i(71579),	-- Scorchvine Wand
+												}),
+												i(71360, {	-- Spire of Scarlet Pain
+													i(71559),	-- Spire of Scarlet Pain
+												}),
+												i(71367, {	-- Theck's Emberseal
+													i(71564),	-- Theck's Emberseal
+												}),
+												i(71151, {	-- Trail of Embers
+													i(71575),	-- Trail of Embers
+												}),
+											},
+										}),
+									},
+								}),
+							}),
+							n( -1, { 	-- Common Boss Drops
+								["crs"] = {
+									53691,	-- Shannox
+									52498,	-- Beth'tilac <The Red Widow>
+									52530,	-- Alysrazor
+									52558,	-- Lord Rhyolith
+									53494,	-- Baleroc <The Gatekeeper>
+									52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+									52409,	-- Ragnaros
+								},
 								["groups"] = {
-									i(71774),	-- Smoldering Censer of Purity
-									i(71781),	-- Zoid's Firelit Greatsword
 									i(71778),	-- Avool's Incendiary Shanker
 									i(71786),	-- Entrail Disgorger
 									i(71777),	-- Eye of Purification
 									i(71784),	-- Firethorn Mindslicer
 									i(71783),	-- Shatterskull Bonecrusher
-								},
-								["crs"] = {
-									52498, -- Beth'tilac
-									52558, -- Lord Rhyolith
-									52530, -- Alysrazor
-									53691, -- Shannox
-									53494, -- Baleroc
-									52571, -- Majordomo Staghelm
+									i(71774),	-- Smoldering Censer of Purity
+									i(71781),	-- Zoid's Firelit Greatsword
+									i(69237),	-- Living Ember
 								},
 							}),
 							e(192, {	-- Beth'tilac		
 								["groups"] = {		
 									i(152976),	-- Cinderweb Egg (PET!)
-									i(71617),	-- Crystallized Firestone
-									i(69237),	-- Living Ember
 									i(71409),	-- Funeral Pyre
 									i(71406),	-- Mandible of Beth'tilac
 									i(71408),	-- Ward of the Red Widow
@@ -438,9 +634,7 @@ _.Instances =
 								["creatureID"] = 52498,		
 							}),			
 							e(193, {	-- Lord Rhyolith		
-								["groups"] = {		
-									i(71617),	-- Crystallized Firestone
-									i(69237),	-- Living Ember
+								["groups"] = {
 									i(71422),	-- Volcanospike
 									i(71414),	-- Arbalest of Erupting Fury
 									i(71421),	-- Flickering Cowl
@@ -484,9 +678,7 @@ _.Instances =
 										i(71476),	-- Elementium Deathplate Breastplate
 										i(71481),	-- Elementium Deathplate Chestguard
 									}),
-									i(71617),	-- Crystallized Firestone
 									i(71665),	-- Flametalon of Alysrazor (MOUNT!)
-									i(69237),	-- Living Ember
 									i(71427),	-- Alysra's Razor
 									i(71430),	-- Greathelm of the Voracious Maw
 									i(71438),	-- Craterflame Spaulders
@@ -505,8 +697,7 @@ _.Instances =
 								["creatureID"] = 52530,		
 							}),			
 							e(195, {	-- Shannox		
-								["groups"] = {		
-									i(71617),	-- Crystallized Firestone
+								["groups"] = {
 									i(71678, {	-- Leggings of the Fiery Conqueror	
 										i(71529),	-- Legwraps of the Cleansing Flame
 										i(71534),	-- Leggings of the Cleansing Flame
@@ -531,8 +722,7 @@ _.Instances =
 										i(71540),	-- Dark Phoenix Legguards
 										i(71479),	-- Elementium Deathplate Greaves
 										i(71484),	-- Elementium Deathplate Legguards
-									}),		
-									i(69237),	-- Living Ember
+									}),
 									i(152975),	-- Smoldering Treat (PET!)
 									i(71445),	-- Skullstealer Greataxe
 									i(71441),	-- Feeding Frenzy
@@ -552,8 +742,7 @@ _.Instances =
 								["creatureID"] = 53691,		
 							}),			
 							e(196, {	-- Baleroc, the Gatekeeper		
-								["groups"] = {		
-									i(71617),	-- Crystallized Firestone
+								["groups"] = {
 									i(71676, {	-- Gauntlets of the Fiery Conqueror	
 										i(71527),	-- Handwraps of the Cleansing Flame
 										i(71532),	-- Gloves of the Cleansing Flame
@@ -578,8 +767,7 @@ _.Instances =
 										i(71538),	-- Dark Phoenix Gloves
 										i(71482),	-- Elementium Deathplate Handguards
 										i(71477),	-- Elementium Deathplate Gauntlets
-									}),		
-									i(69237),	-- Living Ember
+									}),
 									i(152977),	-- Vibrating Stone (PET!)
 									i(71454),	-- Gatecrasher
 									i(71460),	-- Shard of Torment
@@ -598,11 +786,9 @@ _.Instances =
 								["creatureID"] = 53494,		
 							}),			
 							e(197, {	-- Majordomo Staghelm		
-								["groups"] = {		
-									i(71617),	-- Crystallized Firestone
+								["groups"] = {
 									i(152978),	-- Fandral's Pet Carrier (PET!)
 									i(122304),	-- Fandral's Seed Pouch (TOY!)
-									i(69237),	-- Living Ember
 									i(71680, {	-- Shoulders of the Fiery Conqueror	
 										i(71531),	-- Mantle of the Cleansing Flame
 										i(71536),	-- Shoulderwraps of the Cleansing Flame
@@ -669,9 +855,7 @@ _.Instances =
 										i(71539),	-- Dark Phoenix Helmet
 										i(71478),	-- Elementium Deathplate Helmet
 										i(71483),	-- Elementium Deathplate Faceguard
-									}),		
-									i(71617),	-- Crystallized Firestone
-									i(69237),	-- Living Ember
+									}),
 									i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
 									i(71797),	-- Sho'ravon, Greatstaff of Annihilation
 									i(70723),	-- Sulfuras, the Extinguished Hand

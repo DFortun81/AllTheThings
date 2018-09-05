@@ -134,8 +134,6 @@ _.Zones =
 						i(57301),
 						i(57300),
 					})),			
---					ql(qg(52995, q(29234))),	-- Delegation (Dragonwrath legendary)
---					q(29432),	-- Delegation Tracker (tracker for previous quest)
 					qg(41006, q(25761, { -- Disassembly
 						i(57314),
 						i(57313),
@@ -792,34 +790,6 @@ _.Zones =
 								i(72919),	-- Ebonsoul Sabatons
 							},
 						}),
-					}),
-					n(54402, { -- Lurah Wrathvine <Crystallized Firestone Collector>
-						i(71617, { -- Crystallized Firestone
-							i(71557),	-- Ranseur of Hatred
-							i(71558),	-- Lava Bolt Crossbow
-							i(71559),	-- Spire of Scarlet Pain
-							i(71560),	-- Chelley's Sterilized Scalpel
-							i(71561),	-- Hide-Bound Chains
-							i(71562),	-- Obsidium Cleaver
-							i(71575),	-- Trail of Embers
-							i(71579),	-- Scorchvine Wand
-							i(71641),	-- Riplimb's Lost Collar
-						}),
-					}),
-					n(54401, { -- Naresir Stormfury <Avengers of Hyjal Quartermaster>
-						i(70930),	-- Durable Flamewrath Greatcloak
-						i(70933),	-- Girdle of the Indomitable Flame
-						i(71131),	-- Flamebinding Girdle
-						i(71227),	-- Bladed Flamewrath Cover
-						i(71228),	-- Sleek Flamewrath Cloak
-						i(71229),	-- Flowing Flamewrath Cape
-						i(71230),	-- Rippling Flamewrath Drape
-						i(71249),	-- Firescar Sash
-						i(71250),	-- Cinch of the Flaming Ember
-						i(71253),	-- Belt of the Seven Seals
-						i(71254),	-- Firemend Cinch
-						i(71255),	-- Firearrow Belt
-						i(71258),	-- Embereye Belt
 					}),
 					n(50314, {	-- Provisioner Whitecloud <Guardians of Hyjal Quartermaster>
 						i(62383),	-- Wrap of the great Turtle

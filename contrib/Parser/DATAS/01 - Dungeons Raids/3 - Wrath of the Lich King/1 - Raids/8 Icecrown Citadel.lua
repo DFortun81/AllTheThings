@@ -1815,6 +1815,7 @@ _.Instances =
 							i( 51818),	-- Wyrmwing Treads
 						})),
 						cr(36597, e(1636, {	-- The Lich King
+							title(139),	-- TITLE: Bane of the Fallen King
 							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
@@ -2196,6 +2197,7 @@ _.Instances =
 							i( 50361),	-- Sindragosa's Flawless Fang
 						})),
 						cr(36597, e(1636, {	-- The Lich King
+							title(140),	-- TITLE: The Kingslayer
 							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
@@ -2692,6 +2694,8 @@ _.Instances =
 							i( 50364),	-- Sindragosa's Flawless Fang
 						})),
 						cr(36597, e(1636, {	-- The Lich King
+							title(138),	-- TITLE: The Light of Dawn
+							i( 50818),	-- Invincible's Reins (MOUNT!)
 							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
@@ -2701,7 +2705,6 @@ _.Instances =
 							i( 52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142099),	-- Call of the Frozen Blade (PET!)
 							i(138955),	-- Illusion: Rune of Razorice
-							i( 50818),	-- Invincible's Reins (MOUNT!)
 							i( 50731),	-- Archus, Greatstaff of Antonidas
 							i( 50730),	-- Glorenzelg, High-Blade of the Silver Hand
 							i( 50735),	-- Oathbinder, Charge of the Ranger-General

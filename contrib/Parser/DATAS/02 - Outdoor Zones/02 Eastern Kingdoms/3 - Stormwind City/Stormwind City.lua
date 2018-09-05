@@ -312,7 +312,6 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(29391)),	-- Guardians of Hyjal: Call of the Ancients
 					qg(, qa(29387)),	-- Guardians of Hyjal: Firelands Invasion!
 					qg(, qa(  333)),	-- Harlan Needs a Resupply
-					qg(, qa(29307)),	-- Heart of Flame
 					qg(, qa(28579)),	-- Hero's Call: Badlands!
 					qg(, qa(28673)),	-- Hero's Call: Blasted Lands!
 					qg(, qa(28666)),	-- Hero's Call: Burning Steppes!
@@ -628,7 +627,6 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(  332)),	-- Wine Shop Advert
 					qg(, qa(27266)),	-- Wulf Calls
 					qg(, q(397)),	-- You Have Served Us Well
-					qg(, qa(29453)),	-- Your Time Has Come
 --]]	
 				}),
 				n( -16, {	-- Rares 
@@ -2134,16 +2132,8 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(71110),	-- Obsidian Arborweave Vestment
 						i(71111),	-- Obsidian Arborweave Shoulderwraps
 						i(71130),	-- Flamebinder Bracers
-						i(71150, {	-- Scorchvine Wand
-							i(71617, {	-- Crystallized Firestone
-								i(71579),	-- Scorchvine Wand
-							}),
-						}),
-						i(71151, {	-- Trail of Embers
-							i(71617, {	-- Crystallized Firestone
-								i(71575),	-- Trail of Embers
-							}),
-						}),
+						i(71150),	-- Scorchvine Wand
+						i(71151), 	-- Trail of Embers
 						i(71260),	-- Bracers of Imperious Truths
 						i(71261),	-- Gigantiform Bracers
 						i(71262),	-- Smolderskull Bindings

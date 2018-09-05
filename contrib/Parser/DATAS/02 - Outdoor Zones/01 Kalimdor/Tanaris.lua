@@ -57,21 +57,10 @@ _.Zones =
 						["qg"] = 38706,	-- Zeke Bootscuff
 						["sourceQuests"] = { 24933 },	-- Chicken of the Desert
 					}),
-					q(29134, {	-- A Wrinkle in Time
-						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = {
-							29129,	-- A Legendary Engagement (horde)
-							29132,	-- A Legendary Engagement (alliance)
-						},
-					}),
 					qa(26889, {	-- All Cheered Out
 						["qg"] = 38704,	-- Kelsey Steelspark
 						["sourceQuests"] = { 25166 },	-- Captain Dreadbeard
 					}),
-					qraid(q(29135, {	-- All-Seeing Eye
-						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 29134 },	-- A Wrinkle in Time
-					})),
 					qa(25420,  {  -- Ancient Obstacles
 						["groups"] = {
 							i(56903),	-- Gatewatcher Belt
@@ -401,11 +390,6 @@ _.Zones =
 						["qg"] = 20130,	-- Andormu
 						["sourceQuests"] = { 10277 },	-- The Caverns of Time
 					})),
-					q(29193, {	-- On a Wing and a Prayer
-						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 29135 },	-- All-Seeing Eye
-						["description"] = "Part of the \"Dragonwrath, Tarecgosa's Rest\" legendary quest line.",
-					}),
 					qa(28881, {	-- Prospector Gunstan
 						["qg"] = 39059,	-- Kelsey steelspark
 						["sourceQuests"] = { 25065 },	-- You Too, Brute?

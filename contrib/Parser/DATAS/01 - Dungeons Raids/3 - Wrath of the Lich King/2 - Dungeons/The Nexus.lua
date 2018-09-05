@@ -30,12 +30,6 @@ _.Instances =
 					}),
 					--]]
 					n(-17, {	-- Quests
-						ql(q(29225, {	-- Actionable Intelligence [Legendary Questline: Dragonwrath]
-							["qg"] = 53567,	-- Tarecgosa
-							["lvl"] = 85,
-							["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
-							["sourceQuests"] = { 29194 },	-- Through a Glass, Darkly
-						})),
 						a(q(13094,{ 	-- Have They No Shame?
 							i(43182), 	-- Cured Mammoth Hide Mantle
 							i(43181),	-- Shoulders of the Northern Lights
