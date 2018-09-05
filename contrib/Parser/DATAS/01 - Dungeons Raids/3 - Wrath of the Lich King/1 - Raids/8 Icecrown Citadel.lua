@@ -286,9 +286,13 @@ _.Instances =
 							},
 						},
 					}),
-					n(-17, {	-- Quests
+					n(-100000, {	-- Legendary Questline
 						["description"] = "These quests are only able to be completed on 25 Man Normal/Heroic Difficulty.",
 						["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+						["title"] = "Shadowmourne",
+						["icon"] = "Interface\\Icons\\INV_Axe_113",
+						["isRaid"] = true,
+						["lvl"] = 80,
 						["groups"] = {
 							{
 								["questID"] = 24545,	-- The Sacred and the Corrupt
@@ -350,6 +354,21 @@ _.Instances =
 										["itemID"] = 50274,		-- Shadowfrost Shard
 										["questID"] = 24548,	-- The Splintered Throne
 										["description"] = "These can drop from any of the bosses on 25 man difficulty or higher. You need 50 of these, so this quest will take you several weeks to finish.",
+										["crs"] = {
+											36612,	-- Lord Marrowgar
+											36855,	-- Lady Deathwhisper
+											36939,	-- High Overlord Saurfang
+											36948,	-- Muradin Bronzebeard
+											37813,	-- Deathbringer Saurfang
+											36626,	-- Festergut
+											36627,	-- Rotface
+											36678,	-- Professor Putricide
+											37970,	-- Blood Prince Council
+											37955,	-- Blood-Queen Lana'thel
+											36789,	-- Valithria Dreamwalker
+											36853,	-- Sindragosa
+											36597,	-- The Lich King
+										},
 									},
 								},
 							},
@@ -359,18 +378,6 @@ _.Instances =
 								["sourceQuest"] = 24548,	-- Source Quest: The Splintered Throne
 								["groups"] = {
 									i(49623)			-- Shadowmourne
-								},
-							},
-							{
-								["npcID"] = 111093, -- Stitchwork
-								["questID"] = 44188,	-- Hidden Tracking
-								["classes"] = { 6 },	-- Death Knight Only!
-								["collectible"] = false,
-								["description"] = "\"Professor Putricide's Lost Journal\" drops from ghouls summoned by your Apocalypse or Army of the Dead spells anywhere in the world. If this is checked off as completed, you will be eligible to enter the trap door in Putricide's room under the Green Slime Pipe. You do not have to interact with the book to be eligible.",
-								["groups"] = {
-									i(139548, {	-- The Bonereaper's Hook
-										artifact(404), -- Find Hidden Artifact Skin
-									}),
 								},
 							},
 							{

@@ -109,6 +109,20 @@ _.ExpansionFeatures =
 						h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 					}),
 					n(-17, { -- Quests
+						{
+							["npcID"] = 111093, -- Stitchwork
+							["questID"] = 44188,	-- Hidden Tracking
+							["classes"] = { 6 },	-- Death Knight Only!
+							["maps"] = { 186, 187, 188, 189, 190, 191, 192, 193 }, -- Icecrown Citadel
+							["lvl"] = 110,
+							["collectible"] = false,
+							["description"] = "\"Professor Putricide's Lost Journal\" drops from ghouls summoned by your Apocalypse or Army of the Dead spells anywhere in the world. If this is checked off as completed, you will be eligible to enter the trap door in Putricide's room under the Green Slime Pipe. You do not have to interact with the book to be eligible.",
+							["groups"] = {
+								i(139548, {	-- The Bonereaper's Hook
+									artifact(404), -- Find Hidden Artifact Skin
+								}),
+							},
+						},
 						q(46813, { -- The Lost Glacier
 							i(142231), -- Decaying Reins of the Vilebrood Vanquisher
 						}),
