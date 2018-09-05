@@ -447,8 +447,9 @@ AllTheThings.Locales.enUS = {
 		[-222] = "Interface\\Icons\\inv_misc_coin_01",							-- Treasure Hunter
 		[-223] = "Interface\\Icons\\achievement_quests_completed_daily_07",		-- Daily
 		[-224] = "Interface\\Icons\\ClassIcon_DemonHunter", 					-- Demon Hunter
-		[-225] = "Interface\\ICONS\\INV_Misc_Map02",							-- World Drop
+		[-225] = "Interface\\Icons\\INV_Misc_Map02",							-- World Drop
 		[-228] = "Interface\\Minimap\\Tracking\\Flightmaster",					-- Flight Paths
+		[-230] = "Interface\\Icons\\achievement_legionpvp2tier3",				-- Conquest
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1062,6 +1063,7 @@ AllTheThings.Locales.enUS = {
 		[-227] = GetSpellInfo(109382),											-- Victory
 		[-228] = GetSpellInfo(218950),											-- Flight Path
 		[-229] = CALENDAR_REPEAT_WEEKLY,										-- Weekly
+		[-230] = PVP_CONQUEST,													-- Conquest
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
@@ -1143,6 +1145,7 @@ AllTheThings.Locales.enUS = {
 		
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
+		[-490] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth  Season 1
 		[-491] = "Tarot Cards",
 		[-492] = "Illusions",
 		[-493] = TIME_UNKNOWN.." "..SPELL_TARGET_TYPE6_DESC, 					-- Unknown location
