@@ -277,7 +277,9 @@ _.Toys =
 			i(64481), 		-- Blessing of the Old God
 			i(64646), 		-- Bones of Transformation
 			i(64373), 		-- Chalice of the Mountain Kings
+			i(160740),		-- Croak Crock
 			i(131724),		-- Crystalline Eye of Undravius
+			i(160751),		-- Dance of the Dead
 			i(64361),		-- Druid and Priest Statue Set
 			i(69777),		-- Haunted War Drum
 			i(64358), 		-- Highborne Soul Mirror

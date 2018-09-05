@@ -163,6 +163,7 @@ pet(60216, 262); 	-- De-Weaponized Mechanical Companion
 pet(13584, 93); 	-- Diablo Stone (Mini Diablo)
 pet(151645, 2001);	-- Dibbler
 pet(151633, 2065); 	-- Dig Rat
+pet(161080, 2197);	-- Direhorn Hatchling
 pet(94573, 1205);	-- Direhorn Runt
 pet(94573, 1205); 	-- Direhorn Runt
 pet(152967, 2079);	-- Discarded Experiment
@@ -467,7 +468,7 @@ pet(142096, 1965); 	-- Putricide's Alchemy Supplies (Blightbreath)
 pet(94574, 1200); 	-- Pygmy Direhorn
 pet(130154, 1907); 	-- Pygmy Owl
 pet(97959, 1243); 	-- Quivering Blob (Living Fluid)
-pet(8497, 72); 	-- Rabbit Crate (Snowshoe) - (Snowshoe Rabbit)
+pet(8497, 72);		-- Rabbit Crate (Snowshoe) - (Snowshoe Rabbit)
 pet(122125, 1636); 	-- Race MiniZep Controller (Race MiniZep)
 pet(163689, 2437);	-- Ragepeep
 pet(163503, 2417);	-- Ranishu Runt
@@ -489,6 +490,7 @@ pet(142086, 1955); 	-- Red-Hot Coal (Magma Rageling)
 pet(40653, 160); 	-- Reeking Pet Carrier (Stinker)
 pet(142095, 1964); 	-- Remains of A Blood Beast (Blood Boil)
 pet(141352, 1938);	-- Rescued Fawn
+pet(161089, 2199);	-- Restored Revenant
 pet(136905, 1756); 	-- Ridgeback Piglet
 pet(130166, 1804); 	-- Risen Saber Kitten
 pet(140274, 1453);	-- River Calf
