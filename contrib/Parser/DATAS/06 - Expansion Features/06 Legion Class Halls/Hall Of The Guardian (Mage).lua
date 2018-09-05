@@ -30,14 +30,14 @@ _.ExpansionFeatures =
 						}),
 						
 						n(111107, {	-- Volatile Sheep
-							["description"] = "If this quest has a checkmark next to it, then that means that you right click it a few times and it will explode.",
+							["description"] = "The next step is pure RNG - when you teleport to your class order hall you have (once a day) chance to trigger a spawn of Volatile Sheep. If it does spawn for you, you will see Cote's dialogue box saying 'Success!' - the ship will be standing just next to Dalaran portal, all you have to do is to right-click it couple times to make it explode. After you do you'll get another speech box, this time Extemely Volatile Stormheim Sheep bleating '...' - for some reason you can see someone else's sheep dialogue box, so if you see that one in Hall of the guardian without doing previous mob sheeping, means someone just made their sheep explode in the class hall :) As I said this step is pure luck, so it may take some time until you get your sheep to spawn (for me it was around 3 weeks).",
 							-- ["questID"] = , -- TODO: Get Quest ID for right clicking it. [Volatile Sheep]
 							["sourceQuests"] = { 43828 },	-- Sheep Summon Daily Roll
 							["groups"] = {
 								n(-159, { -- Daily Event Roll
 									["isDaily"] = true,
 									["questID"] = 43828,	-- "Sheep Summon Daily Roll" on WoWHead
-									["description"] = "If this quest has a checkmark next to it, then check below to see if you can find the Volatile Sheep in the class hall. If not, that means that you should come back tomorrow.",
+									["description"] = "If this quest has a checkmark next to it and you didn't see Cote's dialogue emote, then that means that you should come back tomorrow.",
 									["icon"] = "Interface\\Icons\\INV_Staff_2h_SheepStick_D_01",
 									["sourceQuests"] = {
 										43787,	-- Cliffwing Hippogryph [Azsuna]
@@ -50,9 +50,11 @@ _.ExpansionFeatures =
 							},
 						}),
 						n(111691, {	-- Extremely Volatile Stormheim Sheep
+							["description"] = "After that you just need to go to Stormheim in search of Extremely Volatile Stormheim Sheep. This is usually spawning somewhere around Runewood - the best way to find it would be to make /target macro, go to Valdisdall and just run around Runewood spamming macro - it didn't take me even 2 minutes until I got my sheep. Just as the previous one, click it couple times to make it explode, which should result in getting an angry bleat '...' from Enraged Volatile Elwynn Sheep.",
 							-- ["sourceQuests"] = {  },	-- TODO: Get Quest ID for right clicking it. [Volatile Sheep]
 						}),
 						n(111704, {	-- Cote "Shepherd" Metcalf
+							["description"] = "Now you need to go to the Tower of Azora in Elwynn Forest. Once there you will see Cote talking to Theocritus. After a short RP bit, he will become hostile and when you kill him, he drops the item.",
 							-- ["sourceQuests"] = {  },	-- TODO: Get Quest ID for right clicking it. [Extremely Volatile Stormheim Sheep]
 							["groups"] = {
 								i(139558, {	-- The Woolomancer's Charge
