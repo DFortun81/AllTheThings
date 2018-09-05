@@ -14,24 +14,42 @@ _.Instances =
 							title(141),		-- Of the Ashen Verdict
 							n(37687, { 	-- Alchemist Finklestein
 								i(49908, {	-- Primordial Saronite
-									i(49959),	-- Pattern: Bladeborn Leggings
-									i(49958),	-- Pattern: Blessed Cenarion Boots
-									i(49954),	-- Pattern: Deathfrost Boots
-									i(49965),	-- Pattern: Draconic Bonesplinter Legguards
-									i(49963),	-- Pattern: Earthsoul Boots
-									i(49961),	-- Pattern: Footpads of Impending Death
-									i(49953),	-- Pattern: Leggings of Woven Death
-									i(49957),	-- Pattern: Legwraps of Unleashed Nature
-									i(49962),	-- Pattern: Lightning-Infused Leggings
-									i(49955),	-- Pattern: Lightweave Leggings
-									i(49966),	-- Pattern: Rock-Steady Treads
-									i(49956),	-- Pattern: Sandals of Consecration
-									i(49974),	-- Plans: Boots of Kingly Upheaval
-									i(49972),	-- Plans: Hellfrozen Bonegrinders
-									i(49971),	-- Plans: Legplates of Painful Death
-									i(49973),	-- Plans: Pillars of Might
-									i(49970),	-- Plans: Protectors of Life
-									i(49969),	-- Plans: Puresteel Legplates
+									["groups"] = "This drops from any of the bosses on 10 man Heroic difficulty or higher. Alternatively, you can buy Primordial Saronite from Goodman the Closer.",
+									["crs"] = {
+										36612,	-- Lord Marrowgar
+										36855,	-- Lady Deathwhisper
+										36939,	-- High Overlord Saurfang
+										36948,	-- Muradin Bronzebeard
+										37813,	-- Deathbringer Saurfang
+										36626,	-- Festergut
+										36627,	-- Rotface
+										36678,	-- Professor Putricide
+										37970,	-- Blood Prince Council
+										37955,	-- Blood-Queen Lana'thel
+										36789,	-- Valithria Dreamwalker
+										36853,	-- Sindragosa
+										36597,	-- The Lich King
+									},
+									["groups"] = {
+										i(49959),	-- Pattern: Bladeborn Leggings
+										i(49958),	-- Pattern: Blessed Cenarion Boots
+										i(49954),	-- Pattern: Deathfrost Boots
+										i(49965),	-- Pattern: Draconic Bonesplinter Legguards
+										i(49963),	-- Pattern: Earthsoul Boots
+										i(49961),	-- Pattern: Footpads of Impending Death
+										i(49953),	-- Pattern: Leggings of Woven Death
+										i(49957),	-- Pattern: Legwraps of Unleashed Nature
+										i(49962),	-- Pattern: Lightning-Infused Leggings
+										i(49955),	-- Pattern: Lightweave Leggings
+										i(49966),	-- Pattern: Rock-Steady Treads
+										i(49956),	-- Pattern: Sandals of Consecration
+										i(49974),	-- Plans: Boots of Kingly Upheaval
+										i(49972),	-- Plans: Hellfrozen Bonegrinders
+										i(49971),	-- Plans: Legplates of Painful Death
+										i(49973),	-- Plans: Pillars of Might
+										i(49970),	-- Plans: Protectors of Life
+										i(49969),	-- Plans: Puresteel Legplates
+									},
 								}),
 							}),
 							{
@@ -1360,18 +1378,24 @@ _.Instances =
 							i(50342),	-- Whispering Fanged Skull
 						})),
 						e(  1626, {			-- Icecrown Gunship Battle
-							i(50787),	-- Frost Giant's Cleaver
-							i(50793),	-- Midnight Sun
-							i(50794),	-- Neverending Winter
-							i(50797),	-- Ice-Reinforced Vrykul Helm
-							i(50792),	-- Pauldrons of Lost Hope
-							i(50791),	-- Saronite Gargoyle Cloak
-							i(50796),	-- Bracers of Pale Illumination
-							i(50789),	-- Icecrown Rampart Bracers
-							i(50795),	-- Cord of Dark Suffering
-							i(50788),	-- Bone Drake's Enameled Boots
-							i(50790),	-- Abomination's Bloody Ring
-							i(50340),	-- Muradin's Spyglass
+							["crs"] = {
+								36939,	-- High Overlord Saurfang
+								36948,	-- Muradin Bronzebeard
+							},
+							["groups"] = {
+								i(50787),	-- Frost Giant's Cleaver
+								i(50793),	-- Midnight Sun
+								i(50794),	-- Neverending Winter
+								i(50797),	-- Ice-Reinforced Vrykul Helm
+								i(50792),	-- Pauldrons of Lost Hope
+								i(50791),	-- Saronite Gargoyle Cloak
+								i(50796),	-- Bracers of Pale Illumination
+								i(50789),	-- Icecrown Rampart Bracers
+								i(50795),	-- Cord of Dark Suffering
+								i(50788),	-- Bone Drake's Enameled Boots
+								i(50790),	-- Abomination's Bloody Ring
+								i(50340),	-- Muradin's Spyglass
+							},
 						}),
 						cr(37813, e(1628, {	-- Deathbringer Saurfang
 							i(142095),	-- Remains of a Blood Beast (PET!)
@@ -1641,7 +1665,6 @@ _.Instances =
 							i( 50346),	-- Sliver of Pure Ice
 						})),
 						cr(36855, e(1625, {	-- Lady Deathwhisper
-							i(49908),	-- Primordial Saronite
 							i(51927),	-- Njordar Bone Bow
 							i(51922),	-- Scourgelord's Baton
 							i(51924),	-- Deathspeaker Zealot's Helm
@@ -1656,22 +1679,26 @@ _.Instances =
 							i(50343),	-- Whispering Fanged Skull
 						})),
 						e(  1626, {			-- Icecrown Gunship Battle
-							i(49908),	-- Primordial Saronite
-							i(51916),	-- Frost Giant's Cleaver
-							i(51910),	-- Midnight Sun
-							i(51909),	-- Neverending Winter
-							i(51906),	-- Ice-Reinforced Vrykul Helm
-							i(51911),	-- Pauldrons of Lost Hope
-							i(51912),	-- Saronite Gargoyle Cloak
-							i(51907),	-- Bracers of Pale Illumination
-							i(51914),	-- Icecrown Rampart Bracers
-							i(51908),	-- Cord of Dark Suffering
-							i(51915),	-- Bone Drake's Enameled Boots
-							i(51913),	-- Abomination's Bloody Ring
-							i(50345),	-- Muradin's Spyglass
+							["crs"] = {
+								36939,	-- High Overlord Saurfang
+								36948,	-- Muradin Bronzebeard
+							},
+							["groups"] = {
+								i(51916),	-- Frost Giant's Cleaver
+								i(51910),	-- Midnight Sun
+								i(51909),	-- Neverending Winter
+								i(51906),	-- Ice-Reinforced Vrykul Helm
+								i(51911),	-- Pauldrons of Lost Hope
+								i(51912),	-- Saronite Gargoyle Cloak
+								i(51907),	-- Bracers of Pale Illumination
+								i(51914),	-- Icecrown Rampart Bracers
+								i(51908),	-- Cord of Dark Suffering
+								i(51915),	-- Bone Drake's Enameled Boots
+								i(51913),	-- Abomination's Bloody Ring
+								i(50345),	-- Muradin's Spyglass
+							},
 						}),
 						cr(37813, e(1628, {	-- Deathbringer Saurfang
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -1700,7 +1727,6 @@ _.Instances =
 							dr(4, i(52019)),	-- Precious' Ribbon
 						}),
 						cr(36626, e(1629, {	-- Festergut
-							i(49908),	-- Primordial Saronite
 							i(51887),	-- Abracadaver
 							i(51893),	-- Gutbuster
 							i(51890),	-- Precious' Putrid Collar
@@ -1715,7 +1741,6 @@ _.Instances =
 							i(51884),	-- Signet of Putrefaction
 						})),
 						cr(36627, e(1630, {	-- Rotface
-							i(49908),	-- Primordial Saronite
 							i(51881),	-- Shaft of Glacial Ice
 							i(51876),	-- Abomination Knuckles
 							i(51875),	-- Lockjaw
@@ -1729,7 +1754,6 @@ _.Instances =
 							i(51878),	-- Rotface's Rupturing Ring
 						})),
 						cr(36678, e(1631, {	-- Professor Putricide
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -1748,7 +1772,6 @@ _.Instances =
 							i( 50344),	-- Unidentifiable Organ
 						})),
 						cr(37970, e(1632, {	-- Blood Prince Council
-							i(49908),	-- Primordial Saronite
 							i(51857),	-- Hersir's Greatspear
 							i(51858),	-- Soulbreaker
 							i(51852),	-- Wand of Ruby Claret
@@ -1763,7 +1786,6 @@ _.Instances =
 							i(51855),	-- Thrice Fanged Signet
 						})),
 						cr(37955, e(1633, {	-- Blood-Queen Lana'thel
-							i(49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -1781,7 +1803,6 @@ _.Instances =
 							i(51843),	-- Seal of the Twilight Queen
 						})),
 						cr(36789, e(1634, {	-- Valithria Dreamwalker
-							i(49908),	-- Primordial Saronite
 							i(51833),	-- Oxheart
 							i(51828),	-- Sister Svalna's Aether Staff
 							i(51834),	-- Dreamhunter's Carbine
@@ -1796,7 +1817,6 @@ _.Instances =
 							i(51829),	-- Legguards of the Twisted Dream
 						})),
 						cr(36853, e(1635, {	-- Sindragosa
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -1816,7 +1836,6 @@ _.Instances =
 						})),
 						cr(36597, e(1636, {	-- The Lich King
 							title(139),	-- TITLE: Bane of the Fallen King
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -2013,7 +2032,6 @@ _.Instances =
 						}),
 						cr(36612, e(1624, {	-- Lord Marrowgar
 							i(142094),	-- Fragment of Frozen Bone (PET!)
-							i( 49908),	-- Primordial Saronite
 							i( 50415),	-- Bryntroll, the Bone Arbiter
 							i( 49968),	-- Frozen Bonespike
 							i( 49976),	-- Bulwark of Smouldering Steel
@@ -2031,7 +2049,6 @@ _.Instances =
 							i( 49967),	-- Marrowgar's Frigid Eye
 						})),
 						cr(36855, e(1625, {	-- Lady Deathwhisper
-							i(49908),	-- Primordial Saronite
 							i(49992),	-- Nibelung
 							i(49982),	-- Heartpierce
 							i(50034),	-- Zod's Repeating Longbow
@@ -2049,25 +2066,29 @@ _.Instances =
 							i(49990),	-- Ring of Maddening Whispers
 						})),
 						e(  1626, {			-- Icecrown Gunship Battle
-							i(49908),	-- Primordial Saronite
-							i(50411),	-- Scourgeborne Waraxe
-							i(50006),	-- Corp'rethar Ceremonial Crown
-							i(50005),	-- Amulet of the Silent Eulogy
-							i(50003),	-- Boneguard Commander's Pauldrons
-							i(49998),	-- Shadowvault Slayer's Cloak
-							i(50001),	-- Ikfirus' Sack of Wonder
-							i(50002),	-- Polar Bear Claw Bracers
-							i(50000),	-- Scourge Hunter's Vambraces
-							i(50011),	-- Gunship Captain's Mittens
-							i(50010),	-- Waistband of Righteous Fury
-							i(50009),	-- Boots of Unnatural Growth
-							i(50008),	-- Ring of Rapid Ascent
-							i(49999),	-- Skeleton Lord's Circle
-							i(50359),	-- Althor's Abacus
-							i(50352),	-- Corpse Tongue Coin
+							["crs"] = {
+								36939,	-- High Overlord Saurfang
+								36948,	-- Muradin Bronzebeard
+							},
+							["groups"] = {
+								i(50411),	-- Scourgeborne Waraxe
+								i(50006),	-- Corp'rethar Ceremonial Crown
+								i(50005),	-- Amulet of the Silent Eulogy
+								i(50003),	-- Boneguard Commander's Pauldrons
+								i(49998),	-- Shadowvault Slayer's Cloak
+								i(50001),	-- Ikfirus' Sack of Wonder
+								i(50002),	-- Polar Bear Claw Bracers
+								i(50000),	-- Scourge Hunter's Vambraces
+								i(50011),	-- Gunship Captain's Mittens
+								i(50010),	-- Waistband of Righteous Fury
+								i(50009),	-- Boots of Unnatural Growth
+								i(50008),	-- Ring of Rapid Ascent
+								i(49999),	-- Skeleton Lord's Circle
+								i(50359),	-- Althor's Abacus
+								i(50352),	-- Corpse Tongue Coin
+							},
 						}),
 						cr(37813, e(1628, {	-- Deathbringer Saurfang
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -2089,7 +2110,12 @@ _.Instances =
 							dr(12, i(52019)),	-- Precious' Ribbon
 						}),
 						cr(36626, e(1629, {	-- Festergut
-							i(49908),	-- Primordial Saronite
+							{
+								["itemID"] = 50226,		-- Festergut's Acidic Blood
+								["questID"] = 24545,	-- The Sacred and the Corrupt
+								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["description"] = "This can drop from Festergut on 25 man difficulty or higher.",
+							},
 							i(50040),	-- Distant Land
 							i(50035),	-- Black Bruise
 							i(50060),	-- Faceplate of the Forgotten
@@ -2108,7 +2134,12 @@ _.Instances =
 							i(50414),	-- Might of Blight
 						})),
 						cr(36627, e(1630, {	-- Rotface
-							i(49908),	-- Primordial Saronite
+							{
+								["itemID"] = 50231,		-- Rotface's Acidic Blood
+								["questID"] = 24545,	-- The Sacred and the Corrupt
+								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["description"] = "This can drop from Rotface on 25 man difficulty or higher.",
+							},
 							i(50016),	-- Rib Spreader
 							i(50028),	-- Trauma
 							i(50033),	-- Corpse-Impaling Spike
@@ -2126,7 +2157,6 @@ _.Instances =
 							i(50353),	-- Dislodged Foreign Object
 						})),
 						cr(36678, e(1631, {	-- Professor Putricide
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -2138,7 +2168,6 @@ _.Instances =
 							i( 50351),	-- Tiny Abomination in a Jar
 						})),
 						cr(37970, e(1632, {	-- Blood Prince Council
-							i(49908),	-- Primordial Saronite
 							i(49919),	-- Cryptmaker
 							i(50184),	-- Keleseth's Seducer
 							i(50173),	-- Shadow Silk Spindle
@@ -2156,7 +2185,6 @@ _.Instances =
 							i(50170),	-- Valanar's Other Signet Ring
 						})),
 						cr(37955, e(1633, {	-- Blood-Queen Lana'thel
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -2169,7 +2197,6 @@ _.Instances =
 						})),
 						cr(36789, e(1634, {	-- Valithria Dreamwalker
 							i(138832),	-- Illusion: Earthliving
-							i( 49908),	-- Primordial Saronite
 							i( 50183),	-- Lungbreaker
 							i( 50472),	-- Nightmare Ender
 							i( 50202),	-- Snowstorm Helm
@@ -2185,7 +2212,6 @@ _.Instances =
 							i( 50190),	-- Grinning Skull Greatboots
 						})),
 						cr(36853, e(1635, {	-- Sindragosa
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -2198,7 +2224,6 @@ _.Instances =
 						})),
 						cr(36597, e(1636, {	-- The Lich King
 							title(140),	-- TITLE: The Kingslayer
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
@@ -2496,7 +2521,6 @@ _.Instances =
 						}),
 						cr(36612, e(1624, {	-- Lord Marrowgar
 							i(142094),	-- Fragment of Frozen Bone (PET!)
-							i( 49908),	-- Primordial Saronite
 							i( 50709),	-- Bryntroll, the Bone Arbiter
 							i( 50608),	-- Frozen Bonespike
 							i( 50616),	-- Bulwark of Smouldering Steel
@@ -2514,7 +2538,6 @@ _.Instances =
 							i( 50610),	-- Marrowgar's Frigid Eye
 						})),
 						cr(36855, e(1625, {	-- Lady Deathwhisper
-							i(49908),	-- Primordial Saronite
 							i(50648),	-- Nibelung
 							i(50641),	-- Heartpierce
 							i(50638),	-- Zod's Repeating Crossbow
@@ -2532,25 +2555,29 @@ _.Instances =
 							i(50644),	-- Ring of Maddening Whispers
 						})),
 						e(  1626, {			-- Icecrown Gunship Battle
-							i(49908),	-- Primordial Saronite
-							i(50654),	-- Scourgeborne Waraxe
-							i(50661),	-- Corp'rethar Ceremonial Crown
-							i(50658),	-- Amulet of the Silent Eulogy
-							i(50660),	-- Boneguard Commander's Pauldrons
-							i(50653),	-- Shadowvault Slayer's Cloak
-							i(50656),	-- Ikfirus' Sack of Wonder
-							i(50659),	-- Polar Bear Claw Bracers
-							i(50655),	-- Scourge Hunter's Vambraces
-							i(50663),	-- Gunship Captain's Mittens
-							i(50667),	-- Waistband of Righteous Fury
-							i(50665),	-- Boots of Unnatural Growth
-							i(50664),	-- Ring of Rapid Ascent
-							i(50657),	-- Skeleton Lord's Circle
-							i(50366),	-- Althor's Abacus
-							i(50349),	-- Corpse Tongue Coin
+							["crs"] = {
+								36939,	-- High Overlord Saurfang
+								36948,	-- Muradin Bronzebeard
+							},
+							["groups"] = {
+								i(50654),	-- Scourgeborne Waraxe
+								i(50661),	-- Corp'rethar Ceremonial Crown
+								i(50658),	-- Amulet of the Silent Eulogy
+								i(50660),	-- Boneguard Commander's Pauldrons
+								i(50653),	-- Shadowvault Slayer's Cloak
+								i(50656),	-- Ikfirus' Sack of Wonder
+								i(50659),	-- Polar Bear Claw Bracers
+								i(50655),	-- Scourge Hunter's Vambraces
+								i(50663),	-- Gunship Captain's Mittens
+								i(50667),	-- Waistband of Righteous Fury
+								i(50665),	-- Boots of Unnatural Growth
+								i(50664),	-- Ring of Rapid Ascent
+								i(50657),	-- Skeleton Lord's Circle
+								i(50366),	-- Althor's Abacus
+								i(50349),	-- Corpse Tongue Coin
+							},
 						}),
 						cr(37813, e(1628, {	-- Deathbringer Saurfang
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
@@ -2575,7 +2602,12 @@ _.Instances =
 							dr(16, i(52019)),	-- Precious' Ribbon
 						}),
 						cr(36626, e(1629, {	-- Festergut
-							i(49908),	-- Primordial Saronite
+							{
+								["itemID"] = 50226,		-- Festergut's Acidic Blood
+								["questID"] = 24545,	-- The Sacred and the Corrupt
+								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["description"] = "This can drop from Festergut on 25 man difficulty or higher.",
+							},
 							i(50695),	-- Distant Land
 							i(50692),	-- Black Bruise
 							i(50701),	-- Faceplate of the Forgotten
@@ -2594,7 +2626,12 @@ _.Instances =
 							i(50693),	-- Might of Blight
 						})),
 						cr(36627, e(1630, {	-- Rotface
-							i(49908),	-- Primordial Saronite
+							{
+								["itemID"] = 50231,		-- Rotface's Acidic Blood
+								["questID"] = 24545,	-- The Sacred and the Corrupt
+								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["description"] = "This can drop from Rotface on 25 man difficulty or higher.",
+							},
 							i(50676),	-- Rib Spreader
 							i(50685),	-- Trauma
 							i(50684),	-- Corpse-Impaling Spike
@@ -2612,7 +2649,6 @@ _.Instances =
 							i(50348),	-- Dislodged Foreign Object
 						})),
 						cr(36678, e(1631, {	-- Professor Putricide
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
@@ -2627,7 +2663,6 @@ _.Instances =
 							i( 50706),	-- Tiny Abomination in a Jar
 						})),
 						cr(37970, e(1632, {	-- Blood Prince Council
-							i(49908),	-- Primordial Saronite
 							i(50603),	-- Cryptmaker
 							i(50710),	-- Keleseth's Seducer
 							i(50719),	-- Shadow Silk Spindle
@@ -2645,7 +2680,6 @@ _.Instances =
 							i(50714),	-- Valanar's Other Signet Ring
 						})),
 						cr(37955, e(1633, {	-- Blood-Queen Lana'thel
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
@@ -2661,7 +2695,6 @@ _.Instances =
 						})),
 						cr(36789, e(1634, {	-- Valithria Dreamwalker
 							i(138832),	-- Illusion: Earthliving
-							i( 49908),	-- Primordial Saronite
 							i( 50621),	-- Lungbreaker
 							i( 50631),	-- Nightmare Ender
 							i( 50626),	-- Snowstorm Helm
@@ -2679,7 +2712,6 @@ _.Instances =
 							i( 50618),	-- Frostbrood Sapphire Ring
 						})),
 						cr(36853, e(1635, {	-- Sindragosa
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
@@ -2696,7 +2728,6 @@ _.Instances =
 						cr(36597, e(1636, {	-- The Lich King
 							title(138),	-- TITLE: The Light of Dawn
 							i( 50818),	-- Invincible's Reins (MOUNT!)
-							i( 49908),	-- Primordial Saronite
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
