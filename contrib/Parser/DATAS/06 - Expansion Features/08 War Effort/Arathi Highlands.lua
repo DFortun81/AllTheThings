@@ -262,88 +262,301 @@ _.ExpansionFeatures =
 				n(-16, {	-- Rares
 					["groups"] = {
 						n(142709, {	-- Beastrider Kama
-							i(163644),	-- Swift Albino Raptor
+							["groups"] = {
+								i(163644),	-- Swift Albino Raptor
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								67.06, 65.89
+							},
 						}),
 						n(126427, {	-- Branchlord Aldrus
 							["groups"] = {
 								i(163650),	-- Aldrusian Sproutling
 							},
 							["questID"] = 53505,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								22.91, 22.21
+							},
 						}),
 						n(142688, {	-- Darbel Montrose
-							i(163652),	-- Tiny Grimoire
+							["groups"] = {
+								i(163652),	-- Tiny Grimoire
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								50.41, 61.21
+							},
 						}),
 						n(142741, {	-- Doomrider Helgrim
-							i(163579),	-- Highland Mustang
+							["groups"] = {
+								i(163579),	-- Highland Mustang
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								53.81, 58.21
+							},
 						}),
 						n(141668, {	-- Echo of Myzrael
-							i(163677),	-- Teeny Tiny Orb
+							["groups"] = {
+								i(163677),	-- Teeny Tiny Orb
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								56.61, 36.01
+							},
 						}),
 						n(142686, {	-- Foulbelly
 							["groups"] = {
 								i(163735),	-- Foulbelly
 							},
-							-- ["questID"]  = 
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								23.11, 46.71
+							},
 						}),
 						n(126462, {	-- Fozruk
-							i(163711),	-- Shard of Fozruk
+							["groups"] = {
+								i(163711),	-- Shard of Fozruk
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coords"] = {	-- Patrols, put start and ending path for coordinate plane.  Don't add anymore unless it's above the top point or below the bottom point
+								56.61, 36.01, 	-- Top
+								54.01, 55.41	-- Bottom
+							},
 						}),
 						n(142662, {	-- Geomancer Flintdagger
-							i(163713),	-- Brazier Cap
+							["groups"] = {
+								i(163713),	-- Brazier Cap
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								79.61, 30.31
+							},
 						}),
+						-- We have to do this as quests rather than the npc because we need to use two different questID's.  One for each faction
+						-- This means we need to use the quest object rather than the creature object
+						-- Horde information filled out.  Need Alliance questID then we can uncomment out their faction
+						q(53512, {	-- Horrific Apparition [Horde]
+							["groups"] = {
+								i(163736),	-- Spectral Visage
+							},
+							["qg"] = 142725,	-- Horrific Apparition
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["races"] = HORDE_ONLY,
+							["coord"] = {
+								26.71, 32.61,	-- Horde NPC
+							},
+						}),
+						--[[
+						q(, {	-- Horrific Apparition [Alliance]
+							["groups"] = {
+								i(163736),	-- Spectral Visage
+							},
+							["qg"] = 142725,	-- Horrific Apparition
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = {
+								19.51, 60.91,	-- Alliance NPC
+							},
+						}),
+						--]]
+						--[[ Original before found out Blizzard made a npc share with both factions and get different questID's
 						n(142725, {	-- Horrific Apparition
 							["groups"] = {
 								i(163736),	-- Spectral Visage
 							},
 							["questID"] = 53512,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coords"] = {
+								26.71, 32.61,	-- Horde NPC
+								19.51, 60.91,	-- Alliance NPC
+							},
 						}),
+						--]]
 						n(142739, {	-- Knight-Captaian Aldrin
-							i(163578),	-- Broken Highland Mustang
+							["groups"] = {
+								i(163578),	-- Broken Highland Mustang
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								49.01, 40.01
+							},
 						}),
 						n(135058, {	-- Kor'gresh Coldrage
-							i(163744),	-- Coldrage's Cooler
+							["groups"] = {
+								i(163744),	-- Coldrage's Cooler
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								48.11, 71.71
+							},
 						}),
 						n(142684, {	-- Kovork
-							i(163750),	-- Kovork Kostume
+							["groups"] = {
+								i(163750),	-- Kovork Kostume
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								25.01, 49.11
+							},
 						}),
 						n(142716, {	-- Man-Hunter Rog
-							i(163712),	-- Mana-Warped Egg
+							["groups"] = {
+								i(163712),	-- Mana-Warped Egg
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								52.31, 72.41
+							},
 						}),
 						n(132965, {	-- Molok the Crusher
-							i(163775),	-- Molok Morion
+							["groups"] = {
+								i(163775),	-- Molok Morion
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								59.81, 37.61
+							},
 						}),
 						n(142692, {	-- Nimar the Slayer
-							i(163706),	-- Witherbark Direwing
+							["groups"] = {
+								i(163706),	-- Witherbark Direwing
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								67.91, 66.51
+							},
 						}),
 						n(132074, {	-- Overseer Krix
 							["groups"] = {
 								i(163646),	-- Lil' Donkey
 							},
 							["questID"] = 53518,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								70.01, 34.81
+							},
 						}),
 						n(142361, {	-- Plaguefeather
-							i(163690),	-- Plague Egg
+							["groups"] = {
+								i(163690),	-- Plague Egg
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								36.91, 66.01
+							},
 						}),
 						n(142321, {	-- Ragebeak
-							i(163689),	-- Angry Egg
+							["groups"] = {
+								i(163689),	-- Angry Egg
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								11.91, 52.11
+							},
 						}),
 						n(142683, {	-- Ruul Onestone
-							i(163741),	-- Magic Fun Rock
+							["groups"] = {
+								i(163741),	-- Magic Fun Rock
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								43.01, 57.01
+							},
 						}),
 						n(142690, {	-- Singer
-							i(163738),	-- Syndicate Mask
+							["groups"] = {
+								i(163738),	-- Syndicate Mask
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								50.41, 57.61
+							},
 						}),
 						n(142312, {	-- Skullripper
-							i(163645),	-- Skullripper
+							["groups"] = {
+								i(163645),	-- Skullripper
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								56.61, 44.51
+							},
 						}),
 						n(142301, {	-- Venomarus
-							i(163648),	-- Fuzzy Creepling
+							["groups"] = {
+								i(163648),	-- Fuzzy Creepling
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								56.71, 54.11
+							},
 						}),
 						n(142251, {	-- Yogursa
-							i(163684),	-- Scabby
+							["groups"] = {
+								i(163684),	-- Scabby
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								14.01, 36.91
+							},
 						}),
 						n(142682, {	-- Zalas Witherbark <Warband Leader>
-							i(163745),	-- Witherbark Gong
+							["groups"] = {
+								i(163745),	-- Witherbark Gong
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								62.81, 80.81
+							},
 						}),
 					},
 				}),

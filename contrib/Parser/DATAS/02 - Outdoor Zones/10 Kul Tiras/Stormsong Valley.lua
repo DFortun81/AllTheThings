@@ -1894,6 +1894,18 @@ _.Zones =
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
+								q(51779, {	-- Grimscowl the Harebrained		
+									["groups"] = {	
+										i(155572),	-- Yeti-Rager's Cloak
+									},
+									["coord"] = {
+										62.0, 73.9
+									},	
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
 								q(52321, {	-- Kickers
 									["groups"] = {
 										i(154475),	-- Goathair Bindings
