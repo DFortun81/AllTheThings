@@ -1609,7 +1609,10 @@ _.Zones =
 							["questID"] = 50163,	
 						}),	
 						n(138667, {	-- Blighted Monstrosity
-							["questID"] = 52001,
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(163680),	-- Blightbitten Steps (not guaranteed loot)
+							}),
+							["questID"] = 52001,	-- 51699 for WQ
 						}),
 						n(126621, {	-- Bonesquall
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
