@@ -220,9 +220,9 @@ profession(165, { -- Leatherworking
 			i(13287), -- Pattern: Raptor Hide Harness
 			un(8, i(22663)), -- Pattern: Polar Bracers
 			un(8, i(22662)), -- Pattern: Polar Gloves
-			un(8, i(23020)), -- Pattern: Polar Helm
-			un(8, i(22701)), -- Pattern: Polar Leggings
-			un(8, i(22941)), -- Pattern: Polar Shoulder Pads			
+			--un(2, i(23020)), -- Pattern: Polar Helm (This is not showing as a pattern anywhere, item was a drop from a quest in the original Naxx, and BoP)
+			--un(2, i(22701)), -- Pattern: Polar Leggings (This is not showing as a pattern anywhere, item was a reward from a quest in the original Naxx, and BoP) 
+			--un(2, i(22941)), -- Pattern: Polar Shoulder Pads	(This is not showing as a pattern anywhere, item was a drop from a quest in the original Naxx, and BoP)		
 			un(8, i(22661)), -- Pattern: Polar Tunic			
 			i(7290), -- Pattern: Red Whelp Gloves
 			i(20509), -- Pattern: Sandstalker Bracers

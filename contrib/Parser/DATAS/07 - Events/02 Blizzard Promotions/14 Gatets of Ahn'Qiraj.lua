@@ -16,9 +16,10 @@ _.WorldEvents =
 							},
 						})),
 					})),
-					q(8730, {	-- Nefarius's Corruption
+					un(40, q(8730, {	-- Nefarius's Corruption
+						un(2, i(21529)),	-- Amulet of Shadow Shielding
 						un(2, i(21530)),	-- Onyx Embedded Leggings
-					}),
+					})),
 					un(40, q(8736, {	-- The Nightmare Manifests
 						un(2, i(21531)),	-- Drake Tooth Necklace
 						un(2, i(21532)),	-- Drudge Boots

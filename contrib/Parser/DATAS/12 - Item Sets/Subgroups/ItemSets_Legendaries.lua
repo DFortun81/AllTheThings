@@ -76,7 +76,7 @@ _.GearSets =
 				i(144259), -- Kil'jaeden's Burning Wish
 			}),	
 			cl(11, {	-- Druid
-				i(22632), -- Atiesh, Greatstaff of the Guardian
+				un(2, i(22632)), -- Atiesh, Greatstaff of the Guardian
 				i(71086), -- Dragonwrath, Tarecgosa's Rest (Priest, Mage, Lock, Druid, Shaman)
 				i(17182), -- Sulfuras, Hand of Ragnaros (Druid, Shaman, Paladin, Warrior, Death Knight)
 				i(46017), -- Val'anyr, Hammer of Ancient Kings (Priest, Druid, Monk, Shaman, Paladin)
@@ -164,7 +164,7 @@ _.GearSets =
 				i(151641), -- Soul of the Huntmaster
 			}),
 			cl(8, {		-- Mage
-				i(22589), -- Atiesh, Greatstaff of the Guardian (Mage)
+				un(2, i(22589)), -- Atiesh, Greatstaff of the Guardian (Mage)
 				i(71086), -- Dragonwrath, Tarecgosa's Rest (Priest, Mage, Lock, Druid, Shaman)
 				i(19019), -- Thunderfury, Blessed Blade of the Windseeker (Warlock, Mage, Rogue, Monk, Demon Hunter, Hunter, Paladin, Warrior, Death Knight)
 				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
@@ -289,7 +289,7 @@ _.GearSets =
 				i(144258), -- Velen's Future Sight
 			}),
 			cl(5, { 	-- Priest
-				i(22631), -- Atiesh, Greatstaff of the Guardian (Priest)
+				un(2, i(22631)), -- Atiesh, Greatstaff of the Guardian (Priest)
 				i(71086), -- Dragonwrath, Tarecgosa's Rest (Priest, Mage, Lock, Druid, Shaman)
 				i(46017), -- Val'anyr, Hammer of Ancient Kings (Priest, Druid, Monk, Shaman, Paladin)
 				un(4, i(102248)), -- Fen-Yu, Fury of Xuen
@@ -412,7 +412,7 @@ _.GearSets =
 				i(144258), -- Velen's Future Sight
 			}),
 			cl(9, { 	-- Warlock
-				i(22630), -- Atiesh, Greatstaff of the Guardian (Warlock)
+				un(2, i(22630)), -- Atiesh, Greatstaff of the Guardian (Warlock)
 				i(71086), -- Dragonwrath, Tarecgosa's Rest (Priest, Mage, Lock, Druid, Shaman)
 				i(19019), -- Thunderfury, Blessed Blade of the Windseeker (Warlock, Mage, Rogue, Monk, Demon Hunter, Hunter, Paladin, Warrior, Death Knight)
 				un(4, i(102248)), -- Fen-Yu, Fury of Xuen

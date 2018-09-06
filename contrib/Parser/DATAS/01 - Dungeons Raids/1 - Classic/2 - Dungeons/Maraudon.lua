@@ -79,9 +79,7 @@ _.Instances =
 							i(17734),	-- Helm of the Mountain
 							i(17736),	-- Rockgrip Gauntlets
 							i(17713),	-- Blackstone Ring
-							nld({     -- Legacy
-								un(2, i(17733)), 	-- Fist of Stone
-							}),
+							un(2, i(17733)), 	-- Fist of Stone
 						})),
 						cr(13596, e(430, {	-- Rotgrip
 							["groups"] = {
@@ -106,6 +104,34 @@ _.Instances =
 							},
 							["modelScale"] = 2,
 						})),
+					}),
+					n(-40, {	-- Legacy
+						n(-17, {	-- Quests (Legacy)
+							un(40, qa(7070, {	-- Shadowshard Fragments
+								un(2, i(17773)),	-- Prodigious Shadowshard Pendant
+								un(2, i(17772)),	-- Zealous Shadowshard Pendant
+							})),
+							un(40, qh(7068, {	-- Shadowshard Fragments
+								un(2, i(17773)),	-- Prodigious Shadowshard Pendant
+								un(2, i(17772)),	-- Zealous Shadowshard Pendant
+							})),
+							un(40, q(7067, {	-- The Pariah's Instructions
+								un(2, i(17774)),	-- Mark of the Chosen
+							})),
+							un(40, q(7046, {	-- The Scepter of Celebras
+								un(2, i(17191)),	-- Scepter of Celebras
+							})),
+							un(40, qh(7029, {	-- Vyletongue Corruption
+								un(2, i(17770)), 	-- Branchclaw Gauntlets
+								un(2, i(17778)),	-- Sagebrush Girdle
+								un(2, i(17768)),	-- Woodseed Hoop
+							})),
+							un(40, qa(7041, {	-- Vyletongue Corruption
+								un(2, i(17770)), 	-- Branchclaw Gauntlets
+								un(2, i(17778)),	-- Sagebrush Girdle
+								un(2, i(17768)),	-- Woodseed Hoop
+							})),
+						}),
 					}),
 				},
 				["lvl"] = 25,

@@ -36,39 +36,11 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
-						un(7, i(16680, {	-- Beaststalker's Belt
-							["crs"] = {
-								9259,	-- Firebrand Grunt
-								9260,	-- Firebrand Legionnaire
-							},
-						})),
-						un(7, i(16735, {	-- Bracers of Valor
-							["crs"] = {
-								9259,	-- Firebrand Grunt
-								9260,	-- Firebrand Legionnaire
-							},
-						})),
-						un(7, i(16673, {	-- Cord of Elements
-							["crs"] = {
-								9264,	-- Firebrand Pyromancer
-								9257,	-- Scarshield Warlock
-							},
-						})),
-						un(7, i(16703, {	-- Dreadmist Bracers
-							["crs"] = {
-								9257,	-- Scarshield Warlock
-							},
-						})),
 						i(16250, {			-- Formula: Enchant Weapon - Superior Striking
 							["crs"] = {
 								9216,	-- Spirestone Warlord
 							},
 						}),
-						un(7, i(16683, {	-- Magister's Bindings
-							["crs"] = {
-								9264,	-- Firebrand Pyromancer
-							},
-						})),
 						i(14513, {			-- Pattern: Robe of the Archmage
 							["crs"] = {
 								9264,	-- Firebrand Pyromancer
@@ -90,12 +62,6 @@ _.Instances =
 								9264,	-- Firebrand Pyromancer
 							},
 						}),
-						un(7, i(16713, {	-- Shadowcraft Belt
-							["crs"] = {
-								9259,	-- Firebrand Grunt
-								9260,	-- Firebrand Legionnaire
-							},
-						})),
 						n(9257, {		-- Scarshield Warlock
 							["groups"] = {	
 								n(10263, {	-- Burning Felguard
@@ -136,12 +102,13 @@ _.Instances =
 						["description"] = "This is a rare that is not always present.",
 					}),
 					cr( 9196, e(388, {	-- Highlord Omokk
-						i( 13167),	-- Fist of Omokk
+						un(2, i(16670)),	-- Boots of Elements
+						i(13167),	-- Fist of Omokk
 						i(151412),	-- Ogre Highlord's Casque
-						i( 13166),	-- Slamshot Shoulders
-						i( 13168),	-- Plate of the Shaman King
-						i( 13170),	-- Skyshroud Leggings
-						i( 13169),	-- Tressermane Leggings
+						i(13168),	-- Plate of the Shaman King
+						i(13170),	-- Skyshroud Leggings
+						i(13166),	-- Slamshot Shoulders
+						i(13169),	-- Tressermane Leggings
 					})),
 					cr( 9236, e(389, {	-- Shadow Hunter Vosh'gajin
 						i( 12651),	-- Blackcrow
@@ -193,6 +160,7 @@ _.Instances =
 						i(151414),	-- Arcanophile's Greatcloak
 						i( 13244),	-- Gilded Gauntlets
 						i( 13213),	-- Smolderweb's Eye
+						un(2, i(16715)),	-- Wildheart Boots
 					})),
 					cr(10584, e(392, {	-- Urok Doomhowl
 						["groups"] = {	
@@ -231,6 +199,7 @@ _.Instances =
 						i(151417),	-- Worg-Keeper's Spaulders
 						i( 13208),	-- Bleak Howler Armguards
 						i( 13206),	-- Wolfshear Leggings
+						un(2, i(16718)),	-- Wildheart Spaulders
 					})),
 					n(  9718, {			-- Ghok Bashguud
 						["groups"] = {	
@@ -248,75 +217,87 @@ _.Instances =
 						i( 13143),	-- Mark of the Dragon Lord
 						i( 22321),	-- Heart of Wyrmthalak
 						i(142370),	-- Plans: Arcanite Champion
-						un(2, i(13148)), -- Chillpike [Disappeared sometime around 3.0]
+						un(2, i(16679)),	-- Beaststalker's Mantle
+						un(2, i(13148)), 	-- Chillpike [Disappeared sometime around 3.0]
+						un(2, i(13164)),	-- Heart of the Scale
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(  0, {	-- Zone Drop (Legacy)
-								n(9693, { 	-- Bloodaxe Evoker
-									un(7, i(16673)), 	-- Cord of Elements
-									un(7, i(16683)),	-- Magister's Bindings
-								}),
-								n(9692, {	-- Bloodaxe Raider
-									un(7, i(16680)), 	-- Beaststalker's Belt
-									un(7, i(16716)),	-- Wildheart Belt
-								}),
-								n(9717, { 	-- Bloodaxe Summoner
-									un(7, i(16696)), 	-- Devout Belt
-									un(7, i(16703)),	-- Dreadmist Bracers
-								}),
-								n(9716, { 	-- Bloodaxe Warmonger
-									un(7, i(16735)),	-- Bracers of Valor
-									un(7, i(16713)),	-- Shadowcraft Belt
-								}),
-								n(9261, { 	-- Firebrand Darkweaver
-									un(7, i(16696)), 	-- Devout Belt
-									un(7, i(16703)),	-- Dreadmist Bracers
-								}),
-								n(9263, { 	-- Firebrand Dreadweaver
-									un(7, i(16696)), 	-- Devout Belt
-									un(7, i(16703)),	-- Dreadmist Bracers
-								}),
-								n(9262, {	-- Firebrand Invoker
-									un(7, i(16673)), 	-- Cord of Elements
-									un(7, i(16683)),	-- Magister's Bindings
-								}),
-								n(9097, { 	-- Scarshield Legionnaire
-									un(7, i(16735)),	-- Bracers of Valor
-									un(7, i(16713)),	-- Shadowcraft Belt
-								}),
-								n(9258, { 	-- Scarshield Raider
-									un(7, i(16680)), 	-- Beaststalker's Belt
-									un(7, i(16716)),	-- Wildheart Belt
-								}),
-								n(9098, { 	-- Scarshield Spellbinder
-									un(7, i(16696)), 	-- Devout Belt
-									un(7, i(16683)),	-- Magister's Bindings
-								}),				
-								n(9267, { 	-- Smolderthorn Axe Thrower
-									un(7, i(16735)),	-- Bracers of Valor
-								}),
-								n(9268, { 	-- Smolderthorn Berserker
-									un(7, i(16736)),	-- Belt of Valor
-								}),
-								n(9241, { 	-- Smolderthorn Headhunter
-									un(7, i(16680)), 	-- Beaststalker's Belt
-								}),
-								n(9239, { 	-- Smolderthorn Mystic
-									un(7, i(16685)),	-- Magister's Belt
-								}),
-								n(9269, { 	-- Smolderthorn Seer
-									un(7, i(16703)),	-- Dreadmist Bracers
-								}),
-								n(9265, { 	-- Smolderthorn Shadow Hunter
-									un(7, i(16713)),	-- Shadowcraft Belt
-								}),
-								n(9240, { 	-- Smolderthorn Shadow Priest
-									un(7, i(16696)), 	-- Devout Belt
-								}),
-								n(9266, { 	-- Smolderthorn Witch Doctor
-									un(7, i(16673)), 	-- Cord of Elements
-								}),
+								un(7, i(16680, {	-- Beaststalker's Belt
+									["crs"] = {
+										9692,	-- Bloodaxe Raider
+										9259,	-- Firebrand Grunt
+										9260,	-- Firebrand Legionnaire
+										9258, 	-- Scarshield Raider
+										9241, 	-- Smolderthorn Headhunter
+									},
+								})),
+								un(7, i(16735, {	-- Bracers of Valor
+									["crs"] = {
+										9716, 	-- Bloodaxe Warmonger
+										9259,	-- Firebrand Grunt
+										9260,	-- Firebrand Legionnaire
+										9097, 	-- Scarshield Legionnaire
+										9267, 	-- Smolderthorn Axe Thrower
+										9268, 	-- Smolderthorn Berserker
+									},
+								})),
+								un(7, i(16673, {	-- Cord of Elements
+									["crs"] = {
+										9693, 	-- Bloodaxe Evoker
+										9262,	-- Firebrand Invoker
+										9264,	-- Firebrand Pyromancer
+										9257,	-- Scarshield Warlock
+										9266, 	-- Smolderthorn Witch Doctor
+									},
+								})),
+								un(7, i(16696, {	-- Devout Belt
+									["crs"] = {
+										9717, 	-- Bloodaxe Summoner
+										9261, 	-- Firebrand Darkweaver
+										9263, 	-- Firebrand Dreadweaver
+										9098, 	-- Scarshield Spellbinder
+										9240, 	-- Smolderthorn Shadow Priest
+									},
+								})),
+								un(7, i(16703, {	-- Dreadmist Bracers
+									["crs"] = {
+										9717, 	-- Bloodaxe Summoner
+										9261, 	-- Firebrand Darkweaver
+										9263, 	-- Firebrand Dreadweaver
+										9257,	-- Scarshield Warlock
+										9269, 	-- Smolderthorn Seer
+									},
+								})),
+								un(7, i(16685, {	-- Magister's Belt
+									["crs"] = {
+										9239, 	-- Smolderthorn Mystic
+									},
+								})),
+								un(7, i(16683, {	-- Magister's Bindings
+									["crs"] = {
+										9693, 	-- Bloodaxe Evoker
+										9262,	-- Firebrand Invoker
+										9264,	-- Firebrand Pyromancer
+										9098, 	-- Scarshield Spellbinder
+									},
+								})),
+								un(7, i(16713, {	-- Shadowcraft Belt
+									["crs"] = {
+										9716, 	-- Bloodaxe Warmonger
+										9259,	-- Firebrand Grunt
+										9260,	-- Firebrand Legionnaire
+										9097, 	-- Scarshield Legionnaire
+										9265, 	-- Smolderthorn Shadow Hunter
+									},
+								})),
+								un(7, i(16716, {	-- Wildheart Belt
+									["crs"] = {
+										9692,	-- Bloodaxe Raider
+										9258, 	-- Scarshield Raider
+									},
+								})),
 							}),
 						},
 					}),

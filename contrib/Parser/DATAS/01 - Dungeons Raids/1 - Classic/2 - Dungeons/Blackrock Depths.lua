@@ -724,14 +724,28 @@ _.Instances =
 								un(2, i(12000)),	-- Limb Cleaver
 								un(2, i(11964)),	-- Swiftstrike Cudgel
 							})),
+							un(40, qh(4132, {	-- Operation: Death to Angerforge
+								un(2, i(12059)),	-- Conqueror's Medallion
+							})),
 							un(40, q( 4136, {		-- Ribbly Screwspigot
 								un(2, i(11963)),	-- Penance Spaulders 
 								un(2, i(11865)),	-- Rancor Boots
 								un(2, i(12049)),	-- Splintsteel Armor
 							})),
+							un(40, qh(7201, {	-- The Last Element
+								un(2, i(12038)),	-- Lagrave's Seal
+							})),
 							un(40, q( 4201, {		-- The Love Potion
 								un(2, i(11962)),	-- Manacle Cuffs
 								un(2, i(11866)),	-- Nagmara's Whipping Belt
+							})),
+							un(40, qh(4004, {	-- The Princess Saved?
+								un(2, i(12545)),	-- Eye of Orgrimmar
+								un(2, i(12544)),	-- Thrall's Resolve
+							})),
+							un(40, qa(4363, {	-- The Princess's Surprise
+								un(2, i(12548)),	-- Magni's Will
+								un(2, i(12543)),	-- Songstone of Ironforge
 							})),
 							un(40, qh(4063, {		-- The Rise of the Machines
 								un(2, i(12109)),	-- Azure Moon Amice

@@ -95,6 +95,7 @@ _.Instances =
 									i(13378),	-- Songbird Blouse
 									i(13384),	-- Rainbow Girdle
 									i(13383),  	-- Woollies of the Prancing Minstrel
+									un(2, i(16682)),	-- Magister's Boots
 								})),
 								cr(10516, e(450, { 	-- The Unforgiven
 									i( 22406),	-- Redemption
@@ -134,16 +135,19 @@ _.Instances =
 									i(13381),	-- Master Cannoneer Boots
 									i(13382),	-- Cannonball Runner
 									i(12839),	-- Plans: Heartseeker
+									i(22403),	-- Diana's Pearl Necklace
+									un(2, i(16708)),	-- Shadowcraft Spaulders
 								})),
 								cr(10811, e(448, { 	-- Instructor Galford
 									i(13385),	-- Tome of Knowledge
 									i(13386),	-- Archivist Cape
 									i(13387),	-- Foresight Girdle
 									i(18716),	-- Ash Covered Boots
+									un(7, i(16692)),	-- Devout Gloves
 								})),
 								cr(10813, e(449, { 	-- Balnazzar
-									dr(9, i(14512)),	-- Pattern: Truefaith Vestments
-									dr(4, i(13520)),	-- Recipe: Flask of Distilled Wisdom
+									i(14512),	-- Pattern: Truefaith Vestments
+									i(13520),	-- Recipe: Flask of Distilled Wisdom
 									i(13348),	-- Demonshear
 									i(18717),	-- Hammer of the Grand Crusader
 									i(13360),	-- Gift of the Elven Magi
@@ -153,58 +157,26 @@ _.Instances =
 									i(18720),	-- Shroud of the Nathrezim
 									i(13358),	-- Wyrmtongue Shoulders
 									i(13369),	-- Fire Striders
+									i(12103),	-- Star of Mystaria
+									un(2, i(16725)),	-- Lightforge Boots
 								})),
 								n(-40, {	-- Legacy
 									["groups"] = {
 										n(-17, {	-- Quests (Legacy)
 											un(40, q(5282, { 	-- The Restless Souls (2)
-												un(34, i(13315)),	-- Testament of Hope
+												un(2, i(13315)),	-- Testament of Hope
 											})),
 										}),
 										n(  0, {	-- Zone Drop (Legacy)
-											n(14684, { 	-- Balzaphon
+											un(43, n(14684, { 	-- Balzaphon
 												["groups"] = {
+													un(2, i(23125)),	-- Chains of the Lich
 													un(2, i(23124)),	-- Staff of Balzaphon
 													un(2, i(23126)),	-- Waistband of Balzaphon
 												},
 												["description"] = "This boss was only available during the Scourge Invasions.",
-											}),
-											n(10425, { 	-- Crimson Battle Mage
-												un(7, i(16685)),	-- Magister's Belt
-											}),
-											n(10419, { 	-- Crimson Conjuror
-												un(7, i(16697)), 	-- Devout Bracers
-												un(7, i(16702)),	-- Dreadmist Belt
-												un(7, i(16685)),	-- Magister's Belt
-											}),
-											n(10421, { 	-- Crimson Defender
-												un(7, i(16681)),	-- Beaststalker's Bindings
-											}),
-											n(10424, { 	-- Crimson Gallant
-												un(7, i(16723)),	-- Lightforge Belt
-											}),
-											n(10418, { 	-- Crimson Guardsman
-												un(7, i(16723)),	-- Lightforge Belt
-											}),
-											n(10420, { 	-- Crimson Initiate
-												un(7, i(16697)), 	-- Devout Bracers
-											}),
-											n(10426, { 	-- Crimson Inquisitor
-												un(7, i(16714)),	-- Wildheart Bracers
-											}),
-											n(10423, { 	-- Crimson Priest
-												un(7, i(16697)), 	-- Devout Bracers
-											}),
-											n(10422, { 	-- Crimson Sorcerer
-												un(7, i(16685)),	-- Magister's Belt
-											}),
-											n(10414, { 	-- Patchwork Horror
-												un(7, i(16736)),	-- Belt of Valor
-											}),
-											n(11043, { 	-- Risen Monk
-												un(7, i(16671)), 	-- Bindings of Elements
-											}),
-											n(16102, { 	-- Sothos
+											})),
+											un(43, n(16102, { 	-- Sothos
 												["groups"] = {
 													o(181083, {	-- Sothos and Jarien's Heirlooms
 														["groups"] = {
@@ -216,7 +188,52 @@ _.Instances =
 													}),
 												},
 												["description"] = "Sothos and Jarien are a pair of elite ghosts summoned in the Scarlet Bastion by using Brazier of Beckoning.",
-											}),
+											})),
+											un(7, i(16681, {	-- Beaststalker's Bindings
+												["crs"] = {
+													10421, 	-- Crimson Defender
+												},
+											})),
+											un(7, i(16736, {	-- Belt of Valor
+												["crs"] = {
+													10414, 	-- Patchwork Horror
+												},
+											})),
+											un(7, i(16671, { 	-- Bindings of Elements
+												["crs"] = {
+													11043,	-- Risen Monk
+												},
+											})),
+											un(7, i(16697, { 	-- Devout Bracers
+												["crs"] = {
+													10419, 	-- Crimson Conjuror
+													10420,	-- Crimson Initiate
+													10423, 	-- Crimson Priest
+												},
+											})),
+											un(7, i(16702, {	-- Dreadmist Belt
+												["crs"] = {
+													10419, 	-- Crimson Conjuror
+												},
+											})),
+											un(7, i(16723, {	-- Lightforge Belt
+												["crs"] = {
+													10424, 	-- Crimson Gallant
+													10418, 	-- Crimson Guardsman
+												},
+											})),
+											un(7, i(16685, {	-- Magister's Belt
+												["crs"] = {
+													10425,	-- Crimson Battle Mage
+													10419, 	-- Crimson Conjuror
+													10422, 	-- Crimson Sorcerer
+												},
+											})),
+											un(7, i(16714, {	-- Wildheart Bracers
+												["crs"] = {
+													10426, 	-- Crimson Inquisitor
+												},
+											})),
 										}),
 									},
 								}),
@@ -307,6 +324,7 @@ _.Instances =
 									i(13537),	-- Chillhide Bracers
 									i(13539),	-- Banshee's Touch
 									i(18730),	-- Shadowy Laced Handwraps
+									un(2, i(16704)),	-- Dreadmist Sandals
 								})),
 								cr(10437, e(452, { 	-- Nerub'enkan
 									i(18738),	-- Carapace Spine Crossbow
@@ -317,6 +335,7 @@ _.Instances =
 									i(18739),	-- Chitinous Plate Legguards
 									i(13531),	-- Crypt Stalker Leggings
 									i(13530),	-- Fangdrip Runners
+									un(2, i(16675)),	-- Beaststalker's Boots
 								})),
 								cr(10438, e(453, { 	-- Maleki the Pallid
 									i(18737),	-- Bone Slicing Hatchet
@@ -328,6 +347,7 @@ _.Instances =
 									i(13527),	-- Lavawalker Greaves
 									i(18735),	-- Maleki's Footwraps
 									i(12833),	-- Plans: Hammer of the Titans
+									un(2, i(16691)),	-- Devout Sandals
 								})),
 								cr(10435, e(454, { 	-- Magistrate Barthilas
 									i(18725),	-- Peacemaker
@@ -364,61 +384,88 @@ _.Instances =
 								})),
 								n(-40, {	-- Legacy
 									["groups"] = {
-										nlq({	-- Quests (Legacy)
-											q(9737, { 	-- True Masters of the Light
+										n(-17, {	-- Quests (Legacy)
+											un(40, q(5125, {	-- Aurius' Reckoning
+												un(2, i(17045)),	-- Blood of the Martyr
+												un(2, i(17044)),	-- Will of the Martyr
+											})),
+											un(40, q(9737, { 	-- True Masters of the Light
 												["groups"] = {
 													{
 													["mountID"] = 34767, 	-- Thalassian Charger
-													["u"] = 34,
+													["u"] = 2,
 													},
 													-- i(25549),	-- Blood Knight Tabard (not unobtainable, new quest out of Orgrimmar)
 												},
 												["classes"] = {2},
 												["races"] = {10},
-											}),
+											})),
 										}),
 										n(  0, {	-- Zone Drop (Legacy)
-											n(10416, { 	-- Bile Spewer
-												un(7, i(16736)),	-- Belt of Valor
-											}),
-											n(10413, { 	-- Crypt Beast
-												un(7, i(16671)), 	-- Bindings of Elements
-											}),
-											n(10407, { 	-- Fleshflayer Ghoul
-												un(7, i(16681)),	-- Beaststalker's Bindings
-											}),
-											n(10406, { 	-- Ghoul Ravener
-												un(7, i(16681)),	-- Beaststalker's Bindings
-											}),
-											n(10405, { 	-- Plague Ghoul
-												un(7, i(16710)),	-- Shadowcraft Bracers
-											}),
-											n(10408, { 	-- Rockwing Gargoyle
-												un(7, i(16723)),	-- Lightforge Belt
-											}),
-											n(10409, { 	-- Rockwing Screecher
-												un(7, i(16723)),	-- Lightforge Belt
-											}),
-											n(10463, {	-- Shrieking Banshee
-												un(7, i(16714)),	-- Wildheart Bracers
-											}),
-											n(10400, { 	-- Thuzadin Necromancer
-												un(7, i(16697)), 	-- Devout Bracers
-												un(7, i(16702)),	-- Dreadmist Belt
-												un(7, i(16685)),	-- Magister's Belt
-											}),
-											n(10398, { 	-- Thuzadin Shadowcaster
-												un(7, i(16697)), 	-- Devout Bracers
-												un(7, i(16702)),	-- Dreadmist Belt
-												un(7, i(16685)),	-- Magister's Belt
-											}),
-											n(10417, { 	-- Venom Belcher
-												un(7, i(16736)),	-- Belt of Valor
-											}),
-											n(10464, { 	-- Wailing Banshee
-												un(7, i(16714)),	-- Wildheart Bracers
-											}),
+											un(7, i(16681, {	-- Beaststalker's Bindings
+												["crs"] = {
+													10407, 	-- Fleshflayer Ghoul
+													10406, 	-- Ghoul Ravener
+												},
+											})),
+											un(7, i(16736, {	-- Belt of Valor
+												["crs"] = {
+													10416, 	-- Bile Spewer
+													10417,	-- Venom Belcher
+												},
+											})),
+											un(7, i(16671, { 	-- Bindings of Elements
+												["crs"] = {
+													10413, 	-- Crypt Beast
+												},
+											})),
+											un(7, i(16697, { 	-- Devout Bracers
+												["crs"] = {
+													10400, 	-- Thuzadin Necromancer
+													10398, 	-- Thuzadin Shadowcaster
+												},
+											})),
+											un(7, i(16702, {	-- Dreadmist Belt
+												["crs"] = {
+													10400, 	-- Thuzadin Necromancer
+													10398, 	-- Thuzadin Shadowcaster
+												},
+											})),
+											un(7, i(16723, {	-- Lightforge Belt
+												["crs"] = {
+													10408, 	-- Rockwing Gargoyle
+													10409, 	-- Rockwing Screecher
+												},
+											})),
+											un(7, i(16685, {	-- Magister's Belt
+												["crs"] = {
+													10400, 	-- Thuzadin Necromancer
+													10398, 	-- Thuzadin Shadowcaster
+												},
+											})),
+											un(7, i(16710, {	-- Shadowcraft Bracers
+												["crs"] = {
+													10405, 	-- Plague Ghoul
+												},
+											})),
+											un(7, i(16714, {	-- Wildheart Bracers
+												["crs"] = {
+													10463,	-- Shrieking Banshee
+													10464, 	-- Wailing Banshee
+												},
+											})),
 										}),
+										un(43, n(10440, {	-- Baron Rivendare
+											un(2, i(16678)),	-- Beaststalker's Pants
+											un(2, i(16694)),	-- Devout Skirt
+											un(2, i(16699)),	-- Dreadmist Leggings
+											un(2, i(16668)),	-- Kilt of Elements
+											un(2, i(16732)),	-- Legplates of Valor
+											un(2, i(16728)),	-- Lightforge Legplates
+											un(2, i(16687)),	-- Magister's Leggings
+											un(2, i(16709)),	-- Shadowcraft Pants
+											un(2, i(16719)),	-- Wildheart Kilt
+										})),
 									},
 								}),
 							},

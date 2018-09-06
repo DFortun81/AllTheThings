@@ -369,17 +369,16 @@ _.Instances =
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
-								qa(2240, {	-- The Hidden Chamber
-									un(34, i(9626)),	-- Dwarven Charge
-									un(34, i(9627)),	-- Explorers' League Lodestar
-								}),
+								un(40, qa(2240, {	-- The Hidden Chamber
+									un(2, i(9626)),	-- Dwarven Charge
+									un(2, i(9627)),	-- Explorers' League Lodestar
+								})),
 							}),
 							--n(-16, {	-- Rares (Legacy)
 							--}),
 							--n(  0, {	-- Zone Drop (Legacy)
 							--}),
 						},
-						["u"] = 2,
 					}),
 				},
 				["lvl"] = 35,

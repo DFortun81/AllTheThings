@@ -1052,20 +1052,6 @@ END OF MICRO-HOLIDAY --]]
 								["qg"] = 15500,	-- Keyl Swiftclaw
 								["classes"] = { 2 },	-- Paladin
 							}),
-							q(8690, {	-- Cloak kof the Gathering Storm
-								["groups"] = {
-									i(21400),	-- Cloak of the Gathering Storm
-								},
-								["qg"] = 15500,	-- Keyl Swiftclaw
-								["classes"] = { 7 },	-- Shaman
-							}),
-							q(8696, {	-- Cloak of the Unseen Path
-								["groups"] = {
-									i(21403),	-- Cloak of the Unseen Path
-								},
-								["qg"] = 15500,	-- Keyl Swiftclaw
-								["classes"] = { 3 },	-- Huntter
-							}),
 							q(8692, {	-- Cloak of Unending Life
 								["groups"] = {
 									i(21409),	-- Cloak of Unending Life
@@ -1079,6 +1065,20 @@ END OF MICRO-HOLIDAY --]]
 								},
 								["qg"] = 15500,	-- Keyl Swiftclaw
 								["classes"] = { 4 },	-- Rogue
+							}),
+							q(8690, {	-- Cloak of the Gathering Storm
+								["groups"] = {
+									i(21400),	-- Cloak of the Gathering Storm
+								},
+								["qg"] = 15500,	-- Keyl Swiftclaw
+								["classes"] = { 7 },	-- Shaman
+							}),
+							q(8696, {	-- Cloak of the Unseen Path
+								["groups"] = {
+									i(21403),	-- Cloak of the Unseen Path
+								},
+								["qg"] = 15500,	-- Keyl Swiftclaw
+								["classes"] = { 3 },	-- Huntter
 							}),
 							q(8709, {	-- Dagger of Veiled Shadows
 								["groups"] = {
@@ -1143,19 +1143,19 @@ END OF MICRO-HOLIDAY --]]
 								["qg"] = 15498,	-- Windcaller Yessendra
 								["classes"] = { 5 },	-- Priest
 							}),
-							q(8698, {	-- Ring of the Gathering Storm
-								["groups"] = {
-									i(21399),	-- Ring of the Gathering Storm
-								},
-								["qg"] = 15498,	-- Windcaller Yessendra
-								["classes"] = { 7 },	-- Shaman
-							}),
 							q(8702, {	-- Ring of Unspoken Names
 								["groups"] = {
 									i(21417),	-- Ring of Unspoken Names
 								},
 								["qg"] = 15498,	-- Windcaller Yessendra
 								["classes"] = { 9 },	-- Warlock
+							}),
+							q(8698, {	-- Ring of the Gathering Storm
+								["groups"] = {
+									i(21399),	-- Ring of the Gathering Storm
+								},
+								["qg"] = 15498,	-- Windcaller Yessendra
+								["classes"] = { 7 },	-- Shaman
 							}),
 							q(8712, {	-- Scythe of the Unseen Path
 								["groups"] = {
@@ -1185,19 +1185,19 @@ END OF MICRO-HOLIDAY --]]
 								["qg"] = 15499,	-- Warden Haro
 								["classes"] = { 1 },	-- Warrior
 							}),
-							q(8704, {	-- Signet of the Unseen path
-								["groups"] = {
-									i(21402),	-- Signet of the unseen Path
-								},
-								["qg"] = 15498,	-- Windcaller Yessendra
-								["classes"] = { 3 },	-- Hunter
-							}),
 							q(8556, {	-- Signet of Unyielding Strength
 								["groups"] = {
 									i(21393),	-- Signet of Unyielding Strength
 								},
 								["qg"] = 15498,	-- Windcaller Yessendra
 								["classes"] = { 1 },	-- Warrior
+							}),
+							q(8704, {	-- Signet of the Unseen path
+								["groups"] = {
+									i(21402),	-- Signet of the unseen Path
+								},
+								["qg"] = 15498,	-- Windcaller Yessendra
+								["classes"] = { 3 },	-- Hunter
 							}),
 						}),
 						n(-16, { 	-- Rares

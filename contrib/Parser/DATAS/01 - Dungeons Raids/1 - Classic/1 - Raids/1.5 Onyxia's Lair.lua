@@ -24,6 +24,7 @@ _.Instances = { tier(1, {	-- Classic
 											un(2, i(18403)),		-- Dragonslayer's Signet
 											un(2, i(18404)),		-- Onyxia Tooth Pendant
 											un(2, i(18406)),		-- Onyxia Blood Talisman
+											un(2, i(49313)),		-- Polished Dragonslayer's Signet
 										},
 									},
 									{
@@ -31,7 +32,6 @@ _.Instances = { tier(1, {	-- Classic
 										["qg"] = 14394,		-- Quest Giver: Major Mattingly
 										["sourceQuest"] = 7496,	-- Source Quest: Celebrating Good Times
 										["requireSkill"] = 165,	-- Leatherworking
-										["u"] = 2,				-- Unobtainable
 										["groups"] = {
 											{
 												["spellID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
@@ -57,6 +57,7 @@ _.Instances = { tier(1, {	-- Classic
 											un(2, i(18403)),		-- Dragonslayer's Signet
 											un(2, i(18404)),		-- Onyxia Tooth Pendant
 											un(2, i(18406)),		-- Onyxia Blood Talisman
+											un(2, i(49313)),		-- Polished Dragonslayer's Signet
 										},
 									},
 									{
@@ -103,7 +104,7 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(18813)),	-- Ring of Binding
 							un(2, i(17064)),	-- Shard of the Scale
 						},
-						["u"] = 2,
+						["u"] = 43,
 						["creatureID"] = 10184
 					}),
 				},
@@ -166,9 +167,7 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 							i(49636),	-- Reins of the Onyxian Drake (Mount)
 							i(49295),	-- Enlarged Onyxia Hide Backpack (Bag)
-							i(49294, {	-- Ashen Sack of Gems (Consumable)
-								["groups"] = {
-								},
+							i(49294, {	-- Ashen Sack of Gems (Misc)
 								["f"] = 113, -- Bag
 							}),
 							i(49299),	-- Keen Obsidian Edged Blade
@@ -269,9 +268,7 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 							i(49636),	-- Reins of the Onyxian Drake (Mount)
 							i(49295),	-- Enlarged Onyxia Hide Backpack (Bag)
-							i(49294, {	-- Ashen Sack of Gems (Consumable)
-								["groups"] = {
-								},
+							i(49294, {	-- Ashen Sack of Gems (Misc)
 								["f"] = 113, -- Bag
 							}),
 							i(49496),	-- Reinforced Shadowstrike

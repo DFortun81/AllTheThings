@@ -377,9 +377,9 @@ _.WorldDrops =
 					i(6360, { -- Steelscale Crushfish
 						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 					}),
-					i(68194, {	-- Oggleflint's Inspirer
+					un(7, i(68194, {	-- Oggleflint's Inspirer
 						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-					}),
+					})),
 					i(7736),	-- Fight Club
 					i(7752),	-- Dreamslayer
 					i(789),		-- Stout Battlehammer

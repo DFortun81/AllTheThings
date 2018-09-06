@@ -56,36 +56,35 @@ _.Instances =
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
-								qa(377, {	-- Crime and Punishment
-									un(34, i(2033)),	-- Ambassador's Boots
-									un(34, i(2906)),	-- Darkshire Mail Leggings
-								}),
-								qa(378, {	-- The Fury Runs Deep
-									un(34, i(3562)),	-- Belt of Vindication
-									un(34, i(1264)),	-- Headbasher
-								}),
-								qa(386, { 	-- What Comes Around...
-									un(34, i(1317)),	-- Hardened Root Staff 
-									un(34, i(3400)),	-- Lucine Longsword
-								}),
+								un(40, qa(377, {	-- Crime and Punishment
+									un(2, i(2033)),	-- Ambassador's Boots
+									un(2, i(2906)),	-- Darkshire Mail Leggings
+								})),
+								un(40, qa(378, {	-- The Fury Runs Deep
+									un(2, i(3562)),	-- Belt of Vindication
+									un(2, i(1264)),	-- Headbasher
+								})),
+								un(40, qa(386, { 	-- What Comes Around...
+									un(2, i(1317)),	-- Hardened Root Staff 
+									un(2, i(3400)),	-- Lucine Longsword
+								})),
 							}),
 							n(-16, {	-- Rares (Legacy)
-								n(1720, {	-- Bruegal Ironknuckle
+								un(43, n(1720, {	-- Bruegal Ironknuckle
 									["groups"] = {
 										un(2, i(2942)),	-- Iron Knuckles
 										un(2, i(3228)),	-- Jimmied Handcuffs
 										un(2, i(2941)),	-- Prison Shank
 									},
 									["description"] = "This is a rare that was not always present.",
-								}),
+								})),
 							}),
 							n(  0, {	-- Zone Drop (Legacy)
-								n(1666, { 	-- Kam Deepfury
+								un(43, n(1666, { 	-- Kam Deepfury
 									un(2, i(2280)),	-- Kam's Walking Stick	
-								}),
+								})),
 							}),
 						},
-						["u"] = 2,
 					}),
 				},
 				["lvl"] = 15,

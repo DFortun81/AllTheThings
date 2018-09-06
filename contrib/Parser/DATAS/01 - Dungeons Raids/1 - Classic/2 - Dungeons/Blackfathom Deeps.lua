@@ -273,9 +273,9 @@ _.Instances = { tier(1, {	-- Classic
 					})),
 					un(40, qa(1275, {	-- Researching the Corruption
 						un(2, i(56682)),	-- Band of the Skull Crusher
-						un(2, i( 7003)),	-- Beetle Clasps
+						un(2, i(7003)),		-- Beetle Clasps
 						un(2, i(56679)),	-- Dissector
-						un(2, i( 7004)),	-- Prelacy Cape
+						un(2, i(7004)),		-- Prelacy Cape
 						un(2, i(56681)),	-- Searching Wand
 						un(2, i(56680)),	-- Shadestar Mace
 					})),	
@@ -283,8 +283,8 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(56699)),	-- Aluwyn's Legguards
 						un(2, i(56697)),	-- Blackfathom Mace
 						un(2, i(56698)),	-- Gift of the Enigmatic Tree
-						un(1, i( 7000)),	-- Heartwood Girdle
-						un(2, i( 6998)),	-- Nimbus Boots
+						un(1, i(7000)),		-- Heartwood Girdle
+						un(2, i(6998)),		-- Nimbus Boots
 					})),
 				}),
 			}),

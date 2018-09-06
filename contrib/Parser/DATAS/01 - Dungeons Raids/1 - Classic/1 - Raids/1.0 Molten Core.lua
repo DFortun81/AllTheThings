@@ -619,18 +619,17 @@ _.Instances = { tier(1, {	-- Classic
 				ach(686),	-- Molten Core
 				un(2, ach(8820, { -- 10th Anniversary
 					["groups"] = {
-						ach(9550, { -- Boldly, You Sought the Power of Ragnaros
+						un(2, ach(9550, { -- Boldly, You Sought the Power of Ragnaros
 							un(9, i(115484)), -- Core Hound Chain
-							un(3, i(115301)), -- Molten Corgi
-							un(3, i(118942)), -- Crown of Power
-							un(3, i(118941)), -- Crown of Woe
-							un(3, i(118939)), -- Crown of Destruction
-							un(3, i(118940)), -- Crown of Desolation
-						}),
-						un(31, i(118572)), -- Illusion: Flames of Ragnaros
+						})),
+						un(3, i(118942)), -- Crown of Power
+						un(3, i(118941)), -- Crown of Woe
+						un(3, i(118939)), -- Crown of Destruction
+						un(3, i(118940)), -- Crown of Desolation
 						un(7, i(118574)), -- Hatespark the Tiny
+						un(31, i(118572)), -- Illusion: Flames of Ragnaros
+						un(3, i(115301)), -- Molten Corgi
 					},
-					["u"] = 2,
 				})),
 				i(138018),	-- Clothes Chest Pattern: Molten Core
 				i(17204, {	-- Eye of Sulfuras

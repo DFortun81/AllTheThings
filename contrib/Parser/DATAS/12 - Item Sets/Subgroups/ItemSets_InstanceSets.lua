@@ -162,7 +162,7 @@ _.GearSets =
 		n(-3226, { -- Ironweave Battlesuit [Unobtainable]
 			i(22302), -- Helm
 			un(11, i(22305)), -- Shoulders
-			i(22301), -- Chest
+			un(2, i(22301)), -- Chest
 			i(22313), -- Bracers
 			un(11, i(22304)), -- Hands
 			un(11, i(22306)), -- Belt

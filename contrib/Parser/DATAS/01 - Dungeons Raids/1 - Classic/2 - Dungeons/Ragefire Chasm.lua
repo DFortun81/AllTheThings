@@ -21,9 +21,6 @@ _.Instances =
 						qh(30969, { -- A New Enemy
 							["qg"] = 61716, -- Invoker Xorenth
 						}),
-						un(40, qh(26862, { -- Elemental Tampering
-							["qg"] = 44216, -- Bovaal Whitehorn
-						})),
 						qh(30984, { -- No Orc Left Behind
 							["qg"] = 61823, -- Commander Bagran
 						}),
@@ -60,20 +57,26 @@ _.Instances =
 					})),
 					n(-40, { -- Legacy
 						["groups"] = {
-							nlq({ -- Quests (Legacy)
-								un(40, qh(5724), {	-- Returning the Lost Satchel
-									un(34, i(15452)),	-- Featherbead Bracers
-									un(34, i(15453)),	-- Savannah Bracers
-								}),
+							n(-17, { -- Quests (Legacy)
+								un(40, qh(26862, { -- Elemental Tampering
+									["qg"] = 44216, -- Bovaal Whitehorn
+								})),
+								un(40, qh(26856, { -- Repel the Invasion
+									["qg"] = 44217, -- Stone Guard Kurjack
+								})),
+								un(40, qh(5724, {	-- Returning the Lost Satchel
+									un(2, i(15452)),	-- Featherbead Bracers
+									un(2, i(15453)),	-- Savannah Bracers
+								})),
 								un(40, qh(26858, { -- Taragaman the Hungerer
 									["groups"] = {
-										un(34,  i(49541)), 	-- Robes of the Doomed Ritual
-										un(34,  i(66022)), 	-- Ragefire Leggings
-										un(34,  i(66031)), 	-- Hide Vest of the Shaman
-										un(34,  i(66045)), 	-- Stone Guard Greaves
-										un(34,  i(66040)), 	-- Searing Belt
-										un(34, i(131614)), 	-- Chasm Linked Pants
-										un(34, i(131613)), 	-- Scaled Vest of the Shaman 
+										un(2, i(131614)), 	-- Chasm Linked Pants
+										un(2,  i(66031)), 	-- Hide Vest of the Shaman
+										un(2,  i(66022)), 	-- Ragefire Leggings
+										un(2,  i(49541)), 	-- Robes of the Doomed Ritual
+										un(2, i(131613)), 	-- Scaled Vest of the Shaman 
+										un(2,  i(66040)), 	-- Searing Belt
+										un(2,  i(66045)), 	-- Stone Guard Greaves
 									},
 									["qg"] = 44217, -- Stone Guard Kurjack
 									["sourceQuests"] = {
@@ -84,23 +87,26 @@ _.Instances =
 										31035, -- Enemies Below
 									}
 								})),
-								un(40, qh(26856, { -- Repel the Invasion
-									["groups"] = {},
-									["qg"] = 44217, -- Stone Guard Kurjack
-								})),
 							}),
 							--n(-16, {	-- Rares (Legacy)
 							--}),
 							n(  0, {	-- Zone Drop (Legacy)
-								n(11518, {	-- Jergosh the Invoker
+								un(43, n(11519, {	-- Bazzalan
+									un(2, i(68195)),	-- Bazzalan's Blade
+								})),
+								un(43, n(11518, {	-- Jergosh the Invoker
 									un(2, i(14147)),	-- Cavedweller Bracers
 									un(2, i(14151)),	-- Chanting Blade
 									un(2, i(14150)),	-- Robe of Evocation
-								}),
-								n(11520, {	-- Taragaman the Hungerer
+								})),
+								un(43, n(11517, {	-- Oggleflint
+									un(7, i(68194)),	-- Oggleflint's Inspirer
+								})),
+								un(43, n(11520, {	-- Taragaman the Hungerer
 									un(2, i(14148)),	-- Crystalline Cuffs
+									un(2, i(14145)),	-- Cursed Felblade
 									un(2, i(14149)),	-- Subterranean Cape
-								}),
+								})),
 							}),
 						},
 					}),

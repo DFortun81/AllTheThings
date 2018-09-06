@@ -827,6 +827,9 @@ _.Zones =
 								},
 								["classes"] = { 8 },	-- Mage
 							})),
+							un(40, qa(1050, {	-- Mythology of the Titans
+								un(2, i(7746)),	-- Explorers' League Commendation
+							})),
 							un(40, qc1(qa(9006, {	-- Saving the Best for Last
 								un(2, i(21997)),	-- Breastplate of Heroism
 								un(2, i(21999)),	-- Helm of Heroism

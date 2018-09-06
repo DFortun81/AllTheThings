@@ -11,13 +11,46 @@ _.Instances =
 				["groups"] = {
 					n(-40, {	-- Legacy
 						un(2, ach(2188)),	-- Leeeeeeeeeeeeeroy!
-						nlq({	-- Quests (Legacy)
-							q(27445, { 	-- General Drakkisath, Hand of Nefarian
-								un(34, i(66001)), 	-- Aeyla's Staff
-								un(34, i(65934)), 	-- Staff of the Second Orb
-								un(34, i(65982)), 	-- Sword of Nefarian's Hand
-								un(34, i(65958)), 	-- Vaelan's Claw
-							}),
+						n(-17, {	-- Quests (Legacy)
+							un(40, qh(6602, {	-- Blood of the Black Dragon Champion
+								un(2, i(16309)),	-- Drakefire Amulet
+							})),
+							un(40, qa(4765, {	-- Delivery to Ridgewell
+								un(2, i(15860)),	-- Blinkstrike Armguards
+								un(2, i(15861)),	-- Swiftfoot Treads
+							})),
+							un(40, qa(6502, {	-- Drakefire Amulet
+								un(2, i(16309)),	-- Drakefire Amulet
+							})),
+							un(40, qh(4974, {	-- For The Horde!
+								un(2, i(13965)),	-- Blackhand's Breadth
+								un(2, i(13968)),	-- Eye of the Beast
+								un(2, i(13966)),	-- Mark of Tyranny
+							})),
+							un(40, qa(6102, {	-- General Drakkisath's Demise
+								un(2, i(13965)),	-- Blackhand's Breadth
+								un(2, i(13968)),	-- Eye of the Beast
+								un(2, i(13966)),	-- Mark of Tyranny
+							})),
+							un(40, q(27445, { 	-- General Drakkisath, Hand of Nefarian
+								un(2, i(66001)), 	-- Aeyla's Staff
+								un(2, i(65934)), 	-- Staff of the Second Orb
+								un(2, i(65982)), 	-- Sword of Nefarian's Hand
+								un(2, i(65958)), 	-- Vaelan's Claw
+							})),
+							un(40, q(4866, {	-- Mother's Milk
+								un(2, i(15873)),	-- Ragged John's Neverending Cup
+							})),
+							un(40, q(4743, {	-- Seal of Ascension
+								un(2, i(12344)),	-- Seal of Ascension
+							})),
+							un(40, q(4768, {	-- The Darkstone Tablet
+								un(2, i(15860)),	-- Blinkstrike Armguards
+								un(2, i(15861)),	-- Swiftfoot Treads
+							})),
+							un(40, q(4867, { 	-- Urok Doomhowl
+								un(2, i(15867)),	-- Prismcharm
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
@@ -83,7 +116,7 @@ _.Instances =
 							},
 							["description"] = "This is a rare that is not always present.",
 						}),
-						n(10899, { -- Goraluk Anvilcrack
+						n(10899, { 	-- Goraluk Anvilcrack
 							n(-3, { -- Holidays
 								n(-61, { -- Winter Veil
 									ig(21525), -- Green Winter Hat

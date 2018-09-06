@@ -286,68 +286,72 @@ _.Instances =
 					}),
 					n(-40, { 	-- Legacy
 						["groups"] = {
-							nlq({ 		-- Legacy Quests
-								qh(1098, {	-- Deathstalkers in Shadowfang
-									i(3324),	-- Ghostly Mantle
-								}),
-								qh(1013, {	-- The Book of Ur
-									i(6335),	-- Grizzled Boots
-									i(4534),	-- Steel-Clasped Bracers
-								}),
-								qh(1014),	-- Arugal Must Die
-								q(1740, {	-- The Orb of Soran'ruk
+							n(-17, { 		-- Legacy Quests
+								un(40, qh(1014, {	-- Arugal Must Die
+									un(2, i(6414)),	-- Seal of Sylvanas
+								})),
+								un(40, qh(1098, {	-- Deathstalkers in Shadowfang
+									un(2, i(3324)),	-- Ghostly Mantle
+								})),
+								un(40, qh(1013, {	-- The Book of Ur
+									un(2, i(6335)),	-- Grizzled Boots
+									un(2, i(4534)),	-- Steel-Clasped Bracers
+								})),
+								un(40, q(1740, {	-- The Orb of Soran'ruk
 									["groups"] = {
-										i( 6898),	-- Orb of Soran'ruk
-										i(15109),	-- Staff of Soran'ruk
+										un(2, i( 6898)),	-- Orb of Soran'ruk
+										un(2, i(15109)),	-- Staff of Soran'ruk
 									},
 									["classes"] = { 9 }
-								}),
-								qh(9692, {	-- The Path of the Adept
+								})),
+								un(40, qh(9692, {	-- The Path of the Adept
 									["groups"] = {
-										q(9707, {	-- Forging the Weapon
+										un(40, q(9707, {	-- Forging the Weapon
 											["groups"] = {
-												q(9710, {	-- The Blood-Tempered Ranseur
+												un(40, q(9710, {	-- The Blood-Tempered Ranseur
 													["groups"] = {
-														i(25464),	-- Blood-Tempered Ranseur
+														un(2, i(25464)),	-- Blood-Tempered Ranseur
 													},
 													["classes"] = { 2 }
-												}),
+												})),
 											},
 											["classes"] = { 2 }
-										}),
+										})),
 									},
 									["classes"] = { 2 }
-								}),
-								qa(1654, {	-- The Test of Righteousness
+								})),
+								un(40, qa(1654, {	-- The Test of Righteousness
 									["groups"] = {
-										q(1806, {	-- The Test of Righteousness
+										un(40, q(1806, {	-- The Test of Righteousness
 											["groups"] = {
-												i(6953),	-- Verigan's Fist
+												un(2, i(6953)),	-- Verigan's Fist
 											},
 											["classes"] = { 2 }
-										}),
+										})),
 									},
 									["classes"] = { 2 }
-								}),
+								})),
 							}),
 							n(3886, {	-- Razorclaw the Butcher
-								i(6226),	-- Bloody Apron
-								i(1292),	-- Butcher's Cleaver
-								i(6633),	-- Butcher's Slicer
+								un(2, i(6226)),	-- Bloody Apron
+								i(1292),	-- Butcher's Cleaver	NOTE: Drops from Lord Walden now and is still obtainable
+								un(2, i(6633)),	-- Butcher's Slicer
 							}),
-							n(14682, {	-- Sever
-								i(23173),	-- Abomination Skin Leggings
-								i(23171),	-- The Axe of Severing
-							}),
-							n(4274, {	-- Fenrus the Devourer
-								i(6340),	-- Fenrus' Hide
-							}),
-							n(4275, {	-- Archmage Arugal
-								i(6392),	-- Belt of Arugal
-							}),
+							un(43, n(14682, {	-- Sever
+								un(2, i(23173)),	-- Abomination Skin Leggings
+								un(2, i(23171)),	-- The Axe of Severing
+							})),
+							un(43, n(4274, {	-- Fenrus the Devourer
+								i(3230),	-- Black Wolf Bracers	NOTE: Drops from Lord Walden now and is still obtainable
+								un(2, i(6340)),	-- Fenrus' Hide
+							})),
+							un(43, n(4275, {	-- Archmage Arugal
+								un(2, i(6392)),	-- Belt of Arugal
+								i(6220),	-- Meteor Shard	NOTE: Drops from Lord Godfrey now and is still obtainable
+								i(6324), 	-- Robes of Arugal	NOTE: Drops from Baron Ashbury now and is still obtainable
+							})),
 						},
 						["description"] = "During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",
-						["u"] = 2,
 					}),
 				},
 				["lvl"] = 11,

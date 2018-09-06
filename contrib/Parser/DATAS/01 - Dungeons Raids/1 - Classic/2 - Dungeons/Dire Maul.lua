@@ -414,39 +414,95 @@ _.Instances =
 								n(-17, {	-- Quests (Legacy)
 									un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
 										["groups"] = {
-											q(7507),	-- Furor's Compendium
-											q(7508),	-- The Forging of Quel'Serrar
-											q(7509, {	-- The Forging of Quel'Serrar
-												un(34, i(18348)),	-- Quel'Serrar
-											}),
+											un(40, q(7507)),	-- Furor's Compendium
+											un(40, q(7508)),	-- The Forging of Quel'Serrar
+											un(40, q(7509, {	-- The Forging of Quel'Serrar
+												un(2, i(18348)),	-- Quel'Serrar
+											})),
 										},
 										["classes"] = {1,2},
 										["description"] = "Item used to drop from any boss in Dire Maul.",
 									})),
 									un(40, qa(7488, {	-- Lethtendris's Web
-										un(34, i(18491)),	-- Lorespinner 
+										un(2, i(18491)),	-- Lorespinner 
 									})),
 									un(40, qh(7489, {	-- Lethtendris's Web
-										un(34, i(18491)),	-- Lorespinner 
+										un(2, i(18491)),	-- Lorespinner 
+									})),
+									un(40, q(7483, {	-- Libram of Rapidity
+										un(2, i(18329, {	-- Arcanum of Rapidity
+											["f"] = 55, -- Consumable
+										})),
 									})),
 									un(40, q(7441, {	-- Pusillin and the Elder Azj'Tordin
-										un(34, i(18410)),	-- Sprinter's Sword 
-										un(34, i(18411)),	-- Spry Boots
+										un(2, i(18410)),	-- Sprinter's Sword 
+										un(2, i(18411)),	-- Spry Boots
 									})),
 								}),
 							}),
 							n(-13, {	-- Gordok Commons [North - Ogres]
 								n(-17, {	-- Quests (Legacy)
+									un(40, q(7499, {	-- Codex of Defense
+										["groups"] = {
+											un(2, i(18466)),	--Royal Seal of Eldre'Thalas
+										},
+										["classes"] = { 1 }, -- Warrior
+									})),
+									un(40, q(8949, {	-- Falrin's Vendetta
+										un(2, i(22150)),	-- Beads of Ogre Might
+										un(2, i(22149)),	-- Beads of Ogre Mojo
+									})),
 									un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
 										["groups"] = {
 											un(40, q(7507)),	-- Furor's Compendium
 											un(40, q(7508)),	-- The Forging of Quel'Serrar
 											un(40, q(7509, {	-- The Forging of Quel'Serrar
-												un(34, i(18348)),	-- Quel'Serrar
+												un(2, i(18348)),	-- Quel'Serrar
 											})),
 										},
 										["classes"] = {1,2},
 										["description"] = "Item used to drop from any boss in Dire Maul.",
+									})),
+									un(40, q(7502, {	-- Harnessing Shadows
+										["groups"] = {
+											un(2, i(18467)),	--Royal Seal of Eldre'Thalas
+										},
+										["classes"] = { 9 }, -- Warlock
+									})),
+									un(40, q(7504, {	-- Holy Bologna: What the Light Won't Tell You
+										["groups"] = {
+											un(2, i(18469)),	--Royal Seal of Eldre'Thalas
+										},
+										["classes"] = { 5 }, -- Priest
+									})),
+									un(40, q(7485, {	-- Libram of Protection
+										un(2, i(18331, {	-- Arcanum of Protection
+											["f"] = 55, -- Consumable
+										})),
+									})),
+									un(40, q(7500, {	-- The Arcanist's Cookbook
+										["groups"] = {
+											un(2, i(18468)),	--Royal Seal of Eldre'Thalas
+										},
+										["classes"] = { 8 }, -- Mage
+									})),
+									un(40, q(7506, {	-- The Emerald Dream...
+										["groups"] = {
+											un(2, i(18470)),	--Royal Seal of Eldre'Thalas
+										},
+										["classes"] = { 11 }, -- Druid
+									})),
+									un(40, q(7503, {	-- The Greatest Race of Hunters
+										["groups"] = {
+											un(2, i(18473)),	--Royal Seal of Eldre'Thalas
+										},
+										["classes"] = { 3 }, -- Hunter
+									})),
+									un(40, q(7501, {	-- The Light and How To Swing It
+										["groups"] = {
+											un(2, i(18472)),	--Royal Seal of Eldre'Thalas
+										},
+										["classes"] = { 2 }, -- Paladin
 									})),
 								}),
 								o(179501, {	-- Knot Thimblejack's Cache
@@ -470,36 +526,52 @@ _.Instances =
 											un(40, q(7507)),	-- Furor's Compendium
 											un(40, q(7508)),	-- The Forging of Quel'Serrar
 											un(40, q(7509, {	-- The Forging of Quel'Serrar
-												un(34, i(18348)),	-- Quel'Serrar
+												un(2, i(18348)),	-- Quel'Serrar
 											})),
 										},
 										["classes"] = {1,2},
 										["description"] = "Item used to drop from any boss in Dire Maul.",
 									})),
+									un(40, q(7505, {	-- Frost Shock and You
+										["groups"] = {
+											un(2, i(18471)),	--Royal Seal of Eldre'Thalas
+										},
+										["classes"] = { 7 }, -- Shaman
+									})),
+									un(40, q(7498, {	-- Garona: A Study on Stealth and Treachery
+										["groups"] = {
+											un(2, i(18465)),	--Royal Seal of Eldre'Thalas
+										},
+										["classes"] = { 4 }, -- Rogue
+									})),
+									un(40, q(7484, {	-- Libram of Focus
+										un(2, i(18330, {	-- Arcanum of Focus
+											["f"] = 55, -- Consumable
+										})),
+									})),
 									un(40, qa(7462, { 	-- The Treasure of the Shen'dralar
-										un(34, i(18421)),	-- Backwood Helm 
-										un(34, i(18420)),	-- Bonecrusher 
-										un(34, i(18424)),	-- Sedge Boots 
+										un(2, i(18421)),	-- Backwood Helm 
+										un(2, i(18420)),	-- Bonecrusher 
+										un(2, i(18424)),	-- Sedge Boots 
 									})),
 									un(40, qh(7877, { 	-- The Treasure of the Shen'dralar
-										un(34, i(18421)),	-- Backwood Helm 
-										un(34, i(18420)),	-- Bonecrusher 
-										un(34, i(18424)),	-- Sedge Boots 
+										un(2, i(18421)),	-- Backwood Helm 
+										un(2, i(18420)),	-- Bonecrusher 
+										un(2, i(18424)),	-- Sedge Boots 
 									})),
 								}),
 								n(  0, {	-- Zone Drop (Legacy)
-									n(14690, {	-- Revanchion
+									un(43, n(14690, {	-- Revanchion
 										["groups"] = {
 											un(2, i(23129)),	-- Bracers of Mending
 											un(2, i(23127)),	-- Cloak of Revanchion
 											un(2, i(23128)),	-- The Shadow's Grasp
 										},
 										["description"] = "This NPC was only available during the pre-WotLK Scourge Invasion.",
-									}),
+									})),
 								}),
 							}),
 						},
-						["u"] = 2,
 					}),
 				},
 				["lvl"] = 31,

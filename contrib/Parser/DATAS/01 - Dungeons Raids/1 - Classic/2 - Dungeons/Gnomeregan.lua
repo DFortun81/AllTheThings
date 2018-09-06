@@ -190,7 +190,8 @@ _.Instances =
 								6233,  -- Mechanized Sentry
 								6225,  -- Mechano-Tank
 							},
-						}),i(7360, {	-- Pattern: Dark Leather Gloves
+						}),
+						i(7360, {	-- Pattern: Dark Leather Gloves
 							["crs"] = {
 								6230,  -- Peacekeeper Security Suit
 							},
@@ -288,30 +289,29 @@ _.Instances =
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
 								un(40, q( 2904, {	-- A Fine Mess
-									un(34, i(9536)),	-- Fairywing Mantle
-									un(34, i(9535)),	-- Fire-welded Bracers
+									un(2, i(9536)),	-- Fairywing Mantle
+									un(2, i(9535)),	-- Fire-welded Bracers
 								})),
 								un(40, qa(2930, {	-- Data Rescue
-									un(34, i(9604)),	-- Mechanic's Pipehammer
-									un(34, i(9605)),	-- Repairman's Cape
+									un(2, i(9604)),	-- Mechanic's Pipehammer
+									un(2, i(9605)),	-- Repairman's Cape
 								})),
 								un(40, qa(2928, { 	-- Gyrodrillmatic Excavationators
-									un(34, i(9609)),	-- Shilly Mitts
-									un(34, i(9608)),	-- Shoni's Disarming Tool
+									un(2, i(9608)),	-- Shoni's Disarming Tool
+									un(2, i(9609)),	-- Shilly Mitts
 								})),
 								un(40, qh(2841, {	-- Rig Wars
-									un(34, i(9623)),	-- Civinad Robes
-									un(34, i(9625)),	-- Dual Reinforced Leggings
-									un(34, i(9624)),	-- Triprunner Dungarees
+									un(2, i(9623)),	-- Civinad Robes
+									un(2, i(9625)),	-- Dual Reinforced Leggings
+									un(2, i(9624)),	-- Triprunner Dungarees
 								})),
 								un(40, qa(2929, {	-- The Grand Betrayal
-									un(34, i(9623)),	-- Civinad Robes
-									un(34, i(9625)),	-- Dual Reinforced Leggings
-									un(34, i(9624)),	-- Triprunner Dungarees
+									un(2, i(9623)),	-- Civinad Robes
+									un(2, i(9624)),	-- Triprunner Dungarees
+									un(2, i(9625)),	-- Dual Reinforced Leggings
 								})),
 							}),
 						},
-						["u"] = 2,
 					}),
 				},
 				["lvl"] = 19,

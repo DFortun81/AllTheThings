@@ -1416,6 +1416,14 @@ _.Zones =
 									un(2, i(13216)),	-- Crown of the Penitent
 								},
 							})),
+							un(40, qh(6163, {	-- Ramstein
+								un(2, i(17001)),	-- Elemental Circle
+								un(2, i(18022)),	-- Royal Seal of Alexis
+							})),
+							un(40, q(5213, {	-- The Active Agent
+								un(2, i(19812)),	-- Rune of the Dawn
+								un(2, i(13209)),	-- Seal of the Dawn
+							})),
 							un(40, q( 5265, {	-- The Argent Hold
 								un(2, i(13246)),	-- Argent Avenger
 								un(2, i(13249)),	-- Argent Crusader
@@ -1425,6 +1433,9 @@ _.Zones =
 								un(2, i(17002)),	-- Ichor Spitter
 								un(2, i(17004)),	-- Sarah's Guide
 								un(2, i(17003)),	-- Skullstone Hammer
+							})),
+							un(40, q(5214, {	-- The Great Fras Siabi
+								un(2, i(13171)),	-- Smokey's Lighter
 							})),
 							un(40, q( 6041, {	-- When Smokey Sings, I Get Violent
 								un(2, i(17523)),	-- Smokey's Drape

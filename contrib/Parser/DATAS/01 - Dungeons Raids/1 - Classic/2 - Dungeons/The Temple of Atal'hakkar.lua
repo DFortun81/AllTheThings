@@ -101,7 +101,6 @@ _.Instances =
 								
 							},
 						}),
-						un(7, i(15733)),	-- Pattern: Green Dragonscale Leggings (old version)
 						i(10626, {	-- Ragehammer
 							["crs"] = {
 								5721,	-- Dreamscythe
@@ -228,53 +227,78 @@ _.Instances =
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
-								qc11(q(9053, { 	-- A Better Ingredient
-									un(34, i(22272)),	-- Forest's Embrace
-									un(34, i(22274)),	-- Grizzled Pelt
-									un(34, i(22458)),	-- Moonshadow Stave
+								un(40, qc11(q(9053, { 	-- A Better Ingredient
+									un(2, i(22272)),	-- Forest's Embrace
+									un(2, i(53562)),	-- Grizzled Hide
+									un(2, i(22274)),	-- Grizzled Pelt
+									un(2, i(53560)),	-- Moonshadow Staff
+									un(2, i(22458)),	-- Moonshadow Stave
+									un(2, i(53561)),	-- Thicket's Embrace
+								}))),
+								un(40, qc5(q(8257, {	-- Blood of Morphaz
+									un(2, i(19990)),	-- Blessed Prayer Beads
+									un(2, i(20006)),	-- Circle of Hope
+									un(2, i(20082)),	-- Woestave
+								}))),
+								un(40, qc7(q(8413, { 	-- Da Voodoo
+									un(2, i(20369)),	-- Azurite Fists
+									un(2, i(20503)),	-- Enamored Water Spirit
+									un(2, i(20556)),	-- Wildstaff
+								}))),
+								un(40, qc8(q(8253, { 	-- Destroy Morphaz
+									un(2, i(20037)),	-- Arcane Crystal Pendant
+									un(2, i(20036)),	-- Fire Ruby
+									un(2, i(20035)),	-- Glacial Spike
+								}))),
+								un(40, qc2(qa(8418, { 	-- Forging the Mightstone
+									un(2, i(20505)),	-- Chivalrous Signet
+									un(2, i(20504)),	-- Lightforged Blade
+									un(2, i(20512)),	-- Sanctified Orb
+								}))),
+								un(40, qa(1475, {	-- Into The Temple of Atal'Hakkar
+									un(2, i(1490)),	-- Guardian Talisman
 								})),
-								qc5(q(8257, {	-- Blood of Morphaz
-									un(34, i(20082)),	-- Woestave
+								un(40, q(3447, { 		-- Secret of the Circle
+									un(2, i(10773, { 		-- Hakkari Urn
+										un(2, i(10781)),	-- Hakkari Breastplate
+										un(2, i(10782)),	-- Hakkari Shroud
+										un(2, i(10780)),	-- Mark of Hakkar
+									})),
 								})),
-								qc7(q(8413, { 	-- Da Voodoo
-									un(34, i(20369)),	-- Azurite Fists
-									un(34, i(20556)),	-- Wildstaff
+								un(40, qc4(q(8236, { 	-- The Azure Key
+									un(2, i(19982)),	-- Duskbat Drape
+									un(2, i(19984)),	-- Ebon Mask
+									un(2, i(20255)),	-- Whisperwalk Boots
+								}))),
+								un(40, q(3373, {	-- The Essence of Eranikus
+									un(2, i(10455)),	-- Chained Essence of Eranikus
 								})),
-								qc8(q(8253, { 	-- Destroy Morphaz
-									un(34, i(20035)),	-- Glacial Spike
+								un(40, q(3528, {		-- The God Hakkar
+									un(2, i(10749)),	-- Avenguard Helm
+									un(2, i(10750)),	-- Lifeforce Dirk
+									un(2, i(10751)),	-- Gemburst Circlet
 								})),
-								qc2(qa(8418, { 	-- Forging the Mightstone
-									un(34, i(20504)),	-- Lightforged Blade
+								un(40, qc3(q(8232, { 	-- The Green Drake
+									un(2, i(19991)),	-- Devilsaur Eye
+									un(2, i(19992)),	-- Devilsaur Tooth
+									un(2, i(20083)),	-- Hunting Spear
+								}))),
+								un(40, qh(1445, {	-- [DEPRECATED]The Temple of Atal'Hakkar
+									un(2, i(1490)),	-- Guardian Talisman
 								})),
-								q(3447, { 		-- Secret of the Circle
-									i(10773, { 		-- Hakkari Urn
-										un(34, i(10781)),	-- Hakkari Breastplate
-										un(34, i(10782)),	-- Hakkari Shroud
-									}),
-								}),
-								qc4(q(8236, { 	-- The Azure Key
-									un(34, i(19982)),	-- Duskbat Drape
-									un(34, i(19984)),	-- Ebon Mask
-									un(34, i(20255)),	-- Whisperwalk Boots
-								})),
-								q(3528, {		-- The God Hakkar
-									un(34, i(10749)),	-- Avenguard Helm
-									un(34, i(10750)),	-- Lifeforce Dirk
-									un(34, i(10751)),	-- Gemburst Circlet
-								}),
-								qc3(q(8232, { 	-- The Green Drake
-									un(34, i(20083)),	-- Hunting Spear
-								})),
-								qc9(q(8422, { 	-- Trolls of a Feather
-									un(34, i(20530)),	-- Robes of Servitude
-									un(34, i(20536)),	-- Soul Harvester
-								})),
-								qc1(q(8425, {	-- Voodoo Feathers
-									un(34, i(20521)),	-- Fury Visor
-									un(34, i(20517)),	-- Razorsteel Shoulders
-								})),
+								un(40, qc9(q(8422, { 	-- Trolls of a Feather
+									un(2, i(20534)),	-- Abyss Shard
+									un(2, i(20530)),	-- Robes of Servitude
+									un(2, i(20536)),	-- Soul Harvester
+								}))),
+								un(40, qc1(q(8425, {	-- Voodoo Feathers
+									un(2, i(20130)),	-- Diamond Flask
+									un(2, i(20521)),	-- Fury Visor
+									un(2, i(20517)),	-- Razorsteel Shoulders
+								}))),
 							}),
 							n(  0, {	-- Zone Drop (Legacy)
+								un(7, i(15733)),	-- Pattern: Green Dragonscale Leggings (old version)
 								n(8580, {	-- Atal'alarion
 									un(2, i(10798)),	-- Atal'alarion Tusk Ring
 									un(2, i(10800)),	-- Darkwater Bracers
@@ -334,7 +358,6 @@ _.Instances =
 								}),
 							}),
 						},
-						["u"] = 2,
 					}),
 				},
 				["lvl"] = 45,

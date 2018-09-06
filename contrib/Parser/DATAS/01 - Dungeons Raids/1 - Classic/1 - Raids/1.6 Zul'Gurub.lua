@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 			n(-40, { -- Legacy
 				["groups"] = {
 					un(2, ach(560)),	-- Deadliest Catch
-					nlq({ -- Legacy Quests
+					n(-17, { -- Legacy Quests
 						{
 							["itemID"] = 19724,	-- Primal Hakkari Aegis
 							["u"] = 2,			-- Legacy Item

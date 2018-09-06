@@ -109,18 +109,20 @@ _.Instances =
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
-								q(1487, {	-- Deviate Eradication
+								un(40, q(1487, {	-- Deviate Eradication
 									un( 8, i(6476)),	-- Pattern: Deviate Scale Belt
-									un(34, i(8071)),	-- Sizzle Stick
-									un(34, i(6481)),	-- Dagmire Gauntlets
-								}),
+									un(2, i(8071)),	-- Sizzle Stick
+									un(2, i(6481)),	-- Dagmire Gauntlets
+								})),
+								un(40, q(1486, {	-- Deviate Hides
+									un(2, i(6480)),	-- Slick Deviate Leggings
+								})),
 							}),
 							--n(-16, {	-- Rares (Legacy)
 							--}),
 							--n(  0, {	-- Zone Drop (Legacy)
 							--}),
 						},
-						["u"] = 2,
 					}),
 				},
 				["lvl"] = 12,
