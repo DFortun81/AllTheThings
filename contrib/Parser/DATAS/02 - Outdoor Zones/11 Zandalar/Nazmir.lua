@@ -6,7 +6,7 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(863, {	-- Nazmir
 			["groups"] = {
-				n(-4, {	-- Achievements
+				n(-4,   {	-- Achievements
 					["groups"] = {
 						ach(13036, {	-- A Loa of a Tale
 							{
@@ -255,7 +255,7 @@ _.Zones =
 						["coord"] = { 38.8, 78 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  { 	-- Pet Battle
 					["groups"] = {
 						p(2388),	-- Bloodfeaver Tarantula
 						p(2398),	-- Boghopper
@@ -268,7 +268,7 @@ _.Zones =
 						p(2392),	-- Young Sand Sifter
 					},
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					h(ach(11868, {	-- The Dark Heart of Nazmir [Note: Quest line starts here and a few quests are in the zone.  So we want to make them stand out amongst the crowd.]
 						["groups"] = {
 							crit(1, {	-- Deep in the Swamp
@@ -806,8 +806,8 @@ _.Zones =
 						},
 					})),
 				}),
-				n(-16, {	-- Rares
-					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
+				n(-16,  {	-- Rares
+					-- Note: While these are all technically Achievement Criteria we don't want to use that in the information on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(125250, {	-- Ancient Jawbreaker
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -996,6 +996,12 @@ _.Zones =
 							}),
 							["questID"] = 48626,
 						}),	
+						n(128584, {	-- Vugthuth
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+								i(161098),	-- Abyssal Scale Gauntlets (not guaranteed loot)
+							}),
+							["questID"] = 50366,	-- 50459 for WQ
+						}),
 						n(126907, {	-- Wardrummer Zurula
 							["questID"] = 48623,
 						}),	
@@ -1088,7 +1094,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-2, {	-- Vendors
+				n(-2,   {	-- Vendors
 					["groups"] = {
 						n(126833, {	-- Blind Wunja <Medicine Woman>
 							["groups"] = {
@@ -1239,7 +1245,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-34, {	-- World Quests
+				n(-34,  {	-- World Quests
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
@@ -1453,7 +1459,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0, {	-- Zone Drop
+				n(0,    {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						i(163575, {	-- Reins of a Tamed Bloodfeaster
 							["crs"] = {

@@ -6,7 +6,7 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(864, {	-- Vol'dun
 			["groups"] = {
-				n(-4, {	-- Achievements
+				n(-4,   {	-- Achievements
 					["groups"] = {
 						ach(13036, {	-- A Loa of a Tale
 							{
@@ -301,7 +301,7 @@ _.Zones =
 						["coord"] = { 53.6, 37.6 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  { 	-- Pet Battle
 					["groups"] = {
 						p(2388),	-- Bloodfeaver Tarantula
 						p(2399),	-- Hermit Crab
@@ -309,7 +309,7 @@ _.Zones =
 						p(2392),	-- Young Sand Sifter
 					},
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					["groups"] = {
 						q(47320),	-- A Balm to Calm
 						q(50817),	-- A Charming Tail
@@ -684,7 +684,7 @@ i(155430),
 					},
 					["races"] = HORDE_ONLY,
 				}),
-				n(-16, {	-- Rares
+				n(-16,  {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 							n(135852, {	-- Ak'tar
@@ -991,7 +991,7 @@ i(155430),
 						}),
 					},
 				}),
-				n(-2, {	-- Vendors
+				n(-2,   {	-- Vendors
 					["groups"] = {
 						n(144353, {	-- Collector Kojo <Tortollan Seekers Emissary>
 							["groups"] = {
@@ -1142,7 +1142,7 @@ i(155430),
 						}),
 					},
 				}),
-				n(-34, {	-- World Quests
+				n(-34,  {	-- World Quests
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
@@ -1379,7 +1379,7 @@ i(155430),
 						}),
 					},
 				}),
-				n(0, {	-- Zone Drop
+				n(0,    {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						i(163576, {	-- Captured Dune Scavenger
 							["crs"] = {
@@ -1409,6 +1409,14 @@ i(155430),
 						i(159558),	-- Bleached Bone Skullcracker
 						i(159573),	-- Bleached Bone Staff
 						i(159606),	-- Bleached Bone Wand
+						i(160175),	-- Bonepicker Helmet
+						i(160177),	-- Bonepicker Spaulders
+						i(160178),	-- Bonepicker Undermail
+						i(160172),	-- Bonepicker Armguards
+						i(160173),	-- Bonepicker Handguards
+						i(160171),	-- Bonepicker Cinch
+						i(160176),	-- Bonepicker Legguards
+						i(160174),	-- Bonepicker Footguards
 						i(159492),	-- Golden Fleet Bow
 						i(159811),	-- Golden Fleet Buckler
 						i(159124),	-- Golden Fleet Buckler
@@ -1441,6 +1449,31 @@ i(155430),
 						i(159574),	-- Rivermarsh Spellstaff
 						i(159607),	-- Rivermarsh Wand
 						i(159481),	-- Rivermarsh Waraxe
+						i(160166),	-- Sandscout Headcover
+						i(160168),	-- Sandscout Shoulders
+						i(160167),	-- Sandscout Tunic
+						i(160162),	-- Sandscout Bracers
+						i(160165),	-- Sandscout Handwraps
+						i(160169),	-- Sandscout Girdle
+						i(160164),	-- Sandscout Creeches
+						i(160163),	-- Sandscout Footwraps
+						i(160149),	-- Saurifeather Garments*
+						i(160180),	-- Skycaller Cowl
+						i(160185),	-- Skycaller Mantle
+						i(160183),	-- Skycaller Robes
+						i(160186),	-- Skycaller Cuffs
+						i(160181),	-- Skycaller Handwraps
+						i(160179),	-- Skycaller Sash
+						i(160182),	-- Skycaller Leggings
+						i(160184),	-- Skycaller Sandals
+						i(160156),	-- Stormforger Helm
+						i(160158),	-- Stormforger Pauldrons
+						i(160153),	-- Stormforger Chestplate
+						i(160160),	-- Stormforger Vambraces
+						i(160154),	-- Stormforger Gauntlets
+						i(160155),	-- Stormforger Girdle
+						i(160157),	-- Stormforger Legguards
+						i(160159),	-- Stormforger Sabatons
 						i(159810),	-- Warport Aegis
 						i(159547),	-- Warport Clobberer
 						i(159531),	-- Warport Dirk
@@ -1472,38 +1505,10 @@ i(155430),
 						i(159486),	-- Zocali Waraxe
 						i(159505),	-- Zocali Warglaive
 						i(159549),	-- Zocali Warhammer
-						i(160180),	-- Skycaller Cowl
-						i(160185),	-- Skycaller Mantle
-						i(160183),	-- Skycaller Robes
-						i(160186),	-- Skycaller Cuffs
-						i(160181),	-- Skycaller Handwraps
-						i(160179),	-- Skycaller Sash
-						i(160182),	-- Skycaller Leggings
-						i(160184),	-- Skycaller Sandals
-						i(160166),	-- Sandscout Headcover
-						i(160168),	-- Sandscout Shoulders
-						i(160167),	-- Sandscout Tunic
-						i(160162),	-- Sandscout Bracers
-						i(160165),	-- Sandscout Handwraps
-						i(160169),	-- Sandscout Girdle
-						i(160164),	-- Sandscout Creeches
-						i(160163),	-- Sandscout Footwraps
-						i(160175),	-- Bonepicker Helmet
-						i(160177),	-- Bonepicker Spaulders
-						i(160178),	-- Bonepicker Undermail
-						i(160172),	-- Bonepicker Armguards
-						i(160173),	-- Bonepicker Handguards
-						i(160171),	-- Bonepicker Cinch
-						i(160176),	-- Bonepicker Legguards
-						i(160174),	-- Bonepicker Footguards
-						i(160156),	-- Stormforger Helm
-						i(160158),	-- Stormforger Pauldrons
-						i(160153),	-- Stormforger Chestplate
-						i(160160),	-- Stormforger Vambraces
-						i(160154),	-- Stormforger Gauntlets
-						i(160155),	-- Stormforger Girdle
-						i(160157),	-- Stormforger Legguards
-						i(160159),	-- Stormforger Sabatons
+						
+						
+						
+						
 					}),
 				}),
 			},
