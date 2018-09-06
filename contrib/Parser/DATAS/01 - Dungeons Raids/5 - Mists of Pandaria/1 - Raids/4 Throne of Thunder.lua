@@ -490,7 +490,6 @@ _.Instances =
 									i(95779),	-- Delicate Vial of the Sanguinaire
 								},
 								["crs"] = {
-									69017, -- Primordius
 									69756, -- Anima Orb
 								},
 							})),
@@ -1277,7 +1276,6 @@ _.Instances =
 									}),	
 								},
 								["crs"] = {
-									69017, -- Primordius
 									69756, -- Anima Orb
 								},
 							})),
@@ -2121,7 +2119,6 @@ _.Instances =
 									}),	
 								},
 								["crs"] = {
-									69017, -- Primordius
 									69756, -- Anima Orb
 								},
 							})),
