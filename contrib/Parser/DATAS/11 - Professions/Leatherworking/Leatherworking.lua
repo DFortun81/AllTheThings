@@ -653,18 +653,21 @@ profession(165, { -- Leatherworking
 			i(137899), -- Recipe: Dreadleather Jerkin (Rank 3)
 			i(137894), -- Recipe: Dreadleather Shoulderguard (Rank 3)
 			i(151742), -- Recipe: Fiendish Shoulderguards (Rank 3)
+			i(151745), -- Recipe: Fiendish Spaulders (Rank 3)
+			i(137924), -- Recipe: Gravenscale Armbands (Rank 3)
 		}),
 		n(-17, { -- Quests
 			q(48078, { -- Counterbalancing (Dalaran)
 				["groups"] = {
 					i(151740), -- Recipe: Fiendish Shoulderguards (Rank 1)					
+					i(151743), -- Recipe: Fiendish Spaulders (Rank 1)					
 				},
 				["qg"] = 125349, -- Enstraa			
 			}),
 			q(40214, { -- Fel Tanning (Dalaran)
 				["groups"] = {
-					i(132124), -- Pattern: Battlebound Treads
 					i(140636), -- Pattern: Dreadleather Bindings (Rank 1)
+					i(140644), -- Recipe: Gravenscale Armbands (Rank 1)
 				},
 				["qg"] = 93523, -- Namha Moonwater				
 			}),
@@ -706,7 +709,9 @@ profession(165, { -- Leatherworking
 			i(142409), -- Recipe: Drums of the Mountain (Rank 3)
 			i(141850), -- Recipe: Elderhorn Riding Harness
 			i(151741), -- Recipe: Fiendish Shoulderguards (Rank 2)
+			i(151744), -- Recipe: Fiendish Spaulders (Rank 2)
 			i(137932), -- Recipe: Flaming Hoop
+			i(137916), -- Recipe: Gravenscale Armbands (Rank 2)
 			i(137935), -- Recipe: Leather Love Seat
 			i(137934), -- Recipe: Leather Pet Leash
 		}),
@@ -751,29 +756,8 @@ profession(165, { -- Leatherworking
 			-- Battle for Azeroth --			
 		}),			
 		filter(200, { -- Recipes
-			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
-			recipe(278423, { ["spellID"] = 278423, }),	-- Amber Rallying Horn
-			recipe(256756, { ["spellID"] = 256756, }),	-- Coarse Leather Armguards
-			recipe(256790, { ["spellID"] = 256790, }),	-- Coarse Leather Barding
-			recipe(256778, { ["spellID"] = 256778, }),	-- Coarse Leather Cestus
-			recipe(256750, { ["spellID"] = 256750, }),	-- Coarse Leather Gauntlets
-			recipe(256751, { ["spellID"] = 256751, }),	-- Coarse Leather Helm
-			recipe(256752, { ["spellID"] = 256752, }),	-- Coarse Leather Leggings
-			recipe(256754, { ["spellID"] = 256754, }),	-- Coarse Leather Pauldrons
-			recipe(256748, { ["spellID"] = 256748, }),	-- Coarse Leather Treads
-			recipe(256749, { ["spellID"] = 256749, }),	-- Coarse Leather Vest
-			recipe(256755, { ["spellID"] = 256755, }),	-- Coarse Leather Waistguard
-			recipe(256791, { ["spellID"] = 256791, }),	-- Drums of the Maelstrom
-			recipe(256773, { ["spellID"] = 256773, }),	-- Emblazoned Mistscale Boots
-			recipe(256776, { ["spellID"] = 256776, }),	-- Emblazoned Mistscale Leggings
-			recipe(256767, { ["spellID"] = 256767, }),	-- Emblazoned Tempest Boots
-			recipe(256770, { ["spellID"] = 256770, }),	-- Emblazoned Tempest Leggings
-			recipe(256765, { ["spellID"] = 256765, }),	-- Hardened Tempest Boots
-			recipe(272278, { ["spellID"] = 272278, }),	-- Hardened Tempest Hide
-			recipe(256782, { ["spellID"] = 256782, }),	-- Hardened Tempest Knuckles
-			recipe(256783, { ["spellID"] = 256783, }),	-- Hardened Tempest Knuckles
-			recipe(256784, { ["spellID"] = 256784, }),	-- Hardened Tempest Knuckles
-			recipe(256768, { ["spellID"] = 256768, }),	-- Hardened Tempest Leggings
+			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.				
+			recipe(272278, { ["spellID"] = 272278, }),	-- Hardened Tempest Hide			
 			recipe(269552, { ["spellID"] = 269552, }),	-- Honorable Combatant's Bow
 			recipe(269553, { ["spellID"] = 269553, }),	-- Honorable Combatant's Bow
 			recipe(269554, { ["spellID"] = 269554, }),	-- Honorable Combatant's Bow
@@ -833,6 +817,7 @@ profession(165, { -- Leatherworking
 			recipe(276256, { ["spellID"] = 276256, }),	-- Tempest Hide Pouch		
 		}),	
 		n(-2, { -- Vendors
+			i(162414), -- Recipe: Hardened Tempest Knuckles (Rank 3)
 		}),
 	}),
 	n(-100002, { -- PLACE_HOLDER
@@ -857,13 +842,7 @@ profession(165, { -- Leatherworking
 		i(162504),	-- Recipe: Emblazoned Mistscale Boots
 		i(162506),	-- Recipe: Emblazoned Mistscale Leggings
 		i(162500),	-- Recipe: Emblazoned Tempest Boots
-		i(162502),	-- Recipe: Emblazoned Tempest Leggings
-		i(151743),	-- Recipe: Fiendish Spaulders
-		i(151744),	-- Recipe: Fiendish Spaulders
-		i(151745),	-- Recipe: Fiendish Spaulders		
-		i(137916),	-- Recipe: Gravenscale Armbands
-		i(137924),	-- Recipe: Gravenscale Armbands
-		i(140644),	-- Recipe: Gravenscale Armbands
+		i(162502),	-- Recipe: Emblazoned Tempest Leggings				
 		i(137917),	-- Recipe: Gravenscale Girdle
 		i(137925),	-- Recipe: Gravenscale Girdle
 		i(140645),	-- Recipe: Gravenscale Girdle
@@ -885,9 +864,7 @@ profession(165, { -- Leatherworking
 		i(137920),	-- Recipe: Gravenscale Warhelm
 		i(137928),	-- Recipe: Gravenscale Warhelm
 		i(140648),	-- Recipe: Gravenscale Warhelm
-		i(162388),	-- Recipe: Hardened Tempest Boots
-		i(162414),	-- Recipe: Hardened Tempest Knuckles
-		i(162768),	-- Recipe: Hardened Tempest Knuckles
+		i(162388),	-- Recipe: Hardened Tempest Boots		
 		i(162389),	-- Recipe: Hardened Tempest Leggings
 		i(162417),	-- Recipe: Honorable Combatant's Bow
 		i(162418),	-- Recipe: Honorable Combatant's Bow
