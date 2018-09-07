@@ -997,9 +997,9 @@ _.Zones =
 							["questID"] = 48626,
 						}),	
 						n(128584, {	-- Vugthuth
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								i(161098),	-- Abyssal Scale Gauntlets (not guaranteed loot)
-							}),
+							["groups"] = {
+								i(161098),	-- Abyssal Scale Gauntlets
+							},
 							["questID"] = 50366,	-- 50459 for WQ
 						}),
 						n(126907, {	-- Wardrummer Zurula
@@ -1461,6 +1461,7 @@ _.Zones =
 				}),
 				n(0,    {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+						-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate
 						i(163575, {	-- Reins of a Tamed Bloodfeaster
 							["crs"] = {
 								136293,	-- Blood Troll Berserker

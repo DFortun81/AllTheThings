@@ -1346,8 +1346,8 @@ _.Zones =
 							["questID"] = 50938,	
 						}),	
 						n(141143, {	-- Sister Absinthe		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								un(1, i(155164)),	-- Beryl-Tide Greatcloak [NOTE: Not dropping on live, but did on beta]
+							["groups"] = {	
+								i(155164),	-- Beryl-Tide Greatcloak
 							}),
 							["coord"] = { 61.5, 57.0 },
 							["questID"] = 52441,	
@@ -2073,6 +2073,7 @@ _.Zones =
 				}),
 				n(0,    {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+						-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate
 						--Note: Commented out items are because they were in at one point, but then removed later on.  Might be patched in on release date
 						--Not going to mark them NYI as they only return "Retrieving Data"
 						i(161344, {	-- Abyssal Fragment

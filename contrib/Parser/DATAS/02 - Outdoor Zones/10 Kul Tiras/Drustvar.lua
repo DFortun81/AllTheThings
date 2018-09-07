@@ -1609,9 +1609,9 @@ _.Zones =
 							["questID"] = 50163,	
 						}),	
 						n(138667, {	-- Blighted Monstrosity
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								i(163680),	-- Blightbitten Steps (not guaranteed loot)
-							}),
+							["groups"] = {
+								i(163680),	-- Blightbitten Steps
+							},
 							["questID"] = 52001,	-- 51699 for WQ
 						}),
 						n(126621, {	-- Bonesquall
@@ -2417,6 +2417,7 @@ _.Zones =
 				}),
 				n(0,    {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+						--Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate
 						--Note: Commented out items are because they were in at one point, but then removed later on.  Might be patched in on release date
 						--Not going to mark them NYI as they only return "Retrieving Data"
 						i(163603, {	-- Lucille's Handkerchief
