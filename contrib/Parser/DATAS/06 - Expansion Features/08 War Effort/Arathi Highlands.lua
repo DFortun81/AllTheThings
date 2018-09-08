@@ -9,7 +9,78 @@ _.ExpansionFeatures =
 			["groups"] = {
 				n(-4, {	-- Achievements
 				}),
-				n(-1, {	-- Common Boss Drop
+				n(-1, {	-- Common Boss Drop [Weapons - Need separate]
+					["groups"] = bubbleDown({["modID"] = 3}, {
+									-- ALLIANCE WEAPONS --
+						i(163891),	-- 7th Legionnaire's Aegis
+						i(163884),	-- 7th Legionnaire's Battle Hammer
+						i(163892),	-- 7th Legionnaire's Censer
+						i(163890),	-- 7th Legionnaire's Claymore
+						i(163882),	-- 7th Legionnaire's Dagger
+						i(163885),	-- 7th Legionnaire's Halberd
+						i(163889),	-- 7th Legionnaire's Hand Cannon
+						i(163881),	-- 7th Legionnaire's Longbow
+						i(163887),	-- 7th Legionnaire's Longsword
+						i(163895),	-- 7th Legionnaire's Shield
+						i(163894),	-- 7th Legionnaire's Spellhammer
+						i(163886),	-- 7th Legionnaire's Stave
+						i(163888),	-- 7th Legionnaire's Wand
+						i(163893),	-- 7th Legionnaire's Warglaive
+						i(163883),	-- 7th Legionnaire's Warhammer
+									-- HORDE WEAPONS --
+						i(163878),	-- Honorbound Barrier
+						i(163870),	-- Honorbound Bonebreaker
+						i(163868),	-- Honorbound Dagger
+						i(163874),	-- Honorbound Decapitator
+						i(163876),	-- Honorbound Focus
+						i(163880),	-- Honorbound Gladius
+						i(163867),	-- Honorbound Longbow
+						i(163871),	-- Honorbound Pigsticker
+						i(163879),	-- Honorbound Portable Cannon
+						i(163875),	-- Honorbound Protectorate
+						i(163866),	-- Honorbound Skullcleaver
+						i(163869),	-- Honorbound Skullcrusher
+						i(163873),	-- Honorbound Wand
+						i(163872),	-- Honorbound War Staff
+						i(163877),	-- Honorbound Warglaive
+					}),
+					["crs"] = {
+						142709, -- Beastrider Kama
+						126427, -- Branchlord Aldrus
+						142688, -- Darbel Montrose
+						138122, -- Doom's Howl
+						143598, -- Doom's Howl Engineer
+						143597, -- Doom's Howl Dreadshield
+						143599, -- Doom's Howl Warcaster
+						142741, -- Doomrider Helgrim
+						141668, -- Echo of Myzrael
+						142686, -- Foulbelly
+						126462, -- Fozruk
+						142662, -- Geomancer Flintdagger
+						142725, -- Horrific  Apparition
+						142739, -- Knight-Captaian Aldrin
+						135058, -- Kor'gresh Coldrage
+						142684, -- Kovork
+						142716, -- Man-Hunter Rog
+						132965, -- Molok the Crusher
+						142692, -- Nimar the Slayer
+						132074, -- Overseer Krix
+						142361, -- Plaguefeather
+						142321, -- Ragebeak
+						142683, -- Ruul Onestone
+						142690, -- Singer
+						142312, -- Skullripper
+						137374, -- The Lion's Roar
+						143600, -- Lion's Engineer
+						143601, -- Lion's Shieldbearer
+						143602, -- Lion's Warcaster
+						142301, -- Venomarus
+						142251, -- Yogursa
+						142682, -- Zalas Witherbark <Warband Leader>
+					},
+					["description"] = "These can drop off any rare or world boss in the zone.",
+				}),
+				n(-1, {	-- Common Boss Drop [Gear - Need separate]
 					["groups"] = bubbleDown({["modID"] = 28}, {
 									-- ALLIANCE SET --
 						i(163339),	-- 7th Legionnaire's Hood
@@ -554,7 +625,7 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163648),	-- Fuzzy Creepling
 							},
-							--["questID"] = ,
+							["questID"] = 53528,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
