@@ -84,6 +84,9 @@ _.Zones =
 					prof(356, { -- Fishing
 						n(-100001, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+							["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
+							["modelScale"] = 1.25,
+							["modelRotation"] = 55,
 							["lvl"] = 110,
 							["groups"] = {
 								{
@@ -98,43 +101,22 @@ _.Zones =
 									["qg"] = 102639,				-- Quest Giver: Archmage Khadgar
 									["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
 									["groups"] = {
-										i(133755, { -- Underlight Angler
+										{
+											["artifactID"] = 841, -- Base Skin
+										},
+										qg({120456,120457,120458,120459,120460}, ach(11725, { 	-- Fisherfriend of the Isles
+											["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
 											["groups"] = {
-												{
-													["artifactID"] = 841, -- Base Skin
-													["itemID"] = 133755, -- Underlight Angler
-													["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-													["modelScale"] = 1.25,
-													["modelRotation"] = 55,
-												},
-												qg({120456,120457,120458,120459,120460}, ach(11725, { 	-- Fisherfriend of the Isles
-													["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
-													["groups"] = {
-														i(152583, { -- Underlight Emerald
-															{
-																["artifactID"] = 988, -- Fisherfriend of the Isles
-																["itemID"] = 133755, -- Underlight Angler
-																["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-																["modelScale"] = 1.25,
-																["modelRotation"] = 55,
-															},
-															{
-																["artifactID"] = 989, -- Fisherfriend of the Isles
-																["itemID"] = 133755, -- Underlight Angler
-																["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-																["modelScale"] = 1.25,
-																["modelRotation"] = 55,
-															},
-														})
+												i(152583, { -- Underlight Emerald
+													{
+														["artifactID"] = 988, -- Fisherfriend of the Isles
 													},
-												})),
+													{
+														["artifactID"] = 989, -- Fisherfriend of the Isles
+													},
+												})
 											},
-											["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-											["modelScale"] = 1.25,
-											["modelRotation"] = 55,
-											["ignoreSource"] = true,
-											["sourceQuest"] = 40961
-										}),
+										})),
 									},
 								},
 							},

@@ -199,7 +199,6 @@ _.Zones =
 					qg(, qa(47202)),	-- A Personal Message
 					qg(, qa(28825)),	-- A Personal Summons
 					qg(, qa(25154)),	-- A Present for Lila
-					qg(, qa(42978)),	-- A Royal Audience
 --]]
 					qdg(qa(27351, {	-- A Royal Reward
 						["groups"] = {
@@ -578,7 +577,6 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa( 1790)),	-- The Symbol of Life
 					qg(, qa(31985)),	-- The Triumphant Return
 					qg(, qa(29156)),	-- The Troll Incursion
-					qg(, qa(42982)),	-- The Victor's Spoils
 					qg(, qa(27443)),	-- The War Has Many Fronts
 					qg(, qa(29555)),	-- The White Pawn
 					qg(, q( 29158)),	-- The Zandalar Representative

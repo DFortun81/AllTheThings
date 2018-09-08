@@ -83,6 +83,13 @@ _.PVP =
 		a(ach(10743, { -- The Prestige [2]
 			["groups"] = {
 				-- Artifact Appearance
+				i(138992, {	-- Grand Marshal's Medal of Valor
+					["questID"] = 42978,	-- A Royal Audience
+				}),
+				qa(42982, {	-- The Victor's Spoils
+					["qg"] = 109466, -- Anduin Wrynn <King of Stormwind>
+					["sourceQuest"] = 42978,	-- A Royal Audience
+				}),
 			},
 			["collectible"] = false,
 		})),

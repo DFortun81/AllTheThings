@@ -314,6 +314,12 @@ end
 bubbleUp = function(t)
 	local t2 = {};
 	for i, group in pairs(t) do
+		table.insert(t2, group);
+	end
+	for i=#t,1,-1 do
+		table.remove(t, i);
+	end
+	for i, group in pairs(t2) do
 		if type(i) ~= "number" then
 			print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
 		elseif type(group) ~= "table" then
@@ -321,34 +327,23 @@ bubbleUp = function(t)
 		else
 			if group.bubble then
 				-- this isn't just a normal group object, merge up the contents.
-				if group.groups then
-					for j,subgroup in pairs(group.groups) do
-						if type(i) ~= "number" then
-							print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
-						elseif type(group) ~= "table" then
-							print("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
+				if group.groups or group.g then
+					for j,subgroup in pairs(group.groups or group.g) do
+						if type(j) ~= "number" then
+							print("You're trying to use '" .. j .. "' in a 'groups' field. (can't do that!)");
+						elseif type(subgroup) ~= "table" then
+							print("You're trying to use '" .. subgroup .. "' in a 'groups' field. (can't do that!)");
 						else
-							table.insert(t2, subgroup);
-						end
-					end
-				end
-				if group.g then
-					for j,subgroup in pairs(group.g) do
-						if type(i) ~= "number" then
-							print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
-						elseif type(group) ~= "table" then
-							print("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
-						else
-							table.insert(t2, subgroup);
+							table.insert(t, subgroup);
 						end
 					end
 				end
 			else
-				table.insert(t2, group);
+				table.insert(t, group);
 			end
 		end
 	end
-	return t2;
+	return t;
 end
 struct = function(field, id, t)
 	if not t then t = {};
