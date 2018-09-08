@@ -1348,7 +1348,7 @@ _.Zones =
 						n(141143, {	-- Sister Absinthe		
 							["groups"] = {	
 								i(155164),	-- Beryl-Tide Greatcloak
-							}),
+							},
 							["coord"] = { 61.5, 57.0 },
 							["questID"] = 52441,	
 						}),	
