@@ -614,7 +614,7 @@ _.ExpansionFeatures =
 							["groups"] ={
 								i(163698),	-- Thundering Essence
 							},
-							--["questID"] = ,
+							["questID"] = 53527,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
