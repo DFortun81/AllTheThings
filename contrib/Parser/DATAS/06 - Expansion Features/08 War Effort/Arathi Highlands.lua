@@ -48,9 +48,9 @@ _.ExpansionFeatures =
 					126427, -- Branchlord Aldrus
 					142688, -- Darbel Montrose
 					138122, -- Doom's Howl
-					143598, -- Doom's Howl Engineer
-					143597, -- Doom's Howl Dreadshield
-					143599, -- Doom's Howl Warcaster
+					--143598, -- Doom's Howl Engineer
+					--143597, -- Doom's Howl Dreadshield
+					--143599, -- Doom's Howl Warcaster
 					142741, -- Doomrider Helgrim
 					141668, -- Echo of Myzrael
 					142686, -- Foulbelly
@@ -70,9 +70,9 @@ _.ExpansionFeatures =
 					142690, -- Singer
 					142312, -- Skullripper
 					137374, -- The Lion's Roar
-					143600, -- Lion's Engineer
-					143601, -- Lion's Shieldbearer
-					143602, -- Lion's Warcaster
+					--143600, -- Lion's Engineer
+					--143601, -- Lion's Shieldbearer
+					--143602, -- Lion's Warcaster
 					142301, -- Venomarus
 					142251, -- Yogursa
 					142682, -- Zalas Witherbark <Warband Leader>
@@ -153,9 +153,9 @@ _.ExpansionFeatures =
 					126427, -- Branchlord Aldrus
 					142688, -- Darbel Montrose
 					138122, -- Doom's Howl
-					143598, -- Doom's Howl Engineer
-					143597, -- Doom's Howl Dreadshield
-					143599, -- Doom's Howl Warcaster
+					--143598, -- Doom's Howl Engineer
+					--143597, -- Doom's Howl Dreadshield
+					--143599, -- Doom's Howl Warcaster
 					142741, -- Doomrider Helgrim
 					141668, -- Echo of Myzrael
 					142686, -- Foulbelly
@@ -175,9 +175,9 @@ _.ExpansionFeatures =
 					142690, -- Singer
 					142312, -- Skullripper
 					137374, -- The Lion's Roar
-					143600, -- Lion's Engineer
-					143601, -- Lion's Shieldbearer
-					143602, -- Lion's Warcaster
+					--143600, -- Lion's Engineer
+					--143601, -- Lion's Shieldbearer
+					--143602, -- Lion's Warcaster
 					142301, -- Venomarus
 					142251, -- Yogursa
 					142682, -- Zalas Witherbark <Warband Leader>
@@ -453,6 +453,7 @@ _.ExpansionFeatures =
 							i(163736),	-- Spectral Visage
 						},
 						["qg"] = 142725,	-- Horrific Apparition
+						["npcID"] = 142725,	-- Horrific Apparition
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
@@ -466,6 +467,7 @@ _.ExpansionFeatures =
 							i(163736),	-- Spectral Visage
 						},
 						["qg"] = 142725,	-- Horrific Apparition
+						["npcID"] = 142725,	-- Horrific Apparition
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
@@ -560,7 +562,7 @@ _.ExpansionFeatures =
 							67.91, 66.51
 						},
 					}),
-					n(132074, {	-- Overseer Krix
+					n(142423, {	-- Overseer Krix
 						["groups"] = {
 							i(163646),	-- Lil' Donkey
 						},
