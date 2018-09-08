@@ -265,7 +265,7 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163644),	-- Swift Albino Raptor
 							},
-							--["questID"] = ,
+							["questID"] = 53504,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
@@ -455,7 +455,7 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163706),	-- Witherbark Direwing
 							},
-							--["questID"] = ,
+							["questID"] = 53517,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
@@ -510,7 +510,7 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163741),	-- Magic Fun Rock
 							},
-							--["questID"] = ,
+							["questID"] = 53524,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
@@ -565,7 +565,7 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163745),	-- Witherbark Gong
 							},
-							--["questID"] = ,
+							["questID"] = 53530,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
