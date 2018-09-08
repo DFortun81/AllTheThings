@@ -485,7 +485,7 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163689),	-- Angry Egg
 							},
-							--["questID"] = ,
+							["questID"] = 53522,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
@@ -540,7 +540,7 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163684),	-- Scabby
 							},
-							--["questID"] = ,
+							["questID"] = 53529,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
