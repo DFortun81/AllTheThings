@@ -404,11 +404,11 @@ _.ExpansionFeatures =
 								49.01, 40.01
 							},
 						}),
-						n(135058, {	-- Kor'gresh Coldrage
+						n(142112, {	-- Kor'gresh Coldrage
 							["groups"] = {
 								i(163744),	-- Coldrage's Cooler
 							},
-							--["questID"] = ,
+							["questID"] = 53513,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
@@ -430,18 +430,21 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163712),	-- Mana-Warped Egg
 							},
-							--["questID"] = ,
+							["questID"] = 53515,
+							["crs"] = {
+								142717,	-- SQUAAWK!
+							},
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
 								52.31, 72.41
 							},
 						}),
-						n(132965, {	-- Molok the Crusher
+						n(141942, {	-- Molok the Crusher
 							["groups"] = {
 								i(163775),	-- Molok Morion
 							},
-							--["questID"] = ,
+							["questID"] = 53516,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
