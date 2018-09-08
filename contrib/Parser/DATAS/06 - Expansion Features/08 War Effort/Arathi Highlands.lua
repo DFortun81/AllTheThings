@@ -357,7 +357,7 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(53506, {	-- Burning Goliath
+					q(53017, {	-- Burning Goliath**
 						["groups"] = {
 							i(163691),	-- Burning Essence
 						},
@@ -383,7 +383,7 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(53507, {	-- Darbel Montrose
+					q(53084, {	-- Darbel Montrose**
 						["groups"] = {
 							i(163652),	-- Tiny Grimoire
 						},
@@ -423,11 +423,12 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142686, {	-- Foulbelly
+					q(53086, {	-- Foulbelly**
 						["groups"] = {
 							i(163735),	-- Foulbelly
 						},
-						["questID"] = 53509,
+						["npcID"] = 142686,	-- Foulbelly
+						["qg"] = 142686,	-- Foulbelly
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coords"] = {
@@ -463,21 +464,7 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(53512, {	-- Horrific Apparition [Horde]**
-						["groups"] = {
-							i(163736),	-- Spectral Visage
-						},
-						["qg"] = 142725,	-- Horrific Apparition
-						["npcID"] = 142725,	-- Horrific Apparition
-						["repeatable"] = true,
-						["isWeekly"] = true,
-						["races"] = ALLIANCE_ONLY,
-						["coord"] = {
-							26.71, 32.61,	-- Horde NPC
-						},
-					}),
-					--[[
-					q(, {	-- Horrific Apparition [Alliance]
+					q(53087, {	-- Horrific Apparition [Alliance]
 						["groups"] = {
 							i(163736),	-- Spectral Visage
 						},
@@ -490,12 +477,12 @@ _.ExpansionFeatures =
 							19.51, 60.91,	-- Alliance NPC
 						},
 					}),
-					--]]
-					n(142112, {	-- Kor'gresh Coldrage
+					q(53058, {	-- Kor'gresh Coldrage**
 						["groups"] = {
 							i(163744),	-- Coldrage's Cooler
 						},
-						["questID"] = 53513,
+						["npcID"] = 142112,	-- Kor'gresh Coldrage
+						["qg"] = 142112,	-- Kor'gresh Coldrage
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
@@ -503,11 +490,11 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142684, {	-- Kovork
+					q(53089, {	-- Kovork**
 						["groups"] = {
 							i(163750),	-- Kovork Kostume
 						},
-						["questID"] = 53514,
+						["npcID"] = 142684,	-- Kovork
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coords"] = {
@@ -516,11 +503,12 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142716, {	-- Man-Hunter Rog
+					q(53090, {	-- Man-Hunter Rog**
 						["groups"] = {
 							i(163712),	-- Mana-Warped Egg
 						},
-						["questID"] = 53515,
+						["npcID"] = 142716,	-- Man-Hunter Rog
+						["qg"] = 142716,	-- Man-Hunter Rog
 						["crs"] = {
 							142717,	-- SQUAAWK!
 						},
@@ -531,11 +519,12 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(141942, {	-- Molok the Crusher
+					q(53057, {	-- Molok the Crusher**
 						["groups"] = {
 							i(163775),	-- Molok Morion
 						},
-						["questID"] = 53516,
+						["npcID"] = 141942,	-- Molok the Crusher
+						["qg"] = 141942,	-- Molok the Crusher
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
@@ -569,11 +558,12 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142435, {	-- Plaguefeather
+					q(53020, {	-- Plaguefeather**
 						["groups"] = {
 							i(163690),	-- Plague Egg
 						},
-						["questID"] = 53519,
+						["npcID"] = 142435,	-- Plaguefeather
+						["qg"] = 142435,	-- Plaguefeather
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
@@ -594,11 +584,12 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(141620, {	-- Rumbling Goliath
+					q(53021, {	-- Rumbling Goliath**
 						["groups"] = {
 							i(163701),	-- Rumbling Essence
 						},
-						["questID"] = 53523,
+						["npcID"] = 141620,	-- Rumbling Goliath
+						["qg"] = 141620,	-- Rumbling Goliath
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
@@ -606,11 +597,12 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142683, {	-- Ruul Onestone
+					q(53092, {	-- Ruul Onestone**
 						["groups"] = {
 							i(163741),	-- Magic Fun Rock
 						},
-						["questID"] = 53524,
+						["npcID"] = 142683,	-- Ruul Onestone
+						["qg"] = 142683,	-- Ruul Onestone
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
@@ -618,11 +610,12 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142690, {	-- Singer
+					q(53093, {	-- Singer**
 						["groups"] = {
 							i(163738),	-- Syndicate Mask
 						},
-						["questID"] = 53525,
+						["npcID"] = 142690,	-- Singer
+						["qg"] = 142690,	-- Singer
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
@@ -630,11 +623,12 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142437, {	-- Skullripper
+					q(53022, {	-- Skullripper**
 						["groups"] = {
 							i(163645),	-- Skullripper
 						},
-						["questID"] = 53526,
+						["npcID"] = 142437,	-- Skullripper
+						["qg"] = 142437,	-- Skullripper
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
@@ -642,11 +636,12 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(141616, {	-- Thundering Goliath
+					q(53023, {	-- Thundering Goliath**
 						["groups"] ={
 							i(163698),	-- Thundering Essence
 						},
-						["questID"] = 53527,
+						["npcID"] = 141616,	-- Thundering Goliath
+						["qg"] = 141616,	-- Thundering Goliath
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
@@ -654,11 +649,12 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142438, {	-- Venomarus
+					q(53024, {	-- Venomarus**
 						["groups"] = {
 							i(163648),	-- Fuzzy Creepling
 						},
-						["questID"] = 53528,
+						["npcID"] = 142438,	-- Venomarus
+						["qg"] = 142438,	-- Venomarus
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
@@ -666,11 +662,12 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142440, {	-- Yogursa
+					q(53015, {	-- Yogursa**
 						["groups"] = {
 							i(163684),	-- Scabby
 						},
-						["questID"] = 53529,
+						["npcID"] = 142440,	-- Yogursa
+						["qg"] = 142440,	-- Yogursa
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
@@ -678,11 +675,12 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142682, {	-- Zalas Witherbark <Warband Leader>
+					q(53094, {	-- Zalas Witherbark <Warband Leader>**
 						["groups"] = {
 							i(163745),	-- Witherbark Gong
 						},
-						["questID"] = 53530,
+						["npcID"] = 142682,	-- Zalas Witherbark <Warband Leader>
+						["qg"] = 142682,	-- Zalas Witherbark <Warband Leader>
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
