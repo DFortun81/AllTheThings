@@ -183,13 +183,16 @@ _.Instances =
 									i(71085),	-- Runestaff of Nordrassil
 								},
 							}),
-							qa(29307, {	--  Heart of Flame [A]
+							{
 								["qg"] = 53349,	-- Kalecgos
+								["allianceQuestID"] = 29307,	-- Heart of Flame [A]
+								["hordeQuestID"] = 	  29308,	-- Heart of Flame [H]
 								["sourceQuests"] = { 29285 },	-- Alignment
 								["groups"] = {
 									i(69848, {	-- Heart of Flame
 										["description"] = "The heart has 100% drop rate from Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty.\n\nGather Essences by killing the bosses and syphoning the essences with your staff.",
-										["questID"] = 29307,
+										["allianceQuestID"] = 29307,	-- Heart of Flame [A]
+										["hordeQuestID"] = 	  29308,	-- Heart of Flame [H]
 										["crs"] = {
 											53691,	-- Shannox
 											52498,	-- Beth'tilac <The Red Widow>
@@ -202,7 +205,8 @@ _.Instances =
 										},
 									}),
 								},
-							}),
+							},
+							--[[
 							qh(29308, {	--  Heart of Flame [H]
 								["qg"] = 53349,	-- Kalecgos
 								["sourceQuests"] = { 29285 },	-- Alignment
@@ -223,20 +227,32 @@ _.Instances =
 									}),
 								},
 							}),
-							qa(29312, {	-- The Stuff of Legends
-								["qgs"] = { 53466, 53422 },	-- Hallegosa / Dragonwrath, Tarecgosa's Rest
+							]]--
+							{
+								["qgs"] = { 53466 },	-- Hallegosa
+								["allianceQuestID"] = 29312,	-- The Stuff of Legends [A]
+								["hordeQuestID"] = 29309,		-- The Stuff of Legends [H]
+								["sourceQuests"] = { 29307, 29308 },	-- Heart of Flame
+								["groups"] = {
+									i(71086),	-- Dragonwrath, Tarecgosa's Rest
+								},
+							},
+							--[[
+							qa(29312, {	-- The Stuff of Legends [A]
+								["qgs"] = { 53466 },	-- Hallegosa
+								["sourceQuests"] = { 29307 },	-- Heart of Flame
+								["groups"] = {
+									i(71086),	-- Dragonwrath, Tarecgosa's Rest
+								},
+							}),
+							qh(29309, {	-- The Stuff of Legends [H]
+								["qgs"] = { 53466 },	-- Hallegosa
 								["sourceQuests"] = { 29308 },	-- Heart of Flame
 								["groups"] = {
 									i(71086),	-- Dragonwrath, Tarecgosa's Rest
 								},
 							}),
-							qh(29309, {	-- The Stuff of Legends
-								["qgs"] = { 53466, 53422 },	-- Hallegosa / Dragonwrath, Tarecgosa's Rest
-								["sourceQuests"] = { 29308 },	-- Heart of Flame
-								["groups"] = {
-									i(71086),	-- Dragonwrath, Tarecgosa's Rest
-								},
-							}),
+							]]--
 						},
 					}),
 					n( -2, {	-- Vendors
