@@ -24,26 +24,20 @@ _.Instances =
 							198,	-- Mount Hyjal
 						},
 						["groups"] = {
-							qa(29453, {	-- Your Time Has Come
+							{
 								["description"] = "This quest is auto accepted upon killing a Molten Lord.",
+								["allianceQuestID"] = 29453,	-- Your Time Has Come [A]
+								["hordeQuestID"] = 	  29452,	-- Your Time Has Come [H]
 								["qg"] = 53115, -- Molten Lord
 								["isBreadcrumb"] = true,    -- for A Legendary Engagement
-							}),
-							qh(29452, {	-- Your Time Has Come
-								["description"] = "This quest is auto accepted upon killing a Molten Lord.",
-								["qg"] = 53115, -- Molten Lord
-								["isBreadcrumb"] = true,    -- for A Legendary Engagement
-							}),
-							qa(29129, {	-- A Legendary Engagement
-								["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind.",
+							},
+							{
+								["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+								["allianceQuestID"] = 29129,	-- A Legendary Engagement [A]
+								["hordeQuestID"] = 	  29132,	-- A Legendary Engagement [H]
 								["qg"] = 52382,	-- Ziradormi
-								["sourceQuests"] = { 29453 },	-- Your Time Has Come
-							}),
-							qh(29132, {	-- A Legendary Engagement
-								["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Orgrimmar.",
-								["qg"] = 52382,	-- Ziradormi
-								["sourceQuests"] = { 29452 },	-- Your Time Has Come
-							}),
+								["sourceQuests"] = { 29453, 29452 },	-- Your Time Has Come
+							},
 							q(29134, {	-- A Wrinkle in Time
 								["qg"] = 15192,	-- Anachronos
 								["sourceQuests"] = {
