@@ -272,7 +272,7 @@ _.ExpansionFeatures =
 								67.06, 65.89
 							},
 						}),
-						n(126427, {	-- Branchlord Aldrus
+						n(142508, {	-- Branchlord Aldrus
 							["groups"] = {
 								i(163650),	-- Aldrusian Sproutling
 							},
@@ -327,7 +327,7 @@ _.ExpansionFeatures =
 								23.11, 46.71
 							},
 						}),
-						n(126462, {	-- Fozruk
+						n(142433, {	-- Fozruk
 							["groups"] = {
 								i(163711),	-- Shard of Fozruk
 							},
@@ -470,18 +470,18 @@ _.ExpansionFeatures =
 								70.01, 34.81
 							},
 						}),
-						n(142361, {	-- Plaguefeather
+						n(142435, {	-- Plaguefeather
 							["groups"] = {
 								i(163690),	-- Plague Egg
 							},
-							--["questID"] = ,
+							["questID"] = 53519,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
 								36.91, 66.01
 							},
 						}),
-						n(142321, {	-- Ragebeak
+						n(142436, {	-- Ragebeak
 							["groups"] = {
 								i(163689),	-- Angry Egg
 							},
@@ -490,6 +490,17 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 							["coord"] = {
 								11.91, 52.11
+							},
+						}),
+						n(141620, {	-- Rumbling Goliath
+							["groups"] = {
+								i(163701),	-- Rumbling Essence
+							},
+							["questID"] = 53523,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								29.76, 60.04
 							},
 						}),
 						n(142683, {	-- Ruul Onestone
@@ -536,7 +547,7 @@ _.ExpansionFeatures =
 								56.71, 54.11
 							},
 						}),
-						n(142251, {	-- Yogursa
+						n(142440, {	-- Yogursa
 							["groups"] = {
 								i(163684),	-- Scabby
 							},
