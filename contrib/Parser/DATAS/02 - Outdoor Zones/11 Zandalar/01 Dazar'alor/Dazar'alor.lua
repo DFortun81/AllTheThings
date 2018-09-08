@@ -753,6 +753,93 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 				}),
+				n(-10057, {	-- War Effort
+					["groups"] = {
+						n(-17, {	-- Quests
+							["groups"] = {
+								n(-229, {	-- Weekly
+									["groups"] = {
+										q(53416, {	-- Warfront: The Battle For Stromgarde
+											["groups"] = {
+												i(164577, {	-- Warfronts Equipment Cache
+													["groups"] = {
+														i(163426),	-- Honorbound Artificer's Guise
+														i(163424),	-- Honorbound Artificer's Amice
+														i(163280),	-- Honorbound Artificer's Robes
+														i(163306),	-- Honorbound Artificer's Cuffs
+														i(163428),	-- Honorbound Artificer's Mitts
+														i(163430),	-- Honorbound Artificer's Cord
+														i(163296),	-- Honorbound Artificer's Legwraps
+														i(163285),	-- Honorbound Artificer's Sandals
+														i(163435),	-- Honorbound Outrider's Headpiece
+														i(163432),	-- Honorbound Outrider's Shoulderguards
+														i(163283),	-- Honorbound Outrider's Tunic
+														i(163309),	-- Honorbound Outrider's Bracers
+														i(163437),	-- Honorbound Outrider's Gloves
+														i(163439),	-- Honorbound Outrider's Buckle
+														i(163298),	-- Honorbound Outrider's Pants
+														i(163438),	-- Honorbound Outrider's Boots
+														i(163446),	-- Honorbound Vanguard's Skullguard
+														i(163441),	-- Honorbound Vanguard's Shoulderguards
+														i(163282),	-- Honorbound Vanguard's Chainmail
+														i(163308),	-- Honorbound Vanguard's Bindings
+														i(163448),	-- Honorbound Vanguard's Handguards
+														i(163451),	-- Honorbound Vanguard's Clasp
+														i(163445),	-- Honorbound Vanguard's Leggings
+														i(163449),	-- Honorbound Vanguard's Sabatons
+														i(163456),	-- Honorbound Centurion's Greathelm
+														i(163453),	-- Honorbound Centurion's Shoulderplates
+														i(163459),	-- Honorbound Centurion's Breastplate
+														i(163307),	-- Honorbound Centurion's Vambraces
+														i(163458),	-- Honorbound Centurion's Gauntlets
+														i(163461),	-- Honorbound Centurion's Greatbelt
+														i(163455),	-- Honorbound Centurion's Legplates
+														i(163460),	-- Honorbound Centurion's Greaves
+													},
+												}),
+											},
+											["sourceQuests"] = { 53212 },	-- Back to Zuldazar
+											["qg"] = 138949,	-- Throk <Recruitment Officer>
+											["coord"] = {
+												52.97, 94.35
+											},
+										}),
+										q(52930, {	-- Wartime Donation: Gold
+											["qg"] = 142157,	-- Paymasteer Grintooth
+											["coord"] = {
+												51.71, 95.55
+											},
+											["repeatable"] = true,
+											["isWeekly"] = true,
+										}),
+									},
+								}),
+								q(53208, {	-- To The Front
+									["sourceQuests"] = { 138949 },	-- The Warfront Looms
+									["qg"] = 138949,	-- Throk <Recruitment Officer>
+									["coord"] = {
+										52.97, 94.35
+									},
+								}),
+								q(53209, {	-- Warfront Contribution
+									["qg"] = 138949,	-- Throk <Recruitment Officer>
+									["coord"] = {
+										52.97, 94.35
+									},
+								}),
+								q(53207, {	-- The Warfront Looms
+									["qg"] = 138949,	-- Throk <Recruitment Officer>
+									["coord"] = {
+										52.97, 94.35
+									},
+								}),
+							},
+						}),
+					},
+					["lvl"] = 120,
+					["achievementID"] = 12874, -- An Eventful Battle
+					["description"] = "|cff66ccffLocated in the Arathi Highlands, Stromgarde is one of the key locations in the struggle for controlling of the Eastern Kingdoms. For the Alliance, Stromgarde sits in a critical defensive position. Following the battle for Lordaeron, the Horde threat still looms over the continent and holding Stromgarde will be key if you hope to keep the Horde's aggression at bay.\n\nFor the Horde, securing Stromgarde would set the stage for an assault on the heart of the Eastern Kingdoms and serve as a launching point for a campaign against the worgen of the kingdom of Gilneas. This location is also key in the defense of the blood elven capital, Silvermoon City, in the north.|r",
+				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
 						n(-17, { -- Quests
