@@ -539,7 +539,18 @@ _.ExpansionFeatures =
 								56.61, 44.51
 							},
 						}),
-						n(142301, {	-- Venomarus
+						n(141616, {	-- Thundering Goliath
+							["groups"] ={
+								i(163698),	-- Thundering Essence
+							},
+							--["questID"] = ,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								46.31, 52.02
+							},
+						}),
+						n(142438, {	-- Venomarus
 							["groups"] = {
 								i(163648),	-- Fuzzy Creepling
 							},
