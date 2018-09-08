@@ -636,7 +636,11 @@ AllTheThings.Locales.enUS = {
 		[-3310] = "Interface\\Icons\\Achievement_Garrison_blueprint_large",		-- Garrison Architect
 		[-3311] = "Interface\\Icons\\achievement_bg_killflagcarriers_grabflag_capit", -- Call To Arms [LFD Queue]
 		[-3314] = "Interface\\Icons\\inv_plate_draenorlfr_c_01helm",				-- Storm-Tempered Set
+		
 		[-4189] = "Interface\\Icons\\achievement_legionpvptier4",				-- Instance Item Sets, PvP
+		[-4190] = "Interface\\Icons\\ExpansionIcon_BurningCrusade",
+		[-4191] = "Interface\\Icons\\Achievement_PVP_Legion08",
+		
 		[-5349] = "Interface\\Icons\\achievement_challengemode_scarletmonastery_gold",	-- Miscellaneous Item Sets
 		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",			-- Class Trial Item Sets
 		[-5351] = "Interface\\Icons\\misc_arrowlup",							-- Character Boost					
@@ -1441,6 +1445,8 @@ AllTheThings.Locales.enUS = {
 		[-4187] = "Season 1",
 		[-4188] = "Legacy Sets",
 		[-4189] = CALENDAR_TYPE_PVP.." "..LOOT_JOURNAL_ITEM_SETS, 					-- Instance Item Sets, PvP
+		[-4190] = "Pre-Season",
+		[-4191] = "Tournament",
 -- Tier/Dungeon/Event/Holiday Sets
 	-- Artifact Strings
 		[-5200] = "Base Appearance",
