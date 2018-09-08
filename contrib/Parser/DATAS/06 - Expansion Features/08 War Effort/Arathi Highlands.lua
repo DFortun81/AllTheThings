@@ -514,11 +514,11 @@ _.ExpansionFeatures =
 								50.41, 57.61
 							},
 						}),
-						n(142312, {	-- Skullripper
+						n(142437, {	-- Skullripper
 							["groups"] = {
 								i(163645),	-- Skullripper
 							},
-							--["questID"] = ,
+							["questID"] = 53526,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
