@@ -778,7 +778,7 @@ _.Zones =
 							}),
 						}),
 						sz(1263, 19, {	--Westguard Keep
-							qd(11153, {	--  Break the Blockade [A]
+							q(11153, {	--  Break the Blockade [A]
 								["qg"] = 23895,	-- Bombardier Petrov
 							}),
 							q(11406, {	--  Everything Must Be Ready [A]

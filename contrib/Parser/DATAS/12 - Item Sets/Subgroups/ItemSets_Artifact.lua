@@ -13,19 +13,32 @@ _.PVP =
 		ach(12907, { ["groups"] = honorLevel80 }), -- Honor Level 80
 	}),
 };
+local thisSideUpAch = {};
+_.Achievements = 
+{
+	n(-9960, { -- Professions
+		n(-9974, { -- Archaeology
+			ach(10603, {	-- A Keen Eye
+				ach(10602, {["groups"] = thisSideUpAch}),		-- This Side Up
+			}),
+		}),
+	}),
+};
 local oldcl = cl;
 local prestige = {};
+local thisSideUp = {};
 table.insert(prestige, {});
 table.insert(prestige, {});
 table.insert(prestige, {});
 table.insert(prestige, {});
 cl = function(classID, t)
 	local c = oldcl(classID, t);
-	print(#prestige[1], #prestige[2], #prestige[3], #prestige[4]);
 	table.insert(honorLevel10, oldcl(classID, { ["groups"] = prestige[1] }));
 	table.insert(honorLevel30, oldcl(classID, { ["groups"] = prestige[2] }));
 	table.insert(honorLevel50, oldcl(classID, { ["groups"] = prestige[3] }));
 	table.insert(honorLevel80, oldcl(classID, { ["groups"] = prestige[4] }));
+	table.insert(thisSideUpAch, oldcl(classID, { ["groups"] = thisSideUp }));
+	thisSideUp = {};
 	prestige = {};
 	table.insert(prestige, {});
 	table.insert(prestige, {});
@@ -65,6 +78,7 @@ local ClassHallAppearance = function(icon, t)
 		print(header.model);
 		header.model = nil;
 	end
+	table.insert(thisSideUp, header.groups[4]);
 	return header;
 end;
 local BalanceOfPowerAppearance = function(icon, t)
