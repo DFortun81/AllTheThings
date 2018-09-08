@@ -329,68 +329,79 @@ _.ExpansionFeatures =
 					currency(1560),
 				}),
 			}),
-			n(-16, {	-- Rares
+			n(-231, {	-- Rares [Alliance Version]
 				["groups"] = {
-					n(142709, {	-- Beastrider Kama
+					q(53083, {	-- Beastrider Kama**
 						["groups"] = {
 							i(163644),	-- Swift Albino Raptor
 						},
-						["questID"] = 53504,
+						["npcID"] = 142709,	-- Beastrider Kama
+						["qg"] = 142709,	-- Beastrider Kama
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
 							67.06, 65.89
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142508, {	-- Branchlord Aldrus
+					q(53013, {	-- Branchlord Aldrus**
 						["groups"] = {
 							i(163650),	-- Aldrusian Sproutling
 						},
-						["questID"] = 53505,
+						["npcID"] = 142508,	-- Branchlord Aldrus
+						["qg"] = 142508,	-- Branchlord Aldrus
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
 							22.91, 22.21
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
-					n(141615, {	-- Burning Goliath
+					q(53506, {	-- Burning Goliath
 						["groups"] = {
 							i(163691),	-- Burning Essence
 						},
-						["questID"] = 53506,
+						["npcID"] = 141615,	-- Burning Goliath
+						["qg"] =  141615,	-- Burning Goliath
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
 							30.64, 44.74
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
-					n(141618, {	-- Cresting Goliath
+					q(53018, {	-- Cresting Goliath**
 						["groups"] = {
 							i(163700),	-- Cresting Essence
 						},
-						["questID"] = 53531,
+						["npcID"] = 141618,	-- Cresting Goliath
+						["qg"] = 141618,	-- Cresting Goliath
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
 							61.86, 31.27
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142688, {	-- Darbel Montrose
+					q(53507, {	-- Darbel Montrose
 						["groups"] = {
 							i(163652),	-- Tiny Grimoire
 						},
-						["questID"] = 53507,
+						["npcID"] = 142688,	-- Darbel Montrose
+						["qg"] =  142688,	-- Darbel Montrose
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
 							50.41, 61.21
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142741, {	-- Doomrider Helgrim
+					q(53085, {	-- Doomrider Helgrim [A]**
 						["groups"] = {
 							i(163579),	-- Highland Mustang
 						},
-						--["questID"] = ,
+						["npcID"] = 142741,	-- Doomrider Helgrim
+						["qg"] = 142741,	-- Doomrider Helgrim
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
@@ -399,16 +410,18 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Only shows up when Alliance Controlled.",
 					}),
-					n(141668, {	-- Echo of Myzrael
+					q(53059, {	-- Echo of Myzrael**
 						["groups"] = {
 							i(163677),	-- Teeny Tiny Orb
 						},
-						["questID"] = 53508,
+						["npcID"] = 141668,	-- Echo of Myzrael
+						["qg"] = 1416668,	-- Echo of Myzrael
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
 							56.61, 36.01
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
 					n(142686, {	-- Foulbelly
 						["groups"] = {
@@ -421,34 +434,36 @@ _.ExpansionFeatures =
 							28.64, 45.66,	-- Cave Entrance
 							23.11, 46.71,	-- Foulbelly
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142433, {	-- Fozruk
+					q(53019, {	-- Fozruk**
 						["groups"] = {
 							i(163711),	-- Shard of Fozruk
 						},
-						["questID"] = 53510,
+						["npcID"] = 142433,	-- Fozruk
+						["qg"] = 142433,	-- Fozruk
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coords"] = {	-- Patrols, put start and ending path for coordinate plane.  Don't add anymore unless it's above the top point or below the bottom point
 							60.94, 31.54, 	-- Top
 							54.01, 55.41	-- Bottom
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
-					n(142662, {	-- Geomancer Flintdagger
+					q(53060, {	-- Geomancer Flintdagger**
 						["groups"] = {
 							i(163713),	-- Brazier Cap
 						},
-						["questID"] = 53511,
+						["npcID"] = 142662,	-- Geomancer Flintdagger
+						["qg"] = 142662,	-- Geomancer Flintdagger
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
 							79.61, 30.31
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
-					-- We have to do this as quests rather than the npc because we need to use two different questID's.  One for each faction
-					-- This means we need to use the quest object rather than the creature object
-					-- Horde information filled out.  Need Alliance questID then we can uncomment out their faction
-					q(53512, {	-- Horrific Apparition [Horde]
+					q(53512, {	-- Horrific Apparition [Horde]**
 						["groups"] = {
 							i(163736),	-- Spectral Visage
 						},
@@ -456,7 +471,7 @@ _.ExpansionFeatures =
 						["npcID"] = 142725,	-- Horrific Apparition
 						["repeatable"] = true,
 						["isWeekly"] = true,
-						["races"] = HORDE_ONLY,
+						["races"] = ALLIANCE_ONLY,
 						["coord"] = {
 							26.71, 32.61,	-- Horde NPC
 						},
@@ -476,21 +491,340 @@ _.ExpansionFeatures =
 						},
 					}),
 					--]]
-					--[[ Original before found out Blizzard made a npc share with both factions and get different questID's
-					n(142725, {	-- Horrific Apparition
+					n(142112, {	-- Kor'gresh Coldrage
 						["groups"] = {
-							i(163736),	-- Spectral Visage
+							i(163744),	-- Coldrage's Cooler
 						},
-						["questID"] = 53512,
+						["questID"] = 53513,
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							48.11, 71.71
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(142684, {	-- Kovork
+						["groups"] = {
+							i(163750),	-- Kovork Kostume
+						},
+						["questID"] = 53514,
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coords"] = {
+							28.64, 45.66,	-- Cave Entrance
+							25.01, 49.11,	-- Kovork
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(142716, {	-- Man-Hunter Rog
+						["groups"] = {
+							i(163712),	-- Mana-Warped Egg
+						},
+						["questID"] = 53515,
+						["crs"] = {
+							142717,	-- SQUAAWK!
+						},
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							52.31, 72.41
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(141942, {	-- Molok the Crusher
+						["groups"] = {
+							i(163775),	-- Molok Morion
+						},
+						["questID"] = 53516,
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							59.81, 37.61
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(53091, {	-- Nimar the Slayer**
+						["groups"] = {
+							i(163706),	-- Witherbark Direwing
+						},
+						["npcID"] = 142692,	-- Nimar the Slayer
+						["qg"] = 142692,	-- Nimar the Slayer
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							67.91, 66.51
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(53014, {	-- Overseer Krix**
+						["groups"] = {
+							i(163646),	-- Lil' Donkey
+						},
+						["npcID"] = 142423,	-- Overseer Krix
+						["qg"] = 142423,	-- Overseer Krix
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							70.01, 34.81
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(142435, {	-- Plaguefeather
+						["groups"] = {
+							i(163690),	-- Plague Egg
+						},
+						["questID"] = 53519,
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							36.91, 66.01
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(53016, {	-- Ragebeak**
+						["groups"] = {
+							i(163689),	-- Angry Egg
+						},
+						["npcID"] = 142436,	-- Ragebeak
+						["qg"] = 142436,	-- Ragebeak
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							11.91, 52.11
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(141620, {	-- Rumbling Goliath
+						["groups"] = {
+							i(163701),	-- Rumbling Essence
+						},
+						["questID"] = 53523,
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							29.76, 60.04
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(142683, {	-- Ruul Onestone
+						["groups"] = {
+							i(163741),	-- Magic Fun Rock
+						},
+						["questID"] = 53524,
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							43.01, 57.01
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(142690, {	-- Singer
+						["groups"] = {
+							i(163738),	-- Syndicate Mask
+						},
+						["questID"] = 53525,
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							50.41, 57.61
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(142437, {	-- Skullripper
+						["groups"] = {
+							i(163645),	-- Skullripper
+						},
+						["questID"] = 53526,
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							56.61, 44.51
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(141616, {	-- Thundering Goliath
+						["groups"] ={
+							i(163698),	-- Thundering Essence
+						},
+						["questID"] = 53527,
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							46.31, 52.02
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(142438, {	-- Venomarus
+						["groups"] = {
+							i(163648),	-- Fuzzy Creepling
+						},
+						["questID"] = 53528,
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							56.71, 54.11
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(142440, {	-- Yogursa
+						["groups"] = {
+							i(163684),	-- Scabby
+						},
+						["questID"] = 53529,
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							14.01, 36.91
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(142682, {	-- Zalas Witherbark <Warband Leader>
+						["groups"] = {
+							i(163745),	-- Witherbark Gong
+						},
+						["questID"] = 53530,
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							62.81, 80.81
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+				},
+			}),
+			n(-232, {	-- Rares [Horde Version]
+				["groups"] = {
+					q(53504, {	-- Beastrider Kama**
+						["groups"] = {
+							i(163644),	-- Swift Albino Raptor
+						},
+						["npcID"] = 142709,	-- Beastrider Kama
+						["qg"] = 142709,	-- Beastrider Kama
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = { 67.06, 65.89
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					q(53505, {	-- Branchlord Aldrus**
+						["groups"] = {
+							i(163650),	-- Aldrusian Sproutling
+						},
+						["npcID"] = 142508,	-- Branchlord Aldrus
+						["qg"] = 142508,	-- Branchlord Aldrus
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							22.91, 22.21
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					q(53506, {	-- Burning Goliath
+						["groups"] = {
+							i(163691),	-- Burning Essence
+						},
+						["npcID"] = 141615,	-- Burning Goliath
+						["qg"] =  141615,	-- Burning Goliath
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							30.64, 44.74
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					q(53531, {	-- Cresting Goliath**
+						["groups"] = {
+							i(163700),	-- Cresting Essence
+						},
+						["npcID"] = 141618,	-- Cresting Goliath
+						["qg"] = 141618,	-- Cresting Goliath
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							61.86, 31.27
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					q(53507, {	-- Darbel Montrose
+						["groups"] = {
+							i(163652),	-- Tiny Grimoire
+						},
+						["npcID"] = 142688,	-- Darbel Montrose
+						["qg"] =  142688,	-- Darbel Montrose
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							50.41, 61.21
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					q(53508, {	-- Echo of Myzrael**
+						["groups"] = {
+							i(163677),	-- Teeny Tiny Orb
+						},
+						["npcID"] = 141668,	-- Echo of Myzrael
+						["qg"] = 1416668,	-- Echo of Myzrael
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							56.61, 36.01
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					n(142686, {	-- Foulbelly
+						["groups"] = {
+							i(163735),	-- Foulbelly
+						},
+						["questID"] = 53509,
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coords"] = {
+							28.64, 45.66,	-- Cave Entrance
+							23.11, 46.71,	-- Foulbelly
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					q(53510, {	-- Fozruk**
+						["groups"] = {
+							i(163711),	-- Shard of Fozruk
+						},
+						["npcID"] = 142433,	-- Fozruk
+						["qg"] = 142433,	-- Fozruk
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coords"] = {	-- Patrols, put start and ending path for coordinate plane.  Don't add anymore unless it's above the top point or below the bottom point
+							60.94, 31.54, 	-- Top
+							54.01, 55.41	-- Bottom
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					q(53511, {	-- Geomancer Flintdagger**
+						["groups"] = {
+							i(163713),	-- Brazier Cap
+						},
+						["npcID"] = 142662,	-- Geomancer Flintdagger
+						["qg"] = 142662,	-- Geomancer Flintdagger
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = {
+							79.61, 30.31
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					q(53512, {	-- Horrific Apparition [Horde]**
+						["groups"] = {
+							i(163736),	-- Spectral Visage
+						},
+						["qg"] = 142725,	-- Horrific Apparition
+						["npcID"] = 142725,	-- Horrific Apparition
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["races"] = HORDE_ONLY,
+						["coord"] = {
 							26.71, 32.61,	-- Horde NPC
-							19.51, 60.91,	-- Alliance NPC
 						},
 					}),
-					--]]
-					n(142739, {	-- Knight-Captaian Aldrin
+					n(142739, {	-- Knight-Captaian Aldrin [H]
 						["groups"] = {
 							i(163578),	-- Broken Highland Mustang
 						},
@@ -513,6 +847,7 @@ _.ExpansionFeatures =
 						["coord"] = {
 							48.11, 71.71
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(142684, {	-- Kovork
 						["groups"] = {
@@ -525,6 +860,7 @@ _.ExpansionFeatures =
 							28.64, 45.66,	-- Cave Entrance
 							25.01, 49.11,	-- Kovork
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(142716, {	-- Man-Hunter Rog
 						["groups"] = {
@@ -539,6 +875,7 @@ _.ExpansionFeatures =
 						["coord"] = {
 							52.31, 72.41
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(141942, {	-- Molok the Crusher
 						["groups"] = {
@@ -550,28 +887,33 @@ _.ExpansionFeatures =
 						["coord"] = {
 							59.81, 37.61
 						},
+						["races"] = HORDE_ONLY,
 					}),
-					n(142692, {	-- Nimar the Slayer
+					q(53517, {	-- Nimar the Slayer**
 						["groups"] = {
 							i(163706),	-- Witherbark Direwing
 						},
-						["questID"] = 53517,
+						["npcID"] = 142692,	-- Nimar the Slayer
+						["qg"] = 142692,	-- Nimar the Slayer
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
 							67.91, 66.51
 						},
+						["races"] = HORDE_ONLY,
 					}),
-					n(142423, {	-- Overseer Krix
+					q(53518, {	-- Overseer Krix**
 						["groups"] = {
 							i(163646),	-- Lil' Donkey
 						},
-						["questID"] = 53518,
+						["npcID"] = 142423,	-- Overseer Krix
+						["qg"] = 142423,	-- Overseer Krix
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
 							70.01, 34.81
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(142435, {	-- Plaguefeather
 						["groups"] = {
@@ -583,17 +925,20 @@ _.ExpansionFeatures =
 						["coord"] = {
 							36.91, 66.01
 						},
+						["races"] = HORDE_ONLY,
 					}),
-					n(142436, {	-- Ragebeak
+					q(53522, {	-- Ragebeak**
 						["groups"] = {
 							i(163689),	-- Angry Egg
 						},
-						["questID"] = 53522,
+						["npcID"] = 142436,	-- Ragebeak
+						["qg"] = 142436,	-- Ragebeak
 						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = {
 							11.91, 52.11
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(141620, {	-- Rumbling Goliath
 						["groups"] = {
@@ -605,6 +950,7 @@ _.ExpansionFeatures =
 						["coord"] = {
 							29.76, 60.04
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(142683, {	-- Ruul Onestone
 						["groups"] = {
@@ -616,6 +962,7 @@ _.ExpansionFeatures =
 						["coord"] = {
 							43.01, 57.01
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(142690, {	-- Singer
 						["groups"] = {
@@ -627,6 +974,7 @@ _.ExpansionFeatures =
 						["coord"] = {
 							50.41, 57.61
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(142437, {	-- Skullripper
 						["groups"] = {
@@ -638,6 +986,7 @@ _.ExpansionFeatures =
 						["coord"] = {
 							56.61, 44.51
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(141616, {	-- Thundering Goliath
 						["groups"] ={
@@ -649,6 +998,7 @@ _.ExpansionFeatures =
 						["coord"] = {
 							46.31, 52.02
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(142438, {	-- Venomarus
 						["groups"] = {
@@ -660,6 +1010,7 @@ _.ExpansionFeatures =
 						["coord"] = {
 							56.71, 54.11
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(142440, {	-- Yogursa
 						["groups"] = {
@@ -671,6 +1022,7 @@ _.ExpansionFeatures =
 						["coord"] = {
 							14.01, 36.91
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					n(142682, {	-- Zalas Witherbark <Warband Leader>
 						["groups"] = {
@@ -682,6 +1034,7 @@ _.ExpansionFeatures =
 						["coord"] = {
 							62.81, 80.81
 						},
+						["races"] = HORDE_ONLY,
 					}),
 				},
 			}),

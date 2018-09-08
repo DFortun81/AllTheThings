@@ -450,6 +450,8 @@ AllTheThings.Locales.enUS = {
 		[-225] = "Interface\\Icons\\INV_Misc_Map02",							-- World Drop
 		[-228] = "Interface\\Minimap\\Tracking\\Flightmaster",					-- Flight Paths
 		[-230] = "Interface\\Icons\\achievement_legionpvp2tier3",				-- Conquest
+		[-231] = "Interface\\Icons\\Spell_Shadow_DeathScream",
+		[-232] = "Interface\\Icons\\Spell_Shadow_DeathScream",
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1068,6 +1070,8 @@ AllTheThings.Locales.enUS = {
 		[-228] = GetSpellInfo(218950),											-- Flight Path
 		[-229] = CALENDAR_REPEAT_WEEKLY,										-- Weekly
 		[-230] = PVP_CONQUEST,													-- Conquest
+		[-231] = BATTLE_PET_BREED_QUALITY4.." - "..FACTION_ALLIANCE,			-- Rares - Alliance  [Note: Temp Solution]
+		[-232] = BATTLE_PET_BREED_QUALITY4.." - "..FACTION_HORDE,				-- Rares - Horde  [Note: Temp Solution]
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
