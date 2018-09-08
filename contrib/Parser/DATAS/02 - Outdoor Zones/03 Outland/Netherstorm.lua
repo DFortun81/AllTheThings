@@ -17,16 +17,255 @@ _.Zones =
 						["coord"] = { 45.2, 34.8 },
 					}),
 				}),
-				n(-25, {	-- Pet Battle
+				n(-25,  {	-- Pet Battle
 					p(521), 	-- Fledgling Nether Ray
 					p(638), 	-- Nether Roach
 				}),
-				n(-17, {	-- Quests
-					i( 29234, {	-- Belmara's Tome
-						q(10305, {	-- Abjurist Belmara
-							["qg"] = 19546,	-- Abjurist Belmara
-						}),
+				n(-17,  {	-- Quests
+					faction(932, {	-- The Aldor
+						["groups"] = {
+							q(10263, {	-- Assisting the Consortium
+								["qg"] = 19467,	-- Anchorite Karja
+								["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							q(10241, {	-- Distraction at Manaforge B'naar
+								["qg"] = 19466,	-- Exarch Orelis
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+								["sourceQuests"] = { 11038 },	-- Assist Exarch Orelis
+							}),
+							q(10313, {	-- Measuring Warp Energies
+								["groups"] = {
+									i(30362),	-- Energized Helm
+									i(30363),	-- Warp-Shielded Hauberk
+									i(30364),	-- Resonating Axe
+									i(30521),	-- Warpweaver's Gloves
+								},
+								["qg"] = 19466,	-- Exarch Orelis
+								["sourceQuests"] = { 10241 },	-- Distraction at Manaforge B'naar
+							}),
+							q(10243, {	-- Naaru Technology
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10241 },	-- Distraction at Manaforge B'naar
+							}),
+							o(183770, {	-- B'naar Control Console
+								q(10245, {	-- B'naar Console Transcription
+									["sourceQuests"] = { 10243 },	-- Naaru Technology
+								}),
+							}),
+							q(10299, {	-- Shutting Down Manaforge B'naar
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10245 },	-- B'naar Console Transcription
+							}),
+							q(10246, {	-- Attack on Manaforge Coruu
+								["qg"] = 19466,	-- Exarch Orelis
+								["sourceQuests"] = { 10299 },	-- Shutting Down Manaforge B'naar
+							}),
+							q(10321, {	-- Shutting Down Manaforge Coruu
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10299 },	-- Shutting Down Manaforge B'naar
+							}),
+							q(10322, {	-- Shutting Down Manaforge Duro
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
+							}),
+							q(10323, {	-- Shutting Down Manaforge Ara
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10322 },	-- Shutting Down Manaforge Duro
+							}),
+							q(10328, {	-- Sunfury Briefings
+								["qg"] = 19466,	-- Exarch Orelis
+								["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
+							}),
+							q(10431, {	-- Outside Assistance
+								["qg"] = 19466,	-- Exarch Orelis
+								["sourceQuests"] = { 10328 },	-- Sunfury Briefings
+							}),
+							q(10380, {	-- A Dark Pact
+								["qg"] = 20780,	-- Kaylaan
+								["sourceQuests"] = { 10431 },	-- Outside Assistance
+							}),
+							q(10381, {	-- Aldor No More
+								["groups"] = {
+									i(30382),	-- Aldor Ceremonial Wraps
+									i(30379),	-- Vindicator's Light Vest
+									i(30381),	-- Kaylaan's Spaulders
+									i(30380),	-- Girdle of the Lost Vindicator
+								},
+								["qg"] = 20780,	-- Kaylaan
+								["sourceQuests"] = { 10380 },	-- A Dark Pact
+							}),
+							q(10407, {	-- Socrethar's Shadow
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10323, 10381 },	-- Shutting Down Manaforge Ara & Aldor No More
+							}),
+							q(10410, {	-- Ishanah's Help
+								["qg"] = 19467,	-- Anchorite Karja
+								["sourceQuests"] = { 10407 },	-- Socrethar's Shadow
+							}),
+						},
+						["collectible"] = false,
 					}),
+					faction(933, {	-- The Consortium
+						["groups"] = {
+							q( 10265, {	-- Consortium Crystal Collection
+								["qg"] = 19880,	-- Nether-Stalker Khay'ji
+							}),
+							q( 10262, {	-- A Heap of Ethereals
+								["qg"] = 19880,	-- Nether-Stalker Khay'ji
+								["sourceQuests"] = { 10265 },	-- Consortium Crystal Collection
+							}),
+							qr(q(10308, {	-- Another Heap of Ethereals
+								["qg"] = 19880,	-- Nether-Stalker Khay'ji
+								["description"] = "Gives reputation through Exalted.",
+								["sourceQuests"] = { 10262 },	-- A Heap of Ethereals
+							})),
+							q( 10969, {	-- Seek Out Ameer
+								["qg"] = 22899,	-- Protectorate Advisor Rahim
+								["description"] = "Requires Honored with The Consortium.",
+								["isBreadcrumb"] = true, 	-- for "A Mission of Mercy"
+							}),
+							q( 10970, {	-- A Mission of Mercy
+								["qg"] = 20448,	-- Commander Ameer
+								["description"] = "Requires Honored with The Consortium.",
+							}),
+							q( 10971, {	-- Ethereum Secrets
+								["qg"] = 20448,	-- Commander Ameer
+								["sourceQuests"] = { 10970 },	-- A Mission of Mercy
+							}),
+							qr(q(10972, {	-- Ethereum Prisoner I.D. Catalogue
+								["qg"] = 20448,	-- Commander Ameer
+								["description"] = "Gives reputation through Exalted.",
+								["sourceQuests"] = { 10971},	-- Ethereum Secrets
+							})),
+							q( 10973, {	-- A Thousand Worlds
+								["qg"] = 20448,	-- Commander Ameer
+								["description"] = "Requires Revered with The Consortium.",
+							}),
+							q( 10974, {	-- Stasis Chambers of Bash'ir
+								["qg"] = 20448,	-- Commander Ameer
+								["sourceQuests"] = { 10973 },	-- A Thousand Worlds
+							}),
+						},
+						["collectible"] = false,
+					}),
+					faction(934, {	-- The Scryers
+						["groups"] = {
+							q(10189, {	-- Manaforge B'naar
+								["qg"] = 19468,	-- Spymaster Thalodien
+								["coord"] = { 32.0, 64.0 },
+								["sourceQuests"] = { 11039 },	-- Report to Spymaster Thalodien
+							}),
+							q(10193, {	-- High Value Targets
+								["qg"] = 19468,	-- Spymaster Thalodien
+								["coord"] = { 32.0, 64.0 },
+								["sourceQuests"] = { 10189 },	-- Manaforge B'naar
+							}),
+							q(10329, {	-- Shutting Down Manaforge B'naar
+								["qg"] = 19468,	-- Spymaster Thalodien
+								["coord"] = { 32.0, 64.0 },
+								["sourceQuests"] = { 10193 },	-- High Value Targets
+							}),
+							q(10194, {	-- Stealth Flight
+								["qg"] = 19468,	-- Spymaster Thalodien
+								["coord"] = { 32.0, 64.0 },
+								["sourceQuests"] = { 10329 },	-- Shutting Down Manaforge B'naar
+							}),
+							q(10652, {	-- Behind Enemy Lines
+								["qg"] = 20162,	-- Veronia
+								["coord"] = { 33.8, 64.2 },
+								["sourceQuests"] = { 10194 },	-- Stealth Flight
+							}),
+							q(10197, {	-- A Convincing Disguise
+								["qg"] = 19840,	-- Caledis Brightdawn
+								["coord"] = { 48.2, 86.6 },
+								["sourceQuests"] = { 10652 },	-- Behind Enemy Lines
+							}),
+							q(10198, {	-- Information Gathering
+								["g"] = {
+									i(30397),	-- Spymaster's Crossbow
+									i(30383),	-- Belt of the Sage
+									i(30384),	-- Brightdawn Bracers
+									i(30386),	-- Bloodguard's Greaves
+								},
+								["qg"] = 19840,	-- Caledis Brightdawn
+								["coord"] = { 48.2, 86.6 },
+								["sourceQuests"] = { 10197 },	-- A Convincing Disguise
+							}),
+							q(10330, {	-- Shutting Down Manaforge Coruu
+								["qg"] = 19840,	-- Caledis Brightdawn
+								["coord"] = { 48.2, 86.6 },
+								["sourceQuests"] = { 10198 },	-- Information Gathering
+							}),
+							q(10341, {	-- Kick Them While They're Down
+								["g"] = {
+									i(30395),	-- Warp-Master's Maul
+									i(30394),	-- Sunfury Blade
+									i(30396),	-- Jeweled Halberd
+									i(30522),	-- Conjurer's Staff
+								},
+								["qg"] = 19469,	-- Magistrix Larynna
+								["coord"] = { 32.0, 64.0 },
+								["sourceQuests"] = { 10330 },	-- Shutting Down Manaforge Coruu
+							}),
+							q(10202, {	-- A Defector
+								["qg"] = 19469,	-- Magistrix Larynna
+								["coord"] = { 32.0, 64.0 },
+								["sourceQuests"] = { 10341 },	-- Kick Them While They're Down
+							}),
+							q(10432, {	-- Damning Evidence
+								["qg"] = 20920,	-- Magister Theledorn
+								["coord"] = { 26.1, 41.5 },
+								["sourceQuests"] = { 10202 },	-- A Defector
+							}),
+							q(10508, {	-- A Gift for Voren'thal
+								["qg"] = 19468,	-- Spymaster Thalodien
+								["coord"] = { 32.0, 64.0 },
+								["sourceQuests"] = { 10432 },	-- Damning Evidence
+								-- May also require Shutting Down Manaforge Ara.
+							}),
+							q(10509, {	-- Bound for Glory
+								["qg"] = 19468,	-- Spymaster Thalodien
+								["coord"] = { 32.0, 64.0 },
+								["sourceQuests"] = { 10508 },	-- A Gift for Voren'thal
+							}),
+							q(10200, {	-- Return to Thalodien
+								["qg"] = 19840,	-- Caledis Brightdawn
+								["coord"] = { 48.2, 86.6 },
+								["sourceQuests"] = { 10330 },	-- Shutting Down Manaforge Coruu
+							}),
+							q(10338, {	-- Shutting Down Manaforge Duro
+								["qg"] = 19468,	-- Spymaster Thalodien
+								["coord"] = { 32.0, 64.0 },
+								["sourceQuests"] = { 10200 },	-- Return to Thalodien
+							}),
+							q(10365, {	-- Shutting Down Manaforge Ara
+								["qg"] = 19468,	-- Spymaster Thalodien
+								["coord"] = { 32.0, 64.0 },
+								["sourceQuests"] = { 10338 },	-- Shutting Down Manaforge Duro
+							}),
+							q(10204, {	-- Bloodgem Crystals
+								["qg"] = 19469,	-- Magistrix Larynna
+								["coord"] = { 32.0, 64.0 },
+								["sourceQuests"] = { 10189 },	-- Manaforge B'naar
+								-- Unsure if this is optional or skippable.
+								-- I didn't list it as a s.ource for anything because nothing directly popped up after it.
+							}),
+							q(10264, {	-- Assisting the Consortium
+								["qg"] = 19468,	-- Spymaster Thalodien
+								["races"] = { 4, 10 },	-- Night Elf & Blood Elf
+								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
+								-- May have other/different s.ources; can't check because this quest was unavailable on the race I quested on.
+								["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
+							}),
+						},
+						["collectible"] = false,
+					}),
+					{			-- Abjurist Belmara
+						["qg"] = 19546,	-- Abjurist Belmara
+						["itemID"] = 29234,	-- Belmara's Tome
+						["questID"] = 10305,	-- Abjurist Belmara
+					},
 					q( 10185, {	-- A Fate Worse Than Death
 						["groups"] = {
 							i(29955),	-- Mana Infused Wristguards
@@ -84,11 +323,11 @@ _.Zones =
 						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["sourceQuests"] = { 10248 },	-- You, Robot
 					}),
-					i( 29233, {	-- Dathric's Blade
-						q( 10182, {	-- Battle-Mage Dathric
-							["qg"] = 19543,	-- Battle-Mage Dathric
-						}),
-					}),
+					{			-- Dathric's Blade
+						["qg"] = 19543,	-- Battle-Mage Dathric
+						["itemID"] = 29233,	-- Dathric's Blade
+						["questID"] = 10182,	-- Dathric's Blade
+					},
 					q( 10924, {	-- Bloody Imp-ossible!
 						["qg"] = 22479,	-- Sab'aoth
 					}),
@@ -122,16 +361,16 @@ _.Zones =
 						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuests"] = { 10314 },	-- A Lingering Suspicion
 					}),
-					i( 29236, {	-- Cohlien's Cap
-						q(10307, {	-- Cohlien Frostweaver
-							["qg"] = 19545,	-- Cohlien Frostweaver
-						}),
-					}),
-					i( 29235, {	-- Luminrath's Mantle
-						q( 10306, {	-- Conjurer Luminrath
-							["qg"] = 19544,	-- Conjurer Luminrath
-						}),
-					}),
+					{			-- Cohlien Frostweaver
+						["qg"] = 19545,	-- Cohlien Frostweaver
+						["itemID"] = 29236,	-- Cohlien's Cap
+						["questID"] = 10307,	-- Cohlien Frostweaver
+					},
+					{			-- Conjurer Luminrath
+						["qg"] = 19544,	-- Conjurer Luminrath
+						["itemID"] = 29235,	-- Luminrath's Mantle
+						["questID"] = 10306,	-- Conjurer Luminrath
+					},
 					q( 10427, {	-- Creatures of the Eco-Domes
 						["qg"] = 20871,	-- Aurine Moonblaze
 						["sourceQuests"] = { 10426 },	-- Flora of the Eco-Domes
@@ -530,14 +769,14 @@ _.Zones =
 						},
 						["qg"] = 20551,	-- Agent Araxes
 					}),
-					i( 29738, {	-- Vial of Void Horror Ooze
-						q(10413, {	-- The Horrors of Pollution
-							["groups"] = {
-								i(30338),	-- Diviner's Cloak
-							},
-							["qg"] = 20779,	-- Congealed Void Horror
-						}),
-					}),
+					{			-- The Horrors of Pollution
+						["g"] = {
+							i(30338),	-- Diviner's Cloak
+						},
+						["qg"] = 20779,	-- Congealed Void Horror
+						["itemID"] = 29738,	-- Vial of Void Horror Ooze
+						["questID"] = 10413,	-- The Horrors of Pollution
+					},
 					q( 10336, {	-- The Minions of Culuthas
 						["qg"] = 20471,	-- Nether-Stalker Nauthis
 					}),
@@ -619,192 +858,23 @@ _.Zones =
 							i(30515),	-- Junior Technician 3rd Grade Goggles
 						},
 						["qg"] = 19570,	-- Rocket-Chief Fuselage
-						["sourceQuests"] = { 39201 },	-- Warchief's Command: Netherstorm!
+						["sourceQuests"] = {
+							39202,	-- Hero's Call: Netherstorm!
+							39201,	-- Warchief's Command: Netherstorm!
+						},
 					}),
 					q( 10248, {	-- You, Robot
 						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["sourceQuests"] = { 10247 },	-- Doctor Vomisa, Ph.T.
 					}),
 				-- q(10850),	-- Nether Gas In a Fel Fire Engine (doesn't ever register as completed and irrelevant, it's only part of "Fel Reavers, No Thanks!")
--- DUNGEON QUESTS
+					-- DUNGEON QUESTS
 					qdg(q( 10257, {	-- Capturing the Keystone (awarded "The Violet Tower" criteria)
 						["qg"] = 19481,	-- Archmage Vargoth
 						["sourceQuests"] = { 10256 },	-- Finding the Keymaster
 					})),
--- FACTION QUESTS					
-					faction(932, {	-- The Aldor
-						["groups"] = {
-							q(10263, {	-- Assisting the Consortium
-								["qg"] = 19467,	-- Anchorite Karja
-								["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-							}),
-							q(10241, {	-- Distraction at Manaforge B'naar
-								["qg"] = 19466,	-- Exarch Orelis
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-								["sourceQuests"] = { 11038 },	-- Assist Exarch Orelis
-							}),
-							q(10313, {	-- Measuring Warp Energies
-								["groups"] = {
-									i(30362),	-- Energized Helm
-									i(30363),	-- Warp-Shielded Hauberk
-									i(30364),	-- Resonating Axe
-									i(30521),	-- Warpweaver's Gloves
-								},
-								["qg"] = 19466,	-- Exarch Orelis
-								["sourceQuests"] = { 10241 },	-- Distraction at Manaforge B'naar
-							}),
-							q(10243, {	-- Naaru Technology
-								["qg"] = 19467,	-- Anchorite Karja
-								["sourceQuests"] = { 10241 },	-- Distraction at Manaforge B'naar
-							}),
-							o(183770, {	-- B'naar Control Console
-								q(10245, {	-- B'naar Console Transcription
-									["sourceQuests"] = { 10243 },	-- Naaru Technology
-								}),
-							}),
-							q(10299, {	-- Shutting Down Manaforge B'naar
-								["qg"] = 19467,	-- Anchorite Karja
-								["sourceQuests"] = { 10245 },	-- B'naar Console Transcription
-							}),
-							q(10246, {	-- Attack on Manaforge Coruu
-								["qg"] = 19466,	-- Exarch Orelis
-								["sourceQuests"] = { 10299 },	-- Shutting Down Manaforge B'naar
-							}),
-							q(10321, {	-- Shutting Down Manaforge Coruu
-								["qg"] = 19467,	-- Anchorite Karja
-								["sourceQuests"] = { 10299 },	-- Shutting Down Manaforge B'naar
-							}),
-							q(10322, {	-- Shutting Down Manaforge Duro
-								["qg"] = 19467,	-- Anchorite Karja
-								["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
-							}),
-							q(10323, {	-- Shutting Down Manaforge Ara
-								["qg"] = 19467,	-- Anchorite Karja
-								["sourceQuests"] = { 10322 },	-- Shutting Down Manaforge Duro
-							}),
-							q(10328, {	-- Sunfury Briefings
-								["qg"] = 19466,	-- Exarch Orelis
-								["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
-							}),
-							q(10431, {	-- Outside Assistance
-								["qg"] = 19466,	-- Exarch Orelis
-								["sourceQuests"] = { 10328 },	-- Sunfury Briefings
-							}),
-							q(10380, {	-- A Dark Pact
-								["qg"] = 20780,	-- Kaylaan
-								["sourceQuests"] = { 10431 },	-- Outside Assistance
-							}),
-							q(10381, {	-- Aldor No More
-								["groups"] = {
-									i(30382),	-- Aldor Ceremonial Wraps
-									i(30379),	-- Vindicator's Light Vest
-									i(30381),	-- Kaylaan's Spaulders
-									i(30380),	-- Girdle of the Lost Vindicator
-								},
-								["qg"] = 20780,	-- Kaylaan
-								["sourceQuests"] = { 10380 },	-- A Dark Pact
-							}),
-							q(10407, {	-- Socrethar's Shadow
-								["qg"] = 19467,	-- Anchorite Karja
-								["sourceQuests"] = { 10323, 10381 },	-- Shutting Down Manaforge Ara & Aldor No More
-							}),
-							q(10410, {	-- Ishanah's Help
-								["qg"] = 19467,	-- Anchorite Karja
-								["sourceQuests"] = { 10407 },	-- Socrethar's Shadow
-							}),
-						},
-						["collectible"] = false,
-					}),
-					faction(933, {	-- The Consortium
-						["groups"] = {
-							q( 10265, {	-- Consortium Crystal Collection
-								["qg"] = 19880,	-- Nether-Stalker Khay'ji
-							}),
-							q( 10262, {	-- A Heap of Ethereals
-								["qg"] = 19880,	-- Nether-Stalker Khay'ji
-								["sourceQuests"] = { 10265 },	-- Consortium Crystal Collection
-							}),
-							qr(q(10308, {	-- Another Heap of Ethereals
-								["qg"] = 19880,	-- Nether-Stalker Khay'ji
-								["description"] = "Gives reputation through Exalted.",
-								["sourceQuests"] = { 10262 },	-- A Heap of Ethereals
-							})),
-							q( 10969, {	-- Seek Out Ameer
-								["qg"] = 22899,	-- Protectorate Advisor Rahim
-								["description"] = "Requires Honored with The Consortium.",
-								["isBreadcrumb"] = true, 	-- for "A Mission of Mercy"
-							}),
-							q( 10970, {	-- A Mission of Mercy
-								["qg"] = 20448,	-- Commander Ameer
-								["description"] = "Requires Honored with The Consortium.",
-							}),
-							q( 10971, {	-- Ethereum Secrets
-								["qg"] = 20448,	-- Commander Ameer
-								["sourceQuests"] = { 10970 },	-- A Mission of Mercy
-							}),
-							qr(q(10972, {	-- Ethereum Prisoner I.D. Catalogue
-								["qg"] = 20448,	-- Commander Ameer
-								["description"] = "Gives reputation through Exalted.",
-								["sourceQuests"] = { 10971},	-- Ethereum Secrets
-							})),
-							q( 10973, {	-- A Thousand Worlds
-								["qg"] = 20448,	-- Commander Ameer
-								["description"] = "Requires Revered with The Consortium.",
-							}),
-							q( 10974, {	-- Stasis Chambers of Bash'ir
-								["qg"] = 20448,	-- Commander Ameer
-								["sourceQuests"] = { 10973 },	-- A Thousand Worlds
-							}),
-						},
-						["collectible"] = false,
-					}),
-					faction(934, {	-- The Scryers
-						["groups"] = {
-							q( 10264, {	-- Assisting the Consortium
-								["qg"] = 19468,	-- Spymaster Thalodien
-								["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
-							}),
-							q( 11039),	-- Report to Spymaster Thalodien
-							q( 10189),	-- Manaforge B'naar
-							q( 10193),	-- High Value Targets
-							q( 10329),	-- Shutting Down Manaforge B'naar
-							q( 10194),	-- Stealth Flight
-							q( 10652),	-- Behind Enemy Lines
-							q( 10197),	-- A Convincing Disguise
-							q( 10198, {	-- Information Gathering - Scryer
-								i(30397),
-								i(30383),
-								i(30384),
-								i(30386),
-							}),
-							q( 10330),	-- Shutting Down Manaforge Coruu
-							q( 10200),	-- Return to Thalodien
-							q( 10338),	-- Shutting Down Manaforge Duro
-							q( 10365),	-- Shutting Down Manaforge Ara
-							q( 10341, {	-- Kick Them While They're Down - Scryer
-								i(30395),
-								i(30394),
-								i(30396),
-								i(30522),
-							}),
-							q( 10202),	-- A Defector
-							q( 10432),	-- Damning Evidence
-							q( 10508),	-- A Gift for Voren'thal
-							q( 10509),	-- Bound for Glory
-							q( 10507, {	-- Turning Point - Scryer
-								i(30375),
-								i(30372),
-								i(30373),
-								i(30374),
-								i(30859),
-							}),
-							q( 10204),	-- Bloodgem Crystals
-						},
-						["collectible"] = false,
-					}),
 				}),	
-				n(-16, {	-- Rares	
+				n(-16,  {	-- Rares	
 					n(18697, { 	-- Chief Engineer Lorthander
 						i(31201),
 					}),
@@ -824,7 +894,7 @@ _.Zones =
 						i(31209),
 					}),
 				}),
-				n( -2, {	-- Vendors
+				n(-2,   {	-- Vendors
 					n(19540, {	-- Asarnan <Enchanting Trainer>
 						i(20753),    -- Formula: Lesser Wizard Oil
 						i(20752),    -- Formula: Minor Mana Oil
@@ -2617,17 +2687,9 @@ _.Zones =
 						i(30755),	-- Mag'hari Fighting Claw
 					}),
 				}),
-				n(0, { -- Zone Drop
-					["groups"] = {
-						n(18873, { -- Disembodied Protector
-							["groups"] = {
-								i(23610), -- Plans: Khorium Boots
-							},
-						}),
-						n(18872, {	-- Disembodied Vindicator
-							dr(0.05, i(21919)),	-- Pattern: Primal Mooncloth Bag
-						}),
-						i(29460, {	-- Ethereum Prison Key (required to summon/"release" mobs)
+				n(0,    {	-- Zone Drop
+					i(29460, {	-- Ethereum Prison Key (required to summon/"release" mobs)
+						["g"] = {
 							n(20520, {	-- Ethereum Prisoner (multiple named mobs with the same ID once spawned)
 								dr(01.5, i(31581)),	-- Slatesteel Boots
 								dr(01.4, i(31565)),	-- Skystalker's Boots
@@ -2647,22 +2709,36 @@ _.Zones =
 								dr(00.9, i(31925)),	-- Fiery Band
 								dr(00.9, i(31927)),	-- Living Band
 							}),
-						}),
-						i(23639, { -- Plans: Greater Ward of Shielding
-							["crs"] = {
-								18856, -- Arcane Annihilator
-								18853, -- Sunfury Bloodwarder
-							},
-						}),
-						n(20134, {	-- Sunfury Arcanist
-							dr(0.06, i(21911)),	-- Pattern: Spellfire Bag
-						}),
-						n(20136, {	-- Sunfury Researcher
-							dr(2, i(22551)),	-- Formula: Enchant Weapon - Major Intellect
-						}),
-					},
-					["description"] = "Ethereum Prison Key, a fairly common drop in Heroic Mana-Tombs, can be used to open prisons west of Manaforge Ultris in Netherstorm.  There is a chance that one of these mobs will be released when you open a prison.  To loot Ethereum Prison Keys, you must first complete the quest 'A Mission of Mercy' in Netherstorm.",
-					["sourceQuests"] = { 10970 },	-- A Mission of Mercy (required to be able to find the prison keys)
+						},
+						["description"] = "Ethereum Prison Key, a fairly common drop in Heroic Mana-Tombs, can be used to open prisons west of Manaforge Ultris in Netherstorm.  There is a chance that one of these mobs will be released when you open a prison.  To loot Ethereum Prison Keys, you must first complete the quest 'A Mission of Mercy' in Netherstorm.",
+						["sourceQuests"] = { 10970 },	-- A Mission of Mercy (required to be able to find the prison keys)
+					}),
+					i(22551, {	-- Formula: Enchant Weapon - Major Intellect
+						["crs"] = {
+							20136,	-- Sunfury Researcher
+						},
+					}),
+					i(21919, {	-- Pattern: Primal Mooncloth Bag
+						["crs"] = {
+							18872,	-- Disembodied Vindicator
+						},
+					}),
+					i(21911, {	-- Pattern: Spellfire Bag
+						["crs"] = {
+							20134,	-- Sunfury Arcanist
+						},
+					}),
+					i(23639, {	-- Plans: Greater Ward of Shielding
+						["crs"] = {
+							18856, -- Arcane Annihilator
+							18853, -- Sunfury Bloodwarder
+						},
+					}),
+					i(23610, {	-- Plans: Khorium Boots
+						["crs"] = {
+							18873,	-- Disembodied Protector
+						},
+					}),
 				}),
 			},
 			["lvl"] = 67,	

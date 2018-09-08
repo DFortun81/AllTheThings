@@ -404,9 +404,9 @@ _.Zones =
 					}),
 					qh(824, { -- Je'neu of the Earthen Ring
 						["groups"] = {
-							un(2, i(16659)),	-- Deftkin Belt
-							un(2, i(16660)),	-- Driftmire Shield
-							un(2, i(16661)),	-- Soft Willow Cape
+							i(16659),	-- Deftkin Belt
+							i(16660),	-- Driftmire Shield
+							i(16661),	-- Soft Willow Cape
 							i(131216),	-- Nimblereed Chain
 						},
 						["qg"] = 12737, -- Mastok Wrilehiss

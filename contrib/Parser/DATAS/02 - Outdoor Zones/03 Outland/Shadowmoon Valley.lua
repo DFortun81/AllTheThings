@@ -20,7 +20,7 @@ _.Zones =
 						["coord"] = { 37.6, 55.4 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  {	-- Pet Battle
 					p(425), 	-- Ash Viper
 					p(519), 	-- Fel Flame
 					p(414), 	-- Scorpid
@@ -35,7 +35,297 @@ _.Zones =
 						i(89125),	-- Sack of Pet Supplies
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(-17,  {	-- Quests
+					faction(932,  {	-- The Aldor
+						["groups"] = {
+							q(10619, {	-- The Ashtongue Tribe
+								["qg"] = 21822,	-- Vindicator Aluumen
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							q(10816, {	-- Reclaiming Holy Ground
+								["groups"] = {
+									i(30940),	-- Aged Leather Bindings
+									i(30961),	-- Ash-Covered Helm
+									i(30922),	-- Ata'mai Crown
+									i(30958),	-- Blackened Chain Greaves
+								},
+								["qg"] = 21822,	-- Vindicator Aluumen
+								["sourceQuests"] = { 10619 },	-- The Ashtongue Tribe
+							}),
+							q(10587, {	-- Karabor Training Grounds
+								["qg"] = 21860,	-- Exarch Onaala
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							q(10637, {	-- A Necessary Distraction
+								["qg"] = 21860,	-- Exarch Onaala
+								["sourceQuests"] = { 10587 },	-- Karabor Training Grounds
+							}),
+							q(10640, {	-- Altruis
+								["qg"] = 21860,	-- Exarch Onaala
+								["sourceQuests"] = { 10637 },	-- A Necessary Distraction
+							}),
+							q(10651, {	-- Varedis Must Be Stopped (awarded "Borrowed Power" criteria)
+								["groups"] = {
+									i(31013),	-- Ceremonial Kris
+									i(30933),	-- Hauberk of Karabor
+									i(31010),	-- Slayer's Axe
+									i(31002),	-- Summoner's Blade
+									i(30948),	-- Sunfury Legguards
+									i(31009),	-- Wildcaller
+								},
+								["qg"] = 21860,	-- Exarch Onaala
+								["sourceQuests"] = { 10650 },  	-- Return to the Aldor
+							}),
+							q(10568, {	-- Tablets of Baa'ri
+								["qg"] = 21402,	-- Anchorite Ceyla
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							}),
+							q(10571, {	-- Oronu the Elder
+								["qg"] = 21402,	-- Anchorite Ceyla
+								["sourceQuests"] = { 10568 },	-- Tablets of Baa'ri
+							}),
+							q(10574, {	-- The Ashtongue Corruptors
+								["qg"] = 21402,	-- Anchorite Ceyla
+								["sourceQuests"] = { 10571 },	-- Oronu the Elder
+							}),
+							q(10575, {	-- The Warden's Cage
+								["qg"] = 21402,	-- Anchorite Ceyla
+								["sourceQuests"] = { 10574 },	-- The Ashtongue Corruptors
+							}),
+							q(10622, {	-- Proof of Allegiance
+								["qg"] = 21826,	-- Sanoru
+								["sourceQuests"] = { 10575 },	-- The Warden's Cage
+							}),
+							q(10628, {	-- Akama
+								["qg"] = 21826,	-- Sanoru
+								["sourceQuests"] = { 10622 },	-- Proof of Allegiance
+							}),
+							qdg(q(10705, {	-- Seer Udalo
+								["qg"] = 21700,	-- Akama
+								["sourceQuests"] = { 10628 },	-- Akama
+							})),
+							q(10707, {	-- The Ata'mal Terrace
+								["qg"] = 21770,	-- Akama
+								["sourceQuests"] = { 10706 },	-- A Mysterious Portent
+							}),
+							q(10708, {	-- Akama's Promise (awarded "Akama's Promise" criteria)
+								["groups"] = {
+									i(30932),	-- Akama's Sash
+									i(30999),	-- Ashtongue Blade
+									i(31000),	-- Bloodwarder's Rifle
+									i(30943),	-- Verdant Gloves
+									i(30984),	-- Spellbreaker's Buckler
+									i(31417),	-- Staff of the Ashtongue Deathsworn
+								},
+								["qg"] = 21700,	-- Akama
+								["sourceQuests"] = { 10707 },	-- The Ata'mal Terrace
+							}),
+							qr(q(10828, {	-- Single Mark of Sargeras
+								["qg"] = 22214,	-- Harbinger Saronen
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							})),
+							qr(q(10827, {	-- More Marks of Sargeras
+								["qg"] = 22214,	-- Harbinger Saronen
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+							})),
+						},
+						["collectible"] = false,
+					}),
+					faction(1015, {	-- Netherwing
+						q( 10804, {	-- Kindness
+							["qg"] = 22113,	-- Mordenai
+						}),
+						q( 10811, {	-- Seek Out Neltharaku
+							["qg"] = 22113,	-- Mordenai
+							["sourceQuests"] = { 10804 },	-- Kindness
+						}),
+						q( 10814, {	-- Neltharaku's Tale
+							["qg"] = 21657,	-- Neltharaku
+							["sourceQuests"] = { 10811 },	-- Seek Out Neltharaku
+						}),
+						q( 10836, {	-- Infiltrating Dragonmaw Fortress
+							["qg"] = 21657,	-- Neltharaku
+							["sourceQuests"] = { 10814 },	-- Neltharaku's Tale
+						}),
+						q( 10837, {	-- To Netherwing Ledge!
+							["qg"] = 21657,	-- Neltharaku
+							["sourceQuests"] = { 10836 },	-- Infiltrating Dragonmaw Fortress
+						}),
+						q( 10854, {	-- The Force of Neltharaku
+							["qg"] = 21657,	-- Neltharaku
+							["sourceQuests"] = { 10837 },	-- To Netherwing Ledge!
+						}),
+						q( 10858, {	-- Karynaku
+							["qg"] = 21657,	-- Neltharaku
+							["sourceQuests"] = { 10854 },	-- The Force of Neltharaku
+						}),
+						q( 10866, {	-- Zuluhed the Whacked
+							["qg"] = 22112,	-- Karynaku
+							["sourceQuests"] = { 10858 },	-- Karynaku
+						}),
+						q( 10870, {	-- Ally of the Netherwing *** (may have awarded "Netherwing Ledge" criteria - "The First Death Knight" popped up again and "NL" wasn't checked off, but this is the quest that gives you Neutral with Netherwing)
+							["groups"] = {
+								i(31492),	-- Claw of the Netherwing Flight
+								i(31491),	-- Netherwing Defender's Shield
+								i(31490),	-- Netherwing Protector's Shield
+								i(31494),	-- Netherwing Sorceror's Charm
+								i(31493),	-- Netherwing Spiritualist's Charm
+							},
+							["qg"] = 22112,	-- Karynaku
+							["sourceQuests"] = { 10866 },	-- Zuluhed the Whacked
+						}),
+						q( 11012, {	-- Blood Oath of the Netherwing
+							["qg"] = 22113,	-- Mordenai
+							["sourceQuests"] = { 10870 },	-- Ally of the Netherwing
+						}),
+						q( 11013, {	-- In Service of the Illidari
+							["qg"] = 22113,	-- Mordenai
+							["sourceQuests"] = { 11012 },	-- Blood Oath of the Netherwing
+						}),
+						q( 11014, {	-- Enter the Taskmaster
+							["qg"] = 23139,	-- Overlord Mor'ghor
+							["sourceQuests"] = { 11013 },	-- In Service of the Illidari
+						}),
+						q( 11015, {	-- Netherwing Crystals
+							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
+							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
+						}),
+						q( 11018, {	-- Nethercite Ore
+							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
+							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
+							["requireSkill"] = 186,	-- Mining
+						}),
+						q( 11016, {	-- Nethermine Flayer Hide
+							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
+							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
+							["requireSkill"] = 393,	-- Skinning
+						}),
+						q( 11017, {	-- Netherdust Pollen
+							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
+							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
+							["requireSkill"] = 182,	-- Herbalism
+						}),
+						q( 11019, {	-- Your Friend On The Inside
+							["qg"] = 23141,	-- Yarzill the Merc
+							["sourceQuests"] = { 11013 },	-- In Service of the Illidari
+						}),
+						q( 11049, {	-- The Great Netherwing Egg Hunt
+							["qg"] = 23141,	-- Yarzill the Merc
+							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
+						}),
+						qr(q(11050, {	-- Accepting All Eggs
+							["qg"] = 23141,	-- Yarzill the Merc
+							["sourceQuests"] = { 11050 },	-- The Great Netherwing Egg Hunt
+						})),
+						q( 11020, {	-- A Slow Death
+							["qg"] = 23141,	-- Yarzill the Merc
+							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
+						}),
+						q( 11035, {	-- The Not-So-Friendly Skies...
+							["qg"] = 23141,	-- Yarzill the Merc
+							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
+						}),
+						q( 11041, {	-- A Job Unfinished... (may have awarded "Netherwing Ledge" criteria, "The First Death Knight" popped for a third time after this one but "NL" actually checked off)
+							["groups"] = {
+								i(32866),	-- Ascendant's Boots
+								i(32867),	-- Dragonmaw Augur's Cinch
+								i(32865),	-- Drake Tamer's Gloves
+								i(32868),	-- Skybreaker's Mantle
+							},
+							["qg"] = 23267,	-- Arvoar the Rapacious
+							-- ["sourceQuests"] = {  },	-- UNKNOWN IF HAS SOURCE
+						}),
+						
+						
+						
+						q( 11083),	-- Crazed and Confused
+						q( 11081),	-- The Great Murkblood Revolt
+						q( 11054),	-- Overseeing and You: Making the Right Choices
+						q( 11076),	-- Picking Up The Pieces...
+						q( 11077),	-- Dragons are the Least of Our Problems
+						q( 11055),	-- The Booterang: A Cure For The Common Worthless Peon
+						qh(11063),	-- Earning Your Wings... (all quests may be for both factions)
+						qh(11071),	-- Dragonmaw Race: Captain Skyshatter
+						qh(11068),	-- Dragonmaw Race: Corlok the Vet
+						qh(11064),	-- Dragonmaw Race: The Ballad of Oldie McOld
+						qh(11067),	-- Dragonmaw Race: Trope the Filth-Belcher
+						qh(11069),	-- Dragonmaw Race: Wing Commander Ichman
+						qh(11070),	-- Dragonmaw Race: Wing Commander Mulverick
+						q( 11089),	-- The Soul Cannon of Reth'hedron
+						q( 11086),	-- Disrupting the Twilight Portal
+						q( 11099, {	-- Kill Them All!
+							["description"] = "For players aligned with The Aldor.",
+						}),
+						q( 11094, {	-- Kill Them All!
+							["description"] = "For players aligned with The Scryers.",
+						}),
+						q( 11101, {	-- The Deadliest Trap Ever Laid
+							["description"] = "For players aligned with The Aldor.",
+						}),
+						q( 11097, {	-- The Deadliest Trap Ever Laid
+							["description"] = "For players aligned with The Scryers.",
+						}),
+					}),
+					faction(934,  {	-- The Scryers
+						["groups"] = {
+							q(10807, {	-- The Ashtongue Broken
+								["qg"] = 21953,	-- Varen the Reclaimer
+								["coord"] = { 54.7, 58.1 },
+								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
+							}),
+							q(10687, {	-- Karabor Training Grounds
+								["qg"] = 21954,	-- Larissa Sunstrike
+								["coord"] = { 55.7, 58.1 },
+								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
+							}),
+							q(10683, {	-- Tablets of Baa'ri
+								["qg"] = 21955,	-- Arcanist Thelis
+								["coord"] = { 56.2, 59.6 },
+								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
+							}),
+
+
+
+							q(10688),	-- A Necessary Distraction
+							q(10689),	-- Altruis
+							q(10684),	-- Oronu the Elder
+							q(10691),	-- Return to the Scryers
+							q(10685),	-- The Ashtongue Corruptors
+							q(10686),	-- The Warden's Cage
+							q(10692, {	-- Varedis Must Be Stopped
+								i(31013),
+								i(30933),
+								i(31010),
+								i(31002),
+								i(30948),
+								i(31009),
+							}),
+							q(10817, {	-- The Great Retribution
+								i(30940),
+								i(30961),
+								i(30922),
+								i(30958),
+							}),
+							q(10824, {	-- Sunfury Signets
+								["qg"] = 22211,	-- Battlemage Vyara
+								["coord"] = { 56.2, 58.7 },
+								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
+							}),
+							q(10823, {	-- More Sunfury Signets
+								["qg"] = 22211,	-- Battlemage Vyara
+								["coord"] = { 56.2, 58.7 },
+								["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (in SMV OR in Shattrath)
+							}),
+							q(10822, {	-- Single Sunfury Signet
+								["qg"] = 22211,	-- Battlemage Vyara
+								["coord"] = { 56.2, 58.7 },
+								["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (in SMV OR in Shattrath)
+							}),
+						},
+						["collectible"] = false,
+					}),
+					
+					
 					qh(10702, {	-- A Grunt's Work...
 						["qg"] = 21769,	-- Overlord Or'barokh
 					}),
@@ -537,7 +827,6 @@ _.Zones =
 					q( 11108),	-- Lord Illidan Stormrage
 					q( 10826),	-- Marks of Sargeras
 					qa(10582),	-- Minions of the Shadow Council
-					q( 10823),	-- More Sunfury Signets
 					qa(10744, {	-- News of Victory
 						i(30924),
 					}),
@@ -547,7 +836,6 @@ _.Zones =
 					q( 10958),	-- Seek Out the Ashtongue
 					q( 11082),	-- Seeker of Truth
 					qa(10572),	-- Setting Up the Bomb
-					q( 10822),	-- Single Sunfury Signet
 					qa(10661),	-- Spleendid!
 					q( 11084),	-- Stand Tall, Captain!
 					q( 11090, {	-- Subdue the Subduer
@@ -594,271 +882,11 @@ _.Zones =
 						i(31115),
 					}),
 					qa(11045),	-- Zorus the Judicator
-
-					faction( 932, {	-- The Aldor
-						["groups"] = {
-							qr(q(10828, {	-- Single Mark of Sargeras
-								["qg"] = 22214,	-- Harbinger Saronen
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-							})),
-							qr(q(10827, {	-- More Marks of Sargeras
-								["qg"] = 22214,	-- Harbinger Saronen
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-							})),
-							q(10619, {	-- The Ashtongue Tribe
-								["qg"] = 21822,	-- Vindicator Aluumen
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-							}),
-							q(10816, {	-- Reclaiming Holy Ground
-								["groups"] = {
-									i(30940),	-- Aged Leather Bindings
-									i(30961),	-- Ash-Covered Helm
-									i(30922),	-- Ata'mai Crown
-									i(30958),	-- Blackened Chain Greaves
-								},
-								["qg"] = 21822,	-- Vindicator Aluumen
-								["sourceQuests"] = { 10619 },	-- The Ashtongue Tribe
-							}),
-							q(10587, {	-- Karabor Training Grounds
-								["qg"] = 21860,	-- Exarch Onaala
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-							}),
-							q(10637, {	-- A Necessary Distraction
-								["qg"] = 21860,	-- Exarch Onaala
-								["sourceQuests"] = { 10587 },	-- Karabor Training Grounds
-							}),
-							q(10640, {	-- Altruis
-								["qg"] = 21860,	-- Exarch Onaala
-								["sourceQuests"] = { 10637 },	-- A Necessary Distraction
-							}),
-							q(10651, {	-- Varedis Must Be Stopped (awarded "Borrowed Power" criteria)
-								["groups"] = {
-									i(31013),	-- Ceremonial Kris
-									i(30933),	-- Hauberk of Karabor
-									i(31010),	-- Slayer's Axe
-									i(31002),	-- Summoner's Blade
-									i(30948),	-- Sunfury Legguards
-									i(31009),	-- Wildcaller
-								},
-								["qg"] = 21860,	-- Exarch Onaala
-								["sourceQuests"] = { 10650 },  	-- Return to the Aldor
-							}),
-							q(10568, {	-- Tablets of Baa'ri
-								["qg"] = 21402,	-- Anchorite Ceyla
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-							}),
-							q(10571, {	-- Oronu the Elder
-								["qg"] = 21402,	-- Anchorite Ceyla
-								["sourceQuests"] = { 10568 },	-- Tablets of Baa'ri
-							}),
-							q(10574, {	-- The Ashtongue Corruptors
-								["qg"] = 21402,	-- Anchorite Ceyla
-								["sourceQuests"] = { 10571 },	-- Oronu the Elder
-							}),
-							q(10575, {	-- The Warden's Cage
-								["qg"] = 21402,	-- Anchorite Ceyla
-								["sourceQuests"] = { 10574 },	-- The Ashtongue Corruptors
-							}),
-							q(10622, {	-- Proof of Allegiance
-								["qg"] = 21826,	-- Sanoru
-								["sourceQuests"] = { 10575 },	-- The Warden's Cage
-							}),
-							q(10628, {	-- Akama
-								["qg"] = 21826,	-- Sanoru
-								["sourceQuests"] = { 10622 },	-- Proof of Allegiance
-							}),
-							qdg(q(10705, {	-- Seer Udalo
-								["qg"] = 21700,	-- Akama
-								["sourceQuests"] = { 10628 },	-- Akama
-							})),
-							q(10707, {	-- The Ata'mal Terrace
-								["qg"] = 21770,	-- Akama
-								["sourceQuests"] = { 10706 },	-- A Mysterious Portent
-							}),
-							q(10708, {	-- Akama's Promise (awarded "Akama's Promise" criteria)
-								["groups"] = {
-									i(30932),	-- Akama's Sash
-									i(30999),	-- Ashtongue Blade
-									i(31000),	-- Bloodwarder's Rifle
-									i(30943),	-- Verdant Gloves
-									i(30984),	-- Spellbreaker's Buckler
-									i(31417),	-- Staff of the Ashtongue Deathsworn
-								},
-								["qg"] = 21700,	-- Akama
-								["sourceQuests"] = { 10707 },	-- The Ata'mal Terrace
-							}),
-						},
-						["collectible"] = false,
-					}),
-					faction(1015, {	-- Netherwing
-						q( 10804, {	-- Kindness
-							["qg"] = 22113,	-- Mordenai
-						}),
-						q( 10811, {	-- Seek Out Neltharaku
-							["qg"] = 22113,	-- Mordenai
-							["sourceQuests"] = { 10804 },	-- Kindness
-						}),
-						q( 10814, {	-- Neltharaku's Tale
-							["qg"] = 21657,	-- Neltharaku
-							["sourceQuests"] = { 10811 },	-- Seek Out Neltharaku
-						}),
-						q( 10836, {	-- Infiltrating Dragonmaw Fortress
-							["qg"] = 21657,	-- Neltharaku
-							["sourceQuests"] = { 10814 },	-- Neltharaku's Tale
-						}),
-						q( 10837, {	-- To Netherwing Ledge!
-							["qg"] = 21657,	-- Neltharaku
-							["sourceQuests"] = { 10836 },	-- Infiltrating Dragonmaw Fortress
-						}),
-						q( 10854, {	-- The Force of Neltharaku
-							["qg"] = 21657,	-- Neltharaku
-							["sourceQuests"] = { 10837 },	-- To Netherwing Ledge!
-						}),
-						q( 10858, {	-- Karynaku
-							["qg"] = 21657,	-- Neltharaku
-							["sourceQuests"] = { 10854 },	-- The Force of Neltharaku
-						}),
-						q( 10866, {	-- Zuluhed the Whacked
-							["qg"] = 22112,	-- Karynaku
-							["sourceQuests"] = { 10858 },	-- Karynaku
-						}),
-						q( 10870, {	-- Ally of the Netherwing *** (may have awarded "Netherwing Ledge" criteria - "The First Death Knight" popped up again and "NL" wasn't checked off, but this is the quest that gives you Neutral with Netherwing)
-							["groups"] = {
-								i(31492),	-- Claw of the Netherwing Flight
-								i(31491),	-- Netherwing Defender's Shield
-								i(31490),	-- Netherwing Protector's Shield
-								i(31494),	-- Netherwing Sorceror's Charm
-								i(31493),	-- Netherwing Spiritualist's Charm
-							},
-							["qg"] = 22112,	-- Karynaku
-							["sourceQuests"] = { 10866 },	-- Zuluhed the Whacked
-						}),
-						q( 11012, {	-- Blood Oath of the Netherwing
-							["qg"] = 22113,	-- Mordenai
-							["sourceQuests"] = { 10870 },	-- Ally of the Netherwing
-						}),
-						q( 11013, {	-- In Service of the Illidari
-							["qg"] = 22113,	-- Mordenai
-							["sourceQuests"] = { 11012 },	-- Blood Oath of the Netherwing
-						}),
-						q( 11014, {	-- Enter the Taskmaster
-							["qg"] = 23139,	-- Overlord Mor'ghor
-							["sourceQuests"] = { 11013 },	-- In Service of the Illidari
-						}),
-						q( 11015, {	-- Netherwing Crystals
-							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
-							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-						}),
-						q( 11018, {	-- Nethercite Ore
-							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
-							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-							["requireSkill"] = 186,	-- Mining
-						}),
-						q( 11016, {	-- Nethermine Flayer Hide
-							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
-							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-							["requireSkill"] = 393,	-- Skinning
-						}),
-						q( 11017, {	-- Netherdust Pollen
-							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
-							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-							["requireSkill"] = 182,	-- Herbalism
-						}),
-						q( 11019, {	-- Your Friend On The Inside
-							["qg"] = 23141,	-- Yarzill the Merc
-							["sourceQuests"] = { 11013 },	-- In Service of the Illidari
-						}),
-						q( 11049, {	-- The Great Netherwing Egg Hunt
-							["qg"] = 23141,	-- Yarzill the Merc
-							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
-						}),
-						qr(q(11050, {	-- Accepting All Eggs
-							["qg"] = 23141,	-- Yarzill the Merc
-							["sourceQuests"] = { 11050 },	-- The Great Netherwing Egg Hunt
-						})),
-						q( 11020, {	-- A Slow Death
-							["qg"] = 23141,	-- Yarzill the Merc
-							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
-						}),
-						q( 11035, {	-- The Not-So-Friendly Skies...
-							["qg"] = 23141,	-- Yarzill the Merc
-							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
-						}),
-						q( 11041, {	-- A Job Unfinished... (may have awarded "Netherwing Ledge" criteria, "The First Death Knight" popped for a third time after this one but "NL" actually checked off)
-							["groups"] = {
-								i(32866),	-- Ascendant's Boots
-								i(32867),	-- Dragonmaw Augur's Cinch
-								i(32865),	-- Drake Tamer's Gloves
-								i(32868),	-- Skybreaker's Mantle
-							},
-							["qg"] = 23267,	-- Arvoar the Rapacious
-							-- ["sourceQuests"] = {  },	-- UNKNOWN IF HAS SOURCE
-						}),
-						
-						
-						
-						q( 11083),	-- Crazed and Confused
-						q( 11081),	-- The Great Murkblood Revolt
-						q( 11054),	-- Overseeing and You: Making the Right Choices
-						q( 11076),	-- Picking Up The Pieces...
-						q( 11077),	-- Dragons are the Least of Our Problems
-						q( 11055),	-- The Booterang: A Cure For The Common Worthless Peon
-						qh(11063),	-- Earning Your Wings... (all quests may be for both factions)
-						qh(11071),	-- Dragonmaw Race: Captain Skyshatter
-						qh(11068),	-- Dragonmaw Race: Corlok the Vet
-						qh(11064),	-- Dragonmaw Race: The Ballad of Oldie McOld
-						qh(11067),	-- Dragonmaw Race: Trope the Filth-Belcher
-						qh(11069),	-- Dragonmaw Race: Wing Commander Ichman
-						qh(11070),	-- Dragonmaw Race: Wing Commander Mulverick
-						q( 11089),	-- The Soul Cannon of Reth'hedron
-						q( 11086),	-- Disrupting the Twilight Portal
-						q( 11099, {	-- Kill Them All!
-							["description"] = "For players aligned with The Aldor.",
-						}),
-						q( 11094, {	-- Kill Them All!
-							["description"] = "For players aligned with The Scryers.",
-						}),
-						q( 11101, {	-- The Deadliest Trap Ever Laid
-							["description"] = "For players aligned with The Aldor.",
-						}),
-						q( 11097, {	-- The Deadliest Trap Ever Laid
-							["description"] = "For players aligned with The Scryers.",
-						}),
-					}),
-					faction( 934, {	-- The Scryers
-						["groups"] = {
-							q( 10688),	-- A Necessary Distraction
-							q( 10689),	-- Altruis
-							q( 10684),	-- Oronu the Elder
-							q( 10691),	-- Return to the Scryers
-							q( 10685),	-- The Ashtongue Corruptors
-							q( 10686),	-- The Warden's Cage
-							q( 10692, {	-- Varedis Must Be Stopped
-								i(31013),
-								i(30933),
-								i(31010),
-								i(31002),
-								i(30948),
-								i(31009),
-							}),
-							q( 10683),	-- Tablets of Baa'ri
-							q( 10807),	-- The Ashtongue Broken
-							q( 10824),	-- Sunfury Signets
-							q( 10687),	-- Karabor Training Grounds
-							q( 10817, {	-- The Great Retribution
-								i(30940),
-								i(30961),
-								i(30922),
-								i(30958),
-							}),
-						},
-						["collectible"] = false,
-					}),
 --					qh(11498),	-- Learning to Fly (REMOVED)
 --					qa(11497),	-- Learning to Fly (REMOVED)					
 --					q( 38845),	-- Unused (NEVER IMPLEMENTED)
 				}),	
-				n(-16, { 	-- Rares
+				n(-16,  {	-- Rares
 					n(18695, {	-- Ambassador Jerrikar
 						["groups"] = {
 							i(31224),
@@ -943,7 +971,7 @@ _.Zones =
 						dr(0.2, i(31680)),	-- Recipe: Fel Strength Elixir
 					}),
 				}),
-				n(-2, {		-- Vendors
+				n(-2,   {	-- Vendors
 					n(19521, {	-- Arrond <Tailoring Supplies>
 						i(21900), 	-- Pattern: Imbued Netherweave Robe
 						i(21901), 	-- Pattern: Imbued Netherweave Tunic
@@ -1003,7 +1031,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				n(0, { 		-- Zone Drop
+				n(0,    {	-- Zone Drop
 					["groups"] = {
 						n(20878, { -- Deathforge Guardian
 							["groups"] = {
