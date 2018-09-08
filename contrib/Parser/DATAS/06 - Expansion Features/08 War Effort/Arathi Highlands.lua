@@ -354,6 +354,17 @@ _.ExpansionFeatures =
 								22.91, 22.21
 							},
 						}),
+						n(141615, {	-- Burning Goliath
+							["groups"] = {
+								i(163691),	--  Burning Essence
+							},
+							["questID"] = 53506,
+							["repeatable"] = true,
+							["isDaily"] = true,
+							["coord"] = {
+								30.64, 44.74
+							},
+						}),
 						n(142688, {	-- Darbel Montrose
 							["groups"] = {
 								i(163652),	-- Tiny Grimoire
@@ -375,12 +386,13 @@ _.ExpansionFeatures =
 							["coord"] = {
 								53.81, 58.21
 							},
+							["races"] = ALLIANCE_ONLY,
 						}),
 						n(141668, {	-- Echo of Myzrael
 							["groups"] = {
 								i(163677),	-- Teeny Tiny Orb
 							},
-							--["questID"] = ,
+							["questID"] = 53508,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
@@ -391,11 +403,12 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163735),	-- Foulbelly
 							},
-							--["questID"] = ,
+							["questID"] = 53509,
 							["repeatable"] = true,
 							["isDaily"] = true,
-							["coord"] = {
-								23.11, 46.71
+							["coords"] = {
+								28.64, 45.66,	-- Cave Entrance
+								23.11, 46.71,	-- Foulbelly
 							},
 						}),
 						n(142433, {	-- Fozruk
@@ -490,11 +503,12 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163750),	-- Kovork Kostume
 							},
-							--["questID"] = ,
+							["questID"] = 53514,
 							["repeatable"] = true,
 							["isDaily"] = true,
-							["coord"] = {
-								25.01, 49.11
+							["coords"] = {
+								28.64, 45.66,	-- Cave Entrance
+								25.01, 49.11,	-- Kovork
 							},
 						}),
 						n(142716, {	-- Man-Hunter Rog
