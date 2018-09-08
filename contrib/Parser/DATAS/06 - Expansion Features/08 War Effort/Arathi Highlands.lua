@@ -287,7 +287,7 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163652),	-- Tiny Grimoire
 							},
-							--["questID"] = ,
+							["questID"] = 53507,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
@@ -331,7 +331,7 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163711),	-- Shard of Fozruk
 							},
-							--["questID"] = ,
+							["questID"] = 53510,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coords"] = {	-- Patrols, put start and ending path for coordinate plane.  Don't add anymore unless it's above the top point or below the bottom point
@@ -507,7 +507,7 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(163738),	-- Syndicate Mask
 							},
-							--["questID"] = ,
+							["questID"] = 53525,
 							["repeatable"] = true,
 							["isDaily"] = true,
 							["coord"] = {
