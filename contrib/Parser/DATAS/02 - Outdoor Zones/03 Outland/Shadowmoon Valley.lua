@@ -273,24 +273,51 @@ _.Zones =
 								["coord"] = { 54.7, 58.1 },
 								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
 							}),
+							q(10817, {	-- The Great Retribution
+								["g"] = {
+									i(30940),	-- Aged Leather Bindings
+									i(30961),	-- Ash-Covered Helm
+									i(30922),	-- Ata'mal Crown
+									i(30958),	-- Blackened Chain Greaves
+								},
+								["qg"] = 21953,	-- Varen the Reclaimer
+								["coord"] = { 54.7, 58.1 },
+								["sourceQuests"] = { 10807 },	-- The Ashtongue Broken
+							}),
 							q(10687, {	-- Karabor Training Grounds
 								["qg"] = 21954,	-- Larissa Sunstrike
 								["coord"] = { 55.7, 58.1 },
 								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
+							}),
+							q(10688, {	-- A Necessary Distraction
+								["qg"] = 21954,	-- Larissa Sunstrike
+								["coord"] = { 55.7, 58.1 },
+								["sourceQuests"] = { 10687 },	-- Karabor Training Grounds
+							}),
+							q(10689, {	-- Altruis
+								["qg"] = 21954,	-- Larissa Sunstrike
+								["coord"] = { 55.7, 58.1 },
+								["sourceQuests"] = { 10688 },	-- A Necessary Distraction
 							}),
 							q(10683, {	-- Tablets of Baa'ri
 								["qg"] = 21955,	-- Arcanist Thelis
 								["coord"] = { 56.2, 59.6 },
 								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
 							}),
+							q(10684, {	-- Oronu the Elder
+								["qg"] = 21955,	-- Arcanist Thelis
+								["coord"] = { 56.2, 59.6 },
+								["sourceQuests"] = { 10683 },	-- Tablets of Baa'ri
+							}),
+							q(10685, {	-- The Ashtongue Corruptors
+								["qg"] = 21955,	-- Arcanist Thelis
+								["coord"] = { 56.2, 59.6 },
+								["sourceQuests"] = { 10684 },	-- Oronu the Elder
+							}),
 
 
 
-							q(10688),	-- A Necessary Distraction
-							q(10689),	-- Altruis
-							q(10684),	-- Oronu the Elder
 							q(10691),	-- Return to the Scryers
-							q(10685),	-- The Ashtongue Corruptors
 							q(10686),	-- The Warden's Cage
 							q(10692, {	-- Varedis Must Be Stopped
 								i(31013),
@@ -299,12 +326,6 @@ _.Zones =
 								i(31002),
 								i(30948),
 								i(31009),
-							}),
-							q(10817, {	-- The Great Retribution
-								i(30940),
-								i(30961),
-								i(30922),
-								i(30958),
 							}),
 							q(10824, {	-- Sunfury Signets
 								["qg"] = 22211,	-- Battlemage Vyara

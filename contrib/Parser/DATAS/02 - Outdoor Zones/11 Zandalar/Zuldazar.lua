@@ -6,7 +6,7 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(862, {	-- Zuldazar
 			["groups"] = {
-				n(-4, {	-- Achievements
+				n(-4,   {	-- Achievements
 					["groups"] = {
 						ach(13036, {	-- A Loa of a Tale
 							{
@@ -336,7 +336,7 @@ _.Zones =
 						["coord"] = { 77.2, 15.4 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  { 	-- Pet Battle
 					["groups"] = {
 						p(2385),	-- Barrier Hermit
 						p(2387),	-- Golden Beetle
@@ -344,7 +344,7 @@ _.Zones =
 						p(2384),	-- Shore Butterfly
 					},
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					["groups"] = {
 						n(-9, {	-- PvP
 							["groups"] = {
@@ -806,7 +806,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-16, {	-- Rares
+				n(-16,  {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(129961, {	-- Atal'zul Gotaka [CLQS]
@@ -1135,7 +1135,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-2, {	-- Vendors
+				n(-2,   {	-- Vendors
 					["groups"] = {
 						n(140137, {	-- Bugcatacher Cal'yoon
 							["groups"] = {
@@ -1430,7 +1430,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-34, {	-- World Quests
+				n(-34,  {	-- World Quests
 					["groups"] = {
 						n(-17, {	-- Quests
 							q(50864, {	-- Atal'zul Gotaka
@@ -1647,6 +1647,7 @@ _.Zones =
 								i(157907),	-- Shadra Silk Mantle
 								i(157909),	-- Shadra Silk Cuffs
 								i(157904),	-- Shadra Silk Gloves
+								i(157908),	-- Shadra Silk Sash
 								i(157906),	-- Shadra Silk Legwraps
 								i(157903),	-- Shadra Silk Footwraps
 							},
