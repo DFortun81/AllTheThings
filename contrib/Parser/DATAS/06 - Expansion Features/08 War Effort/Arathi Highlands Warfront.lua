@@ -118,7 +118,7 @@ _.ExpansionFeatures =
 							["description"] = "Each time the scenario is up only one of these commanders will be active.",
 							["races"] = HORDE_ONLY,
 						}),
-						ach(12899, {	-- War is Hell [A]
+						ach(12881, {	-- War is Hell [A]
 							["races"] = HORDE_ONLY,
 						}),
 						ach(12873, {	-- War is Hell [H]
