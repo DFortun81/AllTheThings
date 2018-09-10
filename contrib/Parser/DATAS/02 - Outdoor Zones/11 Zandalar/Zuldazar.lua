@@ -1396,7 +1396,7 @@ _.Zones =
 									["spellID"] = 269716,
 								}),
 								i(162309, {	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 3]
-									["spellID"] = 269717,
+									["spellID"] = 269719,
 								}),
 								i(162668, {	-- Recipe: Honorable Combatant's Spellblade [Rank 2]
 									["spellID"] = 253149,
