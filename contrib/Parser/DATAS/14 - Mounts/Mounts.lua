@@ -255,7 +255,7 @@ _.Mounts =
 		i(83089),	-- Sunstone Panther
 		i(34061),	-- Turbo-Charged Flying Machine
 		i(64883),	-- Ultramarine Qiraji Battle Tank
-		i(153594),	-- Xiwyllag ATV
+		un(1, i(153594)),	-- Xiwyllag ATV [Note: Never implemented)]
 	}),
 	n(-31, { 	-- Promotion
 		un(16, i(43599)),	-- Big Blizzard Bear
