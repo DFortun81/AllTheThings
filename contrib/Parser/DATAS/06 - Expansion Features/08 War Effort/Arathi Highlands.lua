@@ -29,10 +29,10 @@ _.ExpansionFeatures =
 					i(163893),	-- 7th Legionnaire's Warglaive
 					i(163883),	-- 7th Legionnaire's Warhammer
 					i(163355),	-- 7th Legionnaire's Bloody Drape
+					i(163355),	-- 7th Legionnaire's Bloody Drape
 					i(163351),	-- 7th Legionnaire's Chain Drape
 					i(163347),	-- 7th Legionnaire's Long Cloak
 					i(163246),	-- 7th Legionnaire's Silk Cloak
-					i(163339),	-- 7th Legionnaire's Hood
 					i(163337),	-- 7th Legionnaire's Amice
 					i(163248),	-- 7th Legionnaire's Robes
 					i(163275),	-- 7th Legionnaire's Cuffs
@@ -80,7 +80,10 @@ _.ExpansionFeatures =
 					i(163873),	-- Honorbound Wand
 					i(163872),	-- Honorbound War Staff
 					i(163877),	-- Honorbound Warglaive
+					i(163357),	-- Honorbound Artificer's Cloak
+					i(163368),	-- Honorbound Centurion's Long Cloak
 					i(163360),	-- Honorbound Outrider's Drape
+					i(163366),	-- Honorbound Vanguard's Cloak
 					i(163426),	-- Honorbound Artificer's Guise
 					i(163424),	-- Honorbound Artificer's Amice
 					i(163280),	-- Honorbound Artificer's Robes
@@ -186,6 +189,11 @@ _.ExpansionFeatures =
 							i(163888),	-- 7th Legionnaire's Wand
 							i(163893),	-- 7th Legionnaire's Warglaive
 							i(163883),	-- 7th Legionnaire's Warhammer
+							i(163355),	-- 7th Legionnaire's Bloody Drape
+							i(163355),	-- 7th Legionnaire's Bloody Drape
+							i(163351),	-- 7th Legionnaire's Chain Drape
+							i(163347),	-- 7th Legionnaire's Long Cloak
+							i(163246),	-- 7th Legionnaire's Silk Cloak
 							i(163339),	-- 7th Legionnaire's Hood
 							i(163337),	-- 7th Legionnaire's Amice
 							i(163248),	-- 7th Legionnaire's Robes
@@ -256,6 +264,10 @@ _.ExpansionFeatures =
 							i(163873),	-- Honorbound Wand
 							i(163872),	-- Honorbound War Staff
 							i(163877),	-- Honorbound Warglaive
+							i(163357),	-- Honorbound Artificer's Cloak
+							i(163368),	-- Honorbound Centurion's Long Cloak
+							i(163360),	-- Honorbound Outrider's Drape
+							i(163366),	-- Honorbound Vanguard's Cloak
 							i(163426),	-- Honorbound Artificer's Guise
 							i(163424),	-- Honorbound Artificer's Amice
 							i(163280),	-- Honorbound Artificer's Robes

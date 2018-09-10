@@ -51,8 +51,10 @@ _.Zones =
 									},
 									["description"] = "This cache comes from any WQ and any emissary, but will be found in ATT under Zandalari Empire / Proudmore Admiralty.  Honorbound and 7th Legion pieces come strictly from their respect faction's emissaries",
 								}),
-								i(163357),	-- Honorbound Artificer's Cloak [Speculation]
-								i(163358),	-- Honorbound Artificer's Greeatcloak [Speculation]
+								i(163357),	-- Honorbound Artificer's Cloak
+								i(163368),	-- Honorbound Centurion's Long Cloak
+								i(163360),	-- Honorbound Outrider's Drape
+								i(163366),	-- Honorbound Vanguard's Cloak
 								i(163426),	-- Honorbound Artificer's Guise
 								i(163424),	-- Honorbound Artificer's Amice
 								i(163280),	-- Honorbound Artificer's Robes
@@ -778,7 +780,10 @@ _.Zones =
 														i(163873),	-- Honorbound Wand
 														i(163872),	-- Honorbound War Staff
 														i(163877),	-- Honorbound Warglaive
+														i(163357),	-- Honorbound Artificer's Cloak
+														i(163368),	-- Honorbound Centurion's Long Cloak
 														i(163360),	-- Honorbound Outrider's Drape
+														i(163366),	-- Honorbound Vanguard's Cloak
 														i(163426),	-- Honorbound Artificer's Guise
 														i(163424),	-- Honorbound Artificer's Amice
 														i(163280),	-- Honorbound Artificer's Robes
