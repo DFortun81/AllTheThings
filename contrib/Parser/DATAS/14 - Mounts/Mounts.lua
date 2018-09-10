@@ -25,6 +25,7 @@ _.Mounts =
 		i(87769),	-- Crimson Cloud Serpent
 		i(161331, {	-- Dark Iron Core Hound [Dark Iron Dwarf Allied Race]
 			["mountID"] = 271646,
+			["races"] = ALLIANCE_ONLY
 		}),
 		i(62901),	-- Drake of the East Wind
 		i(118676),	-- Emerald Drake
@@ -370,6 +371,7 @@ _.Mounts =
 		i(137573),		-- Llothien Prowler
 		i(161330, {		-- Mag'har Direwolf [Mag'har Orc Quest Chain]
 			["mountID"] = 267274,
+			["races"] = HORDE_ONLY
 		}),
 		i(116769),		-- Mudback Riverbeast
 		{
