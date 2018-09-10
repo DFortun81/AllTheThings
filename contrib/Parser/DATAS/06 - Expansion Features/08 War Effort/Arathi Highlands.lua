@@ -119,7 +119,9 @@ _.ExpansionFeatures =
 				}),
 				["crs"] = {
 					142709, -- Beastrider Kama
-					126427, -- Branchlord Aldrus
+					142508, -- Branchlord Aldrus
+					141615,	-- Burning Goliath
+					141618,	-- Cresting Goliath
 					142688, -- Darbel Montrose
 					138122, -- Doom's Howl
 					--143598, -- Doom's Howl Engineer
@@ -128,27 +130,29 @@ _.ExpansionFeatures =
 					142741, -- Doomrider Helgrim
 					141668, -- Echo of Myzrael
 					142686, -- Foulbelly
-					126462, -- Fozruk
+					142433, -- Fozruk
 					142662, -- Geomancer Flintdagger
-					142725, -- Horrific  Apparition
+					142725, -- Horrific Apparition
 					142739, -- Knight-Captaian Aldrin
-					135058, -- Kor'gresh Coldrage
+					142112, -- Kor'gresh Coldrage
 					142684, -- Kovork
 					142716, -- Man-Hunter Rog
-					132965, -- Molok the Crusher
+					141942, -- Molok the Crusher
 					142692, -- Nimar the Slayer
-					132074, -- Overseer Krix
-					142361, -- Plaguefeather
-					142321, -- Ragebeak
+					142423, -- Overseer Krix
+					142435, -- Plaguefeather
+					142436, -- Ragebeak
+					141620,	-- Rumbling Goliatah
 					142683, -- Ruul Onestone
 					142690, -- Singer
-					142312, -- Skullripper
+					142437, -- Skullripper
+					141616,	-- Thundering Goliath
 					137374, -- The Lion's Roar
 					--143600, -- Lion's Engineer
 					--143601, -- Lion's Shieldbearer
 					--143602, -- Lion's Warcaster
-					142301, -- Venomarus
-					142251, -- Yogursa
+					142438, -- Venomarus
+					142440, -- Yogursa
 					142682, -- Zalas Witherbark <Warband Leader>
 				},
 				["description"] = "These can drop off any rare or world boss in the zone.",
