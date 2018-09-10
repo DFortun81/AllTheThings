@@ -6,11 +6,6 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(179, { 	-- Gilneas	
 			["groups"] = {
-				n(-228, {	-- Flight Paths
-					fp(646, {	-- Foresahen Forward Command, Gilneas
-						["coord"] = { 57.2, 17.8 },
-					}),
-				}),
 --[[			
 				n(-17, { 	-- Quests
 					["groups"] = {

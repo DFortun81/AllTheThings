@@ -98,26 +98,27 @@ _.Zones =
 					qa( 29583),	-- Eckert the Mad
 --]]
 					qa(10051,  {  -- Escape from Firewing Point!
-						i(25918),
-						i(25917),
-						i(25916),
+						i(25918),	-- Blood-Guided Knife
+						i(25917),	-- Healer's Staff of the Forest
+						i(25916),	-- Terokkar Axe
 					}),
 					qh(10052,  {  -- Escape from Firewing Point!
-						i(25918),
-						i(25917),
-						i(25916),
+						i(25918),	-- Blood-Guided Knife
+						i(25917),	-- Healer's Staff of the Forest
+						i(25916),	-- Terokkar Axe
 					}),
 --					q(11085),	-- Escape from Skettis
 					q(10887,  {  -- Escaping the Tomb
-						i(31733),
-						i(31734),
-						i(31731),
-						i(31732),
+						i(31733),	-- Akuno's Blade
+						i(31734),	-- Ancient Draenei Crest
+						i(31731),	-- Mekeda's Gift
+						i(31732),	-- Unearthed Orb
 					}),
 --					q(29595),	-- Everything Will Be Alright
 					q(10923,  {  -- Evil Draws Near
-						i(31816),
-						i(31817),
+						i(31816),	-- Dragonbone Greatsword
+						i(31817),	-- Dragonbone Shoulders
+						i(31818),	-- Dragonbone Talisman
 					}),
 --[[					
 					q(10228),	-- Ezekiel
@@ -141,10 +142,10 @@ _.Zones =
 					q(11056),	-- Hazzik's Bargain
 --]]					
 					q(10031,  {  -- Helping the Lost Find Their Way
-						i(25948),
-						i(25949),
-						i(25951),
-						i(31725),
+						i(31725),	-- Cilice of Suffering
+						i(25951),	-- Fleet Refugee's Boots
+						i(25948),	-- Girdle of the Penitent
+						i(25949),	-- Gloves of the Afterlife
 					}),
 --[[					
 					qa( 39188),	-- Hero's Call: Terokkar Forest
@@ -158,37 +159,39 @@ _.Zones =
 					q(10010),	-- It's Just That Easy?
 --]]					
 					q(9951,  {  -- It's Watching You!
-						i(28028),
-						i(28026),
-						i(31723),
+						i(28026),	-- Crazy Cenarion Cloak
+						i(25542),	-- Lucky Circle of the Fool
+						i(28027),	-- Lunatic's Choker
+						i(31723),	-- Madman's Blade
+						i(28028),	-- Moonstruck Bands
 					}),
 					qa(10042,  {  -- Kill the Shadow Council!
-						i(25933),
-						i(25935),
-						i(25934),
+						i(25933),	-- Extra Sharp Blade
+						i(25935),	-- Invincible Stave
+						i(25934),	-- Spiked Destroyer
 					}),
 					qh(10043,  {  -- Kill the Shadow Council
-						i(25933),
-						i(25935),
-						i(25934),
+						i(25933),	-- Extra Sharp Blade
+						i(25935),	-- Invincible Stave
+						i(25934),	-- Spiked Destroyer
 					}),
 					qh(10006,  {  -- Letting Earthbinder Tavgren Know
-						i(25931),
-						i(25930),
-						i(25932),
-						i(25929),
+						i(25931),	-- Cenarion Thicket Circlet
+						i(25930),	-- Cenarion Thicket Helm
+						i(25932),	-- Cenarion Thicket Jerkin
+						i(25929),	-- Cenarion Thicket Legplates
 					}),
 					qa(10005,  {  -- Letting Earthbinder Tavgren Know
-						i(25931),
-						i(25930),
-						i(25932),
-						i(25929),
+						i(25931),	-- Cenarion Thicket Circlet
+						i(25930),	-- Cenarion Thicket Helm
+						i(25932),	-- Cenarion Thicket Jerkin
+						i(25929),	-- Cenarion Thicket Legplates
 					}),
 					q(10253,  {  -- Levixus the Soul Caller
-						i(29312),
-						i(29313),
-						i(29315),
-						i(29314),
+						i(29312),	-- Cover of Righteous Fury
+						i(29313),	-- Earthbreaker's Greaves
+						i(29315),	-- Gloves of Penitence
+						i(29314),	-- Leggings of the Third Coin
 					}),
 --[[					
 					qh( 10027),	-- Magical Disturbances
@@ -207,8 +210,8 @@ _.Zones =
 						["groups"] = {
 							i(30788),	-- Illidari-Bane Broadsword
 							i(30789),	-- Illidari-Bane Claymore
-							i(30787),	-- Illidari-Bane Mageblade
 							i(31745),	-- Illidari-Bane Dagger
+							i(30787),	-- Illidari-Bane Mageblade
 						},
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10676 },	-- Bane of the Illidari
@@ -252,46 +255,47 @@ _.Zones =
 						["sourceQuests"] = { 10665, 10666 },	-- Fresh From the Mechanar & The Lexicon Demonica
 					})),
 					q(11073,  {  -- Terokk's Downfall
-						i(32831),
-						i(32830),
-						i(32829),
+						i(32831),	-- Jeweled Rod
+						i(32830),	-- Severin's Cane
+						i(32829),	-- Windcharger's Lance
 					}),
 					q(10921,  {  -- Terokkarantula
-						i(31821),
-						i(31819),
-						i(31823),
+						i(31821),	-- Blade of Retribution
+						i(31820),	-- Blessed Signet Ring
+						i(31819),	-- Noble Plate Pauldrons
+						i(31823),	-- Book of Many Blessings
 					}),
 					q(10930,  {  -- The Big Bone Worm
-						i(31756),
-						i(31758),
-						i(31759),
+						i(31756),	-- Dib'Muad's Crysknife
+						i(31758),	-- Revered Mother's Crysknife
+						i(31759),	-- Shani's Crysknife
 					}),
 --					q(10877),	-- The Dread Relic
 					qa(10022,  {  -- The Elusive Ironjaw
-						i(25974),
-						i(25976),
-						i(25977),
-						i(25975),
+						i(25974),	-- Helm of Lupine Cunning
+						i(25976),	-- Helm of Lupine Grace
+						i(25977),	-- Helm of Lupine Ferocity
+						i(25975),	-- Wolf Hunter's Guise
 					}),
 --					q(10847),	-- The Eyes of Skettis
 					q(10915,  {  -- The Fallen Exarch
-						i(31798),
-						i(31797),
-						i(31796),
-						i(31794),
+						i(31798),	-- Death-Speaker's Tunic
+						i(31797),	-- Elekk Hide Spaulders
+						i(31796),	-- Sha'tari Marksman's Gloves
+						i(31794),	-- Sha'tari Vindicator's Legplates
 					}),
 --					qa(  9793),	-- The Fate of Tuurem
 					qa(10446,  {  -- The Final Code
-						i(31785),
-						i(31782),
-						i(31784),
-						i(31783),
+						i(31784),	-- Ancient Terokkar Hood
+						i(31783),	-- Bloodfire Leggings
+						i(31785),	-- Edge of Inevitability
+						i(31782),	-- Warpstalker Breastplate
 					}),
 					qh(10447,  {  -- The Final Code
-						i(31785),
-						i(31782),
-						i(31784),
-						i(31783),
+						i(31784),	-- Ancient Terokkar Hood
+						i(31783),	-- Bloodfire Leggings
+						i(31785),	-- Edge of Inevitability
+						i(31782),	-- Warpstalker Breastplate
 					}),
 --[[					
 					qh( 10003),	-- The Firewing Liaison
@@ -312,47 +316,61 @@ _.Zones =
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
 					}),	
+--					q(10917),	-- The Outcast's Plight
+					q(10881, {	-- The Shadow Tomb
+						un(2, i(31730)),	-- Heirloom Signet of Convalescence
+						i(31729),	-- Heirloom Signet of Valor
+						i(31728),	-- Heirloom Signet of Willpower
+					}),
 --[[					
-					q(10917),	-- The Outcast's Plight
-					q(10881),	-- The Shadow Tomb
 					q(10879),	-- The Skettis Offensive
 					q(10840),	-- The Tomb of Lights
 					qa( 10869),	-- Thin the Flock
 --]]					
 					qa(10007,  {  -- Thinning the Ranks
-						i(25972),
-						i(25971),
-						i(25973),
+						i(25973),	-- Dark Augur's Wand
+						i(25972),	-- Deadeye's Piece
+						i(25971),	-- Stout Oak Longbow
 					}),
 --[[					
 					qa( 10016),	-- Timber Worg Tails
 					q(11098),	-- To Skettis!
 					q(11074),	-- Tokens of the Descendants
-					qh( 10036),	-- Torgos!
-					qa( 10035),	-- Torgos!
 --]]
+					qh(10036, {	-- Torgos!
+						i(25937),	-- Terokkar Tablet of Precision
+						i(25936),	-- Terokkar Tablet of Vim
+					}),
+					qa(10035, {	-- Torgos!
+						i(25937),	-- Terokkar Tablet of Precision
+						i(25936),	-- Terokkar Tablet of Vim
+					}),
 					qdg(q(10667, {	-- Underworld Loam
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10665, 10666 },	-- Fresh From the Mechanar & The Lexicon Demonica
 					})),
 --					qa(  9998),	-- Unruly Neighbors
 					q(10861,  {  -- Veil Lithic: Preemptive Strike
-						i(25959),
-						i(25961),
-						i(25958),
-						i(25960),
+						i(25958),	-- Eagle Engraved Bracers
+						i(25959),	-- Feathered Armbands
+						i(25961),	-- Feathered Wrist Cuffs
+						i(25960),	-- Talonstalker Bracers
 					}),
 					q(10848,  {  -- Veil Rhaze: Unliving Evil
-						i(31761),
-						i(31762),
+						i(31762),	-- Feather-Wrapped Bow
+						i(31761),	-- Talonbranch Wand
 					}),
 					q(10874,  {  -- Veil Shalas: Signal Fires
-						i(25966),
-						i(25965),
+						i(25966),	-- Arakkoa Sage's Shawl
+						i(25965),	-- Cloak of Grasping Talons
+						i(25963),	-- Kokorek's Signet
+					}),
+--					q(10839),	-- Veil Skith: Darkstone of Terokk
+					q(10842, {	-- Vengeful Souls
+						i(31615),	-- Ancient Draenei Arcane Relic
+						i(31617),	-- Ancient Draenei War Talisman
 					}),
 --[[					
-					q(10839),	-- Veil Skith: Darkstone of Terokk
-					q(10842),	-- Vengeful Souls
 					qa( 10028),	-- Vessels of Power
 					qh( 10018),	-- Vestments of the Wolf Spirit
 					qh( 10034),	-- Wanted: Bonelashers Dead!
@@ -360,19 +378,19 @@ _.Zones =
 					qh( 39182),	-- Warchief's Command: Terokkar Forest
 --]]
 					qh(10791,  {  -- Welcoming the Wolf Spirit
-						i(25974),
-						i(25977),
-						i(25976),
-						i(25975),
+						i(25974),	-- Helm of Lupine Cunning
+						i(25977),	-- Helm of Lupine Ferocity
+						i(25976),	-- Helm of Lupine Grace
+						i(25975),	-- Wolf Hunter's Guise
 					}),
 --[[					
 					qh(  9995),	-- What Are These Things?
 					qa(  9994),	-- What Are These Things?
 --]]					
 					qh(10008,  {  -- What Happens in Terokkar Stays in Terokkar
-						i(25973),
-						i(25972),
-						i(25971),
+						i(25973),	-- Dark Augur's Wand
+						i(25972),	-- Deadeye's Piece
+						i(25971),	-- Stout Oak Longbow
 					}),
 --[[					
 					qa(  9961),	-- What's Wrong at Cenarion Thicket?
@@ -409,22 +427,22 @@ _.Zones =
 						dr(7.0, i(16248)),	-- Formula: Enchant Weapon - Unholy
 					}),
 					n(18689, {	-- Crippler
-						dr(99, i(31238)),	-- Dragonbone Ring
+						i(31238),	-- Dragonbone Ring
 					}),
 					n(18686, { 	-- Doomsayer Jurim
+						i(31235),	-- Grim Boots
+						i(31233),	-- Grim Greaves
+						i(31232),	-- Grim Sabatons
+						i(31236),	-- Grim Slippers
+					}), 
 					n(21724, {	-- Hawkbane
 						["description"] = "This is a tameable hunter pet that has no notable drops.",
 					}),
-						i(31235),
-						i(31233),
-						i(31232),
-						i(31236),
-					}), 
 					n(18685, { 	-- Okrek
-						i(31227),
-						i(31231),
-						i(31228),
-						i(31229),
+						i(31228),	-- Feathered Belt
+						i(31227),	-- Feathered Girdle
+						i(31231),	-- Feathered Sash
+						i(31229),	-- Feathered Waistband
 					}), 
 					n(21838, {	-- Terokk
 						["itemID"] = 32720,	-- -- Time-Lost Offering
@@ -596,17 +614,17 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
-							un(40, qdg(q(10165, {	-- Undercutting the Competition
-								un(34, i(29343)),	-- Haramad's Leggings of the Third Coin
-								un(34, i(29342)),	-- Consortium Plated Legguards
-								un(34, i(29345)),	-- Haramad's Leg Wraps
-								un(34, i(29344)),	-- Haramad's Linked Chain Pantaloons
-							}))),
 							un(40, qdg(q(10218, {	-- Someone Else's Hard Work Pays Off
-								un(34, i(29328)),	-- Consortium Prince's Wrap
-								un(34, i(29327)),	-- Cryo-mitts
-								un(34, i(29326)),	-- Consortium Mantle of Phasing
-								un(34, i(29325)),	-- Flesh Beast's Metal Greaves
+								un(2, i(29328)),	-- Consortium Prince's Wrap
+								un(2, i(29327)),	-- Cryo-mitts
+								un(2, i(29326)),	-- Consortium Mantle of Phasing
+								un(2, i(29325)),	-- Flesh Beast's Metal Greaves
+							}))),
+							un(40, qdg(q(10165, {	-- Undercutting the Competition
+								un(2, i(29342)),	-- Consortium Plated Legguards
+								un(2, i(29343)),	-- Haramad's Leggings of the Third Coin
+								un(2, i(29345)),	-- Haramad's Leg Wraps
+								un(2, i(29344)),	-- Haramad's Linked Chain Pantaloons
 							}))),
 						}),
 						--n(-16, {	-- Rares (Legacy)

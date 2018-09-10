@@ -70,6 +70,10 @@ _.Zones =
 								["sourceQuests"] = { 10321 },	-- Shutting Down Manaforge Coruu
 							}),
 							q(10323, {	-- Shutting Down Manaforge Ara
+								["groups"] = {
+									i(30377),	-- Karja's Medallion
+									i(30365),	-- Overseer's Signet
+								},
 								["qg"] = 19467,	-- Anchorite Karja
 								["sourceQuests"] = { 10322 },	-- Shutting Down Manaforge Duro
 							}),
@@ -240,6 +244,10 @@ _.Zones =
 								["sourceQuests"] = { 10200 },	-- Return to Thalodien
 							}),
 							q(10365, {	-- Shutting Down Manaforge Ara
+								["groups"] = {
+									i(30366),	-- Manastorm Band
+									i(30378),	-- Thalodien's Charm
+								},
 								["qg"] = 19468,	-- Spymaster Thalodien
 								["coord"] = { 32.0, 64.0 },
 								["sourceQuests"] = { 10338 },	-- Shutting Down Manaforge Duro
@@ -255,7 +263,7 @@ _.Zones =
 								["qg"] = 19468,	-- Spymaster Thalodien
 								["races"] = { 4, 10 },	-- Night Elf & Blood Elf
 								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
-								-- May have other/different s.ources; can't check because this quest was unavailable on the race I quested on.
+								-- May have other/different sources; can't check because this quest was unavailable on the race I quested on.
 								["isBreadcrumb"] = true,	-- for "Consortium Crystal Collection"
 							}),
 						},
@@ -309,6 +317,8 @@ _.Zones =
 						["groups"] = {
 							i(29777),	-- Cloak of the Valiant Defender
 							i(29779),	-- Rejuvenating Scepter
+							i(29776),	-- Core of Ar'kelos
+							i(29775),	-- Pendant of the Battle-Mage
 						},
 						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuests"] = { 10209 },	-- Summoner Kanthin's Prize
@@ -387,6 +397,7 @@ _.Zones =
 							i(30003),	-- Gloves of the Nether-Stalker
 							i(30004),	-- Landing Boots
 							i(30005),	-- Overmaster's Shoulders
+							i(30006),	-- Wind Trader's Band
 						},
 						["qg"] = 20393,	-- Foreman Sundown
 						["sourceQuests"] = { 10317 },	-- Dealing with the Foreman
@@ -433,6 +444,7 @@ _.Zones =
 							i(30297),	-- Circlet of the Starcaller
 							i(30299),	-- Starcaller's Plated Leggings
 							i(30298),	-- Void Slayer's Tunic
+							i(30300),	-- Dabiri's Enigma
 						},
 						["qg"] = 20907,	-- Professor Dabiri
 						["sourceQuests"] = { 10438 },	-- On Nethery Wings
@@ -445,6 +457,8 @@ _.Zones =
 						["groups"] = {
 							i(29792),	-- Dawnstrider's Cloak
 							i(30399),	-- Nightstalker's Wristguards
+							i(29793),	-- Signet of the Violet Tower
+							i(29794),	-- Strength of the Violet Tower
 						},
 						["qg"] = 19488,	-- Custodian Dieworth
 					}),
@@ -520,6 +534,8 @@ _.Zones =
 					}),
 					q( 10293, {	-- Hitting the Motherlode
 						["groups"] = {
+							i(29814),	-- Celestial Jewel Ring
+							i(29815),	-- Chain of Glowing Tendrils
 							i(29813),	-- Cloak of Woven Energy
 						},
 						["qg"] = 20067,	-- Zuben Elgenubi
@@ -611,6 +627,7 @@ _.Zones =
 						["groups"] = {
 							i(30275),	-- Mech Tech Shoulders
 							i(30274),	-- Papa's Armbands
+							i(30276),	-- Wheeler Family Heirloom
 						},
 						["qg"] = 19645,	-- Papa Wheeler
 						["sourceQuests"] = { 10265 },	-- Consortium Crystal Collection
@@ -694,14 +711,21 @@ _.Zones =
 						["qg"] = 19617,	-- Boots
 					}),
 					q( 10280, {	-- Special Delivery to Shattrath City
+						["groups"] = {
+							i(30258),	-- Chestplate of A'dal
+							i(30256),	-- Pants of the Naaru
+							i(30257),	-- Shattrath Leggings
+						},
 						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
 						["sourceQuests"] = { 10276 },	-- Full Triangle
+						["description"] = "Items do not show up on quest rewards but appearances are awarded upon turn in to A'dal.",
 					}),
 					q( 10440, {	-- Success!
 						["groups"] = {
 							i(30290),	-- Leggings of Concentrated Power
 							i(30291),	-- Nexus-Guard's Pauldrons
 							i(30520),	-- Gold-Trimmed Cuffs
+							i(30293),	-- Heavenly Inspiration
 						},
 						["qg"] = 20913,	-- Tashar
 						["sourceQuests"] = { 10436 },	-- All Clear!
@@ -772,6 +796,8 @@ _.Zones =
 					{			-- The Horrors of Pollution
 						["g"] = {
 							i(30338),	-- Diviner's Cloak
+							i(30339),	-- Protectorate Assassin's Ring
+							i(30340),	-- Starkiller's Bauble
 						},
 						["qg"] = 20779,	-- Congealed Void Horror
 						["itemID"] = 29738,	-- Vial of Void Horror Ooze
@@ -828,9 +854,9 @@ _.Zones =
 					}),
 					q( 10205, {	-- Warp-Raider Nesaad
 						["groups"] = {
-							i(30266),
-							i(30265),
-							i(30267),
+							i(30266),	-- Zaxxis Boots
+							i(30265),	-- Zaxxis Bracers
+							i(30267),	-- Zaxxis Gloves
 						},
 						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["sourceQuests"] = { 10262 },	-- A Heap of Ethereals
@@ -876,7 +902,7 @@ _.Zones =
 				}),	
 				n(-16,  {	-- Rares	
 					n(18697, { 	-- Chief Engineer Lorthander
-						i(31201),
+						i(31201),	-- Illidari Cloak
 					}),
 					n(23008, {	-- Ethereum Jailor
 						dr(1.6, i(22530)),	-- Formula: Enchant Bracer - Greater Dodge
@@ -888,10 +914,10 @@ _.Zones =
 						i(31203),	-- Arcane Loop
 					}),
 					n(20932, { 	-- Nuramoc
-						i(31210),
-						i(31212),
-						i(31211),
-						i(31209),
+						i(31212),	-- Chimaerahide Leggings
+						i(31211),	-- Chimaerahide Pants
+						i(31210),	-- Chimaerascale Legguards
+						i(31209),	-- Chimaerascale Legplates
 					}),
 				}),
 				n(-2,   {	-- Vendors
@@ -1190,40 +1216,6 @@ _.Zones =
 						i(29364),	-- Brown Rabbit Crate Pet
 						i(29902),	-- Red Moth Egg Pet
 						i(29958),	-- Blue Dragonhawk Hatchling Pet
-					}),
-					n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> [Note: Yes, two npc's with same name. One is removed]
-						["groups"] = {
-							un(2, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
-							un(2, i(51398)),	-- Wrathful Gladiator's Blade of Celerity [Elite Rating]
-							un(2, i(51393)),	-- Wrathful Gladiator's Claymore [Elite Rating]
-							un(2, i(51401)),	-- Wrathful Gladiator's Combat Staff [Elite Rating]
-							un(2, i(51391)),	-- Wrathful Gladiator's Crusher [Elite Rating]
-							un(2, i(51440)),	-- Wrathful Gladiator's Dicer [Elite Rating]
-							un(2, i(51442)),	-- Wrathful Gladiator's Dirk [Elite Rating]
-							un(2, i(51528)),	-- Wrathful Gladiator's Eviscerator [Elite Rating]
-							un(2, i(51524)),	-- Wrathful Gladiator's Grasp [Elite Rating]
-							un(2, i(51432)),	-- Wrathful Gladiator's Greatstaff [Elite Rating]
-							un(2, i(51481)),	-- Wrathful Gladiator's Halberd [Elite Rating]
-							un(2, i(51516)),	-- Wrathful Gladiator's Handaxe [Elite Rating]
-							un(2, i(51529)),	-- Wrathful Gladiator's Left Claw [Elite Rating]
-							un(2, i(51444)),	-- Wrathful Gladiator's Left Razor [Elite Rating]
-							un(2, i(51457)),	-- Wrathful Gladiator's Light Staff [Elite Rating]
-							un(2, i(51522)),	-- Wrathful Gladiator's Longblade [Elite Rating]
-							un(2, i(51399)),	-- Wrathful Gladiator's Mageblade [Elite Rating]
-							un(2, i(51446)),	-- Wrathful Gladiator's Punisher [Elite Rating]
-							un(2, i(51395)),	-- Wrathful Gladiator's Recurve [Elite Rating]
-							un(2, i(51412)),	-- Wrathful Gladiator's Repeater [Elite Rating]
-							un(2, i(51454)),	-- Wrathful Gladiator's Salvation [Elite Rating]
-							un(2, i(51450)),	-- Wrathful Gladiator's Shotgun [Elite Rating]
-							un(2, i(51405)),	-- Wrathful Gladiator's Skirmish Staff [Elite Rating]
-							un(2, i(51518)),	-- Wrathful Gladiator's Spike [Elite Rating]
-							un(2, i(51526)),	-- Wrathful Gladiator's Splitter [Elite Rating]
-							un(2, i(51389)),	-- Wrathful Gladiator's Sunderer [Elite Rating]
-							un(2, i(51448)),	-- Wrathful Gladiator's Swiftblade [Elite Rating]
-							un(2, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
-							un(2, i(51520)),	-- Wrathful Gladiator's Truncheon [Elite Rating]
-						},
-						["u"] = 2, -- Vendor no longer exists
 					}),
 					n(40209, {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 						["groups"] = {
@@ -1691,103 +1683,6 @@ _.Zones =
 						i(29122),	-- Nether Runner's Cowl
 						i(29116),	-- Nomad's Leggings
 						i(29117),	-- Stormspire Vest
-					}),
-					n(33918, {  -- Kezzik the Striker <Veteran Arena Vendor> [Note: Yes, two npc's with same name. One is removed]
-						["groups"] = {
-							i(42565),	-- Furious Gladiator's Barrier
-							i(42514),	-- Furious Gladiator's Baton of Light
-							i(42364),	-- Furious Gladiator's Battle Staff
-							i(42281),	-- Furious Gladiator's Bonecracker
-							i(42323),	-- Furious Gladiator's Bonegrinder
-							i(41087),	-- Furious Gladiator's Chain Armor
-							i(41143),	-- Furious Gladiator's Chain Gauntlets
-							i(41157),	-- Furious Gladiator's Chain Helm
-							i(41205),	-- Furious Gladiator's Chain Leggings
-							i(41217),	-- Furious Gladiator's Chain Spaulders
-							i(42233),	-- Furious Gladiator's Chopper
-							i(42209),	-- Furious Gladiator's Cleaver
-							i(42318),	-- Furious Gladiator's Decapitator
-							i(41773),	-- Furious Gladiator's Dragonhide Gloves
-							i(41678),	-- Furious Gladiator's Dragonhide Helm
-							i(41667),	-- Furious Gladiator's Dragonhide Legguards
-							i(41661),	-- Furious Gladiator's Dragonhide Robes
-							i(41715),	-- Furious Gladiator's Dragonhide Spaulders
-							i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
-							i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
-							i(40827),	-- Furious Gladiator's Dreadplate Helm
-							i(40848),	-- Furious Gladiator's Dreadplate Legguards
-							i(40868),	-- Furious Gladiator's Dreadplate Shoulders
-							i(42526),	-- Furious Gladiator's Endgame
-							i(42385),	-- Furious Gladiator's Energy Staff
-							i(44422),	-- Furious Gladiator's Focus Staff
-							i(42353),	-- Furious Gladiator's Gavel
-							i(42333),	-- Furious Gladiator's Greatsword
-							i(42538),	-- Furious Gladiator's Grimoire
-							i(42228),	-- Furious Gladiator's Hacker
-							i(42496),	-- Furious Gladiator's Heavy Crossbow
-							i(41287),	-- Furious Gladiator's Kodohide Gloves
-							i(41321),	-- Furious Gladiator's Kodohide Helm
-							i(41298),	-- Furious Gladiator's Kodohide Legguards
-							i(41310),	-- Furious Gladiator's Kodohide Robes
-							i(41275),	-- Furious Gladiator's Kodohide Spaulders
-							i(41767),	-- Furious Gladiator's Leather Gloves
-							i(41672),	-- Furious Gladiator's Leather Helm
-							i(41655),	-- Furious Gladiator's Leather Legguards
-							i(41683),	-- Furious Gladiator's Leather Spaulders
-							i(41650),	-- Furious Gladiator's Leather Tunic
-							i(42266),	-- Furious Gladiator's Left Render
-							i(42271),	-- Furious Gladiator's Left Ripper
-							i(42491),	-- Furious Gladiator's Longbow
-							i(41874),	-- Furious Gladiator's Mooncloth Gloves
-							i(41854),	-- Furious Gladiator's Mooncloth Hood
-							i(41864),	-- Furious Gladiator's Mooncloth Leggings
-							i(41869),	-- Furious Gladiator's Mooncloth Mantle
-							i(41859),	-- Furious Gladiator's Mooncloth Robe
-							i(42256),	-- Furious Gladiator's Mutilator
-							i(40907),	-- Furious Gladiator's Ornamented Chestguard
-							i(40927),	-- Furious Gladiator's Ornamented Gloves
-							i(40933),	-- Furious Gladiator's Ornamented Headcover
-							i(40939),	-- Furious Gladiator's Ornamented Legplates
-							i(40963),	-- Furious Gladiator's Ornamented Spaulders
-							i(42520),	-- Furious Gladiator's Piercing Touch
-							i(42328),	-- Furious Gladiator's Pike
-							i(40789),	-- Furious Gladiator's Plate Chestpiece
-							i(40807),	-- Furious Gladiator's Plate Gauntlets
-							i(40826),	-- Furious Gladiator's Plate Helm
-							i(40847),	-- Furious Gladiator's Plate Legguards
-							i(40866),	-- Furious Gladiator's Plate Shoulders
-							i(42276),	-- Furious Gladiator's Pummeler
-							i(42291),	-- Furious Gladiator's Quickblade
-							i(42571),	-- Furious Gladiator's Redoubt
-							i(42532),	-- Furious Gladiator's Reprieve
-							i(42486),	-- Furious Gladiator's Rifle
-							i(42261),	-- Furious Gladiator's Right Ripper
-							i(41940),	-- Furious Gladiator's Satin Gloves
-							i(41915),	-- Furious Gladiator's Satin Hood
-							i(41927),	-- Furious Gladiator's Satin Leggings
-							i(41934),	-- Furious Gladiator's Satin Mantle
-							i(41921),	-- Furious Gladiator's Satin Robe
-							i(40788),	-- Furious Gladiator's Scaled Chestpiece
-							i(40808),	-- Furious Gladiator's Scaled Gauntlets
-							i(40828),	-- Furious Gladiator's Scaled Helm
-							i(40849),	-- Furious Gladiator's Scaled Legguards
-							i(40869),	-- Furious Gladiator's Scaled Shoulders
-							i(42243),	-- Furious Gladiator's Shanker
-							i(42560),	-- Furious Gladiator's Shield Wall
-							i(42249),	-- Furious Gladiator's Shiv
-							i(42286),	-- Furious Gladiator's Slicer
-							i(42347),	-- Furious Gladiator's Spellblade
-							i(42391),	-- Furious Gladiator's Staff
-							un(2, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
-							i(42503),	-- Furious Gladiator's Touch of Defeat
-							i(44421),	-- Furious Gladiator's War Staff
-							i(41293),	-- Furious Gladiator's Wyrmhide Gloves
-							i(41327),	-- Furious Gladiator's Wyrmhide Helm
-							i(41304),	-- Furious Gladiator's Wyrmhide Legguards
-							i(41316),	-- Furious Gladiator's Wyrmhide Robes
-							i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
-						},
-						["u"] = 2, -- Vendor no longer exists
 					}),
 					n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator>
 						i(146615, {	-- Gladiator's Satin Armor		
@@ -2738,6 +2633,139 @@ _.Zones =
 						["crs"] = {
 							18873,	-- Disembodied Protector
 						},
+					}),
+				}),
+				n(-40, {	-- Legacy
+					n(-2, {		-- Vendors
+						un(43, n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> [Note: Yes, two npc's with same name. One is removed]
+							["groups"] = {
+								un(2, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
+								un(2, i(51398)),	-- Wrathful Gladiator's Blade of Celerity [Elite Rating]
+								un(2, i(51393)),	-- Wrathful Gladiator's Claymore [Elite Rating]
+								un(2, i(51401)),	-- Wrathful Gladiator's Combat Staff [Elite Rating]
+								un(2, i(51391)),	-- Wrathful Gladiator's Crusher [Elite Rating]
+								un(2, i(51440)),	-- Wrathful Gladiator's Dicer [Elite Rating]
+								un(2, i(51442)),	-- Wrathful Gladiator's Dirk [Elite Rating]
+								un(2, i(51528)),	-- Wrathful Gladiator's Eviscerator [Elite Rating]
+								un(2, i(51524)),	-- Wrathful Gladiator's Grasp [Elite Rating]
+								un(2, i(51432)),	-- Wrathful Gladiator's Greatstaff [Elite Rating]
+								un(2, i(51481)),	-- Wrathful Gladiator's Halberd [Elite Rating]
+								un(2, i(51516)),	-- Wrathful Gladiator's Handaxe [Elite Rating]
+								un(2, i(51529)),	-- Wrathful Gladiator's Left Claw [Elite Rating]
+								un(2, i(51444)),	-- Wrathful Gladiator's Left Razor [Elite Rating]
+								un(2, i(51457)),	-- Wrathful Gladiator's Light Staff [Elite Rating]
+								un(2, i(51522)),	-- Wrathful Gladiator's Longblade [Elite Rating]
+								un(2, i(51399)),	-- Wrathful Gladiator's Mageblade [Elite Rating]
+								un(2, i(51446)),	-- Wrathful Gladiator's Punisher [Elite Rating]
+								un(2, i(51395)),	-- Wrathful Gladiator's Recurve [Elite Rating]
+								un(2, i(51412)),	-- Wrathful Gladiator's Repeater [Elite Rating]
+								un(2, i(51454)),	-- Wrathful Gladiator's Salvation [Elite Rating]
+								un(2, i(51450)),	-- Wrathful Gladiator's Shotgun [Elite Rating]
+								un(2, i(51405)),	-- Wrathful Gladiator's Skirmish Staff [Elite Rating]
+								un(2, i(51518)),	-- Wrathful Gladiator's Spike [Elite Rating]
+								un(2, i(51526)),	-- Wrathful Gladiator's Splitter [Elite Rating]
+								un(2, i(51389)),	-- Wrathful Gladiator's Sunderer [Elite Rating]
+								un(2, i(51448)),	-- Wrathful Gladiator's Swiftblade [Elite Rating]
+								un(2, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
+								un(2, i(51520)),	-- Wrathful Gladiator's Truncheon [Elite Rating]
+							},
+						})),
+						un(43, n(33918, {  -- Kezzik the Striker <Veteran Arena Vendor> [Note: Yes, two npc's with same name. One is removed]
+							["groups"] = {
+								i(42565),	-- Furious Gladiator's Barrier
+								i(42514),	-- Furious Gladiator's Baton of Light
+								i(42364),	-- Furious Gladiator's Battle Staff
+								i(42281),	-- Furious Gladiator's Bonecracker
+								i(42323),	-- Furious Gladiator's Bonegrinder
+								i(41087),	-- Furious Gladiator's Chain Armor
+								i(41143),	-- Furious Gladiator's Chain Gauntlets
+								i(41157),	-- Furious Gladiator's Chain Helm
+								i(41205),	-- Furious Gladiator's Chain Leggings
+								i(41217),	-- Furious Gladiator's Chain Spaulders
+								i(42233),	-- Furious Gladiator's Chopper
+								i(42209),	-- Furious Gladiator's Cleaver
+								i(42318),	-- Furious Gladiator's Decapitator
+								i(41773),	-- Furious Gladiator's Dragonhide Gloves
+								i(41678),	-- Furious Gladiator's Dragonhide Helm
+								i(41667),	-- Furious Gladiator's Dragonhide Legguards
+								i(41661),	-- Furious Gladiator's Dragonhide Robes
+								i(41715),	-- Furious Gladiator's Dragonhide Spaulders
+								i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
+								i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
+								i(40827),	-- Furious Gladiator's Dreadplate Helm
+								i(40848),	-- Furious Gladiator's Dreadplate Legguards
+								i(40868),	-- Furious Gladiator's Dreadplate Shoulders
+								i(42526),	-- Furious Gladiator's Endgame
+								i(42385),	-- Furious Gladiator's Energy Staff
+								i(44422),	-- Furious Gladiator's Focus Staff
+								i(42353),	-- Furious Gladiator's Gavel
+								i(42333),	-- Furious Gladiator's Greatsword
+								i(42538),	-- Furious Gladiator's Grimoire
+								i(42228),	-- Furious Gladiator's Hacker
+								i(42496),	-- Furious Gladiator's Heavy Crossbow
+								i(41287),	-- Furious Gladiator's Kodohide Gloves
+								i(41321),	-- Furious Gladiator's Kodohide Helm
+								i(41298),	-- Furious Gladiator's Kodohide Legguards
+								i(41310),	-- Furious Gladiator's Kodohide Robes
+								i(41275),	-- Furious Gladiator's Kodohide Spaulders
+								i(41767),	-- Furious Gladiator's Leather Gloves
+								i(41672),	-- Furious Gladiator's Leather Helm
+								i(41655),	-- Furious Gladiator's Leather Legguards
+								i(41683),	-- Furious Gladiator's Leather Spaulders
+								i(41650),	-- Furious Gladiator's Leather Tunic
+								i(42266),	-- Furious Gladiator's Left Render
+								i(42271),	-- Furious Gladiator's Left Ripper
+								i(42491),	-- Furious Gladiator's Longbow
+								i(41874),	-- Furious Gladiator's Mooncloth Gloves
+								i(41854),	-- Furious Gladiator's Mooncloth Hood
+								i(41864),	-- Furious Gladiator's Mooncloth Leggings
+								i(41869),	-- Furious Gladiator's Mooncloth Mantle
+								i(41859),	-- Furious Gladiator's Mooncloth Robe
+								i(42256),	-- Furious Gladiator's Mutilator
+								i(40907),	-- Furious Gladiator's Ornamented Chestguard
+								i(40927),	-- Furious Gladiator's Ornamented Gloves
+								i(40933),	-- Furious Gladiator's Ornamented Headcover
+								i(40939),	-- Furious Gladiator's Ornamented Legplates
+								i(40963),	-- Furious Gladiator's Ornamented Spaulders
+								i(42520),	-- Furious Gladiator's Piercing Touch
+								i(42328),	-- Furious Gladiator's Pike
+								i(40789),	-- Furious Gladiator's Plate Chestpiece
+								i(40807),	-- Furious Gladiator's Plate Gauntlets
+								i(40826),	-- Furious Gladiator's Plate Helm
+								i(40847),	-- Furious Gladiator's Plate Legguards
+								i(40866),	-- Furious Gladiator's Plate Shoulders
+								i(42276),	-- Furious Gladiator's Pummeler
+								i(42291),	-- Furious Gladiator's Quickblade
+								i(42571),	-- Furious Gladiator's Redoubt
+								i(42532),	-- Furious Gladiator's Reprieve
+								i(42486),	-- Furious Gladiator's Rifle
+								i(42261),	-- Furious Gladiator's Right Ripper
+								i(41940),	-- Furious Gladiator's Satin Gloves
+								i(41915),	-- Furious Gladiator's Satin Hood
+								i(41927),	-- Furious Gladiator's Satin Leggings
+								i(41934),	-- Furious Gladiator's Satin Mantle
+								i(41921),	-- Furious Gladiator's Satin Robe
+								i(40788),	-- Furious Gladiator's Scaled Chestpiece
+								i(40808),	-- Furious Gladiator's Scaled Gauntlets
+								i(40828),	-- Furious Gladiator's Scaled Helm
+								i(40849),	-- Furious Gladiator's Scaled Legguards
+								i(40869),	-- Furious Gladiator's Scaled Shoulders
+								i(42243),	-- Furious Gladiator's Shanker
+								i(42560),	-- Furious Gladiator's Shield Wall
+								i(42249),	-- Furious Gladiator's Shiv
+								i(42286),	-- Furious Gladiator's Slicer
+								i(42347),	-- Furious Gladiator's Spellblade
+								i(42391),	-- Furious Gladiator's Staff
+								un(2, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
+								i(42503),	-- Furious Gladiator's Touch of Defeat
+								i(44421),	-- Furious Gladiator's War Staff
+								i(41293),	-- Furious Gladiator's Wyrmhide Gloves
+								i(41327),	-- Furious Gladiator's Wyrmhide Helm
+								i(41304),	-- Furious Gladiator's Wyrmhide Legguards
+								i(41316),	-- Furious Gladiator's Wyrmhide Robes
+								i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
+							},
+						})),
 					}),
 				}),
 			},

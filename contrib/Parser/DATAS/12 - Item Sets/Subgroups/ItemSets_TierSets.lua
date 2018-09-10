@@ -2587,30 +2587,31 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 									i(48497), -- Koltira's Legplates of Triumph
 									i(47269), -- Dawnbreaker Sabatons
 								}),	
-							},		
+							},
+							["classes"] = { 6 },	-- Death Knight							
 						}),
 					}),
 					n(-375, { -- 25 Man Heroic
 						gs(350, { -- Zabra's Regalia			
 							["groups"] = {		
 								n(-9951, { -- Holy/Disciple Priest	
-									i(48058), -- Zabra's Cowl of Triumph
-									i(48061), -- Zabra's Shoulderpads of Triumph
-									i(48060), -- Zabra's Robe of Triumph
+									un(2, i(48058)), -- Zabra's Cowl of Triumph
+									un(2, i(48061)), -- Zabra's Shoulderpads of Triumph
+									un(2, i(48060)), -- Zabra's Robe of Triumph
 									i(47324), -- Bindings of the Ashen Saint
-									i(48057), -- Zabra's Gloves of Triumph
+									un(2, i(48057)), -- Zabra's Gloves of Triumph
 									i(47909), -- Belt of the Eternal
-									i(48059), -- Zabra's Leggings of Triumph
+									un(2, i(48059)), -- Zabra's Leggings of Triumph
 									i(49232), -- Sandals of the Grieving Soul
 								}),	
 								n(-9917, { -- Shadow Priest	
-									i(48088), -- Zabra's Circlet of Triumph
-									i(48091), -- Zabra's Mantle of Triumph
-									i(48090), -- Zabra's Raiments of Triumph
+									un(2, i(48088)), -- Zabra's Circlet of Triumph
+									un(2, i(48091)), -- Zabra's Mantle of Triumph
+									un(2, i(48090)), -- Zabra's Raiments of Triumph
 									i(47324), -- Bindings of the Ashen Saint
-									i(48087), -- Zabra's Handwraps of Triumph
+									un(2, i(48087)), -- Zabra's Handwraps of Triumph
 									i(47909), -- Belt of the Eternal
-									i(48089), -- Zabra's Pants of Triumph
+									un(2, i(48089)), -- Zabra's Pants of Triumph
 									i(49232), -- Sandals of the Grieving Soul
 								}),	
 							},		
@@ -2618,25 +2619,25 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						}),			
 						gs(723, { -- Sunstrider's Regalia			
 							["groups"] = {		
-								i(47764), -- Sunstrider's Hood of Triumph	
-								i(47767), -- Sunstrider's Shoulderpads of Triumph	
-								i(47766), -- Sunstrider's Robe of Triumph	
+								un(2, i(47764)), -- Sunstrider's Hood of Triumph	
+								un(2, i(47767)), -- Sunstrider's Shoulderpads of Triumph	
+								un(2, i(47766)), -- Sunstrider's Robe of Triumph	
 								i(47586), -- Bejeweled Wizard's Bracers	
-								i(47763), -- Sunstrider's Gauntlets of Triumph	
+								un(2, 	i(47763)), -- Sunstrider's Gauntlets of Triumph	
 								i(47855), -- Icehowl Binding	
-								i(47765), -- Sunstrider's Leggings of Triumph	
+								un(2, i(47765)), -- Sunstrider's Leggings of Triumph	
 								i(47321), -- Boots of the Icy Floe	
 							},		
 							["classes"] = { 8 },		
 						}),			
 						gs(675, { -- Gul'dan's Regalia			
 							["groups"] = {		
-								i(47796), -- Gul'dan's Hood of Triumph	
-								i(47793), -- Gul'dan's Shoulderpads of Triumph	
-								i(47794), -- Gul'dan's Robe of Triumph	
-								i(47797), -- Gul'dan's Gloves of Triumph	
+								un(2, i(47796)), -- Gul'dan's Hood of Triumph	
+								un(2, i(47793)), -- Gul'dan's Shoulderpads of Triumph	
+								un(2, i(47794)), -- Gul'dan's Robe of Triumph	
+								un(2, i(47797)), -- Gul'dan's Gloves of Triumph	
 								i(47286), -- Belt of Biting Cold	
-								i(47795), -- Gul'dan's Leggings of Triumph	
+								un(2, i(47795)), -- Gul'dan's Leggings of Triumph	
 								i(47873), -- Sunreaver Magus' Sandals	
 							},		
 							["classes"] = { 9 },		
@@ -2644,33 +2645,33 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						gs(826, { -- Runetotem's Battlegear			
 							["groups"] = {		
 								n(-9952, { -- Guardian / Feral Spec	
-									i(48201), -- Runetotem's Headguard of Triumph
-									i(48198), -- Runetotem's Shoulderpads of Triumph
-									i(48199), -- Runetotem's Raiments of Triumph
+									un(2, i(48201)), -- Runetotem's Headguard of Triumph
+									un(2, i(48198)), -- Runetotem's Shoulderpads of Triumph
+									un(2, i(48199)), -- Runetotem's Raiments of Triumph
 									i(47277), -- Bindings of the Autumn Willow
-									i(48202), -- Runetotem's Handgrips of Triumph
+									un(2, i(48202)), -- Runetotem's Handgrips of Triumph
 									i(47863), -- Belt of the Bloodhoof Emissary
-									i(48200), -- Runetotem's Legguards of Triumph
+									un(2, i(48200)), -- Runetotem's Legguards of Triumph
 									i(47262), -- Boots of the Harsh Winter
 								}),	
 								n(-9926, { -- Balance Spec	
-									i(48174), -- Runetotem's Cover of Triumph
-									i(48177), -- Runetotem's Mantle of Triumph
-									i(48176), -- Runetotem's Vestments of Triumph
+									un(2, i(48174)), -- Runetotem's Cover of Triumph
+									un(2, i(48177)), -- Runetotem's Mantle of Triumph
+									un(2, i(48176)), -- Runetotem's Vestments of Triumph
 									i(47277), -- Bindings of the Autumn Willow
-									i(48173), -- Runetotem's Gloves of Triumph
+									un(2, i(48173)), -- Runetotem's Gloves of Triumph
 									i(47863), -- Belt of the Bloodhoof Emissary
-									i(48175), -- Runetotem's Trousers of Triumph
+									un(2, i(48175)), -- Runetotem's Trousers of Triumph
 									i(47262), -- Boots of the Harsh Winter
 								}),	
 								n(-9927, { -- Restoration Spec	
-									i(48144), -- Runetotem's Headpiece of Triumph
-									i(48147), -- Runetotem's Spaulders of Triumph
-									i(48146), -- Runetotem's Robe of Triumph
+									un(2, i(48144)), -- Runetotem's Headpiece of Triumph
+									un(2, i(48147)), -- Runetotem's Spaulders of Triumph
+									un(2, i(48146)), -- Runetotem's Robe of Triumph
 									i(47277), -- Bindings of the Autumn Willow
-									i(48143), -- Runetotem's Handguards of Triumph
+									un(2, i(48143)), -- Runetotem's Handguards of Triumph
 									i(47863), -- Belt of the Bloodhoof Emissary
-									i(48145), -- Runetotem's Leggings of Triumph
+									un(2, i(48145)), -- Runetotem's Leggings of Triumph
 									i(47262), -- Boots of the Harsh Winter
 								}),	
 							},		
@@ -2678,26 +2679,26 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						}),			
 						gs(691, { -- Garona's Battlegear			
 							["groups"] = {		
-								i(48235), -- Garona's Helmet of Triumph	
-								i(48237), -- Garona's Pauldrons of Triumph	
-								i(48233), -- Garona's Breastplate of Triumph	
+								un(2, i(48235)), -- Garona's Helmet of Triumph	
+								un(2, i(48237)), -- Garona's Pauldrons of Triumph	
+								un(2, i(48233)), -- Garona's Breastplate of Triumph	
 								i(47313), -- Armbands of Dark Determination	
-								i(48234), -- Garona's Gauntlets of Triumph	
+								un(2, i(48234)), -- Garona's Gauntlets of Triumph	
 								i(47299), -- Belt of the Pitiless Killer	
-								i(48236), -- Garona's Legplates of Triumph	
+								un(2, i(48236)), -- Garona's Legplates of Triumph	
 								i(47853), -- Acidmaw Treads	
 							},		
 							["classes"] = { 4 },		
 						}),			
 						gs(738, { -- Windrunner's Pursuit			
 							["groups"] = {		
-								i(48267), -- Windrunner's Headpiece of Triumph	
-								i(48269), -- Windrunner's Spaulders of Triumph	
-								i(48265), -- Windrunner's Tunic of Triumph	
+								un(2, i(48267)), -- Windrunner's Headpiece of Triumph	
+								un(2, i(48269)), -- Windrunner's Spaulders of Triumph	
+								un(2, i(48265)), -- Windrunner's Tunic of Triumph	
 								i(47850), -- Bracers of the Northern Stalker	
-								i(48266), -- Windrunner's Handguards of Triumph	
+								un(2, i(48266)), -- Windrunner's Handguards of Triumph	
 								i(47311), -- Waistguard of Deathly Dominion	
-								i(48268), -- Windrunner's Legguards of Triumph	
+								un(2, i(48268)), -- Windrunner's Legguards of Triumph	
 								i(47867), -- Warsong Poacher's Greaves	
 							},		
 							["classes"] = { 3 },		
@@ -2705,33 +2706,33 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						gs(641, { -- Thrall's Garb			
 							["groups"] = {		
 								n(-9939, { -- Elemental Spec	
-									i(48328), -- Thrall's Helm of Triumph
-									i(48330), -- Thrall's Shoulderpads of Triumph
-									i(48326), -- Thrall's Hauberk of Triumph
+									un(2, i(48328)), -- Thrall's Helm of Triumph
+									un(2, i(48330)), -- Thrall's Shoulderpads of Triumph
+									un(2, i(48326)), -- Thrall's Hauberk of Triumph
 									i(47580), -- Black Chitin Bracers
-									i(48327), -- Thrall's Gloves of Triumph
+									un(2, i(48327)), -- Thrall's Gloves of Triumph
 									i(47866), -- Darkspear Ritual Binding
-									i(48329), -- Thrall's Kilt of Triumph
+									un(2, i(48329)), -- Thrall's Kilt of Triumph
 									i(47295), -- Sabatons of Tremoring Earth
 								}),	
 								n(-9940, { -- Enhancement Spec	
-									i(48358), -- Thrall's Faceguard of Triumph
-									i(48360), -- Thrall's Shoulderguards of Triumph
-									i(48356), -- Thrall's Chestguard of Triumph
+									un(2, i(48358)), -- Thrall's Faceguard of Triumph
+									un(2, i(48360)), -- Thrall's Shoulderguards of Triumph
+									un(2, i(48356)), -- Thrall's Chestguard of Triumph
 									i(47580), -- Black Chitin Bracers
-									i(48357), -- Thrall's Grips of Triumph
+									un(2, i(48357)), -- Thrall's Grips of Triumph
 									i(47866), -- Darkspear Ritual Binding
-									i(48359), -- Thrall's War-Kilt of Triumph
+									un(2, i(48359)), -- Thrall's War-Kilt of Triumph
 									i(47295), -- Sabatons of Tremoring Earth
 								}),	
 								n(-9941, { -- Restoration Spec	
-									i(48307), -- Thrall's Headpiece of Triumph
-									i(48309), -- Thrall's Spaulders of Triumph
-									i(48305), -- Thrall's Tunic of Triumph
+									un(2, i(48307)), -- Thrall's Headpiece of Triumph
+									un(2, i(48309)), -- Thrall's Spaulders of Triumph
+									un(2, i(48305)), -- Thrall's Tunic of Triumph
 									i(47580), -- Black Chitin Bracers
-									i(48306), -- Thrall's Handguards of Triumph
+									un(2, i(48306)), -- Thrall's Handguards of Triumph
 									i(47866), -- Darkspear Ritual Binding
-									i(48308), -- Thrall's Legguards of Triumph
+									un(2, i(48308)), -- Thrall's Legguards of Triumph
 									i(47295), -- Sabatons of Tremoring Earth
 								}),	
 							},		
@@ -2740,33 +2741,33 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						gs(707, { -- Liadrin's Plate			
 							["groups"] = {		
 								n(-9942, { -- Holy Spec	
-									i(48587), -- Liadrin's Headpiece of Triumph
-									i(48585), -- Liadrin's Spaulders of Triumph
-									i(48589), -- Liadrin's Tunic of Triumph
+									un(2, i(48587)), -- Liadrin's Headpiece of Triumph
+									un(2, i(48585)), -- Liadrin's Spaulders of Triumph
+									un(2, i(48589)), -- Liadrin's Tunic of Triumph
 									i(47298), -- Armguards of the Shieldmaiden
-									i(48588), -- Liadrin's Gloves of Triumph
+									un(2, i(48588)), -- Liadrin's Gloves of Triumph
 									i(47858), -- Girdle of the Frozen Reach
-									i(48586), -- Liadrin's Greaves of Triumph
+									un(2, i(48586)), -- Liadrin's Greaves of Triumph
 									i(47263), -- Sabatons of the Courageous
 								}),	
 								n(-9943, { -- Protection	
-									i(48649), -- Liadrin's Faceguard of Triumph
-									i(48647), -- Liadrin's Shoulderguards of Triumph
-									i(48651), -- Liadrin's Breastplate of Triumph
+									un(2, i(48649)), -- Liadrin's Faceguard of Triumph
+									un(2, i(48647)), -- Liadrin's Shoulderguards of Triumph
+									un(2, i(48651)), -- Liadrin's Breastplate of Triumph
 									i(47298), -- Armguards of the Shieldmaiden
-									i(48650), -- Liadrin's Handguards of Triumph
+									un(2, i(48650)), -- Liadrin's Handguards of Triumph
 									i(47858), -- Girdle of the Frozen Reach
-									i(48648), -- Liadrin's Legguards of Triumph
+									un(2, i(48648)), -- Liadrin's Legguards of Triumph
 									i(47263), -- Sabatons of the Courageous
 								}),	
 								n(-9944, { -- Retribution	
-									i(48619), -- Liadrin's Helm of Triumph
-									i(48621), -- Liadrin's Shoulderplates of Triumph
-									i(48617), -- Liadrin's Battleplate of Triumph
+									un(2, i(48619)), -- Liadrin's Helm of Triumph
+									un(2, i(48621)), -- Liadrin's Shoulderplates of Triumph
+									un(2, i(48617)), -- Liadrin's Battleplate of Triumph
 									i(47298), -- Armguards of the Shieldmaiden
-									i(48618), -- Liadrin's Gauntlets of Triumph
+									un(2, i(48618)), -- Liadrin's Gauntlets of Triumph
 									i(47858), -- Girdle of the Frozen Reach
-									i(48620), -- Liadrin's Legplates of Triumph
+									un(2, i(48620)), -- Liadrin's Legplates of Triumph
 									i(47263), -- Sabatons of the Courageous
 								}),	
 							},		
@@ -2775,23 +2776,23 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						gs(657, { -- Hellscream's Battlegear			
 							["groups"] = {		
 								n(-9953, { -- Fury / Arms Spec	
-									i(48398), -- Hellscream's Helmet of Triumph
-									i(48400), -- Hellscream's Battleplate of Triumph
-									i(48396), -- Hellscream's Shoulderplates of Triumph
+									un(2, i(48398)), -- Hellscream's Helmet of Triumph
+									un(2, i(48400)), -- Hellscream's Battleplate of Triumph
+									un(2, i(48396)), -- Hellscream's Shoulderplates of Triumph
 									i(47253), -- Boneshatter Vambraces
-									i(48397), -- Hellscream's Gauntlets of Triumph
+									un(2, i(48397)), -- Hellscream's Gauntlets of Triumph
 									i(47859), -- Belt of the Impaler
-									i(48399), -- Hellscream's Legplates of Triumph
+									un(2, i(48399)), -- Hellscream's Legplates of Triumph
 									i(47312), -- Greaves of the Saronite Citadel
 								}),	
 								n(-9947, { -- Protection Spec	
-									i(48468), -- Hellscream's Greathelm of Triumph
-									i(48470), -- Hellscream's Pauldrons of Triumph
-									i(48466), -- Hellscream's Breastplate of Triumph
+									un(2, i(48468)), -- Hellscream's Greathelm of Triumph
+									un(2, i(48470)), -- Hellscream's Pauldrons of Triumph
+									un(2, i(48466)), -- Hellscream's Breastplate of Triumph
 									i(47253), -- Boneshatter Vambraces
-									i(48467), -- Hellscream's Handguards of Triumph
+									un(2, i(48467)), -- Hellscream's Handguards of Triumph
 									i(47859), -- Belt of the Impaler
-									i(48469), -- Hellscream's Legguards of Triumph
+									un(2, i(48469)), -- Hellscream's Legguards of Triumph
 									i(47312), -- Greaves of the Saronite Citadel
 								}),	
 							},		
@@ -2800,26 +2801,27 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						gs(841, { -- Koltira's Battlegear			
 							["groups"] = {		
 								n(-9948, { -- Blood Spec	
-									i(48550), -- Koltira's Faceguard of Triumph
-									i(48552), -- Koltira's Pauldrons of Triumph
-									i(48548), -- Koltira's Chestguard of Triumph
+									un(2, i(48550)), -- Koltira's Faceguard of Triumph
+									un(2, i(48552)), -- Koltira's Pauldrons of Triumph
+									un(2, i(48548)), -- Koltira's Chestguard of Triumph
 									i(47869), -- Armplates of the Nether Lord
-									i(48549), -- Koltira's Handguards of Triumph
+									un(2, i(48549)), -- Koltira's Handguards of Triumph
 									i(47268), -- Bloodbath Girdle
-									i(48551), -- Koltira's Legguards of Triumph
+									un(2, i(48551)), -- Koltira's Legguards of Triumph
 									i(47269), -- Dawnbreaker Sabatons
 								}),	
 								n(-9954, { -- Frost / Unholy Spec	
-									i(48493), -- Koltira's Helmet of Triumph
-									i(48495), -- Koltira's Shoulderpads of Triumph
-									i(48491), -- Koltira's Battleplate of Triumph
+									un(2, i(48493)), -- Koltira's Helmet of Triumph
+									un(2, i(48495)), -- Koltira's Shoulderpads of Triumph
+									un(2, i(48491)), -- Koltira's Battleplate of Triumph
 									i(47869), -- Armplates of the Nether Lord
-									i(48492), -- Koltira's Gauntlets of Triumph
+									un(2, i(48492)), -- Koltira's Gauntlets of Triumph
 									i(47268), -- Bloodbath Girdle
-									i(48494), -- Koltira's Legplates of Triumph
+									un(2, i(48494)), -- Koltira's Legplates of Triumph
 									i(47269), -- Dawnbreaker Sabatons
 								}),								
-							},		
+							},
+							["classes"] = { 6 },	-- Death Knight
 						}),
 					}),
 				})),

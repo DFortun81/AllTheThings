@@ -45,9 +45,9 @@ _.Zones =
 							}),
 							qa(9803, { 	-- Messenger to the Feralfen
 								["groups"] = {
-									i(25613), 	-- Feralfen Mystic's Handwraps
 									i(25614), 	-- Feralfen Beastmaster's Hauberk
 									i(25615), 	-- Feralfen Champion's Boots
+									i(25613), 	-- Feralfen Mystic's Handwraps
 									i(31660), 	-- Feralfen Skulker's Belt
 								},
 								["qg"] = 18003,	-- Anchorite Ahuurn
@@ -64,8 +64,8 @@ _.Zones =
 								["groups"] = {
 									i(25599),	-- Explorer's Bands
 									i(25598),	-- Fen Strider's Bracer
-									i(25597),	-- Vindicator's Cinch
 									i(31659),	-- Researcher's Mantle
+									i(25597),	-- Vindicator's Cinch
 								},
 								["qg"] = 18004,	-- Vindicator Idaar
 								["sourceQuests"] = { 9782 },	-- The Dead Mire
@@ -75,10 +75,10 @@ _.Zones =
 							}),
 							qa(9896, { 	-- Blacksting's Bane
 								["groups"] = {
-									i(31786), 	-- Blacksting Shoulders
-									i(31787), 	-- Stalwart Girdle
 									i(31788), 	-- Blacksting Gloves
+									i(31786), 	-- Blacksting Shoulders
 									i(31789), 	-- Marshfang Boots
+									i(31787), 	-- Stalwart Girdle
 								},
 								["qg"] = 18295,	-- Prospector Conall
 								["sourceQuests"] = { 9901 },	-- Unfinished Business
@@ -113,8 +113,8 @@ _.Zones =
 							qa(9839, { 	-- Overlord Gorefist
 								["groups"] = {
 									i(25619),	-- Glowing Crystal Insignia
-									i(25618),	-- Telaar Courier's Cloak
 									i(31770),	-- Marsh Bracers
+									i(25618),	-- Telaar Courier's Cloak
 								},
 								["qg"] = 18008,	-- Ikuti
 								["sourceQuests"] = { 9835 },	-- Ango'rosh Encroachment
@@ -143,18 +143,18 @@ _.Zones =
 							qa(9833, {	-- Lines of Communication
 								["groups"] = {
 									i( 27753),	-- Ensorcelled Marshfang Blade
+									i(157547),	-- Keen Marshfang Shanker
 									i( 27754),	-- Keen Marshfang Slicer
 									i( 27756),	-- Marshfang Blade Axe
-									i(157547),	-- Keen Marshfang Shanker
 								},
 								["qg"] = 18009,	-- Puluu
 								["sourceQuests"] = { 10116 },	-- WANTED: Chieftain Mummaki
 							}),
 							qa(9902, {	-- The Terror of Marshlight Lake
 								["groups"] = {
-									i(25924),	-- Swamprunner's Boots
-									i(25923),	-- Fierce Mantle
 									i(25922),	-- Fearless Girdle
+									i(25923),	-- Fierce Mantle
+									i(25924),	-- Swamprunner's Boots
 									i(25925),	-- Terrorcloth Mantle
 								},
 								["qg"] = 18009,	-- Puluu
@@ -177,10 +177,10 @@ _.Zones =
 							}),
 							q(9709, {	-- Stealing Back the Mushrooms (awarded "Don't Eat THOSE Mushrooms!" criteria)
 								["groups"] = {
-									i(25525),	-- Zangar Epaulets
-									i(25534),	-- Marsh Survivalist's Belt
 									i(25530),	-- Helm of Natural Purity
 									i(31661),	-- Leesa'oh's Wristbands
+									i(25534),	-- Marsh Survivalist's Belt
+									i(25525),	-- Zangar Epaulets
 								},
 								["qg"] = 17831,	-- Watcher Leesa'oh
 								["sourceQuests"] = { 9708 },	-- Familiar Fungi
@@ -227,14 +227,14 @@ _.Zones =
 							}),--]]
 						}),
 						crit(6, {	-- Saving the Sporeloks
-							 q(9747, {	-- The Umbrafen Tribe
+							q(9747, {	-- The Umbrafen Tribe
 								["qg"] = 17956,	-- Ikeyen
 							}),
-							 q(9788, {	-- A Damp, Dark Place
+							q(9788, {	-- A Damp, Dark Place
 								["groups"] = {
 									i(25516),	-- Ikeyen's Boots
-									i(25515),	-- Mud Encrusted Boots
 									i(25514),	-- Ikeyen's Pauldrons
+									i(25515),	-- Mud Encrusted Boots
 									i(27716),	-- Refuge Armor
 								},
 								["qg"] = 17956,	-- Ikeyen
@@ -242,15 +242,15 @@ _.Zones =
 							}),
 							q(10096, {	-- Saving the Sporeloks
 								["groups"] = {
-									i(27717),	-- Expedition Forager Leggings
 									i(31657),	-- Chemise of Rebirth
 									i(27715),	-- Circle's Stalwart Helmet
+									i(27717),	-- Expedition Forager Leggings
 									i(31658),	-- Scout's Hood
 								},
 								["qg"] = 17909,	-- Lauranna Thar'well
 								["sourceQuests"] = { 9747 },	-- The Umbrafen Tribe
 							}),
-							 q(9894, {	-- Safeguarding the Watchers (awarded "Saving the Sporeloks" criteria)
+							q(9894, {	-- Safeguarding the Watchers (awarded "Saving the Sporeloks" criteria)
 								["qg"] = 18070,	-- Windcaller Blackhoof
 								["sourceQuests"] = { 9747 },	-- The Umbrafen Tribe
 							}),
@@ -279,9 +279,9 @@ _.Zones =
 							}),
 							q(9726, {	-- Now That We're Friends...
 								["groups"] = {
+									i(27750),	-- Hammer of the Sporelings
 									i(27749),	-- Staff of the Wild
 									i(27751),	-- Survivalist's Pike
-									i(27750),	-- Hammer of the Sporelings
 									i(27752),	-- Zangarmarsh Claymore
 								},
 								["qg"] = 17856,	-- Gzhun'tt
@@ -290,8 +290,8 @@ _.Zones =
 							q(9729, {	-- Fhwoor Smash!
 								["groups"] = {
 									i(25537),	-- Hewing Axe of the Marsh
-									i(25538),	-- Sporeling Claw
 									i(25536),	-- Sporeggar Smasher
+									i(25538),	-- Sporeling Claw
 								},
 								["qg"] = 17877,	-- Fhwoor
 								["description"] = "Invisible until you reach Friendly with Sporeggar.",	
@@ -315,21 +315,22 @@ _.Zones =
 						}),
 						q(9752, {	-- Escape from Umbrafen
 							i( 25518),	-- Explorer's Leggings
+							i(25517),	-- Preserver's Medallion
 							i( 25519),	-- Warden's Hammer
 							i(157548),	-- Warden's Longbow 
 						}),
 						o(182115, {	-- Wanted Poster
 							q(9817,  { 	-- Leader of the Bloodscale
-								i(27724), 	-- Wild Shoulderpads
-								i(27722), 	-- Gloves of Marshmanship
 								i(27723), 	-- Belt of the Moonkin
 								i(27721), 	-- Expedition Footgear
+								i(27722), 	-- Gloves of Marshmanship
+								i(27724), 	-- Wild Shoulderpads
 							}),
 							q(9730,  {	-- Leader of the Darkcrest
 								i(27728),	-- Cushy Cenarion Walkers
 								i(27725),	-- Expedition Mantle
-								i(27727),	-- Swift Cenarion Footwear
 								i(27726),	-- Hearty Cenarion Cincture
+								i(27727),	-- Swift Cenarion Footwear
 							}),
 						}),
 						qa(9794, {	-- No Time for Curiosity
@@ -394,189 +395,134 @@ _.Zones =
 							["questID"] = 9828,	-- Withered Basidium
 						},
 					}),
-							
-							
-							
-						qh(9899, {	-- A Job Undone (awarded "Swamprat Post" criteria)
-							["qg"] = 18016,	-- Magasha
-							["sourceQuests"] = { 9773 },	-- No More Mushrooms!
-						}),
-						
-						
-						qh(9845, {	-- Angling to Beat the Competition
-							["qg"] = 18018,	-- Zurjaya
-						}),
-						
-						
-						qh(9847, {	-- A Spirit Ally?
-							["groups"] = {
-								i(25621),
-								i(31770),
-							},
-							["qg"] = 18017,	-- Seer Janidi
-							["sourceQuests"] = { 9846 },	-- Spirits of the Feralfen
-						}),
-						
-						
-						qh(9814, {	-- Burstcap Mushrooms, Mon!
-							["qg"] = 18014,	-- Witch Doctor Tor'gash
-						}),
-						
-						
-						qh(9816, {	-- Have You Ever Seen One of These? (awarded "Zabra'jin" criteria)
-							["groups"] = {
-								i(25611),	-- The Witch Doctor's Wraps
-								i(25612),	-- Daggerfen Mail
-								i(25610),	-- Fen Strider's Footguards
-							},
-							["qg"] = 18014,	-- Witch Doctor Tor'gash
-							["sourceQuests"] = { 9814 },	-- Burstcap Mushrooms, Mon!
-						}),
-						
-						
-						qh(9822, {	-- Impending Attack
-							["qg"] = 18013,	-- Shadow Hunter Denjai
-							["sourceQuests"] = { 9820 },	-- WANTED: Boss Grog'ak
-						}),
-						
-						
-						qh(9772, {	-- Jyoba's Report
-							["groups"] = {
-								i(25600),	-- Bog Walker's Bands
-								i(25601),	-- Murk-Darkened Bracers
-								i(25602),	-- Bog Walker's Belt
-								i(31768),	-- Deep Mire Cloak
-							},
-							["qg"] = 18035,	-- Scout Jyoba
-							["sourceQuests"] = { 9771 },	-- Searching for Scout Jyoba
-						}),
-						
-						
-						qh(9770, {	-- Menacing Marshfangs
-							["qg"] = 18012,	-- Reavij
-						}),
-						
-						
-						qh(10118, {	-- Message to the Daggerfen (awarded "The Defense of Zabra'jin" criteria and overall "Mysteries of the Marsh" zone achievement)
-							["qg"] = 18013,	-- Shadow Hunter Denjai
-							["sourceQuests"] = { 9822 },	-- Impending Attack
-						}),
-						
-						
-						qh(10105, {	-- News for Rakoria
-							["qg"] = 18013,	-- Shadow Hunter Denjai
-						}),
-						
-						
-						qh(9796, {	-- News from Zangarmarsh
-							["qg"] = 18011,	-- Zurai
-						}),
-						
-						
-						qh(9773, {	-- No More Mushrooms!
-							["qg"] = 18016,	-- Magasha
-						}),
-						
-						
-						qh(9898, {	-- Nothin' Says Lovin' Like a Big Stinger
-							["groups"] = {
-								i(31786),	-- Blacksting Shoulders
-								i(31787),	-- Stalwart Girdle
-								i(31788),	-- Blacksting Gloves
-								i(31789),	-- Marshfang Boots
-							},
-							["qg"] = 18012,	-- Reavij
-							["sourceQuests"] = { 9770 },	-- Menacing Marshfangs
-						}),
-						
-						
-						qh(9904, {	-- Pursuing Terrorclaw
-							["groups"] = {
-								i(25924),	-- Swamprunner's Boots
-								i(25923),	-- Fierce Mantle
-								i(25922),	-- Fearless Girdle
-								i(25925),	-- Terrorcloth Mantle
-							},
-							["qg"] = 18018,	-- Zurjaya
-							["sourceQuests"] = { 9845 },	-- Angling to Beat the Competition
-						}),
-						
-						
-						qh(9797, {	-- Reinforcements for Garadar
-							["qg"] = 18091,	-- Messenger Gazgrigg
-						}),
-						
-						
-						qh(9775, {	-- Report to Shadow Hunter Denjai
-							["qg"] = 18011,	-- Zurai
-						}),
-						
-
-						qh(9771, {	-- Searching for Scout Jyoba
-							["qg"] = 18011,	-- Zurai
-							["sourceQuests"] = { 9774 },	-- Thick Hydra Scales
-						}),
-						
-						
-						qh(9846, {	-- Spirits of the Feralfen
-							["qg"] = 18017,	-- Seer Janidi
-						}),
-						
-						
-						qh(9841, {	-- Stinging the Stingers
-							["qg"] = 18015,	-- Gambarinka
-						}),
-						
-						
-						qh(9903, {	-- The Biggest of Them All
-							["qg"] = 18018,	-- Zurjaya
-							["sourceQuests"] = { 9845 },	-- Angling to Beat the Competition
-						}),
-						
-						
-						qh(9795, {	-- The Ogre Threat
-							["qg"] = 18013,	-- Shadow Hunter Denjai
-						}),
-						
-						
-						qh(9769, {	-- There's No Explanation for Fashion
-							["qg"] = 18016,	-- Magasha
-						}),
-						
-						
-						qh(9842, {	-- The Sharpest Blades
-							["groups"] = {
-								i( 27756),	-- Marshfang Blade Axe
-								i( 27753),	-- Ensorcelled Marshfang Blade
-								i( 27754),	-- Keen Marshfang Slicer
-								i(157547),	-- Keen Marshfang Shanker
-							},
-							["qg"] = 18015,	-- Gambarinka
-							["sourceQuests"] = { 9841 },	-- Stinging the Stingers
-						}),
-						
-						
-						qh(9774, {	-- Thick Hydra Scales
-							["qg"] = 18011,	-- Zurai
-						}),
-					
-					
-						qh(9823, {	-- Us or Them
-							["groups"] = {
-								i(25617),	-- Captain Krosh's Crash Helmet
-							},
-							["qg"] = 18013,	-- Shadow Hunter Denjai
-							["sourceQuests"] = { 9822 },	-- Impending Attack
-						}),
-					
-					
-						o(182165, {	-- Wanted Poster
-							qh( 9820),	-- WANTED: Boss Grog'ak
-							qh(10117),	-- Wanted: Chieftain Mummaki
-						}),
-					
-					
-
+					qh(9899, {	-- A Job Undone (awarded "Swamprat Post" criteria)
+						["qg"] = 18016,	-- Magasha
+						["sourceQuests"] = { 9773 },	-- No More Mushrooms!
+					}),
+					qh(9845, {	-- Angling to Beat the Competition
+						["qg"] = 18018,	-- Zurjaya
+					}),
+					qh(9847, {	-- A Spirit Ally?
+						["groups"] = {
+							i(25620),	-- Ancient Crystal Talisman
+							i(31770),	-- Marsh Bracers
+							i(25621),	-- Serpent Spirit's Drape
+						},
+						["qg"] = 18017,	-- Seer Janidi
+						["sourceQuests"] = { 9846 },	-- Spirits of the Feralfen
+					}),
+					qh(9814, {	-- Burstcap Mushrooms, Mon!
+						["qg"] = 18014,	-- Witch Doctor Tor'gash
+					}),
+					qh(9816, {	-- Have You Ever Seen One of These? (awarded "Zabra'jin" criteria)
+						["groups"] = {
+							i(25612),	-- Daggerfen Mail
+							i(25610),	-- Fen Strider's Footguards
+							i(25611),	-- The Witch Doctor's Wraps
+						},
+						["qg"] = 18014,	-- Witch Doctor Tor'gash
+						["sourceQuests"] = { 9814 },	-- Burstcap Mushrooms, Mon!
+					}),
+					qh(9822, {	-- Impending Attack
+						["qg"] = 18013,	-- Shadow Hunter Denjai
+						["sourceQuests"] = { 9820 },	-- WANTED: Boss Grog'ak
+					}),
+					qh(9772, {	-- Jyoba's Report
+						["groups"] = {
+							i(25600),	-- Bog Walker's Bands
+							i(25602),	-- Bog Walker's Belt
+							i(31768),	-- Deep Mire Cloak
+							i(25601),	-- Murk-Darkened Bracers
+						},
+						["qg"] = 18035,	-- Scout Jyoba
+						["sourceQuests"] = { 9771 },	-- Searching for Scout Jyoba
+					}),
+					qh(9770, {	-- Menacing Marshfangs
+						["qg"] = 18012,	-- Reavij
+					}),
+					qh(10118, {	-- Message to the Daggerfen (awarded "The Defense of Zabra'jin" criteria and overall "Mysteries of the Marsh" zone achievement)
+						["qg"] = 18013,	-- Shadow Hunter Denjai
+						["sourceQuests"] = { 9822 },	-- Impending Attack
+					}),
+					qh(10105, {	-- News for Rakoria
+						["qg"] = 18013,	-- Shadow Hunter Denjai
+					}),
+					qh(9796, {	-- News from Zangarmarsh
+						["qg"] = 18011,	-- Zurai
+					}),
+					qh(9773, {	-- No More Mushrooms!
+						["qg"] = 18016,	-- Magasha
+					}),
+					qh(9898, {	-- Nothin' Says Lovin' Like a Big Stinger
+						["groups"] = {
+							i(31788),	-- Blacksting Gloves
+							i(31786),	-- Blacksting Shoulders
+							i(31789),	-- Marshfang Boots
+							i(31787),	-- Stalwart Girdle
+						},
+						["qg"] = 18012,	-- Reavij
+						["sourceQuests"] = { 9770 },	-- Menacing Marshfangs
+					}),
+					qh(9904, {	-- Pursuing Terrorclaw
+						["groups"] = {
+							i(25922),	-- Fearless Girdle
+							i(25923),	-- Fierce Mantle
+							i(25924),	-- Swamprunner's Boots
+							i(25925),	-- Terrorcloth Mantle
+						},
+						["qg"] = 18018,	-- Zurjaya
+						["sourceQuests"] = { 9845 },	-- Angling to Beat the Competition
+					}),
+					qh(9797, {	-- Reinforcements for Garadar
+						["qg"] = 18091,	-- Messenger Gazgrigg
+					}),
+					qh(9775, {	-- Report to Shadow Hunter Denjai
+						["qg"] = 18011,	-- Zurai
+					}),
+					qh(9771, {	-- Searching for Scout Jyoba
+						["qg"] = 18011,	-- Zurai
+						["sourceQuests"] = { 9774 },	-- Thick Hydra Scales
+					}),
+					qh(9846, {	-- Spirits of the Feralfen
+						["qg"] = 18017,	-- Seer Janidi
+					}),
+					qh(9841, {	-- Stinging the Stingers
+						["qg"] = 18015,	-- Gambarinka
+					}),
+					qh(9903, {	-- The Biggest of Them All
+						["qg"] = 18018,	-- Zurjaya
+						["sourceQuests"] = { 9845 },	-- Angling to Beat the Competition
+					}),
+					qh(9795, {	-- The Ogre Threat
+						["qg"] = 18013,	-- Shadow Hunter Denjai
+					}),
+					qh(9769, {	-- There's No Explanation for Fashion
+						["qg"] = 18016,	-- Magasha
+					}),
+					qh(9842, {	-- The Sharpest Blades
+						["groups"] = {
+							i( 27753),	-- Ensorcelled Marshfang Blade
+							i(157547),	-- Keen Marshfang Shanker
+							i( 27754),	-- Keen Marshfang Slicer
+							i( 27756),	-- Marshfang Blade Axe
+						},
+						["qg"] = 18015,	-- Gambarinka
+						["sourceQuests"] = { 9841 },	-- Stinging the Stingers
+					}),
+					qh(9774, {	-- Thick Hydra Scales
+						["qg"] = 18011,	-- Zurai
+					}),
+					qh(9823, {	-- Us or Them
+						["groups"] = {
+							i(25617),	-- Captain Krosh's Crash Helmet
+						},
+						["qg"] = 18013,	-- Shadow Hunter Denjai
+						["sourceQuests"] = { 9822 },	-- Impending Attack
+					}),
+					o(182165, {	-- Wanted Poster
+						qh( 9820),	-- WANTED: Boss Grog'ak
+						qh(10117),	-- Wanted: Chieftain Mummaki
+					}),
 -- DUNGEON QUESTS
 					qdg(q(29566, {	-- Checking Up
 						["qg"] = 17841,	-- Ysiel Windsinger
@@ -747,7 +693,6 @@ _.Zones =
 							i(23596), -- Plans: Adamantite Breastplate
 							i(23594), -- Plans: Adamantite Plate Bracers
 							i(23595), -- Plans: Adamantite Plate Gloves
-
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -788,10 +733,10 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests
 							un(40, qdg(q(9763, {	-- The Warlord's Hideout
-								un(34, i(28183)),	-- Hydromancer's Headwrap
-								un(34, i(28182)),	-- Helm of the Claw
-								un(34, i(28181)),	-- Earthwarden's Coif
-								un(34, i(28180)),	-- Myrmidon's Headdress
+								un(2, i(28181)),	-- Earthwarden's Coif
+								un(2, i(28182)),	-- Helm of the Claw
+								un(2, i(28183)),	-- Hydromancer's Headwrap
+								un(2, i(28180)),	-- Myrmidon's Headdress
 							}))),
 						}),
 						--n(-16, {	-- Rares (Legacy)

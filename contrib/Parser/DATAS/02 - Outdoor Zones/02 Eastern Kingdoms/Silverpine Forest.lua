@@ -776,9 +776,16 @@ _.Zones =
 					},
 				}),
 				m(217, {	-- Ruins of Gilneas
+					n(-228, {	-- Flight Paths
+						fp(646, {	-- Foresaken Forward Command, Gilneas
+							["coord"] = { 57.2, 17.8 },
+							["description"] = "Becomes available during To Foresaken Forward Command and is no longer available after The Great Esacpe.",
+						}),
+					}),
 					n(-17, { -- Quests
 						qh(27406, {	-- A Man Named Godfrey
 							["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
+							["coord"] = { 72.9, 30.1 },
 							["sourceQuests"] = { 27405 },	-- Fall Back!
 						}),
 						ql(q(30093, {	-- Assassinate Creed
@@ -789,6 +796,7 @@ _.Zones =
 						})),
 						qh(27349, {	-- Break in Communications: Dreadwatch Outpost
 							["qg"] = 45315,	-- Forward Commander Onslaught
+							["coord"] = { 57.5, 18.2 },
 							["sourceQuests"] = { 27333, 27345 },	-- Losing Ground / The F.C.D.
 						}),
 						qh(27350, {	-- Break in Communications: Rutsak's Guard
@@ -810,6 +818,7 @@ _.Zones =
 								i(131665),	-- Wolfsbane Harness
 							},
 							["qg"] = 45312,	-- Deathstalker Commander Belmont
+							["coord"] = { 57.4, 18.9 },
 							["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 						}),
 						n(45301, {	-- Korok the Colossus
@@ -827,6 +836,7 @@ _.Zones =
 						}),
 						qh(27333, {	-- Losing Ground
 							["qg"] = 45315,	-- Forward Commander Onslaught
+							["coord"] = { 57.5, 18.2 },
 							["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 						}),
 						qh(27364, {	-- On Whose Orders?
@@ -847,6 +857,7 @@ _.Zones =
 						})),						
 						qh(27345, {	-- The F.C.D.
 							["qg"] = 45315,	-- Forward Commander Onslaught
+							["coord"] = { 57.5, 18.2 },
 							["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 						}),
 						qh(27438, {	-- The Great Escape (awards "Ruins of Gilneas" criteria for zone achievement)
@@ -867,6 +878,7 @@ _.Zones =
 								i(131667),	-- War Blood Gloves
 							},
 							["qg"] = 45389,	-- Captain Rutsak
+							["coord"] = { 65.6, 34.1 },
 							["sourceQuests"] = { 27350 },	-- Break in Communication: Rutsak's Guard
 						}),
 						qh(27401, {	-- What Tomorrow Brings

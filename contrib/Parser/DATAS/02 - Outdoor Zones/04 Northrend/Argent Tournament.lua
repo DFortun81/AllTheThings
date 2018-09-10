@@ -421,238 +421,238 @@ _.Zones =
 					h(n(35576, { -- Champion Faesrol <Triumphant Armor Vendor>
 						-- Tier 9 START
 						gs(350, { -- Zabra's Regalia
-							i(48058),	-- Zabra's Cowl of Triumph
-							i(48061),	-- Zabra's Shoulderpads of Triumph
-							i(48060),	-- Zabra's Robe of Triumph
-							i(48057),	-- Zabra's Gloves of Triumph
-							i(48059),	-- Zabra's Leggings of Triumph
-							i(48088),	-- Zabra's Circlet of Triumph
-							i(48091),	-- Zabra's Mantle of Triumph
-							i(48090),	-- Zabra's Raiments of Triumph
-							i(48087),	-- Zabra's Handwraps of Triumph
-							i(48089),	-- Zabra's Pants of Triumph
+							un(2, i(48058)),	-- Zabra's Cowl of Triumph
+							un(2, i(48061)),	-- Zabra's Shoulderpads of Triumph
+							un(2, i(48060)),	-- Zabra's Robe of Triumph
+							un(2, i(48057)),	-- Zabra's Gloves of Triumph
+							un(2, i(48059)),	-- Zabra's Leggings of Triumph
+							un(2, i(48088)),	-- Zabra's Circlet of Triumph
+							un(2, i(48091)),	-- Zabra's Mantle of Triumph
+							un(2, i(48090)),	-- Zabra's Raiments of Triumph
+							un(2, i(48087)),	-- Zabra's Handwraps of Triumph
+							un(2, i(48089)),	-- Zabra's Pants of Triumph
 						}),
 						gs(723, { -- Sunstrider's Regalia
-							i(47764),	-- Sunstrider's Hood of Triumph
-							i(47767),	-- Sunstrider's Shoulderpads of Triumph
-							i(47766),	-- Sunstrider's Robe of Triumph
-							i(47763),	-- Sunstrider's Gauntlets of Triumph
-							i(47765),	-- Sunstrider's Leggings of Triumph
+							un(2, i(47764)),	-- Sunstrider's Hood of Triumph
+							un(2, i(47767)),	-- Sunstrider's Shoulderpads of Triumph
+							un(2, i(47766)),	-- Sunstrider's Robe of Triumph
+							un(2, i(47763)),	-- Sunstrider's Gauntlets of Triumph
+							un(2, i(47765)),	-- Sunstrider's Leggings of Triumph
 						}),
 						gs(675, { -- Gul'dan's Regalia
-							i(47796),	-- Gul'dan's Hood of Triumph
-							i(47793),	-- Gul'dan's Shoulderpads of Triumph
-							i(47794),	-- Gul'dan's Robe of Triumph
-							i(47797),	-- Gul'dan's Gloves of Triumph
-							i(47795),	-- Gul'dan's Leggings of Triumph
+							un(2, i(47796)),	-- Gul'dan's Hood of Triumph
+							un(2, i(47793)),	-- Gul'dan's Shoulderpads of Triumph
+							un(2, i(47794)),	-- Gul'dan's Robe of Triumph
+							un(2, i(47797)),	-- Gul'dan's Gloves of Triumph
+							un(2, i(47795)),	-- Gul'dan's Leggings of Triumph
 						}),
 						gs(826, { -- Runetotem's Battlegear
-							i(48201),	-- Runetotem's Headguard of Triumph
-							i(48198),	-- Runetotem's Shoulderpads of Triumph
-							i(48199),	-- Runetotem's Raiments of Triumph
-							i(48202),	-- Runetotem's Handgrips of Triumph
-							i(48200),	-- Runetotem's Legguards of Triumph
-							i(48174),	-- Runetotem's Cover of Triumph
-							i(48177),	-- Runetotem's Mantle of Triumph
-							i(48176),	-- Runetotem's Vestments of Triumph
-							i(48173),	-- Runetotem's Gloves of Triumph
-							i(48175),	-- Runetotem's Trousers of Triumph
-							i(48144),	-- Runetotem's Headpiece of Triumph
-							i(48147),	-- Runetotem's Spaulders of Triumph
-							i(48146),	-- Runetotem's Robe of Triumph
-							i(48143),	-- Runetotem's Handguards of Triumph
-							i(48145),	-- Runetotem's Leggings of Triumph
+							un(2, i(48201)),	-- Runetotem's Headguard of Triumph
+							un(2, i(48198)),	-- Runetotem's Shoulderpads of Triumph
+							un(2, i(48199)),	-- Runetotem's Raiments of Triumph
+							un(2, i(48202)),	-- Runetotem's Handgrips of Triumph
+							un(2, i(48200)),	-- Runetotem's Legguards of Triumph
+							un(2, i(48174)),	-- Runetotem's Cover of Triumph
+							un(2, i(48177)),	-- Runetotem's Mantle of Triumph
+							un(2, i(48176)),	-- Runetotem's Vestments of Triumph
+							un(2, i(48173)),	-- Runetotem's Gloves of Triumph
+							un(2, i(48175)),	-- Runetotem's Trousers of Triumph
+							un(2, i(48144)),	-- Runetotem's Headpiece of Triumph
+							un(2, i(48147)),	-- Runetotem's Spaulders of Triumph
+							un(2, i(48146)),	-- Runetotem's Robe of Triumph
+							un(2, i(48143)),	-- Runetotem's Handguards of Triumph
+							un(2, i(48145)),	-- Runetotem's Leggings of Triumph
 						}),
 						gs(691, { -- Garona's Battlegear
-							i(48235),	-- Garona's Helmet of Triumph
-							i(48237),	-- Garona's Pauldrons of Triumph
-							i(48233),	-- Garona's Breastplate of Triumph
-							i(48234),	-- Garona's Gauntlets of Triumph
-							i(48236),	-- Garona's Legplates of Triumph
+							un(2, i(48235)),	-- Garona's Helmet of Triumph
+							un(2, i(48237)),	-- Garona's Pauldrons of Triumph
+							un(2, i(48233)),	-- Garona's Breastplate of Triumph
+							un(2, i(48234)),	-- Garona's Gauntlets of Triumph
+							un(2, i(48236)),	-- Garona's Legplates of Triumph
 						}),
 						gs(738, { -- Windrunner's Pursuit
-							i(48267),	-- Windrunner's Headpiece of Triumph
-							i(48269),	-- Windrunner's Spaulders of Triumph
-							i(48265),	-- Windrunner's Tunic of Triumph
-							i(48266),	-- Windrunner's Handguards of Triumph
-							i(48268),	-- Windrunner's Legguards of Triumph
+							un(2, i(48267)),	-- Windrunner's Headpiece of Triumph
+							un(2, i(48269)),	-- Windrunner's Spaulders of Triumph
+							un(2, i(48265)),	-- Windrunner's Tunic of Triumph
+							un(2, i(48266)),	-- Windrunner's Handguards of Triumph
+							un(2, i(48268)),	-- Windrunner's Legguards of Triumph
 						}),	
 						gs(641, { -- Thrall's Garb
-							i(48328),	-- Thrall's Helm of Triumph
-							i(48330),	-- Thrall's Shoulderpads of Triumph
-							i(48326),	-- Thrall's Hauberk of Triumph
-							i(48327),	-- Thrall's Gloves of Triumph
-							i(48329),	-- Thrall's Kilt of Triumph
-							i(48358),	-- Thrall's Faceguard of Triumph
-							i(48360),	-- Thrall's Shoulderguards of Triumph
-							i(48356),	-- Thrall's Chestguard of Triumph
-							i(48357),	-- Thrall's Grips of Triumph
-							i(48359),	-- Thrall's War-Kilt of Triumph
-							i(48307),	-- Thrall's Headpiece of Triumph
-							i(48309),	-- Thrall's Spaulders of Triumph
-							i(48305),	-- Thrall's Tunic of Triumph
-							i(48306),	-- Thrall's Handguards of Triumph
-							i(48308),	-- Thrall's Legguards of Triumph
+							un(2, i(48328)),	-- Thrall's Helm of Triumph
+							un(2, i(48330)),	-- Thrall's Shoulderpads of Triumph
+							un(2, i(48326)),	-- Thrall's Hauberk of Triumph
+							un(2, i(48327)),	-- Thrall's Gloves of Triumph
+							un(2, i(48329)),	-- Thrall's Kilt of Triumph
+							un(2, i(48358)),	-- Thrall's Faceguard of Triumph
+							un(2, i(48360)),	-- Thrall's Shoulderguards of Triumph
+							un(2, i(48356)),	-- Thrall's Chestguard of Triumph
+							un(2, i(48357)),	-- Thrall's Grips of Triumph
+							un(2, i(48359)),	-- Thrall's War-Kilt of Triumph
+							un(2, i(48307)),	-- Thrall's Headpiece of Triumph
+							un(2, i(48309)),	-- Thrall's Spaulders of Triumph
+							un(2, i(48305)),	-- Thrall's Tunic of Triumph
+							un(2, i(48306)),	-- Thrall's Handguards of Triumph
+							un(2, i(48308)),	-- Thrall's Legguards of Triumph
 						}),	
 						gs(707, { -- Liadrin's Plate
-							i(48587),	-- Liadrin's Headpiece of Triumph
-							i(48585),	-- Liadrin's Spaulders of Triumph
-							i(48589),	-- Liadrin's Tunic of Triumph
-							i(48588),	-- Liadrin's Gloves of Triumph
-							i(48586),	-- Liadrin's Greaves of Triumph
-							i(48649),	-- Liadrin's Faceguard of Triumph
-							i(48647),	-- Liadrin's Shoulderguards of Triumph
-							i(48651),	-- Liadrin's Breastplate of Triumph
-							i(48650),	-- Liadrin's Handguards of Triumph
-							i(48648),	-- Liadrin's Legguards of Triumph
-							i(48619),	-- Liadrin's Helm of Triumph
-							i(48621),	-- Liadrin's Shoulderplates of Triumph
-							i(48617),	-- Liadrin's Battleplate of Triumph
-							i(48618),	-- Liadrin's Gauntlets of Triumph
-							i(48620),	-- Liadrin's Legplates of Triumph
+							un(2, i(48587)),	-- Liadrin's Headpiece of Triumph
+							un(2, i(48585)),	-- Liadrin's Spaulders of Triumph
+							un(2, i(48589)),	-- Liadrin's Tunic of Triumph
+							un(2, i(48588)),	-- Liadrin's Gloves of Triumph
+							un(2, i(48586)),	-- Liadrin's Greaves of Triumph
+							un(2, i(48649)),	-- Liadrin's Faceguard of Triumph
+							un(2, i(48647)),	-- Liadrin's Shoulderguards of Triumph
+							un(2, i(48651)),	-- Liadrin's Breastplate of Triumph
+							un(2, i(48650)),	-- Liadrin's Handguards of Triumph
+							un(2, i(48648)),	-- Liadrin's Legguards of Triumph
+							un(2, i(48619)),	-- Liadrin's Helm of Triumph
+							un(2, i(48621)),	-- Liadrin's Shoulderplates of Triumph
+							un(2, i(48617)),	-- Liadrin's Battleplate of Triumph
+							un(2, i(48618)),	-- Liadrin's Gauntlets of Triumph
+							un(2, i(48620)),	-- Liadrin's Legplates of Triumph
 						}),
 						gs(657, { -- Hellscream's Battlegear	
-							i(48398),	-- Hellscream's Helmet of Triumph
-							i(48400),	-- Hellscream's Battleplate of Triumph
-							i(48396),	-- Hellscream's Shoulderplates of Triumph
-							i(48397),	-- Hellscream's Gauntlets of Triumph
-							i(48399),	-- Hellscream's Legplates of Triumph
-							i(48468),	-- Hellscream's Greathelm of Triumph
-							i(48470),	-- Hellscream's Pauldrons of Triumph
-							i(48466),	-- Hellscream's Breastplate of Triumph
-							i(48467),	-- Hellscream's Handguards of Triumph
-							i(48469),	-- Hellscream's Legguards of Triumph
+							un(2, i(48398)),	-- Hellscream's Helmet of Triumph
+							un(2, i(48400)),	-- Hellscream's Battleplate of Triumph
+							un(2, i(48396)),	-- Hellscream's Shoulderplates of Triumph
+							un(2, i(48397)),	-- Hellscream's Gauntlets of Triumph
+							un(2, i(48399)),	-- Hellscream's Legplates of Triumph
+							un(2, i(48468)),	-- Hellscream's Greathelm of Triumph
+							un(2, i(48470)),	-- Hellscream's Pauldrons of Triumph
+							un(2, i(48466)),	-- Hellscream's Breastplate of Triumph
+							un(2, i(48467)),	-- Hellscream's Handguards of Triumph
+							un(2, i(48469)),	-- Hellscream's Legguards of Triumph
 						}),
 						gs(841, { -- Koltira's Battlegear
-							i(48550),	-- Koltira's Faceguard of Triumph
-							i(48552),	-- Koltira's Pauldrons of Triumph
-							i(48548),	-- Koltira's Chestguard of Triumph
-							i(48549),	-- Koltira's Handguards of Triumph
-							i(48551),	-- Koltira's Legguards of Triumph
-							i(48493),	-- Koltira's Helmet of Triumph
-							i(48495),	-- Koltira's Shoulderpads of Triumph
-							i(48491),	-- Koltira's Battleplate of Triumph
-							i(48492),	-- Koltira's Gauntlets of Triumph
-							i(48494),	-- Koltira's Legplates of Triumph
+							un(2, i(48550)),	-- Koltira's Faceguard of Triumph
+							un(2, i(48552)),	-- Koltira's Pauldrons of Triumph
+							un(2, i(48548)),	-- Koltira's Chestguard of Triumph
+							un(2, i(48549)),	-- Koltira's Handguards of Triumph
+							un(2, i(48551)),	-- Koltira's Legguards of Triumph
+							un(2, i(48493)),	-- Koltira's Helmet of Triumph
+							un(2, i(48495)),	-- Koltira's Shoulderpads of Triumph
+							un(2, i(48491)),	-- Koltira's Battleplate of Triumph
+							un(2, i(48492)),	-- Koltira's Gauntlets of Triumph
+							un(2, i(48494)),	-- Koltira's Legplates of Triumph
 						}),
 						-- Tier 9 END						
 					})),
 					a(n(35575, { -- Champion Isimode <Triumphant Armor Vendor>
 						gs(674, { -- Kel'Thuzad's Regalia
-							i(47788),	-- Kel'Thuzad's Gloves of Triumph
-							i(47789),	-- Kel'Thuzad's Hood of Triumph
-							i(47790),	-- Kel'Thuzad's Leggings of Triumph
-							i(47791),	-- Kel'Thuzad's Robe of Triumph
-							i(47792),	-- Kel'Thuzad's Shoulderpads of Triumph
+							un(2, i(47788)),	-- Kel'Thuzad's Gloves of Triumph
+							un(2, i(47789)),	-- Kel'Thuzad's Hood of Triumph
+							un(2, i(47790)),	-- Kel'Thuzad's Leggings of Triumph
+							un(2, i(47791)),	-- Kel'Thuzad's Robe of Triumph
+							un(2, i(47792)),	-- Kel'Thuzad's Shoulderpads of Triumph
 						}),
 						gs(722, { -- Khadgar's Regalia
-							i(47762),	-- Khadgar's Gauntlets of Triumph
-							i(47761),	-- Khadgar's Hood of Triumph
-							i(47760),	-- Khadgar's Leggings of Triumph
-							i(47759),	-- Khadgar's Robe of Triumph
-							i(47758),	-- Khadgar's Shoulderpads of Triumph
+							un(2, i(47762)),	-- Khadgar's Gauntlets of Triumph
+							un(2, i(47761)),	-- Khadgar's Hood of Triumph
+							un(2, i(47760)),	-- Khadgar's Leggings of Triumph
+							un(2, i(47759)),	-- Khadgar's Robe of Triumph
+							un(2, i(47758)),	-- Khadgar's Shoulderpads of Triumph
 
 						}),
-						gs(825, { -- Malfurion's Garb
-							i(48171),	-- Malfurion's Cover of Triumph
-							i(48172),	-- Malfurion's Gloves of Triumph
-							i(48203),	-- Malfurion's Handgrips of Triumph
-							i(48142),	-- Malfurion's Handguards of Triumph
-							i(48204),	-- Malfurion's Headguard of Triumph
-							i(48141),	-- Malfurion's Headpiece of Triumph
-							i(48140),	-- Malfurion's Leggings of Triumph
-							i(48205),	-- Malfurion's Legguards of Triumph
-							i(48168),	-- Malfurion's Mantle of Triumph
-							i(48206),	-- Malfurion's Raiments of Triumph
-							i(48139),	-- Malfurion's Robe of Triumph
-							i(48207),	-- Malfurion's Shoulderpads of Triumph
-							i(48138),	-- Malfurion's Spaulders of Triumph
-							i(48170),	-- Malfurion's Trousers of Triumph
-							i(48169),	-- Malfurion's Vestments of Triumph						
+						gs(825, { -- Malfurion's Battlegear
+							un(2, i(48171)),	-- Malfurion's Cover of Triumph
+							un(2, i(48172)),	-- Malfurion's Gloves of Triumph
+							un(2, i(48203)),	-- Malfurion's Handgrips of Triumph
+							un(2, i(48142)),	-- Malfurion's Handguards of Triumph
+							un(2, i(48204)),	-- Malfurion's Headguard of Triumph
+							un(2, i(48141)),	-- Malfurion's Headpiece of Triumph
+							un(2, i(48140)),	-- Malfurion's Leggings of Triumph
+							un(2, i(48205)),	-- Malfurion's Legguards of Triumph
+							un(2, i(48168)),	-- Malfurion's Mantle of Triumph
+							un(2, i(48206)),	-- Malfurion's Raiments of Triumph
+							un(2, i(48139)),	-- Malfurion's Robe of Triumph
+							un(2, i(48207)),	-- Malfurion's Shoulderpads of Triumph
+							un(2, i(48138)),	-- Malfurion's Spaulders of Triumph
+							un(2, i(48170)),	-- Malfurion's Trousers of Triumph
+							un(2, i(48169)),	-- Malfurion's Vestments of Triumph						
 						}),
-						gs(640, { -- Nobundo's Garb
-							i(48355),	-- Nobundo's Chestguard of Triumph
-							i(48353),	-- Nobundo's Faceguard of Triumph
-							i(48324),	-- Nobundo's Gloves of Triumph
-							i(48354),	-- Nobundo's Grips of Triumph
-							i(48293),	-- Nobundo's Handguards of Triumph
-							i(48325),	-- Nobundo's Hauberk of Triumph
-							i(48292),	-- Nobundo's Headpiece of Triumph
-							i(48323),	-- Nobundo's Helm of Triumph
-							i(48322),	-- Nobundo's Kilt of Triumph
-							i(48291),	-- Nobundo's Legguards of Triumph
-							i(48351),	-- Nobundo's Shoulderguards of Triumph
-							i(48321),	-- Nobundo's Shoulderpads of Triumph
-							i(48290),	-- Nobundo's Spaulders of Triumph
-							i(48294),	-- Nobundo's Tunic of Triumph
-							i(48352),	-- Nobundo's War-Kilt of Triumph								
+						gs(640, { -- Nobundo's Plate
+							un(2, i(48355)),	-- Nobundo's Chestguard of Triumph
+							un(2, i(48353)),	-- Nobundo's Faceguard of Triumph
+							un(2, i(48324)),	-- Nobundo's Gloves of Triumph
+							un(2, i(48354)),	-- Nobundo's Grips of Triumph
+							un(2, i(48293)),	-- Nobundo's Handguards of Triumph
+							un(2, i(48325)),	-- Nobundo's Hauberk of Triumph
+							un(2, i(48292)),	-- Nobundo's Headpiece of Triumph
+							un(2, i(48323)),	-- Nobundo's Helm of Triumph
+							un(2, i(48322)),	-- Nobundo's Kilt of Triumph
+							un(2, i(48291)),	-- Nobundo's Legguards of Triumph
+							un(2, i(48351)),	-- Nobundo's Shoulderguards of Triumph
+							un(2, i(48321)),	-- Nobundo's Shoulderpads of Triumph
+							un(2, i(48290)),	-- Nobundo's Spaulders of Triumph
+							un(2, i(48294)),	-- Nobundo's Tunic of Triumph
+							un(2, i(48352)),	-- Nobundo's War-Kilt of Triumph								
 						}),	
 						gs(842, { -- Thassarian's Battlegear
-							i(48490),	-- Thassarian's Battleplate of Triumph
-							i(48547),	-- Thassarian's Chestguard of Triumph
-							i(48545),	-- Thassarian's Faceguard of Triumph
-							i(48489),	-- Thassarian's Gauntlets of Triumph
-							i(48546),	-- Thassarian's Handguards of Triumph
-							i(48488),	-- Thassarian's Helmet of Triumph
-							i(48544),	-- Thassarian's Legguards of Triumph
-							i(48487),	-- Thassarian's Legplates of Triumph
-							i(48543),	-- Thassarian's Pauldrons of Triumph
-							i(48486),	-- Thassarian's Shoulderplates of Triumph
+							un(2, i(48490)),	-- Thassarian's Battleplate of Triumph
+							un(2, i(48547)),	-- Thassarian's Chestguard of Triumph
+							un(2, i(48545)),	-- Thassarian's Faceguard of Triumph
+							un(2, i(48489)),	-- Thassarian's Gauntlets of Triumph
+							un(2, i(48546)),	-- Thassarian's Handguards of Triumph
+							un(2, i(48488)),	-- Thassarian's Helmet of Triumph
+							un(2, i(48544)),	-- Thassarian's Legguards of Triumph
+							un(2, i(48487)),	-- Thassarian's Legplates of Triumph
+							un(2, i(48543)),	-- Thassarian's Pauldrons of Triumph
+							un(2, i(48486)),	-- Thassarian's Shoulderplates of Triumph
 						}),
 						gs(706, { -- Turalyon's Garb
-							i(48616),	-- Turalyon's Battleplate of Triumph
-							i(48642),	-- Turalyon's Breastplate of Triumph
-							i(48644),	-- Turalyon's Faceguard of Triumph
-							i(48615),	-- Turalyon's Gauntlets of Triumph
-							i(48583),	-- Turalyon's Gloves of Triumph
-							i(48581),	-- Turalyon's Greaves of Triumph
-							i(48643),	-- Turalyon's Handguards of Triumph
-							i(48582),	-- Turalyon's Headpiece of Triumph
-							i(48614),	-- Turalyon's Helm of Triumph
-							i(48645),	-- Turalyon's Legguards of Triumph
-							i(48613),	-- Turalyon's Legplates of Triumph
-							i(48646),	-- Turalyon's Shoulderguards of Triumph
-							i(48612),	-- Turalyon's Shoulderplates of Triumph
-							i(48580),	-- Turalyon's Spaulders of Triumph
-							i(48584),	-- Turalyon's Tunic of Triumph
+							un(2, i(48616)),	-- Turalyon's Battleplate of Triumph
+							un(2, i(48642)),	-- Turalyon's Breastplate of Triumph
+							un(2, i(48644)),	-- Turalyon's Faceguard of Triumph
+							un(2, i(48615)),	-- Turalyon's Gauntlets of Triumph
+							un(2, i(48583)),	-- Turalyon's Gloves of Triumph
+							un(2, i(48581)),	-- Turalyon's Greaves of Triumph
+							un(2, i(48643)),	-- Turalyon's Handguards of Triumph
+							un(2, i(48582)),	-- Turalyon's Headpiece of Triumph
+							un(2, i(48614)),	-- Turalyon's Helm of Triumph
+							un(2, i(48645)),	-- Turalyon's Legguards of Triumph
+							un(2, i(48613)),	-- Turalyon's Legplates of Triumph
+							un(2, i(48646)),	-- Turalyon's Shoulderguards of Triumph
+							un(2, i(48612)),	-- Turalyon's Shoulderplates of Triumph
+							un(2, i(48580)),	-- Turalyon's Spaulders of Triumph
+							un(2, i(48584)),	-- Turalyon's Tunic of Triumph
 						}),
 						gs(690, { -- VanCleef's Battlegear
-							i(48232),	-- VanCleef's Breastplate of Triumph
-							i(48231),	-- VanCleef's Gauntlets of Triumph
-							i(48230),	-- VanCleef's Helmet of Triumph
-							i(48229),	-- VanCleef's Legplates of Triumph
-							i(48228),	-- VanCleef's Pauldrons of Triumph
+							un(2, i(48232)),	-- VanCleef's Breastplate of Triumph
+							un(2, i(48231)),	-- VanCleef's Gauntlets of Triumph
+							un(2, i(48230)),	-- VanCleef's Helmet of Triumph
+							un(2, i(48229)),	-- VanCleef's Legplates of Triumph
+							un(2, i(48228)),	-- VanCleef's Pauldrons of Triumph
 						}),	
 						gs(349, { -- Velen's Regalia
-							i(48085),	-- Velen's Circlet of Triumph
-							i(48035),	-- Velen's Cowl of Triumph
-							i(48037),	-- Velen's Gloves of Triumph
-							i(48086),	-- Velen's Handwraps of Triumph
-							i(48033),	-- Velen's Leggings of Triumph
-							i(48082),	-- Velen's Mantle of Triumph
-							i(48084),	-- Velen's Pants of Triumph
-							i(48083),	-- Velen's Raiments of Triumph
-							i(48031),	-- Velen's Robe of Triumph
-							i(48029),	-- Velen's Shoulderpads of Triumph
+							un(2, i(48085)),	-- Velen's Circlet of Triumph
+							un(2, i(48035)),	-- Velen's Cowl of Triumph
+							un(2, i(48037)),	-- Velen's Gloves of Triumph
+							un(2, i(48086)),	-- Velen's Handwraps of Triumph
+							un(2, i(48033)),	-- Velen's Leggings of Triumph
+							un(2, i(48082)),	-- Velen's Mantle of Triumph
+							un(2, i(48084)),	-- Velen's Pants of Triumph
+							un(2, i(48083)),	-- Velen's Raiments of Triumph
+							un(2, i(48031)),	-- Velen's Robe of Triumph
+							un(2, i(48029)),	-- Velen's Shoulderpads of Triumph
 						}),
 						gs(739, { -- Windrunner's Battlegear
-							i(48263),	-- Windrunner's Handguards of Triumph
-							i(48262),	-- Windrunner's Headpiece of Triumph
-							i(48261),	-- Windrunner's Legguards of Triumph
-							i(48260),	-- Windrunner's Spaulders of Triumph
-							i(48264),	-- Windrunner's Tunic of Triumph
+							un(2, i(48263)),	-- Windrunner's Handguards of Triumph
+							un(2, i(48262)),	-- Windrunner's Headpiece of Triumph
+							un(2, i(48261)),	-- Windrunner's Legguards of Triumph
+							un(2, i(48260)),	-- Windrunner's Spaulders of Triumph
+							un(2, i(48264)),	-- Windrunner's Tunic of Triumph
 						}),
 						gs(658, { -- Wrynn's Battlegear
-							i(48385),	-- Wrynn's Battleplate of Triumph
-							i(48451),	-- Wrynn's Breastplate of Triumph
-							i(48384),	-- Wrynn's Gauntlets of Triumph
-							i(48433),	-- Wrynn's Greathelm of Triumph
-							i(48453),	-- Wrynn's Handguards of Triumph
-							i(48383),	-- Wrynn's Helmet of Triumph
-							i(48447),	-- Wrynn's Legguards of Triumph
-							i(48382),	-- Wrynn's Legplates of Triumph
-							i(48455),	-- Wrynn's Pauldrons of Triumph
-							i(48381),	-- Wrynn's Shoulderplates of Triumph
+							un(2, i(48385)),	-- Wrynn's Battleplate of Triumph
+							un(2, i(48451)),	-- Wrynn's Breastplate of Triumph
+							un(2, i(48384)),	-- Wrynn's Gauntlets of Triumph
+							un(2, i(48433)),	-- Wrynn's Greathelm of Triumph
+							un(2, i(48453)),	-- Wrynn's Handguards of Triumph
+							un(2, i(48383)),	-- Wrynn's Helmet of Triumph
+							un(2, i(48447)),	-- Wrynn's Legguards of Triumph
+							un(2, i(48382)),	-- Wrynn's Legplates of Triumph
+							un(2, i(48455)),	-- Wrynn's Pauldrons of Triumph
+							un(2, i(48381)),	-- Wrynn's Shoulderplates of Triumph
 						}),			
 					})),
 					a(n(33307, { -- Corporal Arthur Flew <Stormwind Quartermaster>
@@ -707,9 +707,9 @@ _.Zones =
 							i(47180),	-- Argent Warhorse
 							i(46874),	-- Argent Crusader's Tabard
 							i(46843),	-- Argent Crusader's Banner Toy
-              i(47541, { -- Argent Pony Bridle
-                ach(3736), -- Pony Up!
-              }),
+							i(47541, { -- Argent Pony Bridle
+								ach(3736), -- Pony Up!
+							}),
 							i(122350),	-- Balanced Heartseeker
 							i(122349),	-- Bloodied Arcanite Reaper
 							i(122389),	-- Bloodsoaked Skullforge Reaver
@@ -1290,7 +1290,7 @@ _.Zones =
 						-- Tier 9 START
 						i(47242, {	-- Trophy of the Crusade
 							-- Priest
-	--								gs(, {	-- Velen's Regalia
+							gs(349, {	-- Velen's Regalia
 								i(48078),	-- Velen's Circlet of Triumph
 								i(47984),	-- Velen's Cowl of Triumph
 								i(48081),	-- Velen's Mantle of Triumph
@@ -1301,25 +1301,25 @@ _.Zones =
 								i(48077),	-- Velen's Handwraps of Triumph
 								i(47985),	-- Velen's Leggings of Triumph
 								i(48079),	-- Velen's Pants of Triumph
-	--								}),
+							}),
 							-- Mage
-	--								gs(, {	-- Khadgar's Regalia
+							gs(722, {	-- Khadgar's Regalia
 								i(47754),	-- Khadgar's Hood of Triumph
 								i(47757),	-- Khadgar's Shoulderpads of Triumph
 								i(47756),	-- Khadgar's Robe of Triumph
 								i(47753),	-- Khadgar's Gauntlets of Triumph
 								i(47755),	-- Khadgar's Leggings of Triumph
-	--								}),
+							}),
 							-- Warlock
-	--								gs(674, {	-- Kel'Thuzad's Regalia (DOUBLE-CHECK GEARSET ID)
+							gs(674, {	-- Kel'Thuzad's Regalia
 								i(47778),	-- Kel'Thuzad's Hood of Triumph
 								i(47781),	-- Kel'Thuzad's Shoulderpads of Triumph
 								i(47779),	-- Kel'Thuzad's Robe of Triumph
 								i(47782),	-- Kel'Thuzad's Gloves of Triumph
 								i(47780),	-- Kel'Thuzad's Leggings of Triumph
-	--								}),
+							}),
 							-- Druid
-	--								gs(, {	-- Malfurion's Battlegear
+							gs(825, {	-- Malfurion's Battlegear
 								i(48164),	-- Malfurion's Cover of Triumph
 								i(48211),	-- Malfurion's Headguard of Triumph
 								i(48134),	-- Malfurion's Headpiece of Triumph
@@ -1335,25 +1335,25 @@ _.Zones =
 								i(48135),	-- Malfurion's Leggings of Triumph
 								i(48210),	-- Malfurion's Legguards of Triumph
 								i(48165),	-- Malfurion's Trousers of Triumph
-	--								}),
+							}),
 							-- Rogue
-	--								gs(, {	-- VanCleef's Battlegear
+							gs(349, {	-- VanCleef's Battlegear
 								i(48225),	-- VanCleef's Helmet of Triumph
 								i(48227),	-- VanCleef's Pauldrons of Triumph								
 								i(48223),	-- VanCleef's Breastplate of Triumph
 								i(48224),	-- VanCleef's Gauntlets of Triumph
 								i(48226),	-- VanCleef's Legplates of Triumph
-	--								}),
+								}),
 							-- Hunter
-	--								gs(, {	-- Windrunner's Battlegear
+							gs(739, {	-- Windrunner's Battlegear
 								i(48257),	-- Windrunner's Headpiece of Triumph
 								i(48259),	-- Windrunner's Spaulders of Triumph
 								i(48255),	-- Windrunner's Tunic of Triumph
 								i(48256),	-- Windrunner's Handguards of Triumph
 								i(48258),	-- Windrunner's Legguards of Triumph
-	--								}),
+							}),
 							-- Shaman
-	--								gs(, {	-- Nobundo's Battlegear
+							gs(640, {	-- Nobundo's Garb
 								i(48348),	-- Nobundo's Faceguard of Triumph
 								i(48287),	-- Nobundo's Headpiece of Triumph
 								i(48318),	-- Nobundo's Helm of Triumph
@@ -1369,9 +1369,9 @@ _.Zones =
 								i(48319),	-- Nobundo's Kilt of Triumph
 								i(48349),	-- Nobundo's War-Kilt of Triumph
 								i(48288),	-- Nobundo's Legguards of Triumph
-	--								}),
+							}),
 							-- Paladin
-	--								gs(, {	-- Turalyon's Plate
+							gs(706, {	-- Turalyon's Plate
 								i(48639),	-- Turalyon's Faceguard of Triumph
 								i(48577),	-- Turalyon's Headpiece of Triumph
 								i(48609),	-- Turalyon's Helm of Triumph
@@ -1387,9 +1387,9 @@ _.Zones =
 								i(48578),	-- Turalyon's Greaves of Triumph
 								i(48638),	-- Turalyon's Legguards of Triumph
 								i(48610),	-- Turalyon's Legplates of Triumph
-	--								}),
+							}),
 							-- Warrior
-	--								gs(, {	-- Wrynn's Battlegear
+							gs(658, {	-- Wrynn's Battlegear
 								i(48430),	-- Wrynn's Greathelm of Triumph
 								i(48378),	-- Wrynn's Helmet of Triumph
 								i(48454),	-- Wrynn's Pauldrons of Triumph
@@ -1400,9 +1400,9 @@ _.Zones =
 								i(48452),	-- Wrynn's Handguards of Triumph
 								i(48446),	-- Wrynn's Legguards of Triumph
 								i(48379),	-- Wrynn's Legplates of Triumph
-	--								}),
+							}),
 							-- Death Knight
-	--								gs(, {	-- Thassarian's Battlegear
+							gs(842, {	-- Thassarian's Battlegear
 								i(48540),	-- Thassarian's Faceguard of Triumph
 								i(48483),	-- Thassarian's Helmet of Triumph
 								i(48542),	-- Thassarian's Pauldrons of Triumph
@@ -1413,7 +1413,7 @@ _.Zones =
 								i(48539),	-- Thassarian's Handguards of Triumph
 								i(48541),	-- Thassarian's Legguards of Triumph
 								i(48484),	-- Thassarian's Legplates of Triumph			
-	--								}),
+							}),
 						}),
 					})),
 					h(n(34772, { -- Vasarin Redmorn <Sunreavers Quartermaster>

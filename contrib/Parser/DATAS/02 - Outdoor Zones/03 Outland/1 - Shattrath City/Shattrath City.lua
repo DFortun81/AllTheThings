@@ -325,8 +325,10 @@ _.Zones =
 						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
 					q( 10112, {	-- A Personal Favor
-						i(25927),
-						i(31724),
+						i(31724),	-- Arakkoa Divining Rod
+						i(25927),	-- Consortium Cloak of the Quick
+						i(25928),	-- Ethereal Healing Pendant
+						i(25926),	-- Nexus-Stalker's Band
 					}),
 					q( 10210, {	-- A'dal
 						["qg"] = 19684,	-- Haggard War Veteran

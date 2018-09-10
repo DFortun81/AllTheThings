@@ -245,7 +245,9 @@ _.Zones =
 						q( 11077),	-- Dragons are the Least of Our Problems
 						q( 11055),	-- The Booterang: A Cure For The Common Worthless Peon
 						qh(11063),	-- Earning Your Wings... (all quests may be for both factions)
-						qh(11071),	-- Dragonmaw Race: Captain Skyshatter
+						qh(11071, {	-- Dragonmaw Race: Captain Skyshatter
+							i(32863),	-- Skybreaker Whip
+						}),
 						qh(11068),	-- Dragonmaw Race: Corlok the Vet
 						qh(11064),	-- Dragonmaw Race: The Ballad of Oldie McOld
 						qh(11067),	-- Dragonmaw Race: Trope the Filth-Belcher
@@ -320,12 +322,12 @@ _.Zones =
 							q(10691),	-- Return to the Scryers
 							q(10686),	-- The Warden's Cage
 							q(10692, {	-- Varedis Must Be Stopped
-								i(31013),
-								i(30933),
-								i(31010),
-								i(31002),
-								i(30948),
-								i(31009),
+								i(31013),	-- Ceremonial Kris
+								i(30933),	-- Hauberk of Karabor
+								i(31010),	-- Slayer's Axe
+								i(31002),	-- Summoner's Blade
+								i(30948),	-- Sunfury Legguards
+								i(31009),	-- Wildcaller
 							}),
 							q(10824, {	-- Sunfury Signets
 								["qg"] = 22211,	-- Battlemage Vyara
@@ -430,6 +432,12 @@ _.Zones =
 					
 					
 					qh(10769, {	-- Dissension Amongst the Ranks...
+						["groups"] = {
+							i(31075),	-- Evoker's Mark of the Redemption
+							i(31078),	-- Protector's Mark of the Redemption
+							i(31077),	-- Slayer's Mark of the Redemption
+							i(31076),	-- Spellsword's Mark of the Redemption
+						},
 						["qg"] = 21998,	-- Kor'kron Wind Rider
 						["sourceQuests"] = { 10768 },	-- Tabards of the Illidari
 					}),
@@ -546,6 +554,7 @@ _.Zones =
 					qh(10745, {	-- News of Victory
 						["groups"] = {
 							i(30924),	-- Gloves of the High Magus
+							i(30973),	-- Band of Anguish
 						},
 						["qg"] = 21789,	-- Nakansi
 						["sourceQuests"] = { 10613 },	-- The Fel and the Furious
@@ -622,6 +631,7 @@ _.Zones =
 							i(31036),	-- Oronok's Ancient Scepter
 							i(31062),	-- Torn-Heart Axe of Battle
 							i(31038),	-- Staff of the Redeemer
+							i(31074),	-- Amulet of the Torn-Heart
 						},
 						["qg"] = 21183,	-- Oronok Torn-heart
 						["sourceQuests"] = { 10523, 10541, 10579 },	-- The Cipher of Damnation, the First/Second/Third Fragment Recovered
@@ -651,6 +661,7 @@ _.Zones =
 							i(30945),	-- Grom'tor's Friend's Cousin's Tunic
 							i(30923),	-- Grom'tor's Bloodied Bandage
 							i(30956),	-- Oronok's Old Bracers
+							i(30981),	-- Grom'tor's Pendant of Conquest
 						},
 						["qg"] = 21291,	-- Grom'tor, Son of Oronok
 						["sourceQuests"] = { 10522 },	-- The Cipher of Damnation - Grom'tor's Charge
@@ -799,18 +810,32 @@ _.Zones =
 					}),
 				
 
-					q( 13429),	-- A Distraction for Akama
-					q( 10985),	-- A Distraction for Akama
+					q(13429, {	-- A Distraction for Akama
+						i(32649),	-- Medallion of Karabor
+					}),
+					q(10985, {	-- A Distraction for Akama
+						i(32649),	-- Medallion of Karabor
+					}),
 					qa(10642),	-- A Ghost in the Machine
 					q( 10947),	-- An Artifact From the Past
 					q( 11544),	-- Ata'mal Armaments
-					q( 10781),	-- Battle of the Crimson Watch
+					q(10781, {	-- Battle of the Crimson Watch
+						["groups"] = {
+							i(31380),	-- Acrobat's Mark of the Sha'tar
+							i(31381), 	-- Aggressor's Mark of the Sha'tar
+							i(31404),	-- Green Trophy Tabard of the Illidari
+							i(31382),	-- Mage's Mark of the Sha'tar
+							i(31405),	-- Purple Trophy Tabard of the Illidari
+							i(31383),	-- Spiritualist's Mark of the Sha'tar
+						},
+						["sourceQuests"] = { 10793 }, -- The Journal of Val'zareq: Portends of War
+					}),
 					qa(10562),	-- Besieged!
 					qa(10564, {	-- Blast the Infernals!
-						i(30986),
-						i(30947),
-						i(30946),
-						i(30929),
+						i(30986),	-- Bloodforged Guard
+						i(30947),	-- Crimson Mail Hauberk
+						i(30946),	-- Mooncrest Headdress
+						i(30929),	-- Soothsayer's Kilt
 					}),
 					qa(10774),	-- Blood Elf + Giant = ???
 					q( 11107),	-- Bow to the Highlord
@@ -818,28 +843,35 @@ _.Zones =
 					qa(10586),	-- Bring Down the Warbringer!
 					qa(11043),	-- Building a Better Gryphon
 					qa(10626, {	-- Capture the Weapons
-						i(30926),
-						i(30938),
-						i(30950),
-						i(30966),
+						i(30926),	-- Ashwalker's Footwraps
+						i(30938),	-- Azurestrike Shoulders
+						i(30950),	-- Darkhunter's Cinch
+						i(30966),	-- Singed Vambraces
 					}),
 					qh(11046),	-- Chief Apothecary Hildagard
 					q( 11100),	-- Commander Arcus
 					q( 11095),	-- Commander Hobb
 					q( 39721),	-- Culling the Crew
-					qa(10776),	-- Dissension Amongst the Ranks...
+					qa(10776, {	-- Dissension Amongst the Ranks...
+						i(31075),	-- Evoker's Mark of the Redemption
+						i(31078),	-- Protector's Mark of the Redemption
+						i(31077),	-- Slayer's Mark of the Redemption
+						i(31076),	-- Spellsword's Mark of the Redemption
+					}),
 					q( 10949),	-- Entry Into the Black Temple
 					qa(10754),	-- Entry Into the Citadel
 					q( 10451, {	-- Escape from Coilskar Cistern
-						i(30927),
-						i(30952),
-						i(30937),
-						i(30968),
+						i(30927),	-- Earthmender's Bracer of Shattering
+						i(30952),	-- Earthmender's Crimson Spaulders
+						i(30937),	-- Earthmender's Fists of Undoing
+						i(30968),	-- Earthmender's Plated Boots
 					}),
 					qa(10759),	-- Find the Deserter
 					qa(10589),	-- Gaining Access
 					q( 31920),	-- Grand Master Antari
-					q( 11092),	-- Hail, Commander!
+					q(11092, {	-- Hail, Commander!
+						i(32864),	-- Commander's Badge
+					}),
 					qa(10643),	-- Harbingers of Shadowmoon
 					qa(10621),	-- Illidari-Bane Shard
 					qa(11964),	-- Incense for the Summer Scorchlings
@@ -849,31 +881,36 @@ _.Zones =
 					q( 10826),	-- Marks of Sargeras
 					qa(10582),	-- Minions of the Shadow Council
 					qa(10744, {	-- News of Victory
-						i(30924),
+						i(30973),	-- Band of Anguish
+						i(30924),	-- Gloves of the High Magus
 					}),
 					qa(10703),	-- Put On Yer Kneepads...
-					q( 11053),	-- Rise, Overseer!
+					q(11053, {	-- Rise, Overseer!
+						i(32694),	-- Overseer's Badge
+					}),
 					q( 10946),	-- Ruse of the Ashtongue
 					q( 10958),	-- Seek Out the Ashtongue
 					q( 11082),	-- Seeker of Truth
 					qa(10572),	-- Setting Up the Bomb
 					qa(10661),	-- Spleendid!
-					q( 11084),	-- Stand Tall, Captain!
+					q(11084, {	-- Stand Tall, Captain!
+						i(32695),	-- Captain's Badge
+					}),
 					q( 11090, {	-- Subdue the Subduer
-						i(32871),
-						i(32869),
-						i(32872),
-						i(32870),
+						i(32871),	-- Horns of the Illidari
+						i(32869),	-- Illidari Lord's Tunic
+						i(32872),	-- Illidari Rod of Discipline
+						i(32870),	-- Legguards of Contemplation
 					}),
 					qa(10775),	-- Tabards of the Illidari
 					qa(10644),	-- Teron Gorefiend - Lore and Legend
 					qa(10645, {	-- Teron Gorefiend, I am...
-						i(31104),
-						i(31110),
-						i(31109),
-						i(31107),
-						i(31106),
-						i(31105),
+						i(31104),	-- Evoker's Helmet of Second Sight
+						i(31110),	-- Druidic Helmet of Second Sight
+						i(31109),	-- Stealther's Helmet of Second Sight
+						i(31107),	-- Shamanistic Helmet of Second Sight
+						i(31106),	-- Stalker's Helmet of Second Sight
+						i(31105),	-- Overlord's Helmet of Second Sight
 					}),
 					qh(11047),	-- The Apprentice's Request
 					qa(10606),	-- The Art of Fel Reaver Maintenance
@@ -886,7 +923,12 @@ _.Zones =
 					}),
 					qa(10662),	-- The Hermit Smith
 					q( 10948),	-- The Hostage Soul
-					q( 10793),	-- The Journal of Val'zareq: Portends of War					
+					i(31345, {	-- The Journal of Val'zareq
+						["groups"] = {
+							q(10793),	-- The Journal of Val'zareq: Portends of War					
+						},
+						["qg"] = 21979,	-- Val'zareq the Conqueror
+					}),				
 					qa(10678),	-- The Main Course!
 					q( 11075),	-- The Netherwing Mines
 					qa(10772),	-- The Path of Conquest
@@ -897,10 +939,10 @@ _.Zones =
 					qa(10563),	-- To Legion Hold
 					qa(11044),	-- Visions of Destruction
 					qa(10648, {	-- Wanted: Uvuros, Scourge of Shadowmoon
-						i(31112),
-						i(31114),
-						i(31111),
-						i(31115),
+						i(31112),	-- Uvuros Hide Boots
+						i(31114),	-- Uvuros Hide Cinch
+						i(31111),	-- Uvuros Hide Gloves
+						i(31115),	-- Uvuros Plated Spaulders
 					}),
 					qa(11045),	-- Zorus the Judicator
 --					qh(11498),	-- Learning to Fly (REMOVED)
@@ -910,18 +952,18 @@ _.Zones =
 				n(-16,  {	-- Rares
 					n(18695, {	-- Ambassador Jerrikar
 						["groups"] = {
-							i(31224),
-							i(31223),
-							i(31225),
-							i(31221),
+							i(31224),	-- Illidari Bracers
+							i(31223),	-- Illidari Wristguards
+							i(31225),	-- Illidari Bindings
+							i(31221),	-- Illidari Vambraces
 						},
 						--["achievementID"] = 1312, ["criteriaID"] = 1,
 					}), 
 					n(18694, {	-- Collidus the Warp-Watcher
-						i(31219),
-						i(31220),
-						i(31217),
-						i(31218),
+						i(31219),	-- Emerald Beholder Eye
+						i(31220),	-- Amethyst Beholder Eye
+						i(31217),	-- Crimson Beholder Eye
+						i(31218),	-- Fiery Beholder Eye
 					}), 
 					n(20887, {	-- Deathforge Imp
 						dr(1.0, i(31681)),	-- Recipe: Fel Regeneration Potion
@@ -963,10 +1005,10 @@ _.Zones =
 						dr(0.11, i(31682)),	-- Recipe: Fel Mana Potion
 					}),
 					n(18696, {	-- Kraator
-						i(31213),
-						i(31214),
-						i(31216),
-						i(31215),
+						i(31213),	-- Abyssal Plate Sabatons
+						i(31214),	-- Abyssal Mail Greaves
+						i(31216),	-- Abyssal Cloth Footwraps
+						i(31215),	-- Abyssal Leather Treads
 					}), 
 					n(19755, {	-- Mo'arg Weaponsmith
 						dr(0.6, i(23806)),	-- Schematic: Hyper-Vision Goggles

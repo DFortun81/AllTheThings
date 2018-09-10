@@ -59,17 +59,17 @@ _.Zones =
 						["sourceQuests"] = { 10981 } , -- Nexus-Prince Shaffar's Personal Chamber
 					}),	
 					q(10713, {	-- ...and a Time for Action
-						i(31510),
-						i(31512),
-						i(31516),
-						i(31521),
+						i(31516),	-- Bracers of the Weald
+						i(31521),	-- Expedition Defender's Shoulders
+						i(31510),	-- Hewing Gloves
+						i(31512),	-- Tree Warden's Belt
 					}),
 --					qh( 10721),	-- A Boaring Time for Grulloc
 					qh(10544, {	-- A Curse Upon Both of Your Clans!
-						i(31470),
-						i(31471),
-						i(31472),
-						i(31473),
+						i(31472),	-- Hexxer's Belt
+						i(31473),	-- Ogre Defiler's Handguards
+						i(31470),	-- Witch Doctor's Beads
+						i(31471),	-- T'chali's Kilt
 					}),
 --[[					
 					qa( 10795),	-- A Date with Dorgok
@@ -91,26 +91,26 @@ _.Zones =
 					q(10567),	-- Creating the Pendant
 --]]					
 					qa(10796, {	-- Crush the Bloodmaul Camp!
-						i(31537),
-						i(31538),
-						i(31539),
-						i(31540),
+						i(31539),	-- Chaintwine Cinch
+						i(31537),	-- Darktread Boots
+						i(31540),	-- Fairweather's Wristguards
+						i(31538),	-- Twin Moon Shoulderguards
 					}),
 					qh(10784, {	-- Crush the Bloodmaul Camp
-						i(31537),
-						i(31538),
-						i(31539),
-						i(31540),
+						i(31539),	-- Chaintwine Cinch
+						i(31537),	-- Darktread Boots
+						i(31540),	-- Fairweather's Wristguards
+						i(31538),	-- Twin Moon Shoulderguards
 					}),
 --[[					
 					qa( 10608),	-- Crystal Clear
 					q(10753),	-- Culling the Wild
 --]]
 					qa(10632, {	-- Cutting Your Teeth
-						i(31446),
-						i(31447),
-						i(31448),
+						i(31447),	-- Vibro Dagger
 						i(157549),	-- Vibro Knuckles 
+						i(31446),	-- Vibro Shanker
+						i(31448),	-- Vibro Sword
 					}),
 --[[					
 					q(10810),	-- Damaged Mask
@@ -128,7 +128,14 @@ _.Zones =
 					qa( 11766),	-- Desecrate this Fire!
 					q(10719),	-- Did You Get The Note?
 					qh( 10487),	-- Dust from the Drakes
-					q(10830),	-- Exorcising the Trees
+--]]					
+					q(10830, {	-- Exorcising the Trees
+						i(31527),	-- Leafbeard Ring
+						i(31526),	-- Raven's Wood Exorciser's Band
+						i(31528),	-- Ring of the Stonebark
+						i(31523),	-- Treebole's Hoop
+					}),
+--[[					
 					qa( 10797),	-- Favor of the Gronn
 					q(10819),	-- Felsworn Gas Mask
 					q(10911),	-- Fire At Will!
@@ -136,38 +143,38 @@ _.Zones =
 --]]					
 					qh(10489, {	-- Felling an Ancient Tree
 						["groups"] = {
-							i(31485),	-- Dark Deed Leggings
 							i(31486),	-- Bear-Strength Harness
-							i(31487),	-- Wild Horned Helm
 							i(31488),	-- Boots of the Ancient-Killer
+							i(31485),	-- Dark Deed Leggings
+							i(31487),	-- Wild Horned Helm
 						},
 						["description"] = "Wanted Poster",
 					}),
 					q(10771, {	-- From the Ashes
-						i(31414),
-						i(31416),
-						i(31415),
+						i(31415),	-- Iron Oak Shield
+						i(31416),	-- Scorch Wood Bow
+						i(31414),	-- Wild Wood Staff
 					}),
 --					qh( 10859),	-- Gather the Orbs
 					qa(10594, {	-- Gauging the Resonant Frequency
-						i(31444),
-						i(31443),
-						i(31445),
-						i(31442),
+						i(31445),	-- Last Year's "In" Belt
+						i(31442),	-- Metro's Slimming Legs
+						i(31443),	-- Nickwinkle's Harness Experiment
+						i(31444),	-- Party Hat Mistake
 					}),
 --[[					
 					q(10512),	-- Getting the Bladespire Tanked
 					qa( 10800),	-- Goodnight, Gronn
 --]]					
 					qa(10802, {	-- Gorgrom the Dragon-Eater
-						i(31542),
-						i(31541),
-						i(31543),
+						i(31542),	-- Fanged Axe
+						i(31541),	-- Whistling Sword
+						i(31543),	-- Adjudicator's Staff
 					}),
 					qh(10723, {	-- Gorgrom the Dragon-Eater
-						i(31542),
-						i(31541),
-						i(31543),
+						i(31542),	-- Fanged Axe
+						i(31541),	-- Whistling Sword
+						i(31543),	-- Adjudicator's Staff
 					}),
 --[[					
 					qa( 10517),	-- Gorr'Dim, Your Time Has Come...
@@ -182,10 +189,10 @@ _.Zones =
 					qa( 10799),	-- Into the Churning Gulch
 --]]					
 					qa(10510, {	-- Into the Draenethyst Mine
-						i(31429),
-						i(31431),
-						i(31430),
-						i(31432),
+						i(31431),	-- All-Weather Armguards
+						i(31432),	-- Explorer's Boots
+						i(31430),	-- Miner's Gloves
+						i(31429),	-- Spelunker's Mantle
 					}),
 --[[					
 					qa( 10801),	-- It's a Trap!
@@ -200,10 +207,10 @@ _.Zones =
 					qa( 10805),	-- Massacre at Gruul's Lair
 --]]					
 					q(10748, {	-- Maxnar Must Die!
-						i(31508),
-						i(31511),
-						i(31514),
-						i(31520),
+						i(31520),	-- Blackwing Helm
+						i(31511),	-- Chest of the Wyrmcult
+						i(31508),	-- Coven Britches
+						i(31514),	-- Dragonkin Shirt
 					}),
 --[[					
 					q(10722),	-- Meeting at the Blackwing Coven
@@ -233,36 +240,36 @@ _.Zones =
 					qa( 10584),	-- Picking Up Some Power Converters
 --]]					
 					qa(10518, {	-- Planting the Banner
-						i(31433),
-						i(31434),
-						i(31435),
-						i(31436),
+						i(31435),	-- Gurn's Horned Helmet
+						i(31434),	-- Ogre Assassin's Britches
+						i(31436),	-- Sylvanaar Champion's Shoulders
+						i(31433),	-- Sylvanaar Elite Caster's Armor
 					}),
 --[[					
 					q(10717),	-- Poaching from Poachers
 					qh( 10724),	-- Prisoner of the Bladespire
 --]]					
 					qa(10457, {	-- Protecting Our Own
-						i(31418),
-						i(31419),
-						i(31420),
-						i(31421),
+						i(31419),	-- Living Grove Shoulderpads
+						i(31420),	-- Protector's Boots
+						i(31421),	-- Sentinel Armbands
+						i(31418),	-- Sylvanaar Gloves
 					}),
 					qh(10488, {	-- Protecting Our Own
-						i(31481),
-						i(31482),
-						i(31483),
-						i(31484),
+						i(31482),	-- Dire Wolf Handler Gloves
+						i(31483),	-- Gor'drek's Pauldrons
+						i(31481),	-- Thunderlord Armbands
+						i(31484),	-- Wolf Chaps
 					}),
 --[[					
 					q(10975),	-- Purging the Chambers of Bash'ir
 					qh( 10709),	-- Reunion
 --]]
 					qa(10657, { 	-- Ride the Lightning
-						i(31452),
-						i(31453),
-						i(31454),
-						i(31455),
+						i(31453),	-- Charged Footwear
+						i(31452),	-- Energized Wristwraps
+						i(31455),	-- Muscle Toning Belt
+						i(31454),	-- Scalewing Gloves
 					}),
 --[[					
 					qa( 10620),	-- Ridgespine Menace
@@ -270,27 +277,27 @@ _.Zones =
 					q(10556),	-- Scratches
 --]]					
 					qa(10675, {	-- Show Them Gnome Mercy!
-						i(31456),
-						i(31457),
-						i(31458),
-						i(31459),
-						i(30690), 	--
+						i(31456),	-- Gnomish Casting Boots
+						i(30690), 	-- Power Converter
+						i(31458),	-- Razaani-Buster Leggings
+						i(31459),	-- Soul Saver's Chest Plate
+						i(31457),	-- Toshley's Station Hero's Hat
 					}),
 					qa(10806, {	-- Showdown
-						i(31546),
-						i(31544),
-						i(31545),
-						i(31547),
-						i(31549),
-						i(31548),
+						i(31548),	-- Blackened Chestplate
+						i(31544),	-- Clefthoof Hide Leggings
+						i(31549),	-- Leonine Breastplate
+						i(31547),	-- Malefactor's Eyepatch
+						i(31545),	-- Oilcloth Breeches
+						i(31546),	-- Tourmaline Crown
 					}),
 					qh(10742, {	-- Showdown
-						i(31546),
-						i(31544),
-						i(31545),
-						i(31547),
-						i(31549),
-						i(31548),
+						i(31548),	-- Blackened Chestplate
+						i(31544),	-- Clefthoof Hide Leggings
+						i(31549),	-- Leonine Breastplate
+						i(31547),	-- Malefactor's Eyepatch
+						i(31545),	-- Oilcloth Breeches
+						i(31546),	-- Tourmaline Crown
 					}),
 --[[					
 					qh( 10617),	-- Silkwing Cocoons
@@ -299,17 +306,17 @@ _.Zones =
 					qa( 10803),	-- Slaughter at Boulder'mok
 --]]					
 					qh(10845, {	-- Slay the Brood Mother
-						i(31683),
-						i(31685),
-						i(31684),
-						i(31686),
+						i(31685),	-- Brood Mother Leggings
+						i(31683),	-- Dreadwing Skin Belt
+						i(31684),	-- Netherhide Gloves
+						i(31686),	-- Nether Protector's Chest
 					}),
 --					qa( 11022),	-- Speak with Mog'dorg
 					qh(10853, {	-- Spirit Calling
-						i(31711),
-						i(31713),
-						i(31712),
-						i(31714),
+						i(31712),	-- Mok'Nathal Champion's Shoulderguards
+						i(31711),	-- Nether-Empowered Footgear
+						i(31714),	-- Nether Drake Wristguards
+						i(31713),	-- Ritualist's Helm
 					}),
 --[[					
 					q(10974),	-- Stasis Chambers of Bash'ir
@@ -322,31 +329,40 @@ _.Zones =
 					qh( 11047),	-- The Apprentice's Request
 --]]					
 					qa(10504, {	-- The Bladespire Ogres
-						i(31425),
-						i(31426),
-						i(31427),
-						i(31428),
+						i(31426),	-- Agile Mountain Bracers
+						i(31428),	-- Commander Skyshadow's Gloves
+						i(31425),	-- Ogre Vanquisher's Belt
+						i(31427),	-- Sylvanaar Defender's Pauldrons
 					}),
 --					qh( 10503),	-- The Bladespire Threat
 					qh(10505, {	-- The Bloodmaul Ogres
-						i(31477),
-						i(31479),
-						i(31478),
-						i(31480),
+						i(31480),	-- Ogre Beater's Belt
+						i(31477),	-- Red Hands of the Thunderlord
+						i(31479),	-- Rugged Mountain Bracers
+						i(31478),	-- Rugged Mountain Bracers
 					}),
 --[[					
 					q(10502),	-- The Bloodmaul Ogres
 --]]					
 					qa(10690, {	-- The Den Mother
-						i(31423),
-						i(31422),
-						i(31424),
+						i(31424),	-- Arcane Wand of Sylvanaar
+						i(31422),	-- Heavy Elven Dirk
+						i(31423),	-- Wolf Hewer's Axe
 					}),
 --[[					
 					qh( 10486),	-- The Encroaching Wilderness
 					q(10455),	-- The Encroaching Wilderness
 					q(10982),	-- The Eye of Haramad
-					q(10912),	-- The Hound-Master
+--]]					
+					q(10912, {	-- The Hound-Master
+						i(31693),	-- Natasha's Arcane Filament
+						i(31696),	-- Natasha's Battle Chain
+						i(31695),	-- Natasha's Choker
+						i(31692),	-- Natasha's Ember Necklace
+						i(31691),	-- Natasha's Guardian Cord
+						i(31694),	-- Natasha's Pack Collar
+					}),
+--[[					
 					q(10976),	-- The Mark of the Nexus-King
 					qh(  9795),	-- The Ogre Threat
 					qh( 10720),	-- The Smallest Creatures
@@ -355,9 +371,9 @@ _.Zones =
 					qh( 10565),	-- The Stones of Vekh'nir
 --]]					
 					qh(10526, {	-- The Thunderspike
-						i(31475),
-						i(31476),
-						i(31474),
+						i(31476),	-- Slow Death Dirk
+						i(31475),	-- Thunderlord Scalpel
+						i(31474),	-- Wand of the Ancestors
 					}),
 --[[					
 					qh( 10851),	-- The Totems of My Enemy
@@ -365,10 +381,10 @@ _.Zones =
 					q(10825),	-- The Truth Unorbed
 --]]					
 					qh(10867, {	-- There Can Be Only One Response
-						i(31687),
-						i(31688),
-						i(31689),
-						i(31690),
+						i(31690),	-- Belt of the Soul Saver
+						i(31689),	-- Mok'Nathal Hero's Pantaloons
+						i(31687),	-- Mok'Nathal Mantle
+						i(31688),	-- Spiritcaller's Mask
 					}),
 --[[					
 					qh( 10542),	-- They Stole Me Hookah and Me Brews!
@@ -381,31 +397,33 @@ _.Zones =
 					qh( 39198),	-- Warchief's Command: Blade's Edge Mountains
 --]]					
 					qa(10609, {	-- What Came First, the Drake or the Egg?
-						i(31438),
-						i(31439),
-						i(31440),
-						i(31441),
+						i(31441),	-- Clocktock's Jumpers
+						i(31440),	-- Devolved Drake Girdle
+						i(31438),	-- Fizit's Mantle of Drake Hunting
+						i(31439),	-- Precise Gloves of Alacrity
 					}),
 					q(10747, {	-- Whelps of the Wyrmcult
-						i(31509),
-						i(31513),
-						i(31515),
-						i(31519),
+						i(31513),	-- Blackwhelp Belt
+						i(31519),	-- Inkling's Leggings
+						i(31515),	-- Whelpscale Gauntlets
+						i(31509),	-- Wyrmcultist's Hood
 					}),
 --					qa( 10580),	-- Where Did Those Darn Gnomes Go?
 					q(10607, {	-- Whispers of the Raven God
-						i(31531),
-						i(31532),
-						i(31533),
-						i(31534),
+						i(31533),	-- Diluvian Spaulders
+						i(31532),	-- Supple Leather Boots
+						i(31534),	-- Whiteknuckle Gauntlets
+						i(31531),	-- Wraithcloth Bindings
 					}),
 --[[					
 					qh( 10614),	-- Whispers on the Wind
 					q(10894),	-- Wyrmskull Watcher
 --]]					
 					q(10821, {	-- You're Fired!
-						i(31793),
-						i(31792),
+						i(31793),	-- Ruuan Weald Wristguards
+						i(31792),	-- Evergrove Ranger's Cloak
+						i(31790),	-- Expedition Pendant
+						i(31791),	-- Wildlord's Band
 					}),
 					faction(1038, {	-- Ogri'la
 						["groups"] = {

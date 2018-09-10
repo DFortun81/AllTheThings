@@ -38,26 +38,27 @@ _.Zones =
 					q(10689),	-- Altruis
 --]]					
 					qh(9907,  {  -- An Audacious Advance
-						i(25622),
-						i(25623),
-						i(25624),
+						i(25623),	-- Bracers of the Battle Cleric
+						i(25624),	-- King's Bulwark
+						i(25622),	-- Staff of the Four Golden Coins
 					}),
 --[[					
 					q(9928),	-- Armaments for Deception
 					qh(  9891),	-- Because Kilrath is a Coward
 --]]					
 					qh(9916,  {  -- Bleeding Hollow Supply Crates
-						i(25630),
-						i(25629),
+						i(25630),	-- Ogre Basher's Slippers
+						i(25629),	-- Ogre Handler's Shooter
+						i(25628),	-- Ogre Mauler's Badge
 					}),
 --[[					
 					q(9805),	-- Blessing of Incineratus
 					q(9932),	-- Body of Evidence
 --]]					
 					q(10111,  {  -- Bring Me The Egg!
-						i(28030),
-						i(28032),
-						i(28031),
+						i(28032),	-- Delicate Green Poncho
+						i(28031),	-- Nomad's Woven Cloak
+						i(28030),	-- Spell-Slinger's Protector
 					}),
 --[[					
 					q(9999),	-- Buying Time
@@ -65,23 +66,28 @@ _.Zones =
 					qa( 12357),	-- Candy Bucket
 --]]					
 					qa(9955,  {  -- Cho'war the Pillager
-						i(25777),
+						i(25775),	-- Ogre Slayer's Band
+						i(25776),	-- Ogre Slayer's Pendant
+						i(25777),	-- Ogre Slayer's Cover
 					}),
 					qh(9946,  {  -- Cho'war the Pillager
-						i(25777),
+						i(25775),	-- Ogre Slayer's Band
+						i(25776),	-- Ogre Slayer's Pendant
+						i(25777),	-- Ogre Slayer's Cover
 					}),
 					q(9851,  {  -- Clefthoof Mastery
-						i(25591),
-						i(25592),
-						i(25589),
+						i(25591),	-- Clefthoof Gloves
+						i(25589),	-- Clefthoof Helm
+						i(25592),	-- Clefthoof Wristguards
 					}),
 --[[					
 					q(9789),	-- Clefthoof Mastery
 					q(9850),	-- Clefthoof Mastery
 --]]					
 					qa(9924,  {  -- Corki's Gone Missing Again
-						i(25631),
-						i(25632),
+						i(25631),	-- Boots of the Specialist
+						i(25633),	-- Uniting Charm
+						i(25632),	-- Wand of Happiness
 					}),
 --[[					
 					qa(  9954),	-- Corki's Ransom
@@ -106,29 +112,37 @@ _.Zones =
 					qa( 10476),	-- Fierce Enemies
 --]]					
 					qh(9948,  {  -- Finding the Survivors
-						i(25778),
-						i(25780),
+						i(25778),	-- Manacles of Remembrance
+						i(25780),	-- Warmaul Defender's Cloak
+						i(25779),	-- Warmaul Slayer's Band
 					}),
 					q(10011,  {  -- Forge Camp: Annihilated
-						i(25822),
-						i(25821),
-						i(25820),
-						i(25819),
+						i(25819),	-- Breastplate of the Warbringer
+						i(25821),	-- Leggings of Unending Assault
+						i(25820),	-- Metallic Headband of Simm'onz
+						i(25822),	-- Watcher's Tunic
 					}),
 					q(9900,  {  -- Gava'xi
-						i(25637),
-						i(25544),
+						i(25637),	-- Ethereal Sash
+						i(25634),	-- Oshu'gun Relic
+						i(25544),	-- Zerid's Vintage Musket
 					}),
 --[[					
 					q(13800),	-- Get My Keys!
-					q(9853),	-- Gurok the Usurper
+--]]					
+					q(9853, {	-- Gurok the Usurper
+						i(25564),	-- Earthen Mark of Health
+						i(25563),	-- Earthen Mark of Power
+						i(25562),	-- Earthen Mark of Razing
+					}),
+--[[					
 					qa(  9982),	-- He Called Himself Altruis...
 					qh(  9983),	-- He Called Himself Altruis...
 --]]					
 					qh(9866,  {  -- He Will Walk The Earth...
-						i(25574),
-						i(25575),
-						i(25576),
+						i(25574),	-- Greenkeeper's Pantaloons
+						i(25576),	-- Smuggler's Mitts
+						i(25575),	-- Thunderbringer's Guard
 					}),
 --[[					
 					qa(  9923),	-- HELP!
@@ -152,12 +166,14 @@ _.Zones =
 					qh(  9906),	-- Message in a Battle
 --]]
 					qh(9934,  {  -- Message to Garadar
-						i(25608),
-						i(25609),
+						i(25607),	-- Burning Blade Cultist Band
+						i(25609),	-- Burning Blade Devotee's Cinch
+						i(25608),	-- Lantresor's Warblade
 					}),
 					qa(9933,  {  -- Message to Talaar
-						i(25603),
-						i(25605),
+						i(25606),	-- Burning Blade Cultist Band
+						i(25605),	-- Burning Blade Devotee's Cinch
+						i(25603),	-- Lantresor's Warblade
 					}),
 --[[					
 					qh(  9944),	-- Missing Mag'hari Procession
@@ -169,23 +185,23 @@ _.Zones =
 					qh( 10478),	-- More Warbeads!
 --]]					
 					q(9815,  {  -- Muck Diving
-						i(25560),
-						i(25561),
-						i(25559),
+						i(25560),	-- Lo'ap's Muck Diving Pads
+						i(25559),	-- Lo'ap's Tunic of Muck Diving
+						i(25561),	-- Muck-Ridden Galoshes
 					}),
 					q(9862,  {  -- Murkblood Corrupters
-						i(25566),
-						i(25565),
-						i(25567),
+						i(25567),	-- Cord of the Ring
+						i(25566),	-- Judicator's Gauntlets
+						i(25565),	-- Spaulders of the Ring
 					}),
 --[[					
 					qa(  9871),	-- Murkblood Invaders
 					qh(  9872),	-- Murkblood Invaders
 --]]					
 					qh(9867,  {  -- Murkblood Leaders...
-						i(25583),
-						i(25585),
-						i(25584),
+						i(25583),	-- Eighty Silver Links
+						i(25585),	-- Murkblood Avenger's Legplates
+						i(25584),	-- Murkblood Oven Mitts
 					}),
 --[[					
 					q(31924),	-- Narrok
@@ -194,9 +210,9 @@ _.Zones =
 					qh(  9865),	-- Once Were Warriors
 --]]					
 					qa(9873,  {  -- Ortor My Old Friend...
-						i(25583),
-						i(25584),
-						i(25585),
+						i(25583),	-- Eighty Silver Links
+						i(25585),	-- Murkblood Avenger's Legplates
+						i(25584),	-- Murkblood Oven Mitts
 					}),
 --[[					
 					qa( 10076),	-- Oshu'gun Crystal Powder
@@ -213,30 +229,24 @@ _.Zones =
 					q(9849),	-- Shattering the Veil
 --]]					
 					qa(9878,  {  -- Solving the Problem
-						i(25577),
-						i(25578),
-						i(25579),
+						i(25578),	-- Caustic Feeler
+						i(25579),	-- Dark Shaman's Cover
+						i(25577),	-- Greenblood Pantaloons
 					}),
 --[[					
 					qh(  9910),	-- Standards and Practices
 					q(9882),	-- Stealing from Thieves
 --]]					
 					qa(9874,  {  -- Stopping the Spread
-						i(25570),
-						i(25568),
-						i(25569),
+						i(25570),	-- Melia's Lustrous Crown
+						i(25569),	-- Murkblood Avenger's Chestplate
+						i(25568),	-- Warcaster's Scaled Leggings
 					}),
 --					q(9991),	-- Survey the Land
 					q(9859,  {  -- Talbuk Mastery
-						i(25543),
-						i(25636),
-						i(25545),
-					}),
-					qh(10172,  {  -- There Is No Hope
-						i(28173),
-						i(28169),
-						i(28172),
-						i(28175),
+						i(25636),	-- Talbuk Cape
+						i(25545),	-- Talbuk Dirk
+						i(25543),	-- Talbuk Sticker
 					}),
 --[[					
 					q(9857),	-- Talbuk Mastery
@@ -254,8 +264,9 @@ _.Zones =
 					qa( 10113),	-- The Nesingwary Safari
 --]]					
 					qa(9956,  {  -- The Ravaged Caravan
-						i(25778),
-						i(25780),
+						i(25778),	-- Manacles of Remembrance
+						i(25780),	-- Warmaul Defender's Cloak
+						i(25779),	-- Warmaul Slayer's Band
 					}),
 --[[					
 					q(9962),	-- The Ring of Blood: Brokentoe
@@ -264,21 +275,21 @@ _.Zones =
 					q(9967),	-- The Ring of Blood: The Blue Brothers
 --]]					
 					q(9977,  {  -- The Ring of Blood: The Final Challenge
-						i(25762),
-						i(25760),
-						i(25763),
-						i(25761),
-						i(25764),
-						i(25759),
+						i(25760),	-- Battle Mage's Baton
+						i(25763),	-- Ceremonial Warmaul Blood-Blade
+						i(25762),	-- Honed Voidaxe
+						i(25764),	-- Mag'hari Fury Brand
+						i(25759),	-- Mogor's Anointing Club
+						i(25761),	-- Staff of Beasts
 					}),
 --[[					
 					q(9973),	-- The Ring of Blood: The Warmaul Champion
 					qa(  9921),	-- The Ruins of Burning Blade
 --]]					
 					q(9810,  {  -- The Spirit Polluted
-						i(25558),
-						i(25557),
-						i(25556),
+						i(25558),	-- Ango'rosh Souleater's Cowl
+						i(25556),	-- Oversized Ogre Hauberk
+						i(25557),	-- Salvaged Ango'rosh Pauldrons
 					}),
 --[[					
 					qa(  9869),	-- The Throne of the Elements
@@ -288,23 +299,31 @@ _.Zones =
 					qh(  9868),	-- The Totem of Kar'dash
 --]]					
 					qa(9922,  {  -- The Twin Clefts of Nagrand
-						i(25623),
-						i(25624),
-						i(25622),
+						i(25623),	-- Bracers of the Battle Cleric
+						i(25624),	-- King's Bulwark
+						i(25622),	-- Staff of the Four Golden Coins
 					}),
 					q(9852,  {  -- The Ultimate Bloodsport
-						i(25640),
-						i(25639),
+						i(25640),	-- Nesingwary Safari Stick
+						i(25639),	-- Hemet's Elekk Gun
 					}),
 --[[					
 					q(9818),	-- The Underneath
-					qh( 10172),	-- There Is No Hope
+--]]					
+					qh(10172,  {  -- There Is No Hope
+						i(28168),	-- Insignia of the Mag'hari Hero
+						i(28173),	-- Mag'hari Huntsman's Leggings
+						i(28169),	-- Mag'hari Ritualist's Horns
+						i(28172),	-- Mag'hari Scout's Tunic
+						i(28175),	-- Mag'hari Warlord's Legplates
+					}),
+--[[
 					qh( 10081),	-- To Meet Mother Kashur
 --]]					
 					qh(9863,  {  -- Vile Idolatry
-						i(25570),
-						i(25568),
-						i(25569),
+						i(25570),	-- Melia's Lustrous Crown
+						i(25569),	-- Murkblood Avenger's Chestplate
+						i(25568),	-- Warcaster's Scaled Leggings
 					}),
 --[[					
 					q(10252),	-- Vision of the Dead
@@ -312,14 +331,14 @@ _.Zones =
 					qh( 10953),	-- Visit the Throne of the Elements
 --]]					
 					qa(9938,  {  -- Wanted: Durn the Hungerer
-						i(25774),
-						i(25773),
-						i(25772),
+						i(25774),	-- Azure Lightblade
+						i(25772),	-- Crystalline Kopesh
+						i(25773),	-- Hungering Bone Cudgel
 					}),
 					qh(9937,  {  -- Wanted: Durn the Hungerer
-						i(25774),
-						i(25773),
-						i(25772),
+						i(25774),	-- Azure Lightblade
+						i(25772),	-- Crystalline Kopesh
+						i(25773),	-- Hungering Bone Cudgel
 					}),
 --[[					
 					qa(  9936),	-- Wanted: Giselda the Crone
@@ -336,9 +355,9 @@ _.Zones =
 					q(9855),	-- Windroc Mastery
 --]]					
 					q(9856,  {  -- Windroc Mastery
-						i(25595),
-						i(25594),
-						i(25593),
+						i(25594),	-- Windroc Boots
+						i(25593),	-- Windroc Greaves
+						i(25595),	-- Windroc Shroud
 					}),
 					
 					faction(932, {	-- The Aldor
@@ -373,22 +392,22 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares	
 					n(17144, { -- Goretooth
-						i(31188),
-						i(31191),
-						i(31192),
-						i(31189),
+						i(31192),	-- Crocolisk Hide Bindings
+						i(31191),	-- Crocolisk Hide Bracers
+						i(31188),	-- Crocolisk Scale Vambraces
+						i(31189),	-- Crocolisk Scale Wristguards
 					}), 
 					n(18684, {	-- Bro'Gaz the Clanless
 						i(31194),	-- Gronn-Blessed Warbeads
 					}),
 					n(17150, {	-- Vir'aani Arcanist
-						dr(0.6, i(22923)),	-- Recipe: Major Arcane Protection Potion
+						i(22923),	-- Recipe: Major Arcane Protection Potion
 					}),
 					n(18683, { -- Voidhunter Yar
-						i(31197),
-						i(31199),
-						i(31195),
-						i(31198),
+						i(31198),	-- Voidhide Cord
+						i(31195),	-- Voidplate Girdle
+						i(31197),	-- Voidscale Belt
+						i(31199),	-- Voidweave Cilice
 					}), 
 				}),
 				n(-2, {		-- Vendors
