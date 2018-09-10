@@ -33,7 +33,7 @@ _.Zones =
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
 						q(50606, {	-- Horde War Effort [The Honorbound]
-							["groups"] = bubbleDown({["modID"] = 28}, {
+							["groups"] = bubbleDown({["modID"] = 5}, {
 								i(163857, {	-- Azerite Armor Cache
 									["groups"] = {
 										i(163426),	-- Honorbound Artificer's Guise
@@ -762,7 +762,23 @@ _.Zones =
 										q(53416, {	-- Warfront: The Battle For Stromgarde
 											["groups"] = {
 												i(164577, {	-- Warfronts Equipment Cache
-													["groups"] = {
+													["groups"] = bubbleDown({["modID"] = 6}, {
+														i(163878),	-- Honorbound Barrier
+														i(163870),	-- Honorbound Bonebreaker
+														i(163868),	-- Honorbound Dagger
+														i(163874),	-- Honorbound Decapitator
+														i(163876),	-- Honorbound Focus
+														i(163880),	-- Honorbound Gladius
+														i(163867),	-- Honorbound Longbow
+														i(163871),	-- Honorbound Pigsticker
+														i(163879),	-- Honorbound Portable Cannon
+														i(163875),	-- Honorbound Protectorate
+														i(163866),	-- Honorbound Skullcleaver
+														i(163869),	-- Honorbound Skullcrusher
+														i(163873),	-- Honorbound Wand
+														i(163872),	-- Honorbound War Staff
+														i(163877),	-- Honorbound Warglaive
+														i(163360),	-- Honorbound Outrider's Drape
 														i(163426),	-- Honorbound Artificer's Guise
 														i(163424),	-- Honorbound Artificer's Amice
 														i(163280),	-- Honorbound Artificer's Robes
@@ -795,7 +811,7 @@ _.Zones =
 														i(163461),	-- Honorbound Centurion's Greatbelt
 														i(163455),	-- Honorbound Centurion's Legplates
 														i(163460),	-- Honorbound Centurion's Greaves
-													},
+													}),
 												}),
 											},
 											["sourceQuests"] = { 53212 },	-- Back to Zuldazar

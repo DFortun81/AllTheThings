@@ -78,7 +78,7 @@ _.Zones =
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
 						q(50605, { 	-- Alliance War Effort [7th Legion]
-							["groups"] = bubbleDown({["modID"] = 28}, {
+							["groups"] = bubbleDown({["modID"] = 5}, {
 								i(163857, {	-- Azerite Armor Cache
 									["groups"] = {
 										i(163339), -- 7th Legionnaire's Hood
