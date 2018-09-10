@@ -2097,6 +2097,36 @@ local function createDebugFrame(parent)
 	questGiverLists:SetPoint("TOPLEFT",creatureLists,0,-frameSpacer)
 	addObject(elm,questGiverLists)
 	
+	-- This creates the "Show Class Requirements" checkBox 
+	local showClassRequirements = createCheckBox("Show Class Requirements", child, function(self)
+			app.SetDataMember("ShowClassRequirements", self:GetChecked());
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("ShowClassRequirements", false));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see the full list of class requirements in the tooltip.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	showClassRequirements:SetPoint("TOPLEFT",questGiverLists,0,-frameSpacer)
+	addObject(elm,showClassRequirements)
+	
+	-- This creates the "Show Race Requirements" checkBox 
+	local showRaceRequirements = createCheckBox("Show Race Requirements", child, function(self)
+			app.SetDataMember("ShowRaceRequirements", self:GetChecked());
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("ShowRaceRequirements", false));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see the full list of race requirements in the tooltip.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	showRaceRequirements:SetPoint("TOPLEFT",showClassRequirements,0,-frameSpacer)
+	addObject(elm,showRaceRequirements)
+	
 	-- This creates the "Report Completed Quests" checkBox 
 	local reportCompletedQuests = createCheckBox("Report Completed Quests", child, function(self)
 			app.SetDataMember("DebugCompletedQuests", self:GetChecked());
@@ -2109,7 +2139,7 @@ local function createDebugFrame(parent)
 			GameTooltip:SetText ("Enable this option if you want to see the Quest ID for any quest you complete immediately after it happens. (For reporting bugs, trackings purposes, etc)", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	reportCompletedQuests:SetPoint("TOPLEFT",questGiverLists,0,-frameSpacer)
+	reportCompletedQuests:SetPoint("TOPLEFT",showRaceRequirements,0,-frameSpacer)
 	addObject(elm,reportCompletedQuests)
 	
 	-- This creates the "Only Report Unsorted Quests" checkBox 

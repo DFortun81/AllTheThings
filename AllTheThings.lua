@@ -1989,16 +1989,16 @@ local function OpenMiniList(field, id, label)
 							if group.parent.achievementID then
 								group = app.CreateAchievement(group.parent.achievementID, 
 									{ g = { group }, total = group.total, progress = group.progress, 
-										u = group.parent.u, races = group.parent.races, classes = group.parent.classes, nmc = group.parent.nmc, nmr = group.parent.nmr });
+										u = group.parent.u, races = group.parent.races, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
 							else
 								group = app.CreateAchievement(group.achievementID,
 									{ g = { group }, total = group.total, progress = group.progress,
-										u = group.u, races = group.races, classes = group.classes, nmc = group.nmc, nmr = group.nmr });
+										u = group.u, races = group.races, c = group.c, nmc = group.nmc, nmr = group.nmr });
 							end
 						end
 					elseif group.criteriaID and group.parent.achievementID then
 						group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
-							u = group.parent.u, races = group.parent.races, classes = group.parent.classes, nmc = group.parent.nmc, nmr = group.parent.nmr });
+							u = group.parent.u, races = group.parent.races, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
 					end
 					
 					-- Check to see if this group already exists in the header
@@ -2008,7 +2008,7 @@ local function OpenMiniList(field, id, label)
 							if g.g and g.achievementID == group.achievementID 
 								and g.u == group.u 
 								and g.races == group.races 
-								and g.classes == group.classes then
+								and g.c == group.c then
 								group = group.g[1];
 								app.HolidayHeader.progress = app.HolidayHeader.progress + (group.progress or 0);
 								app.HolidayHeader.total = app.HolidayHeader.total + (group.total or 0);
@@ -6918,6 +6918,22 @@ local function RowOnEnter(self)
 					GameTooltip:AddDoubleLine(L("CREATURE_ID"), tostring(cr > 0 and NPCNameFromID[cr] or ("NPC (" .. cr .. ")")));
 				end
 			end
+		end
+		if reference.c and GetDataMember("ShowClassRequirements") then
+			local str = "";
+			for i,cl in ipairs(reference.c) do
+				if i > 1 then str = str .. ", "; end
+				str = str .. C_CreatureInfo.GetClassInfo(cl).className;
+			end
+			GameTooltip:AddDoubleLine("Classes", str);
+		end
+		if reference.races and GetDataMember("ShowRaceRequirements") then
+			local str = "";
+			for i,race in ipairs(reference.races) do
+				if i > 1 then str = str .. ", "; end
+				str = str .. C_CreatureInfo.GetRaceInfo(race).raceName;
+			end
+			GameTooltip:AddDoubleLine("Races", str);
 		end
 		if reference.isDaily then GameTooltip:AddLine("This can be completed daily."); end
 		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
