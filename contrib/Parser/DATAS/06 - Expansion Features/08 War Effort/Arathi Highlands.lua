@@ -6,8 +6,10 @@ _.ExpansionFeatures =
 {
 	n(-10057, {	-- War Effort
 		["groups"] = {
+			--[[ Note: Don't think there are any achievements.  Leaving here in case.
 			n(-4, {	-- Achievements
 			}),
+			--]]
 			n(-1, {	-- Common Boss Drop [Tier 2]
 				["groups"] = bubbleDown({["modID"] = 5}, {
 								-- ALLIANCE SET --
@@ -148,7 +150,7 @@ _.ExpansionFeatures =
 				},
 				["description"] = "These can drop off any rare or world boss in the zone.",
 			}),
-			n(-17, {	-- Quests
+			n(-17, {	-- Quests [Tier 2]
 				q(53212, {	-- Back to Zuldazar
 					["groups"] = {
 						spell(279443, {	-- Warfront: The Battle for Stromgarde [H]	
@@ -1004,78 +1006,6 @@ _.ExpansionFeatures =
 			n(-2, {	-- Vendors
 			}),
 			--]]
-			n(-227, {	-- Victory
-				["groups"] = bubbleDown({["modID"] = 3}, {
-								-- ALLIANCE SET --
-					i(163339),	-- 7th Legionnaire's Hood
-					i(163337),	-- 7th Legionnaire's Amice
-					i(163248),	-- 7th Legionnaire's Robes
-					i(163275),	-- 7th Legionnaire's Cuffs
-					i(163341),	-- 7th Legionnaire's Handwraps
-					i(163342),	-- 7th Legionnaire's Cord
-					i(163264),	-- 7th Legionnaire's Legwraps
-					i(163253),	-- 7th Legionnaire's Slippers
-					i(163380),	-- 7th Legionnaire's Visage
-					i(163377),	-- 7th Legionnaire's Leather Mantle
-					i(163251),	-- 7th Legionnaire's Vest
-					i(163278),	-- 7th Legionnaire's Bracers
-					i(163256),	-- 7th Legionnaire's Gloves
-					i(163384),	-- 7th Legionnaire's Buckle
-					i(163266),	-- 7th Legionnaire's Britches
-					i(163255),	-- 7th Legionnaire's Treads
-					i(163394),	-- 7th Legionnaire's Helm
-					i(163389),	-- 7th Legionnaire's Monnion
-					i(163398),	-- 7th Legionnaire's Chainmail
-					i(163277),	-- 7th Legionnaire's Bindings
-					i(163397),	-- 7th Legionnaire's Handguards
-					i(163401),	-- 7th Legionnaire's Cincture
-					i(163265),	-- 7th Legionnaire's Leggings
-					i(163400),	-- 7th Legionnaire's Sabatons
-					i(163410),	-- 7th Legionnaire's Headpiece
-					i(163405),	-- 7th Legionnaire's Shoulderplates
-					i(163418),	-- 7th Legionnaire's Chestguard
-					i(163403),	-- 7th Legionnaire's Armguards
-					i(163414),	-- 7th Legionnaire's Gauntlets
-					i(163422),	-- 7th Legionnaire's Greatbelt
-					i(163409),	-- 7th Legionnaire's Legguards
-					i(163421),	-- 7th Legionnaire's Greaves
-								-- HORDE SET --
-					i(163426),	-- Honorbound Artificer's Guise
-					i(163424),	-- Honorbound Artificer's Amice
-					i(163280),	-- Honorbound Artificer's Robes
-					i(163306),	-- Honorbound Artificer's Cuffs
-					i(163428),	-- Honorbound Artificer's Mitts
-					i(163430),	-- Honorbound Artificer's Cord
-					i(163296),	-- Honorbound Artificer's Legwraps
-					i(163285),	-- Honorbound Artificer's Sandals
-					i(163435),	-- Honorbound Outrider's Headpiece
-					i(163432),	-- Honorbound Outrider's Shoulderguards
-					i(163283),	-- Honorbound Outrider's Tunic
-					i(163309),	-- Honorbound Outrider's Bracers
-					i(163437),	-- Honorbound Outrider's Gloves
-					i(163439),	-- Honorbound Outrider's Buckle
-					i(163298),	-- Honorbound Outrider's Pants
-					i(163438),	-- Honorbound Outrider's Boots
-					i(163446),	-- Honorbound Vanguard's Skullguard
-					i(163441),	-- Honorbound Vanguard's Shoulderguards
-					i(163282),	-- Honorbound Vanguard's Chainmail
-					i(163308),	-- Honorbound Vanguard's Bindings
-					i(163448),	-- Honorbound Vanguard's Handguards
-					i(163451),	-- Honorbound Vanguard's Clasp
-					i(163445),	-- Honorbound Vanguard's Leggings
-					i(163449),	-- Honorbound Vanguard's Sabatons
-					i(163456),	-- Honorbound Centurion's Greathelm
-					i(163453),	-- Honorbound Centurion's Shoulderplates
-					i(163459),	-- Honorbound Centurion's Breastplate
-					i(163307),	-- Honorbound Centurion's Vambraces
-					i(163458),	-- Honorbound Centurion's Gauntlets
-					i(163461),	-- Honorbound Centurion's Greatbelt
-					i(163455),	-- Honorbound Centurion's Legplates
-					i(163460),	-- Honorbound Centurion's Greaves
-				}),
-				["icon"] = "Interface\\Icons\\achievement_bg_abshutout",
-				["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
-			}),
 			n(-34, {	-- World Quests
 				qa(52847),	-- Doom's Howl
 				qh(52848),	-- The Lion's Roar

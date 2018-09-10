@@ -32,7 +32,7 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					["groups"] = {
-						q(50606, {	-- Horde War Effort [The Honorbound]
+						q(50606, {	-- Horde War Effort [The Honorbound] [Tier 2]
 							["groups"] = bubbleDown({["modID"] = 5}, {
 								i(163857, {	-- Azerite Armor Cache
 									["groups"] = {
@@ -759,7 +759,7 @@ _.Zones =
 							["groups"] = {
 								n(-229, {	-- Weekly
 									["groups"] = {
-										q(53416, {	-- Warfront: The Battle For Stromgarde
+										q(53416, {	-- Warfront: The Battle For Stromgarde [Tier 3]
 											["groups"] = {
 												i(164577, {	-- Warfronts Equipment Cache
 													["groups"] = bubbleDown({["modID"] = 6}, {

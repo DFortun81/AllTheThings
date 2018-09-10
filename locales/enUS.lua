@@ -452,6 +452,7 @@ AllTheThings.Locales.enUS = {
 		[-230] = "Interface\\Icons\\achievement_legionpvp2tier3",				-- Conquest
 		[-231] = "Interface\\Icons\\Spell_Shadow_DeathScream",
 		[-232] = "Interface\\Icons\\Spell_Shadow_DeathScream",
+		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",		-- Warfront: The Battle for Stromgarde
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1072,6 +1073,7 @@ AllTheThings.Locales.enUS = {
 		[-230] = PVP_CONQUEST,													-- Conquest
 		[-231] = BATTLE_PET_BREED_QUALITY4.." - "..FACTION_ALLIANCE,			-- Rares - Alliance  [Note: Temp Solution]
 		[-232] = BATTLE_PET_BREED_QUALITY4.." - "..FACTION_HORDE,				-- Rares - Horde  [Note: Temp Solution]
+		[-233] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
