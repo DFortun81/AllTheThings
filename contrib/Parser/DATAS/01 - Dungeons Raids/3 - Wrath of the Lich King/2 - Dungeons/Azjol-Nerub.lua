@@ -56,7 +56,40 @@ _.Instances =
 						},
 					}),
 					d  (1, {	-- Normal
+						{
+							["achievementID"] = 480,	-- Azjol-Nerub
+						},
+						n(0, {		-- Zone Drop
+							i(35664, {	-- Unknown Archaeologist's Hammer
+								["crs"] = {
+									29128,	-- Anub'ar Prime Guard
+									28734,	-- Anub'ar Skirmisher
+									28732,	-- Anub'ar Warrior
+									29335,	-- Anub'ar Webspinner
+								},
+							}),
+							i(35666, {	-- Mark of the Spider
+								["crs"] = {
+									29128,	-- Anub'ar Prime Guard
+									28734,	-- Anub'ar Skirmisher
+									28732,	-- Anub'ar Warrior
+									29335,	-- Anub'ar Webspinner
+								},
+							}),
+							i(35665, {	-- Soothing Lichen Wraps
+								["crs"] = {
+									29128,	-- Anub'ar Prime Guard
+									28734,	-- Anub'ar Skirmisher
+									28732,	-- Anub'ar Warrior
+									29335,	-- Anub'ar Webspinner
+								},
+							}),
+						}),
 						cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
+							{
+								["achievementID"] = 480,	-- Azjol-Nerub
+								["criteriaID"] = 1,	-- Krik'thir the Gatewatcher slain
+							},
 							i( 35655),	-- Cobweb Machete
 							i( 37216),	-- Facade Shield of Glyphs
 							i(157582),	-- Nerubian Mantle
@@ -67,6 +100,10 @@ _.Instances =
 							i( 37218),	-- Stone-Worn Footwraps
 						})),
 						cr(28921, e(586, {	-- Hadronox
+							{
+								["achievementID"] = 480,	-- Azjol-Nerub
+								["criteriaID"] = 2,	-- Hadronox slain
+							},
 							i( 35658),	-- Life-Staff of the Web Lair
 							i( 35660),	-- Spinneret Epaulets
 							i( 37222),	-- Egg Sac Robes
@@ -77,6 +114,10 @@ _.Instances =
 							i( 37220),	-- Essence of Gossamer
 						})),
 						cr(29120, e(587, {	-- Anub'arak
+							{
+								["achievementID"] = 480,	-- Azjol-Nerub
+								["criteriaID"] = 3,	-- Anub'arak slain
+							},
 							i(37235),	-- Crypt Lord's Deft Blade
 							i(37238),	-- Rod of the Fallen Monarch
 							i(37237),	-- Chitin Shell Greathelm
@@ -93,6 +134,9 @@ _.Instances =
 					d(  2, {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
+							{
+								["achievementID"] = 491,	-- Heroic: Azjol-Nerub
+							},
 							n(0, {		-- Zone Drop
 								i(37243, {	-- Treasure Seeker's Belt
 									["crs"] = {
@@ -110,6 +154,18 @@ _.Instances =
 								}),
 							}),
 							cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
+								{
+									["achievementID"] = 491,	-- Heroic: Azjol-Nerub
+									["criteriaID"] = 1,	-- Krik'thir the Gatewatcher slain
+								},
+								{
+									["achievementID"] = 1296,	-- Watch Him Die
+									["crs"] = {
+										28730,	-- Watcher Gashra
+										28729,	-- Watcher Narjil
+										28731,	-- Watcher Silthik
+									},
+								},
 								i( 35655),	-- Cobweb Machete
 								i( 37216),	-- Facade Shield of Glyphs
 								i(157582),	-- Nerubian Mantle
@@ -120,6 +176,13 @@ _.Instances =
 								i( 37218),	-- Stone-Worn Footwraps
 							})),
 							cr(28921, e(586, {	-- Hadronox
+								{
+									["achievementID"] = 491,	-- Heroic: Azjol-Nerub
+									["criteriaID"] = 2,	-- Hadronox slain
+								},
+								{
+									["achievementID"] = 1297,	-- Hadronox Denied
+								},
 								i( 35658),	-- Life-Staff of the Web Lair
 								i( 35660),	-- Spinneret Epaulets
 								i( 37222),	-- Egg Sac Robes
@@ -130,6 +193,13 @@ _.Instances =
 								i( 37220),	-- Essence of Gossamer
 							})),
 							cr(29120, e(587, {	-- Anub'arak
+								{
+									["achievementID"] = 491,	-- Heroic: Azjol-Nerub
+									["criteriaID"] = 3,	-- Anub'arak slain
+								},
+								{
+									["achievementID"] = 1860,	-- Gotta Go!
+								},
 								i(37235),	-- Crypt Lord's Deft Blade
 								i(37238),	-- Rod of the Fallen Monarch
 								i(37237),	-- Chitin Shell Greathelm
