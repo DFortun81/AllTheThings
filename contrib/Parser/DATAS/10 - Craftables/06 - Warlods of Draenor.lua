@@ -15,6 +15,14 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(120259), -- Steelforged Axe
 			}),
 			n(-46,{ -- Plate
+				WOD_CRAFTED_ITEM(114230),	-- Truesteel Helm
+				WOD_CRAFTED_ITEM(114231),	-- Truesteel Pauldrons
+				WOD_CRAFTED_ITEM(114232),	-- Truesteel Breastplate
+				WOD_CRAFTED_ITEM(114236),	-- Truesteel Armguards
+				WOD_CRAFTED_ITEM(114237),	-- Truesteel Gauntlets
+				WOD_CRAFTED_ITEM(114233),	-- Truesteel Waistguard
+				WOD_CRAFTED_ITEM(114234),	-- Truesteel Greaves
+				WOD_CRAFTED_ITEM(114235),	-- Truesteel Boots
 				i(116426), -- Smoldering Helm
 				i(116427), -- Smoldering Breastplate
 				i(116425), -- Smoldering Greaves
