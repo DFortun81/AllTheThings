@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			n(-233, {	-- War Front: The Battle for Stromgarde
 				["groups"] = {
 					n(-4, {	-- Achievements
-						ach(12874, {	-- An Eventful Battle
+						ach(12874, {	-- An Eventful Battle [A/H]
 							["groups"] = {
 								crit(12),	-- Cresting Goliath
 								crit(1),	-- Fozruk
@@ -26,7 +26,18 @@ _.ExpansionFeatures =
 							},
 							["description"] = "Typically only 1 rare per Warfront scenario.  If it lasts long enough you could have 2.",
 						}),
-						ach(12878, {	-- Leader of Troops
+						ach(12884, {	-- Leader of Troops [A]
+							["groups"] = {
+								crit(1),	-- Footman
+								crit(4),	-- Knights
+								crit(3),	-- Priests
+								crit(2),	-- Riflemen
+								crit(5),	-- Siege Engine
+							},
+							["description"] = "You must personally create each troop.  Demolishers are limited to 3 active at a time.",
+							["races"] = ALLIANCE_ONLY,
+						}),
+						ach(12878, {	-- Leader of Troops [H]
 							["groups"] = {
 								crit(2),	-- Axe Throwers
 								crit(5),	-- Demolishers
@@ -35,37 +46,101 @@ _.ExpansionFeatures =
 								crit(3),	-- Shaman
 							},
 							["description"] = "You must personally create each troop.  Demolishers are limited to 3 active at a time.",
+							["races"] = HORDE_ONLY,
 						}),
-						ach(12877, {	-- Strike Hard
+						ach(12889, {	-- Strike Fast [A]
 							["groups"] = {
+								ach(12888, {	-- Strike Hard [A]
+									["groups"] = {
+										crit(6),	-- Circle of Elements
+										crit(1),	-- Galson's Lode
+										crit(4),	-- High Perch
+										crit(2),	-- Highlands Mill
+										crit(5),	-- Newstead
+										crit(7),	-- Northfold Crossing
+										crit(3),	-- Valorcall Pass
+									},
+									["description"] = "You must personally capture each",
+									["races"] = ALLIANCE_ONLY,
+								}),
+								crit(6),	-- Circle of Elements
+								crit(1),	-- Galson's Lode
+								crit(4),	-- High Perch
+								crit(2),	-- Highlands Mill
+								crit(5),	-- Newstead
+								crit(7),	-- Northfold Crossing
+								crit(3),	-- Valorcall Pass
+							},
+							["description"] = "You must personally capture each",
+							["races"] = ALLIANCE_ONLY,
+						}),
+						ach(12876, {	-- Strike Fast [H]
+							["groups"] = {
+								ach(12877, {	-- Strike Hard [H]
+									["groups"] = {
+										crit(1),	-- Circle of Elements
+										crit(7),	-- Drywhisker Mine
+										crit(2),	-- Hatchet Ridge
+										crit(3),	-- High Perch
+										crit(4),	-- Northfold Crossing
+										crit(5),	-- Newstead
+										crit(6),	-- Valorcall Pass
+									},
+									["description"] = "You must personally capture each",
+									["races"] = HORDE_ONLY,
+								}),
 								crit(1),	-- Circle of Elements
 								crit(7),	-- Drywhisker Mine
 								crit(2),	-- Hatchet Ridge
 								crit(3),	-- High Perch
 								crit(4),	-- Northfold Crossing
-								crit(5),	-- Newsteaad
+								crit(5),	-- Newstead
 								crit(6),	-- Valorcall Pass
 							},
 							["description"] = "You must personally capture each",
+							["races"] = HORDE_ONLY,
 						}),
-						ach(12879, {	-- Tour of War
+						ach(12886, {	-- Tour of War [A]
+							["groups"] = {
+								crit(1),	-- Eitrigg
+								crit(2),	-- Lady Liadran
+								crit(3),	-- Rokhan
+							},
+							["description"] = "Each time the scenario is up only one of these commanders will be active.",
+							["races"] = ALLIANCE_ONLY,
+						}),
+						ach(12879, {	-- Tour of War [H]
 							["groups"] = {
 								crit(1),	-- Danath Trollbane
 								crit(3),	-- Muradin
 								crit(2),	-- Turalyon
 							},
 							["description"] = "Each time the scenario is up only one of these commanders will be active.",
+							["races"] = HORDE_ONLY,
 						}),
-						ach(12873),	-- War is Hell
+						ach(12899, {	-- War is Hell [A]
+							["races"] = HORDE_ONLY,
+						}),
+						ach(12873, {	-- War is Hell [H]
+							["races"] = HORDE_ONLY,
+						}),
 					}),
 					n(-17, {	-- Quests
+						qa(53673),	-- Armor Up!
 						qh(53666),	-- Armor Up!
+						qa(53677),	-- Beasts of Newstead
 						qh(53670),	-- Beasts of Newstead
 						qh(47283),	-- Chop, Chop
+						qa(52118),	-- Cutting Out the Competition
+						qa(53678),	-- Establishing a Connection
 						qh(53668),	-- Flightgineer's Network
+						qa(52439),	-- Iron Stores
 						qh(51082),	-- Iron Stores
+						qa(53672),	-- Ready for Battle
 						qh(53665),	-- Ready for Battle
+						qa(53674),	-- The Altar's Power
 						qh(53669),	-- The Altar's Power
+						qa(53675),	-- Welcome to the Workshop
 						qh(53667),	-- Welcome to the Workshop
 					}),
 					n(-227, {	-- Victory [Tier 1]
