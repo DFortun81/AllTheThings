@@ -29,20 +29,31 @@ _.Instances =
 						["u"] = 17,
 					}),
 					--]]
-					n(-17, {	-- Quests 	
-						q(29807,{ 	-- Death to the Traitor King
-							i(44359), 	-- Don Soto's Boots
-							i(44361),	-- Greaves of the Traitor
-							i(44360), 	-- Husk Shard Sabatons
-							i(44358), 	-- Kilix's Silk Slippers
-						}),
-						q(29808,{ 	-- Don't Forget the Eggs!
-							i(44362), 	-- Expelling Gauntlets
-							i(44365),	-- Gloves of Banished Infliction
-							i(44363), 	-- Purging Handguards
-							i(44364), 	-- Wraps of Quelled Bane
-						}),
-						q(29811),	-- The Gatewatcher's Talisman, No actual awards.
+					n(-17, {	-- Quests
+						{
+							["questID"] = 29807,	-- Death to the Traitor King
+							["qg"] = 55564,	-- Reclaimer A'zak
+							["groups"] = {
+								i(44359), 	-- Don Soto's Boots
+								i(44361),	-- Greaves of the Traitor
+								i(44360), 	-- Husk Shard Sabatons
+								i(44358), 	-- Kilix's Silk Slippers
+							},
+						},
+						{
+							["questID"] = 29808,	-- Don't Forget the Eggs!
+							["qg"] = 55564,	-- Reclaimer A'zak
+							["groups"] = {
+								i(44362), 	-- Expelling Gauntlets
+								i(44365),	-- Gloves of Banished Infliction
+								i(44363), 	-- Purging Handguards
+								i(44364), 	-- Wraps of Quelled Bane
+							},
+						},
+						{
+							["questID"] = 29811,	-- The Gatewatcher's Talisman
+							["qg"] = 55564,	-- Reclaimer A'zak
+						},
 					}),
 					d  (1, {	-- Normal
 						cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
