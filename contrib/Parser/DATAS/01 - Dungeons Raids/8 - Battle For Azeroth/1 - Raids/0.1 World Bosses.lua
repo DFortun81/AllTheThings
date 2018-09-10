@@ -150,7 +150,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				},
 				["maps"] = { -- Lucetia: Unsure which is actual map that will be used
 					906,	-- Arathi Highlands
-					943,	-- Arathi Highlands
+					--943,	-- Arathi Highlands
 					1044,	-- Arathi Highlands
 					1158,	-- Arathi Highlands
 					14,	-- Arathi Highlands
@@ -185,7 +185,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				},
 				["maps"] = { -- Lucetia: Unsure which is actual map that will be used
 					906,	-- Arathi Highlands
-					943,	-- Arathi Highlands
+					--943,	-- Arathi Highlands
 					1044,	-- Arathi Highlands
 					1158,	-- Arathi Highlands
 					14,	-- Arathi Highlands
