@@ -119,7 +119,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 						}),
 						ach(12881, {	-- War is Hell [A]
-							["races"] = HORDE_ONLY,
+							["races"] = ALLIANCE_ONLY,
 						}),
 						ach(12873, {	-- War is Hell [H]
 							["races"] = HORDE_ONLY,
