@@ -605,44 +605,40 @@ profession(165, { -- Leatherworking
 			i(116347), -- Recipe: Burnished Leather Bag
 			i(116348), -- Recipe: Burnished Mining Bag
 			i(120258), -- Recipe: Drums of Fury
+			i(116325), -- Recipe: Leather Refurbishing Kit
+			i(127722), -- Recipe: Mighty Burnished Essence
+			i(116327), -- Recipe: Nimble Burnished Cloak
+			i(116326), -- Recipe: Powerful Burnished Cloak
+			un(8, i(122547)), -- Recipe: Powerful Burnished Essence
 			i(116350), -- Recipe: Riding Harness
-		}),
-		n(-322, { 	-- Cloak
-			i(128014, { -- Burnished Essence
-				WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak
-				WOD_CRAFTED_ITEM(116174),	-- Nimble Burnished Cloak
-				WOD_CRAFTED_ITEM(116171),	-- Powerful Burnished Cloak
-			}),
-		}),
+			i(127740), -- Recipe: Savage Burnished Essence
+			i(122715), -- Recipe: Spiritual Leathercraft
+			i(116335), -- Recipe: Supple Boots
+			i(116334), -- Recipe: Supple Bracers
+			i(116332), -- Recipe: Supple Gloves
+			i(116330), -- Recipe: Supple Helm
+			i(116331), -- Recipe: Supple Leggings
+			i(116329), -- Recipe: Supple Shoulderguards
+			i(116333), -- Recipe: Supple Vest
+			i(116336), -- Recipe: Supple Waistguard
+			i(116344), -- Recipe: Wayfaring Belt
+			i(116343), -- Recipe: Wayfaring Boots
+			i(116342), -- Recipe: Wayfaring Bracers
+			i(116340), -- Recipe: Wayfaring Gloves
+			i(116338), -- Recipe: Wayfaring Helm
+			i(116339), -- Recipe: Wayfaring Leggings
+			i(116337), -- Recipe: Wayfaring Shoulderguards
+			i(116341), -- Recipe: Wayfaring Tunic
+		}),		
 		n(-44, { 	-- Leather
-			i(116164),	-- Journeying Helm
-			i(116165),	-- Journeying Robes
-			i(116166),	-- Journeying Slacks
-			i(128014, { -- Burnished Essence
-				WOD_CRAFTED_ITEM(116182),	-- Supple Boots
-				WOD_CRAFTED_ITEM(116181),	-- Supple Bracers
-				WOD_CRAFTED_ITEM(116179),	-- Supple Gloves
-				WOD_CRAFTED_ITEM(116177),	-- Supple Helm
-				WOD_CRAFTED_ITEM(116178),	-- Supple Leggings
-				WOD_CRAFTED_ITEM(116176),	-- Supple Shoulderguards
-				WOD_CRAFTED_ITEM(116180),	-- Supple Vest
-				WOD_CRAFTED_ITEM(116183),	-- Supple Waistguard
-			}),
+			i(116319), -- Recipe: Journeying Helm
+			i(116320), -- Recipe: Journeying Robes
+			i(116321), -- Recipe: Journeying Slacks
 		}),
 		n(-45, { 	-- Mail
-			i(116167),	-- Traveling Helm
-			i(116169),	-- Traveling Leggings
-			i(116168),	-- Traveling Tunic
-			i(128014, { -- Burnished Essence
-				WOD_CRAFTED_ITEM(116194),	-- Wayfaring Belt
-				WOD_CRAFTED_ITEM(116193),	-- Wayfaring Boots
-				WOD_CRAFTED_ITEM(116192),	-- Wayfaring Bracers
-				WOD_CRAFTED_ITEM(116190),	-- Wayfaring Gloves
-				WOD_CRAFTED_ITEM(116188),	-- Wayfaring Helm
-				WOD_CRAFTED_ITEM(116189),	-- Wayfaring Leggings
-				WOD_CRAFTED_ITEM(116187),	-- Wayfaring Shoulderguards
-				WOD_CRAFTED_ITEM(116191),	-- Wayfaring Tunic
-			}),
+			i(116322), -- Recipe: Traveling Helm
+			i(116324), -- Recipe: Traveling Leggings
+			i(116323), -- Recipe: Traveling Tunic
 		}),
 	}),
 	tier(7, { 	-- Legion
@@ -664,6 +660,12 @@ profession(165, { -- Leatherworking
 				},
 				["qg"] = 125349, -- Enstraa			
 			}),
+			q(41889, { -- Dazed of the Past (Dalaran)
+				["groups"] = {
+					i(137952), -- Recipe: Stonehide Leather Barding				
+				},
+				["qg"] = 93523, -- Namha Moonwater
+			}),
 			q(40214, { -- Fel Tanning (Dalaran)
 				["groups"] = {
 					i(140636), -- Pattern: Dreadleather Bindings (Rank 1)
@@ -677,7 +679,7 @@ profession(165, { -- Leatherworking
 					i(194701), -- Recipe: Warhide Footpads
 				},
 				["qg"] = 93523, -- Namha Moonwater				
-			}),
+			}),						
 			q(40201, { -- Playthings (Dalaran)
 				["groups"] = {
 					i(137933), -- Recipe: Leather Pet Bed
@@ -818,10 +820,11 @@ profession(165, { -- Leatherworking
 		}),	
 		n(-2, { -- Vendors
 			i(162414), -- Recipe: Hardened Tempest Knuckles (Rank 3)
+			i(162412), -- Recipe: Recurve Bow of the Strands (Rank 3) (Alliance Only)
+			i(162766), -- Recipe: Recurve Bow of the Strands (Rank 3) (Horde Only)
 		}),
 	}),
-	n(-100002, { -- PLACE_HOLDER
-		
+	n(-100002, { -- PLACE_HOLDER		
 		i(132123),	-- Pattern: Battlebound Warhelm			
 		i(137900),	-- Recipe: Battlebound Armbands
 		i(137908),	-- Recipe: Battlebound Armbands
@@ -891,36 +894,12 @@ profession(165, { -- Leatherworking
 		i(162503),	-- Recipe: Imbued Mistscale Boots
 		i(162505),	-- Recipe: Imbued Mistscale Leggings
 		i(162499),	-- Recipe: Imbued Tempest Boots
-		i(162501),	-- Recipe: Imbued Tempest Leggings
-		i(116319),	-- Recipe: Journeying Helm
-		i(116320),	-- Recipe: Journeying Robes
-		i(116321),	-- Recipe: Journeying Slacks		
-		i(116325),	-- Recipe: Leather Refurbishing Kit
-		i(127722),	-- Recipe: Mighty Burnished Essence
+		i(162501),	-- Recipe: Imbued Tempest Leggings				
 		i(162400),	-- Recipe: Mistscale Boots
 		i(162401),	-- Recipe: Mistscale Greaves
 		i(162413),	-- Recipe: Mistscale Knuckles
-		i(162767),	-- Recipe: Mistscale Knuckles
-		i(116327),	-- Recipe: Nimble Burnished Cloak
-		i(116326),	-- Recipe: Powerful Burnished Cloak
-		i(122547),	-- Recipe: Powerful Burnished Essence
-		i(162412),	-- Recipe: Recurve Bow of the Strands
-		i(162766),	-- Recipe: Recurve Bow of the Strands
-		i(162419),	-- Recipe: REUSE ME (DNT)		
-		i(127740),	-- Recipe: Savage Burnished Essence
-		i(122715),	-- Recipe: Spiritual Leathercraft
-		i(137952),	-- Recipe: Stonehide Leather Barding
-		i(116335),	-- Recipe: Supple Boots
-		i(116334),	-- Recipe: Supple Bracers
-		i(116332),	-- Recipe: Supple Gloves
-		i(116330),	-- Recipe: Supple Helm
-		i(116331),	-- Recipe: Supple Leggings
-		i(116329),	-- Recipe: Supple Shoulderguards
-		i(116333),	-- Recipe: Supple Vest
-		i(116336),	-- Recipe: Supple Waistguard
-		i(116322),	-- Recipe: Traveling Helm
-		i(116324),	-- Recipe: Traveling Leggings
-		i(116323),	-- Recipe: Traveling Tunic
+		i(162767),	-- Recipe: Mistscale Knuckles		
+		i(162419),	-- Recipe: REUSE ME (DNT)				
 		i(137869),	-- Recipe: Warhide Belt
 		i(137881),	-- Recipe: Warhide Belt
 		i(137876),	-- Recipe: Warhide Bindings
@@ -936,15 +915,7 @@ profession(165, { -- Leatherworking
 		i(137871),	-- Recipe: Warhide Pants
 		i(137877),	-- Recipe: Warhide Pants
 		i(137882),	-- Recipe: Warhide Shoulderguard
-		i(137870),	-- Recipe: Warhide Shoulderguard
-		i(116344),	-- Recipe: Wayfaring Belt
-		i(116343),	-- Recipe: Wayfaring Boots
-		i(116342),	-- Recipe: Wayfaring Bracers
-		i(116340),	-- Recipe: Wayfaring Gloves
-		i(116338),	-- Recipe: Wayfaring Helm
-		i(116339),	-- Recipe: Wayfaring Leggings
-		i(116337),	-- Recipe: Wayfaring Shoulderguards
-		i(116341),	-- Recipe: Wayfaring Tunic
+		i(137870),	-- Recipe: Warhide Shoulderguard		
 		}),
 	}),	
 });

@@ -265,7 +265,7 @@ _.Zones =
 				}),
 				n(-228, {	-- Flight Paths
 					fp(2162, { -- Devoted Sanctuary, Vol'dun (N)
-							["coord"] = { 43.8, 76.0 },
+						["coord"] = { 43.8, 76.0 },
 					}),
 					--[[	Need to figure out where these flight points are, not showing on in game maps and not showing up as a mission report unlock
 					fp(2144, { -- Goldtusk Inn, Vol'dun
