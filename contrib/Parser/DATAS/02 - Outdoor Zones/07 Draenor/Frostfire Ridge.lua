@@ -125,6 +125,7 @@ _.Zones =
 							["groups"] = { 	
 								i(117566),
 								},
+							["description"] = "|cff66ccffRequires Leatherworking|r",
 							["races"] = HORDE_ONLY,
 							["requireSkill"] = 165, -- Leatherworking
 						}),
