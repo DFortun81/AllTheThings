@@ -124,8 +124,9 @@ _.Zones =
 						qh(36516, { 	-- Cut 'Em Out! - Horde Leatherworking quest
 							["groups"] = { 	
 								i(117566),
-							},
-							["description"] = "|cff66ccffRequires Leatherworking|r"
+								},
+							["races"] = HORDE_ONLY,
+							["requireSkill"] = 165, -- Leatherworking
 						}),
 						qh(36380,  {  	-- Diamonds Are Forever
 							["groups"] = {
