@@ -15,14 +15,15 @@ _.Zones =
 								["coord"] = { 53.4, 9.5 },
 							},
 						}),
-						ach(12740, {	-- Full of Scrap!
-							ach(12739),		-- Scraptastic!
-							ach(12738),		-- Holy Scrap!
+						ach(12738, { -- Holy Scrap!
+							ach(12739, { -- Scraptastic!
+								ach(12740), -- Full of Scrap!
+							}),
 						}),
 						h(ach(13056)),	-- Giving a Scrap (Horde)
 						ach(12851, {	-- Treasures of Zuldazar
 							["groups"] = {
-								o(284454, {	-- Da White Shark's Bounty	
+								o(284454, {	-- Da White Shark's Bounty
 									["questID"] = 50947,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
@@ -252,7 +253,7 @@ _.Zones =
 							crit(10),		-- Pristine High Apothecary's Hood
 							crit(11),		-- Pristine Bwonsamdi Voodoo Mask
 							crit(12),		-- Pristine Blowgun of the Sethrak
-						})),	
+						})),
 						h(ach(12754)),	-- Zandalari Fisherman
 						h(ach(12737)),	-- Zandalari Master of All
 						q(51962, {	-- Lumbering Away
@@ -327,42 +328,42 @@ _.Zones =
 											},
 											["qg"] = 135441,	-- Zolani
 											["sourceQuests"] = { 46926, 46846, }	-- Shakedown, The Word of Zul
-										}),	
-										q(48454, {	-- Evidence of Evil	
+										}),
+										q(48454, {	-- Evidence of Evil
 											["qg"] = 126148,	-- Witch Doctor Jala
 											["sourceQuests"] = { 48452 },	-- The Red Market
-										}),	
-										q(46927, {	-- Punishment of Tal'aman	
+										}),
+										q(46927, {	-- Punishment of Tal'aman
 											["qg"] = 126684,	-- Yazma
 											["sourceQuests"] = { 48454 },	-- Evidence of Evil
-										}),	
-										q(46928, {	-- Punishment of Tal'farrak	
+										}),
+										q(46928, {	-- Punishment of Tal'farrak
 											["qg"] = 126684,	-- Yazma
 											["sourceQuests"] = { 48454 },	-- Evidence of Evil
-										}),	
+										}),
 										q(50881, {	-- Royal Report	[Note: Final Quest needed to trigger criteria]
 											["qg"] = 135441,	-- Zolani
 											["sourceQuests"] = { 46927, 46928, },	-- Punishment of Tal'aman, Punishment of Tal'farrak
 											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),
-										q(46926, {	-- Shakedown	
+										q(46926, {	-- Shakedown
 											["qg"] = 135441,	-- Zolani
 											["sourceQuests"] = { 50835 },	-- The Port of Zandalar
-										}),	
-										q(50835, {	-- The Port of Zandalar	
+										}),
+										q(50835, {	-- The Port of Zandalar
 											["qg"] = 122915,	-- Zolani
 											["sourceQuests"] = { 49615 },	-- Trust of a King
-										}),	
-										q(48452, {	-- The Red Market	
+										}),
+										q(48452, {	-- The Red Market
 											["qg"] = 126148,	-- Witch Doctor Jala
 											["sourceQuests"] = { 46929, 48456, }	-- Deterrent, Witch Doctor Jala
-										}),	
-										q(46846, {	-- The Word of Zul	
+										}),
+										q(46846, {	-- The Word of Zul
 											["qg"] = 126684,	-- Yazma
 											["sourceQuests"] = { 50835 },	-- The Port of Zandalar
 										}),
 										--[[ Lucetia: Finished quest line on live.  Quest wasn't needed or given.
-										q(48456, {	-- Witch Doctor Jala	
+										q(48456, {	-- Witch Doctor Jala
 											["qg"] = 135441,	-- Zolani
 											["sourceQuests"] = { 46926, 46846, },	-- Shakedown, The Word of Zul
 										}),
@@ -371,15 +372,15 @@ _.Zones =
 								}),
 								crit(6, {	-- The Zanchuli Council
 									["groups"] = {
-										q(47437, {	-- Competitive Devotion	
+										q(47437, {	-- Competitive Devotion
 											["qg"] = 126564,	-- Hexlord Raal
 											["sourceQuests"] = { 47434, 47435, },	-- Restraining Order, Pterrortorial Dispute
-										}),	
-										q(47442, {	-- Curse of Jani	
+										}),
+										q(47442, {	-- Curse of Jani
 											["qg"] = 126334,	-- Jani
 											["sourceQuests"] = { 47441 },	-- Pests
-										}),	
-										q(47422, {	-- Dire Situation	
+										}),
+										q(47422, {	-- Dire Situation
 											["groups"] = {
 												i(159102),	-- Raal's Spare Hexxer
 												i(159100),	-- Crimson Cultist Scepter
@@ -393,10 +394,10 @@ _.Zones =
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47437 },	-- Competitive Devotion
 										}),
-										q(47423, {	-- Forbidden Practices	
+										q(47423, {	-- Forbidden Practices
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47445 },	-- The Zanchuli Council
-										}),	
+										}),
 										q(47439, {	-- Gonk, Lord of the Pack f[Note: One of two final Quest needed to trigger criteria]
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47438 },	-- Picking a Side
@@ -420,24 +421,24 @@ _.Zones =
 											["qg"] = 126564,	-- Hexlord Raal
 											["sourceQuests"] = { 47438 },	-- Picking a Side
 											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-										}),	
-										q(47441, {	-- Pests	
+										}),
+										q(47441, {	-- Pests
 											["qg"] = 127665,	-- Nokano
 											["sourceQuests"] = { 47445 },	-- The Zanchuli Council
 										}),
-										q(47438, {	-- Picking a Side	
+										q(47438, {	-- Picking a Side
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47422 },	-- Dire Situation
-										}),	
-										q(47435, {	-- Pterrortorial Dispute	
+										}),
+										q(47435, {	-- Pterrortorial Dispute
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47433 },	-- Offensively Defensive
-										}),	
-										q(47434, {	-- Restraining Order	
+										}),
+										q(47434, {	-- Restraining Order
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47433 },	-- Offensively Defensive
-										}),	
-										q(47445, {	-- The Zanchuli Council	
+										}),
+										q(47445, {	-- The Zanchuli Council
 											["qg"] = 122641,	-- Yazma
 											["sourceQuests"] = { 49615 },	-- Trust of a King
 										}),
@@ -497,11 +498,11 @@ _.Zones =
 							["coords"] = {
 								{ 64.28, 32.67 },
 							},
-						}), 
+						}),
 						n(120899, {	-- Kul'krazahn
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160947),	-- Amani Berserker's Chopper
-							}),	
+							}),
 							["questID"] = 48333,
 						}),
 					},
@@ -875,14 +876,14 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(51038, {	-- Supplies Needed: Akunda's Bite
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -893,7 +894,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -904,7 +905,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -915,7 +916,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -926,7 +927,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -937,7 +938,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -948,7 +949,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -959,7 +960,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -981,7 +982,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -992,7 +993,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -1003,7 +1004,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -1014,7 +1015,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -1025,7 +1026,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -1036,7 +1037,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -1047,7 +1048,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -1058,7 +1059,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -1069,7 +1070,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -1080,7 +1081,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -1091,7 +1092,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only							
+									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
 									["coord"] = {
@@ -1160,7 +1161,7 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
-								
+
 							},
 						}),
 					},
@@ -1192,7 +1193,7 @@ _.Zones =
 						i(160142),	-- Ravascale Legguards
 						i(160140),	-- Ravascale Striders
 						i(160122),	-- Direbone Frill Helmet
-						i(160124),	-- Direbone Frill Pauldrons	
+						i(160124),	-- Direbone Frill Pauldrons
 						i(160119),	-- Direbone Frill Chestplate
 						i(160126),	-- Direbone Frill Bracers
 						i(160120),	-- Direbone Frill Gauntlets
@@ -1205,7 +1206,7 @@ _.Zones =
 			["isRaid"] = true,
 			["achievementID"] = 12559,	-- Explore Zuldazar
 			["lvl"] = 108,
-			["maps"] = { 
+			["maps"] = {
 				1165,	-- Dazar'alor
 			},
 			["description"] = "|cff66ccffDazar'alor is King Rastakhan's palace in Zuldazar. The Great Seal, in its interior chamber, serves as the Horde's embassy on Zandalar and includes some portals to each major city and expansions, profession trainers, bank and guild banks, transmogifier and a mission table.|r",
