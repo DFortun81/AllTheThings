@@ -14,10 +14,9 @@ _.Zones =
 							crit(1),		-- Kul Tourist
 							crit(2),		-- The Pride of Kul Tiras
 						})),
-						ach(12738, { -- Holy Scrap!
-							ach(12739, { -- Scraptastic!
-								ach(12740), -- Full of Scrap!
-							}),
+						ach(12740, {	-- Full of Scrap!
+							ach(12739),		-- Scraptastic!
+							ach(12738),		-- Holy Scrap!
 						}),
 						a(ach(12741)),	-- Giving a Scrap (Alliance)
 						a(ach(12593, {	-- Kul Tourist
@@ -482,8 +481,8 @@ _.Zones =
 								["sourceQuests"] = { 50972 },	-- Proudmoore's Parley [Alliance Only]
 							}),
 						})),
-
-
+						
+						
 						a(q(51144, {	-- A Bundle of Furs
 							["qg"] = 124289, -- "Risky" Liz Seminario <Fur Trader>
 							["sourceQuests"] = { 47960 },	-- Tiragarde Sound
@@ -856,43 +855,43 @@ _.Zones =
 								i(160534),	-- Navy Blue Boat Cloak
 								i(162380, {	-- Design: Tidal Amethyst Loop [Rank 3]
 									["spellID"] = 256519,
-								}),
+								}), 	
 								i(162304, {	-- Formula: Enchant Ring - Pact of Mastery [Rank 3]
 									["spellID"] = 255100,
-								}),
+								}), 	
 								i(162317, {	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3]
 									["spellID"] = 268903,
-								}),
+								}), 	
 								i(162316, {	-- Formula: Enchant Weapon - Siphoning [Rank 3]
 									["spellID"] = 255112,
-								}),
+								}), 	
 								i(163316, {	-- Recipe: Battle Potion of Intellect [Rank 3]
 									["spellID"] = 279164,
-								}),
+								}), 
 								i(162254, {	-- Recipe: Coastal Mana Potion [Rank 3]
 									["spellID"] = 252387,
-								}),
+								}), 	
 								i(162359, {	-- Recipe: Contract: Proudmoore Admiralty [Rank 2]
 									["spellID"] = 256276,
-								}),
+								}), 	
 								i(162134, {	-- Recipe: Flask of the Vast Horizon [Rank 3]
 									["spellID"] = 252356,
-								}),
+								}), 	
 								i(162414, {	-- Recipe: Hardened Tempest Knuckles [Rank 3]
 									["spellID"] = 256784,
-								}),
+								}), 	
 								i(162413, {	-- Recipe: Mistscale Knuckles [Rank 3]
 									["spellID"] = 256781,
-								}),
+								}), 	
 								i(162130, {	-- Recipe: Potion of Bursting Blood [Rank 3]
 									["spellID"] = 252343,
-								}),
+								}), 	
 								i(162327, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2]
 									["spellID"] = 272063,
-								}),
+								}), 	
 								i(162328, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3]
 									["spellID"] = 272064,
-								}),
+								}), 	
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -922,52 +921,52 @@ _.Zones =
 								i(162378, {	-- Design: Amberblaze Loop
 									["spellID"] = 256515,
 								}),
-								i(162302, {	-- Formula: Enchant Ring - Pact of Critical Strike
+								i(162302, {	-- Formula: Enchant Ring - Pact of Critical Strike	
 									["spellID"] = 255098,
 								}),
 								i(163320, {	-- Recipe: Battle Potion of Strength
 									["spellID"] = 279170,
 								}),
-								i(162306, {	-- Recipe: Enchanter's Sorcerous Scepter
+								i(162306, {	-- Recipe: Enchanter's Sorcerous Scepter	
 									["spellID"] = 265112,
 								}),
-								i(162138, {	-- Recipe: Endless Tincture of Fractional Power
+								i(162138, {	-- Recipe: Endless Tincture of Fractional Power	
 									["spellID"] = 252378,
 								}),
-								i(162132, {	-- Recipe: Flask of the Currents
+								i(162132, {	-- Recipe: Flask of the Currents	
 									["spellID"] = 252350,
 								}),
-								i(162128, {	-- Recipe: Steelskin Potion
+								i(162128, {	-- Recipe: Steelskin Potion	
 									["spellID"] = 252336,
 								}),
 								i(162275, {	-- Recipe: Stormsteel Dagger
 									["spellID"] = 253158,
 								}),
-								i(162670, {	-- Recipe: Stormsteel Saber
+								i(162670, {	-- Recipe: Stormsteel Saber	
 									["spellID"] = 278133,
 								}),
 								i(162261, {	-- Recipe: Stormsteel Shield
 									["spellID"] = 253118,
 								}),
-								i(162276, {	-- Recipe: Stormsteel Spear
+								i(162276, {	-- Recipe: Stormsteel Spear	
 									["spellID"] = 253161,
 								}),
-								i(162139, {	-- Recipe: Surging Alchemist Stone
+								i(162139, {	-- Recipe: Surging Alchemist Stone	
 									["spellID"] = 252381,
 								}),
-								i(162323, {	-- Schematic: AZ3-R1-T3 Synthetic Specs
+								i(162323, {	-- Schematic: AZ3-R1-T3 Synthetic Specs	
 									["spellID"] = 272057,
 								}),
-								i(162324, {	-- Schematic: AZ3-R1-T3 Synthetic Specs
+								i(162324, {	-- Schematic: AZ3-R1-T3 Synthetic Specs	
 									["spellID"] = 272058,
 								}),
-								i(162346, {	-- Schematic: Finely-Tuned Stormsteel Destroyer
+								i(162346, {	-- Schematic: Finely-Tuned Stormsteel Destroyer	
 									["spellID"] = 255459,
 								}),
-								i(162344, {	--  Schematic: Monelite Scope of Alacrity
+								i(162344, {	--  Schematic: Monelite Scope of Alacrity	
 									["spellID"] = 264967,
 								}),
-								i(162345, {	-- Schematic: Precision Attitude Adjuster
+								i(162345, {	-- Schematic: Precision Attitude Adjuster	
 									["spellID"] = 253152,
 								}),
 								i(163043, {	-- Scouting Report: Grimwaatt's Crash
@@ -1080,7 +1079,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1091,7 +1090,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1102,7 +1101,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1113,7 +1112,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1124,7 +1123,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1135,7 +1134,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1157,7 +1156,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1168,7 +1167,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1179,7 +1178,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1190,7 +1189,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1201,7 +1200,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1212,7 +1211,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1223,7 +1222,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1234,7 +1233,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1245,7 +1244,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1256,7 +1255,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1267,7 +1266,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1278,7 +1277,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1289,7 +1288,7 @@ _.Zones =
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["lvl"] = 120,	-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 									["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 									["coord"] = {
@@ -1327,22 +1326,22 @@ _.Zones =
 						--[[
 						n(-43, {	-- Cloth
 							["groups"] = {
-
+								
 							},
 						}),
 						n(-44, {	-- Leather
 							["groups"] = {
-
+								
 							},
 						}),
 						n(-45, {	-- Mail
 							["groups"] = {
-
+								
 							},
 						}),
 						n(-46, {	-- Plate
 							["groups"] = {
-
+								
 							},
 						}),
 						--]]

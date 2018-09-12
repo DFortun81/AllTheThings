@@ -325,11 +325,11 @@ profession(185, { -- Cooking
 				recipe(2548),	-- Succulent Pork Ribs
 				recipe(3377),	-- Gooey Spider Cake
 				un(7, i(5489)),	-- Recipe: Lean Venison
-				un(7, recipe(6419)),	-- Lean Venison
+				recipe(6419),	-- Lean Venison
 				recipe(3373),	-- Crocolisk Gumbo
 				recipe(6500),	-- Goblin Deviled Clams
 				un(7, i(12227)), -- Recipe: Lean Wolf Steak
-				un(7, recipe(15853)),	-- Lean Wolf Steak
+				recipe(15853),	-- Lean Wolf Steak
 				recipe(3398),	-- Hot Lion Chops
 				un(7, i(5487)),	-- Recipe: Dig Rat Stew
 				un(7, i(44977)),	-- Recipe: Dig Rat Stew
