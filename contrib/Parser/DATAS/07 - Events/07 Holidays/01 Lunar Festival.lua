@@ -108,11 +108,11 @@ _.WorldEvents =
 								crit(17), -- Elder Skywarden in Agmar's Hammer
 								crit(18), -- Elder Muraco in Camp Tunka'lo
 							}),
-							ach(605, { -- A Coin of Ancestry
-								ach(606, { -- 5 Coins of Ancestry
+							ach(609, { -- 50 Coins of Ancestry
+								ach(608, { -- 25 Coins of Ancestry
 									ach(607, { -- 10 Coins of Ancestry
-										ach(608, { -- 25 Coins of Ancestry
-											ach(609), -- 50 Coins of Ancestry
+										ach(606, { -- 5 Coins of Ancestry
+											ach(605), -- A Coin of Ancestry
 										}),
 									}),
 								}),
