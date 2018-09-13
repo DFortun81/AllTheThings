@@ -13,6 +13,7 @@ _.PetJournal =
 		p(1753), 	-- Bleakwater Jelly
 		p(1666), 	-- Blorp
 		p(2398),	-- Boghopper
+		p(2479),	-- Bucketshell
 		p(174), 	-- Chuck
 		p(2400),	-- Coastal Bounder
 		p(2386),	-- Coastal Scuttler
@@ -84,6 +85,8 @@ _.PetJournal =
 		p(629), 	-- Shore Crawler
 		p(711), 	-- Sifang Otter
 		p(712), 	-- Sifang Otter Pup
+		p(2478);	-- Sir Snips
+		p(2475),	-- Slippy
 		p(1655), 	-- Slithershock Elver
 		p(419), 	-- Small Frog
 		p(2472),	-- Snapper
@@ -139,6 +142,7 @@ _.PetJournal =
 		p(1706),	-- Ashmaw Cub
 		p(411),		-- Baby Ape
 		un(3, p(202)),	-- Baby Blizzard Bear
+		p(2477),	-- Baby Crawg
 		p(1884),	-- Baby Elderhorn
 		un(10, p(156)),		-- Bananas
 		p(2047),	-- Ban-Fu, Cub of Ban-Lu
@@ -349,6 +353,7 @@ _.PetJournal =
 		p(398),		-- Black Rat
 		p(1915),	-- Blind Rat
 		p(2414),	-- Bloodfeaster Larva
+		p(2476),	-- Bloodfeaster Larva (Alchemy version)
 		p(639),		-- Borean Marmot
 		p(449),		-- Brown Marmot
 		p(70),		-- Brown Prairie Dog
@@ -982,6 +987,7 @@ _.PetJournal =
 		p(1162),	-- Fluxfire Feline
 		p(2058),	-- Foe Reaper 0.9
 		p(1961),	-- G0-R41-0N Ultratonk
+		p(2474),	-- Gearspring Hopper
 		p(1387),	-- Iron Starlette
 		p(1806),	-- Knockoff Blingtron
 		un(10, p(285)),		-- Landro's Lil' XT

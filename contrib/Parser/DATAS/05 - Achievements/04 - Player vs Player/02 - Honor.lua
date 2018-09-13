@@ -17,8 +17,8 @@ _.Achievements =
 			n(-9983, { -- Honor
 				["groups"] = {
 					ach(12893, {	-- Honor Level 5
-						a(i(142379)),	-- Dutiful Squire
-						h(i(142380)),	-- Dutiful Gruntling
+						i(142379),	-- Dutiful Squire
+						i(142380),	-- Dutiful Gruntling
 					}),
 					ach(12894, { 	-- Honor Level 10
 						i(134026),		-- Honorable Pennant
@@ -27,8 +27,8 @@ _.Achievements =
 						i(140228), 		-- Prestigious Bronze Courser
 					}),
 					ach(12900, { 	-- Honor Level 20
-						a(i(139775)), 	-- Alliance Enthusiast
-						h(i(139776)), 	-- Horde Fanatic
+						i(139775), 	-- Alliance Enthusiast
+						i(139776), 	-- Horde Fanatic
 					}),
 					ach(12901, { 	-- Honor Level 25
 						title(321), 	-- The Honorable %s
@@ -76,7 +76,8 @@ _.Achievements =
 						title(369), 	-- the Tactician
 					}),
 					ach(12916, { 	-- Honor Level 400
-						-- REWARD SOON POSSIBLY --
+						i(163974),	-- Bucketshell
+						i(163975),	-- Sir Snips
 					}),
 					ach(12917, { 	-- Honor Level 500
 						-- REWARD SOON POSSIBLY --

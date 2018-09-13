@@ -6,7 +6,13 @@ _.Craftables =
 	tier(8, { -- Battle For Azeroth
 		n(-180, { -- Alchemy
 			i(152636),	-- Endless Tincture of Fractional Power
-			i(152631),	-- Endless Tincture of Renewed Combat
+			i(152634),	-- Endless Tincture of Renewed Combat
+			i(160325, {	-- Quivering Sac
+				i(163859),	-- Baby Crawg
+				i(163861),	-- Bloodfeaster Larva
+				i(163860),	-- Gearspring Hopper
+				i(163858),	-- Slippy
+			}),
 			i(152637),	-- Siren's Alchemist Stone
 			i(152632),	-- Surging Alchemist Stonee
 		}),

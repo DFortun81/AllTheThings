@@ -37,6 +37,7 @@ pet(163515, 2429);	-- Azeriti
 pet(104157, 1321); 	-- Azure Crane Chick
 pet(34535, 57); 	-- Azure Whelpling
 pet(44819, 202); 	-- Baby Blizzard Bear
+pet(163859, 2477);	-- Baby Crawg
 pet(136919, 1884); 	-- Baby Elderhorn
 pet(134047, 1828);	-- Baby Winston
 pet(32588, 156); 	-- Banana Charm (Bananas)
@@ -58,6 +59,7 @@ pet(142091, 1960); 	-- Blessed Seed (Snaplasher)
 pet(93032, 1144); 	-- Blighted Spore (Fungal Abomination)
 pet(147539, 2035); 	-- Bloodbrood Whelpling
 pet(163500, 2414);	-- Bloodfeaster Larva
+pet(163861, 2476);	-- Bloodfeaster Larva (Alchemy version)
 pet(163818, 2451);	-- Bloodstone Tunneler
 pet(127704, 1577); 	-- Bloodthorn Hatchling
 pet(126925, 1666); 	-- Blorp's Bubble (Blorp)
@@ -81,6 +83,7 @@ pet(129362, 1777); 	-- Broot
 pet(29364, 137); 	-- Brown Rabbit Crate (Brown Rabbit)
 pet(10361, 77); 	-- Brown Snake
 pet(163244, 2402);	-- Brutus
+pet(163974, 2479);	-- Bucketshell
 pet(163776, 2442);	-- Bumbles
 pet(163508, 2422); 	-- Butterfly in A Jar
 pet(142099, 1968); 	-- Call of the Frozen Blade (Wicked Soul)
@@ -246,6 +249,7 @@ pet(39286, 188);	-- Frosty's Collar (Frosty)
 pet(117564, 1471); 	-- Fruit Hunter
 pet(163648, 2432);	-- Fuzzy Creepling
 pet(97821, 1237); 	-- Gahz'rooki's Summoning Stone (Gahz'rooki)
+pet(163860, 2474);	-- Gearspring Hopper
 pet(152555, 2077);	-- Ghost Shark
 pet(39973, 190); 	-- Ghostly Skull
 pet(43698, 193);	-- Giant Sewer Rat
@@ -533,6 +537,7 @@ pet(29957, 144); 	-- Silver Dragonhawk Hatchling
 pet(34519, 171);	-- Silver Pig Coin (Silver Pig)
 pet(88147, 820); 	-- Singing Cricket Cage
 pet(33154, 162); 	-- Sinister Squashling
+pet(163975, 2478);	-- Sir Snips
 pet(142097, 1966); 	-- Skull of A Frozen Whelp (Soulbroken Whelpling)
 pet(104167, 1336); 	-- Skunky Alemental
 pet(119150, 1575); 	-- Sky Fry
@@ -540,6 +545,7 @@ pet(104332, 1350);	-- Sky Lantern
 pet(115483, 1467);	-- Sky-Bo
 pet(129277, 1711); 	-- Skyhorn Nestling
 pet(32617, 157); 	-- Sleepy Willy (Willy)
+pet(163858, 2475);	-- Slippy
 pet(122534, 1655); 	-- Slithershock Elver
 pet(122111, 1629); 	-- Smelly Gravestone (Stinkrot)
 pet(67418, 294);	-- Smoldering Murloc Egg (Deathy)

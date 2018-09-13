@@ -48,6 +48,7 @@ _.Achievements =
 						crit(27),		-- Honey Bee
 					}),
 					ach(11233, {	-- Broken Isles Safari*
+						i(141352),		-- Rescued Fawn
 						crit(1),		-- Albatross Chick (Azsuna, Stormheim)
 						crit(2),		-- Fledgling Kingfeather (Azsuna)
 						crit(3),		-- Fledgling Oliveback (Azsuna)
