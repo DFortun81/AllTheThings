@@ -370,7 +370,7 @@ profession(202, { -- Engineering
 		i(10609),	-- Schematic: Mithril Mechanical Dragonling
 		i(162744),	-- Schematic: Monelite Scope of Alacrity
 		i(4412),	-- Schematic: Moonsight Rifle
-		i(118492),	-- Schematic: Morden's Magnificent Contraption
+		un(1, i(118492)),	-- Schematic: Morden's Magnificent Contraption
 		i(162336),	-- Schematic: Neurological Immobilization Bomb
 		i(162740),	-- Schematic: Neurological Immobilization Bomb
 		i(118498),	-- Schematic: Night-Vision Mechshades
