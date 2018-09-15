@@ -7,7 +7,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
 			["groups"] = {
-				n(-4,   {	-- Achievement
+				n(-4, {	-- Achievement
 					["groups"] = {
 						ach(13094, {	-- Cursed Game Hunter
 							{	-- Goats
@@ -299,7 +299,7 @@ _.Zones =
 						["coord"] = { 25.6, 16.6 },
 					}),
 				}),
-				n(-25,  { 	-- Pet Battle
+				n(-25, { 	-- Pet Battle
 					["groups"] = {
 						p(2386),	-- Coastal Scuttler
 						p(2378),	-- River Otter
@@ -346,7 +346,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-17,  {	-- Quests
+				n(-17, {	-- Quests [A]
 					["groups"] = {
 						qa(50970, {	-- A Farmer's Fate
 							["qg"] = 135976,	-- Morwin Gladeheart
@@ -1547,7 +1547,22 @@ _.Zones =
 						--]]
 					},
 				}),
-				n(-16,  {	-- Rares
+				n(-17, {	-- Quests [H]
+					["groups"] = {
+						o(298858, {	-- Wanted Poster
+							["groups"] = {
+								q(53456),	-- WANTED: The Rime Huntress
+								q(53458),	-- WANTED: The Rindlewoe
+								q(53459),	-- WANTED: Sister Lilias
+							},
+							["coord"] = {
+								37.51, 25.8
+							},
+							["races"] = HORDE_ONLY,
+						}),
+					},
+				}),
+				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						o(277333, {	-- Ancient Sarcophagus
@@ -1987,7 +2002,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-2,   {	-- Vendors
+				n(-2, {	-- Vendors
 					["groups"] = {
 						n(144353, {	-- Collector Kojo <Tortollan Seekers Emissary> [NOTE: Will need correct npcID when located]
 							["groups"] = {
@@ -2055,7 +2070,7 @@ _.Zones =
 								}),
 							},
 						}),
-						n(127156, {	-- Nigel Rifthold <Adveenturer's Society>
+						n(127156, {	-- Nigel Rifthold <Adventurer's Society>
 							["groups"] = {
 								i(163493, {	-- Bloody Rabbit Fang
 									["description"] = "Defeat Cottontail Matron (located at 52.20, 46.80) for this item to appear on the vendor.",
@@ -2071,7 +2086,7 @@ _.Zones =
 							["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at 52.00, 31.00 and then click on the chest twice.",
 							["races"] = ALLIANCE_ONLY,
 						}),
-						n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary>
+						n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary> [A]
 							["groups"] = {
 								i(160541),	-- Order of Embers Tabard
 								i(163036, {	-- Polished Pet Charm
@@ -2139,13 +2154,32 @@ _.Zones =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
+						n(138021, {	-- Sally Boltwrench <Repairs> [H]
+							["groups"] = {
+								i(23596),	-- Plans: Adamantite Breastplate
+								i(23591),	-- Plans: Adamantite Cleaver
+								i(23592),	-- Plans: Adamantite Dagger
+								i(23590),	-- Plans: Adamantite Maul
+								i(23593),	-- Plans: Adamantite Rapier
+								i(23594),	-- Plans: Adamantite Plate Bracers
+								i(23595),	-- Plans: Adamantite Plate Gloves
+								i(23638),	-- Plans: Lesser Ward of Shielding
+							},
+							["races"] = HORDE_ONLY,
+						}),
 					},
 				}),
-				n(-34,  {	-- World Quests
+				n(-34, {	-- World Quests
 					["groups"] = {
 						n(-17, { -- Quests
 							["groups"] = {
 								q(52862, {	-- Azerite Empowerment
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51609, {	-- Azerite Wounds
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -2415,7 +2449,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0,    {	-- Zone Drop
+				n(0, {	-- Zone Drop
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						--Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate
 						--Note: Commented out items are because they were in at one point, but then removed later on.  Might be patched in on release date

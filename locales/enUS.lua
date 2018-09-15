@@ -2660,7 +2660,7 @@ AllTheThings.Locales.enUS = {
 		[297892] = select(1,GetAchievementCriteriaInfo(12995,4)), -- Runebound Chest
 		[297893] = select(1,GetAchievementCriteriaInfo(12995,5)), -- Runebound Coffer
 		[298920] = select(1,GetAchievementCriteriaInfo(12995,10)), -- Stolen Thornspeaker Cache
-
+		[298858] = "Wanted Poster",
 		
 		
 		
