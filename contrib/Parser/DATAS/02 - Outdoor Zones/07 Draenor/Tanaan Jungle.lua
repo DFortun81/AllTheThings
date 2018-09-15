@@ -190,6 +190,20 @@ _.Zones =
 							}),
 						})
 					}),
+					n(94605, {	-- Apexis Gemcutter
+						["groups"] = {
+							recipe(187634),	-- Immaculate Critical Strike Taladite
+							recipe(187635),	-- Immaculate Haste Taladite
+							recipe(187636),	-- Immaculate Mastery Taladite
+							recipe(187640),	-- Immaculate Stamina Taladite
+							recipe(187639),	-- Immaculate Versatility Taladite
+						},
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["coord"] = {
+							25.84, 39.79
+						},
+						["description"] = "In order to learn these recipes you have to take the appropriate gemcutter module to this NPC and then right-click to learn how to craft it.",
+					}),
 				}),
 				n(-16, { -- Rares
 					n(91871, { 	-- Argosh the Destroyer

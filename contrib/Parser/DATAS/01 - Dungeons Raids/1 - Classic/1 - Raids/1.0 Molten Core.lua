@@ -350,11 +350,11 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			cr(12118, e(1519, { -- Lucifron
-				dr(0.8, i(18260)),	-- Formula: Enchant Weapon - Healing Power
-				dr(0.8, i(18259)),	-- Formula: Enchant Weapon - Spellpower
-				dr(0.7, i(21371)),	-- Pattern: Core Felcloth Bag
-				dr(0.8, i(18265)), 	-- Pattern: Flarecore Wraps
-				dr(0.8, i(18257)),	-- Recipe: Major Rejuvenation Potion
+				i(18260),	-- Formula: Enchant Weapon - Healing Power
+				i(18259),	-- Formula: Enchant Weapon - Spellpower
+				i(21371),	-- Pattern: Core Felcloth Bag
+				i(18265), 	-- Pattern: Flarecore Wraps
+				i(18257),	-- Recipe: Major Rejuvenation Potion
 				i(18292),	-- Schematic: Core Marksman Rifle
 				i(18291),	-- Schematic: Force Reactive Disc
 				i(18264), -- Plans: Elemental Sharpening Stone
@@ -377,11 +377,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(19147),	-- Ring of Spell Power
 			})),
 			cr(11982, e(1520, { -- Magmadar
-				dr(1.1, i(18260)),	-- Formula: Enchant Weapon - Healing Power
-				dr(1.4, i(18259)),	-- Formula: Enchant Weapon - Spellpower
-				dr(1.7, i(21371)),	-- Pattern: Core Felcloth Bag
-				dr(1.0, i(18265)), 	-- Pattern: Flarecore Wraps
-				dr(1.2, i(18257)),	-- Recipe: Major Rejuvenation Potion
+				i(18260),	-- Formula: Enchant Weapon - Healing Power
+				i(18259),	-- Formula: Enchant Weapon - Spellpower
+				i(21371),	-- Pattern: Core Felcloth Bag
+				i(18265), 	-- Pattern: Flarecore Wraps
+				i(18257),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18264), -- Plans: Elemental Sharpening Stone
@@ -413,11 +413,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(18820),	-- Talisman of Ephemeral Power
 			})),
 			cr(12259, e(1521, { -- Gehennas
-				dr(0.6, i(18260)),	-- Formula: Enchant Weapon - Healing Power
-				dr(0.8, i(18259)),	-- Formula: Enchant Weapon - Spellpower
-				dr(0.7, i(21371)),	-- Pattern: Core Felcloth Bag
-				dr(0.7, i(18265)), 	-- Pattern: Flarecore Wraps
-				dr(1.2, i(18257)),	-- Recipe: Major Rejuvenation Potion
+				i(18260),	-- Formula: Enchant Weapon - Healing Power
+				i(18259),	-- Formula: Enchant Weapon - Spellpower
+				i(21371),	-- Pattern: Core Felcloth Bag
+				i(18265), 	-- Pattern: Flarecore Wraps
+				i(18257),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18264), -- Plans: Elemental Sharpening Stone
@@ -439,11 +439,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(19147),	-- Ring of Spell Power
 			})),
 			cr(12057, e(1522, { -- Garr
-				dr(1.0, i(18260)),	-- Formula: Enchant Weapon - Healing Power
-				dr(1.3, i(18259)),	-- Formula: Enchant Weapon - Spellpower
-				dr(1.7, i(21371)),	-- Pattern: Core Felcloth Bag
-				dr(1.4, i(18265)), 	-- Pattern: Flarecore Wraps
-				dr(1.1, i(18257)),	-- Recipe: Major Rejuvenation Potion
+				i(18260),	-- Formula: Enchant Weapon - Healing Power
+				i(18259),	-- Formula: Enchant Weapon - Spellpower
+				i(21371),	-- Pattern: Core Felcloth Bag
+				i(18265), 	-- Pattern: Flarecore Wraps
+				i(18257),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18264), -- Plans: Elemental Sharpening Stone
@@ -485,11 +485,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(18820),	-- Talisman of Ephemeral Power
 			})),
 			cr(12264, e(1523, { -- Shazzrah
-				dr(0.7, i(18260)),	-- Formula: Enchant Weapon - Healing Power
-				dr(0.8, i(18259)),	-- Formula: Enchant Weapon - Spellpower
-				dr(0.7, i(21371)),	-- Pattern: Core Felcloth Bag
-				dr(0.8, i(18265)), 	-- Pattern: Flarecore Wraps
-				dr(0.7, i(18257)),	-- Recipe: Major Rejuvenation Potion
+				i(18260),	-- Formula: Enchant Weapon - Healing Power
+				i(18259),	-- Formula: Enchant Weapon - Spellpower
+				i(21371),	-- Pattern: Core Felcloth Bag
+				i(18265), 	-- Pattern: Flarecore Wraps
+				i(18257),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18264), -- Plans: Elemental Sharpening Stone
@@ -511,11 +511,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(19147),	-- Ring of Spell Power
 			})),
 			cr(12056, e(1524, { -- Baron Geddon
-				dr(1.1, i(18260)),	-- Formula: Enchant Weapon - Healing Power
-				dr(1.1, i(18259)),	-- Formula: Enchant Weapon - Spellpower
-				dr(1.2, i(21371)),	-- Pattern: Core Felcloth Bag
-				dr(1.2, i(18265)), 	-- Pattern: Flarecore Wraps
-				dr(1.2, i(18257)),	-- Recipe: Major Rejuvenation Potion
+				i(18260),	-- Formula: Enchant Weapon - Healing Power
+				i(18259),	-- Formula: Enchant Weapon - Spellpower
+				i(21371),	-- Pattern: Core Felcloth Bag
+				i(18265), 	-- Pattern: Flarecore Wraps
+				i(18257),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18264), -- Plans: Elemental Sharpening Stone
@@ -569,11 +569,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(19147),	-- Ring of Spell Power
 			})),
 			cr(11988, e(1526, { -- Golemagg the Incinerator
-				dr(1.2, i(18260)),	-- Formula: Enchant Weapon - Healing Power
-				dr(1.3, i(18259)),	-- Formula: Enchant Weapon - Spellpower
-				dr(1.5, i(21371)),	-- Pattern: Core Felcloth Bag
-				dr(1.2, i(18265)), 	-- Pattern: Flarecore Wraps
-				dr(1.3, i(18257)),	-- Recipe: Major Rejuvenation Potion
+				i(18260),	-- Formula: Enchant Weapon - Healing Power
+				i(18259),	-- Formula: Enchant Weapon - Spellpower
+				i(21371),	-- Pattern: Core Felcloth Bag
+				i(18265), 	-- Pattern: Flarecore Wraps
+				i(18257),	-- Recipe: Major Rejuvenation Potion
 				i(18292), 	-- Schematic: Core Marksman Rifle
 				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18264), -- Plans: Elemental Sharpening Stone
