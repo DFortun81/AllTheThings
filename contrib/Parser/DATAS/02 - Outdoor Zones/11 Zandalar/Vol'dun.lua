@@ -1274,6 +1274,14 @@ i(155430),
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								q(52864, {	-- What Do You Mean, Mind Controlling Plants?
+									["repeatable"] = true,
+									["qg"] = 141969,	-- Spineleaf
+									["coord"] = { 30.4, 62 },
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
 								q(51322, {	-- Wings and Stingers
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below

@@ -85,7 +85,6 @@ profession(773, { -- Inscription
 	}),
 	n(-100002, { -- PLACE_HOLDER
 		i(162358),	-- Recipe: Codex of the Quiet Mind
-		i(162374),	-- Recipe: Contract: Champions of Azeroth
 		i(162361),	-- Recipe: Contract: Order of Embers
 		i(162362),	-- Recipe: Contract: Order of Embers
 		i(162360),	-- Recipe: Contract: Proudmoore Admiralty

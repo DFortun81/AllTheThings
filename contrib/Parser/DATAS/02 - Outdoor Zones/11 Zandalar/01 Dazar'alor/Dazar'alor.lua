@@ -1236,19 +1236,6 @@ _.Zones =
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
-								q(52348, {	-- Work Order: Mon'Dazi
-									["groups"] = {
-										i(162296, {	-- Recipe: Mon'Dazi [Rank 3]
-											["spellID"] = 259444,
-										}),
-									},
-									["requireSkill"] = 185,	-- Cooking
-									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
-								}),
-								
 							},
 						}),
 					},

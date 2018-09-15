@@ -1933,6 +1933,17 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								q(52394, {	-- Work Order: Contract: Champions of Azeroth [Rank 3]
+									["groups"] = {
+										i(162374),	-- Recipe: Contract: Champions of Azeroth [Rank 3]
+									},
+									["requireSkill"] = 773,	-- Inscription
+									["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
 								q(52347, {	-- Work Order: Honey-Glazed Haunchs [Rank 3]
 									["groups"] = {
 										i(162286, {	-- Recipe: Honey-Glazed Haunchs [Rank 3]

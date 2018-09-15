@@ -1545,7 +1545,21 @@ _.Zones =
 										["spellID"] = 259438,
 									}),
 								},
-									["requireSkill"] = 185,	-- Cooking
+								["requireSkill"] = 185,	-- Cooking
+								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+								["coord"] = { 71.4, 30.2 },
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
+							q(52348, {	-- Work Order: Mon'Dazi
+								["groups"] = {
+									i(162296),	-- Recipe: Mon'Dazi [Rank 3]
+								},
+								["requireSkill"] = 185,	-- Cooking
+								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+								["coord"] = { 71.4, 30.2 },
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -1557,8 +1571,9 @@ _.Zones =
 										["spellID"] = 259426,
 									}),
 								},
-									["requireSkill"] = 185,	-- Cooking
+								["requireSkill"] = 185,	-- Cooking
 								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+								["coord"] = { 71.4, 30.2 },
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -1570,8 +1585,9 @@ _.Zones =
 										["spellID"] = 259447,
 									}),
 								},
-									["requireSkill"] = 185,	-- Cooking
+								["requireSkill"] = 185,	-- Cooking
 								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+								["coord"] = { 71.4, 30.2 },
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
@@ -1583,8 +1599,9 @@ _.Zones =
 										["spellID"] = 259429,
 									}),
 								},
-									["requireSkill"] = 185,	-- Cooking
+								["requireSkill"] = 185,	-- Cooking
 								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+								["coord"] = { 71.4, 30.2 },
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
