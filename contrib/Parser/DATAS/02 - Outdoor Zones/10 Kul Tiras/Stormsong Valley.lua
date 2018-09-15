@@ -1936,7 +1936,7 @@ _.Zones =
 								q(52394, {	-- Work Order: Contract: Champions of Azeroth [Rank 3]
 									["groups"] = {
 										i(162374, {	-- Recipe: Contract: Champions of Azeroth [Rank 3]
-											["recipeID"] = 256299,
+											["spellID"] = 256299,
 										}),
 									},
 									["repeatable"] = true,

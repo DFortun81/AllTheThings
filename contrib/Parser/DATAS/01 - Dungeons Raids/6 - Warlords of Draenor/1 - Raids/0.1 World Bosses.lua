@@ -5,6 +5,31 @@
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	n(-7, {	-- World Bosses
 		["groups"] = {
+			cr(94015, e(1452, { -- Supreme Lord Kazzak
+				["groups"] = {
+					i(127976), -- Choker of Reciprocity
+					i(127977), -- Insightful Void-Link Chain
+					i(127978), -- Necklace of Flowing Light
+					i(127979), -- Studded Choker of the Accursed
+					i(127980), -- Void-Sealed Gorget
+					i(127974), -- Drape of the Doomguard
+					i(127971), -- Gossamer Felscorched Scarf
+					i(127975), -- Marked Cloak of Command
+					i(127973), -- Nether-Touched Cloak
+					i(127972), -- Spellcloak of Suramar
+					i(127981), -- Bracers of Perfect Discomfort
+					i(127983), -- Supreme Felchain Bracers
+					i(127982), -- Terrorweave Wristwraps
+					i(127984), -- Wristclasps of Righteous Reckoning
+					i(124545), -- Chipped Soul Prism
+					i(124546), -- Mark of Supreme Doom
+				},
+				["questID"] = 39380,
+				["isRaid"] = true,
+				["maps"] = {
+					534,	-- Tanaan Jungle
+				},
+			})),
 			cr(81252, e(1291, {	-- Drov the Ruiner
 				["groups"] = {	
 					i(120086),	-- Bone Charm Chain
@@ -28,6 +53,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			cr(87493, e(1262, {	-- Rukhmar
 				["groups"] = {
 					i(116771),	-- Solar Spirehawk (MOUNT!)
+					i(127775, {	-- Gemcutter Module: Stamina
+						["spellID"] = 187640,
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+						["coord"] = {
+							25.84, 39.79
+						},
+					}),
 					i(115434),	-- Down-Lined Leggings
 					i(115435),	-- Leggings of Flowing Feathers
 					i(115436),	-- Phoenixfire Legplates

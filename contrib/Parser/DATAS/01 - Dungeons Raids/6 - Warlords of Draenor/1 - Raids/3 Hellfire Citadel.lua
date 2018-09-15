@@ -119,7 +119,14 @@ _.Instances =
 						}),
 						ach(10025, { 	-- Bastion of Shadows
 							cr(95067, e(1433, {	-- Shadow-Lord Iskar
-								i(127771),	-- Gemcutter Module: Critical Strike
+								i(127771, {	-- Gemcutter Module: Critical Strike
+									["spellID"] = 187634,
+									["requireSkill"] = 755,	-- Jewelcrafting
+									["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+									["coord"] = {
+										25.84, 39.79
+									},
+								}),
 								ig(127749),	-- Corrupted Nest Guardian
 								i(128096),	-- Demonspine Wand
 								i(128041),	-- Beaked Hood of Betrayal
@@ -397,7 +404,14 @@ _.Instances =
 							i(124236),	-- Unending Hunger
 						})),
 						cr(95067, e(1433, {	-- Shadow-Lord Iskar
-							i(127771),	-- Gemcutter Module: Critical Strike
+							i(127771, {	-- Gemcutter Module: Critical Strike
+								["spellID"] = 187634,
+								["requireSkill"] = 755,	-- Jewelcrafting
+								["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+								["coord"] = {
+									25.84, 39.79
+								},
+							}),
 							ig(127749),	-- Corrupted Nest Guardian
 							i(124387),	-- Shadowrend Talonblade
 							i(124390),	-- Deceiver's Felbeak Wand
@@ -756,7 +770,14 @@ _.Instances =
 							i(124236),	-- Unending Hunger
 						})),
 						cr(95067, e(1433, {	-- Shadow-Lord Iskar
-							i(127771),	-- Gemcutter Module: Critical Strike
+							i(127771, {	-- Gemcutter Module: Critical Strike
+								["spellID"] = 187634,
+								["requireSkill"] = 755,	-- Jewelcrafting
+								["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+								["coord"] = {
+									25.84, 39.79
+								},
+							}),
 							ig(127749),	-- Corrupted Nest Guardian
 							i(124387),	-- Shadowrend Talonblade
 							i(124390),	-- Deceiver's Felbeak Wand
@@ -1119,7 +1140,14 @@ _.Instances =
 							i(124236),	-- Unending Hunger
 						})),
 						cr(95067, e(1433, {	-- Shadow-Lord Iskar
-							i(127771),	-- Gemcutter Module: Critical Strike
+							i(127771, {	-- Gemcutter Module: Critical Strike
+								["spellID"] = 187634,
+								["requireSkill"] = 755,	-- Jewelcrafting
+								["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+								["coord"] = {
+									25.84, 39.79
+								},
+							}),
 							ig(127749),	-- Corrupted Nest Guardian
 							i(124387),	-- Shadowrend Talonblade
 							i(124390),	-- Deceiver's Felbeak Wand

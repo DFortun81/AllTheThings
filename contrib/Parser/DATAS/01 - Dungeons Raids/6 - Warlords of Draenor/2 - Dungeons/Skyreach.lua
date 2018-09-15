@@ -559,6 +559,14 @@ _.Instances =
 								i(110006),	-- Rukhran's Quill
 							})),
 							cr(76266, e(968, {	-- High Sage Viryx
+								i(127771, {	-- Gemcutter Module: Haste
+									["spellID"] = 187635,
+									["requireSkill"] = 755,	-- Jewelcrafting
+									["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+									["coord"] = {
+										25.84, 39.79
+									},
+								}),
 								i(110033),	-- Arcanic of the High Sage
 								i(110034),	-- Viryx's Indomitable Bulwark
 								i(109938),	-- Blackwater Spaulders

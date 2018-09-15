@@ -26,6 +26,14 @@ _.WorldEvents =
 						i(98091),	-- Last Seasons Shirt
 						i(98092),	-- Digmaster's Bodysleeve
 						i(98093),	-- Sightless Mantle
+						i(127773, {	-- Gemcutter Module: Mastery
+							["spellID"] = 187636,
+							["requireSkill"] = 755,	-- Jewelcrafting
+							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+							["coord"] = {
+								25.84, 39.79
+							},
+						}),
 					},
 					["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
 				}),

@@ -6,28 +6,6 @@ _.Zones =
 	m(572, { 	-- Draenor
 		m(534, { 	-- Tanaan Jungle
 			["groups"] = {				
-				cr(94015, e(1452, { -- Supreme Lord Kazzak
-					["groups"] = {
-						i(127976), -- Choker of Reciprocity
-						i(127977), -- Insightful Void-Link Chain
-						i(127978), -- Necklace of Flowing Light
-						i(127979), -- Studded Choker of the Accursed
-						i(127980), -- Void-Sealed Gorget
-						i(127974), -- Drape of the Doomguard
-						i(127971), -- Gossamer Felscorched Scarf
-						i(127975), -- Marked Cloak of Command
-						i(127973), -- Nether-Touched Cloak
-						i(127972), -- Spellcloak of Suramar
-						i(127981), -- Bracers of Perfect Discomfort
-						i(127983), -- Supreme Felchain Bracers
-						i(127982), -- Terrorweave Wristwraps
-						i(127984), -- Wristclasps of Righteous Reckoning
-						i(124545), -- Chipped Soul Prism
-						i(124546), -- Mark of Supreme Doom
-					},
-					["questID"] = 39380,
-					["isRaid"] = true,
-				})),
 				n(-228, {-- Flight Paths
 					fp(1643, { -- Aktar's Post, Tanaan Jungle
 						["coord"] = { 26, 38.8 },
@@ -125,8 +103,7 @@ _.Zones =
 					qa( 38560),	-- Garrison Campaign: The Bane of the Bleeding Hollow
 					qa( 38561),	-- Garrison Campaign: The Warlock
 					qh( 38458),	-- Garrison Campaign: The Warlock
-					qh( 39175),	-- Gems of the Apexis
-					qa( 39195),	-- Gems of the Apexis
+					
 					q(38213),	-- Get a Clue
 					q(39015),	-- Grumpy
 					qh( 39514),	-- Harnessing Their Power

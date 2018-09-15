@@ -2121,6 +2121,13 @@ _.ExpansionFeatures =
 						i(108918),
 						i(108919),
 					}),
+					q(39195, {	-- Gems of the Apexis
+						["groups"] = {
+							recipe(187639),	-- Immaculate Versatility Taladite
+						},
+						["qg"] = 77209,	-- Baros Alexston
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(37433, { 	-- Proving Grounds
 						i(119463),
 						i(119458),

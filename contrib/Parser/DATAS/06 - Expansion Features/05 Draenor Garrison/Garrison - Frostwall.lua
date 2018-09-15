@@ -2116,6 +2116,13 @@ _.ExpansionFeatures =
 						i(111540),
 						i(111542),
 					}),	
+					q(39175, {	-- Gems of the Apexis
+						["groups"] = {
+							recipe(187639),	-- Immaculate Versatility Taladite
+						},
+						["qg"] = 78466,	-- Gazlowe
+						["races"] = HORDE_ONLY,
+					}),
 					qh(37434, { -- Proving Grounds
 						i(119463),
 						i(119458),
