@@ -369,6 +369,7 @@ _.Zones =
 							i(65468),	-- Staff of the Arcane Path
 						},
 						["qg"] = 47246,	-- Ureda
+						["coord"] = { 51.2, 72.4 },
 						["classes"] = { 8 },	-- Mage
 					})),
 					qdg(qh(28458, {	-- The Pyromancer's Grimoire
@@ -394,10 +395,18 @@ _.Zones =
 						["qg"] = 3353,	-- Grezz Ragefist
 						["classes"] = { 1 },	-- Warrior
 					})),
---[[				
-					qp129(qg(43239, qh( 26588))),	-- A Furious Catch
-					qp129(qg(43239, qh( 26572))),	-- A Golden Opportunity
-					--]]
+					qh(26588, {	-- A Furious Catch
+						["qg"] = 43239,	-- Razgar
+						["coord"] = { 65.7, 41.1 },
+						["isDaily"] = true,
+						["requireSkill"] = 356,	-- Fishing
+					}),
+					qh(26572, {	-- A Golden Opportunity
+						["qg"] = 43239,	-- Razgar
+						["coord"] = { 65.7, 41.1 },
+						["isDaily"] = true,
+						["requireSkill"] = 356,	-- Fishing
+					}),
 					{
 						["questID"] = 27283,	-- A Journey to Moonglade
 						["qgs"] = {44978, 44726},	-- Quest Givers: Sesebi <Druid Trainer> / Shalla Whiteleaf <Druid Trainer>
@@ -512,15 +521,29 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["qg"] = 47233,	-- Gordul
 						["classes"] = { 4 },	-- Rogue
 					})),
-					qg(54004, q(29401, {  	-- Blown Away
-						i(72045), -- Horde Balloon (Pet)
-					})),
+					q(29401, {  	-- Blown Away
+						["groups"] = {
+							i(72045), -- Horde Balloon
+						},
+						["qg"] = 54004,	-- Jaga
+						["coord"] = { 48.1, 46.8 },
+					}),
+					qh(26227, {	-- Careful, This Fruit Bites Back
+						["qg"] = 42506,	-- Marogg
+						["coord"] = { 56.5, 62.5 },
+						["isDaily"] = true,
+						["requireSkill"] = 185,	-- Cooking
+					}),
+					qh(26226, {	-- Crawfish Creole
+						["qg"] = 42506,	-- Marogg
+						["coord"] = { 56.5, 62.5 },
+						["isDaily"] = true,
+						["requireSkill"] = 185,	-- Cooking
+					}),
 --[[					
 					qg(53081, qh(29219)),	-- Bwemba's Spirit
-					qp185(qg(42506, qh(26227))),	-- Careful, This Fruit Bites Back
 					qp129(qg(43239, qh(26543))),	-- Clammy Hands
 					qg(15116, qh( 8228)),	-- Could I get a Fishing Flier?
-					qp185(qg(42506, qh(26226))),	-- Crawfish Creole
 --]]					
 					q(6385, { -- Doras the Wind Rider Master
 						["qg"] = 6929, -- Innkeeper Gryshka
@@ -541,10 +564,23 @@ Legacy				qh( 1436),	-- Alliance Relations
 					qp755(qg(50482, qh(25162))),	-- Elemental Goo
 					qp171(qg(3347, q(29481))),	-- Elixir Master
 --]]
-					qdg(qg(14720, qh(31034))),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR ORC/TROLL/GOBLIN)
+					qdg(qh(31034, {	-- Enemies Below
+						["qg"] = 14720,	-- Eitrigg
+						["coord"] = { 49.2, 72.3 },
+					})),
+					qh(26235, {	-- Even Thieves Get Hungry
+						["qg"] = 42506,	-- Marogg
+						["coord"] = { 56.5, 62.5 },
+						["isDaily"] = true,
+						["requireSkill"] = 185,	-- Cooking
+					}),
+					qh(26220, {	-- Everything Is Better with Bacon
+						["qg"] = 42506,	-- Marogg
+						["coord"] = { 56.5, 62.5 },
+						["isDaily"] = true,
+						["requireSkill"] = 185,	-- Cooking
+					}),
 --[[
-					qp185(qg(42506, qh(26235))),	-- Even Thieves Get Hungry
-					qp185(qg(42506, qh(26220))),	-- Everything Is Better with Bacon
 					qg(3310, q(26804, {	-- Flight to Razor Hill					
 						["groups"] = {
 						},
@@ -617,10 +653,14 @@ Legacy				qh( 1436),	-- Alliance Relations
 --[[
 					qg(43062, qh(26417)),	-- Northern Stranglethorn: The Fallen Empire
 					qp755(qg(50482, qh(25161))),	-- Ogrezonians in the Mood
---]]					
+--]]
+					qh(26642, {	-- Preserving the Barrens
+						["qg"] = 35068,	-- Gotura Fourwinds
+						["coord"] = { 47.6, 71.3 },
+						["isBreadcrumb"] = true,
+					}),
 --[[
 					qp171(qg(3347, q(29067))),	-- Potion Master
-					qg(35068, qh(26642)),	-- Preserving the Barrens
 --					qg(95234, qh(44092)),	-- Protect the Home Front (LEGACY - pre-Legion)
 					qg(14720, qh(25275)),	-- Report to the Labor Captain (QG in Orgrimmar, additional QGs 39605 and 86832, previous Horde leaders)
 					
@@ -650,12 +690,29 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["races"] = { 10 },	-- Blood Elf
 						["classes"] = { 5 },	-- Priest
 					})),	
-					qg(42506, q(26234, {	-- Stealing From Our Own
-						["races"] = { 8 },
+					qg(42506, q(26234, {	-- Stealing From Our Own, {
+						["qg"] = 42506,	-- Marogg
+						["coord"] = { 56.5, 62.5 },
+						["isDaily"] = true,
+						["races"] = { 8 },	-- Troll
 						["requireSkill"] = 185,	-- Cooking
 					})),
 					qg(42506, q(26233, {	-- Stealing From Our Own
-						["races"] = { 2, 5, 6, 10, 9, 26 },
+						["qg"] = 42506,	-- Marogg
+						["coord"] = { 56.5, 62.5 },
+						["isDaily"] = true,
+						["races"] = {
+							2,	-- Orc
+							5,	-- Undead
+							6,	-- Tauren
+							9,	-- Goblin
+							10,	-- Blood Elf
+							26,	-- Pandaren
+							27,	-- Nightborne
+							28,	-- Highmountain Tauren
+							31,	-- Zandalari Troll
+							36,	-- Mag'har Orc
+						},
 						["requireSkill"] = 185,	-- Cooking
 					})),
 					qdg(qh(28459, {	-- Stones of Binding
@@ -665,6 +722,11 @@ Legacy				qh( 1436),	-- Alliance Relations
 						["qg"] = 88705,	-- Kranosh
 						["classes"] = { 9 },	-- Warlock
 					})),
+					q(50303, {	-- Stranger in a Strange Land
+						["qg"] = 133407,	-- Ambassador Blackguard
+						["coord"] = { 39.4, 79.5 },
+						["races"] = { 27 },	-- Nightborne
+					}),
 					qdg(qh(27397, {	-- Terga's Task
 						["groups"] = {
 							i(65490),	-- Battleaxe of the Speaker
