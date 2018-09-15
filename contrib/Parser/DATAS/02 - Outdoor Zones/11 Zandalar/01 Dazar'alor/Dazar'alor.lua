@@ -951,7 +951,7 @@ _.Zones =
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
-						n(-17, { -- Quests
+						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
 								q(49413, {	-- Scamps With Scrolls
 									["repeatable"] = true,
@@ -1236,6 +1236,19 @@ _.Zones =
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
+								q(52348, {	-- Work Order: Mon'Dazi [Note: This WQ stays here as it is in the city and not the zone]
+									["groups"] = {
+										i(162296, {	-- Recipe: Mon'Dazi [Rank 3]
+											["spellID"] = 259444,
+										}),
+									},
+									["requireSkill"] = 185,	-- Cooking
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								
 							},
 						}),
 					},

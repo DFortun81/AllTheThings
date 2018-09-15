@@ -1144,7 +1144,7 @@ i(155430),
 				}),
 				n(-34,  {	-- World Quests
 					["groups"] = {
-						n(-17, { -- Quests
+						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
 								q(51422, {	-- Azerite Madness
 									["repeatable"] = true,
@@ -1276,8 +1276,6 @@ i(155430),
 								}),
 								q(52864, {	-- What Do You Mean, Mind Controlling Plants?
 									["repeatable"] = true,
-									["qg"] = 141969,	-- Spineleaf
-									["coord"] = { 30.4, 62 },
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only

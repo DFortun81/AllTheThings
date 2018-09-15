@@ -1085,7 +1085,7 @@ _.Zones =
 				}),
 				n(-34, {	-- World Quests
 					["groups"] = {
-						n(-17, {	-- Quests
+						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
 								q(51024, {	-- Supplies Needed: Akunda's Bite
 									["repeatable"] = true,

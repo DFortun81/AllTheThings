@@ -1833,7 +1833,7 @@ _.Zones =
 				}),
 				n(-34,  {	-- World Quests
 					["groups"] = {
-						n(-17, { -- Quests
+						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
 								q(51855, {	-- A Pirate's Life For Me
 									["repeatable"] = true,
@@ -1935,10 +1935,10 @@ _.Zones =
 								}),
 								q(52394, {	-- Work Order: Contract: Champions of Azeroth [Rank 3]
 									["groups"] = {
-										i(162374),	-- Recipe: Contract: Champions of Azeroth [Rank 3]
+										i(162374, {	-- Recipe: Contract: Champions of Azeroth [Rank 3]
+											["recipeID"] = 256299,
+										}),
 									},
-									["requireSkill"] = 773,	-- Inscription
-									["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
