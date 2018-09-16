@@ -1434,7 +1434,7 @@ _.Zones =
 				}),
 				n(-34,  {	-- World Quests
 					["groups"] = {
-						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything]
+						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							q(50864, {	-- Atal'zul Gotaka
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below

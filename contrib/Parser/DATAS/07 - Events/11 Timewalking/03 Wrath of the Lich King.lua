@@ -45,6 +45,9 @@ _.WorldEvents =
 						i(129869), -- Xintor's Expeditioary Boots
 					}),
 				},
+				["maps"] = {
+					125	-- Dalaran
+				},
 			}),
 		},
 	}),

@@ -90,8 +90,10 @@ _.WorldEvents =
 						},
 					}),
 				},
+				["maps"] = {
+					111	-- Shattrath City
+				},
 			}),
 		},
-		["maps"] = { 111 }, -- Shattrath City
 	}),
 };

@@ -46,6 +46,10 @@ _.WorldEvents =
 						}),
 					}),
 				},
+				["maps"] = {
+					85,	-- Orgrimmar
+					84,	-- Stormwind City
+				},
 			}),
 		},
 	}),

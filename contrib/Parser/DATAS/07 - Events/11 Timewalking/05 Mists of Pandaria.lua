@@ -41,6 +41,9 @@ _.WorldEvents =
 						i(143954),	-- Paradox Spirit
 					}),
 				},
+				["maps"] = {
+					554	-- Timeless Isle
+				},
 			}),
 		},
 	}),
