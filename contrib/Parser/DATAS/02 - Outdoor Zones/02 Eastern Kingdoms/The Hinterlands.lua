@@ -917,7 +917,7 @@ _.Zones =
 						n(  0, {	-- Zone Drop (Legacy)
 							un(43, n(7996, { -- Qiaga the Keeper
 								un(2, i(9241, {  -- Sacred Mallet
-									un(2, i(9240)), -- Mallet of Zul'Farrak
+									i(9240), -- Mallet of Zul'Farrak
 								})),
 							})),
 						}),
