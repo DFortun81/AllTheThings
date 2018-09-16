@@ -55,7 +55,6 @@ profession(755, { -- Jewelcrafting
 		i(71917),	-- Design: Adept Lava Coral
 		i(83811),	-- Design: Agile Primal Diamond
 		i(68781),	-- Design: Agile Shadowspirit Diamond
-		i(162760),	-- Design: Amberblaze Loop
 		i(35202),	-- Design: Amulet of Flowing Life
 		i(20854),	-- Design: Amulet of the Moon
 		i(137809),	-- Design: Ancient Maelstrom Amulet

@@ -218,8 +218,6 @@ profession(202, { -- Engineering
 		i(162326),	-- Schematic: AZ3-R1-T3 Gearspun Goggles
 		i(162329),	-- Schematic: AZ3-R1-T3 Orthogonal Optics
 		i(162330),	-- Schematic: AZ3-R1-T3 Orthogonal Optics
-		i(162728),	-- Schematic: AZ3-R1-T3 Synthetic Specs
-		i(162729),	-- Schematic: AZ3-R1-T3 Synthetic Specs
 		i(127721),	-- Schematic: Bi-Directional Fizzle Reducer
 		i(18290),	-- Schematic: Biznicks 247x128 Accurascope
 		i(120267),	-- Schematic: Blackrock Rifling
@@ -275,7 +273,6 @@ profession(202, { -- Engineering
 		i(23800),	-- Schematic: Felsteel Boomstick
 		i(34114),	-- Schematic: Field Repair Bot 110G
 		i(118480),	-- Schematic: Findle's Loot-a-Rang
-		i(162746),	-- Schematic: Finely-Tuned Stormsteel Destroyer
 		i(44919),	-- Schematic: Firework Launcher
 		i(21738),	-- Schematic: Firework Launcher
 		i(4411),	-- Schematic: Flame Deflector
@@ -359,7 +356,6 @@ profession(202, { -- Engineering
 		i(14639),	-- Schematic: Minor Recombobulator
 		i(10604),	-- Schematic: Mithril Heavy-Bore Rifle
 		i(10609),	-- Schematic: Mithril Mechanical Dragonling
-		i(162744),	-- Schematic: Monelite Scope of Alacrity
 		i(4412),	-- Schematic: Moonsight Rifle
 		un(1, i(118492)),	-- Schematic: Morden's Magnificent Contraption
 		i(162336),	-- Schematic: Neurological Immobilization Bomb
@@ -377,7 +373,6 @@ profession(202, { -- Engineering
 		i(23804),	-- Schematic: Power Amplification Goggles
 		i(18656),	-- Schematic: Powerful Seaforium Charge
 		i(35189),	-- Schematic: Powerheal 9000 Lens
-		i(162745),	-- Schematic: Precision Attitude Adjuster
 		i(122554),	-- Schematic: Precision Scope Tuning Kit
 		i(122712),	-- Schematic: Primal Welding
 		i(35192),	-- Schematic: Primal-Attuned Goggles
