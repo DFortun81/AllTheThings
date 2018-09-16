@@ -214,8 +214,6 @@ profession(202, { -- Engineering
 		i(137709),	-- Schematic: Auto-Hammer
 		i(137723),	-- Schematic: Auto-Hammer
 		i(89996),	-- Schematic: Autumn Flower Firework
-		i(162732),	-- Schematic: AZ3-R1-T3 Bionic Bifocals
-		i(162733),	-- Schematic: AZ3-R1-T3 Bionic Bifocals
 		i(162325),	-- Schematic: AZ3-R1-T3 Gearspun Goggles
 		i(162326),	-- Schematic: AZ3-R1-T3 Gearspun Goggles
 		i(162730),	-- Schematic: AZ3-R1-T3 Gearspun Goggles
@@ -292,7 +290,6 @@ profession(202, { -- Engineering
 		i(18291),	-- Schematic: Force Reactive Disk
 		i(162335),	-- Schematic: Fro-Grow Grenade
 		i(162739),	-- Schematic: Fro-Grow Grenade
-		i(162322),	-- Schematic: Frost-Laced Ammunition
 		i(162727),	-- Schematic: Frost-Laced Ammunition
 		i(32381),	-- Schematic: Fused Wiring
 		i(18654),	-- Schematic: Gnomish Alarm-o-Bot
