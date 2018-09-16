@@ -7,7 +7,7 @@ _.Zones =
 		m(650, {	-- Highmountain
 			["maps"] = {750},
 			["groups"] = {
-				n(-100001, {	-- Artifacts
+				n(-10067, {	-- Artifacts
 					n(-159, { -- Daily Event Roll
 						["lvl"] = 110,
 						["classes"] = { 1 },	-- Warrior Only
@@ -622,7 +622,7 @@ _.Zones =
 						}),
 					}),
 					prof(356, { -- Fishing
-						n(-100001, { 	-- Artifact
+						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,
 							["groups"] = {

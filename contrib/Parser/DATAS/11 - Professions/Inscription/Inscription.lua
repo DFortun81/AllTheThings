@@ -83,7 +83,7 @@ profession(773, { -- Inscription
 		WOD_CRAFTED_ITEM(113270),	-- Shadowtome
 		WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
 	}),
-	n(-100002, { -- PLACE_HOLDER
+	n(-10068, { -- PLACE_HOLDER
 		i(162358),	-- Recipe: Codex of the Quiet Mind
 		i(162361),	-- Recipe: Contract: Order of Embers
 		i(162362),	-- Recipe: Contract: Order of Embers
@@ -94,7 +94,6 @@ profession(773, { -- Inscription
 		i(162754),	-- Recipe: Contract: Talanji's Expedition
 		i(162372),	-- Recipe: Contract: Tortollan Seekers
 		i(162370),	-- Recipe: Contract: Voldunai
-		i(162755),	-- Recipe: Contract: Voldunai
 		i(162366),	-- Recipe: Contract: Zandalari Empire
 		i(162753),	-- Recipe: Contract: Zandalari Empire
 		i(162353),	-- Recipe: Honorable Combatant's Etched Vessel

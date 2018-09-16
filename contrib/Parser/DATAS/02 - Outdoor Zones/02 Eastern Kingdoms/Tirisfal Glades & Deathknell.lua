@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(18, {	-- Tirisfal Glades
 			["groups"] = {
-				n(-100001, {	-- Artifacts
+				n(-10067, {	-- Artifacts
 					["lvl"] = 98,
 					["groups"] = {
 						nh(11608, {	-- Bardu Sharpeye

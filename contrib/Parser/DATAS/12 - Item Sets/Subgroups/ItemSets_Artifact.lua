@@ -153,7 +153,7 @@ end;
 _.GearSets = 
 -----------------------------------------------------
 {
-	n(-100001, { -- Artifacts
+	n(-10067, { -- Artifacts
 		["achievementID"] = 11171,	-- Arsenal of Power
 		["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\nUnlocks are shown based off your current hero and may or may not reflect whether you actually unlocked them on that class.\n\n",
 		["lvl"] = 100,

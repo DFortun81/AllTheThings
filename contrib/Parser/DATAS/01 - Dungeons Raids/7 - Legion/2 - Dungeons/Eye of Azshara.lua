@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(716, {	-- Eye of Azshara
 				["groups"] = {
-					n(-100001, {	-- Artifacts
+					n(-10067, {	-- Artifacts
 						i(139574, {	-- Coil of the Drowned Queen (shaman appearance)
 							["description"] = "Drops from the first two bosses on any difficulty.",
 							["crs"] = {

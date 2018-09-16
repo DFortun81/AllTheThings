@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(22, {	-- Western Plaguelands
 			["groups"] = {
-				n(-100001, {	-- Artifacts
+				n(-10067, {	-- Artifacts
 					["lvl"] = 110,
 					["groups"] = {
 						na(11609, {	-- Alexia Ironknife

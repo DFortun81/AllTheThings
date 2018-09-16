@@ -7,7 +7,7 @@ _.Zones =
 	m(905, { 	-- Argus
 		m(830, {	-- Krokuun
 			["groups"] = {
-				n(-100001, {	-- Artifacts
+				n(-10067, {	-- Artifacts
 					-- /script for i = 44093,44097 do print("Head "..(i-44092)..": "..tostring(IsQuestFlaggedCompleted(i))) end
 					i(140661, {	-- Damaged Eredar Head
 						["questID"] = 44093,

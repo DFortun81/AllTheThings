@@ -46,7 +46,7 @@ profession(755, { -- Jewelcrafting
 		i(151589),	-- Empyrial Elemental Crown
 		i(151590),	-- Empyrial Titan Crown
 	}),
-	n(-100002, { -- PLACE_HOLDER
+	n(-10068, { -- PLACE_HOLDER
 		i(52409),	-- Design: Accurate Demonseye
 		i(47010),	-- Design: Accurate Dreadstone
 		i(71928),	-- Design: Accurate Shadow Spinel
@@ -535,7 +535,6 @@ profession(755, { -- Jewelcrafting
 		i(43318),	-- Design: Ring of Scarlet Shadows
 		i(52462),	-- Design: Ring of Warring Elements
 		i(162381),	-- Design: Royal Quartz Loop
-		i(162763),	-- Design: Royal Quartz Loop
 		i(21942),	-- Design: Ruby Crown of Restoration
 		i(83931),	-- Design: Ruby Panther
 		i(21949),	-- Design: Ruby Serpent

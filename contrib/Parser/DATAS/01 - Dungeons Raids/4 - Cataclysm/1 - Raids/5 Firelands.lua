@@ -7,7 +7,7 @@ _.Instances =
 		["groups"] = {
 			inst(78, { 	-- Firelands
 				["groups"] = {
-					n(-100000, {	-- Legendary Questline
+					n(-10066, {	-- Legendary Questline
 						["classes"] = { 5, 7, 8, 9, 11 },    -- Priest, Shaman, Mage, Warlock, Druid
 						["title"] = "Dragonwrath, Tarecgosa's Rest",
 						["icon"] = "Interface\\Icons\\Stave_2H_Tarecgosa_E_01StageFinal",

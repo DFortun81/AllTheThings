@@ -800,7 +800,7 @@ AllTheThings.Locales.enUS = {
 		[-10048] = "Interface\\Icons\\buff_feltreasures",						-- Mage Tower
 		[-10049] = "Interface\\Icons\\buff_forcesoforder",						-- Command Center
 		[-10050] = "Interface\\Icons\\buff_epichunter",							-- Nether Disruptor
-		[-100001] = "Interface\\Icons\\inv_artifact_tome01", 					-- AK Research Book
+		[-10067] = "Interface\\Icons\\inv_artifact_tome01", 					-- AK Research Book
 		[-10051] = "Interface\\Icons\\Paladin_Protection",						-- 
 		[-10052] = "Interface\\Icons\\Paladin_Protection",						-- 
 		[-10053] = "Interface\\Icons\\Paladin_Protection",						-- 
@@ -1636,20 +1636,33 @@ AllTheThings.Locales.enUS = {
 		[-10058] = select(1,GetCategoryInfo(15283)),		-- World
 		[-10059] = select(1,GetCategoryInfo(15302)),		-- Pandaria Scenarios
 		[-10060] = select(2,GetAchievementInfo(7333)),		-- The Four Celestials
+		[-10061] = BATTLE_PET_BREED_QUALITY1,			-- "Poor";
+		[-10062] = BATTLE_PET_BREED_QUALITY2,			-- "Common";
+		[-10063] = BATTLE_PET_BREED_QUALITY3,			-- "Uncommon";
+		[-10064] = BATTLE_PET_BREED_QUALITY4,			-- "Rare";
+		[-10065] = BATTLE_PET_BREED_QUALITY5,			-- "Epic";
+		[-10066] = BATTLE_PET_BREED_QUALITY6,			-- "Legendary";
+		[-10067] = ITEM_QUALITY6_DESC, 				-- Artifact
+		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
 		
-		 [-99995] = BATTLE_PET_BREED_QUALITY1,			-- "Poor";
-		 [-99996] = BATTLE_PET_BREED_QUALITY2,			-- "Common";
-		 [-99997] = BATTLE_PET_BREED_QUALITY3,			-- "Uncommon";
-		 [-99998] = BATTLE_PET_BREED_QUALITY4,			-- "Rare";
-		 [-99999] = BATTLE_PET_BREED_QUALITY5,			-- "Epic";
-		[-100000] = BATTLE_PET_BREED_QUALITY6,			-- "Legendary";
-		[-100001] = ITEM_QUALITY6_DESC, 				-- Artifact
-		[-100002] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
+		--9000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
+		
+		[-90000] = "Lunarwing Shallows",
+		[-90001] = "Lostlight Grotto",
+		[-90002] = C_Map.GetAreaInfo(9655),							-- Krazzlefrazz Outpost
+		[-90003] = select(1,GetAchievementCriteriaInfo(12556,11)),	-- Waning Glacier
+		[-90004] = "Anyport",										-- Currently no localization calls
+		 
+		 
+		 
+		 
+		
+		
+		
 
 -- Custom Subzone Names that we can't pull from the API because Blizz hates us
   -- Val'sharah
-		[-101801] = "Lunarwing Shallows",
-		[-101802] = "Lostlight Grotto",
+		
 
 	},
 
@@ -2661,8 +2674,8 @@ AllTheThings.Locales.enUS = {
 		[297893] = select(1,GetAchievementCriteriaInfo(12995,5)), -- Runebound Coffer
 		[298920] = select(1,GetAchievementCriteriaInfo(12995,10)), -- Stolen Thornspeaker Cache
 		[298858] = "Wanted Poster",
-		
-		
+		[298849] = "Wanted Poster",
+		[288214] = "Wanted Poster",
 		
 		
 		[9999999] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Start with this one and go down the list when entering.

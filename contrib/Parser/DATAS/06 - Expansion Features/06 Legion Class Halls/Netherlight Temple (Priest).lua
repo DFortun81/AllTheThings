@@ -125,7 +125,7 @@ _.ExpansionFeatures =
 						h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 					}),
 					n(-17, { -- Quests
-						n(-100001, { -- Artifact
+						n(-10067, { -- Artifact
 							qh(40705, { -- Priestly Matters	
 								["groups"] = {
 								},

@@ -1454,14 +1454,6 @@ _.Zones =
 							["coord"] = { 45.0, 27.7 },
 							["sourceQuests"] = { 48963 },	-- Diversionary Tactics
 						}),
-						o(288214, {	-- Wanted Poster
-							q(51240, {	-- WANTED: Anchorface
-								["coord"] = { 19.5, 43.6 },
-								["sourceQuests"] = { 50978 },	-- Out With the Old Boss
-								-- Not required for "Drust Do It."
-								-- Wowhead says both factions can do this quest.  Other "Wanted" quests have separate versions for Horde/Alliance.  Needs confirmation.
-							}),
-						}),
 						o(290419, {	-- Wanted Poster
 							qa(51547, {	-- WANTED: Rindlewoe 
 								["coord"] = { 55.7, 34.9 },
@@ -1549,16 +1541,36 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests [H]
 					["groups"] = {
-						o(298858, {	-- Wanted Poster
+						n(-90004, {	-- Anyport
 							["groups"] = {
-								q(53456),	-- WANTED: The Rime Huntress
-								q(53458),	-- WANTED: The Rindlewoe
-								q(53459),	-- WANTED: Sister Lilias
+								o(288214, {	-- Wanted Poster
+									["groups"] = {
+										q(51240),	-- WANTED: Anchorface
+										q(53455),	-- WANTED: The Crimson Cutthroats
+									},
+									["coord"] = {
+										19.57, 43.65
+									},
+									["races"] = HORDE_ONLY,
+								}),
 							},
-							["coord"] = {
-								37.51, 25.8
+							["icon"] = "Interface\\Icons\\inv_drustvar",
+						}),
+						n(-90002, {	-- Krazzlefraz Outpost
+							["groups"] = {
+								o(298858, {	-- Wanted Poster
+									["groups"] = {
+										q(53456),	-- WANTED: The Rime Huntress
+										q(53458),	-- WANTED: The Rindlewoe
+										q(53459),	-- WANTED: Sister Lilias
+									},
+									["coord"] = {
+										37.51, 25.8
+									},
+									["races"] = HORDE_ONLY,
+								}),
 							},
-							["races"] = HORDE_ONLY,
+							["icon"] = "Interface\\Icons\\inv_drustvar",
 						}),
 					},
 				}),

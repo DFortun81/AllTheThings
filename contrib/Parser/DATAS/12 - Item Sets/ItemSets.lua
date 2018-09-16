@@ -5,7 +5,7 @@ _.GearSets =
 {
 	gsh(1522, { -- Allied Races
 	}),
-	n(-100001, { -- Artifacts
+	n(-10067, { -- Artifacts
 	}),
 	n(-5350, { -- Class Trial Item Sets
 	}),

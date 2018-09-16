@@ -135,8 +135,9 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Paths
-					fp(2052, { -- Anglepoint Wharf, Tiragarde Sound (Ferry)
+					fp(2052, { -- Anglepoint Wharf, Tiragarde Sound (Ferry) [A]
 						["coord"] = { 42, 30.6 },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(2074, { -- Bridgeport, Tiragarde Sound
 						["coord"] = { 75.8, 48.6 },
@@ -144,11 +145,14 @@ _.Zones =
 					fp(2077, { -- Castaway Point, Tiragarde Sound
 						["coord"] = { 86.4, 80.8 },
 					}),
-					fp(2104, { -- Eastpoint Station, Tiragarde Sound (Ferry)
+					fp(2104, { -- Eastpoint Station, Tiragarde Sound (Ferry) [A]
+						["description"] = "Eastpoint Station (Ferry)",
 						["coord"] = { 74.2, 44.2 },
+						["races"] = ALLIANCE_ONLY,
 					}),
-					fp(2054, { -- Firebreaker Expedition, Tiragarde Sound (Ferry)
+					fp(2054, { -- Firebreaker Expedition, Tiragarde Sound (Ferry) [A]
 						["coord"] = { 63.8, 30.2 },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(2023, { -- Freehold, Tiragarde Sound
 						["coord"] = { 77.8, 82.8 },
@@ -162,8 +166,9 @@ _.Zones =
 					fp(2084, { -- Norwington Estate, Tiragarde Sound
 						["coord"] = { 52.8, 28.8 },
 					}),
-					fp(2053, { -- Old Drust Road, Tiragarde Sound (Ferry)
+					fp(2053, { -- Old Drust Road, Tiragarde Sound (Ferry) [A]
 						["coord"] = { 54, 53.2 },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(2087, { -- Outrigger Post, Tiragarde Sound
 						["coord"] = { 35.6, 24.8 },
@@ -174,8 +179,9 @@ _.Zones =
 					fp(2102, { -- Roughneck Camp, Tiragarde Sound
 						["coord"] = { 42.4, 23.0 },
 					}),
-					fp(2055, { -- Southwind Station, Tiragarde Sound (Ferry)
+					fp(2055, { -- Southwind Station, Tiragarde Sound (Ferry) [A]
 						["coord"] = { 66.6, 49.8 },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(2279, { -- Stonefist Watch, Tiragarde Sound
 						["coord"] = { 53.2, 63 },
@@ -208,8 +214,8 @@ _.Zones =
 						p(2381),	-- Shack Crab
 					},
 				}),
-				n(-17, {	-- Quests
-					["groups"] = {
+				n(-17, {	-- Quests [A]
+					["groups"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
 						--[[
 						a(ach(12473, {	-- A Sound Plan
 							crit(1),		-- The Ashvane Trading Company
@@ -807,10 +813,26 @@ _.Zones =
 						i(158294),	-- Hollowbeak Hunting Rifle
 						}),
 						--]]
-
-
+					}),
+				}),
+				n(-17, {	-- Quests [H]
+					["groups"] = {
+						n(-90003, {	-- Waning Glacier
+							["groups"] = {
+								o(298849, {	-- Wanted Poster
+									["groups"] = {
+										q(53451),	-- WANTED: Raging Earthguard
+										q(53454),	-- WANTED: Quartermaster Ssylis
+									},
+									["coord"] = {
+										39.75, 17.89
+									},
+									["races"] = HORDE_ONLY,
+								}),
+							},
+							["icon"] = "Interface\\Icons\\inv_tourofdutytiragardesound",
+						}),
 					},
-					["races"] = ALLIANCE_ONLY,
 				}),
 				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the information on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.

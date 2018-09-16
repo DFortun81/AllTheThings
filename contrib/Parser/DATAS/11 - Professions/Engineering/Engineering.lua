@@ -201,7 +201,7 @@ profession(202, { -- Engineering
 		i(132501),	-- Tactical Headgun
 		i(144331),	-- Tailored Skullblasters
 	}),
-	n(-100002, { -- PLACE_HOLDER
+	n(-10068, { -- PLACE_HOLDER
 		i(136700),	-- Schematic: "The Felic"
 		i(13310),	-- Schematic: Accurate Scope
 		i(23799),	-- Schematic: Adamantite Rifle

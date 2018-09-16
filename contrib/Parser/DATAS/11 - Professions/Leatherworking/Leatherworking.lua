@@ -824,7 +824,7 @@ profession(165, { -- Leatherworking
 			i(162766), -- Recipe: Recurve Bow of the Strands (Rank 3) (Horde Only)
 		}),
 	}),
-	n(-100002, { -- PLACE_HOLDER		
+	n(-10068, { -- PLACE_HOLDER		
 		i(132123),	-- Pattern: Battlebound Warhelm			
 		i(137900),	-- Recipe: Battlebound Armbands
 		i(137908),	-- Recipe: Battlebound Armbands

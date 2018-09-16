@@ -618,7 +618,7 @@ _.Zones =
 						}),
 					}),
 					prof(356, { -- Fishing
-						n(-100001, { 	-- Artifact
+						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,
 							["groups"] = {
@@ -1085,14 +1085,14 @@ _.Zones =
 							}),
 							]]--
 						}),
-						n(-101802, { -- Lostlight Grotto
+						n(-90001, { -- Lostlight Grotto
 							q(42747),	-- Where the Wildkin Are
 							q(42748),	-- Emerald Sisters
 							q(42750),	-- Dreamcatcher
 							q(42786),	-- Grotesque Remains
 							q(42751),	-- Moon Reaver
 						}),
-						n(-101801, { -- Lunarwing Shallows
+						n(-90000, { -- Lunarwing Shallows
 							q(38889,  {  -- Adopting the Adorable
 								["groups"] = {
 									i(128690), -- Ashmaw Cub
