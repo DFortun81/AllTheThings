@@ -1065,7 +1065,7 @@ i(155430),
 								i(161773),	-- Reins of the Alabaster Hyena*
 								i(163211),	-- Akunda's Firesticks*
 								i(159753),	-- Desert Flute*
-								-- i(163565),	-- Vulpera Scrapper's Armor [Was in beta, not there on 8/12/18]
+								un(1, i(163565)),	-- Vulpera Scrapper's Armor [Was in beta, not there on 8/12/18]
 								un(1, i(161531))	,	-- Akunda's Grounding Boots [Was in beta, not there on 9/16/18]
 								i(165245),	-- Akunda's Grounding Girdle*
 								un(1, i(161489)),	-- Alpaca Wool Gloves [Was in beta, not there on 9/16/18]

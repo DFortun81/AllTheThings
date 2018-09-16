@@ -220,8 +220,6 @@ profession(202, { -- Engineering
 		i(162731),	-- Schematic: AZ3-R1-T3 Gearspun Goggles
 		i(162329),	-- Schematic: AZ3-R1-T3 Orthogonal Optics
 		i(162330),	-- Schematic: AZ3-R1-T3 Orthogonal Optics
-		i(162734),	-- Schematic: AZ3-R1-T3 Orthogonal Optics
-		i(162735),	-- Schematic: AZ3-R1-T3 Orthogonal Optics
 		i(162728),	-- Schematic: AZ3-R1-T3 Synthetic Specs
 		i(162729),	-- Schematic: AZ3-R1-T3 Synthetic Specs
 		i(127721),	-- Schematic: Bi-Directional Fizzle Reducer

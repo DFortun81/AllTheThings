@@ -898,8 +898,6 @@ profession(165, { -- Leatherworking
 		i(162400),	-- Recipe: Mistscale Boots
 		i(162401),	-- Recipe: Mistscale Greaves
 		i(162413),	-- Recipe: Mistscale Knuckles
-		i(162767),	-- Recipe: Mistscale Knuckles		
-		i(162419),	-- Recipe: REUSE ME (DNT)				
 		i(137869),	-- Recipe: Warhide Belt
 		i(137881),	-- Recipe: Warhide Belt
 		i(137876),	-- Recipe: Warhide Bindings

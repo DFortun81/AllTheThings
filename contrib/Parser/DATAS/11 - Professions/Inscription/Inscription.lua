@@ -91,7 +91,6 @@ profession(773, { -- Inscription
 		i(162363),	-- Recipe: Contract: Storm's Wake
 		i(162364),	-- Recipe: Contract: Storm's Wake
 		i(162368),	-- Recipe: Contract: Talanji's Expedition
-		i(162754),	-- Recipe: Contract: Talanji's Expedition
 		i(162372),	-- Recipe: Contract: Tortollan Seekers
 		i(162370),	-- Recipe: Contract: Voldunai
 		i(162366),	-- Recipe: Contract: Zandalari Empire
