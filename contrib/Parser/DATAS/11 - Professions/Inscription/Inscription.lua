@@ -94,7 +94,6 @@ profession(773, { -- Inscription
 		i(162372),	-- Recipe: Contract: Tortollan Seekers
 		i(162370),	-- Recipe: Contract: Voldunai
 		i(162366),	-- Recipe: Contract: Zandalari Empire
-		i(162753),	-- Recipe: Contract: Zandalari Empire
 		i(162353),	-- Recipe: Honorable Combatant's Etched Vessel
 		i(162354),	-- Recipe: Honorable Combatant's Etched Vessel
 		i(162355),	-- Recipe: Inked Vessel of Robust Regeneration

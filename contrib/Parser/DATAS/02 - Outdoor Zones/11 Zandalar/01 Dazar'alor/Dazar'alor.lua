@@ -667,64 +667,64 @@ _.Zones =
 						}),
 						n(131287, {	-- Natal'hakata <Zandalari Empire Emissary
 							["groups"] = {
-								i(160546),	-- Tabard of the Zandalari Empire
-								i(161665),	-- Reins of the Cobalt Pterrordax
-								i(163210),	-- Party Totem
-								i(161516),	-- Bindings of the Disparate Tribes
-								i(161497),	-- Cord of the Loa Worshippers
-								i(161548),	-- Gonk Adherents Vambraces
-								i(161526),	-- Gral Worshipper's Waders
-								i(161546),	-- Grand Fleet Legplates
-								i(161500),	-- Shadraspun Legwraps
-								i(161524),	-- Torcali's Grips of the Bounty
-								i(161517),	-- Waistcord of Pa'ku's Flight
-								i(160530),	-- Dinomancer's Cloak
-								i(162764, {	-- Design: Laribole Staff of Alacrity [Rank 3]
+								i(160546),	-- Tabard of the Zandalari Empire*
+								i(161665),	-- Reins of the Cobalt Pterrordax*
+								i(163210),	-- Party Totem*
+								i(161516),	-- Bindings of the Disparate Tribes*
+								i(161497),	-- Cord of the Loa Worshippers*
+								i(161548),	-- Gonk Adherents Vambraces*
+								i(161526),	-- Gral Worshipper's Waders*
+								i(161546),	-- Grand Fleet Legplates*
+								i(161500),	-- Shadraspun Legwraps*
+								i(161524),	-- Torcali's Grips of the Bounty*
+								i(161517),	-- Waistcord of Pa'ku's Flight*
+								i(160530),	-- Dinomancer's Cloak*
+								i(162764, {	-- Design: Laribole Staff of Alacrity [Rank 3]*
 									["spellID"] = 256257,
 								}),
-								i(162761, {	-- Design: Owlseye Loop [Rank 3]
+								i(162761, {	-- Design: Owlseye Loop [Rank 3]*
 									["spellID"] = 256517,
 								}),
-								i(162765, {	-- Design: Scarlet Diamond Staff of Intuition [Rank 3]
+								i(162765, {	-- Design: Scarlet Diamond Staff of Intuition [Rank 3]*
 									["spellID"] = 256260,
 								}),
-								i(162717, {	-- Formula: Enchant Ring - Pact of Haste [Rank 3]
+								i(162717, {	-- Formula: Enchant Ring - Pact of Haste [Rank 3]*
 									["spellID"] = 255099,
 								}),
-								i(162722, {	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3]
+								i(162722, {	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3]*
 									["spellID"] = 268909,
 								}),
-								i(162721, {	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]
+								i(162721, {	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]*
 									["spellID"] = 268915,
 								}),
-								i(163317, {	-- Recipe: Battle Potion of Stamina [Rank 3]
+								i(163317, {	-- Recipe: Battle Potion of Stamina [Rank 3]*
 									["spellID"] = 279167,
 								}),
-								i(162704, {	-- Recipe: Coastal Healing Potion [Rank 3]
+								i(162704, {	-- Recipe: Coastal Healing Potion [Rank 3]*
 									["spellID"] = 252384,
 								}),
-								i(162753, {	-- Recipe: Contract: Zandalari Empire [Rank 2]
+								i(162753, {	-- Recipe: Contract: Zandalari Empire [Rank 2]*
 									["spellID"] = 256285,
 								}),
-								i(162696, {	-- Recipe: Flask of Endless Fathoms [Rank 3]
+								i(162696, {	-- Recipe: Flask of Endless Fathoms [Rank 3]*
 									["spellID"] = 252353,
 								}),
-								i(162692, {	-- Recipe: Potion of Replenishment [Rank 3]
+								i(162692, {	-- Recipe: Potion of Replenishment [Rank 3]*
 									["spellID"] = 252340,
 								}),
-								i(162730, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]
+								i(162730, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]*
 									["spellID"] = 272060,
 								}),
-								i(162731, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]
+								i(162731, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]*
 									["spellID"] = 272061,
 								}),
-								i(162743, {	-- Schematic: Deployable Attire Rearranger [Rank 3]
+								i(162743, {	-- Schematic: Deployable Attire Rearranger [Rank 3]*
 									["spellID"] = 256156,
 								}),
-								i(162742, {	-- Schematic: Interdimensional Companion Repository [Rank 3]
+								i(162742, {	-- Schematic: Interdimensional Companion Repository [Rank 3]*
 									["spellID"] = 256084,
 								}),
-								i(162741, {	-- Schematic: Organic Discombobulation Grenade [Rank 3]
+								i(162741, {	-- Schematic: Organic Discombobulation Grenade [Rank 3]*
 									["spellID"] = 255409,
 								}),
 							},
@@ -1293,7 +1293,9 @@ _.Zones =
 			["isRaid"] = true,
 			["achievementID"] = 12559,	-- Explore Zuldazar
 			["lvl"] = 108,
-			["maps"] = { 
+			["maps"] = {
+				--1163,	-- Dazar'alor
+				1164,	-- Dazar'alor
 				1165,	-- Dazar'alor
 			},
 			["description"] = "|cff66ccffDazar'alor is King Rastakhan's palace in Zuldazar. The Great Seal, in its interior chamber, serves as the Horde's embassy on Zandalar and includes some portals to each major city and expansions, profession trainers, bank and guild banks, transmogifier and a mission table.|r",
