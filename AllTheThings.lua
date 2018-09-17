@@ -899,6 +899,11 @@ local function GetSourceID(itemLink, itemID)
 	end
 	return nil, false;
 end
+app.IsComplete = function(o)
+	if o.total then return o.total == o.progress; end
+	if o.collectible then return o.collected; end
+	if o.trackable then return o.saved; end
+end
 app.GetSourceID = GetSourceID;
 app.MaximumItemInfoRetries = 400;
 local function SetPortraitIcon(self, data, x)
@@ -1074,8 +1079,8 @@ local function GetCachedSearchResults(search, method, ...)
 					local count = 0;
 					local abbrevs = L("ABBREVIATIONS");
 					for i,j in ipairs(group) do
-						if j.parent and not j.parent.hideText and j.parent.parent 
-							and (GetDataMember("ShowCompleteSourceLocations") or (not j.collected and not j.parent.saved)) then
+						if j.parent and not j.parent.hideText and j.parent.parent
+							and (GetDataMember("ShowCompleteSourceLocations") or not app.IsComplete(j)) then
 							local text = BuildSourceText(j, 0, j.qgs);
 							for source,replacement in pairs(abbrevs) do
 								text = string.gsub(text, source,replacement);
