@@ -1113,21 +1113,37 @@ _.Zones =
 								i(163036, {	-- Polished Pet Charm*
 									i(163501),	-- Tragg the Curious
 								}),
-								i(165242),	-- Bracers of the Swamp Hunter*
+								i(165242, {	-- Bracers of the Swamp Hunter*
+									["f"] = 6,	-- Mail
+								}),
 								un(1, i(161538)),	-- Gloomplate Gauntlets [Was in beta, not there on 8/12/18]
-								i(165248),	-- Gloomplate Girdle*
+								i(165248, {	-- Gloomplate Girdle*
+									["f"] = 7,	-- Plate
+								}),
 								un(1, i(161528)),	-- Grips of the Swamp Hunter [Was in beta, not there on 9/16/18]
-								i(165240),	-- Hir'eek Hide Cuffs*
+								i(165240, {	-- Hir'eek Hide Cuffs*
+									["f"] = 5,	-- Leather
+								}),
 								un(1, i(161520)),	-- Hir'eek Hide Leggings [Was in beta, not there on 9/16/18]
-								i(165234),	-- Swamp Medic's Gloves*
+								i(165234, {	-- Swamp Medic's Gloves*
+									["f"] = 4,	-- Cloth
+								}),
 								un(1, i(161493)),	-- Swamp Medic's Leggings [Was in beta, not there on 9/16/18]
 								un(1, i(161506)),	-- Swampstalker Footpads [Was in beta, not there on 9/16/18]
-								i(165239),	-- Swampstalker Leggings*
-								i(165244),	-- Torga Scale Boots*
+								i(165239, {	-- Swampstalker Leggings*
+									["f"] = 5,	-- Leather
+								}),
+								i(165244, {	-- Torga Scale Boots*
+									["f"] = 6,	-- Mail
+								}),
 								un(1, i(161536)),	-- Torga Scale Girdle [Was in beta, not there on 9/16/18]
 								un(1, i(161492)),	-- Zo'bal Spirit Gloves [Was in beta, not there on 9/16/18]
-								i(165237),	-- Zo'bal Spirit Sash
-								i(165247),	-- Zul'jan Camp Gauntlets*
+								i(165237, {	-- Zo'bal Spirit Sash
+									["f"] = 4,	-- Cloth
+								}),
+								i(165247, {	-- Zul'jan Camp Gauntlets*
+									["f"] = 7,	-- Plate
+								}),
 								un(1, i(161551)),	-- Zul'jan Camp Stalkers [Was in beta, not there on 9/16/18]
 								i(160531),	-- Drape of the Blood Purge*
 								i(162762, {	-- Design: Tidal Amethyst Loop [Rank 3]*

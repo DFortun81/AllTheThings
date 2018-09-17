@@ -995,12 +995,6 @@ _.Zones =
 							}),
 							["questID"] = 48806,
 						}),
-						n(139287, {	-- Sawtooth
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								i(155273),	-- Shartook Hatchet
-							}),
-							["questID"] = 51877,
-						}),
 						n(139285, {	-- Shiverscale the Toxic
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155278),	-- Shiverscale Spellknife
@@ -1442,12 +1436,6 @@ _.Zones =
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
 								q(51656, {	-- Saurolisk Tamer Mugg
-									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
-								}),
-								q(51893, {	-- Sawtooth
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]

@@ -1000,21 +1000,37 @@ i(155430),
 								i(163211),	-- Akunda's Firesticks*
 								i(159753),	-- Desert Flute*
 								un(1, i(163565)),	-- Vulpera Scrapper's Armor [Was in beta, not there on 8/12/18]
-								un(1, i(161531))	,	-- Akunda's Grounding Boots [Was in beta, not there on 9/16/18]
-								i(165245),	-- Akunda's Grounding Girdle*
+								un(1, i(161531)),	-- Akunda's Grounding Boots [Was in beta, not there on 9/16/18]
+								i(165245, {	-- Akunda's Grounding Girdle*
+									["f"] = 6,	-- Mail
+								}),
 								un(1, i(161489)),	-- Alpaca Wool Gloves [Was in beta, not there on 9/16/18]
-								i(165236),	-- Alpaca Wool Leggings*
+								i(165236, {	-- Alpaca Wool Leggings*
+									["f"] = 4,	-- Cloth
+								}),
 								un(1, i(161527)),	-- Bracers of Zem'lan [Was in beta, not there on 9/16/18]
 								un(1, i(161542)),	-- Gauntlets of the Scorched Sands [Was in beta, not there on 9/16/18]
-								i(165246),	-- Gauntlets of Scavenged Plates*
+								i(165246, {	-- Gauntlets of Scavenged Plates*
+									["f"] = 7,	-- Plate
+								}),
 								un(1, i(161545)),	-- Girdle of Scavenged Plates [Was in beta, not there on 9/16/18]
-								i(165235),	-- Gloves of the Scaled Devotd*
-								i(165243),	-- Grips of Zem'lan*
+								i(165235, {	-- Gloves of the Scaled Devoted*
+									["f"] = 4,	-- Cloth
+								}),
+								i(165243, {	-- Grips of Zem'lan*
+									["f"] = 6,	-- Mail
+								}),
 								un(1, i(161511)),	-- Kimbul's Cuffs of Redemption [Was in beta, not there on 9/16/18]
-								i(165241),	-- Kimbul's Leggings of Redemption*
+								i(165241, {	-- Kimbul's Leggings of Redemption*
+									["f"] = 5,	-- Leather
+								}),
 								un(1, i(161502)),	-- Sash of the Scaled Devoted [Was in beta, not there on 9/16/18]
-								i(165249),	-- Scorched Sandstalkers*
-								i(165238),	-- Silent Scavenger Footpads*
+								i(165249, {	-- Scorched Sandstalkers*
+									["f"] = 7,	-- Plate
+								}),
+								i(165238,{	-- Silent Scavenger Footpads*
+									["f"] = 5,	-- Leather
+								}),
 								un(1, i(161507)),	-- Silent Scavenger Leggings [Was in beta, not there on 9/16/18]
 								i(160529),	-- Dune Shroud*
 								i(161999),	-- Pack of Many Pockets*
