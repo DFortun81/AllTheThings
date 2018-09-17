@@ -98,8 +98,7 @@ profession(165, { -- Leatherworking
 			i(2407), -- Pattern: White Leather Jerkin
 			un(8, i(15573)), -- Pattern: Wicked Leather Armor
 			un(8, i(15768)), -- Pattern: Wicked Leather Belt
-			un(8, i(19052)), -- Pattern: Wicked Leather Bracers
-			un(8, i(15725)), -- Pattern: Wicked Leather Gauntlets
+			un(8, i(19052)), -- Pattern: Wicked Leather Bracers			
 			un(8, i(15744)), -- Pattern: Wicked Leather Headband
 			un(8, i(15757)), -- Pattern: Wicked Leather Pants
 		}),	
@@ -238,7 +237,8 @@ profession(165, { -- Leatherworking
 			un(8, i(15742)), -- Pattern: Warbear Harness
 			i(20253), -- Pattern: Warbear Harness
 			un(8, i(15754)), -- Pattern: Warbear Woolies
-			i(20254), -- Pattern: Warbear Woolies	
+			i(20254), -- Pattern: Warbear Woolies
+			i(15725), -- Pattern: Wicked Leather Gauntlets
 		}),
 	}),
 	tier(2, { 	-- The Burning Crusade
