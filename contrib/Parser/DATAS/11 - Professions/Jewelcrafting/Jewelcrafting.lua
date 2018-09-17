@@ -333,7 +333,6 @@ profession(755, { -- Jewelcrafting
 		i(24161),	-- Design: Khorium Band of Leaves
 		i(24158),	-- Design: Khorium Band of Shadows
 		i(24160),	-- Design: Khorium Inferno Band
-		i(162382),	-- Design: Laribole Staff of Alacrity
 		i(52429),	-- Design: Lightning Dream Emerald
 		i(71889),	-- Design: Lightning Elven Peridot
 		i(46909),	-- Design: Lightning Eye of Zul
@@ -385,7 +384,6 @@ profession(755, { -- Jewelcrafting
 		i(41698),	-- Design: Nimble Forest Emerald
 		i(52379),	-- Design: Nimble Jasper
 		i(21948),	-- Design: Opal Necklace of Impact
-		i(162379),	-- Design: Owlseye Loop
 		i(24174),	-- Design: Pendant of Frozen Flame
 		i(24177),	-- Design: Pendant of Shadow's End
 		i(35201),	-- Design: Pendant of Sunfire
@@ -531,7 +529,6 @@ profession(755, { -- Jewelcrafting
 		i(43320),	-- Design: Ring of Northern Tears
 		i(43318),	-- Design: Ring of Scarlet Shadows
 		i(52462),	-- Design: Ring of Warring Elements
-		i(162381),	-- Design: Royal Quartz Loop
 		i(21942),	-- Design: Ruby Crown of Restoration
 		i(83931),	-- Design: Ruby Panther
 		i(21949),	-- Design: Ruby Serpent
@@ -543,7 +540,6 @@ profession(755, { -- Jewelcrafting
 		i(83932),	-- Design: Sapphire Panther
 		i(43497),	-- Design: Savage Titanium Band
 		i(43485),	-- Design: Savage Titanium Ring
-		i(162385),	-- Design: Scarlet Diamond Staff of Intuition
 		i(52432),	-- Design: Sensei's Dream Emerald
 		i(71890),	-- Design: Sensei's Elven Peridot
 		i(95470),	-- Design: Serpent's Heart

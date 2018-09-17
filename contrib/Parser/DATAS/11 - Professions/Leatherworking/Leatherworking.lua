@@ -897,7 +897,6 @@ profession(165, { -- Leatherworking
 		i(162501),	-- Recipe: Imbued Tempest Leggings				
 		i(162400),	-- Recipe: Mistscale Boots
 		i(162401),	-- Recipe: Mistscale Greaves
-		i(162413),	-- Recipe: Mistscale Knuckles
 		i(137869),	-- Recipe: Warhide Belt
 		i(137881),	-- Recipe: Warhide Belt
 		i(137876),	-- Recipe: Warhide Bindings

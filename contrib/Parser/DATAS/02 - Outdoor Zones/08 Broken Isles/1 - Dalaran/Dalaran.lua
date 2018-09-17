@@ -4259,7 +4259,7 @@ _.Zones =
 						i(44820), -- Red Ribbon Pet Leash Toy
 					}),
 					a(n(119484, { -- Captain Roberts <Legion Elite Gladiator>
-						i(147778),	-- Enchanter's Illusion - Demonic Tyranny
+						un(2, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
 						i(139775),	-- Alliance Enthusiast
 						i(142379),	-- Dutiful Squire
 						un(14, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
@@ -4270,8 +4270,8 @@ _.Zones =
 						un(14, i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
 						un(14, i(149447)),	-- Dominant Gladiator's Tabard [Elite Rating]
 						un(14, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
-						i(149451),	-- Demonic Gladiator's Tabard [Elite Rating]
-						i(149453),	-- Demonic Gladiator's Cloak [Elite Rating]
+						un(2, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
+						un(2, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
 						gssh(1391, { -- Elite
 							["groups"] = {
 								-- Legion { Legion Season 1 & 2
@@ -6532,7 +6532,7 @@ _.Zones =
 						i(53852),	-- Embroidered Shirt
 					}),
 					nh(119272, { -- Sarah the Savage <Legion Elite Gladiator>
-						i(147778),	-- Enchanter's Illusion - Demonic Tyranny
+						un(2, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
 						i(142380),	-- Dutiful Gruntling
 						i(139776),	-- Horde Fanatic
 						un(14, i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating]
@@ -6543,8 +6543,8 @@ _.Zones =
 						un(14, i(149444)),	-- Fierce Gladiator's Cloak [Elite Rating]
 						un(14, i(149446)),	-- Dominant Gladiator's Tabard [Elite Rating]
 						un(14, i(149448)),	-- Dominant Gladiator's Cloak [Elite Rating]
-						i(149450),	-- Demonic Gladiator's Tabard [Elite Rating]
-						i(149452),	-- Demonic Gladiator's Cloak [Elite Rating]
+						un(2, i(149450)),	-- Demonic Gladiator's Tabard [Elite Rating]
+						un(2, i(149452)),	-- Demonic Gladiator's Cloak [Elite Rating]
 						gssh(1391, { -- Elite
 							["groups"] = {
 								-- LEGION { Legion Season 1 & 2

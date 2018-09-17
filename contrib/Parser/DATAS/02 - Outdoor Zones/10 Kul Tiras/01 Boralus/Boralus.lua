@@ -420,39 +420,54 @@ _.Zones =
 								}),
 							},
 						}),
-						a(ach(12582, {	-- Come Sail Away
+						a(ach(12582, {	-- Come Sail Away [Alliance]
 							["groups"] = {
-								a(q(51341, {	-- Daughter of the Sea
+								q(47189, {	-- A Nation Divided
+									["qg"] = 121235, -- Taelia
+									["sourceQuests"] = { 47186 }, -- Sanctum of Sages
+									["coord"] = {
+										68.1, 21.9
+									},
+									["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
+								}),
+								q(51341, {	-- Daughter of the Sea
 									["qg"] = 120922, -- Lady Jaina Proudmoore
 									["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
-									["coord"] = { 65.7, 50.6 },
-								})),
-								a(q(47099, {	-- Get Your Bearings
-									["qg"] = 121235, -- Taelia
-									["sourceQuests"] = { 47098 }, -- Out Like Flynn
-									-- If you skip the scenario, the SQ is just 46728 "The Nation of Kul Tiras."
-									["coord"] = { 75.7, 23.5 },
-								})),
-								a(q(46729, {	-- The Old Knight
-									["qg"] = 124630, -- Taelia
-									["sourceQuests"] = { 47099 }, -- Get Your Bearings
-									["coord"] = { 67.1, 15.3 },
-								})),
-								a(q(47186, {	-- Sanctum of Sages
-									["qg"] = 121235, -- Taelia
-									["sourceQuests"] = { 46729 }, -- The Old Knight
-									["coord"] = { 68.1, 21.9 },
-								})),
-								a(q(52128, {	-- Ferry Pass
+									["coord"] = {
+										65.7, 50.6
+									},
+								}),
+								q(52128, {	-- Ferry Pass
 									["qg"] = 122370, -- Cyrus Crestfall
 									["sourceQuests"] = { 47186 }, -- Sanctum of Sages
-									["coord"] = { 68.0, 21.9 },
-								})),
-								a(q(47189, {	-- A Nation Divided
+									["coord"] = {
+										68.0, 21.9
+									},
+								}),
+								q(47099, {	-- Get Your Bearings
 									["qg"] = 121235, -- Taelia
-									["sourceQuests"] = { 47186 }, -- Sanctum of Sages
-									["coord"] = { 68.1, 21.9 },
-								})),
+									["sourceQuests"] = {
+										47098,	-- Out Like Flynn
+										46728,	-- The Nation of Kul Tiras
+									}, 
+									["coord"] = { 
+										75.7, 23.5
+									},
+								}),
+								q(47186, {	-- Sanctum of Sages
+									["qg"] = 121235, -- Taelia
+									["sourceQuests"] = { 46729 }, -- The Old Knight
+									["coord"] = {
+										68.1, 21.9
+									},
+								}),
+								q(46729, {	-- The Old Knight
+									["qg"] = 124630, -- Taelia
+									["sourceQuests"] = { 47099 }, -- Get Your Bearings
+									["coord"] = {
+										67.1, 15.3
+									},
+								}),
 							},
 						})),
 						a(sz(12473, 4, {	-- A Sound Plan: Enemies Within

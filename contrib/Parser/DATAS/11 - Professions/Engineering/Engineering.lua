@@ -214,10 +214,6 @@ profession(202, { -- Engineering
 		i(137709),	-- Schematic: Auto-Hammer
 		i(137723),	-- Schematic: Auto-Hammer
 		i(89996),	-- Schematic: Autumn Flower Firework
-		i(162325),	-- Schematic: AZ3-R1-T3 Gearspun Goggles
-		i(162326),	-- Schematic: AZ3-R1-T3 Gearspun Goggles
-		i(162329),	-- Schematic: AZ3-R1-T3 Orthogonal Optics
-		i(162330),	-- Schematic: AZ3-R1-T3 Orthogonal Optics
 		i(127721),	-- Schematic: Bi-Directional Fizzle Reducer
 		i(18290),	-- Schematic: Biznicks 247x128 Accurascope
 		i(120267),	-- Schematic: Blackrock Rifling
@@ -253,7 +249,6 @@ profession(202, { -- Engineering
 		i(10602),	-- Schematic: Deadly Scope
 		i(10607),	-- Schematic: Deepdive Helmet
 		i(16050),	-- Schematic: Delicate Arcanite Converter
-		i(162342),	-- Schematic: Deployable Attire Rearranger
 		i(137705),	-- Schematic: Deployable Bullet Dispenser
 		i(137719),	-- Schematic: Deployable Bullet Dispenser
 		i(118493),	-- Schematic: Didi's Delicate Assembly
@@ -316,7 +311,6 @@ profession(202, { -- Engineering
 		i(13308),	-- Schematic: Ice Deflector
 		i(162321),	-- Schematic: Incendiary Ammunition
 		i(127739),	-- Schematic: Infrablue-Blocker Lenses
-		i(162341),	-- Schematic: Interdimensional Companion Repository
 		i(137691),	-- Schematic: Intra-Dalaran Wormhole Generator
 		i(137718),	-- Schematic: Ironsight Cranial Cannon
 		i(137704),	-- Schematic: Ironsight Cranial Cannon
@@ -363,7 +357,6 @@ profession(202, { -- Engineering
 		i(118498),	-- Schematic: Night-Vision Mechshades
 		i(118477),	-- Schematic: Oglethorpe's Missile Splitter
 		i(122546),	-- Schematic: Oglethorpe's Octagonal Lenses
-		i(162337),	-- Schematic: Organic Discombobulation Grenade
 		i(23802),	-- Schematic: Ornate Khorium Rifle
 		i(10606),	-- Schematic: Parachute Cloak
 		i(118487),	-- Schematic: Personal Hologram

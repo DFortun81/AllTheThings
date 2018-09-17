@@ -85,10 +85,8 @@ profession(773, { -- Inscription
 	}),
 	n(-10068, { -- PLACE_HOLDER
 		i(162358),	-- Recipe: Codex of the Quiet Mind
-		i(162361),	-- Recipe: Contract: Order of Embers
 		i(162362),	-- Recipe: Contract: Order of Embers
 		i(162360),	-- Recipe: Contract: Proudmoore Admiralty
-		i(162363),	-- Recipe: Contract: Storm's Wake
 		i(162364),	-- Recipe: Contract: Storm's Wake
 		i(162368),	-- Recipe: Contract: Talanji's Expedition
 		i(162372),	-- Recipe: Contract: Tortollan Seekers
