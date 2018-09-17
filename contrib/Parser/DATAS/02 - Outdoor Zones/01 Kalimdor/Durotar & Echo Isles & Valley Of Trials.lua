@@ -550,6 +550,12 @@ _.Zones =
 									["u"] = 40, -- Legacy Quest/Quest Item
 								}),
 							}),
+							un(40, qh(1843, {	-- Brutal Gauntlets
+								["groups"] = {
+									un(2, i(7129)),	-- Brutal Gauntlets
+								},
+								["classes"] = { 1 },	-- Warrior
+							})),
 							q(5648, { -- Garments of Spirituality
 								["groups"] = {
 									un(2, i(16606)), -- Juju Hex Robes

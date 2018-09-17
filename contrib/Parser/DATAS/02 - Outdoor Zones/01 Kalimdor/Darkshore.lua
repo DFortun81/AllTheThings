@@ -908,6 +908,12 @@ _.Zones =
 							un(40, q( 947, {	-- Cave Mushrooms
 								un(2, i(5610)),	-- Gustweld Cloak
 							})),
+							un(40, qa(6124, {	-- Curing the Sick
+								["groups"] = {
+									un(2, i(15866)),	-- Veildust Medicine Bag
+								},
+								["classes"] = { 11 },	-- Druid
+							})),
 							un(40, q(994, {		-- Escape Through Force
 								un(2, i(5609)),	-- Steadfast Cinch
 							})),

@@ -617,6 +617,12 @@ _.Zones =
 								un(2, i(1304)),	-- Riding Gloves
 								un(2, i(1310)),	-- Smith's Trousers
 							})),
+							un(40, qa(1702, {	-- The Shieldsmith
+								["groups"] = {
+									un(2, i(6970)),	-- Furen's Favor
+								},
+								["classes"] = { 1 },	-- Warrior
+							})),
 							un(40, qa(122, {	-- Underbelly Scales
 								un(2, i(6092)),	-- Black Whelp Boots 
 								un(2, i(1302)),	-- Black Whelp Gloves

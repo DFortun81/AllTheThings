@@ -1124,8 +1124,12 @@ _.Zones =
 							un(2, i(13958)),	-- Wyrmthalak's Shackles
 						}))),
 					}),
-					--n(-16, {	-- Rares (Legacy)
-					--}),
+					n(-16, {	-- Rares (Legacy)
+						n(9046, {	-- Scarshield Quartermaster <Scarshield Legion>
+							un(2, i(13254)),	-- Astral Guard
+							un(2, i(13248)),	-- Burstshot Harquebus
+						}),
+					}),
 					--n(  0, {	-- Zone Drop (Legacy)
 					--}),
 				}),		

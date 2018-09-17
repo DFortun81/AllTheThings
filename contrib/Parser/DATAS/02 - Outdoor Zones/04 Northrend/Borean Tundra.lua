@@ -1390,6 +1390,12 @@ _.Zones =
 								["sourceQuest"] = 11918,
 							}),
 							q(11919, {	--  Drake Hunt
+								["groups"]	= {
+									i(37382),	-- Charred Drakehide Belt
+									i(37435),	-- Flame Infused Bindings
+									i(37513),	-- Helm of the Crimson Drakonid
+									i(37226),	-- Sweltering Robes
+								},
 								["qg"] = 26117,	-- Raelorasz
 								["sourceQuest"] = 11936,
 							}),

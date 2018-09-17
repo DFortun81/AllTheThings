@@ -3374,6 +3374,12 @@ Legacy				qh( 1436),	-- Alliance Relations
 								un(2, i(22109)),	-- Feralheart Cowl 
 								un(2, i(22113)),	-- Feralheart Vest
 							}))),
+							un(40, qh(8258, {	-- The Darkreaver Menace
+								["groups"] = {
+									un(2, i(20134)),	-- Skyfury Helm
+								},
+								["classes"] = { 7 },	-- Shaman
+							})),
 							un(40, qc4(q(1858, { 	-- The Shattered Hand
 								un(2, i(7298)),	-- Blade of Cunning
 							}))),

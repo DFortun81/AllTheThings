@@ -1180,6 +1180,12 @@ _.Zones =
 							un(40, qh(1848, {	-- Brutal Hauberk
 								un(2, i(7133)),	-- Brutal Hauberk
 							})),
+							un(40, qh(6129, {	-- Curing the Sick
+								["groups"] = {
+									un(2, i(15866)),	-- Veildust Medicine Bag
+								},
+								["classes"] = { 11 },	-- Druid
+							})),
 							un(40, qh(862, {	-- Dig Rat Stew
 								un(2, i(10919)),	-- Apothecary Gloves
 								i( 5487),	-- Recipe: Dig Rat Stew NOTE: This recipe is still available, only quest was retired
@@ -1224,6 +1230,13 @@ _.Zones =
 								un(2, i(59556)),	-- Shield of Inner Glow [Cata version of quest]
 								un(2, i(10821)),	-- Sower's Cloak [WotLK version of quest]
 							})),
+							un(40, qh(1946, {	-- Nether-lace Garment
+								["groups"] = {
+									un(2, i(7512)),	-- Nether-Lace Robe
+									un(2, i(9515)),	-- Nether-Lace Tunic
+								},
+								["classes"] = { 8 },	-- Mage
+							})),
 							un(40, qh(902, {	-- Samophlange
 								un(2, i(5324)),	-- Engineer's Hammer
 								un(2, i(5325)),	-- Welding Shield
@@ -1255,6 +1268,12 @@ _.Zones =
 									un(2, i(6900)),	-- Enchanted Gold Bloodrobe
 								},
 								["classes"] = { 9 },	-- Warlock
+							})),
+							un(40, qh(1824, {	-- Trial at the Field of Giants
+								["groups"] = {
+									un(2, i(7120)),	-- Ruga's Bulwark
+								},
+								["classes"] = { 1 },	-- Warrior
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)

@@ -715,8 +715,10 @@ _.Zones =
 								un(2, i(59013)),	-- Stonesmirk Breastplate
 							})),
 							un(40, qa(257, { -- A Hunter's Boast
+								un(2, i(59004)),	-- Daryl's Bow
 								un(2, i(2903)),	-- Daryl's Hunting Bow 
 								un(2, i(2904)),	-- Daryl's Hunting Rifle
+								un(2, i(59003)),	-- Daryl's Rifle
 							})),
 							un(40, qa(258, { -- A Hunter's Challenge
 								un(2, i(59000)),	-- Daryl's Axe

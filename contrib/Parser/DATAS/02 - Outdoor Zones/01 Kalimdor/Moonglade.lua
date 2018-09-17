@@ -191,6 +191,18 @@ _.Zones =
 							["u"] = 40,	-- LEGACY
 							["lvl"] = 56,
 						},
+						un(40, qa(5061,	{ -- Aquatic Form
+							["groups"] = {
+								un(2, i(16608)),	-- Aquarius Belt
+							},
+							["classes"] = { 11 },	-- Druid
+						})),
+						un(40, qh(31,	{ -- Aquatic Form
+							["groups"] = {
+								un(2, i(16608)),	-- Aquarius Belt
+							},
+							["classes"] = { 11 },	-- Druid
+						})),
 						{
 							["questID"] = 40962,	-- Dark Waters
 							["qg"] = 102432,	-- Malfurion Stormrage

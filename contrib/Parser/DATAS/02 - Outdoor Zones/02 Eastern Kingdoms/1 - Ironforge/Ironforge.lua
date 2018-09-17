@@ -820,6 +820,12 @@ _.Zones =
 								un(2, i(22106)), 	-- Feralheart Belt
 								un(2, i(22110)), 	-- Feralheart Gloves
 							}))),
+							un(40, qa(1709, {	-- Klockmort's Creation
+								["groups"] = {
+									un(2, i(6974)),	-- Fire Hardened Gauntlets
+								},
+								["classes"] = { 1 },	-- Warrior
+							})),
 							un(40, qa(1880, {	-- Mage-tastic Gizmonitor
 								["groups"] = {
 									un(2, i(7507)),	-- Arcane Orb

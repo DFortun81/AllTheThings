@@ -1349,6 +1349,14 @@ _.Zones =
 								un(2, i(33243)),	-- Skirmisher's Cover
 								un(2, i(33251)),	-- Steel-banded Hauberk
 							})),
+							un(40, q(1952, {	-- Mage's Wand
+								["groups"] = {
+									un(2, i(7514)),	-- Icefury Wand
+									un(2, i(11263)),	-- Nether Force Wand
+									un(2, i(7513)),	-- Ragefire Wand
+								},
+								["classes"] = { 8 },	-- Mage
+							})),
 							un(40, qh(11200, {	-- More than Coincidence
 								un(2, i(33272)),	-- Biting Axe
 								i(33268),	-- Bone Dirk NOTE: Item is still available from new version of quest

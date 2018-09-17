@@ -939,7 +939,7 @@ _.Zones =
 						n(-17, {	-- Quests (Legacy)
 							un(40, q(7583, {	-- Suppression
 								["groups"] = {
-									un(34, i(18602)),	-- Tome of Sacrifice
+									un(2, i(18602)),	-- Tome of Sacrifice
 								},
 								["classes"] = { 9 },	-- Warlock
 							})),

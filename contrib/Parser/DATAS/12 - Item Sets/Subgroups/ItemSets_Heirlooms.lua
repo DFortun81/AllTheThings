@@ -103,13 +103,13 @@ _.GearSets =
 			}),	
 			n(-318, { -- Armor
 				n(-322, { -- Back
-					i(62040), -- Ancient Bloodmoon Cloak
+					un(2, i(62040)), -- Ancient Bloodmoon Cloak
 					i(122262), -- Ancient Bloodmoon Cloak
-					i(62039), -- Inherited Cape of the Black Baron
+					un(2, i(62039)), -- Inherited Cape of the Black Baron
 					i(122261), -- Inherited Cape of the Black Baron
-					i(69892), -- Ripped Sandstorm Cloak
+					un(2, i(69892)), -- Ripped Sandstorm Cloak
 					i(122266), -- Ripped Sandstorm Cloak
-					i(62038), -- Worn Stoneskin Gargoyle Cape
+					un(2, i(62038)), -- Worn Stoneskin Gargoyle Cape
 					i(122260), -- Worn Stoneskin Gargoyle Cape
 				}),
 				n(-43, { -- Cloth
@@ -195,7 +195,7 @@ _.GearSets =
 					un(2, i(69890)), -- Burnished Pauldrons of Might
 					i(122388), -- Burnished Pauldrons of Might
 					un(2, i(93891)), -- Gleaming Breastplate of Valor
-					i(93890), -- Gleaming Spaulders of Valor
+					un(2, i(93890)), -- Gleaming Spaulders of Valor
 					un(2, i(93894)), -- Immaculate Lightforge Spaulders
 					un(2, i(48685)), -- Polished Breastplate of Valor
 					i(122381), -- Polished Breastplate of Valor
@@ -208,10 +208,10 @@ _.GearSets =
 					i(127010), -- Pristine Lightforge Breastplate
 					i(127012), -- Pristine Lightforge Helm
 					i(127011), -- Pristine Lightforge Legplates
-					i(44100), -- Pristine Lightforge Spaulders
+					un(2, i(44100)), -- Pristine Lightforge Spaulders
 					i(122373), -- Pristine Lightforge Spaulders
-					i(93895), -- Reinforced Stockade Pauldrons
-					i(44099), -- Strengthened Stockade Pauldrons
+					un(2, i(93895)), -- Reinforced Stockade Pauldrons
+					un(2, i(44099)), -- Strengthened Stockade Pauldrons
 					i(122372), -- Strengthened Stockade Pauldrons
 				}),
 			}),

@@ -625,6 +625,12 @@ _.Zones =
 								un(2, i(11870)),	-- Oblivion Orb
 								un(2, i(11871)),	-- Snarkshaw Spaulders
 							})),
+							un(40, qa(1711, {	-- Mathiel's Armor
+								["groups"] = {
+									un(2, i(6973)),	-- Fire Hardened Leggings
+								},
+								["classes"] = { 1 },	-- Warrior
+							})),
 							un(40, qa(1693, {	-- Weapons of Elunite
 								["groups"] = {
 									un(2, i(6966)),	-- Elunite Axe

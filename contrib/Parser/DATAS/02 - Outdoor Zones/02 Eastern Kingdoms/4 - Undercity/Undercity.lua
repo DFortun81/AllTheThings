@@ -760,6 +760,12 @@ _.Zones =
 								un(2, i(17039)),	-- Skullbreaker
 								un(2, i(17043)),	-- Zealot's Robe
 							}))),
+							un(40, qh(1847, {	-- Brutal Legguards
+								["groups"] = {
+									un(2, i(7132)),	-- Brutal Legguards
+								},
+								["classes"] = { 1 },	-- Warrior
+							})),
 							un(40, qh(515, {	-- Elixir of Agony
 								un(2, i(3749)),	-- High Apothecary Cloak
 								un(2, i(3747)),	-- Meditative Sash
