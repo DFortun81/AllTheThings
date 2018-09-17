@@ -152,6 +152,10 @@ _.Instances =
 								i( 43277),	-- Jedoga's Greatring
 							})),
 							cr(29311, e(584, {	-- Herald Volazj
+								{
+									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+									["criteriaID"] = 7,			-- Herald Volazj slain
+								},
 								i(37617),	-- Staff of Sinister Claws
 								i(37615),	-- Titanium Compound Bow
 								i(37619),	-- Wand of Ahn'kahet
@@ -164,7 +168,8 @@ _.Instances =
 								i(37618),	-- Greaves of Ancient Evil
 								i(35614),	-- Volazj's Sabatons
 							})),
-						}}),
+						},
+					}),
 					d( 24, {	-- Timewalking
 						["lvl"] = 70,
 						["groups"] = {

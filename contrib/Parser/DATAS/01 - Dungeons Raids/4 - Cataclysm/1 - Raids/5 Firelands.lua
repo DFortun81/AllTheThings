@@ -22,6 +22,7 @@ _.Instances =
 							86,	-- Orgrimmar: The Drag
 							129,	-- The Nexus
 							198,	-- Mount Hyjal
+							114,	-- Borean Tundra
 						},
 						["groups"] = {
 							{

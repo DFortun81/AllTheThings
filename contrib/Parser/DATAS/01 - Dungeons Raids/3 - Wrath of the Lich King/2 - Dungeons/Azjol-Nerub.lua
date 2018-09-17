@@ -55,10 +55,8 @@ _.Instances =
 							["qg"] = 55564,	-- Reclaimer A'zak
 						},
 					}),
-					d  (1, {	-- Normal
-						{
-							["achievementID"] = 480,	-- Azjol-Nerub
-						},
+					d(1, {		-- Normal
+						ach(480),	-- Azjol-Nerub
 						n(0, {		-- Zone Drop
 							i(35664, {	-- Unknown Archaeologist's Hammer
 								["crs"] = {
@@ -131,12 +129,10 @@ _.Instances =
 							i(35661),	-- Signet of Arachnathid Command
 						})),
 					}),
-					d(  2, {	-- Heroic
+					d(2, {		-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
-							{
-								["achievementID"] = 491,	-- Heroic: Azjol-Nerub
-							},
+							ach(491),	-- Heroic: Azjol-Nerub
 							n(0, {		-- Zone Drop
 								i(37243, {	-- Treasure Seeker's Belt
 									["crs"] = {
@@ -155,16 +151,16 @@ _.Instances =
 							}),
 							cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
 								{
-									["achievementID"] = 491,	-- Heroic: Azjol-Nerub
-									["criteriaID"] = 1,	-- Krik'thir the Gatewatcher slain
-								},
-								{
 									["achievementID"] = 1296,	-- Watch Him Die
 									["crs"] = {
 										28730,	-- Watcher Gashra
 										28729,	-- Watcher Narjil
 										28731,	-- Watcher Silthik
 									},
+								},
+								{
+									["achievementID"] = 491,	-- Heroic: Azjol-Nerub
+									["criteriaID"] = 1,	-- Krik'thir the Gatewatcher slain
 								},
 								i( 35655),	-- Cobweb Machete
 								i( 37216),	-- Facade Shield of Glyphs
@@ -176,12 +172,10 @@ _.Instances =
 								i( 37218),	-- Stone-Worn Footwraps
 							})),
 							cr(28921, e(586, {	-- Hadronox
+								ach(1297),	-- Hadronox Denied
 								{
 									["achievementID"] = 491,	-- Heroic: Azjol-Nerub
 									["criteriaID"] = 2,	-- Hadronox slain
-								},
-								{
-									["achievementID"] = 1297,	-- Hadronox Denied
 								},
 								i( 35658),	-- Life-Staff of the Web Lair
 								i( 35660),	-- Spinneret Epaulets
@@ -194,11 +188,15 @@ _.Instances =
 							})),
 							cr(29120, e(587, {	-- Anub'arak
 								{
+									["achievementID"] = 1860,	-- Gotta Go!
+								},
+								{
 									["achievementID"] = 491,	-- Heroic: Azjol-Nerub
 									["criteriaID"] = 3,	-- Anub'arak slain
 								},
 								{
-									["achievementID"] = 1860,	-- Gotta Go!
+									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+									["criteriaID"] = 4,			-- Anub'arak slain
 								},
 								i(37235),	-- Crypt Lord's Deft Blade
 								i(37238),	-- Rod of the Fallen Monarch

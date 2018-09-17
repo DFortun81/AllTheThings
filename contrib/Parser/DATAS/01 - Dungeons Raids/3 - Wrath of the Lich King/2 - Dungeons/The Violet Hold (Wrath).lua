@@ -152,6 +152,10 @@ _.Instances =
 								i( 43402),	-- The Obliterator Greaves
 							})),
 							cr(31134, e(632, {	-- Cyanigosa
+								{
+									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+									["criteriaID"] = 14,		-- Cyanigosa slain
+								},
 								i( 35649),	-- Jailer's Baton
 								i( 37883),	-- Staff of Trickery
 								i( 37875),	-- Spaulders of the Violet Hold

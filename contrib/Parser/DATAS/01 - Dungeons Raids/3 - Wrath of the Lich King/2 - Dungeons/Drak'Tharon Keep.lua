@@ -207,6 +207,10 @@ _.Instances =
 								i( 37723),	-- Incisor Fragment
 							})),
 							cr(26632, e(591, {	-- The Prophet Tharon'ja
+								{
+									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+									["criteriaID"] = 13,		-- The Prophet Tharon'ja slain
+								},
 								i(37733),	-- Mojo Masked Crusher
 								i(35636),	-- Tharon'ja's Aegis
 								i(35638),	-- Helmet of Living Flesh

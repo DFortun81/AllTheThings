@@ -19,14 +19,10 @@ _.Instances =
 							["qg"] = 26117,	-- Raelorasz
 						}),
 						q(13126, {	-- A Unified Front
-							["groups"] = {
-							},
 							["qg"] = 27658,	-- Belgaristrasz
 							["sourceQuest"] = 13124,
 						}),
 						q(13127, {	-- Mage-Lord Urom
-							["groups"] = {
-							},
 							["qg"] = 28012,	-- Image of Belgaristrasz
 							["sourceQuest"] = 13126,
 						}),
@@ -206,6 +202,10 @@ _.Instances =
 								i( 37264),	-- Pendulum of Telluric Currents
 							})),
 							cr(27656, e(625, {	-- Ley-Guardian Eregos
+								{
+									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+									["criteriaID"] = 9,			-- Ley-Guardian Eregos slain
+								},
 								i(36975),	-- Malygos' Favor
 								i(37360),	-- Staff of Draconic Combat
 								i(36962),	-- Wyrmclaw Battleaxe

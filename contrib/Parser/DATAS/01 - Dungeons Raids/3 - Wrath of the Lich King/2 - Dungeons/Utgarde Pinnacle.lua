@@ -143,6 +143,10 @@ _.Instances =
 								i(157560), 	-- Skadi's Scaled Boots
 							})),
 							cr(26861, e(644, {	-- King Ymiron
+								{
+									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+									["criteriaID"] = 11,		-- King Ymiron slain
+								},
 								i(37060),	-- Jeweled Coronation Sword
 								i(37401),	-- Red Sword of Courage
 								i(37065),	-- Ymiron's Blade

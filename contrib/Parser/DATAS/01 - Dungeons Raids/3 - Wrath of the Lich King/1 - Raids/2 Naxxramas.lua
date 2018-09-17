@@ -9,6 +9,18 @@ _.Instances =
 			inst(754, { 	-- Naxxramas
 				["groups"] = {
 					d(3, {	-- 10-Man
+						ach(578),	-- The Dedicated Few (10 player)
+						ach(576),	-- The Fall of Naxxramas (10 player)
+						{
+							["achievementID"] = 2187,	-- The Undying
+							["u"] = 4,	-- Legacy Achievement
+							["groups"] = {
+								{
+									["titleID"] = 109,	-- The Undying
+									["u"] = 37,	-- Removed From Game
+								},
+							},
+						},
 						n(0, {		-- Zone Drop
 							i(39467),	-- Minion Bracers
 							i(39427),	-- Omen of Ruin
@@ -18,8 +30,17 @@ _.Instances =
 							i(39470),	-- Medallion of the Disgraced
 						}),
 						n(-368, {	-- The Arachnid Quarter
+							ach(562),	-- The Arachnid Quarter (10 player)
 							cr(15956, e(1601, {	-- Anub'Rehkan
 								["groups"] = {
+									{
+										["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
+										["criteriaID"] = 1,	-- Anub'Rekhan slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 3,			-- Anub'Rehkan slain
+									},
 									i(39140),	-- Knife of Incision
 									i(39146),	-- Collar of Dissolution
 									i(39188),	-- Chivalric Chestguard
@@ -35,6 +56,15 @@ _.Instances =
 							})),
 							cr(15953, e(1602, {	-- Grand Widow Faerlina
 								["groups"] = {
+									ach(1997),	-- Momma Said Knock You Out (10 player)
+									{
+										["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
+										["criteriaID"] = 2,	-- Grand Widow Faerlina slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 6,			-- Grand Widow Faerlina slain
+									},
 									i(39200),	-- Grieving Spellblade
 									i(39199),	-- Watchful Eye
 									i(39198),	-- Frostblight Pauldrons
@@ -50,6 +80,15 @@ _.Instances =
 							})),
 							cr(15952, e(1603, {	-- Maexxna
 								["groups"] = {
+									ach(1858),	-- Arachnophobia (10 player)
+									{
+										["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
+										["criteriaID"] = 3,	-- Maexxna slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 7,			-- Maexxna slain
+									},
 									i(93030),	-- Dusty Clutch of Eggs (PET!)
 									i(39221),	-- Wraith Spear
 									i(39226),	-- Maexxna's Femur
@@ -66,8 +105,17 @@ _.Instances =
 							})),
 						}),
 						n(-370, { 	-- The Plague Quarter
+							ach(566),	-- The Plague Quarter (10 player)
 							cr(15954, e(1604, {	-- Noth the Plaguebringer
 								["groups"] = {
+									{
+										["achievementID"] = 566,	-- The Plague Quarter (10 player)
+										["criteriaID"] = 1,	-- Noth the Plaguebringer slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 14,		-- Noth the Plaguebringer slain
+									},
 									i(39240),	-- Noth's Curse
 									i(39237),	-- Spaulders of Resumed Battle
 									i(39241),	-- Dark Shroud of the Scourge
@@ -83,6 +131,15 @@ _.Instances =
 							})),
 							cr(15936, e(1605, {	-- Heigan the Unclean
 								["groups"] = {
+									ach(1996),	-- The Safety Dance (10 player)
+									{
+										["achievementID"] = 566,	-- The Plague Quarter (10 player)
+										["criteriaID"] = 2,	-- Heigan the Unclean slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 5,			-- Heigan the Unclean slain
+									},
 									i(39245),	-- Demise
 									i(39255),	-- Staff of the Plague Beast
 									i(39246),	-- Amulet of Autopsy
@@ -98,6 +155,15 @@ _.Instances =
 							})),
 							cr(16011, e(1606, {	-- Loatheb
 								["groups"] = {
+									ach(2182),	-- Spore Loser (10 player)
+									{
+										["achievementID"] = 566,	-- The Plague Quarter (10 player)
+										["criteriaID"] = 3,	-- Loatheb slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 9,			-- Loatheb slain
+									},
 									i(93032),	-- Blighted Spore (PET!)
 									i(40622, { -- Spaulders of the Lost Conqueror
 										i(39518),	-- Heroes' Shoulderpads of Faith
@@ -132,10 +198,19 @@ _.Instances =
 								},
 								["description"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself."
 							})),
-						}),	
+						}),
 						n(-369, { 	-- The Military Quarter
+							ach(568),	-- The Military Quarter (10 player)
 							cr(16061, e(1607, {	-- Instructor Razuvious
 								["groups"] = {
+									{
+										["achievementID"] = 568,	-- The Military Quarter (10 player)
+										["criteriaID"] = 1,	-- Instructor Razuvious slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 13,		-- Instructor Razuvious slain
+									},
 									i(39296),	-- Accursed Bow of the Elite
 									i(39311),	-- Scepter of Murmuring Spirits
 									i(39310),	-- Mantle of the Extensive Mind
@@ -151,6 +226,14 @@ _.Instances =
 							})),
 							cr(16060, e(1608, {	-- Gothik the Harvester
 								["groups"] = {
+									{
+										["achievementID"] = 568,	-- The Military Quarter (10 player)
+										["criteriaID"] = 2,	-- Gothik the Harvester slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 2,			-- Gothik the Harvester slain
+									},
 									i(39344),	-- Slayer of the Lifeless
 									i(39392),	-- Veiled Amulet of Life
 									i(39391),	-- Heinous Mail Chestguard
@@ -166,6 +249,11 @@ _.Instances =
 							})),
 							cr(30549, e(1609, {	-- The Four Horsemen
 								["groups"] = {
+									ach(2176),	-- And They Would All Go Down Together (10 player)
+									{
+										["achievementID"] = 568,	-- The Military Quarter (10 player)
+										["criteriaID"] = 3,	-- The Four Horsemen slain
+									},
 									i(40610, { -- Chestguard of the Lost Conqueror
 										i(39515),	-- Heroes' Robe of Faith
 										i(39629),	-- Heroes' Redemption Tunic
@@ -199,10 +287,20 @@ _.Instances =
 								},
 								["description"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place."
 							})),
-						}),	
+						}),
 						n(-367, { 	-- The Construct Quarter
+							ach(564),	-- The Construct Quarter (10 player)
 							cr(16028, e(1610, {	-- Patchwerk
 								["groups"] = {
+									ach(1856),	-- Make Quick Werk of Him (10 player)
+									{
+										["achievementID"] = 564,	-- The Construct Quarter (10 player)
+										["criteriaID"] = 1,	-- Patchwerk slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 12,		-- Patchwerk slain
+									},
 									i(39271),	-- Blade of Dormant Memories
 									i(39270),	-- Hatestrike
 									i(39267),	-- Abomination Shoulderblades
@@ -218,6 +316,14 @@ _.Instances =
 							})),
 							cr(15931, e(1611, {	-- Grobbulus
 								["groups"] = {
+									{
+										["achievementID"] = 564,	-- The Construct Quarter (10 player)
+										["criteriaID"] = 2,	-- Grobbulus slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 4,			-- Grobbulus slain
+									},
 									i(39281),	-- Infection Repulser
 									i(39276),	-- The Skull of Ruin
 									i(39282),	-- Bone-Linked Amulet
@@ -232,6 +338,15 @@ _.Instances =
 							})),
 							cr(15932, e(1612, {	-- Gluth
 								["groups"] = {
+									{
+										["achievementID"] = 564,	-- The Construct Quarter (10 player)
+										["criteriaID"] = 3,	-- Gluth slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 10,		-- Gluth slain
+									},
+									i(93029),	-- Gluth's Bone (PET!)
 									i(40610, { -- Chestguard of the Lost Conqueror
 										i(39515),	-- Heroes' Robe of Faith
 										i(39629),	-- Heroes' Redemption Tunic
@@ -257,7 +372,6 @@ _.Instances =
 										i(39554),	-- Heroes' Dreamwalker Raiments
 										i(39558),	-- Heroes' Bonescythe Breastplate
 									}),
-									i(93029),	-- Gluth's Bone (PET!)
 									i(40619, { -- Leggings of the Lost Conqueror
 										i(39636),	-- Heroes' Redemption Legplates
 										i(39641),	-- Heroes' Redemption Legguards
@@ -418,6 +532,16 @@ _.Instances =
 							})),
 							cr(15928, e(1613, {	-- Thaddius
 								["groups"] = {
+									ach(2178),	-- Shocking! (10 player)
+									ach(2180),	-- Subtraction (10 player)
+									{
+										["achievementID"] = 564,	-- The Construct Quarter (10 player)
+										["criteriaID"] = 4,	-- Thaddius slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 11,		-- Thaddius slain
+									},
 									i(40619, { -- Leggings of the Lost Conqueror
 										i(39636),	-- Heroes' Redemption Legplates
 										i(39641),	-- Heroes' Redemption Legguards
@@ -451,10 +575,16 @@ _.Instances =
 								},
 								["description"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh."
 							})),
-						}),		
+						}),
 						n(-371, { 	-- The Upper Necropolis
 							cr(15989, e(1614, {	-- Sapphiron
 								["groups"] = {
+									ach(572),	-- Sapphiron's Demise (10 player)
+									ach(2146),	-- The Hundred Club (10 player)
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 8,			-- Sapphiron slain
+									},
 									{
 										["itemID"] = 44569,		-- Key to the Focusing Iris (Item)
 										["questID"] = 13372,	-- The Key to the Focusing Iris (Quest)
@@ -474,6 +604,20 @@ _.Instances =
 							})),
 							cr(15990, e(1615, {	-- Kel'Thuzad
 								["groups"] = {
+									ach(574),	-- Kel'Thuzad's Defeat (10 player)
+									{
+										["achievementID"] = 2184,	-- Just Can't Get Enough (10 player)
+										["description"] = "Pull 1 abomintion from each section and then AOE them all when they get to you. Very easy achievement.",
+										["qg"] = 16428,	-- Unstoppable Abomination
+									},
+									{
+										["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+										["criteriaID"] = 2,			-- Kel'Thuzad (10 or 25 player) slain
+									},
+									{
+										["achievementID"] = 578,	-- The Dedicated Few (10 player)
+										["criteriaID"] = 1,			-- Kel'Thuzad slain
+									},
 									i(40616, { -- Helm of the Lost Conqueror
 										i(39635),	-- Heroes' Redemption Helm
 										i(39628),	-- Heroes' Redemption Headpiece
@@ -512,9 +656,21 @@ _.Instances =
 								},
 								["description"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects."
 							})),
-						}),								
+						}),
 					}),
 					d(4, {	-- 25-Man
+						ach(579),	-- The Dedicated Few (25 player)
+						ach(577),	-- The Fall of Naxxramas (25 player)
+						{
+							["achievementID"] = 2186,	-- The Immortal
+							["u"] = 4,	-- Legacy Achievement
+							["groups"] = {
+								{
+									["titleID"] = 108,	-- The Immortal
+									["u"] = 37,	-- Removed From Game
+								},
+							},
+						},
 						n(0, {		-- Zone Drop
 							i(40410),	-- Shadow of the Ghoul
 							i(40409),	-- Boots of the Escaped Captive
@@ -525,8 +681,17 @@ _.Instances =
 							i(40412),	-- Ousted Bead Necklace
 						}),
 						n(-368, { 	-- The Arachnid Quarter
+							ach(563),	-- The Arachnid Quarter (25 player)
 							cr(15956, e(1601, {	-- Anub'Rekhan
 								["groups"] = {
+									{
+										["achievementID"] = 563,	-- The Arachnid Quarter (25 player)
+										["criteriaID"] = 1,	-- Anub'Rekhan slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 1,			-- Anub'Rekhan slain
+									},
 									i(39714),	-- Webbed Death
 									i(39712),	-- Gemmed Wand of the Nerubians
 									i(39716),	-- Shield of Assimilation
@@ -555,6 +720,15 @@ _.Instances =
 							})),
 							cr(15953, e(1602, {	-- Grand Widow Faerlina
 								["groups"] = {
+									ach(2140),	-- Momma Said Knock You Out (25 player)
+									{
+										["achievementID"] = 563,	-- The Arachnid Quarter (25 player)
+										["criteriaID"] = 2,	-- Grand Widow Faerlina slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 5,			-- Grand Widow Faerlina slain
+									},
 									i(39730),	-- Widow's Fury
 									i(39732),	-- Faerlina's Madness
 									i(39723),	-- Fire-Scorched Greathelm
@@ -582,6 +756,15 @@ _.Instances =
 							})),
 							cr(15952, e(1603, {	-- Maexxna
 								["groups"] = {
+									ach(1859),	-- Arachnophobia (25 player)
+									{
+										["achievementID"] = 563,	-- The Arachnid Quarter (25 player)
+										["criteriaID"] = 3,	-- Maexxna slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 7,			-- Maexxna slain
+									},
 									i(93030),	-- Dusty Clutch of Eggs (PET!)
 									i(39758),	-- The Jawbone
 									i(39763),	-- Wraith Strike
@@ -612,8 +795,17 @@ _.Instances =
 							})),
 						}),
 						n(-370, { 	-- The Plague Quarter
+							ach(567),	-- The Plague Quarter (25 player)
 							cr(15954, e(1604, {	-- Noth the Plaguebringer
 								["groups"] = {
+									{
+										["achievementID"] = 567,	-- The Plague Quarter (25 player)
+										["criteriaID"] = 1,	-- Noth the Plaguebringer slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 14,		-- Noth the Plaguebringer slain
+									},
 									i(40189),	-- Angry Dread
 									i(40192),	-- Accursed Spine
 									i(40071),	-- Chains of Adoration
@@ -641,6 +833,15 @@ _.Instances =
 							})),
 							cr(15936, e(1605, {	-- Heigan the Unclean
 								["groups"] = {
+									ach(2139),	-- The Safety Dance (25 player)
+									{
+										["achievementID"] = 567,	-- The Plague Quarter (25 player)
+										["criteriaID"] = 2,	-- Heigan the Unclean slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 2,			-- Heigan the Unclean slain
+									},
 									i(40208),	-- Cryptfiend's Bite
 									i(40233),	-- The Undeath Carrier
 									i(40235),	-- Helm of Pilgrimage
@@ -669,6 +870,15 @@ _.Instances =
 							})),
 							cr(16011, e(1606, {	-- Loatheb
 								["groups"] = {
+									ach(2183),	-- Spore Loser (25 player)
+									{
+										["achievementID"] = 567,	-- The Plague Quarter (25 player)
+										["criteriaID"] = 3,	-- Loatheb slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 9,			-- Loatheb slain
+									},
 									i(93032),	-- Blighted Spore (PET!)
 									i(40637, { -- Mantle of the Lost Conqueror
 										i(40450),	-- Valorous Shoulderpads of Faith
@@ -710,8 +920,17 @@ _.Instances =
 							})),
 						}),
 						n(-369, { 	-- The Military Quarter
+							ach(569),	-- The Military Quarter (25 player)
 							cr(16061, e(1607, {	-- Instructor Razuvious
 								["groups"] = {
+									{
+										["achievementID"] = 569,	-- The Military Quarter (25 player)
+										["criteriaID"] = 1,	-- Instructor Razuvious slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 13,		-- Instructor Razuvious slain
+									},
 									i(40071),	-- Chains of Adoration
 									i(40065),	-- Fool's Trial
 									i(40069),	-- Heritage
@@ -739,6 +958,14 @@ _.Instances =
 							})),
 							cr(16060, e(1608, {	-- Gothik the Harvester
 								["groups"] = {
+									{
+										["achievementID"] = 569,	-- The Military Quarter (25 player)
+										["criteriaID"] = 2,	-- Gothik the Harvester slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 4,			-- Gothik the Harvester slain
+									},
 									i(40336),	-- Life and Death
 									i(40335),	-- Touch of Horror
 									i(40339),	-- Gothik's Cowl
@@ -766,6 +993,11 @@ _.Instances =
 							})),
 							cr(30549, e(1609, {	-- The Four Horsemen
 								["groups"] = {
+									ach(2177),	-- And They Would All Go Down Together (25 player)
+									{
+										["achievementID"] = 569,	-- The Military Quarter (25 player)
+										["criteriaID"] = 3,	-- The Four Horsemen slain
+									},
 									i(40343),	-- Armageddon
 									i(40348),	-- Damnation
 									i(40345),	-- Broken Promise
@@ -806,8 +1038,18 @@ _.Instances =
 							})),
 						}),
 						n(-367, { 	-- The Construct Quarter
+							ach(565),	-- The Construct Quarter (25 player)
 							cr(16028, e(1610, {	-- Patchwerk
 								["groups"] = {
+									ach(1857),	-- Make Quick Werk of Him (25 player)
+									{
+										["achievementID"] = 565,	-- The Construct Quarter (25 player)
+										["criteriaID"] = 1,	-- Patchwerk slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 11,		-- Patchwerk slain
+									},
 									i(40264),	-- Split Greathammer
 									i(40265),	-- Arrowsong
 									i(40266),	-- Hero's Surrender
@@ -835,6 +1077,14 @@ _.Instances =
 							})),
 							cr(15931, e(1611, {	-- Grobbulus
 								["groups"] = {
+									{
+										["achievementID"] = 565,	-- The Construct Quarter (25 player)
+										["criteriaID"] = 2,	-- Grobbulus slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 3,			-- Grobbulus slain
+									},
 									i(40280),	-- Origin of Nightmares
 									i(40281),	-- Twilight Mist
 									i(40284),	-- Plague Igniter
@@ -864,6 +1114,15 @@ _.Instances =
 							})),
 							cr(15932, e(1612, {	-- Gluth
 								["groups"] = {
+									{
+										["achievementID"] = 565,	-- The Construct Quarter (25 player)
+										["criteriaID"] = 3,	-- Gluth slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 10,		-- Gluth slain
+									},
+									i(93029),	-- Gluth's Bone (TOY!)
 									i(40625, { -- Breastplate of the Lost Conqueror
 										i(40449),	-- Valorous Robe of Faith
 										i(40569),	-- Valorous Redemption Tunic
@@ -889,7 +1148,6 @@ _.Instances =
 										i(40471),	-- Valorous Dreamwalker Raiments
 										i(40495),	-- Valorous Bonescythe Breastplate
 									}),
-									i(93029),	-- Gluth's Bone (TOY!)
 									i(40634, { -- Legplates of the Lost Conqueror
 										i(40577),	-- Valorous Redemption Legplates
 										i(40583),	-- Valorous Redemption Legguards
@@ -1093,6 +1351,16 @@ _.Instances =
 							})),
 							cr(15928, e(1613, {	-- Thaddius
 								["groups"] = {
+									ach(2179),	-- Shocking! (25 player)
+									ach(2181),	-- Subtraction (25 player)
+									{
+										["achievementID"] = 565,	-- The Construct Quarter (25 player)
+										["criteriaID"] = 4,	-- Thaddius slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 12,		-- Thaddius slain
+									},
 									i(40634, { -- Legplates of the Lost Conqueror
 										i(40577),	-- Valorous Redemption Legplates
 										i(40583),	-- Valorous Redemption Legguards
@@ -1135,6 +1403,12 @@ _.Instances =
 						n(-371, { 	-- The Upper Necropolis
 							cr(15989, e(1614, {	-- Sapphiron
 								["groups"] = {
+									ach(573),	-- Sapphiron's Demise (25 player)
+									ach(2147),	-- The Hundred Club (25 player)
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 8,			-- Sapphiron slain
+									},
 									{
 										["itemID"] = 44577,		-- Heroic Key to the Focusing Iris (Item)
 										["questID"] = 13375,	-- The Heroic Key to the Focusing Iris (Quest)
@@ -1164,6 +1438,30 @@ _.Instances =
 							})),
 							cr(15990, e(1615, {	-- Kel'Thuzad
 								["groups"] = {
+									{
+										["achievementID"] = 1402,	-- Realm First! Conqueror of Naxxramas
+										["u"] = 4,	-- Legacy Achievement
+										["groups"] = {
+											{
+												["titleID"] = 90,	-- %, Conqueror of Naxxramas
+												["u"] = 37,	-- Removed From Game
+											},
+										},
+									},
+									ach(575),	-- Kel'Thuzad's Defeat (25 player)
+									{
+										["achievementID"] = 2185,	-- Just Can't Get Enough (25 player)
+										["description"] = "Pull 1 abomintion from each section and then AOE them all when they get to you. Very easy achievement.",
+										["qg"] = 16428,	-- Unstoppable Abomination
+									},
+									{
+										["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+										["criteriaID"] = 2,			-- Kel'Thuzad (10 or 25 player) slain
+									},
+									{
+										["achievementID"] = 579,	-- The Dedicated Few (25 player)
+										["criteriaID"] = 6,			-- Kel'Thuzad slain
+									},
 									i(40631, { -- Crown of the Lost Conqueror
 										i(40576),	-- Valorous Redemption Helm
 										i(40571),	-- Valorous Redemption Headpiece

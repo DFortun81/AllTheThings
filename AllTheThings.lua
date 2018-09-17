@@ -6957,6 +6957,7 @@ local function RowOnEnter(self)
 			end
 			GameTooltip:AddDoubleLine("Cost", cost); 
 		end
+		if reference.criteriaID then GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID)); end
 		
 		-- Show Quest Prereqs
 		if reference.sourceQuests and not reference.saved then

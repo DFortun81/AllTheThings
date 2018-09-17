@@ -2762,7 +2762,7 @@ AllTheThings.Locales.enUS = {
 		{1, "|CFFFF0000The source of this item has been removed or was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
 		{1, "|CFFFF0000The source of this item has been removed and the item is Bind on Pickup or Bind on Account.|r", "BoP / BoA Item (2)"}, -- No Hope -- 2
 		{1, "|CFFFF0000This was obtainable only during a special promotion or one time event by Blizzard.|r", "Blizzard Promotion (3)"}, -- No Hope -- 3
-		{1, "|CFFFF0000This item is purchaseable from a vendor provided you meet certain qualifications.|r", "Legacy Achievement (4)"},	-- Little Hope -- 4
+		{1, "|CFFFF0000The achievement criteria required to obtain these rewards is no longer obtainable or was only available for a limited time.|r", "Legacy Achievement (4)"},	-- Little Hope -- 4
 		{2, "|CFFFF0000The recipe to learn to craft this item has been removed, the item is bind on pickup and only available to a crafter with the recipe.|r", "Recipe: BoP Craftable Removed (5)"}, -- Little Hope -- 5
 		{2, "|CFFFF0000Item is included in Collector's Edition's, you can still find these for sale online in very low quantities.|r", "Collector's Edition (6)"}, -- Little Hope -- 6
 		{3, "|CFFFF0000The source of this item has been removed, but the item is Bind on Equip or a cageable pet.|r", "BoE Item (7)"}, -- There is Hope -- 7

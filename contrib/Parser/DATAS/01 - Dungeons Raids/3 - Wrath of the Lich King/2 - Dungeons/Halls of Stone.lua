@@ -182,6 +182,10 @@ _.Instances =
 								i(37654),	-- Sabaton of the Ages
 							})),
 							cr(27978, e(607, {	-- Sjonnir The Ironshaper
+								{
+									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+									["criteriaID"] = 5,			-- Sjonnir The Ironshaper slain
+								},
 								i(37667),	-- The Fleshshaper
 								i(35679),	-- Static Cowl
 								i(35680),	-- Amulet of Wills

@@ -3,6 +3,9 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
+	ach(1658, {	-- Champion of the Frozen Wastes
+		title(97),		-- , Champion of the Frozen Wastes
+	}),
 	ach(11320, { -- Raiding with Leashes IV: Wrath of the Lick King
 		i(142210, { -- Celestial Invitation
 			i(142100), -- Stardust

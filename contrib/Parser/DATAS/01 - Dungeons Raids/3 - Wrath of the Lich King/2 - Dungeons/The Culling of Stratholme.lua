@@ -183,6 +183,10 @@ _.Instances =
 								}),
 							}),
 							cr(26533, e(614, {	-- Mal'Ganis
+								{
+									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+									["criteriaID"] = 12,		-- Mal'Ganis slain
+								},
 								i(37108),	-- Dreadlord's Blade
 								i(37112),	-- Beguiling Scepter
 								i(37693),	-- Greed

@@ -202,6 +202,10 @@ _.Instances =
 								i(37844),	-- Winged Talisman
 							})),
 							cr(28923, e(600, {	-- Loken
+								{
+									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+									["criteriaID"] = 8,			-- Loken slain
+								},
 								i( 37848),	-- Lightning Giant Staff
 								i( 37852),	-- Colossal Skull-Clad Cleaver
 								i( 36989),	-- Ancient Measuring Rod

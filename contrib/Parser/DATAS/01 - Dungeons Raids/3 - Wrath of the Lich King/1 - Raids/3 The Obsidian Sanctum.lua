@@ -27,7 +27,10 @@ _.Instances =
 							ach(2051, {	-- The Twilight Zone (10 player)
 								i(43986)	-- Reins of the Black Drake (MOUNT!)
 							}),
-							i(43345),	-- Dragon Hide Bag
+							{
+								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+								["criteriaID"] = 1,			-- Sartharion (10 or 25 player) slain
+							},
 							i(40613, {	-- Gloves of the Lost Conqueror
 								i(39634),	-- Heroes' Redemption Gauntlets
 								i(39632),	-- Heroes' Redemption Gloves
@@ -58,6 +61,7 @@ _.Instances =
 							i(40427),	-- Circle of Arcane Streams
 							i(40426),	-- Signet of the Accord
 							i(40430),	-- Majestic Dragon Figurine
+							i(43345),	-- Dragon Hide Bag
 						})),
 					}),
 					d(4, {	-- 25-Player
@@ -78,7 +82,10 @@ _.Instances =
 							ach(2054, {	-- The Twilight Zone (25 player)
 								i(43954)	-- Reins of the Twilight Drake (MOUNT!)
 							}),
-							i(43345),	-- Dragon Hide Bag
+							{
+								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+								["criteriaID"] = 1,			-- Sartharion (10 or 25 player) slain
+							},
 							i(40628, {	-- Gauntlets of the Lost Conqueror
 								i(40575),	-- Valorous Redemption Gauntlets
 								i(40570),	-- Valorous Redemption Gloves
@@ -112,9 +119,10 @@ _.Instances =
 							i(40453),	-- Chestplate of the Great Aspects
 							i(40446),	-- Dragon Brood Legguards
 							i(40433),	-- Wyrmrest Band
-						 -- i(43999),	-- Ring of the Empty Horizon (TBA in BFA [Patch 8.0.1])
+							i(43999),	-- Ring of the Empty Horizon
 							i(40431),	-- Fury of the Five Flights
 							i(40432),	-- Illustration of the Dragon Soul
+							i(43345),	-- Dragon Hide Bag
 						})),
 					}),
 				},

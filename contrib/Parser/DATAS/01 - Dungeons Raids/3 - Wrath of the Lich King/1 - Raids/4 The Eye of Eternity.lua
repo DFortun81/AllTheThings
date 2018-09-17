@@ -10,6 +10,10 @@ _.Instances =
 				["groups"] = {
 					d(3, {	-- 10-Player
 						cr(28859, e(1617, {	-- Malygos
+							{
+								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+								["criteriaID"] = 3,			-- Malygos (10 or 25 player) slain
+							},
 							i(43952),	-- Reins of the Azure Drake (MOUNT!)
 							i(43953),	-- Reins of the Blue Drake (MOUNT!)
 							i(40497),	-- Black Ice
@@ -26,6 +30,10 @@ _.Instances =
 					}),
 					d(4, {	-- 25-Player
 						cr(28859, e(1617, {	-- Malygos
+							{
+								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+								["criteriaID"] = 3,			-- Malygos (10 or 25 player) slain
+							},
 							i(43952),	-- Reins of the Azure Drake (MOUNT!)
 							i(43953),	-- Reins of the Blue Drake (MOUNT!)
 							i(40543),	-- Blue Aspect Helm

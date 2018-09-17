@@ -151,6 +151,10 @@ _.Instances =
 								i( 37151),	-- Band of Frosted Thorns
 							})),
 							cr(26723, e(621, {	-- Keristrasza
+								{
+									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+									["criteriaID"] = 6,			-- Keristrasza slain
+								},
 								i( 35595),	-- Glacier Sharpened Vileblade
 								i( 37169),	-- War Mace of Unrequited Love
 								i( 37162),	-- Bulwark of the Noble Protector

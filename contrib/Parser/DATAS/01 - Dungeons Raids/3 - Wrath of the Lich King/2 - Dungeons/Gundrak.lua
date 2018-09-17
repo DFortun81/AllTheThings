@@ -238,6 +238,10 @@ _.Instances =
 								i(43312),	-- Gorloc Muddy Footwraps
 							})),
 							cr(29306, e(596, {	-- Gal'darah
+								{
+									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+									["criteriaID"] = 15,		-- Gal'darah slain
+								},
 								i(43309),	-- Amulet of the Stampede
 								i(43305),	-- Shroud of Akali
 								i(37641),	-- Arcane Flame Altar-Garb

@@ -162,6 +162,10 @@ _.Instances =
 								i( 37183),	-- Bindings of the Tunneler
 							})),
 							cr(23954, e(640, { -- Ingvar the Plunderer
+								{
+									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+									["criteriaID"] = 10,		-- Ingvar the Plunderer slain
+								},
 								i(37190),	-- Enraged Feral Staff
 								i(35576),	-- Ingvar's Monolithic Cleaver
 								i(37191),	-- Drake-Mounted Crossbow
