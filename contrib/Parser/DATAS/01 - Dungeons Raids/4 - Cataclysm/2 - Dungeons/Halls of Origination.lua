@@ -8,23 +8,30 @@ _.Instances =
 		["groups"] = {
 			inst(70, { 	-- Halls of Origination
 				["groups"] = {
-					n(-17, {	-- Quests 
-						n(39908, {	-- Bran Bronzebeard
-							q(28654, {	-- The Heart of the Matter
-								q(28746, {	-- Penetrating Their Defenses
-									q(28753, {	-- Doing it the Hard Way
-										i(66917),	-- True Archaeologist's Bracers
-										i(66921),	-- Helm  of Reorigination
-										i(66915),	-- Treasure Hunter's Gloves
-									}),
-									i(66913),	-- Repository Gauntlets
-									i(66911),	-- Offline Greaves
-									i(66914),	-- Boots of the Hard Way
-								}),
-							}),
+					n(-17, {	-- Quests
+						q(28654, {	-- The Heart of the Matter
+							["qg"] = 39908,	-- Brann Bronzebeard
+						}),
+						q(28746, {	-- Penetrating Their Defenses
+							["groups"] = {
+								i(66913),	-- Repository Gauntlets
+								i(66911),	-- Offline Greaves
+								i(66914),	-- Boots of the Hard Way
+							},
+							["qg"] = 39908,	-- Brann Bronzebeard
+							["sourceQuests"] = { 28654 },	-- The Heart of the Matter
+						}),
+						q(28753, {	-- Doing it the Hard Way
+							["groups"] = {
+								i(66917),	-- True Archaeologist's Bracers
+								i(66921),	-- Helm of Reorigination
+								i(66915),	-- Treasure Hunter's Gloves
+							},
+							["qg"] = 39908,	-- Brann Bronzebeard
+							["sourceQuests"] = { 28746 },	-- Penetrating Their Defenses
 						}),
 					}),
-					d(  1, {	-- Normal
+					d(1, {	-- Normal
 						n(0, {	-- Zone Drop
 							n(56109, {    -- Book of Origination
 							["crs"] = {
@@ -146,10 +153,13 @@ _.Instances =
 							}),
 						})),
 					}),
-					d(  2, {	-- Heroic
+					d(2, {	-- Heroic
 						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
+							n(-4, {	-- Achievements
+								ach(5296),	-- Faster Than the Speed of Light
+							}),
 							n(0, {	-- Zone Drop
 								n(39803, {	-- Air Warden
 									dr(1.4, i(56109)),	-- Book of Origination
@@ -204,6 +214,7 @@ _.Instances =
 								}),
 							}),
 							cr(39425, e(124, {	-- Temple Guardian Anhuur
+								ach(5293),	-- I Hate That Song
 								i(56411),	-- Darkhowl Amulet
 								i(56409),	-- Poison Fang Bracers
 								i(56410),	-- Belt of Petrified Tears
@@ -211,6 +222,7 @@ _.Instances =
 								i(56407),	-- Anhuur's Hymnal
 							})),
 							cr(39428, e(125, {	-- Earthrager Ptah
+								ach(5294),	-- Straw That Broke the Camel's Back
 								i(56424),	-- Soul Releaser
 								i(56426),	-- Bulwark of the Primordial Mound
 								i(56422),	-- Mouth of the Earth
@@ -247,6 +259,8 @@ _.Instances =
 								i(57875), 	-- Chaotic Wrappings
 							})),
 							cr(39378, e(130, {	-- Rajh, Construct of Sun
+								ach(5065),	-- Heroic: Halls of Origination
+								ach(5295),	-- Sun of a...
 								i(56433), 	-- Blade of the Burning Sun
 								i(56430), 	-- Sun Strike
 								i(56434), 	-- Solar Wind Cloak

@@ -9,21 +9,25 @@ _.Instances =
 			inst(69, {	-- Lost City of the Tol'vir
 				["groups"] = {
 					n(-17, {	-- Quests
-						n(50038,  {	-- Captain Hadan
-							qg(50038, q(28781, {	-- Targets of Opportunity
-								i(66905),	-- Clandestine Spaulders
-								i(66906),	-- Bracers of the Lost City
-								i(66907),	-- Captain Hadan's Pauldrons
-							})),
-							qg(50038, q(28783, {	-- The Source of Their Power
+						q(28781, {	-- Targets of Opportunity
+							["groups"] = {
+							i(66905),	-- Clandestine Spaulders
+							i(66906),	-- Bracers of the Lost City
+							i(66907),	-- Captain Hadan's Pauldrons
+							},
+							["qg"] = 50038,	-- Captain Hadan
+						}),
+						q(28783, {	-- The Source of Their Power
+							["groups"] = {
 								i(66910),	-- Blight-Lifter's Mantle
 								i(66908),	-- Treads of the Neferset
 								i(66909),	-- Ramkahen Front Boots
-							})),
+							},
+							["qg"] = 50038,	-- Captain Hadan
 						}),
 					}),
-					d(1,   {	-- Normal
-						n(0, {		-- Zone Drop
+					d(1, {	-- Normal
+						n(0, {	-- Zone Drop
 							i(55884, {	-- Mirage Ring
 								["crs"] = {
 									45007,	-- Enslaved Bandit
@@ -68,12 +72,12 @@ _.Instances =
 							}),
 						}),
 						cr(44577, e(117, {	-- General Husam
-							i( 56382),	-- Siliza's Spear
+							i(56382),	-- Siliza's Spear
 							i(157600),	-- Necklace of Rumbling Earth
-							i( 56379),	-- Kaleti Cloak
-							i( 56383),	-- Ionic Gloves
-							i( 56381),	-- Greaves of Wu the Elder
-							i( 56380),	-- Spirit Creeper Ring
+							i(56379),	-- Kaleti Cloak
+							i(56383),	-- Ionic Gloves
+							i(56381),	-- Greaves of Wu the Elder
+							i(56380),	-- Spirit Creeper Ring
 							nld({     	-- Legacy
 								un(2, i(55860)),	-- Siliza's Spear (7.3.5 - Removed from Game!)
 								un(2, i(55858)),	-- Kaleti Cloak (7.3.5 - Removed from Game!)
@@ -109,17 +113,17 @@ _.Instances =
 							}),	
 						})),
 						cr(44819, e(122, {	-- Siamat
-							i( 56396),	-- Hammer of Sparks
+							i(56396),	-- Hammer of Sparks
 							i(157599),	-- Sceptre of  Swirling Winds
-							i( 56402),	-- Zora's Ward
-							i( 56399),	-- Mantle of Master Cho
-							i( 56397),	-- Geordan's Cloak
-							i( 56403),	-- Evelyn's Belt
-							i( 56401),	-- Leggings of the Path
-							i( 56395),	-- Crafty's Gaiters
-							i( 56398),	-- Ring of Three Lights
-							i( 56400),	-- Sorrowsong
-							i( 56394),	-- Tia's Grace
+							i(56402),	-- Zora's Ward
+							i(56399),	-- Mantle of Master Cho
+							i(56397),	-- Geordan's Cloak
+							i(56403),	-- Evelyn's Belt
+							i(56401),	-- Leggings of the Path
+							i(56395),	-- Crafty's Gaiters
+							i(56398),	-- Ring of Three Lights
+							i(56400),	-- Sorrowsong
+							i(56394),	-- Tia's Grace
 							nld({     	-- Legacy
 								un(2, i(55875)),	-- Hammer of Sparks (7.3.5 - Removed from Game!)
 								un(2, i(55880)),	-- Zora's Ward (7.3.5 - Removed from Game!)
@@ -131,7 +135,7 @@ _.Instances =
 							}),	
 						})),
 					}),
-					d(2,   {	-- Heroic
+					d(2, {	-- Heroic
 						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
@@ -180,14 +184,15 @@ _.Instances =
 								}),
 							}),
 							cr(44577, e(117, {	-- General Husam
-								i( 56382),	-- Siliza's Spear
+								i(56382),	-- Siliza's Spear
 								i(157600),	-- Necklace of Rumbling Earth
-								i( 56379),	-- Kaleti Cloak
-								i( 56383),	-- Ionic Gloves
-								i( 56381),	-- Greaves of Wu the Elder
-								i( 56380),	-- Spirit Creeper Ring
+								i(56379),	-- Kaleki Cloak
+								i(56383),	-- Ionic Gloves
+								i(56381),	-- Greaves of Wu the Elder
+								i(56380),	-- Spirit Creeper Ring
 							})),
 							cr(43614, e(118, {	-- Lockmaw
+								ach(5291),	-- Acrocalypse Now
 								n(49045, {	-- Augh
 									-- i(56390),	-- Barim's Main Gauche (7.3.5 - Moved to High Prophet Barim!)
 									-- i(56389),	-- Sand Silk Wristband (7.3.5 - Moved to High Prophet Barim!)
@@ -200,6 +205,7 @@ _.Instances =
 								}),
 							})),
 							cr(43612, e(119, {	-- High Prophet Barim
+								ach(5290),	-- Kill It With Fire!
 								-- i(56384),	-- Resonant Kris (7.3.5 - Moved to Lockmaw)
 								-- i(56386),	-- Balkar's Waders (7.3.5 - Moved to Lockmaw)
 								-- i(56387),	-- Greaves of Wu the Younger (7.3.5 - Moved to Lockmaw)
@@ -210,21 +216,23 @@ _.Instances =
 								i(56393),	-- Heart of Solace
 							})),
 							cr(44819, e(122, {	-- Siamat
-								i( 56396),	-- Hammer of Sparks
-								i(157599),	-- Sceptre of  Swirling Winds
-								i( 56402),	-- Zora's Ward
-								i( 56399),	-- Mantle of Master Cho
-								i( 56397),	-- Geordan's Cloak
-								i( 56403),	-- Evelyn's Belt
-								i( 56401),	-- Leggings of the Path
-								i( 56395),	-- Crafty's Gaiters
-								i( 56398),	-- Ring of Three Lights
-								i( 56400),	-- Sorrowsong
-								i( 56394),	-- Tia's Grace
+								ach(5292),	-- Headed South
+								ach(5066),	-- Heroic: Lost City of the Tol'vir
+								i(56396),	-- Hammer of Sparks
+								i(157599),	-- Sceptre of Swirling Winds
+								i(56402),	-- Zora's Ward
+								i(56399),	-- Mantle of Master Cho
+								i(56397),	-- Geordan's Cloak
+								i(56403),	-- Evelyn's Belt
+								i(56401),	-- Leggings of the Path
+								i(56395),	-- Crafty's Gaiters
+								i(56398),	-- Ring of Three Lights
+								i(56400),	-- Sorrowsong
+								i(56394),	-- Tia's Grace
 							})),
 						},
 					}),
-					d(24,  {	-- Timewalking
+					d(24, {	-- Timewalking
 						["lvl"] = 80,
 						["groups"] = {
 							cr(44577, e(117, {	-- General Husam
@@ -269,9 +277,9 @@ _.Instances =
 					}),
 				},
 				["lvl"] = 83,
-				["mapID"] = 277
+				["mapID"] = 277,
 			}),
-		},					
-		["tierID"] = 4
-	},	
+		},
+		["tierID"] = 4,
+	},
 };
