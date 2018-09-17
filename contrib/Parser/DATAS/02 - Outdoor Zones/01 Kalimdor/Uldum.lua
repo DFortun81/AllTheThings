@@ -759,10 +759,21 @@ _.Zones =
 				}),
 				n(-16, {	-- Rares
 					n(50065, { 		-- Armagedillo
-						dr(100, i(67243)),	-- Armagedillo's Tail
+						["groups"] = {
+							i(67243),	-- Armagedillo's Tail
+						},
+						["coord"] = { 45.0, 42.5 },
 					}), 
 					n(50064, { 		-- Cyrus the Black
-						dr(100, i(67242)),	-- Tol'Vir Hereditary Girdle
+						["groups"] = {
+							i(67242),	-- Tol'Vir Hereditary Girdle
+						},
+						["coords"] = {
+							{ 58.0, 82.6 },
+							{ 58.4, 61.6 },
+							{ 66.6, 68.2 },
+							{ 70.8, 74.2 },
+						},
 					}), 
 	--				n(51403, { 		-- Madexx - Black -- tameable			}), 
 	--				n(51404, { 		-- Madexx - Blue -- tameable			}),
