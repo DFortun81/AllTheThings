@@ -5783,7 +5783,7 @@ _.Zones =
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple", -- Purple
 						}),
 						gssh(1391, { -- Elite
-							["groups"] = {
+							["groups"] = bubbleDown({["u"] = 14}, {
 								i(149433, { -- Helm of the Demonic Gladiator		
 									i(149286),	-- Demonic Gladiator's Satin Hood
 									i(149232),	-- Demonic Gladiator's Silk Cowl
@@ -6162,7 +6162,7 @@ _.Zones =
 									un(14, i(148387)),	-- Fierce Gladiator's Plate Warboots
 									un(14, i(148181)),	-- Fierce Gladiator's Dreadplate Sabatons
 								}),
-							},
+							}),
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red", -- Red
 						}),	
 					})),
@@ -7349,7 +7349,7 @@ _.Zones =
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple", -- Purple
 						}),
 						gssh(1391, { -- Elite
-							["groups"] = {
+							["groups"] = bubbleDown({["u"] = 14}, {
 								i(149433, { -- Helm of the Demonic Gladiator		
 									i(149287),	-- Demonic Gladiator's Satin Hood
 									i(149233),	-- Demonic Gladiator's Silk Cowl
@@ -7728,7 +7728,7 @@ _.Zones =
 									un(14, i(148388)),	-- Fierce Gladiator's Plate Warboots
 									un(14, i(148182)),	-- Fierce Gladiator's Dreadplate Sabatons
 								}),	
-							},
+							}),
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red", -- Red
 								
 						}),						
