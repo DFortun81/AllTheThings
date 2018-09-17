@@ -320,6 +320,24 @@ _.Zones =
 					}),
 				}),
 				h(n(-17, {	-- Quests
+					n(-10069, {	-- Mag'har Orc
+						["groups"] = {
+							q(51485, {	-- For the Horde
+								["groups"] = {
+									i(161328),	-- Tabard of the Mag'har Clans
+									i(157028),	-- Letter from Lady Sylvannas
+								},
+								["qg"] = 143845,	--  Overlord Geya'rah
+							}),
+							q(53502, {	-- Stranger in a Strange Land
+								["qg"] = 133407,	-- Ambassador Blackguard
+								["sourceQuests"] = {
+									51485,	-- For the Horde
+								},
+							}),
+						},
+						["races"] = 36,	-- Mag'har Orc
+					}),
 					q(53028, {	-- A Dying World
 						["qg"] = 140176, -- Nathanos Blightcaller
 						["sourceQuests"] = { 51796 }, -- The Battle for Lordaeron
