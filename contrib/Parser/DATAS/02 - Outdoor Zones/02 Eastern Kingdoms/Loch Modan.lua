@@ -140,7 +140,7 @@ _.Zones =
 --					qg(1105, qa(  273)),	-- Resupplying the Excavation (REMOVED, replaced with next quest)
 					qg(1105, qa(13639)),	-- Resupplying the Excavation
 ]]--
-					q(26620, {	-- Seasoned Wolf Kabobs
+					qa(26620, {	-- Seasoned Wolf Kabobs
 						i(2701),	-- Recipe: Seasoned Wolf Kabobs
 					}),
 --[[
