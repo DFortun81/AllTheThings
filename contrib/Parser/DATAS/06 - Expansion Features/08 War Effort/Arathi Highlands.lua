@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.ExpansionFeatures =
 {
 	n(-10057, {	-- War Effort
@@ -320,7 +319,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142709,	-- Beastrider Kama
 						["qg"] = 142709,	-- Beastrider Kama
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							67.06, 65.89
 						},
@@ -333,7 +331,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142508,	-- Branchlord Aldrus
 						["qg"] = 142508,	-- Branchlord Aldrus
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							22.91, 22.21
 						},
@@ -346,7 +343,6 @@ _.ExpansionFeatures =
 						["npcID"] = 141615,	-- Burning Goliath
 						["qg"] =  141615,	-- Burning Goliath
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							30.64, 44.74
 						},
@@ -359,7 +355,6 @@ _.ExpansionFeatures =
 						["npcID"] = 141618,	-- Cresting Goliath
 						["qg"] = 141618,	-- Cresting Goliath
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							61.86, 31.27
 						},
@@ -372,7 +367,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142688,	-- Darbel Montrose
 						["qg"] =  142688,	-- Darbel Montrose
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							50.41, 61.21
 						},
@@ -385,7 +379,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142741,	-- Doomrider Helgrim
 						["qg"] = 142741,	-- Doomrider Helgrim
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							53.81, 58.21
 						},
@@ -399,7 +392,6 @@ _.ExpansionFeatures =
 						["npcID"] = 141668,	-- Echo of Myzrael
 						["qg"] = 1416668,	-- Echo of Myzrael
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							56.61, 36.01
 						},
@@ -412,7 +404,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142686,	-- Foulbelly
 						["qg"] = 142686,	-- Foulbelly
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coords"] = {
 							28.64, 45.66,	-- Cave Entrance
 							23.11, 46.71,	-- Foulbelly
@@ -426,7 +417,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142433,	-- Fozruk
 						["qg"] = 142433,	-- Fozruk
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coords"] = {	-- Patrols, put start and ending path for coordinate plane.  Don't add anymore unless it's above the top point or below the bottom point
 							60.94, 31.54, 	-- Top
 							54.01, 55.41	-- Bottom
@@ -440,7 +430,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142662,	-- Geomancer Flintdagger
 						["qg"] = 142662,	-- Geomancer Flintdagger
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							79.61, 30.31
 						},
@@ -453,7 +442,6 @@ _.ExpansionFeatures =
 						["qg"] = 142725,	-- Horrific Apparition
 						["npcID"] = 142725,	-- Horrific Apparition
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["coord"] = {
 							19.51, 60.91,	-- Alliance NPC
@@ -466,7 +454,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142112,	-- Kor'gresh Coldrage
 						["qg"] = 142112,	-- Kor'gresh Coldrage
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							48.11, 71.71
 						},
@@ -478,7 +465,6 @@ _.ExpansionFeatures =
 						},
 						["npcID"] = 142684,	-- Kovork
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coords"] = {
 							28.64, 45.66,	-- Cave Entrance
 							25.01, 49.11,	-- Kovork
@@ -495,7 +481,6 @@ _.ExpansionFeatures =
 							142717,	-- SQUAAWK!
 						},
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							52.31, 72.41
 						},
@@ -508,7 +493,6 @@ _.ExpansionFeatures =
 						["npcID"] = 141942,	-- Molok the Crusher
 						["qg"] = 141942,	-- Molok the Crusher
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							59.81, 37.61
 						},
@@ -521,7 +505,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142692,	-- Nimar the Slayer
 						["qg"] = 142692,	-- Nimar the Slayer
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							67.91, 66.51
 						},
@@ -534,7 +517,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142423,	-- Overseer Krix
 						["qg"] = 142423,	-- Overseer Krix
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							70.01, 34.81
 						},
@@ -547,7 +529,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142435,	-- Plaguefeather
 						["qg"] = 142435,	-- Plaguefeather
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							36.91, 66.01
 						},
@@ -560,7 +541,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142436,	-- Ragebeak
 						["qg"] = 142436,	-- Ragebeak
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							11.91, 52.11
 						},
@@ -573,7 +553,6 @@ _.ExpansionFeatures =
 						["npcID"] = 141620,	-- Rumbling Goliath
 						["qg"] = 141620,	-- Rumbling Goliath
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							29.76, 60.04
 						},
@@ -586,7 +565,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142683,	-- Ruul Onestone
 						["qg"] = 142683,	-- Ruul Onestone
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							43.01, 57.01
 						},
@@ -599,7 +577,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142690,	-- Singer
 						["qg"] = 142690,	-- Singer
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							50.41, 57.61
 						},
@@ -612,7 +589,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142437,	-- Skullripper
 						["qg"] = 142437,	-- Skullripper
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							56.61, 44.51
 						},
@@ -625,7 +601,6 @@ _.ExpansionFeatures =
 						["npcID"] = 141616,	-- Thundering Goliath
 						["qg"] = 141616,	-- Thundering Goliath
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							46.31, 52.02
 						},
@@ -638,7 +613,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142438,	-- Venomarus
 						["qg"] = 142438,	-- Venomarus
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							56.71, 54.11
 						},
@@ -651,7 +625,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142440,	-- Yogursa
 						["qg"] = 142440,	-- Yogursa
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							14.01, 36.91
 						},
@@ -664,7 +637,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142682,	-- Zalas Witherbark <Warband Leader>
 						["qg"] = 142682,	-- Zalas Witherbark <Warband Leader>
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							62.81, 80.81
 						},
@@ -681,7 +653,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142709,	-- Beastrider Kama
 						["qg"] = 142709,	-- Beastrider Kama
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = { 67.06, 65.89
 						},
 						["races"] = HORDE_ONLY,
@@ -693,7 +664,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142508,	-- Branchlord Aldrus
 						["qg"] = 142508,	-- Branchlord Aldrus
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							22.91, 22.21
 						},
@@ -706,7 +676,6 @@ _.ExpansionFeatures =
 						["npcID"] = 141615,	-- Burning Goliath
 						["qg"] =  141615,	-- Burning Goliath
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							30.64, 44.74
 						},
@@ -719,7 +688,6 @@ _.ExpansionFeatures =
 						["npcID"] = 141618,	-- Cresting Goliath
 						["qg"] = 141618,	-- Cresting Goliath
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							61.86, 31.27
 						},
@@ -732,7 +700,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142688,	-- Darbel Montrose
 						["qg"] =  142688,	-- Darbel Montrose
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							50.41, 61.21
 						},
@@ -745,7 +712,6 @@ _.ExpansionFeatures =
 						["npcID"] = 141668,	-- Echo of Myzrael
 						["qg"] = 1416668,	-- Echo of Myzrael
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							56.61, 36.01
 						},
@@ -757,7 +723,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53509,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coords"] = {
 							28.64, 45.66,	-- Cave Entrance
 							23.11, 46.71,	-- Foulbelly
@@ -771,7 +736,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142433,	-- Fozruk
 						["qg"] = 142433,	-- Fozruk
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coords"] = {	-- Patrols, put start and ending path for coordinate plane.  Don't add anymore unless it's above the top point or below the bottom point
 							60.94, 31.54, 	-- Top
 							54.01, 55.41	-- Bottom
@@ -785,7 +749,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142662,	-- Geomancer Flintdagger
 						["qg"] = 142662,	-- Geomancer Flintdagger
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							79.61, 30.31
 						},
@@ -795,10 +758,9 @@ _.ExpansionFeatures =
 						["groups"] = {
 							i(163736),	-- Spectral Visage
 						},
-						["qg"] = 142725,	-- Horrific Apparition
 						["npcID"] = 142725,	-- Horrific Apparition
+						["qg"] = 142725,	-- Horrific Apparition
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
 						["coord"] = {
 							26.71, 32.61,	-- Horde NPC
@@ -808,9 +770,8 @@ _.ExpansionFeatures =
 						["groups"] = {
 							i(163578),	-- Broken Highland Mustang
 						},
-						--["questID"] = ,
+						["questID"] = 53088,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							49.01, 40.01
 						},
@@ -823,7 +784,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53513,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							48.11, 71.71
 						},
@@ -835,7 +795,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53514,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coords"] = {
 							28.64, 45.66,	-- Cave Entrance
 							25.01, 49.11,	-- Kovork
@@ -851,7 +810,6 @@ _.ExpansionFeatures =
 							142717,	-- SQUAAWK!
 						},
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							52.31, 72.41
 						},
@@ -863,7 +821,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53516,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							59.81, 37.61
 						},
@@ -876,7 +833,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142692,	-- Nimar the Slayer
 						["qg"] = 142692,	-- Nimar the Slayer
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							67.91, 66.51
 						},
@@ -889,7 +845,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142423,	-- Overseer Krix
 						["qg"] = 142423,	-- Overseer Krix
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							70.01, 34.81
 						},
@@ -901,7 +856,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53519,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							36.91, 66.01
 						},
@@ -914,7 +868,6 @@ _.ExpansionFeatures =
 						["npcID"] = 142436,	-- Ragebeak
 						["qg"] = 142436,	-- Ragebeak
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							11.91, 52.11
 						},
@@ -926,7 +879,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53523,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							29.76, 60.04
 						},
@@ -938,7 +890,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53524,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							43.01, 57.01
 						},
@@ -950,7 +901,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53525,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							50.41, 57.61
 						},
@@ -962,7 +912,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53526,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							56.61, 44.51
 						},
@@ -974,7 +923,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53527,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							46.31, 52.02
 						},
@@ -986,7 +934,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53528,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							56.71, 54.11
 						},
@@ -998,7 +945,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53529,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							14.01, 36.91
 						},
@@ -1010,7 +956,6 @@ _.ExpansionFeatures =
 						},
 						["questID"] = 53530,
 						["repeatable"] = true,
-						["isWeekly"] = true,
 						["coord"] = {
 							62.81, 80.81
 						},
