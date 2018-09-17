@@ -16,6 +16,7 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["g"] = {
 								{
+									["itemID"] = 163682,	-- Tales of de Loa: Zandalar
 									["criteriaID"] = 15,	--  Tales of de Loa: Zandalar
 									["coords"] = {
 										{

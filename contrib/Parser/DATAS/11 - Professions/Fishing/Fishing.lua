@@ -393,9 +393,13 @@ profession(356, { 	-- Fishing
 	}),
 	n(-160, { 	-- Mounts
 		desc(i(142398), "Can be bought from Galissa Sundew on Darkmoon Island for 500 Darkmoon Daggermaw."),	-- Darkwater Skate
+		i(163131, {	-- Great Sea Ray
+			["description"] = "Fished in any waters in Battle For Azeroth Zones.",
+		}),
 		desc(i(152912),	"Can be obtained fishing from green water in Argus."),	-- Pond Nettle
 		desc(i(23720), "Can be obtained via a drop from the lunarfall or frostdeep cavedweller's in the garrison."), 	-- Riding Turtle
 		desc(i(46109), "Can be obtained fishing in any zone added from northrend to date. Also has a chance to drop from the lunarfall or frostdeep cavedweller's in the garrison."), -- Sea Turtle Mount
+		
 	}),
 	n(-162, { 	-- Pets
 		desc(p(174), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."),	-- Chuck

@@ -135,3 +135,5 @@ i(163575, 243795);	-- Reins of a Tamed Bloodfeaster
 i(163573, 260175);	-- Goldenmane's Reins
 i(161479, 275623);	-- Nazjatar Blood Serpent
 i(159146, 267270);	-- Kua'fon's Harness
+i(164250, 281044);	-- Prestigious Bloodforged Courser
+i(163131, 278803);	-- Great Sea Ray

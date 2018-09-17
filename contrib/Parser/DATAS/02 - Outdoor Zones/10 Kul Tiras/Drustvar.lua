@@ -705,14 +705,6 @@ _.Zones =
 							["sourceQuests"] = { 50978 },	-- Out With the Old Boss
 							-- Not required for "Drust Do It."
 						}),
-						{
-							["races"] = ALLIANCE_ONLY,
-							["coord"] = { 20.6, 45.6 },
-							["itemID"] = 163614,	-- Exotic Spices
-							["questID"] = 53120,	-- Exotic Spices
-							["repeatable"] = true,
-							["description"] = "This item is a reward from Island Expeditions that can be turned in to Xun Xun Sweetflower in Anyport for 250 reputation with Order of Embers.",
-						},
 						qa(50063, {	-- Fighting with Fire
 							["g"] = {
 								i(155162),	-- Band of Wortcunning

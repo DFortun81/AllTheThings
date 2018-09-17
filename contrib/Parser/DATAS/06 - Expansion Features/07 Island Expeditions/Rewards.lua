@@ -7,11 +7,114 @@
 
 _.ExpansionFeatures =
 {
-	n(-3338, { -- Island Expeditions
+	n(-3338, {	-- Island Expeditions
 		["groups"] = {
+			n(-17, {	-- Quests
+				["groups"] = {
+					{	-- Azeroth's Tear [Both]
+						["itemID"] = 163217,	-- Azeroth's Tear
+						["questID"] = 53112,	-- Azeroth's Tear
+						["repeatable"] = true,
+						["groups"] = {
+							{
+								["currencyID"] = 1579,	-- Champions of Azeroth
+							},
+						},
+					},
+					{	-- Dented Coin [A]
+						["itemID"] = 163616,	-- Dented Coin
+						["questID"] = 53118,	-- Dented Coin
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							{
+								["currencyID"] = 1593,	-- Proudmore Admiralty
+							},
+						},
+					},
+					{	-- Exotic Spices [A]
+						["itemID"] = 163614,	-- Exotic Spices
+						["questID"] = 53120,	-- Exotic Spices
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							{
+								["currencyID"] = 1592,	-- Order of Embers
+							},
+						},
+					},
+					{	-- Golden Beetle [H]
+						["itemID"] = 163619,	-- Golden Beetle
+						["questID"] = 53114,	-- Golden Beetle
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							{
+								["currencyID"] = 1595,	--  Talanji's Expedition
+							},
+						},
+					},
+					{	-- Island Flotsam [H]
+						["itemID"] = 163620,	-- Island Flotsam
+						["questID"] = 53115,	-- Island Flotsam
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+						["description"] = "Must have unlocked Jana by doing the quest \"Pests\".",
+						["groups"] = {
+							{
+								["currencyID"] = 1597,	-- Zandalari Empire
+							},
+						},
+					},
+					{	-- Lost Sea Scroll [A]
+						["itemID"] = 163615,	-- Lost Sea Scroll
+						["questID"] = 53119,	-- Lost Sea Scroll
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							{
+								["currencyID"] = 1594,	-- Storm's Wake
+							},
+						},
+					},
+					{	-- Rusted Alliance Insignia [A]
+						["itemID"] = 163617,	-- Rusted Alliance Insignia
+						["questID"] = 53117,	-- Rusted Alliance Insignia
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							{
+								["currencyID"] = 1599,	-- 7th Legion
+							},
+						},
+					},
+					{	-- Rusted Horde Insignia [H]
+						["itemID"] = 163621,	-- Rusted Horde Insignia
+						["questID"] = 53116,	-- Rusted Horde Insignia
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							{
+								["currencyID"] = 1600,	-- Honorbound
+							},
+						},
+					},
+					{	-- Shimmering Shell [H]
+						["itemID"] = 163618,	-- Shimmering Shell
+						["questID"] = 53113,	-- Shimminering Shell
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							{
+								["currencyID"] = 1596,	-- Voldunai
+							},
+						},
+					},
+				},
+			}),
 			n(-6015, {	-- Rewards
 				["groups"] = {
-					n(-3339, { -- Item Sets
+					n(-3339, {	-- Item Sets
 						i(164367),	-- Plundered Blue Captain's Hat
 						i(164368),	-- Plundered Crimson Captain's hat
 						i(164369),	-- Plundered Pirate Admiral's Bicorne
@@ -19,8 +122,8 @@ _.ExpansionFeatures =
 						i(164285),	-- Plundered Shoveltusk-Hide Shoulders
 						i(164287),	-- Plundered Dragonrider Spaulders
 						i(164288),	-- Plundered Gjalerbron Pauldrons
-						n(-43, { -- Cloth
-							n(-3315, { -- Spider Acolyte
+						n(-43, {	-- Cloth
+							n(-3315, {	-- Spider Acolyte
 								["groups"] = {
 									i(164476),	-- Spider Acolyte's Cowl
 									i(164481),	-- Spider Acolyte's Amice
@@ -32,7 +135,7 @@ _.ExpansionFeatures =
 									i(164480),	-- Spider Acolyte's Anklewraps
 								},
 							}),
-							n(-3316, { -- Hydraxian
+							n(-3316, {	-- Hydraxian
 								["groups"] = {
 									i(164412),	-- Hydraxian Cover
 									i(164417),	-- Hydraxian Mantle
@@ -44,7 +147,7 @@ _.ExpansionFeatures =
 									i(164416),	-- Hydraxian Slippers
 								},
 							}),
-							n(-3317, { -- Frostwind
+							n(-3317, {	-- Frostwind
 								["groups"] = {
 									i(164508),	-- Frostwind Cowl
 									i(164513),	-- Frostwind Mantle
@@ -56,7 +159,7 @@ _.ExpansionFeatures =
 									i(164512),	-- Frostwind Anklewraps
 								},
 							}),
-							n(-3318, { -- Faceless Follower
+							n(-3318, {	-- Faceless Follower
 								["groups"] = {
 									i(164484),	-- Faceless Follower's Guise
 									i(164489),	-- Faceless Follower's Mantle
@@ -68,7 +171,7 @@ _.ExpansionFeatures =
 									i(164488),	-- Faceless Follower's Sandals
 								},
 							}),
-							n(-3319, { -- Swarmfury
+							n(-3319, {	-- Swarmfury
 								["groups"] = {
 									i(164452),	-- Swarmfury Crown
 									i(164457),	-- Swarmfury Amice
@@ -81,8 +184,8 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-44, { -- Leather
-							n(-3320, { -- Spiritbough
+						n(-44, {	-- Leather
+							n(-3320, {	-- Spiritbough
 								["groups"] = {
 									i(164447),	-- Spiritbough Crown
 									i(164449),	-- Spiritbough Mantle
@@ -94,7 +197,7 @@ _.ExpansionFeatures =
 									i(164444),	-- Spiritbough Striders
 								},
 							}),
-							n(-3321, { -- Tranquil Path
+							n(-3321, {	-- Tranquil Path
 								["groups"] = {
 									i(164431),	-- Helm of the Tranquil Path
 									i(164433),	-- Shoulderpads of the Tranquil Path
@@ -106,7 +209,7 @@ _.ExpansionFeatures =
 									i(164428),	-- Footpads of the Tranquil Path
 								},
 							}),
-							n(-3322, { -- Miststalker
+							n(-3322, {	-- Miststalker
 								["groups"] = {
 									i(164567),	-- Miststalker's Hood
 									i(164569),	-- Miststalker's Shoulderpads
@@ -118,7 +221,7 @@ _.ExpansionFeatures =
 									i(164564),	-- Miststalker's Waders
 								},
 							}),
-							n(-3323, { -- Whirling Dervish
+							n(-3323, {	-- Whirling Dervish
 								["groups"] = {
 									i(164551),	-- Whirling Dervish Turban
 									i(164553),	-- Whirling Dervish Shoulders
@@ -130,7 +233,7 @@ _.ExpansionFeatures =
 									i(164548),	-- Whirling Dervish Striders
 								},
 							}),
-							n(-3324, { -- Feralbark
+							n(-3324, {	-- Feralbark
 								["groups"] = {
 									i(164391),	-- Feralbark Cover
 									i(164393),	-- Feralbark Shoulders
@@ -142,7 +245,7 @@ _.ExpansionFeatures =
 									i(164388),	-- Feralbark Striders
 								},
 							}),
-							n(-3325, { -- Firekin
+							n(-3325, {	-- Firekin
 								["groups"] = {
 									i(164559),	-- Firekin Headgear
 									i(164561),	-- Firekin Amice
@@ -155,8 +258,8 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-45, { -- Mail
-							n(-3326, { -- Wild Marauder
+						n(-45, {	-- Mail
+							n(-3326, {	-- Wild Marauder
 								["groups"] = {
 									i(164543),	-- Wild Marauder Helm
 									i(164545),	-- Wild Marauder Pauldrons
@@ -168,7 +271,7 @@ _.ExpansionFeatures =
 									i(164542),	-- Wild Marauder Boots
 								},
 							}),
-							n(-3327, { -- Dragonrider
+							n(-3327, {	-- Dragonrider
 								["groups"] = {
 									i(164399),	-- Dragonrider's Helmet
 									i(164401),	-- Dragonrider's Spaulders
@@ -180,7 +283,7 @@ _.ExpansionFeatures =
 									i(164398),	-- Dragonrider's Boots
 								},
 							}),
-							n(-3328, { -- Saurok
+							n(-3328, {	-- Saurok
 								["groups"] = {
 									i(164503),	-- Saurok Scale Headgear
 									i(164505),	-- Saurok Scale Pauldrons
@@ -192,7 +295,7 @@ _.ExpansionFeatures =
 									i(164502),	-- Saurok Scale Boots
 								},
 							}),
-							n(-3329, { -- Mrrglurggl
+							n(-3329, {	-- Mrrglurggl
 								["groups"] = {
 									i(164471),	-- Mrrglurggl Helm
 									i(164473),	-- Mrrglurggl Spaulders
@@ -204,7 +307,7 @@ _.ExpansionFeatures =
 									i(164470),	-- Mrrglurggl Boots
 								},
 							}),
-							n(-3330, { -- Headshrinker
+							n(-3330, {	-- Headshrinker
 								["groups"] = {
 									i(164495),	-- Headshrinker's Cowl
 									i(164497),	-- Headshrinker's Shoulders
@@ -216,7 +319,7 @@ _.ExpansionFeatures =
 									i(164494),	-- Headshrinker's Boots
 								},
 							}),
-							n(-3331, { -- Voodoo Stalker
+							n(-3331, {	-- Voodoo Stalker
 								["groups"] = {
 									i(164519),	-- Voodoo Stalker's Mask
 									i(164521),	-- Voodoo Stalker's Mantle
@@ -229,8 +332,8 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-46, { -- Plate
-							n(-3332, { -- Geocrag
+						n(-46, {	-- Plate
+							n(-3332, {	-- Geocrag
 								["groups"] = {
 									i(164422),	-- Geocrag Helm
 									i(164424),	-- Geocrag Spaulders
@@ -242,7 +345,7 @@ _.ExpansionFeatures =
 									i(164425),	-- Geocrag Stompers
 								},
 							}),
-							n(-3333, { -- Razorfin
+							n(-3333, {	-- Razorfin
 								["groups"] = {
 									i(164438),	-- Razorfin Helm
 									i(164440),	-- Razorfin Shoulderguards
@@ -254,7 +357,7 @@ _.ExpansionFeatures =
 									i(164441),	-- Razorfin Warboots
 								},
 							}),
-							n(-3334, { -- Tomb-Keeper
+							n(-3334, {	-- Tomb-Keeper
 								["groups"] = {
 									i(164462),	-- Tomb-Keeper's Helm
 									i(164464),	-- Tomb-Keeper's Spaulders
@@ -266,7 +369,7 @@ _.ExpansionFeatures =
 									i(164465),	-- Tomb-Keeper's Sabatons
 								},
 							}),
-							n(-3335, { -- Bloodwake
+							n(-3335, {	-- Bloodwake
 								["groups"] = {
 									i(164534),	-- Bloodwake Helmet
 									i(164536),	-- Bloodwake Spaulders
@@ -278,7 +381,7 @@ _.ExpansionFeatures =
 									i(164537),	-- Bloodwake Sabatons
 								},
 							}),
-							n(-3336, { -- Rattling Bone
+							n(-3336, {	-- Rattling Bone
 								["groups"] = {
 									i(164526),	-- Rattling Bone Mask
 									i(164528),	-- Rattling Bone Spaulders
@@ -290,7 +393,7 @@ _.ExpansionFeatures =
 									i(164529),	-- Rattling Bone Warboots
 								},
 							}),
-							n(-3337, { -- Twilight Dragon
+							n(-3337, {	-- Twilight Dragon
 								["groups"] = {
 									i(164406),	-- Twilight Dragon's Helm
 									i(164408),	-- Twilight Dragon's Pauldrons
@@ -304,14 +407,27 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-					n(-160, { -- Mounts
+					n(-383, {	-- Miscellaneous
+						["groups"] = {
+							i(163611, {	-- Seafarer's Coin Pouch
+								["description"] = "Contains roughly 1-4 dubloons, more if you have the research.",
+							}),
+							i(163612, {	-- Wayfinder's Satchel
+								["description"] = "Contains roughly 5-8 dubloons, more if you have the research.",
+							}),
+							i(163613, {	-- Sack of Plunder
+								["description"] = "Contains roughly 9-12 dubloons, more if you have the research.",
+							}),
+						},
+					}),
+					n(-160, {	-- Mounts
 						i(163583),	-- Craghorn Chasm-Leaper
 						i(163582),	-- Qinsho's Eternal Hound
 						i(163586),	-- Squawks
 						i(163585),	-- Surf Jelly
 						i(163584),	-- Twilight Avenger
 					}),
-					n(-162, { -- Pets
+					n(-162, {	-- Pets
 						["groups"] = {
 							i(163799),	-- Barnaby
 							i(163818),	-- Bloodstone Tunneler
@@ -344,7 +460,7 @@ _.ExpansionFeatures =
 						},
 						["achievementID"] = 13128, -- I'm Here for the Pets
 					}),
-					n(-161, { -- Toys
+					n(-161, {	-- Toys
 						i(164375),	-- Bad Mojo Banana
 						i(164373),	-- Enchanted Soup Stone
 						i(164372),	-- Jinyu Light Globe
@@ -354,7 +470,7 @@ _.ExpansionFeatures =
 						i(163924),	-- Whiskerwax Candle
 						-- i(164371),	-- Yaungol Oil Stove [Not in files]
 					}),
-					n(-319, { -- Weapons
+					n(-319, {	-- Weapons
 						i(164337),	-- Plundered Amber Slinger
 						i(164338),	-- Plundered Ambershaper's Egg
 						i(164301),	-- Plundered Barb-Edged Dagger

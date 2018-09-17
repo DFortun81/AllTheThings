@@ -50,6 +50,7 @@ _.Mounts =
 		i(89785),	-- Pandaren Kite (Alliance)
 		i(81559),	-- Pandaren Kite (Horde)
 		i(140408),	-- Prestigious Azure Courser
+		i(164250),	-- Prestigious Bloodforged Courser
 		i(140228),	-- Prestigious Bronze Courser
 		i(140232),	-- Prestigious Forest Courser
 		i(140233),	-- Prestigious Ivory Courser
@@ -237,6 +238,7 @@ _.Mounts =
 		i(54797),	-- Frosty Flying Carpet
 		i(87251),	-- Geosynchornous World Spinner
 		i(129962),	-- Great Northern Elderhorn
+		i(163131),	-- Great Sea Ray
 		i(83088),	-- Jade Panther
 		i(82453),	-- Jeweled Onyx Panther
 		i(44558),	-- Magnificent Flying Carpet
