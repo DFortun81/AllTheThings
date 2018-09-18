@@ -94,6 +94,7 @@ _.Instances =
 						["groups"] = {
 							e(2097, { -- The Sand Queen
 								["groups"] = {
+									i(159656),	-- Halberd of the Unwary Guard
 									i(160110),	-- Warglaive of the Sand Queen
 									i(159668),	-- Rattling Jar of Eyes
 									i(159332),	-- Wristguards of the Sandswimmer
@@ -166,6 +167,7 @@ _.Instances =
 							}),
 							e(2097, { -- The Sand Queen
 								["groups"] = {
+									i(159656),	-- Halberd of the Unwary Guard
 									i(160110),	-- Warglaive of the Sand Queen
 									i(159668),	-- Rattling Jar of Eyes
 									i(159332),	-- Wristguards of the Sandswimmer
