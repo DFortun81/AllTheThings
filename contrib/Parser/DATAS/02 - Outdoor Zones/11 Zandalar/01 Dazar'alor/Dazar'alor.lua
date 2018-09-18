@@ -279,13 +279,16 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Paths
-					fp(1957, { -- Port of Zandalar, Zuldazar
+					fp(1957, { -- Port of Zandalar, Zuldazar [H]
+						["description"] = "Port of Zandalar, Zuldazar",
 						["coord"] = { 52.0, 90.0 },
 					}),
-					fp(1959, { -- The Great Seal
+					fp(1959, { -- The Great Seal [H]
+						["description"] = "The Great Seal",
 						["coord"] = { 51.8, 41.2 },
 					}),
-					fp(2061, { -- The Sliver, Zuldazar
+					fp(2061, { -- The Sliver, Zuldazar [H]
+						["description"] = "The Sliver, Zuldazar",
 						["coord"] = { 53.0, 19.2 },
 					}),
 				}),

@@ -11,9 +11,9 @@ _.Zones =
 					["groups"] = {
 						ach(12891, {	-- A Nation United [A]
 							["groups"] = {
-								crit(3),		-- A Nation United
-								crit(1),		-- Kul Tourist
-								crit(2),		-- The Pride of Kul Tiras
+								crit(3), -- A Nation United
+								crit(1), -- Kul Tourist
+								crit(2), -- The Pride of Kul Tiras
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -27,9 +27,9 @@ _.Zones =
 						}),
 						ach(12593, {	-- Kul Tourist [A]
 							["groups"] = {
-								crit(1),		-- A Sound Plan
-								crit(2),		-- Drust Do It.
-								crit(3),		-- Stormsong and Dance
+								crit(1), -- A Sound Plan
+								crit(2), -- Drust Do It.
+								crit(3), -- Stormsong and Dance
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -244,16 +244,21 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Paths
-					fp(2278, { -- Mariner's Row, Tiragarde Sound
+					fp(2278, { -- Mariner's Row, Tiragarde Sound [A]
+						["description"] = "Mariner's Row, Tiragarde Sound",
 						["coord"] = { 76.6, 72.6 },
 					}),
-					fp(2277, { -- Proudmoore Keep, Tiragarde Sound
+					fp(2277, { -- Proudmoore Keep, Tiragarde Sound [A]
+						["description"] = "Proudmoore Keep, Tiragarde Sound",
 						["coord"] = { 47.7, 65.4 },
 					}),
-					fp(2105, { -- Tradewinds Market, Tiragarde Sound (Ferry)
+					fp(2105, { -- Tradewinds Market, Tiragarde Sound (Ferry) [A]
+						["description"] = "Tradewinds Market, Tiragarde Sound (Ferry)",
 						["coord"] = { 74.2, 24.6 },
+						["races"] = ALLIANCE_ONLY,
 					}),
-					fp(2083, { -- Tradewinds Market, Tiragarde Sound
+					fp(2083, { -- Tradewinds Market, Tiragarde Sound [A]
+						["description"] = "Tradewinds Market, Tiragarde Sound",
 						["coord"] = { 66.9, 15.0 },
 					}),
 				}),

@@ -136,13 +136,16 @@ _.Zones =
 				}),
 				n(-228, {	-- Flight Paths
 					fp(2052, { -- Anglepoint Wharf, Tiragarde Sound (Ferry) [A]
+						["description"] = "Anglepoint Wharf, Tiragarde Sound (Ferry)",
 						["coord"] = { 42, 30.6 },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					fp(2074, { -- Bridgeport, Tiragarde Sound
+					fp(2074, { -- Bridgeport, Tiragarde Sound [A]
+						["description"] = "Bridgeport, Tiragarde Sound",
 						["coord"] = { 75.8, 48.6 },
 					}),
-					fp(2077, { -- Castaway Point, Tiragarde Sound
+					fp(2077, { -- Castaway Point, Tiragarde Sound [N]
+						["description"] = "Castaway Point, Tiragarde Sound",
 						["coord"] = { 86.4, 80.8 },
 					}),
 					fp(2104, { -- Eastpoint Station, Tiragarde Sound (Ferry) [A]
@@ -151,51 +154,64 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(2054, { -- Firebreaker Expedition, Tiragarde Sound (Ferry) [A]
+						["description"] = "Firebreaker Expedition, Tiragarde Sound (Ferry)",
 						["coord"] = { 63.8, 30.2 },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					fp(2023, { -- Freehold, Tiragarde Sound
+					fp(2023, { -- Freehold, Tiragarde Sound [N]
+						["description"] = "Freehold, Tiragarde Sound",
 						["coord"] = { 77.8, 82.8 },
 					}),
-					fp(2060, { -- Hatherford, Tiragarde Sound
+					fp(2060, { -- Hatherford, Tiragarde Sound [A]
+						["description"] = "Hatherford, Tiragarde Sound",
 						["coord"] = { 66.8, 23.0 },
 					}),
-					fp(2079, { -- Kennings Lodge, Tiragarde Sound
+					fp(2079, { -- Kennings Lodge, Tiragarde Sound [A]
+						["description"] = "Kennings Lodge, Tiragarde Sound",
 						["coord"] = { 76.6, 65.4 },
 					}),
-					fp(2084, { -- Norwington Estate, Tiragarde Sound
+					fp(2084, { -- Norwington Estate, Tiragarde Sound [A]
+						["description"] = "Norwington Estate, Tiragarde Sound",
 						["coord"] = { 52.8, 28.8 },
 					}),
 					fp(2053, { -- Old Drust Road, Tiragarde Sound (Ferry) [A]
+						["description"] = "Old Drust Road, Tiragarde Sound (Ferry)",
 						["coord"] = { 54, 53.2 },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					fp(2087, { -- Outrigger Post, Tiragarde Sound
+					fp(2087, { -- Outrigger Post, Tiragarde Sound [A]
+						["description"] = "Outrigger Post, Tiragarde Sound",
 						["coord"] = { 35.6, 24.8 },
 					}),
-					fp(2140, { -- Plunder Harbor, Tiragarde Sound [NOTE: Verification Required]
-						["coord"] = {  },
+					fp(2140, { -- Plunder Harbor, Tiragarde Sound [H] [NOTE: Verification Required, this may be locked behind the War Campaign quests]
+						["description"] = "Plunder Harbor, Tiragarde Sound",
+						["coord"] = { 87.2, 50.6 },
+						["races"] = HORDE_ONLY,
 					}),
-					fp(2102, { -- Roughneck Camp, Tiragarde Sound
+					fp(2102, { -- Roughneck Camp, Tiragarde Sound [A]
+						["description"] = "Roughneck Camp, Tiragarde Sound",
 						["coord"] = { 42.4, 23.0 },
 					}),
 					fp(2055, { -- Southwind Station, Tiragarde Sound (Ferry) [A]
+						["description"] = "Southwind Station, Tiragarde Sound (Ferry)",
 						["coord"] = { 66.6, 49.8 },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					fp(2279, { -- Stonefist Watch, Tiragarde Sound
+					fp(2279, { -- Stonefist Watch, Tiragarde Sound [H]
+						["description"] = "Stonefist Watch, Tiragarde Sound \n\nRequires completion of Mission Report: Stonefist Watch and related quest line to unlock.",
 						["coord"] = { 53.2, 63 },
-						["description"] = "Requires completion of Mission Report: Stonefist Watch and related quest line to unlock.",
 					}),
-					fp(2042, { -- Vigil Hill, Tiragarde Sound
+					fp(2042, { -- Vigil Hill, Tiragarde Sound [A]
+						["description"] = "Vigil Hill, Tiragarde Sound",
 						["coord"] = { 57.6, 61.6 },
 					}),
-					fp(2273, { -- Waning Glacier, Tiragarde Sound
+					fp(2273, { -- Waning Glacier, Tiragarde Sound [H]
+						["description"] = "Waning Glacier, Tiragarde Sound",
 						["coord"] = { 39.6, 18.4 },
 					}),
-					fp(2062, { -- Wolf's Den, Tiragarde Sound
+					fp(2062, { -- Wolf's Den, Tiragarde Sound [H]
+						["description"] = "Wolf's Den, Tiragarde Sound \n\nRequires completion of Mission Report: Wolf's Den and related quest line to unlock.",
 						["coord"] = { 62, 13.4 },
-						["description"] = "Requires completion of Mission Report: Wolf's Den and related quest line to unlock.",
 					}),
 				}),
 				n(-25, { 	-- Pet Battle

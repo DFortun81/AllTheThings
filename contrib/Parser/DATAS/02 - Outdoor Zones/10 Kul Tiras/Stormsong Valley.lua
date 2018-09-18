@@ -108,56 +108,70 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Paths
-					fp(2086, { -- Brennadam, Stormsong Valley
+					fp(2086, { -- Brennadam, Stormsong Valley [A]
+						["description"] = "Brennadam, Stormsong Valley",
 						["coord"] = { 59.6, 70.6 },
 					}),
-					fp(2097, { -- Deadwash, Stormsong Valley
+					fp(2097, { -- Deadwash, Stormsong Valley [A]
+						["description"] = "Deadwash, Stormsong Valley",
 						["coord"] = { 42.8, 57.4 },
 					}),
-					fp(2092, { -- Diretusk Hollow, Stormsong Valley
+					fp(2092, { -- Diretusk Hollow, Stormsong Valley [H]
+						["description"] = "Diretusk Hollow, Stormsong Valley",
 						["coord"] = { 54.2, 49.2 },
 					}),
-					fp(2138, { -- Fort Daelin, Stormsong Valley
+					fp(2138, { -- Fort Daelin, Stormsong Valley [A]
+						["description"] = "Fort Daelin, Stormsong Valley",
 						["coord"] = { 34.2, 47.2 },
 					}),
-					fp(2090, { -- Hillcrest Pasture, Stormsong Valley
+					fp(2090, { -- Hillcrest Pasture, Stormsong Valley [H]
+						["description"] = "Hillcrest Pasture, Stormsong Valley \n\nRequires completion of Mission Report: Hillcrest Pasture and related quest line to unlock.",
 						["coord"] = { 52.8, 80.2 },
-						["description"] = "Requires completion of Mission Report: Hillcrest Pasture and related quest line to unlock.",
 					}),
-					fp(2093, { -- Ironmaul Overlook, Stormsong Valley
+					fp(2093, { -- Ironmaul Overlook, Stormsong Valley [H]
+						["description"] = "Ironmaul Overlook, Stormsong Valley",
 						["coord"] = { 75.8, 64.2 },
 					}),
-					fp(2088, { -- Mildenhall Meadery, Stormsong Valley
+					fp(2088, { -- Mildenhall Meadery, Stormsong Valley [A]
+						["description"] = "Mildenhall Meadery, Stormsong Valley",
 						["coord"] = { 68.6, 65.0 },
 					}),
-					fp(2137, { -- Millstone Hamlet, Stormsong Valley
+					fp(2137, { -- Millstone Hamlet, Stormsong Valley [A]
+						["description"] = "Millstone Hamlet, Stormsong Valley",
 						["coord"] = { 30.8, 66.6 },
 					}),
-					fp(2089, { -- Seekers Vista, Stormsong Valley
+					fp(2089, { -- Seekers Vista, Stormsong Valley [N]
+						["description"] = "Seekers Vista, Stormsong Valley",
 						["coord"] = { 40.0, 37.2 },
 					}),
-					fp(2095, { -- Shrine of the Storm, Stormsong Valley
+					fp(2095, { -- Shrine of the Storm, Stormsong Valley [H]
+						["description"] = "Shrine of the Storm, Stormsong Valley",
 						["coord"] = { 77.8, 24.0 },
 					}),
-					fp(2133, { -- Shrine of the Storm, Stormsong Valley
+					fp(2133, { -- Shrine of the Storm, Stormsong Valley [A]
+						["description"] = "Shrine of the Storm, Stormsong Valley",
 						["coord"] = { 78.2, 28.8 },
 					}),
-					fp(2091, { -- Stonetusk Watch, Stormsong Valley
+					fp(2091, { -- Stonetusk Watch, Stormsong Valley [H]
+						["description"] = "Stonetusk Watch, Stormsong Valley \n\nRequires completion of Mission Report: Stonetusk Watch and related quest line to unlock.",
 						["coord"] = { 38.8, 66.6 },
-						["description"] = "Requires completion of Mission Report: Stonetusk Watch and related quest line to unlock.",
 					}),
-					fp(2101, { -- The Amber Waves, Stormsong Valley
+					fp(2101, { -- The Amber Waves, Stormsong Valley [A]
+						["description"] = "The Amber Waves, Stormsong Valley",
 						["coord"] = { 50.8, 70.2 },
 					}),
-					fp(2085, { -- Tidecross, Stormsong Valley
+					fp(2085, { -- Tidecross, Stormsong Valley [A]
+						["description"] = "Tidecross, Stormsong Valley",
 						["coord"] = { 65.6, 48.0 },
 					}),
-					fp(2094, { -- Warfang Hold, Stormsong Valley [NOTE: Verification Required]
+					fp(2094, { -- Warfang Hold, Stormsong Valley [H] [NOTE: Verification Required, this may be locked behind the War Campaign quests]
+						["description"] = "Warfang Hold, Stormsong Valley",
 						["coord"] = { 51.4, 33.6 },
+						["races"] = HORDE_ONLY,
 					}),
-					fp(2139, { -- Windfall Cave, Stormsong Valley
+					fp(2139, { -- Windfall Cave, Stormsong Valley [H]
+						["description"] = "Windfall Cave, Stormsong Valley \n\nRequires completion of Mission Report: Windfall Cavern and related quest line to unlock.",
 						["coord"] = { 60.8, 27 },
-						["description"] = "Requires completion of Mission Report: Windfall Cavern and related quest line to unlock.",
 					}),
 				}),
 				n(-25,  { 	-- Pet Battle
