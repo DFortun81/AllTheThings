@@ -15,9 +15,27 @@ _.Instances =
 				["groups"] = {
 					n(-17, {	-- Quests
 						q(51517, {	-- You Owe Me a Spirit -- awards ach(12719) criteria 1
+							["groups"] = {
+								sz(12719, 1),	-- The Fallen Chieftain
+							},
 							["qg"] = 140405, -- Bwonsamdi -- need to verify this specific ID
 							["sourceQuests"] = { 51516 },	-- Atal'Dazar: Ashes of a Warchief
 						}),
+					}),
+					n(-34, {	-- World Quests
+						["groups"] = {
+							q(49800, {	--  Atal'Dazar: Spiders!
+								["groups"] = bubbleDown({["modID"] = 23}, {
+									i(158375),	-- Drape of the Loyal Vassal
+									i(159445),	-- Grips of the Everlasting Guardian
+									i(158319),	-- My'das Talisman
+								}),
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
+						},
 					}),
 					d(1, { -- Normal
 						["groups"] = {

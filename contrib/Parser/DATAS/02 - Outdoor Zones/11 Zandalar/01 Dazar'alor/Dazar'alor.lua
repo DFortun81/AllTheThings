@@ -17,11 +17,15 @@ _.Zones =
 							["g"] = {
 								{
 									["itemID"] = 163682,	-- Tales of de Loa: Zandalar
-									["criteriaID"] = 15,	--  Tales of de Loa: Zandalar
 									["coords"] = {
 										{
 											52.23,
 											09.41
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 15,	--  Tales of de Loa: Zandalar
 										},
 									},
 								},
