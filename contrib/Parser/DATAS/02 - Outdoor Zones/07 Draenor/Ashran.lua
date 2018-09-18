@@ -1760,6 +1760,7 @@ _.Zones =
 			["maps"] = {622, 624},	-- We want to show Ashran in both maps.
 			["lvl"] = 100,	
 			["achievementID"] = 9102,
+			["u"] = 12,	-- Instance removed in 8.0.1 [BfA Pre-Patch]
 			["description"] = "|cff66ccffAshran is a level 100 instanced cross-realm end game world PvP zone found in eastern Draenor. The name also refers to the greater Ashran zone, including the Alliance and Horde capitals, which are set outside of the PvP zone itself.|r",				
 		}),	
 	}),
