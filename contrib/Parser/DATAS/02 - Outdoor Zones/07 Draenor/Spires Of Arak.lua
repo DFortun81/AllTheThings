@@ -60,6 +60,7 @@ _.Zones =
 								},
 							},
 						},
+						["collectible"] = false,
 					}),
 --[[				
 					q(34756),	-- A Charming Deception

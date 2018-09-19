@@ -352,6 +352,7 @@ _.Zones =
 									["description"] = "Located inside the fish tank of \"Catherine Morgan's\" cat house.",
 								},
 							},
+							["collectible"] = false,
 						}),
 						n(-9, {	-- PvP
 							["groups"] = {

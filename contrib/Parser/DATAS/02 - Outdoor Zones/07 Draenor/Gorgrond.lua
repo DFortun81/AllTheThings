@@ -70,6 +70,7 @@ _.Zones =
 								},
 							},
 						},
+						["collectible"] = false,
 					}),
 --[[				
 					q(36037),	-- A Centurion Without a Cause

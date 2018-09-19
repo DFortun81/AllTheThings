@@ -332,6 +332,7 @@ _.Zones =
 								},
 							},
 						},
+						["collectible"] = false,
 					}),
 					n(-176, { -- Weekly World Events
 						["description"] = "Only one of the following quests is offered in Dalaran each week.",

@@ -72,6 +72,7 @@ _.Zones =
 								},
 							},
 						},
+						["collectible"] = false,
 					}),
 --[[				
 					qa( 34802),	-- A Pilgrimage Gone Awry

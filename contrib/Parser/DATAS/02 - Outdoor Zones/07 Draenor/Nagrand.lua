@@ -57,6 +57,7 @@ _.Zones =
 								},
 							},
 						},
+						["collectible"] = false,
 					}),
 					a(ach(8927, { -- Nagrandeur (Alliance)
 						["groups"] = {

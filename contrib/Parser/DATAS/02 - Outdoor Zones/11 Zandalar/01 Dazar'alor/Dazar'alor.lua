@@ -382,6 +382,7 @@ _.Zones =
 									["description"] = "Located inside the \"Hot House\" with it's entrance at 37.88, 15.98.",
 								},
 							},
+							["collectible"] = false,
 						}),
 						ach(12555, {  -- Welcome to Zandalar
 							["groups"] = {
