@@ -433,11 +433,11 @@ _.ExpansionFeatures =
 							i(163818),	-- Bloodstone Tunneler
 							i(163798),	-- Captain Nibs
 							i(163823),	-- Coldlight Surfrunner
-							i(163805),	-- Craghoof Kid
-							i(163809),	-- Deathsting Scorpid
-							i(163806),	-- False Knucklebump
+							i(163805),	-- Craghoof Kid [Verdant Wilds / Molten Clay]
+							i(163809),	-- Deathsting Scorpid [Molten Clay]
+							i(163806),	-- False Knucklebump [Molten Clay]
 							i(163811),	-- Giggling Flame
-							i(163802),	-- Inky
+							i(163802),	-- Inky [Un'gol Ruins]s
 							i(163821),	-- Juvenile Brineshell
 							i(163804),	-- Kindleweb Spiderling
 							i(163822),	-- Kunchong Hatchling
@@ -445,7 +445,7 @@ _.ExpansionFeatures =
 							i(163815),	-- Littlehoof
 							i(163814),	-- Mischievous Zephyr
 							i(163820),	-- Muskflank Calfling
-							i(163801),	-- Octopode Fry
+							i(163801),	-- Octopode Fry [Un'gol Ruins]
 							i(163813),	-- Playful Frostkin
 							i(163800),	-- Poro
 							i(163808),	-- Sandshell Chitterer
@@ -453,20 +453,20 @@ _.ExpansionFeatures =
 							i(163816),	-- Snapper
 							i(163819),	-- Snort
 							i(163803),	-- Sparkleshell Sandcrawler
-							i(163817),	-- Sunscale Hatchling
-							i(163810),	-- Thistlebrush Bud
+							i(163817),	-- Sunscale Hatchling [Skittering Hallow]
+							i(163810),	-- Thistlebrush Bud  [Molten Clay]
 							i(163807),	-- Tinder Pup
 							i(163824),	-- Voru'kar Leecher
 						},
 						["achievementID"] = 13128, -- I'm Here for the Pets
 					}),
 					n(-161, {	-- Toys
-						i(164375),	-- Bad Mojo Banana
+						i(164375),	-- Bad Mojo Banana [Un'gol Ruins]
 						i(164373),	-- Enchanted Soup Stone
 						i(164372),	-- Jinyu Light Globe
 						i(164374),	-- Magic Monkey Banana
 						i(163795),	-- Oomgut Ritual Drum
-						i(164377),	-- Regenerating Banana Bunch
+						i(164377),	-- Regenerating Banana Bunch [Un'gol Ruins]
 						i(163924),	-- Whiskerwax Candle
 						-- i(164371),	-- Yaungol Oil Stove [Not in files]
 					}),

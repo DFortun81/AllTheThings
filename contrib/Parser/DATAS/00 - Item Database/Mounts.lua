@@ -137,3 +137,5 @@ i(161479, 275623);	-- Nazjatar Blood Serpent
 i(159146, 267270);	-- Kua'fon's Harness
 i(164250, 281044);	-- Prestigious Bloodforged Courser
 i(163131, 278803);	-- Great Sea Ray
+i(152869, 242897);	-- Vicious War Fox [H]
+i(152870, 242896);	-- Vicious War Fox [A]

@@ -1252,23 +1252,20 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(45582),	-- Darkspear Tabard
 					}),
 					n(73151, {	-- Deathguard Netharian <Combatant Mount Quartermaster>
-						["groups"] = {
-							i(70910),	-- Horn of the Vicious War Wolf Mount
-							i(102533),	-- Reins of the Vicious Skeletal Warhorse Mount
-							i(142235),	-- Vicious War Bear
-							i(152869, {	-- Vicious War Fox
-								["groups"] = {
-								},
-								["mountID"] = 242897, -- Vicious War Fox
+						["groups"] = bubbleDown({["u"] = 2}, {
+							i(103533, {	-- Vicious Saddle
+								i(70910),	-- Horn of the Vicious War Wolf Mount
+								i(102533),	-- Reins of the Vicious Skeletal Warhorse Mount
+								i(142235),	-- Vicious War Bear
+								i(152869),	-- Vicious War Fox
+								i(124540),	-- Vicious War Kodo Mount
+								i(116778),	-- Vicious War Raptor Mount
+								i(142437),	-- Vicious War Scorpion Mount
+								i(140354),	-- Vicious War Trike Mount
+								i(143649),	-- Vicious War Turtle Mount
+								i(140348),	-- Vicious Warstrider Mount
 							}),
-							i(124540),	-- Vicious War Kodo Mount
-							i(116778),	-- Vicious War Raptor Mount
-							i(142437),	-- Vicious War Scorpion Mount
-							i(140354),	-- Vicious War Trike Mount
-							i(143649),	-- Vicious War Turtle Mount
-							i(140348),	-- Vicious Warstrider Mount
-						},
-						["itemID"] = 103533, -- Vicious Saddle
+						}),
 					}),
 					n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
 						i(83080),	-- Huojin Tabard
