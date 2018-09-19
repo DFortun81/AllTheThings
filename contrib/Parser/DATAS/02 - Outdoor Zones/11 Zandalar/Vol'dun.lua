@@ -780,7 +780,7 @@ i(155430),
 							}),	
 							n(129283, {	-- Jumbo Sandsnapper		
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-									un(1, i(161107)),	-- Brineshell Footguards
+									i(161107),	-- Brineshell Footguards [Low Droprate]
 								}),
 								["questID"] = 49392,
 							}),	

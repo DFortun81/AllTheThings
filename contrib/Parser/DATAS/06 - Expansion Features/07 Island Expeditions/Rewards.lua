@@ -287,7 +287,7 @@ _.ExpansionFeatures =
 								["groups"] = {
 									i(164503),	-- Saurok Scale Headgear
 									i(164505),	-- Saurok Scale Pauldrons
-									i(164506),	-- Saurok Scale Chainmail
+									i(164506),	-- Saurok Scale Chainmail [Verdant Wilds]
 									i(164500),	-- Saurok Scale Bindings
 									i(164501),	-- Saurok Scale Grips
 									i(164499),	-- Saurok Scale Belt
