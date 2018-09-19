@@ -139,3 +139,4 @@ i(164250, 281044);	-- Prestigious Bloodforged Courser
 i(163131, 278803);	-- Great Sea Ray
 i(152869, 242897);	-- Vicious War Fox [H]
 i(152870, 242896);	-- Vicious War Fox [A]
+i(160589, 272770);	-- The Dreadwake

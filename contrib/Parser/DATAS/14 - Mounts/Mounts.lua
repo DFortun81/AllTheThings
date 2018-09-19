@@ -216,6 +216,7 @@ _.Mounts =
 	n(-36, { 	-- In-Game Shop
 		un(35, i(95341)),	-- Armored Bloodwing
 		un(35, i(54811)),	-- Celestial Steed
+		un(35, i(160589)),	-- The Dreadwake
 		un(35, i(97989)),	-- Enchanted Fey Dragon
 		un(35, i(112327)),	-- Grinning Reaver
 		un(35, i(78924)),	-- Heart of the Aspects

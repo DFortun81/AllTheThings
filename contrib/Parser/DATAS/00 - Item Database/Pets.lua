@@ -87,6 +87,7 @@ pet(163974, 2479);	-- Bucketshell
 pet(163776, 2442);	-- Bumbles
 pet(163508, 2422); 	-- Butterfly in A Jar
 pet(142099, 1968); 	-- Call of the Frozen Blade (Wicked Soul)
+pet(160588, 2185);	-- Cap'n Crackers
 pet(163798, 2455);	-- Captain Nibs
 pet(29960, 146); 	-- Captured Firefly (Firefly)
 pet(23083, 128); 	-- Captured Flame (Spirit of Summer)
