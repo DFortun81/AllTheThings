@@ -8,20 +8,15 @@ _.WorldDrops =
 			n(-318, {	-- Armor [Epic -- No adjustments]
 				["groups"] = {
 					i(163933),	-- Aguas' Band of Augury
-					i(161075),	-- Antiseptic Specimen Handlers
-					i(161071),	-- Bloody Experimenter's Wraps
 					i(163936),	-- 'Bygone Bee' Almanac
 					i(163949),	-- Celedhring's Unrelenting Stride
 					i(163931),	-- Chain Links of Fraying Awe
 					i(163951),	-- Cinch of the Sainted General
-					i(161074),	-- Crushproof Vambraces
 					i(163950),	-- Edla's Embellished Legguards
 					i(163940),	-- Extra-Light Light Emitting Cord
-					i(161077),	-- Fluid-Resistant Specimen Handlers
 					i(163946),	-- Gayeong's Gentle Step
 					i(163934),	-- Gnarled Mood Ring
 					i(163941),	-- Hauer's Gloves of Strategy
-					i(161076),	-- Iron-Grip Specimen Handlers
 					i(163953),	-- Jula's Jovial Drape
 					i(163938),	-- Kalieve's Kickers
 					i(163935),	-- Landoi's Scrutiny
@@ -31,11 +26,8 @@ _.WorldDrops =
 					i(163945),	-- Mystra's Magnificient Mitts
 					i(163943),	-- Neleimour's Patterned Leggings
 					i(163952),	-- Oprescu's Gilded Touch
-					i(161073),	-- Reinforced Test Subject Shackles
 					i(163947),	-- Robust Legwraps of D'nusa
 					i(163942),	-- Slippers of the Unruly Fairies
-					i(160612),	-- Spellbound Specimen Handlers
-					i(161072),	-- Splatterguards
 					i(163944),	-- Waatah's Double-Knotted Cord
 					i(163932),	-- Wolfpelt Greatcloak
 				},

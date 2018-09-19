@@ -10,6 +10,18 @@ _.Instances =
 				["groups"] = {
 					d(17, {		-- LFR 
 						["groups"] = {
+							n(0, {	-- Zone Drop
+								["groups"] = {
+									i(161071),	-- Bloody Experimenter's Wraps
+									i(160612),	-- Spellbound Specimen Handlers
+									i(161075),	-- Antiseptic Specimen Handlers
+									i(161072),	-- Splatterguards
+									i(161076),	-- Iron-Grip Specimen Handlers
+									i(161073),	-- Reinforced Test Subject Shackles
+									i(161074),	-- Crushproof Vambraces
+									i(161077),	-- Fluid-Resistant Specimen Handlers
+								},
+							}),
 							ach(12521, {	-- Halls of Containment
 								e(2168, {	-- Taloc
 									["groups"] = {
@@ -152,6 +164,7 @@ _.Instances =
 								}),
 								e(2147, {	-- G'huun
 									["groups"] = {
+										i(160690),	-- Heptavium, Staff of Torturous Knowledge
 										i(160693),	-- Lancet of the Deft Hand
 										i(160694),	-- Re-Origination Pulse Rifle
 										i(160699),	-- Bararicade of Purifying Resolve
@@ -176,6 +189,18 @@ _.Instances =
 					}),
 					d(14, {		-- Normal
 						["groups"] = {
+							n(0, {	-- Zone Drop
+								["groups"] = {
+									i(161071),	-- Bloody Experimenter's Wraps
+									i(160612),	-- Spellbound Specimen Handlers
+									i(161075),	-- Antiseptic Specimen Handlers
+									i(161072),	-- Splatterguards
+									i(161076),	-- Iron-Grip Specimen Handlers
+									i(161073),	-- Reinforced Test Subject Shackles
+									i(161074),	-- Crushproof Vambraces
+									i(161077),	-- Fluid-Resistant Specimen Handlers
+								},
+							}),
 							e(2168, {	-- Taloc
 								["groups"] = {
 									ach(12937),	-- Elevator Music
@@ -321,6 +346,7 @@ _.Instances =
 							e(2147, {	-- G'huun
 								["groups"] = {
 									ach(12551),	-- Double Dribble
+									i(160690),	-- Heptavium, Staff of Torturous Knowledge
 									i(160693),	-- Lancet of the Deft Hand
 									i(160694),	-- Re-Origination Pulse Rifle
 									i(160699),	-- Bararicade of Purifying Resolve
@@ -344,6 +370,18 @@ _.Instances =
 					}),
 					d(15, {		-- Heroic
 						["groups"] = {
+							n(0, {	-- Zone Drop
+								["groups"] = {
+									i(161071),	-- Bloody Experimenter's Wraps
+									i(160612),	-- Spellbound Specimen Handlers
+									i(161075),	-- Antiseptic Specimen Handlers
+									i(161072),	-- Splatterguards
+									i(161076),	-- Iron-Grip Specimen Handlers
+									i(161073),	-- Reinforced Test Subject Shackles
+									i(161074),	-- Crushproof Vambraces
+									i(161077),	-- Fluid-Resistant Specimen Handlers
+								},
+							}),
 							e(2168, {	-- Taloc
 								["groups"] = {
 									i(160679),	-- Khor, Hammer of the Corrupted
@@ -481,6 +519,7 @@ _.Instances =
 							}),
 							e(2147, {	-- G'huun
 								["groups"] = {
+									i(160690),	-- Heptavium, Staff of Torturous Knowledge
 									i(160693),	-- Lancet of the Deft Hand
 									i(160694),	-- Re-Origination Pulse Rifle
 									i(160699),	-- Bararicade of Purifying Resolve
@@ -504,6 +543,18 @@ _.Instances =
 					}),
 					d(16, {		-- Mythic
 						["groups"] = {
+							n(0, {	-- Zone Drop
+								["groups"] = {
+									i(161071),	-- Bloody Experimenter's Wraps
+									i(160612),	-- Spellbound Specimen Handlers
+									i(161075),	-- Antiseptic Specimen Handlers
+									i(161072),	-- Splatterguards
+									i(161076),	-- Iron-Grip Specimen Handlers
+									i(161073),	-- Reinforced Test Subject Shackles
+									i(161074),	-- Crushproof Vambraces
+									i(161077),	-- Fluid-Resistant Specimen Handlers
+								},
+							}),
 							e(2168, {	-- Taloc
 								["groups"] = {
 									ach(12524),	--  Mythic: Taloc
@@ -651,6 +702,7 @@ _.Instances =
 									ach(12533, {	--  Mythic: G'huun
 										title(381),	-- %s the Purifier
 									}),
+									i(160690),	-- Heptavium, Staff of Torturous Knowledge
 									i(160693),	-- Lancet of the Deft Hand
 									i(160694),	-- Re-Origination Pulse Rifle
 									i(160699),	-- Bararicade of Purifying Resolve

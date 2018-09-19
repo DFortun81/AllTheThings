@@ -1783,6 +1783,7 @@ _.Zones =
 								i(163036, {	-- Polished Pet Charm
 									i(163490),	-- Pair of Bee Wings
 								}),
+								i(162626),	-- Tome of Polymorph: Bumblebee
 								i(161579),	-- Bindings of the Seacallers
 								i(161575),	-- Handwraps of Deep Faith
 								i(161582),	-- Keelbreak Girdle

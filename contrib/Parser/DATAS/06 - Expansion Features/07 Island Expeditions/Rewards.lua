@@ -471,6 +471,8 @@ _.ExpansionFeatures =
 						-- i(164371),	-- Yaungol Oil Stove [Not in files]
 					}),
 					n(-319, {	-- Weapons
+						i(163927),	-- Brinebeard's Shanker
+						i(163925),	-- Old Jon's Left Hand
 						i(164337),	-- Plundered Amber Slinger
 						i(164338),	-- Plundered Ambershaper's Egg
 						i(164301),	-- Plundered Barb-Edged Dagger
@@ -559,6 +561,7 @@ _.ExpansionFeatures =
 						i(164306),	-- Plundered Waterspeaker's Spellblade
 						i(164347),	-- Plundered Windblaster
 						i(164354),	-- Plundered Wingblade Axe
+						i(163928),	-- Stinkrot Smasher
 					}),
 				},	
 				["icon"] = "Interface\\Icons\\INV_Misc_Bag_SatchelofCenarius",	
