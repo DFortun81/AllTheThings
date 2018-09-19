@@ -4,39 +4,75 @@
 _.WorldEvents =
 {
 	n(-3, { -- Holiday
-		["groups"] = bubbleDown({["u"] = 23}, { -- Pirate's Day
+		["groups"] = { -- Pirate's Day
 			n(-55, { -- Pirate's Day
-				n(-4, { -- Achievements
-					ach(3457, { -- The Captain's Booty
-						["groups"] = {},
-					}),
-				}),
-				n(-17, { -- Quests
-					q(42758, { -- You're Gonna Need A Bigger Boat!
-						["qg"] = 28048, -- Dread Captain DeMeza
-						["maps"] = { 210, }, -- The Cape of Stranglethorn
-					}),
-				}),
-				n(-16, { -- Rares
-					n(108715, {  -- Ol' Eary
-						["groups"] = {
-							un(23, i(138415)), -- Slightly-Chewed Insult Book
-						},
-						["displayID"] = 70668,
-					}),
-				}),
-				n(-2, { -- Vendors
-					n(122396, { -- Edward Techt
-					["groups"] =  {
-						ach(871, { -- Avast Ye, Admiral!
-							un(23, i(150547)), -- Jolly Roger (Toy)
+				["groups"] = {
+					n(-4, { -- Achievements *UCN18
+						ach(3457, { -- The Captain's Booty *UCN18
+							["qg"] = 28048, -- Dread Captain DeMeza <Scourge of the South Seas>
+							["u"] = 23,
+							["coord"] = {
+								40.01, 72.61,	-- Booty Bay Pirate Day Location
+							},
 						}),
-					},
-					["description"] = "To purchase the toy, |cFFFFD700Jolly Roger|r, you must have the achievement, |cFFFFD700Avast Ye, Admiral|r. Edward Techt is located at |cFFFFD70039.67|r, |cFFFFD70084.29|r in |cFFFFD700The Cape of Stranglethorn|r.",
 					}),
-				}),
+					n(-17, { -- Quests *UCN18 
+						q(42758, { -- You're Gonna Need A Bigger Boat! *UCN18
+							["groups"] = {
+								un(34, i(138414)),	-- Emergency Pirate Outfit
+							},
+							["repeatable"] = true,	-- Resets yearly
+							["qg"] = 28048, -- Dread Captain DeMeza <Scourge of the South Seas>
+							["u"] = 23,
+							["coord"] = {
+								40.01, 72.61,	-- Booty Bay Pirate Day Location
+							},
+						}),
+					}),
+					n(-16, { -- Rares *UCN18
+						n(108715, {  -- Ol' Eary  *UCN18
+							["groups"] = {
+								un(23, i(138415)), -- Slightly-Chewed Insult Book
+							},
+							["description"] = "Spawns in the waters in front of the Booty Bay piers.",
+							["coord"] = {
+								37.81, 66.21	-- Only putting the central location, no need for every single spot in the little harbor.
+							},
+						}),
+					}),
+					n(-2, { -- Vendors *UCN18
+						n(28048, {	-- Dread Captain DeMeza <Scourge of the South Seas>
+							["groups"] = bubbleDown({["u"] = 23}, {
+								i(116392, {	-- Big Bag of Booty
+									["f"] = 55,	-- Consumable; Changed from "Toy"
+								},
+								i(138400, {	-- Petey
+									["f"] = 55,	-- Consumable; Changed from nothing
+								},
+							}),
+							["coord"] = {
+								40.01, 72.61,	-- Booty Bay Pirate Day Location
+							},
+						}),
+						n(122396, { -- Edward Techt
+							["groups"] =  {
+								i(150547, { -- Jolly Roger (Toy) *UCN18
+									["description"] = "Must have the achievement \"Avast Ye, Admiral!\" somewhere on your account.",
+									["u"] = 23,
+								}),
+							},
+							["description"] = "To purchase the toy, |cFFFFD700Jolly Roger|r, you must have the achievement, |cFFFFD700Avast Ye, Admiral|r.",
+							["coord"] = {
+								39.67, 84.29
+							},
+						}),
+					}),
+				},
+				["maps"] = {
+					210,	-- The Cape of Stranglethorn
+				},
 			}),
-		}),
+		},
 		["icon"] = "Interface\\Icons\\INV_Helm_Cloth_WitchHat_B_01",
 	}),
 };
