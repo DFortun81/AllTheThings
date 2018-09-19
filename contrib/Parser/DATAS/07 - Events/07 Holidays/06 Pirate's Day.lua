@@ -45,10 +45,10 @@ _.WorldEvents =
 							["groups"] = bubbleDown({["u"] = 23}, {
 								i(116392, {	-- Big Bag of Booty
 									["f"] = 55,	-- Consumable; Changed from "Toy"
-								},
+								}),
 								i(138400, {	-- Petey
 									["f"] = 55,	-- Consumable; Changed from nothing
-								},
+								}),
 							}),
 							["coord"] = {
 								40.01, 72.61,	-- Booty Bay Pirate Day Location
