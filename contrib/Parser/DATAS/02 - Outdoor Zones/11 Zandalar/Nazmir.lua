@@ -8,42 +8,109 @@ _.Zones =
 			["groups"] = {
 				n(-4,   {	-- Achievements
 					["groups"] = {
-						ach(13036, {	-- A Loa of a Tale
-							{
-								["criteriaID"] = 2,	-- Tales of de Loa: Bwonsamdi
-								["coord"] = { 39.1, 38.6 },
+						{	--  A Loa of a Tale [Note: Don't convert please]
+							["achievementID"] = 13036,	-- A Loa of a Tale
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							["g"] = {
+								{	-- Tales of de Loa: Bwonsamdi
+									["itemID"] = 163330,	-- Tales of de Loa: Bwonsamdi
+									["coords"] = {
+										{
+											39.12,
+											38.65
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 2,	--  Tales of de Loa: Bwonsamdi
+										},
+									},
+								},
+								{	-- Tales of de Loa: Hir'eek
+									["itemID"] = 163199,	-- Tales of de Loa: Hir'eek
+									["coords"] = {
+										{
+											39.57,
+											54.67
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 5,	--  Tales of de Loa: Hir'eek
+										},
+									},
+								},
+								{	-- Tales of de Loa: Krag'wa
+									["itemID"] = 163331,	-- Tales of de Loa: Krag'wa
+									["coords"] = {
+										{
+											58.92,
+											48.65
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 8,	--  Tales of de Loa: Krag'wa
+										},
+									},
+								},
+								{	-- Tales of de Loa: Torga
+									["itemID"] = 163197,	-- Tales of de Loa: 
+									["coords"] = {
+										{
+											72.85,
+											07.60
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 14,	--  Tales of de Loa: 
+										},
+									},
+								},
 							},
-							{
-								["criteriaID"] = 5,	-- Tales of de Loa: Hir'eek
-								["coord"] = { 39.6, 54.6 },
+						},
+						{	-- Carved in Stone, Written in Blood
+							["achievementID"] = 13024,	-- -- Carved in Stone, Written in Blood
+							["g"] = {
+								{	-- Ancient Nazmani Tablet
+									["objectID"] = 298921,	-- Ancient Nazmani Tablet
+									["icon"] = "Interface\\Icons\\inv_misc_rune_11",
+									["criteriaID"] = 1,	-- Ancient Nazmani Tablet
+									["coords"] = {
+										56.31,
+										57.31
+									},
+								},
+								{	-- Cracked Tablet
+									["objectID"] = 298965,	-- Cracked Tablet
+									["icon"] = "Interface\\Icons\\inv_misc_rune_11",
+									["criteriaID"] = 3,	-- Cracked Tablet
+									["coords"] = {
+										51.21,
+										85.11
+									},
+								},
+								{	-- Fractured Tablet
+									["objectID"] = 299073,	-- Fractured Tablet
+									["icon"] = "Interface\\Icons\\inv_misc_rune_11",
+									["criteriaID"] = 4,	-- Fractured Tablet
+									["coords"] = {
+										42.61,
+										57.11
+									},
+								},
+								{	-- Weathered Nazmani Tablet
+									["objectID"] = 298963,	-- Weathered Nazmani Tablet
+									["icon"] = "Interface\\Icons\\inv_misc_rune_11",
+									["criteriaID"] = 2,	-- Weathered Nazmani Tablet
+									["coords"] = {
+										43.41,
+										48.11
+									},
+								},
 							},
-							{
-								["criteriaID"] = 8,	-- Tales of de Loa: Krag'wa
-								["coord"] = { 58.9, 48.7 },
-							},
-							{
-								["criteriaID"] = 14, -- Tales of de Loa: Torga
-								["coord"] = { 72.8, 7.6 },
-							},
-						}),
-						ach(13024, {	-- Carved in Stone, Written in Blood
-							o(298921, {	-- Ancient Nazmani Tablet
-								["coord"] = { 56.3, 57.3 },
-								["criteriaID"] = 1,	-- Ancient Nazmani Tablet
-							}),
-							o(298963, {	-- Weathered Nazmani Tablet
-								["coord"] = { 43.4, 48.1 },
-								["criteriaID"] = 2,	-- Weathered Nazmani Tablet
-							}),
-							o(298965, {	-- Cracked Tablet
-								["coord"] = { 51.2, 85.1 },
-								["criteriaID"] = 3,	-- Cracked Tablet
-							}),
-							o(299073, {	-- Fractured Tablet
-								["coord"] = { 42.6, 57.1 },
-								["criteriaID"] = 4,	-- Fractured Tablet
-							}),
-						}),
+						},						
 						ach(12588, {	-- Eat Your Greens
 							-- Add more coordinates when full object data is available on wowhead.
 							o(291233, {	-- Saurolisk Tail

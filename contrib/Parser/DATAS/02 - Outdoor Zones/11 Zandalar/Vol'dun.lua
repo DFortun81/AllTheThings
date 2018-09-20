@@ -8,20 +8,54 @@ _.Zones =
 			["groups"] = {
 				n(-4,   {	-- Achievements
 					["groups"] = {
-						ach(13036, {	-- A Loa of a Tale
-							{
-								["criteriaID"] = 1,	-- Tales of de Loa: Akunda
-								["coord"] = { 42.2, 62.0 },
+						{	--  A Loa of a Tale [Note: Ugh Longhand, but parser will only take it this way.  Don't convert please]
+							["achievementID"] = 13036,	-- A Loa of a Tale
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							["g"] = {
+								{	-- Tales of de Loa: Akunda
+									["itemID"] = 162628,	-- Tales of de Loa: Akunda
+									["coords"] = {
+										{
+											42.22,
+											62.11
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 1,	--  Tales of de Loa: Akunda
+										},
+									},
+								},
+								{	-- Tales of de Loa: Kimbul
+									["itemID"] = 163198,	-- Tales of de Loa: Kimbul
+									["coords"] = {
+										{
+											27.70,
+											62.12
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 7,	--  Tales of de Loa: Kimbul
+										},
+									},
+								},
+								{	-- Tales of de Loa: Sethraliss
+									["itemID"] = 163333,	-- Tales of de Loa: Sethraliss
+									["coords"] = {
+										{
+											49.57,
+											24.43
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 11,	--  Tales of de Loa: Sethraliss
+										},
+									},
+								},
 							},
-							{
-								["criteriaID"] = 7,	-- Tales of de Loa: Kimbul
-								["coord"] = { 27.7, 62.1 },
-							},
-							{
-								["criteriaID"] = 11, -- Tales of de Loa: Sethraliss
-								["coord"] = { 49.6, 24.5 },
-							},
-						}),
+						},
 						ach(12482, {	-- Get Hek'd
 							["g"] = {
 								{	-- Charged Ranishu Antennae
@@ -803,6 +837,15 @@ i(155430),
 								["coord"] = { 38.2, 41.3 },
 								["questID"] = 51424,
 							}),
+							n(134694, { -- Mor'fani the Exile
+								["groups"] = {
+									i(162616),	-- Master Dinomancer's Tunic
+								},
+								["coord"] = {
+									37.61, 88.01
+								},
+								["questID"] = 50666,
+							}),
 							n(128951, {	-- Nez'ara
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161024),	-- Wrathful Sister's Cincture
@@ -1114,6 +1157,15 @@ i(155430),
 					["groups"] = {
 						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
+								q(52798, {	-- A Few More Charges
+									["groups"] = {
+										ach(13041),	-- Hungry, Hungry Ranishu
+									},
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
 								q(51422, {	-- Azerite Madness
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
@@ -1194,6 +1246,12 @@ i(155430),
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
 								q(51429, {	-- King Clickyclack
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+								}),
+								q(51153, {	-- Mor'fani the Exile
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
