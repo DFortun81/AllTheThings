@@ -9,8 +9,15 @@ _.WorldEvents =
 				n(-17, {	-- Quests
 					["groups"] = {
 						-- ALLIANCE QUESTS --
+						q(29397, {	-- A New Supplier of Souvenirs
+							["groups"] = {
+								un(24, i(56836)), 	-- Overflowing Purple Brewfest Stein
+							},
+							["maps"] = { 27, }, -- Dun Morogh
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = { 11318, }, -- Now This is Ram Racing... Almost. (Alliance)
+						}),
 						q(11441, {	-- Brewfest!
-							["groups"] = {},
 							["qgs"] = {
 								18927, -- Human Commoner
 								19148, -- Dwarf Commoner
@@ -28,17 +35,10 @@ _.WorldEvents =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(12022, {	-- Chug and Chuck! (Alliance)
-							["groups"] = {},
-							["qg"] = 27215, -- Boxey Boltspinner
-							["maps"] = { 27, }, -- Dun Morogh
-							["races"] = ALLIANCE_ONLY,
-						}),
 						q(11117, {	-- Catch the Wild Wolpertinger! (Alliance)
 							["groups"] = {
 								i(32233, {	-- Wolpertinger's Tankard (Pet)
 									ach(1936, {	-- Does Your Wolpertinger Linger?
-										["groups"] = {},
 										["u"] = 24, -- Brewfest
 									}),
 								}),
@@ -46,35 +46,37 @@ _.WorldEvents =
 							["maps"] = { 27, }, -- Dun Morogh
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(11118, {	-- Pink Elekks On Parade (Alliance)
-							["groups"] = {},
-							["qg"] = 23486, -- Goldark Snipehunter
+						q(12022, {	-- Chug and Chuck! (Alliance)
+							["qg"] = 27215, -- Boxey Boltspinner
 							["maps"] = { 27, }, -- Dun Morogh
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(11318, {	-- Now This is Ram Racing... Almost. (Alliance)
-							["groups"] = {},
 							["qg"] = 23558, -- Neill Ramstein
 							["maps"] = { 27, }, -- Dun Morogh
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(29397, {	-- A New Supplier of Souvenirs
-							["groups"] = {
-								un(24, i(56836)), 	-- Overflowing Purple Brewfest Stein
-							},
+						q(11118, {	-- Pink Elekks On Parade (Alliance)
+							["qg"] = 23486, -- Goldark Snipehunter
 							["maps"] = { 27, }, -- Dun Morogh
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 11318, }, -- Now This is Ram Racing... Almost. (Alliance)
 						}),
 						q(11122, {	-- There and Back Again (Alliance)
-							["groups"] = {},
 							["qg"] = 23558, -- Neill Ramstein
 							["maps"] = { 27, }, -- Dun Morogh
 							["races"] = ALLIANCE_ONLY,
 						}),
 						-- HORDE QUESTS --
+							q(29396, {	-- A New Supplier of Souvenirs (Horde)
+							["groups"] = {
+								un(24, i(56836)),	-- Overflowing Purple Brewfest Stein
+							},
+							["qg"] = 24497, -- Ram Master Ray
+							["maps"] = { 1, }, -- Durotar
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 11409, }, -- Now This is Ram Racing... Almost. (Horde)
+						}),
 						q(11446, {	-- Brewfest!
-							["groups"] = {},
 							["qgs"] = {
 								19169, -- Blood Elf Commoner
 								19175, -- Orc Commoner
@@ -101,17 +103,10 @@ _.WorldEvents =
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						q(12191, {	-- Chug and Chuck! (Horde)
-							["groups"] = {},
-							["qg"] = 27216, -- Bizzle Quicklift
-							["maps"] = { 1, }, -- Durotar
-							["races"] = HORDE_ONLY,
-						}),
 						q(11431, {	-- Catch the Wild Wolpertinger! (Horde)
 							["groups"] = {
 								i(32233, {	-- Wolpertinger's Tankard (Pet)
 									ach(1936, {	-- Does Your Wolpertinger Linger?
-										["groups"] = {},
 										["u"] = 24, -- Brewfest
 									}),
 								}),
@@ -119,29 +114,22 @@ _.WorldEvents =
 							["maps"] = { 1, }, -- Durotar
 							["races"] = HORDE_ONLY,
 						}),
-						q(11120, {	-- Pink Elekks On Parade (Horde)
-							["groups"] = {},
-							["qg"] = 24657, -- Glodrak Huntsniper
+						q(12191, {	-- Chug and Chuck! (Horde)
+							["qg"] = 27216, -- Bizzle Quicklift
 							["maps"] = { 1, }, -- Durotar
 							["races"] = HORDE_ONLY,
 						}),
 						q(11409, {	-- Now This is Ram Racing... Almost. (Horde)
-							["groups"] = {},
 							["qg"] = 24497, -- Ram Master Ray
 							["maps"] = { 1, }, -- Durotar
 							["races"] = HORDE_ONLY,
 						}),
-						q(29396, {	-- A New Supplier of Souvenirs (Horde)
-							["groups"] = {
-								un(24, i(56836)),	-- Overflowing Purple Brewfest Stein
-							},
-							["qg"] = 24497, -- Ram Master Ray
+						q(11120, {	-- Pink Elekks On Parade (Horde)
+							["qg"] = 24657, -- Glodrak Huntsniper
 							["maps"] = { 1, }, -- Durotar
 							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 11409, }, -- Now This is Ram Racing... Almost. (Horde)
 						}),
 						q(11412, {	-- There and Back Again (Horde)
-							["groups"] = {},
 							["qg"] = 24497, -- Ram Master Ray
 							["maps"] = { 1, }, -- Durotar
 							["races"] = HORDE_ONLY,

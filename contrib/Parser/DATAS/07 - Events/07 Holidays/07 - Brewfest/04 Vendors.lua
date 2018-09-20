@@ -8,97 +8,215 @@ _.WorldEvents =
 			n(-56, {	-- Brewfest
 				n(-2, {	-- Vendors
 					["groups"] = {
+						n(23604, {	-- Agnes Farwithers
+							["groups"] = bubbleDown({["u"] = 24}, {
+								i(34065),	-- Spiced Onion Cheese
+							}),
+							["races"] = HORDE_ONLY,
+							["maps"] = { 1 },
+						}),
+						n(23521, {	-- Anne Summers
+							["groups"] = bubbleDown({["u"] = 24}, {
+								i(34065),	-- Spiced Onion Cheese
+							}),
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 24 },
+						}),
+						n(23522, {	-- Arlen Lochlan
+							["groups"] = bubbleDown({["u"] = 24}, {
+								i(33043),	-- The Essential Brewfest Pretzel
+							}),
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 24 },
+						}),
+						n(23482, {	-- Barleybrew Apprentice
+							["groups"] = bubbleDown({["u"] = 24}, {
+								i(46400),	-- Barleybrew Gold
+								i(33029),	-- Barleybrew Dark
+								i(33028),	-- Barleybrew Light
+								i(33030),	-- Barleybrew Clear
+								i(138867),	-- Shimmer Stout
+							}),
+							["races"] = ALLIANCE_ONLY,
+							["itemID"] = 37829,	-- Brewfest Prize Token
+							["maps"] = { 24 },
+						}),
 						n(23710, {	-- Belbi Quikswitch
-							["groups"] = {
-								un(24, i(37829, {	-- Brewfest Prize Token
-									un(24, i(46707)), 	-- Pint-Sized Pink Pachyderm (Pet)
-									un(24, i(116756)), 	-- Stout Alemental (Pet)
-									un(24, i(32233)), 	-- Wolpertinger Tankard (Pet)
-									un(24, i(116758)), 	-- Brewfest Banner
-									un(24, i(71137)), 	-- Brewfest Key Pony
-									un(24, i(33927)), 	-- Brewfest Pony Keg
-									un(24, i(90427)), 	-- Pandaren Brewpack
-									un(24, i(116757)), 	-- Steamworks Sausage Grill
-									n(-3198, {	-- Brewfest Garb
-										un(24, i(33968)), 	-- Blue Brewfest Hat
-										un(24, i(33864)), 	-- Brown Brewfest Hat
-										un(24, i(33967)), 	-- Green Brewfest Hat
-										un(24, i(33969)), 	-- Purple Brewfest Hatat
-										un(24, i(33863)), 	-- Brewfest Dress
-										un(24, i(33862)), 	-- Brewfest Regalia
-										un(24, i(33868)),	-- Brewfest Boots
-										un(24, i(33966)), 	-- Brewfest Slippers
-									}),
-								})),
-							},
+							["groups"] = bubbleDown({["u"] = 24}, {
+								n(-3198, {	-- Brewfest Garb
+									["groups"] = {
+										i(33968), 	-- Blue Brewfest Hat
+										i(33868),	-- Brewfest Boots
+										i(33863), 	-- Brewfest Dress
+										i(33862), 	-- Brewfest Regalia
+										i(33966), 	-- Brewfest Slippers
+										i(33864), 	-- Brown Brewfest Hat
+										i(33967), 	-- Green Brewfest Hat
+										i(33969), 	-- Purple Brewfest Hat
+									},
+									["achievementID"] = 293,
+								}),
+								i(37571, {	-- "Brew of the Month" Club Membership Form
+									ach(2796),	-- Brew of the Month
+								}),
+								i(122339),	-- Ancient Heirloom Scabbard
+								i(119209),	-- Angry Brewfest Letter
+								i(33047),	-- Belbi's Eyesight Enhancing Romance Goggles
+								i(116758),	-- Brewfest Banner
+								i(71137),	-- Brewfest Keg Pony
+								i(33927),	-- Brewfest Pony Keg
+								i(90426),	-- Brewhelm
+								i(37750),	-- Fresh Brewfest Hops
+								i(39476),	-- Fresh Goblin Brewfest Hops
+								i(90427),	-- Pandaren Brewpack
+								i(46707),	-- Pint-Sized Pink Pachyderm
+								i(37816),	-- Preserved Brewfest Hops
+								i(116757),	-- Steamworks Sausage Grill
+								i(116756),	-- Stout Alemental
+								i(138730, {	-- Synthebrew Goggles XL
+									ach(1260),	-- Almost Blind Luck
+								}),
+								i(122341),	-- Timeworn Heirloom Scabbard
+								i(151615),	-- Weathered Heirloom Scabbard
+								i(32233, {	-- Wolpertinger's Tankard
+									ach(1936),	-- Does Your Wolpertinger Linger?
+								}),
+							}),
 							["description"] = "|cff66ccffLarkin Thunderbrew <Brew of the Month Club> in Ironforge also sells these items.|r",
 							["races"] = ALLIANCE_ONLY,
-						}),
-						n(24495, {	-- Blix Fixwidget
-							["groups"] = {
-								un(24, i(37829, {	-- Brewfest Prize Token
-									un(24, i(46707)), 	-- Pint-Sized Pink Pachyderm (Pet)
-									un(24, i(116756)), 	-- Stout Alemental (Pet)
-									un(24, i(32233)), 	-- Wolpertinger Tankard (Pet)
-									un(24, i(116758)), 	-- Brewfest Banner
-									un(24, i(71137)), 	-- Brewfest Key Pony
-									un(24, i(33927)), 	-- Brewfest Pony Keg
-									un(24, i(90427)), 	-- Pandaren Brewpack
-									un(24, i(116757)), 	-- Steamworks Sausage Grill
-									n(-3198, {	-- Brewfest Garb
-										un(24, i(33968)), 	-- Blue Brewfest Hat
-										un(24, i(33864)), 	-- Brown Brewfest Hat
-										un(24, i(33967)), 	-- Green Brewfest Hat
-										un(24, i(33969)), 	-- Purple Brewfest Hatat
-										un(24, i(33863)), 	-- Brewfest Dress
-										un(24, i(33862)), 	-- Brewfest Regalia
-										un(24, i(33868)),	-- Brewfest Boots
-										un(24, i(33966)), 	-- Brewfest Slippers
-									}),
-								})),
-							},
-							["description"] = "|cff66ccffRay'ma <Brew of the Month Club> in Orgrimmar also sells these items.|r",
-							["races"] = HORDE_ONLY,
-						}),
-						n(23481, {	-- Keiran Donoghue
-							["groups"] = {
-								un(24, i(138900)), -- Gravil Goldbraid's Famous Sausage Hat
-							},
-							["races"] = ALLIANCE_ONLY,
+							["itemID"] = 37829,	-- Brewfest Prize Token
+							["maps"] = { 24 },
 						}),
 						n(23605, {	-- Bron
-							["groups"] = {
-								un(24, i(138900)), -- Gravil Goldbraid's Famous Sausage Hat
-							},
+							["groups"] = bubbleDown({["u"] = 24}, {
+								i(34063),	-- Dried Sausage
+								i(37829, {	-- Brewfest Prize Token
+									i(138900),	-- Gravil Goldbraid's Famous Sausage Hat
+								}),
+								i(33024),	-- Pickled Sausage
+								i(33023),	-- Savory Sausage
+								i(33025),	-- Spicy Smoked Sausage
+								i(34064),	-- Succulent Sausage
+								i(33026),	-- The Golden Link
+								i(138884),	-- Throwing Sausage
+							}),
 							["races"] = HORDE_ONLY,
+							["maps"] = { 1 },
 						}),
-						n(24468, {	-- Pol Amberstill
-							["groups"] = {
-								{
+						n(24495, {	-- Blix Fixwidget
+							["groups"] = bubbleDown({["u"] = 24}, {
+								n(-3198, {	-- Brewfest Garb
 									["groups"] = {
-										un(24, i(33976)), -- Brewfest Ram; unobtainable 2007 Quest
+										i(33968), 	-- Blue Brewfest Hat
+										i(33868),	-- Brewfest Boots
+										i(33863), 	-- Brewfest Dress
+										i(33862), 	-- Brewfest Regalia
+										i(33966), 	-- Brewfest Slippers
+										i(33864), 	-- Brown Brewfest Hat
+										i(33967), 	-- Green Brewfest Hat
+										i(33969), 	-- Purple Brewfest Hat
 									},
-									["questID"] = 11400,
-									["u"] = 40, -- Legacy Quest/Quest Item
-								},
-							},
-							["description"] = "If you completed the Brewfest Riding Rams quest in 2007, you are eligible to buy this mount from Brewfest vendors. You cannot purchase this mount otherwise.",
+									["achievementID"] = 293,
+								}),
+								i(37599, {	-- "Brew of the Month" Club Membership Form
+									ach(2796),	-- Brew of the Month
+								}),
+								i(122339),	-- Ancient Heirloom Scabbard
+								i(119209),	-- Angry Brewfest Letter
+								i(34008),	-- Blix's Eyesight Enhancing Romance Goggles
+								i(116758),	-- Brewfest Banner
+								i(71137),	-- Brewfest Keg Pony
+								i(33927),	-- Brewfest Pony Keg
+								i(90426),	-- Brewhelm
+								i(37750),	-- Fresh Brewfest Hops
+								i(39477),	-- Fresh Dwarven Brewfest Hops
+								i(90427),	-- Pandaren Brewpack
+								i(46707),	-- Pint-Sized Pink Pachyderm
+								i(37816),	-- Preserved Brewfest Hops
+								i(116757),	-- Steamworks Sausage Grill
+								i(116756),	-- Stout Alemental
+								i(138730, {	-- Synthebrew Goggles XL
+									ach(1260),	-- Almost Blind Luck
+								}),
+								i(122341),	-- Timeworn Heirloom Scabbard
+								i(151615),	-- Weathered Heirloom Scabbard
+								i(32233, {	-- Wolpertinger's Tankard
+									ach(1936),	-- Does Your Wolpertinger Linger?
+								}),
+							}),
+							["description"] = "|cff66ccffRay'ma <Brew of the Month Club> in Orgrimmar also sells these items.|r",
+							["races"] = HORDE_ONLY,
+							["itemID"] = 37829,	-- Brewfest Prize Token
+							["maps"] = { 1 },
+						}),
+						n(24501, {	-- Drohn's Distillery Apprentice 
+							["groups"] = bubbleDown({["u"] = 24}, {
+								i(34018),	-- Long Stride Brew
+								i(138868),	-- Mannoroth's Blood Red Ale
+								i(34019),	-- Path of Brew
+								i(46402),	-- Promise of the Pandaren
+								i(34017),	-- Small Step Brew
+							}),
+							["races"] = HORDE_ONLY,
+							["maps"] = { 1 },
+						}),
+						n(23511, {	-- Gordok Brew Apprentice
+							["groups"] = bubbleDown({["u"] = 24}, {
+								i(46403),	-- Chuganpug's Delight
+								i(138869),	-- Gordok Bock
+								i(33034),	-- Gordok Grog
+								i(33036),	-- Mudder's Milk
+								i(33035),	-- Ogre Mead
+							}),
+							["maps"] = { 24, 1 },
+						}),
+						n(23481, {	-- Keiran Donoghue
+							["groups"] = bubbleDown({["u"] = 24}, {
+								i(34063),	-- Dried Sausage
+								i(37829, {	-- Brewfest Prize Token
+									i(138900),	-- Gravil Goldbraid's Famous Sausage Hat
+								}),
+								i(33024),	-- Pickled Sausage
+								i(33023),	-- Savory Sausage
+								i(33025),	-- Spicy Smoked Sausage
+								i(34064),	-- Succulent Sausage
+								i(33026),	-- The Golden Link
+								i(138884),	-- Throwing Sausage
+							}),
 							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 24 },
 						}),
-						n(24510, {	-- Driz Tumblequick
-							["groups"] = {{
-									["groups"] = {
-										un(24, i(33976)), -- Brewfest Ram; unobtainable 2007 Quest
-									},
-									["questID"] = 11400,
-									["u"] = 40, -- Legacy Quest/Quest Item
-								},
-							},
-							["description"] = "If you completed the Brewfest Riding Rams quest in 2007, you are eligible to buy this mount from Brewfest vendors. You cannot purchase this mount otherwise.",
+						n(23533, {	-- T'chali's Voodoo Brewery Apprentice
+							["groups"] = bubbleDown({["u"] = 24}, {
+								i(34021),	-- Brewdoo Magic
+								i(46401),	-- Crimson Stripe
+								i(34020),	-- Jungle River Water
+								i(138870),	-- Spirit Spirits
+								i(34022),	-- Stout Shrunken Head
+							}),
 							["races"] = HORDE_ONLY,
+							["maps"] = { 1 },
+						}),
+						n(23510, {	-- Thunderbrew Apprentice
+							["groups"] = bubbleDown({["u"] = 24}, {
+								i(138871),	-- Storming Saison
+								i(33031),	-- Thunder 45
+								i(46399),	-- Thunder's Plunder
+								i(33032),	-- Thunderbrew Ale
+								i(33033),	-- Thunderbrew Stout
+							}),
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 24 },
+						}),
+						n(23603, {	-- Uta Roughdough
+							["groups"] = bubbleDown({["u"] = 24}, {
+								i(33043),	-- The Essential Brewfest Pretzel
+							}),
+							["races"] = HORDE_ONLY,
+							["maps"] = { 1 },
 						}),
 					},
-					["u"] = 24, -- Brewfest
+					--["u"] = 24, -- Brewfest
 				}),
 			}),
 		},
