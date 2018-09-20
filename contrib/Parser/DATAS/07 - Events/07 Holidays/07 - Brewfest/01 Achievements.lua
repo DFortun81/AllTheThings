@@ -66,6 +66,10 @@ _.WorldEvents =
 								}),
 							}),
 							["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
+							["maps"] = {
+								1,	-- Durotar
+								24,	-- Dun Morogh
+							},
 						})),
 						un(24, ach(1183, {	-- Brew of the Year
 							["groups"] = bubbleDown({["u"] = 24}, {
@@ -132,6 +136,10 @@ _.WorldEvents =
 								}),
 							}),
 							["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
+							["maps"] = {
+								1,	-- Durotar
+								24,	-- Dun Morogh
+							},
 						})),
 						un(24, ach(1184, {	-- Strange Brew [Alliance]
 							["groups"] = bubbleDown({["u"] = 24}, {
@@ -174,6 +182,9 @@ _.WorldEvents =
 							}),
 							["races"] = ALLIANCE_ONLY,
 							["u"] = 24, -- Brewfest
+							["maps"] = {
+								27,	-- Dun Morogh
+							},
 						})),
 						un(24, ach(1203, {	-- Strange Brew [Horde]
 							["groups"] = bubbleDown({["u"] = 24}, {
@@ -216,6 +227,9 @@ _.WorldEvents =
 							}),
 							["races"] = HORDE_ONLY,
 							["u"] = 24, -- Brewfest
+							["maps"] = {
+								1,	-- Durotar
+							},
 						})),
 						un(2, ach(1292, {	-- Yellow Brewfest Stein [Removed]
 							["groups"] = bubbleDown({["u"] = 2}, {
@@ -228,6 +242,10 @@ _.WorldEvents =
 								}),
 							}),
 							["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
+							["maps"] = {
+								1,	-- Durotar
+								24,	-- Dun Morogh
+							},
 						})),
 					},
 				}),
