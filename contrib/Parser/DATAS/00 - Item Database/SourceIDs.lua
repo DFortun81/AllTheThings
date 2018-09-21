@@ -17,6 +17,7 @@ i(86558, 1, 44497);		-- Rolling Pin
 i(68194, 1, 34777);		-- Oggleflint's Inspirer
 i(1958, 1, 510);		-- Petrified Shinbone
 i(33820, 1, 15661);		-- Weather-Beaten Fishing Hat
+i(15945, 1, 6528);		-- Runic Stave [Blizzard changed equip type and removed ID normally]
 
 -----------------------
 -- C O S M E T I C S --

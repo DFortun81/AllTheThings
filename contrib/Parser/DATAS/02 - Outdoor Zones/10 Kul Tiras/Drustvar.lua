@@ -642,7 +642,7 @@ _.Zones =
 						qa(48524, {	-- Culling the Coven
 							["qg"] = 126310,	-- Evelyn Pare
 							["coord"] = { 70.0, 60.2 },
-							["sourceQuests"] = {
+							["sourceQuests"] = { 
 								48522,	-- A Revealing Missive
 								48521,	-- Charming the Lifeless
 								48520,	-- The Three Sisters
@@ -685,7 +685,7 @@ _.Zones =
 						qa(48963, {	-- Diversionary Tactics
 							["qg"] = 127715,	-- Lucille Waycrest
 							["coord"] = { 44.7, 28.5 },
-							["sourceQuests"] = {
+							["sourceQuests"] = { 
 								48943,	-- Salvage Rights
 								48942,	-- Yeti to Rumble
 							},
@@ -814,7 +814,7 @@ _.Zones =
 							},
 							["qg"] = 126310,	-- Evelyn Pare
 							["coord"] = { 70.0, 60.2 },
-							["sourceQuests"] = {
+							["sourceQuests"] = { 
 								49295,	-- Clear-Cutting
 								48518,	-- Save Who We Can
 							},
@@ -1020,7 +1020,7 @@ _.Zones =
 							},
 							["qg"] = 133839,	-- Harris Hocking
 							["coord"] = { 27.0, 25.2 },
-							["sourceQuests"] = {
+							["sourceQuests"] = { 
 								50450,	-- An Offensive Harvest
 								50451,	-- Eating Through the Defenses
 							},
@@ -1339,7 +1339,7 @@ _.Zones =
 						qa(48523, {	-- The Murderous Matron
 							["qg"] = 126310,	-- Evelyn Pare
 							["coord"] = { 70.0, 60.2 },
-							["sourceQuests"] = {
+							["sourceQuests"] = { 
 								48522,	-- A Revealing Missive
 								48521,	-- Charming the Lifeless
 								48520,	-- The Three Sisters
@@ -1462,7 +1462,7 @@ _.Zones =
 							["sourceQuests"] = { 48963 },	-- Diversionary Tactics
 						}),
 						o(290419, {	-- Wanted Poster
-							qa(51547, {	-- WANTED: Rindlewoe
+							qa(51547, {	-- WANTED: Rindlewoe 
 								["coord"] = { 55.7, 34.9 },
 								["sourceQuests"] = { 47982 },	-- The Final Effigy
 							}),
@@ -1603,32 +1603,32 @@ _.Zones =
 							["questID"] = 51383,
 						}),
 						n(137825, {	-- Avalanche
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 								i(154447),	-- Gryphon-Rider's Breastplate
 							}),
-							["questID"] = 51471,
-						}),
-						n(130143, {	-- Balethorn
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["questID"] = 51471,	
+						}),	
+						n(130143, {	-- Balethorn		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160475),	-- Barksnapper Girdle
 							}),
 							["coord"] = { 58.0, 29.6 },	-- patrols, needs path added
-							["questID"] = 49602,
-						}),
-						n(127333, {	-- Barbthorn Queen
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["questID"] = 49602,	
+						}),	
+						n(127333, {	-- Barbthorn Queen		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155425),	-- Barbthorn Queen's Stinger
 							}),
 							["coord"] = { 59.0, 16.8 },
-							["questID"] = 48842,
-						}),
+							["questID"] = 48842,	
+						}),	
 						n(129805, {	-- Beshol (have to interact with "Obviously Safe Chest" to spawn)
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158363),	-- Spiderhair Circlet
 							}),
 							["coord"] = { 50.5, 30.0 },
-							["questID"] = 49481,
-						}),
+							["questID"] = 49481,	
+						}),	
 						n(124548, {	-- Betsy
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160463),	-- Blue-Ribbon Belt
@@ -1636,12 +1636,12 @@ _.Zones =
 							["coord"] = { 58.4, 33.2 },	-- may have other spawnpoints (?)
 							["questID"] = 47884,
 						}),
-						n(132319, {	-- Bilefang Mother
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+						n(132319, {	-- Bilefang Mother		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155284),	-- Bleak Hills Swatter
 							}),
-							["questID"] = 50163,
-						}),
+							["questID"] = 50163,	
+						}),	
 						n(138667, {	-- Blighted Monstrosity
 							["groups"] = {
 								i(163680),	-- Blightbitten Steps
@@ -1650,7 +1650,7 @@ _.Zones =
 						}),
 						n(126621, {	-- Bonesquall
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								i(154376), -- Bonecurse Gauntlets
+								i(154376),	-- Bonecurse Gauntlets [NOTE: Not dropping on live, but did on beta]
 							}),
 							["questID"] = 48978,
 						}),
@@ -1660,12 +1660,12 @@ _.Zones =
 							}),
 							["questID"] = 51922,
 						}),
-						n(135796, {	-- Captain Leadfist
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+						n(135796, {	-- Captain Leadfist		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160450),	-- Leadshot Heavy Rifle
 							}),
-							["questID"] = 50939,
-						}),
+							["questID"] = 50939,	
+						}),	
 						n(129904, {	-- Cottontail Matron
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(163036),	-- Polished Pet Charm
@@ -1678,12 +1678,12 @@ _.Zones =
 							}),
 							["questID"] = 50669,
 						}),
-						n(129995, {	-- Emily Mayville
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+						n(129995, {	-- Emily Mayville		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160447),	-- Soul-Pillar Lantern
 							}),
-							["questID"] = 49530,
-						}),
+							["questID"] = 49530,	
+						}),	
 						n(138871, {	-- Ernie
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154217, {	-- Pearly-White Jackknife
@@ -1695,89 +1695,89 @@ _.Zones =
 							}),
 							["questID"] = 51749,
 						}),
-						n(134213, {	-- Executioner Blackwell
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+						n(134213, {	-- Executioner Blackwell		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155055),	-- Soul-Curse Executioner
 							}),
-							["questID"] = 50546,
-						}),
-						n(127844, {	-- Gluttonous Yeti
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["questID"] = 50546,	
+						}),	
+						n(127844, {	-- Gluttonous Yeti		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158683),	-- Giant Yeti's Bowl
 							}),
-							["questID"] = 48979,
-						}),
-						n(129835, {	-- Gorehorn
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["questID"] = 48979,	
+						}),	
+						n(129835, {	-- Gorehorn		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158710),	-- Gorehorn's Rack
 							}),
-							["questID"] = 49480,
-						}),
-						n(138675, {	-- Gorged Boar
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["questID"] = 49480,	
+						}),	
+						n(138675, {	-- Gorged Boar		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(154461),	-- Cursed Boarhide Helm
 							}),
-							["questID"] = 51700,
-						}),
-						n(127129, {	-- Grozgore
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["questID"] = 51700,	
+						}),	
+						n(127129, {	-- Grozgore		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160457),	-- Lava-Starched Britches
 							}),
 							["coord"] = { 50.3, 20.7 },
-							["questID"] = 49388,
-						}),
-						n(138618, {	-- Haywire Golem
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["questID"] = 49388,	
+						}),	
+						n(138618, {	-- Haywire Golem		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155362),	-- Wickerbeast Mulcher
 							}),
-							["questID"] = 51698,
-						}),
+							["questID"] = 51698,	
+						}),	
 						n(134754, {	-- Hyo'gi
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160462),	-- Hyo'gi Basket Binders
 							}),
 							["questID"] = 50688,
 						}),
-						n(127877, {	-- Longfang
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+						n(127877, {	-- Longfang		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160468, {	-- Longfang Paws
 									["crs"] =  {
 										127901,	-- Henry Breakwater
 									},
 								}),
 							}),
-							["questID"] = 48981,
-						}),
+							["questID"] = 48981,	
+						}),	
 						n(137704, {	-- Matron Morana
 							["questID"] = 52000,
 						}),
-						n(130138, {	-- Nevermore
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+						n(130138, {	-- Nevermore		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160456),	-- Blanched Ravenfeather Gloves
 							}),
-							["questID"] = 49601,
-						}),
-						n(125453, {	-- Quillrat Matriarch
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["questID"] = 49601,	
+						}),	
+						n(125453, {	-- Quillrat Matriarch		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158583),	-- Quillstitch Greatcloak
 							}),
-							["questID"] = 48178,
-						}),
-						n(128707, {	-- Rimestone
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["questID"] = 48178,	
+						}),	
+						n(128707, {	-- Rimestone		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158345),	-- Coldsnap Pauldrons
 							}),
-							["questID"] = 49269,
-						}),
-						o(277897, {	-- Seething Cache
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["questID"] = 49269,	
+						}),	
+						o(277897, {	-- Seething Cache		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158598),	-- Band of Seething Manifest
 							}),
 							["questID"] = 49341,
 							["icon"] = "Interface\\Icons\\INV_Eng_Crate",
 							["model"] = "World\\Expansion07\\Doodads\\Witch\\8wi_witch_treasurechest02.mdx",
 							["modelScale"] = 2
-						}),
+						}),	
 						n(138863, {	-- Sister Martha
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155299),	-- Sister Martha's Soulstealer
@@ -1790,31 +1790,31 @@ _.Zones =
 						n(137708, {	-- Stone Golem
 							["questID"] = 51999,
 						}),
-						n(129950, {	-- Talon
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+						n(129950, {	-- Talon		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161444),	-- Frosted Talonfeather Mantle
 							}),
-							["questID"] = 49528,
-						}),
+							["questID"] = 49528,	
+						}),	
 						n(139358, {	-- The Caterer
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155560),	-- Lazy-Baker's Ring
 							}),
 							["questID"] = 51949,
 						}),
-						n(127651, {	-- Vicemaul
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+						n(127651, {	-- Vicemaul		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160474),	-- Vicemaul Wristpinchers
 							}),
-							["questID"] = 48928,
-						}),
-						n(128973, {	-- Whargarble the Ill-Tempered
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["questID"] = 48928,	
+						}),	
+						n(128973, {	-- Whargarble the Ill-Tempered		
+							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155543),	-- Tuskarr Whaler's Harpoon
 							}),
 							["coord"] = { 64.9, 21.5 },
-							["questID"] = 49311,
-						}),
+							["questID"] = 49311,	
+						}),	
 						n(139322, {	-- Whitney "Steelclaw" Ramsay
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154315),	-- Rusty Steelclaw
@@ -2544,7 +2544,7 @@ _.Zones =
 			},
 			["achievementID"] = 12557,	-- Explore Drustvar
 			["lvl"] = 110,
-			--["maps"] = {
+			--["maps"] = { 
 			--	1163,	-- Dazar'alor
 			--},
 			["description"] = "|cff66ccffDrustvar is a forested, mountainous area. It was once occupied by a race called the Drust. When humans arrived on Kul Tiras, they slew the Drust and took the area as their own. The Drust created stone golems in their war with the settlers. The human armies, led by House Waycrest, researched their magics and created the Order of Embers to counter it.\n\nIn the present day, Drustvar is controlled by the now missing Lord and Lady of House Waycrest, who have gone suspiciously absent. In their absence, Drustvar's contribution of arms (and sausages) has begun to dry up. The Alliance will need to work with their new allies to get to the bottom of the mystery, as well as the curse over the land.\n\nThe harsh lands of Drustvar are ruled by House Waycrest, who conquered these lands after vanquishing the ancient, evil Drust. The edifices of the Drust still stand in ruin across the land, but that's not all that remains of this accursed people. Recently, their evil leader has been awakened—and if left unchecked, his dark power will spread throughout all of Kul Tiras. Upon arriving in Drustvar, you will be met with a request to visit Mayor Cyril White of Fallhaven in eastern Drustvar.|r",
