@@ -8,36 +8,110 @@ _.Zones =
 			["groups"] = {
 				n(-4,   {	-- Achievements
 					["groups"] = {
-						ach(13036, {	-- A Loa of a Tale
-							{
-								["criteriaID"] = 3,	-- Tales of de Loa: Gonk
-								["coord"] = { 51.7, 28.3 },
+						{	--  A Loa of a Tale [Note: Ugh Longhand, but parser will only take it this way.  Don't convert please]
+							["achievementID"] = 13036,	-- A Loa of a Tale
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							["g"] = {
+								{	-- Tales of de Loa: Gonk
+									["itemID"] = 162657,	-- Tales of de Loa: Gonk
+									["coords"] = {
+										{
+											51.71,
+											28.31
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 3,	--  Tales of de Loa: Gonk
+										},
+									},
+								},
+								{	-- Tales of de Loa: Gral
+									["itemID"] = 163170,	-- Tales of de Loa: Gral
+									["coords"] = {
+										{
+											75.51,
+											67.61
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 4,	--  Tales of de Loa: Gral
+										},
+									},
+								},
+								{	-- Tales of de Loa: Jani
+									["itemID"] = 162656,	-- Tales of de Loa: Jani
+									["coords"] = {
+										{
+											48.61,
+											54.61
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 6,	--  Tales of de Loa: Jani
+										},
+									},
+								},
+								{	-- Tales of de Loa: Pa'ku
+									["itemID"] = 162658,	-- Tales of de Loa: Pa'ku
+									["coords"] = {
+										{
+											49.01,
+											41.31
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 9,	--  Tales of de Loa: Pa'ku
+										},
+									},
+								},
+								{	-- Tales of de Loa: Rezan
+									["itemID"] = 163332,	-- Tales of de Loa: Rezan
+									["coords"] = {
+										{
+											43.81,
+											76.71
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 10,	--  Tales of de Loa: Rezan
+										},
+									},
+								},
+								{	-- Tales of de Loa: Shadra
+									["itemID"] = 163221,	-- Tales of de Loa: Shadra
+									["coords"] = {
+										{
+											47.71,
+											28.91
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 12,	--  Tales of de Loa: Shadra
+										},
+									},
+								},
+								{	-- Tales of de Loa: Torcali
+									["itemID"] = 163739,	-- Tales of de Loa: Torcali
+									["coords"] = {
+										{
+											67.31,
+											17.71
+										},
+									},
+									["g"] = {
+										{
+											["criteriaID"] = 13,	--  Tales of de Loa: Torcali
+										},
+									},
+								},
 							},
-							{
-								["criteriaID"] = 4,	-- Tales of de Loa: Gral
-								["coord"] = { 75.5, 67.6 },
-							},
-							{
-								["criteriaID"] = 6,	-- Tales of de Loa: Jani
-								["coord"] = {48.6, 54.6 },
-							},
-							{
-								["criteriaID"] = 9,	-- Tales of de Loa: Pa'ku
-								["coord"] = { 49.0, 41.3 },
-							},
-							{
-								["criteriaID"] = 10, -- Tales of de Loa: Rezan
-								["coord"] = { 43.8, 76.7 }
-							},
-							{
-								["criteriaID"] = 12, -- Tales of de Loa: Shadra
-								["coord"] = { 47.8, 28.9 },
-							},
-							{
-								["criteriaID"] = 13, -- Tales of de Loa: Torcali
-								["coord"] = { 67.3, 17.7 },
-							},
-						}),
+						},
 						ach(12482, {	-- Get Hek'd
 							["g"] = {
 								{	-- Golden Ravasaur Egg
