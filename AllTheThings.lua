@@ -4972,7 +4972,7 @@ app.BaseTitle = {
 					return name .. UnitName("player");
 				elseif style == 1 then
 					-- Player Name First
-					return UnitName("player") .. name;
+					return UnitName("player") .. " " .. name;
 				elseif style == 2 then
 					-- Player Name First (with space)
 					return UnitName("player") .. " " .. name;

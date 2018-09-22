@@ -23,10 +23,7 @@ _.Mounts =
 		i(163577),	-- Conquerer's Scythemaw
 		i(69230),	-- Corrupted Fire Hawk
 		i(87769),	-- Crimson Cloud Serpent
-		i(161331, {	-- Dark Iron Core Hound [Dark Iron Dwarf Allied Race]
-			["mountID"] = 271646,
-			["races"] = ALLIANCE_ONLY
-		}),
+		i(161331),	-- Dark Iron Core Hound [Dark Iron Dwarf Allied Race]
 		i(62901),	-- Drake of the East Wind
 		i(118676),	-- Emerald Drake
 		i(69226),	-- Felfire Hawk
@@ -88,9 +85,7 @@ _.Mounts =
 		i(70910),	-- Vicious War Wolf*
 		i(44177),	-- Violet Proto-Drake
 		i(62900),	-- Volcanic Stone Drake
-		i(159870, {	-- Zandalari Direhorn  [Zandalari Allied Race Quest Chain]
-			["mountID"] = 263707,
-		}),
+		i(159870),	-- Zandalari Direhorn  [Zandalari Allied Race Quest Chain]
 	}),
 	n(-26, { 	-- Drop
 		i(143643),	-- Abyss Worm
@@ -243,9 +238,7 @@ _.Mounts =
 		i(83088),	-- Jade Panther
 		i(82453),	-- Jeweled Onyx Panther
 		i(44558),	-- Magnificent Flying Carpet
-		i(161134, {	-- Mecha-Mogul Mk2
-			["mountID"] = 261437,
-		}),
+		i(161134),	-- Mecha-Mogul Mk2
 		i(41508),	-- Mechano-Hog
 		i(44413),	-- Mekgineer's Chopper
 		i(152912),	-- Pond Nettle [Note: Fishing]
@@ -466,12 +459,8 @@ _.Mounts =
 		i(87775),		-- Yu'lei, Daughter of Jade
 	}),
 	n(-2, { 	-- Vendor
-		i(161911, {	-- Admiralty Stallion
-			["races"] = ALLIANCE_ONLY,
-		}),
-		i(161773,	{ -- Alabaster Hyena
-			["races"] = HORDE_ONLY,
-		}),
+		i(161911),	-- Admiralty Stallion
+		i(161773), -- Alabaster Hyena
 		i(85262),		-- Amber Scorpion
 		i(141713),		-- Arcadian War Turtle
 		{
@@ -549,9 +538,7 @@ _.Mounts =
 		i(33999),		-- Cenarion War Hippogryph
 		i(116789),		-- Champion's Treadblade
 		i(5655),		-- Chestnut Mare
-		i(161665, { -- Cobalt Pterrordax
-			["races"] = HORDE_ONLY,
-		}),
+		i(161665),		-- Cobalt Pterrordax
 		i(31830),		-- Cobalt Riding Talbuk (Alliance)
 		i(31829),		-- Cobalt Riding Talbuk (Horde)
 		i(29227),		-- Cobalt War Talbuk (Alliance)
@@ -559,9 +546,7 @@ _.Mounts =
 		i(123974),		-- Corrupted Dreadwing
 		i(95565),		-- Crimson Primal Direhorn
 		i(87791),		-- Crimson Water Strider
-		i(161912,	{ -- Dapple Grey
-			["races"] = ALLIANCE_ONLY,
-		}),
+		i(161912),		 -- Dapple Gray
 		i(63125),		-- Dark Phoenix
 		i(28915),		-- Dark Riding Talbuk
 		i(29228),		-- Dark War Talbuk
@@ -576,9 +561,7 @@ _.Mounts =
 		i(116664),		-- Dusky Rockhide
 		i(25472),		-- Ebon Gryphon
 		i(8588),		-- Emerald Raptor
-		i(161774, {	-- Expedition Bloodswarmer
-			["races"] = HORDE_ONLY,
-		}),
+		i(161774),		-- Expedition Bloodswarmer
 		i(45590),		-- Exodar Elekk
 		i(45597),		-- Forsaken Warhorse
 		i(19029),		-- Frostwolf Howler
@@ -752,9 +735,7 @@ _.Mounts =
 		i(29229),		-- Silver War Talbuk (Alliance)
 		i(29104),		-- Silver War Talbuk (Horde)
 		i(45596),		-- Silvermoon Hawkstrider
-		i(161910,	{ -- Smoky Charger
-			["races"] = ALLIANCE_ONLY,
-		}),
+		i(161910),		 -- Smoky Charger
 		i(25472),		-- Snowy Gryphon
 		i(64998),		-- Spectral Steed (Alliance)
 		i(64999),		-- Spectral Wolf (Horde)
@@ -1000,17 +981,13 @@ _.Mounts =
 		})),
 		un(2, ach(12168, {	-- Gladiator: Legion Season 7
 		["groups"] = {
-			i(153493, {	-- Demonic Gladiator's Storm Dragon
-				["mountID"] = 243201,
-			}),
+			i(153493),	-- Demonic Gladiator's Storm Dragon
 		},
 		["collectible"] = false,
 		})),
 		un(2, ach(12961, {	-- Gladiator: Battle for Azeroth Season 1
 			["groups"] = {
-				i(156879, {	-- Dread Gladiator's Proto-Drake
-					["mountID"] = 262022,
-				}),
+				i(156879),	-- Dread Gladiator's Proto-Drake
 			},
 			["collectible"] = false,
 		})),

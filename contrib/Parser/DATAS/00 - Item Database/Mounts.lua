@@ -140,3 +140,8 @@ i(163131, 278803);	-- Great Sea Ray
 i(152869, 242897);	-- Vicious War Fox [H]
 i(152870, 242896);	-- Vicious War Fox [A]
 i(160589, 272770);	-- The Dreadwake
+i(161331, 271646);	-- Dark Iron Core Hound
+i(159870, 263707);	-- Zandalari Direhorn
+i(161134, 261437);	-- Mecha-Mogul Mk2
+i(153493, 243201);	-- Demonic Gladiator's Storm Dragon
+i(156879, 262022);	-- Dread Gladiator's Proto-Drake
