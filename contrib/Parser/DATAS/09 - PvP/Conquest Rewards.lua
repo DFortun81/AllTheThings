@@ -6,7 +6,7 @@ _.PVP =
 	n(-230, { -- Conquest
 		["groups"] = {
 			n(-490, {	-- Dread Gladiator: Battle for Azeroth  Season 1
-				["groups"] = {
+				["groups"] = bubbleDown({["modID"] = 8}, {
 					i(161677),	-- Dread Gladiator's Barrier
 					i(161698),	-- Dread Gladiator's Barrier
 					i(161684),	-- Dread Gladiator's Bonegrinder
@@ -255,7 +255,7 @@ _.PVP =
 					i(161675),	-- Dread Gladiator's Emblem
 					i(161676),	-- Dread Gladiator's Insignia
 					i(161674),	-- Dread Gladiator's Medallion
-				},
+				}),
 				["icon"] = "Interface\\Icons\\achievement_legionpvp2tier3",
 			}),
 		},
