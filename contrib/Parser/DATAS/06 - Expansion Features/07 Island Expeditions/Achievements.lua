@@ -9,20 +9,11 @@ _.ExpansionFeatures =
 		["groups"] = {
 			n(-4, {		-- Achievements
 				["groups"] = {
-					{	-- Achipelago Explorer
-						["achievementID"] = 13142,	-- Achipelago Explorer
-					},
-					{	-- Azerite Admiral
-						["achievementID"] = 13129,	-- Azerite Admiral
-					},
-					{	-- Bayside Brawler
-						["achievementID"] = 12597,	-- Bayside Brawler
-					},
 					{	-- Expedition Leader
 						["achievementID"] = 13134,	-- Expedition Leader
 						["g"] = {
 							{	-- <Name> Expedition Leader
-								["style"] = 1,
+								["style"] = 2,
 								["titleID"] = 382,	-- <Name> Expedition Leader
 							},
 							{	-- Azerite Admiral	
@@ -60,6 +51,16 @@ _.ExpansionFeatures =
 							},	
 						},
 					},
+					{	-- Achipelago Explorer
+						["achievementID"] = 13142,	-- Achipelago Explorer
+					},
+					{	-- Azerite Admiral
+						["achievementID"] = 13129,	-- Azerite Admiral
+					},
+					{	-- Bayside Brawler
+						["achievementID"] = 12597,	-- Bayside Brawler
+					},
+					
 					{	-- Competent Captain [Note: Not attached to Expert Expeditioner since it was a different difficulty and didn't make sense
 						["achievementID"] = 12594,	-- Competent Captain
 					},
