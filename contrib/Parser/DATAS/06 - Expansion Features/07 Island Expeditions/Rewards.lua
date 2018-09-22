@@ -9,6 +9,95 @@ _.ExpansionFeatures =
 {
 	n(-3338, {	-- Island Expeditions
 		["groups"] = {
+			n(-4, {		-- Achievements
+				["groups"] = {
+					{	--  Tell Me A Tale
+						["achievementID"] = 13127,	-- Tell Me A Tale
+						["g"] = {
+							{	-- Ancient Crypt Key	
+								["itemID"] = 163470,	-- Ancient Crypt Key
+								["questID"] = 53160,	-- Ancient Crypt Key
+							},		
+							{	-- Battered Twilight Scale	
+								["itemID"] = 163478,	-- Battered Twilight Scale
+								["questID"] = 53171,	-- Battered Twilight Scale
+							},		
+							{	-- Bloodwake Drinking Horn	
+								["itemID"] = 163472,	-- Bloodwake Drinking Horn
+								["questID"] = 53163,	-- Bloodwake Drinking Horn
+							},		
+							{	-- Broken Compass	
+								["itemID"] = 163482,	-- Broken Compass
+								["questID"] = 53177,	-- Broken Compass
+							},		
+							{	-- Druidic Fur	
+								["itemID"] = 163485,	-- Druidic Fur
+								["questID"] = 53181,	-- Druidic Fur
+							},		
+							{	-- Elemental Core	
+								["itemID"] = 163476,	-- Elemental Core
+								["questID"] = 53169,	-- Elemental Core
+							},		
+							{	-- Glittering Scarab	
+								["itemID"] = 163481,	-- Glittering Scarab
+								["questID"] = 53176,	-- Glittering Scarab
+							},		
+							{	-- Icetusk Fur Cloak	
+								["itemID"] = 163474,	-- Icetusk Fur Cloak
+								["questID"] = 53167,	-- Icetusk Fur Cloak
+							},		
+							{	-- Magical Spyglass	
+								["itemID"] = 163475,	-- Magical Spyglass
+								["questID"] = 53168,	-- Magical Spyglass
+							},		
+							{	-- Murloc Eye	
+								["itemID"] = 163480,	-- Murloc Eye
+								["questID"] = 53174,	-- Murloc Eye
+							},		
+							{	-- Notched Coin	
+								["itemID"] = 163466,	-- Notched Coin
+								["questID"] = 53155,	-- Notched Coin
+							},		
+							{	-- Razorfin Hunting Spear	
+								["itemID"] = 163483,	-- Razorfin Hunting Spear
+								["questID"] = 53178,	-- Razorfin Hunting Spear
+							},		
+							{	-- Ring of the Reefs	
+								["itemID"] = 163471,	-- Ring of the Reefs
+								["questID"] = 53161,	-- Ring of the Reefs
+							},		
+							{	-- Sonic Stone	
+								["itemID"] = 163473,	-- Sonic Stone
+								["questID"] = 53164,	-- Sonic Stone
+							},		
+							{	-- Strangling Root	
+								["itemID"] = 163486,	-- Strangling Root
+								["questID"] = 53182,	-- Strangling Root
+							},		
+							{	-- Unscarred Black Scale	
+								["itemID"] = 163477,	-- Unscarred Black Scale
+								["questID"] = 53170,	-- Unscarred Black Scale
+							},		
+							{	-- Venture Co. Business Plan	
+								["itemID"] = 163479,	-- Venture Co. Business Plan
+								["questID"] = 53172,	-- Venture Co. Business Plan
+							},		
+							{	-- Vorus'arak's Carapace	
+								["itemID"] = 163484,	-- Vorus'arak's Carapace
+								["questID"] = 53180,	-- Vorus'arak's Carapace
+							},		
+							{	-- Weathered Pamphlet	
+								["itemID"] = 163488,	-- Weathered Pamphlet
+								["questID"] = 53184,	-- Weathered Pamphlet
+							},		
+							{	-- Wriggling Mass	
+								["itemID"] = 163487,	-- Wriggling Mass
+								["questID"] = 53183,	-- Wriggling Mass
+							},		
+						},
+					},
+				},
+			}),
 			n(-17, {	-- Quests
 				["groups"] = {
 					{	-- Azeroth's Tear [Both]
