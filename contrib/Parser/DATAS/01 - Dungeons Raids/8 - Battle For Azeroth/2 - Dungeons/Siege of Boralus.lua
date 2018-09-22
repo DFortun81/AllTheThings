@@ -95,7 +95,7 @@ _.Instances =
 									i(159376),	-- Hook-Barbed Spaulders
 									i(159431),	-- Kraken Shell Pauldrons
 									i(159314),	-- Cephalohide Jacket
-									i(159416),	-- Haarpooner's Plate Cuirass
+									i(159416),	-- Harpooner's Plate Cuirass
 									i(159362),	-- Tri-Heart Chestguard
 									i(159256),	-- Iron-Kelp Wristwraps
 								},
