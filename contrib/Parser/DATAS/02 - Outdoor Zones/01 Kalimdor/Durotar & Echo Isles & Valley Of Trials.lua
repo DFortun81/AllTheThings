@@ -78,7 +78,7 @@ _.Zones =
 					}),
 				}),
 				n(-17, { -- Quests
---[[				
+--[[
 					qg(56013, q(31450)),	-- A New Fate (QG on The Wandering Isle)
 					qg(97296, qh(40976, {	-- Audience with the Warchief
 						["groups"] = {
@@ -462,7 +462,7 @@ _.Zones =
 							i(6337),	-- Infantry Leggings
 							i(6269),	-- Pioneer Trousers
 						},
-					}), 
+					}),
 					n(5822, {	-- Felweaver Scornn
 						["groups"] = {
 							i(6267),	-- Disciple's Pants
@@ -491,7 +491,7 @@ _.Zones =
 							i(6269),	-- Pioneer Trousers
 							i(6268),	-- Pioneer Tunic
 						},
-					}), 
+					}),
 					n(5826, {	-- Geolord Mottle -- NO TRANSMOGGABLE LOOT!
 						["coords"] = {
 							{ 43.2, 39.6 },
@@ -1070,12 +1070,13 @@ _.Zones =
 								n(-17, {	-- Quests
 									qh(24752, {	-- The Arts of a Mage
 										["qg"] = 38246,	-- Soratha
+										["u"] = 40, -- Legacy Quest/Quest Item
 									}),
 								}),
 							},
 						}),
 					},
-					["icon"] = "Interface\\Icons\\Achievement_Character_Troll_Male",			
+					["icon"] = "Interface\\Icons\\Achievement_Character_Troll_Male",
 					["description"] = "|cff66ccff The Echoes Isles are the ancestral home of the Darkspear Trolls. Vol'jin, the leader of the trolls, has relocated here after tensions between Hellscream and the trolls.|r",
 				}),
 				m(461, {	-- Valley of Trials
@@ -1172,11 +1173,11 @@ _.Zones =
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",
 					["description"] = "|cff66ccffThe Valley of Trials in southern Durotar is where all young orc adventurers begin their journey. Within the valley, they are safe from external threats while taking on challenges that enable them to get used to their new status as recruits of the Horde.|r",
-				}),	
+				}),
 			},
 			["achievementID"] = 728,
 			["lvl"] = 1,
-			["description"] = "|cff66ccffDurotar is the Horde starting zone for orcs and trolls. Thrall chose this land for the orcs to settle in, naming it Durotar after his father, Durotan. After the Shattering, more of the zone is flooded from the Southfury River, and the quests reflect Hellscream's new military rule.|r",				
+			["description"] = "|cff66ccffDurotar is the Horde starting zone for orcs and trolls. Thrall chose this land for the orcs to settle in, naming it Durotar after his father, Durotan. After the Shattering, more of the zone is flooded from the Southfury River, and the quests reflect Hellscream's new military rule.|r",
 		}),
 	}),
 };

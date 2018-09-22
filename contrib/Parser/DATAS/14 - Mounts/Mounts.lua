@@ -466,8 +466,12 @@ _.Mounts =
 		i(87775),		-- Yu'lei, Daughter of Jade
 	}),
 	n(-2, { 	-- Vendor
-		i(161911),	-- Admiralty Stallion
-		i(161773),	-- Alabaster Hyena
+		i(161911, {	-- Admiralty Stallion
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(161773,	{ -- Alabaster Hyena
+			["races"] = HORDE_ONLY,
+		}),
 		i(85262),		-- Amber Scorpion
 		i(141713),		-- Arcadian War Turtle
 		{
@@ -545,7 +549,9 @@ _.Mounts =
 		i(33999),		-- Cenarion War Hippogryph
 		i(116789),		-- Champion's Treadblade
 		i(5655),		-- Chestnut Mare
-		i(161665),		-- Cobalt Pterrordax
+		i(161665, { -- Cobalt Pterrordax
+			["races"] = HORDE_ONLY,
+		}),
 		i(31830),		-- Cobalt Riding Talbuk (Alliance)
 		i(31829),		-- Cobalt Riding Talbuk (Horde)
 		i(29227),		-- Cobalt War Talbuk (Alliance)
@@ -553,7 +559,9 @@ _.Mounts =
 		i(123974),		-- Corrupted Dreadwing
 		i(95565),		-- Crimson Primal Direhorn
 		i(87791),		-- Crimson Water Strider
-		i(161912),		-- Dapple Grey
+		i(161912,	{ -- Dapple Grey
+			["races"] = ALLIANCE_ONLY,
+		}),
 		i(63125),		-- Dark Phoenix
 		i(28915),		-- Dark Riding Talbuk
 		i(29228),		-- Dark War Talbuk
@@ -568,7 +576,9 @@ _.Mounts =
 		i(116664),		-- Dusky Rockhide
 		i(25472),		-- Ebon Gryphon
 		i(8588),		-- Emerald Raptor
-		i(161774),		-- Expedition Bloodswarmer
+		i(161774, {	-- Expedition Bloodswarmer
+			["races"] = HORDE_ONLY,
+		}),
 		i(45590),		-- Exodar Elekk
 		i(45597),		-- Forsaken Warhorse
 		i(19029),		-- Frostwolf Howler
@@ -742,7 +752,9 @@ _.Mounts =
 		i(29229),		-- Silver War Talbuk (Alliance)
 		i(29104),		-- Silver War Talbuk (Horde)
 		i(45596),		-- Silvermoon Hawkstrider
-		i(161910),		-- Smoky Charger
+		i(161910,	{ -- Smoky Charger
+			["races"] = ALLIANCE_ONLY,
+		}),
 		i(25472),		-- Snowy Gryphon
 		i(64998),		-- Spectral Steed (Alliance)
 		i(64999),		-- Spectral Wolf (Horde)
