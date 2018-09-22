@@ -74,7 +74,7 @@ _.WorldEvents =
 								i(116757),	-- Steamworks Sausage Grill
 								i(116756),	-- Stout Alemental
 								i(138730, {	-- Synthebrew Goggles XL
-									ach(1260),	-- Almost Blind Luck
+									["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible
 								}),
 								i(122341),	-- Timeworn Heirloom Scabbard
 								i(151615),	-- Weathered Heirloom Scabbard
@@ -123,7 +123,9 @@ _.WorldEvents =
 								}),
 								i(122339),	-- Ancient Heirloom Scabbard
 								i(119209),	-- Angry Brewfest Letter
-								i(34008),	-- Blix's Eyesight Enhancing Romance Goggles
+								i(34008, {	-- Blix's Eyesight Enhancing Romance Goggles
+									["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible
+								}),
 								i(116758),	-- Brewfest Banner
 								i(71137),	-- Brewfest Keg Pony
 								i(33927),	-- Brewfest Pony Keg
@@ -136,7 +138,7 @@ _.WorldEvents =
 								i(116757),	-- Steamworks Sausage Grill
 								i(116756),	-- Stout Alemental
 								i(138730, {	-- Synthebrew Goggles XL
-									ach(1260),	-- Almost Blind Luck
+									["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible
 								}),
 								i(122341),	-- Timeworn Heirloom Scabbard
 								i(151615),	-- Weathered Heirloom Scabbard
