@@ -256,13 +256,13 @@ profession(165, { -- Leatherworking
 			i(47635), -- Pattern: Bracers of Swift Death(Horde only)
 			i(47647), -- Pattern: Bracers of Swift Death(Alliance only)
 			i(35218), -- Pattern: Carapace of Sun and Shadow
-			un(8, i(29724)), -- Pattern: Cobrascale Gloves
+			i(29724), -- Pattern: Cobrascale Gloves
 			i(35302), -- Pattern: Cobrascale Gloves			
 			i(29723), -- Pattern: Cobrascale Hood
 			i(29730), -- Pattern: Earthen Netherscale Boots
 			i(35217), -- Pattern: Embrace of the Phoenix
 			i(35214), -- Pattern: Gloves of Immortal Dusk
-			un(8, i(29727)), -- Pattern: Gloves of the Living Touch
+			i(29727), -- Pattern: Gloves of the Living Touch
 			i(35303), -- Pattern: Gloves of the Living Touch
 			i(29726), -- Pattern: Hood of Primal Life
 			i(30308), -- Pattern: Hurricane Boots	
