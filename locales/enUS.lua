@@ -1049,6 +1049,7 @@ AllTheThings.Locales.enUS = {
 		[-202] = "Zealous", -- Paladin
 		[-203] = "Valiant", -- Warrior
 		[-204] = "Ebonsoul", -- Death Knight
+		[-205] = "Monastic", -- Monk
 		[-206] = GetSpellInfo(67772),											-- Paragon
 		[-207] = GetSpellInfo(262064),											-- Lightforged Draenei
 		[-208] = GetSpellInfo(262062),											-- Void Elf
