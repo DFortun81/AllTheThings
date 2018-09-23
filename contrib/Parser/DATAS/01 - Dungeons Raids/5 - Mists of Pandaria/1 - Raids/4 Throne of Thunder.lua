@@ -2101,7 +2101,7 @@ _.Instances =
 									i(96520),	-- Anima-Ringed Fingers
 									i(96521),	-- Matter-Swapped Legplates
 									i(96519),	-- Worldbinder Leggings
-									i(94961),	-- Gore-Soaked Gear
+									i(96513),	-- Gore-Soaked Gear
 									i(96516),	-- Cha-Ye's Essence of Brilliance
 									i(96523),	-- Delicate Vial of the Sanguinaire
 									n(-355, {	-- Thunderforged
@@ -2260,7 +2260,7 @@ _.Instances =
 									i(96554),	-- Ultimate Protection of the Emperor
 									i(96562),	-- Lei Shen's Orb of Command
 									i(96550),	-- Doomed Crown of Lei Shen
-									i(94994),	-- Soul Prism of Lei Shen
+									i(96560),	-- Soul Prism of Lei Shen
 									i(96548),	-- Fusion Slasher Chestguard
 									i(96565),	-- Lei Shen's Grounded Carapace
 									i(96557),	-- Gloves of the Maimed Vizier
