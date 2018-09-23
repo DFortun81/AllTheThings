@@ -299,6 +299,22 @@ WOD_CRAFTED_ITEM = function(id)
 end
 
 -- Construct a commonly formatted object.
+struct = function(field, id, t)
+	if not t then t = {};
+	elseif not t.groups and t[1] then
+		t = { ["groups"] = bubbleUp(t) };
+	elseif t.groups then
+		t.groups = bubbleUp(t.groups);
+	end
+	t[field] = id;
+	return t;
+end
+
+-- Helper Functions
+addObject = function(o, t)
+	table.insert(t, o);
+	return t;
+end
 bubbleDown = function(data, t)
 	for i, group in ipairs(t) do
 		for key, value in pairs(data) do
@@ -343,16 +359,6 @@ bubbleUp = function(t)
 			end
 		end
 	end
-	return t;
-end
-struct = function(field, id, t)
-	if not t then t = {};
-	elseif not t.groups and t[1] then
-		t = { ["groups"] = bubbleUp(t) };
-	elseif t.groups then
-		t.groups = bubbleUp(t.groups);
-	end
-	t[field] = id;
 	return t;
 end
 

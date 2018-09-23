@@ -1560,6 +1560,38 @@ _.Zones =
 							["qg"] = 26504,	-- Soar Hawkfury
 						}),
 					}),
+					
+					
+					-- Crieve Note: I absolutely hate the way the above section is organized. Someday, I'm cleaning this mess up.
+					-- That day is not today. Tomorrow doesn't look good either. Also, someone deleted these quests from the list.
+					-- I remember adding them a million billion years ago. Please don't delete them again. Thanks!
+					{
+						["questID"] = 26013,	-- Assault on the Sanctum
+						["sourceQuest"] = 26012,	-- Trouble at Wyrmrest
+						["qg"] = 27990,	-- Krasus <Consort of the Queen>
+					},
+					{
+						["questID"] = 13385,	-- Heroic Judgment at the Eye of Eternity
+						["sourceQuest"] = 13375,	-- The Heroic Key to the Focusing Iris
+						["qg"] = 27990,	-- Krasus <Consort of the Queen>
+						["groups"] = {
+							i(44664),	-- Favor of the Dragon Queen
+							i(44662),	-- Life-Binder's Locket
+							i(44665),	-- Nexus War Champion Beads
+							i(44661),	-- Wyrmrest Necklace of Power
+						},
+					},
+					{
+						["questID"] = 13384,	-- Judgment at the Eye of Eternity
+						["sourceQuest"] = 13372,	-- The Key to the Focusing Iris
+						["qg"] = 27990,	-- Krasus <Consort of the Queen>
+						["groups"] = {
+							i(44658),	-- Chain of the Ancient Wyrm
+							i(44660),	-- Drakescale Collar
+							i(44659),	-- Pendant of the Dragonsworn
+							i(44657),	-- Torque of the Red Dragonflight
+						},
+					},
 				}),	
 				n(-2, {		-- Vendors
 					nh(26569, {	-- Alys Vol'tyr <Reagents & Enchanting Supplies>
