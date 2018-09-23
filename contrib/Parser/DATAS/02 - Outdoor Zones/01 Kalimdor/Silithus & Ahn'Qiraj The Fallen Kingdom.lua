@@ -836,38 +836,94 @@ END OF MICRO-HOLIDAY --]]
 									un(7, i(20693)), 	-- Weighted Cloak
 								})),
 							})),
-							un(40, q(8316, {	-- Armaments of War (Warrior)
-								un(2, i(20699)),	-- Cenarion Reservist's Legplates
-								un(2, i(20710)),	-- Crystal Encrusted Greaves
-							})),
-							un(40, q(8376, {	-- Armaments of War (Paladin)
-								un(2, i(20700)),	-- Cenarion Reservist's Legplates
-								un(2, i(20711)),	-- Crystal Lined Greaves
-							})),
-							un(40, q(8377, {	-- Armaments of War (Hunter)
-								un(2, i(20702)),	-- Cenarion Reservist's Legguards
-								un(2, i(20713)),	-- Desertstalkers' Gauntlets
-							})),
-							un(40, q(8378, {	-- Armaments of War (Rogue)
-								un(2, i(20703)),	-- Cenarion Reservist's Leggings
-								un(2, i(20715)),	-- Dunestalker's Boots
-							})),
-							un(40, q(8379, {	-- Armaments of War (Priest)
-								un(2, i(20707)),	-- Cenarion Reservist's Pants
-								un(2, i(20717)),	-- Desert Bloom Gloves
-							})),
-							un(40, q(8380, {	-- Armaments of War (Shaman)
-								un(2, i(20701)),	-- Cenarion Reservist's Legguards
-								un(2, i(20712)),	-- Wastewalker's Gauntlets
-							})),
-							un(40, q(8381, {	-- Armaments of War (Mage, Warlock)
-								un(2, i(20705)),	-- Cenarion Reservist's Pants
-								un(2, i(20716)),	-- Sandworm Skin Gloves
-							})),
-							un(40, q(8382, {	-- Armaments of War (Rogue)
-								un(2, i(20704)),	-- Cenarion Reservist's Leggings
-								un(2, i(20714)),	-- Sandstorm Boots
-							})),
+							{
+								["questID"] = 8316,	-- Armaments of War (Warrior)
+								["qg"] = 15183,	-- Geologist Larksbane
+								["sourceQuest"] = 8315,	-- The Calling
+								["classes"] = { 1 },	-- Warrior
+								["u"] = 40,	-- Legacy Quest
+								["groups"] = {
+									un(2, i(20699)),	-- Cenarion Reservist's Legplates
+									un(2, i(20710)),	-- Crystal Encrusted Greaves
+								},
+							},
+							{
+								["questID"] = 8376,	-- Armaments of War (Paladin)
+								["qg"] = 15183,	-- Geologist Larksbane
+								["sourceQuest"] = 8315,	-- The Calling
+								["classes"] = { 2 },	-- Paladin
+								["u"] = 40,	-- Legacy Quest
+								["groups"] = {
+									un(2, i(20700)),	-- Cenarion Reservist's Legplates
+									un(2, i(20711)),	-- Crystal Lined Greaves
+								},
+							},
+							{
+								["questID"] = 8377,	-- Armaments of War (Hunter)
+								["qg"] = 15183,	-- Geologist Larksbane
+								["sourceQuest"] = 8315,	-- The Calling
+								["classes"] = { 3 },	-- Hunter
+								["u"] = 40,	-- Legacy Quest
+								["groups"] = {
+									un(2, i(20702)),	-- Cenarion Reservist's Legguards
+									un(2, i(20713)),	-- Desertstalkers' Gauntlets
+								},
+							},
+							{
+								["questID"] = 8378,	-- Armaments of War (Rogue)
+								["qg"] = 15183,	-- Geologist Larksbane
+								["sourceQuest"] = 8315,	-- The Calling
+								["classes"] = { 4 },	-- Rogue
+								["u"] = 40,	-- Legacy Quest
+								["groups"] = {
+									un(2, i(20703)),	-- Cenarion Reservist's Leggings
+									un(2, i(20715)),	-- Dunestalker's Boots
+								},
+							},
+							{
+								["questID"] = 8379,	-- Armaments of War (Priest)
+								["qg"] = 15183,	-- Geologist Larksbane
+								["sourceQuest"] = 8315,	-- The Calling
+								["classes"] = { 5 },	-- Priest
+								["u"] = 40,	-- Legacy Quest
+								["groups"] = {
+									un(2, i(20707)),	-- Cenarion Reservist's Pants
+									un(2, i(20717)),	-- Desert Bloom Gloves
+								},
+							},
+							{
+								["questID"] = 8380,	-- Armaments of War (Shaman)
+								["qg"] = 15183,	-- Geologist Larksbane
+								["sourceQuest"] = 8315,	-- The Calling
+								["classes"] = { 7 },	-- Shaman
+								["u"] = 40,	-- Legacy Quest
+								["groups"] = {
+									un(2, i(20701)),	-- Cenarion Reservist's Legguards
+									un(2, i(20712)),	-- Wastewalker's Gauntlets
+								},
+							},
+							{
+								["questID"] = 8381,	-- Armaments of War (Mage, Warlock)
+								["qg"] = 15183,	-- Geologist Larksbane
+								["sourceQuest"] = 8315,	-- The Calling
+								["classes"] = { 8, 9 },	-- Mage, Warlock
+								["u"] = 40,	-- Legacy Quest
+								["groups"] = {
+									un(2, i(20705)),	-- Cenarion Reservist's Pants
+									un(2, i(20716)),	-- Sandworm Skin Gloves
+								},
+							},
+							{
+								["questID"] = 8382,	-- Armaments of War (Druid)
+								["qg"] = 15183,	-- Geologist Larksbane
+								["sourceQuest"] = 8315,	-- The Calling
+								["classes"] = { 11 },	-- Druid
+								["u"] = 40,	-- Legacy Quest
+								["groups"] = {
+									un(2, i(20704)),	-- Cenarion Reservist's Leggings
+									un(2, i(20714)),	-- Sandstorm Boots
+								},
+							},
 							un(40, q(8573, {	-- Champion's Battlegear
 								un(2, i(21180)),	-- Earthstrike
 								un(2, i(21188)),	-- Fist of Cenarius
@@ -890,6 +946,12 @@ END OF MICRO-HOLIDAY --]]
 								un(2, i(21189)),	-- Might of Cenarius
 								un(2, i(21186)),	-- Rockfury Bracers
 							})),
+							{
+								["questID"] = 8315,	-- The Calling
+								["qg"] = 15183,	-- Geologist Larksbane
+								["sourceQuest"] = 8314,	-- Unraveling the Mystery
+								["u"] = 40,	-- Legacy Quest
+							},
 							un(40, q(9023, {	-- The Perfect Poison
 								un(2, i(22348)),	-- Doomulus Prime
 								un(2, i(22347)),	-- Fahrad's Reloading Repeater

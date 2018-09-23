@@ -13,7 +13,6 @@ _.NeverImplemented =
 	un(1, i(44557)),	-- Swift Ebonweave Carpet (NOT IN GAME)
 	un(1, i(44556)),	-- Swift Spellfire Carpet (NOT IN GAME)
 	un(1, i(44555)),	-- Swift Mooncloth Carpet (NOT IN GAME)
-	un(1, i(20703)),	-- Cenarion Reservist's Leggings (Leather)
 	un(1, i(22230)),	-- Frightmaw Hide (Cloak)
 	un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
 	un(1, i(54655)),	-- Stormshroud Armor (Leather)
@@ -81,7 +80,6 @@ _.NeverImplemented =
 	un(1, i(157751)), -- Drape of New Beginnings
 	un(1, i(134693)), -- Enveloping Cape
 	un(1, i(134699)), -- Enveloping Drape
-	un(1, i(153829)), -- Mountainsage Cloak of Destruction
 	un(1, i(134609)), -- Scorching Cape
 	un(1, i(134617)), -- Scorching Drape
 	un(1, i(150489)), -- Shroud of Forgiveness
@@ -90,14 +88,6 @@ _.NeverImplemented =
 	un(1, i(134605)), -- Vanguard Cloak
 	un(1, i(134013)), -- Chef's Hat [Likely the cosmetic effect from when you use the toy]
 	-- LIKELY PART OF 110 TRIAL SET
-	un(1, i(153826)), -- Mountainsage Cord
-	un(1, i(153821)), -- Mountainsage Handwraps
-	un(1, i(153822)), -- Mountainsage Hood
-	un(1, i(153823)), -- Mountainsage Leggings
-	un(1, i(153824)), -- Mountainsage Robe
-	un(1, i(153820)), -- Mountainsage Sandals
-	un(1, i(153825)), -- Mountainsage Shoulderpads
-	un(1, i(153827)), -- Mountainsage Wristwraps
 	un(1, i(150651)), -- Mountainsage Cord
 	un(1, i(150646)), -- Mountainsage Handwraps
 	un(1, i(150647)), -- Mountainsage Hood
