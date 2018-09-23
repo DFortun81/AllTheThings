@@ -3661,7 +3661,7 @@ _.ExpansionFeatures =
 							i(116784), -- Mount
 						}),
 					}),
-					n(-124, { 	 -- War Mill
+					n(-125, { 	 -- War Mill
 						qh(37043, {
 							i(118372),
 						}),
@@ -4615,7 +4615,7 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					n(-124, {	-- War Mill
+					n(-125, {	-- War Mill
 						nh(79815, {	-- Grun'lek - Quartermaster -- War Mill
 							i(113681, { -- Iron Horde Scraps
 								["groups"] = {

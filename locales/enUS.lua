@@ -370,7 +370,7 @@ AllTheThings.Locales.enUS = {
 		[-121] = "Interface\\Icons\\inv_misc_rune_01", 							-- Frostwall Tavern
 		[-122] = "Interface\\Icons\\garrison_building_workshop", 				-- Goblin Workshop
 		[-123] = "Interface\\Icons\\garrison_building_magetower", 				-- Spirit Lodge
-		[-124] = "Interface\\Icons\\garrison_building_armory", 					-- War Mill
+		[-124] = "Interface\\Icons\\garrison_building_armory", 					-- Garrison Sets
 		[-125] = "Interface\\Icons\\garrison_building_armory", 					-- Dwarven Bunker
 		[-126] = "Interface\\Icons\\garrison_building_workshop", 				-- Gnomish Gearworks
 		[-127] = "Interface\\Icons\\inv_pick_02", 								-- Lunarfall Excavation
@@ -949,7 +949,7 @@ AllTheThings.Locales.enUS = {
 		[-121] = select(2,C_Garrison.GetBuildingInfo(34)), 						-- Lunarfall Inn / Frostwall Tavern
 		[-122] = select(2,C_Garrison.GetBuildingInfo(162)), 					-- Gnomish Gearworks / Goblin Workshop
 		[-123] = select(2,C_Garrison.GetBuildingInfo(37)), 						-- Mage Tower / Spirit Lodge
-		[-124] = select(2,C_Garrison.GetBuildingInfo(8)), 						-- Dwarven Bunker / War Mill
+		[-124] = "Garrison Sets", 												-- Garrison Sets
 -- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-125] = select(2,C_Garrison.GetBuildingInfo(8)), 						-- Dwarven Bunker / War Mill
 		[-126] = select(2,C_Garrison.GetBuildingInfo(162)), 					-- Gnomish Gearworks / Goblin Workshop
