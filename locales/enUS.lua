@@ -559,6 +559,9 @@ AllTheThings.Locales.enUS = {
 		[-580] = "Interface\\Icons\\inv_hammer_23",								-- Master Hammersmith
 		[-581] = "Interface\\Icons\\inv_sword_41",								-- Master Swordsmith
 		[-582] = "Interface\\Icons\\inv_chest_plate04",							-- Armorsmith
+		[-593] = "Interface\\Icons\\70_inscription_deck_Hellfire",				-- Kill Credit 1
+		[-594] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",			-- Kill Credit 2
+		[-595] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",			-- Kill Credit 3
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",			-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",				-- The Black Vault
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",		-- Tier 3.5
@@ -1228,6 +1231,22 @@ AllTheThings.Locales.enUS = {
 		[-581] = GetSpellInfo(17039),											-- Master Swordsmith
 		[-582] = GetSpellInfo(9788),											-- Armorsmith
 
+-- Raid Buff Stack Size
+
+		[-583] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 1),				-- Power Increased to Level 1
+		[-584] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 2),				-- Power Increased to Level 2
+		[-585] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 3),				-- Power Increased to Level 3
+		[-586] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 4),				-- Power Increased to Level 4
+		[-587] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 5),				-- Power Increased to Level 5
+		[-588] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 6),				-- Power Increased to Level 6
+		[-589] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 7),				-- Power Increased to Level 7
+		[-590] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 8),				-- Power Increased to Level 8
+		[-591] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 9),				-- Power Increased to Level 9
+		[-592] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 10),				-- Power Increased to Level 10
+		[-593] = GetSpellInfo(228357).." Tower",								-- Kill Credit 1
+		[-594] = GetSpellInfo(228357).." Tower",								-- Kill Credit 2
+		[-595] = GetSpellInfo(228357).." Tower",								-- Kill Credit 3
+		
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 
