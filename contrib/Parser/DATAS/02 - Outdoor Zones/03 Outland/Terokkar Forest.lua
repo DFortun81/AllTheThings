@@ -614,6 +614,12 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
+							un(40, qh(9980, { -- Rescue Deirom!
+								un(1, i(25967)),	-- Eagle Crested Pauldrons
+								un(1, i(25968)),	-- Shalassi Sentry's Epaulets
+								un(1, i(25969)),	-- Rapscallion's Touch
+								un(1, i(25970)),	-- Shalassi Oracle's Sandals
+							})),
 							un(40, qdg(q(10218, {	-- Someone Else's Hard Work Pays Off
 								un(2, i(29328)),	-- Consortium Prince's Wrap
 								un(2, i(29327)),	-- Cryo-mitts
@@ -627,10 +633,6 @@ _.Zones =
 								un(2, i(29344)),	-- Haramad's Linked Chain Pantaloons
 							}))),
 						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 					},
 				}),
 			},
