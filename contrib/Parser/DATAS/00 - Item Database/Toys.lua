@@ -152,6 +152,7 @@ t(143828);	-- Dragon Body Costume
 t(143827);	-- Dragon Head Costume
 t(143829);	-- Dragon Tail Costume
 t(64361);	-- Druid and Priest Statue Set
+t(163740);	-- Drust Ritual Knife
 t(160509);	-- Echoes of Rezan
 t(134032);	-- Elite Pennant
 t(21540);	-- Elune's Lantern
