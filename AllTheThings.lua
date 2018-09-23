@@ -2711,7 +2711,7 @@ end
 
 -- Tooltip Functions
 local function RecalculateGroupTotals(group)
-	if group.collectible then
+	if group.collectible and app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 		group.total = 1;
 		if group.collected then
 			group.progress = 1;
