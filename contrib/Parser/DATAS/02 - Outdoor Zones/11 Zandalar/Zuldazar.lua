@@ -114,6 +114,16 @@ _.Zones =
 						},
 						ach(12482, {	-- Get Hek'd
 							["g"] = {
+								{	-- Big Hunter Mon
+									["qg"] = 113490,	-- Jani
+									["coord"] = { 66.2, 16.6 },	-- Trashpile pick-up
+									["questID"] = 50332,	-- Big Hunter Mon
+									["criteriaID"] = 4,	-- Big Hunter Mon
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani (Alliance)
+										47442,	-- Curse of Jani (Horde)
+									},
+								},
 								{	-- Golden Ravasaur Egg
 									["crs"] = {
 										131560,	-- Feral Ravasaur

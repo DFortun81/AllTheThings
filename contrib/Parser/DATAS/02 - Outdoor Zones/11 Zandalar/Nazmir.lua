@@ -184,16 +184,6 @@ _.Zones =
 										47442,	-- Curse of Jani (Horde)
 									},
 								},
-								{	-- Big Hunter Mon
-									["qg"] = 113490,	-- Jani
-									["coord"] = { 66.2, 16.6 },	-- Trashpile pick-up
-									["questID"] = 50332,	-- Big Hunter Mon
-									["criteriaID"] = 4,	-- Big Hunter Mon
-									["sourceQuests"] = { 
-										51145,	-- Curse of Jani (Alliance)
-										47442,	-- Curse of Jani (Horde)
-									},
-								},
 								{	-- Snapjaw Tail
 									["crs"] = {
 										126723,	-- Primal Snapjaw
