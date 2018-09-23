@@ -1430,12 +1430,11 @@ _.Zones =
 					}),
 					n(70323, {	-- Krakkanon
 						dr(14, {
-							{
-								["itemID"] = 88563,	-- Nat's Fishing Journal
-								["questID"] = 31664,	-- An Angler's Quest
-								["repeatable"] = true,
-								["icon"] = "Interface\\Icons\\inv_misc_book_11",
-							},
+							["itemID"] = 88563,	-- Nat's Fishing Journal
+							["questID"] = 31664,	-- An Angler's Quest
+							["repeatable"] = true,
+							["icon"] = "Interface\\Icons\\inv_misc_book_11",
+							["collectible"] = false,
 						}),
 					}),
 					n(68317, {	-- Mavis Harms
