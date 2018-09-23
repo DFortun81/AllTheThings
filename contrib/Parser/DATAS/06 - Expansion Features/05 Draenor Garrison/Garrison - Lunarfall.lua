@@ -2341,7 +2341,7 @@ _.ExpansionFeatures =
 							i(115506), -- Toy
 						}),
 					}),
-					n(-128, { 	-- Lunrfall Inn
+					n(-128, { 	-- Lunarfall Inn
 						desc(i(119036, { -- Box of Storied Treasures [4]
 							i(109957),	-- Alc's Pendant of Fiery Dreams
 							i(109779),	-- Ancient Draenic Loop
@@ -3663,6 +3663,45 @@ _.ExpansionFeatures =
 						}),
 						q(37028, {
 							i(116784), -- Mount
+						}),
+					}),
+					garrisonBuilding(144, {	-- Trading Post
+						q(36948, {	-- Auctioning for Parts
+							["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
+							["qg"] = 87206,	-- Ancient Trading Mechanism
+							["groups"] = addObject(
+								bubbleDown({["u"] = 7, ["description"] = "This item is no longer required to complete the Auctioning for Parts garrison quest."}, {
+									i(118377, {	-- Universal Language Module
+										i(118333),	-- Universal Language Compensator [Part 1 of 3]
+										i(118334),	-- Universal Language Filter [Part 2 of 3]
+										i(118335),	-- Universal Language Repository [Part 3 of 3]
+									}),
+								})[1],
+								bubbleDown({["questID"] = 36948}, {	-- Auctioning for Parts
+								i(118375, {	-- Arcane Crystal Module
+									i(118344),	-- Arcane Crystal Casing [Part 1 of 4]
+									i(118345),	-- Arcane Crystal Conduit [Part 2 of 4]
+									i(118346),	-- Arcane Crystal Amplifier [Part 3 of 4]
+									i(118347),	-- Arcane Crystal Lens [Part 4 of 4]
+								}),
+								i(118376, {	-- Auction Control Module
+									i(118197),	-- Auction Memory Socket [Part 1 of 3]
+									i(118331),	-- Auction Connecting Valve [Part 2 of 3]
+									i(118332),	-- Auction A.D.D.O.N.S Installer [Part 3 of 3]
+								}),
+								i(118379, {	-- Cyclical Power Module
+									i(118340),	-- Cyclical Power Converter [Part 1 of 4]
+									i(118341),	-- Cyclical Power Housing [Part 2 of 4]
+									i(118342),	-- Cyclical Power Framing [Part 3 of 4]
+									i(118343),	-- Cyclical Power Sequencer [Part 4 of 4]
+								}),
+								i(118378, {	-- Super Cooling Module
+									i(118336),	-- Super Cooling Regulator [Part 1 of 4]
+									i(118337),	-- Super Cooling Tubing [Part 2 of 4]
+									i(118338),	-- Super Cooling Coolant [Part 3 of 4]
+									i(118339),	-- Super Cooling Pump [Part 4 of 4]
+								}),
+							})),
 						}),
 					}),
 				}),
