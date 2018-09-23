@@ -3475,6 +3475,7 @@ local classIcons = {
 	[9] = "Interface\\Icons\\ClassIcon_Warlock",
 	[10] = "Interface\\Icons\\ClassIcon_Monk",
 	[11] = "Interface\\Icons\\ClassIcon_Druid",
+	[12] = "Interface\\Icons\\ClassIcon_DemonHunter",
 };
 app.BaseCharacterClass = {
 	__index = function(t, key)
