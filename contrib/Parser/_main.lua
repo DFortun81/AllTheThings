@@ -51,6 +51,20 @@ local DifficultyDB = {
 };
 ALLIANCE_ONLY = { 1, 3, 4, 7, 11, 22, 25, 29, 30, 32, 34 };
 HORDE_ONLY = { 2, 5, 6, 8, 9, 10, 26, 27, 28,  31, 36 };
+ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
+	1,	-- Warrior
+	2,	-- Paladin
+	3,	-- Hunter
+	4,	-- Rogue
+	5,	-- Priest
+	6,	-- Death Knight
+	7,	-- Shaman
+	8,	-- Mage
+	9,	-- Warlock
+	10,	-- Monk
+	11,	-- Druid
+	12,	-- Demon Hunter
+};
 ItemClassInfo = {
 	{
 		"Soul Bag", -- [1]
@@ -360,6 +374,42 @@ bubbleUp = function(t)
 		end
 	end
 	return t;
+end
+contains = function(arr, value)
+	for i,value2 in ipairs(arr) do
+		if value2 == value then return true; end
+	end
+end
+containsAny = function(arr, otherArr)
+	for i, v in ipairs(arr) do
+		for j, w in ipairs(otherArr) do
+			if v == w then return true; end
+		end
+	end
+end
+containsValue = function(dict, value)
+	for key,value2 in pairs(dict) do
+		if value2 == value then return true; end
+	end
+end
+exclude = function(data, t)
+	local t2 = {};
+	if type(data) == "table" then
+		-- Group of Values (You shouldn't be excluding a complex object if that's what you're trying to do)
+		for i,o in ipairs(t) do
+			if not contains(data, o) then
+				table.insert(t2, o);
+			end
+		end
+	else
+		-- Single Value
+		for i,o in ipairs(t) do
+			if o ~= data then
+				table.insert(t2, o);
+			end
+		end
+	end
+	return t2;
 end
 
 -- SHORTCUTS for Object Class Types

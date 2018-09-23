@@ -134,12 +134,8 @@ _.Zones =
 					q(13070),	-- A Cold Front Approaches
 					qa( 14074),	-- A Leg Up
 					qh( 14143),	-- A Leg Up
-					qa( 20439),	-- A Meeting With The Magister
 					qa( 13389),	-- A Short Fuse
 					qh( 13263),	-- A Short Fuse
-					qh( 24556),	-- A Suitable Disguise
-					qa( 20438),	-- A Suitable Disguise
-					
 					qa( 13689),	-- A Valiant Of Darnassus
 					qa( 13688),	-- A Valiant Of Gnomeregan
 					qa( 13685),	-- A Valiant Of Ironforge
@@ -160,12 +156,6 @@ _.Zones =
 					qa( 13744),	-- A Valiant's Field Training
 					qh( 13771),	-- A Valiant's Field Training
 					qa( 13592),	-- A Valiant's Field Training
-					qa( 24796),	-- A Victory For The Silver Covenant
-					qa( 24795),	-- A Victory For The Silver Covenant
-					qh( 24799),	-- A Victory For The Sunreavers
-					qh( 24801),	-- A Victory For The Sunreavers
-					qh( 24798),	-- A Victory For The Sunreavers
-					qh( 24800),	-- A Victory For The Sunreavers
 					q(13152),	-- A Visit to the Doctor
 					qa( 13390),	-- A Voice in the Dark
 					qh( 13271),	-- A Voice in the Dark
@@ -189,7 +179,6 @@ _.Zones =
 					qa( 13793),	-- Among the Champions
 					qh( 13811),	-- Among the Champions
 					q(13374),	-- Amped for Revolt!
-					qh( 24451),	-- An Audience With The Arcanist
 					q(13169),	-- An Undead's Best Friend
 					qh( 13363),	-- Argent Aid
 					qa( 13395),	-- Army of the Damned
@@ -299,8 +288,6 @@ _.Zones =
 					q(13136),	-- Jagged Shards
 					qh( 13340),	-- Joining the Assault
 					qa( 13341),	-- Joining the Assault
-					qa( 24522),	-- Journey To The Sunwell
-					qh( 24562),	-- Journey To The Sunwell
 					qh( 13227),	-- Judgment Day Comes!
 					qa( 13226),	-- Judgment Day Comes!
 					qh( 13331),	-- Keeping the Alliance Blind
@@ -364,8 +351,6 @@ _.Zones =
 					qa( 13322),	-- Retest Now
 					qh( 13357),	-- Retest Now
 					qh( 13356),	-- Retest Now
-					qa( 24454),	-- Return To Caladis Brightspear
-					qh( 24558),	-- Return To Myralion Sunblaze
 					qh( 13282),	-- Return to the Surface
 					qa( 13392),	-- Return to the Surface
 					q(13059),	-- Revenge for the Vargul
@@ -394,8 +379,6 @@ _.Zones =
 					qa( 13789),	-- Taking Battle To The Enemy
 					qa( 13791),	-- Taking Battle To The Enemy
 					qh( 13813),	-- Taking Battle To The Enemy
-					qa( 24476),	-- Tempering The Blade
-					qh( 24560),	-- Tempering The Blade
 					qh( 13264),	-- That's Abominable!
 					qa( 13288),	-- That's Abominable!
 					qa( 13289),	-- That's Abominable!
@@ -407,8 +390,6 @@ _.Zones =
 					q(13091),	-- The Art of Being a Water Terror
 					qh( 13680),	-- The Aspirant's Challenge
 					qa( 13679),	-- The Aspirant's Challenge
-					qa( 14443),	-- The Battered Hilt
-					qh( 24554),	-- The Battered Hilt
 					q(13141),	-- The Battle For Crusaders' Pinnacle
 					qh( 13634),	-- The Black Knight of Silverpine?
 					qa( 13633),	-- The Black Knight of Westfall?
@@ -450,8 +431,6 @@ _.Zones =
 					qa( 13745),	-- The Grand Melee
 					qh( 13316),	-- The Guardians of Corp'rethar
 					qa( 13338),	-- The Guardians of Corp'rethar
-					qa( 24480),	-- The Halls Of Reflection
-					qh( 24561),	-- The Halls Of Reflection
 					qh( 13361),	-- The Hunter and the Prince
 					qa( 13400),	-- The Hunter and the Prince
 					qa( 13337),	-- The Ironwall Rampart
@@ -460,12 +439,6 @@ _.Zones =
 					qh( 14144),	-- The Light's Mercy
 					qa( 14077),	-- The Light's Mercy
 					q(13118),	-- The Purging Of Scourgeholme
-					qh( 24564),	-- The Purification of Quel'Delar
-					qh( 24596),	-- The Purification of Quel'Delar
-					qh( 24598),	-- The Purification of Quel'Delar
-					qa( 24553),	-- The Purification of Quel'Delar
-					qh( 24594),	-- The Purification of Quel'Delar
-					qa( 24595),	-- The Purification of Quel'Delar
 					q(13110),	-- The Restless Dead
 					q(13163),	-- The Rider of Blood
 					q(13162),	-- The Rider of Frost
@@ -537,8 +510,6 @@ _.Zones =
 					q(13381),	-- Watts My Target
 					qa( 14112),	-- What Do You Feed a Yeti, Anyway?
 					qh( 14145),	-- What Do You Feed a Yeti, Anyway?
-					qh( 24555),	-- What The Dragons Know
-					qa( 14444),	-- What The Dragons Know
 					q(13117),	-- Where Are They Coming From?
 					qa( 13398),	-- Where Dragons Fell
 					qh( 13359),	-- Where Dragons Fell
@@ -565,24 +536,6 @@ _.Zones =
 						["lvl"] = 67,
 						["description"] = "For those that didn't know, this quest line was a dedication to a one Brad Bridenbecker, brother to Rob Bridenbecker VP of Online Technologies. Brad had suffered from cancer and was an avid WoW player. His brother requested some memorial be set up for his brother and Chris Metzen, along with others, thought up this quest line to immortalize his battle with cancer within our beloved fantasy realm.\n\nHats off to you, Blizzard, Chris Metzen, and the whole Bridenbecker family. As a childhood cancer survivor myself, you have my utmost respect and loyalty to your honor and vision. You've truly epitomized the struggle of one going through the sickness, the battle, in the most accurate way possible, and bring honor to all of us who have suffered, and have watched those who have suffered, the same battle.\n\nLok'tar, brother Brad. Lok'tar.",
 					},
-					qa(24795,  {  -- A Victory For The Silver Covenant
-						i(50046),
-						i(50047),
-						i(50048),
-						i(50049),
-						i(50050),
-						i(50051),
-						i(50052),
-					}),
-					qh(24799,  {  -- A Victory For The Sunreavers
-						i(50046),
-						i(50047),
-						i(50048),
-						i(50049),
-						i(50050),
-						i(50051),
-						i(50052),
-					}),
 					q(13142,  {  -- Banshee's Revenge
 						i(44028),
 						i(44029),

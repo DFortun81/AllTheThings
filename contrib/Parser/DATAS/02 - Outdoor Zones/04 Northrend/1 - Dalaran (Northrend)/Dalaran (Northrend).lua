@@ -1544,16 +1544,9 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 --[[				
-					qa( 20439),	-- A Meeting With The Magister
 					qh( 29400),	-- A Season for Celebration
-					qa( 20438),	-- A Suitable Disguise
-					qh( 24556),	-- A Suitable Disguise
 					qh( 32406),	-- A Tactical Assault
-					qa( 24796),	-- A Victory For The Silver Covenant
-					qh( 24801),	-- A Victory For The Sunreavers
-					qh( 24800),	-- A Victory For The Sunreavers
 					qa( 29608),	-- Allies in Dalaran
-					qh( 24451),	-- An Audience With The Arcanist
 					q(24580),	-- Anub'Rekhan Must Die!
 					q(28880),	-- Back To The Orphanage
 					q(28879),	-- Back To The Orphanage
@@ -1598,8 +1591,6 @@ _.Zones =
 					qa( 13418),	-- Preparations for War
 					qh( 13419),	-- Preparations for War
 					q(24586),	-- Razorscale Must Die!
-					qa( 24454),	-- Return To Caladis Brightspear
-					qh( 24558),	-- Return To Myralion Sunblaze
 					q(24579),	-- Sartharion Must Die!
 					q(13845),	-- Sealed Vial of Poison
 					q(12958),	-- Shipment: Blood Jade Amulet
@@ -1624,19 +1615,15 @@ _.Zones =
 					qa( 12794),	-- The Magical Kingdom of Dalaran
 					q(39210),	-- The Magical Kingdom of Dalaran
 					qh( 32411),	-- The Remaining Sunreavers
-					qh( 24557),	-- The Silver Covenant's Scheme
 					qh( 32408),	-- The Silver Covenant's Stronghold
 					qh( 32402),	-- The Situation In Dalaran
-					qh( 11971),	-- The Spinner of Summer Tales					
-					qa( 14457),	-- The Sunreaver Plan
+					qh( 11971),	-- The Spinner of Summer Tales
 					q(40173),	-- The Unstable Prism
 					q(14103),	-- Titanium Powder
 					q(26012),	-- Trouble at Wyrmrest
 					q(8883),	-- Valadar Starsong
 					qh( 32404),	-- Violence in the Arena
 					qa( 14203),	-- Waterlogged Recipe
-					qh( 24555),	-- What The Dragons Know
-					qa( 14444),	-- What The Dragons Know
 					q(12521),	-- Where in the World is Hemet Nesingwary?
 					q(24588),	-- XT-002 Deconstructor Must Die!
 --]]

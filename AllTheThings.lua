@@ -1979,6 +1979,8 @@ local function OpenMiniList(field, id, label)
 			for i, group in ipairs(results) do
 				header.progress = header.progress + (group.progress or 0);
 				header.total = header.total + (group.total or 0);
+				if group.description and group.mapID then header.description = group.description; end
+				if group.isRaid then header.isRaid = group.isRaid; end
 				
 				-- If this is relative to a holiday, let's do something special
 				if GetRelativeField(group, "npcID", -3) then

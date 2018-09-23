@@ -9,8 +9,6 @@ _.Instances =
 			inst(276, { 	-- Halls of Reflection
 				["groups"] = {
 					n(-17, {	-- Quests
-						a(q(24480)),	-- The Halls Of Reflection, No actual awards.
-						h(q(24561)),	-- The Halls Of Reflection, No actual awards.
 						a({
 							["questID"] = 24500,	-- Wrath of the Lich King
 							["qg"] = 37582,	-- Archmage Koreln <Kirin Tor>
@@ -121,57 +119,33 @@ _.Instances =
 						["groups"] = {
 							ach(4521),	-- Heroic: The Halls of Reflection
 							n(0, {	-- Zone Drop
-								["groups"] = {
-									i(50379, {	-- Battered Hilt (Alliance)
-										["groups"] = {
-											i(50052),	-- Lightborn Spire
-											i(50050),	-- Cudgel of Furious Justice
-											i(50051),	-- Hammer of Purified Flame
-											i(50046),	-- Quel'Delar, Cunning of the Shadows
-											i(50049),	-- Quel'Delar, Ferocity of the Scorned
-											i(50047),	-- Quel'Delar, Lens of the Mind
-											i(50048),	-- Quel'Delar, Might of the Faithful
-										},
-										["races"] = ALLIANCE_ONLY,
-									}),
-									i(50380, {	-- Battered Hilt (Horde)
-										["groups"] = {
-											i(50052),	-- Lightborn Spire
-											i(50050),	-- Cudgel of Furious Justice
-											i(50051),	-- Hammer of Purified Flame
-											i(50046),	-- Quel'Delar, Cunning of the Shadows
-											i(50049),	-- Quel'Delar, Ferocity of the Scorned
-											i(50047),	-- Quel'Delar, Lens of the Mind
-											i(50048),	-- Quel'Delar, Might of the Faithful
-										},
-										["races"] = HORDE_ONLY,
-									}),
-									i(50318, {	-- Ghostly Wristwraps
-										["crs"] = {
-											36723,	-- Frostsworn General
-											38175,	-- Ghostly Priest
-											38172,	-- Phantom Mage
-										},
-									}),
-									i(50315, {	-- Seven-Fingered Claws
-										["crs"] = {
-											36723,	-- Frostsworn General
-											38175,	-- Ghostly Priest
-											38172,	-- Phantom Mage
-											38177,	-- Shadowy Mercenary
-											38173,	-- Spectral Footman
-											38176,	-- Tortured Rifleman
-										},
-									}),
-									i(50319, {	-- Unsharpened Ice Razor
-										["crs"] = {
-											38175,	-- Ghostly Priest
-											38172,	-- Phantom Mage
-											38173,	-- Spectral Footman
-											38176,	-- Tortured Rifleman
-										},
-									}),
-								},
+								i(50379),	-- Battered Hilt (Alliance)
+								i(50380),	-- Battered Hilt (Horde)
+								i(50318, {	-- Ghostly Wristwraps
+									["crs"] = {
+										36723,	-- Frostsworn General
+										38175,	-- Ghostly Priest
+										38172,	-- Phantom Mage
+									},
+								}),
+								i(50315, {	-- Seven-Fingered Claws
+									["crs"] = {
+										36723,	-- Frostsworn General
+										38175,	-- Ghostly Priest
+										38172,	-- Phantom Mage
+										38177,	-- Shadowy Mercenary
+										38173,	-- Spectral Footman
+										38176,	-- Tortured Rifleman
+									},
+								}),
+								i(50319, {	-- Unsharpened Ice Razor
+									["crs"] = {
+										38175,	-- Ghostly Priest
+										38172,	-- Phantom Mage
+										38173,	-- Spectral Footman
+										38176,	-- Tortured Rifleman
+									},
+								}),
 							}),
 							cr(38112, e(601, {	-- Falric
 								{

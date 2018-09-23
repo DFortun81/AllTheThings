@@ -31,18 +31,9 @@ _.Zones =
 					qg(24975, q(11521)),	-- Rediscovering Your Roots
 					qg(25034, q(11534)),	-- Report to Nasuun
 					qg(25032, q(11556)),	-- Revered in the Field of Battle
-					qg(37527, qh(24563)),	-- Thalorien Dawnseeker
-					qg(37527, qa(24535)),	-- Thalorien Dawnseeker
 					qg(25057, q(11533)),	-- The Air Strikes Must Continue
 					qg(25061, q(11537)),	-- The Battle Must Go On
 					qg(24967, q(11526)),	-- The Missing Magistrix
-					qg(37527, qh(24564)),	-- The Purification of Quel'Delar
-					qg(37527, qh(24594, {	-- The Purification of Quel'Delar
-						["races"] = {10},	-- Blood Elf
-					})),
-					qg(37527, qa(24595)),	-- The Purification of Quel'Delar
-					qg(37527, qh(24598)),	-- The Purification of Quel'Delar
-					qg(37527, qa(24553)),	-- The Purification of Quel'Delar
 					qg(25112, q(11548)),	-- Your Continued Support
 --]]					
 --[[					

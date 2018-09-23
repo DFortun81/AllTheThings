@@ -6,6 +6,231 @@ _.Zones =
 	m(113, { 	-- Northrend
 		n(-363, {	-- The Argent Tournament
 			["groups"] = {
+				ach(4596, {	-- The Sword in the Skull
+					["description"] = "This is the quest chain for obtaining an epic Quel'Delar weapon.\n\nNOTE: A Warrior can learn all of the weapon appearances.",
+					["lvl"] = 67,	-- Requirement for the Batterd Hilt itself.
+					["maps"] = {
+						125,	-- Dalaran (Northrend)
+						183,	-- The Forge of Souls
+						184,	-- Pit of Saron
+						185,	-- Halls of Reflection
+						122,	-- Isle of Quel'Danas
+					},
+					["groups"] = {
+						d(2, {
+							["description"] = "The hilt can drop from trash mobs in the ICC Heroic Dungeons. (Not the raid.)",
+							["groups"] = {
+								a({
+									["itemID"] = 50379,	-- Battered Hilt
+									["questID"] = 14443,	-- The Battered Hilt [A]
+								}),
+								h({
+									["itemID"] = 50380,	-- Battered Hilt [H]
+									["questID"] = 24554,	-- The Battered Hilt [H]
+								}),
+							},
+						}),
+						a({
+							["questID"] = 14444,	-- What The Dragons Know [Alliance]
+							["sourceQuest"] = 14443,	-- The Battered Hilt [A]
+							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+						}),
+						h({
+							["questID"] = 24555,	-- What The Dragons Know [Horde]
+							["sourceQuest"] = 24554,	-- The Battered Hilt [H]
+							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						}),
+						a({
+							["questID"] = 14457,	-- The Sunreaver Plan [Alliance]
+							["sourceQuest"] = 14444,	-- What The Dragons Know [Alliance]
+							["qg"] = 36669,	-- Arcanist Tybalin
+						}),
+						h({
+							["questID"] = 24557,	-- The Silver Covenant's Scheme [Horde]
+							["sourceQuest"] = 24555,	-- What The Dragons Know [Horde]
+							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+						}),
+						a({
+							["questID"] = 20438,	-- A Suitable Disguise [Alliance]
+							["sourceQuest"] = 14457,	-- The Sunreaver Plan [Alliance]
+							["qg"] = 36669,	-- Arcanist Tybalin
+						}),
+						h({
+							["questID"] = 24556,	-- A Suitable Disguise [Horde]
+							["sourceQuest"] = 24557,	-- The Silver Covenant's Scheme [Horde]
+							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+						}),
+						a({
+							["questID"] = 20439,	-- A Meeting With The Magister [Alliance]
+							["sourceQuest"] = 20438,	-- A Suitable Disguise [Alliance]
+							["qg"] = 36669,	-- Arcanist Tybalin
+						}),
+						h({
+							["questID"] = 24451,	-- An Audience With The Arcanist [Horde]
+							["sourceQuest"] = 24556,	-- A Suitable Disguise [Horde]
+							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+						}),
+						a({
+							["questID"] = 24454,	-- Return To Caladis Brightspear [Alliance]
+							["sourceQuest"] = 20439,	-- A Meeting With The Magister [Alliance]
+							["qg"] = 36669,	-- Arcanist Tybalin
+						}),
+						h({
+							["questID"] = 24558,	-- Return To Myralion Sunblaze [Horde]
+							["sourceQuest"] = 24451,	-- An Audience With The Arcanist [Horde]
+							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+						}),
+						a({
+							["questID"] = 24461,	-- Reforging The Sword [Alliance]
+							["sourceQuest"] = 24454,	-- Return To Caladis Brightspear [Alliance]
+							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+						}),
+						h({
+							["questID"] = 24559,	-- Reforging The Sword [Horde]
+							["sourceQuest"] = 24558,	-- Return To Myralion Sunblaze [Horde]
+							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						}),
+						a({
+							["questID"] = 24476,	-- Tempering The Blade [Alliance]
+							["sourceQuest"] = 24461,	-- Reforging The Sword [Alliance]
+							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+						}),
+						h({
+							["questID"] = 24560,	-- Tempering The Blade [Horde]
+							["sourceQuest"] = 24559,	-- Reforging The Sword [Horde]
+							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						}),
+						a({
+							["questID"] = 24480,	-- The Halls Of Reflection [Alliance]
+							["sourceQuest"] = 24476,	-- Tempering The Blade [Alliance]
+							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+						}),
+						h({
+							["questID"] = 24561,	-- The Halls Of Reflection [Horde]
+							["sourceQuest"] = 24560,	-- Tempering The Blade [Horde]
+							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						}),
+						a({
+							["questID"] = 24522,	-- Journey To The Sunwell [Alliance]
+							["sourceQuest"] = 24480,	-- The Halls Of Reflection [Alliance]
+							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+						}),
+						h({
+							["questID"] = 24562,	-- Journey To The Sunwell [Horde]
+							["sourceQuest"] = 24561,	-- The Halls Of Reflection [Horde]
+							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						}),
+						a({
+							["questID"] = 24535,	-- Thalorien Dawnseeker [Alliance]
+							["sourceQuest"] = 24522,	-- Journey To The Sunwell
+							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+						}),
+						h({
+							["questID"] = 24563,	-- Thalorien Dawnseeker [Horde]
+							["sourceQuest"] = 24562,	-- Journey To The Sunwell
+							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+						}),
+						a({
+							["questID"] = 24553,	-- The Purification of Quel'Delar [Alliance]
+							["sourceQuest"] = 24535,	-- Thalorien Dawnseeker [Alliance]
+							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+						}),
+						a({
+							["questID"] = 24595,	-- The Purification of Quel'Delar [Alliance - Maces]
+							["sourceQuest"] = 24535,	-- Thalorien Dawnseeker [Alliance]
+							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+						}),
+						{
+							["questID"] = 24564,	-- The Purification of Quel'Delar [Horde]
+							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
+							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
+						},
+						{
+							["questID"] = 24598,	-- The Purification of Quel'Delar [Horde - Maces]
+							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
+							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
+						},
+						{
+							["questID"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
+							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
+							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+							["races"] = { 10 },	-- Blood Elf Only!
+						},
+						{
+							["questID"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
+							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
+							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+							["races"] = { 10 },	-- Blood Elf Only!
+						},
+						a({
+							["questID"] = 24796,	-- A Victory For The Silver Covenant [Alliance]
+							["sourceQuest"] = 24553,	-- The Purification of Quel'Delar [Alliance]
+							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+						}),
+						a({
+							["questID"] = 24795,	-- A Victory For The Silver Covenant [Alliance - Maces]
+							["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [Alliance - Maces]
+							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+						}),
+						{
+							["questID"] = 24801,	-- A Victory For The Sunreavers [Horde]
+							["sourceQuest"] = 24564,	-- The Purification of Quel'Delar [Horde]
+							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
+						},
+						{
+							["questID"] = 24799,	-- A Victory For The Sunreavers [Horde - Maces]
+							["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [Horde - Maces]
+							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
+						},
+						{
+							["questID"] = 24800,	-- A Victory For The Sunreavers [Blood Elves]
+							["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
+							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+							["races"] = { 10 },	-- Blood Elf Only!
+						},
+						{
+							["questID"] = 24798,	-- A Victory For The Sunreavers [Blood Elves - Maces]
+							["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
+							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+							["races"] = { 10 },	-- Blood Elf Only!
+						},
+						n(-6015, {	-- Rewards
+							["description"] = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
+							["sourceQuests"] = {
+								24796,	-- A Victory For The Silver Covenant [Alliance]
+								24795,	-- A Victory For The Silver Covenant [Alliance - Maces]
+								24801,	-- A Victory For The Sunreavers [Horde]
+								24799,	-- A Victory For The Sunreavers [Horde - Maces]
+								24800,	-- A Victory For The Sunreavers [Blood Elves]
+								24798,	-- A Victory For The Sunreavers [Blood Elves - Maces]
+							},
+							["groups"] = {
+								i(50050),	-- Cudgel of Furious Justice
+								i(50051),	-- Hammer of Purified Flame
+								i(50052),	-- Lightborn Spire
+								i(50046),	-- Quel'Delar, Cunning of the Shadows
+								i(50049),	-- Quel'Delar, Ferocity of the Scorned
+								i(50047),	-- Quel'Delar, Lens of the Mind
+								i(50048),	-- Quel'Delar, Might of the Faithful
+							},
+						}),
+					},
+				}),
 				n(-228, {	-- Flight Point
 					fp(340, { -- Argent Tournament Grounds, Icecrown
 						["coord"] = { 72.6, 22.6 },
