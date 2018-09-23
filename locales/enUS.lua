@@ -1243,9 +1243,9 @@ AllTheThings.Locales.enUS = {
 		[-590] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 8),				-- Power Increased to Level 8
 		[-591] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 9),				-- Power Increased to Level 9
 		[-592] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 10),				-- Power Increased to Level 10
-		[-593] = GetSpellInfo(228357).." Tower",								-- Kill Credit 1
-		[-594] = GetSpellInfo(228357).." Tower",								-- Kill Credit 2
-		[-595] = GetSpellInfo(228357).." Tower",								-- Kill Credit 3
+		[-593] = GetSpellInfo(228357).." 1",									-- Kill Credit 1
+		[-594] = GetSpellInfo(228357).." 2",									-- Kill Credit 2
+		[-595] = GetSpellInfo(228357).." 3",									-- Kill Credit 3
 		
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",

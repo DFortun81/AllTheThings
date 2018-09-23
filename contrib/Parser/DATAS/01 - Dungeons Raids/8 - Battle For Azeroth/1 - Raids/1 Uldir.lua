@@ -18,19 +18,16 @@ _.Instances =
 									{	--  Kill Credit 1
 										["questID"] = 53568,	--  Kill Credit 1
 										["npcID"] = -593,	--  Kill Credit 1
-										["repeatable"] = true,
 										["isWeekly"] = true,
 									},
 									{	--  Kill Credit 2
 										["questID"] = 53569,	--  Kill Credit 2
 										["npcID"] = -594,	--  Kill Credit 2
-										["repeatable"] = true,
 										["isWeekly"] = true,
 									},
 									{	--  Kill Credit 3
 										["questID"] = 53570,	--  Kill Credit 3
 										["npcID"] = -595,	--  Kill Credit 3
-										["repeatable"] = true,
 										["isWeekly"] = true,
 									},
 								},
@@ -39,61 +36,51 @@ _.Instances =
 								["questID"] = 53571,	-- Stack #1
 								["npcID"] = -583,	-- Power Increased to Level 1
 								["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
-								["collectible"] = true,
 							},
 							{	-- Stack #2
 								["questID"] = 53572,	-- Stack #2
 								["npcID"] = -584,	-- Power Increased to Level 2
 								["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
-								["collectible"] = true,
 							},
 							{	-- Stack #3
 								["questID"] = 53573,	-- Stack #3
 								["npcID"] = -585,	-- Power Increased to Level 3
 								["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
-								["collectible"] = true,
 							},
 							{	-- Stack #4
 								["questID"] = 53574,	-- Stack #4
 								["npcID"] = -586,	-- Power Increased to Level 4
 								["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
-								["collectible"] = true,
 							},
 							{	-- Stack #5
 								["questID"] = 53575,	-- Stack #5
 								["npcID"] = -587,	-- Power Increased to Level 5
 								["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
-								["collectible"] = true,
 							},
 							{	-- Stack #6
 								["questID"] = 53576,	-- Stack #6
 								["npcID"] = -588,	-- Power Increased to Level 6
 								["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
-								["collectible"] = true,
 							},
 							{	-- Stack #7
 								["questID"] = 53577,	-- Stack #7
 								["npcID"] = -589,	-- Power Increased to Level 7
 								["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
-								["collectible"] = true,
 							},
 							{	-- Stack #8
 								["questID"] = 53578,	-- Stack #8
 								["npcID"] = -590,	-- Power Increased to Level 8
 								["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
-								["collectible"] = true,
 							},
 							{	-- Stack #9
 								["questID"] = 53579,	-- Stack #9
 								["npcID"] = -591,	-- Power Increased to Level 9
 								["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
-								["collectible"] = true,
 							},
 							{	-- Stack #10
 								["questID"] = 53579,	-- Stack #10
 								["npcID"] = -592,	-- Power Increased to Level 10
 								["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
-								["collectible"] = true,
 							},
 						},
 					},
