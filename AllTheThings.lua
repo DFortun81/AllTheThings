@@ -908,12 +908,7 @@ app.GetSourceID = GetSourceID;
 app.MaximumItemInfoRetries = 400;
 local function SetPortraitIcon(self, data, x)
 	self.lastData = data;
-	if data.texCoords then
-		self:SetWidth(self:GetHeight());
-		self:SetTexture(data.icon);
-		self:SetTexCoord(unpack(data.texCoords));
-		return true;
-	elseif GetDataMember("ShowModels") then
+	if GetDataMember("ShowModels") then
 		if data.displayID then
 			app.SetPortraitTexture(self, data.displayID);
 			self:SetWidth(self:GetHeight());
@@ -2887,7 +2882,9 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 									end
 									
 									-- Insert into the display.
-									tinsert(items, { "  " .. (j.icon and ("|T" .. j.icon .. ":0|t") or "") .. (j.text or RETRIEVING_DATA), right });
+									local left;
+									if j.icon then left = "  |T" .. j.icon .. ":0|t "; else left = "  "; end
+									tinsert(items, { left .. (j.text or RETRIEVING_DATA), right });
 								end
 							end
 						end
@@ -3465,6 +3462,20 @@ app.CreateCategory = function(id, t)
 end
 
 -- Character Class Lib
+(function()
+local classIcons = {
+	[1] = "Interface\\Icons\\ClassIcon_Warrior",
+	[2] = "Interface\\Icons\\ClassIcon_Paladin",
+	[3] = "Interface\\Icons\\ClassIcon_Hunter",
+	[4] = "Interface\\Icons\\ClassIcon_Rogue",
+	[5] = "Interface\\Icons\\ClassIcon_Priest",
+	[6] = "Interface\\Icons\\ClassIcon_DeathKnight",
+	[7] = "Interface\\Icons\\ClassIcon_Shaman",
+	[8] = "Interface\\Icons\\ClassIcon_Mage",
+	[9] = "Interface\\Icons\\ClassIcon_Warlock",
+	[10] = "Interface\\Icons\\ClassIcon_Monk",
+	[11] = "Interface\\Icons\\ClassIcon_Druid",
+};
 app.BaseCharacterClass = {
 	__index = function(t, key)
 		if key == "key" then
@@ -3473,31 +3484,24 @@ app.BaseCharacterClass = {
 			if t.mapID then return "|c" .. t.classColors.colorStr .. app.GetMapName(t.mapID) .. " (" .. t.name .. ")|r"; end
 			return "|c" .. t.classColors.colorStr .. t.name .. "|r";
 		elseif key == "icon" then
-			return "Interface\\Glues\\CharacterCreate\\UI-CharacterCreate-Classes";
+			return classIcons[t.classID];
 		elseif key == "name" then
-			local name, classFileName = GetClassInfo(t.classID);
+			local name = GetClassInfo(t.classID);
 			rawset(t, "name", name);
-			rawset(t, "classFileName", classFileName);
 			return name;
-		elseif key == "classFileName" then
-			local name, classFileName = GetClassInfo(t.classID);
-			rawset(t, "name", name);
-			rawset(t, "classFileName", classFileName);
-			return classFileName;
 		elseif key == "c" then
 			local c = { t.classID };
 			rawset(t, "c", c);
 			return c;
-		elseif key == "texCoords" then
-			return CLASS_ICON_TCOORDS[t.classFileName];
 		elseif key == "classColors" then
-			return RAID_CLASS_COLORS[t.classFileName];
+			return RAID_CLASS_COLORS[select(2, GetClassInfo(t.classID))];
 		else
 			-- Something that isn't dynamic.
 			return table[key];
 		end
 	end
 };
+end)();
 app.CreateCharacterClass = function(id, t)
 	return createInstance(constructor(id, t, "classID"), app.BaseCharacterClass);
 end
@@ -6950,11 +6954,6 @@ local function RowOnEnter(self)
 				GameTooltipIcon:SetSize(64,64);
 			end
 			GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
-			if reference.texCoords then
-				GameTooltipIcon.icon:SetTexCoord(unpack(reference.texCoords));
-			else
-				GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
-			end
 			GameTooltipIcon:Show();
 		end
 		if reference.cost then
