@@ -357,8 +357,6 @@ _.Zones =
 					qa( 13332),	-- Raise the Barricades
 					q(13092),	-- Reading the Bones
 					q(13093),	-- Reading the Bones
-					qh( 24559),	-- Reforging The Sword
-					qa( 24461),	-- Reforging The Sword
 					q(13175),	-- Regaining Control
 					qh( 14136),	-- Rescue at Sea
 					qa( 14152),	-- Rescue at Sea

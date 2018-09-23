@@ -8,15 +8,20 @@ _.Instances =
 		["groups"] = {
 			inst(276, { 	-- Halls of Reflection
 				["groups"] = {
-					n(-17, {	-- Quests 	
-						a(q(24711)),	-- Frostmourne, No actual awards.
-						h(q(24713)),	-- Frostmourne, No actual awards.
+					n(-17, {	-- Quests
 						a(q(24480)),	-- The Halls Of Reflection, No actual awards.
 						h(q(24561)),	-- The Halls Of Reflection, No actual awards.
-						a(q(24500)),	-- Wrath of the Lich King, No actual awards.
-						h(q(24802)),	-- Wrath of the Lich King, No actual awards.
+						a({
+							["questID"] = 24500,	-- Wrath of the Lich King
+							["qg"] = 37582,	-- Archmage Koreln <Kirin Tor>
+						}),
+						h({
+							["questID"] = 24802,	-- Wrath of the Lich King
+							["qg"] = 37779,	-- Dark Ranger Loralen
+						}),
 					}),
 					d(1,   {	-- Normal
+						ach(4518),	-- The Halls of Reflection
 						n(0, {		-- Zone Drop
 							i(49852, {	-- Coffin Nail
 								["crs"] = {
@@ -45,6 +50,10 @@ _.Instances =
 							}),
 						}),
 						cr(38112, e(601, {	-- Falric
+							{
+								["achievementID"] = 4518,	-- The Halls of Reflection
+								["criteriaID"] = 1,	-- Falric slain
+							},
 							i(50290),	-- Falric's Wrist-Chopper
 							i(49827),	-- Ghoulslicer
 							i(50291),	-- Soulsplinter
@@ -59,6 +68,10 @@ _.Instances =
 							i(50295),	-- Spiked Toestompers
 						})),
 						cr(38113, e(602, {	-- Marwyn
+							{
+								["achievementID"] = 4518,	-- The Halls of Reflection
+								["criteriaID"] = 2,	-- Marwyn slain
+							},
 							i(50296),	-- Orca-Hunter's Harpoon
 							i(49833),	-- Splintered Icecrown Parapet
 							i(49835),	-- Splintered Door of the Citadel
@@ -73,6 +86,10 @@ _.Instances =
 							i(50260),	-- Ephemeral Snowflake
 						})),
 						cr(36954, e(603, {	-- Escape from Arthas
+							{
+								["achievementID"] = 4518,	-- The Halls of Reflection
+								["criteriaID"] = 3,	-- 	Survive the encounter with the Lich King
+							},
 							i(49839),	-- Mourning Malice
 							i(50303),	-- Black Icicle
 							i(49845),	-- Bone Golem Scapula
@@ -102,6 +119,7 @@ _.Instances =
 					d(2,   {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
+							ach(4521),	-- Heroic: The Halls of Reflection
 							n(0, {	-- Zone Drop
 								["groups"] = {
 									i(50379, {	-- Battered Hilt (Alliance)
@@ -156,6 +174,10 @@ _.Instances =
 								},
 							}),
 							cr(38112, e(601, {	-- Falric
+								{
+									["achievementID"] = 4521,	-- Heroic: The Halls of Reflection
+									["criteriaID"] = 1,	-- Falric slain
+								},
 								i(50290),	-- Falric's Wrist-Chopper
 								i(49827),	-- Ghoulslicer
 								i(50291),	-- Soulsplinter
@@ -170,6 +192,10 @@ _.Instances =
 								i(50295),	-- Spiked Toestompers
 							})),
 							cr(38113, e(602, {	-- Marwyn
+								{
+									["achievementID"] = 4521,	-- Heroic: The Halls of Reflection
+									["criteriaID"] = 2,	-- Marwyn slain
+								},
 								i(50296),	-- Orca-Hunter's Harpoon
 								i(49833),	-- Splintered Icecrown Parapet
 								i(49835),	-- Splintered Door of the Citadel
@@ -184,6 +210,11 @@ _.Instances =
 								i(50260),	-- Ephemeral Snowflake
 							})),
 							cr(36954, e(603, {	-- Escape from Arthas
+								ach(4526),	-- We're Not Retreating; We're Advancing in a Different Direction.
+								{
+									["achievementID"] = 4521,	-- Heroic: The Halls of Reflection
+									["criteriaID"] = 3,	-- 	Survive the encounter with the Lich King
+								},
 								i(49839),	-- Mourning Malice
 								i(50303),	-- Black Icicle
 								i(49845),	-- Bone Golem Scapula

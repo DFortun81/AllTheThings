@@ -19,8 +19,19 @@ _.Instances =
 							["sourceQuest"] = 24506,	-- Inside the Frozen Citadel
 							["qg"] = 37596,	-- Lady Sylvanas Windrunner <Banshee Queen>
 						}),
+						a({
+							["questID"] = 24683,	-- The Pit of Saron
+							["sourceQuest"] = 24499,	-- Echoes of Tortured Souls
+							["qg"] = 38160,	-- Lady Jaina Proudmoore
+						}),
+						h({
+							["questID"] = 24682,	-- The Pit of Saron
+							["sourceQuest"] = 24511,	-- Echoes of Tortured Souls
+							["qg"] = 38161,	-- Lady Sylvanas Windrunner <Banshee Queen>
+						}),
 					}),
 					d(1,   {	-- Normal
+						ach(4516),	-- The Forge of Souls
 						n(0, {		-- Zone Drop
 							i(49852, {	-- Coffin Nail
 								["crs"] = {
@@ -61,6 +72,10 @@ _.Instances =
 							}),
 						}),
 						cr(36497, e(615, {	-- Brojahm
+							{
+								["achievementID"] = 4516,	-- The Forge of Souls
+								["criteriaID"] = 1,	-- Brojahm slain
+							},
 							i(50316),	-- Papa's Brand New Bag
 							i(50317),	-- Papa's New Bag
 							i(49783),	-- Lucky Old Sun
@@ -76,6 +91,10 @@ _.Instances =
 							i(49784),	-- Minister's Number One Legplates
 						})),
 						cr(36502, e(616, {	-- Devourer of Souls
+							{
+								["achievementID"] = 4516,	-- The Forge of Souls
+								["criteriaID"] = 2,	-- Devourer of Souls slain
+							},
 							i(49790),	-- Blood Boil Lancet
 							i(49793),	-- Tower of the Mouldering Corpse
 							i(50203),	-- Blood Weeper
@@ -105,6 +124,7 @@ _.Instances =
 					d(2,   {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
+							ach(4519),	-- Heroic: The Forge of Souls
 							n(0, {		-- Zone Drop
 								["groups"] = {
 									i(50379, {	-- Battered Hilt (Alliance)
@@ -156,6 +176,11 @@ _.Instances =
 								},
 							}),
 							cr(36497, e(615, {	-- Brojahm
+								ach(4523),	-- Three Faced
+								{
+									["achievementID"] = 4519,	-- Heroic: The Forge of Souls
+									["criteriaID"] = 1,	-- Brojahm slain
+								},
 								i(50316),	-- Papa's Brand New Bag
 								i(50317),	-- Papa's New Bag
 								i(49783),	-- Lucky Old Sun
@@ -171,6 +196,11 @@ _.Instances =
 								i(49784),	-- Minister's Number One Legplates
 							})),
 							cr(36502, e(616, {	-- Devourer of Souls
+								ach(4522),	-- Soul Power
+								{
+									["achievementID"] = 4519,	-- Heroic: The Forge of Souls
+									["criteriaID"] = 2,	-- Devourer of Souls slain
+								},
 								i(49790),	-- Blood Boil Lancet
 								i(49793),	-- Tower of the Mouldering Corpse
 								i(50203),	-- Blood Weeper

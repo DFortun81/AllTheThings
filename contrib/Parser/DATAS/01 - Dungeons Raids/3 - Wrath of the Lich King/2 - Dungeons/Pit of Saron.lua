@@ -8,17 +8,42 @@ _.Instances =
 		["groups"] = {
 			inst(278, { 	-- Pit of Saron
 				["groups"] = {
-					n(-17, {	-- Quests 	
-						a(q(24710)),	-- Deliverance from the Pit, No actual awards.
-						h(q(24712)),	-- Deliverance from the Pit, No actual awards.
+					n(-17, {	-- Quests
+						a({
+							["questID"] = 24710,	-- Deliverance from the Pit
+							["sourceQuest"] = 24498,	-- The Path to the Citadel
+							["qg"] = 37591,	-- Martin Victus
+						}),
+						h({
+							["questID"] = 24712,	-- Deliverance from the Pit
+							["sourceQuest"] = 24507,	-- The Path to the Citadel
+							["qg"] = 24712,	-- Gorkun Ironskull
+						}),
+						a({
+							["questID"] = 24711,	-- Frostmourne
+							["sourceQuest"] = 24710,	-- Deliverance from the Pit
+							["qg"] = 38188,	-- Lady Jaina Proudmoore
+						}),
+						h({
+							["questID"] = 24713,	-- Frostmourne
+							["sourceQuest"] = 24712,	-- Deliverance from the Pit
+							["qg"] = 38189,	-- Lady Sylvanas Windrunner <Banshee Queen>
+						}),
+						a({
+							["questID"] = 24498,	-- The Path to the Citadel
+							["sourceQuest"] = 24683,	-- The Pit of Saron
+							["qg"] = 36993,	-- Lady Jaina Proudmoore
+						}),
+						h({
+							["questID"] = 24507,	-- The Path to the Citadel
+							["sourceQuest"] = 24682,	-- The Pit of Saron
+							["qg"] = 36990,	-- Lady Sylvanas Windrunner <Banshee Queen>
+						}),
 						a(q(24461)),	-- Reforging The Sword, No actual awards.
 						h(q(24559)),	-- Reforging The Sword, No actual awards.
-						a(q(24498)),	-- The Path to the Citadel, No actual awards.
-						h(q(24507)),	-- The Path to the Citadel, No actual awards.
-						a(q(24683)),	-- The Pit of Saron, No actual awards.
-						h(q(24682)),	-- The Pit of Saron, No actual awards.
 					}),
 					d(1,   {	-- Normal
+						ach(4517),	-- The Pit of Saron
 						n(0, {		-- Zone Drop
 							i(49852, {	-- Coffin Nail
 								["crs"] = {
@@ -67,6 +92,10 @@ _.Instances =
 							}),
 						}),
 						cr(36494, e(608, {	-- Forgemaster Garfrost
+							{
+								["achievementID"] = 4517,	-- The Pit of Saron
+								["criteriaID"] = 1,	-- Forgemaster Garfrost slain
+							},
 							i(49802),	-- Garfrost's Two-Ton Hammer
 							i(49801),	-- Unspeakable Secret
 							i(50227),	-- Surgeon's Needle
@@ -81,6 +110,10 @@ _.Instances =
 							i(49803),	-- Ring of Carnelian and Bone
 						})),
 						cr(36476, e(609, {	-- Ick and Krick
+							{
+								["achievementID"] = 4517,	-- The Pit of Saron
+								["criteriaID"] = 2,	-- Ick and Krick slain
+							},
 							i(49807),	-- Krick's Beetle Stabber
 							i(50262),	-- Felglacier Bolter
 							i(50266),	-- Ancient Polar Bear Hide
@@ -95,6 +128,10 @@ _.Instances =
 							i(50235),	-- Ick's Rotting Thumb
 						})),
 						cr(36658, e(610, {	-- Scourgelord Tyrannus
+							{
+								["achievementID"] = 4517,	-- The Pit of Saron
+								["criteriaID"] = 3,	-- Scourgelord Tyrannus slain
+							},
 							i(50273),	-- Engraved Gargoyle Femur
 							i(50267),	-- Tyrannical Beheader
 							i(50268),	-- Rimefang's Claw
@@ -124,6 +161,7 @@ _.Instances =
 					d(2,   {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
+							ach(4520),	-- Heroic: The Pit of Saron
 							n(0, {		-- Zone Drop
 								["groups"] = {
 									i(50379, {	-- Battered Hilt (Alliance)
@@ -170,6 +208,11 @@ _.Instances =
 								},
 							}),
 							cr(36494, e(608, {	-- Forgemaster Garfrost
+								ach(4524),	-- Doesn't Go to Eleven
+								{
+									["achievementID"] = 4520,	-- Heroic: The Pit of Saron
+									["criteriaID"] = 1,	-- Forgemaster Garfrost slain
+								},
 								i(49802),	-- Garfrost's Two-Ton Hammer
 								i(49801),	-- Unspeakable Secret
 								i(50227),	-- Surgeon's Needle
@@ -184,6 +227,10 @@ _.Instances =
 								i(49803),	-- Ring of Carnelian and Bone
 							})),
 							cr(36476, e(609, {	-- Ick and Krick
+								{
+									["achievementID"] = 4520,	-- Heroic: The Pit of Saron
+									["criteriaID"] = 2,	-- Ick and Krick slain
+								},
 								i(49807),	-- Krick's Beetle Stabber
 								i(50262),	-- Felglacier Bolter
 								i(50266),	-- Ancient Polar Bear Hide
@@ -197,7 +244,12 @@ _.Instances =
 								i(49812),	-- Purloined Wedding Ring
 								i(50235),	-- Ick's Rotting Thumb
 							})),
+							ach(4525),	-- Don't Look Up
 							cr(36658, e(610, {	-- Scourgelord Tyrannus
+								{
+									["achievementID"] = 4520,	-- Heroic: The Pit of Saron
+									["criteriaID"] = 3,	-- Scourgelord Tyrannus slain
+								},
 								i(50273),	-- Engraved Gargoyle Femur
 								i(50267),	-- Tyrannical Beheader
 								i(50268),	-- Rimefang's Claw
