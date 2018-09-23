@@ -472,6 +472,7 @@ _.Craftables =
 			un(8, i(19684)),	-- Bloodvine Boots
 			un(8, i(19683)),	-- Bloodvine Leggings
 			un(8, i(19682)),	-- Bloodvine Vest
+			un(1, i(7027)),		-- Boots of Darkness
 			un(8, i(18413)),	-- Cloak of Warding
 			un(8, i(18407)),	-- Felcloth Gloves
 			un(8, i(22658)),	-- Glacial Cloak

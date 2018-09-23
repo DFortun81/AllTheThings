@@ -1,12 +1,101 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+local modTest = function(o)
+	local group = {};
+	for i=1,50,1 do
+		local o2 = {};
+		o2.modID = i;
+		for key,value in pairs(o) do
+			o2[key] = value;
+		end
+		table.insert(group, o2);
+	end
+	return group;
+end
 _.WorldEvents =
 {
 	n(-520, { 	-- Expansion Prelaunch Events
 		["groups"] = {
 			n(-526, { -- Legion
 				["groups"] = {
+					n(-220, {	-- Class Changes
+						["groups"] = "A number of class specializations were modified just before Legion launch and Blizzard mailed items to help players adjust to these changes. The item level and quality of the item was determined by your character's progress in HFC.",
+						["groups"] = {
+							{
+								["itemID"] = 150611,	-- Guardian's Oaken Spear
+								["u"] = 1,
+							},
+							{
+								["itemID"] = 140716,	-- Guardian's Oaken Spear
+								["modID"] = 1,
+								["u"] = 2,
+							},
+							{
+								["itemID"] = 140716,	-- Guardian's Oaken Spear
+								["modID"] = 3,
+								["u"] = 2,
+							},
+							{
+								["itemID"] = 140716,	-- Guardian's Oaken Spear
+								["modID"] = 5,
+								["u"] = 2,
+							},
+							{
+								["itemID"] = 140716,	-- Guardian's Oaken Spear
+								["modID"] = 6,
+								["u"] = 2,
+							},
+							{
+								["itemID"] = 150584,	-- Pike of Feral Rage
+								["u"] = 1,
+							},
+							{
+								["itemID"] = 140689,	-- Pike of Feral Rage
+								["modID"] = 1,
+								["u"] = 2,
+							},
+							{
+								["itemID"] = 140689,	-- Pike of Feral Rage
+								["modID"] = 3,
+								["u"] = 2,
+							},
+							{
+								["itemID"] = 140689,	-- Pike of Feral Rage
+								["modID"] = 5,
+								["u"] = 2,
+							},
+							{
+								["itemID"] = 140689,	-- Pike of Feral Rage
+								["modID"] = 6,
+								["u"] = 2,
+							},
+							{
+								["itemID"] = 150613,	-- Survivalist's Hunting Spear
+								["u"] = 1,
+							},
+							{
+								["itemID"] = 140718,	-- Survivalist's Hunting Spear
+								["modID"] = 1,
+								["u"] = 2,
+							},
+							{
+								["itemID"] = 140718,	-- Survivalist's Hunting Spear
+								["modID"] = 3,
+								["u"] = 2,
+							},
+							{
+								["itemID"] = 140718,	-- Survivalist's Hunting Spear
+								["modID"] = 5,
+								["u"] = 2,
+							},
+							{
+								["itemID"] = 140718,	-- Survivalist's Hunting Spear
+								["modID"] = 6,
+								["u"] = 2,
+							},
+						},
+					}),
 					n(-17, { -- Quests
 						q(44421, { -- Anomalous Anomalies
 							["qg"] = 113986, -- Archmage Khadgar

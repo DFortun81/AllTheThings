@@ -4027,6 +4027,7 @@ _.Zones =
 						}),
 						n(33921, {  -- Nargle Lashcord <Veteran Arena Vendor>
 							["groups"] = {
+								un(2, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
 								i(42565),	-- Furious Gladiator's Barrier
 								i(42514),	-- Furious Gladiator's Baton of Light
 								i(42364),	-- Furious Gladiator's Battle Staff
@@ -4111,7 +4112,6 @@ _.Zones =
 								i(42286),	-- Furious Gladiator's Slicer
 								i(42347),	-- Furious Gladiator's Spellblade
 								i(42391),	-- Furious Gladiator's Staff
-								un(2, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
 								i(42503),	-- Furious Gladiator's Touch of Defeat
 								i(44421),	-- Furious Gladiator's War Staff
 								i(41293),	-- Furious Gladiator's Wyrmhide Gloves
@@ -4124,6 +4124,7 @@ _.Zones =
 						}),
 						n(34095, {	-- Trapjaw Rix <Veteran Arena Vendor> [Note: Yes, two npc's with same name. One is removed]
 							["groups"] = {
+								un(2, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
 								un(2, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
 								un(2, i(51398)),	-- Wrathful Gladiator's Blade of Celerity [Elite Rating]
 								un(2, i(51393)),	-- Wrathful Gladiator's Claymore [Elite Rating]
@@ -4151,7 +4152,6 @@ _.Zones =
 								un(2, i(51526)),	-- Wrathful Gladiator's Splitter [Elite Rating]
 								un(2, i(51389)),	-- Wrathful Gladiator's Sunderer [Elite Rating]
 								un(2, i(51448)),	-- Wrathful Gladiator's Swiftblade [Elite Rating]
-								un(2, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
 								un(2, i(51520)),	-- Wrathful Gladiator's Truncheon [Elite Rating]
 							},
 							["u"] = 2, -- Vendor no longer exists
@@ -4599,6 +4599,7 @@ _.Zones =
 									i(49185),	-- Relentless Gladiator's Wand of Alacrity
 									i(44423),	-- Relentless Gladiator's War Staff
 								}),
+								un(1, i(49086)), -- Relentless Gladiator's Tabard [Elite Rating]
 								i(42566),	-- Relentless Gladiator's Barrier
 								i(42515),	-- Relentless Gladiator's Baton of Light
 								i(42366),	-- Relentless Gladiator's Battle Staff

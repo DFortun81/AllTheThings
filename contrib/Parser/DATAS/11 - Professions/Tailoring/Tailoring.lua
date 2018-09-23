@@ -27,6 +27,7 @@ profession(197, { -- Tailoring
 		-- i(6270),	-- Pattern: Blue Linen Vest [6 VENDORS - DONE]
 		-- i(6274),	-- Pattern: Blue Overalls [6 VENDORS - DONE]
 		i(4352),	-- Pattern: Boots of the Enchanter [WORLD DROP]
+		un(1, i(7093)),	-- Pattern: Boots of Darkness [UNKNOWN]
 		i(14510),	-- Pattern: Bottomless Bag [WORLD DROP]
 		-- i(14627),-- Pattern: Bright Yellow Shirt [1 VENDOR - DONE]
 		i(14494),	-- Pattern: Brightcloth Pants [WORLD DROP]

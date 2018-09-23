@@ -36,15 +36,15 @@ _.Zones =
 						["sourceQuests"] = { 9276 },	-- Attack on Zeb'Tela
 					}),
 					qh( 9315, {	-- Anok'suten
-							["groups"] = {
-								i(24341),	-- Fortified Oven Mitts
-								i(24339),	-- Stung
-								i(24340),	-- Vandril's Hand Me Down Pants
-								i(28149),	-- Tranquillien Breeches
-								i(131251)	-- Mix-Match Linked Pants
-							},
-							["qg"] = 16601,	-- Dying Blood Elf
-							["sourceQuests"] = { 9327, 9329 },	-- The Forsaken (either version)
+						["groups"] = {
+							i(24341),	-- Fortified Oven Mitts
+							i(24339),	-- Stung
+							i(24340),	-- Vandril's Hand Me Down Pants
+							i(28149),	-- Tranquillien Breeches
+							i(131251)	-- Mix-Match Linked Pants
+						},
+						["qg"] = 16601,	-- Dying Blood Elf
+						["sourceQuests"] = { 9327, 9329 },	-- The Forsaken (either version)
 					}),
 					q(  9487, {	-- Arcane Reavers (UNTESTED - unsure if there are pre-req requirements)
 						["qg"] = 16197,	-- Arcanist Vandril
@@ -391,6 +391,7 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 					n(16528, { -- Provisioner Vredigar
+						-- un(1, i(23388)), -- Tranquillen Tabard [NEVER IMPLEMENTED]
 						i(22990),	-- Tranquillien Champion's Cloak
 						i(28155),	-- Apothecary's Waistband
 						i(28158),	-- Batskin Belt

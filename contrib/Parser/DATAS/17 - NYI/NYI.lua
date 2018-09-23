@@ -57,16 +57,12 @@ _.NeverImplemented =
 	un(1, i(129738)), -- Verus
 	un(1, i(147204)), -- Black Apron - TEST
 	un(1, i(23388)), -- Tranquillen Tabard
-	un(1, i(49086)), -- Relentless Gladiator's Tabard [Elite Rating]
+	
 	un(1, i(157650)), -- Tracker's Spear
 	un(1, i(157648)), -- Oakenstaff Protector
 	un(1, i(157620)), -- Halberd of Ferocity
-	un(1, i(150613)), -- Survivalist's Hunting Spear
-	un(1, i(150611)), -- Guardian's Oaken Spear
-	un(1, i(150584)), -- Pike of Feral Rage
+	
 	un(1, i(141611)), -- Fel Barbed Spear [This version wasn't added]
-	un(1, i(140716)), -- Guardian's Oaken Spear
-	un(1, i(140689)), -- Pike of Feral Rage
 	un(1, i(129899)), -- The Eagle Spear
 	un(1, i(119408)), -- Foereaver Polearm [This version wasn't added]
 	un(1, i(115297)), -- Spectral Polearm
@@ -75,7 +71,7 @@ _.NeverImplemented =
 	un(1, i(18303)), -- Nimble Buckler
 	un(1, i(18342)), -- Quel'dorei Guard [NPC Shield I believe]
 	un(1, i(20502)), -- Ironbark Shield [NPC Shield]
-	un(1, i(110591)), -- Flintlocke's Blasthammer
+	
 	un(1, i(151377)), -- Arne Test Heirloom - Bloodied Arcanite Reaper
 	un(1, i(157751)), -- Drape of New Beginnings
 	un(1, i(134693)), -- Enveloping Cape
@@ -158,7 +154,6 @@ _.NeverImplemented =
 	un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 	un(1, i(56702)),	-- Saw Blade (never made it to live)
 	un(1, i(5255)),	-- Quilboar Tomahawk
-	un(1, i(7027)),	-- Boots of Darkness
 	un(1, i(10010)),	-- Stormcloth Pants
 	un(1, i(10011)),	-- Stormcloth Gloves
 	un(1, i(10020)),	-- Stormcloth Vest
