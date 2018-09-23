@@ -446,6 +446,73 @@ _.Instances =
 							},
 						},
 					}),
+					n(0, {	-- Zone Drop
+						["groups"] = {
+							i(50444),	-- Rowan's Rifle of Silver Bullets
+							i(50452),	-- Wodin's Lucky Necklace
+							i(50449),	-- Stiffened Corpse Shoulderpads
+							i(50451),	-- Belt of the Lonely Noble
+							i(50450),	-- Leggings of Dubious Charms
+							i(50447),	-- Harbinger's Bone Band
+							i(50453),	-- Ring of Rotting Sinew
+						},
+						["crs"] = {
+							37012,	-- Ancient Skeletal Soldier
+							37022,	-- Blighted Abomination
+							37571,	-- Darkfallen Advisor
+							37664,	-- Darkfallen Archmage
+							37595,	-- Darkfallen Blood Knight
+							37662,	-- Darkfallen Commander
+							37665,	-- Darkfallen Lieutenant
+							37663,	-- Darkfallen Noble
+							37666,	-- Darkfallen Tactician
+							37007,	-- Deathbound Ward
+							36811,	-- Deathspeaker Attendant
+							36807,	-- Deathspeaker Disciple
+							36829,	-- Deathspeaker High Priest
+							36805,	-- Deathspeaker Servant
+							36808,	-- Deathspeaker Zealot
+							36880,	-- Decaying Colossus
+							37546,	-- Frenzied Abomination
+							37531,	-- Frostwarden Handler
+							37229,	-- Frostwarden Sorceress
+							37228,	-- Frostwarden Warrior
+							37532,	-- Frostwing Whelp
+							37032,	-- Kor'kron Defender
+							37033,	-- Kor'kron Invoker
+							37149,	-- Kor'kron Necrolyte
+							37031,	-- Kor'kron Oracle
+							37030,	-- Kor'kron Primalist
+							37029,	-- Kor'kron Reaver
+							37146,	-- Kor'kron Sniper
+							37034,	-- Kor'kron Templar
+							37035,	-- Kor'kron Vanquisher
+							36725,	-- Nerub'ar Broodkeeper
+							37501,	-- Nerub'ar Champion
+							37502,	-- Nerub'ar Webweaver
+							37023,	-- Plague Scientist
+							37217,	-- Precious
+							10404,	-- Pustulating Horror
+							36724,	-- Servant of the Throne
+							37126,	-- Sister Svalna
+							37017,	-- Skybreaker Assassin
+							37004,	-- Skybreaker Dreadblade
+							37027,	-- Skybreaker Hierophant
+							37016,	-- Skybreaker Luminary
+							37144,	-- Skybreaker Marksman
+							36998,	-- Skybreaker Protector
+							37026,	-- Skybreaker Sorcerer
+							37148,	-- Skybreaker Summoner
+							37021,	-- Skybreaker Vicar
+							37230,	-- Spire Frostwyrm
+							37544,	-- Spire Gargoyle
+							37545,	-- Spire Minion
+							37025,	-- Stinky
+							37011,	-- The Damned
+							37098,	-- Val'kyr Herald
+							37038,	-- Vengeful Fleshreaper
+						},
+					}),
 					n( -2, {	-- Vendors
 						n(38858, { 		-- Goodman the Closer
 							i(49908),	-- Primordial Saronite
@@ -1861,70 +1928,6 @@ _.Instances =
 						})),
 					}),
 					d(  4, {	-- 25-Player (Normal)
-						n(0, {	-- Zone Drop
-							["groups"] = {
-								i(50449),	-- Stiffened Corpse Shoulderpads
-								i(50450),	-- Leggings of Dubious Charms
-								i(50451),	-- Belt of the Lonely Noble
-								i(50444),	-- Rowan's Rifle of Silver Bullets
-							},
-							["crs"] = {
-								37012,	-- Ancient Skeletal Soldier
-								37022,	-- Blighted Abomination
-								37571,	-- Darkfallen Advisor
-								37664,	-- Darkfallen Archmage
-								37595,	-- Darkfallen Blood Knight
-								37662,	-- Darkfallen Commander
-								37665,	-- Darkfallen Lieutenant
-								37663,	-- Darkfallen Noble
-								37666,	-- Darkfallen Tactician
-								37007,	-- Deathbound Ward
-								36811,	-- Deathspeaker Attendant
-								36807,	-- Deathspeaker Disciple
-								36829,	-- Deathspeaker High Priest
-								36805,	-- Deathspeaker Servant
-								36808,	-- Deathspeaker Zealot
-								36880,	-- Decaying Colossus
-								37546,	-- Frenzied Abomination
-								37531,	-- Frostwarden Handler
-								37229,	-- Frostwarden Sorceress
-								37228,	-- Frostwarden Warrior
-								37532,	-- Frostwing Whelp
-								37032,	-- Kor'kron Defender
-								37033,	-- Kor'kron Invoker
-								37149,	-- Kor'kron Necrolyte
-								37031,	-- Kor'kron Oracle
-								37030,	-- Kor'kron Primalist
-								37029,	-- Kor'kron Reaver
-								37146,	-- Kor'kron Sniper
-								37034,	-- Kor'kron Templar
-								37035,	-- Kor'kron Vanquisher
-								36725,	-- Nerub'ar Broodkeeper
-								37501,	-- Nerub'ar Champion
-								37502,	-- Nerub'ar Webweaver
-								37023,	-- Plague Scientist
-								37217,	-- Precious
-								10404,	-- Pustulating Horror
-								36724,	-- Servant of the Throne
-								37126,	-- Sister Svalna
-								37017,	-- Skybreaker Assassin
-								37004,	-- Skybreaker Dreadblade
-								37027,	-- Skybreaker Hierophant
-								37016,	-- Skybreaker Luminary
-								37144,	-- Skybreaker Marksman
-								36998,	-- Skybreaker Protector
-								37026,	-- Skybreaker Sorcerer
-								37148,	-- Skybreaker Summoner
-								37021,	-- Skybreaker Vicar
-								37230,	-- Spire Frostwyrm
-								37544,	-- Spire Gargoyle
-								37545,	-- Spire Minion
-								37025,	-- Stinky
-								37011,	-- The Damned
-								37098,	-- Val'kyr Herald
-								37038,	-- Vengeful Fleshreaper
-							},
-						}),
 						n(-1, { -- Common Boss Drop
 							["groups"] = {
 								i( 52027, {	-- Conqueror's Mark of Sanctification (Normal)
@@ -2249,70 +2252,6 @@ _.Instances =
 						})),
 					}),
 					d(  6, {	-- 25-Player (Heroic)
-						n(0, {	-- Zone Drop
-							["groups"] = {
-								i(50449),	-- Stiffened Corpse Shoulderpads
-								i(50450),	-- Leggings of Dubious Charms
-								i(50451),	-- Belt of the Lonely Noble
-								i(50444),	-- Rowan's Rifle of Silver Bullets
-							},
-							["crs"] = {
-								37012,	-- Ancient Skeletal Soldier
-								37022,	-- Blighted Abomination
-								37571,	-- Darkfallen Advisor
-								37664,	-- Darkfallen Archmage
-								37595,	-- Darkfallen Blood Knight
-								37662,	-- Darkfallen Commander
-								37665,	-- Darkfallen Lieutenant
-								37663,	-- Darkfallen Noble
-								37666,	-- Darkfallen Tactician
-								37007,	-- Deathbound Ward
-								36811,	-- Deathspeaker Attendant
-								36807,	-- Deathspeaker Disciple
-								36829,	-- Deathspeaker High Priest
-								36805,	-- Deathspeaker Servant
-								36808,	-- Deathspeaker Zealot
-								36880,	-- Decaying Colossus
-								37546,	-- Frenzied Abomination
-								37531,	-- Frostwarden Handler
-								37229,	-- Frostwarden Sorceress
-								37228,	-- Frostwarden Warrior
-								37532,	-- Frostwing Whelp
-								37032,	-- Kor'kron Defender
-								37033,	-- Kor'kron Invoker
-								37149,	-- Kor'kron Necrolyte
-								37031,	-- Kor'kron Oracle
-								37030,	-- Kor'kron Primalist
-								37029,	-- Kor'kron Reaver
-								37146,	-- Kor'kron Sniper
-								37034,	-- Kor'kron Templar
-								37035,	-- Kor'kron Vanquisher
-								36725,	-- Nerub'ar Broodkeeper
-								37501,	-- Nerub'ar Champion
-								37502,	-- Nerub'ar Webweaver
-								37023,	-- Plague Scientist
-								37217,	-- Precious
-								10404,	-- Pustulating Horror
-								36724,	-- Servant of the Throne
-								37126,	-- Sister Svalna
-								37017,	-- Skybreaker Assassin
-								37004,	-- Skybreaker Dreadblade
-								37027,	-- Skybreaker Hierophant
-								37016,	-- Skybreaker Luminary
-								37144,	-- Skybreaker Marksman
-								36998,	-- Skybreaker Protector
-								37026,	-- Skybreaker Sorcerer
-								37148,	-- Skybreaker Summoner
-								37021,	-- Skybreaker Vicar
-								37230,	-- Spire Frostwyrm
-								37544,	-- Spire Gargoyle
-								37545,	-- Spire Minion
-								37025,	-- Stinky
-								37011,	-- The Damned
-								37098,	-- Val'kyr Herald
-								37038,	-- Vengeful Fleshreaper
-							},
-						}),
 						n(-1, { -- Common Boss Drop
 							["groups"] = {
 								i( 52027, {	-- Conqueror's Mark of Sanctification (Normal)

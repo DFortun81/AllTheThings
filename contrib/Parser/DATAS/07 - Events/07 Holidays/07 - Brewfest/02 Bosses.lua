@@ -75,6 +75,14 @@ _.WorldEvents =
 								un(24, i(117360)),	-- Coren's Cold Chromium Coaster [Level 100+]
 								un(24, i(117358)),	-- Mithril Wristwatch [Level 100+]
 								un(24, i(117359)),	-- Thousand-Year Pickled Egg [Level 100+]
+								a({
+									["itemID"] = 38280,		-- Direbrew's Dire Brew
+									["questID"] = 12491,	-- Direbrew's Dire Brew
+								}),
+								h({
+									["itemID"] = 38281,		-- Direbrew's Dire Brew
+									["questID"] = 12492,	-- Direbrew's Dire Brew
+								}),
 							},
 							["description"] = "|cff66ccffYou can only loot the keg once per day per toon by running it through the Dungeon queue on your first run.|r",
 							["maps"] = {
