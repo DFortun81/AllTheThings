@@ -658,15 +658,14 @@ _.Zones =
 						}),
 						n(142065, {	-- Dana Pull
 							["groups"] = {
-								i(163036, {	-- Polished Pet Charm
-									i(163495, {	-- Greatwing Macaw Feather
-										["description"] = "Complete the questline \"Rodrigo's Revenge\" for this item to appear on the vendor.",
-									}),
-									i(163496, {	-- Strange Looking Mechanical Squirrel
-										["description"] = "Complete the questline \"An Explosive Opportunity\" for this item to appear on the vendor.",
-									}),
+								i(163495, {	-- Greatwing Macaw Feather
+									["description"] = "Complete the questline \"Rodrigo's Revenge\" for this item to appear on the vendor.",
+								}),
+								i(163496, {	-- Strange Looking Mechanical Squirrel
+									["description"] = "Complete the questline \"An Explosive Opportunity\" for this item to appear on the vendor.",
 								}),
 							},
+							["itemID"] = 163036,	-- Polished Pet Charm
 							["coord"] = { 50.8, 46.0 },
 							["races"] = ALLIANCE_ONLY,
 						}),

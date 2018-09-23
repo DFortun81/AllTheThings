@@ -1755,7 +1755,32 @@ _.Zones =
 								}),
 							},
 						}),
-						na(136674, {	-- Madeline Netley <Stable Master>
+						{	-- Hobbs [Alliance]
+							["npcID"] = 130786,	-- Hobbs
+							["races"] = ALLIANCE_ONLY,
+							["itemID"] = 155838,	-- Briarback Quills
+							["coords"] = {
+								58.38, 70.36
+							},
+							["g"] = {
+								{	-- Pig Nose
+									["itemID"] = 162000,	-- Pig Nose
+								},
+								{	-- Quillbomb
+									["itemID"] = 155820,	-- Quillbomb
+								},
+								{	-- Sedative Quill
+									["itemID"] = 155822,	-- Sedative Quill
+								},
+								{	-- Thrice-Pickled Threshadon Omelet
+									["itemID"] = 155819,	-- Thrice-Pickled Threshadon Omelet
+								},
+								{	-- Vial of Viscous Goo
+									["itemID"] = 155821,	-- Vial of Viscous Goo
+								},
+							},
+						},
+						n(136674, {	-- Madeline Netley <Stable Master> [Alliance]
 							["groups"] = {
 								i(163036, {	-- Polished Pet Charm [Have to do it so it obeys faction filters]
 									["groups"] = {
@@ -1775,6 +1800,19 @@ _.Zones =
 							--["itemID"] = 163036,	-- Polished Pet Charm
 							["races"] = ALLIANCE_ONLY,
 						}),
+						{	-- Sanya Wraithschilde <Innkeeper> [Horde]
+							["npcID"] = 138096,	-- Sanya Wraithschilde <Innkeeper> [Horde]
+							["races"] = HORDE_ONLY,
+							["itemID"] = 155838,	-- Briarback Quills
+							["coords"] = {
+								50.81, 33.61
+							},
+							["g"] = {
+								{	-- Pig Nose
+									["itemID"] = 162000,	-- Pig Nose
+								},
+							},
+						},
 						n(135800, {	-- Sister Lilyana <Storm's Wake Emissary>
 							["groups"] = {
 								i(160542),	-- Storm's Wake Tabard
