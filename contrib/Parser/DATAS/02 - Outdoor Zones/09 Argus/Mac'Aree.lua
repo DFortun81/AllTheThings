@@ -828,68 +828,86 @@ _.Zones =
 				sz(12069,9, { 	-- Shadowguard Incursion
 					["groups"] = {
 						i(152204, { -- Glowing Key Fragment
-							q(48231, { -- Armor of the Triumvirate
-								{ -- Ensemble: Light-Woven Triumvirate Regalia
-									["groups"] = {
-										i(151337), -- Head
-										i(151299), -- Shoulder
-										i(151635), -- Cloak
-										i(151303), -- Chest
-										i(151305), -- Wrist
-										i(151300), -- Hands
-										i(151302), -- Waist
-										i(151304), -- Legs
-										i(151301), -- Feet
+							["groups"] = {
+								q(48231, { -- Armor of the Triumvirate
+									{ -- Ensemble: Light-Woven Triumvirate Regalia
+										["groups"] = {
+											i(151337), -- Head
+											i(151299), -- Shoulder
+											i(151635), -- Cloak
+											i(151303), -- Chest
+											i(151305), -- Wrist
+											i(151300), -- Hands
+											i(151302), -- Waist
+											i(151304), -- Legs
+											i(151301), -- Feet
+										},
+										["ignoreBonus"] = true,
+										["itemID"] = 152241,
 									},
-									["ignoreBonus"] = true,
-									["itemID"] = 152241,
-								},
-								{ -- Ensemble: Burnished Triumvirate Armor
-									["groups"] = {
-										i(151336), -- Head
-										i(151319), -- Shoulder
-										i(151306), -- Cloak
-										i(151313), -- Chest
-										i(151315), -- Wrist
-										i(151318), -- Hands
-										i(151316), -- Waist
-										i(151314), -- Legs
-										i(151317), -- Feet
+									{ -- Ensemble: Burnished Triumvirate Armor
+										["groups"] = {
+											i(151336), -- Head
+											i(151319), -- Shoulder
+											i(151306), -- Cloak
+											i(151313), -- Chest
+											i(151315), -- Wrist
+											i(151318), -- Hands
+											i(151316), -- Waist
+											i(151314), -- Legs
+											i(151317), -- Feet
+										},
+										["ignoreBonus"] = true,
+										["itemID"] = 152242,
 									},
-									["ignoreBonus"] = true,
-									["itemID"] = 152242,
-								},
-								{ -- Ensemble: Sterling Triumvirate Chainmail
-									["groups"] = {
-										i(151324), -- Head
-										i(151323), -- Shoulder
-										i(151634), -- Cloak
-										i(151325), -- Chest
-										i(151321), -- Wrist
-										i(151322), -- Hands
-										i(151326), -- Waist
-										i(151338), -- Legs
-										i(151320), -- Feet
+									{ -- Ensemble: Sterling Triumvirate Chainmail
+										["groups"] = {
+											i(151324), -- Head
+											i(151323), -- Shoulder
+											i(151634), -- Cloak
+											i(151325), -- Chest
+											i(151321), -- Wrist
+											i(151322), -- Hands
+											i(151326), -- Waist
+											i(151338), -- Legs
+											i(151320), -- Feet
+										},
+										["ignoreBonus"] = true,
+										["itemID"] = 152243,
 									},
-									["ignoreBonus"] = true,
-									["itemID"] = 152243,
-								},
-								{ -- Ensemble: Venerated Triumvirate Battleplate
-									["groups"] = {
-										i(151333), -- Head
-										i(151331), -- Shoulder
-										i(151298), -- Cloak
-										i(151329), -- Chest
-										i(151328), -- Wrist
-										i(151332), -- Hands
-										i(151327), -- Waist
-										i(151339), -- Legs
-										i(151330), -- Feet
+									{ -- Ensemble: Venerated Triumvirate Battleplate
+										["groups"] = {
+											i(151333), -- Head
+											i(151331), -- Shoulder
+											i(151298), -- Cloak
+											i(151329), -- Chest
+											i(151328), -- Wrist
+											i(151332), -- Hands
+											i(151327), -- Waist
+											i(151339), -- Legs
+											i(151330), -- Feet
+										},
+										["ignoreBonus"] = true,
+										["itemID"] = 152244,
 									},
-									["ignoreBonus"] = true,
-									["itemID"] = 152244,
-								},
-							}),
+								}),
+							},
+							["crs"] = {
+								122316,	-- Saprish
+								126152,	-- General Zah'd
+								122423,	-- Grand Shadow-Weaver
+								127791,	-- Grand Shadow-Weaver
+								121670,	-- Shadowguard Adept
+								127797,	-- Shadowguard Champion
+								122403,	-- Shadowguard Champion
+								121672,	-- Shadowguard Phaseblade
+								122413,	-- Shadowguard Riftstalker
+								127796,	-- Shadowguard Riftstalker
+								124171,	-- Shadowguard Subjugator
+								122404,	-- Shadowguard Voidbender
+								122421,	-- Umbral War-Adept
+								122056,	-- Viceroy Nezhar
+							},
 						}),
 					},
 					["description"] = "|cFFFFD700Glowing Key Fragment|r can drop from any mob in the |cFFFFFFFFShadowguard Incursion|r area.  Rares and Elites have a higher drop chance than normal mobs.",
