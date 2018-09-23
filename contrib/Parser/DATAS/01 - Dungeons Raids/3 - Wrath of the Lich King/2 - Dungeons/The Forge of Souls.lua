@@ -8,11 +8,17 @@ _.Instances =
 		["groups"] = {
 			inst(280, { 	-- The Forge of Souls
 				["groups"] = {
-					n(-17, {	-- Quests 	
-						a(q(24499)),	-- Echoes of Tortured Souls, No actual awards.
-						h(q(24511)),	-- Echoes of Tortured Souls, No actual awards.
-						a(q(24510)),	-- Inside the Frozen Citadel, No actual awards.
-						h(q(24506)),	-- Inside the Frozen Citadel, No actual awards.
+					n(-17, {	-- Quests 
+						a({
+							["questID"] = 24499,	-- Echoes of Tortured Souls
+							["sourceQuest"] = 24510,	-- Inside the Frozen Citadel
+							["qg"] = 37597,	-- Lady Jaina Proudmoore
+						}),
+						h({
+							["questID"] = 24511,	-- Echoes of Tortured Souls
+							["sourceQuest"] = 24506,	-- Inside the Frozen Citadel
+							["qg"] = 37596,	-- Lady Sylvanas Windrunner <Banshee Queen>
+						}),
 					}),
 					d(1,   {	-- Normal
 						n(0, {		-- Zone Drop

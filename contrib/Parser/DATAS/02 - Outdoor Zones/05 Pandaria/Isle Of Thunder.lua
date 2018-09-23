@@ -185,7 +185,6 @@ _.Zones =
 					qa( 32577),	-- Imposing Threat
 					qa( 32581),	-- Imposing Threat
 					qh( 32522),	-- Imposing Threat
-					qa( 24510),	-- Inside the Frozen Citadel
 					qa( 32528),	-- Into the Crypts
 					qh( 32226),	-- Into the Crypts
 					q(32622),	-- Intro Flight

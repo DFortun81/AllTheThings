@@ -1552,7 +1552,6 @@ _.Zones =
 					qa( 24796),	-- A Victory For The Silver Covenant
 					qh( 24801),	-- A Victory For The Sunreavers
 					qh( 24800),	-- A Victory For The Sunreavers
-					q(13631),	-- All Is Well That Ends Well
 					qa( 29608),	-- Allies in Dalaran
 					qh( 24451),	-- An Audience With The Arcanist
 					q(24580),	-- Anub'Rekhan Must Die!
@@ -1575,10 +1574,7 @@ _.Zones =
 					q(24585),	-- Flame Leviathan Must Die!
 					qh( 29609),	-- Friends in Dalaran
 					qh( 32405),	-- Hand of the Silver Covenant
-					q(13819),	-- Heroic: All Is Well That Ends Well
 					q(24587),	-- Ignis the Furnace Master Must Die!
-					qa( 24510),	-- Inside the Frozen Citadel
-					qh( 24506),	-- Inside the Frozen Citadel
 					q(24582),	-- Instructor Razuvious Must Die!
 					qh( 32403),	-- It Starts in the Sewers
 					q(13832),	-- Jewel Of The Sewers
@@ -1647,17 +1643,23 @@ _.Zones =
 					qh(32413, {	-- A Return to Krasarang
 						["qg"] = 68586, -- Grand Magister Rommath
 					}),
-					q(13631,  {  -- All Is Well That Ends Well - Ulduar
-						i(46320),
-						i(46321),
-					}),
-					i(46007,  {  --  Bag of Fishing Treasures
+					i(46007,  {	-- Bag of Fishing Treasures
 						["groups"] = {
 							i(44983),	-- Strand Crawler Pet
 							i(45984),	-- Unusual Compass Toy
 							i(33820),	-- Weather-Beaten Fishing Hat
 						},
 						["description"] = "|cff66ccffFishing Daily Quest Reward|r",
+					}),
+					a({
+						["questID"] = 24510,	-- Inside the Frozen Citadel
+						["qg"] = 37776,	-- Apprentice Nelphi <Kirin Tor>
+						["isBreadcrumb"] = true,
+					}),
+					h({
+						["questID"] = 24506,	-- Inside the Frozen Citadel
+						["qg"] = 37780,	-- Dark Ranger Vorel
+						["isBreadcrumb"] = true,
 					}),
 				}),
 				n(-2, { 	-- Vendors

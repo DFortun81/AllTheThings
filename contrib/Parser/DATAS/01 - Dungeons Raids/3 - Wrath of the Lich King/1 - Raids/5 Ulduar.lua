@@ -281,18 +281,24 @@ _.Instances =
 						cr(32871, e(1650, {	-- Algalon the Observer
 							i(46052, {	-- Reply-Code Alpha
 								q(13631, {	-- All Is Well That Ends Well
-									i(46320),	-- Drape of the Skyherald
-									i(46321),	-- Sunglimmer Drape
-									i(46322),	-- Brann's Sealing Ring
-									i(46323),	-- Starshine Signet
+									["qg"] = 16128,	-- Rhonin <Leader of the Kirin Tor>
+									["groups"] = {
+										i(46320),	-- Drape of the Skyherald
+										i(46321),	-- Sunglimmer Drape
+										i(46322),	-- Brann's Sealing Ring
+										i(46323),	-- Starshine Signet
+									},
 								}),
 							}),
 							i(46053, {	-- Reply-Code Alpha
 								q(13819, {	-- Heroic: All Is Well That Ends Well
-									i(45588),	-- Drape of the Skyborn
-									i(45618),	-- Sunglimmer Cloak
-									i(45608),	-- Brann's Signet Ring
-									i(45614),	-- Starshine Circle
+									["qg"] = 16128,	-- Rhonin <Leader of the Kirin Tor>
+									["groups"] = {
+										i(45588),	-- Drape of the Skyborn
+										i(45618),	-- Sunglimmer Cloak
+										i(45608),	-- Brann's Signet Ring
+										i(45614),	-- Starshine Circle
+									},
 								}),
 							}),
 							i(45613),	-- Dreambinder
