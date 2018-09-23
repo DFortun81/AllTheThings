@@ -1448,14 +1448,14 @@ _.Zones =
 							["coord"] = { 70.0, 42.8 },
 							["sourceQuests"] = { 48110, 48109 },	-- In Case of Ambush & The Woods Have Eyes
 						}),
-						{			-- Turn the Heat Around
-							["qg"] = 135541,	-- Bilgewater Incinerator
-							["itemID"] = 158918,
-							["questID"] = 50897,	-- Turn the Heat Around
-							["sourceQuests"] = { 50911 },	-- One Man Against the Horde
-							-- May have earlier sourceQuest or no prerequisite; needs confirmation.
-							-- Not required for "Drust Do It."
-						},
+						i(158918, {	-- Bilgewater Patented Flamethrower
+							qa(50897, {	-- Turn the Heat Around
+								["qg"] = 135541,	-- Bilgewater Incinerator
+								["sourceQuests"] = { 50911 },	-- One Man Against the Horde
+								-- May have earlier sourceQuest or no prerequisite; needs confirmation.
+								-- Not required for "Drust Do It."
+							}),
+						}),
 						qa(48944, {	-- Unlocking History
 							["qg"] = 127715,	-- Lucille Waycrest
 							["coord"] = { 45.0, 27.7 },
