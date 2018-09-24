@@ -111,3 +111,7 @@ i(162796, 1, 98636);	-- Wildguard Spaulders [Hidden Shoulder Appearance]
 i(129485, 1, 74101);	-- Mistdancer Pauldrons [Hidden Shoulders]
 i(129482, 1, 74098);	-- Mistdancer Handguards
 i(129714, 1, 74250); 	-- Trailseeker Spaulders [Hidden Shoulders]
+i(153810, 1, 91083);	-- Trailseeker Spaulders
+i(153842, 1, 91113);	-- Mistdancer Spaulders
+i(153839, 1, 91102);	-- Mistandcer Handguards
+i(153842, 1, 91105);	-- Mistdancer Pauldrons

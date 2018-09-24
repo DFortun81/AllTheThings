@@ -154,7 +154,7 @@ _.GearSets =
 					["groups"] = {
 						i(129626),	-- Streamtalker Aegis
 						i(129620),	-- Streamtalker Claws
-						i(129630),	-- Streamtalker Talons			
+						i(129630),	-- Streamtalker Talons	
 						n(-9939, { -- Elemental
 							["groups"] = {
 								i(129624),	-- Streamtalker Coif
@@ -678,20 +678,76 @@ _.GearSets =
 						}),
 						n(-150, { -- Trailseeker
 							["groups"] = {
-								i(153808),	-- Trailseeker Helm
-								i(153800),	-- Trailseeker Choker
-								i(153810),	-- Trailseeker Spaulders
-								i(153799),	-- Trailseeker Cloak of Rage
-								i(153805),	-- Trailseeker Vest
-								i(153812),	-- Trailseeker Bracers
-								i(153807),	-- Trailseeker Gauntlets
-								i(153811),	-- Trailseeker Belt
-								i(153809),	-- Trailseeker Legguards
-								i(153806),	-- Trailseeker Greaves
-								i(153802),	-- Trailseeker Band of Onslaught
-								i(153803),	-- Trailseeker Ring of Onslaught
-								i(153804),	-- Trailseeker Stone of Rage
-								i(153801),	-- Trailseeker Idol of Rage
+								{	-- Adventurer's Footlocker	*LA0404Balance
+									["itemID"] = 160439,	-- Adventurer's Footlocker
+									["g"] = {
+										{	-- Trailseeker Shotgun	*LA0811
+											["itemID"] = 153813,	-- Trailseeker Shotgun
+										},
+										{	-- Trailseekeer Spear	*LA0404Balance
+											["itemID"] = 153814,	-- Trailgun Spear
+										},
+									},
+								},
+								{	-- Trailseeker Shotgun	*LA0811
+									["itemID"] = 153813,	-- Trailseeker Shotgun
+								},
+								{	-- Trailseeker Helm	*LA0811
+									["itemID"] = 153808,	-- Trailseeker Helm
+								
+								},
+								{	-- Trailseeker Choker	*LA0811
+									["itemID"] = 153800,	-- Trailseeker Choker
+								
+								},
+								{	-- Trailseeker Spaulders	*LA0811
+									["itemID"] = 153810,	-- Trailseeker Spaulders
+								
+								},
+								{	-- Trailseeker Cloak of Rage	*LA0811
+									["itemID"] = 153799,	-- Trailseeker Cloak of Rage
+								
+								},
+								{	-- Trailseeker Vest	*LA0811
+									["itemID"] = 153805,	-- Trailseeker Vest
+								
+								},
+								{	-- Trailseeker Bracers	*LA0811
+									["itemID"] = 153812,	-- Trailseeker Bracers
+								
+								},
+								{	-- Trailseeker Gauntlets	*LA0811
+									["itemID"] = 153807,	-- Trailseeker Gauntlets
+								
+								},
+								{	-- Trailseeker Belt	*LA0811
+									["itemID"] = 153811,	-- Trailseeker Belt
+								
+								},
+								{	-- Trailseeker Legguards	*LA0811
+									["itemID"] = 153809,	-- Trailseeker Legguards
+								
+								},
+								{	-- Trailseeker Greaves	*LA0811
+									["itemID"] = 153806,	-- Trailseeker Greaves
+								
+								},
+								{	-- Trailseeker Band of Onslaught	*LA0811
+									["itemID"] = 153802,	-- Trailseeker Band of Onslaught
+								
+								},
+								{	-- Trailseeker Ring of Onslaught	*LA0811
+									["itemID"] = 153803,	-- Trailseeker Ring of Onslaught
+								
+								},
+								{	-- Trailseeker Stone of Rage	*LA0811
+									["itemID"] = 153804,	-- Trailseeker Stone of Rage
+								
+								},
+								{	-- Trailseeker Idol of Rage	*LA0811
+									["itemID"] = 153801,	-- Trailseeker Idol of Rage
+								
+								},
 							},
 							["classes"] = { 3 }
 						}),
