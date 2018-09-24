@@ -759,16 +759,28 @@ _.Zones =
 								un(2, i(10743)),	-- Drakefire Headguard
 							})),
 							un(40, q( 3379, {	-- Shadoweaver
+								["requireSkill"] = 197,	-- Tailoring
+								["qg"] = 8439,	-- Nilith Lokrav
 								["groups"] = {
 									un(2, i(10461)),	-- Shadowy Bracers
+									un(2, i(10479)),	-- Kovic's Trading Satchel
 								},
-								["requireSkill"] = 197,	-- Tailoring
 							})),
 							un(40, q( 3385, {	-- The Undermarket
+								["sourceQuest"] = 3379,	-- Shadoweaver
+								["requireSkill"] = 197,	-- Tailoring
+								["qg"] = 8439,	-- Nilith Lokrav
 								["groups"] = {
 									un(2, i(10462)),	-- Shadowy Belt
 								},
+							})),
+							un(40, q( 3402, {	-- The Undermarket
+								["sourceQuest"] = 3385,	-- The Undermarket
 								["requireSkill"] = 197,	-- Tailoring
+								["qg"] = 8439,	-- Nilith Lokrav
+								["groups"] = {
+									i(10463),	-- Pattern: Shadoweave Mask
+								},
 							})),
 							un(40, qa(7701, {	-- WANTED: Overseer Maltorius
 								un(2, i(19127)),	-- Charred Leather Tunic

@@ -463,6 +463,13 @@ _.Instances =
 										["classes"] = {1,2},
 										["description"] = "Item used to drop from any boss in Dire Maul.",
 									})),
+									un(40, q(5525, {	-- Free Knot!
+										["description"] = "This quest was removed with the Cataclym with the rest of the fun things in the game. You would obtain the key from one of the guards, turn it in, and he would present you with Knot Thimblejack's Cache.",
+										["qg"] = 14338,	-- Knott
+										["groups"] = {
+											un(2, i(18250)),	-- Gordok Shackle Key
+										},
+									})),
 									un(40, q(7502, {	-- Harnessing Shadows
 										["groups"] = {
 											un(2, i(18467)),	--Royal Seal of Eldre'Thalas
@@ -506,17 +513,21 @@ _.Instances =
 									})),
 								}),
 								o(179501, {	-- Knot Thimblejack's Cache
-									un(7, i(18414)),	-- Pattern: Belt of the Archmage
-									un(7, i(18517)),	-- Pattern: Chromatic Cloak
-									un(2, i(18418)),	-- Pattern: Cloak of Warding
-									un(2, i(18415)),	-- Pattern: Felcloth Gloves
-									un(2, i(18514)),	-- Pattern: Girdle of Insight
-									un(7, i(18518)),	-- Pattern: Hide of the Wild
-									un(2, i(18416)),	-- Pattern: Inferno Gloves
-									un(2, i(18515)),	-- Pattern: Mongoose Boots
-									un(2, i(18417)),	-- Pattern: Mooncloth Gloves
-									un(7, i(18519)),	-- Pattern: Shifting Cloak
-									un(2, i(18516)),	-- Pattern: Swift Flight Bracers
+									["sourceQuest"] = 5525,	-- Free Knot!
+									["u"] = 40,	-- Legacy
+									["groups"] = {
+										un(7, i(18414)),	-- Pattern: Belt of the Archmage
+										un(7, i(18517)),	-- Pattern: Chromatic Cloak
+										un(2, i(18418)),	-- Pattern: Cloak of Warding
+										un(2, i(18415)),	-- Pattern: Felcloth Gloves
+										un(2, i(18514)),	-- Pattern: Girdle of Insight
+										un(7, i(18518)),	-- Pattern: Hide of the Wild
+										un(2, i(18416)),	-- Pattern: Inferno Gloves
+										un(2, i(18515)),	-- Pattern: Mongoose Boots
+										un(2, i(18417)),	-- Pattern: Mooncloth Gloves
+										un(7, i(18519)),	-- Pattern: Shifting Cloak
+										un(2, i(18516)),	-- Pattern: Swift Flight Bracers
+									},
 								}),
 							}),
 							n(-14, {	-- Capital Gardens [West - Elves]

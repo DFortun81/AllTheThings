@@ -7,8 +7,49 @@ _.Instances = { tier(1, {	-- Classic
 		["groups"] = {
 			n(-40, { -- Legacy
 				["groups"] = {
-					un(2, ach(560)),	-- Deadliest Catch
 					n(-17, { -- Legacy Quests
+						{
+							["itemID"] = 18330, -- Arcanum of Focus
+							["u"] = 2,			-- Legacy Content
+							["groups"] = {
+								{
+									["questID"] = 9210,	-- The Savage Guard - Arcanum of Focus
+									["qg"] = 15042,		-- Quest Giver: Zanza the Restless
+									["u"] = 2,			-- Legacy Content
+									["groups"] = {
+										un(2, i(22635)),	-- Savage Guard
+									},
+								},
+							},
+						},
+						{
+							["itemID"] = 18331, -- Arcanum of Protection
+							["u"] = 2,			-- Legacy Content
+							["groups"] = {
+								{
+									["questID"] = 9208,	-- The Savage Guard - Arcanum of Protection
+									["qg"] = 15042,		-- Quest Giver: Zanza the Restless
+									["u"] = 2,			-- Legacy Content
+									["groups"] = {
+										un(2, i(22635)),	-- Savage Guard
+									},
+								},
+							},
+						},
+						{
+							["itemID"] = 18329, -- Arcanum of Rapidity
+							["u"] = 2,			-- Legacy Content
+							["groups"] = {
+								{
+									["questID"] = 9209,	-- The Savage Guard - Arcanum of Rapidity
+									["qg"] = 15042,		-- Quest Giver: Zanza the Restless
+									["u"] = 2,			-- Legacy Content
+									["groups"] = {
+										un(2, i(22635)),	-- Savage Guard
+									},
+								},
+							},
+						},
 						{
 							["itemID"] = 19724,	-- Primal Hakkari Aegis
 							["u"] = 2,			-- Legacy Item
@@ -306,6 +347,138 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							},
 						},
+						{
+							["itemID"] = 22637,	-- Primal Hakkari Idol
+							["u"] = 2,			-- Legacy Item
+							["groups"] = {
+								{
+									["itemID"] = 19821, -- Punctured Voodoo Doll [Druid]
+									["u"] = 7,			-- Legacy Content
+									["groups"] = {
+										{
+											["questID"] = 19790,	-- Animist's Caress [Druid]
+											["qg"] = 15042,		-- Quest Giver: Zanza the Restless
+											["u"] = 2,			-- Legacy Content
+											["groups"] = {
+												un(2, i(19790)),	-- Animist's Caress [Druid]
+											},
+										},
+									},
+								},
+								{
+									["itemID"] = 19814, -- Punctured Voodoo Doll [Rogue]
+									["u"] = 7,			-- Legacy Content
+									["groups"] = {
+										{
+											["questID"] = 8186,	-- Death's Embrace [Rogue]
+											["qg"] = 15042,		-- Quest Giver: Zanza the Restless
+											["u"] = 2,			-- Legacy Content
+											["groups"] = {
+												un(2, i(19784)),	-- Death's Embrace [Rogue]
+											},
+										},
+									},
+								},
+								{
+									["itemID"] = 19816, -- Punctured Voodoo Doll [Hunter]
+									["u"] = 7,			-- Legacy Content
+									["groups"] = {
+										{
+											["questID"] = 8187,	-- Falcon's Call [Hunter]
+											["qg"] = 15042,		-- Quest Giver: Zanza the Restless
+											["u"] = 2,			-- Legacy Content
+											["groups"] = {
+												un(2, i(19785)),	-- Falcon's Call [Hunter]
+											},
+										},
+									},
+								},
+								{
+									["itemID"] = 19819, -- Punctured Voodoo Doll [Warlock]
+									["u"] = 7,			-- Legacy Content
+									["groups"] = {
+										{
+											["questID"] = 8190,	-- Hoodoo Hex [Warlock]
+											["qg"] = 15042,		-- Quest Giver: Zanza the Restless
+											["u"] = 2,			-- Legacy Content
+											["groups"] = {
+												un(2, i(19788)),	-- Hoodoo Hex [Warlock]
+											},
+										},
+									},
+								},
+								{
+									["itemID"] = 19813, -- Punctured Voodoo Doll [Warrior]
+									["u"] = 7,			-- Legacy Content
+									["groups"] = {
+										{
+											["questID"] = 8184,	-- Presence of Might [Warrior]
+											["qg"] = 15042,		-- Quest Giver: Zanza the Restless
+											["u"] = 2,			-- Legacy Content
+											["groups"] = {
+												un(2, i(19782)),	-- Presence of Might [Warrior]
+											},
+										},
+									},
+								},
+								{
+									["itemID"] = 19818, -- Punctured Voodoo Doll [Mage]
+									["u"] = 7,			-- Legacy Content
+									["groups"] = {
+										{
+											["questID"] = 8189,	-- Presence of Sight [Mage]
+											["qg"] = 15042,		-- Quest Giver: Zanza the Restless
+											["u"] = 2,			-- Legacy Content
+											["groups"] = {
+												un(2, i(19787)),	-- Presence of Sight [Mage]
+											},
+										},
+									},
+								},
+								{
+									["itemID"] = 19820, -- Punctured Voodoo Doll [Priest]
+									["u"] = 7,			-- Legacy Content
+									["groups"] = {
+										{
+											["questID"] = 8191,	-- Prophetic Aura [Priest]
+											["qg"] = 15042,		-- Quest Giver: Zanza the Restless
+											["u"] = 2,			-- Legacy Content
+											["groups"] = {
+												un(2, i(19789)),	-- Prophetic Aura [Priest]
+											},
+										},
+									},
+								},
+								{
+									["itemID"] = 19815, -- Punctured Voodoo Doll [Paladin]
+									["u"] = 7,			-- Legacy Content
+									["groups"] = {
+										{
+											["questID"] = 8185,	-- Syncretist's Sigil [Paladin]
+											["qg"] = 15042,		-- Quest Giver: Zanza the Restless
+											["u"] = 2,			-- Legacy Content
+											["groups"] = {
+												un(2, i(19783)),	-- Syncretist's Sigil [Paladin]
+											},
+										},
+									},
+								},
+								{
+									["itemID"] = 19817, -- Punctured Voodoo Doll [Shaman]
+									["u"] = 7,			-- Legacy Content
+									["groups"] = {
+										{
+											["questID"] = 8188,	-- Vodouisant's Vigilant Embrace []
+											["qg"] = 15042,		-- Quest Giver: Zanza the Restless
+											["u"] = 2,			-- Legacy Content
+											["groups"] = {
+												un(2, i(19786)),	-- Vodouisant's Vigilant Embrace []
+											},
+										},
+									},
+								},
+							},
+						},
 					}),
 					n(0, {		-- Zone Drop
 						un(2, i(19727)),	-- Blood Scythe
@@ -333,6 +506,42 @@ _.Instances = { tier(1, {	-- Classic
 						un(7, i(19921)),	-- Zulian Hacker
 						un(7, i(20261)),	-- Shadow Panther Hide Belt
 						un(7, i(20263)),	-- Gurubashi Helm
+						{
+							["itemID"] = 19821, -- Punctured Voodoo Doll [Druid]
+							["u"] = 7,			-- Legacy Content
+						},
+						{
+							["itemID"] = 19814, -- Punctured Voodoo Doll [Rogue]
+							["u"] = 7,			-- Legacy Content
+						},
+						{
+							["itemID"] = 19816, -- Punctured Voodoo Doll [Hunter]
+							["u"] = 7,			-- Legacy Content
+						},
+						{
+							["itemID"] = 19819, -- Punctured Voodoo Doll [Warlock]
+							["u"] = 7,			-- Legacy Content
+						},
+						{
+							["itemID"] = 19813, -- Punctured Voodoo Doll [Warrior]
+							["u"] = 7,			-- Legacy Content
+						},
+						{
+							["itemID"] = 19818, -- Punctured Voodoo Doll [Mage]
+							["u"] = 7,			-- Legacy Content
+						},
+						{
+							["itemID"] = 19820, -- Punctured Voodoo Doll [Priest]
+							["u"] = 7,			-- Legacy Content
+						},
+						{
+							["itemID"] = 19815, -- Punctured Voodoo Doll [Paladin]
+							["u"] = 7,			-- Legacy Content
+						},
+						{
+							["itemID"] = 19817, -- Punctured Voodoo Doll [Shaman]
+							["u"] = 7,			-- Legacy Content
+						},
 					}),
 					n(14517, { -- High Priestess Jeklik
 						un(2, i(19915)),	-- Zulian Defender
@@ -378,6 +587,9 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(22720)),	-- Zulian Headdress
 					}),
 					n(11382, { -- Bloodlord Mandokir
+						un(9, i(19872, {	-- Swift Razzashi Raptor
+							un(2, ach(881)),	-- Swift Razzashi Raptor
+						})),
 						un(2, i(19865)),	-- Warblade of the Hakkari
 						un(2, i(19867)),	-- Bloodlord's Defender
 						un(2, i(19869)),	-- Blooddrenched Grips
@@ -387,9 +599,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(19878)),	-- Bloodsoaked Pauldrons
 						un(2, i(19895)),	-- Bloodtinged Kilt
 						un(2, i(20038)),	-- Mandokir's Sting
-						un(9, i(19872, {	-- Swift Razzashi Raptor
-							un(2, ach(881)),	-- Swift Razzashi Raptor
-						})),
+						un(2, i(22637)),	-- Primal Hakkari Idol
 					}),
 					un(7, i(19931, {	-- Gurubashi Mojo Madness
 						un(2, recipe(24266)),	-- Gurubashi Mojo Madness
@@ -413,8 +623,74 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(19965)),	-- Wushoolay's Poker
 							un(2, i(19993)),	-- Hoodoo Hunting Bow
 						}),
+						{
+							["itemID"] = 19821, -- Punctured Voodoo Doll [Druid]
+							["u"] = 7,			-- Legacy Content
+							["groups"] = {
+								un(2, i(19955)),	-- Wushoolay's Charm of Nature [Druid]
+							},
+						},
+						{
+							["itemID"] = 19814, -- Punctured Voodoo Doll [Rogue]
+							["u"] = 7,			-- Legacy Content
+							["groups"] = {
+								un(2, i(19954)),	-- Renataki's Charm of Trickery [Rogue]
+							},
+						},
+						{
+							["itemID"] = 19816, -- Punctured Voodoo Doll [Hunter]
+							["u"] = 7,			-- Legacy Content
+							["groups"] = {
+								un(2, i(19953)),	-- Renataki's Charm of Beasts [Hunter]
+							},
+						},
+						{
+							["itemID"] = 19819, -- Punctured Voodoo Doll [Warlock]
+							["u"] = 7,			-- Legacy Content
+							["groups"] = {
+								un(2, i(19957)),	-- Hazza'rah's Charm of Destruction [Warlock]
+							},
+						},
+						{
+							["itemID"] = 19813, -- Punctured Voodoo Doll [Warrior]
+							["u"] = 7,			-- Legacy Content
+							["groups"] = {
+								un(2, i(19951)),	-- Gri'lek's Charm of Might [Warrior]
+							},
+						},
+						{
+							["itemID"] = 19818, -- Punctured Voodoo Doll [Mage]
+							["u"] = 7,			-- Legacy Content
+							["groups"] = {
+								un(2, i(19959)),	-- Hazza'rah's Charm of Magic [Mage]
+							},
+						},
+						{
+							["itemID"] = 19820, -- Punctured Voodoo Doll [Priest]
+							["u"] = 7,			-- Legacy Content
+							["groups"] = {
+								un(2, i(19958)),	-- Hazza'rah's Charm of Healing [Priest]
+							},
+						},
+						{
+							["itemID"] = 19815, -- Punctured Voodoo Doll [Paladin]
+							["u"] = 7,			-- Legacy Content
+							["groups"] = {
+								un(2, i(19952)),	-- Gri'lek's Charm of Valor [Paladin]
+							},
+						},
+						{
+							["itemID"] = 19817, -- Punctured Voodoo Doll [Shaman]
+							["u"] = 7,			-- Legacy Content
+							["groups"] = {
+								un(2, i(19956)),	-- Wushoolay's Charm of Spirits [Shaman]
+							},
+						},
 					})),
 					n(14509, { -- High Priest Thekal
+						un(9, i(19902, {	-- Swift Zulian Tiger
+							un(2, ach(880)),	-- Swift Zulian Tiger
+						})),
 						un(2, i(19896)),	-- Thekal's Grasp
 						un(2, i(19897)),	-- Betrayer's Boots
 						un(2, i(19899)),	-- Ritualistic Legguards
@@ -429,11 +705,9 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(22716)),	-- Belt of Untapped Power
 						un(2, i(22718)),	-- Blooddrenched Mask
 						un(2, i(22720)),	-- Zulian Headdress
-						un(9, i(19902, {	-- Swift Zulian Tiger
-							un(2, ach(880)),	-- Swift Zulian Tiger
-						})),
 					}),
 					n(15114, { -- Gahz'ranka
+						un(2, ach(560)),	-- Deadliest Catch
 						un(2, i(19946)),	-- Tigule's Harpoon
 						un(2, i(19944)),	-- Nat Pagle's Fish Terminator
 						un(2, i(19945)),	-- Foror's Eyepatch
@@ -462,6 +736,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(19892)),	-- Animist's Boots
 						un(2, i(19929)),	-- Bloodtinged Gloves
 						un(2, i(19894)),	-- Bloodsoaked Gauntlets
+						un(2, i(22637)),	-- Primal Hakkari Idol
 					}),
 					n(14834, { -- Hakkar the Soulflayer
 						un(2, ach(688)),	-- Zul'Gurub

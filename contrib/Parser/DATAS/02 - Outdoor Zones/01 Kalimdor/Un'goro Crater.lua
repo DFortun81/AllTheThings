@@ -860,6 +860,11 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
+							{
+								["itemID"] = 11116,	-- A Mangled Journal
+								["questID"] = 3884,	-- Williden's Journal
+								["u"] = 40,
+							},
 							un(40, q(4491, {	-- A Little Help From My Friends
 								un(2, i(11910)),	-- Bejeweled Legguards
 								un(2, i(11913)),	-- Clayridge Helm

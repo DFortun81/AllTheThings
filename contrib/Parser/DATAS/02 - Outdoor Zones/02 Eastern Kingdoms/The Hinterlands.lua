@@ -214,6 +214,9 @@ _.Zones =
 					}),
 					qh(26212, {	-- Lard Lost His Lunch
 						["qg"] = 14731,	-- Lard
+						["groups"] = {
+							i(19035),	-- Lard's Special Picnic Basket
+						},
 					}),
 					qa(26515, {	-- Ongo'longo's Revenge
 						["qg"] = 43157,	-- Doran Steelwing
