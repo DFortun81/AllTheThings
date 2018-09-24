@@ -38,7 +38,7 @@ _.GearSets =
 						i(129515),	-- Mountainsage Sandals
 					},
 					["classes"] = { 8 }
-				}),		
+				}),
 				n(-141, { -- Felsoul 
 					["groups"] = {
 						i(129425),	-- Felsoul Staff
@@ -154,7 +154,7 @@ _.GearSets =
 					["groups"] = {
 						i(129626),	-- Streamtalker Aegis
 						i(129620),	-- Streamtalker Claws
-						i(129630),	-- Streamtalker Talons					
+						i(129630),	-- Streamtalker Talons			
 						n(-9939, { -- Elemental
 							["groups"] = {
 								i(129624),	-- Streamtalker Coif
@@ -252,168 +252,168 @@ _.GearSets =
 					["groups"] = {
 						n(-140, { -- Communal [Priest]
 							["groups"] = {
-								{	-- Communal Wand		
-										["itemID"] = 153919,	-- Communal Wand		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Wand	NYI
+									["itemID"] = 153919,	-- Communal Wand
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Cowl		
-										["itemID"] = 153938,	-- Communal Cowl		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Cowl	NYI
+									["itemID"] = 153938,	-- Communal Cowl
+									["u"] = 1,	-- Not available	
 								},
 								{	-- Communal Staff	*LA0104	
-										["itemID"] = 153934,	-- Communal Staff	*LA0104	
+									["itemID"] = 153934,	-- Communal Staff	*LA0104	
 								},
 								{	-- Communal Hood	*LA0104	
-										["itemID"] = 153923,	-- Communal Hood	*LA0104	
+									["itemID"] = 153923,	-- Communal Hood	*LA0104	
 								},
-								{	-- Communal Medallion		
-										["itemID"] = 153914,	-- Communal Medallion		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Medallion	NYI
+									["itemID"] = 153914,	-- Communal Medallion
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Necklace	*LA0104	
-										["itemID"] = 153925,	-- Communal Necklace	*LA0104	
+								{	-- Communal Necklace	*LA0104
+									["itemID"] = 153925,	-- Communal Necklace	*LA0104	
 								},
-								{	-- Communal Mantle		
-										["itemID"] = 153941,	-- Communal Mantle		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Mantle	NYI
+									["itemID"] = 153941,	-- Communal Mantle
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Shoulderpads	*LA0104	
-										["itemID"] = 153931,	-- Communal Shoulderpads	*LA0104	
+								{	-- Communal Shoulderpads	*LA0104
+									["itemID"] = 153931,	-- Communal Shoulderpads	*LA0104	
 								},
-								{	-- Communal Cloak of Destruction		
-										["itemID"] = 153935,	-- Communal Cloak of Destruction		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Cloak of Destruction	NYI
+									["itemID"] = 153935,	-- Communal Cloak of Destruction
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Cloak of Wisdom	*LA0104	
-										["itemID"] = 153920,	-- Communal Cloak of Wisdom	*LA0104	
+								{	-- Communal Cloak of Wisdom	*LA0104
+									["itemID"] = 153920,	-- Communal Cloak of Wisdom	*LA0104	
 								},
-								{	-- Communal Robe		
-										["itemID"] = 153940,	-- Communal Robe		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Robe	NYI
+									["itemID"] = 153940,	-- Communal Robe
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Vestments	*LA0104	
-										["itemID"] = 153929,	-- Communal Vestments	*LA0104	
+								{	-- Communal Vestments	*LA0104
+									["itemID"] = 153929,	-- Communal Vestments	*LA0104	
 								},
-								{	-- Communal Bindings		
-										["itemID"] = 153943,	-- Communal Bindings		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Bindings	NYI
+									["itemID"] = 153943,	-- Communal Bindings
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Wristwraps	*LA0104	
-										["itemID"] = 153933,	-- Communal Wristwraps	*LA0104	
+								{	-- Communal Wristwraps	*LA0104
+									["itemID"] = 153933,	-- Communal Wristwraps	*LA0104	
 								},
-								{	-- Communal Gloves		
-										["itemID"] = 153937,	-- Communal Gloves		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Gloves	NYI
+									["itemID"] = 153937,	-- Communal Gloves
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Handwraps	*LA0104	
-										["itemID"] = 153922,	-- Communal Handwraps	*LA0104	
+								{	-- Communal Handwraps	*LA0104
+									["itemID"] = 153922,	-- Communal Handwraps	*LA0104	
 								},
-								{	-- Communal Cord	*LA0104	
-										["itemID"] = 153932,	-- Communal Cord	*LA0104	
+								{	-- Communal Cord	*LA0104
+									["itemID"] = 153932,	-- Communal Cord	*LA0104	
 								},
-								{	-- Communal Sash		
-										["itemID"] = 153942,	-- Communal Sash		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Sash	NYI
+									["itemID"] = 153942,	-- Communal Sash
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Leggings	*LA0104	
-										["itemID"] = 153924,	-- Communal Leggings	*LA0104	
+								{	-- Communal Leggings	*LA0104
+									["itemID"] = 153924,	-- Communal Leggings	*LA0104	
 								},
-								{	-- Communal Pants		
-										["itemID"] = 153939,	-- Communal Pants		
-										["u"] = 1,	-- Not available,	-- Not available
+								{	-- Communal Pants	NYI
+									["itemID"] = 153939,	-- Communal Pants
+									["u"] = 1,	-- Not available,	-- Not available
 								},
-								{	-- Communal Boots		
-										["itemID"] = 153936,	-- Communal Boots		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Boots	NYI
+									["itemID"] = 153936,	-- Communal Boots
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Sandals	*LA0104	
-										["itemID"] = 153921,	-- Communal Sandals	*LA0104	
+								{	-- Communal Sandals	*LA0104
+									["itemID"] = 153921,	-- Communal Sandals	*LA0104	
 								},
-								{	-- Communal Band of Destruction		
-										["itemID"] = 153916,	-- Communal Band of Destruction		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Band of Destruction	NYI
+									["itemID"] = 153916,	-- Communal Band of Destruction
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Band of Wisdom	*LA0104	
-										["itemID"] = 153927,	-- Communal Band of Wisdom	*LA0104	
+								{	-- Communal Band of Wisdom	*LA0104
+									["itemID"] = 153927,	-- Communal Band of Wisdom	*LA0104	
 								},
-								{	-- Communal Ring of Destruction		
-										["itemID"] = 153917,	-- Communal Ring of Destruction		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Ring of Destruction	NYI
+									["itemID"] = 153917,	-- Communal Ring of Destruction
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Ring of Wisdom	*LA0104	
-										["itemID"] = 153928,	-- Communal Ring of Wisdom	*LA0104	
+								{	-- Communal Ring of Wisdom	*LA0104
+									["itemID"] = 153928,	-- Communal Ring of Wisdom	*LA0104	
 								},
-								{	-- Communal Stone of Destruction		
-										["itemID"] = 153918,	-- Communal Stone of Destruction		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Stone of Destruction	NYI
+									["itemID"] = 153918,	-- Communal Stone of Destruction
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Stone of Wisdom	*LA0104	
-										["itemID"] = 153930,	-- Communal Stone of Wisdom	*LA0104	
+								{	-- Communal Stone of Wisdom	*LA0104
+									["itemID"] = 153930,	-- Communal Stone of Wisdom	*LA0104	
 								},
-								{	-- Communal Idol of Destruction		
-										["itemID"] = 153915,	-- Communal Idol of Destruction		
-										["u"] = 1,	-- Not available	
+								{	-- Communal Idol of Destruction	NYI
+									["itemID"] = 153915,	-- Communal Idol of Destruction
+									["u"] = 1,	-- Not available	
 								},
-								{	-- Communal Idol of Wisdom	*LA0104	
-										["itemID"] = 153926,	-- Communal Idol of Wisdom	*LA0104	
+								{	-- Communal Idol of Wisdom	*LA0104
+									["itemID"] = 153926,	-- Communal Idol of Wisdom	*LA0104	
 								},
 							},
 							["classes"] = { 5 }
 						}),
 						n(-145, { -- Mountainsage
 							["groups"] = {
-								{	-- Mountainsage Wand		
-										["itemID"] = 153828,	-- Mountainsage Wand		
-										["u"] = 1, -- Not availablee	
+								{	-- Mountainsage Wand	*LA0207
+									["itemID"] = 153828,	-- Mountainsage Wand
+									["u"] = 1, -- Not availablee	
 								},
-								{	-- Mountainsage Stave		
-										["itemID"] = 153830,	-- Mountainsage Stave		
+								{	-- Mountainsage Staff	*LA0207
+									["itemID"] = 153830,	-- Mountainsage Stave
 								},
-								{	-- Mountainsage Hood		
-										["itemID"] = 153822,	-- Mountainsage Hood		
+								{	-- Mountainsage Hood	*LA0207
+									["itemID"] = 153822,	-- Mountainsage Hood
 								},
-								{	-- Mountainsage Medallion		
-										["itemID"] = 153815,	-- Mountainsage Medallion		
+								{	-- Mountainsage Medallion	*LA0207
+									["itemID"] = 153815,	-- Mountainsage Medallion
 								},
-								{	-- Mountainsage Shoulderpads		
-										["itemID"] = 153825,	-- Mountainsage Shoulderpads		
+								{	-- Mountainsage Shoulderpads	*LA0207
+									["itemID"] = 153825,	-- Mountainsage Shoulderpads
 								},
-								{	-- Mountainsage Cloak of Destruction		
-										["itemID"] = 153829,	-- Mountainsage Cloak of Destruction		
+								{	-- Mountainsage Cloak of Destruction	*LA0207
+									["itemID"] = 153829,	-- Mountainsage Cloak of Destruction
 								},
-								{	-- Mountainsage Robe		
-										["itemID"] = 153824,	-- Mountainsage Robe		
+								{	-- Mountainsage Robe	*LA0207
+									["itemID"] = 153824,	-- Mountainsage Robe
 								},
-								{	-- Mountainsage Wristwraps		
-										["itemID"] = 153827,	-- Mountainsage Wristwraps		
+								{	-- Mountainsage Wristwraps	*LA0207
+									["itemID"] = 153827,	-- Mountainsage Wristwraps
 								},
-								{	-- Mountainsage Handwraps		
-										["itemID"] = 153821,	-- Mountainsage Handwraps		
+								{	-- Mountainsage Handwraps	*LA0207
+									["itemID"] = 153821,	-- Mountainsage Handwraps
 								},
-								{	-- Mountainsage Cord		
-										["itemID"] = 153826,	-- Mountainsage Cord		
+								{	-- Mountainsage Cord	*LA0207
+									["itemID"] = 153826,	-- Mountainsage Cord
 								},
-								{	-- Mountainsage Leggings		
-										["itemID"] = 153823,	-- Mountainsage Leggings		
+								{	-- Mountainsage Leggings	*LA0207
+									["itemID"] = 153823,	-- Mountainsage Leggings
 								},
-								{	-- Mountainsage Sandals		
-										["itemID"] = 153820,	-- Mountainsage Sandals		
+								{	-- Mountainsage Sandals	*LA0207
+									["itemID"] = 153820,	-- Mountainsage Sandals
 								},
-								{	-- Mountainsage Band of Destruction		
-										["itemID"] = 153817,	-- Mountainsage Band of Destruction		
+								{	-- Mountainsage Band of Destruction	*LA0207
+									["itemID"] = 153817,	-- Mountainsage Band of Destruction
 								},
-								{	-- Mountainsage Ring of Destruction		
-										["itemID"] = 153818,	-- Mountainsage Ring of Destruction		
+								{	-- Mountainsage Ring of Destruction	*LA0207
+									["itemID"] = 153818,	-- Mountainsage Ring of Destruction
 								},
-								{	-- Mountainsage Stone of Destruction		
-										["itemID"] = 153819,	-- Mountainsage Stone of Destruction		
+								{	-- Mountainsage Stone of Destruction	*LA0207
+									["itemID"] = 153819,	-- Mountainsage Stone of Destruction
 								},
-								{	-- Mountainsage Idol of Destruction		
-										["itemID"] = 153816,	-- Mountainsage Idol of Destruction		
+								{	-- Mountainsage Idol of Destruction	*LA0207
+									["itemID"] = 153816,	-- Mountainsage Idol of Destruction
 								},
 							},
 							["classes"] = { 8 }
-						}),		
+						}),
 						n(-141, { -- Felsoul 
 							["groups"] = {
 								un(1, i(154022)),	-- Felsoul Wand
@@ -437,54 +437,164 @@ _.GearSets =
 						}),
 						n(-147, { -- Springrain
 							["groups"] = {
-								i(153757),	-- Springrain Headpiece
-								i(153771),	-- Springrain Helm
-								i(153787),	-- Springrain Hood
-								i(153749),	-- Springrain Choker
-								i(153794),	-- Springrain Choker
-								i(153763),	-- Springrain Medallion
-								i(153778),	-- Springrain Necklace
-								i(153774),	-- Springrain Pauldrons
-								i(153789),	-- Springrain Shoulders
-								i(153759),	-- Springrain Spaulders
-								i(153783),	-- Springrain Cloak of Destruction
-								i(153793),	-- Springrain Cloak of Durability
-								i(153748),	-- Springrain Cloak of Rage
-								i(153777),	-- Springrain Cloak of Wisdom
-								i(153784),	-- Springrain Jerkin
-								i(153754),	-- Springrain Tunic
-								i(153768),	-- Springrain Vest
-								i(153791),	-- Springrain Bindings
-								i(153762),	-- Springrain Bracers
-								i(153776),	-- Springrain Cuffs
-								i(153786),	-- Springrain Gloves
-								i(153756),	-- Springrain Grips
-								i(153770),	-- Springrain Handguards
-								i(153761),	-- Springrain Belt
-								i(153775),	-- Springrain Cord
-								i(153790),	-- Springrain Waistband
-								i(153788),	-- Springrain Britches
-								i(153758),	-- Springrain Leggings
-								i(153772),	-- Springrain Legguards
-								i(153785),	-- Springrain Boots
-								i(153769),	-- Springrain Footpads
-								i(153755),	-- Springrain Treads
-								i(153765),	-- Springrain Band of Destruction
-								i(153797),	-- Springrain Band of Durability
-								i(153752),	-- Springrain Band of Onslaught
-								i(153780),	-- Springrain Band of Wisdom
-								i(153764),	-- Springrain Idol of Destruction
-								i(153795),	-- Springrain Idol of Durability
-								i(153750),	-- Springrain Idol of Rage
-								i(153779),	-- Springrain Idol of Wisdom
-								i(153766),	-- Springrain Ring of Destruction
-								i(153796),	-- Springrain Ring of Durability
-								i(153751),	-- Springrain Ring of Onslaught
-								i(153781),	-- Springrain Ring of Wisdom
-								i(153767),	-- Springrain Stone of Destruction
-								i(153798),	-- Springrain Stone of Durability
-								i(153753),	-- Springrain Stone of Rage
-								i(153782),	-- Springrain Stone of Wisdom
+								{	-- Adventurer's Footlocker	*LA0404Balance
+									["itemID"] = 160439,	-- Adventurer's Footlocker
+									["g"] = {
+										{	-- Springrain Spear	*LA0404Balance
+											["itemID"] = 153773,	-- Springrain Spear
+										},
+										{	-- Springrain Stave	*LA0404Balance
+											["itemID"] = 153760,	-- Springrain Stave
+										},
+									},
+								},
+								{	-- Springrain Stave	*LA0404Balance
+									["itemID"] = 153760,	-- Springrain Stave
+								},
+								{	-- Springrain Headpiece	*LA0404Balance
+									["itemID"] = 153757,	-- Springrain Headpiece
+								},
+								{	-- Springrain Helm
+									["itemID"] = 153771,	-- Springrain Helm
+								},
+								{	-- Springrain Hood
+									["itemID"] = 153787,	-- Springrain Hood
+								},
+								{	-- Springrain Choker
+									["itemID"] = 153749,	-- Springrain Choker
+								},
+								{	-- Springrain Choker
+									["itemID"] = 153794,	-- Springrain Choker
+								},
+								{	-- Springrain Medallion	*LA0404Balance
+									["itemID"] = 153763,	-- Springrain Medallion
+								},
+								{	-- Springrain Necklace
+									["itemID"] = 153778,	-- Springrain Necklace
+								},
+								{	-- Springrain Pauldrons
+									["itemID"] = 153774,	-- Springrain Pauldrons
+								},
+								{	-- Springrain Shoulders
+									["itemID"] = 153789,	-- Springrain Shoulders
+								},
+								{	-- Springrain Spaulders	*LA0404Balance
+									["itemID"] = 153759,	-- Springrain Spaulders
+								},
+								{	-- Springrain Cloak of Destruction	*LA0404Balance
+									["itemID"] = 153783,	-- Springrain Cloak of Destruction
+								},
+								{	-- Springrain Cloak of Durability
+									["itemID"] = 153793,	-- Springrain Cloak of Durability
+								},
+								{	-- Springrain Cloak of Rage
+									["itemID"] = 153748,	-- Springrain Cloak of Rage
+								},
+								{	-- Springrain Cloak of Wisdom
+									["itemID"] = 153777,	-- Springrain Cloak of Wisdom
+								},
+								{	-- Springrain Jerkin
+									["itemID"] = 153784,	-- Springrain Jerkin
+								},
+								{	-- Springrain Tunic	*LA0404Balance
+									["itemID"] = 153754,	-- Springrain Tunic
+								},
+								{	-- Springrain Vest
+									["itemID"] = 153768,	-- Springrain Vest
+								},
+								{	-- Springrain Bindings
+									["itemID"] = 153791,	-- Springrain Bindings
+								},
+								{	-- Springrain Bracers	*LA0404Balance
+									["itemID"] = 153762,	-- Springrain Bracers
+								},
+								{	-- Springrain Cuffs
+									["itemID"] = 153776,	-- Springrain Cuffs
+								},
+								{	-- Springrain Gloves
+									["itemID"] = 153786,	-- Springrain Gloves
+								},
+								{	-- Springrain Grips	*LA0404Balance
+									["itemID"] = 153756,	-- Springrain Grips
+								},
+								{	-- Springrain Handguards
+									["itemID"] = 153770,	-- Springrain Handguards
+								},
+								{	-- Springrain Belt	*LA0404Balance
+									["itemID"] = 153761,	-- Springrain Belt
+								},
+								{	-- Springrain Cord
+									["itemID"] = 153775,	-- Springrain Cord
+								},
+								{	-- Springrain Waistband
+									["itemID"] = 153790,	-- Springrain Waistband
+								},
+								{	-- Springrain Britches
+									["itemID"] = 153788,	-- Springrain Britches
+								},
+								{	-- Springrain Leggings	*LA0404Balance
+									["itemID"] = 153758,	-- Springrain Leggings
+								},
+								{	-- Springrain Legguards
+									["itemID"] = 153772,	-- Springrain Legguards
+								},
+								{	-- Springrain Boots
+									["itemID"] = 153785,	-- Springrain Boots
+								},
+								{	-- Springrain Footpads
+									["itemID"] = 153769,	-- Springrain Footpads
+								},
+								{	-- Springrain Treads	*LA0404Balance
+									["itemID"] = 153755,	-- Springrain Treads
+								},
+								{	-- Springrain Band of Destruction	*LA0404Balance
+									["itemID"] = 153765,	-- Springrain Band of Destruction
+								},
+								{	-- Springrain Band of Durability
+									["itemID"] = 153797,	-- Springrain Band of Durability
+								},
+								{	-- Springrain Band of Onslaught
+									["itemID"] = 153752,	-- Springrain Band of Onslaught
+								},
+								{	-- Springrain Band of Wisdom
+									["itemID"] = 153780,	-- Springrain Band of Wisdom
+								},
+								{	-- Springrain Idol of Destruction	*LA0404Balance
+									["itemID"] = 153764,	-- Springrain Idol of Destruction
+								},
+								{	-- Springrain Idol of Durability
+									["itemID"] = 153795,	-- Springrain Idol of Durability
+								},
+								{	-- Springrain Idol of Rage
+									["itemID"] = 153750,	-- Springrain Idol of Rage
+								},
+								{	-- Springrain Idol of Wisdom
+									["itemID"] = 153779,	-- Springrain Idol of Wisdom
+								},
+								{	-- Springrain Ring of Destruction	*LA0404Balance
+									["itemID"] = 153766,	-- Springrain Ring of Destruction
+								},
+								{	-- Springrain Ring of Durability
+									["itemID"] = 153796,	-- Springrain Ring of Durability
+								},
+								{	-- Springrain Ring of Onslaught
+									["itemID"] = 153751,	-- Springrain Ring of Onslaught
+								},
+								{	-- Springrain Ring of Wisdom
+									["itemID"] = 153781,	-- Springrain Ring of Wisdom
+								},
+								{	-- Springrain Stone of Destruction	*LA0404Balance
+									["itemID"] = 153767,	-- Springrain Stone of Destruction
+								},
+								{	-- Springrain Stone of Durability
+									["itemID"] = 153798,	-- Springrain Stone of Durability
+								},
+								{	-- Springrain Stone of Rage
+									["itemID"] = 153753,	-- Springrain Stone of Rage
+								},
+								{	-- Springrain Stone of Wisdom
+									["itemID"] = 153782,	-- Springrain Stone of Wisdom
+								},
 							},
 							["classes"] = { 11 }
 						}),
@@ -592,115 +702,115 @@ _.GearSets =
 									["itemID"] = 160439,	-- Adventurer's Footlocker
 									["g"] = {
 										{	-- Streamtalker Claws	*LA0103
-											["itemID"] = 153973,	-- Streamtalker Claws
+										["itemID"] = 153973,	-- Streamtalker Claws
 										},
 										{	-- Streamtalker Aegis	*LA0103
-											["itemID"] = 153979,	-- Streamtalker Aegis
+										["itemID"] = 153979,	-- Streamtalker Aegis
 										},
 										{	-- Streamtalker Talons		*LA0103
-											["itemID"] = 153983,	-- Streamtalker Talons
+										["itemID"] = 153983,	-- Streamtalker Talons
 											-- Note: Yes this is also in the crate so listed here too
 										},
 									},
 								},
 								{	-- Streamtalker Talons	*LA0103	
-										["itemID"] = 153983,	-- Streamtalker Talons	*LA0103	
+									["itemID"] = 153983,	-- Streamtalker Talons	*LA0103	
 								},
-								{	-- Streamtalker Coif		
-										["itemID"] = 153977,	-- Streamtalker Coif		
+								{	-- Streamtalker Coif
+									["itemID"] = 153977,	-- Streamtalker Coif
 								},
-								{	-- Streamtalker Cowl		
-										["itemID"] = 154003,	-- Streamtalker Cowl		
-										["u"] = 1, -- Not availablee	
+								{	-- Streamtalker Cowl
+									["itemID"] = 154003,	-- Streamtalker Cowl
+									["u"] = 1, -- Not availablee	
 								},
 								{	-- Streamtalker Helm	*LA0103	
-										["itemID"] = 153987,	-- Streamtalker Helm	*LA0103	
+									["itemID"] = 153987,	-- Streamtalker Helm	*LA0103	
 								},
-								{	-- Streamtalker Medallion		
-										["itemID"] = 153968,	-- Streamtalker Medallion		
+								{	-- Streamtalker Medallion
+									["itemID"] = 153968,	-- Streamtalker Medallion
 								},
-								{	-- Streamtalker Necklace		
-										["itemID"] = 153993,	-- Streamtalker Necklace		
-										["u"] = 1, -- Not availablee	
+								{	-- Streamtalker Necklace
+									["itemID"] = 153993,	-- Streamtalker Necklace
+									["u"] = 1, -- Not availablee	
 								},
 								{	-- Streamtalker Choker	*LA0103	
-										["itemID"] = 153963,	-- Streamtalker Choker	*LA0103	
+									["itemID"] = 153963,	-- Streamtalker Choker	*LA0103	
 								},
-								{	-- Streamtalker Pauldrons		
-										["itemID"] = 153980,	-- Streamtalker Pauldrons		
+								{	-- Streamtalker Pauldrons
+									["itemID"] = 153980,	-- Streamtalker Pauldrons
 								},
 								{	-- Streamtalker Shoulderguards	*LA0103	
-										["itemID"] = 153989,	-- Streamtalker Shoulderguards	*LA0103	
+									["itemID"] = 153989,	-- Streamtalker Shoulderguards	*LA0103	
 								},
-								{	-- Streamtalker Spaulders		
-										["itemID"] = 154006,	-- Streamtalker Spaulders		
-										["u"] = 1, -- Not availablee	
+								{	-- Streamtalker Spaulders
+									["itemID"] = 154006,	-- Streamtalker Spaulders
+									["u"] = 1, -- Not availablee	
 								},
-								{	-- Streamtalker Cloak of Destruction		
-										["itemID"] = 153998,	-- Streamtalker Cloak of Destruction		
+								{	-- Streamtalker Cloak of Destruction
+									["itemID"] = 153998,	-- Streamtalker Cloak of Destruction
 								},
 								{	-- Streamtalker Cloak of Rage	*LA0103	
-										["itemID"] = 153962,	-- Streamtalker Cloak of Rage	*LA0103	
+									["itemID"] = 153962,	-- Streamtalker Cloak of Rage	*LA0103	
 								},
-								{	-- Streamtalker Cloak of Wisdom		
-										["itemID"] = 153992,	-- Streamtalker Cloak of Wisdom		
-										["u"] = 1, -- Not availablee	
+								{	-- Streamtalker Cloak of Wisdom
+									["itemID"] = 153992,	-- Streamtalker Cloak of Wisdom
+									["u"] = 1, -- Not availablee	
 								},
 								{	-- Streamtalker Chestguard	*LA0103	
-										["itemID"] = 153984,	-- Streamtalker Chestguard	*LA0103	
+									["itemID"] = 153984,	-- Streamtalker Chestguard	*LA0103	
 								},
-								{	-- Streamtalker Tunic		
-										["itemID"] = 153974,	-- Streamtalker Tunic		
+								{	-- Streamtalker Tunic
+									["itemID"] = 153974,	-- Streamtalker Tunic
 								},
-								{	-- Streamtalker Vest		
-										["itemID"] = 154000,	-- Streamtalker Vest		
-										["u"] = 1, -- Not availablee	
+								{	-- Streamtalker Vest
+									["itemID"] = 154000,	-- Streamtalker Vest
+									["u"] = 1, -- Not availablee	
 								},
-								{	-- Streamtalker Armbands		
-										["itemID"] = 153982,	-- Streamtalker Armbands		
+								{	-- Streamtalker Armbands
+									["itemID"] = 153982,	-- Streamtalker Armbands
 								},
 								{	-- Streamtalker Armguard	*LA0103	
-										["itemID"] = 153991,	-- Streamtalker Armguard	*LA0103	
+									["itemID"] = 153991,	-- Streamtalker Armguard	*LA0103	
 								},
-								{	-- Streamtalker Bracers		
-										["itemID"] = 154008,	-- Streamtalker Bracers		
-										["u"] = 1, -- Not availablee	
+								{	-- Streamtalker Bracers
+									["itemID"] = 154008,	-- Streamtalker Bracers
+									["u"] = 1, -- Not availablee	
 								},
-								{	-- Streamtalker Gloves		
-										["itemID"] = 153976,	-- Streamtalker Gloves		
+								{	-- Streamtalker Gloves
+									["itemID"] = 153976,	-- Streamtalker Gloves
 								},
-								{	-- Streamtalker Grips		
-										["itemID"] = 154002,	-- Streamtalker Grips		
-										["u"] = 1, -- Not availablee	
+								{	-- Streamtalker Grips
+									["itemID"] = 154002,	-- Streamtalker Grips
+									["u"] = 1, -- Not availablee	
 								},
 								{	-- Streamtalker Handguards	*LA0103	
-										["itemID"] = 153986,	-- Streamtalker Handguards	*LA0103	
+									["itemID"] = 153986,	-- Streamtalker Handguards	*LA0103	
 								},
-								{	-- Streamtalker Belt		
-										["itemID"] = 153981,	-- Streamtalker Belt		
+								{	-- Streamtalker Belt
+									["itemID"] = 153981,	-- Streamtalker Belt
 								},
-								{	-- Streamtalker Girdle		
-										["itemID"] = 154007,	-- Streamtalker Girdle		
-										["u"] = 1, -- Not availablee	
+								{	-- Streamtalker Girdle
+									["itemID"] = 154007,	-- Streamtalker Girdle
+									["u"] = 1, -- Not availablee	
 								},
 								{	-- Streamtalker Waistguard	*LA0103	
-										["itemID"] = 153990,	-- Streamtalker Waistguard	*LA0103	
+									["itemID"] = 153990,	-- Streamtalker Waistguard	*LA0103	
 								},
-								{	-- Streamtalker Leggings		
-										["itemID"] = 154004,	-- Streamtalker Leggings		
-										["u"] = 1, -- Not availablee	
+								{	-- Streamtalker Leggings
+									["itemID"] = 154004,	-- Streamtalker Leggings
+									["u"] = 1, -- Not availablee	
 								},
 								{	-- Streamtalker Legguards	*LA0103	
-										["itemID"] = 153988,	-- Streamtalker Legguards	*LA0103	
+									["itemID"] = 153988,	-- Streamtalker Legguards	*LA0103	
 								},
-								{	-- Streamtalker Legwraps		
-										["itemID"] = 153978,	-- Streamtalker Legwraps		
+								{	-- Streamtalker Legwraps
+									["itemID"] = 153978,	-- Streamtalker Legwraps
 								},
-								{	-- Streamtalker Boots		
-										["itemID"] = 153975,	-- Streamtalker Boots		
+								{	-- Streamtalker Boots
+									["itemID"] = 153975,	-- Streamtalker Boots
 								},
 								{	-- Streamtalker Greaves	*LA0103	
-										["itemID"] = 153985,	-- Streamtalker Greaves	*LA0103	
+									["itemID"] = 153985,	-- Streamtalker Greaves	*LA0103	
 								},
 							},
 							["classes"] = { 7 }
