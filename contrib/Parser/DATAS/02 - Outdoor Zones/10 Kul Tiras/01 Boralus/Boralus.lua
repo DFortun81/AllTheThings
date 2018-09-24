@@ -1104,6 +1104,7 @@ _.Zones =
 											["coord"] = {
 												66.01, 26.01
 											},
+											["races"] = ALLIANCE_ONLY,
 										}),
 									},
 								}),

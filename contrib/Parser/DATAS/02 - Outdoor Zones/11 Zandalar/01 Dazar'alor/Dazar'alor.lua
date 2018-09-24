@@ -923,6 +923,7 @@ _.Zones =
 											["coord"] = {
 												52.97, 94.35
 											},
+											["races"] = HORDE_ONLY,
 										}),
 										q(52930, {	-- Wartime Donation: Gold
 											["qg"] = 142157,	-- Paymasteer Grintooth
