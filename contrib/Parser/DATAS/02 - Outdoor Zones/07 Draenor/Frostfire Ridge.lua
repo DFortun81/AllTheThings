@@ -131,9 +131,9 @@ _.Zones =
 						}),
 						qh(36380,  {  	-- Diamonds Are Forever
 							["groups"] = {
-								i(115503),
+								i(115503),	-- Blazing Diamond Pendant
 							},
-							["description"] = "|cff66ccffRequires Jewelcrafting|r"
+							["requireSkill"] = 755,	-- jewelcrafting
 						}),
 						qh(33784,  {  	-- Gormaul Tower
 							i(106164),
