@@ -121,10 +121,35 @@ _.Zones =
 							},
 							["races"] = HORDE_ONLY,
 						}),
+						qh(34264, {	-- A Collection of Coils, also completes 34067
+							["qg"] = 77210,	-- Scout Ruk'Gan
+							["coord"] = { 82.6, 69.8 },
+						}),
+						qh(34070, {	-- At the End of Your Rope
+							["qg"] = 77210,	-- Scout Ruk'Gan
+							["coord"] = { 82.6, 69.8 },
+							-- source quest - coil of sturdy rope?
+						}),
+						o(227504, {	-- Barbed Thunderlord Spear
+							["groups"] = {
+								qh(34069),	-- Getting the Points, also completes 34093
+							},
+							["coord"] = { 84.1, 65.1 },
+						}),
+						qh(34073, {
+							["qg"] = 77210,	-- Scout Ruk'Gan
+							["coord"] = { 82.6, 69.8 },
+							["sourceQuests"] = { 34072 },	-- Tar Get of Opportunity
+						}),
+						i(109055, {	-- Coil of Sturdy Rope
+							qh(34067, {	-- A Collection of Coils, also completes 34264
+								["qg"] = 77106,	-- Thunderlord Wrangler
+							}),	
+						}),
 						qh(36516, { 	-- Cut 'Em Out! - Horde Leatherworking quest
 							["groups"] = { 	
 								i(117566),
-								},
+							},
 							["description"] = "|cff66ccffRequires Leatherworking|r",
 							["races"] = HORDE_ONLY,
 							["requireSkill"] = 165, -- Leatherworking
@@ -135,6 +160,10 @@ _.Zones =
 							},
 							["requireSkill"] = 755,	-- jewelcrafting
 						}),
+						qh(34093, {	-- Getting the Points, also completes 34069
+							["qg"] = 77210,	-- Scout Ruk'Gan
+							["coord"] = { 82.6, 69.8 },
+						}),
 						qh(33784,  {  	-- Gormaul Tower
 							i(106164),
 							i(106136),
@@ -142,7 +171,11 @@ _.Zones =
 							i(106154),
 						}),
 						qh(32985,  {  	-- Fury of Frostfire
-							i(119145), 		-- Firefury Totem
+							["groups"] = {
+								i(119145),	-- Firefury Totem
+							},
+							["qg"] = 74330,	-- Farseer Drek'Thar
+							["coord"] = { 70, 38.2 },
 						}),
 						qh(33527,  {  	-- Last Steps
 							i(106157),
@@ -164,6 +197,14 @@ _.Zones =
 							i(106172),
 							i(107311),
 						}),
+						o(227806, {	-- Battle-Worn Frostwolf Banner
+							["groups"] = {
+								qh(34102, {	-- The Mark of Defiance
+									["sourceQuests"] = { 34072 },	-- Tar Get of Opportunity
+								}),
+							},
+							["coord"] = { 82.6, 69.8 },
+						}),
 						qh(33483,  {  	-- Mulverick's Plight
 							i(108953),
 							i(108954),
@@ -176,10 +217,20 @@ _.Zones =
 							i(106173),
 						}),
 						qh(34066,  {  	-- Savage Vengeance
-							i(117509),
-							i(117510),
-							i(117511),
-							i(117512),
+							["groups"] = {
+								i(117509),	-- Agurak Chain Bracers
+								i(117510),	-- Agurak Wristwraps
+								i(117511),	-- Agurak Wristplates
+								i(117512),	-- Agurak Leather Bracers
+							},
+							["qg"] = 77210,	-- Scout Ruk'Gan
+							["coord"] = { 82.6, 69.8 },
+							-- source quest: "Getting the Points"?
+						}),
+						qh(34072, {	-- Tar Get of Opportunity
+							["qg"] = 77210,	-- Scout Ruk'Gan
+							["coord"] = { 82.6, 69.8 },
+							-- source quest: "Getting the Points"?
 						}),
 						qh(34124,  {  	-- The Battle of Thunder Pass
 							i(107397),
@@ -260,10 +311,18 @@ _.Zones =
 							i(113149),
 						}),
 						qh(34075,  {  	-- Vul'gath's End
-							i(117513),
-							i(117514),
-							i(117515),
-							i(117516),
+							["groups"] = {
+								i(117513),	-- Frostwolf Wind-Talker Pantaloons
+								i(117514),	-- Frostwolf Scout's Leggings
+								i(117515),	-- Frostwolf Chain Leggings
+								i(117516),	-- Frostwolf Stalwart Legplates
+							},
+							["qg"] = 77210,	-- Scout Ruk'Gan
+							["coord"] = { 82.8, 76.3 },
+							["sourceQuests"] = {
+								34073,	-- Burn Them Down
+								34102,	-- The Mark of Defiance
+							},
 						}),
 					},
 				}),	
