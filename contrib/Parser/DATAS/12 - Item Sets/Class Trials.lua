@@ -678,13 +678,13 @@ _.GearSets =
 						}),
 						n(-150, { -- Trailseeker
 							["groups"] = {
-								{	-- Adventurer's Footlocker	*LA0404Balance
+								{	-- Adventurer's Footlocker	*LA0811
 									["itemID"] = 160439,	-- Adventurer's Footlocker
 									["g"] = {
 										{	-- Trailseeker Shotgun	*LA0811
 											["itemID"] = 153813,	-- Trailseeker Shotgun
 										},
-										{	-- Trailseekeer Spear	*LA0404Balance
+										{	-- Trailseekeer Spear	*LA0811
 											["itemID"] = 153814,	-- Trailgun Spear
 										},
 									},
