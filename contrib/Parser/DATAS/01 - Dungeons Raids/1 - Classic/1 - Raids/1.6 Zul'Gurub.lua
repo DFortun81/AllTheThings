@@ -6,6 +6,7 @@ _.Instances = { tier(1, {	-- Classic
 	inst(76, { 	-- Zul'Gurub
 		["groups"] = {
 			n(-40, { -- Legacy
+				["u"] = 12,
 				["groups"] = {
 					n(-17, { -- Legacy Quests
 						{
