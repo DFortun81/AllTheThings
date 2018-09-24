@@ -2121,10 +2121,12 @@ _.ExpansionFeatures =
 						i(108918),
 						i(108919),
 					}),
+					
 					q(39195, {	-- Gems of the Apexis
 						["groups"] = {
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
+						["requireSkill"] = 755, -- Jewelcrafting
 						["qg"] = 77209,	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -4064,10 +4066,9 @@ _.ExpansionFeatures =
 					}),	
 					n(88223, { 	-- Sergeant Crowler <Garrison Quartermaster>
 						["qgs"] = {78564, 88223},
+						["itemID"] = 114931,	-- Cerulean Pigment
 						["groups"] = {
-							i(114931, {	-- Cerulean Pigment
-								i(141642),	-- Technique: Tome of the Clear Mind
-							}),
+							i(141642),	-- Technique: Tome of the Clear Mind
 						},
 					}),
 					n(85839, {	-- Sparz Boltwist <Blueprints Vendor>

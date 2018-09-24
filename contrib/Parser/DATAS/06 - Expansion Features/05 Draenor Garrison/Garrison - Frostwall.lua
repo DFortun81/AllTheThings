@@ -2120,6 +2120,7 @@ _.ExpansionFeatures =
 						["groups"] = {
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
+						["requireSkill"] = 755, -- Jewelcrafting
 						["qg"] = 78466,	-- Gazlowe
 						["races"] = HORDE_ONLY,
 					}),
