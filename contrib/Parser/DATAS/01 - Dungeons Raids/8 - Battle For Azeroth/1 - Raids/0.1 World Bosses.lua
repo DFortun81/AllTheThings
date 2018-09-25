@@ -4,50 +4,55 @@
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	n(-7, {	-- World Bosses
 		["groups"] = {
-			ach(12587, {	-- 
-				e(2139, {	-- T'zane <Tehe Soul Terror> [QID]
-					["groups"] =  bubbleDown({["modID"] = 3}, {
-						i(161396),	-- Petrified Mask of the Afterlife
-						i(161391),	-- Deathshambler's Shoulderpads
-						i(161392),	-- Bindings of Eternal Fears
-						i(161397),	-- Soulplank Vambraces
-						i(161389),	-- Cinch of All-Consuming Death
-						i(164383),	-- Death Devouring Girdle
-						i(161393),	-- Legguards of the Barkbound Dead
-						i(161387),	-- Wailing Terror Leggings
-						i(161395),	-- Swampwalker's Soul-Treads
-						i(161412),	-- Spiritbound Voodoo Burl
-						i(161411),	-- T'zane's Barkspines
-					}),
-					["crs"] = {
-						132701,	-- T'zane <Tehe Soul Terror>
-					},
-					["isRaid"] = true,
-					["maps"] = { 863 },	-- Nazmir
-					["questID"] = 52181,	-- Smoke and Shadow
-				}),
-				e(2141, {	-- Ji'arak
+			ach(12587, {	-- Unbound Monstrosities
+				e(2199, {	-- Azurethos, The Winged Typhoon
 					["groups"] = bubbleDown({["modID"] = 3}, {
-						i(161401),	-- Matriarch's Shadowveil
-						i(164384),	-- Windswept Dinorider's Cape
-						i(161409),	-- Stormcrash Chestguard
-						i(161388),	-- Gloves of Enveloping Winds
-						i(161403),	-- Avian Clutch Belt
-						i(161394),	-- Hurricane Cinch
-						i(161390),	-- Savage Terrorwing Leggings
-						i(161407),	-- Windshear Leggings
-						i(161371),	-- Galebreaker's Sabatons
+						sz(12587, 6),	--  Azurethos Criteria
+						i(161356),	-- Feathered Galeforce Crest
+						i(161352),	-- Chestguard of Dire Winds
+						i(161369),	-- Bindings of the Winged Typhoon
+						i(161398),	-- Talonscored Azure Vambraces
+						i(161350),	-- Windcaller's Down Handwraps
+						i(161360),	-- Roost-Defender's Legguards
+						i(161365),	-- Footpads of the Encircling Storm
+						i(161363),	-- Sandals of Rustling Rage
+						i(161377),	-- Azurethos' Singed Plumage
+						i(161379),	-- Galecaller's Beak
+						i(161378),	-- Plume of the Seaborne Avian
 					}),
 					["crs"] = {
-						132253,	-- Ji'arak
-						132653,	-- Ji'arak Broodling
+						136385,	-- Azurethos, The Winged Typhoon
 					},
 					["isRaid"] = true,
-					["maps"] = { 862 },	-- Zuldazar
-					["questID"] = 52169,	-- The Matriarch
+					["maps"] = { 895 },	-- Tiragarde Sound
+					["questID"] = 52997,
+					-- WQ ID: 52163
+				}),
+				e(2210, {	-- Dunegorger Kraulok [QID]
+					["groups"] = bubbleDown({["modID"] = 3}, {
+						sz(12587, 5),	--  Dunegorger Kraulok Criteria
+						i(161404),	-- Hood of the Sinuous Devilsaur
+						i(164385),	-- Desert Nomad's Wrap
+						i(161400),	-- Raider's Shrouding Thobe
+						i(161406),	-- Shrouded Sandscale Bracers
+						i(161405),	-- Dunegorger's Grips
+						i(161402),	-- Gloves of the Desert Assassin
+						i(161399),	-- Cord of Flowing Sands
+						i(161408),	-- Sandswept Legionnaire's Legplates
+						i(161419),	-- Kraulok's Claw
+					}),
+					["crs"] = {
+						138794,	-- Dunegorger Kraulok
+						139614,	-- Ravenous Ranishu
+					},
+					["isRaid"] = true,
+					["maps"] = { 864 },	-- Vol'dun
+					["questID"] = 53000,
+					-- WQ ID 52196, -- Sandswept Bones
 				}),
 				e(2197, {	-- Hailstone Construct [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
+						sz(12587, 2),	--  Hailstone Criteria
 						i(161372),	-- Ice-Carved Shoulderplates
 						i(161367),	-- Hailstone Hauberk
 						i(161364),	-- Chill's End Wristguards
@@ -67,25 +72,49 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["maps"] = { 896 },	-- Drustvar
 					["questID"] = 52157,	-- A Chilling Ecnounter
 				}),
-				e(2199, {	-- Azurethos, The Winged Typhoon
+				e(2141, {	-- Ji'arak
 					["groups"] = bubbleDown({["modID"] = 3}, {
-						i(161356),	-- Feathered Galeforce Crest
-						i(161352),	-- Chestguard of Dire Winds
-						i(161369),	-- Bindings of the Winged Typhoon
-						i(161398),	-- Talonscored Azure Vambraces
-						i(161350),	-- Windcaller's Down Handwraps
-						i(161360),	-- Roost-Defender's Legguards
-						i(161365),	-- Footpads of the Encircling Storm
-						i(161363),	-- Sandals of Rustling Rage
-						i(161377),	-- Azurethos' Singed Plumage
-						i(161379),	-- Galecaller's Beak
-						i(161378),	-- Plume of the Seaborne Avian
+						sz(12587, 4),	--  Ji'arak Criteria
+						i(161401),	-- Matriarch's Shadowveil
+						i(164384),	-- Windswept Dinorider's Cape
+						i(161409),	-- Stormcrash Chestguard
+						i(161388),	-- Gloves of Enveloping Winds
+						i(161403),	-- Avian Clutch Belt
+						i(161394),	-- Hurricane Cinch
+						i(161390),	-- Savage Terrorwing Leggings
+						i(161407),	-- Windshear Leggings
+						i(161371),	-- Galebreaker's Sabatons
 					}),
 					["crs"] = {
-						136385,	-- Azurethos, The Winged Typhoon
+						132253,	-- Ji'arak
+						132653,	-- Ji'arak Broodling
 					},
 					["isRaid"] = true,
-					["maps"] = { 895 },	-- Tiragarde Sound
+					["maps"] = { 862 },	-- Zuldazar
+					["questID"] = 52998,
+					-- WQ ID 52169,	-- The Matriarch
+				}),
+				e(2139, {	-- T'zane <Tehe Soul Terror> [QID]
+					["groups"] =  bubbleDown({["modID"] = 3}, {
+						sz(12587, 3),	--  Tzane Criteria
+						i(161396),	-- Petrified Mask of the Afterlife
+						i(161391),	-- Deathshambler's Shoulderpads
+						i(161392),	-- Bindings of Eternal Fears
+						i(161397),	-- Soulplank Vambraces
+						i(161389),	-- Cinch of All-Consuming Death
+						i(164383),	-- Death Devouring Girdle
+						i(161393),	-- Legguards of the Barkbound Dead
+						i(161387),	-- Wailing Terror Leggings
+						i(161395),	-- Swampwalker's Soul-Treads
+						i(161412),	-- Spiritbound Voodoo Burl
+						i(161411),	-- T'zane's Barkspines
+					}),
+					["crs"] = {
+						132701,	-- T'zane <Tehe Soul Terror>
+					},
+					["isRaid"] = true,
+					["maps"] = { 863 },	-- Nazmir
+					["questID"] = 52181,	-- Smoke and Shadow
 				}),
 				e(2198, {	-- Warbringer Yenajz [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
@@ -104,28 +133,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 					["isRaid"] = true,
 					["maps"] = { 942 },	-- Stormsong Valley
-					["questID"] = 52166,	-- The Faceless Herald
+					["questID"] = 52995,
+					-- WQ ID 52166, -- The Faceless Herald
 				}),
-				e(2210, {	-- Dunegorger Kraulok [QID]
-					["groups"] = bubbleDown({["modID"] = 3}, {
-						i(161404),	-- Hood of the Sinuous Devilsaur
-						i(164385),	-- Desert Nomad's Wrap
-						i(161400),	-- Raider's Shrouding Thobe
-						i(161406),	-- Shrouded Sandscale Bracers
-						i(161405),	-- Dunegorger's Grips
-						i(161402),	-- Gloves of the Desert Assassin
-						i(161399),	-- Cord of Flowing Sands
-						i(161408),	-- Sandswept Legionnaire's Legplates
-						i(161419),	-- Kraulok's Claw
-					}),
-					["crs"] = {
-						138794,	-- Dunegorger Kraulok
-						139614,	-- Ravenous Ranishu
-					},
-					["isRaid"] = true,
-					["maps"] = { 864 },	-- Vol'dun
-					["questID"] = 52196,	-- Sandswept Bones
-				}),
+				
 			}),
 			e(2213, {	-- Doom's Howl [Warfront] [QID]
 				["groups"] = bubbleDown({["modID"] = 3}, {

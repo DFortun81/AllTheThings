@@ -11,6 +11,13 @@ _.Instances =
 					n(-34, {	-- World Quests
 						["groups"] = {
 							q(52295, {	-- The MOTHERLODE!!: Elementals on the Payroll
+								["groups"] = bubbleDown({["modID"] = 23}, {
+									i(159612),	-- Azerokk's Resonating Heart
+									i(159287),	-- Cloak of Questionable Intent
+									i(159235),	-- Deranged Alchemist's Slipperss
+									i(159639),	-- P.A.C.I.F.I.S.T. Mk7
+									i(158359),	-- Stonefury Vambracess
+								}),
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]

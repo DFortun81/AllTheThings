@@ -13,6 +13,35 @@ _.Instances =
 		["groups"] = {
 			inst(1041, { -- Kings' Rest
 				["groups"] = {
+					n(-34, {	-- World Quests
+						["groups"] = {
+							q(49800, {	--  Atal'Dazar: Spiders!
+								["groups"] = bubbleDown({["modID"] = 23}, {
+									i(158375),	-- Drape of the Loyal Vassal
+									i(159445),	-- Grips of the Everlasting Guardian
+									i(158319),	-- My'das Talisman
+								}),
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
+							q(51500, {	-- The Weaponmaster Walks Again
+								["groups"] = bubbleDown({["modID"] = 23}, {
+									i(159371),	-- Boots of the Headlong Conqueror
+									i(160216),	-- Crackling Jade Kilij
+									i(159644),	-- Geti'ikku, Cut of Death
+									i(159645),	-- Headcracker of Supplication
+									i(159301),	-- Primal Dinomancer's Belt
+									i(159243),	-- Sandals of Wise Voodoo
+								}),
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+							}),
+						},
+					}),
 					d(23, { -- Mythic
 						["groups"] = {
 							ach(12723, { -- How to Keep a Mummy
