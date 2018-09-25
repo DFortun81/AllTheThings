@@ -334,7 +334,7 @@ _.ExpansionFeatures =
 							i(163809),	-- Deathsting Scorpid [Molten Clay]
 							i(163806),	-- False Knucklebump [Molten Clay]
 							i(163811),	-- Giggling Flame
-							i(163802),	-- Inky [Un'gol Ruins]s
+							i(163802),	-- Inky [Un'gol Ruins]
 							i(163821),	-- Juvenile Brineshell
 							i(163804),	-- Kindleweb Spiderling
 							i(163822),	-- Kunchong Hatchling
@@ -351,7 +351,7 @@ _.ExpansionFeatures =
 							i(163819),	-- Snort
 							i(163803),	-- Sparkleshell Sandcrawler
 							i(163817),	-- Sunscale Hatchling [Skittering Hallow]
-							i(163810),	-- Thistlebrush Bud  [Molten Clay]
+							i(163810),	-- Thistlebrush Bud [Molten Clay]
 							i(163807),	-- Tinder Pup
 							i(163824),	-- Voru'kar Leecher
 						},

@@ -448,7 +448,7 @@ _.ExpansionFeatures =
 							},		
 						},
 					},
-					{	--  Tell Me A Tale
+					{	-- Tell Me A Tale
 						["achievementID"] = 13127,	-- Tell Me A Tale
 						["g"] = {
 							{	-- Ancient Crypt Key	

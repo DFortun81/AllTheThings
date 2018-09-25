@@ -233,12 +233,13 @@ _.Zones =
 										i(157782, {	-- Pterrordax Egg
 											qh(50393, {	-- A Child of Pa'ku
 												["qgs"] = {
-													125207,	-- Peering Shriker
 													126618,	-- Bloodraged Pterrordax
-													128647,	-- Seaspray Hatchling
-													122113,	-- Pterrordax Skyrender
+													125207,	-- Peering Shriker
 													126702,	-- Primal Skyterror
+													122113,	-- Pterrordax Skyrender
+													128647,	-- Seaspray Hatchling
 													128343,	-- Skyterror Hatchling
+													135853,	-- Slateclaw Whelp
 												},
 											}),
 										}),
