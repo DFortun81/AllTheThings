@@ -1375,7 +1375,6 @@ _.Zones =
 						i(163857, {	-- Azerite Armor Cache [Dungeon Version]
 							["groups"] = bubbleDown({["modID"] = 2}, {
 								i(159252),	-- Grasping Crown of the Deep
-								i(159645),	-- Headcracker of Supplication
 								i(159422),	-- Helm of the Raptor King
 								i(158315),	-- Secret Spinner's Miter
 								i(155886),	-- Smartly Plumed Cap
