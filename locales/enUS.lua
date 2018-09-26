@@ -1247,6 +1247,9 @@ AllTheThings.Locales.enUS = {
 		[-593] = GetSpellInfo(228357).." 1",									-- Kill Credit 1
 		[-594] = GetSpellInfo(228357).." 2",									-- Kill Credit 2
 		[-595] = GetSpellInfo(228357).." 3",									-- Kill Credit 3
+		[-596] = GetSpellInfo(266165),											-- Communing with Jani [Polished Ringhorn Hoof]
+		[-597] = GetSpellInfo(266123),											-- Communing with Jani [Charged Ranishu Antennae]
+		[-598] = GetSpellInfo(266189),											-- Communing with Jani [Sturdy Redrock Jaw]fs
 		
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",

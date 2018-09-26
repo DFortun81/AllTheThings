@@ -8,7 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-4,   {	-- Achievements
 					["groups"] = {
-						{	--  A Loa of a Tale [Note: Ugh Longhand, but parser will only take it this way.  Don't convert please]
+						{	--  A Loa of a Tale
 							["achievementID"] = 13036,	-- A Loa of a Tale
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["g"] = {
@@ -56,66 +56,154 @@ _.Zones =
 								},
 							},
 						},
-						ach(12482, {	-- Get Hek'd
+						{	-- Get Hek'd
+							["achievementID"] = 12482,	-- Get Hek'd
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["g"] = {
-								{	-- Charged Ranishu Antennae
+								{	-- Charged Ranishu Antennae [**]
+									["itemID"] = 158910,	-- Charged Ranishu Antennae
+									["qg"] = 135536,	-- Jani
+									["questID"] = 50883,	-- Loot Treasure
+									["sourceQuests"] = {
+										50844,	-- Item Turn-In
+									},
 									["crs"] = {
 										129464,	-- Ranishu Nibbler
 										129473,	-- Ranishu Nibbler
 										135727,	-- Ranishu Ravager
 										129474,	-- Ranishu Ravager
 									},
-									["coord"] = { 46.94, 46.57 },	-- Trashpile turn-in
-									["itemID"] = 158910,	-- Charged Ranishu Antennae
-									["questID"] = 50883,	-- 50884 for giving Jani the item
-									["criteriaID"] = 3,	-- Charged Ranishu Antennae
-									["sourceQuests"] = { 
-										51145,	-- Curse of Jani (Alliance)
-										47442,	-- Curse of Jani (Horde)
+									["coords"] = {	-- Turn-In Location
+										{
+											46.98,
+											46.63
+										},
+									},
+									["g"] = {
+										{	-- Charged Ranishu Antennae
+											["criteriaID"] = 3,	-- Charged Ranishu Antennae
+										},
+										{	-- Communing with Jani
+											["npcID"] = -597,	-- Communing with Jani
+											["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
+											["qg"] = 135536,	-- Jani
+											["questID"] = 50884,	-- Item Turn-In
+											["sourceQuests"] = { 
+												51145,	-- Curse of Jani [Alliance]
+												47442,	-- Curse of Jani [Horde]
+											},
+											["coords"] = {	-- Turn-In Location
+												{
+													46.98,
+													46.63
+												},
+											},
+										},
 									},
 								},
-								{	-- Polished Ringhorn Hoof
+								{	-- Polished Ringhorn Hoof [**]
+									["itemID"] = 158915,	-- Polished Ringhorn Hoof
+									["qg"] = 135564,	--  Jani
+									["questID"] = 50890,	-- Loot Treasure
+									["sourceQuests"] = { 
+										50889,	-- Item Turn-In
+									},
+									["coords"] = {	-- Turn-In Location
+										{
+											56.26,
+											15.31
+										},
+									},
 									["crs"] = {
 										130317,	-- Ringhorn Fawn
 										130321,	-- Ringhorn Stag
 										130316,	-- Ringhorn Strider
 									},
-									["coord"] = { 56.24, 15.26 },	-- Trashpile turn-in
-									["itemID"] = 158915,	-- Polished Ringhorn Hoof
-									["questID"] = 50890,	-- NEEDS CONFIRMATION, TAKEN FROM WOWHEAD
-									["criteriaID"] = 6,	-- Polished Ringhorn Hoof
-									["sourceQuests"] = { 
-										51145,	-- Curse of Jani (Alliance)
-										47442,	-- Curse of Jani (Horde)
-									},
-								},
-								{	-- Sturdy Redrock Jaw
-									["crs"] = {	
-										134744,	-- Redrock Howler
-										134718,	-- Redrock Scavenger
-									},
-									["coord"] = { 49.33, 84.35 },	-- Trashpile turn-in
-									["itemID"] = 158916,	-- Sturdy Redrock Jaw
-									["questID"] = 50892,	-- NEEDS CONFIRMATION, TAKEN FROM WOWHEAD
-									["criteriaID"] = 9,	-- Sturdy Redrock Jaw
-									["sourceQuests"] = { 
-										51145,	-- Curse of Jani (Alliance)
-										47442,	-- Curse of Jani (Horde)
+									["g"] = {
+										{	-- Communing with Jani
+											["npcID"] = -596,	-- Communing with Jani
+											["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
+											["qg"] = 135564,	--  Jani
+											["questID"] = 50889,	-- Item Turn-In
+											["sourceQuests"] = { 
+												51145,	-- Curse of Jani [Alliance]
+												47442,	-- Curse of Jani [Horde]
+											},
+											["coords"] = {	-- Turn-In Location
+												{
+													56.26,
+													15.31
+												},
+											},
+										},
+										{	-- Polished Ringhorn Hoof
+											["criteriaID"] = 6,	-- Polished Ringhorn Hoof
+										},
 									},
 								},
 								{	-- Saurid Surprise
 									["qg"] = 133859,	-- Jani
-									["coord"] = { 42.2, 72.0 },	-- Trashpile pick-up
 									["questID"] = 50901,	-- Saurid Surprise
-									["criteriaID"] = 12,	-- Saurid Surprise
 									["sourceQuests"] = { 
-										51145,	-- Curse of Jani (Alliance)
-										47442,	-- Curse of Jani (Horde)
+										51145,	-- Curse of Jani [Alliance]
+										47442,	-- Curse of Jani [Horde]
+									},
+									["description"] = "Click on trash pile to start quest.",
+									["coords"] = {
+										{
+											42.14,
+											72.13
+										},
+									},
+									["g"] = {
+										{	-- Saurid Surprisse
+											["criteriaID"] = 12,	-- Saurid Surprise
+										},
 									},
 								},
+								{	-- Sturdy Redrock Jaw
+									["itemID"] = 158916,	-- Sturdy Redrock Jaw
+									["qg"] = 135572,	-- Jani
+									["questID"] = 50892,	-- Loot Treasure
+									["sourceQuests"] = {
+										50891,	-- Item Turn-In
+									},
+									["coords"] = {
+										{
+											49.33,
+											84.39
+										},
+									},
+									["crs"] = {	
+										134744,	-- Redrock Howler
+										134718,	-- Redrock Scavenger
+									},
+									["g"] = {
+										{	-- Communing with Jani
+											["npcID"] = -598,	-- Communing with Jani
+											["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
+											["qg"] = 135572,	-- Jani
+											["questID"] = 50891,	-- Item Turn-In
+											["sourceQuests"] = { 
+												51145,	-- Curse of Jani [Alliance]
+												47442,	-- Curse of Jani [Horde]
+											},
+											["coords"] = {
+												{
+													49.33,
+													84.39
+												},
+											},
+										},
+										{	-- Sturdy Redrock Jaw
+											["criteriaID"] = 9,	-- Sturdy Redrock Jaw
+										},
+									},
+								},
+								
 							},
 							["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
-						}),
+						},
 						ach(13027, {	-- Mushroom Harvest
 							n(143313, {	-- Portakillo
 								--["questID"] = ,	-- did not trigger a quest completion upon death
