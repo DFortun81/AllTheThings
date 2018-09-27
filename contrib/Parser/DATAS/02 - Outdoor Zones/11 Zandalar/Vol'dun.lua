@@ -202,7 +202,6 @@ _.Zones =
 								},
 								
 							},
-							["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
 						},
 						ach(13027, {	-- Mushroom Harvest
 							n(143313, {	-- Portakillo

@@ -41,12 +41,36 @@ _.WorldEvents =
 					un(16, h(i(151617))), -- Orgrimmar Interceptor Mount
 					un(16, a(i(151618))), -- Stormwind Skychaser Mount
 				})),
-				un(16, ach(13138, { -- Blizzcon 2018 - Flying Colors
-					un(16, h(i(163986))), -- Orgrimmar Hero's War Banner
-					un(16, a(i(163987))), -- Stormwind Champion's War Banner
-					un(16, h(i(163984))), -- War Mantle of the Horde
-					un(16, a(i(163985))), -- War Mantle of the Alliance
-				})),
+				{	--  Flying Colors
+					["achievementID"] = 13138,	-- Flying Colors
+					["u"] = 16,	-- Blizzcon
+					["g"] = {
+						{	-- Orgrimmar Hero's War Banner
+							["itemID"] = 163986,	-- Orgrimmar Hero's War Banner
+							["u"] = 16,	-- Blizzcon
+							["races"] = HORDE_ONLY,
+							["f"] = 102,	-- Toy
+						},
+						{	-- Stormwind Champion's War Banner
+							["itemID"] = 163987,	-- Stormwind Champion's War Banner
+							["u"] = 16,	-- Blizzcon
+							["races"] = ALLIANCE_ONLY,
+							["f"] = 102,	-- Toy
+						},
+						{	-- War Mantle of the Alliance
+							["itemID"] = 163985,	-- War Mantle of the Alliance
+							["u"] = 16,	-- Blizzcon
+							["races"] = ALLIANCE_ONLY,
+							["f"] = 3,	-- Cloak
+						},
+						{	-- War Mantle of the Horde
+							["itemID"] = 163984,	-- War Mantle of the Horde
+							["u"] = 16,	-- Blizzcon
+							["races"] = HORDE_ONLY,
+							["f"] = 3,	-- Cloak
+						},
+					},
+				},		
 			}),
 		},
 		["icon"] = "Interface\\Icons\\achievement_general",

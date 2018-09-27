@@ -340,6 +340,7 @@ t(163795);	-- Oomgut Ritual Drum
 t(1973);	-- Orb of Deception
 t(35275);	-- Orb of the Sin'dorei
 t(45014);	-- Orgrimmar Banner (Horde)
+t(163986);	-- Orgrimmar Hero's War Banner
 t(120276);	-- Outrider's Bridle Chain
 t(158149);	-- Overtuned Corgi Goggles
 t(90427);	-- Pandaren Brewpack
@@ -439,6 +440,7 @@ t(122681);	-- Sternfathom's Pet Journal
 t(111476);	-- Stolen Breath
 t(140160);	-- Stormforged Vrykul Horn
 t(45011);	-- Stormwind Banner (Alliance)
+t(163987);	-- Stormwind Champion's War Banner
 t(144339);	-- Sturdy Love Fool
 t(95568);	-- Sunreaver Beacon (Horde)
 t(37254);	-- Super Simian Sphere

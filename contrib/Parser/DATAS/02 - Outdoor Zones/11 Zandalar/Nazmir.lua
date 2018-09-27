@@ -166,6 +166,74 @@ _.Zones =
 								["criteriaID"] = 6,	-- Stonebloom
 							}),
 						}),
+						{	-- Get Hek'd
+							["achievementID"] = 12482,	-- Get Hek'd
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							["g"] = {
+								{	-- Nazwathan Relic
+									["itemID"] = 157802,
+									["qg"] = 133845,	-- Jani
+									["questID"] = 50441,	-- Loot Treasure
+									["sourceQuests"] = {
+										50440,	--  Item Turn-In
+									},
+									["coords"] = {
+										{
+											68.50,
+											32.77
+										},
+									},
+									["crs"] = {
+										131157,	-- Nazwathan Blood Bender
+										131155,	-- Nazwathan Guardian
+										131156,	-- Nazwathan Hulk
+									},
+									["g"] = {
+										{	-- Communing with Jani
+											["npcID"] = -599,	-- Communing with Jani
+											["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
+											["qg"] = 133845,	-- Jani
+											["questID"] = 50440,	-- Item Turn-In
+											["sourceQuests"] = { 
+												51145,	-- Curse of Jani [Alliance]
+												47442,	-- Curse of Jani [Horde]
+											},
+											["coords"] = {
+												{
+													68.50,
+													32.77
+												},
+											},
+										},
+										{	-- Nazwathan Relic
+											["criteriaID"] = 8,	-- Nazwathan Relic
+										},
+									},
+								},
+								{	-- Saurid Surprise
+									["qg"] = 133859,	-- Jani
+									["questID"] = 50901,	-- Saurid Surprise
+									["sourceQuests"] = { 
+										51145,	-- Curse of Jani [Alliance]
+										47442,	-- Curse of Jani [Horde]
+									},
+									["description"] = "Click on trash pile to start quest.",
+									["coords"] = {
+										{
+											42.14,
+											72.13
+										},
+									},
+									["g"] = {
+										{	-- Saurid Surprisse
+											["criteriaID"] = 12,	-- Saurid Surprise
+										},
+									},
+								},
+								
+								
+							},
+						},
 						ach(12482, {	-- Get Hek'd
 							["g"] = {
 								{	-- Vilescale Pearl
@@ -198,21 +266,7 @@ _.Zones =
 										47442,	-- Curse of Jani (Horde)
 									},
 								},
-								{	-- Nazwathan Relic
-									["crs"] = {
-										131157,	-- Nazwathan Blood Bender
-										131155,	-- Nazwathan Guardian
-										131156,	-- Nazwathan Hulk
-									},
-									["coord"] = { 68.58, 32.78 },	-- Trashpile turn-in
-									["itemID"] = 157802,	-- Nazwathan Relic
-									["questID"] = 50441,	-- NEEDS CONFIRMATION, TAKEN FROM WOWHEAD
-									["criteriaID"] = 8,	-- Nazwathan Relic
-									["sourceQuests"] = { 
-										51145,	-- Curse of Jani (Alliance)
-										47442,	-- Curse of Jani (Horde)
-									},
-								},
+								
 								{	-- Taking the Loa Road
 									["qg"] = 136608,	-- Jani
 									["coord"] = { 54.0, 74.2 },	-- Trashpile pick-up
