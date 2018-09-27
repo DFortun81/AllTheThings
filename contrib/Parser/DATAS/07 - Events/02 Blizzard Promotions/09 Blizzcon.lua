@@ -41,6 +41,12 @@ _.WorldEvents =
 					un(16, h(i(151617))), -- Orgrimmar Interceptor Mount
 					un(16, a(i(151618))), -- Stormwind Skychaser Mount
 				})),
+				un(16, ach(13138, { -- Blizzcon 2018 - Flying Colors
+					un(16, h(i(163986))), -- Orgrimmar Hero's War Banner
+					un(16, a(i(163987))), -- Stormwind Champion's War Banner
+					un(16, h(i(163984))), -- War Mantle of the Horde
+					un(16, a(i(163985))), -- War Mantle of the Alliance
+				})),
 			}),
 		},
 		["icon"] = "Interface\\Icons\\achievement_general",
