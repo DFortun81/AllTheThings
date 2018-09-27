@@ -2203,7 +2203,6 @@ _.Zones =
 						i(159509),	-- Gnarlwood Spikes
 						--i(159567),	-- Gnarlwood Staff
 						i(159496),	-- Gol Osigr Crossbow
-						i(159536),	-- Gol Osigr Hammer
 						--i(159512),	-- Gol Osigr Handblade
 						--i(159801),	-- Gol Osigr Targe
 						--i(159817),	-- Gol Osigr Torch
