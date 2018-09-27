@@ -1324,6 +1324,17 @@ local function GetTitleCache()
 	end
 	return cache;
 end
+local function GetItemCache()
+	local cache = GetTempDataMember("ITEM_CACHE");
+	if not cache then
+		cache = {};
+		SetTempDataMember("ITEM_CACHE", cache);
+		for i=166000,1,-1 do
+			tinsert(cache, app.CreateItem(i));
+		end
+	end
+	return cache;
+end
 local function GetGearSetCache()
 	--if true then return nil; end
 	local db = GetTempDataMember("GEAR_SET_CACHE", nil);
@@ -7483,6 +7494,14 @@ function app:GetDataCache()
 		db.text = "Illusions (Dynamic)";
 		table.insert(g, db);
 		--]]
+		-- Items (Dynamic)
+		--[[
+		db = {};
+		db.g = GetItemCache();
+		db.expanded = false;
+		db.text = "All Items (Dynamic)";
+		table.insert(g, db);
+		]]--
 		
 		-- Mounts (Dynamic)
 		--[[
