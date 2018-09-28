@@ -19,7 +19,7 @@ _.WorldEvents =
 					n(-17, { -- Quests *UCN18 
 						q(42758, { -- You're Gonna Need A Bigger Boat! *UCN18
 							["groups"] = {
-								un(34, i(138414)),	-- Emergency Pirate Outfit
+								un(23, i(138414)),	-- Emergency Pirate Outfit
 							},
 							["repeatable"] = true,	-- Resets yearly
 							["qg"] = 28048, -- Dread Captain DeMeza <Scourge of the South Seas>
