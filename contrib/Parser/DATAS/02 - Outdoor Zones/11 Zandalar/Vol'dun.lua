@@ -1422,13 +1422,6 @@ i(155430),
 										},
 									},
 								},
-								
-								q(52864, {	-- What Do You Mean, Mind Controlling Plants?
-									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
-								}),
 								q(51322, {	-- Wings and Stingers
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below

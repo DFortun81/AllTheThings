@@ -10,7 +10,7 @@ _.Zones =
 			["groups"] = {
 				n(-4, {		-- Achievements
 					["groups"] = {
-						{	--  A Loa of a Tale [Note: Ugh Longhand, but parser will only take it this way.  Don't convert please]
+						{	--  A Loa of a Tale
 							["achievementID"] = 13036,	-- A Loa of a Tale
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["g"] = {
@@ -35,7 +35,7 @@ _.Zones =
 							["achievementID"] = 12944,	-- Adventurer of Zuldazar
 							["collectible"] = false,	-- Can't be completed solely in this zone
 						},
-						{	-- Bow To Your Masters [H] [Note: Ugh Longhand, but parser will only take it this way.  Don't convert please]
+						{	-- Bow To Your Masters [H]
 							["achievementID"] = 13020, -- Bow to Your Masters
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["races"] = HORDE_ONLY,
