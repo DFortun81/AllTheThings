@@ -9,31 +9,55 @@ _.Zones =
 		m(1163, {	-- Dazar'alor
 			-- Note: This expansion we do NOT want to mark this city as Horde Only because both factions will have various World Quests here
 			["groups"] = {
+				{	-- Achievements
+					["npcID"] = -4,	-- Achievements
+					-- Note: Here we can keep the rares in one file while allowing them to be in the achievement area and not mess anything up.
+					["g"] = {
+						{	-- Adventurer of Zuldazar
+							["achievementID"] = 12944,	-- Adventurer of Zuldazar
+							["collectible"] = false,	-- Can't be completed solely in this zone
+							["g"] = {
+								{	--  Gahz'ralka [CQLA]
+									["npcID"] = 129954,	-- Gahz'ralka
+									["coords"] = {
+										{	64.28, 32.67 },
+									},
+									["questID"] = 50439,
+									["g"] = {
+										{	-- Gahz'ralka
+											["criteriaID"] = 2,	-- Gahz'ralka
+										},
+										{	-- Relentless Hydra Legguards
+											["itemID"] = 161043,	-- Relentless Hydra Legguards
+											["bonusID"] = 4776,
+										},
+									},
+								},
+								{	-- Kul'krazahn [CQLA]
+									["npcID"] = 120899,	-- Kul'krazahn
+									["coords"] = {
+										{	55.01, 83.61 },
+									},
+									["questID"] = 48333,
+									["g"] = {
+										{	-- Kul'krazahn
+											["criteriaID"] = 11,	-- Kul'krazahn
+										},
+										{	-- Amani Berserker's Chopper
+											["itemID"] = 160947,	-- Amani Berserker's Chopper
+											["bonusID"] = 4776,
+										},
+									},
+								},
+							},
+						},
+					},
+				},
 				n(-16, {	-- Rares
-					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(133208, {	-- Da White Shark
-							["groups"] = {
-								sz(12851, 7),	-- Da White Shark's Bounty
-							},
 							["questID"] = 50948,
-							--["questID"] = 50947, -- This is the unlock for actual chest
-						}),
-						n(129954, {	-- Gahz'ralka [CQLS]
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								sz(12944, 2),	-- Gahz'ralka
-								i(161043),	-- Relentless Hydra Legguards
-							}),
-							["questID"] = 50439,
-							["coords"] = {
-								{ 64.28, 32.67 },
-							},
-						}), 
-						n(120899, {	-- Kul'krazahn
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(160947),	-- Amani Berserker's Chopper
-							}),	
-							["questID"] = 48333,
+							--["questID"] = 50947, -- This is the unlock for actual chest [Under Treasures]
 						}),
 					},
 				}),

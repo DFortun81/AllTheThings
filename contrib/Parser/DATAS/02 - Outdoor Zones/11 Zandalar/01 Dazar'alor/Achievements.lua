@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
--- Meta Note:  No need to include "Adventurer of <Zone Name>" in the achievement area as they are being tied to the rare themselves due to them awarding the actual credit.
 
 _.Zones =
 {
@@ -30,6 +29,11 @@ _.Zones =
 									},
 								},
 							},
+						},
+						{	-- Adventurer of Zuldazar
+							-- Note: Actual information is in rare file.  This just lets us alphabetize it properly instead of it going to the bottom.
+							["achievementID"] = 12944,	-- Adventurer of Zuldazar
+							["collectible"] = false,	-- Can't be completed solely in this zone
 						},
 						{	-- Bow To Your Masters [H] [Note: Ugh Longhand, but parser will only take it this way.  Don't convert please]
 							["achievementID"] = 13020, -- Bow to Your Masters
@@ -116,6 +120,9 @@ _.Zones =
 							["groups"] = {
 								o(284454, {	-- Da White Shark's Bounty	
 									["questID"] = 50947,
+									["sourceQuests"] = {
+										50948,	-- Da White Shark Kill
+									},
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
 							},

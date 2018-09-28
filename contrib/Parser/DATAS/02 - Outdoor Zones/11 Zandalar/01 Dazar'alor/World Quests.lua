@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
--- Meta Note:  No need to include "Adventurer of <Zone Name>" in the achievement area as they are being tied to the rare themselves due to them awarding the actual credit.
 
 _.Zones =
 {
