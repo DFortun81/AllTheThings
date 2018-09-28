@@ -1288,6 +1288,20 @@ i(155430),
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
+								{	--  Desert Survivors [Pet Battle]
+									["questID"] = 52878,	-- Desert Survivors
+									["qg"] = 142054,	-- Kusa
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["g"] = {
+										{	-- Desert Survivors
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 20,	-- Desert Survivors
+										},
+									},
+								},
 								q(51792, {	-- Erupting Totem Testing
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
@@ -1314,18 +1328,20 @@ i(155430),
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
-								q(51108, {	-- Hivemother Kraxi
-									["groups"] = {
-										i(161027, {	-- Venomous Hivemother Cord
-											["crs"] = {
-												130443,	-- Hivemother Kraxi
-											},
-										}),
-									},
+								{	-- Hivemotheree Kraxi
+									["questID"] = 51108,	-- Hivemotheree Kraxi
+									["npcID"] = 130443,	-- Hivemotheree Kraxi
+									["qg"] = 130443,	-- Hivemotheree Kraxi
 									["repeatable"] = true,
-									["isDaily"] = true,
-									["lvl"] = 120,
-								}),
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["g"] = {
+										{	-- Venomous Hivemother Cord
+											["itemID"] = 161027,	-- Venomous Hivemother Cord
+										},
+									},
+								},
 								q(51239, {	-- Instructions Not Included
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
@@ -1358,15 +1374,20 @@ i(155430),
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
-								q(52856, {	-- Snakes on a Terrace [Pet Battle]
-									["groups"] = {
-										i(163036),	-- Polished Pet Charm
-									},
+								{	--  Snakes on a Terrace [Pet Battle]
+									["questID"] = 52856,	-- Snakes on a Terrace
+									["qg"] = 141945,	-- Sizzik
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
-								}),
+									["g"] = {
+										{	-- Snakes on a Terrace
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 18,	-- Snakes on a Terrace
+										},
+									},
+								},
 								q(51558, {	-- Spider Scorching
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
@@ -1387,6 +1408,21 @@ i(155430),
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								{	--  What Do You Mean, Mind Controlling Plants? [Pet Battle]
+									["questID"] = 52864,	-- What Do You Mean, Mind Controlling Plants?
+									["qg"] = 141969,	-- Spineleaf
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["g"] = {
+										{	-- What Do You Mean, Mind Controlling Plants?
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 19,	-- What Do You Mean, Mind Controlling Plants?
+										},
+									},
+								},
+								
 								q(52864, {	-- What Do You Mean, Mind Controlling Plants?
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below
