@@ -80,9 +80,17 @@ _.Zones =
 											["races"] = HORDE_ONLY,
 										}),
 										q(52930, {	-- Wartime Donation: Gold
-											["qg"] = 142157,	-- Paymasteer Grintooth
+											["qg"] = 142157,	-- Paymaster Grintooth
 											["coord"] = {
 												51.71, 95.55
+											},
+											["repeatable"] = true,
+											["isWeekly"] = true,
+										}),
+										q(53335, {	-- Wartime Donation: War Resources
+											["qg"] = 142158,	-- Quartermaster Rauka
+											["coord"] = {
+												51.71, 95.07
 											},
 											["repeatable"] = true,
 											["isWeekly"] = true,
