@@ -241,12 +241,14 @@ _.Zones =
 								i(160473),	-- Wickerthorn Stompers	
 							}),	
 							["questID"] = 50073,
-						}),		
+						}),	
+							
 						n(132052, {	-- Vol'Jim			
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-								i(155074),	-- Toll Enforcer	
+								un(1, i(155074)),	-- Toll Enforcer	
 							}),	
-							-- ["questID"] = 		
+							-- ["questID"] =
+							["description"] = "This NPC looks like it doesn't exist in Live and only existed in Beta",
 						}),		
 						n(137176, {	-- Walter Ferrell
 							["crs"] = {

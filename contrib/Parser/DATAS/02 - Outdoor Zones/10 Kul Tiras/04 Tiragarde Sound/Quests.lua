@@ -114,20 +114,31 @@ _.Zones =
 						--------------------------------------
 						-- Gol Thovas
 						--------------------------------------
-						m(1171, {	-- Gol Thovas
-							a(q(49260, {	-- Backup While I Pack Up
-								["qg"] = 128349, -- Hilde Firebreaker
-								["sourceQuests"] = { 49225 },	-- Chasing the Leader
-							})),
-							a(q(49233, {	-- I'm a Druid, Not a Priest
-								["qg"] = 128354, -- Birch Tomlin
-								["sourceQuests"] = { 50700 },	-- Drust in Time
-							})),
-							a(q(49232, {	-- Salvaging a Disaster
-								["qg"] = 128353, -- Pendi Cranklefuse
-								["sourceQuests"] = { 50700 },	-- Drust in Time
-							})),
-						}),
+						
+						{	-- Gol Thovas
+							["mapID"] = 1171,	-- Gol Thovas
+							["icon"] = "Interface\\Icons\\inv_tiragardesound",
+							["g"] = {
+								{	-- Backup While I Pack Up
+									["questID"] = 49260,	-- Backup While I Pack Up
+									["qg"] = 128349,	-- Hilde Firebreaker
+									["races"] = ALLIANCE_ONLY,
+									["sourceQuests"] = { 49225 },	-- Chasing the Leader	NOTE: You need to do this quest or else it won't spawn
+								},
+								{	-- I'm a Druid, Not a Priest
+									["questID"] = 49233,	-- I'm a Druid, Not a Priest
+									["qg"] = 128349, -- Hilde Firebreaker
+									-- ["sourceQuests"] = { 49225 },	-- Chasing the Leader	NOTE: You can get this quest with 0 quests done
+									["races"] = ALLIANCE_ONLY,
+								},
+								{	-- Salvaging a Disaster
+									["questID"] = 49232,	-- Salvaging a Disaster
+									["qg"] = 128353, -- Pendi Cranklefuse
+									-- ["sourceQuests"] = { 50700 },	-- Drust in Time	NOTE: You can get this quest with 0 quests done
+									["races"] = ALLIANCE_ONLY,
+								},
+							},
+						},
 						
 						--------------------------------------
 						-- Eastpoint Station / Ashvane Foundry
