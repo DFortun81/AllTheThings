@@ -2711,6 +2711,7 @@ AllTheThings.Locales.enUS = {
 		[298963] = select(1,GetAchievementCriteriaInfo(13024,2)),	-- Weathered Nazmani Tablet
 		[298965] = select(1,GetAchievementCriteriaInfo(13024,3)),	-- Cracked Tablet
 		[299073] = select(1,GetAchievementCriteriaInfo(13024,4)),	-- Fractured Tablet
+		[279750] = "Hay Covered Chest",
 		
 		
 		[9999999] = "Treasure Chest",	-- Because we have to make up on our own objectID's until information rolls in.  Start with this one and go down the list when entering.

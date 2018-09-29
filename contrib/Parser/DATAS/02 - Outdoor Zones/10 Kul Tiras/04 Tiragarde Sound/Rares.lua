@@ -86,17 +86,30 @@ _.Zones =
 							}),
 							["questID"] = 50137,
 						}),
-						n(130350, {	-- Guardian of the Spring
-							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								i(155571, {	-- Garyl's Riding Blanket
-									["crs"] = {
-										131453,	-- Roan Berthold
+						{	-- Guardian of the Spring
+							["npcID"] = 130350,	-- Guardian of the Spring
+							["questID"] = 49983,	-- Ride Horse Back
+							["coords"] = {
+								{ 62.15, 51.85 }	--  Guardian  of  the Spring
+							},
+							["description"] = "Mount the horse located at 62.15, 51.85 and ride it to Roan Berthold at 67.37, 51.68",
+							["g"] = {
+								{	-- Hay Covered Chest
+									["objectID"] =  279750,	-- Hay Covered Chest
+									["icon"] = "Interface\\Icons\\garrison_bronzechest",
+									["questID"] = 49963, -- Loot Chest
+									["g"] = {
+										{	-- Garyl's Riding Blanket
+											["itemID"] = 155571,	-- Garyl's Riding Blanket
+											["bonusID"] = 4776,	-- Scales while leveling
+											["crs"] = {
+												131453,	-- Roan Berthold
+											},
+										},
 									},
-								}),
-							}),
-							["questID"] = 49983,	-- additionally 49963?  It looks like 83 for bringing the horse to the NPC and 63 for clicking the reward.
-							["description"] = "Mount the horse and ride it to Roan Berthold at 67.3 51.6 to collect the reward.",
-						}),
+								},
+							},
+						},
 						n(139233, {	-- Gulliver
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158338),	-- Swift-Travel Gloves
