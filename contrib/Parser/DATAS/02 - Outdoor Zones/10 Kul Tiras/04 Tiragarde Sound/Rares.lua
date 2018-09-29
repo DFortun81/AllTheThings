@@ -174,12 +174,19 @@ _.Zones =
 							["coord"] = { 68.3, 63.56 },
 							["questID"] = 51872,
 						}),
-						n(127289, {	-- Saurolisk Tamer Mugg
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								i(154416),	-- Trogg Saurolisk-Breaker
-							}),
+						{	-- Saurolisk Tamer Mugg
+							["npcID"] = 127289,	-- Saurolisk Tamer Mugg
 							["questID"] = 48806,
-						}),
+							["coords"] = {
+								{ 58.47, 14.82 }
+							},
+							["g"] = {
+								{	-- Trogg Saurolisk-Breaker
+									["itemID"] = 154416,	-- Trogg Saurolisk-Breaker
+									["bonusID"] = 4776,
+								},
+							},
+						},
 						n(139285, {	-- Shiverscale the Toxic
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155278),	-- Shiverscale Spellknife
