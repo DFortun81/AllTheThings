@@ -32,7 +32,7 @@ _.ExpansionFeatures =
 					},
 					{	-- Time for War
 						["questID"] = 53332,	-- Time for War
-						["qg"] = 135612,	-- Halford Wyrmbanee
+						["qg"] = 135612,	-- Halford Wyrmbane
 						["sourceQuests"] = {
 							52544,	-- The War Cache
 						},
@@ -96,6 +96,211 @@ _.ExpansionFeatures =
 							{ 70.58, 27.03 },
 						},
 					},
+					{	-- Foothold: Vol'dun
+						["questID"] = 51572,	-- Foothold: Vol'dun
+						["qg"] = 144635,	--  Zandalar Campaign
+						["sourceQuests"] = {
+							51569,	-- The Zandalar Campaign
+						},
+						["lvl"] = 112, -- When you get the three choices.
+						["coords"] = {
+							{ 69.59, 26.93 },
+						},
+					},
+					{	-- Voyage to the West
+						["questID"] = 51283,	-- Voyage to the West
+						["qg"] = 135612,	-- Halford Wyrmbane
+						["sourceQuests"] = {
+							51569,	-- The Zandalar Campaign
+						},
+						["coords"] = {
+							{ 69.48, 26.83 },
+						},
+					},
+					{	-- Foothold: Zuldazar
+						["questID"] = 51570,	-- Foothold: Zuldazar
+						["qg"] = 144635,	--  Zandalar Campaign
+						["sourceQuests"] = {
+							51569,	-- The Zandalar Campaign
+						},
+						["lvl"] = 112, -- When you get the three choices.
+						["coords"] = {
+							{ 69.59, 26.93 },
+						},
+					},
+					{	-- The Ongoing Campaign
+						["questID"] = 51961,
+						["qg"] = 135612,	-- Halford Wyrmbane
+						["coords"] = {
+							{ 69.48, 26.83 },
+						},
+						-- NOTE!! Source Quest is finishing one zone.  Add all at a later date.
+					},
+					{	-- Vol'dun Foothold
+						["achievementID"] = 12510,	-- Ready for War
+						["criteriaID"] = 2,	--  Vol'dun Foothold
+						["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
+						["maps"] = {
+							864,	-- Vol'dun
+						},
+						["g"] = {
+							{	-- Ooh Rah!
+								["questID"] = 51170,	-- Ooh Rah!
+								["qg"] = 137867,	-- Halford Wyrmbane
+								["sourceQuests"] = {
+									51283,	-- Voyage to the West
+								},
+								["coords"] = {
+									{ 32.87, 34.89 },
+								},
+							},
+							{	-- Establish a Beachhead
+								["questID"] = 51229,	-- Establish a Beachhead
+								["qg"] = 137008,	-- Sergeant Ermey
+								["sourceQuests"] = {
+									51170,	-- Ooh Rah!
+								},
+								["coords"] = {
+									{ 39.63, 35.65 },
+								},
+							},
+							{	-- Honor Bound
+								["questID"] = 51349,	-- Honor Bound
+								["qg"] = 137213,	-- Halford Wyrmbane
+								["sourceQuests"] = {
+									51229,	-- Establishing a Beachhead
+								},
+								["coords"] = {
+									{ 37.71, 35.85 },
+								},
+							},
+							{	-- Unexpected Aid
+								["questID"] = 51350,	-- Unexpected Aid
+								["qg"] = 137337,	-- Sergeant Ermey
+								["sourceQuests"] = {
+									51349,	-- Honor Bound
+								},
+								["coords"] = {
+									{ 39.01, 42.93 },
+								},
+							},
+							{	-- Poisoned Barbs
+								["questID"] = 51351,	-- Poisoned Barbs
+								["qg"] = 137337,	-- Sergeant Ermey
+								["sourceQuests"] = {
+									51349,	-- Honor Bound
+								},
+								["coords"] = {
+									{ 39.01, 42.93 },
+								},
+							},
+							{	-- Antidote Application
+								["questID"] = 51366,	-- Antidote Application
+								["qg"] = 137337,	-- Sergeant Ermey
+								["sourceQuests"] = {
+									51350,	-- Unexpected Aid
+									51351,	-- Poisoned Barbs
+								},
+								["coords"] = {
+									{ 39.01, 42.93 },
+								},
+							},
+							{	-- Friends in Strang Places
+								["questID"] = 51369,	-- Friends in Strang Places
+								["qg"] = 137434,	-- Vorrik
+								["sourceQuests"] = {
+									51366,	-- Antidote Application
+								},
+								["coords"] = {
+									{ 38.91, 42.96 },
+								},
+							},
+							{	-- Defang the Faithless
+								["questID"] = 51391,	-- Defang the Faithless
+								["qg"] = 137537,	-- Vorrik
+								["sourceQuests"] = {
+									51369,	-- Friends in Strang Places
+								},
+								["coords"] = {
+									{ 27.23, 53.92 },
+								},
+							},
+							{	-- Break the Siege
+								["questID"] = 51394,	-- Break the Siege
+								["qg"] = 137537,	-- Vorrik
+								["sourceQuests"] = {
+									51369,	-- Friends in Strang Places
+								},
+								["coords"] = {
+									{ 27.23, 53.92 },
+								},
+							},
+							{	-- Breaking Free
+								["questID"] = 51389,	-- Breaking Free
+								["qg"] = 137543,	-- Sergeant Ermey
+								["sourceQuests"] = {
+									51369,	-- Friends in Strang Places
+								},
+								["coords"] = {
+									{ 27.21, 53.92 },
+								},
+							},
+							{	-- The Keeper's Keys
+								["questID"] = 51395,	-- The Keeper's Keys
+								["qg"] = 129519,	-- Vorrik
+								["sourceQuests"] = {
+									51391,	-- Defang the Faithless
+									51394,	-- Break the Siege
+									51389,	-- Breaking Free
+								},
+								["coords"] = {
+									{ 27.59, 52.57 },
+								},
+							},
+							{	-- Reporting In
+								["questID"] = 51402,	-- Reporting In
+								["qg"] = 137543,	-- Sergeant Ermey
+								["sourceQuests"] = {
+									51395,	-- The Keeper's Keys
+								},
+								["coords"] = {
+									{ 27.01, 52.55 },
+								},
+							},
+							{	-- Champion: Magister Umbric
+								["questID"] = 52008,	-- Champion: Magister Umbric
+								["qg"] = 139568,	-- Magister Umbric
+								["sourceQuests"] = {
+									51402,	-- Reporting In
+								},
+								["coords"] = {
+									{ 37.46, 35.81 },
+								},
+								["g"] = {
+									{	-- Magister Umbric
+										["followerID"] = 1072,	-- Magister Umbric
+										["questID"] = 52008,
+									},
+								},
+							},
+							{	-- Return to Boralus
+								["questID"] =  51969,	-- Return to Boralus
+								["qg"] = 137213,	-- Halford Wyrmbane
+								["sourceQuests"] = {
+									52008,	-- Champion: Magister Umbric
+								},
+								["coords"] = {
+									{ 37.71, 35.76 },
+								},
+								["g"] = {
+									{	--  Vol'dun Foothold
+										["achievementID"] = 12510,	-- Ready for War
+										["criteriaID"] = 2,	--  Vol'dun Foothold
+									},
+								},
+							},
+						},
+					},
 					{	-- Zuldazar Foothold
 						["achievementID"] = 12510,	-- Ready for War
 						["criteriaID"] = 3,	--  Zuldazar Foothold
@@ -104,17 +309,6 @@ _.ExpansionFeatures =
 							862,	-- Zuldazar
 						},
 						["g"] = {
-							{	-- Foothold: Zuldazar
-								["questID"] = 51570,	-- Foothold: Zuldazar
-								["qg"] = 144635,	--  Zandalar Campaign
-								["sourceQuests"] = {
-									51569,	-- The Zandalar Campaign
-								},
-								["lvl"] = 112, -- When you get the three choices.
-								["coords"] = {
-									{ 69.59, 26.93 },
-								},
-							},
 							{	-- Zuldazar Foothold
 								["questID"] = 51308,	-- Zuldazar Foothold
 								["qg"] = 135612,	-- Halford Wyrmbane
