@@ -110,7 +110,7 @@ _.Mounts =
 		i(21218),	-- Blue Qiraji Battle Tank
 		i(163578), 	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
-		i(163516),	-- Capture Dune Scavenger
+		i(163576),	-- Captured Dune Scavenger
 		i(163574),	-- Chewed-On Reins of the Terrified Pack Mule
 		i(147806),	-- Cloudwing Hippogryph
 		i(95059),	-- Clutch of Ji-Kun
