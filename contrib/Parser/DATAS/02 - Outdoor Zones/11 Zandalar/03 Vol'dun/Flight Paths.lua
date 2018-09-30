@@ -18,7 +18,7 @@ _.Zones =
 					fp(2114, {	-- Deadwood Cove, Vol'dun [A] [This is quest locked behind the War Campaign]
 						["description"] = "Deadwood Cove, Vol'dun",
 						["coord"] = { 39.8, 83.8 },
-						["races"] = ALLIANCE_ONLY
+						--["races"] = ALLIANCE_ONLY
 					}),
 					fp(2119, { -- Sanctuary of the Devoted, Vol'dun [N]
 						["description"] = "Sanctuary of the Devoted, Vol'dun",
@@ -31,7 +31,7 @@ _.Zones =
 					fp(2110, {	-- Shatterstone Harbor, Vol'dun [A] [This is quest locked behind the War Campaign]
 						["description"] = "Shatterstone Harbor, Vol'dun",
 						["coord"] = { 36.6, 34.2 },
-						["races"] = ALLIANCE_ONLY
+						--["races"] = ALLIANCE_ONLY
 					}),
 					fp(2118, { -- Temple of Akunda, Vol'dun [H]
 						["description"] = "Temple of Akunda, Vol'dun",

@@ -66,7 +66,7 @@ _.Zones =
 					fp(2094, { -- Warfang Hold, Stormsong Valley [H] [NOTE: Verification Required, this may be locked behind the War Campaign quests]
 						["description"] = "Warfang Hold, Stormsong Valley",
 						["coord"] = { 51.4, 33.6 },
-						["races"] = HORDE_ONLY,
+						--["races"] = HORDE_ONLY,
 					}),
 					fp(2139, { -- Windfall Cave, Stormsong Valley [H]
 						["description"] = "Windfall Cave, Stormsong Valley \n\nRequires completion of Mission Report: Windfall Cavern and related quest line to unlock.",

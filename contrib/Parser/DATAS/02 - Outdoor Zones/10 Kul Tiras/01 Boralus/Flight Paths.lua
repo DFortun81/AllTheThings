@@ -19,7 +19,7 @@ _.Zones =
 					fp(2105, { -- Tradewinds Market, Tiragarde Sound (Ferry) [A]
 						["description"] = "Tradewinds Market, Tiragarde Sound (Ferry)",
 						["coord"] = { 74.2, 24.6 },
-						["races"] = ALLIANCE_ONLY,
+						--["races"] = ALLIANCE_ONLY,
 					}),
 					fp(2083, { -- Tradewinds Market, Tiragarde Sound [A]
 						["description"] = "Tradewinds Market, Tiragarde Sound",

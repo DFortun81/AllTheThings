@@ -27,7 +27,7 @@ _.Zones =
 					fp(2056, { -- Fallhaven, Drustvar (Ferry) [A]
 						["description"] = "Fallhaven, Drustvar (Ferry)",
 						["coord"] = { 61.6, 36.6 },
-						["races"] = ALLIANCE_ONLY,
+						--["races"] = ALLIANCE_ONLY,
 					}),
 					fp(2033, { -- Fallhaven, Drustvar [A]
 						["description"] = "Fallhaven, Drustvar",
@@ -36,7 +36,7 @@ _.Zones =
 					fp(2057, { -- Fletcher's Hollow, Drustvar (Ferry) [A]
 						["description"] = "Fletcher's Hollow, Drustvar (Ferry)",
 						["coord"] = { 69.4, 57.2 },
-						["races"] = ALLIANCE_ONLY,
+						--["races"] = ALLIANCE_ONLY,
 					}),
 					fp(2035, { -- Fletcher's Hollow, Drustvar [A]
 						["description"] = "Fletcher's Hollow, Drustvar",
@@ -49,7 +49,7 @@ _.Zones =
 					fp(2135, { -- Krazzlefrazz Outpost, Drustvar [H] [NOTE: Verification Required, this may be locked behind the War Campaign quests]
 						["description"] = "Krazzlefrazz Outpost, Drustvar",
 						["coord"] = { 37.4, 24 },
-						["races"] = HORDE_ONLY,
+						--["races"] = HORDE_ONLY,
 					}),
 					fp(2275, { -- Mudfisher Cove, Drustvar [H]
 						["description"] = "Mudfisher Cove, Drustvar \n\nRequires completion of Mission Report: Mudfisher Cove and related quest line to unlock.",
