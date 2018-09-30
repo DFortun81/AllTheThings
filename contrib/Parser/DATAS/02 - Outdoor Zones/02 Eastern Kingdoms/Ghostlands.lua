@@ -7,7 +7,8 @@ _.Zones =
 		m(95, {	-- Ghostlands
 			["groups"] = {		
 				n(-228, {	-- Flight Paths
-					fp(83, {	-- Tranquillien, Ghostlands
+					fp(83, {	-- Tranquillien, Ghostlands [H]
+						["description"] = "Tranquillien, Ghostlands - Horde Only",
 						["coord"] = { 45.4, 30.6 },
 					}),
 					fp(205, {	-- Zul'Aman, Ghostlands

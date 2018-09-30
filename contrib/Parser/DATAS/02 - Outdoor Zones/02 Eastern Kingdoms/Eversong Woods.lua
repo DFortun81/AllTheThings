@@ -7,13 +7,16 @@ _.Zones =
 		m(94, {	-- Eversong Woods
 			["groups"] = {			
 				n(-228, {	-- Flight Paths
-					fp(625, {	-- Fairbreeze Village, Eversong Woods
+					fp(625, {	-- Fairbreeze Village, Eversong Woods [H]
+						["description"] = "Fairbreeze Village, Eversong Woods - Horde Only",
 						["coord"] = { 44, 70 },
 					}),
-					fp(631, {	-- Falconwing Square, Eversong Woods
+					fp(631, {	-- Falconwing Square, Eversong Woods [H]
+						["description"] = "Falconwing Square, Eversong Woods  - Horde Only",
 						["coord"] = { 46.2, 46.8 },
 					}),
-					fp(82, {	-- Silvermoon City
+					fp(82, {	-- Silvermoon City [H]
+						["description"] = "Silvermoon City  - Horde Only",
 						["coord"] = { 54.4, 50.8 },
 					}),
 				}),

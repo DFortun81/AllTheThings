@@ -7,7 +7,8 @@ _.Zones =
 		m(90, { 	-- Undercity
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(11, { -- Undercity, Tirisfal
+					fp(11, { -- Undercity, Tirisfal [H]
+						["description"] = "Undercity, Tirisfal - Horde Only",
 						["coord"] = { 63, 48.2 },
 					}),
 				}),

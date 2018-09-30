@@ -115,7 +115,8 @@ _.Zones =
 				}),
 				--]]
 				n(-228, {	-- Flight Paths
-					fp(94, {	-- The Exodar
+					fp(94, {	-- The Exodar [A]
+						["description"] = "The Exodar - Alliance Only",
 						["coord"] = { 54.5, 36.3 },
 					}),
 				}),
@@ -293,9 +294,9 @@ _.Zones =
 						}),
 					})),
 					a(n(16657, {	-- Feera <Engineering Supplies>
-						i(23799, {	-- Schematic: Adamantite Rifle
-							i(23746),	-- Adamantite Rafle
-						}),
+						i(23799),	-- Schematic: Adamantite Rifle
+						i(23816),	-- Schematic: Fel Iron Toolbox
+						i(23811),	-- Schematic: White Smoke Flare
 					})),
 					a(n(16716, {	-- Gornii <Cloth Armor Merchant>
 						i(3428),	-- Common Grey Shirt

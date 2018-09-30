@@ -19,7 +19,8 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Path
-					fp(460, { -- Brill, Tirisfal Glades
+					fp(460, { -- Brill, Tirisfal Glades [H]
+						["description"] = "Brill, Tirisfal Glades - Horde Only",
 						["coord"] = { 58.8, 51.8 },
 					}),
 					fp(384, { -- The Bulwark, Tirisfal
