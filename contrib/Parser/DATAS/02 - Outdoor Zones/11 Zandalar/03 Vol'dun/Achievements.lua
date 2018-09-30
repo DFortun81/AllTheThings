@@ -232,7 +232,7 @@ _.Zones =
 							},
 							{	-- Ofer's Bound Journal
 								["criteriaID"] = 5,	-- Ofer's Bound Journal
-								-- ["questID"] = ,
+								["questID"] = 53136,
 								["coord"] = { 26.8, 52.9 },
 							},
 							{	-- Skye's Pet Rock
