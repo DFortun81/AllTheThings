@@ -10,57 +10,51 @@ _.Instances =
 				["groups"] = {
 					d(1, {	-- Normal
 						["modID"] = 17,
-						
 						["groups"] = {
-							n(-17, {	-- Quests 						
-								q(37152, {
-									i(119083), 	-- Fruit Basket Toy ["isToy"] = True
-								}),
-							}),
 							cr(74787, e(888, {	-- Slave Watcher Crushto
-								i(110040),	-- Crushto's Neck Separator
-								i(109939),	-- Streamslither Spaulders								
+								i(109823),	-- Blackwater Leggings
 								i(109882),	-- Blackwater Wristguards
 								i(109869),	-- Bloodfeather Bracers
+								i(109810),	-- Bloodfeather Leggings
 								i(109864),	-- Bracers of Arcane Mystery
 								i(109868),	-- Bracers of Burning Focus
 								i(109866),	-- Bracers of Swirling Light
-								i(109870),	-- Crystalbinder Wristguards
-								i(109881),	-- Felflame Bracers
-								i(109865),	-- Frost-Touched Wristwraps
-								i(109878),	-- Goldsteel Bindings
-								i(109879),	-- Gutcrusher Bracers
-								i(109876),	-- Incarnadine Bracers
-								i(109875),	-- Lavalink Bracers
-								i(109871),	-- Leafmender Wraps
-								i(109867),	-- Lightbinder Wristwraps
-								i(109883),	-- Morningscale Bracers
-								i(109880),	-- Rivet-Sealed Bracers
-								i(109874),	-- Rockhide Wristguards
-								i(109873),	-- Sharpeye Bracers
-								i(109872),	-- Streamslither Bracers
-								i(109877),	-- Verdant Plate Wristguards
-								i(109823),	-- Blackwater Leggings
-								i(109810),	-- Bloodfeather Leggings
 								i(109811),	-- Crystalbinder Legwraps
+								i(109870),	-- Crystalbinder Wristguards
+								i(110040),	-- Crushto's Neck Separator
+								i(110000),	-- Crushto's Runic Alarm
+								i(109881),	-- Felflame Bracers
 								i(109808),	-- Felflame Legwraps
 								i(109805),	-- Frost-Touched Legwraps
+								i(109865),	-- Frost-Touched Wristwraps
+								i(109878),	-- Goldsteel Bindings
 								i(109820),	-- Goldsteel Legplates
+								i(109879),	-- Gutcrusher Bracers
 								i(109821),	-- Gutcrusher Legplates
+								i(109876),	-- Incarnadine Bracers
 								i(109818),	-- Incarnadine Legplates
+								i(109875),	-- Lavalink Bracers
 								i(109816),	-- Lavalink Legguards
 								i(109812),	-- Leafmender Legwraps
+								i(109871),	-- Leafmender Wraps
 								i(109806),	-- Leggings of Swirling Light
 								i(109809),	-- Legguards of Burning Focus
 								i(109807),	-- Lightbinder Leggings
+								i(109867),	-- Lightbinder Wristwraps
+								i(109883),	-- Morningscale Bracers
 								i(109817),	-- Morningscale Leggings
+								i(109880),	-- Rivet-Sealed Bracers
 								i(109822),	-- Rivet-Sealed Legplates
 								i(109815),	-- Rockhide Leggings
+								i(109874),	-- Rockhide Wristguards
+								i(109873),	-- Sharpeye Bracers
 								i(109814),	-- Sharpeye Legguards
+								i(109872),	-- Streamslither Bracers
 								i(109813),	-- Streamslither Legguards
+								i(109939),	-- Streamslither Spaulders
 								i(109804),	-- Trousers of Arcane Mystery
 								i(109819),	-- Verdant Plate Legguards
-								i(110000),	-- Crushto's Runic Alarm
+								i(109877),	-- Verdant Plate Wristguards
 							})),
 							cr(74475, e(893, {	-- Magmolatus (Forgemaster Gog'duh 74366)
 								i(109898),	-- Blackwater Wrap
@@ -222,12 +216,11 @@ _.Instances =
 						},
 					}),
 					d(2, {	-- Heroic
-						
 						["lvl"] = 100,
 						["groups"] = {
 							cr(74787, e(888, {	-- Slave Watcher Crushto
 								i(110040),	-- Crushto's Neck Separator
-								i(109939),	-- Streamslither Spaulders								
+								i(109939),	-- Streamslither Spaulders
 								i(109882),	-- Blackwater Wristguards
 								i(109869),	-- Bloodfeather Bracers
 								i(109864),	-- Bracers of Arcane Mystery
@@ -271,6 +264,7 @@ _.Instances =
 								i(110000),	-- Crushto's Runic Alarm
 							})),
 							cr(74475, e(893, {	-- Magmolatus (Forgemaster Gog'duh 74366)
+								ach(8993),	-- A Gift of Earth and Fire
 								i(109898),	-- Blackwater Wrap
 								i(109885),	-- Bloodfeather Chestwrap
 								i(109884),	-- Chestguard of Burning Focus
@@ -332,7 +326,7 @@ _.Instances =
 								i(109927),	-- Mistwoven Windcloak
 								i(109915),	-- Rigid Scale Cloak
 								i(109928),	-- Skullcracker Cloak
-								i(109918),	-- Soot-Scarred Longcloak								
+								i(109918),	-- Soot-Scarred Longcloak
 								i(109917),	-- Three-Clefthoof Cape
 								i(109799),	-- Blackwater Boots
 								i(109788),	-- Bloodfeather Treads
@@ -357,6 +351,13 @@ _.Instances =
 								i(110015),	-- Toria's Unseeing Eye
 							})),
 							cr(74790, e(889, {	-- Gug'rokk
+								ach(9008),	-- Is Draenor on Fire?
+								ach(9005, {	-- Come With Me If You Want to Live
+									["groups"] = {
+										follower(177),	-- Croman
+									},
+									["description"] = "You must talk to Croman after killing Slave Watcher Crushto, then kill Magmolatus. Finish the dungeon with Croman still alive.",
+								}),
 								ig(21524),	-- Red Winter Hat
 								i(110042),	-- Gug'rokk's Smasher
 								i(110044),	-- Ogre Dinner Plate
@@ -430,12 +431,11 @@ _.Instances =
 						},
 					}),
 					d(23, {	-- Mythic
-						
 						["lvl"] = 100,
 						["groups"] = {
 							cr(74787, e(888, {	-- Slave Watcher Crushto
 								i(110040),	-- Crushto's Neck Separator
-								i(109939),	-- Streamslither Spaulders								
+								i(109939),	-- Streamslither Spaulders
 								i(109882),	-- Blackwater Wristguards
 								i(109869),	-- Bloodfeather Bracers
 								i(109864),	-- Bracers of Arcane Mystery
@@ -540,7 +540,7 @@ _.Instances =
 								i(109927),	-- Mistwoven Windcloak
 								i(109915),	-- Rigid Scale Cloak
 								i(109928),	-- Skullcracker Cloak
-								i(109918),	-- Soot-Scarred Longcloak								
+								i(109918),	-- Soot-Scarred Longcloak
 								i(109917),	-- Three-Clefthoof Cape
 								i(109799),	-- Blackwater Boots
 								i(109788),	-- Bloodfeather Treads
@@ -565,6 +565,7 @@ _.Instances =
 								i(110015),	-- Toria's Unseeing Eye
 							})),
 							cr(74790, e(889, {	-- Gug'rokk
+								ach(10076),	-- Mythic: Bloodmaul Slag Mines
 								ig(21524),	-- Red Winter Hat
 								i(110042),	-- Gug'rokk's Smasher
 								i(110044),	-- Ogre Dinner Plate
@@ -639,9 +640,9 @@ _.Instances =
 					}),
 				},
 				["lvl"] = 90,
-				["mapID"] = 573
+				["mapID"] = 573,
 			}),
-		},					
+		},
 		["tierID"] = 6
-	},	
+	},
 };

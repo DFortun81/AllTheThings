@@ -2286,10 +2286,10 @@ _.Zones =
 							}),
 						}),
 					},
+					["races"] = { 25, 26 },	-- Pandaren
 					["icon"] = "Interface\\Icons\\ability_monk_legacyoftheemperor",
 					["description"] = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.|r",
 				}),
-				
 			},
 			["lvl"] = 82,
 			["achievementID"] = 6976,

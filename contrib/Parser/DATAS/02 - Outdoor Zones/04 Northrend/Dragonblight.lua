@@ -697,6 +697,7 @@ _.Zones =
 							q(12372, {	--  Defending Wyrmrest Temple
 								["qg"] = 27575,	-- Lord Afrasastrasz
 								["sourceQuests"] = {12435},
+								["isDaily"] = true,
 							}),
 						}),
 						-- sz(1265, 13, {	--Westwind Refugee Camp
@@ -800,14 +801,17 @@ _.Zones =
 								i(38112),	-- Bark Covered Pauldrons
 							},
 							["qg"] = 26837,	-- Sarendryana
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12065},
 						}),
 						q(12172, {	--  Attunement to Dalaran [A]
 							["classes"] = {8},
 							["qg"] = 26673,	-- Image of Archmage Modera
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(12794, {	--  The Magical Kingdom of Dalaran [A]
 							["qg"] = 26673,	-- Image of Archmage Modera 
+							["races"] = ALLIANCE_ONLY,
 						}),
 						-- Need "Moa'ki Harbor" Header
 						q(12009, {	--  Tua'kea's Crab Traps
@@ -816,6 +820,7 @@ _.Zones =
 						}),
 						q(11960, {	--  Planning for the Future [Daily]
 							["qg"] = 26228,	-- Trapper Mau'i
+							["isDaily"] = true,
 						}),
 						o(188364, {	-- Wrecked Crab Trap
 							["groups"] = {
@@ -839,6 +844,7 @@ _.Zones =
 						}),
 						q(11995, {	--  Your Presence is Required at Stars' Rest [A]
 							["qg"] = 26440,	-- Emissary Skyhaven
+							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						-- Need "Wintergarde Keep" Header
@@ -850,6 +856,7 @@ _.Zones =
 								i(38100),	-- Crystalplate Gauntlets
 							},
 							["qg"] = 27318,	-- Cavalier Durkon
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12309},
 						}),
 						q(12258, {	-- The Fate of the Dead [A]
@@ -860,6 +867,7 @@ _.Zones =
 								i(38101),	-- Stonepath Sabatons
 							},
 							["qg"] = 27155,	-- Commander Lynore Windstryke
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12251},
 						}),
 						q(12464, {	-- My Old Enemy [A]
@@ -871,14 +879,17 @@ _.Zones =
 								i(38134),	-- Bloodtinged Spellblade
 							},
 							["qg"] = 27784,	-- Commander Eligor Dawnbringer
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12237},
 						}),
 						q(12269, {	--  Not In Our Mine [A]
 							["qg"] = 27156,	-- Highlord Leoric Von Zeldig
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12275},
 						}),
 						q(12511, {	--  The Hills Have Us [A]
 							["qg"] = 27317,	-- Gryphon Commander Urik
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(12462, {	-- Breaking Off A Piece [A]
 							["groups"] = {
@@ -888,22 +899,27 @@ _.Zones =
 								i(38105),	-- Stonepath Pauldrons
 							},
 							["qg"] = 27319,	-- Yord "Calamity" Icebeard
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12326},
 						}),
 						q(12477, {	--  The Path of Redemption [A]
 							["qg"] = 27136,	-- High Commander Halford Wyrmbane
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12305},
 						}),
 						q(12439, {	--  A Disturbance In The West [A]
 							["qg"] = 27158,	-- Vas the Unstable
+							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,	-- For q12000 "Rifle the Bodies"
 						}),
 						q(12476, {	--  The Return of the Crusade? [A]
 							["qg"] = 27155,	-- Commander Lynore Windstryke
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12305},
 						}),
 						q(12440, {	--  To Stars' Rest! [A]
 							["qg"] = 26878,	-- Rodney Wells
+							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						o(190020, {	-- Wanted!
@@ -935,6 +951,7 @@ _.Zones =
 									},
 								}),
 							},
+							["races"] = ALLIANCE_ONLY,
 							["model"] = "World\\Generic\\Passive Doodads\\Wantedposters\\newwantedposter03.mdx",
 						}),
 						-- Need "The Dragon Wastes" Header
@@ -944,6 +961,7 @@ _.Zones =
 						}),
 						q(12142, {	--  Pest Control [A]
 							["qg"] = 26978,	-- Duane
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(12143, {	-- Canyon Chase [A]
 							["groups"] = {
@@ -953,13 +971,14 @@ _.Zones =
 								i(38111),	-- Wyrmbane Wristguards
 							},
 							["qg"] = 26978,	-- Duane
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12142},
 						}),
-						i(36855, {	-- Emblazoned Battle Horn
+						a(i(36855, {	-- Emblazoned Battle Horn
 							qa(12146, {	--  Disturbing Implications [A]
 								["qg"] = 27005,	-- Chilltusk
 							}),
-						}),
+						})),
 						q(12148, {	--  One of a Kind
 							["qg"] = 26983,	-- Aurastrasza
 							["sourceQuests"] = {12146,12147},
@@ -1626,7 +1645,6 @@ _.Zones =
 					}),
 					i(41124, { -- Plans: Reinforced Cobalt Shoulders
 						["crs"] = {
-							27330, -- Onslaught Infantry
 							27333, -- Onslaught Mason
 						},
 					}),

@@ -310,6 +310,10 @@ _.Zones =
 							i(113150),
 							i(113149),
 						}),
+						qh(33915, {	-- Young Hearts
+							["qg"] = 76862,	-- Gog'rak
+							["coord"] = { 19.2, 59.2 },
+						}),
 						qh(34075,  {  	-- Vul'gath's End
 							["groups"] = {
 								i(117513),	-- Frostwolf Wind-Talker Pantaloons
