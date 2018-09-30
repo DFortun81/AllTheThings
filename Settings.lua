@@ -1966,21 +1966,33 @@ local function createTooltipFrame(parent)
 	compLoc:SetPoint("TOPLEFT",dataLoc,databaseFrame:GetWidth()/2, 0)
 	addObject(elm,compLoc)
 	
-	-- This creates the "Show More Locations" Checkbox --
-	local moreLoc = createCheckBox("Show More Locations", child, function(self)
-			app.SetDataMember("ShowAllSources", self:GetChecked());
-			wipe(app.searchCache);
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("ShowAllSources", true));
-		end,
-		function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to see more than one database location summary in the tooltip.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
-	moreLoc:SetPoint("TOPLEFT",compLoc, 0, -frameSpacer)
-	addObject(elm,moreLoc)
+	-- This creates the "Location" slider.
+	local locationSlider = CreateFrame("Slider", "ATTLocationSlider", child, "OptionsSliderTemplate");
+	locationSlider.tooltipText = 'Use this to customize the number of sources to show in the tooltip.';
+	locationSlider:SetOrientation('HORIZONTAL');
+	locationSlider:SetWidth(250);
+	locationSlider:SetHeight(20);
+	locationSlider:SetValueStep(1);
+	locationSlider:SetMinMaxValues(1, 100);
+	locationSlider:SetObeyStepOnDrag(true);
+	locationSlider:SetValue(app.GetDataMember("Locations", 5));
+	locationSlider:SetPoint("TOPLEFT",compLoc,0,-(frameSpacer * 2))
+	_G[locationSlider:GetName() .. 'Low']:SetText('1')
+	_G[locationSlider:GetName() .. 'High']:SetText('100')
+	_G[locationSlider:GetName() .. 'Text']:SetText("Number of Locations")
+	addObject(elm,locationSlider)
+	
+	locationSlider.Label = locationSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+	locationSlider.Label:SetPoint("BOTTOM", 0, -12);
+	locationSlider.Label:SetText(locationSlider:GetValue());
+	locationSlider:SetScript("OnValueChanged", function(self, newValue)
+		if newValue == app.GetDataMember("Locations") then
+			return 1;
+		end
+		app.SetDataMember("Locations", newValue)
+		locationSlider.Label:SetText(newValue);
+		wipe(app.searchCache);
+	end);
 end
 local function createDebugFrame(parent)
 	createTab(parent,debugTab,"Debug",480)

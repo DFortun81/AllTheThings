@@ -1088,14 +1088,12 @@ local function GetCachedSearchResults(search, method, ...)
 							else
 								tinsert(temp, text);
 								count = count + 1;
-								if count > 4 then -- Shows 15 sources (Take # you want minus 1 and input)
+								if count >= app.GetDataMember("Locations") then
 									count = #group - count;
 									if count > 1 then
 										tinsert(temp, "And " .. count .. " other sources...");
 										break;
 									end
-								else
-									if not GetDataMember("ShowAllSources") then break; end
 								end
 							end
 						end
