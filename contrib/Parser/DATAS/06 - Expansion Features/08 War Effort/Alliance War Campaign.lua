@@ -143,6 +143,7 @@ _.ExpansionFeatures =
 						["maps"] = {
 							864,	-- Vol'dun
 						},
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							{	-- Ooh Rah!
 								["questID"] = 51170,	-- Ooh Rah!
@@ -308,6 +309,7 @@ _.ExpansionFeatures =
 						["maps"] = {
 							862,	-- Zuldazar
 						},
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							{	-- Zuldazar Foothold
 								["questID"] = 51308,	-- Zuldazar Foothold
