@@ -9,6 +9,8 @@ _.Zones =
 			["groups"] = {
 				n(-38, {	-- Professions
 					["groups"] = {
+						--[[
+						-- Note!! Commenting out the achievements for now.  They aren't specific to the city and are already under achievements section in ATT.  Will analyze later and see if any can be reconfigured.
 						ach(12757),		-- Angling for Battle
 						h(ach(12759)),	-- Baiting the Enemy
 						ach(12747),		-- Catering for Combat
@@ -66,22 +68,119 @@ _.Zones =
 							crit(12),		-- Swamp Fish 'n Chips
 						})),
 						a(ach(12734)),	-- Working in Kul Tiras
-						q(48752, {	-- A Need For Coal
-							["groups"] = {
-								recipe(253334),	-- Monelite Deposit Rank 2
+						--]]
+						{	-- A Need For Coal [Mine]
+							["questID"] = 48752, 	-- A Need For Coal
+							["qg"] = 136091,	-- Myra Cabot
+							["requireSkill"] = 186, -- Mining
+							["coords"] = {
+								{ 75.01, 07.61 },
 							},
-							["description"] = "Requires 50 Kul'Tiran Mining",
-							["requireSkill"] = 2565, -- Kul'Tiran Mining
 							["races"] = ALLIANCE_ONLY,
-						}),
-						q(48761, {	-- Spiderphobia
-							["groups"] = {
-								recipe(253337),	-- Storm Silver Deposit Rank 2
+							["description"] = "Requires 50 Kul'Tiran Mining",
+							["g"] = {
+								{	-- Monelite Deposit Rank 2
+									["recipeID"] = 253334,	-- Monelite Deposit Rank 2
+								},
 							},
-							["description"] = "Requires 50 Kul'Tiran Mining",
-							["requireSkill"] = 2565, -- Kul'Tiran Mining
+						},
+						{	-- Cultural Signifcance [Herb]
+							["questID"] = 51365,	-- Cultural Signifcance
+							["qg"] = 136096,	-- Declan Senal
+							["requireSkill"] = 182,	-- Herbalism
+							["coords"] = {
+								{ 70.45, 05.13 },
+							},
 							["races"] = ALLIANCE_ONLY,
-						}),
+							["description"] = "Requires 50 Kul Tiran Herbalism.",
+							-- NOTE!! Also grants credit for Horde Equivalent == 51498
+							["g"] = {
+								{	-- Sea Stalk [Rank 2]
+									["recipeID"] = 252422,	-- Sea Stalk [Rank 2]
+								},
+							},
+						},
+						{	-- Dead Pollen-Covered Bee [Herb]
+							["itemID"] = 159877,	-- Dead Pollen-Covered Bee
+							["questID"] = 51312,	-- Aromatic Pollenator
+							["requireSkill"] = 182,	-- Herbalism
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "This drops from \"Siren's Pollen\" and can drop at any herbalism level.  You can only turn it in at Level 50 Kul Tiran Herbalism.",
+							-- NOTE!! Also grants credit for Horde Equivalent == 51447
+						},
+						{	-- Emergency Transplants [Herb]
+							["questID"] = 48753,	-- Emergency Transplants
+							["qg"] = 136096,	-- Declan Senal
+							["requireSkill"] = 182,	-- Herbalism
+							["coords"] = {
+								{ 70.45, 05.13 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 50 Kul Tiran Herbalism.",
+							["g"] = {
+								{	-- Riverbud [Rank 2]
+									["recipeID"] = 252406,	-- Riverbud [Rank 2]
+								},
+							},
+						},
+						{	-- Here In Spirit [Herb]
+							["questID"] = 48756,	-- Here in Spirit
+							["qg"] = 136096,	-- Declan Senal
+							["requireSkill"] = 182,	-- Herbalism
+							["coords"] = {
+								{ 70.45, 05.13 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 50 Kul Tiran Herbalism.",
+							["g"] = {
+								{	-- Star Moss [Rank 2]
+									["recipeID"] = 252409,	-- Star Moss [Rank 2]
+								},
+							},
+						},
+						{	-- Learn From the Best [Herb]
+							["questID"] = 51313,	-- Learn From the Best
+							["qg"] = 136096,	-- Declan Senal
+							["requireSkill"] = 182,	-- Herbalism
+							["sourceQuests"] = {
+								51312,	-- Aromatic Pollenator
+							},
+							["coords"] = {
+								{ 70.45, 05.13 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							-- NOTE!! Also grants credit for Horde Equivalent == 51448
+							["g"] = {
+								{	-- Siren's Pollen [Rank 2]
+									["recipeID"] = 252419,	-- Siren's Pollen [Rank 2]
+								},
+							},
+						},
+						{	-- Meet Sweetflower [Herb]
+							["questID"] = 48762,	-- Meet Sweetflower
+							["qg"] = 136096,	-- Declan Senal
+							["requireSkill"] = 182,	-- Herbalism
+							["coords"] = {
+								{ 70.45, 05.13 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 50 Kul Tiran Herbalism.",
+						},
+						{	-- Spiderphobia [Mine]
+							["questID"] = 48761,	-- Spiderphobia
+							["qg"] = 136091,	-- Myra Cabot
+							["requireSkill"] = 186, -- Mining
+							["coords"] = {
+								{ 75.01, 07.61 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 50 Kul'Tiran Mining",
+							["g"] = {
+								{	-- Storm Silver Deposit Rank 2
+									["recipeID"] = 253337	-- Storm Silver Deposit Rank 2
+								},
+							},
+						},
 					},
 				}),
 			},

@@ -10,6 +10,8 @@ _.Zones =
 			["groups"] = {
 				n(-38, {	-- Professions
 					["groups"] = {
+						--[[
+						-- Note!! Commenting out the achievements for now.  They aren't specific to the city and are already under achievements section in ATT.  Will analyze later and see if any can be reconfigured.
 						ach(12757),		-- Angling for Battle
 						a(ach(12758)),	-- Baiting the Enemy
 						ach(12747),		-- Catering for Combat
@@ -67,6 +69,7 @@ _.Zones =
 						})),	
 						h(ach(12754)),	-- Zandalari Fisherman
 						h(ach(12737)),	-- Zandalari Master of All
+						--]]
 						q(51962, {	-- Lumbering Away
 							["groups"] = {
 								recipe(253334),	-- Monelite Deposit Rank 2
