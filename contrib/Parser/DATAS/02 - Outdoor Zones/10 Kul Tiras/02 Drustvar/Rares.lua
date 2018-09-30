@@ -22,18 +22,33 @@ _.Zones =
 							}),
 							["questID"] = 51470,
 						}),
-						n(137529, {	-- Arvon the Betrayed
+						n(137529, { -- Arvon the Betrayed
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160449),	-- Spectral Revenger
 							}),
 							["questID"] = 51383,
 						}),
-						n(137825, {	-- Avalanche
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
-								i(154447),	-- Gryphon-Rider's Breastplate
-							}),
-							["questID"] = 51471,	
-						}),	
+						{	-- Avalanche [LH-ACLQ]
+							["npcID"] = 137825,	-- Avalanche
+							["questID"] = 51471,
+							["coords"] = {
+								{ 43.81, 88.61 },
+								{ 44.01, 85.41 },
+								{ 44.21, 87.41 },
+								{ 44.41, 85.61 },
+							},
+							["g"] = {
+								{	-- Avalanche
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 27,	-- Avalanche
+								},
+								{	-- Gryphon-Rider's Breastplate
+									["itemID"] = 154447,	-- Gryphon-Rider's Breastplate
+									["modID"] = 17,	-- Azerite Armor!! ["bonusID"] = 4775,	-- Azerite Armor!!
+									["lvl"] = 110,	-- Will show 120 otherwise!!
+								},
+							},
+						},
 						n(130143, {	-- Balethorn		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160475),	-- Barksnapper Girdle
@@ -47,14 +62,26 @@ _.Zones =
 							}),
 							["coord"] = { 59.0, 16.8 },
 							["questID"] = 48842,	
-						}),	
-						n(129805, {	-- Beshol (have to interact with "Obviously Safe Chest" to spawn)
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(158363),	-- Spiderhair Circlet
-							}),
-							["coord"] = { 50.5, 30.0 },
-							["questID"] = 49481,	
-						}),	
+						}),
+						{	-- Beshol [LH-ACLQ]
+							["npcID"] = 129805,	--  Beshol
+							["questID"] = 49481,
+							["coords"] = {
+								{ 50.61, 30.01 },
+							},
+							["description"] = "Interact with \"Obviously Safe Chest\" to spawn this mob.",
+							["g"] = {
+								{	-- Beshol
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 15,	-- Beshol
+								},
+								{	-- Spiderhair Circlet
+									["itemID"] = 158363,	-- Spiderhair Circlet
+									["modID"] = 17,	-- Azerite Armor!! ["bonusID"] = 4775,	-- Azerite Armor!!
+									["lvl"] = 110,	-- Will show 120 otherwise!!
+								},
+							},
+						},
 						n(124548, {	-- Betsy
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160463),	-- Blue-Ribbon Belt
@@ -76,7 +103,7 @@ _.Zones =
 						}),
 						n(126621, {	-- Bonesquall
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								i(154376),	-- Bonecurse Gauntlets [NOTE: Not dropping on live, but did on beta]
+								i(154376),	-- Bonecurse Gauntlets
 							}),
 							["questID"] = 48978,
 						}),
@@ -93,9 +120,9 @@ _.Zones =
 							["questID"] = 50939,	
 						}),	
 						n(129904, {	-- Cottontail Matron
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["groups"] = {
 								i(163036),	-- Polished Pet Charm
-							}),
+							},
 							["questID"] = 49216,
 						}),
 						n(134706, {	-- Deathcap
@@ -139,12 +166,26 @@ _.Zones =
 							}),
 							["questID"] = 49480,	
 						}),	
-						n(138675, {	-- Gorged Boar		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(154461),	-- Cursed Boarhide Helm
-							}),
-							["questID"] = 51700,	
-						}),	
+						{	-- Gorged Boar [LH-ACLQ]
+							["npcID"] = 138675,	-- Gorged Boar
+							["questID"] = 51700,
+							["coords"] = {
+								{ 27.81, 25.41 },
+								{ 28.01, 26.01 },
+								{ 28.61, 25.61 },
+							},
+							["g"] = {
+								{	-- Gorged Boar
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 29,	-- Gorged Boar
+								},
+								{	-- Cursed Boarhide Helm
+									["itemID"] = 154461,	-- Cursed Boarhide Helm
+									["modID"] = 17,	-- Azerite Armor!! ["bonusID"] = 4775,	-- Azerite Armor!!
+									["lvl"] = 110,	-- Will show 120 otherwise!!
+								},
+							},
+						},
 						n(127129, {	-- Grozgore		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160457),	-- Lava-Starched Britches
@@ -164,16 +205,29 @@ _.Zones =
 							}),
 							["questID"] = 50688,
 						}),
-						n(127877, {	-- Longfang		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(160468, {	-- Longfang Paws
-									["crs"] =  {
-										127901,	-- Henry Breakwater
-									},
-								}),
-							}),
-							["questID"] = 48981,	
-						}),	
+						{	-- Longfang [LH-ACLQ]
+							["npcID"] = 127877,	-- Longfang
+							["questID"] = 48981,
+							["coords"] = {
+								{ 59.41, 55.21 },
+							},
+							["g"] = {
+								{	-- Longfang [Criteria]
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 7,	-- Longfang
+								},
+								{	-- Long Fang [Item]
+									["itemID"] = 159518,	-- Long Fang
+									["bonusID"] = 4776,	-- Indicates Leveling item
+									["lvl"] = 110,	-- Will show 120 otherwise!!
+								},	
+								{	-- Longfang Paws
+									["itemID"] = 160468,	-- Longfang Paws
+									["u"] = 1,	-- Retrieving Data
+									["crs"] = { 127901 },	-- Henry Breakwater
+								},
+							},
+						},
 						n(137704, {	-- Matron Morana
 							["questID"] = 52000,
 						}),
@@ -188,13 +242,25 @@ _.Zones =
 								i(158583),	-- Quillstitch Greatcloak
 							}),
 							["questID"] = 48178,	
-						}),	
-						n(128707, {	-- Rimestone		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(158345),	-- Coldsnap Pauldrons
-							}),
-							["questID"] = 49269,	
-						}),	
+						}),
+						{	-- Rimestone [LH-ACLQ]
+							["npcID"] = 128707,	-- Rimestone
+							["questID"] = 49269,
+							["coords"] = {
+								{ 59.61, 71.61 },
+							},
+							["g"] = {
+								{	-- Rimestone
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 10,	-- Rimestone
+								},
+								{	-- Coldsnap Pauldrons
+									["itemID"] = 158345,	-- Coldsnap Pauldrons
+									["modID"] = 17,	-- Azerite Armor!! ["bonusID"] = 4775,	-- Azerite Armor!!
+									["lvl"] = 110,	-- Will show 120 otherwise!!
+								},
+							},
+						},
 						o(277897, {	-- Seething Cache		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158598),	-- Band of Seething Manifest
@@ -216,12 +282,25 @@ _.Zones =
 						n(137708, {	-- Stone Golem
 							["questID"] = 51999,
 						}),
-						n(129950, {	-- Talon		
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(161444),	-- Frosted Talonfeather Mantle
-							}),
-							["questID"] = 49528,	
-						}),	
+						{	-- Talon [LH-ACLQ]
+							["npcID"] = 129950,	-- Talon
+							["questID"] = 49528,
+							["coords"] = {
+								{ 31.81, 41.01 },
+								{ 32.21, 40.01 },
+							},
+							["g"] = {
+								{	-- Talon
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 16,	-- Talon
+								},
+								{	-- Frosted Talonfeather Mantle
+									["itemID"] = 161444,	-- Frosted Talonfeather Mantle
+									["modID"] = 17,	-- Azerite Armor!! ["bonusID"] = 4775,	-- Azerite Armor!!
+									["lvl"] = 110,	-- Will show 120 otherwise!!
+								},
+							},
+						},
 						n(139358, {	-- The Caterer
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155560),	-- Lazy-Baker's Ring
