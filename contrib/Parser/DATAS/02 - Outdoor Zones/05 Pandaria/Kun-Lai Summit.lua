@@ -7,6 +7,19 @@ _.Zones =
 		m(379, { 	-- Kun-Lai Summit
 			["groups"] = {
 				n(-4, { 	-- Achievement
+					ach(7286, {		-- Finish Them! (Temple of the White Tiger)
+						crit(1),		-- Brewmaster Chani
+						crit(3),		-- Clever Ashyo
+						crit(9),		-- Hackiss
+						crit(10),		-- Healiss
+						crit(5),		-- Kang Bramblestaff
+						crit(4),		-- Ken-Ken
+						crit(2),		-- Lun-Chi
+						crit(7),		-- Master Boom Boom
+						crit(8),		-- Master Windfur
+						crit(11),		-- Tankiss
+						crit(6),		-- The Wrestler
+					}),
 					ach(7284, {	-- Is Another Man's Treasure
 						o(213768, {	-- Hozen Warrior Spear
 							["groups"] = {
@@ -163,6 +176,32 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(6537, {	-- Slum It in the Summit (Alliance)
+						crit(1),		-- Westwind Rest
+						crit(2),		-- The Yaungol Invasion
+						crit(3),		-- Inkgill Mere
+						crit(4),		-- The Yak Wash
+						crit(5),		-- The Burlap Trail
+						crit(6),		-- Kota Peak
+						crit(7),		-- The Thunder King
+						crit(8),		-- Temple of the White Tiger
+						crit(9),		-- Zouchin Village
+						crit(10),		-- The Shado-Pan
+					})),
+					h(ach(6538, {	-- Slum It in the Summit (Horde)
+						crit(1),		-- Eastwind Rest
+						crit(2),		-- The Yaungol Invasion
+						crit(3),		-- Inkgill Mere
+						crit(4),		-- The Yak Wash
+						crit(5),		-- The Burlap Trail
+						crit(6),		-- Kota Peak
+						crit(7),		-- The Thunder King
+						crit(8),		-- Temple of the White Tiger
+						crit(9),		-- Zouchin Village
+						crit(10),		-- The Shado-Pan
+					})),
+]]--				
 --[[
 					q(30581),	-- ... and the Pot, Too!
 					qh( 31395),	-- A Celestial Experience

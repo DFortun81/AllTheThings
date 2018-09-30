@@ -2,14 +2,6 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
 _.Achievements = 
 {
 	n(-9956, { -- Quests
@@ -38,7 +30,7 @@ _.Achievements =
 					ach(7310),		-- Defender of Gods (Townlong Steppes)
 					ach(8120),		-- Direhorn in a China Shop
 					ach(7320),		-- Dog Pile
-					h(ach(7929, {	-- Dominance Offensive Campaign
+					h(ach(7929, {	-- Dominance Offensive Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
 						i(93386),		-- Grand Wyvern
 						crit(1),		-- Domination Point
 						crit(2),		-- The Voice of the Gods
@@ -109,7 +101,7 @@ _.Achievements =
 						crit(9),		-- Incomplete Drakkari Colossus
 						ach(8100),		-- Pay to Slay
 					}),
-					ach(7308, {		-- Know Your Role (Townlong Steppes)
+					ach(7308, {		-- Know Your Role
 						crit(1),		-- Assault Fire Camp Gai-Cho
 						crit(2),		-- Assault Deadtalker's Plateau
 						crit(3),		-- The Deadtalker Cipher
@@ -183,7 +175,7 @@ _.Achievements =
 						crit(4),		-- The Sha of Hatred
 						crit(5),		-- Tai Ho's Investigation
 					}),
-					a(ach(7928, {	-- Operation: Shieldwall Campaign
+					a(ach(7928, {	-- Operation: Shieldwall Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
 						i(93385),		-- Grand Gryphon
 						crit(1),		-- Lion's Landing
 						crit(2),		-- The Man With a Thousand Faces

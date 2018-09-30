@@ -7,6 +7,18 @@ _.Zones =
 		m(422, {	-- Dread Wastes
 			["groups"] = {
 				n(-4, { 	-- Achievemeents
+					ach(7312, {		-- Amber is the Color of My Energy (Dread Wastes)
+						crit(9),		-- Hisek the Swarmkeeper
+						crit(3),		-- Iyyokuk the Lucid
+						crit(6),		-- Ka'roz the Locust
+						crit(4),		-- Kaz'tik the Manipulator
+						crit(1),		-- Kil'ruk the Wind-Reaver
+						crit(5),		-- Korven the Prime
+						crit(2),		-- Malik the Unscathed
+						crit(7),		-- Rik'kal the Dissector
+						crit(8),		-- Skeer the Bloodseeker
+						crit(10),		-- Xaril the Poisoned Mind
+					}),
 					ach(7284, { -- Is Another Man's Treasure
 						o(213972, {		-- Blade of the Poisoned Mind
 							["groups"] = {
@@ -67,6 +79,37 @@ _.Zones =
 							["questID"] = 31429,
 						}),
 					}),
+					ach(7316, {	-- Over Their Heads (Dread Wastes)
+						crit(4),	-- Amber-Shaper Un'sok
+						crit(6),	-- Amber Earthshaker
+						crit(7),	-- Amber Rocktunneler
+						crit(8),	-- Amber Venomlancer
+						crit(3),	-- Blade Lord Ta'yak
+						crit(9),	-- Dread Ambercrusher
+						crit(10),	-- Dread Fearbringer
+						crit(11),	-- Essence of Dread
+						crit(12),	-- Essence of Fear
+						crit(13),	-- Essence of Horror
+						crit(14),	-- Essence of Panic
+						crit(15),	-- Essence of Terror
+						crit(1),	-- Garalon
+						crit(5),	-- Imperial Vizier Zor'lok
+						crit(2),	-- Wind Lord Mel'jarak
+					}),
+					ach(7321),	-- Spreading the Warmth
+					ach(7313, {	-- Stay Klaxxi (Dread Wastes)
+						crit(1),	-- Angel of Death
+						crit(9),	-- Children of the Grave
+						crit(10),	-- Battle Hymn
+						crit(6),	-- Iron Mantid
+						crit(2),	-- Master of Puppets
+						crit(3),	-- Painkiller
+						crit(5),	-- Raining Blood
+						crit(4),	-- Seek and Destroy
+						crit(7),	-- Silent Lucidity
+						crit(8),	-- Speed King
+					}),
+					ach(7314),	-- Test Drive (Dread Wastes)
 				}),
 				n(-228, {	-- Flight Points
 					fp(1070, { -- Klaxxi'vess, Dread Wastes
@@ -114,6 +157,14 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(6540, {		-- Dread Haste Makes Dread Waste
+						crit(1),		-- The First Paragons
+						crit(2),		-- The Might of the Klaxxi
+						crit(3),		-- Taste of Amber
+						crit(4),		-- Like a Deck Boss
+					}),
+]]--				
 					q(31178, {	-- A Bloody Delight
 						["qg"] = 63071,	-- Skeer the Bloodseeker
 					}),

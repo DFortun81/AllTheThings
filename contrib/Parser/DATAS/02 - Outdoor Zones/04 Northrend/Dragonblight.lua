@@ -84,6 +84,8 @@ _.Zones =
 							},
 						},
 					}),
+					ach(1277),	-- Rapid Defense
+					ach(547),	-- Veteran of the Wrathgate
 				}),
 				n(-228, {	-- Flight Points
 					fp(256, { -- Agmar's Hammer, Dragonblight

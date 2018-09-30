@@ -6,6 +6,9 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(391, { 	-- Shrine of Two Moons
 			["groups"] = {
+				n(-4, {		--Achievements
+					ach(7285),	-- Every Day I'm Pand-a-ren
+				}),
 				n(-17, { 	-- Quests
 --[[
 					qh(32352),	-- A Gathering Storm

@@ -6,6 +6,35 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(203, {	-- Vashj'ir
 			["groups"] = {
+				n(-4, {		-- Achievements
+					a(ach(5318)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance)
+					h(ach(5319)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Horde)
+					a(ach(4869, {	-- Sinking into Vashj'ir (Alliance)
+						crit(1),		-- Defense of The Briny Cutter
+						crit(2),		-- Smuggler's Scar
+						crit(3),		-- A Budding Treasure Hunter
+						crit(4),		-- The Clutch
+						crit(5),		-- Silver Tide Hollow
+						crit(6),		-- Nespirah
+						crit(7),		-- Visions of the Past
+						crit(8),		-- The Merciless One
+						crit(9),		-- L'ghorek
+						crit(10),		-- The Tidehunter
+					})),
+					h(ach(4982, {	-- Sinking into Vashj'ir (Horde)
+						crit(1),		-- Defense of The Immortal Coil
+						crit(2),		-- Smuggler's Scar
+						crit(3),		-- A Budding Treasure Hunter
+						crit(4),		-- The Clutch
+						crit(5),		-- Silver Tide Hollow
+						crit(6),		-- Nespirah
+						crit(7),		-- Visions of the Past
+						crit(8),		-- The Merciless One
+						crit(9),		-- L'ghorek
+						crit(10),		-- The Tidehunter
+					})),
+					ach(5452),		-- Visions of Vashj'ir Past
+				}),
 				m(204, {	-- Abyssal Depths
 					["groups"] = {			
 						n(-228, {	-- Flight Paths
@@ -16,7 +45,7 @@ _.Zones =
 								["coord"]	= { 53.8, 59.6 },
 							}),
 						}),
-						n(-17, { -- Quests
+						n(-17, { -- Quests					
 --							qg(, qa(26017)),  	-- A Lure
 							qg(41667, qa(25977, {  	-- A Standard Day for Azrajar
 								i(59639),

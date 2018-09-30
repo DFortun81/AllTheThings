@@ -269,6 +269,16 @@ _.Zones =
 						},
 						["collectible"] = false,
 					}),
+--[[	Achievement info for Loremaster related zone quests
+					ach(1194, {		-- Into the Nether
+						crit(1),		-- Socrethar
+						crit(2),		-- The Violet Tower
+						crit(3),		-- Building the X-52 Nether-Rocket
+						crit(4),		-- Protect Area 52!
+						crit(5),		-- The Consortium
+						crit(6),		-- Destroying the All-Devouring
+					}),
+]]--
 					{			-- Abjurist Belmara
 						["qg"] = 19546,	-- Abjurist Belmara
 						["itemID"] = 29234,	-- Belmara's Tome

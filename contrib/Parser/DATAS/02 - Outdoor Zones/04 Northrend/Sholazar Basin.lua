@@ -219,6 +219,7 @@ _.Zones =
 						},
 					}),
 					ach(952),	-- Mercenary of Sholazar
+					ach(938),	-- The Snows of Northrend
 				}),
 				n(-228, {	-- Flight Points
 					fp(309, { -- Nesingwary Base Camp, Sholazar Basin
@@ -237,6 +238,16 @@ _.Zones =
 					p(1238), 	-- Unborn Val'kyr
 				}),
 				n(-17, { 	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(39, {		-- Into the Basin
+						crit(1),		-- Hunting Bigger Game
+						crit(2),		-- Teeth, Spikes, and Talons
+						crit(3),		-- The Wolvar
+						crit(4),		-- The Oracles
+						crit(5),		-- The Lifewarden
+						crit(6),		-- Watching Over the Basin
+					}),
+]]--
 --[[				
 					q(12581),	-- A Hero's Burden
 					q(12607),	-- A Mammoth Undertaking

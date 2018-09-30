@@ -162,6 +162,7 @@ _.Zones =
 							},
 						},
 					}),
+					ach(1428),	-- Mine Sweeper
 				}),
 				n(-228, {	-- Flight Paths
 					fp(327, { -- Bouldercrag's Refuge, The Storm Peaks
@@ -200,6 +201,19 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(38, {		-- The Summit of Storm Peaks
+						crit(1),		-- Defending K3
+						crit(2),		-- The Harpy Problem
+						crit(3),		-- Norgannon's Shell
+						crit(4),		-- Bringing Down the Iron Colossus
+						crit(5),		-- For the Frostborn King
+						crit(6),		-- Bearly Ready
+						crit(7),		-- Heartbreak
+						crit(8),		-- The Sons of Hodir
+						crit(9),		-- Loken
+					}),
+]]--				
 --[[				
 					q(44767),	-- A Celestial Invitation
 					q(12908),	-- A Certain Prisoner

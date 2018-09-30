@@ -5,7 +5,10 @@ _.Zones =
 {
 	m(101, { 	-- Outland
 		m(107, { 	-- Nagrand (Outland)
-			["groups"] = {	
+			["groups"] = {
+				n(-4, {		-- Achievements
+					ach(939),	-- Hills Like White Elekk
+				}),
 				n(-228, {	-- Flight Master
 					fp(120, { -- Garadar, Nagrand
 						["coord"] = { 57.2, 35.2 },
@@ -24,6 +27,28 @@ _.Zones =
 					p(420), 	-- Toad
 				}),
 				n(-17, { 	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(1192, {	-- Nagrand Slam (Alliance)
+						crit(1),		-- The Adventures of Corki
+						crit(2),		-- The Ring of Blood
+						crit(3),		-- Throne of the Elements
+						crit(4),		-- Lantresor of the Blade
+						crit(5),		-- The Murkblood
+						crit(6),		-- Threats to Nagrand
+						crit(7),		-- The Ultimate Bloodsport
+						crit(8),		-- Encountering the Ethereals
+					})),
+					h(ach(1273, {	-- Nagrand Slam (Horde)
+						crit(1),		-- Birth of a Warchief
+						crit(2),		-- The Ring of Blood
+						crit(3),		-- Throne of the Elements
+						crit(4),		-- Lantresor of the Blade
+						crit(5),		-- The Murkblood
+						crit(6),		-- Threats to Nagrand
+						crit(7),		-- The Ultimate Bloodsport
+						crit(8),		-- Encountering the Ethereals
+					})),
+]]--				
 --[[				
 					q(9914),	-- A Head Full of Ivory
 					qa(  9792),	-- A Message to Telaar

@@ -5,7 +5,10 @@ _.Zones =
 {
 	m(101, { 	-- Outland
 		m(108, { 	-- Terokkar Forest
-			["groups"] = {		
+			["groups"] = {
+				n(-4, {		-- Achievements
+					ach(1275),	-- Bombs Away
+				}),
 				n(-228, {	-- Flight Master
 					fp(121, { -- Allerian Stronghold, Terokkar Forest
 						["coord"] = { 59.4, 55.4 },
@@ -27,6 +30,22 @@ _.Zones =
 					p(517), -- Warpstalker Hatchling
 				}),
 				n(-17, { 	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(1191, {	-- Terror of Terokkar (Alliance)
+						crit(1),		-- The Skettis Offensive
+						crit(2),		-- Refugee Caravan
+						crit(3),		-- Sha'tari Base Camp
+						crit(4),		-- The Warden's Secret
+						crit(5),		-- Allerian Stronghold
+					})),
+					h(ach(1272, {	-- Terror of Terokkar (Horde)
+						crit(1),		-- The Skettis Offensive
+						crit(2),		-- Refugee Caravan
+						crit(3),		-- Sha'tari Base Camp
+						crit(4),		-- The Warden's Secret
+						crit(5),		-- Stonebreaker Hold
+					})),
+]]--				
 --[[				
 					q(10914),	-- A Hero Is Needed
 					q(10112),	-- A Personal Favor

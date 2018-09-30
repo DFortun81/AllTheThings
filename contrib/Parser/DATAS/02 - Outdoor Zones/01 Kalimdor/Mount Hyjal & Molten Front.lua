@@ -6,6 +6,42 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(198, {	-- Mount Hyjal
 			["groups"] = {
+				n(-4, {		-- Achievements
+					ach(4959),	-- Beware of the 'Unbeatable?' Pterodactyl (Mount Hyjal)
+					ach(5483),	-- Bounce
+					ach(5864),	-- Gang War
+					ach(5865, {	-- Have... Have We Met? (Mount Hyjal)
+						crit(4),	-- Chromie
+						crit(2),	-- Hemet Nesingwary
+						crit(1),	-- Linken
+						crit(5),	-- Mankrik
+						crit(3),	-- Nat Pagle
+						crit(6),	-- Thassarian
+					}),
+					ach(5869, {	-- Infernal Ambassadors (Mount Hyjal)
+						crit(4),	-- Slay Galenges before he is weakened a second time
+						crit(3),	-- Slay Lylagar without taking damage from Lylagar Breath. slain
+						crit(2),	-- Slay Millagazor without taking damage from Gout of Flame. slain
+						crit(5),	-- Slay Nemesis at Ashen Lake without taking damage from Molten Fury. slain
+						crit(1),	-- Slay Pyrachnis without using the Emerald of Aessina. slain
+					}),
+					ach(5862),	-- Ludicrous Speed (Mount Hyjal)
+					ach(5860, {		-- The 'Unbeatable?' Pterodactyl: BEATEN. (Mount Hyjal)
+						i(69838, {		-- Chirping Box (Blue / Gold Mini Jouster - which ever wasnt picked during !Vigilance on Wings)
+							["description"] = "Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",
+							["groups"] = {
+								i(65661),	-- Blue Mini Jouster
+								i(65662),	-- Gold Mini Jouster
+							},
+						}),
+					}),
+					ach(5861, {	-- The Fiery Lords of Sethria's Roost (Mount Hyjal)
+						crit(3),	-- Andrazor slain
+						crit(4),	-- Fah Jarakk slain
+						crit(2),	-- Kelbnar slain
+						crit(1),	-- Searris slain
+					}),
+				}),
 				n(-228, {	-- Flight Paths
 					fp(616, { -- Gates of Sothann, Hyjal
 						["coord"] = { 71.6, 75.2 },
@@ -39,6 +75,25 @@ _.Zones =
 					qg(66819, q(31972)),	-- Brok
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(5868, {		-- And the Meek Shall Inherit Kalimdor (Mount Hyjal)
+						crit(1),		-- Angry Little Squirrel
+						crit(2),		-- Hyjal Bear Cub
+						crit(3),		-- Alpine Songbird slain
+						crit(4),		-- Child of Tortolla
+					}),
+					ach(4870, {		-- Coming Down the Mountain
+						crit(1),		-- The Return of the Ancients
+						crit(2),		-- Shrine of Goldrinn
+						crit(3),		-- Foray into the Firelands
+						crit(4),		-- Grove of Aessina
+						crit(5),		-- Awakening Tortolla
+						crit(6),		-- Shrine of Aviana
+						crit(7),		-- The Ancients
+						crit(8),		-- Cavorting with Cultists
+						crit(9),		-- Extinguish the Firelord
+					}),
+]]--				
 					qg(41006, q(25731, { -- A Bird in Hand
 						i(57333),
 						i(57332),
@@ -553,14 +608,78 @@ _.Zones =
 				m(338, {	-- Molten Front
 					["groups"] = {
 						n(-4, {	-- Achievements
-							ach(5859, {	-- Legacy of Leyara
-								crit(1),
-								crit(2),
-								crit(3),
-								{
-									["itemID"] = 69854,		-- Smoke-Stained Locket
-									["questID"] = 29298,	-- Quest: A Smoke-Stained Locket
-								},
+							ach(5874, {	-- Death From Above  (Mount Hyjal - The Molten Front)
+								crit(2),	-- Blazefury
+								crit(3),	-- Flashfire
+								crit(4),	-- Hatespark
+								crit(5),	-- Heatflayer
+								crit(1),	-- Ragepyre
+								crit(6),	-- Singeslayer
+							}),
+							ach(5870, {	-- Fireside Chat (Mount Hyjal)
+								crit(6),	-- Arthorn Windsong
+								crit(7),	-- Deldren Ravenelm
+								crit(4),	-- Dorda'en Nightweaver
+								crit(8),	-- General Taldris Moonfall
+								crit(3),	-- Jarod Shadowsong
+								crit(1),	-- Malfurion Stormrage
+								crit(2),	-- Matoclaw
+								crit(5),	-- Thisalee Crow
+							}),
+							ach(5867),	-- Flawless Victory
+							ach(5872),	-- King of the Spider-Hill  (Mount Hyjal - The Molten Front)
+							ach(5859, {	-- Legacy of Leyara (Mount Hyjal)
+								i(69854, {	-- Smoke-Stained Locket
+									q(29298),	-- A Smoke-Stained Locket
+									q(29302, {	-- Unlocking the Secrets Within
+										["groups"] = {
+										},
+										["sourceQuests"] = {29298},	-- A Smoke-Stained Locket
+									}),
+									q(29303, {		-- Tragedy and Family
+										["groups"] = {
+										},
+										["sourceQuests"] = {29302},	-- A Smoke-Stained Locket
+									}),
+									q(29310, {	-- The Tipping Point
+										["groups"] = {
+										},
+										["sourceQuests"] = {29303},	-- A Smoke-Stained Locket
+									}),
+									q(29311, {	-- The Rest is History
+										["groups"] = {
+											i(71259),	-- Leyara's Locket
+										},
+										["sourceQuests"] = {29310},	-- A Smoke-Stained Locket
+									}),
+								}),
+								crit(1),		-- A Ritual of Flame
+								crit(2),		-- Leyara
+								crit(3),		-- Into the Depths
+							}),
+							ach(5871, {	-- Master of the Molten Flow (Mount Hyjal - The Molten Front)
+								crit(2),	-- Kill a Flamewaker Sentinel while it is carrying someone
+								crit(1),	-- Kill a Flamewaker Shaman with his own Flamewave
+								crit(3),	-- Survive a Flamewaker Hunter's Wild Barrage without getting hit
+							}),
+							ach(5873, {	-- Ready for Raiding II
+								crit(1),	-- Ancient Charscale slain
+								crit(5),	-- Ancient Firelord slain
+								crit(3),	-- Ancient Smoldering Behemoth slain
+								crit(2),	-- Cinderweb Queen slain
+								crit(4),	-- Devout Harbinger slain
+							}),
+							ach(5866, {		-- The Molten Front Offensive (Mount Hyjal - The Molten Front)
+								i(69213),		-- Flameward Hippogryph
+								crit(1),		-- Stop the assault on the Sanctuary of Malorne
+								crit(2),		-- Gain access to the Molten Front
+								crit(3),		-- Recruit the Druids of the Talon
+								crit(4),		-- Recruit the Shadow Wardens
+								crit(5),		-- Recruit Elderlimb and the ancients
+								crit(6),		-- Recruit an armorer
+								crit(7),		-- Build a moonwell
+								crit(8),		-- Find the Crimson Lasher
+								crit(9),		-- Save Anren Shadowseeker
 							}),
 						}),
 --[[

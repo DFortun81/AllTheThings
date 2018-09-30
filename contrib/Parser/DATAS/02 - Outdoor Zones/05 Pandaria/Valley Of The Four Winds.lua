@@ -7,6 +7,8 @@ _.Zones =
 		m(376, {	-- Valley of the Four Winds
 			["groups"] = {
 				n(-4, { 	-- Achievement
+					ach(7294),	-- A Taste of Things to Come (Halfhill)
+					ach(7292),	-- Green Acres (Halfhill)
 					ach(7284, {	-- Is Another Man's Treasure
 						n(64004, { 		-- Ghostly Pandaren Fisherman
 							["groups"] = {
@@ -42,6 +44,15 @@ _.Zones =
 							["questID"] = 31406,
 						}),
 					}),
+					ach(7295, {	-- Listen to the Drunk Fish (Halfhill)
+						crit(2),	-- Green Cabbage
+						crit(1),	-- Juicycrunch Carrot
+						crit(4),	-- Mogu Pumpkin
+						crit(6),	-- Pink Turnip
+						crit(5),	-- Red Blossom Leek
+						crit(3),	-- Scallions
+						crit(7),	-- White Turnip
+					}),
 					ach(7997, {	-- Riches of Pandaria
 						o(214340, {	-- Boat-Building Instructions
 							["groups"] = {
@@ -58,6 +69,7 @@ _.Zones =
 							["description"] = "Located in a cave hidden under some bushes in the mountains of north-east Paoquan Hollow at (23.2,30.8)",
 						}),
 					}),
+					ach(7293),	-- Till the Break of Dawn (Halfhill)
 				}),
 				n(-228, {	-- Flight Paths
 					fp(1052, { -- Grassy Cline, Valley of the Four Winds
@@ -278,6 +290,16 @@ _.Zones =
 						},
 						["requireSkill"] = 356,
 					}),					
+--[[	Achievement info for Loremaster related zone quests
+					ach(6301, {		-- Rally the Valley
+						crit(1),		-- Thunderfoot Fields
+						crit(2),		-- Mudmug's Place
+						crit(3),		-- Chen's Masterpiece
+						crit(4),		-- The Stormstout Brewery
+						crit(5),		-- The Hidden Master
+						crit(6),		-- Nesingwary's Safari
+					}),
+]]--					
 					q(30402, {	-- A Dish for Chee Chee
 						["qg"] = 58709,	-- Chee Chee
 						["isDaily"] = true,

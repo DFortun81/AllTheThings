@@ -6,6 +6,9 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(393, { 	-- Shrine of Seven Stars
 			["groups"] = {
+				n(-4, {		--Achievements
+					ach(7285),	-- Every Day I'm Pand-a-ren
+				}),
 				n(-17, { 	-- Quests	
 					qa(32900, { -- Heroic Deeds
 						["groups"] = {

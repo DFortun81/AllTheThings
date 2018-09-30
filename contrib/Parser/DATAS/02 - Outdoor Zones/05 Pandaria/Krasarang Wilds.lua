@@ -7,6 +7,7 @@ _.Zones =
 		m(418, {	-- Krasarang Wilds
 			["groups"] = {
 				n(-4, { 	-- Achievements
+					ach(7287),	-- Champion of Chi-Ji (Cradle of Chi-Ji)
 					ach(7284, {	-- Is Another Man's Treasure
 						o(214439, {		-- Barrel of Banana Infused Rum
 							["groups"] = {
@@ -110,6 +111,22 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(6535, {	-- Mighty Roamin' Krasaranger (Alliance)
+						crit(1),		-- Zhu's Watch
+						crit(2),		-- The Incursion
+						crit(3),		-- Nayeli Lagoon
+						crit(4),		-- Temple of the Red Crane
+						crit(5),		-- The Waters of Youth
+					})),
+					h(ach(6536, {	-- Mighty Roamin' Krasaranger (Horde)
+						crit(1),		-- Zhu's Watch
+						crit(2),		-- Thunder Cleft
+						crit(3),		-- Nayeli Lagoon
+						crit(4),		-- Temple of the Red Crane
+						crit(5),		-- Dawnchaser Retreat
+					})),
+]]--				
 					qh(32169, {	-- A Colossal Victory
 						["isDaily"] = true,
 					}),

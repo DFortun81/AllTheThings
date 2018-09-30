@@ -270,7 +270,7 @@ _.Zones =
 							}),
 						}),
 					})),
-					a(ach(1189, { -- To Hellfire and Back [Horde Version]
+					a(ach(1189, { -- To Hellfire and Back [Alliance Version]
 						crit(1, { -- Disrupt the Burning Legion
 							qa(10288, { -- Arrival in Outland
 								["qg"] = 19229, -- Commander Duron

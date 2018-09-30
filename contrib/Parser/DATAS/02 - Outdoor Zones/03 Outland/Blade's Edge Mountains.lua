@@ -6,6 +6,9 @@ _.Zones =
 	m(101, {	-- Outland
 		m(105, {	-- Blade's Edge Mountains
 			["groups"] = {
+				n(-4, {		-- Achievements
+					ach(1276),	-- Blade's Edge Bomberman
+				}),
 				n(-228, {	-- Flight Master
 					fp(160, { -- Evergrove, Blade's Edge Mountains
 						["coord"] = { 61.6, 39.6 },
@@ -33,6 +36,15 @@ _.Zones =
 					p(379),	-- Squirrel
 				}),
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(1193, {		-- On the Blade's Edge
+						crit(1),		-- Sylvanaar
+						crit(2),		-- Toshley's Station
+						crit(3),		-- The Gronn Threat
+						crit(4),		-- Ogres of Ogri'la
+						crit(5),		-- Ruuan Weald
+					}),
+]]--				
 					q(10975, {	-- Purging the Chambers of Bash'ir
 						["qg"] = 22919, -- Image of Commander Ameer
 						["sourceQuests"] = { 10974 } , -- Stasis Chambers of Bash'ir

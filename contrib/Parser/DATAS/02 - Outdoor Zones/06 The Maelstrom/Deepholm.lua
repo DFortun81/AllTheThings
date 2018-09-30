@@ -5,7 +5,13 @@ _.Zones =
 {
 	m(948, { 	-- The Maelstrom
 		m(207, {	-- Deepholm
-			["groups"] = {		
+			["groups"] = {
+				n(-4, {	 -- Achievements
+					ach(5450),	-- Fungal Frenzy (Deepholm)
+					ach(5445),	-- Fungalophobia (Deepholm)
+					ach(5447),	-- My Very Own Broodmother (Deepholm)
+					ach(5446),	-- The Glop Family Line (Deepholm)
+				}),
 				n(-25, { -- Pet Battle
 					p(838), -- Amethyst Shale Hatchling
 					p(559), -- Crimson Geode

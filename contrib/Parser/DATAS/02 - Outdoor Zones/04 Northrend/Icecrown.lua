@@ -105,6 +105,21 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					ach(40, {		-- Icecrown: The Final Goal
+						crit(1),		-- Crusader Bridenbrad
+						crit(2),		-- The Unthinkable
+						crit(3),		-- Teaching the Meaning of Fear
+						crit(4),		-- The Heart of the Lich King
+						crit(5),		-- What's Yours Is Mine
+						crit(6),		-- Seizing Saronite
+						crit(7),		-- Malykriss: The Vile Hold
+						crit(8),		-- In Defiance of the Scourge
+						crit(9),		-- Mord'rethar: The Death Gate
+						crit(10),		-- Aldur'thar: The Desolation Gate
+						crit(11),		-- Corp'rethar: The Horror Gate
+					}),
+]]--				
 --[[				
 					qa( 13286),	-- ...All the Help We Can Get.
 					qa( 13741),	-- A Blade Fit For A Champion

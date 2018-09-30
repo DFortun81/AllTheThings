@@ -347,8 +347,18 @@ _.Zones =
 						},
 						["collectible"] = false,
 					}),
-					
-					
+--[[	Achievement info for Loremaster related zone quests
+					ach(1195, {		-- Shadow of the Betrayer
+						crit(1),		-- Wildhammer Stronghold
+						crit(2),		-- Netherwing Ledge
+						crit(3),		-- The First Death Knight
+						crit(4),		-- Borrowed Power
+						crit(5),		-- Akama's Promise
+						crit(6),		-- The Cipher of Damnation
+						crit(7),		-- Anti-Demon Weapons
+						crit(8),		-- The Dark Conclave
+					}),
+]]--							
 					qh(10702, {	-- A Grunt's Work...
 						["qg"] = 21769,	-- Overlord Or'barokh
 					}),

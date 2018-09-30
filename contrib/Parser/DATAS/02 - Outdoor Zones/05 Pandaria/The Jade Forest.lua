@@ -8,6 +8,8 @@ _.Zones =
 			["groups"] = {
 				n(-4, { -- Achievements
 					["groups"] = {
+						ach(7290),	-- How To Strain Your Dragon (Jade Forest)
+						ach(7291),	-- In a Trail of Smoke (Jade Forest)
 						ach(7284, { -- Is Another Man's Treasure
 							o(213741, { -- Ancient Jinyu Staff
 								["groups"] = {
@@ -72,6 +74,7 @@ _.Zones =
 								["description"] = "Located underwater in a boat at (50.7,99.9)",
 							}),
 						}),
+						ach(7289),	-- Shadow Hopper (Jade Forest)
 					},
 				}),
 				n(-228, { -- Flight Paths

@@ -6,6 +6,26 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(241, {	-- Twilight Highlands
 			["groups"] = {
+				n(-4, {		-- Achievements
+					ach(5451),	-- Consumed by Nightmare
+					h(ach(5482, {	-- Dragonmaw Tour of Duty (Twilight Highlands)
+						crit(4),		-- Cliff Thundermar slain
+						crit(2),		-- Dillan MacHurley slain
+						crit(3),		-- Gunwald Greybeard slain
+						crit(1),		-- High Shaman MacKilligan slain
+						crit(6),		-- Korthalon the Black slain
+						crit(5),		-- The Black Recluse spider slain
+					})),
+					a(ach(5320)),	-- King of the Mountain (Twilight Highlands) (Alliance)
+					h(ach(5321)),	-- King of the Mountain (Twilight Highlands) (Horde)
+					ach(4960),		-- Round Three. Fight! (Twilight Highlands)
+					a(ach(5481, {	-- Wildhammer Tour of Duty (Twilight Highlands)
+						crit(2),		-- Karkrog the Exterminator slain
+						crit(4),		-- Korthalon the Black slain
+						crit(3),		-- The Black Recluse spider slain
+						crit(1),		-- Warlord Halthar slain
+					})),
+				}),
 				n(-228, {	-- Flight Path
 					fp(659, { -- Bloodgulch, Twilight Highlands
 						["coord"] = { 54, 42.2 },
@@ -67,6 +87,26 @@ _.Zones =
 					}),
 				}),				
 				n(-17, {	-- Quests
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(4873, {	-- Fading into Twilight (Alliance)
+						crit(1),		-- Good News, For Once
+						crit(2),		-- Firebeard
+						crit(3),		-- The Dunwalds
+						crit(4),		-- The Eye of Twilight
+						crit(5),		-- Wild, Wild, Wildhammer Wedding
+						crit(6),		-- The Attack Begins
+						crit(7),		-- Send Them Packing
+					})),
+					h(ach(5501, {	-- Fading into Twilight (Horde)
+						crit(1),		-- Goblin Work Ethic
+						crit(2),		-- Returning to the Highlands
+						crit(3),		-- Krazzworks
+						crit(4),		-- The Dragonmaw
+						crit(5),		-- The Eye of Twilight
+						crit(6),		-- The Attack Begins
+						crit(7),		-- Send Them Packing
+					})),
+]]--				
 --					qg(, qa(28001)),	-- A Coward's Due
 					qg(46513, q(27745,  {  -- A Fiery Reunion
 						i(63711),

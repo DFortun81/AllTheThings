@@ -7,6 +7,7 @@ _.ExpansionFeatures =
 		["groups"] = {
 			n(-4, {	-- Achievements
 				["groups"] = {
+					ach(4874),		-- Breaking Out of Tol Barad
 					a(ach(5718, {	-- Just Another Day in Tol Barad (Alliance)
 						crit(1),		-- Captain P. Harris
 						crit(2),		-- Rattling Their Cages

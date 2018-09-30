@@ -6,6 +6,10 @@ _.Zones =
 	m(12, { 	-- Kalimdor
 		m(249, {	-- Uldum
 			["groups"] = {
+				n(-4, {		-- Achievements
+					ach(5317),	-- Help the Bombardier! I'm the Bombardier! (Uldum)
+					ach(4961),	-- In a Thousand Years Even You Might be Worth Something (Uldum)
+				}),
 				n(-228, {	-- Flight Paths
 					fp(653, { -- Oasis of Vir'sar, Uldum
 						["coord"] = { 26.6, 8.2 },
