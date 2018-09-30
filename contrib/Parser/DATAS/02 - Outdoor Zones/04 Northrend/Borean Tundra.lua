@@ -47,34 +47,40 @@ _.Zones =
 					["achievementID"] = 1011,	-- The Winds of the North
 					["groups"] = {
 						nh(32565, { -- Gara Skullcrush <Horde Expedition Quartermaster>
-							i(44938),	-- Plans: Titanium Plating
-							i(44502),	-- Schematic: Mechano-Hog
-							i(38460),	-- Chaged Wand of the Cleft
-							i(38456),	-- Sin'dorei Recurve Bow
-							i(38454),	-- Warsong Punisher
-							i(38461),	-- Warsong Shanker
-							i(38458),	-- Darkspear Orb
-							i(38452),	-- Bulwark of the Warchief
-							i(38462),	-- Warsong Stormshield
+							["groups"] = {
+								i(44938),	-- Plans: Titanium Plating
+								i(44502),	-- Schematic: Mechano-Hog
+								i(38452),	-- Bulwark of the Warchief
+								i(38458),	-- Darkspear Orb
+								i(38460),	-- Charged Wand of the Cleft
+								i(38456),	-- Sin'dorei Recurve Bow
+								i(38454),	-- Warsong Punisher
+								i(38461),	-- Warsong Shanker
+								i(38462),	-- Warsong Stormshield
+							},
+							["coord"] = { 41.4, 53.7 },
 						}),
 						h(faction(1085, {	-- Warsong Offensive
 							["creatureID"] = 25237,	-- Garrosh Hellscream <Overlord of the Warsong Offensive>
 							["groups"] = {
-								h({
-									["questID"] = 13090,	-- Northern Cooking
-									["qg"] = 26972,		-- Quest Giver: Orn Tenderhoof <Cooking Trainer>
+								qh(13090, {	-- Northern Cooking
 									["groups"] = {
 										recipe(57421),	-- Northern Stew
 									},
+									["qg"] = 26972,		-- Quest Giver: Orn Tenderhoof <Cooking Trainer>
+									["coord"] = { 42.0, 54.1 }
 								}),
 								h(n(35132, { -- Tohfo Skyhoof <Wind Rider Keeper>
-									i(25477),	-- Swift Red Wind Rider
-									i(25531),	-- Swift Green Wind Rider
-									i(25532),	-- Swift Blue Wind Rider
-									i(25533),	-- Swift Purple Wind Rider
-									i(25474),	-- Tawny Wind Rider
-									i(25475),	-- Blue Wind Rider
-									i(25476),	-- Green Wind Rider
+									["groups"] = {
+										i(25477),	-- Swift Red Wind Rider
+										i(25531),	-- Swift Green Wind Rider
+										i(25532),	-- Swift Blue Wind Rider
+										i(25533),	-- Swift Purple Wind Rider
+										i(25474),	-- Tawny Wind Rider
+										i(25475),	-- Blue Wind Rider
+										i(25476),	-- Green Wind Rider
+									},
+									["coord"] = { 42.2, 55.4 },
 								})),
 							},
 						})),
@@ -83,11 +89,11 @@ _.Zones =
 				faction(1073, {		-- The Kalu'ak
 					["achievementID"] = 949,	-- Tuskarrmageddon
 					["groups"] = {
-						{
-							["questID"] = 11945,	-- Preparing for the Worst
-							["qg"] = 26213,		-- Quest Giver: Utaik
+						q(11945, {	-- Preparing for the Worst
+							["qg"] = 26213, -- Quest Giver: Utaik
+							["coord"] = { 64.0, 45.7 },
 							["isDaily"] = true,
-						},
+						}),
 					},
 				}),
 				n(-4, {		-- Achievements
@@ -105,6 +111,14 @@ _.Zones =
 							["groups"] = {
 								i(44667),	-- Mammoth-Hair Crown
 							},
+							["coords"] = {
+								{ 81.4, 31.4 },
+								{ 91.6, 32.6 },
+								{ 85.8, 34.6 },
+								{ 88.6, 39.8 },
+								{ 80.6, 46.2 },
+								{ 84.6, 46.8 },
+							},
 						},
 						{
 							["criteriaID"] = 4,	-- Old Crystalbark [Criteria]
@@ -112,6 +126,7 @@ _.Zones =
 							["groups"] = {
 								i(44649),	-- Crystalbark's Toenail
 							},
+							["coord"] = { 33.8, 30.8 },
 						},
 					}),
 				}),
@@ -1933,12 +1948,6 @@ _.Zones =
 							i(37462),	-- Sea King's Crown
 							i(37463),	-- Winterfin Patch of Honor
 						}),
-					}),
-					n(32565, { -- Gara Skullcrush (Borean Tundra)
-						["groups"] = {
-							i(44938), -- Plans: Titanium Plating
-						},
-						["races"] = HORDE_ONLY,
 					}),
 					n(27147, {	-- Librarian Erickson <Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil
