@@ -69,7 +69,7 @@ _.Zones =
 						})),
 						a(ach(12734)),	-- Working in Kul Tiras
 						--]]
-						{	-- A Need For Coal [Mine]
+						{	-- A Need For Coal [Mine -- Monelite Deposit II]
 							["questID"] = 48752, 	-- A Need For Coal
 							["qg"] = 136091,	-- Myra Cabot
 							["requireSkill"] = 186, -- Mining
@@ -78,13 +78,14 @@ _.Zones =
 							},
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "Requires 50 Kul'Tiran Mining",
+							-- NOTE!! Also grants credit for Horde Equivalent == 51962
 							["g"] = {
 								{	-- Monelite Deposit Rank 2
 									["recipeID"] = 253334,	-- Monelite Deposit Rank 2
 								},
 							},
 						},
-						{	-- Cultural Signifcance [Herb]
+						{	-- Cultural Signifcance [Herb -- Sea Stalk II]
 							["questID"] = 51365,	-- Cultural Signifcance
 							["qg"] = 136096,	-- Declan Senal
 							["requireSkill"] = 182,	-- Herbalism
@@ -108,7 +109,7 @@ _.Zones =
 							["description"] = "This drops from \"Siren's Pollen\" and can drop at any herbalism level.  You can only turn it in at Level 50 Kul Tiran Herbalism.",
 							-- NOTE!! Also grants credit for Horde Equivalent == 51447
 						},
-						{	-- Emergency Transplants [Herb]
+						{	-- Emergency Transplants [Herb -- Riverbud II]
 							["questID"] = 48753,	-- Emergency Transplants
 							["qg"] = 136096,	-- Declan Senal
 							["requireSkill"] = 182,	-- Herbalism
@@ -117,13 +118,14 @@ _.Zones =
 							},
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "Requires 50 Kul Tiran Herbalism.",
+							-- NOTE!! Also grants credit for Horde Equivalent == 51230
 							["g"] = {
 								{	-- Riverbud [Rank 2]
 									["recipeID"] = 252406,	-- Riverbud [Rank 2]
 								},
 							},
 						},
-						{	-- Here In Spirit [Herb]
+						{	-- Here In Spirit [Herb -- Star Moss II]
 							["questID"] = 48756,	-- Here in Spirit
 							["qg"] = 136096,	-- Declan Senal
 							["requireSkill"] = 182,	-- Herbalism
@@ -132,13 +134,14 @@ _.Zones =
 							},
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "Requires 50 Kul Tiran Herbalism.",
+							-- NOTE!! Also grants credit for Horde Equivalent == 51464
 							["g"] = {
 								{	-- Star Moss [Rank 2]
 									["recipeID"] = 252409,	-- Star Moss [Rank 2]
 								},
 							},
 						},
-						{	-- Learn From the Best [Herb]
+						{	-- Learn From the Best [Herb -- Siren's Polen II]
 							["questID"] = 51313,	-- Learn From the Best
 							["qg"] = 136096,	-- Declan Senal
 							["requireSkill"] = 182,	-- Herbalism
@@ -164,9 +167,10 @@ _.Zones =
 								{ 70.45, 05.13 },
 							},
 							["races"] = ALLIANCE_ONLY,
-							["description"] = "Requires 50 Kul Tiran Herbalism.",
+							["description"] = "Requires 50 Kul Tiran Herbalism.\nMake sure to bring |cFFFFD7007 Lane Snappers|r for the follow-up quest.",
+							-- NOTE!! Also grants credit for Horde Equivalent == 51446
 						},
-						{	-- Ritualistic Preparations [Mine]
+						{	-- Ritualistic Preparations [Mine -- Storm Silver Deposit II]
 							["questID"] = 51568,	-- Ritualistic Preparations
 							["qg"] = 136091,	-- Myra Cabot
 							["requireSkill"] = 186, -- Mining
@@ -177,13 +181,14 @@ _.Zones =
 							},
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "Requires 50 Kul'Tiran Mining\n73.49, 08.38 in Boralus is Forge Location\n41.87, 30.02 in Tiragarde Sound is Blessing Location",
+							-- NOTE!! Also grants credit for Horde Equivalent == 52014
 							["g"] = {
 								{	-- Storm Silver Deposit Rank 2
 									["recipeID"] = 253337	-- Storm Silver Deposit Rank 2
 								},
 							},
 						},
-						{	-- Seeking More Knowledge
+						{	-- Seeking More Knowledge [Herb -- Anchor Weed II]
 							["questID"] = 51016,	-- Seeking More Knowledge
 							["qg"] = 136096,	-- Declan Senal
 							["requireSkill"] = 182,	-- Herbalism
