@@ -109,6 +109,22 @@ _.Zones =
 							["description"] = "This drops from \"Siren's Pollen\" and can drop at any herbalism level.  You can only turn it in at Level 50 Kul Tiran Herbalism.",
 							-- NOTE!! Also grants credit for Horde Equivalent == 51447
 						},
+						{	-- Don't Pick a Fight [Mine -- Monelite Seam II]
+							["questID"] = 48764, 	-- Don't Pick a Fight
+							["qg"] = 136091,	-- Myra Cabot
+							["requireSkill"] = 186, -- Mining
+							["coords"] = {
+								{ 75.01, 07.61 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 100 Kul'Tiran Mining",
+							-- NOTE!! Also grants credit for Horde Equivalent == 51965
+							["g"] = {
+								{	-- Monelite Seam Rank 2
+									["recipeID"] = 253343,	-- Monelite Seam Rank 2
+								},
+							},
+						},
 						{	-- Emergency Transplants [Herb -- Riverbud II]
 							["questID"] = 48753,	-- Emergency Transplants
 							["qg"] = 136096,	-- Declan Senal
