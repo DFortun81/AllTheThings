@@ -166,6 +166,24 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "Requires 50 Kul Tiran Herbalism.",
 						},
+						{	-- Ritualistic Preparations [Mine]
+							["questID"] = 51568,	-- Ritualistic Preparations
+							["qg"] = 136091,	-- Myra Cabot
+							["requireSkill"] = 186, -- Mining
+							["coords"] = {
+								{ 75.01, 07.61 },	-- Trainer Location
+								{ 73.49, 08.38 },	-- Forge
+								{ 41.87, 30.02 },	-- Ingot Blessing
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 50 Kul'Tiran Mining\n73.49, 08.38 in Boralus is Forge Location\n41.87, 30.02 in Tiragarde Sound is Blessing Location",
+							["g"] = {
+								{	-- Storm Silver Deposit Rank 2
+									["recipeID"] = 253337	-- Storm Silver Deposit Rank 2
+								},
+							},
+						},
+						--[[
 						{	-- Spiderphobia [Mine]
 							["questID"] = 48761,	-- Spiderphobia
 							["qg"] = 136091,	-- Myra Cabot
@@ -181,6 +199,7 @@ _.Zones =
 								},
 							},
 						},
+						--]]
 					},
 				}),
 			},

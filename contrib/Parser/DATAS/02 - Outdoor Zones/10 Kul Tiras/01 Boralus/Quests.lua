@@ -94,96 +94,144 @@ _.Zones =
 								}),
 							},
 						}),
-						a(ach(12582, {	-- Come Sail Away [Alliance]
-							["groups"] = {
-								q(47189, {	-- A Nation Divided
+						{	-- Come Sail Away [Alliance]
+							["achievementID"] = 12582,	--Come Sail Away
+							["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
+							["description"] = "This chain end with the final quest being |cFFFFD700\"A Nation Divided.\"|r",
+							["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
+							["g"] = {
+								{	-- A Nation Divided [Ends Chain]
+									["questID"] =47189, 	-- A Nation Divided
 									["qg"] = 121235, -- Taelia
 									["sourceQuests"] = { 47186 }, -- Sanctum of Sages
-									["coord"] = {
-										68.1, 21.9
+									["coords"] = {
+										{ 68.1, 21.9 },
 									},
-									["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
-								}),
-								q(51341, {	-- Daughter of the Sea
+									["g"] = {
+										{	-- Come Sail Away [Alliance]
+											["achievementID"] = 12582,	--Come Sail Away
+										},
+									},
+								},
+								{	-- Daughter of the Sea
+									["questID"] = 51341, 	-- Daughter of the Sea
 									["qg"] = 120922, -- Lady Jaina Proudmoore
 									["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
-									["coord"] = {
-										65.7, 50.6
+									["coords"] = {
+										{ 65.7, 50.6 },
 									},
-								}),
-								q(52128, {	-- Ferry Pass
+								},
+								{	-- Ferry Pass
+									["questID"] = 52128, 	-- Ferry Pass
 									["qg"] = 122370, -- Cyrus Crestfall
 									["sourceQuests"] = { 47186 }, -- Sanctum of Sages
-									["coord"] = {
-										68.0, 21.9
+									["coords"] = {
+										{ 68.0, 21.9 },
 									},
-								}),
-								q(47099, {	-- Get Your Bearings
+								},
+								{	-- Get Your Bearings
+									["questID"] = 47099, 	-- Get Your Bearings
 									["qg"] = 121235, -- Taelia
 									["sourceQuests"] = {
 										47098,	-- Out Like Flynn
 										46728,	-- The Nation of Kul Tiras
 									}, 
-									["coord"] = { 
-										75.7, 23.5
+									["coords"] = { 
+										{ 75.7, 23.5 },
 									},
-								}),
-								q(47186, {	-- Sanctum of Sages
+								},
+								{	-- Sanctum of Sages
+									["questID"] = 47186, 	-- Sanctum of Sages
 									["qg"] = 121235, -- Taelia
 									["sourceQuests"] = { 46729 }, -- The Old Knight
-									["coord"] = {
-										68.1, 21.9
+									["coords"] = {
+										{ 68.1, 21.9 },
 									},
-								}),
-								q(46729, {	-- The Old Knight
+								},
+								{	-- The Old Knight
+									["questID"] = 46729, 	-- The Old Knight
 									["qg"] = 124630, -- Taelia
 									["sourceQuests"] = { 47099 }, -- Get Your Bearings
-									["coord"] = {
-										67.1, 15.3
+									["coords"] = {
+										{ 67.1, 15.3 },
 									},
-								}),
+								},
+							},
+						},
+						{	-- The Ashvane Trading Company [Alliance]
+							["achievementID"] = 12473,	-- A Sound Plan
+							["criteriaID"] = 1,	-- The Ashvane Trading Company
+							["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
+							["description"] = "This chain continues into |cFFFFD700Tiragarde Sound|r with the final quest being |cFFFFD700\"Stow and Go.\"|r",
+							["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
+							["g"] = {
+								{	-- The Ashvane Trading Company
+									["questID"] = 47485,	-- The Ashvane Trading Company
+									["qg"] = 122370,	-- Cyrus Crestfall
+									["sourceQuests"] = {
+										47181,	-- The Smoking Gun
+									},
+									["coords"] = {
+										{ 67.94, 22.02 }
+									},
+								},
+								{	-- The Smoking Gun
+									["questID"] = 47181,	-- The Smoking Gun
+									["qg"] = 121239,	-- Flynn Fairwind
+									["sourceQuests"] = {
+										139522,	-- Tiragarde Sound
+									},
+									["coords"] = {
+										{ 67.73, 22.08 },
+									},
+								},
+								{	-- Tiragarde Sound
+									["questID"] = 139522,	-- Tiragarde Sound
+									["qg"] = 139522,	-- Scouting Map
+									-- ["sourceQuests"] = { 47189 },	-- A Nation Divided		Note!! Not marking a SourceQuest others it routes all the way up to Heart of Azeroth the entire time.
+									["isBreadcrumb"] = true,
+									["coords"] = {
+										{ 68.38, 22.11 },
+									},
+								},
+							},
+						},
+						a(q(50789, {	-- Clear the Air [Alliance Only]
+							["qg"] = 135259, -- Taelia
+							["sourceQuests"] = { 50787 },	-- Make Our Case [Alliance Only]
+						})),
+						a(q(50788, {	-- Enemies Within [Alliance Only]
+							["qg"] = 135259, -- Taelia
+							["sourceQuests"] = { 50787 },	-- Make Our Case [Alliance Only]
+						})),
+						a(q(50790, {	-- Hot Pursuit [Alliance Only]
+							["qg"] = 135259, -- Taelia
+							["sourceQuests"] = { 50789, 50788 },	-- Clear the Air / Enemies Within [Alliance Only]
+						})),
+						a(q(50787, {	-- Make Our Case [Alliance Only]
+							["qg"] = 135335, -- Proudmoore Guard
+							["sourceQuests"] = { 50795 },	-- Prepare for Trouble [Alliance Only]
+						})),
+						a(q(50795, {	-- Prepare for Trouble [Alliance Only]
+							["qg"] = 135259, -- Taelia
+							["sourceQuests"] = { 50110 },	-- Bearers of Bad News [Alliance Only]
+						})),
+						a(q(50972, {	-- Proudmoore's Parley [Alliance Only]
+							["qg"] = 135259, -- Taelia
+							["sourceQuests"] = { 50790 },	-- Hot Pursuit [Alliance Only]
+							["groups"] = {
+								i(155031),	-- Sea Raider's Greathelm
+								i(155020),	-- Sea Raider's Breastplate
 							},
 						})),
-						a(sz(12473, 4, {	-- A Sound Plan: Enemies Within
-							a(q(50789, {	-- Clear the Air [Alliance Only]
-								["qg"] = 135259, -- Taelia
-								["sourceQuests"] = { 50787 },	-- Make Our Case [Alliance Only]
-							})),
-							a(q(50788, {	-- Enemies Within [Alliance Only]
-								["qg"] = 135259, -- Taelia
-								["sourceQuests"] = { 50787 },	-- Make Our Case [Alliance Only]
-							})),
-							a(q(50790, {	-- Hot Pursuit [Alliance Only]
-								["qg"] = 135259, -- Taelia
-								["sourceQuests"] = { 50789, 50788 },	-- Clear the Air / Enemies Within [Alliance Only]
-							})),
-							a(q(50787, {	-- Make Our Case [Alliance Only]
-								["qg"] = 135335, -- Proudmoore Guard
-								["sourceQuests"] = { 50795 },	-- Prepare for Trouble [Alliance Only]
-							})),
-							a(q(50795, {	-- Prepare for Trouble [Alliance Only]
-								["qg"] = 135259, -- Taelia
-								["sourceQuests"] = { 50110 },	-- Bearers of Bad News [Alliance Only]
-							})),
-							a(q(50972, {	-- Proudmoore's Parley [Alliance Only]
-								["qg"] = 135259, -- Taelia
-								["sourceQuests"] = { 50790 },	-- Hot Pursuit [Alliance Only]
-								["groups"] = {
-									i(155031),	-- Sea Raider's Greathelm
-									i(155020),	-- Sea Raider's Breastplate
-								},
-							})),
-							q(51825, {	-- ??? Hidden ???
-								-- These two quest IDs fired after I turned in Proudmoore's Parley
-								["sourceQuests"] = { 50972 },	-- Proudmoore's Parley [Alliance Only]
-							}),
-							q(51826, {	-- ??? Hidden ???
-								-- These two quest IDs fired after I turned in Proudmoore's Parley
-								["sourceQuests"] = { 50972 },	-- Proudmoore's Parley [Alliance Only]
-							}),
-						})),
-						
-						
+						q(51825, {	-- ??? Hidden ???
+							-- These two quest IDs fired after I turned in Proudmoore's Parley
+							["sourceQuests"] = { 50972 },	-- Proudmoore's Parley [Alliance Only]
+						}),
+						q(51826, {	-- ??? Hidden ???
+							-- These two quest IDs fired after I turned in Proudmoore's Parley
+							["sourceQuests"] = { 50972 },	-- Proudmoore's Parley [Alliance Only]
+						}),
 						a(q(51144, {	-- A Bundle of Furs
 							["qg"] = 124289, -- "Risky" Liz Seminario <Fur Trader>
 							["sourceQuests"] = { 47960 },	-- Tiragarde Sound
@@ -216,25 +264,13 @@ _.Zones =
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
 							["isBreadcrumb"] = true,
 						})),
-						a(q(47960, {	-- Tiragarde Sound
-							["qg"] = 139522,	-- Scouting Map
-							["sourceQuests"] = { 47189 },	-- A Nation Divided
-							["isBreadcrumb"] = true,
-						})),
-						a(q(47485, {	-- The Ashvane Trading Company
-							["qg"] = 122370, -- Cyrus Crestfall
-							["sourceQuests"] = { 47181 },	-- The Smoking Gun
-							["coord"] = { 67.9, 21.9 },
-						})),
+						
 						a(q(47952, {	-- The Missing Fleet
 							["qg"] = 121235,	-- Taelia
 							["sourceQuests"] = { 47962 },	-- Stormsong Valley [Alliance Only]
 							["isBreadcrumb"] = true,
 						})),
-						a(q(47181, {	-- The Smoking Gun
-							["qg"] = 121239, -- Flynn Fairwind
-							["sourceQuests"] = { 47189 },	-- Tiragarde Sound
-						})),
+						
 						qa(48622, {	-- The Vanishing Lord
 							["qg"] = 121235,	-- Taelia
 							["coord"] = { 68.0, 22.0 },

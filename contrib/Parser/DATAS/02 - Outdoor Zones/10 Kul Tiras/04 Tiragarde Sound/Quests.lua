@@ -6,6 +6,127 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(895, {	-- -- Tiragarde Sound
 			["groups"] = {
+				{	-- Quests [Finalized]
+					["npcID"] = -17,	-- Quests [Finalized]
+					["g"] = {
+						{	-- The Ashvane Trading Company [Alliance] [LF]
+							["achievementID"] = 12473,	-- A Sound Plan
+							["criteriaID"] = 1,	-- The Ashvane Trading Company
+							["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
+							["description"] = "This chain starts in |cFFFFD700Boralus|r with the final quest being |cFFFFD700\"Stow and Go.\"|r",
+							["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
+							["g"] = {
+								{	-- Suspicious Shipments
+									["questID"] = 47486,	-- Suspicious Shipments
+									["qg"] = 122671,	-- Cagney
+									["sourceQuests"] = {
+										47485,	-- The Ashvane Trading Company
+									},
+									["coords"] = {
+										{ 76.88, 43.49 },
+									},
+								},
+								{	-- Labor Dispute
+									["questID"] = 47487,	-- Labor Dispute
+									["qg"] = 122671,	-- Cagney
+									["sourceQuests"] = {
+										47485,	-- The Ashvane Trading Company
+									},
+									["coords"] = {
+										{ 76.88, 43.49 },
+									},
+								},
+								{	-- Small Haulers
+									["questID"] = 47488,	-- Small Haulers
+									["qg"] = 122672,	-- Olive
+									["sourceQuests"] = {
+										47485,	-- The Ashvane Trading Company
+									},
+									["coords"] = {
+										{ 76.82, 43.49 },
+									},
+								},
+								{	-- Message from the Management
+									["questID"] = 50573,	-- Message from the Management
+									["objectID"] = 281647,	-- Posted Notice
+									["sourceQuests"] = {
+										47485,	-- The Ashvane Trading Company
+									},
+									["coords"] = {
+										{ 79.01, 45.81 },
+										{ 79.51, 48.91 },
+										{ 80.11, 46.91 },
+										{ 80.51, 49.41 },
+									},
+									["g"] = {
+										{	-- Navigator's Gloves
+											["itemID"] = 155029,	-- Navigator's Gloves
+										},
+										{	-- Navigator's Leggings
+											["itemID"] = 155036,	-- Navigator's Leggings
+										},
+										{	-- Freebooter Gloves
+											["itemID"] = 155027,	-- Freebooter Gloves
+										},
+										{	-- Freebooter Breeches
+											["itemID"] = 155038,	-- Freebooter Breeches
+										},
+										{	-- Outrigger Gloves
+											["itemID"] = 155030,	-- Outrigger Gloves
+										},
+										{	-- Outrigger Legguards
+											["itemID"] = 155037,	-- Outrigger Legguards
+										},
+										{	-- Sea Raider's Gauntlets
+											["itemID"] = 155028,	-- Sea Raider's Gauntlets
+										},
+										{	-- Sea Raider's Greaves
+											["itemID"] = 155035,	-- Sea Raider's Greaves
+										},
+									},
+								},
+								{	-- Under Their Noses
+									["questID"] = 50531,	-- Under Their Noses
+									["qg"] = 121239,	-- Flynn Fairwind
+									["sourceQuests"] = {
+										47487,	-- Labor Dispute
+										50573,	-- Message from the Management
+										47488,	-- Small Haulers
+										47486,	-- Suspicious Shipments
+									},
+									["coords"] = {
+										{ 78.04, 47.94 },
+									},
+									["g"] = {
+										{	-- The Ashvane Trading Company
+											["achievementID"] = 12473,	-- A Sound Plan
+											["criteriaID"] = 1,	-- The Ashvane Trading Company
+										},
+									},
+								},
+							},
+						},
+						{	-- Ancient Pilgrimage Scrollcasing [Quest: The Great Sea Scrolls]
+							["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
+							["questID"] = 53476,	-- The Great Sea Scrolls
+							["description"] = "You receive this item when looting any treasure chest and has a random chance to spawn.",
+							["g"] = {
+								{	-- Bartered Vrykul Cowl
+									["itemID"] = 163863,	-- Bartered Vrykul Cowl
+								},
+								{	-- Bartered Vrykul Facemask
+									["itemID"] = 163864,	-- Bartered Vrykul Facemask
+								},
+								{	-- Bartered Vrykul Hood
+									["itemID"] = 163862,	-- Bartered Vrykul Hood
+								},
+								{	-- Bartered Vrykul Warhelm
+									["itemID"] = 163865,	-- Bartered Vrykul Warhelm
+								},
+							},
+						},
+					},
+				},
 				n(-17, {	-- Quests [A]
 					["groups"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
 						--[[
@@ -139,52 +260,7 @@ _.Zones =
 								},
 							},
 						},
-						
-						--------------------------------------
-						-- Eastpoint Station / Ashvane Foundry
-						--------------------------------------
-						a(q(47487, {	-- Labor Dispute
-							["qg"] = 122671, -- Cagney
-							["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
-							["coord"] = { 76.8, 43.4 },
-						})),
-						o(281647, {		-- Posted Notice [Object]
-							a(q(50573, {	-- Message from the Management
-								["sourceQuests"] = { 47486 },	-- Suspicious Shipments
-								["groups"] = {
-									i(155036),	-- Navigator's Leggings
-									i(155038),	-- Freebooter Breeches
-									i(155037),	-- Outrigger Legguards
-									i(155035),	-- Sea Raider's Greaves
-									i(155029),	-- Navigator's Gloves
-									i(155027),	-- Freebooter Gloves
-									i(155030),	-- Outrigger Gloves
-									i(155028),	-- Sea Raider's Gauntlets
-								},
-							})),
-						}),
-						a(q(47488, {	-- Small Haulers
-							["qg"] = 122672, -- Olive
-							["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
-							["coord"] = { 76.8, 43.4 },
-						})),
-						a(q(47486, {	-- Suspicious Shipments
-							["qg"] = 122671, -- Cagney
-							["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
-							["coord"] = { 76.8, 43.4 },
-						})),
-						a(q(50531, {	-- Under Their Noses
-							["qg"] = 121239, -- Flynn Fairwind
-							["sourceQuests"] = { 50573, 47488, 47485 },	-- Message from the Management / Small Haulers / Suspicious Shipments
-							["groups"] = {
-								{
-									["achievementID"] = 12473,	-- A Sound Plan [Achievement]
-									["criteriaID"] = 1,	-- The Ashvane Trading Company [Criteria]
-								},
-							},
-							-- CRIEVE NOTE: This triggered sz(12473, 1) -- A Sound Plan: The Ashvane Trading Company for me.
-						})),
-						
+										
 						--------------------------------------
 						-- Bridgeport
 						--------------------------------------
@@ -502,16 +578,6 @@ _.Zones =
 							["qg"] = 142393, -- Taelia
 							["sourceQuests"] = { 49738 },	-- Hands Off My Booty! [Alliance Only]
 						})),
-						
-						
-						i(163856, {	-- Ancient Pilgrimage Scrollcasing
-							q(53476, {	-- The Great Sea Scrolls
-								i(163863),	-- Bartered Vrykul Cowl
-								i(163864),	-- Bartered Vrykul Facemask
-								i(163862),	-- Bartered Vrykul Hood
-								i(163865),	-- Bartered Vrykul Warhelm
-							}),
-						}),
 						
 						--
 						q(48903, {	-- The Perfect Horse, of Course

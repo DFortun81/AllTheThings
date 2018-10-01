@@ -15,7 +15,7 @@ _.ExpansionFeatures =
 				["maps"] = {
 					1161,	--  Boralus
 				},
-				-- We need to attach lvl requirements in various areas here as the queesets are specific to certain levels.  To ensure everything works properly we'll attach lvls to each quest to be safe.
+				-- We need to attach lvl requirements in various areas here as the quests are specific to certain levels.  To ensure everything works properly we'll attach lvls to each quest to be safe.
 				["g"] = { 
 					{	-- The War Campaign
 						["questID"] = 52654,	-- The War Campaign

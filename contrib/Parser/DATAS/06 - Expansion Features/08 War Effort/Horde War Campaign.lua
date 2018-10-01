@@ -8,7 +8,7 @@
 _.ExpansionFeatures =
 {
 	n(-17, { -- Quests
-		-- We need to attach lvl requirements in various areas here as the queesets are specific to certain levels.  To ensure everything works properly we'll attach lvls to each quest to be safe.
+		-- We need to attach lvl requirements in various areas here as the quests are specific to certain levels.  To ensure everything works properly we'll attach lvls to each quest to be safe.
 		["groups"] = {
 			q(52749, {	-- The War Campaign
 				["qg"] = 120170,	-- Nathanos Blightcaller
