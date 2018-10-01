@@ -183,6 +183,21 @@ _.Zones =
 								},
 							},
 						},
+						{	-- Seeking More Knowledge
+							["questID"] = 51016,	-- Seeking More Knowledge
+							["qg"] = 136096,	-- Declan Senal
+							["requireSkill"] = 182,	-- Herbalism
+							["coords"] = {
+								{ 70.45, 05.13 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 100 Kul Tiran Herbalism.",
+							["g"] = {
+								{	-- Anchor Weed [Rank 2]
+									["recipeID"] = 252425,	-- Anchor Weed [Rank 2]
+								},
+							},
+						},
 						--[[
 						{	-- Spiderphobia [Mine]
 							["questID"] = 48761,	-- Spiderphobia
