@@ -81,7 +81,7 @@ _.Zones =
 									["missionID"] = 1927,	-- Lordamere Lake	
 									["g"] = {	
 										{	-- Lordamere Lake	
-											["currencyID"] = 1579,	-- Champion's of Azeroth Commendation	
+											["currencyID"] = 1579,	-- Champions of Azeroth Commendation	
 										},	
 									},	
 								},
@@ -196,7 +196,7 @@ _.Zones =
 									["missionID"] = 1940,	-- Deeps Scouting	
 									["g"] = {	
 										{	-- Deeps Scouting	
-											["currencyID"] = 1579,	-- Champion's of Azeroth Commendation	
+											["currencyID"] = 1579,	-- Champions of Azeroth Commendation	
 										},	
 									},	
 								},
@@ -236,7 +236,7 @@ _.Zones =
 									["missionID"] = 1948,	-- Recapture Silverwind Refuge	
 									["g"] = {	
 										{	-- Recapture Silverwind Refuge	
-											["currencyID"] = 1579,	-- Champion's of Azeroth Commendation	
+											["currencyID"] = 1579,	-- Champions of Azeroth Commendation	
 										},	
 									},	
 								},
@@ -397,7 +397,31 @@ _.Zones =
 								},
 							},
 						},
-						
+						{	-- Azeroth Bleeds
+							["missionID"] = 2078,	--  Azeroth Bleeds
+							["g"] = {	
+								{	-- Lordamere Lake	
+									["currencyID"] = 1579,	-- Champions of Azeroth Commendation	
+								},	
+							},	
+						},
+						{	-- Explore the Roost
+							["missionID"] = 2087,	-- Explore the Roost
+							["g"] = {	
+								{	-- Barren Supplies	
+									["itemID"] = 163036,	-- Polished Pet Charm	
+								},	
+							},	
+						},
+						{	-- The Shadow War
+							["missionID"] = 1878,	-- The Shadow War
+							["g"] = {
+								{	-- Recruitment Orders
+									["itemID"] = 160983,	-- Recruitment Orders
+									["questID"] = 51771,	-- War of Shadows	NOTE!! Finishing the quest rewards the unlock
+								},
+							},
+						},
 					},
 				},
 			},

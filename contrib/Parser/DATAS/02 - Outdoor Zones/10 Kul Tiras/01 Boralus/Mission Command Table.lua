@@ -397,6 +397,22 @@ _.Zones =
 								},
 							},
 						},
+						{	-- Azeroth Bleeds
+							["missionID"] = 2078,	--  Azeroth Bleeds
+							["g"] = {	
+								{	-- Lordamere Lake	
+									["currencyID"] = 1579,	-- Champions of Azeroth Commendation	
+								},	
+							},	
+						},
+						{	-- Explore the Roost
+							["missionID"] = 2087,	-- Explore the Roost
+							["g"] = {	
+								{	-- Barren Supplies	
+									["itemID"] = 163036,	-- Polished Pet Charm	
+								},	
+							},	
+						},
 						{	-- The Shadow War
 							["missionID"] = 1877,	-- The Shadow War
 							["g"] = {
