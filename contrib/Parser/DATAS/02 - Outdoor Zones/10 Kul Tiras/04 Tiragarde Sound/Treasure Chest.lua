@@ -23,6 +23,7 @@ _.Zones =
 							{ 83.9, 73.9 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 48593,
 					}),
 					o(273902, {	-- Small Treasure Chest
@@ -37,6 +38,7 @@ _.Zones =
 							{ 78.0, 80.5 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 48595,
 					}),
 					o(273903, {	-- Small Treasure Chest
@@ -52,6 +54,7 @@ _.Zones =
 							{ 75.7, 82.8 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 48596,
 					}),
 					o(273905, {	-- Small Treasure Chest
@@ -67,6 +70,7 @@ _.Zones =
 							{ 39.6, 32.4 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 48598,
 					}),
 					o(273910, {	-- Small Treasure Chest
@@ -85,6 +89,7 @@ _.Zones =
 							{ 43.2, 27.4 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 48599,
 					}),
 					o(273917, {	-- Small Treasure Chest
@@ -102,6 +107,7 @@ _.Zones =
 							{ 82.3, 47.8 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 48607,
 					}),
 					o(273918, {	-- Small Treasure Chest
@@ -116,6 +122,7 @@ _.Zones =
 							{ 78.3, 60.0 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 48608,
 					}),
 					o(273919, {	-- Small Treasure Chest
@@ -136,6 +143,7 @@ _.Zones =
 							{ 70.9, 54.1 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 48609,
 					}),
 					o(275070, {	-- Small Treasure Chest
@@ -152,6 +160,7 @@ _.Zones =
 							{ 58.5, 14.6 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 48617,
 					}),
 					o(275071, {	-- Small Treasure Chest
@@ -169,6 +178,7 @@ _.Zones =
 							{ 90.0, 75.2 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 48618,
 					}),
 					o(275074, {	-- Small Treasure Chest
@@ -185,6 +195,7 @@ _.Zones =
 							{ 72.3, 17.0 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 48619,
 					}),
 					o(275076, {	-- Small Treasure Chest
@@ -204,6 +215,7 @@ _.Zones =
 							{ 48.9, 16.7 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 48621,
 					}),
 					o(280751, {	-- Small Treasure Chest
@@ -222,6 +234,7 @@ _.Zones =
 							{ 49.1, 14.7 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 50166,
 					}),
 				}),

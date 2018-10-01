@@ -23,6 +23,7 @@ _.Zones =
 							{ 66.8, 60.8 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51184,	-- Scripps Lumber Co (Crieve)
 					}),
 					o(291244, {	-- Small Treasure Chest
@@ -42,6 +43,7 @@ _.Zones =
 							{ 71.0, 58.2 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51927,	-- Layson & Sons Rigging (Crieve)
 					}),
 					o(291246, {	-- Small Treasure Chest
@@ -61,6 +63,7 @@ _.Zones =
 							{ 79.7, 37.6 },	-- outlier, very far east of other object locations
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51930,	-- Port Fogtide (Crieve)
 					}),
 					o(291254, {	-- Small Treasure Chest
@@ -76,6 +79,7 @@ _.Zones =
 							{ 66.8, 36.1 },	-- outlier, very far east of other object locations
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51935,	-- Sagehold (Crieve)
 					}),
 					o(291255, {	-- Small Treasure Chest
@@ -89,6 +93,7 @@ _.Zones =
 							{ 76.2, 37.1 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51938,	-- Tempest's Edge (Crieve)
 					}),
 					o(291257, {	-- Small Treasure Chest
@@ -110,6 +115,7 @@ _.Zones =
 							{ 74.1, 67.8 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51939,	-- Rosaline's Apiary (Crieve)
 					}),
 					o(291258, {	-- Small Treasure Chest
@@ -127,6 +133,7 @@ _.Zones =
 							{ 50.4, 62.7 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51940,	-- Burton Farmstead (Crieve)
 					}),
 					o(291259, {	-- Small Treasure Chest
@@ -145,6 +152,7 @@ _.Zones =
 							{ 47.9, 55.5 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51941,	-- STC
 					}),
 					o(291263, {	-- Small Treasure Chest
@@ -170,6 +178,7 @@ _.Zones =
 						--	{ 69.4 70.4 },	-- Thornheart
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51942,	-- Thornheart (Crieve)
 					}),
 					o(291264, {	-- Small Treasure Chest
@@ -187,6 +196,7 @@ _.Zones =
 							{ 35.5, 72.9 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51943,
 					}),
 					o(291265, {	-- Small Treasure Chest
@@ -208,6 +218,7 @@ _.Zones =
 							{ 34.4, 43.8 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51944,
 					}),
 					o(291266, {	-- Small Treasure Chest
@@ -227,6 +238,7 @@ _.Zones =
 							{ 40.6, 26.3 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51945,
 					}),
 					o(291267, {	-- Small Treasure Chest
@@ -240,6 +252,7 @@ _.Zones =
 							{ 62.2, 48.8 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 51946,	-- Winshorn Hills (Crieve)
 					}),
 					o(294311, {	-- Small Treasure Chest
@@ -261,6 +274,7 @@ _.Zones =
 							{ 86.0, 52.3 },
 						},
 						["isDaily"] = true,
+						["repeatable"] = true,
 						["questID"] = 52989,
 					}),
 				}),

@@ -29,6 +29,7 @@ _.Zones =
 						o(9999997, { -- Treasure Chest
 							["questID"] = 51673,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["coord"] = {
 								49.36, 80.18
 							},
@@ -54,6 +55,7 @@ _.Zones =
 						o(9999994, { -- Treasure Chest
 							["questID"] = 50916,
 							["isDaily"] = true,
+							["repeatable"] = true,
 							["coord"] = {
 								61.32, 32.36
 							},
