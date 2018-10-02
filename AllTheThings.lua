@@ -8321,11 +8321,10 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['OnUpdate'] = function(data)
 						if app.DungeonDifficulty then
 							data.difficultyID = app.DungeonDifficulty;
+							data.name = GetDifficultyInfo(data.difficultyID) or "???";
 							local name, instanceType, instanceDifficulty, difficultyName = GetInstanceInfo();
 							if instanceDifficulty and data.difficultyID ~= instanceDifficulty and instanceType == 'party' then
-								data.name = GetDifficultyInfo(data.difficultyID) .. " (" .. difficultyName .. ")";
-							else
-								data.name = GetDifficultyInfo(data.difficultyID);
+								data.name = data.name .. " (" .. (difficultyName or "???") .. ")";
 							end
 						end
 					end,
