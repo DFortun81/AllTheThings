@@ -1107,7 +1107,6 @@ local function GetCachedSearchResults(search, method, ...)
 					for i,j in ipairs(temp) do
 						if not contains(listing, j) then
 							tinsert(listing, 1, j);
-							print(j);
 						end
 					end
 				end
