@@ -72,7 +72,6 @@ namespace Parser_V2
                 new ObjectData("heirloomID", "heir"),
                 new ItemSourceData("s", "s"),//, new List<string>{ "lvl" }),                // Source ID
                 new ObjectData("categoryID", "cat"),
-                new ObjectData("currencyID", "cu"),
                 new ObjectData("category", "tcat"),
                 new ObjectData("classID", "cl"),
                 new ObjectData("raceID", "ra"),
@@ -96,6 +95,7 @@ namespace Parser_V2
                 new ObjectData("setHeaderID", "gsh"),
                 new ObjectData("setSubHeaderID", "gssh"),
                 new ObjectData("titleID", "title", new List<string>{ "f" }),
+                new ObjectData("currencyID", "cu"),
                 new ObjectData("itemID", "i"),//, new List<string>{ "lvl" }),
                 new ObjectData("questID", "q"),
                 new ObjectData("achievementID", "ach"),
