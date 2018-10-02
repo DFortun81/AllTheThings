@@ -1080,7 +1080,6 @@ local function GetCachedSearchResults(search, method, ...)
 							for source,replacement in pairs(abbrevs) do
 								text = string.gsub(text, source,replacement);
 							end
-							
 							if not app.RecursiveClassAndRaceFilter(j.parent) then
 								tinsert(unfiltered, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" .. text);
 							elseif not app.RecursiveUnobtainableFilter(j.parent) then
@@ -1101,13 +1100,14 @@ local function GetCachedSearchResults(search, method, ...)
 					if #temp < 1 or not GetDataMember("OnlyShowRelevantDatabaseLocations") then
 						for i,j in ipairs(unfiltered) do
 							if not contains(listing, j) then
-								tinsert(listing, i, j);
+								tinsert(listing, 1, j);
 							end
 						end
 					end
 					for i,j in ipairs(temp) do
 						if not contains(listing, j) then
-							tinsert(listing, i, j);
+							tinsert(listing, 1, j);
+							print(j);
 						end
 					end
 				end
