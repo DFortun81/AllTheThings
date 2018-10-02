@@ -38,61 +38,62 @@ _.Zones =
 							["isDaily"] = true
 						},
 						ach(961, {	-- Honorary Frenzyheart
+							-- Note!! Commented out questID/qg/sourceQuest/isDaily due to this area tracking the achievement only.  Since they are daily it messes with the counter.
 							{
-								["questID"] = 12702,	-- Chicken Party! [Quest]
+								--["questID"] = 12702,	-- Chicken Party! [Quest]
 								["criteriaID"] = 1,		-- Chicken Party! [Criteria]
-								["qg"] = 28138, 		-- Quest Giver: Elder Harkek
-								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								["isDaily"] = true,
+								--["qg"] = 28138, 		-- Quest Giver: Elder Harkek
+								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12703,	-- Kartak's Rampage [Quest]
+								--["questID"] = 12703,	-- Kartak's Rampage [Quest]
 								["criteriaID"] = 2,		-- Kartak's Rampage [Criteria]
-								["qg"] = 29146, 		-- Quest Giver: Vekgar
-								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								["isDaily"] = true,
+								--["qg"] = 29146, 		-- Quest Giver: Vekgar
+								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12759,	-- Tools of War [Quest]
+								--["questID"] = 12759,	-- Tools of War [Quest]
 								["criteriaID"] = 3,		-- Tools of War [Criteria]
-								["qg"] = 29146, 		-- Quest Giver: Vekgar
-								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								["isDaily"] = true,
+								--["qg"] = 29146, 		-- Quest Giver: Vekgar
+								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12760,	-- Secret Strength of the Frenzyheart [Quest]
+								--["questID"] = 12760,	-- Secret Strength of the Frenzyheart [Quest]
 								["criteriaID"] = 4,		-- Secret Strength of the Frenzyheart [Criteria]
-								["qg"] = 29146, 		-- Quest Giver: Vekgar
-								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								["isDaily"] = true,
+								--["qg"] = 29146, 		-- Quest Giver: Vekgar
+								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12732,	-- The Heartblood's Strength [Quest]
+								--["questID"] = 12732,	-- The Heartblood's Strength [Quest]
 								["criteriaID"] = 5,		-- The Heartblood's Strength [Criteria]
-								["qg"] = 29043, 		-- Quest Giver: Rejek
-								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								["isDaily"] = true,
+								--["qg"] = 29043, 		-- Quest Giver: Rejek
+								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12741,	-- Strength of the Tempest [Quest]
+								--["questID"] = 12741,	-- Strength of the Tempest [Quest]
 								["criteriaID"] = 6,		-- Strength of the Tempest [Criteria]
-								["qg"] = 29043, 		-- Quest Giver: Rejek
-								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								["isDaily"] = true,
+								--["qg"] = 29043, 		-- Quest Giver: Rejek
+								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12734,	-- Rejek: First Blood [Quest]
+								--["questID"] = 12734,	-- Rejek: First Blood [Quest]
 								["criteriaID"] = 7,		-- Rejek: First Blood [Criteria]
-								["qg"] = 29043, 		-- Quest Giver: Rejek
-								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								["isDaily"] = true,
+								--["qg"] = 29043, 		-- Quest Giver: Rejek
+								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12758,	-- A Hero's Headgear [Quest]
+								--["questID"] = 12758,	-- A Hero's Headgear [Quest]
 								["criteriaID"] = 8,		-- A Hero's Headgear [Criteria]
-								["qg"] = 29043, 		-- Quest Giver: Rejek
-								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								["isDaily"] = true,
+								--["qg"] = 29043, 		-- Quest Giver: Rejek
+								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								--["isDaily"] = true,
 							},
 						}),
 					},
