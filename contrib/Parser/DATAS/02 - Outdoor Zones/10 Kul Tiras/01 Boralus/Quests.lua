@@ -9,90 +9,106 @@ _.Zones =
 			["groups"] = {
 				n(-17, {	-- Quests
 					["groups"] = {
-						i(122293, {	-- Trans-Dimensional Bird Whistle
-							["groups"] = {
-								{
-									["itemID"] = 161451,	-- A Tiny Diving Helmet
-									["questID"] = 52277,	-- Pepe can be sometimes be summoned with this mask
-									["coord"] = {
-										54.31, 72.61,	-- Pepe Location
-									},
-									["description"] = "Located inside the fish tank of \"Catherine Morgan's\" cat house.",
-								},
-							},
-							["collectible"] = false,
-						}),
 						n(-9, {	-- PvP
 							["groups"] = {
-								q(52944, {	-- Call to Arms: Drustvar
-									["groups"] = {
-										i(164261, {	-- Steel Strongbox
-											i(137642),	-- Mark of Honor
-										}),
-									},
+								{	-- Call to Arms: Drustvar
+									["questID"] = 52944, 	-- Call to Arms: Drustvar
 									["qg"] = 143559,	-- Grand Marshal Tremblade
-									["coord"] = {
-										56.41, 26.01
+									["coords"] = {
+										{ 56.41, 26.01 },
 									},
 									["repeatable"] = true,
 									["isWeekly"] = true,
 									["races"] = ALLIANCE_ONLY,
-								}),
-								q(52949, {	-- Call to Arms: Nazmir
-									["groups"] = {
-										i(164261, {	-- Steel Strongbox
-											i(137642),	-- Mark of Honor
-										}),
+									["g"] = {
+										{	-- Steel Strongbox
+											["itemID"] = 164261, 	-- Steel Strongbox
+											["g"] = {
+												{	-- Mark of Honor
+													["itemID"] = 137642,	-- Mark of Honor
+												},
+											},
+										},
 									},
+								},
+								{	-- Call to Arms: Nazmir
+									["questID"] = 52949, 	-- Call to Arms: Nazmir
 									["qg"] = 143559,	-- Grand Marshal Tremblade
-									["coord"] = {
-										56.41, 26.01
+									["coords"] = {
+										{ 56.41, 26.01 },
 									},
 									["repeatable"] = true,
 									["isWeekly"] = true,
 									["races"] = ALLIANCE_ONLY,
-								}),
-								q(52782, {	-- Call to Arms: Stormsong Valley
-									["groups"] = {
-										i(164261, {	-- Steel Strongbox
-											i(137642),	-- Mark of Honor
-										}),
+									["g"] = {
+										{	-- Steel Strongbox
+											["itemID"] = 164261, 	-- Steel Strongbox
+											["g"] = {
+												{	-- Mark of Honor
+													["itemID"] = 137642,	-- Mark of Honor
+												},
+											},
+										},
 									},
+								},
+								{	-- Call to Arms: Stormsong Valley
+									["questID"] = 52782, 	-- Call to Arms: Stormsong Valley
 									["qg"] = 143559,	-- Grand Marshal Tremblade
-									["coord"] = {
-										56.41, 26.01
+									["coords"] = {
+										{ 56.41, 26.01 },
 									},
 									["repeatable"] = true,
 									["isWeekly"] = true,
 									["races"] = ALLIANCE_ONLY,
-								}),
-								q(52950, {	-- Call to Arms: Vol'dun
-									["groups"] = {
-										i(164261, {	-- Steel Strongbox
-											i(137642),	-- Mark of Honor
-										}),
+									["g"] = {
+										{	-- Steel Strongbox
+											["itemID"] = 164261, 	-- Steel Strongbox
+											["g"] = {
+												{	-- Mark of Honor
+													["itemID"] = 137642,	-- Mark of Honor
+												},
+											},
+										},
 									},
+								},
+								{	-- Call to Arms: Vol'dun
+									["questID"] = 52950, 	-- Call to Arms: Vol'dun
 									["qg"] = 143559,	-- Grand Marshal Tremblade
-									["coord"] = {
-										56.41, 26.01
+									["coords"] = {
+										{ 56.41, 26.01 },
 									},
 									["repeatable"] = true,
 									["isWeekly"] = true,
 									["races"] = ALLIANCE_ONLY,
-								}),
-								q(53295, {	-- Do Your Part
-									["groups"] = {
-										i(163604, {	-- Net-O-Matic 5000
-											["f"] = 55,	-- Consumable
-										}),
+									["g"] = {
+										{	-- Steel Strongbox
+											["itemID"] = 164261, 	-- Steel Strongbox
+											["g"] = {
+												{	-- Mark of Honor
+													["itemID"] = 137642,	-- Mark of Honor
+												},
+											},
+										},
 									},
+								},
+								{	-- Do Your Part
+									["questID"] = 53295, 	-- Do Your Part
 									["qg"] = 141698,	--  Kort Ceefer
-									["coord"] = {
-										56.41, 25.81
+									["coords"] = {
+										{ 56.41, 25.81 },
 									},
 									["races"] = ALLIANCE_ONLY,
-								}),
+									["repeatable"] = true,
+									["isWeekly"] = true,
+									["g"] = {
+										{	-- Net-O-Matic
+											["itemID"] = 163604, 	-- Net-O-Matic 5000
+											["f"] = 55,	-- Consumable
+										},
+									},
+								},
 							},
+							["lvl"] = 120,	-- Don't become available until this level.
 						}),
 						{	-- Come Sail Away [Alliance]
 							["achievementID"] = 12582,	--Come Sail Away
@@ -179,14 +195,14 @@ _.Zones =
 									["questID"] = 47181,	-- The Smoking Gun
 									["qg"] = 121239,	-- Flynn Fairwind
 									["sourceQuests"] = {
-										139522,	-- Tiragarde Sound
+										47960,	-- Tiragarde Sound
 									},
 									["coords"] = {
 										{ 67.73, 22.08 },
 									},
 								},
 								{	-- Tiragarde Sound
-									["questID"] = 139522,	-- Tiragarde Sound
+									["questID"] = 47960,	-- Tiragarde Sound
 									["qg"] = 139522,	-- Scouting Map
 									-- ["sourceQuests"] = { 47189 },	-- A Nation Divided		Note!! Not marking a SourceQuest others it routes all the way up to Heart of Azeroth the entire time.
 									["isBreadcrumb"] = true,
