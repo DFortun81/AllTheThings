@@ -1632,7 +1632,7 @@ local function SearchForItemLink(field, link)
 				
 				local group, working, important;
 				-- Source ID searching is much faster and more reliable.
-				local sourceID = GetSourceID(link, itemID);
+				local sourceID = quality ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
 				if sourceID then
 					important = true;
 					group = SearchForSourceID(sourceID) or SearchForItemID(itemID);
@@ -1676,7 +1676,7 @@ local function SearchForItemLink(field, link)
 												else
 													text = "   ";
 												end
-												text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherATTSource.collected);
+												text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID or "???") .. ")") or "") .. "/" .. GetCollectionIcon(otherATTSource.collected);
 												tinsert(listing, text);
 											end
 										else
@@ -3427,7 +3427,7 @@ app.BaseArtifact = {
 				return select(2, GetItemInfo(string.format("item:%d::::::::::256:::%d", itemID, t.artifactID))), itemID;
 			end
 		elseif key == "s" then
-			local s = t.silentLink;
+			local s, itemID = t.silentLink;
 			if s then
 				s = app.GetSourceID(s, itemID);
 				if s then
