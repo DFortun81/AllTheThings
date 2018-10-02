@@ -1599,33 +1599,6 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(2700),	-- Recipe: Succulent Pork Ribs
 						i(728),		-- Recipe: Westfall Stew
 					})),
-					n(101759, {	-- Kiatke <Timewalking Vendor>
-						["groups"] = {
-							currency(1166, { -- Timewarped Badge
-								i(133525),	-- Bones of the Damned
-								i(133526),	-- Lightwarper Vestments
-								i(133527),	-- Ghostworld Chestguard
-								i(133528),	-- Decaying Herbalist's Robes
-								i(133529),	-- Belt of Hidden Keys
-								i(133530),	-- Cord of Dragon Sinew
-								i(133531),	-- Blinding Girdle of Truth
-								i(133532),	-- Vestal's Irrepressible Girdle
-								i(133533),	-- Flashing Bracers of Warmth
-								i(133534),	-- Dragonbelly Bracers
-								i(133535),	-- Bracers of Manifold Pockets
-								i(133536),	-- Bracers of the Black Dream
-								i(133511),	-- Gurboggle's Gleaming Bauble Toy
-								i(133542),	-- Tosselwrench's Mega-Accurate Simulation Viewfinder Toy
-								i(67414, {	-- Bag of Shiny Things
-									dr(1.1, i(44983)),	-- Strand Crawler Pet
-									dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
-									dr(0.5, i(45991)),	-- Bone Fishing Pole
-									dr(0.5, i(45992)),	-- Jeweled Fishing Pole
-								}),
-							}),
-						},
-						["description"] = "Vendor only available during Timewalking(Cataclysm).|r",
-					}),
 					n(69974, {	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
 						i(146640, { -- Arsenal: Ruthless Gladiator's Weapons
 							i(70242),	-- Ruthless Gladiator's Barrier

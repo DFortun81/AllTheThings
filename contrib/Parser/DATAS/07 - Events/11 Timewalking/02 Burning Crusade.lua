@@ -7,20 +7,19 @@ _.WorldEvents =
 		["groups"] = {
 			tier(2, { 	-- Burning Crusade
 				["groups"] = {
-					i(129747, { -- Swirling Timewarped Vial
-						q(40168, { -- The Swirling Vial
-							["groups"]= {
-							},
-							["qg"] = 98685, -- Cupri
-							["repeatable"] = true,
-						}),
-					}),
-					q(47523, { -- Disturbance Detected: Black Temple
-						["groups"] = {
-						},
-						["qg"] = 123252, -- Vormu
+					{	-- Disturbance Detected: Black Temple
+						["questID"] = 47523,	-- Disturbance Detected: Black Temple
+						["qg"] = 123252,	-- Vormu
 						["repeatable"] = true,
-					}),
+						["isWeekly"] = true,
+					},
+					{	-- Swirling Timewarped Vial
+						["itemID"] = 129747,	-- Swirling Timewarped Vial
+						["questID"] = 40168,	-- The Swirling Vial
+						["qg"] = 98685,	-- Cupri
+						["repeatable"] = true,
+						["isWeekly"] = true,
+					},
 					n(98685, { -- Cupri
 						["groups"] = {
 							currency(1166, { -- Timewarped Badge
@@ -95,5 +94,6 @@ _.WorldEvents =
 				},
 			}),
 		},
+		["u"] = 42,	--  Timewalking
 	}),
 };

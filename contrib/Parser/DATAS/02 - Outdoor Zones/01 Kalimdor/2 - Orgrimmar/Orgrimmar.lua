@@ -2186,33 +2186,6 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					n(101759, {	-- Kiatke <Timewalking Vendor>
-						["groups"] = {
-							currency(1166, { -- Timewarped Badge
-								i(133525),	-- Bones of the Damned
-								i(133526),	-- Lightwarper Vestments
-								i(133527),	-- Ghostworld Chestguard
-								i(133528),	-- Decaying Herbalist's Robes
-								i(133529),	-- Belt of Hidden Keys
-								i(133530),	-- Cord of Dragon Sinew
-								i(133531),	-- Blinding Girdle of Truth
-								i(133532),	-- Vestal's Irrepressible Girdle
-								i(133533),	-- Flashing Bracers of Warmth
-								i(133534),	-- Dragonbelly Bracers
-								i(133535),	-- Bracers of Manifold Pockets
-								i(133536),	-- Bracers of the Black Dream
-								i(133511),	-- Gurboggle's Gleaming Bauble Toy
-								i(133542),	-- Tosselwrench's Mega-Accurate Simulation Viewfinder Toy
-								i(67414, {	-- Bag of Shiny Things
-									dr(1.1, i(44983)),	-- Strand Crawler Pet
-									dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
-									dr(0.5, i(45991)),	-- Bone Fishing Pole
-									dr(0.5, i(45992)),	-- Jeweled Fishing Pole
-								}),
-							}),
-						},
-						["description"] = "Vendor only available during Timewalking(Cataclysm).|r",
-					}),
 					n(3346, {	-- Kithas <Enchanting Supplies>
 						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
 						i(6346),	-- Formula: Enchant Chest - Lesser Mana
