@@ -134,61 +134,62 @@ _.Zones =
 							["isDaily"] = true
 						},
 						ach(962, {	-- Savior of the Oracles
+							-- Note!! Commented out questID/qg/sourceQuest/isDaily due to this area tracking the achievement only.  Since they are daily it messes with the counter.
 							{
-								["questID"] = 12704,	-- Appeasing the Great Rain Stone [Quest]
+								--["questID"] = 12704,	-- Appeasing the Great Rain Stone [Quest]
 								["criteriaID"] = 1,		-- Appeasing the Great Rain Stone [Criteria]
-								["qg"] = 28027, 		-- Quest Giver: High-Oracle Soo-say
-								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								["isDaily"] = true,
+								--["qg"] = 28027, 		-- Quest Giver: High-Oracle Soo-say
+								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12705,	-- Will of the Titans [Quest]
+								--["questID"] = 12705,	-- Will of the Titans [Quest]
 								["criteriaID"] = 2,		-- Will of the Titans [Criteria]
-								["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
-								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								["isDaily"] = true,
+								--["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
+								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12761,	-- Mastery of the Crystals [Quest]
+								--["questID"] = 12761,	-- Mastery of the Crystals [Quest]
 								["criteriaID"] = 3,		-- Mastery of the Crystals [Criteria]
-								["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
-								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								["isDaily"] = true,
+								--["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
+								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12762,	-- Power of the Great Ones [Quest]
+								--["questID"] = 12762,	-- Power of the Great Ones [Quest]
 								["criteriaID"] = 4,		-- Power of the Great Ones [Criteria]
-								["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
-								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								["isDaily"] = true,
+								--["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
+								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12736,	-- Song of Reflection [Quest]
+								--["questID"] = 12736,	-- Song of Reflection [Quest]
 								["criteriaID"] = 5,		-- Song of Reflection [Criteria]
-								["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
-								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								["isDaily"] = true,
+								--["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
+								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12726,	-- Song of Wind and Water [Quest]
+								--["questID"] = 12726,	-- Song of Wind and Water [Quest]
 								["criteriaID"] = 6,		-- Song of Wind and Water [Criteria]
-								["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
-								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								["isDaily"] = true,
+								--["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
+								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12735,	-- A Cleansing Song [Quest]
+								--["questID"] = 12735,	-- A Cleansing Song [Quest]
 								["criteriaID"] = 7,		-- A Cleansing Song [Criteria]
-								["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
-								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								["isDaily"] = true,
+								--["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
+								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								--["isDaily"] = true,
 							},
 							{
-								["questID"] = 12737,	-- Song of Fecundity [Quest]
+								--["questID"] = 12737,	-- Song of Fecundity [Quest]
 								["criteriaID"] = 8,		-- Song of Fecundity [Criteria]
-								["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
-								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								["isDaily"] = true,
+								--["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
+								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								--["isDaily"] = true,
 							},
 						}),
 					},
