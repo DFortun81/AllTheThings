@@ -85,6 +85,23 @@ _.Zones =
 								},
 							},
 						},
+						{	-- Breaking the Food Chain [Herb -- Riverbud III]
+							["questID"] = 48754,	-- Breaking the Food Chain
+							["qg"] = 136096,	-- Declan Senal
+							["requireSkill"] = 182,	-- Herbalism
+							["coords"] = {
+								{ 70.45, 05.13 },
+							},
+							["sourceQuests"] = {
+								48753,	-- Emergency Transplants
+							},
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								{	-- Riverbud [Rank 3]
+									["recipeID"] = 252407,	-- Riverbud [Rank 3]
+								},
+							},
+						},
 						{	-- Cultural Signifcance [Herb -- Sea Stalk II]
 							["questID"] = 51365,	-- Cultural Signifcance
 							["qg"] = 136096,	-- Declan Senal
@@ -108,6 +125,17 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "This drops from \"Siren's Pollen\" and can drop at any herbalism level.  You can only turn it in at Level 50 Kul Tiran Herbalism.",
 							-- NOTE!! Also grants credit for Horde Equivalent == 51447
+						},
+						{	-- Disgustingly Damp Flower [Herb]
+							["itemID"] = 159956,	-- Disgustingly Damp Flower
+							["questID"] = 48758,	-- Disgustingly Damp Flower
+							["requireSkill"] = 182,	-- Herbalism
+							["sourceQuests"] = {
+								51313,	-- Learn From the Best
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "This drops from \"Siren's Pollen\" and can drop at any herbalism level.  You can only turn it in at Level 150 Kul Tiran Herbalism.",
+							-- NOTE!! Also grants credit for Horde Equivalent == 51451
 						},
 						{	-- Don't Pick a Fight [Mine -- Monelite Seam II]
 							["questID"] = 48764, 	-- Don't Pick a Fight
@@ -138,6 +166,40 @@ _.Zones =
 							["g"] = {
 								{	-- Riverbud [Rank 2]
 									["recipeID"] = 252406,	-- Riverbud [Rank 2]
+								},
+							},
+						},
+						{	-- Gathering Mementos [Herb -- Sea Stalk III]
+							["questID"] = 48769,	-- Gathering Memento
+							["qg"] = 136096,	-- Declan Senal
+							["requireSkill"] = 182,	-- Herbalism
+							["coords"] = {
+								{ 70.45, 05.13 },
+							},
+							["sourceQuests"] = {
+								51365,	-- Cultural Signifcance
+							},
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								{	-- Sea Stalk [Rank 3]
+									["recipeID"] = 252423,	-- Sea Stalk [Rank 3]
+								},
+							},
+						},
+						{	-- Ghost Busting [Herb -- Star Moss III]
+							["questID"] = 48757,	-- Ghost Busting
+							["qg"] = 136096,	-- Declan Senal
+							["requireSkill"] = 182,	-- Herbalism
+							["coords"] = {
+								{ 70.45, 05.13 },
+							},
+							["sourceQuests"] = {
+								48756,	-- Here in Spirit
+							},
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								{	-- Star Moss [Rank 3]
+									["recipeID"] = 252410,	-- Star Moss [Rank 3]
 								},
 							},
 						},
@@ -185,6 +247,22 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "Requires 50 Kul Tiran Herbalism.\nMake sure to bring |cFFFFD7007 Lane Snappers|r for the follow-up quest.",
 							-- NOTE!! Also grants credit for Horde Equivalent == 51446
+						},
+						{	-- Pollen Punching [Herb -- Siren's Pollen III]
+							["questID"] = 48755,	-- Pollen Punching
+							["qg"] = 136096,	-- Declan Senal
+							["requireSkill"] = 182,	-- Herbalism
+							["coords"] = {
+								{ 70.45, 05.13 },
+							},
+							["sourceQuests"] = {
+								48758,	-- Disgustingly Damp Flower
+							},
+							["g"] = {
+								{	-- Siren's Pollen [Rank 3]
+									["recipeID"] = 252420,	-- Siren's Pollen [Rank 3]
+								},
+							},
 						},
 						{	-- Ritualistic Preparations [Mine -- Storm Silver Deposit II]
 							["questID"] = 51568,	-- Ritualistic Preparations

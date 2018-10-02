@@ -6,6 +6,29 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			["groups"] = {
+				n(-17,	{	-- Quests [Finalized]
+					["groups"] = {
+						{	-- Ancient Pilgrimage Scrollcasing [Quest: The Great Sea Scrolls]
+							["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
+							["questID"] = 53476,	-- The Great Sea Scrolls
+							["description"] = "You receive this item when looting any treasure chest and has a random chance to spawn.",
+							["g"] = {
+								{	-- Bartered Vrykul Cowl
+									["itemID"] = 163863,	-- Bartered Vrykul Cowl
+								},
+								{	-- Bartered Vrykul Facemask
+									["itemID"] = 163864,	-- Bartered Vrykul Facemask
+								},
+								{	-- Bartered Vrykul Hood
+									["itemID"] = 163862,	-- Bartered Vrykul Hood
+								},
+								{	-- Bartered Vrykul Warhelm
+									["itemID"] = 163865,	-- Bartered Vrykul Warhelm
+								},
+							},
+						},
+					},
+				}),
 				n(-17,  {	-- Quests [Crieve]
 					a(q(50781, {	-- A Bridge Too Far
 						["qg"] = 136933,	-- Brother Pike

@@ -9,6 +9,59 @@ _.Zones =
 				{	-- Quests [Finalized]
 					["npcID"] = -17,	-- Quests [Finalized]
 					["g"] = {
+						{	-- Castaways and Cutouts [Alliance]
+							["achievementID"] = 12473,	-- A Sound Plan
+							["criteriaID"] = 7,	-- Castaways and Cutouts
+							["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
+							["description"] = "This chain ends with the final quest being |cFFFFD700\"Lovesick and Lost.\"|r",
+							["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
+							["g"] = {
+								{	-- Lovesick and Lost
+									["questID"] = 48505, 	-- Lovesick and Lost
+									["qg"] = 126158, -- Flynn Fairwind
+									["sourceQuests"] = {
+										48419, 	-- Lured and Allured
+									},
+									["coords"] = {
+										{ 84.81, 76.01 },
+										{ 90.01, 74.41 },
+									},
+									["g"] = {
+										{	-- Castaways and Cutouts
+											["achievementID"] = 12473,	-- A Sound Plan
+											["criteriaID"] = 7,	-- Castaways and Cutouts
+										},
+									},
+								},
+								{	-- Lured and Allured
+									["questID"] = 48419, 	-- Lured and Allured
+									["qg"] = 128377, -- Beachcomber Bob
+									["sourceQuests"] = {
+										47489, 	-- Stow and Go
+									},
+									["coords"] = {
+										{ 85.5, 83.5 },
+									},
+								},
+								{	-- Sampling the Goods
+									["questID"] = 53041, 	-- Sampling the Goods
+									["qg"] = 121239, -- Flynn Fairwind
+									["coords"] = {
+										{ 75.85, 49.08 },
+									},
+									["sourceQuests"] = {
+										50531,	-- Under Their Noses
+									},
+								},
+								{	-- Stow and Go
+									["questID"] = 47489, 	-- Stow and Go
+									["qg"] = 121239, -- Flynn Fairwind
+									["sourceQuests"] = {
+										53041, 	-- Sampling the Goods
+									},
+								},
+							},
+						},
 						{	-- The Ashvane Trading Company [Alliance] [LF]
 							["achievementID"] = 12473,	-- A Sound Plan
 							["criteriaID"] = 1,	-- The Ashvane Trading Company
@@ -16,16 +69,6 @@ _.Zones =
 							["description"] = "This chain starts in |cFFFFD700Boralus|r with the final quest being |cFFFFD700\"Stow and Go.\"|r",
 							["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
 							["g"] = {
-								{	-- Suspicious Shipments
-									["questID"] = 47486,	-- Suspicious Shipments
-									["qg"] = 122671,	-- Cagney
-									["sourceQuests"] = {
-										47485,	-- The Ashvane Trading Company
-									},
-									["coords"] = {
-										{ 76.88, 43.49 },
-									},
-								},
 								{	-- Labor Dispute
 									["questID"] = 47487,	-- Labor Dispute
 									["qg"] = 122671,	-- Cagney
@@ -34,16 +77,6 @@ _.Zones =
 									},
 									["coords"] = {
 										{ 76.88, 43.49 },
-									},
-								},
-								{	-- Small Haulers
-									["questID"] = 47488,	-- Small Haulers
-									["qg"] = 122672,	-- Olive
-									["sourceQuests"] = {
-										47485,	-- The Ashvane Trading Company
-									},
-									["coords"] = {
-										{ 76.82, 43.49 },
 									},
 								},
 								{	-- Message from the Management
@@ -85,6 +118,26 @@ _.Zones =
 										},
 									},
 								},
+								{	-- Small Haulers
+									["questID"] = 47488,	-- Small Haulers
+									["qg"] = 122672,	-- Olive
+									["sourceQuests"] = {
+										47485,	-- The Ashvane Trading Company
+									},
+									["coords"] = {
+										{ 76.82, 43.49 },
+									},
+								},
+								{	-- Suspicious Shipments
+									["questID"] = 47486,	-- Suspicious Shipments
+									["qg"] = 122671,	-- Cagney
+									["sourceQuests"] = {
+										47485,	-- The Ashvane Trading Company
+									},
+									["coords"] = {
+										{ 76.88, 43.49 },
+									},
+								},
 								{	-- Under Their Noses
 									["questID"] = 50531,	-- Under Their Noses
 									["qg"] = 121239,	-- Flynn Fairwind
@@ -106,22 +159,92 @@ _.Zones =
 								},
 							},
 						},
-						{	-- Ancient Pilgrimage Scrollcasing [Quest: The Great Sea Scrolls]
-							["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
-							["questID"] = 53476,	-- The Great Sea Scrolls
-							["description"] = "You receive this item when looting any treasure chest and has a random chance to spawn.",
+						{	-- Castaway Point [Area]
+							["npcID"] = -90005,	-- Castaway Point
+							["icon"] = "Interface\\Icons\\inv_tiragardesound",
+							--["races"] = ALLIANCE_ONLY,	-- Can't do this because Horde quest here too.  Need to mark below
 							["g"] = {
-								{	-- Bartered Vrykul Cowl
-									["itemID"] = 163863,	-- Bartered Vrykul Cowl
+								{	-- Blood in the Tides
+									["questID"] = 48421, 	-- Blood in the Tides
+									["qg"] = 125342, -- Captain Keelson
+									["sourceQuests"] = {
+										47489, 	-- Stow and Go
+									},
+									["coords"] = {
+										{ 85.61, 76.61 },
+									},
+									["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
+									-- NOTE!! Also grants credit for Horde Equivalent == 53439
+									["g"] = {
+										{	-- Navigator's Sandals
+											["itemID"] = 155024,	-- Navigator's Sandals
+										},
+										{	-- Freebooter Boots
+											["itemID"] = 155026,	-- Freebooter Boots
+										},
+										{	-- Outrigger Boots
+											["itemID"] = 155025,	-- Outrigger Boots
+										},
+										{	-- Sea Raider's Sabatons
+											["itemID"] = 155023,	-- Sea Raider's Sabatons
+										},
+										{	-- Keelson's Bloody Drape
+											["itemID"] = 155086,	-- Keelson's Bloody Drape
+										},
+									},
 								},
-								{	-- Bartered Vrykul Facemask
-									["itemID"] = 163864,	-- Bartered Vrykul Facemask
+								{	-- Glimmering Seawood
+									["objectID"] = 277373,	-- Glimmering Seaweed [Object]
+									["allianceQuestID"] = 49181,	-- Glimmering Locket
+									["sourceQuests"] = {
+										49178,	-- My Favorite Things
+									},
+									["coords"] = {
+										{ 85.48, 80.78 },
+									},
 								},
-								{	-- Bartered Vrykul Hood
-									["itemID"] = 163862,	-- Bartered Vrykul Hood
+								{	-- Local Flavor [Opt]
+									["questID"] = 49230, 	-- Local Flavor
+									["qg"] = 128228, -- Hungry Sam
+									["coords"] = {
+										{ 85.4, 80.7 },
+									},
+									["sourceQuests"] = {
+										49218,	-- The Castaways
+									},
+									["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
 								},
-								{	-- Bartered Vrykul Warhelm
-									["itemID"] = 163865,	-- Bartered Vrykul Warhelm
+								{	-- My Favorite Things [Opt]
+									["questID"] = 49178, 	-- My Favorite Things
+									["qg"] = 128229, -- Stabby Jane
+									["coords"] = {
+										{ 85.4, 80.8 },
+									},
+									["sourceQuests"] = { 
+										49218,	-- The Castaways
+									},
+									["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
+								},
+								{	-- Silencing the Sisters [Opt]
+									["questID"] = 49226, 	-- Silencing the Sisters
+									["qg"] = 128229, -- Stabby Jane
+									["coords"] = {
+										{ 85.4, 80.8 },
+									},
+									["sourceQuests"] = { 
+										49218,	-- The Castaways
+									},
+									["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
+								},
+								{	-- The Castaways [BC]
+									["questID"] = 49218,	-- The Castaways
+									["qg"] = 128377, -- Beachcomber Bob
+									-- ["sourceQuests"] = { 47189 },	-- A Nation Divided		Note!! Not marking a SourceQuest others it routes all the way up to Heart of Azeroth the entire time.
+									["isBreadcrumb"] = true,
+									["coords"] = {
+										{ 85.5, 83.5 },
+									},
+									["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
 								},
 							},
 						},
@@ -140,6 +263,10 @@ _.Zones =
 							crit(7),		-- Castaways and Cutouts
 						})),
 						--]]
+						a(q(48516, {	-- Toxic Community [Alliance Only]
+							["qg"] = 126511, -- Skinner MacGuff
+							["sourceQuests"] = { 48505 },	-- Lovesick and Lost [Alliance Only]
+						})),
 						--------------------------------------
 						-- Hatherford
 						--------------------------------------
@@ -282,111 +409,6 @@ _.Zones =
 							["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
 							["isBreadcrumb"] = true,
 							-- Not required for "A Sound Plan."
-						})),
-						a(q(53041, {	-- Sampling the Goods
-							["qg"] = 121239, -- Flynn Fairwind
-							["sourceQuests"] = { 50531 },	-- Under Their Noses
-						})),
-						a(q(47489, {	-- Stow and Go
-							["qg"] = 121239, -- Flynn Fairwind
-							["sourceQuests"] = { 53041 },	-- Sampling the Goods
-							["isBreadcrumb"] = true,
-						})),
-						
-						--------------------------------------
-						-- Castaway Point
-						--------------------------------------
-						-- crit(7),		-- Castaways and Cutouts
-						a(q(48421, {	-- Blood in the Tides [Alliance]
-							["qg"] = 125342, -- Captain Keelson
-							["sourceQuests"] = { 47489 },	-- Stow and Go
-							["groups"] = {
-								i(155024),	-- Navigator's Sandals
-								i(155026),	-- Freebooter Boots
-								i(155025),	-- Outrigger Boots
-								i(155023),	-- Sea Raider's Sabatons
-								i(155086),	-- Keelson's Bloody Drape
-							},
-							-- Not required for "A Sound Plan."
-						})),
-						h(q(53439, {	-- Blood in the Tides [Horde]
-							["qg"] = 143777, -- Tall Hasani
-							-- ["sourceQuests"] = { },	-- ???
-							["groups"] = {
-								i(155024),	-- Navigator's Sandals
-								i(155026),	-- Freebooter Boots
-								i(155025),	-- Outrigger Boots
-								i(155023),	-- Sea Raider's Sabatons
-								i(155086),	-- Keelson's Bloody Drape
-							},
-						})),
-						o(277373, {		-- Glimmering Seaweed [Object]
-							["coord"] = { 85.48, 80.78 },
-							["groups"] = {
-								a(q(49181, {	-- Glimmering Locket [Alliance]
-									["sourceQuests"] = { 49178 },	-- My Favorite Things [Alliance]
-								})),
-								h(q(53444, {	-- Glimmering Locket [Horde]
-									["sourceQuests"] = { 53443 },	-- My Favorite Things [Horde]
-								})),
-							},
-							-- Not required for "A Sound Plan."
-						}),
-						a(q(49230, {	-- Local Flavor [Alliance]
-							["qg"] = 128228, -- Hungry Sam
-							["coord"] = { 85.4, 80.7 },
-							["sourceQuests"] = { 49218 },	-- The Castaways
-							-- Not required for "A Sound Plan."
-						})),
-						h(q(53446, {	-- Local Flavor [Horde]
-							["qg"] = 128228, -- Hungry Sam
-							["sourceQuests"] = { 53442 },	-- The Castaways
-						})),
-						a(q(48505, {	-- Lovesick and Lost [Alliance Only]
-							["qg"] = 126158, -- Flynn Fairwind
-							["sourceQuests"] = { 48419 },	-- Lured and Allured [Alliance Only]
-							-- CRIEVE NOTE: This triggered sz(12473, 7) -- A Sound Plan: Castaways and Cutouts for me.
-						})),
-						a(q(48419, {	-- Lured and Allured [Alliance Only]
-							["qg"] = 128377, -- Beachcomber Bob
-							["sourceQuests"] = { 47489 },	-- Stow and Go
-							["coord"] = { 85.5, 83.5 },
-							-- Not required for "A Sound Plan."
-						})),
-						a(q(49178, {	-- My Favorite Things [Alliance]
-							["qg"] = 128229, -- Stabby Jane
-							["coord"] = { 85.4, 80.8 },
-							["sourceQuests"] = { 49218 },	-- The Castaways
-							-- Not required for "A Sound Plan."
-						})),
-						h(q(53443, {	-- My Favorite Things [Horde]
-							["qg"] = 128229, -- Stabby Jane
-							["sourceQuests"] = { 53442 },	-- The Castaways
-						})),
-						a(q(49226, {	-- Silencing the Sisters [Alliance]
-							["qg"] = 128229, -- Stabby Jane
-							["coord"] = { 85.4, 80.8 },
-							["sourceQuests"] = { 49218 },	-- The Castaways
-							-- Not required for "A Sound Plan."
-						})),
-						h(q(53445, {	-- Silencing the Sisters [Horde]
-							["qg"] = 128229, -- Stabby Jane
-							["sourceQuests"] = { 53442 },	-- The Castaways
-						})),
-						a(q(49218, {	-- The Castaways [Alliance]
-							["qg"] = 128377, -- Beachcomber Bob
-							["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
-							["isBreadcrumb"] = true,	-- for Local Flavor, My Favorite Things, and Silencing the Sisters
-							["coord"] = { 85.5, 83.5 },
-							-- Not required for "A Sound Plan."
-						})),
-						h(q(53442, {	-- The Castaways [Horde]
-							["qg"] = 128377, -- Beachcomber Bob
-							-- ["sourceQuests"] = {  },	-- ??
-						})),
-						a(q(48516, {	-- Toxic Community [Alliance Only]
-							["qg"] = 126511, -- Skinner MacGuff
-							["sourceQuests"] = { 48505 },	-- Lovesick and Lost [Alliance Only]
 						})),
 						
 						--------------------------------------
@@ -686,21 +708,116 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests [H]
 					["groups"] = {
-						n(-90003, {	-- Waning Glacier
-							["groups"] = {
-								o(298849, {	-- Wanted Poster
-									["groups"] = {
-										q(53451),	-- WANTED: Raging Earthguard
-										q(53454),	-- WANTED: Quartermaster Ssylis
+						{	-- Castaway Point [Area]
+							["npcID"] = -90005,	-- Castaway Point
+							["icon"] = "Interface\\Icons\\inv_tiragardesound",
+							--["races"] = HORDE_ONLY,	-- Can't do this because Alliance quest here too.  Need to mark below
+							["g"] = {
+								{	-- Blood in the Tides
+									["questID"] = 53439, 	-- Blood in the Tides
+									["qg"] = 143777,	-- Tall Hasani
+									["coords"] = {
+										{ 85.21, 80.61 },
 									},
-									["coord"] = {
-										39.75, 17.89
+									["races"] = HORDE_ONLY,	-- This hides it so only Horde can see it without marking Quest Rewards as such
+									-- NOTE!! Also grants credit for Alliance Equivalent == 48421
+									["g"] = {
+										{	-- Navigator's Sandals
+											["itemID"] = 155024,	-- Navigator's Sandals
+										},
+										{	-- Freebooter Boots
+											["itemID"] = 155026,	-- Freebooter Boots
+										},
+										{	-- Outrigger Boots
+											["itemID"] = 155025,	-- Outrigger Boots
+										},
+										{	-- Sea Raider's Sabatons
+											["itemID"] = 155023,	-- Sea Raider's Sabatons
+										},
+										{	-- Keelson's Bloody Drape
+											["itemID"] = 155086,	-- Keelson's Bloody Drape
+										},
 									},
-									["races"] = HORDE_ONLY,
-								}),
+								},	
+								{	-- Glimmering Seawood
+									["objectID"] = 277373,	-- Glimmering Seaweed [Object]
+									["hordeQuestID"] = 53444,	-- Glimmering Locket	Note!! Use this because we have alliance above and Coords and objectID are exact same
+									["sourceQuests"] = {
+										53443,	-- My Favorite Things
+									},
+									["coords"] = {
+										{ 85.48, 80.78 },
+									},
+								},
+								{	-- Local Flavor [Opt]
+									["questID"] = 53446, 	-- Local Flavor
+									["qg"] = 128228,	-- Hungry Sam
+									["coords"] = {
+										{ 85.4, 80.7 },
+									},
+									["sourceQuests"] = {
+										53442,	-- The Castaways
+									},
+									-- NOTE!! Also grants credit for Alliance Equivalent == 49230
+								},
+								{	-- My Favorite Things [Opt]
+									["questID"] = 53443, 	-- My Favorite Things
+									["qg"] = 128229, -- Stabby Jane
+									["coords"] = {
+										{ 85.4, 80.8 },
+									},
+									["sourceQuests"] = { 
+										53442,	-- The Castaways
+									},
+									["races"] = HORDE_ONLY,	-- This hides it so only Horde can see it without marking Quest Rewards as such
+									-- NOTE!! Also grants credit for Alliance Equivalent == 49178
+								},
+								{	-- Silencing the Sisters [Opt]
+									["questID"] = 53445, 	-- Silencing the Sisters
+									["qg"] = 128229, -- Stabby Jane
+									["coords"] = {
+										{ 85.4, 80.8 },
+									},
+									["sourceQuests"] = { 
+										53442,	-- The Castaways
+									},
+									["races"] = HORDE_ONLY,	-- This hides it so only Horde can see it without marking Quest Rewards as such
+									-- NOTE!! Also grants credit for Alliance Equivalent == 49226
+								},
+								{	-- The Castaways [BC]
+									["questID"] = 53442,	-- The Castaways
+									["qg"] = 128377, -- Beachcomber Bob
+									["isBreadcrumb"] = true,
+									["coords"] = {
+										{ 85.5, 83.5 },
+									},
+									["races"] = HORDE_ONLY,	-- This hides it so only Horde can see it without marking Quest Rewards as such
+									-- NOTE!! Also grants credit for Alliance Equivalent == 49218
+								},
 							},
-							["icon"] = "Interface\\Icons\\inv_tourofdutytiragardesound",
-						}),
+						},
+						{	-- Waning Glacier
+							["npcID"] = -90003, 	-- Waning Glacier
+							["icon"] = "Interface\\Icons\\inv_tiragardesound",
+							["races"] = HORDE_ONLY,	-- This hides it so only Horde can see it without marking Quest Rewards as such
+							["g"] = {
+								{	-- Wanted Poster
+									["objectID"] = 298849, 	-- Wanted Poster
+									["g"] = {
+										{	-- WANTED: Raging Earthguard
+											["questID"] = 53451,	-- WANTED: Raging Earthguard
+										},
+										{	-- WANTED: Quartermaster Ssylis
+											["questID"] = 53454,	-- WANTED: Quartermaster Ssylis
+										},
+									},
+									["coords"] = {
+										{ 39.75, 17.89 },
+									},
+								},
+							},
+						},
+						
 					},
 				}),
 			},

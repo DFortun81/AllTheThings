@@ -1681,6 +1681,7 @@ AllTheThings.Locales.enUS = {
 		[-90002] = C_Map.GetAreaInfo(9655),							-- Krazzlefrazz Outpost
 		[-90003] = select(1,GetAchievementCriteriaInfo(12556,11)),	-- Waning Glacier
 		[-90004] = "Anyport",										-- Currently no localization calls
+		[-90005] = C_Map.GetAreaInfo(9305),							-- Castaway Point
 		 
 		 
 		 
