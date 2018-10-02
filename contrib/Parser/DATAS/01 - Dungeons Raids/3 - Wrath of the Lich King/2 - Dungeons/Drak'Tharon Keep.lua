@@ -31,19 +31,27 @@ _.Instances =
 					---]]
 					n(-17, {	-- Quests 	
 						q(30120,{ 	-- Cleansing Drak'Tharon
-							i(40755), 	-- Enticing Sabatons
-							i(40757),	-- Shackles of Dark Whispers
-							i(40756), 	-- Shoulders of the Seducer
-							i(40758), 	-- Shroud of Temptation
+							["groups"] = {
+								i(40755), 	-- Enticing Sabatons
+								i(40757),	-- Shackles of Dark Whispers
+								i(40756), 	-- Shoulders of the Seducer
+								i(40758), 	-- Shroud of Temptation
+							},
+							["qg"] = 58149,	-- Image of Drakuru
 						}),
 						q(13129,{ 	-- Head Games
-							i(44368), 	-- Accused Wristguards
-							i(44369),	-- Disavowed Bracers
-							i(44366), 	-- Shameful Cuffs
-							i(44367), 	-- Scorned Bands
+							["groups"]  {
+								i(44368), 	-- Accused Wristguards
+								i(44369),	-- Disavowed Bracers
+								i(44366), 	-- Shameful Cuffs
+								i(44367), 	-- Scorned Bands
+							},
+							["qg"] = 26664,	-- Kurzel
 						}),
-						q(12037),	-- Search and Rescue, No actual awards.
-						q(29828),	-- What the Scourge Dred, No actual awards.
+						q(12037),	-- Search and Rescue
+						q(29828, {	-- What the Scourge Dred
+							["qg"] = 26664,	-- Kurzel
+						}),
 					}),
 					d(  1, {	-- Normal
 						n(0, {		-- Zone Drop

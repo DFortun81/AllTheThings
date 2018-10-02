@@ -494,7 +494,6 @@ _.Zones =
 						i(41122, { -- Plans: Reinforced Cobalt Chestpiece
 							["crs"] = {
 								28123, -- Venture Co. Excavator
-								28124, -- Venture Co. Ruffian
 							},
 						}),
 					},

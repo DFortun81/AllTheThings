@@ -487,15 +487,15 @@ _.Zones =
 								["qg"] = 26604,	-- Mack Fearsen
 								["sourceQuests"] = {12484},
 							}),
-							qdg(q(12037, {	--  Search and Rescue
-								["qg"] = 26604,	-- Mack Fearsen
-								["sourceQuests"] = {12029},
-							})),
 							q(12038, {	--  Seared Scourge
 								["qg"] = 26604,	-- Mack Fearsen
 								["sourceQuests"] = {12029},
 								["isDaily"] = true,
 							}),
+							qdg(q(12037, {	--  Search and Rescue
+								["qg"] = 26604,	-- Mack Fearsen
+								["sourceQuests"] = {12029},
+							})),
 							qdg(q(12238, {	--  Cleansing Drak'Tharon
 								["qg"] = 26787,	-- Image of Drakuru
 								["sourceQuests"] = {12068},
@@ -555,10 +555,12 @@ _.Zones =
 								["groups"] = {
 									q(11986),	--  The Damaged Journal [A]
 								},
+								["races"] = ALLIANCE_ONLY,
 								["model"] = "World\\Goober\\g_booktraplightgood.mdx",
 							}),
 							q(11988, {	--  The Runic Keystone [A]
 								["qg"] = 26361,	-- Torthen Deepdig
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11986},
 							}),
 							q(11993, {	-- The Runic Prophecies [A]
@@ -569,16 +571,18 @@ _.Zones =
 									i(39075),	-- Waywalker's Girdle
 								},
 								["qg"] = 26361,	-- Torthen Deepdig
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11988},
 							}),
 						}),
 						sz(1266, 9, {	--Venture Bay
 							q(12443, {	--  Seeking Solvent [A]
 								["qg"] = 27495,	-- Barblefink
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(12446, {	--  Always Seeking Solvent
 								["qg"] = 27495,	-- Barblefink
-								["isDaily"] = true,
+								["repeatable"] = true,
 								["sourceQuests"] = {12443},
 							}),
 						}),
@@ -587,15 +591,18 @@ _.Zones =
 						sz(1266, 11, {	--Amberpine Lodge
 							q(12794, {	--  The Magical Kingdom of Dalaran [A]
 								["qg"] = 29161, --	Magistrix Haelenai
+								["races"] = ALLIANCE_ONLY,
 							}),
 							o(188667, {	-- Amberseed
 								["groups"] = {
 									q(12225),	--  Mmm... Amberseeds! [A]
 								},
+								["races"] = ALLIANCE_ONLY,
 								["model"] = "World\\Kalimdor\\Mulgore\\Passivedoodads\\Pinecone\\Pinecone.mdx",
 							}),
 							q(12226, {	--  Just Passing Through [A]
 								["qg"] = 27277,	-- Master Woodsman Anderhol
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12225},
 							}),
 							q(12227, {	--  Doing Your Duty [A]
@@ -605,28 +612,35 @@ _.Zones =
 									i(38747),	-- Mildly Tarnished Ring
 								},
 								["qg"] = 27277,	-- Master Woodsman Anderhol
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12226},
 							}),
 							q(12212, {	--  Replenishing the Storehouse [A]
 								["qg"] = 27277,	-- Master Woodsman Anderhol
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(12216, {	--  Take Their Rear! [A]
 								["qg"] = 27277,	-- Master Woodsman Anderhol
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12212},
 							}),
 							q(12215, {	--  Them or Us! [A]
 								["qg"] = 27277,	-- Master Woodsman Anderhol
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(12217, {	--  Eagle Eyes [A]
 								["qg"] = 27277,	-- Master Woodsman Anderhol
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12215},
 							}),
 							q(12222, {	--  Secrets of the Flamebinders [A]
 								["qg"] = 27391,	-- Woodsman Drake
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12294},
 							}),
 							q(12223, {	--  Thinning the Ranks [A]
 								["qg"] = 27391,	-- Woodsman Drake
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12294},
 							}),
 							q(12255, {	-- The Thane of Voldrune [A]
@@ -638,14 +652,17 @@ _.Zones =
 									i(38749),	-- Thane Reaper's Signet
 								},
 								["qg"] = 27391,	-- Woodsman Drake
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12222,12223},
 							}),
 							q(12109, {	--  Report to Gryan Stoutmantle... Again [A]
 								["qg"] = 26875,	-- Lieutenant Dumont
+								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
 							}),
 							q(12210, {	--  Troll Season! [A]
 								["qg"] = 26875,	-- Lieutenant Dumont
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12212},
 								["isBreadcrumb"] = true,
 							}),
@@ -657,10 +674,12 @@ _.Zones =
 						sz(1266, 14, {	--Westfall Brigade Encampment
 							q(12414, {	--  Mounting Up [A]
 								["qg"] = 26377,	-- Squire Percy
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(12770, {	--  Reallocating Resources [A]
 								-- NOTE: This quest is mutually exclusive with 12789 (Into the Breach) from Dragonblight
 								["qg"] = 26212,	-- Captain Gryan Stoutmantle
+								["races"] = ALLIANCE_ONLY,
 							}),
 						}),
 						-- Need Header for "Forest's Edge Post"
@@ -673,11 +692,13 @@ _.Zones =
 										i(39098),	-- Rusty Cave Stompers
 									},
 									["qg"] = 27546,	-- Silverbrook Hunter
+								["races"] = ALLIANCE_ONLY,
 								}),
 							}),
 						-- Need Header for "Prospector's Point"
 							q(12154, {	--  Blackout [A]
 								["qg"] = 26883,	-- Raegar Breakbrow
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12138},
 							}),
 						-- Need Header for "Redwood Trading Post"
@@ -703,6 +724,7 @@ _.Zones =
 									i(39079),	-- Bracers of the Chaperon
 								},
 								["qg"] = 26588,	-- Emily
+								["races"] = ALLIANCE_ONLY,
 							}),
 						-- Need Header for "Harkor's Camp"
 							q(12113, {	--  Nice to Meat You
@@ -895,11 +917,15 @@ _.Zones =
 								i(38359),	-- Goblin Repetition Reducer
 							}),
 						},
+						["coord"] = { 13.8, 86.4 },
 						["description"] = "Only available while your faction controls the area. If no NPCs are available, ground your mount and flag for PVP. They will respawn once the control % reaches 100%. Each item costs 1 Mark of Honor. Venture Coins no longer exist in the game."
 					})),
 					nh(26868, {	-- Provisioner Lorkran <General Goods>
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						["groups"] = {
+							i(21219),	-- Recipe: Sagefish Delight
+							i(21099),	-- Recipe: Smoked Sagefish
+						},
+						["coord"] = { 22.6, 66.0 },
 					}),
 					h(n(27730, {	-- Purkom <Venture Coin Vendor>
 						["groups"] = {
@@ -912,6 +938,7 @@ _.Zones =
 								i(38359),	-- Goblin Repetition Reducer
 							}),
 						},
+						["coord"] = { 13.8, 86.2 },
 						["description"] = "Only available while your faction controls the area. If no NPCs are available, ground your mount and flag for PVP. They will respawn once the control % reaches 100%. Each item costs 1 Mark of Honor. Venture Coins no longer exist in the game."
 					})),
 					desc(n(91632, {	-- Remington Brode <Traveling Lumberjack>
@@ -923,7 +950,6 @@ _.Zones =
 						i(41123, { -- Plans: Reinforced Cobalt Helm
 							["crs"] = {
 								26270, -- Iron Rune-Shaper
-								26268, -- Rune Reaver
 							},
 						}),
 					},
