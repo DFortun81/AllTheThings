@@ -18,6 +18,7 @@ _.Instances =
 					desc(n(39746), "Must be killed before you can fight Halion."),	-- General Zarithrian
 					d(3, {	-- 10-Player
 						cr(39863, e(1652, {	-- Halion
+							ach(4817),	-- The Twilight Destroyer (10 player)
 							i(53103),	-- Baltharus' Gift
 							i(53113),	-- Twilight Scale Shoulders
 							i(53115),	-- Abduction's Cover
@@ -34,6 +35,7 @@ _.Instances =
 					}),
 					d(5, {	-- 10-Player (Heroic)
 						cr(39863, e(1652, {	-- Halion
+							ach(4818),	-- Heroic: The Twilight Destroyer (10 player)
 							i(54557),	-- Baltharus' Gift
 							i(54566),	-- Twilight Scale Shoulders
 							i(54556),	-- Abduction's Cover
@@ -50,6 +52,7 @@ _.Instances =
 					}),
 					d(4, {	-- 25-Player
 						cr(39863, e(1652, {	-- Halion
+							ach(4815),	-- The Twilight Destroyer (25 player)
 							i(53132),	-- Penumbra Pendant
 							i(53489),	-- Cloak of Burning Dusk
 							i(53486),	-- Bracers of Fiery Night
@@ -70,6 +73,7 @@ _.Instances =
 					}),
 					d(6, {	-- 25-Player (Heroic)
 						cr(39863, e(1652, {	-- Halion
+							ach(4816),	-- Heroic: The Twilight Destroyer (25 player)
 							i(54581),	-- Penumbra Pendant
 							i(54583),	-- Cloak of Burning Dusk
 							i(54582),	-- Bracers of Fiery Night
@@ -94,7 +98,7 @@ _.Instances =
 				["lvl"] = 80,
 				["mapID"] = 200
 			}),
-		},					
+		},
 		["tierID"] = 3
 	},
 };
