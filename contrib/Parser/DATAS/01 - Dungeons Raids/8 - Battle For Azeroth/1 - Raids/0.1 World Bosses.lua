@@ -5,7 +5,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 	n(-7, {	-- World Bosses
 		["groups"] = {
 			ach(12587, {	-- Unbound Monstrosities
-				e(2199, {	-- Azurethos, The Winged Typhoon
+				e(2199, {	-- Azurethos, The Winged Typhoon [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
 						sz(12587, 6),	--  Azurethos Criteria
 						i(161356),	-- Feathered Galeforce Crest
@@ -26,7 +26,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isRaid"] = true,
 					["maps"] = { 895 },	-- Tiragarde Sound
 					["questID"] = 52997,
-					-- WQ ID: 52163
+					-- Note!! WQ ID: 52163
 				}),
 				e(2210, {	-- Dunegorger Kraulok [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
@@ -48,7 +48,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isRaid"] = true,
 					["maps"] = { 864 },	-- Vol'dun
 					["questID"] = 53000,
-					-- WQ ID 52196, -- Sandswept Bones
+					-- Note!! WQ ID:52196, -- Sandswept Bones
 				}),
 				e(2197, {	-- Hailstone Construct [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
@@ -70,9 +70,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 					["isRaid"] = true,
 					["maps"] = { 896 },	-- Drustvar
-					["questID"] = 52157,	-- A Chilling Ecnounter
+					["questID"] = 52999,
+					-- Note!! WQ ID: 52157,	-- A Chilling Ecnounter
 				}),
-				e(2141, {	-- Ji'arak
+				e(2141, {	-- Ji'arak [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
 						sz(12587, 4),	--  Ji'arak Criteria
 						i(161401),	-- Matriarch's Shadowveil
@@ -92,9 +93,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isRaid"] = true,
 					["maps"] = { 862 },	-- Zuldazar
 					["questID"] = 52998,
-					-- WQ ID 52169,	-- The Matriarch
+					-- Note!! WQ ID:52169,	-- The Matriarch
 				}),
-				e(2139, {	-- T'zane <Tehe Soul Terror> [QID]
+				e(2139, {	-- T'zane <Tehe Soul Terror>
 					["groups"] =  bubbleDown({["modID"] = 3}, {
 						sz(12587, 3),	--  Tzane Criteria
 						i(161396),	-- Petrified Mask of the Afterlife
@@ -134,9 +135,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isRaid"] = true,
 					["maps"] = { 942 },	-- Stormsong Valley
 					["questID"] = 52995,
-					-- WQ ID 52166, -- The Faceless Herald
+					-- Note!! WQ ID:52166, -- The Faceless Herald
 				}),
-				
 			}),
 			e(2213, {	-- Doom's Howl [Warfront] [QID]
 				["groups"] = bubbleDown({["modID"] = 3}, {
@@ -203,7 +203,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}, 
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
-				["questID"] = 52848,	-- The Lion's Roar
+				["questID"] = 53001,
+				-- Note!! WQ ID: 52848,	-- The Lion's Roar
 				["coord"] = {
 					35.55, 38.91,
 				},
