@@ -1721,7 +1721,7 @@ local function SearchForItemLink(field, link)
 											else
 												text = "   ";
 											end
-											text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID) .. ")") or "");
+											text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID or "???") .. ")") or "");
 											
 											-- Show all of the reasons why an appearance does not meet given criteria.
 											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
@@ -1756,7 +1756,7 @@ local function SearchForItemLink(field, link)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "");
+												text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
 												text = text	.. " |CFFFF0000(MISSING IN ATT - " .. otherSourceID .. ")|r/" .. GetCollectionIcon(otherSource.isCollected);
 												tinsert(listing, text);
