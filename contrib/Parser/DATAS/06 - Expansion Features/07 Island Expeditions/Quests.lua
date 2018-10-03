@@ -1,10 +1,8 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-
 -- TO:DO -- Break the file down in parts later. Lucetia
 -- Add icons to each Item Set header
-
 _.ExpansionFeatures =
 {
 	n(-3338, {	-- Island Expeditions
@@ -13,7 +11,8 @@ _.ExpansionFeatures =
 				["groups"] = {
 					{	-- Azeroth's Tear [Both]
 						["itemID"] = 163217,	-- Azeroth's Tear
-						["questID"] = 53112,	-- Azeroth's Tear
+						--["questID"] = 53112,	-- Azeroth's Tear
+						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
 						["groups"] = {
 							{
@@ -23,8 +22,10 @@ _.ExpansionFeatures =
 					},
 					{	-- Dented Coin [A]
 						["itemID"] = 163616,	-- Dented Coin
-						["questID"] = 53118,	-- Dented Coin
+						--["questID"] = 53118,	-- Dented Coin
+						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
+						["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							{
@@ -34,7 +35,8 @@ _.ExpansionFeatures =
 					},
 					{	-- Exotic Spices [A]
 						["itemID"] = 163614,	-- Exotic Spices
-						["questID"] = 53120,	-- Exotic Spices
+						--["questID"] = 53120,	-- Exotic Spices
+						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -45,7 +47,8 @@ _.ExpansionFeatures =
 					},
 					{	-- Golden Beetle [H]
 						["itemID"] = 163619,	-- Golden Beetle
-						["questID"] = 53114,	-- Golden Beetle
+						--["questID"] = 53114,	-- Golden Beetle
+						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -56,7 +59,8 @@ _.ExpansionFeatures =
 					},
 					{	-- Island Flotsam [H]
 						["itemID"] = 163620,	-- Island Flotsam
-						["questID"] = 53115,	-- Island Flotsam
+						--["questID"] = 53115,	-- Island Flotsam
+						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["description"] = "Must have unlocked Jana by doing the quest \"Pests\".",
@@ -68,7 +72,8 @@ _.ExpansionFeatures =
 					},
 					{	-- Lost Sea Scroll [A]
 						["itemID"] = 163615,	-- Lost Sea Scroll
-						["questID"] = 53119,	-- Lost Sea Scroll
+						--["questID"] = 53119,	-- Lost Sea Scroll
+						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -79,7 +84,8 @@ _.ExpansionFeatures =
 					},
 					{	-- Rusted Alliance Insignia [A]
 						["itemID"] = 163617,	-- Rusted Alliance Insignia
-						["questID"] = 53117,	-- Rusted Alliance Insignia
+						--["questID"] = 53117,	-- Rusted Alliance Insignia
+						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -90,7 +96,8 @@ _.ExpansionFeatures =
 					},
 					{	-- Rusted Horde Insignia [H]
 						["itemID"] = 163621,	-- Rusted Horde Insignia
-						["questID"] = 53116,	-- Rusted Horde Insignia
+						--["questID"] = 53116,	-- Rusted Horde Insignia
+						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -101,7 +108,8 @@ _.ExpansionFeatures =
 					},
 					{	-- Shimmering Shell [H]
 						["itemID"] = 163618,	-- Shimmering Shell
-						["questID"] = 53113,	-- Shimminering Shell
+						--["questID"] = 53113,	-- Shimminering Shell
+						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["groups"] = {
