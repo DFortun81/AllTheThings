@@ -40,7 +40,7 @@ _.Instances =
 							["qg"] = 58149,	-- Image of Drakuru
 						}),
 						q(13129,{ 	-- Head Games
-							["groups"]  {
+							["groups"] = {
 								i(44368), 	-- Accused Wristguards
 								i(44369),	-- Disavowed Bracers
 								i(44366), 	-- Shameful Cuffs
