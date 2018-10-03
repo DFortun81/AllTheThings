@@ -4502,14 +4502,41 @@ app.CreateMount = function(id, t)
 end
 
 -- Music Roll Lib
+(function()
+local completed = false;
+local frame = CreateFrame("FRAME", nil, app);
+frame:SetSize(1, 1);
+frame:Hide();
+frame.events = {};
+frame:SetScript("OnEvent", function(self, e, ...) (self.events[e] or tostringall)(...); end);
+frame:RegisterEvent("QUEST_LOG_UPDATE");
+frame.events.QUEST_LOG_UPDATE = function()
+	if IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
+		completed = true;
+		frame:UnregisterEvent("QUEST_LOG_UPDATE");
+	end
+end
 app.BaseMusicRoll = {
 	__index = function(t, key)
 		if key == "key" then
 			return "questID";
 		elseif key == "collectible" or key == "trackable" then
-			return true;
+			return completed;
 		elseif key == "collected" or key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
+			if app.GetDataMember("TrackMusicRollsAccountWide") then
+				if GetDataSubMember("CollectedMusicRolls", t.questID) then
+					return 1;
+				end
+			else
+				if GetTempDataSubMember("CollectedMusicRolls", t.questID) then
+					return 1;
+				end
+			end
+			if IsQuestFlaggedCompleted(t.questID) then
+				SetTempDataSubMember("CollectedMusicRolls", t.questID, 1);
+				SetDataSubMember("CollectedMusicRolls", t.questID, 1);
+				return 1;
+			end
 		elseif key == "f" then
 			return 108;
 		elseif key == "lvl" then
@@ -4525,7 +4552,7 @@ app.BaseMusicRoll = {
 			end
 		elseif key == "description" then
 			local description = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
-			if not (IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961)) then
+			if not completed then
 				description = description .. "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass quest in your garrison for this item to drop.";
 			end
 			return description;
@@ -4535,6 +4562,7 @@ app.BaseMusicRoll = {
 		end
 	end
 };
+end)();
 app.CreateMusicRoll = function(questID, t)
 	return createInstance(constructor(questID, t, "questID"), app.BaseMusicRoll);
 end
@@ -9808,6 +9836,8 @@ app.events.VARIABLES_LOADED = function()
 	
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedFactions", {});
+	GetDataMember("CollectedFollowers", {});
+	GetDataMember("CollectedMusicRolls", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
@@ -9832,11 +9862,20 @@ app.events.VARIABLES_LOADED = function()
 	
 	-- Cache your character's follower data.
 	local followers = GetDataMember("CollectedFollowersPerCharacter", {});
-	local myFollowers = GetTempDataMember("CollectedFollowers", factions[app.Me]);
+	local myFollowers = GetTempDataMember("CollectedFollowers", followers[app.Me]);
 	if not myFollowers then
 		myFollowers = {};
 		followers[app.Me] = myFollowers;
 		SetTempDataMember("CollectedFollowers", myFollowers);
+	end
+	
+	-- Cache your character's music roll data.
+	local musicRolls = GetDataMember("CollectedMusicRollsPerCharacter", {});
+	local myMusicRolls = GetTempDataMember("CollectedMusicRolls", musicRolls[app.Me]);
+	if not myMusicRolls then
+		myMusicRolls = {};
+		musicRolls[app.Me] = myMusicRolls;
+		SetTempDataMember("CollectedMusicRolls", myMusicRolls);
 	end
 	
 	-- Register for Dynamic Events and Assign Filters
@@ -9970,7 +10009,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("ShowItemString", false);
 	GetDataMember("ShowMapID", false);
 	GetDataMember("ShowModID", false);
-	GetDataMember("ShowMusicRollID", false);
 	GetDataMember("ShowObjectID", false);
 	GetDataMember("ShowQuestID", false);
 	GetDataMember("ShowSourceID", false);

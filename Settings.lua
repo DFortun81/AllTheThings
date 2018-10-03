@@ -775,7 +775,7 @@ local function createAccountFrame(parent)
 	addObject(elm,treatFollowersAsCollectible)
 	
 	-- Track Followers Account Wide
-	local factionsAccountWide = createCheckBox("Track Followers Account-Wide", child, function(self)
+	local followersAccountWide = createCheckBox("Track Followers Account-Wide", child, function(self)
 			app.SetDataMember("TrackFollowersAccountWide", self:GetChecked());
 			app:RefreshData();
 		end, 
@@ -787,10 +787,24 @@ local function createAccountFrame(parent)
 			GameTooltip:SetText ("Enable this setting if you want to treat Followers collected by any character on your account as Collected.\n\nIf you wish to treat only Followers known by your current character as Collected, turn this setting off.", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	factionsAccountWide:SetPoint("TOPLEFT",treatFollowersAsCollectible,0,-frameSpacer)
-	addObject(elm,factionsAccountWide)
+	followersAccountWide:SetPoint("TOPLEFT",treatFollowersAsCollectible,0,-frameSpacer)
+	addObject(elm,followersAccountWide)
 	
-	
+	-- Track Music Rolls Account Wide
+	local musicRollsAccountWide = createCheckBox("Track Music Rolls Account-Wide", child, function(self)
+			app.SetDataMember("TrackMusicRollsAccountWide", self:GetChecked());
+			app:RefreshData();
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("TrackMusicRollsAccountWide", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this setting if you want to treat Music Rolls collected by any character on your account as Collected.\n\nIf you wish to treat only Music Rolls known by your current character as Collected, turn this setting off.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	musicRollsAccountWide:SetPoint("TOPLEFT",followersAccountWide,0,-frameSpacer)
+	addObject(elm,musicRollsAccountWide)
 	
 	-- seasonal
 	local seasonal = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
