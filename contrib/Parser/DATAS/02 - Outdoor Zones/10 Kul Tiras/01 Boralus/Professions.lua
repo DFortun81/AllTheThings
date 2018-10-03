@@ -85,6 +85,17 @@ _.Zones =
 								},
 							},
 						},
+						{	-- An Unusual Mentor [Herb]
+							["questID"] = 51398,	-- An Unusual Mentor
+							["qg"] = 136096,	-- Declan Senal
+							["requireSkill"] = 182,	-- Herbalism
+							["coords"] = {
+								{ 70.45, 05.13 },
+							},
+							["lvl"] = 120,
+							["isBreadcrumb"] = true,
+							["races"] = ALLIANCE_ONLY,
+						},
 						{	-- Breaking the Food Chain [Herb -- Riverbud III]
 							["questID"] = 48754,	-- Breaking the Food Chain
 							["qg"] = 136096,	-- Declan Senal
@@ -169,6 +180,17 @@ _.Zones =
 								},
 							},
 						},
+						{	-- Enormous Anchor Pod [Herb]
+							["itemID"] = 160035,	-- Enormous Anchor Pod
+							["questID"] = 51360,	-- Enormous Anchor Pod
+							["requireSkill"] = 182,	-- Herbalism
+							["sourceQuests"] = {
+								51016,	-- Seeking More Knowledge
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "This drops from \"Anchor Weed\" and can drop at any herbalism level.  You can only turn it in at Level 150 Kul Tiran Herbalism.",
+							-- NOTE!! Also grants credit for Horde Equivalent == 51480
+						},
 						{	-- Gathering Mementos [Herb -- Sea Stalk III]
 							["questID"] = 48769,	-- Gathering Memento
 							["qg"] = 136096,	-- Declan Senal
@@ -247,6 +269,22 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "Requires 50 Kul Tiran Herbalism.\nMake sure to bring |cFFFFD7007 Lane Snappers|r for the follow-up quest.",
 							-- NOTE!! Also grants credit for Horde Equivalent == 51446
+						},
+						{	-- More Anchor Pods [Herb -- Anchor Weed III]
+							["questID"] = 51361,	-- More Anchor Pods
+							["qg"] = 136096,	-- Declan Senal
+							["requireSkill"] = 182,	-- Herbalism
+							["coords"] = {
+								{ 70.45, 05.13 },
+							},
+							["sourceQuests"] = {
+								51360,	-- Enormous Anchor Pod
+							},
+							["g"] = {
+								{	-- Anchor Weed [Rank 3]
+									["recipeID"] = 252426,	-- Anchor Weed [Rank 3]
+								},
+							},
 						},
 						{	-- Pollen Punching [Herb -- Siren's Pollen III]
 							["questID"] = 48755,	-- Pollen Punching
