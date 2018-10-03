@@ -8,6 +8,11 @@ _.Zones =
 			["groups"] = {
 				n(-4,   {	-- Achievement
 					["groups"] = {
+						{	-- Adventurer of Stormsong Valley
+							-- Note: Actual information is in rare file.  This just lets us alphabetize it properly instead of it going to the bottom.
+							["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
+							["collectible"] = false,	-- Can't be completed solely in this zone
+						},
 						ach(13051, {	-- Legends of the Tidesages
 							{
 								["criteriaID"] = 1,	-- Legends of the Tidesages - Part 1

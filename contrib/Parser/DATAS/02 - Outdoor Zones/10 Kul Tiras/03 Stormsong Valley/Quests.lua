@@ -12,6 +12,7 @@ _.Zones =
 							["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
 							["questID"] = 53476,	-- The Great Sea Scrolls
 							["description"] = "You receive this item when looting any treasure chest and has a random chance to spawn.",
+							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								{	-- Bartered Vrykul Cowl
 									["itemID"] = 163863,	-- Bartered Vrykul Cowl
