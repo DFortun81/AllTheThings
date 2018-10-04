@@ -53,19 +53,19 @@ _.Zones =
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
 							}),
-							q(50855, {	-- Old R'gal
-								["groups"] = {
-									i(160509, {	-- Echoes of Rezan
-										["crs"] = {
-											122639,	-- Old R'gal
-										},
-									}),
-								},
+							{	-- Old R'gal
+								["questID"] = 50855, 	-- Old R'gal
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
-							}),
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									{	-- Echoes of Rezan
+										["itemID"] = 160509, 	-- Echoes of Rezan
+									},
+								},
+							},
 							q(51816, {	-- Pterrible Ingredients
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
@@ -164,15 +164,19 @@ _.Zones =
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
 							}),
-							q(50957, {	-- Wrath of Rezan
-								["groups"] = {
-									i(160509),	-- Echoes of Rezan
-								},
+							{	-- Wrath of Rezan
+								["questID"] = 50957, 	-- Wrath of Rezan
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
-							}),
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									{	-- Echoes of Rezan
+										["itemID"] = 160509, 	-- Echoes of Rezan
+									},
+								},
+							},
 							q(52937, {	-- You've Never Seen Jammer Upset [Pet Battle]
 								["groups"] = {
 									i(163036),	-- Polished Pet Charm
