@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 	{	-- War Effort
 		["npcID"] = -10057,	-- War Effort
 		["g"] = {
-			{
+			{	-- Ready for War
 				["achievementID"] = 12510,	-- Ready for War
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 110,
