@@ -29,6 +29,21 @@ _.Zones =
 									},
 									["description"] = "This cache comes from any WQ and any emissary, but will be found in ATT under Zandalari Empire / Proudmore Admiralty.  Honorbound and 7th Legion pieces come strictly from their respective faction's emissaries",
 								}),
+								i(163878),	-- Honorbound Barrier
+								i(163870),	-- Honorbound Bonebreaker
+								i(163868),	-- Honorbound Dagger
+								i(163874),	-- Honorbound Decapitator
+								i(163876),	-- Honorbound Focus
+								i(163880),	-- Honorbound Gladius
+								i(163867),	-- Honorbound Longbow
+								i(163871),	-- Honorbound Pigsticker
+								i(163879),	-- Honorbound Portable Cannon
+								i(163875),	-- Honorbound Protectorate
+								i(163866),	-- Honorbound Skullcleaver
+								i(163869),	-- Honorbound Skullcrusher
+								i(163873),	-- Honorbound Wand
+								i(163872),	-- Honorbound War Staff
+								i(163877),	-- Honorbound Warglaive
 								i(163357),	-- Honorbound Artificer's Cloak
 								i(163368),	-- Honorbound Centurion's Long Cloak
 								i(163360),	-- Honorbound Outrider's Drape
