@@ -128,6 +128,17 @@ _.ExpansionFeatures =
 							{ 69.59, 26.93 },
 						},
 					},
+					{	-- Foothold: Nazmir
+						["questID"] = 51571,	-- Foothold: Nazmir
+						["qg"] = 144635,	--  Zandalar Campaign
+						["sourceQuests"] = {
+							51569,	-- The Zandalar Campaign
+						},
+						["lvl"] = 112, -- When you get the three choices.
+						["coords"] = {
+							{ 69.59, 26.93 },
+						},
+					},
 					{	-- The Ongoing Campaign
 						["questID"] = 51961,
 						["qg"] = 135612,	-- Halford Wyrmbane
@@ -136,10 +147,19 @@ _.ExpansionFeatures =
 						},
 						-- NOTE!! Source Quest is finishing one zone.  Add all at a later date.
 					},
+					{	-- The Final Foothold
+						["questID"] = 52443,
+						["qg"] = 135612,	-- Halford Wyrmbane
+						["coords"] = {
+							{ 69.48, 26.83 },
+						},
+						-- NOTE!! Source Quest is finishing two zones.  Add all at a later date.
+					},
 					{	-- Vol'dun Foothold
 						["achievementID"] = 12510,	-- Ready for War
 						["criteriaID"] = 2,	--  Vol'dun Foothold
 						["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
+						["lvl"] = 112,
 						["maps"] = {
 							864,	-- Vol'dun
 						},
@@ -306,6 +326,7 @@ _.ExpansionFeatures =
 						["achievementID"] = 12510,	-- Ready for War
 						["criteriaID"] = 3,	--  Zuldazar Foothold
 						["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
+						["lvl"] = 112,
 						["maps"] = {
 							862,	-- Zuldazar
 						},
@@ -469,6 +490,159 @@ _.ExpansionFeatures =
 									{	-- 7th Legionnaire's Breastplate
 										["itemID"] = 163663,	-- 7th Legionnaire's Breastplate
 										["modID"] = 25,
+									},
+								},
+							},
+						},
+					},
+					{	-- Nazmir Foothold
+						["achievementID"] = 12510,	-- Ready for War
+						["criteriaID"] = 1,	--  Nazmir Foothold
+						["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
+						["lvl"] = 112,
+						["maps"] = {
+							863,	-- Nazmir
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- Heart of Darkness
+								["questID"] = 51088,	-- Heart of Darkness
+								["qg"] = 144635,	--  Zandalar Campaign
+								["sourceQuests"] = {
+									51571,	-- Foothold: Nazmir
+								},
+								["coords"] = {
+									{ 69.59, 26.93 },
+								},
+							},
+							{	-- Dubious Offering
+								["questID"] = 51129,	-- Dubious Offering
+								["qg"] = 136432,	-- Brann Bronzebard
+								["sourceQuests"] = {
+									51088,	-- Heart of Darkness
+								},
+								["coords"] = {
+									{ 62.03, 41.53 },
+								},
+							},
+							{	-- Blood of Hir'eek
+								["questID"] = 51167,	-- Blood of Hir'eek
+								["qg"] = 136641,	-- Brann Bronzebard
+								["sourceQuests"] = {
+									51129,	-- Dubious Offering
+								},
+								["coords"] = {
+									{ 31.18, 46.77 },
+								},
+							},
+							{	-- Honoring the Fallen
+								["questID"] = 51150,	-- Honoring the Fallen
+								["qg"] = 136641,	-- Brann Bronzebard
+								["sourceQuests"] = {
+									51129,	-- Dubious Offering
+								},
+								["coords"] = {
+									{ 31.18, 46.77 },
+								},
+							},
+							{	-- Zealots of Zal'mar
+								["questID"] = 51168,	-- Zealots of Zal'mar
+								["qg"] = 136641,	-- Brann Bronzebard
+								["sourceQuests"] = {
+									51167,	-- Blood of Hir'eek
+									51150,	-- Honoring the Fallen
+								},
+								["coords"] = {
+									{ 31.18, 46.77 },
+								},
+							},
+							{	-- Flight from the Fall
+								["questID"] = 51169,	-- Flight from the Fall
+								["qg"] = 136641,	-- Brann Bronzebard
+								["sourceQuests"] = {
+									51168,	-- Zealots of Zal'mar
+								},
+								-- ["coords"] = { },	-- Note!! Not availablle, he moves with you.
+							},
+							{	-- Zul'Nazman
+								["questID"] = 51281,	-- Zul'Nazman
+								["qg"] = 136432,	-- Brann Bronzebard
+								["sourceQuests"] = {
+									51169,	-- Flight from the Fall
+								},
+								["coords"] = {
+									{ 62.03, 41.53 },
+								},
+							},
+							{	-- Nazmani Cultists
+								["questID"] = 51279,	-- Nazmani Cultists
+								["qg"] = 136675,	-- Brann Bronzebard
+								["sourceQuests"] = {
+									51281,	-- Zul'Nazman
+								},
+								["coords"] = {
+									{ 50.01, 50.83 },
+								},
+							},
+							{	-- Offerings to G'huun
+								["questID"] = 51280,	-- Offerings to G'huun
+								["qg"] = 136675,	-- Brann Bronzebard
+								["sourceQuests"] = {
+									51281,	-- Zul'Nazman
+								},
+								["coords"] = {
+									{ 50.01, 50.83 },
+								},
+							},
+							{	-- Captain Conrad
+								["questID"] = 51282,	-- Captain Conrad
+								["qg"] = 136675,	-- Brann Bronzebard
+								["sourceQuests"] = {
+									51279,	-- Nazmani Cultists
+									51280,	-- Offerings to G'huun
+								},
+								["coords"] = {
+									{ 45.71, 57.51 },
+								},
+							},
+							{	-- Lessons of the Damned
+								["questID"] = 51177,	-- Lessons of the Damned
+								["qg"] = 136568,	-- Captain Conrad
+								["sourceQuests"] = {
+									51282,	-- Captain Conrad
+								},
+								["coords"] = {
+									{ 45.01, 57.23 },
+								},
+							},
+							{	-- Champion: John J. Keeshan
+								["questID"] = 52013,	-- Champion: John J. Keeshan
+								["qg"] = 139609,	-- John J. Keeshan
+								["sourceQuests"] = {
+									51177,	-- Lessons of the Damned
+								},
+								["coords"] = {
+									{ 61.88, 41.37 },
+								},
+								["g"] = {
+									{	-- John J. Keeshan [Follower!!]
+										["followerID"] = 1069,	-- John J. Keeshan
+									},
+								},
+							},
+							{	-- Return to Boralus
+								["questID"] = 51967,	-- Return to Boralus
+								["qg"] = 136432,	-- Brann Bronzebard
+								["sourceQuests"] = {
+									52013,	-- Champion: John J. Keeshan
+								},
+								["coords"] = {
+									{ 62.03, 41.53 },
+								},
+								["g"] = {
+									{	--  Nazmir Foothold
+										["achievementID"] = 12510,	-- Ready for War
+										["criteriaID"] = 1,	--  Nazmir Foothold
 									},
 								},
 							},

@@ -191,6 +191,21 @@ _.Zones =
 							["description"] = "This drops from \"Anchor Weed\" and can drop at any herbalism level.  You can only turn it in at Level 150 Kul Tiran Herbalism.",
 							-- NOTE!! Also grants credit for Horde Equivalent == 51480
 						},
+						{	-- Fully Charged Lightning Pod
+							["itemID"] = 160117,	-- Fully Charged Lightning Pod
+							["questID"] = 51404,	-- What Happens Next
+							["requireSkill"] = 182,	-- Herbalism
+							["sourceQuests"] = {
+								53142,	-- Foul Harvest
+							},
+							["description"] = "When harvesting make sure to stand at max range.",
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								{	-- Akunda's Bite Rank 3
+									["recipeID"] = 252413,	-- Akunda's Bite Rank 3
+								},
+							},
+						},
 						{	-- Gathering Mementos [Herb -- Sea Stalk III]
 							["questID"] = 48769,	-- Gathering Memento
 							["qg"] = 136096,	-- Declan Senal
@@ -316,7 +331,7 @@ _.Zones =
 							-- NOTE!! Also grants credit for Horde Equivalent == 52014
 							["g"] = {
 								{	-- Storm Silver Deposit Rank 2
-									["recipeID"] = 253337	-- Storm Silver Deposit Rank 2
+									["recipeID"] = 253337,	-- Storm Silver Deposit Rank 2
 								},
 							},
 						},
@@ -332,6 +347,24 @@ _.Zones =
 							["g"] = {
 								{	-- Anchor Weed [Rank 2]
 									["recipeID"] = 252425,	-- Anchor Weed [Rank 2]
+								},
+							},
+						},
+						{	-- Three Sheets to the Wind [Mine -- Storm Silver Seam II]
+							["questID"] = 48770,	-- Three Sheets to the Wind
+							["qg"] = 136091,	-- Myra Cabot
+							["requireSkill"] = 186, -- Mining
+							["coords"] = {
+								{ 75.01, 07.61 },	-- Trainer Location
+								{ 75.25, 14.33 },	-- Harold Atkey
+								{ 75.51, 23.21 },	-- Franklin The Drunk
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 125 Kul'Tiran Mining\n75.25, 14.33 in Boralus is Harold Atkey Location\n75.51, 23.21 in Boralus is Franklin the Drunk Location\nWhen you visit Harold you want to buy \"Brennadam Apple Brand\".",
+							-- NOTE!! Also grants credit for Horde Equivalent == 52016
+							["g"] = {
+								{	-- Storm Silver Seam Rank 2
+									["recipeID"] = 253346,	-- Storm Silver Seam Rank 2
 								},
 							},
 						},
