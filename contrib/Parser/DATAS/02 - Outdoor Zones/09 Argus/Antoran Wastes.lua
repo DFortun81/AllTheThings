@@ -42,310 +42,417 @@ _.Zones =
 				}),
 				n(-228, {	-- Flight Paths
 					fp(1988, {	-- Hope's Landing, Antoran Wastes
+						["description"] = "Hope's Landing, Antoran Wastes",
 						["coord"] = { 73, 50.4 },
 					}),
 					--[[	Beacon only up with The Veiled Den is not, need to get fp # next time it's up
 					fp( , {	-- Light's Purchase
+						["description"] = "Light's Purchase",
 						["coord"] = { 72.6, 76 },
 					}),
 					--]]
 					fp(1993, {	-- The Veiled Den, Antoran Wastes
+						["description"] = "The Veiled Den, Antoran Wastes",
 						["coord"] = { 70.6, 25.4 },
 					}),
-					fp(1994),	-- Vindicaar, Antoran Wastes
+					fp(1994, {	-- Vindicaar, Antoran Wastes
+						["description"] = "Vindicaar, Antoran Wastes",
+					}),
 				}),
 				n(-25, {	-- Pet Battle
 					["groups"] = {
 						ach(12088, { -- Anomalous Animals of Argus
-							{
-								["achievementID"] = 12088,	-- Anomalous Animals of Argus
-								["criteriaID"] = 14, 		-- Bloat
+							["groups"] = {
+								{
+									["achievementID"] = 12088,	-- Anomalous Animals of Argus
+									["criteriaID"] = 14, 		-- Bloat
+									["coord"] = { 56.6, 54.2 },
+								},
+								{
+									["achievementID"] = 12088,	-- Anomalous Animals of Argus
+									["criteriaID"] = 15, 		-- Earseeker
+									["coord"] = { 56.1, 28.7 },
+								},
+								{
+									["achievementID"] = 12088,	-- Anomalous Animals of Argus
+									["criteriaID"] = 17, 		-- Minixis
+									["coord"] = { 76.7, 73.9 },
+								},
+								{
+									["achievementID"] = 12088,	-- Anomalous Animals of Argus
+									["criteriaID"] = 18, 		-- One-of-Many
+									["coord"] = { 59.8, 40.3 },
+								},
+								{
+									["achievementID"] = 12088,	-- Anomalous Animals of Argus
+									["criteriaID"] = 16, 		-- Pilfer
+									["coord"] = { 64.1, 66.0 },
+								},
+								{
+									["achievementID"] = 12088,	-- Anomalous Animals of Argus
+									["criteriaID"] = 13, 		-- Watcher
+									["coord"] = { 51.6, 41.4 },
+								},
 							},
-							{
-								["achievementID"] = 12088,	-- Anomalous Animals of Argus
-								["criteriaID"] = 15, 		-- Earseeker
-							},
-							{
-								["achievementID"] = 12088,	-- Anomalous Animals of Argus
-								["criteriaID"] = 17, 		-- Minixis
-							},
-							{
-								["achievementID"] = 12088,	-- Anomalous Animals of Argus
-								["criteriaID"] = 18, 		-- One-of-Many
-							},
-							{
-								["achievementID"] = 12088,	-- Anomalous Animals of Argus
-								["criteriaID"] = 16, 		-- Pilfer
-							},
-							{
-								["achievementID"] = 12088,	-- Anomalous Animals of Argus
-								["criteriaID"] = 13, 		-- Watcher
-							},
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12100, { -- Family Fighter
 							["groups"] = {
-								i(153040), -- Felclaw Marsuul
-								ach(12089, { -- Aquatic Assault
-									{
-										["achievementID"] = 12089,	-- Aquatic Assault
-										["criteriaID"] = 14, 		-- Bloat
-									},
-									{
-										["achievementID"] = 12089,	-- Aquatic Assault
-										["criteriaID"] = 15, 		-- Earseeker
-									},
-									{
-										["achievementID"] = 12089,	-- Aquatic Assault
-										["criteriaID"] = 17, 		-- Minixis
-									},
-									{
-										["achievementID"] = 12089,	-- Aquatic Assault
-										["criteriaID"] = 18, 		-- One-of-Many
-									},
-									{
-										["achievementID"] = 12089,	-- Aquatic Assault
-										["criteriaID"] = 16, 		-- Pilfer
-									},
-									{
-										["achievementID"] = 12089,	-- Aquatic Assault
-										["criteriaID"] = 13, 		-- Watcher
-									},
+								i(153040, { -- Felclaw Marsuul
+									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
-								ach(12091, { -- Beast Blitz				
-									{			
-										["achievementID"] = 12091,	-- Beast Blitz	
-										["criteriaID"] = 3, 		-- Baneglow
-									},			
-									{			
-										["achievementID"] = 12091,	-- Beast Blitz	
-										["criteriaID"] = 5, 		-- Deathscreech
-									},			
-									{			
-										["achievementID"] = 12091,	-- Beast Blitz	
-										["criteriaID"] = 2, 		-- Foulclaw
-									},			
-									{			
-										["achievementID"] = 12091,	-- Beast Blitz	
-										["criteriaID"] = 6, 		-- Gnasher
-									},			
-									{			
-										["achievementID"] = 12091,	-- Beast Blitz	
-										["criteriaID"] = 4, 		-- Retch
-									},			
-									{			
-										["achievementID"] = 12091,	-- Beast Blitz	
-										["criteriaID"] = 1, 		-- Ruinhoof
-									},			
+								ach(12089, { -- Aquatic Assault
+									["groups"]	= {
+										{
+											["achievementID"] = 12089,	-- Aquatic Assault
+											["criteriaID"] = 14, 		-- Bloat
+											["coord"] = { 56.6, 54.2 },
+										},
+										{
+											["achievementID"] = 12089,	-- Aquatic Assault
+											["criteriaID"] = 15, 		-- Earseeker
+											["coord"] = { 56.1, 28.7 },
+										},
+										{
+											["achievementID"] = 12089,	-- Aquatic Assault
+											["criteriaID"] = 17, 		-- Minixis
+											["coord"] = { 76.7, 73.9 },
+										},
+										{
+											["achievementID"] = 12089,	-- Aquatic Assault
+											["criteriaID"] = 18, 		-- One-of-Many
+											["coord"] = { 59.8, 40.3 },
+										},
+										{
+											["achievementID"] = 12089,	-- Aquatic Assault
+											["criteriaID"] = 16, 		-- Pilfer
+											["coord"] = { 64.1, 66.0 },
+										},
+										{
+											["achievementID"] = 12089,	-- Aquatic Assault
+											["criteriaID"] = 13, 		-- Watcher
+											["coord"] = { 51.6, 41.4 },
+										},
+									},
+									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+								}),
+								ach(12091, { -- Beast Blitz
+									["groups"] = {
+										{
+											["achievementID"] = 12091,	-- Aquatic Assault
+											["criteriaID"] = 14, 		-- Bloat
+											["coord"] = { 56.6, 54.2 },
+										},
+										{
+											["achievementID"] = 12091,	-- Aquatic Assault
+											["criteriaID"] = 15, 		-- Earseeker
+											["coord"] = { 56.1, 28.7 },
+										},
+										{
+											["achievementID"] = 12091,	-- Aquatic Assault
+											["criteriaID"] = 17, 		-- Minixis
+											["coord"] = { 76.7, 73.9 },
+										},
+										{
+											["achievementID"] = 12091,	-- Aquatic Assault
+											["criteriaID"] = 18, 		-- One-of-Many
+											["coord"] = { 59.8, 40.3 },
+										},
+										{
+											["achievementID"] = 12091,	-- Aquatic Assault
+											["criteriaID"] = 16, 		-- Pilfer
+											["coord"] = { 64.1, 66.0 },
+										},
+										{
+											["achievementID"] = 12091,	-- Aquatic Assault
+											["criteriaID"] = 13, 		-- Watcher
+											["coord"] = { 51.6, 41.4 },
+										},	
+									},
+									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12092, { -- Critical Critters				
-									{			
-										["achievementID"] = 12092,	-- Critical Critters	
-										["criteriaID"] = 3, 		-- Baneglow
-									},			
-									{			
-										["achievementID"] = 12092,	-- Critical Critters	
-										["criteriaID"] = 5, 		-- Deathscreech
-									},			
-									{			
-										["achievementID"] = 12092,	-- Critical Critters	
-										["criteriaID"] = 2, 		-- Foulclaw
-									},			
-									{			
-										["achievementID"] = 12092,	-- Critical Critters	
-										["criteriaID"] = 6, 		-- Gnasher
-									},			
-									{			
-										["achievementID"] = 12092,	-- Critical Critters	
-										["criteriaID"] = 4, 		-- Retch
-									},			
-									{			
-										["achievementID"] = 12092,	-- Critical Critters	
-										["criteriaID"] = 1, 		-- Ruinhoof
-									},			
+								ach(12092, { -- Critical Critters
+									["groups"] = {
+										{
+											["achievementID"] = 12092,	-- Aquatic Assault
+											["criteriaID"] = 14, 		-- Bloat
+											["coord"] = { 56.6, 54.2 },
+										},
+										{
+											["achievementID"] = 12092,	-- Aquatic Assault
+											["criteriaID"] = 15, 		-- Earseeker
+											["coord"] = { 56.1, 28.7 },
+										},
+										{
+											["achievementID"] = 12092,	-- Aquatic Assault
+											["criteriaID"] = 17, 		-- Minixis
+											["coord"] = { 76.7, 73.9 },
+										},
+										{
+											["achievementID"] = 12092,	-- Aquatic Assault
+											["criteriaID"] = 18, 		-- One-of-Many
+											["coord"] = { 59.8, 40.3 },
+										},
+										{
+											["achievementID"] = 12092,	-- Aquatic Assault
+											["criteriaID"] = 16, 		-- Pilfer
+											["coord"] = { 64.1, 66.0 },
+										},
+										{
+											["achievementID"] = 12092,	-- Aquatic Assault
+											["criteriaID"] = 13, 		-- Watcher
+											["coord"] = { 51.6, 41.4 },
+										},
+									},
+									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12093, { -- Draconic Destruction				
-									{			
-										["achievementID"] = 12093,	-- Draconic Destruction	
-										["criteriaID"] = 3, 		-- Baneglow
-									},			
-									{			
-										["achievementID"] = 12093,	-- Draconic Destruction	
-										["criteriaID"] = 5, 		-- Deathscreech
-									},			
-									{			
-										["achievementID"] = 12093,	-- Draconic Destruction	
-										["criteriaID"] = 2, 		-- Foulclaw
-									},			
-									{			
-										["achievementID"] = 12093,	-- Draconic Destruction	
-										["criteriaID"] = 6, 		-- Gnasher
-									},			
-									{			
-										["achievementID"] = 12093,	-- Draconic Destruction	
-										["criteriaID"] = 4, 		-- Retch
-									},			
-									{			
-										["achievementID"] = 12093,	-- Draconic Destruction	
-										["criteriaID"] = 1, 		-- Ruinhoof
-									},			
+								ach(12093, { -- Draconic Destruction
+									["groups"] = {
+										{
+											["achievementID"] = 12093,	-- Aquatic Assault
+											["criteriaID"] = 14, 		-- Bloat
+											["coord"] = { 56.6, 54.2 },
+										},
+										{
+											["achievementID"] = 12093,	-- Aquatic Assault
+											["criteriaID"] = 15, 		-- Earseeker
+											["coord"] = { 56.1, 28.7 },
+										},
+										{
+											["achievementID"] = 12093,	-- Aquatic Assault
+											["criteriaID"] = 17, 		-- Minixis
+											["coord"] = { 76.7, 73.9 },
+										},
+										{
+											["achievementID"] = 12093,	-- Aquatic Assault
+											["criteriaID"] = 18, 		-- One-of-Many
+											["coord"] = { 59.8, 40.3 },
+										},
+										{
+											["achievementID"] = 12093,	-- Aquatic Assault
+											["criteriaID"] = 16, 		-- Pilfer
+											["coord"] = { 64.1, 66.0 },
+										},
+										{
+											["achievementID"] = 12093,	-- Aquatic Assault
+											["criteriaID"] = 13, 		-- Watcher
+											["coord"] = { 51.6, 41.4 },
+										},
+									},
+									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12094, { -- Elemental Escalation				
-									{			
-										["achievementID"] = 12094,	-- Elemental Escalation	
-										["criteriaID"] = 3, 		-- Baneglow
-									},			
-									{			
-										["achievementID"] = 12094,	-- Elemental Escalation	
-										["criteriaID"] = 5, 		-- Deathscreech
-									},			
-									{			
-										["achievementID"] = 12094,	-- Elemental Escalation	
-										["criteriaID"] = 2, 		-- Foulclaw
-									},			
-									{			
-										["achievementID"] = 12094,	-- Elemental Escalation	
-										["criteriaID"] = 6, 		-- Gnasher
-									},			
-									{			
-										["achievementID"] = 12094,	-- Elemental Escalation	
-										["criteriaID"] = 4, 		-- Retch
-									},			
-									{			
-										["achievementID"] = 12094,	-- Elemental Escalation	
-										["criteriaID"] = 1, 		-- Ruinhoof
-									},			
+								ach(12094, { -- Elemental Escalation
+									["groups"] = {
+										{
+											["achievementID"] = 12094,	-- Aquatic Assault
+											["criteriaID"] = 14, 		-- Bloat
+											["coord"] = { 56.6, 54.2 },
+										},
+										{
+											["achievementID"] = 12094,	-- Aquatic Assault
+											["criteriaID"] = 15, 		-- Earseeker
+											["coord"] = { 56.1, 28.7 },
+										},
+										{
+											["achievementID"] = 12094,	-- Aquatic Assault
+											["criteriaID"] = 17, 		-- Minixis
+											["coord"] = { 76.7, 73.9 },
+										},
+										{
+											["achievementID"] = 12094,	-- Aquatic Assault
+											["criteriaID"] = 18, 		-- One-of-Many
+											["coord"] = { 59.8, 40.3 },
+										},
+										{
+											["achievementID"] = 12094,	-- Aquatic Assault
+											["criteriaID"] = 16, 		-- Pilfer
+											["coord"] = { 64.1, 66.0 },
+										},
+										{
+											["achievementID"] = 12094,	-- Aquatic Assault
+											["criteriaID"] = 13, 		-- Watcher
+											["coord"] = { 51.6, 41.4 },
+										},
+									},
+									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12095, { -- Fierce Fliers				
-									{			
-										["achievementID"] = 12095,	-- Fierce Fliers	
-										["criteriaID"] = 3, 		-- Baneglow
-									},			
-									{			
-										["achievementID"] = 12095,	-- Fierce Fliers	
-										["criteriaID"] = 5, 		-- Deathscreech
-									},			
-									{			
-										["achievementID"] = 12095,	-- Fierce Fliers	
-										["criteriaID"] = 2, 		-- Foulclaw
-									},			
-									{			
-										["achievementID"] = 12095,	-- Fierce Fliers	
-										["criteriaID"] = 6, 		-- Gnasher
-									},			
-									{			
-										["achievementID"] = 12095,	-- Fierce Fliers	
-										["criteriaID"] = 4, 		-- Retch
-									},			
-									{			
-										["achievementID"] = 12095,	-- Fierce Fliers	
-										["criteriaID"] = 1, 		-- Ruinhoof
-									},			
+								ach(12095, { -- Fierce Fliers
+									["groups"]	= {
+										{
+											["achievementID"] = 12095,	-- Aquatic Assault
+											["criteriaID"] = 14, 		-- Bloat
+											["coord"] = { 56.6, 54.2 },
+										},
+										{
+											["achievementID"] = 12095,	-- Aquatic Assault
+											["criteriaID"] = 15, 		-- Earseeker
+											["coord"] = { 56.1, 28.7 },
+										},
+										{
+											["achievementID"] = 12095,	-- Aquatic Assault
+											["criteriaID"] = 17, 		-- Minixis
+											["coord"] = { 76.7, 73.9 },
+										},
+										{
+											["achievementID"] = 12095,	-- Aquatic Assault
+											["criteriaID"] = 18, 		-- One-of-Many
+											["coord"] = { 59.8, 40.3 },
+										},
+										{
+											["achievementID"] = 12095,	-- Aquatic Assault
+											["criteriaID"] = 16, 		-- Pilfer
+											["coord"] = { 64.1, 66.0 },
+										},
+										{
+											["achievementID"] = 12095,	-- Aquatic Assault
+											["criteriaID"] = 13, 		-- Watcher
+											["coord"] = { 51.6, 41.4 },
+										},
+									},
+									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12096, { -- Humanoid Havoc				
-									{			
-										["achievementID"] = 12096,	-- Humanoid Havoc	
-										["criteriaID"] = 3, 		-- Baneglow
-									},			
-									{			
-										["achievementID"] = 12096,	-- Humanoid Havoc	
-										["criteriaID"] = 5, 		-- Deathscreech
-									},			
-									{			
-										["achievementID"] = 12096,	-- Humanoid Havoc	
-										["criteriaID"] = 2, 		-- Foulclaw
-									},			
-									{			
-										["achievementID"] = 12096,	-- Humanoid Havoc	
-										["criteriaID"] = 6, 		-- Gnasher
-									},			
-									{			
-										["achievementID"] = 12096,	-- Humanoid Havoc	
-										["criteriaID"] = 4, 		-- Retch
-									},			
-									{			
-										["achievementID"] = 12096,	-- Humanoid Havoc	
-										["criteriaID"] = 1, 		-- Ruinhoof
-									},			
+								ach(12096, { -- Humanoid Havoc
+									["groups"] = {
+										{
+											["achievementID"] = 12096,	-- Aquatic Assault
+											["criteriaID"] = 14, 		-- Bloat
+											["coord"] = { 56.6, 54.2 },
+										},
+										{
+											["achievementID"] = 12096,	-- Aquatic Assault
+											["criteriaID"] = 15, 		-- Earseeker
+											["coord"] = { 56.1, 28.7 },
+										},
+										{
+											["achievementID"] = 12096,	-- Aquatic Assault
+											["criteriaID"] = 17, 		-- Minixis
+											["coord"] = { 76.7, 73.9 },
+										},
+										{
+											["achievementID"] = 12096,	-- Aquatic Assault
+											["criteriaID"] = 18, 		-- One-of-Many
+											["coord"] = { 59.8, 40.3 },
+										},
+										{
+											["achievementID"] = 12096,	-- Aquatic Assault
+											["criteriaID"] = 16, 		-- Pilfer
+											["coord"] = { 64.1, 66.0 },
+										},
+										{
+											["achievementID"] = 12096,	-- Aquatic Assault
+											["criteriaID"] = 13, 		-- Watcher
+											["coord"] = { 51.6, 41.4 },
+										},
+									},
+									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12097, { -- Magical Mayhem				
-									{			
-										["achievementID"] = 12097,	-- Magical Mayhem	
-										["criteriaID"] = 3, 		-- Baneglow
-									},			
-									{			
-										["achievementID"] = 12097,	-- Magical Mayhem	
-										["criteriaID"] = 5, 		-- Deathscreech
-									},			
-									{			
-										["achievementID"] = 12097,	-- Magical Mayhem	
-										["criteriaID"] = 2, 		-- Foulclaw
-									},			
-									{			
-										["achievementID"] = 12097,	-- Magical Mayhem	
-										["criteriaID"] = 6, 		-- Gnasher
-									},			
-									{			
-										["achievementID"] = 12097,	-- Magical Mayhem	
-										["criteriaID"] = 4, 		-- Retch
-									},			
-									{			
-										["achievementID"] = 12097,	-- Magical Mayhem	
-										["criteriaID"] = 1, 		-- Ruinhoof
-									},			
+								ach(12097, { -- Magical Mayhem
+									["groups"] = {
+										{
+											["achievementID"] = 12097,	-- Aquatic Assault
+											["criteriaID"] = 14, 		-- Bloat
+											["coord"] = { 56.6, 54.2 },
+										},
+										{
+											["achievementID"] = 12097,	-- Aquatic Assault
+											["criteriaID"] = 15, 		-- Earseeker
+											["coord"] = { 56.1, 28.7 },
+										},
+										{
+											["achievementID"] = 12097,	-- Aquatic Assault
+											["criteriaID"] = 17, 		-- Minixis
+											["coord"] = { 76.7, 73.9 },
+										},
+										{
+											["achievementID"] = 12097,	-- Aquatic Assault
+											["criteriaID"] = 18, 		-- One-of-Many
+											["coord"] = { 59.8, 40.3 },
+										},
+										{
+											["achievementID"] = 12097,	-- Aquatic Assault
+											["criteriaID"] = 16, 		-- Pilfer
+											["coord"] = { 64.1, 66.0 },
+										},
+										{
+											["achievementID"] = 12097,	-- Aquatic Assault
+											["criteriaID"] = 13, 		-- Watcher
+											["coord"] = { 51.6, 41.4 },
+										},
+									},
+									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12098, { -- Mechanical Melee				
-									{			
-										["achievementID"] = 12098,	-- Mechanical Melee	
-										["criteriaID"] = 3, 		-- Baneglow
-									},			
-									{			
-										["achievementID"] = 12098,	-- Mechanical Melee	
-										["criteriaID"] = 5, 		-- Deathscreech
-									},			
-									{			
-										["achievementID"] = 12098,	-- Mechanical Melee	
-										["criteriaID"] = 2, 		-- Foulclaw
-									},			
-									{			
-										["achievementID"] = 12098,	-- Mechanical Melee	
-										["criteriaID"] = 6, 		-- Gnasher
-									},			
-									{			
-										["achievementID"] = 12098,	-- Mechanical Melee	
-										["criteriaID"] = 4, 		-- Retch
-									},			
-									{			
-										["achievementID"] = 12098,	-- Mechanical Melee	
-										["criteriaID"] = 1, 		-- Ruinhoof
-									},			
+								ach(12098, { -- Mechanical Melee
+									["groups"] = {
+										{
+											["achievementID"] = 12098,	-- Aquatic Assault
+											["criteriaID"] = 14, 		-- Bloat
+											["coord"] = { 56.6, 54.2 },
+										},
+										{
+											["achievementID"] = 12098,	-- Aquatic Assault
+											["criteriaID"] = 15, 		-- Earseeker
+											["coord"] = { 56.1, 28.7 },
+										},
+										{
+											["achievementID"] = 12098,	-- Aquatic Assault
+											["criteriaID"] = 17, 		-- Minixis
+											["coord"] = { 76.7, 73.9 },
+										},
+										{
+											["achievementID"] = 12098,	-- Aquatic Assault
+											["criteriaID"] = 18, 		-- One-of-Many
+											["coord"] = { 59.8, 40.3 },
+										},
+										{
+											["achievementID"] = 12098,	-- Aquatic Assault
+											["criteriaID"] = 16, 		-- Pilfer
+											["coord"] = { 64.1, 66.0 },
+										},
+										{
+											["achievementID"] = 12098,	-- Aquatic Assault
+											["criteriaID"] = 13, 		-- Watcher
+											["coord"] = { 51.6, 41.4 },
+										},	
+									},
+									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12099, { -- Unstoppable Undead				
-									{			
-										["achievementID"] = 12099,	-- Unstoppable Undead	
-										["criteriaID"] = 3, 		-- Baneglow
-									},			
-									{			
-										["achievementID"] = 12099,	-- Unstoppable Undead	
-										["criteriaID"] = 5, 		-- Deathscreech
-									},			
-									{			
-										["achievementID"] = 12099,	-- Unstoppable Undead	
-										["criteriaID"] = 2, 		-- Foulclaw
-									},			
-									{			
-										["achievementID"] = 12099,	-- Unstoppable Undead	
-										["criteriaID"] = 6, 		-- Gnasher
-									},			
-									{			
-										["achievementID"] = 12099,	-- Unstoppable Undead	
-										["criteriaID"] = 4, 		-- Retch
-									},			
-									{			
-										["achievementID"] = 12099,	-- Unstoppable Undead	
-										["criteriaID"] = 1, 		-- Ruinhoof
-									},			
+								ach(12099, { -- Unstoppable Undead
+									["groups"] = {
+										{
+											["achievementID"] = 12099,	-- Aquatic Assault
+											["criteriaID"] = 14, 		-- Bloat
+											["coord"] = { 56.6, 54.2 },
+										},
+										{
+											["achievementID"] = 12099,	-- Aquatic Assault
+											["criteriaID"] = 15, 		-- Earseeker
+											["coord"] = { 56.1, 28.7 },
+										},
+										{
+											["achievementID"] = 12099,	-- Aquatic Assault
+											["criteriaID"] = 17, 		-- Minixis
+											["coord"] = { 76.7, 73.9 },
+										},
+										{
+											["achievementID"] = 12099,	-- Aquatic Assault
+											["criteriaID"] = 18, 		-- One-of-Many
+											["coord"] = { 59.8, 40.3 },
+										},
+										{
+											["achievementID"] = 12099,	-- Aquatic Assault
+											["criteriaID"] = 16, 		-- Pilfer
+											["coord"] = { 64.1, 66.0 },
+										},
+										{
+											["achievementID"] = 12099,	-- Aquatic Assault
+											["criteriaID"] = 13, 		-- Watcher
+											["coord"] = { 51.6, 41.4 },
+										},	
+									},
+									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
 							},
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						p(2122), 	-- Antoran Bile Larva
 						p(2126), 	-- Antoran Bilescourge

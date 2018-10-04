@@ -332,11 +332,11 @@ _.Instances =
 									["classes"] = { 2 }
 								})),
 							}),
-							n(3886, {	-- Razorclaw the Butcher
+							un(43, n(3886, {	-- Razorclaw the Butcher
 								un(2, i(6226)),	-- Bloody Apron
 								i(1292),	-- Butcher's Cleaver	NOTE: Drops from Lord Walden now and is still obtainable
 								un(2, i(6633)),	-- Butcher's Slicer
-							}),
+							})),
 							un(43, n(14682, {	-- Sever
 								un(2, i(23173)),	-- Abomination Skin Leggings
 								un(2, i(23171)),	-- The Axe of Severing
