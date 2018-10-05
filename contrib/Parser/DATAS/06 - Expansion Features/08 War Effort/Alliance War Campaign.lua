@@ -648,6 +648,17 @@ _.ExpansionFeatures =
 							},
 						},
 					},
+					{	-- Uniting Kul Tiras
+						["questID"] = 52026,	-- Uniting Kul Tiras
+						["qg"] = 135612,	-- Halford Wyrmbane
+						["sourceQuests"] = {
+							52654,	-- The War Campaign
+						},
+						["lvl"] = 120,
+						-- NOTE!! Also grants credit for Horde Equivalent == 52451 and 51916
+						-- NOTE!! Also grants credit for Alliance Whistle Unlock == 51722
+						-- NOTE!! Also grants credit for Alliance Other Quest (Same Name) == 52450
+					},
 				},
 			},
 		},
