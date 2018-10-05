@@ -44,47 +44,35 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1538, { 	-- General Rajaxx
 				["groups"] = {
+					{	-- General	Note!! This is the Captain/Major and Colonel that spawn prior to fight
+						["npcID"] = -9955,	-- General
+						["icon"] = "Interface\\Icons\\achievement_pvp_h_12",
+						["crs"] = {
+							15390, 	-- Captain Xurrem
+							15391, 	-- Captain Qeez
+							15389, 	-- Captain Drenn
+							15392, 	-- Captain Tuubid
+							15386, 	-- Major Yeggeth
+							15385, 	-- Colonel Zarran
+						},
+						["g"] = {
+							{	-- Gavel of Qiraji Athority
+								["itemID"] = 21806,	-- Gavel of Qiraji Athority
+							},
+							{	-- Fury of the Forgotten Swarm
+								["itemID"] = 21809,	-- Fury of the Forgotten Swarm
+							},
+							{	-- Treads of the Wandering Nomad
+								["itemID"] = 21810,	-- Treads of the Wandering Nomad
+							},
+						},
+					},
 					i(21492),	-- Manslayer of the Qiraji
 					i(21496),	-- Bracers of Qiraji Command
 					i(21494),	-- Southwind's Grasp
 					i(21495),	-- Legplates of Qiraji Command
 					i(21497),	-- Boots of the Qiraji General
 					i(21493),	-- Boots of the Vanguard
-					n(15390, {	-- Captain Xurrem
-						dr(1, i(21806)),	-- Gavel of Qiraji Athority
-						dr(0.9, i(21809)),	-- Fury of the Forgotten Swarm
-						dr(1.1, i(21810)),	-- Treads of the Wandering Nomad
-					}),
-					n(15391, {	-- Captain Qeez
-						dr(1, i(21806)),	-- Gavel of Qiraji Athority
-						dr(0.9, i(21809)),	-- Fury of the Forgotten Swarm
-						dr(1.1, i(21810)),	-- Treads of the Wandering Nomad
-					}),
-					n(15389, {	-- Captain Drenn
-						dr(0.9, i(21806)),	-- Gavel of Qiraji Athority
-						dr(1.2, i(21809)),	-- Fury of the Forgotten Swarm
-						dr(0.6, i(21810)),	-- Treads of the Wandering Nomad
-					}),
-					n(15392, {	-- Captain Tuubid
-						dr(0.8, i(21806)),	-- Gavel of Qiraji Athority
-						dr(1.2, i(21809)),	-- Fury of the Forgotten Swarm
-						dr(1.2, i(21810)),	-- Treads of the Wandering Nomad
-					}),
-					n(15386, {	-- Major Yeggeth
-						dr(1.6, i(21806)),	-- Gavel of Qiraji Athority
-						dr(1.7, i(21809)),	-- Fury of the Forgotten Swarm
-						dr(1.7, i(21810)),	-- Treads of the Wandering Nomad
-					}),
-					n(15388, {	-- Major Pakkon
-						dr(1.6, i(21806)),	-- Gavel of Qiraji Athority
-						dr(3.0, i(21809)),	-- Fury of the Forgotten Swarm
-						dr(1.4, i(21810)),	-- Treads of the Wandering Nomad
-					}),
-					n(15385, {	-- Colonel Zarran
-						dr(4, i(21806)),	-- Gavel of Qiraji Athority
-						dr(3, i(21809)),	-- Fury of the Forgotten Swarm
-						dr(3, i(21810)),	-- Treads of the Wandering Nomad
-					}),
 				},
 				["description"] = "Speak with Lieutenant General Andorov before starting this encounter if you need to interact with the vendor.",
 				["creatureID"] = 15341,
