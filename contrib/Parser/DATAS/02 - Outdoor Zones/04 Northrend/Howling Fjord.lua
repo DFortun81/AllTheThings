@@ -657,9 +657,11 @@ _.Zones =
 									i(35897),	-- Ice-Crusted Cape
 								},
 								["qg"] = 24227,	-- Engineer Feknut
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(11176, {	--  See to the Operations [A]
 								["qg"] = 23891,	-- Overseer Irena Stonemantle
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11175},
 							}),
 							q(11390, {	-- I've Got a Flying Machine! [A]
@@ -668,15 +670,18 @@ _.Zones =
 									i(35911),	-- Unsparing Band
 									i(35936),	-- Worg Tooth Talisman
 								},
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11176},
 							}),
 							q(11391, {	--  Steel Gate Patrol [A]
 								["qg"] = 24399,	-- Steel Gate Chief Archaeologist
 								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11390},
 							}),
 							q(11393, {	--  Where is Explorer Jaren? [A]
 								["qg"] = 23891,	-- Overseer Irena Stonemantle
+								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
 							}),
 						}),
@@ -710,9 +715,11 @@ _.Zones =
 									i(35928),	-- Cold-Forged Bronze Legplates
 									i(35925),	-- Shimmering Cold Iron Band
 								},
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(11418, {	--  We Call Him Steelfeather [A]
 								["qg"] = 24139,	-- Gil Grisert
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11269},
 							}),
 							q(11292, {	--  Preying Upon the Weak [A]
@@ -723,9 +730,11 @@ _.Zones =
 									i(35865),	-- Arcanum Shield
 								},
 								["qg"] = 24131,	-- Trapper Jethan
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(11302, {	--  The Enigmatic Frost Nymphs [A]
 								["qg"] = 24282,	-- Lieutenant Maeve
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11329},
 								["isBreadcrumb"] = true,
 							}),
@@ -737,18 +746,22 @@ _.Zones =
 									i(35930),	-- Inscribed Worghide Treads
 								},
 								["qg"] = 24176,	-- Foreman Colbey
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(11410, {	--  The One That Got Away [A]
 								["qg"] = 24056,	-- Christopher Sloan
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11329},
 							}),
 						}),
 						sz(1263, 13, {	--Ivald's Ruin
 							q(11477, {	--  Out of My Element? [A]
 								["qg"] = 24811,	-- Donny
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(11478, {	--  Outpost Over Yonder... [A]
 								["qg"] = 24811,	-- Donny
+								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
 							}),
 						}),
@@ -766,6 +779,7 @@ _.Zones =
 										i(35901),	-- Rejuvenating Cord
 									},
 									["qgs"] = {23662,23661,23664,23663,23665,23666,23670,23667,23668,23669},	-- Winterskorn EVERYTHING
+									["races"] = ALLIANCE_ONLY,
 								}),
 							}),
 						}),
@@ -774,36 +788,44 @@ _.Zones =
 						sz(1263, 18, {	--Utgarde Keep
 							q(11251, {	--  Fresh Legs [A]
 								["qg"] = 24106,	-- Scout Valory
+								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
 							}),
 						}),
 						sz(1263, 19, {	--Westguard Keep
 							q(11153, {	--  Break the Blockade [A]
 								["qg"] = 23895,	-- Bombardier Petrov
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(11406, {	--  Everything Must Be Ready [A]
 								["qg"] = 24494,	-- Quartermaster Brevin
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11332},
 							}),
 							q(11190, {	--  One Size Does Not Fit All [A]
 								["qg"] = 23770,	-- Cannoneer Ely
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(11155, {	--  Shoveltusk Soup Again? [A]
 								["qg"] = 23773,	-- Chef Kettleblack
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(11573, {	--  Orfus of Kamagua [A]
 								["qg"] = 25233,	-- Lunk-tusk
+								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
 							}),
 							q(11224, {	--  Send Them Packing [A]
 								["qg"] = 23978,	-- Explorer Abigail
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11188},
 							}),
 							q(11218, {	--  Danger! Explosives! [A]
 								["qg"] = 23976,	-- Sapper Steelring
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11188},
 							}),
-							qa(11240, {	--  Leader of the Deranged [A]
+							q(11240, {	--  Leader of the Deranged [A]
 								["groups"] = {
 									i(35917),	-- Wrathwrought Shoulderpads
 									i(35919),	-- Whispersteel Handguards
@@ -811,19 +833,23 @@ _.Zones =
 									i(35918),	-- Spiked Skullguard
 								},
 								["qg"] = 23976,	-- Sapper Steelring
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11218},
 							}),
 							q(11175, {	--  My Daughter [A]
 								["qg"] = 23831,	-- Old Man Stonemantle
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11240,11224},
 								["isBreadcrumb"] = true,
 							}),
 							q(12297, {	--  Of Traitors and Treason [A]
 								["qg"] = 23749,	-- Captain Adams
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11250},
 							}),
 							q(12298, {	--  High Commander Halford Wyrmbane [A]
 								["qg"] = 23859,	-- Greer Orehammer
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12297},
 							}),
 						}),
@@ -834,10 +860,12 @@ _.Zones =
 						-- Need "Valgarde" Header
 							q(29608, {	--  Allies in Dalaran [A]
 								["qg"] = 23736,	-- Pricilla Winterwind
+								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
 							}),
 							q(13268, {	--  Cloth Scavenging [A]
 								["qg"] = 26914,	-- Benjamin Clegg
+								["races"] = ALLIANCE_ONLY,
 								["requireSkill"] = 197,	-- Tailoring
 							}),
 							q(13087, {	-- Northern Cooking [A]
@@ -845,15 +873,18 @@ _.Zones =
 									recipe(57421),	-- Northern Stew
 								},
 								["qg"] = 26905,	-- Brom Brewbaster
+								["races"] = ALLIANCE_ONLY,
 								["requireSkill"] = 185,	-- Cooking
 								--Requires Cooking at 350 to pick up
 								--BfA: Northrend Cooking is 2546
 							}),
 							q(12794, {	--  The Magical Kingdom of Dalaran [A]
 								["qg"] = 23729,	-- Baron Ulrik von Stromhearth
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(11255, {	--  Prisoners of Wyrmskull [A]
 								["qg"] = 23546,	-- Vice Admiral Keller
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11244},
 							}),
 							q(11290, {	-- Dragonflayer Battle Plans [A]
@@ -864,11 +895,13 @@ _.Zones =
 									i(35817),	-- Nerubian Inner Husk
 								},
 								["qg"] = 23546,	-- Vice Admiral Kellar
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11255},
 							}),
 						-- Need "Daggercap Bay" Header
 							q(11443, {	--  Daggercap Divin' [A]
 								["qg"] = 23730,	-- Harold Lagras
+								["races"] = ALLIANCE_ONLY,
 							}),
 						-- Need "Wyrmskull Village" Header
 							q(11288, {	--  The Shining Light
@@ -881,23 +914,28 @@ _.Zones =
 									i(35830),	-- Worn Vrykul Smasher
 								},
 								["qg"] = 24189,	-- Ares the Oathbound
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11420},
 							}),
 							q(11289, {	--  Guided by Honor
 								["qg"] = 24189,	-- Ares the Oathbound
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11288},
 							}),
 						-- Need "Chillmere Coast" Header
 							q(11422, {	--  Trident of the Son
 								["qg"] = 24544,	-- Old Icefin
+								["coord"] = { 19.8, 22.2 }
 							}),
 							q(11394, {	--  And You Thought Murlocs Smelled Bad! [A]
 								["qg"] = 23833,	-- Explorer Jaren
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11393},
 							}),
 							i(33961, {	-- Scourge Device
 								q(11395, {	--  It's a Scourge Device [A]
 									["qgs"] = {24485,23644,24540,23645,23643},
+								["races"] = ALLIANCE_ONLY,
 									["sourceQuests"] = {11394},
 								}),
 							}),
@@ -909,18 +947,22 @@ _.Zones =
 									i(35935),	-- Infused Coldstone Rune
 								},
 								["qg"] =23833,	-- Explorer Jaren
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11395},
 							}),
 						-- Need "Explorer's League" Header
 							q(11460, {	--  Trust is Earned [A]
 								["qg"] = 24750,	-- Hidalgo the Master Falconer
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(11465, {	--  The Ransacked Caravan [A]
 								["qg"] = 24750,	-- Hidalgo the Master Falconer
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11460},
 							}),
 							q(11468, {	--  Falcon Versus Hawk [A]
 								["qg"] = 24750,	-- Hidalgo the Master Falconer
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11465},
 							}),
 							q(11470, {	--  There Exists No Honor Among Birds [A]
@@ -931,11 +973,13 @@ _.Zones =
 									i(35862),	-- Light-Bound Chestguard
 								},
 								["qg"] = 24750,	-- Hidalgo the Master Falconer
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11465},
 							}),
 							q(11474, {	--  Problems on the High Bluff [A]
 								["qg"] = 24717,	-- Stanwad
 								["isBreadcrumb"] = true,
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11448},
 							}),
 					}),
