@@ -7365,7 +7365,7 @@ function app:GetDataCache()
 		
 		-- Pet Battles
 		if app.Categories.PetBattles then
-			db = app.CreateAchievement(6622, app.Categories.PetBattles); -- Big City Pet Brawler
+			db = app.CreateAchievement(6559, app.Categories.PetBattles); -- Traveling Pet Mauler
 			db.f = 0;
 			db.lvl = 5; -- Must be 5 to train
 			db.expanded = false;
