@@ -96,6 +96,19 @@ _.Zones =
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
 						},
+						{	-- Back to Franklin [Mine]
+							["questID"] = 51380,	-- Back to Franklin
+							["qg"] = 136091,	-- Myra Cabot
+							["sourceQuests"] = {
+								48770,	-- Three Sheets to the Wind
+							},
+							["requireSkill"] = 186, -- Mining
+							["coords"] = {
+								{ 75.01, 07.61 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 150 Kul'Tiran Mining",
+						},
 						{	-- Breaking the Food Chain [Herb -- Riverbud III]
 							["questID"] = 48754,	-- Breaking the Food Chain
 							["qg"] = 136096,	-- Declan Senal
@@ -110,6 +123,24 @@ _.Zones =
 							["g"] = {
 								{	-- Riverbud [Rank 3]
 									["recipeID"] = 252407,	-- Riverbud [Rank 3]
+								},
+							},
+						},
+						{	-- Brined Justice [Mine -- Storm Silver Deposit III]
+							["questID"] = 48768,	-- Brined Justice
+							["qg"] = 136091,	-- Myra Cabot
+							["sourceQuests"] = {
+								51568,	-- Ritualistic Preparations
+							},
+							["requireSkill"] = 186, -- Mining
+							["coords"] = {
+								{ 75.01, 07.61 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 150 Kul'Tiran Mining",
+							["g"] = {
+								{	-- Storm Silver Deposit Rank 3
+									["recipeID"] = 253338,	-- Storm Silver Deposit Rank 3
 								},
 							},
 						},
@@ -350,6 +381,46 @@ _.Zones =
 								},
 							},
 						},
+						{	-- Spiderphobia [Mine -- Monelite Deposit III]
+							["questID"] = 48761,	-- Spiderphobia
+							["qg"] = 136091,	-- Myra Cabot
+							["sourceQuests"] = {
+								48752, 	-- A Need For Coal
+							},
+							["requireSkill"] = 186, -- Mining
+							["coords"] = {
+								{ 75.01, 07.61 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 150 Kul'Tiran Mining",
+							["g"] = {
+								{	-- Monelite Deposit Rank 3
+									["recipeID"] = 253335,	-- Monelite Deposit Rank 3
+								},
+							},
+						},
+						{	-- The Wrath of Grapes [Mine -- Storm Silver Seam III]
+							["questID"] = 51889,	-- The Wrath of Grapes
+							["qg"] = 139375,	-- Franklin the Drunk
+							["sourceQuests"] = {
+								51380,	-- Back to Franklin
+							},
+							["requireSkill"] = 186, -- Mining
+							["coords"] = {
+								{ 75.63, 23.53 },	-- Franklin the Drunk
+								{ 69.37, 13.05 },	-- Hilock of Eggs
+								{ 74.01, 12.79 },	-- Jar of Pickle Juice [Inside Inn]
+								{ 70.49, 09.67 },	-- Mountain of Bacon
+								{ 72.55, 11.65 },	-- Pile of Sausages
+							},
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 150 Kul'Tiran Mining",
+							["g"] = {
+								{	-- Storm Silver Seam Rank 3
+									["recipeID"] = 253347,	-- Storm Silver Seam Rank 3
+								},
+							},
+						},
 						{	-- Three Sheets to the Wind [Mine -- Storm Silver Seam II]
 							["questID"] = 48770,	-- Three Sheets to the Wind
 							["qg"] = 136091,	-- Myra Cabot
@@ -368,23 +439,7 @@ _.Zones =
 								},
 							},
 						},
-						--[[
-						{	-- Spiderphobia [Mine]
-							["questID"] = 48761,	-- Spiderphobia
-							["qg"] = 136091,	-- Myra Cabot
-							["requireSkill"] = 186, -- Mining
-							["coords"] = {
-								{ 75.01, 07.61 },
-							},
-							["races"] = ALLIANCE_ONLY,
-							["description"] = "Requires 50 Kul'Tiran Mining",
-							["g"] = {
-								{	-- Storm Silver Deposit Rank 2
-									["recipeID"] = 253337	-- Storm Silver Deposit Rank 2
-								},
-							},
-						},
-						--]]
+						
 					},
 				}),
 			},
