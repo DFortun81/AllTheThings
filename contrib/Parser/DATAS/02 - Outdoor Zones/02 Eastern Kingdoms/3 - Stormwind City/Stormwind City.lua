@@ -190,7 +190,6 @@ _.Zones =
 					qg(, qa(24657)),	-- A Friendly Chat...
 					qg(, qa(24597)),	-- A Gift for the King of Stormwind
 					qg(, qa(46275)),	-- A Kingdom's Heart
-					qg(, qa(29132)),	-- A Legendary Engagement
 					qg(, qa(24428)),	-- A Most Puzzling Circumstance
 					qg(, q(31450)),	-- A New Fate
 					qg(, q(336)),	-- A Noble Brew
@@ -565,15 +564,6 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qg(, qa(31976)),	-- The Returning Champion
 					qg(, qh(40786)),	-- The Smoldering Ember
 					qg(, qa(40787)),	-- The Smoldering Ember
---]]					
-					qg(53466, qa(29312, {	-- The Stuff of Legends
-						["groups"] = {
-							i(71086),	-- Dragonwrath, Tarecgosa's Rest
-						},
-						["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
-					})),
---[[					
-					qg(, qh(29309)),	-- The Stuff of Legends
 					qg(, qa( 1790)),	-- The Symbol of Life
 					qg(, qa(31985)),	-- The Triumphant Return
 					qg(, qa(29156)),	-- The Troll Incursion
