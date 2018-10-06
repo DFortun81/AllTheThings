@@ -201,28 +201,6 @@ _.Instances =
 									}),
 								},
 							},
-							--[[
-							qh(29308, {	--  Heart of Flame [H]
-								["qg"] = 53349,	-- Kalecgos
-								["sourceQuests"] = { 29285 },	-- Alignment
-								["groups"] = {
-									i(69848, {	-- Heart of Flame
-										["description"] = "The heart has 100% drop rate from Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty.\n\nGather Essences by killing the bosses and syphoning the essences with your staff.",
-										["questID"] = 29308,
-										["crs"] = {
-											53691,	-- Shannox
-											52498,	-- Beth'tilac <The Red Widow>
-											52530,	-- Alysrazor
-											52558,	-- Lord Rhyolith
-											53494,	-- Baleroc <The Gatekeeper>
-											52571,	-- Majordomo Staghelm <Archdruid of the Flame>
-											54198,	-- Smoldering Essence
-											52409,	-- Ragnaros
-										},
-									}),
-								},
-							}),
-							]]--
 							{
 								["qgs"] = { 53466 },	-- Hallegosa
 								["allianceQuestID"] = 29312,	-- The Stuff of Legends [A]
@@ -232,22 +210,6 @@ _.Instances =
 									i(71086),	-- Dragonwrath, Tarecgosa's Rest
 								},
 							},
-							--[[
-							qa(29312, {	-- The Stuff of Legends [A]
-								["qgs"] = { 53466 },	-- Hallegosa
-								["sourceQuests"] = { 29307 },	-- Heart of Flame
-								["groups"] = {
-									i(71086),	-- Dragonwrath, Tarecgosa's Rest
-								},
-							}),
-							qh(29309, {	-- The Stuff of Legends [H]
-								["qgs"] = { 53466 },	-- Hallegosa
-								["sourceQuests"] = { 29308 },	-- Heart of Flame
-								["groups"] = {
-									i(71086),	-- Dragonwrath, Tarecgosa's Rest
-								},
-							}),
-							]]--
 						},
 					}),
 					n( -2, {	-- Vendors
