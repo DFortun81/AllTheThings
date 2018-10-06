@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 _.Instances = 
 {
 	{	-- Cataclysm
@@ -276,6 +275,24 @@ _.Instances =
 									["classes"] = { 4 },	-- Rogue									
 								})),
 							}),
+							{	-- Common Boss Drops
+								["npcID"] = -1,	-- Common Boss Drops
+								["g"] = {
+									{	-- Essence of Destruction
+										["itemID"] = 71998,	-- Essence of Destruction
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+											53879,	-- Spine of Deathwing
+											56173,	-- Madness of Deathwing
+										},
+									},
+								},
+							},
 							n(  0, {	-- Zone Drop
 								["groups"] = {
 									i(78886),	-- Belt of Ghostly Graces
@@ -326,7 +343,6 @@ _.Instances =
 								},
 							}),
 							cr(55265, e(311, {	-- Morchok
-								i(71998),	-- Essence of Destruction
 								i(77212),	-- Hand of Morchok
 								i(77214),	-- Vagaries of Time
 								i(77262),	-- Petrified Fungal Heart
@@ -351,7 +367,6 @@ _.Instances =
 								i(77209),	-- Windward Heart
 							})),
 							cr(55308, e(324, {	-- Warlord Zon'ozz
-								i(71998),	-- Essence of Destruction
 								i(78183, {	-- Gauntlets of the Corrupted Conqueror
 									i(76875),	-- Gauntlets of Radiant Glory
 									i(76766),	-- Gloves of Radiant Glory
@@ -397,7 +412,6 @@ _.Instances =
 								i(77209),	-- Windward Heart
 							})),
 							cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-								i( 71998),	-- Essence of Destruction
 								i( 78181, {	-- Leggings of the Corrupted Conqueror
 									i(76768),	-- Greaves of Radiant Glory
 									i(77006),	-- Legguards of Radiant Glory
@@ -444,7 +458,6 @@ _.Instances =
 								i( 77209),	-- Windward Heart
 							})),
 							cr(55689, e(317, {	-- Hagara the Stormbinder
-								i(71998),	-- Essence of Destruction
 								i(78180, {	-- Shoulders of the Corrupted Conqueror
 									i(76769),	-- Mantle of Radiant Glory
 									i(76878),	-- Pauldrons of Radiant Glory
@@ -515,7 +528,6 @@ _.Instances =
 									i(76215),	-- Time Lord's Robes
 									i(77023),	-- Blackfang Battleweave Tunic
 								}),
-								i(71998),	-- Essence of Destruction
 								i(78919),	-- Experiment 12-B (MOUNT!)
 								i(77223),	-- Morningstar of Heroic Will
 								i(77245),	-- Ledger of Revolting Rituals
@@ -563,7 +575,6 @@ _.Instances =
 									i(76213),	-- Time Lord's Hood
 									i(77025),	-- Blackfang Battleweave Helmet
 								}),
-								i(71998),	-- Essence of Destruction
 								i(77224),	-- Ataraxis, Cudgel of the Warmaster
 								i(77225),	-- Visage of the Destroyer
 								i(77226),	-- Blackhorn's Mighty Bulwark
@@ -586,7 +597,6 @@ _.Instances =
 							})),
 							cr(53879, e(318, {	-- Spine of Deathwing
 								i(152980),	-- Elementium Back Plate (PET!)
-								i( 71998),	-- Essence of Destruction
 								i( 77236),	-- Backbreaker Spaulders
 								i( 77235),	-- Gauntlets of the Golden Thorn
 								i( 78357),	-- Gloves of Liquid Smoke
@@ -599,7 +609,6 @@ _.Instances =
 								i( 77197),	-- Wrath of Unchaining
 							})),
 							cr(56173, e(333, {	-- Madness of Deathwing
-								i( 71998),	-- Essence of Destruction
 								i( 77067),	-- Reins of the Blazing Drake (MOUNT!)
 								i(152981),	-- Severed Tentacle (PET)!
 								i( 77191),	-- Gurthalak, Voice of the Deeps
@@ -634,6 +643,24 @@ _.Instances =
 									["classes"] = { 4 },	-- Rogue									
 								})),
 							}),
+							{	-- Common Boss Drops
+								["npcID"] = -1,	-- Common Boss Drops
+								["g"] = {
+									{	-- Essence of Destruction
+										["itemID"] = 71998,	-- Essence of Destruction
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+											53879,	-- Spine of Deathwing
+											56173,	-- Madness of Deathwing
+										},
+									},
+								},
+							},
 							n(  0, {	-- Zone Drop
 								["groups"] = {
 									i(78886),	-- Belt of Ghostly Graces
@@ -690,7 +717,6 @@ _.Instances =
 								},
 							}),						
 							cr(55265, e(311, {	-- Morchok
-								i(71998),	-- Essence of Destruction
 								i(78371),	-- Hand of Morchok
 								i(78363),	-- Vagaries of Time
 								i(78364),	-- Petrified Fungal Heart
@@ -715,7 +741,6 @@ _.Instances =
 								i(78001),	-- Windward Heart
 							})),
 							cr(55308, e(324, {	-- Warlord Zon'ozz
-								i(71998),	-- Essence of Destruction
 								i(78853, {	-- Gauntlets of the Corrupted Conqueror
 									i(78675),	-- Gauntlets of Radiant Glory
 									i(78673),	-- Gloves of Radiant Glory
@@ -761,7 +786,6 @@ _.Instances =
 								i(78001),	-- Windward Heart
 							})),
 							cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-								i( 71998),	-- Essence of Destruction
 								i( 78856, {	-- Leggings of the Corrupted Conqueror
 									i(78717),	-- Greaves of Radiant Glory
 									i(78715),	-- Legguards of Radiant Glory
@@ -808,7 +832,6 @@ _.Instances =
 								i( 78001),	-- Windward Heart
 							})),
 							cr(55689, e(317, {	-- Hagara the Stormbinder
-								i(71998),	-- Essence of Destruction
 								i(78859, {	-- Shoulders of the Corrupted Conqueror
 									i(78746),	-- Mantle of Radiant Glory
 									i(78742),	-- Pauldrons of Radiant Glory
@@ -879,7 +902,6 @@ _.Instances =
 									i(78729),	-- Time Lord's Robes
 									i(78664),	-- Blackfang Battleweave Tunic
 								}),
-								i(71998),	-- Essence of Destruction
 								i(78919),	-- Experiment 12-B (MOUNT!)
 								i(78429),	-- Morningstar of Heroic Will
 								i(78433),	-- Ledger of Revolting Rituals
@@ -927,7 +949,6 @@ _.Instances =
 									i(78701),	-- Time Lord's Hood
 									i(78699),	-- Blackfang Battleweave Helmet
 								}),
-								i(71998),	-- Essence of Destruction
 								i(78445),	-- Ataraxis, Cudgel of the Warmaster
 								i(78451),	-- Visage of the Destroyer
 								i(78448),	-- Blackhorn's Mighty Bulwark
@@ -950,7 +971,6 @@ _.Instances =
 							})),
 							cr(53879, e(318, {	-- Spine of Deathwing
 								i(152980),	-- Elementium Back Plate (PET!)
-								i( 71998),	-- Essence of Destruction
 								i( 78465),	-- Backbreaker Spaulders
 								i( 78464),	-- Gauntlets of the Golden Thorn
 								i( 78461),	-- Gloves of Liquid Smoke
@@ -963,7 +983,6 @@ _.Instances =
 								i( 77994),	-- Wrath of Unchaining
 							})),
 							cr(56173, e(333, {	-- Madness of Deathwing
-								i( 71998),	-- Essence of Destruction
 								i( 77069),	-- Life-Binder's Handmaiden (MOUNT!)
 								i( 77067),	-- Reins of the Blazing Drake (MOUNT!)
 								i(152981),	-- Severed Tentacle (PET!)
