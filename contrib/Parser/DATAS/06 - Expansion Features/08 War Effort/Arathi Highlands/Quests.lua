@@ -7,7 +7,24 @@ _.ExpansionFeatures =
 		["groups"] = {
 			n(-17, {	-- Quests [Tier 2]
 				["groups"] = {
-					q(53212, {	-- Back to Zuldazar
+					{	-- Back to Boralus [A]
+						["questID"] = 53198,	-- Back to Boralus
+						["qg"] = 143018,		-- Captain Roderick Brewston
+						["sourceQuests"] = {
+							53197,	-- Touring the Front
+						},
+						["coords"] = {
+							{ 19.26, 61.77 },
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- Warfront: The Battle for Stromgarde
+								["npcID"] = -234,		-- Warfront: The Battle for Stromgarde
+								["questID"] = 53206,	-- Unlock
+							},
+						},
+					},
+					q(53212, {	-- Back to Zuldazar [H]
 						["groups"] = {
 							spell(279443, {	-- Warfront: The Battle for Stromgarde [H]	
 								["questID"] = 53220,
@@ -21,85 +38,184 @@ _.ExpansionFeatures =
 						},
 						["races"] = HORDE_ONLY,
 					}),
-					q(53148, {	-- Boulderfist Beatdown
+					{	-- Boulderfist Beatdown [A]
+						["questID"] = 53146, 	-- Boulderfist Beatdown
+						["sourceQuests"] = {
+							53198,	-- Back to Boralus
+						},
+						["qgs"] = {
+							143172,	-- Yvera Dawnwing [Arathi Highlands Location]
+							143380,	-- Yvera Dawnwing [Boralus Location]
+						},
+						["coords"]  = {
+							{ 21.71, 64.88 },
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- War Resources
+								["currencyID"] = 1560,	-- War Resources
+							},
+						},
+					},
+					qh(53148, {	-- Boulderfist Beatdown [H]
 						currency(1560),
 					}),
-					qa(53153, {	-- Death to the Defilers
-						i(164578, {	-- Warfronts Equipment Cache
-							["groups"] = bubbleDown({["modID"] = 5}, {
-								i(163891),	-- 7th Legionnaire's Aegis
-								i(163884),	-- 7th Legionnaire's Battle Hammer
-								i(163892),	-- 7th Legionnaire's Censer
-								i(163890),	-- 7th Legionnaire's Claymore
-								i(163882),	-- 7th Legionnaire's Dagger
-								i(163885),	-- 7th Legionnaire's Halberd
-								i(163889),	-- 7th Legionnaire's Hand Cannon
-								i(163881),	-- 7th Legionnaire's Longbow
-								i(163887),	-- 7th Legionnaire's Longsword
-								i(163895),	-- 7th Legionnaire's Shield
-								i(163894),	-- 7th Legionnaire's Spellhammer
-								i(163886),	-- 7th Legionnaire's Stave
-								i(163888),	-- 7th Legionnaire's Wand
-								i(163893),	-- 7th Legionnaire's Warglaive
-								i(163883),	-- 7th Legionnaire's Warhammer
-								i(163355),	-- 7th Legionnaire's Bloody Drape
-								i(163355),	-- 7th Legionnaire's Bloody Drape
-								i(163351),	-- 7th Legionnaire's Chain Drape
-								i(163347),	-- 7th Legionnaire's Long Cloak
-								i(163246),	-- 7th Legionnaire's Silk Cloak
-								i(163339),	-- 7th Legionnaire's Hood
-								i(163337),	-- 7th Legionnaire's Amice
-								i(163248),	-- 7th Legionnaire's Robes
-								i(163275),	-- 7th Legionnaire's Cuffs
-								i(163341),	-- 7th Legionnaire's Handwraps
-								i(163342),	-- 7th Legionnaire's Cord
-								i(163264),	-- 7th Legionnaire's Legwraps
-								i(163253),	-- 7th Legionnaire's Slippers
-								i(163380),	-- 7th Legionnaire's Visage
-								i(163377),	-- 7th Legionnaire's Leather Mantle
-								i(163251),	-- 7th Legionnaire's Vest
-								i(163278),	-- 7th Legionnaire's Bracers
-								i(163256),	-- 7th Legionnaire's Gloves
-								i(163384),	-- 7th Legionnaire's Buckle
-								i(163266),	-- 7th Legionnaire's Britches
-								i(163383),	-- 7th Legionnaire's Boots
-								i(163394),	-- 7th Legionnaire's Helm
-								i(163389),	-- 7th Legionnaire's Monnion
-								i(163398),	-- 7th Legionnaire's Chainmail
-								i(163277),	-- 7th Legionnaire's Bindings
-								i(163397),	-- 7th Legionnaire's Handguards
-								i(163401),	-- 7th Legionnaire's Cincture
-								i(163265),	-- 7th Legionnaire's Leggings
-								i(163400),	-- 7th Legionnaire's Sabatons
-								i(163410),	-- 7th Legionnaire's Headpiece
-								i(163405),	-- 7th Legionnaire's Shoulderplates
-								i(163418),	-- 7th Legionnaire's Chestguard
-								i(163403),	-- 7th Legionnaire's Armguards
-								i(163414),	-- 7th Legionnaire's Gauntlets
-								i(163422),	-- 7th Legionnaire's Greatbelt
-								i(163409),	-- 7th Legionnaire's Legguards
-								i(163421),	-- 7th Legionnaire's Greaves
+					{	-- Death to the Defilers
+						["questID"] = 53153, 	-- Death to the Defilers
+						["sourceQuests"] = {
+							53198,	-- Back to Boralus
+						},
+						["qgs"] = {
+							143172,	-- Yvera Dawnwing [Arathi Highlands Location]
+							143380,	-- Yvera Dawnwing [Boralus Location]
+						},
+						["coords"]  = {
+							{ 21.71, 64.88 },
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(164578, {	-- Warfronts Equipment Cache
+								["groups"] = bubbleDown({["modID"] = 5}, {
+									i(163891),	-- 7th Legionnaire's Aegis
+									i(163884),	-- 7th Legionnaire's Battle Hammer
+									i(163892),	-- 7th Legionnaire's Censer
+									i(163890),	-- 7th Legionnaire's Claymore
+									i(163882),	-- 7th Legionnaire's Dagger
+									i(163885),	-- 7th Legionnaire's Halberd
+									i(163889),	-- 7th Legionnaire's Hand Cannon
+									i(163881),	-- 7th Legionnaire's Longbow
+									i(163887),	-- 7th Legionnaire's Longsword
+									i(163895),	-- 7th Legionnaire's Shield
+									i(163894),	-- 7th Legionnaire's Spellhammer
+									i(163886),	-- 7th Legionnaire's Stave
+									i(163888),	-- 7th Legionnaire's Wand
+									i(163893),	-- 7th Legionnaire's Warglaive
+									i(163883),	-- 7th Legionnaire's Warhammer
+									i(163355),	-- 7th Legionnaire's Bloody Drape
+									i(163355),	-- 7th Legionnaire's Bloody Drape
+									i(163351),	-- 7th Legionnaire's Chain Drape
+									i(163347),	-- 7th Legionnaire's Long Cloak
+									i(163246),	-- 7th Legionnaire's Silk Cloak
+									i(163339),	-- 7th Legionnaire's Hood
+									i(163337),	-- 7th Legionnaire's Amice
+									i(163248),	-- 7th Legionnaire's Robes
+									i(163275),	-- 7th Legionnaire's Cuffs
+									i(163341),	-- 7th Legionnaire's Handwraps
+									i(163342),	-- 7th Legionnaire's Cord
+									i(163264),	-- 7th Legionnaire's Legwraps
+									i(163253),	-- 7th Legionnaire's Slippers
+									i(163380),	-- 7th Legionnaire's Visage
+									i(163377),	-- 7th Legionnaire's Leather Mantle
+									i(163251),	-- 7th Legionnaire's Vest
+									i(163278),	-- 7th Legionnaire's Bracers
+									i(163256),	-- 7th Legionnaire's Gloves
+									i(163384),	-- 7th Legionnaire's Buckle
+									i(163266),	-- 7th Legionnaire's Britches
+									i(163383),	-- 7th Legionnaire's Boots
+									i(163394),	-- 7th Legionnaire's Helm
+									i(163389),	-- 7th Legionnaire's Monnion
+									i(163398),	-- 7th Legionnaire's Chainmail
+									i(163277),	-- 7th Legionnaire's Bindings
+									i(163397),	-- 7th Legionnaire's Handguards
+									i(163401),	-- 7th Legionnaire's Cincture
+									i(163265),	-- 7th Legionnaire's Leggings
+									i(163400),	-- 7th Legionnaire's Sabatons
+									i(163410),	-- 7th Legionnaire's Headpiece
+									i(163405),	-- 7th Legionnaire's Shoulderplates
+									i(163418),	-- 7th Legionnaire's Chestguard
+									i(163403),	-- 7th Legionnaire's Armguards
+									i(163414),	-- 7th Legionnaire's Gauntlets
+									i(163422),	-- 7th Legionnaire's Greatbelt
+									i(163409),	-- 7th Legionnaire's Legguards
+									i(163421),	-- 7th Legionnaire's Greaves
+								}),
 							}),
-						}),
-					}),
-					q(53179, {	-- Executing Exorcisms
+						},
+					},
+					{	-- Executing Exorcisms [A]
+						["questID"] = 53179, 	-- Executing Exorcisms
+						["sourceQuests"] = {
+							53198,	-- Back to Boralus
+						},
+						["qgs"] = {
+							143172,	-- Yvera Dawnwing [Arathi Highlands Location]
+							143380,	-- Yvera Dawnwing [Boralus Location]
+						},
+						["coords"]  = {
+							{ 21.71, 64.88 },
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- Glowing Azerite
+								["currencyID"] = 1553,	-- Glowing Azerite
+							},
+						},
+					},
+					qh(53179, {	-- Executing Exorcisms [H]
 						currency(1553),
 					}),
-					q(53173, {	-- Sins of the Syndicate
+					{	-- Sins of the Syndicate [A]
+						["questID"] = 53162, 	-- Sins of the Syndicate
+						["sourceQuests"] = {
+							53198,	-- Back to Boralus
+						},
+						["qgs"] = {
+							143172,	-- Yvera Dawnwing [Arathi Highlands Location]
+							143380,	-- Yvera Dawnwing [Boralus Location]
+						},
+						["coords"]  = {
+							{ 21.71, 64.88 },
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- War Resources
+								["currencyID"] = 1560,	-- War Resources
+							},
+						},
+					},
+					qh(53173, {	-- Sins of the Syndicate [H]
 						currency(1560),
 					}),
-					q(53210, {	-- Touring the Front [H]
+					qh(53210, {	-- Touring the Front [H]
 						["sourceQuests"] = { 53208 },	-- To The Front
 						["qg"] = 143019,	-- Wistel Sliversnitch
 						["coord"] = {
 							26.11, 35.59
 						},
-						["races"] = HORDE_ONLY,
 					}),
-					q(53192, {	-- Twice-Exiled
+					{	-- Touring the Front [A]
+						["questID"] = 53197,	-- Touring the Front
+						["qg"] = 143018,		-- Captain Roderick Brewston
+						["sourceQuests"] = {
+							53194,	-- To The Front
+						},
+						["coords"] = {
+							{ 19.26, 61.77 },
+						},
+					},
+					{	-- Twice-Exiled [A]
+						["questID"] = 53192, 	-- Twice-Exiled
+						["sourceQuests"] = {
+							53198,	-- Back to Boralus
+						},
+						["qgs"] = {
+							143172,	-- Yvera Dawnwing [Arathi Highlands Location]
+							143380,	-- Yvera Dawnwing [Boralus Location]
+						},
+						["coords"]  = {
+							{ 21.71, 64.88 },
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- War Resources
+								["currencyID"] = 1560,	-- War Resources
+							},
+						},
+					},
+					qh(53192, {	-- Twice-Exiled [H]
 						currency(1560),
 					}),
-					qh(53154, {	-- The League Will Lose
+					qh(53154, {	-- The League Will Lose [H]
 						i(164577, {	-- Warfronts Equipment Cache
 							["groups"] = bubbleDown({["modID"] = 5}, {
 								i(163878),	-- Honorbound Barrier
@@ -156,9 +272,29 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-					q(53150, {	-- Wiping Out the Winterbark
+					{	-- Wiping Out the Winterbark [A]
+						["questID"] = 53149, 	-- Wiping Out the Winterbark
+						["sourceQuests"] = {
+							53198,	-- Back to Boralus
+						},
+						["qgs"] = {
+							143172,	-- Yvera Dawnwing [Arathi Highlands Location]
+							143380,	-- Yvera Dawnwing [Boralus Location]
+						},
+						["coords"]  = {
+							{ 21.71, 64.88 },
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- War Resources
+								["currencyID"] = 1560,	-- War Resources
+							},
+						},
+					},
+					qh(53150, {	-- Wiping Out the Winterbark [H]
 						currency(1560),
 					}),
+				
 				},
 			}),
 		},

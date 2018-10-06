@@ -168,7 +168,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}, 
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["questID"] = 52847,	-- Doom's Howl
+				["questID"] = 53002,
+				-- Note!! WQ ID: 52847,	-- Doom's Howl
 				["coord"] = {
 					35.55, 38.91,
 				},
