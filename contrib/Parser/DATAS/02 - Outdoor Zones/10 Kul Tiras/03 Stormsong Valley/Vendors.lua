@@ -112,7 +112,10 @@ _.Zones =
 										i(163514),	-- Violent Looking Flower Pot
 										i(163705),	-- Imaginary Gun
 										i(163704),	-- Tiny Mechanical Mouse
-										i(139003),	-- Pocket Pet Portal
+										{	-- Pocket Pet Portal
+											["itemID"] = 139003,	-- Pocket Pet Portal
+											["questID"] = 43016,
+										},
 									},
 								}),
 							},

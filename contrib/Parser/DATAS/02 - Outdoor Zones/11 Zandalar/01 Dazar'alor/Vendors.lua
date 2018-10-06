@@ -22,7 +22,7 @@ _.Zones =
 									["description"] = "Return back to |CFFCC33FFGriftah|r and you will trade him the |CFFFFD700Counterfeit Rastakhan Mask|r in exchange for the toy |cFFFFFFFF[Coords: 53.02, 89.93]|r.",
 									["g"] = {
 										{	-- Zandalari Effigy Amulet
-											["itemID"] = 156649, 	-- Zandalari Effigy Amulet
+											["itemID"] = 156649, 	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
 										},
 									},
 								},
@@ -55,7 +55,7 @@ _.Zones =
 									["description"] = "Visit |CFFCC33FFTrader Nog|r and trade them the |CFFFFD700Centennial Blossom|r for a |CFFFFD700Preserved Night Elf Head|r |cFFFFFFFF[Coords: 57.15, 91.47]|r.",
 									["g"] = {
 										{	-- Zandalari Effigy Amulet
-											["itemID"] = 156649, 	-- Zandalari Effigy Amulet
+											["itemID"] = 156649, 	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
 										},
 									},
 								},
@@ -85,33 +85,49 @@ _.Zones =
 								{ 53.77, 85.97 },	-- Counterfeit Rastakhan Mask
 							},
 						}),
-						{	-- Happy Holaua [AH] FINISH UP!!
+						{	-- Happy Holaua [AH]
 							["npcID"] = 132097, 	-- Happy Holaua
 							["coords"] = {
 								{ 56.01, 32.21 },
 							},
 							["itemID"] = 163036,	-- Polished Pet Charm
-							["groups"] = {
-								i(163036, {	-- Polished Pet Charm [Have to do it so it obeys faction filters]
-									["groups"] = {
-										i(163508),	-- Butterfly in a Jar
-										i(163504, {	-- Child of Jani
-											["description"] = "Complete the \"Get Hek'd\" achievement for this item to appear on the vendor.",
-										}),
-										i(163502, {	-- Lil' Ben'fon
-											["description"] = "Complete the questline given by Cala Cruzpot for this item to appear on the vendor.",
-										}),
-										i(161016, {	-- Lil' Tika
-											["description"] = "Complete the questline \"Lil' Tika\" for this item to appear on the vendor.",
-										}),
-										i(163499),	-- Raptor Containment Crate
-										i(163560),	-- Saurolisk Hatchling
-										i(163498),	-- Tiny Direhorn
-										i(163705),	-- Imaginary Gun
-										i(163704),	-- Tiny Mechanical Mouse
-										i(139003),	-- Pocket Pet Portal
-									},
-								}),
+							["g"] = {
+								{	-- Pocket Pet Portal
+									["itemID"] = 139003,	-- Pocket Pet Portal
+									["questID"] = 43016,
+								},
+								{	-- Butterfly in a Jar
+									["itemID"] = 163508,	-- Butterfly in a Jar
+								},
+								{	-- Child of Jani
+									["itemID"] = 163504, 	-- Child of Jani
+									["description"] = "Complete the \"Get Hek'd\" achievement for this item to appear on the vendor.",
+								},
+								{	-- Lil Ben'fon
+									["itemID"] = 163502, 	-- Lil' Ben'fon
+									["description"] = "Complete the questline given by Cala Cruzpot for this item to appear on the vendor.",
+									["races"] = HORDE_ONLY,	-- Note!! We are only marking the item that learns it as Horde.  Alliance can use it so we don't mark the actual species.
+								},
+								{	-- Lil' Tika
+									["itemID"] = 161016, 	-- Lil' Tika
+									["description"] = "Complete the questline \"Lil' Tika\" for this item to appear on the vendor.",
+									["races"] = HORDE_ONLY,	-- Note!! We are only marking the item that learns it as Horde.  Alliance can use it so we don't mark the actual species.
+								},
+								{	-- Raptor Containment Crate
+									["itemID"] = 163499,	-- Raptor Containment Crate
+								},
+								{	-- Saurolisk Hatchling
+									["itemID"] = 163560,	-- Saurolisk Hatchling
+								},
+								{	-- Tiny Direhorn
+									["itemID"] = 163498,	-- Tiny Direhorn
+								},
+								{	-- Imaginary Gun
+									["itemID"] = 163705,	-- Imaginary Gun
+								},
+								{	-- Tiny Mechanical Mouse
+									["itemID"] = 163704,	-- Tiny Mechanical Mouse
+								},
 							},
 						},
 						n(131287, {	-- Natal'hakata <Zandalari Empire Emissary
@@ -179,6 +195,7 @@ _.Zones =
 									["spellID"] = 255409,
 								}),
 							},
+							["races"] = HORDE_ONLY,
 						}),
 						n(122463, {	-- Plen <Unusual and Remarkable Wares>
 							["groups"] = {
@@ -198,7 +215,7 @@ _.Zones =
 									["description"] = "Visit |CFFCC33FFTrader Haw'li|r and trade them the |CFFFFD700Much-Too-Hot-Pepper|r for some |CFFFFD700Golden Seeds|r |cFFFFFFFF[Coords: 37.81, 14.72]|r.",
 									["g"] = {
 										{	-- Zandalari Effigy Amulet
-											["itemID"] = 156649, 	-- Zandalari Effigy Amulet
+											["itemID"] = 156649, 	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
 										},
 									},
 								},
@@ -292,6 +309,7 @@ _.Zones =
 									["f"] = 55,	-- Consumable; Might change to Misc later
 								}),
 							},
+							["races"] = HORDE_ONLY,
 						}),
 						n(125879, {	-- Talutu
 							["groups"] = {
@@ -312,12 +330,12 @@ _.Zones =
 									["description"] = "Visit |CFFCC33FFGranda Watae|r and trade them the |CFFFFD700Golden Seeds|r for a |CFFFFD700Centennial Blossom|r |cFFFFFFFF[Coords: 42.16, 35.78].",
 									["g"] = {
 										{	-- Zandalari Effigy Amulet
-											["itemID"] = 156649, 	-- Zandalari Effigy Amulet
+											["itemID"] = 156649, 	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
 										},
 									},
 								},
 								{	-- Haw'li's Hot & Spicy Chili
-									["itemID"] = 159749,	-- Haw'li's Hot & Spicy Chili	Toy!!
+									["itemID"] = 159749,	-- Haw'li's Hot & Spicy Chili
 								},
 							},
 						},
@@ -333,15 +351,18 @@ _.Zones =
 									["description"] = "Visit |CFFCC33FF\"Black Eye\" Zenru|r and trade them the |CFFFFD700Preserved Night Elf Head|r for a |CFFFFD700Counterfeit Rastakhan Mask|r |cFFFFFFFF[Coords: 53.77, 85.97]|r.",
 									["g"] = {
 										{	-- Zandalari Effigy Amulet
-											["itemID"] = 156649, 	-- Zandalari Effigy Amulet
+											["itemID"] = 156649, 	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
 										},
 									},
 								},
 							},
 						},
 						n(145837, {	-- Violet Shadowmend
-							i(139775),	-- Alliance Enthusiast
-							i(142379),	-- Dutiful Squire
+							["groups"] = {
+								i(139775),	-- Alliance Enthusiast
+								i(142379),	-- Dutiful Squire
+							},
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),

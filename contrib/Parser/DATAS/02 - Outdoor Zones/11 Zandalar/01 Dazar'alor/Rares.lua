@@ -59,6 +59,14 @@ _.Zones =
 							["questID"] = 50948,
 							--["questID"] = 50947, -- This is the unlock for actual chest [Under Treasures]
 						}),
+						{	-- Sky Queen [A]
+							["npcID"] = 125816,	-- Sky Queen
+							["questID"] = 53567,
+							["coords"] = {
+								{ 50.01, 84.2 },
+							},
+							["races"] = ALLIANCE_ONLY,
+						},
 					},
 				}),
 			},
