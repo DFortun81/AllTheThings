@@ -11,21 +11,21 @@ _.Instances =
 					i(45038, {	-- Fragment of Val'anyr
 						["classes"] = { 2, 5, 7, 10, 11 },
 						["crs"] = {
-							33113, -- Flame Leviathan
-							33118, -- Ignis the Furnace Master
-							33293, -- XT-002 Deconstructor
-							32871, -- Algalon the Observer
-							32927, -- Runemaster Molgeim
-							32857, -- Stormcaller Brundir
-							32867, -- Steelbreaker
-							32930, -- Kologarn
-							33515, -- Auriaya
-							32845, -- Hodir
-							32865, -- Thorim
-							32906, -- Freya
-							33350, -- Mimiron
-							33271, -- General Vezax
-							33288, -- Yogg-Saron
+							33113,	-- Flame Leviathan
+							33118,	-- Ignis the Furnace Master
+							33293,	-- XT-002 Deconstructor
+							32871,	-- Algalon the Observer
+							32927,	-- Runemaster Molgeim
+							32857,	-- Stormcaller Brundir
+							32867,	-- Steelbreaker
+							32930,	-- Kologarn
+							33515,	-- Auriaya
+							32845,	-- Hodir
+							32865,	-- Thorim
+							32906,	-- Freya
+							33350,	-- Mimiron
+							33271,	-- General Vezax
+							33288,	-- Yogg-Saron
 						},
 						["groups"] = {
 							i(45039, {	-- Shattered Fragments of Val'anyr
@@ -43,40 +43,28 @@ _.Instances =
 					d(14, {	-- Normal
 						n(0, {		-- Zone Drop
 							["groups"] = {
-								i(45104),	-- Pattern: Cord of the White Dawn
-								i(45102),	-- Pattern: Sash of Ancient Power
-								i(45105),	-- Pattern: Savior's Slippers
-								i(45539),	-- Pendant of Focused Energies
-								i(46341),	-- Drape of the Spellweaver
-								i(46347),	-- Cloak of the Dormant Blaze
-								i(46344),	-- Iceshear Mantle
-								i(46346),	-- Boots of Unsettled Prey
-								i(46345),	-- Bracers of Righteous Reformation
-								i(46340),	-- Adamant Handguards
-								i(46339),	-- Mimiron's Repeater
 								i(46351),	-- Bloodcrush Cudgel
+								i(45605),	-- Daschal's Bite
 								i(46350),	-- Pillar of Fortitude
 								i(46342),	-- Golemheart Longbow
-								i(45541),	-- Shroud of Alteration
-								i(45549),	-- Grips of Chaos
-								i(45547),	-- Relic Hunter's Cord
-								i(45548),	-- Belt of the Sleeper
+								i(46339),	-- Mimiron's Repeater
+								i(46343),	-- Fervor of the Protectorate
+								i(45539),	-- Pendant of Focused Energies
+								i(45538),	-- Titanstone Pendant
+								i(46344),	-- Iceshear Mantle
 								i(45543),	-- Shoulders of Misfortune
+								i(46341),	-- Drape of the Spellweaver
+								i(46347),	-- Cloak of the Dormant Blaze
+								i(45541),	-- Shroud of Alteration
+								i(46345),	-- Bracers of Righteous Reformation
+								i(46340),	-- Adamant Handguards
+								i(45549),	-- Grips of Chaos
+								i(45548),	-- Belt of the Sleeper
+								i(45547),	-- Relic Hunter's Cord
 								i(45544),	-- Leggings of the Tortured Earth
+								i(46346),	-- Boots of Unsettled Prey
 								i(45542),	-- Greaves of the Stonewarder
-								i(45605),	-- Daschal's Bite
-								i(45100),
-								i(45094),
-								i(45096),
-								i(45095),
-								i(45101),
-								i(45098),
-								i(45099),
-								i(45097),
-								i(45104),
-								i(45102),
-								i(45105),
-								i(45103),
+								i(45540),	-- Bladebearer's Signet
 							},
 							["crs"] = {
 								34183,	-- Arachnopod Destroyer
@@ -116,34 +104,37 @@ _.Instances =
 						}),
 						n(-1, { -- Common Boss Drop
 							["crs"] = {
-								33113, -- Flame Leviathan
-								33118, -- Ignis the Furnace Master
-								33293, -- XT-002 Deconstructor
-								32871, -- Algalon the Observer
-								32927, -- Runemaster Molgeim
-								32857, -- Stormcaller Brundir
-								32867, -- Steelbreaker
-								32930, -- Kologarn
-								33515, -- Auriaya
-								32845, -- Hodir
-								32865, -- Thorim
-								32906, -- Freya
-								33350, -- Mimiron
-								33271, -- General Vezax
-								33288, -- Yogg-Saron
+								33113,	-- Flame Leviathan
+								33118,	-- Ignis the Furnace Master
+								33293,	-- XT-002 Deconstructor
+								32871,	-- Algalon the Observer
+								32927,	-- Runemaster Molgeim
+								32857,	-- Stormcaller Brundir
+								32867,	-- Steelbreaker
+								32930,	-- Kologarn
+								33515,	-- Auriaya
+								32845,	-- Hodir
+								32865,	-- Thorim
+								32906,	-- Freya
+								33350,	-- Mimiron
+								33271,	-- General Vezax
+								33288,	-- Yogg-Saron
 							},
 							["groups"] = {
 								i(45087),	-- Runed Orb
-								i(45100), -- Pattern: Belt of Arctic Life
-								i(45094), -- Pattern: Belt of Dragons
-								i(45101), -- Pattern: Boots of Wintry Endurance
-								i(45096), -- Pattern: Blue Belt of Chaos
-								i(45089), -- Plans: Battlelord's Plate Boots
-								i(45088), -- Plans: Belt of the Titans
-								i(45092), -- Plans: Indestructible Plate Girdle
-								i(45090), -- Plans: Plate Girdle of Righteousness
-								i(45093), -- Plans: Spiked Deathdealers
-								i(45091), -- Plans: Treads of Destiny
+								i(45100),	-- Pattern: Belt of Arctic Life
+								i(45094),	-- Pattern: Belt of Dragons
+								i(45101),	-- Pattern: Boots of Wintry Endurance
+								i(45096),	-- Pattern: Blue Belt of Chaos
+								i(45104),	-- Pattern: Cord of the White Dawn
+								i(45102),	-- Pattern: Sash of Ancient Power
+								i(45105),	-- Pattern: Savior's Slippers
+								i(45089),	-- Plans: Battlelord's Plate Boots
+								i(45088),	-- Plans: Belt of the Titans
+								i(45092),	-- Plans: Indestructible Plate Girdle
+								i(45090),	-- Plans: Plate Girdle of Righteousness
+								i(45093),	-- Plans: Spiked Deathdealers
+								i(45091),	-- Plans: Treads of Destiny
 							},
 						}),
 						cr(33113, e(1637, {	-- Flame Leviathan
