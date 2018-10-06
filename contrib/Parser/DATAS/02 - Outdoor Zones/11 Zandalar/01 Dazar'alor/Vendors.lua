@@ -10,39 +10,87 @@ _.Zones =
 			["groups"] = {
 				n(-2, {  -- Vendors
 					["groups"] = {
-						n(138033, {	-- Elly Fraze <Toys and Curiosities>
-							["groups"] = {
-								i(104324),	-- Foot Ball
-								i(104323),	-- The Pigskin
+						{	-- "Black Eye" Zenru [H]
+							["npcID"] = 132153,		-- "Black Eye" Zenru
+							["coords"] = {
+								{ 53.77, 85.97 }
 							},
-						}),
-						n(132114, {	-- Griftah <Amazing Amulets>
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								{	-- Counterfeit Rastakhan Mask
+									["itemID"] = 156659,	-- Counterfeit Rastakhan Mask
+									["description"] = "Return back to |CFFCC33FFGriftah|r and you will trade him the |CFFFFD700Counterfeit Rastakhan Mask|r in exchange for the toy |cFFFFFFFF[Coords: 53.02, 89.93]|r.",
+									["g"] = {
+										{	-- Zandalari Effigy Amulet
+											["itemID"] = 156649, 	-- Zandalari Effigy Amulet
+										},
+									},
+								},
+							},
+						},
+						{	-- Elly Fraze <Toys and Curiosities> [AH]
+							["npcID"] = 138033, 	-- Elly Fraze <Toys and Curiosities>
+							["coords"] = {
+								{ 48.46, 89.56 },
+							},
+							-- Note!! Both factions can interact despite being marked unfriendly in-game to Alliance
+							["g"] = {
+								{	-- Foot Ball
+									["itemID"] = 104324,	-- Foot Ball
+								},
+								{	-- The Pigskin
+									["itemID"] = 104323,	-- The Pigskin
+								},
+							},
+						},
+						{	-- Granda Watae [H]
+							["npcID"] = 132130,		-- Granda Watae
+							["coords"] = {
+								{ 42.16, 35.78 }
+							},
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								{	-- Centennial Blossom
+									["itemID"] = 156652,	-- Centennial Blossom
+									["description"] = "Visit |CFFCC33FFTrader Nog|r and trade them the |CFFFFD700Centennial Blossom|r for a |CFFFFD700Preserved Night Elf Head|r |cFFFFFFFF[Coords: 57.15, 91.47]|r.",
+									["g"] = {
+										{	-- Zandalari Effigy Amulet
+											["itemID"] = 156649, 	-- Zandalari Effigy Amulet
+										},
+									},
+								},
+							},
+						},
+						n(132114, {	-- Griftah <Amazing Amulets> [H]
 							["groups"] = {
 								i(156659, {	-- Counterfeit Rastakhan Mask
 									["groups"] = {
 										i(156649, {	-- Zandalari Effigy Amulet
-											["description"] = "To get this item you have to jump through the following hoops:\n\n|cFFFFFFFFStep 1:|r Purchase a |CFFFFD700Sack of \"Discarded\" Hearthstones|r from |CFFCC33FFGriftah|r.\n|cFFFFFFFFStep 2:|r Now visit |CFFCC33FFRakle the Wretched|r and trade him the |CFFFFD700Sack of \"Discarded\" Hearthstones|r to receive a |CFFFFD700Much-Too-Hot-Pepper|r.\n|cFFFFFFFFStep 3:|r Visit |CFFCC33FFTrader Haw'li|r and trade them the |CFFFFD700Much-Too-Hot-Pepper|r for some |CFFFFD700Golden Seeds|r.\n|cFFFFFFFFStep 4:|r Visit |CFFCC33FFGranda Watae|r and trade them the |CFFFFD700Golden Seeds|r for a |CFFFFD700Centennial Blossom|r.\n|cFFFFFFFFStep 5:|r Visit |CFFCC33FFTrader Nog|r and trade them the |CFFFFD700Centennial Blossom|r for a |CFFFFD700Preserved Night Elf Head|r.\n|cFFFFFFFFStep 6:|r Visit |CFFCC33FF\"Black Eye\" Zenru|r and trade them the |CFFFFD700Preserved Night Elf Head|r for a |CFFFFD700Counterfeit Rastakhan Mask|r.\n|cFFFFFFFFStep 7:|r Return back to |CFFCC33FFGriftah|r and you will trade him the |CFFFFD700Counterfeit Rastakhan Mask|r in exchange for the toy.",
+											["description"] = "To get this item you have to jump through the following hoops:\n\n|cFFFFFFFFStep 1:|r Purchase a |CFFFFD700Sack of \"Discarded\" Hearthstones|r from |CFFCC33FFGriftah|r |cFFFFFFFF[Coords: 53.02, 89.93]|r.\n|cFFFFFFFFStep 2:|r Now visit |CFFCC33FFRakle the Wretched|r and trade him the |CFFFFD700Sack of \"Discarded\" Hearthstones|r to receive a |CFFFFD700Much-Too-Hot-Pepper|r |cFFFFFFFF[Coords: 34.77, 11.58]|r.\n|cFFFFFFFFStep 3:|r Visit |CFFCC33FFTrader Haw'li|r and trade them the |CFFFFD700Much-Too-Hot-Pepper|r for some |CFFFFD700Golden Seeds|r |cFFFFFFFF[Coords: 37.81, 14.72]|r.\n|cFFFFFFFFStep 4:|r Visit |CFFCC33FFGranda Watae|r and trade them the |CFFFFD700Golden Seeds|r for a |CFFFFD700Centennial Blossom|r |cFFFFFFFF[Coords: 42.16, 35.78]|r.\n|cFFFFFFFFStep 5:|r Visit |CFFCC33FFTrader Nog|r and trade them the |CFFFFD700Centennial Blossom|r for a |CFFFFD700Preserved Night Elf Head|r |cFFFFFFFF[Coords: 57.15, 91.47]|r.\n|cFFFFFFFFStep 6:|r Visit |CFFCC33FF\"Black Eye\" Zenru|r and trade them the |CFFFFD700Preserved Night Elf Head|r for a |CFFFFD700Counterfeit Rastakhan Mask|r |cFFFFFFFF[Coords: 53.77, 85.97]|r.\n|cFFFFFFFFStep 7:|r Return back to |CFFCC33FFGriftah|r and you will trade him the |CFFFFD700Counterfeit Rastakhan Mask|r in exchange for the toy |cFFFFFFFF[Coords: 53.02, 89.93]|r.",
 										}),
-										i(156647, {	-- Sack of "Discarded Hearthstones
-											["f"] = 50,	-- Miscellaneous
-										}),
-										i(156650, {	-- Much-Too-Hot Pepper
-											["f"] = 50,	-- Miscellaneous
-										}),
-										i(156651, {	-- Golden Seeds
-											["f"] = 50,	-- Miscellaneous
-										}),
-										i(156652, {	-- Centennial Blossom
-											["f"] = 50,	-- Miscellaneous
-										}),
-										i(156655, {	-- Preserved Night Elf Head
-											["f"] = 50,	-- Miscellaneous
-										}),
+										{	-- Sack of "Discarded" Hearthstones
+											["itemID"] = 156647,	-- Sack of "Discarded" Hearthstones
+											["description"] = "Now visit |CFFCC33FFRakle the Wretched|r and trade him the |CFFFFD700Sack of \"Discarded\" Hearthstones|r to receive a |CFFFFD700Much-Too-Hot-Pepper|r |cFFFFFFFF[Coords: 34.77, 11.58]|r."
+										},
 									},
 								}),
 							},
+							["races"] = HORDE_ONLY,
+							["coords"] = {
+								{ 53.02, 89.93 },	-- Griftah
+								{ 34.77, 11.58 },	-- Much-Too-Hot Pepper
+								{ 37.81, 14.72 },	-- Golden Seeds
+								{ 42.16, 35.78 },	-- Centennial Blossom
+								{ 57.15, 91.47 },	-- Preserved Night Elf Head
+								{ 53.77, 85.97 },	-- Counterfeit Rastakhan Mask
+							},
 						}),
-						n(132097, {	-- Happy Holaua
+						{	-- Happy Holaua [AH] FINISH UP!!
+							["npcID"] = 132097, 	-- Happy Holaua
+							["coords"] = {
+								{ 56.01, 32.21 },
+							},
+							["itemID"] = 163036,	-- Polished Pet Charm
 							["groups"] = {
 								i(163036, {	-- Polished Pet Charm [Have to do it so it obeys faction filters]
 									["groups"] = {
@@ -65,8 +113,7 @@ _.Zones =
 									},
 								}),
 							},
-							--["itemID"] = 163036,	-- Polished Pet Charm
-						}),
+						},
 						n(131287, {	-- Natal'hakata <Zandalari Empire Emissary
 							["groups"] = {
 								i(160546),	-- Tabard of the Zandalari Empire*
@@ -139,6 +186,24 @@ _.Zones =
 								i(63045),	-- Reins of the Tan Riding Camel
 							},
 						}),
+						{	-- Rakle the Wretched [H]
+							["npcID"] = 126330,		-- Rakle the Wretched
+							["coords"] = {
+								{ 34.77, 11.58 }
+							},
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								{	-- Much-Too-Hot Pepper
+									["itemID"] = 156650,	-- Much-Too-Hot Pepper
+									["description"] = "Visit |CFFCC33FFTrader Haw'li|r and trade them the |CFFFFD700Much-Too-Hot-Pepper|r for some |CFFFFD700Golden Seeds|r |cFFFFFFFF[Coords: 37.81, 14.72]|r.",
+									["g"] = {
+										{	-- Zandalari Effigy Amulet
+											["itemID"] = 156649, 	-- Zandalari Effigy Amulet
+										},
+									},
+								},
+							},
+						},				
 						n(135447, {	--  Ransa Greyfeather <The Honorbound Emissary>
 							["groups"] = {
 								i(160545),	-- Tabard of the Honorbound
@@ -235,17 +300,50 @@ _.Zones =
 								i(163042),	-- Reins of the Mighty Caravan Brutosaur
 							},
 						}),
-						n(129597, {	-- Trader Haw'li
-							["groups"] = {
-								i(159749),	-- Haw'li's Hot & Spicy Chili
+						{	-- Trader Haw'li
+							["npcID"] = 129597, 	-- Trader Haw'li
+							["coords"] = {
+								{ 37.81, 14.72 }
 							},
-						}),
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								{	-- Golden Seeds
+									["itemID"] = 156651,	-- Golden Seeds
+									["description"] = "Visit |CFFCC33FFGranda Watae|r and trade them the |CFFFFD700Golden Seeds|r for a |CFFFFD700Centennial Blossom|r |cFFFFFFFF[Coords: 42.16, 35.78].",
+									["g"] = {
+										{	-- Zandalari Effigy Amulet
+											["itemID"] = 156649, 	-- Zandalari Effigy Amulet
+										},
+									},
+								},
+								{	-- Haw'li's Hot & Spicy Chili
+									["itemID"] = 159749,	-- Haw'li's Hot & Spicy Chili	Toy!!
+								},
+							},
+						},
+						{	-- Trader Nog [H]
+							["npcID"] = 125311,		-- Trader Nog
+							["coords"] = {
+								{ 57.15, 91.47 }
+							},
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								{	-- Preserved Night Elf Head
+									["itemID"] = 156655,	-- Preserved Night Elf Head
+									["description"] = "Visit |CFFCC33FF\"Black Eye\" Zenru|r and trade them the |CFFFFD700Preserved Night Elf Head|r for a |CFFFFD700Counterfeit Rastakhan Mask|r |cFFFFFFFF[Coords: 53.77, 85.97]|r.",
+									["g"] = {
+										{	-- Zandalari Effigy Amulet
+											["itemID"] = 156649, 	-- Zandalari Effigy Amulet
+										},
+									},
+								},
+							},
+						},
 						n(145837, {	-- Violet Shadowmend
 							i(139775),	-- Alliance Enthusiast
 							i(142379),	-- Dutiful Squire
 						}),
 					},
-					["races"] = HORDE_ONLY,
 				}),
 			},
 			["isRaid"] = true,
