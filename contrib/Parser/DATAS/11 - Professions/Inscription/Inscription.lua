@@ -239,18 +239,12 @@ profession(773, { -- Inscription
 		i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande
 		i(137782),	-- Vantus Rune Technique: Grand Magistrix Elisande
 		i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande
-		i(142105),	-- Vantus Rune Technique: Guarm
-		i(142108),	-- Vantus Rune Technique: Guarm
-		i(142111),	-- Vantus Rune Technique: Guarm
 		i(137763),	-- Vantus Rune Technique: Gul'dan
 		i(137783),	-- Vantus Rune Technique: Gul'dan
 		i(139651),	-- Vantus Rune Technique: Gul'dan
 		i(146337),	-- Vantus Rune Technique: Halls of Valor
 		i(146357),	-- Vantus Rune Technique: Halls of Valor
 		i(146377),	-- Vantus Rune Technique: Halls of Valor
-		i(142106),	-- Vantus Rune Technique: Helya
-		i(142109),	-- Vantus Rune Technique: Helya
-		i(142112),	-- Vantus Rune Technique: Helya
 		i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn
 		i(137779),	-- Vantus Rune Technique: High Botanist Tel'arn
 		i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn
@@ -263,9 +257,6 @@ profession(773, { -- Inscription
 		i(146339),	-- Vantus Rune Technique: Neltharion's Lair
 		i(146359),	-- Vantus Rune Technique: Neltharion's Lair
 		i(146379),	-- Vantus Rune Technique: Neltharion's Lair
-		i(142104),	-- Vantus Rune Technique: Odyn
-		i(142107),	-- Vantus Rune Technique: Odyn
-		i(142110),	-- Vantus Rune Technique: Odyn
 		i(146340),	-- Vantus Rune Technique: Return to Karazhan (Lower)
 		i(146360),	-- Vantus Rune Technique: Return to Karazhan (Lower)
 		i(146380),	-- Vantus Rune Technique: Return to Karazhan (Lower)

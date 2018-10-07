@@ -148,6 +148,8 @@ _.Instances =
 									["achievementID"] = 11394,	-- Trial of Valor
 									["criteriaID"] = 1,			-- Odyn
 								},
+								i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
+								i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
 								i(142540),	-- Mantle of the Victorious Dead
 								i(142431),	-- Gleaming Val'kyr Cuirass
 								i(142410),	-- Robes of Celestial Adornment
@@ -168,6 +170,8 @@ _.Instances =
 									["achievementID"] = 11394,	-- Trial of Valor
 									["criteriaID"] = 2,			-- Guarm
 								},
+								i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
+								i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
 								i(142412),	-- Windwhipped Sailcloth
 								i(142432),	-- Helbeast Skin Tunic
 								i(142423),	-- Bite-Resistant Wristclamps
@@ -187,6 +191,8 @@ _.Instances =
 									["achievementID"] = 11394,	-- Trial of Valor
 									["criteriaID"] = 3,			-- Helya
 								},
+								i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
+								i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
 								i(142428),	-- Sea Fan Pendant
 								i(142521),	-- Drape of the Unworthy
 								i(142433),	-- Corroded Val'kyr Chainmail
@@ -214,6 +220,8 @@ _.Instances =
 								["achievementID"] = 11394,	-- Trial of Valor
 								["criteriaID"] = 1,			-- Odyn
 							},
+							i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
+							i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
 							i(142540),	-- Mantle of the Victorious Dead
 							i(142431),	-- Gleaming Val'kyr Cuirass
 							i(142410),	-- Robes of Celestial Adornment
@@ -235,6 +243,8 @@ _.Instances =
 								["achievementID"] = 11394,	-- Trial of Valor
 								["criteriaID"] = 2,			-- Guarm
 							},
+							i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
+							i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
 							i(142412),	-- Windwhipped Sailcloth
 							i(142432),	-- Helbeast Skin Tunic
 							i(142423),	-- Bite-Resistant Wristclamps
@@ -255,6 +265,8 @@ _.Instances =
 								["achievementID"] = 11394,	-- Trial of Valor
 								["criteriaID"] = 3,			-- Helya
 							},
+							i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
+							i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
 							i(142428),	-- Sea Fan Pendant
 							i(142521),	-- Drape of the Unworthy
 							i(142433),	-- Corroded Val'kyr Chainmail
@@ -285,6 +297,8 @@ _.Instances =
 								["achievementID"] = 11426,	-- Heroic: Trial of Valor
 								["criteriaID"] = 1,			-- Heroic: Odyn
 							},
+							i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
+							i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
 							i(142540),	-- Mantle of the Victorious Dead
 							i(142431),	-- Gleaming Val'kyr Cuirass
 							i(142410),	-- Robes of Celestial Adornment
@@ -310,6 +324,8 @@ _.Instances =
 								["achievementID"] = 11426,	-- Heroic: Trial of Valor
 								["criteriaID"] = 2,			-- Heroic: Guarm
 							},
+							i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
+							i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
 							i(142412),	-- Windwhipped Sailcloth
 							i(142432),	-- Helbeast Skin Tunic
 							i(142423),	-- Bite-Resistant Wristclamps
@@ -338,6 +354,8 @@ _.Instances =
 								["achievementID"] = 11426,	-- Heroic: Trial of Valor
 								["criteriaID"] = 3,			-- Heroic: Helya
 							},
+							i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
+							i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
 							i(143507, {	-- Ensemble: Vestment of the Chosen Dead
 								["groups"] = {
 									i(143346),	-- Circlet of the Chosen Dead
@@ -425,6 +443,8 @@ _.Instances =
 								["criteriaID"] = 1,			-- Heroic: Odyn
 							},
 							ach(11396),	-- Mythic: Odyn
+							i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
+							i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
 							i(142540),	-- Mantle of the Victorious Dead
 							i(142431),	-- Gleaming Val'kyr Cuirass
 							i(142410),	-- Robes of Celestial Adornment
@@ -451,6 +471,8 @@ _.Instances =
 								["criteriaID"] = 2,			-- Heroic: Guarm
 							},
 							ach(11397),	-- Mythic: Guarm
+							i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
+							i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
 							i(142412),	-- Windwhipped Sailcloth
 							i(142432),	-- Helbeast Skin Tunic
 							i(142423),	-- Bite-Resistant Wristclamps
@@ -557,6 +579,8 @@ _.Instances =
 								["criteriaID"] = 3,			-- Heroic: Helya
 							},
 							ach(11398),	-- Mythic: Helya
+							i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
+							i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
 							i(142428),	-- Sea Fan Pendant
 							i(142521),	-- Drape of the Unworthy
 							i(142433),	-- Corroded Val'kyr Chainmail

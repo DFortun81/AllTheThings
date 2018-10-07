@@ -153,6 +153,7 @@ _.Instances = { tier(7, {	-- Legion
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
 						["criteriaID"] = 6,	-- Levantus slain [Criteria]
 					},
+					i(142109),	-- Vantus Rune Technique: Helya [Rank 3]
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
 						artifact(880), -- Find Hidden Artifact Skin
 					}),
@@ -214,6 +215,7 @@ _.Instances = { tier(7, {	-- Legion
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
 						["criteriaID"] = 2,	-- Nithogg slain [Criteria]
 					},
+					i(142107),	-- Vantus Rune Technique: Odyn [Rank 3]
 					i(140658),	-- Skull of Nithogg
 					i(141420),	-- Coif of Unstable Discharge
 					i(141418),	-- Helm of the Mountain Recluse
