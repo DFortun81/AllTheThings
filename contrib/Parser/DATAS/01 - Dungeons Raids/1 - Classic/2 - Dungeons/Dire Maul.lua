@@ -95,6 +95,10 @@ _.Instances =
 								["description"] = "|cff66ccffRequires Brazier of Invocation|r |cff3399ff(Dungeon Set 2 Questline)|r |cff66ccffto summon this boss.|r",
 							}),
 							cr(11492, e(405, {	-- Alzzin the Wildshaper
+								{
+									["achievementID"] = 644,	-- King of Dire Maul
+									["criteriaID"] = 1,	-- Alzzin the Wildshaper slain
+								},
 								i(18321),	-- Energetic Rod
 								i(18310),	-- Fiendish Machete
 								i(18328),	-- Shadewood Cloak
@@ -214,6 +218,10 @@ _.Instances =
 								i(18527),	-- Harmonious Gauntlets (7.3.5 - Moved to Cho'Rush the Observer)
 							})),
 							cr(11501, e(417, {	-- King Gordok
+								{
+									["achievementID"] = 644,	-- King of Dire Maul
+									["criteriaID"] = 3,	-- King Gordok slain
+								},
 								i(18520),	-- Barbarous Blade
 								i(18523),	-- Brightly Glowing Stone
 								i(18526),	-- Crown of the Ogre King
@@ -352,6 +360,10 @@ _.Instances =
 								i(18390),	-- Tanglemoss Leggings
 							})),
 							cr(11496, e(409, {	-- Immol'thar
+								{
+									["achievementID"] = 644,	-- King of Dire Maul
+									["criteriaID"] = 2,	-- Immol'thar slain
+								},
 								i(18372),	-- Blade of the New Moon
 								i(18381),	-- Evil Eye Pendant
 								i(18384),	-- Bile-Etched Spaulders
