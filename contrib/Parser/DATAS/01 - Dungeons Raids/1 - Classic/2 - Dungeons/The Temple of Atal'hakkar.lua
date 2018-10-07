@@ -28,58 +28,23 @@ _.Instances =
 						["achievementID"] = 913,	-- To Honor One's Elders						
 					}),							
 					n(-17, {	-- Quests
-						q(27605, {	-- Eranikus
+						{
+							["questID"] = 27605,	-- Eranikus
+							["qg"] = 46077,	-- Lord Itharius
 							["groups"] = {
 								i(65931),	-- Essence of Eranikus' Shade
 							},
+						},
+						{
+							["questID"] = 27604,	-- Jammal'an the Prophet
 							["qg"] = 46077,	-- Lord Itharius
-						}),
-						q(27604, {	-- Jammal'an the Prophet
-							["groups"] = {
-							},
+						},
+						{
+							["questID"] = 27633,	-- The Blood God Hakkar
 							["qg"] = 46077,	-- Lord Itharius
-						}),
-						q(27633, {	-- The Blood God Hakkar
-							["groups"] = {
-							},
-							["qg"] = 46077,	-- Lord Itharius
-						}),
+						},
 					}),				
 					n(  0, {	-- Zone Drop
-						i(10627, {	-- Bludgeon of the Grinning Dog
-							["crs"] = {
-								5270,	-- Atal'ai Corpse Eater
-								5271,	-- Atal'ai Deathwalker
-								5225,	-- Murk Spitter
-								5283,	-- Nightmare Wanderer
-								5280,	-- Nightmare Wyrmkin
-							},
-						}),
-						i(10628, {	-- Deathblow
-							["crs"] = {
-								5271,	-- Atal'ai Deathwalker
-								5273,	-- Atal'ai High Priest
-								8336,	-- Hakkari Sapper
-								5277,	-- Nightmare Scalebane
-								5283,	-- Nightmare Wanderer
-							},
-						}),
-						i(10629, {	-- Mistwalker Boots
-							["crs"] = {
-								5271,	-- Atal'ai Deathwalker
-								8336,	-- Hakkari Sapper
-								5277,	-- Nightmare Scalebane
-								5283,	-- Nightmare Wanderer
-								5280,	-- Nightmare Wyrmkin
-							},
-						}),
-						i(10631, {	-- Murkwater Gauntlets
-							["crs"] = {
-								5271,	-- Atal'ai Deathwalker
-								5277,	-- Nightmare Scalebane
-								5283,	-- Nightmare Wanderer
-							},
-						}),
 						i(78346, {	-- Pattern: Green Dragonscale Breastplate
 							["crs"] = {
 								5721,	-- Dreamscythe
@@ -101,6 +66,24 @@ _.Instances =
 								
 							},
 						}),
+						i(10627, {	-- Bludgeon of the Grinning Dog
+							["crs"] = {
+								5270,	-- Atal'ai Corpse Eater
+								5271,	-- Atal'ai Deathwalker
+								5225,	-- Murk Spitter
+								5283,	-- Nightmare Wanderer
+								5280,	-- Nightmare Wyrmkin
+							},
+						}),
+						i(10628, {	-- Deathblow
+							["crs"] = {
+								5271,	-- Atal'ai Deathwalker
+								5273,	-- Atal'ai High Priest
+								8336,	-- Hakkari Sapper
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+							},
+						}),
 						i(10626, {	-- Ragehammer
 							["crs"] = {
 								5721,	-- Dreamscythe
@@ -110,27 +93,6 @@ _.Instances =
 								5277,	-- Nightmare Scalebane
 								5283,	-- Nightmare Wanderer
 								5280,	-- Nightmare Wyrmkin
-							},
-						}),
-						i(10633, {	-- Silvershell Leggings
-							["crs"] = {
-								5277,	-- Nightmare Scalebane
-								5283,	-- Nightmare Wanderer
-							},
-						}),
-						i(10632, {	-- Slimescale Bracers
-							["crs"] = {
-								5270,	-- Atal'ai Corpse Walker
-								5271,	-- Atal'ai Deathwalker
-								5283,	-- Nightmare Wanderer
-								5280,	-- Nightmare Wyrmkin
-							},
-						}),
-						i(10630, {	-- Soulcatcher Halo
-							["crs"] = {
-								5271,	-- Atal'ai Deathwalker
-								5277,	-- Nightmare Scalebane
-								5283,	-- Nightmare Wanderer
 							},
 						}),
 						i(10625, {	-- Stealthblade
@@ -157,6 +119,43 @@ _.Instances =
 								5280,	-- Nightmare Wyrmkin
 							},
 						}),
+						i(10630, {	-- Soulcatcher Halo
+							["crs"] = {
+								5271,	-- Atal'ai Deathwalker
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+							},
+						}),
+						i(10632, {	-- Slimescale Bracers
+							["crs"] = {
+								5270,	-- Atal'ai Corpse Walker
+								5271,	-- Atal'ai Deathwalker
+								5283,	-- Nightmare Wanderer
+								5280,	-- Nightmare Wyrmkin
+							},
+						}),
+						i(10631, {	-- Murkwater Gauntlets
+							["crs"] = {
+								5271,	-- Atal'ai Deathwalker
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+							},
+						}),
+						i(10633, {	-- Silvershell Leggings
+							["crs"] = {
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+							},
+						}),
+						i(10629, {	-- Mistwalker Boots
+							["crs"] = {
+								5271,	-- Atal'ai Deathwalker
+								8336,	-- Hakkari Sapper
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+								5280,	-- Nightmare Wyrmkin
+							},
+						}),
 					}),
 					cr(8443, e(457, { 	-- Avatar of Hakkar
 						i(10844),	-- Spire of Hakkar
@@ -177,7 +176,13 @@ _.Instances =
 						i(10807),	-- Kilt of the Atal'ai Prophet
 					})),
 					e(  459, { 			-- Wardens of the Dream
-						n(5721, {	-- Dreamscythe
+						["crs"] = {
+							5721,	-- Dreamscythe
+							5722,	-- Hazzas
+							5719,	-- Morphaz
+							5720,	-- Weaver
+						},
+						["groups"] = {
 							i(12463), 	-- Drakefang Butcher
 							i(12243), 	-- Smoldering Claw
 							i(10797), 	-- Firebreather
@@ -185,37 +190,18 @@ _.Instances =
 							i(12464),	-- Bloodfire Talons
 							i(12466),	-- Dawnspire Cord
 							i(10795),	-- Drakeclaw Band
-						}),
-						n(5720, { 	-- Weaver
-							i(12463), 	-- Drakefang Butcher
-							i(12243), 	-- Smoldering Claw
-							i(10797), 	-- Firebreather
-							i(10796),	-- Drakestone
-							i(12464),	-- Bloodfire Talons
-							i(12466),	-- Dawnspire Cord
-							i(10795),	-- Drakeclaw Band
-						}),
-						n(5719, { 	-- Morphaz 
-							i(12463), 	-- Drakefang Butcher
-							i(12243), 	-- Smoldering Claw
-							i(10797), 	-- Firebreather
-							i(10796),	-- Drakestone
-							i(12464),	-- Bloodfire Talons
-							i(12466),	-- Dawnspire Cord
-							i(10795),	-- Drakeclaw Band
-						}),
-						n(5722, { 	-- Hazzas
-							i(12463), 	-- Drakefang Butcher
-							i(12243), 	-- Smoldering Claw
-							i(10797), 	-- Firebreather
-							i(10796),	-- Drakestone
-							i(12464),	-- Bloodfire Talons
-							i(12466),	-- Dawnspire Cord
-							i(10795),	-- Drakeclaw Band
-						}),
+						},
 					}),
 					cr(5709, e(463, { 	-- Shade of Erankikus
 						ach(641),	-- Sunken Temple
+						{
+							["itemID"] = 10454,	-- Essence of Eranikus
+							["questID"] = 3373,	-- The Essence of Eranikus
+							["u"] = 40,
+							["groups"] = {
+								un(2, i(10455)),	-- Chained Essence of Eranikus
+							},
+						},
 						i(10828),	-- Dire Nail
 						i(10847),	-- Dragon's Call
 						i(10837),	-- Tooth of Eranikus
@@ -225,6 +211,7 @@ _.Instances =
 						i(10829),	-- The Dragon's Eye
 					})),
 					n(-40, {	-- Legacy
+						["u"] = 12,
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
 								un(40, qc11(q(9053, { 	-- A Better Ingredient
@@ -270,9 +257,6 @@ _.Instances =
 									un(2, i(19984)),	-- Ebon Mask
 									un(2, i(20255)),	-- Whisperwalk Boots
 								}))),
-								un(40, q(3373, {	-- The Essence of Eranikus
-									un(2, i(10455)),	-- Chained Essence of Eranikus
-								})),
 								un(40, q(3528, {		-- The God Hakkar
 									un(2, i(10749)),	-- Avenguard Helm
 									un(2, i(10750)),	-- Lifeforce Dirk
@@ -299,64 +283,34 @@ _.Instances =
 							}),
 							n(  0, {	-- Zone Drop (Legacy)
 								un(7, i(15733)),	-- Pattern: Green Dragonscale Leggings (old version)
-								n(8580, {	-- Atal'alarion
-									un(2, i(10798)),	-- Atal'alarion Tusk Ring
-									un(2, i(10800)),	-- Darkwater Bracers
-									un(2, i(10799)),	-- Headspike
-								}),
-								n(5713, {	-- Gasher
-									un(2, i(10786)),	-- Atal'ai Boots
-									un(2, i(10784)),	-- Atal'ai Breastplate
-									un(2, i(10788)),	-- Atal'ai Girdle
-									un(2, i(10787)),	-- Atal'ai Gloves
-									un(2, i(10785)),	-- Atal'ai Leggings
-									un(2, i(10783)),	-- Atal'ai Spaulders
-								}),
-								n(5715, { 	-- Hukku
-									un(2, i(10786)),	-- Atal'ai Boots
-									un(2, i(10784)),	-- Atal'ai Breastplate
-									un(2, i(10788)),	-- Atal'ai Girdle
-									un(2, i(10787)),	-- Atal'ai Gloves
-									un(2, i(10785)),	-- Atal'ai Leggings
-									un(2, i(10783)),	-- Atal'ai Spaulders
-								}),
-								n(5714, {	-- Loro
-									un(2, i(10786)),	-- Atal'ai Boots
-									un(2, i(10784)),	-- Atal'ai Breastplate
-									un(2, i(10788)),	-- Atal'ai Girdle
-									un(2, i(10787)),	-- Atal'ai Gloves
-									un(2, i(10785)),	-- Atal'ai Leggings
-									un(2, i(10783)),	-- Atal'ai Spaulders
-								}),
-								n(5717, {	-- Mijan
-									un(2, i(10786)),	-- Atal'ai Boots
-									un(2, i(10784)),	-- Atal'ai Breastplate
-									un(2, i(10788)),	-- Atal'ai Girdle
-									un(2, i(10787)),	-- Atal'ai Gloves
-									un(2, i(10785)),	-- Atal'ai Leggings
-									un(2, i(10783)),	-- Atal'ai Spaulders
-								}),
-								n(5712, {	-- Zolo
-									un(2, i(10786)),	-- Atal'ai Boots
-									un(2, i(10784)),	-- Atal'ai Breastplate
-									un(2, i(10788)),	-- Atal'ai Girdle
-									un(2, i(10787)),	-- Atal'ai Gloves
-									un(2, i(10785)),	-- Atal'ai Leggings
-									un(2, i(10783)),	-- Atal'ai Spaulders
-								}),
-								n(5716, {	-- Zul'Lor
-									un(2, i(10786)),	-- Atal'ai Boots
-									un(2, i(10784)),	-- Atal'ai Breastplate
-									un(2, i(10788)),	-- Atal'ai Girdle
-									un(2, i(10787)),	-- Atal'ai Gloves
-									un(2, i(10785)),	-- Atal'ai Leggings
-									un(2, i(10783)),	-- Atal'ai Spaulders
-								}),
-								n(5708, {	-- Spawn of Hakkar
-									un(2, i(10801)),	-- Slitherscale Boots
-									un(2, i(10802)),	-- Wingveil Cloak
-								}),
 							}),
+							un(2, n(-1, {	-- Common Boss Drop
+								["qgs"] = {
+									5713,	-- Gasher
+									5715,	-- Hukku
+									5714,	-- Loro
+									5717,	-- Mijan
+									5712,	-- Zolo
+									5716,	-- Zul'Lor
+								},
+								["groups"] = {
+									un(2, i(10783)),	-- Atal'ai Spaulders
+									un(2, i(10787)),	-- Atal'ai Gloves
+									un(2, i(10784)),	-- Atal'ai Breastplate
+									un(2, i(10788)),	-- Atal'ai Girdle
+									un(2, i(10785)),	-- Atal'ai Leggings
+									un(2, i(10786)),	-- Atal'ai Boots
+								},
+							})),
+							un(2, n(8580, {	-- Atal'alarion
+								un(2, i(10799)),	-- Headspike
+								un(2, i(10800)),	-- Darkwater Bracers
+								un(2, i(10798)),	-- Atal'alarion Tusk Ring
+							})),
+							un(2, n(5708, {	-- Spawn of Hakkar
+								un(2, i(10801)),	-- Slitherscale Boots
+								un(2, i(10802)),	-- Wingveil Cloak
+							})),
 						},
 					}),
 				},
