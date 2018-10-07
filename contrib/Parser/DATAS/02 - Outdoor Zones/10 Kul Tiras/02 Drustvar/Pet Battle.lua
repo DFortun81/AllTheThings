@@ -13,6 +13,10 @@ _.Zones =
 							["speciesID"] = 2386,	-- Coastal Scuttler
 							["crs"] = { 143045 },	-- Coastal Scuttler
 						},
+						{	-- Squirrel
+							["speciesID"] = 379,	-- Squirrel
+							["crs"] = { 61081 },	-- Squirrel
+						},
 						{	-- River Otter
 							["speciesID"] = 2378,	-- River Otter
 							["crs"] = { 143037 },	-- River Otter
