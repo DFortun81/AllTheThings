@@ -1334,6 +1334,10 @@ _.Zones =
 								["creatureID"] = 120266
 							}),
 						}),
+						{
+							["itemID"] = 137775,	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
+							["description"] = "I got it after about ~20-30 min of fishing from a Cursed Queenfish pool in the lake near Narthalas Academy. No legendary pole equipped or any special lures.",
+						},
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -2504,40 +2508,50 @@ _.Zones =
 						i(136632),
 					}),
 					n(93973, {	-- Leyweaver Phaxondus
-						i(127023, { 				-- Pattern: Imbued Silkweave Epaulets
-							i(127000)					-- Imbued Silkweave Epaulets
-						})
+						i(127023),	-- Pattern: Imbued Silkweave Epaulets [Rank 1]
 					}),
 					n(107379, {	-- Marin Bladewing <Wardens Emissary>
-						i(137849),					-- Design: Twisted Pandemonite Choker
-						i(142333),					-- Recipe: Feathered Luffa
-						i(142331),					-- Recipe: Spiced Falcosaur Omelet
-						i(137713),					-- Schematic: Bolt-Action Headgun (Rank 3)
-						i(137714),					-- Schematic: Reinforced Headgun (Rank 3)
-						i(137715),					-- Schematic: Semi-Automagic Cranial Cannon (Rank 3)
-						i(137716),					-- Schematic: Sawed-Off Cranial Cannon (Rank 3)
-						i(137773),					-- Vantus Rune Technique: Cenarius (Rank 3)
-						i(137777),					-- Vantus Rune Technique: Spellblade Aluriel (Rank 3)
-						i(137781),					-- Vantus Rune Technique: Star Augur Etraeus (Rank 3)
-						i(136898), 					-- Fledgling Warden Owl Pet
-						i(130157), 					-- Syxsehnz Rod Toy
-						i(130191), 					-- Trapped Treasure Chest Kit Toy
-						i(139607), 					-- Drape of the Patient Hunter
-						i(139603), 					-- Vault Patroller's Warboots
-						i(140580), 					-- Warden's Tabard	
+						i(137849),	-- Design: Twisted Pandemonite Choker
+						i(142333),	-- Recipe: Feathered Luffa
+						i(142331),	-- Recipe: Spiced Falcosaur Omelet
+						i(137713),	-- Schematic: Bolt-Action Headgun (Rank 3)
+						i(137714),	-- Schematic: Reinforced Headgun (Rank 3)
+						i(137716),	-- Schematic: Sawed-Off Cranial Cannon (Rank 3)
+						i(137715),	-- Schematic: Semi-Automagic Cranial Cannon (Rank 3)
+						i(137773),	-- Vantus Rune Technique: Cenarius (Rank 3)
+						i(137777),	-- Vantus Rune Technique: Spellblade Aluriel (Rank 3)
+						i(137781),	-- Vantus Rune Technique: Star Augur Etraeus (Rank 3)
+						i(136898), 	-- Fledgling Warden Owl Pet
+						i(130157), 	-- Syxsehnz Rod Toy
+						i(130191), 	-- Trapped Treasure Chest Kit Toy
+						i(140580), 	-- Warden's Tabard
+						i(139607), 	-- Drape of the Patient Hunter
+						i(139603), 	-- Vault Patroller's Warboots
 					}),
 					n(107376, {	-- Veridis Fallon <Court of Farondis Emissary>
+						i(137978),	-- Pattern: Imbued Silkweave Gloves [Rank 3]
+						i(137977),	-- Pattern: Imbued Silkweave Hood [Rank 3]
+						i(138015),	-- Pattern: Silkweave Pantaloons [Rank 3]
+						i(137980),	-- Pattern: Imbued Silkweave Robe [Rank 3]
+						i(137780),	-- Vantus Rune Technique: Krosus [Rank 3]
+						i(137774),	-- Vantus Rune Technique: Skorpyron [Rank 3]
+						i(137779),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 3]
+						i(137776),	-- Vantus Rune Technique: Trilliax [Rank 3]
 						i(139556, {	-- Syriel Crescentfall's Notes: Ravenguard
 							artifact(224), -- Marksmanship Hunter Hidden Appearance
 						}),
-						i(140672), 					-- Court Scribe Pet
-						i(129279), 					-- Enchanted Stone Whistle Toy
-						i(139606), 					-- Cadet's Gaudy Scarf
-						i(140577), 					-- Court of Farondis Tabard
-						i(139595), 					-- Once-Fashionable Nar'thalas Leggings
-						i(129276, {					-- Beginner's Guide to Dimensional Rifting
-							ach(11175),					-- Higher Dimensional Rifting
+						i(129276, {	-- Beginner's Guide to Dimensional Rifting
+							ach(11175),	-- Higher Dimensional Rifting
 						}),
+						i(140672), 	-- Court Scribe Pet
+						i(129279), 	-- Enchanted Stone Whistle Toy
+						i(140577), 	-- Court of Farondis Tabard
+						i(139606), 	-- Cadet's Gaudy Scarf
+						i(139595), 	-- Once-Fashionable Nar'thalas Leggings
+						{
+							["itemID"] = 139631,	-- Vainglorious Draught
+							["questID"] = 43514,	-- A Vainglorious Past
+						},
 					}),
 				}),
 				n(-34, { 	-- World Quests

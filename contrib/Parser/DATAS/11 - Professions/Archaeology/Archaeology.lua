@@ -68,7 +68,9 @@ profession(794, {	-- Archaeology
 			sp(98560, { i(69776) }),	-- Ancient Amber
 		}),
 	}),
-	-- currency(1172),	-- Highborne (No collectible rewards. :/)
+	currency(1172, {	-- Highborne
+		i(137782),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3]
+	}),
 	currency(1173, {	-- Highmountain Tauren
 		n(-17, {	-- Quests
 			q(41193, {	-- Laying to Rest

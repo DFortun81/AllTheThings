@@ -1014,7 +1014,7 @@ _.Zones =
 							qa(39955, {	-- The Plot Thickens
 								["qg"] = 92195, -- Professor Pallin
 							}),
-							qa(43929, {	-- Vantus Mastery
+							q(43929, {	-- Vantus Mastery
 								["groups"] = {
 									i(137783),	-- Vantus Rune Technique: Gul'dan (Rank 3)
 								},

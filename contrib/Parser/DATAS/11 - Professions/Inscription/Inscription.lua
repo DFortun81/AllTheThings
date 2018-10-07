@@ -83,6 +83,47 @@ profession(773, { -- Inscription
 		WOD_CRAFTED_ITEM(113270),	-- Shadowtome
 		WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
 	}),
+	tier(7, {
+		un(1, i(146335)),	-- Vantus Rune Technique: Black Rook Hold
+		un(1, i(146355)),	-- Vantus Rune Technique: Black Rook Hold
+		un(1, i(146375)),	-- Vantus Rune Technique: Black Rook Hold
+		un(1, i(146344)),	-- Vantus Rune Technique: Cathedral of Eternal Night
+		un(1, i(146364)),	-- Vantus Rune Technique: Cathedral of Eternal Night
+		un(1, i(146384)),	-- Vantus Rune Technique: Cathedral of Eternal Night
+		un(1, i(146395)),	-- Vantus Rune Technique: Court of Stars
+		un(1, i(146397)),	-- Vantus Rune Technique: Court of Stars
+		un(1, i(146399)),	-- Vantus Rune Technique: Court of Stars
+		un(1, i(146336)),	-- Vantus Rune Technique: Darkheart Thicket
+		un(1, i(146356)),	-- Vantus Rune Technique: Darkheart Thicket
+		un(1, i(146376)),	-- Vantus Rune Technique: Darkheart Thicket
+		un(1, i(146396)),	-- Vantus Rune Technique: Eye of Azshara
+		un(1, i(146398)),	-- Vantus Rune Technique: Eye of Azshara
+		un(1, i(146400)),	-- Vantus Rune Technique: Eye of Azshara
+		un(1, i(146337)),	-- Vantus Rune Technique: Halls of Valor
+		un(1, i(146357)),	-- Vantus Rune Technique: Halls of Valor
+		un(1, i(146377)),	-- Vantus Rune Technique: Halls of Valor
+		un(1, i(146338)),	-- Vantus Rune Technique: Maw of Souls
+		un(1, i(146358)),	-- Vantus Rune Technique: Maw of Souls
+		un(1, i(146378)),	-- Vantus Rune Technique: Maw of Souls
+		un(1, i(146339)),	-- Vantus Rune Technique: Neltharion's Lair
+		un(1, i(146359)),	-- Vantus Rune Technique: Neltharion's Lair
+		un(1, i(146379)),	-- Vantus Rune Technique: Neltharion's Lair
+		un(1, i(146340)),	-- Vantus Rune Technique: Return to Karazhan (Lower)
+		un(1, i(146360)),	-- Vantus Rune Technique: Return to Karazhan (Lower)
+		un(1, i(146380)),	-- Vantus Rune Technique: Return to Karazhan (Lower)
+		un(1, i(146345)),	-- Vantus Rune Technique: Return to Karazhan (Upper)
+		un(1, i(146365)),	-- Vantus Rune Technique: Return to Karazhan (Upper)
+		un(1, i(146385)),	-- Vantus Rune Technique: Return to Karazhan (Upper)
+		un(1, i(146341)),	-- Vantus Rune Technique: The Arcway
+		un(1, i(146361)),	-- Vantus Rune Technique: The Arcway
+		un(1, i(146381)),	-- Vantus Rune Technique: The Arcway
+		un(1, i(146342)),	-- Vantus Rune Technique: Vault of the Wardens
+		un(1, i(146362)),	-- Vantus Rune Technique: Vault of the Wardens
+		un(1, i(146382)),	-- Vantus Rune Technique: Vault of the Wardens
+		un(1, i(146343)),	-- Vantus Rune Technique: Violet Hold
+		un(1, i(146363)),	-- Vantus Rune Technique: Violet Hold
+		un(1, i(146383)),	-- Vantus Rune Technique: Violet Hold
+	}),
 	n(-10068, { -- PLACE_HOLDER
 		i(162358),	-- Recipe: Codex of the Quiet Mind
 		i(162362),	-- Recipe: Contract: Order of Embers
@@ -176,7 +217,6 @@ profession(773, { -- Inscription
 		i(153034),	-- Technique: Glyph of the Voidling
 		i(141066),	-- Technique: Glyph of the Voidlord
 		i(104245),	-- Technique: Glyph of the Weaponmaster
-		i(143751),	-- Technique: Glyph of Twilight Bloom
 		i(141067),	-- Technique: Glyph of Wrathguard
 		i(141055),	-- Technique: Glyph of Yu'lon's Grace
 		i(120266),	-- Technique: Greater Ensorcelled Tarot
@@ -215,84 +255,6 @@ profession(773, { -- Inscription
 		i(118614),	-- Technique: Volatile Crystal
 		i(118615),	-- Technique: Warmaster's Firestick
 		i(118610),	-- Technique: Weapon Crystal
-		i(151654),	-- Vantus Rune Technique: Antorus, the Burning Throne
-		i(151656),	-- Vantus Rune Technique: Antorus, the Burning Throne
-		i(151655),	-- Vantus Rune Technique: Antorus, The Burning Throne
-		i(146335),	-- Vantus Rune Technique: Black Rook Hold
-		i(146355),	-- Vantus Rune Technique: Black Rook Hold
-		i(146375),	-- Vantus Rune Technique: Black Rook Hold
-		i(146344),	-- Vantus Rune Technique: Cathedral of Eternal Night
-		i(146364),	-- Vantus Rune Technique: Cathedral of Eternal Night
-		i(146384),	-- Vantus Rune Technique: Cathedral of Eternal Night
-		i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly
-		i(137775),	-- Vantus Rune Technique: Chronomatic Anomaly
-		i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly
-		i(146395),	-- Vantus Rune Technique: Court of Stars
-		i(146397),	-- Vantus Rune Technique: Court of Stars
-		i(146399),	-- Vantus Rune Technique: Court of Stars
-		i(146336),	-- Vantus Rune Technique: Darkheart Thicket
-		i(146356),	-- Vantus Rune Technique: Darkheart Thicket
-		i(146376),	-- Vantus Rune Technique: Darkheart Thicket
-		i(146396),	-- Vantus Rune Technique: Eye of Azshara
-		i(146398),	-- Vantus Rune Technique: Eye of Azshara
-		i(146400),	-- Vantus Rune Technique: Eye of Azshara
-		i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande
-		i(137782),	-- Vantus Rune Technique: Grand Magistrix Elisande
-		i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande
-		i(137763),	-- Vantus Rune Technique: Gul'dan
-		i(137783),	-- Vantus Rune Technique: Gul'dan
-		i(139651),	-- Vantus Rune Technique: Gul'dan
-		i(146337),	-- Vantus Rune Technique: Halls of Valor
-		i(146357),	-- Vantus Rune Technique: Halls of Valor
-		i(146377),	-- Vantus Rune Technique: Halls of Valor
-		i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn
-		i(137779),	-- Vantus Rune Technique: High Botanist Tel'arn
-		i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn
-		i(137760),	-- Vantus Rune Technique: Krosus
-		i(137780),	-- Vantus Rune Technique: Krosus
-		i(139648),	-- Vantus Rune Technique: Krosus
-		i(146338),	-- Vantus Rune Technique: Maw of Souls
-		i(146358),	-- Vantus Rune Technique: Maw of Souls
-		i(146378),	-- Vantus Rune Technique: Maw of Souls
-		i(146339),	-- Vantus Rune Technique: Neltharion's Lair
-		i(146359),	-- Vantus Rune Technique: Neltharion's Lair
-		i(146379),	-- Vantus Rune Technique: Neltharion's Lair
-		i(146340),	-- Vantus Rune Technique: Return to Karazhan (Lower)
-		i(146360),	-- Vantus Rune Technique: Return to Karazhan (Lower)
-		i(146380),	-- Vantus Rune Technique: Return to Karazhan (Lower)
-		i(146345),	-- Vantus Rune Technique: Return to Karazhan (Upper)
-		i(146365),	-- Vantus Rune Technique: Return to Karazhan (Upper)
-		i(146385),	-- Vantus Rune Technique: Return to Karazhan (Upper)
-		i(137754),	-- Vantus Rune Technique: Skorpyron
-		i(137774),	-- Vantus Rune Technique: Skorpyron
-		i(139642),	-- Vantus Rune Technique: Skorpyron
-		i(137757),	-- Vantus Rune Technique: Spellblade Aluriel
-		i(137777),	-- Vantus Rune Technique: Spellblade Aluriel
-		i(139645),	-- Vantus Rune Technique: Spellblade Aluriel
-		i(137761),	-- Vantus Rune Technique: Star Augur Etraeus
-		i(137781),	-- Vantus Rune Technique: Star Augur Etraeus
-		i(139649),	-- Vantus Rune Technique: Star Augur Etraeus
-		i(146341),	-- Vantus Rune Technique: The Arcway
-		i(146361),	-- Vantus Rune Technique: The Arcway
-		i(146381),	-- Vantus Rune Technique: The Arcway
-		i(137758),	-- Vantus Rune Technique: Tichondrius
-		i(137778),	-- Vantus Rune Technique: Tichondrius
-		i(139646),	-- Vantus Rune Technique: Tichondrius
-		i(146411),	-- Vantus Rune Technique: Tomb of Sargeras
-		i(146412),	-- Vantus Rune Technique: Tomb of Sargeras
-		i(146413),	-- Vantus Rune Technique: Tomb of Sargeras
-		i(137756),	-- Vantus Rune Technique: Trilliax
-		i(137776),	-- Vantus Rune Technique: Trilliax
-		i(139644),	-- Vantus Rune Technique: Trilliax
-		i(162124),	-- Vantus Rune Technique: Uldir
-		i(162125),	-- Vantus Rune Technique: Uldir
-		i(162121),	-- Vantus Rune Technique: Uldir
-		i(146342),	-- Vantus Rune Technique: Vault of the Wardens
-		i(146362),	-- Vantus Rune Technique: Vault of the Wardens
-		i(146382),	-- Vantus Rune Technique: Vault of the Wardens
-		i(146343),	-- Vantus Rune Technique: Violet Hold
-		i(146363),	-- Vantus Rune Technique: Violet Hold
-		i(146383),	-- Vantus Rune Technique: Violet Hold
 	}),
 	tier(8, {	-- Battle For Azeroth
 		filter(200, { -- Recipes

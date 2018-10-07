@@ -8,6 +8,24 @@ _.Instances =
 		["groups"] = {
 			inst(875, { 	-- Tomb of Sargeras
 				["groups"] = {
+					n(-1, {	-- Common Boss Drop
+						["crs"] = {
+							115844,	-- Goroth
+							120996,	-- Demonic Inquisition (Atrigan)
+							116407,	-- Harjatan
+							118523,	-- Sisters of the Moon (Huntress Kasparian)
+							115767,	-- Mistress Sassz'ine
+							118460,	-- The Desolate Host (Engine of Souls)
+							118289,	-- Maiden of Vigilance
+							120436,	-- Fallen Avatar
+							117269,	-- Kil'jaeden
+						},
+						["groups"] = {
+							i(146411),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 1]
+							i(146412),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 2]
+							i(146413),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 3]
+						},
+					}),
 					d(17, {		-- LFR
 						
 						["groups"] = {

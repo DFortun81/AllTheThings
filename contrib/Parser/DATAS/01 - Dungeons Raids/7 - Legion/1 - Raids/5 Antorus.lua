@@ -8,6 +8,26 @@ _.Instances =
 		["groups"] = {
 			inst(946, { -- Antorus, the Burning Throne
 				["groups"] = {
+					n(-1, {	-- Common Boss Drop
+						["crs"] = {
+							123371,	-- Garothi Worldbreaker
+							126916,	-- Felhounds of Sargeras
+							122367,	-- Antoran High Command
+							125562,	-- Eonar the Life-Bender
+							124393,	-- Portal Keeper Hasabel
+							125055,	-- Imonar the Soulhunter
+							125050,	-- Kin'garoth
+							125075,	-- Varimathras
+							122468,	-- The Coven of Shivarra
+							124691,	-- Aggramar
+							124828,	-- Argus the Unmaker
+						},
+						["groups"] = {
+							i(151654),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 1]
+							i(151655),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 2]
+							i(151656),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 3]
+						},
+					}),
 					d(17, {-- Looking For Raid
 						
 						["groups"] = {

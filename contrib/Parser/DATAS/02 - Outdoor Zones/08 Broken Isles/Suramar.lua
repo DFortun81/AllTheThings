@@ -938,7 +938,14 @@ _.Zones =
 					q(40154),	-- Eye of Azshara: The Scales of Serpentrix
 					q(41137),	-- Fall of the King
 					q(40883),	-- Fate of the Guard
-					q(45372),	-- Fate of the Nightborne
+					{
+						["questID"] = 45372,	-- Fate of the Nightborne
+						["qg"] = 115710,	-- Chief Telemancer Oculeth
+						["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
+						["groups"] = {
+							i(142436), -- Arcanist's Manasaber
+						},
+					},
 					q(40321),	-- Feathersong's Redemption
 					q(43106),	-- Feed Oculeth
 					q(43994),	-- Feed Thalyssra
