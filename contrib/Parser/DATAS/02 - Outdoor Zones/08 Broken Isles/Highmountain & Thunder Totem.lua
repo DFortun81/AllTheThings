@@ -1629,7 +1629,6 @@ _.Zones =
 						q(46190),	-- Ulgrom
 						q(41011),	-- Umbralshard Rituals
 						q(41428),	-- Unstable Portal
-						q(41665),	-- Vantus Rune Work Order: Ursoc
 						q(41824),	-- WANTED: Arru
 						q(44289),	-- WANTED: Arru
 						q(41836),	-- WANTED: Bodash the Hoarder

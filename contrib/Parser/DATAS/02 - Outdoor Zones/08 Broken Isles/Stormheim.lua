@@ -827,7 +827,6 @@ _.Zones =
 						q(42183),	-- To Battle!
 						q(41930),	-- Valor Calls
 						q(43963),	-- Vampirates!
-						q(41666),	-- Vantus Rune Work Order: Nythendra
 						q(43454),	-- WANTED: Egyl the Enduring
 						q(43620),	-- WANTED: Egyl the Enduring
 						q(43434),	-- WANTED: Fathnyr

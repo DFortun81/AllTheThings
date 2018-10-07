@@ -1470,7 +1470,6 @@ _.Zones =
 						q(42511),	-- Twisted Souls
 						q(41322),	-- Unscratched Hippogryph Scale
 						q(42160),	-- Unwelcome Visitors
-						q(41663),	-- Vantus Rune Work Order: Elerethe Renferal
 						q(42636),	-- WANTED: Arcanist Shal'iman
 						q(43605),	-- WANTED: Arcanist Shal'iman
 						q(42620),	-- WANTED: Arcavellus

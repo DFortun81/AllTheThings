@@ -224,9 +224,6 @@ profession(773, { -- Inscription
 		i(146344),	-- Vantus Rune Technique: Cathedral of Eternal Night
 		i(146364),	-- Vantus Rune Technique: Cathedral of Eternal Night
 		i(146384),	-- Vantus Rune Technique: Cathedral of Eternal Night
-		i(137753),	-- Vantus Rune Technique: Cenarius
-		i(137773),	-- Vantus Rune Technique: Cenarius
-		i(139641),	-- Vantus Rune Technique: Cenarius
 		i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly
 		i(137775),	-- Vantus Rune Technique: Chronomatic Anomaly
 		i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly
@@ -236,12 +233,6 @@ profession(773, { -- Inscription
 		i(146336),	-- Vantus Rune Technique: Darkheart Thicket
 		i(146356),	-- Vantus Rune Technique: Darkheart Thicket
 		i(146376),	-- Vantus Rune Technique: Darkheart Thicket
-		i(137750),	-- Vantus Rune Technique: Dragons of Nightmare
-		i(137770),	-- Vantus Rune Technique: Dragons of Nightmare
-		i(139638),	-- Vantus Rune Technique: Dragons of Nightmare
-		i(137752),	-- Vantus Rune Technique: Elerethe Renferal
-		i(137772),	-- Vantus Rune Technique: Elerethe Renferal
-		i(139640),	-- Vantus Rune Technique: Elerethe Renferal
 		i(146396),	-- Vantus Rune Technique: Eye of Azshara
 		i(146398),	-- Vantus Rune Technique: Eye of Azshara
 		i(146400),	-- Vantus Rune Technique: Eye of Azshara
@@ -263,9 +254,6 @@ profession(773, { -- Inscription
 		i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn
 		i(137779),	-- Vantus Rune Technique: High Botanist Tel'arn
 		i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn
-		i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption
-		i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption
-		i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption
 		i(137760),	-- Vantus Rune Technique: Krosus
 		i(137780),	-- Vantus Rune Technique: Krosus
 		i(139648),	-- Vantus Rune Technique: Krosus
@@ -275,9 +263,6 @@ profession(773, { -- Inscription
 		i(146339),	-- Vantus Rune Technique: Neltharion's Lair
 		i(146359),	-- Vantus Rune Technique: Neltharion's Lair
 		i(146379),	-- Vantus Rune Technique: Neltharion's Lair
-		i(137748),	-- Vantus Rune Technique: Nythendra
-		i(137768),	-- Vantus Rune Technique: Nythendra
-		i(139636),	-- Vantus Rune Technique: Nythendra
 		i(142104),	-- Vantus Rune Technique: Odyn
 		i(142107),	-- Vantus Rune Technique: Odyn
 		i(142110),	-- Vantus Rune Technique: Odyn
@@ -311,18 +296,12 @@ profession(773, { -- Inscription
 		i(162124),	-- Vantus Rune Technique: Uldir
 		i(162125),	-- Vantus Rune Technique: Uldir
 		i(162121),	-- Vantus Rune Technique: Uldir
-		i(137747),	-- Vantus Rune Technique: Ursoc
-		i(137767),	-- Vantus Rune Technique: Ursoc
-		i(139635),	-- Vantus Rune Technique: Ursoc
 		i(146342),	-- Vantus Rune Technique: Vault of the Wardens
 		i(146362),	-- Vantus Rune Technique: Vault of the Wardens
 		i(146382),	-- Vantus Rune Technique: Vault of the Wardens
 		i(146343),	-- Vantus Rune Technique: Violet Hold
 		i(146363),	-- Vantus Rune Technique: Violet Hold
 		i(146383),	-- Vantus Rune Technique: Violet Hold
-		i(137751),	-- Vantus Rune Technique: Xavius
-		i(137771),	-- Vantus Rune Technique: Xavius
-		i(139639),	-- Vantus Rune Technique: Xavius
 	}),
 	tier(8, {	-- Battle For Azeroth
 		filter(200, { -- Recipes

@@ -733,7 +733,6 @@ _.Zones =
 						q(42015),	-- Threads of Fate
 						q(44002),	-- Undersea Survey
 						q(43814),	-- Unspeakable Collaborators
-						q(41667),	-- Vantus Rune Work Order: Xavius
 						q(41346),	-- Velvety Stalker Hide
 						q(44017),	-- WANTED: Apothecary Faldren
 						q(44032),	-- WANTED: Apothecary Faldren

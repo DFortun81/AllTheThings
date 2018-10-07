@@ -7,6 +7,56 @@ _.Zones =
 		["groups"] = {
 			n(-34, { -- World Quests
 				["groups"] = {
+					filter(200, {	-- Recipes
+						{
+							["questID"] = 41664,	-- Vantus Rune Work Order: Dragons of Nightmare
+							["qg"] = 106901,	-- Sylvia Hartshorn <Dreamweaver Emissary>
+							["repeatable"] = true,
+							["groups"] = {
+								i(137770),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 3]
+							},
+						},
+						{
+							["questID"] = 41663,	-- Vantus Rune Work Order: Elerethe Renferal
+							["qg"] = 107376,	-- Veridis Fallon <Court of Farondis Emissary>
+							["repeatable"] = true,
+							["groups"] = {
+								i(137772),	-- Vantus Rune Technique: Elerethe Renferal [Rank 3]
+							},
+						},
+						{
+							["questID"] = 41668,	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
+							["qg"] = 32725,	-- Warmage Silva
+							["repeatable"] = true,
+							["groups"] = {
+								i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 3]
+							},
+						},
+						{
+							["questID"] = 41666,	-- Vantus Rune Work Order: Nythendra
+							["qg"] = 106904,	-- Valdemar Stormseeker <Valarjar Emissary>
+							["repeatable"] = true,
+							["groups"] = {
+								i(137768),	-- Vantus Rune Technique: Nythendra [Rank 3]
+							},
+						},
+						{
+							["questID"] = 41665,	-- Vantus Rune Work Order: Ursoc
+							["qg"] = 106902,	-- Ransa Greyfeather <Highmountain Emissary>
+							["repeatable"] = true,
+							["groups"] = {
+								i(137767),	-- Vantus Rune Technique: Ursoc [Rank 3]
+							},
+						},
+						{
+							["questID"] = 41667,	-- Vantus Rune Work Order: Xavius
+							["qg"] = 115736,	-- First Arcanist Thalyssra
+							["repeatable"] = true,
+							["groups"] = {
+								i(137771),	-- Vantus Rune Technique: Xavius [Rank 3]
+							},
+						},
+					}),
 					n(-322, { -- Cloak
 						i(134334), -- Disgraced Court Cloak
 						i(139074), -- Dreamwalker's Cloak
