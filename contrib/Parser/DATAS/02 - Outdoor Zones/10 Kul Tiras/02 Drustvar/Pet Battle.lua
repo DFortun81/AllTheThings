@@ -13,6 +13,10 @@ _.Zones =
 							["speciesID"] = 2386,	-- Coastal Scuttler
 							["crs"] = { 143045 },	-- Coastal Scuttler
 						},
+						{	-- Giant Woodworm
+							["speciesID"] = 2383,	-- Giant Woodworm
+							["crs"] = { 143042 }, -- Giant Woodworm	
+						},
 						{	-- Squirrel
 							["speciesID"] = 379,	-- Squirrel
 							["crs"] = { 61081 },	-- Squirrel
@@ -20,6 +24,14 @@ _.Zones =
 						{	-- River Otter
 							["speciesID"] = 2378,	-- River Otter
 							["crs"] = { 143037 },	-- River Otter
+						},
+						{	-- Sandyback Crawler
+							["speciesID"] =  2377,	-- Sandyback Crawler
+							["crs"] = { 143036 },	-- Sandyback Crawler
+						},
+						{	-- Shack Crab
+							["speciesID"] = 2381,	-- Shack Crab
+							["crs"] = { 143040 },	-- Shack Crab
 						},
 						{	-- Taptaf
 							["speciesID"] = 2198,	-- Taptaf
