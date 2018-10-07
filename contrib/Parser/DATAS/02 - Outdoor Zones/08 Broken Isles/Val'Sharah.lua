@@ -1429,6 +1429,9 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 						}),
+						n(-387, {	-- Relics
+							i(143682),	-- Viscous Terror
+						}),
 					},
 				}),
 				n(0, {		-- Zone Drops

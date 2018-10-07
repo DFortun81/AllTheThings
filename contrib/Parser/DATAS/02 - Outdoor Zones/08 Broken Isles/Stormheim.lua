@@ -1,4 +1,4 @@
----------------------------------------------------
+ ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 _.Zones =
@@ -1754,6 +1754,9 @@ _.Zones =
 						},
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
+					n(-387, {	-- Relics
+						i(143685),	-- Strength of the Nazjatar
+					}),
 				}),				
 				n(0, { 		-- Zone Drops
 					["groups"] = {
@@ -1762,7 +1765,7 @@ _.Zones =
 							},
 							["bonusID"] = 1812,
 						}),
-						i(141286, { -- Rite  of the Val'kyr
+						i(141286, { -- Rite of the Val'kyr
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
@@ -1847,7 +1850,6 @@ _.Zones =
 							},
 							["bonusID"] = 1812,
 						}),
-						
 						i(121132, {	-- Haustvelt Jerkin
 							["groups"] = {
 							},

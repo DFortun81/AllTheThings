@@ -649,39 +649,6 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(6272),	-- Pattern: Blue Linen Robe
 						i(10325),	-- Pattern: White Wedding Dress
 					}),
-					n(49701, {	-- Bario Matalli <Sous Chef>
-						currency(81, {	-- Epicurean's Award
-							i(65426),	-- Recipe: Baked Rockfish
-							i(65427),	-- Recipe: Basilisk Liverdog
-							i(65429),	-- Recipe: Beer-Basted Crocolisk
-							i(65424),	-- Recipe: Blackbelly Sushi
-							i(65411),	-- Recipe: Broiled Mountain Trout
-							i(65431),	-- Recipe: Chocolate Cookie
-							i(65430),	-- Recipe: Crocolisk Au Gratin
-							i(65422),	-- Recipe: Delicious Sagefish Tail
-							i(65408),	-- Recipe: Feathered Lure
-							i(65423),	-- Recipe: Fish Fry
-							i(65432),	-- Recipe: Fortune Cookie
-							i(65428),	-- Recipe: Grilled Dragon
-							i(65418),	-- Recipe: Hearty Seafood Soup
-							i(65415),	-- Recipe: Highland Spirits
-							i(65407),	-- Recipe: Lavascale Fillet
-							i(65409),	-- Recipe: Lavascale Minestrone
-							i(65412),	-- Recipe: Lightly Fried Lurker
-							i(65416),	-- Recipe: Lurker Lunch
-							i(65420),	-- Recipe: Mushroom Sauce Mudfish
-							i(65417),	-- Recipe: Pickled Guppy
-							i(65410),	-- Recipe: Salted Eye
-							i(68688),	-- Recipe: Scalding Murglesnout
-							i(65413),	-- Recipe: Seasoned Crab
-							i(65421),	-- Recipe: Severed Sagefish Head
-							i(65425),	-- Recipe: Skewered Eel
-							i(65433),	-- Recipe: South Island Iced Tea
-							i(65414),	-- Recipe: Starfire Espresso
-							i(65419),	-- Recipe: Tender Baked Turtle
-							i(65406),	-- Recipe: Whitecrest Gumbo
-						}),
-					}),
 					n(69975, {	-- Captain Dirgehammer <Cataclysmic Gladiator>
 						i(146639, { -- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["groups"] = {
@@ -1065,6 +1032,9 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(64876),	-- Bloodthirsty Gladiator's Wyrmhide Legguards
 						i(64877),	-- Bloodthirsty Gladiator's Wyrmhide Robes
 						i(64878),	-- Bloodthirsty Gladiator's Wyrmhide Spaulders					
+					}),
+					n(1286, {	-- Edna Mullby
+						i(20856),	-- Design: Heavy Golden Necklace of Battle
 					}),
 					n(5483, {	-- Erika Tate <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
@@ -1497,6 +1467,39 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(67086), -- Pattern: Vicious Wyrmhide Helm
 						i(67085), -- Pattern: Vicious Wyrmhide Legs	
 						i(67074), -- Pattern: Vicious Wyrmhide Shoulders
+					}),
+					n(49701, {	-- Jon Casper <Sous Chef>
+						currency(81, {	-- Epicurean's Award
+							i(65426),	-- Recipe: Baked Rockfish
+							i(65427),	-- Recipe: Basilisk Liverdog
+							i(65429),	-- Recipe: Beer-Basted Crocolisk
+							i(65424),	-- Recipe: Blackbelly Sushi
+							i(65411),	-- Recipe: Broiled Mountain Trout
+							i(65431),	-- Recipe: Chocolate Cookie
+							i(65430),	-- Recipe: Crocolisk Au Gratin
+							i(65422),	-- Recipe: Delicious Sagefish Tail
+							i(65408),	-- Recipe: Feathered Lure
+							i(65423),	-- Recipe: Fish Fry
+							i(65432),	-- Recipe: Fortune Cookie
+							i(65428),	-- Recipe: Grilled Dragon
+							i(65418),	-- Recipe: Hearty Seafood Soup
+							i(65415),	-- Recipe: Highland Spirits
+							i(65407),	-- Recipe: Lavascale Fillet
+							i(65409),	-- Recipe: Lavascale Minestrone
+							i(65412),	-- Recipe: Lightly Fried Lurker
+							i(65416),	-- Recipe: Lurker Lunch
+							i(65420),	-- Recipe: Mushroom Sauce Mudfish
+							i(65417),	-- Recipe: Pickled Guppy
+							i(65410),	-- Recipe: Salted Eye
+							i(68688),	-- Recipe: Scalding Murglesnout
+							i(65413),	-- Recipe: Seasoned Crab
+							i(65421),	-- Recipe: Severed Sagefish Head
+							i(65425),	-- Recipe: Skewered Eel
+							i(65433),	-- Recipe: South Island Iced Tea
+							i(65414),	-- Recipe: Starfire Espresso
+							i(65419),	-- Recipe: Tender Baked Turtle
+							i(65406),	-- Recipe: Whitecrest Gumbo
+						}),
 					}),
 					n(55684, {	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 						i(66122),	-- Plans: Vicious Pyrium Legguards

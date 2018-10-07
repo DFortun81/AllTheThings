@@ -2664,6 +2664,9 @@ _.Zones =
 						},		
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 					}),			
+					n(-387, {	-- Relics
+						i(141273),	-- Echo of Eons
+					}),
 				}),	
 				n(0, { 		-- Zone Drops
 					["groups"] = {

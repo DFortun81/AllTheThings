@@ -1345,6 +1345,9 @@ Legacy				qh( 1436),	-- Alliance Relations
 						i(25475),	-- Blue Wind Rider Mount
 						i(25476),	-- Green Wind Rider Mount
 					}),
+					n(3367, {	-- Felika <Trade Supplies>
+						i(20856),	-- Design: Heavy Golden Necklace of Battle
+					}),
 					n(133261, {	-- Feng Su <Cooking Trainer>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish

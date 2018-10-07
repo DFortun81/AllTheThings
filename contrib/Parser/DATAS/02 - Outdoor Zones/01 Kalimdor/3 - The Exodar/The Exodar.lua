@@ -265,6 +265,9 @@ _.Zones =
 						i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
 						i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
 					})),
+					na(17512, {	-- Arred <Jewelcrafting Supplies>
+						i(20856),	-- Design: Heavy Golden Necklace of Battle
+					}),
 					a(n(16722, {	-- Egomis <Enchanting Supplies>
 						i(22565),	-- Formula: Large Prismatic Shard
 						i(20753),	-- Formula: Lesser Wizard Oil

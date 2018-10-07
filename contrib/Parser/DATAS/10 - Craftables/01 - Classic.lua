@@ -257,6 +257,11 @@ _.Craftables =
 			i(10724),	-- Gnomish Rocket Boots
 			i(7189),	-- Goblin Rocket Boots
 		}),
+		n(-186, { -- Jewelcrafting
+			n(-384, {	-- Neck
+				i(20831),	-- Heavy Golden Necklace of Battle
+			}),
+		}),
 		n(-187, { -- Leatherworking
 			n(-322, {	-- Cloak
 				un(8, i(18509)),	-- Chromatic Cloak

@@ -95,7 +95,6 @@ profession(755, { -- Jewelcrafting
 		i(71943),	-- Design: Bold Queen's Garnet
 		i(41576),	-- Design: Bold Scarlet Ruby
 		i(41798),	-- Design: Bracing Earthsiege Diamond
-		i(25903),	-- Design: Bracing Earthstorm Diamond
 		i(52435),	-- Design: Bracing Shadowspirit Diamond
 		i(24168),	-- Design: Braided Eternium Chain
 		i(52464),	-- Design: Brazen Elementium Medallion
@@ -287,7 +286,6 @@ profession(755, { -- Jewelcrafting
 		i(35200),	-- Design: Hard Khorium Band
 		i(35203),	-- Design: Hard Khorium Choker
 		i(24163),	-- Design: Heavy Felsteel Ring
-		i(20856),	-- Design: Heavy Golden Necklace of Battle
 		i(20971),	-- Design: Heavy Iron Knuckles
 		i(83872),	-- Design: Impassive Primal Diamond
 		i(52444),	-- Design: Impassive Shadowspirit Diamond
@@ -406,7 +404,6 @@ profession(755, { -- Jewelcrafting
 		i(24214),	-- Design: Potent Noble Topaz
 		i(32304),	-- Design: Potent Pyrestone
 		i(35269),	-- Design: Potent Pyrestone
-		i(25902),	-- Design: Powerful Earthstorm Diamond
 		i(83901),	-- Design: Powerful Primal Diamond
 		i(52442),	-- Design: Powerful Shadowspirit Diamond
 		i(46920),	-- Design: Precise Cardinal Ruby

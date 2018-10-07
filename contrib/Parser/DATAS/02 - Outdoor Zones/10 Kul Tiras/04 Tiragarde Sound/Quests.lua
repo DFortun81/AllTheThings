@@ -263,9 +263,22 @@ _.Zones =
 							crit(7),		-- Castaways and Cutouts
 						})),
 						--]]
+						--------------------------------------
+						-- Fizzlesprings Resort
+						--------------------------------------
 						a(q(48516, {	-- Toxic Community [Alliance Only]
 							["qg"] = 126511, -- Skinner MacGuff
 							["sourceQuests"] = { 48505 },	-- Lovesick and Lost [Alliance Only]
+						})),
+						a(q(50542, {	-- An Explosive Opportunity
+							["qg"] = 129858,	-- Wulfred Fizzbracket
+						})),
+						a(q(49531, {	-- The Beauty of Marketing
+							["qg"] = 129858,	-- Wulfred Fizzbracket
+							["sourceQuests"] = { 50542 },	-- An Explosive Opportunity
+							["groups"] = {
+								i(158225),	-- Over-Engineered Flash Bulb
+							},
 						})),
 						--------------------------------------
 						-- Hatherford

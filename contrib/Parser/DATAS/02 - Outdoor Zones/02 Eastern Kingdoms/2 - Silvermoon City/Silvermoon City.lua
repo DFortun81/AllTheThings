@@ -157,6 +157,9 @@ _.Zones =
 						i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
 						i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
 					}),
+					n(16624, {	-- Gelanthis <Jewelcrafting Supplies>
+						i(20856),	-- Design: Heavy Golden Necklace of Battle
+					}),
 					n(16610, {	-- Kredis <Tabard Vendor>
 						["groups"] = {
 							h(i(20131)),	-- Battle Tabard of the Defilers

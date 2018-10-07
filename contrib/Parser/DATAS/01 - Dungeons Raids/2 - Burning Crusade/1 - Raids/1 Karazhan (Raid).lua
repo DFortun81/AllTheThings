@@ -19,6 +19,13 @@ _.Instances =
 							},
 							["description"] = "This vendor is located in the Livery Stables.",
 						}),
+						n(17518, { 	-- Ythyar
+							["groups"] = {	
+								i(25903),	-- Design: Bracing Earthstorm Diamond
+								i(25902),	-- Design: Powerful Earthstorm Diamond
+							},
+							["description"] = "This vendor is located in the Guardian's Library.",
+						}),
 					}),
 					n( 0, {	-- Zone Drop
 						n(16406, {	-- Phantom Attendant

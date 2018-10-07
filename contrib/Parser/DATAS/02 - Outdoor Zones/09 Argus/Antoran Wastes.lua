@@ -936,6 +936,9 @@ _.Zones =
 							i(150956),	-- Garothi Greaves
 							i(150963),	-- Garothi Sabatons
 						}),
+						n(-387, {	-- Relics
+							i(151011),	-- Stygian Munition Casing
+						}),
 					},
 				}),
 				n(0, { 		-- Zone Drop
