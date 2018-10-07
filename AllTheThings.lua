@@ -4509,7 +4509,14 @@ frame:SetSize(1, 1);
 frame:Hide();
 frame.events = {};
 frame:SetScript("OnEvent", function(self, e, ...) (self.events[e] or tostringall)(...); end);
+frame:RegisterEvent("PLAYER_LOGIN");
 frame:RegisterEvent("QUEST_LOG_UPDATE");
+frame.events.PLAYER_LOGIN = function()
+	if IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
+		completed = true;
+		frame:UnregisterEvent("PLAYER_LOGIN");
+	end
+end
 frame.events.QUEST_LOG_UPDATE = function()
 	if IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
 		completed = true;
