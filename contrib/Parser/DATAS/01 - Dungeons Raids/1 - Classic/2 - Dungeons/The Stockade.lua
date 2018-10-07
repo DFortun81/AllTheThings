@@ -24,13 +24,19 @@ _.Instances =
 						})),
 						qg(46417, qa(27733)),	-- The Good Ol' Switcheroo
 					}),
-					cr(46254, e(464, {	-- Hogger
-						ach(633),	-- Stormwind Stockade
-						i(  1959),	-- Cold Iron Pick
-						i(151074), 	-- Turnkey's Pauldrons
-						i(  1934),	-- Hogger's Trousers
-						i(132569),	-- Stolen Jailer's Greaves
-						i(  2168),	-- Corpse Rompers
+					n(0, { -- Zone Drop
+						i(7360, {  -- Recipe: Dark Leather Gloves
+							["crs"] = {
+								46382, -- Petty Criminal
+							},
+						}),
+					}),
+					cr(46383, e(466, {	-- Randolph Moloch
+						i( 63346),	-- Wicked Dagger
+						i( 63345),	-- Noble's Robe
+						i(151077),	-- Cast Iron Waistplate
+						i( 63344),	-- Standard Issue Prisoner Shoes
+						i(132570),	-- Stolen Guard's Chain Boots
 					})),
 					cr(46264, e(465, {	-- Lord Overheat
 						i(151075),	-- Cinderstitch Tunic 
@@ -39,20 +45,14 @@ _.Instances =
 						i(  5967),	-- Girdle of Nobility
 						i(  1929),	-- Silk-Threaded Trousers
 					})),
-					cr(46383, e(466, {	-- Randolph Moloch
-						i( 63346),	-- Wicked Dagger
-						i( 63345),	-- Noble's Robe
-						i(151077),	-- Cast Iron Waistplate
-						i( 63344),	-- Standard Issue Prisoner Shoes
-						i(132570),	-- Stolen Guard's Chain Boots
+					cr(46254, e(464, {	-- Hogger
+						ach(633),	-- Stormwind Stockade
+						i(  1959),	-- Cold Iron Pick
+						i(151074), 	-- Turnkey's Pauldrons
+						i(  1934),	-- Hogger's Trousers
+						i(132569),	-- Stolen Jailer's Greaves
+						i(  2168),	-- Corpse Rompers
 					})),
-					n(0, { -- Zone Drop
-						i(7360, {  -- Recipe: Dark Leather Gloves
-							["crs"] = {
-								46382, -- Petty Criminal
-							},
-						}),
-					}),
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
@@ -69,6 +69,11 @@ _.Instances =
 									un(2, i(3400)),	-- Lucine Longsword
 								})),
 							}),
+							n(  0, {	-- Zone Drop (Legacy)
+								un(43, n(1666, { 	-- Kam Deepfury
+									un(2, i(2280)),	-- Kam's Walking Stick	
+								})),
+							}),
 							n(-16, {	-- Rares (Legacy)
 								un(43, n(1720, {	-- Bruegal Ironknuckle
 									["groups"] = {
@@ -77,11 +82,6 @@ _.Instances =
 										un(2, i(2941)),	-- Prison Shank
 									},
 									["description"] = "This is a rare that was not always present.",
-								})),
-							}),
-							n(  0, {	-- Zone Drop (Legacy)
-								un(43, n(1666, { 	-- Kam Deepfury
-									un(2, i(2280)),	-- Kam's Walking Stick	
 								})),
 							}),
 						},
