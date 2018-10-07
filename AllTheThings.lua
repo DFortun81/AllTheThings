@@ -4601,10 +4601,14 @@ app.BaseNPC = {
 			return t.npcID > 0 and t.npcID;
 		elseif key == "trackable" then
 			return t.questID;
+		elseif key == "collectible" then
+			return t.questID and not t.repeatable and GetDataMember("TreatQuestsAsCollectible");
 		elseif key == "saved" then
-			if IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID) then
-				return true;
-			end
+			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
+		elseif key == "collected" then
+			return t.saved;
+		elseif key == "repeatable" then
+			return t.isDaily or t.isWeekly;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
