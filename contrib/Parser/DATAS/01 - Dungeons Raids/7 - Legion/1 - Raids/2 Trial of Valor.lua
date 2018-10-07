@@ -9,346 +9,12 @@ _.Instances =
 			inst(861, { 	-- Trial of Valor
 				["groups"] = {
 					n(-17, {	-- Quests 			
-						q(45088, {
-							i(143506, {	-- Ensemble: Vestment of the Chosen Dead
-								["groups"] = {
-									i(143346),	-- Circlet of the Chosen Dead
-									i(143356),	-- Mantle of the Chosen Dead
-									i(143369),	-- Drape of the Chosen Dead
-									i(143353),	-- Robe of the Chosen Dead
-									i(143362),	-- Bracers of the Chosen Dead
-									i(143343),	-- Gloves of the Chosen Dead
-									i(143359),	-- Sash of the Chosen Dead
-									i(143350),	-- Pantaloons of the Chosen Dead
-									i(143338),	-- Sandals of the Chosen Dead
-								},
-								["classes"] = { 5, 8, 9 }, -- Priest, Mage, Warock
-							}),		
-							i(143510, {	-- Ensemble: Garb of the Chosen Dead
-								["groups"] = {	
-									i(143348),	-- Hood of the Chosen Dead
-									i(143354),	-- Shoulderpads of the Chosen Dead
-									i(143366),	-- Wrap of the Chosen Dead
-									i(143336),	-- Tunic of the Chosen Dead
-									i(143365),	-- Wristguards of the Chosen Dead
-									i(143341),	-- Grips of the Chosen Dead
-									i(143361),	-- Strap of the Chosen Dead
-									i(143352),	-- Leggings of the Chosen Dead
-									i(143340),	-- Boots of the Chosen Dead
-								},
-								["classes"] = { 11, 4, 10, 12 }, -- Druid, Rogue, Monk, Demon Hunter
-							}),		
-							i(143514, {	-- Ensemble: Chains of the Chosen Dead	
-								["groups"] = {
-									i(143347),	-- Coif of the Chosen Dead
-									i(143357),	-- Pauldrons of the Chosen Dead
-									i(143368),	-- Cloak of the Chosen Dead
-									i(143335),	-- Chain Shirt of the Chosen Dead
-									i(143364),	-- Armbands of the Chosen Dead
-									i(143344),	-- Gauntlets of the Chosen Dead
-									i(143360),	-- Girdle of the Chosen Dead
-									i(143351),	-- Chain Leggings of the Chosen Dead
-									i(143339),	-- Sabatons of the Chosen Dead
-								},
-								["classes"] = { 3, 7 }, -- Hunter, Shaman
-							}),		
-							i(143518, {	-- Ensemble: Funerary Plate of the Chosen Dead	
-								["groups"] = {
-									i(143345),	-- Visor of the Chosen Dead
-									i(143355),	-- Shoulderplates of the Chosen Dead
-									i(143367),	-- Greatcloak of the Chosen Dead
-									i(143334),	-- Chestplate of the Chosen Dead
-									i(143363),	-- Wristclamps of the Chosen Dead
-									i(143342),	-- Handguards of the Chosen Dead
-									i(143358),	-- Waistplate of the Chosen Dead
-									i(143349),	-- Legplates of the Chosen Dead
-									i(143337),	-- Treads of the Chosen Dead
-								},
-								["classes"] = { 2, 1, 6 }, -- Paladin, Warrior, Death Knight
-							}),		
-						}),
-					}),
-					d(17, {		-- LFR 
-						["groups"] = {
-							n(0, { 		-- Zone Drop
-								i(142541), -- Drape of the Forgotten Souls
-							}),
-							ach(11394, { 	-- Trial of Valor
-								cr(114263, e(1819, {	-- Odyn
-									i(143509, {	-- Ensemble: Vestment of the Chosen Dead
-										["groups"] = {
-											i(143346),	-- Circlet of the Chosen Dead
-											i(143356),	-- Mantle of the Chosen Dead
-											i(143369),	-- Drape of the Chosen Dead
-											i(143353),	-- Robe of the Chosen Dead
-											i(143362),	-- Bracers of the Chosen Dead
-											i(143343),	-- Gloves of the Chosen Dead
-											i(143359),	-- Sash of the Chosen Dead
-											i(143350),	-- Pantaloons of the Chosen Dead
-											i(143338),	-- Sandals of the Chosen Dead
-										},
-										["classes"] = { 5, 8, 9 }, -- Priest, Mage, Warock
-									}),		
-									i(143513, {	-- Ensemble: Garb of the Chosen Dead
-										["groups"] = {	
-											i(143348),	-- Hood of the Chosen Dead
-											i(143354),	-- Shoulderpads of the Chosen Dead
-											i(143366),	-- Wrap of the Chosen Dead
-											i(143336),	-- Tunic of the Chosen Dead
-											i(143365),	-- Wristguards of the Chosen Dead
-											i(143341),	-- Grips of the Chosen Dead
-											i(143361),	-- Strap of the Chosen Dead
-											i(143352),	-- Leggings of the Chosen Dead
-											i(143340),	-- Boots of the Chosen Dead
-										},
-										["classes"] = { 11, 4, 10, 12 }, -- Druid, Rogue, Monk, Demon Hunter
-									}),		
-									i(143517, {	-- Ensemble: Chains of the Chosen Dead	
-										["groups"] = {
-											i(143347),	-- Coif of the Chosen Dead
-											i(143357),	-- Pauldrons of the Chosen Dead
-											i(143368),	-- Cloak of the Chosen Dead
-											i(143335),	-- Chain Shirt of the Chosen Dead
-											i(143364),	-- Armbands of the Chosen Dead
-											i(143344),	-- Gauntlets of the Chosen Dead
-											i(143360),	-- Girdle of the Chosen Dead
-											i(143351),	-- Chain Leggings of the Chosen Dead
-											i(143339),	-- Sabatons of the Chosen Dead
-										},
-										["classes"] = { 3, 7 }, -- Hunter, Shaman
-									}),		
-									i(143521, {	-- Ensemble: Funerary Plate of the Chosen Dead	
-										["groups"] = {
-											i(143345),	-- Visor of the Chosen Dead
-											i(143355),	-- Shoulderplates of the Chosen Dead
-											i(143367),	-- Greatcloak of the Chosen Dead
-											i(143334),	-- Chestplate of the Chosen Dead
-											i(143363),	-- Wristclamps of the Chosen Dead
-											i(143342),	-- Handguards of the Chosen Dead
-											i(143358),	-- Waistplate of the Chosen Dead
-											i(143349),	-- Legplates of the Chosen Dead
-											i(143337),	-- Treads of the Chosen Dead
-										},
-										["classes"] = { 2, 1, 6 }, -- Paladin, Warrior, Death Knight
-									}),	
-									i(142540),
-									i(142410),
-									i(142431),
-									i(142419),
-									i(142430),
-									i(142411),
-									i(142421),
-									i(142425),
-									i(142422)
-								})),
-								cr(114344, e(1830, {	-- Guarm
-									i(143509, {	-- Ensemble: Vestment of the Chosen Dead
-										["groups"] = {
-											i(143346),	-- Circlet of the Chosen Dead
-											i(143356),	-- Mantle of the Chosen Dead
-											i(143369),	-- Drape of the Chosen Dead
-											i(143353),	-- Robe of the Chosen Dead
-											i(143362),	-- Bracers of the Chosen Dead
-											i(143343),	-- Gloves of the Chosen Dead
-											i(143359),	-- Sash of the Chosen Dead
-											i(143350),	-- Pantaloons of the Chosen Dead
-											i(143338),	-- Sandals of the Chosen Dead
-										},
-										["classes"] = { 5, 8, 9 }, -- Priest, Mage, Warock
-									}),		
-									i(143513, {	-- Ensemble: Garb of the Chosen Dead
-										["groups"] = {	
-											i(143348),	-- Hood of the Chosen Dead
-											i(143354),	-- Shoulderpads of the Chosen Dead
-											i(143366),	-- Wrap of the Chosen Dead
-											i(143336),	-- Tunic of the Chosen Dead
-											i(143365),	-- Wristguards of the Chosen Dead
-											i(143341),	-- Grips of the Chosen Dead
-											i(143361),	-- Strap of the Chosen Dead
-											i(143352),	-- Leggings of the Chosen Dead
-											i(143340),	-- Boots of the Chosen Dead
-										},
-										["classes"] = { 11, 4, 10, 12 }, -- Druid, Rogue, Monk, Demon Hunter
-									}),		
-									i(143517, {	-- Ensemble: Chains of the Chosen Dead	
-										["groups"] = {
-											i(143347),	-- Coif of the Chosen Dead
-											i(143357),	-- Pauldrons of the Chosen Dead
-											i(143368),	-- Cloak of the Chosen Dead
-											i(143335),	-- Chain Shirt of the Chosen Dead
-											i(143364),	-- Armbands of the Chosen Dead
-											i(143344),	-- Gauntlets of the Chosen Dead
-											i(143360),	-- Girdle of the Chosen Dead
-											i(143351),	-- Chain Leggings of the Chosen Dead
-											i(143339),	-- Sabatons of the Chosen Dead
-										},
-										["classes"] = { 3, 7 }, -- Hunter, Shaman
-									}),		
-									i(143521, {	-- Ensemble: Funerary Plate of the Chosen Dead	
-										["groups"] = {
-											i(143345),	-- Visor of the Chosen Dead
-											i(143355),	-- Shoulderplates of the Chosen Dead
-											i(143367),	-- Greatcloak of the Chosen Dead
-											i(143334),	-- Chestplate of the Chosen Dead
-											i(143363),	-- Wristclamps of the Chosen Dead
-											i(143342),	-- Handguards of the Chosen Dead
-											i(143358),	-- Waistplate of the Chosen Dead
-											i(143349),	-- Legplates of the Chosen Dead
-											i(143337),	-- Treads of the Chosen Dead
-										},
-										["classes"] = { 2, 1, 6 }, -- Paladin, Warrior, Death Knight
-									}),	
-									i(142412),
-									i(142432),
-									i(142423),
-									i(142415),
-									i(142434),
-									i(142435),
-									i(142413),
-									i(142426),
-									i(142417)
-								})),
-								cr(114537, e(1829, {	-- Helya
-									i(143509, {	-- Ensemble: Vestment of the Chosen Dead
-										["groups"] = {
-											i(143346),	-- Circlet of the Chosen Dead
-											i(143356),	-- Mantle of the Chosen Dead
-											i(143369),	-- Drape of the Chosen Dead
-											i(143353),	-- Robe of the Chosen Dead
-											i(143362),	-- Bracers of the Chosen Dead
-											i(143343),	-- Gloves of the Chosen Dead
-											i(143359),	-- Sash of the Chosen Dead
-											i(143350),	-- Pantaloons of the Chosen Dead
-											i(143338),	-- Sandals of the Chosen Dead
-										},
-										["classes"] = { 5, 8, 9 }, -- Priest, Mage, Warock
-									}),		
-									i(143513, {	-- Ensemble: Garb of the Chosen Dead
-										["groups"] = {	
-											i(143348),	-- Hood of the Chosen Dead
-											i(143354),	-- Shoulderpads of the Chosen Dead
-											i(143366),	-- Wrap of the Chosen Dead
-											i(143336),	-- Tunic of the Chosen Dead
-											i(143365),	-- Wristguards of the Chosen Dead
-											i(143341),	-- Grips of the Chosen Dead
-											i(143361),	-- Strap of the Chosen Dead
-											i(143352),	-- Leggings of the Chosen Dead
-											i(143340),	-- Boots of the Chosen Dead
-										},
-										["classes"] = { 11, 4, 10, 12 }, -- Druid, Rogue, Monk, Demon Hunter
-									}),		
-									i(143517, {	-- Ensemble: Chains of the Chosen Dead	
-										["groups"] = {
-											i(143347),	-- Coif of the Chosen Dead
-											i(143357),	-- Pauldrons of the Chosen Dead
-											i(143368),	-- Cloak of the Chosen Dead
-											i(143335),	-- Chain Shirt of the Chosen Dead
-											i(143364),	-- Armbands of the Chosen Dead
-											i(143344),	-- Gauntlets of the Chosen Dead
-											i(143360),	-- Girdle of the Chosen Dead
-											i(143351),	-- Chain Leggings of the Chosen Dead
-											i(143339),	-- Sabatons of the Chosen Dead
-										},
-										["classes"] = { 3, 7 }, -- Hunter, Shaman
-									}),		
-									i(143521, {	-- Ensemble: Funerary Plate of the Chosen Dead	
-										["groups"] = {
-											i(143345),	-- Visor of the Chosen Dead
-											i(143355),	-- Shoulderplates of the Chosen Dead
-											i(143367),	-- Greatcloak of the Chosen Dead
-											i(143334),	-- Chestplate of the Chosen Dead
-											i(143363),	-- Wristclamps of the Chosen Dead
-											i(143342),	-- Handguards of the Chosen Dead
-											i(143358),	-- Waistplate of the Chosen Dead
-											i(143349),	-- Legplates of the Chosen Dead
-											i(143337),	-- Treads of the Chosen Dead
-										},
-										["classes"] = { 2, 1, 6 }, -- Paladin, Warrior, Death Knight
-									}),	
-									i(142521),
-									i(142433),
-									i(142427),
-									i(142429),
-									i(142420),
-									i(142424),
-									i(142416),
-									i(142418),
-									i(142414)
-								}))
-							}),
-						}
-					}),
-					d(14, {		-- Normal
-						
-						["groups"] = {
-							n(0, { 		-- Zone Drop
-								i(142541),
-							}),
-							cr(114263, e(1819, {	-- Odyn
-								i(142540),
-								i(142431),
-								i(142425),
-								i(142419),
-								i(142430),
-								i(142410),
-								i(142411),
-								i(142421),
-								i(142422)
-							})),
-							cr(114344, e(1830, {	-- Guarm
-								i(142412),
-								i(142435),
-								i(142426),
-								i(142432),
-								i(142417),
-								i(142423),
-								i(142415),
-								i(142434),
-								i(142413)
-							})),
-							cr(114537, e(1829, {	-- Helya
-								i(142521),
-								i(142427),
-								i(142424),
-								i(142416),
-								i(142418),
-								i(142433),
-								i(142429),
-								i(142420),
-								i(142414)
-							}))
-						}
-					}),
-					d(15, {		-- Heroic
-						
-						["groups"] = {
-							n(0, { 		-- Zone Drop
-								i(142541),
-							}),
-							cr(114263, e(1819, {	-- Odyn
-								i(142540),
-								i(142431),
-								i(142425),
-								i(142419),
-								i(142430),
-								i(142410),
-								i(142411),
-								i(142421),
-								i(142422)
-							})),
-							cr(114344, e(1830, {	-- Guarm
-								i(142412),
-								i(142435),
-								i(142426),
-								i(142432),
-								i(142417),
-								i(142423),
-								i(142415),
-								i(142434),
-								i(142413)
-							})),
-							cr(114537, e(1829, {	-- Helya
-								i(143507, {	-- Ensemble: Vestment of the Chosen Dead
+						{
+							["questID"] = 45088,	-- Trial of Valor: The Lost Army
+							["sourceQuest"] = 44729,	-- Trial of Valor: Odyn's Favor
+							["qg"] = 114263,	-- Odyn
+							["groups"] = {
+								i(143506, {	-- Ensemble: Vestment of the Chosen Dead
 									["groups"] = {
 										i(143346),	-- Circlet of the Chosen Dead
 										i(143356),	-- Mantle of the Chosen Dead
@@ -360,9 +26,9 @@ _.Instances =
 										i(143350),	-- Pantaloons of the Chosen Dead
 										i(143338),	-- Sandals of the Chosen Dead
 									},
-									["classes"] = { 5, 8, 9 }, -- Priest, Mage, Warock
+									["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warock
 								}),		
-								i(143511, {	-- Ensemble: Garb of the Chosen Dead
+								i(143510, {	-- Ensemble: Garb of the Chosen Dead
 									["groups"] = {	
 										i(143348),	-- Hood of the Chosen Dead
 										i(143354),	-- Shoulderpads of the Chosen Dead
@@ -374,9 +40,9 @@ _.Instances =
 										i(143352),	-- Leggings of the Chosen Dead
 										i(143340),	-- Boots of the Chosen Dead
 									},
-									["classes"] = { 11, 4, 10, 12 }, -- Druid, Rogue, Monk, Demon Hunter
+									["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
 								}),		
-								i(143515, {	-- Ensemble: Chains of the Chosen Dead	
+								i(143514, {	-- Ensemble: Chains of the Chosen Dead	
 									["groups"] = {
 										i(143347),	-- Coif of the Chosen Dead
 										i(143357),	-- Pauldrons of the Chosen Dead
@@ -388,9 +54,9 @@ _.Instances =
 										i(143351),	-- Chain Leggings of the Chosen Dead
 										i(143339),	-- Sabatons of the Chosen Dead
 									},
-									["classes"] = { 3, 7 }, -- Hunter, Shaman
+									["classes"] = { 3, 7 },	-- Hunter, Shaman
 								}),		
-								i(143519, {	-- Ensemble: Funerary Plate of the Chosen Dead	
+								i(143518, {	-- Ensemble: Funerary Plate of the Chosen Dead	
 									["groups"] = {
 										i(143345),	-- Visor of the Chosen Dead
 										i(143355),	-- Shoulderplates of the Chosen Dead
@@ -402,122 +68,512 @@ _.Instances =
 										i(143349),	-- Legplates of the Chosen Dead
 										i(143337),	-- Treads of the Chosen Dead
 									},
-									["classes"] = { 2, 1, 6 }, -- Paladin, Warrior, Death Knight
-								}),		
-								i(142521),
-								i(142427),
-								i(142424),
-								i(142416),
-								i(142418),
-								i(142433),
-								i(142429),
-								i(142420),
-								i(142414)
-							}))
-						}
+									["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
+								}),	
+							},							
+						},
 					}),
-					d(16, {		-- Mythic
-						
-						["groups"] = {
-							n(0, { 		-- Zone Drop
-								i(142541),
-							}),
+					d(17, {	-- LFR
+						n(0, {	-- Zone Drop
+							i(142541),	-- Drape of the Forgotten Souls
+						}),
+						n(-1, {	-- Common Boss Drop
+							["crs"] = {
+								114263,	-- Odyn
+								114344,	-- Guarm
+								114537,	-- Helya
+							},
+							["groups"] = {
+								i(143509, {	-- Ensemble: Vestment of the Chosen Dead
+									["groups"] = {
+										i(143346),	-- Circlet of the Chosen Dead
+										i(143356),	-- Mantle of the Chosen Dead
+										i(143369),	-- Drape of the Chosen Dead
+										i(143353),	-- Robe of the Chosen Dead
+										i(143362),	-- Bracers of the Chosen Dead
+										i(143343),	-- Gloves of the Chosen Dead
+										i(143359),	-- Sash of the Chosen Dead
+										i(143350),	-- Pantaloons of the Chosen Dead
+										i(143338),	-- Sandals of the Chosen Dead
+									},
+									["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warock
+								}),		
+								i(143513, {	-- Ensemble: Garb of the Chosen Dead
+									["groups"] = {	
+										i(143348),	-- Hood of the Chosen Dead
+										i(143354),	-- Shoulderpads of the Chosen Dead
+										i(143366),	-- Wrap of the Chosen Dead
+										i(143336),	-- Tunic of the Chosen Dead
+										i(143365),	-- Wristguards of the Chosen Dead
+										i(143341),	-- Grips of the Chosen Dead
+										i(143361),	-- Strap of the Chosen Dead
+										i(143352),	-- Leggings of the Chosen Dead
+										i(143340),	-- Boots of the Chosen Dead
+									},
+									["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
+								}),		
+								i(143517, {	-- Ensemble: Chains of the Chosen Dead	
+									["groups"] = {
+										i(143347),	-- Coif of the Chosen Dead
+										i(143357),	-- Pauldrons of the Chosen Dead
+										i(143368),	-- Cloak of the Chosen Dead
+										i(143335),	-- Chain Shirt of the Chosen Dead
+										i(143364),	-- Armbands of the Chosen Dead
+										i(143344),	-- Gauntlets of the Chosen Dead
+										i(143360),	-- Girdle of the Chosen Dead
+										i(143351),	-- Chain Leggings of the Chosen Dead
+										i(143339),	-- Sabatons of the Chosen Dead
+									},
+									["classes"] = { 3, 7 },	-- Hunter, Shaman
+								}),		
+								i(143521, {	-- Ensemble: Funerary Plate of the Chosen Dead	
+									["groups"] = {
+										i(143345),	-- Visor of the Chosen Dead
+										i(143355),	-- Shoulderplates of the Chosen Dead
+										i(143367),	-- Greatcloak of the Chosen Dead
+										i(143334),	-- Chestplate of the Chosen Dead
+										i(143363),	-- Wristclamps of the Chosen Dead
+										i(143342),	-- Handguards of the Chosen Dead
+										i(143358),	-- Waistplate of the Chosen Dead
+										i(143349),	-- Legplates of the Chosen Dead
+										i(143337),	-- Treads of the Chosen Dead
+									},
+									["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
+								}),	
+							},
+						}),
+						ach(11394, { 	-- Trial of Valor
 							cr(114263, e(1819, {	-- Odyn
-								i(142540),
-								i(142431),
-								i(142425),
-								i(142419),
-								i(142430),
-								i(142410),
-								i(142411),
-								i(142421),
-								i(142422)
+								{
+									["achievementID"] = 11394,	-- Trial of Valor
+									["criteriaID"] = 1,			-- Odyn
+								},
+								i(142540),	-- Mantle of the Victorious Dead
+								i(142431),	-- Gleaming Val'kyr Cuirass
+								i(142410),	-- Robes of Celestial Adornment
+								i(142419),	-- Sky-Valiant's Wristguards
+								i(142430),	-- Gloves of Issued Challenge
+								i(142411),	-- Cinch of Light
+								i(142425),	-- Goldrune Legplates
+								i(142421),	-- Leggings of the Undaunted
+								i(142422),	-- Radiant Soul Sabatons
+								i(142520),	-- Ring of Ascended Glory
+								i(142508),	-- Chains of the Valorous
+								i(142519),	-- Favor of the Prime Designate
+								i(142514),	-- Ravens' Sight
+								i(142511),	-- Unforged Titansteel
 							})),
 							cr(114344, e(1830, {	-- Guarm
-								i(142412),
-								i(142435),
-								i(142426),
-								i(142432),
-								i(142417),
-								i(142423),
-								i(142415),
-								i(142434),
-								i(142413)
+								{
+									["achievementID"] = 11394,	-- Trial of Valor
+									["criteriaID"] = 2,			-- Guarm
+								},
+								i(142412),	-- Windwhipped Sailcloth
+								i(142432),	-- Helbeast Skin Tunic
+								i(142423),	-- Bite-Resistant Wristclamps
+								i(142415),	-- Helhound Hair Bracers
+								i(142434),	-- Kvaldir Exult's Grips
+								i(142435),	-- Reinforced Hound-Handler's Gauntlets
+								i(142413),	-- Leggings of the Lower Planes
+								i(142426),	-- Lead-Soled Seabed Striders
+								i(142417),	-- Moccasins of Silent Passage
+								i(142512),	-- Accursed Cuspid
+								i(142515),	-- Chilled Incisor
+								i(142506),	-- Eye of Guarm
+								i(142516),	-- Sizzling Fang
 							})),
 							cr(114537, e(1829, {	-- Helya
-								ach(11387, { -- The Chosen
-									["groups"] = {
-										i(143508, {	-- Ensemble: Vestment of the Chosen Dead
-											["groups"] = {
-												i(143346),	-- Circlet of the Chosen Dead
-												i(143356),	-- Mantle of the Chosen Dead
-												i(143369),	-- Drape of the Chosen Dead
-												i(143353),	-- Robe of the Chosen Dead
-												i(143362),	-- Bracers of the Chosen Dead
-												i(143343),	-- Gloves of the Chosen Dead
-												i(143359),	-- Sash of the Chosen Dead
-												i(143350),	-- Pantaloons of the Chosen Dead
-												i(143338),	-- Sandals of the Chosen Dead
-											},
-											["classes"] = { 5, 8, 9 }, -- Priest, Mage, Warock
-										}),		
-										i(143512, {	-- Ensemble: Garb of the Chosen Dead
-											["groups"] = {	
-												i(143348),	-- Hood of the Chosen Dead
-												i(143354),	-- Shoulderpads of the Chosen Dead
-												i(143366),	-- Wrap of the Chosen Dead
-												i(143336),	-- Tunic of the Chosen Dead
-												i(143365),	-- Wristguards of the Chosen Dead
-												i(143341),	-- Grips of the Chosen Dead
-												i(143361),	-- Strap of the Chosen Dead
-												i(143352),	-- Leggings of the Chosen Dead
-												i(143340),	-- Boots of the Chosen Dead
-											},
-											["classes"] = { 11, 4, 10, 12 }, -- Druid, Rogue, Monk, Demon Hunter
-										}),		
-										i(143516, {	-- Ensemble: Chains of the Chosen Dead	
-											["groups"] = {
-												i(143347),	-- Coif of the Chosen Dead
-												i(143357),	-- Pauldrons of the Chosen Dead
-												i(143368),	-- Cloak of the Chosen Dead
-												i(143335),	-- Chain Shirt of the Chosen Dead
-												i(143364),	-- Armbands of the Chosen Dead
-												i(143344),	-- Gauntlets of the Chosen Dead
-												i(143360),	-- Girdle of the Chosen Dead
-												i(143351),	-- Chain Leggings of the Chosen Dead
-												i(143339),	-- Sabatons of the Chosen Dead
-											},
-											["classes"] = { 3, 7 }, -- Hunter, Shaman
-										}),		
-										i(143520, {	-- Ensemble: Funerary Plate of the Chosen Dead	
-											["groups"] = {
-												i(143345),	-- Visor of the Chosen Dead
-												i(143355),	-- Shoulderplates of the Chosen Dead
-												i(143367),	-- Greatcloak of the Chosen Dead
-												i(143334),	-- Chestplate of the Chosen Dead
-												i(143363),	-- Wristclamps of the Chosen Dead
-												i(143342),	-- Handguards of the Chosen Dead
-												i(143358),	-- Waistplate of the Chosen Dead
-												i(143349),	-- Legplates of the Chosen Dead
-												i(143337),	-- Treads of the Chosen Dead
-											},
-											["classes"] = { 2, 1, 6 }, -- Paladin, Warrior, Death Knight
-										}),	
-									},
-									["description"] = "|CFFFF0000There is a possibility this will be removed during the Battle For Azeroth Pre-Patch|r",
-								}),
-								i(142521),
-								i(142427),
-								i(142424),
-								i(142416),
-								i(142418),
-								i(142433),
-								i(142429),
-								i(142420),
-								i(142414)
+								{
+									["achievementID"] = 11394,	-- Trial of Valor
+									["criteriaID"] = 3,			-- Helya
+								},
+								i(142428),	-- Sea Fan Pendant
+								i(142521),	-- Drape of the Unworthy
+								i(142433),	-- Corroded Val'kyr Chainmail
+								i(142427),	-- Calcareous Wristclamps
+								i(142429),	-- Oiled Rigger's Handwraps
+								i(142420),	-- Anchor Chain Waistguard
+								i(142424),	-- Krakenbone Waistplate
+								i(142416),	-- Strand of Whelk Shells
+								i(142418),	-- Sucker-Scarred Leggings
+								i(142414),	-- Treads of the Drowned
+								i(142507),	-- Brinewater Slime in a Bottle
+								i(142518),	-- Fury of the Sea
+								i(142510),	-- Phylactery of Unwilling Servitude
+								i(142517),	-- Swell of the Tides
+								i(142513),	-- Token of the Lightning Keeper
 							}))
-						}
-					})
+						}),
+					}),
+					d(14, {	-- Normal
+						n(0, {	-- Zone Drop
+							i(142541),	-- Drape of the Forgotten Souls
+						}),
+						cr(114263, e(1819, {	-- Odyn
+							{
+								["achievementID"] = 11394,	-- Trial of Valor
+								["criteriaID"] = 1,			-- Odyn
+							},
+							i(142540),	-- Mantle of the Victorious Dead
+							i(142431),	-- Gleaming Val'kyr Cuirass
+							i(142410),	-- Robes of Celestial Adornment
+							i(142419),	-- Sky-Valiant's Wristguards
+							i(142430),	-- Gloves of Issued Challenge
+							i(142411),	-- Cinch of Light
+							i(142425),	-- Goldrune Legplates
+							i(142421),	-- Leggings of the Undaunted
+							i(142422),	-- Radiant Soul Sabatons
+							i(142520),	-- Ring of Ascended Glory
+							i(142508),	-- Chains of the Valorous
+							i(142519),	-- Favor of the Prime Designate
+							i(142514),	-- Ravens' Sight
+							i(142511),	-- Unforged Titansteel
+						})),
+						cr(114344, e(1830, {	-- Guarm
+							ach(11386),	-- Boneafide Tri Tip
+							{
+								["achievementID"] = 11394,	-- Trial of Valor
+								["criteriaID"] = 2,			-- Guarm
+							},
+							i(142412),	-- Windwhipped Sailcloth
+							i(142432),	-- Helbeast Skin Tunic
+							i(142423),	-- Bite-Resistant Wristclamps
+							i(142415),	-- Helhound Hair Bracers
+							i(142434),	-- Kvaldir Exult's Grips
+							i(142435),	-- Reinforced Hound-Handler's Gauntlets
+							i(142413),	-- Leggings of the Lower Planes
+							i(142426),	-- Lead-Soled Seabed Striders
+							i(142417),	-- Moccasins of Silent Passage
+							i(142512),	-- Accursed Cuspid
+							i(142515),	-- Chilled Incisor
+							i(142506),	-- Eye of Guarm
+							i(142516),	-- Sizzling Fang
+						})),
+						cr(114537, e(1829, {	-- Helya
+							ach(11377),	-- Patient Zero
+							{
+								["achievementID"] = 11394,	-- Trial of Valor
+								["criteriaID"] = 3,			-- Helya
+							},
+							i(142428),	-- Sea Fan Pendant
+							i(142521),	-- Drape of the Unworthy
+							i(142433),	-- Corroded Val'kyr Chainmail
+							i(142427),	-- Calcareous Wristclamps
+							i(142429),	-- Oiled Rigger's Handwraps
+							i(142420),	-- Anchor Chain Waistguard
+							i(142424),	-- Krakenbone Waistplate
+							i(142416),	-- Strand of Whelk Shells
+							i(142418),	-- Sucker-Scarred Leggings
+							i(142414),	-- Treads of the Drowned
+							i(142507),	-- Brinewater Slime in a Bottle
+							i(142518),	-- Fury of the Sea
+							i(142510),	-- Phylactery of Unwilling Servitude
+							i(142517),	-- Swell of the Tides
+							i(142513),	-- Token of the Lightning Keeper
+						}))
+					}),
+					d(15, {	-- Heroic
+						n(0, {	-- Zone Drop
+							i(142541),	-- Drape of the Forgotten Souls
+						}),
+						cr(114263, e(1819, {	-- Odyn
+							{
+								["achievementID"] = 11394,	-- Trial of Valor
+								["criteriaID"] = 1,			-- Odyn
+							},
+							{
+								["achievementID"] = 11426,	-- Heroic: Trial of Valor
+								["criteriaID"] = 1,			-- Heroic: Odyn
+							},
+							i(142540),	-- Mantle of the Victorious Dead
+							i(142431),	-- Gleaming Val'kyr Cuirass
+							i(142410),	-- Robes of Celestial Adornment
+							i(142419),	-- Sky-Valiant's Wristguards
+							i(142430),	-- Gloves of Issued Challenge
+							i(142411),	-- Cinch of Light
+							i(142425),	-- Goldrune Legplates
+							i(142421),	-- Leggings of the Undaunted
+							i(142422),	-- Radiant Soul Sabatons
+							i(142520),	-- Ring of Ascended Glory
+							i(142508),	-- Chains of the Valorous
+							i(142519),	-- Favor of the Prime Designate
+							i(142514),	-- Ravens' Sight
+							i(142511),	-- Unforged Titansteel
+						})),
+						cr(114344, e(1830, {	-- Guarm
+							ach(11386),	-- Boneafide Tri Tip
+							{
+								["achievementID"] = 11394,	-- Trial of Valor
+								["criteriaID"] = 2,			-- Guarm
+							},
+							{
+								["achievementID"] = 11426,	-- Heroic: Trial of Valor
+								["criteriaID"] = 2,			-- Heroic: Guarm
+							},
+							i(142412),	-- Windwhipped Sailcloth
+							i(142432),	-- Helbeast Skin Tunic
+							i(142423),	-- Bite-Resistant Wristclamps
+							i(142415),	-- Helhound Hair Bracers
+							i(142434),	-- Kvaldir Exult's Grips
+							i(142435),	-- Reinforced Hound-Handler's Gauntlets
+							i(142413),	-- Leggings of the Lower Planes
+							i(142426),	-- Lead-Soled Seabed Striders
+							i(142417),	-- Moccasins of Silent Passage
+							i(142512),	-- Accursed Cuspid
+							i(142515),	-- Chilled Incisor
+							i(142506),	-- Eye of Guarm
+							i(142516),	-- Sizzling Fang
+						})),
+						cr(114537, e(1829, {	-- Helya
+							{
+								["achievementID"] = 11581,	-- Ahead of the Curve: Helya
+								["u"] = 2,	-- Legacy Achievement
+							},
+							ach(11377),	-- Patient Zero
+							{
+								["achievementID"] = 11394,	-- Trial of Valor
+								["criteriaID"] = 3,			-- Helya
+							},
+							{
+								["achievementID"] = 11426,	-- Heroic: Trial of Valor
+								["criteriaID"] = 3,			-- Heroic: Helya
+							},
+							i(143507, {	-- Ensemble: Vestment of the Chosen Dead
+								["groups"] = {
+									i(143346),	-- Circlet of the Chosen Dead
+									i(143356),	-- Mantle of the Chosen Dead
+									i(143369),	-- Drape of the Chosen Dead
+									i(143353),	-- Robe of the Chosen Dead
+									i(143362),	-- Bracers of the Chosen Dead
+									i(143343),	-- Gloves of the Chosen Dead
+									i(143359),	-- Sash of the Chosen Dead
+									i(143350),	-- Pantaloons of the Chosen Dead
+									i(143338),	-- Sandals of the Chosen Dead
+								},
+								["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warock
+							}),		
+							i(143511, {	-- Ensemble: Garb of the Chosen Dead
+								["groups"] = {	
+									i(143348),	-- Hood of the Chosen Dead
+									i(143354),	-- Shoulderpads of the Chosen Dead
+									i(143366),	-- Wrap of the Chosen Dead
+									i(143336),	-- Tunic of the Chosen Dead
+									i(143365),	-- Wristguards of the Chosen Dead
+									i(143341),	-- Grips of the Chosen Dead
+									i(143361),	-- Strap of the Chosen Dead
+									i(143352),	-- Leggings of the Chosen Dead
+									i(143340),	-- Boots of the Chosen Dead
+								},
+								["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
+							}),		
+							i(143515, {	-- Ensemble: Chains of the Chosen Dead	
+								["groups"] = {
+									i(143347),	-- Coif of the Chosen Dead
+									i(143357),	-- Pauldrons of the Chosen Dead
+									i(143368),	-- Cloak of the Chosen Dead
+									i(143335),	-- Chain Shirt of the Chosen Dead
+									i(143364),	-- Armbands of the Chosen Dead
+									i(143344),	-- Gauntlets of the Chosen Dead
+									i(143360),	-- Girdle of the Chosen Dead
+									i(143351),	-- Chain Leggings of the Chosen Dead
+									i(143339),	-- Sabatons of the Chosen Dead
+								},
+								["classes"] = { 3, 7 },	-- Hunter, Shaman
+							}),		
+							i(143519, {	-- Ensemble: Funerary Plate of the Chosen Dead	
+								["groups"] = {
+									i(143345),	-- Visor of the Chosen Dead
+									i(143355),	-- Shoulderplates of the Chosen Dead
+									i(143367),	-- Greatcloak of the Chosen Dead
+									i(143334),	-- Chestplate of the Chosen Dead
+									i(143363),	-- Wristclamps of the Chosen Dead
+									i(143342),	-- Handguards of the Chosen Dead
+									i(143358),	-- Waistplate of the Chosen Dead
+									i(143349),	-- Legplates of the Chosen Dead
+									i(143337),	-- Treads of the Chosen Dead
+								},
+								["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
+							}),		
+							i(142428),	-- Sea Fan Pendant
+							i(142521),	-- Drape of the Unworthy
+							i(142433),	-- Corroded Val'kyr Chainmail
+							i(142427),	-- Calcareous Wristclamps
+							i(142429),	-- Oiled Rigger's Handwraps
+							i(142420),	-- Anchor Chain Waistguard
+							i(142424),	-- Krakenbone Waistplate
+							i(142416),	-- Strand of Whelk Shells
+							i(142418),	-- Sucker-Scarred Leggings
+							i(142414),	-- Treads of the Drowned
+							i(142507),	-- Brinewater Slime in a Bottle
+							i(142518),	-- Fury of the Sea
+							i(142510),	-- Phylactery of Unwilling Servitude
+							i(142517),	-- Swell of the Tides
+							i(142513),	-- Token of the Lightning Keeper
+						}))
+					}),
+					d(16, {	-- Mythic
+						n(0, {	-- Zone Drop
+							i(142541),	-- Drape of the Forgotten Souls
+						}),
+						cr(114263, e(1819, {	-- Odyn
+							{
+								["achievementID"] = 11394,	-- Trial of Valor
+								["criteriaID"] = 1,			-- Odyn
+							},
+							{
+								["achievementID"] = 11426,	-- Heroic: Trial of Valor
+								["criteriaID"] = 1,			-- Heroic: Odyn
+							},
+							ach(11396),	-- Mythic: Odyn
+							i(142540),	-- Mantle of the Victorious Dead
+							i(142431),	-- Gleaming Val'kyr Cuirass
+							i(142410),	-- Robes of Celestial Adornment
+							i(142419),	-- Sky-Valiant's Wristguards
+							i(142430),	-- Gloves of Issued Challenge
+							i(142411),	-- Cinch of Light
+							i(142425),	-- Goldrune Legplates
+							i(142421),	-- Leggings of the Undaunted
+							i(142422),	-- Radiant Soul Sabatons
+							i(142520),	-- Ring of Ascended Glory
+							i(142508),	-- Chains of the Valorous
+							i(142519),	-- Favor of the Prime Designate
+							i(142514),	-- Ravens' Sight
+							i(142511),	-- Unforged Titansteel
+						})),
+						cr(114344, e(1830, {	-- Guarm
+							ach(11386),	-- Boneafide Tri Tip
+							{
+								["achievementID"] = 11394,	-- Trial of Valor
+								["criteriaID"] = 2,			-- Guarm
+							},
+							{
+								["achievementID"] = 11426,	-- Heroic: Trial of Valor
+								["criteriaID"] = 2,			-- Heroic: Guarm
+							},
+							ach(11397),	-- Mythic: Guarm
+							i(142412),	-- Windwhipped Sailcloth
+							i(142432),	-- Helbeast Skin Tunic
+							i(142423),	-- Bite-Resistant Wristclamps
+							i(142415),	-- Helhound Hair Bracers
+							i(142434),	-- Kvaldir Exult's Grips
+							i(142435),	-- Reinforced Hound-Handler's Gauntlets
+							i(142413),	-- Leggings of the Lower Planes
+							i(142426),	-- Lead-Soled Seabed Striders
+							i(142417),	-- Moccasins of Silent Passage
+							i(142512),	-- Accursed Cuspid
+							i(142515),	-- Chilled Incisor
+							i(142506),	-- Eye of Guarm
+							i(142516),	-- Sizzling Fang
+						})),
+						cr(114537, e(1829, {	-- Helya
+							{
+								["achievementID"] = 11581,	-- Ahead of the Curve: Helya
+								["u"] = 2,	-- Legacy Achievement
+							},
+							{
+								["achievementID"] = 11580,	-- Cutting Edge: Helya
+								["u"] = 2,	-- Legacy Achievement
+							},
+							{
+								["achievementID"] = 11405,	-- Realm First! Helya
+								["u"] = 2,	-- Legacy Achievement
+							},
+							ach(11377),	-- Patient Zero
+							ach(11387, { -- The Chosen
+								["groups"] = {
+									{
+										["titleID"] = 347,	-- The Chosen
+										["u"] = 2,	-- Removed From Game
+									},
+									i(143508, {	-- Ensemble: Vestment of the Chosen Dead
+										["groups"] = {
+											i(143346),	-- Circlet of the Chosen Dead
+											i(143356),	-- Mantle of the Chosen Dead
+											i(143369),	-- Drape of the Chosen Dead
+											i(143353),	-- Robe of the Chosen Dead
+											i(143362),	-- Bracers of the Chosen Dead
+											i(143343),	-- Gloves of the Chosen Dead
+											i(143359),	-- Sash of the Chosen Dead
+											i(143350),	-- Pantaloons of the Chosen Dead
+											i(143338),	-- Sandals of the Chosen Dead
+										},
+										["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
+										["u"] = 2,	-- Removed From Game
+									}),		
+									i(143512, {	-- Ensemble: Garb of the Chosen Dead
+										["groups"] = {	
+											i(143348),	-- Hood of the Chosen Dead
+											i(143354),	-- Shoulderpads of the Chosen Dead
+											i(143366),	-- Wrap of the Chosen Dead
+											i(143336),	-- Tunic of the Chosen Dead
+											i(143365),	-- Wristguards of the Chosen Dead
+											i(143341),	-- Grips of the Chosen Dead
+											i(143361),	-- Strap of the Chosen Dead
+											i(143352),	-- Leggings of the Chosen Dead
+											i(143340),	-- Boots of the Chosen Dead
+										},
+										["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
+										["u"] = 2,	-- Removed From Game
+									}),		
+									i(143516, {	-- Ensemble: Chains of the Chosen Dead	
+										["groups"] = {
+											i(143347),	-- Coif of the Chosen Dead
+											i(143357),	-- Pauldrons of the Chosen Dead
+											i(143368),	-- Cloak of the Chosen Dead
+											i(143335),	-- Chain Shirt of the Chosen Dead
+											i(143364),	-- Armbands of the Chosen Dead
+											i(143344),	-- Gauntlets of the Chosen Dead
+											i(143360),	-- Girdle of the Chosen Dead
+											i(143351),	-- Chain Leggings of the Chosen Dead
+											i(143339),	-- Sabatons of the Chosen Dead
+										},
+										["classes"] = { 3, 7 },	-- Hunter, Shaman
+										["u"] = 2,	-- Removed From Game
+									}),		
+									i(143520, {	-- Ensemble: Funerary Plate of the Chosen Dead	
+										["groups"] = {
+											i(143345),	-- Visor of the Chosen Dead
+											i(143355),	-- Shoulderplates of the Chosen Dead
+											i(143367),	-- Greatcloak of the Chosen Dead
+											i(143334),	-- Chestplate of the Chosen Dead
+											i(143363),	-- Wristclamps of the Chosen Dead
+											i(143342),	-- Handguards of the Chosen Dead
+											i(143358),	-- Waistplate of the Chosen Dead
+											i(143349),	-- Legplates of the Chosen Dead
+											i(143337),	-- Treads of the Chosen Dead
+										},
+										["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
+										["u"] = 2,	-- Removed From Game
+									}),	
+								},
+								["u"] = 2,	-- Legacy Achievement
+							}),
+							{
+								["achievementID"] = 11394,	-- Trial of Valor
+								["criteriaID"] = 3,			-- Helya
+							},
+							{
+								["achievementID"] = 11426,	-- Heroic: Trial of Valor
+								["criteriaID"] = 3,			-- Heroic: Helya
+							},
+							ach(11398),	-- Mythic: Helya
+							i(142428),	-- Sea Fan Pendant
+							i(142521),	-- Drape of the Unworthy
+							i(142433),	-- Corroded Val'kyr Chainmail
+							i(142427),	-- Calcareous Wristclamps
+							i(142429),	-- Oiled Rigger's Handwraps
+							i(142420),	-- Anchor Chain Waistguard
+							i(142424),	-- Krakenbone Waistplate
+							i(142416),	-- Strand of Whelk Shells
+							i(142418),	-- Sucker-Scarred Leggings
+							i(142414),	-- Treads of the Drowned
+							i(142507),	-- Brinewater Slime in a Bottle
+							i(142518),	-- Fury of the Sea
+							i(142510),	-- Phylactery of Unwilling Servitude
+							i(142517),	-- Swell of the Tides
+							i(142513),	-- Token of the Lightning Keeper
+						})),
+					}),
 				},
 				["isRaid"] = true,
 				["lvl"] = 110,
