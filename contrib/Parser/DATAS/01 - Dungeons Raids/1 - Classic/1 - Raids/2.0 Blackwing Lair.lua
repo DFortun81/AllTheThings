@@ -10,29 +10,6 @@ _.Instances = { tier(1, {	-- Classic
 					n(13996, {	-- Blackwing Technician
 						i(18562),	-- Elementium Ingot
 					}),
-					i(19434, {	-- Band of Dark Dominion
-						["crs"] = {
-							12457, -- Blackwing Spellbinder
-							12459, -- Blackwing Warlock
-							12461, -- Death Talon Overseer
-						},
-					}),
-					i(19437, {	-- Boots of Pure Thought
-						["crs"] = {
-							12467, -- Death Talon Captain
-							12463, -- Death Talon Flamescale
-							12464, -- Death Talon Seether
-							12465, -- Death Talon Wyrmkin
-						},
-					}),
-					i(19436, {	-- Cloak of Dragonic Might
-						["crs"] = {
-							12467, -- Death Talon Captain
-							12463, -- Death Talon Flamescale
-							12464, -- Death Talon Seether
-							12465, -- Death Talon Wyrmkin
-						},
-					}),
 					n(12460, {	-- Death Talon Wyrmguard
 						i(19354),	-- Draconic Avenger
 						i(19439),	-- Interlaced Shadow Jerkin
@@ -54,6 +31,29 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					i(19435, {	-- Essence Gatherer
+						["crs"] = {
+							12457, -- Blackwing Spellbinder
+							12459, -- Blackwing Warlock
+							12461, -- Death Talon Overseer
+						},
+					}),
+					i(19436, {	-- Cloak of Dragonic Might
+						["crs"] = {
+							12467, -- Death Talon Captain
+							12463, -- Death Talon Flamescale
+							12464, -- Death Talon Seether
+							12465, -- Death Talon Wyrmkin
+						},
+					}),
+					i(19437, {	-- Boots of Pure Thought
+						["crs"] = {
+							12467, -- Death Talon Captain
+							12463, -- Death Talon Flamescale
+							12464, -- Death Talon Seether
+							12465, -- Death Talon Wyrmkin
+						},
+					}),
+					i(19434, {	-- Band of Dark Dominion
 						["crs"] = {
 							12457, -- Blackwing Spellbinder
 							12459, -- Blackwing Warlock
