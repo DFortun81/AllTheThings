@@ -234,9 +234,9 @@ profession(165, { -- Leatherworking
 			i(15741), -- Pattern: Stormshroud Pants
 			i(5788), -- Pattern: Thick Murloc Armor	
 			i(19327), -- Pattern: Timbermaw Brawlers
-			un(8, i(15742)), -- Pattern: Warbear Harness
-			i(20253), -- Pattern: Warbear Harness
-			un(8, i(15754)), -- Pattern: Warbear Woolies
+			i(15742), -- Pattern: Warbear Harness [This one drops and is in. Lucetia Octobr 7, 2018]
+			i(20253), -- Pattern: Warbear Harness [This is purchased from a vendor. Lucetia Octobr 7, 2018]
+			i(15754), -- Pattern: Warbear Woolies
 			i(20254), -- Pattern: Warbear Woolies
 			i(15725), -- Pattern: Wicked Leather Gauntlets
 		}),
