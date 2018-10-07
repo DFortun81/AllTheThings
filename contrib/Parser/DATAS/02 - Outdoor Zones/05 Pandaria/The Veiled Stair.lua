@@ -40,8 +40,10 @@ _.Zones =
 					q(31285),	-- The Spring Drifter
 					q(32861),	-- Cloak of Virtue - removed from game
 --]]					
-					nlq({ 	-- Legacy Quests
-						q(33104, { -- A Pandaren Legend
+				}),
+				n(-40, {	-- Legacy
+					n(-17, {
+						un(40, q(33104, { -- A Pandaren Legend
 							i(102457, { -- Timeless Essence of the Black Dragonflight
 								un(4, i(102248)), -- Fen-Yu, Fury of Xuen
 								un(4, i(102249)), -- Gon-Lu, Strength of Xuen
@@ -50,7 +52,7 @@ _.Zones =
 								un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
 								un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
 							}),
-						}),
+						})),
 					}),
 				}),
 --				n(-16, { 	-- Rares

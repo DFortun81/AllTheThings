@@ -260,6 +260,7 @@ _.Instances =
 							}),
 							cr(60583, e(683, {	-- Protectors of the Endless
 								["groups"] = {
+									ach(6717),	-- Power Overwhelming
 									n(-90, { -- Elite
 										["groups"] = {
 											i(90527),	-- Regail's Crackling Dagger (Elite)
@@ -301,6 +302,7 @@ _.Instances =
 								},
 							})),
 							cr(62442, e(742, {	-- Tsulong
+								ach(6933),	-- Who's Got Two Green Thumbs
 								i(86321),	-- Gao-Rei, Staff of the Legendary Protector
 								i(86328),	-- Loshan, Terror Incarnate
 								i(89883),	-- Shoulderpads of Twisted Fate
@@ -327,6 +329,7 @@ _.Instances =
 								i(86323),	-- Stuff of Nightmares
 							})),
 							cr(62983, e(729, {	-- Lei Shi
+								ach(6824),	-- Face Clutchers
 								i(89246, {	-- Shoulders of the Shadowy Conqueror
 									i(85344),	-- White Tiger Mantle
 									i(85339),	-- White Tiger Pauldrons
@@ -375,6 +378,7 @@ _.Instances =
 								i(86332),	-- Terror in the Mists
 							})),
 							cr(60999, e(709, {	-- Sha of Fear
+								ach(6825),	-- The Mind-Killer
 								i( 89235, {	-- Helm of the Shadowy Conqueror
 									i(85321),	-- White Tiger Faceguard
 									i(85346),	-- White Tiger Headguard
@@ -452,6 +456,7 @@ _.Instances =
 							}),
 							cr(60583, e(683, {	-- Protectors of the Endless
 								["groups"] = {
+									ach(6731),	-- Heroic: Protectors of the Endless
 									n(-90, { -- Elite
 										["groups"] = {
 											i(90513),	-- Regail's Crackling Dagger (Elite)
@@ -493,6 +498,7 @@ _.Instances =
 								},
 							})),
 							cr(62442, e(742, {	-- Tsulong
+								ach(6732),	-- Heroic: Tsulong
 								i(87156),	-- Gao-Rei, Staff of the Legendary Protector
 								i(87164),	-- Loshan, Terror Incarnate
 								i(89947),	-- Shoulderpads of Twisted Fate
@@ -519,6 +525,7 @@ _.Instances =
 								i(87160),	-- Stuff of Nightmares
 							})),
 							cr(62983, e(729, {	-- Lei Shi
+								ach(6733),	-- Heroic: Lei Shi
 								i(89262, {	-- Shoulders of the Shadowy Conqueror
 									i(87108),	-- White Tiger Mantle
 									i(87103),	-- White Tiger Pauldrons
@@ -567,6 +574,7 @@ _.Instances =
 								i(87167),	-- Terror in the Mists
 							})),
 							cr(60999, e(709, {	-- Sha of Fear
+								ach(6734),	-- Heroic: Sha of Fear
 								i( 89259, {	-- Helm of the Shadowy Conqueror
 									i(87111),	-- White Tiger Faceguard
 									i(87106),	-- White Tiger Headguard
