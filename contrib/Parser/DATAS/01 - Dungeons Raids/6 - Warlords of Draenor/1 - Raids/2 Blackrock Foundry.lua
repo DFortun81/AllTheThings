@@ -127,66 +127,82 @@ _.Instances =
 							}),
 							ach(8991, { 	-- Iron Assembly
 								cr(76865, e(1122, {	-- Beastlord Darmac
+									{
+										["achievementID"] = 8991,	-- Iron Assembly
+										["criteriaID"] = 1,			-- Beastlord Darmac
+									},
 									ig(21525), 	-- Green Winter Hat
-									i(116306),
-									i(116016),
-									i(116255),
-									i(116038),
-									i(116262),
-									i(116048),
-									i(116223),
-									i(116213),
-									i(116019),
+									i(116306),	-- Dreaded Wing
+									i(116255),	-- Heartsmasher Chestplate
+									i(116016),	-- Robes of Brutal Tantrums
+									i(116038),	-- Beastmaster's Iron Bracers
+									i(116262),	-- Waistplate of Soothed Beasts
+									i(116223),	-- Legguards of the Unstoppable Charge
+									i(116048),	-- Rylakk-Rider's Legguards
+									i(116213),	-- Black Iron Spurs
+									i(116019),	-- Treads of the Flaming Maw
+									i(116302),	-- Thunderlord Trainer's Insignia
 								})),
 								cr(76906, e(1147, {	-- Operator Thogar
-									i(116389),
-									i(116388),
-									i(120395),
-									i(120388),
-									i(120376),
-									i(120381),
-									i(116013),
-									i(116304),
-									i(116014),
-									i(116265),
-									i(116049),
-									i(116252),
-									i(116239),
+									{
+										["achievementID"] = 8991,	-- Iron Assembly
+										["criteriaID"] = 2,			-- Operator Thogar
+									},
+									i(116388),	-- Crack-Shot Longrifle
+									i(116389),	-- Thogar's Imperialistic Spire
+									i(120388),	-- Ashlink Pauldrons
+									i(120395),	-- Blacksteel Shoulderplates
+									i(120376),	-- Ebonflame Spaulders
+									i(120381),	-- Sootfur Shoulderguards
+									i(116013),	-- Spaulders of Soothing Flame
+									i(116304),	-- Deadshot Longcloak
+									i(116014),	-- Grips of Cauterization
+									i(116049),	-- Raider's Spikeholder Belt
+									i(116265),	-- Sniper's Ammo Belt
+									i(116252),	-- Waistplate of Obliteration
+									i(116239),	-- Gunnery Sergeant's Legplates
+									i(116301),	-- Lava Shock Seal
 								})),
 								cr(76557, e(1203, {	-- The Iron Maidens (77231,77477)
-									i(116390),
-									i(116220),
-									i(116263),
-									i(116050),
-									i(120384),
-									i(120374),
-									i(120386),
-									i(116225),
-									i(120392),
-									i(116017),
-									i(116051),
-									i(116010),
-									i(116250),
+									{
+										["achievementID"] = 8991,	-- Iron Assembly
+										["criteriaID"] = 3,			-- The Iron Maidens
+									},
+									i(116390),	-- Battle Medic's Wand
+									i(116220),	-- Grapeshot Hood
+									i(116263),	-- Vortex Plate Helm
+									i(116050),	-- Bombardeer's Targeting Helm
+									i(116312),	-- Sorka's Ear Collection
+									i(120386),	-- Ashlink Gloves
+									i(120392),	-- Blacksteel Gauntlets
+									i(120374),	-- Ebonflame Grips
+									i(120384),	-- Sootfur Gauntlets
+									i(116225),	-- Gauntlets of Flickering Blades
+									i(116017),	-- Deckhand's Cord
+									i(116051),	-- Rogg's Earthen Legguards
+									i(116010),	-- Incendiary Leggings
+									i(116250),	-- Impaler's Greatboots
+									i(116314),	-- Blackheart Enforcer's Medallion
 								})),
 							}),
 							ach(8992, { 	-- Blackhand's Crucible
 								cr(77325, e(959, {	-- Blackhand
-									i(138809),
-									i(116391),
-									i(116393),
-									i(120390),
-									i(120382),
-									i(120373),
-									i(120396),
-									i(116244),
-									i(116219),
-									i(116036),
-									i(116005),
-									i(116022),
-									i(116224),
-									i(116251),
-									i(116042),
-									i(122200),
+									i(116391),	-- Blackhand Forgehammer
+									i(116393),	-- Dagger of the Shattered Crucible
+									i(120390),	-- Ashlink Coif
+									i(120396),	-- Blacksteel Casque
+									i(120373),	-- Ebonflame Hood
+									i(120382),	-- Sootfur Cap
+									i(116309),	-- Spiked Foundry Collar
+									i(116036),	-- Deathmark Shoulderguards
+									i(116005),	-- Forgestoker's Shoulderpads
+									i(116219),	-- Spaulders of Erupting Iron
+									i(116244),	-- Spaulders of the Iron Crucible
+									i(116022),	-- Flamestoker Wraps
+									i(116224),	-- Bomb-Carrier's Harness
+									i(116251),	-- Ironshatter Legplates
+									i(116042),	-- Ram-Carrier's Treads
+									i(116317),	-- Storage House Key
 								}))
 							}),
 						}
@@ -394,90 +410,125 @@ _.Instances =
 							i(113931),	-- Beating Heart of the Mountain
 						})),
 						cr(76865, e(1122, {	-- Beastlord Darmac
+							{
+								["achievementID"] = 8981,	-- Fain Would Lie Down
+								["groups"] = {
+									{
+										["criteriaID"] = 1,	-- Dreadwing Mounted First
+										["creatureID"] = 76874,	-- Dreadwing
+									},
+									{
+										["criteriaID"] = 2,	-- Ironcrusher Mounted First
+										["creatureID"] = 76945,	-- Ironcrusher
+									},
+									{
+										["criteriaID"] = 3,	-- Cruelfang Mounted First
+										["creatureID"] = 76884,	-- Cruelfang
+									},
+								},
+							},
+							{
+								["achievementID"] = 8991,	-- Iron Assembly
+								["criteriaID"] = 1,			-- Beastlord Darmac
+							},
 							ig(21525), 	-- Green Winter Hat
-							i(113939),	-- 
-							i(113946),	-- 
-							i(113945),	-- 
-							i(113951),	-- 
-							i(113943),	-- 
-							i(113949),	-- 
-							i(113950),	-- 
-							i(113941),	-- 
-							i(113944),	-- 
-							i(113942),	-- 
+							i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
+							i(113946),	-- Heart of the Clefthoof
+							i(113952),	-- Choker of Bestial Force
+							i(113945),	-- Flame Infusion Drape
+							i(113951),	-- Unrendable Wolfhide Robes
+							i(113943),	-- Bracers of the Wolf's Cunning
+							i(113949),	-- Cannonball Loader's Grips
+							i(113950),	-- Ironcrusher's Collar
+							i(113941),	-- Seeking Ember Girdle
+							i(113944),	-- Legguards of the Stampede
+							i(113942),	-- Inferno Breath Sandals
+							i(113947),	-- Epicenter Loop
+							i(113940),	-- Seal of the Savage Howl
+							i(113948),	-- Darmac's Unstable Talisman
+							i(119192),	-- Ironspike Chew Toy
 						})),
 						cr(76906, e(1147, {	-- Operator Thogar
 							ach(8982),	-- There's Always a Bigger Train
-							i(113953),	-- 
-							i(113960),	-- 
-							i(113958),	-- 
-							i(113956),	-- 
-							i(113962),	-- 
-							i(113955),	-- 
-							i(113964),	-- 
-							i(113961),	-- 
-							i(113954),	-- 
+							{
+								["achievementID"] = 8991,	-- Iron Assembly
+								["criteriaID"] = 2,			-- Operator Thogar
+							},
 							i(119309, { -- Shoulders of the Iron Conqueror
-								i(115565),
-								i(115589),
-								i(115561),			
+								i(115565),	-- Pauldrons of Guiding Light
+								i(115589),	-- Shadow Council's Mantle
+								i(115561),	-- Soul Priest's Shoulderguards
 							}),
 							i(119322, { -- Shoulders of the Iron Protector
-								i(115581),
-								i(115559),
-								i(115547),
-								i(115576),			
+								i(115581),	-- Blackhand's Shoulderguards
+								i(115559),	-- Mantle of the Somber Gaze
+								i(115547),	-- Rylakstalker's Spaulders
+								i(115576),	-- Windspeaker's Mantle
 							}),
 							i(119314, { -- Shoulders of the Iron Vanquisher
-								i(115551),
-								i(115544),
-								i(115536),
-								i(115574),			
+								i(115551),	-- Arcanoshatter Mantle
+								i(115544),	-- Living Wood Spaulders
+								i(115536),	-- Ogreskull Boneplate Pauldrons
+								i(115574),	-- Poisoner's Spaulders
 							}),
+							i(113960),	-- Engine-Stoker's Lantern
+							i(113953),	-- Thogar's Control Rod
+							i(113959),	-- Thogar's Serrated Chain
+							i(113958),	-- Woundsear Robes
+							i(113956),	-- Bracers of Enkindled Power
+							i(113962),	-- Squire's Electroplated Bracers
+							i(113964),	-- Conductor's Multi-Pocket Girdle
+							i(113955),	-- Grenadier's Belt
+							i(113961),	-- Iron Bellow Sabatons
+							i(113954),	-- Railwalker's Ratcheted Boots
+							i(113957),	-- Firemender's Smoldering Signet
+							i(113963),	-- Siege Bomber's Band
 						})),
 						cr(76557, e(1203, {	-- The Iron Maidens (77231,77477)
-							i(113973),	-- 
-							i(113965),	-- 
-							i(113966),	-- 
-							i(113978),	-- 
-							i(113972),	-- 
-							i(113971),	-- 
-							i(113977),	-- 
-							i(113968),	-- 
-							i(113976),	-- 
-							i(113967),	-- 
-							i(113970),	-- 
-							i(113974),	-- 
+							ach(8984),	-- Be Quick or Be Dead
+							{
+								["achievementID"] = 8991,	-- Iron Assembly
+								["criteriaID"] = 3,			-- The Iron Maidens
+							},
 							i(119306, {	-- Gauntlets of the Iron Conqueror
-								i(115567),
-								i(115585),
-								i(115562),						
+								i(115567),	-- Gauntlets of Guiding Light
+								i(115585),	-- Shadow Council's Gloves
+								i(115562),	-- Soul Priest's Gloves
 							}),
 							i(119319, { -- Gauntlets of the Iron Protector
-								i(115583),
-								i(115555),
-								i(115549),
-								i(115578),			
+								i(115583),	-- Blackhand's Handguards
+								i(115555),	-- Handwraps of the Somber Gaze
+								i(115549),	-- Rylakstalker's Gloves
+								i(115578),	-- Windspeaker's Handwraps
 							}),
 							i(119311, { -- Gauntlets of the Iron Vanquisher
-								i(115552),
-								i(115541),
-								i(115538),
-								i(115571),			
+								i(115552),	-- Arcanoshatter Gloves
+								i(115541),	-- Living Wood Grips
+								i(115538),	-- Ogreskull Boneplate Gauntlets
+								i(115571),	-- Poisoner's Gloves
 							}),
+							{
+								["itemID"] = 118384,	-- Sliver of Iron
+								["questID"] = 37029,	-- Sigil of the Black Hand
+							},
+							i(113966),	-- Gar'an's Brutal Spearlauncher
+							i(113973),	-- Koloch Na, the Blood Feast
+							i(113965),	-- Sorka's Chainfist
+							i(113978),	-- Sorka's Nightshade Cowl
+							i(113972),	-- Cloak of Sanguine Terror
+							i(113971),	-- Drape of the Dark Hunt
+							i(113977),	-- Bloodsoaked Heart Protector
+							i(113968),	-- Bloodwhirl Bracers
+							i(113967),	-- Deckhand's Rope Belt
+							i(113976),	-- Uktar's Belt of Chiming Rings
+							i(113970),	-- Turret Mechanic's Legwraps
+							i(113974),	-- Treads of the Dark Hunt
+							i(113975),	-- Uk'urogg's Corrupted Seal
+							i(113969),	-- Vial of Convulsive Shadows
 						})),
 						cr(77325, e(959, {	-- Blackhand
 							ach(8952),	-- Ashes, Ashes...
 							ach(8992),	-- Blackhand's Crucible
-							i(138809),	-- 
-							i(113979),	-- 
-							i(113988),	-- 
-							i(113980),	-- 
-							i(113981),	-- 
-							i(113990),	-- 
-							i(113982),	-- 
-							i(113989),	-- 
-							i(122200),	-- 
 							i(120277, { -- Essence of the Iron Conqueror
 								qa(37553, { -- Essence of the Iron Conqueror
 									i(120215, { -- Helm of the Iron Conqueror
@@ -672,6 +723,20 @@ _.Instances =
 									}),
 								}),									
 							}),
+							i(138809),	-- Illusion: Mark of Blackrock
+							i(122200),	-- Music Roll: A Siege of Worlds
+							i(113988),	-- Blackhand Doomstaff
+							i(113980),	-- Iron Soldier's Saber
+							i(113979),	-- The Black Hand
+							i(113981),	-- Slagbomber's Hood
+							i(113990),	-- Overdriven Spaulders
+							i(113982),	-- Chestguard of the Siegemaker
+							i(113989),	-- Shattering Smash Leggings
+							i(113986),	-- Auto-Repairing Autoclave
+							i(113987),	-- Battering Talisman
+							i(113984),	-- Blackiron Micro Crucible
+							i(113983),	-- Forgemaster's Insignia
+							i(113985),	-- Humming Blackiron Trigger
 						})),
 					}),
 					d(15, {		-- Heroic
@@ -877,77 +942,121 @@ _.Instances =
 							i(113931),	-- Beating Heart of the Mountain
 						})),
 						cr(76865, e(1122, {	-- Beastlord Darmac
+							{
+								["achievementID"] = 8981,	-- Fain Would Lie Down
+								["groups"] = {
+									{
+										["criteriaID"] = 1,	-- Dreadwing Mounted First
+										["creatureID"] = 76874,	-- Dreadwing
+									},
+									{
+										["criteriaID"] = 2,	-- Ironcrusher Mounted First
+										["creatureID"] = 76945,	-- Ironcrusher
+									},
+									{
+										["criteriaID"] = 3,	-- Cruelfang Mounted First
+										["creatureID"] = 76884,	-- Cruelfang
+									},
+								},
+							},
+							{
+								["achievementID"] = 8991,	-- Iron Assembly
+								["criteriaID"] = 1,			-- Beastlord Darmac
+							},
 							ig(21525), 	-- Green Winter Hat
-							i(113939),
-							i(113950),
-							i(113951),
-							i(113949),
-							i(113945),
-							i(113946),
-							i(113943),
-							i(113941),
-							i(113944),
-							i(113942)
+							i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
+							i(113946),	-- Heart of the Clefthoof
+							i(113952),	-- Choker of Bestial Force
+							i(113945),	-- Flame Infusion Drape
+							i(113951),	-- Unrendable Wolfhide Robes
+							i(113943),	-- Bracers of the Wolf's Cunning
+							i(113949),	-- Cannonball Loader's Grips
+							i(113950),	-- Ironcrusher's Collar
+							i(113941),	-- Seeking Ember Girdle
+							i(113944),	-- Legguards of the Stampede
+							i(113942),	-- Inferno Breath Sandals
+							i(113947),	-- Epicenter Loop
+							i(113940),	-- Seal of the Savage Howl
+							i(113948),	-- Darmac's Unstable Talisman
+							i(119192),	-- Ironspike Chew Toy
 						})),
 						cr(76906, e(1147, {	-- Operator Thogar
 							ach(8982),	-- There's Always a Bigger Train
-							i(113953),
-							i(113961),
-							i(113962),
-							i(113964),
-							i(113960),
-							i(113958),
-							i(113956),
-							i(113955),
-							i(113954),
+							{
+								["achievementID"] = 8991,	-- Iron Assembly
+								["criteriaID"] = 2,			-- Operator Thogar
+							},
 							i(119309, { -- Shoulders of the Iron Conqueror
-								i(115565),
-								i(115589),
-								i(115561),			
+								i(115565),	-- Pauldrons of Guiding Light
+								i(115589),	-- Shadow Council's Mantle
+								i(115561),	-- Soul Priest's Shoulderguards
 							}),
 							i(119322, { -- Shoulders of the Iron Protector
-								i(115581),
-								i(115559),
-								i(115547),
-								i(115576),			
+								i(115581),	-- Blackhand's Shoulderguards
+								i(115559),	-- Mantle of the Somber Gaze
+								i(115547),	-- Rylakstalker's Spaulders
+								i(115576),	-- Windspeaker's Mantle
 							}),
 							i(119314, { -- Shoulders of the Iron Vanquisher
-								i(115551),
-								i(115544),
-								i(115536),
-								i(115574),			
+								i(115551),	-- Arcanoshatter Mantle
+								i(115544),	-- Living Wood Spaulders
+								i(115536),	-- Ogreskull Boneplate Pauldrons
+								i(115574),	-- Poisoner's Spaulders
 							}),
+							i(113960),	-- Engine-Stoker's Lantern
+							i(113953),	-- Thogar's Control Rod
+							i(113959),	-- Thogar's Serrated Chain
+							i(113958),	-- Woundsear Robes
+							i(113956),	-- Bracers of Enkindled Power
+							i(113962),	-- Squire's Electroplated Bracers
+							i(113964),	-- Conductor's Multi-Pocket Girdle
+							i(113955),	-- Grenadier's Belt
+							i(113961),	-- Iron Bellow Sabatons
+							i(113954),	-- Railwalker's Ratcheted Boots
+							i(113957),	-- Firemender's Smoldering Signet
+							i(113963),	-- Siege Bomber's Band
 						})),
 						cr(76557, e(1203, {	-- The Iron Maidens (77231,77477)
-							i(113972),
-							i(113977),
-							i(113976),
-							i(113973),
-							i(113965),
-							i(113978),
-							i(113971),
-							i(113974),
-							i(113966),
-							i(113968),
-							i(113967),
-							i(113970),
+							ach(8984),	-- Be Quick or Be Dead
+							{
+								["achievementID"] = 8991,	-- Iron Assembly
+								["criteriaID"] = 3,			-- The Iron Maidens
+							},
 							i(119306, {	-- Gauntlets of the Iron Conqueror
-								i(115567),
-								i(115585),
-								i(115562),						
+								i(115567),	-- Gauntlets of Guiding Light
+								i(115585),	-- Shadow Council's Gloves
+								i(115562),	-- Soul Priest's Gloves
 							}),
 							i(119319, { -- Gauntlets of the Iron Protector
-								i(115583),
-								i(115555),
-								i(115549),
-								i(115578),			
+								i(115583),	-- Blackhand's Handguards
+								i(115555),	-- Handwraps of the Somber Gaze
+								i(115549),	-- Rylakstalker's Gloves
+								i(115578),	-- Windspeaker's Handwraps
 							}),
 							i(119311, { -- Gauntlets of the Iron Vanquisher
-								i(115552),
-								i(115541),
-								i(115538),
-								i(115571),			
+								i(115552),	-- Arcanoshatter Gloves
+								i(115541),	-- Living Wood Grips
+								i(115538),	-- Ogreskull Boneplate Gauntlets
+								i(115571),	-- Poisoner's Gloves
 							}),
+							{
+								["itemID"] = 118385,	-- Sliver of Iron (Heroic)
+								["questID"] = 37030,	-- Sigil of the Black Hand (Heroic)
+							},
+							i(113966),	-- Gar'an's Brutal Spearlauncher
+							i(113973),	-- Koloch Na, the Blood Feast
+							i(113965),	-- Sorka's Chainfist
+							i(113978),	-- Sorka's Nightshade Cowl
+							i(113972),	-- Cloak of Sanguine Terror
+							i(113971),	-- Drape of the Dark Hunt
+							i(113977),	-- Bloodsoaked Heart Protector
+							i(113968),	-- Bloodwhirl Bracers
+							i(113967),	-- Deckhand's Rope Belt
+							i(113976),	-- Uktar's Belt of Chiming Rings
+							i(113970),	-- Turret Mechanic's Legwraps
+							i(113974),	-- Treads of the Dark Hunt
+							i(113975),	-- Uk'urogg's Corrupted Seal
+							i(113969),	-- Vial of Convulsive Shadows
 						})),
 						cr(77325, e(959, {	-- Blackhand
 							{
@@ -956,15 +1065,6 @@ _.Instances =
 							},
 							ach(8952),	-- Ashes, Ashes...
 							ach(8992),	-- Blackhand's Crucible
-							i(138809),
-							i(113979),
-							i(113990),
-							i(113980),
-							i(113989),
-							i(113988),
-							i(113981),
-							i(113982),
-							i(122200),
 							i(120280, { -- Essence of the Iron Conqueror
 								qa(37557, { -- Essence of the Iron Conqueror
 									i(120230, { -- Helm of the Iron Conqueror
@@ -1158,7 +1258,21 @@ _.Instances =
 										i(115573),			
 									}),
 								}),									
-							}),							
+							}),
+							i(138809),	-- Illusion: Mark of Blackrock
+							i(122200),	-- Music Roll: A Siege of Worlds
+							i(113988),	-- Blackhand Doomstaff
+							i(113980),	-- Iron Soldier's Saber
+							i(113979),	-- The Black Hand
+							i(113981),	-- Slagbomber's Hood
+							i(113990),	-- Overdriven Spaulders
+							i(113982),	-- Chestguard of the Siegemaker
+							i(113989),	-- Shattering Smash Leggings
+							i(113986),	-- Auto-Repairing Autoclave
+							i(113987),	-- Battering Talisman
+							i(113984),	-- Blackiron Micro Crucible
+							i(113983),	-- Forgemaster's Insignia
+							i(113985),	-- Humming Blackiron Trigger
 						}))
 					}),
 					d(16, {		-- Mythic
@@ -1370,78 +1484,124 @@ _.Instances =
 							i(113931),	-- Beating Heart of the Mountain
 						})),
 						cr(76865, e(1122, {	-- Beastlord Darmac
+							{
+								["achievementID"] = 8981,	-- Fain Would Lie Down
+								["groups"] = {
+									{
+										["criteriaID"] = 1,	-- Dreadwing Mounted First
+										["creatureID"] = 76874,	-- Dreadwing
+									},
+									{
+										["criteriaID"] = 2,	-- Ironcrusher Mounted First
+										["creatureID"] = 76945,	-- Ironcrusher
+									},
+									{
+										["criteriaID"] = 3,	-- Cruelfang Mounted First
+										["creatureID"] = 76884,	-- Cruelfang
+									},
+								},
+							},
 							ach(8956),	-- Mythic: Beastlord Darmac
+							{
+								["achievementID"] = 8991,	-- Iron Assembly
+								["criteriaID"] = 1,			-- Beastlord Darmac
+							},
 							ig(21525), 	-- Green Winter Hat
-							i(113939),
-							i(113950),
-							i(113951),
-							i(113949),
-							i(113945),
-							i(113946),
-							i(113943),
-							i(113941),
-							i(113944),
-							i(113942)
+							i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
+							i(113946),	-- Heart of the Clefthoof
+							i(113952),	-- Choker of Bestial Force
+							i(113945),	-- Flame Infusion Drape
+							i(113951),	-- Unrendable Wolfhide Robes
+							i(113943),	-- Bracers of the Wolf's Cunning
+							i(113949),	-- Cannonball Loader's Grips
+							i(113950),	-- Ironcrusher's Collar
+							i(113941),	-- Seeking Ember Girdle
+							i(113944),	-- Legguards of the Stampede
+							i(113942),	-- Inferno Breath Sandals
+							i(113947),	-- Epicenter Loop
+							i(113940),	-- Seal of the Savage Howl
+							i(113948),	-- Darmac's Unstable Talisman
+							i(119192),	-- Ironspike Chew Toy
 						})),
 						cr(76906, e(1147, {	-- Operator Thogar
 							ach(8982),	-- There's Always a Bigger Train
-							i(113953),
-							i(113961),
-							i(113962),
-							i(113964),
-							i(113960),
-							i(113958),
-							i(113956),
-							i(113955),
-							i(113954),
+							ach(8969),	-- Mythic: Operator Thogar
+							{
+								["achievementID"] = 8991,	-- Iron Assembly
+								["criteriaID"] = 2,			-- Operator Thogar
+							},
 							i(119309, { -- Shoulders of the Iron Conqueror
-								i(115565),
-								i(115589),
-								i(115561),			
+								i(115565),	-- Pauldrons of Guiding Light
+								i(115589),	-- Shadow Council's Mantle
+								i(115561),	-- Soul Priest's Shoulderguards
 							}),
 							i(119322, { -- Shoulders of the Iron Protector
-								i(115581),
-								i(115559),
-								i(115547),
-								i(115576),			
+								i(115581),	-- Blackhand's Shoulderguards
+								i(115559),	-- Mantle of the Somber Gaze
+								i(115547),	-- Rylakstalker's Spaulders
+								i(115576),	-- Windspeaker's Mantle
 							}),
 							i(119314, { -- Shoulders of the Iron Vanquisher
-								i(115551),
-								i(115544),
-								i(115536),
-								i(115574),			
+								i(115551),	-- Arcanoshatter Mantle
+								i(115544),	-- Living Wood Spaulders
+								i(115536),	-- Ogreskull Boneplate Pauldrons
+								i(115574),	-- Poisoner's Spaulders
 							}),
+							i(113960),	-- Engine-Stoker's Lantern
+							i(113953),	-- Thogar's Control Rod
+							i(113959),	-- Thogar's Serrated Chain
+							i(113958),	-- Woundsear Robes
+							i(113956),	-- Bracers of Enkindled Power
+							i(113962),	-- Squire's Electroplated Bracers
+							i(113964),	-- Conductor's Multi-Pocket Girdle
+							i(113955),	-- Grenadier's Belt
+							i(113961),	-- Iron Bellow Sabatons
+							i(113954),	-- Railwalker's Ratcheted Boots
+							i(113957),	-- Firemender's Smoldering Signet
+							i(113963),	-- Siege Bomber's Band
 						})),
 						cr(76557, e(1203, {	-- The Iron Maidens (77231,77477)
-							i(113972),
-							i(113977),
-							i(113976),
-							i(113973),
-							i(113965),
-							i(113978),
-							i(113971),
-							i(113974),
-							i(113966),
-							i(113968),
-							i(113967),
-							i(113970),
+							ach(8984),	-- Be Quick or Be Dead
+							ach(8972),	-- Mythic: Iron Maidens
+							{
+								["achievementID"] = 8991,	-- Iron Assembly
+								["criteriaID"] = 3,			-- The Iron Maidens
+							},
 							i(119306, {	-- Gauntlets of the Iron Conqueror
-								i(115567),
-								i(115585),
-								i(115562),						
+								i(115567),	-- Gauntlets of Guiding Light
+								i(115585),	-- Shadow Council's Gloves
+								i(115562),	-- Soul Priest's Gloves
 							}),
 							i(119319, { -- Gauntlets of the Iron Protector
-								i(115583),
-								i(115555),
-								i(115549),
-								i(115578),			
+								i(115583),	-- Blackhand's Handguards
+								i(115555),	-- Handwraps of the Somber Gaze
+								i(115549),	-- Rylakstalker's Gloves
+								i(115578),	-- Windspeaker's Handwraps
 							}),
 							i(119311, { -- Gauntlets of the Iron Vanquisher
-								i(115552),
-								i(115541),
-								i(115538),
-								i(115571),			
+								i(115552),	-- Arcanoshatter Gloves
+								i(115541),	-- Living Wood Grips
+								i(115538),	-- Ogreskull Boneplate Gauntlets
+								i(115571),	-- Poisoner's Gloves
 							}),
+							{
+								["itemID"] = 118388,	-- Sliver of Iron (Mythic)
+								["questID"] = 37031,	-- Sigil of the Black Hand (Mythic)
+							},
+							i(113966),	-- Gar'an's Brutal Spearlauncher
+							i(113973),	-- Koloch Na, the Blood Feast
+							i(113965),	-- Sorka's Chainfist
+							i(113978),	-- Sorka's Nightshade Cowl
+							i(113972),	-- Cloak of Sanguine Terror
+							i(113971),	-- Drape of the Dark Hunt
+							i(113977),	-- Bloodsoaked Heart Protector
+							i(113968),	-- Bloodwhirl Bracers
+							i(113967),	-- Deckhand's Rope Belt
+							i(113976),	-- Uktar's Belt of Chiming Rings
+							i(113970),	-- Turret Mechanic's Legwraps
+							i(113974),	-- Treads of the Dark Hunt
+							i(113975),	-- Uk'urogg's Corrupted Seal
+							i(113969),	-- Vial of Convulsive Shadows
 						})),
 						cr(77325, e(959, {	-- Blackhand
 							{
@@ -1461,16 +1621,6 @@ _.Instances =
 							ach(8973, {	-- Mythic: Blackhand's Crucible
 								title(301),	-- Ironbane
 							}),
-							i(138809),
-							i(113979),
-							i(113990),
-							i(113980),
-							i(113989),
-							i(113988),
-							i(113981),
-							i(113982),
-							i(116660),
-							i(122200),
 							i(120283, { -- Essence of the Iron Conqueror
 								qa(37560, { -- Essence of the Iron Conqueror
 									i(120245, { -- Helm of the Iron Conqueror
@@ -1664,7 +1814,22 @@ _.Instances =
 										i(115573),			
 									}),
 								}),									
-							}),								
+							}),
+							i(116660),	-- Ironhoof Destroyer
+							i(138809),	-- Illusion: Mark of Blackrock
+							i(122200),	-- Music Roll: A Siege of Worlds
+							i(113988),	-- Blackhand Doomstaff
+							i(113980),	-- Iron Soldier's Saber
+							i(113979),	-- The Black Hand
+							i(113981),	-- Slagbomber's Hood
+							i(113990),	-- Overdriven Spaulders
+							i(113982),	-- Chestguard of the Siegemaker
+							i(113989),	-- Shattering Smash Leggings
+							i(113986),	-- Auto-Repairing Autoclave
+							i(113987),	-- Battering Talisman
+							i(113984),	-- Blackiron Micro Crucible
+							i(113983),	-- Forgemaster's Insignia
+							i(113985),	-- Humming Blackiron Trigger
 						}))
 					})
 				},
