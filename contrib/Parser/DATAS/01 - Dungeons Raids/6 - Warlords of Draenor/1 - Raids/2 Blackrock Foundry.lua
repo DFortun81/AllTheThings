@@ -67,45 +67,62 @@ _.Instances =
 							}),
 							ach(8990, { 	-- Black Forge
 								cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
-									i(116012),
-									i(116256),
-									i(116305),
-									i(116227),
-									i(116217),
-									i(116238),
-									i(116034),
+									{
+										["achievementID"] = 8990,	-- Black Forge
+										["criteriaID"] = 1,			-- Hans'gar and Franzok
+									},
+									i(116012),	-- Fresh-Face Hood
+									i(116311),	-- Choker of Infinite Durability
+									i(116256),	-- Elbow Drop Spaulders
+									i(116305),	-- Scorchburn Cloak
+									i(116227),	-- Blood-Binder Chestguard
+									i(116217),	-- Brawler Brother's Bracers
+									i(116034),	-- Drop Kickers
+									i(116238),	-- Heel Protectors
 								})),
 								cr(76814, e(1123, {	-- Flamebender Ka'graz
-									ig(21524), -- Red Winter Hat
-									i(116385),
-									i(116384),
-									i(116245),
-									i(120389),
-									i(120375),
-									i(120380),
-									i(120393),
-									i(116226),
-									i(116253),
-									i(116264),
-									i(116047),
-									i(116040),
-									i(116011),
+									{
+										["achievementID"] = 8990,	-- Black Forge
+										["criteriaID"] = 2,			-- Flamebender Ka'graz
+									},
+									ig(21524),	-- Red Winter Hat
+									i(116385),	-- Magma Monsoon Mace
+									i(116384),	-- Steelbringer's Polished Shield
+									i(116245),	-- Maw of Charring Breath
+									i(116313),	-- Choker of Oozing Wounds
+									i(120389),	-- Ashlink Hauberk
+									i(120393),	-- Blacksteel Chestplate
+									i(120375),	-- Ebonflame Robes
+									i(120380),	-- Sootfur Harness
+									i(116226),	-- Scorched Gauntlet Liners
+									i(116253),	-- Lava-Crushing Grips
+									i(116264),	-- Cinderhide Belt
+									i(116047),	-- Bloodsteel Warbelt
+									i(116040),	-- Magma-Mauled Leggings
+									i(116011),	-- Fixated Treads
+									i(116316),	-- Captured Flickerspark
 								})),					
-								cr(77692, e(1162, {	-- Kromog
-									i(116387),
-									i(116386),
-									i(116035),
-									i(116044),
-									i(116008),
-									i(116243),
-									i(116218),
-									i(116254),
-									i(116006),
-									i(120383),
-									i(116222),
-									i(120378),
-									i(120394),
-									i(120387),
+								cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
+									{
+										["achievementID"] = 8990,	-- Black Forge
+										["criteriaID"] = 3,			-- Kromog
+									},
+									i(116387),	-- Axe of the Stone Geyser
+									i(116386),	-- Earthbound Shield
+									i(116035),	-- Rockbreaker Warcap
+									i(116044),	-- Erupting Mantle-
+									i(116218),	-- Chestguard of Allegorical Shadows
+									i(116243),	-- Chestplate of Runed Earth
+									i(116008),	-- Robes of Living Earth
+									i(116254),	-- Reverberating Bracers
+									i(116006),	-- Thundersmash Gloves
+									i(120387),	-- Ashlink Treads
+									i(120394),	-- Blacksteel Greatboots
+									i(120378),	-- Ebonflame Sandals
+									i(116222),	-- Slam Jammers
+									i(120383),	-- Sootfur Stompers
+									i(116300),	-- Ring of Shattered Faults
+									i(116318),	-- Stoneheart Idol
 								})),
 							}),
 							ach(8991, { 	-- Iron Assembly
@@ -274,78 +291,107 @@ _.Instances =
 							i(113889),	-- Elementalist's Shielding Talisman
 						})),
 						cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
-							i(113897),	-- 
-							i(113904),	-- 
-							i(113910),	-- 
-							i(113903),	-- 
-							i(113899),	-- 
-							i(113902),	-- 
-							i(113898),	-- 
-							i(113906),	-- 
-							i(113907),	-- 
+							ach(8980),	-- Stamp Stamp Revolution
+							{
+								["achievementID"] = 8990,	-- Black Forge
+								["criteriaID"] = 1,			-- Hans'gar and Franzok
+							},
+							i(113904),	-- Franzok's Headsmasher
+							i(113897),	-- Hans'gar's Forgehammer
+							i(113910),	-- Hardened Greathelm
+							i(113900),	-- Vertebrae Protector
+							i(113903),	-- Giant Pumpers
+							i(113899),	-- Neckbreaker Shoulderguards
+							i(113902),	-- Chestguard of Unending Roars
+							i(113898),	-- Eye-Catching Gilded Robe
+							i(113906),	-- Gauntlets of Dramatic Blows
+							i(113907),	-- Girdle of Unconquered Glory
+							i(113908),	-- Razoredge Blade Ring
+							i(113901),	-- Six-Eyed Band
+							i(113905),	-- Tablet of Turnbuckle Teamwork
 						})),
 						cr(76814, e(1123, {	-- Flamebender Ka'graz
 							ach(8929, {	-- The Steel Has Been Brought
 								follower(225),	-- Aknor Steelbringer
 							}),
-							ig(21524), -- Red Winter Hat
-							i(113913),	-- 
-							i(113920),	-- 
-							i(113918),	-- 
-							i(113924),	-- 
-							i(113916),	-- 
-							i(113925),	-- 
-							i(113915),	-- 
-							i(113921),	-- 
-							i(113914),	-- 
-							i(113919),	-- 
+							{
+								["achievementID"] = 8990,	-- Black Forge
+								["criteriaID"] = 2,			-- Flamebender Ka'graz
+							},
 							i(119305, { -- Chest of the Iron Conqueror
-								i(115566),
-								i(115588),
-								i(115560),
+								i(115566),	-- Battleplate of Guiding Light
+								i(115588),	-- Shadow Council's Robes
+								i(115560),	-- Soul Priest's Raiment
 							}),
 							i(119318, { -- Chest of the Iron Protector
-								i(115582),
-								i(115548),
-								i(115558),
-								i(115577),
+								i(115582),	-- Blackhand's Chestguard
+								i(115548),	-- Rylakstalker's Tunic
+								i(115558),	-- Vest of the Somber Gaze
+								i(115577),	-- Windspeaker's Tunic
 							}),
 							i(119315, { -- Chest of the Iron Vanquisher
-								i(115550),
-								i(115540),
-								i(115537),
-								i(115570),
+								i(115550),	-- Arcanoshatter Robes
+								i(115540),	-- Living Wood Raiment
+								i(115537),	-- Ogreskull Boneplate Breastplate
+								i(115570),	-- Poisoner's Tunic
 							}),
+							ig(21524),	-- Red Winter Hat
+							i(113913),	-- Ka'graz's Burning Blade
+							i(113920),	-- Dagger of Blazing Radiance
+							i(113918),	-- Molten Edge Eviscerator
+							i(120077),	-- Choker of Bloody Flame
+							i(113923),	-- Fiery Links of Courage
+							i(113924),	-- Flamebender's Shoulderguards
+							i(113916),	-- Charbreath Firecloak
+							i(113925),	-- Flamefury Gauntlets
+							i(113915),	-- Grips of Rekindling
+							i(113921),	-- Firestorm Legplates
+							i(113914),	-- Leggings of the Molten Torrent
+							i(113919),	-- Treads of Rekindled Flames
+							i(113917),	-- Cinderwolf Signet
+							i(113922),	-- Seal of Unquenchable Flame
+							i(119193),	-- Horn of Screaming Spirits
 						})),
-						cr(77692, e(1162, {	-- Kromog
+						cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 							ach(8983),	-- Would You Give Me a Hand?
-							i(113927),	-- 
-							i(113934),	-- 
-							i(113926),	-- 					
-							i(113928),	-- 
-							i(113937),	-- 
-							i(113929),	-- 
-							i(113935),	-- 
-							i(113933),	-- 
-							i(113930),	-- 
-							i(113936),	-- 
+							{
+								["achievementID"] = 8990,	-- Black Forge
+								["criteriaID"] = 3,			-- Kromog
+							},
 							i(119308, { -- Helm of the Iron Conqueror
-								i(115568),
-								i(115586),
-								i(115563),
+								i(115568),	-- Helmet of Guiding Light
+								i(115586),	-- Shadow Council's Hood
+								i(115563),	-- Soul Priest's Hood
 							}),
 							i(119321, { -- Helm of the Iron Protector
-								i(115584),
-								i(115556),
-								i(115545),
-								i(115579),
+								i(115584),	-- Blackhand's Faceguard
+								i(115556),	-- Helm of the Somber Gaze
+								i(115545),	-- Rylakstalker's Headguard
+								i(115579),	-- Windspeaker's Faceguard
 							}),
 							i(119312, { -- Helm of the Iron Vanquisher
-								i(115553),	
-								i(115542),
-								i(115539),
-								i(115572),
+								i(115553),	-- Arcanoshatter Hood
+								i(115542),	-- Living Wood Headpiece
+								i(115539),	-- Ogreskull Boneplate Greathelm
+								i(115572),	-- Poisoner's Helmet
 							}),
+							{
+								["itemID"] = 118383,	-- Heart of Stone
+								["questID"] = 37029,	-- Sigil of the Black Hand
+							},
+							i(113934),	-- Fang of the Earth
+							i(113927),	-- Kromog's Brutal Fist
+							i(113926),	-- Kromog's Protecting Palm
+							i(113932),	-- Talisman of the Fomor
+							i(113928),	-- Earthripple Shoulderpads
+							i(113929),	-- Cloak of Delving Secrets
+							i(113937),	-- Runefrenzy Greatcloak
+							i(113935),	-- Bracers of Shattered Stalactites
+							i(113933),	-- Stonewarper Wraps
+							i(113930),	-- Earthgrasp Girdle
+							i(113936),	-- Sabatons of Fractal Earth
+							i(113938),	-- Stonefist Band
+							i(113931),	-- Beating Heart of the Mountain
 						})),
 						cr(76865, e(1122, {	-- Beastlord Darmac
 							ig(21525), 	-- Green Winter Hat
@@ -728,78 +774,107 @@ _.Instances =
 							i(113889),	-- Elementalist's Shielding Talisman
 						})),
 						cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
-							i(113904),
-							i(113897),
-							i(113910),
-							i(113906),
-							i(113907),
-							i(113903),
-							i(113899),
-							i(113902),
-							i(113898)
+							ach(8980),	-- Stamp Stamp Revolution
+							{
+								["achievementID"] = 8990,	-- Black Forge
+								["criteriaID"] = 1,			-- Hans'gar and Franzok
+							},
+							i(113904),	-- Franzok's Headsmasher
+							i(113897),	-- Hans'gar's Forgehammer
+							i(113910),	-- Hardened Greathelm
+							i(113900),	-- Vertebrae Protector
+							i(113903),	-- Giant Pumpers
+							i(113899),	-- Neckbreaker Shoulderguards
+							i(113902),	-- Chestguard of Unending Roars
+							i(113898),	-- Eye-Catching Gilded Robe
+							i(113906),	-- Gauntlets of Dramatic Blows
+							i(113907),	-- Girdle of Unconquered Glory
+							i(113908),	-- Razoredge Blade Ring
+							i(113901),	-- Six-Eyed Band
+							i(113905),	-- Tablet of Turnbuckle Teamwork
 						})),
 						cr(76814, e(1123, {	-- Flamebender Ka'graz
 							ach(8929, {	-- The Steel Has Been Brought
 								follower(225),	-- Aknor Steelbringer
 							}),
-							ig(21524), -- Red Winter Hat
-							i(113913),
-							i(113916),
-							i(113925),
-							i(113921),
-							i(113924),
-							i(113920),
-							i(113918),							
-							i(113915),
-							i(113914),
-							i(113919),
+							{
+								["achievementID"] = 8990,	-- Black Forge
+								["criteriaID"] = 2,			-- Flamebender Ka'graz
+							},
 							i(119305, { -- Chest of the Iron Conqueror
-								i(115566),
-								i(115588),
-								i(115560),
-							}),	
+								i(115566),	-- Battleplate of Guiding Light
+								i(115588),	-- Shadow Council's Robes
+								i(115560),	-- Soul Priest's Raiment
+							}),
 							i(119318, { -- Chest of the Iron Protector
-								i(115582),
-								i(115548),
-								i(115558),
-								i(115577),
-							}),	
+								i(115582),	-- Blackhand's Chestguard
+								i(115548),	-- Rylakstalker's Tunic
+								i(115558),	-- Vest of the Somber Gaze
+								i(115577),	-- Windspeaker's Tunic
+							}),
 							i(119315, { -- Chest of the Iron Vanquisher
-								i(115550),
-								i(115540),
-								i(115537),
-								i(115570),
-							}),							
+								i(115550),	-- Arcanoshatter Robes
+								i(115540),	-- Living Wood Raiment
+								i(115537),	-- Ogreskull Boneplate Breastplate
+								i(115570),	-- Poisoner's Tunic
+							}),
+							ig(21524),	-- Red Winter Hat
+							i(113913),	-- Ka'graz's Burning Blade
+							i(113920),	-- Dagger of Blazing Radiance
+							i(113918),	-- Molten Edge Eviscerator
+							i(120077),	-- Choker of Bloody Flame
+							i(113923),	-- Fiery Links of Courage
+							i(113924),	-- Flamebender's Shoulderguards
+							i(113916),	-- Charbreath Firecloak
+							i(113925),	-- Flamefury Gauntlets
+							i(113915),	-- Grips of Rekindling
+							i(113921),	-- Firestorm Legplates
+							i(113914),	-- Leggings of the Molten Torrent
+							i(113919),	-- Treads of Rekindled Flames
+							i(113917),	-- Cinderwolf Signet
+							i(113922),	-- Seal of Unquenchable Flame
+							i(119193),	-- Horn of Screaming Spirits
 						})),
-						cr(77692, e(1162, {	-- Kromog
+						cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 							ach(8983),	-- Would You Give Me a Hand?
-							i(113927),
-							i(113936),
-							i(113934),
-							i(113929),
-							i(113935),
-							i(113937),
-							i(113926),
-							i(113928),
-							i(113933),
-							i(113930),
+							{
+								["achievementID"] = 8990,	-- Black Forge
+								["criteriaID"] = 3,			-- Kromog
+							},
 							i(119308, { -- Helm of the Iron Conqueror
-								i(115568),
-								i(115586),
-								i(115563),
+								i(115568),	-- Helmet of Guiding Light
+								i(115586),	-- Shadow Council's Hood
+								i(115563),	-- Soul Priest's Hood
 							}),
 							i(119321, { -- Helm of the Iron Protector
-								i(115584),
-								i(115556),
-								i(115545),
-								i(115579),
+								i(115584),	-- Blackhand's Faceguard
+								i(115556),	-- Helm of the Somber Gaze
+								i(115545),	-- Rylakstalker's Headguard
+								i(115579),	-- Windspeaker's Faceguard
 							}),
 							i(119312, { -- Helm of the Iron Vanquisher
-								i(115553),	
-								i(115542),
-								i(115539),
-								i(115572),
+								i(115553),	-- Arcanoshatter Hood
+								i(115542),	-- Living Wood Headpiece
+								i(115539),	-- Ogreskull Boneplate Greathelm
+								i(115572),	-- Poisoner's Helmet
 							}),
+							{
+								["itemID"] = 118386,	-- Heart of Stone (Heroic)
+								["questID"] = 37030,	-- Sigil of the Black Hand (Heroic)
+							},
+							i(113934),	-- Fang of the Earth
+							i(113927),	-- Kromog's Brutal Fist
+							i(113926),	-- Kromog's Protecting Palm
+							i(113932),	-- Talisman of the Fomor
+							i(113928),	-- Earthripple Shoulderpads
+							i(113929),	-- Cloak of Delving Secrets
+							i(113937),	-- Runefrenzy Greatcloak
+							i(113935),	-- Bracers of Shattered Stalactites
+							i(113933),	-- Stonewarper Wraps
+							i(113930),	-- Earthgrasp Girdle
+							i(113936),	-- Sabatons of Fractal Earth
+							i(113938),	-- Stonefist Band
+							i(113931),	-- Beating Heart of the Mountain
 						})),
 						cr(76865, e(1122, {	-- Beastlord Darmac
 							ig(21525), 	-- Green Winter Hat
@@ -1189,77 +1264,110 @@ _.Instances =
 							i(113889),	-- Elementalist's Shielding Talisman
 						})),
 						cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
+							ach(8980),	-- Stamp Stamp Revolution
 							ach(8968),	-- Mythic: Hans'gar and Franzok
-							i(113904),
-							i(113897),
-							i(113910),
-							i(113906),
-							i(113907),
-							i(113903),
-							i(113899),
-							i(113902),
-							i(113898)
+							{
+								["achievementID"] = 8990,	-- Black Forge
+								["criteriaID"] = 1,			-- Hans'gar and Franzok
+							},
+							i(113904),	-- Franzok's Headsmasher
+							i(113897),	-- Hans'gar's Forgehammer
+							i(113910),	-- Hardened Greathelm
+							i(113900),	-- Vertebrae Protector
+							i(113903),	-- Giant Pumpers
+							i(113899),	-- Neckbreaker Shoulderguards
+							i(113902),	-- Chestguard of Unending Roars
+							i(113898),	-- Eye-Catching Gilded Robe
+							i(113906),	-- Gauntlets of Dramatic Blows
+							i(113907),	-- Girdle of Unconquered Glory
+							i(113908),	-- Razoredge Blade Ring
+							i(113901),	-- Six-Eyed Band
+							i(113905),	-- Tablet of Turnbuckle Teamwork
 						})),
 						cr(76814, e(1123, {	-- Flamebender Ka'graz
-							ig(21524), -- Red Winter Hat
-							i(113913),
-							i(113916),
-							i(113925),
-							i(113921),
-							i(113924),
-							i(113920),
-							i(113918),
-							i(113915),
-							i(113914),
-							i(113919),
+							ach(8929, {	-- The Steel Has Been Brought
+								follower(225),	-- Aknor Steelbringer
+							}),
+							ach(8932),	-- Mythic: Flamebender Ka'graz
+							{
+								["achievementID"] = 8990,	-- Black Forge
+								["criteriaID"] = 2,			-- Flamebender Ka'graz
+							},
 							i(119305, { -- Chest of the Iron Conqueror
-								i(115566),
-								i(115588),
-								i(115560),
-							}),	
+								i(115566),	-- Battleplate of Guiding Light
+								i(115588),	-- Shadow Council's Robes
+								i(115560),	-- Soul Priest's Raiment
+							}),
 							i(119318, { -- Chest of the Iron Protector
-								i(115582),
-								i(115548),
-								i(115558),
-								i(115577),
-							}),	
+								i(115582),	-- Blackhand's Chestguard
+								i(115548),	-- Rylakstalker's Tunic
+								i(115558),	-- Vest of the Somber Gaze
+								i(115577),	-- Windspeaker's Tunic
+							}),
 							i(119315, { -- Chest of the Iron Vanquisher
-								i(115550),
-								i(115540),
-								i(115537),
-								i(115570),
-							}),							
+								i(115550),	-- Arcanoshatter Robes
+								i(115540),	-- Living Wood Raiment
+								i(115537),	-- Ogreskull Boneplate Breastplate
+								i(115570),	-- Poisoner's Tunic
+							}),
+							ig(21524),	-- Red Winter Hat
+							i(113913),	-- Ka'graz's Burning Blade
+							i(113920),	-- Dagger of Blazing Radiance
+							i(113918),	-- Molten Edge Eviscerator
+							i(120077),	-- Choker of Bloody Flame
+							i(113923),	-- Fiery Links of Courage
+							i(113924),	-- Flamebender's Shoulderguards
+							i(113916),	-- Charbreath Firecloak
+							i(113925),	-- Flamefury Gauntlets
+							i(113915),	-- Grips of Rekindling
+							i(113921),	-- Firestorm Legplates
+							i(113914),	-- Leggings of the Molten Torrent
+							i(113919),	-- Treads of Rekindled Flames
+							i(113917),	-- Cinderwolf Signet
+							i(113922),	-- Seal of Unquenchable Flame
+							i(119193),	-- Horn of Screaming Spirits
 						})),
-						cr(77692, e(1162, {	-- Kromog
-							ach(8971),	-- Mythic: Kromog
+						cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 							ach(8983),	-- Would You Give Me a Hand?
-							i(113927),
-							i(113936),
-							i(113934),
-							i(113929),
-							i(113935),
-							i(113937),
-							i(113926),
-							i(113928),
-							i(113933),
-							i(113930),
+							ach(8971),	-- Mythic: Kromog
+							{
+								["achievementID"] = 8990,	-- Black Forge
+								["criteriaID"] = 3,			-- Kromog
+							},
 							i(119308, { -- Helm of the Iron Conqueror
-								i(115568),
-								i(115586),
-								i(115563),
+								i(115568),	-- Helmet of Guiding Light
+								i(115586),	-- Shadow Council's Hood
+								i(115563),	-- Soul Priest's Hood
 							}),
 							i(119321, { -- Helm of the Iron Protector
-								i(115584),
-								i(115556),
-								i(115545),
-								i(115579),
+								i(115584),	-- Blackhand's Faceguard
+								i(115556),	-- Helm of the Somber Gaze
+								i(115545),	-- Rylakstalker's Headguard
+								i(115579),	-- Windspeaker's Faceguard
 							}),
 							i(119312, { -- Helm of the Iron Vanquisher
-								i(115553),	
-								i(115542),
-								i(115539),
-								i(115572),
+								i(115553),	-- Arcanoshatter Hood
+								i(115542),	-- Living Wood Headpiece
+								i(115539),	-- Ogreskull Boneplate Greathelm
+								i(115572),	-- Poisoner's Helmet
 							}),
+							{
+								["itemID"] = 118389,	-- Heart of Stone (Mythic)
+								["questID"] = 37031,	-- Sigil of the Black Hand (Mythic)
+							},
+							i(113934),	-- Fang of the Earth
+							i(113927),	-- Kromog's Brutal Fist
+							i(113926),	-- Kromog's Protecting Palm
+							i(113932),	-- Talisman of the Fomor
+							i(113928),	-- Earthripple Shoulderpads
+							i(113929),	-- Cloak of Delving Secrets
+							i(113937),	-- Runefrenzy Greatcloak
+							i(113935),	-- Bracers of Shattered Stalactites
+							i(113933),	-- Stonewarper Wraps
+							i(113930),	-- Earthgrasp Girdle
+							i(113936),	-- Sabatons of Fractal Earth
+							i(113938),	-- Stonefist Band
+							i(113931),	-- Beating Heart of the Mountain
 						})),
 						cr(76865, e(1122, {	-- Beastlord Darmac
 							ach(8956),	-- Mythic: Beastlord Darmac
