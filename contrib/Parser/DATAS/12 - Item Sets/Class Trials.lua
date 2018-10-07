@@ -8,7 +8,7 @@ _.GearSets =
 			["description"] = "These are obtained by creating a Level 100 Class Trial for each class and specialization.",
 			["icon"] = "Interface\\Icons\\achievement_level_100",
 			["lvl"] = 100,
-			["groups"] = {
+			["groups"] = bubbleDown({["u"] = 2}, {
 				n(-140, { -- Communal
 					["groups"] = {
 						i(129394),	-- Communal Staff
@@ -239,7 +239,7 @@ _.GearSets =
 					},
 					["classes"] = { 6 }
 				}),
-			},
+			}),
 		}),
 		n(-154, {	-- Level 110
 		-- Note: [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]
