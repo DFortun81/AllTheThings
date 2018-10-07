@@ -518,6 +518,26 @@ _.ExpansionFeatures =
 							{	-- Venture Co. Business Plan	
 								["itemID"] = 163479,	-- Venture Co. Business Plan
 								["questID"] = 53172,	-- Venture Co. Business Plan
+								-- Note!! Venture Co. creatures should drop this.  Still experimental 10/6
+								["crs"] = {
+									139817,	-- Chief Engineer Zazzy
+									139805,	-- Mechanical Guardhound
+									139814,	-- Merger Specialist Huzzle
+									126205,	-- Profit-O-Matic
+									131431,	-- Safety Inspection Bot
+									139818,	-- Security Officer Durk
+									139813,	-- Senior Producer Gixi
+									139809,	-- Venture Acquisitions Specialist
+									139806,	-- Venture Demolitions Expert
+									131407,	-- Venture Goon
+									139804,	-- Venture Inspector
+									139810,	-- Venture Middle Manager
+									131408,	-- Venture Muscle
+									139808,	-- Venture Oaf
+									139812,	-- Venture Producer
+									139811,	-- Venture Sub-Lead
+									139807,	-- Venture Surveyor
+								},
 							},		
 							{	-- Vorus'arak's Carapace	
 								["itemID"] = 163484,	-- Vorus'arak's Carapace
