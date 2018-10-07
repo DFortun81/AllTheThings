@@ -509,6 +509,8 @@ AllTheThings.Locales.enUS = {
 		[-385] = "Interface\\Icons\\inv_70_dungeon_ring5a",						-- Finger
 		[-386] = "Interface\\Icons\\inv_qirajidol_obsidian",					-- Trinket
 		[-387] = "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",				-- Relic
+		[-388] = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",				-- Main Gate (Stratholme)
+		[-389] = "Interface\\Icons\\INV_MISC_KEY_13",							-- Service Entrance (Stratholme)
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",					-- Miscellaneous
 		[-500] = "Interface\\Icons\\inv_misc_celebrationcake_01",				-- WoW Anniversary
 		[-531] = "Interface\\Icons\\achievement_general",						-- 2008 Spirit of Competition Event
@@ -1159,6 +1161,8 @@ AllTheThings.Locales.enUS = {
 		[-385] = GetItemSubClassInfo(8,10),										-- Finger
 		[-386] = INVTYPE_TRINKET,												-- Trinket
 		[-387] = GetItemSubClassInfo(3,11),										-- Relic
+		[-388] = "Main Gate",													-- Main Gate (Stratholme)
+		[-389] = "Service Entrance",											-- Service Entrance (Stratholme)
 		
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
