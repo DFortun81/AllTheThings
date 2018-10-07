@@ -99,19 +99,29 @@ _.Zones =
 					qg(2988, qh(26180)),	-- Supervisor Fizsprocket
 --					qh(  765),	-- Supervisor Fizsprocket (LEGACY - replaced with previous quest)
 					qg(2947, qh(  761)),	-- Swoop Hunting
---]]					
-					n(3056, {	-- Ghost Howl
-						i(4854, {	-- Demon Scarred Cloak
-							["groups"] = {
-								qh(770,  {  -- The Demon Scarred Cloak
-									i(4971),	-- Skorn's Hammer
-									i(3079),	-- Skorn's Rifle
-								}),
+--]]				
+					{	-- Demon Scarred Cloak
+						["itemID"] = 4854,	-- Demon Scarred Cloak
+						["ignoreSource"] = true,
+						["questID"] = 770,	-- The Demon Scarred Cloak
+						["qg"] = 3056,		-- Ghost Howl
+						["races"] = HORDE_ONLY,
+						["description"] = "This NPC patrols around the coordinates listed which is the Wildmane Water Well.  This npc does not set off any rare scanners so you have to manually look or add it to your list.",
+						["coords"] = {
+							{ 42.21, 15.41 },
+							{ 44.41, 15.01 },
+							{ 44.81, 16.41 },
+							{ 44.01, 17.61 },
+						},
+						["g"] = {
+							{	-- Skorn's Hammer
+								["itemID"] = 4971,	-- Skorn's Hammer
 							},
-							["ignoreSource"] = true,
-							["collectible"] = false,
-						}),
-					}),
+							{	-- Skonr's Rifle
+								["itemID"] = 3079,	-- Skorn's Rifle
+							},
+						},
+					},
 --[[					
 					qg(3052, qh(  861, {	-- The Hunter's Way
 						["races"]= {6,8,10},
@@ -151,18 +161,6 @@ _.Zones =
 --					qg(14822, q(7945)),	-- Your Fortune Awaits You... (QG in Darkmoon Faire, POSSIBLY LEGACY - some comments on wowhead on these quests say they haven't been available since new DMF)
 				}),
 				n(-16, {	-- Rares	
-					n(3056, {	-- Ghost Howl
-						i(4854, {	-- Demon Scarred Cloak
-							["groups"] = {
-								qh(770,  {  -- The Demon Scarred Cloak
-									i(4971),
-									i(3079),
-								}),
-							},
-							["ignoreSource"] = true,
-							["collectible"] = false,
-						})
-					}),
 					n(5785, {	-- Sister Hatelash
 						dr(	10	, i(	68743	)), --	Imbued Infantry Cloak
 						dr(	9	, i(	68755	)), --	Imbued Disciple's Gloves

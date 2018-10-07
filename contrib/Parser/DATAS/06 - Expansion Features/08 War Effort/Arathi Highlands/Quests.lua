@@ -24,20 +24,23 @@ _.ExpansionFeatures =
 							},
 						},
 					},
-					q(53212, {	-- Back to Zuldazar [H]
-						["groups"] = {
-							spell(279443, {	-- Warfront: The Battle for Stromgarde [H]	
-								["questID"] = 53220,
-								["sourceQuests"] = { 53210 },	-- Touring the Front [H]
-							}),
+					{	-- Back to Zuldazar [H]
+						["questID"] = 53212,	-- Back to Zuldazar
+						["qg"] = 143019,		-- Wistel Sliversnitch
+						["sourceQuests"] = {
+							53210,	-- Touring the Front
 						},
-						["sourceQuests"] = { 53210 },	-- Touring the Front [H]
-						["qg"] = 143019,	-- Wistel Sliversnitch
-						["coord"] = {
-							26.11, 35.59
+						["coords"] = {
+							{ 26.11, 35.59 },
 						},
 						["races"] = HORDE_ONLY,
-					}),
+						["g"] = {
+							{	-- Warfront: The Battle for Stromgarde
+								["npcID"] = -233,		-- Warfront: The Battle for Stromgarde
+								["questID"] = 53220,	-- Unlock
+							},
+						},
+					},
 					{	-- Boulderfist Beatdown [A]
 						["questID"] = 53146, 	-- Boulderfist Beatdown
 						["sourceQuests"] = {
