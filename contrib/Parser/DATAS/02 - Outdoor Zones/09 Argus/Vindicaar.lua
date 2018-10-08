@@ -724,12 +724,7 @@ _.Zones =
 						i(152726), -- Design: Mass Prospect Empyrium
 						i(152400), -- Embroidered Lightforged Drape
 						i(152788), -- Lightforged Warframe Mount
-						i(151712, { -- Recipe: Empyrial Breastplate (Rank 2)
-							["groups"] = {
-								recipe(247713), -- Recipe: Empyrial Breastplate (Rank 2)
-							},
-							["requireSkill"] = 164, -- Blacksmithing
-						}),
+						i(151712), -- Recipe: Empyrial Breastplate (Rank 2)
 						i(151741), -- Recipe: Fiendish Shoulderguards (Rank 2)
 						i(151744), -- Recipe: Fiendish Spaulders (Rank 2)
 						i(151747), -- Recipe: Lightweave Breeches (Rank 2)
