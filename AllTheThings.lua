@@ -7541,6 +7541,12 @@ function app:GetDataCache()
 		db.text = "Titles (Dynamic)";
 		table.insert(g, db);
 		
+		-- Models (Dynamic)
+		db = app.CreateAchievement(9924, GetModelCache());
+		db.expanded = false;
+		db.text = "Models (Dynamic)";
+		table.insert(g, db);
+		
 		-- Factions (Dynamic)
 		db = app.CreateAchievement(11177, GetFactionCache());
 		db.expanded = false;
