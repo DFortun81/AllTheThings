@@ -9,44 +9,111 @@ _.Instances =
 			inst(231, { 	-- Gnomeregan
 				["groups"] = {
 					n(-17, {	-- Quests
-						i(9326, {	-- Grime-Encrusted Ring
-							q(2945, {	-- Grime-Encrusted Ring
-								["groups"] = {
-								},
-								["qg"] = 6212,	-- Dark Iron Agent
-							}),
-						}),
-						o(142487, {	-- The Sparklematic 5200
---[[						qr(q(2953, {	-- More Sparklematic Action
-								a(i(122207)),	-- Music Roll: Tinkertown
-								-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
-							})),	--]]
-							qa(  2947, {	-- Return of the Ring
-								["groups"] = {
-								},
-								["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
-							}),
-							qh(  2949, {	-- Return of the Ring
-								["groups"] = {
-								},
-								["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
-							}),
---[[						q(   2951),		-- The Sparklematic 5200!
-							q(   2952),		-- The Sparklematic 5200!	--]]
-						}),
-						qa(26939, {	-- The G-Team
-							["groups"] = {
+						{
+							["itemID"] = 9326,	-- Grime-Encrusted Ring
+							["questID"] = 2945,	-- Grime-Encrusted Ring
+							["crs"] = {
+								6212,	-- Dark Iron Agent
 							},
-							["qg"] = 44556,	-- Murd Doc
-							["sourceQuests"] = { 26944, 26943 },	-- Exploring Gnomeregan OR Home Sweet Gnome
-							["isBreadcrumb"] = true,
-						}),
-						qg(44560, qa(26941, {	-- The G-Team
+						},
+						{
+							["objectID"] = 142487,	-- The Sparklematic 5200
+							["description"] = "Bring any Grime-Encrusted items that you find here to be cleaned.\n\nGrime-Encrusted Objects become Sparklematic-Wrapped Boxes.",
+							["model"] = "World\\Goober\\G_Gnomesparklematic.m2",
 							["groups"] = {
+								i(9363, {	-- Sparklematic-Wrapped Box
+									["description"] = "Kill mobs for [Grime-Encrusted Object], clean them at the Sparklematic 5200.",
+									["groups"] = {
+										a(i(122207)),	-- Music Roll: Tinkertown
+										i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
+										i(10299),	-- Gnomeregan Amulet
+										i(10298),	-- Gnomeregan Band
+									},
+								}),
+								{
+									["allianceQuestID"] = 2947,	-- Return of the Ring [A]
+									["hordeQuestID"] = 	  2949,	-- Return of the Ring [H]
+									["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
+								},
+								{
+									["itemID"] = 9308,	-- Grime-Encrusted Object
+									["groups"] = {
+										{
+											["questID"] = 2951,	-- The Sparklematic 5200!
+										},
+										{
+											["questID"] = 2952,	-- The Sparklematic 5200!
+											["sourceQuest"] = 2951,	-- The Sparklematic 5200!
+											["groups"] = {
+												i(9363),	-- Sparklematic-Wrapped Box
+											},
+										},
+										{
+											["questID"] = 2953,	-- More Sparklematic Action
+											["sourceQuest"] = 2952,	-- The Sparklematic 5200!
+											["repeatable"] = true,
+											["groups"] = {
+												i(9363),	-- Sparklematic-Wrapped Box
+											},
+										},
+										
+										{
+											["questID"] = 4601,	-- The Sparklematic 5200!
+										},
+										{
+											["questID"] = 4605,	-- The Sparklematic 5200!
+											["sourceQuest"] = 4601,	-- The Sparklematic 5200!
+											["groups"] = {
+												i(9363),	-- Sparklematic-Wrapped Box
+											},
+										},
+										{
+											["questID"] = 4603,	-- More Sparklematic Action
+											["sourceQuest"] = 4605,	-- The Sparklematic 5200!
+											["repeatable"] = true,
+											["groups"] = {
+												i(9363),	-- Sparklematic-Wrapped Box
+											},
+										},
+										
+										{
+											["questID"] = 4602,	-- The Sparklematic 5200!
+										},
+										{
+											["questID"] = 4606,	-- The Sparklematic 5200!
+											["sourceQuest"] = 4602,	-- The Sparklematic 5200!
+											["groups"] = {
+												i(9363),	-- Sparklematic-Wrapped Box
+											},
+										},
+										{
+											["questID"] = 4604,	-- More Sparklematic Action
+											["sourceQuest"] = 4606,	-- The Sparklematic 5200!
+											["repeatable"] = true,
+											["groups"] = {
+												i(9363),	-- Sparklematic-Wrapped Box
+											},
+										},
+									},
+								},
 							},
-							["sourceQuests"] = { 26939 },	-- The G-Team
-						})),
-						qg(44561, qa(26942, {	-- The G-Team
+						},
+						{
+							["allianceQuestID"] = 26939,	-- The G-Team [A]
+							["hordeQuestID"] = 	  50338,	-- The G-Team [H]
+							["qg"] = 44556, -- Murd Doc
+						},
+						{
+							["allianceQuestID"] = 26941,	-- The G-Team [A]
+							["hordeQuestID"] = 	  50337,	-- The G-Team [H]
+							["qg"] = 44560, -- Murd Doc
+							["sourceQuests"] = { 26939, 50338 },	-- The G-Team
+						},
+						{
+							["allianceQuestID"] = 26942,	-- The G-Team [A]
+							["hordeQuestID"] = 	  50336,	-- The G-Team [H]
+							["qg"] = 44561, -- Murd Doc
+							["sourceQuests"] = { 26941, 50337 },	-- The G-Team
 							["groups"] = {
 								i( 65987),	-- G-Team Belt
 								i( 66004),	-- Barechus' Greaves
@@ -56,25 +123,10 @@ _.Instances =
 								i(131624),	-- Barechus' Chainmail
 								i(131625),	-- Hann Ibal's Chain Dungarees
 							},
-							["sourceQuests"] = { 26941 },	-- The G-Team
-						})),
-						qg(44556, qh(50338)),	-- The G-Team
-						qg(44560, qh(50337, {	-- The G-Team
-							["groups"] = {
-							},
-							["sourceQuests"] = { 50338 },	-- The G-Team
-						})),
-						qg(44561, qh(50336, {	-- The G-Team (unknown if requires previous 2)
-							i( 65987),	-- G-Team Belt
-							i( 66004),	-- Barechus' Greaves
-							i( 65963),	-- Temple's Vest
-							i( 65939),	-- Murd Doc's Leggings
-							i( 65913),	-- Hann Ibal's Epaulettes
-							i(131624),	-- Barechus' Chainmail
-							i(131625),	-- Hann Ibal's Chain Dungarees
-						})),
+						},
 					}),
 					n(  0, {	-- Zone Drop
+						i(9308),	-- Grime-Encrusted Object
 						i(9510, {	-- Caverndeep Trudgers
 							["crs"] = {
 								6235,  -- Electrocutioner 6000
@@ -94,55 +146,6 @@ _.Instances =
 								6225,  -- Mechano-Tank
 								6230,  -- Peacekeeper Security Suit
 							},
-						}),
-						i(9308, {	-- Grime-Encrusted Object
-							q(2952, { 	-- The Sparklematic 5200!
-								qr(q(2953, {	-- More Sparklematic Action
-									i(9363, {	-- Sparklematic-Wrapped Box
-										["groups"] = {
-											a(i(122207)),	-- Music Roll: Tinkertown
-											-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
-										},
-										["description"] = "Kill mobs for [Grime-Encrusted Object], clean them at the Sparklematic 5200 and open the box it gives you.\nThis is NOT a guaranteed drop."
-									}),
-								})),
---[[							q(4601, {	-- More Sparklematic Action
-									i(9363, {	-- Sparklematic-Wrapped Box
-										a(i(122207)),	-- Music Roll: Tinkertown
-										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
-									}),
-								}),
-								q(4602, {	-- More Sparklematic Action
-									i(9363, {	-- Sparklematic-Wrapped Box
-										a(i(122207)),	-- Music Roll: Tinkertown
-										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
-									}),
-								}),
-								qr(q(4603, {	-- More Sparklematic Action
-									i(9363, {	-- Sparklematic-Wrapped Box
-										a(i(122207)),	-- Music Roll: Tinkertown
-										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
-									}),
-								})),
-								qr(q(4604, {	-- More Sparklematic Action
-									i(9363, {	-- Sparklematic-Wrapped Box
-										a(i(122207)),	-- Music Roll: Tinkertown
-										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
-									}),
-								})),
-								q(4605, {	-- More Sparklematic Action
-									i(9363, {	-- Sparklematic-Wrapped Box
-										a(i(122207)),	-- Music Roll: Tinkertown
-										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
-									}),
-								}),
-								q(4606, {	-- More Sparklematic Action
-									i(9363, {	-- Sparklematic-Wrapped Box
-										a(i(122207)),	-- Music Roll: Tinkertown
-										-- i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
-									}),
-								}), --]]
-							}),
 						}),
 						i(9489, {	-- Gyromatic Icemaker
 							["crs"] = {
@@ -269,13 +272,6 @@ _.Instances =
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
-					n(113621, {			-- Endgineer Omegaplugg
-						["lvl"] = 110,
-						["groups"] = {
-							i(141331), -- Vial of Green Goo (TOY!)
-						},
-						["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Head to the last boss in Gnomeregan, and kill him.|r\n|cff3399ffSTEP 2:|r|cff66ccff Go to the back of the pillar on the left side of the entrance as you enter the room, and press the small button.|r\n|cff3399ffSTEP 3:|r|cff66ccff Endgineer Omegaplugg will spawn, and his health is based on your level (110: 1.8M, 120: 8.65M).|r\n|cff3399ffSTEP 4:|r|cff66ccff To stop the bombs from spawning, you must disable the conduits in the room by pressing all the large red buttons in an anticlockwise format. (This is the first conduit on the right as you enter the room.)|r\n|cff3399ffSTEP 5:|r|cff66ccff Kill the boss, and all players can loot the toy. Good luck, have fun!"
-					}),
 					cr( 7800, e(422, {	-- Mekgineer Thermaplugg
 						ach(634),	-- Gnomeregan
 						i( 9459),	-- Thermaplugg's Left Arm
@@ -285,6 +281,13 @@ _.Instances =
 						i( 4415), 	-- Schematic: Craftsman's Monocle
 						i(11828), 	-- Schematic: Pet Bombling
 					})),
+					n(113621, {			-- Endgineer Omegaplugg
+						["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Head to the last boss in Gnomeregan, and kill him.|r\n|cff3399ffSTEP 2:|r|cff66ccff Go to the back of the pillar on the left side of the entrance as you enter the room, and press the small button.|r\n|cff3399ffSTEP 3:|r|cff66ccff Endgineer Omegaplugg will spawn, and his health is based on your level (110: 1.8M, 120: 8.65M).|r\n|cff3399ffSTEP 4:|r|cff66ccff To stop the bombs from spawning, you must disable the conduits in the room by pressing all the large red buttons in an anticlockwise format. (This is the first conduit on the right as you enter the room.)|r\n|cff3399ffSTEP 5:|r|cff66ccff Kill the boss, and all players can loot the toy. Good luck, have fun!",
+						["lvl"] = 110,
+						["groups"] = {
+							i(141331), -- Vial of Green Goo (TOY!)
+						},
+					}),
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
