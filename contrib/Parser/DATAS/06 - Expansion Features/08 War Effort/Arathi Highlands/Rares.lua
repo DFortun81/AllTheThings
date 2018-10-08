@@ -4,658 +4,439 @@
 _.ExpansionFeatures =
 {
 	n(-10057, {	-- War Effort
-		["groups"] = {
-			n(-231, {	-- Rares [Alliance Version]
-				["groups"] = {
-					q(53083, {	-- Beastrider Kama**
-						["groups"] = {
-							i(163644),	-- Swift Albino Raptor
-						},
-						["npcID"] = 142709,	-- Beastrider Kama
-						["qg"] = 142709,	-- Beastrider Kama
+		["g"] = {
+			n(-16,	{ -- Rares [Alliance Version]
+				-- Note!! Parser why do you have to hate altQuestID but export to it >>
+				["g"] = {
+					{	-- Beastmaster Kaman
+						["allianceQuestID"] = 53083, 	-- Beastrider Kama [A]
+						["hordeQuestID"] = 53504,	-- Beastrider Kama [H]
+						["npcID"] = 142709,		-- Beastrider Kama
+						["qg"] = 142709,		-- Beastrider Kama
 						["repeatable"] = true,
-						["coord"] = {
-							67.06, 65.89
+						["coords"] = {
+							{ 67.06, 65.89 },
 						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53013, {	-- Branchlord Aldrus**
-						["groups"] = {
-							i(163650),	-- Aldrusian Sproutling
+						["g"] = {
+							{	-- Swift Albino Raptor
+								["itemID"] = 163644,	-- Swift Albino Raptor
+							},
 						},
-						["npcID"] = 142508,	-- Branchlord Aldrus
-						["qg"] = 142508,	-- Branchlord Aldrus
+					},
+					{	-- Branchlord Aldrus
+						["allianceQuestID"] = 53013,	-- Branchlord Aldrus [A]
+						["hordeQuestID"] = 53505,	-- Branchlord Aldrus [H]
+						["npcID"] = 142508,		-- Branchlord Aldrus
+						["qg"] = 142508,		-- Branchlord Aldrus
 						["repeatable"] = true,
-						["coord"] = {
-							22.91, 22.21
+						["coords"] = {
+							{ 22.91, 22.21 },
 						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53017, {	-- Burning Goliath**
-						["groups"] = {
-							i(163691),	-- Burning Essence
+						["g"] = {	-- Aldrusian Sproutling
+							{
+								["itemID"] = 163650,	-- Aldrusian Sproutling
+							},
 						},
-						["npcID"] = 141615,	-- Burning Goliath
-						["qg"] =  141615,	-- Burning Goliath
+					},
+					{	-- Burning Goliath
+						["allianceQuestID"] = 53017,	-- Burning Goliath [A]
+						["hordeQuestID"] = 53506,	-- Burning Goliath [H]
+						["npcID"] = 141615,		-- Burning Goliath
+						["qg"] =  141615,		-- Burning Goliath
 						["repeatable"] = true,
-						["coord"] = {
-							30.64, 44.74
+						["coords"] = {
+							{ 30.64, 44.74 },
 						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53018, {	-- Cresting Goliath**
-						["groups"] = {
-							i(163700),	-- Cresting Essence
+						["g"] = {
+							{	-- Burning Essence
+								["itemID"] = 163691,	-- Burning Essence
+							},
 						},
-						["npcID"] = 141618,	-- Cresting Goliath
-						["qg"] = 141618,	-- Cresting Goliath
+					},
+					{	-- Cresting Goliath
+						["allianceQuestID"] = 53018,	-- Cresting Goliath [A]
+						["hordeQuestID"] = 53531,	-- Cresting Goliath [H]
+						["npcID"] = 141618,		-- Cresting Goliath
+						["qg"] = 141618,		-- Cresting Goliath
 						["repeatable"] = true,
-						["coord"] = {
-							61.86, 31.27
+						["coords"] = {
+							{ 61.86, 31.27 },
 						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53084, {	-- Darbel Montrose**
-						["groups"] = {
-							i(163652),	-- Tiny Grimoire
+						["g"] = {
+							{	-- Cresting Essence
+								["itemID"] = 163700,	-- Cresting Essence
+							},
 						},
-						["npcID"] = 142688,	-- Darbel Montrose
-						["qg"] =  142688,	-- Darbel Montrose
+					},
+					{	-- Darbel Montrose
+						["allianceQuestID"] = 53084,	-- Darbel Montrose [A]
+						["hordeQuestID"] = 53507,		-- Darbel Montrose [H]
+						["npcID"] = 142688,		-- Darbel Montrose
+						["qg"] =  142688,		-- Darbel Montrose
 						["repeatable"] = true,
-						["coord"] = {
-							50.41, 61.21
+						["coords"] = {
+							{ 50.41, 61.21 },
 						},
+						["g"] = {
+							{	-- Tiny Grimoire
+								["itemID"] = 163652,	-- Tiny Grimoire
+							},
+						},
+					},
+					{	-- Doomrider Helgrim [A Only]
+						["allianceQuestID"] = 53085,	-- Doomrider Helgrim [A]
 						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53085, {	-- Doomrider Helgrim [A]**
-						["groups"] = {
-							i(163579),	-- Highland Mustang
-						},
-						["npcID"] = 142741,	-- Doomrider Helgrim
-						["qg"] = 142741,	-- Doomrider Helgrim
+						["npcID"] = 142741,		-- Doomrider Helgrim
+						["qg"] = 142741,		-- Doomrider Helgrim
 						["repeatable"] = true,
-						["coord"] = {
-							53.81, 58.21
+						["coords"] = {
+							{ 53.81, 58.21 },
 						},
-						["races"] = ALLIANCE_ONLY,
 						["description"] = "Only shows up when Alliance Controlled.",
-					}),
-					q(53059, {	-- Echo of Myzrael**
-						["groups"] = {
-							i(163677),	-- Teeny Tiny Orb
+						["g"] = {
+							{	-- Highland Mustang
+								["itemID"] = 163579,	-- Highland Mustang
+							},
 						},
-						["npcID"] = 141668,	-- Echo of Myzrael
-						["qg"] = 1416668,	-- Echo of Myzrael
-						["repeatable"] = true,
-						["coord"] = {
-							56.61, 36.01
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53086, {	-- Foulbelly**
-						["groups"] = {
-							i(163735),	-- Foulbelly
-						},
-						["npcID"] = 142686,	-- Foulbelly
-						["qg"] = 142686,	-- Foulbelly
+					},
+					{	-- Echo of Myzrael
+						["allianceQuestID"] = 53059,	-- Echo of Myzrael [A]
+						["hordeQuestID"] = 53508,	-- Echo of Myzrael [H]
+						["npcID"] = 141668,		-- Echo of Myzrael
+						["qg"] = 1416668,		-- Echo of Myzrael
 						["repeatable"] = true,
 						["coords"] = {
-							28.64, 45.66,	-- Cave Entrance
-							23.11, 46.71,	-- Foulbelly
+							{ 56.61, 36.01 },
 						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53019, {	-- Fozruk**
-						["groups"] = {
-							i(163711),	-- Shard of Fozruk
+						["g"] = {
+							{	-- Teeny Tiny Orb
+								["itemID"] = 163677,	-- Teeny Tiny Orb
+							},
 						},
-						["npcID"] = 142433,	-- Fozruk
-						["qg"] = 142433,	-- Fozruk
+					},
+					{	-- Foulbelly
+						["allianceQuestID"] = 53086,	-- Foulbelly [A]
+						["hordeQuestID"] = 53509,	-- Foulbelly [H]
+						["npcID"] = 142686,		-- Foulbelly
+						["qg"] = 142686,		-- Foulbelly
+						["repeatable"] = true,
+						["coords"] = {
+							{ 28.64, 45.66 },		-- Cave Entrance
+							{ 23.11, 46.71 },		-- Foulbelly
+						},
+						["g"] = {
+							{	-- Foulbelly
+								["itemID"] = 163735,	-- Foulbelly
+							},
+						},
+					},
+					{	-- Fozruk
+						["allianceQuestID"] = 53019,	-- Fozruk [A]
+						["hordeQuestID"] = 53510,	-- Fozruk [H]
+						["npcID"] = 142433,		-- Fozruk
+						["qg"] = 142433,		-- Fozruk
 						["repeatable"] = true,
 						["coords"] = {	-- Patrols, put start and ending path for coordinate plane.  Don't add anymore unless it's above the top point or below the bottom point
-							60.94, 31.54, 	-- Top
-							54.01, 55.41	-- Bottom
+							{ 60.94, 31.54 }, 		-- Top
+							{ 54.01, 55.41 },		-- Bottom
 						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53060, {	-- Geomancer Flintdagger**
-						["groups"] = {
-							i(163713),	-- Brazier Cap
+						["g"] = {
+							{	-- Shard of Fozruk
+								["itemID"] = 163711,	-- Shard of Fozruk
+							},
 						},
-						["npcID"] = 142662,	-- Geomancer Flintdagger
-						["qg"] = 142662,	-- Geomancer Flintdagger
+					},
+					{	-- Geomancer Flintdagger 
+						["allianceQuestID"] = 53060,	-- Geomancer Flintdagger [A]
+						["hordeQuestID"] = 53511,	-- Geomancer Flintdagger [H]
+						["npcID"] = 142662,		-- Geomancer Flintdagger
+						["qg"] = 142662,		-- Geomancer Flintdagger
 						["repeatable"] = true,
-						["coord"] = {
-							79.61, 30.31
+						["coords"] = {
+							{ 79.61, 30.31 },
 						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53087, {	-- Horrific Apparition [Alliance]
-						["groups"] = {
-							i(163736),	-- Spectral Visage
+						["g"] = {
+							{		-- Brazier Cap
+								["itemID"] = 163713,	-- Brazier Cap
+							},
 						},
+					},
+					{	-- Horrific Apparition
+						["allianceQuestID"] = 53087,	-- Horrific Apparition [A]
+						["hordeQuestID"] = 53512,	-- Horrific Apparition [H]
 						["qg"] = 142725,	-- Horrific Apparition
 						["npcID"] = 142725,	-- Horrific Apparition
 						["repeatable"] = true,
-						["races"] = ALLIANCE_ONLY,
-						["coord"] = {
-							19.51, 60.91,	-- Alliance NPC
+						["coords"] = {
+							{ 19.51, 60.91 },	-- Alliance NPC
+							{ 26.71, 32.61 },	-- Horde NPC
 						},
-					}),
-					q(53058, {	-- Kor'gresh Coldrage**
-						["groups"] = {
-							i(163744),	-- Coldrage's Cooler
+						["g"] = {
+							{	-- Spectral Visage
+								["itemID"] = 163736,	-- Spectral Visage
+							},
 						},
-						["npcID"] = 142112,	-- Kor'gresh Coldrage
-						["qg"] = 142112,	-- Kor'gresh Coldrage
-						["repeatable"] = true,
-						["coord"] = {
-							48.11, 71.71
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53089, {	-- Kovork**
-						["groups"] = {
-							i(163750),	-- Kovork Kostume
-						},
-						["npcID"] = 142684,	-- Kovork
+					},
+					{	-- Knight-Captaian Aldrin [H Only]
+						["allianceQuestID"] = 53088,
+						["npcID"] = 142739,	-- Knight-Captaian Aldrin
+						["qg"] = 142739,	-- Knight-Captaian Aldrin
 						["repeatable"] = true,
 						["coords"] = {
-							28.64, 45.66,	-- Cave Entrance
-							25.01, 49.11,	-- Kovork
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53090, {	-- Man-Hunter Rog**
-						["groups"] = {
-							i(163712),	-- Mana-Warped Egg
-						},
-						["npcID"] = 142716,	-- Man-Hunter Rog
-						["qg"] = 142716,	-- Man-Hunter Rog
-						["crs"] = {
-							142717,	-- SQUAAWK!
-						},
-						["repeatable"] = true,
-						["coord"] = {
-							52.31, 72.41
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53057, {	-- Molok the Crusher**
-						["groups"] = {
-							i(163775),	-- Molok Morion
-						},
-						["npcID"] = 141942,	-- Molok the Crusher
-						["qg"] = 141942,	-- Molok the Crusher
-						["repeatable"] = true,
-						["coord"] = {
-							59.81, 37.61
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53091, {	-- Nimar the Slayer**
-						["groups"] = {
-							i(163706),	-- Witherbark Direwing
-						},
-						["npcID"] = 142692,	-- Nimar the Slayer
-						["qg"] = 142692,	-- Nimar the Slayer
-						["repeatable"] = true,
-						["coord"] = {
-							67.91, 66.51
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53014, {	-- Overseer Krix**
-						["groups"] = {
-							i(163646),	-- Lil' Donkey
-						},
-						["npcID"] = 142423,	-- Overseer Krix
-						["qg"] = 142423,	-- Overseer Krix
-						["repeatable"] = true,
-						["coord"] = {
-							70.01, 34.81
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53020, {	-- Plaguefeather**
-						["groups"] = {
-							i(163690),	-- Plague Egg
-						},
-						["npcID"] = 142435,	-- Plaguefeather
-						["qg"] = 142435,	-- Plaguefeather
-						["repeatable"] = true,
-						["coord"] = {
-							36.91, 66.01
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53016, {	-- Ragebeak**
-						["groups"] = {
-							i(163689),	-- Angry Egg
-						},
-						["npcID"] = 142436,	-- Ragebeak
-						["qg"] = 142436,	-- Ragebeak
-						["repeatable"] = true,
-						["coord"] = {
-							11.91, 52.11
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53021, {	-- Rumbling Goliath**
-						["groups"] = {
-							i(163701),	-- Rumbling Essence
-						},
-						["npcID"] = 141620,	-- Rumbling Goliath
-						["qg"] = 141620,	-- Rumbling Goliath
-						["repeatable"] = true,
-						["coord"] = {
-							29.76, 60.04
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53092, {	-- Ruul Onestone**
-						["groups"] = {
-							i(163741),	-- Magic Fun Rock
-						},
-						["npcID"] = 142683,	-- Ruul Onestone
-						["qg"] = 142683,	-- Ruul Onestone
-						["repeatable"] = true,
-						["coord"] = {
-							43.01, 57.01
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53093, {	-- Singer**
-						["groups"] = {
-							i(163738),	-- Syndicate Mask
-						},
-						["npcID"] = 142690,	-- Singer
-						["qg"] = 142690,	-- Singer
-						["repeatable"] = true,
-						["coord"] = {
-							50.41, 57.61
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53022, {	-- Skullripper**
-						["groups"] = {
-							i(163645),	-- Skullripper
-						},
-						["npcID"] = 142437,	-- Skullripper
-						["qg"] = 142437,	-- Skullripper
-						["repeatable"] = true,
-						["coord"] = {
-							56.61, 44.51
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53023, {	-- Thundering Goliath**
-						["groups"] ={
-							i(163698),	-- Thundering Essence
-						},
-						["npcID"] = 141616,	-- Thundering Goliath
-						["qg"] = 141616,	-- Thundering Goliath
-						["repeatable"] = true,
-						["coord"] = {
-							46.31, 52.02
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53024, {	-- Venomarus**
-						["groups"] = {
-							i(163648),	-- Fuzzy Creepling
-						},
-						["npcID"] = 142438,	-- Venomarus
-						["qg"] = 142438,	-- Venomarus
-						["repeatable"] = true,
-						["coord"] = {
-							56.71, 54.11
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53015, {	-- Yogursa**
-						["groups"] = {
-							i(163684),	-- Scabby
-						},
-						["npcID"] = 142440,	-- Yogursa
-						["qg"] = 142440,	-- Yogursa
-						["repeatable"] = true,
-						["coord"] = {
-							14.01, 36.91
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53094, {	-- Zalas Witherbark <Warband Leader>**
-						["groups"] = {
-							i(163745),	-- Witherbark Gong
-						},
-						["npcID"] = 142682,	-- Zalas Witherbark <Warband Leader>
-						["qg"] = 142682,	-- Zalas Witherbark <Warband Leader>
-						["repeatable"] = true,
-						["coord"] = {
-							62.81, 80.81
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-				},
-			}),
-			n(-232, {	-- Rares [Horde Version]
-				["groups"] = {
-					q(53504, {	-- Beastrider Kama**
-						["groups"] = {
-							i(163644),	-- Swift Albino Raptor
-						},
-						["npcID"] = 142709,	-- Beastrider Kama
-						["qg"] = 142709,	-- Beastrider Kama
-						["repeatable"] = true,
-						["coord"] = { 67.06, 65.89
-						},
-						["races"] = HORDE_ONLY,
-					}),
-					q(53505, {	-- Branchlord Aldrus**
-						["groups"] = {
-							i(163650),	-- Aldrusian Sproutling
-						},
-						["npcID"] = 142508,	-- Branchlord Aldrus
-						["qg"] = 142508,	-- Branchlord Aldrus
-						["repeatable"] = true,
-						["coord"] = {
-							22.91, 22.21
-						},
-						["races"] = HORDE_ONLY,
-					}),
-					q(53506, {	-- Burning Goliath
-						["groups"] = {
-							i(163691),	-- Burning Essence
-						},
-						["npcID"] = 141615,	-- Burning Goliath
-						["qg"] =  141615,	-- Burning Goliath
-						["repeatable"] = true,
-						["coord"] = {
-							30.64, 44.74
-						},
-						["races"] = HORDE_ONLY,
-					}),
-					q(53531, {	-- Cresting Goliath**
-						["groups"] = {
-							i(163700),	-- Cresting Essence
-						},
-						["npcID"] = 141618,	-- Cresting Goliath
-						["qg"] = 141618,	-- Cresting Goliath
-						["repeatable"] = true,
-						["coord"] = {
-							61.86, 31.27
-						},
-						["races"] = HORDE_ONLY,
-					}),
-					q(53507, {	-- Darbel Montrose
-						["groups"] = {
-							i(163652),	-- Tiny Grimoire
-						},
-						["npcID"] = 142688,	-- Darbel Montrose
-						["qg"] =  142688,	-- Darbel Montrose
-						["repeatable"] = true,
-						["coord"] = {
-							50.41, 61.21
-						},
-						["races"] = HORDE_ONLY,
-					}),
-					q(53508, {	-- Echo of Myzrael**
-						["groups"] = {
-							i(163677),	-- Teeny Tiny Orb
-						},
-						["npcID"] = 141668,	-- Echo of Myzrael
-						["qg"] = 1416668,	-- Echo of Myzrael
-						["repeatable"] = true,
-						["coord"] = {
-							56.61, 36.01
-						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(142686, {	-- Foulbelly
-						["groups"] = {
-							i(163735),	-- Foulbelly
-						},
-						["questID"] = 53509,
-						["repeatable"] = true,
-						["coords"] = {
-							28.64, 45.66,	-- Cave Entrance
-							23.11, 46.71,	-- Foulbelly
-						},
-						["races"] = HORDE_ONLY,
-					}),
-					q(53510, {	-- Fozruk**
-						["groups"] = {
-							i(163711),	-- Shard of Fozruk
-						},
-						["npcID"] = 142433,	-- Fozruk
-						["qg"] = 142433,	-- Fozruk
-						["repeatable"] = true,
-						["coords"] = {	-- Patrols, put start and ending path for coordinate plane.  Don't add anymore unless it's above the top point or below the bottom point
-							60.94, 31.54, 	-- Top
-							54.01, 55.41	-- Bottom
-						},
-						["races"] = HORDE_ONLY,
-					}),
-					q(53511, {	-- Geomancer Flintdagger**
-						["groups"] = {
-							i(163713),	-- Brazier Cap
-						},
-						["npcID"] = 142662,	-- Geomancer Flintdagger
-						["qg"] = 142662,	-- Geomancer Flintdagger
-						["repeatable"] = true,
-						["coord"] = {
-							79.61, 30.31
-						},
-						["races"] = HORDE_ONLY,
-					}),
-					q(53512, {	-- Horrific Apparition [Horde]**
-						["groups"] = {
-							i(163736),	-- Spectral Visage
-						},
-						["npcID"] = 142725,	-- Horrific Apparition
-						["qg"] = 142725,	-- Horrific Apparition
-						["repeatable"] = true,
-						["races"] = HORDE_ONLY,
-						["coord"] = {
-							26.71, 32.61,	-- Horde NPC
-						},
-					}),
-					n(142739, {	-- Knight-Captaian Aldrin [H]
-						["groups"] = {
-							i(163578),	-- Broken Highland Mustang
-						},
-						["questID"] = 53088,
-						["repeatable"] = true,
-						["coord"] = {
-							49.01, 40.01
+							{ 49.01, 40.01 },
 						},
 						["races"] = HORDE_ONLY,
 						["description"] = "Only shows up when Horde Controlled.",
-					}),
-					n(142112, {	-- Kor'gresh Coldrage
-						["groups"] = {
-							i(163744),	-- Coldrage's Cooler
+						["g"] = {
+							{	-- Broken Highland Mustang
+								["itemID"] = 163578,	-- Broken Highland Mustang
+							},
 						},
-						["questID"] = 53513,
-						["repeatable"] = true,
-						["coord"] = {
-							48.11, 71.71
-						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(142684, {	-- Kovork
-						["groups"] = {
-							i(163750),	-- Kovork Kostume
-						},
-						["questID"] = 53514,
+					},
+					{	-- Kor'gresh Coldrage
+						["allianceQuestID"] = 53058,	-- Kor'gresh Coldrage [A]
+						["hordeQuestID"] = 53513,	-- Kor'gresh Coldrage [H]
+						["npcID"] = 142112,		-- Kor'gresh Coldrage
+						["qg"] = 142112,		-- Kor'gresh Coldrage
 						["repeatable"] = true,
 						["coords"] = {
-							28.64, 45.66,	-- Cave Entrance
-							25.01, 49.11,	-- Kovork
+							{ 48.11, 71.71 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(142716, {	-- Man-Hunter Rog
-						["groups"] = {
-							i(163712),	-- Mana-Warped Egg
+						["g"] = {
+							{	-- Coldrage's Cooler
+								["itemID"] = 163744,	-- Coldrage's Cooler
+							},
 						},
-						["questID"] = 53515,
+					},
+					{	-- Kovork
+						["allianceQuestID"] = 53089,	-- Kovork [A]
+						["hordeQuestID"] = 53514,	-- Kovork [H]
+						["npcID"] = 142684,		-- Kovork
+						["repeatable"] = true,
+						["coords"] = {
+							{ 28.64, 45.66 },	-- Cave Entrance
+							{ 25.01, 49.11 },	-- Kovork
+						},
+						["g"] = {
+							{	-- Kovork Kostume
+								["itemID"] = 163750,	-- Kovork Kostume
+							},
+						},
+					},
+					{	-- Man-Hunter Rog
+						["allianceQuestID"] = 53090,	-- Man-Hunter Rog [A]
+						["hordeQuestID"] = 53515,	-- Man-Hunter Rog [H]
+						["npcID"] = 142716,		-- Man-Hunter Rog
+						["qg"] = 142716,		-- Man-Hunter Rog
 						["crs"] = {
 							142717,	-- SQUAAWK!
 						},
 						["repeatable"] = true,
-						["coord"] = {
-							52.31, 72.41
+						["coords"] = {
+							{ 52.31, 72.41 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(141942, {	-- Molok the Crusher
-						["groups"] = {
-							i(163775),	-- Molok Morion
+						["g"] = {
+							{	-- Mana-Warped Egg
+								["itemID"] = 163712,	-- Mana-Warped Egg
+							},
 						},
-						["questID"] = 53516,
+					},
+					{	-- Molok the Crusher
+						["allianceQuestID"] = 53057,	-- Molok the Crusher [A]
+						["hordeQuestID"] = 53516,	-- Molok the Crusher [H]
+						["npcID"] = 141942,		-- Molok the Crusher
+						["qg"] = 141942,		-- Molok the Crusher
 						["repeatable"] = true,
-						["coord"] = {
-							59.81, 37.61
+						["coords"] = {
+							{ 59.81, 37.61 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					q(53517, {	-- Nimar the Slayer**
-						["groups"] = {
-							i(163706),	-- Witherbark Direwing
+						["g"] = {
+							{	-- Molok Morion
+								["itemID"] = 163775,	-- Molok Morion
+							},
 						},
-						["npcID"] = 142692,	-- Nimar the Slayer
-						["qg"] = 142692,	-- Nimar the Slayer
+					},
+					{	-- Nimar the Slayer
+						["allianceQuestID"] = 53091,	-- Nimar the Slayer [A]
+						["hordeQuestID"] = 53517,	-- Nimar the Slayer [H]
+						["npcID"] = 142692,		-- Nimar the Slayer
+						["qg"] = 142692,		-- Nimar the Slayer
 						["repeatable"] = true,
-						["coord"] = {
-							67.91, 66.51
+						["coords"] = {
+							{ 67.91, 66.51 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					q(53518, {	-- Overseer Krix**
-						["groups"] = {
-							i(163646),	-- Lil' Donkey
+						["g"] = {
+							{	-- Witherbark Direwing
+								["itemID"] = 163706,	-- Witherbark Direwing
+							},
 						},
-						["npcID"] = 142423,	-- Overseer Krix
-						["qg"] = 142423,	-- Overseer Krix
+					},
+					{	-- Overseer Krix 
+						["allianceQuestID"] = 53014,	-- Overseer Krix [A]
+						["hordeQuestID"] = 53518,	-- Overseer Krix [H]
+						["npcID"] = 142423,		-- Overseer Krix
+						["qg"] = 142423,		-- Overseer Krix
 						["repeatable"] = true,
-						["coord"] = {
-							70.01, 34.81
+						["coords"] = {
+							{ 33.0, 37.6 },	-- Horde Controlled
+							{ 27.0, 56.6 },	-- Alliance Controlled
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(142435, {	-- Plaguefeather
-						["groups"] = {
-							i(163690),	-- Plague Egg
+						["g"] = {
+							{	-- Lil' Donkey
+								["itemID"] = 163646,	-- Lil' Donkey
+							},
 						},
-						["questID"] = 53519,
+					},
+					{	-- Plaguefeather
+						["allianceQuestID"] = 53020,	-- Plaguefeather [A]
+						["hordeQuestID"] = 53519,	-- Plaguefeather [H]
+						["npcID"] = 142435,		-- Plaguefeather
+						["qg"] = 142435,		-- Plaguefeather
 						["repeatable"] = true,
-						["coord"] = {
-							36.91, 66.01
+						["coords"] = {
+							{ 36.91, 66.01 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					q(53522, {	-- Ragebeak**
-						["groups"] = {
-							i(163689),	-- Angry Egg
+						["g"] = {
+							{	-- Plague Egg
+								["itemID"] = 163690,	-- Plague Egg
+							},
 						},
-						["npcID"] = 142436,	-- Ragebeak
-						["qg"] = 142436,	-- Ragebeak
+					},
+					{	-- Ragebeak
+						["allianceQuestID"] = 53016,	-- Ragebeak [A]
+						["hordeQuestID"] = 53522,	-- Ragebeak [H]
+						["npcID"] = 142436,		-- Ragebeak
+						["qg"] = 142436,		-- Ragebeak
 						["repeatable"] = true,
-						["coord"] = {
-							11.91, 52.11
+						["coords"] = {
+							{ 11.91, 52.11 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(141620, {	-- Rumbling Goliath
-						["groups"] = {
-							i(163701),	-- Rumbling Essence
+						["g"] = {
+							{	-- Angry Egg
+								["itemID"] = 163689,	-- Angry Egg
+							},
 						},
-						["questID"] = 53523,
+					},
+					{	-- Rumbling Goliath
+						["allianceQuestID"] = 53021,	-- Rumbling Goliath [A]
+						["hordeQuestID"] = 53523,	-- Rumbling Goliath [H]
+						["npcID"] = 141620,		-- Rumbling Goliath
+						["qg"] = 141620,		-- Rumbling Goliath
 						["repeatable"] = true,
-						["coord"] = {
-							29.76, 60.04
+						["coords"] = {
+							{ 29.76, 60.04 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(142683, {	-- Ruul Onestone
-						["groups"] = {
-							i(163741),	-- Magic Fun Rock
+						["g"] = {
+							{	-- Rumbling Essence
+								["itemID"] = 163701,	-- Rumbling Essence
+							},
 						},
-						["questID"] = 53524,
+					},
+					{	-- Ruul Onestone
+						["allianceQuestID"] = 53092,	-- Ruul Onestone [A]
+						["hordeQuestID"] = 53524,	-- Ruul Onestone [H]
+						["npcID"] = 142683,		-- Ruul Onestone
+						["qg"] = 142683,		-- Ruul Onestone
 						["repeatable"] = true,
-						["coord"] = {
-							43.01, 57.01
+						["coords"] = {
+							{ 43.01, 57.01 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(142690, {	-- Singer
-						["groups"] = {
-							i(163738),	-- Syndicate Mask
+						["g"] = {
+							{	-- Magic Fun Rock
+								["itemID"] = 163741,	-- Magic Fun Rock
+							},
 						},
-						["questID"] = 53525,
+					},
+					{	-- Singer
+						["allianceQuestID"] = 53093,	-- Singer [A]
+						["hordeQuestID"] = 53525,	-- Singer [H]
+						["npcID"] = 142690,		-- Singer
+						["qg"] = 142690,		-- Singer
 						["repeatable"] = true,
-						["coord"] = {
-							50.41, 57.61
+						["coords"] = {
+							{ 50.41, 57.61 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(142437, {	-- Skullripper
-						["groups"] = {
-							i(163645),	-- Skullripper
+						["g"] = {
+							{	-- Syndicate Mask
+								["itemID"] = 163738,	-- Syndicate Mask
+							},
 						},
-						["questID"] = 53526,
+					},
+					{	-- Skullripper
+						["allianceQuestID"] = 53022,	-- Skullripper [A]
+						["hordeQuestID"] = 53526,	-- Skullripper [H]
+						["npcID"] = 142437,		-- Skullripper
+						["qg"] = 142437,		-- Skullripper
 						["repeatable"] = true,
-						["coord"] = {
-							56.61, 44.51
+						["coords"] = {
+							{ 56.61, 44.51 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(141616, {	-- Thundering Goliath
-						["groups"] ={
-							i(163698),	-- Thundering Essence
+						["g"] = {
+							{	-- Skullripper
+								["itemID"] = 163645,	-- Skullripper
+							},
 						},
-						["questID"] = 53527,
+					},
+					{	-- Thundering Goliath
+						["allianceQuestID"] = 53023,	-- Thundering Goliath [A]
+						["hordeQuestID"] = 53527,	-- Thundering Goliath [H]
+						["npcID"] = 141616,		-- Thundering Goliath
+						["qg"] = 141616,		-- Thundering Goliath
 						["repeatable"] = true,
-						["coord"] = {
-							46.31, 52.02
+						["coords"] = {
+							{ 46.31, 52.02 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(142438, {	-- Venomarus
-						["groups"] = {
-							i(163648),	-- Fuzzy Creepling
+						["g"] = {
+							{	-- Thundering Essence
+								["itemID"] = 163698,	-- Thundering Essence
+							},
 						},
-						["questID"] = 53528,
+					},
+					{	-- Venomarus 
+						["allianceQuestID"] = 53024,	-- Venomarus [A]
+						["hordeQuestID"] = 53528,	-- Venomarus [H]
+						["npcID"] = 142438,		-- Venomarus
+						["qg"] = 142438,		-- Venomarus
 						["repeatable"] = true,
-						["coord"] = {
-							56.71, 54.11
+						["coords"] = {
+							{ 56.71, 54.11 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(142440, {	-- Yogursa
-						["groups"] = {
-							i(163684),	-- Scabby
+						["g"] = {
+							{	-- Fuzzy Creepling
+								["itemID"] = 163648,	-- Fuzzy Creepling
+							},
 						},
-						["questID"] = 53529,
+					},
+					{	-- Yogursa
+						["allianceQuestID"] = 53015,	-- Yogursa [A]
+						["hordeQuestID"] = 53529,	-- Yogursa [H]
+						["npcID"] = 142440,		-- Yogursa
+						["qg"] = 142440,		-- Yogursa
 						["repeatable"] = true,
-						["coord"] = {
-							14.01, 36.91
+						["coords"] = {
+							{ 14.01, 36.91 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					n(142682, {	-- Zalas Witherbark <Warband Leader>
-						["groups"] = {
-							i(163745),	-- Witherbark Gong
+						["g"] = {
+							{	-- Scabby
+								["itemID"] = 163684,	-- Scabby
+							},
 						},
-						["questID"] = 53530,
+					},
+					{	-- Zalas Witherbark <Warband Leader>
+						["allianceQuestID"] = 53094,	-- Zalas Witherbark <Warband Leader> [A]
+						["hordeQuestID"] = 53530,	-- Zalas Witherbark <Warband Leader> [H]
+						["npcID"] = 142682,		-- Zalas Witherbark <Warband Leader>
+						["qg"] = 142682,		-- Zalas Witherbark <Warband Leader>
 						["repeatable"] = true,
-						["coord"] = {
-							62.81, 80.81
+						["coords"] = {
+							{ 62.81, 80.81 },
 						},
-						["races"] = HORDE_ONLY,
-					}),
+						["g"] = {
+							{	-- Witherbark Gong
+								["itemID"] = 163745,	-- Witherbark Gong
+							},
+						},
+					},
 				},
 			}),
 		},
