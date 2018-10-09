@@ -201,6 +201,7 @@ profession(202, { -- Engineering
 		i(132501),	-- Tactical Headgun
 		i(144331),	-- Tailored Skullblasters
 	}),
+	--[[
 	n(-10068, { -- PLACE_HOLDER
 		i(136700),	-- Schematic: "The Felic"
 		i(13310),	-- Schematic: Accurate Scope
@@ -435,6 +436,7 @@ profession(202, { -- Engineering
 		i(162339),	-- Schematic: XA-1000 Surface Skimmer
 		i(23888),	-- Schematic: Zapthrottle Mote Extractor
 	}),
+	--]]
 	--[[
 	tier(8, {	-- Battle For Azeroth
 		filter(200, { -- Recipes

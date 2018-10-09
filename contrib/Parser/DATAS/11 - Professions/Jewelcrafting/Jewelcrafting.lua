@@ -46,6 +46,7 @@ profession(755, { -- Jewelcrafting
 		i(151589),	-- Empyrial Elemental Crown
 		i(151590),	-- Empyrial Titan Crown
 	}),
+	--[[
 	n(-10068, { -- PLACE_HOLDER
 		i(52409),	-- Design: Accurate Demonseye
 		i(47010),	-- Design: Accurate Dreadstone
@@ -761,6 +762,7 @@ profession(755, { -- Jewelcrafting
 		i(116095),	-- Recipe: Whispering Taladite Pendant
 		i(116092),	-- Recipe: Whispering Taladite Ring
 	}),
+	--]]
 	tier(8, {	-- Battle For Azeroth
 		filter(200, { -- Recipes
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.

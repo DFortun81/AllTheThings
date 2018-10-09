@@ -1491,7 +1491,7 @@ local function createMiniListFrame(parent)
 	showCollected:SetPoint("TOPLEFT",showComp,0,-20)
 	addObject(elm,showCollected)
 	
-	local showIncomp = createCheckBox("Show Incomplete Quests", child, function(self)
+	local showIncomp = createCheckBox("Show Incomplete/Repeatable Quests", child, function(self)
 			app.SetDataMember("ShowIncompleteQuests", self:GetChecked());
 			if self:GetChecked() then
 				app.ShowIncompleteQuests = app.FilterItemTrackable;

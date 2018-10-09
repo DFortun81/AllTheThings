@@ -824,95 +824,97 @@ profession(165, { -- Leatherworking
 			i(162766), -- Recipe: Recurve Bow of the Strands (Rank 3) (Horde Only)
 		}),
 	}),
-	n(-10068, { -- PLACE_HOLDER		
-		i(132123),	-- Pattern: Battlebound Warhelm			
-		i(137900),	-- Recipe: Battlebound Armbands
-		i(137908),	-- Recipe: Battlebound Armbands
-		i(137901),	-- Recipe: Battlebound Girdle
-		i(137913),	-- Recipe: Battlebound Girdle
-		i(137905),	-- Recipe: Battlebound Grips
-		i(137911),	-- Recipe: Battlebound Grips
-		i(137907),	-- Recipe: Battlebound Hauberk
-		i(137915),	-- Recipe: Battlebound Hauberk
-		i(137903),	-- Recipe: Battlebound Leggings
-		i(137909),	-- Recipe: Battlebound Leggings
-		i(137902),	-- Recipe: Battlebound Spaulders
-		i(137914),	-- Recipe: Battlebound Spaulders
-		i(137906),	-- Recipe: Battlebound Treads
-		i(137912),	-- Recipe: Battlebound Treads
-		i(137904),	-- Recipe: Battlebound Warhelm
-		i(137910),	-- Recipe: Battlebound Warhelm					
-		i(162504),	-- Recipe: Emblazoned Mistscale Boots
-		i(162506),	-- Recipe: Emblazoned Mistscale Leggings
-		i(162500),	-- Recipe: Emblazoned Tempest Boots
-		i(162502),	-- Recipe: Emblazoned Tempest Leggings				
-		i(137917),	-- Recipe: Gravenscale Girdle
-		i(137925),	-- Recipe: Gravenscale Girdle
-		i(140645),	-- Recipe: Gravenscale Girdle
-		i(137921),	-- Recipe: Gravenscale Grips
-		i(137929),	-- Recipe: Gravenscale Grips
-		i(140649),	-- Recipe: Gravenscale Grips
-		i(137923),	-- Recipe: Gravenscale Hauberk
-		i(137931),	-- Recipe: Gravenscale Hauberk
-		i(140651),	-- Recipe: Gravenscale Hauberk
-		i(137919),	-- Recipe: Gravenscale Leggings
-		i(137927),	-- Recipe: Gravenscale Leggings
-		i(140647),	-- Recipe: Gravenscale Leggings
-		i(137918),	-- Recipe: Gravenscale Spaulders
-		i(137926),	-- Recipe: Gravenscale Spaulders
-		i(140646),	-- Recipe: Gravenscale Spaulders
-		i(137922),	-- Recipe: Gravenscale Treads
-		i(137930),	-- Recipe: Gravenscale Treads
-		i(140650),	-- Recipe: Gravenscale Treads
-		i(137920),	-- Recipe: Gravenscale Warhelm
-		i(137928),	-- Recipe: Gravenscale Warhelm
-		i(140648),	-- Recipe: Gravenscale Warhelm
-		i(162388),	-- Recipe: Hardened Tempest Boots		
-		i(162389),	-- Recipe: Hardened Tempest Leggings
-		i(162417),	-- Recipe: Honorable Combatant's Bow
-		i(162418),	-- Recipe: Honorable Combatant's Bow
-		i(162398),	-- Recipe: Honorable Combatant's Leather Armguards
-		i(162399),	-- Recipe: Honorable Combatant's Leather Armguards
-		i(162392),	-- Recipe: Honorable Combatant's Leather Gauntlets
-		i(162393),	-- Recipe: Honorable Combatant's Leather Gauntlets
-		i(162394),	-- Recipe: Honorable Combatant's Leather Leggings
-		i(162395),	-- Recipe: Honorable Combatant's Leather Leggings
-		i(162390),	-- Recipe: Honorable Combatant's Leather Treads
-		i(162391),	-- Recipe: Honorable Combatant's Leather Treads
-		i(162396),	-- Recipe: Honorable Combatant's Leather Waistguard
-		i(162397),	-- Recipe: Honorable Combatant's Leather Waistguard
-		i(162410),	-- Recipe: Honorable Combatant's Mail Armguards
-		i(162411),	-- Recipe: Honorable Combatant's Mail Armguards
-		i(162404),	-- Recipe: Honorable Combatant's Mail Gauntlets
-		i(162405),	-- Recipe: Honorable Combatant's Mail Gauntlets
-		i(162406),	-- Recipe: Honorable Combatant's Mail Leggings
-		i(162407),	-- Recipe: Honorable Combatant's Mail Leggings
-		i(162402),	-- Recipe: Honorable Combatant's Mail Treads
-		i(162403),	-- Recipe: Honorable Combatant's Mail Treads
-		i(162408),	-- Recipe: Honorable Combatant's Mail Waistguard
-		i(162409),	-- Recipe: Honorable Combatant's Mail Waistguard
-		i(162503),	-- Recipe: Imbued Mistscale Boots
-		i(162505),	-- Recipe: Imbued Mistscale Leggings
-		i(162499),	-- Recipe: Imbued Tempest Boots
-		i(162501),	-- Recipe: Imbued Tempest Leggings				
-		i(162400),	-- Recipe: Mistscale Boots
-		i(162401),	-- Recipe: Mistscale Greaves
-		i(137869),	-- Recipe: Warhide Belt
-		i(137881),	-- Recipe: Warhide Belt
-		i(137876),	-- Recipe: Warhide Bindings
-		i(137868),	-- Recipe: Warhide Bindings
-		i(137874),	-- Recipe: Warhide Footpads
-		i(137880),	-- Recipe: Warhide Footpads
-		i(137873),	-- Recipe: Warhide Gloves
-		i(137879),	-- Recipe: Warhide Gloves
-		i(137875),	-- Recipe: Warhide Jerkin
-		i(137883),	-- Recipe: Warhide Jerkin
-		i(137872),	-- Recipe: Warhide Mask
-		i(137878),	-- Recipe: Warhide Mask
-		i(137871),	-- Recipe: Warhide Pants
-		i(137877),	-- Recipe: Warhide Pants
-		i(137882),	-- Recipe: Warhide Shoulderguard
-		i(137870),	-- Recipe: Warhide Shoulderguard		
+		--[[
+		n(-10068, { -- PLACE_HOLDER		
+			i(132123),	-- Pattern: Battlebound Warhelm			
+			i(137900),	-- Recipe: Battlebound Armbands
+			i(137908),	-- Recipe: Battlebound Armbands
+			i(137901),	-- Recipe: Battlebound Girdle
+			i(137913),	-- Recipe: Battlebound Girdle
+			i(137905),	-- Recipe: Battlebound Grips
+			i(137911),	-- Recipe: Battlebound Grips
+			i(137907),	-- Recipe: Battlebound Hauberk
+			i(137915),	-- Recipe: Battlebound Hauberk
+			i(137903),	-- Recipe: Battlebound Leggings
+			i(137909),	-- Recipe: Battlebound Leggings
+			i(137902),	-- Recipe: Battlebound Spaulders
+			i(137914),	-- Recipe: Battlebound Spaulders
+			i(137906),	-- Recipe: Battlebound Treads
+			i(137912),	-- Recipe: Battlebound Treads
+			i(137904),	-- Recipe: Battlebound Warhelm
+			i(137910),	-- Recipe: Battlebound Warhelm					
+			i(162504),	-- Recipe: Emblazoned Mistscale Boots
+			i(162506),	-- Recipe: Emblazoned Mistscale Leggings
+			i(162500),	-- Recipe: Emblazoned Tempest Boots
+			i(162502),	-- Recipe: Emblazoned Tempest Leggings				
+			i(137917),	-- Recipe: Gravenscale Girdle
+			i(137925),	-- Recipe: Gravenscale Girdle
+			i(140645),	-- Recipe: Gravenscale Girdle
+			i(137921),	-- Recipe: Gravenscale Grips
+			i(137929),	-- Recipe: Gravenscale Grips
+			i(140649),	-- Recipe: Gravenscale Grips
+			i(137923),	-- Recipe: Gravenscale Hauberk
+			i(137931),	-- Recipe: Gravenscale Hauberk
+			i(140651),	-- Recipe: Gravenscale Hauberk
+			i(137919),	-- Recipe: Gravenscale Leggings
+			i(137927),	-- Recipe: Gravenscale Leggings
+			i(140647),	-- Recipe: Gravenscale Leggings
+			i(137918),	-- Recipe: Gravenscale Spaulders
+			i(137926),	-- Recipe: Gravenscale Spaulders
+			i(140646),	-- Recipe: Gravenscale Spaulders
+			i(137922),	-- Recipe: Gravenscale Treads
+			i(137930),	-- Recipe: Gravenscale Treads
+			i(140650),	-- Recipe: Gravenscale Treads
+			i(137920),	-- Recipe: Gravenscale Warhelm
+			i(137928),	-- Recipe: Gravenscale Warhelm
+			i(140648),	-- Recipe: Gravenscale Warhelm
+			i(162388),	-- Recipe: Hardened Tempest Boots		
+			i(162389),	-- Recipe: Hardened Tempest Leggings
+			i(162417),	-- Recipe: Honorable Combatant's Bow
+			i(162418),	-- Recipe: Honorable Combatant's Bow
+			i(162398),	-- Recipe: Honorable Combatant's Leather Armguards
+			i(162399),	-- Recipe: Honorable Combatant's Leather Armguards
+			i(162392),	-- Recipe: Honorable Combatant's Leather Gauntlets
+			i(162393),	-- Recipe: Honorable Combatant's Leather Gauntlets
+			i(162394),	-- Recipe: Honorable Combatant's Leather Leggings
+			i(162395),	-- Recipe: Honorable Combatant's Leather Leggings
+			i(162390),	-- Recipe: Honorable Combatant's Leather Treads
+			i(162391),	-- Recipe: Honorable Combatant's Leather Treads
+			i(162396),	-- Recipe: Honorable Combatant's Leather Waistguard
+			i(162397),	-- Recipe: Honorable Combatant's Leather Waistguard
+			i(162410),	-- Recipe: Honorable Combatant's Mail Armguards
+			i(162411),	-- Recipe: Honorable Combatant's Mail Armguards
+			i(162404),	-- Recipe: Honorable Combatant's Mail Gauntlets
+			i(162405),	-- Recipe: Honorable Combatant's Mail Gauntlets
+			i(162406),	-- Recipe: Honorable Combatant's Mail Leggings
+			i(162407),	-- Recipe: Honorable Combatant's Mail Leggings
+			i(162402),	-- Recipe: Honorable Combatant's Mail Treads
+			i(162403),	-- Recipe: Honorable Combatant's Mail Treads
+			i(162408),	-- Recipe: Honorable Combatant's Mail Waistguard
+			i(162409),	-- Recipe: Honorable Combatant's Mail Waistguard
+			i(162503),	-- Recipe: Imbued Mistscale Boots
+			i(162505),	-- Recipe: Imbued Mistscale Leggings
+			i(162499),	-- Recipe: Imbued Tempest Boots
+			i(162501),	-- Recipe: Imbued Tempest Leggings				
+			i(162400),	-- Recipe: Mistscale Boots
+			i(162401),	-- Recipe: Mistscale Greaves
+			i(137869),	-- Recipe: Warhide Belt
+			i(137881),	-- Recipe: Warhide Belt
+			i(137876),	-- Recipe: Warhide Bindings
+			i(137868),	-- Recipe: Warhide Bindings
+			i(137874),	-- Recipe: Warhide Footpads
+			i(137880),	-- Recipe: Warhide Footpads
+			i(137873),	-- Recipe: Warhide Gloves
+			i(137879),	-- Recipe: Warhide Gloves
+			i(137875),	-- Recipe: Warhide Jerkin
+			i(137883),	-- Recipe: Warhide Jerkin
+			i(137872),	-- Recipe: Warhide Mask
+			i(137878),	-- Recipe: Warhide Mask
+			i(137871),	-- Recipe: Warhide Pants
+			i(137877),	-- Recipe: Warhide Pants
+			i(137882),	-- Recipe: Warhide Shoulderguard
+			i(137870),	-- Recipe: Warhide Shoulderguard		
 		}),
+		--]]
 	}),	
 });

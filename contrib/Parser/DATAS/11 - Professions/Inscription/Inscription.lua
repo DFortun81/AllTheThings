@@ -124,6 +124,7 @@ profession(773, { -- Inscription
 		un(1, i(146363)),	-- Vantus Rune Technique: Violet Hold
 		un(1, i(146383)),	-- Vantus Rune Technique: Violet Hold
 	}),
+	--[[
 	n(-10068, { -- PLACE_HOLDER
 		i(162358),	-- Recipe: Codex of the Quiet Mind
 		i(162362),	-- Recipe: Contract: Order of Embers
@@ -256,6 +257,7 @@ profession(773, { -- Inscription
 		i(118615),	-- Technique: Warmaster's Firestick
 		i(118610),	-- Technique: Weapon Crystal
 	}),
+	--]]
 	tier(8, {	-- Battle For Azeroth
 		filter(200, { -- Recipes
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
