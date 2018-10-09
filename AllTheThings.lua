@@ -5631,15 +5631,14 @@ UpdateGroup = function(parent, group)
 				else
 					-- We only want to filter out Consumables, Reagents, and Miscellaneous items if they can't be used to collect something
 					if group.f then
-						if group.f == 56 or group.f == 50 then
-							if not GetPersonalDataSubMember("ItemFilters", group.f, true) then
-								group.visible = false;
-							end
-						elseif group.f == 58 then
+						if group.f == 58 then
 							group.visible = app.CollectedItemVisibilityFilter(group);
 						else
-							-- Hide this group.
-							group.visible = false;
+							if GetPersonalDataSubMember("ItemFilters", group.f, true) then
+								group.visible = true;
+							else
+								group.visible = false;
+							end
 						end
 					else
 						-- Hide this group.
