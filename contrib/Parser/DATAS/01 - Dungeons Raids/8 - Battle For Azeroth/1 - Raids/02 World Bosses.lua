@@ -48,7 +48,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isRaid"] = true,
 					["maps"] = { 864 },	-- Vol'dun
 					["questID"] = 53000,
-					-- Note!! WQ ID:52196, -- Sandswept Bones
+					-- Note!! WQ ID: 52196, -- Sandswept Bones
 				}),
 				e(2197, {	-- Hailstone Construct [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
@@ -93,7 +93,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isRaid"] = true,
 					["maps"] = { 862 },	-- Zuldazar
 					["questID"] = 52998,
-					-- Note!! WQ ID:52169,	-- The Matriarch
+					-- Note!! WQ ID: 52169,	-- The Matriarch
 				}),
 				e(2139, {	-- T'zane <Tehe Soul Terror>
 					["groups"] =  bubbleDown({["modID"] = 3}, {
@@ -115,7 +115,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 					["isRaid"] = true,
 					["maps"] = { 863 },	-- Nazmir
-					["questID"] = 52181,	-- Smoke and Shadow
+					["questID"] = 52996,
+					-- Note!! WQ ID: 52181,	-- Smoke and Shadow
 				}),
 				e(2198, {	-- Warbringer Yenajz [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
@@ -135,7 +136,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isRaid"] = true,
 					["maps"] = { 942 },	-- Stormsong Valley
 					["questID"] = 52995,
-					-- Note!! WQ ID:52166, -- The Faceless Herald
+					-- Note!! WQ ID: 52166, -- The Faceless Herald
 				}),
 			}),
 			e(2213, {	-- Doom's Howl [Warfront] [QID]

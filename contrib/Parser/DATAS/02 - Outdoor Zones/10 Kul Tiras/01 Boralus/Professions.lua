@@ -370,6 +370,13 @@ _.Zones =
 								},
 							},
 						},
+						{	-- Tattered Map [Mine]
+							["itemID"] = 161085,	-- Tattered Map
+							["questID"] = 52049,	-- X Marks the Plat!
+							["requireSkill"] = 186, -- Mining
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Requires 150 Kul'Tiran Mining",
+						},
 						{	-- The Wrath of Grapes [Mine -- Storm Silver Seam III]
 							["questID"] = 51889,	-- The Wrath of Grapes
 							["qg"] = 139375,	-- Franklin the Drunk
