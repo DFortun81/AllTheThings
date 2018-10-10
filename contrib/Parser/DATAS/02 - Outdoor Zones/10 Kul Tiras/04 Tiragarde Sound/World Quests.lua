@@ -76,6 +76,13 @@ _.Zones =
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
+								{	-- Lumberjack Sentinel
+									["questID"] = 51670,	-- Lumberjack Sentinel
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(51632, {	-- Make Loh Go
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below

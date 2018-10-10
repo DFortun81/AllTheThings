@@ -1129,3 +1129,5 @@ i(103982);		-- Burden of Eternity
 i(164261);		-- Steel Strongbox [A]
 i(164262);		-- Steel Strongbox [H]
 i(163826);		-- Raider's Supply Cache
+
+i(42780);		-- Relics of Ulduar

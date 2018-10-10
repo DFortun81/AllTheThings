@@ -591,20 +591,55 @@ _.Zones =
 					}),
 				}),
 				n(-2, {		-- Vendors
-					
-					nh(30472, {	-- Olut Alegut
-						i(43499),	-- Iron Boot Flask
-					}),
-					na(29744, {	-- Rork Sharpchin <Explorers' League>
-						i(43499),	-- Iron Boot Flask
-					}),
-					n(30006, {	-- Warsmith Sigfinna <Arms & Armor>
-						i(41746),	-- Brunnhildar Bow
-						i(41752),	-- Brunnhildar Axe
-						i(41754),	-- Brunnhildar Shield
-						i(43600),	-- Brunnhildar Harpoon
-						i(43601),	-- Brunnhildar Great Axe
-					}),
+					{	-- Olut Alegut
+						["npcID"] = 30472,	-- Olut Alegut
+						["itemID"] = 42780,	-- Relics of Ulduar
+						["coords"] = {
+							{ 37.01, 49.61 }
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Iron Boot Flask
+								["itemID"] = 43499,	-- Iron Boot Flask
+							},
+						},
+					},
+					{	-- Rork Sharpchin 
+						["npcID"] = 29744,	-- Rork Sharpchin 
+						["itemID"] = 42780,	-- Relics of Ulduar
+						["coords"] = {
+							{ 28.81, 74.01 }
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- Iron Boot Flask
+								["itemID"] = 43499,	-- Iron Boot Flask
+							},
+						},
+					},
+					{	-- Warsmith Sigfinna
+						["npcID"] = 30006,	-- Warsmith Sigfinna
+						["coords"] = {
+							{ 47.41, 70.41 },
+						},
+						["g"] = {
+							{	-- Brunnhildar Axe
+								["itemID"] = 41752,	-- Brunnhildar Axe
+							},
+							{	-- Brunnhildar Bow
+								["itemID"] = 41746, -- Brunnhildar Bow
+							},
+							{	-- Brunnhildar Great Axe
+								["itemID"] = 43601, -- Brunnhildar Great Axe
+							},
+							{	--  Brunnhildar Harpoon
+								["itemID"] = 43600, --  Brunnhildar Harpoon
+							},
+							{	-- Brunnhildar Shield
+								["itemID"] = 41754, -- Brunnhildar Shield
+							},
+						},
+					},
 				}),
 			},
 			["lvl"] = 67,	
