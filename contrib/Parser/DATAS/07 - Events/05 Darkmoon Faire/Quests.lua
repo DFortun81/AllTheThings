@@ -492,6 +492,35 @@ _.WorldEvents =
 						{ 47.91, 67.12 },
 					},
 				},
+				{	-- The Real Race
+					["questID"] = 37819,	-- Welcome to the Darkmoon Races
+					["qg"] = 74056,			-- Malle Earnhard
+					["isDaily"] = true,
+					["repeatable"] = true,
+					["sourceQuests"] = {
+						37819,	-- Welcome to the Darkmoon Races
+					},
+					["coords"] = {
+						{ 48.98, 88.31 },
+					},
+					["g"] = {
+						{	-- Darkmoon Racer Novice [25 Tolls]
+							["achievementID"] = 9756,	-- Darkmoon Racer Novice
+						},
+						{	-- Darkmoon Racer Jockey [20 Tolls]
+							["achievementID"] = 9759,	-- Darkmoon Racer Jockey
+						},
+						{	-- Darkmoon Racer Leadfoot [15 Tolls]
+							["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
+						},
+						{	-- Darkmoon Racer Roadhog [11 Tolls]
+							["achievementID"] = 9761,	-- Darkmoon Racer Roadhog
+						},
+						{	-- Darkmoon Game Prize
+							["itemID"] = 93724,	-- Darkmoon Game Prize
+						},
+					},
+				},
 				{	-- Tonk Commander [Token Game]
 					["questID"] = 29434,	-- Tonk Commander
 					["isDaily"] = true,
@@ -531,18 +560,27 @@ _.WorldEvents =
 						},
 					},
 				},
+				{	-- Welcome to the Darkmoon Races [One Time Quest]
+					["questID"] = 37819,	-- Welcome to the Darkmoon Races
+					["qg"] = 74056,			-- Malle Earnhard
+					["coords"] = {
+						{ 48.98, 88.31 },
+					},
+					["g"] = {
+						{	-- Darkmmon Race Enthusiast
+							["achievementID"] = 9755,	-- Darkmmon Race Enthusiast
+						},
+						{	-- Darkmoon Game Prize
+							["itemID"] = 93724,	-- Darkmoon Game Prize
+						},
+					},
+				},
 				
-				n(74056, { -- Malle Earnhard <Race Official>
-					q(37819, { -- Welcome to the Darkmoon Races
-						i(93724, { -- Darkmoon Game Prize
-						}),
-					}),
-					q(37910, {  -- The Real Race
+					q(37910, {  -- The Real Race  [Real Race is pre-req]
 						i(93724, { -- Darkmoon Game Prize
 						}),
 					}),
 					q(33756),	-- Let's Keep Racing!
-				}),
 				n(15303, { -- Maxima Blastenheimer <Darkmoon Faire Cannoneer>
 					q(29436, { -- The Humanoid Cannonball
 						i(93724, { -- Darkmoon Game Prize

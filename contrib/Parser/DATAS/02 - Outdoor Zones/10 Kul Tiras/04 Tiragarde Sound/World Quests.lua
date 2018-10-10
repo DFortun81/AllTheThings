@@ -61,6 +61,14 @@ _.Zones =
 									["lvl"] = 120,	-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
+								{	-- Flourishing Sea Stalks [Herbalism]
+									["questID"] = 53277,	-- Flourishing Sea Stalks
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+									["requireSkill"] = 182,	-- Herbalism
+								},
 								q(52760, {	-- Like a Fish in a Barrel
 									["repeatable"] = true,
 									["isDaily"] = true, -- Would like to swap it to WQ below

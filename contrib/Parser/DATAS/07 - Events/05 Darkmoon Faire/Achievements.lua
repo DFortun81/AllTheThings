@@ -7,12 +7,6 @@ _.WorldEvents =
 		["groups"] = {
 			n(-4, {	 -- Achievements
 				{
-					["achievementID"] = 9885,
-					["groups"] = {
-						i(122122),
-					},
-				},
-				{
 					["achievementID"] = 9805,
 					["groups"] = {
 						i(122125),

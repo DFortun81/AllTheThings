@@ -21,6 +21,13 @@ _.Zones =
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
 							}),
+							{	-- Azerite Mining
+								["questID"] = 52877,	-- Azerite Mining
+								["repeatable"] = true,
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
+							},
 							q(51642, {	-- Beachhead
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
@@ -87,6 +94,14 @@ _.Zones =
 								["lvl"] = 120,	-- WQ is 120+ only
 								["races"] = HORDE_ONLY,
 							}),
+							{	-- Saving Xibala
+								["questID"] = 52250,	-- Saving Xibala
+								["repeatable"] = true,
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
+								["races"] = ALLIANCE_ONLY,
+							},
 							q(50581, {	-- Scrolls and Scales
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
