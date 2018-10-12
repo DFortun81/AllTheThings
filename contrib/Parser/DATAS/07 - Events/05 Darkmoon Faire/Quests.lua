@@ -522,7 +522,7 @@ _.WorldEvents =
 					},
 				},
 				{	-- The Real Race
-					["questID"] = 33756,	-- The Real Race
+					["questID"] = 37910,	-- The Real Race
 					["qg"] = 74056,			-- Malle Earnhard
 					["isDaily"] = true,
 					["repeatable"] = true,
