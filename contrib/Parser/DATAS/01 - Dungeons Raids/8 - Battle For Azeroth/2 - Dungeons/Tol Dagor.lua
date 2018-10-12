@@ -17,9 +17,9 @@ _.Instances =
 									i(159332),	-- Wristguards of the Sandswimmer
 								}),
 								["repeatable"] = true,
-								["isDaily"] = true, -- Would like to swap it to WQ below
-								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,	-- WQ is 120+ only
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
 							}),
 						},
 					}),

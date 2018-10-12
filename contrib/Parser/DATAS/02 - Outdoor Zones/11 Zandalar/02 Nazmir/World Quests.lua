@@ -12,21 +12,21 @@ _.Zones =
 							["groups"] = {
 								q(51415, {	-- Azerite Madness
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52884, {	-- Azerite Wounds
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(50735, {	-- Burial Detail
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(52779, {	-- Crawg in the Bog [Pet Battle]
@@ -34,36 +34,36 @@ _.Zones =
 										i(163036),	-- Polished Pet Charm
 									},
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(50717, {	-- Don't Stalk Me, Troll
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(50899, {	-- Don't Stalk Me, Troll
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(51172, {	-- Forked Lightning
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(50545, {	-- Forked Lightning
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(50505, {	-- Kal'draxa
@@ -75,41 +75,41 @@ _.Zones =
 										}),
 									},
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(50497, {	-- Krag'wa's Favor
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52006, {	-- Preemptive Assault
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(51628, {	-- Shell Game
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(50650, {	-- Smashing Zalamar
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(52785, {	-- Smashing Zalamar
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(50513, {	-- Tainted Guardian
@@ -117,22 +117,29 @@ _.Zones =
 										i(162621),	-- Naazmani Golem's Greathelm
 									},
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(50514, {	-- Totem Maker Jash'ga
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(50515, {	-- Venomjaw
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Xu'ba
+									["questID"] = 50489,	-- Xu'ba
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 							},
 						}),
 						i(158116),	-- Bonehex Claws

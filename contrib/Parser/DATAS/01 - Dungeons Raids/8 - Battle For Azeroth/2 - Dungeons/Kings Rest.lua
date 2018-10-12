@@ -22,9 +22,9 @@ _.Instances =
 									i(158319),	-- My'das Talisman
 								}),
 								["repeatable"] = true,
-								["isDaily"] = true, -- Would like to swap it to WQ below
-								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,	-- WQ is 120+ only
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
 							}),
 							q(51500, {	-- The Weaponmaster Walks Again
 								["groups"] = bubbleDown({["modID"] = 23}, {
@@ -36,9 +36,9 @@ _.Instances =
 									i(159243),	-- Sandals of Wise Voodoo
 								}),
 								["repeatable"] = true,
-								["isDaily"] = true, -- Would like to swap it to WQ below
-								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,	-- WQ is 120+ only
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
 							}),
 						},
 					}),

@@ -15,52 +15,52 @@ _.Zones =
 										ach(13041),	-- Hungry, Hungry Ranishu
 									},
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51422, {	-- Azerite Madness
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51155, {	-- Brgl-Lrgl the Basher
 									["groups"] = {
 										i(161044),	-- Tideflat Brute's Greatbelt
 									},
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51098, {	-- Commodore Calhoun
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51562, {	-- Damaged Goods
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(51599, {	-- Damaged Goods
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								{	--  Desert Survivors [Pet Battle]
 									["questID"] = 52878,	-- Desert Survivors
 									["qg"] = 142054,	-- Kusa
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["g"] = {
 										{	-- Desert Survivors
 											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
@@ -70,38 +70,38 @@ _.Zones =
 								},
 								q(51792, {	-- Erupting Totem Testing
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(51794, {	-- Erupting Totem Testing
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(51156, {	-- Fangcaller Xorreth
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51157, {	-- Golanar
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								{	-- Hivemotheree Kraxi
 									["questID"] = 51108,	-- Hivemotheree Kraxi
 									["npcID"] = 130443,	-- Hivemotheree Kraxi
 									["qg"] = 130443,	-- Hivemotheree Kraxi
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["g"] = {
 										{	-- Venomous Hivemother Cord
 											["itemID"] = 161027,	-- Venomous Hivemother Cord
@@ -110,43 +110,43 @@ _.Zones =
 								},
 								q(51239, {	-- Instructions Not Included
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51429, {	-- King Clickyclack
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51153, {	-- Mor'fani the Exile
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51850, {	-- Preserve the Oasis
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(51853, {	-- Preserve the Oasis
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								{	--  Snakes on a Terrace [Pet Battle]
 									["questID"] = 52856,	-- Snakes on a Terrace
 									["qg"] = 141945,	-- Sizzik
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["g"] = {
 										{	-- Snakes on a Terrace
 											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
@@ -156,31 +156,31 @@ _.Zones =
 								},
 								q(51558, {	-- Spider Scorching
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(51561, {	-- Spider Scorching
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(51113, {	-- Warlord Zothix
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								{	--  What Do You Mean, Mind Controlling Plants? [Pet Battle]
 									["questID"] = 52864,	-- What Do You Mean, Mind Controlling Plants?
 									["qg"] = 141969,	-- Spineleaf
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["g"] = {
 										{	-- What Do You Mean, Mind Controlling Plants?
 											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
@@ -190,9 +190,9 @@ _.Zones =
 								},
 								q(51322, {	-- Wings and Stingers
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52362, {	-- Work Order: Enchant Weapon - Quick Navigation
 									["groups"] = {
@@ -202,9 +202,9 @@ _.Zones =
 									},
 									["requireSkill"] = 333,	-- Enchanting
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 							},

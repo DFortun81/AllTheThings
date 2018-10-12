@@ -12,36 +12,36 @@ _.Zones =
 							["groups"] = {
 								q(51855, {	-- A Pirate's Life For Me
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(52140, {	-- A Thorny Problem
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(52236, {	-- A Thorny Problme
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(52871, {	-- Azerite Empowerment
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51618, {	-- Azerite Madness
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52330, {	-- Beehemoth
 									["groups"] = {
@@ -52,21 +52,21 @@ _.Zones =
 										}),
 									},
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51782, {	-- Captain Razorspine
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52179, {	-- Fortified Resistance
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(51779, {	-- Grimscowl the Harebrained		
@@ -77,9 +77,9 @@ _.Zones =
 										62.0, 73.9
 									},	
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52321, {	-- Kickers
 									["groups"] = {
@@ -87,27 +87,27 @@ _.Zones =
 									},
 									["npcID"] = 141029,	-- Kickers
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52889, {	-- Sandscour
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52446, {	-- Sister Absinthe
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52209, {	-- Turtle Tactics
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52394, {	-- Work Order: Contract: Champions of Azeroth [Rank 3]
 									["groups"] = {
@@ -116,9 +116,9 @@ _.Zones =
 										}),
 									},
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52347, {	-- Work Order: Honey-Glazed Haunchs [Rank 3]
 									["groups"] = {
@@ -129,9 +129,9 @@ _.Zones =
 									["requireSkill"] = 185,	-- Cooking
 									["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52367, {	-- Work Order: Electroshock Mount Motivator
 									["groups"] = {
@@ -141,9 +141,9 @@ _.Zones =
 									},
 									["requireSkill"] = 202,	-- Engineering
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(52344, {	-- Work Order: Kul Tiramisu [Rank 3]
@@ -155,9 +155,9 @@ _.Zones =
 									["requireSkill"] = 185,	-- Cooking
 									["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52346, {	-- Work Order: Sailor's Pie [Rank 3]
 									["groups"] = {
@@ -168,9 +168,9 @@ _.Zones =
 									["requireSkill"] = 185,	-- Cooking
 									["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 							},
 						}),

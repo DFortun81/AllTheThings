@@ -12,53 +12,53 @@ _.Zones =
 							["groups"] = {
 								q(51610, {	-- Adhara White
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52874, {	-- Azerite Mining
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52869, {	-- Azerite Empowerment
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51638, {	-- Beachhead
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52755, {	-- Bringing the Heat
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(51842, {	-- Carla Smirk
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51647, {	-- Crews of Freehold
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(50234, {	-- Crews of Freehold
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								{	-- Flourishing Sea Stalks [Herbalism]
@@ -71,9 +71,9 @@ _.Zones =
 								},
 								q(52760, {	-- Like a Fish in a Barrel
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								{	-- Lumberjack Sentinel
@@ -85,21 +85,21 @@ _.Zones =
 								},
 								q(51632, {	-- Make Loh Go
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51656, {	-- Saurolisk Tamer Mugg
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(51463, {	-- Sky Drop Rescue
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(51651, {	-- Squacks
@@ -107,33 +107,33 @@ _.Zones =
 										i(160455),	-- Parrot-Trainer Sash
 									},
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52471, {	-- That's a Big Carcass [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
 									},
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(53078, {	-- Treasure in the Ttides
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52455, {	-- Unbreakable [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
 									},
 									["repeatable"] = true,
-									["isDaily"] = true, -- Would like to swap it to WQ below
-									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,	-- WQ is 120+ only
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 							},
 						}),
