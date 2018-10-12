@@ -442,6 +442,35 @@ _.WorldEvents =
 						},
 					},
 				},
+				{	-- Let's Keep Racing
+					["questID"] = 33756,	-- Let's Keep Racing
+					["qg"] = 74056,			-- Malle Earnhard
+					["isDaily"] = true,
+					["repeatable"] = true,
+					["sourceQuests"] = {
+						37910,	-- Welcome to the Darkmoon Races
+					},
+					["coords"] = {
+						{ 48.98, 88.31 },
+					},
+					["g"] = {
+						{	-- Darkmoon Racer Novice [25 Tolls]
+							["achievementID"] = 9756,	-- Darkmoon Racer Novice
+						},
+						{	-- Darkmoon Racer Jockey [20 Tolls]
+							["achievementID"] = 9759,	-- Darkmoon Racer Jockey
+						},
+						{	-- Darkmoon Racer Leadfoot [15 Tolls]
+							["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
+						},
+						{	-- Darkmoon Racer Roadhog [11 Tolls]
+							["achievementID"] = 9761,	-- Darkmoon Racer Roadhog
+						},
+						{	-- Darkmoon Game Prize
+							["itemID"] = 93724,	-- Darkmoon Game Prize
+						},
+					},
+				},
 				{	-- Moonfang's Pelt
 					["itemID"] = 105891,	-- Moonfang's Pelt
 					["questID"] = 33354,	-- Den Mother's Demise
@@ -493,7 +522,7 @@ _.WorldEvents =
 					},
 				},
 				{	-- The Real Race
-					["questID"] = 37819,	-- Welcome to the Darkmoon Races
+					["questID"] = 33756,	-- The Real Race
 					["qg"] = 74056,			-- Malle Earnhard
 					["isDaily"] = true,
 					["repeatable"] = true,
@@ -575,12 +604,6 @@ _.WorldEvents =
 						},
 					},
 				},
-				
-					q(37910, {  -- The Real Race  [Real Race is pre-req]
-						i(93724, { -- Darkmoon Game Prize
-						}),
-					}),
-					q(33756),	-- Let's Keep Racing!
 				n(15303, { -- Maxima Blastenheimer <Darkmoon Faire Cannoneer>
 					q(29436, { -- The Humanoid Cannonball
 						i(93724, { -- Darkmoon Game Prize
