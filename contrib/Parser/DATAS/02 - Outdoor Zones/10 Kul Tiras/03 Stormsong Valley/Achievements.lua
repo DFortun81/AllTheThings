@@ -47,6 +47,21 @@ _.Zones =
 								["coord"] = { 75.07, 31.13 },
 							},
 						}),
+						{	-- Three Sheets to the Wind [22 items]
+							-- Note!! Instead of putting every possible version in each zone we are going to list most in Boralus and use CRS to put it on all the vendors so we aren't duplicating it 4 times.
+							["achievementID"] = 13061,	-- Three Sheets to the Wind
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							["g"] = {
+								{	-- Foaming Turtle Broth
+									["itemID"] = 158927,	-- Foaming Turtle Broth
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 10,		-- Foaming Turtle Broth
+									["crs"] = {
+										135600,	-- Emma Haribull
+									},
+								},
+							},
+						},
 						ach(12853, {	-- Treasures of Stormsong
 							o(293350, {	-- Carved Wooden Chest	
 								["questID"] = 52429,
