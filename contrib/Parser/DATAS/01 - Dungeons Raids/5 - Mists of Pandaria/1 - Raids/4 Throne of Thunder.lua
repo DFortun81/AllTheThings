@@ -127,8 +127,97 @@ _.Instances =
 							},
 						}),
 					}),
+					n(0, {	-- Zone Drop
+						["groups"] =  {
+							i(95202),	-- Necklace of the Terra-Cotta Archer
+							i(95203),	-- Necklace of the Terra-Cotta Invoker
+							i(95204),	-- Necklace of the Terra-Cotta Mender
+							i(95206),	-- Necklace of the Terra-Cotta Protector
+							i(95205),	-- Necklace of the Terra-Cotta Vanquisher
+							i(95211),	-- Abandoned Zandalari Arrowlinks
+							i(95215),	-- Abandoned Zandalari Bucklebreaker
+							i(95207),	-- Abandoned Zandalari Firecord
+							i(95214),	-- Abandoned Zandalari Goreplate
+							i(95213),	-- Abandoned Zandalari Greatbelt
+							i(95210),	-- Abandoned Zandalari Moonstrap
+							i(95208),	-- Abandoned Zandalari Shadowgirdle
+							i(95209),	-- Abandoned Zandalari Silentbelt
+							i(95212),	-- Abandoned Zandalari Waterchain
+							i(95218),	-- Columnbreaker Stompers
+							i(95221),	-- Deeproot Treads
+							i(95224),	-- Home-Warding Slippers
+							i(95217),	-- Locksmasher Greaves
+							i(95220),	-- Scalehide Spurs
+							i(95223),	-- Silentflame Sandals
+							i(95219),	-- Spiderweb Tabi
+							i(95222),	-- Spiritbound Boots
+							i(95216),	-- Vaultwalker Sabatons
+							n(-355, {	-- Thunderforged
+								i(96330),	-- Necklace of the Terra-Cotta Archer
+								i(96336),	-- Necklace of the Terra-Cotta Invoker
+								i(96341),	-- Necklace of the Terra-Cotta Mender
+								i(96352),	-- Necklace of the Terra-Cotta Protector
+								i(96349),	-- Necklace of the Terra-Cotta Vanquisher
+								i(96333),	-- Abandoned Zandalari Firecord
+								i(96343),	-- Abandoned Zandalari Moonstrap
+								i(96334),	-- Abandoned Zandalari Shadowgirdle
+								i(96342),	-- Abandoned Zandalari Silentbelt
+								i(96345),	-- Abandoned Zandalari Waterchain
+								i(96351),	-- Columnbreaker Stompers
+								i(96338),	-- Deeproot Treads
+								i(96347),	-- Abandoned Zandalari Goreplate
+								i(96346),	-- Abandoned Zandalari Greatbelt
+								i(96337),	-- Home-Warding Slippers
+								i(96350),	-- Locksmasher Greaves
+								i(96332),	-- Scalehide Spurs
+								i(96335),	-- Silentflame Sandals
+								i(96331),	-- Spiderweb Tabi
+								i(96339),	-- Spiritbound Boots
+								i(96340),	-- Vaultwalker Sabatons
+							}),
+						},
+						["crs"] = {
+							69909,	-- Amani'shi Flame Chanter
+							70448,	-- Ancient Python
+							68221,	-- Bore Worm
+							68222,	-- Bow Fly Swarm
+							70589,	-- Cavern Burrower
+							69702,	-- Dark Ritualist
+							69910,	-- Drakkari Frost Warden
+							70586,	-- Eternal Guardian
+							69899,	-- Farraki Sand Conjurer
+							70153,	-- Fungal Growth
+							68220,	-- Gastropod
+							69351,	-- Greater Cave Bat
+							69916,	-- Gurubashi Berserker
+							69905,	-- Gurubashi Berserker
+							69375,	-- Hidden Fog
+							69834,	-- Lightning Guardian
+							70202,	-- Manchu
+							70594,	-- Mist Lurker
+							70179,	-- Ritual Guard
+							68313,	-- Roaming Fog
+							69944,	-- Sand Elemental
+							70587,	-- Shale Stalker
+							70240,	-- Shan'ze Celestial Shaper
+							70227,	-- Skittering Spiderling
+							70445,	-- Stormbringer Draz'kil
+							69821,	-- Thunder Lord
+							70341,	-- Tormented Spirit
+							70230,	-- Zandalari Blade Initiate
+							69906,	-- Zandalari High Priest
+							69927,	-- Zandalari Prelate
+							70557,	-- Zandalari Prophet
+							69388,	-- Zandalari Spear-Shaper
+							69390,	-- Zandalari Storm-Caller
+							70236,	-- Zandalari Storm-Caller
+							69911,	-- Zandalari Warlord
+							69455,	-- Zandalari Water-Binder
+						},
+					}),
 					d(  7, {	-- LFR
 						n(-1, {	-- Common Boss Drops
+							["description"] = "These can drop from any of the bosses other than Ra-den.",
 							["crs"] = {
 								69465,	-- Jin'rokh the Breaker
 								68476,	-- Horridon
@@ -147,7 +236,6 @@ _.Instances =
 								68905,	-- Lu'lin <Mistress of Solitude>
 								68397,	-- Lei Shen
 							},
-							["description"] = "Don't be confused by the name, these are the rarest items in the zone and can drop from any of the bosses other than Ra-den.",
 							["groups"] = {
 								i(95877),	-- Bo-Ris, Horror in the Night
 								i(95862),	-- Darkwood Spiritstaff
@@ -622,20 +710,12 @@ _.Instances =
 							})),
 						}),
 					}),
-					d(1, {	-- Normal
+					d(1, {		-- Normal
 						["ignoreBonus"] = true,
 						["difficulties"] = { 3, 4 },
 						["groups"] = {
-							n(-4, { -- Achievements
-								["groups"] = {
-									ach(8124),	-- Glory of the Thundering Raider
-									ach(8069),	-- Last Stand of the Zandalari
-									ach(8070),	-- Forgotten Depths
-									ach(8071),	-- Halls of Flesh-Shaping
-									ach(8072),	-- Pinnacle of Storms
-								},
-							}),
 							n(-1, {	-- Common Boss Drops
+								["description"] = "These can drop from any of the bosses other than Ra-den.",
 								["groups"] = {
 									n(-355, {	-- Thunderforged
 										i(96249),	-- Bo-Ris, Horror in the Night
@@ -684,7 +764,6 @@ _.Instances =
 									i(95063),	-- Reconstructed Furious Shoulderplates
 									i(95069),	-- Reconstructed Holy Shoulderplates
 								},
-								["description"] = "Don't be confused by the name, these are the rarest items in the zone and can drop from any of the bosses other than Ra-den.",
 								["crs"] = {
 									69465,	-- Jin'rokh the Breaker
 									68476,	-- Horridon
@@ -702,84 +781,6 @@ _.Instances =
 									68904,	-- Suen <Mistress of Anger>
 									68905,	-- Lu'lin <Mistress of Solitude>
 									68397,	-- Lei Shen
-								},
-							}),
-							n(0, {	-- Zone Drop
-								["groups"] =  {
-									i(95211),	-- Abandoned Zandalari Arrowlinks
-									i(95215),	-- Abandoned Zandalari Bucklebreaker
-									i(95207),	-- Abandoned Zandalari Firecord
-									i(95214),	-- Abandoned Zandalari Goreplate
-									i(95213),	-- Abandoned Zandalari Greatbelt
-									i(95210),	-- Abandoned Zandalari Moonstrap
-									i(95208),	-- Abandoned Zandalari Shadowgirdle
-									i(95209),	-- Abandoned Zandalari Silentbelt
-									i(95212),	-- Abandoned Zandalari Waterchain
-									i(95218),	-- Columnbreaker Stompers
-									i(95221),	-- Deeproot Treads
-									i(95224),	-- Home-Warding Slippers
-									i(95217),	-- Locksmasher Greaves
-									i(95220),	-- Scalehide Spurs
-									i(95223),	-- Silentflame Sandals
-									i(95219),	-- Spiderweb Tabi
-									i(95222),	-- Spiritbound Boots
-									i(95216),	-- Vaultwalker Sabatons
-									n(-355, {	-- Thunderforged
-										i(96333),	-- Abandoned Zandalari Firecord
-										i(96343),	-- Abandoned Zandalari Moonstrap
-										i(96334),	-- Abandoned Zandalari Shadowgirdle
-										i(96342),	-- Abandoned Zandalari Silentbelt
-										i(96345),	-- Abandoned Zandalari Waterchain
-										i(96351),	-- Columnbreaker Stompers
-										i(96338),	-- Deeproot Treads
-										i(96347),	-- Abandoned Zandalari Goreplate
-										i(96346),	-- Abandoned Zandalari Greatbelt
-										i(96337),	-- Home-Warding Slippers
-										i(96350),	-- Locksmasher Greaves
-										i(96332),	-- Scalehide Spurs
-										i(96335),	-- Silentflame Sandals
-										i(96331),	-- Spiderweb Tabi
-										i(96339),	-- Spiritbound Boots
-										i(96340),	-- Vaultwalker Sabatons
-									}),
-								},
-								["crs"] = {
-									69909,	-- Amani'shi Flame Chanter
-									70448,	-- Ancient Python
-									68221,	-- Bore Worm
-									68222,	-- Bow Fly Swarm
-									70589,	-- Cavern Burrower
-									69702,	-- Dark Ritualist
-									69910,	-- Drakkari Frost Warden
-									70586,	-- Eternal Guardian
-									69899,	-- Farraki Sand Conjurer
-									70153,	-- Fungal Growth
-									68220,	-- Gastropod
-									69351,	-- Greater Cave Bat
-									69916,	-- Gurubashi Berserker
-									69905,	-- Gurubashi Berserker
-									69375,	-- Hidden Fog
-									69834,	-- Lightning Guardian
-									70202,	-- Manchu
-									70594,	-- Mist Lurker
-									70179,	-- Ritual Guard
-									68313,	-- Roaming Fog
-									69944,	-- Sand Elemental
-									70587,	-- Shale Stalker
-									70240,	-- Shan'ze Celestial Shaper
-									70227,	-- Skittering Spiderling
-									70445,	-- Stormbringer Draz'kil
-									69821,	-- Thunder Lord
-									70341,	-- Tormented Spirit
-									70230,	-- Zandalari Blade Initiate
-									69906,	-- Zandalari High Priest
-									69927,	-- Zandalari Prelate
-									70557,	-- Zandalari Prophet
-									69388,	-- Zandalari Spear-Shaper
-									69390,	-- Zandalari Storm-Caller
-									70236,	-- Zandalari Storm-Caller
-									69911,	-- Zandalari Warlord
-									69455,	-- Zandalari Water-Binder
 								},
 							}),
 							cr(69465, e(827, {	-- Jin'rokh the Breaker
@@ -1458,16 +1459,8 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["difficulties"] = { 5, 6 },
 						["groups"] = {
-							n(-4, { -- Achievements
-								["groups"] = {
-									ach(8124),	-- Glory of the Thundering Raider
-									ach(8069),	-- Last Stand of the Zandalari
-									ach(8070),	-- Forgotten Depths
-									ach(8071),	-- Halls of Flesh-Shaping
-									ach(8072),	-- Pinnacle of Storms
-								},
-							}),
 							n(-1, {	-- Common Boss Drops
+								["description"] = "These can drop from any of the bosses other than Ra-den.",
 								["groups"] = {
 									n(-355, { -- Thunderforged
 										i(96979), -- Lost Shoulders of Fire
@@ -1516,7 +1509,6 @@ _.Instances =
 									i(96605), -- Zeeg's Ancient Kegsmasher	
 									i(96622), -- Visage of the Doomed
 								},
-								["description"] = "Don't be confused by the name, these are the rarest items in the zone and can drop from any of the bosses other than Ra-den.",
 								["crs"] = {
 									69465,	-- Jin'rokh the Breaker
 									68476,	-- Horridon
@@ -1534,84 +1526,6 @@ _.Instances =
 									68904,	-- Suen <Mistress of Anger>
 									68905,	-- Lu'lin <Mistress of Solitude>
 									68397,	-- Lei Shen
-								},
-							}),
-							n(0, {	-- Zone Drop
-								["groups"] =  {
-									i(95211),	-- Abandoned Zandalari Arrowlinks
-									i(95215),	-- Abandoned Zandalari Bucklebreaker
-									i(95207),	-- Abandoned Zandalari Firecord
-									i(95214),	-- Abandoned Zandalari Goreplate
-									i(95213),	-- Abandoned Zandalari Greatbelt
-									i(95210),	-- Abandoned Zandalari Moonstrap
-									i(95208),	-- Abandoned Zandalari Shadowgirdle
-									i(95209),	-- Abandoned Zandalari Silentbelt
-									i(95212),	-- Abandoned Zandalari Waterchain
-									i(95218),	-- Columnbreaker Stompers
-									i(95221),	-- Deeproot Treads
-									i(95224),	-- Home-Warding Slippers
-									i(95217),	-- Locksmasher Greaves
-									i(95220),	-- Scalehide Spurs
-									i(95223),	-- Silentflame Sandals
-									i(95219),	-- Spiderweb Tabi
-									i(95222),	-- Spiritbound Boots
-									i(95216),	-- Vaultwalker Sabatons
-									n(-355, {	-- Thunderforged
-										i(96333),	-- Abandoned Zandalari Firecord
-										i(96343),	-- Abandoned Zandalari Moonstrap
-										i(96334),	-- Abandoned Zandalari Shadowgirdle
-										i(96342),	-- Abandoned Zandalari Silentbelt
-										i(96345),	-- Abandoned Zandalari Waterchain
-										i(96351),	-- Columnbreaker Stompers
-										i(96338),	-- Deeproot Treads
-										i(96347),	-- Abandoned Zandalari Goreplate
-										i(96346),	-- Abandoned Zandalari Greatbelt
-										i(96337),	-- Home-Warding Slippers
-										i(96350),	-- Locksmasher Greaves
-										i(96332),	-- Scalehide Spurs
-										i(96335),	-- Silentflame Sandals
-										i(96331),	-- Spiderweb Tabi
-										i(96339),	-- Spiritbound Boots
-										i(96340),	-- Vaultwalker Sabatons
-									}),
-								},
-								["crs"] = {
-									69909,	-- Amani'shi Flame Chanter
-									70448,	-- Ancient Python
-									68221,	-- Bore Worm
-									68222,	-- Bow Fly Swarm
-									70589,	-- Cavern Burrower
-									69702,	-- Dark Ritualist
-									69910,	-- Drakkari Frost Warden
-									70586,	-- Eternal Guardian
-									69899,	-- Farraki Sand Conjurer
-									70153,	-- Fungal Growth
-									68220,	-- Gastropod
-									69351,	-- Greater Cave Bat
-									69916,	-- Gurubashi Berserker
-									69905,	-- Gurubashi Berserker
-									69375,	-- Hidden Fog
-									69834,	-- Lightning Guardian
-									70202,	-- Manchu
-									70594,	-- Mist Lurker
-									70179,	-- Ritual Guard
-									68313,	-- Roaming Fog
-									69944,	-- Sand Elemental
-									70587,	-- Shale Stalker
-									70240,	-- Shan'ze Celestial Shaper
-									70227,	-- Skittering Spiderling
-									70445,	-- Stormbringer Draz'kil
-									69821,	-- Thunder Lord
-									70341,	-- Tormented Spirit
-									70230,	-- Zandalari Blade Initiate
-									69906,	-- Zandalari High Priest
-									69927,	-- Zandalari Prelate
-									70557,	-- Zandalari Prophet
-									69388,	-- Zandalari Spear-Shaper
-									69390,	-- Zandalari Storm-Caller
-									70236,	-- Zandalari Storm-Caller
-									69911,	-- Zandalari Warlord
-									69455,	-- Zandalari Water-Binder
 								},
 							}),
 							cr(69465, e(827, {	-- Jin'rokh the Breaker
