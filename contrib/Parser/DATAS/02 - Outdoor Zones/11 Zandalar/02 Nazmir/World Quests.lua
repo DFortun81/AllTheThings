@@ -22,6 +22,13 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Beachhead
+									["questID"] = 51640,	-- Beachhead
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(50735, {	-- Burial Detail
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -85,6 +92,13 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Past Due
+									["questID"] = 50667,	-- Past Due
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(52006, {	-- Preemptive Assault
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
