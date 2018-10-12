@@ -1401,37 +1401,43 @@ _.Instances =
 								i(112729),	-- Juggernaut's Focusing Crystal
 							})),
 							cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-								i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
-									i(105745),	-- Kor'kron Dark Shaman Cowl
-									i(105747),	-- Kor'kron Dark Shaman Shoulder
-									i(105743),	-- Kor'kron Dark Shaman Vestment
-									i(105748),	-- Kor'kron Dark Shaman Bracers
-									i(105744),	-- Kor'kron Dark Shaman Gloves
-									i(105741),	-- Kor'kron Dark Shaman Belt
-									i(105746),	-- Kor'kron Dark Shaman Kilt
-									i(105742),	-- Kor'kron Dark Shaman Treads
-								}),
-								i(112759),	-- Haromm's Frozen Crescent
-								i(112769),	-- Kardris' Scepter
-								i(112770),	-- Darkfang Mask
-								i(112762),	-- Haromm's Horrifying Helm
-								i(112766),	-- Iron Wolf Hood
-								i(112767),	-- Ashflare Pendant
-								i(112772),	-- Shoulderguards of Foul Streams
-								i(112774),	-- Shoulderplates of Gushing Geysers
-								i(112764),	-- Poisonmist Nightcloak
-								i(112755),	-- Breastplate of Shamanic Mirrors
-								i(112773),	-- Shackles of Stinking Slime
-								i(112763),	-- Ashen Wall Girdle
-								i(112771),	-- Belt of the Iron Prison
-								i(112760),	-- Damron's Belt of Darkness
-								i(112761),	-- Riou's Vigilant Leggings
-								i(112765),	-- Toxic Tornado Treads
-								i(112757),	-- Wolf-Rider Spurs
-								i(112756),	-- Bloodclaw Band
-								i(112758),	-- Ring of the Iron Tomb
-								i(112754),	-- Haromm's Talisman
-								i(112768),	-- Kardris' Toxic Totem
+								["groups"] = {
+									i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
+										i(105745),	-- Kor'kron Dark Shaman Cowl
+										i(105747),	-- Kor'kron Dark Shaman Shoulder
+										i(105743),	-- Kor'kron Dark Shaman Vestment
+										i(105748),	-- Kor'kron Dark Shaman Bracers
+										i(105744),	-- Kor'kron Dark Shaman Gloves
+										i(105741),	-- Kor'kron Dark Shaman Belt
+										i(105746),	-- Kor'kron Dark Shaman Kilt
+										i(105742),	-- Kor'kron Dark Shaman Treads
+									}),
+									i(112759),	-- Haromm's Frozen Crescent
+									i(112769),	-- Kardris' Scepter
+									i(112770),	-- Darkfang Mask
+									i(112762),	-- Haromm's Horrifying Helm
+									i(112766),	-- Iron Wolf Hood
+									i(112767),	-- Ashflare Pendant
+									i(112772),	-- Shoulderguards of Foul Streams
+									i(112774),	-- Shoulderplates of Gushing Geysers
+									i(112764),	-- Poisonmist Nightcloak
+									i(112755),	-- Breastplate of Shamanic Mirrors
+									i(112773),	-- Shackles of Stinking Slime
+									i(112763),	-- Ashen Wall Girdle
+									i(112771),	-- Belt of the Iron Prison
+									i(112760),	-- Damron's Belt of Darkness
+									i(112761),	-- Riou's Vigilant Leggings
+									i(112765),	-- Toxic Tornado Treads
+									i(112757),	-- Wolf-Rider Spurs
+									i(112756),	-- Bloodclaw Band
+									i(112758),	-- Ring of the Iron Tomb
+									i(112754),	-- Haromm's Talisman
+									i(112768),	-- Kardris' Toxic Totem
+								},
+								["crs"] = {
+									71859,	-- Earthbreaker Haromm
+									71858,	-- Wavebinder Kardris
+								},
 							})),
 							cr(71515, e(850, {	-- General Nazgrim
 								i( 99746, {	-- Gauntlets of the Cursed Conqueror
@@ -2479,37 +2485,43 @@ _.Instances =
 								i(112729),	-- Juggernaut's Focusing Crystal
 							})),
 							cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-								i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
-									i(105745),	-- Kor'kron Dark Shaman Cowl
-									i(105747),	-- Kor'kron Dark Shaman Shoulder
-									i(105743),	-- Kor'kron Dark Shaman Vestment
-									i(105748),	-- Kor'kron Dark Shaman Bracers
-									i(105744),	-- Kor'kron Dark Shaman Gloves
-									i(105741),	-- Kor'kron Dark Shaman Belt
-									i(105746),	-- Kor'kron Dark Shaman Kilt
-									i(105742),	-- Kor'kron Dark Shaman Treads
-								}),
-								i(112759),	-- Haromm's Frozen Crescent
-								i(112769),	-- Kardris' Scepter
-								i(112770),	-- Darkfang Mask
-								i(112762),	-- Haromm's Horrifying Helm
-								i(112766),	-- Iron Wolf Hood
-								i(112767),	-- Ashflare Pendant
-								i(112772),	-- Shoulderguards of Foul Streams
-								i(112774),	-- Shoulderplates of Gushing Geysers
-								i(112764),	-- Poisonmist Nightcloak
-								i(112755),	-- Breastplate of Shamanic Mirrors
-								i(112773),	-- Shackles of Stinking Slime
-								i(112763),	-- Ashen Wall Girdle
-								i(112771),	-- Belt of the Iron Prison
-								i(112760),	-- Damron's Belt of Darkness
-								i(112761),	-- Riou's Vigilant Leggings
-								i(112765),	-- Toxic Tornado Treads
-								i(112757),	-- Wolf-Rider Spurs
-								i(112756),	-- Bloodclaw Band
-								i(112758),	-- Ring of the Iron Tomb
-								i(112754),	-- Haromm's Talisman
-								i(112768),	-- Kardris' Toxic Totem
+								["groups"] = {
+									i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
+										i(105745),	-- Kor'kron Dark Shaman Cowl
+										i(105747),	-- Kor'kron Dark Shaman Shoulder
+										i(105743),	-- Kor'kron Dark Shaman Vestment
+										i(105748),	-- Kor'kron Dark Shaman Bracers
+										i(105744),	-- Kor'kron Dark Shaman Gloves
+										i(105741),	-- Kor'kron Dark Shaman Belt
+										i(105746),	-- Kor'kron Dark Shaman Kilt
+										i(105742),	-- Kor'kron Dark Shaman Treads
+									}),
+									i(112759),	-- Haromm's Frozen Crescent
+									i(112769),	-- Kardris' Scepter
+									i(112770),	-- Darkfang Mask
+									i(112762),	-- Haromm's Horrifying Helm
+									i(112766),	-- Iron Wolf Hood
+									i(112767),	-- Ashflare Pendant
+									i(112772),	-- Shoulderguards of Foul Streams
+									i(112774),	-- Shoulderplates of Gushing Geysers
+									i(112764),	-- Poisonmist Nightcloak
+									i(112755),	-- Breastplate of Shamanic Mirrors
+									i(112773),	-- Shackles of Stinking Slime
+									i(112763),	-- Ashen Wall Girdle
+									i(112771),	-- Belt of the Iron Prison
+									i(112760),	-- Damron's Belt of Darkness
+									i(112761),	-- Riou's Vigilant Leggings
+									i(112765),	-- Toxic Tornado Treads
+									i(112757),	-- Wolf-Rider Spurs
+									i(112756),	-- Bloodclaw Band
+									i(112758),	-- Ring of the Iron Tomb
+									i(112754),	-- Haromm's Talisman
+									i(112768),	-- Kardris' Toxic Totem
+								},
+								["crs"] = {
+									71859,	-- Earthbreaker Haromm
+									71858,	-- Wavebinder Kardris
+								},
 							})),
 							cr(71515, e(850, {	-- General Nazgrim
 								i( 99687, {	-- Gauntlets of the Cursed Conqueror
@@ -3560,37 +3572,43 @@ _.Instances =
 								i(112729),	-- Juggernaut's Focusing Crystal
 							})),
 							cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-								i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
-									i(105745),	-- Kor'kron Dark Shaman Cowl
-									i(105747),	-- Kor'kron Dark Shaman Shoulder
-									i(105743),	-- Kor'kron Dark Shaman Vestment
-									i(105748),	-- Kor'kron Dark Shaman Bracers
-									i(105744),	-- Kor'kron Dark Shaman Gloves
-									i(105741),	-- Kor'kron Dark Shaman Belt
-									i(105746),	-- Kor'kron Dark Shaman Kilt
-									i(105742),	-- Kor'kron Dark Shaman Treads
-								}),
-								i(112759),	-- Haromm's Frozen Crescent
-								i(112769),	-- Kardris' Scepter
-								i(112770),	-- Darkfang Mask
-								i(112762),	-- Haromm's Horrifying Helm
-								i(112766),	-- Iron Wolf Hood
-								i(112767),	-- Ashflare Pendant
-								i(112772),	-- Shoulderguards of Foul Streams
-								i(112774),	-- Shoulderplates of Gushing Geysers
-								i(112764),	-- Poisonmist Nightcloak
-								i(112755),	-- Breastplate of Shamanic Mirrors
-								i(112773),	-- Shackles of Stinking Slime
-								i(112763),	-- Ashen Wall Girdle
-								i(112771),	-- Belt of the Iron Prison
-								i(112760),	-- Damron's Belt of Darkness
-								i(112761),	-- Riou's Vigilant Leggings
-								i(112765),	-- Toxic Tornado Treads
-								i(112757),	-- Wolf-Rider Spurs
-								i(112756),	-- Bloodclaw Band
-								i(112758),	-- Ring of the Iron Tomb
-								i(112754),	-- Haromm's Talisman
-								i(112768),	-- Kardris' Toxic Totem
+								["groups"] = {
+									i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
+										i(105745),	-- Kor'kron Dark Shaman Cowl
+										i(105747),	-- Kor'kron Dark Shaman Shoulder
+										i(105743),	-- Kor'kron Dark Shaman Vestment
+										i(105748),	-- Kor'kron Dark Shaman Bracers
+										i(105744),	-- Kor'kron Dark Shaman Gloves
+										i(105741),	-- Kor'kron Dark Shaman Belt
+										i(105746),	-- Kor'kron Dark Shaman Kilt
+										i(105742),	-- Kor'kron Dark Shaman Treads
+									}),
+									i(112759),	-- Haromm's Frozen Crescent
+									i(112769),	-- Kardris' Scepter
+									i(112770),	-- Darkfang Mask
+									i(112762),	-- Haromm's Horrifying Helm
+									i(112766),	-- Iron Wolf Hood
+									i(112767),	-- Ashflare Pendant
+									i(112772),	-- Shoulderguards of Foul Streams
+									i(112774),	-- Shoulderplates of Gushing Geysers
+									i(112764),	-- Poisonmist Nightcloak
+									i(112755),	-- Breastplate of Shamanic Mirrors
+									i(112773),	-- Shackles of Stinking Slime
+									i(112763),	-- Ashen Wall Girdle
+									i(112771),	-- Belt of the Iron Prison
+									i(112760),	-- Damron's Belt of Darkness
+									i(112761),	-- Riou's Vigilant Leggings
+									i(112765),	-- Toxic Tornado Treads
+									i(112757),	-- Wolf-Rider Spurs
+									i(112756),	-- Bloodclaw Band
+									i(112758),	-- Ring of the Iron Tomb
+									i(112754),	-- Haromm's Talisman
+									i(112768),	-- Kardris' Toxic Totem
+								},
+								["crs"] = {
+									71859,	-- Earthbreaker Haromm
+									71858,	-- Wavebinder Kardris
+								},
 							})),
 							cr(71515, e(850, {	-- General Nazgrim
 								i(99721, {	-- Gauntlets of the Cursed Conqueror
