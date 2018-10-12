@@ -6,59 +6,17 @@ _.WorldEvents =
 	m(407, { 	-- Darkmoon Island
 		["groups"] = {
 			n(-4, {	 -- Achievements
-				{
-					["achievementID"] = 9805,
-					["groups"] = {
-						i(122125),
-					},
+				{	-- Come One, Come All!
+					["achievementID"] = 6028,	-- Come One, Come All!
 				},
-				{
-					["achievementID"] = 9811,
-					["groups"] = {
-						i(122121),
-					},
+				{	-- Fairgoer's Feast	[Expand Upon]
+					["achievementID"] = 6026,	-- Fairgoer's Feast
 				},
-				{
-					["achievementID"] = 9252,
-					["groups"] = {
-						i(116115),
-					},
+				{	--   Taking the Show on the Road
+					["achievementID"] = 6031,	-- Taking the Show on the Road
 				},
-				{
-					["achievementID"] = 9761,
-					["groups"] = {
-						i(122129),
-					},
-				},
-				{
-					["achievementID"] = 9785,
-					["groups"] = {
-						i(122120),
-					},
-				},
-				{
-					["achievementID"] = 9764,
-					["groups"] = {
-						i(122119),
-					},
-				},
-				{
-					["achievementID"] = 9983,
-					["groups"] = {
-						i(123862),
-					},
-				},
-				{
-					["achievementID"] = 9894,
-					["groups"] = {
-						i(122123),
-					},
-				},
-				{
-					["achievementID"] = 9792,
-					["groups"] = {
-						i(122126),
-					},
+				{	-- I Was Promised a Pony
+					["achievementID"] = 6025,	-- I Was Promised a Pony
 				},
 			}),
 		},

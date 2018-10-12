@@ -6,6 +6,308 @@ _.WorldEvents =
 	m(407, { 	-- Darkmoon Island
 		["groups"] = {
 			n(-17, { -- Quests
+				{	-- Cards
+					["categoryID"] = 773,	-- Cards
+					["f"] = 104,			-- Quest Items
+					["icon"] = "Interface\\Icons\\inv_misc_ticket_tarot_twistingnether_01",
+					["g"] = {
+						{	-- Darkmoon Beast Deck
+							["questID"] = 7907,		-- Darkmoon Beast Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 60,
+							["g"] = {
+								{	-- Darkmoon Card: Blue Dragon
+									["itemID"] = 19288,	-- Darkmoon Card: Blue Dragon
+								},
+							},
+						},
+						{	-- Darkmoon Blessings Deck
+							["questID"] = 10938,	-- Darkmoon Blessings Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 70,
+							["g"] = {
+								{	-- Darkmoon Card: Crusade
+									["itemID"] = 31856,	-- Darkmoon Card: Crusade
+								},
+							},
+						},
+						{	-- Darkmoon Chaos Deck
+							["questID"] = 13325,	-- Darkmoon Chaos Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 80,
+							["g"] = {
+								{	-- Darkmoon Card: Berserker!
+									["itemID"] = 42989,	-- Darkmoon Card: Berserker!
+								},
+							},
+						},
+						{	-- Darkmoon Crane Deck
+							["questID"] = 30449,	-- Darkmoon Crane Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 90,
+							["g"] = {
+								{	-- Relic of Chi-Ji
+									["itemID"] = 79330,	-- Relic of Chi-Ji
+								},
+							},
+						},
+						{	-- Darkmoon Earthquake Deck
+							["questID"] = 27667,	-- Darkmoon Earthquake Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 85,
+							["g"] = {
+								{	-- Darkmoon Card: Earthquake
+									["itemID"] = 62048,	-- Darkmoon Card: Earthquake
+								},
+							},
+						},
+						{	-- Darkmoon Elementals Deck
+							["questID"] = 7929,		-- Darkmoon Elementals Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 60,
+							["g"] = {
+								{	-- Darkmoon Card: Maelstrom
+									["itemID"] = 19289,	-- Darkmoon Card: Maelstrom
+								},
+							},
+						},
+						{	-- Darkmoon Furies Deck
+							["questID"] = 10940,	-- Darkmoon Furies Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 70,
+							["g"] = {
+								{	-- Darkmoon Card: Vengeance
+									["itemID"] = 31858,	-- Darkmoon Card: Vengeance
+								},
+							},
+						},
+						{	-- Darkmoon Hurricane Deck
+							["questID"] = 27665,	-- Darkmoon Hurricane Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 85,
+							["g"] = {
+								{	-- Darkmoon Card: Hurricane [Agility]
+									["itemID"] = 62051,	-- Darkmoon Card: Hurricane
+								},
+								{	-- Darkmoon Card: Hurricane [Strength]
+									["itemID"] = 62049,	-- Darkmoon Card: Hurricane
+								},
+							},
+						},
+						{	-- Darkmoon Lunacy Deck
+							["questID"] = 10941,	-- Darkmoon Lunacy Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 70,
+							["g"] = {
+								{	-- Darkmoon Card: Madness
+									["itemID"] = 31859,	-- Darkmoon Card: Madness
+								},
+							},
+						},
+						{	-- Darkmoon Nobles Deck
+							["questID"] = 13326,	-- Darkmoon Nobles Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 80,
+							["g"] = {
+								{	-- Darkmoon Card: Greatness [Agility]
+									["itemID"] = 44253,	-- Darkmoon Card: Greatness
+								},
+								{	-- Darkmoon Card: Greatness [Intellect]
+									["itemID"] = 44255,	-- Darkmoon Card: Greatness
+								},
+								{	-- Darkmoon Card: Greatness [Strength]
+									["itemID"] = 42987,	-- Darkmoon Card: Greatness
+								},
+								{	-- Darkmoon Card: Greatness [Versatilty]
+									["itemID"] = 44254,	-- Darkmoon Card: Greatness
+								},
+							},
+						},
+						{	-- Darkmoon Ox Deck
+							["questID"] = 30450,	-- Darkmoon Ox Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 90,
+							["g"] = {
+								{	-- Relic of Niuzao
+									["itemID"] = 79329,	-- Relic of Niuzao
+								},
+							},
+						},
+						{	-- Darkmoon Portals Deck
+							["questID"] = 7927,		-- Darkmoon Portals Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 60,
+							["g"] = {
+								{	-- Darkmoon Card: Twisting Nether
+									["itemID"] = 19290,	-- Darkmoon Card: Twisting Nether
+								},
+							},
+						},
+						{	-- Darkmoon Prisms Deck
+							["questID"] = 13324,	-- Darkmoon Prisms Deck	
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 80,
+							["g"] = {
+								{	-- Darkmoon Card: Illusion
+									["itemID"] = 42988,	-- Darkmoon Card: Illusion
+								},
+							},
+						},
+						{	-- Darkmoon Serpent Deck
+							["questID"] = 30451,	-- Darkmoon Serpent Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 90,
+							["g"] = {
+								{	-- Relic of Yu'lon
+									["itemID"] = 79331,	-- Relic of Yu'lon
+								},
+							},
+						},
+						{	-- Darkmoon Storms Deck
+							["questID"] = 10939,	-- Darkmoon Storms Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 70,
+							["g"] = {
+								{	-- Darkmoon Card: Wrath
+									["itemID"] = 31857,	-- Darkmoon Card: Wrath
+								},
+							},
+						},
+						{	-- Darkmoon Tiger Deck
+							["questID"] = 30452,	-- Darkmoon Tiger Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 90,
+							["g"] = {
+								{	-- Relic of Xuen [Agility]
+									["itemID"] = 79328,	-- Relic of Xuen
+								},
+								{	-- Relic of Xuen [Strength]
+									["itemID"] = 79327,	-- Relic of Xuen
+								},
+							},
+						},
+						{	-- Darkmoon Tsunami Deck
+							["questID"] = 27666,	-- Darkmoon Tsunami Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 85,
+							["g"] = {
+								{	-- Darkmoon Card: Tsunami
+									["itemID"] = 62050,	-- Darkmoon Card: Tsunami
+								},
+							},
+						},
+						{	-- Darkmoon Undeath Deck
+							["questID"] = 13327,	-- Darkmoon Undeath Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 80,
+							["g"] = {
+								{	-- Darkmoon Card: Death
+									["itemID"] = 42990,	-- Darkmoon Card: Death
+								},
+							},
+						},
+						{	-- Darkmoon Volcanic Deck
+							["questID"] = 27664,	-- Darkmoon Volcanic Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 85,
+							["g"] = {
+								{	-- Darkmoon Card: Volcano
+									["itemID"] = 62047,	-- Darkmoon Card: Volcano
+								},
+							},
+						},
+						{	-- Darkmoon Warlords Deck
+							["questID"] = 7928,	-- Darkmoon Warlords Deck
+							["qg"] = 14847,			-- Professor Thaddeus
+							["coords"] = {
+								{ 51.91, 60.93 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 60,
+							["g"] = {
+								{	-- Darkmoon Card: Heroism
+									["itemID"] = 19287,	-- Darkmoon Card: Heroism
+								},
+							},
+						},
+					},
+				},
 				{	-- Darkmoon Game Token
 					["itemID"] = 71083,	-- Darkmoon Game Token
 					["g"] = {
@@ -379,6 +681,42 @@ _.WorldEvents =
 						},
 					},
 				},
+				{	-- Faded Treasure Map
+					["itemID"] = 126930,	-- Faded Treasure Map
+					["questID"] = 38934,	-- Sila's Secret Stash
+					["qg"] = 55103,			-- Galissa Sundew
+					["coords"] = {
+						{ 52.51, 88.79 },
+					},
+					["g"] = {
+						{	-- Sila's Secret Stash
+							["itemID"] = 127148,	-- Sila's Secret Stash
+							["description"] = "This item contains 100 Darkmoon Faire Tickets!!",
+						},
+					},
+				},
+				{	-- Firebird's Challenge [Token Game]
+					["questID"] = 36481,	-- Firebird's Challenge
+					["isDaily"] = true,
+					["repeatable"] = true,
+					["qg"] = 85546,			-- Ziggie Sparks
+					["coords"] = {
+						{ 48.36, 71.37 },
+					},
+					["g"] = {
+						{	-- Brood of Alysrazor
+							["achievementID"] = 9252,	-- Brood of Alysrazor
+							["g"] = {
+								{	-- Blazing Wings
+									["itemID"] = 116115,	-- Blazing Wings
+								},
+							},
+						},
+						{	-- Darkmoon Game Prize
+							["itemID"] = 93724,	-- Darkmoon Game Prize
+						},
+					},
+				},
 				{	-- Darkmoon Treasure Chest
 					["objectID"] = 209620,	-- Darkmoon Treasure Chest
 					["icon"] = "Interface\\Icons\\garrison_silverchest",
@@ -442,6 +780,32 @@ _.WorldEvents =
 						},
 					},
 				},
+				{	-- It's Hammer Time [Token Game]
+					["questID"] = 29463,	-- It's Hammer Time
+					["isDaily"] = true,
+					["repeatable"] = true,
+					["qg"] = 54601,			-- Mola
+					["coords"] = {
+						{ 53.28, 54.35 },
+					},
+					["g"] = {
+						{	-- That's Whack!
+							["achievementID"] = 9983,	-- That's Whack!
+							["g"] = {
+								{	-- Hogs
+									["itemID"] = 123862,	-- Hogs' Studded Collar
+								},
+							},
+						},
+						{	-- Whack-A-Gnoll
+							["achievementID"] = 6020,	-- Step Right Up
+							["criteriaID"] = 5,			-- Whack-A-Gnoll
+						},
+						{	-- Darkmoon Game Prize
+							["itemID"] = 93724,	-- Darkmoon Game Prize
+						},
+					},
+				},
 				{	-- Let's Keep Racing
 					["questID"] = 33756,	-- Let's Keep Racing
 					["qg"] = 74056,			-- Malle Earnhard
@@ -454,6 +818,7 @@ _.WorldEvents =
 						{ 48.98, 88.31 },
 					},
 					["g"] = {
+						--[[	Note!! They are listed under actual daily.  So we don't need to list them twice.
 						{	-- Darkmoon Racer Novice [25 Tolls]
 							["achievementID"] = 9756,	-- Darkmoon Racer Novice
 						},
@@ -466,9 +831,7 @@ _.WorldEvents =
 						{	-- Darkmoon Racer Roadhog [11 Tolls]
 							["achievementID"] = 9761,	-- Darkmoon Racer Roadhog
 						},
-						{	-- Darkmoon Game Prize
-							["itemID"] = 93724,	-- Darkmoon Game Prize
-						},
+						--]]
 					},
 				},
 				{	-- Moonfang's Pelt
@@ -478,6 +841,34 @@ _.WorldEvents =
 					["repeatable"] = true,
 					["coords"] = {
 						{ 39.36, 43.68 },
+					},
+				},
+				{	-- More Big Race!
+					["questID"] = 37868,	-- More Big Racing!
+					["qg"] = 90473,			-- Patti Earnhard
+					["isDaily"] = true,
+					["repeatable"] = true,
+					["sourceQuests"] = {
+						37911,	-- The Real Big Race
+					},
+					["coords"] = {
+						{ 53.25, 87.6 },
+					},
+					["g"] = {
+						--[[	Note!! They are listed under actual daily.  So we don't need to list them twice.
+						{	-- Darkmoon Racer Novice [25 Tolls]
+							["achievementID"] = 9756,	-- Darkmoon Racer Novice
+						},
+						{	-- Darkmoon Racer Jockey [20 Tolls]
+							["achievementID"] = 9759,	-- Darkmoon Racer Jockey
+						},
+						{	-- Darkmoon Racer Leadfoot [15 Tolls]
+							["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
+						},
+						{	-- Darkmoon Racer Roadhog [11 Tolls]
+							["achievementID"] = 9761,	-- Darkmoon Racer Roadhog
+						},
+						--]]
 					},
 				},
 				{	-- Ring of Promises
@@ -508,6 +899,14 @@ _.WorldEvents =
 							["achievementID"] = 6020,	-- Step Right Up
 							["criteriaID"] = 3,			-- Ring Toss
 						},
+						{	-- Triumphant Turtle Tossing
+							["achievementID"] = 9894,	-- Triumphant Turtle Tossing
+							["g"] = {
+								{	-- Darkmoon Ring-Flinger
+									["itemID"] = 122123,	-- Darkmoon Ring-Flinger
+								},
+							},
+						},
 						{	-- Darkmoon Game Prize
 							["itemID"] = 93724,	-- Darkmoon Game Prize
 						},
@@ -519,6 +918,187 @@ _.WorldEvents =
 					["repeatable"] = true,
 					["coords"] = {
 						{ 47.91, 67.12 },
+					},
+				},
+				{	-- The Humanoid Cannonball [Token Game]
+					["questID"] = 29436,	-- The Humanoid Cannonball
+					["isDaily"] = true,
+					["repeatable"] = true,
+					["qg"] = 15303,			-- Maxima Blastenheimer
+					["coords"] = {
+						{ 52.49, 56.14 },
+					},
+					["g"] = {
+						{	-- Blastenheimer Bullseye
+							["achievementID"] = 6021,	-- Blastenheimer Bullseye
+						},
+						{	-- Cannon Blast
+							["achievementID"] = 6020,	-- Step Right Up
+							["criteriaID"] = 1,			-- Cannon Blast
+						},
+						{	-- Darkmoon Game Prize
+							["itemID"] = 93724,	-- Darkmoon Game Prize
+						},
+					},
+				},
+				{	-- The Real Race
+					["questID"] = 37910,	-- The Real Race
+					["qg"] = 74056,			-- Malle Earnhard
+					["isDaily"] = true,
+					["repeatable"] = true,
+					["sourceQuests"] = {
+						37819,	-- Welcome to the Darkmoon Races
+					},
+					["coords"] = {
+						{ 48.98, 88.31 },
+					},
+					["g"] = {
+						
+						{	-- Big Rocketeer: Gold
+							["achievementID"] = 9805,	-- Big Rocketeer: Gold
+							["crs"] = {
+								89734,	-- Rocketeer
+							},
+							["g"] = {
+								{	-- Race MiniZep
+									["itemID"] = 122125,	-- Race MiniZep
+								},
+							},
+						},
+						{	-- Big Wanderluster: Gold
+							["achievementID"] = 9811,	-- Big Wanderluster: Gold
+							["crs"] = {
+								89736,	-- Wanderluster
+							},
+							["g"] = {
+								{	-- Darkmoon Gazer
+									["itemID"] = 122121,	-- Darkmoon Gazer
+								},
+							},
+						},
+						{	-- Darkmoon Racer Novice [25 Tolls]
+							["achievementID"] = 9756,	-- Darkmoon Racer Novice
+							["crs"] = {
+								90148,	-- Racing Strider
+							},
+						},
+						{	-- Darkmoon Racer Jockey [20 Tolls]
+							["achievementID"] = 9759,	-- Darkmoon Racer Jockey
+							["crs"] = {
+								90148,	-- Racing Strider
+							},
+						},
+						{	-- Darkmoon Racer Leadfoot [15 Tolls]
+							["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
+							["crs"] = {
+								90148,	-- Racing Strider
+							},
+						},
+						{	-- Darkmoon Racer Roadhog [11 Tolls]
+							["achievementID"] = 9761,	-- Darkmoon Racer Roadhog
+							["crs"] = {
+								90148,	-- Racing Strider
+							},
+							["g"] = {
+								{	-- Fire-Eater Vial
+									["itemID"] = 122129,	-- Fire-Eater Vial
+								},
+							},
+						},
+						{	-- Powermonger: Gold [Real Race -- P11]*
+							["achievementID"] = 9785,	-- Powermonger: Gold
+							["crs"] = {
+								89732,	-- Powermonger
+							},
+							["g"] = {
+								{	-- Gaze of the Darkmoon
+									["itemID"] = 122120,	-- Gaze of the Darkmoon
+								},
+								{	-- Powermonger: Silver [Real Race -- P15]
+									["achievementID"] = 9783,	-- Powermonger: Silver
+								},
+								{	-- Powermonger: Bronze [Real Race -- P20]
+									["achievementID"] = 9781,	-- Powermonger: Bronze
+								},
+									{	-- Go-Getter [Real Race -- P25]
+									["achievementID"] = 9780,	-- Go-Getter
+								},
+							},
+						},
+						{	-- Rocketeer: Gold [Real Race -- R11]*
+							["achievementID"] = 9764,	-- Rocketeer: Gold
+							["crs"] = {
+								89734,	-- Rocketeer
+							},
+							["g"] = {
+								{	-- Everlasting Darkmoon Firework
+									["itemID"] = 122119,	-- Everlasting Darkmoon Firework
+								},
+								{	-- Rocketeer: Silver [Real Race -- R15]
+									["achievementID"] = 9766,	-- Rocketeer: Silver
+								},
+								{	-- Rocketeer: Bronze [Real Race -- R20]
+									["achievementID"] = 9769,	-- Rocketeer: Bronze
+								},
+								{	-- Blast Off! [Real Race - R25]
+									["achievementID"] = 9770,	-- Blast Off!
+								},
+							},
+						},
+						{	-- Wanderluster: Gold [Real Race -- W11]
+							["achievementID"] = 9792,	-- Wanderluster: Gold
+							["crs"] = {
+								89736,	-- Wanderluster
+							},
+							["g"] = {
+								{	-- Attraction Sign
+									["itemID"] = 122126,	-- Attraction Sign
+								},
+								{	-- Wanderluster: Silver [Real Race -- W15]
+									["achievementID"] = 9790,	-- Wanderluster: Silver
+								},
+								{	-- Wanderluster: Bronze [Real Race -- W20]
+									["achievementID"] = 9787,	-- Wanderluster: Bronze
+								},
+								{	-- Wayfarer Gold [Real Race -- W25]
+									["achievementID"] = 9786,	-- Wayfarer
+								},
+							},
+						},
+						
+						
+						{	-- Darkmoon Game Prize
+							["itemID"] = 93724,	-- Darkmoon Game Prize
+						},
+					},
+				},
+				{	-- The Real Big Race
+					["questID"] = 37911,	-- The Real Big Race
+					["qg"] = 90473,			-- Patti Earnhard
+					["isDaily"] = true,
+					["repeatable"] = true,
+					["sourceQuests"] = {
+						37819,	-- Welcome to the Darkmoon Races
+					},
+					["coords"] = {
+						{ 53.25, 87.6 },
+					},
+					["g"] = {
+						{	-- Darkmoon Racer Novice [25 Tolls]
+							["achievementID"] = 9756,	-- Darkmoon Racer Novice
+						},
+						{	-- Darkmoon Racer Jockey [20 Tolls]
+							["achievementID"] = 9759,	-- Darkmoon Racer Jockey
+						},
+						{	-- Darkmoon Racer Leadfoot [15 Tolls]
+							["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
+						},
+						{	-- Darkmoon Racer Roadhog [11 Tolls]
+							["achievementID"] = 9761,	-- Darkmoon Racer Roadhog
+						},
+						{	-- Darkmoon Game Prize
+							["itemID"] = 93724,	-- Darkmoon Game Prize
+						},
 					},
 				},
 				{	-- The Real Race
@@ -596,66 +1176,14 @@ _.WorldEvents =
 						{ 48.98, 88.31 },
 					},
 					["g"] = {
-						{	-- Darkmmon Race Enthusiast
-							["achievementID"] = 9755,	-- Darkmmon Race Enthusiast
+						{	-- Darkmoon Race Enthusiast
+							["achievementID"] = 9755,	-- Darkmoon Race Enthusiast
 						},
 						{	-- Darkmoon Game Prize
 							["itemID"] = 93724,	-- Darkmoon Game Prize
 						},
 					},
 				},
-				n(15303, { -- Maxima Blastenheimer <Darkmoon Faire Cannoneer>
-					q(29436, { -- The Humanoid Cannonball
-						i(93724, { -- Darkmoon Game Prize
-						}),
-					}),
-				}),
-				n(54601, { -- Mola <Whatck-a-Gnoll>
-					q(29463, { -- It's Hammer Time
-						i(93724, { -- Darkmoon Game Prize
-						}),
-					}),
-				}),
-				n(90473, { -- Patti Earnhard <Race Official>
-					q(37911, { -- The Real Big Race
-						i(93724, { -- Darkmoon Game Prize
-						}),
-					}),
-					q(37868),	-- More Big Racing!
-				}),
-				n(14847, { -- Professor Thaddeus Paleo <Darkmoon Cards>
-					
-					q(7907),	-- Darkmoon Beast Deck
-					q(10938),	-- Darkmoon Blessings Deck
-					q(13325),	-- Darkmoon Chaos Deck
-					q(30449),	-- Darkmoon Crane Deck
-					q(27667),	-- Darkmoon Earthquake Deck
-					q(7929),	-- Darkmoon Elementals Deck
-					q(10940),	-- Darkmoon Furies Deck
-					q(27665),	-- Darkmoon Hurricane Deck
-					q(10941),	-- Darkmoon Lunacy Deck
-					q(13326),	-- Darkmoon Nobles Deck
-					q(30450),	-- Darkmoon Ox Deck
-					q(7927),	-- Darkmoon Portals Deck
-					q(13324),	-- Darkmoon Prisms Deck
-					q(30451),	-- Darkmoon Serpent Deck
-					q(10939),	-- Darkmoon Storms Deck
-					q(30452),	-- Darkmoon Tiger Deck
-					q(27666),	-- Darkmoon Tsunami Deck
-					q(13327),	-- Darkmoon Undeath Deck
-					q(27664),	-- Darkmoon Volcanic Deck
-					q(7928),	-- Darkmoon Warlords Deck
-					
-					
-					
-					
-				}),
-				n(85546, { -- Ziggie Sparks <Firebird's Challenge>
-					q(36481, { -- Firebird's Challenge
-						i(93724, { -- Darkmoon Game Prize
-						}),
-					}),
-				}),
 			}),
 		},
 		["icon"] = "Interface\\Icons\\INV_DARKMOON_EYE",

@@ -8,9 +8,10 @@ _.WorldEvents =
 			n(-16, { -- Rares
 				n(58336, { -- Darkmoon Rabbit
 					["groups"] = {
+						{	-- That Rabbit's Dynamite!
+							["achievementID"] = 6332,	-- That Rabbit's Dynamite!
+						},
 						dr(100.0, i(80008, { -- Darkmoon Rabbit
-							["groups"] = {
-							},
 							["description"] = "Drops one per kill",
 						})),
 					},
@@ -18,6 +19,12 @@ _.WorldEvents =
 				}),
 				n(122899, { -- Death Metal Knight
 					["groups"] = {
+						{	-- Hey, You're a Rockstar!
+							["achievementID"] = 11918,	-- Hey, You're a Rockstar!
+						},
+						{	-- Mosh Pit
+							["achievementID"] = 11921,	-- Mosh Pit
+						},
 						dr(9.0, i(151265)), -- Blight Boar Microphone
 						dr(3.0, i(151253)), -- Cloth Caged Helm
 						dr(3.0, i(151254)), -- Leather Caged Helm
