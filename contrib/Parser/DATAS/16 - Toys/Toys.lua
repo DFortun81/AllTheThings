@@ -394,6 +394,7 @@ _.Toys =
 		i(88589),		-- Cremating Torch
 		i(131933),		-- Critter Hand Cannon
 		i(142496),		-- Dirty Spoon
+		i(160509),		-- Echoes of Rezan
 		i(118935),		-- Ever-Blooming Frond
 		i(53057),		-- Faded Wizard Hat (Horde)
 		i(142495),		-- Fake Teeth

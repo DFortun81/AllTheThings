@@ -43,6 +43,22 @@ _.Zones =
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
 							}),
+							{	-- G'Naat
+								["npcID"] = 133155,		-- G'Naat	Note!! Done so we can use his name for the quest rather than Quest #123456
+								["questID"] = 50870,	-- G'Naat
+								["repeatable"] = true,
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
+								["coords"] = {
+									{ 80.01, 36.01 },	-- Door Entrance
+								},
+								["g"] = {
+									{	-- Brutish Tidecaller Armwraps
+										["itemID"] = 161048,	--Brutish Tidecaller Armwraps
+									},
+								},
+							},
 							q(50846, {	-- Headhunter Lee'za
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
@@ -53,13 +69,25 @@ _.Zones =
 								["groups"] = {
 									i(161112),	--  Hillshaker Armplates
 								},
-								["coord"] =
+								["coords"] = {
 									{ 75.62, 36.25 },
+								},
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
 							}),
+							{	-- Make Loh Go
+								["questID"] = 51636,	-- Make Loh Go
+								["repeatable"] = true,
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
+								["coords"] = {
+									{ 81.76, 38.09 },	-- Door Entrance
+									{ 81.81, 37.64 },	-- Game
+								},
+							},
 							{	-- Old R'gal
 								["questID"] = 50855, 	-- Old R'gal
 								["repeatable"] = true,
@@ -116,6 +144,14 @@ _.Zones =
 								["lvl"] = 120,	-- WQ is 120+ only
 								["races"] = ALLIANCE_ONLY,
 							}),
+							{	-- Subterranean Evacuation
+								["questID"] = 50756,	-- Subterranean Evacuation
+								["repeatable"] = true,
+								["isDaily"] = true, -- Would like to swap it to WQ below
+								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,	-- WQ is 120+ only
+								["races"] = ALLIANCE_ONLY,
+							},
 							q(50867, {	-- Tambano
 								["repeatable"] = true,
 								["isDaily"] = true, -- Would like to swap it to WQ below
@@ -186,6 +222,9 @@ _.Zones =
 								--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,	-- WQ is 120+ only
 								["races"] = HORDE_ONLY,
+								["coords"] = {
+									{ 73.18, 28.38 },
+								},
 								["g"] = {
 									{	-- Echoes of Rezan
 										["itemID"] = 160509, 	-- Echoes of Rezan

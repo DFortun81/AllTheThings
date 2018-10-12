@@ -123,6 +123,14 @@ _.Zones =
 									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,	-- WQ is 120+ only
 								}),
+								{	-- Luminous Monelite
+									["questID"] = 53308,	-- Luminous Monelite
+									["repeatable"] = true,
+									["isDaily"] = true, -- Would like to swap it to WQ below
+									--["isWQ"] = true,	-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,	-- WQ is 120+ only
+									["requireSkill"] = 186, -- Mining
+								},
 								q(52278, {	-- Rogue Azerite [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
