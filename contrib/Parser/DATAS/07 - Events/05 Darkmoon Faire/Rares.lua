@@ -25,6 +25,12 @@ _.WorldEvents =
 						{	-- Mosh Pit
 							["achievementID"] = 11921,	-- Mosh Pit
 						},
+						{	-- Perfect Performance
+							["achievementID"] = 11920,	-- Perfect Performance
+						},
+						{	-- Taking this Show on the Road [Expand upon]
+							["achievementID"] = 11919,	-- Taking this Show on the Road
+						},
 						dr(9.0, i(151265)), -- Blight Boar Microphone
 						dr(3.0, i(151253)), -- Cloth Caged Helm
 						dr(3.0, i(151254)), -- Leather Caged Helm

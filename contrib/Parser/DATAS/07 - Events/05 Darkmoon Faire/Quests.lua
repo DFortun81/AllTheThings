@@ -953,48 +953,7 @@ _.WorldEvents =
 						{ 48.98, 88.31 },
 					},
 					["g"] = {
-						
-						{	-- Big Rocketeer: Gold
-							["achievementID"] = 9805,	-- Big Rocketeer: Gold
-							["crs"] = {
-								89734,	-- Rocketeer
-							},
-							["g"] = {
-								{	-- Race MiniZep
-									["itemID"] = 122125,	-- Race MiniZep
-								},
-							},
-						},
-						{	-- Big Wanderluster: Gold
-							["achievementID"] = 9811,	-- Big Wanderluster: Gold
-							["crs"] = {
-								89736,	-- Wanderluster
-							},
-							["g"] = {
-								{	-- Darkmoon Gazer
-									["itemID"] = 122121,	-- Darkmoon Gazer
-								},
-							},
-						},
-						{	-- Darkmoon Racer Novice [25 Tolls]
-							["achievementID"] = 9756,	-- Darkmoon Racer Novice
-							["crs"] = {
-								90148,	-- Racing Strider
-							},
-						},
-						{	-- Darkmoon Racer Jockey [20 Tolls]
-							["achievementID"] = 9759,	-- Darkmoon Racer Jockey
-							["crs"] = {
-								90148,	-- Racing Strider
-							},
-						},
-						{	-- Darkmoon Racer Leadfoot [15 Tolls]
-							["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
-							["crs"] = {
-								90148,	-- Racing Strider
-							},
-						},
-						{	-- Darkmoon Racer Roadhog [11 Tolls]
+						{	-- Darkmoon Racer Roadhog [Real Race -- S11]*
 							["achievementID"] = 9761,	-- Darkmoon Racer Roadhog
 							["crs"] = {
 								90148,	-- Racing Strider
@@ -1002,6 +961,15 @@ _.WorldEvents =
 							["g"] = {
 								{	-- Fire-Eater Vial
 									["itemID"] = 122129,	-- Fire-Eater Vial
+								},
+								{	-- Darkmoon Racer Leadfoot [Real Race -- S15]
+									["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
+								},
+								{	-- Darkmoon Racer Jockey [Real Race -- S20]
+									["achievementID"] = 9759,	-- Darkmoon Racer Jockey
+								},
+								{	-- Darkmoon Racer Novice [Real Race -- S25]
+									["achievementID"] = 9756,	-- Darkmoon Racer Novice
 								},
 							},
 						},
@@ -1054,6 +1022,9 @@ _.WorldEvents =
 								{	-- Attraction Sign
 									["itemID"] = 122126,	-- Attraction Sign
 								},
+								{	-- Darkmoon Like the Wind
+									["achievementID"] = 9819,	-- Darkmoon Like the Wind
+								},
 								{	-- Wanderluster: Silver [Real Race -- W15]
 									["achievementID"] = 9790,	-- Wanderluster: Silver
 								},
@@ -1065,8 +1036,6 @@ _.WorldEvents =
 								},
 							},
 						},
-						
-						
 						{	-- Darkmoon Game Prize
 							["itemID"] = 93724,	-- Darkmoon Game Prize
 						},
@@ -1084,46 +1053,91 @@ _.WorldEvents =
 						{ 53.25, 87.6 },
 					},
 					["g"] = {
-						{	-- Darkmoon Racer Novice [25 Tolls]
-							["achievementID"] = 9756,	-- Darkmoon Racer Novice
+						{	-- Big Powermonger: Gold [Real Big Race -- S20]*
+							["achievementID"] = 9817,	-- Big Powermonger: Gold
+							["crs"] = {
+								89732,	-- Powermonger
+							},
+							["g"] = {
+								{	-- Darkmoon Cannon
+									["itemID"] = 122124,	-- Darkmoon Cannon
+								},
+								{	-- Big Powermonger: Silver [Real Big Race -- S25]*
+									["achievementID"] = 9815,	-- Big Powermonger: Gold
+								},
+								{	-- Big Powermonger: Bronze [Real Big Race -- S30]*
+									["achievementID"] = 9813,	-- Big Powermonger: Gold
+								},
+								{	-- Goal-Oriented [Real Big Race -- S40]*
+									["achievementID"] = 9812,	-- Big Powermonger: Gold
+								},
+							},
 						},
-						{	-- Darkmoon Racer Jockey [20 Tolls]
-							["achievementID"] = 9759,	-- Darkmoon Racer Jockey
+						{	-- Big Race Roadhog [Real Big Race -- S20]*
+							["achievementID"] = 9799,
+							["crs"] = {
+								90148,	-- Racing Strider
+							},
+							["g"] = {
+								{	-- Checkered Flag
+									["itemID"] = 122128,	-- Checkered Flag
+								},
+								{	-- Big Race Leadfoot [Real Big Race -- S25]
+									["achievementID"] = 9797,	-- Big Race Leadfoot
+								},
+								{	-- Big Race Jockey [Real Big Race -- S30]
+									["achievementID"] = 9795,	-- Big Race Jockey
+								},
+								{	-- Big Race Novice [Real Big Race -- S35]
+									["achievementID"] = 9794,	-- Big Race Novice
+								},
+								{	-- Big Race Enthusiast [Real Big Race -- S40]
+									["achievementID"] = 9793,	-- Big Race Enthusiast
+								},
+							},
 						},
-						{	-- Darkmoon Racer Leadfoot [15 Tolls]
-							["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
+						{	-- Big Rocketeer: Gold [Real Big Race -- R20]*
+							["achievementID"] = 9805,	-- Big Rocketeer: Gold
+							["crs"] = {
+								89734,	-- Rocketeer
+							},
+							["g"] = {
+								{	-- Race MiniZep
+									["itemID"] = 122125,	-- Race MiniZep
+								},
+								{	-- Big Rocketeer: Silver [Real Big Race -- R25]
+									["achievementID"] = 9803,	-- Big Rocketeer: Gold
+								},
+								{	-- Big Rocketeer: Bronze [Real Big Race -- R30]
+									["achievementID"] = 9801,	-- Big Rocketeer: Gold
+								},
+								{	-- Rocket Man [Real Big Race -- R40]
+									["achievementID"] = 9800,	-- Rocket Man
+								},
+							},
 						},
-						{	-- Darkmoon Racer Roadhog [11 Tolls]
-							["achievementID"] = 9761,	-- Darkmoon Racer Roadhog
-						},
-						{	-- Darkmoon Game Prize
-							["itemID"] = 93724,	-- Darkmoon Game Prize
-						},
-					},
-				},
-				{	-- The Real Race
-					["questID"] = 37910,	-- The Real Race
-					["qg"] = 74056,			-- Malle Earnhard
-					["isDaily"] = true,
-					["repeatable"] = true,
-					["sourceQuests"] = {
-						37819,	-- Welcome to the Darkmoon Races
-					},
-					["coords"] = {
-						{ 48.98, 88.31 },
-					},
-					["g"] = {
-						{	-- Darkmoon Racer Novice [25 Tolls]
-							["achievementID"] = 9756,	-- Darkmoon Racer Novice
-						},
-						{	-- Darkmoon Racer Jockey [20 Tolls]
-							["achievementID"] = 9759,	-- Darkmoon Racer Jockey
-						},
-						{	-- Darkmoon Racer Leadfoot [15 Tolls]
-							["achievementID"] = 9760,	-- Darkmoon Racer Leadfoot
-						},
-						{	-- Darkmoon Racer Roadhog [11 Tolls]
-							["achievementID"] = 9761,	-- Darkmoon Racer Roadhog
+						{	-- Big Wanderluster: Gold [Real Big Race -- R20]*
+							["achievementID"] = 9811,	-- Big Wanderluster: Gold
+							["crs"] = {
+								89736,	-- Wanderluster
+							},
+							["g"] = {
+								{	-- Darkmoon Gazer
+									["itemID"] = 122121,	-- Darkmoon Gazer
+								},
+								{	-- Big Wanderluster: Silver [Real Big Race -- R25]
+									["achievementID"] = 9809,	-- Big Wanderluster: Gold [Real Big Race -- R25]
+								},
+								{	-- Vagabond [Real Big Race -- R40]
+									["achievementID"] = 9807,	-- Big Wanderluster: Gold [Real Big Race -- R40]
+								},
+								{	-- Big Wanderluster: Bronze [Real Big Race -- R30]
+									["achievementID"] = 9806,	-- Big Wanderluster: Gold [Real Big Race -- R30]
+								},
+								{	-- Darkmoon Like the Wind
+									["achievementID"] = 9819,	-- Darkmoon Like the Wind
+								},
+							},
 						},
 						{	-- Darkmoon Game Prize
 							["itemID"] = 93724,	-- Darkmoon Game Prize
