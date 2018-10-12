@@ -146,6 +146,21 @@ _.Zones =
 								["criteriaID"] = 10,
 							}),
 						}),
+						{	-- Three Sheets to the Wind [22 items]
+							-- Note!! Instead of putting every possible version in each zone we are going to list most in Boralus and use CRS to put it on all the vendors so we aren't duplicating it 4 times.
+							["achievementID"] = 13061,	-- Three Sheets to the Wind
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							["g"] = {
+								{	-- Sausage Martini [Drustvar Only]
+									["itemID"] = 163651,		-- Sausage Martini
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 18,		-- Sausage Martini
+									["crs"] = {
+										139638,	-- Barkeep Cotner
+									},
+								},
+							},
+						},
 						ach(12995, {	-- Treasures of Drustvar
 							o(297879, {	-- Bespelled Chest
 								["groups"] = {

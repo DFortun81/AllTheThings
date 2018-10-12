@@ -202,13 +202,6 @@ _.Zones =
 							},
 							["questID"] = 52121,
 						}),
-						n(140055, {	-- First Mate Grogtok
-							{
-								["itemID"] = 161153,	-- Long Forgotten Rum
-								["achievementID"] = 13061,	-- Three Sheets to the Wind [Achievement]
-								["criteriaID"] = 14,	-- Long Forgotten Rum [Criteria]
-							},
-						}),
 						n(141985, {	-- Herald Zaxuthril
 							["questID"] = 50075,
 							["coords"] = {

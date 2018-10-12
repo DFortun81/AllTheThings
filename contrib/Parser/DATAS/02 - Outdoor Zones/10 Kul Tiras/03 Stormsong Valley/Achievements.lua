@@ -53,12 +53,18 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["g"] = {
 								{	-- Foaming Turtle Broth
-									["itemID"] = 158927,	-- Foaming Turtle Broth
+									["itemID"] = 158927,		-- Foaming Turtle Broth
 									["achievementID"] = 13061,	-- Three Sheets to the Wind
 									["criteriaID"] = 10,		-- Foaming Turtle Broth
 									["crs"] = {
 										135600,	-- Emma Haribull
 									},
+								},
+								{	-- Long Forgotten Rum
+									["itemID"] = 161153,		-- Long Forgotten Rum
+									["qg"] = 140055, 			-- First Mate Grogtok
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 14,		-- Long Forgotten Rum
 								},
 							},
 						},

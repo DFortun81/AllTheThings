@@ -40,9 +40,9 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["g"] = {
 								{	-- "Aurora Borealis"
-									["itemID"] = 160484,	-- "Aurora Borealis"
-									--["achievementID"] = 13061,	-- Three Sheets to the Wind
-									["criteriaID"] = 1,		-- "Aurora Borealis"
+									["itemID"] = 160484,		-- "Aurora Borealis"
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 1,			-- "Aurora Borealis"
 									["crs"] = {
 										138221,	-- "Nasty" Buck
 										142188,	-- Allison Weber
@@ -53,9 +53,9 @@ _.Zones =
 									},
 								},
 								{	-- Admiralty-Issued Grog
-									["itemID"] = 163103,	-- Admiralty-Issued Grog
-									--["achievementID"] = 13061,	-- Three Sheets to the Wind
-									["criteriaID"] = 2,		-- Admiralty-Issued Grog
+									["itemID"] = 163103,		-- Admiralty-Issued Grog
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 2,			-- Admiralty-Issued Grog
 									["crs"] = {
 										134729,	-- Crimper Mirjam
 										143246,	-- Garrett Elmendorf
@@ -66,17 +66,17 @@ _.Zones =
 									},
 								},
 								{	-- Arathor Single Cask
-									["itemID"] = 163639,	-- Arathor Single Cask
+									["itemID"] = 163639,		-- Arathor Single Cask
 									["achievementID"] = 13061,	-- Three Sheets to the Wind
-									["criteriaID"] = 4,		-- Arathor Single Cask
+									["criteriaID"] = 3,			-- Arathor Single Cask
 									["crs"] = {
 										143487,	-- Nicolas Moal
 									},
 								},
 								{	-- Bitter Darkroot Vodka
-									["itemID"] = 159850,	-- Bitter Darkroot Vodka
-									--["achievementID"] = 13061,	-- Three Sheets to the Wind
-									["criteriaID"] = 4,		-- Bitter Darkroot Vodka
+									["itemID"] = 159850,		-- Bitter Darkroot Vodka
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 4,			-- Bitter Darkroot Vodka
 									["crs"] = {
 										142188,	-- Allison Weber
 										126600,	-- Arthur Seville
@@ -90,9 +90,9 @@ _.Zones =
 									},
 								},
 								{	-- Blacktooth Bloodwine
-									["itemID"] = 159848,	-- Blacktooth Bloodwine
-									--["achievementID"] = 13061,	-- Three Sheets to the Wind
-									["criteriaID"] = 5,		-- Blacktooth Bloodwine
+									["itemID"] = 159848,		-- Blacktooth Bloodwine
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 5,			-- Blacktooth Bloodwine
 									["crs"] = {
 										142188,	-- Allison Weber
 										126600,	-- Arthur Seville
@@ -106,9 +106,9 @@ _.Zones =
 									},
 								},
 								{	-- Brennadam Apple Brandy
-									["itemID"] = 159845,	-- Brennadam Apple Brandy
+									["itemID"] = 159845,		-- Brennadam Apple Brandy
 									["achievementID"] = 13061,	-- Three Sheets to the Wind
-									["criteriaID"] = 6,		-- Brennadam Apple Brandy
+									["criteriaID"] = 6,			-- Brennadam Apple Brandy
 									["crs"] = {
 										138221,	-- "Nasty" Buck
 										142188,	-- Allison Weber
@@ -122,17 +122,17 @@ _.Zones =
 									},
 								},
 								{	-- Corlain Estate 12 Year
-									["itemID"] = 163638,	-- Corlain Estate 12 Year
+									["itemID"] = 163638,		-- Corlain Estate 12 Year
 									["achievementID"] = 13061,	-- Three Sheets to the Wind
-									["criteriaID"] = 7,		-- Corlain Estate 12 Year
+									["criteriaID"] = 7,			-- Corlain Estate 12 Year
 									["crs"] = {
 										143487,	-- Nicolas Moal
 									},
 								},
 								{	-- Dark and Stormy
-									["itemID"] = 163522,	-- Dark and Stormy
+									["itemID"] = 163522,		-- Dark and Stormy
 									["achievementID"] = 13061,	-- Three Sheets to the Wind
-									["criteriaID"] = 8,		-- Dark and Stormy
+									["criteriaID"] = 8,			-- Dark and Stormy
 									["crs"] = {
 										137411,	-- Joseph Stephens
 										129376,	-- Lenne
@@ -141,13 +141,13 @@ _.Zones =
 									},
 								},
 								{	-- Drop Anchor Dunkel
-									["itemID"] = 163019,	-- Drop Anchor Dunkel
+									["itemID"] = 163019,		-- Drop Anchor Dunkel
 									["achievementID"] = 13061,	-- Three Sheets to the Wind
-									["criteriaID"] = 9,		-- Drop Anchor Dunkel
+									["criteriaID"] = 9,			-- Drop Anchor Dunkel
 									["crs"] = {
 										142764,	-- "Fairplay" JJ
 										142760,	-- Barserver Aspen
-										142767,	-- Barserveer Donlyuk
+										142767,	-- Barserver Donlyuk
 										142775,	-- Barserver Vince
 										139113,	-- Bored Barkeep
 										140640,	-- Commander Langton
@@ -163,13 +163,13 @@ _.Zones =
 									},
 								},
 								{	-- Hook Point Porter
-									["itemID"] = 162026,	-- Hook Point Porter
+									["itemID"] = 162026,		-- Hook Point Porter
 									["achievementID"] = 13061,	-- Three Sheets to the Wind
 									["criteriaID"] = 11,		-- Hook Point Porter
 									["crs"] = {
 										142764,	-- "Fairplay" JJ
 										142760,	-- Barserver Aspen
-										142767,	-- Barserveer Donlyuk
+										142767,	-- Barserver Donlyuk
 										142775,	-- Barserver Vince
 										140640,	-- Commander Langton
 										134729,	-- Crimper Mirjam
@@ -187,7 +187,7 @@ _.Zones =
 									},
 								},
 								{	-- Hook Point Schnapps
-									["itemID"] = 159849,	-- Hook Point Schnapps
+									["itemID"] = 159849,		-- Hook Point Schnapps
 									["achievementID"] = 13061,	-- Three Sheets to the Wind
 									["criteriaID"] = 12,		-- Hook Point Schnapps
 									["crs"] = {
@@ -203,45 +203,148 @@ _.Zones =
 										135153,	-- Wesley Rockhold
 									},
 								},
-								
-								
-								
-							
-								--[[
-								{	-- 
-									["itemID"] = ,	-- 
+								{	-- Kul Tiran Tripel
+									["itemID"] = 163548,		-- Kul Tiran Tripel
 									["achievementID"] = 13061,	-- Three Sheets to the Wind
-									["criteriaID"] = ,		-- 
+									["criteriaID"] = 13,		-- Kul Tiran Tripel
+									["crs"] = {
+										139638,	-- Barkeep Cotner
+										139113,	-- Bored Barkeep
+										123639,	-- Harold Atkey
+										137040,	-- Linda Deepwater
+										126601,	-- Sarella Griffin
+										143244,	-- Victor Esquivias
+									},
+								},
+								{	-- Mildenhall Mead
+									["itemID"] = 159847,		-- Mildenhall Mead
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 15,		-- Mildenhall Mead
 									["crs"] = {
 										138221,	-- "Nasty" Buck
-										142764,	-- "Fairplay" JJ
-										142188,	-- Allison Weber
 										126600,	-- Arthur Seville
-										139638,	-- Barkeep Cotner
+										133214,	-- Dandy Jones
+										129159,	-- Egert Tominson
+										134968,	-- Felicity Noel
+										123639,	-- Harold Atkey
+										135525,	-- Jaela Billman
+										137031,	-- Jake Storm
+										136479,	-- Jill McHoonigan
+										137411,	-- Joseph Stephens
+										142770,	-- Kevin Tack
+										136468,	-- Lidia Plank
+										137040,	-- Linda Deepwater
+										137455,	-- Quartermaster Rickard
+										138905,	-- Rusty Blade Waitress
+										136465,	-- Tom Fishbury
+									},
+								},
+								{	-- Patina Pale Ale
+									["itemID"] = 162560,		-- Patina Pale Ale
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 16,		-- Patina Pale Ale
+									["crs"] = {
+										142764,	-- "Fairplay" JJ
 										142760,	-- Barserver Aspen
-										142767,	-- Barserveer Donlyuk
+										142767,	-- Barserver Donlyuk
+										142775,	-- Barserver Vince
+										140640,	-- Commander Langton
+										134729,	-- Crimper Mirjam
+										142770,	-- Kevin Tack
+										142759,	-- Monica Winters
+										142189,	-- Ruddy the Rat
+									},
+								},
+								{	-- Pontoon Pilsner
+									["itemID"] = 163018,		-- Pontoon Pilsner
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 17,		-- Pontoon Pilsner
+									["crs"] = {
+										142764,	-- "Fairplay" JJ
+										142760,	-- Barserver Aspen
+										142767,	-- Barserver Donlyuk
 										142775,	-- Barserver Vince
 										139113,	-- Bored Barkeep
 										140640,	-- Commander Langton
-										144115,	-- Diana Seafinch
-										136138,	-- Fixi Slyshiv
-										143246,	-- Garrett Elmendorf
 										123639,	-- Harold Atkey
-										137411,	-- Joseph Stephens
 										142770,	-- Kevin Tack
-										131511,	-- Lily Whistlebrew
-										137040,	-- Linda Deepwater
-										129044,	-- Martha Mae
 										142759,	-- Monica Winters
-										135216,	-- Ron Mahogany
-										138905,	-- Rusty Blade Waitress
 										126601,	-- Sarella Griffin
 										143244,	-- Victor Esquivias
-										135153,	-- Wesley Rockhold
 										131781,	-- Zuaba Sonja
 									},
 								},
-								--]]
+								{	-- Snowberry Berliner
+									["itemID"] = 163094,		-- Snowberry Berliner
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 19,		-- Snowberry Berliner
+									["crs"] = {
+										142764,	-- "Fairplay" JJ
+										139638,	-- Barkeep Cotner
+										142760,	-- Barserver Aspen
+										142767,	-- Barserver Donlyuk
+										142775,	-- Barserver Vince
+										140640,	-- Commander Langton
+										134729,	-- Crimper Mirjam
+										142770,	-- Kevin Tack
+										142759,	-- Monica Winters
+										142189,	-- Ruddy the Rat
+									},
+								},
+								{	-- Thornspeaker Moonshine
+									["itemID"] = 163549,		-- Thornspeaker Moonshine
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 20,		-- Thornspeaker Moonshine
+									["crs"] = {
+										142188,	-- Allison Weber
+										137411,	-- Joseph Stephens
+										137040,	-- Linda Deepwater
+									},
+								},
+								{	-- Tradewinds Kolsch
+									["itemID"] = 163098,		-- Tradewinds Kolsch
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 21,		-- Tradewinds Kolsch
+									["crs"] = {
+										142764,	-- "Fairplay" JJ
+										142760,	-- Barserver Aspen
+										142767,	-- Barserver Donlyuk
+										142775,	-- Barserver Vince
+										140640,	-- Commander Langton
+										134729,	-- Crimper Mirjam
+										142770,	-- Kevin Tack
+										142759,	-- Monica Winters
+										142189,	-- Ruddy the Rat
+										126601,	-- Sarella Griffin
+										143244,	-- Victor Esquivias
+									},
+								},
+								{	-- Whitegrove Pale Ale
+									["itemID"] = 159846,		-- Whitegrove Pale Ale
+									["achievementID"] = 13061,	-- Three Sheets to the Wind
+									["criteriaID"] = 22,		-- Whitegrove Pale Ale
+									["crs"] = {
+										138221,	-- "Nasty" Buck
+										126600,	-- Arthur Seville
+										139638,	-- Barkeep Cotner
+										134729,	-- Crimper Mirjam
+										133214,	-- Dandy Jons
+										144115,	-- Diana Seafinch
+										129159,	-- Egert Tominson
+										134968,	-- Felicity Noel
+										136138,	-- Fixi Slyshiv
+										123639,	-- Harold Atkey
+										135525,	-- Jaela Billa
+										137031,	-- Jake Storm
+										136479,	-- Jill McHoonigan
+										137411,	-- Joseph Stephens
+										136468,	-- Lidia Plank
+										137040,	-- Linda Deepwater
+										137455,	-- Quartermaster Rickard
+										142189,	-- Ruddy the Rat
+										135153,	-- Wesley Rockhold
+									},
+								},
 							},
 						},
 						ach(12852, {	-- Treasures of Tiragarde Sound
