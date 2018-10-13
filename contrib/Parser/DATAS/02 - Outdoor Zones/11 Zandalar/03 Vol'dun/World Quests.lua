@@ -25,6 +25,13 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Bajiani the Stick
+									["questID"] = 51117,	-- Bajiani the Stick
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(51155, {	-- Brgl-Lrgl the Basher
 									["groups"] = {
 										i(161044),	-- Tideflat Brute's Greatbelt
@@ -120,12 +127,20 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								q(51153, {	-- Mor'fani the Exile
+								{	-- Make Loh Go
+									["questID"] = 51635,	-- Make Loh Go
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
-								}),
+								},
+								{	-- Mor'fani the Exile
+									["questID"] = 51153, 	-- Mor'fani the Exile
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(51850, {	-- Preserve the Oasis
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -140,6 +155,13 @@ _.Zones =
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
+								{	-- Scaleclaw Broodmother
+									["questID"] = 51107,	-- Scaleclaw Broodmother
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								{	--  Snakes on a Terrace [Pet Battle]
 									["questID"] = 52856,	-- Snakes on a Terrace
 									["qg"] = 141945,	-- Sizzik

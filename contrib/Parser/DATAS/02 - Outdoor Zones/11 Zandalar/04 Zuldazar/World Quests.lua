@@ -144,6 +144,13 @@ _.Zones =
 								["lvl"] = 120,			-- WQ is 120+ only
 								["races"] = ALLIANCE_ONLY,
 							}),
+							{	-- Shell Game
+								["questID"] = 51630,	-- Shell Game
+								["repeatable"] = true,
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
+							},
 							{	-- Subterranean Evacuation
 								["questID"] = 50756,	-- Subterranean Evacuation
 								["repeatable"] = true,

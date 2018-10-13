@@ -18,6 +18,16 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Set Sail
+									["questID"] = 54166,	-- Set Sail
+									--["sourceQuests"] = Island Account Unlock; Add later
+									["repeatable"] = true,
+									["isWeekly"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 110,			-- WQ is 120+ only
+									["races"] = HORDE_ONLY,
+									-- NOTE!! Also grants credit for Alliance Equivalent == 54167
+								},
 								q(50858, {	-- Sky Queeen
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -146,7 +156,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51041, {	-- Supplis Needed: Sea Stalk
+								q(51041, {	-- Supplies Needed: Sea Stalk
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]

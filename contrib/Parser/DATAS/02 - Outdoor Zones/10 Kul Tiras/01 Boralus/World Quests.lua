@@ -17,6 +17,16 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Set Sail
+									["questID"] = 54167,	-- Set Sail
+									--["sourceQuests"] = Island Account Unlock; Add later
+									["repeatable"] = true,
+									["isWeekly"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 110,			-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+									-- NOTE!! Also grants credit for Horde Equivalent == 54166
+								},
 								q(51024, {	-- Supplies Needed: Akunda's Bite
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
