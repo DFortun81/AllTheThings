@@ -114,6 +114,7 @@ _.Zones =
 								i(161117),	-- Berserker's Juju
 							}),
 							["questID"] = 50661,	-- WQ ID is 50846
+							["repeatable"] = true,	-- temp
 						}),
 						n(126637, {	-- Kandak  [CLQS]
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -164,6 +165,7 @@ _.Zones =
 							["coords"] = {
 								{ 53.80, 44.84 },
 							},
+							["repeatable"] = true,	-- temp
 						}),
 						n(131687, {	-- Tambano [CLQS]
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -196,6 +198,7 @@ _.Zones =
 								i(162620),	-- Devilbone Shoulderguards
 							},
 							["questID"] = 50847,	
+							["repeatable"] = true,	-- temp
 						}),	
 						n(122004, {	-- Umbra'jin [CLQS]
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -209,6 +212,7 @@ _.Zones =
 						}),
 						n(134717, {	-- Umbra'rix [MCMLQ]
 							["questID"] = 50673,
+							["repeatable"] = true,	-- temp
 						}),
 						n(134048, {	-- Vukuba [CLQS]
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
