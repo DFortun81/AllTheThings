@@ -650,16 +650,31 @@ _.Zones =
 						["requireSkill"] = 755, -- Jewelcrafting
 						["sourceQuests"] = { 46941 }, -- The Path Forward
 					}),
-					q(48076, { -- A Crowning Achievement
-						["groups"] = {
-							i(151587), -- Empyrial Cosmic Crown
-							i(151588), -- Empyrial Deep Crown
-							i(151589), -- Empyrial Elemental Crown
-							i(151590), -- Empyrial Titan Crown
-						},
+					{	-- A Crowning Achievement
+						["questID"] = 48076,	--  A Crowning Achievment
+						["qg"] = 125343,		-- Vorel
 						["requireSkill"] = 755, -- Jewelcrafting
-						["sourceQuests"] = { 48075 }, -- A Colorful Key
-					}),
+						["sourceQuests"] = {
+							48075,	-- A Colorful Key
+						},
+						["coords"] = {
+							{ 44.45, 73.35 },
+						},
+						["g"] = {
+							{	-- Empyrial Cosmic Crowns
+								["recipeID"] = 247751	-- Empyrial Cosmic Crown
+							},
+							{	-- Empyrial Deep Crown
+								["recipeID"] = 247756	-- Empyrial Deep Crown
+							},
+							{	-- Empyrial Elemental Crown
+								["recipeID"] = 247762	-- Empyrial Elemental Crown
+							},
+							{	-- Empyrial Titan Crown
+								["recipeID"] = 247766	-- Empyrial Titan Crown
+							},
+						},
+					},
 					q(48078, { -- Counterbalancing
 						["groups"] = {
 							i(151577), -- Fiendish Shoulderguards

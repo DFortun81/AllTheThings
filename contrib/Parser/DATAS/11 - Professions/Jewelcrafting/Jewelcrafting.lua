@@ -40,12 +40,14 @@ profession(755, { -- Jewelcrafting
 			["description"] = "To learn this specific item you will need to buy the Black Market AH version",
 		})),
 	}),
+	--[[	Note!! Under crafted items
 	tier(7, { -- Legion
 		i(151587),	-- Empyrial Cosmic Crown
 		i(151588),	-- Empyrial Deep Crown
 		i(151589),	-- Empyrial Elemental Crown
 		i(151590),	-- Empyrial Titan Crown
 	}),
+	--]]
 	--[[
 	n(-10068, { -- PLACE_HOLDER
 		i(52409),	-- Design: Accurate Demonseye
