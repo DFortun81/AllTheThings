@@ -240,6 +240,16 @@ _.Instances =
 						}),
 					}),
 					d(14, {		-- Normal
+						n(-17, {	-- Quests
+							{
+								["questID"] = 39502,	-- The Fel Spire
+								["qg"] = 95659,	-- Archmage Khadgar
+							},
+							{
+								["questID"] = 39499,	-- Well of Souls
+								["qg"] = 95659,	-- Archmage Khadgar
+							},
+						}),
 						n(0, {				-- Zone Drop
 							i(124182),	-- Cord of Unhinged Malice
 							i(124323),	-- Cruel Hope Crushers
@@ -388,6 +398,10 @@ _.Instances =
 								i(124267),	-- Oathclaw Leggings (Druid)
 								i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
 							}),
+							{
+								["itemID"] = 128416,	-- Soul Remnant
+								["questID"] = 39499,	-- Well of Souls
+							},
 							i(124380),	-- Spur of the Great Devourer
 							i(124359),	-- Voracious Souleater
 							i(124205),	-- Gibbering Madness
@@ -556,6 +570,10 @@ _.Instances =
 								i(124246),	-- Oathclaw Vestment (Druid)
 								i(124171),	-- Robe of the Arcanic Conclave (Mage)
 							}),
+							{
+								["itemID"] = 128419,	-- Fel Essence
+								["questID"] = 39502,	-- The Fel Spire
+							},
 							i(124378),	-- Xu'tenash, Glaive of Ruin
 							i(124367),	-- Fang of the Pit
 							i(124361),	-- Cursed Demonbone Longbow
@@ -576,6 +594,8 @@ _.Instances =
 							i(124382),	-- Edict of Argus
 							i(124372),	-- Gavel of the Eredar
 							i(124159),	-- Demon Prince's Ascendant Crown
+							i(124210),	-- Choker of the Great Betrayer
+							i(124222),	-- World Ender's Gorget
 							i(124343),	-- Doomcrier's Shoulderplates
 							i(124176),	-- Mantle of the Eredar Lord
 							i(124144),	-- Cloak of Incendiary Wrath
@@ -605,6 +625,16 @@ _.Instances =
 						}))
 					}),
 					d(15, {		-- Heroic
+						n(-17, {	-- Quests
+							{
+								["questID"] = 39504,	-- The Fel Spire [Heroic]
+								["qg"] = 95659,	-- Archmage Khadgar
+							},
+							{
+								["questID"] = 39500,	-- Well of Souls [Heroic]
+								["qg"] = 95659,	-- Archmage Khadgar
+							},
+						}),
 						n(0, {				-- Zone Drop
 							i(124182),	-- Cord of Unhinged Malice
 							i(124323),	-- Cruel Hope Crushers
@@ -753,6 +783,10 @@ _.Instances =
 								i(124267),	-- Oathclaw Leggings (Druid)
 								i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
 							}),
+							{
+								["itemID"] = 128417,	-- Soul Remnant [Heroic]
+								["questID"] = 39500,	-- Well of Souls [Heroic]
+							},
 							i(124380),	-- Spur of the Great Devourer
 							i(124359),	-- Voracious Souleater
 							i(124205),	-- Gibbering Madness
@@ -922,6 +956,10 @@ _.Instances =
 								i(124246),	-- Oathclaw Vestment (Druid)
 								i(124171),	-- Robe of the Arcanic Conclave (Mage)
 							}),
+							{
+								["itemID"] = 128420,	-- Fel Essence [Heroic]
+								["questID"] = 39504,	-- The Fel Spire [Heroic]
+							},
 							i(124378),	-- Xu'tenash, Glaive of Ruin
 							i(124367),	-- Fang of the Pit
 							i(124361),	-- Cursed Demonbone Longbow
@@ -947,6 +985,8 @@ _.Instances =
 							i(124382),	-- Edict of Argus
 							i(124372),	-- Gavel of the Eredar
 							i(124159),	-- Demon Prince's Ascendant Crown
+							i(124210),	-- Choker of the Great Betrayer
+							i(124222),	-- World Ender's Gorget
 							i(124343),	-- Doomcrier's Shoulderplates
 							i(124176),	-- Mantle of the Eredar Lord
 							i(124144),	-- Cloak of Incendiary Wrath
@@ -976,6 +1016,16 @@ _.Instances =
 						})),
 					}),
 					d(16, {		-- Mythic
+						n(-17, {	-- Quests
+							{
+								["questID"] = 39505,	-- The Fel Spire [Mythic]
+								["qg"] = 95659,	-- Archmage Khadgar
+							},
+							{
+								["questID"] = 39501,	-- Well of Souls [Mythic]
+								["qg"] = 95659,	-- Archmage Khadgar
+							},
+						}),
 						n(0, {				-- Zone Drop
 							i(124182),	-- Cord of Unhinged Malice
 							i(124323),	-- Cruel Hope Crushers
@@ -1123,6 +1173,10 @@ _.Instances =
 								i(124267),	-- Oathclaw Leggings (Druid)
 								i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
 							}),
+							{
+								["itemID"] = 128418,	-- Soul Remnant [Mythic]
+								["questID"] = 39501,	-- Well of Souls [Mythic]
+							},
 							i(124380),	-- Spur of the Great Devourer
 							i(124359),	-- Voracious Souleater
 							i(124205),	-- Gibbering Madness
@@ -1292,6 +1346,10 @@ _.Instances =
 								i(124246),	-- Oathclaw Vestment (Druid)
 								i(124171),	-- Robe of the Arcanic Conclave (Mage)
 							}),
+							{
+								["itemID"] = 128421,	-- Fel Essence [Heroic]
+								["questID"] = 39505,	-- The Fel Spire [Heroic]
+							},
 							i(124378),	-- Xu'tenash, Glaive of Ruin
 							i(124367),	-- Fang of the Pit
 							i(124361),	-- Cursed Demonbone Longbow
@@ -1313,6 +1371,8 @@ _.Instances =
 							i(124382),	-- Edict of Argus
 							i(124372),	-- Gavel of the Eredar
 							i(124159),	-- Demon Prince's Ascendant Crown
+							i(124210),	-- Choker of the Great Betrayer
+							i(124222),	-- World Ender's Gorget
 							i(124343),	-- Doomcrier's Shoulderplates
 							i(124176),	-- Mantle of the Eredar Lord
 							i(124144),	-- Cloak of Incendiary Wrath
