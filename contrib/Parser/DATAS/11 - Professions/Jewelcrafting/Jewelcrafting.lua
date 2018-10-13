@@ -1,5 +1,6 @@
 -- Jewelcrafting - Skill ID 755 / Spell ID 25229
 profession(755, { -- Jewelcrafting
+	--	Note!! Leaving here for now.  Eventually merge into Crafted Items
 	n(-160, { -- Mounts
 		i(83088),	-- Jade Panther
 		i(82453),	-- Jeweled Onyx Panther
@@ -15,6 +16,7 @@ profession(755, { -- Jewelcrafting
 		i(130254), -- Chatterstone
 		i(130251), -- Jewelcraft
 	}),
+	--[[	Note!! Under crafted items
 	tier(2, { -- The Burning Crusade
 		i(24123),	-- Circlet of Arcane Might
 		i(24122),	-- Coronet of Verdant Flame
@@ -40,7 +42,6 @@ profession(755, { -- Jewelcrafting
 			["description"] = "To learn this specific item you will need to buy the Black Market AH version",
 		})),
 	}),
-	--[[	Note!! Under crafted items
 	tier(7, { -- Legion
 		i(151587),	-- Empyrial Cosmic Crown
 		i(151588),	-- Empyrial Deep Crown
