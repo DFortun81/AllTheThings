@@ -1364,6 +1364,32 @@ _.Zones =
 							i(119137),	-- Steamwheedle "Preservation" Society Tabard
 						},
 					}),
+					n(87552, {	-- Nik Steelrings
+						i(111921),	-- Draenor Engineering
+						i(119299, {	-- Secret of Draenor Engineering
+							i(118493),	-- Schematic: Didi's Delicate Assembly
+							i(118490),	-- Schematic: Blingtron 5000
+							i(118480),	-- Schematic: Findle's Loot-a-Rang
+							i(118495),	-- Schematic: Hemet's Heartseeker
+							i(118485),	-- Schematic: Lifelike Mechanical Frostboar
+							i(118484),	-- Schematic: Mechanical Axebeak
+							i(119177),	-- Schematic: Mechanical Scorpid
+							i(118478),	-- Schematic: Megawatt Filament
+							i(118477),	-- Schematic: Oglethorpe's Missle Splitter
+							i(118487),	-- Schematic: Personal Hologram
+							i(118491),	-- Schematic: Linkgrease Locksprocket
+							i(118497),	-- Schematic: Cybergenetic Mechshades
+							i(118498),	-- Schematic: Night-Vision Mechshades
+							i(118499),	-- Schematic: Plasma Mechshades
+							i(118500),	-- Schematic: Razorguard Mechshades
+							i(118476),	-- Schematic: Shrediron's Shredder
+							i(120268),	-- Schematic: True Iron Trigger
+							i(118489),	-- Schematic: Swapblaster
+							i(118481),	-- Schematic: World Shrinker
+							i(118488),	-- Schematic: Wormhole Centrifuge
+							i(128327),	-- Small Pouch of Coins
+						}),
+					}),
 					n(86037, {	-- Ravenspeaker Skeega <Arakkoa Outcasts Quartermaster>
 						["groups"] = {
 							currency (823, { -- Apexis Crystal

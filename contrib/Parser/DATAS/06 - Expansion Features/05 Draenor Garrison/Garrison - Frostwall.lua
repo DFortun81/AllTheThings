@@ -4269,31 +4269,32 @@ _.ExpansionFeatures =
 								i(117402),	-- Ultra-Electrified Reflector
 							},
 						}),
-						--[[
 						nh(79826, { -- Pozzlow 
-							i(111921), -- Teaches Gearspring parts, ultimate gnomish army knife, goblin glider kit, mecha-blast rocket, secrets of draenor engineering, shieldtronic shield, stealthman 54
-							i(118476),
-							i(118477),
-							i(118478),
-							i(118480),
-							i(118481),
-							i(118484),
-							i(118485),
-							i(118487),
-							i(118488),
-							i(118489),
-							i(118490),
-							i(118491),
-							i(118493),
-							i(118495),
-							i(118497),
-							i(118498),
-							i(118499),
-							i(118500),
-							i(119177),
-							i(120268),
+							i(111921),	-- Draenor Engineering
+							i(119299, {	-- Secret of Draenor Engineering
+								i(118493),	-- Schematic: Didi's Delicate Assembly
+								i(118490),	-- Schematic: Blingtron 5000
+								i(118480),	-- Schematic: Findle's Loot-a-Rang
+								i(118495),	-- Schematic: Hemet's Heartseeker
+								i(118485),	-- Schematic: Lifelike Mechanical Frostboar
+								i(118484),	-- Schematic: Mechanical Axebeak
+								i(119177),	-- Schematic: Mechanical Scorpid
+								i(118478),	-- Schematic: Megawatt Filament
+								i(118477),	-- Schematic: Oglethorpe's Missle Splitter
+								i(118487),	-- Schematic: Personal Hologram
+								i(118491),	-- Schematic: Linkgrease Locksprocket
+								i(118497),	-- Schematic: Cybergenetic Mechshades
+								i(118498),	-- Schematic: Night-Vision Mechshades
+								i(118499),	-- Schematic: Plasma Mechshades
+								i(118500),	-- Schematic: Razorguard Mechshades
+								i(118476),	-- Schematic: Shrediron's Shredder
+								i(120268),	-- Schematic: True Iron Trigger
+								i(118489),	-- Schematic: Swapblaster
+								i(118481),	-- Schematic: World Shrinker
+								i(118488),	-- Schematic: Wormhole Centrifuge
+								i(128327),	-- Small Pouch of Coins
+							}),
 						}),
-						]]--
 					}),				
 					n(-107, {	-- Fishing Shack
 						n(85984, {	--  Nat Pagle <Master Fisherman>
@@ -4629,7 +4630,6 @@ _.ExpansionFeatures =
 									i(113823, { -- Crusted Iron Horde Pauldrons
 										i(113803),	-- Shadowmoon Shoulderguards
 										i(113819),	-- Warsong Spaulders
-										i(113791),	-- Thunderlord Chestguard
 										i(113811),	-- Blackrock Pauldrons
 										i(118366),	-- Orgrimmar Spaulders
 									}),
@@ -4652,6 +4652,7 @@ _.ExpansionFeatures =
 									i(113814),	-- Warsong Boots
 									i(113795),	-- Thunderlord Shoulderguards
 									i(113796),	-- Thunderlord Bracers
+									i(113791),	-- Thunderlord Chestguard
 									i(113792),	-- Thunderlord Gloves
 									i(113794),	-- Thunderlord Leggings
 									i(113790),	-- Thunderlord Sabatons
