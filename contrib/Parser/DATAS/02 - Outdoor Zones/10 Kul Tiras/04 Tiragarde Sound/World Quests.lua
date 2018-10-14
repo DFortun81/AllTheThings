@@ -16,12 +16,20 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								q(52874, {	-- Azerite Mining
+								{
+									["questID"] = 52874, 	-- Azerite Mining
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
-								}),
+								},
+								{
+									["questID"] = 51581, 	-- Azerite Mining
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(52869, {	-- Azerite Empowerment
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -34,6 +42,13 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Bloodmaw
+									["questID"] = 51613,	-- Bloodmaw
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(52755, {	-- Bringing the Heat
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
