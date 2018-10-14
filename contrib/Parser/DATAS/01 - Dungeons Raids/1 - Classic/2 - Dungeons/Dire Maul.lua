@@ -32,6 +32,15 @@ _.Instances =
 										13197,	-- Fel Lash
 									},
 								}),
+								i(18289, {	-- Barbed Thorn Necklace
+									["crs"] = {
+										11461,	-- Warpwood Guardian
+										11462,	-- Warpwood Treant
+										13021,	-- Warpwood Crusher
+										11464,	-- Warpwood Tangler
+										11465,	-- Warpwood Stomper
+									},
+								}),
 								i(18296, {	-- Marksman Bands
 									["crs"] = {
 										11454,	-- Wildspawn Betrayer
@@ -298,6 +307,14 @@ _.Instances =
 									["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nSouthern Generator in Immol'thar's room",
 								}),
 								i(18339, {	-- Eidolon Cloak
+									["crs"] = {
+										11471,	-- Eldreth Apparition
+										11475,	-- Eldreth Phantasm
+										11473,	-- Eldreth Spectre
+										11472,	-- Eldreth Spirit
+									},
+								}),
+								i(18340, {	-- Eidolon Talisman
 									["crs"] = {
 										11471,	-- Eldreth Apparition
 										11475,	-- Eldreth Phantasm

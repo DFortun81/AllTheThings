@@ -9,18 +9,25 @@ _.Instances =
 			inst(254, { 	-- The Arcatraz
 				["groups"] = {
 					n(-17, {	-- Quests
-						q(29674),	-- Unbound Darkness
-						q(29675, {	-- Hey There Dalliah
-							["sourceQuests"] = { 29674 },	-- Unbound Darkness
-						}),
-						q(29681, {	-- Maximum Security Breakout
+						{
+							["questID"] = 29675,	-- Hey There Dalliah
+							["sourceQuest"] = 29674,	-- Unbound Darkness
+							["qg"] = 18481,	-- A'dal
+						},
+						{
+							["questID"] = 29681,	-- Maximum Security Breakout
+							["sourceQuest"] = 29675,	-- Hey There Dalliah
+							["qg"] = 18481,	-- A'dal
 							["groups"] = {
 								i(31749),	-- A'dal's Recovery Necklace
 								i(31747),	-- Potent Sha'tari Pendant
 								i(31748),	-- Shattrath Choker of Power
 							},
-							["sourceQuests"] = { 29675 },	-- Hey There Dalliah
-						}),
+						},
+						{
+							["questID"] = 29674,	-- Unbound Darkness
+							["qg"] = 18481,	-- A'dal
+						},
 						faction(932, {	-- The Aldor
 							["groups"] = {
 								q(10706, {	-- A Mysterious Portent

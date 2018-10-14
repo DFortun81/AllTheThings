@@ -178,6 +178,21 @@ _.Craftables =
 			i(20954),	-- Heavy Iron Knuckles
 			i(20832),	-- Moonsoul Crown
 			i(20969),	-- Ruby Crown of Restoration
+			filter(51, {	-- Neck
+				i(24114),	-- Braided Eternium Chain
+				i(24121),	-- Chain of the Twilight Owl
+				i(24117),	-- Embrace of the Dawn
+				i(24116),	-- Eye of the Night
+				i(24110),	-- Living Ruby Pendant
+				i(32508),	-- Necklace of the Deep
+				i(24092),	-- Pendant of Frozen Flame
+				i(24097),	-- Pendant of Shadow's End
+				i(24093),	-- Pendant of Thawing
+				i(24098),	-- Pendant of the Null Rune
+				i(24095),	-- Pendant of Withering
+				i(24077),	-- Thick Adamantite Necklace
+				i(24106),	-- Thick Felsteel Necklace
+			}),
 		}),
 		n(-187, { -- Leatherworking
 			n(-322, { 	-- Cloak

@@ -137,6 +137,24 @@ _.Instances =
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {
+							h({
+								["questID"] = 3341,	-- Bring the End
+								["qg"] = 2308,	-- Andrew Brownell
+								["u"] = 2,
+								["groups"] = {
+									i(10823),	-- Vanquisher's Sword
+									i(10824),	-- Amberglow Talisman
+								},
+							}),
+							a({
+								["questID"] = 3636,	-- Bring the Light
+								["qg"] = 1284,	-- Archbishop Benedictus
+								["u"] = 2,
+								["groups"] = {
+									i(10823),	-- Vanquisher's Sword
+									i(10824),	-- Amberglow Talisman
+								},
+							}),
 							n(14686, {	-- Lady Falther'ess
 								un(2, i(23177)),	-- Lady Falther'ess' Finger
 								un(2, i(23178)),	-- Mantle of Lady Falther'ess

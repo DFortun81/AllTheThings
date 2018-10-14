@@ -1114,8 +1114,16 @@ _.Zones =
 							un(40, q( 28462)),	-- Winterfall Firewater (removed with Cata)
 							un(40, qg(10618, qa( 5201))),	-- Winterfall Intrusion
 						}),
-						-- n(-16, {	-- Rares (Legacy)
-						-- }),
+						n(-16, {	-- Rares (Legacy)
+							n(14457, { 	-- Princess Tempestria
+								["groups"] = {
+									un(8, i(21548)),	-- Pattern: Stormshroud Gloves
+									un(7, i(18678)), 	-- Tempestria's Frozen Necklace
+									un(7, i(18679)),	-- Frigid Ring
+								},
+								["description"] = "This rare was only available during the Elemental Invasions.",
+							}),
+						}),
 						n(  0, {	-- Zone Drop (Legacy)
 							n(7449, { 	-- Chillwind Ravager
 								un(7, i(20697)), 	-- Crystalline Threaded Cape

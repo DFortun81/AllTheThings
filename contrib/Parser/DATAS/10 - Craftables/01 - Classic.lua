@@ -256,10 +256,28 @@ _.Craftables =
 			i(10721),	-- Gnomish Harm Prevention Belt
 			i(10724),	-- Gnomish Rocket Boots
 			i(7189),	-- Goblin Rocket Boots
+			filter(51, {	-- Neck
+				i(16009),	-- Voice Amplification Modulator
+			}),
 		}),
 		n(-186, { -- Jewelcrafting
-			n(-384, {	-- Neck
+			filter(51, {	-- Neck
+				i(20830),	-- Amulet of the Moon
+				i(21755),	-- Aquamarine Pendant of the Warrior
+				i(20909),	-- Barbaric Iron Collar
+				i(30419),	-- Brilliant Necklace
+				i(31154),	-- Bronze Torc
+				i(20967),	-- Citrine Pendant of Golden Healing
 				i(20831),	-- Heavy Golden Necklace of Battle
+				i(20966),	-- Jade Pendant of Blasting
+				i(25438),	-- Malachite Pendant
+				i(21792),	-- Necklace of the Diamond Tower
+				i(21766),	-- Opal Necklace of Impact
+				i(21934),	-- Ornate Tigerseye Necklace
+				i(20950),	-- Pendant of the Agate Shield
+				i(21764),	-- Ruby Pendant of Fire
+				i(21790),	-- Sapphire Pendant of Winter Night
+				i(21933),	-- Thick Bronze Necklace
 			}),
 		}),
 		n(-187, { -- Leatherworking

@@ -1355,6 +1355,7 @@ _.Zones =
 						i(9806),	-- Superior Gloves
 						i(9807),	-- Superior Shoulders
 						i(9809),	-- Superior Tunic
+						un(7, i(5754)),	-- Wolfpack Medallion
 					}),
 					n(12037, {	-- Ursol'lok
 						i(9782),	-- Bandit Jerkin

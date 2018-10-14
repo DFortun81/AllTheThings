@@ -46,6 +46,73 @@ _.WorldDrops =
 					i(9429),	-- Miner's Hat of the Deep
 					i(9431),	-- Papal Fez
 				}),
+				filter(51, {	-- Neck
+					un(7, i(20695)),	-- Abyssal War Beads
+					i(20830),	-- Amulet of the Moon
+					i(21755),	-- Aquamarine Pendant of the Warrior
+					i(30726),	-- Archaic Charm of Presence
+					i(12044),	-- Arctic Pendant
+					i(20909),	-- Barbaric Iron Collar
+					i(12028),	-- Basalt Necklace
+					i(30419),	-- Brilliant Necklace
+					i(31154),	-- Bronze Torc
+					i(12019),	-- Cerulean Talisman
+					i(20967),	-- Citrine Pendant of Golden Healing
+					i(5003),	-- Crystal Starfire Medallion
+					i(12043),	-- Desert Choker
+					un(7, i(5005)),	-- Emberspark Pendant
+					un(7, i(7551)),	-- Entwined Opaline Talisman
+					un(7, i(7549)),	-- Fairy's Embrace
+					i(12040),	-- Forest Pendant
+					i(13088),	-- Gazlowe's Charm
+					i(5002),	-- Glowing Green Talisman
+					i(12036),	-- Granite Necklace
+					i(12029),	-- Greenstone Talisman
+					i(20831),	-- Heavy Golden Necklace of Battle
+					i(13085),	-- Horizon Choker
+					i(12022),	-- Iridium Chain
+					i(20966),	-- Jade Pendant of Blasting
+					i(12030),	-- Jet Chain
+					i(1443),	-- Jeweled Amulet of Cainwyn
+					i(12046),	-- Jungle Necklace
+					i(13084),	-- Kaleidoscope Chain
+					i(13002),	-- Lady Alizabeth's Pendant
+					i(14558),	-- Lady Maye's Pendant
+					i(1315),	-- Lei of Lilies
+					i(12031),	-- Lodestone Necklace
+					i(25438),	-- Malachite Pendant
+					i(12034),	-- Marble Necklace
+					un(7, i(5004)),	-- Mark of the Kirin Tor
+					i(12042),	-- Marsh Chain
+					i(13091),	-- Medallion of Grand Marshal Morris
+					i(1714),	-- Necklace of Calisea
+					i(5180),	-- Necklace of Harmony
+					i(21792),	-- Necklace of the Diamond Tower
+					i(12035),	-- Obsidian Pendant
+					i(12032),	-- Onyx Choker
+					i(21766),	-- Opal Necklace of Impact
+					i(21934),	-- Ornate Tigerseye Necklace
+					i(20950),	-- Pendant of the Agate Shield
+					i(12048),	-- Prismatic Pendant
+					i(12026),	-- Quicksilver Pendant
+					i(13087),	-- River Pride Choker
+					i(21764),	-- Ruby Pendant of Fire
+					i(21790),	-- Sapphire Pendant of Winter Night
+					i(12025),	-- Selenium Chain
+					i(13089),	-- Skibi's Pendant
+					i(12047),	-- Spectral Necklace
+					i(12045),	-- Swamp Pendant
+					i(5029),	-- Talisman of the Naga Lord
+					i(12023),	-- Tellurium Necklace
+					un(7, i(18678)),	-- Tempestria's Frozen Necklace
+					i(12020),	-- Thallium Choker
+					i(21933),	-- Thick Bronze Necklace
+					i(12039),	-- Tundra Necklace
+					i(12024),	-- Vanadium Talisman
+					i(12027),	-- Vermilion Necklace
+					i(16009),	-- Voice Amplification Modulator
+					un(7, i(5754)),	-- Wolfpack Medallion
+				}),
 				n(-321, { -- Shoulder
 					un(7, i(3231)),	-- Cutthroat Pauldrons
 					i(12998),	-- Magician's Mantle

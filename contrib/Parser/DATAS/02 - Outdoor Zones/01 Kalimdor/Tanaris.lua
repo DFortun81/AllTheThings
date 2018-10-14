@@ -2002,7 +2002,6 @@ _.Zones =
 						},
 					}),
 					n(40589, {	-- Dirge Quikcleave <Butcher>
-						un(7, i(21025)), -- Recipe: Dirge's Kickin' Chimaerok Chops
 						i(18046),	-- Recipe: Tender Wolf Steak
 					}),
 					n(40572, {	-- Haughty Modiste <Fashion Designer>

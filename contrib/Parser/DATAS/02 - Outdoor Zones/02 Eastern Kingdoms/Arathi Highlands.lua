@@ -831,6 +831,7 @@ _.Zones =
 						dr(01.0, i(6597)),	-- Battleforge Shoulderguards
 						dr(01.0, i(9822)),	-- Durable Cape
 						dr(01.0, i(9791)),	-- Ivycloth Tunic
+						dr(0.14, i(5180)),	-- Necklace of Harmony
 						un(7, i(5181)), 	-- Vibrant Silk Cape							
 					}), 
 					n(51040, { 	-- Snuffles

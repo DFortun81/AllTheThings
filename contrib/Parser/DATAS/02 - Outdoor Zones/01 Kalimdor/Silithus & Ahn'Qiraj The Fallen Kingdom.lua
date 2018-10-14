@@ -1048,6 +1048,7 @@ END OF MICRO-HOLIDAY --]]
 							}),
 							n(14454, { 	-- The Windreaver
 								["groups"] = {
+									un(8, i(21548)),	-- Pattern: Stormshroud Gloves
 									un(7, i(18676)), 	-- Sash of the Windreaver
 									un(7, i(18677)), 	-- Zephyr Cloak
 								},

@@ -758,6 +758,7 @@ _.Zones =
 						dr(01.1, i(9835)),	-- Scaled Leather Tunic
 						dr(01.0, i(10289)),	-- Durable Hat
 						dr(01.0, i(7406)),	-- Infiltrator Cord
+						dr(00.5, i(5029)),	-- Talisman of the Naga Lord
 						un(7, i(5028)),	-- Lord Sakrasis' Scepter
 					}), 
 					n(14490, { 	-- Rippa
