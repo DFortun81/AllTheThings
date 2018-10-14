@@ -7,7 +7,7 @@ _.WorldEvents =
 		["groups"] = {
 			n(-532, {	-- Heroes of the Storm Promotion
 				ach(9926, {		-- Hero of the Storm
-					p(1639),		-- Graves
+					un(3, i(118518)),	-- Graves
 				}),
 				un(3, ach(11425, {	-- Herald of Flames
 					un(3, i(143631)),	-- Primal Flamesaber

@@ -33,7 +33,15 @@ _.NeverImplemented =
 	un(1, i(137576)),	-- Dim Coldflame Core
 	un(1, i(137615)),	-- Molten Flarecore
 	un(1, i(156798)),	-- The Hivemind
-	
+	un(1, i(80981)),	-- Scavenged Rotor Blade
+	un(1, i(81320)),	-- Right-Handed Invis Knuckles
+	un(1, i(84697)),	-- Dreadful Gladiator's Fleshslicer
+	un(1, i(84722)),	-- Dreadful Gladiator's Pike
+	un(1, i(84699)),	-- Dreadful Gladiator's Render
+	un(1, i(84696)),	-- Dreadful Gladiator's Ripper
+	un(1, i(84695)),	-- Dreadful Gladiator's Spellblade (blue)
+	un(1, i(84708)),	-- Dreadful Gladiator's Shanker (blue)
+	un(1, i(84698)),	-- Dreadful Gladiator's Slasher
 	un(1, i(156884, {	-- Black Gladiator's Proto-Drake
 		["mountID"] = 262027,
 	})),

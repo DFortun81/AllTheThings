@@ -274,6 +274,10 @@ AllTheThings.Locales.enUS = {
 	};
 	["FILTER_ID_ICONS"] = {
 		[27] = "Interface\\Icons\\inv_wand_02",								-- Wands
+		[50] = "Interface\\Icons\\Spell_Misc_Drink",						-- Miscellaneous
+		[51] = "Interface\\Icons\\INV_Jewelry_Necklace_02",					-- Neck
+		[52] = "Interface\\Icons\\INV_Jewelry_Ring_04",						-- Finger
+		[53] = "Interface\\Icons\\INV_Trinket_Naxxramas05",					-- Trinket
 		[102] = "Interface\\Icons\\INV_Misc_Toy_10",						-- Toy
 		[200] = "Interface\\Icons\\inv_scroll_05",							-- Recipes
 	},

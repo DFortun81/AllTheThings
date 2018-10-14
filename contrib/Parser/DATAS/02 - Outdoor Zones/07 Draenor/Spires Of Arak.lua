@@ -290,6 +290,11 @@ _.Zones =
 						i(118084),
 						i(118085),
 					}),
+					{
+						["questID"] = 34886,	-- Baby Bird
+						["sourceQuest"] = 34838,	-- Ikky's Egg
+						["qg"] = 80469,	-- Ikky
+					},
 					q(34939,  {  -- Declawing The Bloodmane
 						i(114719),
 						i(114720),
@@ -320,6 +325,18 @@ _.Zones =
 						i(114729),
 						i(114730),
 					}),
+					{
+						["questID"] = 34838,	-- Ikky's Egg
+						["qg"] = 80470,	-- Kaliri Egg
+					},
+					{
+						["questID"] = 34898,	-- Ikky
+						["sourceQuest"] = 34886,	-- Baby Bird
+						["qg"] = 85320,	-- Ikky
+						["groups"] = {
+							i(119466),	-- Ikky [Pet!]
+						},
+					},
 					q(34829,  {  -- New Neighbors
 						i(114736),
 						i(114737),

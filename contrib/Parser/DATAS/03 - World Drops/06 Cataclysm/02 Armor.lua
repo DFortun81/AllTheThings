@@ -17,6 +17,9 @@ _.WorldDrops =
 					i(67123),	-- Sinman's Helm of Succor
 					i(67147),	-- Je'Tze's Sparkling Tiara
 				}),
+				filter(51, {	-- Neck
+					i(66974),	-- Nightrend Choker
+				}),
 				n(-321, { -- Shoulder
 					i(59467),	-- Hide of Chromaggus
 					i(59901),	-- Heaving Plates of Protection
@@ -191,6 +194,12 @@ _.WorldDrops =
 					i(77175),	-- Boneshard Boots
 					i(77176),	-- Kavan's Forsaken Treads
 					i(77177),	-- Splinterfoot Sandals
+				}),
+				filter(52, {	-- Finger
+					
+				}),
+				filter(53, {	-- Trinket
+					
 				}),
 			}),
 		},

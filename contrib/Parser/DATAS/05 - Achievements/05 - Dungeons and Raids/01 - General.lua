@@ -544,6 +544,7 @@ _.Achievements =
 					}),
 					ach(11763, {	-- Glory of the Tomb Raider
 						style(3, title(362)),	-- ,the Tomb Raider
+						i(101426),		-- Micronax Controller (you also get this - Crieve)
 						crit(1),		-- Fel Turkey!
 						crit(2),		-- Grin and Bear It
 						crit(3),		-- Bingo!

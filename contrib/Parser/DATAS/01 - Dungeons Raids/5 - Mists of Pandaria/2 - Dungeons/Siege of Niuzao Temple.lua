@@ -65,6 +65,7 @@ _.Instances =
 								nld({	-- Legacy
 									un(2, i(100973)),	-- Gustwalker Staff (7.1 - Removed from Game!)
 									un(2, i(100965)),	-- Ner'onok's Razor Katar (7.1 - Removed from Game!)
+									un(2, i(100966)),	-- Tolakesh, Horn of the Black Ox (7.1 - Removed from Game!)
 									un(2, i(100971)),	-- Breezeswept Hood (7.1 - Removed from Game!)
 									un(2, i(100967)),	-- Windblast Helm (7.1 - Removed from Game!)
 									un(2, i(100970)),	-- Spaulders of Immovable Stone (7.1 - Removed from Game!)
