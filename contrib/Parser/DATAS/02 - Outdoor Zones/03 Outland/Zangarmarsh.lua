@@ -358,13 +358,17 @@ _.Zones =
 						}),
 						qa(9636, {	-- The Zapthrottle Mote Extractor!
 							["qg"] = 17634,	-- K. Lee Smallfry
-							["description"] = "Invisible until 305 Engineering.",
 							["requireSkill"] = 202,	-- Engineering
+							["groups"] = {
+								i(23888),	-- Schematic: Zapthrottle Mote Extractor
+							},
 						}),
 						qh(9635, {	-- The Zapthrottle Mote Extractor!
 							["qg"] = 17637,	-- Mack Diver
-							["description"] = "Invisible until 305 Engineering.",
 							["requireSkill"] = 202,	-- Engineering
+							["groups"] = {
+								i(23888),	-- Schematic: Zapthrottle Mote Extractor
+							},
 						}),
 						q(9778, {	-- Warden Hamoot
 							["qg"] = 17841,	-- Ysiel Windsinger
@@ -613,12 +617,13 @@ _.Zones =
 						i(24579, {	-- Mark of Honor Hold
 							i(27931),	-- Splintermark
 							i(27942),	-- Incendic Rod
+							i(27921),	-- Mark of Conquest
+							i(27922),	-- Mark of Defiance
+							i(27927),	-- Mark of Vindication
 						})
 					}),
 					nh(19383, {		-- Captured Gnome
-						i(23805, {	-- Schematic: Ultra-Spectroscopic Detection Goggles
-							i(23762),	-- Ultra-Spectroscopic Detection Goggles
-						}),
+						i(23805),	-- Schematic: Ultra-Spectroscopic Detection Goggles
 					}),
 					na(20028, {		-- Doba <Cooking Supplies>
 						i(27694),	-- Recipe: Blackened Trout
@@ -669,7 +674,9 @@ _.Zones =
 						i(25838),	-- Warden's Hauberk
 						i(29174),	-- Watcher's Cowl
 						i(29170),	-- Windcaller's Orb
-						i(35374),	-- Wyrmhide Spaulders						
+						i(35374),	-- Wyrmhide Spaulders
+						i(29173),	-- Strength of the Untamed
+						i(29172),	-- Ashyen's Gift
 					}),
 					nh(18015, {		-- Gambarinka <Tradesman>
 						i(27694),	-- Recipe: Blackened Trout
@@ -683,6 +690,9 @@ _.Zones =
 						i(24581, {	-- Mark of Thrallmar
 							i(27930),	-- Splintermark
 							i(27939),	-- Incendic Rod
+							i(27921),	-- Mark of Conquest
+							i(27922),	-- Mark of Defiance
+							i(27927),	-- Mark of Vindication
 						})
 					}),
 					n(18911, {		-- Juno Dufrain <Fishing Trainer>

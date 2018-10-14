@@ -8208,7 +8208,21 @@ app:GetWindow("Debugger", UIParent, function(self)
 								
 								-- Parse as an ITEM LINK.
 								m = link:match("item:(%d+)");
-								if m then table.insert(parent, {["itemID"] = tonumber(m), ["cost"] = cost}); end
+								if m then
+									m = tonumber(m);
+									local found = false;
+									local searchResults = SearchForField("itemID", m);
+									if searchResults and #searchResults > 0 then
+										for j,k in ipairs(searchResults) do
+											if (k.parent and k.parent.creatureID == npc_id) or (k.parent.parent and k.parent.parent.creatureID == npc_id) then
+												found = true;
+											end
+										end
+									end
+									if not found then
+										table.insert(parent, {["itemID"] = m, ["cost"] = cost});
+									end
+								end
 								--[===[
 								local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(link);
 								print(" ", itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice);

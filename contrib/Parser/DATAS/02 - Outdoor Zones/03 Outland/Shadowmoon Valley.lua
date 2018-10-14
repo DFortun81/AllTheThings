@@ -1058,6 +1058,9 @@ _.Zones =
 						i(25471),	-- Ebon Gryphon Mount
 						i(25472),	-- Snowy Gryphon Mount
 					})),
+					na(19351, {		-- Daggle Ironshaper
+						i(23807),	-- Schematic: Adamantite Scope
+					}),
 					h(n(20494, {	-- Dama Wildmane <Wind Rider Keeper>
 						i(25477),	-- Swift Red Wind Rider Mount
 						i(25531),	-- Swift Green Wind Rider Mount

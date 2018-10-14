@@ -905,6 +905,7 @@ _.Zones =
 					n(19213, {	-- Eiin <Specialty Tailoring Supplies>
 						["groups"] = {
 							i(21892),	-- Pattern: Bolt of Imbued Netherweave
+							i(21893),	-- Pattern: Imbued Netherweave Bag
 							i(21894),	-- Pattern: Bolt of Soulcloth
 							i(21896), 	-- Pattern: Netherweave Robe
 							i(21897), 	-- Pattern: Netherweave Tunic
@@ -927,6 +928,7 @@ _.Zones =
 							i(33578), 	-- Armwraps of the Kaldorei Protector
 							i(29266), 	-- Azure-Shield of Coldarra
 							i(29373), 	-- Band of Halos
+							i(33580),	-- Band of the Swift Paw
 							i(35326), 	-- Battlemaster's Alacrity
 							i(34049), 	-- Battlemaster's Audacity
 							i(34163), 	-- Battlemaster's Cruelty
@@ -1060,6 +1062,7 @@ _.Zones =
 					n(18756, {	-- Haris Pilton <Socialite>
 						["groups"] = {
 							i(38082),	-- "Gigantique" Bag
+							i(51809),	-- Portable Hole
 							i(134007),	-- Eternal Black Diamond Ring Toy
 							i(134004),	-- Noble's Eternal Elementium Signet
 						},

@@ -824,6 +824,12 @@ _.Zones =
 					nh(16588, {		-- Apothecary Antonivich <Alchemy Trainer>
 						i(22900),	-- Recipe: Elixir of Camouflage
 					}),
+					nh(18267, {		-- Battlecryer Blackeye
+						i(24581, {	-- Mark of Thrallmar
+							i(27832),	-- Band of the Victor
+							i(27830),	-- Circlet of the Victor
+						}),
+					}),
 					nh(35099, {		-- Bana Wildmane <Wind Rider Keeper>
 						i(25477),	-- Swift Red Wind Rider Mount
 						i(25531),	-- Swift Green Wind Rider Mount
@@ -862,27 +868,17 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
 					na(18775, {		-- Lebowski <Engineering Trainer>
-						i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
-							i(23762),	-- Ultra-Spectropic Detection Goggles
-						}),
-						i(23803, {	-- Schematic: Cogspinner Goggles
-							i(23758),	-- Cogspinner Goggles
-						}),
+						i(23805),	-- Schematic: Ultra-Spectropic Detection Goggles
+						i(23803),	-- Schematic: Cogspinner Goggles
 					}),
 					n(17657, {		-- Logistics Officer Ulrike <Honor Hold Quartermaster>
 						["groups"] = {
 							i(22531),	-- Formula: Enchant Bracer - Superior Healing
 							i(22547),	-- Formula: Enchant Chest - Exceptional Stats
 							i(33150),	-- Formula: Enchant Cloak - Subtlety
-							i(29214, {	-- Pattern: Felstalker Bracers
-								i(25697),	-- Felstalker Bracer
-							}),
-							i(29215, {	-- Pattern: Felstalker Breastplate
-								i(25696),	-- Felstalker Breastplate
-							}),
-							i(29213, {	-- Pattern: Felstalker Belt
-								i(25695),	-- Felstalker Belt
-							}),
+							i(29214),	-- Pattern: Felstalker Bracers
+							i(29215),	-- Pattern: Felstalker Breastplate
+							i(29213),	-- Pattern: Felstalker Belt
 							i(23619),	-- Plans: Felsteel Shield Spike
 							i(22905),	-- Recipe: Elixir of Major Agility
 							i(25870),	-- Recipe: Transmute Skyfire Diamond
@@ -911,24 +907,16 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					nh(19836, {		-- Mixie Farshot <Gun Merchant>
-						i(23803, {	-- Schematic: Cogspinner Goggles
-							i(23758),	-- Cogspinner Goggles
-						}),
+						i(23803),	-- Schematic: Cogspinner Goggles
 					}),
 					n(17585, {		-- Quartermaster Urgronn <Thrallmar Quartermaster>
 						["groups"] = {
 							i(24000),	-- Formula: Enchant Bracer - Superior Healing
 							i(24003),	-- Formula: Enchant Chest - Exceptional Stats
 							i(33151),	-- Formula: Enchant Cloak - Subtlety
-							i(25739, {	-- Pattern: Felstalker Bracers
-								i(25697),	-- Felstalker Bracer
-							}),
-							i(25740, {	-- Pattern: Felstalker Breastplate
-								i(25696),	-- Felstalker Breastplate
-							}),
-							i(25738, {	-- Pattern: Felstalker Belt
-								i(25695),	-- Felstalker Belt
-							}),
+							i(25739),	-- Pattern: Felstalker Bracers
+							i(25740),	-- Pattern: Felstalker Breastplate
+							i(25738),	-- Pattern: Felstalker Belt
 							i(24002),	-- Plans: Felsteel Shield Spike
 							i(24001),	-- Recipe: Elixir of Major Agility
 							i(29232),	-- Recipe: Transmute Skyfire Diamond
@@ -969,6 +957,12 @@ _.Zones =
 					na(19001, {		-- Talaara <Weapon Merchant>
 						i(30753),	-- Warphorn Spear
 						i(30755),	-- Mag'hari Fighting Claw
+					}),
+					na(18266, {		-- Warrant Officer Tracy Proudwell
+						i(24579, {	-- Mark of Honor Hold
+							i(27833),	-- Band of the Victor
+							i(27834),	-- Circlet of the Victor
+						}),
 					}),
 				}),
 				n(-40, {	-- Legacy

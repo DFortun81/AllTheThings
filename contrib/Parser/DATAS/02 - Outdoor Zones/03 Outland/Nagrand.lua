@@ -437,6 +437,7 @@ _.Zones =
 				}),
 				n(-2, {		-- Vendors
 					a(n(21485, {	-- Aldraan <Blade Merchant>
+						i(24208),	-- Design: Mystic Dawnstone
 						i(30597),	-- Halaani Claymore
 						i(26045, {	-- Halaa Battle Token
 							i(28915),	-- Reins of the Dark Riding Talbuk
@@ -512,29 +513,27 @@ _.Zones =
 					}),
 					h(n(20241, {	-- Provisioner Nasela <Mag'har Quartermaster>
 						i(29102),	-- Reins of the Cobalt War Talbuk
-						i(29103),	-- Reins of the White War Talbuk
 						i(29104),	-- Reins of the Silver War Talbuk
-						i(29105),	-- Reins of the Tan WAr Talbuk
+						i(29105),	-- Reins of the Tan War Talbuk
+						i(29103),	-- Reins of the White War Talbuk
 						i(31829),	-- Reins of the Cobalt Riding Talbuk
 						i(31831),	-- Reins of the Silver Riding Talbuk
 						i(31833),	-- Reins of the Tan Riding Talbuk
 						i(31835),	-- Reins of the White Riding Talbuk
 						i(31773),	-- Mag'har Tabard
+						i(34174),	-- Pattern: Drums of Restoration
+						i(34172),	-- Pattern: Drums of Speed
+						i(25741),	-- Pattern: Netherfury Belt
+						i(25743),	-- Pattern: Netherfury Boots
+						i(25742),	-- Pattern: Netherfury Leggings
+						i(29664),	-- Pattern: Reinforced Mining Bag
 						i(22917),	-- Recipe: Transmute Primal Fire to Earth
-						i(25743, {	-- Pattern: Netherfury Boots
-							i(25693),	-- Netherfury Boots
-						}),
-						i(25741, {	-- Pattern: Netherfury Belt
-							i(25694),	-- Netherfury Belt
-						}),
-						i(25742, {	-- Pattern: Netherfury Leggings
-							i(25692),	-- Netherfury Leggings
-						}),
-						i(29135),	-- Earthcaller's Headdress
 						i(29137),	-- Hellscream's Will
+						i(29135),	-- Earthcaller's Headdress
 						i(29139),	-- Ceremonial Cover
-						i(29141),	-- Tempest Leggings
 						i(29147),	-- Talbuk Hide Spaulders
+						i(29141),	-- Tempest Leggings
+						i(29145),	-- Band of Ancestral Spirits
 					})),
 					a(n(18822, {	-- Quartermaster Davian Vaclav
 						i(26045, {	-- Halaa Battle Token
@@ -570,6 +569,7 @@ _.Zones =
 							i(27652),	-- Stormbreaker's Leggings
 							i(27653),	-- Slayer's Leggings
 							i(27654),	-- Avenger's Legplates
+							i(27680),	-- Halaani Bag
 						}),
 					})),
 					h(n(18821, {	-- Quartermaster Jaffrey Noreliqe
@@ -606,33 +606,32 @@ _.Zones =
 							i(27652),	-- Stormbreaker's Leggings
 							i(27653),	-- Slayer's Leggings
 							i(27654),	-- Avenger's Legplates
+							i(27680),	-- Halaani Bag
 						}),
 					})),
 					a(n(20240, {	-- Trader Narasu <Kurenai Quartermaster>
 						i(29227),	-- Reins of the Cobalt War Talbuk
-						i(29231),	-- Reins of the White War Talbuk
 						i(29229),	-- Reins of the Silver War Talbuk
-						i(29230),	-- Reins of the Tan WAr Talbuk
+						i(29230),	-- Reins of the Tan War Talbuk
+						i(29231),	-- Reins of the White War Talbuk
 						i(31830),	-- Reins of the Cobalt Riding Talbuk
 						i(31832),	-- Reins of the Silver Riding Talbuk
 						i(31834),	-- Reins of the Tan Riding Talbuk
 						i(31836),	-- Reins of the White Riding Talbuk
 						i(31774),	-- Kurenai Tabard
-						i(29218, {	-- Pattern: Netherfury Boots
-							i(25693),	-- Netherfury Boots
-						}),
-						i(29217, {	-- Pattern: Netherfury Belt
-							i(25694),	-- Netherfury Belt
-						}),
-						i(29219, {	-- Pattern: Netherfury Leggings
-							i(25692),	-- Netherfury Leggings
-						}),
+						i(34174),	-- Pattern: Drums of Restoration
+						i(34172),	-- Pattern: Drums of Speed
+						i(29217),	-- Pattern: Netherfury Belt
+						i(29218),	-- Pattern: Netherfury Boots
+						i(29219),	-- Pattern: Netherfury Leggings
+						i(29664),	-- Pattern: Reinforced Mining Bag
 						i(30443),	-- Recipe: Transmute Primal Fire to Earth
-						i(29136),	-- Far Seer's Helm
 						i(29138),	-- Arechron's Gift
+						i(29136),	-- Far Seer's Helm
 						i(29140),	-- Cloak of the Ancient Spirit
-						i(29142),	-- Kurenai Kilt
 						i(29148),	-- Blackened Leather Spaulders
+						i(29142),	-- Kurenai Kilt
+						i(29146),	-- Band of Elemental Spirits
 					})),
 					na(20096, {		-- Uriku <Cooking Supplies>
 						i(27697),	-- Recipe: Grilled Mudfish
