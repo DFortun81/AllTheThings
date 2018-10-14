@@ -1025,6 +1025,7 @@ _.Zones =
 								i(35110),	-- Brutal Gladiator's Waraxe
 							},
 						}),
+						-- i(146598),	-- Ensemble: Brutal Gladiator's Chain Armor [TODO]
 						i(35077),	-- Brutal Gladiator's Ringmail Armor
 						i(35085),	-- Brutal Gladiator's Satin Leggings
 						i(34991),	-- Brutal Gladiator's Chain Gauntlets
@@ -2396,6 +2397,7 @@ _.Zones =
 							i(77622),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
 							i(77621),	-- Replica Lieutenant Commander's Lamellar Shoulders
 							i(77612),	-- Replica Sergeant Major's Chain Armguards
+							i(77613),	-- Replica Sergeant Major's Chain Armguards
 							i(77611),	-- Replica Knight-Captain's Chain Leggings
 							i(77610),	-- Replica Knight-Lieutenant's Chain Gauntlets
 							i(77609),	-- Replica Lieutenant Commander's Chain Helmet
