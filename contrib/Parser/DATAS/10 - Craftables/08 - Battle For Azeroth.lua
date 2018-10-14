@@ -17,38 +17,126 @@ _.Craftables =
 			i(152632),	-- Surging Alchemist Stonee
 		}),
 		n(-181, { -- Blacksmithing
-			i(162466),	-- Emblazoned Stormsteel Girdle
-			i(162464),	-- Emblazoned Stormsteel Legguards
+			{	-- Emblazoned Stormsteel Girdle [A]
+				["itemID"] = 162484,	-- Emblazoned Stormsteel Girdle
+			},
+			{	-- Emblazoned Stormsteel Girdle [H]
+				["itemID"] = 162466,	-- Emblazoned Stormsteel Girdle
+			},
+			{	-- Emblazoned Stormsteel Legguards [A]
+				["itemID"] = 162483,	-- Emblazoned Stormsteel Legguards
+			},
+			{	-- Emblazoned Stormsteel Legguards [H]
+				["itemID"] = 162464,	-- Emblazoned Stormsteel Legguards
+			},
 			i(159853),	-- Honorable Combatant's Cutlass
 			i(159855),	-- Honorable Combatant's Deckpounder
-			i(159866),	-- Honorable Combatant's Plate Armguards
-			i(159860),	-- Honorable Combatant's Plate Boots
-			i(159861),	-- Honorable Combatant's Plate Gauntlets
-			i(159863),	-- Honorable Combatant's Plate Greaves
-			i(159865),	-- Honorable Combatant's Plate Waistguard
 			i(159858),	-- Honorable Combatant's Polearm
 			i(159857),	-- Honorable Combatant's Shanker
 			i(159851),	-- Honorable Combatant's Shield
 			i(162652),	-- Honorable Combatant's Spellblade
-			i(162492),	-- Imbued Stormsteel Girdle
-			i(162491),	-- Imbued Stormsteel Legguards
-			i(162115),	-- Magnetic Mining Pick
-			i(152809),	-- Monel-Hardened Armguards
-			i(152803),	-- Monel-Hardened Boots
-			i(152802),	-- Monel-Hardened Breastplate
+			{	-- Honorable Combatant's Plate Armguards [A]
+				["itemID"] = 161897,	-- Honorable Combatant's Plate Armguards
+			},
+			{	-- Honorable Combatant's Plate Armguards [H]
+				["itemID"] = 159866,	-- Honorable Combatant's Plate Armguards
+			},
+			{	-- Honorable Combatant's Plate Gauntlets [A]
+				["itemID"] = 161894,	-- Honorable Combatant's Plate Gauntlets
+			},
+			{	-- Honorable Combatant's Plate Gauntlets [H]
+				["itemID"] = 159861,	-- Honorable Combatant's Plate Gauntlets
+			},
+			{	-- Honorable Combatant's Plate Waistguard [A]
+				["itemID"] = 161896,	-- Honorable Combatant's Plate Waistguard
+			},
+			{	-- Honorable Combatant's Plate Waistguard [H]
+				["itemID"] = 159865,	-- Honorable Combatant's Plate Waistguard
+			},
+			{	-- Honorable Combatant's Plate Greaves [a]
+				["itemID"] = 161895,	-- Honorable Combatant's Plate Greaves
+			},
+			{	-- Honorable Combatant's Plate Greaves [H]
+				["itemID"] = 159863,	-- Honorable Combatant's Plate Greaves
+			},
+			{	-- Honorable Combatant's Plate Boots [A]
+				["itemID"] = 161893,	-- Honorable Combatant's Plate Boots
+			},
+			{	-- Honorable Combatant's Plate Boots [H]
+				["itemID"] = 159860,	-- Honorable Combatant's Plate Boots
+			},
+			{	-- Imbued Stormsteel Girdle [A]
+				["itemID"] = 162465,	-- Imbued Stormsteel Girdle
+			},
+			{	-- Imbued Stormsteel Girdle [H]
+				["itemID"] = 162492,	-- Imbued Stormsteel Girdle
+			},
+			{	-- Imbued Stormsteel Legguards [A]
+				["itemID"] = 162463,	-- Imbued Stormsteel Legguards
+			},
+			{	-- Imbued Stormsteel Legguards [H]
+				["itemID"] = 162491,	-- Imbued Stormsteel Legguards
+			},
 			i(152828),	-- Monel-Hardened Claymore
 			i(152827),	-- Monel-Hardened Cutlass
 			i(152831),	-- Monel-Hardened Deckpounder
-			i(152804),	-- Monel-Hardened Gauntlets
-			i(152806),	-- Monel-Hardened Greaves
-			i(152805),	-- Monel-Hardened Helm
-			i(152812),	-- Monel-Hardened Hoofplates
-			i(152807),	-- Monel-Hardened Pauldrons
 			i(152833),	-- Monel-Hardened Polearm
 			i(152832),	-- Monel-Hardened Shanker
 			i(152818),	-- Monel-Hardened Shield
+			{	-- Monel-Hardened Helm
+				["u"] = 1,				-- Not Implemented
+				["itemID"] = 161883,	-- Monel-Hardened Helm
+			},
+			{	-- Monel-Hardened Helm [H]
+				["itemID"] = 152805,	-- Monel-Hardened Helm
+			},
+			{	-- Monel-Hardened Pauldrons [A]
+				["itemID"] = 161885,	-- Monel-Hardened Pauldrons
+			},
+			{	-- Monel-Hardened Pauldrons [H]
+				["itemID"] = 152807,	-- Monel-Hardened Pauldrons
+			},
+			{	-- Monel-Hardened Breastplate [A]
+				["itemID"] = 161880,	-- Monel-Hardened Breastplate
+			},
+			{	-- Monel-Hardened Breastplate [H]
+				["itemID"] = 152802,	-- Monel-Hardened Breastplate
+			},
+			{	-- Monel-Hardened Armguards [A]
+				["itemID"] = 161887,	-- Monel-Hardened Armguards
+			},
+			{	-- Monel-Hardened Armguards [H]
+				["itemID"] = 152809,	-- Monel-Hardened Armguards
+			},
+			{	-- Monel-Hardened Gauntlets [A]
+				["itemID"] = 161882,	-- Monel-Hardened Gauntlets
+			},
+			{	-- Monel-Hardened Gauntlets [H]
+				["itemID"] = 152804,	-- Monel-Hardened Gauntlets
+			},
+			{	-- Monel-Hardened Waistguard [A]
+				["itemID"] = 161886,	-- Monel-Hardened Waistguard
+			},
+			{	-- Monel-Hardened Waistguard [H]
+				["itemID"] = 152808,	-- Monel-Hardened Waistguard
+			},
+			{	-- Monel-Hardened Greaves [A]
+				["itemID"] = 161884,	-- Monel-Hardened Greaves
+			},
+			{	-- Monel-Hardened Greaves [H]
+				["itemID"] = 152806,	-- Monel-Hardened Greaves
+			},
+			{	-- Monel-Hardened Boots [A]
+				["itemID"] = 161881,	-- Monel-Hardened Boots
+			},
+			{	-- Monel-Hardened Boots [H]
+				["itemID"] = 152803,	-- Monel-Hardened Boots
+			},
+
+			
+			i(162115),	-- Magnetic Mining Pick
+			i(152812),	-- Monel-Hardened Hoofplates
 			i(152813),	-- Monel-Hardened Stirrups
-			i(152808),	-- Monel-Hardened Waistguard
 			i(159826),	-- Monelite Skeleton Key
 			i(162120),	-- Platinum Whetstone
 			i(162109),	-- Storm Silver Spurs

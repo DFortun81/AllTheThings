@@ -34,50 +34,38 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["groups"] = {
 							n(0, {	-- Zone Drop
-								n(54920, {	-- Infinite Suppressor
-									dr(0.5, i(76154)),	-- Breastplate of Despair
-									dr(0.7, i(76156)),	-- Bindings of The End Times
-								}),
-								n(54923, {	-- Infinite Warden
-									dr(0.4, i(76154)),	-- Breastplate of Despair
-									dr(0.6, i(76156)),	-- Bindings of The End Times
-								}),
-								n(54552, {	-- Time-Twisted Breaker
-									dr(0.5, i(76154)),	-- Breastplate of Despair
-									dr(0.3, i(76156)),	-- Bindings of The End Times
-								}),
-								n(54543, {	-- Time-Twisted Drake
-									dr(0.2, i(76154)),	-- Breastplate of Despair
-									dr(0.3, i(76156)),	-- Bindings of The End Times
-								}),
-								n(54687, {	-- Time-Twisted Footman
-									dr(0.4, i(76154)),	-- Breastplate of Despair
-									dr(0.6, i(76156)),	-- Bindings of The End Times
-								}),
-								n(54511, {	-- Time-Twisted Geist
-									dr(0.5, i(76154)),	-- Breastplate of Despair
-									dr(0.7, i(76156)),	-- Bindings of The End Times
-								}),
-								n(54690, {	-- Time-Twisted Priest
-									dr(0.2, i(76154)),	-- Breastplate of Despair
-									dr(0.4, i(76156)),	-- Bindings of The End Times
-								}),
-								n(54693, {	-- Time-Twisted Rifleman
-									dr(0.3, i(76154)),	-- Breastplate of Despair
-									dr(0.7, i(76156)),	-- Bindings of The End Times
-								}),
-								n(54507, {	-- Time-Twisted Scourge Beast
-									dr(0.5, i(76154)),	-- Breastplate of Despair
-									dr(0.6, i(76156)),	-- Bindings of The End Times
-								}),
-								n(54553, {	-- Time-Twisted Seer
-									dr(0.2, i(76154)),	-- Breastplate of Despair
-									dr(0.5, i(76156)),	-- Bindings of The End Times
-								}),
-								n(54691, {	-- Time-Twisted Sorceress
-									dr(0.4, i(76154)),	-- Breastplate of Despair
-									dr(0.7, i(76156)),	-- Bindings of The End Times
-								}),
+								{	--  Breastplate of Despair
+									["itemID"] = 76154,	-- Breastplate of Despair
+									["crs"] = {
+										54920,	-- Infinite Suppressor
+										54923,	-- Infinite Warden
+										54552,	-- Time-Twisted Breaker
+										54543,	-- Time-Twisted Drake
+										54687,	-- Time-Twisted Footman
+										54511,	-- Time-Twisted Geist
+										54690,	-- Time-Twisted Priest
+										54693, 	-- Time-Twisted Rifleman
+										54507, 	-- Time-Twisted Scourge Beast
+										54553, 	-- Time-Twisted Seer
+										54691, 	-- Time-Twisted Sorceress
+									},
+								},
+								{	--  Bindings of The End Times
+									["itemID"] = 76156,	-- Bindings of The End Times
+									["crs"] = {
+										54920,	-- Infinite Suppressor
+										54923,	-- Infinite Warden
+										54552,	-- Time-Twisted Breaker
+										54543,	-- Time-Twisted Drake
+										54687,	-- Time-Twisted Footman
+										54511,	-- Time-Twisted Geist
+										54690,	-- Time-Twisted Priest
+										54693, 	-- Time-Twisted Rifleman
+										54507, 	-- Time-Twisted Scourge Beast
+										54553, 	-- Time-Twisted Seer
+										54691, 	-- Time-Twisted Sorceress
+									},
+								},
 							}),
 							cr(54431, e(340, { 	-- Echo of Baine 
 								i( 72814),	-- Axe of The Tauren Chieftain

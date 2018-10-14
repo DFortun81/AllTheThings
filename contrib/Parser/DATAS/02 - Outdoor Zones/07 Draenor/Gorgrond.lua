@@ -72,6 +72,14 @@ _.Zones =
 						},
 						["collectible"] = false,
 					}),
+					{	-- I Am Blook
+						["questID"] = 34279,	-- I Am Blook
+						["g"] = {
+							{	-- Blook
+								["followerID"] = 189,	-- Blook
+							},
+						},
+					},
 --[[				
 					q(36037),	-- A Centurion Without a Cause
 					qh( 33593),	-- A Flare for the Dramatic
@@ -1126,6 +1134,18 @@ _.Zones =
 				--	n(80371, { 		-- Typhon	}), 				
 --]]				
 				}),
+				{	-- Treasure Chest
+					["npcID"] = -212,	-- Treasure Chest
+					["g"] = {
+						{	-- Glossy Brochure
+							["itemID"] = 118227,	-- Glossy Brochure
+							["questID"] = 34241,
+							["coords"] = {
+								{ 43.06, 92.96 },
+							},
+						},
+					},
+				},
 			},
 			["lvl"] = 92,	
 			["achievementID"] = 8939,
