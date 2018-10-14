@@ -60,7 +60,6 @@ _.ExpansionFeatures =
 					{	-- Bayside Brawler
 						["achievementID"] = 12597,	-- Bayside Brawler
 					},
-					
 					{	-- Competent Captain [Note: Not attached to Expert Expeditioner since it was a different difficulty and didn't make sense
 						["achievementID"] = 12594,	-- Competent Captain
 					},
@@ -312,7 +311,6 @@ _.ExpansionFeatures =
 							},		
 						},
 					},
-					
 					{	-- Metal Detector
 						["achievementID"] = 13124,	-- Metal Detector
 						["g"] = {
@@ -324,7 +322,6 @@ _.ExpansionFeatures =
 					{	-- No Tourist [Note: Not attached to Expert Expeditioner since it was a different difficulty and didn't make sense
 						["achievementID"] = 12596,	-- No Tourist
 					},
-					
 					{	-- Sucker Punch
 						["achievementID"] = 13129,	-- Sucker Punch
 					},
@@ -454,6 +451,23 @@ _.ExpansionFeatures =
 							{	-- Ancient Crypt Key	
 								["itemID"] = 163470,	-- Ancient Crypt Key
 								["questID"] = 53160,	-- Ancient Crypt Key
+								-- Note!! Mogue creatures should drop this.  Still experimental 10/13
+								["crs"] = {
+									139439,	-- Duskbinder Zuun
+									139444,	-- Necrolord Zian
+									123146,	-- Torn Spirit
+									126190,	-- Zian-Ti Brutalizer
+									138972,	-- Zian-Ti Cloudbreaker
+									126215,	-- Zian-Ti Darkweaver
+									126216,	-- Zian-Ti Destroyer
+									139464,	-- Zian-Ti Howler
+									139533,	-- Zian-Ti Invasion Serpent
+									138968,	-- Zian-Ti Ironmaw
+									132807,	-- Zian-Ti Quilen
+									138971,	-- Zian-Ti Serpent
+									126185,	-- Zian-Ti Shadowcaster
+									138969,	-- Zian-Ti Spirit
+								},
 							},		
 							{	-- Battered Twilight Scale	
 								["itemID"] = 163478,	-- Battered Twilight Scale
@@ -553,7 +567,6 @@ _.ExpansionFeatures =
 							},		
 						},
 					},
-					
 				},
 			}),
 		},
