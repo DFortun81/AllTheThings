@@ -9,16 +9,6 @@ _.Instances =
 			inst(362, { 	-- Throne of Thunder
 				["groups"] = {
 					n(-17, {	-- Quests
-						i(94295, {	-- Primal Egg
-							["groups"] = {
-								i(94296, { 	-- Cracked Primal Egg
-									i(94292),	-- Reins of the Black Primal Raptor
-									i(94293),	-- Reins of the Green Primal Raptor
-									i(94291),	-- Reins of the Red Primal Raptor
-								}),
-							},
-							["description"] = "This egg can be obtained from the Treasures/Spoils of the Thunder King or any mob on the Isle of Giants."
-						}),
 						i(97153, {	-- Spoils of the Thunder King
 							["groups"] = {
 								i(94295),	-- Primal Egg

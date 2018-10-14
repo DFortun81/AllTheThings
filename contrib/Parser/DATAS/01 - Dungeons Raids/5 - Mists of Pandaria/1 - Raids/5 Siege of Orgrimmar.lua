@@ -28,6 +28,9 @@ _.Instances =
 										i(105817),	-- Siid's Silent Stranglers
 										i(105825),	-- Turtleshell Greatcloak
 										i(105822),	-- Zoid's Molten Gauntlets
+										
+										-- Pets / Mounts
+										i(94295),	-- Primal Egg
 										i(44984),	-- Ammen Vale Lashling
 										i(54436),	-- Blue Clockwork Rocket Bot
 										i(44970),	-- Dun Morogh Cub
@@ -39,13 +42,6 @@ _.Instances =
 										i(43698),	-- Giant Sewer Rat
 										i(45002),	-- Mechanopeep
 										i(44980),	-- Mulgore Hatchling
-										i(94295, { 	-- Primal Egg
-											i(94296, {  -- Cracked Primal Egg
-												i(94292), -- Reins of the Black Primal Raptor
-												i(94293), -- Reins of the Green Primal Raptor
-												i(94291), -- Reins of the Red Primal Raptor
-											}),
-										}),
 										i(69992),	-- Shimmering Wyrmling
 										i(44965),	-- Teldrassil Sproutling
 										i(69991),	-- Tiny Sporebat
@@ -104,13 +100,7 @@ _.Instances =
 										i(43698),	-- Giant Sewer Rat
 										i(45002),	-- Mechanopeep
 										i(44980),	-- Mulgore Hatchling
-										i(94295, { 	-- Primal Egg
-											i(94296, {  -- Cracked Primal Egg
-												i(94292), -- Reins of the Black Primal Raptor
-												i(94293), -- Reins of the Green Primal Raptor
-												i(94291), -- Reins of the Red Primal Raptor
-											}),
-										}),
+										i(94295),	-- Primal Egg
 										i(69992),	-- Shimmering Wyrmling
 										i(44965),	-- Teldrassil Sproutling
 										i(69991),	-- Tiny Sporebat

@@ -3321,6 +3321,9 @@ app.BaseAchievementCriteria = {
 		if key == "achievementID" then
 			return t.parent.achievementID or t.parent.parent.achievementID;
 		elseif key == "text" then
+			if t["isRaid"] then return "|cffff8000" .. t.name .. "|r"; end
+			return t.name;
+		elseif key == "name" then
 			if t.itemID then
 				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
 				if link then
@@ -3330,7 +3333,14 @@ app.BaseAchievementCriteria = {
 					return link;
 				end
 			end
+			if t.encounterID then
+				return select(1, EJ_GetEncounterInfo(t.encounterID)) or "";
+			end
 			return GetAchievementCriteriaInfo(t.achievementID,t.criteriaID);
+		elseif key == "description" then
+			if t.encounterID then
+				return select(2, EJ_GetEncounterInfo(t.encounterID)) or "";
+			end
 		elseif key == "link" then
 			if t.itemID then
 				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
@@ -3341,6 +3351,24 @@ app.BaseAchievementCriteria = {
 					return link;
 				end
 			end
+		elseif key == "displayID" then
+			if t.encounterID then
+				-- local id, name, description, displayInfo, iconImage = EJ_GetCreatureInfo(1, t.encounterID);
+				return select(4, EJ_GetCreatureInfo(t.index, t.encounterID));
+			end
+		elseif key == "displayInfo" then
+			if t.encounterID then
+				local displayInfos, displayInfo = {};
+				for i=1,MAX_CREATURES_PER_ENCOUNTER do
+					displayInfo = select(4, EJ_GetCreatureInfo(i, t.encounterID));
+					if displayInfo then
+						tinsert(displayInfos, displayInfo);
+					else
+						break;
+					end
+				end
+				return displayInfos;
+			end
 		elseif key == "icon" then
 			return select(10, GetAchievementInfo(t.achievementID));
 		elseif key == "trackable" then
@@ -3349,6 +3377,8 @@ app.BaseAchievementCriteria = {
 			return GetDataMember("TreatAchievementsAsCollectible");
 		elseif key == "saved" or key == "collected" then
 			return select(4, GetAchievementInfo(t.achievementID)) or select(3, GetAchievementCriteriaInfo(t.achievementID, math.min(t.criteriaID, GetAchievementNumCriteria(t.achievementID))));
+		elseif key == "index" then
+			return 1;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
