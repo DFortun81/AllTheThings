@@ -1833,9 +1833,18 @@ _.Zones =
 						i(28638),	-- General's Mail Bracers
 						i(28639),	-- General's Mail Girdle
 						i(28640),	-- General's Mail Sabatons
+						i(32974),	-- General's Mooncloth Belt
+						i(32975),	-- General's Mooncloth Slippers
+						i(32973),	-- General's Mooncloth Cuffs
+						i(32982),	-- General's Ornamented Belt
+						i(32984),	-- General's Ornamented Greaves
+						i(32983),	-- General's Ornamented Bracers
 						i(28385),	-- General's Plate Belt
 						i(28381),	-- General's Plate Bracers
 						i(28383),	-- General's Plate Greaves
+						i(32992),	-- General's Ringmail Girdle
+						i(32993),	-- General's Ringmail Sabatons
+						i(32991),	-- General's Ringmail Bracers
 						i(147613),	-- General's Satin Cord
 						i(147771),	-- General's Satin Cuffs
 						i(147614),	-- General's Satin Slippers
@@ -1981,9 +1990,19 @@ _.Zones =
 						i(28992),	-- Marshal's Mail Bracers
 						i(28993),	-- Marshal's Mail Girdle
 						i(28994),	-- Marshal's Mail Sabatons
+						i(32976),	-- Marshal's Mooncloth Belt
+						i(32978),	-- Marshal's Mooncloth Slippers
+						i(32977),	-- Marshal's Mooncloth Cuffs
+						i(32985),	-- Marshal's Ornamented Belt
+						i(32987),	-- Marshal's Ornamented Greaves
+						i(32986),	-- Marshal's Ornamented Bracers
 						i(28995),	-- Marshal's Plate Belt
 						i(28996),	-- Marshal's Plate Bracers
 						i(28997),	-- Marshal's Plate Greaves
+						i(30491),	-- Marshal's Plate Sabatons
+						i(32995),	-- Marshal's Ringmail Girdle
+						i(32996),	-- Marshal's Ringmail Sabatons
+						i(32994),	-- Marshal's Ringmail Bracers
 						i(28998),	-- Marshal's Scaled Belt
 						i(28999),	-- Marshal's Scaled Bracers
 						i(29000),	-- Marshal's Scaled Greaves
