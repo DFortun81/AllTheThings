@@ -7,31 +7,31 @@ _.Zones =
 		m(525, { 	-- Frostfire Ridge
 			["groups"] = {							
 				n(-228, {	-- Flight Paths
-					fp(1387, { -- Bladespire Citadel, Frostfire Ridge
+					fp(1387, {	-- Bladespire Citadel, Frostfire Ridge
 						["coord"] = { 24.4, 37.2 },
 					}),
-					fp(1389, { -- Bloodmaul Slag Mines, Frostfire Ridge
+					fp(1389, {	-- Bloodmaul Slag Mines, Frostfire Ridge
 						["coord"] = { 51.4, 21.4 },
 					}),
-					fp(1396, { -- Darkspear's Edge, Frostfire Ridge
+					fp(1396, {	-- Darkspear's Edge, Frostfire Ridge
 						["coord"] = { 51.8, 41 },
 					}),
-					fp(1528, { -- Iron Siegeworks, Frostfire Ridge
+					fp(1528, {	-- Iron Siegeworks, Frostfire Ridge
 						["coord"] = { 87.4, 62.6 },
 					}),
-					fp(1390, { -- Stonefang Outpost, Frostfire Ridge
+					fp(1390, {	-- Stonefang Outpost, Frostfire Ridge
 						["coord"] = { 40, 51.8 },
 					}),
-					fp(1388, { -- Throm'Var, Frostfire Ridge
+					fp(1388, {	-- Throm'Var, Frostfire Ridge
 						["coord"] = { 31.8, 9.6 },
 					}),
-					fp(1395, { -- Thunder Pass, Frostfire Ridge
+					fp(1395, {	-- Thunder Pass, Frostfire Ridge
 						["coord"] = { 83.6, 60.8 },
 					}),
-					fp(1559, { -- Wolf's Stand, Frostfire Ridge
+					fp(1559, {	-- Wolf's Stand, Frostfire Ridge
 						["coord"] = { 73.6, 60 },
 					}),
-					fp(1386, { -- Wor'gol, Frostfire Ridge
+					fp(1386, {	-- Wor'gol, Frostfire Ridge
 						["coord"] = { 21.6, 56 },
 					}),
 				}),
@@ -46,20 +46,20 @@ _.Zones =
 				}),
 				n(-17, { 	-- Quests
 					["groups"] = {
-						ach(8671, { -- Frostfire Ridge
+						ach(8671, {	-- Frostfire Ridge
 							["groups"] = {
-								crit(1, { -- Foothold in a Savage Land
+								crit(1, {	-- Foothold in a Savage Land
 									q(33868),	-- The Home of the Frostwolves
-									q(33815, { -- A Song of Frost and Fire
+									q(33815, {	-- A Song of Frost and Fire
 										["qg"] = 76411, -- Farseer Drek'Thar
 										["sourceQuests"] = { 33868 }, -- The Home of the Frostwolves
 										["isBreadcrumb"] = true,
 									}),
-									q(34402, { -- of Wolves and  Warriors
+									q(34402, {	-- of Wolves and  Warriors
 										["qg"] = 78272, -- Durotan
 										["sourceQuests"] = { 33815 }, -- A Song of Frost and Fire
 									}),
-									q(34364, { -- For the Horde!
+									q(34364, {	-- For the Horde!
 										["groups"] = {
 											i(111540), -- Frostwolf Augury Staff
 											i(111539), -- Frostwolf Boot Knife
@@ -73,50 +73,50 @@ _.Zones =
 										["qg"] = 70859, -- Thrall
 										["sourceQuests"] = { 34402 }, -- of Wolves and  Warriors
 									}),
-									q(34375, { -- Back to Work
+									q(34375, {	-- Back to Work
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34364 }, -- For the Horde!
-									}),	
-									q(34592, { -- A Gronnling Problem
+									}),
+									q(34592, {	-- A Gronnling Problem
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34364 }, -- For the Horde!
-									}),	
-									q(34765, { -- The Den of Skog
+									}),
+									q(34765, {	-- The Den of Skog
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34592, 34375 }, -- A Gronnling Problem / Back to Work
-									}),	
-									q(34378, { -- Establish Your Garrison
+									}),
+									q(34378, {	-- Establish Your Garrison
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34765 }, -- The Den of Skog
-									}),	
-									q(34823, { -- The Ogron Live?
+									}),
+									q(34823, {	-- The Ogron Live?
 										["qg"] = 78487, -- Rokhan
 										["sourceQuests"] = { 34378 }, -- Establish Your Garrison
-									}),	
-									q(34824, { -- What We Got
+									}),
+									q(34824, {	-- What We Got
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34378 }, -- Establish Your Garrison
-									}),	
-									q(34822, { -- What We Need
+									}),
+									q(34822, {	-- What We Need
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34378 }, -- Establish Your Garrison
-									}),	
-									q(34461, { -- Build Your Barracks
+									}),
+									q(34461, {	-- Build Your Barracks
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34823, 34824, 34822 }, -- The Ogron Live? / What We Got / What We Need
-									}),	
-									q(34861, { -- We Need An Army
+									}),
+									q(34861, {	-- We Need An Army
 										["qg"] = 78466, -- Gazlowe
 										["sourceQuests"] = { 34461 }, -- Build Your Barracks
-									}),	
-									q(34462, { -- Winds of Change
+									}),
+									q(34462, {	-- Winds of Change
 										["qg"] = 79740, -- Warmaster Zog
 										["sourceQuests"] = { 34861 }, -- We Need An Army
 									}),
-									q(34775, { -- Mission Probable
+									q(34775, {	-- Mission Probable
 										["qg"] = 79740, -- Warmaster Zog
 										["sourceQuests"] = { 34462 }, -- Winds of Change
-									}),	
+									}),
 								}),
 							},
 							["races"] = HORDE_ONLY,
@@ -144,7 +144,7 @@ _.Zones =
 						i(109055, {	-- Coil of Sturdy Rope
 							qh(34067, {	-- A Collection of Coils, also completes 34264
 								["qg"] = 77106,	-- Thunderlord Wrangler
-							}),	
+							}),
 						}),
 						qh(36516, { 	-- Cut 'Em Out! - Horde Leatherworking quest
 							["groups"] = { 	
@@ -250,9 +250,9 @@ _.Zones =
 							i(117503),
 							i(117504),
 						}),
-						i(114965, { -- Fractured Forge Hammer
+						i(114965, {	-- Fractured Forge Hammer
 							["groups"] = {
-								q(36205, { -- The Fractured Hammer
+								q(36205, {	-- The Fractured Hammer
 									["qg"] = 74254, -- Dorogg the Ruthless
 								}),
 							},
@@ -260,21 +260,21 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
-						q(36207, { -- Waruk the Frostforger
+						q(36207, {	-- Waruk the Frostforger
 							["qg"] = 78989, -- Axe-Shaper Kugra
 							["sourceQuest"] = 36205, -- The Fractured Hammer
 							["races"] = HORDE_ONLY,
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
-						q(36230, { -- The Restless Spirit
+						q(36230, {	-- The Restless Spirit
 							["qg"] = 84494, -- Waruk the Frostforger
 							["sourceQuest"] = 36207, -- Waruk the Frostforger
 							["races"] = HORDE_ONLY,
 							["requireSkill"] = 164, -- Blacksmithing
 						}),
-						q(36238, { -- Mending A Broken Heart
+						q(36238, {	-- Mending A Broken Heart
 							["groups"] = {
-								i(115356, { -- Draenor Blacksmithing
+								i(115356, {	-- Draenor Blacksmithing
 									["collectible"] = false,
 								}),
 								i(111813), -- The Forge, Level 1
@@ -329,75 +329,99 @@ _.Zones =
 							},
 						}),
 					},
-				}),	
+				}),
 				n(-16, { 	-- Rares
 					n(84378, { 		-- Ak'ox the Slaughterer
+						["questID"] = 37525,
 						["groups"] = {
 							dr(41, i(119365)),	-- Bloodied Tourniquet Belt
-						},	
-						["questID"] = 37525,
+						},
 					}),
 					o(226955, { 	-- Arena Master's War Horn
+						["questID"] = 33916,
+						["icon"] = "Interface\\Icons\\inv_misc_horn_01",
 						["groups"] = {
 							dr(100, i(108735)), -- Arena Master's War Horn Toy
-						},	
-						["questID"] = 33916,
-						["icon"] = "Interface\\Icons\\inv_misc_horn_01",	
+						},
 					}),
 					n(72156, { 		-- Borrok the Devourer
+						["questID"] = 33511,
+						["description"] = "Need to feed 10 ogres to him, kill an ogre, it will kneel, click on it to throw it over you back (druids must be in human form) then walk into feeding area. Repeat. Loot the Devourer's Gutstone afterwards.",
 						["groups"] = {	
 							o(224686, { 	-- Devourer's Gutstone
+								["icon"] = "Interface\\Icons\\INV_Elemental_Primal_Fire",
 								["groups"] = {	
 									dr(100, i(112110)),  -- Carapace Shield of the Devourer
 								},
-								["icon"] = "Interface\\Icons\\INV_Elemental_Primal_Fire",	
 							}),
-						},		
-						["questID"] = 33511,						
-						["description"] = "Need to feed 10 ogres to him, kill an ogre, it will kneel, click on it to throw it over you back (druids must be in human form) then walk into feeding area. Repeat. Loot the Devourer's Gutstone afterwards.",	
+						},
 					}),
 					n(78867, { 		-- Breathless
+						["questID"] = 34497,
 						["groups"] = {
 							dr(100, i(111476)), -- Stolen Breath Toy
-						},	
-						["questID"] = 34497,	
+						},
+					}),
+					n(74613, {		-- Broodmother Reeg'ak
+						["questID"] = 33843,
+						["groups"] = {
+							dr(100, i(111533)), -- Corrosive Tongue of Reeg'ak
+						},
+					}),
+					n(71721, {		-- Canyon Icemother
+						["questID"] = 32941,
+						["groups"] = {
+							dr(100, i(101436)), -- Icemother Milk
+						},
 					}),
 					n(80242, { 		-- Chillfang
+						["questID"] = 34843,
 						["groups"] = {
 							dr(100, i(111953)), -- Bat-Leather Breeches
-						},	
-						["questID"] = 34843,	
+						},
 					}),
 					n(72294, { 		-- Cindermaw
+						["questID"] = 33014,
 						["groups"] = {	
 							dr(100, i(111490)), -- Cindermaw's Blazing Talon
-						},	
-						["questID"] = 33014,	
+						},
 					}),
 					n(75120, { 		-- Clumsy Cragmaul Brute
+						["questID"] = 33531,
 						["groups"] = {
 							dr(100, i(112096)),	-- Dented Ogre Skullcap
-						},	
-						["questID"] = 33531,
+						},
+					}),
+					n(77513, {		-- Coldstomp the Griever
+						["questID"] = 34129,
+						["groups"] = {	
+							dr(91, i(112066)), -- Coldstomp's Sorrow
+						},
 					}),
 					n(76914, { 		-- Coldtusk
+						["questID"] = 34131,
 						["groups"] = {	
 							dr(100, i(111484)), -- Cold Tusk
-						},	
-						["questID"] = 34131,	
+						},
 					}),
-					o(226983, { 	-- Crag-Leaper's Cache	
+					o(226983, { 	-- Crag-Leaper's Cache
+						["questID"] = 33940,
+						["modelID"] = 65118,
 						["groups"] = {	
 							dr(100, i(112187)),	-- Crag-Leaping Boots
-						},	
-						["questID"] = 33940,
-						["modelID"] = 65118,	
+						},
 					}),
 					n(78621, { 		-- Cyclonic Fury
+						["questID"] = 34477,
 						["groups"] = {	
 							dr(100, i(112086)), -- Windburnt Pauldrons
-						},	
-						["questID"] = 34477,	
+						},
+					}),
+					n(84376, {		-- Earthshaker Holar
+						["questID"] = 37403,
+						["groups"] = {
+							i(119374),	-- Gold Ogron Earring
+						},
 					}),
 					o(239828, { 	-- Edge of Reality
 						["groups"] = {
@@ -412,213 +436,244 @@ _.Zones =
 						},
 						["icon"] = "Interface\\Icons\\Spell_Warlock_DemonicPortal_Purple",
 						["description"] = "Click on Edge of Reality, get teleported, click on egg for mount.|nIf you are on a realm not of your own when you click on Edge of Reality the mount will be mailed to you as you will not be teleported. |r",
-					}),					
+					}),
 					n(74971, { 		-- Firefury Giant
+						["questID"] = 33504,
 						["groups"] = {
 							dr(100, i(107661)), -- Smoldering Lavacore Orb
-						},	
-						["questID"] = 33504,							
+						},
 					}),
 					o(229640, { 	-- Frozen Frostwolf Axe
+						["questID"] = 34507,
+						["icon"] = "Interface\\Icons\\inv_axe_1h_draenorquest95_b_01",
 						["groups"] = {
 							dr(100, i(110689)), -- Icebound Frost-Singer Axe
-						},	
-						["questID"] = 34507,
-						["icon"] = "Interface\\Icons\\inv_axe_1h_draenorquest95_b_01",	
+						},
+					}),
+					n(71665, {		-- Giant-Slayer Kul
+						["questID"] = 32918,
+						["groups"] = {	
+							i(111530),	-- Giantstalker's Guile
+						},
 					}),
 					n(87352, {		-- Gibblette the Cowardly
+						["questID"] = 37380,
 						["groups"] = {	
 							dr(30, i(119349)), 	-- Craven Coward's Cloak
 							dr(14, i(119180)), 	-- Goren "Log" Roller Toy
-						},	
-						["questID"] = 37380,	
+						},
 					}),
 					o(230425, { 	-- Gnawed Bone
+						["questID"] = 34648,
+						["icon"] = "Interface\\Icons\\inv_misc_monsterfang_01",
 						["groups"] = {	
 							dr(100, i(111415)),	-- Gnawbone Knife
 						},
-						["questID"] = 34648,
-						["icon"] = "Interface\\Icons\\inv_misc_monsterfang_01",	
 					}),
 					n(72364, { 		-- Gorg'ak the Lava Guzzler
+						["questID"] = 37562,
 						["groups"] = {
 							dr(37, i(111545)),	-- Smoldering Fist of Gorg'ak
 						},
-						["questID"] = 37562,
 					}),
-					n(82536, { 		-- Gorivax
+					n(82536, { 		-- Gorivax <Spawn of the Soulgrinder>
+						["questID"] = 37388,
 						["groups"] = {	
 							dr(46, i(119358)),	-- Voidmesh Cloth Wristwraps
-						},	
-						["questID"] = 37388,	
+						},
 					}), 				
 					n(50992, { 		-- Gorok
 						dr(100, i(116674)), 	-- Great Greytusk Mount
 					}),
 					n(80312, { 		-- Grutush the Pillager
+						["questID"] = 34865,
 						["groups"] = {	
 							dr(100, i(112077)),	-- Grutush's Fur-Padded Pantaloons 
 						},
-						["questID"] = 34865,						
+					}),
+					n(80190, {		-- Gruuk
+						["questID"] = 34825,
+						["groups"] = {
+							i(111948),	-- Gruuk's Evil Eye
+						},
 					}),
 					n(80235, { 		-- Gurun
+						["questID"] = 34839,
 						["groups"] = {	
 							dr(100, i(111955)), -- Skog's Drape
 						},
-						["questID"] = 34839,						
+					}),
+					n(87348, { 		-- Hoarfrost <Tempest of Ice>
+						["questID"] = 37382,
+						["groups"] = {
+							i(119415),	-- Frosted Icequartz Ring
+						},
+					}),
+					n(78151, { 		-- Huntmaster Kuang (Giantstalker Hunting Party)
+						["questID"] = 34130,
+						["crs"] = {
+							78150,	-- Beastcarver Saramor
+							78169,	-- Cloudspeaker Daber
+							78144,	-- Giantslayer Kimla
+							78128,	-- Gronnstalker Dawarn
+							78134,	-- Pathfinder Jalog
+						},
 					}),
 					n(82616, { 		-- Jabberjaw
+						["questID"] = 37386,
 						["groups"] = {	
 							dr(39, i(119390)),	-- Rockworm Carapace Shield 
-						},	
-						["questID"] = 37386,	
+						},
+					}),
+					n(87600, { 		-- Jaluk the Pacifist
+						["questID"] = 37556,
 					}),
 					n(79678, { 		-- Jehil the Climber
+						["questID"] = 34708,
 						["groups"] = {	
 							dr(100, i(112078)),	-- Jehil's Climbin' Boots
-						},	
-						["questID"] = 34708,	
+						},
 					}),
 					n(84374, { 		-- Kaga the Ironbender
+						["questID"] = 37404,
 						["groups"] = {	
 							dr(39, i(119372)),	-- Ironstudded Scale Girdle 
-						},	
-						["questID"] = 37404,	
-					}),
-					o(226967, { 	-- Lagoon Pool	
-						["groups"] = {	
-							dr(100, i(108738, { -- Giant Draenor Clam
-								dr(100, i(108739)), -- Pretty Draenor Pearl Toy
-							})),
 						},
+					}),
+					o(226967, { 	-- Lagoon Pool
 						["questID"] = 33926,
 						["description"] = "|cff66ccffRequires Fishing|r",
 						["model"] = "World\\Dungeon\\WellofEternity\\WOE_Fountain_Pool.mdx",
 						["modelScale"] = 10,
-						["icon"] = "Interface\\Icons\\inv_misc_abyssalclam",	
+						["icon"] = "Interface\\Icons\\inv_misc_abyssalclam",
+						["groups"] = {	
+							dr(100, i(108738, {	-- Giant Draenor Clam
+								i(108739), -- Pretty Draenor Pearl Toy
+							})),
+						},
 					}),
 					n(82614, { 		-- Moltnoma
+						["questID"] = 37387,
 						["groups"] = {	
 							dr(42, i(119356)),	-- Moltnoma's Magma Mantle 
-						},	
-						["questID"] = 37387,	
+						},
 					}), 
-					n(81001, { 		-- Nok-Karosh
+					n(87351, { 		-- Mother of Goren
+						["questID"] = 37381,
+						["groups"] = {	
+							dr(31, i(119376)),	-- Three-Egg Pendant Necklace 
+						},
+					}),
+					n(81001, { 		-- Nok-Karosh <Warrior's Death>
 						dr(100, i(116794)), 	-- Garn Nighthowl Mount boe
 					}),
 					n(87622, { 		-- Ogom the Mangler
+						["questID"] = 37402,
 						["groups"] = {	
 							dr(42, i(119366)),	-- Ogom's Manacles 
-						},	
-						["questID"] = 37402,	
+						},
+					}),
+					n(78606, { 		-- Pale Fishmonger
+						["questID"] = 34470,
 					}),
 					n(76918, { 		-- Primalist Mur'og
+						["questID"] = 33938,
 						["groups"] = {	
 							dr(100, i(111576)), 	-- Ritual Leggings of Mur'og
 						},
-						["questID"] = 33938,						
 					}),
 					n(84392, { 		-- Ragore Driftstalker	
+						["questID"] = 37401,
 						["groups"] = {
 							dr(40, i(119359)),	-- Tunic of the Driftstalker 
-						},	
-						["questID"] = 37401,	
+						},
 					}),
-					n(77526, { 		-- Scout Goreseeker	 
+					n(77526, { 		-- Scout Goreseeker
+						["questID"] = 34132,
 						["groups"] = {
 							dr(100, i(112094)), 	-- Goreseeker's Goresplattered Garb
-						},	
-						["questID"] = 34132,	
+						},
 					}),
 					n(82617, { 		-- Slogtusk the Corpse-Eater
+						["questID"] = 37385,
 						["groups"] = {
 							dr(44, i(119362)),	-- Frostboar Leather Helmet 
-						},	
-						["questID"] = 37385,	
+						},
 					}),
-					n(82620, { 		-- Son of Goramal	
+					n(82620, { 		-- Son of Goramal
+						["questID"] = 37383,
 						["groups"] = {
 							dr(34, i(119399)),	-- Cudgel of the Son of Goramal 
-						},	
-						["questID"] = 37383,	
+						},
 					}),
-					n(77527, { 		-- The Beater
+					n(77527, { 		-- The Beater <Champion of the Circle of Blood>
+						["questID"] = 34133,
 						["groups"] = {
 							dr(100, i(111475)), 	-- Beater's Beat Stick
-						},	
-						["questID"] = 34133,	
+						},
 					}),
 					n(78265, { 		-- The Bone Crawler
+						["questID"] = 34361,
 						["groups"] = {	
 							dr(35, i(111534)),	-- The Bone Crawler's Carapace 
 						},
-						["questID"] = 34361,						
 					}),
 					o(220641, { 	-- Thunderlord Cache
+						["questID"] = 32803,
+						["modelID"] = 65118,
 						["groups"] = {
 							dr(100, i(107658)), -- Thunderlord Longspear
 						},
-						["questID"] = 32803,
-						["modelID"] = 65118,
-					}),	
-					n(82618, { 		-- Tor'goroth
+					}),
+					n(82618, { 		-- Tor'goroth <The Soul-Gorger>
+						["questID"] = 37384,
 						["groups"] = {	
 							dr(36, i(119379)),	-- Tor'goroth's Soul Prism
 							dr(13, i(119163)),	-- Soul Inhaler Toy
-						},	
-						["questID"] = 37384,	
+						},
 					}),
 					n(79104, { 		-- Ug'lok the Frozen 
-						["groups"] = {	
-							i(119409), -- Icebound Bloodmaul Spire
-						},	
 						["questID"] = 34522,
 						["description"] = "There are reports that this drops from this rare. This rare is only lootable once, but it appears this may either not drop anymore, or you may only have the one chance per toon to loot it. Please let us know if you get this item to drop.",
+						["groups"] = {	
+							un(1, i(119409)), -- Icebound Bloodmaul Spire
+						},
+					}),
+					n(87357, {		-- Valkor <Might of the Mountain>
+						["questID"] = 37378,
+						["groups"] = {	
+							dr(41, i(119416)), -- Magnaron Heart
+						},
+					}),
+					n(87356, {		-- Vrok the Ancient
+						["questID"] = 37379,
+						["groups"] = {	
+							dr(33, i(119416)), -- Magnaron Heart
+						},
 					}),
 					o(224623, { 	-- Wiggling Egg
+						["questID"] = 33505,
+						["icon"] = "Interface\\Icons\\INV_Egg_06",
 						["groups"] = {	
-							dr(100, i(112107, { -- Mysterious Egg
+							dr(100, i(112107, {	-- Mysterious Egg
+								["description"] = "This egg will hatch after 3 days to give you the Fruit Hunter pet.",
 								["groups"] = {	
 									dr(100, i(117564)), -- Fruit Hunter Pet
 								},
-								["description"] = "This egg will hatch after 3 days to give you the Fruit Hunter pet.",
 							})),
 						},
-						["questID"] = 33505,
-						["icon"] = "Interface\\Icons\\INV_Egg_06",	
 					}),
 					n(79145, { 		-- Yaga the Scarred
+						["questID"] = 34559,
 						["groups"] = {	
 							dr(100, i(111477)),	-- Yaga's Trophy Belt
-						},	
-						["questID"] = 34559,	
+						},
 					}),
---[[					
-	--				n(78150, { 		-- Beastcarver Saramor	}),
-	--				n(74613, { 		-- Broodmother Reeg'ak 	}),
-	--				n(71721, { 		-- Canyon Icemother		}),
-	--				n(78169, { 		-- Cloudspeaker Daber		}),
-	--				n(77513, { 		-- Coldstomp the Griever 	}), 
-	--				n(84376, { 		-- Earthshaker Holar 	}), 
-	--				n(77519, { 		-- Giantbane	}),
-	--				n(78144, { 		-- Giantslayer Kimla	}), 
-	--				n(71665, { 		-- Giant-Slayer Kul 	}), 
-	--				n(78128, { 		-- Gronnstalker Dawarn	}), 
-	--				n(80190, { 		-- Gruuk 	}),
-	--				n(87348, { 		-- Hoarfrost 	}), 
-	--				n(78151, { 		-- Huntmaster Kuang 	}),
-	--				n(87600, { 		-- Jaluk the Pacifist 	}),
-	--				n(87351, { 		-- Mother of Goren 	}),
-	--				n(78606, { 		-- Pale Fishmonger 	}), 
-	--				n(78134, { 		-- Pathfinder Jalog		}), 
-	--				n(87357, { 		-- Valkor 	}), 
-	--				n(87356, { 		-- Vrok the Ancient 	}), 
---]]
 				}),
 			},
-			["lvl"] = 90,	
+			["lvl"] = 90,
 			["achievementID"] = 8937,
-			["description"] = "|cff66ccffFrostfire Ridge is a zone in north-western Draenor. It is home to the Frostwolf clan and the Thunderlord clan. The ogre stronghold-turned Horde capital, Bladespire Citadel is located here. When Draenor shattered and became Outland, Frostfire Ridge and Gorgrond were pressed together to become the Blade's Edge Mountains. Several recognizable landmarks in Blade's Edge Mountains can be found in Frostfire, such as the Circle of Blood and the rock spires jutting from the earth.|r",				
-		}),	
+			["description"] = "|cff66ccffFrostfire Ridge is a zone in north-western Draenor. It is home to the Frostwolf clan and the Thunderlord clan. The ogre stronghold-turned Horde capital, Bladespire Citadel is located here. When Draenor shattered and became Outland, Frostfire Ridge and Gorgrond were pressed together to become the Blade's Edge Mountains. Several recognizable landmarks in Blade's Edge Mountains can be found in Frostfire, such as the Circle of Blood and the rock spires jutting from the earth.|r",
+		}),
 	}),
 };
