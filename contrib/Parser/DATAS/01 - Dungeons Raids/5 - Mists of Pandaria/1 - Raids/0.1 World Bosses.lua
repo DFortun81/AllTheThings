@@ -32,910 +32,257 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							["isRaid"] = true,
 						},
 					}),
-					
-					
-					
-					
-					
-					
-					
-					i(103343),
-					i(102642),
-					i(102756),
-					i(103362),
-					i(102705),
-					i(102772),
-					i(102669),
-					i(102770),
-					i(103361),
-					i(103513),
-					i(103512),
-					i(102769),
-					i(103344),
-					i(103360),
-					i(102702),
-					i(103484),
-					i(103359),
-					i(103483),
-					i(102665),
-					i(103358),
-					i(103357),
-					i(102666),
-					i(103460),
-					i(103448),
-					i(103415),
-					i(103388),
-					i(102711),
-					i(103428),
-					i(103459),
-					i(102624),
-					i(102691),
-					i(102754),
-					i(103474),
-					i(102753),
-					i(103414),
-					i(102687),
-					i(102723),
-					i(103449),
-					i(102771),
-					i(103397),
-					i(102695),
-					i(102765),
-					i(102688),
-					i(102733),
-					i(102692),
-					i(102650),
-					i(99168),
-					i(99181),
-					i(99147),
-					i(102696),
-					i(99193),
-					i(103526),
-					i(103497),
-					i(103451),
-					i(103429),
-					i(103476),
-					i(102707),
-					i(103421),
-					i(102725),
-					i(102630),
-					i(102675),
-					i(103389),
-					i(103440),
-					i(99134),
-					i(103434),
-					i(102615),
-					i(99160),
-					i(102774),
-					i(99202),
-					i(103520),
-					i(103462),
-					i(99189),
-					i(99155),
-					i(102627),
-					i(99102),
-					i(99185),
-					i(99092),
-					i(103491),
-					i(99141),
-					i(99127),
-					i(102722),
-					i(103398),
-					i(99174),
-					i(99137),
-					i(99131),
-					i(102618),
-					i(103417),
-					i(102742),
-					i(102739),
-					i(103467),
-					i(102737),
-					i(103377),
-					i(99096),
-					i(99121),
-					i(99113),
-					i(102657),
-					i(99108),
-					i(103381),
-					i(99198),
-					i(99163),
-					i(102735),
-					i(103486),
-					i(102663),
-					i(103352),
-					i(103351),
-					i(102647),
-					i(103480),
-					i(103395),
-					i(102709),
-					i(102708),
-					i(103495),
-					i(103410),
-					i(102775),
-					i(102617),
-					i(102645),
-					i(103411),
-					i(102662),
-					i(102724),
-					i(102684),
-					i(103444),
-					i(103386),
-					i(102694),
-					i(102748),
-					i(103445),
-					i(102668),
-					i(102640),
-					i(103456),
-					i(102677),
-					i(103472),
-					i(103353),
-					i(103426),
-					i(102764),
-					i(103455),
-					i(102762),
-					i(99158),
-					i(103400),
-					i(102781),
-					i(99145),
-					i(102654),
-					i(102761),
-					i(99129),
-					i(99186),
-					i(99118),
-					i(99165),
-					i(102732),
-					i(103499),
-					i(102648),
-					i(99199),
-					i(103528),
-					i(102730),
-					i(102780),
-					i(99139),
-					i(102778),
-					i(99143),
-					i(103431),
-					i(103478),
-					i(99149),
-					i(102656),
-					i(99115),
-					i(103391),
-					i(102755),
-					i(103493),
-					i(103522),
-					i(99162),
-					i(99104),
-					i(102670),
-					i(99094),
-					i(103379),
-					i(103436),
-					i(99183),
-					i(99171),
-					i(103383),
-					i(103453),
-					i(103442),
-					i(99176),
-					i(99195),
-					i(99191),
-					i(102651),
-					i(102621),
-					i(103423),
-					i(99124),
-					i(99123),
-					i(99099),
-					i(102768),
-					i(103469),
-					i(102767),
-					i(103419),
-					i(99098),
-					i(103464),
-					i(102704),
-					i(103488),
-					i(102719),
-					i(103458),
-					i(102716),
-					i(103396),
-					i(103482),
-					i(103481),
-					i(102760),
-					i(103447),
-					i(103427),
-					i(103412),
-					i(102729),
-					i(102638),
-					i(102686),
-					i(103356),
-					i(102660),
-					i(102698),
-					i(102752),
-					i(102646),
-					i(103446),
-					i(103473),
-					i(103355),
-					i(103457),
-					i(102631),
-					i(102745),
-					i(103354),
-					i(102639),
-					i(102620),
-					i(103387),
-					i(103413),
-					i(102623),
-					i(102664),
-					i(102770),
-					i(102769),
-					i(103362),
-					i(103361),
-					i(103360),
-					i(102756),
-					i(103344),
-					i(103343),
-					i(102772),
-					i(103513),
-					i(103512),
-					i(102642),
-					i(102765),
-					i(102733),
-					i(103397),
-					i(103359),
-					i(103358),
-					i(103357),
-					i(102624),
-					i(102723),
-					i(102754),
-					i(103388),
-					i(102753),
-					i(102702),
-					i(103415),
-					i(103414),
-					i(103460),
-					i(103459),
-					i(102771),
-					i(102735),
-					i(103497),
-					i(103398),
-					i(102630),
-					i(102627),
-					i(103526),
-					i(103421),
-					i(102725),
-					i(103389),
-					i(102650),
-					i(103417),
-					i(103520),
-					i(102618),
-					i(102742),
-					i(102615),
-					i(103381),
-					i(103377),
-					i(99193),
-					i(102774),
-					i(99189),
-					i(102739),
-					i(102737),
-					i(102640),
-					i(102764),
-					i(103495),
-					i(103395),
-					i(103455),
-					i(103456),
-					i(102724),
-					i(103353),
-					i(103352),
-					i(103351),
-					i(103386),
-					i(102647),
-					i(102617),
-					i(102645),
-					i(102748),
-					i(102775),
-					i(103411),
-					i(103410),
-					i(102768),
-					i(102767),
-					i(102732),
-					i(102762),
-					i(103499),
-					i(102730),
-					i(103400),
-					i(102761),
-					i(103528),
-					i(103493),
-					i(103423),
-					i(102654),
-					i(102651),
-					i(103391),
-					i(102755),
-					i(102621),
-					i(103419),
-					i(103522),
-					i(102648),
-					i(103383),
-					i(102781),
-					i(102780),
-					i(103379),
-					i(102778),
-					i(99186),
-					i(99191),
-					i(102639),
-					i(103458),
-					i(103457),
-					i(102638),
-					i(102631),
-					i(102729),
-					i(103356),
-					i(103396),
-					i(103355),
-					i(102760),
-					i(103354),
-					i(102623),
-					i(102620),
-					i(103387),
-					i(102752),
-					i(102698),
-					i(102646),
-					i(103413),
-					i(103412),
-					i(102745),
-					i(102669),
-					i(102705),
-					i(102695),
-					i(102691),
-					i(102688),
-					i(102687),
-					i(103449),
-					i(103448),
-					i(103484),
-					i(103483),
-					i(102711),
-					i(102666),
-					i(102665),
-					i(103428),
-					i(103474),
-					i(99198),
-					i(103467),
-					i(102696),
-					i(103462),
-					i(99185),
-					i(99121),
-					i(102692),
-					i(99181),
-					i(99174),
-					i(103491),
-					i(102722),
-					i(103451),
-					i(99168),
-					i(99163),
-					i(99113),
-					i(103486),
-					i(99160),
-					i(99155),
-					i(102675),
-					i(99147),
-					i(103440),
-					i(99108),
-					i(99102),
-					i(103434),
-					i(102663),
-					i(103429),
-					i(103476),
-					i(99141),
-					i(102707),
-					i(99137),
-					i(99096),
-					i(99134),
-					i(99131),
-					i(99092),
-					i(99127),
-					i(102657),
-					i(99202),
-					i(102694),
-					i(102684),
-					i(103445),
-					i(102677),
-					i(103444),
-					i(103480),
-					i(102668),
-					i(102709),
-					i(102708),
-					i(102662),
-					i(103426),
-					i(103472),
-					i(102704),
-					i(103469),
-					i(99195),
-					i(103464),
-					i(99124),
-					i(99123),
-					i(99183),
-					i(99118),
-					i(99176),
-					i(103453),
-					i(99171),
-					i(99115),
-					i(99165),
-					i(103488),
-					i(102719),
-					i(99162),
-					i(99158),
-					i(99149),
-					i(103442),
-					i(102670),
-					i(103478),
-					i(103436),
-					i(99145),
-					i(99143),
-					i(99104),
-					i(99099),
-					i(99098),
-					i(103431),
-					i(99139),
-					i(99094),
-					i(99129),
-					i(102656),
-					i(99199),
-					i(102686),
-					i(103447),
-					i(103446),
-					i(102716),
-					i(103482),
-					i(103481),
-					i(102664),
-					i(102660),
-					i(103473),
-					i(103427),
-					i(102642),
-					i(102769),
-					i(103512),
-					i(102770),
-					i(103513),
-					i(103397),
-					i(103415),
-					i(102624),
-					i(103414),
-					i(103388),
-					i(102771),
-					i(103460),
-					i(103459),
-					i(102702),
-					i(102630),
-					i(102627),
-					i(103389),
-					i(102618),
-					i(103377),
-					i(103421),
-					i(102650),
-					i(99193),
-					i(99189),
-					i(103417),
-					i(103398),
-					i(102647),
-					i(103395),
-					i(102645),
-					i(103386),
-					i(103411),
-					i(103410),
-					i(102617),
-					i(102640),
-					i(103455),
-					i(102724),
-					i(103456),
-					i(103391),
-					i(102621),
-					i(103379),
-					i(103423),
-					i(102654),
-					i(102651),
-					i(103419),
-					i(103400),
-					i(99186),
-					i(99191),
-					i(102648),
-					i(103396),
-					i(102623),
-					i(103413),
-					i(102646),
-					i(102620),
-					i(103387),
-					i(103412),
-					i(102745),
-					i(103458),
-					i(102698),
-					i(103457),
-					i(102639),
-					i(102638),
-					i(102631),
-					i(103344),
-					i(103343),
-					i(102772),
-					i(102669),
-					i(102756),
-					i(103362),
-					i(103361),
-					i(102705),
-					i(103360),
-					i(103358),
-					i(103357),
-					i(102695),
-					i(102691),
-					i(102688),
-					i(102723),
-					i(102687),
-					i(103449),
-					i(103448),
-					i(103484),
-					i(102765),
-					i(103483),
-					i(102711),
-					i(102666),
-					i(102665),
-					i(102754),
-					i(102753),
-					i(103428),
-					i(103474),
-					i(102733),
-					i(103359),
-					i(99198),
-					i(103467),
-					i(102696),
-					i(103497),
-					i(99185),
-					i(103462),
-					i(99121),
-					i(102725),
-					i(102692),
-					i(99181),
-					i(103491),
-					i(99174),
-					i(102722),
-					i(99168),
-					i(102774),
-					i(103451),
-					i(102615),
-					i(99163),
-					i(103486),
-					i(103381),
-					i(99160),
-					i(102675),
-					i(103440),
-					i(103526),
-					i(99155),
-					i(99113),
-					i(99108),
-					i(103434),
-					i(102663),
-					i(99147),
-					i(103429),
-					i(99102),
-					i(103520),
-					i(103476),
-					i(99096),
-					i(102707),
-					i(99141),
-					i(99137),
-					i(99134),
-					i(99131),
-					i(99092),
-					i(102657),
-					i(99127),
-					i(102742),
-					i(102739),
-					i(102737),
-					i(102735),
-					i(99202),
-					i(103353),
-					i(103352),
-					i(103351),
-					i(103495),
-					i(102694),
-					i(102775),
-					i(102684),
-					i(103445),
-					i(102764),
-					i(102677),
-					i(103444),
-					i(103480),
-					i(102668),
-					i(102709),
-					i(102662),
-					i(102708),
-					i(102748),
-					i(103426),
-					i(103472),
-					i(102704),
-					i(103499),
-					i(99124),
-					i(103469),
-					i(99195),
-					i(103464),
-					i(102730),
-					i(103493),
-					i(99123),
-					i(99183),
-					i(102781),
-					i(99176),
-					i(102780),
-					i(99171),
-					i(99118),
-					i(102778),
-					i(103488),
-					i(103453),
-					i(99165),
-					i(99115),
-					i(103383),
-					i(102719),
-					i(102768),
-					i(102767),
-					i(99162),
-					i(102762),
-					i(102761),
-					i(103442),
-					i(103528),
-					i(99158),
-					i(102670),
-					i(99149),
-					i(103436),
-					i(102755),
-					i(103522),
-					i(103478),
-					i(103431),
-					i(99104),
-					i(99145),
-					i(99099),
-					i(99098),
-					i(99094),
-					i(99143),
-					i(99139),
-					i(99129),
-					i(102656),
-					i(102732),
-					i(99199),
-					i(103356),
-					i(103355),
-					i(103354),
-					i(102729),
-					i(102686),
-					i(103447),
-					i(103446),
-					i(102716),
-					i(103482),
-					i(103481),
-					i(102760),
-					i(102664),
-					i(102752),
-					i(102660),
-					i(103427),
-					i(103473),
-					i(102756),
-					i(103513),
-					i(103512),
-					i(102642),
-					i(103344),
-					i(103343),
-					i(102772),
-					i(102770),
-					i(102769),
-					i(102705),
-					i(103362),
-					i(103361),
-					i(103360),
-					i(103357),
-					i(102702),
-					i(102754),
-					i(102753),
-					i(102695),
-					i(103415),
-					i(103414),
-					i(102733),
-					i(103460),
-					i(102691),
-					i(103459),
-					i(102723),
-					i(103397),
-					i(102688),
-					i(103484),
-					i(103483),
-					i(102624),
-					i(102687),
-					i(103388),
-					i(102711),
-					i(103449),
-					i(102771),
-					i(103448),
-					i(103474),
-					i(102765),
-					i(103359),
-					i(103358),
-					i(103526),
-					i(103421),
-					i(103520),
-					i(103467),
-					i(102650),
-					i(103417),
-					i(102696),
-					i(102742),
-					i(102739),
-					i(102737),
-					i(103462),
-					i(102735),
-					i(102692),
-					i(102675),
-					i(103497),
-					i(103398),
-					i(102725),
-					i(102630),
-					i(103491),
-					i(102722),
-					i(103486),
-					i(102627),
-					i(99193),
-					i(102774),
-					i(103389),
-					i(99189),
-					i(103451),
-					i(102618),
-					i(103476),
-					i(102707),
-					i(102615),
-					i(103381),
-					i(103377),
-					i(103445),
-					i(102748),
-					i(102677),
-					i(103353),
-					i(103444),
-					i(102647),
-					i(103352),
-					i(102694),
-					i(103351),
-					i(102645),
-					i(103411),
-					i(103410),
-					i(102640),
-					i(103495),
-					i(102724),
-					i(103456),
-					i(103395),
-					i(103455),
-					i(102775),
-					i(103480),
-					i(102684),
-					i(103386),
-					i(102709),
-					i(102708),
-					i(102617),
-					i(102764),
-					i(103472),
-					i(103423),
-					i(102654),
-					i(102755),
-					i(103522),
-					i(103469),
-					i(102651),
-					i(103419),
-					i(103464),
-					i(102648),
-					i(102732),
-					i(103499),
-					i(102730),
-					i(103442),
-					i(103400),
-					i(103493),
-					i(102781),
-					i(103488),
-					i(102780),
-					i(102719),
-					i(103391),
-					i(102778),
-					i(102621),
-					i(103453),
-					i(103478),
-					i(103383),
-					i(102768),
-					i(102767),
-					i(103379),
-					i(102762),
-					i(99186),
-					i(99191),
-					i(102761),
-					i(103528),
-					i(102704),
-					i(102760),
-					i(103446),
-					i(103356),
-					i(102752),
-					i(103355),
-					i(102745),
-					i(102698),
-					i(103354),
-					i(102646),
-					i(103413),
-					i(103412),
-					i(102639),
-					i(102638),
-					i(102729),
-					i(102631),
-					i(103458),
-					i(103457),
-					i(103396),
-					i(102716),
-					i(102623),
-					i(103482),
-					i(103481),
-					i(102686),
-					i(102620),
-					i(103387),
-					i(103447),
-					i(103473),
-					i(102669),
-					i(102666),
-					i(102665),
-					i(103428),
-					i(99198),
-					i(99121),
-					i(99185),
-					i(99181),
-					i(99174),
-					i(99168),
-					i(99113),
-					i(99108),
-					i(99163),
-					i(99160),
-					i(99102),
-					i(99155),
-					i(103440),
-					i(99147),
-					i(99141),
-					i(103434),
-					i(102663),
-					i(103429),
-					i(99096),
-					i(102657),
-					i(99137),
-					i(99134),
-					i(99131),
-					i(99202),
-					i(99127),
-					i(99092),
-					i(102668),
-					i(102662),
-					i(103426),
-					i(99195),
-					i(99124),
-					i(99123),
-					i(99183),
-					i(99118),
-					i(99176),
-					i(99171),
-					i(99115),
-					i(99165),
-					i(99162),
-					i(99104),
-					i(99158),
-					i(99099),
-					i(102670),
-					i(99149),
-					i(99145),
-					i(99143),
-					i(103436),
-					i(103431),
-					i(99098),
-					i(99139),
-					i(102656),
-					i(99094),
-					i(99129),
-					i(99199),
-					i(102664),
-					i(102660),
-					i(103427),
+					i(103515),	-- Prideful Gladiator's Choker of Accuracy
+					i(102641),	-- Prideful Gladiator's Choker of Accuracy
+					i(102749),	-- Prideful Gladiator's Choker of Proficiency
+					i(103514),	-- Prideful Gladiator's Choker of Proficiency
+					i(103345),	-- Prideful Gladiator's Necklace of Proficiency
+					i(102678),	-- Prideful Gladiator's Necklace of Proficiency
+					i(103346),	-- Prideful Gladiator's Necklace of Prowess
+					i(102679),	-- Prideful Gladiator's Necklace of Prowess
+					i(102757),	-- Prideful Gladiator's Pendant of Alacrity
+					i(103368),	-- Prideful Gladiator's Pendant of Alacrity
+					i(102773),	-- Prideful Gladiator's Pendant of Cruelty
+					i(103367),	-- Prideful Gladiator's Pendant of Cruelty
+					i(102736),	-- Prideful Gladiator's Pendant of Meditation
+					i(103369),	-- Prideful Gladiator's Pendant of Meditation
+					i(103343),	-- Prideful Gladiator's Cape of Cruelty
+					i(102705),	-- Prideful Gladiator's Cape of Cruelty
+					i(103344),	-- Prideful Gladiator's Cape of Prowess
+					i(102642),	-- Prideful Gladiator's Cape of Prowess
+					i(103512),	-- Prideful Gladiator's Cloak of Alacrity
+					i(102769),	-- Prideful Gladiator's Cloak of Alacrity
+					i(103513),	-- Prideful Gladiator's Cloak of Prowess
+					i(102770),	-- Prideful Gladiator's Cloak of Prowess
+					i(103360),	-- Prideful Gladiator's Drape of Cruelty
+					i(102669),	-- Prideful Gladiator's Drape of Cruelty
+					i(103362),	-- Prideful Gladiator's Drape of Meditation
+					i(102756),	-- Prideful Gladiator's Drape of Meditation
+					i(102772),	-- Prideful Gladiator's Drape of Prowess
+					i(103361),	-- Prideful Gladiator's Drape of Prowess
+					i(102624),	-- Prideful Gladiator's Armbands of Meditation
+					i(103484),	-- Prideful Gladiator's Armbands of Meditation
+					i(103483),	-- Prideful Gladiator's Armbands of Prowess
+					i(102665),	-- Prideful Gladiator's Armbands of Prowess
+					i(102771),	-- Prideful Gladiator's Armplates of Alacrity
+					i(103460),	-- Prideful Gladiator's Armplates of Alacrity
+					i(103459),	-- Prideful Gladiator's Armplates of Proficiency
+					i(102702),	-- Prideful Gladiator's Armplates of Proficiency
+					i(102711),	-- Prideful Gladiator's Armwraps of Accuracy
+					i(103428),	-- Prideful Gladiator's Armwraps of Accuracy
+					i(102754),	-- Prideful Gladiator's Armwraps of Alacrity
+					i(103474),	-- Prideful Gladiator's Armwraps of Alacrity
+					i(103388),	-- Prideful Gladiator's Bindings of Meditation
+					i(102691),	-- Prideful Gladiator's Bindings of Meditation
+					i(103397),	-- Prideful Gladiator's Bindings of Prowess
+					i(102723),	-- Prideful Gladiator's Bindings of Prowess
+					i(103449),	-- Prideful Gladiator's Bracers of Meditation
+					i(102765),	-- Prideful Gladiator's Bracers of Meditation
+					i(102695),	-- Prideful Gladiator's Bracers of Prowess
+					i(103448),	-- Prideful Gladiator's Bracers of Prowess
+					i(102687),	-- Prideful Gladiator's Cuffs of Accuracy
+					i(103357),	-- Prideful Gladiator's Cuffs of Accuracy
+					i(103359),	-- Prideful Gladiator's Cuffs of Meditation
+					i(102666),	-- Prideful Gladiator's Cuffs of Meditation
+					i(102733),	-- Prideful Gladiator's Cuffs of Prowess
+					i(103358),	-- Prideful Gladiator's Cuffs of Prowess
+					i(103415),	-- Prideful Gladiator's Wristguards of Accuracy
+					i(102753),	-- Prideful Gladiator's Wristguards of Accuracy
+					i(102688),	-- Prideful Gladiator's Wristguards of Alacrity
+					i(103414),	-- Prideful Gladiator's Wristguards of Alacrity
+					i(99160),	-- Chronomancer Gloves
+					i(99193),	-- Gauntlets of Cyclopean Dread
+					i(99141),	-- Gauntlets of Seven Sacred Seals
+					i(99198),	-- Gauntlets of the Prehistoric Marauder
+					i(99137),	-- Gauntlets of Winged Triumph
+					i(99092),	-- Gloves of Celestial Harmony
+					i(99113),	-- Gloves of the Barbed Assassin
+					i(99096),	-- Gloves of the Horned Nightmare
+					i(99174),	-- Gloves of the Shattered Vale
+					i(99121),	-- Gloves of the Ternion Glory
+					i(99168),	-- Gloves of the Unblinking Vigil
+					i(99134),	-- Gloves of Winged Triumph
+					i(99102),	-- Grips of Celestial Harmony
+					i(99155),	-- Grips of Seven Sacred Seals
+					i(99181),	-- Grips of the Shattered Vale
+					i(99189),	-- Handguards of Cyclopean Dread
+					i(99202),	-- Handguards of the Prehistoric Marauder
+					i(99163),	-- Handguards of the Shattered Vale
+					i(99127),	-- Handguards of Winged Triumph
+					i(99108),	-- Handwraps of Celestial Harmony
+					i(99147),	-- Handwraps of Seven Sacred Seals
+					i(99185),	-- Handwraps of the Shattered Vale
+					i(99131),	-- Handwraps of the Ternion Glory
+					i(103417),	-- Prideful Gladiator's Chain Gauntlets
+					i(102737),	-- Prideful Gladiator's Chain Gauntlets
+					i(102627),	-- Prideful Gladiator's Copperskin Gloves
+					i(103434),	-- Prideful Gladiator's Copperskin Gloves
+					i(102739),	-- Prideful Gladiator's Dragonhide Gloves
+					i(103381),	-- Prideful Gladiator's Dragonhide Gloves
+					i(103377),	-- Prideful Gladiator's Dreadplate Gauntlets
+					i(102650),	-- Prideful Gladiator's Dreadplate Gauntlets
+					i(102725),	-- Prideful Gladiator's Felweave Handguards
+					i(103520),	-- Prideful Gladiator's Felweave Handguards
+					i(103429),	-- Prideful Gladiator's Ironskin Gloves
+					i(102675),	-- Prideful Gladiator's Ironskin Gloves
+					i(103389),	-- Prideful Gladiator's Kodohide Gloves
+					i(102657),	-- Prideful Gladiator's Kodohide Gloves
+					i(102663),	-- Prideful Gladiator's Leather Gloves
+					i(103476),	-- Prideful Gladiator's Leather Gloves
+					i(103491),	-- Prideful Gladiator's Linked Gauntlets
+					i(102742),	-- Prideful Gladiator's Linked Gauntlets
+					i(102692),	-- Prideful Gladiator's Mail Gauntlets
+					i(103497),	-- Prideful Gladiator's Mail Gauntlets
+					i(102615),	-- Prideful Gladiator's Mooncloth Gloves
+					i(103462),	-- Prideful Gladiator's Mooncloth Gloves
+					i(102722),	-- Prideful Gladiator's Ornamented Gloves
+					i(103451),	-- Prideful Gladiator's Ornamented Gloves
+					i(102618),	-- Prideful Gladiator's Plate Gauntlets
+					i(103526),	-- Prideful Gladiator's Plate Gauntlets
+					i(103486),	-- Prideful Gladiator's Ringmail Gauntlets
+					i(102774),	-- Prideful Gladiator's Ringmail Gauntlets
+					i(102707),	-- Prideful Gladiator's Satin Gloves
+					i(103467),	-- Prideful Gladiator's Satin Gloves
+					i(102630),	-- Prideful Gladiator's Scaled Gauntlets
+					i(103440),	-- Prideful Gladiator's Scaled Gauntlets
+					i(102735),	-- Prideful Gladiator's Silk Handguards
+					i(103421),	-- Prideful Gladiator's Silk Handguards
+					i(103398),	-- Prideful Gladiator's Wyrmhide Gloves
+					i(102696),	-- Prideful Gladiator's Wyrmhide Gloves
+					i(103395),	-- Prideful Gladiator's Belt of Cruelty
+					i(102694),	-- Prideful Gladiator's Belt of Cruelty
+					i(102775),	-- Prideful Gladiator's Belt of Meditation
+					i(103386),	-- Prideful Gladiator's Belt of Meditation
+					i(102764),	-- Prideful Gladiator's Clasp of Cruelty
+					i(103444),	-- Prideful Gladiator's Clasp of Cruelty
+					i(102748),	-- Prideful Gladiator's Clasp of Meditation
+					i(103445),	-- Prideful Gladiator's Clasp of Meditation
+					i(103352),	-- Prideful Gladiator's Cord of Accuracy
+					i(102662),	-- Prideful Gladiator's Cord of Accuracy
+					i(103351),	-- Prideful Gladiator's Cord of Cruelty
+					i(102684),	-- Prideful Gladiator's Cord of Cruelty
+					i(102709),	-- Prideful Gladiator's Cord of Meditation
+					i(103353),	-- Prideful Gladiator's Cord of Meditation
+					i(103455),	-- Prideful Gladiator's Girdle of Accuracy
+					i(102640),	-- Prideful Gladiator's Girdle of Accuracy
+					i(102724),	-- Prideful Gladiator's Girdle of Prowess
+					i(103456),	-- Prideful Gladiator's Girdle of Prowess
+					i(102645),	-- Prideful Gladiator's Links of Accuracy
+					i(103411),	-- Prideful Gladiator's Links of Accuracy
+					i(103410),	-- Prideful Gladiator's Links of Cruelty
+					i(102617),	-- Prideful Gladiator's Links of Cruelty
+					i(103472),	-- Prideful Gladiator's Waistband of Accuracy
+					i(102708),	-- Prideful Gladiator's Waistband of Accuracy
+					i(102647),	-- Prideful Gladiator's Waistband of Cruelty
+					i(103426),	-- Prideful Gladiator's Waistband of Cruelty
+					i(102677),	-- Prideful Gladiator's Waistguard of Cruelty
+					i(103495),	-- Prideful Gladiator's Waistguard of Cruelty
+					i(103480),	-- Prideful Gladiator's Waistguard of Meditation
+					i(102668),	-- Prideful Gladiator's Waistguard of Meditation
+					i(99165),	-- Breeches of the Shattered Vale
+					i(99162),	-- Chronomancer Leggings
+					i(99186),	-- Greaves of Cyclopean Dread
+					i(99124),	-- Greaves of Winged Triumph
+					i(99094),	-- Leggings of Celestial Harmony
+					i(99145),	-- Leggings of Seven Sacred Seals
+					i(99098),	-- Leggings of the Horned Nightmare
+					i(99176),	-- Leggings of the Shattered Vale
+					i(99123),	-- Leggings of the Ternion Glory
+					i(99104),	-- Legguards of Celestial Harmony
+					i(99191),	-- Legguards of Cyclopean Dread
+					i(99143),	-- Legguards of Seven Sacred Seals
+					i(99115),	-- Legguards of the Barbed Assassin
+					i(99195),	-- Legguards of the Prehistoric Marauder
+					i(99183),	-- Legguards of the Shattered Vale
+					i(99158),	-- Legguards of the Unblinking Vigil
+					i(99129),	-- Legguards of Winged Triumph
+					i(99199),	-- Legplates of the Prehistoric Marauder
+					i(99139),	-- Legplates of Winged Triumph
+					i(99099),	-- Legwraps of Celestial Harmony
+					i(99149),	-- Legwraps of Seven Sacred Seals
+					i(99171),	-- Legwraps of the Shattered Vale
+					i(99118),	-- Legwraps of the Ternion Glory
+					i(102670),	-- Prideful Gladiator's Chain Leggings
+					i(103419),	-- Prideful Gladiator's Chain Leggings
+					i(102762),	-- Prideful Gladiator's Copperskin Legguards
+					i(103436),	-- Prideful Gladiator's Copperskin Legguards
+					i(103383),	-- Prideful Gladiator's Dragonhide Legguards
+					i(102654),	-- Prideful Gladiator's Dragonhide Legguards
+					i(103379),	-- Prideful Gladiator's Dreadplate Legguards
+					i(102651),	-- Prideful Gladiator's Dreadplate Legguards
+					i(102755),	-- Prideful Gladiator's Felweave Trousers
+					i(103522),	-- Prideful Gladiator's Felweave Trousers
+					i(102656),	-- Prideful Gladiator's Ironskin Legguards
+					i(103431),	-- Prideful Gladiator's Ironskin Legguards
+					i(102761),	-- Prideful Gladiator's Kodohide Legguards
+					i(103391),	-- Prideful Gladiator's Kodohide Legguards
+					i(103478),	-- Prideful Gladiator's Leather Legguards
+					i(102730),	-- Prideful Gladiator's Leather Legguards
+					i(103493),	-- Prideful Gladiator's Linked Leggings
+					i(102778),	-- Prideful Gladiator's Linked Leggings
+					i(103499),	-- Prideful Gladiator's Mail Leggings
+					i(102781),	-- Prideful Gladiator's Mail Leggings
+					i(102704),	-- Prideful Gladiator's Mooncloth Leggings
+					i(103464),	-- Prideful Gladiator's Mooncloth Leggings
+					i(102768),	-- Prideful Gladiator's Ornamented Legplates
+					i(103453),	-- Prideful Gladiator's Ornamented Legplates
+					i(103528),	-- Prideful Gladiator's Plate Legguards
+					i(102732),	-- Prideful Gladiator's Plate Legguards
+					i(102719),	-- Prideful Gladiator's Ringmail Leggings
+					i(103488),	-- Prideful Gladiator's Ringmail Leggings
+					i(102621),	-- Prideful Gladiator's Satin Leggings
+					i(103469),	-- Prideful Gladiator's Satin Leggings
+					i(103442),	-- Prideful Gladiator's Scaled Legguards
+					i(102780),	-- Prideful Gladiator's Scaled Legguards
+					i(102648),	-- Prideful Gladiator's Silk Trousers
+					i(103423),	-- Prideful Gladiator's Silk Trousers
+					i(102767),	-- Prideful Gladiator's Wyrmhide Legguards
+					i(103400),	-- Prideful Gladiator's Wyrmhide Legguards
+					i(103427),	-- Prideful Gladiator's Boots of Alacrity
+					i(102716),	-- Prideful Gladiator's Boots of Alacrity
+					i(102660),	-- Prideful Gladiator's Boots of Cruelty
+					i(103473),	-- Prideful Gladiator's Boots of Cruelty
+					i(103481),	-- Prideful Gladiator's Footguards of Alacrity
+					i(102664),	-- Prideful Gladiator's Footguards of Alacrity
+					i(103396),	-- Prideful Gladiator's Footguards of Alacrity
+					i(102631),	-- Prideful Gladiator's Footguards of Alacrity
+					i(103482),	-- Prideful Gladiator's Footguards of Meditation
+					i(103387),	-- Prideful Gladiator's Footguards of Meditation
+					i(102623),	-- Prideful Gladiator's Footguards of Meditation
+					i(102760),	-- Prideful Gladiator's Footguards of Meditation
+					i(102638),	-- Prideful Gladiator's Greaves of Alacrity
+					i(103446),	-- Prideful Gladiator's Greaves of Alacrity
+					i(102639),	-- Prideful Gladiator's Greaves of Meditation
+					i(103447),	-- Prideful Gladiator's Greaves of Meditation
+					i(103413),	-- Prideful Gladiator's Sabatons of Alacrity
+					i(102646),	-- Prideful Gladiator's Sabatons of Alacrity
+					i(102729),	-- Prideful Gladiator's Sabatons of Cruelty
+					i(103412),	-- Prideful Gladiator's Sabatons of Cruelty
+					i(102620),	-- Prideful Gladiator's Treads of Alacrity
+					i(103355),	-- Prideful Gladiator's Treads of Alacrity
+					i(102686),	-- Prideful Gladiator's Treads of Cruelty
+					i(103354),	-- Prideful Gladiator's Treads of Cruelty
+					i(102752),	-- Prideful Gladiator's Treads of Meditation
+					i(103356),	-- Prideful Gladiator's Treads of Meditation
+					i(103458),	-- Prideful Gladiator's Warboots of Alacrity
+					i(102745),	-- Prideful Gladiator's Warboots of Alacrity
+					i(103457),	-- Prideful Gladiator's Warboots of Cruelty
+					i(102698),	-- Prideful Gladiator's Warboots of Cruelty
+					i(103371),	-- Prideful Gladiator's Band of Accuracy
+					i(102649),	-- Prideful Gladiator's Band of Accuracy
+					i(103370),	-- Prideful Gladiator's Band of Cruelty
+					i(102674),	-- Prideful Gladiator's Band of Cruelty
+					i(103372),	-- Prideful Gladiator's Band of Meditation
+					i(102758),	-- Prideful Gladiator's Band of Meditation
+					i(102683),	-- Prideful Gladiator's Ring of Accuracy
+					i(103349),	-- Prideful Gladiator's Ring of Accuracy
+					i(102644),	-- Prideful Gladiator's Ring of Cruelty
+					i(103348),	-- Prideful Gladiator's Ring of Cruelty
+					i(102746),	-- Prideful Gladiator's Signet of Accuracy
+					i(103518),	-- Prideful Gladiator's Signet of Accuracy
+					i(102701),	-- Prideful Gladiator's Signet of Cruelty
+					i(103517),	-- Prideful Gladiator's Signet of Cruelty
 				},
-				--[[
-				["encounters"] = {
-					857,	-- Chi-Ji, The Red Crane
-					859,	-- Niuzao, The Black Ox
-					860,	-- Xuen, The White Tiger
-					858,	-- Yu'lon, The Jade Serpent
-				},
-				]]--
 				["qgs"] = {
 					71952,	-- Chi-Ji, The Red Crane
 					71954,	-- Niuzao, The Black Ox
