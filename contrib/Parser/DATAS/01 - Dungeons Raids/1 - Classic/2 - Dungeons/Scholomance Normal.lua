@@ -194,6 +194,7 @@ _.Instances =
 								un(2, i(14576)),	-- Ebon Hilt of Marduk
 							}),
 							n(10432, {	-- Vectus
+								un(2, i(18691)),	-- Dark Advisor's Pendant
 								un(2, i(14577)),	-- Skullsmoke Pants
 							}),
 							n(10508, {	-- Ras  Frostwhisper

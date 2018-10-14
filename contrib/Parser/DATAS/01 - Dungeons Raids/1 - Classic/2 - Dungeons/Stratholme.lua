@@ -182,9 +182,11 @@ _.Instances =
 											["groups"] = {
 												o(181083, {	-- Sothos and Jarien's Heirlooms
 													["groups"] = {
+														un(2, i(22327)),	-- Amulet of the Redeemed
 														un(2, i(22301)), 	-- Ironweave Robe
 														un(2, i(22328)),	-- Legplates of Vigilance
 														un(2, i(22329)),	-- Scepter of Interminable Focus
+														un(2, i(22334)),	-- Band of Mending
 													},
 													["modelID"] = 34286,
 												}),

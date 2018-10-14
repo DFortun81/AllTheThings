@@ -307,7 +307,6 @@ profession(202, { -- Engineering
 		i(163023),	-- Schematic: Honorable Combatant's Stormsteel Destroyer
 		i(116144),	-- Schematic: Horde Firework
 		i(35190),	-- Schematic: Hyper-Magnified Moon Specs
-		i(18657),	-- Schematic: Hyper-Radiant Flame Reflector
 		i(23806),	-- Schematic: Hyper-Vision Goggles
 		i(13308),	-- Schematic: Ice Deflector
 		i(162321),	-- Schematic: Incendiary Ammunition

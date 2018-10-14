@@ -444,6 +444,14 @@ _.Instances =
 							})),
 							n( 9476, {	-- Watchman Doomgrip
 								["groups"] = {
+									o(160836, {	-- Relic Coffer
+										["groups"] = {	
+											i(11946), -- Fire Opal Necklace
+											i(11945), -- Dark Iron Ring
+										},
+										["description"] = "Relic Coffer Keys that can drop from any Dark Iron mob in the instance.",
+										["modelID"] = 34286,
+									}),
 									o(161495, {	-- Secret Safe
 										["groups"] = {	
 											i(22256), -- Mana Shaping Handwraps

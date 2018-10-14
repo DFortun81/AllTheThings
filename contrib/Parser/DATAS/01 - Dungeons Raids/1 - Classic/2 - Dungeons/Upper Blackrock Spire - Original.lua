@@ -98,11 +98,14 @@ _.Instances =
 							},
 						}),
 						n(9816, { 	-- Pyroguard Emberseer
-							un(7, i(16672)),	-- Gauntlets of Elements
-							un(2, i(12927)),	-- Truestrike Shoulders
+							un(2, i(12929)),	-- Emberfury Talisman
 							un(2, i(12905)), 	-- Wildfire Cape
+							un(2, i(12927)),	-- Truestrike Shoulders
+							un(7, i(16672)),	-- Gauntlets of Elements
+							un(2, i(12926)),	-- Flaming Band
 						}),
 						n(10264, { 	-- Solakar Flamewreath
+							un(7, i(18657)),	-- Schematic: Hyper-Radiant Flame Reflector
 							un(2, i(12606)), 	-- Crystallized Girdle
 							un(2, i(16695)), 	-- Devout Mantle
 							un(2, i(12589)),	-- Dustfeather Sash
@@ -113,6 +116,7 @@ _.Instances =
 							["groups"] = {
 								un(2, i(12605)),	-- Serpentine Skuller
 								un(2, i(12604)),	-- Starfire Tiara
+								un(2, i(12930)),	-- Briarwood Reed
 							},
 							["description"] = "This is a rare that is not always present.",
 						}),
@@ -134,16 +138,13 @@ _.Instances =
 								},
 								["description"] = "Combine with the Top Half of Advanced Armorsmithing: Volume 1",
 							}),
+							i(12834),	-- Plans: Arcanite Champion
+							i(12728),	-- Plans: Invulnerable Mail
+							i(12837),	-- Plans: Masterwork Stormhammer
 							un(2, i(18047)), 	-- Flame Walkers
 							un(2, i(13502)), 	-- Handcrafted Mastersmith Girdle
 							un(2, i(13498)), 	-- Handcrafted Mastersmith Leggings
 							un(2, i(18048)), 	-- Mastersmith's Hammer
-							i(12834, { -- Plans: Arcanite Champion
-								i(12790), -- Arcanite Champion
-							}),
-							i(12837, { 	-- Plans: Masterwork Stormhammer
-								i(12794), 	-- Masterwork Stormhammer
-							}),
 						}),
 						n(10339, { 	-- Gyth
 							i(12871, { 	-- Chromatic Carapace

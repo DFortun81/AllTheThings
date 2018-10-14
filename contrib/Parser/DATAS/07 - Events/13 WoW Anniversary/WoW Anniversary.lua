@@ -34,12 +34,12 @@ _.WorldEvents =
 							un(31, i(150428)),	-- Eskhandar's Left Claw
 							un(31, i(150423)),	-- Fang of the Mystics
 							un(31, i(150421)),	-- Typhoon
-							un(31, i(150417)),	-- Drape of Benediction
 							un(31, i(150419)),	-- Crystal Adorned Crown
-							un(31, i(150425)),	-- Snowblind Shoes
-							un(31, i(150543)), 	-- Sapphire-Encrusted Tunic
+							un(31, i(150417)),	-- Drape of Benediction
 							un(31, i(150544)), 	-- Mana-Frosted Pauldrons
+							un(31, i(150543)), 	-- Sapphire-Encrusted Tunic
 							un(31, i(150422)),	-- Unmelting Ice Girdle
+							un(31, i(150425)),	-- Snowblind Shoes
 							un(31, i(150545)),	-- Ring of Ancient Arcana
 						},
 						["isRaid"] = true,
@@ -53,15 +53,15 @@ _.WorldEvents =
 							un(31, i(150393)),	-- Nightmare Blade
 							un(31, i(150403)),	-- Polished Ironwood Crossbow
 							un(31, i(150408)),	-- Staff of Rampant Growth
-							un(31, i(150411)),	-- Green Dragonskin Cloak
-							un(31, i(150410)),	-- Acid Inscribed Greaves
-							un(31, i(150406)),	-- Boots of the Endless Moor
 							un(31, i(150405)),	-- Circlet of Restless Dreams
+							un(31, i(150407)),	-- Dragonheart Necklace
+							un(31, i(150411)),	-- Green Dragonskin Cloak
 							un(31, i(150415)),	-- Dragonspur Wraps
 							un(31, i(150416)),	-- Gloves of Delusional Power
-							un(31, i(150407)),	-- Dragonheart Necklace
-							un(31, i(150404)),	-- Ring of the Unliving
+							un(31, i(150410)),	-- Acid Inscribed Greaves
+							un(31, i(150406)),	-- Boots of the Endless Moor
 							un(31, i(150392)),	-- Mindtear Band
+							un(31, i(150404)),	-- Ring of the Unliving
 							un(31, i(150388)),	-- Hibernation Crystal
 						},
 						["isRaid"] = true,
@@ -72,14 +72,14 @@ _.WorldEvents =
 						["groups"] = {
 							un(31, i(150383)),	-- Amberseal Keeper
 							un(31, i(150427)),	-- Empyrean Demolisher
+							un(31, i(150379)),	-- Infernal Headcage
+							un(31, i(150426)),	-- Blazefury Medallion
 							un(31, i(150380)),	-- Eskhandar's Pelt
 							un(31, i(150386)),	-- Blacklight Bracer
-							un(31, i(150385)),	-- Fel Infused Leggings
 							un(31, i(150382)),	-- Doomhide Gauntlets
 							un(31, i(150381)),	-- Flayed Doomguard Belt
-							un(31, i(150379)),	-- Infernal Headcage
+							un(31, i(150385)),	-- Fel Infused Leggings
 							un(31, i(150384)),	-- Ring of Entropy
-							un(31, i(150426)),	-- Blazefury Medallion
 						},
 						["isRaid"] = true,
 						["questID"] = 47461,
@@ -92,16 +92,15 @@ _.WorldEvents =
 							un(31, i(150393)),	-- Nightmare Blade
 							un(31, i(150403)),	-- Polished Ironwood Crossbow
 							un(31, i(150408)),	-- Staff of Rampant Growth
+							un(31, i(150401)),	-- Deviate Growth Cap
+							un(31, i(150407)),	-- Dragonheart Necklace
 							un(31, i(150411)),	-- Green Dragonskin Cloak
 							un(31, i(150399)),	-- Black Bark Wristbands
-							un(31, i(150398)),	-- Dark Heart Pants
-							un(31, i(150401)),	-- Deviate Growth Cap
-							un(31, i(150429)),	-- Emerald Dragonfang
 							un(31, i(150402)),	-- Gauntlets of the Shining Light
+							un(31, i(150398)),	-- Dark Heart Pants
 							un(31, i(150400)),	-- Malignant Footguards
-							un(31, i(150407)),	-- Dragonheart Necklace
-							un(31, i(150404)),	-- Ring of the Unliving
 							un(31, i(150392)),	-- Mindtear Band
+							un(31, i(150404)),	-- Ring of the Unliving
 							un(31, i(150388)),	-- Hibernation Crystal
 						},
 						["isRaid"] = true,
@@ -115,16 +114,15 @@ _.WorldEvents =
 							un(31, i(150393)),	-- Nightmare Blade
 							un(31, i(150403)),	-- Polished Ironwood Crossbow
 							un(31, i(150408)),	-- Staff of Rampant Growth
-							un(31, i(150411)),	-- Green Dragonskin Cloak
-							un(31, i(150414)),	-- Ancient Corroded Leggings
-							un(31, i(150413)),	-- Dragonbone Wristguards
-							un(31, i(150429)),	-- Emerald Dragonfang
-							un(31, i(150394)),	-- Mendicant's Slippers
-							un(31, i(150390)),	-- Strangley Glyphed Legplates
-							un(31, i(150395)),	-- Unnatural Leather Spaulders
 							un(31, i(150407)),	-- Dragonheart Necklace
-							un(31, i(150404)),	-- Ring of the Unliving
+							un(31, i(150395)),	-- Unnatural Leather Spaulders
+							un(31, i(150411)),	-- Green Dragonskin Cloak
+							un(31, i(150413)),	-- Dragonbone Wristguards
+							un(31, i(150414)),	-- Ancient Corroded Leggings
+							un(31, i(150390)),	-- Strangely Glyphed Legplates
+							un(31, i(150394)),	-- Mendicant's Slippers
 							un(31, i(150392)),	-- Mindtear Band
+							un(31, i(150404)),	-- Ring of the Unliving
 							un(31, i(150388)),	-- Hibernation Crystal
 						},
 						["isRaid"] = true,
@@ -137,16 +135,16 @@ _.WorldEvents =
 							un(31, i(150393)),	-- Nightmare Blade
 							un(31, i(150403)),	-- Polished Ironwood Crossbow
 							un(31, i(150408)),	-- Staff of Rampant Growth
-							un(31, i(150411)),	-- Green Dragonskin Cloak
-							un(31, i(150387)), 	-- Acid Inscribed Pauldrons
-							un(31, i(150397)),	-- Belt of the Dark Bog
-							un(31, i(150396)),	-- Boots of Fright
-							un(31, i(150391)),	-- Jade Inlaid Vestments
-							un(31, i(150389)),	-- Leggings of the Demented Mind
 							un(31, i(150409)),	-- Trance Stone
 							un(31, i(150407)),	-- Dragonheart Necklace
-							un(31, i(150404)),	-- Ring of the Unliving
+							un(31, i(150411)),	-- Green Dragonskin Cloak
+							un(31, i(150387)), 	-- Acid Inscribed Pauldrons
+							un(31, i(150391)),	-- Jade Inlaid Vestments
+							un(31, i(150397)),	-- Belt of the Dark Bog
+							un(31, i(150389)),	-- Leggings of the Demented Mind
+							un(31, i(150396)),	-- Boots of Fright
 							un(31, i(150392)),	-- Mindtear Band
+							un(31, i(150404)),	-- Ring of the Unliving
 							un(31, i(150388)),	-- Hibernation Crystal
 						},
 						["isRaid"] = true,

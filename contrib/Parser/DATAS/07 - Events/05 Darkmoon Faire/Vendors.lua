@@ -315,6 +315,8 @@ _.WorldEvents =
 						i(73903), -- Darkmoon Tonk Pet
 						i(73765), -- Darkmoon Turtle Pet					
 						i(73905), -- Darkmoon Zeppelin Pet
+						un(2, i(19303)),	-- Darkmoon Necklace
+						un(2, i(19302)),	-- Darkmoon Ring
 					},
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 				}),
