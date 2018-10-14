@@ -497,6 +497,10 @@ _.GearSets =
 										{	-- Springrain Stave *LA0422Feral
 											["itemID"] = 153760,	-- Springrain Stave
 										},
+										{	-- Springrain Spear *LA0422Feral
+											["itemID"] = 153773,	-- Springrain Spear
+											-- Note!! Yes you get another one
+										},
 									},
 								},
 								{	-- Springrain Spear *LA0422Feral
