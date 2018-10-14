@@ -843,6 +843,8 @@ _.Zones =
 							["g"] = {
 								i(155095),	-- Banisher Tunic
 								i(155113),	-- Banisher Shoulderpads
+								i(155093),	-- Waycrest Militia Breastplate (Plate reward confirmed by Iyanden 10-13-18)
+								i(155114),	-- Waycrest Militia Spaulders (Plate reward confirmed by Iyanden 10-13-18)
 								-- Wowhead does not have reward information for this quest.  Non-leather rewards need confirmation.
 							},
 							["qg"] = 131638,	-- Lucille Waycrest
