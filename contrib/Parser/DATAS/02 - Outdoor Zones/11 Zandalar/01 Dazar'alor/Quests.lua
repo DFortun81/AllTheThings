@@ -190,6 +190,30 @@ _.Zones =
 							},
 							["races"] = HORDE_ONLY,
 						}),
+						ach(12478, {	-- Secrets of the Sands
+							["groups"] = {
+								q(47513, {	-- Vol'dun
+									["description"] = "Picked up at the Scouting Map.",
+									["coord"] = { 41.8, 69.2 },
+								}),
+								q(47313, {	-- Discreet Discussions
+									["qg"] = 133050,	-- Princess Talanji
+									["coord"] = { 40.5, 66.9 },
+									["sourceQuests"] = { 47513 },	-- Vol'dun
+								}),
+								q(47314, {	-- Rumors of Exile
+									["qg"] = 122817,	-- Bladeguard Kaja
+									["coord"] = { 39.9, 70.6 },
+									["sourceQuests"] = { 47313 },	-- Discreet Discussions
+								}),
+								q(47315, {	-- Into the Dunes
+									["qg"] = 122320,	-- Bladeguard Kaja
+									["coord"] = { 49.9, 31.6 },
+									["sourceQuests"] = { 47314 },	-- Rumors of Exile
+								}),
+							},
+							["races"] = HORDE_ONLY,
+						}),
 						n(-383, { -- Miscellaneous
 							["groups"] = {
 								q(47432, {	-- The Bargain is Struck; Actually Gonk/Pa'ku triggeeer

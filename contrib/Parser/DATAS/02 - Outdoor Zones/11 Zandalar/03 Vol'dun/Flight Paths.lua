@@ -11,10 +11,11 @@ _.Zones =
 					fp(2162, { -- Devoted Sanctuary, Vol'dun [N] [This appears to have been removed since BETA or changed to Scorched Sands for Horde]
 						["coord"] = { 43.8, 76.0 },
 					}),
-					fp(2144, { -- Goldtusk Inn, Vol'dun [Have been unable to locate, this might be a holdover from BETA]
-							["coord"] = { },
-					}),
 ]]--
+					fp(2144, { -- Goldtusk Inn, Vol'dun [Have been unable to locate, this might be a holdover from BETA]
+						["coord"] = { 42.7, 61.1 },
+						["description"] = "Whistlebloom Oasis, Vol'dun. Becomes available after completing \"The Best Kill is Overkill\" during the Goldtusk Inn quest chain.",
+					}),
 					fp(2114, {	-- Deadwood Cove, Vol'dun [A] [This is quest locked behind the War Campaign]
 						["description"] = "Deadwood Cove, Vol'dun",
 						["coord"] = { 39.8, 83.8 },
