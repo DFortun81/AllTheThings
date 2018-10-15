@@ -985,6 +985,10 @@ _.Zones =
 								un(2, i( 9687)),	-- Grappler's Belt
 								un(2, i(11884)),	-- Moonlit Amice
 							})),
+							un(40, qa(1488, {	-- The Corrupter
+								un(2, i(6746)),	-- Basalt Buckler
+								un(2, i(6747)),	-- Enforcer Pauldrons
+							})),
 							un(40, qa(1457, {	-- The Karnitol Shipwreck
 								un(2, i(6791)),	-- Hellion Boots
 								un(2, i(6792)),	-- Sanguine Pauldrons

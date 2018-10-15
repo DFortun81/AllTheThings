@@ -137,8 +137,12 @@ _.Zones =
 						i(57574),
 						i(131459),
 					})),
---[[					
-					qg(1265, qa(  314)),	-- Protecting the Herd
+					qg(1265, qa(  314, {	-- Protecting the Herd
+						un(2, i(3103)),	-- Coldridge Hammer
+						un(2, i(2817)),	-- Soft Leather Tunic
+						un(2, i(10549)),	-- Rancher's Trousers
+					})),
+--[[
 					qg(40950, qa(25792)),	-- Pushing Forward
 					qg(41853, qa(26085)),	-- Rallying the Defenders
 					qg(1261, qa(25905)),	-- Rams on the Lam

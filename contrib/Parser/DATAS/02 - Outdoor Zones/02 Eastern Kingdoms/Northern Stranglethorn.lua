@@ -1392,6 +1392,7 @@ _.Zones =
 								un(2, i(4115)),	-- Grom'gol Buckler
 							})),
 							un(40, q(338, {	-- The Green Hills of Stranglethorn
+								un(2, i(4116)),	-- Olmann Sewar
 								un(2, i(17688)),	-- Jungle Boots
 							})),
 							un(40, qa(328, {	-- The Hidden Key

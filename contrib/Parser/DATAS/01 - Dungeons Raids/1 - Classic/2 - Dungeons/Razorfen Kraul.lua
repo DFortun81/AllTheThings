@@ -200,7 +200,9 @@ _.Instances =
 								n(4517, {	-- Death's Head Priest
 									un(7, i(3569)), 	-- Vicar's Robe
 								}),
-								n(4428, {	-- Death Speaker Jargba
+								n(4428, {	-- Death Speaker Jargba <Death's Head Captain>
+									un(2, i(2816)),	-- Death Speaker Scepter
+									i(6685),	-- Death Speaker Mantle
 									un(2, i(6682)),	-- Death Speaker Robes
 								}),
 								n(4438, {	-- Razorfen Spearhide
