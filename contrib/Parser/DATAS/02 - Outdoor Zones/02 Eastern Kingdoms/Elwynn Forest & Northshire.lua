@@ -143,6 +143,7 @@ _.Zones =
 						i(2238),
 						i(57526),
 						i(131192),
+						un(2, i(2249)),	-- Militia Buckler
 					})),
 --[[					
 					qg(252, qa(  111)),	-- Speak with Gramma
