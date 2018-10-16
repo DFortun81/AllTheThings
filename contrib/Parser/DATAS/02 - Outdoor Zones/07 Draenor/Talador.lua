@@ -699,13 +699,15 @@ _.Zones =
 						["groups"] = {	
 							dr(35, i(119402)),	-- Gurg'tol's Imp Imperator
 						},
-						["questID"] = 37340,	
+						["questID"] = 37340,
+						["isDaily"] = true,					
 					}), 
 					n(83008, { 		-- Haakun the All-Consuming
 						["groups"] = {	
 							dr(44, i(119403)),	-- Sargerei Soulbiter
 						},
-						["questID"] = 37312,	
+						["questID"] = 37312,
+						["isDaily"] = true,							
 					}), 
 					n(77715, { 		-- Hammertooth
 						["groups"] = {	
@@ -758,13 +760,15 @@ _.Zones =
 						["groups"] = {	
 							dr(67, i(119352)),	-- Demlash's Dashing Robe
 						},
-						["questID"] = 37346,	
+						["questID"] = 37346,
+						["isDaily"] = true,							
 					}), 
 					n(88494, { 		-- Legion Vanguard
 						["groups"] = {	
 							dr(43, i(119385)),	-- Vanguard's Linebreaking Bracer
 						},
 						["questID"] = 37342,
+						["isDaily"] = true,	
 						["description"] = "Kill about 10 Council Soulspeaker's, then kill 3 waves of 3 mobs, then Legion Vanguard will spawn. Kill him.",
 					}),
 					n(82998, { 		-- Matron of Sin
@@ -893,6 +897,7 @@ _.Zones =
 							dr(39, i(119350)),	-- Sargerei Councillor's Drape
 						},
 						["questID"] = 37337,
+						["isDaily"] = true,	
 						["modelID"] = 60730,
 						["description"] = "Strategist Ankor, Archmagus Tekar, and Soulbinder Naylana.|r",	
 					}), 
@@ -994,7 +999,8 @@ _.Zones =
 						["groups"] = {	
 							dr(39, i(119371)),	-- Mantle of the Destroyer
 						},
-						["questID"] = 37343,	
+						["questID"] = 37343,
+						["isDaily"] = true,							
 					}), 
 					n(77529, { 		-- Yazheera the Incinerator
 						["groups"] = {	

@@ -475,7 +475,6 @@ _.Zones =
 					}),
 					n(72364, { 		-- Gorg'ak the Lava Guzzler
 						["questID"] = 37562,
-						["isDaily"] = true,
 						["groups"] = {
 							dr(37, i(111545)),	-- Smoldering Fist of Gorg'ak
 						},
@@ -543,6 +542,7 @@ _.Zones =
 					}),
 					n(84374, { 		-- Kaga the Ironbender
 						["questID"] = 37404,
+						["isDaily"] = true,
 						["groups"] = {	
 							dr(39, i(119372)),	-- Ironstudded Scale Girdle 
 						},
@@ -561,12 +561,14 @@ _.Zones =
 					}),
 					n(82614, { 		-- Moltnoma
 						["questID"] = 37387,
+						["isDaily"] = true,
 						["groups"] = {	
 							dr(42, i(119356)),	-- Moltnoma's Magma Mantle 
 						},
 					}), 
 					n(87351, { 		-- Mother of Goren
 						["questID"] = 37381,
+						["isDaily"] = true,
 						["groups"] = {	
 							dr(31, i(119376)),	-- Three-Egg Pendant Necklace 
 						},
@@ -576,6 +578,7 @@ _.Zones =
 					}),
 					n(87622, { 		-- Ogom the Mangler
 						["questID"] = 37402,
+						["isDaily"] = true,
 						["groups"] = {	
 							dr(42, i(119366)),	-- Ogom's Manacles 
 						},
@@ -591,6 +594,7 @@ _.Zones =
 					}),
 					n(84392, { 		-- Ragore Driftstalker	
 						["questID"] = 37401,
+						["isDaily"] = true,
 						["groups"] = {
 							dr(40, i(119359)),	-- Tunic of the Driftstalker 
 						},
@@ -603,12 +607,14 @@ _.Zones =
 					}),
 					n(82617, { 		-- Slogtusk the Corpse-Eater
 						["questID"] = 37385,
+						["isDaily"] = true,
 						["groups"] = {
 							dr(44, i(119362)),	-- Frostboar Leather Helmet 
 						},
 					}),
 					n(82620, { 		-- Son of Goramal
 						["questID"] = 37383,
+						["isDaily"] = true,
 						["groups"] = {
 							dr(34, i(119399)),	-- Cudgel of the Son of Goramal 
 						},
@@ -621,6 +627,7 @@ _.Zones =
 					}),
 					n(78265, { 		-- The Bone Crawler
 						["questID"] = 34361,
+						["isDaily"] = true,
 						["groups"] = {	
 							dr(35, i(111534)),	-- The Bone Crawler's Carapace 
 						},
@@ -634,6 +641,7 @@ _.Zones =
 					}),
 					n(82618, { 		-- Tor'goroth <The Soul-Gorger>
 						["questID"] = 37384,
+						["isDaily"] = true,
 						["groups"] = {	
 							dr(36, i(119379)),	-- Tor'goroth's Soul Prism
 							dr(13, i(119163)),	-- Soul Inhaler Toy
@@ -641,6 +649,7 @@ _.Zones =
 					}),
 					n(79104, { 		-- Ug'lok the Frozen 
 						["questID"] = 34522,
+						["isDaily"] = true,
 						["description"] = "There are reports that this drops from this rare. This rare is only lootable once, but it appears this may either not drop anymore, or you may only have the one chance per toon to loot it. Please let us know if you get this item to drop.",
 						["groups"] = {	
 							un(1, i(119409)), -- Icebound Bloodmaul Spire
