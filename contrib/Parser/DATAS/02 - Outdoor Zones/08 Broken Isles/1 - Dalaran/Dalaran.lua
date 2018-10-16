@@ -1473,7 +1473,7 @@ _.Zones =
 							qr(q(41183, {	-- Academic Exploration
 								["qg"] = 93538, -- Dariness the Learned
 							})),
-							q(40857, {	-- Bits and Pieces
+							qr(q(40857, {	-- Bits and Pieces
 								["qg"] = 93538, -- Bariness the Learned
 								["sourceQuests"] = {
 									41158,	-- Fragments of the Fjords
@@ -1481,7 +1481,7 @@ _.Zones =
 									41164,	-- One Step Closer
 									41167,	-- Fel Fragments
 								},
-							}),
+							})),
 							qr(q(41167, {	-- Fel Fragments
 								["qg"] = 93538, -- Dariness the Learned
 							})),

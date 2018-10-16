@@ -596,7 +596,6 @@ _.Zones =
 							dr(42, i(119361)),	-- Thorn-Knuckled Gloves
 						},
 						["questID"] = 37371,
-						["isDaily"] = true,	
 					}), 
 					n(82085, { 		-- Bashiok
 						["groups"] = {	
@@ -614,8 +613,7 @@ _.Zones =
 						["groups"] = {	
 							dr(65, i(119228)),	-- Ro'gor's Slippers of Silence
 						},
-						["questID"] = 37368,
-						["isDaily"] = true,							
+						["questID"] = 37368,	
 					}),
 					o(235859, { 	-- Brokor's Sack
 						["groups"] = {
@@ -635,14 +633,12 @@ _.Zones =
 							dr(59, i(119224)),	-- Foereaver Polearm
 						},
 						["questID"] = 37362,	
-						["isDaily"] = true,	
 					}), 
 					n(82058, { 		-- Depthroot
 						["groups"] = {	
 							dr(38, i(119406)),	-- Depthroot's Forearm
 						},
-						["questID"] = 37370,
-						["isDaily"] = true,							
+						["questID"] = 37370,	
 					}), 
 					o(236141, { 	-- Discarded Pack
 						["groups"] = {
@@ -702,8 +698,7 @@ _.Zones =
 						["groups"] = {	
 							dr(59, i(119225)),	-- Studded Gronn-Stitched Girdle
 						},
-						["questID"] = 37366,
-						["isDaily"] = true,							
+						["questID"] = 37366,	
 					}),	
 					o(239828, { 	-- Edge of Reality
 						["groups"] = {
@@ -777,8 +772,7 @@ _.Zones =
 						["groups"] = {	
 							dr(40, i(119381)),	-- Grash's Fireproof Handguards
 						},
-						["questID"] = 37373,
-						["isDaily"] = true,							
+						["questID"] = 37373,	
 					}), 
 					n(85250, { 		-- Fossilwood the Petrified
 						["groups"] = {	
@@ -790,8 +784,7 @@ _.Zones =
 						["groups"] = {	
 							dr(100, i(119397)), -- Gnarled Goren Jaw
 						},						
-						["questID"] = 37413,
-						["isDaily"] = true,							
+						["questID"] = 37413,	
 					}), 
 					n(84431, { 		-- Greldrok the Cunning
 						["groups"] = {	
@@ -803,8 +796,7 @@ _.Zones =
 						["groups"] = {	
 							dr(40, i(119414)),  -- Yal's Leafwrap Cloak
 						},						
-						["questID"] = 37375,
-						["isDaily"] = true,							
+						["questID"] = 37375,	
 					}), 
 					n(83522, { 		-- Hive Queen Skrikka
 						["groups"] = {	
@@ -816,29 +808,25 @@ _.Zones =
 						["groups"] = {	
 							dr(62, i(119229)),	-- Horgg's Bandolier
 						},
-						["questID"] = 37365, 
-						["isDaily"] = true,							
+						["questID"] = 37365, 	
 					}), 
 					n(88672, { 		-- Hunter Bal'ra
 						["groups"] = {
 							dr(42, i(119412)),	-- Bal'ra's Compound Bow
 						},
-						["questID"] = 37377,
-						["isDaily"] = true,							
+						["questID"] = 37377,	
 					}),
 					n(86574, { 		-- Inventor Blammo
 						["groups"] = {	
 							dr(65, i(119226)), -- Blammo's Blammer
 						},
-						["questID"] = 37367,
-						["isDaily"] = true,							
+						["questID"] = 37367,	
 					}), 
 					n(78260, { 		-- King Slime
 						["groups"] = {	
 							dr(37, i(119351)),	-- Slime Coated Kingscloak
 						},
-						["questID"] = 37412,
-						["isDaily"] = true,							
+						["questID"] = 37412,		
 					}), 
 					n(84406, { 		-- Mandrakor
 						["groups"] = {		
@@ -850,8 +838,7 @@ _.Zones =
 						["groups"] = {		
 							dr(41, i(119391)),	-- Etched Osteoderm Shield
 						},
-						["questID"] = 37376,
-						["isDaily"] = true,							
+						["questID"] = 37376,	
 					}), 
 					n(86582, { 		-- Morgo Kain
 						["groups"] = {		
@@ -1095,8 +1082,7 @@ _.Zones =
 						["groups"] = {	
 							dr(38, i(119367)),	-- Flayerscale Carapace Stompers
 						},
-						["questID"] = 37374,
-						["isDaily"] = true,							
+						["questID"] = 37374,		
 					}), 
 					n(86410, { 		-- Sylldross
 						["groups"] = {		
@@ -1108,8 +1094,7 @@ _.Zones =
 						["groups"] = {	
 							dr(41, i(119395)),	-- Hydratooth Dagger
 						},
-						["questID"] = 37372,
-						["isDaily"] = true,							
+						["questID"] = 37372,		
 					}),
 					o(236147, { 	-- Vindicator's Hammer
 						["groups"] = {
