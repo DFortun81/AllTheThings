@@ -35,9 +35,9 @@ _.Zones =
 					q(31970, {	-- Grand Master Obalis (non-daily)
 						i(89125),	-- Sack of Pet Supplies
 					}),
-					q(31971, { 	-- Grand Master Obalis (daily version)
+					qr(q(31971, { 	-- Grand Master Obalis (daily version)
 						i(89125),	-- Sack of Pet Supplies
-					}),
+					})),
 					qg(66824, qa(31985)),	-- The Triumphant Return
 					qg(66824, qh(31986)),	-- The Triumphant Return
 				}),

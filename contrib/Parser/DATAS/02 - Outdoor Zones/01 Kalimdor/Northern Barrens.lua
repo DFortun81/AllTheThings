@@ -31,12 +31,12 @@ _.Zones =
 						i(89125),	-- Sack of Pet Supplies
 					})),					
 					qg(66135, qh(31819)),	-- Dagra the Fierce
-					qg(115286, q(45083, {	-- Crysa's Flyers
+					qr(qg(115286, q(45083, {	-- Crysa's Flyers
 						i(142447, {	-- Torn Sack of Pet Supplies
 							i(142448),	-- Albino Buzzard
 							i(89587),	-- Porcupette
 						}),	-- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
-					})),					
+					}))),					
 					qg(116781, q(45423, {	-- Wailing Critters
 						i(122457),	-- Ultimate Battle-Training Stone
 					})),

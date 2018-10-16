@@ -86,9 +86,9 @@ _.Zones =
 					qg(66466, q(31897, {	-- Grand Master Trixxy (NON-DAILY version)
 						i(89125),	-- Sack of Pet Supplies
 					})),
-					qg(66466, q(31909, { 	-- Grand Master Trixxy (DAILY version)
+					qr(qg(66466, q(31909, { 	-- Grand Master Trixxy (DAILY version)
 						i(89125),	-- Sack of Pet Supplies
-					})),
+					}))),
 					qg(66466, qh(31977)),	-- The Returning Champion
 					qg(66466, qa(31975)),	-- The Returning Champion
 				}),
