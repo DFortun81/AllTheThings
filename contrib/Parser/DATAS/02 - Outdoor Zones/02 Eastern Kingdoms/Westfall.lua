@@ -468,7 +468,7 @@ _.Zones =
 						},
 						["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
 						["questID"] = 47214,
-						["repeatable"] = true,
+						["isWeekly"] = true,
 						["description"] = "For a walkthrough of how to obtain this mount. Go to Special Header under Outdoor Zones - Broken Isles - Dalaran.",
 					}),										
 				}),

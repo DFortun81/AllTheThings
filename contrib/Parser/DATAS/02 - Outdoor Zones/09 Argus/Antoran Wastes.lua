@@ -646,6 +646,7 @@ _.Zones =
 							i(152887),	-- Zealous Felslinger's Leggings
 						},
 						["questID"] = 48382,
+						["isDaily"] = true,
 					}),
 					o(273521, {	-- Legion War Supplies (around Spirit Crucible)
 						["groups"] = {
@@ -659,6 +660,7 @@ _.Zones =
 							i(152883),	-- Zealous Felslinger's Boots
 						},
 						["questID"] = 48383,
+						["isDaily"] = true,
 					}),
 					o(273523, {	-- Legion War Supplies (north central, possibly only in cave)
 						["groups"] = {
@@ -670,6 +672,7 @@ _.Zones =
 							i(152889),	-- Zealous Felslinger's Cuffs
 						},
 						["questID"] = 48384,
+						["isDaily"] = true,
 					}),
 					o(273524, {	-- Legion War Supplies (southernmost point of wide green river, close to Felfire Armory)
 						["groups"] = {
@@ -681,6 +684,7 @@ _.Zones =
 							i(152887),	-- Zealous Felslinger's Leggings
 						},
 						["questID"] = 48385,
+						["isDaily"] = true,
 					}),
 					o(273527, {	-- Legion War Supplies (northeast, to the right of bridges)
 						["groups"] = {
@@ -688,6 +692,7 @@ _.Zones =
 							i(153342),	-- Triumvirate High Guard's Pauldrons
 						},
 						["questID"] = 48387,
+						["isDaily"] = true,
 					}),
 					o(273528, {	-- Legion War Supplies (southeast, around Terminus)
 						["groups"] = {
@@ -700,6 +705,7 @@ _.Zones =
 							i(152883),	-- Zealous Felslinger's Boots
 						},
 						["questID"] = 48390,
+						["isDaily"] = true,
 					}),
 					o(273533, {	-- Legion War Supplies (north - northeast of Spirit Crucible, west of bridges)
 						["groups"] = {
@@ -708,6 +714,7 @@ _.Zones =
 							i(152885),	-- Zealous Felslinger's Handwraps
 						},
 						["questID"] = 48388,
+						["isDaily"] = true,
 					}),
 					o(273535, {	-- Legion War Supplies (around spiders)
 						["groups"] = {
@@ -716,6 +723,7 @@ _.Zones =
 							i(152885),	-- Zealous Felslinger's Handwraps
 						},
 						["questID"] = 48391,
+						["isDaily"] = true,
 					}),
 					o(273538, {	-- Legion War Supplies (around Varga cave)
 						["groups"] = {
@@ -726,6 +734,7 @@ _.Zones =
 							i(152881),	-- Zealous Felslinger's Girdle
 						},
 						["questID"] = 48389,
+						["isDaily"] = true,
 					}),
 					n(126254, { -- Lieutenant Xakaar
 						["groups"] = {
