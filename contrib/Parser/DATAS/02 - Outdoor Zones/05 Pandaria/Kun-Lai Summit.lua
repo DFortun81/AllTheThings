@@ -155,10 +155,10 @@ _.Zones =
 					p(729), 	-- Tolai Hare
 					p(730), 	-- Tolai Hare Pup
 					p(731), 	-- Zooey Snake
-					q(31956, { 	-- Grand Master Yon
+					qr(q(31956, { 	-- Grand Master Yon
 						i(89125),	-- Sack of Pet Supplies
-					}),
-					q(32441, { 	-- Thundering Pandaren Spirit
+					})),
+					qr(q(32441, { 	-- Thundering Pandaren Spirit
 						["groups"] = {
 							i(93146, { -- Pandaren Spirit Pet Supplies
 								i(89139),	-- Chain Pet Leash
@@ -167,7 +167,7 @@ _.Zones =
 							})
 						},
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
-					}),
+					})),
 				}),
 				n(-38, {	-- Profession
 					prof(356, { -- Fishing

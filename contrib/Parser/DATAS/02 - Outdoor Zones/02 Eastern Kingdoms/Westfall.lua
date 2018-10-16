@@ -36,7 +36,7 @@ _.Zones =
 					qa(31725, { -- Lindsay
 						i(89125),	-- Sack of Pet Supplies
 					}),
-					qa(31780), 	-- Old MacDonald
+					qr(qa(31780)), 	-- Old MacDonald
 					ach(11856, { -- Pet Battle Challenge: Wailing Caverns
 						i(151632), -- Mining Monkey
 						model(64432, n(119390, { -- Marcus "Bagman" Brown

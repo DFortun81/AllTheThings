@@ -35,7 +35,7 @@ _.Zones =
 					p(405), 	-- Tree Python
 					p(410), 	-- Wharf Rat
 					qa(31917),	-- A Tamer's Homecoming
-					qa(31851),	-- Bill Buckler
+					qr(qa(31851)),	-- Bill Buckler
 				}),
 				n(-17, {	-- Quests
 					ach(4905, { -- Cape of Strangelthorn Quests

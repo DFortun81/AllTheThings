@@ -42,7 +42,7 @@ _.Zones =
 					p(457), 	-- Festering Maggot
 					p(628), 	-- Infected Fawn
 					p(627), 	-- Infected Squirrel
-					qg(66512, q(31911)),	-- Deiza Plaguehorn
+					qr(qg(66512, q(31911))),	-- Deiza Plaguehorn
 				}),
 				n(-17, {	-- Quests
 					ach(4892, { -- Eastern Plaugelands Quests

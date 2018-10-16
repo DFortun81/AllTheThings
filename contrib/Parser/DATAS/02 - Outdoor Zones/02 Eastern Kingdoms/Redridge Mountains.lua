@@ -27,7 +27,7 @@ _.Zones =
 					qg(65651, qa(31726, { -- Eric Davidson
 						i(89125),	-- Sack of Pet Supplies
 					})),
-					qg(65651, qa(31781)),	-- Lindsay (DAILY)
+					qr(qg(65651, qa(31781))),	-- Lindsay (DAILY)
 				}),
 				n(-17, {	-- Quests
 					a(ach(4902, { -- Redridge Mountain Quests

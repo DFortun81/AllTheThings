@@ -333,6 +333,7 @@ _.Zones =
 				n(-16, { 	-- Rares
 					n(84378, { 		-- Ak'ox the Slaughterer
 						["questID"] = 37525,
+						["isDaily"] = true,
 						["groups"] = {
 							dr(41, i(119365)),	-- Bloodied Tourniquet Belt
 						},
@@ -419,6 +420,7 @@ _.Zones =
 					}),
 					n(84376, {		-- Earthshaker Holar
 						["questID"] = 37403,
+						["isDaily"] = true,
 						["groups"] = {
 							i(119374),	-- Gold Ogron Earring
 						},
@@ -458,6 +460,7 @@ _.Zones =
 					}),
 					n(87352, {		-- Gibblette the Cowardly
 						["questID"] = 37380,
+						["isDaily"] = true,
 						["groups"] = {	
 							dr(30, i(119349)), 	-- Craven Coward's Cloak
 							dr(14, i(119180)), 	-- Goren "Log" Roller Toy
@@ -472,12 +475,14 @@ _.Zones =
 					}),
 					n(72364, { 		-- Gorg'ak the Lava Guzzler
 						["questID"] = 37562,
+						["isDaily"] = true,
 						["groups"] = {
 							dr(37, i(111545)),	-- Smoldering Fist of Gorg'ak
 						},
 					}),
 					n(82536, { 		-- Gorivax <Spawn of the Soulgrinder>
 						["questID"] = 37388,
+						["isDaily"] = true,
 						["groups"] = {	
 							dr(46, i(119358)),	-- Voidmesh Cloth Wristwraps
 						},
@@ -499,12 +504,14 @@ _.Zones =
 					}),
 					n(80235, { 		-- Gurun
 						["questID"] = 34839,
+						["isDaily"] = true,
 						["groups"] = {	
 							dr(100, i(111955)), -- Skog's Drape
 						},
 					}),
 					n(87348, { 		-- Hoarfrost <Tempest of Ice>
 						["questID"] = 37382,
+						["isDaily"] = true,
 						["groups"] = {
 							i(119415),	-- Frosted Icequartz Ring
 						},
@@ -521,6 +528,7 @@ _.Zones =
 					}),
 					n(82616, { 		-- Jabberjaw
 						["questID"] = 37386,
+						["isDaily"] = true,
 						["groups"] = {	
 							dr(39, i(119390)),	-- Rockworm Carapace Shield 
 						},
@@ -641,12 +649,14 @@ _.Zones =
 					}),
 					n(87357, {		-- Valkor <Might of the Mountain>
 						["questID"] = 37378,
+						["isDaily"] = true,
 						["groups"] = {	
 							dr(41, i(119416)), -- Magnaron Heart
 						},
 					}),
 					n(87356, {		-- Vrok the Ancient
 						["questID"] = 37379,
+						["isDaily"] = true,
 						["groups"] = {	
 							dr(33, i(119416)), -- Magnaron Heart
 						},

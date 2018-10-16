@@ -136,9 +136,9 @@ _.Zones =
 					p(819), 	-- Wild Crimson Hatchling
 					p(818), 	-- Wild Golden Hatchling
 					p(817), 	-- Wild Jade Hatchling
-					q(31953, { -- Grand Master Hyuna
+					qr(q(31953, { -- Grand Master Hyuna
 						i(89125),	-- Sack of Pet Supplies
-					}),
+					})),
 					q(32440, { -- Whispering Pandaren Spirit
 						["groups"] = {
 							i(93146, { -- Pandaren Spirit Pet Supplies

@@ -1467,12 +1467,12 @@ _.Zones =
 					}),
 					n(-191, {	-- Archaeology
 						["groups"] = {
-							q(41189, {	-- A New Lead
+							qr(q(41189, {	-- A New Lead
 								["qg"] = 93538, -- Dariness the Learned
-							}),
-							q(41183, {	-- Academic Exploration
+							})),
+							qr(q(41183, {	-- Academic Exploration
 								["qg"] = 93538, -- Dariness the Learned
-							}),
+							})),
 							q(40857, {	-- Bits and Pieces
 								["qg"] = 93538, -- Bariness the Learned
 								["sourceQuests"] = {
@@ -1482,36 +1482,36 @@ _.Zones =
 									41167,	-- Fel Fragments
 								},
 							}),
-							q(41167, {	-- Fel Fragments
+							qr(q(41167, {	-- Fel Fragments
 								["qg"] = 93538, -- Dariness the Learned
-							}),
-							q(41158, {	-- Fragments of the Fjords
+							})),
+							qr(q(41158, {	-- Fragments of the Fjords
 								["qg"] = 93538, -- Dariness the Learned
-							}),
-							q(41177, {	-- Goblin Archaeology
+							})),
+							qr(q(41177, {	-- Goblin Archaeology
 								["qg"] = 93538, -- Dariness the Learned
-							}),
-							q(41186, {	-- History of Highmountain
+							})),
+							qr(q(41186, {	-- History of Highmountain
 								["qg"] = 93538, -- Dariness the Learned
-							}),
-							q(41164, {	-- One Step Closer
+							})),
+							qr(q(41164, {	-- One Step Closer
 								["qg"] = 93538, -- Dariness the Learned
-							}),
-							q(41161, {	-- Out of the Frying Pan
+							})),
+							qr(q(41161, {	-- Out of the Frying Pan
 								["qg"] = 93538, -- Dariness the Learned
-							}),
-							q(41171, {	-- The Reliquary Calls
+							})),
+							qr(q(41171, {	-- The Reliquary Calls
 								["qg"] = 93538, -- Dariness the Learned
-							}),
-							q(41192, {	-- The Right Path
+							})),
+							qr(q(41192, {	-- The Right Path
 								["qg"] = 93538, -- Dariness the Learned
-							}),
-							q(41180, {	-- Unspeakable Power
+							})),
+							qr(q(41180, {	-- Unspeakable Power
 								["qg"] = 93538, -- Dariness the Learned
-							}),
-							q(41174, {	-- Worth Its Weight
+							})),
+							qr(q(41174, {	-- Worth Its Weight
 								["qg"] = 93538, -- Dariness the Learned
-							}),
+							})),
 						},
 						["requireSkill"] = 794,
 					}),

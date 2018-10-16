@@ -24,9 +24,9 @@ _.Zones =
 					p(419), 	-- Small Frog 
 					p(387), 	-- Snake
 					p(515), 	-- Sporeling Sprout
-					q(31923, {	-- Ras'an
+					qr(q(31923, {	-- Ras'an
 						["qg"] = 66551,	-- Ras'an
-					}),
+					})),
 				}),
 				n(-17, {	-- Quests
 					ach(1190, {	-- Mysteries of the Marsh

@@ -27,7 +27,7 @@ _.Zones =
 					ach(5449, { -- Rock Lover
 						i(60869), -- Pebble
 					}),
-					q(31973),	-- Bordin Steadyfist
+					qr(q(31973)),	-- Bordin Steadyfist
 				}),
 				n(-38, { -- Profession
 					n(-188, { 	-- Mining

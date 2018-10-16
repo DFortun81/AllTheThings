@@ -458,6 +458,7 @@ _.Zones =
 							dr(39, i(119373)),	-- Nightmare-Chain Bracers
 						},
 						["questID"] = 37360,
+						["isDaily"] = true,
 						["description"] = "|cff66ccffLocated inside void portal phase.|r",
 					}), 
 					o(235289, { 	-- Garrison Workman's Hammer
@@ -531,13 +532,15 @@ _.Zones =
 						["groups"] = {	
 							dr(33, i(119401)),	-- Sentinel's Wingblade
 						},
-						["questID"] = 37393,	
+						["questID"] = 37393,
+						["isDaily"] = true,						
 					}),
 					n(87019, { 		-- Gluttonous Giant
 						["groups"] = {	
 							dr(44, i(119404)), 	-- Glowing Morel
 						},
-						["questID"] = 37390,	
+						["questID"] = 37390,
+						["isDaily"] = true,							
 					}), 
 					n(86724, { 		-- Hermit Palefur
 						["groups"] = {	
@@ -556,13 +559,15 @@ _.Zones =
 							dr(40, i(119354)),	-- Cowl of the Unraveller
 						},
 						["questID"] = 37361,
+						["isDaily"] = true,	
 						["description"] = "|cff66ccffLocated inside void portal phase, requires 3 people to click orb.|r",
 					}), 
 					n(87026, { 		-- Mecha Plunderer
 						["groups"] = {	
 							dr(41, i(119398)),	-- Plunderer's Drill
 						},
-						["questID"] = 37391,	
+						["questID"] = 37391,
+						["isDaily"] = true,							
 					}), 
 					n(84417, { 		-- Mutafen
 						["groups"] = {	
@@ -909,7 +914,8 @@ _.Zones =
 						["groups"] = {	
 							dr(32, i(119363)),	-- Stretchy Purple Pants
 						},
-						["questID"] = 37392,	
+						["questID"] = 37392,
+						["isDaily"] = true,							
 					}), 
 					o(234456, { 		-- Shattered Hand Lockbox
 						["groups"] = {
@@ -964,14 +970,16 @@ _.Zones =
 						["groups"] = {	
 							dr(38, i(119407)),	-- Cloudsplitter Greatstaff
 						},
-						["questID"] = 37394,	
+						["questID"] = 37394,
+						["isDaily"] = true,						
 					}), 
 					n(85026, { 		-- Soul-Twister Torek
 						["groups"] = {	
 							dr(37, i(119410)),	-- Soultwisting Staff
 							dr(14, i(119178)),	-- Black Whirlwind Toy
 						},
-						["questID"] = 37358,	
+						["questID"] = 37358,
+						["isDaily"] = true,
 					}), 
 					n(84805, { 		-- Stonespite
 						["groups"] = {	
@@ -999,6 +1007,7 @@ _.Zones =
 							dr(40, i(119392)),	-- Voidreaver's Axe
 						},
 						["questID"] = 37359,	
+						["isDaily"] = true,
 					}), 
 					o(235307, { 		-- Waterlogged Satchel
 						["groups"] = {

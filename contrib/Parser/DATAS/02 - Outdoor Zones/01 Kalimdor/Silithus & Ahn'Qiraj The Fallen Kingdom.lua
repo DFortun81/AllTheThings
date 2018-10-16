@@ -1417,18 +1417,21 @@ END OF MICRO-HOLIDAY --]]
 									i(156851),	-- Silithid Mini-Tank
 								},
 								["questID"] = 50255,
+								["isDaily"] = true,
 							}),
 							n(132580, {	-- Ssinkrix
 								["groups"] = {
 									i(156851),	-- Silithid Mini-Tank
 								},
 								["questID"] = 50223,
+								["isDaily"] = true,
 							}),
 							n(132584, {	-- Xaarshej
 								["groups"] = {
 									i(156851),	-- Silithid Mini-Tank
 								},
 								["questID"] = 50224,
+								["isDaily"] = true,
 							}),
 						}),
 					},
