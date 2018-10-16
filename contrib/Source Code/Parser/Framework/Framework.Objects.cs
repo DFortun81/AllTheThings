@@ -1060,15 +1060,15 @@ namespace Parser_V2
                 File.WriteAllText(Path.Combine(directory, "Categories.lua"), Framework.ExportRaw(AllContainers).ToString());
 
                 // Cache the "Unsorted" list.
-                if(AllContainers.TryGetValue("Unsorted", out List<object> unsorted))
+                if (AllContainers.TryGetValue("Unsorted", out List<object> unsorted))
                 {
                     // Export all Unsorted.
                     File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), Framework.ExportRaw(unsorted).ToString());
 
                     // Export all Unsorted items... in a sorted way.
                     var sortedList = new List<Dictionary<string, object>>();
-                        foreach (var tierList in unsorted)
-                        {
+                    foreach (var tierList in unsorted)
+                    {
                         if (tierList is Dictionary<string, object> tier && tier.TryGetValue("g", out object g) && g is List<object> groups)
                         {
                             foreach (var o in groups)
@@ -1479,7 +1479,7 @@ namespace Parser_V2
                     case "coord":
                         {
                             // Convert the data to a list of generic objects.
-                            if(!(value is List<object> newList))
+                            if (!(value is List<object> newList))
                             {
                                 if (value is Dictionary<object, object> dict)
                                 {
@@ -1499,7 +1499,7 @@ namespace Parser_V2
                                 var newcount = newcoord.Count;
                                 foreach (var oldcoordinateRef in coords)
                                 {
-                                    if(oldcoordinateRef is List<object> oldcoord)
+                                    if (oldcoordinateRef is List<object> oldcoord)
                                     {
                                         var oldcount = oldcoord.Count;
                                         if (oldcount == newcount)
@@ -1534,7 +1534,7 @@ namespace Parser_V2
                             // Convert the data to a list of generic objects.
                             if (value is List<object> newList)
                             {
-                                foreach(var coord in newList) Merge(item, "coord", coord);
+                                foreach (var coord in newList) Merge(item, "coord", coord);
                             }
                             else if (value is Dictionary<object, object> dict)
                             {
