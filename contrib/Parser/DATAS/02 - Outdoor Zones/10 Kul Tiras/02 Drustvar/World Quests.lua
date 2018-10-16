@@ -126,12 +126,13 @@ _.Zones =
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
-								q(51658, {	-- Fly the Coop!
+								{	-- Fly the Coop! [A]
+									["questID"] = 51658, 	-- Fly the Coop!
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
-								}),
+								},
 								q(51604, {	-- Hunters Hunted [A]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -160,6 +161,13 @@ _.Zones =
 									["lvl"] = 120,			-- WQ is 120+ only
 									["requireSkill"] = 186, -- Mining
 								},
+								{	-- Once More Into Battle [A]
+									["questID"] = 51454,	-- Once More Into Battle
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(52278, {	-- Rogue Azerite [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
@@ -169,12 +177,14 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								q(51906, {	-- Sister Martha
+								{	-- Sister Martha [A]
+									["questID"] = 51906, 	-- Sister Martha
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
-								}),
+									--Note!! Bleakweald Handguards offered 10/16
+								},
 								q(51683, {	-- Slash and Burn Tactics
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -188,12 +198,20 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								q(51431, {	-- Soul Goliath
+								{	-- Soul Goliath [A]
+									["questID"] = 51431, 	-- Soul Goliath
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
-								}),
+								},
+								{	-- Talon [A]
+									["questID"] = 51529,	-- Talon
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(51767, {	-- Trapline [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -208,13 +226,14 @@ _.Zones =
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
-								q(51397, {	-- Up In Your Drill
+								{	-- Up In Your Drill [A]
+									["questID"] = 51397, 	-- Up In Your Drill
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
-								}),
+								},
 								q(51530, {	-- Wedding Crashers
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
