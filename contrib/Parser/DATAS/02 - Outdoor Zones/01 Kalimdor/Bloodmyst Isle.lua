@@ -237,9 +237,9 @@ _.Zones =
 						},
 						["qg"] = 17843,	-- Vindicator Kuros
 					}),
-					qa(9642, {	-- More Irradiated Crystal Shards
-						["qg"] = 17684,	-- Vindicator Boros
-					}),
+					qr(qa(9642, { -- More Irradiated Crystal Shards
+					    ["qg"] = 17684,    -- Vindicator Boros
+					})),
 					qa(9632, {	-- Newfound Allies
 						["qg"] = 17424,	-- Anchorite Paetheus
 					}),
