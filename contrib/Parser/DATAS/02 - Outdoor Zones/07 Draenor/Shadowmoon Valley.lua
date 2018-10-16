@@ -199,16 +199,16 @@ _.Zones =
 					}),
 					n(86213, { 		-- Aqualir
 						["groups"] = {	
-							dr(33, i(113557)),	-- Dragonrider's Tinkered Leggings 
+							dr(33, i(113557)),	-- Loop of Drowned Souls - Droprate is unknown on WoWhead
 						},
 						["questID"] = 37356,
 						["isDaily"] = true,							
 					}),
 					n(85568, { 		-- Avalanche
 						["groups"] = {		
-							dr(44, i(119387)), 	-- Loop of Drowned Souls - Droprate is unknown on WoWhead
+							dr(44, i(119400)), -- Rugged Crystal Cudgel
 						},
-						["questID"] = 37356,
+						["questID"] = 37410,
 						["isDaily"] = true,						
 					}),
 					n(82326, { 		-- Ba'ruun 
