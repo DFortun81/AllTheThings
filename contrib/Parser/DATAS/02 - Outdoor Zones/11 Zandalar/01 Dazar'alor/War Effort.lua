@@ -93,25 +93,25 @@ _.Zones =
 									["repeatable"] = true,
 									["isWeekly"] = true,
 								}),
-								q(53208, {	-- To The Front
+								qr(q(53208, {	-- To The Front
 									["sourceQuests"] = { 138949 },	-- The Warfront Looms
 									["qg"] = 138949,	-- Throk <Recruitment Officer>
 									["coord"] = {
 										52.97, 94.35
 									},
-								}),
-								q(53209, {	-- Warfront Contribution
+								})),
+								qr(q(53209, {	-- Warfront Contribution
 									["qg"] = 138949,	-- Throk <Recruitment Officer>
 									["coord"] = {
 										52.97, 94.35
 									},
-								}),
-								q(53207, {	-- The Warfront Looms
+								})),
+								qr(q(53207, {	-- The Warfront Looms
 									["qg"] = 138949,	-- Throk <Recruitment Officer>
 									["coord"] = {
 										52.97, 94.35
 									},
-								}),
+								})),
 							},
 						}),
 					},

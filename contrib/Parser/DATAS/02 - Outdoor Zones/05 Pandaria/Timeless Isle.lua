@@ -88,6 +88,7 @@ _.Zones =
 							71824,	-- Angry Sprite
 							71826,	-- Scary Sprite
 						},
+						["isDaily"] = true,	
 						["description"] = "Click on Neverending Spritewood (Purple Crystal) to transform and be able to attack the sprites. The more you AOE and kill them, the longer they will continue to spawn.",
 						["groups"] = {
 							{
@@ -99,7 +100,8 @@ _.Zones =
 						},
 					},
 					n(73174, {	-- Archiereus of Flame
-						["questID"] = 33312,	-- Tracking Quest - Daily - Archiereus of Flame
+						["questID"] = 33312,
+						["isDaily"] = true,
 						["groups"] = {
 							dr(7, i(103982)),	-- Burden of Eternity
 						},
@@ -428,6 +430,7 @@ _.Zones =
 							},
 						},
 						["questID"] = 33294,
+						["isDaily"] = true,	
 					}), 
 					n(72898, { 	-- High Priest of Ordos
 						{

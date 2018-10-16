@@ -96,12 +96,12 @@ _.Zones =
 						},
 						["description"] = "Account-Wide Quest.|r",
 					}),
-					q(32863, { 	-- What We've Been Training For
+					qr(q(32863, { 	-- What We've Been Training For
 						["groups"] = {
 							i(98095),	-- Brawler's Pet Supplies
 						},
 						["description"] = "Account-Wide Weekly Quest.|r",
-					}),
+					})),
 				}),
 				na(-17, {	-- Quests	
 					qa(52946, {	-- A Dying World
