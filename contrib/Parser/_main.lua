@@ -840,6 +840,7 @@ end
 qw = function(t)							
 	t.description = "This is a weekly quest.";
 	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_tomb";
+	t.isWeekly = true;
 	return t;
 end
 qwe = function(t)						-- Gives a quest the World Event Description
