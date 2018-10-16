@@ -611,13 +611,15 @@ _.Zones =
 						["groups"] = {	
 							dr(40, i(119378)),	-- Socrethar's Stone
 						},
-						["questID"] = 37338,					
+						["questID"] = 37338,
+						["isDaily"] = true,						
 					}), 
 					n(87597, { 		-- Bombardier Gu'gok
 						["groups"] = {	
 							dr(41, i(119413)),	-- Gu'gok's Rangefinder
 						},
-						["questID"] = 37339,					
+						["questID"] = 37339,
+						["isDaily"] = true,						
 					}), 
 					o(228012, { 	-- Charred Sword
 						["groups"] = {
@@ -672,6 +674,13 @@ _.Zones =
 						},
 						["questID"] = 35018,	
 					}), 
+					n(82992, { 		-- Felfire Consort
+						["groups"] = {	
+							dr(33, i(119386)),	-- Consort's Promise Ring - Droprate unknown on WoWhead
+						},
+						["questID"] = 37341,
+						["isDaily"] = true,							
+					}), 
 					n(77614, { 		-- Frenzied Golem
 						["groups"] = {	
 							dr(57, i(113287)),	-- Shard of Scorn
@@ -697,13 +706,15 @@ _.Zones =
 						["groups"] = {	
 							dr(35, i(119402)),	-- Gurg'tol's Imp Imperator
 						},
-						["questID"] = 37340,			
+						["questID"] = 37340,
+						["isDaily"] = true,						
 					}), 
 					n(83008, { 		-- Haakun the All-Consuming
 						["groups"] = {	
 							dr(44, i(119403)),	-- Sargerei Soulbiter
 						},
-						["questID"] = 37312,					
+						["questID"] = 37312,
+						["isDaily"] = true,							
 					}), 
 					n(77715, { 		-- Hammertooth
 						["groups"] = {	
@@ -750,32 +761,44 @@ _.Zones =
 						["groups"] = {	
 							dr(64, i(119394)),	-- Kurlosh's Kidneyslicer
 						},
-						["questID"] = 37348,	
+						["questID"] = 37348,
+						["isDaily"] = true,						
 					}), 
 					n(82942, { 		-- Lady Demlash
 						["groups"] = {	
 							dr(67, i(119352)),	-- Demlash's Dashing Robe
 						},
-						["questID"] = 37346,						
+						["questID"] = 37346,
+						["isDaily"] = true,						
 					}), 
 					n(88494, { 		-- Legion Vanguard
 						["groups"] = {	
 							dr(43, i(119385)),	-- Vanguard's Linebreaking Bracer
 						},
-						["questID"] = 37342,	
+						["questID"] = 37342,
+						["isDaily"] = true,							
 						["description"] = "Kill about 10 Council Soulspeaker's, then kill 3 waves of 3 mobs, then Legion Vanguard will spawn. Kill him.",
 					}),
+					n(82920, { 		-- Lord Korinak
+						["groups"] = {	
+							dr(33, i(119388)),	-- Doomlord's Seal of Command - Droprate unknown on WoWhead
+						},
+						["questID"] = 37345,
+						["isDaily"] = true,							
+					}), 
 					n(82998, { 		-- Matron of Sin
 						["groups"] = {	
 							dr(71, i(119353)),	-- Matron's Supple Gloves
 						},
-						["questID"] = 37349,						
+						["questID"] = 37349,
+						["isDaily"] = true,						
 					}), 
 					n(87668, { 		-- Orumo the Observer
 						["groups"] = {
 							dr(12, i(119170)), 	-- Eye of Observation Pet
 						},
 						["questID"] = 37344,
+						["isDaily"] = true,
 						["description"] = "|cff66ccffRequires 5 players to summon. Stand on runes.|r",
 					}), 
 					n(77741, { 		-- Ra'kahn
@@ -889,6 +912,7 @@ _.Zones =
 							dr(39, i(119350)),	-- Sargerei Councillor's Drape
 						},
 						["questID"] = 37337,
+						["isDaily"] = true,	
 						["modelID"] = 60730,
 						["description"] = "Strategist Ankor, Archmagus Tekar, and Soulbinder Naylana.|r",	
 					}), 
@@ -897,6 +921,7 @@ _.Zones =
 							dr(70, i(119393)),	-- Searing Shadowflame Axe
 						},
 						["questID"] = 37347,
+						["isDaily"] = true,
 					}), 
 					n(79543, { 		-- Shirzir
 						["groups"] = {	
@@ -960,7 +985,8 @@ _.Zones =
 						["groups"] = {	
 							dr(62, i(119383)),	-- Shoulderplates of the Vigilant
 						},
-						["questID"] = 37350,	
+						["questID"] = 37350,
+						["isDaily"] = true,						
 					}),
 					n(77564, { 		-- Viperlash
 						["groups"] = {
@@ -990,7 +1016,8 @@ _.Zones =
 						["groups"] = {	
 							dr(39, i(119371)),	-- Mantle of the Destroyer
 						},
-						["questID"] = 37343,							
+						["questID"] = 37343,
+						["isDaily"] = true,							
 					}), 
 					n(77529, { 		-- Yazheera the Incinerator
 						["groups"] = {	
@@ -1000,11 +1027,9 @@ _.Zones =
 					}), 
 --[[					
 				--	n(77561, { 		-- Dr. Gloom	}),				
-				--	n(82992, { 		-- Felfire Consort	}), 
 				--	n(80471, { 		-- Gennadian	}), 
 				--	n(77719, { 		-- Glimmerwing	}), 
-				--	n(77784, { 		-- Lo'marg Jawcrusher	}), 
-				--	n(82920, { 		-- Lord Korinak	}), 
+				--	n(77784, { 		-- Lo'marg Jawcrusher	}),  
 				--	n(79334, { 		-- No'losh	}), 
 				--	n(80524, { 		-- Underseer Bloodmane	}), 
 --]]				
