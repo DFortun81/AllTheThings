@@ -159,6 +159,7 @@ _.Zones =
 							},
 						},
 						["questID"] = 33301,
+						["isDaily"] = true,	
 					}), 
 					n(72895, { 	-- Burning Berserker
 						{
@@ -193,7 +194,8 @@ _.Zones =
 								["dr"] = 1.1,
 							},
 						},
-						["questID"] = 33299,	
+						["questID"] = 33299,
+						["isDaily"] = true,							
 					}), 
 					n(72045, { 	-- Chelon
 						["groups"] = {
@@ -205,6 +207,7 @@ _.Zones =
 							},
 						},
 						["questID"] = 32966,
+						["isDaily"] = true,	
 						["description"] = "|cff66ccffClick on Conspicuously Empty Shell to cause the boss to become attackable.|r",
 					}),
 					n(73175, {	-- Cinderfall
@@ -296,6 +299,7 @@ _.Zones =
 							},
 						},
 						["questID"] = 33314,
+						["isDaily"] = true,	
 						["description"] = "|cff66ccffNeed to have Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active. |r",
 					}),
 					n(73158, {	-- Emerald Gander
@@ -375,7 +379,8 @@ _.Zones =
 								["dr"] = 3,
 							},
 						},
-						["questID"] = 33300,	
+						["questID"] = 33300,
+						["isDaily"] = true,						
 					}), 
 					n(72970, { 	-- Golganarr
 						["groups"] = {
@@ -393,6 +398,7 @@ _.Zones =
 							},
 						},
 						["questID"] = 33315,
+						["isDaily"] = true,	
 					}), 
 					n(73161, { 	-- Great Turtle Furyshell
 						["groups"] = {
@@ -403,7 +409,8 @@ _.Zones =
 								["dr"] = 1.7,
 							},
 						},
-						["questID"] = 33297,	
+						["questID"] = 33297,
+						["isDaily"] = true,							
 					}), 
 					n(72909, { 	-- Gu'chi the Swarmbringer
 						["groups"] = {
@@ -446,6 +453,7 @@ _.Zones =
 							},
 						},
 						["questID"] = 33311,
+						["isDaily"] = true,
 					}), 
 					n(73163, { 	-- Imperial Python
 						["groups"] = {
@@ -463,9 +471,11 @@ _.Zones =
 							},
 						},
 						["questID"] = 33303,
+						["isDaily"] = true,
 					}), 
 					n(73160, { 	-- Ironfur Steelhorn
-						["questID"] = 33296,	-- Tracking Quest - Daily - Ironfur Steelhorn
+						["questID"] = 33296,
+						["isDaily"] = true,
 						["groups"] = {
 							i(89770),	-- Tuft of Yak Fur
 						},
@@ -504,7 +514,8 @@ _.Zones =
 								["dr"] = 0.03,
 							},
 						},
-						["questID"] = 33306,	
+						["questID"] = 33306,
+						["isDaily"] = true,						
 					}), 
 					n(72193, {	-- Karkanos
 						{
@@ -529,7 +540,8 @@ _.Zones =
 								["dr"] = 3,
 							},
 						},
-						["questID"] = 33298,	
+						["questID"] = 33298,
+						["isDaily"] = true,						
 					}), 
 					n(72007, { 	-- Master Kukuru
 						["groups"] = {
@@ -567,7 +579,8 @@ _.Zones =
 								["dr"] = 1.8,
 							},
 						},
-						["questID"] = 33302,	
+						["questID"] = 33302,
+						["isDaily"] = true,						
 					}),
 					n(72875, {	-- Ordon Candlekeeper
 						{
@@ -684,7 +697,8 @@ _.Zones =
 							},
 							dr(0.8, i(104227)),	-- Technique: Glyph of Pillar of Light
 						},
-						["questID"] = 33293,							
+						["questID"] = 33293,
+						["isDaily"] = true,						
 					}),
 					n(72908, {	-- Spotted Swarmer
 						{
@@ -695,7 +709,8 @@ _.Zones =
 						},
 					}),
 					n(73704, { 	-- Stinkbraid
-						["questID"] = 33305,	-- Tracking Quest - Daily - Stinkbraid
+						["questID"] = 33305,
+						["isDaily"] = true,
 						["groups"] = {
 							i(103982),	-- Burden of Eternity
 						},
@@ -754,6 +769,7 @@ _.Zones =
 							},
 						},
 						["questID"] = 32959,
+						["isDaily"] = true,
 						["description"] = "|cff66ccffKill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when event is active.|r",		
 					}), 
 --[[	

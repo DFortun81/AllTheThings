@@ -103,9 +103,9 @@ _.Zones =
 					p(379), 	-- Squirrel
 					p(525), 	-- Turkey
 					p(1238), 	-- Unborn Val'kyr
-					q(31931, {	--  Beegle Blastfuse
+					qr(q(31931, {	--  Beegle Blastfuse
 						["qg"] = 66635,	-- Beegle Blastfuse
-					}),
+					})),
 				}),
 				n(-17, { 	-- Quests
 					a(ach(34, {	-- I've Toured the Fjord [A]

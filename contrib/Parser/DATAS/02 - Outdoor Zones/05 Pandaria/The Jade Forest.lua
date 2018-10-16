@@ -139,7 +139,7 @@ _.Zones =
 					qr(q(31953, { -- Grand Master Hyuna
 						i(89125),	-- Sack of Pet Supplies
 					})),
-					q(32440, { -- Whispering Pandaren Spirit
+					qr(q(32440, { -- Whispering Pandaren Spirit
 						["groups"] = {
 							i(93146, { -- Pandaren Spirit Pet Supplies
 								i(89139),	-- Chain Pet Leash
@@ -148,7 +148,7 @@ _.Zones =
 							})
 						},
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
-					}),
+					})),
 				}),
 				n(-38, { -- Profession
 					prof(171, { -- Alchemy
