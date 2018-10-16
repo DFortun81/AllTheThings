@@ -47,7 +47,7 @@ _.Zones =
 			},
 			["isRaid"] = true,
 			["achievementID"] = 12559,	-- Explore Zuldazar
-			["lvl"] = 108,
+			["lvl"] = 110,
 			["maps"] = {
 				--1163,	-- Dazar'alor
 				1164,	-- Dazar'alor

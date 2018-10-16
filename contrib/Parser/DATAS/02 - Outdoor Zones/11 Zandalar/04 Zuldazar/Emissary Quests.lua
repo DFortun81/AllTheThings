@@ -18,7 +18,7 @@ _.Zones =
 				}),
 			},
 			["achievementID"] = 12559,	-- Explore Zuldazar
-			["lvl"] = 108,
+			["lvl"] = 110,
 			--[[
 			["maps"] = { 
 				1163,	-- Dazar'alor
