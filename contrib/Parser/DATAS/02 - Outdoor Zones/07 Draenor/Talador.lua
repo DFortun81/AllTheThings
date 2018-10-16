@@ -611,15 +611,13 @@ _.Zones =
 						["groups"] = {	
 							dr(40, i(119378)),	-- Socrethar's Stone
 						},
-						["questID"] = 37338,
-						["isDaily"] = true,							
+						["questID"] = 37338,					
 					}), 
 					n(87597, { 		-- Bombardier Gu'gok
 						["groups"] = {	
 							dr(41, i(119413)),	-- Gu'gok's Rangefinder
 						},
-						["questID"] = 37339,
-						["isDaily"] = true,							
+						["questID"] = 37339,					
 					}), 
 					o(228012, { 	-- Charred Sword
 						["groups"] = {
@@ -699,15 +697,13 @@ _.Zones =
 						["groups"] = {	
 							dr(35, i(119402)),	-- Gurg'tol's Imp Imperator
 						},
-						["questID"] = 37340,
-						["isDaily"] = true,					
+						["questID"] = 37340,			
 					}), 
 					n(83008, { 		-- Haakun the All-Consuming
 						["groups"] = {	
 							dr(44, i(119403)),	-- Sargerei Soulbiter
 						},
-						["questID"] = 37312,
-						["isDaily"] = true,							
+						["questID"] = 37312,					
 					}), 
 					n(77715, { 		-- Hammertooth
 						["groups"] = {	
@@ -760,30 +756,26 @@ _.Zones =
 						["groups"] = {	
 							dr(67, i(119352)),	-- Demlash's Dashing Robe
 						},
-						["questID"] = 37346,
-						["isDaily"] = true,							
+						["questID"] = 37346,						
 					}), 
 					n(88494, { 		-- Legion Vanguard
 						["groups"] = {	
 							dr(43, i(119385)),	-- Vanguard's Linebreaking Bracer
 						},
-						["questID"] = 37342,
-						["isDaily"] = true,	
+						["questID"] = 37342,	
 						["description"] = "Kill about 10 Council Soulspeaker's, then kill 3 waves of 3 mobs, then Legion Vanguard will spawn. Kill him.",
 					}),
 					n(82998, { 		-- Matron of Sin
 						["groups"] = {	
 							dr(71, i(119353)),	-- Matron's Supple Gloves
 						},
-						["questID"] = 37349,
-						["isDaily"] = true,							
+						["questID"] = 37349,						
 					}), 
 					n(87668, { 		-- Orumo the Observer
 						["groups"] = {
 							dr(12, i(119170)), 	-- Eye of Observation Pet
 						},
 						["questID"] = 37344,
-						["isDaily"] = true,	
 						["description"] = "|cff66ccffRequires 5 players to summon. Stand on runes.|r",
 					}), 
 					n(77741, { 		-- Ra'kahn
@@ -897,7 +889,6 @@ _.Zones =
 							dr(39, i(119350)),	-- Sargerei Councillor's Drape
 						},
 						["questID"] = 37337,
-						["isDaily"] = true,	
 						["modelID"] = 60730,
 						["description"] = "Strategist Ankor, Archmagus Tekar, and Soulbinder Naylana.|r",	
 					}), 
@@ -999,8 +990,7 @@ _.Zones =
 						["groups"] = {	
 							dr(39, i(119371)),	-- Mantle of the Destroyer
 						},
-						["questID"] = 37343,
-						["isDaily"] = true,							
+						["questID"] = 37343,							
 					}), 
 					n(77529, { 		-- Yazheera the Incinerator
 						["groups"] = {	

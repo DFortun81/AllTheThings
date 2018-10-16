@@ -540,7 +540,7 @@ _.Zones =
 							dr(44, i(119404)), 	-- Glowing Morel
 						},
 						["questID"] = 37390,
-						["isDaily"] = true,							
+						["isDaily"] = true,						
 					}), 
 					n(86724, { 		-- Hermit Palefur
 						["groups"] = {	
@@ -559,7 +559,7 @@ _.Zones =
 							dr(40, i(119354)),	-- Cowl of the Unraveller
 						},
 						["questID"] = 37361,
-						["isDaily"] = true,	
+						["isDaily"] = true,						
 						["description"] = "|cff66ccffLocated inside void portal phase, requires 3 people to click orb.|r",
 					}), 
 					n(87026, { 		-- Mecha Plunderer
@@ -567,7 +567,7 @@ _.Zones =
 							dr(41, i(119398)),	-- Plunderer's Drill
 						},
 						["questID"] = 37391,
-						["isDaily"] = true,							
+						["isDaily"] = true,						
 					}), 
 					n(84417, { 		-- Mutafen
 						["groups"] = {	
@@ -915,7 +915,7 @@ _.Zones =
 							dr(32, i(119363)),	-- Stretchy Purple Pants
 						},
 						["questID"] = 37392,
-						["isDaily"] = true,							
+						["isDaily"] = true,						
 					}), 
 					o(234456, { 		-- Shattered Hand Lockbox
 						["groups"] = {
@@ -1006,8 +1006,8 @@ _.Zones =
 						["groups"] = {	
 							dr(40, i(119392)),	-- Voidreaver's Axe
 						},
-						["questID"] = 37359,	
-						["isDaily"] = true,
+						["questID"] = 37359,
+						["isDaily"] = true,						
 					}), 
 					o(235307, { 		-- Waterlogged Satchel
 						["groups"] = {
