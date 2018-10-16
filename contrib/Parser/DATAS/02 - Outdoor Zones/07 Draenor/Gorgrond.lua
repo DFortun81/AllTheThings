@@ -596,6 +596,7 @@ _.Zones =
 							dr(42, i(119361)),	-- Thorn-Knuckled Gloves
 						},
 						["questID"] = 37371,
+						["isDaily"] = true,
 					}), 
 					n(82085, { 		-- Bashiok
 						["groups"] = {	
@@ -613,7 +614,8 @@ _.Zones =
 						["groups"] = {	
 							dr(65, i(119228)),	-- Ro'gor's Slippers of Silence
 						},
-						["questID"] = 37368,	
+						["questID"] = 37368,
+						["isDaily"] = true,							
 					}),
 					o(235859, { 	-- Brokor's Sack
 						["groups"] = {
@@ -632,13 +634,15 @@ _.Zones =
 						["groups"] = {	
 							dr(59, i(119224)),	-- Foereaver Polearm
 						},
-						["questID"] = 37362,	
+						["questID"] = 37362,
+						["isDaily"] = true,							
 					}), 
 					n(82058, { 		-- Depthroot
 						["groups"] = {	
 							dr(38, i(119406)),	-- Depthroot's Forearm
 						},
 						["questID"] = 37370,	
+						["isDaily"] = true,	
 					}), 
 					o(236141, { 	-- Discarded Pack
 						["groups"] = {
@@ -698,7 +702,8 @@ _.Zones =
 						["groups"] = {	
 							dr(59, i(119225)),	-- Studded Gronn-Stitched Girdle
 						},
-						["questID"] = 37366,	
+						["questID"] = 37366,
+						["isDaily"] = true,							
 					}),	
 					o(239828, { 	-- Edge of Reality
 						["groups"] = {
@@ -772,7 +777,8 @@ _.Zones =
 						["groups"] = {	
 							dr(40, i(119381)),	-- Grash's Fireproof Handguards
 						},
-						["questID"] = 37373,	
+						["questID"] = 37373,
+						["isDaily"] = true,							
 					}), 
 					n(85250, { 		-- Fossilwood the Petrified
 						["groups"] = {	
@@ -784,7 +790,8 @@ _.Zones =
 						["groups"] = {	
 							dr(100, i(119397)), -- Gnarled Goren Jaw
 						},						
-						["questID"] = 37413,	
+						["questID"] = 37413,
+						["isDaily"] = true,							
 					}), 
 					n(84431, { 		-- Greldrok the Cunning
 						["groups"] = {	
@@ -796,7 +803,8 @@ _.Zones =
 						["groups"] = {	
 							dr(40, i(119414)),  -- Yal's Leafwrap Cloak
 						},						
-						["questID"] = 37375,	
+						["questID"] = 37375,
+						["isDaily"] = true,						
 					}), 
 					n(83522, { 		-- Hive Queen Skrikka
 						["groups"] = {	
@@ -808,43 +816,53 @@ _.Zones =
 						["groups"] = {	
 							dr(62, i(119229)),	-- Horgg's Bandolier
 						},
-						["questID"] = 37365, 	
+						["questID"] = 37365, 
+						["isDaily"] = true,						
 					}), 
 					n(88672, { 		-- Hunter Bal'ra
 						["groups"] = {
 							dr(42, i(119412)),	-- Bal'ra's Compound Bow
 						},
-						["questID"] = 37377,	
+						["questID"] = 37377,
+						["isDaily"] = true,							
 					}),
 					n(86574, { 		-- Inventor Blammo
 						["groups"] = {	
 							dr(65, i(119226)), -- Blammo's Blammer
 						},
-						["questID"] = 37367,	
+						["questID"] = 37367,
+						["isDaily"] = true,							
 					}), 
 					n(78260, { 		-- King Slime
 						["groups"] = {	
 							dr(37, i(119351)),	-- Slime Coated Kingscloak
 						},
-						["questID"] = 37412,		
+						["questID"] = 37412,
+						["isDaily"] = true,							
 					}), 
 					n(84406, { 		-- Mandrakor
 						["groups"] = {		
 							dr(100, i(118709)),	-- Doom Bloom Pet
 						},
 						["questID"] = 36178,		
-					}), 
+					}),
+					n(86562, { 		-- Maniacal Madgard
+						["questID"] = 37363,
+						["isDaily"] = true,							
+					}), 					
 					n(88586, { 		-- Mogamago
 						["groups"] = {		
 							dr(41, i(119391)),	-- Etched Osteoderm Shield
 						},
-						["questID"] = 37376,	
+						["questID"] = 37376,
+						["isDaily"] = true,						
 					}), 
 					n(86582, { 		-- Morgo Kain
 						["groups"] = {		
 							dr(63, i(119227)),	-- Morgo's Unstoppable Ramming Helm
 						},
-						["questID"] = 37364,		
+						["questID"] = 37364,
+						["isDaily"] = true,							
 					}), 
 					n(76473, { 		-- Mother Araneae
 						["groups"] = {	
@@ -1082,7 +1100,8 @@ _.Zones =
 						["groups"] = {	
 							dr(38, i(119367)),	-- Flayerscale Carapace Stompers
 						},
-						["questID"] = 37374,		
+						["questID"] = 37374,
+						["isDaily"] = true,						
 					}), 
 					n(86410, { 		-- Sylldross
 						["groups"] = {		
@@ -1090,11 +1109,16 @@ _.Zones =
 						},
 						["questID"] = 36794,		
 					}), 
+					n(80371, { 		-- Typhon
+						["questID"] = 37405,
+						["isDaily"] = true,							
+					}), 
 					n(86266, { 		-- Venolasix
 						["groups"] = {	
 							dr(41, i(119395)),	-- Hydratooth Dagger
 						},
-						["questID"] = 37372,		
+						["questID"] = 37372,
+						["isDaily"] = true,						
 					}),
 					o(236147, { 	-- Vindicator's Hammer
 						["groups"] = {
@@ -1127,11 +1151,9 @@ _.Zones =
 				--	n(81038, { 		-- Gelgor of the Blue Flame	}), 
 				--	n(80868, { 		-- Glut	}), 
 				--	n(81537, { 		-- Khargax the Devourer	}), 
-				--	n(86562, { 		-- Maniacal Madgard	}), 
 				--	n(77093, { 		-- Roardan the Sky Terror	}), 
 				--	n(85264, { 		-- Rolkor	}), 
-				--	n(79629, { 		-- Stomper Kreego	}), 
-				--	n(80371, { 		-- Typhon	}), 				
+				--	n(79629, { 		-- Stomper Kreego	}), 				
 --]]				
 				}),
 				{	-- Treasure Chest
