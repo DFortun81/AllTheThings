@@ -201,7 +201,8 @@ _.Zones =
 						["groups"] = {	
 							dr(33, i(113557)),	-- Dragonrider's Tinkered Leggings 
 						},
-						["questID"] = 37356,	
+						["questID"] = 37356,
+						["isDaily"] = true,							
 					}),
 					n(85568, { 		-- Avalanche
 						["groups"] = {		
@@ -398,7 +399,8 @@ _.Zones =
 						["groups"] = {	
 							dr(36, i(119369)), -- Malgosh's Coif 
 						},
-						["questID"] = 37357,	
+						["questID"] = 37357,
+						["isDaily"] = true,							
 					}),
 					n(85001, { 		-- Master Sergeant Milgra
 						["groups"] = {	

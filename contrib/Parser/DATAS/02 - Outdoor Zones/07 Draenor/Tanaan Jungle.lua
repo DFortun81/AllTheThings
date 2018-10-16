@@ -193,6 +193,7 @@ _.Zones =
 							dr(34, i(127326)), -- Fel Destroyer Crossbow 
 						},
 						["questID"] = 38430,
+						["isDaily"] = true,	
 					}),
 					o(241692, { -- Axe of the Weeping Wolf
 						["groups"] = {
@@ -209,18 +210,21 @@ _.Zones =
 							}),
 						},
 						["questID"] = 38609,
+						["isDaily"] = true,
 					}),
 					n(90884, {	-- Bilkor the Thrower
 						["groups"] = {
 							dr(36, i(127307)), 	-- Battle-Scuffed Spaulders 
 						},
 						["questID"] = 38262,
+						["isDaily"] = true,
 					}),
 					n(92657, {	-- Bleeding Hollow Horror
 						["groups"] = {
 							i(127654), -- Burning Agony
 						},
 						["questID"] = 38696, -- Bleeding Hollow Horror
+						["isDaily"] = true,
 					}),
 					o(241835, { -- Bleeding Hollow Mushroom Stash
 						["groups"] = {
@@ -234,6 +238,7 @@ _.Zones =
 							dr(33, i(127303)), 	-- Zulk's Sneaky Slippers 
 						},
 						["questID"] = 38266,
+						["isDaily"] = true,
 					}),
 					o(241742, { -- Book of Zyzzix
 						["groups"] = {
@@ -247,18 +252,21 @@ _.Zones =
 							dr(30, i(127652)), 	-- Felflame Campfire Toy
 						},
 						["questID"] = 38209,
+						["isDaily"] = true,
 					}),
 					n(92429, {	-- Broodlord Ixkor
 						["groups"] = {
 							i(127349), -- Silver Chitin Ring
 						},
-						["questID"] = 38589, -- Broodlord Ixkor
+						["questID"] = 38589,
+						["isDaily"] = true,
 					}),
 					n(93264, {	-- Captain Grok'mar
 						["groups"] = {
 							dr(100, i(127664)),	-- Grokmar's Greaves of Fortification
 						},
 						["questID"] = 38820,
+						["isDaily"] = true,
 					}),
 					n(93076, {	-- Captain Ironbeard <The True Scourge of the Iron Seas>
 						["groups"] = {
@@ -268,6 +276,7 @@ _.Zones =
 							}),
 						},
 						["questID"] = 38756,
+						["isDaily"] = true,
 					}),
 					n(90434, {	-- Ceraxas
 						["groups"] = {
@@ -276,6 +285,7 @@ _.Zones =
 							}),
 						},
 						["questID"] = 38031,
+						["isDaily"] = true,
 						["description"] = "Killing Ceraxis will summon the Abandoned Fel Pup which has the quest to get pet.",
 					}),
 					n(90519, {	-- Cindral the Wildfire
@@ -285,19 +295,22 @@ _.Zones =
 								["questID"] = 39363, -- Equipment Blueprint: Ice Cutter
 							}),
 						},
-						["questID"] = 37990, -- Cindral the Wildfire
+						["questID"] = 37990,
+						["isDaily"] = true,
 					}),
 					n(91232, {	-- Commander Krag'goth
 						["groups"] = {
 							dr(34, i(127319)),	-- Krag'goth's Iron Gauntlets
 						},
 						["questID"] = 38746,
+						["isDaily"] = true,
 					}),
 					n(89675, {	-- Commander Org'mok
 						["groups"] = {
 							dr(35, i(127313)),	-- Org'mok's Riding Chaps 
 						},
 						["questID"] = 38749,
+						["isDaily"] = true,
 					}),
 					o(241605, { -- Crystalized Essence of Elements
 						["groups"] = {
@@ -323,6 +336,7 @@ _.Zones =
 							i(128315), -- Medallion of thee Legion
 						},
 						["questID"] = 39287,
+						["isDaily"] = true,
 					}),
 					o(241600, { -- Discarded Helm
 						["groups"] = {
@@ -341,36 +355,42 @@ _.Zones =
 							i(128315), -- Medallion of thee Legion
 						},
 						["questID"] = 39289,
+						["isDaily"] = true,
 					}),	
 					n(90887, {	-- Dorg the Bloody
 						["groups"] = {
 							dr(37, i(127301)),	-- Bloody Aberration Strap
 						},
 						["questID"] = 38265,
+						["isDaily"] = true,
 					}),	
 					n(98283, {	-- Drakum
 						["groups"] = {
 							dr(8, i(108631)),	-- Crashin' Thrashin' Roller Controller Toy
 						},
 						["questID"] = 40105,
+						["isDaily"] = true,
 					}),	
 					n(93028, {	-- Driss Vile
 						["groups"] = {
 							dr(36, i(127331)),	-- Double-Scoped Long Rifle
 						},
 						["questID"] = 38736,
+						["isDaily"] = true,
 					}),
 					n(90888, {	-- Drivnul
 						["groups"] = {
 							dr(36, i(127298)),	-- Blood Infused Leggings 
 						},
 						["questID"] = 38264,
+						["isDaily"] = true,
 					}),
 					n(91727, {	-- Executor Riloth
 						["groups"] = {
 							dr(35, i(127323)),	-- Bracers of Endless Suffering 
 						},
 						["questID"] = 38411,
+						["isDaily"] = true,
 					}),
 					o(241745, { -- Fel-Drenched Satchel
 						["groups"] = {
@@ -383,7 +403,8 @@ _.Zones =
 						["groups"] = {
 							i(127350), -- Fel Imbued Band
 						},
-						["questID"] = 38775, -- Felbore
+						["questID"] = 38775,
+						["isDaily"] = true,
 					}),
 					n(92647, {	-- Felsmith Damorka
 						["groups"] = {
@@ -393,18 +414,21 @@ _.Zones =
 							}),
 						},
 						["questID"] = 38634,
+						["isDaily"] = true,
 					}),
 					n(91098, {	-- Felspark
 						["groups"] = {
 							dr(33, i(127656)),	-- Fel Singed Wraps 
 						},
 						["questID"] = 38211,
+						["isDaily"] = true,
 					}),
 					n(98408, {	-- Fel Overseer Mudlump
 						["groups"] = {
 							i(129295), -- Spike-Toed Booterang
 						},
-						["questID"] = 40107, -- Fel Oveerseer Mudlump
+						["questID"] = 40107,
+						["isDaily"] = true,
 					}),
 					o(241533, { -- Forgotten Champion's Blade
 						["groups"] = {
@@ -428,30 +452,35 @@ _.Zones =
 							dr(32, i(127306)),	-- Gloomtalon's Spare Kilt 
 						},
 						["questID"] = 38604,
+						["isDaily"] = true,
 					}),
 					n(93125, {	-- Glub'glok
 						["groups"] = {
 							dr(35, i(127317)),	-- Murktide's Coveted Chestplate 
 						},
 						["questID"] = 38764,
+						["isDaily"] = true,
 					}),
 					n(98284, {	-- Gondar
 						["groups"] = {
 							dr(8, i(108633)),	-- Crashin' Thrashin' Cannon Controller Toy 
 						},
 						["questID"] = 40106,
+						["isDaily"] = true,
 					}),
 					n(92941, {	-- Gorabosh
 						["groups"] = {
 							dr(32, i(127304)),	-- Cave Keeper Wraps 
 						},
 						["questID"] = 38709,
+						["isDaily"] = true,
 					}),
 					n(91695, {	-- Grand Warlock Nethekurse
 						["groups"] = {
 							dr(35, i(127299)),	-- Nehtekurse's Robe of Contempt 
 						},
 						["questID"] = 38400,
+						["isDaily"] = true,
 					}),
 					n(93057, {	-- Grannok
 						["groups"] = {
