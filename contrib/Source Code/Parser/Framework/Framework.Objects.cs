@@ -1058,6 +1058,68 @@ namespace Parser_V2
             {
                 // Export all of the Containers
                 File.WriteAllText(Path.Combine(directory, "Categories.lua"), Framework.ExportRaw(AllContainers).ToString());
+
+                // Cache the "Unsorted" list.
+                if(AllContainers.TryGetValue("Unsorted", out List<object> unsorted))
+                {
+                    // Export all Unsorted.
+                    File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), Framework.ExportRaw(unsorted).ToString());
+
+                    // Export all Unsorted items... in a sorted way.
+                    var sortedList = new List<Dictionary<string, object>>();
+                        foreach (var tierList in unsorted)
+                        {
+                        if (tierList is Dictionary<string, object> tier && tier.TryGetValue("g", out object g) && g is List<object> groups)
+                        {
+                            foreach (var o in groups)
+                            {
+                                if (o is Dictionary<string, object> itemType && itemType.TryGetValue("g", out object its) && its is List<object> items)
+                                {
+                                    foreach (var i in items)
+                                    {
+                                        if (i is Dictionary<string, object> item && item.TryGetValue("itemID", out object itemIDRef))
+                                        {
+                                            if (item.TryGetValue("itemID", out object idObj))
+                                            {
+                                                var itemData = Items.GetNull(Convert.ToInt32(idObj));
+                                                if (itemData != null && itemData.TryGetValue("name", out object nameRef))
+                                                {
+                                                    item["name"] = nameRef;
+                                                }
+                                            }
+                                            sortedList.Add(item);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    sortedList.Sort(delegate (Dictionary<string, object> a, Dictionary<string, object> b)
+                    {
+                        if (a.TryGetValue("name", out object nameRefA))
+                        {
+                            if (b.TryGetValue("name", out object nameRefB))
+                            {
+                                return nameRefA.ToString().CompareTo(nameRefB.ToString());
+                            }
+                        }
+                        return 0;
+                    });
+                    var builder2 = new StringBuilder();
+                    foreach (var item in sortedList)
+                    {
+                        if (item.TryGetValue("itemID", out object itemIDRef))
+                        {
+                            builder2.Append("i(").Append(itemIDRef).Append(");");
+                            if (item.TryGetValue("name", out object nameRef))
+                            {
+                                builder2.Append("\t-- ").Append(nameRef.ToString().Replace("]", "").Replace("[", ""));
+                            }
+                            builder2.AppendLine();
+                        }
+                    }
+                    File.WriteAllText(Path.Combine(directory, "SortedItems.lua"), builder2.ToString());
+                }
             }
 
             /// <summary>
