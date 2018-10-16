@@ -475,6 +475,7 @@ _.Zones =
 					}),
 					n(72364, { 		-- Gorg'ak the Lava Guzzler
 						["questID"] = 37562,
+						["isDaily"] = true,
 						["groups"] = {
 							dr(37, i(111545)),	-- Smoldering Fist of Gorg'ak
 						},
@@ -533,6 +534,7 @@ _.Zones =
 					}),
 					n(87600, { 		-- Jaluk the Pacifist
 						["questID"] = 37556,
+						["isDaily"] = true,
 					}),
 					n(79678, { 		-- Jehil the Climber
 						["questID"] = 34708,
