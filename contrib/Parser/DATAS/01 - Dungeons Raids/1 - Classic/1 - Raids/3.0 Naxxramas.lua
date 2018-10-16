@@ -1087,7 +1087,13 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(23021)),	-- The Soul Harvester's Bindings
 						un(2, i(23073)),	-- Boots of Displacement
 					}),
-					n(16062, {	-- Highlord Mograine <The Ashbringer>	
+					n(16062, {	-- Highlord Mograine <The Ashbringer>
+						{
+							["itemID"] = 13262,	-- Ashbringer
+							["u"] = 1,	-- Never Implemented
+							["description"] = "This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",
+							["collectible"] = false,
+						},
 						un(2, i(22691)),	-- Corrupted Ashbringer
 						un(2, i(22809)),	-- Maul of the Redeemed Crusader
 						un(2, i(22811)),	-- Soulstring
