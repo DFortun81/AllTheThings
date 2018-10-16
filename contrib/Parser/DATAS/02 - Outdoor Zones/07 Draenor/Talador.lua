@@ -611,13 +611,15 @@ _.Zones =
 						["groups"] = {	
 							dr(40, i(119378)),	-- Socrethar's Stone
 						},
-						["questID"] = 37338,	
+						["questID"] = 37338,
+						["isDaily"] = true,							
 					}), 
 					n(87597, { 		-- Bombardier Gu'gok
 						["groups"] = {	
 							dr(41, i(119413)),	-- Gu'gok's Rangefinder
 						},
-						["questID"] = 37339,	
+						["questID"] = 37339,
+						["isDaily"] = true,							
 					}), 
 					o(228012, { 	-- Charred Sword
 						["groups"] = {
@@ -769,13 +771,15 @@ _.Zones =
 						["groups"] = {	
 							dr(71, i(119353)),	-- Matron's Supple Gloves
 						},
-						["questID"] = 37349,	
+						["questID"] = 37349,
+						["isDaily"] = true,							
 					}), 
 					n(87668, { 		-- Orumo the Observer
 						["groups"] = {
 							dr(12, i(119170)), 	-- Eye of Observation Pet
 						},
 						["questID"] = 37344,
+						["isDaily"] = true,	
 						["description"] = "|cff66ccffRequires 5 players to summon. Stand on runes.|r",
 					}), 
 					n(77741, { 		-- Ra'kahn
