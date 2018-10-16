@@ -42,7 +42,7 @@ _.Zones =
 					})),
 					ach(11765, { -- Pet Battle Challenge: Wailing Caverns
 						i(147543), -- Son of Skum
-						qg(116781, q(45539, {	-- Pet Battle Challenge: WC
+						qg(116781, qr(q(45539, {	-- Pet Battle Challenge: WC
 							["groups"] = {
 								i(143753, {	-- Damp Pet Supplies
 									i(143754), 	-- Cavern Moccasin
@@ -52,7 +52,7 @@ _.Zones =
 							},
 							["description"] = "Account-Wide Weekly quest.|r",
 							["lvl"] = 110,
-						})),
+						}))),
 					}),
 				}),
 				n(-17, {	-- Quests
