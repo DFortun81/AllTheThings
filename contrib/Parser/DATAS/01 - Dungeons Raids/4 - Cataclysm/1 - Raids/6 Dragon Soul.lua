@@ -147,6 +147,26 @@ _.Instances =
 									i(77983),	-- Indomitable Pride
 									i(77979),	-- Vial of Shadows
 									i(77981),	-- Windward Heart
+									--[[	Note!! Uncomment when the rest is CRS'ed properly
+									{	-- Essence of Corrupted Deathwing
+										["currencyID"] = 615,	-- Essence of Deathwing
+										["crs"] = {
+											56173,	-- Madness of Deathwing
+										},
+									},
+									{	-- Mote of Darkness
+										["currencyID"] = 614,	-- Mote of Darkness
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+											53879,	-- Spine of Deathwing
+										},
+									},
+									--]]
 								},
 								["crs"] = {
 									55265, -- Morchok
@@ -243,15 +263,15 @@ _.Instances =
 								})),
 								cr(56173, e(333, {	-- Madness of Deathwing
 									i(152981),	-- Severed Tentacle (PET!)
-									i( 78482),	-- Kiril, Fury of Beasts
-									i( 78487),	-- Gurthalak, Voice of the Deeps
-									i( 78483),	-- Blade of the Unmaker
-									i( 78485),	-- Maw of the Dragonlord
-									i( 78481),	-- No'Kaled, the Elements of Death
-									i( 78484),	-- Rathrak, the Poisonous Mind
-									i( 78488),	-- Souldrinker
-									i( 78486),	-- Ti'tahk, the Steps of Time
-									i( 78480),	-- Vishanka, Jaws of the Earth
+									i(78482),	-- Kiril, Fury of Beasts
+									i(78487),	-- Gurthalak, Voice of the Deeps
+									i(78483),	-- Blade of the Unmaker
+									i(78485),	-- Maw of the Dragonlord
+									i(78481),	-- No'Kaled, the Elements of Death
+									i(78484),	-- Rathrak, the Poisonous Mind
+									i(78488),	-- Souldrinker
+									i(78486),	-- Ti'tahk, the Steps of Time
+									i(78480),	-- Vishanka, Jaws of the Earth
 								})),
 							}),	
 						},
@@ -291,6 +311,24 @@ _.Instances =
 											56173,	-- Madness of Deathwing
 										},
 									},
+									{	-- Essence of Corrupted Deathwing
+											["currencyID"] = 615,	-- Essence of Deathwing
+											["crs"] = {
+												56173,	-- Madness of Deathwing
+											},
+										},
+										{	-- Mote of Darkness
+											["currencyID"] = 614,	-- Mote of Darkness
+											["crs"] = {
+												55265,	-- Morchok
+												55308,	-- Warlord	Zon'ozz
+												55312,	-- Yor'sahj the Unsleeping
+												55689,	-- Hagara the Stormbinder
+												55294,	-- Ultraxion
+												56427,	-- Warmaster Blackthorn
+												53879,	-- Spine of Deathwing
+											},
+										},
 								},
 							},
 							n(  0, {	-- Zone Drop
@@ -412,7 +450,7 @@ _.Instances =
 								i(77209),	-- Windward Heart
 							})),
 							cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-								i( 78181, {	-- Leggings of the Corrupted Conqueror
+								i(78181, {	-- Leggings of the Corrupted Conqueror
 									i(76768),	-- Greaves of Radiant Glory
 									i(77006),	-- Legguards of Radiant Glory
 									i(76877),	-- Legplates of Radiant Glory
@@ -420,7 +458,7 @@ _.Instances =
 									i(76359),	-- Legwraps of Dying Light
 									i(76341),	-- Leggings of the Faceless Shroud
 								}),
-								i( 78176, {	-- Leggings of the Corrupted Protector
+								i(78176, {	-- Leggings of the Corrupted Protector
 									i(77031),	-- Wyrmstalker's Legguards
 									i(77036),	-- Spiritwalker's Kilt
 									i(77043),	-- Spiritwalker's Legguards
@@ -428,7 +466,7 @@ _.Instances =
 									i(76991),	-- Colossal Dragonplate Legguards
 									i(76986),	-- Colossal Dragonplate Legplates
 								}),
-								i( 78171, {	-- Leggings of the Corrupted Vanquisher
+								i(78171, {	-- Leggings of the Corrupted Vanquisher
 									i(76977),	-- Necrotic Boneplate Greaves
 									i(77011),	-- Necrotic Boneplate Legguards
 									i(77020),	-- Deep Earth Leggings
@@ -438,24 +476,24 @@ _.Instances =
 									i(77026),	-- Blackfang Battleweave Legguards
 								}),
 								i(152979),	-- Puddle of Black Liquid (PET!)
-								i( 77217),	-- Experimental Specimen Slicer
-								i( 77218),	-- Spire of Coagulated Globules
-								i( 77219),	-- Scalpel of Unrelenting Agony
-								i( 77253),	-- Heartblood Wristplates
-								i( 77254),	-- Interrogator's Bloody Footpads
-								i( 77252),	-- Mindstrainer Treads
-								i( 77230),	-- Breathstealer Band
-								i( 77232),	-- Hardheart Ring
-								i( 77228),	-- Infinite Loop
-								i( 77231),	-- Seal of Primordial Shadow
-								i( 77229),	-- Signet of Suturing
-								i( 77210),	-- Bone-Link Fetish
-								i( 77208),	-- Cunning of the Cruel
-								i( 77211),	-- Indomitable Pride
-								i( 77203),	-- Insignia of the Corrupted Mind
-								i( 77206),	-- Soulshifter Vortex
-								i( 77207),	-- Vial of Shadows
-								i( 77209),	-- Windward Heart
+								i(77217),	-- Experimental Specimen Slicer
+								i(77218),	-- Spire of Coagulated Globules
+								i(77219),	-- Scalpel of Unrelenting Agony
+								i(77253),	-- Heartblood Wristplates
+								i(77254),	-- Interrogator's Bloody Footpads
+								i(77252),	-- Mindstrainer Treads
+								i(77230),	-- Breathstealer Band
+								i(77232),	-- Hardheart Ring
+								i(77228),	-- Infinite Loop
+								i(77231),	-- Seal of Primordial Shadow
+								i(77229),	-- Signet of Suturing
+								i(77210),	-- Bone-Link Fetish
+								i(77208),	-- Cunning of the Cruel
+								i(77211),	-- Indomitable Pride
+								i(77203),	-- Insignia of the Corrupted Mind
+								i(77206),	-- Soulshifter Vortex
+								i(77207),	-- Vial of Shadows
+								i(77209),	-- Windward Heart
 							})),
 							cr(55689, e(317, {	-- Hagara the Stormbinder
 								i(78180, {	-- Shoulders of the Corrupted Conqueror
@@ -597,29 +635,29 @@ _.Instances =
 							})),
 							cr(53879, e(318, {	-- Spine of Deathwing
 								i(152980),	-- Elementium Back Plate (PET!)
-								i( 77236),	-- Backbreaker Spaulders
-								i( 77235),	-- Gauntlets of the Golden Thorn
-								i( 78357),	-- Gloves of Liquid Smoke
-								i( 77237),	-- Belt of Shattered Elementium
-								i( 77238),	-- Molten Blood Footpads
-								i( 77200),	-- Eye of Unmaking
-								i( 77199),	-- Heart of Unliving
-								i( 77201),	-- Resolve of Undying
-								i( 77198),	-- Will of Unbinding
-								i( 77197),	-- Wrath of Unchaining
+								i(77236),	-- Backbreaker Spaulders
+								i(77235),	-- Gauntlets of the Golden Thorn
+								i(78357),	-- Gloves of Liquid Smoke
+								i(77237),	-- Belt of Shattered Elementium
+								i(77238),	-- Molten Blood Footpads
+								i(77200),	-- Eye of Unmaking
+								i(77199),	-- Heart of Unliving
+								i(77201),	-- Resolve of Undying
+								i(77198),	-- Will of Unbinding
+								i(77197),	-- Wrath of Unchaining
 							})),
 							cr(56173, e(333, {	-- Madness of Deathwing
-								i( 77067),	-- Reins of the Blazing Drake (MOUNT!)
+								i(77067),	-- Reins of the Blazing Drake (MOUNT!)
 								i(152981),	-- Severed Tentacle (PET)!
-								i( 77191),	-- Gurthalak, Voice of the Deeps
-								i( 77194),	-- Kiril, Fury of Beasts
-								i( 77190),	-- Ti'tahk, the Steps of Time
-								i( 77189),	-- Blade of the Unmaker
-								i( 77196),	-- Maw of the Dragonlord
-								i( 77188),	-- No'Kaled, the Elements of Death
-								i( 77195),	-- Rathrak, the Poisonous Mind
-								i( 77193),	-- Souldrinker
-								i( 78359),	-- Vishanka, Jaws of the Earth
+								i(77191),	-- Gurthalak, Voice of the Deeps
+								i(77194),	-- Kiril, Fury of Beasts
+								i(77190),	-- Ti'tahk, the Steps of Time
+								i(77189),	-- Blade of the Unmaker
+								i(77196),	-- Maw of the Dragonlord
+								i(77188),	-- No'Kaled, the Elements of Death
+								i(77195),	-- Rathrak, the Poisonous Mind
+								i(77193),	-- Souldrinker
+								i(78359),	-- Vishanka, Jaws of the Earth
 								i(122198),	-- Music Roll: The Shattering
 							})),
 						},
@@ -646,6 +684,116 @@ _.Instances =
 							{	-- Common Boss Drops
 								["npcID"] = -1,	-- Common Boss Drops
 								["g"] = {
+									{	-- Breathstealer Band
+										["itemID"] =  78492,	-- Breathstealer Band
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Hardheart Ring
+										["itemID"] = 78493,	-- Hardheart Ring
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Infinite Loop
+										["itemID"] = 78490,	-- Infinite Loop
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Seal of Primordial Shadow
+										["itemID"] = 78489,	-- Seal of Primordial Shadow
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Signet of Suturing
+										["itemID"] = 78491,	-- Signet of Suturing
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Bone-Link Fetish
+										["itemID"] = 78002,	-- Bone-Link Fetish
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Cunning of the Cruel
+										["itemID"] = 78000,	-- Cunning of the Cruel
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Indomitable Pride
+										["itemID"] = 78003,	-- Indomitable Pride
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Vial of Shadows
+										["itemID"] = 77999,	-- Vial of Shadows
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Windward Heart
+										["itemID"] = 78001,	-- Windward Heart
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
 									{	-- Essence of Destruction
 										["itemID"] = 71998,	-- Essence of Destruction
 										["crs"] = {
@@ -657,6 +805,24 @@ _.Instances =
 											56427,	-- Warmaster Blackthorn
 											53879,	-- Spine of Deathwing
 											56173,	-- Madness of Deathwing
+										},
+									},
+									{	-- Essence of Corrupted Deathwing
+										["currencyID"] = 615,	-- Essence of Deathwing
+										["crs"] = {
+											56173,	-- Madness of Deathwing
+										},
+									},
+									{	-- Mote of Darkness
+										["currencyID"] = 614,	-- Mote of Darkness
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+											53879,	-- Spine of Deathwing
 										},
 									},
 								},
@@ -729,16 +895,8 @@ _.Instances =
 								i(78362),	-- Sporebeard Gauntlets
 								i(78370),	-- Girdle of Shattered Stone
 								i(78361),	-- Pillarfoot Greaves
-								i(78492),	-- Breathstealer Band
-								i(78493),	-- Hardheart Ring
-								i(78490),	-- Infinite Loop
-								i(78489),	-- Seal of Primordial Shadow
-								i(78491),	-- Signet of Suturing
-								i(78002),	-- Bone-Link Fetish
-								i(78000),	-- Cunning of the Cruel
-								i(78003),	-- Indomitable Pride
-								i(77999),	-- Vial of Shadows
-								i(78001),	-- Windward Heart
+								
+								
 							})),
 							cr(55308, e(324, {	-- Warlord Zon'ozz
 								i(78853, {	-- Gauntlets of the Corrupted Conqueror
@@ -773,20 +931,10 @@ _.Instances =
 								i(78388),	-- Belt of Flayed Skin
 								i(78391),	-- Cord of the Slain Champion
 								i(78389),	-- Treads of Crushed Flesh
-								i(78492),	-- Breathstealer Band
-								i(78493),	-- Hardheart Ring
-								i(78490),	-- Infinite Loop
-								i(78489),	-- Seal of Primordial Shadow
-								i(78491),	-- Signet of Suturing
-								i(78002),	-- Bone-Link Fetish
-								i(78000),	-- Cunning of the Cruel
-								i(78003),	-- Indomitable Pride
 								i(77989),	-- Seal of the Seven Signs
-								i(77999),	-- Vial of Shadows
-								i(78001),	-- Windward Heart
 							})),
 							cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-								i( 78856, {	-- Leggings of the Corrupted Conqueror
+								i(78856, {	-- Leggings of the Corrupted Conqueror
 									i(78717),	-- Greaves of Radiant Glory
 									i(78715),	-- Legguards of Radiant Glory
 									i(78712),	-- Legplates of Radiant Glory
@@ -794,7 +942,7 @@ _.Instances =
 									i(78719),	-- Legwraps of Dying Light
 									i(78721),	-- Leggings of the Faceless Shroud
 								}),
-								i( 78857, {	-- Leggings of the Corrupted Protector
+								i(78857, {	-- Leggings of the Corrupted Protector
 									i(78709),	-- Wyrmstalker's Legguards
 									i(78711),	-- Spiritwalker's Kilt
 									i(78704),	-- Spiritwalker's Legguards
@@ -802,7 +950,7 @@ _.Instances =
 									i(78705),	-- Colossal Dragonplate Legguards
 									i(78706),	-- Colossal Dragonplate Legplates
 								}),
-								i( 78858, {	-- Leggings of the Corrupted Vanquisher
+								i(78858, {	-- Leggings of the Corrupted Vanquisher
 									i(78707),	-- Necrotic Boneplate Greaves
 									i(78716),	-- Necrotic Boneplate Legguards
 									i(78714),	-- Deep Earth Leggings
@@ -812,24 +960,13 @@ _.Instances =
 									i(78708),	-- Blackfang Battleweave Legguards
 								}),
 								i(152979),	-- Puddle of Black Liquid (PET!)
-								i( 78403),	-- Experimental Specimen Slicer
-								i( 78401),	-- Spire of Coagulated Globules
-								i( 78404),	-- Scalpel of Unrelenting Agony
-								i( 78406),	-- Heartblood Wristplates
-								i( 78402),	-- Interrogator's Bloody Footpads
-								i( 78405),	-- Mindstrainer Treads
-								i( 78492),	-- Breathstealer Band
-								i( 78493),	-- Hardheart Ring
-								i( 78490),	-- Infinite Loop
-								i( 78489),	-- Seal of Primordial Shadow
-								i( 78491),	-- Signet of Suturing
-								i( 78002),	-- Bone-Link Fetish
-								i( 78000),	-- Cunning of the Cruel
-								i( 78003),	-- Indomitable Pride
-								i( 77991),	-- Insignia of the Corrupted Mind
-								i( 77990),	-- Soulshifter Vortex
-								i( 77999),	-- Vial of Shadows
-								i( 78001),	-- Windward Heart
+								i(78403),	-- Experimental Specimen Slicer
+								i(78401),	-- Spire of Coagulated Globules
+								i(78404),	-- Scalpel of Unrelenting Agony
+								i(78406),	-- Heartblood Wristplates
+								i(78402),	-- Interrogator's Bloody Footpads
+								i(78405),	-- Mindstrainer Treads
+								i(77991),	-- Insignia of the Corrupted Mind
 							})),
 							cr(55689, e(317, {	-- Hagara the Stormbinder
 								i(78859, {	-- Shoulders of the Corrupted Conqueror
@@ -863,18 +1000,8 @@ _.Instances =
 								i(78420),	-- Girdle of the Grotesque
 								i(78416),	-- Runescriven Demon Collar
 								i(78415),	-- Treads of Dormant Dreams
-								i(78492),	-- Breathstealer Band
-								i(78493),	-- Hardheart Ring
-								i(78490),	-- Infinite Loop
 								i(78419),	-- Ring of the Riven
-								i(78489),	-- Seal of Primordial Shadow
 								i(78413),	-- Signet of Grasping Mouths
-								i(78491),	-- Signet of Suturing
-								i(78002),	-- Bone-Link Fetish
-								i(78000),	-- Cunning of the Cruel
-								i(78003),	-- Indomitable Pride
-								i(77999),	-- Vial of Shadows
-								i(78001),	-- Windward Heart
 							})),
 							cr(55294, e(331, {	-- Ultraxion
 								i(78847, {	-- Chest of the Corrupted Conqueror
@@ -910,18 +1037,8 @@ _.Instances =
 								i(78436),	-- Dragonfracture Belt
 								i(78431),	-- Stillheart Warboots
 								i(78434),	-- Treads of Sordid Screams
-								i(78492),	-- Breathstealer Band
 								i(78432),	-- Curled Twilight Claw
-								i(78493),	-- Hardheart Ring
-								i(78490),	-- Infinite Loop
-								i(78489),	-- Seal of Primordial Shadow
-								i(78491),	-- Signet of Suturing
-								i(78002),	-- Bone-Link Fetish
 								i(77992),	-- Creche of the Final Dragon
-								i(78000),	-- Cunning of the Cruel
-								i(78003),	-- Indomitable Pride
-								i(77999),	-- Vial of Shadows
-								i(78001),	-- Windward Heart
 							})),
 							cr(56427, e(332, {	-- Warmaster Blackthorn
 								i(78850, {	-- Crown of the Corrupted Conqueror
@@ -957,44 +1074,34 @@ _.Instances =
 								i(78447),	-- Belt of the Beloved Companion
 								i(78452),	-- Goriona's Collar
 								i(78449),	-- Janglespur Jackboots
-								i(78492),	-- Breathstealer Band
-								i(78493),	-- Hardheart Ring
-								i(78490),	-- Infinite Loop
-								i(78489),	-- Seal of Primordial Shadow
-								i(78491),	-- Signet of Suturing
-								i(78002),	-- Bone-Link Fetish
-								i(78000),	-- Cunning of the Cruel
-								i(78003),	-- Indomitable Pride
 								i(77993),	-- Starcatcher Compass
-								i(77999),	-- Vial of Shadows
-								i(78001),	-- Windward Heart
 							})),
 							cr(53879, e(318, {	-- Spine of Deathwing
 								i(152980),	-- Elementium Back Plate (PET!)
-								i( 78465),	-- Backbreaker Spaulders
-								i( 78464),	-- Gauntlets of the Golden Thorn
-								i( 78461),	-- Gloves of Liquid Smoke
-								i( 78463),	-- Belt of Shattered Elementium
-								i( 78462),	-- Molten Blood Footpads
-								i( 77997),	-- Eye of Unmaking
-								i( 77996),	-- Heart of Unliving
-								i( 77998),	-- Resolve of Undying
-								i( 77995),	-- Will of Unbinding
-								i( 77994),	-- Wrath of Unchaining
+								i(78465),	-- Backbreaker Spaulders
+								i(78464),	-- Gauntlets of the Golden Thorn
+								i(78461),	-- Gloves of Liquid Smoke
+								i(78463),	-- Belt of Shattered Elementium
+								i(78462),	-- Molten Blood Footpads
+								i(77997),	-- Eye of Unmaking
+								i(77996),	-- Heart of Unliving
+								i(77998),	-- Resolve of Undying
+								i(77995),	-- Will of Unbinding
+								i(77994),	-- Wrath of Unchaining
 							})),
 							cr(56173, e(333, {	-- Madness of Deathwing
-								i( 77069),	-- Life-Binder's Handmaiden (MOUNT!)
-								i( 77067),	-- Reins of the Blazing Drake (MOUNT!)
+								i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
+								i(77067),	-- Reins of the Blazing Drake (MOUNT!)
 								i(152981),	-- Severed Tentacle (PET!)
-								i( 78478),	-- Gurthalak, Voice of the Deeps
-								i( 78473),	-- Kiril, Fury of Beasts
-								i( 78477),	-- Ti'tahk, the Steps of Time
-								i( 78474),	-- Blade of the Unmaker
-								i( 78476),	-- Maw of the Dragonlord
-								i( 78472),	-- No'Kaled, the Elements of Death
-								i( 78475),	-- Rathrak, the Poisonous Mind
-								i( 78479),	-- Souldrinker
-								i( 78471),	-- Vishanka, Jaws of the Earth
+								i(78478),	-- Gurthalak, Voice of the Deeps
+								i(78473),	-- Kiril, Fury of Beasts
+								i(78477),	-- Ti'tahk, the Steps of Time
+								i(78474),	-- Blade of the Unmaker
+								i(78476),	-- Maw of the Dragonlord
+								i(78472),	-- No'Kaled, the Elements of Death
+								i(78475),	-- Rathrak, the Poisonous Mind
+								i(78479),	-- Souldrinker
+								i(78471),	-- Vishanka, Jaws of the Earth
 								i(122198),	-- Music Roll: The Shattering
 							})),
 						},

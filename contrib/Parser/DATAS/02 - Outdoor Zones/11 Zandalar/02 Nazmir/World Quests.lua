@@ -10,69 +10,100 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
+								{	-- Azerite Infused Slag
+									["questID"] = 50564,	-- Azerite Infused Slag
+									["npcID"] = 134293, 	-- Azerite-Infused Elemental	Note!! Done so we can use his name for the quest rather than Quest #123456
+									["coords"] = {
+										{ 32.98, 26.80 }
+									},
+									--["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+									["g"] = {
+										{	-- Fused-Slag Girdle
+											["itemID"] = 161100,	-- Fused-Slag Girdle
+										},
+									},
+								},
 								q(51415, {	-- Azerite Madness
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(52884, {	-- Azerite Wounds
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								{	-- Beachhead
 									["questID"] = 51640,	-- Beachhead
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
 								q(50735, {	-- Burial Detail
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
+								{	-- Cargo Reclamation
+									["questID"] =  50962,	-- Cargo Reclamation
+									--["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(52779, {	-- Crawg in the Bog [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
 									},
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(50717, {	-- Don't Stalk Me, Troll
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(50899, {	-- Don't Stalk Me, Troll
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(51172, {	-- Forked Lightning
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(50545, {	-- Forked Lightning
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
+								{	-- It's the Pits
+									["questID"] = 51546,	-- It's the Pits
+									--["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+								},
 								q(50505, {	-- Kal'draxa
 									["groups"] = {
 										i(161018, {	-- Winged Terror Wristwraps
@@ -81,26 +112,41 @@ _.Zones =
 											},
 										}),
 									},
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- King Kooba
+									["questID"] = 50506,	--  King Kooba
+									--["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(50497, {	-- Krag'wa's Favor
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Luminous Monelite
+									["questID"] = 53321,	-- Luminous Monelite
+									--["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+									["requireSkill"] = 186,	-- Mining
+								},
 								{	-- Past Due
 									["questID"] = 50667,	-- Past Due
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
 								q(52006, {	-- Preemptive Assault
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
@@ -108,26 +154,26 @@ _.Zones =
 								}),
 								{	-- Scorched Earth
 									["questID"] = 50521,	-- Scorched Earth
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
 								q(51628, {	-- Shell Game
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(50650, {	-- Smashing Zalamar
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
 								q(52785, {	-- Smashing Zalamar
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
@@ -137,33 +183,33 @@ _.Zones =
 									["groups"] = {
 										i(162621),	-- Naazmani Golem's Greathelm
 									},
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(50514, {	-- Totem Maker Jash'ga
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								q(50515, {	-- Venomjaw
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
 								{	-- Xu'ba
 									["questID"] = 50489,	-- Xu'ba
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
 								{	-- Zujothgul
 									["questID"] = 50461,	-- Zujothgul
-									["repeatable"] = true,
+									--["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only

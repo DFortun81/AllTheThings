@@ -16,14 +16,14 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								{
+								{	-- Azerite Mining
 									["questID"] = 52874, 	-- Azerite Mining
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
-								{
+								{	-- Azerite Mining
 									["questID"] = 51581, 	-- Azerite Mining
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -83,6 +83,14 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 									["requireSkill"] = 182,	-- Herbalism
+								},
+								{	-- Gnomish Azerite Exraction
+									["questID"] = 52120,	-- Gnomish Azerite Extraction
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
 								},
 								q(52760, {	-- Like a Fish in a Barrel
 									["repeatable"] = true,

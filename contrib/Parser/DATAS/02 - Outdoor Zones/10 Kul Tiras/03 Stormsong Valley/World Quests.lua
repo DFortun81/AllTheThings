@@ -43,6 +43,13 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Beachhead
+									["questID"] = 51639,	-- Beachhead
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(52330, {	-- Beehemoth
 									["groups"] = {
 										i(160459, {	-- Apiarist's Stingproof Belt
@@ -56,6 +63,13 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Blooming Siren's Sting
+									["questID"] = 53286,	-- Blooming Siren's Sting
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(51782, {	-- Captain Razorspine
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below

@@ -17,6 +17,20 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Azerite Madness
+									["questID"] = 51608,	-- Azerite Madness
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
+								{	-- Azerite Mining
+									["questID"] = 52872,	-- Azerite Mining
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(51609, {	-- Azerite Wounds*
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -50,6 +64,13 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Beshol
+									["questID"] = 51917,	-- Beshol
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(51469, {	-- Betsy
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below

@@ -18,12 +18,21 @@ _.Zones =
 						n(134298, {	-- Azerite-Infused Elemental
 							["questID"] = 50569,	
 						}),
-						n(134293, {	-- Azerite-Infused Slag
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
-								i(161100),	-- Fused-Slag Girdle
-							}),
-							["questID"] = 49305,
-						}),	
+						{	-- Azerite-Infused Slag
+							["npcID"] = 134293, 			-- Azerite-Infused Slag
+							["allianceQuestID"] = 50563, 	-- Azerite-Infused Slag [A]
+							["hordeQuestID"] = 49305,		-- Azerite-Infused Slag [H]
+							["coords"] = {
+								{ 32.98, 26.80 }
+							},
+							["g"] = {
+								{	-- Fused-Slag Girdle
+									["itemID"] = 161100,	-- Fused-Slag Girdle
+									["bonusID"] = 4776,
+									["lvl"] = 110,
+								},
+							},
+						},	
 						n(126142, {	-- Bajiatha		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(161093),	-- Clutch Mother Wristwraps

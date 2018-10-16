@@ -1795,27 +1795,29 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(138385),	-- Lucky Shirt
 					}),
 					n(12784, {	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
-						i(18865),	-- Grand Marshal's Punisher
-						i(12584),	-- Grand Marshal's Longsword
-						i(18827),	-- Grand Marshal's Handaxe
-						i(18830),	-- Grand Marshal's Sunderer
-						i(18833),	-- Grand Marshal's Bullseye
-						i(18836),	-- Grand Marshal's Repeater
-						i(18838),	-- Grand Marshal's Dirk
-						i(18843),	-- Grand Marshal's Right Hand Blade
-						i(18847),	-- Grand Marshal's Razor Hand Blade
-						i(18855),	-- Grand Marshal's Hand Cannon
-						i(18825),	-- Grand Marshal's Aegis
-						i(18867),	-- Grand Marshal's Battle Hammer
-						i(18869),	-- Grand Marshal's Glaive
-						i(18873),	-- Grand Marshal's Stave
-						i(18876),	-- Grand Marshal's Claymore
-						i(23451),	-- Grand Marshal's Mageblade
-						i(23452),	-- Grand Marshal's Tome of Power
-						i(23453),	-- Grand Marshal's Tome of Restoration
-						i(23454),	-- Grand Marshal's Warhammer
-						i(23455),	-- Grand Marshal's Demolisher
-						i(23456),	-- Grand Marshal's Swiftblade
+						["groups"] = {
+							i(18865),	-- Grand Marshal's Punisher
+							i(12584),	-- Grand Marshal's Longsword
+							i(18827),	-- Grand Marshal's Handaxe
+							i(18830),	-- Grand Marshal's Sunderer
+							i(18833),	-- Grand Marshal's Bullseye
+							i(18836),	-- Grand Marshal's Repeater
+							i(18838),	-- Grand Marshal's Dirk
+							i(18843),	-- Grand Marshal's Right Hand Blade
+							i(18847),	-- Grand Marshal's Razor Hand Blade
+							i(18855),	-- Grand Marshal's Hand Cannon
+							i(18825),	-- Grand Marshal's Aegis
+							i(18867),	-- Grand Marshal's Battle Hammer
+							i(18869),	-- Grand Marshal's Glaive
+							i(18873),	-- Grand Marshal's Stave
+							i(18876),	-- Grand Marshal's Claymore
+							i(23451),	-- Grand Marshal's Mageblade
+							i(23452),	-- Grand Marshal's Tome of Power
+							i(23453),	-- Grand Marshal's Tome of Restoration
+							i(23454),	-- Grand Marshal's Warhammer
+							i(23455),	-- Grand Marshal's Demolisher
+							i(23456),	-- Grand Marshal's Swiftblade
+						},
 					}),
 					n(12783, {	-- Lieutenant Karter <War Mount Quartermaster>
 						i(29465),	-- Black Battlestrider Mount

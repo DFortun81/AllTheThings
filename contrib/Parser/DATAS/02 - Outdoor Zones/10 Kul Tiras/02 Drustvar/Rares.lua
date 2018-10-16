@@ -100,7 +100,6 @@ _.Zones =
 								i(163680),	-- Blightbitten Steps
 							},
 							["questID"] = 52001,	-- 51699 for WQ
-							["repeatable"] = true,
 						}),
 						n(126621, {	-- Bonesquall
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -231,7 +230,6 @@ _.Zones =
 						},
 						n(137704, {	-- Matron Morana
 							["questID"] = 52000,
-							["repeatable"] = true,
 						}),
 						n(130138, {	-- Nevermore		
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -280,11 +278,9 @@ _.Zones =
 						}),
 						n(137665, {	-- Soul Goliath
 							["questID"] = 52002,
-							["repeatable"] = true,
 						}),
 						n(137708, {	-- Stone Golem
 							["questID"] = 51999,
-							["repeatable"] = true,
 						}),
 						{	-- Talon [LH-ACLQ]
 							["npcID"] = 129950,	-- Talon
