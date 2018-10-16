@@ -849,7 +849,7 @@ _.Zones =
 							}),
 							i(8244, {	-- Flawless Draenethyst Sphere
 								["groups"] = {
-									q(25772, { 	-- Kum'isha's Endeavors
+									qr(q(25772, { 	-- Kum'isha's Endeavors
 										i(10752, { 	-- Emerald Encrusted Chest
 											dr(03.0, i(13009)),	-- Cow King's Hide
 											dr(03.0, i(13008)),	-- Dalewind Trousers
@@ -898,7 +898,7 @@ _.Zones =
 											dr(01.5, i(	13030)),	-- Basilisk Bone
 											i(17050), 				-- Chan's Imperial Robes
 										}),
-									}),
+									})),
 								},
 								["description"] = "This has a high chance (about 50%) to drop from rares in the zone, but can technically drop from any mob in the zone.",							
 							}),
