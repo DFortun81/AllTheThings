@@ -201,7 +201,8 @@ _.Zones =
 						["groups"] = {		
 							dr(44, i(119400)), 	-- Rugged Crystal Cudgel 
 						},
-						["questID"] = 37410,	
+						["questID"] = 37410,
+						["isDaily"] = true,							
 					}),
 					n(82326, { 		-- Ba'ruun 
 						["groups"] = {	
@@ -257,7 +258,8 @@ _.Zones =
 						["groups"] = {
 							dr(14, i(119431)), 	-- Servant of Demidos Pet					
 						},
-						["questID"] = 37351,	
+						["questID"] = 37351,
+						["isDaily"] = true,							
 					}),
 					o(236755, { 	-- Dusty Lockbox
 						["groups"] = {
@@ -377,7 +379,8 @@ _.Zones =
 						["groups"] = {	
 							dr(42, i(119360)),	-- Temptessa's Knee-High Boots 
 						},
-						["questID"] = 37355,	
+						["questID"] = 37355,
+						["isDaily"] = true,							
 					}),
 					n(77310, { 		-- Mad "King" Sporeon
 						["groups"] = {	
@@ -389,13 +392,15 @@ _.Zones =
 						["groups"] = {	
 							dr(36, i(119369)), -- Malgosh's Coif 
 						},
-						["questID"] = 37357,	
+						["questID"] = 37357,
+						["isDaily"] = true,							
 					}),
 					n(85001, { 		-- Master Sergeant Milgra
 						["groups"] = {	
 							dr(34, i(119368)),	-- Milgra's Mighty Mitts 
 						},
-						["questID"] = 37353,	
+						["questID"] = 37353,
+						["isDaily"] = true,							
 					}),
 					n(82362, { 		-- Morva Soultwister
 						["groups"] = {	
@@ -407,7 +412,8 @@ _.Zones =
 						["groups"] = {	
 							dr(41, i(119364)),	-- Hydraskin Shoulderguards
 						},
-						["questID"] = 37409,	
+						["questID"] = 37409,
+						["isDaily"] = true,							
 					}), 
 					n(50883, { 		-- Pathrunner	
 						dr(100, i(116773)), 	-- Swift Breezestrider Mount
@@ -416,7 +422,8 @@ _.Zones =
 						["groups"] = {	
 							dr(40, i(119382)), 	-- Hershak's Heavy Legguards
 						},
-						["questID"] = 37352,	
+						["questID"] = 37352,
+						["isDaily"] = true,							
 					}),
 					n(82374, { 		-- Rai'vosh
 						["groups"] = {	
@@ -455,7 +462,8 @@ _.Zones =
 						["groups"] = {	
 							dr(37, i(119396)),	-- Shadowspeaker's Shard 
 						},
-						["questID"] = 37354,	
+						["questID"] = 37354,
+						["isDaily"] = true,							
 					}),
 					n(82415, { 		-- Shinri 
 						["groups"] = {	
@@ -467,7 +475,8 @@ _.Zones =
 						["groups"] = {	
 							dr(38, i(119411)),	-- Massive Rockworm Fang
 						},
-						["questID"] = 37411,	
+						["questID"] = 37411,
+						["isDaily"] = true,							
 					}),
 					n(86689, { 		-- Sneevel
 						["groups"] = {	

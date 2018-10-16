@@ -504,7 +504,6 @@ _.Zones =
 					}),
 					n(80235, { 		-- Gurun
 						["questID"] = 34839,
-						["isDaily"] = true,
 						["groups"] = {	
 							dr(100, i(111955)), -- Skog's Drape
 						},

@@ -220,13 +220,13 @@ _.Zones =
 							i(118149),
 							i(118150),
 						}),
-						q(35928), -- Meatgut Needs Bones
+						qr(q(35928), -- Meatgut Needs Bones
 						qa(34572,  {  	-- Obliterating Ogres
 							i(114683),
 							i(114684),
 							i(114685),
 							i(114686),
-						}),
+						})),
 						qh(35155,  {  	-- Obliterating Ogres
 							i(114683),
 							i(114684),
@@ -1415,7 +1415,8 @@ _.Zones =
 						["groups"] = {	
 							dr(42, i(119370)),	-- Rattlekilt
 						},
-						["questID"] = 37396,	
+						["questID"] = 37396,
+						["isDaily"] = true,							
 					}), 
 					o(233532, { 	-- Bone-Carved Dagger
 						["groups"] = {
@@ -1428,7 +1429,8 @@ _.Zones =
 						["groups"] = {	
 							dr(40, i(119380)),	-- Brutag's Iron Toe Boots 
 						},
-						["questID"] = 37400,		
+						["questID"] = 37400,
+						["isDaily"] = true,							
 					}), 
 					o(233137, {		-- Burning Blade Cache
 						["groups"] = {
@@ -1536,13 +1538,15 @@ _.Zones =
 							dr(100, i(116809)),	-- Ironbeard's Blunderbuss
 							dr(100, i(118244)),	-- Iron Buccaneer's Hat Toy
 						},
-						["questID"] = 34727,	
+						["questID"] = 34727,
+						["isDaily"] = true,							
 					}), 
 					n(87788, { 		-- Durg Spinecrusher
 						["groups"] = {	
 							dr(36, i(119405)),	-- Durg's Heavy Maul
 						},
-						["questID"] = 37395,		
+						["questID"] = 37395,
+						["isDaily"] = true,							
 					}), 
 					o(239828, { 	-- Edge of Reality
 						["groups"] = {
@@ -1599,7 +1603,8 @@ _.Zones =
 						["groups"] = {
 							dr(9, i(129218)),	-- Glittering Arcane Crystal (Empyreal Manafiend Pet)
 						},
-						["questID"] = 40074,	
+						["questID"] = 40074,
+						["isDaily"] = true,							
 					}),
 					n(83603, { 		-- Hunter Blacktooth
 						["groups"] = {	
@@ -1611,13 +1616,15 @@ _.Zones =
 						["groups"] = {	
 							dr(39, i(119355)),	-- Leggings of Howling Winds
 						},
-						["questID"] = 37399,		
+						["questID"] = 37399,
+						["isDaily"] = true,							
 					}), 
 					n(88210, { 		-- Krud the Eviscerator
 						["groups"] = {
 							dr(41, i(119384)),	-- Krud's Girthy Girdle
 						},
-						["questID"] = 37398,	
+						["questID"] = 37398,
+						["isDaily"] = true,							
 						["description"] = "|cff66ccffKill 15 mobs near him to make him attackable.|r",
 					}), 
 					n(50981, { 		-- Luk'hok
@@ -1654,7 +1661,8 @@ _.Zones =
 						["groups"] = {	
 							dr(40, i(120317)),	-- Pristine Hide of the Pit Beast
 						},
-						["questID"] = 37637,		
+						["questID"] = 37637,
+						["isDaily"] = true,							
 					}), 
 					o(233561, { 	-- Pokkar's Thirteenth Axe
 						["groups"] = {
@@ -1667,7 +1675,8 @@ _.Zones =
 						["groups"] = {
 							dr(8, i(129217)),	-- Warm Arcane Crystal (Empowered Manafiend Pet)
 						},
-						["questID"] = 40073,	
+						["questID"] = 40073,
+						["isDaily"] = true,							
 					}), 
 					n(82755, { 		-- Redclaw the Feral
 						["groups"] = {	
@@ -1679,7 +1688,8 @@ _.Zones =
 						["groups"] = {
 							dr(8, i(129216)),	-- Vibrating Arcane Crystal (Energized Manafiend Pet)
 						},
-						["questID"] = 40075,						
+						["questID"] = 40075,	
+						["isDaily"] = true,							
 					}), 
 					n(83526, { 		-- Ru'klaa
 						["groups"] = {	
@@ -1723,7 +1733,8 @@ _.Zones =
 						["groups"] = {
 							dr(55, i(120276)),	-- Outrider's Bridle Chain Toy
 						},
-						["questID"] = 37546,	
+						["questID"] = 37546,
+						["isDaily"] = true,							
 					}),
 					n(79024, { 		-- Warmaster Blugthol
 						["groups"] = {	
