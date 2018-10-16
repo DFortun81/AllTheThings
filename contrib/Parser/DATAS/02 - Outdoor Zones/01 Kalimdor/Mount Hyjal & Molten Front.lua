@@ -72,7 +72,7 @@ _.Zones =
 					p(482), 	-- Rock Viper
 					p(503), 	-- Silky Moth
 					desc(p(469), "Can be found in areas where the Twilight Hammer have set up camp."), -- Twilight Beetle
-					qg(66819, q(31972)),	-- Brok
+					qr(qg(66819, q(31972))),	-- Brok
 				}),
 				n(-17, {	-- Quests
 --[[	Achievement info for Loremaster related zone quests

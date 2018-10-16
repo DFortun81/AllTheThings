@@ -785,7 +785,7 @@ _.Zones =
 						n(0, { 		-- Zone Drop
 							i(10593, { 	-- Imperfect Draenethyst Fragment
 								["groups"] = {
-									q(25771, {	-- One Draenei's Junk...
+									qr(q(25771, {	-- One Draenei's Junk...
 										i(12122, { 	-- Kum'isha's Junk
 											dr(03.0, i(9940)),	-- Abjurer's Hood
 											dr(03.0, i(9942)),	-- Abjurer's Pants
@@ -843,7 +843,7 @@ _.Zones =
 											dr(01.0, i(10084)),	-- Lord's Legguards	
 											dr(01.0, i(10072)),	-- Righteous Gloves
 										}),
-									}),
+									})),
 								},
 								["description"] = "This has a high chance (about 50%) to drop from rares in the zone, but can technically drop from any mob in the zone.",
 							}),

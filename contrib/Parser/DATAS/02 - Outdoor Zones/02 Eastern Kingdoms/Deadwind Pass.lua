@@ -12,9 +12,9 @@ _.Zones =
 					qg(66522, q(31915, {	-- Grand Master Lydia Accoste (non-daily)
 						i(89125),	-- Sack of Pet Supplies
 					})),
-					qg(66522, q(31916, { 	-- Grand Master Lydia Accoste (daily)
+					qr(qg(66522, q(31916, { 	-- Grand Master Lydia Accoste (daily)
 						i(89125),	-- Sack of Pet Supplies
-					})),
+					}))),
 					qg(66522, qh(31980)),	-- The Returning Champion
 					qg(66522, qa(31976)),	-- The Returning Champion
 				}),

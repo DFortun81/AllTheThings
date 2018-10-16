@@ -27,7 +27,7 @@ _.Zones =
 					p(429), 	-- Lava Beetle
 					p(423), 	-- Lava Crab
 					p(414), 	-- Scorpid
-					qg(66520, q(31914)),	-- Durin Darkhammer
+					qr(qg(66520, q(31914))),	-- Durin Darkhammer
 				}),
 				n(-17, { 	-- Quests
 					ach(4901, { -- Burning Steppes Quests

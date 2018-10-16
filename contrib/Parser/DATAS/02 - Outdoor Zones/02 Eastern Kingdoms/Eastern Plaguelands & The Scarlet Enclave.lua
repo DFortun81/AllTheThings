@@ -487,14 +487,14 @@ _.Zones =
 								},
 								["qg"] = 16365,	-- Master Craftsman Omarion
 							}),
- 							qdg(q(28756, {	-- Aberrations of Bone
+ 							qr(qdg(q(28756, {	-- Aberrations of Bone
 								["qg"] = 49856,	-- 
 								["sourceQuests"] = {27464},
-							})),
-							qdg(q(28755, {	-- Annals of the Silver Hand
+							}))),
+							qr(qdg(q(28755, {	-- Annals of the Silver Hand
 								["qg"] = 49856,	-- 
 								["sourceQuests"] = {27464},
-							})),
+							}))),
 							q( 27762, {	-- Fuselight, Ho!
 								["qg"] = 48704,	-- Gek Nozzlerocket
 								["isBreadcrumb"] = true,	-- for "To Fuselight Proper"

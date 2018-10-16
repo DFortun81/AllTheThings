@@ -50,10 +50,10 @@ _.Zones =
 					qg(63014, qa(31309)),	-- On The Mend
 					qg(63014, qa(31785)),	-- Level Up!
 					qg(63014, qa(31550)),	-- Got one!
-					qg(64330, q(31693)),	-- Julia Stevens
+					qr(qg(64330, q(31693)),	-- Julia Stevens
 					qg(64330, qa(31724, { -- Old MacDonald
 						i(89125),	-- Sack of Pet Supplies
-					})),					
+					}))),					
 				}),
 				n(-17, {	-- Quests
 --[[				

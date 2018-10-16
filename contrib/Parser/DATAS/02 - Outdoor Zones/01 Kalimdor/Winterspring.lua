@@ -31,22 +31,22 @@ _.Zones =
 					qa(29032, {	-- Get Them While They're Young
 						["qg"] = 10618,	-- Rivern Frostwind
 					}),
-					qa(29037, {	-- 'Borrowing' From the Winterfall
+					qr(qa(29037, {	-- 'Borrowing' From the Winterfall
 						["qg"] = 51677,	-- Winterspring Cub
 						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
-					}),
-					qa(29035, {	-- A Cub's Cravings
+					})),
+					qr(qa(29035, {	-- A Cub's Cravings
 						["qg"] = 51677,	-- Winterspring Cub
 						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
-					}),
-					qa(29040, {	-- Cub's First Toy
+					})),
+					qr(qa(29040, {	-- Cub's First Toy
 						["qg"] = 51677,	-- Winterspring Cub
 						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
-					}),
-					qa(29038, {	-- Hunting Practice
+					})),
+					qr(qa(29038, {	-- Hunting Practice
 						["qg"] = 51677,	-- Winterspring Cub
 						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
-					}),
+					})),
 					qa(29034, {	-- They Grow Up So Fast
 						["groups"] = {
 							i(13086),	-- Reins of the Winterspring Frostsaber (MOUNT!)
