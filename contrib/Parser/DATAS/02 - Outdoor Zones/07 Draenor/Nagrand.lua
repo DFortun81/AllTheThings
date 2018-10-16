@@ -1538,8 +1538,7 @@ _.Zones =
 							dr(100, i(116809)),	-- Ironbeard's Blunderbuss
 							dr(100, i(118244)),	-- Iron Buccaneer's Hat Toy
 						},
-						["questID"] = 34727,
-						["isDaily"] = true,							
+						["questID"] = 34727,						
 					}), 
 					n(87788, { 		-- Durg Spinecrusher
 						["groups"] = {	
@@ -1604,7 +1603,7 @@ _.Zones =
 							dr(9, i(129218)),	-- Glittering Arcane Crystal (Empyreal Manafiend Pet)
 						},
 						["questID"] = 40074,
-						["isDaily"] = true,							
+						["isDaily"] = true,								
 					}),
 					n(83603, { 		-- Hunter Blacktooth
 						["groups"] = {	
@@ -1617,14 +1616,14 @@ _.Zones =
 							dr(39, i(119355)),	-- Leggings of Howling Winds
 						},
 						["questID"] = 37399,
-						["isDaily"] = true,							
+						["isDaily"] = true,								
 					}), 
 					n(88210, { 		-- Krud the Eviscerator
 						["groups"] = {
 							dr(41, i(119384)),	-- Krud's Girthy Girdle
 						},
 						["questID"] = 37398,
-						["isDaily"] = true,							
+						["isDaily"] = true,								
 						["description"] = "|cff66ccffKill 15 mobs near him to make him attackable.|r",
 					}), 
 					n(50981, { 		-- Luk'hok
@@ -1733,8 +1732,7 @@ _.Zones =
 						["groups"] = {
 							dr(55, i(120276)),	-- Outrider's Bridle Chain Toy
 						},
-						["questID"] = 37546,
-						["isDaily"] = true,							
+						["questID"] = 37546,					
 					}),
 					n(79024, { 		-- Warmaster Blugthol
 						["groups"] = {	
