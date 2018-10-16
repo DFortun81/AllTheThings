@@ -197,11 +197,18 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\Garrison_BronzeChest",	
 						["description"] = "If this is not showing up for you on Alliance, you will need to complete the quests in the area first, then move to a new map area and back in to see the treasure.",
 					}),
+					n(86213, { 		-- Aqualir
+						["groups"] = {	
+							dr(33, i(113557)),	-- Dragonrider's Tinkered Leggings 
+						},
+						["questID"] = 37356,	
+					}),
 					n(85568, { 		-- Avalanche
 						["groups"] = {		
-							dr(44, i(119400)), 	-- Rugged Crystal Cudgel 
+							dr(44, i(119387)), 	-- Loop of Drowned Souls - Droprate is unknown on WoWhead
 						},
-						["questID"] = 37410,	
+						["questID"] = 37356,
+						["isDaily"] = true,						
 					}),
 					n(82326, { 		-- Ba'ruun 
 						["groups"] = {	
@@ -257,7 +264,8 @@ _.Zones =
 						["groups"] = {
 							dr(14, i(119431)), 	-- Servant of Demidos Pet					
 						},
-						["questID"] = 37351,	
+						["questID"] = 37351,
+						["isDaily"] = true,						
 					}),
 					o(236755, { 	-- Dusty Lockbox
 						["groups"] = {
@@ -377,7 +385,8 @@ _.Zones =
 						["groups"] = {	
 							dr(42, i(119360)),	-- Temptessa's Knee-High Boots 
 						},
-						["questID"] = 37355,	
+						["questID"] = 37355,
+						["isDaily"] = true,						
 					}),
 					n(77310, { 		-- Mad "King" Sporeon
 						["groups"] = {	
@@ -395,7 +404,8 @@ _.Zones =
 						["groups"] = {	
 							dr(34, i(119368)),	-- Milgra's Mighty Mitts 
 						},
-						["questID"] = 37353,	
+						["questID"] = 37353,
+						["isDaily"] = true,						
 					}),
 					n(82362, { 		-- Morva Soultwister
 						["groups"] = {	
@@ -407,7 +417,8 @@ _.Zones =
 						["groups"] = {	
 							dr(41, i(119364)),	-- Hydraskin Shoulderguards
 						},
-						["questID"] = 37409,	
+						["questID"] = 37409,
+						["isDaily"] = true,						
 					}), 
 					n(50883, { 		-- Pathrunner	
 						dr(100, i(116773)), 	-- Swift Breezestrider Mount
@@ -416,7 +427,8 @@ _.Zones =
 						["groups"] = {	
 							dr(40, i(119382)), 	-- Hershak's Heavy Legguards
 						},
-						["questID"] = 37352,	
+						["questID"] = 37352,
+						["isDaily"] = true,						
 					}),
 					n(82374, { 		-- Rai'vosh
 						["groups"] = {	
@@ -455,7 +467,8 @@ _.Zones =
 						["groups"] = {	
 							dr(37, i(119396)),	-- Shadowspeaker's Shard 
 						},
-						["questID"] = 37354,	
+						["questID"] = 37354,
+						["isDaily"] = true,						
 					}),
 					n(82415, { 		-- Shinri 
 						["groups"] = {	
@@ -467,7 +480,8 @@ _.Zones =
 						["groups"] = {	
 							dr(38, i(119411)),	-- Massive Rockworm Fang
 						},
-						["questID"] = 37411,	
+						["questID"] = 37411,
+						["isDaily"] = true,						
 					}),
 					n(86689, { 		-- Sneevel
 						["groups"] = {	
@@ -535,7 +549,6 @@ _.Zones =
 						["questID"] = 33389,	
 					}),
 --[[
-	--				n(86213, { 		-- Aqualir 	}), 
 	--				n(81406, { 		-- Bahameye	}),
 	--				n(82676, { 		-- Enavra (hostile to horde) 	}), 
 	--				n(82742, { 		-- Enavra (hostile to alliance) 	}),

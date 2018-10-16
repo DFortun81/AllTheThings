@@ -1538,7 +1538,8 @@ _.Zones =
 							dr(100, i(116809)),	-- Ironbeard's Blunderbuss
 							dr(100, i(118244)),	-- Iron Buccaneer's Hat Toy
 						},
-						["questID"] = 34727,						
+						["questID"] = 34727,
+						["isDaily"] = true,						
 					}), 
 					n(87788, { 		-- Durg Spinecrusher
 						["groups"] = {	
@@ -1732,7 +1733,8 @@ _.Zones =
 						["groups"] = {
 							dr(55, i(120276)),	-- Outrider's Bridle Chain Toy
 						},
-						["questID"] = 37546,					
+						["questID"] = 37546,
+						["isDaily"] = true,						
 					}),
 					n(79024, { 		-- Warmaster Blugthol
 						["groups"] = {	
