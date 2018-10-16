@@ -30,13 +30,20 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
-								q(52869, {	-- Azerite Empowerment
+								q(52869, {	-- Azerite Empowerment [A]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								q(51638, {	-- Beachhead
+								{	-- Bashmu [A]
+									["questID"] = 51666,	-- Bashmu
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
+								q(51638, {	-- Beachhead [A]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -84,7 +91,7 @@ _.Zones =
 									["lvl"] = 120,			-- WQ is 120+ only
 									["requireSkill"] = 182,	-- Herbalism
 								},
-								{	-- Gnomish Azerite Exraction
+								{	-- Gnomish Azerite Exraction [A]
 									["questID"] = 52120,	-- Gnomish Azerite Extraction
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -112,12 +119,32 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Picturesque Norwington Estate [A]
+									["questID"] = 51090,	-- Picturesque Norwington Estate
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(51656, {	-- Saurolisk Tamer Mugg
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- Show-Off [A]
+									["questID"] = 53331,	-- Show-Off
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										{	-- The Reining Champion
+											["achievementID"] = 12087,	-- The Reining Champion
+										},
+									},
+								},
 								q(51463, {	-- Sky Drop Rescue
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -125,7 +152,7 @@ _.Zones =
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
-								q(51651, {	-- Squacks
+								q(51651, {	-- Squacks [A]
 									["groups"]  = {
 										i(160455),	-- Parrot-Trainer Sash
 									},
@@ -143,6 +170,13 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
+								{	-- The Lord's Hunt [A]
+									["questID"] = 51406,	-- The Lord's Hunt
+									["repeatable"] = true,
+									["isDaily"] = true, 	-- Would like to swap it to WQ below
+									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+									["lvl"] = 120,			-- WQ is 120+ only
+								},
 								q(53078, {	-- Treasure in the Ttides
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below

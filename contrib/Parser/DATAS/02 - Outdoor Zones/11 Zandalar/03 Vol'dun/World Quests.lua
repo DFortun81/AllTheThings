@@ -63,7 +63,7 @@ _.Zones =
 								}),
 								{	--  Desert Survivors [Pet Battle]
 									["questID"] = 52878,	-- Desert Survivors
-									["qg"] = 142054,	-- Kusa
+									["qg"] = 142054,		-- Kusa
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
