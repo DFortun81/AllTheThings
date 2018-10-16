@@ -38,6 +38,7 @@ _.Instances =
 									{
 										["itemID"] = 147497,	-- Encrusted Naga Scale [Raid Finder]
 										["questID"] = 47114,	-- Tomb of Sargeras: The Tomb's Mistress [Raid Finder]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147518),	-- Cache of Fel Treasures [Raid Finder]
 										},
@@ -45,6 +46,7 @@ _.Instances =
 									{
 										["itemID"] = 147509,	-- Seal of the Deceiver [Raid Finder]
 										["questID"] = 47126,	-- Tomb of Sargeras: The Deceiver [Raid Finder]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147518),	-- Cache of Fel Treasures [Raid Finder]
 										},
@@ -52,6 +54,7 @@ _.Instances =
 									{
 										["itemID"] = 147505,	-- Wailing Soul [Raid Finder]
 										["questID"] = 47122,	-- Tomb of Sargeras: The Fallen Avatar [Raid Finder]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147518),	-- Cache of Fel Treasures [Raid Finder]
 										},
@@ -59,6 +62,7 @@ _.Instances =
 									{
 										["itemID"] = 147501,	-- Worshipper's Scrawlings [Raid Finder]
 										["questID"] = 47118,	-- Tomb of Sargeras: Free The Tormented [Raid Finder]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147518),	-- Cache of Fel Treasures [Raid Finder]
 										},
@@ -259,6 +263,7 @@ _.Instances =
 									{
 										["itemID"] = 147498,	-- Encrusted Naga Scale [Normal]
 										["questID"] = 47115,	-- Tomb of Sargeras: The Tomb's Mistress [Normal]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147519),	-- Cache of Fel Treasures [Normal]
 										},
@@ -266,6 +271,7 @@ _.Instances =
 									{
 										["itemID"] = 147510,	-- Seal of the Deceiver [Normal]
 										["questID"] = 47127,	-- Tomb of Sargeras: The Deceiver [Normal]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147519),	-- Cache of Fel Treasures [Normal]
 										},
@@ -273,6 +279,7 @@ _.Instances =
 									{
 										["itemID"] = 147506,	-- Wailing Soul [Normal]
 										["questID"] = 47123,	-- Tomb of Sargeras: The Fallen Avatar [Normal]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147519),	-- Cache of Fel Treasures [Normal]
 										},
@@ -280,6 +287,7 @@ _.Instances =
 									{
 										["itemID"] = 147502,	-- Worshipper's Scrawlings [Normal]
 										["questID"] = 47119,	-- Tomb of Sargeras: Free The Tormented [Normal]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147519),	-- Cache of Fel Treasures [Normal]
 										},
@@ -472,6 +480,7 @@ _.Instances =
 									{
 										["itemID"] = 147499,	-- Encrusted Naga Scale [Heroic]
 										["questID"] = 47116,	-- Tomb of Sargeras: The Tomb's Mistress [Heroic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147520),	-- Cache of Fel Treasures [Heroic]
 										},
@@ -479,6 +488,7 @@ _.Instances =
 									{
 										["itemID"] = 147511,	-- Seal of the Deceiver [Heroic]
 										["questID"] = 47128,	-- Tomb of Sargeras: The Deceiver [Heroic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147520),	-- Cache of Fel Treasures [Heroic]
 										},
@@ -486,6 +496,7 @@ _.Instances =
 									{
 										["itemID"] = 147507,	-- Wailing Soul [Heroic]
 										["questID"] = 47124,	-- Tomb of Sargeras: The Fallen Avatar [Heroic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147520),	-- Cache of Fel Treasures [Heroic]
 										},
@@ -493,6 +504,7 @@ _.Instances =
 									{
 										["itemID"] = 147503,	-- Worshipper's Scrawlings [Heroic]
 										["questID"] = 47120,	-- Tomb of Sargeras: Free The Tormented [Heroic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147520),	-- Cache of Fel Treasures [Heroic]
 										},
@@ -685,6 +697,7 @@ _.Instances =
 									{
 										["itemID"] = 147500,	-- Encrusted Naga Scale [Mythic]
 										["questID"] = 47117,	-- Tomb of Sargeras: The Tomb's Mistress [Mythic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147521),	-- Cache of Fel Treasures [Mythic]
 										},
@@ -692,6 +705,7 @@ _.Instances =
 									{
 										["itemID"] = 147512,	-- Seal of the Deceiver [Mythic]
 										["questID"] = 47129,	-- Tomb of Sargeras: The Deceiver [Mythic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147521),	-- Cache of Fel Treasures [Mythic]
 										},
@@ -699,6 +713,7 @@ _.Instances =
 									{
 										["itemID"] = 147508,	-- Wailing Soul [Mythic]
 										["questID"] = 47125,	-- Tomb of Sargeras: The Fallen Avatar [Mythic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147521),	-- Cache of Fel Treasures [Mythic]
 										},
@@ -706,6 +721,7 @@ _.Instances =
 									{
 										["itemID"] = 147504,	-- Worshipper's Scrawlings [Mythic]
 										["questID"] = 47121,	-- Tomb of Sargeras: Free The Tormented [Mythic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(147521),	-- Cache of Fel Treasures [Mythic]
 										},
