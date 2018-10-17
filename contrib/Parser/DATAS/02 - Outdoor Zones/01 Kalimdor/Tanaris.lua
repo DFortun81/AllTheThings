@@ -235,7 +235,7 @@ _.Zones =
 						},
 						["qg"] = 19935,	-- Soridormi
 					})),
-					q(10475, {	-- Defender's Covenant
+					q(10475, {	-- Defender's Covenant						-- ["classes"] = { 1, 2, 6, 10, 11, 12 },
 						["groups"] = {
 							i(29297),	-- Band of the Eternal Defender
 						},
@@ -245,7 +245,7 @@ _.Zones =
 						},
 						["sourceQuests"] = { 10471 },	-- Defender's Oath
 					}),
-					q(10471, {	-- Defender's Oath
+					q(10471, {	-- Defender's Oath						-- ["classes"] = { 1, 2, 6, 10, 11, 12 },
 						["groups"] = {
 							i(29296),	-- Band of Eternity
 						},
@@ -255,13 +255,13 @@ _.Zones =
 						},
 						["sourceQuests"] = { 10467 },	-- Defender's Vow
 					}),
-					q(10460, {	-- Defender's Pledge
+					q(10460, {	-- Defender's Pledge						-- ["classes"] = { 1, 2, 6, 10, 11, 12 },
 						["groups"] = {
 							i(29294),	-- Band of Eternity
 						},
 						["qg"] = 19936,	-- Arazmodu
 					}),
-					q(10467, {	-- Defender's Vow
+					q(10467, {	-- Defender's Vow 						-- ["classes"] = { 1, 2, 6, 10, 11, 12 },
 						["groups"] = {
 							i(29295),	-- Band of Eternity
 						},

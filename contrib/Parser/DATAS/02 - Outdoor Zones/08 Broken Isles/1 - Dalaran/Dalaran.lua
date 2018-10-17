@@ -1619,7 +1619,7 @@ _.Zones =
 					})),										
 					qart(qa(45863, {	-- A Gift From the Six
 						["qg"] = 90418, -- Archmage Modera
---						["classes"] = {}, -- need info
+						["classes"] = { 1, 4, 6, 7, 8, 11,}, 
 					})),										
 					qart(q(41632, {	-- A Gift of Time
 						["qg"] = 105081, -- Archmage Kalec
@@ -2693,21 +2693,29 @@ _.Zones =
 					q(43473, {	-- Experimental Potion: Test Subjects Needed
 						["qg"] = 110642, -- Fizzi Liverzapper
 					}),
-					q(43474, {	-- Experimental Potion: Test Subjects Needed
+					{
+						["questID"] = 43474,	-- Experimental Potion: Test Subjects Needed
 						["qg"] = 110642, -- Fizzi Liverzapper
-					}),
-					q(43475, {	-- Experimental Potion: Test Subjects Needed
+						["u"] = 40, -- No Server response, quest is removed
+					},
+					{
+						["questID"] = 43475,	-- Experimental Potion: Test Subjects Needed
 						["qg"] = 110642, -- Fizzi Liverzapper
-					}),
+						["u"] = 40, -- No Server response, quest is removed
+					},
 					q(43477, {	-- Experimental Potion: Test Subjects Needed
 						["qg"] = 110642, -- Fizzi Liverzapper
 					}),
-					q(43476, {	-- Experimental Potion: Test Subjects Needed
+					{
+						["questID"] = 43476,	-- Experimental Potion: Test Subjects Needed
 						["qg"] = 110642, -- Fizzi Liverzapper
-					}),
-					q(43478, {	-- Experimental Potion: Test Subjects Needed
+						["u"] = 40, -- No Server response, quest is removed
+					},
+					{
+						["questID"] = 43478,	-- Experimental Potion: Test Subjects Needed
 						["qg"] = 110642, -- Fizzi Liverzapper
-					}),
+						["u"] = 40, -- No Server response, quest is removed
+					},
 					q(45916, {	-- The Acolyte Imperiled
 						["qg"] = 116714, -- Ritssyn Flamescowl
 						["classes"] = { 1, 4, 6, 7, 11 },
