@@ -732,7 +732,9 @@ qc12 = function(t)						-- Gives a quest the Demon Hunter Description
 	return t;
 end
 qd = function(t)							-- Gives a quest the Daily Description
+	t.isDaily = true;
 	return t;
+	
 end
 qdg = function(t)						-- Gives a quest the Dungeon Description
 	t.description = "Can only be done in dungeons.";
