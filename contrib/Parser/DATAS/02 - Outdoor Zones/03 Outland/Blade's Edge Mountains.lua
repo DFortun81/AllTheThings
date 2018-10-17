@@ -477,6 +477,7 @@ _.Zones =
 							q(11080, {	-- The Relic's Emanation
 								["qg"] = 23233,	-- Chu'a'lor
 								["sourceQuests"] = { 11058 },	-- An Apexis Relic
+								["isDaily"] = true,
 							}),
 							q(11059, {	-- Guardian of the Monument
 								["qg"] = 23233,	-- Chu'a'lor
@@ -509,6 +510,7 @@ _.Zones =
 							q(11023, {	-- Bomb Them Again!
 								["qg"] = 23120,	-- Sky Sergeant Vanderlip
 								["sourceQuests"] = { 11010 },	-- Bombing Run
+								["isDaily"] = true,
 							}),
 							q(11119, {	-- Assault on Bash'ir Landing!
 								["qg"] = 23334,	-- Sky Commander Keller
@@ -517,6 +519,7 @@ _.Zones =
 							q(11065, {	-- Wrangle Some Aether Rays!
 								["qg"] = 23335,	-- Skyguard Khatie
 								["sourceQuests"] = { 11010 },	-- Bombing Run
+								["isDaily"] = true,
 							}),
 							q(11066, {	-- Wrangle More Aether Rays!
 								["qg"] = 23335,	-- Skyguard Khatie
