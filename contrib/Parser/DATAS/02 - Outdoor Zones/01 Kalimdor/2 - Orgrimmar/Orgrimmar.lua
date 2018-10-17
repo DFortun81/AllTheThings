@@ -2954,6 +2954,20 @@ Legacy				qh( 1436),	-- Alliance Relations
 							i(65406),	-- Recipe: Whitecrest Gumbo
 						}),
 					}),
+					{	-- Sovik
+						["npcID"] = 3413,	-- Sovik
+						["coords"] = {
+							{ 56.7, 56.4 },
+						},
+						["g"] = {
+							{	-- Schematic: Red Firework
+								["itemID"] = 18647,	-- Schematic: Red Firework
+							},
+							{	-- Schematic: Steam Tonk Controller
+								["itemID"] = 22729,	-- Steam Tonk Controller
+							},
+						},
+					},
 					n(50488, {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
 						i(64908),	-- Shroud of Orgrimmar
 						i(64909),	-- Cape of Orgrimmar
