@@ -505,6 +505,7 @@ _.ExpansionFeatures =
 								i(115409),	-- Wall-Climber's Treads
 							},
 							["questID"] = 37638,
+							["isWeekly"] = true,
 							["description"] = "Bronze Challenge"
 						}),
 						i(120319, { -- Invader's Damaged Cache
@@ -531,6 +532,7 @@ _.ExpansionFeatures =
 								i(115409),	-- Wall-Climber's Treads
 							},
 							["questID"] = 37639,
+							["isWeekly"] = true,
 							["description"] = "Silver Challenge"
 						}),
 						i(116980, { -- Invader's Forgotten Treasure
@@ -561,6 +563,7 @@ _.ExpansionFeatures =
 								i(115409),	-- Wall-Climber's Treads
 							},
 							["questID"] = 37640,
+							["isWeekly"] = true,
 							["description"] = "Gold Challenge"
 						}),
 						i(122163, { -- Routed Invader's Crate of Spoils
@@ -608,6 +611,7 @@ _.ExpansionFeatures =
 								i(115411),	-- Ozymandias' Burdensome Treads
 							},
 							["questID"] = 38482,
+							["isWeekly"] = true,
 							["description"] = "Platinum Challenge"
 						}),
 						n(90802, { -- Annihilon
@@ -2066,14 +2070,14 @@ _.ExpansionFeatures =
 				}),	
 				n(-25, { 	-- Pet Battle
 					ach(9264),	-- Draenor Pet Brawler
-					q(38299, { 	-- Critters of Draenor
+					qd(q(38299, { 	-- Critters of Draenor
 						i(122535, {	-- Traveler's Pet Supplies
 							i(122532), 	-- Bone Serpent
 							i(122534), 	-- Slithershock Elver
 							i(122533), 	-- Young Talbuk
 						}),
-					}),
-					q(37644, {	-- Mastering the Menagerie
+					})),
+					qd(q(37644, {	-- Mastering the Menagerie
 						i(118697, {	-- Big Bag of Pet Supplies
 							i(119434), 	-- Albino Chimaeraling
 							i(118578), 	-- Firewing
@@ -2083,7 +2087,7 @@ _.ExpansionFeatures =
 							i(118598), 	-- Sun Sproutling
 							i(113558), 	-- Weebomination
 						}),
-					}),
+					})),
 				}),
 				na(-17, { 	-- Quests
 					{	-- A Tiny Scarecrow Costume
@@ -2277,34 +2281,34 @@ _.ExpansionFeatures =
 								},
 								["description"] = "This satchel is awarded by High Overlord Saurfang and Muradin Bronzebear on all of the Garrison Raid Quests.",
 							}),
-							q(37767, { 	-- Arcane Sanctum: Ko'ragh
+							qw(q(37767, { 	-- Arcane Sanctum: Ko'ragh
 								i(123975, { -- Greater Bounty Spoils
 								}),
-							}),
-							q(37772, { 	-- Blackhand's Crucible: Blackhand
+							})),
+							qw(q(37772, { 	-- Blackhand's Crucible: Blackhand
 								i(123975, { -- Greater Bounty Spoils
 								}),
-							}),
-							q(37768, { 	-- Imperator's Rise: Imperator Mar'gok
+							})),
+							qw(q(37768, { 	-- Imperator's Rise: Imperator Mar'gok
 								i(123975, { -- Greater Bounty Spoils
 								}),
-							}),
-							q(37771, { 	-- Iron Assembly: Admiral Gar'an
+							})),
+							qw(q(37771, { 	-- Iron Assembly: Admiral Gar'an
 								i(123975, { -- Greater Bounty Spoils
 								}),
-							}),
-							q(37769, { 	-- Slagworks: Heart of the Mountain
+							})),
+							qw(q(37769, { 	-- Slagworks: Heart of the Mountain
 								i(123975, { -- Greater Bounty Spoils
 								}),
-							}),
-							q(37770, { 	-- The Black Forge: Kromog
+							})),
+							qw(q(37770, { 	-- The Black Forge: Kromog
 								i(123975, { -- Greater Bounty Spoils
 								}),
-							}),
-							q(37766, { 	-- Walled City: Brackenspore
+							})),
+							qw(q(37766, { 	-- Walled City: Brackenspore
 								i(123975, { -- Greater Bounty Spoils
 								}),
-							}),
+							})),
 						},
 						["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
 					}),
@@ -3230,7 +3234,7 @@ _.ExpansionFeatures =
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
-						q(37142, {	-- Ogre Ancestry
+						qd(q(37142, {	-- Ogre Ancestry
 							["groups"] = {
 								i(119040, { -- Cache of Mingled Treasures
 									i(109829),	-- Belt of Burning Focus
@@ -3321,7 +3325,7 @@ _.ExpansionFeatures =
 								}),
 							},
 							["qg"] = 88013, -- Lunk
-						}),
+						})),
 						q(37148, {	-- Oralius' Adventure
 							["groups"] = {
 								i(118922), -- Oralius' Whispering Crystal
