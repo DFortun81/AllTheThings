@@ -682,6 +682,7 @@ _.Zones =
 							}),
 						},
 						["questID"] = 36153,
+						["isDaily"] = true,
 					}),
 					o(241601, { -- Scout's Belongings
 						["groups"] = {

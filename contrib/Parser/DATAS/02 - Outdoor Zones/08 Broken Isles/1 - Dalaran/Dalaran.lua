@@ -2696,12 +2696,12 @@ _.Zones =
 					{
 						["questID"] = 43474,	-- Experimental Potion: Test Subjects Needed
 						["qg"] = 110642, -- Fizzi Liverzapper
-						["u"] = 40, -- No Server response, quest is removed
+					--	["u"] = 40, -- No Server response, quest is removed
 					},
 					{
 						["questID"] = 43475,	-- Experimental Potion: Test Subjects Needed
 						["qg"] = 110642, -- Fizzi Liverzapper
-						["u"] = 40, -- No Server response, quest is removed
+					--	["u"] = 40, -- No Server response, quest is removed
 					},
 					q(43477, {	-- Experimental Potion: Test Subjects Needed
 						["qg"] = 110642, -- Fizzi Liverzapper
@@ -2709,12 +2709,12 @@ _.Zones =
 					{
 						["questID"] = 43476,	-- Experimental Potion: Test Subjects Needed
 						["qg"] = 110642, -- Fizzi Liverzapper
-						["u"] = 40, -- No Server response, quest is removed
+					--	["u"] = 40, -- No Server response, quest is removed
 					},
 					{
 						["questID"] = 43478,	-- Experimental Potion: Test Subjects Needed
 						["qg"] = 110642, -- Fizzi Liverzapper
-						["u"] = 40, -- No Server response, quest is removed
+					--	["u"] = 40, -- No Server response, quest is removed
 					},
 					q(45916, {	-- The Acolyte Imperiled
 						["qg"] = 116714, -- Ritssyn Flamescowl
