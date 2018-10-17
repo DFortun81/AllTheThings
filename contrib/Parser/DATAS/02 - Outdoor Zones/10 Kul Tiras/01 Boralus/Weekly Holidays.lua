@@ -21,7 +21,7 @@ _.Zones =
 							},
 							["g"] = {
 								{	-- Cache of Uldir Treasures [Normal Quality]
-									["itemID"] = 164258,	-- Cache of Uldir Treasures
+									["itemID"] = 164579,	-- Cache of Uldir Treasures
 									["g"] = bubbleDown({["modID"] = 3}, {
 										{	-- Khor, Hammer of the Corrupted
 											["itemID"] = 160679,	-- Khor, Hammer of the Corrupted

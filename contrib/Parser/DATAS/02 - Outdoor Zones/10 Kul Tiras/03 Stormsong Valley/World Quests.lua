@@ -31,7 +31,7 @@ _.Zones =
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
-								{	-- Automated Chaos [A] [Pet Battle!!]
+								{	-- Automated Chaos [AH] [Pet Battle!!]
 									["questID"] = 52165,	-- Automated Chaos
 									["qg"] = 140315,		-- Eddie Fixit
 									["coords"] = {
@@ -54,28 +54,28 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								{	-- Azerite Madness [A]
+								{	-- Azerite Madness [AH]
 									["questID"] = 51618, 	-- Azerite Madness
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
-								{	-- Azerite Mining [A]
+								{	-- Azerite Mining [AH]
 									["questID"] = 52873,	-- Azerite Mining
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
-								{	-- Beachhead [A]
+								{	-- Beachhead [AH]
 									["questID"] = 51639,	-- Beachhead
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
-								{	-- Beehemoth [A]
+								{	-- Beehemoth [AH]
 									["questID"] = 52330,	-- Beehemoth
 									["npcID"] = 134147,		-- Beehemoth
 									["repeatable"] = true,
@@ -102,6 +102,7 @@ _.Zones =
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
 									--Note!! 10/16 offered Shoalbreach Waistguard
 								},
 								q(51782, {	-- Captain Razorspine
@@ -129,7 +130,7 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								{	-- Ice Sickle
+								{	-- Ice Sickle [AH]
 									["questID"] = 52328,	-- Ice Sickle
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -167,7 +168,7 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								{	-- Severus the Outcast [A]
+								{	-- Severus the Outcast [AH]
 									["questID"] = 52315,	-- Severus the Outcast
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -186,6 +187,7 @@ _.Zones =
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
 								},
 								{	-- Song Mistress Dadalea
 									["questID"] = 52452,	-- Song Mistress Dadalea
@@ -201,7 +203,7 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
-								{	-- This Little Piggy Has Sharp Tusks [A] [Pet Battle!!]
+								{	-- This Little Piggy Has Sharp Tusks [AH] [Pet Battle!!]
 									["questID"] = 52126,	-- This Little Piggy Has Sharp Tusks
 									["qg"] = 139987,		-- Bristlespine
 									["coords"] = {

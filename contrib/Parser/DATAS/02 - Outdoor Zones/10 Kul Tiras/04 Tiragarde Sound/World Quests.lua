@@ -30,20 +30,20 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
-								q(52869, {	-- Azerite Empowerment [A]
+								q(52869, {	-- Azerite Empowerment [AH]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								{	-- Bashmu [A]
+								{	-- Bashmu [AH]
 									["questID"] = 51666,	-- Bashmu
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
-								q(51638, {	-- Beachhead [A]
+								q(51638, {	-- Beachhead [AH]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -56,7 +56,7 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
-								q(52755, {	-- Bringing the Heat
+								q(52755, {	-- Bringing the Heat [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -125,6 +125,7 @@ _.Zones =
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
 								},
 								q(51656, {	-- Saurolisk Tamer Mugg
 									["repeatable"] = true,
@@ -152,7 +153,7 @@ _.Zones =
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
-								q(51651, {	-- Squacks [A]
+								q(51651, {	-- Squacks [AH]
 									["groups"]  = {
 										i(160455),	-- Parrot-Trainer Sash
 									},
@@ -176,6 +177,7 @@ _.Zones =
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
 								},
 								q(53078, {	-- Treasure in the Ttides
 									["repeatable"] = true,

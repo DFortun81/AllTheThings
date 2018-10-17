@@ -132,6 +132,7 @@ _.Zones =
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
 								},
 								q(51604, {	-- Hunters Hunted [A]
 									["repeatable"] = true,
@@ -167,6 +168,7 @@ _.Zones =
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
+									["races"] = ALLIANCE_ONLY,
 								},
 								q(52278, {	-- Rogue Azerite [Pet Battle]
 									["groups"] = {
@@ -177,7 +179,7 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								{	-- Sister Martha [A]
+								{	-- Sister Martha [AH]
 									["questID"] = 51906, 	-- Sister Martha
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -198,14 +200,14 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								{	-- Soul Goliath [A]
+								{	-- Soul Goliath [AH]
 									["questID"] = 51431, 	-- Soul Goliath
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
-								{	-- Talon [A]
+								{	-- Talon [AH]
 									["questID"] = 51529,	-- Talon
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
