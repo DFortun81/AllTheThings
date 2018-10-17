@@ -398,17 +398,37 @@ _.Zones =
 					p(1591), 	-- Violet Firefly
 				}),
 				n(-38, { 	-- Profession
-					n(-184, { -- Herbalism
-						i(129121, {	-- Starlight Rosedust
-							q(40034), -- Starlight Rosedust
-						}),
-						i(129140, {	-- Jeweled Spade Handle
-							q(40036), -- Jeweled Spade Handle
-						}),
-						i(129143, { -- Scribbled Ramblings
-							q(40038), -- Insame Ramblings
-						}),
-					}),
+					{	-- Felwort Sample [Felwort I]
+						["itemID"] = 129112,	-- Felwort Sample
+						["questID"] = 40040,	-- Felwort Sample
+						["requireSkill"] = 182,	-- Herbalism
+						["g"] = {
+							{	-- Felwort [Rank 1]
+								["recipeID"] = 193307,	-- Felwort [Rank 1]
+							},
+						},
+					},
+					{	-- Jeweled Spade Handle [Starlight Rose II]
+						["itemID"] = 129140,	-- Jeweled Spade Handle
+						["questID"] = 40036,	-- Jeweled Spade Handle
+						["sourceQuests"] = {
+							40035,	-- The Gentlest Touch
+						},
+						["requireSkill"] = 182,	-- Herbalism
+					},
+					{	-- Scribbled Ramblings [Starlight Rose III]
+						["itemID"] = 129143,	-- Scribbled Ramblings
+						["questID"] = 40038,	-- Insame Ramblings
+						["requireSkill"] = 182,	-- Herbalism
+						["sourceQuests"] = {
+							40037,	-- The Spade's Blade
+						},
+					},
+					{	-- Starlight Rosedust [Starlight Rose I]
+						["itemID"] = 129121,	-- Starlight Rosedust
+						["questID"] = 40034,	-- Starlight Rosedust
+						["requireSkill"] = 182,	-- Herbalism
+					},
 					prof(185, { -- Cooking
 						{
 							["itemID"] = 141011,	-- Recipe: Surf

@@ -534,24 +534,43 @@ _.Zones =
 					}),
 				}),
 				n(-38, { 	-- Profession
-					n(-184, { -- Herbalism
-						i(129120, {	-- Fjarnskaggl Sample
-							q(40029, { -- Fjarnskaggl Sample
-								sp(193424),	-- Herbalism Technique: Fjarnskaggl (Rank 1)
-							}),
-						}),
-						i(129138, {	-- Ram's-Horn Trowel
-							q(40030), -- Ram's-Horn Trowl
-						}),
-						i(129142, { -- Runed Journal Page
-							q(40032), -- The Missing Page
-						}),
-						i(129122, {	-- Felwort Sample
-							q(40040, { --Felwort Sample
-								sp(193430), -- Herbalism Technique: Felwort (Rank 1)
-							}),
-						}),
-					}),
+					{	-- Felwort Sample [Felwort I]
+						["itemID"] = 129112,	-- Felwort Sample
+						["questID"] = 40040,	-- Felwort Sample
+						["requireSkill"] = 182,	-- Herbalism
+						["g"] = {
+							{	-- Felwort [Rank 1]
+								["recipeID"] = 193307,	-- Felwort [Rank 1]
+							},
+						},
+					},
+					{	-- Fjarnskaggl Sample [Fjarnskaggl I]
+						["itemID"] = 129120,	-- Fjarnskaggl Sample
+						["questID"] = 40029,	-- Fjarnskaggl Sample
+						["requireSkill"] = 182,	-- Herbalism
+						["g"] = {
+							{	-- Fjarnskaggl [Rank 1]
+								["recipeID"] =  193301,	-- Fjarnskaggl [Rank 1]
+							},
+						},
+					},
+					{	-- Ram's-Horn Trowel [Fjarnskaggl II]
+						["itemID"] = 129138,	-- Ram's-Horn Trowel
+						["questID"] = 40030,	-- Ram's-Horn Trowel
+						["sourceQuests"] = {
+							129120,	-- Fjarnskaggl Sample
+						},
+						["requireSkill"] = 182,	-- Herbalism
+					},
+					{	-- Runed Journal Page [Fjarnskaggl III]
+						["itemID"] = 129142,	-- Runed Journal Page
+						["questID"] = 40032,	-- The Missing Page
+						["sourceQuests"] = {
+							40031,	-- Vrykul Herblore
+						},	
+						
+						["requireSkill"] = 182,	-- Herbalism
+					},
 					prof(356, { -- Fishing
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",

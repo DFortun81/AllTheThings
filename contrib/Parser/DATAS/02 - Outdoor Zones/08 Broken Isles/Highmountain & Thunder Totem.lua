@@ -586,26 +586,48 @@ _.Zones =
 					prof(185, { -- Cooking
 						desc(i(133820), "Can drop from any Drogbar."), 	-- Recipe: Drogbar-Style Salmon
 					}),
-					n(-184, { -- Herbalism
-						i(129119, {	-- Foxflower Sample
-							q(40024, { -- Foxflower Sample
-								sp(193421),	-- Herbalism Technique: Foxflower (Rank 1)
-							}),
-						}),
-						i(129137, {	-- Nibbled Foxflower Stem
-							q(40025) -- Teeny Bite Marks
-						}),
-						i(129278, { -- Foxflower Scent Gland
-							q(40028, { -- The Pied Picker
-								sp(193423),	-- Herbalism Technique: Foxflower (Rank 3)
-							}),
-						}),
-						i(129122, {	-- Felwort Sample
-							q(40040, { --Felwort Sample
-								sp(193430), -- Herbalism Technique: Felwort (Rank 1)
-							}),
-						}),
-					}),
+					{	-- Felwort Sample [Felwort I]
+						["itemID"] = 129112,	-- Felwort Sample
+						["questID"] = 40040,	-- Felwort Sample
+						["requireSkill"] = 182,	-- Herbalism
+						["g"] = {
+							{	-- Felwort [Rank 1]
+								["recipeID"] = 193307,	-- Felwort [Rank 1]
+							},
+						},
+					},
+					{	-- Foxflower Sample  [Foxflower I]
+						["itemID"] = 129119,	-- Foxflower Sample
+						["questID"] = 40024,	-- Foxflower Sample
+						["requireSkill"] = 182,	-- Herbalism
+						["g"] = {
+							{	-- Foxflower [Rank 1]
+								["recipeID"] = 193298,	-- Foxflower [Rank 1]
+							},
+						},
+					},
+					{	-- Foxflower Scent Gland [Foxflower III]
+						["itemID"] = 129278,	-- Foxflower Scent Gland
+						["questID"] = 40028,	-- The Pied Picker
+						["sourceQuests"] = {
+							40026,	-- Chase the Culprit
+						},	
+						["g"] = {
+							{	-- Foxflower [Rank 3]
+								["recipeID"] = 193300,	-- Foxflower [Rank 3]
+							},
+						},
+					},
+					{	-- Nibbled Foxflowr Stem [Foxflower II]
+						["itemID"] = 129137,	-- Nibbled Foxflower Stem
+						["questID"] = 40025,	-- Teeeny Bite Marks
+						["sourceQuests"] = {
+							40024,	-- Foxflower Sample
+						},
+						["requireSkill"] = 182,	-- Herbalism
+					},
+					
+					
 					prof(393, { -- Skinning
 						n(97449, { 		-- Bristlemaul
 							["groups"] = {

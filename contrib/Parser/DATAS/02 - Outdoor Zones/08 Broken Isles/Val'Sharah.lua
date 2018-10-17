@@ -601,7 +601,7 @@ _.Zones =
 					}),	
 				}),
 				n(-38, { 	-- Profession
-					{	-- Blight-Choked Herb [Rank 3]
+					{	-- Blight-Choked Herb [Dreamleaf II]
 						["itemID"] = 129141,	-- Blight-Choked Herb
 						["questID"] = 40022,	-- Choked By Nightmare
 						["requireSkill"] = 182,	-- Herbalism
@@ -609,7 +609,7 @@ _.Zones =
 							40021,	-- One Dead Plant is One Too Many
 						},
 					},
-					{	-- Blight-Twisted Herb [Rank 2]
+					{	-- Blight-Twisted Herb [Dreamleaf III]
 						["itemID"] = 129136,	-- Blight-Twisted Herb
 						["questID"] = 40020,	-- Twisted to Death
 						["requireSkill"] = 182,	-- Herbalism
@@ -617,12 +617,12 @@ _.Zones =
 							40019,	-- An Empathetic Herb
 						},
 					},
-					{	-- Dreamleaf Sample [Rank 1]
+					{	-- Dreamleaf Sample [Dreamleaf I]
 						["itemID"] = 129118,	-- Dreamleaf Sample
 						["questID"] = 40018,	-- Dreamleaf Sample
 						["requireSkill"] = 182,	-- Herbalism
 					},
-					{	-- Felwort Sample
+					{	-- Felwort Sample [Felwort I]
 						["itemID"] = 129112,	-- Felwort Sample
 						["questID"] = 40040,	-- Felwort Sample
 						["requireSkill"] = 182,	-- Herbalism
