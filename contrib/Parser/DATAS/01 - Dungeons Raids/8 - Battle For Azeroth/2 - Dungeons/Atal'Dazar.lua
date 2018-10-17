@@ -14,7 +14,7 @@ _.Instances =
 			inst(968, { -- Atal'Dazar
 				["groups"] = {
 					n(-17, {	-- Quests
-						q(51517, {	-- You Owe Me a Spirit -- awards ach(12719) criteria 1
+						qh(51517, {	-- You Owe Me a Spirit -- awards ach(12719) criteria 1
 							["groups"] = {
 								sz(12719, 1),	-- The Fallen Chieftain
 							},
