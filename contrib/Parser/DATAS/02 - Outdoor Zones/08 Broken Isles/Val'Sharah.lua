@@ -601,22 +601,37 @@ _.Zones =
 					}),	
 				}),
 				n(-38, { 	-- Profession
-					n(-184, { -- Herbalism
-						i(129118, {	-- Dreamleaf Sample
-							q(40018), -- Dreamleaf Sample
-						}),
-						i(129136, {	-- Blight-Twisted Herb
-							q(40020), -- Twisted to Death
-						}),
-						i(129141, { -- Blight-Choked Herb
-							q(40022), -- Choked by Nightmare
-						}),
-						i(129122, {	-- Felwort Sample
-							q(40040, { --Felwort Sample
-								sp(193430), -- Herbalism Technique: Felwort (Rank 1)
-							}),
-						}),
-					}),
+					{	-- Blight-Choked Herb [Rank 3]
+						["itemID"] = 129141,	-- Blight-Choked Herb
+						["questID"] = 40022,	-- Choked By Nightmare
+						["requireSkill"] = 182,	-- Herbalism
+						["sourceQuests"] = {
+							40021,	-- One Dead Plant is One Too Many
+						},
+					},
+					{	-- Blight-Twisted Herb [Rank 2]
+						["itemID"] = 129136,	-- Blight-Twisted Herb
+						["questID"] = 40020,	-- Twisted to Death
+						["requireSkill"] = 182,	-- Herbalism
+						["sourceQuests"] = {
+							40019,	-- An Empathetic Herb
+						},
+					},
+					{	-- Dreamleaf Sample [Rank 1]
+						["itemID"] = 129118,	-- Dreamleaf Sample
+						["questID"] = 40018,	-- Dreamleaf Sample
+						["requireSkill"] = 182,	-- Herbalism
+					},
+					{	-- Felwort Sample
+						["itemID"] = 129112,	-- Felwort Sample
+						["questID"] = 40040,	-- Felwort Sample
+						["requireSkill"] = 182,	-- Herbalism
+						["g"] = {
+							{	-- Felwort [Rank 1]
+								["recipeID"] = 193307,	-- Felwort [Rank 1]
+							},
+						},
+					},
 					prof(356, { -- Fishing
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
