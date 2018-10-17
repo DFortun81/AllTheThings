@@ -199,7 +199,7 @@ _.Zones =
 					}),
 					n(86213, { 		-- Aqualir
 						["groups"] = {	
-							dr(33, i(113557)),	-- Loop of Drowned Souls - Droprate is unknown on WoWhead
+							dr(39, i(119387)),	-- Loop of Drowned Souls
 						},
 						["questID"] = 37356,
 						["isDaily"] = true,							

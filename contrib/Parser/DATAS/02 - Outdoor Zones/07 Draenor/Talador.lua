@@ -781,7 +781,7 @@ _.Zones =
 					}),
 					n(82920, { 		-- Lord Korinak
 						["groups"] = {	
-							dr(33, i(119388)),	-- Doomlord's Seal of Command - Droprate unknown on WoWhead
+							dr(68, i(119388)),	-- Doomlord's Seal of Command
 						},
 						["questID"] = 37345,
 						["isDaily"] = true,							

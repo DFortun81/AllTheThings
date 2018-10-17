@@ -486,31 +486,36 @@ _.Zones =
 						["groups"] = {
 							i(127649), -- Trophy-Skull Choker
 						},
-						["questID"] = 38750, -- Grannok
+						["questID"] = 38750,
+						["isDaily"] = true,
 					}),
 					n(90094, {	-- Harbormaster Korak
 						["groups"] = {
 							dr(36, i(127309)),	-- Korak's Reinforced Iron Tunic 
 						},
 						["questID"] = 39046,
+						["isDaily"] = true,
 					}),	
 					n(90777, {	-- High Priest Ikzan
 						["groups"] = {
 							dr(36, i(122117)),	-- Cursed Feather of Ikzan Toy 
 						},
 						["questID"] = 38028,
+						["isDaily"] = true,	
 					}),
 					n(90429, {	-- Imp-Master Valessa
 						["groups"] = {
 							dr(35, i(127655)),	-- Sassy Imp Toy
 						},
 						["questID"] = 38026,
+						["isDaily"] = true,
 					}),
 					n(90437, {	-- Jax'zor
 						["groups"] = {
 							dr(36, i(127322)),	-- Fel Burnished Waistguard
 						},
 						["questID"] = 38030,
+						["isDaily"] = true,
 					}),
 					o(240580, { -- Jewel of Hellfire
 						["groups"] = {
@@ -520,25 +525,29 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\INV_jewelcrafting_ImmacTaladite_Red",
 					}),
 					n(80398, {	-- Keravnos
-						["questID"] = 37407, -- Keravnos
+						["questID"] = 37407,
+						["isDaily"] = true,
 					}),
 					n(92517, {	-- Krell the Serene
 						["groups"] = {
 							i(127418), -- Soothing Incense Brazier
 						},
-						["questID"] = 38605, -- Krell the Serene
+						["questID"] = 38605,
+						["isDaily"] = true,
 					}),
 					n(93279, {	-- Kris'kar the Unredeemed
 						["groups"] = {
 							dr(34, i(127653)),	-- Wingblade of Reckoning
 						},
 						["questID"] = 38825,
+						["isDaily"] = true,
 					}),
 					n(90438, {	-- Lady Oran
 						["groups"] = {
 							dr(35, i(127316)),	-- Oran's Cuffs of Malice 
 						},
 						["questID"] = 38029,
+						["isDaily"] = true,
 					}),
 					o(241434, { -- Lodged Hunting Spear
 						["groups"] = {
@@ -572,12 +581,14 @@ _.Zones =
 							dr(33, i(127332)),	-- Riverbeast Molar Club 
 						},
 						["questID"] = 38726,
+						["isDaily"] = true,
 					}),
 					n(90442, {	-- Mistress Thavra
 						["groups"] = {
 							dr(35, i(127300)),	-- Shivan Shoulders of Scorn 
 						},
 						["questID"] = 38032,
+						["isDaily"] = true,	
 					}),
 					o(241656, {	-- Overgrown Relic
 						["questID"] = 38731,
@@ -590,42 +601,49 @@ _.Zones =
 							dr(37, i(127320)),	-- Mo'gruth's Discarded Parade Helm
 						},
 						["questID"] = 38580,
+						["isDaily"] = true,
 					}),
 					n(92274, {	-- Painmistress Selora
 						["groups"] = {
 							dr(36, i(127297)),	-- Selora's Crown of Thorns 
 						},
 						["questID"] = 38557,
+						["isDaily"] = true,
 					}),
 					n(91374, {	-- Podlord Wakkawam
 						["groups"] = {
 							dr(37, i(127336)),	-- Rod of the One True Podlord 
 						},
 						["questID"] = 38282,
+						["isDaily"] = true,	
 					}),
 					n(91009, {	-- Putre'thar
 						["groups"] = {
 							i(127657), -- Encroaching Void
 						},
 						["questID"] = 38457,
+						["isDaily"] = true,
 					}),
 					n(90782, {	-- Rasthe
 						["groups"] = {
 							i(127661), -- Fang of Rasthe
 						},
-						["questID"] = 38034, -- Rasthe
+						["questID"] = 38034,
+						["isDaily"] = true,	
 					}),
 					n(92197, {	-- Relgor
 						["groups"] = {
 							dr(33, i(127335)),	-- Relgor's Master Glaive 
 						},
 						["questID"] = 38496,
+						["isDaily"] = true,
 					}),
 					n(91227, {	-- Remnant of the Blood Moon
 						["groups"] = {
 							dr(36, i(127666)),	-- Vial of Red Goo Toy
 						},
 						["questID"] = 39159,
+						["isDaily"] = true,	
 						["description"] = "Drain the Blood Moon to 0% health with Drained Blood Crystals to spawn Remnant of the Blood Moon.",
 					}),
 					n(92627, {	-- Rendrak
@@ -633,6 +651,7 @@ _.Zones =
 							dr(33, i(127356)),	-- Musky Bat Fur Cloak
 						},
 						["questID"] = 38631,
+						["isDaily"] = true,	
 						["description"] = "Summoned by collecting 10x Smelly Musk Gland from the Direwing Predators (Bats) in Zorammarsh. Once you have all 10 glands, use them to combine while in Zorammarsh to make Rendrak spawn. If you leave Zorammarsh the Smelly Musk Glands vanish from your bags.",
 					}),
 					n(90885, {	-- Rogond the Tracker
@@ -640,6 +659,7 @@ _.Zones =
 							dr(34, i(127314)),	-- Rogond's Tracking Shoulderguards 
 						},
 						["questID"] = 38263,
+						["isDaily"] = true,
 					}),
 					o(241566, { -- Rune Etched Femur
 						["groups"] = {
@@ -675,12 +695,14 @@ _.Zones =
 							dr(35, i(127318)),	-- Iron Cleated Warboots 
 						},
 						["questID"] = 37953,
+						["isDaily"] = true,	
 					}),
 					n(93236, {	-- Shadowthrash
 						["groups"] = {
 							dr(100, i(127665)),	-- Warpscaled Wristwraps
 						},
 						["questID"] = 38812,
+						["isDaily"] = true,
 					}),
 					o(241674, { -- Skull of the Mad Chief
 						["groups"] = {
@@ -694,6 +716,7 @@ _.Zones =
 							dr(9, i(108634)),	-- Crashin' Thrashin' Mortar Controller Toy
 						},
 						["questID"] = 40104,
+						["isDaily"] = true,
 					}),
 					o(241521, { -- Snake Charmer's Flute
 						["groups"] = {					
@@ -707,12 +730,14 @@ _.Zones =
 							dr(36, i(127315)),	-- Glowing Felskull Belt 
 						},
 						["questID"] = 38600,
+						["isDaily"] = true,
 					}),
 					n(92887, {	-- Steelsnout
 						["groups"] = {
 							dr(40, i(127357)),	-- Steelsnout's Steely Hide 
 						},
 						["questID"] = 38700,
+						["isDaily"] = true,
 					}),
 					o(241599, { -- Strange Fruit
 						["groups"] = {					
@@ -734,12 +759,14 @@ _.Zones =
 							dr(34, i(127311)),	--  Serpentine Gloves
 						},
 						["questID"] = 38628,
+						["isDaily"] = true,	
 					}),
 					n(93001, {	-- Szirek the Twisted
 						["groups"] = {
 							dr(34, i(127296)),	-- Twisted Taboo Handwraps 
 						},
 						["questID"] = 38752,
+						["isDaily"] = true,	
 						["description"] = "Capture Strongpoint (East) to make him spawn.",
 					}),
 					n(95044, {	-- Terrorfist <Son of Kormrok>
@@ -752,12 +779,14 @@ _.Zones =
 							i(128315), -- Medallion of thee Legion
 						},
 						["questID"] = 39288,
+						["isDaily"] = true,
 					}),
 					n(92465, {	-- The Blackfang
 						["groups"] = {
 							dr(36, i(127330)),	-- The Black Fang 
 						},
 						["questID"] = 38597,
+						["isDaily"] = true,
 					}),
 					o(240577, { -- The Blade of Kra'nak
 						["groups"] = {					
@@ -778,19 +807,22 @@ _.Zones =
 							dr(36, i(127305)),	-- Frayed Hunting Cowl 
 						},
 						["questID"] = 38654,
+						["isDaily"] = true,
 					}),
 					n(92977, {	-- The Iron Houndmaster
 						["groups"] = {
 							dr(34, i(127321)),	-- Iron Houndmaster's Pauldrons 
 						},
-						["questID"] = 38751,			
+						["questID"] = 38751,	
+						["isDaily"] = true,							
 						["description"] = "Capture Strongpoint (West) to make him spawn.",
 					}),
 					n(92636, {	-- The Night Haunter
 						["groups"] = {
 							dr(33, i(127355)),	-- Haunter's Kurzed Cloak
 						},
-						["questID"] = 38632,			
+						["questID"] = 38632,
+						["isDaily"] = true,						
 						["description"] = "Gain 10 stacks of Marked by the Night Haunter by either finding The Night Haunter or clicking Mutilated Corpses.",
 					}), 
 					o(241522, { -- The Perfect Blossom
@@ -805,12 +837,14 @@ _.Zones =
 							dr(34, i(127310)),	-- Sabatons of Radiating Ire 
 						},
 						["questID"] = 38747,
+						["isDaily"] = true,
 					}),
 					n(92574, {	-- Thromma the Gutslicer
 						["groups"] = {
 							dr(34, i(127327)),	-- Thromma's Gutslicer 
 						},
 						["questID"] = 38620,
+						["isDaily"] = true,	
 					}),
 					o(240855, { -- Tome of Secrets
 						["groups"] = {
@@ -823,7 +857,8 @@ _.Zones =
 						["groups"] = {
 							i(127351), -- Varyx's Dark Oath Band
 						},
-						["questID"] = 37937, -- Varyx the Damned
+						["questID"] = 37937,
+						["isDaily"] = true,	
 					}),
 					n(95054, {	-- Vengeance
 						["groups"] = {
@@ -835,6 +870,7 @@ _.Zones =
 							i(128315), -- Medallion of thee Legion
 						},
 						["questID"] = 39290,
+						["isDaily"] = true,
 					}),
 					o(240289, { -- Weathered Axe
 						["groups"] = {				
@@ -851,6 +887,7 @@ _.Zones =
 							}),
 						},
 						["questID"] = 38579,
+						["isDaily"] = true,
 					}),
 					n(96235, {	-- Xemirkol 	
 						["groups"] = {
@@ -864,6 +901,7 @@ _.Zones =
 							dr(36, i(127340)),	-- Felfire Lit Greatsword
 						},
 						["questID"] = 38207,
+						["isDaily"] = true,
 					}),
 					n(90122, {	-- Zoug the Heavy
 						["groups"] = {
@@ -873,6 +911,7 @@ _.Zones =
 							}),
 						},
 						["questID"] = 39045,
+						["isDaily"] = true,	
 					}),
 				}),
 				n(-2, { -- Vendors

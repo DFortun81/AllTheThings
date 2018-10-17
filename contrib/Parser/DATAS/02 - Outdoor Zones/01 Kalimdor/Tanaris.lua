@@ -140,14 +140,14 @@ _.Zones =
 							25541,	-- Filling Our Pockets
 						},
 					}),	
-					q(11105, {	-- Champion No More
+					qr(q(11105, {	-- Champion No More
 						["groups"] = {
 							i(29305),	-- Band of the Eternal Sage
 							i(29297),	-- Band of the Eternal Defender
 							i(29309),	-- Band of the Eternal Restorer
 						},
 						["qg"] = 19935,	-- Soridormi
-					}),
+					})),
 					q(10474, {	-- Champion's Covenant
 						["groups"] = {
 							i(29301),	-- Band of the Eternal Champion
@@ -227,14 +227,14 @@ _.Zones =
 						["qg"] = 38703,	-- Megs Dreadshredder
 					}),
 					--q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)
-					q(11106, {	-- Defender No More
+					qr(q(11106, {	-- Defender No More
 						["groups"] = {
 							i(29301),	-- Band of the Eternal Champion
 							i(29305),	-- Band of the Eternal Sage
 							i(29309),	-- Band of the Eternal Restorer
 						},
 						["qg"] = 19935,	-- Soridormi
-					}),
+					})),
 					q(10475, {	-- Defender's Covenant
 						["groups"] = {
 							i(29297),	-- Band of the Eternal Defender
@@ -410,14 +410,14 @@ _.Zones =
 						["qg"] = 7784,	-- Homing Robot OOX-17/TN
 						["sourceQuests"] = { 351 },	-- Find OOX-17/TN!
 					}),
-					q(11104, {	-- Restorer No More
+					qr(q(11104, {	-- Restorer No More
 						["groups"] = {
 							i(29301),	-- Band of the Eternal Champion
 							i(29297),	-- Band of the Eternal Defender
 							i(29305),	-- Band of the Eternal Sage
 						},
 						["qg"] = 19935,	-- Soridormi
-					}),
+					})),
 					q(10473, {	-- Restorer's Covenant
 						["groups"] = {
 							i(29309),	-- Band of the Eternal Restorer
@@ -468,14 +468,14 @@ _.Zones =
 						},
 						["qg"] = 38534,	-- Megs Dreadshredder
 					}),
-					q(11103, {	-- Sage No More
+					qr(q(11103, {	-- Sage No More
 						["groups"] = {
 							i(29301),	-- Band of the Eternal Champion
 							i(29297),	-- Band of the Eternal Defender
 							i(29309),	-- Band of the Eternal Restorer
 						},
 						["qg"] = 19935,	-- Soridormi
-					}),
+					})),
 					q(10472, {	-- Sage's Covenant
 						["groups"] = {
 							i(29305),	-- Band of the Eternal Sage
