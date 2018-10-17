@@ -567,7 +567,7 @@ _.Zones =
 						["qg"] = 20130,	-- Andormu
 						["sourceQuests"] = { 10279 },	-- To The Master's Lair
 					}),
-					q(8766, {	-- The Changing of Paths - Conqueror No More
+					qr(q(8766, {	-- The Changing of Paths - Conqueror No More
 						["groups"] = {
 							i(21200),	-- Signet Ring of the Bronze Dragonflight
 							i(21210),	-- Signet Ring of the Bronze Dragonflight
@@ -575,8 +575,8 @@ _.Zones =
 						["qg"] = 15192,	-- Anachronos
 						["repeatable"] = true,
 						["description"] = "Only available when Exalted with the Brood of Nozdormu",
-					}),
-					q(8765, {	-- The Changing of Paths - Invoker No More
+					})),
+					qr(q(8765, {	-- The Changing of Paths - Invoker No More
 						["groups"] = {
 							i(21200),	-- Signet Ring of the Bronze Dragonflight
 							i(21205),	-- Signet Ring of the Bronze Dragonflight
@@ -584,8 +584,8 @@ _.Zones =
 						["qg"] = 15192,	-- Anachronos
 						["repeatable"] = true,
 						["description"] = "Only available when Exalted with the Brood of Nozdormu",
-					}),
-					q(8764, {	-- The Changing of Paths - Protector No More
+					})),
+					qr(q(8764, {	-- The Changing of Paths - Protector No More
 						["groups"] = {
 							i(21210),	-- Signet Ring of the Bronze Dragonflight
 							i(21205),	-- Signet Ring of the Bronze Dragonflight
@@ -593,7 +593,7 @@ _.Zones =
 						["qg"] = 15192,	-- Anachronos
 						["repeatable"] = true,
 						["description"] = "Only available when Exalted with the Brood of Nozdormu",
-					}),
+					})),
 					qh(25068, {	-- The Crumbling Past
 						["qg"] = 38922,	-- Examiner Andoren Dawnrise
 					}),

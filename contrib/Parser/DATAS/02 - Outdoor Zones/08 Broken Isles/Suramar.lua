@@ -391,6 +391,7 @@ _.Zones =
 					p(706), 	-- Bandicoon
 					p(1914), 	-- Coastal Sandpiper
 					p(1809), 	-- Crystalline Broodling
+					p(751), 	-- Dancing Water Skimmer
 					p(1325), 	-- Flamering Moth
 					p(1810), 	-- Thornclaw Broodling
 					p(1807), 	-- Vicious Broodling

@@ -192,6 +192,7 @@ _.Instances =
 									{
 										["itemID"] = 152313,	-- Azeroth Invasion Plans [Raid Finder]
 										["questID"] = 48288,	-- Antoran High Command [Raid Finder]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 										},
@@ -199,6 +200,7 @@ _.Instances =
 									{
 										["itemID"] = 152317,	-- Discharged Shock Lance [Raid Finder]
 										["questID"] = 48292,	-- The Soulhunter [Raid Finder]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 										},
@@ -206,6 +208,7 @@ _.Instances =
 									{
 										["itemID"] = 152325,	-- Sanguine Argunite [Raid Finder]
 										["questID"] = 48294,	-- The Unmaker [Raid Finder]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 										},
@@ -213,6 +216,7 @@ _.Instances =
 									{
 										["itemID"] = 152321,	-- Sargerei Manifesto [Raid Finder]
 										["questID"] = 48293,	-- The Burning Coven [Raid Finder]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 										},
@@ -589,6 +593,7 @@ _.Instances =
 									{
 										["itemID"] = 152314,	-- Azeroth Invasion Plans [Normal]
 										["questID"] = 48295,	-- Antoran High Command [Normal]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153504),	-- Cache of Antoran Treasures [Normal]
 										},
@@ -596,6 +601,7 @@ _.Instances =
 									{
 										["itemID"] = 152318,	-- Discharged Shock Lance [Normal]
 										["questID"] = 48296,	-- The Soulhunter [Normal]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153504),	-- Cache of Antoran Treasures [Normal]
 										},
@@ -603,6 +609,7 @@ _.Instances =
 									{
 										["itemID"] = 152326,	-- Sanguine Argunite [Normal]
 										["questID"] = 48298,	-- The Unmaker [Normal]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153504),	-- Cache of Antoran Treasures [Normal]
 										},
@@ -610,6 +617,7 @@ _.Instances =
 									{
 										["itemID"] = 152322,	-- Sargerei Manifesto [Normal]
 										["questID"] = 48297,	-- The Burning Coven [Normal]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153504),	-- Cache of Antoran Treasures [Normal]
 										},
@@ -983,6 +991,7 @@ _.Instances =
 									{
 										["itemID"] = 152315,	-- Azeroth Invasion Plans [Heroic]
 										["questID"] = 48299,	-- Antoran High Command [Heroic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153501),	-- Cache of Antoran Treasures [Heroic]
 										},
@@ -990,6 +999,7 @@ _.Instances =
 									{
 										["itemID"] = 152319,	-- Discharged Shock Lance [Heroic]
 										["questID"] = 48300,	-- The Soulhunter [Heroic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153501),	-- Cache of Antoran Treasures [Heroic]
 										},
@@ -997,6 +1007,7 @@ _.Instances =
 									{
 										["itemID"] = 152327,	-- Sanguine Argunite [Heroic]
 										["questID"] = 48302,	-- The Unmaker [Heroic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153501),	-- Cache of Antoran Treasures [Heroic]
 										},
@@ -1004,6 +1015,7 @@ _.Instances =
 									{
 										["itemID"] = 152323,	-- Sargerei Manifesto [Heroic]
 										["questID"] = 48301,	-- The Burning Coven [Heroic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153501),	-- Cache of Antoran Treasures [Heroic]
 										},
@@ -1382,6 +1394,7 @@ _.Instances =
 									{
 										["itemID"] = 152316,	-- Azeroth Invasion Plans [Mythic]
 										["questID"] = 48303,	-- Antoran High Command [Mythic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153503),	-- Cache of Antoran Treasures [Mythic]
 										},
@@ -1389,6 +1402,7 @@ _.Instances =
 									{
 										["itemID"] = 152320,	-- Discharged Shock Lance [Mythic]
 										["questID"] = 48304,	-- The Soulhunter [Mythic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153503),	-- Cache of Antoran Treasures [Mythic]
 										},
@@ -1396,6 +1410,7 @@ _.Instances =
 									{
 										["itemID"] = 152328,	-- Sanguine Argunite [Mythic]
 										["questID"] = 48306,	-- The Unmaker [Mythic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153503),	-- Cache of Antoran Treasures [Mythic]
 										},
@@ -1403,6 +1418,7 @@ _.Instances =
 									{
 										["itemID"] = 152324,	-- Sargerei Manifesto [Mythic]
 										["questID"] = 48305,	-- The Burning Coven [Mythic]
+										["repeatable"] = true,
 										["groups"] = {
 											i(153503),	-- Cache of Antoran Treasures [Mythic]
 										},

@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(237, { 	-- The Temple of Atal'hakkar
 				["groups"] = {
-					n(-47, {	-- Lunar Festival						
+				--[[	n(-47, {	-- Lunar Festival						
 						["groups"] = {						
 							n(-17, {	-- Quests				
 								q(8713, {	-- Starsong the Elder			
@@ -26,7 +26,8 @@ _.Instances =
 							}),					
 						},						
 						["achievementID"] = 913,	-- To Honor One's Elders						
-					}),							
+					}),	
+					--]]				
 					n(-17, {	-- Quests
 						{
 							["questID"] = 27605,	-- Eranikus
