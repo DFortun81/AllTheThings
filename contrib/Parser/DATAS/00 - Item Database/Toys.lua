@@ -233,6 +233,7 @@ t(86584);	-- Hardened Shell
 t(69777);	-- Haunted War Drum
 t(116139);	-- Haunting Memento
 t(159749);	-- Haw'li's Hot & Spicy Chili
+t(163045);	-- Headless Horseman's Hearthstone
 t(151343);	-- Hearthstation [Alliance]
 t(151344);	-- Hearthstation [Horde]
 t(119210);	-- Hearthstone Board

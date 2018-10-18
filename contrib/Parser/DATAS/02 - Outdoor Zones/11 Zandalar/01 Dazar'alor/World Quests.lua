@@ -12,13 +12,14 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
-								q(49413, {	-- Scamps With Scrolls
+								{	-- Scamps With Scrolls [H]
+									["questID"] = 49413, 	-- Scamps With Scrolls
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
-								}),
-								{	-- Set Sail
+								},
+								{	-- Set Sail [H]
 									["questID"] = 54166,	-- Set Sail
 									--["sourceQuests"] = Island Account Unlock; Add later
 									["repeatable"] = true,
@@ -28,14 +29,14 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 									-- NOTE!! Also grants credit for Alliance Equivalent == 54167
 								},
-								q(50858, {	-- Sky Queeen
+								q(50858, {	-- Sky Queeen [A]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only							
 									["races"] = ALLIANCE_ONLY,
 								}),
-								q(51038, {	-- Supplies Needed: Akunda's Bite
+								q(51038, {	-- Supplies Needed: Akunda's Bite [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -46,7 +47,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51044, {	-- Supplies Needed: Blood-Stained Bone
+								q(51044, {	-- Supplies Needed: Blood-Stained Bone [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -57,7 +58,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51045, {	-- Supplies Needed: Calcified Bone
+								q(51045, {	-- Supplies Needed: Calcified Bone [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -68,7 +69,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51046, {	-- Supplies Needed: Deep Sea Satin
+								q(51046, {	-- Supplies Needed: Deep Sea Satin [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -79,7 +80,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(52387, {	-- Supplies Needed: Frenzied Fangtooth
+								q(52387, {	-- Supplies Needed: Frenzied Fangtooth [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -90,7 +91,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(52382, {	-- Supplies Neeeded: Great Sea Catfish
+								q(52382, {	-- Supplies Neeeded: Great Sea Catfish [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -101,7 +102,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(52388, {	-- Supplies Needed: Lane Snapper
+								q(52388, {	-- Supplies Needed: Lane Snapper [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -112,7 +113,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51049, {	-- Supplies Neeeded: Mistscale
+								q(51049, {	-- Supplies Neeeded: Mistscale [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -123,7 +124,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51042, {	-- Supplies Needed: Monelite Ore
+								q(51042, {	-- Supplies Needed: Monelite Ore [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -134,7 +135,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51036, {	-- Supplies Needed: Riverbud
+								q(51036, {	-- Supplies Needed: Riverbud [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -145,7 +146,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(52383, {	-- Supplies Needed: Sand Shifter
+								q(52383, {	-- Supplies Needed: Sand Shifter [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -156,7 +157,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51041, {	-- Supplies Needed: Sea Stalk
+								q(51041, {	-- Supplies Needed: Sea Stalk [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -167,7 +168,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51048, {	-- Supplies Needed: Shimmerscale
+								q(51048, {	-- Supplies Needed: Shimmerscale [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -178,7 +179,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51040, {	-- Supplies Needed: Siren's Pollen
+								q(51040, {	-- Supplies Needed: Siren's Pollen [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -189,7 +190,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51037, {	-- Supplies Needed: Star Moss
+								q(51037, {	-- Supplies Needed: Star Moss [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -200,7 +201,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51043, {	-- Supplies Needed: Storm Silver Ore
+								q(51043, {	-- Supplies Needed: Storm Silver Ore [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -211,7 +212,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51047, {	-- Supplies Needed: Tempest Hide
+								q(51047, {	-- Supplies Needed: Tempest Hide [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -222,7 +223,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51050, {	-- Supplies Needed: Tidespray Line
+								q(51050, {	-- Supplies Needed: Tidespray Line [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -233,7 +234,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(52384, {	-- Supplies Needed: Tiragarde Perch
+								q(52384, {	-- Supplies Needed: Tiragarde Perch [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -244,7 +245,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51039, {	-- Supplies Needed: Winter's Kiss
+								q(51039, {	-- Supplies Needed: Winter's Kiss [H]
 									["repeatable"] = true,
 									["isDaily"] = true, 	-- Would like to swap it to WQ below
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -262,7 +263,7 @@ _.Zones =
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
-								q(52425, {	-- Work Order: Battle Flag: Spirit of Freedom
+								q(52425, {	-- Work Order: Battle Flag: Spirit of Freedom [H]
 									["groups"] = {
 										i(162443, {	-- Pattern: Battle Flag: Spirit of Freedom [Rank 3]
 											["spellID"] = 257133,
@@ -279,7 +280,7 @@ _.Zones =
 										65.61, 72.01,
 									},
 								}),
-								q(52395, {	-- Work Order: Contract: Zandalari Empire
+								q(52395, {	-- Work Order: Contract: Zandalari Empire [H]
 									["groups"] = {
 										i(162366, {	-- Recipe: Contract: Zandalari Empire [Rank 3]
 											["spellID"] = 256286,
@@ -292,7 +293,7 @@ _.Zones =
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
-								q(52373, {	-- Work Order: Electroshock Mount Motivator
+								q(52373, {	-- Work Order: Electroshock Mount Motivator [H]
 									["groups"] = {
 										i(162340, {	-- Schematic: Electroshock Mount Motivator
 											["spellID"] = 256072,
@@ -305,19 +306,6 @@ _.Zones =
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
-								q(52348, {	-- Work Order: Mon'Dazi [Note: This WQ stays here as it is in the city and not the zone]
-									["groups"] = {
-										i(162296, {	-- Recipe: Mon'Dazi [Rank 3]
-											["spellID"] = 259444,
-										}),
-									},
-									["requireSkill"] = 185,	-- Cooking
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
-								}),
-								
 							},
 						}),
 						i(163857, {	-- Azerite Armor Cache [Dungeon Version]

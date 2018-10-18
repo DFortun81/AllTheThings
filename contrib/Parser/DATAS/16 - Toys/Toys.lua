@@ -568,18 +568,35 @@ _.Toys =
 			["achievementID"] = 1691, -- Merrymaker
 			["u"] = 29,
 		}),
-		n(-58, {    -- Hallow's End
-			["groups"] = {
-				i(128807),	-- Coin of Many Faces
-				i(151271), 	-- Horse Head Costume
-				i(151270), 	-- Horse Tail Costume
-				i(70722),	-- Little Wickerman
-				i(128794), 	-- Sack of Spectral Spiders
-				i(163045),  -- Headless Horseman's Hearthstone
+		{	-- Hallow's End
+			["npcID"] = -58,			-- Hallow's End
+			["achievementID"] = 1656,	-- Hallowed Be Thy Name
+			["g"] = {
+				{	-- Coin of Many Faces
+					["itemID"] = 128807,	-- Coin of Many Faces
+					["u"] = 26,				-- Hallow's End
+				},
+				{	-- Headless Horseman's Hearthstone
+					["itemID"] = 163045,	-- Headless Horseman's Hearthstone
+				},
+				{	-- Horse Head Costume
+					["itemID"] = 151271,	-- Horse Head Costume
+					["u"] = 26,				-- Hallow's End
+				},
+				{	-- Horse Tail Costume
+					["itemID"] = 151270,	-- Horse Tail Costume
+					["u"] = 26,				-- Hallow's End
+				},
+				{	-- Little Wickerman
+					["itemID"] = 70722,		-- Little Wickerman
+					["u"] = 26,				-- Hallow's End
+				},
+				{	-- Sack of Spectral Spiders
+					["itemID"] = 128794,	-- Sack of Spectral Spiders
+					["u"] = 26,				-- Hallow's End
+				},
 			},
-			["achievementID"] = 1656, -- Hallowed Be Thy Name
-			["u"] = 26,
-		}),
+		},
 		n(-50, {    -- Love is in the Air
 			["groups"] = {
 				i(142341), 	-- Love Boat

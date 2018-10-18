@@ -49,16 +49,24 @@ _.Zones =
 								{ 66.63, 32.40 },
 							},
 						}),
-						n(133190, {	-- Daggerjaw [CLQS]
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								sz(12944, 19),	-- Daggerjaw
-								i(160952),	-- Daggerjaw's Incisor
-							}),
+						{	-- Daggerjaw
+							["npcID"] = 133190,		-- Daggerjaw
 							["questID"] = 50269,
 							["coords"] = {
-								{ 74.33, 38.96 },
+								{ 75.62, 36.25 },
 							},
-						}),	
+							["g"] = {
+								{	-- Daggerjaw
+									["achievementID"] = 12944,	-- Adventurer of Zuldazar
+									["criteriaID"] = 19,		-- Daggerjaw
+								},
+								{	-- Daggerjaw's Incisor
+									["itemID"] = 160952,	--  Daggerjaw's Incisor
+									["bonusID"] = 4776,
+									["lvl"] = 110,
+								},
+							},
+						},
 						n(136428, {	-- Dark Chronicler [CLQS]
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								sz(12944, 3),	-- Dark Chronicler
@@ -126,16 +134,24 @@ _.Zones =
 								{ 68.74, 48.41 },
 							},
 						}),
-						n(132244, {	-- Kiboku  [CLQS]
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								sz(12944, 21),	-- Kiboku
-								i(161112),	--  Hillshaker Armplates
-							}),
-							["questID"] = 50159,	-- WQ ID is 50869
+						{	-- Kiboku
+							["npcID"] = 132244,		-- Kiboku
+							["questID"] = 50159,
 							["coords"] = {
 								{ 75.62, 36.25 },
 							},
-						}),
+							["g"] = {
+								{	-- Kiboku
+									["achievementID"] = 12944,	-- Adventurer of Zuldazar
+									["criteriaID"] = 21,		-- Kiboku
+								},
+								{	-- Hillshaker Armplates
+									["itemID"] = 161112,	--  Hillshaker Armplates
+									["bonusID"] = 4776,
+									["lvl"] = 110,
+								},
+							},
+						},
 						n(131233, {	-- Lei-zhi [CLQS]
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								sz(12944, 6),	-- Lei-zhi

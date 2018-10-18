@@ -61,7 +61,7 @@ _.Zones =
 									["lvl"] = 120,			-- WQ is 120+ only
 									["races"] = HORDE_ONLY,
 								}),
-								{	--  Desert Survivors [Pet Battle]
+								{	--  Desert Survivors [Pet Battle!!]
 									["questID"] = 52878,	-- Desert Survivors
 									["qg"] = 142054,		-- Kusa
 									["repeatable"] = true,
@@ -162,7 +162,7 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								},
-								{	--  Snakes on a Terrace [Pet Battle]
+								{	--  Snakes on a Terrace [Pet Battle!!]
 									["questID"] = 52856,	-- Snakes on a Terrace
 									["qg"] = 141945,	-- Sizzik
 									["repeatable"] = true,
@@ -196,7 +196,7 @@ _.Zones =
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 120,			-- WQ is 120+ only
 								}),
-								{	--  What Do You Mean, Mind Controlling Plants? [Pet Battle]
+								{	--  What Do You Mean, Mind Controlling Plants? [Pet Battle!!]
 									["questID"] = 52864,	-- What Do You Mean, Mind Controlling Plants?
 									["qg"] = 141969,	-- Spineleaf
 									["repeatable"] = true,

@@ -14,7 +14,7 @@ _.Zones =
 							["collectible"] = false,	-- Can't be completed solely in this zone
 							["g"] = {
 								{	-- Broodmother
-									["npcID"] = 137025,	-- Broodmother
+									["npcID"] = 137025,	-- Broodmother	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 51298,
 									["g"] = {
 										{	--Broodmother
@@ -29,12 +29,12 @@ _.Zones =
 									},
 								},
 								{	-- Captain Razorspine
-									["npcID"] = 130897,	-- Captain Razorspine
+									["npcID"] = 130897,	-- Captain Razorspine	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 50170,
 									["g"] = {
 										{	--Captain Razorspine
 											["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
-											["criteriaID"] = 22,		--Captain Razorspine
+											["criteriaID"] = 26,		--Captain Razorspine
 										},
 										{	-- Razorspine's Greatmace
 											["itemID"] = 155287,	-- Razorspine's Greatmace
@@ -44,7 +44,7 @@ _.Zones =
 									},
 								},
 								{	-- Croaker
-									["npcID"] = 140938,	-- Croaker
+									["npcID"] = 140938,	-- Croaker	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 52303,
 									["coords"] = {
 										{ 62.91, 32.91 },
@@ -62,7 +62,7 @@ _.Zones =
 									},
 								},
 								{	-- Crushtacean
-									["npcID"] = 136183,	-- Crushtacean
+									["npcID"] = 136183,	-- Crushtacean	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 52466,
 									["g"] = {
 										{	-- Crushtacean
@@ -77,7 +77,7 @@ _.Zones =
 									},
 								},
 								{	-- Dagrus the Scorned
-									["npcID"] = 134897,	-- Dagrus the Scorned
+									["npcID"] = 134897,	-- Dagrus the Scorned	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 50731,
 									["g"] = {
 										{	--Dagrus the Scorned
@@ -92,7 +92,7 @@ _.Zones =
 									},
 								},
 								{	-- Deepfang
-									["npcID"] = 139385,	-- Deepfang
+									["npcID"] = 139385,	-- Deepfang	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 50692,
 									["g"] = {
 										{	-- Deepfang
@@ -107,7 +107,7 @@ _.Zones =
 									},
 								},
 								{	-- Foreman Scripps
-									["npcID"] = 131404,	-- Foreman Scripps
+									["npcID"] = 131404,	-- Foreman Scripps	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 49951,
 									["coords"] = {
 										{ 64.41, 65.91 },
@@ -125,7 +125,7 @@ _.Zones =
 									},
 								},
 								{	-- Galestorm
-									["npcID"] = 132007,	-- Galestorm
+									["npcID"] = 132007,	-- Galestorm	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 50075,
 									["coords"] = {
 										{ 71.51, 54.31 },
@@ -143,7 +143,7 @@ _.Zones =
 									},
 								},
 								{	-- Grimscowl the Harebrained
-									["npcID"] = 141059,	-- Grimscowl the Harebrained
+									["npcID"] = 141059,	-- Grimscowl the Harebrained	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 52329,
 									["coords"] = {
 										{ 62.01, 73.91 },
@@ -161,7 +161,7 @@ _.Zones =
 									},
 								},
 								{	-- Haegol the Hammer
-									["npcID"] = 141226,	-- Haegol the Hammer
+									["npcID"] = 141226,	-- Haegol the Hammer	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 52460,
 									["g"] = {
 										{	-- Haegol the Hammer
@@ -176,7 +176,7 @@ _.Zones =
 									},
 								},
 								{	-- Whiplash
-									["npcID"] = 129803, 	-- Whiplash
+									["npcID"] = 129803, 	-- Whiplash	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["description"] = "Only spawns during it's associated World Quest.",
 									["questID"] = 52299,	-- Whiplash
 									["coords"] = {

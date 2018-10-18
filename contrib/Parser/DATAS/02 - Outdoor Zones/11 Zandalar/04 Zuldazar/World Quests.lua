@@ -15,20 +15,35 @@ _.Zones =
 								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,			-- WQ is 120+ only
 							}),
-							q(52858, {	-- Azerite Empowerment
+							{	-- Azerite Empowerment [AH]
+								["qg"] = 141959,		-- Hex Priest Haraka
+								["questID"] = 52858, 	-- Azerite Empowerment
+								["coords"] = {
+									{ 75.30, 42.08 },
+								},
 								["repeatable"] = true,
 								["isDaily"] = true, 	-- Would like to swap it to WQ below
 								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,			-- WQ is 120+ only
-							}),
-							{	-- Azerite Mining
+							},
+							{	-- Azerite Mining [AH]
 								["questID"] = 52877,	-- Azerite Mining
 								["repeatable"] = true,
 								["isDaily"] = true, 	-- Would like to swap it to WQ below
 								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,			-- WQ is 120+ only
 							},
-							q(51642, {	-- Beachhead
+							{	-- Azerite Wounds  [AH]
+								["questID"] = 51175,	-- Azerite Wounds
+								["coords"] = {
+									{ 57.10, 22.27 },
+								},
+								["repeatable"] = true,
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
+							},
+							q(51642, {	-- Beachhead [AH]
 								["repeatable"] = true,
 								["isDaily"] = true, 	-- Would like to swap it to WQ below
 								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
@@ -43,6 +58,34 @@ _.Zones =
 								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,			-- WQ is 120+ only
 							}),
+							{	-- Daggerjaw [AH]
+								["npcID"] = 133190,		-- Daggerjaw	Note!! Done so we can use his name for the quest rather than Quest #123456
+								["questID"] = 50871,	-- Daggerjaw
+								["coords"] = {
+									{ 74.33, 38.96 },
+								},
+								["repeatable"] = true,
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
+								["g"] = {
+									{	-- Daggerjaw's Incisor
+										["itemID"] = 160952,	-- Daggerjaw's Incisor
+										["bonusID"] = 4803,		-- WQ Bonus ID
+									},
+								},
+							},
+							{	-- Enforcing the Will of the King [H]
+								["questID"] = 50548,	-- Enforcing the Will of the King
+								["coords"] = {
+									{ 65.61, 27.81 },
+								},
+								["repeatable"] = true,
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
+								--Note!! Emblem of Zandalar offered on 10/17
+							},
 							{	-- G'Naat
 								["npcID"] = 133155,		-- G'Naat	Note!! Done so we can use his name for the quest rather than Quest #123456
 								["questID"] = 50870,	-- G'Naat
@@ -56,6 +99,7 @@ _.Zones =
 								["g"] = {
 									{	-- Brutish Tidecaller Armwraps
 										["itemID"] = 161048,	--Brutish Tidecaller Armwraps
+										["bonusID"] = 4803,		-- WQ Bonus ID
 									},
 								},
 							},
@@ -65,10 +109,9 @@ _.Zones =
 								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,			-- WQ is 120+ only
 							}),
-							q(50869, {	-- Kiboku
-								["groups"] = {
-									i(161112),	--  Hillshaker Armplates
-								},
+							{	-- Kiboku
+								["npcID"] = 132244,		-- Kiboku	Note!! Done so we can use his name for the quest rather than Quest #123456
+								["questID"] = 50869, 	-- Kiboku
 								["coords"] = {
 									{ 75.62, 36.25 },
 								},
@@ -76,7 +119,13 @@ _.Zones =
 								["isDaily"] = true, 	-- Would like to swap it to WQ below
 								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,			-- WQ is 120+ only
-							}),
+								["g"] = {
+									{	-- Hillshaker Armplates
+										["itemID"] = 161112,	-- Hillshaker Armplates
+										["bonusID"] = 4803,		-- WQ Bonus ID
+									},
+								},
+							},
 							{	-- Make Loh Go
 								["questID"] = 51636,	-- Make Loh Go
 								["repeatable"] = true,
@@ -151,6 +200,20 @@ _.Zones =
 								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,			-- WQ is 120+ only
 							},
+							{	-- Small Beginnings [Pet Battle!!]
+								["questID"] = 52938,	-- Small Beginnings
+								["qg"] = 142234,		-- Zujai
+								["repeatable"] = true,
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
+								["g"] = {
+									{	-- Small Beginnings
+										["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+										["criteriaID"] = 24,	-- Small Beginnings
+									},
+								},
+							},
 							{	-- Subterranean Evacuation
 								["questID"] = 50756,	-- Subterranean Evacuation
 								["repeatable"] = true,
@@ -171,11 +234,29 @@ _.Zones =
 								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,			-- WQ is 120+ only
 							}),
+							{	-- The Shores of Xibala
+								["questID"] = 52248,	-- The Shores of Xibala
+								["coords"] = {
+									{ 40.05, 73.34 },
+								},
+								["repeatable"] = true,
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
+							},
 							q(52349, {	-- Work Order: Loa Loaf
 								["groups"] = {
-									i(162294, {	-- Recipe: Loa Loaf [Rank 3]
-										["spellID"] = 259438,
-									}),
+									i(162294),	-- Recipe: Loa Loaf [Rank 3]
+								},
+								["requireSkill"] = 185,	-- Cooking
+								["repeatable"] = true,
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
+							}),
+							q(52348, {	-- Work Order: Mon'Dazi [Note: This WQ stays here as it is in the city and not the zone]
+								["groups"] = {
+									i(162296),	-- Recipe: Mon'Dazi [Rank 3]
 								},
 								["requireSkill"] = 185,	-- Cooking
 								["repeatable"] = true,
@@ -185,11 +266,9 @@ _.Zones =
 							}),
 							q(52345, {	-- Work Order: Ravenberry Tarts [Rank 3]
 								["groups"] = {
-									i(162290, {	-- Recipe: Ravenberry Tarts [Rank 3]
-										["spellID"] = 259426,
-									}),
+									i(162290),	-- Recipe: Ravenberry Tarts [Rank 3]
 								},
-									["requireSkill"] = 185,	-- Cooking
+								["requireSkill"] = 185,	-- Cooking
 								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
 								["repeatable"] = true,
 								["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -198,11 +277,9 @@ _.Zones =
 							}),
 							q(52351, {	-- Work Order: Spiced Snapper [Rank 3]
 								["groups"] = {
-									i(162297, {	-- Recipe: Spiced Snapper [Rank 3]
-										["spellID"] = 259447,
-									}),
+									i(162297),	-- Recipe: Spiced Snapper [Rank 3]
 								},
-									["requireSkill"] = 185,	-- Cooking
+								["requireSkill"] = 185,	-- Cooking
 								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
 								["repeatable"] = true,
 								["isDaily"] = true, 	-- Would like to swap it to WQ below
@@ -211,11 +288,9 @@ _.Zones =
 							}),
 							q(52350, {	-- Work Order: Swamp Fish 'n Chips [Rank 3]
 								["groups"] = {
-									i(162291, {	-- Recipe: Swamp Fish 'n Chips [Rank 3]
-										["spellID"] = 259429,
-									}),
+									i(162291),	-- Recipe: Swamp Fish 'n Chips [Rank 3]
 								},
-									["requireSkill"] = 185,	-- Cooking
+								["requireSkill"] = 185,	-- Cooking
 								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
 								["repeatable"] = true,
 								["isDaily"] = true, 	-- Would like to swap it to WQ below
