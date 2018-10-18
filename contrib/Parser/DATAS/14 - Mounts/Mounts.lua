@@ -85,7 +85,7 @@ _.Mounts =
 		i(70910),	-- Vicious War Wolf*
 		i(44177),	-- Violet Proto-Drake
 		i(62900),	-- Volcanic Stone Drake
-		i(159870),	-- Zandalari Direhorn  [Zandalari Allied Race Quest Chain]
+		i(157870),	-- Zandalari Direhorn  [Zandalari Allied Race Quest Chain]
 	}),
 	n(-26, { 	-- Drop
 		i(143643),	-- Abyss Worm
