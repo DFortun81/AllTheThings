@@ -139,6 +139,6 @@ _.WorldEvents =
 				}),
 			}),
 		},
-		["icon"] = "Interface\\Icons\\INV_Helm_Cloth_WitchHat_B_01",
+		
 	}),
 };
