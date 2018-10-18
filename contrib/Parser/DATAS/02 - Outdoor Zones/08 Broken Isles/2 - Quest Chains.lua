@@ -25,8 +25,8 @@ _.Zones =
 								})),
 							}),
 							na(-208, {	-- Void Elves
-								qg(126321, qa(49787)),	-- The Ghostlands
-								qg(126321, qa(48787, {	-- Telogrus Rift
+								qg(126321, qa(49787, {	-- The Ghostlands
+								-- qg(126321, qa(48787, {	-- Telogrus Rift. Quest got removed & renamed to 'not used reuse me' & talks about Ranishu's in Voldun.
 									ach(12242, {	-- Allied Races: Void Elf
 										a(i(156486)),	-- Starcursed Voidstrider
 									}),

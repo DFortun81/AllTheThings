@@ -261,12 +261,12 @@ _.Zones =
 						q( 11094, {	-- Kill Them All!
 							["description"] = "For players aligned with The Scryers.",
 						}),
-						q( 11101, {	-- The Deadliest Trap Ever Laid
+						qd( q( 11101, {	-- The Deadliest Trap Ever Laid
 							["description"] = "For players aligned with The Aldor.",
-						}),
-						q( 11097, {	-- The Deadliest Trap Ever Laid
+						})),
+						qd( q( 11097, {	-- The Deadliest Trap Ever Laid
 							["description"] = "For players aligned with The Scryers.",
-						}),
+						})),
 					}),
 					faction(934,  {	-- The Scryers
 						["groups"] = {
