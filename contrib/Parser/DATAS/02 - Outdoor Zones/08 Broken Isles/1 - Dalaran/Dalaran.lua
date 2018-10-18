@@ -1718,6 +1718,8 @@ _.Zones =
 					}),
 					qa(46065, {	-- An Impossible Foe
 						["qg"] = 117871, -- War Councilor Victoria
+						["classes"] = { 1, 4, 6, 7, 8, 11, },
+						["u"] = 40,
 					}),
 					q(40267, {	-- An Unexpected Message
 						["qg"] = 102700, -- Meryl Felstorm
@@ -2284,6 +2286,8 @@ _.Zones =
 					qa(45906, {	-- Jarod's Gift
 						["qg"] = 90418, -- Archmage Modera
 						["sourceQuests"] = { 46035 }, -- End of the Risen Threat
+						["classes"] = { 2, 5, 7, 11 },
+						["u"] = 40,
 					}),
 					q(38907, {	-- Keepers of the Hammer
 						["qg"] = 97666, -- Warbrave Oro
@@ -2298,6 +2302,7 @@ _.Zones =
 					qa(45905, {	-- Kruul's Gift
 						["qg"] = 90431, -- Archmage Ansirem Runeweaver
 						["sourceQuests"] = { 45416 }, -- The Highlord's Return
+						["u"] = 40,
 					}),
 					q(46074, {	-- Leather to Legendary
 						["qg"] = 92183, -- Alard Schmied
@@ -2394,6 +2399,7 @@ _.Zones =
 					qa(45909, {	-- Navarrogg's Gift
 						["qg"] = 90418, -- Archmage Modera
 						["sourceQuests"] = { 45627 }, -- Feltotem's Fall
+						["u"] = 40,
 					}),
 					q(40384, {	-- Needs of the Hunters
 						["qg"] = 100786, -- Snowfeather
@@ -2493,6 +2499,7 @@ _.Zones =
 					qa(45910, {	-- Raest's Gift
 						["qg"] = 90463, -- Archmage Karlain
 						["sourceQuests"] = { 46127 }, -- Thwarting the Twins
+						["u"] = 40,
 					}),
 					q(40823, {	-- Rebuilding the Council
 						["qg"] = 101097, -- Calydus
@@ -2815,6 +2822,7 @@ _.Zones =
 					q(45904, {	-- The God-Queen's Gift
 						["qg"] = 90417, -- Archmage Khadgar
 						["classes"] = { 2, 4, 7, 8, 9 },
+						["u"] = 40,
 					}),
 					--q(14166),	-- The Grateful Dead -- Day of the Dead event quest
 					q(41112, {	-- The Great Akazamzarak
@@ -2836,6 +2844,8 @@ _.Zones =
 					}),
 					qa(45902, {	-- The Imp Mother's Gift
 						["qg"] = 90418, -- Archmage Modera
+						["classes"] = { 1, 4, 6, 7, 8, 11, },
+						["u"] = 40,
 					}),
 					q(40938, {	-- The Light and the Void
 						["qg"] = 101313, -- Prophet Velen
@@ -3103,6 +3113,7 @@ _.Zones =
 					}),
 					q(45908, {	-- Xylem's Gift
 						["qg"] = 105081, -- Archmage Kalec
+						["u"] = 40,
 					}),
 					q(44006, {	-- Your Fullest Potential
 						["qg"] = 99531, -- Aggra
