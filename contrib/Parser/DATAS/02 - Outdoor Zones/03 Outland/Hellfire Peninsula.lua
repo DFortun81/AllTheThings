@@ -556,20 +556,20 @@ _.Zones =
 							i(25487),	-- Wind Dancer's Pendant
 							i(25489),	-- Windtalker's Cloak
 						}),
-						q(45415),	-- Between Worlds
+						un(40, q(45415)),	-- Between Worlds
 						qh(  9397),	-- Birds of a Feather
 						q(11516),	-- Blast the Gateway
 						q(11515),	-- Blood for Blood
-						qa( 47025),	-- Blood: Aid of the Illidari
+						un(40, qa( 47025)),	-- Blood: Aid of the Illidari
 						qh( 10250),	-- Bloody Vengeance
-						qa( 47024),	-- Brewmaster: Aid of the Illidari
+						un(40, qa( 47024)),	-- Brewmaster: Aid of the Illidari
 						qh( 10391),	-- Cannons of Rage
 						qa(9427, {  -- Cleansing the Waters
 							i(25485),	-- Amaan's Signet
 							i(25486), 	-- Demonslayer's Wristguards
 							i(25484),	-- Telhamat Pendant
 						}),
-						q(45414),	-- Confirming Suspicions
+						un(40, q(45414)),	-- Confirming Suspicions
 						qa(  9399),	-- Cruel Taskmasters
 						qh( 10136, {	-- Cruel's Intentions
 							i(28041),	-- Bladefist's Breadth
@@ -577,7 +577,6 @@ _.Zones =
 							i(28040),	-- Vengeance of the Illidari
 						}),
 						qa( 10484),	-- Cursed Talismans
-						qa( 45843),	-- Dark Omens
 						qa(  9398),	-- Deadly Predators
 						qh( 10229),	-- Decipher the Tome
 						qa( 10916),	-- Digging for Prayer Beads
@@ -610,7 +609,7 @@ _.Zones =
 							i(29399),	-- Rod of the Void Caller
 						}),
 						qa(  9563),	-- Gaining Mirren's Trust
-						q(45413),	-- Gathering Information
+						un(40, q(45413)),	-- Gathering Information
 						qa( 10382),	-- Go to the Front
 						qa( 10762),	-- Grand Master Dumphry
 						qh(10834,  {  -- Grillok "Darkeye"
@@ -620,7 +619,7 @@ _.Zones =
 							i(28051),	-- Jerkin of the Untamed Spirit
 							i(28050),	-- Sacred Feather Vest
 						}),
-						qa( 47023),	-- Guardian: Aid of the Illidari
+						un(40, qa( 47023)),	-- Guardian: Aid of the Illidari
 						q(9361),	-- Helboar, the Other White Meat
 						qa( 10106),	-- Hellfire Fortifications
 						qa( 13410),	-- Hellfire Fortifications
@@ -630,8 +629,8 @@ _.Zones =
 							i(29108),	-- Blade of the Unyielding
 							i(29109),	-- Rod of the Unyielding
 						}),
-						qa( 11818),	-- Honor the Flame
-						qh( 11851),	-- Honor the Flame
+						un(21, qa( 11818)),	-- Honor the Flame
+						un(21, qh( 11851)),	-- Honor the Flame
 						qa( 10764),	-- Hotter than Hell
 						q(10161,  {  -- In Case of Emergency...
 							i(25980),	-- Aerodynamic Scaled Vest
@@ -676,14 +675,14 @@ _.Zones =
 							i(29926),	-- Whispering Tunic
 						}),
 						q(10403),	-- Naladu
-						q(31922),	-- Nicki Tinytech
+						qd( q(31922)),	-- Nicki Tinytech
 						qa( 10400, {	-- Overlord
 							i(28041),	-- Bladefist's Breadth
 							i(28042),	-- Regal Protectorate
 							i(28040),	-- Vengeance of the Illidari
 						}),
-						qa( 45412),	-- Protection: Aid of the Illidari
-						qa( 47022),	-- Protection: Aid of the Illidari
+						un(40, qa( 45412)),	-- Protection: Aid of the Illidari
+						un(40, qa( 47022)),	-- Protection: Aid of the Illidari
 						qa(  9385),	-- Rampaging Ravagers
 						q(9349),	-- Ravager Egg Roundup
 						qh( 10291),	-- Report to Nazgrel
@@ -768,7 +767,7 @@ _.Zones =
 						qa( 10936),	-- Trollbane is Looking for You
 						qh(  9381),	-- Trueflight Arrows
 						qa( 10050),	-- Unyielding Souls
-						qa( 46314),	-- Vengeance: Seeking Kor'vas
+						un(40, qa( 46314)),	-- Vengeance: Seeking Kor'vas
 						qh( 10393),	-- Vile Plans
 						qh( 10294),	-- Void Ridge
 						q(9351, {	-- Voidwalkers Gone Wild
@@ -997,6 +996,15 @@ _.Zones =
 							["sourceQuest"] = 9406,	-- The Mag'har
 							["qg"] = 3230, -- Nazgrel
 						})),
+						un(40, qa( 47025)),	-- Blood: Aid of the Illidari
+						un(40, qa( 47024)),	-- Brewmaster: Aid of the Illidari
+						un(40, q(45414)),	-- Confirming Suspicions
+						un(40, qa( 45843)),	-- Dark Omens
+						un(40, q(45413)),	-- Gathering Information
+						un(40, qa( 47023)),	-- Guardian: Aid of the Illidari
+						un(40, qa( 45412)),	-- Protection: Aid of the Illidari
+						un(40, qa( 47022)),	-- Protection: Aid of the Illidari
+						un(40, qa( 46314)),	-- Vengeance: Seeking Kor'vas
 					}),
 				}),
 			},

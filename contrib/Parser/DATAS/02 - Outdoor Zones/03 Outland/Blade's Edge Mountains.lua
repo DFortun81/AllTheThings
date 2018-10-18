@@ -519,11 +519,11 @@ _.Zones =
 							q(11065, {	-- Wrangle Some Aether Rays!
 								["qg"] = 23335,	-- Skyguard Khatie
 								["sourceQuests"] = { 11010 },	-- Bombing Run
-								["isDaily"] = true,
 							}),
 							q(11066, {	-- Wrangle More Aether Rays!
 								["qg"] = 23335,	-- Skyguard Khatie
 								["sourceQuests"] = { 11065 },	-- Wrangle Some Aether Rays!
+								["isDaily"] = true,
 							}),
 							q(11078, {	-- To Rule The Skies
 								["qg"] = 23334,	-- Sky Commander Keller

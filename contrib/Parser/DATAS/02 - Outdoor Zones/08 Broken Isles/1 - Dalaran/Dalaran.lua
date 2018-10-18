@@ -1835,6 +1835,7 @@ _.Zones =
 						["qg"] = 117042, -- Prophet Velen
 						["sourceQuests"] = { 45414 }, -- Confirming Suspicions
 						["classes"] = { 1, 2, 6, 10, 11, 12 },
+						["u"] = 40,
 					}),
 					q(42678, {	-- Black Rook Hold: Into Black Rook Hold
 						["qg"] = 110164, -- Valeera Sanguinar
@@ -1863,11 +1864,13 @@ _.Zones =
 						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver (2 versions)
 						["classes"] = { 6 },
 						["sourceQuests"] = { 47030 }, -- Legion Threat: Dalaran Infiltration
+						["u"] = 40,
 					}),
 					qa(47024, {	-- Brewmaster: Aid of the Illidari
 						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver (2 versions)
 						["classes"] = { 10 },
 						["sourceQuests"] = { 47030 }, -- Legion Threat: Dalaran Infiltration
+						["u"] = 40,
 					}),
 					q(44004, {	-- Bringer of the Light
 						["groups"] = {
@@ -1938,6 +1941,7 @@ _.Zones =
 						["qg"] = 116880, -- Kor'vas Bloodthorn
 						["sourceQuests"] = { 45413 }, -- Gathering Information
 						["classes"] = { 1, 2, 6, 10, 11, 12 },
+						["u"] = 40,
 					}),
 					q(43841, {	-- Convincin' Old Yancey
 						["qg"] = 94159, -- Fleet Admiral Tethys
@@ -2179,6 +2183,7 @@ _.Zones =
 							47025,	-- Blood: Aid of the Illidari
 						},
 						["classes"] = { 1, 2, 6, 10, 11, 12 },
+						["u"] = 40,
 					}),
 					q(44337, {	-- Goddess Watch Over You
 						["qg"] = 113686, -- Archmage Khadgar
@@ -2198,6 +2203,7 @@ _.Zones =
 						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver (2 versions)
 						["classes"] = { 11 },
 						["sourceQuests"] = { 47030 }, -- Legion Threat: Dalaran Infiltration
+						["u"] = 40,
 					}),
 					q(47043, {	-- Havoc: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115081, Havoc DH only)
 						["qgs"] = { 105467, 115081 }, -- Archmage Kalec (2 versions)
@@ -2486,11 +2492,13 @@ _.Zones =
 						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver (2 versions)
 						["classes"] = { 2 },
 						["sourceQuests"] = { 47030 }, -- Legion Threat: Dalaran Infiltration
+						["u"] = 40,
 					}),
 					qa(45412, {	-- Protection: Aid of the Illidari
 						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver (2 versions)
 						["classes"] = { 1 },
 						["sourceQuests"] = { 47030 }, -- Legion Threat: Dalaran Infiltration
+						["u"] = 40,
 					}),
 					q(43470, {	-- Pruning the Garden
 						["qg"] = 98100, -- Taoshi
@@ -3048,6 +3056,7 @@ _.Zones =
 						["qgs"] = { 90431, 115466 }, -- Archmage Ansirem Runeweaver
 						["classes"] = { 12 },
 						["sourceQuests"] = { 47030 }, -- Legion Threat: Dalaran Infiltration
+						["u"] = 40,
 					}),
 					--q(44259),	-- Violet Hold -- granted by mission board
 					--q(44058),	-- Volpin the Elusive -- starts from all order halls
