@@ -2916,6 +2916,7 @@ _.Zones =
 					}),
 					q(39342, {	-- The Price of the Black Market
 						["qg"] = 101492, -- Ms. Xiulan
+						["requireSkill"] = 171,
 					}),
 					q(43249, {	-- The Raven's Eye
 						["qg"] = 98102, -- Valeera Sanguinar
