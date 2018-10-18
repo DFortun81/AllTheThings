@@ -51,6 +51,7 @@ _.ExpansionFeatures =
 														i(128794), -- toy
 													},
 													["questID"] = 39617,
+													["isDaily"] = true,
 													["description"] = "In order to summon this rare you will need to do the dailies in your Garrison.  Once you have gotten enough |cFFFFD700Spooky Supplies|r you can then purchase from Izzy Hollyfizzle the |cFFFFD700Creepy Crawlers|r and this will cause the rare to spawn."
 												}),
 											}),	
@@ -2932,6 +2933,13 @@ _.ExpansionFeatures =
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
+						q(39759, { 	-- Creepy Crawlers Active
+							["groups"] = {
+								i(128664), -- Creepy Crawlers
+							},	
+							["qg"] = 96362, --  Izzy Hollyfizzle
+							["u"] = 26
+						}),
 						q(37152, {	-- Cro's Revenge
 							["groups"] = {
 								i(119083),  -- Fruit Basket
@@ -3169,11 +3177,32 @@ _.ExpansionFeatures =
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
+						q(39613, { 	-- Ghastly Guests Active
+							["groups"] = {
+								i(128662), -- Seer's Invitation
+							},	
+							["qg"] = 96362, --  Izzy Hollyfizzle
+							["u"] = 26
+						}),
 						q(37158, { 	-- Gloriously Incandescent
 							["groups"] = {
 								i(118928), -- Faintly-Sparkling Cache
 							},	
 							["qg"] = 87998, --  Sunwalker Dezco
+						}),
+						q(39758, { 	-- Festive Fighters Active
+							["groups"] = {
+								i(128660), -- Ghoulish Guises
+							},	
+							["qg"] = 96362, --  Izzy Hollyfizzle
+							["u"] = 26
+						}),
+						q(39612, { 	-- Hallow's Glow Active
+							["groups"] = {
+								i(128661), -- Hallow's Glow
+							},	
+							["qg"] = 96362, --  Izzy Hollyfizzle
+							["u"] = 26
 						}),
 						q(37242, {	-- Learning Is Painful			
 							["groups"] = {
@@ -3617,6 +3646,13 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 37154 }, -- The Cure For Death
 							["modID"] = 2,
 							["repeatable"] = true,
+						}),
+						q(39611, { 	-- Witch's Brew Active
+							["groups"] = {
+								i(128663), -- Seer's Invitation
+							},	
+							["qg"] = 96362, --  Izzy Hollyfizzle
+							["u"] = 26
 						}),
 						q(37245, {	-- Whispers in the Darkness
 							["groups"] = {
