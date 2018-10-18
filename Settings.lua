@@ -1446,7 +1446,7 @@ local function createMiniListFrame(parent)
 	addObject(elm,show)
 	
 	local showFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-showFrame", child, "ThinBorderTemplate");
-	showFrame:SetSize(child:GetWidth()/2.5,140)
+	showFrame:SetSize(child:GetWidth()/2.5,160)
 	showFrame:SetPoint("TOPLEFT",show,0,-frameSpacer);
 	showFrame:SetAlpha(0.3);
 	addObject(elm,showFrame)
@@ -1570,7 +1570,7 @@ local function createMiniListFrame(parent)
 	addObject(elm,item)
 	
 	local itemFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-itemFrame", child, "ThinBorderTemplate");
-	itemFrame:SetSize(child:GetWidth()/2.5,280)
+	itemFrame:SetSize(child:GetWidth()/2.5,300)
 	itemFrame:SetPoint("TOPLEFT",item,0,-frameSpacer);
 	itemFrame:SetAlpha(0.3);
 	addObject(elm,itemFrame)
@@ -1579,7 +1579,7 @@ local function createMiniListFrame(parent)
 	local itemFilters = app.GetPersonalDataMember("ItemFilters");
 	local last = item;
 	local x = 5
-	for i,filter in ipairs({ 50, 55, 56, 57, 100, 101, 102, 103, 104, 108, 110, 113, 200 }) do
+	for i,filter in ipairs({ 50, 55, 56, 57, 100, 101, 102, 103, 104, 108, 110, 113, 200, 999 }) do
 		local filter = createCheckBox(itemFilterNames[filter] .. " (" .. filter .. ")", child, function(self)
 			itemFilters[filter] = self:GetChecked();
 			app:RefreshData();
