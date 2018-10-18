@@ -575,6 +575,7 @@ _.Toys =
 				i(151270), 	-- Horse Tail Costume
 				i(70722),	-- Little Wickerman
 				i(128794), 	-- Sack of Spectral Spiders
+				i(163045),  -- Headless Horseman's Hearthstone
 			},
 			["achievementID"] = 1656, -- Hallowed Be Thy Name
 			["u"] = 26,

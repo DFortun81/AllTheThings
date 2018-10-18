@@ -1854,6 +1854,7 @@ _.WorldEvents =
 									un(26, i(70722)), 	-- Little Wickerman
 									un(26, i(33292)), 	-- Hallowed Helm
 									un(26, i(37011)),	-- Magic Broom
+									un(26, i(163045)),  -- Headless Horseman's Hearthstone
 								})),
 							},
 							["races"] = HORDE_ONLY,
@@ -1919,6 +1920,7 @@ _.WorldEvents =
 									un(26, i(70722)), 	-- Little Wickerman
 									un(26, i(33292)), 	-- Hallowed Helm
 									un(26, i(37011)),	-- Magic Broom
+									un(26, i(163045)),  -- Headless Horseman's Hearthstone
 								})),
 							},
 							["races"] = ALLIANCE_ONLY,
