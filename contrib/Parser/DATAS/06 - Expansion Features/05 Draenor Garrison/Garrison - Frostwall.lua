@@ -40,25 +40,7 @@ _.ExpansionFeatures =
 									}),
 								},
 								["u"] = 26,					
-							}),											
-							nh(-2, { 	 -- Vendors
-								nh(96362, { -- Izzy Hollyfizzle events coordinator
-									["groups"] = {
-										un(25, i(128658, { -- Spooky Supplies
-											i(128664, { -- Creepy Crawlers
-												n(96323, { 	 -- Arachnis
-													["groups"] = {
-														i(128794), -- toy
-													},
-													["questID"] = 39617,
-													["description"] = "In order to summon this rare you will need to do the dailies in your Garrison.  Once you have gotten enough |cFFFFD700Spooky Supplies|r you can then purchase from Izzy Hollyfizzle the |cFFFFD700Creepy Crawlers|r and this will cause the rare to spawn."
-												}),
-											}),	
-										})),
-									},
-									["description"] = "Purchasing Ghoulish Guises, Hallow's Glow, Seer's Invitation, Witch's Brew or Creepy Crawlers for 5x|cFFFFD700Spooky Supplies|r will enable you to use the decorations year round.",
-								}),													
-							}),								
+							}),							
 						},
 						["achievementID"] = 1656, -- Hallowed Be Thy Name
 						["u"] = 26,

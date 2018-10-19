@@ -3,10 +3,64 @@
 --------------------------------------------
 _.Holidays =
 {
-	n(-58, { -- Hallow's End
-		["groups"] = bubbleDown({["u"] = 26}, {
-			n(-2, { -- Vendors
-				["groups"] = {
+	{	-- Hallow's End
+		["npcID"] = -58,	-- Hallow's End
+		["g"] = {
+			{	-- Vendors
+				["npcID"] = -2,	-- Vendors
+				["g"] = {
+				n(0, { ["maps"] = { 582, 590 } }),	-- Zone Test
+				--[[
+				{	-- Izzy Hollyfizzle [Horde]
+					["npcID"] = 96362,	-- Izzy Hollyfizzle
+					["coords"] = {
+						{ 47.33, 38.47 },	-- Horde Garrison
+						{ 44.29, 51.05 },	-- Alliance Garrison
+					},
+					["description"] = "Purchasing Ghoulish Guises, Hallow's Glow, Seer's Invitation, Witch's Brew or Creepy Crawlers for 5x|cFFFFD700Spooky Supplies|r will enable you to use the decorations year round.",
+					["maps"] = {
+						582,	-- Alliance Garrison
+						590,	-- Horde Garrison
+					},
+					["g"] = {
+						{	-- Spooky Supplies
+							["itemID"] = 128658,	-- Spooky Supplies
+							["u"] = 26,				-- Hallow's End Filter
+							["g"] = {
+									{	-- Ghoulish Guises
+										["itemID"] = 128660,	-- Ghoulish Guises
+										["questID"] = 39758,
+										["u"] = 26,				-- Hallow's End Filter
+									},
+									{	-- Hallow's Glow
+										["itemID"] = 128661,	-- Hallow's Glow
+										["questID"] = 39612,
+										["u"] = 26,				-- Hallow's End Filter
+									},
+									{	-- Seer's Invitation
+										["itemID"] = 128662,	-- Seer's Invitation
+										["questID"] = 39613,
+										["u"] = 26,				-- Hallow's End Filter
+									},
+									{	-- Witch's Brew
+										["itemID"] = 128663,	-- Witch's Brew
+										["questID"] = 39611,
+										["u"] = 26,				-- Hallow's End Filter
+									},
+									{	-- Creepy Crawlers
+										["itemID"] = 128664,	-- Creepy Crawlers
+										["questID"] = 39759,
+										["u"] = 26,				-- Hallow's End Filter
+									},
+									{	-- Tricky Treat
+										["itemID"] = 33226,		-- Tricky Treat
+										["u"] = 26,				-- Hallow's End Filter
+									},
+								},
+							},
+						},
+				},
+				--]]
 					n(53757, { -- Chub <Candy & Toy Vendor>
 						["groups"] = {
 							un(26, i(33226, { -- Tricky Treat
@@ -18,7 +72,7 @@ _.Holidays =
 							})),
 						},
 						["races"] = HORDE_ONLY,
-						["maps"] = { 18 }, -- Tirisfal Glades [Lucetia Note: These vendors are here despite being in Undercity. Subject to change in BfA with Undercity destruction]
+						--["maps"] = { 18 }, -- Tirisfal Glades [Lucetia Note: These vendors are here despite being in Undercity. Subject to change in BfA with Undercity destruction]
 					}),
 					nh(53756, {	-- Darla <Wand Vendor>
 						["maps"] = { 18 }, -- Tirisfal Glades 
@@ -183,7 +237,7 @@ _.Holidays =
 						["maps"] = { 18 }, -- Tirisfal Glades [These vendors are here despite being in Undercity. Subject to change in BfA with Undercity destruction]
 					}),
 				},
-			}),
-		}),
-	}),
+			},
+		},
+	},
 };
