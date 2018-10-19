@@ -820,10 +820,10 @@ _.Zones =
 					}),
 				
 
-					q(13429, {	-- A Distraction for Akama
+					qh(13429, {	-- A Distraction for Akama
 						i(32649),	-- Medallion of Karabor
 					}),
-					q(10985, {	-- A Distraction for Akama
+					qa(10985, {	-- A Distraction for Akama
 						i(32649),	-- Medallion of Karabor
 					}),
 					qa(10642),	-- A Ghost in the Machine
