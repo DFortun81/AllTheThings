@@ -10,14 +10,14 @@ profession(794, {	-- Archaeology
 	}),
 	currency(1174, {	-- Demonic
 		n(-17, {	-- Quests
-			q(41157, {	-- Corrupted Studies
+			qw (q(41157, {	-- Corrupted Studies
 				i(136362, {	-- Ancient War Remnants
 				i(131724),	-- Crystalline Eye of Undravius
 			}),
-		}),
-			q(41163, {	-- The Apocalypse Bringer
+		})),
+			qw( q(41163, {	-- The Apocalypse Bringer
 				i(136922),	-- Wyrmy Tunkins
-			}),
+			})),
 		}),
 	}),
 	currency(398,  {	-- Draenei
@@ -73,12 +73,12 @@ profession(794, {	-- Archaeology
 	}),
 	currency(1173, {	-- Highmountain Tauren
 		n(-17, {	-- Quests
-			q(41193, {	-- Laying to Rest
+			qw( q(41193, {	-- Laying to Rest
 				i(131734),	-- Spirit of Eche'ro
-			}),
-			q(41188, {	-- Neltharion's Lair: Misdirected
+			})),
+			qw( q(41188, {	-- Neltharion's Lair: Misdirected
 				i(131733),	-- Spear of Rethu
-			}),
+			})),
 		}),
 	}),
 	currency(754,  {	-- Mantid
