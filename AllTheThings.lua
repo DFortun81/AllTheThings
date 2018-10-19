@@ -7381,6 +7381,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = BUG_CATEGORY2; -- L("ZONES");
 			db.icon = "Interface\\ICONS\\Achievement_Zone_Outland_01"
+			db.collectible = false;
 			table.insert(g, db);
 		end
 		
@@ -7400,6 +7401,7 @@ function app:GetDataCache()
 			db.f = 0;
 			db.expanded = false;
 			db.text = DUNGEONS_BUTTON;
+			db.collectible = false;
 			table.insert(g, db);
 		end
 		
@@ -7409,6 +7411,7 @@ function app:GetDataCache()
 			db.f = 0;
 			db.expanded = false;
 			db.text = TRACKER_HEADER_ACHIEVEMENTS;
+			db.collectible = false;
 			table.insert(g, db);
 		end
 		
@@ -7420,15 +7423,28 @@ function app:GetDataCache()
 			db.text = GetCategoryInfo(15301);
 			db.icon = "Interface\\ICONS\\Achievement_Battleground_TempleOfKotmogu_02_Green";
 			db.g = app.Categories.ExpansionFeatures;
+			db.collectible = false;
 			table.insert(g, db);
 		end
 		
 		-- World Events
 		if app.Categories.WorldEvents then
-			db = app.CreateAchievement(2144, app.Categories.WorldEvents);
+			db = app.CreateAchievement(12827, app.Categories.WorldEvents);
 			db.f = 0;
 			db.expanded = false;
 			db.text = EVENTS_LABEL; -- L("EVENTS");
+			db.collectible = false;
+			table.insert(g, db);
+		end
+		
+		-- Holidays
+		if app.Categories.Holidays then
+			db = app.CreateAchievement(2144, app.Categories.Holidays);
+			db.f = 0;
+			db.expanded = false;
+			db.text = GetItemSubClassInfo(15,3); -- L("Holidays");
+			db.npcID = -3;
+			db.collectible = false;
 			table.insert(g, db);
 		end
 		
@@ -7440,6 +7456,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
 			db.g = app.Categories.PetBattles;
+			db.collectible = false;
 			table.insert(g, db);
 		end
 		
@@ -7450,6 +7467,7 @@ function app:GetDataCache()
 			db.text = STAT_CATEGORY_PVP;
 			db.icon = "Interface\\Icons\\Achievement_PVP_Legion08";
 			db.g = app.Categories.PVP;
+			db.collectible = false;
 			table.insert(g, db);
 		end
 		
