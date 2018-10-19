@@ -186,10 +186,10 @@ _.Zones =
 							["qg"] = 23139,	-- Overlord Mor'ghor
 							["sourceQuests"] = { 11013 },	-- In Service of the Illidari
 						}),
-						q( 11015, {	-- Netherwing Crystals
+						qd( q( 11015, {	-- Netherwing Crystals
 							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-						}),
+						})),
 						q( 11018, {	-- Nethercite Ore
 							["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
@@ -217,14 +217,14 @@ _.Zones =
 							["qg"] = 23141,	-- Yarzill the Merc
 							["sourceQuests"] = { 11050 },	-- The Great Netherwing Egg Hunt
 						})),
-						q( 11020, {	-- A Slow Death
+						qd( q( 11020, {	-- A Slow Death
 							["qg"] = 23141,	-- Yarzill the Merc
 							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
-						}),
-						q( 11035, {	-- The Not-So-Friendly Skies...
+						})),
+						qd( q( 11035, {	-- The Not-So-Friendly Skies...
 							["qg"] = 23141,	-- Yarzill the Merc
 							["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
-						}),
+						})),
 						q( 11041, {	-- A Job Unfinished... (may have awarded "Netherwing Ledge" criteria, "The First Death Knight" popped for a third time after this one but "NL" actually checked off)
 							["groups"] = {
 								i(32866),	-- Ascendant's Boots
@@ -241,9 +241,9 @@ _.Zones =
 						q( 11083),	-- Crazed and Confused
 						q( 11081),	-- The Great Murkblood Revolt
 						q( 11054),	-- Overseeing and You: Making the Right Choices
-						q( 11076),	-- Picking Up The Pieces...
-						q( 11077),	-- Dragons are the Least of Our Problems
-						q( 11055),	-- The Booterang: A Cure For The Common Worthless Peon
+						qd( q( 11076)),	-- Picking Up The Pieces...
+						qd( q( 11077)),	-- Dragons are the Least of Our Problems
+						qd( q( 11055)),	-- The Booterang: A Cure For The Common Worthless Peon
 						qh(11063),	-- Earning Your Wings... (all quests may be for both factions)
 						qh(11071, {	-- Dragonmaw Race: Captain Skyshatter
 							i(32863),	-- Skybreaker Whip
@@ -254,7 +254,7 @@ _.Zones =
 						qh(11069),	-- Dragonmaw Race: Wing Commander Ichman
 						qh(11070),	-- Dragonmaw Race: Wing Commander Mulverick
 						q( 11089),	-- The Soul Cannon of Reth'hedron
-						q( 11086),	-- Disrupting the Twilight Portal
+						qd( q( 11086)),	-- Disrupting the Twilight Portal
 						q( 11099, {	-- Kill Them All!
 							["description"] = "For players aligned with The Aldor.",
 						}),

@@ -3557,7 +3557,7 @@ _.ExpansionFeatures =
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
-						q(36813, {	-- Subversive Infestation
+						q(36813, {	-- Subversive Infestation -- Quest will be offered by the Follower Phylarch the Green at the Lumber Mill Level 3. To get him as Follower you need to complete the Lumber Mill Quest Line.
 							["groups"] = {
 								i(117398), -- Everbloom Seed Pouch
 							},
