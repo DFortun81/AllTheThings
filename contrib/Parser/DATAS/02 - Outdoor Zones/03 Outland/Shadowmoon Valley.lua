@@ -334,16 +334,16 @@ _.Zones =
 								["coord"] = { 56.2, 58.7 },
 								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
 							}),
-							q(10823, {	-- More Sunfury Signets
+							qr( q(10823, {	-- More Sunfury Signets
 								["qg"] = 22211,	-- Battlemage Vyara
 								["coord"] = { 56.2, 58.7 },
 								["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (in SMV OR in Shattrath)
-							}),
-							q(10822, {	-- Single Sunfury Signet
+							})),
+							qr( q(10822, {	-- Single Sunfury Signet
 								["qg"] = 22211,	-- Battlemage Vyara
 								["coord"] = { 56.2, 58.7 },
 								["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (in SMV OR in Shattrath)
-							}),
+							})),
 						},
 						["collectible"] = false,
 					}),
@@ -828,7 +828,7 @@ _.Zones =
 					}),
 					qa(10642),	-- A Ghost in the Machine
 					q( 10947),	-- An Artifact From the Past
-					q( 11544),	-- Ata'mal Armaments
+					qd( q( 11544)),	-- Ata'mal Armaments
 					q(10781, {	-- Battle of the Crimson Watch
 						["groups"] = {
 							i(31380),	-- Acrobat's Mark of the Sha'tar

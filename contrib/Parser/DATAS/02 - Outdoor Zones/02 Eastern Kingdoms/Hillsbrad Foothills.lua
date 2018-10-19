@@ -459,6 +459,7 @@ _.Zones =
 					q( 28751, {	-- Tending the Garden
 						["qg"] = 49687,	-- Brazie the Botanist
 						["sourceQuests"] = { 28748 },	-- Lawn of the Dead
+						["isDaily"] = true,
 					}),
 					{
 						["qg"] = 47789,	-- Clerk Horrace Whitesteed

@@ -341,6 +341,7 @@ _.Zones =
 							["questID"] = 11531,	-- Strange Engine Part
 							["races"] = ALLIANCE_ONLY,
 							["requireSkill"] = 356,	-- Fishing
+							["repeatable"] = true,
 						},
 						{
 							["qg"] = 18285,	-- "Count" Ungula
