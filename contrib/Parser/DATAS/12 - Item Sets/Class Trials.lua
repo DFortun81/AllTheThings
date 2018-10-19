@@ -636,7 +636,8 @@ _.GearSets =
 				n(-143, { -- Lightdrinker 
 					["groups"] = {
 						i(153959),	-- Lightdrinker Dagger
-						i(153961),	-- Lightdrinker Sword
+						i(153960),	-- Lightdrinker Shiv
+						i(153961),	-- Lightdrinker Sword (in crate)
 						i(153954),	-- Lightdrinker Hood
 						i(153946),	-- Lightdrinker Choker
 						i(153956),	-- Lightdrinker Shoulders
@@ -648,8 +649,8 @@ _.GearSets =
 						i(153955),	-- Lightdrinker Britches
 						i(153952),	-- Lightdrinker Boots
 						i(153948),	-- Lightdrinker Band of Onslaught
-						i(153947),	-- Lightdrinker Idol of Rage
 						i(153949),	-- Lightdrinker Ring of Onslaught
+						i(153947),	-- Lightdrinker Idol of Rage
 						i(153950),	-- Lightdrinker Stone of Rage
 					},
 					["classes"] = { 4 }
