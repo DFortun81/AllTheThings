@@ -9,7 +9,6 @@ _.Instances =
 			inst(369, { 	-- Siege of Orgrimmar
 				["groups"] = {
 					d(17, {	-- LFR
-						--["ignoreBonus"] = true,
 						["groups"] = {
 							n(-1, {		-- Shared Boss Loot
 								i(104275, {	-- Twisted Treasures of the Vale
@@ -591,8 +590,22 @@ _.Instances =
 							}),	
 						},
 					}),
-					d(14, {	-- Normal
-						--["ignoreBonus"] = true,
+					d(1, {	-- Legacy (Normal)
+						["u"] = 12,
+						["description"] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better and they chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
+						["groups"] = {
+						
+						},
+					}),
+					d(2, {	-- Legacy (Heroic)
+						["u"] = 12,
+						["description"] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better and they chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
+						["groups"] = {
+						
+						},
+					}),
+					d(14, {	-- Normal (Was Flex)
+						["description"] = "This version of the instance was the original Flex difficulty mode. It was split into both Normal and Heroic mode after they introduced Mythic.",
 						["groups"] = {
 							n(0, {	-- Zone Drop
 								{	-- Aeth's Swiftcinder Cloak
@@ -1675,8 +1688,8 @@ _.Instances =
 							})),
 						},
 					}),
-					d(15, {	-- Heroic
-						--["ignoreBonus"] = true,
+					d(15, {	-- Heroic (Was Flex)
+						["description"] = "This version of the instance was the original Flex difficulty mode. It was split into both Normal and Heroic mode after they introduced Mythic.",
 						["groups"] = {
 							n(0, {	-- Zone Drop
 								{	-- Aeth's Swiftcinder Cloak

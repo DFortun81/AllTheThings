@@ -274,6 +274,11 @@ _.Instances =
 									i(86190),	-- Serrated Wasp Bracers
 									i(86183),	-- Shining Cicada Bracers
 									i(86185),	-- Smooth Beetle Wristbands
+									i(86043),	-- Jade Bandit Figurine
+									i(86042),	-- Jade Charioteer Figurine
+									i(86045),	-- Jade Courtesan Figurine
+									i(86044),	-- Jade Magistrate Figurine
+									i(86046),	-- Jade Warlord Figurine
 									i(86238),	-- Pattern: Chestguard of Nemeses
 									i(86272),	-- Pattern: Fists of Lightning
 									i(86380),	-- Pattern: Imperial Silk Gloves

@@ -273,6 +273,11 @@ _.Instances =
 									i(85926),	-- Stoneflesh Leggings
 									i(85975),	-- Heavenly Jade Greatboots
 									i(85925),	-- Jasper Clawfeet
+									i(86043),	-- Jade Bandit Figurine
+									i(86042),	-- Jade Charioteer Figurine
+									i(86045),	-- Jade Courtesan Figurine
+									i(86044),	-- Jade Magistrate Figurine
+									i(86046),	-- Jade Warlord Figurine
 								},
 								["crs"] = {
 									60047, -- Amethyst Guardian
