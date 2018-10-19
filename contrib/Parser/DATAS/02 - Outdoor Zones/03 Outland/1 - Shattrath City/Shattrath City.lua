@@ -368,6 +368,7 @@ _.Zones =
 					}),
 					q( 47523, {	-- Disturbance Detected: Black Temple (EVENT: TIMEWALKING)
 						["qg"] = 123252,	-- Vormu
+						["isWeekly"] = true,
 						["description"] = "This quest is only available during BC Timewalking.",
 					}),
 					q(41160, { -- Earth to Earth
@@ -402,7 +403,7 @@ _.Zones =
 						["qg"] = 18584,	-- Sal'salabim
 						["sourceQuests"] = { 10009 },	-- Crackin' Some Skulls *UNTESTED*
 					}),
-					q( 11380, {	-- Manalicious
+					qd( q( 11380, {	-- Manalicious
 						i(33844, {	-- Barrel of Fish
 							i(33869),	-- Recipe: Broiled Bloodfin
 							i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -418,14 +419,14 @@ _.Zones =
 							i(33873),	-- Recipe: Spicy Hot Talbuk
 							i(33871),	-- Recipe: Stormchops
 						}),
-					}),
+					})),
 					q( 10037, {	-- Rather Be Fishin'
 						["groups"] = {
 							i(25978)	-- Seth's Graphite Fishing Pole
 						},
 						["qg"] = 18653,	-- Seth
 					}),
-					q( 11377, {	-- Revenge is Tasty
+					qd( q( 11377, {	-- Revenge is Tasty
 						i(33844, {	-- Barrel of Fish
 							i(33869),	-- Recipe: Broiled Bloodfin
 							i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -441,7 +442,7 @@ _.Zones =
 							i(33873),	-- Recipe: Spicy Hot Talbuk
 							i(33871),	-- Recipe: Stormchops
 						}),
-					}),
+					})),
 					q( 10849, {	-- Seek Out Kirrik
 						["qg"] = 22292,	-- Rilak the Redeemed
 						["sourceQuests"] = { 10847 },	-- The Eyes of Skettis *UNTESTED*
@@ -452,7 +453,7 @@ _.Zones =
 						i(31764),	-- Stillfire Leggings
 						i(31760),	-- Miniwing (PET!)
 					}),
-					q( 11381, {	-- Soup for the Soul
+					qd( q( 11381, {	-- Soup for the Soul
 						i(33844, {	-- Barrel of Fish
 							i(33869),	-- Recipe: Broiled Bloodfin
 							i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -468,8 +469,8 @@ _.Zones =
 							i(33873),	-- Recipe: Spicy Hot Talbuk
 							i(33871),	-- Recipe: Stormchops
 						}),
-					}),
-					q( 11379, {	-- Super Hot Stew
+					})),
+					qd( q( 11379, {	-- Super Hot Stew
 						i(33844, {	-- Barrel of Fish
 							i(33869),	-- Recipe: Broiled Bloodfin
 							i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -485,7 +486,7 @@ _.Zones =
 							i(33873),	-- Recipe: Spicy Hot Talbuk
 							i(33871),	-- Recipe: Stormchops
 						}),
-					}),
+					})),
 					q( 13082, {	-- The Boon of A'dal
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 13081 },	-- The Will of the Naaru *UNTESTED*
@@ -537,54 +538,63 @@ _.Zones =
 					})),
 					qdg(q(11369, {	-- Wanted: A Black Stalker Egg
 						["qg"] = 24369,	-- Wind Trader Zhareem
+						["isDaily"] = true,
 					})),
 					qdg(q(11389, {	-- Wanted: Arcatraz Sentinels
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["isDaily"] = true,
 					})),
 					qdg(q(11371, {	-- Wanted: Coilfang Myrmidons
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["isDaily"] = true,
 					})),
 					qdg(q(11376, {	-- Wanted: Malicious Instructors
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["isDaily"] = true,
 					})),
 					qdg(q(11383, {	-- Wanted: Rift Lords
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["isDaily"] = true,
 					})),
 					qdg(q(11364, {	-- Wanted: Shattered Hand Centurions
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["isDaily"] = true,
 					})),
 					qdg(q(11500, {	-- Wanted: Sisters of Torment
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["isDaily"] = true,
 					})),
 					qdg(q(11385, {	-- Wanted: Sunseeker Channelers
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["isDaily"] = true,
 					})),
 					qdg(q(11387, {	-- Wanted: Tempest-Forge Destroyers
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["isDaily"] = true,
 					})),
 					q( 10231, {	-- What Book? I Don't See Any Book.
 						["qg"] = 19715,	-- Ezekiel
