@@ -765,7 +765,7 @@ profession(755, { -- Jewelcrafting
 		i(116095),	-- Recipe: Whispering Taladite Pendant
 		i(116092),	-- Recipe: Whispering Taladite Ring
 	}),
-	--]]
+	--
 	tier(8, {	-- Battle For Azeroth
 		filter(200, { -- Recipes
 			-- Note: SpellID must be attached, otherwise item won't link properly due to how BfA Item DB is handled.
@@ -788,9 +788,9 @@ profession(755, { -- Jewelcrafting
 				recipe(256255, { ["spellID"] = 256255, }),	-- Laribole Staff of Alacrity
 				recipe(256256, { ["spellID"] = 256256, }),	-- Laribole Staff of Alacrity
 				recipe(256257, { ["spellID"] = 256257, }),	-- Laribole Staff of Alacrity
-				un(1, recipe(256612, { ["spellID"] = 256612, })),	-- Mass Prospect Monelite - Never made it to Live
-				un(1, recipe(256623, { ["spellID"] = 256623, })),	-- Mass Prospect Platinum - Never made it to Live
-				un(1, recipe(256614, { ["spellID"] = 256614, })),	-- Mass Prospect Storm Silver - Never made it to Live
+				recipe(256612, { ["spellID"] = 256612, })),	-- Mass Prospect Monelite
+				recipe(256623, { ["spellID"] = 256623, }),	-- Mass Prospect Platinum
+				recipe(256614, { ["spellID"] = 256614, }),	-- Mass Prospect Storm Silver
 				recipe(256692, { ["spellID"] = 256692, }),	-- Masterful Kubiline
 				recipe(256698, { ["spellID"] = 256698, }),	-- Masterful Tidal Amethyst
 				recipe(256511, { ["spellID"] = 256511, }),	-- Owlseye Loop
@@ -815,4 +815,5 @@ profession(755, { -- Jewelcrafting
 				recipe(256253, { ["spellID"] = 256253, }),	-- Viridium Staff of Alacrity
 		}),
 	}),
+	--]]
 });
