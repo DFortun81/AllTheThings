@@ -44,6 +44,7 @@ _.WorldEvents =
 						},
 						["isRaid"] = true,
 						["questID"] = 47462,
+						["isDaily"] = true,
 						["maps"] = { 76 },	-- Azshara
 					}),	
 					n(121913, {	-- Emeriss		
@@ -66,6 +67,7 @@ _.WorldEvents =
 						},
 						["isRaid"] = true,
 						["questID"] = 47463,
+						["isDaily"] = true,
 						["maps"] = { 47 },	-- Duskwood
 					}),
 					n(121818, {	-- Lord Kazzak
@@ -83,6 +85,7 @@ _.WorldEvents =
 						},
 						["isRaid"] = true,
 						["questID"] = 47461,
+						["isDaily"] = true,
 						["maps"] = { 17 },	-- Blasted Lands
 					}),
 					n(121821, {	-- Lethon			
@@ -105,6 +108,7 @@ _.WorldEvents =
 						},
 						["isRaid"] = true,
 						["questID"] = 47463,
+						["isDaily"] = true,
 						["maps"] = { 26 },	-- The Hinterlands
 					}),	
 					n(121911, {	-- Taerar	
@@ -127,6 +131,7 @@ _.WorldEvents =
 						},
 						["isRaid"] = true,
 						["questID"] = 47463,
+						["isDaily"] = true,
 					}),	
 					n(121912, {	-- Ysondre
 						["groups"] = {
@@ -149,17 +154,18 @@ _.WorldEvents =
 						},
 						["isRaid"] = true,
 						["questID"] = 47463,
+						["isDaily"] = true,
 						["maps"] = { 69 },	-- Feralas
 					}),
 				}),
 				n(-17, { -- Quests
 					a(n(110034, {	-- Historian Llore
-						a(q(43323)),	-- A Time To Reflect
+						qd( a(q(43323))),	-- A Time To Reflect
 						a(q(43471)),	-- The Historians
 						a(q(47253)),	-- The Originals
 					})),
 					h(n(110035, {	-- Historian Ju'pa
-						h(q(43461)),	-- A Time To Reflect
+						qd( h(q(43461))),	-- A Time To Reflect
 						h(q(43472)),	-- The Historians
 						h(q(47254)),	-- The Originals
 					})),
