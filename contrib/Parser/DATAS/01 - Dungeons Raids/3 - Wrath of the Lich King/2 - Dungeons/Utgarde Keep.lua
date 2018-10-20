@@ -61,9 +61,9 @@ _.Instances =
 						h(q(13206, {	-- Disarmament
 							["groups"] = {
 								i(44400),	-- Necklace of Calm Skies
-								i(44001),	-- Hundred Tooth Necklace
-								i(44002),	-- Tiled-Stone Pendant
-								i(44003),	-- Amulet of Constrained Power
+								i(44401),	-- Hundred Tooth Necklace
+								i(44402),	-- Tiled-Stone Pendant
+								i(44403),	-- Amulet of Constrained Power
 							},
 							["qg"] = 24137,	-- Dark Ranger Marrah
 						})),
