@@ -5,6 +5,12 @@ local i = function(itemID)
 	return item;
 end
 
+--------------------------------------
+--  D A R K M O O N      F A I R E  --
+--------------------------------------
+
+i(101675);	-- Shimmering Moonstone
+
 -----------------------
 --  B R E W F E S T  --
 -----------------------

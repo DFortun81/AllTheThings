@@ -136,7 +136,7 @@ _.WorldEvents =
 							["qg"] = 114562, -- Khadgar's Upgraded Servant
 							["sourceQuests"] = { 44500 }, -- Author! Author!
 						}),								
-						un(40, q(43301, { -- Invasion: Azshara
+						q(43301, { -- Invasion: Azshara
 							["groups"] = {
 								i(139048, { -- Small Legion Chest
 									un(3, i(141597)), -- Corrupted Argus Gavel
@@ -245,8 +245,9 @@ _.WorldEvents =
 									}),
 								}),	
 							},
-						})),
-						un(40, q(43284, { -- Invasion: Dun Morogh
+							["u"] = 40,
+						}),
+						q(43284, { -- Invasion: Dun Morogh
 							["groups"] = {
 								i(139048, { -- Small Legion Chest
 									un(3, i(141597)), -- Corrupted Argus Gavel
@@ -355,8 +356,9 @@ _.WorldEvents =
 									}),
 								}),	
 							},
-						})),
-						un(40, q(43285, { -- Invasion: Hillsbrad Foothills
+							["u"] = 40,
+						}),
+						q(43285, { -- Invasion: Hillsbrad Foothills
 							["groups"] = {
 								i(139048, { -- Small Legion Chest
 									un(3, i(141597)), -- Corrupted Argus Gavel
@@ -465,8 +467,9 @@ _.WorldEvents =
 									}),
 								}),	
 							},
-						})),
-						un(40, q(43282, { -- Invasion: Northern Barrens
+							["u"] = 40,
+						}),
+						q(43282, { -- Invasion: Northern Barrens
 							["groups"] = {
 								i(139048, { -- Small Legion Chest
 									un(3, i(141597)), -- Corrupted Argus Gavel
@@ -575,8 +578,9 @@ _.WorldEvents =
 									}),
 								}),	
 							},
-						})),
-						un(40, q(43244, { -- Invasion: Tanaris
+							["u"] = 40,
+						}),
+						q(43244, { -- Invasion: Tanaris
 							["groups"] = {
 								i(139048, { -- Small Legion Chest
 									un(3, i(141597)), -- Corrupted Argus Gavel
@@ -685,8 +689,9 @@ _.WorldEvents =
 									}),
 								}),	
 							},
-						})),
-						un(40, q(43245, { -- Invasion: Westfall
+							["u"] = 40,
+						}),
+						q(43245, { -- Invasion: Westfall
 							["groups"] = {
 								i(139048, { -- Small Legion Chest
 									un(3, i(141597)), -- Corrupted Argus Gavel
@@ -795,7 +800,8 @@ _.WorldEvents =
 									}),
 								}),	
 							},
-						})),
+							["u"] = 40,
+						}),
 						q(42970, { -- The Diamond King
 							["groups"] = {
 							},
