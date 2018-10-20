@@ -13,7 +13,7 @@ _.Holidays =
 					435,	-- Scarlet Monastery	Note!! MapID verified Oct. 18th, 2018
 				},
 				["g"] = {
-					-- Note!! sMount -> Pet -> Cosmetic -> Weapon -> Plate -> Miscellaneous
+					-- Note!! Mount -> Pet -> Cosmetic -> Weapon -> Plate -> Miscellaneous
 					{	-- Bring Me The Head of... Oh Wait
 						["achievementID"] = 255,	-- Bring Me The Head of... Oh Wait
 						["u"] = 26,			-- Hallow's End Filter
@@ -690,6 +690,16 @@ _.Holidays =
 					-- Note!! This is loot that use to actually drop off his body and not a bag.
 					-- Note!! Item Key ( Original iLvl // BfA+ iLvL // Minium Level)
 					-- Burning Crusade Rings
+					{	-- Old Magic Broom
+						["itemID"] = 33183,	-- Old Magic Broom
+						["u"] = 2,			-- Removed BoP Filter
+						--Note!! Removed in Patch 2.4.3
+					},
+					{	-- Swift Magic Broom
+						["itemID"] = 33184,	-- Swift Magic Broom
+						["u"] = 2,			-- Removed BoP Filter
+						--Note!! Removed in 4.0.1 [Cataclysm Pre-Patch]
+					},
 					{	-- Ring of Ghoulish Delight (i110 // i77 // L70)
 						["itemID"] = 34075,	-- Ring of Ghoulish Delight
 						["u"] = 2,			-- Removed BoP Filter

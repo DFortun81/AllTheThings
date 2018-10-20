@@ -105,3 +105,7 @@ i(69192);	-- Ogre Female Mask
 i(69193);	-- Ogre Male Mask
 i(69194);	-- Vrykul Female Mask
 i(69195);	-- Vrykul Male Mask
+i(37011);	-- Magic Broom
+i(33184);	-- Swift Magic Broom
+i(33183);	-- Old Magic Broom
+i(33189);	-- Rickety Magic Broom
