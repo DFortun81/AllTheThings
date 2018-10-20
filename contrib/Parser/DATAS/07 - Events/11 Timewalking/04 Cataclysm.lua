@@ -32,39 +32,33 @@ _.WorldEvents =
 								["itemID"] = 133150,	-- Commendation of the Dragonmaw Clan
 								["collectible"] = false,
 								["icon"] = "Interface\\Icons\\inv_misc_head_dragon_red",
-								["f"] = 55,	--  Consumable
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Commendation of the Earthen Ring
 								["itemID"] = 133159,	-- Commendation of the Earthen Ring
 								["collectible"] = false,
 								["icon"] = "Interface\\Icons\\ability_earthenfury_giftofearth",
-								["f"] = 55,	--  Consumable
 							},
 							{	-- Commendation of the Guardians of Hyjal
 								["itemID"] = 133152,	-- Commendation of the Guardians of Hyjal
 								["collectible"] = false,
 								["icon"] = "Interface\\Icons\\inv_misc_markoftheworldtree",
-								["f"] = 55,	--  Consumable
 							},
 							{	-- Commendation of the Ramkahen
 								["itemID"] = 133154,	-- Commendation of the Ramkahen
 								["collectible"] = false,
 								["icon"] = "Interface\\Icons\\inv_jewelry_amulet_03",
-								["f"] = 55,	--  Consumable
 							},
 							{	-- Commendation of the Wildhammer Clan
 								["itemID"] = 133151,	-- Commendation of the Wildhammer Clan
 								["collectible"] = false,
 								["icon"] = "Interface\\Icons\\trade_archaeology_carved-wildhammer-gryphon-figurine",
-								["f"] = 55,	--  Consumable
 								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Commendation of Therazanae
 								["itemID"] = 133160,	-- Commendation of Therazanae
 								["collectible"] = false,
 								["icon"] = "Interface\\Icons\\inv_datacrystal09",
-								["f"] = 55,	--  Consumable
 							},
 						-- Toy!!
 							{	-- Gurboggle's Gleaming Bauble
@@ -102,27 +96,21 @@ _.WorldEvents =
 						-- Heirlooms!!
 							{	-- Ancient Heirloom Armor Casing
 								["itemID"] = 122338,	-- Ancient Heirloom Armor Casing
-								["f"] = 55,	--  Consumable
 							},
 							{	-- Timeworn Heirlom Armor Casing
 								["itemID"] = 122340,	-- Timeworn Heirlom Armor Casing
-								["f"] = 55,	--  Consumable
 							},
 							{	-- Weathered Heirlom Armor Casing
 								["itemID"] = 151614,	-- Weathered Heirlom Armor Casing
-								["f"] = 55,	--  Consumable
 							},
 							{	-- Ancient Heirloom Scabbard
 								["itemID"] = 122339,	-- Ancient Heirloom Scabbard
-								["f"] = 55,	--  Consumable
 							},
 							{	-- Timeworn Heirloom Scabbard
 								["itemID"] = 122341,	-- Timeworn Heirloom Scabbard
-								["f"] = 55,	--  Consumable
 							},
 							{	-- Weathered Heirloom Scabbard
 								["itemID"] = 151615,	-- Weathered Heirloom Scabbard
-								["f"] = 55,	--  Consumable
 							},
 						-- Gear!!
 							{	-- Bones of the Damned

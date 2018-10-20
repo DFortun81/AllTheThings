@@ -9,15 +9,12 @@ _.Holidays =
 			{	-- Vendors
 				["npcID"] = -2,	-- Vendors
 				["g"] = {
-				n(0, { ["maps"] = { 582, 590 } }),	-- Zone Test
-				--[[
-				{	-- Izzy Hollyfizzle [Horde]
+				{	-- Izzy Hollyfizzle [Garrison]
 					["npcID"] = 96362,	-- Izzy Hollyfizzle
 					["coords"] = {
 						{ 47.33, 38.47 },	-- Horde Garrison
 						{ 44.29, 51.05 },	-- Alliance Garrison
 					},
-					["description"] = "Purchasing Ghoulish Guises, Hallow's Glow, Seer's Invitation, Witch's Brew or Creepy Crawlers for 5x|cFFFFD700Spooky Supplies|r will enable you to use the decorations year round.",
 					["maps"] = {
 						582,	-- Alliance Garrison
 						590,	-- Horde Garrison
@@ -60,20 +57,90 @@ _.Holidays =
 							},
 						},
 				},
-				--]]
-					n(53757, { -- Chub <Candy & Toy Vendor>
-						["groups"] = {
-							un(26, i(33226, { -- Tricky Treat
-								un(26, i(151271)), 	-- Horse Head Costume
-								un(26, i(151270)), 	-- Horse Tail Costume
-								un(26, i(70722)), 	-- Little Wickerman
-								un(26, i(33292)), 	-- Hallowed Helm
-								un(26, i(37011)),	-- Magic Broom
-							})),
+				{	-- Chub [H - Undercity]
+					["npcID"] = 53757,	-- Chub
+					["races"] = HORDE_ONLY,
+					["itemID"] = 33226,	-- Trickey Treat Note!! Currency used to buy items
+					["coords"] = {
+						{ 62.19, 66.44 },
+					},
+					["maps"] = {
+						18,	-- Tirisfal Glades	Note!! While technically under UC this is where the map swaps.
+					},
+					["g"] = {
+						{	-- Magic Broom
+							["itemID"] = 37011,	-- Magic Broom
+							["u"] = 26,			-- Hallow's End Filter
 						},
-						["races"] = HORDE_ONLY,
-						--["maps"] = { 18 }, -- Tirisfal Glades [Lucetia Note: These vendors are here despite being in Undercity. Subject to change in BfA with Undercity destruction]
-					}),
+						-- Toys!!
+						{	-- Headless Horseman's Hearthstone
+							["itemID"] = 163045,	-- Headless Horseman's Hearthstone
+							["u"] = 26,				-- Hallow's End Filter
+						},
+						{	-- Horse Head Costume
+							["itemID"] = 151271,	-- Horse Head Costume
+							["u"] = 26,				-- Hallow's End Filter
+						},
+						{	-- Horse Tail Costume
+							["itemID"] = 151270,	-- Horse Tail Costume
+							["u"] = 26,				-- Hallow's End Filter
+						},
+						{	-- Little Wickerman
+							["itemID"] = 70722,	-- Little Wickerman
+							["u"] = 26,			-- Hallow's End Filter
+						},
+						-- Cosmetics!!
+						{	-- Hallowed Helm
+							["itemID"] = 33292,	-- Hallowed Helm
+							["u"] = 26,			-- Hallow's End Filter
+						},
+						-- Heirlooms!!
+						{	-- Ancient Heirloom Armor Casing
+							["itemID"] = 122338,	-- Ancient Heirloom Armor Casing
+						},
+						{	-- Timeworn Heirlom Armor Casing
+							["itemID"] = 122340,	-- Timeworn Heirlom Armor Casing
+						},
+						{	-- Weathered Heirlom Armor Casing
+							["itemID"] = 151614,	-- Weathered Heirlom Armor Casing
+						},
+						-- Items that should be toys!!
+						{	-- Exquisite Costume Set: "Deathwing"
+							["itemID"] = 128643,	-- Exquisite Costume Set: "Deathwing"
+							["u"] = 26,				-- Hallow's End Filter
+						},
+						{	-- Exquisite Costume Set: "Grommash"
+							["itemID"] = 138990,	-- Exquisite Costume Set: "Grommash"
+							["u"] = 26,				-- Hallow's End Filter
+						},
+						{	-- Exquisite Costume Set: "The Lich King"
+							["itemID"] = 116828,	-- Exquisite Costume Set: "The Lich King"
+							["u"] = 26,				-- Hallow's End Filter
+						},
+						{	-- Exquisite Costume Set: "Xavius"
+							["itemID"] = 151268,	-- Exquisite Costume Set: "Xavius"
+							["u"] = 26,				-- Hallow's End Filter
+						},
+						-- Candy
+						{	-- Chewy Fel Taffy
+							["itemID"] = 37585,	-- Chewy Fel Taffy
+							["u"] = 26,			-- Hallow's End Filter
+						},
+						{	-- G.N.E.R.D.S.
+							["itemID"] = 37583,	-- G.N.E.R.D.S.
+							["u"] = 26,			-- Hallow's End Filter
+						},
+						{	-- Pyroblast Cinnamon Ball
+							["itemID"] = 37582,	-- Pyroblast Cinnamon Ball
+							["u"] = 26,			-- Hallow's End Filter
+						},
+						{	-- Soothing Spearmint Candy
+							["itemID"] = 37584,	-- Soothing Spearmint Candy
+							["u"] = 26,			-- Hallow's End Filter
+						},
+					},
+				},
+					
 					nh(53756, {	-- Darla <Wand Vendor>
 						["maps"] = { 18 }, -- Tirisfal Glades 
 						["groups"] = {
