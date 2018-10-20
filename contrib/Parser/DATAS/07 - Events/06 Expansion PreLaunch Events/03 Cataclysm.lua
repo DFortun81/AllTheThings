@@ -20,7 +20,7 @@ _.WorldEvents =
 						["collectible"] = false,
 					})),
 					-- http://wowwiki.wikia.com/wiki/Elemental_Unrest
-					ach(4887, { -- Tripping the Rifts
+					un(3, ach(4887, { -- Tripping the Rifts
 						["groups"] = {
 							-- NOTE: NPCs are unrelated to the achievement.
 							n(44822, {	-- Crown Princess Theradras
@@ -52,7 +52,7 @@ _.WorldEvents =
 								un(3, i(53507)),	-- Sandfury Sandals
 							}),
 						},
-					}),
+					})),
 				},
 				["icon"] = "Interface\\Icons\\expansionicon_cataclysm",
 				["lvl"] = 80,
