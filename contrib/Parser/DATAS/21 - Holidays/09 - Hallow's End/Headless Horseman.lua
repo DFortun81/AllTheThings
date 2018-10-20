@@ -65,8 +65,10 @@ _.Holidays =
 								["u"] = 26,			-- Hallow's End Filter
 							},
 							{	-- G.N.E.R.D.S.
-								["itemID"] = 37583,	-- G.N.E.R.D.S.
-								["u"] = 26,			-- Hallow's End Filter
+								["itemID"] = 37583,			-- G.N.E.R.D.S.
+								["achievementID"] = 1656,	-- Hallowed Be Thy Name
+								["criteriaID"] = 7,			-- G.N.E.R.D. Rage
+								["u"] = 26,					-- Hallow's End Filter
 							},
 							{	-- Pyroblast Cinnamon Ball
 								["itemID"] = 37582,	-- Pyroblast Cinnamon Ball
@@ -225,6 +227,8 @@ _.Holidays =
 							},
 							{	-- Tooth Pick
 								["itemID"] = 37604,	-- Tooth Pick
+								["achievementID"] = 1656,	-- Hallowed Be Thy Name
+								["criteriaID"] = 5,			-- Trick or Treat!
 								["u"] = 26,			-- Hallow's End Filter
 							},
 						},
@@ -286,9 +290,10 @@ _.Holidays =
 								["u"] = 26,			-- Hallow's End Filter
 							},
 							{	-- G.N.E.R.D.S.
-								["itemID"] = 37583,	-- G.N.E.R.D.S.
-								["u"] = 26,			-- Hallow's End Filter
-								["u"] = 26,			-- Hallow's End Filter
+								["itemID"] = 37583,			-- G.N.E.R.D.S.
+								["achievementID"] = 1656,	-- Hallowed Be Thy Name
+								["criteriaID"] = 7,			-- G.N.E.R.D. Rage
+								["u"] = 26,					-- Hallow's End Filter
 							},
 							{	-- Pyroblast Cinnamon Ball
 								["itemID"] = 37582,	-- Pyroblast Cinnamon Ball
@@ -447,6 +452,8 @@ _.Holidays =
 							},
 							{	-- Tooth Pick
 								["itemID"] = 37604,	-- Tooth Pick
+								["achievementID"] = 1656,	-- Hallowed Be Thy Name
+								["criteriaID"] = 5,			-- Trick or Treat!
 								["u"] = 26,			-- Hallow's End Filter
 							},
 						},
@@ -613,170 +620,174 @@ _.Holidays =
 					-- Candy
 					{	-- Chewy Fel Taffy
 						["itemID"] = 37585,	-- Chewy Fel Taffy
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- G.N.E.R.D.S.
-						["itemID"] = 37583,	-- G.N.E.R.D.S.
-								["u"] = 26,			-- Hallow's End Filter
+						["itemID"] = 37583,			-- G.N.E.R.D.S.
+						["achievementID"] = 1656,	-- Hallowed Be Thy Name
+						["criteriaID"] = 7,			-- G.N.E.R.D. Rage
+						["u"] = 26,					-- Hallow's End Filter
 					},
 					{	-- Pyroblast Cinnamon Ball
 						["itemID"] = 37582,	-- Pyroblast Cinnamon Ball
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Soothing Spearmint Candy
 						["itemID"] = 37584,	-- Soothing Spearmint Candy
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					-- Masks
 					{	-- Blood Elf Female Mask
 						["itemID"] = 34000,	-- Blood Elf Female Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Blood Elf Male Mask
 						["itemID"] = 34002,	-- Blood Elf Male Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Draenei Female Mask
 						["itemID"] = 34001,	-- Draenei Female Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Draenei Male Mask
 						["itemID"] = 34003,	-- Draenei Male Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Dwarf Female Mask
 						["itemID"] = 20562,	-- Dwarf Female Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Dwarf Male Mask
 						["itemID"] = 20561,	-- Dwarf Male Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Gnome Male Mask
 						["itemID"] = 20391,	-- Gnome Male Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Goblin Female Mask
 						["itemID"] = 49212,	-- Goblin Female Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Goblin Male Mask
 						["itemID"] = 49210,	-- Goblin Male Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Human Female Mask
 						["itemID"] = 20565,	-- Human Female Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Human Male Mask
 						["itemID"] = 20566,	-- Human Male Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Night Elf Female Mask
 						["itemID"] = 20563,	-- Night Elf Female Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Night Elf Male Mask
 						["itemID"] = 20564,	-- Night Elf Male Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Orc Female Mask
 						["itemID"] = 20569,	-- Orc Female Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Orc Male Mask
 						["itemID"] = 20570,	-- Orc Male Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Tauren Female Mask
 						["itemID"] = 20571,	-- Tauren Female Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Tauren Male Mask
 						["itemID"] = 20572,	-- Tauren Male Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Troll Female Mask
 						["itemID"] = 20567,	-- Troll Female Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Troll Male Mask
 						["itemID"] = 20568,	-- Troll Male Mask
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					-- Wands
 					{	-- Hallowed Wand - Abomination
 						["itemID"] = 116851,	-- Hallowed Wand - Abomination
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Banshee
 						["itemID"] = 139004,	-- Hallowed Wand - Banshee
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Bat
 						["itemID"] = 20410,	-- Hallowed Wand - Bat
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Gargoyle
 						["itemID"] = 128645,	-- Hallowed Wand - Gargoyle
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Geist
 						["itemID"] = 116853,	-- Hallowed Wand - Geist
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Ghost
 						["itemID"] = 20409,	-- Hallowed Wand - Ghost
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Ghoul
 						["itemID"] = 116850,	-- Hallowed Wand - Ghoul
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Leper Gnome
 						["itemID"] = 20399,	-- Hallowed Wand - Leper Gnome
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Nerubian
 						["itemID"] = 128646,	-- Hallowed Wand - Nerubian
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Ninja
 						["itemID"] = 20398,	-- Hallowed Wand - Ninja
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Pirate
 						["itemID"] = 20397,	-- Hallowed Wand - Pirate
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Skeleton
 						["itemID"] = 20411,	-- Hallowed Wand - Skeleton
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Slime
 						["itemID"] = 116848,	-- Hallowed Wand - Slime
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Spider
 						["itemID"] = 116854,	-- Hallowed Wand - Spider
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Wight
 						["itemID"] = 128644,	-- Hallowed Wand - Wight
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Hallowed Wand - Wisp
 						["itemID"] = 20414,	-- Hallowed Wand - Wisp
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					-- Miscellaneous
 					{	-- Penny Pouch
 						["itemID"] = 37606,	-- Penny Pouch
-								["u"] = 26,			-- Hallow's End Filter
+						["u"] = 26,			-- Hallow's End Filter
 					},
 					{	-- Tooth Pick
 						["itemID"] = 37604,	-- Tooth Pick
-								["u"] = 26,			-- Hallow's End Filter
+						["achievementID"] = 1656,	-- Hallowed Be Thy Name
+						["criteriaID"] = 5,			-- Trick or Treat!
+						["u"] = 26,			-- Hallow's End Filter
 					},
 				},
 			},

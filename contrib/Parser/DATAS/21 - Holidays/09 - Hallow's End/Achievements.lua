@@ -82,14 +82,6 @@ _.Holidays =
 							{	-- G.N.E.R.D. Rage
 								["achievementID"] = 1261,	-- G.N.E.R.D. Rage
 								["u"] = 26,					-- Hallow's End Filter
-								["g"] = {
-									{	-- G.N.E.R.D.S.
-										["itemID"] = 37583,			-- G.N.E.R.D.S.
-										["achievementID"] = 1656,	-- Hallowed Be Thy Name
-										["criteriaID"] = 7,			-- G.N.E.R.D. Rage
-										["u"] = 26,					-- Hallow's End Filter
-									},
-								},
 							},
 							{	-- Out With It
 								["achievementID"] = 288,	-- Out With It
@@ -110,23 +102,17 @@ _.Holidays =
 							{	-- Sinister Calling
 								["achievementID"] = 292,	-- Sinister Calling
 								["u"] = 26,					-- Hallow's End Filter
-								--Note!! The individual criteria for this will be attached to the actual item (on Headless Horseman) rather than here.  By linking it to the item we give a better represenation of the criteria and avoid duplicity.
+								--Note!! The individual criteria for this will be attached to the actual item rather than here.  By linking it to the item we give a better represenation of the criteria and avoid duplicity.
 							},
 							{	-- That Sparkling Smile
 								["achievementID"] = 981,	-- That Sparkling Smile
 								["u"] = 26,				-- Hallow's End Filter
-								["g"] = {
-									{	-- Tooth Pick
-										["itemID"] = 37604,	-- Tooth Pick
-										["achievementID"] = 1656,	-- Hallowed Be Thy Name
-										["criteriaID"] = 5,			-- Trick or Treat!
-										["u"] = 26,			-- Hallow's End Filter
-									},
-								},
 							},
 							{	-- The Masquerade
 								["achievementID"] = 283,	-- The Masquerade
 								["u"] = 26,					-- Hallow's End Filter
+								--Note!! We are linking these here as it is an easy way to track what you need done.
+								--Since we aren't utilizing maps technique it won't provide clutter in mini list for each zone
 								["g"] = {
 									{	-- Hallowed Wand - Bat
 										["itemID"] = 20410,			-- Hallowed Wand - Bat
