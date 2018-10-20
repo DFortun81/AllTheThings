@@ -8,33 +8,38 @@ _.Instances =
 		["groups"] = {
 			inst(321, { 	-- Mogu'shan Palace
 				["groups"] = {
-					d( 1, {	-- Normal
+					n(-17, {	-- Quests 						
+						q(31360, {	-- A New Lesson for the Master
+							["groups"] = {
+								i(87333),	-- Watchful Dreamer's Trousers
+								i(87334),	-- Dreamer's Vigil Leggings
+								i(87335),	-- Leggings of Clever Entrapment
+								i(87336),	-- Legplates of the Scattered Tribes
+								i(87337),	-- Deposer's Leggings
+								i(87338),	-- Leggings of the Empty Throne
+								i(87339),	-- Leggings of Forceful Instruction
+								i(87340),	-- Mogu Warlord Legguards
+								i(87341),	-- Weaponmaster's Legplates
+							},
+							["qg"] = 64432,	-- Sinan the Dreamer
+						}),
+						q(31357, {	-- Relics of the Four Kings
+							["groups"] = {
+								i(87342),	-- Subjugation Bracers
+								i(87343),	-- Bracers of Swift Wrath
+								i(87344),	-- Cuffs of the Endless Shadow
+								i(87345),	-- Bindings of Impeccable Strategy
+								i(87346),	-- Armbands of the Reawakened
+								i(87347),	-- Lost Heritage Bracers
+								i(87348),	-- Bracers of Inner Knowledge
+								i(87349),	-- Armplates of Martial Artistry
+								i(87350),	-- Poet-King's Vambraces
+							},
+							["qg"] = 64432,	-- Sinan the Dreamer
+						}),
+					}),
+					d(1, {	-- Normal
 						["groups"] = {
-							n(-17, {	-- Quests 						
-								q(31360, {	-- A New Lesson for the Master
-									i(87333),	-- Watchful Dreamer's Trousers
-									i(87334),	-- Dreamer's Vigil Leggings
-									i(87335),	-- Leggings of Clever Entrapment
-									i(87336),	-- Legplates of the Scattered Tribes
-									i(87337),	-- Deposer's Leggings
-									i(87338),	-- Leggings of the Empty Throne
-									i(87339),	-- Leggings of Forceful Instruction
-									i(87340),	-- Mogu Warlord Legguards
-									i(87341),	-- Weaponmaster's Legplates
-								}),
-								q(31357, {	-- Relics of the Four Kings
-									i(87342),	-- Subjugation Bracers
-									i(87343),	-- Bracers of Swift Wrath
-									i(87344),	-- Cuffs of the Endless Shadow
-									i(87345),	-- Bindings of Impeccable Strategy
-									i(87346),	-- Armbands of the Reawakened
-									i(87347),	-- Lost Heritage Bracers
-									i(87348),	-- Bracers of Inner Knowledge
-									i(87349),	-- Armplates of Martial Artistry
-									i(87350),	-- Poet-King's Vambraces
-								}),
-							}),
-							ach(6713),	-- Quarrelsome Quilen Quintet
 							cr(61444, e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
 								i(144020),	-- Crest of the Clan Lords	
 								i(144021),	-- Meteoric Greathelm
@@ -90,6 +95,7 @@ _.Instances =
 					d( 2, {	-- Heroic
 						["lvl"] = 90,
 						["groups"] = {
+							ach(6713),	-- Quarrelsome Quilen Quintet
 							cr(61444, e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
 								i(144020),	-- Crest of the Clan Lords	
 								i(144021),	-- Meteoric Greathelm
@@ -119,7 +125,6 @@ _.Instances =
 							})),
 							cr(61398, e(698, {	-- Xin the Weaponmaster
 								ach(6756),	-- Heroic: Mogu'shan Palace
-								ach(6755),	-- Mogu'shan Palace
 								ach(6736),	-- What Does This Button Do?
 								i(144150),	-- Ghostheart
 								i(144214),	-- Mogu'Dar, Blade of the Thousand Slaves
@@ -147,7 +152,6 @@ _.Instances =
 						},
 					}),
 					d(24, {	-- Timewalking
-						
 						["lvl"] = 85,
 						["groups"] = {
 							cr(61444, e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
@@ -184,7 +188,7 @@ _.Instances =
 				["mapID"] = 453,
 				["maps"] = { 454, 455 },
 			}),
-		},					
-		["tierID"] = 5
+		},
+		["tierID"] = 5,
 	},
 };
