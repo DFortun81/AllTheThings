@@ -130,11 +130,11 @@ _.Holidays =
 								["g"] = {
 									{	-- Hallowed Wand - Abomination
 										["itemID"] = 116851,	-- Hallowed Wand - Abomination
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Banshee
 										["itemID"] = 139004,	-- Hallowed Wand - Banshee
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Bat
 										["itemID"] = 20410,			-- Hallowed Wand - Bat
@@ -144,11 +144,11 @@ _.Holidays =
 									},
 									{	-- Hallowed Wand - Gargoyle
 										["itemID"] = 128645,	-- Hallowed Wand - Gargoyle
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Geist
 										["itemID"] = 116853,	-- Hallowed Wand - Geist
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ghost
 										["itemID"] = 20409,			-- Hallowed Wand - Ghost
@@ -158,7 +158,7 @@ _.Holidays =
 									},
 									{	-- Hallowed Wand - Ghoul
 										["itemID"] = 116850,	-- Hallowed Wand - Ghoul
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Leper Gnome
 										["itemID"] = 20399,			-- Hallowed Wand - Leper Gnome
@@ -168,7 +168,7 @@ _.Holidays =
 									},
 									{	-- Hallowed Wand - Nerubian
 										["itemID"] = 128646,	-- Hallowed Wand - Nerubian
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ninja
 										["itemID"] = 20398,			-- Hallowed Wand - Ninja
@@ -191,15 +191,15 @@ _.Holidays =
 									},
 									{	-- Hallowed Wand - Slime
 										["itemID"] = 116848,	-- Hallowed Wand - Slime
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Spider
 										["itemID"] = 116854,	-- Hallowed Wand - Spider
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Wight
 										["itemID"] = 128644,	-- Hallowed Wand - Wight
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,		s	-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Wisp
 										["itemID"] = 20414,			-- Hallowed Wand - Wisp
@@ -832,11 +832,11 @@ _.Holidays =
 								["g"] = {
 									{	-- Hallowed Wand - Abomination
 										["itemID"] = 116851,	-- Hallowed Wand - Abomination
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Banshee
 										["itemID"] = 139004,	-- Hallowed Wand - Banshee
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Bat
 										["itemID"] = 20410,			-- Hallowed Wand - Bat
@@ -846,11 +846,11 @@ _.Holidays =
 									},
 									{	-- Hallowed Wand - Gargoyle
 										["itemID"] = 128645,	-- Hallowed Wand - Gargoyle
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Geist
 										["itemID"] = 116853,	-- Hallowed Wand - Geist
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ghost
 										["itemID"] = 20409,			-- Hallowed Wand - Ghost
@@ -860,7 +860,7 @@ _.Holidays =
 									},
 									{	-- Hallowed Wand - Ghoul
 										["itemID"] = 116850,	-- Hallowed Wand - Ghoul
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Leper Gnome
 										["itemID"] = 20399,			-- Hallowed Wand - Leper Gnome
@@ -870,7 +870,7 @@ _.Holidays =
 									},
 									{	-- Hallowed Wand - Nerubian
 										["itemID"] = 128646,	-- Hallowed Wand - Nerubian
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ninja
 										["itemID"] = 20398,			-- Hallowed Wand - Ninja
@@ -893,15 +893,15 @@ _.Holidays =
 									},
 									{	-- Hallowed Wand - Slime
 										["itemID"] = 116848,	-- Hallowed Wand - Slime
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Spider
 										["itemID"] = 116854,	-- Hallowed Wand - Spider
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,				-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Wight
 										["itemID"] = 128644,	-- Hallowed Wand - Wight
-										["u"] = 26,			-- Hallow's End Filter
+										["u"] = 26,		s	-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Wisp
 										["itemID"] = 20414,			-- Hallowed Wand - Wisp
