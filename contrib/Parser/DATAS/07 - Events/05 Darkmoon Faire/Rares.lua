@@ -40,6 +40,7 @@ _.WorldEvents =
 					},
 					["achievementID"] = 11918, -- Hey, You're A Rockstar!
 					["questID"] = 47767,
+					["repeatable"] = true,
 					["description"] = "|cff66ccffDeath Metal Knight can be killed every hour on the half-hour, however, he will not drop his rare loot more than once per month per character.|r"
 				}),
 				n(71992, { -- Moonfang
@@ -48,6 +49,7 @@ _.WorldEvents =
 							["groups"] = {
 							},
 							["questID"] = 33354, -- Den Mother's Demise
+							["repeatable"] = true,
 						})),
 						dr(5.0, i(101570)), -- Moon Moon
 						dr(21.0, i(101571)), -- Moonfang Shroud

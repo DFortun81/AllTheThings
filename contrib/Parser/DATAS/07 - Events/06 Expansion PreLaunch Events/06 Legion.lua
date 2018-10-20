@@ -136,7 +136,7 @@ _.WorldEvents =
 							["qg"] = 114562, -- Khadgar's Upgraded Servant
 							["sourceQuests"] = { 44500 }, -- Author! Author!
 						}),								
-						q(43301, { -- Invasion: Azshara
+						un(40, q(43301, { -- Invasion: Azshara
 							["groups"] = {
 								i(139048, { -- Small Legion Chest
 									un(3, i(141597)), -- Corrupted Argus Gavel
@@ -245,8 +245,8 @@ _.WorldEvents =
 									}),
 								}),	
 							},
-						}),
-						q(43284, { -- Invasion: Dun Morogh
+						})),
+						un(40, q(43284, { -- Invasion: Dun Morogh
 							["groups"] = {
 								i(139048, { -- Small Legion Chest
 									un(3, i(141597)), -- Corrupted Argus Gavel
@@ -355,8 +355,8 @@ _.WorldEvents =
 									}),
 								}),	
 							},
-						}),
-						q(43285, { -- Invasion: Hillsbrad Foothills
+						})),
+						un(40, q(43285, { -- Invasion: Hillsbrad Foothills
 							["groups"] = {
 								i(139048, { -- Small Legion Chest
 									un(3, i(141597)), -- Corrupted Argus Gavel
@@ -465,8 +465,8 @@ _.WorldEvents =
 									}),
 								}),	
 							},
-						}),
-						q(43282, { -- Invasion: Northern Barrens
+						})),
+						un(40, q(43282, { -- Invasion: Northern Barrens
 							["groups"] = {
 								i(139048, { -- Small Legion Chest
 									un(3, i(141597)), -- Corrupted Argus Gavel
@@ -575,8 +575,8 @@ _.WorldEvents =
 									}),
 								}),	
 							},
-						}),
-						q(43244, { -- Invasion: Tanaris
+						})),
+						un(40, q(43244, { -- Invasion: Tanaris
 							["groups"] = {
 								i(139048, { -- Small Legion Chest
 									un(3, i(141597)), -- Corrupted Argus Gavel
@@ -685,8 +685,8 @@ _.WorldEvents =
 									}),
 								}),	
 							},
-						}),
-						q(43245, { -- Invasion: Westfall
+						})),
+						un(40, q(43245, { -- Invasion: Westfall
 							["groups"] = {
 								i(139048, { -- Small Legion Chest
 									un(3, i(141597)), -- Corrupted Argus Gavel
@@ -795,7 +795,7 @@ _.WorldEvents =
 									}),
 								}),	
 							},
-						}),
+						})),
 						q(42970, { -- The Diamond King
 							["groups"] = {
 							},
