@@ -137,8 +137,10 @@ _.Holidays =
 										["u"] = 26,			-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Bat
-										["itemID"] = 20410,	-- Hallowed Wand - Bat
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20410,			-- Hallowed Wand - Bat
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 1,			-- Transformed by Hallowed Wand - Bat
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Gargoyle
 										["itemID"] = 128645,	-- Hallowed Wand - Gargoyle
@@ -149,32 +151,43 @@ _.Holidays =
 										["u"] = 26,			-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ghost
-										["itemID"] = 20409,	-- Hallowed Wand - Ghost
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20409,			-- Hallowed Wand - Ghost
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 2,			-- Transformed by Hallowed Wand - Ghost
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ghoul
 										["itemID"] = 116850,	-- Hallowed Wand - Ghoul
 										["u"] = 26,			-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Leper Gnome
-										["itemID"] = 20399,	-- Hallowed Wand - Leper Gnome
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20399,			-- Hallowed Wand - Leper Gnome
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 3,			-- Transformed by Hallowed Wand - Leper Gnome
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Nerubian
 										["itemID"] = 128646,	-- Hallowed Wand - Nerubian
 										["u"] = 26,			-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ninja
-										["itemID"] = 20398,	-- Hallowed Wand - Ninja
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20398,			-- Hallowed Wand - Ninja
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 4,			-- Transformed by Hallowed Wand - Ninja
+										["achievementID"] = 283,	-- The Masquerade
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Pirate
-										["itemID"] = 20397,	-- Hallowed Wand - Pirate
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20397,			-- Hallowed Wand - Pirate
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 5,			-- Transformed by Hallowed Wand - Pirate
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Skeleton
-										["itemID"] = 20411,	-- Hallowed Wand - Skeleton
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20411,			-- Hallowed Wand - Skeleton
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 6,			-- Transformed by Hallowed Wand - Skeleton
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Slime
 										["itemID"] = 116848,	-- Hallowed Wand - Slime
@@ -189,8 +202,10 @@ _.Holidays =
 										["u"] = 26,			-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Wisp
-										["itemID"] = 20414,	-- Hallowed Wand - Wisp
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20414,			-- Hallowed Wand - Wisp
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 7,			-- Transformed by Hallowed Wand - Wisp
+										["u"] = 26,					-- Hallow's End Filter
 									},
 								},
 							},
@@ -295,6 +310,201 @@ _.Holidays =
 										["achievementID"] = 1656,	-- Hallowed Be Thy Name
 										["criteriaID"] = 5,			-- Trick or Treat!
 										["u"] = 26,			-- Hallow's End Filter
+									},
+								},
+							},
+						},
+					},
+					{	-- Farina [Masks // H - Undercity // Spanky]
+						["npcID"] = 53760,	-- Farina
+						["races"] = HORDE_ONLY,
+						--["itemID"] = 33226,	-- Tricky Treats Note!! Currency used to buy items
+						--Note!! Commented out because it currently merges all vendors into one that use this as a currency.  Eww!
+						["coords"] = {
+							{ 62.33, 66.47 },
+						},
+						["maps"] = {
+							18,	-- Tirisfal Glades	Note!! While technically under UC this is where the map swaps.
+						},
+						["g"] = {
+							{	-- Tricky Treats
+								["itemID"] = 33226,-- Tricky Treats
+								["g"] = {
+									{	-- Blood Elf Female Mask
+										["itemID"] = 34000,			-- Blood Elf Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 1,			-- Blood Elf Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Blood Elf Male Mask
+										["itemID"] = 34002,			-- Blood Elf Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 2,			-- Blood Elf Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Draenei Female Mask
+										["itemID"] = 34001,			-- Draenei Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 3,			-- Draenei Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Draenei Male Mask
+										["itemID"] = 34003,			-- Draenei Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 4,			-- Draenei Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Dwarf Female Mask
+										["itemID"] = 20562,			-- Dwarf Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 5,			-- Dwarf Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Dwarf Male Mask
+										["itemID"] = 20561,			-- Dwarf Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 6,			-- Dwarf Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Gnome Female Mask
+										["itemID"] = 20392,			-- Gnome Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 7,			-- Gnome Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Gnome Male Mask
+										["itemID"] = 20391,			-- Gnome Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 8,			-- Gnome Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Goblin Female Mask
+										["itemID"] = 49212,			-- Goblin Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 9,			-- Goblin Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Goblin Male Mask
+										["itemID"] = 49210,			-- Goblin Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 10,		-- Goblin Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Human Female Mask
+										["itemID"] = 20565,			-- Human Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 11,		-- Human Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Human Male Mask
+										["itemID"] = 20566,			-- Human Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 12,		-- Human Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Murloc Female Mask
+										["itemID"] = 69187,			-- Murloc Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Murloc Male Mask
+										["itemID"] = 69188,			-- Murloc Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Naga Female Mask
+										["itemID"] =  69189,		-- Naga Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Naga Male Mask
+										["itemID"] = 69190,			-- Naga Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Night Elf Female Mask
+										["itemID"] = 20563,			-- Night Elf Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 13,		-- Night Elf Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Night Elf Male Mask
+										["itemID"] = 20564,			-- Night Elf Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 14,		-- Night Elf Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Ogre Female Mask
+										["itemID"] = 69192,			-- Ogre Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Ogre Male Mask
+										["itemID"] = 69193,			-- Ogre Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Orc Female Mask
+										["itemID"] = 20569,			-- Orc Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 15,		-- Orc Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Orc Male Mask
+										["itemID"] = 20570,			-- Orc Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 16,		-- Orc Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Tauren Female Mask
+										["itemID"] = 20571,			-- Tauren Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 17,		-- Tauren Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Tauren Male Mask
+										["itemID"] = 20572,			-- Tauren Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 18,		-- Tauren Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Troll Female Mask
+										["itemID"] = 20567,			-- Troll Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 19,		-- Troll Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Troll Male Mask
+										["itemID"] = 20568,			-- Troll Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 20,		-- Troll Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Undead Female Mask
+										["itemID"] = 20574,			-- Undead Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 21,		-- Undead Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Undead Male Mask
+										["itemID"] = 20573,			-- Undead Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 22,		-- Undead Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Vrykul Female Mask
+										["itemID"] = 69194,			-- Vrykul Femalae Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Vrykul Male Mask
+										["itemID"] = 69195,			-- Vrykul Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Worgen Female Mask
+										["itemID"] = 49215,			-- Worgen Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 23,		-- Worgen Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Worgen Male Mask
+										["itemID"] = 49216,			-- Worgen Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 24,		-- Worgen Male Mask
+										["u"] = 26,					-- Hallow's End Filter
 									},
 								},
 							},
@@ -410,6 +620,201 @@ _.Holidays =
 							},
 						},
 					},
+					{	-- Spanky [Masks // A - Elywnn // Farina]
+						["npcID"] = 52497,	-- Spanky
+						["races"] = ALLIANCE_ONLY,
+						--["itemID"] = 33226,	-- Tricky Treats Note!! Currency used to buy items
+						--Note!! Commented out because it currently merges all vendors into one that use this as a currency.  Eww!
+						["coords"] = {
+							{ 31.81, 50.01 },
+						},
+						["maps"] = {
+							37,	-- Elwynn Forestt
+						},
+						["g"] = {
+							{	-- Tricky Treats
+								["itemID"] = 33226,-- Tricky Treats
+								["g"] = {
+									{	-- Blood Elf Female Mask
+										["itemID"] = 34000,			-- Blood Elf Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 1,			-- Blood Elf Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Blood Elf Male Mask
+										["itemID"] = 34002,			-- Blood Elf Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 2,			-- Blood Elf Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Draenei Female Mask
+										["itemID"] = 34001,			-- Draenei Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 3,			-- Draenei Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Draenei Male Mask
+										["itemID"] = 34003,			-- Draenei Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 4,			-- Draenei Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Dwarf Female Mask
+										["itemID"] = 20562,			-- Dwarf Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 5,			-- Dwarf Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Dwarf Male Mask
+										["itemID"] = 20561,			-- Dwarf Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 6,			-- Dwarf Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Gnome Female Mask
+										["itemID"] = 20392,			-- Gnome Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 7,			-- Gnome Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Gnome Male Mask
+										["itemID"] = 20391,			-- Gnome Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 8,			-- Gnome Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Goblin Female Mask
+										["itemID"] = 49212,			-- Goblin Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 9,			-- Goblin Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Goblin Male Mask
+										["itemID"] = 49210,			-- Goblin Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 10,		-- Goblin Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Human Female Mask
+										["itemID"] = 20565,			-- Human Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 11,		-- Human Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Human Male Mask
+										["itemID"] = 20566,			-- Human Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 12,		-- Human Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Murloc Female Mask
+										["itemID"] = 69187,			-- Murloc Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Murloc Male Mask
+										["itemID"] = 69188,			-- Murloc Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Naga Female Mask
+										["itemID"] =  69189,		-- Naga Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Naga Male Mask
+										["itemID"] = 69190,			-- Naga Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Night Elf Female Mask
+										["itemID"] = 20563,			-- Night Elf Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 13,		-- Night Elf Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Night Elf Male Mask
+										["itemID"] = 20564,			-- Night Elf Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 14,		-- Night Elf Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Ogre Female Mask
+										["itemID"] = 69192,			-- Ogre Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Ogre Male Mask
+										["itemID"] = 69193,			-- Ogre Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Orc Female Mask
+										["itemID"] = 20569,			-- Orc Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 15,		-- Orc Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Orc Male Mask
+										["itemID"] = 20570,			-- Orc Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 16,		-- Orc Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Tauren Female Mask
+										["itemID"] = 20571,			-- Tauren Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 17,		-- Tauren Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Tauren Male Mask
+										["itemID"] = 20572,			-- Tauren Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 18,		-- Tauren Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Troll Female Mask
+										["itemID"] = 20567,			-- Troll Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 19,		-- Troll Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Troll Male Mask
+										["itemID"] = 20568,			-- Troll Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 20,		-- Troll Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Undead Female Mask
+										["itemID"] = 20574,			-- Undead Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 21,		-- Undead Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Undead Male Mask
+										["itemID"] = 20573,			-- Undead Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 22,		-- Undead Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Vrykul Female Mask
+										["itemID"] = 69194,			-- Vrykul Femalae Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Vrykul Male Mask
+										["itemID"] = 69195,			-- Vrykul Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Worgen Female Mask
+										["itemID"] = 49215,			-- Worgen Female Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 23,		-- Worgen Female Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+									{	-- Worgen Male Mask
+										["itemID"] = 49216,			-- Worgen Male Mask
+										["achievementID"] = 284,	-- A Mask For All Occasions
+										["criteriaID"] = 24,		-- Worgen Male Mask
+										["u"] = 26,					-- Hallow's End Filter
+									},
+								},
+							},
+						},
+					},
 					{	-- Stymie [Wands // A - Elwynn // Darla]
 						["npcID"] = 53702,	-- Stymie
 						["races"] = ALLIANCE_ONLY,
@@ -434,8 +839,10 @@ _.Holidays =
 										["u"] = 26,			-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Bat
-										["itemID"] = 20410,	-- Hallowed Wand - Bat
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20410,			-- Hallowed Wand - Bat
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 1,			-- Transformed by Hallowed Wand - Bat
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Gargoyle
 										["itemID"] = 128645,	-- Hallowed Wand - Gargoyle
@@ -446,32 +853,43 @@ _.Holidays =
 										["u"] = 26,			-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ghost
-										["itemID"] = 20409,	-- Hallowed Wand - Ghost
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20409,			-- Hallowed Wand - Ghost
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 2,			-- Transformed by Hallowed Wand - Ghost
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ghoul
 										["itemID"] = 116850,	-- Hallowed Wand - Ghoul
 										["u"] = 26,			-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Leper Gnome
-										["itemID"] = 20399,	-- Hallowed Wand - Leper Gnome
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20399,			-- Hallowed Wand - Leper Gnome
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 3,			-- Transformed by Hallowed Wand - Leper Gnome
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Nerubian
 										["itemID"] = 128646,	-- Hallowed Wand - Nerubian
 										["u"] = 26,			-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Ninja
-										["itemID"] = 20398,	-- Hallowed Wand - Ninja
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20398,			-- Hallowed Wand - Ninja
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 4,			-- Transformed by Hallowed Wand - Ninja
+										["achievementID"] = 283,	-- The Masquerade
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Pirate
-										["itemID"] = 20397,	-- Hallowed Wand - Pirate
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20397,			-- Hallowed Wand - Pirate
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 5,			-- Transformed by Hallowed Wand - Pirate
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Skeleton
-										["itemID"] = 20411,	-- Hallowed Wand - Skeleton
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20411,			-- Hallowed Wand - Skeleton
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 6,			-- Transformed by Hallowed Wand - Skeleton
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Slime
 										["itemID"] = 116848,	-- Hallowed Wand - Slime
@@ -486,8 +904,10 @@ _.Holidays =
 										["u"] = 26,			-- Hallow's End Filter
 									},
 									{	-- Hallowed Wand - Wisp
-										["itemID"] = 20414,	-- Hallowed Wand - Wisp
-										["u"] = 26,			-- Hallow's End Filter
+										["itemID"] = 20414,			-- Hallowed Wand - Wisp
+										["achievementID"] = 283,	-- The Masquerade
+										["criteriaID"] = 7,			-- Transformed by Hallowed Wand - Wisp
+										["u"] = 26,					-- Hallow's End Filter
 									},
 								},
 							},

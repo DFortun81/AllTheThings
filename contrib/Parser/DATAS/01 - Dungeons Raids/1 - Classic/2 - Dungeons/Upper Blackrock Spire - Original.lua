@@ -121,11 +121,13 @@ _.Instances =
 							["description"] = "This is a rare that is not always present.",
 						}),
 						n(10899, { 	-- Goraluk Anvilcrack
+							--[[
 							n(-3, { -- Holidays
 								n(-61, { -- Winter Veil
 									ig(21525), -- Green Winter Hat
 								}),
 							}),
+							--]]
 							i(18779, { 	-- Bottom Half of Advanced Armorsmithing: Volume 1
 								["groups"] = {
 									i(18769, { 	-- Enchanted Thorium Platemail [Item was removed from the game and turned into gray item Torn Scroll]

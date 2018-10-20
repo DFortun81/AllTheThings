@@ -97,3 +97,11 @@ i(37604);	-- Tooth Pick
 i(20567);	-- Troll Female Mask
 i(20568);	-- Troll Male Mask
 i(34068);	-- Weighted Jack-o'-Lantern
+i(69187);	-- Murloc Female Mask
+i(69188);	-- Murloc Male Mask
+i(69189);	-- Naga Female Mask
+i(69190);	-- Naga Male Mask
+i(69192);	-- Ogre Female Mask
+i(69193);	-- Ogre Male Mask
+i(69194);	-- Vrykul Female Mask
+i(69195);	-- Vrykul Male Mask
