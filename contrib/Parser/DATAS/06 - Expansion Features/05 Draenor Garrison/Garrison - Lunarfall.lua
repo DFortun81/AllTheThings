@@ -2324,10 +2324,53 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-					n(-111, { 	-- Lumber Mill
-						q(36385, {
-							i(115506), -- Toy
-						}),
+					garrisonBuilding(138, { 	 -- Lumber Mill
+						{
+							["questID"] = 36189,	-- Easing into Lumberjacking
+							["qg"] = 84248,	-- Justin Timberlord <Work Orders>
+						},
+						{
+							["questID"] = 36192,	-- Turning Timber into Profit
+							["sourceQuest"] = 36189,	-- Easing into Lumberjacking
+							["qg"] = 84248,	-- Justin Timberlord <Work Orders>
+						},
+						{
+							["questID"] = 36448,	-- Reduction in Force
+							["sourceQuest"] = 36429,	-- The Rise and Fall of Barov Industries: Weldon Barov
+							["qg"] = 85413,	-- Weldon Barov <Barov Industries>
+							["groups"] = {
+								i(116154),	-- Barov Lumberjack Caller
+							},
+						},
+						{
+							["questID"] = 36194,	-- Sharper Blades, Bigger Timber
+							["qg"] = 84248,	-- Justin Timberlord <Work Orders>
+						},
+						{
+							["questID"] = 36429,	-- The Rise and Fall of Barov Industries: Weldon Barov
+							["qg"] = 85378,	-- Weldon Barov <Barov Industries>
+							["description"] = "Weldon Barov is found at 73.7, 64.0 in Talador. He is stuck under a log and it seems you need lumber mill to be able to get him out of there.",
+							["groups"] = {
+								follower(195),	-- Weldon Barov / Alexi Barov
+							},
+						},
+						{
+							["questID"] = 36195,	-- Tree-i-cide
+							["qg"] = 84248,	-- Justin Timberlord <Work Orders>
+						},
+						{
+							["npcID"] = 85199,	-- Petrified Ancient
+							["description"] = "These will appear as nodes on your mini-map as trees do after you have built your Level 2 Lumber Mill.",
+							["groups"] = {
+								{
+									["itemID"] = 115467,	-- Barkskin Tome
+									["questID"] = 36385,	-- Legacy of the Ancients
+									["groups"] = {
+										i(115506),	-- Treessassin's Guise
+									},
+								},
+							},
+						},
 					}),
 					n(-128, { 	-- Lunarfall Inn
 						desc(i(119036, { -- Box of Storied Treasures [4]

@@ -3623,10 +3623,52 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-					n(-111, { 	 -- Lumber Mill
-						q(36385, {
-							i(115506), -- Toy
-						}),
+					garrisonBuilding(138, { 	 -- Lumber Mill
+						{
+							["questID"] = 36137,	-- Easing into Lumberjacking
+							["qg"] = 84247,	-- Lumber Lord Oktron <Work Orders>
+						},
+						{
+							["questID"] = 36138,	-- Turning Timber into Profit
+							["sourceQuest"] = 36137,	-- Easing into Lumberjacking
+							["qg"] = 84247,	-- Lumber Lord Oktron <Work Orders>
+						},
+						{
+							["questID"] = 36449,	-- Reduction in Force
+							["qg"] = 85414,	-- Alexi Barov <Barov Industries>
+							["groups"] = {
+								i(116154),	-- Barov Lumberjack Caller
+							},
+						},
+						{
+							["questID"] = 36142,	-- Sharper Blades, Bigger Timber
+							["qg"] = 84247,	-- Lumber Lord Oktron <Work Orders>
+						},
+						{
+							["questID"] = 36427,	-- The Rise and Fall of Barov Industries: Alexi Barov
+							["qg"] = 85379,	-- Alexi Barov <Barov Industries>
+							["description"] = "Alexi Barov is found at 51.30, 61.98 in Gorgrond. He is stuck under a log and it seems you need lumber mill to be able to get him out of there.",
+							["groups"] = {
+								follower(195),	-- Weldon Barov / Alexi Barov
+							},
+						},
+						{
+							["questID"] = 36182,	-- Tree-i-cide
+							["qg"] = 84247,	-- Lumber Lord Oktron <Work Orders>
+						},
+						{
+							["npcID"] = 85199,	-- Petrified Ancient
+							["description"] = "These will appear as nodes on your mini-map as trees do after you have built your Level 2 Lumber Mill.",
+							["groups"] = {
+								{
+									["itemID"] = 115467,	-- Barkskin Tome
+									["questID"] = 36385,	-- Legacy of the Ancients
+									["groups"] = {
+										i(115506),	-- Treessassin's Guise
+									},
+								},
+							},
+						},
 					}),
 					n(-99, { 	 -- Stables
 						qh(37041, {
