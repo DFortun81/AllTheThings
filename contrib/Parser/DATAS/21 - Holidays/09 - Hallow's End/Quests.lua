@@ -25,6 +25,7 @@ _.Holidays =
 						["maps"] = {
 							641,	--  Val'sharah
 						},
+						["u"] = 26,				-- Hallow's End Filter
 						["g"] = {
 							{	-- Hag's Belongings
 								["itemID"] = 139137,	-- Hag's Belongings
@@ -133,6 +134,181 @@ _.Holidays =
 							},
 						},
 					},
+					--Dailes!! UC
+					{	-- Clean Up in Undercity
+						["questID"] = 29375,	-- Clean Up in Undercity
+						["repeatable"] = true,
+						["isDaily"] = true,
+						["qg"] = 53763,			-- Candace Fenlow
+						["coords"] = {
+							{ 62.42, 66.71 },
+						},
+						["maps"] = {
+							18,	-- Tirisfal Glades
+						},
+						["u"] = 26,				-- Hallow's End Filter
+						["g"] = {
+							{	-- Tricky Treat
+								["itemID"] = 33226,	-- Tricky Treat
+							},
+						},
+					},
+					{	-- Stink Bombs Away!
+						["questID"] = 29374,	--- Stink Bombs Away!
+						["repeatable"] = true,
+						["isDaily"] = true,
+						["qg"] = 53763,			-- Candace Fenlow
+						["coords"] = {
+							{ 62.42, 66.71 },
+						},
+						["maps"] = {
+							18,	-- Tirisfal Glades
+						},
+						["g"] = {
+							{	-- Tricky Treat
+								["itemID"] = 33226,	-- Tricky Treat
+							},
+						},
+					},
+					--Quests!! UC
+					{	-- Hallow's End Treats for Spoops!
+						["questID"] = 8312,	-- Hallow's End Treats for Spoops!
+						["repeatable"] = true,
+						["isDaily"] = true,
+						["qg"] = 15309,			-- Spoops
+						["coords"] = {
+							{ 62.13, 66.44 },
+						},
+						["maps"] = {
+							18,	-- Tirisfal Glades
+						},
+						["races"] = HORDE_ONLY,
+						["u"] = 26,				-- Hallow's End Filter
+						["g"] = {
+							{	-- Tricky Treat
+								["itemID"] = 33226,	-- Tricky Treat
+							},
+						},
+					},
+					--Save Village from Headless Horseman
+					{	-- Fire Training [Durotaur]
+						["questID"] = 11361,	-- Fire Training
+						["qg"] = 23973,			-- Masked Oprhan Matron
+						["repeatable"] = true,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 52.58, 41.21 },	-- Durotaur
+							{ 47.21, 46.61 },	-- Eversong Woods
+							{ 60.81, 53.61 },	-- Tirisfal Glades
+						},
+						["maps"] = {
+							1,	-- Durotaur
+							94,	-- Eversong Woods
+							18,	-- Tirisfal Glades
+						},
+						["races"] = HORDE_ONLY,
+						["u"] = 26,				-- Hallow's End Filter
+						["g"] = {
+							{	-- Tricky Treat
+								["itemID"] = 33226,	-- Tricky Treat
+							},
+						},
+					},
+					{	-- Fire Training [Elwynn Forest]
+						["questID"] = 11450,	-- Fire Training
+						["qg"] = 23973,			-- Masked Oprhan Matron
+						["repeatable"] = true,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 52.58, 41.21 },	-- Durotaur
+							{ 47.21, 46.61 },	-- Eversong Woods
+							{ 60.81, 53.61 },	-- Tirisfal Glades
+						},
+						["maps"] = {
+							1,	-- Durotaur
+							94,	-- Eversong Woods
+							18,	-- Tirisfal Glades
+						},
+						["races"] = HORDE_ONLY,
+						["u"] = 26,				-- Hallow's End Filter
+						["g"] = {
+							{	-- Tricky Treat
+								["itemID"] = 33226,	-- Tricky Treat
+							},
+						},
+					},
+					{	-- Fire Training [Tirisfal Glades]
+						["questID"] = 11449,	-- Fire Training
+						["qg"] = 23973,			-- Masked Oprhan Matron
+						["repeatable"] = true,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 52.58, 41.21 },	-- Durotaur
+						},
+						["maps"] = {
+							1,	-- Durotaur
+						},
+						["races"] = HORDE_ONLY,
+						["u"] = 26,				-- Hallow's End Filter
+						["g"] = {
+							{	-- Tricky Treat
+								["itemID"] = 33226,	-- Tricky Treat
+							},
+						},
+					},
+					{	-- "Let the Fires Come!"
+						["questID"] = 12139,	-- "Let the Fires Come!"
+						["qg"] = 23973,			-- Masked Oprhan Matron
+						["repeatable"] = true,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 47.21, 46.61 },	-- Eversong Woods
+						},
+						["maps"] = {
+							94,	-- Eversong Woods
+						},
+						["races"] = HORDE_ONLY,
+						["u"] = 26,				-- Hallow's End Filter
+						["g"] = {
+							{	-- Hallow's End Pumpkin Treat
+								["itemID"] = 20557,	-- Hallow's End Pumpkin Treat
+								["u"] = 26,			-- Hallow's End Filter
+							},
+							{	-- Weighted Jack-o'Lantern
+								["itemID"] = 34068,			-- Weighted Jack-o'-Lantern
+								["achievementID"] = 1656,	-- Hallowed Be Thy Name
+								["criteriaID"] = 8,			-- Check Your Head
+								["u"] = 26,			-- Hallow's End Filter
+							},
+						},
+					},
+					{	-- Stop the Fires!
+						["questID"] = 11219,	-- Stop the Fires!
+						["qg"] = 23973,			-- Masked Oprhan Matron
+						["repeatable"] = true,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 60.81, 53.61 },	-- Tirisfal Glades
+						},
+						["maps"] = {
+							18,	-- Tirisfal Glades
+						},
+						["races"] = HORDE_ONLY,
+						["u"] = 26,				-- Hallow's End Filter
+						["g"] = {
+							{	-- Hallow's End Pumpkin Treat
+								["itemID"] = 20557,	-- Hallow's End Pumpkin Treat
+								["u"] = 26,			-- Hallow's End Filter
+							},
+							{	-- Weighted Jack-o'Lantern
+								["itemID"] = 34068,			-- Weighted Jack-o'-Lantern
+								["achievementID"] = 1656,	-- Hallowed Be Thy Name
+								["criteriaID"] = 8,			-- Check Your Head
+								["u"] = 26,			-- Hallow's End Filter
+							},
+						},
+					},
+					
 					q(29430, { -- A Friend in Need (Alliance)
 						["qg"] = 51934,	-- Gretchen Fenlow
 						["maps"] = { 37 }, -- Elwynn Forest

@@ -19,7 +19,6 @@ _.WorldEvents =
 						},
 						["collectible"] = false,
 					})),
-					-- http://wowwiki.wikia.com/wiki/Elemental_Unrest
 					un(3, ach(4887, { -- Tripping the Rifts
 						["groups"] = {
 							-- NOTE: NPCs are unrelated to the achievement.

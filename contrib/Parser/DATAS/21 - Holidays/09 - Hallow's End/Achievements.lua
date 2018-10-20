@@ -24,58 +24,65 @@ _.Holidays =
 								["achievementID"] = 291,	-- Check Your Head
 								["u"] = 26,					-- Hallow's End Filter
 								["g"] = {
-									{	-- Weighted Jack-o'Lantern
-										["itemID"] = 34068,			-- Weighted Jack-o'-Lantern
-										["achievementID"] = 1656,	-- Hallowed Be Thy Name
-										["criteriaID"] = 8,			-- Check Your Head
-									},
 									{	-- Blood Elf
 										["achievementID"] = 291,	-- Check Your Head
 										["criteriaID"] = 1,			-- Blood Elf
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Draenei
 										["achievementID"] = 291,	-- Check Your Head
 										["criteriaID"] = 2,			-- Draenei
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Dwarf
 										["achievementID"] = 291,	-- Check Your Head
 										["criteriaID"] = 3,			-- Dwarf
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Gnome
 										["achievementID"] = 291,	-- Check Your Head
 										["criteriaID"] = 4,			-- Gnome
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Goblin
 										["achievementID"] = 291,	-- Check Your Head
 										["criteriaID"] = 5,			-- Goblin
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Human
 										["achievementID"] = 291,	-- Check Your Head
 										["criteriaID"] = 6,			-- Human
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Night Elf
 										["achievementID"] = 291,	-- Check Your Head
 										["criteriaID"] = 7,			-- Night Elf
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Orc
 										["achievementID"] = 291,	-- Check Your Head
 										["criteriaID"] = 8,			-- Orc
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Tauren
 										["achievementID"] = 291,	-- Check Your Head
 										["criteriaID"] = 9,			-- Tauren
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Troll
 										["achievementID"] = 291,	-- Check Your Head
 										["criteriaID"] = 10,		-- Troll
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Undead
 										["achievementID"] = 291,	-- Check Your Head
 										["criteriaID"] = 11,		-- Undead
+										["u"] = 26,					-- Hallow's End Filter
 									},
 									{	-- Worgen
 										["achievementID"] = 291,	-- Check Your Head
 										["criteriaID"] = 12,		-- Worgen
+										["u"] = 26,					-- Hallow's End Filter
 									},
 								},
 							},

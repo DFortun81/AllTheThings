@@ -31,11 +31,6 @@ _.Zones =
 					qh( 29377),	-- A Time to Break Down
 					qh( 29376),	-- A Time to Build Up
 					qh( 27277),	-- An Audience with Ureda
-					q(24636),	-- Bonbon Blitz
-					qh( 11446),	-- Brewfest!
-					qh( 12368),	-- Candy Bucket
-					qh(  8354),	-- Chicken Clucking for a Mint
-					qh( 29375),	-- Clean Up in Undercity
 					qh( 38395),	-- Completionism
 					qh( 27334),	-- Dark Cleric Cecille
 					q(8648),	-- Darkcore the Elder

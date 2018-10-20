@@ -21,11 +21,26 @@ _.Zones =
 					}),
 				}),
 				n(-25, {	-- Pet Battle
-					p(459), 	-- Cat
-					p(460), 	-- Ruby Sapling
-					p(419), 	-- Small Frog
-					p(387), 	-- Snake
-					p(420),		-- Toad
+					{	-- Cat
+						["speciesID"] = 459,	-- Cat
+						["crs"] = { 62019 },	-- Cat
+					},
+					{	-- Ruby Sapling
+						["speciesID"] = 460,	-- Ruby Sapling
+						["crs"] = { 62020 },	-- Ruby Sapling
+					},
+					{	-- Small Frog
+						["speciesID"] = 419,	-- Small Frog
+						["crs"] = { 61071 },	-- Small Frog
+					},
+					{	-- Snake
+						["speciesID"] = 387,	-- Snake
+						["crs"] = { 61142 },	-- Snake
+					},
+					{	-- Toad
+						["speciesID"] = 420,	-- Toad
+						["crs"] = { 61369 },	-- Toad
+					},
 					n(63080, {	-- Jarson Eversong
 						["groups"] = {
 							p(75, {		-- Black Kingsnake
