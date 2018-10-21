@@ -43,6 +43,7 @@ _.ExpansionFeatures =
 					},
 					{	-- Boulderfist Beatdown [A]
 						["questID"] = 53146, 	-- Boulderfist Beatdown
+						["repeatable"] = true,
 						["sourceQuests"] = {
 							53198,	-- Back to Boralus
 						},
@@ -60,11 +61,12 @@ _.ExpansionFeatures =
 							},
 						},
 					},
-					qh(53148, {	-- Boulderfist Beatdown [H]
+					qr( qh(53148, {	-- Boulderfist Beatdown [H]
 						currency(1560),
-					}),
+					})),
 					{	-- Death to the Defilers
 						["questID"] = 53153, 	-- Death to the Defilers
+						["repeatable"] = true,
 						["sourceQuests"] = {
 							53198,	-- Back to Boralus
 						},
@@ -137,6 +139,7 @@ _.ExpansionFeatures =
 					},
 					{	-- Executing Exorcisms [A]
 						["questID"] = 53179, 	-- Executing Exorcisms
+						["repeatable"] = true,
 						["sourceQuests"] = {
 							53198,	-- Back to Boralus
 						},
@@ -154,11 +157,12 @@ _.ExpansionFeatures =
 							},
 						},
 					},
-					qh(53179, {	-- Executing Exorcisms [H]
+					qr( qh(53179, {	-- Executing Exorcisms [H]
 						currency(1553),
-					}),
+					})),
 					{	-- Sins of the Syndicate [A]
 						["questID"] = 53162, 	-- Sins of the Syndicate
+						["repeatable"] = true,
 						["sourceQuests"] = {
 							53198,	-- Back to Boralus
 						},
@@ -176,9 +180,9 @@ _.ExpansionFeatures =
 							},
 						},
 					},
-					qh(53173, {	-- Sins of the Syndicate [H]
+					qr( qh(53173, {	-- Sins of the Syndicate [H]
 						currency(1560),
-					}),
+					})),
 					qh(53210, {	-- Touring the Front [H]
 						["sourceQuests"] = { 53208 },	-- To The Front
 						["qg"] = 143019,	-- Wistel Sliversnitch
@@ -198,6 +202,7 @@ _.ExpansionFeatures =
 					},
 					{	-- Twice-Exiled [A]
 						["questID"] = 53192, 	-- Twice-Exiled
+						["repeatable"] = true,
 						["sourceQuests"] = {
 							53198,	-- Back to Boralus
 						},
@@ -215,10 +220,10 @@ _.ExpansionFeatures =
 							},
 						},
 					},
-					qh(53192, {	-- Twice-Exiled [H]
+					qr( qh(53192, {	-- Twice-Exiled [H]
 						currency(1560),
-					}),
-					qh(53154, {	-- The League Will Lose [H]
+					})),
+					qr( qh(53154, {	-- The League Will Lose [H]
 						i(164577, {	-- Warfronts Equipment Cache
 							["groups"] = bubbleDown({["modID"] = 5}, {
 								i(163878),	-- Honorbound Barrier
@@ -274,9 +279,10 @@ _.ExpansionFeatures =
 								i(163460),	-- Honorbound Centurion's Greaves
 							}),
 						}),
-					}),
+					})),
 					{	-- Wiping Out the Winterbark [A]
 						["questID"] = 53149, 	-- Wiping Out the Winterbark
+						["repeatable"] = true,
 						["sourceQuests"] = {
 							53198,	-- Back to Boralus
 						},
@@ -294,9 +300,9 @@ _.ExpansionFeatures =
 							},
 						},
 					},
-					qh(53150, {	-- Wiping Out the Winterbark [H]
+					qr( qh(53150, {	-- Wiping Out the Winterbark [H]
 						currency(1560),
-					}),
+					})),
 				
 				},
 			}),
