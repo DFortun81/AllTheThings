@@ -4060,12 +4060,31 @@ app.BaseHeirloom = {
 		elseif key == "collected" then
 			if C_Heirloom.PlayerHasHeirloom(t.itemID) or (t.s and t.s > 0 and GetDataSubMember("CollectedSources", t.s)) then return 1; end
 			if t.factionID then
-				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
-				if select(15, GetFactionInfoByID(t.factionID)) then
-					SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
-					SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
-					return 1;
+				if t.repeatable then
+					-- This is used by reputation tokens.
+					if app.GetDataMember("TrackFactionsAccountWide") then
+						if GetDataSubMember("CollectedFactions", t.factionID) then
+							return 1;
+						end
+					else
+						if GetTempDataSubMember("CollectedFactions", t.factionID) then
+							return 1;
+						end
+					end
+					
+					if select(1, GetFriendshipReputation(t.factionID)) and not select(9, GetFriendshipReputation(t.factionID)) or select(3, GetFactionInfoByID(t.factionID)) == 8 then
+						SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+						SetDataSubMember("CollectedFactions", t.factionID, 1);
+						return 1;
+					end
+				else
+					-- This is used for the Grand Commendations unlocking Bonus Reputation
+					if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
+					if select(15, GetFactionInfoByID(t.factionID)) then
+						SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+						SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+						return 1;
+					end
 				end
 			end
 		elseif key == "f" then
@@ -4295,10 +4314,38 @@ app.BaseItem = {
 		if key == "key" then
 			return "itemID";
 		elseif key == "collectible" then
-			return t.s or (t.questID and not t.repeatable and GetDataMember("TreatQuestsAsCollectible"));
+			return t.s or (t.questID and not t.repeatable and GetDataMember("TreatQuestsAsCollectible")) or t.factionID;
 		elseif key == "collected" then
 			if t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s) then
 				return 1;
+			end
+			if t.factionID then
+				if t.repeatable then
+					-- This is used by reputation tokens.
+					if app.GetDataMember("TrackFactionsAccountWide") then
+						if GetDataSubMember("CollectedFactions", t.factionID) then
+							return 1;
+						end
+					else
+						if GetTempDataSubMember("CollectedFactions", t.factionID) then
+							return 1;
+						end
+					end
+					
+					if select(1, GetFriendshipReputation(t.factionID)) and not select(9, GetFriendshipReputation(t.factionID)) or select(3, GetFactionInfoByID(t.factionID)) == 8 then
+						SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+						SetDataSubMember("CollectedFactions", t.factionID, 1);
+						return 1;
+					end
+				else
+					-- This is used for the Grand Commendations unlocking Bonus Reputation
+					if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
+					if select(15, GetFactionInfoByID(t.factionID)) then
+						SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+						SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+						return 1;
+					end
+				end
 			end
 			return t.saved;
 		elseif key == "text" then

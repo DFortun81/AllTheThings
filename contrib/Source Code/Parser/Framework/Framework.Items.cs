@@ -570,6 +570,9 @@ namespace Parser_V2
                     case "races":
                     case "specs":
                     case "sourceQuests":
+                    case "repeatable":
+                    case "isWeekly":
+                    case "isDaily":
                         {
                             data[field] = value;
                             break;
