@@ -958,6 +958,9 @@ _.Zones =
 							["dr"] = 1.0,
 						},
 					}),
+					n(72761, {	-- Windfeather Nestkeeper
+						dr(0.4, i(104231)),	-- Technique: Glyph of Inspired Hymns
+					}),
 					n(72245, {	-- Zesqua
 						{
 							["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
@@ -1654,6 +1657,41 @@ _.Zones =
 						i(101797),	-- Cliffbreaker Sabatons
 						i(101859),	-- Elder Tortoiseshell Sabatons
 						i(101825),	-- Everbright Sabatons
+					}),
+					i(104345, {	-- Timeless Lavalliere
+						i(103982, { -- Burden of Eternity
+							i(101894),	-- Amaranthine Necklace [Timeless]
+							i(101884),	-- Cliffbreaker Neck [Timeless]
+							i(101944),	-- Elder Tortoiseshell Neck [Timeless]
+							i(101936),	-- Kiln-Stoker Collar [Timeless]
+							i(101916),	-- Warmsun Choker [Timeless]
+						}),
+						i(101805),	-- Amaranthine Necklace
+						i(101795),	-- Cliffbreaker Choker
+						i(101857),	-- Elder Tortoiseshell Gorget
+						i(101849),	-- Kiln-Stoker Collar
+						i(101827),	-- Warmsun Choker
+					}),
+					i(102291, {	-- Timeless Signet
+						i(103982, { -- Burden of Eternity
+							i(101898),	-- Amaranthine Signet [Timeless]
+							i(101887),	-- Cliffbreaker Seal [Timeless]
+							i(101947),	-- Elder Tortoiseshell Seal [Timeless]
+							i(101937),	-- Kiln-Stoker Ring [Timeless]
+							i(101918),	-- Warmsun Ring [Timeless]
+						}),
+						i(101809),	-- Amaranthine Signet
+						i(101798),	-- Cliffbreaker Seal
+						i(101860),	-- Elder Tortoiseshell Seal
+						i(101850),	-- Kiln-Stoker Ring
+						i(101829),	-- Warmsun Ring
+					}),
+					i(104347, {	-- Timeless Curio
+						i(103689),	-- Alacrity of Xuen
+						i(103688),	-- Contemplation of Chi-Ji
+						i(103686),	-- Discipline of Xuen
+						i(103690),	-- Resolve of Niuzao
+						i(103687),	-- Yu'lon's Bite
 					}),
 				}),
 			},
