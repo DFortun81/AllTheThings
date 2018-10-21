@@ -974,6 +974,20 @@ _.Zones =
 						i(97209),	-- Static-Collecting Cloak
 						i(95524),	-- Thunder Caressed Waistguard
 						i(97208),	-- Thunder-Chaser Cloak
+						{
+							["itemID"] = 95491,	-- Tattered Historical Parchments
+							["description"] = "Those parchments drops are inside Chests inside solo scenario which is accessible after getting Key to the Palace of Lei Shen.\n\nMight only be obtainable by Rogues through their class hall...",
+							["groups"] = {
+								{
+									["itemID"] = 95487,	-- Sunreaver Onslaught Insignia
+									["factionID"] = 1388,	-- Sunreaver Onslaught
+								},
+								{
+									["itemID"] = 95488,	-- Greater Sunreaver Onslaught Insignia
+									["factionID"] = 1388,	-- Sunreaver Onslaught
+								},
+							},
+						},
 					})),
 				}),
 			},
