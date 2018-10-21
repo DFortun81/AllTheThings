@@ -50,17 +50,17 @@ _.WorldEvents =
 							i(122338),	-- Ancient Heirloom Armor Casing
 							i(122339),	-- Ancient Heirloom Scabbard
 							i(143947),	-- Commendation of Emperor Shaohao
-							i(143944),	-- Commendation of Operation: Shieldwall
+							a(i(143944)),	-- Commendation of Operation: Shieldwall
 							i(143946),	-- Commendation of The Anglers
 							i(143938),	-- Commendation of The August Celestials
-							i(143943),	-- Commendation of the Dominance Offensive
+							h(i(143943)),	-- Commendation of the Dominance Offensive
 							i(143937),	-- Commendation of the Golden Lotus
-							i(143940),	-- Commendation of the Kirin Tor Offensive
+							a(i(143940)),	-- Commendation of the Kirin Tor Offensive
 							i(143935),	-- Commendation of The Klaxxi
 							i(143942),	-- Commendation of the Order of the Cloud Serpent
 							i(143936),	-- Commendation of the Shado-Pan
 							i(143945),	-- Commendation of the Shado-Pan Assault
-							i(143939),	-- Commendation of the Sunreaver Onslaught
+							h(i(143939)),	-- Commendation of the Sunreaver Onslaught
 							i(143941),	-- Commendation of The Tillers
 							i(122340),	-- Timeworn Heirloom Armor Casing
 							i(122341),	-- Timeworn Heirloom Scabbard

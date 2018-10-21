@@ -194,7 +194,7 @@ _.Zones =
 										["sourceQuests"] = { 49440 },	-- Blood Troll on the Outside
 									}),	
 									q(49081, {	-- To Kill a Loa
-										["qroups"] = {
+										["groups"] = {
 											i(155325),	-- Death-Pledged Helm
 											i(155313),	-- Deateh-Pleged Chestguard
 										},
