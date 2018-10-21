@@ -700,6 +700,14 @@ _.Holidays =
 						["u"] = 2,			-- Removed BoP Filter
 						--Note!! Removed in 4.0.1 [Cataclysm Pre-Patch]
 					},
+					{	-- The Horseman's Blade (i115 // i80 // L70
+						["itemID"] = 38175,	-- The Horseman's Blade
+						["u"] = 2,			-- Removed BoP Filter
+					},
+					{	-- The Horseman's Helm (i110 // i77 // L70)
+						["itemID"] = 33808,	-- The Horseman's Helm
+						["u"] = 2,			-- Removed BoP Filter
+					},
 					{	-- Ring of Ghoulish Delight (i110 // i77 // L70)
 						["itemID"] = 34075,	-- Ring of Ghoulish Delight
 						["u"] = 2,			-- Removed BoP Filter
@@ -713,6 +721,14 @@ _.Holidays =
 						["u"] = 2,			-- Removed BoP Filter
 					},
 					-- Wrath of the Lich King Rings
+					{	-- The Horseman's Baleful Blade (i200 // i100 // L80)
+						["itemID"] = 49128,	-- The Horseman's Baleful Blade
+						["u"] = 2,			-- Removed BoP Filter
+					},
+					{	-- The Horseman's Horrific Helm (i200 // i100 // L80)
+						["itemID"] = 49126,	-- The Horseman's Horrific Helm
+						["u"] = 2,			-- Removed BoP Filter
+					},
 					{	-- Ring of Ghoulish Glee (i200 // i100 // L80)
 						["itemID"] = 49121,	-- Ring of Ghoulish Glee
 						["u"] = 2,			-- Removed BoP Filter
