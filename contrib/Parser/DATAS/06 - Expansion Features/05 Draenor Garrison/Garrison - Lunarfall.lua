@@ -2347,6 +2347,14 @@ _.ExpansionFeatures =
 							["qg"] = 84248,	-- Justin Timberlord <Work Orders>
 						},
 						{
+							["questID"] = 36813, -- Subversive Infestation
+							["qg"] = 84889, -- Phylarch the Evergreen
+							["description"] = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
+							["groups"] = {
+								i(117398), -- Everbloom Seed Pouch
+							},
+						},
+						{
 							["questID"] = 36429,	-- The Rise and Fall of Barov Industries: Weldon Barov
 							["qg"] = 85378,	-- Weldon Barov <Barov Industries>
 							["description"] = "Weldon Barov is found at 73.7, 64.0 in Talador. He is stuck under a log and it seems you need lumber mill to be able to get him out of there.",
@@ -3581,12 +3589,6 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 37156 }, -- The Soulcutter
 							["modID"] = 2,
 							["repeatable"] = true,
-						}),
-						q(36813, {	-- Subversive Infestation -- Quest will be offered by the Follower Phylarch the Green at the Lumber Mill Level 3. To get him as Follower you need to complete the Lumber Mill Quest Line.
-							["groups"] = {
-								i(117398), -- Everbloom Seed Pouch
-							},
-							["qg"] = 84889, -- Phylarch the Evergreen
 						}),
 						q(37155, { 	-- The Brass Compass
 							["groups"] = {

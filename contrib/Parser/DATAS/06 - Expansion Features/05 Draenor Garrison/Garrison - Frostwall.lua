@@ -3516,12 +3516,6 @@ _.ExpansionFeatures =
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
-						q(36813, {	-- Subversive Infestation -- Quest will be offered by the Follower Phylarch the Green at the Lumber Mill Level 3. To get him as Follower you need to complete the Lumber Mill Quest Line.
-							["groups"] = {
-								i(117398), -- Everbloom Seed Pouch
-							},
-							["qg"] = 84889, -- Phylarch the Evergreen
-						}),
 						q(37155, { 	-- The Brass Compass
 							["groups"] = {
 								i(118925), -- Plundered Booty
@@ -3643,6 +3637,14 @@ _.ExpansionFeatures =
 						{
 							["questID"] = 36142,	-- Sharper Blades, Bigger Timber
 							["qg"] = 84247,	-- Lumber Lord Oktron <Work Orders>
+						},
+						{
+							["questID"] = 36813, -- Subversive Infestation
+							["qg"] = 84889, -- Phylarch the Evergreen
+							["description"] = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
+							["groups"] = {
+								i(117398), -- Everbloom Seed Pouch
+							},
 						},
 						{
 							["questID"] = 36427,	-- The Rise and Fall of Barov Industries: Alexi Barov
