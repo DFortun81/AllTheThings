@@ -1385,183 +1385,274 @@ _.Holidays =
 					}),
 				},
 			}),
-			n(54519, { 	-- Winter Veil Tree
-				q(8744, { 	-- A Carefully Wrapped Present
-					["groups"] = {
-						i(21191, { -- Carefully Wrapped Present
-							un(29, dr(5.0, i(116451))),	-- Warm Blue Woolen Socks
-							un(29, dr(5.0, i(116450))),	-- Warm Green Woolen Socks
-							un(29, dr(5.0, i(116448))),	-- Warm Red Woolen Socks
-						}),
-					},
-					["lvl"] = 1,
-				}),
-				q(8803),	-- A Festive Gift
-				q(8768, { 	-- A Gaily Wrapped Present
-					i(21310, { -- Gaily Wrapped Present
-						["groups"] = {
-							un(29, i(21301)), -- Green Helper Box
-							un(29, i(21308)), -- Jingling Bell
-							un(29, i(21305)), -- Red Helper Box
-							un(29, i(21309)), -- Snowman Kit
-						},
-						["lvl"] = 20,
+			n(-7776, { 	-- Winter Revelers
+				["description"] = "Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",
+				["crs"] = {
+					22998,	-- Blood Elf Female Winter Reveler
+					22999,	-- Blood Elf Male Winter Reveler
+					23001,	-- Draenei Female Winter Reveler
+					23000,	-- Draenei Male Winter Reveler
+					15783,	-- Dwarf Female Winter Reveler
+					15782,	-- Dwarf Male Winter Reveler
+					23006,	-- Gnome Female Winter Reveler
+					23005,	-- Gnome Male Winter Reveler
+					15787,	-- Goblin Female Winter Reveler
+					15795,	-- Goblin Male Winter Reveler
+					15781,	-- Human Female Winter Reveler
+					15780,	-- Human Male Winter Reveler
+					15784,	-- Night Elf Female Winter Reveler
+					15794,	-- Night Elf Male Winter Reveler
+					15786,	-- Orc Female Winter Reveler
+					15791,	-- Orc Male Winter Reveler
+					96349,	-- Pandaren Female Winter Reveler
+					96348,	-- Pandaren Male Winter Reveler
+					15789,	-- Tauren Female Winter Reveler
+					15793,	-- Tauren Male Winter Reveler
+					15785,	-- Troll Female Winter Reveler
+					15792,	-- Troll Male Winter Reveler
+					15788,	-- Undead Female Winter Reveler
+					15790,	-- Undead Male Winter Reveler
+					15760,	-- Winter Reveler
+				},
+				["groups"] = {
+					i(21212, {	-- Fresh Holly
+						ach(1282),	-- Fa-la-la-la-Ogri'la
 					}),
-				}),
-				q(50420, { 	-- A Gently Shaken Gift
-					["groups"] = {
-						i(21270, { -- Gently Shaken Gift
-							["groups"] = {
-								un(29, i(116692)), -- Fuzzy Green Lounge Cushion
-								un(29, i(116689)), -- Pineapple Lounge Cushion
-								un(29, i(116690)), -- Safarai Lounge Cushion
-								un(29, i(116691)), -- Zhevra Lounge Cusion
+					{
+						["itemID"] = 34191,	-- Handful of Snowflakes
+						["groups"] = bubbleDown(
+							{
+								["achievementID"] = 1687,	-- Let It Snow
 							},
-							["description"] = "Gift from 2014 and was given to anyone who wasn't a spell caster.",
-							["questID"] = 8767,
-						}),
-						i(21271, { -- Gently Shaken Gift
-							["groups"] = {
-								un(29, i(116692)), -- Fuzzy Green Lounge Cushion
-								un(29, i(116689)), -- Pineapple Lounge Cushion
-								un(29, i(116690)), -- Safarai Lounge Cushion
-								un(29, i(116691)), -- Zhevra Lounge Cusion
-							},
-							["description"] = "Gift from 2014 and was given to spell casters.",
-							["questID"] = 8788,
-						}),
-						i(128652, { -- Gently Shaken Gift
-							["groups"] = {
-								un(29, i(116692)), -- Fuzzy Green Lounge Cushion
-								un(29, i(116689)), -- Pineapple Lounge Cushion
-								un(29, i(128776)), -- Red Wooden Sled
-								un(29, i(116690)), -- Safarai Lounge Cushion
-								un(29, i(116691)), -- Zhevra Lounge Cusion
-							},
-							["description"] = "Gift from 2015.",
-							
-							["questID"] = 39658,
-						}),
-						i(139343, { -- Gently Shaken Gift
-							["groups"] = {
-								un(29, i(139337)), -- Disposable Winter Veil Suits
-								un(29, i(116692)), -- Fuzzy Green Lounge Cushion
-								un(29, i(116689)), -- Pineapple Lounge Cushion
-								un(29, i(128776)), -- Red Wooden Sled
-								un(29, i(116690)), -- Safarai Lounge Cushion
-								un(29, i(116691)), -- Zhevra Lounge Cusion
-							},
-							["description"] = "Gift from 2016.",
-							
-							["questID"] = 43364,
-						}),
-						i(151345, { -- Gently Shaken Gift
-							["groups"] = {
-								un(29, h(i(151344))), -- Hearthstation [Horde]
-								un(29, a(i(151343))), -- Hearthstation [Alliance]
-							},
-							["description"] = "Gift from 2017.  You will receive only one factions Hearthstation.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-							["questID"] = 43364,
-						}),
+							{
+								crit(1), -- Orc Death Knight
+								crit(2), -- Human Warrior
+								crit(3), -- Tauren Shaman
+								crit(4), -- Night Elf Druid
+								crit(5), -- Undead Rogue
+								crit(6), -- Troll Hunter
+								crit(7), -- Gnome Mage
+								crit(8), -- Dwarf Paladin
+								crit(9), -- Blood Elf Warlock
+								crit(10), -- Draenei Priest
+							}
+						),
 					},
-					["lvl"] = 10,
-				}),
-				q(8769, { 	-- A Ticking Present
-					["groups"] = {
-						i(21327, { -- Ticking Present
-							i(17709), -- Recipe: Elixir of Frost Power
-							i(17722), -- Pattern: Gloves of the Greatfather
-							i(17724), -- Pattern: Green Holiday Shirt
-							i(17706), -- Plans: Edge of Winter
-							i(17720), -- Schematic: Snowmaster 9000
-						}),
+					{
+						["itemID"] = 21519,	-- Mistletoe
+						["groups"] = merge(bubbleDown(
+							{
+								["achievementID"] = 1686,	-- Bros. Before Ho Ho Ho's (Alliance)
+								["races"] = ALLIANCE_ONLY,
+							},
+							{
+								crit(1), -- Brother Nimetz in Stranglethorn Vale
+								crit(2), -- Brother Wilhelm in Goldshire
+								crit(3), -- Brother Karman in Theramore
+								crit(4), --	Brother Kristoff in Stormwind
+								crit(5), -- Brother Joshua in Stormwind
+								crit(6), -- Brother Crowley in Stormwind
+								crit(7), -- Brother Cassius in Stormwind
+								crit(8), -- Brother Benjamin in Stormwind
+							}
+						),
+						bubbleDown(
+							{
+								["achievementID"] = 1685,	-- Bros. Before Ho Ho Ho's (Horde)
+								["races"] = HORDE_ONLY,
+							},
+							{
+								crit(1), -- Brother Malach in the Undercity
+								crit(2), -- Durkot Wolfbrother in Warsong Hold
+								crit(3), -- Brother Keltan in Icecrown
+							}
+						)),
 					},
-					["lvl"] = 40,
-				}),
-				q(47751, { 	-- A Winter Veil Gift
-					["groups"] = {
-						i(34426, { -- Winter Veil Gift
+				},
+			}),
+			n(54519, { 	-- Winter Veil Tree
+				["modelScale"] = 5,
+				["groups"] = {
+					q(8744, { 	-- A Carefully Wrapped Present
+						["groups"] = {
+							i(21191, { -- Carefully Wrapped Present
+								un(29, dr(5.0, i(116451))),	-- Warm Blue Woolen Socks
+								un(29, dr(5.0, i(116450))),	-- Warm Green Woolen Socks
+								un(29, dr(5.0, i(116448))),	-- Warm Red Woolen Socks
+							}),
+						},
+						["lvl"] = 1,
+					}),
+					q(8803),	-- A Festive Gift
+					q(8768, { 	-- A Gaily Wrapped Present
+						i(21310, { -- Gaily Wrapped Present
 							["groups"] = {
-								un(29, i(34425)), -- Clockwork Rocket Bot
+								un(29, i(21301)), -- Green Helper Box
+								un(29, i(21308)), -- Jingling Bell
+								un(29, i(21305)), -- Red Helper Box
+								un(29, i(21309)), -- Snowman Kit
 							},
-							["description"] = "Gift from 2007.",
-							["questID"] = 11528,
-							["u"] = 40, -- Legacy Quest/Quest Item
+							["lvl"] = 20,
 						}),
-						i(34426, { -- Winter Veil Gift
-							["groups"] = {
-								un(29, i(37710)), -- Crashin' Thrashin' Racer Controller
-							},
-							["description"] = "Gift from 2008.",
-							["questID"] = 13203,
-							["u"] = 40, -- Legacy Quest/Quest Item
-						}),
-						i(67443, { -- Winter Veil Gift
-							["groups"] = {
-								un(29, i(46709)), -- MiniZep Controller
-							},
-							["description"] = "Gift from 2010.",
-							["questID"] = 28878,
-							["u"] = 40, -- Legacy Quest/Quest Item
-						}),
-						i(70938, { -- Winter Veil Gift
-							["groups"] = {
-								un(29, i(70923)), -- Gaudy Winter Veil Sweater
-							},
-							["description"] = "Gift from 2011.",
-							["questID"] = 29385,
-							["u"] = 40, -- Legacy Quest/Quest Item
-						}),
-						i(90892, { -- Winter Veil Gift
-							["groups"] = {
-								un(29, i(90888)), -- Foot Ball
-								un(29, i(90883)), -- The Pigskin
-							},
-							["description"] = "Gift from 2012.",
-							["questID"] = 32106,
-							["u"] = 40, -- Legacy Quest/Quest Item
-						}),
-						i(104319, { -- Winter Veil Gift
-							["groups"] = {
-								un(29, i(104318)), -- Crashin' Thrashin' Flyer Controller
-							},
-							["description"] = "Gift from 2013.",
-							["questID"] = 33252,
-							["u"] = 40, -- Legacy Quest/Quest Item
-						}),
-						i(116761, { -- Winter Veil Gift
-							["groups"] = {
-								un(29, i(116763)), -- Crashin' Thrashin' Shredder Controller
-							},
-							["description"] = "Gift from 2014.",
-							["questID"] = 36617,
-							["u"] = 40, -- Legacy Quest/Quest Item
-						}),
-						i(128653, { -- Winter Veil Gift
-							["groups"] = {
-								un(29, i(108632)), -- Crashin' Thrashin' Flamer Controller
-							},
-							["description"] = "Gift from 2015.",
-							["questID"] = 39659,
-						}),
-						i(139341, { -- Winter Veil Gift
-							["groups"] = {
-								un(29, i(128636)), -- Endothermic Blaster
-							},
-							["description"] = "Gift from 2016.",
-							["questID"] = 43363,
-						}),
-						i(151350, { -- Winter Veil Gift
-							["groups"] = {
-								un(29, a(i(151349))), -- Toy Weapon Set [Alliance]
-								un(29, h(i(151348))), -- Toy Weapon Set [Horde]
-							},
-							["description"] = "Gift from 2017. You will receive only one factions Hearthstation.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-							["questID"] = 47751,
-						}),
-					},
-					["lvl"] = 10,
-				}),
+					}),
+					q(50420, { 	-- A Gently Shaken Gift
+						["groups"] = {
+							i(21270, { -- Gently Shaken Gift
+								["groups"] = {
+									un(29, i(116692)), -- Fuzzy Green Lounge Cushion
+									un(29, i(116689)), -- Pineapple Lounge Cushion
+									un(29, i(116690)), -- Safarai Lounge Cushion
+									un(29, i(116691)), -- Zhevra Lounge Cusion
+								},
+								["description"] = "Gift from 2014 and was given to anyone who wasn't a spell caster.",
+								["questID"] = 8767,
+							}),
+							i(21271, { -- Gently Shaken Gift
+								["groups"] = {
+									un(29, i(116692)), -- Fuzzy Green Lounge Cushion
+									un(29, i(116689)), -- Pineapple Lounge Cushion
+									un(29, i(116690)), -- Safarai Lounge Cushion
+									un(29, i(116691)), -- Zhevra Lounge Cusion
+								},
+								["description"] = "Gift from 2014 and was given to spell casters.",
+								["questID"] = 8788,
+							}),
+							i(128652, { -- Gently Shaken Gift
+								["groups"] = {
+									un(29, i(116692)), -- Fuzzy Green Lounge Cushion
+									un(29, i(116689)), -- Pineapple Lounge Cushion
+									un(29, i(128776)), -- Red Wooden Sled
+									un(29, i(116690)), -- Safarai Lounge Cushion
+									un(29, i(116691)), -- Zhevra Lounge Cusion
+								},
+								["description"] = "Gift from 2015.",
+								
+								["questID"] = 39658,
+							}),
+							i(139343, { -- Gently Shaken Gift
+								["groups"] = {
+									un(29, i(139337)), -- Disposable Winter Veil Suits
+									un(29, i(116692)), -- Fuzzy Green Lounge Cushion
+									un(29, i(116689)), -- Pineapple Lounge Cushion
+									un(29, i(128776)), -- Red Wooden Sled
+									un(29, i(116690)), -- Safarai Lounge Cushion
+									un(29, i(116691)), -- Zhevra Lounge Cusion
+								},
+								["description"] = "Gift from 2016.",
+								
+								["questID"] = 43364,
+							}),
+							i(151345, { -- Gently Shaken Gift
+								["groups"] = {
+									un(29, h(i(151344))), -- Hearthstation [Horde]
+									un(29, a(i(151343))), -- Hearthstation [Alliance]
+								},
+								["description"] = "Gift from 2017.  You will receive only one factions Hearthstation.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
+								["questID"] = 43364,
+							}),
+						},
+						["lvl"] = 10,
+					}),
+					q(8769, { 	-- A Ticking Present
+						["groups"] = {
+							i(21327, { -- Ticking Present
+								i(17709), -- Recipe: Elixir of Frost Power
+								i(17722), -- Pattern: Gloves of the Greatfather
+								i(17724), -- Pattern: Green Holiday Shirt
+								i(17706), -- Plans: Edge of Winter
+								i(17720), -- Schematic: Snowmaster 9000
+								i(21213, {	-- Preserved Holly
+									ach(1282),	-- Fa-la-la-la-Ogri'la
+								}),
+							}),
+						},
+						["lvl"] = 40,
+					}),
+					q(47751, { 	-- A Winter Veil Gift
+						["groups"] = {
+							i(34426, { -- Winter Veil Gift
+								["groups"] = {
+									un(29, i(34425)), -- Clockwork Rocket Bot
+								},
+								["description"] = "Gift from 2007.",
+								["questID"] = 11528,
+								["u"] = 40, -- Legacy Quest/Quest Item
+							}),
+							i(34426, { -- Winter Veil Gift
+								["groups"] = {
+									un(29, i(37710)), -- Crashin' Thrashin' Racer Controller
+								},
+								["description"] = "Gift from 2008.",
+								["questID"] = 13203,
+								["u"] = 40, -- Legacy Quest/Quest Item
+							}),
+							i(67443, { -- Winter Veil Gift
+								["groups"] = {
+									un(29, i(46709)), -- MiniZep Controller
+								},
+								["description"] = "Gift from 2010.",
+								["questID"] = 28878,
+								["u"] = 40, -- Legacy Quest/Quest Item
+							}),
+							i(70938, { -- Winter Veil Gift
+								["groups"] = {
+									un(29, i(70923)), -- Gaudy Winter Veil Sweater
+								},
+								["description"] = "Gift from 2011.",
+								["questID"] = 29385,
+								["u"] = 40, -- Legacy Quest/Quest Item
+							}),
+							i(90892, { -- Winter Veil Gift
+								["groups"] = {
+									un(29, i(90888)), -- Foot Ball
+									un(29, i(90883)), -- The Pigskin
+								},
+								["description"] = "Gift from 2012.",
+								["questID"] = 32106,
+								["u"] = 40, -- Legacy Quest/Quest Item
+							}),
+							i(104319, { -- Winter Veil Gift
+								["groups"] = {
+									un(29, i(104318)), -- Crashin' Thrashin' Flyer Controller
+								},
+								["description"] = "Gift from 2013.",
+								["questID"] = 33252,
+								["u"] = 40, -- Legacy Quest/Quest Item
+							}),
+							i(116761, { -- Winter Veil Gift
+								["groups"] = {
+									un(29, i(116763)), -- Crashin' Thrashin' Shredder Controller
+								},
+								["description"] = "Gift from 2014.",
+								["questID"] = 36617,
+								["u"] = 40, -- Legacy Quest/Quest Item
+							}),
+							i(128653, { -- Winter Veil Gift
+								["groups"] = {
+									un(29, i(108632)), -- Crashin' Thrashin' Flamer Controller
+								},
+								["description"] = "Gift from 2015.",
+								["questID"] = 39659,
+							}),
+							i(139341, { -- Winter Veil Gift
+								["groups"] = {
+									un(29, i(128636)), -- Endothermic Blaster
+								},
+								["description"] = "Gift from 2016.",
+								["questID"] = 43363,
+							}),
+							i(151350, { -- Winter Veil Gift
+								["groups"] = {
+									un(29, a(i(151349))), -- Toy Weapon Set [Alliance]
+									un(29, h(i(151348))), -- Toy Weapon Set [Horde]
+								},
+								["description"] = "Gift from 2017. You will receive only one factions Hearthstation.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
+								["questID"] = 47751,
+							}),
+						},
+						["lvl"] = 10,
+					}),
+				},
 			}),
 		}),
 	}),

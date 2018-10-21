@@ -411,6 +411,15 @@ exclude = function(data, t)
 	end
 	return t2;
 end
+merge = function(...)
+	local t = {};
+	for i,groups in ipairs({...}) do
+		for j,o in ipairs(groups) do
+			table.insert(t, o);
+		end
+	end
+	return t;
+end
 
 -- SHORTCUTS for Object Class Types
 artifact = function(id, t)								-- Create an ARTIFACT Object

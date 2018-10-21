@@ -666,7 +666,7 @@ AllTheThings.Locales.enUS = {
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",				-- Cities
 		[-6015] = "Interface\\Icons\\battleground_strongbox_gold_horde",		-- Rewards
 		
-		
+		[-7776] = "Interface\\Icons\\INV_Helm_Cloth_Holiday_Christmas_A_03",	-- Winter Revelers (for Winter Veil)
 		[-7777] = "Interface\\Icons\\INV_Misc_Basket_05",
 		[-7778] = "Interface\\Icons\\INV_Misc_Bag_28_Halloween",
 		[-7779] = "Interface\\Icons\\inv_misc_treasurechest03a",
@@ -1517,7 +1517,8 @@ AllTheThings.Locales.enUS = {
 		[-6013] = FACTION,															-- Faction
 		[-6014] = BUG_CATEGORY4,													-- Cities
 		[-6015] = GUILD_TAB_REWARDS,												-- Rewards
-
+		
+		[-7776] = "Winter Revelers",												-- Winter Revelers (for Winter Veil)
 		[-7777] = "Timed Event",
 		[-7778] = "First Chest",
 		[-7779] = "Second Chest",
@@ -1688,7 +1689,7 @@ AllTheThings.Locales.enUS = {
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
 		[-10069] = "Mag'har Orc",
 		
-		--9000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
+		--90000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
 		
 		[-90000] = "Lunarwing Shallows",
 		[-90001] = "Lostlight Grotto",
