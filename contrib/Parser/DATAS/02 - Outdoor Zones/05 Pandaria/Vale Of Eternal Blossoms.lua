@@ -129,7 +129,34 @@ _.Zones =
 						desc(i(94933), "The Tiny Blue Carp can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms.|nAnother way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms.|r"),	-- Tiny Blue Carp Pet
 					}),
 				}),
-				n(-17, { 	-- Quests	
+				n(-17, { 	-- Quests
+					{
+						["allianceQuestID"] = 33229,	-- A Flash of Bronze...
+						["hordeQuestID"] = 33230,	-- A Flash of Bronze...
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
+						["isBreadcrumb"] = true,
+					},
+					un(1, {
+						["questID"] = 37188,	-- A Flash of Bronze...
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
+						["isBreadcrumb"] = true,
+					}),
+					un(1, {
+						["questID"] = 37194,	-- A Flash of Bronze...
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
+						["isBreadcrumb"] = true,
+					}),
+					{
+						["allianceQuestID"] = 33231,	-- Journey to the Timeless Isle
+						["hordeQuestID"] = 33232,	-- Journey to the Timeless Isle
+						["sourceQuests"] = {
+							33229,	-- A Flash of Bronze...
+							33230,	-- A Flash of Bronze...
+							37188,	-- A Flash of Bronze...
+							37194,	-- A Flash of Bronze...
+						},	
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
+					},
 					q(32806, {	-- The King and the Council
 						["qg"] = 61962,	-- Lorewalker Cho
 						["groups"] = {

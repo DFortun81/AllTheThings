@@ -6,6 +6,9 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(554, {	-- Timeless Isle
 			["groups"] = {
+				n(-4, { -- Achievement
+					ach(8730),	-- Rolo's Riddle
+				}),
 				n(-228, {	-- Flight Paths
 					fp(1294, { -- Huojin Landing, Timeless Isle
 						["coord"] = { 21.8, 39.8 },
@@ -26,52 +29,253 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
---[[			
-					q(33211),	-- A Timeless Question
-					q(33161),	-- A Timeless Tour
-					q(33337),	-- A Vision in Time
-					q(33378),	-- Courting Destiny
-					q(33342),	-- Drive Back The Flame
-					q(33338),	-- Empowering the Hourglass
-					q(33235),	-- Great Turtle Meat
-					q(33236),	-- Heavy Yak Flank
-					q(33377),	-- Hidden Threads
-					q(33332),	-- Hints From The Past
-					q(33232),	-- Journey to the Timeless Isle
-					q(33231),	-- Journey to the Timeless Isle
-					q(33222),	-- Little Tommy Newcomer
-					q(33234),	-- Meaty Crane Leg
---]]			
-					o(221376, {	-- Old Sign Fragment
-						q(33018),	-- Noodle Secrets Long Forgotten
+					{
+						["questID"] = 33211,	-- A Timeless Question
+						["qg"] = 73570,			-- Senior Historian Evelyna <The Timewalkers>
+						["isDaily"] = true,
+					},
+					{
+						["questID"] = 33161,	-- A Timeless Tour
+						["sourceQuests"] = {
+							33156,	-- Time Keeper Kairoz
+							33160,	-- Time Keeper Kairoz
+						},
+						["qg"] = 72870,	-- Kairoz
+					},
+					{
+						["questID"] = 33337,	-- A Vision in Time
+						["sourceQuest"] = 33338,	-- Empowering the Hourglass
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
+							{
+								["questID"] = 33337,	-- A Vision in Time
+								["itemID"] = 105930,	-- Vision of Time
+							},
+						},
+					},
+					{
+						["questID"] = 33378,	-- Courting Destiny
+						["sourceQuest"] = 33377,	-- Hidden Threads
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
+							{
+								["questID"] = 33378,	-- Courting Destiny
+								["itemID"] = 105934,	-- Vision of Time
+							},
+						},
+					},
+					{
+						["questID"] = 33342,	-- Drive Back The Flame
+						["sourceQuest"] = 33341,	-- Wayshrines Of The Celestials
+						["qg"] = 73303,	-- Emperor Shaohao
+					},
+					{
+						["questID"] = 33338,	-- Empowering the Hourglass
+						["sourceQuest"] = 33336,	-- The Essence of Time
+						["qg"] = 72870,	-- Kairoz
+						["isWeekly"] = true,
+					},
+					{
+						["questID"] = 33377,	-- Hidden Threads
+						["sourceQuest"] = 33376,	-- Seeking Fate
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
+							{
+								["questID"] = 33377,	-- Hidden Threads
+								["itemID"] = 105933,	-- Vision of Time
+							},
+						},
+					},
+					{
+						["questID"] = 33332,	-- Hints From The Past
+						["sourceQuest"] = 33228,	-- Time In Your Hands
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
+							i(103977),	-- Time-Worn Journal
+						},
+					},
+					{
+						["questID"] = 33222,	-- Little Tommy Newcomer
+						["qg"] = 73626,			-- Little Tommy Newcomer
+						["isDaily"] = true,
+					},
+					{
+						["objectID"] = 221376,	-- Old Sign Fragment
+						["questID"] = 33018,	-- Noodle Secrets Long Forgotten
+						["description"] = "To receive this quest you have to have completed the first quest from each Way of Cooking trainer",
+						["sourceQuests"] = {
+							31471,	-- Agile as a Tiger
+							31477,	-- Endurance
+							31480,	-- Have a Drink
+							31467,	-- Strong as a Tiger
+							31474,	-- The Soup of Contemplation
+							31476,	-- The Spirit of Cooking
+						},
+					},
+					{
+						["questID"] = 33379,	-- One Final Turn
+						["sourceQuest"] = 33378,	-- Courting Destiny
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
+							{
+								["questID"] = 33379,	-- One Final Turn
+								["itemID"] = 105935,	-- Vision of Time
+							},
+						},
+					},
+					{
+						["questID"] = 33374,	-- Path of the Mistwalker
+						["sourceQuest"] = 33341,	-- Wayshrines Of The Celestials
+						["qg"] = 73303,	-- Emperor Shaohao
+						["groups"] = {
+							i(103642),	-- Book of the Ages
+							i(103643),	-- Dew of Eternal Morning
+							i(103641),	-- Singing Crystal
+						},
+					},
+					{
+						["questID"] = 33375,	-- Refining The Vision
+						["sourceQuest"] = 33337,	-- A Vision in Time
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
+							{
+								["questID"] = 33375,	-- Refining The Vision
+								["itemID"] = 105931,	-- Vision of Time
+							},
+						},
+					},
+					{
+						["itemID"] = 102225,	-- Rolo's Riddle [Item]
+						["questID"] = 32974,	-- Rolo's Riddle [Quest]
+						["description"] = "Can be found in Glinting Sand. Solve the first clue by the stone columns.",
+						["coord"] = { 49.4, 69.4 },
+					},
+					{
+						["questID"] = 32975,	-- Rolo's Riddle [Part 2]
+						["sourceQuest"] = 32974,	-- Rolo's Riddle [Quest]
+						["description"] = "Solve the second clue at Three-Breeze Terrace.",
+						["qg"] = 72751,	-- Mound of Dirt
+						["coord"] = { 34.6, 26.7 },
+					},
+					{
+						["questID"] = 32976,	-- Rolo's Riddle [Part 3]
+						["sourceQuest"] = 32975,	-- Rolo's Riddle [Part 2]
+						["description"] = "The final treasure you're looking for is high up at the bloody lake where Garnia lives.\n\nTo get there use the Albatross Taxi Service: Move to 33.3 - 55.3 (the entrance of Celestial arena). Once there, check the sky and wait for a Highwind Albatross arriving. Hit the bird once then press Escape to stop autoattack. It will pick you up to the sky and transport above the whole isle.\n\nAt 64.5 - 27.5 above the Ruby Lake (the reddish tarn on the map) begin to attack your Albatross again. The bird will instantly dive and releases you as you kill it. Swim out of the red pool and go up to the tree. You'll find the final treasure right there.",
+						["coord"] = { 64.5, 27.5 },
+						["qg"] = 72755,	-- Rolo's Treasure
+						["crs"] = {
+							72754,	-- Mound of Dirt
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 8730,	-- Rolo's Riddle
+								["criteriaID"] = 1,	-- Rolo's Riddle Solved.
+							},
+							i(104013),	-- Timeless Cloth Armor Cache
+							i(104012),	-- Timeless Leather Armor Cache
+							i(104010),	-- Timeless Mail Armor Cache
+							i(104009),	-- Timeless Plate Armor Cache
+						},
+					},
+					{
+						["questID"] = 33376,	-- Seeking Fate
+						["sourceQuest"] = 33375,	-- Refining The Vision
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
+							{
+								["questID"] = 33376,	-- Seeking Fate
+								["itemID"] = 105932,	-- Vision of Time
+							},
+						},
+					},
+					{
+						["questID"] = 33334,	-- Strong Enough To Survive
+						["sourceQuest"] = 33333,	-- Timeless Treasures
+						["qg"] = 72870,	-- Kairoz
+						["isWeekly"] = true,
+					},
+					{
+						["questID"] = 33343,	-- The Archiereus Of Flame
+						["sourceQuests"] = {
+							33342,	-- Drive Back The Flame
+							33374,	-- Path of the Mistwalker
+						},
+						["qg"] = 73303,	-- Emperor Shaohao
+						["groups"] = {
+							i(103982),	-- Burden of Eternity
+						},
+					},
+					{
+						["questID"] = 33137,	-- The Celestial Tournament
+						["qg"] = 73082,			-- Master Li <Celestial Tournament Host>
+						["isWeekly"] = true,
+						["groups"] = {
+							i(101529),	-- Celestial Coin
+						},
+					},
+					{
+						["questID"] = 33336,	-- The Essence of Time
+						["sourceQuest"] = 33161,	-- A Timeless Tour
+						["qg"] = 72870,	-- Kairoz
+					},
+					{
+						["questID"] = 33335,	-- The Last Emperor
+						["sourceQuest"] = 33228,	-- Time In Your Hands
+						["qg"] = 72870,	-- Kairoz
+					},
+					{
+						["questID"] = 33020,	-- The Lost Secret of the Secret Ingredient
+						["sourceQuest"] = 33018,	-- Noodle Secrets Long Forgotten
+						["qg"] = 72426,	-- Lin Chao-Wei
+					},
+					{
+						["questID"] = 33136,	-- The Rainy Day is Here
+						["sourceQuest"] = 33137,	-- The Celestial Tournament
+						["qg"] = 73082,			-- Master Li <Celestial Tournament Host>
+						["description"] = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
+						["groups"] = {
+							i(101529),	-- Celestial Coin
+						},
+					},
+					{
+						["questID"] = 33228,	-- Time In Your Hands
+						["sourceQuests"] = {
+							33156,	-- Time Keeper Kairoz
+							33160,	-- Time Keeper Kairoz
+						},
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
+							i(104013),	-- Timeless Cloth Armor Cache
+							i(104012),	-- Timeless Leather Armor Cache
+							i(104010),	-- Timeless Mail Armor Cache
+							i(104009),	-- Timeless Plate Armor Cache
+						},
+					},
+					a({
+						["questID"] = 33160,	-- Time Keeper Kairoz
+						["sourceQuest"] = 33231,	-- Journey to the Timeless Isle
+						["qg"] = 73348,	-- Watcher Lara <The Timewalkers>
 					}),
---[[			
-					q(33379),	-- One Final Turn
-					q(33374),	-- Path of the Mistwalker
-					q(33239),	-- Pristine Firestorm Egg
-					q(33375),	-- Refining The Vision
-					q(32976),	-- Rolo's Riddle
-					q(32975),	-- Rolo's Riddle
-					q(32974),	-- Rolo's Riddle
-					q(33376),	-- Seeking Fate
-					q(33334),	-- Strong Enough To Survive
-					q(33343),	-- The Archiereus Of Flame
-					q(33137),	-- The Celestial Tournament
-					q(33336),	-- The Essence of Time
-					q(33335),	-- The Last Emperor
---]]			
-					sq(33018, qg(72426, q(33020))),	-- The Lost Secret of the Secret Ingredient
---[[			
-					q(33136),	-- The Rainy Day is Here
-					q(45563),	-- The Shrouded Coin
-					q(33238),	-- Thick Tiger Haunch
-					q(33228),	-- Time In Your Hands
-					q(33156),	-- Time Keeper Kairoz
-					q(33160),	-- Time Keeper Kairoz
-					q(33340),	-- Timeless Nutriment
-					q(33333),	-- Timeless Treasures
-					q(33341),	-- Wayshrines Of The Celestials		
---]]					
+					h({
+						["questID"] = 33156,	-- Time Keeper Kairoz
+						["sourceQuest"] = 33232,	-- Journey to the Timeless Isle
+						["qg"] = 73353,	-- Watcher Alundra <The Timewalkers>
+					}),
+					{
+						["questID"] = 33340,	-- Timeless Nutriment
+						["sourceQuest"] = 33335,	-- The Last Emperor
+						["qg"] = 73303,	-- Emperor Shaohao
+					},
+					{
+						["questID"] = 33333,	-- Timeless Treasures
+						["sourceQuests"] = 33332,	-- Hints From The Past
+						["qg"] = 72870,	-- Kairoz
+					},
+					{
+						["questID"] = 33341,	-- Wayshrines Of The Celestials
+						["sourceQuest"] = 33340,	-- Timeless Nutriment
+						["qg"] = 73303,	-- Emperor Shaohao
+					},
 				}),	
 				n(-16, { 	-- Rares
 					n(72766, {	-- Ancient Spineclaw
@@ -875,6 +1079,50 @@ _.Zones =
 						i(81685),	-- Faded Forest Blade
 						i(81686),	-- Faded Forest Axe
 					}),
+					n(73657, {	-- Great Chef Woo <Food & Drink>
+						["description"] = "You can turn in various zone drops to this vendor for Timeless Coins.\n\nThe quests can be repeated indefinitely.",
+						["groups"] = {
+							{
+								["itemID"] = 104265,	-- Great Turtle Meat
+								["questID"] = 33235,	-- Great Turtle Meat
+								["description"] = "Can be turned in for 50 coins.",
+								["repeatable"] = true,
+							},
+							{
+								["itemID"] = 104266,	-- Heavy Yak Flank
+								["questID"] = 33236,	-- Heavy Yak Flank
+								["description"] = "Can be turned in for 50 coins.",
+								["repeatable"] = true,
+							},
+							{
+								["itemID"] = 104264,	-- Meaty Crane Leg
+								["questID"] = 33234,	-- Meaty Crane Leg
+								["description"] = "Can be turned in for 20 coins.",
+								["repeatable"] = true,
+							},
+							{
+								["itemID"] = 104257,	-- Pristine Firestorm Egg
+								["questID"] = 33239,	-- Pristine Firestorm Egg
+								["description"] = "Can be turned in for 500 coins.",
+								["repeatable"] = true,
+							},
+							{
+								["itemID"] = 104267,	-- Thick Tiger Haunch
+								["questID"] = 33238,	-- Thick Tiger Haunch
+								["description"] = "Can be turned in for 100 coins.",
+								["repeatable"] = true,
+							},
+						},
+					}),
+					{
+						["npcID"] = 73819,	-- Ku-Mo <Hand-Made Kites>
+						["currencyID"] = 777,	-- Timeless Coin
+						["groups"] = {
+							i(104332),	-- Sky Lantern Pet
+							i(104333),	-- Flimsy Sky Lantern
+							i(104346),	-- Golden Glider
+						},
+					},
 					n(73082, {	-- Master Li <Celestial Tournament Host>
 						["groups"] = {
 							i(101529, { -- Celestial Coin
@@ -886,143 +1134,96 @@ _.Zones =
 						},
 						["description"] = "Must have leveled at least 15 pets to 25 in order to enter the tournament."
 					}),
-					n(73305, {	-- Mistweaver Ai <Timeless Artifacts>
-						currency(777, { -- Timeless Coin
-							i(103989),	-- Alacrity of Xuen
-							i(103982),	-- Burden of Eternity
+					{
+						["npcID"] = 73305,	-- Mistweaver Ai <Timeless Artifacts>
+						["currencyID"] = 777,	-- Timeless Coin
+						["groups"] = {
+							-- Weapons / Shields
 							i(105921),	-- Cloudscorcher Greatstaff
-							i(103988),	-- Contemplation of Chi-Ji
 							i(105923),	-- Contemplation of Shaohao
 							i(105919),	-- Daylight Protectorate
-							i(103986),	-- Discipline of Xuen
 							i(105927),	-- Featherdraw Longbow
 							i(105924),	-- Hozen Can Opener
 							i(105926),	-- Ordon Sacrificial Dagger
 							i(105920),	-- Pandaren Peace Offering
-							i(103990),	-- Resolve of Niuzao
 							i(105929),	-- Scavenged Pandaren Dagger
 							i(105922),	-- Shield of the Eternal Noon
-							i(104013, {	-- Timeless Cloth Armor Cache
-								["groups"] = {
-									i(101801),	-- Amaranthine Cord
-									i(101802),	-- Amaranthine Cowl
-									i(101803),	-- Amaranthine Handwraps
-									i(101804),	-- Amaranthine Leggings
-									i(101806),	-- Amaranthine Robe
-									i(101807),	-- Amaranthine Sandals
-									i(101808),	-- Amaranthine Shoulderpads
-									i(101810),	-- Amaranthine Wristwraps
-									i(101811),	-- Cloudscorcher Belt
-									i(101812),	-- Cloudscorcher Cowl
-									i(101813),	-- Cloudscorcher Handwraps
-									i(101814),	-- Cloudscorcher Leggings
-									i(101815),	-- Cloudscorcher Robe
-									i(101816),	-- Cloudscorcher Sandals
-									i(101817),	-- Cloudscorcher Shoulderpads
-									i(101818),	-- Cloudscorcher Wristwraps
-								},
-								["description"] = "Item created will be class and spec specific.|r",
-							}),
-							i(104012, {	-- Timeless Leather Armor Cache
-								["groups"] = {
-									i(101862),	-- Cranefeather Bindings
-									i(101863),	-- Cranefeather Boots
-									i(101864),	-- Cranefeather Britches
-									i(101865),	-- Cranefeather Gloves
-									i(101866),	-- Cranefeather Hood
-									i(101867),	-- Cranefeather Ferkin
-									i(101868),	-- Cranefeather Shoulders
-									i(101869),	-- Cranefeather Waistband
-									i(101781),	-- Fire-Chanter Bindings
-									i(101782),	-- Fire-Chanter Boots
-									i(101783),	-- Fire-Chanter Britches
-									i(101784),	-- Fire-Chanter Gloves
-									i(101785),	-- Fire-Chanter Hood
-									i(101786),	-- Fire-Chanter Jerkin
-									i(101787),	-- Fire-Chanter Shoulders
-									i(101788),	-- Fire-Chanter Waistband
-								},
-								["description"] = "Item created will be class and spec specific.|r",
-							}),
-							i(104010, {	-- Timeless Mail Armor Cache
-								["groups"] = {
-									i(101838),	-- Crimsonscale Belt
-									i(101839),	-- Crimsonscale Bracers
-									i(101840),	-- Crimsonscale Gauntlets
-									i(101841),	-- Crimsonscale Greaves
-									i(101842),	-- Crimsonscale Helm
-									i(101843),	-- Crimsonscale Legguards
-									i(101844),	-- Crimsonscale Spaulders
-									i(101845),	-- Crimsonscale Vest
-									i(101830),	-- Ordon Leagend-Keeper Belt
-									i(101831),	-- Ordon Leagend-Keeper Bracers
-									i(101832),	-- Ordon Leagend-Keeper Gauntlets
-									i(101833),	-- Ordon Leagend-Keeper Greaves
-									i(101834),	-- Ordon Leagend-Keeper Helm
-									i(101835),	-- Ordon Leagend-Keeper Legguards
-									i(101836),	-- Ordon Leagend-Keeper Spaulders
-									i(101837),	-- Ordon Leagend-Keeper Vestments
-								},
-								["description"] = "Item created will be class and spec specific.|r",
-							}),
-							i(104009, {	-- Timeless Plate Armor Cache
-								["groups"] = {
-									i(101789),	-- Cliffbreaker Breastplate
-									i(101791),	-- Cliffbreaker Gauntlets
-									i(101792),	-- Cliffbreaker Girdle
-									i(101793),	-- Cliffbreaker Helm
-									i(101794),	-- Cliffbreaker Legplates
-									i(101796),	-- Cliffbreaker Pauldrons
-									i(101797),	-- Cliffbreaker Sabatons
-									i(101799),	-- Cliffbreaker Vambraces
-									i(101851),	-- Elder Tortoiseshell Breastplate
-									i(101853),	-- Elder Tortoiseshell Gauntlets
-									i(101854),	-- Elder Tortoiseshell Girdle
-									i(101855),	-- Elder Tortoiseshell Helm
-									i(101856),	-- Elder Tortoiseshell Legplates
-									i(101858),	-- Elder Tortoiseshell Pauldrons
-									i(101859),	-- Elder Tortoiseshell Sabatons
-									i(101861),	-- Elder Tortoiseshell Vambraces
-									i(101819),	-- Everbright Breastplate
-									i(101820),	-- Everbright Gauntlets
-									i(101821),	-- Everbright Girdle
-									i(101822),	-- Everbright Helm
-									i(101823),	-- Everbright Legplates
-									i(101824),	-- Everbright Pauldrons
-									i(101825),	-- Everbright Sabatons
-									i(101826),	-- Everbright Vambraces
-								},
-								["description"] = "Item created will be class and spec specific.|r",
-							}),
 							i(105925),	-- Yak-Herder's Longstaff
-							i(103987),	-- Yu'lon's Bite
-						}),
-					}),
-					n(73306, {	-- Mistweaver Ku <Lost Treasures of Shaohao>
-						i(87774),	-- Reins of the Heavenly Golden Cloud Serpent Mount
-						i(104295),	-- Harmonious Purcupette Pet
-						i(103685),	-- Celestial Defender's Medallion Toy
-						i(103684), 	-- Scroll of Challenge
-					}),
-					n(73819, {	-- Ku-Mo <Hand-Made Kites>
-						currency(777, { -- Timeless Coin
-							i(104332),	-- Sky Lantern Pet
-							i(104333),	-- Flimsy Sky Lantern
-						}),
-					}),
+							
+							-- Quest Items
+							{
+								["itemID"] = 103977,	-- Time-Worn Journal
+								["questID"] = 33332,	-- Hints From The Past
+							},
+							
+							-- Containers
+							i(103982),	-- Burden of Eternity
+							i(104013),	-- Timeless Cloth Armor Cache
+							i(104012),	-- Timeless Leather Armor Cache
+							i(104010),	-- Timeless Mail Armor Cache
+							i(104009),	-- Timeless Plate Armor Cache
+							
+							-- Trinkets
+							i(103989),	-- Alacrity of Xuen [Timeless]
+							i(103988),	-- Contemplation of Chi-Ji [Timeless]
+							i(103986),	-- Discipline of Xuen [Timeless]
+							i(103990),	-- Resolve of Niuzao [Timeless]
+							i(103987),	-- Yu'lon's Bite [Timeless]
+						},
+					},
+					{
+						["npcID"] = 73306,	-- Mistweaver Ku <Lost Treasures of Shaohao>
+						["currencyID"] = 777,	-- Timeless Coin
+						["groups"] = {
+							i(87774),	-- Reins of the Heavenly Golden Cloud Serpent [Mount]
+							i(104295),	-- Harmonious Purcupette [Pet]
+							i(103685),	-- Celestial Defender's Medallion [Toy]
+							i(103678),	-- Time-Lost Artifact [Trinket]
+							i(103684), 	-- Scroll of Challenge [Quest Item]
+							i(103683),	-- Mask of Anger
+							i(103681),	-- Mask of Doubt
+							i(103679),	-- Mask of Fear
+							i(103680),	-- Mask of Hatred
+							i(103682),	-- Mask of Violence
+						},
+					},
 					n(73307, {	-- Speaker Gulan <Emissary of Ordos>
 						currency(789, { -- Bloody Coin
-							i(103639),	-- Pouch of White Ash
-							i(103638),	-- Reins of the Ashhide Mushan Beast Mount
-							i(103637),	-- Vengeful Porcupette Pet
+							["description"] = "Earn these by transforming into an Emissary of Ordos and participating in PvP.",
+							["groups"] = {
+								ach(8717),	-- Candlekeeper
+								ach(8718),	-- Oathguard
+								ach(8720),	-- Kilnmaster
+								{
+									["achievementID"] = 8721,	-- Fire-Watcher
+									["groups"] = {
+										title(251),	-- Fire-Watcher
+									},
+								},
+								i(103638),	-- Reins of the Ashhide Mushan Beast [Mount]
+								i(103637),	-- Vengeful Porcupette [Pet]
+								i(103639),	-- Pouch of White Ash [Trinket]
+								i(102464),	-- Black Ash
+							},
 						}),
 						currency(777, { -- Timeless Coin
-							i(102467),	-- Censer of Eternal Agony Toy
-							i(102463),	-- Fire-Watcher's Oath
+							{
+								["itemID"] = 102467,	-- Censer of Eternal Agony [Toy]
+								["groups"] = {
+									ach(8716),	-- Emissary of Ordos
+								},
+							},
+							{
+								["itemID"] = 102463,	-- Fire-Watcher's Oath
+							},
 						}),
 					}),
 				}),
 				n(0, { 		-- Zone Drops
+					i(103642),	-- Book of the Ages
+					i(103643),	-- Dew of Eternal Morning
+					i(103641),	-- Singing Crystal
+					i(103982),	-- Burden of Eternity
 					i(102318, { -- Timeless Cloak
 						i(103982, { -- Burden of Eternity
 							i(101889), -- Amaranthine Cloak
@@ -1036,6 +1237,27 @@ _.Zones =
 						i(101852), -- Elder Tortoiseshell Drape
 						i(101848), -- Kiln-Stoker Cloak
 						i(101828), -- Warmsun Cloak
+					}),
+					i(104013, {	-- Timeless Cloth Armor Cache
+						["groups"] = {
+							i(101801),	-- Amaranthine Cord
+							i(101802),	-- Amaranthine Cowl
+							i(101803),	-- Amaranthine Handwraps
+							i(101804),	-- Amaranthine Leggings
+							i(101806),	-- Amaranthine Robe
+							i(101807),	-- Amaranthine Sandals
+							i(101808),	-- Amaranthine Shoulderpads
+							i(101810),	-- Amaranthine Wristwraps
+							i(101811),	-- Cloudscorcher Belt
+							i(101812),	-- Cloudscorcher Cowl
+							i(101813),	-- Cloudscorcher Handwraps
+							i(101814),	-- Cloudscorcher Leggings
+							i(101815),	-- Cloudscorcher Robe
+							i(101816),	-- Cloudscorcher Sandals
+							i(101817),	-- Cloudscorcher Shoulderpads
+							i(101818),	-- Cloudscorcher Wristwraps
+						},
+						["description"] = "Item created will be class and spec specific.|r",
 					}),
 					i(102287, {	-- Timeless Cloth Helm
 						i(103982, { -- Burden of Eternity
@@ -1101,6 +1323,27 @@ _.Zones =
 						i(101807),	-- Amaranthine Sandals
 						i(101816),	-- Cloudscorcher Sandals
 					}),
+					i(104012, {	-- Timeless Leather Armor Cache
+						["groups"] = {
+							i(101862),	-- Cranefeather Bindings
+							i(101863),	-- Cranefeather Boots
+							i(101864),	-- Cranefeather Britches
+							i(101865),	-- Cranefeather Gloves
+							i(101866),	-- Cranefeather Hood
+							i(101867),	-- Cranefeather Ferkin
+							i(101868),	-- Cranefeather Shoulders
+							i(101869),	-- Cranefeather Waistband
+							i(101781),	-- Fire-Chanter Bindings
+							i(101782),	-- Fire-Chanter Boots
+							i(101783),	-- Fire-Chanter Britches
+							i(101784),	-- Fire-Chanter Gloves
+							i(101785),	-- Fire-Chanter Hood
+							i(101786),	-- Fire-Chanter Jerkin
+							i(101787),	-- Fire-Chanter Shoulders
+							i(101788),	-- Fire-Chanter Waistband
+						},
+						["description"] = "Item created will be class and spec specific.|r",
+					}),
 					i(102280, {	-- Timeless Leather Helm		
 						i(103982, {	 -- Burden of Eternity	
 							i(101953),	-- Cranefeather Hood
@@ -1165,7 +1408,28 @@ _.Zones =
 						i(101863),	-- Cranefeather Boots	
 						i(101782),	-- Fire-Chanter Boots	
 					}),			
-					i(102273, {	-- Timeless Mail Helm		
+					i(104010, {	-- Timeless Mail Armor Cache
+						["groups"] = {
+							i(101838),	-- Crimsonscale Belt
+							i(101839),	-- Crimsonscale Bracers
+							i(101840),	-- Crimsonscale Gauntlets
+							i(101841),	-- Crimsonscale Greaves
+							i(101842),	-- Crimsonscale Helm
+							i(101843),	-- Crimsonscale Legguards
+							i(101844),	-- Crimsonscale Spaulders
+							i(101845),	-- Crimsonscale Vest
+							i(101830),	-- Ordon Leagend-Keeper Belt
+							i(101831),	-- Ordon Leagend-Keeper Bracers
+							i(101832),	-- Ordon Leagend-Keeper Gauntlets
+							i(101833),	-- Ordon Leagend-Keeper Greaves
+							i(101834),	-- Ordon Leagend-Keeper Helm
+							i(101835),	-- Ordon Leagend-Keeper Legguards
+							i(101836),	-- Ordon Leagend-Keeper Spaulders
+							i(101837),	-- Ordon Leagend-Keeper Vestments
+						},
+						["description"] = "Item created will be class and spec specific.|r",
+					}),
+					i(102273, {	-- Timeless Mail Helm
 						i(103982, {	 -- Burden of Eternity	
 							i(101931),	-- Crimsonscale Helm
 							i(101923),	-- Ordon Legend-Keeper Helm
@@ -1173,7 +1437,7 @@ _.Zones =
 						i(101842),	-- Crimsonscale Helm	
 						i(101834),	-- Ordon Legend-Keeper Helm	
 					}),			
-					i(102275, {	-- Timeless Mail 		
+					i(102275, {	-- Timeless Mail Shoulders
 						i(103982, {	 -- Burden of Eternity	
 							i(101933),	-- Crimsonscale Spaulders
 							i(101925),	-- Ordon Legend-Keeper Spaulders
@@ -1229,6 +1493,35 @@ _.Zones =
 						i(101841),	-- Crimsonscale Greaves	
 						i(101833),	-- Ordon Legend-Keeper Greaves	
 					}),			
+					i(104009, {	-- Timeless Plate Armor Cache
+						["groups"] = {
+							i(101789),	-- Cliffbreaker Breastplate
+							i(101791),	-- Cliffbreaker Gauntlets
+							i(101792),	-- Cliffbreaker Girdle
+							i(101793),	-- Cliffbreaker Helm
+							i(101794),	-- Cliffbreaker Legplates
+							i(101796),	-- Cliffbreaker Pauldrons
+							i(101797),	-- Cliffbreaker Sabatons
+							i(101799),	-- Cliffbreaker Vambraces
+							i(101851),	-- Elder Tortoiseshell Breastplate
+							i(101853),	-- Elder Tortoiseshell Gauntlets
+							i(101854),	-- Elder Tortoiseshell Girdle
+							i(101855),	-- Elder Tortoiseshell Helm
+							i(101856),	-- Elder Tortoiseshell Legplates
+							i(101858),	-- Elder Tortoiseshell Pauldrons
+							i(101859),	-- Elder Tortoiseshell Sabatons
+							i(101861),	-- Elder Tortoiseshell Vambraces
+							i(101819),	-- Everbright Breastplate
+							i(101820),	-- Everbright Gauntlets
+							i(101821),	-- Everbright Girdle
+							i(101822),	-- Everbright Helm
+							i(101823),	-- Everbright Legplates
+							i(101824),	-- Everbright Pauldrons
+							i(101825),	-- Everbright Sabatons
+							i(101826),	-- Everbright Vambraces
+						},
+						["description"] = "Item created will be class and spec specific.|r",
+					}),
 					i(102266, { -- Timeless Plate Helm
 						i(103982, { -- Burden of Eternity
 							i(101882),	-- Cliffbreaker Helm

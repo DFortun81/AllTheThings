@@ -648,7 +648,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["isRaid"] = true,
 				["u"] = 38,	-- Ordos - Legendary Cloak
 				["maps"] = { 554 }, -- Timeless Isle
-				["groups"] = {	
+				["groups"] = {
+					un(38, ach(8533)),	-- Ordos
 					un(38, i(105806)),
 					un(38, i(105811)),
 					un(38, i(105810)),
