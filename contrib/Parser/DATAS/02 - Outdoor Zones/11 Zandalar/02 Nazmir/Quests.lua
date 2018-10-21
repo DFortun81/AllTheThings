@@ -193,7 +193,11 @@ _.Zones =
 										["qg"] = 122795,	-- Witch Doctor Kejabu
 										["sourceQuests"] = { 49440 },	-- Blood Troll on the Outside
 									}),	
-									q(49081, {	-- To Kill a Loa	
+									q(49081, {	-- To Kill a Loa
+										["qroups"] = {
+											i(155325),	-- Death-Pledged Helm
+											i(155313),	-- Deateh-Pleged Chestguard
+										},
 										["qg"] = 128276,	-- Jo'chunga
 										["sourceQuests"] = { 49079 },	-- Hir'eek, the Bat Loa
 									}),	
