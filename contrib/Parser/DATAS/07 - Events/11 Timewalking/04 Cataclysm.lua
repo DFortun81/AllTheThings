@@ -30,34 +30,28 @@ _.WorldEvents =
 						-- Commendations!!
 							{	-- Commendation of the Dragonmaw Clan
 								["itemID"] = 133150,	-- Commendation of the Dragonmaw Clan
-								["collectible"] = false,
 								["icon"] = "Interface\\Icons\\inv_misc_head_dragon_red",
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Commendation of the Earthen Ring
 								["itemID"] = 133159,	-- Commendation of the Earthen Ring
-								["collectible"] = false,
 								["icon"] = "Interface\\Icons\\ability_earthenfury_giftofearth",
 							},
 							{	-- Commendation of the Guardians of Hyjal
 								["itemID"] = 133152,	-- Commendation of the Guardians of Hyjal
-								["collectible"] = false,
 								["icon"] = "Interface\\Icons\\inv_misc_markoftheworldtree",
 							},
 							{	-- Commendation of the Ramkahen
 								["itemID"] = 133154,	-- Commendation of the Ramkahen
-								["collectible"] = false,
 								["icon"] = "Interface\\Icons\\inv_jewelry_amulet_03",
 							},
 							{	-- Commendation of the Wildhammer Clan
 								["itemID"] = 133151,	-- Commendation of the Wildhammer Clan
-								["collectible"] = false,
 								["icon"] = "Interface\\Icons\\trade_archaeology_carved-wildhammer-gryphon-figurine",
 								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Commendation of Therazanae
 								["itemID"] = 133160,	-- Commendation of Therazanae
-								["collectible"] = false,
 								["icon"] = "Interface\\Icons\\inv_datacrystal09",
 							},
 						-- Toy!!

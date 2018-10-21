@@ -17,13 +17,34 @@ i(95548, 1388);		-- Grand Commendation of the Sunreaver Onslaught
 i(93226, 1272);		-- Grand Commendation of the Tillers
 
 -- Timewalking: Burning Crusade
--- TODO
+i(129948, 946);		-- Commendation of Honor Hold
+i(129951, 1011);	-- Commendation of Lower City
+i(129949, 942);		-- Commendation of the Cenarion Expedition
+i(129945, 933);		-- Commendation of The Consortium
+i(129950, 989);		-- Commendation of the Keepers of Time
+i(129946, 935);		-- Commendation of The Sha'tar
+i(129947, 947);		-- Commendation of Thrallmar
+
 
 -- Timewalking: Wrath of the Lich King
--- TODO
+i(129955, 1037);	-- Commendation of the Alliance Vanguard
+i(129942, 1106);	-- Commendation of the Argent Crusade
+i(129941, 1098);	-- Commendation of the Ebon Blade
+i(129954, 1052);	-- Commendation of the Horde Expedition
+i(129940, 1090);	-- Commendation of the Kirin Tor
+i(129943, 1119);	-- Commendation of the Sons of Hodir
+i(129944, 1091);	-- Commendation of the Wyrmrest Accord
+
 
 -- Timewalking: Cataclysm
--- TODO
+i(133150, 1172);	-- Commendation of the Dragonmaw Clan
+i(133159, 1135);	-- Commendation of The Earthen Ring
+i(133152, 1158);	-- Commendation of the Guardians of Hyjal
+i(133154, 1173);	-- Commendation of the Ramkahen
+i(133151, 1174);	-- Commendation of the Wildhammer Clan
+i(133160, 1171);	-- Commendation of Therazane
+
+
 
 -- Timewalking: Mists of Pandaria
 i(143947, 1492);	-- Commendation of Emperor Shaohao
