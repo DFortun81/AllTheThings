@@ -1021,6 +1021,13 @@ _.Zones =
 						i(81653),	-- Faded Forest Necklace
 						i(81654),	-- Faded Forest Pendant
 						
+						-- Cloak
+						i(81668),	-- Faded Forest Cape
+						i(81670),	-- Faded Forest Cloak
+						i(81667),	-- Faded Forest Drape
+						i(81669),	-- Faded Forest Manteau
+						i(81666),	-- Faded Forest Shawl
+						
 						-- Shoulders
 						i(81596),	-- Faded Forest Armored Shoulders
 						i(81591),	-- Faded Forest Burnished Spaulders
@@ -1097,13 +1104,6 @@ _.Zones =
 						i(81617),	-- Faded Forest Ringmail Sabatons
 						i(81615),	-- Faded Forest Satin Treads
 						i(81619),	-- Faded Forest Silk Treads
-						
-						-- Cloak
-						i(81668),	-- Faded Forest Cape
-						i(81670),	-- Faded Forest Cloak
-						i(81667),	-- Faded Forest Drape
-						i(81669),	-- Faded Forest Manteau
-						i(81666),	-- Faded Forest Shawl
 						
 						-- Finger
 						i(81656),	-- Faded Forest Band
