@@ -543,22 +543,6 @@ _.Zones =
 						i(90467),
 						i(90468),
 					}),
-					i(89317, {	-- Claw of Anger
-						q(31809, {	-- Remnants of Anger
-							["groups"] = {
-								i(90914),	-- Boots of Raging Haze
-								i(90913),	-- Sandals of the Shadow
-								i(90912),	-- Angerforged Stompers
-								i(90911),	-- Furyheart Treads
-								i(90910),	-- Mindfire Sollerets
-								i(90909),	-- Intemperate Greatboots
-								i(90908),	-- Crushing Treads of Anger
-								i(90907),	-- Boots of Unbreakable Umbrage
-								i(90906),	-- Treads of Ardent Antagonism
-							},
-							["qg"] = 60491,	-- Sha of Anger
-						}),
-					}),
 					q(30991,  {  	-- Do a Barrel Roll!
 						i(88531),  		-- Lao Chin's Last Mug
 					}),

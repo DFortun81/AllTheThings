@@ -293,9 +293,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			cr(69099, e(814, { 	-- Nalak, The Storm Lord
 				["isRaid"] = true,
 				["questID"] = 32518,
-				["achievementID"] = 8028,
 				["maps"] = { 504 }, -- Isle of Thunder
 				["groups"] = {
+					ach(8028),	-- Praise the Sun!
 					i(95602, {	-- Stormtouched Cache
 						i(95972),	-- Abandoned Zandalari Arrowlinks
 						i(95976),	-- Abandoned Zandalari Bucklebreaker
@@ -567,9 +567,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			cr(69161, e(826, { 	-- Oondasta
 				["isRaid"] = true,
 				["questID"] = 32519,
-				["achievementID"] = 8123,
 				["maps"] = { 507 }, -- Isle of Giants
-				["groups"] = {	
+				["groups"] = {
+					ach(8123),	-- Millions of Years of Evolution vs. My Fist
 					i(95601, { -- Shiny Pile of Refuse
 						i(95972),	-- Abandoned Zandalari Arrowlinks
 						i(95976),	-- Abandoned Zandalari Bucklebreaker
@@ -716,6 +716,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["questID"] = 32098,
 				["maps"] = { 376 }, -- Valley of the Four Winds
 				["groups"] = {
+					ach(6517),	-- Extinction Event
 					i(89783),	-- Son of Galleon's Saddle
 					i(90840, {	-- Marauder's Gleaming Sack of Gold
 						-- Belts
@@ -838,6 +839,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["questID"] = 32099,
 				["maps"] = { 379 }, -- Kun-Lai Summit
 				["groups"] = {
+					{
+						["achievementID"] = 6926,	-- Tranquil Master
+						["criteriaID"] = 5, 	-- 	Sha of Anger slain
+					},
 					i(90839, { -- Cache of Sha-Touched Gold
 						i(86884),	-- Belt of Embodied Terror
 						i(86900),	-- Binder's Chain of Unending Summer
@@ -899,6 +904,21 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(48124),	-- Razormaw Hatchling
 						i(48126),	-- Razzashi Hatchling
 					}),
+					{
+						["itemID"] = 89317,	-- Claw of Anger
+						["questID"] = 31809,	-- Remnants of Anger
+						["groups"] = {
+							i(90912),	-- Angerforged Stompers
+							i(90914),	-- Boots of Raging Haze
+							i(90907),	-- Boots of Unbreakable Umbrage
+							i(90908),	-- Crushing Treads of Anger
+							i(90911),	-- Furyheart Treads
+							i(90909),	-- Intemperate Greatboots
+							i(90910),	-- Mindfire Sollerets
+							i(90913),	-- Sandals of the Shadow
+							i(90906),	-- Treads of Ardent Antagonism
+						},
+					},
 					i(84806),
 					i(84801),
 					i(84807),
