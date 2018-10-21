@@ -978,10 +978,7 @@ _.Zones =
 						["questID"] = 32959,
 						["isDaily"] = true,
 						["description"] = "|cff66ccffKill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when event is active.|r",		
-					}), 
---[[	
-				--	n(73293, { 		-- Whizzig	}), 
---]]
+					}),
 				}),
 				n(-2, {		-- Vendors
 					n(73656, {	-- Crafter Kwon <Arms & Armor Repairs>
@@ -1258,6 +1255,22 @@ _.Zones =
 							},
 						}),
 					}),
+					{
+						["npcID"] = 73293,	-- Whizzig
+						["currencyID"] = 777,	-- Timeless Coin
+						["description"] = "This vendor is rare and is not always available.",
+						["coords"] = {
+							{ 40.6, 68.1 },
+							{ 39.9, 63.0 },
+						},
+						["groups"] = {
+							i(103797),	-- Big Pink Bow
+							i(103786),	-- "Dapper Gentleman" Costume
+							i(103795),	-- "Dread Pirate" Costume
+							i(103789),	-- "Little Princess" Costume
+							i(71153),	-- Magical Pet Biscuit
+						},
+					},
 				}),
 				n(0, { 		-- Zone Drops
 					i(103642),	-- Book of the Ages
