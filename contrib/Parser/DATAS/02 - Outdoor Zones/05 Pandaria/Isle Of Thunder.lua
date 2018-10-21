@@ -120,6 +120,32 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
+					a({
+						["questID"] = 32706,	-- Allies in the Shadows
+						["sourceQuest"] = 32681,	-- The Storm Gathers
+						["qgs"] = {
+							67992,	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
+							70370,	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
+						},
+					}),
+					h({
+						["questID"] = 32709,	-- Allies in the Shadows
+						["sourceQuest"] = 32680,	-- The Storm Gathers
+						["u"] = 2,	-- Never Available to Players
+						["qgs"] = {
+							67990,	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
+							70371,	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
+						},
+					}),
+					{
+						["questID"] = 32707,	-- Secrets in the Isle of Thunder
+						["sourceQuests"] = {
+							32709,	-- Allies in the Shadows [Horde]
+							32706,	-- Allies in the Shadows [Alliance]
+						},
+						["qg"] = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
+					},
+					
 --[[				
 					qa( 32655),	-- A Bold Idea
 					qa( 29074),	-- A Season for Celebration
