@@ -56,6 +56,10 @@ _.Instances =
 							cr(59150, e(656, {	-- Flameweaver Koegler
 								ach(7413),	-- Scarlet Halls
 								ach(6760),	-- Heroic: Scarlet Halls
+								{
+									["itemID"]=82469, -- Ancient Tome of Teleport: Dalaran
+									["description"] = "Can be looted from a bookshelf if the boss didn't burn them. Available on Normal or Heroic Difficulty.\n\nYou must be level 80 or higher to loot.",
+								},
 								i(144196),	-- Mograine's Immaculate Might
 								i(144195),	-- Koegler's Ritual Knife
 								i(144198),	-- Melted Hypnotic Blade

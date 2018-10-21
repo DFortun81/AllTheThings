@@ -31,6 +31,10 @@ _.Instances =
 						})),
 						cr(59150, e(656, {	-- Flameweaver Koegler
 							ach(7413),	-- Scarlet Halls
+							{
+								["itemID"]=82469, -- Ancient Tome of Teleport: Dalaran
+								["description"] = "Can be looted from a bookshelf if the boss didn't burn them. Available on Normal or Heroic Difficulty.\n\nYou must be level 80 or higher to loot.",
+							},
 							i(88278),	-- Mograine's Immaculate Might
 							i(88274),	-- Koegler's Ritual Knife
 							i(88280),	-- Melted Hypnotic Blade
