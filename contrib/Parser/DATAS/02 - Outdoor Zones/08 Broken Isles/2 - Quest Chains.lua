@@ -285,13 +285,34 @@ _.Zones =
 					},
 					["groups"] = {
 						{
-							["questID"] = 44009,	-- A Falling Star
+							["questID"] = 44009,	-- A Falling Star (All other classes)
 							["qg"] = 90417,	-- Quest Giver: Archmage Khadgar
+							["classes"] = {
+								1,	-- Warrior
+								3,	-- Hunter
+								4,	-- Rogue
+								5,	-- Priest
+								6,	-- Death Knight
+								7,	-- Shaman
+								8,	-- Mage
+								9,	-- Warlock
+								10,	-- Monk
+								11,	-- Druid
+								12,	-- Demon Hunter
+							},
+						},
+						{
+							["questID"] = 44257,	-- A Falling Star (Paladin version)
+							["qg"] = 90417,	-- Quest Giver: Archmage Khadgar
+							["classes"] = { 2 },	-- Paladin
 						},
 						{
 							["questID"] = 44004,	-- Bringer of the Light
 							["qg"] = 112130,	-- Quest Giver: Archmage Khadgar
-							["sourceQuest"] = 44009,	-- Source Quest: A Falling Star
+							["sourceQuests"] = {
+								44009,	-- A Falling Star (all other classes)
+								44257,	-- A Falling Star (paladin)
+							},
 							["description"] = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
 							["maps"] = { 775 },	-- Scenario: In Defense of the Exodar
 							["groups"] = {
