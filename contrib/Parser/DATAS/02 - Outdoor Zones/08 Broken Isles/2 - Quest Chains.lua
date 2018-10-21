@@ -33,7 +33,7 @@ _.Zones =
 								})),
 							}),
 						})),
-						qg(126301, qa(50248)),	-- A Second Ally for the Cause
+						un(40, qg(126301, qa(50248))),	-- A Second Ally for the Cause
 						qh(49930),	-- The Call for Allies
 						qg(126065, qh(50242, {	-- A Choice for Allies
 							nh(-209, {	-- Highmountain Tauren
@@ -121,7 +121,7 @@ _.Zones =
 								})),
 							}),
 						})),
-						qg(126065, qh(50248)),	-- A Second Ally For the Cause
+						un(40, qg(126065, qh(50248))),	-- A Second Ally For the Cause
 					},
 					["icon"] = "Interface\\Icons\\FactionChange",
 					["lvl"] = 110,
