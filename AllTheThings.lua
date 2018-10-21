@@ -7731,7 +7731,8 @@ function app:GetDataCache()
 		allData.expanded = true;
 		allData.icon = L("LOGO_TINY");
 		allData.preview = L("LOGO_LARGE");
-		allData.text = app.DisplayName .. ": Unsorted";
+		allData.text = app.DisplayName;
+		allData.title = "Unsorted";
 		allData.description = "This data hasn't been implemented yet.";
 		allData.visible = true;
 		allData.progress = 0;
