@@ -265,6 +265,9 @@ profession(185, { -- Cooking
 			recipe(185708),		-- Sugar-Crusted Fish Feast
 		}),
 		--]]
+		--Note!! BC, Cata, MoP, Legion and BfA are currently commented out due to it being nothing but recipes and automation handling those.
+		--Classic, Wrath have actual item recipes that will be adjusted
+		--WoD is uncommented on the filtered recipes until I manually do it in automation
 		tier(1, {	-- Classic
 			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
 				-- Note!! Only commenting out actual items as Automation takes care of the recipes themselves
@@ -477,293 +480,309 @@ profession(185, { -- Cooking
 				--]]
 			}),
 		}),
+		--[[
 		tier(4, {	-- Cata
-			recipe(88006),	-- Blackened Surprise
-			recipe(88003),	-- Baked Rockfish
-			recipe(88004),	-- Basilisk Liverdog
-			recipe(88005),	-- Beer-Basted Crocolisk
-			recipe(88034),	-- Blackbelly Sushi
-			recipe(88012),	-- Broiled Mountain Trout
-			recipe(88013),	-- Chocolate Cookie
-			recipe(88014),	-- Crocolisk Au Gratin
-			recipe(88016),	-- Delicious Sagefish Tail
-			recipe(88017),	-- Feathered Lure
-			recipe(88018),	-- Fish Fry
-			recipe(88019),	-- Fortune Cookie
-			recipe(88020),	-- Grilled Dragon
-			recipe(88021),	-- Hearty Seafood Soup
-			recipe(88022),	-- Highland Spirits
-			recipe(88024),	-- Lavascale Fillet
-			recipe(88025),	-- Lavascale Minestrone
-			recipe(88028),	-- Lightly Fried Lurker
-			recipe(88030),	-- Lurker Lunch
-			recipe(88031),	-- Mushroom Sauce Mudfish
-			recipe(88033),	-- Pickled Guppy
-			recipe(88035),	-- Salted Eye
-			recipe(96133),	-- Scalding Murglesnout
-			recipe(88037),	-- Seasoned Crab
-			recipe(88039),	-- Severed Sagefish Head
-			recipe(88042),	-- Skewered Eel
-			recipe(88044),	-- South Island Iced Tea
-			recipe(88045),	-- Starfire Espresso
-			recipe(88046),	-- Tender Baked Turtle
-			recipe(88047),	-- Whitecrest Gumbo
-			recipe(88011),	-- Broiled Dragon Feast
-			recipe(88036),	-- Seafood Magnifique Feast
+			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+				recipe(88006),	-- Blackened Surprise
+				recipe(88003),	-- Baked Rockfish
+				recipe(88004),	-- Basilisk Liverdog
+				recipe(88005),	-- Beer-Basted Crocolisk
+				recipe(88034),	-- Blackbelly Sushi
+				recipe(88012),	-- Broiled Mountain Trout
+				recipe(88013),	-- Chocolate Cookie
+				recipe(88014),	-- Crocolisk Au Gratin
+				recipe(88016),	-- Delicious Sagefish Tail
+				recipe(88017),	-- Feathered Lure
+				recipe(88018),	-- Fish Fry
+				recipe(88019),	-- Fortune Cookie
+				recipe(88020),	-- Grilled Dragon
+				recipe(88021),	-- Hearty Seafood Soup
+				recipe(88022),	-- Highland Spirits
+				recipe(88024),	-- Lavascale Fillet
+				recipe(88025),	-- Lavascale Minestrone
+				recipe(88028),	-- Lightly Fried Lurker
+				recipe(88030),	-- Lurker Lunch
+				recipe(88031),	-- Mushroom Sauce Mudfish
+				recipe(88033),	-- Pickled Guppy
+				recipe(88035),	-- Salted Eye
+				recipe(96133),	-- Scalding Murglesnout
+				recipe(88037),	-- Seasoned Crab
+				recipe(88039),	-- Severed Sagefish Head
+				recipe(88042),	-- Skewered Eel
+				recipe(88044),	-- South Island Iced Tea
+				recipe(88045),	-- Starfire Espresso
+				recipe(88046),	-- Tender Baked Turtle
+				recipe(88047),	-- Whitecrest Gumbo
+				recipe(88011),	-- Broiled Dragon Feast
+				recipe(88036),	-- Seafood Magnifique Feast
+			}),
 		}),
 		tier(5, {	-- Mists
-			recipe(124233),	-- Blanched Needle Mushrooms
-			recipe(124228),	-- Boiled Silkworm Pupa
-			recipe(124227),	-- Dried Needle Mushrooms
-			recipe(124226),	-- Dried Peaches
-			recipe(104297),	-- Fish Cake
-			recipe(104237),	-- Golden Carp Consomme
-			recipe(124231),	-- Green Curry Fish
-			recipe(124232),	-- Peach Pie
-			recipe(125080),	-- Pearl Milk Tea
-			recipe(125067),	-- Perfectly Cooked Instant Noodles
-			recipe(124223),	-- Pounded Rice Cake
-			recipe(124229),	-- Red Bean Bun
-			recipe(125122),	-- Rice Pudding
-			recipe(125078),	-- Roasted Barley Tea
-			recipe(124234),	-- Skewered Peanut Chicken
-			recipe(125117), -- Sliced Peaches
-			recipe(125123),	-- Spicy Vegetable Chips
-			recipe(124230),	-- Tangy Yogurt
-			recipe(124225),	-- Toasted Fish Jerky
-			recipe(125121),	-- Wildfowl Ginseng Soup
-			recipe(124224),	-- Yak Cheese Curds
-			-- Flavor Items
-			recipe(126655),	-- Banana Infused Rum
-			recipe(126654),	-- Four Senses Brew
-			recipe(124032),	-- Krasarang Fritters
-			recipe(125120),	-- Spicy Salmon
-			recipe(105190),	-- Pandaren Banquet
-			recipe(105194),	-- Great Pandaren Banquet
-			-- Added with 5.4
-			recipe(145309),	-- Farmer's Delight
-			recipe(145311),	-- Fluffy Silkfeather Omelet
-			recipe(145308),	-- Mango Ice
-			recipe(145305),	-- Seasoned Pomfruit Slices
-			recipe(145307),	-- Spiced Blossom Soup
-			recipe(145310),	-- Stuffed Lushrooms
-			-- Master of the Brew
-			{
-				["recipeID"] = 125589,	-- Way of the Brew
-				["collectible"] = false,
-				["groups"] = {
-					recipe(124052),	-- Ginseng Tea
-					recipe(124053),	-- Jade Witch Brew
-					recipe(124054),	-- Mad Brewer's Breakfast
-					recipe(125602),	-- Banquet of the Brew
-					recipe(125603),	-- Great Banquet of the Brew
-				}
-			},
-			-- Master of the Grill
-			{
-				["recipeID"] = 124694,	-- Way of the Grill
-				["collectible"] = false,
-				["groups"] = {
-					recipe(104300),	-- Black Pepper Ribs and Shrimp
-					recipe(104298),	-- Charbroiled Tiger Steak
-					recipe(104299),	-- Eternal Blossom Fish
-					recipe(125141),	-- Banquet of the Grill
-					recipe(125142),	-- Great Banquet of the Grill
-				}
-			},
-			-- Master of the Oven
-			{
-				["recipeID"] = 125588,	-- Way of the Oven
-				["collectible"] = false,
-				["groups"] = {
-					recipe(104312),	-- Chun Tian Spring Rolls
-					recipe(104311),	-- Twin Fish Platter
-					recipe(104310),	-- Wildfowl Roast
-					recipe(125600),	-- Banquet of the Oven
-					recipe(125601),	-- Great Banquet of the Oven
-				}
-			},
-			-- Master of the Pot
-			{
-				["recipeID"] = 125586,	-- Way of the Pot
-				["collectible"] = false,
-				["groups"] = {
-					recipe(104305),	-- Braised Turtle
-					recipe(104306),	-- Mogu Fish Stew
-					recipe(104304),	-- Swirling Mist Soup
-					recipe(125596),	-- Banquet of the Pot
-					recipe(125597),	-- Great Banquet of the Pot
-				}
-			},
-			-- Master of the Steamer
-			{
-				["recipeID"] = 125587,	-- Way of the Steamer
-				["collectible"] = false,
-				["groups"] = {
-					recipe(104308),	-- Fire Spirit Salmon
-					recipe(104307),	-- Shrimp Dumplings
-					recipe(104309),	-- Steamed Crab Surprise
-					recipe(125598),	-- Banquet of the Steamer
-					recipe(125599),	-- Great Banquet of the Steamer
-				}
-			},
-			-- Master of the Wok
-			{
-				["recipeID"] = 125584,	-- Way of the Wok
-				["collectible"] = false,
-				["groups"] = {
-					recipe(104301),	-- Sauteed Carrots
-					recipe(104303),	-- Sea Mist Rice Noodles
-					recipe(104302),	-- Valley Stir Fry
-					recipe(125594),	-- Banquet of the Wok
-					recipe(125595),	-- Great Banquet of the Wok
-				}
-			},
-			-- Noodle Karts
-			recipe(145038),	-- Noodle Cart Kit
-			recipe(145061),	-- Deluxe Noodle Cart Kit
-			recipe(145062),	-- Pandaren Treasure Noodle Cart Kit
+			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+				recipe(124233),	-- Blanched Needle Mushrooms
+				recipe(124228),	-- Boiled Silkworm Pupa
+				recipe(124227),	-- Dried Needle Mushrooms
+				recipe(124226),	-- Dried Peaches
+				recipe(104297),	-- Fish Cake
+				recipe(104237),	-- Golden Carp Consomme
+				recipe(124231),	-- Green Curry Fish
+				recipe(124232),	-- Peach Pie
+				recipe(125080),	-- Pearl Milk Tea
+				recipe(125067),	-- Perfectly Cooked Instant Noodles
+				recipe(124223),	-- Pounded Rice Cake
+				recipe(124229),	-- Red Bean Bun
+				recipe(125122),	-- Rice Pudding
+				recipe(125078),	-- Roasted Barley Tea
+				recipe(124234),	-- Skewered Peanut Chicken
+				recipe(125117), -- Sliced Peaches
+				recipe(125123),	-- Spicy Vegetable Chips
+				recipe(124230),	-- Tangy Yogurt
+				recipe(124225),	-- Toasted Fish Jerky
+				recipe(125121),	-- Wildfowl Ginseng Soup
+				recipe(124224),	-- Yak Cheese Curds
+				-- Flavor Items
+				recipe(126655),	-- Banana Infused Rum
+				recipe(126654),	-- Four Senses Brew
+				recipe(124032),	-- Krasarang Fritters
+				recipe(125120),	-- Spicy Salmon
+				recipe(105190),	-- Pandaren Banquet
+				recipe(105194),	-- Great Pandaren Banquet
+				-- Added with 5.4
+				recipe(145309),	-- Farmer's Delight
+				recipe(145311),	-- Fluffy Silkfeather Omelet
+				recipe(145308),	-- Mango Ice
+				recipe(145305),	-- Seasoned Pomfruit Slices
+				recipe(145307),	-- Spiced Blossom Soup
+				recipe(145310),	-- Stuffed Lushrooms
+				-- Master of the Brew
+				{
+					["recipeID"] = 125589,	-- Way of the Brew
+					["collectible"] = false,
+					["groups"] = {
+						recipe(124052),	-- Ginseng Tea
+						recipe(124053),	-- Jade Witch Brew
+						recipe(124054),	-- Mad Brewer's Breakfast
+						recipe(125602),	-- Banquet of the Brew
+						recipe(125603),	-- Great Banquet of the Brew
+					}
+				},
+				-- Master of the Grill
+				{
+					["recipeID"] = 124694,	-- Way of the Grill
+					["collectible"] = false,
+					["groups"] = {
+						recipe(104300),	-- Black Pepper Ribs and Shrimp
+						recipe(104298),	-- Charbroiled Tiger Steak
+						recipe(104299),	-- Eternal Blossom Fish
+						recipe(125141),	-- Banquet of the Grill
+						recipe(125142),	-- Great Banquet of the Grill
+					}
+				},
+				-- Master of the Oven
+				{
+					["recipeID"] = 125588,	-- Way of the Oven
+					["collectible"] = false,
+					["groups"] = {
+						recipe(104312),	-- Chun Tian Spring Rolls
+						recipe(104311),	-- Twin Fish Platter
+						recipe(104310),	-- Wildfowl Roast
+						recipe(125600),	-- Banquet of the Oven
+						recipe(125601),	-- Great Banquet of the Oven
+					}
+				},
+				-- Master of the Pot
+				{
+					["recipeID"] = 125586,	-- Way of the Pot
+					["collectible"] = false,
+					["groups"] = {
+						recipe(104305),	-- Braised Turtle
+						recipe(104306),	-- Mogu Fish Stew
+						recipe(104304),	-- Swirling Mist Soup
+						recipe(125596),	-- Banquet of the Pot
+						recipe(125597),	-- Great Banquet of the Pot
+					}
+				},
+				-- Master of the Steamer
+				{
+					["recipeID"] = 125587,	-- Way of the Steamer
+					["collectible"] = false,
+					["groups"] = {
+						recipe(104308),	-- Fire Spirit Salmon
+						recipe(104307),	-- Shrimp Dumplings
+						recipe(104309),	-- Steamed Crab Surprise
+						recipe(125598),	-- Banquet of the Steamer
+						recipe(125599),	-- Great Banquet of the Steamer
+					}
+				},
+				-- Master of the Wok
+				{
+					["recipeID"] = 125584,	-- Way of the Wok
+					["collectible"] = false,
+					["groups"] = {
+						recipe(104301),	-- Sauteed Carrots
+						recipe(104303),	-- Sea Mist Rice Noodles
+						recipe(104302),	-- Valley Stir Fry
+						recipe(125594),	-- Banquet of the Wok
+						recipe(125595),	-- Great Banquet of the Wok
+					}
+				},
+				-- Noodle Karts
+				recipe(145038),	-- Noodle Cart Kit
+				recipe(145061),	-- Deluxe Noodle Cart Kit
+				recipe(145062),	-- Pandaren Treasure Noodle Cart Kit
+			}),
 		}),
+		--]]
 		tier(6, {	-- WoD
-			recipe(161001),		-- Saberfish Broth
-			recipe(161002),		-- Grilled Saberfish
-			recipe(160962),		-- Blackrock Ham
-			recipe(160968),		-- Braised Riverbeast
-			recipe(160971),		-- Clefthoof Sausages
-			recipe(160981),		-- Fat Sleeper Cakes
-			recipe(160982),		-- Fiery Calamari
-			recipe(160978),		-- Grilled Gulper
-			recipe(160958),		-- Hearty Elekk Steak
-			recipe(160966),		-- Pan-Seared Talbuk
-			recipe(160969),		-- Rylak Crepes
-			recipe(160983),		-- Skulker Chowder
-			recipe(160973),		-- Steamed Scorpion
-			recipe(160979),		-- Sturgeon Stew
-			recipe(160986),		-- Blackrock Barbecue
-			recipe(160999),		-- Calamari Crepes
-			recipe(160987),		-- Frosty Stew
-			recipe(161000),		-- Gorgrond Chowder
-			recipe(160989),		-- Sleeper Surprise
-			recipe(160984),		-- Talador Surf and Turf
-			un(1, recipe(169696)),		-- Marinated Elekk Steak (Never made it to Live)
-			un(1, recipe(169699)),		-- Seasoned Elekk Ribeye (Never made it to Live)
-			un(1, recipe(169701)),		-- Seasoned Elekk Ribeye (Never made it to Live)
-			un(1, recipe(169693)),		-- Whole Pot-Roasted Elekk (Never made it to Live)
-			recipe(173978),		-- Feast of Blood
-			recipe(173979),		-- Feast of the Waters
-			recipe(180761),		-- Buttered Sturgeon
-			recipe(190788),		-- Fel Eggs and Ham
-			recipe(180759),		-- Jumbo Sea Dog
-			recipe(180758),		-- Pickled Eel
-			recipe(180757),		-- Salty Squid Roll
-			recipe(180762),		-- Sleeper Sushi
-			recipe(180760),		-- Whiptail Fillet
+			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+				un(1, recipe(169696)),		-- Marinated Elekk Steak (Never made it to Live)
+				un(1, recipe(169699)),		-- Seasoned Elekk Ribeye (Never made it to Live)
+				un(1, recipe(169701)),		-- Seasoned Elekk Ribeye (Never made it to Live)
+				un(1, recipe(169693)),		-- Whole Pot-Roasted Elekk (Never made it to Live)
+				--[[
+				recipe(161001),		-- Saberfish Broth
+				recipe(161002),		-- Grilled Saberfish
+				recipe(160962),		-- Blackrock Ham
+				recipe(160968),		-- Braised Riverbeast
+				recipe(160971),		-- Clefthoof Sausages
+				recipe(160981),		-- Fat Sleeper Cakes
+				recipe(160982),		-- Fiery Calamari
+				recipe(160978),		-- Grilled Gulper
+				recipe(160958),		-- Hearty Elekk Steak
+				recipe(160966),		-- Pan-Seared Talbuk
+				recipe(160969),		-- Rylak Crepes
+				recipe(160983),		-- Skulker Chowder
+				recipe(160973),		-- Steamed Scorpion
+				recipe(160979),		-- Sturgeon Stew
+				recipe(160986),		-- Blackrock Barbecue
+				recipe(160999),		-- Calamari Crepes
+				recipe(160987),		-- Frosty Stew
+				recipe(161000),		-- Gorgrond Chowder
+				recipe(160989),		-- Sleeper Surprise
+				recipe(160984),		-- Talador Surf and Turf
+				recipe(173978),		-- Feast of Blood
+				recipe(173979),		-- Feast of the Waters
+				recipe(180761),		-- Buttered Sturgeon
+				recipe(190788),		-- Fel Eggs and Ham
+				recipe(180759),		-- Jumbo Sea Dog
+				recipe(180758),		-- Pickled Eel
+				recipe(180757),		-- Salty Squid Roll
+				recipe(180762),		-- Sleeper Sushi
+				recipe(180760),		-- Whiptail Fillet
+				--]]
+			}),
 		}),
+		--[[
 		tier(7, {	-- Legion
-			recipe(201502),		-- Barracuda Mrglgagh [Rank 1]
-			recipe(201531),		-- Barracuda Mrglgagh [Rank 2]
-			recipe(201551),		-- Barracuda Mrglgagh [Rank 3]
-			recipe(201513),		-- Bear Tartare [Rank 1]
-			recipe(201540),		-- Bear Tartare [Rank 2]
-			recipe(201560),		-- Bear Tartare [Rank 3]
-			recipe(201496),		-- Deep-Fried Mossgill [Rank 1]
-			recipe(201525),		-- Deep-Fried Mossgill [Rank 2]
-			recipe(201545),		-- Deep-Fried Mossgill [Rank 3]
-			recipe(201512),		-- Dried Mackerel Strips [Rank 1]
-			recipe(201539),		-- Dried Mackerel Strips [Rank 2]
-			recipe(201559),		-- Dried Mackerel Strips [Rank 3]
-			recipe(201498),		-- Faronaar Fizz [Rank 1]
-			recipe(201527),		-- Faronaar Fizz [Rank 2]
-			recipe(201547),		-- Faronaar Fizz [Rank 3]
-			recipe(201514),		-- Fighter Chow [Rank 1]
-			recipe(201541),		-- Fighter Chow [Rank 2]
-			recipe(201561),		-- Fighter Chow [Rank 3]
-			recipe(201497),		-- Pickled Stormray [Rank 1]
-			recipe(201526),		-- Pickled Stormray [Rank 2]
-			recipe(201546),		-- Pickled Stormray [Rank 3]
-			recipe(201413),		-- Salt and Pepper Shank [Rank 1]
-			recipe(201524),		-- Salt and Pepper Shank [Rank 2]
-			recipe(201544),		-- Salt and Pepper Shank [Rank 3]
-			recipe(201499),		-- Spiced Rib Roast [Rank 1]
-			recipe(201528),		-- Spiced Rib Roast [Rank 2]
-			recipe(201548),		-- Spiced Rib Roast [Rank 3]
-			recipe(201515),		-- Hearty Feast [Rank 1]
-			recipe(201542),		-- Hearty Feast [Rank 2]
-			recipe(201562),		-- Hearty Feast [Rank 3]
-			recipe(251258),		-- Feast of the Fishes
-			recipe(201516),		-- Lavish Suramar Feast [Rank 1]
-			recipe(201543),		-- Lavish Suramar Feast [Rank 2]
-			recipe(201563),		-- Lavish Suramar Feast [Rank 3]
-			desc(recipe(201683), "You learn this by giving Nomi your slices of bacon, and hoping he doesn't burn it.\n\n... He will."),		-- Crispy Bacon [Rank 1]
-			recipe(201684),		-- Crispy Bacon [Rank 2]
-			recipe(201685),		-- Crispy Bacon [Rank 3]
-			recipe(201504),		-- Drogbar-Style Salmon [Rank 1]
-			recipe(201533),		-- Drogbar-Style Salmon [Rank 2]
-			recipe(201553),		-- Drogbar-Style Salmon [Rank 3]
-			recipe(201503),		-- Koi-Scented Stormray [Rank 1]
-			recipe(201532),		-- Koi-Scented Stormray [Rank 2]
-			recipe(201552),		-- Koi-Scented Stormray [Rank 3]
-			recipe(201501),		-- Suramar Surf and Turf [Rank 1]
-			recipe(201530),		-- Suramar Surf and Turf [Rank 2]
-			recipe(201550),		-- Suramar Surf and Turf [Rank 3]
-			recipe(201506),		-- Azshari Salad [Rank 1]
-			recipe(201535),		-- Azshari Salad [Rank 2]
-			recipe(201555),		-- Azshari Salad [Rank 3]
-			recipe(201511),		-- Fishbrul Special [Rank 1]
-			recipe(201538),		-- Fishbrul Special [Rank 2]
-			recipe(201558),		-- Fishbrul Special [Rank 3]
-			recipe(201500),		-- Leybeque Ribs [Rank 1]
-			recipe(201529),		-- Leybeque Ribs [Rank 2]
-			recipe(201549),		-- Leybeque Ribs [Rank 3]
-			recipe(201508),		-- Seed-Battered Fish Plate [Rank 1]
-			recipe(201537),		-- Seed-Battered Fish Plate [Rank 2]
-			recipe(201557),		-- Seed-Battered Fish Plate [Rank 3]
-			recipe(201505),		-- The Hungry Magister [Rank 1]
-			recipe(201534),		-- The Hungry Magister [Rank 2]
-			recipe(201554),		-- The Hungry Magister [Rank 3]
-			recipe(201507),		-- Nightborne Delicacy Platter [Rank 1]
-			recipe(201536),		-- Nightborne Delicacy Platter [Rank 2]
-			recipe(201556),		-- Nightborne Delicacy Platter [Rank 3]
-			recipe(230046),		-- Spiced Falcosaur Omelet
+			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+				recipe(201502),		-- Barracuda Mrglgagh [Rank 1]
+				recipe(201531),		-- Barracuda Mrglgagh [Rank 2]
+				recipe(201551),		-- Barracuda Mrglgagh [Rank 3]
+				recipe(201513),		-- Bear Tartare [Rank 1]
+				recipe(201540),		-- Bear Tartare [Rank 2]
+				recipe(201560),		-- Bear Tartare [Rank 3]
+				recipe(201496),		-- Deep-Fried Mossgill [Rank 1]
+				recipe(201525),		-- Deep-Fried Mossgill [Rank 2]
+				recipe(201545),		-- Deep-Fried Mossgill [Rank 3]
+				recipe(201512),		-- Dried Mackerel Strips [Rank 1]
+				recipe(201539),		-- Dried Mackerel Strips [Rank 2]
+				recipe(201559),		-- Dried Mackerel Strips [Rank 3]
+				recipe(201498),		-- Faronaar Fizz [Rank 1]
+				recipe(201527),		-- Faronaar Fizz [Rank 2]
+				recipe(201547),		-- Faronaar Fizz [Rank 3]
+				recipe(201514),		-- Fighter Chow [Rank 1]
+				recipe(201541),		-- Fighter Chow [Rank 2]
+				recipe(201561),		-- Fighter Chow [Rank 3]
+				recipe(201497),		-- Pickled Stormray [Rank 1]
+				recipe(201526),		-- Pickled Stormray [Rank 2]
+				recipe(201546),		-- Pickled Stormray [Rank 3]
+				recipe(201413),		-- Salt and Pepper Shank [Rank 1]
+				recipe(201524),		-- Salt and Pepper Shank [Rank 2]
+				recipe(201544),		-- Salt and Pepper Shank [Rank 3]
+				recipe(201499),		-- Spiced Rib Roast [Rank 1]
+				recipe(201528),		-- Spiced Rib Roast [Rank 2]
+				recipe(201548),		-- Spiced Rib Roast [Rank 3]
+				recipe(201515),		-- Hearty Feast [Rank 1]
+				recipe(201542),		-- Hearty Feast [Rank 2]
+				recipe(201562),		-- Hearty Feast [Rank 3]
+				recipe(251258),		-- Feast of the Fishes
+				recipe(201516),		-- Lavish Suramar Feast [Rank 1]
+				recipe(201543),		-- Lavish Suramar Feast [Rank 2]
+				recipe(201563),		-- Lavish Suramar Feast [Rank 3]
+				desc(recipe(201683), "You learn this by giving Nomi your slices of bacon, and hoping he doesn't burn it.\n\n... He will."),		-- Crispy Bacon [Rank 1]
+				recipe(201684),		-- Crispy Bacon [Rank 2]
+				recipe(201685),		-- Crispy Bacon [Rank 3]
+				recipe(201504),		-- Drogbar-Style Salmon [Rank 1]
+				recipe(201533),		-- Drogbar-Style Salmon [Rank 2]
+				recipe(201553),		-- Drogbar-Style Salmon [Rank 3]
+				recipe(201503),		-- Koi-Scented Stormray [Rank 1]
+				recipe(201532),		-- Koi-Scented Stormray [Rank 2]
+				recipe(201552),		-- Koi-Scented Stormray [Rank 3]
+				recipe(201501),		-- Suramar Surf and Turf [Rank 1]
+				recipe(201530),		-- Suramar Surf and Turf [Rank 2]
+				recipe(201550),		-- Suramar Surf and Turf [Rank 3]
+				recipe(201506),		-- Azshari Salad [Rank 1]
+				recipe(201535),		-- Azshari Salad [Rank 2]
+				recipe(201555),		-- Azshari Salad [Rank 3]
+				recipe(201511),		-- Fishbrul Special [Rank 1]
+				recipe(201538),		-- Fishbrul Special [Rank 2]
+				recipe(201558),		-- Fishbrul Special [Rank 3]
+				recipe(201500),		-- Leybeque Ribs [Rank 1]
+				recipe(201529),		-- Leybeque Ribs [Rank 2]
+				recipe(201549),		-- Leybeque Ribs [Rank 3]
+				recipe(201508),		-- Seed-Battered Fish Plate [Rank 1]
+				recipe(201537),		-- Seed-Battered Fish Plate [Rank 2]
+				recipe(201557),		-- Seed-Battered Fish Plate [Rank 3]
+				recipe(201505),		-- The Hungry Magister [Rank 1]
+				recipe(201534),		-- The Hungry Magister [Rank 2]
+				recipe(201554),		-- The Hungry Magister [Rank 3]
+				recipe(201507),		-- Nightborne Delicacy Platter [Rank 1]
+				recipe(201536),		-- Nightborne Delicacy Platter [Rank 2]
+				recipe(201556),		-- Nightborne Delicacy Platter [Rank 3]
+				recipe(230046),		-- Spiced Falcosaur Omelet
+			}),
 		}),
 		tier(8, {	-- Battle For Azeroth
-			recipe(259422, { ["spellID"] = 259422, }),	-- Bountiful Captain's Feast
-			recipe(259423, { ["spellID"] = 259423, }),	-- Bountiful Captain's Feast
-			recipe(259421, { ["spellID"] = 259421, }),	-- Bountiful Captain's Feast
-			recipe(259418, { ["spellID"] = 259418, }),	-- Galley Banquet
-			recipe(259419, { ["spellID"] = 259419, }),	-- Galley Banquet
-			recipe(259420, { ["spellID"] = 259420, }),	-- Galley Banquet
-			recipe(259430, { ["spellID"] = 259430, }),	-- Grilled Catfish
-			recipe(259431, { ["spellID"] = 259431, }),	-- Grilled Catfish
-			recipe(259432, { ["spellID"] = 259432, }),	-- Grilled Catfish
-			recipe(280282, { ["spellID"] = 280282, }),	-- Heartsbane Hexwurst
-			recipe(259414, { ["spellID"] = 259414, }),	-- Honey-Glazed Haunches
-			recipe(259415, { ["spellID"] = 259415, }),	-- Honey-Glazed Haunches
-			recipe(259416, { ["spellID"] = 259416, }),	-- Honey-Glazed Haunches
-			recipe(259411, { ["spellID"] = 259411, }),	-- Kul Tiramisu
-			recipe(259412, { ["spellID"] = 259412, }),	-- Kul Tiramisu
-			recipe(259413, { ["spellID"] = 259413, }),	-- Kul Tiramisu
-			recipe(259436, { ["spellID"] = 259436, }),	-- Loa Loaf
-			recipe(259437, { ["spellID"] = 259437, }),	-- Loa Loaf
-			recipe(259438, { ["spellID"] = 259438, }),	-- Loa Loaf
-			recipe(259442, { ["spellID"] = 259442, }),	-- Mon'Dazi
-			recipe(259443, { ["spellID"] = 259443, }),	-- Mon'Dazi
-			recipe(259444, { ["spellID"] = 259444, }),	-- Mon'Dazi
-			recipe(259424, { ["spellID"] = 259424, }),	-- Ravenberry Tarts
-			recipe(259425, { ["spellID"] = 259425, }),	-- Ravenberry Tarts
-			recipe(259426, { ["spellID"] = 259426, }),	-- Ravenberry Tarts
-			recipe(259439, { ["spellID"] = 259439, }),	-- Sailor's Pie
-			recipe(259440, { ["spellID"] = 259440, }),	-- Sailor's Pie
-			recipe(259441, { ["spellID"] = 259441, }),	-- Sailor's Pie
-			recipe(259433, { ["spellID"] = 259433, }),	-- Seasoned Loins
-			recipe(259434, { ["spellID"] = 259434, }),	-- Seasoned Loins
-			recipe(259435, { ["spellID"] = 259435, }),	-- Seasoned Loins
-			recipe(259445, { ["spellID"] = 259445, }),	-- Spiced Snapper
-			recipe(259446, { ["spellID"] = 259446, }),	-- Spiced Snapper
-			recipe(259447, { ["spellID"] = 259447, }),	-- Spiced Snapper
-			recipe(259427, { ["spellID"] = 259427, }),	-- Swamp Fish 'n Chips
-			recipe(259428, { ["spellID"] = 259428, }),	-- Swamp Fish 'n Chips
-			recipe(259429, { ["spellID"] = 259429, }),	-- Swamp Fish 'n Chips
+			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+				recipe(259422, { ["spellID"] = 259422, }),	-- Bountiful Captain's Feast
+				recipe(259423, { ["spellID"] = 259423, }),	-- Bountiful Captain's Feast
+				recipe(259421, { ["spellID"] = 259421, }),	-- Bountiful Captain's Feast
+				recipe(259418, { ["spellID"] = 259418, }),	-- Galley Banquet
+				recipe(259419, { ["spellID"] = 259419, }),	-- Galley Banquet
+				recipe(259420, { ["spellID"] = 259420, }),	-- Galley Banquet
+				recipe(259430, { ["spellID"] = 259430, }),	-- Grilled Catfish
+				recipe(259431, { ["spellID"] = 259431, }),	-- Grilled Catfish
+				recipe(259432, { ["spellID"] = 259432, }),	-- Grilled Catfish
+				recipe(280282, { ["spellID"] = 280282, }),	-- Heartsbane Hexwurst
+				recipe(259414, { ["spellID"] = 259414, }),	-- Honey-Glazed Haunches
+				recipe(259415, { ["spellID"] = 259415, }),	-- Honey-Glazed Haunches
+				recipe(259416, { ["spellID"] = 259416, }),	-- Honey-Glazed Haunches
+				recipe(259411, { ["spellID"] = 259411, }),	-- Kul Tiramisu
+				recipe(259412, { ["spellID"] = 259412, }),	-- Kul Tiramisu
+				recipe(259413, { ["spellID"] = 259413, }),	-- Kul Tiramisu
+				recipe(259436, { ["spellID"] = 259436, }),	-- Loa Loaf
+				recipe(259437, { ["spellID"] = 259437, }),	-- Loa Loaf
+				recipe(259438, { ["spellID"] = 259438, }),	-- Loa Loaf
+				recipe(259442, { ["spellID"] = 259442, }),	-- Mon'Dazi
+				recipe(259443, { ["spellID"] = 259443, }),	-- Mon'Dazi
+				recipe(259444, { ["spellID"] = 259444, }),	-- Mon'Dazi
+				recipe(259424, { ["spellID"] = 259424, }),	-- Ravenberry Tarts
+				recipe(259425, { ["spellID"] = 259425, }),	-- Ravenberry Tarts
+				recipe(259426, { ["spellID"] = 259426, }),	-- Ravenberry Tarts
+				recipe(259439, { ["spellID"] = 259439, }),	-- Sailor's Pie
+				recipe(259440, { ["spellID"] = 259440, }),	-- Sailor's Pie
+				recipe(259441, { ["spellID"] = 259441, }),	-- Sailor's Pie
+				recipe(259433, { ["spellID"] = 259433, }),	-- Seasoned Loins
+				recipe(259434, { ["spellID"] = 259434, }),	-- Seasoned Loins
+				recipe(259435, { ["spellID"] = 259435, }),	-- Seasoned Loins
+				recipe(259445, { ["spellID"] = 259445, }),	-- Spiced Snapper
+				recipe(259446, { ["spellID"] = 259446, }),	-- Spiced Snapper
+				recipe(259447, { ["spellID"] = 259447, }),	-- Spiced Snapper
+				recipe(259427, { ["spellID"] = 259427, }),	-- Swamp Fish 'n Chips
+				recipe(259428, { ["spellID"] = 259428, }),	-- Swamp Fish 'n Chips
+				recipe(259429, { ["spellID"] = 259429, }),	-- Swamp Fish 'n Chips
+			}),
 		}),
+		--]]
 	}),
 });
