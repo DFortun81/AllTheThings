@@ -389,84 +389,93 @@ profession(185, { -- Cooking
 				--]]
 			}),
 		}),
+		--[[
 		tier(2, {	-- Burning Crusade
-			recipe(33290),	-- Blackened Trout
-			recipe(43761),	-- Broiled Bloodfin
-			recipe(33279),	-- Buzzard Bites
-			recipe(36210),	-- Clam Bar
-			recipe(33291),	-- Feltail Delight
-			recipe(33284),	-- Ravager Dog
-			recipe(43758),	-- Stormchops
-			recipe(43772),	-- Kibler's Bits
-			recipe(33292),	-- Blackened Sporefish
-			recipe(33286),	-- Blackened Basilisk
-			recipe(42296),	-- Stewed Trout
-			recipe(33293),	-- Grilled Mudfish
-			recipe(33294),	-- Poached Bluefish
-			recipe(43707),	-- Skullfish Soup
-			recipe(43765),	-- Spicy Hot Talbuk
-			recipe(33295),	-- Golden Fish Sticks
-			recipe(33287),	-- Roasted Clefthoof
-			recipe(33296),	-- Spicy Crawdad
-			recipe(33289),	-- Talbuk Steak
-			recipe(33288),	-- Warp Burger
-			recipe(38868),	-- Crunchy Serpent
-			recipe(38867),	-- Mok'Nathal Shortribs
-			recipe(42302),	-- Fisherman's Feast
-			recipe(42305),	-- Hot Buttered Trout
-			recipe(43779),	-- Delicious Chocolate Cake
+			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+				recipe(33290),	-- Blackened Trout
+				recipe(43761),	-- Broiled Bloodfin
+				recipe(33279),	-- Buzzard Bites
+				recipe(36210),	-- Clam Bar
+				recipe(33291),	-- Feltail Delight
+				recipe(33284),	-- Ravager Dog
+				recipe(43758),	-- Stormchops
+				recipe(43772),	-- Kibler's Bits
+				recipe(33292),	-- Blackened Sporefish
+				recipe(33286),	-- Blackened Basilisk
+				recipe(42296),	-- Stewed Trout
+				recipe(33293),	-- Grilled Mudfish
+				recipe(33294),	-- Poached Bluefish
+				recipe(43707),	-- Skullfish Soup
+				recipe(43765),	-- Spicy Hot Talbuk
+				recipe(33295),	-- Golden Fish Sticks
+				recipe(33287),	-- Roasted Clefthoof
+				recipe(33296),	-- Spicy Crawdad
+				recipe(33289),	-- Talbuk Steak
+				recipe(33288),	-- Warp Burger
+				recipe(38868),	-- Crunchy Serpent
+				recipe(38867),	-- Mok'Nathal Shortribs
+				recipe(42302),	-- Fisherman's Feast
+				recipe(42305),	-- Hot Buttered Trout
+				recipe(43779),	-- Delicious Chocolate Cake
+			}),
 		}),
+		--]]
 		tier(3, {	-- Wrath
-			recipe(57421),	-- Northern Stew
-			recipe(58523),	-- Bad Clams
-			recipe(58525),	-- Haunted Herring
-			recipe(58521),	-- Last Week's Mammoth
-			recipe(58512),	-- Tasty Cupcake
-			recipe(45561),	-- Grilled Bonescale
-			recipe(45562),	-- Sauteed Goby
-			recipe(45560),	-- Smoked Rockfin
-			recipe(45569),	-- Baked Manta Ray
-			recipe(64358),	-- Black Jelly
-			recipe(58065),	-- Dalaran Clam Chowder
-			recipe(88015),	-- Darkbrew Lager
-			recipe(45563),	-- Grilled Sculpin
-			recipe(45549),	-- Mammoth Meal
-			recipe(45566),	-- Pickled Fangtooth
-			recipe(45565),	-- Poached Nettlefish
-			recipe(45553),	-- Rhino Dogs
-			recipe(45552),	-- Roasted Worg
-			recipe(45550),	-- Shoveltusk Steak
-			recipe(45564),	-- Smoked Salmon
-			recipe(45551),	-- Worm Delight
-			un(1, i(34126)),	-- Recipe: Shoveltusk Soup
-			un(1, i(39692)),	-- Recipe: Succulent Orca Stew
-			un(1, i(39644)),	-- Recipe: Kungaloosh
-			recipe(53056),	-- Kungaloosh
-			recipe(45554),	-- Great Feast
-			recipe(57441),	-- Blackened Dragonfin
-			recipe(57438),	-- Blackened Worg Steak
-			recipe(57435),	-- Critter Bites
-			recipe(57439),	-- Cuttlesteak
-			recipe(57442),	-- Dragonfin Filet
-			recipe(45568),	-- Firecracker Salmon
-			recipe(57436),	-- Hearty Rhino
-			recipe(45570),	-- Imperial Manta Steak
-			recipe(45555),	-- Mega Mammoth Meal
-			recipe(45559),	-- Mighty Rhino Dogs
-			recipe(45567),	-- Poached Northern Sculpin
-			recipe(57434),	-- Rhinolicious Wormsteak
-			recipe(57437),	-- Snapper Extreme
-			recipe(57440),	-- Spiced Mammoth Treats
-			recipe(45557),	-- Spiced Worm Burger
-			recipe(45571),	-- Spicy Blue Nettlefish
-			recipe(57433),	-- Spicy Fried Herring
-			recipe(45556),	-- Tender Shoveltusk Steak
-			recipe(57443),	-- Tracker Snacks
-			recipe(45558),	-- Very Burnt Worg
-			recipe(62350),	-- Worg Tartare
-			recipe(57423),	-- Fish Feast
-			recipe(58527),	-- Gigantic Feast
-			recipe(58528),	-- Small Feast
+			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+				-- Note!! Only commenting out actual items as Automation takes care of the recipes themselves
+				un(1, i(34126)),	-- Recipe: Shoveltusk Soup
+				un(1, i(39692)),	-- Recipe: Succulent Orca Stew
+				un(1, i(39644)),	-- Recipe: Kungaloosh
+				--[[
+				recipe(57421),	-- Northern Stew
+				recipe(58523),	-- Bad Clams
+				recipe(58525),	-- Haunted Herring
+				recipe(58521),	-- Last Week's Mammoth
+				recipe(58512),	-- Tasty Cupcake
+				recipe(45561),	-- Grilled Bonescale
+				recipe(45562),	-- Sauteed Goby
+				recipe(45560),	-- Smoked Rockfin
+				recipe(45569),	-- Baked Manta Ray
+				recipe(64358),	-- Black Jelly
+				recipe(58065),	-- Dalaran Clam Chowder
+				recipe(88015),	-- Darkbrew Lager
+				recipe(45563),	-- Grilled Sculpin
+				recipe(45549),	-- Mammoth Meal
+				recipe(45566),	-- Pickled Fangtooth
+				recipe(45565),	-- Poached Nettlefish
+				recipe(45553),	-- Rhino Dogs
+				recipe(45552),	-- Roasted Worg
+				recipe(45550),	-- Shoveltusk Steak
+				recipe(45564),	-- Smoked Salmon
+				recipe(45551),	-- Worm Delight
+				recipe(53056),	-- Kungaloosh
+				recipe(45554),	-- Great Feast
+				recipe(57441),	-- Blackened Dragonfin
+				recipe(57438),	-- Blackened Worg Steak
+				recipe(57435),	-- Critter Bites
+				recipe(57439),	-- Cuttlesteak
+				recipe(57442),	-- Dragonfin Filet
+				recipe(45568),	-- Firecracker Salmon
+				recipe(57436),	-- Hearty Rhino
+				recipe(45570),	-- Imperial Manta Steak
+				recipe(45555),	-- Mega Mammoth Meal
+				recipe(45559),	-- Mighty Rhino Dogs
+				recipe(45567),	-- Poached Northern Sculpin
+				recipe(57434),	-- Rhinolicious Wormsteak
+				recipe(57437),	-- Snapper Extreme
+				recipe(57440),	-- Spiced Mammoth Treats
+				recipe(45557),	-- Spiced Worm Burger
+				recipe(45571),	-- Spicy Blue Nettlefish
+				recipe(57433),	-- Spicy Fried Herring
+				recipe(45556),	-- Tender Shoveltusk Steak
+				recipe(57443),	-- Tracker Snacks
+				recipe(45558),	-- Very Burnt Worg
+				recipe(62350),	-- Worg Tartare
+				recipe(57423),	-- Fish Feast
+				recipe(58527),	-- Gigantic Feast
+				recipe(58528),	-- Small Feast
+				--]]
+			}),
 		}),
 		tier(4, {	-- Cata
 			recipe(88006),	-- Blackened Surprise
