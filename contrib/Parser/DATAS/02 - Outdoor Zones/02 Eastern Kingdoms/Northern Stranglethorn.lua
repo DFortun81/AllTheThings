@@ -1309,6 +1309,9 @@ _.Zones =
 						n(1094, { 	-- Venture Co. Miner
 							i(1991),	-- Goblin Power Shovel
 						}),
+						n(4260, { 	-- Venture Co. Shredder
+							i(5755),	-- Onyx Shredder Plate
+						}),
 						n(674, { 	-- Venture Co. Strip Miner
 							dr(0.2, i(11203)),	--Formula: Enchant Gloves - Advanced Mining
 							i(1991),	-- Goblin Power Shovel
