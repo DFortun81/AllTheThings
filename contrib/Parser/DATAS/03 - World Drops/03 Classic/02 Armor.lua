@@ -407,6 +407,7 @@ _.WorldDrops =
 					i(4781),	-- Whispering Vest
 					i(4782),	-- Solstice Robe
 					un(7, i(4861)),	-- Sleek Feathered Tunic
+					i(5755),	-- Onyx Shredder Plate
 					un(7, i(6180)), -- Slarkskin
 					un(7, i(6195)), -- Wax-Polished Armor
 					un(7, i(6197)), -- Loch Croc Hide Vest

@@ -244,6 +244,7 @@ profession(185, { -- Cooking
 		},
 	}),
 	filter(200, { 	-- Recipes
+		--[[
 		n(-3, { 	-- Holiday
 			recipe(65454),	-- Bread of the Dead
 			recipe(21143),	-- Gingerbread Cookie
@@ -263,24 +264,46 @@ profession(185, { -- Cooking
 			recipe(185704),		-- Lemon Herb Filet
 			recipe(185708),		-- Sugar-Crusted Fish Feast
 		}),
+		--]]
 		tier(1, {	-- Classic
 			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+				-- Note!! Only commenting out actual items as Automation takes care of the recipes themselves
 				un(2, i(16072)),	-- Expert Cookbook
 				un(2, i(16073)),	-- Artisan Cookbook
 				un(2, i(27736)),	-- Master Cookbook
+				un(7, i(6891)),	-- Recipe: Herb Baked Egg
+				un(7, i(5485)),	-- Recipe: Fillet of Frenzy
+				un(7, h(i(3734))),		-- Recipe: Big Bear Steak [Removed From Game!]
+				un(7, i(5482)),	-- Recipe: Kaldorei Spider Kabob
+				un(8, h(recipe(3397))),	-- Big Bear Steak [Removed From Game!]
+				{
+					["itemID"] = 7678,		-- Recipe: Thistle Tea (Removed from Game!)
+					["description"] = "Do not attempt to buy this to learn on your non-Rogue characters, it won't let you. Also, you'd have to spend a couple million gold to get ahold of one.",
+					["u"] = 1,
+				},
+				un(7, i(5489)),	-- Recipe: Lean Venison
+				un(7, i(12227)), -- Recipe: Lean Wolf Steak
+				un(7, i(5487)),	-- Recipe: Dig Rat Stew
+				un(7, i(44977)),	-- Recipe: Dig Rat Stew
+				un(7, i(3736)),	-- Recipe: Tasty Lion Steak
+				un(7, i(3737)),	-- Recipe: Soothing Turtle Bisque
+				un(7, i(13939)),	-- Recipe: Spotted Yellowtail
+				un(7, i(13942)),	-- Recipe: Grilled Squid
+				un(7, i(35564)),	-- Recipe: Charred Bear Kabobs
+				un(7, i(35566)),	-- Recipe: Juicy Bear Burger
+				un(7, i(13945)),	-- Recipe: Nightfin Soup
+				un(7, i(13946)),	-- Recipe: Poached Sunscale Salmon
+				un(7, i(21025)), -- Recipe: Dirge's Kickin' Chimaerok Chops
+				--[[
 				recipe(37836),	-- Spice Bread
 				recipe(7751),	-- Brilliant Smallfish
 				recipe(2538),	-- Charred Wolf Meat
 				recipe(15935),	-- Crispy Bat Wing
-				un(7, i(6891)),	-- Recipe: Herb Baked Egg
 				recipe(8604),	-- Herb Baked Egg
 				recipe(33276),	-- Lynx Steak
 				recipe(2540),	-- Roasted Boar Meat
-				a(recipe(33277)),	-- Roasted Moongraze Tenderloin
+				recipe(33277),	-- Roasted Moongraze Tenderloin
 				recipe(7752),	-- Slitherskin Mackerel
-				un(7, h(i(3734))),		-- Recipe: Big Bear Steak [Removed From Game!]
-				un(8, h(recipe(3397))),	-- Big Bear Steak [Removed From Game!]
-				un(7, i(5482)),	-- Recipe: Kaldorei Spider Kabob
 				recipe(6412),	-- Kaldorei Spider Kabob
 				recipe(2539),	-- Spiced Wolf Meat
 				recipe(2795),	-- Beer Basted Boar Ribs
@@ -291,7 +314,6 @@ profession(185, { -- Cooking
 				recipe(33278),	-- Bat Bites
 				recipe(6499),	-- Boiled Clams
 				recipe(2541),	-- Coyote Steak
-				un(7, i(5485)),	-- Recipe: Fillet of Frenzy
 				recipe(6415),	-- Fillet of Frenzy
 				recipe(2542),	-- Goretusk Liver Pie
 				recipe(7754),	-- Loch Frenzy Delight
@@ -301,11 +323,6 @@ profession(185, { -- Cooking
 				recipe(2543),	-- Westfall Stew
 				recipe(3371),	-- Blood Sausage
 				recipe(28267),	-- Crunchy Spider Surprise
-				{
-					["itemID"] = 7678,		-- Recipe: Thistle Tea (Removed from Game!)
-					["description"] = "Do not attempt to buy this to learn on your non-Rogue characters, it won't let you. Also, you'd have to spend a couple million gold to get ahold of one.",
-					["u"] = 1,
-				},
 				{
 					["recipeID"] = 9513,	-- Thistle Tea
 					["classes"] = {4},		-- Rogue Only
@@ -325,21 +342,16 @@ profession(185, { -- Cooking
 				recipe(2549),	-- Seasoned Wolf Kabob
 				recipe(2548),	-- Succulent Pork Ribs
 				recipe(3377),	-- Gooey Spider Cake
-				un(7, i(5489)),	-- Recipe: Lean Venison
 				un(7, recipe(6419)),	-- Lean Venison
 				recipe(3373),	-- Crocolisk Gumbo
 				recipe(6500),	-- Goblin Deviled Clams
-				un(7, i(12227)), -- Recipe: Lean Wolf Steak
 				un(7, recipe(15853)),	-- Lean Wolf Steak
 				recipe(3398),	-- Hot Lion Chops
-				un(7, i(5487)),	-- Recipe: Dig Rat Stew
-				un(7, i(44977)),	-- Recipe: Dig Rat Stew
 				recipe(6417),	-- Dig Rat Stew
 				recipe(3376),	-- Curiously Tasty Omelet
 				recipe(24418),	-- Heavy Crocolisk Stew
-				un(7, i(3736)),	-- Recipe: Tasty Lion Steak
 				recipe(3399),	-- Tasty Lion Steak
-				desc(un(1, recipe(13028)), "Henry Stern who is currently the only source of acquiring Goldthorn Tea is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, take the recipe off the list, or give us another way to obtain it."),	-- Goldthorn Tea
+				un(1, recipe(13028)),	-- Goldthorn Tea
 				recipe(7828),	-- Rockscale Cod
 				recipe(4094),	-- Barbecued Buzzard Wing
 				recipe(15863),	-- Carrion Surprise
@@ -350,7 +362,6 @@ profession(185, { -- Cooking
 				recipe(15865),	-- Mystery Stew
 				recipe(15855),	-- Roast Raptor
 				recipe(25954),	-- Sagefish Delight
-				un(7, i(3737)),	-- Recipe: Soothing Turtle Bisque
 				recipe(3400),	-- Soothing Turtle Bisque
 				recipe(15906),	-- Dragonbreath Chili
 				recipe(15910),	-- Heavy Kodo Stew
@@ -359,29 +370,23 @@ profession(185, { -- Cooking
 				recipe(18241),	-- Filet of Redgill
 				recipe(15933),	-- Monster Omelet
 				recipe(15915),	-- Spiced Chili Crab
-				un(7, i(13939)),	-- Recipe: Spotted Yellowtail
 				recipe(18238),	-- Spotted Yellowtail
 				recipe(22480),	-- Tender Wolf Steak
 				recipe(20626),	-- Undermine Clam Chowder
-				un(7, i(13942)),	-- Recipe: Grilled Squid
 				recipe(18240),	-- Grilled Squid
 				recipe(18242),	-- Hot Smoked Bass
 				recipe(64054),	-- Clamlette Magnifique
-				un(7, i(35564)),	-- Recipe: Charred Bear Kabobs
 				recipe(46684),	-- Charred Bear Kabobs
-				un(7, i(35566)),	-- Recipe: Juicy Bear Burger
 				recipe(46688),	-- Juicy Bear Burger
-				un(7, i(13945)),	-- Recipe: Nightfin Soup
 				recipe(18243),	-- Nightfin Soup
-				un(7, i(13946)),	-- Recipe: Poached Sunscale Salmon
 				recipe(18244),	-- Poached Sunscale Salmon
 				recipe(18247),	-- Baked Salmon
 				recipe(18245),	-- Lobster Stew
 				recipe(18246),	-- Mightfish Steak
 				recipe(22761),	-- Runn Tum Tuber Surprise
 				recipe(24801),	-- Smoked Desert Dumplings
-				un(7, i(21025)), -- Recipe: Dirge's Kickin' Chimaerok Chops
 				un(8, recipe(25659)),	-- Dirge's Kickin' Chimaerok Chops
+				--]]
 			}),
 		}),
 		tier(2, {	-- Burning Crusade
@@ -438,7 +443,6 @@ profession(185, { -- Cooking
 			un(1, i(39644)),	-- Recipe: Kungaloosh
 			recipe(53056),	-- Kungaloosh
 			recipe(45554),	-- Great Feast
-			
 			recipe(57441),	-- Blackened Dragonfin
 			recipe(57438),	-- Blackened Worg Steak
 			recipe(57435),	-- Critter Bites
@@ -520,7 +524,6 @@ profession(185, { -- Cooking
 			recipe(124225),	-- Toasted Fish Jerky
 			recipe(125121),	-- Wildfowl Ginseng Soup
 			recipe(124224),	-- Yak Cheese Curds
-			
 			-- Flavor Items
 			recipe(126655),	-- Banana Infused Rum
 			recipe(126654),	-- Four Senses Brew
@@ -528,7 +531,6 @@ profession(185, { -- Cooking
 			recipe(125120),	-- Spicy Salmon
 			recipe(105190),	-- Pandaren Banquet
 			recipe(105194),	-- Great Pandaren Banquet
-			
 			-- Added with 5.4
 			recipe(145309),	-- Farmer's Delight
 			recipe(145311),	-- Fluffy Silkfeather Omelet
@@ -536,7 +538,6 @@ profession(185, { -- Cooking
 			recipe(145305),	-- Seasoned Pomfruit Slices
 			recipe(145307),	-- Spiced Blossom Soup
 			recipe(145310),	-- Stuffed Lushrooms
-			
 			-- Master of the Brew
 			{
 				["recipeID"] = 125589,	-- Way of the Brew
@@ -549,7 +550,6 @@ profession(185, { -- Cooking
 					recipe(125603),	-- Great Banquet of the Brew
 				}
 			},
-			
 			-- Master of the Grill
 			{
 				["recipeID"] = 124694,	-- Way of the Grill
@@ -562,7 +562,6 @@ profession(185, { -- Cooking
 					recipe(125142),	-- Great Banquet of the Grill
 				}
 			},
-			
 			-- Master of the Oven
 			{
 				["recipeID"] = 125588,	-- Way of the Oven
@@ -575,7 +574,6 @@ profession(185, { -- Cooking
 					recipe(125601),	-- Great Banquet of the Oven
 				}
 			},
-			
 			-- Master of the Pot
 			{
 				["recipeID"] = 125586,	-- Way of the Pot
@@ -588,7 +586,6 @@ profession(185, { -- Cooking
 					recipe(125597),	-- Great Banquet of the Pot
 				}
 			},
-			
 			-- Master of the Steamer
 			{
 				["recipeID"] = 125587,	-- Way of the Steamer
@@ -601,7 +598,6 @@ profession(185, { -- Cooking
 					recipe(125599),	-- Great Banquet of the Steamer
 				}
 			},
-			
 			-- Master of the Wok
 			{
 				["recipeID"] = 125584,	-- Way of the Wok
@@ -614,7 +610,6 @@ profession(185, { -- Cooking
 					recipe(125595),	-- Great Banquet of the Wok
 				}
 			},
-			
 			-- Noodle Karts
 			recipe(145038),	-- Noodle Cart Kit
 			recipe(145061),	-- Deluxe Noodle Cart Kit
