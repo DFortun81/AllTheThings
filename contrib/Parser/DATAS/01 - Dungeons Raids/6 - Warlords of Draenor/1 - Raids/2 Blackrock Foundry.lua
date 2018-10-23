@@ -530,7 +530,7 @@ _.Instances =
 							ach(8952),	-- Ashes, Ashes...
 							ach(8992),	-- Blackhand's Crucible
 							i(120277, { -- Essence of the Iron Conqueror
-								qa(37553, { -- Essence of the Iron Conqueror
+								qr( qa(37553, { -- Essence of the Iron Conqueror
 									i(120215, { -- Helm of the Iron Conqueror
 										i(115568),	-- 
 										i(115586),	-- 
@@ -556,10 +556,10 @@ _.Instances =
 										i(115587),	-- 
 										i(115564),	-- 
 									}),
-								}),
+								})),
 							}),
 							i(119310, { -- Essence of the Iron Conqueror
-								qh(37540, { -- Essence of the Iron Conqueror
+								qr( qh(37540, { -- Essence of the Iron Conqueror
 									i(120215, { -- Helm of the Iron Conqueror
 										i(115568),	-- 
 										i(115586),	-- 
@@ -585,10 +585,10 @@ _.Instances =
 										i(115587),	-- 
 										i(115564),	-- 
 									}),
-								}),							
+								})),							
 							}),
 							i(120279, { -- Essence of the Iron Protector
-								qa(37555, { -- Essence of the Iron Protector
+								qr( qa(37555, { -- Essence of the Iron Protector
 									i(120225, { -- Helm of the Iron Protector
 										i(115584),	-- 
 										i(115556),	-- 
@@ -619,10 +619,10 @@ _.Instances =
 										i(115546),	-- 
 										i(115575),	-- 
 									}),
-								}),							
+								})),							
 							}),
 							i(119323, { -- Essence of the Iron Protector
-								qh(37543, { -- Essence of the Iron Protector
+								qr( qh(37543, { -- Essence of the Iron Protector
 									i(120225, { -- Helm of the Iron Protector
 										i(115584),	-- 
 										i(115556),	-- 
@@ -653,10 +653,10 @@ _.Instances =
 										i(115546),	-- 
 										i(115575),	-- 
 									}),
-								}),								
+								})),								
 							}),
 							i(120278, { -- Essence of the Iron Vanquisher
-								qa(37554, { -- Essence of the Iron Vanquisher
+								qr( qa(37554, { -- Essence of the Iron Vanquisher
 									i(120218, { -- Helm of the Iron Vanquisher
 										i(115553),	-- 
 										i(115542),	-- 
@@ -687,10 +687,10 @@ _.Instances =
 										i(115535),	-- 
 										i(115573),	-- 
 									}),
-								}),								
+								})),								
 							}),
 							i(119316, { -- Essence of the Iron Vanquisher
-								qh(37541, { -- Essence of the Iron Vanquisher
+								qr( qh(37541, { -- Essence of the Iron Vanquisher
 									i(120218, { -- Helm of the Iron Vanquisher
 										i(115553),	-- 
 										i(115542),	-- 
@@ -721,7 +721,7 @@ _.Instances =
 										i(115535),	-- 
 										i(115573),	-- 
 									}),
-								}),									
+								})),									
 							}),
 							i(138809),	-- Illusion: Mark of Blackrock
 							i(122200),	-- Music Roll: A Siege of Worlds
@@ -1066,7 +1066,7 @@ _.Instances =
 							ach(8952),	-- Ashes, Ashes...
 							ach(8992),	-- Blackhand's Crucible
 							i(120280, { -- Essence of the Iron Conqueror
-								qa(37557, { -- Essence of the Iron Conqueror
+								qr( qa(37557, { -- Essence of the Iron Conqueror
 									i(120230, { -- Helm of the Iron Conqueror
 										i(115568),
 										i(115586),
@@ -1092,10 +1092,10 @@ _.Instances =
 										i(115587),
 										i(115564),				
 									}),
-								}),
+								})),
 							}),
 							i(120206, { -- Essence of the Iron Conqueror
-								qh(37551, { -- Essence of the Iron Conqueror
+								qr( qh(37551, { -- Essence of the Iron Conqueror
 									i(120230, { -- Helm of the Iron Conqueror
 										i(115568),
 										i(115586),
@@ -1121,10 +1121,10 @@ _.Instances =
 										i(115587),
 										i(115564),				
 									}),
-								}),							
+								})),							
 							}),
 							i(120281, { -- Essence of the Iron Protector
-								qa(37559, { -- Essence of the Iron Protector
+								qr( qa(37559, { -- Essence of the Iron Protector
 									i(120240, { -- Helm of the Iron Protector
 										i(115584),
 										i(115556),
@@ -1155,10 +1155,10 @@ _.Instances =
 										i(115546),
 										i(115575),			
 									}),
-								}),							
+								})),							
 							}),
 							i(120207, { -- Essence of the Iron Protector
-								qh(37547, { -- Essence of the Iron Protector
+								qr( qh(37547, { -- Essence of the Iron Protector
 									i(120240, { -- Helm of the Iron Protector
 										i(115584),
 										i(115556),
@@ -1189,10 +1189,10 @@ _.Instances =
 										i(115546),
 										i(115575),			
 									}),
-								}),								
+								})),								
 							}),
 							i(120282, { -- Essence of the Iron Vanquisher
-								qa(37558, { -- Essence of the Iron Vanquisher
+								qr( qa(37558, { -- Essence of the Iron Vanquisher
 									i(120233, { -- Helm of the Iron Vanquisher
 										i(115553),	
 										i(115542),
@@ -1223,10 +1223,10 @@ _.Instances =
 										i(115535),
 										i(115573),			
 									}),
-								}),								
+								})),								
 							}),
 							i(120208, { -- Essence of the Iron Vanquisher
-								qh(37549, { -- Essence of the Iron Vanquisher
+								qr( qh(37549, { -- Essence of the Iron Vanquisher
 									i(120233, { -- Helm of the Iron Vanquisher
 										i(115553),	
 										i(115542),
@@ -1257,7 +1257,7 @@ _.Instances =
 										i(115535),
 										i(115573),			
 									}),
-								}),									
+								})),									
 							}),
 							i(138809),	-- Illusion: Mark of Blackrock
 							i(122200),	-- Music Roll: A Siege of Worlds
@@ -1622,7 +1622,7 @@ _.Instances =
 								title(301),	-- Ironbane
 							}),
 							i(120283, { -- Essence of the Iron Conqueror
-								qa(37560, { -- Essence of the Iron Conqueror
+								qr( qa(37560, { -- Essence of the Iron Conqueror
 									i(120245, { -- Helm of the Iron Conqueror
 										i(115568),
 										i(115586),
@@ -1648,10 +1648,10 @@ _.Instances =
 										i(115587),
 										i(115564),				
 									}),
-								}),
+								})),
 							}),
 							i(120209, { -- Essence of the Iron Conqueror
-								qh(37552, { -- Essence of the Iron Conqueror
+								qr( qh(37552, { -- Essence of the Iron Conqueror
 									i(120245, { -- Helm of the Iron Conqueror
 										i(115568),
 										i(115586),
@@ -1677,10 +1677,10 @@ _.Instances =
 										i(115587),
 										i(115564),				
 									}),
-								}),							
+								})),							
 							}),
 							i(120284, { -- Essence of the Iron Protector
-								qa(37562, { -- Essence of the Iron Protector
+								qr( qa(37562, { -- Essence of the Iron Protector
 									i(120255, { -- Helm of the Iron Protector
 										i(115584),
 										i(115556),
@@ -1711,10 +1711,10 @@ _.Instances =
 										i(115546),
 										i(115575),			
 									}),
-								}),							
+								})),							
 							}),
 							i(120210, { -- Essence of the Iron Protector
-								qh(37548, { -- Essence of the Iron Protector
+								qr( qh(37548, { -- Essence of the Iron Protector
 									i(120255, { -- Helm of the Iron Protector
 										i(115584),
 										i(115556),
@@ -1745,10 +1745,10 @@ _.Instances =
 										i(115546),
 										i(115575),			
 									}),
-								}),								
+								})),								
 							}),
 							i(120285, { -- Essence of the Iron Vanquisher
-								qa(37561, { -- Essence of the Iron Vanquisher
+								qr( qa(37561, { -- Essence of the Iron Vanquisher
 									i(120248, { -- Helm of the Iron Vanquisher
 										i(115553),	
 										i(115542),
@@ -1779,10 +1779,10 @@ _.Instances =
 										i(115535),
 										i(115573),			
 									}),
-								}),								
+								})),								
 							}),
 							i(120211, { -- Essence of the Iron Vanquisher
-								qh(37550, { -- Essence of the Iron Vanquisher
+								qr( qh(37550, { -- Essence of the Iron Vanquisher
 									i(120248, { -- Helm of the Iron Vanquisher
 										i(115553),	
 										i(115542),
@@ -1813,7 +1813,7 @@ _.Instances =
 										i(115535),
 										i(115573),			
 									}),
-								}),									
+								})),									
 							}),
 							i(116660),	-- Ironhoof Destroyer
 							i(138809),	-- Illusion: Mark of Blackrock
