@@ -14,6 +14,7 @@ _.ExpansionFeatures =
 						--["questID"] = 53112,	-- Azeroth's Tear
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
+						["description"] = "|CFFFF0000Turn this into Magni in Silithius at 42.40, 44.29 for Champions of Azeroth rep.|r",
 						["groups"] = {
 							{
 								["currencyID"] = 1579,	-- Champions of Azeroth
@@ -25,7 +26,7 @@ _.ExpansionFeatures =
 						--["questID"] = 53118,	-- Dented Coin
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
-						["collectible"] = false,
+						["description"] = "|CFFFF0000Turn this into Cyrus Crestfall in Boralus at 68, 21 for Proudmore Admiralty rep.|r",
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							{
@@ -38,6 +39,7 @@ _.ExpansionFeatures =
 						--["questID"] = 53120,	-- Exotic Spices
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
+						["description"] = "|CFFFF0000Turn this into Xun Xun in Drustvar at 20.66, 45.59 for Order of Embers rep.|r",
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							{
@@ -50,6 +52,7 @@ _.ExpansionFeatures =
 						--["questID"] = 53114,	-- Golden Beetle
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
+						["description"] = "|CFFFF0000Turn this into Krag'wa in Nazmire at 75, 56 for Talanji's Expedition rep.|r",
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							{
@@ -62,6 +65,7 @@ _.ExpansionFeatures =
 						--["questID"] = 53115,	-- Island Flotsam
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
+						["description"] = "|CFFFF0000Turn this into Jani in Zul'Dazar at 35.34, 7.66 for Zandlari Empire rep.|r",
 						["races"] = HORDE_ONLY,
 						["description"] = "Must have unlocked Jana by doing the quest \"Pests\".",
 						["groups"] = {
@@ -75,6 +79,7 @@ _.ExpansionFeatures =
 						--["questID"] = 53119,	-- Lost Sea Scroll
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
+						["description"] = "|CFFFF0000Turn this into Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							{
@@ -87,6 +92,7 @@ _.ExpansionFeatures =
 						--["questID"] = 53117,	-- Rusted Alliance Insignia
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
+						["description"] = "|CFFFF0000Turn this into Jaelaana in Boralus at 69.33, 24.95 for 7th Legion rep.|r",
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							{
@@ -99,6 +105,7 @@ _.ExpansionFeatures =
 						--["questID"] = 53116,	-- Rusted Horde Insignia
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
+						["description"] = "|CFFFF0000Turn this into Ransa Greyfeather for Honorbound rep.|r",
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							{
@@ -111,6 +118,7 @@ _.ExpansionFeatures =
 						--["questID"] = 53113,	-- Shimminering Shell
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
+						["description"] = "|CFFFF0000Turn this into Hoarder Jena in Vol'dun at 56.70, 49.80 for Voldunai rep.|r",
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							{
