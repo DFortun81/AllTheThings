@@ -2624,6 +2624,36 @@ _.Zones =
 							i(91484),	-- Malevolent Gladiator's Spellblade
 							i(91535),	-- Malevolent Gladiator's Staff
 						}),
+						-- DK
+						un(14, i(84993)), -- Elite Malevolent Gladiator's Dreadplate Chestpiece
+						un(14, i(85028)), -- Elite Malevolent Gladiator's Dreadplate Gauntlets
+						un(14, i(85046)), -- Elite Malevolent Gladiator's Dreadplate Helm
+						un(14, i(85059)), -- Elite Malevolent Gladiator's Dreadplate Legguards
+						un(14, i(85086)), -- Elite Malevolent Gladiator's Dreadplate Shoulders
+						-- Druid Dragonhide
+						un(14, i(85025)), -- Elite Malevolent Gladiator's Dragonhide Gloves
+						un(14, i(85045)), -- Elite Malevolent Gladiator's Dragonhide Helm
+						un(14, i(85058)), -- Elite Malevolent Gladiator's Dragonhide Legguards
+						un(14, i(85065)), -- Elite Malevolent Gladiator's Dragonhide Robes
+						un(14, i(85084)), -- Elite Malevolent Gladiator's Dragonhide Spaulders
+						-- Druid Kodohide
+						un(14, i(85026)), -- Elite Malevolent Gladiator's Kodohide Gloves
+						un(14, i(85043)), -- Elite Malevolent Gladiator's Kodohide Helm
+						un(14, i(85051)), -- Elite Malevolent Gladiator's Kodohide Legguards
+						un(14, i(85071)), -- Elite Malevolent Gladiator's Kodohide Robes
+						un(14, i(85082)), -- Elite Malevolent Gladiator's Kodohide Spaulders
+						-- Druid Wyrmhide
+						un(14, i(85022)), -- Elite Malevolent Gladiator's Wyrmhide Gloves
+						un(14, i(85037)), -- Elite Malevolent Gladiator's Wyrmhide Helm
+						un(14, i(85049)), -- Elite Malevolent Gladiator's Wyrmhide Legguards
+						un(14, i(85070)), -- Elite Malevolent Gladiator's Wyrmhide Robes
+						un(14, i(85080)), -- Elite Malevolent Gladiator's Wyrmhide Spaulders
+						-- Hunter
+						un(14, i(84994)), -- Elite Malevolent Gladiator's Chain Armor
+						un(14, i(85020)), -- Elite Malevolent Gladiator's Chain Gauntlets
+						un(14, i(85034)), -- Elite Malevolent Gladiator's Chain Helm
+						un(14, i(85061)), -- Elite Malevolent Gladiator's Chain Leggings
+						un(14, i(85076)), -- Elite Malevolent Gladiator's Chain Spaulders
 						i(91482),	-- Malevolent Gladiator's Barrier
 						i(91486),	-- Malevolent Gladiator's Battle Staff
 						i(91759),	-- Malevolent Gladiator's Bonecracker
