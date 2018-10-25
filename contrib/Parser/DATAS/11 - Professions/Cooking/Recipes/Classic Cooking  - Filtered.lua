@@ -296,10 +296,10 @@ profession(185, {	-- Cooking
 						},
 						{
 							["recipeID"] = 45695,	-- Captain Rumsey's Lager
-						}
-					}
-				}
-			}
-		}
+						},
+					},
+				},
+			},
+		},
 	}),
 });

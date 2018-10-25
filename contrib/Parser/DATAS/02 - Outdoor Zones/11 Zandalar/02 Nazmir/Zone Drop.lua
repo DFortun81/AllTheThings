@@ -101,6 +101,7 @@ _.Zones =
 						i(159486),	-- Zocali Waraxe
 						i(159505),	-- Zocali Warglaive
 						i(159549),	-- Zocali Warhammer
+						i(154814),	-- Morass Prowler's Cloak
 						i(154833),	-- Bloodhex Hood
 						i(154838),	-- Bloodhex Mantle
 						i(154836),	-- Bloodhex Vestments

@@ -98,6 +98,7 @@ _.Zones =
 						i(159486),	-- Zocali Waraxe
 						i(159505),	-- Zocali Warglaive
 						i(159549),	-- Zocali Warhammer
+						i(160127),	-- Pterroleather Cloak
 						i(160146),	-- Saurifeather Crest
 						i(160151),	-- Saurifeather Mantle
 						i(160149),	-- Saurifeather Garments
