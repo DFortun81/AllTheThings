@@ -73,8 +73,28 @@ _.Achievements =
 					ach(12945, {			-- Dread Gladiator: Battle for Azeroth Season 1
 						--title(XX),			-- Dread Gladiator (title not in as of Pre-Patch)
 					}),
-					ach(12962, {			-- Duelist: Battle for Azeroth Season 1
-						title(30),				-- Duelist
+					{	-- Duelist: Battle for Azeroth Season 1
+						["achievementID"] = 12961,	-- Duelist: Battle for Azeroth Season 1
+						--["u"] = 2,					-- Unobtainable Achievement
+						--Note!! Uncomment this out when Battle For Azeroth Season 2 hits!
+						--Note!! We do not need a description stating it's not account-bound.  It's well known and ATT tracks it accordingly.
+						["g"] = {
+							{	-- Duelist Title
+								["titleID"] = 30,	-- Duelist
+							},
+							{	-- Illusion: Dreadflame
+								["illusionID"] = 6096,	-- Dreadflame Illusion
+							},
+							{	-- Alliance Dread Gladiator's Cloak
+								["itemID"] = 164575,	--  Alliance Dread Gladiator's Cloak
+							},
+							{	-- Horde Dread Gladiator's Cloak
+								["itemID"] = 164574,	-- Horde Dread Gladiator's Cloak
+							},
+						},
+					},
+					ach(12962, {			-- 
+						title(30),				-- 
 					}),
 					un(2, ach(11015)),		-- Duelist: Legion Season 1
 					un(2, ach(11026)),		-- Duelist: Legion Season 2
@@ -107,10 +127,26 @@ _.Achievements =
 						un(39, title(363)),		-- Fierce Gladiator
 					})),
 					un(2, ach(3436)),		-- Furious Gladiator
-					ach(12961, {			-- Gladiator: Battle for Azeroth Season 1
-						--i(XX),				-- Gladiator Mount (no listing of what this is yet)
-						title(29),			-- Gladiator
-					}),
+					{	-- Gladiator: Battle for Azeroth Season 1
+						["achievementID"] = 12961,	-- Gladiator: Battle for Azeroth Season 1
+						--["u"] = 2,					-- Unobtainable Achievement
+						--Note!! Uncomment this out when Battle For Azeroth Season 2 hits!
+						--Note!! We do not need a description stating it's not account-bound.  It's well known and ATT tracks it accordingly.
+						["g"] = {
+							{	-- Gladiator Title
+								["titleID"] = 29,	-- Gladiator
+							},
+							{	-- Dread Gladiator's Proto-Drake
+								["itemID"] = 156879,	-- Dread Gladiator's Proto-Drake
+							},
+							{	-- Alliance Dread Gladiator's Tabard
+								["itemID"] = 164573,	--  Alliance Dread Gladiator's Tabard
+							},
+							{	-- Horde Dread Gladiator's Tabard
+								["itemID"] = 164572,	-- Horde Dread Gladiator's Tabard
+							},
+						},
+					},
 					un(2, ach(11011)),		-- Gladiator: Legion Season 1
 					un(2, ach(11013)),		-- Gladiator: Legion Season 2
 					un(2, ach(11038)),		-- Gladiator: Legion Season 3

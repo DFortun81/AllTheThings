@@ -3,38 +3,6 @@
 -----------------------------------------------
 _.PVP =
 {
-	n(-4, { 	-- Achievement
-		ach(12961, {	-- Horde Gladiator: Battle for Azeroth Season 1
-			["groups"] = {
-				i(156879),	-- Dread Gladiator's Proto-Drake
-				i(164572),  -- Horde Dread Gladiator's Tabard
-			},
-			["races"] = HORDE_ONLY,
-			["description"] = "The Dread Gladiator's Proto-Drake Mount is not accountwide.",
-		}),
-		ach(12961, {	-- Alliance Gladiator: Battle for Azeroth Season 1
-			["groups"] = {
-				i(156879),	-- Dread Gladiator's Proto-Drake
-				i(164573),  -- Alliance Dread Gladiator's Tabard
-			},
-			["races"] = ALLIANCE_ONLY,
-			["description"] = "The Dread Gladiator's Proto-Drake Mount is not accountwide.",
-		}),
-		ach(12962, {	-- Horde Duelist: Battle for Azeroth Season 1
-			["groups"] = {
-				i(164574),  -- Horde Dread Gladiator's Cloak
-				-- Need to find Dreadflame ID
-			},
-			["races"] = HORDE_ONLY,
-		}),
-		ach(12962, {	-- Alliance Duelist: Battle for Azeroth Season 1
-			["groups"] = {
-				i(164575),  -- Alliance Dread Gladiator's Cloak
-				-- Need to find Dreadflame ID
-			},
-			["races"] = ALLIANCE_ONLY,
-		}),
-	}),
 	n(-6015, { -- Rewards
 		i(135539, {	-- Crate of Battlefield Goods 15-39
 			["groups"] = {

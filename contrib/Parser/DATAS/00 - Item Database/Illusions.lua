@@ -328,4 +328,10 @@ _.IllusionDB = {
 		["illusionID"] = 5397,
 		["text"] = "Primal Victory",
 	},
+	-- Dreadflame
+	{
+		--["itemID"] = 
+		["illusionID"] = 6096,
+		["text"] = "Dreadflame",
+	},
 };
