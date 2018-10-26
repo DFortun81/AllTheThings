@@ -74,7 +74,7 @@ _.Achievements =
 						--title(XX),			-- Dread Gladiator (title not in as of Pre-Patch)
 					}),
 					{	-- Duelist: Battle for Azeroth Season 1
-						["achievementID"] = 12961,	-- Duelist: Battle for Azeroth Season 1
+						["achievementID"] = 12962,	-- Duelist: Battle for Azeroth Season 1
 						--["u"] = 2,					-- Unobtainable Achievement
 						--Note!! Uncomment this out when Battle For Azeroth Season 2 hits!
 						--Note!! We do not need a description stating it's not account-bound.  It's well known and ATT tracks it accordingly.
@@ -82,9 +82,12 @@ _.Achievements =
 							{	-- Duelist Title
 								["titleID"] = 30,	-- Duelist
 							},
+							--[[
+							--Note!! Currently we can not list this due to having no item.
 							{	-- Illusion: Dreadflame
-								["illusionID"] = 6096,	-- Dreadflame Illusion
+								,	-- Dreadflame Illusion
 							},
+							--]]
 							{	-- Alliance Dread Gladiator's Cloak
 								["itemID"] = 164575,	--  Alliance Dread Gladiator's Cloak
 							},
