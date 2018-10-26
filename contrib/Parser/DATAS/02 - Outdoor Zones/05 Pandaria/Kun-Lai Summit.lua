@@ -1276,320 +1276,778 @@ _.Zones =
 						i(102982),	-- Grievous Gladiator's Barrier
 						i(102983),	-- Grievous Gladiator's Endgame
 					}),
-					nh(75693, { -- Doris Chiltonius
-						un(2, i(98162)),	-- Tyrannical Gladiator's Tabard [Elite Rating]
-						un(2, i(101697)),	-- Grievous Gladiator's Tabard [Elite Rating]
-						un(2, i(103636)),	-- Prideful Gladiator's Tabard [Elite Rating]
-						i(144243, { -- Arsenal: Malevolent Gladiator's Weapons
-							i(91482),	-- Malevolent Gladiator's Barrier
-							i(91486),	-- Malevolent Gladiator's Battle Staff
-							i(91759),	-- Malevolent Gladiator's Bonecracker
-							i(91442),	-- Malevolent Gladiator's Bonegrinder
-							i(91446),	-- Malevolent Gladiator's Cleaver
-							i(91440),	-- Malevolent Gladiator's Decapitator
-							i(91480),	-- Malevolent Gladiator's Endgame
-							i(91560),	-- Malevolent Gladiator's Energy Staff
-							i(91556),	-- Malevolent Gladiator's Gavel
-							i(91444),	-- Malevolent Gladiator's Greatsword
-							i(91757),	-- Malevolent Gladiator's Hacker
-							i(91460),	-- Malevolent Gladiator's Longbow
-							i(91660),	-- Malevolent Gladiator's Pike
-							i(91448),	-- Malevolent Gladiator's Pummeler
-							i(91450),	-- Malevolent Gladiator's Quickblade
-							i(91558),	-- Malevolent Gladiator's Redoubt
-							i(91749),	-- Malevolent Gladiator's Render
-							i(91494),	-- Malevolent Gladiator's Reprieve
-							i(91554),	-- Malevolent Gladiator's Rifle
-							i(91745),	-- Malevolent Gladiator's Ripper
-							i(91743),	-- Malevolent Gladiator's Shanker
-							i(91771),	-- Malevolent Gladiator's Shield Wall
-							i(91761),	-- Malevolent Gladiator's Slicer
-							i(91484),	-- Malevolent Gladiator's Spellblade
-							i(91535),	-- Malevolent Gladiator's Staff
-						}),
-						i(91482),	-- Malevolent Gladiator's Barrier
-						i(91480),	-- Malevolent Gladiator's Endgame
-						i(91558),	-- Malevolent Gladiator's Redoubt
-						i(91494),	-- Malevolent Gladiator's Reprieve
-						i(91771),	-- Malevolent Gladiator's Shield Wall
-						i(91454),	-- Malevolent Gladiator's Cape of Prowess
-						i(91462),	-- Malevolent Gladiator's Cord of Cruelty
-						i(91464),	-- Malevolent Gladiator's Cord of Accuracy
-						i(91466),	-- Malevolent Gladiator's Cord of Meditation
-						i(91468),	-- Malevolent Gladiator's Treads of Cruelty
-						i(91470),	-- Malevolent Gladiator's Treads of Alacrity
-						i(91472),	-- Malevolent Gladiator's Treads of Meditation
-						i(91474),	-- Malevolent Gladiator's Cuffs of Accuracy
-						i(91475),	-- Malevolent Gladiator's Cuffs of Prowess
-						i(91476),	-- Malevolent Gladiator's Cuffs of Meditation
-						i(91477),	-- Malevolent Gladiator's Drape of Cruelty
-						i(91478),	-- Malevolent Gladiator's Drape of Prowess
-						i(91479),	-- Malevolent Gladiator's Drape of Meditation
-						un(14, i(85127)),	-- Elite Malevolent Gladiator's Spellblade  -- Daggers
-						un(14, i(85133)),	-- Elite Malevolent Gladiator's Shanker
-						i(91484),	-- Malevolent Gladiator's Spellblade
-						i(91743),	-- Malevolent Gladiator's Shanker
-						un(14, i(85109)),	-- Elite Malevolent Gladiator's Battle Staff  -- Staffs
-						un(14, i(85111)),	-- Elite Malevolent Gladiator's Staff
-						un(14, i(85110)),	-- Elite Malevolent Gladiator's Energy Staff
-						i(91486),	-- Malevolent Gladiator's Battle Staff
-						i(91560),	-- Malevolent Gladiator's Energy Staff
-						i(91535),	-- Malevolent Gladiator's Staff
-						un(14, i(85108)),	-- Elite Malevolent Gladiator's Pike  -- Polearms
-						i(91660),	-- Malevolent Gladiator's Pike
-						un(14, i(85135)),	-- Elite Malevolent Gladiator's Quickblade  -- Swords
-						un(14, i(85134)),	-- Elite Malevolent Gladiator's Slicer
-						un(14, i(85112)),	-- Elite Malevolent Gladiator's Greatsword
-						i(91450),	-- Malevolent Gladiator's Quickblade
-						i(91761),	-- Malevolent Gladiator's Slicer
-						i(91444),	-- Malevolent Gladiator's Greatsword
-						un(14, i(85129)),	-- Elite Malevolent Gladiator's Render  -- Fist Weapons
-						un(14, i(85128)),	-- Elite Malevolent Gladiator's Ripper
-						un(14, i(85117)),	-- Elite Malevolent Gladiator's Slasher
-						un(14, i(85116)),	-- Elite Malevolent Gladiator's Fleshslicer
-						i(91745),	-- Malevolent Gladiator's Ripper
-						i(91749),	-- Malevolent Gladiator's Render
-						un(14, i(85113)),	-- Elite Malevolent Gladiator's Decapitator  -- Axes
-						un(14, i(85132)),	-- Elite Malevolent Gladiator's Hacker
-						un(14, i(85131)),	-- Elite Malevolent Gladiator's Cleaver
-						i(91446),	-- Malevolent Gladiator's Cleaver
-						i(91757),	-- Malevolent Gladiator's Hacker
-						i(91440),	-- Malevolent Gladiator's Decapitator
-						un(14, i(85119)),	-- Elite Malevolent Gladiator's Longbow  -- Ranged Weapons
-						un(14, i(85123)),	-- Elite Malevolent Gladiator's Rifle
-						un(14, i(85120)),	-- Elite Malevolent Gladiator's Crossbow
-						un(14, i(85122)),	-- Elite Malevolent Gladiator's Baton of Light
-						un(14, i(85120)),	-- Elite Malevolent Gladiator's Touch of Defeat
-						i(91460),	-- Malevolent Gladiator's Longbow
-						i(91554),	-- Malevolent Gladiator's Rifle
-						un(14, i(85136)),	-- Elite Malevolent Gladiator's Bonecracker  -- Maces
-						un(14, i(85130)),	-- Elite Malevolent Gladiator's Pummeler
-						un(14, i(85137)),	-- Elite Malevolent Gladiator's Gavel
-						un(14, i(85107)),	-- Elite Malevolent Gladiator's Bonegrinder
-						i(91759),	-- Malevolent Gladiator's Bonecracker
-						i(91442),	-- Malevolent Gladiator's Bonegrinder
-						i(91448),	-- Malevolent Gladiator's Pummeler
-						i(91556),	-- Malevolent Gladiator's Gavel
-						un(14, i(84993)), -- Elite Malevolent Gladiator's Dreadplate Chestpiece  -- DK
-						un(14, i(85028)), -- Elite Malevolent Gladiator's Dreadplate Gauntlets
-						un(14, i(85046)), -- Elite Malevolent Gladiator's Dreadplate Helm
-						un(14, i(85059)), -- Elite Malevolent Gladiator's Dreadplate Legguards
-						un(14, i(85086)), -- Elite Malevolent Gladiator's Dreadplate Shoulders
-						i(91500),	-- Malevolent Gladiator's Dreadplate Chestpiece
-						i(91502),	-- Malevolent Gladiator's Dreadplate Gauntlets
-						i(91504),	-- Malevolent Gladiator's Dreadplate Helm
-						i(91506),	-- Malevolent Gladiator's Dreadplate Legguards
-						i(91508),	-- Malevolent Gladiator's Dreadplate Shoulders
-						un(14, i(85025)), -- Elite Malevolent Gladiator's Dragonhide Gloves  -- Druid Dragonhide
-						un(14, i(85045)), -- Elite Malevolent Gladiator's Dragonhide Helm
-						un(14, i(85058)), -- Elite Malevolent Gladiator's Dragonhide Legguards
-						un(14, i(85065)), -- Elite Malevolent Gladiator's Dragonhide Robes
-						un(14, i(85084)), -- Elite Malevolent Gladiator's Dragonhide Spaulders
-						i(91510),	-- Malevolent Gladiator's Dragonhide Gloves
-						i(91512),	-- Malevolent Gladiator's Dragonhide Helm
-						i(91514),	-- Malevolent Gladiator's Dragonhide Legguards
-						i(91516),	-- Malevolent Gladiator's Dragonhide Robes
-						i(91518),	-- Malevolent Gladiator's Dragonhide Spaulders
-						un(14, i(85026)), -- Elite Malevolent Gladiator's Kodohide Gloves  -- Druid Kodohide
-						un(14, i(85043)), -- Elite Malevolent Gladiator's Kodohide Helm
-						un(14, i(85051)), -- Elite Malevolent Gladiator's Kodohide Legguards
-						un(14, i(85071)), -- Elite Malevolent Gladiator's Kodohide Robes
-						un(14, i(85082)), -- Elite Malevolent Gladiator's Kodohide Spaulders
-						i(91525),	-- Malevolent Gladiator's Kodohide Gloves
-						i(91527),	-- Malevolent Gladiator's Kodohide Helm
-						i(91529),	-- Malevolent Gladiator's Kodohide Legguards
-						i(91531),	-- Malevolent Gladiator's Kodohide Robes
-						i(91533),	-- Malevolent Gladiator's Kodohide Spaulders
-						un(14, i(85022)), -- Elite Malevolent Gladiator's Wyrmhide Gloves  -- Druid Wyrmhide
-						un(14, i(85037)), -- Elite Malevolent Gladiator's Wyrmhide Helm
-						un(14, i(85049)), -- Elite Malevolent Gladiator's Wyrmhide Legguards
-						un(14, i(85070)), -- Elite Malevolent Gladiator's Wyrmhide Robes
-						un(14, i(85080)), -- Elite Malevolent Gladiator's Wyrmhide Spaulders
-						i(91542),	-- Malevolent Gladiator's Wyrmhide Gloves
-						i(91544),	-- Malevolent Gladiator's Wyrmhide Helm
-						i(91546),	-- Malevolent Gladiator's Wyrmhide Legguards
-						i(91548),	-- Malevolent Gladiator's Wyrmhide Robes
-						i(91550),	-- Malevolent Gladiator's Wyrmhide Spaulders
-						un(14, i(84994)), -- Elite Malevolent Gladiator's Chain Armor  -- Hunter
-						un(14, i(85020)), -- Elite Malevolent Gladiator's Chain Gauntlets
-						un(14, i(85034)), -- Elite Malevolent Gladiator's Chain Helm
-						un(14, i(85061)), -- Elite Malevolent Gladiator's Chain Leggings
-						un(14, i(85076)), -- Elite Malevolent Gladiator's Chain Spaulders
-						i(91575),	-- Malevolent Gladiator's Chain Armor
-						i(91577),	-- Malevolent Gladiator's Chain Gauntlets
-						i(91579),	-- Malevolent Gladiator's Chain Helm
-						i(91581),	-- Malevolent Gladiator's Chain Leggings
-						i(91583),	-- Malevolent Gladiator's Chain Spaulders
-						un(14, i(85016)), -- Elite Malevolent Gladiator's Silk Handguards  -- Mage
-						un(14, i(85031)), -- Elite Malevolent Gladiator's Silk Cowl
-						un(14, i(85062)), -- Elite Malevolent Gladiator's Silk Trousers
-						un(14, i(85068)), -- Elite Malevolent Gladiator's Silk Robe
-						un(14, i(85085)), -- Elite Malevolent Gladiator's Silk Amice
-						i(91585),	-- Malevolent Gladiator's Silk Handguards
-						i(91587),	-- Malevolent Gladiator's Silk Cowl
-						i(91589),	-- Malevolent Gladiator's Silk Trousers
-						i(91591),	-- Malevolent Gladiator's Silk Robe
-						i(91593),	-- Malevolent Gladiator's Silk Amice
-						un(14, i(85018)), -- Elite Malevolent Gladiator's Ironskin Gloves  -- Monk Ironskin
-						un(14, i(85033)), -- Elite Malevolent Gladiator's Ironskin Helm
-						un(14, i(85064)), -- Elite Malevolent Gladiator's Ironskin Legguards
-						un(14, i(85066)), -- Elite Malevolent Gladiator's Ironskin Tunic
-						un(14, i(85087)), -- Elite Malevolent Gladiator's Ironskin Spaulders
-						i(91600),	-- Malevolent Gladiator's Ironskin Gloves
-						i(91602),	-- Malevolent Gladiator's Ironskin Helm
-						i(91604),	-- Malevolent Gladiator's Ironskin Legguards
-						i(91606),	-- Malevolent Gladiator's Ironskin Spaulders
-						i(91608),	-- Malevolent Gladiator's Ironskin Tunic
-						un(14, i(85015)), -- Elite Malevolent Gladiator's Copperskin Gloves  -- Monk Copperskin 
-						un(14, i(85030)), -- Elite Malevolent Gladiator's Copperskin Helm
-						un(14, i(85060)), -- Elite Malevolent Gladiator's Copperskin Legguards
-						un(14, i(85067)), -- Elite Malevolent Gladiator's Copperskin Tunic
-						un(14, i(85088)), -- Elite Malevolent Gladiator's Copperskin Spaulders
-						i(91610),	-- Malevolent Gladiator's Copperskin Gloves
-						i(91612),	-- Malevolent Gladiator's Copperskin Helm
-						i(91614),	-- Malevolent Gladiator's Copperskin Legguards
-						i(91618),	-- Malevolent Gladiator's Copperskin Tunic
-						i(91616),	-- Malevolent Gladiator's Copperskin Spaulders
-						un(14, i(84992)), -- Elite Malevolent Gladiator's Scaled Chestpiece  -- Paladin Scaled
-						un(14, i(85027)), -- Elite Malevolent Gladiator's Scaled Gauntlet
-						un(14, i(85044)), -- Elite Malevolent Gladiator's Scaled Helm
-						un(14, i(85057)), -- Elite Malevolent Gladiator's Scaled Legguards
-						un(14, i(85091)), -- Elite Malevolent Gladiator's Scaled Shoulders
-						i(91620),	-- Malevolent Gladiator's Scaled Chestpiece
-						i(91622),	-- Malevolent Gladiator's Scaled Gauntlets
-						i(91624),	-- Malevolent Gladiator's Scaled Helm
-						i(91626),	-- Malevolent Gladiator's Scaled Legguards
-						i(91628),	-- Malevolent Gladiator's Scaled Shoulders -- Paladin Ornamented 
-						un(14, i(84991)), -- Elite Malevolent Gladiator's Ornamented Chestguard
-						un(14, i(85024)), -- Elite Malevolent Gladiator's Ornamented Gloves
-						un(14, i(85042)), -- Elite Malevolent Gladiator's Ornamented Headcover
-						un(14, i(85056)), -- Elite Malevolent Gladiator's Ornamented Legplates
-						un(14, i(85090)), -- Elite Malevolent Gladiator's Ornamented Spaulders
-						i(91640),	-- Malevolent Gladiator's Ornamented Chestguard
-						i(91642),	-- Malevolent Gladiator's Ornamented Gloves
-						i(91644),	-- Malevolent Gladiator's Ornamented Headcover
-						i(91646),	-- Malevolent Gladiator's Ornamented Legplates
-						i(91648),	-- Malevolent Gladiator's Ornamented Spaulders
-						un(14, i(85013)), -- Elite Malevolent Gladiator's Mooncloth Gloves  -- Priest Mooncloth
-						un(14, i(85039)), -- Elite Malevolent Gladiator's Mooncloth Helm
-						un(14, i(85052)), -- Elite Malevolent Gladiator's Mooncloth Leggings
-						un(14, i(85072)), -- Elite Malevolent Gladiator's Mooncloth Robe
-						un(14, i(85083)), -- Elite Malevolent Gladiator's Mooncloth Mantle
-						i(91662),	-- Malevolent Gladiator's Mooncloth Gloves
-						i(91664),	-- Malevolent Gladiator's Mooncloth Helm
-						i(91666),	-- Malevolent Gladiator's Mooncloth Leggings
-						i(91668),	-- Malevolent Gladiator's Mooncloth Robe
-						i(91670),	-- Malevolent Gladiator's Mooncloth Mantle
-						un(14, i(85017)), -- Elite Malevolent Gladiator's Satin Gloves  -- Priest Satin
-						un(14, i(85040)), -- Elite Malevolent Gladiator's Satin Hood
-						un(14, i(85053)), -- Elite Malevolent Gladiator's Satin Leggings
-						un(14, i(85073)), -- Elite Malevolent Gladiator's Satin Robe
-						un(14, i(85074)), -- Elite Malevolent Gladiator's Satin Mantle
-						i(91672),	-- Malevolent Gladiator's Satin Gloves
-						i(91674),	-- Malevolent Gladiator's Satin Hood
-						i(91676),	-- Malevolent Gladiator's Satin Leggings
-						i(91678),	-- Malevolent Gladiator's Satin Robe
-						i(91680),	-- Malevolent Gladiator's Satin Mantle
-						un(14, i(84994)), -- Elite Malevolent Gladiator's Leather Tunic  -- Rogue Leather
-						un(14, i(85023)), -- Elite Malevolent Gladiator's Leather Gloves
-						un(14, i(85041)), -- Elite Malevolent Gladiator's Leather Helm
-						un(14, i(85055)), -- Elite Malevolent Gladiator's Leather Legguards
-						un(14, i(85089)), -- Elite Malevolent Gladiator's Leather Spaulders
-						i(91693),	-- Malevolent Gladiator's Leather Tunic
-						i(91695),	-- Malevolent Gladiator's Leather Gloves
-						i(91697),	-- Malevolent Gladiator's Leather Helm
-						i(91699),	-- Malevolent Gladiator's Leather Legguards
-						i(91701),	-- Malevolent Gladiator's Leather Spaulders
-						un(14, i(84990)), -- Elite Malevolent Gladiator's Ringmail Armor  -- Shaman RingMail
-						un(14, i(85014)), -- Elite Malevolent Gladiator's Ringmail Gauntlets
-						un(14, i(85029)), -- Elite Malevolent Gladiator's Ringmail Helm
-						un(14, i(85054)), -- Elite Malevolent Gladiator's Ringmail Leggings
-						un(14, i(85075)), -- Elite Malevolent Gladiator's Ringmail Spaulders
-						i(91711),	-- Malevolent Gladiator's Ringmail Armor
-						i(91713),	-- Malevolent Gladiator's Ringmail Gauntlets
-						i(91715),	-- Malevolent Gladiator's Ringmail Helm
-						i(91717),	-- Malevolent Gladiator's Ringmail Leggings
-						i(91719),	-- Malevolent Gladiator's Ringmail Spaulders
-						un(14, i(84988)), -- Elite Malevolent Gladiator's Mail Armor  -- Shaman Mail
-						un(14, i(85012)), -- Elite Malevolent Gladiator's Mail Gauntlets
-						un(14, i(85036)), -- Elite Malevolent Gladiator's Mail Helm
-						un(14, i(85048)), -- Elite Malevolent Gladiator's Mail Leggings
-						un(14, i(85079)), -- Elite Malevolent Gladiator's Mail Spaulders
-						i(91733),	-- Malevolent Gladiator's Mail Armor
-						i(91735),	-- Malevolent Gladiator's Mail Gauntlets
-						i(91737),	-- Malevolent Gladiator's Mail Helm
-						i(91739),	-- Malevolent Gladiator's Mail Leggings
-						i(91741),	-- Malevolent Gladiator's Mail Spaulders
-						un(14, i(84989)), -- Elite Malevolent Gladiator's Linked Armor  -- Shaman Linked
-						un(14, i(85011)), -- Elite Malevolent Gladiator's Linked Gauntlets
-						un(14, i(85038)), -- Elite Malevolent Gladiator's Linked Helm
-						un(14, i(85050)), -- Elite Malevolent Gladiator's Linked Leggings
-						un(14, i(85081)), -- Elite Malevolent Gladiator's Linked Spaulders
-						i(91721),	-- Malevolent Gladiator's Linked Armor
-						i(91723),	-- Malevolent Gladiator's Linked Gauntlets
-						i(91725),	-- Malevolent Gladiator's Linked Helm
-						i(91727),	-- Malevolent Gladiator's Linked Leggings
-						i(91729),	-- Malevolent Gladiator's Linked Spaulders
-						un(14, i(85021)), -- Elite Malevolent Gladiator's Felweave Armor  -- Warlock
-						un(14, i(85035)), -- Elite Malevolent Gladiator's Felweave Cowl
-						un(14, i(85047)), -- Elite Malevolent Gladiator's Felweave Trousers
-						un(14, i(85069)), -- Elite Malevolent Gladiator's Felweave Rainment
-						un(14, i(85078)), -- Elite Malevolent Gladiator's Felweave Amice
-						i(91773),	-- Malevolent Gladiator's Felweave Handguards
-						i(91775),	-- Malevolent Gladiator's Felweave Cowl
-						i(91777),	-- Malevolent Gladiator's Felweave Trousers
-						i(91779),	-- Malevolent Gladiator's Felweave Raiment
-						i(91781),	-- Malevolent Gladiator's Felweave Amice
-						un(14, i(84987)), -- Elite Malevolent Gladiator's Plate Chestpiece  -- Warrior
-						un(14, i(85019)), -- Elite Malevolent Gladiator's Plate Gauntlets
-						un(14, i(85032)), -- Elite Malevolent Gladiator's Plate Helm
-						un(14, i(85063)), -- Elite Malevolent Gladiator's Plate Legguards
-						un(14, i(85077)), -- Elite Malevolent Gladiator's Plate Shoulders
-						i(91783),	-- Malevolent Gladiator's Plate Chestpiece
-						i(91785),	-- Malevolent Gladiator's Plate Gauntlets
-						i(91787),	-- Malevolent Gladiator's Plate Helm
-						i(91789),	-- Malevolent Gladiator's Plate Legguards
-						i(91791),	-- Malevolent Gladiator's Plate Shoulders
-						i(91520),	-- Malevolent Gladiator's Belt of Meditation
-						i(91522),	-- Malevolent Gladiator's Footguards of Meditation
-						i(91524),	-- Malevolent Gladiator's Bindings of Meditation
-						i(91537),	-- Malevolent Gladiator's Belt of Cruelty
-						i(91539),	-- Malevolent Gladiator's Footguards of Alacrity
-						i(91541),	-- Malevolent Gladiator's Bindings of Prowess
-						i(91565),	-- Malevolent Gladiator's Links of Cruelty
-						i(91567),	-- Malevolent Gladiator's Links of Accuracy
-						i(91569),	-- Malevolent Gladiator's Sabatons of Cruelty
-						i(91571),	-- Malevolent Gladiator's Sabatons of Alacrity
-						i(91573),	-- Malevolent Gladiator's Wristguards of Alacrity
-						i(91574),	-- Malevolent Gladiator's Wristguards of Accuracy
-						i(91595),	-- Malevolent Gladiator's Waistband of Cruelty
-						i(91597),	-- Malevolent Gladiator's Boots of Alacrity
-						i(91599),	-- Malevolent Gladiator's Armwraps of Accuracy
-						i(91453),	-- Malevolent Gladiator's Cape of Cruelty
-						i(91634),	-- Malevolent Gladiator's Greaves of Alacrity
-						i(91636),	-- Malevolent Gladiator's Greaves of Meditation
-						i(91638),	-- Malevolent Gladiator's Bracers of Prowess
-						i(91639),	-- Malevolent Gladiator's Bracers of Meditation
-						i(91650),	-- Malevolent Gladiator's Girdle of Accuracy
-						i(91652),	-- Malevolent Gladiator's Girdle of Prowess
-						i(91654),	-- Malevolent Gladiator's Warboots of Cruelty
-						i(91656),	-- Malevolent Gladiator's Warboots of Alacrity
-						i(91658),	-- Malevolent Gladiator's Armplates of Proficiency
-						i(91659),	-- Malevolent Gladiator's Armplates of Alacrity
-						i(91688),	-- Malevolent Gladiator's Waistband of Accuracy
-						i(91690),	-- Malevolent Gladiator's Boots of Cruelty
-						i(91692),	-- Malevolent Gladiator's Armwraps of Alacrity
-						i(91703),	-- Malevolent Gladiator's Waistguard of Meditation
-						i(91705),	-- Malevolent Gladiator's Footguards of Alacrity
-						i(91707),	-- Malevolent Gladiator's Footguards of Meditation
-						i(91709),	-- Malevolent Gladiator's Armbands of Prowess
-						i(91710),	-- Malevolent Gladiator's Armbands of Meditation
-						i(91731),	-- Malevolent Gladiator's Waistguard of Cruelty
-						i(91764),	-- Malevolent Gladiator's Cloak of Alacrity
-						i(91765),	-- Malevolent Gladiator's Cloak of Prowess
-						i(91630),	-- Malevolent Gladiator's Clasp of Cruelty
-						i(91632),	-- Malevolent Gladiator's Clasp of Meditation
-					}),
+					{	-- Doris Chiltonius
+						["npcID"] = 75693,	-- Doris Chiltonius
+						["coords"] = {
+							{ 35.4, 83.4 },
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							--Note!! Leave in this order.  Arsenal -> Ensemble -> Weapons -> Gear -> Elite Tabard -> Elite Weapons -> Elite Gear
+							--Don't change the order!!
+							{	-- Arsenal: Malevolent Gladiator's Weapons
+								["itemID"] = 144243,	-- Arsenal: Malevolent Gladiator's Weapons
+								["g"] = {
+									{	-- Malevolent Gladiator's Barrier
+										["itemID"] = 91482,	-- Malevolent Gladiator's Barrier
+									},
+									{	-- Malevolent Gladiator's Battle Staff
+										["itemID"] = 91486,	-- Malevolent Gladiator's Battle Staff
+									},
+									{	-- Malevolent Gladiator's Bonecracker
+										["itemID"] = 91759,	-- Malevolent Gladiator's Bonecracker
+									},
+									{	-- Malevolent Gladiator's Bonegrinder
+										["itemID"] = 91442,	-- Malevolent Gladiator's Bonegrinder
+									},
+									{	-- Malevolent Gladiator's Cleaver
+										["itemID"] = 91446,	-- Malevolent Gladiator's Cleaver
+									},
+									{	-- Malevolent Gladiator's Decapitator
+										["itemID"] = 91440,	-- Malevolent Gladiator's Decapitator
+									},
+									{	-- Malevolent Gladiator's Endgame
+										["itemID"] = 91480,	-- Malevolent Gladiator's Endgame
+									},
+									{	-- Malevolent Gladiator's Energy Staff
+										["itemID"] = 91560,	-- Malevolent Gladiator's Energy Staff
+									},
+									{	-- Malevolent Gladiator's Gavel
+										["itemID"] = 91556,	-- Malevolent Gladiator's Gavel
+									},
+									{	-- Malevolent Gladiator's Greatsword
+										["itemID"] = 91444,	-- Malevolent Gladiator's Greatsword
+									},
+									{	-- Malevolent Gladiator's Hacker
+										["itemID"] = 91757,	-- Malevolent Gladiator's Hacker
+									},
+									{	-- Malevolent Gladiator's Longbow
+										["itemID"] = 91460,	-- Malevolent Gladiator's Longbow
+									},
+									{	-- Malevolent Gladiator's Pike
+										["itemID"] = 91660,	-- Malevolent Gladiator's Pike
+									},
+									{	-- Malevolent Gladiator's Pummeler
+										["itemID"] = 91448,	-- Malevolent Gladiator's Pummeler
+									},
+									{	-- Malevolent Gladiator's Quickblade
+										["itemID"] = 91450,	-- Malevolent Gladiator's Quickblade
+									},
+									{	-- Malevolent Gladiator's Redoubt
+										["itemID"] = 91558,	-- Malevolent Gladiator's Redoubt
+									},
+									{	-- Malevolent Gladiator's Render
+										["itemID"] = 91749,	-- Malevolent Gladiator's Render
+									},
+									{	-- Malevolent Gladiator's Reprieve
+										["itemID"] = 91494,	-- Malevolent Gladiator's Reprieve
+									},
+									{	-- Malevolent Gladiator's Rifle
+										["itemID"] = 91554,	-- Malevolent Gladiator's Rifle
+									},
+									{	-- Malevolent Gladiator's Ripper
+										["itemID"] = 91745,	-- Malevolent Gladiator's Ripper
+									},
+									{	-- Malevolent Gladiator's Shanker
+										["itemID"] = 91743,	-- Malevolent Gladiator's Shanker
+									},
+									{	-- Malevolent Gladiator's Shield Wall
+										["itemID"] = 91771,	-- Malevolent Gladiator's Shield Wall
+									},
+									{	-- Malevolent Gladiator's Slicer
+										["itemID"] = 91761,	-- Malevolent Gladiator's Slicer
+									},
+									{	-- Malevolent Gladiator's Spellblade
+										["itemID"] = 91484,	-- Malevolent Gladiator's Spellblade
+									},
+									{	-- Malevolent Gladiator's Staff
+										["itemID"] = 91535,	-- Malevolent Gladiator's Staff
+									},
+								},
+							},
+							--Note!! These PvP Weapons are listed here because they are still sold by the vendor.
+							--Even though they are in the ensemble we still want to list them here.
+							{	-- Malevolent Gladiator's Barrier
+								["itemID"] = 91482,	-- Malevolent Gladiator's Barrier
+							},
+							{	-- Malevolent Gladiator's Battle Staff
+								["itemID"] = 91486,	-- Malevolent Gladiator's Battle Staff
+							},
+							{	-- Malevolent Gladiator's Bonecracker
+								["itemID"] = 91759,	-- Malevolent Gladiator's Bonecracker
+							},
+							{	-- Malevolent Gladiator's Bonegrinder
+								["itemID"] = 91442,	-- Malevolent Gladiator's Bonegrinder
+							},
+							{	-- Malevolent Gladiator's Cleaver
+								["itemID"] = 91446,	-- Malevolent Gladiator's Cleaver
+							},
+							{	-- Malevolent Gladiator's Decapitator
+								["itemID"] = 91440,	-- Malevolent Gladiator's Decapitator
+							},
+							{	-- Malevolent Gladiator's Endgame
+								["itemID"] = 91480,	-- Malevolent Gladiator's Endgame
+							},
+							{	-- Malevolent Gladiator's Energy Staff
+								["itemID"] = 91560,	-- Malevolent Gladiator's Energy Staff
+							},
+							{	-- Malevolent Gladiator's Gavel
+								["itemID"] = 91556,	-- Malevolent Gladiator's Gavel
+							},
+							{	-- Malevolent Gladiator's Greatsword
+								["itemID"] = 91444,	-- Malevolent Gladiator's Greatsword
+							},
+							{	-- Malevolent Gladiator's Hacker
+								["itemID"] = 91757,	-- Malevolent Gladiator's Hacker
+							},
+							{	-- Malevolent Gladiator's Longbow
+								["itemID"] = 91460,	-- Malevolent Gladiator's Longbow
+							},
+							{	-- Malevolent Gladiator's Pike
+								["itemID"] = 91660,	-- Malevolent Gladiator's Pike
+							},
+							{	-- Malevolent Gladiator's Pummeler
+								["itemID"] = 91448,	-- Malevolent Gladiator's Pummeler
+							},
+							{	-- Malevolent Gladiator's Quickblade
+								["itemID"] = 91450,	-- Malevolent Gladiator's Quickblade
+							},
+							{	-- Malevolent Gladiator's Redoubt
+								["itemID"] = 91558,	-- Malevolent Gladiator's Redoubt
+							},
+							{	-- Malevolent Gladiator's Render
+								["itemID"] = 91749,	-- Malevolent Gladiator's Render
+							},
+							{	-- Malevolent Gladiator's Reprieve
+								["itemID"] = 91494,	-- Malevolent Gladiator's Reprieve
+							},
+							{	-- Malevolent Gladiator's Rifle
+								["itemID"] = 91554,	-- Malevolent Gladiator's Rifle
+							},
+							{	-- Malevolent Gladiator's Ripper
+								["itemID"] = 91745,	-- Malevolent Gladiator's Ripper
+							},
+							{	-- Malevolent Gladiator's Shanker
+								["itemID"] = 91743,	-- Malevolent Gladiator's Shanker
+							},
+							{	-- Malevolent Gladiator's Shield Wall
+								["itemID"] = 91771,	-- Malevolent Gladiator's Shield Wall
+							},
+							{	-- Malevolent Gladiator's Slicer
+								["itemID"] = 91761,	-- Malevolent Gladiator's Slicer
+							},
+							{	-- Malevolent Gladiator's Spellblade
+								["itemID"] = 91484,	-- Malevolent Gladiator's Spellblade
+							},
+							{	-- Malevolent Gladiator's Staff
+								["itemID"] = 91535,	-- Malevolent Gladiator's Staff
+							},
+							--Maleovent Gear
+							{	-- Malevolent Gladiator's Copperskin Tunic
+								["itemID"] = 91618,	-- Malevolent Gladiator's Copperskin Tunic
+							},
+							{	-- Malevolent Gladiator's Scaled Legguards
+								["itemID"] = 91626,	-- Malevolent Gladiator's Scaled Legguards
+							},
+							{	-- Malevolent Gladiator's Cape of Prowess
+								["itemID"] = 91454,	-- Malevolent Gladiator's Cape of Prowess
+							},
+							{	-- Malevolent Gladiator's Cord of Cruelty
+								["itemID"] = 91462,	-- Malevolent Gladiator's Cord of Cruelty
+							},
+							{	-- Malevolent Gladiator's Cord of Accuracy
+								["itemID"] = 91464,	-- Malevolent Gladiator's Cord of Accuracy
+							},
+							{	-- Malevolent Gladiator's Cord of Meditation
+								["itemID"] = 91466,	-- Malevolent Gladiator's Cord of Meditation
+							},
+							{	-- Malevolent Gladiator's Treads of Cruelty
+								["itemID"] = 91468,	-- Malevolent Gladiator's Treads of Cruelty
+							},
+							{	-- Malevolent Gladiator's Treads of Alacrity
+								["itemID"] = 91470,	-- Malevolent Gladiator's Treads of Alacrity
+							},
+							{	-- Malevolent Gladiator's Treads of Meditation
+								["itemID"] = 91472,	-- Malevolent Gladiator's Treads of Meditation
+							},
+							{	-- Malevolent Gladiator's Cuffs of Accuracy
+								["itemID"] = 91474,	-- Malevolent Gladiator's Cuffs of Accuracy
+							},
+							{	-- Malevolent Gladiator's Cuffs of Prowess
+								["itemID"] = 91475,	-- Malevolent Gladiator's Cuffs of Prowess
+							},
+							{	-- Malevolent Gladiator's Cuffs of Meditation
+								["itemID"] = 91476,	-- Malevolent Gladiator's Cuffs of Meditation
+							},
+							{	-- Malevolent Gladiator's Drape of Cruelty
+								["itemID"] = 91477,	-- Malevolent Gladiator's Drape of Cruelty
+							},
+							{	-- Malevolent Gladiator's Drape of Prowess
+								["itemID"] = 91478,	-- Malevolent Gladiator's Drape of Prowess
+							},
+							{	-- Malevolent Gladiator's Drape of Meditation
+								["itemID"] = 91479,	-- Malevolent Gladiator's Drape of Meditation
+							},
+							{	-- Malevolent Gladiator's Dreadplate Chestpiece
+								["itemID"] = 91500,	-- Malevolent Gladiator's Dreadplate Chestpiece
+							},
+							{	-- Malevolent Gladiator's Dreadplate Gauntlets
+								["itemID"] = 91502,	-- Malevolent Gladiator's Dreadplate Gauntlets
+							},
+							{	-- Malevolent Gladiator's Dreadplate Helm
+								["itemID"] = 91504,	-- Malevolent Gladiator's Dreadplate Helm
+							},
+							{	-- Malevolent Gladiator's Dreadplate Legguards
+								["itemID"] = 91506,	-- Malevolent Gladiator's Dreadplate Legguards
+							},
+							{	-- Malevolent Gladiator's Dreadplate Shoulders
+								["itemID"] = 91508,	-- Malevolent Gladiator's Dreadplate Shoulders
+							},
+							{	-- Malevolent Gladiator's Dragonhide Gloves
+								["itemID"] = 91510,	-- Malevolent Gladiator's Dragonhide Gloves
+							},
+							{	-- Malevolent Gladiator's Dragonhide Helm
+								["itemID"] = 91512,	-- Malevolent Gladiator's Dragonhide Helm
+							},
+							{	-- Malevolent Gladiator's Dragonhide Legguards
+								["itemID"] = 91514,	-- Malevolent Gladiator's Dragonhide Legguards
+							},
+							{	-- Malevolent Gladiator's Dragonhide Robes
+								["itemID"] = 91516,	-- Malevolent Gladiator's Dragonhide Robes
+							},
+							{	-- Malevolent Gladiator's Dragonhide Spaulders
+								["itemID"] = 91518,	-- Malevolent Gladiator's Dragonhide Spaulders
+							},
+							{	-- Malevolent Gladiator's Belt of Meditation
+								["itemID"] = 91520,	-- Malevolent Gladiator's Belt of Meditation
+							},
+							{	-- Malevolent Gladiator's Footguards of Meditation
+								["itemID"] = 91522,	-- Malevolent Gladiator's Footguards of Meditation
+							},
+							{	-- Malevolent Gladiator's Bindings of Meditation
+								["itemID"] = 91524,	-- Malevolent Gladiator's Bindings of Meditation
+							},
+							{	-- Malevolent Gladiator's Kodohide Gloves
+								["itemID"] = 91525,	-- Malevolent Gladiator's Kodohide Gloves
+							},
+							{	-- Malevolent Gladiator's Kodohide Helm
+								["itemID"] = 91527,	-- Malevolent Gladiator's Kodohide Helm
+							},
+							{	-- Malevolent Gladiator's Kodohide Legguards
+								["itemID"] = 91529,	-- Malevolent Gladiator's Kodohide Legguards
+							},
+							{	-- Malevolent Gladiator's Kodohide Robes
+								["itemID"] = 91531,	-- Malevolent Gladiator's Kodohide Robes
+							},
+							{	-- Malevolent Gladiator's Kodohide Spaulders
+								["itemID"] = 91533,	-- Malevolent Gladiator's Kodohide Spaulders
+							},
+							{	-- Malevolent Gladiator's Belt of Cruelty
+								["itemID"] = 91537,	-- Malevolent Gladiator's Belt of Cruelty
+							},
+							{	-- Malevolent Gladiator's Footguards of Alacrity
+								["itemID"] = 91539,	-- Malevolent Gladiator's Footguards of Alacrity
+							},
+							{	-- Malevolent Gladiator's Bindings of Prowess
+								["itemID"] = 91541,	-- Malevolent Gladiator's Bindings of Prowess
+							},
+							{	-- Malevolent Gladiator's Wyrmhide Gloves
+								["itemID"] = 91542,	-- Malevolent Gladiator's Wyrmhide Gloves
+							},
+							{	-- Malevolent Gladiator's Wyrmhide Helm
+								["itemID"] = 91544,	-- Malevolent Gladiator's Wyrmhide Helm
+							},
+							{	-- Malevolent Gladiator's Wyrmhide Legguards
+								["itemID"] = 91546,	-- Malevolent Gladiator's Wyrmhide Legguards
+							},
+							{	-- Malevolent Gladiator's Wyrmhide Robes
+								["itemID"] = 91548,	-- Malevolent Gladiator's Wyrmhide Robes
+							},
+							{	-- Malevolent Gladiator's Wyrmhide Spaulders
+								["itemID"] = 91550,	-- Malevolent Gladiator's Wyrmhide Spaulders
+							},
+							{	-- Malevolent Gladiator's Links of Cruelty
+								["itemID"] = 91565,	-- Malevolent Gladiator's Links of Cruelty
+							},
+							{	-- Malevolent Gladiator's Links of Accuracy
+								["itemID"] = 91567,	-- Malevolent Gladiator's Links of Accuracy
+							},
+							{	-- Malevolent Gladiator's Sabatons of Cruelty
+								["itemID"] = 91569,	-- Malevolent Gladiator's Sabatons of Cruelty
+							},
+							{	-- Malevolent Gladiator's Sabatons of Alacrity
+								["itemID"] = 91571,	-- Malevolent Gladiator's Sabatons of Alacrity
+							},
+							{	-- Malevolent Gladiator's Wristguards of Alacrity
+								["itemID"] = 91573,	-- Malevolent Gladiator's Wristguards of Alacrity
+							},
+							{	-- Malevolent Gladiator's Wristguards of Accuracy
+								["itemID"] = 91574,	-- Malevolent Gladiator's Wristguards of Accuracy
+							},
+							{	-- Malevolent Gladiator's Chain Armor
+								["itemID"] = 91575,	-- Malevolent Gladiator's Chain Armor
+							},
+							--Elite Gear Start!!
+							--Elite Weapons!!
+							{	-- Malevolent Gladiator's Baton of Light
+								["itemID"] = 85122,	-- Malevolent Gladiator's Baton of Light
+							},
+							{	-- Malevolent Gladiator's Battle Staff
+								["itemID"] = 85109,	-- Malevolent Gladiator's Battle Staff
+							},
+							{	-- Malevolent Gladiator's Bonecracker
+								["itemID"] = 85136,	-- Malevolent Gladiator's Bonecracker
+							},
+							{	-- Malevolent Gladiator's Bonegrinder
+								["itemID"] = 85107,	-- Malevolent Gladiator's Bonegrinder
+							},
+							{	-- Malevolent Gladiator's Cleaver
+								["itemID"] = 85131,	-- Malevolent Gladiator's Cleaver
+							},
+							{	-- Malevolent Gladiator's Crossbow
+								["itemID"] = 85120,	-- Malevolent Gladiator's Crossbow
+							},
+							{	-- Malevolent Gladiator's Decapitator
+								["itemID"] = 85113,	-- Malevolent Gladiator's Decapitator
+							},
+							{	-- Malevolent Gladiator's Energy Staff
+								["itemID"] = 85110,	-- Malevolent Gladiator's Energy Staff
+							},
+							{	-- Malevolent Gladiator's Fleshslicer
+								["itemID"] = 85116,	-- Malevolent Gladiator's Fleshslicer
+							},
+							{	-- Malevolent Gladiator's Gavel
+								["itemID"] = 85137,	-- Malevolent Gladiator's Gavel
+							},
+							{	-- Malevolent Gladiator's Greatsword
+								["itemID"] = 85112,	-- Malevolent Gladiator's Greatsword
+							},
+							{	-- Malevolent Gladiator's Hacker
+								["itemID"] = 85132,	-- Malevolent Gladiator's Hacker
+							},
+							{	-- Malevolent Gladiator's Longbow
+								["itemID"] = 85119,	-- Malevolent Gladiator's Longbow
+							},
+							{	-- Malevolent Gladiator's Pike
+								["itemID"] = 85108,	-- Malevolent Gladiator's Pike
+							},
+							{	-- Malevolent Gladiator's Pummeler
+								["itemID"] = 85130,	-- Malevolent Gladiator's Pummeler
+							},
+							{	-- Malevolent Gladiator's Quickblade
+								["itemID"] = 85135,	-- Malevolent Gladiator's Quickblade
+							},
+							{	-- Malevolent Gladiator's Render
+								["itemID"] = 85129,	-- Malevolent Gladiator's Render
+							},
+							{	-- Malevolent Gladiator's Rifle
+								["itemID"] = 85123,	-- Malevolent Gladiator's Rifle
+							},
+							{	-- Malevolent Gladiator's Ripper
+								["itemID"] = 85128,	-- Malevolent Gladiator's Ripper
+							},
+							{	-- Malevolent Gladiator's Shanker
+								["itemID"] = 85133,	-- Malevolent Gladiator's Shanker
+							},
+							{	-- Malevolent Gladiator's Slasher
+								["itemID"] = 85117,	-- Malevolent Gladiator's Slasher
+							},
+							{	-- Malevolent Gladiator's Slicer
+								["itemID"] = 85134,	-- Malevolent Gladiator's Slicer
+							},
+							{	-- Malevolent Gladiator's Spellblade
+								["itemID"] = 85127,	-- Malevolent Gladiator's Spellblade
+							},
+							{	-- Malevolent Gladiator's Staff
+								["itemID"] = 85111,	-- Malevolent Gladiator's Staff
+							},
+							{	-- Malevolent Gladiator's Touch of Defeat
+								["itemID"] = 85120,	-- Malevolent Gladiator's Touch of Defeat
+							},
+							--Elite Gear!!
+							{	-- Elite Gear
+								["setSubHeaderID"] = 392,							-- Elite
+								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
+								["u"] = 14,											-- Elite PvP Gear Filter
+								--Note!! This will allow us to filter the header so we don't see it straggling along
+								["g"] = {
+									{	-- Tyrannical Gladiator's Tabard
+										["itemID"] = 98162,	-- Tyrannical Gladiator's Tabard
+										["u"] = 2,			-- BoP Removed Filter
+									},
+									{	-- Grievous Gladiator's Tabard
+										["itemID"] = 101697,	-- Grievous Gladiator's Tabard
+										["u"] = 2,			-- BoP Removed Filter
+									},
+									{	-- Prideful Gladiator's Tabard
+										["itemID"] = 103636,	-- Prideful Gladiator's Tabard
+										["u"] = 2,			-- BoP Removed Filter
+									},
+									{	-- Malevolent Gladiator's Mooncloth Gloves
+										["itemID"] = 85013,	-- Malevolent Gladiator's Mooncloth Gloves
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Mooncloth Helm
+										["itemID"] = 85039,	-- Malevolent Gladiator's Mooncloth Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Mooncloth Leggings
+										["itemID"] = 85052,	-- Malevolent Gladiator's Mooncloth Leggings
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Mooncloth Robe
+										["itemID"] = 85072,	-- Malevolent Gladiator's Mooncloth Robe
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Mooncloth Mantle
+										["itemID"] = 85083,	-- Malevolent Gladiator's Mooncloth Mantle
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Satin Gloves
+										["itemID"] = 85017,	-- Malevolent Gladiator's Satin Gloves
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Satin Hood
+										["itemID"] = 85040,	-- Malevolent Gladiator's Satin Hood
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Satin Leggings
+										["itemID"] = 85053,	-- Malevolent Gladiator's Satin Leggings
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Satin Robe
+										["itemID"] = 85073,	-- Malevolent Gladiator's Satin Robe
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Satin Mantle
+										["itemID"] = 85074,	-- Malevolent Gladiator's Satin Mantle
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Silk Handguards
+										["itemID"] = 85016,	-- Malevolent Gladiator's Silk Handguards
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Silk Cowl
+										["itemID"] = 85031,	-- Malevolent Gladiator's Silk Cowl
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Silk Trousers
+										["itemID"] = 85062,	-- Malevolent Gladiator's Silk Trousers
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Silk Robe
+										["itemID"] = 85068,	-- Malevolent Gladiator's Silk Robe
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Silk Amice
+										["itemID"] = 85085,	-- Malevolent Gladiator's Silk Amice
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Felweave Armor
+										["itemID"] = 85021,	-- Malevolent Gladiator's Felweave Armor
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Felweave Cowl
+										["itemID"] = 85035,	-- Malevolent Gladiator's Felweave Cowl
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Felweave Trousers
+										["itemID"] = 85047,	-- Malevolent Gladiator's Felweave Trousers
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Felweave Rainment
+										["itemID"] = 85069,	-- Malevolent Gladiator's Felweave Rainment
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Felweave Amice
+										["itemID"] = 85078,	-- Malevolent Gladiator's Felweave Amice
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Dragonhide Gloves
+										["itemID"] = 85025,	-- Malevolent Gladiator's Dragonhide Gloves
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Dragonhide Helm
+										["itemID"] = 85045,	-- Malevolent Gladiator's Dragonhide Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Dragonhide Legguards
+										["itemID"] = 85058,	-- Malevolent Gladiator's Dragonhide Legguards
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Dragonhide Robes
+										["itemID"] = 85065,	-- Malevolent Gladiator's Dragonhide Robes
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Dragonhide Spaulders
+										["itemID"] = 85084,	-- Malevolent Gladiator's Dragonhide Spaulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Kodohide Gloves
+										["itemID"] = 85026,	-- Malevolent Gladiator's Kodohide Gloves
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Kodohide Helm
+										["itemID"] = 85043,	-- Malevolent Gladiator's Kodohide Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Kodohide Legguards
+										["itemID"] = 85051,	-- Malevolent Gladiator's Kodohide Legguards
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Kodohide Robes
+										["itemID"] = 85071,	-- Malevolent Gladiator's Kodohide Robes
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Kodohide Spaulders
+										["itemID"] = 85082,	-- Malevolent Gladiator's Kodohide Spaulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Wyrmhide Gloves
+										["itemID"] = 85022,	-- Malevolent Gladiator's Wyrmhide Gloves
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Wyrmhide Helm
+										["itemID"] = 85037,	-- Malevolent Gladiator's Wyrmhide Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Wyrmhide Legguards
+										["itemID"] = 85049,	-- Malevolent Gladiator's Wyrmhide Legguards
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Wyrmhide Robes
+										["itemID"] = 85070,	-- Malevolent Gladiator's Wyrmhide Robes
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Wyrmhide Spaulders
+										["itemID"] = 85080,	-- Malevolent Gladiator's Wyrmhide Spaulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ironskin Gloves
+										["itemID"] = 85018,	-- Malevolent Gladiator's Ironskin Gloves
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ironskin Helm
+										["itemID"] = 85033,	-- Malevolent Gladiator's Ironskin Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ironskin Legguards
+										["itemID"] = 85064,	-- Malevolent Gladiator's Ironskin Legguards
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ironskin Tunic
+										["itemID"] = 85066,	-- Malevolent Gladiator's Ironskin Tunic
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ironskin Spaulders
+										["itemID"] = 85087,	-- Malevolent Gladiator's Ironskin Spaulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Copperskin Gloves
+										["itemID"] = 85015,	-- Malevolent Gladiator's Copperskin Gloves
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Copperskin Helm
+										["itemID"] = 85030,	-- Malevolent Gladiator's Copperskin Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Copperskin Legguards
+										["itemID"] = 85060,	-- Malevolent Gladiator's Copperskin Legguards
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Copperskin Tunic
+										["itemID"] = 85067,	-- Malevolent Gladiator's Copperskin Tunic
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Copperskin Spaulders
+										["itemID"] = 85088,	-- Malevolent Gladiator's Copperskin Spaulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Leather Tunic
+										["itemID"] = 84994,	-- Malevolent Gladiator's Leather Tunic
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Leather Gloves
+										["itemID"] = 85023,	-- Malevolent Gladiator's Leather Gloves
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Leather Helm
+										["itemID"] = 85041,	-- Malevolent Gladiator's Leather Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Leather Legguards
+										["itemID"] = 85055,	-- Malevolent Gladiator's Leather Legguards
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Leather Spaulders
+										["itemID"] = 85089,	-- Malevolent Gladiator's Leather Spaulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Linked Armor
+										["itemID"] = 84989,	-- Malevolent Gladiator's Linked Armor
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Linked Gauntlets
+										["itemID"] = 85011,	-- Malevolent Gladiator's Linked Gauntlets
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Linked Helm
+										["itemID"] = 85038,	-- Malevolent Gladiator's Linked Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Linked Leggings
+										["itemID"] = 85050,	-- Malevolent Gladiator's Linked Leggings
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Linked Spaulders
+										["itemID"] = 85081,	-- Malevolent Gladiator's Linked Spaulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ringmail Armor
+										["itemID"] = 84990,	-- Malevolent Gladiator's Ringmail Armor
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ringmail Gauntlets
+										["itemID"] = 85014,	-- Malevolent Gladiator's Ringmail Gauntlets
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ringmail Helm
+										["itemID"] = 85029,	-- Malevolent Gladiator's Ringmail Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ringmail Leggings
+										["itemID"] = 85054,	-- Malevolent Gladiator's Ringmail Leggings
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ringmail Spaulders
+										["itemID"] = 85075,	-- Malevolent Gladiator's Ringmail Spaulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Mail Armor
+										["itemID"] = 84988,	-- Malevolent Gladiator's Mail Armor
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Mail Gauntlets
+										["itemID"] = 85012,	-- Malevolent Gladiator's Mail Gauntlets
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Mail Helm
+										["itemID"] = 85036,	-- Malevolent Gladiator's Mail Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Mail Leggings
+										["itemID"] = 85048,	-- Malevolent Gladiator's Mail Leggings
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Mail Spaulders
+										["itemID"] = 85079,	-- Malevolent Gladiator's Mail Spaulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Chain Armor
+										["itemID"] = 84994,	-- Malevolent Gladiator's Chain Armor
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Chain Gauntlets
+										["itemID"] = 85020,	-- Malevolent Gladiator's Chain Gauntlets
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Chain Helm
+										["itemID"] = 85034,	-- Malevolent Gladiator's Chain Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Chain Leggings
+										["itemID"] = 85061,	-- Malevolent Gladiator's Chain Leggings
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Chain Spaulders
+										["itemID"] = 85076,	-- Malevolent Gladiator's Chain Spaulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Scaled Chestpiece
+										["itemID"] = 84992,	-- Malevolent Gladiator's Scaled Chestpiece
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Scaled Gauntlet
+										["itemID"] = 85027,	-- Malevolent Gladiator's Scaled Gauntlet
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Scaled Helm
+										["itemID"] = 85044,	-- Malevolent Gladiator's Scaled Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Scaled Legguards
+										["itemID"] = 85057,	-- Malevolent Gladiator's Scaled Legguards
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Scaled Shoulders
+										["itemID"] = 85091,	-- Malevolent Gladiator's Scaled Shoulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ornamented Chestguard
+										["itemID"] = 84991,	-- Malevolent Gladiator's Ornamented Chestguard
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ornamented Gloves
+										["itemID"] = 85024,	-- Malevolent Gladiator's Ornamented Gloves
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ornamented Headcover
+										["itemID"] = 85042,	-- Malevolent Gladiator's Ornamented Headcover
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ornamented Legplates
+										["itemID"] = 85056,	-- Malevolent Gladiator's Ornamented Legplates
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Ornamented Spaulders
+										["itemID"] = 85090,	-- Malevolent Gladiator's Ornamented Spaulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Plate Chestpiece
+										["itemID"] = 84987,	-- Malevolent Gladiator's Plate Chestpiece
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Plate Gauntlets
+										["itemID"] = 85019,	-- Malevolent Gladiator's Plate Gauntlets
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Plate Helm
+										["itemID"] = 85032,	-- Malevolent Gladiator's Plate Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Plate Legguards
+										["itemID"] = 85063,	-- Malevolent Gladiator's Plate Legguards
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Plate Shoulders
+										["itemID"] = 85077,	-- Malevolent Gladiator's Plate Shoulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Dreadplate Chestpiec
+										["itemID"] = 84993,	-- Malevolent Gladiator's Dreadplate Chestpiec
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Dreadplate Gauntlets
+										["itemID"] = 85028,	-- Malevolent Gladiator's Dreadplate Gauntlets
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Dreadplate Helm
+										["itemID"] = 85046,	-- Malevolent Gladiator's Dreadplate Helm
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Dreadplate Legguards
+										["itemID"] = 85059,	-- Malevolent Gladiator's Dreadplate Legguards
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+									{	-- Malevolent Gladiator's Dreadplate Shoulders
+										["itemID"] = 85086,	-- Malevolent Gladiator's Dreadplate Shoulders
+										["u"] = 14,			-- Elite PvP Gear Filter
+									},
+								},
+								
+							},
+						},
+					},
 					nh(75690, { -- Lok'nor Bloodfist
 						i(84438),	-- Dreadful Gladiator's Armplates of Proficiency
 						i(84345),	-- Dreadful Gladiator's Cape of Cruelty
