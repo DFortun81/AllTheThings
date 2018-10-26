@@ -37,6 +37,8 @@ _.NeverImplemented =
 	un(1, i(81320)),	-- Right-Handed Invis Knuckles
 	un(1, i(84697)),	-- Dreadful Gladiator's Fleshslicer
 	un(1, i(84722)),	-- Dreadful Gladiator's Pike
+	un(1, i(84893)),	-- Malevolent Gladiator's Fleshslicer
+	un(1, i(84894)),	-- Malevolent Gladiator's Slasher
 	un(1, i(84699)),	-- Dreadful Gladiator's Render
 	un(1, i(84696)),	-- Dreadful Gladiator's Ripper
 	un(1, i(84695)),	-- Dreadful Gladiator's Spellblade (blue)
@@ -487,6 +489,11 @@ i(49422),
 i(54331),
 i(55047),
 i(21163),
+i(84897),	-- Never made to Live. Malevolent Gladiator's Heavy Crossbow
+i(94899),	-- Never made to Live. Malevolent Gladiator's Baton of Light
+i(94898),	-- Never made to Live. Malevolent Gladiator's Touch of Death
+i(85118),	-- Never made to Live. 490 Malevolent Gladiator's Shiv
+i(84895),	-- Never made to Live. Malevolent Gladiator's Shiv
 
 ------------------------
 -- CLASS TRIAL UNUSED --
