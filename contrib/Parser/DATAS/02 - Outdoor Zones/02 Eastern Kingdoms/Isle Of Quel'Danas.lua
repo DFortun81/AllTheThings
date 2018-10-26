@@ -544,34 +544,37 @@ _.Zones =
 						i(34575),  -- Slayer's Boots			
 					}),
 					n(25977, {	-- Yrma <Transmuter of Sin'dorei Relics>
-						i(34405),	-- Helm of Arcane Purity
-						i(34406),	-- Gloves of Tyri's Power
-						i(34396),	-- Garments of Crashing Shores
-						i(34384),	-- Breeches of Natural Splendor
-						i(34385),	-- Leggings of the Immortal Beast
-						i(34386),	-- Pantaloons of Growing Strife
-						i(34388),	-- Pauldrons of Berserking
-						i(34389),	-- Spaulders of the Thalassian Defender
-						i(34390),	-- Erupting Epaulets
-						i(34391),	-- Spaulders of Devastation
-						i(34392),	-- Demontooth Shoulderpads
-						i(34393),	-- Shoulderpads of Knowledge's Pursuit
-						i(34394),	-- Breastplate of Agony's Aversion
-						i(34395),	-- Noble Judicator's Chestguard
-						i(34382),	-- Judicator's Legguards
-						i(34397),	-- Bladed Chaos Tunic
-						i(34398),	-- Utopian Tunic of Elune
-						i(34399),	-- Robes of Ghostly Hatred
-						i(34400),	-- Crown of Dath'Remar
-						i(34401),	-- Helm of Uther's Resolve
-						i(34402),	-- Shroud of Chieftain Ner'zhul
-						i(34403),	-- Cover of Ursoc the Mighty
-						i(34404),	-- Mask of the Fury Hunter
-						i(34381),	-- Felstrength Legplates
-						i(34383),	-- Kilt of Spiritual Reconstruction
-						i(34408),	-- Gloves of the Forest Drifter
-						i(34409),	-- Gauntlets of the Ancient Frostwolf
-						i(34407),	-- Tranquil Moonlight Wraps
+						["itemID"] = 34664,	-- Sunmote
+						["groups"] = {
+							i(34405),	-- Helm of Arcane Purity
+							i(34406),	-- Gloves of Tyri's Power
+							i(34396),	-- Garments of Crashing Shores
+							i(34384),	-- Breeches of Natural Splendor
+							i(34385),	-- Leggings of the Immortal Beast
+							i(34386),	-- Pantaloons of Growing Strife
+							i(34388),	-- Pauldrons of Berserking
+							i(34389),	-- Spaulders of the Thalassian Defender
+							i(34390),	-- Erupting Epaulets
+							i(34391),	-- Spaulders of Devastation
+							i(34392),	-- Demontooth Shoulderpads
+							i(34393),	-- Shoulderpads of Knowledge's Pursuit
+							i(34394),	-- Breastplate of Agony's Aversion
+							i(34395),	-- Noble Judicator's Chestguard
+							i(34382),	-- Judicator's Legguards
+							i(34397),	-- Bladed Chaos Tunic
+							i(34398),	-- Utopian Tunic of Elune
+							i(34399),	-- Robes of Ghostly Hatred
+							i(34400),	-- Crown of Dath'Remar
+							i(34401),	-- Helm of Uther's Resolve
+							i(34402),	-- Shroud of Chieftain Ner'zhul
+							i(34403),	-- Cover of Ursoc the Mighty
+							i(34404),	-- Mask of the Fury Hunter
+							i(34381),	-- Felstrength Legplates
+							i(34383),	-- Kilt of Spiritual Reconstruction
+							i(34408),	-- Gloves of the Forest Drifter
+							i(34409),	-- Gauntlets of the Ancient Frostwolf
+							i(34407),	-- Tranquil Moonlight Wraps
+						},
 					}),
 				}),
 			},
