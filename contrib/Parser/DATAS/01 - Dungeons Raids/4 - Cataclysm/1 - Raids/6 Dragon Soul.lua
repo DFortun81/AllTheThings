@@ -147,26 +147,6 @@ _.Instances =
 									i(77983),	-- Indomitable Pride
 									i(77979),	-- Vial of Shadows
 									i(77981),	-- Windward Heart
-									--[[	Note!! Uncomment when the rest is CRS'ed properly
-									{	-- Essence of Corrupted Deathwing
-										["currencyID"] = 615,	-- Essence of Deathwing
-										["crs"] = {
-											56173,	-- Madness of Deathwing
-										},
-									},
-									{	-- Mote of Darkness
-										["currencyID"] = 614,	-- Mote of Darkness
-										["crs"] = {
-											55265,	-- Morchok
-											55308,	-- Warlord	Zon'ozz
-											55312,	-- Yor'sahj the Unsleeping
-											55689,	-- Hagara the Stormbinder
-											55294,	-- Ultraxion
-											56427,	-- Warmaster Blackthorn
-											53879,	-- Spine of Deathwing
-										},
-									},
-									--]]
 								},
 								["crs"] = {
 									55265, -- Morchok
@@ -298,6 +278,122 @@ _.Instances =
 							{	-- Common Boss Drops
 								["npcID"] = -1,	-- Common Boss Drops
 								["g"] = {
+									{	-- Breathstealer Band
+										["itemID"] =  77230,	-- Breathstealer Band
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Hardheart Ring
+										["itemID"] = 77232,	-- Hardheart Ring
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Infinite Loop
+										["itemID"] = 77228,	-- Infinite Loop
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Seal of Primordial Shadow
+										["itemID"] = 77231,	-- Seal of Primordial Shadow
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Signet of Suturing
+										["itemID"] = 77229,	-- Signet of Suturing
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Bone-Link Fetish
+										["itemID"] = 77210,	-- Bone-Link Fetish
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Cunning of the Cruel
+										["itemID"] = 77208,	-- Cunning of the Cruel
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Indomitable Pride
+										["itemID"] = 77211,	-- Indomitable Pride
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Vial of Shadows
+										["itemID"] = 77207,	-- Vial of Shadows
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Windward Heart
+										["itemID"] = 77209,	-- Windward Heart
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+										},
+									},
+									{	-- Essence of Corrupted Deathwing
+										["currencyID"] = 615,	-- Essence of Deathwing
+										["crs"] = {
+											56173,	-- Madness of Deathwing
+										},
+									},
 									{	-- Essence of Destruction
 										["itemID"] = 71998,	-- Essence of Destruction
 										["crs"] = {
@@ -311,24 +407,18 @@ _.Instances =
 											56173,	-- Madness of Deathwing
 										},
 									},
-									{	-- Essence of Corrupted Deathwing
-											["currencyID"] = 615,	-- Essence of Deathwing
-											["crs"] = {
-												56173,	-- Madness of Deathwing
-											},
+									{	-- Mote of Darkness
+										["currencyID"] = 614,	-- Mote of Darkness
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord	Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+											53879,	-- Spine of Deathwing
 										},
-										{	-- Mote of Darkness
-											["currencyID"] = 614,	-- Mote of Darkness
-											["crs"] = {
-												55265,	-- Morchok
-												55308,	-- Warlord	Zon'ozz
-												55312,	-- Yor'sahj the Unsleeping
-												55689,	-- Hagara the Stormbinder
-												55294,	-- Ultraxion
-												56427,	-- Warmaster Blackthorn
-												53879,	-- Spine of Deathwing
-											},
-										},
+									},
 								},
 							},
 							n(  0, {	-- Zone Drop
@@ -393,16 +483,6 @@ _.Instances =
 								i(77269),	-- Sporebeard Gauntlets
 								i(77266),	-- Girdle of Shattered Stone
 								i(77265),	-- Pillarfoot Greaves
-								i(77230),	-- Breathstealer Band
-								i(77232),	-- Hardheart Ring
-								i(77228),	-- Infinite Loop
-								i(77231),	-- Seal of Primordial Shadow
-								i(77229),	-- Signet of Suturing
-								i(77210),	-- Bone-Link Fetish
-								i(77208),	-- Cunning of the Cruel
-								i(77211),	-- Indomitable Pride
-								i(77207),	-- Vial of Shadows
-								i(77209),	-- Windward Heart
 							})),
 							cr(55308, e(324, {	-- Warlord Zon'ozz
 								i(78183, {	-- Gauntlets of the Corrupted Conqueror
@@ -437,17 +517,7 @@ _.Instances =
 								i(77260),	-- Belt of Flayed Skin
 								i(77255),	-- Cord of the Slain Champion
 								i(77259),	-- Treads of Crushed Flesh
-								i(77230),	-- Breathstealer Band
-								i(77232),	-- Hardheart Ring
-								i(77228),	-- Infinite Loop
-								i(77231),	-- Seal of Primordial Shadow
-								i(77229),	-- Signet of Suturing
-								i(77210),	-- Bone-Link Fetish
-								i(77208),	-- Cunning of the Cruel
-								i(77211),	-- Indomitable Pride
 								i(77204),	-- Seal of the Seven Signs
-								i(77207),	-- Vial of Shadows
-								i(77209),	-- Windward Heart
 							})),
 							cr(55312, e(325, {	-- Yor'sahj the Unsleeping
 								i(78181, {	-- Leggings of the Corrupted Conqueror
@@ -482,18 +552,8 @@ _.Instances =
 								i(77253),	-- Heartblood Wristplates
 								i(77254),	-- Interrogator's Bloody Footpads
 								i(77252),	-- Mindstrainer Treads
-								i(77230),	-- Breathstealer Band
-								i(77232),	-- Hardheart Ring
-								i(77228),	-- Infinite Loop
-								i(77231),	-- Seal of Primordial Shadow
-								i(77229),	-- Signet of Suturing
-								i(77210),	-- Bone-Link Fetish
-								i(77208),	-- Cunning of the Cruel
-								i(77211),	-- Indomitable Pride
 								i(77203),	-- Insignia of the Corrupted Mind
 								i(77206),	-- Soulshifter Vortex
-								i(77207),	-- Vial of Shadows
-								i(77209),	-- Windward Heart
 							})),
 							cr(55689, e(317, {	-- Hagara the Stormbinder
 								i(78180, {	-- Shoulders of the Corrupted Conqueror
@@ -527,18 +587,8 @@ _.Instances =
 								i(77248),	-- Girdle of the Grotesque
 								i(77250),	-- Runescriven Demon Collar
 								i(77251),	-- Treads of Dormant Dreams
-								i(77230),	-- Breathstealer Band
-								i(77232),	-- Hardheart Ring
-								i(77228),	-- Infinite Loop
 								i(78012),	-- Ring of the Riven
-								i(77231),	-- Seal of Primordial Shadow
 								i(78011),	-- Signet of Grasping Mouths
-								i(77229),	-- Signet of Suturing
-								i(77210),	-- Bone-Link Fetish
-								i(77208),	-- Cunning of the Cruel
-								i(77211),	-- Indomitable Pride
-								i(77207),	-- Vial of Shadows
-								i(77209),	-- Windward Heart
 							})),
 							cr(55294, e(331, {	-- Ultraxion
 								i(78184, {	-- Chest of the Corrupted Conqueror
@@ -574,18 +624,8 @@ _.Instances =
 								i(77244),	-- Dragonfracture Belt
 								i(77246),	-- Stillheart Warboots
 								i(77243),	-- Treads of Sordid Screams
-								i(77230),	-- Breathstealer Band
 								i(78013),	-- Curled Twilight Claw
-								i(77232),	-- Hardheart Ring
-								i(77228),	-- Infinite Loop
-								i(77231),	-- Seal of Primordial Shadow
-								i(77229),	-- Signet of Suturing
-								i(77210),	-- Bone-Link Fetish
 								i(77205),	-- Creche of the Final Dragon
-								i(77208),	-- Cunning of the Cruel
-								i(77211),	-- Indomitable Pride
-								i(77207),	-- Vial of Shadows
-								i(77209),	-- Windward Heart
 							})),
 							cr(56427, e(332, {	-- Warmaster Blackthorn
 								i(78182, {	-- Crown of the Corrupted Conqueror
@@ -621,17 +661,7 @@ _.Instances =
 								i(77241),	-- Belt of the Beloved Companion
 								i(77239),	-- Goriona's Collar
 								i(77234),	-- Janglespur Jackboots
-								i(77230),	-- Breathstealer Band
-								i(77232),	-- Hardheart Ring
-								i(77228),	-- Infinite Loop
-								i(77231),	-- Seal of Primordial Shadow
-								i(77229),	-- Signet of Suturing
-								i(77210),	-- Bone-Link Fetish
-								i(77208),	-- Cunning of the Cruel
-								i(77211),	-- Indomitable Pride
 								i(77202),	-- Starcatcher Compass
-								i(77207),	-- Vial of Shadows
-								i(77209),	-- Windward Heart
 							})),
 							cr(53879, e(318, {	-- Spine of Deathwing
 								i(152980),	-- Elementium Back Plate (PET!)
@@ -794,6 +824,12 @@ _.Instances =
 											56427,	-- Warmaster Blackthorn
 										},
 									},
+									{	-- Essence of Corrupted Deathwing
+										["currencyID"] = 615,	-- Essence of Deathwing
+										["crs"] = {
+											56173,	-- Madness of Deathwing
+										},
+									},
 									{	-- Essence of Destruction
 										["itemID"] = 71998,	-- Essence of Destruction
 										["crs"] = {
@@ -804,12 +840,6 @@ _.Instances =
 											55294,	-- Ultraxion
 											56427,	-- Warmaster Blackthorn
 											53879,	-- Spine of Deathwing
-											56173,	-- Madness of Deathwing
-										},
-									},
-									{	-- Essence of Corrupted Deathwing
-										["currencyID"] = 615,	-- Essence of Deathwing
-										["crs"] = {
 											56173,	-- Madness of Deathwing
 										},
 									},
@@ -967,6 +997,7 @@ _.Instances =
 								i(78402),	-- Interrogator's Bloody Footpads
 								i(78405),	-- Mindstrainer Treads
 								i(77991),	-- Insignia of the Corrupted Mind
+								i(77990),	-- Soulshifter Vortex
 							})),
 							cr(55689, e(317, {	-- Hagara the Stormbinder
 								i(78859, {	-- Shoulders of the Corrupted Conqueror
