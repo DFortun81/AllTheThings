@@ -4314,7 +4314,7 @@ app.BaseItem = {
 		if key == "key" then
 			return "itemID";
 		elseif key == "collectible" then
-			return t.s or (t.questID and not t.repeatable and GetDataMember("TreatQuestsAsCollectible")) or t.factionID;
+			return t.s or (t.questID and not t.repeatable and not t.isBreadcrumb and GetDataMember("TreatQuestsAsCollectible")) or t.factionID;
 		elseif key == "collected" then
 			if t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s) then
 				return 1;
@@ -4697,7 +4697,7 @@ app.BaseNPC = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "collectible" then
-			return t.questID and not t.repeatable and GetDataMember("TreatQuestsAsCollectible");
+			return t.questID and not t.repeatable and not t.isBreadcrumb and GetDataMember("TreatQuestsAsCollectible");
 		elseif key == "saved" then
 			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
 		elseif key == "collected" then
@@ -4728,7 +4728,7 @@ app.BaseObject = {
 		elseif key == "icon" then
 			return L("OBJECT_ID_ICONS")[t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 		elseif key == "collectible" then
-			return t.questID and not t.repeatable and GetDataMember("TreatQuestsAsCollectible");
+			return t.questID and not t.repeatable and not t.isBreadcrumb and GetDataMember("TreatQuestsAsCollectible");
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "trackable" then
