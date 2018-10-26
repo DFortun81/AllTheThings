@@ -11,6 +11,7 @@ _.Holidays =
 				["description"] = "|cff66ccffYou can only loot the Loot-Stuffed Filled Pumpkins once per day per toon by completing your first run of the day.|r",
 				["maps"] = {
 					435,	-- Scarlet Monastery	Note!! MapID verified Oct. 18th, 2018
+					436,	-- Scarlet Monastery	Note!! This one is needed since it changes right as you get to spawn
 				},
 				["g"] = {
 					-- Note!! Mount -> Pet -> Cosmetic -> Weapon -> Plate -> Miscellaneous
