@@ -579,7 +579,9 @@ _.Zones =
 				}),
 				n( -2, {	-- Vendors
 					n(50314, {	-- Provisioner Whitecloud <Guardians of Hyjal Quartermaster>
-						i(62383),	-- Wrap of the great Turtle
+						i(138803),	-- Illusion: Mending
+						i(65906),	-- Tabard of the Guardians of Hyjal
+						i(62383),	-- Wrap of the Great Turtle
 						i(62384),	-- Belt of the Ferocious Wolf
 						i(62385),	-- Tereads of Malorne
 						i(62386),	-- Cord of the Raven Queen
@@ -588,23 +590,8 @@ _.Zones =
 						i(62382),	-- Waywatcher's Boots
 						i(62374),	-- Sly Fox Jerkin
 						i(62377),	-- Cloak of the Dryads
-						i(65906),	-- Tabard of the Guardians of Hyjal
-						i(138803, {	-- Illusion: Mending
-							ill(4066),	-- Mending
-						}),
 					}),
 				}),
---[[				n(-40, {	-- Legacy
-					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
-						n(-17, {	-- Quests (Legacy)
-						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
-					},
-					["u"] = 2,
-				}),	--]]
 				m(338, {	-- Molten Front
 					["groups"] = {
 						n(-4, {	-- Achievements

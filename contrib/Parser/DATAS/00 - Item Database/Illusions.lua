@@ -33,6 +33,7 @@ _.IllusionDB = {
 	{
 		["visualID"] = 165,
 		["illusionID"] = 3225,
+		["itemID"] = 138796,
 		["text"] = "Executioner",
 	}, -- [7]
 	{
@@ -50,6 +51,7 @@ _.IllusionDB = {
 	{
 		["visualID"] = 194,
 		["illusionID"] = 4066,
+		["itemID"] = 138803,
 		["text"] = "Mending",
 	}, -- [10]
 	{
