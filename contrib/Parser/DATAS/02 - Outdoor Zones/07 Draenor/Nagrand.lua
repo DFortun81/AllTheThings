@@ -254,7 +254,7 @@ _.Zones =
 								i(114698),
 							}),
 						}),
-						qh(35338, { -- Shooting the Breeze
+						qh(35376, { -- Shooting the Breeze
 							qh(35377), -- Someone's Missing Axe
 							qh(35378,  {  	-- King of the Breezestriders
 								i(114695),
