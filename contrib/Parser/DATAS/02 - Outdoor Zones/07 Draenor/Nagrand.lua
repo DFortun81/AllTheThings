@@ -35,7 +35,7 @@ _.Zones =
 						["coord"] = { 62.6, 40.6 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25, {	-- Pet Battle
 					p(635), 	-- Adder
 					p(1435), 	-- Leatherhide Runt
 					p(1441), 	-- Mud Jumper
@@ -46,7 +46,7 @@ _.Zones =
 					p(397), 	-- Skunk
 					p(379), 	-- Squirrel
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 					i(122293, {	-- Trans-Dimensional Bird Whistle
 						["groups"] = {
 							{
@@ -640,8 +640,8 @@ _.Zones =
 					q(37226),	-- Xelganak's Stinger
 --]]					
 				}),	
-				n(-16, { 	-- Rares
-					o(233206, { 	-- Abandoned Cargo
+				n(-16, {	-- Rares
+					o(233206, {	-- Abandoned Cargo
 						["groups"] = {
 							dr(07.0, i(116920, {	-- True Steel Lockbox
 								dr(03.0, i(106692)),	-- Ironfist Pauldrons
@@ -794,7 +794,7 @@ _.Zones =
 						["questID"] = 35759,
 						["icon"] = "Interface\\Icons\\INV_Crate_01",
 					}),
-					o(233650, { 	-- Adventurer's Mace
+					o(233650, {	-- Adventurer's Mace
 						["groups"] = {
 							dr(52, i(116636)), 	-- Oshu'gun Scepter
 							dr(48, i(116635)),	-- Howling Mace
@@ -802,7 +802,7 @@ _.Zones =
 						["questID"] = 36077,
 						["icon"] = "Interface\\Icons\\INV_Mace_06",
 					}),
-					o(233218, {		-- Adventurer's Pack
+					o(233218, {	-- Adventurer's Pack
 						["groups"] = {
 							dr(04.0, i(116638)),	-- Howling Spear
 							dr(04.0, i(106734)),	-- Meadowstomper Jerkin
@@ -903,7 +903,7 @@ _.Zones =
 						["questID"] = 35765,
 						["icon"] = "Interface\\Icons\\INV_Misc_Bag_08",
 					}),
-					o(233511, {		-- Adventurer's Pack
+					o(233511, {	-- Adventurer's Pack
 						["groups"] = {
 							dr(05.0, i(106733)),	-- Meadowstomper Hood
 							dr(03.0, i(106743)),	-- Dark Star Shoulderpads
@@ -1004,7 +1004,7 @@ _.Zones =
 						["questID"] = 35969,
 						["icon"] = "Interface\\Icons\\INV_Misc_Bag_08",
 					}),
-					o(232406, {		-- Adventurer's Pack
+					o(232406, {	-- Adventurer's Pack
 						["groups"] = {
 							dr(06.0, i(106745)),	-- Packrunner Belt
 							dr(05.0, i(116629)),	-- Howling Bow
@@ -1105,7 +1105,7 @@ _.Zones =
 						["questID"] = 35597,
 						["icon"] = "Interface\\Icons\\INV_Misc_Bag_08",
 					}),
-					o(233658, { 	-- Adventurer's Pouch
+					o(233658, {	-- Adventurer's Pouch
 						["groups"] = {
 							dr(05.0, i(116631)),	-- Howling Dagger
 							dr(02.0, i(106744)),	-- Dark Star Wristwraps
@@ -1206,7 +1206,7 @@ _.Zones =
 						["questID"] = 36088,
 						["modelID"] = 32854,
 					}),
-					o(233623, { 	-- Adventurer's Pouch
+					o(233623, {	-- Adventurer's Pouch
 						["groups"] = {
 							dr(02.0, i(106738)),	-- Dark Star Cowl
 							dr(02.0, i(106744)),	-- Dark Star Wristwraps
@@ -1307,7 +1307,7 @@ _.Zones =
 						["questID"] = 36050,
 						["modelID"] = 32854,
 					}),
-					o(233499, { 	-- Adventurer's Sack
+					o(233499, {	-- Adventurer's Sack
 						["groups"] = {
 							dr(07.0, i(106749)),	-- Packrunner Helm
 							dr(06.0, i(106745)),	-- Packrunner Belt
@@ -1408,35 +1408,39 @@ _.Zones =
 						["questID"] = 35955,
 						["modelID"] = 32854,
 					}),
-					o(233457, { 	-- Adventurer's Staff
+					o(233457, {	-- Adventurer's Staff
 						["groups"] = {
 							dr(100, i(116640)),  -- Howling Staff
 						},
 						["questID"] = 35953,
+						["coord"] = { 81.5, 13.0 },
 						["icon"] = "Interface\\Icons\\INV_Staff_07",
-					}),					
-					n(87837, { 		-- Bonebreaker
-						["groups"] = {	
+					}),
+					n(87837, {	-- Bonebreaker
+						["groups"] = {
 							dr(42, i(119370)),	-- Rattlekilt
 						},
 						["questID"] = 37396,
-						["isDaily"] = true,							
-					}), 
-					o(233532, { 	-- Bone-Carved Dagger
+						["coord"] = { 39.2, 15.8 },
+						["isDaily"] = true,
+					}),
+					o(233532, {	-- Bone-Carved Dagger
 						["groups"] = {
-							dr(100, i(116760)),	-- Saberon-Fang Shanker
+							i(116760),	-- Saberon-Fang Shanker
 						},
-						["questID"] = 35986,	
+						["questID"] = 35986,
+						["coord"] = { 77.3, 28.1 },
 						["icon"] = "Interface\\Icons\\TRADE_ARCHAEOLOGY_RUSTEDSTEAKKNIFE",
-					}),						
-					n(87234, { 		-- Brutag Grimblade
-						["groups"] = {	
-							dr(40, i(119380)),	-- Brutag's Iron Toe Boots 
+					}),
+					n(87234, {	-- Brutag Grimblade
+						["groups"] = {
+							dr(40, i(119380)),	-- Brutag's Iron Toe Boots
 						},
 						["questID"] = 37400,
-						["isDaily"] = true,							
-					}), 
-					o(233137, {		-- Burning Blade Cache
+						["coord"] = { 43.0, 36.2 },
+						["isDaily"] = true,
+					}),
+					o(233137, {	-- Burning Blade Cache
 						["groups"] = {
 							dr(05.0, i(106747)),	-- Packrunner Gauntlets
 							dr(03.0, i(116636)),	-- Oshu'gun Scepter
@@ -1535,231 +1539,291 @@ _.Zones =
 							dr(01.2, i(106740)),	-- Dark Star Leggings							
 						},
 						["questID"] = 35696,
+						["coord"] = { 85.5, 53.4 },
 						["icon"] = "Interface\\Icons\\INV_TreasureChest_FelfireCitadel",
 					}),
-					n(79725, { 		-- Captain Ironbeard
-						["groups"] = {	
-							dr(100, i(116809)),	-- Ironbeard's Blunderbuss
-							dr(100, i(118244)),	-- Iron Buccaneer's Hat Toy
+					n(79725, {	-- Captain Ironbeard
+						["groups"] = {
+							i(116809),	-- Ironbeard's Blunderbuss
+							i(118244),	-- Iron Buccaneer's Hat Toy
 						},
 						["questID"] = 34727,
-						["isDaily"] = true,						
-					}), 
-					n(87788, { 		-- Durg Spinecrusher
-						["groups"] = {	
+						["coord"] = { 34.6, 77.0 },
+						["isDaily"] = true,
+					}),
+					n(87788, {	-- Durg Spinecrusher
+						["groups"] = {
 							dr(36, i(119405)),	-- Durg's Heavy Maul
 						},
 						["questID"] = 37395,
-						["isDaily"] = true,							
-					}), 
-					o(239828, { 	-- Edge of Reality
+						["coord"] = { 37.8, 20.8 }, -- patrols in a circle
+						["isDaily"] = true,
+					}),
+					o(239828, {	-- Edge of Reality
 						["groups"] = {
 							o(239901, {		-- Voidtalon Egg
 								["groups"] = {	
-									dr(100,i(121815)),	-- Voidtalon of the Dark Star Mount
+									i(121815),	-- Voidtalon of the Dark Star Mount
 								},
 								["modelScale"] = 2,
 								["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
 								["icon"] = "Interface\\Icons\\INV_Egg_09",
 							}),
 						},
+						["coords"] = {
+							{ 40.5, 47.6 },
+							{ 44.0, 30.7 },
+							{ 57.3, 26.7 },
+							{ 59.5, 10.2 },
+						},
 						["icon"] = "Interface\\Icons\\Spell_Warlock_DemonicPortal_Purple",
 						["description"] = "Click on Edge of Reality, get teleported, click on egg for mount.|nIf you are on a realm not of your own when you click on Edge of Reality the mount will be mailed to you as you will not be teleported. |r",
-					}),										
-					n(83483, { 		-- Flinthide
-						["groups"] = {	
-							dr(100, i(116807)),	-- Flinthide's Impenetrable Crest
-						},
-						["questID"] = 35893,		
 					}),
-					o(233560, { 	-- Fragment of Oshu'gun
+					n(83483, {	-- Flinthide
 						["groups"] = {
-							dr(100, i(117981)),	-- Fragment of Oshu'gun
+							i(116807),	-- Flinthide's Impenetrable Crest
+						},
+						["questID"] = 35893,
+						["coord"] = { 69.6, 42.0 },
+					}),
+					o(233560, {	-- Fragment of Oshu'gun
+						["groups"] = {
+							i(117981),	-- Fragment of Oshu'gun
 						},
 						["questID"] = 36020,	
+						["coord"] = { 45.8, 66.5 },
 						["icon"] = "Interface\\Icons\\INV_DataCrystal07",
 					}),						
-					n(83509, { 		-- Gorepetal
-						["groups"] = {	
-							dr(100, i(116916)), -- Gorepetal's Gentle Grasp
+					n(83509, {	-- Gorepetal
+						["groups"] = {
+							i(116916), -- Gorepetal's Gentle Grasp
 						},
-						["questID"] = 35898,		
-					}),				
-					n(84263, { 		-- Graveltooth
-						["groups"] = {	
-							dr(100, i(118689)),	-- Graveltooth's Manacles
+						["questID"] = 35898,
+						["coord"] = { 93.2, 28.2 },
+					}),
+					n(84263, {	-- Graveltooth
+						["groups"] = {
+							i(118689),	-- Graveltooth's Manacles
 						},
-						["questID"] = 36159,		
-					}), 
-					n(82758, { 		-- Greatfeather
-						["groups"] = {	
-							dr(100, i(116795)),	-- Greatfeather's Down Robe
+						["questID"] = 36159,
+						["coord"] = { 83.8, 36.8 },
+					}),
+					n(82758, {	-- Greatfeather
+						["groups"] = {
+							i(116795),	-- Greatfeather's Down Robe
 						},
-						["questID"] = 35714,		
-					}), 
-					n(82912, { 		-- Grizzlemaw
-						["groups"] = {	
-							dr(100, i(118687)),	-- Grizzled Wolfskin Cloak
+						["questID"] = 35714,
+						["coord"] = { 66.8, 51.2 },
+					}),
+					n(82912, {	-- Grizzlemaw
+						["groups"] = {
+							i(118687),	-- Grizzled Wolfskin Cloak
 						},
-						["questID"] = 35784,		
-					}), 
-					n(98200, { 		-- Guk
+						["questID"] = 35784,
+						["coord"] = { 89.4, 72.6 },
+					}),
+					n(98200, {	-- Guk
 						["groups"] = {
 							dr(9, i(129218)),	-- Glittering Arcane Crystal (Empyreal Manafiend Pet)
 						},
 						["questID"] = 40074,
-						["isDaily"] = true,								
+						["coord"] = { 23.8, 37.9 },
+						["isDaily"] = true,
 					}),
-					n(83603, { 		-- Hunter Blacktooth
+					n(83603, {	-- Hunter Blacktooth
 						["groups"] = {	
-							dr(100, i(118245)),	-- Hunter Blacktooth's Ribcruncher
+							i(118245),	-- Hunter Blacktooth's Ribcruncher
 						},
-						["questID"] = 35923,		
-					}), 
-					n(86959, { 		-- Karosh Blackwind
-						["groups"] = {	
+						["questID"] = 35923,
+						["coord"] = { 80.6, 30.6 },
+					}),
+					n(86959, {	-- Karosh Blackwind
+						["groups"] = {
 							dr(39, i(119355)),	-- Leggings of Howling Winds
 						},
 						["questID"] = 37399,
-						["isDaily"] = true,								
-					}), 
-					n(88210, { 		-- Krud the Eviscerator
+						["coord"] = { 45.8, 34.8 },
+						["isDaily"] = true,
+					}),
+					n(88210, {	-- Krud the Eviscerator
 						["groups"] = {
 							dr(41, i(119384)),	-- Krud's Girthy Girdle
 						},
 						["questID"] = 37398,
-						["isDaily"] = true,								
+						["coord"] = { 58.2, 12.0 },
+						["isDaily"] = true,
 						["description"] = "|cff66ccffKill 15 mobs near him to make him attackable.|r",
-					}), 
-					n(50981, { 		-- Luk'hok
-						dr(100, i(116661)),		-- Mottled Meadowstomper Mount
-					}), 
-					n(83643, { 		-- Malroc Stonesunder
+					}),
+					n(50981, {	-- Luk'hok
 						["groups"] = {
-							dr(100, i(116796)),	-- Malroc's Staff of Command
+							i(116661),	-- Mottled Meadowstomper Mount
 						},
-						["questID"] = 35932,	
-					}), 
-					n(50990, { 		-- Nakk the Thunderer
-						dr(100, i(116659)),		-- Bloodhoof Bull Mount				
-					}), 
-					n(83401, { 		-- Netherspawn
+						["coords"] = {
+							{ 84.6, 64.0 },
+							{ 79.6, 56.6 },
+							{ 72.8, 53.4 },
+							{ 67.6, 42.6 },
+							{ 76.0, 30.6 },
+						},
+					}),
+					n(83643, {	-- Malroc Stonesunder
 						["groups"] = {
-							dr(100, i(116815)),	-- Netherspawn, Spawn of Netherspawn Pet
+							i(116796),	-- Malroc's Staff of Command
 						},
-						["questID"] = 35865,	
-					}), 
-					n(83409, { 		-- Ophiis
-						["groups"] = {	
-							dr(100, i(116765)),	-- Positive Pantaloons
+						["questID"] = 35932,
+						["coord"] = { 81.2, 60.0 },
+					}),
+					n(50990, {	-- Nakk the Thunderer
+						["groups"] = {
+							i(116659),	-- Bloodhoof Bull Mount
 						},
-						["questID"] = 35875,		
-					}), 
-					n(83680, { 		-- Outrider Duretha
-						["groups"] = {	
-							dr(100, i(116800)),	-- Duretha's Trail Boots
+						["coords"] = {
+							{ 62.8, 15.8 },
+							{ 65.0, 20.2 },
+							{ 60.8, 31.8 },
+							{ 55.8, 35.2 },
+							{ 51.0, 34.8 },
 						},
-						["questID"] = 35943,	
-					}), 
-					n(88208, { 		-- Pit Beast
-						["groups"] = {	
+					}),
+					n(83401, {	-- Netherspawn
+						["groups"] = {
+							i(116815),	-- Netherspawn, Spawn of Netherspawn Pet
+						},
+						["questID"] = 35865,
+						["coord"] = { 47.6, 70.6 },
+					}),
+					n(83409, {	-- Ophiis
+						["groups"] = {
+							i(116765),	-- Positive Pantaloons
+						},
+						["questID"] = 35875,
+						["coords"] = {
+							{ 39.0, 50.0 },
+							{ 42.0, 50.2 },
+							{ 45.4, 47.4 },
+						},
+					}),
+					n(83680, {	-- Outrider Duretha
+						["groups"] = {
+							i(116800),	-- Duretha's Trail Boots
+						},
+						["questID"] = 35943,
+						["coord"] = { 61.8, 69.0 },
+					}),
+					n(88208, {	-- Pit Beast
+						["groups"] = {
 							dr(40, i(120317)),	-- Pristine Hide of the Pit Beast
 						},
 						["questID"] = 37637,
-						["isDaily"] = true,							
-					}), 
-					o(233561, { 	-- Pokkar's Thirteenth Axe
+						["coord"] = { 58.2, 18.4 },
+						["isDaily"] = true,
+					}),
+					o(233561, {	-- Pokkar's Thirteenth Axe
 						["groups"] = {
-							dr(100, i(116688)),	-- Pokhar's Thirteenth Axe
+							i(116688),	-- Pokhar's Thirteenth Axe
 						},
-						["questID"] = 36021,	
+						["questID"] = 36021,
+						["coord"] = { 58.3, 59.5 },
 						["icon"] = "Interface\\Icons\\INV_Axe_18",
-					}),					
-					n(98199, { 		-- Pugg
+					}),
+					n(98199, {	-- Pugg
 						["groups"] = {
 							dr(8, i(129217)),	-- Warm Arcane Crystal (Empowered Manafiend Pet)
 						},
 						["questID"] = 40073,
-						["isDaily"] = true,							
-					}), 
-					n(82755, { 		-- Redclaw the Feral
-						["groups"] = {	
-							dr(100, i(118243)),	-- Redclaw's Gutripper
+						["coord"] = { 28.5, 30.3 },
+						["isDaily"] = true,
+					}),
+					n(82755, {	-- Redclaw the Feral
+						["groups"] = {
+							i(118243),	-- Redclaw's Gutripper
 						},
-						["questID"] = 35712,		
-					}), 
-					n(98198, { 		-- Rukdug
+						["questID"] = 35712,
+						["coord"] = { 73.6, 57.8 },
+					}),
+					n(98198, {	-- Rukdug
 						["groups"] = {
 							dr(8, i(129216)),	-- Vibrating Arcane Crystal (Energized Manafiend Pet)
 						},
-						["questID"] = 40075,	
-						["isDaily"] = true,							
-					}), 
-					n(83526, { 		-- Ru'klaa
-						["groups"] = {	
-							dr(100, i(118688)),	-- Carapace Shell Shoulders
-						},
-						["questID"] = 35900,		
-					}), 
-					n(83634, { 		-- Scout Pokhar
-						["groups"] = {	
-							dr(100, i(116797)),	-- Pokhar's Eighth Axe
-						},
-						["questID"] = 35931,		
-					}), 
-					n(83542, { 		-- Sean Whitesea
+						["questID"] = 40075,
+						["coord"] = { 26.2, 34.2 },
+						["isDaily"] = true,
+					}),
+					n(83526, {	-- Ru'klaa
 						["groups"] = {
-							dr(100, i(116834)),	-- Whitesea's Waistwrap
+							i(118688),	-- Carapace Shell Shoulders
 						},
-						["questID"] = 35912,	
+						["questID"] = 35900,
+						["coord"] = { 57.8, 83.8 },
+					}),
+					n(83634, {	-- Scout Pokhar
+						["groups"] = {
+							i(116797),	-- Pokhar's Eighth Axe
+						},
+						["questID"] = 35931,
+						["coord"] = { 54.8, 61.2 },
+					}),
+					n(83542, {	-- Sean Whitesea
+						["groups"] = {
+							i(116834),	-- Whitesea's Waistwrap
+						},
+						["questID"] = 35912,
+						["coord"] = { 61.2, 47.0 },
 						["description"] = "Spawns after abandoned chest is looted.",
-					}), 
-					n(80057, { 		-- Soulfang
-						["groups"] = {	
-							dr(100, i(116806)),	-- Soul Fang
-						},
-						["questID"] = 36128,	
-					}), 
-					n(83591, { 		-- Tura'aka
-						["groups"] = {	
-							dr(100, i(116814)),	-- Tura'aka's Clipped Wing
-						},
-						["questID"] = 35920,		
-					}), 
-					o(232590, { 	-- Void-Infused Crystal
+					}),
+					n(80057, {	-- Soulfang
 						["groups"] = {
-							dr(100, i(118264)),	-- Serrated Void Crystal
+							i(116806),	-- Soul Fang
 						},
-						["questID"] = 35579,	
+						["questID"] = 36128,
+						["coord"] = { 75.6, 65.2 },
+					}),
+					n(83591, {	-- Tura'aka
+						["groups"] = {
+							i(116814),	-- Tura'aka's Clipped Wing
+						},
+						["questID"] = 35920,
+						["coord"] = { 65.0, 39.2 },
+					}),
+					o(232590, {	-- Void-Infused Crystal
+						["groups"] = {
+							i(118264),	-- Serrated Void Crystal
+						},
+						["questID"] = 35579,
+						["coord"] = { 50.0, 66.4 },
 						["icon"] = "Interface\\Icons\\INV_DataCrystal05",
-					}),					
-					n(81330, { 		-- Warleader Tome
+					}),
+					n(81330, {	-- Warleader Tome
 						["groups"] = {
 							dr(55, i(120276)),	-- Outrider's Bridle Chain Toy
 						},
 						["questID"] = 37546,
-						["isDaily"] = true,						
+						["description"] = "Patrols all around the zone's roads.",
+						["isDaily"] = true,
 					}),
-					n(79024, { 		-- Warmaster Blugthol
-						["groups"] = {	
-							dr(100, i(116805)),	-- Blug'thol's Bloody Bracers
-						},
-						["questID"] = 34645,		
-					}), 
-					o(233645, { 	-- Warsong Helm
+					n(79024, {	-- Warmaster Blugthol
 						["groups"] = {
-							dr(100, i(118250)),	-- Riverwashed Warsong Helm
+							i(116805),	-- Blug'thol's Bloody Bracers
 						},
-						["questID"] = 36073,	
+						["questID"] = 34645,
+						["coord"] = { 82.6, 76.2 },
+					}),
+					o(233645, {	-- Warsong Helm
+						["groups"] = {
+							i(118250),	-- Riverwashed Warsong Helm
+						},
+						["questID"] = 36073,
+						["coord"] = { 52.5, 44.5 },
 						["icon"] = "Interface\\Icons\\INV_Helm_Misc_VikingPartyHat",
-					}),						
-					n(83428, { 		-- Windcaller Korast
-						["groups"] = {	
-							dr(100, i(116808)),	-- Whirlwind's Harvest
+					}),
+					n(83428, {	-- Windcaller Korast
+						["groups"] = {
+							i(116808),	-- Whirlwind's Harvest
 						},
-						["questID"] = 35877,		
-					}), 
---[[					
+						["questID"] = 35877,
+						["coord"] = { 70.6, 29.6 },
+					}),
+--[[
 				--	n(82899, { 		-- Ancient Blademaster	}), 
 				--	n(86774, { 		-- Aogexon	}), 
 				--	n(86732, { 		-- Bergruu	}), 
