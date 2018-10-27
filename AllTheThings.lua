@@ -2117,12 +2117,12 @@ local function OpenMiniList(field, id, label)
 					end
 				end
 				for i=count,1,-1 do
-						local group = header.g[i];
-						if group.mapID or (group.maps and header.text == group.text) then
-							table.remove(header.g, i);
-							if group.g then tinsert(ins, group.g); end
-						end
+					local group = header.g[i];
+					if (group.mapID and group.mapID == id) or (group.maps and contains(group.maps, id) and header.text == group.text) then
+						table.remove(header.g, i);
+						if group.g then tinsert(ins, group.g); end
 					end
+				end
 				for i=#ins,1,-1 do
 					for j,subgroup in ipairs(ins[i]) do
 						tinsert(header.g, subgroup);
@@ -8239,6 +8239,12 @@ app:GetWindow("Debugger", UIParent, function(self)
 					if guid then ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
 					if npc_id then
 						npc_id = tonumber(npc_id);
+						
+						-- Ignore vendor mount...
+						if npc_id == 62822 then
+							return true;
+						end
+						
 						local numItems = GetMerchantNumItems();
 						print("MERCHANT DETAILS", ty, npc_id, numItems);
 						
