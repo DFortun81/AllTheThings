@@ -861,7 +861,6 @@ _.Zones =
 					qh(11046),	-- Chief Apothecary Hildagard
 					q( 11100),	-- Commander Arcus
 					q( 11095),	-- Commander Hobb
-					q( 39721),	-- Culling the Crew
 					qa(10776, {	-- Dissension Amongst the Ranks...
 						i(31075),	-- Evoker's Mark of the Redemption
 						i(31078),	-- Protector's Mark of the Redemption

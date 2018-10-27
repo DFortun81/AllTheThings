@@ -133,7 +133,9 @@ _.Zones =
 								}),
 							}),
 							crit(2, { -- The Ring of Trials
-								q(35921), -- Bread and Circuses NOTE: This quest is an optional breadcrumb
+								q(35921, { -- Bread and Circuses NOTE: This quest is an optional breadcrumb
+									["isBreadcrumb"] = true,
+								}),
 								q(34662), -- Ring of Trials: Crushmaul
 								q(34663), -- Ring of Trials: Raketalon
 								q(34664), -- Ring of Trials: Hol'yelaa
@@ -146,7 +148,9 @@ _.Zones =
 								}),
 							}),
 							crit(4, { -- Throne of The Elements
-								q(35332), -- Nobundo Sends Word NOTE: This quest is an optional breadcrumb
+								q(35332, { -- Nobundo Sends Word NOTE: This quest is an optional breadcrumb
+									["isBreadcrumb"] = true,
+								}),
 								q(35331), -- Called to the Throne
 								q(35333), -- Elemental Attunement
 								q(34881), -- Earth, Wind and Fire...and Water

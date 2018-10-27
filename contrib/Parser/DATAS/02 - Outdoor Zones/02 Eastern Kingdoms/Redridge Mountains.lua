@@ -250,7 +250,9 @@ _.Zones =
 									i(60697),	-- Indiscriminate Wand
 									i(60696),	-- Shield of the Lesson
 								})),
-								qg(900, qa(26728)),	-- Hero's Call: Duskwood! (BREADCRUMB)
+								qg(900, qa(26728, {	-- Hero's Call: Duskwood! (BREADCRUMB)
+									["isBreadcrumb"] = true,
+								})),
 								qg(620, q(3861, {	-- CLUCK!
 									["groups"] = {
 										i(11110), -- Chicken Egg

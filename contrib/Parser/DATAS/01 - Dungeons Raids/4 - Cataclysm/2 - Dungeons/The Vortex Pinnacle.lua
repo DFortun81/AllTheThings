@@ -19,6 +19,7 @@ _.Instances =
 						}),
 						q(28845, { -- The Vortex Pinnacle
 							["qg"] = 49943,	-- Itesh
+							["isBreadcrumb"] = true,
 							["sourceQuests"] = { 28779 },	-- A Long Way from Home
 						}),
 						q(28760, { -- Vengeance for Orsis
