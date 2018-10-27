@@ -259,7 +259,9 @@ _.Zones =
 							p(447), -- Fawn
 						}),
 						n(-17, {	-- Quests
-							qg(2079, qa(28734)),	-- A Favor for Melithar
+							qg(2079, qa(28734, {	-- A Favor for Melithar
+								["isBreadcrumb"] = true,
+							})),
 							qg(2077, qa(31168, {	-- Calligraphed Sigil
 								["races"] = {4, 22},
 								["classes"] = {10},

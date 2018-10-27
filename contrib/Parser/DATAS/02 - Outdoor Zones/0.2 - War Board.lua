@@ -30,7 +30,9 @@ _.Zones =
 			--]]
 			q(49864, { -- Wars on Two Fronts [Pandaria]
 				["groups"] = {
-					q(49866), -- To Pandaria!
+					q(49866, { -- To Pandaria!
+						["isBreadcrumb"] = true,
+					}),
 					--q(49852), -- To Pandaria! [Might be Horde Version]
 				},
 				["itemID"] = 156477, -- Special Duty Assignments
