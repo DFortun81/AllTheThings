@@ -244,6 +244,18 @@ _.Zones =
 								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 								["lvl"] = 120,			-- WQ is 120+ only
 							},
+							q(52393, {	-- Work Order: Contract: Tortollan Seekers
+								["groups"] = {
+									i(162372, {	-- Contract: Tortollan Seekers [Rank 3]
+										["spellID"] = 256296,
+									}),
+								},
+								["requireSkill"] = 773,	-- Inscription
+								["repeatable"] = true,
+								["isDaily"] = true, 	-- Would like to swap it to WQ below
+								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
+								["lvl"] = 120,			-- WQ is 120+ only
+							}),
 							q(52349, {	-- Work Order: Loa Loaf
 								["groups"] = {
 									i(162294),	-- Recipe: Loa Loaf [Rank 3]
