@@ -6,41 +6,193 @@ _.Zones =
 	m(572, { 	-- Draenor
 		m(543, {	-- Gorgrond
 			["groups"] = {
+				n(-4, {		-- Achievements
+					ach(9678, {	-- Ancient No More (Everbloom Wilds)
+						{			-- Alkali
+							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
+							["criteriaID"] = 5,			-- Alkali
+							["coords"] = { 
+								{ 56.2, 40.8 },
+								{ 58.6, 41.2 },
+								{ 71.4, 40.2 },
+							},
+						},
+						{			-- Depthroot
+							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
+							["criteriaID"] = 6,			-- Depthroot
+							["coord"] = { 72.6, 40.8 },
+						},
+						{			-- Firestarter Grash
+							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
+							["criteriaID"] = 7,			-- Firestarter Grash
+							["coord"] = { 57.8, 36.6 },
+						},
+						{			-- Grove Warden Yal
+							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
+							["criteriaID"] = 8,			-- Grove Warden Yal
+							["coord"] = { 59.6, 43.0 },
+						},
+						{			-- Hunter Bal'ra
+							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
+							["criteriaID"] = 9,			-- Hunter Bal'ra
+							["coord"] = { 55.0, 46.2 },
+						},
+						{			-- Mogamago
+							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
+							["criteriaID"] = 2,			-- Mogamago
+							["coord"] = { 61.6, 39.2 },
+						},
+						{			-- Protectors of the Grove
+							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
+							["criteriaID"] = 3,			-- Protectors of the Grove
+							["coord"] = { 69.2, 44.6 },
+						},
+						{			-- Swift Onyx Flayer
+							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
+							["criteriaID"] = 1,			-- Swift Onyx Flayer
+							["coord"] = { 59.6, 31.8 },
+						},
+						{			-- Venolasix
+							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
+							["criteriaID"] = 4,			-- Venolasix
+							["coord"] = { 63.4, 30.8 },
+						},
+					}),
+					ach(9667),	-- Burn It to the Ground (Everbloom Wilds)
+					ach(9655, {	-- Fight the Power (The Pit)
+						{			-- Blademaster Ro'gor
+							["achievementID"] = 9655,	-- Fight the Power (The Pit)
+							["criteriaID"] = 6,			-- Blademaster Ro'gor
+							["coords"] = {
+								{ 46.0, 31.4 },
+								{ 45.8, 33.2 },
+							},
+						},
+						{			-- Defector Dazgo
+							["achievementID"] = 9655,	-- Fight the Power (The Pit)
+							["criteriaID"] = 2,			-- Defector Dazgo
+							["coord"] = { 48.2, 21.0 },
+						},
+						{			-- Durp the Hated
+							["achievementID"] = 9655,	-- Fight the Power (The Pit)
+							["criteriaID"] = 3,			-- Durp the Hated
+							["coord"] = { 49.8, 23.8 },
+						},
+						{			-- Horgg
+							["achievementID"] = 9655,	-- Fight the Power (The Pit)
+							["criteriaID"] = 5,			-- Horgg
+							["coord"] = { 46.0, 28.6 },
+						},
+						{			-- Inventor Blammo
+							["achievementID"] = 9655,	-- Fight the Power (The Pit)
+							["criteriaID"] = 4,			-- Inventor Blammo
+							["coord"] = { 47.6, 30.8 },
+						},
+						{			-- Maniacal Madgard
+							["achievementID"] = 9655,	-- Fight the Power (The Pit)
+							["criteriaID"] = 1,			-- Maniacal Madgard
+							["coord"] = { 49.0, 33.0 },
+						},
+						{			-- Morgo Kain
+							["achievementID"] = 9655,	-- Fight the Power (The Pit)
+							["criteriaID"] = 7,			-- Morgo Kain
+							["coords"] = {
+								{ 46.6, 23.0 },
+								{ 45.8, 24.0 },
+							},
+						},
+					}),
+					ach(9656, {	-- In Plain Sight (The Pit)
+						["coords"] = {
+							{ 45.8, 27.2 },
+							{ 48.2, 27.0 },
+							{ 45.2, 25.2 },
+							{ 49.0, 24.0 },
+						},
+					}),
+					ach(9659),	-- Iron Wings (The Pit)
+					ach(9607, {	-- Make It a Bonus
+						crit(1),	-- Bonus Objective: Brimstone Springs
+						crit(2),	-- Bonus Objective: Iyun Weald
+						crit(3),	-- Bonus Objective: Mistcreep Mire
+						crit(5),	-- Bonus Objective: Ruins of the First Bastion
+						crit(6),	-- Bonus Objective: The Forgotten Caves
+						crit(4),	-- Bonus Objective: Valley of Destruction
+						crit(9),	-- Affliction Ridge or The Razorbloom
+						crit(7),	-- South Gronn Canyon or Evermorn Springs
+						crit(8),	-- Stonemaul Arena or Tangleheart
+					}),
+					ach(9654),	-- Mean and Green (Everbloom Wilds)
+					ach(9663),	-- Picky Palate (Everbloom Wilds)
+					ach(9658),	-- Pillars of Draenor (Everbloom Wilds)
+					{	-- Securing Draenor (Alliance)
+						-- Note!! Spans 3 zones Garrison, Tanaan Jungle, and Talador.
+						["achievementID"] = 9564,	-- Securing Draenor (Alliance)
+						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- Assault on the Everbloom Wilds
+								["achievementID"] = 9564,	-- Securing Draenor (Alliance)
+								["criteriaID"] = 5,		-- Assault on the Everbloom Wilds
+							},
+							{	-- Assault on the Pit
+								["achievementID"] = 9564,	-- Securing Draenor (Alliance)
+								["criteriaID"] = 4,		-- Assault on the Pit
+							},
+						},
+					},
+					{	-- Securing Draenor (Horde)
+						-- Note!! Spans 3 zones Garrison, Tanaan Jungle, and Talador.
+						["achievementID"] = 9562,	-- Securing Draenor (Horde)
+						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Assault on the Everbloom Wilds
+								["achievementID"] = 9562,	-- Securing Draenor (Horde)
+								["criteriaID"] = 5,		-- Assault on the Everbloom Wilds
+							},
+							{	-- Assault on the Pit
+								["achievementID"] = 9562,	-- Securing Draenor (Horde)
+								["criteriaID"] = 4,		-- Assault on the Pit
+							},
+						},
+					},
+				}),
 				n(-228, {	-- Flight Paths
-					fp(1511, { -- Bastion Rise, Gorgrond
+					fp(1511, {	-- Bastion Rise, Gorgrond
 						["coord"] = { 46.4, 92.4 },
 					}),
-					fp(1512, { -- Bastion Rise, Gorgrond
+					fp(1512, {	-- Bastion Rise, Gorgrond
 						["coord"] = { 47.4, 90.8 },
 					}),
-					fp(1442, { -- Beastwatch, Gorgrond
+					fp(1442, {	-- Beastwatch, Gorgrond
 						["coord"] = { 46, 69.2 },
 					}),
-					fp(1520, { -- Breaker's Crown, Gorgrond
+					fp(1520, {	-- Breaker's Crown, Gorgrond
 						["coord"] = { 45.8, 55 },
 					}),
-					fp(1523, { -- Deeproot, Gorgrond
+					fp(1523, {	-- Deeproot, Gorgrond
 						["coord"] = { 46.4, 76.6 },
 					}),
-					fp(1580, { -- Everbloom Overlook, Gorgrond
+					fp(1580, {	-- Everbloom Overlook, Gorgrond
 						["coord"] = { 68.6, 28.8 },
 					}),
-					fp(1568, { -- Everbloom Wilds, Gorgrond
+					fp(1568, {	-- Everbloom Wilds, Gorgrond
 						["coord"] = { 57, 45.8 },
 					}),
-					fp(1514, { -- Evermorn Springs, Gorgrond
+					fp(1514, {	-- Evermorn Springs, Gorgrond
 						["coord"] = { 41.2, 87.2 },
 					}),
-					fp(1519, { -- Highpass, Gorgrond
+					fp(1519, {	-- Highpass, Gorgrond
 						["coord"] = { 52.8, 59.4 },
 					}),
-					fp(1524, { -- Iron Docks, Gorgrond
+					fp(1524, {	-- Iron Docks, Gorgrond
 						["coord"] = { 43, 20.2 },
 					}),
-					fp(1539, { -- Skysea Ridge, Gorgrond
+					fp(1539, {	-- Skysea Ridge, Gorgrond
 						["coord"] = { 39.6, 36.6 },
 					}),
-					fp(1518, { -- Wildwood Wash, Gorgrond
+					fp(1518, {	-- Wildwood Wash, Gorgrond
 						["coord"] = { 64, 57.4 },
 					}),
 				}),
@@ -80,17 +232,27 @@ _.Zones =
 							},
 						},
 					},
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(8923, {	-- Putting the Gore in Gorgrond (Alliance) (unlocks ability to buy Gorgrond Treasure Map from Grakis in Stormshield)
+						crit(1),		-- We Need An Outpost
+						crit(2),		-- Supporting Your Garrison
+						crit(3),		-- In the Land of Giants
+						crit(4),		-- The Iron Approach
+					})),
+					h(ach(8924, {	-- Putting the Gore in Gorgrond (Horde) (unlocks ability to buy Gorgrond Treasure Map from Srikka in Warspear)
+						crit(1),		-- Your Base, Your Choice
+						crit(2),		-- Supporting Your Garrison
+						crit(3),		-- In the Land of Giants
+						crit(4),		-- The Iron Approach
+					})),
+]]--					
 --[[				
 					q(36037),	-- A Centurion Without a Cause
 					qh( 33593),	-- A Flare for the Dramatic
 					q(34339),	-- A Goren's Feast
 					q(35210),	-- A Great Escape
-					qh( 36482),	-- A Green Ogron?
-					qa( 36523),	-- A Green Ogron?
 					qh( 35030),	-- A Grim Harvest
 					qa( 35647),	-- A Grim Harvest
-					qa( 35693),	-- A Harsh Reminder
-					qh( 35248),	-- A Harsh Reminder
 					qa( 35065),	-- A Harvester Has Come
 					qh( 35031),	-- A Heartfelt Search
 					qa( 35656),	-- A Heartfelt Search
@@ -109,7 +271,6 @@ _.Zones =
 					q(34336),	-- Ambushing the Enemy
 					q(39309),	-- Arcane Orb
 					q(39310),	-- Artillery Strike
-					q(35037),	-- Bad at Breaking
 					qh( 35016),	-- Basic Skulltaking
 					q(35870),	-- Basilisk Butcher
 					qh( 33662),	-- Beatface vs. Boulder
@@ -122,19 +283,14 @@ _.Zones =
 					q(39308),	-- Bodyguard
 					q(36603),	-- Brimstone Springs
 					qa( 35205),	-- Burn the Bodies
-					qa( 35206),	-- Bushwhacker
-					qh( 35432),	-- Bushwhacker
 					q(39306),	-- Call to Arms
 					q(35730),	-- Cauterizing Wounds
-					qa( 35702),	-- Chains of Iron
-					qh( 35136),	-- Chains of Iron
 					q(35508),	-- Chapter I: Plant Food
 					qa( 35654),	-- Chapter I: Plant Food
 					q(35527),	-- Chapter II: The Harvest
 					qa( 35651),	-- Chapter II: The Harvest
 					q(35524),	-- Chapter III: Ritual of the Charred
 					qa( 35650),	-- Chapter III: Ritual of the Charred
-					qh( 35027),	-- Clearing the Way
 					qh( 37050),	-- Clefthoof Training: Riplash
 					qa( 36985),	-- Clefthoof Training: Riplash
 					qa( 35207),	-- Coalpart's Revenge
@@ -154,13 +310,9 @@ _.Zones =
 					qh( 38570),	-- Derailment
 					q(39289),	-- Doomroller
 					qh( 35501),	-- Doomshot
-					qh( 35507),	-- Down the Goren Hole
-					qa( 35229),	-- Down the Goren Hole
 					q(40105),	-- Drakum
 					q(36504),	-- Evermorn Springs
-					qh( 33563),	-- Eye Candy
 					q(35139),	-- Eye in the Sky
-					q(35128),	-- Fair Warning
 					qh( 36344),	-- Feeding An Army
 					qa( 36272),	-- Feeding An Army
 					qa( 36134),	-- Garrison Campaign: Awakening
@@ -168,34 +320,24 @@ _.Zones =
 					qh( 34335),	-- Garrison Campaign: Crows In The Field
 					qa( 34409),	-- Garrison Campaign: Crows In The Field
 					qh( 36832),	-- Get the Xuk Outta Here!
-					q(34699),	-- Getting Gladiators
 					q(40106),	-- Gondar
 					qh( 33544),	-- Goren, Goren, Gone!
-					qh( 35506),	-- Growing Wood
-					qa( 35652),	-- Growing Wood
 					q(40074),	-- Guk
 					qa( 36210),	-- Hard Shell
 					qa( 36595),	-- He Drew Aggro...culture
-					qh( 35040),	-- Heart of the Fen
-					qa( 35659),	-- Heart of the Fen
 					q(34340),	-- Heating Up
 					q(44573),	-- Honor the Flame
 					qh( 38572),	-- Hook, Line, and... Sink Him!					
 					qa( 38256),	-- Hook, Line, and... Sink Him!
-					q(34279),	-- I Am Blook
 					qa( 35828),	-- I Drew Aggro...culture
 					q(35218),	-- Iron Horde Orders
 					qa( 36508),	-- Is This One of Yours?
 					qh( 35036),	-- Is This One of Yours?
-					qa( 35235),	-- Iyu
-					qh( 35510),	-- Iyu
 					q(36571),	-- Iyun Weald
 					qh( 36460),	-- Just Another Stick in the Wall
 					qa( 35233),	-- Just In Case
 					qh( 35511),	-- Kaz the Shrieker
 					q(34702),	-- Krav'ogra
-					q(33706),	-- Laying Dionor to Rest
-					q(36443),	-- Laying Dionor to Rest
 					qh( 35129),	-- Leave Every Soldier Behind
 					qa( 36223),	-- Leave Every Soldier Behind
 					q(35505),	-- Lost Lumberjack
@@ -207,9 +349,7 @@ _.Zones =
 					q(34413),	-- Lumberstruck
 					qa( 36833),	-- May I Be of Service?
 					q(39307),	-- Mechasuit
-					qa( 35644),	-- Mercy for the Living
 					q(36563),	-- Mistcreep Mire
-					qh( 35399),	-- Mossy Fate
 					q(40107),	-- Mudlump
 					qa( 35642),	-- Mysterious Pod
 					qh( 35021),	-- Mysterious Pod
@@ -221,13 +361,10 @@ _.Zones =
 					q(35934),	-- Nisha's Vengeance
 					qh( 38573),	-- Nothing Remains
 					qa( 38258),	-- Nothing Remains
-					q(35026),	-- On the Mend
 					q(35946),	-- Peckers the Majestic
 					qh( 36812),	-- Penny For Your Thoughts
 					qh( 36434),	-- Penny From Heaven
 					q(36296),	-- Phylarch the Evergreen
-					qa( 36436),	-- Plant Pruning
-					qh( 33689),	-- Plant Pruning
 					qh( 35429),	-- Pollen Power
 					qa( 35204),	-- Pollen Power
 					qa( 35255),	-- Power of the Genesaur
@@ -262,10 +399,8 @@ _.Zones =
 					qa( 35666),	-- Rangari in the Red
 					qh( 33694),	-- Reagents from Rakthoth
 					qa( 36441),	-- Reclaiming Property
-					qa( 35050),	-- Rescue Rangari
 					q(33633),	-- Rooter the Ravenous
 					q(40075),	-- Rukdug
-					qa( 36440),	-- Saberon Population Reduction
 					q(33705),	-- Sacking the Saberon Stronghold
 					qa( 35633),	-- Scout Forensics
 					qh( 35536),	-- Secrets of the Botani
@@ -282,12 +417,7 @@ _.Zones =
 					q(36476),	-- South Gronn Canyon
 					q(35064),	-- Sparring Arena					
 					q(35149),	-- Sparring Arena
-					qh( 33661),	-- Steamscar "Reagents"
 					q(36566),	-- Stonemaul Arena
-					qa( 36575),	-- Strike While the Iron is Hot
-					qh( 36574),	-- Strike While the Iron is Hot
-					qa( 36576),	-- Strike While the Iron is Hot
-					qh( 36573),	-- Strike While the Iron is Hot
 					qa( 35216),	-- Super Seeds
 					qh( 35406),	-- Super Seeds
 					qa( 36442),	-- Taking the Death Bloom
@@ -299,11 +429,9 @@ _.Zones =
 					q(36564),	-- Tangleheart
 					qh( 35707),	-- Tangleheart
 					q(39288),	-- Terrorfist
-					q(34703),	-- The Axe of Kor'gall
 					qh( 34341),	-- The Beating Heart
 					qa( 34410),	-- The Beating Heart
 					qa( 34030),	-- The Captive Engineer
-					qa( 36208),	-- The Crystal Shard
 					q(34338),	-- The Descent
 					qa( 35883),	-- The Fists of Vaandaam
 					q(34337),	-- The Giant Cauldron
@@ -317,7 +445,6 @@ _.Zones =
 					qh( 35058),	-- The Mysterious Flask
 					qa( 34029),	-- The Prototype
 					q(36500),	-- The Razorbloom
-					qa( 35213),	-- The Razorbloom
 					qh( 36474),	-- The Razorbloom
 					qh( 33660),	-- The Sacking of the Saberon
 					qh( 35029),	-- The Secret of the Fungus
@@ -381,335 +508,444 @@ _.Zones =
 					qh( 35151),	-- Your Base, Your Choice
 					qh( 35247),	-- Zero Xuks Given	
 --]]					
+					qa(35206, {		-- Bushwhacker
+						i(112858),	-- Botani Grower's Ring
+						i(119060),	-- Botani Leafbloomer's Signet
+						i(112860),	-- Botani Mender's Signet
+						i(119068),	-- Botani Pruner's Signet
+						i(112859),	-- Botani Tender's Seal
+					}),
+					qh(35432, {		-- Bushwhacker
+						i(112858),	-- Botani Grower's Ring
+						i(119060),	-- Botani Leafbloomer's Signet
+						i(112860),	-- Botani Mender's Signet
+						i(119068),	-- Botani Pruner's Signet
+						i(112859),	-- Botani Tender's Seal
+					}),
 					qh(35027,  {  	-- Clearing the Way
-						i(112595),
-						i(112596),
-						i(112597),
-						i(112598),
+						i(112596),	-- Foundry-Fired Plate Gauntlets
+						i(112595),	-- Overgrowth Cutter Gloves
+						i(112597),	-- Steamburst Gloves
+						i(112598),	-- Wildwood Wrangler Gauntlets
 					}),
 					qh(33563,  {  	-- Eye Candy
-						i(118032),
-						i(118030),
-						i(118033),
-						i(118031),
+						i(118031),	-- Foundry-Fired Plate Handguards
+						i(118030),	-- Overgrowth Cutter Gauntlets
+						i(118032),	-- Steamburst Handwraps
+						i(118033),	-- Wildwood Wrangler Gloves
 					}),
 					qa(35659,  {  	-- Heart of the Fen
-						i(112603),
-						i(112604),
-						i(112605),
-						i(112606),
+						i(112603),	-- Foundry-Fired Plate Legguards
+						i(112606),	-- Overgrowth Cutter Breeches
+						i(112604),	-- Steamburst Leggings
+						i(112605),	-- Wildwood Wrangler Leggings
 					}),
 					qh(35040,  {  	-- Heart of the Fen
-						i(112603),
-						i(112604),
-						i(112605),
-						i(112606),
+						i(112603),	-- Foundry-Fired Plate Legguards
+						i(112606),	-- Overgrowth Cutter Breeches
+						i(112604),	-- Steamburst Leggings
+						i(112605),	-- Wildwood Wrangler Leggings
 					}),
 					qa(36443,  {  	-- Laying Dionor to Rest
-						i(112959),
-						i(112960),
-						i(112961),
-						i(119049),
-						i(119054),
+						i(119054),	-- Clarity of Dionor
+						i(119049),	-- Fortitude of Dionor
+						i(112959),	-- Grace of Dionor
+						i(112961),	-- Strength of Dionor
+						i(112960),	-- Wisdom of Dionor
 					}),
 					qh(33706,  {  	-- Laying Dionor to Rest
-						i(112959),
-						i(112960),
-						i(112961),
-						i(119049),
-						i(119054),
+						i(119054),	-- Clarity of Dionor
+						i(119049),	-- Fortitude of Dionor
+						i(112959),	-- Grace of Dionor
+						i(112961),	-- Strength of Dionor
+						i(112960),	-- Wisdom of Dionor
 					}),
 					qa(35644,  {  	-- Mercy for the Living
-						i(112595),
-						i(112596),
-						i(112597),
-						i(112598),
+						i(112596),	-- Foundry-Fired Plate Gauntlets
+						i(112595),	-- Overgrowth Cutter Gloves
+						i(112597),	-- Steamburst Gloves
+						i(112598),	-- Wildwood Wrangler Gauntlets
+					}),
+					q(35026, {		-- On the Mend
+						i(119064),	-- Steamfury Band
+						i(118039),	-- Steamfury Loop
+						i(119072),	-- Steamfury Ring
+						i(118040),	-- Steamfury Seal
+						i(118038),	-- Steamfury Signet
 					}),
 					qa(36436,  {  	-- Plant Pruning
-						i(118035),
-						i(118037),
-						i(118036),
-						i(118034),
+						i(118034),	-- Foundry-Fired Plate Waistguard
+						i(118037),	-- Overgrowth Cutter Girdle
+						i(118035),	-- Steamburst Waistwrap
+						i(118036),	-- Wildwood Wrangler Links
 					}),
 					qh(33689,  {  	-- Plant Pruning
-						i(118035),
-						i(118037),
-						i(118036),
-						i(118034),
+						i(118034),	-- Foundry-Fired Plate Waistguard
+						i(118037),	-- Overgrowth Cutter Girdle
+						i(118035),	-- Steamburst Waistwrap
+						i(118036),	-- Wildwood Wrangler Links
 					}),
 					qa(35050,  {  	-- Rescue Rangari
-						i(118032),
-						i(118030),
-						i(118033),
-						i(118031),
+						i(118031),	-- Foundry-Fired Plate Handguards
+						i(118030),	-- Overgrowth Cutter Gauntlets
+						i(118032),	-- Steamburst Handwraps
+						i(118033),	-- Wildwood Wrangler Gloves
 					}),
 					qa(36440,  {  	-- Saberon Population Reduction
-						i(118005),
-						i(112875),
-						i(118004),
-						i(118013),
-						i(118014),
-						i(118012),
+						i(118014),	-- Steamscar Cudgel
+						i(118013),	-- Steamscar Sabre
+						i(112875),	-- Steamscar Shaman's Barrier
+						i(118012),	-- Steamscar Shank
+						i(118004),	-- Steamscar Shield
+						i(118005),	-- Steamscar Vessel
 					}),
 					qh(33661,  {  	-- Steamscar "Reagents"
-						i(118005),
-						i(112875),
-						i(118004),
-						i(118013),
-						i(118014),
-						i(118012),
+						i(118014),	-- Steamscar Cudgel
+						i(118013),	-- Steamscar Sabre
+						i(112875),	-- Steamscar Shaman's Barrier
+						i(118012),	-- Steamscar Shank
+						i(118004),	-- Steamscar Shield
+						i(118005),	-- Steamscar Vessel
+					}),
+					qa(36575, {		-- Strike While the Iron is Hot
+						i(112885),	-- Commander Gar's Iron Insignia
+						i(112889),	-- Genesaur's Greatness
+						i(112887),	-- Goc's Trophy
+					}),
+					qh(36574, {		-- Strike While the Iron is Hot
+						i(112885),	-- Commander Gar's Iron Insignia
+						i(112889),	-- Genesaur's Greatness
+						i(112887),	-- Goc's Trophy
+					}),
+					qa(36576, {		-- Strike While the Iron is Hot
+						i(112885),	-- Commander Gar's Iron Insignia
+						i(112889),	-- Genesaur's Greatness
+						i(112887),	-- Goc's Trophy
+					}),
+					qh(36573, {		-- Strike While the Iron is Hot
+						i(112885),	-- Commander Gar's Iron Insignia
+						i(112889),	-- Genesaur's Greatness
+						i(112887),	-- Goc's Trophy
+					}),
+					q(34703, {		-- The Axe of Kor'gall
+						i(112888),	-- Anger of Kor'gall
+						i(112886),	-- Ferocity of Kor'gall
+						i(112884),	-- Might of Kor'gall
+					}),
+					qa(36208, {		-- The Crystal Shard
+						i(112864),	-- Laughing Skull Trophy Necklace
+						i(119085),	-- Xuk's Bad Xuk Charm
+						i(119076),	-- Xuk's Fingerbone Pouch
+						i(112863),	-- Xuk's Good Xuk Charm
+						i(112865),	-- Xuk's Spirit-Speaking Chain
+					}),
+					qa(35209, {		-- The Life Spring
+						i(118009),	-- Botani Tangle Chain
+						i(119090),	-- Botani Thorn Necklace
+						i(119081),	-- Smoothed Spiritstone
+						i(118011),	-- Utrophis-Soaked Spiritstone
+						i(118010),	-- Waterworn Ogre Carving
+					}),
+					qh(35434, {		-- The Life Spring
+						i(118009),	-- Botani Tangle Chain
+						i(119090),	-- Botani Thorn Necklace
+						i(119081),	-- Smoothed Spiritstone
+						i(118011),	-- Utrophis-Soaked Spiritstone
+						i(118010),	-- Waterworn Ogre Carving
 					}),
 					qa(35834,  {  	-- Wake of the Genesaur
-						i(112608),
-						i(112609),
-						i(112610),
-						i(112611),
+						i(112609),	-- Foundry-Fired Plate Shoulders
+						i(112608),	-- Overgrowth Cutter Spaulders
+						i(112610),	-- Steamburst Mantle
+						i(112611),	-- Wildwood Wrangler Monnion
 					}),
 					qh(33548,  {  	-- We Die Laughing
-						i(112608),
-						i(112609),
-						i(112610),
-						i(112611),
+						i(112609),	-- Foundry-Fired Plate Shoulders
+						i(112608),	-- Overgrowth Cutter Spaulders
+						i(112610),	-- Steamburst Mantle
+						i(112611),	-- Wildwood Wrangler Monnion
+					}),
+					qh(35038, {		-- What the Bony Xuk?
+						i(112864),	-- Laughing Skull Trophy Necklace
+						i(119085),	-- Xuk's Bad Xuk Charm
+						i(119076),	-- Xuk's Fingerbone Pouch
+						i(112863),	-- Xuk's Good Xuk Charm
+						i(112865),	-- Xuk's Spirit-Speaking Chain
 					}),
 					n(-358, { 	-- Lumber Yard
 						qa(36523,  {  	-- A Green Ogron? -  Lumber Yard
-							i(112591),
-							i(112592),
-							i(112593),
-							i(112594),
+							i(112591),	-- Foundry-Fired Plate Warboots
+							i(112594),	-- Overgrowth Cutter Boots
+							i(112592),	-- Steamburst Treads
+							i(112593),	-- Wildwood Wrangler Sabatons
 						}),
 						qh(36482,  {  	-- A Green Ogron? -  Lumber Yard
-							i(112591),
-							i(112592),
-							i(112593),
-							i(112594),
+							i(112591),	-- Foundry-Fired Plate Warboots
+							i(112594),	-- Overgrowth Cutter Boots
+							i(112592),	-- Steamburst Treads
+							i(112593),	-- Wildwood Wrangler Sabatons
 						}),
 						qa(35229,  {  	-- Down the Goren Hole - Lumber Yard
-							i(112867),
-							i(112871),
-							i(112874),
-							i(112868),
-							i(112869),
-							i(112870),
-							i(112872),
-							i(112873),
+							i(112874),	-- Abandoned Dark Iron Cudgel
+							i(112872),	-- Abandoned Dark Iron Glaive
+							i(112868),	-- Abandoned Dark Iron Greataxe
+							i(112867),	-- Abandoned Dark Iron Handaxe
+							i(112870),	-- Abandoned Dark Iron Lockjammer
+							i(112869),	-- Abandoned Dark Iron Longbow
+							i(112871),	-- Abandoned Dark Iron Skullthumper
+							i(112873),	-- Abandoned Dark Iron Staff
 						}),
 						qh(35507,  {  	-- Down the Goren Hole - Lumber Yard
-							i(112867),
-							i(112871),
-							i(112874),
-							i(112868),
-							i(112869),
-							i(112870),
-							i(112872),
-							i(112873),
+							i(112874),	-- Abandoned Dark Iron Cudgel
+							i(112872),	-- Abandoned Dark Iron Glaive
+							i(112868),	-- Abandoned Dark Iron Greataxe
+							i(112867),	-- Abandoned Dark Iron Handaxe
+							i(112870),	-- Abandoned Dark Iron Lockjammer
+							i(112869),	-- Abandoned Dark Iron Longbow
+							i(112871),	-- Abandoned Dark Iron Skullthumper
+							i(112873),	-- Abandoned Dark Iron Staff
 						}),
 						qa(35652,  {  	-- Growing Wood - Lumber Yard
-							i(112616),
-							i(112617),
-							i(112618),
-							i(112619),
+							i(112617),	-- Foundry-Fired Plate Wristwraps
+							i(112619),	-- Overgrowth Cutter Wristwraps
+							i(112616),	-- Steamburst Wristwraps
+							i(112618),	-- Wildwood Wrangler Wristwraps
 						}),
 						qh(35506,  {  	-- Growing Wood - Lumber Yard
-							i(112616),
-							i(112617),
-							i(112618),
-							i(112619),
+							i(112617),	-- Foundry-Fired Plate Wristwraps
+							i(112619),	-- Overgrowth Cutter Wristwraps
+							i(112616),	-- Steamburst Wristwraps
+							i(112618),	-- Wildwood Wrangler Wristwraps
 						}),
 						qa(35235,  {  	-- Iyu - Lumber Yard
-							i(112588),
-							i(112589),
-							i(112590),
-							i(112607),
+							i(112588),	-- Foundry-Fired Plate Chestplate
+							i(112590),	-- Overgrowth Cutter Vest
+							i(112607),	-- Steamburst Robe
+							i(112589),	-- Wildwood Wrangler Vest
 						}),
 						qh(35510,  {  	-- Iyu - Lumber Yard
-							i(112588),
-							i(112589),
-							i(112590),
-							i(112607),
+							i(112588),	-- Foundry-Fired Plate Chestplate
+							i(112590),	-- Overgrowth Cutter Vest
+							i(112607),	-- Steamburst Robe
+							i(112589),	-- Wildwood Wrangler Vest
 						}),
 						qh(35399,  {  	-- Mossy Fate - Lumber Yard
-							i(112612),
-							i(112613),
-							i(112614),
-							i(112615),
+							i(112612),	-- Foundry-Fired Plate Girdle
+							i(112615),	-- Overgrowth Cutter Belt
+							i(112613),	-- Steamburst Cord
+							i(112614),	-- Wildwood Wrangler Belt
 						}),
 						qa(35213,  {  	-- The Razorbloom - Lumber Yard
-							i(112612),
-							i(112613),
-							i(112614),
-							i(112615),
+							i(112612),	-- Foundry-Fired Plate Girdle
+							i(112615),	-- Overgrowth Cutter Belt
+							i(112613),	-- Steamburst Cord
+							i(112614),	-- Wildwood Wrangler Belt
 						}),
 					}),
 					n(-357, { 	-- Sparring Arena
 						qa(35693,  {  	-- A Harsh Reminder - Sparring Arena
-							i(112612),
-							i(112613),
-							i(112614),
-							i(112615),
+							i(112612),	-- Foundry-Fired Plate Girdle
+							i(112615),	-- Overgrowth Cutter Belt
+							i(112613),	-- Steamburst Cord
+							i(112614),	-- Wildwood Wrangler Belt
 						}),
 						qh(35248,  {  	-- A Harsh Reminder - Sparring Arena
-							i(112612),
-							i(112613),
-							i(112614),
-							i(112615),
+							i(112612),	-- Foundry-Fired Plate Girdle
+							i(112615),	-- Overgrowth Cutter Belt
+							i(112613),	-- Steamburst Cord
+							i(112614),	-- Wildwood Wrangler Belt
 						}),
 						q(35037,  {  	-- Bad at Breaking - Sparring Arena
-							i(112591),
-							i(112592),
-							i(112593),
-							i(112594),
+							i(112591),	-- Foundry-Fired Plate Warboots
+							i(112594),	-- Overgrowth Cutter Boots
+							i(112592),	-- Steamburst Treads
+							i(112593),	-- Wildwood Wrangler Sabatons
 						}),
 						qa(35702,  {  	-- Chains of Iron - Sparring Arena
-							i(112588),
-							i(112589),
-							i(112590),
-							i(112607),
+							i(112588),	-- Foundry-Fired Plate Chestplate
+							i(112590),	-- Overgrowth Cutter Vest
+							i(112607),	-- Steamburst Robe
+							i(112589),	-- Wildwood Wrangler Vest
 						}),
 						qh(35136,  {  	-- Chains of Iron - Sparring Arena
-							i(112588),
-							i(112589),
-							i(112590),
-							i(112607),
+							i(112588),	-- Foundry-Fired Plate Chestplate
+							i(112590),	-- Overgrowth Cutter Vest
+							i(112607),	-- Steamburst Robe
+							i(112589),	-- Wildwood Wrangler Vest
 						}),
 						q(35128,  {  	-- Fair Warning - Sparring Arena
-							i(118022),
-							i(118026),
-							i(118029),
-							i(118023),
-							i(118024),
-							i(118025),
-							i(118027),
-							i(118028),
+							i(118025),	-- Ogron Slayer's Ankleslicer
+							i(118022),	-- Ogron Slayer's Axe
+							i(118029),	-- Ogron Slayer's Club
+							i(118024),	-- Ogron Slayer's Eye-Poker
+							i(118026),	-- Ogron Slayer's Eyebruiser
+							i(118027),	-- Ogron Slayer's Eyegouger
+							i(118023),	-- Ogron Slayer's Greataxe
+							i(118028),	-- Ogron Slayer's Greatstaff
 						}),
 						q(34699,  {  	-- Getting Gladiators - Sparring Arena
-							i(112616),
-							i(112617),
-							i(112618),
-							i(112619),
+							i(112617),	-- Foundry-Fired Plate Wristwraps
+							i(112619),	-- Overgrowth Cutter Wristwraps
+							i(112616),	-- Steamburst Wristwraps
+							i(112618),	-- Wildwood Wrangler Wristwraps
 						}),
 					}),
 				}),
 				n(-16, { 	-- Rares
 					n(86268, { 		-- Alkali
 						["groups"] = {
-							dr(42, i(119361)),	-- Thorn-Knuckled Gloves
+							i(119361),	-- Thorn-Knuckled Gloves
 						},
 						["questID"] = 37371,
 						["isDaily"] = true,
+						["coords"] = { 
+								{ 56.2, 40.8 },
+								{ 58.6, 41.2 },
+								{ 71.4, 40.2 },
+							},
 					}), 
 					n(82085, { 		-- Bashiok
 						["groups"] = {	
-							dr(100, i(118222)),	-- Spirit of Bashiok Toy
+							i(118222),	-- Spirit of Bashiok Toy
 						},
-						["questID"] = 35335,	
+						["questID"] = 35335,
+						["coord"] = { 40.0, 79.0 },
 					}), 
 					n(85907, { 		-- Berthora
 						["groups"] = {	
-							dr(100, i(118232)),	-- Scaled Riverbeast Spaulders
+							i(118232),	-- Scaled Riverbeast Spaulders
 						},
-						["questID"] = 36597,	
+						["questID"] = 36597,
+						["coord"] = { 39.4, 74.6 },
 					}), 
 					n(86579, { 		-- Blademaster Ro'gor
 						["groups"] = {	
-							dr(65, i(119228)),	-- Ro'gor's Slippers of Silence
+							i(119228),	-- Ro'gor's Slippers of Silence
 						},
 						["questID"] = 37368,
-						["isDaily"] = true,							
+						["isDaily"] = true,
+						["coords"] = {
+							{ 46.0, 31.4 },
+							{ 45.8, 33.2 },
+						},
 					}),
 					o(235859, { 	-- Brokor's Sack
 						["groups"] = {
-							dr(100, i(118702)), -- Brokor's Walking Stick
+							i(118702), -- Brokor's Walking Stick
 						},
 						["questID"] = 36506,
+						["coord"] = { 41.7, 52.9 },
 						["icon"] = "Interface\\Icons\\INV_Misc_Bag_10",
 					}),							
 					n(82311, { 		-- Char the Burning
 						["groups"] = {	
-							dr(100, i(118212)), -- Char's Smoldering Fist
+							i(118212), -- Char's Smoldering Fist
 						},
-						["questID"] = 35503,	
+						["questID"] = 35503,
+						["coord"] = { 53.4, 44.6 },
 					}), 
 					n(86566, { 		-- Defector Dazgo
 						["groups"] = {	
-							dr(59, i(119224)),	-- Foereaver Polearm
+							i(119224),	-- Foereaver Polearm
 						},
 						["questID"] = 37362,
-						["isDaily"] = true,							
+						["isDaily"] = true,
+						["coord"] = { 48.2, 21.0 },
 					}), 
 					n(82058, { 		-- Depthroot
 						["groups"] = {	
-							dr(38, i(119406)),	-- Depthroot's Forearm
+							i(119406),	-- Depthroot's Forearm
 						},
-						["questID"] = 37370,	
-						["isDaily"] = true,	
+						["questID"] = 37370,
+						["isDaily"] = true,
+						["coord"] = { 72.6, 40.8 },						
 					}), 
 					o(236141, { 	-- Discarded Pack
 						["groups"] = {
-							dr(04.0, i(106521)),	-- Highland Vest
-							dr(04.0, i(106490)),	-- Shardback Gauntlets
-							dr(03.0, i(116519)),	-- Creeperclaw Spear
-							dr(03.0, i(116702)),	-- Evermorn Cloak
-							dr(02.0, i(116516)),	-- Creeperclaw Mace
-							dr(02.0, i(116521)),	-- Creeperclaw Staff
-							dr(02.0, i(106517)),	-- Highland Greaves
-							dr(02.0, i(106494)),	-- Shardback Pauldrons
-							dr(02.0, i(106497)),	-- Shardback Vambraces
-							dr(02.0, i(106500)),	-- Steamscar Britches
-							dr(02.0, i(106501)),	-- Steamscar Gloves
-							dr(01.9, i(116517)),	-- Evermorn Scepter
-							dr(01.9, i(116703)),	-- Evermorn Twig
-							dr(01.9, i(106514)),	-- Highland Belt
-							dr(01.8, i(116512)),	-- Creeperclaw Dagger
-							dr(01.8, i(116513)),	-- Evermorn Spellblade
-							dr(01.8, i(106510)),	-- Mandragoran Robe
-							dr(01.8, i(106505)),	-- Steamscar Waistband
-							dr(01.7, i(116524)),	-- Evermorn Wand
-							dr(01.7, i(106516)),	-- Highland Gauntlets
-							dr(01.7, i(106507)),	-- Mandragoran Cowl
-							dr(01.7, i(106512)),	-- Mandragoran Shoulderpads
-							dr(01.7, i(106513)),	-- Mandragoran Wristwraps
-							dr(01.7, i(106489)),	-- Shardback Breastplate
-							dr(01.7, i(106496)),	-- Shardback Shield
-							dr(01.7, i(106504)),	-- Steamscar Shoulders
-							dr(01.6, i(116508)),	-- Creeperclaw Axe
-							dr(01.6, i(116509)),	-- Creeperclaw Broadaxe
-							dr(01.6, i(116523)),	-- Creeperclaw Greatsword
-							dr(01.6, i(116514)),	-- Creeperclaw Knuckles
-							dr(01.6, i(116522)),	-- Creeperclaw Sword
-							dr(01.6, i(106520)),	-- Highland Spaulders
-							dr(01.6, i(106509)),	-- Mandragoran Leggings
-							dr(01.6, i(106511)),	-- Mandragoran Sandals
-							dr(01.6, i(106502)),	-- Steamscar Hood
-							dr(01.5, i(116510)),	-- Creeperclaw Bow
-							dr(01.5, i(106506)),	-- Mandragoran Cord
-							dr(01.5, i(106491)),	-- Shardback Girdle
-							dr(01.5, i(106495)),	-- Shardback Sabatons
-							dr(01.5, i(106498)),	-- Steamscar Bindings
-							dr(01.5, i(106503)),	-- Steamscar Jerkin
-							dr(01.4, i(116511)),	-- Creeperclaw Crossbow
-							dr(01.4, i(116515)),	-- Creeperclaw Gun
-							dr(01.4, i(116518)),	-- Creeperclaw Hammer
-							dr(01.4, i(116520)),	-- Creeperclaw Staff
-							dr(01.4, i(106515)),	-- Highland Bracers
-							dr(01.4, i(106519)),	-- Highland Legguards
-							dr(01.4, i(106508)),	-- Mandragoran Handwraps						
+							-- Weapons
+							i(116508),	-- Creeperclaw Axe
+							i(116510),	-- Creeperclaw Bow
+							i(116509),	-- Creeperclaw Broadaxe
+							i(116511),	-- Creeperclaw Crossbow
+							i(116512),	-- Creeperclaw Dagger
+							i(116523),	-- Creeperclaw Greatsword
+							i(116515),	-- Creeperclaw Gun
+							i(116518),	-- Creeperclaw Hammer
+							i(116514),	-- Creeperclaw Knuckles
+							i(116516),	-- Creeperclaw Mace
+							i(116519),	-- Creeperclaw Spear
+							i(116521),	-- Creeperclaw Staff
+							i(116520),	-- Creeperclaw Staff
+							i(116522),	-- Creeperclaw Sword
+							i(116517),	-- Evermorn Scepter
+							i(116513),	-- Evermorn Spellblade
+							i(116703),	-- Evermorn Twig
+							i(116524),	-- Evermorn Wand
+							i(106496),	-- Shardback Shield
+							-- Head
+							i(106518),	-- Highland Helm
+							i(106507),	-- Mandragoran Cowl
+							i(106492),	-- Shardback Helm
+							i(106502),	-- Steamscar Hood
+							-- Neck
+							i(116680),	-- Evermorn Amulet
+							-- Shoulders
+							i(106520),	-- Highland Spaulders
+							i(106512),	-- Mandragoran Shoulderpads
+							i(106494),	-- Shardback Pauldrons
+							i(106504),	-- Steamscar Shoulders
+							-- Bacj
+							i(116702),	-- Evermorn Cloak
+							-- Chest
+							i(106521),	-- Highland Vest
+							i(106510),	-- Mandragoran Robe
+							i(106489),	-- Shardback Breastplate
+							i(106503),	-- Steamscar Jerkin
+							-- Wrist
+							i(106515),	-- Highland Bracers
+							i(106513),	-- Mandragoran Wristwraps
+							i(106497),	-- Shardback Vambraces
+							i(106498),	-- Steamscar Bindings
+							-- Hands
+							i(106516),	-- Highland Gauntlets
+							i(106508),	-- Mandragoran Handwraps						
+							i(106490),	-- Shardback Gauntlets
+							i(106501),	-- Steamscar Gloves
+							-- Waist
+							i(106514),	-- Highland Belt
+							i(106506),	-- Mandragoran Cord
+							i(106491),	-- Shardback Girdle
+							i(106505),	-- Steamscar Waistband
+							-- Legs
+							i(106519),	-- Highland Legguards
+							i(106509),	-- Mandragoran Leggings
+							i(106493),	-- Shardback Legplates
+							i(106500),	-- Steamscar Britches
+							-- Feet
+							i(106517),	-- Highland Greaves
+							i(106511),	-- Mandragoran Sandals
+							i(106495),	-- Shardback Sabatons
+							i(106499),	-- Steamscar Boots
+							-- Finger
+							i(116704),	-- Evermorn Ring
 						},
 						["questID"] = 36625,
+						["coord"] = { 42.4, 83.5 },
 						["icon"] = "Interface\\Icons\\INV_Misc_Bag_08",
 					}),
 					n(86571, { 		-- Durp the Hated
 						["groups"] = {	
-							dr(59, i(119225)),	-- Studded Gronn-Stitched Girdle
+							i(119225),	-- Studded Gronn-Stitched Girdle
 						},
 						["questID"] = 37366,
-						["isDaily"] = true,							
+						["isDaily"] = true,
+						["coord"] = { 49.8, 23.8 },
 					}),	
 					o(239828, { 	-- Edge of Reality
 						["groups"] = {
 							o(239901, {		-- Voidtalon Egg
 								["groups"] = {	
-									dr(100,i(121815)),	-- Voidtalon of the Dark Star Mount
+									i(121815),	-- Voidtalon of the Dark Star Mount
 								},
 								["modelScale"] = 2,
 								["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
@@ -721,422 +957,597 @@ _.Zones =
 					}),					
 					o(236178, { 	-- Evermorn Supply Cache
 						["groups"] = {
-							dr(04.0, i(116522)),	-- Creeperclaw Sword
-							dr(04.0, i(106494)),	-- Shardback Pauldrons
-							dr(04.0, i(106496)),	-- Shardback Shield
-							dr(03.0, i(106511)),	-- Mandragoran Sandals
-							dr(02.0, i(116510)),	-- Creeperclaw Bow
-							dr(02.0, i(116515)),	-- Creeperclaw Gun
-							dr(02.0, i(116516)),	-- Creeperclaw Mace
-							dr(02.0, i(106515)),	-- Highland Bracers
-							dr(02.0, i(106506)),	-- Mandragoran Cord
-							dr(02.0, i(106507)),	-- Mandragoran Cowl
-							dr(02.0, i(106510)),	-- Mandragoran Robe
-							dr(02.0, i(106513)),	-- Mandragoran Wristwraps
-							dr(02.0, i(106489)),	-- Shardback Breastplate
-							dr(01.9, i(106512)),	-- Mandragoran Shoulderpads
-							dr(01.9, i(106491)),	-- Shardback Girdle
-							dr(01.9, i(106493)),	-- Shardback Legplates
-							dr(01.9, i(106502)),	-- Steamscar Hood
-							dr(01.8, i(116517)),	-- Evermorn Scepter
-							dr(01.8, i(106516)),	-- Highland Gauntlets
-							dr(01.8, i(106495)),	-- Shardback Sabatons
-							dr(01.7, i(116509)),	-- Creeperclaw Broadaxe
-							dr(01.7, i(116523)),	-- Creeperclaw Greatsword
-							dr(01.7, i(116521)),	-- Creeperclaw Staff
-							dr(01.7, i(116520)),	-- Creeperclaw Staff
-							dr(01.7, i(106499)),	-- Steamscar Boots
-							dr(01.6, i(116511)),	-- Creeperclaw Crossbow
-							dr(01.6, i(116703)),	-- Evermorn Twig
-							dr(01.6, i(106520)),	-- Highland Spaulders
-							dr(01.6, i(106508)),	-- Mandragoran Handwraps
-							dr(01.5, i(116518)),	-- Creeperclaw Hammer
-							dr(01.5, i(116514)),	-- Creeperclaw Knuckles
-							dr(01.5, i(116524)),	-- Evermorn Wand
-							dr(01.5, i(106514)),	-- Highland Belt
-							dr(01.5, i(106517)),	-- Highland Greaves
-							dr(01.5, i(106519)),	-- Highland Legguards
-							dr(01.5, i(106509)),	-- Mandragoran Leggings
-							dr(01.5, i(106490)),	-- Shardback Gauntlets
-							dr(01.5, i(106492)),	-- Shardback Helm
-							dr(01.5, i(106497)),	-- Shardback Vambraces
-							dr(01.5, i(106503)),	-- Steamscar Jerkin
-							dr(01.5, i(106505)),	-- Steamscar Waistband
-							dr(01.4, i(116508)),	-- Creeperclaw Axe
-							dr(01.4, i(116512)),	-- Creeperclaw Dagger
-							dr(01.4, i(116519)),	-- Creeperclaw Spear
-							dr(01.4, i(116513)),	-- Evermorn Spellblade
-							dr(01.4, i(106521)),	-- Highland Vest
-							dr(01.4, i(106498)),	-- Steamscar Bindings
-							dr(01.4, i(106504)),	-- Steamscar Shoulders						
+							-- Weapons
+							i(116508),	-- Creeperclaw Axe
+							i(116510),	-- Creeperclaw Bow
+							i(116509),	-- Creeperclaw Broadaxe
+							i(116511),	-- Creeperclaw Crossbow
+							i(116512),	-- Creeperclaw Dagger
+							i(116523),	-- Creeperclaw Greatsword
+							i(116515),	-- Creeperclaw Gun
+							i(116518),	-- Creeperclaw Hammer
+							i(116514),	-- Creeperclaw Knuckles
+							i(116516),	-- Creeperclaw Mace
+							i(116519),	-- Creeperclaw Spear
+							i(116521),	-- Creeperclaw Staff
+							i(116520),	-- Creeperclaw Staff
+							i(116522),	-- Creeperclaw Sword
+							i(116517),	-- Evermorn Scepter
+							i(116513),	-- Evermorn Spellblade
+							i(116703),	-- Evermorn Twig
+							i(116524),	-- Evermorn Wand
+							i(106496),	-- Shardback Shield
+							-- Head
+							i(106518),	-- Highland Helm
+							i(106507),	-- Mandragoran Cowl
+							i(106492),	-- Shardback Helm
+							i(106502),	-- Steamscar Hood
+							-- Neck
+							i(116680),	-- Evermorn Amulet
+							-- Shoulders
+							i(106520),	-- Highland Spaulders
+							i(106512),	-- Mandragoran Shoulderpads
+							i(106494),	-- Shardback Pauldrons
+							i(106504),	-- Steamscar Shoulders
+							-- Bacj
+							i(116702),	-- Evermorn Cloak
+							-- Chest
+							i(106521),	-- Highland Vest
+							i(106510),	-- Mandragoran Robe
+							i(106489),	-- Shardback Breastplate
+							i(106503),	-- Steamscar Jerkin
+							-- Wrist
+							i(106515),	-- Highland Bracers
+							i(106513),	-- Mandragoran Wristwraps
+							i(106497),	-- Shardback Vambraces
+							i(106498),	-- Steamscar Bindings
+							-- Hands
+							i(106516),	-- Highland Gauntlets
+							i(106508),	-- Mandragoran Handwraps						
+							i(106490),	-- Shardback Gauntlets
+							i(106501),	-- Steamscar Gloves
+							-- Waist
+							i(106514),	-- Highland Belt
+							i(106506),	-- Mandragoran Cord
+							i(106491),	-- Shardback Girdle
+							i(106505),	-- Steamscar Waistband
+							-- Legs
+							i(106519),	-- Highland Legguards
+							i(106509),	-- Mandragoran Leggings
+							i(106493),	-- Shardback Legplates
+							i(106500),	-- Steamscar Britches
+							-- Feet
+							i(106517),	-- Highland Greaves
+							i(106511),	-- Mandragoran Sandals
+							i(106495),	-- Shardback Sabatons
+							i(106499),	-- Steamscar Boots
+							-- Finger
+							i(116704),	-- Evermorn Ring
 						},
 						["questID"] = 36658,
+						["coord"] = { 41.8, 78.1 },
 						["icon"] = "Interface\\Icons\\Ability_Skyreach_Empower",
 					}),
 					n(88580, { 		-- Firestarter Grash
 						["groups"] = {	
-							dr(40, i(119381)),	-- Grash's Fireproof Handguards
+							i(119381),	-- Grash's Fireproof Handguards
 						},
 						["questID"] = 37373,
-						["isDaily"] = true,							
+						["isDaily"] = true,
+						["coords"] = { 
+							{ 57.8, 36.6 },
+							{ 72.8, 35.8 },
+						},
+						["description"] = "Will spawn in the area that is one fire.",
 					}), 
 					n(85250, { 		-- Fossilwood the Petrified
 						["groups"] = {	
-							dr(100, i(118221)),	-- Petrification Stone Toy
+							i(118221),	-- Petrification Stone Toy
 						},						
-						["questID"] = 36387,	
+						["questID"] = 36387,
+						["coord"] = { 57.4, 68.6 },
 					}), 
+					n(81038, { 		-- Gelgor of the Blue Flame
+						["groups"] = {
+							i(118230),	-- Smoldering Cerulean Stone
+						},
+						["questID"] = 36391,
+						["coords"] = { 
+							{ 43.5, 48.1 },	-- Cave Entrance
+							{ 41.8, 45.6 },	-- Gelgor
+						},
+						["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
+					}),
+					n(80868, { 		-- Glut
+						["groups"] = {
+							i(118229),	-- Resonant Hidecrystal of the Gorger
+						},
+						["coords"] = { 
+							{ 44.5, 50.8 },	-- Cave Entrance
+							{ 46.0, 50.8 },	-- Glut
+						},
+						["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
+					}),
 					n(78269, { 		-- Gnarljaw
 						["groups"] = {	
-							dr(100, i(119397)), -- Gnarled Goren Jaw
+							i(119397), -- Gnarled Goren Jaw
 						},						
 						["questID"] = 37413,
-						["isDaily"] = true,							
+						["isDaily"] = true,
+						["coord"] = { 52.8, 53.6 },
 					}), 
 					n(84431, { 		-- Greldrok the Cunning
 						["groups"] = {	
-							dr(100, i(118210)),	-- Greldrok's Facesmasher
+							i(118210),	-- Greldrok's Facesmasher
 						},						
-						["questID"] = 36186,	
+						["questID"] = 36186,
+						["coords"] = { 
+							{ 46.4, 45.4 },	-- Cave Entrance
+							{ 46.8, 43.2 },	-- Greldrok the Cunning
+						},
+						["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
 					}), 
 					n(88583, { 		-- Grove Warden Yal
 						["groups"] = {	
-							dr(40, i(119414)),  -- Yal's Leafwrap Cloak
+							i(119414),  -- Yal's Leafwrap Cloak
 						},						
 						["questID"] = 37375,
-						["isDaily"] = true,						
+						["isDaily"] = true,
+						["coord"] = { 59.6, 43.0 },						
 					}), 
 					n(83522, { 		-- Hive Queen Skrikka
 						["groups"] = {	
-							dr(100, i(118209)), -- Skrikka's Mandible
+							i(118209), -- Skrikka's Mandible
 						},
-						["questID"] = 35908,	
+						["questID"] = 35908,
+						["coord"] = { 52.2, 70.2 },						
 					}), 
 					n(86577, { 		-- Horgg
 						["groups"] = {	
-							dr(62, i(119229)),	-- Horgg's Bandolier
+							i(119229),	-- Horgg's Bandolier
 						},
-						["questID"] = 37365, 
-						["isDaily"] = true,						
+						["questID"] = 37365,
+						["isDaily"] = true,
+						["coord"] = { 46.0, 28.6 },
 					}), 
 					n(88672, { 		-- Hunter Bal'ra
 						["groups"] = {
-							dr(42, i(119412)),	-- Bal'ra's Compound Bow
+							i(119412),	-- Bal'ra's Compound Bow
 						},
 						["questID"] = 37377,
-						["isDaily"] = true,							
+						["isDaily"] = true,
+						["coord"] = { 55.0, 46.2 },						
 					}),
 					n(86574, { 		-- Inventor Blammo
 						["groups"] = {	
-							dr(65, i(119226)), -- Blammo's Blammer
+							i(119226), -- Blammo's Blammer
 						},
 						["questID"] = 37367,
-						["isDaily"] = true,							
+						["isDaily"] = true,
+						["coord"] = { 47.6, 30.8 },
 					}), 
 					n(78260, { 		-- King Slime
 						["groups"] = {	
-							dr(37, i(119351)),	-- Slime Coated Kingscloak
+							i(119351),	-- Slime Coated Kingscloak
 						},
 						["questID"] = 37412,
-						["isDaily"] = true,							
+						["isDaily"] = true,
+						["coord"] = { 52.2, 55.6 },
 					}), 
 					n(84406, { 		-- Mandrakor
 						["groups"] = {		
-							dr(100, i(118709)),	-- Doom Bloom Pet
+							i(118709),	-- Doom Bloom Pet
 						},
-						["questID"] = 36178,		
-					}),
+						["questID"] = 36178,
+						["coord"] = { 50.6, 53.2 },
+					}), 
 					n(86562, { 		-- Maniacal Madgard
+						["groups"] = {
+							i(119230),	-- Unpopped Pustule Pendant
+						},
 						["questID"] = 37363,
-						["isDaily"] = true,							
-					}), 					
+						["isDaily"] = true,
+						["coord"] = { 49.0, 33.0 },
+					}),
 					n(88586, { 		-- Mogamago
 						["groups"] = {		
-							dr(41, i(119391)),	-- Etched Osteoderm Shield
+							i(119391),	-- Etched Osteoderm Shield
 						},
 						["questID"] = 37376,
-						["isDaily"] = true,						
+						["isDaily"] = true,
+						["coord"] = { 61.6, 39.2 },
 					}), 
 					n(86582, { 		-- Morgo Kain
 						["groups"] = {		
-							dr(63, i(119227)),	-- Morgo's Unstoppable Ramming Helm
+							i(119227),	-- Morgo's Unstoppable Ramming Helm
 						},
 						["questID"] = 37364,
-						["isDaily"] = true,							
+						["isDaily"] = true,
+						["coords"] = {
+							{ 46.6, 23.0 },
+							{ 45.8, 24.0 },
+						},
 					}), 
 					n(76473, { 		-- Mother Araneae
 						["groups"] = {	
-							dr(100, i(118208)), -- Broodmother's Kiss
+							i(118208), -- Broodmother's Kiss
 						},						
-						["questID"] = 34726,		
+						["questID"] = 34726,
+						["coords"] = { 
+							{ 52.2, 76.7 },	-- Cave Entrance
+							{ 53.4, 78.2 },	-- Mother Araneae
+						},
+						["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
 					}), 
 					o(236715, { 	-- Odd Skull
 						["groups"] = {
-							dr(100, i(118717)),	-- Beastskull Vessel
+							i(118717),	-- Beastskull Vessel
 						},
 						["questID"] = 36509,
+						["coord"] = { 52.5, 66.9 },
 						["icon"] = "Interface\\Icons\\INV_Misc_Skull_08",
 					}),		
 					o(233792, { 	-- Pile of Rubble
 						["groups"] = {
-							dr(05.0, i(116520)),	-- Creeperclaw Staff
-							dr(04.0, i(106497)),	-- Shardback Vambraces
-							dr(04.0, i(106503)),	-- Steamscar Jerkin
-							dr(03.0, i(106520)),	-- Highland Spaulders
-							dr(02.0, i(116519)),	-- Creeperclaw Spear
-							dr(02.0, i(106521)),	-- Highland Vest
-							dr(02.0, i(106507)),	-- Mandragoran Cowl
-							dr(02.0, i(106501)),	-- Steamscar Gloves
-							dr(01.9, i(106519)),	-- Highland Legguards
-							dr(01.8, i(116508)),	-- Creeperclaw Axe
-							dr(01.8, i(116510)),	-- Creeperclaw Bow
-							dr(01.8, i(116511)),	-- Creeperclaw Crossbow
-							dr(01.8, i(116518)),	-- Creeperclaw Hammer
-							dr(01.8, i(106518)),	-- Highland Helm
-							dr(01.8, i(106489)),	-- Shardback Breastplate
-							dr(01.8, i(106505)),	-- Steamscar Waistband
-							dr(01.7, i(116514)),	-- Creeperclaw Knuckles
-							dr(01.7, i(116702)),	-- Evermorn Cloak
-							dr(01.7, i(106515)),	-- Highland Bracers
-							dr(01.7, i(106516)),	-- Highland Gauntlets
-							dr(01.7, i(106491)),	-- Shardback Girdle
-							dr(01.7, i(106499)),	-- Steamscar Boots
-							dr(01.7, i(106502)),	-- Steamscar Hood
-							dr(01.6, i(116509)),	-- Creeperclaw Broadaxe
-							dr(01.6, i(116523)),	-- Creeperclaw Greatsword
-							dr(01.6, i(116515)),	-- Creeperclaw Gun
-							dr(01.6, i(116522)),	-- Creeperclaw Sword
-							dr(01.6, i(116513)),	-- Evermorn Spellblade
-							dr(01.6, i(116703)),	-- Evermorn Twig
-							dr(01.6, i(106506)),	-- Mandragoran Cord
-							dr(01.6, i(106510)),	-- Mandragoran Robe
-							dr(01.6, i(106512)),	-- Mandragoran Shoulderpads
-							dr(01.6, i(106490)),	-- Shardback Gauntlets
-							dr(01.6, i(106504)),	-- Steamscar Shoulders
-							dr(01.5, i(116512)),	-- Creeperclaw Dagger
-							dr(01.5, i(116516)),	-- Creeperclaw Mace
-							dr(01.5, i(116517)),	-- Evermorn Scepter
-							dr(01.5, i(116524)),	-- Evermorn Wand
-							dr(01.5, i(106509)),	-- Mandragoran Leggings
-							dr(01.5, i(106492)),	-- Shardback Helm
-							dr(01.5, i(106493)),	-- Shardback Legplates
-							dr(01.5, i(106495)),	-- Shardback Sabatons
-							dr(01.5, i(106496)),	-- Shardback Shield
-							dr(01.5, i(106498)),	-- Steamscar Bindings
-							dr(01.5, i(106500)),	-- Steamscar Britches
-							dr(01.4, i(116521)),	-- Creeperclaw Staff
-							dr(01.4, i(106514)),	-- Highland Belt
-							dr(01.4, i(106517)),	-- Highland Greaves
-							dr(01.4, i(106511)),	-- Mandragoran Sandals						
+							-- Weapons
+							i(116508),	-- Creeperclaw Axe
+							i(116510),	-- Creeperclaw Bow
+							i(116509),	-- Creeperclaw Broadaxe
+							i(116511),	-- Creeperclaw Crossbow
+							i(116512),	-- Creeperclaw Dagger
+							i(116523),	-- Creeperclaw Greatsword
+							i(116515),	-- Creeperclaw Gun
+							i(116518),	-- Creeperclaw Hammer
+							i(116514),	-- Creeperclaw Knuckles
+							i(116516),	-- Creeperclaw Mace
+							i(116519),	-- Creeperclaw Spear
+							i(116521),	-- Creeperclaw Staff
+							i(116520),	-- Creeperclaw Staff
+							i(116522),	-- Creeperclaw Sword
+							i(116517),	-- Evermorn Scepter
+							i(116513),	-- Evermorn Spellblade
+							i(116703),	-- Evermorn Twig
+							i(116524),	-- Evermorn Wand
+							i(106496),	-- Shardback Shield
+							-- Head
+							i(106518),	-- Highland Helm
+							i(106507),	-- Mandragoran Cowl
+							i(106492),	-- Shardback Helm
+							i(106502),	-- Steamscar Hood
+							-- Neck
+							i(116680),	-- Evermorn Amulet
+							-- Shoulders
+							i(106520),	-- Highland Spaulders
+							i(106512),	-- Mandragoran Shoulderpads
+							i(106494),	-- Shardback Pauldrons
+							i(106504),	-- Steamscar Shoulders
+							-- Bacj
+							i(116702),	-- Evermorn Cloak
+							-- Chest
+							i(106521),	-- Highland Vest
+							i(106510),	-- Mandragoran Robe
+							i(106489),	-- Shardback Breastplate
+							i(106503),	-- Steamscar Jerkin
+							-- Wrist
+							i(106515),	-- Highland Bracers
+							i(106513),	-- Mandragoran Wristwraps
+							i(106497),	-- Shardback Vambraces
+							i(106498),	-- Steamscar Bindings
+							-- Hands
+							i(106516),	-- Highland Gauntlets
+							i(106508),	-- Mandragoran Handwraps						
+							i(106490),	-- Shardback Gauntlets
+							i(106501),	-- Steamscar Gloves
+							-- Waist
+							i(106514),	-- Highland Belt
+							i(106506),	-- Mandragoran Cord
+							i(106491),	-- Shardback Girdle
+							i(106505),	-- Steamscar Waistband
+							-- Legs
+							i(106519),	-- Highland Legguards
+							i(106509),	-- Mandragoran Leggings
+							i(106493),	-- Shardback Legplates
+							i(106500),	-- Steamscar Britches
+							-- Feet
+							i(106517),	-- Highland Greaves
+							i(106511),	-- Mandragoran Sandals
+							i(106495),	-- Shardback Sabatons
+							i(106499),	-- Steamscar Boots
+							-- Finger
+							i(116704),	-- Evermorn Ring
 						},
 						["questID"] = 36118,
+						["coord"] = { 43.9, 70.6 },
 						["icon"] = "Interface\\Icons\\INV_Stone_10",
 					}),
 					n(50985, { 		-- Poundfist
-						dr(100, i(116792)),	-- Sunhide Gronnling Mount
+						["groups"] = {
+							i(116792),	-- Sunhide Gronnling Mount
+						},
+						["coords"] = {
+							{ 42.0, 25.0 },
+							{ 51.4, 43.1 },
+							{ 45.4, 47.5 },
+							{ 47.0, 54.1 },
+							{ 43.2, 55.5 },
+						},
 					}), 
 					n(86257, { 		-- Protectors of the Grove (Basten, Nultra, Valstil)
 						["groups"] = {	
-							dr(38, i(119357)),	-- Grovetender's Cummerbund
-							dr(22, i(119432)),	-- Botani Camouflage Toy
+							i(119432),	-- Botani Camouflage Toy
+							i(119357),	-- Grovetender's Cummerbund
 						},
 						["modelID"]	= 57964,
+						["questID"] = 37369,
+						["coord"] = { 69.2, 44.6 },
 						["description"] = "Kill Basten LAST or you will not be able to loot him."
 					}), 
 					n(85970, { 		-- Riptar
 						["groups"] = {	
-							dr(100, i(118231)),	-- Riptar's Clever Claw
+							i(118231),	-- Riptar's Clever Claw
 						},
-						["questID"] = 36600,		
+						["questID"] = 36600,
+						["coord"] = { 37.6, 81.4 },
 					}), 
+					n(85264, { 		-- Rolkor
+						["groups"] = {
+							i(118211),	-- Rolkor's Rage
+						},
+						["questID"] = 36393,
+						["isDaily"] = true,
+						["coord"] = { 47.8, 41.6 },
+					}),
 					o(236149, { 	-- Sasha's Secret Stash
 						["groups"] = {
-							dr(04.0, i(106514)),	-- Highland Belt
-							dr(04.0, i(106521)),	-- Highland Vest
-							dr(04.0, i(106500)),	-- Steamscar Britches
-							dr(03.0, i(106511)),	-- Mandragoran Sandals
-							dr(03.0, i(106490)),	-- Shardback Gauntlets
-							dr(02.0, i(116510)),	-- Creeperclaw Bow
-							dr(02.0, i(116521)),	-- Creeperclaw Staff
-							dr(02.0, i(106506)),	-- Mandragoran Cord
-							dr(02.0, i(106508)),	-- Mandragoran Handwraps
-							dr(02.0, i(106512)),	-- Mandragoran Shoulderpads
-							dr(02.0, i(106489)),	-- Shardback Breastplate
-							dr(02.0, i(106503)),	-- Steamscar Jerkin
-							dr(02.0, i(106504)),	-- Steamscar Shoulders
-							dr(01.9, i(116520)),	-- Creeperclaw Staff
-							dr(01.9, i(106510)),	-- Mandragoran Robe
-							dr(01.8, i(116511)),	-- Creeperclaw Crossbow
-							dr(01.8, i(116702)),	-- Evermorn Cloak
-							dr(01.8, i(106520)),	-- Highland Spaulders
-							dr(01.7, i(116508)),	-- Creeperclaw Axe
-							dr(01.7, i(106492)),	-- Shardback Helm
-							dr(01.7, i(106499)),	-- Steamscar Boots
-							dr(01.6, i(116509)),	-- Creeperclaw Broadaxe
-							dr(01.6, i(116523)),	-- Creeperclaw Greatsword
-							dr(01.6, i(116518)),	-- Creeperclaw Hammer
-							dr(01.6, i(106518)),	-- Highland Helm
-							dr(01.6, i(106509)),	-- Mandragoran Leggings
-							dr(01.6, i(106496)),	-- Shardback Shield
-							dr(01.6, i(106498)),	-- Steamscar Bindings
-							dr(01.6, i(106501)),	-- Steamscar Gloves
-							dr(01.6, i(106502)),	-- Steamscar Hood
-							dr(01.5, i(116516)),	-- Creeperclaw Mace
-							dr(01.5, i(116524)),	-- Evermorn Wand
-							dr(01.5, i(106491)),	-- Shardback Girdle
-							dr(01.5, i(106497)),	-- Shardback Vambraces
-							dr(01.4, i(116512)),	-- Creeperclaw Dagger
-							dr(01.4, i(116515)),	-- Creeperclaw Gun
-							dr(01.4, i(116519)),	-- Creeperclaw Spear
-							dr(01.4, i(116522)),	-- Creeperclaw Sword
-							dr(01.4, i(116517)),	-- Evermorn Scepter
-							dr(01.4, i(116513)),	-- Evermorn Spellblade
-							dr(01.4, i(106516)),	-- Highland Gauntlets
-							dr(01.4, i(106519)),	-- Highland Legguards
-							dr(01.4, i(106507)),	-- Mandragoran Cowl
-							dr(01.4, i(106513)),	-- Mandragoran Wristwraps
-							dr(01.4, i(106493)),	-- Shardback Legplates
-							dr(01.4, i(106494)),	-- Shardback Pauldrons
-							dr(01.4, i(106495)),	-- Shardback Sabatons
-							dr(01.3, i(116514)),	-- Creeperclaw Knuckles						
+							-- Weapons
+							i(116508),	-- Creeperclaw Axe
+							i(116510),	-- Creeperclaw Bow
+							i(116509),	-- Creeperclaw Broadaxe
+							i(116511),	-- Creeperclaw Crossbow
+							i(116512),	-- Creeperclaw Dagger
+							i(116523),	-- Creeperclaw Greatsword
+							i(116515),	-- Creeperclaw Gun
+							i(116518),	-- Creeperclaw Hammer
+							i(116514),	-- Creeperclaw Knuckles
+							i(116516),	-- Creeperclaw Mace
+							i(116519),	-- Creeperclaw Spear
+							i(116521),	-- Creeperclaw Staff
+							i(116520),	-- Creeperclaw Staff
+							i(116522),	-- Creeperclaw Sword
+							i(116517),	-- Evermorn Scepter
+							i(116513),	-- Evermorn Spellblade
+							i(116703),	-- Evermorn Twig
+							i(116524),	-- Evermorn Wand
+							i(106496),	-- Shardback Shield
+							-- Head
+							i(106518),	-- Highland Helm
+							i(106507),	-- Mandragoran Cowl
+							i(106492),	-- Shardback Helm
+							i(106502),	-- Steamscar Hood
+							-- Neck
+							i(116680),	-- Evermorn Amulet
+							-- Shoulders
+							i(106520),	-- Highland Spaulders
+							i(106512),	-- Mandragoran Shoulderpads
+							i(106494),	-- Shardback Pauldrons
+							i(106504),	-- Steamscar Shoulders
+							-- Bacj
+							i(116702),	-- Evermorn Cloak
+							-- Chest
+							i(106521),	-- Highland Vest
+							i(106510),	-- Mandragoran Robe
+							i(106489),	-- Shardback Breastplate
+							i(106503),	-- Steamscar Jerkin
+							-- Wrist
+							i(106515),	-- Highland Bracers
+							i(106513),	-- Mandragoran Wristwraps
+							i(106497),	-- Shardback Vambraces
+							i(106498),	-- Steamscar Bindings
+							-- Hands
+							i(106516),	-- Highland Gauntlets
+							i(106508),	-- Mandragoran Handwraps						
+							i(106490),	-- Shardback Gauntlets
+							i(106501),	-- Steamscar Gloves
+							-- Waist
+							i(106514),	-- Highland Belt
+							i(106506),	-- Mandragoran Cord
+							i(106491),	-- Shardback Girdle
+							i(106505),	-- Steamscar Waistband
+							-- Legs
+							i(106519),	-- Highland Legguards
+							i(106509),	-- Mandragoran Leggings
+							i(106493),	-- Shardback Legplates
+							i(106500),	-- Steamscar Britches
+							-- Feet
+							i(106517),	-- Highland Greaves
+							i(106511),	-- Mandragoran Sandals
+							i(106495),	-- Shardback Sabatons
+							i(106499),	-- Steamscar Boots
+							-- Finger
+							i(116704),	-- Evermorn Ring			
 						},
 						["questID"] = 36631,
+						["coord"] = { 39.0, 68.1 },
 						["icon"] = "Interface\\Icons\\INV_Misc_Bag_33",
 					}),	
 					o(236158, { 	-- Sniper's Crossbow
 						["groups"] = {
-							dr(100, i(118713)), -- Iron Lookout's Arbalest
+							i(118713), -- Iron Lookout's Arbalest
 						},
 						["questID"] = 36634,
+						["coord"] = { 45.0, 42.6 },
 						["icon"] = "Interface\\Icons\\inv_bow_2h_crossbow_draenorquest_b_01",
 					}),
 					o(236092, { 	-- Stashed Emergency Rucksack
 						["groups"] = {	
-							dr(04.0, i(106519)),	-- Highland Legguards
-							dr(04.0, i(106506)),	-- Mandragoran Cord
-							dr(03.0, i(116523)),	-- Creeperclaw Greatsword
-							dr(03.0, i(116519)),	-- Creeperclaw Spear
-							dr(03.0, i(106521)),	-- Highland Vest
-							dr(03.0, i(106513)),	-- Mandragoran Wristwraps
-							dr(03.0, i(106492)),	-- Shardback Helm
-							dr(03.0, i(106494)),	-- Shardback Pauldrons
-							dr(03.0, i(106496)),	-- Shardback Shield
-							dr(02.0, i(116515)),	-- Creeperclaw Gun
-							dr(02.0, i(106514)),	-- Highland Belt
-							dr(01.9, i(116517)),	-- Evermorn Scepter
-							dr(01.9, i(106508)),	-- Mandragoran Handwraps
-							dr(01.9, i(106511)),	-- Mandragoran Sandals
-							dr(01.9, i(106490)),	-- Shardback Gauntlets
-							dr(01.8, i(116514)),	-- Creeperclaw Knuckles
-							dr(01.8, i(116522)),	-- Creeperclaw Sword
-							dr(01.8, i(106489)),	-- Shardback Breastplate
-							dr(01.8, i(106499)),	-- Steamscar Boots
-							dr(01.8, i(106504)),	-- Steamscar Shoulders
-							dr(01.7, i(116511)),	-- Creeperclaw Crossbow
-							dr(01.7, i(116516)),	-- Creeperclaw Mace
-							dr(01.7, i(116703)),	-- Evermorn Twig
-							dr(01.7, i(116524)),	-- Evermorn Wand
-							dr(01.7, i(106515)),	-- Highland Bracers
-							dr(01.7, i(106516)),	-- Highland Gauntlets
-							dr(01.7, i(106505)),	-- Steamscar Waistband
-							dr(01.6, i(116509)),	-- Creeperclaw Broadaxe
-							dr(01.6, i(116702)),	-- Evermorn Cloak
-							dr(01.6, i(106498)),	-- Steamscar Bindings
-							dr(01.6, i(106500)),	-- Steamscar Britches
-							dr(01.6, i(106501)),	-- Steamscar Gloves
-							dr(01.5, i(116510)),	-- Creeperclaw Bow
-							dr(01.5, i(116521)),	-- Creeperclaw Staff
-							dr(01.5, i(116513)),	-- Evermorn Spellblade
-							dr(01.5, i(106517)),	-- Highland Greaves
-							dr(01.5, i(106510)),	-- Mandragoran Robe
-							dr(01.5, i(106493)),	-- Shardback Legplates
-							dr(01.5, i(106497)),	-- Shardback Vambraces
-							dr(01.5, i(106502)),	-- Steamscar Hood
-							dr(01.4, i(116508)),	-- Creeperclaw Axe
-							dr(01.4, i(116512)),	-- Creeperclaw Dagger
-							dr(01.4, i(116518)),	-- Creeperclaw Hammer
-							dr(01.4, i(116520)),	-- Creeperclaw Staff
-							dr(01.4, i(106507)),	-- Mandragoran Cowl
-							dr(01.4, i(106509)),	-- Mandragoran Leggings
-							dr(01.4, i(106512)),	-- Mandragoran Shoulderpads
-							dr(01.4, i(106491)),	-- Shardback Girdle						
+							-- Weapons
+							i(116508),	-- Creeperclaw Axe
+							i(116510),	-- Creeperclaw Bow
+							i(116509),	-- Creeperclaw Broadaxe
+							i(116511),	-- Creeperclaw Crossbow
+							i(116512),	-- Creeperclaw Dagger
+							i(116523),	-- Creeperclaw Greatsword
+							i(116515),	-- Creeperclaw Gun
+							i(116518),	-- Creeperclaw Hammer
+							i(116514),	-- Creeperclaw Knuckles
+							i(116516),	-- Creeperclaw Mace
+							i(116519),	-- Creeperclaw Spear
+							i(116521),	-- Creeperclaw Staff
+							i(116520),	-- Creeperclaw Staff
+							i(116522),	-- Creeperclaw Sword
+							i(116517),	-- Evermorn Scepter
+							i(116513),	-- Evermorn Spellblade
+							i(116703),	-- Evermorn Twig
+							i(116524),	-- Evermorn Wand
+							i(106496),	-- Shardback Shield
+							-- Head
+							i(106518),	-- Highland Helm
+							i(106507),	-- Mandragoran Cowl
+							i(106492),	-- Shardback Helm
+							i(106502),	-- Steamscar Hood
+							-- Neck
+							i(116680),	-- Evermorn Amulet
+							-- Shoulders
+							i(106520),	-- Highland Spaulders
+							i(106512),	-- Mandragoran Shoulderpads
+							i(106494),	-- Shardback Pauldrons
+							i(106504),	-- Steamscar Shoulders
+							-- Bacj
+							i(116702),	-- Evermorn Cloak
+							-- Chest
+							i(106521),	-- Highland Vest
+							i(106510),	-- Mandragoran Robe
+							i(106489),	-- Shardback Breastplate
+							i(106503),	-- Steamscar Jerkin
+							-- Wrist
+							i(106515),	-- Highland Bracers
+							i(106513),	-- Mandragoran Wristwraps
+							i(106497),	-- Shardback Vambraces
+							i(106498),	-- Steamscar Bindings
+							-- Hands
+							i(106516),	-- Highland Gauntlets
+							i(106508),	-- Mandragoran Handwraps						
+							i(106490),	-- Shardback Gauntlets
+							i(106501),	-- Steamscar Gloves
+							-- Waist
+							i(106514),	-- Highland Belt
+							i(106506),	-- Mandragoran Cord
+							i(106491),	-- Shardback Girdle
+							i(106505),	-- Steamscar Waistband
+							-- Legs
+							i(106519),	-- Highland Legguards
+							i(106509),	-- Mandragoran Leggings
+							i(106493),	-- Shardback Legplates
+							i(106500),	-- Steamscar Britches
+							-- Feet
+							i(106517),	-- Highland Greaves
+							i(106511),	-- Mandragoran Sandals
+							i(106495),	-- Shardback Sabatons
+							i(106499),	-- Steamscar Boots
+							-- Finger
+							i(116704),	-- Evermorn Ring			
 						},
 						["questID"] = 36604,
+						["coord"] = { 48.1, 93.4 },
 						["icon"] = "Interface\\Icons\\INV_Misc_Bag_08",
 					}),
 					n(86520, { 		-- Stompalupagus
 						["groups"] = {	
-							dr(100, i(118228)),	-- Smashalupagus
+							i(118228),	-- Smashalupagus
 						},
-						["questID"] = 36837,	
+						["questID"] = 36837,
+						["coord"] = { 55.0, 71.0 },
 					}), 
+					n(79629, { 		-- Stomper Kreego
+						["groups"] = {
+							i(118224),	-- Ogre Brewing Kit
+						},
+						["questID"] = 35910,
+						["coord"] = { 38.2, 66.2 },
+					}),
 					o(231069, { 	-- Strange Looking Dagger
 						["groups"] = {
-							dr(100, i(118718)),	-- Pale Bloodthief Dagger
+							i(118718),	-- Pale Bloodthief Dagger
 						},
 						["questID"] = 34940,
+						["coord"] = { 53.0, 80.0 },
 						["icon"] = "Interface\\Icons\\inv_knife_1h_draenorquest_b_01",
 					}),	
 					o(237511, { 	-- Strange Spore
 						["groups"] = {
-							dr(100, i(118106)),	-- Crimson Spore Pet
+							i(118106),	-- Crimson Spore Pet
 						},
 						["questID"] = 37249,
+						["coord"] = { 57.1, 65.3 },
 						["icon"] = "Interface\\Icons\\priest_icon_chakra_red",
 					}),							
 					n(80725, { 		-- Sulfurious
 						["groups"] = {	
-							dr(100, i(114227)),	-- Bubble Wand Toy
+							i(114227),	-- Bubble Wand Toy
 						},
-						["questID"] = 36394,	
+						["questID"] = 36394,
+						["coords"] = {
+							{ 39.4, 60.6 },
+							{ 41.2, 60.8 },
+						},
 					}), 
 					n(86137, { 		-- Sunclaw
 						["groups"] = {	
-							dr(100, i(118223)), -- Sunclaw
+							i(118223), -- Sunclaw
 						},
-						["questID"] = 36656,	
+						["questID"] = 36656,
+						["coord"] = { 44.6, 92.2 },
 					}), 
 					n(88582, { 		-- Swift Onyx Flayer
 						["groups"] = {	
-							dr(38, i(119367)),	-- Flayerscale Carapace Stompers
+							i(119367),	-- Flayerscale Carapace Stompers
 						},
 						["questID"] = 37374,
-						["isDaily"] = true,						
+						["isDaily"] = true,
+						["coord"] = { 59.6, 31.8 },						
 					}), 
 					n(86410, { 		-- Sylldross
 						["groups"] = {		
-							dr(100, i(118213)),	-- Slimy Sea Serpent Skin Sabatons
+							i(118213),	-- Slimy Sea Serpent Skin Sabatons
 						},
-						["questID"] = 36794,		
+						["questID"] = 36794,
+						["coords"] = {
+							{ 63.0, 61.6 },
+							{ 65.4, 60.8 },
+						},
 					}), 
 					n(80371, { 		-- Typhon
 						["questID"] = 37405,
-						["isDaily"] = true,							
+						["isDaily"] = true,
+						["coord"] = { 75.6, 42.6 },
 					}), 
 					n(86266, { 		-- Venolasix
 						["groups"] = {	
-							dr(41, i(119395)),	-- Hydratooth Dagger
+							i(119395),	-- Hydratooth Dagger
 						},
 						["questID"] = 37372,
-						["isDaily"] = true,						
+						["isDaily"] = true,
+						["coord"] = { 63.4, 30.8 },
 					}),
 					o(236147, { 	-- Vindicator's Hammer
 						["groups"] = {
-							dr(100, i(118712)), -- Huurand's Huge Hammer
+							i(118712), -- Huurand's Huge Hammer
 						},
 						["questID"] = 36628,
+						["coord"] = { 59.5, 63.7 },
 						["icon"] = "Interface\\Icons\\INV_Hammer_04",
 					}),	
 					o(234054, { 	-- Warm Goren Egg
 						["groups"] = {
-							dr(100, i(118705, {	-- Warm Goren Egg
+							i(118705, {	-- Warm Goren Egg
 								["groups"] = {	
-									dr(100, i(118716)),	-- Goren Garb Toy
+									i(118716),	-- Goren Garb Toy
 								},
 								["description"] = "Egg hatches into a toy after 7 days.",	
-							})),
+							}),
 						},
 						["questID"] = 36203,
+						["coord"] = { 48.9, 47.3 },
 						["modelScale"] = 2,
 						["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",						
 						["icon"] = "Interface\\Icons\\inv_misc_ornatebox",
@@ -1147,13 +1558,9 @@ _.Zones =
 				--	n(81528, { 		-- Crater Lord Igneous	}), 
 				--	n(81529, { 		-- Dessicus of the Dead Pools	}), 
 				--	n(81540, { 		-- Erosian the Violent	}), 
-				--	n(80785, { 		-- Fungal Praetorian	}), 
-				--	n(81038, { 		-- Gelgor of the Blue Flame	}), 
-				--	n(80868, { 		-- Glut	}), 
-				--	n(81537, { 		-- Khargax the Devourer	}), 
-				--	n(77093, { 		-- Roardan the Sky Terror	}), 
-				--	n(85264, { 		-- Rolkor	}), 
-				--	n(79629, { 		-- Stomper Kreego	}), 				
+				--	n(80785, { 		-- Fungal Praetorian	}),
+				--	n(81537, { 		-- Khargax the Devourer	}),
+				--	n(77093, { 		-- Roardan the Sky Terror	}),				
 --]]				
 				}),
 				{	-- Treasure Chest

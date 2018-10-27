@@ -2,14 +2,6 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
 _.Achievements = 
 {
 	n(-9956, { -- Quests
@@ -19,15 +11,15 @@ _.Achievements =
 					ach(9437),		-- A Demidos of Reality (Socrethar's Rise)
 					ach(9433),		-- A-VOID-ance (Shadowmoon Enclave)
 					ach(9678, {		-- Ancient No More (Everbloom Wilds)
-						crit(1),		-- Swift Onyx Flayer
-						crit(2),		-- Mogamago
-						crit(3),		-- Protectors of the Grove
-						crit(4),		-- Venolasix
 						crit(5),		-- Alkali
 						crit(6),		-- Depthroot
 						crit(7),		-- Firestarter Grash
 						crit(8),		-- Grove Warden Yal
 						crit(9),		-- Hunter Bal'ra
+						crit(2),		-- Mogamago
+						crit(3),		-- Protectors of the Grove
+						crit(1),		-- Swift Onyx Flayer
+						crit(4),		-- Venolasix
 					}),
 					ach(9605, {		-- Arak Star
 						crit(1),		-- The Howling Crag
@@ -71,29 +63,29 @@ _.Achievements =
 					ach(9635),		-- Bobbing for Orcs (Shattrath City)
 					ach(9533),		-- Breaker of Chains (Bloodmaul Stronghold)
 					ach(9571, {		-- Broke Back Precipice (Broken Precipice)
-						crit(1),		-- Durg Spinecrusher
 						crit(2),		-- Bonebreaker
+						crit(1),		-- Durg Spinecrusher
 						crit(3),		-- Pit Slayer
 					}),
 					ach(9548, {		-- Buried Treasures (Mok'gol Watchpost)
 						crit(1),		-- Garrosh's Shackles
+						crit(6),		-- Gnarled Bone
+						crit(4),		-- Stolen Draenei Tome
 						crit(2),		-- Warsong Relics
 						crit(3),		-- Warsong Remains
-						crit(4),		-- Stolen Draenei Tome
 						crit(5),		-- Wolf Pup Remains
-						crit(6),		-- Gnarled Bone
 					}),
 					ach(9667),		-- Burn It to the Ground (Everbloom Wilds)
 					ach(9537),		-- By Fire Be... Merged? (Magnarok)
 					ach(9634),		-- Charged Up (Shattrath City)
 					ach(9633, {		-- Cut off the Head (Shattrath City)
+						crit(5),		-- Avatar of Socrethar
 						crit(1),		-- Bombardier Gu'gok
+						crit(4),		-- Felfire Consort
 						crit(2),		-- Gug'tol
 						crit(3),		-- Haakun the All-Consuming
-						crit(4),		-- Felfire Consort
-						crit(5),		-- Avatar of Socrethar
-						crit(6),		-- Sargerei War Council
 						crit(7),		-- Legion Vanguard
+						crit(6),		-- Sargerei War Council
 						crit(8),		-- Xothear, the Destroyer
 					}),
 					ach(9534),		-- Delectable Ogre Delicacies (Bloodmaul Stronghold)
@@ -129,12 +121,12 @@ _.Achievements =
 					})),
 					ach(9612),		-- Eggs in One Basket (Skettis Ruins)
 					ach(9655, {		-- Fight the Power (The Pit)
-						crit(1),		-- Maniacal Madgard
+						crit(6),		-- Blademaster Ro'gor
 						crit(2),		-- Defector Dazgo
 						crit(3),		-- Durp the Hated
-						crit(4),		-- Inventor Blammo
 						crit(5),		-- Horgg
-						crit(6),		-- Blademaster Ro'gor
+						crit(4),		-- Inventor Blammo
+						crit(1),		-- Maniacal Madgard
 						crit(7),		-- Morgo Kain
 					}),
 					ach(9613),		-- Fish Gotta Swim, Birds Gotta Eat (Skettis Ruins)
@@ -145,19 +137,19 @@ _.Achievements =
 					})),
 					ach(9486),		-- Goodness Gracious (Shattrath City)
 					ach(9638, {		-- Heralds of the Legion (Shattrath City)
-						crit(1),		-- Orumo the Observer
-						crit(2),		-- Lord Korinak
-						crit(3),		-- Lady Demlash
-						crit(4),		-- Shadowflame Terrorwalker
 						crit(5),		-- Kurlosh Doomfang
+						crit(3),		-- Lady Demlash
+						crit(2),		-- Lord Korinak
 						crit(6),		-- Matron of Sin
+						crit(1),		-- Orumo the Observer
+						crit(4),		-- Shadowflame Terrorwalker
 						crit(7),		-- Vigilant Paarthos
 					}),
 					ach(9610, {		-- History of Violence (Broken Precipice)
+						crit(4),		-- Gorg the Subjugator's Idol
 						crit(1),		-- Krog the Dominator's Hammer
 						crit(2),		-- Thak the Conqueror's Bust
 						crit(3),		-- Thurg the Slave Lord's Necklace
-						crit(4),		-- Gorg the Subjugator's Idol
 					}),
 					ach(9674, {		-- I Want More Talador
 						crit(1),		-- Bonus Objective: Aruuna's Desolation
@@ -187,11 +179,11 @@ _.Achievements =
 					ach(9659),		-- Iron Wings (The Pit)
 					ach(9436),		-- It's the Stones! (Socrethar's Rise)
 					ach(9601, {		-- King of the Monsters (Lost Veil Anzu)
-						crit(1),		-- Morphed Sentient
 						crit(2),		-- Giga Sentinel
-						crit(3),		-- Shadow Hulk
-						crit(4),		-- Mecha Plunderer
 						crit(5),		-- Gluttonous Giant
+						crit(4),		-- Mecha Plunderer
+						crit(1),		-- Morphed Sentient
+						crit(3),		-- Shadow Hulk
 					}),
 					a(ach(9833, {	-- Loremaster of Draenor (Alliance)
 						crit(1),		-- As I Walk Through the Valley of the Shadow of Moon
@@ -211,29 +203,29 @@ _.Achievements =
 						crit(1),		-- Bonus Objective: Brimstone Springs
 						crit(2),		-- Bonus Objective: Iyun Weald
 						crit(3),		-- Bonus Objective: Mistcreep Mire
-						crit(4),		-- Bonus Objective: Valley of Destruction
 						crit(5),		-- Bonus Objective: Ruins of the First Bastion
 						crit(6),		-- Bonus Objective: The Forgotten Caves
+						crit(4),		-- Bonus Objective: Valley of Destruction
+						crit(9),		-- Affliction Ridge or The Razorbloom
 						crit(7),		-- South Gronn Canyon or Evermorn Springs
 						crit(8),		-- Stonemaul Arena or Tangleheart
-						crit(9),		-- Affliction Ridge or The Razorbloom
 					}),
 					ach(9617),		-- Making the Cut (Gorian Proving Grounds)
 					a(ach(9825, {	-- Master Relic Hunter (Alliance)
-						crit(1),		-- The Blessing of Beasts
 						crit(2),		-- Breaching the Barrier
-						crit(3),		-- The Apexis Device
-						crit(4),		-- The Spirit Forge
 						crit(5),		-- Taking from the Taker
+						crit(3),		-- The Apexis Device
+						crit(1),		-- The Blessing of Beasts
 						crit(6),		-- The Crystal Reborn
+						crit(4),		-- The Spirit Forge
 					})),
 					h(ach(9836, {	-- Master Relic Hunter (Horde)
-						crit(1),		-- The Blessing of Beasts
 						crit(2),		-- Breaching the Barrier
-						crit(3),		-- The Apexis Device
-						crit(4),		-- The Spirit Forge
 						crit(5),		-- Taking from the Taker
+						crit(3),		-- The Apexis Device
+						crit(1),		-- The Blessing of Beasts
 						crit(6),		-- The Crystal Reborn
+						crit(4),		-- The Spirit Forge
 					})),
 					ach(9654),		-- Mean and Green (Everbloom Wilds)
 					ach(9600, {		-- Monster Mash (Lost Veil Anzu)
@@ -303,32 +295,32 @@ _.Achievements =
 						crit(8),		-- The Legion Will NOT Conquer All
 					})),
 					a(ach(9564, {	-- Securing Draenor (Alliance)
-						crit(1),		-- Assault on the Iron Siegeworks
-						crit(2),		-- Assault on Stonefury Cliffs
-						crit(3),		-- Assault on Magnarok
-						crit(4),		-- Assault on the Pit
-						crit(5),		-- Assault on the Everbloom Wilds
-						crit(6),		-- Assault on the Broken Precipice
-						crit(7),		-- Assault on Mok'gol Watchpost
-						crit(8),		-- Assault on Socrethar's Rise
 						crit(9),		-- Assault on Darktide Roost
-						crit(10),		-- Assault on Skettis
+						crit(3),		-- Assault on Magnarok
+						crit(7),		-- Assault on Mok'gol Watchpost
 						crit(11),		-- Assault on Pillars of Fate
 						crit(12),		-- Assault on Shattrath Harbor
+						crit(8),		-- Assault on Socrethar's Rise
+						crit(10),		-- Assault on Skettis
+						crit(2),		-- Assault on Stonefury Cliffs
+						crit(6),		-- Assault on the Broken Precipice
+						crit(5),		-- Assault on the Everbloom Wilds
+						crit(1),		-- Assault on the Iron Siegeworks
+						crit(4),		-- Assault on the Pit
 					})),
 					h(ach(9562, {	-- Securing Draenor (Horde)
-						crit(1),		-- Assault on the Iron Siegeworks
-						crit(2),		-- Assault on Stonefury Cliffs
-						crit(3),		-- Assault on Magnarok
-						crit(4),		-- Assault on the Pit
-						crit(5),		-- Assault on the Everbloom Wilds
-						crit(6),		-- Assault on the Broken Precipice
-						crit(7),		-- Assault on Shattrath Harbor
-						crit(8),		-- Assault on Mok'gol Watchpost
-						crit(9),		-- Assault on Socrethar's Rise
 						crit(10),		-- Assault on Darktide Roost
+						crit(3),		-- Assault on Magnarok
+						crit(8),		-- Assault on Mok'gol Watchpost
 						crit(11),		-- Assault on Pillars of Fate
+						crit(7),		-- Assault on Shattrath Harbor
+						crit(9),		-- Assault on Socrethar's Rise
 						crit(12),		-- Assault on Skettis
+						crit(2),		-- Assault on Stonefury Cliffs
+						crit(6),		-- Assault on the Broken Precipice
+						crit(5),		-- Assault on the Everbloom Wilds
+						crit(1),		-- Assault on the Iron Siegeworks
+						crit(4),		-- Assault on the Pit
 					})),
 					a(ach(9602, {	-- Shoot For the Moon
 						crit(1),		-- Bonus Objective: Bloodthorn Cave
@@ -340,32 +332,32 @@ _.Achievements =
 					ach(9435),		-- Take From Them Everything (Socrethar's Rise)
 					ach(9535),		-- That Was Entirely Unnecessary (Magnarok)
 					a(ach(9491, {	-- The Garrison Campaign (Alliance)
-						crit(1),		-- The Warlord's Council
-						crit(2),		-- The Sargerei
-						crit(3),		-- Darktide Roost
-						crit(4),		-- Iron Siegeworks
-						crit(5),		-- The Ring of Blood
-						crit(6),		-- The Fall of Shattrath
+						crit(11),		-- A Strike at the Heart
 						crit(7),		-- Bloodmaul Compound
 						crit(8),		-- Broken Precipice
-						crit(9),		-- The Exarch's Call
+						crit(3),		-- Darktide Roost
 						crit(10),		-- Heart of the Breakers
-						crit(11),		-- A Strike at the Heart
+						crit(4),		-- Iron Siegeworks
 						crit(12),		-- Primal Fury
+						crit(9),		-- The Exarch's Call
+						crit(6),		-- The Fall of Shattrath
+						crit(5),		-- The Ring of Blood
+						crit(2),		-- The Sargerei
+						crit(1),		-- The Warlord's Council
 					})),
 					h(ach(9492, {	-- The Garrison Campaign (Horde)
-						crit(1),		-- The Warlord's Council
-						crit(2),		-- The Sargerei
-						crit(3),		-- Darktide Roost
-						crit(4),		-- Iron Siegeworks
-						crit(5),		-- The Ring of Blood
-						crit(6),		-- The Fall of Shattrath
-						crit(7),		-- Bloodmaul Compound
-						crit(8),		-- Ours is the Fury
-						crit(9),		-- Broken Precipice
-						crit(10),		-- Heart of the Breakers
 						crit(11),		-- A Strike at the Heart
+						crit(7),		-- Bloodmaul Compound
+						crit(9),		-- Broken Precipice
+						crit(3),		-- Darktide Roost
+						crit(10),		-- Heart of the Breakers
+						crit(4),		-- Iron Siegeworks
+						crit(8),		-- Ours is the Fury
 						crit(12),		-- Primal Fury
+						crit(6),		-- The Fall of Shattrath
+						crit(5),		-- The Ring of Blood
+						crit(2),		-- The Sargerei
+						crit(1),		-- The Warlord's Council
 					})),
 					ach(9632),		-- The Power Is Yours (Shattrath City)
 					ach(9541, {		-- The Song of Silence (Mok'gol Outpost)
@@ -375,8 +367,8 @@ _.Achievements =
 						crit(4),		-- Gortag Steelgrip
 					}),
 					ach(9636),		-- United We Stand (Shattrath City)
-					a(ach(8921)),	-- Welcome to Draenor (Alliance)
-					h(ach(8922)),	-- Welcome to Draenor (Horde)
+					a(ach(8921)),	-- Welcome to Draenor (Alliance) NOTE: Quests look like they start in Blasted Lands, not added to any zone files
+					h(ach(8922)),	-- Welcome to Draenor (Horde) NOTE: Quests look like they start in Blasted Lands, not added to any zone files
 					ach(9615, {		-- With a Nagrand Cherry On Top
 						crit(1),		-- Bonus Objective: Hemet's Happy Hunting Grounds
 						crit(2),		-- Bonus Objective: Ironfist Harbor
@@ -388,12 +380,12 @@ _.Achievements =
 					ach(9479),		-- You Can't Make a Giant Omelette... (Darktide Roost)
 					ach(9481),		-- You Have Been Rylakinated! (Darktide Roost)
 					h(ach(8671, {	-- You'll Get Caught Up In The... Frostfire! (unlocks ability to buy Frostfire Treasure Map from Srikka in Warspear)
-						crit(1),		-- Foothold in a Savage Land
-						crit(2),		-- Siege of Bladespire Citadel
 						crit(3),		-- Defense of Wor'gol
+						crit(1),		-- Foothold in a Savage Land
 						crit(4),		-- Ga'nar's Vengeance
-						crit(5),		-- Thunder's Fall
+						crit(2),		-- Siege of Bladespire Citadel
 						crit(6),		-- The Battle of Thunder Pass
+						crit(5),		-- Thunder's Fall
 					})),
 				},
 			}),

@@ -6,6 +6,62 @@ _.Zones =
 	m(572, { 	-- Draenor
 		m(542, {	-- Spires of Arak
 			["groups"] = {
+				n(-4, {		-- Achievements
+					ach(9433),	-- A-VOID-ance (Shadowmoon Enclave)
+					ach(9434),	-- One of Us! One of Us! (Shadowmoon Enclave)
+					ach(9432),	-- Would You Like a Pamphlet? (Shadowmoon Enclave)
+					ach(9605, {	-- Arak Star
+						crit(4),	-- Bladefist Hold
+						crit(2),	-- Bloodmane Pridelands
+						crit(1),	-- The Howling Crag
+						crit(3),	-- The Writhing Mire
+					}),
+					ach(9612),	-- Eggs in One Basket (Skettis Ruins)
+					ach(9613),	-- Fish Gotta Swim, Birds Gotta Eat (Skettis Ruins)
+					ach(9601, {	-- King of the Monsters (Lost Veil Anzu)
+						crit(2),	-- Giga Sentinel
+						crit(5),	-- Gluttonous Giant
+						crit(4),	-- Mecha Plunderer
+						crit(1),	-- Morphed Sentient
+						crit(3),	-- Shadow Hulk
+					}),
+					ach(9600, {	-- Monster Mash (Lost Veil Anzu)
+						crit(1),	-- Shadow Hulk
+						crit(2),	-- Gluttonous Giant)
+					}),
+					{	-- Securing Draenor (Alliance)
+						-- Note!! Spans 3 zones Garrison, Tanaan Jungle, and Talador.
+						["achievementID"] = 9564,	-- Securing Draenor (Alliance)
+						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- Assault on Pillars of Fate
+								["achievementID"] = 9564,	-- Securing Draenor (Alliance)
+								["criteriaID"] = 11,		-- Assault on Pillars of Fate
+							},
+							{	-- Assault on Skettis
+								["achievementID"] = 9564,	-- Securing Draenor (Alliance)
+								["criteriaID"] = 10,		-- Assault on Skettis
+							},
+						},
+					},
+					{	-- Securing Draenor (Horde)
+						-- Note!! Spans 3 zones Garrison, Tanaan Jungle, and Talador.
+						["achievementID"] = 9562,	-- Securing Draenor (Horde)
+						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Assault on Pillars of Fate
+								["achievementID"] = 9562,	-- Securing Draenor (Horde)
+								["criteriaID"] = 11,		-- Assault on Pillars of Fate
+							},
+							{	-- Assault on Skettis
+								["achievementID"] = 9562,	-- Securing Draenor (Horde)
+								["criteriaID"] = 12,		-- Assault on Skettis
+							},
+						},
+					},
+				}),
 				n(-228, {	-- Flight Paths
 					fp(1513, { -- Apexis Excavation, Spires of Arak
 						["coord"] = { 37, 24.6 },
@@ -62,18 +118,39 @@ _.Zones =
 						},
 						["collectible"] = false,
 					}),
+--[[	Achievement info for Loremaster related zone quests
+					a(ach(8925, {	-- Between Arak and a Hard Place (Alliance)
+						follower(218),	-- Talonpriest Ishaal
+						crit(1),		-- Shadows Gather
+						crit(2),		-- Admiral Taylor's Garrison
+						crit(3),		-- Secrets of the Talonpriests
+						crit(4),		-- The Gods of Arak
+						crit(5),		-- Legacy of the Apexis
+						crit(6),		-- Terokk's Legend
+						crit(7),		-- Securing Southport
+						crit(8),		-- Pinchwhistle Gearworks
+						crit(9),		-- When the Raven Swallows the Day
+					})),
+					h(ach(8926, {	-- Between Arak and a Hard Place (Horde)
+						follower(218),	-- Talonpriest Ishaal
+						crit(1),		-- Shadows Gather
+						crit(2),		-- Admiral Taylor's Garrison
+						crit(3),		-- Secrets of the Talonpriests
+						crit(4),		-- The Gods of Arak
+						crit(5),		-- Legacy of the Apexis
+						crit(6),		-- Terokk's Legend
+						crit(7),		-- Establishing Axefall
+						crit(8),		-- Pinchwhistle Gearworks
+						crit(9),		-- When the Raven Swallows the Day
+					})),
+]]--					
 --[[				
-					q(34756),	-- A Charming Deception
-					q(34883),	-- A Feast of Shadows
 					q(35671),	-- A Gathering of Shadows
 					q(37296),	-- A Lack of Wasps
 					qa( 35339),	-- A Parting Favor
-					qa( 35353),	-- A Piece of the Puzzle
 					q(35245),	-- A Sentimental Relic
 					q(36059),	-- A Worthy Vessel
 					q(34657),	-- Adherents of the Sun God
-					qa( 35482),	-- Admiral Taylor
-					q(36183),	-- Admiral Taylor
 					q(35636),	-- All Due Respect
 					qh( 35738),	-- All Natural
 					qa( 35739),	-- All Natural
@@ -89,7 +166,6 @@ _.Zones =
 					qh( 35924),	-- Assassin's Mark
 					qh( 35907),	-- Attempted Murder
 					qa( 35915),	-- Attempted Murder
-					q(34886),	-- Baby Bird
 					q(34942),	-- Back from Beyond
 					qa( 35719),	-- Back on Track
 					qh( 35718),	-- Back on Track
@@ -103,15 +179,12 @@ _.Zones =
 					qh( 37034),	-- Boar Training: Bulbapore
 					q(35009),	-- Call of the Raven Mother
 					q(37177),	-- Call of the Talon King
-					qa( 37287),	-- Cleaning House
 					q(35081),	-- Clearing Out Before Cleaning Up
 					qh( 37052),	-- Clefthoof Training: Bulbapore
 					qa( 36987),	-- Clefthoof Training: Bulbapore
 					q(35634),	-- Control is King
 					q(34921),	-- Cult of the Ravenspeakers
 					q(36428),	-- Curing With Force
-					q(34939),	-- Declawing The Bloodmane
-					q(35077),	-- Defungination
 					q(34805),	-- Echo Hunters
 					q(36425),	-- Egg Punt
 					qa( 36023),	-- Extrinsic Motivation
@@ -129,18 +202,12 @@ _.Zones =
 					qh( 36028),	-- Gardul Venomshiv
 					q(35001),	-- Gaze of the Raven God
 					q(35082),	-- Getting the Crew Back Together
-					q(35260),	-- Hardly Working
-					q(34999),	-- Hatred Undying
-					q(34656),	-- Hidden in Plain Sight
 					q(44570),	-- Honor the Flame
 					qa( 35549),	-- Honoring a Hero
-					q(35273),	-- Hot Seat
 					qa( 35782),	-- I See Dead Arakkoa
 					qh( 35766),	-- I See Dead Arakkoa
 					qa( 35329),	-- I See Dead People
 					q(35322),	-- I See Dead People
-					q(34898),	-- Ikky
-					q(34838),	-- Ikky's Egg
 					q(35290),	-- Inn
 					q(35283),	-- Inn
 					q(37315),	-- Inn
@@ -156,9 +223,7 @@ _.Zones =
 					q(37168),	-- Leorajh, the Enlightened
 					q(35013),	-- Lithic's Gift
 					q(36184),	-- Mother Lode
-					q(34885),	-- Mother of Thorns
 					q(36071),	-- Nagrand - Treasure 055 - Waterlogged Satchel
-					q(34829),	-- New Neighbors
 					qh( 36607),	-- News from Nagrand
 					qa( 36606),	-- News from Nagrand
 					qa( 36601),	-- News from Nagrand
@@ -169,7 +234,6 @@ _.Zones =
 					qa( 37329),	-- Not Here, Not Now
 					qh( 37328),	-- Not Here, Not Now
 					qh( 37330),	-- Not Here, Not Now
-					qh( 37292),	-- Not In Your Army
 					qa( 35293),	-- Old Friends
 					q(36085),	-- On Ebon Wings
 					qh( 35272),	-- One of Our Own
@@ -185,7 +249,6 @@ _.Zones =
 					qh( 35620),	-- Pinchwhistle Gearworks
 					qh( 36862),	-- Pinchwhistle Gearworks
 					q(35257),	-- Power Unearthed
-					q(35211),	-- Preventing the Worst
 					qa( 35408),	-- Prime the Cannons
 					qa( 35407),	-- Punishable by Death
 					q(34938),	-- Ralshiara's Demise
@@ -200,8 +263,6 @@ _.Zones =
 					qh( 35879),	-- Safety Measures
 					qa( 35878),	-- Safety Measures
 					qa( 35380),	-- Second in Command
-					q(35004),	-- Servants of a Dead God
-					q(35012),	-- Sethe, the Dead God
 					q(35261),	-- Shot-Caller
 					q(35089),	-- Skimming Off the Top
 					q(35259),	-- Sol Sisters
@@ -220,8 +281,6 @@ _.Zones =
 					q(34998),	-- Talon Watch
 					q(37141),	-- Talonpriest Ishaal
 					q(35895),	-- Terokk's Fall
-					q(35896),	-- The Avatar of Terokk
-					q(34923),	-- The Bloodmane
 					q(34659),	-- The Crone
 					qh( 35797),	-- The Ebon Hunter
 					qa( 35835),	-- The Ebon Hunter
@@ -234,7 +293,6 @@ _.Zones =
 					q(35080),	-- The Mother Lode
 					qa( 35959),	-- The Power of Poison
 					qh( 35947),	-- The Power of Poison
-					q(35090),	-- The Right Parts for the Job
 					q(34655),	-- The Shadows of Skettis
 					q(35734),	-- The Talon King
 					qa( 35713),	-- The Tinkertoss Twins
@@ -259,77 +317,93 @@ _.Zones =
 					qa( 36048),	-- We Have Him Now
 					qh( 36047),	-- We Have Him Now
 					qh( 35295),	-- What's Theirs is Ours
-					q(35704),	-- When All Is Aligned
 					q(34922),	-- Words of the Raven Mother	
 --]]					
-					q(34883,  {  -- A Feast of Shadows
-						i(114723),
-						i(114724),
-						i(114725),
-						i(114726),
+					q(34756, {	-- A Charming Deception
+						i(114948),	-- Skettis Deceiver's Band
+						i(119070),	-- Skettis Deceiver's Gemband
+						i(119062),	-- Skettis Deceiver's Loop
+						i(114952),	-- Skettis Deceiver's Ring
+						i(114953),	-- Skettis Deceiver's Signet
 					}),
-					qa(35482,  {  -- Admiral Taylor
-						i(114945),
-						i(118079),
-						i(118083),
-						i(118086),
-						i(118080),
-						i(118081),
-						i(118082),
-						i(118084),
-						i(118085),
+					q(34883,  { -- A Feast of Shadows
+						i(114723),	-- Cragplate Helm
+						i(114725),	-- Ravenchain Helm
+						i(114724),	-- Shadowveil Hood
+						i(114726),	-- Skysinger Helm
 					}),
-					qh(36183,  {  -- Admiral Taylor
-						i(114945),
-						i(118079),
-						i(118083),
-						i(118086),
-						i(118080),
-						i(118081),
-						i(118082),
-						i(118084),
-						i(118085),
+					qa(35353, {	-- A Piece of the Puzzle
+						i(114958),	-- Watch Commander Branson's Lape
 					}),
-					{
+					qa(35482, {	-- Admiral Taylor
+						i(118082),	-- Admiral Taylor's Boot Knife
+						i(118079),	-- Admiral Taylor's Ceremonial Sword
+						i(118083),	-- Admiral Taylor's Cutlass
+						i(118084),	-- Admiral Taylor's Glaive
+						i(118080),	-- Admiral Taylor's Greatsword
+						i(118081),	-- Admiral Taylor's Hunting Bow
+						i(118086),	-- Admiral Taylor's Keg Tapper
+						i(114945),	-- Admiral Taylor's Shield
+						i(118085),	-- Admiral Taylor's Staff of Wisdom
+					}),
+					qh(36183, {	-- Admiral Taylor
+						i(118082),	-- Admiral Taylor's Boot Knife
+						i(118079),	-- Admiral Taylor's Ceremonial Sword
+						i(118083),	-- Admiral Taylor's Cutlass
+						i(118084),	-- Admiral Taylor's Glaive
+						i(118080),	-- Admiral Taylor's Greatsword
+						i(118081),	-- Admiral Taylor's Hunting Bow
+						i(118086),	-- Admiral Taylor's Keg Tapper
+						i(114945),	-- Admiral Taylor's Shield
+						i(118085),	-- Admiral Taylor's Staff of Wisdom
+					}),
+					{			-- Baby Bird
 						["questID"] = 34886,	-- Baby Bird
 						["sourceQuest"] = 34838,	-- Ikky's Egg
 						["qg"] = 80469,	-- Ikky
 					},
-					q(34939,  {  -- Declawing The Bloodmane
-						i(114719),
-						i(114720),
-						i(114721),
-						i(114722),
+					q(34939, {  -- Declawing The Bloodmane
+						i(114720),	-- Cragplate Gauntlets
+						i(114722),	-- Ravenchain Gauntlets
+						i(114721),	-- Shadowveil Gloves
+						i(114719),	-- Skysinger Gloves
 					}),
-					q(35077,  {  -- Defungination
-						i(118074),
-						i(118073),
-						i(118072),
-						i(118071),
+					q(35077, {  -- Defungination
+						i(118071),	-- "Fireproof" Venture Co. Blastplate
+						i(118072),	-- "Fireproof" Venture Co. Chainmail
+						i(118074),	-- "Fireproof" Venture Co. Robes
+						i(118073),	-- "Fireproof" Venture Co. Tunic
 					}),
-					q(34999,  {  -- Hatred Undying
-						i(114715),
-						i(114716),
-						i(114717),
-						i(114718),
+					q(35260, {	-- Hardly Working
+						i(114950),	-- Skywatch Adherent Choker
+						i(119089),	-- Skywatch Adherant Gorget
+						i(114951),	-- Skywatch Adherent Locket
+						i(119080),	-- Skywatch Adherant Necklace
+						i(114947),	-- Skywatch Adherent Pendant
 					}),
-					q(34656,  {  -- Hidden in Plain Sight
-						i(114732),
-						i(114733),
-						i(114734),
-						i(114735),
+					q(34999, {  -- Hatred Undying
+						i(114715),	-- Cragplate Warboots
+						i(114717),	-- Ravenchain Sabatons
+						i(114716),	-- Shadowveil Treads
+						i(114718),	-- Skysinger Boots
 					}),
-					q(35273,  {  -- Hot Seat
-						i(114727),
-						i(114728),
-						i(114729),
-						i(114730),
+					q(34656, {  -- Hidden in Plain Sight
+						i(114733),	-- Cragplate Shoulders
+						i(114735),	-- Ravenchain Spaulders
+						i(114734),	-- Shadowveil Mantle
+						i(114732),	-- Skysinger Spaulders
 					}),
-					{
+					q(35273, {  -- Hot Seat
+						i(114727),	-- Cragplate Legguards
+						i(114729),	-- Ravenchain Leggings
+						i(114728),	-- Shadowveil Leggings
+						i(114730),	-- Skysinger Breeches
+					}),
+					{			-- Ikky's Egg
 						["questID"] = 34838,	-- Ikky's Egg
 						["qg"] = 80470,	-- Kaliri Egg
 					},
-					{
+					{			-- Ikky
 						["questID"] = 34898,	-- Ikky
 						["sourceQuest"] = 34886,	-- Baby Bird
 						["qg"] = 85320,	-- Ikky
@@ -337,100 +411,120 @@ _.Zones =
 							i(119466),	-- Ikky [Pet!]
 						},
 					},
-					q(34829,  {  -- New Neighbors
-						i(114736),
-						i(114737),
-						i(114738),
-						i(114739),
+					q(34885, {	-- Mother of Thorns
+						i(114957),	-- Oversized Shadeback Talon
+						i(114959),	-- Prickly Shadeback Thorn
+						i(114961),	-- Thornmother Eye
 					}),
-					q(35211,  {  -- Preventing the Worst
-						i(118088),
-						i(118090),
-						i(118089),
-						i(118087),
+					q(34829, {  -- New Neighbors
+						i(114736),	-- Cragplate Girdle
+						i(114738),	-- Ravenchain Belt
+						i(114737),	-- Shadowveil Cord
+						i(114739),	-- Skysinger Belt
 					}),
-					q(35004,  {  -- Servants of a Dead God
-						i(114949),
-						i(114954),
-						i(114955),
-						i(119053),
-						i(119058),
+					q(35211, {  -- Preventing the Worst
+						i(118090),	-- "Super Sterilized" Blastguard Britches
+						i(118089),	-- "Super Sterilized" Blastguard Leggings
+						i(118087),	-- "Super Sterilized" Blastguard Legplates
+						i(118088),	-- "Super Sterlized" Blastguard Legwraps
 					}),
-					q(35012,  {  -- Sethe, the Dead God
-						i(114712),
-						i(114713),
-						i(114714),
-						i(114731),
+					q(35004, {  -- Servants of a Dead God
+						i(114955),	-- Hollowblood Cloak
+						i(114949),	-- Hollowblood Drape
+						i(114954),	-- Hollowblood Greatcloak
+						i(119053),	-- Hollowblood Scale Cloak
+						i(119058),	-- Hollowblood Scarf
 					}),
-					q(34923,  {  -- The Bloodmane
-						i(114740),
-						i(114741),
-						i(114742),
-						i(114743),
+					q(35012, {  -- Sethe, the Dead God
+						i(114712),	-- Cragplate Chestplate
+						i(114713),	-- Ravenchain Vest
+						i(114731),	-- Shadowveil Robe
+						i(114714),	-- Skysinger Vest
 					}),
-					q(35090,  {  -- The Right Parts for the Job
-						i(118076),
-						i(118078),
-						i(118077),
-						i(118075),
+					q(35896, {	-- The Avatar of Terokk
+						i(119073),	-- Talon Guard Bloodsworn Band
+						i(118070),	-- Talon Guard Bloodsworn Loop
+						i(118069),	-- Talon Guard Bloodsworn Ring
+						i(119065),	-- Talon Guard Bloodsworn Seal
+						i(118068),	-- Talon Guard Bloodsworn Signet
 					}),
-					q(35704,  {  -- When All Is Aligned
-						i(114903),
-						i(114907),
-						i(114910),
-						i(114904),
-						i(114905),
-						i(114906),
-						i(114908),
-						i(114909),
+					q(34923, {  -- The Bloodmane
+						i(114741),	-- Cragplate Wristwraps
+						i(114742),	-- Ravenchain Wristwraps
+						i(114740),	-- Shadowveil Wristwraps
+						i(114743),	-- Skysinger Wristwraps
+					}),
+					q(35090, {  -- The Right Parts for the Job
+						i(118077),	-- Fungal Reisistant Chainmail Boots
+						i(118075),	-- Fungal Resistant Plate Boots
+						i(118076),	-- Fungal Resistant Slippers
+						i(118078),	-- Fungal Resistant Workboots
+					}),
+					q(35704, {  -- When All Is Aligned
+						i(114905),	-- Talon Guard Bow
+						i(114910),	-- Talon Guard Cudgel
+						i(114906),	-- Talon Guard Dagger
+						i(114908),	-- Talon Guard Glaive
+						i(114903),	-- Talon Guard Shortblade
+						i(114909),	-- Talon Guard Staff
+						i(114907),	-- Talon Guard Wingclipper
+						i(114904),	-- Talon Guard Wingsmasher
 					}),
 					n(-359, { -- Brewery
 						qa(37287,  {  -- Cleaning House
-							i(119001),
+							i(119001),	-- Mystery Keg
 						}),
 						qh(37292,  {  -- Not In Your Army
-							i(119001),
+							i(119001),	-- Mystery Keg
 						}),
 					}),
 				}),
 				n(-16, { 	-- Rares
 					o(235313, { 	-- Abandoned Mining Pick (cannot be transmogged)
 						["groups"] = {
-							dr(100, i(116913)),	-- Peon's Mining Pick
+							i(116913),	-- Peon's Mining Pick
 						},
 						["questID"] = 36458,
+						["coord"]= { 40.6, 55.0 },
 						["icon"] = "Interface\\Icons\\INV_Axe_2h_6miningpick",
 					}),
 					o(235143, { 	-- Assassin's Spear
 						["groups"] = {
-							dr(100, i(116835)),	-- Assassin's Spear
+							i(116835),	-- Assassin's Spear
 						},
 						["questID"] = 36445,
+						["coord"] = { 49.2, 37.3 },
 						["icon"] = "Interface\\Icons\\INV_Spear_05",
 					}),						
 					n(84887, { 		-- Betsi Boombasket
 						["groups"] = {
-							dr(100, i(116907)),	-- Betsi's Boomstick
+							i(116907),	-- Betsi's Boomstick
 						},
-						["questID"] = 36291,	
+						["questID"] = 36291,
+						["coord"] = { 58.4, 84.2 },
 					}), 
 					n(84856, { 		-- Blightglow
 						["groups"] = {	
-							dr(100, i(118205)),	-- Blightglow Pauldrons
+							i(118205),	-- Blightglow Pauldrons
 						},
-						["questID"] = 36283,	
+						["questID"] = 36283,
+						["coords"] = {
+							{ 64.4, 65.6 },
+							{ 65.2, 67.8 },
+						},
 					}), 
 					n(84807, { 		-- Durkath Steelmaw
 						["groups"] = {	
-							dr(100, i(118198)),	-- Steelmaw's Stompers
+							i(118198),	-- Steelmaw's Stompers
 						},
-						["questID"] = 36267,	
+						["questID"] = 36267,
+						["coord"] = { 46.4, 28.6 },
 					}), 
 					o(239828, { 	-- Edge of Reality
 						["groups"] = {
 							o(239901, {		-- Voidtalon Egg
 								["groups"] = {	
-									dr(100,i(121815)),	-- Voidtalon of the Dark Star Mount
+									i(121815),	-- Voidtalon of the Dark Star Mount
 								},
 								["modelScale"] = 2,
 								["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
@@ -442,37 +536,50 @@ _.Zones =
 					}),					
 					o(235097, { 	-- Ephial's Dark Grimoire
 						["groups"] = {
-							dr(100, i(116914)),	-- Ephial's Grimoire
+							i(116914),	-- Ephial's Grimoire
 						},
 						["questID"] = 36418,
+						["coord"] = { 36.5, 57.9 },
 						["icon"] = "Interface\\Icons\\ability_warlock_ancientgrimoire",
 					}),					
 					n(84890, { 		-- Festerbloom
 						["groups"] = {	
-							dr(100, i(118200)),	-- Vile Branch of Festerbloom
+							i(118200),	-- Vile Branch of Festerbloom
 						},
-						["questID"] = 36297,	
+						["questID"] = 36297,
+						["coord"] = { 54.8, 39.8 },
 					}), 
 					n(85036, { 		-- Formless Nightmare
 						["groups"] = {	
-							dr(39, i(119373)),	-- Nightmare-Chain Bracers
+							i(119373),	-- Nightmare-Chain Bracers
 						},
 						["questID"] = 37360,
 						["isDaily"] = true,
+						["coord"] = { 72.2, 19.6 },
 						["description"] = "|cff66ccffLocated inside void portal phase.|r",
 					}), 
 					o(235289, { 	-- Garrison Workman's Hammer
 						["groups"] = {
-							dr(100, i(116918)),	-- Garrison Workman's Hammer
+							i(116918),	-- Garrison Workman's Hammer
 						},
 						["questID"] = 36451,
+						["coord"] = { 41.8, 50.5 },
 						["icon"] = "Interface\\Icons\\INV_Misc_1h_BlacksmithHammer_A_01",
-					}),						
+					}),
+					n(86978, {		-- Gaze
+						["groups"] = {
+							i(118696),	-- Eye of Gaze
+						},
+						["questID"] = 36943,
+						["coord"] = { 25.2, 24.2 },
+						["description"] = "Click on the Fel Tome to summon.",
+					}),
 					o(234618, { 	-- Gift of Anzu
 						["groups"] = {
-							dr(100, i(118240)),	-- Anzu's Scything Talon
+							i(118240),	-- Anzu's Scything Talon
 						},
 						["questID"] = 36381,
+						["coord"] = { 61.1, 55.3 },
 						["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
 						["modelScale"] = 4.5,
 						["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu|r",
@@ -480,9 +587,10 @@ _.Zones =
 					}),							
 					n(86961, { 		-- Gift of Anzu
 						["groups"] = {
-							dr(100, i(118237)),	-- Anzu's Malice
+							i(118237),	-- Anzu's Malice
 						},
 						["questID"] = 36386,
+						["coord"] = { 48.6, 44.4 },
 						["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
 						["modelScale"] = 4.5,
 						["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu|r",
@@ -490,9 +598,10 @@ _.Zones =
 					}),	
 					n(86941, { 		-- Gift of Anzu
 						["groups"] = {
-							dr(100, i(118242)),	-- Anzu's Scorn
+							i(118242),	-- Anzu's Scorn
 						},
 						["questID"] = 36388,
+						["coord"] = { 42.42, 26.69 },
 						["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
 						["modelScale"] = 4.5,
 						["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu|r",
@@ -500,9 +609,10 @@ _.Zones =
 					}),		
 					n(86962, { 		-- Gift of Anzu
 						["groups"] = {
-							dr(100, i(118238)),	-- Anzu's Reach
+							i(118238),	-- Anzu's Reach
 						},
 						["questID"] = 36389,
+						["coord"] = { 46.9, 40.46 },
 						["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
 						["modelScale"] = 4.5,
 						["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu|r",
@@ -510,9 +620,10 @@ _.Zones =
 					}),		
 					n(86953, { 		-- Gift of Anzu
 						["groups"] = {
-							dr(100, i(118241)),	-- Anzu's Piercing Talon
+							i(118241),	-- Anzu's Piercing Talon
 						},
 						["questID"] = 36390,
+						["coord"] = { 57.01, 78.93 },
 						["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
 						["modelScale"] = 4.5,
 						["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu|r",
@@ -520,9 +631,10 @@ _.Zones =
 					}),		
 					n(86956, { 		-- Gift of Anzu
 						["groups"] = {
-							dr(100, i(118239)),	-- Anzu's Stoicism
+							i(118239),	-- Anzu's Stoicism
 						},
 						["questID"] = 36392,
+						["coord"] = { 52.0, 19.7 },
 						["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
 						["modelScale"] = 4.5,
 						["description"] = "|cff66ccffDrink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu|r",
@@ -530,595 +642,799 @@ _.Zones =
 					}),		
 					n(87029, { 		-- Giga Sentinel
 						["groups"] = {	
-							dr(33, i(119401)),	-- Sentinel's Wingblade
+							i(119401),	-- Sentinel's Wingblade
 						},
 						["questID"] = 37393,
-						["isDaily"] = true,						
+						["isDaily"] = true,
+						["coord"] = { 71.6, 44.8 },
 					}),
 					n(87019, { 		-- Gluttonous Giant
 						["groups"] = {	
-							dr(44, i(119404)), 	-- Glowing Morel
+							i(119404), 	-- Glowing Morel
 						},
 						["questID"] = 37390,
-						["isDaily"] = true,						
+						["isDaily"] = true,
+						["coord"]= { 74.6, 43.6 },
 					}), 
 					n(86724, { 		-- Hermit Palefur
 						["groups"] = {	
-							dr(100, i(118279)),	-- Hermit's Hood
+							i(118279),	-- Hermit's Hood
 						},
-						["questID"] = 36887,	
+						["questID"] = 36887,
+						["coord"] = { 59.2, 14.8 },
 					}), 
+					n(84955, {		-- Jiasska the Sporegorger
+						["groups"] = {
+							i(118202),	-- Fungus-Infected Hydra Lung
+						},
+						["questID"] = 36306,
+						["coord"] = { 56.6, 94.6 },
+					}),
 					n(84810, { 		-- Kalos the Bloodbathed
 						["groups"] = {	
-							dr(100, i(118735)),	-- Bloodbathed Outcast Robes
+							i(118735),	-- Bloodbathed Outcast Robes
 						},
-						["questID"] = 36268,	
+						["questID"] = 36268,
+						["coord"] = { 62.8, 37.6 },
 					}), 
 					n(85037, { 		-- Kenos the Unraveler
 						["groups"] = {
-							dr(40, i(119354)),	-- Cowl of the Unraveller
+							i(119354),	-- Cowl of the Unraveller
 						},
 						["questID"] = 37361,
-						["isDaily"] = true,						
+						["isDaily"] = true,
+						["coord"] = { 70.6, 24.2 },
 						["description"] = "|cff66ccffLocated inside void portal phase, requires 3 people to click orb.|r",
 					}), 
+					o(235091, {		-- Lost Ring
+						["groups"] = {
+							i(116911),	-- Outcast Decoder Ring
+						},
+						["questID"] = 36411,
+						["coord"] = { 47.8, 36.1 },
+					}),
 					n(87026, { 		-- Mecha Plunderer
 						["groups"] = {	
-							dr(41, i(119398)),	-- Plunderer's Drill
+							i(119398),	-- Plunderer's Drill
 						},
 						["questID"] = 37391,
-						["isDaily"] = true,						
+						["isDaily"] = true,
+						["coord"] = { 74.4, 38.6 },
 					}), 
 					n(84417, { 		-- Mutafen
 						["groups"] = {	
-							dr(100, i(118206)),	-- Mutafen's Mighty Maul
+							i(118206),	-- Mutafen's Mighty Maul
 						},
-						["questID"] = 36396,	
+						["questID"] = 36396,
+						["coords"]= {
+							{ 53.2, 89.0 },
+							{ 54.8, 88.6 },
+						},
 					}), 
 					n(82247, { 		-- Nas Dunberlin
 						["groups"] = {	
-							dr(100, i(116837)),	-- Spooky Scythe
+							i(116837),	-- Spooky Scythe
 						},
-						["questID"] = 36129,	
+						["questID"] = 36129,
+						["coord"] = { 36.6, 52.4 },
 					}), 
+					o(234740, {		-- Orcish Signaling Horn
+						["groups"] = {
+							i(120337),	-- Novice Rylak Hunter's Horn
+						},
+						["questID"] = 36402,
+						["coord"] = { 36.3, 39.5 },
+					}),
 					n(84872, { 		-- Oskiira the Vengeful
 						["groups"] = {
-							dr(100, i(118204)),	-- Oskiira's Mercy
+							i(118204),	-- Oskiira's Mercy
 						},
-						["questID"] = 36288,	
+						["questID"] = 36288,
+						["coord"] = { 65.0, 54.0 },
 					}), 
 					o(234147, { 	-- Outcast's Belongings
 						["groups"] = {
-							dr(07.0, i(106683)),	-- Snarlthorn Helm
-							dr(04.0, i(116607)),	-- Bloodmane Sword
-							dr(04.0, i(106658)),	-- Talon Guard Legplates
-							dr(02.0, i(116596)),	-- Bloodmane Crossbow
-							dr(02.0, i(116600)),	-- Bloodmane Gun
-							dr(02.0, i(106663)),	-- Breezestrider Bindings
-							dr(02.0, i(106667)),	-- Breezestrider Hood
-							dr(02.0, i(116602)),	-- Ruhkmari Scepter
-							dr(02.0, i(106681)),	-- Snarlthorn Gauntlets
-							dr(02.0, i(106682)),	-- Snarlthorn Greaves
-							dr(02.0, i(106676)),	-- Windswept Sandals
-							dr(01.9, i(116594)),	-- Bloodmane Broadaxe
-							dr(01.9, i(106672)),	-- Windswept Cowl
-							dr(01.8, i(106668)),	-- Breezestrider Jerkin
-							dr(01.8, i(106661)),	-- Talon Guard Shield
-							dr(01.7, i(116595)),	-- Bloodmane Bow
-							dr(01.7, i(106679)),	-- Snarlthorn Belt
-							dr(01.7, i(106654)),	-- Talon Guard Breastplate
-							dr(01.7, i(116920, {	-- True Steel Lockbox
-								dr(03.0, i(106692)),	-- Ironfist Pauldrons
-								dr(02.0, i(106723)),	-- Stonecrag Helm
-								dr(02.0, i(106706)),	-- Voidwrap Handwraps
-								dr(01.6, i(116626)),	-- Ancestral Wand
-								dr(01.6, i(116613)),	-- Gorian Crossbow
-								dr(01.6, i(116614)),	-- Gorian Dagger
-								dr(01.6, i(106690)),	-- Ironfist Helm
-								dr(01.5, i(106726)),	-- Stonecrag Sabatons
-								dr(01.5, i(106714)),	-- Sunspring Gauntlets
-								dr(01.5, i(106708)),	-- Voidwrap Robe
-								dr(01.4, i(116632)),	-- Oshu'gun Spellblade
-								dr(01.4, i(106722)),	-- Stonecrag Girdle
-								dr(01.3, i(116621)),	-- Gorian Spear
-								dr(01.3, i(106691)),	-- Ironfist Legplates
-								dr(01.3, i(106735)),	-- Meadowstomper Shoulders
-								dr(01.3, i(106704)),	-- Voidwrap Cord
-								dr(01.2, i(106740)),	-- Dark Star Leggings
-								dr(01.2, i(116617)),	-- Gorian Gun
-								dr(01.2, i(116620)),	-- Gorian Hammer
-								dr(01.2, i(116627)),	-- Howling Axe
-								dr(01.2, i(116633)),	-- Howling Knuckles
-								dr(01.2, i(106729)),	-- Meadowstomper Bindings
-								dr(01.1, i(116622)),	-- Gorian Staff
-								dr(01.1, i(116640)),	-- Howling Staff
-								dr(01.1, i(106747)),	-- Packrunner Gauntlets
-								dr(01.1, i(106699)),	-- Sabermaw Gloves
-								dr(01.1, i(106701)),	-- Sabermaw Jerkin
-								dr(01.1, i(106712)),	-- Sunspring Belt
-								dr(01.1, i(106717)),	-- Sunspring Legguards
-								dr(01.1, i(106711)),	-- Voidwrap Wristwraps
-								dr(01.0, i(116721)),	-- Ancestral Branch
-								dr(01.0, i(116619)),	-- Ancestral Scepter
-								dr(01.0, i(116625)),	-- Gorian Greatsword
-								dr(01.0, i(116618)),	-- Gorian Mace
-								dr(01.0, i(116634)),	-- Howling Gun
-								dr(01.0, i(106687)),	-- Ironfist Breastplate
-								dr(01.0, i(116643)),	-- Oshu'gun Wand
-								dr(01.0, i(106697)),	-- Sabermaw Boots
-								dr(01.0, i(106702)),	-- Sabermaw Shoulders
-								dr(01.0, i(106720)),	-- Stonecrag Breastplate
-								dr(01.0, i(106713)),	-- Sunspring Bracers							
-							})),								
-							dr(01.6, i(116597)),	-- Bloodmane Dagger
-							dr(01.6, i(116608)),	-- Bloodmane Greatsword
-							dr(01.6, i(116601)),	-- Bloodmane Mace
-							dr(01.6, i(116604)),	-- Bloodmane Spear
-							dr(01.6, i(116605)),	-- Bloodmane Staff
-							dr(01.6, i(106665)),	-- Breezestrider Britches
-							dr(01.6, i(106669)),	-- Breezestrider Shoulders
-							dr(01.6, i(106670)),	-- Breezestrider Waistband
-							dr(01.6, i(106659)),	-- Talon Guard Pauldrons
-							dr(01.6, i(106673)),	-- Windswept Handwraps
-							dr(01.6, i(106677)),	-- Windswept Shoulderpads
-							dr(01.6, i(106678)),	-- Windswept Wristwraps
-							dr(01.5, i(116593)),	-- Bloodmane Axe
-							dr(01.5, i(116603)),	-- Bloodmane Hammer
-							dr(01.5, i(116606)),	-- Bloodmane Staff
-							dr(01.5, i(106664)),	-- Breezestrider Boots
-							dr(01.5, i(116717)),	-- Ruhkmari Cloak
-							dr(01.5, i(116598)),	-- Ruhkmari Spellblade
-							dr(01.5, i(106686)),	-- Snarlthorn Vest
-							dr(01.5, i(106656)),	-- Talon Guard Girdle
-							dr(01.5, i(106675)),	-- Windswept Robe
-							dr(01.4, i(106666)),	-- Breezestrider Gloves
-							dr(01.4, i(116718)),	-- Ruhkmari Bowl
-							dr(01.4, i(106684)),	-- Snarlthorn Legguards
-							dr(01.4, i(106685)),	-- Snarlthorn Spaulders
-							dr(01.4, i(106657)),	-- Talon Guard Helm
-							dr(01.4, i(106660)),	-- Talon Guard Sabatons
-							dr(01.4, i(106674)),	-- Windswept Leggings
-							dr(01.3, i(116599)),	-- Bloodmane Knuckles
-							dr(01.3, i(116609)),	-- Ruhkmari Wand	
-							dr(01.3, i(106680)),	-- Snarlthorn Bracers
-							dr(01.3, i(106655)),	-- Talon Guard Gauntlets
-							dr(01.3, i(106662)),	-- Talon Guard Vambraces
-							dr(01.3, i(106671)),	-- Windswept Cord							
+							-- Weapons
+							i(116593),	-- Bloodmane Axe
+							i(116595),	-- Bloodmane Bow
+							i(116594),	-- Bloodmane Broadaxe
+							i(116596),	-- Bloodmane Crossbow
+							i(116597),	-- Bloodmane Dagger
+							i(116608),	-- Bloodmane Greatsword
+							i(116600),	-- Bloodmane Gun
+							i(116603),	-- Bloodmane Hammer
+							i(116599),	-- Bloodmane Knuckles
+							i(116601),	-- Bloodmane Mace
+							i(116604),	-- Bloodmane Spear
+							i(116605),	-- Bloodmane Staff
+							i(116606),	-- Bloodmane Staff
+							i(116607),	-- Bloodmane Sword
+							i(116718),	-- Ruhkmari Bowl
+							i(116602),	-- Ruhkmari Scepter
+							i(116598),	-- Ruhkmari Spellblade
+							i(116609),	-- Ruhkmari Wand	
+							i(106661),	-- Talon Guard Shield
+							-- Head
+							i(106667),	-- Breezestrider Hood
+							i(106683),	-- Snarlthorn Helm
+							i(106657),	-- Talon Guard Helm
+							i(106672),	-- Windswept Cowl
+							-- Neck
+							i(116685),	-- Ruhkmari Amulet
+							-- Shoulders
+							i(106669),	-- Breezestrider Shoulders
+							i(106685),	-- Snarlthorn Spaulders
+							i(106659),	-- Talon Guard Pauldrons
+							i(106677),	-- Windswept Shoulderpads
+							-- Back
+							i(116717),	-- Ruhkmari Cloak
+							-- Chest
+							i(106668),	-- Breezestrider Jerkin
+							i(106686),	-- Snarlthorn Vest
+							i(106654),	-- Talon Guard Breastplate
+							i(106675),	-- Windswept Robe
+							-- Wrist
+							i(106663),	-- Breezestrider Bindings
+							i(106680),	-- Snarlthorn Bracers
+							i(106662),	-- Talon Guard Vambraces
+							i(106678),	-- Windswept Wristwraps
+							-- Hands
+							i(106666),	-- Breezestrider Gloves
+							i(106681),	-- Snarlthorn Gauntlets
+							i(106655),	-- Talon Guard Gauntlets
+							i(106673),	-- Windswept Handwraps
+							-- Waist
+							i(106670),	-- Breezestrider Waistband
+							i(106679),	-- Snarlthorn Belt
+							i(106656),	-- Talon Guard Girdle
+							i(106671),	-- Windswept Cord	
+							-- Legs
+							i(106665),	-- Breezestrider Britches
+							i(106684),	-- Snarlthorn Legguards
+							i(106658),	-- Talon Guard Legplates
+							i(106674),	-- Windswept Leggings
+							-- Feet
+							i(106664),	-- Breezestrider Boots
+							i(106682),	-- Snarlthorn Greaves
+							i(106660),	-- Talon Guard Sabatons
+							i(106676),	-- Windswept Sandals
+							-- Finger
+							i(116719),	-- Ruhkmari Ring
+							i(116920, {	-- True Steel Lockbox
+								-- Weapons
+								i(116721),	-- Ancestral Branch
+								i(116619),	-- Ancestral Scepter
+								i(116626),	-- Ancestral Wand
+								i(116613),	-- Gorian Crossbow
+								i(116614),	-- Gorian Dagger
+								i(116625),	-- Gorian Greatsword
+								i(116617),	-- Gorian Gun
+								i(116620),	-- Gorian Hammer
+								i(116618),	-- Gorian Mace
+								i(116621),	-- Gorian Spear
+								i(116622),	-- Gorian Staff
+								i(116627),	-- Howling Axe
+								i(116634),	-- Howling Gun
+								i(116633),	-- Howling Knuckles
+								i(116640),	-- Howling Staff
+								i(116632),	-- Oshu'gun Spellblade
+								i(116643),	-- Oshu'gun Wand
+								-- Head
+								i(106690),	-- Ironfist Helm
+								i(106723),	-- Stonecrag Helm
+								-- Neck
+								-- Shoulders
+								i(106692),	-- Ironfist Pauldrons
+								i(106735),	-- Meadowstomper Shoulders
+								i(106702),	-- Sabermaw Shoulders
+								-- Back
+								-- Chest
+								i(106687),	-- Ironfist Breastplate
+								i(106701),	-- Sabermaw Jerkin
+								i(106720),	-- Stonecrag Breastplate
+								i(106708),	-- Voidwrap Robe
+								-- Wrist
+								i(106729),	-- Meadowstomper Bindings
+								i(106713),	-- Sunspring Bracers							
+								i(106711),	-- Voidwrap Wristwraps
+								-- Hands
+								i(106747),	-- Packrunner Gauntlets
+								i(106699),	-- Sabermaw Gloves
+								i(106714),	-- Sunspring Gauntlets
+								i(106706),	-- Voidwrap Handwraps
+								-- Waist
+								i(106722),	-- Stonecrag Girdle
+								i(106712),	-- Sunspring Belt
+								i(106704),	-- Voidwrap Cord
+								-- Legs
+								i(106740),	-- Dark Star Leggings
+								i(106691),	-- Ironfist Legplates
+								i(106717),	-- Sunspring Legguards
+								-- Feet
+								i(106697),	-- Sabermaw Boots
+								i(106726),	-- Stonecrag Sabatons
+								-- Finger
+								-- Trinket
+							}),
 						},
 						["questID"] = 36243,
+						["coord"] = { 36.8, 17.2 },
 						["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6AK_Outcasts_Basket01.mdx",
 						["icon"] = "Interface\\Icons\\INV_Misc_Basket_05",
 					}),
 					o(235172, { 	-- Outcast's Belongings
 						["groups"] = {
-							dr(05.0, i(106683)),	-- Snarlthorn Helm
-							dr(05.0, i(106672)),	-- Windswept Cowl
-							dr(04.0, i(106666)),	-- Breezestrider Gloves
-							dr(03.0, i(116602)),	-- Ruhkmari Scepter
-							dr(03.0, i(106674)),	-- Windswept Leggings
-							dr(03.0, i(106675)),	-- Windswept Robe
-							dr(03.0, i(106678)),	-- Windswept Wristwraps
-							dr(02.0, i(106676)),	-- Windswept Sandals
-							dr(01.9, i(116604)),	-- Bloodmane Spear
-							dr(01.9, i(106684)),	-- Snarlthorn Legguards
-							dr(01.9, i(106659)),	-- Talon Guard Pauldrons
-							dr(01.8, i(116605)),	-- Bloodmane Staff
-							dr(01.8, i(106669)),	-- Breezestrider Shoulders
-							dr(01.8, i(106657)),	-- Talon Guard Helm
-							dr(01.8, i(106677)),	-- Windswept Shoulderpads
-							dr(01.8, i(116920, {	-- True Steel Lockbox
-								dr(03.0, i(106692)),	-- Ironfist Pauldrons
-								dr(02.0, i(106723)),	-- Stonecrag Helm
-								dr(02.0, i(106706)),	-- Voidwrap Handwraps
-								dr(01.6, i(116626)),	-- Ancestral Wand
-								dr(01.6, i(116613)),	-- Gorian Crossbow
-								dr(01.6, i(116614)),	-- Gorian Dagger
-								dr(01.6, i(106690)),	-- Ironfist Helm
-								dr(01.5, i(106726)),	-- Stonecrag Sabatons
-								dr(01.5, i(106714)),	-- Sunspring Gauntlets
-								dr(01.5, i(106708)),	-- Voidwrap Robe
-								dr(01.4, i(116632)),	-- Oshu'gun Spellblade
-								dr(01.4, i(106722)),	-- Stonecrag Girdle
-								dr(01.3, i(116621)),	-- Gorian Spear
-								dr(01.3, i(106691)),	-- Ironfist Legplates
-								dr(01.3, i(106735)),	-- Meadowstomper Shoulders
-								dr(01.3, i(106704)),	-- Voidwrap Cord
-								dr(01.2, i(106740)),	-- Dark Star Leggings
-								dr(01.2, i(116617)),	-- Gorian Gun
-								dr(01.2, i(116620)),	-- Gorian Hammer
-								dr(01.2, i(116627)),	-- Howling Axe
-								dr(01.2, i(116633)),	-- Howling Knuckles
-								dr(01.2, i(106729)),	-- Meadowstomper Bindings
-								dr(01.1, i(116622)),	-- Gorian Staff
-								dr(01.1, i(116640)),	-- Howling Staff
-								dr(01.1, i(106747)),	-- Packrunner Gauntlets
-								dr(01.1, i(106699)),	-- Sabermaw Gloves
-								dr(01.1, i(106701)),	-- Sabermaw Jerkin
-								dr(01.1, i(106712)),	-- Sunspring Belt
-								dr(01.1, i(106717)),	-- Sunspring Legguards
-								dr(01.1, i(106711)),	-- Voidwrap Wristwraps
-								dr(01.0, i(116721)),	-- Ancestral Branch
-								dr(01.0, i(116619)),	-- Ancestral Scepter
-								dr(01.0, i(116625)),	-- Gorian Greatsword
-								dr(01.0, i(116618)),	-- Gorian Mace
-								dr(01.0, i(116634)),	-- Howling Gun
-								dr(01.0, i(106687)),	-- Ironfist Breastplate
-								dr(01.0, i(116643)),	-- Oshu'gun Wand
-								dr(01.0, i(106697)),	-- Sabermaw Boots
-								dr(01.0, i(106702)),	-- Sabermaw Shoulders
-								dr(01.0, i(106720)),	-- Stonecrag Breastplate
-								dr(01.0, i(106713)),	-- Sunspring Bracers							
-							})),								
-							dr(01.7, i(116608)),	-- Bloodmane Greatsword
-							dr(01.7, i(106663)),	-- Breezestrider Bindings
-							dr(01.7, i(106664)),	-- Breezestrider Boots
-							dr(01.7, i(106667)),	-- Breezestrider Hood
-							dr(01.7, i(106671)),	-- Windswept Cord
-							dr(01.6, i(116597)),	-- Bloodmane Dagger
-							dr(01.6, i(116600)),	-- Bloodmane Gun
-							dr(01.6, i(116599)),	-- Bloodmane Knuckles
-							dr(01.6, i(116601)),	-- Bloodmane Mace
-							dr(01.6, i(116606)),	-- Bloodmane Staff
-							dr(01.6, i(106665)),	-- Breezestrider Britches
-							dr(01.6, i(106670)),	-- Breezestrider Waistband
-							dr(01.6, i(116718)),	-- Ruhkmari Bowl
-							dr(01.6, i(116609)),	-- Ruhkmari Wand
-							dr(01.6, i(106682)),	-- Snarlthorn Greaves
-							dr(01.6, i(106654)),	-- Talon Guard Breastplate
-							dr(01.6, i(106662)),	-- Talon Guard Vambraces
-							dr(01.5, i(116595)),	-- Bloodmane Bow
-							dr(01.5, i(116594)),	-- Bloodmane Broadaxe
-							dr(01.5, i(116596)),	-- Bloodmane Crossbow
-							dr(01.5, i(116603)),	-- Bloodmane Hammer
-							dr(01.5, i(116607)),	-- Bloodmane Sword
-							dr(01.5, i(106679)),	-- Snarlthorn Belt
-							dr(01.5, i(106680)),	-- Snarlthorn Bracers
-							dr(01.5, i(106681)),	-- Snarlthorn Gauntlets
-							dr(01.5, i(106685)),	-- Snarlthorn Spaulders
-							dr(01.5, i(106686)),	-- Snarlthorn Vest
-							dr(01.5, i(106655)),	-- Talon Guard Gauntlets
-							dr(01.5, i(106656)),	-- Talon Guard Girdle
-							dr(01.5, i(106660)),	-- Talon Guard Sabatons
-							dr(01.5, i(106661)),	-- Talon Guard Shield
-							dr(01.4, i(106668)),	-- Breezestrider Jerkin
-							dr(01.4, i(116717)),	-- Ruhkmari Cloak	
-							dr(01.4, i(116598)),	-- Ruhkmari Spellblade
-							dr(01.4, i(106673)),	-- Windswept Handwraps
-							dr(01.3, i(116593)),	-- Bloodmane Axe
-							dr(01.3, i(106658)),	-- Talon Guard Legplates							
+							-- Weapons
+							i(116593),	-- Bloodmane Axe
+							i(116595),	-- Bloodmane Bow
+							i(116594),	-- Bloodmane Broadaxe
+							i(116596),	-- Bloodmane Crossbow
+							i(116597),	-- Bloodmane Dagger
+							i(116608),	-- Bloodmane Greatsword
+							i(116600),	-- Bloodmane Gun
+							i(116603),	-- Bloodmane Hammer
+							i(116599),	-- Bloodmane Knuckles
+							i(116601),	-- Bloodmane Mace
+							i(116604),	-- Bloodmane Spear
+							i(116605),	-- Bloodmane Staff
+							i(116606),	-- Bloodmane Staff
+							i(116607),	-- Bloodmane Sword
+							i(116718),	-- Ruhkmari Bowl
+							i(116602),	-- Ruhkmari Scepter
+							i(116598),	-- Ruhkmari Spellblade
+							i(116609),	-- Ruhkmari Wand	
+							i(106661),	-- Talon Guard Shield
+							-- Head
+							i(106667),	-- Breezestrider Hood
+							i(106683),	-- Snarlthorn Helm
+							i(106657),	-- Talon Guard Helm
+							i(106672),	-- Windswept Cowl
+							-- Neck
+							i(116685),	-- Ruhkmari Amulet
+							-- Shoulders
+							i(106669),	-- Breezestrider Shoulders
+							i(106685),	-- Snarlthorn Spaulders
+							i(106659),	-- Talon Guard Pauldrons
+							i(106677),	-- Windswept Shoulderpads
+							-- Back
+							i(116717),	-- Ruhkmari Cloak
+							-- Chest
+							i(106668),	-- Breezestrider Jerkin
+							i(106686),	-- Snarlthorn Vest
+							i(106654),	-- Talon Guard Breastplate
+							i(106675),	-- Windswept Robe
+							-- Wrist
+							i(106663),	-- Breezestrider Bindings
+							i(106680),	-- Snarlthorn Bracers
+							i(106662),	-- Talon Guard Vambraces
+							i(106678),	-- Windswept Wristwraps
+							-- Hands
+							i(106666),	-- Breezestrider Gloves
+							i(106681),	-- Snarlthorn Gauntlets
+							i(106655),	-- Talon Guard Gauntlets
+							i(106673),	-- Windswept Handwraps
+							-- Waist
+							i(106670),	-- Breezestrider Waistband
+							i(106679),	-- Snarlthorn Belt
+							i(106656),	-- Talon Guard Girdle
+							i(106671),	-- Windswept Cord	
+							-- Legs
+							i(106665),	-- Breezestrider Britches
+							i(106684),	-- Snarlthorn Legguards
+							i(106658),	-- Talon Guard Legplates
+							i(106674),	-- Windswept Leggings
+							-- Feet
+							i(106664),	-- Breezestrider Boots
+							i(106682),	-- Snarlthorn Greaves
+							i(106660),	-- Talon Guard Sabatons
+							i(106676),	-- Windswept Sandals
+							-- Finger
+							i(116719),	-- Ruhkmari Ring
+							i(116920, {	-- True Steel Lockbox
+								-- Weapons
+								i(116721),	-- Ancestral Branch
+								i(116619),	-- Ancestral Scepter
+								i(116626),	-- Ancestral Wand
+								i(116613),	-- Gorian Crossbow
+								i(116614),	-- Gorian Dagger
+								i(116625),	-- Gorian Greatsword
+								i(116617),	-- Gorian Gun
+								i(116620),	-- Gorian Hammer
+								i(116618),	-- Gorian Mace
+								i(116621),	-- Gorian Spear
+								i(116622),	-- Gorian Staff
+								i(116627),	-- Howling Axe
+								i(116634),	-- Howling Gun
+								i(116633),	-- Howling Knuckles
+								i(116640),	-- Howling Staff
+								i(116632),	-- Oshu'gun Spellblade
+								i(116643),	-- Oshu'gun Wand
+								-- Head
+								i(106690),	-- Ironfist Helm
+								i(106723),	-- Stonecrag Helm
+								-- Neck
+								-- Shoulders
+								i(106692),	-- Ironfist Pauldrons
+								i(106735),	-- Meadowstomper Shoulders
+								i(106702),	-- Sabermaw Shoulders
+								-- Back
+								-- Chest
+								i(106687),	-- Ironfist Breastplate
+								i(106701),	-- Sabermaw Jerkin
+								i(106720),	-- Stonecrag Breastplate
+								i(106708),	-- Voidwrap Robe
+								-- Wrist
+								i(106729),	-- Meadowstomper Bindings
+								i(106713),	-- Sunspring Bracers							
+								i(106711),	-- Voidwrap Wristwraps
+								-- Hands
+								i(106747),	-- Packrunner Gauntlets
+								i(106699),	-- Sabermaw Gloves
+								i(106714),	-- Sunspring Gauntlets
+								i(106706),	-- Voidwrap Handwraps
+								-- Waist
+								i(106722),	-- Stonecrag Girdle
+								i(106712),	-- Sunspring Belt
+								i(106704),	-- Voidwrap Cord
+								-- Legs
+								i(106740),	-- Dark Star Leggings
+								i(106691),	-- Ironfist Legplates
+								i(106717),	-- Sunspring Legguards
+								-- Feet
+								i(106697),	-- Sabermaw Boots
+								i(106726),	-- Stonecrag Sabatons
+								-- Finger
+								-- Trinket
+							}),					
 						},
 						["questID"] = 36447,
+						["coord"] = { 42.1, 21.7 },
 						["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6AK_Outcasts_Basket01.mdx",
 						["icon"] = "Interface\\Icons\\INV_Misc_Basket_05",
 					}),
 					o(235168, { 	-- Outcast's Pouch
 						["groups"] = {
-							dr(04.0, i(106666)),	-- Breezestrider Gloves
-							dr(04.0, i(106683)),	-- Snarlthorn Helm
-							dr(02.0, i(116597)),	-- Bloodmane Dagger
-							dr(02.0, i(116599)),	-- Bloodmane Knuckles
-							dr(02.0, i(116604)),	-- Bloodmane Spear
-							dr(02.0, i(106665)),	-- Breezestrider Britches
-							dr(02.0, i(106670)),	-- Breezestrider Waistband
-							dr(02.0, i(106685)),	-- Snarlthorn Spaulders
-							dr(02.0, i(106678)),	-- Windswept Wristwraps
-							dr(01.9, i(116596)),	-- Bloodmane Crossbow
-							dr(01.9, i(116600)),	-- Bloodmane Gun
-							dr(01.9, i(106682)),	-- Snarlthorn Greaves
-							dr(01.9, i(106658)),	-- Talon Guard Legplates
-							dr(01.9, i(106672)),	-- Windswept Cowl
-							dr(01.8, i(116594)),	-- Bloodmane Broadaxe
-							dr(01.8, i(116607)),	-- Bloodmane Sword
-							dr(01.8, i(116718)),	-- Ruhkmari Bowl
-							dr(01.8, i(106656)),	-- Talon Guard Girdle
-							dr(01.8, i(106657)),	-- Talon Guard Helm
-							dr(01.8, i(106659)),	-- Talon Guard Pauldrons
-							dr(01.8, i(106660)),	-- Talon Guard Sabatons
-							dr(01.8, i(106671)),	-- Windswept Cord
-							dr(01.8, i(106673)),	-- Windswept Handwraps
-							dr(01.7, i(116608)),	-- Bloodmane Greatsword
-							dr(01.7, i(116601)),	-- Bloodmane Mace
-							dr(01.7, i(116606)),	-- Bloodmane Staff
-							dr(01.7, i(106663)),	-- Breezestrider Bindings
-							dr(01.7, i(106668)),	-- Breezestrider Jerkin
-							dr(01.7, i(106669)),	-- Breezestrider Shoulders
-							dr(01.7, i(106680)),	-- Snarlthorn Bracers
-							dr(01.7, i(106661)),	-- Talon Guard Shield
-							dr(01.7, i(106675)),	-- Windswept Robe
-							dr(01.7, i(106676)),	-- Windswept Sandals
-							dr(01.7, i(106677)),	-- Windswept Shoulderpads
-							dr(01.7, i(116920, {	-- True Steel Lockbox
-								dr(03.0, i(106692)),	-- Ironfist Pauldrons
-								dr(02.0, i(106723)),	-- Stonecrag Helm
-								dr(02.0, i(106706)),	-- Voidwrap Handwraps
-								dr(01.6, i(116626)),	-- Ancestral Wand
-								dr(01.6, i(116613)),	-- Gorian Crossbow
-								dr(01.6, i(116614)),	-- Gorian Dagger
-								dr(01.6, i(106690)),	-- Ironfist Helm
-								dr(01.5, i(106726)),	-- Stonecrag Sabatons
-								dr(01.5, i(106714)),	-- Sunspring Gauntlets
-								dr(01.5, i(106708)),	-- Voidwrap Robe
-								dr(01.4, i(116632)),	-- Oshu'gun Spellblade
-								dr(01.4, i(106722)),	-- Stonecrag Girdle
-								dr(01.3, i(116621)),	-- Gorian Spear
-								dr(01.3, i(106691)),	-- Ironfist Legplates
-								dr(01.3, i(106735)),	-- Meadowstomper Shoulders
-								dr(01.3, i(106704)),	-- Voidwrap Cord
-								dr(01.2, i(106740)),	-- Dark Star Leggings
-								dr(01.2, i(116617)),	-- Gorian Gun
-								dr(01.2, i(116620)),	-- Gorian Hammer
-								dr(01.2, i(116627)),	-- Howling Axe
-								dr(01.2, i(116633)),	-- Howling Knuckles
-								dr(01.2, i(106729)),	-- Meadowstomper Bindings
-								dr(01.1, i(116622)),	-- Gorian Staff
-								dr(01.1, i(116640)),	-- Howling Staff
-								dr(01.1, i(106747)),	-- Packrunner Gauntlets
-								dr(01.1, i(106699)),	-- Sabermaw Gloves
-								dr(01.1, i(106701)),	-- Sabermaw Jerkin
-								dr(01.1, i(106712)),	-- Sunspring Belt
-								dr(01.1, i(106717)),	-- Sunspring Legguards
-								dr(01.1, i(106711)),	-- Voidwrap Wristwraps
-								dr(01.0, i(116721)),	-- Ancestral Branch
-								dr(01.0, i(116619)),	-- Ancestral Scepter
-								dr(01.0, i(116625)),	-- Gorian Greatsword
-								dr(01.0, i(116618)),	-- Gorian Mace
-								dr(01.0, i(116634)),	-- Howling Gun
-								dr(01.0, i(106687)),	-- Ironfist Breastplate
-								dr(01.0, i(116643)),	-- Oshu'gun Wand
-								dr(01.0, i(106697)),	-- Sabermaw Boots
-								dr(01.0, i(106702)),	-- Sabermaw Shoulders
-								dr(01.0, i(106720)),	-- Stonecrag Breastplate
-								dr(01.0, i(106713)),	-- Sunspring Bracers							
-							})),					
-							dr(01.6, i(106664)),	-- Breezestrider Boots
-							dr(01.6, i(106667)),	-- Breezestrider Hood
-							dr(01.6, i(116598)),	-- Ruhkmari Spellblade
-							dr(01.6, i(116609)),	-- Ruhkmari Wand
-							dr(01.6, i(106686)),	-- Snarlthorn Vest
-							dr(01.6, i(106662)),	-- Talon Guard Vambraces
-							dr(01.5, i(116593)),	-- Bloodmane Axe
-							dr(01.5, i(116595)),	-- Bloodmane Bow
-							dr(01.5, i(116603)),	-- Bloodmane Hammer
-							dr(01.5, i(116605)),	-- Bloodmane Staff
-							dr(01.5, i(116717)),	-- Ruhkmari Cloak
-							dr(01.5, i(116602)),	-- Ruhkmari Scepter
-							dr(01.5, i(106654)),	-- Talon Guard Breastplate
-							dr(01.5, i(106655)),	-- Talon Guard Gauntlets			
-							dr(01.5, i(106674)),	-- Windswept Leggings
-							dr(01.4, i(106681)),	-- Snarlthorn Gauntlets
-							dr(01.4, i(106684)),	-- Snarlthorn Legguards
-							dr(01.3, i(106679)),	-- Snarlthorn Belt							
+							-- Weapons
+							i(116593),	-- Bloodmane Axe
+							i(116595),	-- Bloodmane Bow
+							i(116594),	-- Bloodmane Broadaxe
+							i(116596),	-- Bloodmane Crossbow
+							i(116597),	-- Bloodmane Dagger
+							i(116608),	-- Bloodmane Greatsword
+							i(116600),	-- Bloodmane Gun
+							i(116603),	-- Bloodmane Hammer
+							i(116599),	-- Bloodmane Knuckles
+							i(116601),	-- Bloodmane Mace
+							i(116604),	-- Bloodmane Spear
+							i(116605),	-- Bloodmane Staff
+							i(116606),	-- Bloodmane Staff
+							i(116607),	-- Bloodmane Sword
+							i(116718),	-- Ruhkmari Bowl
+							i(116602),	-- Ruhkmari Scepter
+							i(116598),	-- Ruhkmari Spellblade
+							i(116609),	-- Ruhkmari Wand	
+							i(106661),	-- Talon Guard Shield
+							-- Head
+							i(106667),	-- Breezestrider Hood
+							i(106683),	-- Snarlthorn Helm
+							i(106657),	-- Talon Guard Helm
+							i(106672),	-- Windswept Cowl
+							-- Neck
+							i(116685),	-- Ruhkmari Amulet
+							-- Shoulders
+							i(106669),	-- Breezestrider Shoulders
+							i(106685),	-- Snarlthorn Spaulders
+							i(106659),	-- Talon Guard Pauldrons
+							i(106677),	-- Windswept Shoulderpads
+							-- Back
+							i(116717),	-- Ruhkmari Cloak
+							-- Chest
+							i(106668),	-- Breezestrider Jerkin
+							i(106686),	-- Snarlthorn Vest
+							i(106654),	-- Talon Guard Breastplate
+							i(106675),	-- Windswept Robe
+							-- Wrist
+							i(106663),	-- Breezestrider Bindings
+							i(106680),	-- Snarlthorn Bracers
+							i(106662),	-- Talon Guard Vambraces
+							i(106678),	-- Windswept Wristwraps
+							-- Hands
+							i(106666),	-- Breezestrider Gloves
+							i(106681),	-- Snarlthorn Gauntlets
+							i(106655),	-- Talon Guard Gauntlets
+							i(106673),	-- Windswept Handwraps
+							-- Waist
+							i(106670),	-- Breezestrider Waistband
+							i(106679),	-- Snarlthorn Belt
+							i(106656),	-- Talon Guard Girdle
+							i(106671),	-- Windswept Cord	
+							-- Legs
+							i(106665),	-- Breezestrider Britches
+							i(106684),	-- Snarlthorn Legguards
+							i(106658),	-- Talon Guard Legplates
+							i(106674),	-- Windswept Leggings
+							-- Feet
+							i(106664),	-- Breezestrider Boots
+							i(106682),	-- Snarlthorn Greaves
+							i(106660),	-- Talon Guard Sabatons
+							i(106676),	-- Windswept Sandals
+							-- Finger
+							i(116719),	-- Ruhkmari Ring
+							i(116920, {	-- True Steel Lockbox
+								-- Weapons
+								i(116721),	-- Ancestral Branch
+								i(116619),	-- Ancestral Scepter
+								i(116626),	-- Ancestral Wand
+								i(116613),	-- Gorian Crossbow
+								i(116614),	-- Gorian Dagger
+								i(116625),	-- Gorian Greatsword
+								i(116617),	-- Gorian Gun
+								i(116620),	-- Gorian Hammer
+								i(116618),	-- Gorian Mace
+								i(116621),	-- Gorian Spear
+								i(116622),	-- Gorian Staff
+								i(116627),	-- Howling Axe
+								i(116634),	-- Howling Gun
+								i(116633),	-- Howling Knuckles
+								i(116640),	-- Howling Staff
+								i(116632),	-- Oshu'gun Spellblade
+								i(116643),	-- Oshu'gun Wand
+								-- Head
+								i(106690),	-- Ironfist Helm
+								i(106723),	-- Stonecrag Helm
+								-- Neck
+								-- Shoulders
+								i(106692),	-- Ironfist Pauldrons
+								i(106735),	-- Meadowstomper Shoulders
+								i(106702),	-- Sabermaw Shoulders
+								-- Back
+								-- Chest
+								i(106687),	-- Ironfist Breastplate
+								i(106701),	-- Sabermaw Jerkin
+								i(106720),	-- Stonecrag Breastplate
+								i(106708),	-- Voidwrap Robe
+								-- Wrist
+								i(106729),	-- Meadowstomper Bindings
+								i(106713),	-- Sunspring Bracers							
+								i(106711),	-- Voidwrap Wristwraps
+								-- Hands
+								i(106747),	-- Packrunner Gauntlets
+								i(106699),	-- Sabermaw Gloves
+								i(106714),	-- Sunspring Gauntlets
+								i(106706),	-- Voidwrap Handwraps
+								-- Waist
+								i(106722),	-- Stonecrag Girdle
+								i(106712),	-- Sunspring Belt
+								i(106704),	-- Voidwrap Cord
+								-- Legs
+								i(106740),	-- Dark Star Leggings
+								i(106691),	-- Ironfist Legplates
+								i(106717),	-- Sunspring Legguards
+								-- Feet
+								i(106697),	-- Sabermaw Boots
+								i(106726),	-- Stonecrag Sabatons
+								-- Finger
+								-- Trinket
+							}),					
 						},
 						["questID"] = 36446,
+						["coord"] = { 46.9, 34.0 },
 						["modelID"] = 32854,
+					}),
+					n(84838, {		-- Poisonmaster Bortusk
+						["groups"] = {
+							i(118199),	-- Poison Cask
+						},
+						["questID"] = 36279,
+						["coord"] = { 59.6, 37.6 },
+					}),
+					o(233975, {		-- Rooby's Roo
+						["groups"] = {
+							i(116887),	-- Rooby Roo's Ruby Rollar
+						},
+						["questID"] = 36657,
+						["coord"] = { 37.3, 50.7 },
+						["description"] = "Buy 3 Rooby Treats from Miril Dumonde in the basement of the inn, fee them to Rooby on the main floor of the inn, follow Rooby and feed him each time he stops until he leaves his treasure.",
 					}),
 					n(85504, { 		-- Rotcap
 						["groups"] = {	
-							dr(100, i(118107)),	-- Brilliant Spore Pet
+							i(118107),	-- Brilliant Spore Pet
 						},
-						["questID"] = 36470,	
+						["questID"] = 36470,
+						["coord"] = { 38.4, 27.4 },
 					}), 
 					n(84833, { 		-- Sangrikass
 						["groups"] = {	
-							dr(100, i(118203)),	-- Moultingskin Tunic
+							i(118203),	-- Moultingskin Tunic
 						},
 						["questID"] = 36276,
+						["coord"] = { 68.8, 49.0 },
 					}), 
 					n(79938, { 		-- Shadowbark
 						["groups"] = {	
-							dr(100, i(118201)),	-- Shadowbark's Skin
+							i(118201),	-- Shadowbark's Skin
 						},
-						["questID"] = 36478,	
+						["questID"] = 36478,
+						["coord"] = { 51.8, 35.6 },
 					}), 
 					n(87027, { 		-- Shadow Hulk
 						["groups"] = {	
-							dr(32, i(119363)),	-- Stretchy Purple Pants
+							i(119363),	-- Stretchy Purple Pants
 						},
 						["questID"] = 37392,
-						["isDaily"] = true,						
+						["isDaily"] = true,
+						["coord"] = { 71.4, 33.2 },
 					}), 
-					o(234456, { 		-- Shattered Hand Lockbox
+					o(234456, { 	-- Shattered Hand Lockbox
 						["groups"] = {
-							dr(100, i(116920, {	-- True Steel Lockbox
-								dr(03.0, i(106692)),	-- Ironfist Pauldrons
-								dr(02.0, i(106723)),	-- Stonecrag Helm
-								dr(02.0, i(106706)),	-- Voidwrap Handwraps
-								dr(01.6, i(116626)),	-- Ancestral Wand
-								dr(01.6, i(116613)),	-- Gorian Crossbow
-								dr(01.6, i(116614)),	-- Gorian Dagger
-								dr(01.6, i(106690)),	-- Ironfist Helm
-								dr(01.5, i(106726)),	-- Stonecrag Sabatons
-								dr(01.5, i(106714)),	-- Sunspring Gauntlets
-								dr(01.5, i(106708)),	-- Voidwrap Robe
-								dr(01.4, i(116632)),	-- Oshu'gun Spellblade
-								dr(01.4, i(106722)),	-- Stonecrag Girdle
-								dr(01.3, i(116621)),	-- Gorian Spear
-								dr(01.3, i(106691)),	-- Ironfist Legplates
-								dr(01.3, i(106735)),	-- Meadowstomper Shoulders
-								dr(01.3, i(106704)),	-- Voidwrap Cord
-								dr(01.2, i(106740)),	-- Dark Star Leggings
-								dr(01.2, i(116617)),	-- Gorian Gun
-								dr(01.2, i(116620)),	-- Gorian Hammer
-								dr(01.2, i(116627)),	-- Howling Axe
-								dr(01.2, i(116633)),	-- Howling Knuckles
-								dr(01.2, i(106729)),	-- Meadowstomper Bindings
-								dr(01.1, i(116622)),	-- Gorian Staff
-								dr(01.1, i(116640)),	-- Howling Staff
-								dr(01.1, i(106747)),	-- Packrunner Gauntlets
-								dr(01.1, i(106699)),	-- Sabermaw Gloves
-								dr(01.1, i(106701)),	-- Sabermaw Jerkin
-								dr(01.1, i(106712)),	-- Sunspring Belt
-								dr(01.1, i(106717)),	-- Sunspring Legguards
-								dr(01.1, i(106711)),	-- Voidwrap Wristwraps
-								dr(01.0, i(116721)),	-- Ancestral Branch
-								dr(01.0, i(116619)),	-- Ancestral Scepter
-								dr(01.0, i(116625)),	-- Gorian Greatsword
-								dr(01.0, i(116618)),	-- Gorian Mace
-								dr(01.0, i(116634)),	-- Howling Gun
-								dr(01.0, i(106687)),	-- Ironfist Breastplate
-								dr(01.0, i(116643)),	-- Oshu'gun Wand
-								dr(01.0, i(106697)),	-- Sabermaw Boots
-								dr(01.0, i(106702)),	-- Sabermaw Shoulders
-								dr(01.0, i(106720)),	-- Stonecrag Breastplate
-								dr(01.0, i(106713)),	-- Sunspring Bracers							
-							})),						
+							i(116920, {	-- True Steel Lockbox
+								-- Weapons
+								i(116721),	-- Ancestral Branch
+								i(116619),	-- Ancestral Scepter
+								i(116626),	-- Ancestral Wand
+								i(116613),	-- Gorian Crossbow
+								i(116614),	-- Gorian Dagger
+								i(116625),	-- Gorian Greatsword
+								i(116617),	-- Gorian Gun
+								i(116620),	-- Gorian Hammer
+								i(116618),	-- Gorian Mace
+								i(116621),	-- Gorian Spear
+								i(116622),	-- Gorian Staff
+								i(116627),	-- Howling Axe
+								i(116634),	-- Howling Gun
+								i(116633),	-- Howling Knuckles
+								i(116640),	-- Howling Staff
+								i(116632),	-- Oshu'gun Spellblade
+								i(116643),	-- Oshu'gun Wand
+								-- Head
+								i(106690),	-- Ironfist Helm
+								i(106723),	-- Stonecrag Helm
+								-- Neck
+								-- Shoulders
+								i(106692),	-- Ironfist Pauldrons
+								i(106735),	-- Meadowstomper Shoulders
+								i(106702),	-- Sabermaw Shoulders
+								-- Back
+								-- Chest
+								i(106687),	-- Ironfist Breastplate
+								i(106701),	-- Sabermaw Jerkin
+								i(106720),	-- Stonecrag Breastplate
+								i(106708),	-- Voidwrap Robe
+								-- Wrist
+								i(106729),	-- Meadowstomper Bindings
+								i(106713),	-- Sunspring Bracers							
+								i(106711),	-- Voidwrap Wristwraps
+								-- Hands
+								i(106747),	-- Packrunner Gauntlets
+								i(106699),	-- Sabermaw Gloves
+								i(106714),	-- Sunspring Gauntlets
+								i(106706),	-- Voidwrap Handwraps
+								-- Waist
+								i(106722),	-- Stonecrag Girdle
+								i(106712),	-- Sunspring Belt
+								i(106704),	-- Voidwrap Cord
+								-- Legs
+								i(106740),	-- Dark Star Leggings
+								i(106691),	-- Ironfist Legplates
+								i(106717),	-- Sunspring Legguards
+								-- Feet
+								i(106697),	-- Sabermaw Boots
+								i(106726),	-- Stonecrag Sabatons
+								-- Finger
+								-- Trinket
+							}),				
 						},
 						["questID"] = 36361,
+						["coord"] = { 47.9, 30.7 },
 						["icon"] = "Interface\\Icons\\INV_TreasureChest_FelfireCitadel",
 					}),
 					n(83990, { 		-- Solar Magnifier
 						["groups"] = {	
-							dr(38, i(119407)),	-- Cloudsplitter Greatstaff
+							i(119407),	-- Cloudsplitter Greatstaff
 						},
 						["questID"] = 37394,
-						["isDaily"] = true,						
+						["isDaily"] = true,
+						["coord"] = { 52.0, 7.6 },
 					}), 
 					n(85026, { 		-- Soul-Twister Torek
 						["groups"] = {	
-							dr(37, i(119410)),	-- Soultwisting Staff
-							dr(14, i(119178)),	-- Black Whirlwind Toy
+							i(119178),	-- Black Whirlwind Toy
+							i(119410),	-- Soultwisting Staff
 						},
 						["questID"] = 37358,
 						["isDaily"] = true,
+						["coord"] = { 72.6, 19.6 },
 					}), 
 					n(84805, { 		-- Stonespite
 						["groups"] = {	
-							dr(100, i(116858)),	-- Stonespite Scale Leggings
+							i(116858),	-- Stonespite Scale Leggings
 						},
-						["questID"] = 36265,	
+						["questID"] = 36265,
+						["coord"] = { 33.6, 22.0 },
 					}), 
 					n(84912, { 		-- Sunderthorn
 						["groups"] = {	
-							dr(100, i(116855)),	-- Stingtail's Toxic Stinger
+							i(116855),	-- Stingtail's Toxic Stinger
 						},
-						["questID"] = 36298,	
+						["questID"] = 36298,
+						["coord"] = { 58.6, 45.0 },
 					}), 
 					n(85520, { 		-- Swarmleaf
 						["groups"] = {
-							dr(100, i(116857)),	-- Stave of Buzzing Bark
+							i(116857),	-- Stave of Buzzing Bark
 						},
 						["questID"] = 36472,
+						["coord"] = { 52.8, 54.8 },
 					}), 
-					n(82050, { -- Varasha
-						i(118207), -- Hydraling
+					n(84836, {		-- Talonbreaker <Bloodmane High Shaman>
+						["groups"] = {
+							i(116838),	-- Talonbreaker Talisman
+						},
+						["questID"] = 36278,
+						["coord"] = { 54.6, 63.2 },
+					}),
+					n(84775, {		-- Tesska the Broken
+						["groups"] = {
+							i(116852),	-- Tesska's Cursed Talisman
+						},
+						["questID"] = 36254,
+						["coord"] = { 57.2, 73.8 },
+					}),
+					n(82050, { 		-- Varasha
+						["groups"] = {
+							i(118207), -- Hydraling
+						},
+						["questID"] = 35334,
+						["coords"] = { 
+							{ 31.5, 43.3 },	-- Cave Entrance
+							{ 29.6, 42.0 },	-- Varasha
+						},
+						["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
 					}),
 					n(85078, { 		-- Voidreaver Urnae
 						["groups"] = {	
-							dr(40, i(119392)),	-- Voidreaver's Axe
+							i(119392),	-- Voidreaver's Axe
 						},
 						["questID"] = 37359,
-						["isDaily"] = true,						
+						["isDaily"] = true,
+						["coords"] = {
+							{ 73.6, 31.2 },
+							{ 74.8, 32.4 },
+						},
 					}), 
-					o(235307, { 		-- Waterlogged Satchel
+					o(235307, { 	-- Waterlogged Satchel
 						["groups"] = {
-							dr(05.0, i(116601)),	-- Bloodmane Mace
-							dr(05.0, i(106680)),	-- Snarlthorn Bracers
-							dr(05.0, i(106678)),	-- Windswept Wristwraps
-							dr(04.0, i(116600)),	-- Bloodmane Gun
-							dr(03.0, i(106663)),	-- Breezestrider Bindings
-							dr(03.0, i(116598)),	-- Ruhkmari Spellblade
-							dr(03.0, i(116609)),	-- Ruhkmari Wand
-							dr(01.9, i(116606)),	-- Bloodmane Staff
-							dr(01.8, i(116607)),	-- Bloodmane Sword
-							dr(01.8, i(106670)),	-- Breezestrider Waistband
-							dr(01.8, i(106658)),	-- Talon Guard Legplates
-							dr(01.8, i(106661)),	-- Talon Guard Shield
-							dr(01.7, i(116597)),	-- Bloodmane Dagger
-							dr(01.7, i(116599)),	-- Bloodmane Knuckles
-							dr(01.7, i(106665)),	-- Breezestrider Britches
-							dr(01.6, i(116604)),	-- Bloodmane Spear
-							dr(01.6, i(116605)),	-- Bloodmane Staff
-							dr(01.6, i(106667)),	-- Breezestrider Hood
-							dr(01.6, i(106668)),	-- Breezestrider Jerkin
-							dr(01.6, i(106682)),	-- Snarlthorn Greaves
-							dr(01.6, i(106656)),	-- Talon Guard Girdle
-							dr(01.6, i(106675)),	-- Windswept Robe
-							dr(01.6, i(116920, {	-- True Steel Lockbox
-								dr(03.0, i(106692)),	-- Ironfist Pauldrons
-								dr(02.0, i(106723)),	-- Stonecrag Helm
-								dr(02.0, i(106706)),	-- Voidwrap Handwraps
-								dr(01.6, i(116626)),	-- Ancestral Wand
-								dr(01.6, i(116613)),	-- Gorian Crossbow
-								dr(01.6, i(116614)),	-- Gorian Dagger
-								dr(01.6, i(106690)),	-- Ironfist Helm
-								dr(01.5, i(106726)),	-- Stonecrag Sabatons
-								dr(01.5, i(106714)),	-- Sunspring Gauntlets
-								dr(01.5, i(106708)),	-- Voidwrap Robe
-								dr(01.4, i(116632)),	-- Oshu'gun Spellblade
-								dr(01.4, i(106722)),	-- Stonecrag Girdle
-								dr(01.3, i(116621)),	-- Gorian Spear
-								dr(01.3, i(106691)),	-- Ironfist Legplates
-								dr(01.3, i(106735)),	-- Meadowstomper Shoulders
-								dr(01.3, i(106704)),	-- Voidwrap Cord
-								dr(01.2, i(106740)),	-- Dark Star Leggings
-								dr(01.2, i(116617)),	-- Gorian Gun
-								dr(01.2, i(116620)),	-- Gorian Hammer
-								dr(01.2, i(116627)),	-- Howling Axe
-								dr(01.2, i(116633)),	-- Howling Knuckles
-								dr(01.2, i(106729)),	-- Meadowstomper Bindings
-								dr(01.1, i(116622)),	-- Gorian Staff
-								dr(01.1, i(116640)),	-- Howling Staff
-								dr(01.1, i(106747)),	-- Packrunner Gauntlets
-								dr(01.1, i(106699)),	-- Sabermaw Gloves
-								dr(01.1, i(106701)),	-- Sabermaw Jerkin
-								dr(01.1, i(106712)),	-- Sunspring Belt
-								dr(01.1, i(106717)),	-- Sunspring Legguards
-								dr(01.1, i(106711)),	-- Voidwrap Wristwraps
-								dr(01.0, i(116721)),	-- Ancestral Branch
-								dr(01.0, i(116619)),	-- Ancestral Scepter
-								dr(01.0, i(116625)),	-- Gorian Greatsword
-								dr(01.0, i(116618)),	-- Gorian Mace
-								dr(01.0, i(116634)),	-- Howling Gun
-								dr(01.0, i(106687)),	-- Ironfist Breastplate
-								dr(01.0, i(116643)),	-- Oshu'gun Wand
-								dr(01.0, i(106697)),	-- Sabermaw Boots
-								dr(01.0, i(106702)),	-- Sabermaw Shoulders
-								dr(01.0, i(106720)),	-- Stonecrag Breastplate
-								dr(01.0, i(106713)),	-- Sunspring Bracers							
-							})),								
-							dr(01.5, i(116593)),	-- Bloodmane Axe
-							dr(01.5, i(116594)),	-- Bloodmane Broadaxe
-							dr(01.5, i(116608)),	-- Bloodmane Greatsword
-							dr(01.5, i(106664)),	-- Breezestrider Boots
-							dr(01.5, i(106666)),	-- Breezestrider Gloves
-							dr(01.5, i(106681)),	-- Snarlthorn Gauntlets
-							dr(01.5, i(106683)),	-- Snarlthorn Helm
-							dr(01.5, i(106685)),	-- Snarlthorn Spaulders
-							dr(01.5, i(106655)),	-- Talon Guard Gauntlets
-							dr(01.5, i(106660)),	-- Talon Guard Sabatons
-							dr(01.5, i(106662)),	-- Talon Guard Vambraces
-							dr(01.5, i(106673)),	-- Windswept Handwraps
-							dr(01.4, i(116595)),	-- Bloodmane Bow
-							dr(01.4, i(116596)),	-- Bloodmane Crossbow
-							dr(01.4, i(116603)),	-- Bloodmane Hammer
-							dr(01.4, i(106669)),	-- Breezestrider Shoulders
-							dr(01.4, i(106679)),	-- Snarlthorn Belt
-							dr(01.4, i(106684)),	-- Snarlthorn Legguards
-							dr(01.4, i(106657)),	-- Talon Guard Helm
-							dr(01.4, i(106659)),	-- Talon Guard Pauldrons
-							dr(01.4, i(106672)),	-- Windswept Cowl
-							dr(01.4, i(106676)),	-- Windswept Sandals
-							dr(01.3, i(116718)),	-- Ruhkmari Bowl
-							dr(01.3, i(106654)),	-- Talon Guard Breastplate
-							dr(01.3, i(106671)),	-- Windswept Cord
-							dr(01.3, i(106677)),	-- Windswept Shoulderpads	
-							dr(01.2, i(116717)),	-- Ruhkmari Cloak
-							dr(01.2, i(106686)),	-- Snarlthorn Vest
-							dr(01.2, i(106674)),	-- Windswept Leggings
-							dr(01.1, i(116602)),	-- Ruhkmari Scepter						
+							-- Weapons
+							i(116593),	-- Bloodmane Axe
+							i(116595),	-- Bloodmane Bow
+							i(116594),	-- Bloodmane Broadaxe
+							i(116596),	-- Bloodmane Crossbow
+							i(116597),	-- Bloodmane Dagger
+							i(116608),	-- Bloodmane Greatsword
+							i(116600),	-- Bloodmane Gun
+							i(116603),	-- Bloodmane Hammer
+							i(116599),	-- Bloodmane Knuckles
+							i(116601),	-- Bloodmane Mace
+							i(116604),	-- Bloodmane Spear
+							i(116605),	-- Bloodmane Staff
+							i(116606),	-- Bloodmane Staff
+							i(116607),	-- Bloodmane Sword
+							i(116718),	-- Ruhkmari Bowl
+							i(116602),	-- Ruhkmari Scepter
+							i(116598),	-- Ruhkmari Spellblade
+							i(116609),	-- Ruhkmari Wand	
+							i(106661),	-- Talon Guard Shield
+							-- Head
+							i(106667),	-- Breezestrider Hood
+							i(106683),	-- Snarlthorn Helm
+							i(106657),	-- Talon Guard Helm
+							i(106672),	-- Windswept Cowl
+							-- Neck
+							i(116685),	-- Ruhkmari Amulet
+							-- Shoulders
+							i(106669),	-- Breezestrider Shoulders
+							i(106685),	-- Snarlthorn Spaulders
+							i(106659),	-- Talon Guard Pauldrons
+							i(106677),	-- Windswept Shoulderpads
+							-- Back
+							i(116717),	-- Ruhkmari Cloak
+							-- Chest
+							i(106668),	-- Breezestrider Jerkin
+							i(106686),	-- Snarlthorn Vest
+							i(106654),	-- Talon Guard Breastplate
+							i(106675),	-- Windswept Robe
+							-- Wrist
+							i(106663),	-- Breezestrider Bindings
+							i(106680),	-- Snarlthorn Bracers
+							i(106662),	-- Talon Guard Vambraces
+							i(106678),	-- Windswept Wristwraps
+							-- Hands
+							i(106666),	-- Breezestrider Gloves
+							i(106681),	-- Snarlthorn Gauntlets
+							i(106655),	-- Talon Guard Gauntlets
+							i(106673),	-- Windswept Handwraps
+							-- Waist
+							i(106670),	-- Breezestrider Waistband
+							i(106679),	-- Snarlthorn Belt
+							i(106656),	-- Talon Guard Girdle
+							i(106671),	-- Windswept Cord	
+							-- Legs
+							i(106665),	-- Breezestrider Britches
+							i(106684),	-- Snarlthorn Legguards
+							i(106658),	-- Talon Guard Legplates
+							i(106674),	-- Windswept Leggings
+							-- Feet
+							i(106664),	-- Breezestrider Boots
+							i(106682),	-- Snarlthorn Greaves
+							i(106660),	-- Talon Guard Sabatons
+							i(106676),	-- Windswept Sandals
+							-- Finger
+							i(116719),	-- Ruhkmari Ring
+							i(116920, {	-- True Steel Lockbox
+								-- Weapons
+								i(116721),	-- Ancestral Branch
+								i(116619),	-- Ancestral Scepter
+								i(116626),	-- Ancestral Wand
+								i(116613),	-- Gorian Crossbow
+								i(116614),	-- Gorian Dagger
+								i(116625),	-- Gorian Greatsword
+								i(116617),	-- Gorian Gun
+								i(116620),	-- Gorian Hammer
+								i(116618),	-- Gorian Mace
+								i(116621),	-- Gorian Spear
+								i(116622),	-- Gorian Staff
+								i(116627),	-- Howling Axe
+								i(116634),	-- Howling Gun
+								i(116633),	-- Howling Knuckles
+								i(116640),	-- Howling Staff
+								i(116632),	-- Oshu'gun Spellblade
+								i(116643),	-- Oshu'gun Wand
+								-- Head
+								i(106690),	-- Ironfist Helm
+								i(106723),	-- Stonecrag Helm
+								-- Neck
+								-- Shoulders
+								i(106692),	-- Ironfist Pauldrons
+								i(106735),	-- Meadowstomper Shoulders
+								i(106702),	-- Sabermaw Shoulders
+								-- Back
+								-- Chest
+								i(106687),	-- Ironfist Breastplate
+								i(106701),	-- Sabermaw Jerkin
+								i(106720),	-- Stonecrag Breastplate
+								i(106708),	-- Voidwrap Robe
+								-- Wrist
+								i(106729),	-- Meadowstomper Bindings
+								i(106713),	-- Sunspring Bracers							
+								i(106711),	-- Voidwrap Wristwraps
+								-- Hands
+								i(106747),	-- Packrunner Gauntlets
+								i(106699),	-- Sabermaw Gloves
+								i(106714),	-- Sunspring Gauntlets
+								i(106706),	-- Voidwrap Handwraps
+								-- Waist
+								i(106722),	-- Stonecrag Girdle
+								i(106712),	-- Sunspring Belt
+								i(106704),	-- Voidwrap Cord
+								-- Legs
+								i(106740),	-- Dark Star Leggings
+								i(106691),	-- Ironfist Legplates
+								i(106717),	-- Sunspring Legguards
+								-- Feet
+								i(106697),	-- Sabermaw Boots
+								i(106726),	-- Stonecrag Sabatons
+								-- Finger
+								-- Trinket
+							}),				
 						},
 						["questID"] = 36455,
+						["coord"] = { 66.5, 56.5 },
 						["modelID"] = 32854,
 					}),
 --[[					
 				--	n(80614, { 		-- Blade-Dancer Aeryx	}), 
-				--	n(80372, { 		-- Echidna	}), 
-				--	n(86978, { 		-- Gaze	}), 
-				--	n(84951, { 		-- Gobblefin	}), 
-				--	n(84955, { 		-- Jiasska the Sporegorger	}), 
-				--	n(84838, { 		-- Poisonmaster Bortusk	}), 
-				--	n(84836, { 		-- Talonbreaker	}), 
-				--	n(84775, { 		-- Tesska the Broken	}), 
+				--	n(80372, { 		-- Echidna	}),
+				--	n(84951, { 		-- Gobblefin	}),
 --]]				
 				}),
 				n(-2, { 	-- Vendors
@@ -1148,13 +1464,15 @@ _.Zones =
 						["groups"] = {
 							i(118080),	-- Admiral Taylor's Greatsword
 						},
+						["coord"] = { 37.6, 50.8 },
 						["description"] = "Vendor only sells Admiral Taylor's Greatsword to those who have completed the associated quest. |r",
 					}),
 					n(87123, {	-- Vesharr
 						["groups"] = {
-							i(120050),	-- Veilwatcher Hatchling
 							i(120051),	-- Kaliri Hatchling
+							i(120050),	-- Veilwatcher Hatchling
 						},
+						["coord"] = { 46.4, 45.2 },
 						["description"] = "Items will be unavailable until you complete the pet battle daily quest 'Vesharr'. |r",
 					}),
 				}),

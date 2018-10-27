@@ -159,6 +159,17 @@ _.ExpansionFeatures =
 						ach(9126),		-- Master Draftsman (40)
 						ach(9125),		-- Draftsman (20)
 					}),
+					{	-- In Pursuit of Gul'dan (Horde) (Garrison)
+						-- Note!! Spans 3 zones Garrison, Tanaan Jungle, and Talador.
+						["achievementID"] = 10074,	-- In Pursuit of Gul'dan (Horde) (Garrison)
+						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+						["g"] = {
+							{	-- All Hands On Deck
+								["achievementID"] = 10074,	-- In Pursuit of Gul'dan (Horde) (Garrison)
+								["criteriaID"] = 1,		-- All Hands On Deck
+							},
+						},
+					},
 					ach(9097, {		-- Keepin' Busy
 						crit(1),		-- Mine
 						crit(2),		-- Fishing Shack
@@ -177,10 +188,32 @@ _.ExpansionFeatures =
 					}),
 					ach(9246),		-- Master Draenor Crafter
 					ach(9265),		-- Master of Apexis
+					ach(9836, {		-- Master Relic Hunter (Horde)
+						crit(2),		-- Breaching the Barrier
+						crit(5),		-- Taking from the Taker
+						crit(3),		-- The Apexis Device
+						crit(1),		-- The Blessing of Beasts
+						crit(6),		-- The Crystal Reborn
+						crit(4),		-- The Spirit Forge
+					}),
 					ach(9098, {		-- Movin' On Up (Lvl 3)
 						ach(9099),		-- Time for an Upgrade (Lvl 2)
 					}),
 					ach(8933),		-- Staying Regular
+					ach(9492, {	-- The Garrison Campaign (Horde)
+						crit(11),		-- A Strike at the Heart
+						crit(7),		-- Bloodmaul Compound
+						crit(9),		-- Broken Precipice
+						crit(3),		-- Darktide Roost
+						crit(10),		-- Heart of the Breakers
+						crit(4),		-- Iron Siegeworks
+						crit(8),		-- Ours is the Fury
+						crit(12),		-- Primal Fury
+						crit(6),		-- The Fall of Shattrath
+						crit(5),		-- The Ring of Blood
+						crit(2),		-- The Sargerei
+						crit(1),		-- The Warlord's Council
+					}),
 					n(-104, {	-- Barracks
 						ach(9499, {		-- Wingmen
 							crit(1),		-- Leorajh
