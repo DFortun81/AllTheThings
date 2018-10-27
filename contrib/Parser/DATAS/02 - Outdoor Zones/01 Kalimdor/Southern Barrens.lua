@@ -404,6 +404,7 @@ _.Zones =
 					}),
 					qa(24921, {	-- Report to Aubrey
 						["qg"] = 38623,	-- Dockmaster Lewis
+						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 28551, 28550 },	-- Hero's Call: Southern Barrens! (same quest name, different IDs)
 					}),
 					qa(25087, {	-- Report to Twinbraid
@@ -517,6 +518,7 @@ _.Zones =
 					}),
 					qa(25036, {	-- Teegan's Troubles
 						["qg"] = 38620,	-- Thomas Paxton
+						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 24948 },	-- Lifting the Siege
 					}),
 					qa(25197, {	-- The Admiral Won't Back Down

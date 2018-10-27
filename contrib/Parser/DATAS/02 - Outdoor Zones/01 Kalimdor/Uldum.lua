@@ -328,6 +328,7 @@ _.Zones =
 						crit(5, {	-- These Obelisks Are Trying to Kill Us!
 							q(27993, {	-- Take it to 'Em!
 								["qg"] = 47318,
+								["isBreadcrumb"] = true,
 								["sourceQuests"] = {28112},
 							}),
 							q(27141, {	-- Premature Explosionation

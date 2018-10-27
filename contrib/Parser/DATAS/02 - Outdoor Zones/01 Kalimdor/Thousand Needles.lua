@@ -460,6 +460,7 @@ _.Zones =
 					}),
 					qa(27446, {	-- Tanaris is Calling
 						["qg"] = 40027,	-- Fizzle Brassbolts
+						["isBreadcrumb"] = true,
 					}),
 					qh(27447, {	-- Tanaris is Calling (NOT mutually exclusive with "Warchief's Command: Tanaris!")
 						["qg"] = 40028,	-- Pozzik
