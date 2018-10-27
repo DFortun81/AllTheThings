@@ -279,6 +279,8 @@ _.Zones =
 							q(26630, {	-- Looks Like a Tauren Pirate to Me
 								["qg"] = 2487, -- Fleet Master Seahorn
 								["sourceQuests"] = {26629},
+								["isBreadcrumb"] = true,
+								["description"] = "You can only complete this quest if you did not do Seeing Where Your Loyalties Lie yet",
 							}),
 							q(26631, {	-- Your First Day as a Pirate
 								["qg"] = 43504, -- Yancey Grillsen
@@ -433,6 +435,7 @@ _.Zones =
 							}),
 							q(26598, {	-- The Heart of Mokk
 								["qg"] = 1449, -- Witch Doctor Unbagwa
+								["repeatable"] = true,
 								["description"] = "This quest is only available while you are on the [Stranglethorn Fever] quest.",
 							}),
 							qh(28750, {	-- The Battle for Andorhal

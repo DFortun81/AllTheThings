@@ -10,7 +10,9 @@ _.Instances =
 				["groups"] = {
 					n(-17, {	-- Quests
 						n(49476, { -- Finkle Einhorn
-							q(28732), -- This Can Only Mean One Thing...
+							q(28732, {  -- This Can Only Mean One Thing...
+								["isBreadcrumb"] = true,
+							}),
 							q(28735, { -- To the Chamber of Incineration!
 								q(28737, { -- What Is This Place?
 									q(28738, { -- The Twilight Forge

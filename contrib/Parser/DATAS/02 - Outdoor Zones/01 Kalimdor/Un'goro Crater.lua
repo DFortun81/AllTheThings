@@ -44,6 +44,7 @@ _.Zones =
 							},
 							["qg"] = 9999,	-- Ringo
 							["sourceQuests"] = { 24734 },	-- Lost!
+							["isBreadcrumb"] = true,
 							["description"] = "Unavailable if you do not complete \"Speak with Spraggle\" quest before doing \"Shizzle's Flyer\"",
 						}),
 						q(24709, {	-- A Tale of Two Shovels
@@ -257,6 +258,7 @@ _.Zones =
 						q(24794, {	-- Speak With Spraggle
 							["qg"] = 10302,	-- Krakle
 							["sourceQuests"] = { 24742 },
+							["isBreadcrumb"] = true,
 							["description"] = "This quest is not available if \"Shizzle's Flyer\" is completed or in your quest log.",
 						}),
 						q(24737, {	-- Super Sticky
