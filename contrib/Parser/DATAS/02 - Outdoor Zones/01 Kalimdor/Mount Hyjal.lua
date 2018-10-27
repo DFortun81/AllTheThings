@@ -229,6 +229,12 @@ _.Zones =
 						["lvl"] = 85,
 						["groups"] = {
 							currency(416),	-- Mark of the World Tree
+							n(52383, {	-- Nemesis <Echo of the Usurper>
+								{
+									["achievementID"] = 5869,	-- Infernal Ambassadors
+									["criteriaID"] = 5,	-- Slay Nemesis at Ashen Lake without taking damage from Molten Fury. slain
+								},
+							}),
 						},
 					},
 					qg(41006, q(25764, { -- Egg Hunt
@@ -393,11 +399,6 @@ _.Zones =
 						i(57288),
 						i(57287),
 					})),
---[[					
-					qg(115802, q(45532, {	-- Mother's Orders (add'l QG 119982)
-						["classes"]= {11},
-					})),
-]]--
 					{
 						["questID"] = 45532,	-- Mother's Orders
 						["qgs"] = { 115802, 119982 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
@@ -405,8 +406,24 @@ _.Zones =
 						["classes"]= { 11 },	-- Druid
 						["lvl"] = 110,
 					},
+					{
+						["questID"] = 29162,	-- Nature's Blessing
+						["sourceQuest"] = 29161,	-- Those Bears Up There
+						["qg"] = 52671,	-- Mylune
+						["coord"] = { 27.1, 62.0 },
+						["isDaily"] = true,
+						["lvl"] = 85,
+						["groups"] = {
+							currency(416),	-- Mark of the World Tree
+							n(52749, {	-- Pyrachnis <Beth'tilac Lieutenant>
+								{
+									["achievementID"] = 5869,	-- Infernal Ambassadors
+									["criteriaID"] = 1,	-- Slay Pyrachnis without using the Emerald of Aessina. slain
+								},
+							}),
+						},
+					},
 --[[
-					qg(52671, q(29162)),	-- Nature's Blessing
 					qg(52669, q(29280)),	-- Nourishing Waters
 --]]					
 					qg(39930, q(25392, { -- Oh, Deer!
@@ -653,8 +670,18 @@ _.Zones =
 					qg(39429, qh(25269)),	-- The Voice of Lo'Gosh
 					qg(41006, q(25655)),	-- The Wormwing Problem
 					qg(49444, q(28732)),	-- This Can Only Mean One Thing...
-					qg(52671, q(29161)),	-- Those Bears Up There
---]]					
+--]]
+					{
+						["questID"] = 29161,	-- Those Bears Up There
+						["sourceQuest"] = 29201,	-- Through the Gates of Hell
+						["qg"] = 52671,	-- Mylune
+						["coord"] = { 27.1, 62.0 },
+						["isDaily"] = true,
+						["lvl"] = 85,
+						["groups"] = {
+							currency(416),	-- Mark of the World Tree
+						},
+					},
 					qg(40139, q(25325, { -- Through the Dream
 						i(57285),
 						i(57284),
