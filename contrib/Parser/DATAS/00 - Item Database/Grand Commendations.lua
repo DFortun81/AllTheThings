@@ -3,8 +3,25 @@ local i = function(itemID, factionID, unlock)
 	local o = { ["factionID"] = factionID, ["spellID"] = 0 };
 	if not unlock then o.repeatable = true; end
 	_.ItemDB[itemID] = o;
+	return o;
 end
 
+-- Cataclysm
+-- Molten Front (Did not automatically apply race requirements... sigh)
+h(i(71088, 1133));	-- Bilgewater Writ of Commendation
+a(i(70145, 69));	-- Darnassus Writ of Commendation
+a(i(70146, 930));	-- Exodar Writ of Commendation
+a(i(71087, 1134));	-- Gilneas Writ of Commendation
+a(i(70147, 54));	-- Gnomeregan Writ of Commendation
+a(i(70148, 47));	-- Ironforge Writ of Commendation
+h(i(70149, 76));	-- Orgrimmar Writ of Commendation
+h(i(70150, 530));	-- Sen'jin Writ of Commendation
+h(i(70151, 911));	-- Silvermoon Writ of Commendation
+a(i(70152, 72));	-- Stormwind Writ of Commendation
+h(i(70153, 81));	-- Thunder Bluff Writ of Commendation
+h(i(70154, 68));	-- Undercity Writ of Commendation
+
+-- Pandaria
 i(93231, 1376, true);		-- Grand Commendation of Operation: Shieldwall
 i(93225, 1302, true);		-- Grand Commendation of the Anglers
 i(93224, 1341, true);		-- Grand Commendation of the August Celestials

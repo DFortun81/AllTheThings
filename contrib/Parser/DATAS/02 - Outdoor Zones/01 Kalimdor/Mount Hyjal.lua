@@ -114,8 +114,14 @@ _.Zones =
 					})),
 --[[					
 					qg(38917, q(25324)),	-- A Prisoner of Interest
-					qg(52838, q(29195)),	-- A Ritual of Flame
 --]]					
+					{
+						["questID"] = 29195,	-- A Ritual of Flame
+						["sourceQuest"] = 29145,	-- Opening the Door
+						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 27.1, 54.4 },
+						["lvl"] = 85,
+					},
 					qg(41381, q(25372, { -- Aessina's Miracle
 						i(57267),
 						i(57266),
@@ -161,9 +167,21 @@ _.Zones =
 					qg(41507, q(25899)),	-- Breakthrough
 					qg(40816, q(25552)),	-- Brood of Evil
 					qg(52669, q(29147)),	-- Call the Flock
-					qg(52838, q(29199)),	-- Calling for Reinforcements
-					qg(52669, q(29197)),	-- Caught Unawares
---]]					
+--]]
+					{
+						["questID"] = 29199,	-- Calling for Reinforcements
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 27.1, 62.7 },
+						["lvl"] = 85,
+					},
+					{
+						["questID"] = 29197,	-- Caught Unawares
+						["sourceQuest"] = 29196,	-- To the Sanctuary!
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5 },
+						["lvl"] = 85,
+					},
 					qg(40341, q(25519, { -- Children of Tortolla
 						i(57280),
 						i(57279),
@@ -201,8 +219,18 @@ _.Zones =
 					})),
 --[[					
 					qg(39858, q(25491)),	-- Durable Seeds
-					qg(52671, q(29122)),	-- Echoes of Nemesis
---]]					
+--]]
+					{
+						["questID"] = 29122,	-- Echoes of Nemesis
+						["sourceQuest"] = 29101,	-- Punting Season
+						["qg"] = 52671,	-- Mylune
+						["coord"] = { 27.1, 61.9 },
+						["isDaily"] = true,
+						["lvl"] = 85,
+						["groups"] = {
+							currency(416),	-- Mark of the World Tree
+						},
+					},
 					qg(41006, q(25764, { -- Egg Hunt
 						i(57319),
 						i(57318),
@@ -289,11 +317,20 @@ _.Zones =
 					qg(39933, q(29066)),	-- Good News... and Bad News (breadcrumb quest after Black Heart of Flame - put QG as NPC that ends that quest)
 					qg(39413, q(25315)),	-- Graduation Speech
 					qg(39406, q(25496)),	-- Grudge Match
-					qg(52838, q(29389)),	-- Guardians of Hyjal: Firelands Invasion!
+--]]
+					{
+						["questID"] = 29389,	-- Guardians of Hyjal: Firelands Invasion!
+						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 19.5, 37.9 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 85,
+					},
+--[[
 					qg(39429, q(25255)),	-- Harrying the Hunters
 					qg(39858, q(25507)),	-- Hell's Shells
 					qg(39432, qh(25270)),	-- Howling Mad
---]]					
+--]]
+					
 					qg(41497, q(25901, { -- Hyjal Recycling Program
 						i(57347),
 						i(57345),
@@ -314,7 +351,15 @@ _.Zones =
 					qg(39433, qa(25623)),	-- Into the Maw!
 					qg(39627, qa(25618)),	-- Into the Maw!
 					qg(39927, q(25940)),	-- Last Stand at Whistling Grove (add'l QG 39928)
-					qg(52838, q(29200)),	-- Leyara
+--]]
+					{
+						["questID"] = 29200,	-- Leyara
+						["sourceQuest"] = 29199,	-- Calling for Reinforcements
+						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 27.1, 62.7 },
+						["lvl"] = 85,
+					},
+--[[
 					qg(39432, qh(25355)),	-- Lightning in a Bottle
 					qg(39433, qa(25353)),	-- Lightning in a Bottle
 --]]
@@ -369,8 +414,14 @@ _.Zones =
 						i(57326),
 						i(57328),
 					})),
---[[					
-					qg(52669, q(29145)),	-- Opening the Door
+					{
+						["questID"] = 29145,	-- Opening the Door
+						["sourceQuest"] = 29389,	-- Guardians of Hyjal: Firelands Invasion!
+						["coord"] = { 27.1, 62.5 },
+						["qg"] = 52669,	-- Matoclaw
+						["lvl"] = 85,
+					},
+--[[
 					qg(52669, q(29164)),	-- Perfecting Your Howl
 					qg(39413, q(25509)),	-- Physical Training: Forced Labor
 --]]					
@@ -382,11 +433,63 @@ _.Zones =
 --[[					
 					qg(41492, q(25886)),	-- Pressing the Advantage
 					qg(40289, q(25317)),	-- Protect the World Tree
-					qg(52671, q(29101)),	-- Punting Season
-					qg(52669, q(29149)),	-- Rage Against the Flames
-					qg(52669, q(29127)),	-- Rage Against the Flames
-					qg(52669, q(29123)),	-- Rage Against the Flames
-					qg(52669, q(29163)),	-- Rage Against the Flames
+--]]
+					{
+						["questID"] = 29101,	-- Punting Season
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+						["qg"] = 52671,	-- Mylune
+						["coord"] = { 27.1, 61.9 },
+						["isDaily"] = true,
+						["lvl"] = 85,
+						["groups"] = {
+							currency(416),	-- Mark of the World Tree
+						},
+					},
+					{
+						["questID"] = 29123,	-- Rage Against the Flames
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5 },
+						["isDaily"] = true,
+						["lvl"] = 85,
+						["groups"] = {
+							currency(416),	-- Mark of the World Tree
+						},
+					},
+					{
+						["questID"] = 29127,	-- Rage Against the Flames
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5 },
+						["isDaily"] = true,
+						["lvl"] = 85,
+						["groups"] = {
+							currency(416),	-- Mark of the World Tree
+						},
+					},
+					{
+						["questID"] = 29149,	-- Rage Against the Flames
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5 },
+						["isDaily"] = true,
+						["lvl"] = 85,
+						["groups"] = {
+							currency(416),	-- Mark of the World Tree
+						},
+					},
+					{
+						["questID"] = 29163,	-- Rage Against the Flames
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5 },
+						["isDaily"] = true,
+						["lvl"] = 85,
+						["groups"] = {
+							currency(416),	-- Mark of the World Tree
+						},
+					},
+--[[
 					qg(40837, q(25576)),	-- Rage of the Wolf Ancient
 					qg(52986, q(29248)),	-- Releasing the Pressure
 					qg(52986, q(29246)),	-- Relieving the Pain
@@ -461,8 +564,14 @@ _.Zones =
 --[[					
 					qg(39435, q(25300)),	-- The Eye of Twilight
 					qg(40289, q(29437)),	-- The Fallen Guardian (add'l QG 46998 and 52793)
-					qg(52669, q(29202)),	-- The Fate of Runetotem
---]]					
+--]]
+					{
+						["questID"] = 29202,	-- The Fate of Runetotem
+						["sourceQuest"] = 29201,	-- Through the Gates of Hell
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5 },
+						["lvl"] = 85,
+					},
 					qg(40773, q(25551, { -- The Firelord
 						i(57274),
 					})),
@@ -482,8 +591,18 @@ _.Zones =
 					qg(40093, q(25412)),	-- The Name Never Spoken
 					qg(54313, q(29326)),	-- The Nordrassil Summit
 					qg(52669, q(29126)),	-- The Power of Malorne
-					qg(53073, q(29128)),	-- The Protectors of Hyjal
---]]					
+--]]
+					{
+						["questID"] = 29128,	-- The Protectors of Hyjal
+						["sourceQuest"] = 29201,	-- Through the Gates of Hell
+						["qg"] = 53073,	-- Captain Soren Moonclaw
+						["coord"] = { 27.1, 61.6 },
+						["isDaily"] = true,
+						["lvl"] = 85,
+						["groups"] = {
+							currency(416),	-- Mark of the World Tree
+						},
+					},
 					{
 						["questID"] = 29311,	-- The Rest is History
 						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
@@ -500,7 +619,21 @@ _.Zones =
 					})),
 --[[					
 					qg(40289, q(25584)),	-- The Return of the Ancients
-					qg(52838, q(29198)),	-- The Sanctuary Must Not Fall
+]]--
+					{
+						["questID"] = 29198,	-- The Sanctuary Must Not Fall
+						["sourceQuest"] = 29197,	-- Caught Unawares
+						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 27.1, 62.5 },
+						["lvl"] = 85,
+						["groups"] = {
+							{
+								["achievementID"] = 5866,	-- The Molten Front Offensive
+								["criteriaID"] = 1,	-- Stop the assault on the Sanctuary of Malorne
+							},
+						},
+					},
+--[[
 					qg(40772, q(25549)),	-- The Sanctum of the Prophets
 					qg(39627, qa(25280)),	-- The Shrine Reclaimed
 					qg(39622, qh(25279)),	-- The Shrine Reclaimed
@@ -527,9 +660,27 @@ _.Zones =
 						i(57284),
 						i(57286),
 					})),
---[[					
-					qg(52845, q(29201)),	-- Through the Gates of Hell
-					qg(52845, q(29196)),	-- To the Sanctuary!
+					{
+						["questID"] = 29201,	-- Through the Gates of Hell
+						["sourceQuest"] = 29200,	-- Leyara
+						["qg"] = 52845,	-- Malfurion Stormrage
+						["coord"] = { 27.0, 62.7 },
+						["lvl"] = 85,
+						["groups"] = {
+							{
+								["achievementID"] = 5866,	-- The Molten Front Offensive
+								["criteriaID"] = 2,	-- Gain access to the Molten Front
+							},
+						},
+					},
+					{
+						["questID"] = 29196,	-- To the Sanctuary!
+						["sourceQuest"] = 29195,	-- A Ritual of Flame
+						["qg"] = 52845,	-- Malfurion Stormrage
+						["coord"] = { 27.3, 55.2 },
+						["lvl"] = 85,
+					},
+--[[
 					qg(39858, q(25510)),	-- Tortolla Speaks
 					qg(39858, q(25843)),	-- Tortolla's Revenge (add'l QGs 41480 and 52838)
 					qg(41498, q(25928)),	-- Tortolla's Triumph
