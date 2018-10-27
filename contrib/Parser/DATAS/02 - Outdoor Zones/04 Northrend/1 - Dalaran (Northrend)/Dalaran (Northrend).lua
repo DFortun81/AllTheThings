@@ -2009,11 +2009,42 @@ _.Zones =
 						},
 						i(44709),	-- Tome of Polymorph: Black Cat [Mage only]
 					}),
-					n(40160, { 	-- Frozo the Renowned <Frozen Orb Trader>
-						i(43102, {	-- Frozen Orb
-							i(54798),	-- Pattern: Frosty Flying Carpet [Tailor Only]
-						}),
-					}),
+					{	-- Frozo the Renowned <Frozen Orb Trader>
+						["npcID"] = 40160, 	-- Frozo the Renowned <Frozen Orb Trader>
+						["itemID"] = 43102,	-- Frozen Orb	Note!! This is the currency used for all items on this vendor!
+						["g"] = {
+							{	-- Crusader Orb
+								["itemID"] = 47556,	-- Crusader Orb
+							},
+							{	-- Eternal Air
+								["itemID"] = 35623,	-- Eternal Air
+							},
+							{	-- Eternal Earth
+								["itemID"] = 35624,	-- Eternal Earth
+							},
+							{	-- Eternal Fire
+								["itemID"] = 36860,	-- Eternal Fire
+							},
+							{	-- Eternal Life
+								["itemID"] = 35625,	-- Eternal Life
+							},
+							{	-- Eternal Shadow
+								["itemID"] = 35627,	-- Eternal Shadow
+							},
+							{	-- Eternal Water
+								["itemID"] = 35622,	-- Eternal Water
+							},
+							{	-- Frost Lotus
+								["itemID"] = 36908,	-- Frost Lotus
+							},
+							{	-- Pattern: Frosty Flying Carpet
+								["itemID"] = 54798,	-- Pattern: Frosty Flying Carpet
+							},
+							{	-- Runed Orb
+								["itemID"] = 45087,	-- Runed Orb
+							},
+						},
+					},
 					n(28997, { 	-- Griselda Hunderland <Plate Armor Merchant>
 						i(50991),	-- Verdigris Chain Belt
 						i(50987),	-- Malevolent Girdle
