@@ -2147,6 +2147,7 @@ _.ExpansionFeatures =
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
 						["requireSkill"] = 755, -- Jewelcrafting
+						["isBreadcrumb"] = true,
 						["qg"] = 77209,	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 					}),

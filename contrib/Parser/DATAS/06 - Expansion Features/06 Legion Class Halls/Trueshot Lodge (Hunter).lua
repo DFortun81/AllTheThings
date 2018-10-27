@@ -162,7 +162,9 @@ _.ExpansionFeatures =
 						un(40, q(44271)),	-- Eye of Azshara
 						q(46783),	-- Further Advancement
 						un(40, q(46149)),	-- Furthering Knowledge. Used to Increase Artefact Power
-						q(42403),	-- Highmountain Hunters
+						q(42403, {	-- Highmountain Hunters
+							["isBreadcrumb"] = true,
+						}),
 						q(42393),	-- Homecoming
 						q(42659),	-- In Defense of Dalaran
 						q(42405),	-- Informing Our Allies
