@@ -4871,7 +4871,7 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return not t.repeatable and GetDataMember("TreatQuestsAsCollectible");
+			return not t.repeatable and not t.isBreadcrumb and GetDataMember("TreatQuestsAsCollectible");
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
