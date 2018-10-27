@@ -605,6 +605,7 @@ _.Zones =
 						q(50794, {	-- Seeking Shelter
 							["qg"] = 134162,	-- Julwaba
 							["coord"] = { 47.0, 75.6 },
+							["isBreadcrumb"] = true,
 							["sourceQuests"] = { 50561 },	-- Sulthis' Stone
 						}),
 						q(51573, {	-- I've Got Your Back
@@ -1216,6 +1217,7 @@ _.Zones =
 						q(51772, {	-- The Tortaka Tribe
 							["qg"] = 126108,	-- Sezahjin
 							["coord"] = { 43.6, 76.7 },
+							["isBreadcrumb"] = true,
 							["sourceQuests"] = { 51668 },	-- Mojambo
 						}),
 						q(47943, {	-- Crab Trapping
