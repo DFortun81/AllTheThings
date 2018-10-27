@@ -58,6 +58,7 @@ _.Zones =
 					}),
 					qa(27214, {	-- A Disturbing Development (bcrumb quest for 27234)
 						["qg"] = 23951,	-- Lieutenant Aden
+						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 27213 },	-- The End of the Deserters
 					}),
 					qa(27425, {	-- A Grim Connection
