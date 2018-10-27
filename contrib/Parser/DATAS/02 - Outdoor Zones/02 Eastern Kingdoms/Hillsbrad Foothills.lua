@@ -315,10 +315,11 @@ _.Zones =
 					})),
 					{
 						["qg"] = 45728,	-- Arcane Remnant
-						["itemID"] = 61310,	-- Arcane Remnant
+						["itemID"] = 61311,	-- Arcane Remnant
 						["questID"] = 27480,	-- Ley Energies
 						["description"] = "This quest is part of a chain that begins in Silverpine Forest.  The quest counts towards Loremaster, but not the Hillsbrad or Silverpine zone quest achievements.",
 						["sourceQuests"] = { 27483 },	-- Practical Vengeance
+						["races"] = HORDE_ONLY,
 					},
 					qh(28206, {	-- Little Girl Lost
 						["qg"] = 47781,	-- Warden Stillwater
