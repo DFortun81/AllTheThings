@@ -599,61 +599,69 @@ _.Zones =
 						["groups"] = {
 							o(227793, { 	-- Aarko's Family Treasure
 								["groups"] = {
-									dr(100, i(117567)),	-- Aarko's Antique Crossbow
+									i(117567),	-- Aarko's Antique Crossbow
 								},
 								["icon"] = "Interface\\Icons\\inv_misc_diachest02",
 							}),
 						},
 						["questID"] = 34182,
-						["description"] = "Speak to Aarko.\nAssist him in killing 2 waves of enemies, then Surok Darkstorm.\nLoot the Treasure.",						
+						["coord"] = { 36.6, 96.0 },
+						["description"] = "Speak to Aarko.\nAssist him in killing 2 waves of enemies, then Surok Darkstorm.\nLoot the Treasure.",
 					}),
 					n(88043, { 		-- Avatar of Socrethar
-						["groups"] = {	
+						["groups"] = {
 							dr(40, i(119378)),	-- Socrethar's Stone
 						},
 						["questID"] = 37338,
-						["isDaily"] = true,						
-					}), 
+						["coord"] = { 46.0, 35.2 },
+						["isDaily"] = true,
+					}),
 					n(87597, { 		-- Bombardier Gu'gok
-						["groups"] = {	
+						["groups"] = {
 							dr(41, i(119413)),	-- Gu'gok's Rangefinder
 						},
 						["questID"] = 37339,
-						["isDaily"] = true,						
-					}), 
+						["coord"] = { 44.6, 37.8 },
+						["isDaily"] = true,
+					}),
 					o(228012, { 	-- Charred Sword
 						["groups"] = {
-							dr(100, i(116116)),	-- Blazegrease Greatsword
+							i(116116),	-- Blazegrease Greatsword
 						},
 						["questID"] = 34248,
+						["coord"] = { 77.0, 50.0 },
 						["icon"] = "Interface\\Icons\\INV_Sword_1H_PandaRaid_D_03",
-					}),							
+					}),
 					n(77620, { 		-- Cro Fleshrender
-						["groups"] = {	
-							dr(100, i(116123)),	-- Fleshrender's Painbringer
+						["groups"] = {
+							i(116123),	-- Fleshrender's Painbringer
 						},
-						["questID"] = 34165,	
-					}), 
+						["questID"] = 34165,
+						["coord"] = { 37.6, 70.4 },
+					}),
 					o(227996, { 	-- Curious Deathweb Egg
 						["groups"] = {
-							dr(100, i(117569)),	-- Giant Deathweb Egg Toy
+							i(117569),	-- Giant Deathweb Egg Toy
 						},
 						["questID"] = 34239,
+						["coord"] = { 66.5, 86.9 },
 						["icon"] = "Interface\\Icons\\INV_Misc_Web_01",
-					}),	
+					}),
 					o(226976, { 	-- Deceptia's Smoldering Boots
 						["groups"] = {
-							dr(100, i(108743)),	-- Deceptia's Smoldering Boots Toy
+							i(108743),	-- Deceptia's Smoldering Boots Toy
 						},
 						["questID"] = 33933,
+						["coord"] = { 58.9, 12.0 },
 						["icon"] = "Interface\\Icons\\INV_Boots_Robe_RaidMage_I_01",
-					}),										
+					}),
 					n(77828, { 		-- Echo of Murmur
-						["groups"] = {	
-							dr(100, i(113670)),	-- Mournful Moan of Murmur Toy
+						["groups"] = {
+							i(113670),	-- Mournful Moan of Murmur Toy
 						},
-						["questID"] = 34221,	
-					}), 
+						["questID"] = 34221,
+						["coord"] = { 34.0, 57.2 },
+					}),
 					o(239828, { 	-- Edge of Reality
 						["groups"] = {
 							o(239901, {		-- Voidtalon Egg
@@ -665,148 +673,176 @@ _.Zones =
 								["icon"] = "Interface\\Icons\\INV_Egg_09",
 							}),
 						},
+						["coords"] = {
+							{ 39.9, 55.6 },
+							{ 46.3, 52.6 },
+							{ 47.1, 48.8 },
+							{ 52.1, 41.1 },
+							{ 52.3, 25.8 },
+						},
 						["icon"] = "Interface\\Icons\\Spell_Warlock_DemonicPortal_Purple",
 						["description"] = "Click on Edge of Reality, get teleported, click on egg for mount.|nIf you are on a realm not of your own when you click on Edge of Reality the mount will be mailed to you as you will not be teleported. |r",
-					}),										
+					}),
 					n(80204, { 		-- Felbark
-						["groups"] = {	
-							dr(100, i(112373)),	-- Felbark's Shin
+						["groups"] = {
+							i(112373),	-- Felbark's Shin
 						},
-						["questID"] = 35018,	
-					}), 
+						["questID"] = 35018,
+						["coord"] = { 50.2, 85.4 },
+					}),
 					n(82992, { 		-- Felfire Consort
-						["groups"] = {	
+						["groups"] = {
 							dr(33, i(119386)),	-- Consort's Promise Ring - Droprate unknown on WoWhead
 						},
 						["questID"] = 37341,
-						["isDaily"] = true,							
-					}), 
+						["coord"] = { 47.8, 33.0 },
+						["isDaily"] = true,
+					}),
 					n(77614, { 		-- Frenzied Golem
-						["groups"] = {	
+						["groups"] = {
 							dr(57, i(113287)),	-- Shard of Scorn
 							dr(43, i(113288)),	-- Shard of Contempt
 						},
 						["questID"] = 34145,
-					}), 
+						["coord"] = { 46.2, 55.0 },
+					}),
 					n(78713, { 		-- Galzomar
-						["groups"] = {	
-							dr(100, i(116122)),	-- Burning Legion Missive Toy
+						["groups"] = {
+							i(116122),	-- Burning Legion Missive Toy
 						},
 						["questID"] = 35219,
+						["coord"] = { 56.6, 64.0 },
 						["description"] = "Sikthis, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
-					}), 
+					}),
 					n(85572, { 		-- Grrbrrgle
 						["groups"] = {
-							dr(100, i(120436)),	-- Mrglrgirdle
+							i(120436),	-- Mrglrgirdle
 						},
 						["questID"] = 36919,
+						["coord"] = { 22.2, 74.2 },
 						["description"] = "Click on the Restless Crate.",
-					}), 
+					}),
 					n(83019, { 		-- Gug'tol
-						["groups"] = {	
+						["groups"] = {
 							dr(35, i(119402)),	-- Gurg'tol's Imp Imperator
 						},
 						["questID"] = 37340,
-						["isDaily"] = true,						
-					}), 
+						["coord"] = { 47.6, 39.0 },
+						["isDaily"] = true,
+					}),
 					n(83008, { 		-- Haakun the All-Consuming
-						["groups"] = {	
+						["groups"] = {
 							dr(44, i(119403)),	-- Sargerei Soulbiter
 						},
 						["questID"] = 37312,
-						["isDaily"] = true,							
-					}), 
+						["coord"] = { 48.0, 25.4 },
+						["isDaily"] = true,
+					}),
 					n(77715, { 		-- Hammertooth
-						["groups"] = {	
-							dr(100, i(116124)),	-- Scaled Riverbeast Vest
+						["groups"] = {
+							i(116124),	-- Scaled Riverbeast Vest
 						},
-						["questID"] = 34185,	
-					}), 
+						["questID"] = 34185,
+						["coord"] = { 62.0, 46.6 },
+						["description"] = "Swims all around the area",
+					}),
 					n(77626, { 		-- Hen-Mother Hami
-						["groups"] = {	
-							dr(100, i(112369)),	-- Hami-Down Cloak
+						["groups"] = {
+							i(112369),	-- Hami-Down Cloak
 						},
-						["questID"] = 34167,	
-					}), 
+						["questID"] = 34167,
+						["coord"] = { 77.4, 51.2 },
+					}),
 					o(228015, { 	-- Iron Box
 						["groups"] = {
-							dr(100, i(117571)),	-- Gordunni Skullthumper
+							i(117571),	-- Gordunni Skullthumper
 						},
 						["questID"] = 34251,
+						["coord"] = { 64.6, 79.2 },
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest05b",
-					}),	
+					}),
 					o(228570, { 	-- Ketya's Stash
 						["groups"] = {
-							dr(100, i(116402)),	-- Stonegrinder Pet
+							i(116402),	-- Stonegrinder Pet
 						},
 						["questID"] = 34290,
+						["coord"] = { 54.0, 27.6 },
 						["modelScale"] = 1.5,
 						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
-					}),										
+					}),
 					n(78710, { 		-- Kharazos the Triumphant
-						["groups"] = {	
-							dr(100, i(116122)),	-- Burning Legion Missive Toy
+						["groups"] = {
+							i(116122),	-- Burning Legion Missive Toy
 						},
 						["questID"] = 35219,
+						["coord"] = { 56.6, 63.6 },
 						["description"] = "Sikthis, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
-					}), 
+					}),
 					n(78872, { 		-- Klikixx
-						["groups"] = {	
-							dr(100, i(116125)),	-- Klikixx's Webspinnner Toy
+						["groups"] = {
+							i(116125),	-- Klikixx's Webspinnner Toy
 						},
-						["questID"] = 34498,	
-					}), 
+						["questID"] = 34498,
+						["coord"] = { 66.8, 85.6 },
+					}),
 					n(82988, { 		-- Kurlosh Doomfang
-						["groups"] = {	
+						["groups"] = {
 							dr(64, i(119394)),	-- Kurlosh's Kidneyslicer
 						},
 						["questID"] = 37348,
-						["isDaily"] = true,						
-					}), 
+						["coord"] = { 37.4, 37.6 },
+						["isDaily"] = true,
+					}),
 					n(82942, { 		-- Lady Demlash
-						["groups"] = {	
+						["groups"] = {
 							dr(67, i(119352)),	-- Demlash's Dashing Robe
 						},
 						["questID"] = 37346,
-						["isDaily"] = true,						
-					}), 
+						["coord"] = { 33.6, 37.8 },
+						["isDaily"] = true,
+					}),
 					n(88494, { 		-- Legion Vanguard
-						["groups"] = {	
+						["groups"] = {
 							dr(43, i(119385)),	-- Vanguard's Linebreaking Bracer
 						},
 						["questID"] = 37342,
-						["isDaily"] = true,							
+						["coord"] = { 38.0, 20.4 },
+						["isDaily"] = true,
 						["description"] = "Kill about 10 Council Soulspeaker's, then kill 3 waves of 3 mobs, then Legion Vanguard will spawn. Kill him.",
 					}),
 					n(82920, { 		-- Lord Korinak
-						["groups"] = {	
+						["groups"] = {
 							dr(68, i(119388)),	-- Doomlord's Seal of Command
 						},
 						["questID"] = 37345,
-						["isDaily"] = true,							
-					}), 
+						["coord"] = { 31.0, 26.8 },
+						["isDaily"] = true,
+					}),
 					n(82998, { 		-- Matron of Sin
-						["groups"] = {	
+						["groups"] = {
 							dr(71, i(119353)),	-- Matron's Supple Gloves
 						},
 						["questID"] = 37349,
-						["isDaily"] = true,						
-					}), 
+						["coord"] = { 38.8, 49.8 },
+						["isDaily"] = true,
+					}),
 					n(87668, { 		-- Orumo the Observer
 						["groups"] = {
 							dr(12, i(119170)), 	-- Eye of Observation Pet
 						},
 						["questID"] = 37344,
+						["coord"] = { 31.4, 47.6 },
 						["isDaily"] = true,
 						["description"] = "|cff66ccffRequires 5 players to summon. Stand on runes.|r",
-					}), 
+					}),
 					n(77741, { 		-- Ra'kahn
-						["groups"] = {	
-							dr(100, i(116112)),	-- Ra'kahn's Bite
+						["groups"] = {
+							i(116112),	-- Ra'kahn's Bite
 						},
-						["questID"] = 34196,	
-					}), 
+						["questID"] = 34196,
+						["coord"] = { 59.4, 59.6 },
+					}),
 					o(228483, { 	-- Rusted Lockbox
 						["groups"] = {
 							dr(09.0, i(116708)),	-- Soulkeeper Cloak
@@ -912,119 +948,142 @@ _.Zones =
 							dr(39, i(119350)),	-- Sargerei Councillor's Drape
 						},
 						["questID"] = 37337,
-						["isDaily"] = true,	
+						["coord"] = { 45.8, 27.8 },
+						["isDaily"] = true,
 						["modelID"] = 60730,
-						["description"] = "Strategist Ankor, Archmagus Tekar, and Soulbinder Naylana.|r",	
-					}), 
+						["description"] = "Strategist Ankor, Archmagus Tekar, and Soulbinder Naylana.|r",
+					}),
 					n(82930, { 		-- Shadowflame Terrorwalker
 						["groups"] = {
 							dr(70, i(119393)),	-- Searing Shadowflame Axe
 						},
 						["questID"] = 37347,
+						["coord"] = { 41.0, 42.0 },
 						["isDaily"] = true,
-					}), 
+					}),
 					n(79543, { 		-- Shirzir
-						["groups"] = {	
-							dr(100, i(112370)),	-- Shirzir's Sticky Slippers
+						["groups"] = {
+							i(112370),	-- Shirzir's Sticky Slippers
 						},
-						["questID"] = 34671,	
-					}), 
+						["questID"] = 34671,
+						["coord"] = { 42.8, 54.2 },
+					}),
 					n(78715, { 		-- Sikthiss, Maiden of Slaughter
 						["groups"] = {
-							dr(100, i(116122)),	-- Burning Legion Missive Toy
+							i(116122),	-- Burning Legion Missive Toy
 						},
 						["questID"] = 35219,
+						["coord"] = { 56.2, 65.4 },
 						["description"] = "Sikthiss, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
-					}), 
+					}),
 					n(51015, { 		-- Silthide
-						dr(100, i(116767)), -- Sapphire Riverbeast Mount
-					}), 
+						["groups"] = {
+							i(116767), -- Sapphire Riverbeast Mount
+						},
+						["coords"] = {
+							{ 62.0, 33.2 },
+							{ 62.6, 46.0 },
+							{ 80.4, 56.0 },
+							{ 67.4, 59.8 },
+							{ 54.8, 81.4 },
+						},
+					}),
 					o(227868, { 	-- Sparkling Pool
 						["groups"] = {
-							dr(100, i(112623, { -- Pack of Fishing Supplies
+							i(112623, { -- Pack of Fishing Supplies
 								dr(1.2, i(34834)),	-- Recipe: Captain Rumsey's Lager
 								dr(1.2, i(33820)), 	-- Weather-Beaten Fishing Hat
 								dr(0.8, i(44983)),	-- Strand Crawler Pet
 								dr(0.7, i(45991)), 	-- Bone Fishing Pole
 								dr(0.7, i(45992)), 	-- Jeweled Fishing Pole
-							})),
+							}),
 						},
 						["questID"] = 34207,
-						["description"] = "Requires Fishing",
+						["description"] = "Requires Fishing. Spawns all around Shattrath",
 						["modelScale"] = 10,
 						["model"] = "World\\Dungeon\\WellofEternity\\WOE_Fountain_Pool.mdx",
 						["icon"] = "Interface\\Icons\\INV_Misc_Food_Legion_gooAmberBlue_pool",
-					}),					
+					}),
 					n(86549, { 		-- Steeltusk
-						["groups"] = {	
-							dr(100, i(117562)), -- Steeltusk's Steel Tusk
+						["groups"] = {
+							i(117562), -- Steeltusk's Steel Tusk
 						},
-						["questID"] = 36858,	
-					}), 
+						["questID"] = 36858,
+						["coord"] = { 68.0, 35.0 },
+					}),
 					n(77634, { 		-- Taladorantula
-						["groups"] = {	
-							dr(100, i(116126)),	-- Taladorantula Terrofang
+						["groups"] = {
+							i(116126),	-- Taladorantula Terrofang
 						},
-						["questID"] = 34171,	
-					}), 
+						["questID"] = 34171,
+						["coord"] = { 59.0, 87.4 },
+						["description"] = "Kill small spiders around the eggsacs until you see warnings. The third warning should spawn the mob.",
+					}),
 					n(79485, { 		-- Talonpriest Zorkra
-						["groups"] = {	
-							dr(100, i(116110)),	-- Zorkra's Hood
+						["groups"] = {
+							i(116110),	-- Zorkra's Hood
 						},
 						["questID"] = 34668,
-					}), 
+						["coord"] = { 53.8, 91.0 },
+					}),
 					o(230643, { 	-- Teroclaw Nest
 						["groups"] = {
 							i(112699),	-- Pet
 						},
 						["questID"] = 35162,
+						["description"] = "Can be found at the base of trees near the Tomb of Lights and Aruuna.",
 						["model"] = "World\\Expansion01\\Doodads\\Generic\\Arakkoa\\Nest\\AK_NestDebris01.mdx",
 						["icon"] = "Interface\\Icons\\INV_Egg_03",
-					}),						
+					}),
 					n(88436, { 		-- Vigilant Paarthos
-						["groups"] = {	
+						["groups"] = {
 							dr(62, i(119383)),	-- Shoulderplates of the Vigilant
 						},
 						["questID"] = 37350,
-						["isDaily"] = true,						
+						["coord"] = { 37.6, 41.0 },
+						["isDaily"] = true,
 					}),
 					n(77564, { 		-- Viperlash
 						["groups"] = {
 							o(227654, { 	-- Bonechewer Spear
-								["groups"] = {	
-									dr(100, i(112371)),	-- Warpstalker-Scale Grips
-								},						
-								["icon"] = "Interface\\Icons\\INV_Spear_05",	
+								["groups"] = {
+									i(112371),	-- Warpstalker-Scale Grips
+								},
+								["icon"] = "Interface\\Icons\\INV_Spear_05",
 							}),
 						},
 						["questID"] = 34148,
+						["coord"] = { 37.6, 74.8 },
 						["description"] = "The spear spawns from the corpse of Viperlash.",
-					}),					
+					}),
 					n(77776, { 		-- Wandering Vindicator
-						["groups"] = {	
+						["groups"] = {
 							o(227859, { 	-- Hope
-								["groups"] = {		
-									dr(100, i(112261)),	-- Forgotten Vindicator's Blade
+								["groups"] = {
+									i(112261),	-- Forgotten Vindicator's Blade
 								},
-								["icon"] = "Interface\\Icons\\INV_Sword_1H_Draenei_C_02",	
+								["icon"] = "Interface\\Icons\\INV_Sword_1H_Draenei_C_02",
 							}),
 						},
 						["questID"] = 34205,
+						["coord"] = { 69.6, 33.6 },
 						["description"] = "After defeating him he turns friendly and tells you to loot his sword.",
-					}), 
+					}),
 					n(82922, { 		-- Xothear, the Destroyer
-						["groups"] = {	
+						["groups"] = {
 							dr(39, i(119371)),	-- Mantle of the Destroyer
 						},
 						["questID"] = 37343,
-						["isDaily"] = true,							
-					}), 
+						["coord"] = { 37.6, 14.6 },
+						["isDaily"] = true,
+					}),
 					n(77529, { 		-- Yazheera the Incinerator
-						["groups"] = {	
-							dr(100, i(112263)),	-- Yazheera's Burning Bracers
+						["groups"] = {
+							i(112263),	-- Yazheera's Burning Bracers
 						},
-						["questID"] = 34135,	
-					}), 
+						["questID"] = 34135,
+						["coord"] = { 53.8, 25.8 },
+					}),
 --[[					
 				--	n(77561, { 		-- Dr. Gloom	}),				
 				--	n(80471, { 		-- Gennadian	}), 
@@ -1037,17 +1096,18 @@ _.Zones =
 				n(-2, { 	-- Vendors
 					n(84212, {	-- Kazbala
 						["groups"] = {
-							i(54436), -- Blue Clockwork Rocket Bot Pet
-							i(95621), -- Warbot Ignition Key Pet
-							i(54343), -- Blue Crashin' Thrashin' Racer Controller Toy
-							i(104324), -- Foot Ball Toy
-							i(137663), -- Small Foam Sword Toy
-							i(104323), -- The Pigskin Toy
-							i(54438), -- Tiny Blue Ragdoll Toy
-							i(54437), -- Tiny Green Ragdoll Toy
-							i(44606), -- Toy Train Set Toy
-							i(45057), -- Wind-Up Train Wreck Toy
+							i(54436),	-- Blue Clockwork Rocket Bot Pet
+							i(95621),	-- Warbot Ignition Key Pet
+							i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
+							i(104324),	-- Foot Ball Toy
+							i(137663),	-- Small Foam Sword Toy
+							i(104323),	-- The Pigskin Toy
+							i(54438),	-- Tiny Blue Ragdoll Toy
+							i(54437),	-- Tiny Green Ragdoll Toy
+							i(44606),	-- Toy Train Set Toy
+							i(45057),	-- Wind-Up Train Wreck Toy
 						},
+						["coord"] = { 45.2, 38.3 },
 						["description"] = "Vendor only available until you reach character level 100. Items are also available from vendors in Stormwind, Orgrimmar, and Dalaran.|r",
 					}),
 					n(84216, {	-- Talgaiir the Ironrender
@@ -1093,13 +1153,14 @@ _.Zones =
 							un(4, h(i(77593))),	-- Replica High Warlord's Tome of Destruction
 							un(4, h(i(77597))),	-- Replica High Warlord's Shield Wall
 						},
+						["coord"] = { 45.6, 38.6 },
 						["description"] = "Vendor only available until you reach character level 100. Items also available from Big Zokk Torquewrench in Area 52. Items require Legionnaire/Knight-Captain or higher to purchase. |r",
 					}),
 				}),
 			},
-			["lvl"] = 94,	
+			["lvl"] = 94,
 			["achievementID"] = 8940,
-			["description"] = "|cff66ccffTalador is the sanctuary of the draenei people. At its heart rests Shattrath City, the great metropolis, and the spiritual well of Auchindoun, where the souls of departed draenei reside. Bathed in a perpetual autumn hue, its beautiful olemba forests, gardens and settlements are at risk of decimation by the Iron Horde and the Burning Legion.|r",				
-		}),	
+			["description"] = "|cff66ccffTalador is the sanctuary of the draenei people. At its heart rests Shattrath City, the great metropolis, and the spiritual well of Auchindoun, where the souls of departed draenei reside. Bathed in a perpetual autumn hue, its beautiful olemba forests, gardens and settlements are at risk of decimation by the Iron Horde and the Burning Legion.|r",
+		}),
 	}),
 };
