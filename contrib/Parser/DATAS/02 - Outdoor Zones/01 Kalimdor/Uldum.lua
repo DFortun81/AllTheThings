@@ -763,66 +763,123 @@ _.Zones =
 					}),
 				}),
 				n(-16, {	-- Rares
-					n(50065, { 		-- Armagedillo
-						["groups"] = {
-							i(67243),	-- Armagedillo's Tail
+					{	-- Armagedillo
+						["npcID"] = 50065,	-- Armagedillo
+						["coords"] = {
+							{ 45.0, 42.5 },
 						},
-						["coord"] = { 45.0, 42.5 },
-					}), 
-					n(50064, { 		-- Cyrus the Black
-						["groups"] = {
-							i(67242),	-- Tol'Vir Hereditary Girdle
+						["g"] = {
+							{	-- Armagedillo's Tail
+								["itemID"] = 67243,	-- Armagedillo's Tail
+							},
 						},
+					},
+					{	-- Cyrus the Black
+						["npcID"] = 50064,	-- Cyrus the Black
 						["coords"] = {
 							{ 58.0, 82.6 },
 							{ 58.4, 61.6 },
 							{ 66.6, 68.2 },
 							{ 70.8, 74.2 },
 						},
-					}), 
+						["g"] = {
+							{	-- Tol'Vir Hereditary Girdle
+								["itemID"] = 67242,	-- Tol'Vir Hereditary Girdle
+							},
+						},
+					},
+					{	-- Mysterious Camel Figurine
+						["npcID"] = 50409,	-- Mysterious Camel Figurine
+						["description"] = "If you're lucky enough to find the right Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
+						["coords"] = {
+							{ 25.59, 65.89 },
+							{ 29.85, 20.45 },
+							{ 30.61, 60.50 },
+							{ 30.99, 66.37 },
+							{ 31.50, 69.26 },
+							{ 37.13, 64.08 },
+							{ 40.16, 38.41 },
+							{ 45.24, 16.04 },
+							{ 47.28, 76.69 },
+							{ 48.17, 46.40 },
+							{ 49.13, 75.91 },
+							{ 50.24, 73.67 },
+							{ 50.47, 31.54 },
+							{ 51.14, 79.79 },
+							{ 51.80, 49.34 },
+							{ 52.14, 51.21 },
+							{ 64.66, 30.27 },
+							{ 69.87, 58.13 },
+							{ 72.02, 43.88 },
+							{ 73.44, 73.61 },
+						},
+						["g"] = {
+							{	-- Reins of the Grey Riding Camel
+								["itemID"] = 63046,	-- Reins of the Grey Riding Camel
+								["crs"] = {
+									50245,	-- Dormus the Camel Hoarder
+								},
+							},
+						},
+					},
 	--				n(51403, { 		-- Madexx - Black -- tameable			}), 
 	--				n(51404, { 		-- Madexx - Blue -- tameable			}),
 	--				n(50154, { 		-- Madexx - Brown -- tameable			}), 
 	--				n(51402, { 		-- Madexx - Green -- tameable			}), 
 	--				n(51401, { 		-- Madexx - Red -- tameable			}), 
 				}),
-				n(-77, {	-- Special
-					n(50409, {	-- Mysterious Camel Figurine
-						["groups"] = {
-							n(50245, {	-- Dormus the Camel Hoarder
-								i(63046),	-- Reins of the Grey Riding Camel (MOUNT!)
-							}),
-						},
-						["description"] = "If you're lucky enough to find the right Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
-					}),
-				}),
 				n(-2,  {	-- Vendors
-					n(48617, {	-- Blacksmith Abasi <Ramkahen Quartermaster>
-						i(62448),	-- Sun King's Girdle
-						i(62449),	-- Sandguard Bracers
-						i(62450),	-- Desert Walker Sandals
-						i(62441),	-- Robes of Orsis
-						i(62445),	-- Sash of Prophecy
-						i(62446),	-- Quicksand Belt
-						i(62437),	-- Shroud of the Dead
-						i(62438),	-- Drystone Greaves
-						i(62439),	-- Belt of the Stargazer
-						i(65904),	-- Tabard of Ramkahen
-						i(63044),	-- Reins of the Brown Riding Camel Mount
-						i(63045),	-- Reins of the Tan Riding Camel Mount
-					}),
-				}),
---[[				n(-40, {	-- Legacy
-					["groups"] = {
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
-						n(-17, {	-- Quests (Legacy)
-						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
+					{	-- Blacksmith Abasi <Ramkahen Quartermaster>
+						["npcID"] = 48617,	-- Blacksmith Abasi <Ramkahen Quartermaster>
+						["g"] = {
+							{	-- Reins of the Brown Riding Camel Mount
+								["itemID"] = 63044,	-- Reins of the Brown Riding Camel Mount
+							},
+							{	-- Reins of the Tan Riding Camel Mount
+								["itemID"] = 63045,	-- Reins of the Tan Riding Camel Mount
+							},
+							{	-- Tabard of Ramkahen
+								["itemID"] = 65904,	-- Tabard of Ramkahen
+							},
+							{	-- Sun King's Girdle
+								["itemID"] = 62448,	-- Sun King's Girdle
+							},
+							{	-- Sandguard Bracers
+								["itemID"] = 62449,	-- Sandguard Bracers
+							},
+							{	-- Desert Walker Sandals
+								["itemID"] = 62450,	-- Desert Walker Sandals
+							},
+							{	-- Robes of Orsis
+								["itemID"] = 62441,	-- Robes of Orsis
+							},
+							{	-- Sash of Prophecy
+								["itemID"] = 62445,	-- Sash of Prophecy
+							},
+							{	-- Quicksand Belt
+								["itemID"] = 62446,	-- Quicksand Belt
+							},
+							{	-- Shroud of the Dead
+								["itemID"] = 62437,	-- Shroud of the Dead
+							},
+							{	-- Drystone Greaves
+								["itemID"] = 62438,	-- Drystone Greaves
+							},
+							{	-- Belt of the Stargazer
+								["itemID"] = 62439,	-- Belt of the Stargazer
+							},
+							{	-- Ammunae's Blessing
+								["itemID"] = 62436,	-- Ammunae's Blessing
+							},
+							{	-- Red Rock Band
+								["itemID"] = 62440,	-- Red Rock Band
+							},
+							{	-- Gift of Nadun
+								["itemID"] = 62447,	-- Gift of Nadun
+							}
+						},
 					},
-					["u"] = 2,
-				}),	--]]
+				}),
 			},
 			["achievementID"] = 4865,
 			["lvl"] = 83,
