@@ -795,6 +795,7 @@ _.Zones =
 						sz(1263, 19, {	--Westguard Keep
 							q(11153, {	--  Break the Blockade [A]
 								["qg"] = 23895,	-- Bombardier Petrov
+								["isDaily"] = true,
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(11406, {	--  Everything Must Be Ready [A]

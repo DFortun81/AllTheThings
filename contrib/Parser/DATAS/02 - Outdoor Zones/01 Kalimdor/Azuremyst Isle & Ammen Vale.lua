@@ -75,8 +75,8 @@ _.Zones =
 					}),
 					qa(9612, {	-- A Hearty Thanks!
 						["qg"] = 17587,	-- Draenei Youngling
-						["coord"] = { 58.0, 41.6 },
 						["races"] = { 11 },	-- Draenei
+						["coord"] = { 58.0, 41.6 },
 						["description"] = "1. Find a |cFFFFD700Draenei Youngling|r\n2. Get them to engage in combat with an aggressive mob\n3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.",
 					}),
 					qa(9506, {	-- A Small Start
