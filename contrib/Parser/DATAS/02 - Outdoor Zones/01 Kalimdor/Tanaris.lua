@@ -149,7 +149,9 @@ _.Zones =
 							recipe(64054),	-- Clamlette Magnifique
 						},
 						["qg"] = 40589,	-- Dirge Quikcleave
+						["description"] = "This quest is only available if you learned Artisan Cooking before 3.1.0",
 						["requireSkill"] = 185,	-- Cooking
+						["u"] = 40,	
 					}),
 					q(6610, {		-- Clamlette Surprise
 						["groups"] = {
