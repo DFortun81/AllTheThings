@@ -73,7 +73,7 @@ _.Zones =
 						["qg"] = 17312,	-- Magwin
 						["coord"] = { 13.6, 73.2 },
 					}),
-					qa(9612, {	-- A Hearty Thanks!
+					q(9612, {	-- A Hearty Thanks!
 						["qg"] = 17587,	-- Draenei Youngling
 						["races"] = { 11 },	-- Draenei
 						["coord"] = { 58.0, 41.6 },
