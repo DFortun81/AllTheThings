@@ -7092,6 +7092,7 @@ local function RowOnEnter(self)
 			GameTooltip:AddDoubleLine("Races", str);
 		end
 		if reference.isDaily then GameTooltip:AddLine("This can be completed daily."); end
+		if reference.isWeekly then GameTooltip:AddLine("This can be completed weekly."); end
 		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
 			if reference.g then
 				GameTooltipIcon:SetSize(96,96);
