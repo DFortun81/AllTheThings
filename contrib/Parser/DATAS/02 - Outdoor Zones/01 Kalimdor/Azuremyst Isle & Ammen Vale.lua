@@ -101,24 +101,25 @@ _.Zones =
 						["classes"] = { 11 },	-- Draenei
 						["isBreadcrumb"] = true,
 					}),
-					i(23910, {	-- Blood Elf Communications
-						qa(9616, {	-- Bandits!
-							["qg"] = 17591,	-- Blood Elf Bandit
-							["coords"] = {
-								{ 37.0, 20.8 },
-								{ 36.4, 32.4 },
-								{ 51.6, 18.4 },
-								{ 59.2, 18.2 },
-								{ 50.2, 29.0 },
-								{ 27.4, 52.0 },
-								{ 32.4, 62.8 },
-								{ 36.0, 60.8 },
-								{ 35.2, 64.4 },
-								{ 33.6, 70.6 },
-								{ 43.0, 63.2 },
-							},
-						}),
-					}),
+					{			-- Bandits!
+						["qg"] = 17591,	-- Blood Elf Bandit
+						["races"] = ALLIANCE_ONLY,
+						["coords"] = {
+							{ 37.0, 20.8 },
+							{ 36.4, 32.4 },
+							{ 51.6, 18.4 },
+							{ 59.2, 18.2 },
+							{ 50.2, 29.0 },
+							{ 27.4, 52.0 },
+							{ 32.4, 62.8 },
+							{ 36.0, 60.8 },
+							{ 35.2, 64.4 },
+							{ 33.6, 70.6 },
+							{ 43.0, 63.2 },
+						},
+						["itemID"] = 23910,	-- Blood Elf Communications
+						["questID"] = 9616,	-- Bandits!
+					},
 					qa(9560, {	-- Beasts of the Apocalypse!
 						["groups"] = {
 							i(24108),	-- Ravager Hide Leggings
@@ -180,17 +181,25 @@ _.Zones =
 						["coord"] = { 61.0, 54.2 },
 						["sourceQuests"] = { 9452 },	-- Red Snapper - Very Tasty!
 					}),
-					i(23850, {	-- Gurf's Dignity
-						qa(9564, {	-- Gurf's Dignity
-							["groups"] = {
-								i(24440),	-- Heavy Plate Leggings
-								i(24439),	-- Savage Leggings
-								i(24438),	-- Fur Covered Robe
-								i(131258),	-- Fierce Britches
-							},
-							["qg"] = 17475,	-- Murgurgula
-						}),
-					}),
+					{			-- Gurf's Dignity
+						["g"] = {
+							i(24440),	-- Heavy Plate Leggings
+							i(24439),	-- Savage Leggings
+							i(24438),	-- Fur Covered Robe
+							i(131258),	-- Fierce Britches
+						},
+						["qg"] = 17475,	-- Murgurgula
+						["coords"] = {	-- Pats up and down
+							{ 34.6, 14.0 },
+							{ 35.2, 21.8 },
+							{ 33.6, 26.0 },
+						},
+						["races"] = ALLIANCE_ONLY,
+						["itemID"] = 23850,	-- Gurf's Dignity
+						["questID"] = 9564,	-- Gurf's Dignity
+						["description"] = "It is not necessary to complete 'Murlocs...' but you must at least be ON that quest to loot the item that starts Gurf's Dignity.",
+						["sourceQuests"] = { 9562 },	-- Murlocs... Why Here?  Why Now?
+					},
 					qa(9530, {	-- I've Got a Plant
 						["qg"] = 17240,	-- Admiral Odesyus
 						["coord"] = { 47.0, 70.2 },
@@ -232,15 +241,23 @@ _.Zones =
 						["qg"] = 17101,	-- Diktynna
 						["coord"] = { 61.1, 54.2 }
 					}),
-					i(23759, {	-- Rune Covered Tablet
-						qa(9514, { -- Rune Covered Tablet
-							["qgs"] = {
-								17194,	-- Wrathscale Myrmidon
-								17193,	-- Wrathscale Naga
-								17195,	-- Wrathscale Siren
-							},
-						}),
-					}),
+					{			-- Rune Covered Tablet
+						["qgs"] = {
+							17194,	-- Wrathscale Myrmidon
+							17193,	-- Wrathscale Naga
+							17195,	-- Wrathscale Siren
+						},
+						["races"] = ALLIANCE_ONLY,
+						["coords"] = {	-- Drops from multiple mobs in an area
+							{ 25.6, 70.2 },
+							{ 28.4, 78.0 },
+							{ 31.8, 77.6 },
+							{ 36.6, 78.4 },
+							{ 39.8, 78.4 },
+						},
+						["itemID"] = 23759,	-- Rune Covered Tablet
+						["questID"] = 9514,	-- Rune Covered Tablet
+					},
 					qa(9565, {	-- Search Stillpine Hold
 						["qg"] = 17440,	-- High Chief Stillpine
 						["coord"] = { 46.6, 20.6 },
@@ -259,11 +276,18 @@ _.Zones =
 						["coord"] = { 49.4, 51.0 },
 						["sourceQuests"] = { 9544 },	-- The Prophecy of Akida
 					}),
-					i(23678, {	-- Faintly Glowing Crystal
-						qa(9455, {	-- Strange Findings
-							["qg"] = 17202,	-- Infected Nightstalker Run
-						}),
-					}),
+					{			-- Strange Findings
+						["qg"] = 17202,	-- Infected Nightstalker Runt
+						["races"] = ALLIANCE_ONLY,
+						["coords"] = {	-- Drops from mob that spawns in multiple areas
+							{ 45.6, 45.0 },
+							{ 26.8, 48.0 },
+							{ 25.8, 59.2 },
+							{ 35.6, 58.8 },
+						},
+						["itemID"] = 23678,	-- Faintly Glowing Crystal
+						["questID"] = 9455,	-- Strange Findings
+					},
 					qa(9582, {	-- Strength of One
 						["qg"] = 17480,	-- Ruada
 						["coord"] = { 49.8, 50.4 },
