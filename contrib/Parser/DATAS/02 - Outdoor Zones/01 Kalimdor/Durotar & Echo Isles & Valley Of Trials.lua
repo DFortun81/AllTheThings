@@ -80,174 +80,221 @@ _.Zones =
 					}),
 				}),
 				n(-17, {	-- Quests
---[[
-					qg(56013, q(31450)),	-- A New Fate (QG on The Wandering Isle)
-					qg(97296, qh(40976, {	-- Audience with the Warchief
-						["groups"] = {
-						},
-						["classes"]= {12},
-					})),
-					qg(41621, qh(25924)),	-- Call of Duty
-					qg(27216, qh(12191)),	-- Chug and Chuck!
-					qg(100873, qh(40983, {	-- Demons Among Them
-						["groups"] = {
-						},
-						["classes"]= {12},
-					})),
-					qg(100873, qh(40607)),	-- Demons Among Us
-					qg(100866, qh(40760)),	-- Emissary
-					qg(100453, qh(40522)),	-- Fate of the Horde
-					qg(54142, qh(29416)),	-- Fencing the Goods
-					qg(68023, qh(32319)),	-- Find Thrall! (QG in Kun-Lai Summit)
---]]
-					sz(728, 4, { -- Sen'jin Village
+					n(-91002, {	-- Sen'jin Village
 						q(25167, { -- Breaking the Chain
 							["qg"] = 3188, -- Master Gadrin
+							["coord"] = { 55.9, 74.8 },
 							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 25133, 25073 }, -- Report to Sen'jin Village, Sen'jin Village
+							["sourceQuests"] = {
+								25133,	-- Report to Sen'jin Village
+								25073,	-- Sen'jin Village
+							},
 						}),
 						q(25170, { -- Cleaning Up the Coastline
 							["qg"] = 10578, -- Bom'bay
+							["coord"] = { 55.6, 75.2 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25165, { -- Never Trust a Big Barb and a Smile
 							["qg"] = 10578, -- Bom'bay
+							["coord"] = { 55.7, 75.3 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25170 }, -- Cleaning up the Coastline
 						}),
 						q(25168, { -- Purge the Valley
 							["qg"] = 3188, -- Master Gadrin
+							["coord"] = { 55.9, 74.7 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25167 }, -- Breaking the Chain
 						}),
 						q(25169, { -- The War of Northwatch Aggression
 							["qg"] = 3140, -- Lar Prowltusk
+							["coord"] = { 55.4, 75.0 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25167 }, -- Breaking the Chain
 						}),
 						q(25171, { -- Riding On
 							["qg"] = 3188, -- Master Gadrin
+							["coord"] = { 55.9, 74.7 },
 							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 25165, 25168, 25169 }, -- Never Trust a Big Barb and a Smile, The War of Northwatch Aggression, Purge the Valley
+							["sourceQuests"] = {
+								25165,	-- Never Trust a Big Barb and a Smile
+								25168,	-- The War of Northwatch Aggression
+								25169,	-- Purge the Valley
+							},
 						}),
 					}),
-					sz(728, 7, { -- Razor Hill
+					n(-91001, {	-- Razor Hill
 						-- Main Story Quests --
-						q(25173, { -- From Bad to Worse
+						q(25173, {	-- From Bad to Worse
 							["qg"] = 3139, -- Gar'Thok
 							["lvl"] = 4,
+							["coord"] = { 51.9, 43.4 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25171 }, -- Riding On
 						}),
-						q(25176, { -- Exploiting the Situation
+						q(25176, {	-- Exploiting the Situation
 							["qg"] = 39423, -- Gail Nozzywig
+							["coord"] = { 53.0, 43.1 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25171 }, -- Riding On
 						}),
-						q(25177, { -- Storming the Beaches
+						q(25177, {	-- Storming the Beaches
 							["qg"] = 3139, -- Gar'Thok
+							["coord"] = { 52.0, 43.4 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25173 }, -- From Bad to Worse
 						}),
-						q(25178, { -- Shipwreck Searching
+						q(25178, {	-- Shipwreck Searching
 							["qg"] = 39423, -- Gail Nozzywig
+							["coord"] = { 53.0, 43.1 },
 							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 25173, 25176 }, -- From Bad to Worse, Exploiting the Situation
+							["sourceQuests"] = {
+								25173,	-- From Bad to Worse
+								25176,	-- Exploiting the Situation
+							},
 						}),
-						qh(25227, {	-- Thonk
+						q(25227, {	-- Thonk
 							["qg"] = 39423, -- Gail Nozzywig
+							["coord"] = { 53.0, 43.1 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25178 }, -- Shipwreck Searching
 							["isBreadcrumb"] = true,
 						}),
-						q(25187, { -- Lost in the Floods
+						q(25187, {	-- Lost in the Floods
 							["qg"] = 39323, -- Gail Nozzywig
+							["coord"] = { 49.5, 40.1 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25227 }, -- Thonk
 						}),
-						q(25188, { -- Watershed Patrol
+						q(25188, {	-- Watershed Patrol
 							["qg"] = 39323, -- Gail Nozzywig
+							["coord"] = { 49.5, 40.1 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25187 }, -- Lost in the Floods
 						}),
-						q(25232, { -- The Burning Blade
-							["qg"] = 3142, -- Orgnil Soulscar
-							["lvl"] = 8,
-							["races"] = HORDE_ONLY,
-						}),
-						q(25196, { -- The Dranosh'ar Blockade
-							["qg"] = 3142, -- Orgnil Soulscar
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 25232 }, -- The Burning Blade
-						}),
-						q(840, { -- Conscript of the Horde
-							["qg"] = 3336, -- Takrin Pathseeker
-							["lvl"] = 10,
-							["races"] = HORDE_ONLY,
-							["isBreadcrumb"] = true,
-						}),
-						-- Side Quests --
-						q(6365, { -- Meats to Orgrimmar
-							["qg"] = 3881, -- Grimtak
-							["lvl"] = 5,
-							["races"] = { 2, 8 }, -- Orcs/Trolls
-						}),
-						q(6384, { -- Ride to Orgrimmar
-							["qg"] = 41140, -- Burok
-							["lvl"] = 5,
-							["races"] = { 2, 8 }, -- Orcs/Trolls
-							["sourceQuests"] = { 6365 }, -- Meats to Orgrimmar
-						}),
-						--q(6385, { -- Doras the Wind Rider Master (Orgrimmar)
-						--q(6386, { -- Return to Razor Hill (Orgrimmar)
-					}),
-					sz(728, 3, { -- Southfury Watershed
-						q(25193, { -- Lost But Not Forgotten
+						q(25193, {	-- Lost But Not Forgotten
 							["qg"] = 3193, -- Misha Tor'kren
+							["coord"] = { 43.3, 30.6 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25187 }, -- Lost in the Floods
 						}),
-						q(25194, { -- Unbidden Visitors
+						q(25194, {	-- Unbidden Visitors
 							["qg"] = 39324, -- Zen'Taji
+							["coord"] = { 35.8, 41.3 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25187 }, -- Lost in the Floods
 						}),
-						q(25195, { -- That's the End of That Raptor
+						q(25195, {	-- That's the End of That Raptor
 							["qg"] = 39324, -- Zen'Taji
+							["coord"] = { 35.8, 41.3 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25194 }, -- Unbidden Visitors
 						}),
-					}),
-					sz(728, 8, { -- Razormane Grounds
-						q(25190, { -- Raggaran's Rage
+						q(25190, {	-- Raggaran's Rage
 							["qg"] = 39326, -- Raggaran
+							["coord"] = { 42.6, 49.8 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25187 }, -- Lost in the Floods
 						}),
-						q(25192, { -- Raggaran's Fury
+						q(25192, {	-- Raggaran's Fury
 							["qg"] = 39326, -- Raggaran
+							["coord"] = { 42.6, 49.8 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25190 }, -- Raggaran's Rage
 						}),
-					}),
-					n(-168, { -- Other Quests
-						q(25179, { -- Loss Reduction
-							["qg"] = 39270, -- Injured Razor Hill Grunt
+						q(25232, {	-- The Burning Blade
+							["qg"] = 3142, -- Orgnil Soulscar
+							["lvl"] = 8,
+							["coord"] = { 52.2, 43.1 },
 							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 25173 }, -- From Bad to Worse
-							["description"] = "Talk to an Injured Razor Hill Grunt on the beach.",
 						}),
-						q(834, { -- Winds in the Desert
-							["qg"] = 3293, -- Rezlak
-							["lvl"] = 7,
+						q(25196, {	-- The Dranosh'ar Blockade
+							["qg"] = 3142, -- Orgnil Soulscar
+							["coord"] = { 52.2, 43.0 },
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25232 }, -- The Burning Blade
 						}),
-						q(835, { -- Securing the Lines
-							["qg"] = 3293, -- Rezlak
-							["lvl"] = 7,
+						-- Side Quests --
+						q(840, {	-- Conscript of the Horde
+							["qg"] = 3336, -- Takrin Pathseeker
+							["lvl"] = 10,
+							["coord"] = { 50.8, 43.5 },
+							["races"] = HORDE_ONLY,
+							["isBreadcrumb"] = true,
+						}),
+						q(6365, {	-- Meats to Orgrimmar
+							["qg"] = 3881, -- Grimtak
+							["lvl"] = 5,
+							["coord"] = { 50.7, 42.8 },
+							["races"] = { 2, 8, 36 }, -- Orcs/Trolls/Mag'har
+						}),
+						q(6384, {	-- Ride to Orgrimmar
+							["qg"] = 41140, -- Burok
+							["lvl"] = 5,
+							["coord"] = { 53.0, 43.6 },
+							["races"] = { 2, 8, 36 }, -- Orcs/Trolls/Mag'har
+							["sourceQuests"] = { 6365 }, -- Meats to Orgrimmar
+						}),
+						q(26806, {	-- Reports to Orgrimmar
+							["qg"] = 3139, -- Gar'Thok
+							["coord"] = { 51.8, 43.4 },
+							["races"]= { 9 },	-- Goblin
+							["sourceQuests"] = { 26804 }, -- Flight to Razor Hill
+						}),
+						q(26807, {	-- Return to Eitrigg
+							["qg"] = 41140, -- Burok
+							["coord"] = { 53.0, 43.6 },
+							["races"]= { 9 },	-- Goblin
+							["sourceQuests"] = { 26806 }, -- Reports to Orgrimmar
+						}),
+					}),
+					n(-91003, {	-- Dranosh'ar Blockade
+						q(25260, { -- Fizzled
+							["groups"] = {
+								i(53369), -- Fizzle's Gloves
+								i(53366), -- Enforcer's Gloves
+								i(131413), -- Gor's Re-Inforced Gloves
+							},
+							["qg"] = 39379, -- Gor the Enforcer
+							["coord"] = { 44.9, 14.7 },
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25196 }, -- The Dranosh'ar Blockade
+						}),
+						q(25261, { -- Margoz
+							["qg"] = 39379, -- Gor the Enforcer
+							["coord"] = { 44.9, 14.7 },
+							["races"] = { 2, 8, 36 }, -- Orcs/Trolls/Mag'har
+							["sourceQuests"] = { 25260 }, -- Fizzled
+						}),
+						q(25262, { -- Skull Rock
+							["groups"] = {
+								i(53358), -- Blade Cultist Slippers
+								i(53387), -- Searing Bracers
+								i(53390), -- Skull Rock Belt
+								i(131414), -- Burning Armbands
+							},
+							["qg"] = 3208, -- Margoz
+							["coord"] = { 56.4, 20.0 },
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25261 }, -- Margoz
+						}),
+						q(25263, { -- Arnak Fireblade
+							["qg"] = 3208, -- Margoz
+							["coord"] = { 56.4, 19.8 },
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25262 }, -- Skull Rock
+						}),
+						q(25236, { -- Thunder Down Under
+							["qg"] = 39379, -- Gor the Enforcer
+							["coord"] = { 44.9, 14.7 },
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = { 25196 }, -- The Dranosh'ar Blockade
 						}),
 						q(25205, { -- The Wolf and The Kodo
 							["qg"] = 39380, -- Shin Stonepillar
 							["lvl"] = 8,
+							["coord"] = { 44.9, 14.7 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25206, { -- Ignoring the Warnings
@@ -258,77 +305,68 @@ _.Zones =
 							},
 							["qg"] = 39379, -- Gor the Enforcer
 							["lvl"] = 8,
+							["coord"] = { 44.9, 14.7 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 25205 }, -- The Wolf and The Kodo
 						}),
-						q(25260, { -- Fizzled
-							["groups"] = {
-								i(53369), -- Fizzle's Gloves
-								i(53366), -- Enforcer's Gloves
-								i(131413), -- Gor's Re-Inforced Gloves
-							},
-							["qg"] = 39379, -- Gor the Enforcer
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 25196 }, -- The Dranosh'ar Blockade
-						}),
-						q(25261, { -- Margoz
-							["qg"] = 39379, -- Gor the Enforcer
-							["races"] = { 2, 8 }, -- Orcs/Trolls
-							["sourceQuests"] = { 25260 }, -- Fizzled
-						}),
-						q(25236, { -- Thunder Down Under
-							["qg"] = 39379, -- Gor the Enforcer
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 25196 }, -- The Dranosh'ar Blockade
-						}),
 						q(25648, { -- Beyond Durotar
 							["qg"] = 39379, -- Gor the Enforcer
+							["coord"] = { 44.9, 14.7 },
 							["races"] = HORDE_ONLY,
 							["description"] = "Not available if \"Warchief's Command: Azshara!\" is complete.",
-							["sourceQuests"] = { 25236, 25205, 25206 }, -- Thunder Down Under, The Wolf and The Kodo, Ignoring the Warnings
+							["sourceQuests"] = {
+								25236,	-- Thunder Down Under
+								25205,	-- The Wolf and The Kodo
+								25206,	-- Ignoring the Warnings
+							},
 							["isBreadcrumb"] = true,
 						}),
-						q(25256, { -- Sent for Help
-							["qg"] = 39604, -- Vek'nag
-							["lvl"] = 8,
-							["races"] = HORDE_ONLY,
-						}),
-						q(25262, { -- Skull Rock
-							["groups"] = {
-								i(53358), -- Blade Cultist Slippers
-								i(53387), -- Searing Bracers
-								i(53390), -- Skull Rock Belt
-								i(131414), -- Burning Armbands
-							},
-							["qg"] = 3208, -- Margoz
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 25261 }, -- Margoz
-						}),
-						q(25257, { -- Ghislania
-							["qg"] = 39590, -- Spiketooth
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 25256 } -- Sent for Help
-						}),
-						q(25258, { -- Griswold Hanniston
-							["qg"] = 39590, -- Spiketooth
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 25256 } -- Sent for Help
-						}),
-						q(25259, { -- Gaur Icehorn
-							["qg"] = 39590, -- Spiketooth
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 25256 } -- Sent for Help
-						}),
-						q(25263, { -- Arnak Fireblade
-							["qg"] = 3208, -- Margoz
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 25262 }, -- Skull Rock
-						}),
 					}),
-					q(25266, {	-- Warchief's Emissary (QG in The Lost Isles, MAY NO LONGER BE IN GAME per wowhead comments)
-						["qg"] = 38935, -- Thrall
-						["sourceQuests"] = { 25265 }, -- Victory!
-						["races"] = {9},
+					-- Other
+					q(32671, {	-- Learn To Ride
+						["lvl"] = 20,
+						["races"] = { 8 },	-- Troll
+						["description"] = "This quest is available to Trolls upon reaching level 20.",
+					}),
+					q(25179, {	-- Loss Reduction
+						["qg"] = 39270, -- Injured Razor Hill Grunt
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 25173 }, -- From Bad to Worse
+						["description"] = "Talk to an Injured Razor Hill Grunt on the beach.",
+					}),
+					q(835, {	-- Securing the Lines
+						["qg"] = 3293, -- Rezlak
+						["lvl"] = 7,
+						["coord"] = { 46.3, 22.8 },
+					}),
+					q(834, {	-- Winds in the Desert
+						["qg"] = 3293, -- Rezlak
+						["lvl"] = 7,
+						["coord"] = { 46.3, 22.8 },
+					}),
+					q(25256, {	-- Sent for Help
+						["qg"] = 39604, -- Vek'nag
+						["lvl"] = 8,
+						["coord"] = { 56.4, 20.2 },
+						["races"] = HORDE_ONLY,
+					}),
+					q(25257, {	-- Ghislania
+						["qg"] = 39590, -- Spiketooth
+						["coord"] = { 58.7, 23.1 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 25256 } -- Sent for Help
+					}),
+					q(25258, {	-- Griswold Hanniston
+						["qg"] = 39590, -- Spiketooth
+						["coord"] = { 58.7, 23.1 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 25256 } -- Sent for Help
+					}),
+					q(25259, {	-- Gaur Icehorn
+						["qg"] = 39590, -- Spiketooth
+						["coord"] = { 58.7, 23.1 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 25256 } -- Sent for Help
 					}),
 					q(25267,  {	-- Message for Saurfang
 						["groups"] = {
@@ -342,33 +380,24 @@ _.Zones =
 								un(34, i(67156)),	-- Girdle of Servitude
 							}),
 						},
-						["qg"] = 86884, -- Darkspear Loyalist (additional QG 39609)
-						["races"] = {9},
+						["qgs"] = {
+							86884,	-- Darkspear Loyalist
+							39609,	-- Kor'kron Loyalist
+						},
+						["coord"] = { 57.6, 9.6 },
+						["races"] = { 9 },	-- Goblin
 						["sourceQuests"] = { 25266 } -- Warchief's Emissary
-					}),
-					q(26804, {	-- Flight to Razor Hill
-						["qg"] = 3310, -- Doras
-						["sourceQuests"] = { 26803 }, -- Missing Reports
-						["races"]= {9},
-					}),
-					q(26806, {	-- Reports to Orgrimmar
-						["qg"] = 3139, -- Gar'Thok
-						["sourceQuests"] = { 26804 }, -- Flight to Razor Hill
-						["races"] = {9},
-					}),
-					q(26807, {	-- Return to Eitrigg
-						["qg"] = 41140, -- Burok
-						["sourceQuests"] = { 26806 }, -- Reports to Orgrimmar
-						["races"] = {9},
 					}),
 					qh(29690, {	-- Into the Mists
 						["qg"] = 55054, -- General Nazrim
 						["lvl"] = 80,
+						["coord"] = { 61.2, 44.6 },
 						["sourceQuests"] = { 31853 }, -- All Aboard!
 					}),
 					q(31012, {	-- Joining the Horde
 						["qg"] = 60570, -- Ji Firepaw
-						["races"] = { 24 },
+						["coord"] = { 45.6, 12.6 },
+						["races"] = { 24 },	-- Pandaren (Neutral)
 					}),
 					qh(40518, {	-- The Battle for Broken Shore
 						["groups"] = {
@@ -410,23 +439,17 @@ _.Zones =
 						["sourceQuests"] = { 43926 } -- The Legion Returns
 					}),
 --[[
-					desc(qh(32671), "This quest is available to Trolls upon reaching level 20.", {	-- Learn To Ride
-						["groups"] = {
-						},
-						["races"] = {8},
-					}),
-					qg(96686, qh(39698)),	-- Making the Rounds
-					qg(93437, q(42449, {	-- Return of the Four Horsemen (QG listed in Broken Shore, may be in DK order hall)
-						["groups"] = {
-						},
-						["classes"] = {6},
+					qg(41621, qh(25924)),	-- Call of Duty
+					qg(100873, qh(40983, {	-- Demons Among Them
+						["classes"]= {12},
 					})),
---					qh( 39864),	-- Stormheim (not sure, but I THINK this quest was replaced with the next one)
-					qg(107460, qh(44701)),	-- Stormheim (QG in Stormheim)
+					qg(100873, qh(40607)),	-- Demons Among Us
+					qg(100866, qh(40760)),	-- Emissary
+					qg(100453, qh(40522)),	-- Fate of the Horde
+					qg(96686, qh(39698)),	-- Making the Rounds
 --					qh(44543),	-- The Battle for Broken Shore (looks like this is an auto-popup quest to take a wind rider from the ship to the shore, no QG)
 					desc(qh(47835), "This quest will be automatically offered upon completion of the Assault on Broken Shore scenario and returning to Dalaran.  You may also choose the option to skip the scenario when speaking to Khadgar."),	-- The Hand of Fate (QG in Broken Isles Dalaran)
 					qg(96683, qh(38307)),	-- The Warchief Beckons (QG also in Dalaran)
---					q(40658),	-- Tracking Quest - W1 - See Demon Attack (legacy/removed/never in game?)
 					qg(122065, qh(47867)),	-- Two If By Sea
 --]]
 				}),
@@ -1128,11 +1151,18 @@ _.Zones =
 						}),
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",
+					["maps"] = { 2 },	-- Burning Blade Coven
 					["description"] = "|cff66ccffThe Valley of Trials in southern Durotar is where all young orc adventurers begin their journey. Within the valley, they are safe from external threats while taking on challenges that enable them to get used to their new status as recruits of the Horde.|r",
 				}),
 			},
 			["achievementID"] = 728,
 			["lvl"] = 1,
+			["maps"] = {
+				3,	-- Tirigarde Keep
+				4,	-- Tirigarde Keep
+				5,	-- Skull Rock
+				6,	-- Dustwind Cave
+			},
 			["description"] = "|cff66ccffDurotar is the Horde starting zone for orcs and trolls. Thrall chose this land for the orcs to settle in, naming it Durotar after his father, Durotan. After the Shattering, more of the zone is flooded from the Southfury River, and the quests reflect Hellscream's new military rule.|r",
 		}),
 	}),

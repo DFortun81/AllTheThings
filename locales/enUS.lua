@@ -828,6 +828,11 @@ AllTheThings.Locales.enUS = {
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101503] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101504] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
+		
+		
+		[-91001] = "Interface\\Icons\\achievement_zone_durotar",
+		[-91002] = "Interface\\Icons\\achievement_zone_durotar",
+		[-91003] = "Interface\\Icons\\achievement_zone_durotar",
 	};
 	["NPC_ID_NAMES"] = {
 
@@ -1697,18 +1702,13 @@ AllTheThings.Locales.enUS = {
 		[-90003] = select(1,GetAchievementCriteriaInfo(12556,11)),	-- Waning Glacier
 		[-90004] = "Anyport",										-- Currently no localization calls
 		[-90005] = C_Map.GetAreaInfo(9305),							-- Castaway Point
-		 
-		 
-		 
-		 
 		
-		
-		
-
+		[-91001] = C_Map.GetAreaInfo(362),	-- Razor Hill
+		[-91002] = C_Map.GetAreaInfo(367),	-- Sen'jin Village
+		[-91003] = C_Map.GetAreaInfo(4982),	-- The Dranosh'ar Blockade
+		 
 -- Custom Subzone Names that we can't pull from the API because Blizz hates us
   -- Val'sharah
-		
-
 	},
 
 	["OBJECT_ID_ICONS"] = {

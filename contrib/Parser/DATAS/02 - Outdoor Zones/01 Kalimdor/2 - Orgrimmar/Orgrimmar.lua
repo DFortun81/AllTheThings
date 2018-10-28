@@ -473,7 +473,11 @@ _.Zones =
 						["races"] = { 6 },	-- Tauren
 						["classes"] = { 2 },	-- Paladin
 					})),
-					qg( 3216, q(25264)),	-- Ak'Zeloth
+					q(25264, {	-- Ak'Zeloth
+						["qg"] = 3216,	-- Arnak Fireblade
+						["coord"] = { 58.5, 53.6 },
+						["sourceQuests"] = { 25263 },	-- Arnak Fireblade
+					}),
 					q(31853, {	-- All Aboard!
 						["qg"] = 54870, -- General Nazgrim
 					}),
@@ -568,11 +572,13 @@ Legacy				q( 1436),	-- Alliance Relations
 --]]					
 					q(6385, { -- Doras the Wind Rider Master
 						["qg"] = 6929, -- Innkeeper Gryshka
+						["coord"] = { 53.5, 78.7 },
 						["races"] = { 2, 8 }, -- Orcs/Trolls
 						["sourceQuests"] = { 6384 }, -- Ride to Orgrimmar
 					}),
 					q(6386, { -- Return to Razor Hill
 						["qg"] = 3310, -- Doras
+						["coord"] = { 49.5, 59.2 },
 						["races"] = { 2, 8}, -- Orcs/Trolls
 						["sourceQuests"] = { 6385 }, -- Doras the Wind Rider Master
 					}),
@@ -601,12 +607,13 @@ Legacy				q( 1436),	-- Alliance Relations
 						["isDaily"] = true,
 						["requireSkill"] = 185,	-- Cooking
 					}),
+					q(26804, {	-- Flight to Razor Hill
+						["qg"] = 3310, -- Doras
+						["coord"] = { 49.4, 59.2 },
+						["races"]= { 9 },	-- Goblin
+						["sourceQuests"] = { 26803 }, -- Missing Reports
+					}),
 --[[
-					qg(3310, q(26804, {	-- Flight to Razor Hill					
-						["groups"] = {
-						},
-						["races"] = {9},
-					})),
 					i(63276, {	-- Forged Documents
 						qp773(q(27686, {	-- Forged Documents
 							["groups"] = {

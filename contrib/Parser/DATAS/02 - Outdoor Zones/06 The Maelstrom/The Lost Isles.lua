@@ -416,7 +416,7 @@ _.Zones =
 							["qg"] = 38387, -- Sassy Hardwrench
 							["sourceQuests"] = { 25251 }, -- Final Confrontation
 						}),
-						q(25266, { -- Warchief's Emissary
+						q(25266, { -- Warchief's Emissary (possibly removed?)
 							["qg"] = 38935, -- Thrall
 							["sourceQuests"] = { 25265 }, -- Victory!
 						}),
