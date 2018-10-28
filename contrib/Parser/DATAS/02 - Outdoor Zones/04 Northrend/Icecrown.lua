@@ -147,8 +147,6 @@ _.Zones =
 					qh( 13738),	-- A Champion Rises
 					qa( 13734),	-- A Champion Rises
 					q(13070),	-- A Cold Front Approaches
-					qa( 14074),	-- A Leg Up
-					qh( 14143),	-- A Leg Up
 					qa( 13389),	-- A Short Fuse
 					qh( 13263),	-- A Short Fuse
 					qa( 13689),	-- A Valiant Of Darnassus
@@ -189,10 +187,6 @@ _.Zones =
 					qa( 13294),	-- Against the Giants
 					qh( 13277),	-- Against the Giants
 					q(13174),	-- Amidst the Confusion
-					qh( 13814),	-- Among the Champions
-					qa( 13790),	-- Among the Champions
-					qa( 13793),	-- Among the Champions
-					qh( 13811),	-- Among the Champions
 					q(13374),	-- Amped for Revolt!
 					q(13169),	-- An Undead's Best Friend
 					qh( 13363),	-- Argent Aid
@@ -223,10 +217,6 @@ _.Zones =
 					q(13215),	-- Battle at Valhalas: Khit'rix the Dark Master
 					q(13218),	-- Battle at Valhalas: Thane Deathblow
 					q(13216),	-- Battle at Valhalas: The Return of Sigrid Iceborn
-					qh( 13863),	-- Battle Before The Citadel
-					qh( 13862),	-- Battle Before The Citadel
-					qa( 13864),	-- Battle Before The Citadel
-					qa( 13861),	-- Battle Before The Citadel
 					q(24442),	-- Battle Plans Of The Kvaldir
 					qa( 13335),	-- Before the Gate of Horror
 					qh( 13329),	-- Before the Gate of Horror
@@ -239,15 +229,12 @@ _.Zones =
 					qa( 13334),	-- Bloodspattered Banners
 					qh( 13262),	-- Blow it Up!
 					qa( 13291),	-- Borrowed Technology
-					qa( 14076),	-- Breakfast Of Champions
-					qh( 14092),	-- Breakfast Of Champions
 					q(13211),	-- By Fire Be Purged
 					qh( 13355),	-- Cannot Reproduce
 					qa( 13320),	-- Cannot Reproduce
 					qa( 13333),	-- Capture More Dispatches
 					qh( 13354),	-- Chain of Command
 					qa( 13319),	-- Chain of Command
-					q(13846),	-- Contributin' To The Cause
 					qa( 13298),	-- Coprous the Defiled
 					qh( 13278),	-- Coprous the Defiled
 					qh( 13349),	-- Cradle of the Frostbrood
@@ -263,7 +250,6 @@ _.Zones =
 					qa( 13318),	-- Drag and Drop
 					qh( 13353),	-- Drag and Drop
 					qa( 13323),	-- Drag and Drop
-					q(14101),	-- Drottinn Hrothgar
 					q(13794),	-- Eadric the Pure
 					qh( 13259),	-- Establishing Superiority
 					qa( 13386),	-- Exploiting an Opening
@@ -276,13 +262,10 @@ _.Zones =
 					qa( 13396),	-- Futility
 					qh( 13348),	-- Futility
 					q(13146),	-- Generosity Abounds
-					q(14108),	-- Get Kraken!
 					qa( 13314),	-- Get the Message
 					qh( 13293),	-- Get to Ymirheim!
 					qa( 13296),	-- Get to Ymirheim!
 					qh( 13238),	-- Good For Something?
-					qa( 14090),	-- Gormok Wants His Snobolds
-					qh( 14141),	-- Gormok Wants His Snobolds
 					q(31935),	-- Grand Master Payne
 					q(31928),	-- Grand Master Payne
 					q(13212),	-- He's Gone to Pieces
@@ -360,8 +343,6 @@ _.Zones =
 					q(13092),	-- Reading the Bones
 					q(13093),	-- Reading the Bones
 					q(13175),	-- Regaining Control
-					qh( 14136),	-- Rescue at Sea
-					qa( 14152),	-- Rescue at Sea
 					qa( 13321),	-- Retest Now
 					qa( 13322),	-- Retest Now
 					qh( 13357),	-- Retest Now
@@ -384,16 +365,10 @@ _.Zones =
 					qh( 13351),	-- Sneak Preview
 					qa( 13315),	-- Sneak Preview
 					q(13134),	-- Spill Their Blood
-					qa( 14080),	-- Stop The Aggressors
-					qh( 14140),	-- Stop The Aggressors
 					q(13160),	-- Stunning View
 					q(14448),	-- Takes One to Know One
 					qh( 13260),	-- Takes One to Know One
-					q(14447),	-- Takes One to Know One					
-					qh( 13810),	-- Taking Battle To The Enemy
-					qa( 13789),	-- Taking Battle To The Enemy
-					qa( 13791),	-- Taking Battle To The Enemy
-					qh( 13813),	-- Taking Battle To The Enemy
+					q(14447),	-- Takes One to Know One
 					qh( 13264),	-- That's Abominable!
 					qa( 13288),	-- That's Abominable!
 					qa( 13289),	-- That's Abominable!
@@ -431,7 +406,6 @@ _.Zones =
 					qh( 13775),	-- The Edge Of Winter
 					qa( 13616),	-- The Edge Of Winter
 					q(13164),	-- The Fate of Bloodbane
-					q(14107),	-- The Fate Of The Fallen
 					q(13235),	-- The Flesh Giant Champion
 					q(12839),	-- The Grand (Admiral's) Plan
 					qh( 13767),	-- The Grand Melee
@@ -451,8 +425,6 @@ _.Zones =
 					qa( 13337),	-- The Ironwall Rampart
 					qh( 13312),	-- The Ironwall Rampart
 					q(13086),	-- The Last Line Of Defense
-					qh( 14144),	-- The Light's Mercy
-					qa( 14077),	-- The Light's Mercy
 					q(13118),	-- The Purging Of Scourgeholme
 					q(13110),	-- The Restless Dead
 					q(13163),	-- The Rider of Blood
@@ -492,10 +464,6 @@ _.Zones =
 					q(13145),	-- The Vile Hold
 					q(13081),	-- The Will of the Naaru
 					q(13654),	-- There's Something About the Squire
-					qa( 13788),	-- Threat From Above
-					qh( 13812),	-- Threat From Above
-					qh( 13809),	-- Threat From Above
-					qa( 13682),	-- Threat From Above
 					q(13121),	-- Through the Eye
 					qh( 13360),	-- Time for Answers
 					qa( 13399),	-- Time for Answers
@@ -523,14 +491,10 @@ _.Zones =
 					qh( 13239),	-- Volatility
 					qh( 13261),	-- Volatility
 					q(13381),	-- Watts My Target
-					qa( 14112),	-- What Do You Feed a Yeti, Anyway?
-					qh( 14145),	-- What Do You Feed a Yeti, Anyway?
 					q(13117),	-- Where Are They Coming From?
 					qa( 13398),	-- Where Dragons Fell
 					qh( 13359),	-- Where Dragons Fell
 					q(12814),	-- You'll Need a Gryphon
-					qh( 14142),	-- You've Really Done It This Time, Kul
-					qa( 14096),	-- You've Really Done It This Time, Kul
 					qa( 13290),	-- Your Attention, Please	
 --]]					
 					qa(13702,  {  -- A Champion Rises

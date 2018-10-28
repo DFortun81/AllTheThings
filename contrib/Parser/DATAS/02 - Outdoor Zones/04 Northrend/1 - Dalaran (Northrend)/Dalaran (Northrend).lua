@@ -743,6 +743,7 @@ _.Zones =
 								i(43037),	-- Recipe: Tracker Snacks
 								i(43021),	-- Recipe: Very Burnt Worg
 								i(44954),	-- Recipe: Worg Tartare
+								i(43007),	-- Northern Spices
 							}),
 						}),
 						na(28705, {	-- Katherine Lee
@@ -1522,6 +1523,7 @@ _.Zones =
 								i(43037),	-- Recipe: Tracker Snacks
 								i(43021),	-- Recipe: Very Burnt Worg
 								i(44954),	-- Recipe: Worg Tartare
+								i(43007),	-- Northern Spices
 							}),
 						}),
 					},
@@ -1829,6 +1831,13 @@ _.Zones =
 						i(48120),	-- Obsidian Hatchling Pet
 						i(129826),	-- Nursery Spider Pet
 						i(44820),	-- Red Ribbon Pet Leash Toy
+					}),
+					n(28722, {	-- Bryan Landers <Engineering Supplies>
+						["coord"] = { 39.0, 26.0 },
+						["groups"] = {
+							i(136782),	-- Fireworks Instruction Manual
+							i(23817),	-- Schematic: Titanium Toolbox
+						},
 					}),
 					n(28699, {	-- Charles Worth <Tailoring Trainer>
 						["description"] = "Your Tailor has to have completed Loremaster of Northrend for Deathchill Cloak and Northrend Dungeonmaster for Wispcloak, and not just via account wide. If you have done them account wide, but not exclusively on your tailor, you will need to go back, and finish them up to get the recipes from Charles Worth.",
@@ -3081,6 +3090,7 @@ _.Zones =
 								i(41688),	-- Design: Veiled Twilight Opal
 								i(41563),	-- Design: Willful Huge Citrine
 								i(43319),	-- Design: Windfire Band
+								i(42225),	-- Dragon's Eye
 							},
 						}),
 					}),

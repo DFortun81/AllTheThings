@@ -6,6 +6,19 @@ local i = function(itemID, factionID, unlock)
 	return o;
 end
 
+-- Wrath of the Lich King
+-- Argent Tournament
+a(i(45714, 69));	-- Darnassus Commendation Badge
+a(i(45715, 930));	-- Exodar Commendation Badge
+a(i(45716, 54));	-- Gnomeregan Commendation Badge
+a(i(45717, 47));	-- Ironforge Commendation Badge
+h(i(45719, 76));	-- Orgrimmar Commendation Badge
+h(i(45720, 530));	-- Sen'jin Commendation Badge
+h(i(45721, 911));	-- Silvermoon Commendation Badge
+a(i(45718, 72));	-- Stormwind Commendation Badge
+h(i(45722, 81));	-- Thunder Bluff Commendation Badge
+h(i(45723, 68));	-- Undercity Commendation Badge
+
 -- Cataclysm
 -- Molten Front (Did not automatically apply race requirements... sigh)
 h(i(71088, 1133));	-- Bilgewater Writ of Commendation

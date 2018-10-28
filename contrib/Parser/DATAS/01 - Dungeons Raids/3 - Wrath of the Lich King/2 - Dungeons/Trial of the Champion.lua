@@ -9,7 +9,10 @@ _.Instances =
 			inst(284, { 	-- Trial of the Champion
 				["groups"] = {
 					n(-17, {	-- Quests
-						q(29851),	-- Champion of the Tournament
+						{
+							["questID"] = 29851,	-- Champion of the Tournament
+							["qg"] = 34996,	-- Highlord Tirion Fordring
+						},
 					}),
 					d(1, { -- Normal
 						["groups"] = {
@@ -100,6 +103,7 @@ _.Instances =
 								i(47214), -- Banner of Victory
 							})),
 							cr(35451, e(637, {	-- The Black Knight
+								currency(241),	-- Champion's Seal
 								i(49682), -- Black Knight's Rondel
 								i(47569), -- Spectral Kris
 								i(47568), -- True-Aim Long Rifle
@@ -132,6 +136,7 @@ _.Instances =
 						["groups"] = {
 							e(634, {	-- Grand Champions
 								["groups"] = {
+									currency(241),	-- Champion's Seal
 									i(47493), -- Edge of Ruin
 									i(47172), -- Helm of the Bested Gallant
 									i(47250), -- Pauldrons of the Deafening Gale
@@ -165,6 +170,7 @@ _.Instances =
 								},
 							}),
 							cr(35119, e(635, {	-- Eadric the Pure
+								currency(241),	-- Champion's Seal
 								i(47508), -- Aledar's Battlestar
 								i(47509), -- Mariel's Sorrow
 								i(47500), -- Peacekeeper Blade
@@ -191,6 +197,7 @@ _.Instances =
 								i(47213), -- Abyssal Rune
 							})),
 							cr(34928, e(636, {	-- Argent Confessor Paletress
+								currency(241),	-- Champion's Seal
 								i(47522), -- Marrowstrike
 								i(47500), -- Peacekeeper Blade
 								i(47217), -- Gaze of the Somber Keeper
@@ -217,6 +224,7 @@ _.Instances =
 								i(47214), -- Banner of Victory
 							})),
 							cr(35451, e(637, {	-- The Black Knight
+								currency(241),	-- Champion's Seal
 								i(49682), -- Black Knight's Rondel
 								i(47569), -- Spectral Kris
 								i(47568), -- True-Aim Long Rifle
