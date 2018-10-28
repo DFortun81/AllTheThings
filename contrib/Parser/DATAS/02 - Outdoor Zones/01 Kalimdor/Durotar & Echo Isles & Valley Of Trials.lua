@@ -43,14 +43,8 @@ _.Zones =
 								["races"] = {5}	-- Undeads
 							}),
 						},
-						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
-					}),
-					q(31813, { -- Dagra the Fierce
-						["groups"] = {
-							i(89125), -- Sack of Pet Supplies
-						},
-						["qg"] = 66126, -- Zunta
 						["races"] = HORDE_ONLY,
+						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer."
 					}),
 					q(31571, { -- Learning the Ropes
 						["qg"] = 63061, -- Narzak
@@ -59,6 +53,7 @@ _.Zones =
 					}),
 					q(31572, { -- On The Mend
 						["qg"] = 63061, -- Narzak
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 31571 }, -- Learning the Ropes
 					}),
 					q(31830, {	-- Level Up!
@@ -70,6 +65,13 @@ _.Zones =
 						["qg"] = 63061, -- Narzak
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 31830 }, -- Level Up!
+					}),
+					q(31813, { -- Dagra the Fierce
+						["groups"] = {
+							i(89125), -- Sack of Pet Supplies
+						},
+						["qg"] = 66126, -- Zunta
+						["races"] = HORDE_ONLY,
 					}),
 					q(31818, { -- Zunta
 						["qg"] = 66126, -- Zunta
@@ -504,42 +506,43 @@ _.Zones =
 					}),
 				}),
 				n(-2, {	-- Vendors
-					["groups"] = bubbleDown({["races"] = HORDE_ONLY}, { -- Horde-only Vendors
+					["groups"] = {
 						n(3881, { -- Grimtak
 							["groups"] = {
-								i(5483), -- Recipe: Scorpid Surprise
+								i(5483),	-- Recipe: Scorpid Surprise
 							},
 							["coord"] = { 50.8, 42.8 },
 						}),
 						n(113615, {	-- Ravika <Darkspear Quartermaster>
 							["groups"] = {
-								i(97901), -- Griftah's Authentic Troll Shoes
-								i(97919), -- Whole-Body Shinka' Toy
-								i(97942), -- Sen'jin Spirit Drum Toy
-								i(98552), -- Xan'tish's Flute Toy
+								i(97901),	-- Griftah's Authentic Troll Shoes
+								i(97919),	-- Whole-Body Shinka' Toy
+								i(97942),	-- Sen'jin Spirit Drum Toy
+								i(98552),	-- Xan'tish's Flute Toy
 							},
 							["coord"] = { 55.4, 11.2 },
 							["description"] = "Vendor is only available at this location if you are on the quest 'The Legion Returns'. This vendor is also available on the Echo Isles.",
 						}),
 						n(5942, { -- Zansoa <Fishing Supplies>
 							["groups"] = {
-							i(6368), -- Recipe: Rainbow Fin Albacore
-							i(6326), -- Recipe: Slitherskin Mackerel
+								i(6368),	-- Recipe: Rainbow Fin Albacore
+								i(6326),	-- Recipe: Slitherskin Mackerel
 							},
 							["coord"] = { 57.4, 77.0 },
 						}),
 						n(7952, { -- Zjolnir <Raptor Handler>
 							["groups"] = {
-								i(18788), -- Swift Blue Raptor
-								i(18789), -- Swift Olive Raptor
-								i(18790), -- Swift Orange Raptor
-								i(8588), -- Whistle of the Emerald Raptor
-								i(8591), -- Whistle of the Turquoise Raptor
-								i(8592), -- Whistle of the Violet Raptor
+								i(18788),	-- Swift Blue Raptor
+								i(18789),	-- Swift Olive Raptor
+								i(18790),	-- Swift Orange Raptor
+								i(8588),	-- Whistle of the Emerald Raptor
+								i(8591),	-- Whistle of the Turquoise Raptor
+								i(8592),	-- Whistle of the Violet Raptor
 							},
 							["coord"] = { 55.2, 75.6 },
 						}),
-					}),
+					},
+					["races"] = HORDE_ONLY,
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
@@ -550,12 +553,14 @@ _.Zones =
 									["u"] = 40, -- Legacy Quest/Quest Item
 								}),
 							}),
-							un(40, qh(1843, {	-- Brutal Gauntlets
+							q(1843, {	-- Brutal Gauntlets
 								["groups"] = {
 									un(2, i(7129)),	-- Brutal Gauntlets
 								},
+								["races"] = HORDE_ONLY,
 								["classes"] = { 1 },	-- Warrior
-							})),
+								["u"] = 40, -- Legacy Quest/Quest Item
+							}),
 							q(5648, { -- Garments of Spirituality
 								["groups"] = {
 									un(2, i(16606)), -- Juju Hex Robes
@@ -584,10 +589,6 @@ _.Zones =
 								["u"] = 40, -- Legacy Quest/Quest Item
 							}),
 						}),
-						--[[n(-16, { -- Rares (Legacy)
-						}),
-						n(0, { -- Zone Drop (Legacy)
-						}),]]--
 					},
 				}),
 				m(463, {	-- Echo Isles
