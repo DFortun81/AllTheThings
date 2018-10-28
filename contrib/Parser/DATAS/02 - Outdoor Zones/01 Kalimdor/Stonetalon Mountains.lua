@@ -876,6 +876,10 @@ _.Zones =
 					nh(4083, {		-- Jeeda <Apprentice Witch Doctor>
 						i(6055),	-- Recipe: Fire Protection Potion
 					}),
+					nh(12043, {	-- Kulwia <Trade Supplies>
+						i(11101),	-- Formula: Enchant Bracer - Lesser Strength
+						i(11039),	-- Formula: Enchant Cloak - Minor Agility
+					}),
 					h(n(42028, {	-- Krom'gar Quartermaster <Quartermaster>
 						i(57501),	-- Krom'gar Champion's Linen Shoulderpads
 						i(57502),	-- Krom'gar Champion's Hide Shoulderguard
