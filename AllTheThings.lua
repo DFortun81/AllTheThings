@@ -6289,6 +6289,7 @@ local function CreateMiniListForGroup(group)
 		
 		-- Show Quest Prereqs
 		if mainQuest.sourceQuests then
+			local breakafter = 0;
 			local sourceQuests, sourceQuest, subSourceQuests, prereqs = mainQuest.sourceQuests;
 			while sourceQuests and #sourceQuests > 0 do
 				subSourceQuests = {}; prereqs = {};
@@ -6368,6 +6369,11 @@ local function CreateMiniListForGroup(group)
 						prereq["g"] = g;
 					end
 					g = prereqs;
+					breakafter = breakafter + 1;
+					if breakafter >= 100 then
+						app.print("Likely just broke out of an infinite source quest loop. Please report this to the ATT Discord!");
+						break;
+					end
 				end
 			end
 		end
