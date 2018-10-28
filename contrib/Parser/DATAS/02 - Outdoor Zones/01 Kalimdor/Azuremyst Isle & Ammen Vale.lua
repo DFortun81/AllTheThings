@@ -89,7 +89,7 @@ _.Zones =
 						["coord"] = { 16.6, 94.4 },
 						["sourceQuests"] = { 10428 },	-- The Missing Fisherman
 					}),
-					qa(9473, {	-- An Alternative Alternative
+					q(9473, {	-- An Alternative Alternative
 						["qg"] = 17215,	-- Daedal
 						["coord"] = { 48.4, 51.4 },
 						["races"] = { 11 },	-- Draenei
@@ -98,7 +98,7 @@ _.Zones =
 					qa(27273, {	-- An Invitation from Moonglade
 						["qg"] = 16721,	-- Shalannius
 						["coord"] = { 24.4, 54.4 },
-						["classes"] = { 11 },	-- Draenei
+						["classes"] = { 11 },	-- Druid
 						["isBreadcrumb"] = true,
 					}),
 					{			-- Bandits!
@@ -130,7 +130,7 @@ _.Zones =
 						["qg"] = 17442,	-- Moordo
 						["coord"] = { 44.8, 23.8 },
 					}),
-					qa(9603, {	-- Beds, Bandages, and Beyond
+					q(9603, {	-- Beds, Bandages, and Beyond
 						["qg"] = 16553,	-- Caregiver Chellan
 						["coord"] = { 48.3, 49.1 },
 						["races"] = { 11 },	-- Draenei
@@ -209,7 +209,7 @@ _.Zones =
 						["qg"] = 17232,	-- Cryptographer Aurren
 						["coord"] = { 49.4, 51.0 },
 					}),
-					qa(9463, {	-- Medicinal Purpose
+					q(9463, {	-- Medicinal Purpose
 						["qg"] = 17214,	-- Anchorite Fateema
 						["coord"] = { 48.4, 51.8 },
 						["races"] = { 11 },	-- Draenei
@@ -223,7 +223,7 @@ _.Zones =
 						["coord"] = { 47.1, 50.6 },
 						["sourceQuests"] = { 9455 },	-- Strange Findings
 					}),
-					qa(9604, {	-- On the Wings of a Hippogryph
+					q(9604, {	-- On the Wings of a Hippogryph
 						["qg"] = 43991,	-- Zaldaan
 						["coord"] = { 49.7, 49.1 },
 						["races"] = { 11 },	-- Draenei
@@ -338,7 +338,7 @@ _.Zones =
 						["coord"] = { 28.2, 62.4 },
 						["sourceQuests"] = { 9542 },	-- Totem of Vark
 					}),
-					qa(9505, {	-- The Prophecy of Velen -- Unavailable if "A Small Start" has been accepted or completed
+					q(9505, {	-- The Prophecy of Velen -- Unavailable if "A Small Start" has been accepted or completed
 						["qg"] = 17215,	-- Daedal
 						["coord"] = { 48.4, 51.4 },
 						["races"] = { 11 },	-- Draenei
@@ -397,7 +397,7 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							un(40, qa(9586, {	-- Help Tavara
+							un(40, q(9586, {	-- Help Tavara
 								["groups"] = {
 									un(2, i(23931)),	-- Azure Watch Robes
 								},
@@ -415,7 +415,7 @@ _.Zones =
 						}),
 						n(-17, {	-- Quests 	
 							n(-64, { 	-- Main Questline
-								qa(9279, {	-- You Survived! -- breadcrumb for 9280
+								q(9279, {	-- You Survived! -- breadcrumb for 9280
 									["qg"] = 16475,	-- Megelon
 									["coord"] = { 61.2, 29.5 },
 									["races"] = { 11 },	-- Draenei
@@ -446,7 +446,7 @@ _.Zones =
 										9280,	-- Replenishing the Healing Crystals (Draenei)
 									},
 								}),
-								qa(9283, {	-- Rescue the Survivors!
+								q(9283, {	-- Rescue the Survivors!
 									["qg"] = 16502,	-- Zalduun
 									["coord"] = { 52.1, 42.4 },
 									["races"] = { 11 },	-- Draenei
