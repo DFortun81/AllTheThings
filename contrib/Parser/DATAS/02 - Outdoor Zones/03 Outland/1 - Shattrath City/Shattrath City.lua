@@ -343,9 +343,9 @@ _.Zones =
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10102 },	-- A Secret Revealed (*UNTESTED*)
 					})),
-					qdg(q( 10180, {	-- Can't Stay Away
+					un(40, qdg(q( 10180, {	-- Can't Stay Away
 						["qg"] = 19045,	-- Oloraak
-					})),
+					}))), -- Quest seems removed. Gold 28.10.2018
 					qh(11046, {	-- Chief Apothecary Hildagard
 						["qg"] = 19678,	-- Fantei
 						["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
@@ -536,6 +536,7 @@ _.Zones =
 					})),
 					qdg(q(29642, {	-- Trouble at Auchindoun
 						["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
+						["isBreadcrumb"] = true,
 						-- ["sourceQuests"] = {  },	-- UNKNOWN IF HAS SOURCE
 					})),
 					qdg(q(11369, {	-- Wanted: A Black Stalker Egg

@@ -269,6 +269,7 @@ _.Zones =
 							}),
 							q(9808, {	-- Glowcap Mushrooms
 								["qg"] = 17924,	-- Msshi'fn
+								["repeatable"] = true,  -- Only available till Friendly
 								["description"] = "Available from Neutral to Friendly with Sporeggar.",
 								["sourceQuests"] = { 9919 },	-- Sporeggar
 							}),
@@ -564,14 +565,17 @@ _.Zones =
 						["groups"] = {
 							q(50131, {	-- An Outside Perspective
 								["qg"] = 17923,	-- Fahssn
+								["isBreadcrumb"] = true,  -- Not possible if you reached friendly or higher
 								["sourceQuests"] = { 9743, 9739 },	-- Natural Enemies & The Sporelings' Plight
 							}),
 							q(50130, {	-- A Friendly Gesture
 								["qg"] = 17924,	-- Msshi'fn
+								["isBreadcrumb"] = true, -- Not possible if you did not complete An Outside Perspective
 								["sourceQuests"] = { 50131 },	-- An Outside Perspective
 							}),
-							q(9809, {	-- More Glowcaps (removed?)
+							q(9809, {	-- More Glowcaps -- Not possible if you reached friendly or higher or its removed
 								["qg"] = 17924,	-- Mshii'fn
+								["isBreadcrumb"] = true,
 								["sourceQuests"] = { 9808 },	-- Glowcap Mushrooms
 							}),
 							qr(q(9742, {	-- More Spore Sacs
