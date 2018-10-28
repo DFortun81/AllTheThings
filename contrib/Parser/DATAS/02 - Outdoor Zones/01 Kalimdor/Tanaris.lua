@@ -487,7 +487,7 @@ _.Zones =
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8754 },	-- The Path of the Conquerer
 					}),
-					q(8753, {	-- The Path of the Conqueror
+					q(8753, {	-- The Path of the Conqueror [Friendly]
 						["groups"] = {
 							i(21202),	-- Signet Ring of the Bronze Dragonflight
 						},
@@ -498,17 +498,7 @@ _.Zones =
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8752 },	-- The Path of the Conquerer
 					}),
-					q(8752, {	-- The Path of the Conqueror
-						["groups"] = {
-							i(21201),	-- Signet Ring of the Bronze Dragonflight
-						},
-						--["isBreadcrumb"] = true, -- Neutral Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
-						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 8753 },	-- The Path of the Conquerer
-					}),
+					q(8752),	-- The Path of the Conqueror [Neutral]
 					q(8760, {	-- The Path of the Invoker
 						["groups"] = {
 							i(21209),	-- Signet Ring of the Bronze Dragonflight
