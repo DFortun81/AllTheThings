@@ -438,6 +438,7 @@ _.Zones =
 						["groups"] = {
 							i(21210),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Exalted Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8760 },	-- The Path of the Invoker
 					}),
@@ -466,6 +467,7 @@ _.Zones =
 						["groups"] = {
 							i(21203),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Honored Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8753 },	-- The Path of the Conquerer
 					}),
@@ -473,6 +475,7 @@ _.Zones =
 						["groups"] = {
 							i(21204),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Revered Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8754 },	-- The Path of the Conquerer
 					}),
@@ -480,6 +483,7 @@ _.Zones =
 						["groups"] = {
 							i(21202),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Friendly Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8752 },	-- The Path of the Conquerer
 					}),
@@ -487,6 +491,7 @@ _.Zones =
 						["groups"] = {
 							i(21201),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Neutral Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8753 },	-- The Path of the Conquerer
 					}),
@@ -494,6 +499,7 @@ _.Zones =
 						["groups"] = {
 							i(21209),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Revered Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8759 },	-- The Path of the Invoker
 					}),
@@ -501,6 +507,7 @@ _.Zones =
 						["groups"] = {
 							i(21208),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Honored Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8758 },	-- The Path of the Invoker
 					}),
@@ -508,6 +515,7 @@ _.Zones =
 						["groups"] = {
 							i(21207),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Friendly Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8757 },	-- The Path of the Invoker
 					}),
@@ -515,18 +523,21 @@ _.Zones =
 						["groups"] = {
 							i(21206),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Neutral Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 					}),
 					q(8747, {	-- The Path of the Protector
 						["groups"] = {
 							i(21196),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Neutral Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 					}),
 					q(8748, {	-- The Path of the Protector
 						["groups"] = {
 							i(21197),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Friendly Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8747 },	-- The Path of the Protector
 					}),
@@ -534,6 +545,7 @@ _.Zones =
 						["groups"] = {
 							i(21198),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Honored Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8748 },	-- The Path of the Protector
 					}),
@@ -541,6 +553,7 @@ _.Zones =
 						["groups"] = {
 							i(21199),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Revered Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8749 },	-- The Path of the Protector
 					}),
@@ -548,11 +561,13 @@ _.Zones =
 						["groups"] = {
 							i(21200),	-- Signet Ring of the Bronze Dragonflight
 						},
+						["isBreadcrumb"] = true, -- Exalted Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 8750 },	-- The Path of the Protector
 					}),
 					q(8756, {	-- The Qiraji Conqueror
 						["qg"] = 15192,	-- Anachronos
+						["isBreadcrumb"] = true, -- Exalted Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["sourceQuests"] = { 8755 },	-- The Path of the Conqueror
 					}),
 					qa(25566, {	-- The Secrets of Uldum
