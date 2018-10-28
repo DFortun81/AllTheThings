@@ -59,6 +59,9 @@ _.WorldDrops =
 					i(76160),	-- Drapes of the Dragonshrine
 				}),
 				n(-323, { -- Chest
+					{	-- Chestguard of Futility	Added in Legion!!
+						["itemID"] = 157616,	-- Chestguard of Futility
+					},
 					i(59468),	-- Shadowforge's Lightbound Smock
 					i(66919),	-- Robes of Whispering Sands
 					i(66992),	-- Harbinger's Breastplate
