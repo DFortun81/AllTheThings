@@ -140,49 +140,6 @@ _.Zones =
 							25541,	-- Filling Our Pockets
 						},
 					}),	
-					qr(q(11105, {	-- Champion No More
-						["groups"] = {
-							i(29305),	-- Band of the Eternal Sage
-							i(29297),	-- Band of the Eternal Defender
-							i(29309),	-- Band of the Eternal Restorer
-						},
-						["qg"] = 19935,	-- Soridormi
-					})),
-					q(10474, {	-- Champion's Covenant
-						["groups"] = {
-							i(29301),	-- Band of the Eternal Champion
-						},
-						["qgs"] = {
-							19935,	-- Soridormi
-							19936,	-- Arazmodu
-						},
-						["sourceQuests"] = { 10470 },	-- Champion's Oath
-					}),
-					q(10470, {	-- Champion's Oath
-						["groups"] = {
-							i(29300),	-- Band of Eternity
-						},
-						["qgs"] = {
-							19935,	-- Soridormi
-							19936,	-- Arazmodu
-						},
-						["sourceQuests"] = { 10466 },	-- Champion's Vow
-					}),
-					q(10462, {	-- Champion's Pledge
-						["groups"] = {
-							i(29298),	-- Band of Eternity
-						},
-						["qg"] = 19936,	-- Arazmodu
-					}),
-					q(10466, {	-- Champion's Vow (add'l QG 19936)
-						["groups"] = {
-							i(29299),	-- Band of Eternity
-						},
-						["qgs"] = {
-							19935,	-- Soridormi
-							19936,	-- Arazmodu
-						},
-					}),
 					q(24933, {	-- Chicken of the Desert
 						["qg"] = 38706,	-- Zeke Bootscuff
 						["sourceQuests"] = { 24932 },	-- Cutting Losses
@@ -227,49 +184,6 @@ _.Zones =
 						["qg"] = 38703,	-- Megs Dreadshredder
 					}),
 					--q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)
-					qr(q(11106, {	-- Defender No More
-						["groups"] = {
-							i(29301),	-- Band of the Eternal Champion
-							i(29305),	-- Band of the Eternal Sage
-							i(29309),	-- Band of the Eternal Restorer
-						},
-						["qg"] = 19935,	-- Soridormi
-					})),
-					q(10475, {	-- Defender's Covenant						-- ["classes"] = { 1, 2, 6, 10, 11, 12 },
-						["groups"] = {
-							i(29297),	-- Band of the Eternal Defender
-						},
-						["qgs"] = {
-							19935,	-- Soridormi
-							19936,	-- Arazmodu
-						},
-						["sourceQuests"] = { 10471 },	-- Defender's Oath
-					}),
-					q(10471, {	-- Defender's Oath						-- ["classes"] = { 1, 2, 6, 10, 11, 12 },
-						["groups"] = {
-							i(29296),	-- Band of Eternity
-						},
-						["qgs"] = {
-							19935,	-- Soridormi
-							19936,	-- Arazmodu
-						},
-						["sourceQuests"] = { 10467 },	-- Defender's Vow
-					}),
-					q(10460, {	-- Defender's Pledge						-- ["classes"] = { 1, 2, 6, 10, 11, 12 },
-						["groups"] = {
-							i(29294),	-- Band of Eternity
-						},
-						["qg"] = 19936,	-- Arazmodu
-					}),
-					q(10467, {	-- Defender's Vow 						-- ["classes"] = { 1, 2, 6, 10, 11, 12 },
-						["groups"] = {
-							i(29295),	-- Band of Eternity
-						},
-						["qgs"] = {
-							19935,	-- Soridormi
-							19936,	-- Arazmodu
-						},
-					}),
 					qa(25060, {	-- Define "Crazy"
 						["qg"] = 39059,	-- Kelsey Steelspark
 					}),
@@ -410,43 +324,6 @@ _.Zones =
 						["qg"] = 7784,	-- Homing Robot OOX-17/TN
 						["sourceQuests"] = { 351 },	-- Find OOX-17/TN!
 					}),
-					qr(q(11104, {	-- Restorer No More
-						["groups"] = {
-							i(29301),	-- Band of the Eternal Champion
-							i(29297),	-- Band of the Eternal Defender
-							i(29305),	-- Band of the Eternal Sage
-						},
-						["qg"] = 19935,	-- Soridormi
-					})),
-					q(10473, {	-- Restorer's Covenant
-						["groups"] = {
-							i(29309),	-- Band of the Eternal Restorer
-						},
-						["qg"] = 19935,	-- Soridormi
-						["sourceQuests"] = { 10469 },	-- Restorer's Oath
-					}),
-					q(10469, {	-- Restorer's Oath
-						["groups"] = {
-							i(29308),	-- Band of Eternity
-						},
-						["qg"] = 19935,	-- Soridormi
-						["sourceQuests"] = { 10465 },	-- Restorer's Vow
-					}),
-					q(10461, {	-- Restorer's Pledge
-						["groups"] = {
-							i(29307),	-- Band of Eternity
-						},
-						["qg"] = 19936,	-- Arazmodu
-					}),
-					q(10465, {	-- Restorer's Vow
-						["groups"] = {
-							i(29306),	-- Band of Eternity
-						},
-						["qgs"] = {
-							19935,	-- Soridormi
-							19936,	-- Arazmodu
-						},
-					}),
 					qh(24905, {	-- Returning a Favor
 						["qg"] = 38706,	-- Zeke Bootscuff
 					}),
@@ -467,46 +344,6 @@ _.Zones =
 							i(56866),	-- Failed Liferocket Prototype
 						},
 						["qg"] = 38534,	-- Megs Dreadshredder
-					}),
-					qr(q(11103, {	-- Sage No More
-						["groups"] = {
-							i(29301),	-- Band of the Eternal Champion
-							i(29297),	-- Band of the Eternal Defender
-							i(29309),	-- Band of the Eternal Restorer
-						},
-						["qg"] = 19935,	-- Soridormi
-					})),
-					q(10472, {	-- Sage's Covenant
-						["groups"] = {
-							i(29305),	-- Band of the Eternal Sage
-						},
-						["qg"] = 19935,	-- Soridormi
-						["sourceQuests"] = { 10468 },	-- Sage's Oath
-					}),
-					q(10468, {	-- Sage's Oath
-						["groups"] = {
-							i(29304),	-- Band of Eternity
-						},
-						["qgs"] = {
-							19935,	-- Soridormi
-							19936,	-- Arazmodu
-						},
-						["sourceQuests"] = { 10464 },	-- Sage's Vow
-					}),
-					q(10463, {	-- Sage's Pledge
-						["groups"] = {
-							i(29302),	-- Band of Eternity
-						},
-						["qg"] = 19936,	-- Arazmodu
-					}),
-					q(10464, {	-- Sage's Vow
-						["groups"] = {
-							i(29303),	-- Band of Eternity
-						},
-						["qgs"] = {
-							19935,	-- Soridormi
-							19935,	-- Arazmodu
-						},
 					}),
 					qh(25001,  {  -- Sandscraper (awards "Advancing Our Interests" achievement criteria)
 						["groups"] = {
@@ -811,6 +648,191 @@ _.Zones =
 						},
 						["qg"] = 39059,	-- Kelsey Steelspark
 					}),
+					-- Scale of Sands / Repeatable Switch Ring Quests
+					qr(q(11105, {	-- Champion No More
+						["groups"] = {
+							i(29305),	-- Band of the Eternal Sage
+							i(29297),	-- Band of the Eternal Defender
+							i(29309),	-- Band of the Eternal Restorer
+						},
+						["qg"] = 19935,	-- Soridormi
+					})),
+					qr(q(11106, {	-- Defender No More
+						["groups"] = {
+							i(29301),	-- Band of the Eternal Champion
+							i(29305),	-- Band of the Eternal Sage
+							i(29309),	-- Band of the Eternal Restorer
+						},
+						["qg"] = 19935,	-- Soridormi
+					})),
+					qr(q(11104, {	-- Restorer No More
+						["groups"] = {
+							i(29301),	-- Band of the Eternal Champion
+							i(29297),	-- Band of the Eternal Defender
+							i(29305),	-- Band of the Eternal Sage
+						},
+						["qg"] = 19935,	-- Soridormi
+					})),
+					qr(q(11103, {	-- Sage No More
+						["groups"] = {
+							i(29301),	-- Band of the Eternal Champion
+							i(29297),	-- Band of the Eternal Defender
+							i(29309),	-- Band of the Eternal Restorer
+						},
+						["qg"] = 19935,	-- Soridormi
+					})),
+					-- Scale of Sands / Agility/Strength Rings
+					q(10474, {	-- Champion's Covenant
+						["groups"] = {
+							i(29301),	-- Band of the Eternal Champion
+						},
+						["isBreadcrumb"] = true, -- Exalted Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,  -- Arazmodu
+						},
+						["sourceQuests"] = { 10470 },	-- Champion's Oath
+					}),
+					q(10470, {	-- Champion's Oath
+						["groups"] = {
+							i(29300),	-- Band of Eternity
+						},
+						["isBreadcrumb"] = true, -- Revered Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,  -- Arazmodu
+						},
+						["sourceQuests"] = { 10466 },	-- Champion's Vow
+					}),
+					q(10462, {	-- Champion's Pledge
+						["groups"] = {
+							i(29298),	-- Band of Eternity
+						},
+						["isBreadcrumb"] = true, -- Prequest/Friendly Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
+						["qg"] = 19936,	-- Arazmodu
+					}),
+					q(10466, {	-- Champion's Vow (add'l QG 19936)
+						["groups"] = {
+							i(29299),	-- Band of Eternity
+						},
+						["isBreadcrumb"] = true, -- Honored Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,  -- Arazmodu
+						},
+					}),
+					-- Scale of Sands / Tank Ring
+					q(10475, {	-- Defender's Covenant	
+						["groups"] = {
+							i(29297),	-- Band of the Eternal Defender
+						},
+						["isBreadcrumb"] = true, -- Exalted Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Arazmodu
+						},
+						["sourceQuests"] = { 10471 },	-- Defender's Oath
+					}),
+					q(10471, {	-- Defender's Oath	
+						["groups"] = {
+							i(29296),	-- Band of Eternity
+						},
+						["isBreadcrumb"] = true, -- Revered Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Arazmodu
+						},
+						["sourceQuests"] = { 10467 },	-- Defender's Vow
+					}),
+					q(10460, {	-- Defender's Pledge
+						["groups"] = {
+							i(29294),	-- Band of Eternity
+						},
+						["isBreadcrumb"] = true, -- Prequest/Friendly Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
+						["qg"] = 19936,	-- Arazmodu
+					}),
+					q(10467, {	-- Defender's Vow 
+						["groups"] = {
+							i(29295),	-- Band of Eternity
+						},
+						["isBreadcrumb"] = true, -- Honored Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Arazmodu
+						},
+					}),
+					-- Scale of Sands / Healer Ring
+					q(10473, {	-- Restorer's Covenant
+						["groups"] = {
+							i(29309),	-- Band of the Eternal Restorer
+						},
+						["isBreadcrumb"] = true, -- Exalted Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
+						["qg"] = 19935,	-- Soridormi
+						["sourceQuests"] = { 10469 },	-- Restorer's Oath
+					}),
+					q(10469, {	-- Restorer's Oath
+						["groups"] = {
+							i(29308),	-- Band of Eternity
+						},
+						["isBreadcrumb"] = true, -- Revered Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
+						["qg"] = 19935,	-- Soridormi
+						["sourceQuests"] = { 10465 },	-- Restorer's Vow
+					}),
+					q(10461, {	-- Restorer's Pledge
+						["groups"] = {
+							i(29307),	-- Band of Eternity
+						},
+						["isBreadcrumb"] = true, -- Prequest/Friendly Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
+						["qg"] = 19936,	-- Arazmodu
+					}),
+					q(10465, {	-- Restorer's Vow
+						["groups"] = {
+							i(29306),	-- Band of Eternity
+						},
+						["isBreadcrumb"] = true, -- Honored Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Arazmodu
+						},
+					}),
+					-- Scale of Sands / Caster Ring
+					q(10472, {	-- Sage's Covenant
+						["groups"] = {
+							i(29305),	-- Band of the Eternal Sage
+						},
+						["isBreadcrumb"] = true, -- Exalted Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
+						["qg"] = 19935,	-- Soridormi
+						["sourceQuests"] = { 10468 },	-- Sage's Oath
+					}),
+					q(10468, {	-- Sage's Oath
+						["groups"] = {
+							i(29304),	-- Band of Eternity
+						},
+						["isBreadcrumb"] = true, -- Revered Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
+						["qgs"] = {
+							19935,	-- Soridormi
+							19936,	-- Arazmodu
+						},
+						["sourceQuests"] = { 10464 },	-- Sage's Vow
+					}),
+					q(10463, {	-- Sage's Pledge
+						["groups"] = {
+							i(29302),	-- Band of Eternity
+						},
+						["isBreadcrumb"] = true, -- Prequest/Friendly Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
+						["qg"] = 19936,	-- Arazmodu
+					}),
+					q(10464, {	-- Sage's Vow
+						["groups"] = {
+							i(29303),	-- Band of Eternity
+						},
+						["isBreadcrumb"] = true, -- Honored Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
+						["qgs"] = {
+							19935,	-- Soridormi
+							19935,	-- Arazmodu
+						},
+					}),
+					
 				}),
 				n(-16, {	-- Rares	
 					n(47386, {	-- Ainamiss the Hive Queen
