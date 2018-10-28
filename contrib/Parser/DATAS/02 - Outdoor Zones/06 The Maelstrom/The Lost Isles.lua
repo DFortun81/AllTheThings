@@ -417,6 +417,7 @@ _.Zones =
 							["sourceQuests"] = { 25251 }, -- Final Confrontation
 						}),
 						q(25266, { -- Warchief's Emissary (possibly removed?)
+							--Note!! Was in 7.3.5.  Have not tried in BfA
 							["qg"] = 38935, -- Thrall
 							["sourceQuests"] = { 25265 }, -- Victory!
 						}),

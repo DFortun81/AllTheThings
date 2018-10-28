@@ -583,9 +583,42 @@ _.Zones =
 					}),	
 				}),
 				n(-38, { 	-- Profession
+					--Note!! We don't need the names of the profession as a header because we can filter it out based on profession
+					--Using profession as a header just bloats the tooltip.
 					prof(185, { -- Cooking
 						desc(i(133820), "Can drop from any Drogbar."), 	-- Recipe: Drogbar-Style Salmon
 					}),
+					{	-- Crystal Eyes
+						["questID"] = 41190,		-- Crystal Eyes
+						["qg"] = 103485,			-- Lessah Moonwater
+						["sourceQuests"] = {
+							41189,	-- A New Lead	[Starts in Dalaran: BI!!]
+						},
+						["coords"] = {
+							{ 45.81, 44.61 },		-- Thunder Totem
+						},
+						["requiredSkill"] = 794,	-- Archaeology
+						--Note!! This resets either bi-weekly or when it comes up against
+						--It does NOT receive repeatable/daily/weekly filter due to this.
+					},
+					{	-- Drogbar Deception
+						["questID"] = 41191,		-- Drogbar Deception
+						["qg"] = 103485,			-- Lessah Moonwater
+						["sourceQuests"] = {
+							41190,	-- Crystal Eyes
+						},
+						["coords"] = {
+							{ 45.81, 44.61 },		-- Thunder Totem
+						},
+						["requiredSkill"] = 794,	-- Archaeology
+						["g"] = {
+							{	-- Prizerock Neckband
+								["itemID"] = 131736,	-- Prizerock Neckband
+							},
+						},
+						--Note!! This resets either bi-weekly or when it comes up against
+						--It does NOT receive repeatable/daily/weekly filter due to this.
+					},
 					{	-- Felwort Sample [Felwort I]
 						["itemID"] = 129112,	-- Felwort Sample
 						["questID"] = 40040,	-- Felwort Sample
@@ -627,8 +660,6 @@ _.Zones =
 						},
 						["requireSkill"] = 182,	-- Herbalism
 					},
-					
-					
 					prof(393, { -- Skinning
 						n(97449, { 		-- Bristlemaul
 							["groups"] = {
@@ -950,11 +981,8 @@ _.Zones =
 							  i(141008), -- Earthguard Grips
 							  i(141010), -- Earthguard Gauntlets
 							}),
-						}),  
+						}),
 						n(-38, { -- Professions
-							n(-191, { -- Archaeology
-							  qw( q(41189)),	-- A New Lead              
-							}),
 							n(-181, { -- Blacksmithing
 								["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
 									q(38514, { -- You Are Not Worthy
@@ -1303,7 +1331,6 @@ _.Zones =
 									q(42699),	-- Coura, Master of Arcana
 									q(44275),	-- Court of Stars
 									q(39994),	-- Crab Rider Grmlrml
-									q(41190),	-- Crystal Eyes
 									q(41241),	-- Cursed Queenfish Needed
 									q(45392),	-- Dark Memento
 									q(43551),	-- Darkheart Thicket
