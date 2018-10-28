@@ -611,7 +611,8 @@ _.Zones =
 						["questID"] = 40028,	-- The Pied Picker
 						["sourceQuests"] = {
 							40026,	-- Chase the Culprit
-						},	
+						},
+						["requireSkill"] = 182,	-- Herbalism						
 						["g"] = {
 							{	-- Foxflower [Rank 3]
 								["recipeID"] = 193300,	-- Foxflower [Rank 3]
@@ -952,7 +953,7 @@ _.Zones =
 						}),  
 						n(-38, { -- Professions
 							n(-191, { -- Archaeology
-							  q(41189),	-- A New Lead              
+							  qw( q(41189)),	-- A New Lead              
 							}),
 							n(-181, { -- Blacksmithing
 								["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing

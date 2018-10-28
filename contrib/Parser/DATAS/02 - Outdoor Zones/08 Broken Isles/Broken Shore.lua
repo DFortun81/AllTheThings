@@ -1387,6 +1387,7 @@ _.Zones =
 										i(138201),	-- Fathom Dweller Mount
 									},
 									["questID"] = 43798,
+									["isWeekly"] = true,
 									["description"] = "You can now head to |cFFFFD700Eye of Azshara|r, the zone, and kill |cFFFFD700Kosumoth the Hungering|r when |cFFFFD700DANGER: Kosumoth the Hungering|r world quest is active to get your pet and mount.",
 								}),
 							},	
