@@ -10,10 +10,7 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							q(50864, {	-- Atal'zul Gotaka
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
 							{	-- Azerite Empowerment [AH]
 								["qg"] = 141959,		-- Hex Priest Haraka
@@ -21,42 +18,27 @@ _.Zones =
 								["coords"] = {
 									{ 75.30, 42.08 },
 								},
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							},
 							{	-- Azerite Mining [AH]
 								["questID"] = 52877,	-- Azerite Mining
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							},
 							{	-- Azerite Wounds  [AH]
 								["questID"] = 51175,	-- Azerite Wounds
 								["coords"] = {
 									{ 57.10, 22.27 },
 								},
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							},
 							q(51642, {	-- Beachhead [AH]
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
 							q(52892, {	-- Critters are Friends, Not Food [Pet Battle]
 								["groups"] = {
 									i(163036),	-- Polished Pet Charm
 								},
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
 							{	-- Daggerjaw [AH]
 								["npcID"] = 133190,		-- Daggerjaw	Note!! Done so we can use his name for the quest rather than Quest #123456
@@ -64,10 +46,7 @@ _.Zones =
 								["coords"] = {
 									{ 74.33, 38.96 },
 								},
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["g"] = {
 									{	-- Daggerjaw's Incisor
 										["itemID"] = 160952,	-- Daggerjaw's Incisor
@@ -80,19 +59,13 @@ _.Zones =
 								["coords"] = {
 									{ 65.61, 27.81 },
 								},
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								--Note!! Emblem of Zandalar offered on 10/17
 							},
 							{	-- G'Naat
 								["npcID"] = 133155,		-- G'Naat	Note!! Done so we can use his name for the quest rather than Quest #123456
 								["questID"] = 50870,	-- G'Naat
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["coords"] = {
 									{ 80.01, 36.01 },	-- Door Entrance
 								},
@@ -104,10 +77,7 @@ _.Zones =
 								},
 							},
 							q(50846, {	-- Headhunter Lee'za
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
 							{	-- Kiboku
 								["npcID"] = 132244,		-- Kiboku	Note!! Done so we can use his name for the quest rather than Quest #123456
@@ -115,10 +85,7 @@ _.Zones =
 								["coords"] = {
 									{ 75.62, 36.25 },
 								},
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["g"] = {
 									{	-- Hillshaker Armplates
 										["itemID"] = 161112,	-- Hillshaker Armplates
@@ -128,10 +95,7 @@ _.Zones =
 							},
 							{	-- Make Loh Go
 								["questID"] = 51636,	-- Make Loh Go
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["coords"] = {
 									{ 81.76, 38.09 },	-- Door Entrance
 									{ 81.81, 37.64 },	-- Game
@@ -139,10 +103,7 @@ _.Zones =
 							},
 							{	-- Old R'gal
 								["questID"] = 50855, 	-- Old R'gal
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									{	-- Echoes of Rezan
@@ -151,62 +112,38 @@ _.Zones =
 								},
 							},
 							q(51816, {	-- Pterrible Ingredients
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(50633, {	-- Pterrible Ingredients
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["races"] = HORDE_ONLY,
 							}),
 							q(50540, {	-- Rally the Rastari
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["races"] = HORDE_ONLY,
 							}),
 							{	-- Saving Xibala
 								["questID"] = 52250,	-- Saving Xibala
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["races"] = ALLIANCE_ONLY,
 							},
 							q(50581, {	-- Scrolls and Scales
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["races"] = HORDE_ONLY,
 							}),
 							q(51822, { 	-- Scrolls and Scales
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["races"] = ALLIANCE_ONLY,
 							}),
 							{	-- Shell Game
 								["questID"] = 51630,	-- Shell Game
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							},
 							{	-- Small Beginnings [Pet Battle!!]
 								["questID"] = 52938,	-- Small Beginnings
 								["qg"] = 142234,		-- Zujai
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["g"] = {
 									{	-- Small Beginnings
 										["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
@@ -216,33 +153,21 @@ _.Zones =
 							},
 							{	-- Subterranean Evacuation
 								["questID"] = 50756,	-- Subterranean Evacuation
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["races"] = ALLIANCE_ONLY,
 							},
 							q(50867, {	-- Tambano
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
 							q(51494, {	-- The Blood Gate
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
 							{	-- The Shores of Xibala
 								["questID"] = 52248,	-- The Shores of Xibala
 								["coords"] = {
 									{ 40.05, 73.34 },
 								},
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							},
 							q(52393, {	-- Work Order: Contract: Tortollan Seekers
 								["groups"] = {
@@ -251,30 +176,21 @@ _.Zones =
 									}),
 								},
 								["requireSkill"] = 773,	-- Inscription
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
 							q(52349, {	-- Work Order: Loa Loaf
 								["groups"] = {
 									i(162294),	-- Recipe: Loa Loaf [Rank 3]
 								},
 								["requireSkill"] = 185,	-- Cooking
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
 							q(52348, {	-- Work Order: Mon'Dazi [Note: This WQ stays here as it is in the city and not the zone]
 								["groups"] = {
 									i(162296),	-- Recipe: Mon'Dazi [Rank 3]
 								},
 								["requireSkill"] = 185,	-- Cooking
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
 							q(52345, {	-- Work Order: Ravenberry Tarts [Rank 3]
 								["groups"] = {
@@ -282,10 +198,7 @@ _.Zones =
 								},
 								["requireSkill"] = 185,	-- Cooking
 								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
 							q(52351, {	-- Work Order: Spiced Snapper [Rank 3]
 								["groups"] = {
@@ -293,10 +206,7 @@ _.Zones =
 								},
 								["requireSkill"] = 185,	-- Cooking
 								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
 							q(52350, {	-- Work Order: Swamp Fish 'n Chips [Rank 3]
 								["groups"] = {
@@ -304,17 +214,11 @@ _.Zones =
 								},
 								["requireSkill"] = 185,	-- Cooking
 								["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
 							{	-- Wrath of Rezan
 								["questID"] = 50957, 	-- Wrath of Rezan
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								["races"] = HORDE_ONLY,
 								["coords"] = {
 									{ 73.18, 28.38 },
@@ -329,12 +233,8 @@ _.Zones =
 								["groups"] = {
 									i(163036),	-- Polished Pet Charm
 								},
-								["repeatable"] = true,
-								["isDaily"] = true, 	-- Would like to swap it to WQ below
-								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-								["lvl"] = 120,			-- WQ is 120+ only
+								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
-							
 						}),
 						i(158116),	-- Bonehex Claws
 						i(158125),	-- Bonehex Warmaul

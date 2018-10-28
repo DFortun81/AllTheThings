@@ -16,10 +16,8 @@ _.Zones =
 									["coords"] = {
 										{ 32.98, 26.80 }
 									},
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["g"] = {
 										{	-- Fused-Slag Girdle
 											["itemID"] = 161100,	-- Fused-Slag Girdle
@@ -27,81 +25,59 @@ _.Zones =
 									},
 								},
 								q(51415, {	-- Azerite Madness
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(52884, {	-- Azerite Wounds
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Beachhead
 									["questID"] = 51640,	-- Beachhead
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(50735, {	-- Burial Detail
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								{	-- Cargo Reclamation
 									["questID"] =  50962,	-- Cargo Reclamation
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(52779, {	-- Crawg in the Bog [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
 									},
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(50717, {	-- Don't Stalk Me, Troll
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								q(50899, {	-- Don't Stalk Me, Troll
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(51172, {	-- Forked Lightning
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(50545, {	-- Forked Lightning
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								{	-- It's the Pits
 									["questID"] = 51546,	-- It's the Pits
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								},
 								q(50505, {	-- Kal'draxa
@@ -112,107 +88,77 @@ _.Zones =
 											},
 										}),
 									},
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- King Kooba
 									["questID"] = 50506,	--  King Kooba
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(50497, {	-- Krag'wa's Favor
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Luminous Monelite
 									["questID"] = 53321,	-- Luminous Monelite
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["requireSkill"] = 186,	-- Mining
 								},
 								{	-- Past Due
 									["questID"] = 50667,	-- Past Due
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(52006, {	-- Preemptive Assault
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								{	-- Scorched Earth
 									["questID"] = 50521,	-- Scorched Earth
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(51628, {	-- Shell Game
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(50650, {	-- Smashing Zalamar
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								q(52785, {	-- Smashing Zalamar
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(50513, {	-- Tainted Guardian
 									["groups"] = {
 										i(162621),	-- Naazmani Golem's Greathelm
 									},
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(50514, {	-- Totem Maker Jash'ga
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(50515, {	-- Venomjaw
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Xu'ba
 									["questID"] = 50489,	-- Xu'ba
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								{	-- Zujothgul
 									["questID"] = 50461,	-- Zujothgul
-									--["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									--
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 							},
 						}),

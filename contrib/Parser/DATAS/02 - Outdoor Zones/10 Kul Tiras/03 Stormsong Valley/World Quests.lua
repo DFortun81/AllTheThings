@@ -11,24 +11,15 @@ _.Zones =
 						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
 								q(51855, {	-- A Pirate's Life For Me
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(52140, {	-- A Thorny Problem
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(52236, {	-- A Thorny Problem
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								{	-- Automated Chaos [AH] [Pet Battle!!]
@@ -37,10 +28,7 @@ _.Zones =
 									["coords"] = {
 										{ 36.61, 33.61 },
 									},
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["g"] = {
 										{	-- Automated Chaos
 											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
@@ -49,39 +37,24 @@ _.Zones =
 									},
 								},
 								q(52871, {	-- Azerite Empowerment
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Azerite Madness [AH]
 									["questID"] = 51618, 	-- Azerite Madness
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								{	-- Azerite Mining [AH]
 									["questID"] = 52873,	-- Azerite Mining
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								{	-- Beachhead [AH]
 									["questID"] = 51639,	-- Beachhead
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								{	-- Beehemoth [AH]
 									["questID"] = 52330,	-- Beehemoth
 									["npcID"] = 134147,		-- Beehemoth
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["g"] = {
 										{	-- Apiarist's Stingproof Belt
 											["itemID"] = 160459, 	-- Apiarist's Stingproof Belt
@@ -91,31 +64,19 @@ _.Zones =
 								},
 								{	-- Blooming Siren's Sting
 									["questID"] = 53286,	-- Blooming Siren's Sting
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								{	-- Boarder Patrol [A]
 									["questID"] = 52045,	-- Boarder Patrol
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 									--Note!! 10/16 offered Shoalbreach Waistguard
 								},
 								q(51782, {	-- Captain Razorspine
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(52179, {	-- Fortified Resistance
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(51779, {	-- Grimscowl the Harebrained		
@@ -125,17 +86,11 @@ _.Zones =
 									["coord"] = {
 										62.0, 73.9
 									},	
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Ice Sickle [AH]
 									["questID"] = 52328,	-- Ice Sickle
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									--Note!! 10/16 offered Boralus Sailor's Cloak
 								},
 								q(52321, {	-- Kickers
@@ -143,65 +98,38 @@ _.Zones =
 										i(154475),	-- Goathair Bindings
 									},
 									["npcID"] = 141029,	-- Kickers
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Make Loh Go
 									["questID"] = 51633,	-- Make Loh Go
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								{	-- Pest Remover Mk. II
 									["questID"] = 51806,	-- Pest Remover Mk. II
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(52889, {	-- Sandscour
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Severus the Outcast [AH]
 									["questID"] = 52315,	-- Severus the Outcast
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(52446, {	-- Sister Absinthe
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Son of a Bee [A]
 									["questID"] =  50591,	-- Son of a Bee
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								},
 								{	-- Song Mistress Dadalea
 									["questID"] = 52452,	-- Song Mistress Dadalea
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								{	-- The Faceless Herald [World Boss!!]
 									["questID"] = 52166,	-- The Faceless Herald
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								{	-- This Little Piggy Has Sharp Tusks [AH] [Pet Battle!!]
 									["questID"] = 52126,	-- This Little Piggy Has Sharp Tusks
@@ -209,10 +137,7 @@ _.Zones =
 									["coords"] = {
 										{ 42.41, 76.61 },
 									},
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["g"] = {
 										{	-- This Little Piggy Has Sharp Tusks
 											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
@@ -221,18 +146,12 @@ _.Zones =
 									},
 								},
 								q(52209, {	-- Turtle Tactics
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Winter's Kiss Cluster
 									["questID"] = 53287,	-- Winter's Kiss Cluster
 									["requireSkill"] = 182,	-- Herbalism
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(52394, {	-- Work Order: Contract: Champions of Azeroth [Rank 3]
 									["groups"] = {
@@ -240,10 +159,7 @@ _.Zones =
 											["spellID"] = 256299,
 										}),
 									},
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(52347, {	-- Work Order: Honey-Glazed Haunchs [Rank 3]
 									["groups"] = {
@@ -253,10 +169,7 @@ _.Zones =
 									},
 									["requireSkill"] = 185,	-- Cooking
 									["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(52367, {	-- Work Order: Electroshock Mount Motivator
 									["groups"] = {
@@ -265,10 +178,7 @@ _.Zones =
 										}),
 									},
 									["requireSkill"] = 202,	-- Engineering
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								q(52344, {	-- Work Order: Kul Tiramisu [Rank 3]
@@ -279,10 +189,7 @@ _.Zones =
 									},
 									["requireSkill"] = 185,	-- Cooking
 									["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(52346, {	-- Work Order: Sailor's Pie [Rank 3]
 									["groups"] = {
@@ -292,10 +199,7 @@ _.Zones =
 									},
 									["requireSkill"] = 185,	-- Cooking
 									["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 							},
 						}),

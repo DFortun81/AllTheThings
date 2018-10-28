@@ -11,134 +11,77 @@ _.Zones =
 						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
 								q(51610, {	-- Adhara White
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Azerite Mining
 									["questID"] = 52874, 	-- Azerite Mining
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								{	-- Azerite Mining
 									["questID"] = 51581, 	-- Azerite Mining
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(52869, {	-- Azerite Empowerment [AH]
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Bashmu [AH]
 									["questID"] = 51666,	-- Bashmu
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(51638, {	-- Beachhead [AH]
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Bloodmaw
 									["questID"] = 51613,	-- Bloodmaw
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(52755, {	-- Bringing the Heat [H]
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								q(51842, {	-- Carla Smirk
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(51647, {	-- Crews of Freehold
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								q(50234, {	-- Crews of Freehold
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
 								{	-- Flourishing Sea Stalks [Herbalism]
 									["questID"] = 53277,	-- Flourishing Sea Stalks
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["requireSkill"] = 182,	-- Herbalism
 								},
 								{	-- Gnomish Azerite Exraction [A]
 									["questID"] = 52120,	-- Gnomish Azerite Extraction
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								},
 								q(52760, {	-- Like a Fish in a Barrel
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								{	-- Lumberjack Sentinel
 									["questID"] = 51670,	-- Lumberjack Sentinel
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(51632, {	-- Make Loh Go
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Picturesque Norwington Estate [A]
 									["questID"] = 51090,	-- Picturesque Norwington Estate
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								},
 								q(51656, {	-- Saurolisk Tamer Mugg
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Show-Off [A]
 									["questID"] = 53331,	-- Show-Off
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										{	-- The Reining Champion
@@ -147,52 +90,34 @@ _.Zones =
 									},
 								},
 								q(51463, {	-- Sky Drop Rescue
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								q(51651, {	-- Squacks [AH]
 									["groups"]  = {
 										i(160455),	-- Parrot-Trainer Sash
 									},
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(52471, {	-- That's a Big Carcass [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
 									},
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- The Lord's Hunt [A]
 									["questID"] = 51406,	-- The Lord's Hunt
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								},
 								q(53078, {	-- Treasure in the Ttides
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(52455, {	-- Unbreakable [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
 									},
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 120,			-- WQ is 120+ only
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 							},
 						}),
@@ -277,7 +202,6 @@ _.Zones =
 								i(157997),	-- Harbormaster Greatbelt
 								i(157995),	-- Harbormaster Legplates
 								i(157991),	-- Harbormaster Stompers
-
 							},
 						}),
 					},
