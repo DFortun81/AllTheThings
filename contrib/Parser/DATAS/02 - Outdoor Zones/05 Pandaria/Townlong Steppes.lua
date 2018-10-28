@@ -251,6 +251,7 @@ _.Zones =
 					}),
 					q(30785, {	-- Gao-Ran Battlefront
 						["qg"] = 61261,	-- Ban Beartheart
+						["isBreadcrumb"] = true, -- Hidden once completed Quests at Gao-Ran Battlefront
 						["sourceQuests"] = { 30784 }, -- The Point of No Return
 					}),
 					q(30927, {	-- Give Them Peace

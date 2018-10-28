@@ -132,6 +132,7 @@ _.Zones =
 							i(103643),	-- Dew of Eternal Morning
 							i(103641),	-- Singing Crystal
 						},
+						["isDaily"] = true,
 					},
 					{
 						["questID"] = 33375,	-- Refining The Vision

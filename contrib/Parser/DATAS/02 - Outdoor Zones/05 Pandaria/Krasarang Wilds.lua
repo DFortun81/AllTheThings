@@ -635,9 +635,11 @@ _.Zones =
 					}),
 					qh(29875, {	-- Kang Bramblestaff
 						["qg"] = 56110, -- Xiao
+						["isBreadcrumb"] = true, -- Hidden once you finish Valley of the Four Winds Story Line
 					}),
 					qa(29874, {	-- Kang Bramblestaff
 						["qg"] = 56110, -- Xiao
+						["isBreadcrumb"] = true, -- Hidden once you finish Valley of the Four Winds Story Line
 					}),
 					qh(32348, {	-- Kick 'em While They're Down
 						["qg"] = 68274, -- Kaelis Sunsoar
@@ -924,9 +926,11 @@ _.Zones =
 					}),
 					qh(31370, {	-- The Anglers
 						["qg"] = 64010, -- Master Angler Karu
+						["isBreadcrumb"] = true,
 					}),
 					qa(31369, {	-- The Anglers
 						["qg"] = 64033, -- Master Angler Karu
+						["isBreadcrumb"] = true,
 					}),
 					qa(30274),	-- The Arcanic Oubliette -- how is this quest received?
 					qh(32398, {	-- The Bell Speaks
