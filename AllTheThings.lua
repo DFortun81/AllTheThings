@@ -1937,8 +1937,8 @@ end
 
 -- Map Information Lib
 local function AddTomTomWaypoint(group)
-	if TomTom then
-		if ((group.collectible and not group.collected) or (group.trackable and not group.saved) or (group.total and group.progress < group.total)) and (group.coords or group.coord) then
+	if TomTom and group.visible and ((group.collectible and not group.collected) or (group.trackable and not group.saved) or (group.total and group.progress < group.total)) then
+		if group.coords or group.coord then
 			local opt = {
 				title = group.text or group.link,
 				persistent = nil,
