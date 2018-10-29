@@ -11,8 +11,710 @@ _.Holidays =
 				["g"] = {
 					{	-- Tricks and Treats of Kalimdor [Alliance]
 						["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
+						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 						["g"] = {
+							{	-- Ashenvale, Astranaar
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 1,			-- Ashenvale, Astranaar
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									63,	-- Ashenvale
+								},
+								["coords"] = {
+									{ 37, 49.3 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12345,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 37, 49.3 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Azuremyst Isle, Azure Watch
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 2,			-- Azuremyst Isle, Azure Watch
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									97,	-- Azuremyst Isle
+								},
+								["coords"] = {
+									{ 48.5, 49.1 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12333,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 48.5, 49.1 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Bloodmyst Isle, Blood Watch
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 3,			-- Bloodmyst Isle, Blood Watch
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									106,	-- Bloodmyst Isle
+								},
+								["coords"] = {
+									{ 55.7, 59.9 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12341,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 55.7, 59.9 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Darkshore, Lor'danel
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 4,			-- Darkshore, Lor'danel
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									62,	-- Darkshore
+								},
+								["coords"] = {
+									{ 50.8, 18.8 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 28951,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 50.8, 18.8 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Darnassus, Craftsmen's Terrace
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 5,			-- Darnassus, Craftsmen's Terrace
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									89,	-- Darnassus
+								},
+								["coords"] = {
+									{ 62.2, 33 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12334,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 62.2, 33 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Desolace, Karnum's Glade
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 6,			-- Desolace, Karnum's Glade
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									66,	-- Desolace
+								},
+								["coords"] = {
+									{ 56.8, 50 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 28993,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 56.8, 50 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Desolace, Nijel's Point
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 7,			-- Desolace, Nijel's Point
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									66,	-- Desolace
+								},
+								["coords"] = {
+									{ 66.3, 6.7 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12348,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 66.3, 6.7 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Dustwallow Marsh, Mudsprocket
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 8,			-- Dustwallow Marsh, Mudsprocket
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									70,	-- Dustwallow Marsh
+								},
+								["coords"] = {
+									{ 41, 73 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12398,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 41, 73 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Exodar, Seat of the Naaru
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 9,			-- Exodar, Seat of the Naaru
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									103,	-- The Exodar
+								},
+								["coords"] = {
+									{ 59.3, 19.2 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12337,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 59.3, 19.2 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Felwood - Talonbranch Glade
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 10,			-- Felwood - Talonbranch Glade
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									77,	-- Felwood
+								},
+								["coords"] = {
+									{ 61.8, 26.7 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 28995,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 61.8, 26.7 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Felwood - Whisperwind Grove
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 11,			-- Felwood - Whisperwind Grove
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									77,	-- Felwood
+								},
+								["coords"] = {
+									{ 44.6, 28.9 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 28994,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 44.6, 28.9 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Feralas, Dreamer's Rest
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 12,			-- Feralas, Dreamer's Rest
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									69,	-- Feralas
+								},
+								["coords"] = {
+									{ 51.1, 17.8 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 28952,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 51.1, 17.8 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Feralas, Feathermoon Stronghold
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 14,			-- Feralas, Feathermoon Stronghold
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									69,	-- Feralas
+								},
+								["coords"] = {
+									{ 46.3, 45.2 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12350,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 46.3, 45.2 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Northern Barrens, Ratchet
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 13,			-- Northern Barrens, Ratchet
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									10,	-- Northern Barrens
+								},
+								["coords"] = {
+									{ 67.3, 74.7 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12396,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 67.3, 74.7 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Silithus, Cenarion Hold
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 15,			-- Silithus, Cenarion Hold
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									81,	-- Silithus
+								},
+								["coords"] = {
+									{ 55.5, 36.7 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12401,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 55.5, 36.7 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Southern Barrens, Fort Triumph
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 16,			-- Southern Barrens, Fort Triumph
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									199,	-- Southern Barrens
+								},
+								["coords"] = {
+									{ 49.1, 68.5 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 29008,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 49.1, 68.5 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Southern Barrens, Honor's Stand
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 17,			-- Southern Barrens, Honor's Stand
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									199,	-- Southern Barrens
+								},
+								["coords"] = {
+									{ 39, 11 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 29006,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 39, 11 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Southern Barrens, Northwatch Hold
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 18,			-- Southern Barrens, Northwatch Hold
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									199,	-- Southern Barrens
+								},
+								["coords"] = {
+									{ 65.6, 46.6 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 29007,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 65.6, 46.6 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Stonetalon Mountains, Farwatcher's Glen
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 19,			-- Stonetalon Mountains, Farwatcher's Glen
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									65,	-- Stonetalon Mountains
+								},
+								["coords"] = {
+									{ 31.5, 60.7 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 29013,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 31.5, 60.7 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Stonetalon Mountains, Northwatch Expedition Base
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 20,			-- Stonetalon Mountains, Northwatch Expedition Base
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									65,	-- Stonetalon Mountains
+								},
+								["coords"] = {
+									{ 71, 79.1 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 29010,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 71, 79.1 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Stonetalon Mountains, Thal'darah Overlook
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 21,			-- Stonetalon Mountains, Thal'darah Overlook
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									65,	-- Stonetalon Mountains
+								},
+								["coords"] = {
+									{ 39.5, 32.8 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 29012,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 39.5, 32.8 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Stonetalon Mountains, Windshear Hold
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 22,			-- Stonetalon Mountains, Windshear Hold
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									65,	-- Stonetalon Mountains
+								},
+								["coords"] = {
+									{ 59.1, 56.3 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 29011,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 59.1, 56.3 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Tanaris, Bootlegger Outpost
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 23,			-- Tanaris, Bootlegger Outpost
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									71,	-- Tanaris
+								},
+								["coords"] = {
+									{ 55.7, 60.9 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 29014,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 55.7, 60.9 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Tanaris, Gadgetzan
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 24,			-- Tanaris, Gadgetzan
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									71,	-- Tanaris
+								},
+								["coords"] = {
+									{ 52.6, 27.1 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12399,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 52.6, 27.1 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Teldrassil, Dolanaar
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 25,			-- Teldrassil, Dolanaar
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									57,	-- Teladrassil
+								},
+								["coords"] = {
+									{ 55.4, 52.3 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12331,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 55.4, 52.3 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Un'Goro Crater, Marshal's Stand
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 26,			-- Un'Goro Crater, Marshal's Stand
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									78,	-- Un'Goro Crater
+								},
+								["coords"] = {
+									{ 55.2, 62.1 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 29018,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 55.2, 62.1 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
+							{	-- Winterspring, Everlook
+								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
+								["criteriaID"] = 27,			-- Winterspring, Everlook
+								["u"] = 26,					-- Hallow's End Filter
+								["maps"] = {
+									83,	-- Winterspring
+								},
+								["coords"] = {
+									{ 59.8, 51.2 },
+								},
+								["g"] = {
+									{	-- Candy Bucket
+										["questID"] = 12400,	-- Candy Bucket
+										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 59.8, 51.2 },
+										},
+										["g"] = {
+											{	-- Handful of Treats
+												["itemID"] = 37586,	-- Handful of Treats
+												["u"] = 26,			-- Hallow's End Filter
+											},
+										},
+									},
+								},
+							},
 						},
 					},
 					{	-- Tricks and Treats of Kalimdor [Horde]

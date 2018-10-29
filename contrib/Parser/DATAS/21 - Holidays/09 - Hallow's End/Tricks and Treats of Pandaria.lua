@@ -11,7 +11,7 @@ _.Holidays =
 				["g"] = {
 					{	-- Tricks and Treats of Pandaria [Alliance]
 						["achievementID"] = 7601,	-- Tricks and Treats of Pandaria
-						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
+						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 						["g"] = {
 							{	-- Dread Wastes, Klaxxi'vess
 								["achievementID"] = 7601,	-- Tricks and Treats of Pandaria

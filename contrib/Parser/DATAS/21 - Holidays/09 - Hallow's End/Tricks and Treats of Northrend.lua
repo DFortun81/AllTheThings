@@ -11,7 +11,7 @@ _.Holidays =
 				["g"] = {
 					{	-- Tricks and Treats of Northrend [Alliance]
 						["achievementID"] = 5836,	-- Tricks and Treats of Northrend
-						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
+						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 						["g"] = {
 							{	-- Borean Tundra, Fizzcrank Airstrip
 								["achievementID"] = 5836,	-- Tricks and Treats of Northrend

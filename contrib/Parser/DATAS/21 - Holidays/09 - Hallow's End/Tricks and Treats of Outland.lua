@@ -11,7 +11,7 @@ _.Holidays =
 				["g"] = {
 					{	-- Tricks and Treats of Outlands [Alliance]
 						["achievementID"] = 969,	-- Tricks and Treats of Outlands
-						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
+						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 						["g"] = {
 							{	-- Blade's Edge Mountains, Evergrove
 								["achievementID"] = 969,	-- Tricks and Treats of Outland

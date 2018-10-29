@@ -11,7 +11,7 @@ _.Holidays =
 				["g"] = {
 					{	-- Tricks and Treats of Cataclysm [Alliance]
 						["achievementID"] = 5837,	-- Tricks and Treats of Cataclysm
-						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
+						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 						["g"] = {
 							{	-- Deepholm, Temple of Earth
 								["achievementID"] = 5837,	-- Tricks and Treats of Cataclysm
