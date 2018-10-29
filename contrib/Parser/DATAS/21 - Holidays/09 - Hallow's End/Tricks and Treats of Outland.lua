@@ -11,7 +11,7 @@ _.Holidays =
 				["g"] = {
 					{	-- Tricks and Treats of Outlands [Alliance]
 						["achievementID"] = 969,	-- Tricks and Treats of Outlands
-						["races"] = ALLIANCE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
+						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
 						["g"] = {
 							{	-- Blade's Edge Mountains, Evergrove
 								["achievementID"] = 969,	-- Tricks and Treats of Outland
@@ -205,7 +205,8 @@ _.Holidays =
 									104,	-- Shadowmoon Valley
 								},
 								["coords"] = {
-									{ 56.3, 59.8 },
+									{ 56.3, 59.8 },	-- Scryers
+									{ 61.0, 28.2 },	-- Aldors
 								},
 								["g"] = {
 									{	-- Candy Bucket
@@ -251,7 +252,8 @@ _.Holidays =
 									111,	-- Shattrath City
 								},
 								["coords"] = {
-									{ 56.2, 81.8 },
+									{ 56.2, 81.8 },	-- Scryer
+									{ 28.1, 49.0 },	-- Aldor
 								},
 								["g"] = {
 									{	-- Candy Bucket
@@ -556,7 +558,8 @@ _.Holidays =
 									104,	-- Shadowmoon Valley
 								},
 								["coords"] = {
-									{ 56.3, 59.8 },
+									{ 56.3, 59.8 },	-- Scryers
+									{ 61.0, 28.2 },	-- Aldors
 								},
 								["g"] = {
 									{	-- Candy Bucket
@@ -573,7 +576,7 @@ _.Holidays =
 							},
 							{	-- Shadowmoon Valley, Shadowmoon Village
 								["achievementID"] = 968,	-- Tricks and Treats of Outland
-								["criteriaID"] = 10,			-- Shadowmoon Valley, Shadowmoon Village
+								["criteriaID"] = 10,		-- Shadowmoon Valley, Shadowmoon Village
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									104,	-- Shadowmoon Valley
@@ -596,13 +599,14 @@ _.Holidays =
 							},
 							{	-- Shattrath City, Aldor Rise or Scryer's Tier
 								["achievementID"] = 968,	-- Tricks and Treats of Outland
-								["criteriaID"] = 11,			-- Shattrath City, Aldor Rise or Scryer's Tier
+								["criteriaID"] = 11,		-- Shattrath City, Aldor Rise or Scryer's Tier
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									111,	-- Shattrath City
 								},
 								["coords"] = {
-									{ 56.2, 81.8 },
+									{ 56.2, 81.8 },	-- Scryer
+									{ 28.1, 49.0 },	-- Aldor
 								},
 								["g"] = {
 									{	-- Candy Bucket
@@ -619,7 +623,7 @@ _.Holidays =
 							},
 							{	-- Terokkar Forest, Stonebreaker Hold
 								["achievementID"] = 968,	-- Tricks and Treats of Outland
-								["criteriaID"] = 12,			-- Terokkar Forest, Stonebreaker Hold
+								["criteriaID"] = 12,		-- Terokkar Forest, Stonebreaker Hold
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									108,	-- Terokkar Forest
@@ -642,7 +646,7 @@ _.Holidays =
 							},
 							{	-- Zangarmarsh, Cenarion Refuge
 								["achievementID"] = 968,	-- Tricks and Treats of Outland
-								["criteriaID"] = 14,			-- Zangarmarsh, Cenarion Refuge
+								["criteriaID"] = 14,		-- Zangarmarsh, Cenarion Refuge
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									102,	-- Zangarmarsh

@@ -221,16 +221,20 @@ _.Holidays =
 					},
 					--Note!! These are not part of the meta and belong outside the meta achievement.
 					{	-- Tricks and Treats of Northrend [A]
+						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
+						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 5836,	-- Tricks and Treats of Northrend
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 26,					-- Hallow's End Filter
-						--Note!! All individual criteria, for the following meta criteria, will actually be linked to the quest rather than here bloating the mini list for each zone.  By doing quest we can link it once and together rather than in chunks.
+						["g"] = {
+						},
 					},
 					{	-- Tricks and Treats of Northrend [H]
+						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
+						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 5835,	-- Tricks and Treats of Northrend
 						["races"] = HORDE_ONLY,
-						["u"] = 26,					-- Hallow's End Filter
-						--Note!! All individual criteria, for the following meta criteria, will actually be linked to the quest rather than here bloating the mini list for each zone.  By doing quest we can link it once and together rather than in chunks.
+						["g"] = {
+						},
 					},
 					{	-- Tricks and Treats of Cataclysm [A]
 						["achievementID"] = 5837,	-- Tricks and Treats of Cataclysm
