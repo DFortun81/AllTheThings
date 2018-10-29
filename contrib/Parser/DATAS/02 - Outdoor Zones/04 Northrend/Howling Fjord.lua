@@ -35,31 +35,6 @@ _.Zones =
 						},
 					},
 				}),
-				n(-4, {		-- Achievements
-					ach(2257, {	-- Frostbitten
-						{
-							["criteriaID"] = 9,	-- King Ping [Criteria]
-							["qg"] = 32398,		-- King Ping [NPC]
-							["groups"] = {
-								i(44668),	-- Egg-Warming Blanket
-							},
-						},
-						{
-							["criteriaID"] = 7,	-- Perobas the Bloodthirster [Criteria]
-							["qg"] = 32377,		-- Perobas the Bloodthirster [NPC]
-							["groups"] = {
-								i(44669),	-- Worgen-Scored Shackles
-							},
-						},
-						{
-							["criteriaID"] = 8,	-- Vigdis the War Maiden [Criteria]
-							["qg"] = 32386,		-- Vigdis the War Maiden [NPC]
-							["groups"] = {
-								i(44670),	-- Soul-Sealed Belt
-							},
-						},
-					}),
-				}),
 				n(-228, {	-- Flight Points
 					fp(248, { -- Apothecary Camp, Howling Fjord	
 						["coord"] = { 26, 25 },
@@ -1444,33 +1419,29 @@ _.Zones =
 					}),
 					n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
 						["groups"] = {
-							i(38453),	-- Shield of the Lion-Hearted
-							i(38455),	-- Hammer of hte Alliance Vanguard
-							i(38457),	-- Sawed-Off Hand Cannon
-							i(38459),	-- Orb of the EAstern Kingdons
-							i(38463),	-- Lordaeron's Resolve
+							i(44938),	-- Plans: Titanium Plating
+							i(44503),	-- Schematic: Mekgineer's Chopper
 							i(38464),	-- Gnomish Magician's Quill
+							i(38455),	-- Hammer of hte Alliance Vanguard
+							i(38463),	-- Lordaeron's Resolve
+							i(38459),	-- Orb of the Eastern Kingdons
+							i(38457),	-- Sawed-Off Hand Cannon
+							i(38453),	-- Shield of the Lion-Hearted
 							i(38465),	-- Vanguard Soldier's Dagger
-							i(44938), -- Plans: Titanium Plating
-							i(44503, {	-- Schematic: Mekgineer's Chopper
-								i(44413),	-- Mekgineer's Chopper Mount
-							}),
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					n(32774, {	-- Sebastian Crane <Horde Expedition Quartermaster>
 						["groups"] = {
+							i(44938),	-- Plans: Titanium Plating
+							i(44502),	-- Schematic: Mechano-Hog
 							i(38452),	-- Bulwark of the Warchief
-							i(38454),	-- Warsong Punisher
-							i(38456),	-- Sin'dorei Recurve Bow
+							i(38460),	-- Charged Wand of the Cleft
 							i(38458),	-- Darkspear Orb
-							i(38460),	-- Chaged Wand of the Cleft
+							i(38456),	-- Sin'dorei Recurve Bow
+							i(38454),	-- Warsong Punisher
 							i(38461),	-- Warsong Shanker
 							i(38462),	-- Warsong Stormshield
-							i(44938), -- Plans: Titanium Plating
-							i(44502, {	-- Schematic: Mechano-Hog
-								i(41508),	-- Mechano-Hog Mount
-							}),
 						},
 						["races"] = HORDE_ONLY,
 					}),
@@ -1478,6 +1449,71 @@ _.Zones =
 						i(11308),	-- Sylvan Shortbow
 						i(11307),	-- Massive Longbow
 					})),
+				}),
+				n(-16, { 	-- Rares
+					{
+						["npcID"] = 32398,		-- King Ping [NPC]
+						["coords"] = {
+							{ 31.2, 56.8 },
+							{ 26.0, 64.0 },
+							{ 30.8, 71.2 },
+							{ 32.0, 75.8 },
+							{ 33.2, 80.2 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 9,	-- King Ping [Criteria]
+							},
+							i(44668),	-- Egg-Warming Blanket
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+					{
+						["npcID"] = 32377,		-- Perobas the Bloodthirster [NPC]
+						["coords"] = {
+							{ 50.8, 4.0 },
+							{ 53.5, 12.4 },
+							{ 60.8, 20.2 },
+							{ 68.6, 16.8 },
+							{ 71.6, 13.6 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 7,	-- Perobas the Bloodthirster [Criteria]
+							},
+							i(44669),	-- Worgen-Scored Shackles
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+					{
+						["npcID"] = 32386,		-- Vigdis the War Maiden [NPC]
+						["coords"] = {
+							{ 73.4, 39.8 },
+							{ 75.4, 42.2 },
+							{ 75.2, 49.8 },
+							{ 74.6, 54.2 },
+							{ 74.8, 58.8 },
+							{ 74.4, 60.6 },
+							{ 72.8, 61.8 },
+							{ 72.0, 43.6 },
+							{ 72.8, 51.4 },
+							{ 68.6, 48.4 },
+							{ 70.4, 51.0 },
+							{ 71.4, 54.0 },
+							{ 70.6, 56.8 },
+							{ 69.4, 58.2 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 8,	-- Vigdis the War Maiden [Criteria]
+							},
+							i(44670),	-- Soul-Sealed Belt
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
 				}),
 			},
 			["lvl"] = 58,	

@@ -55,31 +55,6 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-4, {		-- Achievements
-					ach(2257, {	-- Frostbitten
-						{
-							["criteriaID"] = 2,	-- High Thane Jorfus [Criteria]
-							["qg"] = 32501,		-- High Thane Jorfus [NPC]
-							["groups"] = {
-								i(44695),	-- Corroded Faceguard
-							},
-						},
-						{
-							["criteriaID"] = 3,	-- Hildana Deathstealer [Criteria]
-							["qg"] = 32495,		-- Hildana Deathstealer [NPC]
-							["groups"] = {
-								i(44697),	-- Val'kyr Vestments
-							},
-						},
-						{
-							["criteriaID"] = 23,	-- Putridus the Ancient [Criteria]
-							["qg"] = 32487,			-- Putridus the Ancient [NPC]
-							["groups"] = {
-								i(44696),	-- Giant's Toewrap
-							},
-						},
-					}),
-				}),
 				n(-228, {	-- Flight Points
 					fp(335, { -- Crusaders' Pinnacle, Icecrown
 						["coord"] = { 79.4, 72.2 },
@@ -973,6 +948,61 @@ _.Zones =
 						i(43846),
 					}),
 				}),	
+				n(-16, { 	-- Rares
+					{
+						["npcID"] = 32501,		-- High Thane Jorfus [NPC]
+						["coords"] = {
+							{ 32.0, 69.8 },
+							{ 48.6, 80.2 },
+							{ 71.8, 37.8 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 2,	-- High Thane Jorfus [Criteria]
+							},
+							i(44695),	-- Corroded Faceguard
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+					{
+						["npcID"] = 32495,		-- Hildana Deathstealer [NPC]
+						["coords"] = {
+							{ 31.4, 39.6 },
+							{ 56.0, 53.2 },
+							{ 59.6, 59.2 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 3,	-- Hildana Deathstealer [Criteria]
+							},
+							i(44697),	-- Val'kyr Vestments
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+					{
+						["npcID"] = 32487,		-- Putridus the Ancient [NPC]
+						["coords"] = {
+							{ 69.0, 67.2 },
+							{ 67.4, 58.0 },
+							{ 64.4, 45.8 },
+							{ 54.0, 41.2 },
+							{ 49.0, 42.8 },
+							{ 45.4, 49.8 },
+							{ 43.8, 57.8 },
+							{ 46.8, 65.2 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 23,	-- Putridus the Ancient [Criteria]
+							},
+							i(44696),	-- Giant's Toewrap
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+				}),
 				n(0, {		-- Zone Drops
 					n(32290, {	-- Cult Alchemist <Cult of the Damned>
 						{

@@ -61,29 +61,6 @@ _.Zones =
 				-- The Taunka 1064
 				-- The Hand of Vengeance 1067
 				n(-4, {		-- Achievements
-					ach(2257, {	-- Frostbitten
-						{
-							["criteriaID"] = 11,	-- Crazed Indu'le Survivor [Criteria]
-							["qg"] = 32409,			-- Crazed Indu'le Survivor [NPC]
-							["groups"] = {
-								i(44672),	-- Seal-Fur Spaulders
-							},
-						},
-						{
-							["criteriaID"] = 12,	-- Scarlet Highlord Daion [Criteria]
-							["qg"] = 32417,			-- Scarlet Highlord Daion [NPC]
-							["groups"] = {
-								i(44671),	-- Highlord's Padded Legguards
-							},
-						},
-						{
-							["criteriaID"] = 10,	-- Tukemuth [Criteria]
-							["qg"] = 32400,			-- Tukemuth [NPC]
-							["groups"] = {
-								i(44673),	-- Mammoth-Riding Boots
-							},
-						},
-					}),
 					ach(1277),	-- Rapid Defense
 					ach(547),	-- Veteran of the Wrathgate
 				}),
@@ -1614,6 +1591,79 @@ _.Zones =
 						},
 					},
 				}),	
+				n(-16, { 	-- Rares
+					{
+						["npcID"] = 32409,		-- Crazed Indu'le Survivor [NPC]
+						["coords"] = {
+							{ 15.6, 45.4 },
+							{ 15.6, 58.2 },
+							{ 20.6, 55.2 },
+							{ 24.0, 53.8 },
+							{ 26.6, 58.6 },
+							{ 28.8, 61.9 },
+							{ 30.6, 58.6 },
+							{ 33.2, 56.8 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 11,	-- Crazed Indu'le Survivor [Criteria]
+							},
+							i(44672),	-- Seal-Fur Spaulders
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+					{
+						["npcID"] = 32417,		-- Scarlet Highlord Daion [NPC]
+						["coords"] = {
+							{ 71.6, 22.4 },
+							{ 72.6, 25.8 },
+							{ 75.4, 27.2 },
+							{ 86.0, 36.4 },
+							{ 86.8, 41.6 },
+							{ 72.0, 70.6 },
+							{ 72.0, 74.0 },
+							{ 69.2, 75.6 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 12,	-- Scarlet Highlord Daion [Criteria]
+							},
+							i(44671),	-- Highlord's Padded Legguards
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+					{
+						["npcID"] = 32400,		-- Tukemuth [NPC]
+						["coords"] = {
+							{ 59.4, 28.8 },
+							{ 60.8, 32.6 },
+							{ 67.6, 29.8 },
+							{ 64.0, 36.8 },
+							{ 68.2, 46.8 },
+							{ 57.6, 47.6 },
+							{ 57.0, 50.8 },
+							{ 57.0, 52.6 },
+							{ 54.4, 55.4 },
+							{ 57.6, 56.8 },
+							{ 58.6, 59.4 },
+							{ 63.4, 54.8 },
+							{ 62.0, 49.4 },
+							{ 68.2, 46.8 },
+							{ 69.6, 54.2 },
+							{ 68.0, 58.8 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 10,	-- Tukemuth [Criteria]
+							},
+							i(44673),	-- Mammoth-Riding Boots
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+				}),
 				n(-2, {		-- Vendors
 					nh(26569, {	-- Alys Vol'tyr <Reagents & Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil

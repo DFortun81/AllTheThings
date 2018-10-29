@@ -145,23 +145,6 @@ _.Zones =
 					},
 				}),
 				n(-4, {		-- Achievements
-					ach(2257, {	-- Frostbitten
-						{
-							["criteriaID"] = 22,	-- Dirkee [Criteria]
-							["qg"] = 32500,			-- Dirkee [NPC]
-							["groups"] = {
-								i(44708),	-- Dirkee's Superstructure
-								i(44681),	-- Titanium Brain-Gear
-							},
-						},
-						{
-							["criteriaID"] = 21,	-- Vyragosa [Criteria]
-							["qg"] = 32630,			-- Vyragosa [NPC]
-							["groups"] = {
-								i(44732),	-- Azure Dragonleather Helm
-							},
-						},
-					}),
 					ach(1428),	-- Mine Sweeper
 				}),
 				n(-228, {	-- Flight Paths
@@ -575,11 +558,35 @@ _.Zones =
 						["description"] = "Reward from one of four random dailies.",	
 					}),
 				}),	
-				n(-16, { 	-- Rares	
+				n(-16, { 	-- Rares
+					{
+						["npcID"] = 32500,		-- Dirkee [NPC]
+						["coords"] = {
+							{ 41.6, 40.6 },
+							{ 41.0, 51.6 },
+							{ 37.8, 58.6 },
+							{ 68.2, 47.6 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 22,	-- Dirkee [Criteria]
+							},
+							i(44708),	-- Dirkee's Superstructure
+							i(44681),	-- Titanium Brain-Gear
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
 					n(35189, { -- Skoll
 						["description"] = "In Norse mythology, the aspects of the sun and moon are pursued through the sky by two wolves. Skoll is the wolf that pursues the sun and, at the onset of Ragnarok, will finally catch and devour it.\n\nSkoll's brother, Hati, will do the same to the moon.\n\nThis is a very much sought after Hunter Pet, so instead of killing this rare for the BoE, buy the BoE off the AH.",
+						["coords"] = {
+							{ 27.8, 50.8 },
+							{ 30.2, 64.6 },
+							{ 46.2, 64.8 },
+						},
 						["groups"] = {
 							i(49227),	-- Skoll's Fang
+							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32491, { -- Time-Lost Proto-Drake
@@ -587,8 +594,23 @@ _.Zones =
 						["groups"] = {
 							i(44168), 	-- Reins of the Time-Lost Proto-Drake
 							i(44682),	-- Time-Forward Talisman
+							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
+					{
+						["npcID"] = 32630,		-- Vyragosa [NPC]
+						["coords"] = {
+							
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 21,	-- Vyragosa [Criteria]
+							},
+							i(44732),	-- Azure Dragonleather Helm
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
 				}),
 				n(-2, {		-- Vendors
 					{	-- Olut Alegut

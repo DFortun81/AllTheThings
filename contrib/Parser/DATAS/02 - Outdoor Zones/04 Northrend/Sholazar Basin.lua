@@ -196,30 +196,6 @@ _.Zones =
 					},
 				}),
 				n(-4, {		-- Achievements
-					ach(2257, {	-- Frostbitten
-						{
-							["criteriaID"] = 19,	-- Aotona [Criteria]
-							["qg"] = 32481,			-- Aotona [NPC]
-							["groups"] = {
-								i(44691),	-- Aotona's Collar
-							},
-						},
-						{
-							["criteriaID"] = 20,	-- King Krush [Criteria]
-							["qg"] = 32485,			-- King Krush [NPC]
-							["groups"] = {
-								i(44683),	-- King's Eyesocket
-							},
-						},
-						{
-							["criteriaID"] = 1,	-- Loque'nahak [Criteria]
-							["qg"] = 32517,		-- Loque'nahak <Mate of Har'koa> [NPC]
-							["groups"] = {
-								i(44688),	-- Loque'Nahak's Severed Fang [Neck]
-								i(44687),	-- Loque'Nahak's Pelt
-							},
-						},
-					}),
 					ach(952),	-- Mercenary of Sholazar
 					ach(938),	-- The Snows of Northrend
 				}),
@@ -367,7 +343,7 @@ _.Zones =
 							i(39452), -- Roaming Wristguards
 						},
 						["qg"] = 28032, -- Debaar
-						["sourceQuests"] = { 12525 }, -- Venture Co. Misadventure
+						["sourceQuests"] = { 12524 }, -- Venture Co. Misadventure
 					}),
 					q(12691,  {  -- A Timeworn Coffer
 						i(39348),
@@ -478,6 +454,105 @@ _.Zones =
 						i(39450),
 					}),
 				}),	
+				n(-16, { 	-- Rares
+					{
+						["npcID"] = 32481,		-- Aotona [NPC]
+						["coords"] = {
+							{ 43.0, 52.4 },
+							{ 46.8, 55.5 },
+							{ 54.8, 51.8 },
+							{ 41.2, 68.4 },
+							{ 44.4, 69.8 },
+							{ 42.0, 73.8 },
+							{ 52.4, 72.8 },
+							{ 56.4, 65.2 },
+							{ 57.6, 65.4 },
+							{ 57.8, 66.4 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 19,	-- Aotona [Criteria]
+							},
+							i(44691),	-- Aotona's Collar
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+					{
+						["npcID"] = 32485,		-- King Krush [NPC]
+						["coords"] = {
+							-- The Maker's Perch
+							{ 25.8, 48.8 },
+							{ 27.4, 48.4 },
+							{ 27.2, 45.6 },
+							{ 28.8, 43.2 },
+							{ 29.8, 41.0 },
+							{ 30.0, 44.0 },
+							{ 30.8, 38.4 },
+							{ 32.6, 36.6 },
+							{ 33.4, 33.8 },
+							{ 34.0, 32.4 },
+							{ 34.8, 30.8 },
+							{ 36.2, 31.0 },
+							{ 37.4, 28.8 },
+							
+							-- The Glimmering Pillar
+							{ 46.6, 41.6 },
+							{ 47.4, 43.8 },
+							{ 49.2, 44.2 },
+							{ 48.6, 41.8 },
+							{ 50.2, 42.0 },
+							{ 51.0, 43.8 },
+							{ 52.6, 41.8 },
+							
+							-- The Skyreach Pillar
+							{ 50.8, 80.0 },
+							{ 51.6, 82.8 },
+							{ 52.6, 84.0 },
+							{ 54.6, 83.6 },
+							{ 57.0, 81.6 },
+							{ 58.8, 81.8 },
+							{ 60.0, 83.6 },
+							{ 63.2, 83.2 },
+							{ 63.8, 82.8 },
+							{ 64.4, 81.4 },
+							{ 64.6, 79.6 },
+							{ 66.0, 78.8 },
+							{ 66.8, 78.6 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 20,	-- King Krush [Criteria]
+							},
+							i(44683),	-- King's Eyesocket
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+					{
+						["npcID"] = 32517,		-- Loque'nahak <Mate of Har'koa> [NPC]
+						["coords"] = {
+							{ 36.0, 30.0 },
+							{ 35.8, 31.0 },
+							{ 58.6, 22.2 },
+							{ 20.6, 70.0 },
+							{ 21.6, 70.6 },
+							{ 31.0, 66.6 },
+							{ 51.0, 81.6 },
+							{ 66.6, 78.8 },
+							{ 71.0, 71.6 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 1,	-- Loque'nahak [Criteria]
+							},
+							i(44688),	-- Loque'Nahak's Severed Fang [Neck]
+							i(44687),	-- Loque'Nahak's Pelt
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+				}),
 				n(-2, {		-- Vendors
 					n(28040, {	-- Mardan Thunderhoof <Gunsmith>
 						["groups"] = {

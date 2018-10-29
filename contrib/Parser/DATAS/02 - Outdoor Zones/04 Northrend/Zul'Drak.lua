@@ -6,31 +6,6 @@ _.Zones =
 	m(113, { 	-- Northrend
 		m(121, {	-- Zul'Drak
 			["groups"] = {
-				n(-4, {		-- Achievements
-					ach(2257, {	-- Frostbitten
-						{
-							["criteriaID"] = 17,	-- Griegen [Criteria]
-							["qg"] = 32471,			-- Griegen [NPC]
-							["groups"] = {
-								i(44686),	-- thereal Terror Handwraps
-							},
-						},
-						{
-							["criteriaID"] = 18,	-- Terror Spinner [Criteria]
-							["qg"] = 32475,			-- Terror Spinner [NPC]
-							["groups"] = {
-								i(44685),	-- Calcified Web Spaulders
-							},
-						},
-						{
-							["criteriaID"] = 16,	-- Zul'drak Sentinel [Criteria]
-							["qg"] = 32447,			-- Zul'drak Sentinel [NPC]
-							["groups"] = {
-								i(44677),	-- Eternal Observer's Legplates
-							},
-						},
-					}),
-				}),
 				n(-228, {	-- Flight Points
 					fp(305, { -- Ebon Watch, Zul'Drak
 						["coord"] = { 14, 73.6 },
@@ -410,10 +385,56 @@ _.Zones =
 				n(-16, { 	-- Rares
 					n(33776, { -- Gondria
 						["description"] = "This is a very sought after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
+						["coords"] = {
+							
+						},
 						["groups"] = {
 							i(46324),	-- Gondria's Spectral Claw
+							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
+					{
+						["npcID"] = 32471,		-- Griegen [NPC]
+						["coords"] = {
+							
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 17,	-- Griegen [Criteria]
+							},
+							i(44686),	-- Ethereal Terror Handwraps
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+					{
+						["npcID"] = 32475,		-- Terror Spinner [NPC]
+						["coords"] = {
+							
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 18,	-- Terror Spinner [Criteria]
+							},
+							i(44685),	-- Calcified Web Spaulders
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+					{
+						["npcID"] = 32447,		-- Zul'drak Sentinel [NPC]
+						["coords"] = {
+							
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 16,	-- Zul'drak Sentinel [Criteria]
+							},
+							i(44677),	-- Eternal Observer's Legplates
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
 				}),
 				n(0, { 		-- Zone Drops
 					["groups"] = {

@@ -6,31 +6,6 @@ _.Zones =
 	m(113, { 	-- Northrend
 		m(116, {	-- Grizzly Hills
 			["groups"] = {
-				n(-4, {		-- Achievements
-					ach(2257, {	-- Frostbitten
-						{
-							["criteriaID"] = 13,	-- Grocklar [Criteria]
-							["qg"] = 32422,			-- Grocklar [NPC]
-							["groups"] = {
-								i(44675),	-- Rock-Giant's Pinky Cover
-							},
-						},
-						{
-							["criteriaID"] = 14,	-- Seething Hate [Criteria]
-							["qg"] = 32429,			-- Seething Hate [NPC]
-							["groups"] = {
-								i(44674),	-- Ichor-Stained Wraps
-							},
-						},
-						{
-							["criteriaID"] = 15,	-- Syreian the Bonecarver [Criteria]
-							["qg"] = 32438,			-- Syreian the Bonecarver [NPC]
-							["groups"] = {
-								i(44676),	-- Syreian's Leggings
-							},
-						},
-					}),
-				}),
 				n(-228, {	-- Flight Points
 					fp(253, { -- Amberpine Lodge, Grizzly Hills
 						["coord"] = { 31.2, 59.2 },
@@ -900,10 +875,83 @@ _.Zones =
 				n(-16, { 	-- Rares
 					n(38453, { -- Arcturis
 						["description"] = "This is a very sought after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
+						["coord"] = { 31.2, 55.4 },
 						["groups"] = {
 							i(51958),	-- Pristine Glowbear Pelt
+							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
+					{
+						["npcID"] = 32422,		-- Grocklar [NPC]
+						["coords"] = {
+							{ 28.0, 41.8 },
+							{ 10.8, 40.0 },
+							{ 12.2, 44.6 },
+							{ 13.2, 47.8 },
+							{ 13.4, 52.6 },
+							{ 12.8, 55.0 },
+							{ 15.2, 50.6 },
+							{ 21.4, 57.0 },
+							{ 24.0, 55.4 },
+							{ 24.0, 54.4 },
+							{ 26.2, 56.4 },
+							{ 24.8, 60.0 },
+							{ 11.2, 71.0 },
+							{ 13.4, 70.4 },
+							{ 16.0, 69.6 },
+							{ 18.4, 72.4 },
+							{ 21.0, 72.0 },
+							{ 21.8, 71.6 },
+							{ 22.6, 73.6 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 13,	-- Grocklar [Criteria]
+							},
+							i(44675),	-- Rock-Giant's Pinky Cover
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+					{
+						["npcID"] = 32429,		-- Seething Hate [NPC]
+						["coords"] = {
+							{ 28.6, 45.8 },
+							{ 34.8, 48.6 },
+							{ 40.0, 50.4 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 14,	-- Seething Hate [Criteria]
+							},
+							i(44674),	-- Ichor-Stained Wraps
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
+					{
+						["npcID"] = 32438,		-- Syreian the Bonecarver [NPC]
+						["coords"] = {
+							{ 61.2, 35.2 },
+							{ 63.4, 36.4 },
+							{ 65.6, 33.6 },
+							{ 66.6, 41.6 },
+							{ 65.2, 29.4 },
+							{ 67.6, 28.0 },
+							{ 68.8, 26.0 },
+							{ 69.0, 31.6 },
+							{ 71.6, 35.0 },
+							{ 75.2, 38.8 },
+						},
+						["groups"] = {
+							{
+								["achievementID"] = 2257,	-- Frostbitten [Achievement]
+								["criteriaID"] = 15,	-- Syreian the Bonecarver [Criteria]
+							},
+							i(44676),	-- Syreian's Leggings
+							i(44663),	-- Abandoned Adventurer's Satchel
+						},
+					},
 				}),
 				n(-2, {		-- Vendors
 					a(n(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
