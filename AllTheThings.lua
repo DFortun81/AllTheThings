@@ -1142,6 +1142,8 @@ end
 
 -- Lua Constructor Lib
 local fieldCache = {};
+local CacheFields;
+(function()
 fieldCache["currencyID"] = {};
 fieldCache["creatureID"] = {};
 fieldCache["encounterID"] = {};
@@ -1194,7 +1196,7 @@ local function CacheSubFieldID(group, field, subfield)
 		-- tinsert(fieldCache_f, {["g"] = { group }, ["parent"] = group, [subfield] = firldCache_g });
 	end
 end
-local function CacheFields(group)
+CacheFields = function(group)
 	CacheFieldID(group, "creatureID");
 	CacheFieldID(group, "currencyID");
 	CacheArrayFieldIDs(group, "creatureID", "crs");
@@ -1225,6 +1227,7 @@ local function CacheFields(group)
 	end
 end
 app.CacheFields = CacheFields;
+end)();
 
 -- Note Lib
 local function SetNote(key, id, note)
@@ -1488,6 +1491,20 @@ local function GetRelativeDifficulty(group, difficultyID)
 			return true;
 		end
 	end
+end
+local function GetRelativeMap(group, currentMapID)
+	if group then
+		if group.mapID then return group.mapID; end
+		if group.maps then
+			if contains(group.maps, currentMapID) then
+				return currentMapID;
+			else
+				return groups.maps[1];
+			end
+		end
+		if group.parent then return GetRelativeMap(group.parent, currentMapID); end
+	end
+	return currentMapID;
 end
 local function GetRelativeField(group, field, value)
 	if group then
@@ -1924,6 +1941,37 @@ app.UpdateSearchResults = function(searchResults)
 end
 
 -- Map Information Lib
+local function AddTomTomWaypoint(group)
+	if TomTom then
+		if group.coords then
+			local opt = {
+				title = group.text or group.link,
+				persistent = nil,
+				minimap = true,
+				world = true
+			};
+			local defaultMapID = GetRelativeMap(group, app.GetCurrentMapID());
+			for i, coord in ipairs(group.coords) do
+				TomTom:AddWaypoint(coord[3] or defaultMapID, coord[1] / 100, coord[2] / 100, opt);
+			end
+		end
+		if group.coord then
+			local opt = {
+				title = group.text or group.link,
+				persistent = nil,
+				minimap = true,
+				world = true
+			};
+			local defaultMapID = GetRelativeMap(group, app.GetCurrentMapID());
+			TomTom:AddWaypoint(group.coord[3] or defaultMapID, group.coord[1] / 100, group.coord[2] / 100, opt);
+		end
+		if group.g then
+			for i,subgroup in ipairs(group.g) do
+				AddTomTomWaypoint(subgroup);
+			end
+		end
+	end
+end
 local function ExpandGroupsRecursively(group, expanded, manual)
 	if group.g and ((not group.itemID and not (group.total and group.progress >= group.total)) or manual) then
 		group.expanded = expanded;
@@ -6412,6 +6460,7 @@ local function CreateMiniListForGroup(group)
 		UpdateGroups(popout.data, popout.data.g, 1);
 		newItem.visible = true;
 	end
+	AddTomTomWaypoint(popout.data);
 	if not popout.data.expanded then
 		ExpandGroupsRecursively(popout.data, true, true);
 	end
