@@ -14,7 +14,7 @@ _.Holidays =
 						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
 						["g"] = {
 							{	-- Blade's Edge Mountains, Evergrove
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 1,			-- Blade's Edge Mountains, Evergrove
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -27,6 +27,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 62.9, 38.3 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -37,7 +40,7 @@ _.Holidays =
 								},
 							},
 							{	-- Blade's Edge Mountains, Sylvanaar
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 2,			-- Blade's Edge Mountains, Sylvanaar
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -50,6 +53,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 35.8, 63.8 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -60,7 +66,7 @@ _.Holidays =
 								},
 							},
 							{	-- Blade's Edge Mountains, Toshley's Station
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 3,			-- Blade's Edge Mountains, Toshley's Station
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -73,6 +79,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 61, 68.1 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -83,7 +92,7 @@ _.Holidays =
 								},
 							},
 							{	-- Hellfire Peninsula, Honor Hold
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 4,			-- Hellfire Peninsula, Honor Hold
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -96,6 +105,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 54.3, 63.6 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -106,7 +118,7 @@ _.Holidays =
 								},
 							},
 							{	-- Hellfire Peninsula, Temple of Telhamat
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 5,			-- Hellfire Peninsula, Temple of Telhamat
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -119,6 +131,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 23.4, 36.5 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -129,7 +144,7 @@ _.Holidays =
 								},
 							},
 							{	-- Nagrand, Telaar
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 6,			-- Nagrand, Telaar
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -142,6 +157,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 54.2, 75.8 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -152,7 +170,7 @@ _.Holidays =
 								},
 							},
 							{	-- Netherstorm, Area 52
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 7,			-- Netherstorm, Area 52
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -165,6 +183,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 32, 64.4 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -175,7 +196,7 @@ _.Holidays =
 								},
 							},
 							{	-- Netherstorm, The Stormspire
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 8,			-- Netherstorm, The Stormspire
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -188,6 +209,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 43.4, 36.1 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -198,20 +222,24 @@ _.Holidays =
 								},
 							},
 							{	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 9,			-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									104,	-- Shadowmoon Valley
 								},
 								["coords"] = {
-									{ 56.3, 59.8 },	-- Scryers
-									{ 61.0, 28.2 },	-- Aldors
+									{ 30.3, 27.8 },	-- Scryer
+									{ 61.0, 28.2 },	-- Aldor
 								},
 								["g"] = {
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 30.3, 27.8 },	-- Scryer
+											{ 61.0, 28.2 },	-- Aldor
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -222,7 +250,7 @@ _.Holidays =
 								},
 							},
 							{	-- Shadowmoon Valley, Wildhammer Stronghold
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 10,			-- Shadowmoon Valley, Wildhammer Stronghold
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -235,6 +263,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 37.1, 58.2 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -245,7 +276,7 @@ _.Holidays =
 								},
 							},
 							{	-- Shattrath City, Aldor Rise or Scryer's Tier
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 11,			-- Shattrath City, Aldor Rise or Scryer's Tier
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -259,6 +290,10 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 56.2, 81.8 },	-- Scryer
+											{ 28.1, 49.0 },	-- Aldor
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -269,11 +304,11 @@ _.Holidays =
 								},
 							},
 							{	-- Terokkar Forest, Allerian Stronghold
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 12,			-- Terokkar Forest, Allerian Stronghold
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
-									108,	-- Terokkar Forest
+									108,	-- Terrokar Forest
 								},
 								["coords"] = {
 									{ 56.6, 53.2 },
@@ -282,6 +317,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 56.6, 53.2 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -292,7 +330,7 @@ _.Holidays =
 								},
 							},
 							{	-- Zangarmarsh, Cenarion Refuge
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 13,			-- Zangarmarsh, Cenarion Refuge
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -305,6 +343,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 78.5, 62.9 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -315,7 +356,7 @@ _.Holidays =
 								},
 							},
 							{	-- Zangarmarsh, Orebor Harborage
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 14,			-- Zangarmarsh, Orebor Harborage
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -328,6 +369,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 41.9, 26.2 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -338,7 +382,7 @@ _.Holidays =
 								},
 							},
 							{	-- Zangarmarsh, Telredor
-								["achievementID"] = 969,	-- Tricks and Treats of Outland
+								["achievementID"] = 969,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 15,			-- Zangarmarsh, Telredor
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -351,6 +395,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 67.2, 49 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -367,7 +414,7 @@ _.Holidays =
 						["races"] = HORDE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
 						["g"] = {
 							{	-- Blade's Edge Mountains, Evergrove
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 1,			-- Blade's Edge Mountains, Evergrove
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -380,6 +427,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 62.9, 38.3 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -388,9 +438,9 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Blade's Edge Mountains, Mok'Nathal Village
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 2,			-- Blade's Edge Mountains, Mok'Nathal Village
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -403,6 +453,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 76.2, 60.4 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -411,9 +464,9 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Blade's Edge Mountains, Thunderlord Stronghold
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 3,			-- Blade's Edge Mountains, Thunderlord Stronghold
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -426,6 +479,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 53.4, 55.5 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -434,9 +490,9 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Hellfire Peninsula, Falcon Watch
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 4,			-- Hellfire Peninsula, Falcon Watch
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -449,6 +505,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 26.9, 59.6 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -457,9 +516,9 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Hellfire Peninsula, Thrallmar
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 5,			-- Hellfire Peninsula, Thrallmar
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -472,6 +531,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 56.8, 37.5 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -480,9 +542,9 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Nagrand, Garadar
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 6,			-- Nagrand, Garadar
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -495,6 +557,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 56.7, 34.6 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -503,9 +568,9 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Netherstorm, Area 52
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 7,			-- Netherstorm, Area 52
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -518,6 +583,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 32, 64.4 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -526,9 +594,9 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Netherstorm, The Stormspire
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 8,			-- Netherstorm, The Stormspire
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -541,6 +609,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 43.4, 36.1 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -549,22 +620,24 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 9,			-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									104,	-- Shadowmoon Valley
 								},
 								["coords"] = {
-									{ 56.3, 59.8 },	-- Scryers
-									{ 61.0, 28.2 },	-- Aldors
+									{ 56.3, 59.8 },
 								},
 								["g"] = {
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 56.3, 59.8 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -573,21 +646,26 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Shadowmoon Valley, Shadowmoon Village
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 10,		-- Shadowmoon Valley, Shadowmoon Village
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									104,	-- Shadowmoon Valley
 								},
 								["coords"] = {
-									{ 30.3, 27.8 },
+									{ 30.3, 27.8 },	-- Scryer
+									{ 61.0, 28.2 },	-- Aldor
 								},
 								["g"] = {
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 30.3, 27.8 },	-- Scryer
+											{ 61.0, 28.2 },	-- Aldor
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -596,9 +674,9 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Shattrath City, Aldor Rise or Scryer's Tier
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 11,		-- Shattrath City, Aldor Rise or Scryer's Tier
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -612,6 +690,10 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 56.2, 81.8 },	-- Scryer
+											{ 28.1, 49.0 },	-- Aldor
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -620,13 +702,13 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Terokkar Forest, Stonebreaker Hold
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 12,		-- Terokkar Forest, Stonebreaker Hold
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
-									108,	-- Terokkar Forest
+									108,	-- Terrokar Forest
 								},
 								["coords"] = {
 									{ 48.8, 45.2 },
@@ -635,6 +717,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 48.8, 45.2 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -643,9 +728,9 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Zangarmarsh, Cenarion Refuge
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
 								["criteriaID"] = 14,		-- Zangarmarsh, Cenarion Refuge
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
@@ -658,6 +743,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 78.5, 62.9 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -666,10 +754,10 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 							{	-- Zangarmarsh, Zabra'jin
-								["achievementID"] = 968,	-- Tricks and Treats of Outland
-								["criteriaID"] = 13,			-- Zangarmarsh, Zabra'jin
+								["achievementID"] = 968,	-- Tricks and Treats of Outlands
+								["criteriaID"] = 13,		-- Zangarmarsh, Zabra'jin
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									102,	-- Zangarmarsh
@@ -681,6 +769,9 @@ _.Holidays =
 									{	-- Candy Bucket
 										["questID"] = 12406,	-- Candy Bucket
 										["u"] = 26,				-- Hallow's End Filter
+										["coords"] = {
+											{ 30.7, 50.9 },
+										},
 										["g"] = {
 											{	-- Handful of Treats
 												["itemID"] = 37586,	-- Handful of Treats
@@ -689,7 +780,7 @@ _.Holidays =
 										},
 									},
 								},
-							},
+							},	
 						},
 					},
 				},
