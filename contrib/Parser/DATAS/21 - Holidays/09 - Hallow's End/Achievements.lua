@@ -9,7 +9,7 @@ _.Holidays =
 			{	-- Achievements
 				["npcID"] = -4,	-- Achievements
 				["g"] = {
-					{	--  Hallowed Be Thy Name
+					{	-- Hallowed Be Thy Name
 						["achievementID"] = 1656,	-- Hallowed Be Thy Name
 						["g"] = {
 							{	-- <Name> the Hallowed
@@ -201,6 +201,22 @@ _.Holidays =
 									},
 								},
 							},
+						},
+					},
+					{	-- Tricks and Treats of Outlands [Alliance]
+						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
+						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
+						["achievementID"] = 969,	-- Tricks and Treats of Outlands
+						["races"] = ALLIANCE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
+						["g"] = {
+						},
+					},
+					{	-- Tricks and Treats of Outlands [H]
+						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
+						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
+						["achievementID"] = 968,	-- Tricks and Treats of Outlands
+						["races"] = HORDE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
+						["g"] = {
 						},
 					},
 					--Note!! These are not part of the meta and belong outside the meta achievement.

@@ -115,3 +115,7 @@ i(37011);	-- Magic Broom
 i(33184);	-- Swift Magic Broom
 i(33183);	-- Old Magic Broom
 i(33189);	-- Rickety Magic Broom
+i(128643);	-- Exquisite Costume Set: "Deathwing"
+i(138990);	-- Exquisite Costume Set: "Grommash"
+i(116828);	-- Exquisite Costume Set: "The Lich King"
+i(151268);	-- Exquisite Costume Set: "Xavius"
