@@ -2153,6 +2153,42 @@ _.Zones =
 						i(39607),	-- Heroes' Dreadnaught Legplates
 						i(39605),	-- Heroes' Dreadnaught Helmet
 					}),
+					n(32172, {	-- Harold Winston <Jewelry Vendor>
+						i(45820),	-- Brooch of the Wailing Night
+						i(40679),	-- Chained Military Gorget
+						i(40680),	-- Encircling Burnished Gold Chains
+						i(45822),	-- Evoker's Charm
+						i(45823),	-- Frozen Tear of Elune
+						i(40681),	-- Lattice Choker of Light
+						i(40678),	-- Pendant of the Outcast Hero
+						i(45821),	-- Shard of the Crystal Forest
+						i(45819),	-- Spiked Battleguard Choker
+						i(40719),	-- Band of Channeled Magic
+						i(47732),	-- Band of the Invoker
+						i(40586),	-- Band of the Kirin Tor
+						i(47729),	-- Bloodshed Band
+						i(47731),	-- Clutch of Fortification
+						i(47730),	-- Dexterous Brightstone Ring
+						i(48954),	-- Etched Band of the Kirin Tor
+						i(48955),	-- Etched Loop of the Kirin Tor
+						i(48956),	-- Etched Ring of the Kirin Tor
+						i(48957),	-- Etched Signet of the Kirin Tor
+						i(47733),	-- Heartmender Circle
+						i(45688),	-- Inscribed Band of the Kirin Tor
+						i(45689),	-- Inscribed Loop of the Kirin Tor
+						i(45690),	-- Inscribed Ring of the Kirin Tor
+						i(45691),	-- Inscribed Signet of the Kirin Tor
+						i(44934),	-- Loop of the Kirin Tor
+						i(40720),	-- Renewal of Life
+						i(40717),	-- Ring of Invincibility
+						i(44935),	-- Ring of the Kirin Tor
+						i(51560),	-- Runed Band of the Kirin Tor
+						i(51558),	-- Runed Loop of the Kirin Tor
+						i(51559),	-- Runed Ring of the Kirin Tor
+						i(51557),	-- Runed Signet of the Kirin Tor
+						i(40718),	-- Signet of the Impregnable Fortress
+						i(40585),	-- Signet of the Kirin Tor
+					}),
 					n(35498, {  -- Horace Hunderland <Plate Armor Merchant>
 						i(48371),	-- Wrynn's Helmet of Conquest			
 						i(48372),	-- Wrynn's Battleplate of Conquest
