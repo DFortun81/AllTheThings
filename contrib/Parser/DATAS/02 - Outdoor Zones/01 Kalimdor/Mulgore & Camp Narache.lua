@@ -247,21 +247,87 @@ _.Zones =
 							p(378),		-- Rabbit
 						}),
 						n(-17, {	-- Quests
-							qg(36694, qh(14461)),	-- Feed of Evil
-							qg(2980, qh(14458)),	-- Go to Adana
-							qg(2981, qh(24861)),	-- Last Rites, First Rites
-							qg(2980, qh(24852)),	-- Our Tribe, Imprisoned
-							qg(36694, qh(14456)),	-- Rite of Courage
-							qg(36694, qh(14460)),	-- Rite of Honor
-							qg(2980, qh(14452)),	-- Rite of Strength
-							qg(36803, qh(24215)),	-- Rite of the Winds
-							qg(2981, qh(23733)),	-- Rites of the Earthmother
-							qg(36694, qh(14455)),	-- Stop the Thorncallers
-							qg(36694, qh(14459)),	-- The Battleboars
-							qg(2981, qh(14449)),	-- The First Step
-							qg(63327, qh(31166, {	-- Tiger Palm
-								["classes"]= {10},
-							})),
+							["groups"] = {
+								q(14449, {	-- The First Step
+									["qg"] = 2981,	-- Chief Hawkwind
+									["coord"] = { 27.7, 28.5 },
+								}),
+								q(14452, {	-- Rite of Strength
+									["qg"] = 2980,	-- Grull Hawkwind
+									["coord"] = { 39.4, 37.0 },
+									["sourceQuest"] = 14449,	-- The First Step
+								}),
+								q(24852, {	-- Our Tribe, Imprisoned
+									["qg"] = 2980,	-- Grull Hawkwind
+									["coord"] = { 39.4, 37.0 },
+									["sourceQuest"] = 14452,	-- Rite of Strength
+								}),
+								q(14458, {	-- Go to Adana
+									["qg"] = 2980,	-- Grull Hawkwind
+									["coord"] = { 39.4, 37.0 },
+									["sourceQuest"] = 24852,	-- Our Tribe, Imprisoned
+								}),
+								q(14456, {	-- Rite of Courage
+									["qg"] = 36694,	-- Adana Thunderhorn
+									["coord"] = { 31.0, 50.6 },
+									["sourceQuest"] = 14458,	-- Go To Adana
+								}),
+								q(14455, {	-- Stop the Thorncallers
+									["qg"] = 36694,	-- Adana Thunderhorn
+									["coord"] = { 31.0, 50.6 },
+									["sourceQuest"] = 14458,	-- Go To Adana
+								}),
+								q(14461, {	-- Feed of Evil
+									["qg"] = 36694,	-- Adana Thunderhorn
+									["coord"] = { 31.0, 50.6 },
+									["sourceQuests"] = {
+										14456,	-- Rite of Courage
+										14455,	-- Stop the Thorncallers
+									},
+								}),
+								q(14459, {	-- The Battleboars
+									["qg"] = 36694,	-- Adana Thunderhorn
+									["coord"] = { 31.0, 50.6 },
+									["sourceQuests"] = {
+										14456,	-- Rite of Courage
+										14455,	-- Stop the Thorncallers
+									},
+								}),
+								q(14460, {	-- Rite of Honor
+									["qg"] = 36694,	-- Adana Thunderhorn
+									["coord"] = { 31.0, 50.6 },
+									["sourceQuests"] = {
+										14461,	-- Feed of Evil
+										14459,	-- The Battleboars
+									},
+								}),
+								q(24861, {	-- Last Rites, First Rites
+									["qg"] = 2981,	-- Chief Hawkwind
+									["coord"] = { 27.6, 28.4 },
+									["sourceQuest"] = 14460,	-- Rite of Honor
+								}),
+								q(23733, {	-- Rites of the Earthmother
+									["qg"] = 2981,	-- Chief Hawkwind
+									["coord"] = { 27.6, 28.4 },
+									["sourceQuest"] = 24861,	-- Last Rites, First Rites
+								}),
+								q(24215, {	-- Rite of the Winds
+									["qg"] = 36803,	-- Rite of the Winds
+									["coord"] = { 15.4, 30.4 },
+									["sourceQuest"] = 23733,	-- Rites of the Earthmother
+								}),
+							},
+							["races"] = HORDE_ONLY,
+						}),
+						n(-40, {
+							n(-17, {
+								un(40, q(31166, {	-- Tiger Palm
+									["qg"] = 63327,	-- Shoyu
+									["coord"] = { 27.8, 28.6 },
+									["races"] = HORDE_ONLY,
+									["classes"]= { 10 },	-- Monk
+								})),
+							}),
 						}),
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Tauren_Male",
