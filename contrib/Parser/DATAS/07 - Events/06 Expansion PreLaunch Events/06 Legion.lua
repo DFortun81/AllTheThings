@@ -111,7 +111,6 @@ _.WorldEvents =
 						}),
 						q(40718, { -- Calling of the Council
 							["qg"] = 114550, -- Khadgar's Upgraded Servant
-							--["sourceQuests"] = { 
 							["races"] = { 2, 5, 6, 8, 9, 10, 26, 27, 28 }, -- Horde Races
 						}),
 						q(44182, { -- City Under Siege
@@ -803,13 +802,14 @@ _.WorldEvents =
 							["u"] = 40,
 						}),
 						q(42970, { -- The Diamond King
-							["groups"] = {
-							},
 							["qg"] = 113655, -- Brann Bronzebeard
 							["sourceQuests"] = { 40717, 40718 }, -- Calling of the Council
 						}),
 						--q(42237),	-- Invasion: Tanaris
+						--q(43289),	-- Defend
 						--q(43294),	-- Repel
+						--q(43290),	-- Repel
+						--q(42236),	-- Invasion: Northern Barrens
 					}),
 					n(-2, { -- Vendors
 						n(109912, { -- Captive Wyrmtongue <Reluctant 'Quartermaster'>

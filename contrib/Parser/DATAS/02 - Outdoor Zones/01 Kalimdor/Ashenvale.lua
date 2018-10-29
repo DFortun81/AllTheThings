@@ -340,6 +340,7 @@ _.Zones =
 					}),
 					qh(13619, {	-- Final Report
 						["qg"] = 33294,	-- Gorat
+						["coord"] = { 64.2, 84.4 },
 						["sourceQuests"] = { 13618 },	-- Find Gorat!
 					}),
 					qa(26463, {	-- Finding Teronis
