@@ -1499,7 +1499,7 @@ local function GetRelativeMap(group, currentMapID)
 			if contains(group.maps, currentMapID) then
 				return currentMapID;
 			else
-				return groups.maps[1];
+				return group.maps[1];
 			end
 		end
 		if group.parent then return GetRelativeMap(group.parent, currentMapID); end
@@ -1946,6 +1946,7 @@ local function AddTomTomWaypoint(group)
 		if group.coords then
 			local opt = {
 				title = group.text or group.link,
+				minimap_icon = group.icon,
 				persistent = nil,
 				minimap = true,
 				world = true
@@ -1958,6 +1959,7 @@ local function AddTomTomWaypoint(group)
 		if group.coord then
 			local opt = {
 				title = group.text or group.link,
+				minimap_icon = group.icon,
 				persistent = nil,
 				minimap = true,
 				world = true
