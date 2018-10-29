@@ -249,7 +249,7 @@ _.Holidays =
 							},
 							{	-- Felwood - Talonbranch Glade
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 10,			-- Felwood - Talonbranch Glade
+								["criteriaID"] = 10,		-- Felwood - Talonbranch Glade
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									77,	-- Felwood
@@ -275,7 +275,7 @@ _.Holidays =
 							},
 							{	-- Felwood - Whisperwind Grove
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 11,			-- Felwood - Whisperwind Grove
+								["criteriaID"] = 11,		-- Felwood - Whisperwind Grove
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									77,	-- Felwood
@@ -301,7 +301,7 @@ _.Holidays =
 							},
 							{	-- Feralas, Dreamer's Rest
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 12,			-- Feralas, Dreamer's Rest
+								["criteriaID"] = 12,		-- Feralas, Dreamer's Rest
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									69,	-- Feralas
@@ -327,7 +327,7 @@ _.Holidays =
 							},
 							{	-- Feralas, Feathermoon Stronghold
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 14,			-- Feralas, Feathermoon Stronghold
+								["criteriaID"] = 14,		-- Feralas, Feathermoon Stronghold
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									69,	-- Feralas
@@ -353,7 +353,7 @@ _.Holidays =
 							},
 							{	-- Northern Barrens, Ratchet
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 13,			-- Northern Barrens, Ratchet
+								["criteriaID"] = 13,		-- Northern Barrens, Ratchet
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									10,	-- Northern Barrens
@@ -379,7 +379,7 @@ _.Holidays =
 							},
 							{	-- Silithus, Cenarion Hold
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 15,			-- Silithus, Cenarion Hold
+								["criteriaID"] = 15,		-- Silithus, Cenarion Hold
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									81,	-- Silithus
@@ -405,7 +405,7 @@ _.Holidays =
 							},
 							{	-- Southern Barrens, Fort Triumph
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 16,			-- Southern Barrens, Fort Triumph
+								["criteriaID"] = 16,		-- Southern Barrens, Fort Triumph
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									199,	-- Southern Barrens
@@ -431,7 +431,7 @@ _.Holidays =
 							},
 							{	-- Southern Barrens, Honor's Stand
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 17,			-- Southern Barrens, Honor's Stand
+								["criteriaID"] = 17,		-- Southern Barrens, Honor's Stand
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									199,	-- Southern Barrens
@@ -457,7 +457,7 @@ _.Holidays =
 							},
 							{	-- Southern Barrens, Northwatch Hold
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 18,			-- Southern Barrens, Northwatch Hold
+								["criteriaID"] = 18,		-- Southern Barrens, Northwatch Hold
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									199,	-- Southern Barrens
@@ -483,7 +483,7 @@ _.Holidays =
 							},
 							{	-- Stonetalon Mountains, Farwatcher's Glen
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 19,			-- Stonetalon Mountains, Farwatcher's Glen
+								["criteriaID"] = 19,		-- Stonetalon Mountains, Farwatcher's Glen
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									65,	-- Stonetalon Mountains
@@ -509,7 +509,7 @@ _.Holidays =
 							},
 							{	-- Stonetalon Mountains, Northwatch Expedition Base
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 20,			-- Stonetalon Mountains, Northwatch Expedition Base
+								["criteriaID"] = 20,		-- Stonetalon Mountains, Northwatch Expedition Base
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									65,	-- Stonetalon Mountains
@@ -535,7 +535,7 @@ _.Holidays =
 							},
 							{	-- Stonetalon Mountains, Thal'darah Overlook
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 21,			-- Stonetalon Mountains, Thal'darah Overlook
+								["criteriaID"] = 21,		-- Stonetalon Mountains, Thal'darah Overlook
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									65,	-- Stonetalon Mountains
@@ -561,7 +561,7 @@ _.Holidays =
 							},
 							{	-- Stonetalon Mountains, Windshear Hold
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 22,			-- Stonetalon Mountains, Windshear Hold
+								["criteriaID"] = 22,		-- Stonetalon Mountains, Windshear Hold
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									65,	-- Stonetalon Mountains
@@ -587,7 +587,7 @@ _.Holidays =
 							},
 							{	-- Tanaris, Bootlegger Outpost
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 23,			-- Tanaris, Bootlegger Outpost
+								["criteriaID"] = 23,		-- Tanaris, Bootlegger Outpost
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									71,	-- Tanaris
@@ -613,7 +613,7 @@ _.Holidays =
 							},
 							{	-- Tanaris, Gadgetzan
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 24,			-- Tanaris, Gadgetzan
+								["criteriaID"] = 24,		-- Tanaris, Gadgetzan
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									71,	-- Tanaris
@@ -639,7 +639,7 @@ _.Holidays =
 							},
 							{	-- Teldrassil, Dolanaar
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 25,			-- Teldrassil, Dolanaar
+								["criteriaID"] = 25,		-- Teldrassil, Dolanaar
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									57,	-- Teladrassil
@@ -665,7 +665,7 @@ _.Holidays =
 							},
 							{	-- Un'Goro Crater, Marshal's Stand
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 26,			-- Un'Goro Crater, Marshal's Stand
+								["criteriaID"] = 26,		-- Un'Goro Crater, Marshal's Stand
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									78,	-- Un'Goro Crater
@@ -691,7 +691,7 @@ _.Holidays =
 							},
 							{	-- Winterspring, Everlook
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-								["criteriaID"] = 27,			-- Winterspring, Everlook
+								["criteriaID"] = 27,		-- Winterspring, Everlook
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									83,	-- Winterspring
