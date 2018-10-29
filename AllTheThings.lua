@@ -913,36 +913,31 @@ app.IsComplete = function(o)
 end
 app.GetSourceID = GetSourceID;
 app.MaximumItemInfoRetries = 400;
+local function GetDisplayID(data)
+	if data.displayID then
+		return data.displayID;
+	elseif data.creatureID then
+		local displayID = app.NPCDB[data.creatureID];
+		if displayID then
+			return displayID;
+		elseif data.creatureID < 0 then
+			return math.abs(data.creatureID);
+		end
+	end
+	
+	if data.qgs and #data.qgs > 0 then
+		return app.NPCDB[data.qgs[1]];
+	end
+end
 local function SetPortraitIcon(self, data, x)
 	self.lastData = data;
 	if GetDataMember("ShowModels") then
-		if data.displayID then
-			app.SetPortraitTexture(self, data.displayID);
+		local displayID = GetDisplayID(data);
+		if displayID then
+			app.SetPortraitTexture(self, displayID);
 			self:SetWidth(self:GetHeight());
 			self:SetTexCoord(0, 1, 0, 1);
 			return true;
-		elseif data.creatureID then
-			local displayID = app.NPCDB[data.creatureID];
-			if displayID then
-				app.SetPortraitTexture(self, displayID);
-				self:SetWidth(self:GetHeight());
-				self:SetTexCoord(0, 1, 0, 1);
-				return true;
-			elseif data.creatureID < 0 then
-				-- A negative creature ID is actually a displayInfo ID.
-				app.SetPortraitTexture(self, math.abs(data.creatureID));
-				self:SetWidth(self:GetHeight());
-				self:SetTexCoord(0, 1, 0, 1);
-				return true;
-			end
-		elseif data.qgs and #data.qgs > 0 then
-			local displayID = app.NPCDB[data.qgs[1]];
-			if displayID then
-				app.SetPortraitTexture(self, displayID);
-				self:SetWidth(self:GetHeight());
-				self:SetTexCoord(0, 1, 0, 1);
-				return true;
-			end
 		end
 	end
 	
@@ -1943,29 +1938,31 @@ end
 -- Map Information Lib
 local function AddTomTomWaypoint(group)
 	if TomTom then
-		if group.coords then
+		if ((group.collectible and not group.collected) or (group.trackable and not group.saved) or (group.total and group.progress < group.total)) and (group.coords or group.coord) then
 			local opt = {
 				title = group.text or group.link,
-				minimap_icon = group.icon,
 				persistent = nil,
 				minimap = true,
 				world = true
 			};
+			if group.title then opt.title = opt.title .. "\n" .. group.title; end
+			if group.criteriaID then opt.title = opt.title .. "\nCriteria for " .. GetAchievementLink(group.achievementID); end
 			local defaultMapID = GetRelativeMap(group, app.GetCurrentMapID());
-			for i, coord in ipairs(group.coords) do
-				TomTom:AddWaypoint(coord[3] or defaultMapID, coord[1] / 100, coord[2] / 100, opt);
+			local displayID = GetDisplayID(group);
+			if displayID then
+				opt.minimap_displayID = displayID;
+				opt.worldmap_displayID = displayID;
 			end
-		end
-		if group.coord then
-			local opt = {
-				title = group.text or group.link,
-				minimap_icon = group.icon,
-				persistent = nil,
-				minimap = true,
-				world = true
-			};
-			local defaultMapID = GetRelativeMap(group, app.GetCurrentMapID());
-			TomTom:AddWaypoint(group.coord[3] or defaultMapID, group.coord[1] / 100, group.coord[2] / 100, opt);
+			if group.icon then
+				opt.minimap_icon = group.icon;
+				opt.worldmap_icon = group.icon;
+			end
+			if group.coords then
+				for i, coord in ipairs(group.coords) do
+					TomTom:AddWaypoint(coord[3] or defaultMapID, coord[1] / 100, coord[2] / 100, opt);
+				end
+			end
+			if group.coord then TomTom:AddWaypoint(group.coord[3] or defaultMapID, group.coord[1] / 100, group.coord[2] / 100, opt); end
 		end
 		if group.g then
 			for i,subgroup in ipairs(group.g) do
