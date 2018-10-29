@@ -698,7 +698,7 @@ _.Holidays =
 							},
 							{	-- Dalaran, Sunreaver's Sanctuary
 								["achievementID"] = 5835,	-- Tricks and Treats of Northrend
-								["criteriaID"] = 5,			-- Dalaran, Sunreaver's Sanctuary
+								["criteriaID"] = 6,			-- Dalaran, Sunreaver's Sanctuary
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									125,	-- Dalaran
@@ -724,7 +724,7 @@ _.Holidays =
 							},
 							{	-- Dalaran, The Legerdemain Lounge
 								["achievementID"] = 5835,	-- Tricks and Treats of Northrend
-								["criteriaID"] = 6,			-- Dalaran, The Legerdemain Lounge
+								["criteriaID"] = 5,			-- Dalaran, The Legerdemain Lounge
 								["u"] = 26,					-- Hallow's End Filter
 								["maps"] = {
 									125,	-- Dalaran
