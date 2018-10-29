@@ -237,28 +237,36 @@ _.Holidays =
 						},
 					},
 					{	-- Tricks and Treats of Cataclysm [A]
+						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
+						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 5837,	-- Tricks and Treats of Cataclysm
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 26,					-- Hallow's End Filter
-						--Note!! All individual criteria, for the following meta criteria, will actually be linked to the quest rather than here bloating the mini list for each zone.  By doing quest we can link it once and together rather than in chunks.
+						["g"] = {
+						},
 					},
 					{	-- Tricks and Treats of Cataclysm [H]
+						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
+						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 5838,	-- Tricks and Treats of Cataclysm
 						["races"] = HORDE_ONLY,
-						["u"] = 26,					-- Hallow's End Filter
-						--Note!! All individual criteria, for the following meta criteria, will actually be linked to the quest rather than here bloating the mini list for each zone.  By doing quest we can link it once and together rather than in chunks.
+						["g"] = {
+						},
 					},
 					{	-- Tricks and Treats of Pandaria [A]
+						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
+						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 7601,	-- Tricks and Treats of Pandaria
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 26,					-- Hallow's End Filter
-						--Note!! All individual criteria, for the following meta criteria, will actually be linked to the quest rather than here bloating the mini list for each zone.  By doing quest we can link it once and together rather than in chunks.
+						["g"] = {
+						},
 					},
 					{	-- Tricks and Treats of Pandaria [H]
+						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
+						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 7602,	-- Tricks and Treats of Pandaria
 						["races"] = HORDE_ONLY,
-						["u"] = 26,					-- Hallow's End Filter
-						--Note!! All individual criteria, for the following meta criteria, will actually be linked to the quest rather than here bloating the mini list for each zone.  By doing quest we can link it once and together rather than in chunks.
+						["g"] = {
+						},
 					},
 				},
 			},
