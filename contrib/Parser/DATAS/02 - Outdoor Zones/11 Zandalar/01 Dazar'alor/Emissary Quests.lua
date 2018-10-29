@@ -81,7 +81,10 @@ _.Zones =
 								i(163455),	-- Honorbound Centurion's Legplates
 								i(163460),	-- Honorbound Centurion's Greaves
 							}),
-							["qg"] = 135446,	-- Vindicator Jaelaana
+							["qg"] = 135447,	-- Ransa Greyfeather
+							["coords"] = {
+								{ 58.0, 62.6 },
+							},
 							["isDaily"] = true,
 							["lvl"] = 120,
 							["repeatable"] = true,
