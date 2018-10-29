@@ -2036,7 +2036,10 @@ local function OpenMiniList(field, id, label)
 							if g.g and g.achievementID == group.achievementID 
 								and g.u == group.u 
 								and g.races == group.races 
-								and g.c == group.c then
+								and g.c == group.c
+								and g.creatureID == group.creatureID 
+								and g.itemID == group.itemID 
+								and g.questID == group.questID then
 								group = group.g[1];
 								app.HolidayHeader.progress = app.HolidayHeader.progress + (group.progress or 0);
 								app.HolidayHeader.total = app.HolidayHeader.total + (group.total or 0);
