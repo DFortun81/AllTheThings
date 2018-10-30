@@ -124,17 +124,210 @@ _.Instances =
 								i(45087),	-- Runed Orb
 								i(45100),	-- Pattern: Belt of Arctic Life
 								i(45094),	-- Pattern: Belt of Dragons
-								i(45101),	-- Pattern: Boots of Wintry Endurance
 								i(45096),	-- Pattern: Blue Belt of Chaos
+								i(45095),	-- Pattern: Boots of Living Scale
+								i(45101),	-- Pattern: Boots of Wintry Endurance
 								i(45104),	-- Pattern: Cord of the White Dawn
+								i(45098),	-- Pattern: Death-Warmed Belt
+								i(45099),	-- Pattern: Footpads of Silence
+								i(45097),	-- Pattern: Lightning Grounded Boots
 								i(45102),	-- Pattern: Sash of Ancient Power
 								i(45105),	-- Pattern: Savior's Slippers
+								i(45103),	-- Pattern: Spellslinger's Slippers
 								i(45089),	-- Plans: Battlelord's Plate Boots
 								i(45088),	-- Plans: Belt of the Titans
 								i(45092),	-- Plans: Indestructible Plate Girdle
 								i(45090),	-- Plans: Plate Girdle of Righteousness
 								i(45093),	-- Plans: Spiked Deathdealers
 								i(45091),	-- Plans: Treads of Destiny
+							},
+						}),
+						n(-17, { -- Quests
+							{
+								["questID"] = 13607,	-- The Celestial Planetarium
+								["sourceQuest"] = 13604,	-- Archivum Data Disc
+								["qg"] = 33957,	-- Prospector Loren
+							},
+							{
+								["questID"] = 13606,	-- Freya's Sigil
+								["sourceQuest"] = 13607,	-- The Celestial Planetarium
+								["qg"] = 33957,	-- Prospector Loren
+								["crs"] = {
+									32906,	-- Freya
+								},
+								["groups"] = {
+									{
+										["itemID"] = 45788,	-- Freya's Sigil
+										["questID"] = 13606,	-- Freya's Sigil
+									},
+								},
+							},
+							{
+								["questID"] = 13609,	-- Hodir's Sigil
+								["sourceQuest"] = 13607,	-- The Celestial Planetarium
+								["qg"] = 33957,	-- Prospector Loren
+								["crs"] = {
+									32845,	-- Hodir
+								},
+								["groups"] = {
+									{
+										["itemID"] = 45786,	-- Hodir's Sigil
+										["questID"] = 13609,	-- Hodir's Sigil
+									},
+								},
+							},
+							{
+								["questID"] = 13611,	-- Mimiron's Sigil
+								["sourceQuest"] = 13607,	-- The Celestial Planetarium
+								["qg"] = 33957,	-- Prospector Loren
+								["crs"] = {
+									33350,	-- Mimiron
+								},
+								["groups"] = {
+									{
+										["itemID"] = 45787,	-- Mimiron's Sigil
+										["questID"] = 13611,	-- Mimiron's Sigil
+									},
+								},
+							},
+							{
+								["questID"] = 13610,	-- Thorim's Sigil
+								["sourceQuest"] = 13607,	-- The Celestial Planetarium
+								["qg"] = 33957,	-- Prospector Loren
+								["crs"] = {
+									32865,	-- Thorim
+								},
+								["groups"] = {
+									{
+										["itemID"] = 45784,	-- Thorim's Sigil
+										["questID"] = 13610,	-- Thorim's Sigil
+									},
+								},
+							},
+							{
+								["questID"] = 13614,	-- Algalon
+								["sourceQuests"] = {
+									13606,	-- Freya's Sigil
+									13609,	-- Hodir's Sigil
+									13611,	-- Mimiron's Sigil
+									13610,	-- Thorim's Sigil
+								},
+								["qg"] = 33957,	-- Prospector Loren
+								["crs"] = {
+									32871,	-- Algalon the Observer
+								},
+								["groups"] = {
+									{
+										["itemID"] = 45875,	-- Sack of Ulduar Spoils
+										["groups"] = {
+											i(45087),	-- Runed Orb
+										},
+									},
+								},
+							},
+							{
+								["questID"] = 13816,	-- Heroic: The Celestial Planetarium
+								["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
+								["qg"] = 33957,	-- Prospector Loren
+							},
+							{
+								["questID"] = 13821,	-- Heroic: Freya's Sigil
+								["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+								["qg"] = 33957,	-- Prospector Loren
+								["crs"] = {
+									32906,	-- Freya
+								},
+								["groups"] = {
+									{
+										["itemID"] = 45814,	-- Freya's Sigil
+										["questID"] = 13821,	-- Heroic: Freya's Sigil
+									},
+								},
+							},
+							{
+								["questID"] = 13822,	-- Heroic: Hodir's Sigil
+								["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+								["qg"] = 33957,	-- Prospector Loren
+								["crs"] = {
+									32845,	-- Hodir
+								},
+								["groups"] = {
+									{
+										["itemID"] = 45815,	-- Hodir's Sigil
+										["questID"] = 13822,	-- Heroic: Hodir's Sigil
+									},
+								},
+							},
+							{
+								["questID"] = 13824,	-- Heroic: Mimiron's Sigil
+								["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+								["qg"] = 33957,	-- Prospector Loren
+								["crs"] = {
+									33350,	-- Mimiron
+								},
+								["groups"] = {
+									{
+										["itemID"] = 45816,	-- Mimiron's Sigil
+										["questID"] = 13824,	-- Heroic: Mimiron's Sigil
+									},
+								},
+							},
+							{
+								["questID"] = 13823,	-- Heroic: Thorim's Sigil
+								["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+								["qg"] = 33957,	-- Prospector Loren
+								["crs"] = {
+									32865,	-- Thorim
+								},
+								["groups"] = {
+									{
+										["itemID"] = 45817,	-- Thorim's Sigil
+										["questID"] = 13823,	-- Heroic: Thorim's Sigil
+									},
+								},
+							},
+							{
+								["questID"] = 13818,	-- Heroic: Algalon
+								["sourceQuests"] = {
+									13821,	-- Heroic: Freya's Sigil
+									13822,	-- Heroic: Hodir's Sigil
+									13824,	-- Heroic: Mimiron's Sigil
+									13823,	-- Heroic: Thorim's Sigil
+								},
+								["qg"] = 33957,	-- Prospector Loren
+								["crs"] = {
+									32871,	-- Algalon the Observer
+								},
+								["groups"] = {
+									{
+										["itemID"] = 45798,	-- Heroic Celestial Planetarium Key
+										["questID"] = 13818,	-- Heroic: Algalon
+									},
+									{
+										["itemID"] = 45878,	-- Large Sack of Ulduar Spoils
+										["groups"] = {
+											i(45087),	-- Runed Orb
+											i(45100),	-- Pattern: Belt of Arctic Life
+											i(45094),	-- Pattern: Belt of Dragons
+											i(45096),	-- Pattern: Blue Belt of Chaos
+											i(45095),	-- Pattern: Boots of Living Scale
+											i(45101),	-- Pattern: Boots of Wintry Endurance
+											i(45104),	-- Pattern: Cord of the White Dawn
+											i(45098),	-- Pattern: Death-Warmed Belt
+											i(45099),	-- Pattern: Footpads of Silence
+											i(45097),	-- Pattern: Lightning Grounded Boots
+											i(45102),	-- Pattern: Sash of Ancient Power
+											i(45105),	-- Pattern: Savior's Slippers
+											i(45103),	-- Pattern: Spellslinger's Slippers
+											i(45089),	-- Plans: Battlelord's Plate Boots
+											i(45088),	-- Plans: Belt of the Titans
+											i(45092),	-- Plans: Indestructible Plate Girdle
+											i(45090),	-- Plans: Plate Girdle of Righteousness
+											i(45093),	-- Plans: Spiked Deathdealers
+											i(45091),	-- Plans: Treads of Destiny
+										},
+									},
+								},
 							},
 						}),
 						cr(33113, e(1637, {	-- Flame Leviathan
@@ -337,6 +530,14 @@ _.Instances =
 								i(45455),	-- Belt of the Crystal Tree
 								i(45244),	-- Greaves of Swift Vengeance
 								i(45456),	-- Loop of the Agile
+								{
+									["itemID"] = 45506,	-- Archivum Data Disc
+									["questID"] = 13604,	-- Archivum Data Disc
+								},
+								{
+									["itemID"] = 45857,	-- Archivum Data Disc
+									["questID"] = 13817,	-- Heroic: Archivum Data Disc
+								},
 							}),
 							ach(12335, {	-- But I'm On Your Side!
 								["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
