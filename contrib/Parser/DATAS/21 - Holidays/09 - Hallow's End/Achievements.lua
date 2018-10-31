@@ -487,11 +487,11 @@ _.Holidays =
 							},
 						},
 					},
-					{	-- Tricks and Treats of Kalimdor [Alliance]
+					{	-- Tricks and Treats of Kalimdor [A]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 963,		-- Tricks and Treats of Kalimdor
-						["races"] = ALLIANCE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
+						["races"] = ALLIANCE_ONLY,		-- Note!! We are marking this as Alliance only at the meta level only
 						["g"] = {
 						},
 					},
@@ -503,12 +503,27 @@ _.Holidays =
 						["g"] = {
 						},
 					},
-					
-					{	-- Tricks and Treats of Outlands [Alliance]
+					{	-- Tricks and Treats of Eastern Kingdoms [A]
+						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
+						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
+						["achievementID"] = 966,		-- Tricks and Treats of Eastern Kingdoms
+						["races"] = ALLIANCE_ONLY,		-- Note!! We are marking this as Alliance only at the meta level only
+						["g"] = {
+						},
+					},
+					{	-- Tricks and Treats of Eastern Kingdoms [H]
+						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
+						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
+						["achievementID"] = 967,	-- Tricks and Treats of Eastern Kingdoms
+						["races"] = HORDE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
+						["g"] = {
+						},
+					},
+					{	-- Tricks and Treats of Outlands [A]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 969,		-- Tricks and Treats of Outlands
-						["races"] = ALLIANCE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
+						["races"] = ALLIANCE_ONLY,		-- -- Note!! We are marking this as Alliance only at the meta level only
 						["g"] = {
 						},
 					},
@@ -524,7 +539,7 @@ _.Holidays =
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 5836,	-- Tricks and Treats of Northrend
-						["races"] = ALLIANCE_ONLY,
+						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 						["g"] = {
 						},
 					},
@@ -532,7 +547,7 @@ _.Holidays =
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 5835,	-- Tricks and Treats of Northrend
-						["races"] = HORDE_ONLY,
+						["races"] = HORDE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
 						["g"] = {
 						},
 					},
@@ -540,7 +555,7 @@ _.Holidays =
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 5837,	-- Tricks and Treats of Cataclysm
-						["races"] = ALLIANCE_ONLY,
+						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 						["g"] = {
 						},
 					},
@@ -548,7 +563,7 @@ _.Holidays =
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 5838,	-- Tricks and Treats of Cataclysm
-						["races"] = HORDE_ONLY,
+						["races"] = HORDE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
 						["g"] = {
 						},
 					},
@@ -556,7 +571,7 @@ _.Holidays =
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 7601,	-- Tricks and Treats of Pandaria
-						["races"] = ALLIANCE_ONLY,
+						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 						["g"] = {
 						},
 					},
@@ -564,7 +579,7 @@ _.Holidays =
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 7602,	-- Tricks and Treats of Pandaria
-						["races"] = HORDE_ONLY,
+						["races"] = HORDE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
 						["g"] = {
 						},
 					},
