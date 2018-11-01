@@ -9,7 +9,7 @@ _.Zones =
 			["groups"] = {
 				n(-2, {	-- Vendors
 					["groups"] = {
-						n(127156, {	-- Nigel Rifthold <Adventurer's Society>
+						n(142197, {	-- Nigel Rifthold <Adventurer's Society>
 							["groups"] = {
 								i(163493, {	-- Bloody Rabbit Fang
 									["description"] = "Defeat Cottontail Matron (located at 52.20, 46.80) for this item to appear on the vendor.",
