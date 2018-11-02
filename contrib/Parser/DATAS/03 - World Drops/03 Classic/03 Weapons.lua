@@ -107,6 +107,7 @@ _.WorldDrops =
 				}),	
 				n(-346, { -- Bows
 					i(10567),	-- Quillshooter
+					un(1, i(5748)),	-- Centaur Longbow
 					i(10624),	-- Stinging Bow
 					i(11303),	-- Fine Shortbow
 					i(11304),	-- Fine Longbow

@@ -1146,6 +1146,16 @@ _.Zones =
 								un(2, i(15462)),	-- Loamflake Bracers
 								un(2, i(15463)),	-- Palestrider Gloves
 							})),
+							{
+								["questID"] = 1197,	-- The Sacred Flame
+								["sourceQuest"] = 1196,	-- The Sacred Flame
+								["qg"] = 4722,	-- Rau Cliffrunner
+								["u"] = 40,
+								["groups"] = {
+									un(2, i(6739)),	-- Cliffrunner's Aim
+									un(2, i(6740)),	-- Azure Sash
+								},
+							},
 							un(40, qh(5147, {	-- Wanted - Arnak Grimtotem
 								un(2, i(15471)),	-- Brawnhide Armor
 								un(2, i(15470)), 	-- Plainsguard Leggings
