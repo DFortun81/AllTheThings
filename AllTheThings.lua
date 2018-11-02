@@ -7671,7 +7671,7 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		--[[]]--
+		--[[
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
 			db = {};
@@ -7707,7 +7707,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
-		--]][[--
+		[[--
 		
 		-- Illusions (Dynamic)
 		--[[
