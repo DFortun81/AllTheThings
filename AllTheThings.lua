@@ -7707,7 +7707,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
-		[[--
+		--]]
 		
 		-- Illusions (Dynamic)
 		--[[
