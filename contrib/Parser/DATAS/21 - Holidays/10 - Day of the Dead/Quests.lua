@@ -4,147 +4,291 @@
 _.Holidays =
 {
 	n(-59, { -- Day of the Dead
-		["groups"] = bubbleDown({["u"] = 27}, {
-			n(-17, { -- Quests
-				q(14166, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
+		{	-- Quests
+			["npcID"] = -17,	-- Quests
+			["g"] = {
+				{	-- The Grateful Dead [Azuremyst Isle - Draenei]
+					["questID"] = 14169,	-- The Grateful Dead
+					["qg"] = 34484,			-- Cheerful Draenei Spirit
+					["races"] = {
+						11,	-- Draenei
 					},
-					["qg"] = 35256, -- Cheerful Dalaran Spirit
-					["maps"] = { 
-						125, -- Dalaran (Northrend)
-						625, -- Dalaran (Broken Isles)
+					["coords"] = {
+						{ 47.6, 55.8 },
 					},
-					["description"] = "This quest is mutually exclusive with all race-bound versions of this quest. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(14172, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
-					},
-					["qg"] = 35260, -- Cheerful Aldor Spirit
-					["maps"] = { 111, }, -- Shattrath City
-					["description"] = "This quest is mutually exclusive with all race-bound versions of this quest. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(14173, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
-					},
-					["qg"] = 35261, -- Cheerful Scryer Spirit
-					["maps"] = { 111, }, -- Shattrath City
-					["description"] = "This quest is mutually exclusive with all race-bound versions of this quest. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(13952, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
-					},
-					["qg"] = 34435, -- Cheerful Human Spirit
-					["maps"] = { 84, }, -- Stormwind City
-					["races"] = { 1, }, -- Human
-					["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(14167, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
-					},
-					["qg"] = 34478, -- Cheerful Dwarf Spirit
-					["maps"] = { 27, }, -- Dun Morogh
-					["races"] = { 3, }, -- Dwarf
-					["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(14170, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
-					},
-					["qg"] = 34479, -- Cheerful Night Elf Spirit
-					["maps"] = { 89, }, -- Darnassus
-					["races"] = { 4, }, -- Night Elf
-					["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(14168, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
-					},
-					["qg"] = 34481, -- Cheerful Gnome Spirit
-					["maps"] = { 27, }, -- Dun Morogh
-					["races"] = { 7, }, -- Gnome
-					["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(14169, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
-					},
-					["qg"] = 34484, -- Cheerful Draenei Spirit
-					["maps"] = { 97, }, -- Azuremyst Isle
-					["races"] = { 11, }, -- Draenei
-					["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(27846, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
-					},
-					["qg"] = 46908, -- Cheerful Worgen Spirit
-					["maps"] = { 89, }, -- Darnassus
-					["races"] = { 22, }, -- Worgen
-					["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(14175, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
-					},
-					["qg"] = 34477, -- Cheerful Orc Spirit
-					["maps"] = { 1, }, -- Durotar
-					["races"] = { 2, }, -- Orc
-					["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(14174, { -- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
-					},
-					["qg"] = 34476, -- Cheerful Forsaken Spirit
 					["maps"] = {
-						18, -- Tirisfal Glades
-						90, -- Undercity
+						97,	-- Azuremyst Isle
 					},
-					["races"] = { 5, }, -- Undead
-					["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(14176, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
 					},
-					["qg"] = 34480, -- Cheerful Tauren Spirit
-					["maps"] = { 88, }, -- Thunder Bluff
-					["races"] = { 6, }, -- Tauren
-					["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(14177, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
+				},
+				{	-- The Grateful Dead [Dalaran - All]
+					["questID"] = 14166,	-- The Grateful Dead
+					["qg"] = 35256,			-- Cheerful Dalaran Spirit
+					["coords"] = {
+						{ 34.43, 38.17, 125 },	-- Dalaran: Northrend
+						{ 33.86, 38.36, 627 },	-- Dalaran: Broken Isles
 					},
-					["qg"] = 34482, -- Cheerful Troll Spirit
-					["maps"] = { 1, }, -- Durotar
-					["races"] = { 8, }, -- Troll
-					["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(27841, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
+					["maps"] = {
+						625,	-- Dalaran: Broken Isles
+						125,	-- Dalaran: Northrend
 					},
-					["qg"] = 46901, -- Cheerful Goblin Spirit
-					["maps"] = { 1, }, -- Durotar
-					["races"] = { 9, }, -- Goblin
-					["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-				q(14171, {	-- The Grateful Dead
-					["groups"] = {
-						un(27, i(46831)),	-- Macabre Marionette (Pet)
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
 					},
-					["qg"] = 34483, -- Cheerful Blood Elf Spirit
-					["maps"] = { 94, }, -- Eversong Woods
-					["races"] = { 10, }, -- Blood Elf
-					["description"] = "This quest is mutually exclusive with all versions found in Shattrath and Dalaran City. You must have a |cFFFFD700Bread of the Dead|r and a |cFFFFD700Marigold Flower|r to complete the quest.",
-				}),
-			}),
-		}),
+				},
+				{	-- The Grateful Dead [Darnassus - Night Elf]
+					["questID"] = 14170,	-- The Grateful Dead
+					["qg"] = 34479,			-- Cheerful Night Elf Spirit
+					["races"] = {
+						4,	-- Night Elf
+						29,	-- Void Elf
+					},
+					["coords"] = {
+						{ 68.6, 40.6 },
+					},
+					["maps"] = {
+						89,	-- Darnassus
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+				{	-- The Grateful Dead [Darnassus - Worgeen]
+					["questID"] = 27846,	-- The Grateful Dead
+					["qg"] = 46908,			-- Cheerful Worgen Spirit
+					["races"] = {
+						22,	-- Worgen
+					},
+					["coords"] = {
+						{ 68.6, 40.6 },
+					},
+					["maps"] = {
+						89,	-- Darnassus
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+				{	-- The Grateful Dead [Dun Morogh - Dwarf]
+					["questID"] = 14167,	-- The Grateful Dead
+					["qg"] = 34478,			-- Cheerful Dwarf Spirit
+					["races"] = {
+						3,	-- Dwarf
+					},
+					["coords"] = {
+						{ 61.6, 37.4 },
+					},
+					["maps"] = {
+						27,	-- Dun Moroghs
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+				{	-- The Grateful Dead [Dun Morogh - Gnome]
+					["questID"] = 14167,	-- The Grateful Dead
+					["qg"] = 34478,			-- Cheerful Gnome Spirit
+					["races"] = {
+						7,	-- Gnome
+					},
+					["coords"] = {
+						{ 61.6, 37.4 },
+					},
+					["maps"] = {
+						27,	-- Dun Moroghs
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+				{	-- The Grateful Dead [Durotar - Goblin]
+					["questID"] = 27841,	-- The Grateful Dead
+					["qg"] = 46901,			-- Cheerful Goblin Spirit
+					["races"] = {
+						9,	-- Goblin
+					},
+					["coords"] = {
+						{ 47.4, 17.6 },
+					},
+					["maps"] = {
+						1,	-- Durotar
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+				{	-- The Grateful Dead [Durotar - Orc]
+					["questID"] = 14175,	-- The Grateful Dead
+					["qg"] = 34477,			-- Cheerful Orc Spirit
+					["races"] = {
+						2,	-- Orc
+					},
+					["coords"] = {
+						{ 47.4, 17.6 },
+					},
+					["maps"] = {
+						1,	-- Durotar
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+				{	-- The Grateful Dead [Durotar - Troll]
+					["questID"] = 14177,	-- The Grateful Dead
+					["qg"] = 34482,			-- Cheerful Troll Spirit
+					["races"] = {
+						8,	-- Troll
+					},
+					["coords"] = {
+						{ 47.4, 17.6 },
+					},
+					["maps"] = {
+						1,	-- Durotar
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+				{	-- The Grateful Dead [Silvermoon City - Blood Elf]
+					["questID"] = 14171,	-- The Grateful Dead
+					["qg"] = 34483,			-- Cheerful Blood Elf Spirit
+					["races"] = {
+						10,	-- Blood Elf
+						27, -- Nightborne
+					},
+					["coords"] = {
+						{ 47.99, 49.47 },
+					},
+					["maps"] = {
+						94,	-- Eversong Woods
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+				{	-- The Grateful Dead [Stormwind City - Humans]
+					["questID"] = 13952,	-- The Grateful Dead
+					["qg"] = 34435,			-- Cheerful Human Spirit
+					["races"] = {
+						1,	-- Human
+					},
+					["coords"] = {
+						{ 47.6, 26.6 },
+					},
+					["maps"] = {
+						84,	-- Stormwind City
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+				{	-- The Grateful Dead [Terokkar Forest - Aldor - All]
+					["questID"] = 14172,	-- The Grateful Dead
+					["qg"] = 35260,			-- Cheerful Aldor Spirit
+					["coords"] = {
+						{ 40.16, 22.25 },
+					},
+					["maps"] = {
+						108,	-- Terokkar Forest
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+				{	-- The Grateful Dead [Terokkar Forest - Scryer - Alls]
+					["questID"] = 14173,	-- The Grateful Dead
+					["qg"] = 35261,			-- Cheerful Aldor Spirit
+					["coords"] = {
+						{ 40.16, 22.25 },
+					},
+					["maps"] = {
+						108,	-- Terokkar Forest
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+				{	-- The Grateful Dead [Tirisfal Glades - Undead]
+					["questID"] = 14174,	-- The Grateful Dead
+					["qg"] = 34476,			-- Cheerful Undead Spirit
+					["races"] = {
+						5,	-- Undead
+					},
+					["coords"] = {
+						{ 62.31, 68.32 },
+					},
+					["maps"] = {
+						18,	-- Tirisfal Glads
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+				{	-- The Grateful Dead []
+					["questID"] = 14176,	-- The Grateful Dead
+					["qg"] = 34480,			-- Cheerful Tauren Spirit
+					["races"] = {
+						6,	-- Tauren
+						28,	-- Highmountain Tauren
+					},
+					["coords"] = {
+						{ 56.8, 17.6 },
+					},
+					["maps"] = {
+						88,	-- Thunder Bluff
+					},
+					["g"] = {
+						{	-- Macabre Marionette
+							["itemID"] = 46831,	-- Macabre Marionette
+							["u"] = 27,			-- Day of the Dead Filter
+						},
+					},
+				},
+			},
+		},
 	}),
 };
