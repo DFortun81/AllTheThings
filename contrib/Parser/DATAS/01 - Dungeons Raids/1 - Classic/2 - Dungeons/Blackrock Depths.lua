@@ -564,7 +564,10 @@ _.Instances =
 						})),
 						cr(9543, n(9543, {	-- Ribbly Screwspigot
 							["groups"] = {	
-								i(11612), 		-- Plans: Dark Iron Plate
+								i(11612),	-- Plans: Dark Iron Plate
+								un(2, i(2663)),	-- Ribbly's Bandolier
+								un(2, i(2662)),	-- Ribbly's Quiver
+								i(11742),	-- Wayfarer's Knapsack
 							},
 							["description"]	= "Speak to him to start the event.",
 						})),

@@ -1279,6 +1279,8 @@ _.Zones =
 							i(19087),	-- Frostwolf Plate Belt
 							i(19325),	-- Don Julio's Band
 							i(21563),	-- Don Rodrigo's Band
+							un(2, i(19320)),	-- Gnoll Skin Bandolier
+							un(2, i(19319)),	-- Harpy Hide Quiver
 						},
 						["crs"] = {
 							13218,	-- Grunnda Wolfheart <Frostwolf Supply Officer>

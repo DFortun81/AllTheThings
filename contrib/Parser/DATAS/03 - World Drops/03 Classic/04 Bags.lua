@@ -6,7 +6,7 @@ _.WorldDrops =
 	{
 		["groups"] = {	-- Classic
 			filter(50, { -- Bags
-				
+				i(4500),	-- Traveler's Backpack
 			}),	
 		},
 		["tierID"] = 1

@@ -840,9 +840,6 @@ _.Zones =
 						un(40, qa(719, {	-- A Dwarf and His Tools
 							un(2, i(4978)),	-- Ryedol's Hammer
 						})),
-						un(40, qa(762, {	-- An Ambassador of Evil
-							un(2, i(4987)),	-- Dwarf Captain's Sword
-						})),
 						un(40, qdg(h({		-- Badlands Reagent Run II
 							["questID"] = 2258,	-- Badlands Reagent Run II
 							["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld

@@ -852,6 +852,15 @@ _.Zones =
 							un(40, qdg(qh(965, {	-- Serpentbloom
 								un(2, i(10919)),	-- Apothecary Gloves
 							}))),
+							{
+								["questID"] = 2440,	-- The Platinum Discs
+								["sourceQuest"] = 2280,	-- The Platinum Discs
+								["qg"] = 3978,	-- Sage Truthseeker
+								["u"] = 40,
+								["groups"] = {
+									un(2, i(9587)),	-- Thawpelt Sack
+								},
+							},
 						}),
 					},
 				}),

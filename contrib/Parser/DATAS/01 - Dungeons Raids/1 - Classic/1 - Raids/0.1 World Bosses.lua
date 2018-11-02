@@ -8,7 +8,17 @@ _.Instances = { tier(1, {	-- Classic
 			n(6109, {	-- Azuregos
 				["groups"] = {
 					un(2, i(18704, {	-- Mature Blue Dragon Sinew
-						q(7634),	-- Ancient Sinew Wrapped Lamina
+						{
+							["questID"] = 7634,	-- Ancient Sinew Wrapped Lamina
+							["qg"] = 14526,	-- Hastat the Ancient
+							["u"] = 2,
+							["groups"] = {
+								{
+									["itemID"] = 18714,	-- Ancient Sinew Wrapped Lamina
+									["u"] = 2,
+								},
+							},
+						},
 					})),
 					un(2, i(19130)),	-- Cold Snap
 					i(18202),	-- Eskhandar's Left Claw

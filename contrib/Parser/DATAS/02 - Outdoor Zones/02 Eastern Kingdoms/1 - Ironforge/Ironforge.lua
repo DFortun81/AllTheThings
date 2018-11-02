@@ -700,6 +700,15 @@ _.Zones =
 							un(40, qa(700, {	-- A King's Tribute
 								un(2, i(4535)),	-- Ironforge Memorial Ring
 							})),
+							{
+								["questID"] = 762,	-- An Ambassador of Evil
+								["sourceQuest"] = 726,	-- Passing Word of a Threat
+								["qg"] = 2916,	-- Historian Karnik
+								["u"] = 40,
+								["groups"] = {
+									un(2, i(4987)),	-- Dwarf Captain's Sword
+								},
+							},
 							un(40, qc1(qa(8912, { 	-- An Earnest Proposal
 								un(2, i(21996)),	-- Bracers of Heroism
 							}))),
@@ -836,6 +845,24 @@ _.Zones =
 							un(40, qa(1050, {	-- Mythology of the Titans
 								un(2, i(7746)),	-- Explorers' League Commendation
 							})),
+							{
+								["questID"] = 725,	-- Passing Word of a Threat
+								["sourceQuest"] = 725,	-- Passing Word of a Threat
+								["qg"] = 2916,	-- Historian Karnik
+								["u"] = 40,
+							},
+							{
+								["questID"] = 726,	-- Passing Word of a Threat
+								["sourceQuest"] = 725,	-- Passing Word of a Threat
+								["qg"] = 2918,	-- Advisor Belgrum
+								["u"] = 40,
+							},
+							{
+								["questID"] = 2963,	-- Portents of Uldum
+								["sourceQuest"] = 2439,	-- The Platinum Discs
+								["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
+								["u"] = 40,
+							},
 							un(40, qc1(qa(9006, {	-- Saving the Best for Last
 								un(2, i(21997)),	-- Breastplate of Heroism
 								un(2, i(21999)),	-- Helm of Heroism
@@ -872,14 +899,25 @@ _.Zones =
 								un(2, i(22109)),	-- Feralheart Cowl 
 								un(2, i(22113)),	-- Feralheart Vest
 							}))),
+							{
+								["questID"] = 2946,	-- Seeing What Happens
+								["sourceQuest"] = 2963,	-- Portents of Uldum
+								["qg"] = 2916,	-- Historian Karnik
+								["u"] = 40,
+							},
+							{
+								["questID"] = 2439,	-- The Platinum Discs
+								["sourceQuest"] = 2280,	-- The Platinum Discs
+								["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
+								["u"] = 40,
+								["groups"] = {
+									un(2, i(9587)),	-- Thawpelt Sack
+								},
+							},
 							un(40, qa(3701, {	-- The Smoldering Ruins of Thaurissan
 								un(2, i(12102)),	-- Ring of the Aristocrat
 							})),
 						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 					},
 				}),
 			},

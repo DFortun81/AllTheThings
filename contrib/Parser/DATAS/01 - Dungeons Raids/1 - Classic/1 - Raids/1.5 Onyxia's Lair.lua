@@ -87,6 +87,7 @@ _.Instances = { tier(1, {	-- Classic
 									})),
 								},
 							},
+							un(2, i(17966)),	-- Onyxia Hide Backpack (Bag)
 							un(2, i(17068)),	-- Deathbringer
 							un(2, i(17075)),	-- Vis'kag the Bloodletter
 							un(2, i(17067)),	-- Ancient Cornerstone Grimoire

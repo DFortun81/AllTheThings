@@ -45,11 +45,18 @@ _.Instances =
 							["qg"] = 46236,	-- High Examiner Tae'thelan
 						}),
 						o(131474, {	-- The Discs of Norgannon
-							q(2278),	-- The Platinum Discs
-							q(2280, {	-- The Platinum Discs
-								i(65921),	-- Durdin's Hammer
-								i(65947),	-- Platinum Sword
-							}),
+							{
+								["questID"] = 2278,	-- The Platinum Discs
+							},
+							{
+								["questID"] = 2280,	-- The Platinum Discs
+								["sourceQuest"] = 2278,	-- The Platinum Discs
+								["groups"] = {
+									i(65921),	-- Durdin's Hammer
+									i(65947),	-- Platinum Sword
+									i(65971),	-- Band of Uldaman
+								},
+							},
 						}),
 						qh(27682, {	-- We Require More Minerals
 							["groups"] = {

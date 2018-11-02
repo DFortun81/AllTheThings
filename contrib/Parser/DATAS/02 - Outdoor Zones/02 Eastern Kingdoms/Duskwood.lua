@@ -679,6 +679,14 @@ _.Zones =
 								un(2, i(2044)),	-- Crescent of Forlorn Spirits
 								un(2, i(2043)),	-- Ring of Forlorn Spirits
 							})),
+							un(40, qa(58, {		-- The Night Watch
+								["qg"] = 264,	-- Commander Althea Ebonlocke <Leader of The Night Watch>
+								["groups"] = {
+									un(2, i(3604)),	-- Bandolier of the Night Watch
+									un(2, i(1729)),	-- Gunnysack of the Night Watch
+									un(2, i(3605)),	-- Quiver of the Night Watch
+								},
+							})),
 							un(40, qa(101, {	-- The Totem of Infliction
 								un(2, i(1131)),	-- Totem of Infliction
 							})),
