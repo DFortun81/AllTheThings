@@ -119,7 +119,7 @@ _.Instances =
 						i(151413),	-- Smolderthorn Greatbelt
 						un(7, i(16712)), 	-- Shadowcraft Gloves																				
 					})),
-					n( 16080, {			-- Mor Greyhoof Summonable Read Description
+					n( 16080, {			-- Mor Grayhoof Summonable Read Description
 						["groups"] = {
 							i(22057, {	
 								un(11, i(22325)), -- Belt of the Trickster
@@ -172,12 +172,12 @@ _.Instances =
 						["description"] = "Summonable Boss. Loot a Roughshod Pike, it will be on the left wall after crossing the second bridge before heading to Highlord Omokk. Then kill Highlord Omokk and loot his head. After killing Mother Smolderweb head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
 					})),
 					cr( 9736, e(393, {	-- Quartermaster Zigris
+						i(12835),	-- Plans: Annihilator
 						i( 12264),	-- Worg Carrier (PET!)
 						i( 13253),	-- Hands of Power
 						i( 13252),	-- Cloudrunner Girdle
 						i(151416),	-- Dark Horde Grunt's Legplates
 						i(151415),	-- Veteran Spearman's Chain Boots
-						i(12835),	-- Plans: Annihilator
 						un(7, i(16680)),	-- Beaststalker's Belt
 						un(7, i(16735)),	-- Bracers of Valor
 						un(7, i(16673)),	-- Cord of Elements

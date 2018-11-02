@@ -164,10 +164,18 @@ _.Zones =
 					qpvp(qa(7170, {	-- Earned Reverence
 						["qg"] = 13841,	-- Lieutenant Haggerdin
 						["sourceQuests"] = { 7169 },	-- Honored Among the Guard
+						["lvl"] = 51,
+						["groups"] = {
+							i(17902),	-- Stormpike Insignia Rank 4
+						},
 					})),
 					qpvp(qh(7165, {	-- Earned Reverence
 						["qg"] = 13840,	-- Warmaster Laggrond
 						["sourceQuests"] = { 7164 },	-- Honored Amongst the Clan
+						["lvl"] = 51,
+						["groups"] = {
+							i(17907),	-- Frostwolf Insignia Rank 4
+						},
 					})),
 					qh(28620, {	-- Eastpoint Tower
 						["qg"] = 2229,	-- Krusk
@@ -259,10 +267,18 @@ _.Zones =
 					qpvp(qa(7169, {	-- Honored Amongst the Guard
 						["qg"] = 13841,	-- Lieutenant Haggerdin
 						["sourceQuests"] = { 7168 },	-- Rise and be Recognized
+						["lvl"] = 51,
+						["groups"] = {
+							i(17901),	-- Stormpike Insignia Rank 3
+						},
 					})),
 					qpvp(qh(7164, {	-- Honored Amongst the Clan
 						["qg"] = 13840,	-- Warmaster Laggrond
 						["sourceQuests"] = { 7163 },	-- Rise and be Recognized
+						["lvl"] = 51,
+						["groups"] = {
+							i(17906),	-- Frostwolf Insignia Rank 3
+						},
 					})),
 					qh(28138, { -- Human Infestation
 						["groups"] = {
@@ -308,10 +324,18 @@ _.Zones =
 					qpvp(qa(7171, {	-- Legendary Heroes
 						["qg"] = 13841,	-- Lieutenant Haggerdin
 						["sourceQuests"] = { 7170 },	-- Earned Reverence
+						["lvl"] = 51,
+						["groups"] = {
+							i(17903),	-- Stormpike Insignia Rank 5
+						},
 					})),
 					qpvp(qh(7166, {	-- Legendary Heroes
 						["qg"] = 13840,	-- Warmaster Laggrond
 						["sourceQuests"] = { 7165 },	-- Earned Reverence
+						["lvl"] = 51,
+						["groups"] = {
+							i(17908),	-- Frostwolf Insignia Rank 5
+						},
 					})),
 					{
 						["qg"] = 45728,	-- Arcane Remnant
@@ -393,19 +417,34 @@ _.Zones =
 					}),
 					qpvp(qa(7162, {	-- Proving Grounds
 						["qg"] = 13841,	-- Lieutenant Haggerdin
+						["lvl"] = 51,
+						["groups"] = {
+							i(17691),	-- Stormpike Insignia Rank 1
+						},
 					})),
 					qpvp(qh(7161, {	-- Proving Grounds
 						["qg"] = 13840,	-- Warmaster Laggrond
 						["lvl"] = 51,
+						["groups"] = {
+							i(17690),	-- Frostwolf Insignia Rank 1
+						},
 					})),
 --					q(43297),	-- Repel (REMOVED, part of Legion pre-patch)
 					qpvp(qa(7168, {	-- Rise and Be Recognized
 						["qg"] = 13841,	-- Lieutenant Haggerdin
 						["sourceQuests"] = { 7162 },	-- Proving Grounds
+						["lvl"] = 51,
+						["groups"] = {
+							i(17900),	-- Stormpike Insignia Rank 2
+						},
 					})),
 					qpvp(qh(7163, {	-- Rise and Be Recognized
 						["qg"] = 13840,	-- Warmaster Laggrond
 						["sourceQuests"] = { 7161 },	-- Proving Grounds
+						["lvl"] = 51,
+						["groups"] = {
+							i(17905),	-- Frostwolf Insignia Rank 2
+						},
 					})),
 					ql(q(30116, {	-- Sharpening Your Fangs
 						["qg"] = 57777,	-- Wrathion
@@ -490,8 +529,22 @@ _.Zones =
 					qh(28643, {	-- The Durnholde Challenge: Zephyrus
 						["qg"] = 49243,	-- Captain Jekyll
 					}),
---					qh( 7167),	-- The Eye of Command (REMOVED?)
---					qa( 7172),	-- The Eye of Command (REMOVED?)
+					qpvp(qa(7172, {	-- The Eye of Command
+						["qg"] = 13841,	-- Lieutenant Haggerdin
+						["sourceQuests"] = { 7171 },	-- Legendary Heroes
+						["lvl"] = 51,
+						["groups"] = {
+							i(17904),	-- Stormpike Insignia Rank 6
+						},
+					})),
+					qpvp(qh(7167, {	-- The Eye of Command
+						["qg"] = 13840,	-- Warmaster Laggrond
+						["sourceQuests"] = { 7166 },	-- Legendary Heroes
+						["lvl"] = 51,
+						["groups"] = {
+							i(17909),	-- Frostwolf Insignia Rank 6
+						},
+					})),
 					qh(28484, { -- The Heart of the Matter
 						["groups"] = {
 							i(65720),	-- Tell-Tale Bracers

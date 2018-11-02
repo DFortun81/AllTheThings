@@ -50,6 +50,7 @@ _.WorldDrops =
 					un(7, i(20695)),	-- Abyssal War Beads
 					i(20830),	-- Amulet of the Moon
 					i(21755),	-- Aquamarine Pendant of the Warrior
+					un(1, i(21793)),	-- Arcanite Sword Pendant
 					i(30726),	-- Archaic Charm of Presence
 					i(12044),	-- Arctic Pendant
 					i(20909),	-- Barbaric Iron Collar

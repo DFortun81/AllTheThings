@@ -225,6 +225,8 @@ _.Instances =
 									un(2, i(22332)),	-- Blade of Necromancy
 									un(2, i(22333)),	-- Hammer of Divine Might
 									un(2, i(22303)),	-- Ironweave Pants
+									un(2, i(22326)),	-- Amalgam's Band
+									un(2, i(22331)),	-- Band of the Steadfast Hero
 								},
 								["description"] = "This boss was summoned using the Brazier of Beckoning.",
 							}),
