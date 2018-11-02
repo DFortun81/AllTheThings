@@ -51,6 +51,13 @@ _.Instances =
 										11456,	-- Wildspawn Shadowstalker
 									},
 								}),
+								i(18343, {	-- Petrified Band
+									["crs"] = {
+										11459,	-- Ironbark Protector
+										14303,	-- Petrified Guardian
+										11458,	-- Petrified Treant
+									},
+								}),
 								i(18295, {	-- Phasing Boots
 									["crs"] = {
 										13196,	-- Phase Lasher

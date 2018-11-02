@@ -577,10 +577,20 @@ _.Zones =
 						},
 						["description"] = "Must have completed 'Rescue OOX/FE!' 'Rescue OOX 17/TN!' and 'Rescue OOX-09/HL!'"
 					})),
---[[					
-					qg(, q(8194)),	-- Apprentice Angler
-					qg(14508, q(7838)),	-- Arena Grandmaster
-					qg(, q(7810)),	-- Arena Master
+					-- qg(, q(8194)),	-- Apprentice Angler
+					{
+						["questID"] = 7838,	-- Arena Grandmaster
+						["sourceQuest"] = 7810,	-- Arena Master
+						["qg"] = 14508,	-- Short John Mithril
+						["groups"] = {
+							i(19024),	-- Arena Grand Master
+						},
+					},
+					{
+						["questID"] = 7810,	-- Arena Master
+						["qg"] = 14508,	-- Short John Mithril
+					},
+--[[
 					qg(, q(31851)),	-- Bill Buckler
 					qg(, q(31728)),	-- Bill Buckler
 					qg(, qh( 29252)),	-- Booty Bay's Interests
@@ -658,13 +668,16 @@ _.Zones =
 				n(-16, {	-- Rares
 					o(179697, {	-- Arena Treasure Chest (FFA PvP)
 						["groups"] = {
-							i(18706, {
-								ach(396, {		-- Arena Grandmaster
-									["groups"] = {
-										i(126948)		-- Defending Champion (BoA Trinket)
-									},
-									["description"] = "You must gather 12x Arena Master trinkets on ONE character. Once you have the achievement, the next time you open the chest on any character you can get the Defending Champion in addition to the other spoils.",
-								})
+							i(18706, {	-- Arena Master
+								["questID"] = 7810,	-- Arena Master
+								["groups"] = {
+									ach(396, {		-- Arena Grandmaster
+										["groups"] = {
+											i(126948)		-- Defending Champion (BoA Trinket)
+										},
+										["description"] = "You must gather 12x Arena Master trinkets on ONE character. Once you have the achievement, the next time you open the chest on any character you can get the Defending Champion in addition to the other spoils.",
+									}),
+								},
 							}),
 							i(122222),			-- Music Roll: Angelic
 							dr(7, {				-- Rare Drops (7% Chance)
@@ -679,6 +692,9 @@ _.Zones =
 						},
 						["modelID"] = 64648,
 						["description"] = "WARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM\nThose are the times the chest spawns.\nNote: The spawn times are SERVER time, not local time.",
+					}),
+					n(690, {	-- Cold Eye Basilisk
+						i(5079),	-- Cold Basilisk Eye
 					}),
 					n(14491, { 	-- Kurmokk
 						dr(04.0, i(7409)),	-- Infiltrator Boots

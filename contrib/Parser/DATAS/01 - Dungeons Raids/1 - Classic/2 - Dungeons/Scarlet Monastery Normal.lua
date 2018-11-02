@@ -216,9 +216,11 @@ _.Instances =
 										}),
 										n(3976, {	-- Scarlet Commander Mograine
 											un(2, i(7726)),	-- Aegis of the Scarlet Commander
+											un(7, i(7761)),	-- Steelclaw Reaver
 											un(2, i(7724)),	-- Gauntlets of Divinity
 											un(2, i(7723)),	-- Mograine's Might
 											un(2, i(10330)),	-- Scarlet Leggings
+											un(7, i(2262)),	-- Mark of Kern
 										}),
 										n(3977, {	-- High Inquisitor Whitemane
 											un(2, i(7721)),	-- Hand of Righteousness

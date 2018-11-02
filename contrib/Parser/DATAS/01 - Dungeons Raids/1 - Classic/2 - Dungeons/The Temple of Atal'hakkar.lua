@@ -157,6 +157,14 @@ _.Instances =
 								5280,	-- Nightmare Wyrmkin
 							},
 						}),
+						i(10634, {	-- Mindseye Circle
+							["crs"] = {
+								5271,	-- Atal'ai Deathwalker
+								5277,	-- Nightmare Scalebane
+								5283,	-- Nightmare Wanderer
+								5280,	-- Nightmare Wyrmkin
+							},
+						}),
 					}),
 					cr(8443, e(457, { 	-- Avatar of Hakkar
 						i(10844),	-- Spire of Hakkar

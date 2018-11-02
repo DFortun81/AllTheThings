@@ -585,7 +585,8 @@ _.Zones =
 								un(7, i(826)),		-- Brutish Riverpaw Axe
 							}),
 							un(43, n(125, { 	-- Riverpaw Overseer
-								un(7, i(1190)),		-- Overseer's Cloak
+								un(7, i(1190)),	-- Overseer's Cloak
+								un(7, i(1189)),	-- Overseer's Ring
 							})),
 						}),
 						--n(  0, {	-- Zone Drop (Legacy)

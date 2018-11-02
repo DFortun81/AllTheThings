@@ -688,6 +688,139 @@ _.WorldDrops =
 					un(7, i(9382)),	-- Tromping Miner's Boots
 					i(9510),	-- Caverndeep Trudgers
 				}),
+				filter(52, {	-- Finger
+					i(11968),	-- Amber Hoop
+					i(11971),	-- Amethyst Band
+					i(11974),	-- Aquamarine Ring
+					i(12014),	-- Arctic Ring
+					i(13095),	-- Assault Band
+					i(4999),	-- Azora's Will
+					i(12996),	-- Band of Purification
+					un(7, i(20721)),	-- Band of the Cultist
+					i(13096),	-- Band of the Hierophant
+					i(7553),	-- Band of the Unicorn
+					i(5007),	-- Band of Thorns
+					i(11996),	-- Basalt Ring
+					un(7, i(6332)),	-- Black Pearl Ring
+					un(7, i(6199)),	-- Black Widow Band
+					i(4998),	-- Blood Ring
+					i(13093),	-- Blush Ember Ring
+					i(6440),	-- Brainlash
+					i(11972),	-- Carnelian Loop
+					i(11985),	-- Cerulean Ring
+					i(11983),	-- Chrome Ring
+					i(11993),	-- Clay Ring
+					i(11984),	-- Cobalt Ring
+					i(11994),	-- Coral Band
+					un(7, i(1077)),	-- Defias Mage Ring
+					un(7, i(1076)),	-- Defias Renegade Ring
+					i(12054),	-- Demon Band
+					i(12058),	-- Demonic Bone Ring
+					i(12013),	-- Desert Ring
+					i(12057),	-- Dragonscale Band
+					i(5266),	-- Eye of Adaegus
+					i(7552),	-- Falcon's Hook
+					i(12010),	-- Fen Ring
+					i(12011),	-- Forest Hoop
+					i(942),	-- Freezing Band
+					un(7, i(18679)),	-- Frigid Ring
+					i(12005),	-- Granite Ring
+					i(11997),	-- Greenstone Circle
+					un(7, i(18674)),	-- Hardened Stone Band
+					i(5001),	-- Heart Ring
+					i(11973),	-- Hematite Link
+					i(18701),	-- Innervating Band
+					un(7, i(5010)),	-- Inscribed Gold Ring
+					i(11987),	-- Iridium Circle
+					i(11995),	-- Ivory Band
+					i(11969),	-- Jacinth Circle
+					i(11978),	-- Jasper Link
+					i(11998),	-- Jet Loop
+					i(12016),	-- Jungle Ring
+					i(11981),	-- Lead Band
+					i(11999),	-- Lodestone Hoop
+					i(13001),	-- Maiden's Circle
+					i(12002),	-- Marble Circle
+					un(7, i(2262)),	-- Mark of Kern
+					i(12012),	-- Marsh Ring
+					i(12006),	-- Meadow Ring
+					i(5009),	-- Mindbender Loop
+					i(10634),	-- Mindseye Circle
+					un(7, i(20692)),	-- Multicolored Band
+					i(2246),	-- Myrmidon's Signet
+					i(12004),	-- Obsidian Band
+					i(1993),	-- Ogremind Ring
+					i(12001),	-- Onyx Ring
+					i(11980),	-- Opal Ring
+					un(7, i(1189)),	-- Overseer's Ring
+					i(11979),	-- Peridot Circle
+					i(18343),	-- Petrified Band
+					i(2039),	-- Plains Ring
+					i(12007),	-- Prairie Ring
+					i(12017),	-- Prismatic Band
+					i(5743),	-- Prismstone Ring
+					i(11965),	-- Quartz Ring
+					un(7, i(5008)),	-- Quicksilver Ring
+					i(11991),	-- Quicksilver Ring
+					i(12985),	-- Ring of Defense
+					i(1491),	-- Ring of Precision
+					i(1447),	-- Ring of Saviors
+					i(12056),	-- Ring of the Heavens
+					i(12052),	-- Ring of the Moon
+					un(7, i(1462)),	-- Ring of the Shadow
+					i(2951),	-- Ring of the Underwood
+					i(862),	-- Runed Ring
+					i(11976),	-- Sardonyx Knuckle
+					i(12008),	-- Savannah Ring
+					i(11990),	-- Selenium Loop
+					i(11977),	-- Serpentine Loop
+					i(11970),	-- Spinel Ring
+					i(12055),	-- Stardust Band
+					i(12015),	-- Swamp Ring
+					i(11988),	-- Tellurium Band
+					i(11986),	-- Thallium Hoop
+					{
+						["itemID"] = 8350,	-- The 1 Ring
+						["description"] = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
+					},
+					i(13094),	-- The Queen's Jewel
+					i(13097),	-- Thunderbrow Ring
+					i(11975),	-- Topaz Ring
+					i(12009),	-- Tundra Ring
+					i(1980),	-- Underworld Band
+					i(11989),	-- Vanadium Loop
+					i(11992),	-- Vermilion Band
+					i(11982),	-- Viridian Band
+					i(12053),	-- Volcanic Rock Ring
+					un(7, i(1996)),	-- Voodoo Band
+					i(5011),	-- Welken Ring
+					i(11967),	-- Zircon Band
+				}),
+				filter(53, {	-- Trinket
+					i(1713),	-- Ankh of Life
+					i(16022),	-- Arcanite Dragonling
+					i(2802),	-- Blazing Emblem
+					un(7, i(5079)),	-- Cold Basilisk Eye
+					i(19288),	-- Darkmoon Card: Blue Dragon
+					i(19287),	-- Darkmoon Card: Heroism
+					i(19289),	-- Darkmoon Card: Maelstrom
+					i(19290),	-- Darkmoon Card: Twisting Nether
+					i(4397),	-- Gnomish Cloaking Device
+					i(10720),	-- Gnomish Net-o-Matic Projector
+					i(10716),	-- Gnomish Shrink Ray
+					i(7506),	-- Gnomish Universal Remote
+					i(10577),	-- Goblin Mortar
+					i(18634),	-- Gyrofreeze Ice Reflector
+					i(18638),	-- Hyper-Radiant Flame Reflector
+					i(833),	-- Lifestone
+					i(4396),	-- Mechanical Dragonling
+					i(10576),	-- Mithril Mechanical Dragonling
+					i(7734),	-- Six Demon Bag
+					un(7, i(18665)),	-- The Eye of Shadow
+					un(7, i(14557)),	-- The Lion Horn of Stormwind
+					i(18639),	-- Ultra-Flash Shadow Reflector
+					i(11302),	-- Uther's Strength
+				}),
 			}),	
 		},
 		["tierID"] = 1

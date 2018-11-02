@@ -836,6 +836,7 @@ END OF MICRO-HOLIDAY --]]
 								un(2, i(20603, { 	-- Bag of Spoils
 									un(7, i(20694)), 	-- Glowing Black Orb
 									un(7, i(20693)), 	-- Weighted Cloak
+									un(7, i(20692)),	-- Multicolored Band
 								})),
 							})),
 							{
@@ -933,8 +934,9 @@ END OF MICRO-HOLIDAY --]]
 							})),
 							un(40, q(8352, { 	-- Scepter of the Council
 								un(2, i(20602, { 	-- Chest of Spoils
-									un(7, i(20720)), 	-- Dark Whisper Blade
 									un(7, i(20722)), 	-- Crystal Slugthrower
+									un(7, i(20720)), 	-- Dark Whisper Blade
+									un(7, i(20721)),	-- Band of the Cultist
 								})),
 							})),
 							un(40, q(8348, { 	-- Signet of the Dukes

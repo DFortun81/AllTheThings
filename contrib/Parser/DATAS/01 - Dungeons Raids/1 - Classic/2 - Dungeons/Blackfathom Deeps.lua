@@ -200,6 +200,17 @@ _.Instances = { tier(1, {	-- Classic
 						75285,	-- Twilight Storm Mender
 					},
 				}),
+				i(1491,	{	-- Ring of Precision
+					["crs"] = {
+						74720,	-- Blindlight Murloc
+						74719,	-- Blindlight Rotmouth
+						74446,	-- Ghamoo-Ra
+						74722,	-- Razorshell Snapjaw
+						75135,	-- Tormented Sacrifice
+						75286,	-- Twilight Disciple
+						74380,	-- Twilight Storm Mender
+					},
+				}),
 			}),
 			cr(74446, e( 368, {	-- Ghamoo-Ra
 				i(151433),	-- Thick Shellplate Shoulders

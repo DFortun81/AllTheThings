@@ -50,10 +50,13 @@ _.Zones =
 								["sourceQuests"] = { 6031 },	-- Runecloth
 								["requireSkill"] = 197,	-- Requires: Tailoring
 							}),
-							q(  8481, {	-- The Root of All Evil (UNKNOWN PRE-REQS -- REPUTATION, WINTERSPRING QUESTS???)
+							{
+								["questID"] = 8481,	-- The Root of All Evil (UNKNOWN PRE-REQS -- REPUTATION, WINTERSPRING QUESTS???)
 								["qg"] = 11555,	-- Gorn One Eye
-								-- ["sourceQuests"] = {  },	-- 
-							}),
+								["groups"] = {
+									i(21326),	-- Defender of the Timbermaw
+								},
+							},
 						}),
 						n( -2, {	-- Vendors
 							n(11555, {	-- Gorn One Eye

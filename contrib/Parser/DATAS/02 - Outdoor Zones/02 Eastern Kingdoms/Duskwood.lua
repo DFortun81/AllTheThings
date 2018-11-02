@@ -709,6 +709,7 @@ _.Zones =
 							})),
 							un(43, n(910, {	-- Defias Enchanter
 								un(7, i(5773)),	-- Pattern: Robes of Arcana
+								un(7, i(1077)),	-- Defias Mage Ring
 							})),
 							n(1270, { 	-- Fetid Corpse
 								un(7, i(2014)),	-- Black Metal Greatsword

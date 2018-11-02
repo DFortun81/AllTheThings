@@ -102,9 +102,11 @@ _.Instances =
 							dr(9.00, i(9482)), 	-- Witch Doctor's Cane
 							dr(8.00, i(9511)), 	-- Bloodletter Scalpel
 							dr(8.00, i(9484)), 	-- Spellshock Leggings
+							dr(8.00, i(6440)),	-- Brainlash
 							dr(7.00, i(9481)), 	-- The Minotaur
 							dr(6.00, i(9480)), 	-- Eyegougeer
 							dr(6.00, i(2040)), 	-- Troll Protector
+							dr(5.00, i(862)),	-- Runed Ring
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),

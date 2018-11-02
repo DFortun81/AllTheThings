@@ -392,7 +392,8 @@ _.Zones =
 						dr(01.2, i(9773)),	-- Greenweave Robe
 						dr(01.2, i(6565)),	-- Shimmering Gloves
 						dr(01.2, i(9805)),	-- Superior Cloak
-						dr(01.0, i(9774)),	-- Greenweave Vest					
+						dr(01.0, i(9774)),	-- Greenweave Vest
+						i(6199),	-- Black Widow Band
 					}), 
 					n(2090, { 	-- Ma'ruk Wyrmscale
 						dr(07.0, i(9776)),	-- Bandit Boots

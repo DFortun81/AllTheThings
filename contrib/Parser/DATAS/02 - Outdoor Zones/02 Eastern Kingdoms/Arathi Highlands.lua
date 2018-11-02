@@ -527,7 +527,8 @@ _.Zones =
 						dr(01.4, i(6594)),	-- Battleforge Girdle
 						dr(01.3, i(6612)),	-- Sage's Boots
 						dr(01.1, i(9823)),	-- Durable Gloves
-						un(7, i(5742)),		-- Gemstone Dagger							
+						un(7, i(5742)),		-- Gemstone Dagger
+						i(5743),	-- Prismstone Ring
 					}), 
 					n(51067, { 	-- Glint
 						dr(12.0, i(6611)),	-- Sage's Sash
@@ -994,6 +995,12 @@ _.Zones =
 					i(1297,        {	-- Robes of the Shadowcaster
 						["crs"] = {
 							2553,	-- Witherbark Shadowcaster
+						},
+					}),
+					i(1993, {	-- Ogremind Ring
+						["crs"] = {
+							2567,	-- Boulderfist Magus
+							2570,	-- Boulderfist Shaman
 						},
 					}),
 				}),

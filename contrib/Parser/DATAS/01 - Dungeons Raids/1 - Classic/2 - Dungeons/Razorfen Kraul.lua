@@ -125,6 +125,16 @@ _.Instances =
 								75110,	-- Razorfen Torchbearer
 							},
 						}),
+						i(2039, {	-- Plains Ring
+							["crs"] = {
+								74553,	-- Blood-Branded Razorfen
+								74551,	-- Razorfen Beast Stalker
+								74545,	-- Razorfen Geomagus
+								74555,	-- Razorfen Hidecrusher
+								74552,	-- Razorfen Huntmaster
+								74550,	-- Razorfen Kraulshaper
+							},
+						}),
 					}),
 					cr(75001, e(896, {	-- Hunter Bonetusk
 						i(  6681),	-- Thornspike 

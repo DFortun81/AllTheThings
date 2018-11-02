@@ -5,7 +5,7 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {	-- Classic
-			filter(50, { -- Bags
+			filter(113, { -- Bags
 				i(4500),	-- Traveler's Backpack
 			}),	
 		},

@@ -41,6 +41,13 @@ _.Instances =
 							i(18699), 	-- Icy Tomb Spaulders
 							i(18700), 	-- Malefic Bracers
 							i(18698), 	-- Tattered Leather Hood
+							{
+								["itemID"] = 18701,	-- Innervating Band
+								["crs"] = {
+									59614,	-- Bored Student
+									58823,	-- Scholomance Neophyte
+								},
+							}
 						}),
 						cr(58633, e(659, { 	-- Instructor Chillheart
 							n(58664, {	-- Instructor Chillheart's Phylactery

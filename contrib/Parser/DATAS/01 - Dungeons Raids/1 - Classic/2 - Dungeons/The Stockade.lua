@@ -30,6 +30,7 @@ _.Instances =
 								46382, -- Petty Criminal
 							},
 						}),
+						un(7, i(1076)),	-- Defias Renegade Ring
 					}),
 					cr(46383, e(466, {	-- Randolph Moloch
 						i( 63346),	-- Wicked Dagger

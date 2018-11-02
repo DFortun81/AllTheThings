@@ -1156,6 +1156,7 @@ _.Zones =
 						i(6568),	-- Shimmering Trousers
 						i(9801),	-- Superior Belt
 						i(9805),	-- Superior Cloak
+						i(6332),	-- Black Pearl Ring
 					}),
 					o(240617, {	-- Lost Sentinel's Pouch
 						["groups"] = {
