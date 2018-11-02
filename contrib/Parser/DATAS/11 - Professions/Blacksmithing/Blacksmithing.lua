@@ -3505,7 +3505,13 @@ profession(164, { -- Blacksmithing
 			}),
 			q(2765, { -- Expert Blacksmith!
 				["groups"] = {
-					i(8703), -- Signet of Expertise
+					un(2, i(8703, {	-- Signet of Expertise
+						{
+							["itemID"] = 8708,	-- Hammer of Expertise
+							["ignoreSource"] = true,
+							["u"] = 2,
+						},
+					})),
 				},
 				["qg"] = 7802, -- Galvan the Ancient
 				["sourceQuests"] = { 2761, 2762, 2763 }, -- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue

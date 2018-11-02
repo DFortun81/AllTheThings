@@ -587,6 +587,7 @@ _.Instances =
 								i( 22204), 		-- Wristguards of Renown
 								i( 11745), 		-- Fists of Phalanx
 								i(151409), 		-- Ferrous Cord
+								un(2, i(11743)),	-- Rockfist
 							},
 							["description"]	= "Private Rocknot must be sent into a drunken rage to aggro Phalanx. \nTo do that, feed him 6 dark iron ale mugs, which can be bought from Plugger Spazzring. \nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",
 						})),

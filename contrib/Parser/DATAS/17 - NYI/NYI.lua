@@ -152,6 +152,9 @@ _.NeverImplemented =
 	un(1, i(42535)),	-- Savage Gladiator's Grimoire
 	un(1, i(70209)),	-- Ruthless Gladiator's Reprieve
 	un(1, i(20522)),	-- Feral Staff
+	un(1, i(20003)),	-- Devilsaur Claws
+	un(1, i(20005)),	-- Devilsaur Claws
+	un(1, i(12795)),	-- Blood Talon [Was going to be a Blacksmithing item]
 	un(1, i(3222)),	-- Wicked Dagger
 	un(1, i(38245)),	-- Crystalline Providence
 	un(1, i(38248)),	-- Torch of the Fallen Souls
