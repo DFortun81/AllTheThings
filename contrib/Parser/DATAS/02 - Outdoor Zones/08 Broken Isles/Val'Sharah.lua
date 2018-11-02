@@ -632,6 +632,46 @@ _.Zones =
 							},
 						},
 					},
+					n(-180, {	-- Alchemy
+						["groups"] = {
+							q(39338, {	-- Return the Filter
+								["qg"] = 93974, -- Leyweaver Erenyi
+								["sourceQuests"] = { 44112 }, -- Trading for Dreams
+							}),
+						},
+						["requireSkill"] = 171,
+					}),
+					n(-181, {	-- Blacksmithing
+						["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
+							q(39680, { -- Between the Hammer...
+								["groups"] = {
+									recipe(182963), -- Plans: Leystone Waistguard (Rank 2)
+								},
+								["qg"] = 96763, -- Saris Swifthammer
+								["sourceQuest"] = 39702, -- Legend of Black Rook Hold
+							}),
+							q(39726, { -- ...And the Anvil
+								["qg"] = 96763, -- Saris Swifthammer
+								["sourceQuest"] = 39702, -- Legend of Black Rook Hold
+							}),
+							q(39729, { -- The Knowledge of Black Rook
+								["qg"] = 96763, -- Saris Swifthammer
+								["requireSkill"] = 164,
+								["sourceQuests"] = { 39680, 39726 }, -- Between the Hammer..., ...And the Anvil
+							}),
+							n(-34, { -- World Quests
+								q(41634, { -- Work Order: Leystone Armguards
+									["groups"] = {
+										i(123936), -- Recipe: Leystone Armguards (Rank 3)
+									},
+									["qg"] = 106901, -- Sylvia Hartshorn
+									["lvl"] = 110,
+									--["isWQ"] = true, -- maybe, someday?
+									["repeatable"] = true,
+								}),
+							}),
+						}),
+					}),
 					prof(356, { -- Fishing
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
@@ -1067,7 +1107,7 @@ _.Zones =
 								i(132355),	-- Wind-Whipped Hold Banner Strip
 							}),
 						}),
-					  }),
+					}),
 					ach(10877, { -- Pillars of Creation
 						q(40567, {	-- Darkheart Thicket: Enter the Nightmare
 							i(141551),	-- Boots of the Receding Nightmare
@@ -1132,42 +1172,6 @@ _.Zones =
 							q(42883),	-- All Grell Broke Loose
 							q(42884),	-- Grassroots Effort
 							q(42857),	-- Moist Around the Hedges
-						}),
-						q(39338, {	-- Return the Filter
-							["qg"] = 93974, -- Leyweaver Erenyi
-							["sourceQuests"] = { 44112 }, -- Trading for Dreams
-						}),
-						n(-181, { -- Blacksmithing
-							["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
-								q(39680, { -- Between the Hammer...
-									["groups"] = {
-										recipe(182963), -- Plans: Leystone Waistguard (Rank 2)
-									},
-									["qg"] = 96763, -- Saris Swifthammer
-									["sourceQuest"] = 39702, -- Legend of Black Rook Hold
-								}),
-								q(39726, { -- ...And the Anvil
-									["groups"] = {},
-									["qg"] = 96763, -- Saris Swifthammer
-									["sourceQuest"] = 39702, -- Legend of Black Rook Hold
-								}),
-								q(39729, { -- The Knowledge of Black Rook
-									["groups"] = {},
-									["qg"] = 96763, -- Saris Swifthammer
-									["requireSkill"] = 164,
-									["sourceQuests"] = { 39680, 39726 }, -- Between the Hammer..., ...And the Anvil
-								}),
-								n(-34, { -- World Quests
-									q(41634, { -- Work Order: Leystone Armguards
-										["groups"] = {
-											i(123936, { -- Recipe: Leystone Armguards (Rank 3)
-												recipe(182970), -- Recipe: Leystone Armguards (Rank 3)
-											}),
-										},
-										["qg"] = 106901, -- Sylvia Hartshorn
-									}),
-								}),
-							}),
 						}),
 					}),
 				}),
