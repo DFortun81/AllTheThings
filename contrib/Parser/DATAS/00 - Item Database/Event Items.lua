@@ -123,3 +123,12 @@ i(116811);	-- "Lil' Starlet" Costume
 i(116810);	-- "Mad Alchemist" Costume
 i(116812);	-- "Yipp-Saron" Costume
 i(139036);	-- Ominous Pet Treat
+
+----------------------------------------------
+--  D A Y      O F      T H E      D E A D  --
+----------------------------------------------
+
+i(46690);	-- Candy Skull
+i(46718);	-- Orange Marigold
+i(46711);	-- Spirit Candle
+i(79048);	-- Whimsical Skull Mask
