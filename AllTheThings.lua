@@ -2383,6 +2383,7 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 				if learned > 0 then
 					app:RefreshData(false, true, true);
 					app.print("Cached " .. learned .. " known recipes!");
+					wipe(searchCache);
 				end
 			end
 		end
