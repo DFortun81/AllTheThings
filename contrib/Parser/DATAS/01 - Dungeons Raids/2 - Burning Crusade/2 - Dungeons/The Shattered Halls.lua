@@ -13,35 +13,67 @@ _.Instances =
 							dr(11, i(22554)),	-- Formula: Enchant 2H Weapon - Savagery
 						}),
 					}),
-					d(1, {	-- Normal
-						n(-17, {	-- Quests 					
-							qh(29650, {	-- Fel Ember
-								i(25792),	-- Curate's Boots
-								i(25789),	-- Rune-Engraved Belt
-								i(25791),	-- Gloves of Preservation
+					n(-17, {	-- Quests
+						h({
+							["questID"] = 29655,	-- A Very Special Cloth
+							["qg"] = 54931,	-- Stone Guard Stok'ton
+						}),
+						h({
+							["questID"] = 29650,	-- Fel Ember
+							["qg"] = 54931,	-- Stone Guard Stok'ton
+							["groups"] = {
 								i(25790),	-- Expedition Scout's Epaulets
 								i(25788),	-- Dauntless Handguards
-							}),	
-							qa(29649, {	-- How to Save a Life
-								i(25792),	-- Curate's Boots
-								i(25789),	-- Rune-Engraved Belt
 								i(25791),	-- Gloves of Preservation
+								i(25789),	-- Rune-Engraved Belt
+								i(25792),	-- Curate's Boots
+							},
+						}),
+						h({
+							["questID"] = 29651,	-- Honor the Dying
+							["qg"] = 54932,	-- Caza'rez
+						}),
+						a({
+							["questID"] = 29649,	-- How to Save a Life
+							["qg"] = 54933,	-- Advance Scout Chadwick
+							["groups"] = {
 								i(25790),	-- Expedition Scout's Epaulets
 								i(25788),	-- Dauntless Handguards
-							}),	
-							qh(29653, {	-- The Will of the Warchief
+								i(25791),	-- Gloves of Preservation
+								i(25789),	-- Rune-Engraved Belt
+								i(25792),	-- Curate's Boots
+							},
+						}),
+						a({
+							["questID"] = 29656,	-- O'mrogg's Warcloth
+							["qg"] = 54933,	-- Advance Scout Chadwick
+						}),
+						a({
+							["questID"] = 29652,	-- One Last Favor
+							["qg"] = 54934,	-- Gunny
+						}),
+						h({
+							["questID"] = 29653,	-- The Will of the Warchief
+							["qg"] = 54931,	-- Stone Guard Stok'ton
+							["groups"] = {
 								i(25808),	-- Rod of Dire Shadows
+								i(25809),	-- Maimfist's Choker
 								i(25810),	-- Vicar's Cloak
 								i(25811),	-- Conqueror's Band
-								i(25809),	-- Maimfist's Choker
-							}),	
-							qa(29654, {	-- Turning the Tide
+							},
+						}),
+						a({
+							["questID"] = 29654,	-- Turning the Tide
+							["qg"] = 54933,	-- Advance Scout Chadwick
+							["groups"] = {
 								i(25806),	-- Nethekurse's Rod of Torment
+								i(25803),	-- Medallion of the Valiant Guardian
 								i(25805),	-- Mantle of Vivification
 								i(25804),	-- Naliko's Revenge
-								i(25803),	-- Medallion of the Valiant Guardian
-							}),	
+							},
 						}),
+					}),
+					d(1, {	-- Normal
 						cr(16807, e(566, {	-- Grand Warlock Nethekurse
 							i(27534),	-- Hortus' Seal of Brilliance (7.3.5 - Moved from Warchief Kargath Bladefist)
 							i(27520),	-- Greathelm of the Unbreakable
