@@ -8,6 +8,56 @@ _.Instances =
 		["groups"] = {
 			inst(262, { 	-- The Underbog
 				["groups"] = {
+					n(-17, {	-- Quests
+						{
+							["questID"] = 29568,	-- A Necessary Evil
+							["qg"] = 54678,	-- Naturalist Bite
+						},
+						{
+							["questID"] = 29691,	-- Bring Me A Shrubbery!
+							["qg"] = 54674,	-- T'shu
+							["groups"] = {
+								{
+									["itemID"] = 24246,	-- Sanguine Hibiscus
+									["questID"] = 29691,	-- Bring Me A Shrubbery!
+								},
+							},
+						},
+						{
+							["questID"] = 29692,	-- Bring Me Another Shrubbery!
+							["sourceQuest"] = 29691,	-- Bring Me A Shrubbery!
+							["repeatable"] = true,
+							["qg"] = 54674,	-- T'shu
+							["groups"] = {
+								{
+									["itemID"] = 24246,	-- Sanguine Hibiscus
+									["groups"] = {
+										{
+											["factionID"] = 970,	-- Sporeggar
+											["icon"] = "Interface\\Icons\\Ability_Hunter_Pet_Sporebat",
+										}
+									},
+								},
+							},
+						},
+						{
+							["questID"] = 29570,	-- Rescuing the Expedition
+							["qg"] = 54675,	-- Watcher Jhang
+						},
+						{
+							["questID"] = 29567,	-- Stalk the Stalker
+							["qg"] = 54674,	-- T'shu
+							["groups"] = {
+								i(28109),	-- Essence Infused Mushroom
+								i(28108),	-- Power Infused Mushroom
+							},
+						},
+					}),
+					n(  0, {	-- Zone Drop
+						{
+							["itemID"] = 24246,	-- Sanguine Hibiscus
+						},
+					}),
 					d(1, {	-- Normal
 						cr(17770, e(576, {	-- Hungarfen
 							i(27747),	-- Boggspine Knuckles

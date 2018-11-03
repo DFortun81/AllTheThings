@@ -19,6 +19,7 @@ _.NeverImplemented =
 	un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
 	un(1, i(54655)),	-- Stormshroud Armor (Leather)
 	un(1, i(138489)), 	-- Kargath's Sacrified Hands
+	un(1, i(23461)),	-- High Warlord's Quickblade [This was never actually added]
 	un(1, i(77588)),	-- Replica High Warlord's Quickblade
 	un(1, i(77586)),	-- Replica High Warlord's Spellblade
 	un(1, i(77570)),	-- Replica High Warlord's Battle Mace
@@ -151,6 +152,8 @@ _.NeverImplemented =
 	un(1, i(42529)),	-- Savage Gladiator's Reprieve
 	un(1, i(42535)),	-- Savage Gladiator's Grimoire
 	un(1, i(70209)),	-- Ruthless Gladiator's Reprieve
+	un(1, i(23420)),	-- Engraved Axe
+	un(1, i(23422)),	-- Engraved Dagger
 	un(1, i(20522)),	-- Feral Staff
 	un(1, i(20003)),	-- Devilsaur Claws
 	un(1, i(20005)),	-- Devilsaur Claws

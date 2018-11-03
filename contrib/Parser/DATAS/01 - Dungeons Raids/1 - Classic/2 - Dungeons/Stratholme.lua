@@ -149,6 +149,11 @@ _.Instances =
 									["criteriaID"] = 1,	-- Balnazzar slain
 								},
 								i(14512),	-- Pattern: Truefaith Vestments
+								{
+									["itemID"] = 29120,	-- Pattern: Truefaith Vestments
+									["ignoreSource"] = true,
+									["u"] = 7,
+								},
 								i(13520),	-- Recipe: Flask of Distilled Wisdom
 								i(13348),	-- Demonshear
 								i(18717),	-- Hammer of the Grand Crusader

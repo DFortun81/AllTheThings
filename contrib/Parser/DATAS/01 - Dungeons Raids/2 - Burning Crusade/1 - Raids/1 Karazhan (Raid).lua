@@ -155,6 +155,8 @@ _.Instances =
 								i( 28589),	-- Beastmaw Pauldrons
 								i( 28591),	-- Earthsoul Leggings
 								i( 28594),	-- Trial-Fire Trousers
+								i( 28590),	-- Ribbon of Sacrifice
+								i( 28579),	-- Romulo's Poison Vial
 								i(122231),	-- Music Roll: Karazhan Opera House
 							},
 							["description"] = "This is one of three possible bosses for this event.  Also, paired with Romulo"
@@ -170,6 +172,7 @@ _.Instances =
 								i( 28591),	-- Earthsoul Leggings
 								i( 28594),	-- Trial-Fire Trousers
 								i( 28590),	-- Ribbon of Sacrifice
+								i( 28579),	-- Romulo's Poison Vial
 								i(122231),	-- Music Roll: Karazhan Opera House
 							},
 							["description"] = "This is one of three possible bosses for this event. Also paired with Julianne"
