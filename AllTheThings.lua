@@ -2906,65 +2906,68 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 				end
 				if GetDataMember("ShowContents") then
 					if cache.g then
-						local items = {};
-						for i,j in ipairs(cache.g) do
-							if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
-								local right = nil;
-								if j.total and (j.total > 1 or (j.total > 0 and not j.collectible)) then
-									if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
-										if j.itemID and j.itemID ~= itemID  then
-											if j.total > 1 or not j.collectible then
+						local items = cache.items;
+						if not items then
+							items = {};
+							cache.items = items;
+							for i,j in ipairs(cache.g) do
+								if not j.hideText and app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
+									local right = nil;
+									if j.total and (j.total > 1 or (j.total > 0 and not j.collectible)) then
+										if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
+											if j.itemID and j.itemID ~= itemID  then
+												if j.total > 1 or not j.collectible then
+													right = GetProgressColorText(j.progress, j.total);
+												end
+											else
 												right = GetProgressColorText(j.progress, j.total);
 											end
-										else
-											right = GetProgressColorText(j.progress, j.total);
 										end
-									end
-								elseif not j.itemID or (j.itemID and j.itemID ~= itemID) then
-									if j.collectible then
-										if j.collected or (j.trackable and j.saved) then
-											if GetDataMember("ShowCollectedItems") then
-												right = L("COLLECTED_ICON");
+									elseif not j.itemID or (j.itemID and j.itemID ~= itemID) then
+										if j.collectible then
+											if j.collected or (j.trackable and j.saved) then
+												if GetDataMember("ShowCollectedItems") then
+													right = L("COLLECTED_ICON");
+												end
+											else
+												right = L("NOT_COLLECTED_ICON");
 											end
-										else
-											right = L("NOT_COLLECTED_ICON");
-										end
-									elseif j.trackable then
-										if j.saved then
-											if GetDataMember("ShowCollectedItems") then
-												right = L("COMPLETE_ICON");
+										elseif j.trackable then
+											if j.saved then
+												if GetDataMember("ShowCollectedItems") then
+													right = L("COMPLETE_ICON");
+												end
+											elseif app.ShowIncompleteQuests(j) then
+												right = L("NOT_COLLECTED_ICON");
 											end
-										elseif app.ShowIncompleteQuests(j) then
-											right = L("NOT_COLLECTED_ICON");
-										end
-									elseif j.visible then
-										right = "---";
-									end
-								end
-								
-								-- If there's progress to display, then let's summarize a bit better.
-								if right then
-									-- If this group has a droprate, add it to the display.
-									if j.dr then right = "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. right; end
-									
-									-- If this group has specialization requirements, let's attempt to show the specialization icons.
-									local specs = GetDataMember("ShowLootSpecializationRequirements") and j.specs;
-									if specs and #specs > 0 then
-										table.sort(specs);
-										for i,spec in ipairs(specs) do
-											local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-											if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+										elseif j.visible then
+											right = "---";
 										end
 									end
 									
-									-- Insert into the display.
-									local left;
-									if j.icon then left = "  |T" .. j.icon .. ":0|t "; else left = "  "; end
-									tinsert(items, { left .. (j.text or RETRIEVING_DATA), right });
+									-- If there's progress to display, then let's summarize a bit better.
+									if right then
+										-- If this group has a droprate, add it to the display.
+										if j.dr then right = "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. right; end
+										
+										-- If this group has specialization requirements, let's attempt to show the specialization icons.
+										local specs = GetDataMember("ShowLootSpecializationRequirements") and j.specs;
+										if specs and #specs > 0 then
+											table.sort(specs);
+											for i,spec in ipairs(specs) do
+												local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+												if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+											end
+										end
+										
+										-- Insert into the display.
+										local left;
+										if j.icon then left = "  |T" .. j.icon .. ":0|t "; else left = "  "; end
+										tinsert(items, { left .. (j.text or RETRIEVING_DATA), right });
+									end
 								end
 							end
 						end
-					
 						if #items > 0 then
 							self:AddLine("Contains:");
 							if #items < 25 then
