@@ -2872,7 +2872,12 @@ local function MergeSearchResults(group, itemID)
 			end
 			return merged;
 		else
-			return group[1];
+			local merged = setmetatable({}, getmetatable(group[1]));
+			for key,value in pairs(group[1]) do
+				merged[key] = value;
+			end
+			return merged;
+			-- return group[1];
 		end
 	end
 end
@@ -2963,7 +2968,14 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 										
 										-- Insert into the display.
 										local left;
-										if j.icon then left = "  |T" .. j.icon .. ":0|t "; else left = "  "; end
+										if j.icon then
+											left = "  |T" .. j.icon .. ":0|t ";
+										elseif j.itemID then
+											cache.items = nil;
+											left = "  ";
+										else
+											left = "  ";
+										end
 										if not j.text then cache.items = nil; end
 										tinsert(items, { left .. (j.text or RETRIEVING_DATA), right });
 									end
@@ -8016,6 +8028,7 @@ function app:RefreshData(lazy, safely, got)
 		else
 			app:UpdateWindows(nil, got);
 		end
+		wipe(searchCache);
 	end);
 end
 function app:GetWindow(suffix, parent, onUpdate)
