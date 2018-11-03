@@ -18,9 +18,7 @@ _.Zones =
 						},
 						["classes"] = {8},
 					})),
-					qp185(qg(3026, qh(29364))),	-- Corn Mash
 					qg(34679, qh(14041)),	-- Cranberry Chutney
-					qp129(qg(3028, qh(29349))),	-- Craving Crayfish
 					qg(3045, q(27334, {	-- Dark Cleric Cecille
 						["groups"] = {
 						},
@@ -65,7 +63,6 @@ _.Zones =
 						},
 						["classes"] = {9},
 					})),
-					qp185(qg(3026, qh(29362))),	-- "Magic" Mushrooms
 					qg(3045, qh(28323)),	-- Meet with Brother Silverhallow
 					qg(3045, q(28304, {	-- Meet with Dark Cleric Cecille
 						["groups"] = {
@@ -121,10 +118,6 @@ _.Zones =
 						},
 						["classes"] = {11},
 					})),
-					qp185(qg(3026, qh(29363))),	-- Mulgore Spice Bread
-					qp185(qg(3026, qh(29365))),	-- Perfectly Picked Portions
-					qp185(qg(3026, qh(29358))),	-- Pining for Nuts
-					qp129(qg(3028, qh(29345))),	-- Pond Predators
 					qg(3978, qh( 2965)),	-- Portents of Uldum
 --]]					
 					qh(27292, { -- Return to Krog
@@ -169,27 +162,29 @@ _.Zones =
 						["classes"] = {5},
 						["races"] = {8},
 					})),
-					qp129(qg(3028, qh(29354))),	-- Shiny Baubles
 					qg(51639, qh(27280, {	-- The Earthbreaker Calls
 						["groups"] = {
 						},
 						["classes"] = {7},
 					})),
 					qg(34480, qh(14176)),	-- The Grateful Dead (HOLIDAY - Day of the Dead)
-					qp129(qg(3028, qh(29348))),	-- The Race to Restock
-					qp129(qg(3028, qh(29346))),	-- The Ring's the Thing
+					
 					qg(3045, qh(27331, {	-- The Seer's Call
 						["groups"] = {
 						},
 						["classes"] = {5},
 					})),
-					qg(5543, qh(  264)),	-- Until Death Do Us Part
 					qg(36648, q(26397, {	-- Walk With The Earth Mother					
 						["groups"] = {
 						},
 						["races"] = {6},
 					})),
---]]					
+--]]
+					{	-- Until Death Do Us Part
+						["questID"] = 264,
+						["qg"] = 5543,	-- Clarice Foster
+						["races"] = HORDE_ONLY,
+					},
 					q( 24540, {	-- War Dance
 						["groups"] = {
 							i( 57241),	-- Dreamwalking Staff

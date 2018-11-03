@@ -7,7 +7,7 @@ _.Zones =
 		m(88, {	-- Thunder Bluff
 			["groups"] = {
 				n(-228, {	-- Flight Paths
-					fp(22, { -- Thunder Bluff, Mulgore
+					fp(22, {	-- Thunder Bluff, Mulgore
 						["coord"] = { 46.8, 49.8 },
 					}),
 				}),
