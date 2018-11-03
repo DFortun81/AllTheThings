@@ -70,6 +70,9 @@ _.Zones =
 									14461,	-- Feed of Evil
 									14459,	-- The Battleboars
 								},
+								["groups"] = {
+									i(57792),	-- Bag of Thorns
+								},
 							},
 							{
 								["questID"] = 24861,	-- Last Rites, First Rites
