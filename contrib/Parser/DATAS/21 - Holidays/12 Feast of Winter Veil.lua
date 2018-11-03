@@ -5,6 +5,10 @@ _.Holidays =
 {
 	n(-61, { -- Feast of Winter Veil
 		["groups"] = bubbleDown({["u"] = 29}, {
+			-- These are temporarily here.  They trigger Crieve to be in unsorted.  Will fix more when I revamp it - Luce.
+			i(162973),	-- Greatfather Winter's Heartstone
+			i(162643),	-- Toy Armor Set [Alliance]
+			i(162642),	-- Toy Armor Set [Horde]
 			n(-4, { -- Achievements
 				ach(1691, { -- Merrymaker
 					["groups"] = {

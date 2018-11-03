@@ -225,6 +225,7 @@ t(119211);	-- Golden Hearthstone Card: Lord Jaraxxus
 t(119180);	-- Goren "Log" Roller
 t(118716);	-- Goren Garb
 t(138900);	-- Gravil Goldbraid's Famous Sausage Hat
+t(162973);	-- Greatfather Winter's Heartstone
 t(69895);	-- Green Balloon
 t(67097);	-- Grim Campfire (Model Path)
 t(129965);	-- Grizzlesnout's Fang
