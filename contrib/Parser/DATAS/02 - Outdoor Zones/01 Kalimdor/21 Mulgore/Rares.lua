@@ -8,46 +8,68 @@ _.Zones =
 			["groups"] = {
 				n(-16, {	-- Rares
 					n(5785, {	-- Sister Hatelash
-						dr(	10	, i(	68743	)), --	Imbued Infantry Cloak
-						dr(	9	, i(	68755	)), --	Imbued Disciple's Gloves
-						dr(	9	, i(	68744	)), --	Imbued Pioneer Cloak
-						dr(	5	, i(	68750	)), --	Imbued Pioneer Belt
-						dr(	5	, i(	68751	)), --	Imbued Pioneer Bracers
-						dr(	4	, i(	68749	)), --	Imbued Disciple's Bracers
-						dr(	4	, i(	68748	)), --	Imbued Disciple's Cloak
-						dr(	4	, i(	68747	)), --	Imbued Disciple's Sash
-						dr(	4	, i(	68753	)), --	Imbued Infantry Bracers
-						dr(	3	, i(	68752	)), --	Imbued Infantry Belt
-						dr(	3	, i(	6337	)), --	Infantry Leggings
-						dr(	2	, i(	6269	)), --	Pioneer Trousers
-						dr(	1.9	, i(	6267	)), --	Disciple's Pants
-						dr(	1.4	, i(	68754	)), --	Imbued Disciple's Boots
-						dr(	1.4	, i(	68761	)), --	Imbued Infantry Boots
-						dr(	1.3	, i(	68756	)), --	Imbued Simple Cape
-						dr(	1.1	, i(	6266	)), --	Disciple's Vest
-						dr(	1.1	, i(	68759	)), --	Imbued Gypsy Cloak
-						dr(	1.1	, i(	68760	)), --	Imbued Infantry Gauntlets
-						dr(	1	, i(	6512	)), --	Disciple's Robe
+						["groups"] = {
+							i(68762),	-- Imbued Cadet Cloak
+							i(68748),	-- Imbued Disciple's Cloak
+							i(68759),	-- Imbued Gypsy Cloak
+							i(68743),	-- Imbued Infantry Cloak
+							i(68744),	-- Imbued Pioneer Cloak
+							i(68756),	-- Imbued Simple Cape
+							i(6512),	-- Disciple's Robe
+							i(6266),	-- Disciple's Vest
+							i(6336),	-- Infantry Tunic
+							i(6268),	-- Pioneer Tunic
+							i(68749),	-- Imbued Disciple's Bracers
+							i(68753),	-- Imbued Infantry Bracers
+							i(68751),	-- Imbued Pioneer Bracers
+							i(68755),	-- Imbued Disciple's Gloves
+							i(68760),	-- Imbued Infantry Gauntlets
+							i(68757),	-- Imbued Pioneer Gloves
+							i(68747),	-- Imbued Disciple's Sash
+							i(68752),	-- Imbued Infantry Belt
+							i(68750),	-- Imbued Pioneer Belt
+							i(6267),	-- Disciple's Pants
+							i(6337),	-- Infantry Leggings
+							i(6269),	-- Pioneer Trousers
+							i(68754),	-- Imbued Disciple's Boots
+							i(68761),	-- Imbued Infantry Boots
+							i(68758),	-- Imbued Pioneer Boots
+						},
+						["coords"] = {
+							{ 53.4, 12.6 },
+							{ 32.6, 24.0 },
+						},
 					}),
 					n(5807, {	-- The Rake
-						dr(	22	, i(	68743	)), --	Imbued Infantry Cloak
-						dr(	14	, i(	68744	)), --	Imbued Pioneer Cloak
-						dr(	8	, i(	68746	)), --	Imbued Primal Cape
-						dr(	6	, i(	68745	)), --	Imbued Primal Belt
-						dr(	4	, i(	68751	)), --	Imbued Pioneer Bracers
-						dr(	2	, i(	6337	)), --	Infantry Leggings
-						dr(	1.9	, i(	6269	)), --	Pioneer Trousers
-						dr(	1.8	, i(	6267	)), --	Disciple's Pants
-						dr(	1.7	, i(	68749	)), --	Imbued Disciple's Bracers
-						dr(	1.6	, i(	17922	)), --	Lionfur Armor
-						dr(	1.4	, i(	68747	)), --	Imbued Disciple's Sash
-						dr(	1.4	, i(	68750	)), --	Imbued Pioneer Belt
-						dr(	1	, i(	68762	)), --	Imbued Cadet Cloak
-						dr(	1	, i(	68748	)), --	Imbued Disciple's Cloak
-						dr(	1	, i(	68752	)), --	Imbued Infantry Belt
-						dr(	1	, i(	68753	)), --	Imbued Infantry Bracers
-						dr(	1	, i(	68760	)), --	Imbued Infantry Gauntlets
-						un(7, i(17922)),	-- Lionfur Armor
+						["groups"] = {
+							i(68762),	-- Imbued Cadet Cloak
+							i(68748),	-- Imbued Disciple's Cloak
+							i(68759),	-- Imbued Gypsy Cloak
+							i(68743),	-- Imbued Infantry Cloak
+							i(68744),	-- Imbued Pioneer Cloak
+							i(68746),	-- Imbued Primal Cape
+							un(7, i(17922)),	-- Lionfur Armor
+							i(68749),	-- Imbued Disciple's Bracers
+							i(68753),	-- Imbued Infantry Bracers
+							i(68751),	-- Imbued Pioneer Bracers
+							i(68755),	-- Imbued Disciple's Gloves
+							i(68760),	-- Imbued Infantry Gauntlets
+							i(68757),	-- Imbued Pioneer Gloves
+							i(68747),	-- Imbued Disciple's Sash
+							i(68752),	-- Imbued Infantry Belt
+							i(68750),	-- Imbued Pioneer Belt
+							i(68745),	-- Imbued Primal Belt
+							i(6267),	-- Disciple's Pants
+							i(6337),	-- Infantry Leggings
+							i(6269),	-- Pioneer Trousers
+						},
+						["coords"] = {
+							{ 50.6, 26.6 },
+							{ 55.6, 24.4 },
+							{ 54.4, 20.2 },
+							{ 49.6, 22.8 },
+						},
+						["description"] = "Patrols in a large circle south-east of Camp Sungraze.",
 					}),
 				}),
 			},

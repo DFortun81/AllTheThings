@@ -7,63 +7,38 @@ _.Zones =
 		m(7, {	-- Mulgore
 			["groups"] = {
 				n(-17, {	-- Quests
---[[
-					qg(3079, qh( 6361, {	-- A Bundle of Hides
-						["races"]= {6},
-					})),
---]]					
-					qg(3233, qh(  833,  { -- A Sacred Burial
-						i(57237),
-						i(57228),
-						i(57212),
-						i(131217),
-					})),
---[[
-					qg(2985, qh(  743)),	-- Dangers of the Windfury
---					qh(14436),	-- Dwarven Digging (LEGACY)
---					qh(14439),	-- Journey into Thunder Bluff (LEGACY - removed per wowhead comments)
-					qg(37024, qh(24550, {	-- Journey into Thunder Bluff
-						["races"]= {6},
-					})),
---					qg(23618, qh(11129)),	-- Kyle's Gone Missing!
-					desc(qh(32670),	"This quest is available Tauren upon reaching level 20.", {	-- Learn To Ride
-						["races"]= {6},
-					}),
---					qh(14087),	-- Learn to Ride in Mulgore LEGACY, replaced with previous quest)
-					qg(3055, qh(26188)),	-- Mazzranache
-					qg(36644, qh(24459)),	-- Morin Cloudstalker
-					qg(3685, qh( 7663)),	-- New Kodo - Green
-					qg(3685, qh( 7662)),	-- New Kodo - Teal
-					qg(2948, qh(20440, {	-- Poison Water
-						["races"]= {6},
-					})),
---]]					
-					qg(2987, qh(  744,  {  -- Preparation for Ceremony
-						i(57211),
-						i(57227),
-						i(57236),
-						i(131212),
-					})),
---[[					
-					qg(40809, qh( 6362, {	-- Ride to Thunder Bluff
-						["races"]= {6},
-					})),
-					qg(2948, qh(24457, {	-- Rite of Vision
-						["races"]= {6},
-					})),
-					qg(3054, qh(20441, {	-- Rite of Vision
-						["races"]= {6},
-					})),
-					qg(3233, qh(  773, {	-- Rite of Wisdom
-						["races"]= {6},
-					})),
-					qg(36644, qh(14438)),	-- Sharing the Land
-					qg(2988, qh(26180)),	-- Supervisor Fizsprocket
---					qh(  765),	-- Supervisor Fizsprocket (LEGACY - replaced with previous quest)
-					qg(2947, qh(  761)),	-- Swoop Hunting
---]]				
+					{	-- A Bundle of Hides
+						["questID"] = 6361,
+						["qg"] = 3079,	-- Varg Windwhisper
+						["coord"] = { 46.0, 58.2 },
+						["races"] = { 6 },	-- Tauren
+					},
+					{	-- A Bundle of Hides
+						["questID"] = 6361,
+						["qg"] = 3079,	-- Varg Windwhisper
+						["coord"] = { 46.0, 58.2 },
+						["races"] = { 6 },	-- Tauren
+					},
+					{	-- A Sacred Burial
+						["questID"] = 833,
+						["groups"] = {
+							i(57237),	-- Cairne's First Breastplate
+							i(57228),	-- Cord of Tragic Memory
+							i(57212),	-- Slippers of Mourning
+							i(131217),	-- Waistband of Tragic Memory
+						},
+						["qg"] = 3233,	-- Lorekeeper Raintotem
+						["coord"] = { 49.4, 17.2 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Dangers of the Windfury
+						["questID"] = 743,
+						["qg"] = 2985,	-- Ruul Eagletalon
+						["coord"] = { 47.5, 61.3 },
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Demon Scarred Cloak
-						["itemID"] = 4854,	-- Demon Scarred Cloak
+						["itemID"] = 4854,
 						["ignoreSource"] = true,
 						["questID"] = 770,	-- The Demon Scarred Cloak
 						["qg"] = 3056,		-- Ghost Howl
@@ -75,52 +50,170 @@ _.Zones =
 							{ 44.81, 16.41 },
 							{ 44.01, 17.61 },
 						},
-						["g"] = {
-							{	-- Skorn's Hammer
-								["itemID"] = 4971,	-- Skorn's Hammer
-							},
-							{	-- Skonr's Rifle
-								["itemID"] = 3079,	-- Skorn's Rifle
-							},
+						["groups"] = {
+							i(4971),	-- Skorn's Hammer
+							i(3079),	-- Skorn's Rifle
 						},
 					},
---[[					
-					qg(3052, qh(  861, {	-- The Hunter's Way
-						["races"]= {6,8,10},
-					})),
-					qg(2988, qh(  749)),	-- The Ravaged Caravan
-					o(2908, {	-- Sealed Supply Crate
-						qh(  751),	-- The Ravaged Caravan
-					}),
-					qg(36644, qh(14491)),	-- The Restless Earth
-					qg(2988, qh(26179)),	-- The Venture Co.
---					qh(  764),	-- The Venture Co. (LEGACY - replaced with previous quest)
-					qg(2948, qh(24456, {	-- Thunderhorn Cleansing
-						["races"]= {6},
-					})),
-					qg(2948, qh(24441, {	-- Thunderhorn Totem
-						["races"]= {6},
-					})),
---]]					
-					qg(37024, q(24524,  {  -- Wildmane Cleansing
+					{	-- Journey into Thunder Bluff
+						["questID"] = 24550,
+						["qg"] = 37024,	-- Una Wildmane
+						["coord"] = { 49.4, 17.4 },
+						["races"] = { 6 },	-- Tauren
+					},
+					{	-- Kyle's Gond Missing!
+						["questID"] = 11129,
+						["qg"] = 23618,	-- Ahab Wheathoof
+						["coord"] = { 48.3, 53.1 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Learn to Ride
+						["questID"] = 32670,
+						["lvl"] = 20,
+						["races"] = { 6 },	-- Tauren
+						["description"] = "This quest is available Tauren upon reaching level 20.",
+					},
+					{	-- Mazzranache
+						["questID"] = 26188,
+						["qg"] = 3055,	-- Maur Raincaller
+						["coord"] = { 47.1, 56.6 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Morin Cloudstalker
+						["questID"] = 24459,
+						["qg"] = 36644,	-- Ahmo Thunderhorn
+						["coord"] = { 47.6, 59.5 },
+						["isBreadcrumb"] = true,
+					},
+					{	-- Poison Water
+						["questID"] = 20440,
+						["qg"] = 2948,	-- Mull Thunderhorn
+						["coord"] = { 48.6, 59.5 },
+						["races"] = { 6 },	-- Tauren
+					},
+					{	-- Preparation for Ceremony
+						["questID"] = 744,
 						["groups"] = {
-							i(57238),
-							i(57229),
-							i(57240),
-							i(57213),
-							i(131373),
+							i(57211),	-- Leggings of Brown Grass
+							i(57227),	-- Hewn Kodo Gloves
+							i(57236),	-- Plainstrider Leg Armor
+							i(131212),	-- Plainstrider Handguards
 						},
-						["races"] = {6},
-					})),
---[[					
-					qg(37024, qh(24523, {	-- Wildmane Totem
-						["races"]= {6},
-					})),
-					qg(2948, qh(24440, {	-- Winterhoof Cleansing
-						["races"]= {6},
-					})),
---]]					
---					qg(14822, q(7945)),	-- Your Fortune Awaits You... (QG in Darkmoon Faire, POSSIBLY LEGACY - some comments on wowhead on these quests say they haven't been available since new DMF)
+						["qg"] = 2987,	-- Eyahn Eagletalon
+						["coord"] = { 49.6, 17.4 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Ride to Thunder Bluff
+						["questID"] = 6362,
+						["qg"] = 40809,	-- Tak
+						["coord"] = { 47.4, 58.6 },
+						["races"] = { 6 },	-- Tauren
+					},
+					{	-- Rite of Vision
+						["questID"] = 24457,
+						["qg"] = 2948,	-- Mull Thunderhorn
+						["coord"] = { 48.6, 59.8 },
+						["races"] = { 6 },	-- Tauren
+					},
+					{	-- Rite of Vision
+						["questID"] = 20441,
+						["qg"] = 3054,	-- Zarlman Two-Moons
+						["coord"] = { 47.8, 57.2 },
+						["races"] = { 6 },	-- Tauren
+					},
+					{	-- Rite of Wisdom
+						["questID"] = 773,
+						["qg"] = 3233,	-- Lorekeeper Raintotem
+						["coord"] = { 49.4, 17.2 },
+						["races"] = { 6 },	-- Tauren
+					},
+					{	-- Sealed Supply Crate
+						["objectID"] = 2908,
+						["groups"] = {
+							{
+								["questID"] = 751,	-- The Ravaged Caravan
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 749,	-- The Ravaged Caravan
+							},
+						},
+						["coord"] = { 53.6, 48.4 },
+					},
+					{	-- Sharing the Land
+						["questID"] = 14438,
+						["qg"] = 36644,	-- Ahmo Thunderhorn
+						["coord"] = { 47.6, 59.5 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Supervisor Fizsprocket
+						["questID"] = 26180,
+						["qg"] = 2988,	-- Morin Cloudstalker
+						["coord"] = { 57.0, 60.4 },
+						["sourceQuest"] = 751,	-- The Ravaged Caravan
+					},
+					{	-- Swoop Hunting
+						["questID"] = 761,
+						["qg"] = 2947,	-- Harken Windtotem
+						["coord"] = { 48.7, 58.7 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- The Ravaged Caravan
+						["questID"] = 749,
+						["qg"] = 2988,	-- Morin Cloudstalker
+						["coord"] = { 57.0, 60.4 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 24459,	-- Morin Cloudstalker
+					},
+					{	-- The Restless Earth
+						["questID"] = 14491,
+						["qg"] = 36644,	-- Ahmo Thunderhorn
+						["coord"] = { 47.6, 59.6 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 14438,	-- Sharing the Land
+					},
+					{	-- The Venture Co.
+						["questID"] = 26179,
+						["qg"] = 2988,	-- Morin Cloudstalker
+						["coord"] = { 57.0, 60.4 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 751,	-- The Ravaged Caravan
+					},
+					{	-- Thunderhorn Cleansing
+						["questID"] = 24456,
+						["qg"] = 2948,	-- Mull Thunderhorn
+						["coord"] = { 48.6, 59.8 },
+						["races"] = { 6 },	-- Tauren
+					},
+					{	-- Thunderhorn Totem
+						["questID"] = 24441,
+						["qg"] = 2948,	-- Mull Thunderhorn
+						["coord"] = { 48.6, 59.8 },
+						["races"] = { 6 },	-- Tauren
+					},
+					{	-- Wildmane Cleansing
+						["questID"] = 24524,
+						["qg"] = 37024,	-- Una Wildmane
+						["coord"] = { 49.4, 17.4 },
+						["races"] = { 6 },	-- Tauren
+						["groups"] = {
+							i(57238),	-- Cliff Running Boots
+							i(57229),	-- Duskwatcher's Leggings
+							i(57240),	-- Hawkeye Rifle
+							i(57213),	-- Waterbearer's Robes
+							i(131373),	-- Duskwatcher's Legguards
+						},
+					},
+					{	-- Wildmane Totem
+						["questID"] = 24523,
+						["qg"] = 37024,	-- Una Wildmane
+						["coord"] = { 49.4, 17.4 },
+						["races"] = { 6 },	-- Tauren
+					},
+					{	-- Winterhoof Cleansing
+						["questID"] = 24440,
+						["qg"] = 2948,	-- Mull Thunderhorn
+						["coord"] = { 48.6, 59.8 },
+						["races"] = { 6 },	-- Tauren
+					},
 				}),
 			},
 		}),

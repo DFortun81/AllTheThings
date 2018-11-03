@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, { 	-- Kalimdor
-		m(7, { 		-- Mulgore
+	m(12, {	-- Kalimdor
+		m(7, {	-- Mulgore
 			["groups"] = {
 				n(-228, {	-- Flight Paths
 					fp(402, { -- Bloodhoof Village, Mulgore

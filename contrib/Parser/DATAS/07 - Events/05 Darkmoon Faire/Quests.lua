@@ -1199,6 +1199,16 @@ _.WorldEvents =
 					},
 				},
 			}),
+			n(-40, {
+				n(-17, {
+					{	-- Your Fortune Awaits You...
+						["questID"] = 7945,
+						["itemID"] = 19452,	-- Sayge's Fortune #27
+						["qg"] = 14822,	-- Sayge
+						["u"] = 40,
+					},
+				}),
+			}),
 		},
 		["icon"] = "Interface\\Icons\\INV_DARKMOON_EYE",
 		["maps"] = { 408 },
