@@ -2963,6 +2963,7 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 										-- Insert into the display.
 										local left;
 										if j.icon then left = "  |T" .. j.icon .. ":0|t "; else left = "  "; end
+										if not j.text then cache.items = nil; end
 										tinsert(items, { left .. (j.text or RETRIEVING_DATA), right });
 									end
 								end
