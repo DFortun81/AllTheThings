@@ -293,13 +293,14 @@ _.WorldEvents =
 						{ 52.51, 88.79 },
 					},
 				}),
-				n(14828, { -- Gelvis Grimegate <Souvenir & Toy Prizes>
+				n(14828, { -- Gelvas Grimegate <Souvenir & Toy Prizes>
 					["groups"] = {
 						i(73762), -- Darkmoon Balloon
-						i(78340), -- Cloak of the Darkmoon Faire
-						i(78341), -- Darkmoon Hammer
 						i(90899), -- Darkmoon Whistle
 						i(97994), -- Darkmoon Seesaw
+						i(78341), -- Darkmoon Hammer
+						i(78340), -- Cloak of the Darkmoon Faire
+						i(19291), -- Darkmoon Storage Box
 					},
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 				}),

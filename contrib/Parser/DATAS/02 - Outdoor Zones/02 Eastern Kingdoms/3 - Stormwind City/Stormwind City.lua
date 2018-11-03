@@ -899,6 +899,16 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
+					n(50669, {	-- Dawn Radue <Bag Merchant>
+						i(67387),	-- "Carriage" Signature Bag
+						i(67396),	-- "Carriage - Christina" Precious Metal Bag
+						i(67389),	-- "Carriage - Exclusive" Enchanting Evening Purse
+						i(67392),	-- "Carriage - Exclusive" Gem Studded Clutch
+						i(67393),	-- "Carriage - Going Green" Herb Tote Bag
+						i(67390),	-- "Carriage - Maddy" High Tech Bag
+						i(67395),	-- "Carriage - Meeya" Leather Bag
+						i(67394),	-- "Carriage - Xandera" Student's Satchel
+					}),
 					n(52029, {	-- Edlan Halsing <Bloodthirsty Gladiator>
 						i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
 						i(64681),	-- Bloodthirsty Gladiator's Armbands of Meditation
@@ -2930,7 +2940,15 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 							})),
 							un(40, q(1078, {		-- Retrieval for Mauren
 								un(2, i(6677)),	-- Spellcrafter Wand
-							})),	
+							})),
+							a({
+								["questID"] = 1798,	-- Seeking Strahad
+								["qg"] = 6122,	-- Gakin the Darkbinder
+								["isBreadcrumb"] = true,
+								["lvl"] = 30,
+								["u"] = 40,
+								["classes"] = { 9 },	-- Warlock Only
+							}),
 							un(40, qc4(q(2206, { 	-- Snatch and Grab
 								un(2, i(7298)),	-- Blade of Cunning
 							}))),	

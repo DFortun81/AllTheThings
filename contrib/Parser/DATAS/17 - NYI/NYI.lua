@@ -70,7 +70,7 @@ _.NeverImplemented =
 	un(1, i(129738)), -- Verus
 	un(1, i(147204)), -- Black Apron - TEST
 	un(1, i(23388)), -- Tranquillen Tabard
-	
+	un(1, i(130156)),	-- Crane Bag
 	un(1, i(157650)), -- Tracker's Spear
 	un(1, i(157648)), -- Oakenstaff Protector
 	un(1, i(157620)), -- Halberd of Ferocity

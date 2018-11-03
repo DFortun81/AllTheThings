@@ -281,6 +281,7 @@ AllTheThings.Locales.enUS = {
 		[52] = "Interface\\Icons\\INV_Jewelry_Ring_04",						-- Finger
 		[53] = "Interface\\Icons\\INV_Trinket_Naxxramas05",					-- Trinket
 		[102] = "Interface\\Icons\\INV_Misc_Toy_10",						-- Toy
+		[113] = "Interface\\Icons\\INV_Misc_Bag_08",						-- Bag
 		[200] = "Interface\\Icons\\inv_scroll_05",							-- Recipes
 		
 	},

@@ -689,6 +689,11 @@ _.Craftables =
 			i(14128),	-- Wizardweave Robe
 			i(14130),	-- Wizardweave Turban
 			i(2583),	-- Woolen Boots
+			filter(113, { -- Bags
+				i(5765),	-- Black Silk Pack
+				i(14156),	-- Bottomless Bag
+				i(21342),	-- Core Felcloth Bag
+			}),	
 		}),
 	}),
 };

@@ -413,6 +413,9 @@ _.Craftables =
 			i(45567),	-- Savior's Slippers
 			i(41985),	-- Silky Iceshard Boots
 			i(45566),	-- Spellslinger's Slippers
+			filter(113, {	-- Bags
+				i(41597),	-- Abyssal Bag
+			}),
 		}),
 	}),
 };

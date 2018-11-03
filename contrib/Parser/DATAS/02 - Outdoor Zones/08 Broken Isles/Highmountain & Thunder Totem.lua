@@ -1156,7 +1156,17 @@ _.Zones =
 						n(-168, {    -- Other Quests
 							sz(10667,6 , { -- Pinerock Basin
 								q(40217),	-- An Offering of Ammo
-								q(39859),	-- Note-Eating Goats
+								{
+									["questID"] = 39859,	-- Note-Eating Goats
+									["sourceQuests"] = {
+										39417,	-- Rating Razik
+										40217,	-- An Offering of Ammo
+									},
+									["qg"] = 94434,	-- Addie Fizzlebog
+									["groups"] = {
+										i(130320),	-- Addie's Ink-Stained Satchel
+									},
+								},
 								q(40216),	-- A Hunter at Heart
 								q(40170),	-- Amateur Hour
 								q(39123),	-- Lion Stalkin'

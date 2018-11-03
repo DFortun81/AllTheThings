@@ -96,6 +96,9 @@ _.Zones =
 					q(14122, { -- The Great Bank Heist
 						["qg"] = 34668, -- Sassy Hardwrench
 						["sourceQuests"] = { 14120 }, -- A Bazillion Macaroons?!
+						["groups"] = {
+							i(56148),	-- Bank Robber's Bag
+						},
 					}),
 					q(14123, { -- Waltz Right In
 						["qg"] = 34693, -- Slinky Sharpshiv

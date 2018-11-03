@@ -532,6 +532,7 @@ _.Zones =
 						i(29147),	-- Talbuk Hide Spaulders
 						i(29141),	-- Tempest Leggings
 						i(29145),	-- Band of Ancestral Spirits
+						un(2, i(29143)),	-- Clefthoof Hide Quiver
 					})),
 					a(n(18822, {	-- Quartermaster Davian Vaclav
 						i(26045, {	-- Halaa Battle Token
@@ -630,6 +631,7 @@ _.Zones =
 						i(29148),	-- Blackened Leather Spaulders
 						i(29142),	-- Kurenai Kilt
 						i(29146),	-- Band of Elemental Spirits
+						un(2, i(29144)),	-- Worg Hide Quiver
 					})),
 					na(20096, {		-- Uriku <Cooking Supplies>
 						i(27697),	-- Recipe: Grilled Mudfish
