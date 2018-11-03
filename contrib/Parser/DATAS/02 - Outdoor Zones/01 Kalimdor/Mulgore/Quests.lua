@@ -13,12 +13,6 @@ _.Zones =
 						["coord"] = { 46.0, 58.2 },
 						["races"] = { 6 },	-- Tauren
 					},
-					{	-- A Bundle of Hides
-						["questID"] = 6361,
-						["qg"] = 3079,	-- Varg Windwhisper
-						["coord"] = { 46.0, 58.2 },
-						["races"] = { 6 },	-- Tauren
-					},
 					{	-- A Sacred Burial
 						["questID"] = 833,
 						["groups"] = {
@@ -60,6 +54,7 @@ _.Zones =
 						["qg"] = 37024,	-- Una Wildmane
 						["coord"] = { 49.4, 17.4 },
 						["races"] = { 6 },	-- Tauren
+						["sourceQuest"] = 24524,	-- Wildmane Cleansing
 					},
 					{	-- Kyle's Gond Missing!
 						["questID"] = 11129,
@@ -114,12 +109,14 @@ _.Zones =
 						["qg"] = 2948,	-- Mull Thunderhorn
 						["coord"] = { 48.6, 59.8 },
 						["races"] = { 6 },	-- Tauren
+						["sourceQuest"] = 24456,	-- Thunderhorn Cleansing
 					},
 					{	-- Rite of Vision
 						["questID"] = 20441,
 						["qg"] = 3054,	-- Zarlman Two-Moons
 						["coord"] = { 47.8, 57.2 },
 						["races"] = { 6 },	-- Tauren
+						["sourceQuest"] = 24457,	-- Rite of Vision
 					},
 					{	-- Rite of Wisdom
 						["questID"] = 773,
@@ -148,6 +145,7 @@ _.Zones =
 						["questID"] = 26180,
 						["qg"] = 2988,	-- Morin Cloudstalker
 						["coord"] = { 57.0, 60.4 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 751,	-- The Ravaged Caravan
 					},
 					{	-- Swoop Hunting
@@ -182,12 +180,14 @@ _.Zones =
 						["qg"] = 2948,	-- Mull Thunderhorn
 						["coord"] = { 48.6, 59.8 },
 						["races"] = { 6 },	-- Tauren
+						["sourceQuest"] = 24441,	-- Thunderhorn Totem
 					},
 					{	-- Thunderhorn Totem
 						["questID"] = 24441,
 						["qg"] = 2948,	-- Mull Thunderhorn
 						["coord"] = { 48.6, 59.8 },
 						["races"] = { 6 },	-- Tauren
+						["sourceQuest"] = 24440,	-- Winterhoof Cleansing
 					},
 					{	-- Wildmane Cleansing
 						["questID"] = 24524,
@@ -201,18 +201,21 @@ _.Zones =
 							i(57213),	-- Waterbearer's Robes
 							i(131373),	-- Duskwatcher's Legguards
 						},
+						["sourceQuest"] = 24523,	-- Wildmane Totem
 					},
 					{	-- Wildmane Totem
 						["questID"] = 24523,
 						["qg"] = 37024,	-- Una Wildmane
 						["coord"] = { 49.4, 17.4 },
 						["races"] = { 6 },	-- Tauren
+						["sourceQuest"] = 20441,	-- Rite of Vision
 					},
 					{	-- Winterhoof Cleansing
 						["questID"] = 24440,
 						["qg"] = 2948,	-- Mull Thunderhorn
 						["coord"] = { 48.6, 59.8 },
 						["races"] = { 6 },	-- Tauren
+						["sourceQuest"] = 20440,	-- Poison Water
 					},
 				}),
 			},

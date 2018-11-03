@@ -137,12 +137,21 @@ _.Zones =
 						["lvl"] = 35,
 						["sourceQuests"] = { 27258 },	-- The Black Shield
 					}),
+					{	-- Tal the Wind Rider Master
+						["questID"] = 6363,
+						["qg"] = 8359,	-- Ahanu
+						["coord"] = { 45.5, 55.8 },
+						["races"] = { 6 },	-- Tauren
+						["sourceQuest"] = 6362,	-- Ride to Thunderbluff
+					},
+					{	-- Return to Varg
+						["questID"] = 6364,
+						["qg"] = 2995,	-- Tal
+						["coord"] = { 46.8, 50.0 },
+						["races"] = { 6 },	-- Tauren
+						["sourceQuest"] = 6363,	-- Tal the Wind Rider Master
+					},
 --[[					
-					qg(2995, q( 6364, {	-- Return to Varg
-						["groups"] = {
-						},
-						["races"]= {6},
-					})),
 					qg(43870, qh(28164, {	-- Seek Brother Silverhallow
 						["groups"] = {
 						},
@@ -161,11 +170,6 @@ _.Zones =
 						["races"] = {8},
 					})),
 					qp129(qg(3028, qh(29354))),	-- Shiny Baubles
-					qg(8359, q( 6363, {	-- Tal the Wind Rider Master
-						["groups"] = {
-						},
-						["races"]= {6},
-					})),
 					qg(51639, qh(27280, {	-- The Earthbreaker Calls
 						["groups"] = {
 						},

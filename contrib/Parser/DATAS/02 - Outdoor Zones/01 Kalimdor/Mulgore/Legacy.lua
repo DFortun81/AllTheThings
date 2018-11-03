@@ -12,16 +12,19 @@ _.Zones =
 							{	-- Dwarven Digging
 								["questID"] = 14436,
 								["races"] = HORDE_ONLY,
+								["u"] = 40,
 							},
 							{	-- Journey into Thunder Bluff
 								["questID"] = 14439,
 								["races"] = HORDE_ONLY,
+								["u"] = 40,
 							},
 							{	-- Learn to Ride
 								["itemID"] = 46884,	-- Riding Training Pamphlet
 								["lvl"] = 20,
 								["questID"] = 14087,
 								["races"] = { 6 },	-- Tauren
+								["u"] = 40,
 							},
 							{	-- New Kodo - Green
 								["questID"] = 7663,
@@ -32,6 +35,7 @@ _.Zones =
 									i(18795),	-- Great Gray Kodo
 									i(18793),	-- Great White Kodo
 								},
+								["u"] = 40,
 							},
 							{	-- New Kodo - Teal
 								["questID"] = 7662,
@@ -42,6 +46,7 @@ _.Zones =
 									i(18795),	-- Great Gray Kodo
 									i(18793),	-- Great White Kodo
 								},
+								["u"] = 40,
 							},
 							{	-- Supervisor Fizsprocket
 								["questID"] = 765,
