@@ -12,7 +12,7 @@ _.WorldDrops =
 				i(4498),	-- Brown Leather Satchel
 				i(21342),	-- Core Felcloth Bag
 				i(4500),	-- Traveler's Backpack
-			}),	
+			}),
 		},
 		["tierID"] = 1
 	},	

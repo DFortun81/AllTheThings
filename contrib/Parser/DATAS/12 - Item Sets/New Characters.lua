@@ -76,7 +76,8 @@ _.GearSets =
 				i(112459), -- Illidari Ring
 				i(112460), -- Illidari Band
 				i(123959), -- Demon Trophy
-				i(123960), -- Charm of Demonic 
+				i(123960), -- Charm of Demonic
+				i(123958), -- Demon Hide Satchel
 			}),
 			cl(3, { -- Hunter	
 				i(157674), -- Heartbonded Vest

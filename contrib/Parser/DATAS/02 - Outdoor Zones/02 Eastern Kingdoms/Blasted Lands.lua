@@ -948,8 +948,12 @@ _.Zones =
 								["classes"] = { 9 },	-- Warlock
 							})),
 							un(40, q(3628, {	-- You Are Rakh'likh, Demon
-								un(2, i(10779)),	-- Demon's Blood
-								un(2, i(10778)),	-- Necklace of Sanctuary
+								["qg"] = 7572,	-- Fallen Hero of the Horde
+								["groups"] = {
+									un(2, i(10778)),	-- Necklace of Sanctuary
+									un(2, i(10779)),	-- Demon's Blood
+									un(2, i(10959)),	-- Demon Hide Sack
+								},
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)

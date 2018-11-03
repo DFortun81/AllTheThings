@@ -116,6 +116,7 @@ _.Instances =
 								})),
 								un(40, q(1486, {	-- Deviate Hides
 									un(2, i(6480)),	-- Slick Deviate Leggings
+									un(2, i(918)),	-- Deviate Hide Pack
 								})),
 							}),
 							--n(-16, {	-- Rares (Legacy)
