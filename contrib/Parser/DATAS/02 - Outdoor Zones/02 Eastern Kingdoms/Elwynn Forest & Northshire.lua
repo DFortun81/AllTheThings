@@ -115,10 +115,11 @@ _.Zones =
 					qg(246, qa(   85)),	-- Lost Necklace
 --]]					
 					qg(42256, qa(  147, { -- Manhunt
-						i(1360),
-						i(1183),
-						i(57522),
-						i(131198),
+						i(1183),	-- Elastic Wristguards
+						i(57522),	-- McCree's Sparring Gloves
+						i(1360),	-- Stormwind Plate Gloves
+						i(131198),	-- Wrangling Grips
+						i(57251),	-- "Collecting" Bag
 					})),
 --[[					
 					qg(248, qa(  107)),	-- Note to William				

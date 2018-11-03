@@ -319,7 +319,13 @@ _.Zones =
 							})),
 							qg(37081, qa(24473)),	-- Lockdown in Anvilmar
 							qg(1104, qa(24486)),	-- Make Hay While the Sun Shines
-							qg(37113, qa(24492)),	-- Pack Your Bags
+							a({
+								["questID"] = 24492,	-- Pack Your Bags
+								["qg"] = 37113,	-- Milo Geartwinge
+								["groups"] = {
+									i(57542),	-- Coldridge Mountaineer's Pouch
+								},
+							}),
 							qg(786, qa(  182)),	-- The Troll Menace
 							qg(1354, qa(24489)),	-- Trolling for Information
 							qg(37087, qa(24487)),	-- Whitebeard Needs Ye
@@ -360,9 +366,19 @@ _.Zones =
 								qg(42317, q(26331, {	-- Crushcog's Minions
 									["races"] = {7,9},
 								})),
-								qg(42630, q(26265, {	-- Dealing with the Fallout
-									["races"] = {7,9},
-								})),
+]]--
+								{
+									["questID"] = 26265,	-- Dealing with the Fallout
+									["qg"] = 42630,	-- Corporal Fizzwhistle
+									["races"] = {
+										7,	-- Gnome
+										9,	-- Goblin (I don't know about this.... WoWHead has this listed, but I doubt it. No Goblin to test though.)
+									},
+									["groups"] = {
+										i(59053),	-- Airfield Courier Bag
+									},
+								},
+--[[
 								qg(42353, qa(26364, {	-- Down with Crushcog!
 									["races"] = {7},
 								})),

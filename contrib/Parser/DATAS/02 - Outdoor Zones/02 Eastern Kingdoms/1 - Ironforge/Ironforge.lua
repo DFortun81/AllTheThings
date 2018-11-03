@@ -899,13 +899,29 @@ _.Zones =
 								un(2, i(22109)),	-- Feralheart Cowl 
 								un(2, i(22113)),	-- Feralheart Vest
 							}))),
-							{
+							a({
 								["questID"] = 2946,	-- Seeing What Happens
 								["sourceQuest"] = 2963,	-- Portents of Uldum
 								["qg"] = 2916,	-- Historian Karnik
 								["u"] = 40,
-							},
-							{
+							}),
+							a({
+								["questID"] = 1802,	-- Tome of the Cabal
+								["sourceQuest"] = 1758,	-- Tome of the Cabal
+								["qg"] = 6294,	-- Krom Stoutarm
+								["lvl"] = 30,
+								["u"] = 40,
+								["classes"] = { 9 },	-- Warlock Only
+							}),
+							a({
+								["questID"] = 1804,	-- Tome of the Cabal
+								["sourceQuest"] = 1802,	-- Tome of the Cabal
+								["qg"] = 6294,	-- Krom Stoutarm
+								["lvl"] = 30,
+								["u"] = 40,
+								["classes"] = { 9 },	-- Warlock Only
+							}),
+							a({
 								["questID"] = 2439,	-- The Platinum Discs
 								["sourceQuest"] = 2280,	-- The Platinum Discs
 								["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
@@ -913,7 +929,7 @@ _.Zones =
 								["groups"] = {
 									un(2, i(9587)),	-- Thawpelt Sack
 								},
-							},
+							}),
 							un(40, qa(3701, {	-- The Smoldering Ruins of Thaurissan
 								un(2, i(12102)),	-- Ring of the Aristocrat
 							})),

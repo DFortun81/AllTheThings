@@ -264,10 +264,11 @@ _.Zones =
 						un(2, i(16335)),	-- Senior Sergeant's Insignia
 					}),
 					n(50477, {	-- Champion Uru'zin <Darkspear Quartermaster>
-						i(64911),	-- Darkspear Mantle
-						i(64912),	-- Darkspear Cape
-						i(64913),	-- Darkspear Shroud
 						i(45582),	-- Darkspear Tabard
+						i(64912),	-- Darkspear Cape
+						i(64911),	-- Darkspear Mantle
+						i(64913),	-- Darkspear Shroud
+						i(67536),	-- Darkspear Satchel
 					}),
 					n(73151, {	-- Deathguard Netharian <Combatant Mount Quartermaster>
 						["groups"] = bubbleDown({["u"] = 2}, {
@@ -496,10 +497,11 @@ _.Zones =
 						i(18427),  -- Sergeant's Cloak
 					}),
 					n(50323, {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
-						i(64905),	-- Bilgewater Shroud
-						i(64906),	-- Bilgewater Cape
-						i(64907),	-- Bilgewater Mantle
 						i(64884),	-- Bilgewater Cartel Tabard
+						i(64906),	-- Bilgewater Cape
+						i(64905),	-- Bilgewater Shroud
+						i(64907),	-- Bilgewater Mantle
+						i(67525),	-- Bilgewater Satchel
 					}),
 					n(52036, {	-- Galra <Honor Heirlooms>
 						i(122364),	-- Sharpened Scarlet Kris

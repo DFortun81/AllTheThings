@@ -66,15 +66,16 @@ _.Zones =
 					})),
 --					qa(12340),	-- Candy Bucket
 					o(34, {	-- Old Jug
-						qa(26356, { -- Captain Sanders' Hidden Treasure
+						q(26356, { -- Captain Sanders' Hidden Treasure
 							i(3344),	-- Captain Sanders' Sash
 							i(3342),	-- Captain Sanders' Shirt
+							i(3343),	-- Captain Sanders' Booty Bag
 						}),
 					}),
 --[[
-					qg(, qa(26353)),	-- Captain Sanders' Hidden Treasure
-					qg(, qa(26355)),	-- Captain Sanders' Hidden Treasure
-					qg(, qa(26354)),	-- Captain Sanders' Hidden Treasure
+					qg(, q(26353)),	-- Captain Sanders' Hidden Treasure
+					qg(, q(26355)),	-- Captain Sanders' Hidden Treasure
+					qg(, q(26354)),	-- Captain Sanders' Hidden Treasure
 					qg(, q(46293)),	-- Deadmines, Part Three?
 					qg(, q(43287)),	-- Defend
 					qg(, q(43242)),	-- Demon Commander

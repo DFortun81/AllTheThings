@@ -1458,6 +1458,9 @@ _.Zones =
 				m(124, {	-- The Scarlet Enclave
 					["groups"] = {
 						n(-17, { -- Quests
+							["classes"] = {
+								6,	-- Death Knight Only
+							},
 							["groups"] = {
 --[[
 								q(43424),	-- A Hero's Weapon
@@ -1571,8 +1574,12 @@ _.Zones =
 									i(38661),
 								})),
 								qg(28912, q(12727, { -- Bloody Breakout
-									i(38665),
+									i(38665),	-- Saronite War Plate
 								})),
+								{
+									["questID"] = 12593,	-- In Service Of The Lich King
+									["qg"] = 25462,	-- The Lich King
+								},
 								qg(28910, q(12722, { -- Lambs To The Slaughter
 									i(38670),
 								})),
@@ -1607,7 +1614,6 @@ _.Zones =
 									i(38669),
 								})),
 							},
-							["classes"] = {6},
 						}),
 						n(0,   {	-- Zone Drop
 							i(16252, {	-- Formula: Enchant Weapon - Crusader
@@ -1616,18 +1622,6 @@ _.Zones =
 								},
 							}),
 						}),
-						--[[					
-						n(-40, {	-- Legacy
-							["groups"] = {
-								nlq({	-- Quests (Legacy)
-								}),
-								--n(-16, {	-- Rares (Legacy)
-								--}),
-								--n(  0, {	-- Zone Drop (Legacy)
-								--}),
-							},
-						}),
-						--]]
 					},
 					["icon"] = "Interface\\Icons\\Classicon_deathknight",
 					["description"] = "|cff66ccffThe Scarlet Enclave is the name of the starting area for all Death Knight players in World of Warcraft: Wrath of the Lich King.|r",

@@ -236,12 +236,13 @@ _.Instances =
 							}),
 						}),
 						cr(46962, e( 96, { 	-- Baron Ashbury
-							i(6323), 	-- Baron's Scepter
-							i(6314), 	-- Wolfmaster Cape
-							i(6324), 	-- Robes of Arugal
+							i(6323),	-- Baron's Scepter
+							i(6314),	-- Wolfmaster Cape
+							i(6324),	-- Robes of Arugal
 						})),
 						n(  3864, {			-- Fel Steed
-							dr(21, i(6341)), 	-- Eerie Stable Lantern
+							dr(21, i(6341)),	-- Eerie Stable Lantern
+							dr(14, i(932)),	-- Fel Steed Saddlebags
 						}),
 						cr( 3887, e( 97, { 	-- Baron Silverlaine
 							i(  5254),	-- Rugged Spaulders

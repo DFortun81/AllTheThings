@@ -135,10 +135,11 @@ _.Zones =
 						i(64882),	-- Gilneas Tabard
 					})),
 					a(n(50305, {	-- Moon Priestess Lasara <Darnassus Quartermaster>
-						i(64886),	-- Shroud of Darnassus
+						i(45579),	-- Darnassus Tabard
 						i(64887),	-- Cape of Darnassus
 						i(64888),	-- Mantle of Darnassus
-						i(45579),	-- Darnassus Tabard
+						i(64886),	-- Shroud of Darnassus
+						i(67526),	-- Darnassian Satchel
 					})),
 					na(4229, {		-- Mythrin'dir <Trade Supplies>
 						i(20854),	-- Design: Amulet of the Moon
