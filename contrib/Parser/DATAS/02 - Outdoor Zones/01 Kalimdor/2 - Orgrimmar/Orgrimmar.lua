@@ -691,15 +691,18 @@ Legacy				q( 1436),	-- Alliance Relations
 					qp171(qg(3347, q(29067))),	-- Potion Master
 --					qg(95234, q(44092)),	-- Protect the Home Front (LEGACY - pre-Legion)
 					qg(14720, q(25275)),	-- Report to the Labor Captain (QG in Orgrimmar, additional QGs 39605 and 86832, previous Horde leaders)
-					
-					qg(14720, q( 26840)),	-- Return to the Highlands (add'l QGs 39605 and 86832, previous Horde leaders)
 --]]
+					{
+						["questID"] = 26840,	-- Return to the Highlands
+						["sourceQuest"] = 26830,	-- Traitor's Bait
+						["qg"] = 3144,	-- Eitrigg (add'l QGs 14720, 39605 and 86832, previous Horde leaders)
+						["lvl"] = 84,
+					},
 					q(28909, {	-- Sauranok Will Point the Way
 						["qg"] = 14720,	-- High Overlord Saurfang
 						["sourceQuests"] = { 26294 },	-- Weapons of Mass Dysfunction
 					}),
 --[[
-					qg(44024, q( 26798)),	-- Saurfang Will be Pleased
 					qg(88705, q(32317)),	-- Seeking the Soulstones
 --]]
 					qdg(q(28465, {	-- Slaves of the Firelord
@@ -718,7 +721,7 @@ Legacy				q( 1436),	-- Alliance Relations
 						["races"] = { 10 },	-- Blood Elf
 						["classes"] = { 5 },	-- Priest
 					})),	
-					qg(42506, q(26234, {	-- Stealing From Our Own, {
+					qg(42506, q(26234, {	-- Stealing From Our Own
 						["qg"] = 42506,	-- Marogg
 						["coord"] = { 56.5, 62.5 },
 						["isDaily"] = true,
@@ -841,7 +844,10 @@ Legacy				q( 1436),	-- Alliance Relations
 						["qg"] = 88705,	-- Kranosh
 						["classes"] = { 9 },	-- Warlock
 					})),
-					qg(14720, q(26830, {  -- Traitor's Bait (add'l QGs 39605 and 86832, previous Horde leaders)
+					{
+						["questID"] = 26830,	-- Traitor's Bait
+						["sourceQuest"] = 26798,	-- Saurfang Will be Pleased
+						["qg"] = 3144,	-- Eitrigg (add'l QGs 14720, 39605 and 86832, previous Horde leaders)
 						["groups"] = {
 							i(63916),	-- Belt of Mystical Betrayal
 							i(63914),	-- Mindsliced Chestguard
@@ -851,7 +857,7 @@ Legacy				q( 1436),	-- Alliance Relations
 							--i(63917),	-- Truthbreaker Shield [Not listed, but awards on completing quest]
 						},
 						["lvl"] = 84,
-					})),					
+					},
 --					qp171(qg(3347, q(29482))),	-- Transmutation Master
 					qdg(q(28475, {	-- Twilight Scheming
 						["groups"] = {

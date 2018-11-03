@@ -374,7 +374,11 @@ _.Zones =
 					qg(, q(27564)),	-- In Defense of the Redoubt
 --]]
 					qg(43581, qh(26621,  {  -- Insurrection
-						i(63889),
+						["sourceQuest"] = 26619,	-- You Say You Want a Revolution
+						["groups"] = {
+							i(63889),	-- Shackle-Shatter Wand
+							i(63890),	-- Ring of Rebellion
+						},
 					})),
 --[[
 					qg(, qh(27638)),	-- Just You and Garona
