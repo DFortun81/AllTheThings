@@ -439,7 +439,8 @@ _.Instances =
 								i( 11783), -- Chillsteel Girdle
 								i(151405), -- Cold-Forged Chestplate
 								n(  9042, { -- Verek
-									i(22242), -- Verek's Leash
+									i(11755),	-- Verek's Collar
+									i(22242),	-- Verek's Leash
 								}),
 							})),
 							n( 9476, {	-- Watchman Doomgrip

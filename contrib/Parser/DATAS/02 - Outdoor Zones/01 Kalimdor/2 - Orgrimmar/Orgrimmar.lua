@@ -1184,6 +1184,17 @@ Legacy				q( 1436),	-- Alliance Relations
 					n(12793, {	-- Brave Stonehide <Accessories Quartermaster>
 						i(15199),	-- Stone Guard's Herald
 						i(15197),	-- Scout's Tabard
+						un(2, i(18834)),	-- Insignia of the Horde [Warrior]
+						un(2, i(18845)),	-- Insignia of the Horde [Shaman]
+						un(2, i(18846)),	-- Insignia of the Horde [Hunter]
+						un(2, i(18849)),	-- Insignia of the Horde [Rogue]
+						un(2, i(18850)),	-- Insignia of the Horde [Mage]
+						un(2, i(18851)),	-- Insignia of the Horde [Priest]
+						un(2, i(18852)),	-- Insignia of the Horde [Warlock]
+						un(2, i(18853)),	-- Insignia of the Horde [Druid]
+						un(2, i(15200)),	-- Senior Sergeant's Insignia
+						un(2, i(18428)),	-- Senior Sergeant's Insignia
+						un(2, i(16335)),	-- Senior Sergeant's Insignia
 					}),
 					n(50477, {	-- Champion Uru'zin <Darkspear Quartermaster>
 						i(64911),	-- Darkspear Mantle

@@ -1795,29 +1795,27 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(138385),	-- Lucky Shirt
 					}),
 					n(12784, {	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
-						["groups"] = {
-							i(18865),	-- Grand Marshal's Punisher
-							i(12584),	-- Grand Marshal's Longsword
-							i(18827),	-- Grand Marshal's Handaxe
-							i(18830),	-- Grand Marshal's Sunderer
-							i(18833),	-- Grand Marshal's Bullseye
-							i(18836),	-- Grand Marshal's Repeater
-							i(18838),	-- Grand Marshal's Dirk
-							i(18843),	-- Grand Marshal's Right Hand Blade
-							i(18847),	-- Grand Marshal's Razor Hand Blade
-							i(18855),	-- Grand Marshal's Hand Cannon
-							i(18825),	-- Grand Marshal's Aegis
-							i(18867),	-- Grand Marshal's Battle Hammer
-							i(18869),	-- Grand Marshal's Glaive
-							i(18873),	-- Grand Marshal's Stave
-							i(18876),	-- Grand Marshal's Claymore
-							i(23451),	-- Grand Marshal's Mageblade
-							i(23452),	-- Grand Marshal's Tome of Power
-							i(23453),	-- Grand Marshal's Tome of Restoration
-							i(23454),	-- Grand Marshal's Warhammer
-							i(23455),	-- Grand Marshal's Demolisher
-							i(23456),	-- Grand Marshal's Swiftblade
-						},
+						i(18865),	-- Grand Marshal's Punisher
+						i(12584),	-- Grand Marshal's Longsword
+						i(18827),	-- Grand Marshal's Handaxe
+						i(18830),	-- Grand Marshal's Sunderer
+						i(18833),	-- Grand Marshal's Bullseye
+						i(18836),	-- Grand Marshal's Repeater
+						i(18838),	-- Grand Marshal's Dirk
+						i(18843),	-- Grand Marshal's Right Hand Blade
+						i(18847),	-- Grand Marshal's Razor Hand Blade
+						i(18855),	-- Grand Marshal's Hand Cannon
+						i(18825),	-- Grand Marshal's Aegis
+						i(18867),	-- Grand Marshal's Battle Hammer
+						i(18869),	-- Grand Marshal's Glaive
+						i(18873),	-- Grand Marshal's Stave
+						i(18876),	-- Grand Marshal's Claymore
+						i(23451),	-- Grand Marshal's Mageblade
+						i(23452),	-- Grand Marshal's Tome of Power
+						i(23453),	-- Grand Marshal's Tome of Restoration
+						i(23454),	-- Grand Marshal's Warhammer
+						i(23455),	-- Grand Marshal's Demolisher
+						i(23456),	-- Grand Marshal's Swiftblade
 					}),
 					n(12783, {	-- Lieutenant Karter <War Mount Quartermaster>
 						i(29465),	-- Black Battlestrider Mount
@@ -2129,6 +2127,17 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					n(12781, {	-- Master Sergeant Biggins <Accessories Quartermaster>
 						i(15198),	-- Knight's Colors
 						i(15196),	-- Private's Tabard
+						un(2, i(18854)),	-- Insignia of the Alliance [Warrior]
+						un(2, i(18864)),	-- Insignia of the Alliance [Paladin]
+						un(2, i(18856)),	-- Insignia of the Alliance [Hunter]
+						un(2, i(18857)),	-- Insignia of the Alliance [Rogue]
+						un(2, i(18859)),	-- Insignia of the Alliance [Mage]
+						un(2, i(18862)),	-- Insignia of the Alliance [Priest]
+						un(2, i(18858)),	-- Insignia of the Alliance [Warlock]
+						un(2, i(18863)),	-- Insignia of the Alliance [Druid]
+						un(2, i(18442)),	-- Master Sergeant's Insignia
+						un(2, i(18444)),	-- Master Sergeant's Insignia
+						un(2, i(18443)),	-- Master Sergeant's Insignia
 					}),
 					n(28347, {	-- Miles Sidney <Poison Supplies>
 						i(38579),	-- Venomous Tome
