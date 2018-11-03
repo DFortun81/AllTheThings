@@ -88,6 +88,18 @@ _.Zones =
 								un(2, i(11853)),	-- Rambling Boots
 								un(2, i(2694)),	-- Settler's Leggings
 							})),
+							{
+								["questID"] = 1795,	-- The Binding
+								["sourceQuest"] = 1804,	-- Tome of the Cabal
+								["qg"] = 6251,	-- Strahad Farsan
+								["lvl"] = 30,
+								["u"] = 40,
+								["classes"] = { 9 },	-- Warlock Only
+								["groups"] = {
+									i(22244),	-- Box of Souls
+									spell(691),	-- Summon Felhunter
+								},
+							},
 							un(40, q(4964, {	-- The Completed Orb of Dar'Orahil
 								["groups"] = {
 									un(2, i(15108)),	-- Orb of Dar'Orahil
@@ -110,6 +122,14 @@ _.Zones =
 							})),
 							un(40, qh(28877)),	-- They Call Him Swiftdagger. He Kills Harpies.
 							un(40, qh(28876)),	-- To the Mor'Shan Ramparts!
+							a({
+								["questID"] = 1758,	-- Tome of the Cabal
+								["sourceQuest"] = 1798,	-- Seeking Strahad
+								["qg"] = 6251,	-- Strahad Farsan
+								["lvl"] = 30,
+								["u"] = 40,
+								["classes"] = { 9 },	-- Warlock Only
+							}),
 							un(40, qh(1824, {	-- Trial at the Field of Giants
 								["groups"] = {
 									un(2, i(7120)),	-- Ruga's Bulwark
