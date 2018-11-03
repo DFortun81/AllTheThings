@@ -623,7 +623,9 @@ _.Zones =
 						q(9361),	-- Helboar, the Other White Meat
 						qa( 10106),	-- Hellfire Fortifications
 						qa( 13410),	-- Hellfire Fortifications
-						qa( 13408),	-- Hellfire Fortifications
+						qa( 13408, {	-- Hellfire Fortifications
+							i(40476),	-- Insignia of the Alliance
+						}),
 						qa( 10443),	-- Helping the Cenarion Post
 						qh(10258,  {  -- Honor the Fallen
 							i(29108),	-- Blade of the Unyielding
