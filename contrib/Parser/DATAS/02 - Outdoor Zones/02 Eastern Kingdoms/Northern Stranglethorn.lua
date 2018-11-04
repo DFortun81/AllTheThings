@@ -685,7 +685,7 @@ _.Zones =
 						}),
 					},
 				})),
-				n(-4, {	-- Achievement
+				n(-4,   {	-- Achievement
 					ach(940),		-- The Green Hills of Stranglethorn
 				}),
 				n(-228, {	-- Flight Path
@@ -702,7 +702,7 @@ _.Zones =
 						["coord"] = { 47.8, 11.8 },
 					}),
 				}),
-				n(-25, {	-- Pet Battle
+				n(-25,  {	-- Pet Battle
 					p(406), 	-- Beetle
 					p(421), 	-- Crimson Moth
 					p(407), 	-- Forest Spiderling
@@ -717,7 +717,7 @@ _.Zones =
 					}),
 --					qg(63194, q(31852)),	-- Steven Lisbane (DAILY VERSION)
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 --[[	Achievement info for Loremaster related zone quests
 					ach(4906, {		-- Northern Stranglethorn Quests
 						crit(1),		-- Ohgan'aka
@@ -1036,7 +1036,7 @@ _.Zones =
 						i(131523),	-- Irradiated Faux Croc' Wristguards
 					})),
 				}),
-				n(-16, {	-- Rares
+				n(-16,  {	-- Rares
 					n(14487, { 	-- Gluggl
 						dr(07.0, i(6604)),	-- Dervish Cape
 						dr(07.0, i(9803)),	-- Superior Bracers
@@ -1275,56 +1275,84 @@ _.Zones =
 						dr(01.1, i(7356)),	-- Elder's Cloak
 						dr(01.0, i(7419)),	-- Phalanx Cloak
 					}),
-					n(0, { 		-- Zone Drop
-						i(2955),	-- First Mate Hat
-						i(48126), 	-- Razzashi Hatchling
-						i(8494),	-- Parrot Cage (Hyacinth Macaw)
-						n(597, { 	-- Bloodscalp Berserker
-							i(1523),	-- Huge Stone Club
-						}),
-						n(671, { 	-- Bloodscalp Headhunter
-							i(1522),	-- Headhunting Spear
-						}),
-						n(701, { 	-- Bloodscalp Mystic
-							i(1997),	-- Pressed Felt Robe
-						}),
-						n(697, { 	-- Bloodscalp Shaman
-							i(1998),	-- Bloodscalp Channeling Staff
-						}),
-						n(1142, { 	-- Mosh'Ogg Brute
-							i(1679),	-- Korg Bat
-						}),
-						n(723, { 	-- Mosh'Ogg Butcher
-							i(1680),	-- Headchopper
-						}),
-						n(680, { 	-- Mosh'Ogg Lord
-							i(1677),	-- Drake-Scale Vest
-						}),
-						n(709, { 	-- Mosh'Ogg Warmonger
-							i(1986), 	-- Gutrender
-						}),
-						n(781, {	-- Skullsplitter Headhunter
-							i(1624),	-- Skullsplitter Helm
-						}),
-						n(1094, { 	-- Venture Co. Miner
-							i(1991),	-- Goblin Power Shovel
-						}),
-						n(4260, { 	-- Venture Co. Shredder
-							i(5755),	-- Onyx Shredder Plate
-						}),
-						n(674, { 	-- Venture Co. Strip Miner
-							dr(0.2, i(11203)),	--Formula: Enchant Gloves - Advanced Mining
-							i(1991),	-- Goblin Power Shovel
-						}),
-						n(676, { 	-- Venture Co. Surveyor
-							i(1664),	-- Spellforce Rod
-						}),
-						n(677, {	-- Venture Co. Tinkerer
-							i(1659),	-- Engineering Gloves
-						}),
+				}),
+				n(0,    {	-- Zone Drop
+					i(1998, {	-- Bloodscalp Channeling Staff
+						["crs"] = {
+							697,	-- Bloodscalp Shaman
+						},
+					}),
+					i(1677, {	-- Drake-Scale Vest
+						["crs"] = {
+							680,	-- Mosh'Ogg Lord
+						},
+					}),
+					i(1659, {	-- Engineering Gloves
+						["crs"] = {
+							677,	-- Venture Co. Tinkerer
+						},
+					}),
+					i(2955),	-- First Mate Hat
+					i(11203, {	-- Formula: Enchant Gloves - Advanced Mining
+						["crs"] = {
+							674,	-- Venture Co. Strip Miner
+						},
+					}),
+					i(1991, {	-- Goblin Power Shovel
+						["crs"] = {
+							1094,	-- Venture Co. Miner
+							674,	-- Venture Co. Strip Miner
+						},
+					}),
+					i(1986, {	-- Gutrender
+						["crs"] = {
+							709,	-- Mosh'Ogg Warmonger
+						},
+					}),
+					i(1680, {	-- Headchopper
+						["crs"] = {
+							723, 	-- Mosh'Ogg Butcher
+						},
+					}),
+					i(1522, {	-- Headhunting Spear
+						["crs"] = {
+							671,	-- Bloodscalp Headhunter
+						},
+					}),
+					i(1523, {	-- Huge Stone Club
+						["crs"] = {
+							597,	-- Bloodscalp Berserker
+						},
+					}),
+					i(1679, {	-- Korg Bat
+						["crs"] = {
+							1142, 	-- Mosh'Ogg Brute
+						},
+					}),
+					i(5755, {	-- Onyx Shredder Plate
+						["crs"] = {
+							4260,	-- Venture Co. Shredder
+						},
+					}),
+					i(48126), 	-- Razzashi Hatchling
+					i(8494),	-- Parrot Cage (Hyacinth Macaw)
+					i(1997, {	-- Pressed Felt Robe
+						["crs"] = {
+							701,	-- Bloodscalp Mystic
+						},
+					}),
+					i(1624, {	-- Skullsplitter Helm
+						["crs"] = {
+							781,	-- Skullsplitter Headhunter
+						},
+					}),
+					i(1664, {	-- Spellforce Rod
+						["crs"] = {
+							676,	-- Venture Co. Surveyor
+						},
 					}),
 				}),
-				n(-2,  {	-- Vendors
+				n(-2,   {	-- Vendors
 					nh(734, {	-- Corporal Bluth <Camp Trader>
 						i(12231),	-- Recipe: Jungle Stew
 						i(12228),	-- Recipe: Roast Raptor
@@ -1351,7 +1379,7 @@ _.Zones =
 						i(16111),	-- Recipe: Spiced Chili Crab
 					})
 				}),
-				n(-40, {	-- Legacy
+				n(-40,  {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(204, {	-- Bad Medicine

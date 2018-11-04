@@ -491,12 +491,26 @@ _.Zones =
 						["sourceQuests"] = { 10597 },	-- Setting Up the Bomb
 					}),
 					
+
+					qa(10774, {	-- Blood Elf + Giant = ???
+						["qg"] = 22059,	-- Wildhammer Gryphon Rider
+						["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
+						["sourceQuests"] = { 10773 },	-- Breaching the Path
+					}),
+
 					
 					q( 10546, {	-- Borak, Son of Oronok
 						["qg"] = 21183,	-- Oronok Torn-heart
 						["sourceQuests"] = { 10519 },	-- The Cipher of Damnation - Truth and History
 					}),
 					
+
+					qa(10773, {	-- Breaching the Path
+						["qg"] = 22059,	-- Wildhammer Gryphon Rider
+						["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
+						["sourceQuests"] = { 10772 },	-- The Path of Conquest
+					}),
+
 					
 					qh(10751, {	-- Breaching the Path
 						["qg"] = 21998,	-- Kor'kron Wind Rider
@@ -528,6 +542,19 @@ _.Zones =
 					}),
 					
 					
+					qa(10776, {	-- Dissension Amongst the Ranks...
+						["g"] = {
+							i(31075),	-- Evoker's Mark of the Redemption
+							i(31078),	-- Protector's Mark of the Redemption
+							i(31077),	-- Slayer's Mark of the Redemption
+							i(31076),	-- Spellsword's Mark of the Redemption
+						},
+						["qg"] = 22059,	-- Wildhammer Gryphon Rider
+						["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
+						["sourceQuests"] = { 10775 },	-- Tabards of the Illidari
+					}),
+					
+					
 					qh(10769, {	-- Dissension Amongst the Ranks...
 						["groups"] = {
 							i(31075),	-- Evoker's Mark of the Redemption
@@ -542,18 +569,21 @@ _.Zones =
 					
 					q( 10634, {	-- Divination: Gorefiend's Armor
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
+						["coord"] = { 58.2, 70.8 },
 						["sourceQuests"] = { 10633 },	-- Teron Gorefiend - Lore and Legend
 					}),
 					
 					
 					q( 10635, {	-- Divination: Gorefiend's Cloak
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
-						["sourceQuests"] = { 10633 },	-- Teron Gorefiend - Lore and Legend
+						["coord"] = { 58.2, 70.8 },
+						["sourceQuests"] = { 10644, 10633 },	-- Teron Gorefiend - Lore and Legend (A/H)
 					}),
 					
 					
 					q( 10636, {	-- Divination: Gorefiend's Truncheon
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
+						["coord"] = { 58.2, 70.8 },
 						["sourceQuests"] = { 10633 },	-- Teron Gorefiend - Lore and Legend
 					}),
 					
@@ -571,12 +601,14 @@ _.Zones =
 					
 					q( 10458, {	-- Enraged Spirits of Fire and Earth
 						["qg"] = 21024,	-- Earthmender Torlok
+						["coord"] = { 42.2, 45.0 },
 						["sourceQuests"] = { 10680, 10681 },	-- The Hand of Gul'dan (A/H)
 					}),
 					
 
 					q( 10480, {	-- Enraged Spirits of Water
 						["qg"] = 21024,	-- Earthmender Torlok
+						["coord"] = { 42.1, 45.0 },
 						["sourceQuests"] = { 10458 },	-- Enraged Spirits of Fire and Earth
 					}),
 					
@@ -608,6 +640,17 @@ _.Zones =
 					q( 10521, {	-- Grom'tor, Son of Oronok
 						["qg"] = 21183,	-- Oronok Torn-heart
 						["sourceQuests"] = { 10519 },	-- The Cipher of Damnation - Truth and History
+					}),
+					
+					
+					qa(10643, {	-- Harbingers of Shadowmoon
+						["qg"] = 21774,	-- Zorus the Judicator
+						["coords"] = {	-- questgiver pats
+							{ 36.6, 55.4 },
+							{ 36.6, 56.6 },
+							{ 37.2, 55.8 },
+						},
+						["sourceQuests"] = { 10642 },	-- A Ghost in the Machine
 					}),
 					
 					
@@ -717,6 +760,20 @@ _.Zones =
 						["coord"] = { 36.5, 55.2 },
 					}),
 					
+
+					qa(10677, {	-- The Second Course...
+						["qg"] = 21777,	-- Gnomus
+						["coord"] = { 36.5, 55.2 },
+						["sourceQuests"] = { 10661 },	-- Spleendid!
+					}),
+
+
+					qa(10775, {	-- Tabards of the Illidari
+						["qg"] = 22059,	-- Wildhammer Gryphon Rider
+						["coord"] = { 52.4, 68.4 },
+						["sourceQuests"] = { 10774 },	-- Blood Elf + Giant = ???
+					}),
+
 					
 					qh(10768, {	-- Tabards of the Illidari
 						["qg"] = 21998,	-- Kor'kron Wind Rider
@@ -737,6 +794,17 @@ _.Zones =
 						["sourceQuests"] = { 10634, 10635, 10636 },	-- Divination: Teron Gorefiend's Armor / Cloak / Truncheon
 					}),
 					
+
+					qa(10644, {	-- Teron Gorefiend - Lore and Legend
+						["qg"] = 21774,	-- Zorus the Judicator
+						["coords"] = {	-- questgiver pats
+							{ 36.6, 55.4 },
+							{ 36.6, 56.6 },
+							{ 37.2, 55.8 },
+						},
+						["sourceQuests"] = { 10643 },	-- Harbingers of Shadowmoon
+					}),
+
 					
 					qh(10633, {	-- Teron Gorefiend - Lore and Legend
 						["qg"] = 21772,	-- Chief Apothecary Hildagard
@@ -872,6 +940,13 @@ _.Zones =
 					}),
 
 
+					qa(10678, {	-- The Main Course!
+						["qg"] = 21777,	-- Gnomus
+						["coord"] = { 36.5, 55.2 },
+						["sourceQuests"] = { 10677 },	-- The Second Course...
+					}),
+					
+					
 					qa(10772, {	-- The Path of Conquest
 						["qg"] = 21773,	-- Thane Yoregar
 						["coord"] = { 36.2, 57.0 },
@@ -1009,9 +1084,7 @@ _.Zones =
 						i(30946),	-- Mooncrest Headdress
 						i(30929),	-- Soothsayer's Kilt
 					}),
-					qa(10774),	-- Blood Elf + Giant = ???
 					q( 11107),	-- Bow to the Highlord
-					qa(10773),	-- Breaching the Path
 					qa(10586),	-- Bring Down the Warbringer!
 					qa(11043),	-- Building a Better Gryphon
 					qa(10626, {	-- Capture the Weapons
@@ -1023,12 +1096,6 @@ _.Zones =
 					qh(11046),	-- Chief Apothecary Hildagard
 					q( 11100),	-- Commander Arcus
 					q( 11095),	-- Commander Hobb
-					qa(10776, {	-- Dissension Amongst the Ranks...
-						i(31075),	-- Evoker's Mark of the Redemption
-						i(31078),	-- Protector's Mark of the Redemption
-						i(31077),	-- Slayer's Mark of the Redemption
-						i(31076),	-- Spellsword's Mark of the Redemption
-					}),
 					qa(10754),	-- Entry Into the Citadel
 					q( 10451, {	-- Escape from Coilskar Cistern
 						i(30927),	-- Earthmender's Bracer of Shattering
@@ -1042,7 +1109,6 @@ _.Zones =
 					q(11092, {	-- Hail, Commander!
 						i(32864),	-- Commander's Badge
 					}),
-					qa(10643),	-- Harbingers of Shadowmoon
 					qa(10621),	-- Illidari-Bane Shard
 					qa(11964),	-- Incense for the Summer Scorchlings
 					qa(10766),	-- Invasion Point: Cataclysm
@@ -1068,8 +1134,6 @@ _.Zones =
 						i(32872),	-- Illidari Rod of Discipline
 						i(32870),	-- Legguards of Contemplation
 					}),
-					qa(10775),	-- Tabards of the Illidari
-					qa(10644),	-- Teron Gorefiend - Lore and Legend
 					qa(10645, {	-- Teron Gorefiend, I am...
 						i(31104),	-- Evoker's Helmet of Second Sight
 						i(31110),	-- Druidic Helmet of Second Sight
@@ -1090,9 +1154,7 @@ _.Zones =
 						},
 						["qg"] = 21979,	-- Val'zareq the Conqueror
 					}),				
-					qa(10678),	-- The Main Course!
 					q( 11075),	-- The Netherwing Mines
-					qa(10677),	-- The Second Course...
 					qa(10585),	-- The Summoning Chamber
 					qa(11044),	-- Visions of Destruction
 					qa(11045),	-- Zorus the Judicator
