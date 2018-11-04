@@ -4050,9 +4050,18 @@ app.BaseGarrisonBuilding = {
 		elseif key == "description" then
 			return select(5, C_Garrison.GetBuildingInfo(t.buildingID));
 		elseif key == "collectible" then
-			return t.itemID;
+			return t.itemID and app.GetDataMember("BuildingsCollectible");
 		elseif key == "collected" then
-			return not select(11, C_Garrison.GetBuildingInfo(t.buildingID));
+			if app.GetDataMember("TrackBuildingsAccountWide") then
+				if GetDataSubMember("CollectedBuildings", t.buildingID) then return 1; end
+			else
+				if GetTempDataSubMember("CollectedBuildings", t.buildingID) then return 1; end
+			end
+			if not select(11, C_Garrison.GetBuildingInfo(t.buildingID)) then
+				SetTempDataSubMember("CollectedBuildings", t.buildingID, 1);
+				SetDataSubMember("CollectedBuildings", t.buildingID, 1);
+				return 1;
+			end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -10151,6 +10160,7 @@ app.events.VARIABLES_LOADED = function()
 	end
 	
 	-- Check to see if we have a leftover ItemDB cache
+	GetDataMember("CollectedBuildings", {});
 	GetDataMember("CollectedFactions", {});
 	GetDataMember("CollectedFollowers", {});
 	GetDataMember("CollectedMusicRolls", {});
@@ -10174,6 +10184,15 @@ app.events.VARIABLES_LOADED = function()
 		myfactions = {};
 		factions[app.Me] = myfactions;
 		SetTempDataMember("CollectedFactions", myfactions);
+	end
+	
+	-- Cache your character's building data.
+	local buildings = GetDataMember("CollectedBuildingsPerCharacter", {});
+	local myBuildings = GetTempDataMember("CollectedBuildings", buildings[app.Me]);
+	if not myBuildings then
+		myBuildings = {};
+		buildings[app.Me] = myBuildings;
+		SetTempDataMember("CollectedBuildings", myBuildings);
 	end
 	
 	-- Cache your character's follower data.
