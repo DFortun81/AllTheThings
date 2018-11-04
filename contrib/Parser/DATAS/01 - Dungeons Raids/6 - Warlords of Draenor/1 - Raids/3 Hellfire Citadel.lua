@@ -9,234 +9,259 @@ _.Instances =
 			inst(669, { 	-- Hellfire Citadel
 				["groups"] = {
 					d(17, {		-- LFR
-						ach(10023, { 	-- Hellbreach	
-							cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
-								i(128092),	-- Wicked Bonecarver's Knife
-								i(128098),	-- Snub-Nosed Iron Rifle
-								i(128081),	-- Iron Dragoon's Coif
-								i(128110),	-- Fel Iron Roller Chain
-								i(128111),	-- Hand-Welded Gorget
-								i(128028),	-- Sooty Felcult Robes
-								i(128030),	-- Fel Mechanic's Sparkguard Bracers
-								i(128029),	-- Manacles of Enforced Labor
-								i(128073),	-- Ironspike Knuckled Gauntlets
-								i(128071),	-- Blackfuse Company Tool Belt
-								i(128031),	-- Siegesmith's Chain Leggings
-								i(128050),	-- Engine-Kicking Boots
-								i(128142),	-- Pledge of Iron Loyalty
-							})),
-							cr(90284, e(1425, { -- Iron Reaver
-								n(-61, {    -- Feast of Winter Veil
-									["groups"] = {
-										ig(21524), -- Red Winter Hat
-									},
-									["achievementID"] = 1691, -- Merrymaker
-									["u"] = 29,
-								}),
-								i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-									["questID"] = 39364, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
-								}),
-								i(128094),	-- Spiked Torque Wrench
-								i(128118),	-- Demonhorn Buckler
-								i(128053), 	-- Liquid-Cooled Mantle
-								i(128060),	-- Double-Polished Chain Pauldrons
-								i(128102),	-- Unfired Ejection Parachute
-								i(128105),	-- Commander's Seat Cushion Cover
-								i(128076),	-- Fel-Steamed Leather Tunic
-								i(128067),	-- Pulley Chain Wristwraps
-								i(128058),	-- Roughly Soldered Wristclamps
-								i(128033),	-- Assembly Worker's Legguards
-								i(128075),	-- Double-Padded Slippers
-								i(128168),	-- Shrapnel-Studded Boots
-								i(128141),	-- Crackling Fel-Spark Plug
-							})),
-							cr(90776, e(1392, {	-- Kormrok
-								i(128134),	-- Demonbreaker Helm
-								i(128132),	-- Rancorbite Hood
-								i(128128),	-- Felfume Hood
-								i(128130),	-- Ironpelt Helm
-								i(128107),	-- Glowing String of Pebbles
-								i(128104),	-- Splashcover Cloak
-								i(128103),	-- Sigil-Stitched Drape
-								i(128057),	-- Chestplate of Potential Energy
-								i(128059),	-- Goop-Proof Gloves
-								i(128056),	-- Industrial Lifting Belt
-								i(128064),	-- Sludge-Resistant Waders
-								i(128117),	-- Stone Runeband
-								i(128143),	-- Fragmented Runestone Etching
-							})),
+						ach(10023, { 	-- Hellbreach
+							["crs"] = {
+								94870,	-- Seer Kazal <Shadowmoon Exile>
+							},
+							["groups"] = {
+								cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
+									i(128092),	-- Wicked Bonecarver's Knife
+									i(128098),	-- Snub-Nosed Iron Rifle
+									i(128081),	-- Iron Dragoon's Coif
+									i(128110),	-- Fel Iron Roller Chain
+									i(128111),	-- Hand-Welded Gorget
+									i(128028),	-- Sooty Felcult Robes
+									i(128030),	-- Fel Mechanic's Sparkguard Bracers
+									i(128029),	-- Manacles of Enforced Labor
+									i(128073),	-- Ironspike Knuckled Gauntlets
+									i(128071),	-- Blackfuse Company Tool Belt
+									i(128031),	-- Siegesmith's Chain Leggings
+									i(128050),	-- Engine-Kicking Boots
+									i(128142),	-- Pledge of Iron Loyalty
+								})),
+								cr(90284, e(1425, { -- Iron Reaver
+									n(-61, {    -- Feast of Winter Veil
+										["groups"] = {
+											ig(21524), -- Red Winter Hat
+										},
+										["achievementID"] = 1691, -- Merrymaker
+										["u"] = 29,
+									}),
+									i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
+										["questID"] = 39364, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
+									}),
+									i(128094),	-- Spiked Torque Wrench
+									i(128118),	-- Demonhorn Buckler
+									i(128053), 	-- Liquid-Cooled Mantle
+									i(128060),	-- Double-Polished Chain Pauldrons
+									i(128102),	-- Unfired Ejection Parachute
+									i(128105),	-- Commander's Seat Cushion Cover
+									i(128076),	-- Fel-Steamed Leather Tunic
+									i(128067),	-- Pulley Chain Wristwraps
+									i(128058),	-- Roughly Soldered Wristclamps
+									i(128033),	-- Assembly Worker's Legguards
+									i(128075),	-- Double-Padded Slippers
+									i(128168),	-- Shrapnel-Studded Boots
+									i(128141),	-- Crackling Fel-Spark Plug
+								})),
+								cr(90776, e(1392, {	-- Kormrok
+									i(128134),	-- Demonbreaker Helm
+									i(128132),	-- Rancorbite Hood
+									i(128128),	-- Felfume Hood
+									i(128130),	-- Ironpelt Helm
+									i(128107),	-- Glowing String of Pebbles
+									i(128104),	-- Splashcover Cloak
+									i(128103),	-- Sigil-Stitched Drape
+									i(128057),	-- Chestplate of Potential Energy
+									i(128059),	-- Goop-Proof Gloves
+									i(128056),	-- Industrial Lifting Belt
+									i(128064),	-- Sludge-Resistant Waders
+									i(128117),	-- Stone Runeband
+									i(128143),	-- Fragmented Runestone Etching
+								})),
+							},
 						}),
 						ach(10024, { 	-- Halls of Blood
-							cr(92146, e(1432, {	-- Hellfire High Council (Gurtogg Bloodboil)
-								i(128097),	-- Riverspike Cleaver
-								i(128100),	-- Spring-Loaded Jawstaff
-								i(128095),	-- Viscera-Stained Longsword
-								i(128191),	-- Hellfire Mindblade
-								i(128065),	-- Fel-Crazed Pauldrons
-								i(128061),	-- Wailing Woe Pauldrons
-								i(128184),	-- Gorget of Induced Madness
-								i(128077),	-- Gauntlets of Reckless Assault
-								i(128068),	-- Blade-Chipped Waistguard
-								i(128089),	-- Sash of Guttural Intonation
-								i(128062),	-- Void-Pact Leggings
-								i(128040),	-- Bladewalk Boots
-								i(128114),	-- Hazy Voidstone Band
-								i(128115),	-- Shadowmoon Ancestry Ring
-								i(128140),	-- Smoldering Felblade Remnant
-							})),
-							cr(90378, e(1396, {	-- Kilrogg Deadeye
-								ig(138808),	-- Illusion: Mark of the Bleeding Hollow
-								i(128093),	-- Demonhorn Spike
-								i(128192),	-- Balanced Machete
-								i(128074),	-- Hollowheart Helm
-								i(128109),	-- Pendant of Precognition
-								i(128049),	-- Pauldrons of Perceived Depths
-								i(128078),	-- Goresoaked Ritual Robes
-								i(128087),	-- Bloodsurge Bracers
-								i(128042),	-- Ribwrencher Gauntlets
-								i(128047),	-- Cinch of the Bleeding Hollow
-								i(128070),	-- Boots of Final Salvation
-								i(128167),	-- Sandals of Sanguine Supplication
-								i(128116),	-- Band of Impending Doom
-								i(128113),	-- Ring of Fortuitous Foresight
-								i(128147),	-- Teardrop of Blood
-								i(128144),	-- Vial of Vile Viscera
-							})),
-							cr(91809, e(1372, {	-- Gorefiend
-								i(128101),	-- Soulcult Ritual Staff
-								i(128196),	-- Limbcarver Hatchet
-								i(128200),	-- Deserter's Honor
-								i(128079),	-- Boisterous Bellower's Hood
-								i(128106),	-- Greatcloak of the Terrible Feast
-								i(128072),	-- Bulging Chain Vest
-								i(128069),	-- Gloves of Great Engorgement
-								i(128135),	-- Demonbreaker Legplates
-								i(128129),	-- Felfume Pantaloons
-								i(128131),	-- Ironpelt Leggings
-								i(128133),	-- Rancorbite Leggings
-								i(128148),	-- Fetid Salivation
-							})),
+							["crs"] = {
+								94870,	-- Seer Kazal <Shadowmoon Exile>
+							},
+							["groups"] = {
+								cr(92146, e(1432, {	-- Hellfire High Council (Gurtogg Bloodboil)
+									i(128097),	-- Riverspike Cleaver
+									i(128100),	-- Spring-Loaded Jawstaff
+									i(128095),	-- Viscera-Stained Longsword
+									i(128191),	-- Hellfire Mindblade
+									i(128065),	-- Fel-Crazed Pauldrons
+									i(128061),	-- Wailing Woe Pauldrons
+									i(128184),	-- Gorget of Induced Madness
+									i(128077),	-- Gauntlets of Reckless Assault
+									i(128068),	-- Blade-Chipped Waistguard
+									i(128089),	-- Sash of Guttural Intonation
+									i(128062),	-- Void-Pact Leggings
+									i(128040),	-- Bladewalk Boots
+									i(128114),	-- Hazy Voidstone Band
+									i(128115),	-- Shadowmoon Ancestry Ring
+									i(128140),	-- Smoldering Felblade Remnant
+								})),
+								cr(90378, e(1396, {	-- Kilrogg Deadeye
+									ig(138808),	-- Illusion: Mark of the Bleeding Hollow
+									i(128093),	-- Demonhorn Spike
+									i(128192),	-- Balanced Machete
+									i(128074),	-- Hollowheart Helm
+									i(128109),	-- Pendant of Precognition
+									i(128049),	-- Pauldrons of Perceived Depths
+									i(128078),	-- Goresoaked Ritual Robes
+									i(128087),	-- Bloodsurge Bracers
+									i(128042),	-- Ribwrencher Gauntlets
+									i(128047),	-- Cinch of the Bleeding Hollow
+									i(128070),	-- Boots of Final Salvation
+									i(128167),	-- Sandals of Sanguine Supplication
+									i(128116),	-- Band of Impending Doom
+									i(128113),	-- Ring of Fortuitous Foresight
+									i(128147),	-- Teardrop of Blood
+									i(128144),	-- Vial of Vile Viscera
+								})),
+								cr(91809, e(1372, {	-- Gorefiend
+									i(128101),	-- Soulcult Ritual Staff
+									i(128196),	-- Limbcarver Hatchet
+									i(128200),	-- Deserter's Honor
+									i(128079),	-- Boisterous Bellower's Hood
+									i(128106),	-- Greatcloak of the Terrible Feast
+									i(128072),	-- Bulging Chain Vest
+									i(128069),	-- Gloves of Great Engorgement
+									i(128135),	-- Demonbreaker Legplates
+									i(128129),	-- Felfume Pantaloons
+									i(128131),	-- Ironpelt Leggings
+									i(128133),	-- Rancorbite Leggings
+									i(128148),	-- Fetid Salivation
+								})),
+							},
 						}),
 						ach(10025, { 	-- Bastion of Shadows
-							cr(95067, e(1433, {	-- Shadow-Lord Iskar
-								i(127771, {	-- Gemcutter Module: Critical Strike
-									["spellID"] = 187634,
-									["requireSkill"] = 755,	-- Jewelcrafting
-									["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-									["coord"] = {
-										25.84, 39.79
-									},
-								}),
-								ig(127749),	-- Corrupted Nest Guardian
-								i(128096),	-- Demonspine Wand
-								i(128041),	-- Beaked Hood of Betrayal
-								i(128186),	-- Cursefeather Cloak
-								i(128082),	-- Corrupted Talonguard Chestplate
-								i(128086),	-- Bracers of Supreme Despair
-								i(128083),	-- Feather-Embellished Wristclasps
-								i(128055),	-- Chakram-Gripping Gloves
-								i(128063),	-- Phantasmal Cummerbund
-								i(128180),	-- Flickering Nightstone Band
-								i(128296),	-- Soul Prison Solitaire
-								i(128179),	-- Talon-Link Loop
-								i(128146),	-- Ensnared Orb of the Sky
-							})),
-							cr(90296, e(1427, {	-- Socrethar the Eternal
-								i(128197),	-- Felgore Double Blade
-								i(128195),	-- Toxin-Tipped Bolt Launcher
-								i(128119),	-- Decaying Draenic Shield
-								i(128036),	-- Hood of Unhealthy Fixation
-								i(128051),	-- Automated Shoulderplates
-								i(128046),	-- Shoulderguards of Wrought Destruction
-								i(128182),	-- Tenacious Dominator's Gorget
-								i(128190),	-- Haunting Nightmare Cloak
-								i(128085),	-- Constructbreaker's Chestguard
-								i(128084),	-- Socrethar's Ceremonial CUffs
-								i(128035),	-- Crystal-Buckle Belt
-								i(128088),	-- Girdle of Bound Agony
-								i(128145),	-- Howling Soul Gem
-							})),
-							cr(93439, e(1394, { -- Tyrant Velhari
-								n(-61, {    -- Feast of Winter Veil
-									["groups"] = {
-										ig(21525), 	-- Green Winter Hat
-									},
-									["achievementID"] = 1691, -- Merrymaker
-									["u"] = 29,
-								}),								
-								i(128099),	-- Spiked Gnarlroot Greatclub
-								i(128045),	-- Mantle of Unrestrained Contempt
-								i(128181),	-- Thorny Choker of Suffering
-								i(128108),	-- Willbreaker Brooch
-								i(128188),	-- Impertinent Student's Cloak
-								i(128090),	-- Harbinger's Desecrated Chain Shirt
-								i(128139),	-- Demonbreaker Gauntlets
-								i(128136),	-- Felfume Gloves
-								i(128137),	-- Ironpelt Mitts
-								i(128138),	-- Rancorbite Grips
-								i(128149),	-- Accusation of Inferiority
-							})),
+							["crs"] = {
+								94870,	-- Seer Kazal <Shadowmoon Exile>
+							},
+							["groups"] = {
+								cr(95067, e(1433, {	-- Shadow-Lord Iskar
+									i(127771, {	-- Gemcutter Module: Critical Strike
+										["spellID"] = 187634,
+										["requireSkill"] = 755,	-- Jewelcrafting
+										["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+										["coord"] = {
+											25.84, 39.79
+										},
+									}),
+									ig(127749),	-- Corrupted Nest Guardian
+									i(128096),	-- Demonspine Wand
+									i(128041),	-- Beaked Hood of Betrayal
+									i(128186),	-- Cursefeather Cloak
+									i(128082),	-- Corrupted Talonguard Chestplate
+									i(128086),	-- Bracers of Supreme Despair
+									i(128083),	-- Feather-Embellished Wristclasps
+									i(128055),	-- Chakram-Gripping Gloves
+									i(128063),	-- Phantasmal Cummerbund
+									i(128180),	-- Flickering Nightstone Band
+									i(128296),	-- Soul Prison Solitaire
+									i(128179),	-- Talon-Link Loop
+									i(128146),	-- Ensnared Orb of the Sky
+								})),
+								cr(90296, e(1427, {	-- Socrethar the Eternal
+									i(128197),	-- Felgore Double Blade
+									i(128195),	-- Toxin-Tipped Bolt Launcher
+									i(128119),	-- Decaying Draenic Shield
+									i(128036),	-- Hood of Unhealthy Fixation
+									i(128051),	-- Automated Shoulderplates
+									i(128046),	-- Shoulderguards of Wrought Destruction
+									i(128182),	-- Tenacious Dominator's Gorget
+									i(128190),	-- Haunting Nightmare Cloak
+									i(128085),	-- Constructbreaker's Chestguard
+									i(128084),	-- Socrethar's Ceremonial CUffs
+									i(128035),	-- Crystal-Buckle Belt
+									i(128088),	-- Girdle of Bound Agony
+									i(128145),	-- Howling Soul Gem
+								})),
+								cr(93439, e(1394, { -- Tyrant Velhari
+									n(-61, {    -- Feast of Winter Veil
+										["groups"] = {
+											ig(21525), 	-- Green Winter Hat
+										},
+										["achievementID"] = 1691, -- Merrymaker
+										["u"] = 29,
+									}),								
+									i(128099),	-- Spiked Gnarlroot Greatclub
+									i(128045),	-- Mantle of Unrestrained Contempt
+									i(128181),	-- Thorny Choker of Suffering
+									i(128108),	-- Willbreaker Brooch
+									i(128188),	-- Impertinent Student's Cloak
+									i(128090),	-- Harbinger's Desecrated Chain Shirt
+									i(128139),	-- Demonbreaker Gauntlets
+									i(128136),	-- Felfume Gloves
+									i(128137),	-- Ironpelt Mitts
+									i(128138),	-- Rancorbite Grips
+									i(128149),	-- Accusation of Inferiority
+								})),
+							},
 						}),
 						ach(10020, { 	-- Destructor's Rise
-							cr(89890, e(1391, {	-- Fel Lord Zakuun
-								i(128202),	-- Ironblade Knuckles
-								i(128043),	-- Gaze of Superiority
-								i(128183),	-- Chain of Agonizing Woe
-								i(128185),	-- Voidswirling Throat-Globe
-								i(128189),	-- Bloodcrystal Chaincloak
-								i(128174),	-- Bindings of Imminent Fury
-								i(128175),	-- Manacles of the Demon General
-								i(128038),	-- Brittleskin Wraps
-								i(128300),	-- Befouled Demonhide Belt
-								i(128299),	-- Withering Wastwrap
-								i(128066),	-- Imp-Infested Legplates
-								i(128178),	-- Zakuun's Smoldering Seal
-							})),
-							cr(93068, e(1447, {	-- Xhul'horac
-								i(128187),	-- Voidthread Spineguard
-								i(128176),	-- Bracers of Tainted Magic
-								i(128298),	-- Girdle of Volatile Duality
-								i(128295),	-- Shadowfel Cord
-								i(128091),	-- Stoic Netherfel Legplates
-								i(128032),	-- Demonbreaker Crushers
-								i(128052),	-- Felfume Slippers
-								i(128054),	-- Ironpelt Boots
-								i(128080),	-- Rancorbite Sabatons
-							})),
-							cr(91349, e(1395, {	-- Mannoroth
-								i(128198),	-- Irontalon Staff
-								i(128193),	-- Serrated Bloodritual Dagger
-								i(128194),	-- Snarlwood Recurve Bow
-								i(128112),	-- Fel-Light Lantern
-								i(128034),	-- Pit Lord's Cowl
-								i(128123),	-- Demonbreaker Pauldrons
-								i(128120),	-- Felfume Mantle
-								i(128121),	-- Ironpelt Pauldrons
-								i(128122),	-- Rancorbite Spaulders
-								i(128177),	-- Demonforged Iron Bracers
-								i(128037),	-- Leggings of Wasted Flesh
-								i(128170),	-- Hellstorm Sabatons
-								i(128297),	-- Mark of the Destructor
-							})),
+							["crs"] = {
+								94870,	-- Seer Kazal <Shadowmoon Exile>
+							},
+							["groups"] = {
+								cr(89890, e(1391, {	-- Fel Lord Zakuun
+									i(128202),	-- Ironblade Knuckles
+									i(128043),	-- Gaze of Superiority
+									i(128183),	-- Chain of Agonizing Woe
+									i(128185),	-- Voidswirling Throat-Globe
+									i(128189),	-- Bloodcrystal Chaincloak
+									i(128174),	-- Bindings of Imminent Fury
+									i(128175),	-- Manacles of the Demon General
+									i(128038),	-- Brittleskin Wraps
+									i(128300),	-- Befouled Demonhide Belt
+									i(128299),	-- Withering Wastwrap
+									i(128066),	-- Imp-Infested Legplates
+									i(128178),	-- Zakuun's Smoldering Seal
+								})),
+								cr(93068, e(1447, {	-- Xhul'horac
+									i(128187),	-- Voidthread Spineguard
+									i(128176),	-- Bracers of Tainted Magic
+									i(128298),	-- Girdle of Volatile Duality
+									i(128295),	-- Shadowfel Cord
+									i(128091),	-- Stoic Netherfel Legplates
+									i(128032),	-- Demonbreaker Crushers
+									i(128052),	-- Felfume Slippers
+									i(128054),	-- Ironpelt Boots
+									i(128080),	-- Rancorbite Sabatons
+								})),
+								cr(91349, e(1395, {	-- Mannoroth
+									i(128198),	-- Irontalon Staff
+									i(128193),	-- Serrated Bloodritual Dagger
+									i(128194),	-- Snarlwood Recurve Bow
+									i(128112),	-- Fel-Light Lantern
+									i(128034),	-- Pit Lord's Cowl
+									i(128123),	-- Demonbreaker Pauldrons
+									i(128120),	-- Felfume Mantle
+									i(128121),	-- Ironpelt Pauldrons
+									i(128122),	-- Rancorbite Spaulders
+									i(128177),	-- Demonforged Iron Bracers
+									i(128037),	-- Leggings of Wasted Flesh
+									i(128170),	-- Hellstorm Sabatons
+									i(128297),	-- Mark of the Destructor
+								})),
+							},
 						}),
 						ach(10019, { 	-- The Black Gate
-							cr(91331, e(1438, {	-- Archimonde
-								i(128199),	-- Fractured Soulgem Staff
-								i(128201),	-- Greatsword of Chaos
-								i(128044),	-- Voidsight Hood
-								i(128127),	-- Demonbreaker Chestplate
-								i(128124),	-- Felfume Robes
-								i(128125),	-- Ironpelt Jerkin
-								i(128126),	-- Rancorbite Chain Shirt
-								i(128048),	-- Vintage Draenic Handguards
-								i(128039),	-- Shadeflesh Legguards
-								i(128171),	-- Stompers of Echoing Doom
-								i(128152),	-- Decree of Demonic Sovereignty
-								i(128154),	-- Grasp of the Defiler
-								i(128151),	-- Portent of Disaster
-								i(128150),	-- Pressure-Compressed Loop
-								i(128153),	-- Unquenchable Doomfire Censer
-							}))
+							["crs"] = {
+								94870,	-- Seer Kazal <Shadowmoon Exile>
+							},
+							["groups"] = {
+								cr(91331, e(1438, {	-- Archimonde
+									i(128199),	-- Fractured Soulgem Staff
+									i(128201),	-- Greatsword of Chaos
+									i(128044),	-- Voidsight Hood
+									i(128127),	-- Demonbreaker Chestplate
+									i(128124),	-- Felfume Robes
+									i(128125),	-- Ironpelt Jerkin
+									i(128126),	-- Rancorbite Chain Shirt
+									i(128048),	-- Vintage Draenic Handguards
+									i(128039),	-- Shadeflesh Legguards
+									i(128171),	-- Stompers of Echoing Doom
+									i(128152),	-- Decree of Demonic Sovereignty
+									i(128154),	-- Grasp of the Defiler
+									i(128151),	-- Portent of Disaster
+									i(128150),	-- Pressure-Compressed Loop
+									i(128153),	-- Unquenchable Doomfire Censer
+								})),
+							},
 						}),
 					}),
 					d(14, {		-- Normal

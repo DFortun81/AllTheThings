@@ -2838,8 +2838,12 @@ local function MergeSearchResults(group, itemID)
 							merged.saved = merged.saved or g.saved;
 						end
 						if g.g then
-							for j,s in ipairs(g.g) do
-								tinsert(merged.g, s);
+							if g.key == "achievementID" or g.key == "criteriaID" then
+								tinsert(merged.g, g);
+							else
+								for j,s in ipairs(g.g) do
+									tinsert(merged.g, s);
+								end
 							end
 						end
 					end
@@ -3359,6 +3363,8 @@ app.BaseAchievement = {
 		if key == "text" then
 			--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t.achievementID);
 			return GetAchievementLink(t.achievementID) or select(2, GetAchievementInfo(t.achievementID)) or ("Achievement #" .. t.achievementID);
+		elseif key == "key" then
+			return "achievementID";
 		elseif key == "link" then
 			return GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
@@ -3387,6 +3393,8 @@ app.BaseAchievementCriteria = {
 	__index = function(t, key)
 		if key == "achievementID" then
 			return t.parent.achievementID or t.parent.parent.achievementID;
+		elseif key == "key" then
+			return "criteriaID";
 		elseif key == "text" then
 			if t["isRaid"] then return "|cffff8000" .. t.name .. "|r"; end
 			return t.name;

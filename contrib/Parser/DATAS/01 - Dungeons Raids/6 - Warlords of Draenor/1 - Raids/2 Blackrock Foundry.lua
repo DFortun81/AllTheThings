@@ -9,8 +9,11 @@ _.Instances =
 			inst(457, { 	-- Blackrock Foundry
 				["groups"] = {
 					d(17, {		-- LFR
-						["groups"] = {
-							ach(8989, { 	-- Slagworks	
+						ach(8989, { 	-- Slagworks	
+							["crs"] = {
+								94870,	-- Seer Kazal <Shadowmoon Exile>
+							},
+							["groups"] = {
 								cr(77182, e(1202, {	-- Oregorger
 									{
 										["achievementID"] = 8989,	-- Slagworks
@@ -64,8 +67,13 @@ _.Instances =
 									i(116303),	-- Firecaller's Scorched Seal
 									i(116315),	-- Furyheart Talisman
 								})),
-							}),
-							ach(8990, { 	-- Black Forge
+							},
+						}),
+						ach(8990, { 	-- Black Forge
+							["crs"] = {
+								94870,	-- Seer Kazal <Shadowmoon Exile>
+							},
+							["groups"] = {
 								cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
 									{
 										["achievementID"] = 8990,	-- Black Forge
@@ -124,8 +132,13 @@ _.Instances =
 									i(116300),	-- Ring of Shattered Faults
 									i(116318),	-- Stoneheart Idol
 								})),
-							}),
-							ach(8991, { 	-- Iron Assembly
+							},
+						}),
+						ach(8991, { 	-- Iron Assembly
+							["crs"] = {
+								94870,	-- Seer Kazal <Shadowmoon Exile>
+							},
+							["groups"] = {
 								cr(76865, e(1122, {	-- Beastlord Darmac
 									{
 										["achievementID"] = 8991,	-- Iron Assembly
@@ -184,8 +197,13 @@ _.Instances =
 									i(116250),	-- Impaler's Greatboots
 									i(116314),	-- Blackheart Enforcer's Medallion
 								})),
-							}),
-							ach(8992, { 	-- Blackhand's Crucible
+							},
+						}),
+						ach(8992, { 	-- Blackhand's Crucible
+							["crs"] = {
+								94870,	-- Seer Kazal <Shadowmoon Exile>
+							},
+							["groups"] = {
 								cr(77325, e(959, {	-- Blackhand
 									i(116391),	-- Blackhand Forgehammer
 									i(116393),	-- Dagger of the Shattered Crucible
@@ -203,9 +221,9 @@ _.Instances =
 									i(116251),	-- Ironshatter Legplates
 									i(116042),	-- Ram-Carrier's Treads
 									i(116317),	-- Storage House Key
-								}))
-							}),
-						}
+								})),
+							},
+						}),
 					}),
 					d(14, {		-- Normal
 						n(-17, {	-- Quests

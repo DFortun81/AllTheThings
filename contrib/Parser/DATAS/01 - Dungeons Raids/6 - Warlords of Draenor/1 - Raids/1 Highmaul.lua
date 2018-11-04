@@ -10,86 +10,101 @@ _.Instances =
 				["groups"] = {
 					d(17, {	-- LFR
 						ach(8986, {	-- The Walled City	
-							cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
-								i(138807),	-- Illusion: Mark of the Shattered Hand
-								i(116360),	-- Blade Dancer's Claws
-								i(116236),	-- Iron Bomb Spaulders
-								i(116298),	-- Flamescarred Drape
-								i(116030),	-- Bracer of Amputation
-								i(116205),	-- Firewalker's Treads
-								i(116003),	-- Spectator's Sandals of Carnage
-								i(116282),	-- Grunt's Rusty Ring
-								i(116289),	-- Bloodmaw's Tooth
-							})),
-							cr(77404, e(971, {	-- The Butcher
-								ig(21525), 	-- Green Winter Hat
-								i(116361),	-- Butcher's Cruel Chopper
-								i(116297),	-- Fleshhook Cloak
-								i(116209),	-- Spine-Ripper Bracers
-								i(115998),	-- Sterilized Handwraps
-								i(116026),	-- Bonebreaker Boots
-								i(116230),	-- Ogre-Eater Treads
-								i(116281),	-- Bloodstone Seal
-								i(116290),	-- Emblem of Gushing Wounds
-							})),
-							cr(78491, e(1196, {	-- Brackenspore <Walker of the Deep>
-								i(116288),	-- Tide-Caller's Gorget
-								i(116028),	-- Shoulderguards of Perpetually Exploding Fungus
-								i(116294),	-- Rotmelter Mosscloak
-								i(115999),	-- Rotmonger Bracers
-								i(116208),	-- Carnage Breath Gauntlets
-								i(116233),	-- Grips of Burning Infusion
-								i(116291),	-- Immaculate Living Mushroom
-							})),
+							["crs"] = {
+								94870,	-- Seer Kazal <Shadowmoon Exile>
+							},
+							["groups"] = {
+								cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
+									i(138807),	-- Illusion: Mark of the Shattered Hand
+									i(116360),	-- Blade Dancer's Claws
+									i(116236),	-- Iron Bomb Spaulders
+									i(116298),	-- Flamescarred Drape
+									i(116030),	-- Bracer of Amputation
+									i(116205),	-- Firewalker's Treads
+									i(116003),	-- Spectator's Sandals of Carnage
+									i(116282),	-- Grunt's Rusty Ring
+									i(116289),	-- Bloodmaw's Tooth
+								})),
+								cr(77404, e(971, {	-- The Butcher
+									ig(21525), 	-- Green Winter Hat
+									i(116361),	-- Butcher's Cruel Chopper
+									i(116297),	-- Fleshhook Cloak
+									i(116209),	-- Spine-Ripper Bracers
+									i(115998),	-- Sterilized Handwraps
+									i(116026),	-- Bonebreaker Boots
+									i(116230),	-- Ogre-Eater Treads
+									i(116281),	-- Bloodstone Seal
+									i(116290),	-- Emblem of Gushing Wounds
+								})),
+								cr(78491, e(1196, {	-- Brackenspore <Walker of the Deep>
+									i(116288),	-- Tide-Caller's Gorget
+									i(116028),	-- Shoulderguards of Perpetually Exploding Fungus
+									i(116294),	-- Rotmelter Mosscloak
+									i(115999),	-- Rotmonger Bracers
+									i(116208),	-- Carnage Breath Gauntlets
+									i(116233),	-- Grips of Burning Infusion
+									i(116291),	-- Immaculate Living Mushroom
+								})),
+							},
 						}),
 						ach(8987, {	-- Arcane Sanctum
-							cr(78948, e(1195, {	-- Tectus <The Living Mountain>
-								i(138835),	-- Illusion: Rockbiter
-								i(116362),	-- Shard of Crystalline Fury
-								i(116363),	-- Shield of Violent Upheaval
-								i(116237),	-- Crown of the Crags
-								i(116285),	-- Cratermaker Choker
-								i(116210),	-- Chestwrap of Violent Upheaval
-								i(116000),	-- Mountainslide Robes
-								i(116032),	-- Legguards of Ravenous Assault
-								i(116279),	-- Frostcap Band
-								i(116292),	-- Mote of the Mountain
-							})),				
-							cr(78237, e(1148, {	-- Twin Ogron (Phemos; 78238 is Pol)
-								i(116364),	-- Dagger of Enfeeblement
-								i(116365),	-- Captured Arcane Fragment
-								i(116286),	-- Fire-Blind Necklace
-								i(116211),	-- Shoulderguards of the Shepherd
-								i(115997),	-- Twin-Gaze Spaulders
-								i(116234),	-- Bracers of Cursed Cries
-								i(116025),	-- Pulverizing Grips
-								i(116283),	-- Ring of Enfeebling Accusations
-							})),
-							cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
-								i(116366),	-- Magic-Breaker Greatsword
-								i(116368),	-- Polearm of Expulsion
-								i(116367),	-- Shield-Shatter Longbow
-								i(116212),	-- Alloy-Inlaid Cap
-								i(115996),	-- Fel-Flame Coronet
-								i(116284),	-- Necklace of Volatile Anomalies
-								i(116295),	-- Cloak of Overflowing Energies
-								i(116029),	-- Crackle-Proof Chestguard
-								i(116231),	-- Legplates of Arcanic Absorbtion
-								i(116293),	-- Idol of Suppression
-							})),
+							["crs"] = {
+								94870,	-- Seer Kazal <Shadowmoon Exile>
+							},
+							["groups"] = {
+								cr(78948, e(1195, {	-- Tectus <The Living Mountain>
+									i(138835),	-- Illusion: Rockbiter
+									i(116362),	-- Shard of Crystalline Fury
+									i(116363),	-- Shield of Violent Upheaval
+									i(116237),	-- Crown of the Crags
+									i(116285),	-- Cratermaker Choker
+									i(116210),	-- Chestwrap of Violent Upheaval
+									i(116000),	-- Mountainslide Robes
+									i(116032),	-- Legguards of Ravenous Assault
+									i(116279),	-- Frostcap Band
+									i(116292),	-- Mote of the Mountain
+								})),				
+								cr(78237, e(1148, {	-- Twin Ogron (Phemos; 78238 is Pol)
+									i(116364),	-- Dagger of Enfeeblement
+									i(116365),	-- Captured Arcane Fragment
+									i(116286),	-- Fire-Blind Necklace
+									i(116211),	-- Shoulderguards of the Shepherd
+									i(115997),	-- Twin-Gaze Spaulders
+									i(116234),	-- Bracers of Cursed Cries
+									i(116025),	-- Pulverizing Grips
+									i(116283),	-- Ring of Enfeebling Accusations
+								})),
+								cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
+									i(116366),	-- Magic-Breaker Greatsword
+									i(116368),	-- Polearm of Expulsion
+									i(116367),	-- Shield-Shatter Longbow
+									i(116212),	-- Alloy-Inlaid Cap
+									i(115996),	-- Fel-Flame Coronet
+									i(116284),	-- Necklace of Volatile Anomalies
+									i(116295),	-- Cloak of Overflowing Energies
+									i(116029),	-- Crackle-Proof Chestguard
+									i(116231),	-- Legplates of Arcanic Absorbtion
+									i(116293),	-- Idol of Suppression
+								})),
+							},
 						}),
 						ach(8988, {	-- Imperator's Fall
-							cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
-								i(116372),	-- Imperator's Warstaff
-								i(116373),	-- Mirrorshield of Arcane Fortification
-								i(116027),	-- Gorian Royal Crown
-								i(116287),	-- Chain of the Unbroken Lineage
-								i(116296),	-- Greatcloak of Impactful Pulses
-								i(116235),	-- Chestplate of Destructive Resonance
-								i(116002),	-- High Arcanist Leggings
-								i(116206),	-- Warmage's Legwraps
-								i(116280),	-- Seal of Arcane Wrath
-							})),
+							["crs"] = {
+								94870,	-- Seer Kazal <Shadowmoon Exile>
+							},
+							["groups"] = {
+								cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
+									i(116372),	-- Imperator's Warstaff
+									i(116373),	-- Mirrorshield of Arcane Fortification
+									i(116027),	-- Gorian Royal Crown
+									i(116287),	-- Chain of the Unbroken Lineage
+									i(116296),	-- Greatcloak of Impactful Pulses
+									i(116235),	-- Chestplate of Destructive Resonance
+									i(116002),	-- High Arcanist Leggings
+									i(116206),	-- Warmage's Legwraps
+									i(116280),	-- Seal of Arcane Wrath
+								})),
+							},
 						}),
 					}),
 					d(14, {	-- Normal
