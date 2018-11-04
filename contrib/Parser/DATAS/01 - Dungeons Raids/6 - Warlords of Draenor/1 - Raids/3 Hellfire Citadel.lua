@@ -290,6 +290,8 @@ _.Instances =
 							i(124365),	-- Blackfuse Company Utility Knife
 							i(124370),	-- Felfire Munitions Launcher
 							i(124356),	-- Smoldercore Bulwark
+							i(124216),	-- Bolt-Latched Felsteel Gorget
+							i(124207),	-- Faulty Detonator Cord
 							i(124270),	-- Rangefinder's Spaulders
 							i(124132),	-- Forward Observer's Camouflage Cloak
 							i(124136),	-- Sparkburnt Welder's Cloak
@@ -675,6 +677,8 @@ _.Instances =
 							i(124365),	-- Blackfuse Company Utility Knife
 							i(124370),	-- Felfire Munitions Launcher
 							i(124356),	-- Smoldercore Bulwark
+							i(124216),	-- Bolt-Latched Felsteel Gorget
+							i(124207),	-- Faulty Detonator Cord
 							i(124270),	-- Rangefinder's Spaulders
 							i(124132),	-- Forward Observer's Camouflage Cloak
 							i(124136),	-- Sparkburnt Welder's Cloak
@@ -1065,6 +1069,8 @@ _.Instances =
 							i(124365),	-- Blackfuse Company Utility Knife
 							i(124370),	-- Felfire Munitions Launcher
 							i(124356),	-- Smoldercore Bulwark
+							i(124216),	-- Bolt-Latched Felsteel Gorget
+							i(124207),	-- Faulty Detonator Cord
 							i(124270),	-- Rangefinder's Spaulders
 							i(124132),	-- Forward Observer's Camouflage Cloak
 							i(124136),	-- Sparkburnt Welder's Cloak
