@@ -252,6 +252,7 @@ _.Instances =
 									i(78488),	-- Souldrinker
 									i(78486),	-- Ti'tahk, the Steps of Time
 									i(78480),	-- Vishanka, Jaws of the Earth
+									i(89810),	-- Bounty of a Sundered Land								
 								})),
 							}),	
 						},
