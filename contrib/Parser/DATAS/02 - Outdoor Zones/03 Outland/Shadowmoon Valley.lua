@@ -421,6 +421,16 @@ _.Zones =
 						["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
 					}),
 					
+
+					qa(10642, {	-- A Ghost in the Machine
+						["qg"] = 21774,	-- Zorus the Judicator
+						["coords"] = {	-- questgiver pats
+							{ 36.6, 55.4 },
+							{ 36.6, 56.6 },
+							{ 37.2, 55.8 },
+						},
+					}),
+
 					
 					qh(10702, {	-- A Grunt's Work...
 						["qg"] = 21769,	-- Overlord Or'barokh
@@ -456,6 +466,13 @@ _.Zones =
 						["sourceQuests"] = { 10761 },	-- Find the Deserter
 					}),
 					
+
+					qa(10562, {	-- Besieged!
+						["qg"] = 21357,	-- Wing Commander Nuainn
+						["coord"] = { 39.5, 53.7 },
+						["sourceQuests"] = { 49550 },	-- Hero's Call: Shadowmoon Valley!
+					}),
+
 					
 					qh(10595, {	-- Besieged!
 						["qg"] = 21359,	-- Blood Guard Gulmok
@@ -654,6 +671,12 @@ _.Zones =
 					}),
 					
 
+					qa(10703, {	-- Put On Yer Kneepads...
+						["qg"] = 21773,	-- Thane Yoregar
+						["coord"] = { 36.2, 57.0 },
+					}),
+
+					
 					q( 10946, {	-- Ruse of the Ashtongue - NEEDS CONFIRMATION
 						["qg"] = 21700,	-- Akama
 						["coord"] = { 58.0, 48.2 },
@@ -686,6 +709,12 @@ _.Zones =
 					qh(10625, {	-- Spectrecles
 						["qg"] = 21772,	-- Chief Apothecary Hildagard
 						["sourceQuests"] = { 10624 },	-- A Haunted History
+					}),
+					
+					
+					qa(10661, {	-- Spleendid!
+						["qg"] = 21777,	-- Gnomus
+						["coord"] = { 36.5, 55.2 },
 					}),
 					
 					
@@ -816,6 +845,13 @@ _.Zones =
 						["sourceQuests"] = { 10611 },	-- The Art of Fel Reaver Maintenance
 					}),
 					
+
+					qa(10680, {	-- The Hand of Gul'dan
+						["qg"] = 21937,	-- Earthmender Sophurus
+						["coord"] = { 36.3, 56.9 },
+						["isBreadcrumb"] = true,	-- for Enraged Spirits of Fire and Earth
+					}),
+					
 					
 					qh(10681, {	-- The Hand of Gul'dan
 						["qg"] = 21938,	-- Earthmender Splinthoof
@@ -833,6 +869,12 @@ _.Zones =
 						["qg"] = 21700,	-- Akama
 						["coord"] = { 58.0, 48.2 },
 						["sourceQuests"] = { 10947 },	-- An Artifact From the Past
+					}),
+
+
+					qa(10772, {	-- The Path of Conquest
+						["qg"] = 21773,	-- Thane Yoregar
+						["coord"] = { 36.2, 57.0 },
 					}),
 
 					
@@ -859,6 +901,12 @@ _.Zones =
 						["sourceQuests"] = { 10570 },	-- To Catch a Thistlehead
 					}),
 				
+
+					qa(10569, {	-- The Sketh'lon Wreckage
+						["qg"] = 22042,	-- Gryphonrider Kieran
+						["coord"] = { 38.7, 54.2 },
+					}),
+
 				
 					qh(10760, {	-- The Sketh'lon Wreckage
 						["qg"] = 22043,	-- Sergeant Kargrul
@@ -888,13 +936,33 @@ _.Zones =
 						["sourceQuests"] = { 10550 },	-- The Bundle of Bloodthistle
 					}),
 				
+
+					qa(10563, {	-- To Legion Hold
+						["qg"] = 21357,	-- Wing Commander Nuainn
+						["coord"] = { 39.5, 53.7 },
+						["sourceQuests"] = { 10562 },	-- Besieged!
+					}),
+
 				
 					qh(10596, {	-- To Legion Hold
 						["qg"] = 21359,	-- Blood Guard Gulmok
 						["sourceQuests"] = { 10595 },	-- Besieged!
 					}),
 				
-				
+
+					o(184946, {	-- Wanted Poster
+						qa(10648, {	-- Wanted: Uvuros, Scourge of Shadowmoon
+							["g"] = {
+								i(31112),	-- Uvuros Hide Boots
+								i(31114),	-- Uvuros Hide Cinch
+								i(31111),	-- Uvuros Hide Gloves
+								i(31115),	-- Uvuros Plated Spaulders
+							},
+							["coord"] = { 38.2, 53.9 },
+						}),
+					}),
+					
+
 					o(184945, {	-- Wanted Poster
 						qh(10647, {	-- Wanted: Uvuros, Scourge of Shadowmoon
 							i(31112),	-- Uvuros Hide Boots
@@ -923,7 +991,6 @@ _.Zones =
 				
 
 					
-					qa(10642),	-- A Ghost in the Machine
 					qd( q( 11544)),	-- Ata'mal Armaments
 					q(10781, {	-- Battle of the Crimson Watch
 						["groups"] = {
@@ -936,7 +1003,6 @@ _.Zones =
 						},
 						["sourceQuests"] = { 10793 },	-- The Journal of Val'zareq: Portends of War
 					}),
-					qa(10562),	-- Besieged!
 					qa(10564, {	-- Blast the Infernals!
 						i(30986),	-- Bloodforged Guard
 						i(30947),	-- Crimson Mail Hauberk
@@ -988,13 +1054,11 @@ _.Zones =
 						i(30973),	-- Band of Anguish
 						i(30924),	-- Gloves of the High Magus
 					}),
-					qa(10703),	-- Put On Yer Kneepads...
 					q(11053, {	-- Rise, Overseer!
 						i(32694),	-- Overseer's Badge
 					}),
 					q( 11082),	-- Seeker of Truth
 					qa(10572),	-- Setting Up the Bomb
-					qa(10661),	-- Spleendid!
 					q(11084, {	-- Stand Tall, Captain!
 						i(32695),	-- Captain's Badge
 					}),
@@ -1019,10 +1083,6 @@ _.Zones =
 					qa(10573),	-- The Deathforge
 					qa(10583),	-- The Fate of Flanis
 					qa(10612),	-- The Fel and the Furious
-					qa(10680, {	-- The Hand of Gul'dan
-						["qg"] = 21937,	-- Earthmender Sophurus
-						["isBreadcrumb"] = true,	-- for Enraged Spirits of Fire and Earth
-					}),
 					qa(10662),	-- The Hermit Smith
 					i(31345, {	-- The Journal of Val'zareq
 						["groups"] = {
@@ -1032,18 +1092,9 @@ _.Zones =
 					}),				
 					qa(10678),	-- The Main Course!
 					q( 11075),	-- The Netherwing Mines
-					qa(10772),	-- The Path of Conquest
 					qa(10677),	-- The Second Course...
-					qa(10569),	-- The Sketh'lon Wreckage
 					qa(10585),	-- The Summoning Chamber
-					qa(10563),	-- To Legion Hold
 					qa(11044),	-- Visions of Destruction
-					qa(10648, {	-- Wanted: Uvuros, Scourge of Shadowmoon
-						i(31112),	-- Uvuros Hide Boots
-						i(31114),	-- Uvuros Hide Cinch
-						i(31111),	-- Uvuros Hide Gloves
-						i(31115),	-- Uvuros Plated Spaulders
-					}),
 					qa(11045),	-- Zorus the Judicator
 --					qh(11498),	-- Learning to Fly (REMOVED)
 --					qa(11497),	-- Learning to Fly (REMOVED)					
