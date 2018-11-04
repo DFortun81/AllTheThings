@@ -8,10 +8,11 @@ _.Zones =
 			["groups"] = {
 				nh( -2, {	-- Vendors
 					n(50483, {	-- Brave Tuho <Thunder Bluff Quartermaster>
+						i(45584),	-- Thunder Bluff Tabard
 						i(64917),	-- Mantle of Thunder Bluff
 						i(64918),	-- Cape of Thunder Bluff
 						i(64919),	-- Shroud of Thunder Bluff
-						i(45584),	-- Thunder Bluff Tabard
+						i(67534),	-- Thunder Bluff Satchel
 					}),
 					n(3019, {	-- Delgo Ragetotem <Axe Merchant>
 						i(12249),	-- Meciless Axe

@@ -9,6 +9,7 @@ _.Zones =
 				Warboard quests should be listed beneath this note. [Pr3vention]
 				ObjectID sources:
 					Orgrimmar: 206109, 206116
+					Thunder Bluff: 207323
 			]]--
 			q(28790),	-- A Personal Summons
 			q(29390),	-- Guardians of Hyjal: Call of the Ancients

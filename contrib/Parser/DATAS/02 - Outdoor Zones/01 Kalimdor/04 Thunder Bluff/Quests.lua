@@ -185,47 +185,19 @@ _.Zones =
 						["qg"] = 5543,	-- Clarice Foster
 						["races"] = HORDE_ONLY,
 					},
-					q( 24540, {	-- War Dance
+					{	-- War Dance
+						["questID"] = 24540,
+						["qg"] = 36648,	-- Baine Bloodhoof
+						["races"] = { 6 },	-- Tauren
+						["sourceQuest"] = 24550,	-- Journey into Thunder Bluff
 						["groups"] = {
-							i( 57241),	-- Dreamwalking Staff
-							i( 57230),	-- Kodo Mallet
-							i( 57214),	-- Stunted Tree Root
-							i( 57239),	-- Sunwalker's Stunner
+							i(57241),	-- Dreamwalking Staff
+							i(57230),	-- Kodo Mallet
+							i(57214),	-- Stunted Tree Root
+							i(57239),	-- Sunwalker's Stunner
 							i(156986),	-- Kodo Gavel
 						},
-						["qg"] = 36648,	-- Baine Bloodhoof
-						["races"] = { 6 },
-						["sourceQuests"] = { 24550 },	-- Journey into Thunder Bluff
-					}),
---[[					
-					o(207323, { 	-- Warchief's Command Board (TB)
-						qh(29390),	-- Guardians of Hyjal: Call of the Ancients
-						qh(29388),	-- Guardians of Hyjal: Firelands Invasion!
---						qh(36499),	-- Iron Horde Invasion (LEGACY - replaced with The Dark Portal, offered only in Orgrimmar)
-						qh(29157),	-- The Zandalari Menace
-						qh(28493),	-- Warchief's Command: Ashenvale!
-						qh(28496),	-- Warchief's Command: Azshara!
-						qh(27722),	-- Warchief's Command: Deepholm!
-						qh(28548),	-- Warchief's Command: Desolace!
-						qh(28554),	-- Warchief's Command: Dustwallow Marsh!
-						qh(28542),	-- Warchief's Command: Felwood!
-						qh(28510),	-- Warchief's Command: Feralas!
-						qh(27721),	-- Warchief's Command: Mount Hyjal!
-						qh(28494),	-- Warchief's Command: Northern Barrens!
-						qh(28711),	-- Warchief's Command: Northrend!
-						qh(28705),	-- Warchief's Command: Outland!
-						qh(28527),	-- Warchief's Command: Silithus!
-						qh(28549),	-- Warchief's Command: Southern Barrens!
-						qh(28532),	-- Warchief's Command: Stonetalon Mountains!
-						qh(28509),	-- Warchief's Command: Tanaris!
-						qh(28504),	-- Warchief's Command: Thousand Needles!
-						qh(28717),	-- Warchief's Command: Twilight Highlands!
-						qh(28557),	-- Warchief's Command: Uldum!
-						qh(28526),	-- Warchief's Command: Un'Goro Crater!
-						qh(27718),	-- Warchief's Command: Vashj'ir!
-						qh(28545),	-- Warchief's Command: Winterspring!
-					}),	
---]]
+					},
 				}),
 			},
 		}),
