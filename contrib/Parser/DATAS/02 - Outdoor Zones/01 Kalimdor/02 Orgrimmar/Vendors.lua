@@ -264,11 +264,14 @@ _.Zones =
 						un(2, i(16335)),	-- Senior Sergeant's Insignia
 					}),
 					n(50477, {	-- Champion Uru'zin <Darkspear Quartermaster>
-						i(45582),	-- Darkspear Tabard
-						i(64912),	-- Darkspear Cape
-						i(64911),	-- Darkspear Mantle
-						i(64913),	-- Darkspear Shroud
-						i(67536),	-- Darkspear Satchel
+						["groups"] = {
+							i(45582),	-- Darkspear Tabard
+							i(64912),	-- Darkspear Cape
+							i(64911),	-- Darkspear Mantle
+							i(64913),	-- Darkspear Shroud
+							i(67536),	-- Darkspear Satchel
+						},
+						["coord"] = { 49.9, 58.1 },
 					}),
 					n(73151, {	-- Deathguard Netharian <Combatant Mount Quartermaster>
 						["groups"] = bubbleDown({["u"] = 2}, {
@@ -497,11 +500,14 @@ _.Zones =
 						i(18427),  -- Sergeant's Cloak
 					}),
 					n(50323, {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
-						i(64884),	-- Bilgewater Cartel Tabard
-						i(64906),	-- Bilgewater Cape
-						i(64905),	-- Bilgewater Shroud
-						i(64907),	-- Bilgewater Mantle
-						i(67525),	-- Bilgewater Satchel
+						["groups"] = {
+							i(64884),	-- Bilgewater Cartel Tabard
+							i(64906),	-- Bilgewater Cape
+							i(64905),	-- Bilgewater Shroud
+							i(64907),	-- Bilgewater Mantle
+							i(67525),	-- Bilgewater Satchel
+						},
+						["coord"] = { 50.0, 58.6 },
 					}),
 					n(52036, {	-- Galra <Honor Heirlooms>
 						i(122364),	-- Sharpened Scarlet Kris
@@ -2112,10 +2118,14 @@ _.Zones =
 						},
 					},
 					n(50488, {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
-						i(64908),	-- Shroud of Orgrimmar
-						i(64909),	-- Cape of Orgrimmar
-						i(64910),	-- Mantle of Orgrimmar
-						i(45581),	-- Orgrimmar Tabard
+						["groups"] = {
+							i(45581),	-- Orgrimmar Tabard
+							i(64908),	-- Shroud of Orgrimmar
+							i(64909),	-- Cape of Orgrimmar
+							i(64910),	-- Mantle of Orgrimmar
+							i(67533),	-- Orgrimmar Satchel
+						},
+						["coord"] = { 50.4, 58.4 },
 					}),
 					n(12794, {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
 						i(16345),	-- High Warlord's Blade
