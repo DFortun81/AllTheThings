@@ -383,6 +383,16 @@ _.Holidays =
 			n(-2, { -- Vendors
 				n(15909, { -- Fariel Starsong <Coin of Ancestry Collector>
 					un(17, i(21100, { -- Coin of Ancestry
+						un(17, i(116142)),  -- Schematic: Alliance Firework
+						un(17, i(116144)),  -- Schematic: Horde Firework
+						un(17, i(116146)),  -- Schematic: Snake Firework
+						un(17, i(44918)),  -- Schematic: Cluster Launcher
+						un(17, i(44919)),  -- Schematic: Firework Launcher
+						un(17, i(21740, {  -- Small Rocket Recipes
+							un(17, i(21726)), -- Schematic: Small Red Rocket
+							un(17, i(21724)), -- Schematic: Small Blue Rocket
+							un(17, i(21725)), -- Schematic: Small Green Rocket
+						})),
 						un(17, i(143827)), -- Dragon Head Costume
 						un(17, i(143828)), -- Dragon Body Costume
 						un(17, i(143829)), -- Dragon Tail Costume
