@@ -12,440 +12,409 @@ _.Zones =
 					{	-- Zone Drops
 						["npcID"] = 0,	-- Zone Drop
 						["g"] = {
-							n( 19973, {	-- Abyssal Flamebringer
-								dr(.04, i(32673, {	-- Depleted Dagger
-									i(32659),	-- Crystal-Infused Shiv
-								})),
-								dr(.01, i(32675, {	-- Depleted Mail Gauntlets
-									i(32656),	-- Crystalhide Handwraps
-								})),
-								dr(0.8, i(22925)),	-- Recipe: Major Holy Protection Potion
-							}),
-							n( 22181, {	-- Aether Ray
-								dr(.01, i(32677, {	-- Depleted Cloak
-									i(32665),	-- Crystalweave Cape
-								})),
-								dr(.01, i(32676, {	-- Depleted Cloth Bracers
-									i(32655),	-- Crystalweave Bracers
-								})),
-								dr(.01, i(32673, {	-- Depleted Dagger
-									i(32659),	-- Crystal-Infused Shiv
-								})),
-								dr(.01, i(32679, {	-- Depleted Staff
-									i(32662),	-- Flaming Quartz Staff
-								})),
-							}),
-							n(16952, { -- Anger Guard
-								["groups"] = {
-									i(23612), -- Plans: Ragesteel Helm
+							{	-- Demonic Bulwark
+								["itemID"] = 32522,	-- Demonic Bulwark
+								["coords"] = {
+									{ 51.2, 11.6 },
+									{ 49.6, 15.8 },
+									{ 49.6, 21.2 },
+									{ 52.6, 20.0 },
 								},
-							}),
-							n( 22175, {	-- Apexis Flayer
-								dr(.01, i(32677, {	-- Depleted Cloak
-									i(32665),	-- Crystalweave Cape
-								})),
-								dr(.01, i(32671, {	-- Depleted Mace
-									i(32661),	-- Apexis Crystal Mace
-								})),
-								dr(.01, i(32679, {	-- Depleted Staff
-									i(32662),	-- Flaming Quartz Staff
-								})),
-							}),
-							n( 22275, {	-- Apexis Guardian
-								dr(3.0, i(32677, {	-- Depleted Cloak
-									i(32665),	-- Crystalweave Cape
-								})),
-								dr(1.3, i(32676, {	-- Depleted Cloth Bracers
-									i(32655),	-- Crystalweave Bracers
-								})),
-								dr(2.0, i(32673, {	-- Depleted Dagger
-									i(32659),	-- Crystal-Infused Shiv
-								})),
-								dr(3.0, i(32671, {	-- Depleted Mace
-									i(32661),	-- Apexis Crystal Mace
-								})),
-								dr(1.7, i(32675, {	-- Depleted Mail Gauntlets
-									i(32656),	-- Crystalhide Handwraps
-								})),
-								dr(1.9, i(32679, {	-- Depleted Staff
-									i(32662),	-- Flaming Quartz Staff
-								})),
-								dr(2.0, i(32674, {	-- Depleted Sword
-									i(32660),	-- Crystal Forged Sword
-								})),
-								dr(2.0, i(32670, {	-- Depleted Two-Handed Axe
-									i(32663),	-- Apexis Cleaver
-								})),
-							}),
-							n( 22243, {	-- Bash'ir Arcanist
-								dr(.01, i(32673, {	-- Depleted Dagger
-									i(32659),	-- Crystal-Infused Shiv
-								})),
-								dr(.01, i(32671, {	-- Depleted Mace
-									i(32661),	-- Apexis Crystal Mace
-								})),
-								dr(.01, i(32674, {	-- Depleted Sword
-									i(32660),	-- Crystal Forged Sword
-								})),
-								dr(0.7, i(22555)),	-- Formula: Enchant Weapon - Major Spellpower
-							}),
-							n( 22242, {	-- Bash'ir Spell-Thief
-								dr(.01, i(32677, {	-- Depleted Cloak
-									i(32665),	-- Crystalweave Cape
-								})),
-								dr(.01, i(32671, {	-- Depleted Mace
-									i(32661),	-- Apexis Crystal Mace
-								})),
-								dr(.01, i(32670, {	-- Depleted Two-Handed Axe
-									i(32663),	-- Apexis Cleaver
-								})),
-								dr(0.9, i(22555)),	-- Formula: Enchant Weapon - Major Spellpower
-							}),
-							n( 19952, {	-- Bloodmaul Geomancer
-								dr(2, i(22534)),	-- Formula: Enchant Bracer - Spellpower
-							}),
-							n( 20889, {	-- Ethereum Prisoner (Group Energy Ball)
-								["groups"] = {	
-									n(22827, {	-- Gorgolon the All-Seeing
-										i(31569),	-- Mistshroud Shoulders
-									}),
-									n(22826, {	-- King Dorfbruiser
-										i(31577),	-- Slatesteel Shoulders
-									}),
-									n(22825, {	-- Matron Li-sahar
-										i(31553),	-- Windchanneller's Mantle
-									}),
-									n(20888, {	-- Solus the Eternal
-										i(31561),	-- Skystalker's Shoulders
-									}),
-									n(22828, {	-- Trelopades
-										i(32522),	-- Demonic Bulwark
-									}),
+								["crs"] = {
+									20889,	-- Ethereum Prisoner (Group Energy Ball)
+									22828,	-- Trelopades
 								},
-								["description"] = "Once Revered with The Consortium, trade in 5 Ethereum Prison Keys to Image of Commander Ameer to obtain an Ethereum Stasis Chamber Key. The key opens the stasis chamber to reveal 1 of 5 random bosses.",
-							}),
-							n( 22204, {	-- Fear Fiend
-								dr(.01, i(32677, {	-- Depleted Cloak
-									i(32665),	-- Crystalweave Cape
-								})),
-							}),
-							o(185927, {	-- Fel Crystal Prism
-								["groups"] = {
-									n(23353, {	-- Braxxus
-										dr(1.4, i(32676, {	-- Depleted Cloth Bracers
-											i(32655),	-- Crystalweave Bracers
-										})),
-										dr(1.8, i(32673, {	-- Depleted Dagger
-											i(32659),	-- Crystal-Infused Shiv
-										})),
-										dr(3.0, i(32671, {	-- Depleted Mace
-											i(32661),	-- Apexis Crystal Mace
-										})),
-										dr(0.2, i(32675, {	-- Depleted Mail Gauntlets
-											i(32656),	-- Crystalhide Handwraps
-										})),
-										dr(2.0, i(32679, {	-- Depleted Staff
-											i(32662),	-- Flaming Quartz Staff
-										})),
-										dr(2.0, i(32674, {	-- Depleted Sword
-											i(32660),	-- Crystal Forged Sword
-										})),
-										dr(5.0, i(32670, {	-- Depleted Two-Handed Axe
-											i(32663),	-- Apexis Cleaver
-										})),
-									}),
-									n(22281, {	-- Galvanoth
-										dr(1.1, i(32677, {	-- Depleted Cloak
-											i(32665),	-- Crystalweave Cape
-										})),
-										dr(4.0, i(32676, {	-- Depleted Cloth Bracers
-											i(32655),	-- Crystalweave Bracers
-										})),
-										dr(1.3, i(32673, {	-- Depleted Dagger
-											i(32659),	-- Crystal-Infused Shiv
-										})),
-										dr(2.0, i(32671, {	-- Depleted Mace
-											i(32661),	-- Apexis Crystal Mace
-										})),
-										dr(1.7, i(32675, {	-- Depleted Mail Gauntlets
-											i(32656),	-- Crystalhide Handwraps
-										})),
-										dr(1.8, i(32679, {	-- Depleted Staff
-											i(32662),	-- Flaming Quartz Staff
-										})),
-										dr(2.0, i(32674, {	-- Depleted Sword
-											i(32660),	-- Crystal Forged Sword
-										})),
-										dr(1.0, i(32670, {	-- Depleted Two-Handed Axe
-											i(32663),	-- Apexis Cleaver
-										})),
-									}),
-									n(23354, {	-- Mo'arg Incinerator
-										dr(1.8, i(32677, {	-- Depleted Cloak
-											i(32665),	-- Crystalweave Cape
-										})),
-										dr(1.8, i(32676, {	-- Depleted Cloth Bracers
-											i(32655),	-- Crystalweave Bracers
-										})),
-										dr(1.7, i(32673, {	-- Depleted Dagger
-											i(32659),	-- Crystal-Infused Shiv
-										})),
-										dr(2.0, i(32671, {	-- Depleted Mace
-											i(32661),	-- Apexis Crystal Mace
-										})),
-										dr(1.6, i(32675, {	-- Depleted Mail Gauntlets
-											i(32656),	-- Crystalhide Handwraps
-										})),
-										dr(2.0, i(32679, {	-- Depleted Staff
-											i(32662),	-- Flaming Quartz Staff
-										})),
-										dr(1.5, i(32674, {	-- Depleted Sword
-											i(32660),	-- Crystal Forged Sword
-										})),
-										dr(1.5, i(32670, {	-- Depleted Two-Handed Axe
-											i(32663),	-- Apexis Cleaver
-										})),
-									}),
-									n(23355, {	-- Zarcsin
-										dr(1.8, i(32677, {	-- Depleted Cloak
-											i(32665),	-- Crystalweave Cape
-										})),
-										dr(1.7, i(32676, {	-- Depleted Cloth Bracers
-											i(32655),	-- Crystalweave Bracers
-										})),
-										dr(4.0, i(32673, {	-- Depleted Dagger
-											i(32659),	-- Crystal-Infused Shiv
-										})),
-										dr(3.0, i(32671, {	-- Depleted Mace
-											i(32661),	-- Apexis Crystal Mace
-										})),
-										dr(1.4, i(32675, {	-- Depleted Mail Gauntlets
-											i(32656),	-- Crystalhide Handwraps
-										})),
-										dr(2.0, i(32679, {	-- Depleted Staff
-											i(32662),	-- Flaming Quartz Staff
-										})),
-										dr(1.9, i(32674, {	-- Depleted Sword
-											i(32660),	-- Crystal Forged Sword
-										})),
-										dr(1.3, i(32670, {	-- Depleted Two-Handed Axe
-											i(32663),	-- Apexis Cleaver
-										})),
-									}),
+							},
+							{	-- Depleted Dagger
+								["itemID"] = 32673,	-- Depleted Dagger
+								["crs"] = {
+									19973,	-- Abyssal Flamebringer
+									22181,	-- Aether Ray
+									22175,	-- Apexis Flayer
+									22275,	-- Apexis Guardian
+									22243,	-- Bash'ir Arcanist
+									23390,	-- Bash'ir's Harbinger
+									23353,	-- Braxxus
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									22180,	-- Shard-Hide Boar
+									23355,	-- Zarcsin
 								},
-								["description"] = "These crystals can be found in the Forge Camps on the west side of the zone (one example is at 35.7, 36.6).  Using 35 Apexis Shards on one will summon one of these four mobs at random.",
-							}),
-							n( 22291, {	-- Furnace Guard
-								dr(.01, i(32676, {	-- Depleted Cloth Bracers
-									i(32655),	-- Crystalweave Bracers
-								})),
-								dr(.01, i(32675, {	-- Depleted Mail Gauntlets
-									i(32656),	-- Crystalhide Handwraps
-								})),
-								dr(.01, i(32679, {	-- Depleted Staff
-									i(32662),	-- Flaming Quartz Staff
-								})),
-								dr(.01, i(32670, {	-- Depleted Two-Handed Axe
-									i(32663),	-- Apexis Cleaver
-								})),
-							}),
-							n( 23261, {	-- Furywing
-								["groups"] = {
-									dr(1.8, i(32677, {	-- Depleted Cloak
-										i(32665),	-- Crystalweave Cape
-									})),
-									dr(1.6, i(32676, {	-- Depleted Cloth Bracers
-										i(32655),	-- Crystalweave Bracers
-									})),
-									dr(1.6, i(32673, {	-- Depleted Dagger
-										i(32659),	-- Crystal-Infused Shiv
-									})),
-									dr(1.7, i(32671, {	-- Depleted Mace
-										i(32661),	-- Apexis Crystal Mace
-									})),
-									dr(1.2, i(32675, {	-- Depleted Mail Gauntlets
-										i(32656),	-- Crystalhide Handwraps
-									})),
-									dr(4.0, i(32679, {	-- Depleted Staff
-										i(32662),	-- Flaming Quartz Staff
-									})),
-									dr(0.7, i(32674, {	-- Depleted Sword
-										i(32660),	-- Crystal Forged Sword
-									})),
-									dr(3.0, i(32670, {	-- Depleted Two-Handed Axe
-										i(32663),	-- Apexis Cleaver
-									})),
-									dr(100, i(32683, {	-- Jet Scale of Furywing
-										i(31942),		-- Deathwing Brood Cloak
-									})),
+								["g"] = {
+									{	-- Crystal-Infused Shiv
+										["itemID"] = 32659,	-- Crystal-Infused Shiv
+									},
 								},
-								["description"] = "Use 35 Apexis Shards on Furywing's Egg at 66.7, 14.5 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
-							}),
-							n( 23281, {	-- Insidion
-								["groups"] = {
-									dr(1.0, i(32677, {	-- Depleted Cloak
-										i(32665),	-- Crystalweave Cape
-									})),
-									dr(1.4, i(32676, {	-- Depleted Cloth Bracers
-										i(32655),	-- Crystalweave Bracers
-									})),
-									dr(1.0, i(32673, {	-- Depleted Dagger
-										i(32659),	-- Crystal-Infused Shiv
-									})),
-									dr(2.0, i(32671, {	-- Depleted Mace
-										i(32661),	-- Apexis Crystal Mace
-									})),
-									dr(3.0, i(32675, {	-- Depleted Mail Gauntlets
-										i(32656),	-- Crystalhide Handwraps
-									})),
-									dr(1.8, i(32679, {	-- Depleted Staff
-										i(32662),	-- Flaming Quartz Staff
-									})),
-									dr(2.0, i(32674, {	-- Depleted Sword
-										i(32660),	-- Crystal Forged Sword
-									})),
-									dr(1.8, i(32670, {	-- Depleted Two-Handed Axe
-										i(32663),	-- Apexis Cleaver
-									})),
-									dr(100, i(32684, {	-- Insidion's Ebony Scale 
-										i(31942),	-- Deathwing Brood Cloak
-									})),
+							},
+							{	-- Depleted Mace
+								["itemID"] = 32671,	-- Depleted Mace
+								["crs"] = {
+									19973,	-- Abyssal Flamebringer
+									22175,	-- Apexis Flayer
+									22275,	-- Apexis Guardian
+									22243,	-- Bash'ir Arcanist
+									22241,	-- Bash'ir Raider
+									22242,	-- Bash'ir Spell-Thief
+									23353,	-- Braxxus
+									22204,	-- Fear Fiend
+									22291,	-- Furnace Guard
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									22180,	-- Shard-Hide Boar
+									23333,	-- The Grand Collector
+									22195,	-- Wrath Speaker
+									23355,	-- Zarcsin
 								},
-								["description"] = "Use 35 Apexis Shards on Insidion's Egg at 62.7 7.3 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
-							}),
-							n( 23154, {	-- Mana-Debt Slave
-								dr(.01, i(32676, {	-- Depleted Cloth Bracers
-									i(32655),	-- Crystalweave Bracers
-								})),
-							}),
-							n( 23282, {	-- Obsidia 
-								["groups"] = {
-									dr(2.0, i(32677, {	-- Depleted Cloak
-										i(32665),	-- Crystalweave Cape
-									})),
-									dr(1.4, i(32676, {	-- Depleted Cloth Bracers
-										i(32655),	-- Crystalweave Bracers
-									})),
-									dr(1.8, i(32673, {	-- Depleted Dagger
-										i(32659),	-- Crystal-Infused Shiv
-									})),
-									dr(2.0, i(32671, {	-- Depleted Mace
-										i(32661),	-- Apexis Crystal Mace
-									})),
-									dr(1.6, i(32675, {	-- Depleted Mail Gauntlets
-										i(32656),	-- Crystalhide Handwraps
-									})),
-									dr(1.4, i(32679, {	-- Depleted Staff
-										i(32662),	-- Flaming Quartz Staff
-									})),
-									dr(1.6, i(32674, {	-- Depleted Sword
-										i(32660),	-- Crystal Forged Sword
-									})),
-									dr(2.0, i(32670, {	-- Depleted Two-Handed Axe
-										i(32663),	-- Apexis Cleaver
-									})),
-									dr(100, i(32682, {	-- Obsidia Scale
-										i(31942), 		-- Deathwing Brood Cloak
-									})),
+								["g"] = {
+									{	-- Apexis Crystal Mace
+										["itemID"] = 32661,	-- Apexis Crystal Mace
+									},
 								},
-								["description"] = "Use 35 Apexis Shards on Obsidia's Egg at 34.0, 54.7 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
-							}),
-							n( 24917, {	-- Phase Wyrm
-								dr(.01, i(32674, {	-- Depleted Sword
-									i(32660),	-- Crystal Forged Sword
-								})),
-							}),
-							n( 23061, {	-- Rivendark
-								["groups"] = {
-									dr(1.6, i(32677, {	-- Depleted Cloak
-										i(32665),	-- Crystalweave Cape
-									})),
-									dr(2.0, i(32676, {	-- Depleted Cloth Bracers
-										i(32655),	-- Crystalweave Bracers
-									})),
-									dr(2.0, i(32673, {	-- Depleted Dagger
-										i(32659),	-- Crystal-Infused Shiv
-									})),
-									dr(2.0, i(32671, {	-- Depleted Mace
-										i(32661),	-- Apexis Crystal Mace
-									})),
-									dr(1.3, i(32675, {	-- Depleted Mail Gauntlets
-										i(32656),	-- Crystalhide Handwraps
-									})),
-									dr(6.0, i(32679, {	-- Depleted Staff
-										i(32662),	-- Flaming Quartz Staff
-									})),
-									dr(1.2, i(32674, {	-- Depleted Sword
-										i(32660),	-- Crystal Forged Sword
-									})),
-									dr(3.0, i(32670, {	-- Depleted Two-Handed Axe
-										i(32663),	-- Apexis Cleaver
-									})),
-									dr(100, i(32681, {	-- Onyx Scale of Rivendark
-										i(31942), 		-- Deathwing Brood Cloak
-									})),
+							},
+							{	-- Depleted Staff
+								["itemID"] = 32679,	-- Depleted Staff
+								["crs"] = {
+									22181,	-- Aether Ray
+									22175,	-- Apexis Flayer
+									22275,	-- Apexis Guardian
+									23390,	-- Bash'ir's Harbinger
+									23353,	-- Braxxus
+									22291,	-- Furnace Guard
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									22180,	-- Shard-Hide Boar
+									23385,	-- Simon Unit
+									23333,	-- The Grand Collector
+									20557,	-- Wrath Hound
+									23355,	-- Zarcsin
 								},
-								["description"] = "Use 35 Apexis Shards on Rivendark's Egg at 27.2, 64.9 to summon it.  To make the cloak, collect pieces from Furywing, Insidion, Obsidia, and Rivendark.",
-							}),
-							n( 22180, {	-- Shard-Hide Boar
-								dr(.02, i(32676, {	-- Depleted Cloth Bracers
-									i(32655),	-- Crystalweave Bracers
-								})),
-								dr(.01, i(32673, {	-- Depleted Dagger
-									i(32659),	-- Crystal-Infused Shiv
-								})),
-								dr(.01, i(32671, {	-- Depleted Mace
-									i(32661),	-- Apexis Crystal Mace
-								})),
-								dr(.01, i(32675, {	-- Depleted Mail Gauntlets
-									i(32656),	-- Crystalhide Handwraps
-								})),
-								dr(.01, i(32679, {	-- Depleted Staff
-									i(32662),	-- Flaming Quartz Staff
-								})),
-								dr(.01, i(32674, {	-- Depleted Sword
-									i(32660),	-- Crystal Forged Sword
-								})),
-							}),
-							n( 23333, {	-- The Grand Collector
-								["groups"] = {
-									dr(4.0, i(32676, {	-- Depleted Cloth Bracers
-										i(32655),	-- Crystalweave Bracers
-									})),
-									dr(3.0, i(32671, {	-- Depleted Mace
-										i(32661),	-- Apexis Crystal Mace
-									})),
-									dr(0.8, i(32679, {	-- Depleted Staff
-										i(32662),	-- Flaming Quartz Staff
-									})),
-									dr(1.9, i(32674, {	-- Depleted Sword
-										i(32660),	-- Crystal Forged Sword
-									})),
-									dr(5.0, i(32670, {	-- Depleted Two-Handed Axe
-										i(32663),	-- Apexis Cleaver
-									})),
+								["g"] = {
+									{	-- Flaming Quartz Staff
+										["itemID"] = 32662,	-- Flaming Quartz Staff
+									},
 								},
-								["description"] = "Once every two hours, there is an event at Bash'ir Landing to defend the NPCs at Bash'ir Crystalforge (54.4, 10.8).  The Grand Collector is the final mob to spawn in this event.",
-							}),
-							n( 20557, {	-- Wrath Hound
-								dr(.01, i(32679, {	-- Depleted Staff
-									i(32662),	-- Flaming Quartz Staff
-								})),
-								dr(.01, i(32670, {	-- Depleted Two-Handed Axe
-									i(32663),	-- Apexis Cleaver
-								})),
-							}),
-							n( 22195, {	-- Wrath Speaker
-								dr(.03, i(32671, {	-- Depleted Mace
-									i(32661),	-- Apexis Crystal Mace
-								})),
-								dr(.01, i(32675, {	-- Depleted Mail Gauntlets
-									i(32656),	-- Crystalhide Handwraps
-								})),
-								dr(.01, i(32670, {	-- Depleted Two-Handed Axe
-									i(32663),	-- Apexis Cleaver
-								})),
-							}),
+							},
+							{	-- Depleted Sword
+								["itemID"] = 32674,	-- Depleted Sword
+								["crs"] = {
+									22175,	-- Apexis Flayer
+									22275,	-- Apexis Guardian
+									22243,	-- Bash'ir Arcanist
+									22241,	-- Bash'ir Raider
+									23353,	-- Braxxus
+									22291,	-- Furnace Guard
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									24917,	-- Phase Wyrm
+									23061,	-- Rivendark
+									22180,	-- Shard-Hide Boar
+									23333,	-- The Grand Collector
+									22298,	-- Vile Fire-Soul
+									20557,	-- Wrath Hound
+									23355,	-- Zarcsin
+								},
+								["g"] = {
+									{	-- Crystal Forged Sword
+										["itemID"] = 32660,	-- Crystal Forged Sword
+									},
+								},
+							},
+							{	-- Depleted Two-Handed Axe
+								["itemID"] = 32670,	-- Depleted Two-Handed Axe
+								["crs"] = {
+									19973,	-- Abyssal Flamebringer
+									22181,	-- Aether Ray
+									22175,	-- Apexis Flayer
+									22275,	-- Apexis Guardian
+									22242,	-- Bash'ir Spell-Thief
+									23353,	-- Braxxus
+									22291,	-- Furnace Guard
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									23333,	-- The Grand Collector
+									20557,	-- Wrath Hound
+									22195,	-- Wrath Speaker
+									23355,	-- Zarcsin
+								},
+								["g"] = {
+									{	-- Apexis Cleaver
+										["itemID"] = 32663,	-- Apexis Cleaver
+									},
+								},
+							},
+							{	-- Depleted Cloak
+								["itemID"] = 32677,	-- Depleted Cloak
+								["crs"] = {
+									19973,	-- Abyssal Flamebringer
+									22181,	-- Aether Ray
+									22175,	-- Apexis Flayer
+									22275,	-- Apexis Guardian
+									22242,	-- Bash'ir Spell-Thief
+									23353,	-- Braxxus
+									22204,	-- Fear Fiend
+									22291,	-- Furnace Guard
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									20557,	-- Wrath Hound
+									23355,	-- Zarcsin
+								},
+								["g"] = {
+									{	-- Crystalweave Cape
+										["itemID"] = 32665,	-- Crystalweave Cape
+									},
+								},
+							},
+							{	-- Depleted Cloth Bracers
+								["itemID"] = 32676,	-- Depleted Cloth Bracers
+								["crs"] = {
+									22181,	-- Aether Ray
+									22175,	-- Apexis Flayer
+									22275,	-- Apexis Guardian
+									23353,	-- Braxxus
+									22291,	-- Furnace Guard
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23154,	-- Mana-Debt Slave
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									22180,	-- Shard-Hide Boar
+									23333,	-- The Grand Collector
+									22244,	-- Unbound Ethereal
+									23355,	-- Zarcsin
+								},
+								["g"] = {
+									{	-- Crystalweave Bracers
+										["itemID"] = 32655,	-- Crystalweave Bracers
+									},
+								},
+							},
+							{	-- Depleted Mail Gauntlets
+								["itemID"] = 32675,	-- Depleted Mail Gauntlets
+								["crs"] = {
+									19973,	-- Abyssal Flamebringer
+									22181,	-- Aether Ray
+									22175,	-- Apexis Flayer
+									22275,	-- Apexis Guardian
+									23353,	-- Braxxus
+									22291,	-- Furnace Guard
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									22180,	-- Shard-Hide Boar
+									22195,	-- Wrath Speaker
+									23355,	-- Zarcsin
+								},
+								["g"] = {
+									{	-- Crystalhide Handwraps
+										["itemID"] = 32656,	-- Crystalhide Handwraps
+									},
+								},
+							},
+							{	-- Formula: Enchant Weapon - Major Spellpower
+								["itemID"]  = 22555,	-- Formula: Enchant Weapon - Major Spellpower
+								["crs"] = {
+									--22175,	-- Apexis Flayer [Wowhead lists, but probably due to AoE loot]
+									22243,	-- Bash'ir Arcanist
+									22241,	-- Bash'ir Raider
+									22242,	-- Bash'ir Spell-Thief
+									--23385,	-- Simon Unit [Wowhead lists, but probably due to AoE loot]
+								},
+							},
+							{	-- Mistshroud Shoulders
+								["itemID"] = 31569,	-- Mistshroud Shoulders
+								["coords"] = {
+									{ 51.2, 11.6 },
+									{ 49.6, 15.8 },
+									{ 49.6, 21.2 },
+									{ 52.6, 20.0 },
+								},
+								["crs"] = {
+									20889,	-- Ethereum Prisoner (Group Energy Ball)
+									22827,	-- Gorgolon the All-Seeing
+								},
+							},
+							{	-- Skystalker's Shoulders
+								["itemID"] = 31561,	-- Skystalker's Shoulders
+								["coords"] = {
+									{ 51.2, 11.6 },
+									{ 49.6, 15.8 },
+									{ 49.6, 21.2 },
+									{ 52.6, 20.0 },
+								},
+								["crs"] = {
+									20889,	-- Ethereum Prisoner (Group Energy Ball)
+									20888,	-- Solus the Eternal
+								},
+							},
+							{	-- Slatesteel Shoulders
+								["itemID"] = 31577,	-- Slatesteel Shoulders
+								["coords"] = {
+									{ 51.2, 11.6 },
+									{ 49.6, 15.8 },
+									{ 49.6, 21.2 },
+									{ 52.6, 20.0 },
+								},
+								["crs"] = {
+									20889,	-- Ethereum Prisoner (Group Energy Ball)
+									22826,	-- King Dorfbruiser
+								},
+							},
+							{	-- Windchanneller's Mantle
+								["itemID"] = 31553,	-- Windchanneller's Mantle
+								["coords"] = {
+									{ 51.2, 11.6 },
+									{ 49.6, 15.8 },
+									{ 49.6, 21.2 },
+									{ 52.6, 20.0 },
+								},
+								["crs"] = {
+									20889,	-- Ethereum Prisoner (Group Energy Ball)
+									22825,	-- Matron Li-sahar
+								},
+							},
+							{	-- Abyssal Flamebringer
+								["npcID"] = 19973,	-- Abyssal Flamebringer
+								["coords"] = {
+									{ 26.6, 83.6 },
+									{ 28.0, 82.2 },
+									{ 28.8, 85.6 },
+									{ 29.8, 77.0 },
+									{ 30.8, 80.8 },
+								},
+								["g"] = {
+									{	-- Recipe: Major Holy Protection Potion
+										["itemID"] = 22925,	-- Recipe: Major Holy Protection Potion
+									},
+								},
+							},
+							{	-- Anger Guard
+								["npcID"] = 16952,	-- Anger Guard
+								["coords"] = {
+									{ 72.8, 40.6 },
+									{ 72.8, 41.6 },
+									{ 73.6, 38.4 },
+									{ 73.6, 39.6 },
+									{ 73.6, 43.6 },
+									{ 74.2, 41.6 },
+								},
+								["g"] = {
+									{	-- Plans: Ragesteel Helm
+										["itemID"]  = 23612,	-- Plans: Ragesteel Helm
+									},
+								}
+							},
+							{	-- Bloodmaul Geomancer
+								["npcID"] = 19952,	-- Bloodmaul Geomancer
+								["coords"] = {
+									{ 43.8, 70.6 },
+									{ 45.6, 79.4 },
+									{ 46.0, 78.0 },
+									{ 46.0, 80.0 },
+									{ 46.4, 76.8 },
+									{ 46.6, 74.8 },
+									{ 46.6, 74.8 },
+									{ 46.8, 79.6 },
+									{ 47.0, 76.6 },
+									{ 47.2, 78.0 },
+								},
+								["g"] = {
+									{	-- Formula: Enchant Bracer - Spellpower
+										["itemID"] = 22534,	-- Formula: Enchant Bracer - Spellpower
+									},
+								},
+							},
+							{	-- Furywing
+								["npcID"] = 23261,	-- Furywing
+								["coords"] = {
+									{ 66.7, 14.5 },
+								},
+								["g"] = {
+									{	-- Jet Scale of Furywing
+										["itemID"]  = 32683,	-- Jet Scale of Furywing
+										["g"] = {
+											{	-- Deathwing Brood Cloak
+												["itemID"] = 31942,	-- Deathwing Brood Cloak
+											},
+										},
+									},
+								},
+							},
+							{	-- Insidion
+								["npcID"] = 23281,	-- Insidion
+								["coords"] = {
+									{ 62.7, 7.3 },
+								},
+								["g"] = {
+									{	-- Insidion's Ebony Scale 
+										["itemID"]  = 32684,	-- Insidion's Ebony Scale 
+										["g"] = {
+											{	-- Deathwing Brood Cloak
+												["itemID"] = 31942,	-- Deathwing Brood Cloak
+											},
+										},
+									},
+								},
+							},
+							{	-- Obsidia 
+								["npcID"] = 23282,	-- Obsidia 
+								["coords"] = {
+									{ 34.0, 54.7 },
+								},
+								["g"] = {
+									{	-- Obsidia Scale
+										["itemID"]  = 32682,	-- Obsidia Scale
+										["g"] = {
+											{	-- Deathwing Brood Cloak
+												["itemID"] = 31942,	-- Deathwing Brood Cloak
+											},
+										},
+									},
+								},
+							},
+							{	-- Rivendark
+								["npcID"] = 23061,	-- Rivendark
+								["coords"] = {
+									{ 27.2, 64.9 },
+								},
+								["g"] = {
+									{	-- Onyx Scale of Rivendark
+										["itemID"]  = 32681,	-- Onyx Scale of Rivendark
+										["g"] = {
+											{	-- Deathwing Brood Cloak
+												["itemID"] = 31942,	-- Deathwing Brood Cloak
+											},
+										},
+									},
+								},
+							},
 						},
 					},
 				},
