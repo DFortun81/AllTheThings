@@ -952,6 +952,12 @@ _.Zones =
 								["icon"] = "Interface\\Icons\\INV_Egg_09",
 							}),
 						},
+						["coords"] = {
+							{ 56.0, 40.0 },
+							{ 51.6, 38.8 },
+							{ 43.2, 34.2 },
+							{ 54.0, 45.0 },
+						},
 						["icon"] = "Interface\\Icons\\Spell_Warlock_DemonicPortal_Purple",
 						["description"] = "Click on Edge of Reality, get teleported, click on egg for mount.|nIf you are on a realm not of your own when you click on Edge of Reality the mount will be mailed to you as you will not be teleported. |r",
 					}),					
