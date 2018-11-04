@@ -252,452 +252,472 @@ _.Instances =
 							},
 						}),
 						ach(8069, {	-- Last Stand of the Zandalari
-							cr(69465, e(827, {	-- Jin'rokh the Breaker
-								["groups"] = {
-									i(95343), 	-- Treasures of the Thunder King
-									i(95640),	-- Soulblade of the Breaking Storm
-									i(95632),	-- Worldbreaker's Stormscythe
-									i(95626),	-- Lightning-Eye Hood
-									i(95636),	-- Fissure-Split Shoulderwraps
-									i(95628),	-- Static-Shot Shoulderguards
-									i(95639),	-- Drape of Booming Nights
-									i(95630),	-- Chestplate of Violent Detonation
-									i(95644),	-- Ionized Yojamban Carapace
-									i(95637),	-- Robes of Static Bursts
-									i(95631),	-- Bracers of Constant Implosion
-									i(95642),	-- Infinitely Conducting Bracers
-									i(95634),	-- Lightningweaver Gauntlets
-									i(95629),	-- Cloudbreaker Greatbelt
-									i(95635),	-- Al'set's Tormented Leggings
-									i(95627),	-- Spearman's Jingling Leggings
-									i(95643),	-- Ghostbinder Greatboots
-									i(95638),	-- Jin'rokh's Dreamshard
-									i(95633),	-- Jin'rokh's Soulcrystal
-									i(95624),	-- Sign of the Bloodied God
-									i(95625),	-- Renataki's Soul Charm
-								},
-							})),
-							cr(68476, e(819, {	-- Horridon
-								["groups"] = {
-									i(95343), 	-- Treasures of the Thunder King
-									i(94574),	-- Pygmy Direhorn (PET!)
-									i(95657),	-- Dinomancer's Spiritbinding Spire
-									i(95647),	-- Jalak's Maelstrom Staff
-									i(95660),	-- Venomlord's Totemic Wand
-									i(95655),	-- Flamecaster's Burning Crown
-									i(95652),	-- Puncture-Proof Greathelm
-									i(95658),	-- Horridon's Tusk Fragment
-									i(95646),	-- Talisman of Living Poison
-									i(95662),	-- Spaulders of Dinomancy
-									i(95653),	-- Horn-Rimmed Doomcloak
-									i(95645),	-- Wastewalker's Sandblasted Drape
-									i(95649),	-- Sul'lithuz Sandmail
-									i(95664),	-- Armplates of the Vanquished Abomination
-									i(95648),	-- Bindings of Multiplicative Strikes
-									i(95650),	-- Frozen Warlord's Bracers
-									i(95656),	-- Vaccinator's Armwraps
-									i(95651),	-- Bloodlord's Bloodsoaked Legplates
-									i(95663),	-- Legguards of Scintillating Scales
-									i(95661),	-- Roots of Rampaging Earth
-									i(95659),	-- Petrified Eye of the Basilisk
-									i(95641),	-- Horridon's Last Gasp
-									i(95654),	-- Spark of Zandalar
-								},
-							})),
-							cr(69134, e(816, {	-- Council of Elders
-								["groups"] = {
-									i(95856, {		-- Gauntlets of the Crackling Conqueror
-										i(95911),	-- Lightning Emperor's Gauntlets
-										i(95916),	-- Lightning Emperor's Gloves
-										i(95921),	-- Lightning Emperor's Handguards
-										i(95930),	-- Gloves of the Exorcist
-										i(95925),	-- Handwraps of the Exorcist
-										i(95981),	-- Gloves of the Thousandfold Hells
-									}),
-									i(95857, {		-- Gauntlets of the Crackling Protector
-										i(95883),	-- Saurok Stalker's Gloves
-										i(95906),	-- Fire-Charm Gauntlets
-										i(95896),	-- Fire-Charm Grips
-										i(95900),	-- Fire-Charm Handwraps
-										i(95951),	-- Gloves of the Witch Doctor
-										i(95946),	-- Grips of the Witch Doctor
-										i(95941),	-- Handwraps of the Witch Doctor
-										i(95988),	-- Gauntlets of the Last Mogu
-										i(95992),	-- Handguards of the Last Mogu
-									}),
-									i(95855, {		-- Gauntlets of the Crackling Vanquisher
-										i(95826),	-- Gauntlets of the All-Consuming Maw
-										i(95831),	-- Handguards of the All-Consuming Maw
-										i(95845),	-- Gloves of the Haunted Forest
-										i(95836),	-- Grips of the Haunted Forest
-										i(95851),	-- Handguards of the Haunted Forest
-										i(95840),	-- Handwraps of the Haunted Forest
-										i(95890),	-- Gloves of the Chromatic Hydra
-										i(95936),	-- Nine-Tailed Gloves
-									}),
-									i(95343), 	-- Treasures of the Thunder King
-									i(95675),	-- Zerat, Malakk's Soulburning Greatsword
-									i(95670),	-- Amun-Thoth, Sul's Spiritrending Talons
-									i(95666),	-- Kura-Kura, Kazra'jin's Skullcleaver
-									i(95672),	-- Gaze of Gara'jal
-									i(95676),	-- Talisman of Angry Spirits
-									i(95674),	-- Overloaded Bladebreaker Cuirass
-									i(95671),	-- Robes of Treacherous Ground
-									i(95668),	-- Zandalari Robes of the Final Rite
-									i(95673),	-- Loa-Ridden Bracers
-									i(95667),	-- Mar'li's Bloodstained Sandals
-									i(95665),	-- Bad Juju
-									i(95677),	-- Fortitude of the Zandalari
-									i(95669),	-- Wushoolay's Final Choice
-								},
-								["crs"] = {
-									69131, -- Frost King Malakk
-									69132, -- High Priestess Mar'li
-									69134, -- Kazra'jin
-									69078, -- Sul the Sandrawler
-								},
-							})),
+							["crs"] = {
+								80633,	-- Lorewalker Han <Raid Finder Storyteller>
+							},
+							["groups"] = {
+								cr(69465, e(827, {	-- Jin'rokh the Breaker
+									["groups"] = {
+										i(95343), 	-- Treasures of the Thunder King
+										i(95640),	-- Soulblade of the Breaking Storm
+										i(95632),	-- Worldbreaker's Stormscythe
+										i(95626),	-- Lightning-Eye Hood
+										i(95636),	-- Fissure-Split Shoulderwraps
+										i(95628),	-- Static-Shot Shoulderguards
+										i(95639),	-- Drape of Booming Nights
+										i(95630),	-- Chestplate of Violent Detonation
+										i(95644),	-- Ionized Yojamban Carapace
+										i(95637),	-- Robes of Static Bursts
+										i(95631),	-- Bracers of Constant Implosion
+										i(95642),	-- Infinitely Conducting Bracers
+										i(95634),	-- Lightningweaver Gauntlets
+										i(95629),	-- Cloudbreaker Greatbelt
+										i(95635),	-- Al'set's Tormented Leggings
+										i(95627),	-- Spearman's Jingling Leggings
+										i(95643),	-- Ghostbinder Greatboots
+										i(95638),	-- Jin'rokh's Dreamshard
+										i(95633),	-- Jin'rokh's Soulcrystal
+										i(95624),	-- Sign of the Bloodied God
+										i(95625),	-- Renataki's Soul Charm
+									},
+								})),
+								cr(68476, e(819, {	-- Horridon
+									["groups"] = {
+										i(95343), 	-- Treasures of the Thunder King
+										i(94574),	-- Pygmy Direhorn (PET!)
+										i(95657),	-- Dinomancer's Spiritbinding Spire
+										i(95647),	-- Jalak's Maelstrom Staff
+										i(95660),	-- Venomlord's Totemic Wand
+										i(95655),	-- Flamecaster's Burning Crown
+										i(95652),	-- Puncture-Proof Greathelm
+										i(95658),	-- Horridon's Tusk Fragment
+										i(95646),	-- Talisman of Living Poison
+										i(95662),	-- Spaulders of Dinomancy
+										i(95653),	-- Horn-Rimmed Doomcloak
+										i(95645),	-- Wastewalker's Sandblasted Drape
+										i(95649),	-- Sul'lithuz Sandmail
+										i(95664),	-- Armplates of the Vanquished Abomination
+										i(95648),	-- Bindings of Multiplicative Strikes
+										i(95650),	-- Frozen Warlord's Bracers
+										i(95656),	-- Vaccinator's Armwraps
+										i(95651),	-- Bloodlord's Bloodsoaked Legplates
+										i(95663),	-- Legguards of Scintillating Scales
+										i(95661),	-- Roots of Rampaging Earth
+										i(95659),	-- Petrified Eye of the Basilisk
+										i(95641),	-- Horridon's Last Gasp
+										i(95654),	-- Spark of Zandalar
+									},
+								})),
+								cr(69134, e(816, {	-- Council of Elders
+									["groups"] = {
+										i(95856, {		-- Gauntlets of the Crackling Conqueror
+											i(95911),	-- Lightning Emperor's Gauntlets
+											i(95916),	-- Lightning Emperor's Gloves
+											i(95921),	-- Lightning Emperor's Handguards
+											i(95930),	-- Gloves of the Exorcist
+											i(95925),	-- Handwraps of the Exorcist
+											i(95981),	-- Gloves of the Thousandfold Hells
+										}),
+										i(95857, {		-- Gauntlets of the Crackling Protector
+											i(95883),	-- Saurok Stalker's Gloves
+											i(95906),	-- Fire-Charm Gauntlets
+											i(95896),	-- Fire-Charm Grips
+											i(95900),	-- Fire-Charm Handwraps
+											i(95951),	-- Gloves of the Witch Doctor
+											i(95946),	-- Grips of the Witch Doctor
+											i(95941),	-- Handwraps of the Witch Doctor
+											i(95988),	-- Gauntlets of the Last Mogu
+											i(95992),	-- Handguards of the Last Mogu
+										}),
+										i(95855, {		-- Gauntlets of the Crackling Vanquisher
+											i(95826),	-- Gauntlets of the All-Consuming Maw
+											i(95831),	-- Handguards of the All-Consuming Maw
+											i(95845),	-- Gloves of the Haunted Forest
+											i(95836),	-- Grips of the Haunted Forest
+											i(95851),	-- Handguards of the Haunted Forest
+											i(95840),	-- Handwraps of the Haunted Forest
+											i(95890),	-- Gloves of the Chromatic Hydra
+											i(95936),	-- Nine-Tailed Gloves
+										}),
+										i(95343), 	-- Treasures of the Thunder King
+										i(95675),	-- Zerat, Malakk's Soulburning Greatsword
+										i(95670),	-- Amun-Thoth, Sul's Spiritrending Talons
+										i(95666),	-- Kura-Kura, Kazra'jin's Skullcleaver
+										i(95672),	-- Gaze of Gara'jal
+										i(95676),	-- Talisman of Angry Spirits
+										i(95674),	-- Overloaded Bladebreaker Cuirass
+										i(95671),	-- Robes of Treacherous Ground
+										i(95668),	-- Zandalari Robes of the Final Rite
+										i(95673),	-- Loa-Ridden Bracers
+										i(95667),	-- Mar'li's Bloodstained Sandals
+										i(95665),	-- Bad Juju
+										i(95677),	-- Fortitude of the Zandalari
+										i(95669),	-- Wushoolay's Final Choice
+									},
+									["crs"] = {
+										69131, -- Frost King Malakk
+										69132, -- High Priestess Mar'li
+										69134, -- Kazra'jin
+										69078, -- Sul the Sandrawler
+									},
+								})),
+							},
 						}),
 						ach(8070, {	-- Forgotten Depths
-							desc(i( 98132), "Must obtain 250 stacks of Spray Water from the geysers before Tortos."), -- Shado-Pan Geyser Gun
-							cr(67977, e(825, {	-- Tortos
-								["groups"] = {
-									i(95343), 	-- Treasures of the Thunder King
-									i(95686),	-- Shellsplitter Greataxe
-									i(95678),	-- Shattered Tortoiseshell Longbow
-									i(95692),	-- Tortos' Discarded Shell
-									i(95689),	-- Stonegaze Hood
-									i(95685),	-- Amulet of the Primal Turtle
-									i(95683),	-- Shoulderguards of Centripetal Destruction
-									i(95695),	-- Spaulders of Quaking Fear
-									i(95687),	-- Beakbreaker Greatcloak
-									i(95691),	-- Shimmershell Cape
-									i(95694),	-- Robes of Concussive Shocks
-									i(95679),	-- Rockfall Ribwraps
-									i(95688),	-- Azure Shell Bracers
-									i(95681),	-- Beady-Eye Bracers
-									i(95684),	-- Shell-Coated Wristplates
-									i(95693),	-- Vampire Bat-Hide Bracers
-									i(95690),	-- Crystal-Claw Gloves
-									i(95680),	-- Grips of Vampiric Cruelty
-									i(95697),	-- Tortos' Shellseizers
-									i(95696),	-- Refreshing Abalone Girdle
-									i(95682),	-- Quakestompers
-								},
-							})),
-							cr(70212, e(821, {	-- Megaera (Flaming Head)
-								["groups"] = {
-									i(95343), 	-- Treasures of the Thunder King
-									i(95698),	-- Megaera's Poisoned Fang
-									i(95710),	-- Fetish of the Hydra
-									i(95713),	-- Hood of Smoldering Flesh
-									i(95705),	-- Hydraskull Choker
-									i(95709),	-- Megaera's Shining Eye
-									i(95699),	-- Quadra-Head Brooch
-									i(95707),	-- Gleaming-Eye Shoulderpads
-									i(95700),	-- Poisonblood Bladeshoulders
-									i(95715),	-- Chain of Consuming Magic
-									i(95703),	-- Rot-Proof Greatplate
-									i(95708),	-- Frostborn Wristwraps
-									i(95701),	-- Grips of Cinderflesh
-									i(95714),	-- Links of the Bifurcated Tongue
-									i(95702),	-- Plated Toothbreaker Girdle
-									i(95716),	-- Ice-Scored Treads
-									i(95706),	-- Sandals of Arcane Fury
-									i(95704),	-- Spinescale Seal
-									i(95711),	-- Breath of the Hydra
-									i(95712),	-- Inscribed Bag of Hydra-Spawn
-								},
-								["crs"] = {
-									70252, -- Arcane Head <Head of Megaera>
-									70212, -- Flaming Head <Head of Megaera>
-									70235, -- Frozen Head <Head of Megaera>
-									70247, -- Venomous Head <Head of Megaera>
-								},
-							})),
-							n( 68220, {			-- Gastropod
-								["groups"] = {	
-									i(98136)	-- Gastropod Shell
-								},
-								["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range."								
-							}),
-							cr(69712, e(828, {	-- Ji-Kun
-								["groups"] = {
-									i(95888, {	-- Leggings of the Crackling Conqueror
-										i(95913),	-- Lightning Emperor's Legplates
-										i(95918),	-- Lightning Emperor's Greaves
-										i(95923),	-- Lightning Emperor's Legguards
-										i(95927),	-- Legwraps of the Exorcist
-										i(95932),	-- Leggings of the Exorcist
-										i(95983),	-- Leggings of the Thousandfold Hells
-									}),
-									i(95889, {	-- Leggings of the Crackling Protector
-										i(95948),	-- Legguards of the Witch Doctor
-										i(95953),	-- Kilt of the Witch Doctor
-										i(95989),	-- Legplates of the Last Mogu
-										i(95994),	-- Legguards of the Last Mogu
-										i(95885),	-- Saurok Stalker's Legguards
-										i(95898),	-- Fire-Charm Leggings
-										i(95902),	-- Fire-Charm Legwraps
-										i(95908),	-- Fire-Charm Legguards
-										i(95943),	-- Legwraps of the Witch Doctor
-									}),
-									i(95887, {	-- Leggings of the Crackling Vanquisher
-										i(95892),	-- Leggings of the Chromatic Hydra
-										i(95938),	-- Nine-Tailed Legguards
-										i(95828),	-- Greaves of the All-Consuming Maw
-										i(95833),	-- Legguards of the All-Consuming Maw
-										i(95838),	-- Legguards of the Haunted Forest
-										i(95842),	-- Legwraps of the Haunted Forest
-										i(95847),	-- Leggings of the Haunted Forest
-										i(95853),	-- Breeches of the Haunted Forest
-									}),
-									i(95343), 	-- Treasures of the Thunder King
-									i(94835),	-- Ji-Kun Hatchling (PET!)
-									i(95720),	-- Giorgio's Caduceus of Pure Moods
-									i(95723),	-- Crown of Potentiated Birth
-									i(95717),	-- Pinionfeather Greatcloak
-									i(95719),	-- Robe of Midnight Dawn
-									i(95724),	-- Talonrender Chestplate
-									i(95725),	-- Egg-Shard Grips
-									i(95722),	-- Grasp of the Ruthless Mother
-									i(95718),	-- Cord of Cacophonous Cawing
-									i(95721),	-- Featherflight Belt
-									i(95726),	-- Fabled Feather of Ji-Kun
-									i(95727),	-- Ji-Kun's Rising Winds
-								},
-							})),
+							["crs"] = {
+								80633,	-- Lorewalker Han <Raid Finder Storyteller>
+							},
+							["groups"] = {
+								desc(i( 98132), "Must obtain 250 stacks of Spray Water from the geysers before Tortos."), -- Shado-Pan Geyser Gun
+								cr(67977, e(825, {	-- Tortos
+									["groups"] = {
+										i(95343), 	-- Treasures of the Thunder King
+										i(95686),	-- Shellsplitter Greataxe
+										i(95678),	-- Shattered Tortoiseshell Longbow
+										i(95692),	-- Tortos' Discarded Shell
+										i(95689),	-- Stonegaze Hood
+										i(95685),	-- Amulet of the Primal Turtle
+										i(95683),	-- Shoulderguards of Centripetal Destruction
+										i(95695),	-- Spaulders of Quaking Fear
+										i(95687),	-- Beakbreaker Greatcloak
+										i(95691),	-- Shimmershell Cape
+										i(95694),	-- Robes of Concussive Shocks
+										i(95679),	-- Rockfall Ribwraps
+										i(95688),	-- Azure Shell Bracers
+										i(95681),	-- Beady-Eye Bracers
+										i(95684),	-- Shell-Coated Wristplates
+										i(95693),	-- Vampire Bat-Hide Bracers
+										i(95690),	-- Crystal-Claw Gloves
+										i(95680),	-- Grips of Vampiric Cruelty
+										i(95697),	-- Tortos' Shellseizers
+										i(95696),	-- Refreshing Abalone Girdle
+										i(95682),	-- Quakestompers
+									},
+								})),
+								cr(70212, e(821, {	-- Megaera (Flaming Head)
+									["groups"] = {
+										i(95343), 	-- Treasures of the Thunder King
+										i(95698),	-- Megaera's Poisoned Fang
+										i(95710),	-- Fetish of the Hydra
+										i(95713),	-- Hood of Smoldering Flesh
+										i(95705),	-- Hydraskull Choker
+										i(95709),	-- Megaera's Shining Eye
+										i(95699),	-- Quadra-Head Brooch
+										i(95707),	-- Gleaming-Eye Shoulderpads
+										i(95700),	-- Poisonblood Bladeshoulders
+										i(95715),	-- Chain of Consuming Magic
+										i(95703),	-- Rot-Proof Greatplate
+										i(95708),	-- Frostborn Wristwraps
+										i(95701),	-- Grips of Cinderflesh
+										i(95714),	-- Links of the Bifurcated Tongue
+										i(95702),	-- Plated Toothbreaker Girdle
+										i(95716),	-- Ice-Scored Treads
+										i(95706),	-- Sandals of Arcane Fury
+										i(95704),	-- Spinescale Seal
+										i(95711),	-- Breath of the Hydra
+										i(95712),	-- Inscribed Bag of Hydra-Spawn
+									},
+									["crs"] = {
+										70252, -- Arcane Head <Head of Megaera>
+										70212, -- Flaming Head <Head of Megaera>
+										70235, -- Frozen Head <Head of Megaera>
+										70247, -- Venomous Head <Head of Megaera>
+									},
+								})),
+								n( 68220, {			-- Gastropod
+									["groups"] = {	
+										i(98136)	-- Gastropod Shell
+									},
+									["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range."								
+								}),
+								cr(69712, e(828, {	-- Ji-Kun
+									["groups"] = {
+										i(95888, {	-- Leggings of the Crackling Conqueror
+											i(95913),	-- Lightning Emperor's Legplates
+											i(95918),	-- Lightning Emperor's Greaves
+											i(95923),	-- Lightning Emperor's Legguards
+											i(95927),	-- Legwraps of the Exorcist
+											i(95932),	-- Leggings of the Exorcist
+											i(95983),	-- Leggings of the Thousandfold Hells
+										}),
+										i(95889, {	-- Leggings of the Crackling Protector
+											i(95948),	-- Legguards of the Witch Doctor
+											i(95953),	-- Kilt of the Witch Doctor
+											i(95989),	-- Legplates of the Last Mogu
+											i(95994),	-- Legguards of the Last Mogu
+											i(95885),	-- Saurok Stalker's Legguards
+											i(95898),	-- Fire-Charm Leggings
+											i(95902),	-- Fire-Charm Legwraps
+											i(95908),	-- Fire-Charm Legguards
+											i(95943),	-- Legwraps of the Witch Doctor
+										}),
+										i(95887, {	-- Leggings of the Crackling Vanquisher
+											i(95892),	-- Leggings of the Chromatic Hydra
+											i(95938),	-- Nine-Tailed Legguards
+											i(95828),	-- Greaves of the All-Consuming Maw
+											i(95833),	-- Legguards of the All-Consuming Maw
+											i(95838),	-- Legguards of the Haunted Forest
+											i(95842),	-- Legwraps of the Haunted Forest
+											i(95847),	-- Leggings of the Haunted Forest
+											i(95853),	-- Breeches of the Haunted Forest
+										}),
+										i(95343), 	-- Treasures of the Thunder King
+										i(94835),	-- Ji-Kun Hatchling (PET!)
+										i(95720),	-- Giorgio's Caduceus of Pure Moods
+										i(95723),	-- Crown of Potentiated Birth
+										i(95717),	-- Pinionfeather Greatcloak
+										i(95719),	-- Robe of Midnight Dawn
+										i(95724),	-- Talonrender Chestplate
+										i(95725),	-- Egg-Shard Grips
+										i(95722),	-- Grasp of the Ruthless Mother
+										i(95718),	-- Cord of Cacophonous Cawing
+										i(95721),	-- Featherflight Belt
+										i(95726),	-- Fabled Feather of Ji-Kun
+										i(95727),	-- Ji-Kun's Rising Winds
+									},
+								})),
+							},
 						}),
 						ach(8071, {	-- Halls of Flesh-Shaping
-							cr(68036, e(818, {	-- Durumu the Forgotten
-								["groups"] = {
-									i(95343), 	-- Treasures of the Thunder King
-									i(95743),	-- Ritual Dagger of the Mind's Eye
-									i(95728),	-- Durumu's Baleful Gaze
-									i(95740),	-- Chilblain Spaulders
-									i(95741),	-- Deadly Glare Cape
-									i(95736),	-- Reinforced Mirror-Sheen Cloak
-									i(95731),	-- Aberrant Chestguard of Torment
-									i(95732),	-- Caustic Spike Bracers
-									i(95745),	-- Vein-Cover Bracers
-									i(95735),	-- Artery Rippers
-									i(95746),	-- Iceshatter Gauntlets
-									i(95738),	-- Lifedrainer's Sordid Grip
-									i(95730),	-- Links of the Disintegrator
-									i(95729),	-- Crimson Bloom Legguards
-									i(95739),	-- Leggings of Pulsing Blood
-									i(95747),	-- Legplates of Re-Emergence
-									i(95733),	-- Legplates of the Dark Parasite
-									i(95744),	-- Sandals of the Starving Eye
-									i(95734),	-- Treads of the Blind Eye
-									i(95742),	-- Durumu's Captive Eyeball
-									i(95737),	-- Durumu's Severed Tentacle
-								},
-							})),
-							cr(69017, e(820, {	-- Primordius
-								["groups"] = {
-									i(95343), 	-- Treasures of the Thunder King
-									i(97959),	-- Quivering Blob (PET!)
-									i(97960),	-- Dark Quivering Blob
-									i(95758),	-- Acid-Spine Bonemace
-									i(95768),	-- Greatshield of the Gloaming
-									i(95765),	-- Clear-Mind Helm
-									i(95754),	-- Metabolically Boosted Shoulderplates
-									i(95767),	-- Spaulders of Primordial Growth
-									i(95755),	-- Hydra-Scale Bloodcloak
-									i(95759),	-- Robes of Mutagenic Blood
-									i(95766),	-- Bonemender Bracers
-									i(95762),	-- Bracers of Fragile Bone
-									i(95750),	-- Bracers of Mutagenic Fervor
-									i(95749),	-- Gloves of Cushioned Air
-									i(95760),	-- Helix-Breaker Gloves
-									i(95752),	-- Pathogenic Gauntlets
-									i(95751),	-- Synapse-String Handguards
-									i(95753),	-- Black Blood Legplates
-									i(95761),	-- Leggings of Ebon Veins
-									i(95764),	-- Leggings of the Malformed Sapling
-									i(95756),	-- Band of the Scaled Tyrant
-									i(95757),	-- Primordius' Talisman of Rage
-									i(95763),	-- Stolen Relic of Zuldazar
-									i(95748),	-- Talisman of Bloodlust
-								},
-							})),
-							cr(69427, e(824, {	-- Dark Animus
-								["groups"] = {
-									i(95823, {	-- Chest of the Crackling Conqueror
-										i(95910),	-- Lightning Emperor's Battleplate
-										i(95915),	-- Lightning Emperor's Breastplate
-										i(95920),	-- Lightning Emperor's Chestguard
-										i(95933),	-- Raiment of the Exorcist
-										i(95928),	-- Robes of the Exorcist
-										i(95984),	-- Robes of the Thousandfold Hells
-									}),
-									i(95824, {	-- Chest of the Crackling Protector
-										i(95882),	-- Saurok Stalker's Tunic
-										i(95905),	-- Fire-Charm Chestguard
-										i(95895),	-- Fire-Charm Tunic
-										i(95903),	-- Fire-Charm Vest
-										i(95945),	-- Cuirass of the Witch Doctor
-										i(95950),	-- Hauberk of the Witch Doctor
-										i(95940),	-- Tunic of the Witch Doctor
-										i(95987),	-- Battleplate of the Last Mogu
-										i(95991),	-- Chestguard of the Last Mogu
-									}),
-									i(95822, {	-- Chest of the Crackling Vanquisher
-										i(95825),	-- Breastplate of the All-Consuming Maw
-										i(95830),	-- Chestguard of the All-Consuming Maw
-										i(95835),	-- Raiment of the Haunted Forest
-										i(95843),	-- Robes of the Haunted Forest
-										i(95850),	-- Tunic of the Haunted Forest
-										i(95848),	-- Vestment of the Haunted Forest
-										i(95893),	-- Robes of the Chromatic Hydra
-										i(95935),	-- Nine-Tailed Tunic
-									}),
-									i(95343), 	-- Treasures of the Thunder King
-									i(94152),	-- Son of Animus (PET!)
-									i(95774),	-- Athame of the Sanguine Ritual
-									i(95770),	-- Hand of the Dark Animus
-									i(95778),	-- Crown of the Golden Golem
-									i(95771),	-- Hood of the Crimson Wake
-									i(95773),	-- Constantly Accelerating Cloak
-									i(95776),	-- Anima-Ringed Fingers
-									i(95777),	-- Matter-Swapped Legplates
-									i(95775),	-- Worldbinder Leggings
-									i(95769),	-- Gore-Soaked Gear
-									i(95772),	-- Cha-Ye's Essence of Brilliance
-									i(95779),	-- Delicate Vial of the Sanguinaire
-								},
-								["crs"] = {
-									69756, -- Anima Orb
-								},
-							})),
+							["crs"] = {
+								80633,	-- Lorewalker Han <Raid Finder Storyteller>
+							},
+							["groups"] = {
+								cr(68036, e(818, {	-- Durumu the Forgotten
+									["groups"] = {
+										i(95343), 	-- Treasures of the Thunder King
+										i(95743),	-- Ritual Dagger of the Mind's Eye
+										i(95728),	-- Durumu's Baleful Gaze
+										i(95740),	-- Chilblain Spaulders
+										i(95741),	-- Deadly Glare Cape
+										i(95736),	-- Reinforced Mirror-Sheen Cloak
+										i(95731),	-- Aberrant Chestguard of Torment
+										i(95732),	-- Caustic Spike Bracers
+										i(95745),	-- Vein-Cover Bracers
+										i(95735),	-- Artery Rippers
+										i(95746),	-- Iceshatter Gauntlets
+										i(95738),	-- Lifedrainer's Sordid Grip
+										i(95730),	-- Links of the Disintegrator
+										i(95729),	-- Crimson Bloom Legguards
+										i(95739),	-- Leggings of Pulsing Blood
+										i(95747),	-- Legplates of Re-Emergence
+										i(95733),	-- Legplates of the Dark Parasite
+										i(95744),	-- Sandals of the Starving Eye
+										i(95734),	-- Treads of the Blind Eye
+										i(95742),	-- Durumu's Captive Eyeball
+										i(95737),	-- Durumu's Severed Tentacle
+									},
+								})),
+								cr(69017, e(820, {	-- Primordius
+									["groups"] = {
+										i(95343), 	-- Treasures of the Thunder King
+										i(97959),	-- Quivering Blob (PET!)
+										i(97960),	-- Dark Quivering Blob
+										i(95758),	-- Acid-Spine Bonemace
+										i(95768),	-- Greatshield of the Gloaming
+										i(95765),	-- Clear-Mind Helm
+										i(95754),	-- Metabolically Boosted Shoulderplates
+										i(95767),	-- Spaulders of Primordial Growth
+										i(95755),	-- Hydra-Scale Bloodcloak
+										i(95759),	-- Robes of Mutagenic Blood
+										i(95766),	-- Bonemender Bracers
+										i(95762),	-- Bracers of Fragile Bone
+										i(95750),	-- Bracers of Mutagenic Fervor
+										i(95749),	-- Gloves of Cushioned Air
+										i(95760),	-- Helix-Breaker Gloves
+										i(95752),	-- Pathogenic Gauntlets
+										i(95751),	-- Synapse-String Handguards
+										i(95753),	-- Black Blood Legplates
+										i(95761),	-- Leggings of Ebon Veins
+										i(95764),	-- Leggings of the Malformed Sapling
+										i(95756),	-- Band of the Scaled Tyrant
+										i(95757),	-- Primordius' Talisman of Rage
+										i(95763),	-- Stolen Relic of Zuldazar
+										i(95748),	-- Talisman of Bloodlust
+									},
+								})),
+								cr(69427, e(824, {	-- Dark Animus
+									["groups"] = {
+										i(95823, {	-- Chest of the Crackling Conqueror
+											i(95910),	-- Lightning Emperor's Battleplate
+											i(95915),	-- Lightning Emperor's Breastplate
+											i(95920),	-- Lightning Emperor's Chestguard
+											i(95933),	-- Raiment of the Exorcist
+											i(95928),	-- Robes of the Exorcist
+											i(95984),	-- Robes of the Thousandfold Hells
+										}),
+										i(95824, {	-- Chest of the Crackling Protector
+											i(95882),	-- Saurok Stalker's Tunic
+											i(95905),	-- Fire-Charm Chestguard
+											i(95895),	-- Fire-Charm Tunic
+											i(95903),	-- Fire-Charm Vest
+											i(95945),	-- Cuirass of the Witch Doctor
+											i(95950),	-- Hauberk of the Witch Doctor
+											i(95940),	-- Tunic of the Witch Doctor
+											i(95987),	-- Battleplate of the Last Mogu
+											i(95991),	-- Chestguard of the Last Mogu
+										}),
+										i(95822, {	-- Chest of the Crackling Vanquisher
+											i(95825),	-- Breastplate of the All-Consuming Maw
+											i(95830),	-- Chestguard of the All-Consuming Maw
+											i(95835),	-- Raiment of the Haunted Forest
+											i(95843),	-- Robes of the Haunted Forest
+											i(95850),	-- Tunic of the Haunted Forest
+											i(95848),	-- Vestment of the Haunted Forest
+											i(95893),	-- Robes of the Chromatic Hydra
+											i(95935),	-- Nine-Tailed Tunic
+										}),
+										i(95343), 	-- Treasures of the Thunder King
+										i(94152),	-- Son of Animus (PET!)
+										i(95774),	-- Athame of the Sanguine Ritual
+										i(95770),	-- Hand of the Dark Animus
+										i(95778),	-- Crown of the Golden Golem
+										i(95771),	-- Hood of the Crimson Wake
+										i(95773),	-- Constantly Accelerating Cloak
+										i(95776),	-- Anima-Ringed Fingers
+										i(95777),	-- Matter-Swapped Legplates
+										i(95775),	-- Worldbinder Leggings
+										i(95769),	-- Gore-Soaked Gear
+										i(95772),	-- Cha-Ye's Essence of Brilliance
+										i(95779),	-- Delicate Vial of the Sanguinaire
+									},
+									["crs"] = {
+										69756, -- Anima Orb
+									},
+								})),
+							},
 						}),
 						ach(8072, {	-- Pinnacle of Storms
-							cr(68078, e(817, {	-- Iron Qon
-								["groups"] = {
-									i(95956, {	-- Shoulders of the Crackling Conqueror
-										i(95919),	-- Lightning Emperor's Mantle
-										i(95914),	-- Lightning Emperor's Pauldrons
-										i(95924),	-- Lightning Emperor's Shoulderguards
-										i(95929),	-- Mantle of the Exorcist
-										i(95934),	-- Shoulderguards of the Exorcist
-										i(95985),	-- Mantle of the Thousandfold Hells
-									}),
-									i(95957, {	-- Shoulders of the Crackling Protector
-										i(95886),	-- Saurok Stalker's Spaulders
-										i(95904),	-- Fire-Charm Mantle
-										i(95909),	-- Fire-Charm Shoulderguards
-										i(95899),	-- Fire-Charm Spaulders
-										i(95944),	-- Mantle of the Witch Doctor
-										i(95954),	-- Shoulderwraps of the Witch Doctor
-										i(95949),	-- Spaulders of the Witch Doctor
-										i(95990),	-- Pauldrons of the Last Mogu
-										i(95995),	-- Shoulderguards of the Last Mogu
-									}),
-									i(95955, {	-- Shoulders of the Crackling Vanquisher
-										i(95829),	-- Pauldrons of the All-Consuming Maw
-										i(95834),	-- Shoulderguards of the All-Consuming Maw
-										i(95844),	-- Mantle of the Haunted Forest
-										i(95854),	-- Shoulderguards of the Haunted Forest
-										i(95849),	-- Shoulderwraps of the Haunted Forest
-										i(95839),	-- Spaulders of the Haunted Forest
-										i(95894),	-- Mantle of the Chromatic Hydra
-										i(95939),	-- Nine-Tailed Spaulders
-									}),
-									i(95343), 	-- Treasures of the Thunder King
-									i(95780),	-- Iron Qon's Boot Knife
-									i(95790),	-- Qon's Flaming Scimitar
-									i(95781),	-- Voice of the Quilen
-									i(95786),	-- Orb of Arcing Lightning
-									i(95788),	-- Ro'shak's Molten Chain
-									i(95789),	-- Rein-Binder's Fists
-									i(95782),	-- Quet'zal's Crackling Cord
-									i(95783),	-- Saddle-Scarred Leggings
-									i(95784),	-- Dam'ren's Frozen Footguards
-									i(95787),	-- Spurs of the Storm Cavalry
-									i(95785),	-- Ro'shak's Remembrance
-								},
-								["crs"] = {
-									68081, -- Dam'ren <The Frozen Sage>
-									68078, -- Iron Qon <Mastern of Quilen>
-									68080, -- Quet'zal <The Stormcaller>
-									68079, -- Ro'shak <The Molten Flare>
-								},
-							})),
-							cr(68905, e(829, {	-- Twin Consorts
-								["groups"] = {
-									i(95880, {	-- Helm of the Crackling Conqueror
-										i(95922),	-- Lightning Emperor's Faceguard
-										i(95917),	-- Lightning Emperor's Headguard
-										i(95912),	-- Lightning Emperor's Helmet
-										i(95926),	-- Cowl of the Exorcist
-										i(95931),	-- Hood of the Exorcist
-										i(95982),	-- Hood of the Thousandfold Hells
-									}),
-									i(95881, {	-- Helm of the Crackling Protector
-										i(95884),	-- Saurok Stalker's Headguard
-										i(95907),	-- Fire-Charm Crown
-										i(95897),	-- Fire-Charm Headpiece
-										i(95901),	-- Fire-Charm Helm
-										i(95942),	-- Faceguard of the Witch Doctor
-										i(95952),	-- Headpiece of the Witch Doctor
-										i(95947),	-- Helmet of the Witch Doctor
-										i(95993),	-- Faceguard of the Last Mogu
-										i(95986),	-- Helmet of the Last Mogu
-									}),
-									i(95879, {	-- Helm of the Crackling Vanquisher
-										i(95832),	-- Faceguard of the All-Consuming Maw
-										i(95827),	-- Helmet of the All-Consuming Maw
-										i(95846),	-- Cover of the Haunted Forest
-										i(95852),	-- Headguard of the Haunted Forest
-										i(95837),	-- Headpiece of the Haunted Forest
-										i(95841),	-- Helm of the Haunted Forest
-										i(95891),	-- Hood of the Chromatic Hydra
-										i(95937),	-- Nine-Tailed Helmet
-									}),
-									i(95343), 	-- Treasures of the Thunder King
-									i(95795),	-- Suen-Wo, Spire of the Falling Sun
-									i(95791),	-- Wu-Lai, Bladed Fan of the Consorts
-									i(95794),	-- Shield of Twinned Despair
-									i(95800),	-- Moonjade Necklace
-									i(95793),	-- Passionfire Choker
-									i(95792),	-- Robes of the Moon Lotus
-									i(95796),	-- Bracers of the Midnight Comet
-									i(95801),	-- Fingers of the Night
-									i(95797),	-- Girdle of Night and Day
-									i(95798),	-- Tidal Force Treads
-									i(95799),	-- Gaze of the Twins
-								},
-								["crs"] = {
-									68904, -- Suen <Mistress of Anger>
-									68905, -- Lu'lin <Mistress of Solitude>
-								},
-							})),
-							cr(68397, e(832, {	-- Lei Shen
-								["groups"] = {
-									i(95343), 	-- Treasures of the Thunder King
-									i(95803),	-- Shan-Dun, Breaker of Hope
-									i(95809),	-- Uroe, Harbinger of Terror
-									i(95815),	-- Torall, Rod of the Shattered Throne
-									i(95810),	-- Ultimate Protection of the Emperor
-									i(95818),	-- Lei Shen's Orb of Command
-									i(95806),	-- Doomed Crown of Lei Shen
-									i(95816),	-- Soul Prism of Lei Shen
-									i(95804),	-- Fusion Slasher Chestguard
-									i(95821),	-- Lei Shen's Grounded Carapace
-									i(95813),	-- Gloves of the Maimed Vizier
-									i(95819),	-- Grips of Slicing Electricity
-									i(95805),	-- Conduit-Breaker Chain Leggings
-									i(95820),	-- Leggings of the Violent Gale
-									i(95807),	-- Legplates of the Lightning Throne
-									i(95808),	-- Legplates of Whipping Ionization
-									i(95812),	-- Legwraps of Cardinality
-									i(95817),	-- Lightning-Imbued Chalice
-									i(95802),	-- Rune of Re-Origination
-									i(95811),	-- Soul Barrier
-									i(95814),	-- Unerring Vision of Lei Shen
-								},
-							})),
+							["crs"] = {
+								80633,	-- Lorewalker Han <Raid Finder Storyteller>
+							},
+							["groups"] = {
+								cr(68078, e(817, {	-- Iron Qon
+									["groups"] = {
+										i(95956, {	-- Shoulders of the Crackling Conqueror
+											i(95919),	-- Lightning Emperor's Mantle
+											i(95914),	-- Lightning Emperor's Pauldrons
+											i(95924),	-- Lightning Emperor's Shoulderguards
+											i(95929),	-- Mantle of the Exorcist
+											i(95934),	-- Shoulderguards of the Exorcist
+											i(95985),	-- Mantle of the Thousandfold Hells
+										}),
+										i(95957, {	-- Shoulders of the Crackling Protector
+											i(95886),	-- Saurok Stalker's Spaulders
+											i(95904),	-- Fire-Charm Mantle
+											i(95909),	-- Fire-Charm Shoulderguards
+											i(95899),	-- Fire-Charm Spaulders
+											i(95944),	-- Mantle of the Witch Doctor
+											i(95954),	-- Shoulderwraps of the Witch Doctor
+											i(95949),	-- Spaulders of the Witch Doctor
+											i(95990),	-- Pauldrons of the Last Mogu
+											i(95995),	-- Shoulderguards of the Last Mogu
+										}),
+										i(95955, {	-- Shoulders of the Crackling Vanquisher
+											i(95829),	-- Pauldrons of the All-Consuming Maw
+											i(95834),	-- Shoulderguards of the All-Consuming Maw
+											i(95844),	-- Mantle of the Haunted Forest
+											i(95854),	-- Shoulderguards of the Haunted Forest
+											i(95849),	-- Shoulderwraps of the Haunted Forest
+											i(95839),	-- Spaulders of the Haunted Forest
+											i(95894),	-- Mantle of the Chromatic Hydra
+											i(95939),	-- Nine-Tailed Spaulders
+										}),
+										i(95343), 	-- Treasures of the Thunder King
+										i(95780),	-- Iron Qon's Boot Knife
+										i(95790),	-- Qon's Flaming Scimitar
+										i(95781),	-- Voice of the Quilen
+										i(95786),	-- Orb of Arcing Lightning
+										i(95788),	-- Ro'shak's Molten Chain
+										i(95789),	-- Rein-Binder's Fists
+										i(95782),	-- Quet'zal's Crackling Cord
+										i(95783),	-- Saddle-Scarred Leggings
+										i(95784),	-- Dam'ren's Frozen Footguards
+										i(95787),	-- Spurs of the Storm Cavalry
+										i(95785),	-- Ro'shak's Remembrance
+									},
+									["crs"] = {
+										68081, -- Dam'ren <The Frozen Sage>
+										68078, -- Iron Qon <Mastern of Quilen>
+										68080, -- Quet'zal <The Stormcaller>
+										68079, -- Ro'shak <The Molten Flare>
+									},
+								})),
+								cr(68905, e(829, {	-- Twin Consorts
+									["groups"] = {
+										i(95880, {	-- Helm of the Crackling Conqueror
+											i(95922),	-- Lightning Emperor's Faceguard
+											i(95917),	-- Lightning Emperor's Headguard
+											i(95912),	-- Lightning Emperor's Helmet
+											i(95926),	-- Cowl of the Exorcist
+											i(95931),	-- Hood of the Exorcist
+											i(95982),	-- Hood of the Thousandfold Hells
+										}),
+										i(95881, {	-- Helm of the Crackling Protector
+											i(95884),	-- Saurok Stalker's Headguard
+											i(95907),	-- Fire-Charm Crown
+											i(95897),	-- Fire-Charm Headpiece
+											i(95901),	-- Fire-Charm Helm
+											i(95942),	-- Faceguard of the Witch Doctor
+											i(95952),	-- Headpiece of the Witch Doctor
+											i(95947),	-- Helmet of the Witch Doctor
+											i(95993),	-- Faceguard of the Last Mogu
+											i(95986),	-- Helmet of the Last Mogu
+										}),
+										i(95879, {	-- Helm of the Crackling Vanquisher
+											i(95832),	-- Faceguard of the All-Consuming Maw
+											i(95827),	-- Helmet of the All-Consuming Maw
+											i(95846),	-- Cover of the Haunted Forest
+											i(95852),	-- Headguard of the Haunted Forest
+											i(95837),	-- Headpiece of the Haunted Forest
+											i(95841),	-- Helm of the Haunted Forest
+											i(95891),	-- Hood of the Chromatic Hydra
+											i(95937),	-- Nine-Tailed Helmet
+										}),
+										i(95343), 	-- Treasures of the Thunder King
+										i(95795),	-- Suen-Wo, Spire of the Falling Sun
+										i(95791),	-- Wu-Lai, Bladed Fan of the Consorts
+										i(95794),	-- Shield of Twinned Despair
+										i(95800),	-- Moonjade Necklace
+										i(95793),	-- Passionfire Choker
+										i(95792),	-- Robes of the Moon Lotus
+										i(95796),	-- Bracers of the Midnight Comet
+										i(95801),	-- Fingers of the Night
+										i(95797),	-- Girdle of Night and Day
+										i(95798),	-- Tidal Force Treads
+										i(95799),	-- Gaze of the Twins
+									},
+									["crs"] = {
+										68904, -- Suen <Mistress of Anger>
+										68905, -- Lu'lin <Mistress of Solitude>
+									},
+								})),
+								cr(68397, e(832, {	-- Lei Shen
+									["groups"] = {
+										i(95343), 	-- Treasures of the Thunder King
+										i(95803),	-- Shan-Dun, Breaker of Hope
+										i(95809),	-- Uroe, Harbinger of Terror
+										i(95815),	-- Torall, Rod of the Shattered Throne
+										i(95810),	-- Ultimate Protection of the Emperor
+										i(95818),	-- Lei Shen's Orb of Command
+										i(95806),	-- Doomed Crown of Lei Shen
+										i(95816),	-- Soul Prism of Lei Shen
+										i(95804),	-- Fusion Slasher Chestguard
+										i(95821),	-- Lei Shen's Grounded Carapace
+										i(95813),	-- Gloves of the Maimed Vizier
+										i(95819),	-- Grips of Slicing Electricity
+										i(95805),	-- Conduit-Breaker Chain Leggings
+										i(95820),	-- Leggings of the Violent Gale
+										i(95807),	-- Legplates of the Lightning Throne
+										i(95808),	-- Legplates of Whipping Ionization
+										i(95812),	-- Legwraps of Cardinality
+										i(95817),	-- Lightning-Imbued Chalice
+										i(95802),	-- Rune of Re-Origination
+										i(95811),	-- Soul Barrier
+										i(95814),	-- Unerring Vision of Lei Shen
+									},
+								})),
+							},
 						}),
 					}),
 					d(1, {		-- Normal

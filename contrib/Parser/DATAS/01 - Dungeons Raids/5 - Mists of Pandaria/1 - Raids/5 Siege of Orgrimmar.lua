@@ -146,447 +146,470 @@ _.Instances =
 								}),
 							}),
 							ach(8458, {	-- Vale of Eternal Sorrows
-								cr(71543, e(852, {	-- Immerseus
-									i(110784),	-- Trident of Corrupted Waters
-									i(110785),	-- Encapsulated Essence of Immerseus
-									i(112382),	-- Hood of Blackened Tears
-									i(112424),	-- Hood of Swirling Senses
-									i(110761),	-- Immerseus' Crystalline Eye
-									i(112423),	-- Ichor-Dripping Shoulderpads
-									i(112421),	-- Pauldrons of Violent Eruption
-									i(112425),	-- Cloak of Misguided Power
-									i(112417),	-- Chestplate of Congealed Corrosion
-									i(112429),	-- Bracers of Purified Spirit
-									i(112420),	-- Bracers of Sordid Sleep
-									i(112416),	-- Bubble-Burst Bracers
-									i(112422),	-- Bolt-Burster Grips
-									i(112418),	-- Corruption-Rotted Gauntlets
-									i(112445),	-- Soul-Soaked Gloves
-									i(112447),	-- Greatbelt of Living Waters
-									i(112383),	-- Puddle Punishers
-									i(112428),	-- Salt Water Sandals
-									i(112419),	-- Treads of Unchained Hate
-									i(112448),	-- Waterwalker Greatboots
-									i(112427),	-- Seal of Eternal Sorrow
-									i(112426),	-- Purified Bindings of Immerseus
-								})),
-								cr(71475, e(849, {	-- The Fallen Protectors (Rook Stonetoe)
-									i(112477),	-- Softfoot's Last Resort
-									i(112478),	-- Death Lotus Crossbow
-									i(112491),	-- Purehearted Cricket Cage
-									i(112496),	-- Gaze of Echoing Despair
-									i(112481),	-- Darkfallen Shoulderplates
-									i(112494),	-- Shoulderguards of Dark Meditations
-									i(112488),	-- Shoulderpads of Dou Dou Chong
-									i(112492),	-- Shoulders of the Roiling Inferno
-									i(112485),	-- Gloomwrap Greatcloak
-									i(112487),	-- Robes of the Tendered Heart
-									i(112489),	-- Lifebane Bracers
-									i(112495),	-- Grips of the Fallen Council
-									i(112480),	-- Grips of Unending Anguish
-									i(112483),	-- Shockstriker Gauntlets
-									i(112482),	-- Poisonbinder Girth
-									i(112493),	-- Sabatons of Defilement
-									i(112486),	-- Sha-Seared Sandals
-									i(112479),	-- Stonetoe's Tormented Treads
-									i(112490),	-- Petrified Pennyroyal Ring
-									i(112484),	-- Sorrowpath Signet
-									i(112476),	-- Rook's Unlucky Talisman
-								})),
-								cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
-									["groups"] = {
-										i(112547),	-- Norushen's Shortblade
-										i(112546),	-- Xifeng, Longblade of the Titanic Guardian
-										i(112560),	-- Norushen's Enigmatic Barrier
-										i(112552),	-- Rage-Blind Greathelm
-										i(112559),	-- Untainted Guardian's Chain
-										i(112550),	-- Quarantine Shoulderguards
-										i(112558),	-- Rime-Rift Shoulders
-										i(112554),	-- Drape of the Despairing Pit
-										i(112549),	-- Robes of the Blackened Watcher
-										i(112545),	-- Bracers of Blind Hatred
-										i(112555),	-- Bracers of Broken Causation
-										i(112563),	-- Bracers of Final Serenity
-										i(112565),	-- Wristplates of Broken Doubt
-										i(112556),	-- Blight Hurlers
-										i(112562),	-- Confident Grips
-										i(112548),	-- Gloves of the Golden Protector
-										i(112557),	-- Sash of the Last Guardian
-										i(112551),	-- Leggings of Unabashed Anger
-										i(112564),	-- Shadow-Binder's Kilt
-										i(112561),	-- Boots of Broken Reliance
-										i(112553),	-- Reality Ripper Ring
-										i(112503),	-- Fusion-Fire Core
-									},
-									["creatureID"] = 72276,
-								})),
-								cr(71734, e(867, {	-- Sha of Pride
-									i( 99678, {	-- Chest of the Cursed Conqueror
-										i(99052),	-- Battleplate of Winged Triumph
-										i(99003),	-- Breastplate of Winged Triumph
-										i(99031),	-- Chestguard of Winged Triumph
-										i(99004),	-- Raiment of the Ternion Glory
-										i(99017),	-- Robes of the Ternion Glory
-										i(99056),	-- Robes of the Horned Nightmare
-									}),
-									i( 99679, {	-- Chest of the Cursed Protector
-										i(99085),	-- Tunic of the Unblinking Vigil
-										i(99063),	-- Chestguard of Seven Sacred Seals
-										i(99071),	-- Tunic of Seven Sacred Seals
-										i(99061),	-- Vest of Seven Sacred Seals
-										i(98992),	-- Cuirass of Celestial Harmony
-										i(99087),	-- Hauberk of Celestial Harmony
-										i(99011),	-- Tunic of Celestial Harmony
-										i(99047),	-- Battleplate of the Prehistoric Marauder
-										i(99037),	-- Chestguard of the Prehistoric Marauder
-									}),
-									i( 99677, {	-- Chest of the Cursed Vanquisher
-										i(99066),	-- Breastplate of Cyclopean Dread
-										i(99060),	-- Chestguard of Cyclopean Dread
-										i(99041),	-- Raiment of the Shattered Vale
-										i(99015),	-- Robes of the Shattered Vale
-										i(98999),	-- Tunic of the Shattered Vale
-										i(98997),	-- Vestment of the Shattered Vale
-										i(99078),	-- Chronomancer Robes
-										i(99006),	-- Tunic of the Barbed Assassin
-									}),
-									i(104162),	-- Droplet of Y'Shaarj (PET!)
-									i(104163),	-- Gooey Sha-ling (PET!)
-									i(112951),	-- Gaze of Arrogance
-									i(112949),	-- Greatsword of Pride's Fall
-									i(112950),	-- Shield of Mockery
-									i(112702),	-- Crown of Boastful Words
-									i(112952),	-- Self-Reflecting Mask
-									i(112955),	-- Choker of the Final Word
-									i(112954),	-- Necklace of Fading Light
-									i(112953),	-- Greaves of Sublime Superiority
-									i(112947),	-- Assurance of Consequence
-									i(112948),	-- Prismatic Prison of Pride
-								})),
+								["crs"] = {
+									80633,	-- Lorewalker Han <Raid Finder Storyteller>
+								},
+								["groups"] = {
+									cr(71543, e(852, {	-- Immerseus
+										i(110784),	-- Trident of Corrupted Waters
+										i(110785),	-- Encapsulated Essence of Immerseus
+										i(112382),	-- Hood of Blackened Tears
+										i(112424),	-- Hood of Swirling Senses
+										i(110761),	-- Immerseus' Crystalline Eye
+										i(112423),	-- Ichor-Dripping Shoulderpads
+										i(112421),	-- Pauldrons of Violent Eruption
+										i(112425),	-- Cloak of Misguided Power
+										i(112417),	-- Chestplate of Congealed Corrosion
+										i(112429),	-- Bracers of Purified Spirit
+										i(112420),	-- Bracers of Sordid Sleep
+										i(112416),	-- Bubble-Burst Bracers
+										i(112422),	-- Bolt-Burster Grips
+										i(112418),	-- Corruption-Rotted Gauntlets
+										i(112445),	-- Soul-Soaked Gloves
+										i(112447),	-- Greatbelt of Living Waters
+										i(112383),	-- Puddle Punishers
+										i(112428),	-- Salt Water Sandals
+										i(112419),	-- Treads of Unchained Hate
+										i(112448),	-- Waterwalker Greatboots
+										i(112427),	-- Seal of Eternal Sorrow
+										i(112426),	-- Purified Bindings of Immerseus
+									})),
+									cr(71475, e(849, {	-- The Fallen Protectors (Rook Stonetoe)
+										i(112477),	-- Softfoot's Last Resort
+										i(112478),	-- Death Lotus Crossbow
+										i(112491),	-- Purehearted Cricket Cage
+										i(112496),	-- Gaze of Echoing Despair
+										i(112481),	-- Darkfallen Shoulderplates
+										i(112494),	-- Shoulderguards of Dark Meditations
+										i(112488),	-- Shoulderpads of Dou Dou Chong
+										i(112492),	-- Shoulders of the Roiling Inferno
+										i(112485),	-- Gloomwrap Greatcloak
+										i(112487),	-- Robes of the Tendered Heart
+										i(112489),	-- Lifebane Bracers
+										i(112495),	-- Grips of the Fallen Council
+										i(112480),	-- Grips of Unending Anguish
+										i(112483),	-- Shockstriker Gauntlets
+										i(112482),	-- Poisonbinder Girth
+										i(112493),	-- Sabatons of Defilement
+										i(112486),	-- Sha-Seared Sandals
+										i(112479),	-- Stonetoe's Tormented Treads
+										i(112490),	-- Petrified Pennyroyal Ring
+										i(112484),	-- Sorrowpath Signet
+										i(112476),	-- Rook's Unlucky Talisman
+									})),
+									cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
+										["groups"] = {
+											i(112547),	-- Norushen's Shortblade
+											i(112546),	-- Xifeng, Longblade of the Titanic Guardian
+											i(112560),	-- Norushen's Enigmatic Barrier
+											i(112552),	-- Rage-Blind Greathelm
+											i(112559),	-- Untainted Guardian's Chain
+											i(112550),	-- Quarantine Shoulderguards
+											i(112558),	-- Rime-Rift Shoulders
+											i(112554),	-- Drape of the Despairing Pit
+											i(112549),	-- Robes of the Blackened Watcher
+											i(112545),	-- Bracers of Blind Hatred
+											i(112555),	-- Bracers of Broken Causation
+											i(112563),	-- Bracers of Final Serenity
+											i(112565),	-- Wristplates of Broken Doubt
+											i(112556),	-- Blight Hurlers
+											i(112562),	-- Confident Grips
+											i(112548),	-- Gloves of the Golden Protector
+											i(112557),	-- Sash of the Last Guardian
+											i(112551),	-- Leggings of Unabashed Anger
+											i(112564),	-- Shadow-Binder's Kilt
+											i(112561),	-- Boots of Broken Reliance
+											i(112553),	-- Reality Ripper Ring
+											i(112503),	-- Fusion-Fire Core
+										},
+										["creatureID"] = 72276,
+									})),
+									cr(71734, e(867, {	-- Sha of Pride
+										i( 99678, {	-- Chest of the Cursed Conqueror
+											i(99052),	-- Battleplate of Winged Triumph
+											i(99003),	-- Breastplate of Winged Triumph
+											i(99031),	-- Chestguard of Winged Triumph
+											i(99004),	-- Raiment of the Ternion Glory
+											i(99017),	-- Robes of the Ternion Glory
+											i(99056),	-- Robes of the Horned Nightmare
+										}),
+										i( 99679, {	-- Chest of the Cursed Protector
+											i(99085),	-- Tunic of the Unblinking Vigil
+											i(99063),	-- Chestguard of Seven Sacred Seals
+											i(99071),	-- Tunic of Seven Sacred Seals
+											i(99061),	-- Vest of Seven Sacred Seals
+											i(98992),	-- Cuirass of Celestial Harmony
+											i(99087),	-- Hauberk of Celestial Harmony
+											i(99011),	-- Tunic of Celestial Harmony
+											i(99047),	-- Battleplate of the Prehistoric Marauder
+											i(99037),	-- Chestguard of the Prehistoric Marauder
+										}),
+										i( 99677, {	-- Chest of the Cursed Vanquisher
+											i(99066),	-- Breastplate of Cyclopean Dread
+											i(99060),	-- Chestguard of Cyclopean Dread
+											i(99041),	-- Raiment of the Shattered Vale
+											i(99015),	-- Robes of the Shattered Vale
+											i(98999),	-- Tunic of the Shattered Vale
+											i(98997),	-- Vestment of the Shattered Vale
+											i(99078),	-- Chronomancer Robes
+											i(99006),	-- Tunic of the Barbed Assassin
+										}),
+										i(104162),	-- Droplet of Y'Shaarj (PET!)
+										i(104163),	-- Gooey Sha-ling (PET!)
+										i(112951),	-- Gaze of Arrogance
+										i(112949),	-- Greatsword of Pride's Fall
+										i(112950),	-- Shield of Mockery
+										i(112702),	-- Crown of Boastful Words
+										i(112952),	-- Self-Reflecting Mask
+										i(112955),	-- Choker of the Final Word
+										i(112954),	-- Necklace of Fading Light
+										i(112953),	-- Greaves of Sublime Superiority
+										i(112947),	-- Assurance of Consequence
+										i(112948),	-- Prismatic Prison of Pride
+									})),
+									
+								},
 							}),
 							ach(8459, {	-- Gates of Retribution
-								cr(72249, e(881, {	-- Galakras
-									ig(21525),	-- Green Winter Hat
-									i(112723),	-- Drakebinder Greatstaff
-									i(112710),	-- Dagryn's Discarded Longbow
-									i(112717),	-- Flameslinger's Fiery Cowl
-									i(112713),	-- Thranok's Shattering Helm
-									i(112705),	-- Kruguk's Rigid Shoulderplates
-									i(112719),	-- Shoulderpads of Pulsing Protection
-									i(112704),	-- Arcsmasher Bracers
-									i(112712),	-- Dagryn's Fuselight Bracers
-									i(112716),	-- Scalebone Bracers
-									i(112727),	-- Smoldering Drakescale Bracers
-									i(112726),	-- Grips of Tidal Force
-									i(112707),	-- Korgra's Venom-Soaked Gauntlets
-									i(112711),	-- Cannoneer's Multipocket Gunbelt
-									i(112725),	-- Dragonmaw Emergency Strap
-									i(112728),	-- Windfire Legplates
-									i(112715),	-- Bone-Inlaid Sandals
-									i(112718),	-- Skydancer Boots
-									i(112706),	-- Unrepentant Heels
-									i(112721),	-- Extinguished Ember of Galakras
-									i(112714),	-- Galakrond Control Band
-									i(112709),	-- Swift Serpent Signet
-									i(112703),	-- Evil Eye of Galakras
-								})),
-								cr(71466, e(864, {	-- Iron Juggernaut
-									i(112736),	-- Seismic Bore
-									i(112748),	-- Juggernaut's Power Core
-									i(112742),	-- Juggernaut's Ignition Keys
-									i(112740),	-- Ricocheting Shoulderguards
-									i(112741),	-- Earthbreaker's Steaming Chestplate
-									i(112746),	-- Shock Pulse Robes
-									i(112745),	-- Bracers of the Broken Fault
-									i(112749),	-- Castlebreaker Bracers
-									i(112751),	-- Cavemaker Wristguards
-									i(112739),	-- Laser Burn Bracers
-									i(112733),	-- Wall-Borer Bracers
-									i(112946),	-- Earthripper Gloves
-									i(112734),	-- Precision Cutters
-									i(112732),	-- Tar-Coated Gauntlets
-									i(112743),	-- Belt of Ominous Trembles
-									i(112735),	-- Demolisher's Reinforced Belt
-									i(112744),	-- Leggings of Furious Flame
-									i(112752),	-- Borer Drill Boots
-									i(112731),	-- Minelayer's Padded Boots
-									i(112750),	-- Treads of Autonomic Motion
-									i(112747),	-- Laser-Slice Signet
-									i(112729),	-- Juggernaut's Focusing Crystal
-								})),
-								cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-									i(112759),	-- Haromm's Frozen Crescent
-									i(112769),	-- Kardris' Scepter
-									i(112770),	-- Darkfang Mask
-									i(112762),	-- Haromm's Horrifying Helm
-									i(112766),	-- Iron Wolf Hood
-									i(112767),	-- Ashflare Pendant
-									i(112772),	-- Shoulderguards of Foul Streams
-									i(112774),	-- Shoulderplates of Gushing Geysers
-									i(112764),	-- Poisonmist Nightcloak
-									i(112755),	-- Breastplate of Shamanic Mirrors
-									i(112773),	-- Shackles of Stinking Slime
-									i(112763),	-- Ashen Wall Girdle
-									i(112771),	-- Belt of the Iron Prison
-									i(112760),	-- Damron's Belt of Darkness
-									i(112761),	-- Riou's Vigilant Leggings
-									i(112765),	-- Toxic Tornado Treads
-									i(112757),	-- Wolf-Rider Spurs
-									i(112756),	-- Bloodclaw Band
-									i(112758),	-- Ring of the Iron Tomb
-									i(112754),	-- Haromm's Talisman
-									i(112768),	-- Kardris' Toxic Totem
-								})),
-								cr(71515, e(850, {	-- General Nazgrim
-									i(99681, {	-- Gauntlets of the Cursed Conqueror
-										i(99002),	-- Gauntlets of Winged Triumph
-										i(98982),	-- Gloves of Winged Triumph
-										i(99028),	-- Handguards of Winged Triumph
-										i(99019),	-- Gloves of the Ternion Glory
-										i(99023),	-- Handwraps of the Ternion Glory
-										i(99053),	-- Gloves of the Horned Nightmare
-									}),
-									i(99667, {	-- Gauntlets of the Cursed Protector
-										i(99086),	-- Gloves of the Unblinking Vigil
-										i(99064),	-- Gauntlets of Seven Sacred Seals
-										i(99072),	-- Grips of Seven Sacred Seals
-										i(99068),	-- Handwraps of Seven Sacred Seals
-										i(99088),	-- Gloves of Celestial Harmony
-										i(98993),	-- Grips of Celestial Harmony
-										i(98988),	-- Handwraps of Celestial Harmony
-										i(99034),	-- Gauntlets of the Prehistoric Marauder
-										i(99038),	-- Handguards of the Prehistoric Marauder
-									}),
-									i(99680, {	-- Gauntlets of the Cursed Vanquisher
-										i(99067),	-- Gauntlets of Cyclopean Dread
-										i(99048),	-- Handguards of Cyclopean Dread
-										i(98994),	-- Gloves of the Shattered Vale
-										i(99042),	-- Grips of the Shattered Vale
-										i(99000),	-- Handguards of the Shattered Vale
-										i(99012),	-- Handwraps of the Shattered Vale
-										i(99083),	-- Chronomancer Gloves
-										i(99007),	-- Gloves of the Barbed Assassin
-									}),
-									ig(21524),	-- Red Winter Hat
-									i(112785),	-- Gar'tok, Strength of the Faithful
-									i(112787),	-- Arcweaver Spell Sword
-									i(112780),	-- Naz'grim's Gutripper
-									i(112781),	-- Bulwark of the Fallen General
-									i(112789),	-- Crown of Tragic Truth
-									i(112783),	-- Shoulderguards of the Righteous Stand
-									i(112790),	-- Spaulders of Kor'kron Fealty
-									i(112788),	-- Robes of the Warrior's Fall
-									i(112779),	-- Ravager's Pathwalkers
-									i(112782),	-- Sandals of Two Little Bees
-									i(112778),	-- Nazgrim's Burnished Insignia
-								})),
+								["crs"] = {
+									80633,	-- Lorewalker Han <Raid Finder Storyteller>
+								},
+								["groups"] = {
+									cr(72249, e(881, {	-- Galakras
+										ig(21525),	-- Green Winter Hat
+										i(112723),	-- Drakebinder Greatstaff
+										i(112710),	-- Dagryn's Discarded Longbow
+										i(112717),	-- Flameslinger's Fiery Cowl
+										i(112713),	-- Thranok's Shattering Helm
+										i(112705),	-- Kruguk's Rigid Shoulderplates
+										i(112719),	-- Shoulderpads of Pulsing Protection
+										i(112704),	-- Arcsmasher Bracers
+										i(112712),	-- Dagryn's Fuselight Bracers
+										i(112716),	-- Scalebone Bracers
+										i(112727),	-- Smoldering Drakescale Bracers
+										i(112726),	-- Grips of Tidal Force
+										i(112707),	-- Korgra's Venom-Soaked Gauntlets
+										i(112711),	-- Cannoneer's Multipocket Gunbelt
+										i(112725),	-- Dragonmaw Emergency Strap
+										i(112728),	-- Windfire Legplates
+										i(112715),	-- Bone-Inlaid Sandals
+										i(112718),	-- Skydancer Boots
+										i(112706),	-- Unrepentant Heels
+										i(112721),	-- Extinguished Ember of Galakras
+										i(112714),	-- Galakrond Control Band
+										i(112709),	-- Swift Serpent Signet
+										i(112703),	-- Evil Eye of Galakras
+									})),
+									cr(71466, e(864, {	-- Iron Juggernaut
+										i(112736),	-- Seismic Bore
+										i(112748),	-- Juggernaut's Power Core
+										i(112742),	-- Juggernaut's Ignition Keys
+										i(112740),	-- Ricocheting Shoulderguards
+										i(112741),	-- Earthbreaker's Steaming Chestplate
+										i(112746),	-- Shock Pulse Robes
+										i(112745),	-- Bracers of the Broken Fault
+										i(112749),	-- Castlebreaker Bracers
+										i(112751),	-- Cavemaker Wristguards
+										i(112739),	-- Laser Burn Bracers
+										i(112733),	-- Wall-Borer Bracers
+										i(112946),	-- Earthripper Gloves
+										i(112734),	-- Precision Cutters
+										i(112732),	-- Tar-Coated Gauntlets
+										i(112743),	-- Belt of Ominous Trembles
+										i(112735),	-- Demolisher's Reinforced Belt
+										i(112744),	-- Leggings of Furious Flame
+										i(112752),	-- Borer Drill Boots
+										i(112731),	-- Minelayer's Padded Boots
+										i(112750),	-- Treads of Autonomic Motion
+										i(112747),	-- Laser-Slice Signet
+										i(112729),	-- Juggernaut's Focusing Crystal
+									})),
+									cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
+										i(112759),	-- Haromm's Frozen Crescent
+										i(112769),	-- Kardris' Scepter
+										i(112770),	-- Darkfang Mask
+										i(112762),	-- Haromm's Horrifying Helm
+										i(112766),	-- Iron Wolf Hood
+										i(112767),	-- Ashflare Pendant
+										i(112772),	-- Shoulderguards of Foul Streams
+										i(112774),	-- Shoulderplates of Gushing Geysers
+										i(112764),	-- Poisonmist Nightcloak
+										i(112755),	-- Breastplate of Shamanic Mirrors
+										i(112773),	-- Shackles of Stinking Slime
+										i(112763),	-- Ashen Wall Girdle
+										i(112771),	-- Belt of the Iron Prison
+										i(112760),	-- Damron's Belt of Darkness
+										i(112761),	-- Riou's Vigilant Leggings
+										i(112765),	-- Toxic Tornado Treads
+										i(112757),	-- Wolf-Rider Spurs
+										i(112756),	-- Bloodclaw Band
+										i(112758),	-- Ring of the Iron Tomb
+										i(112754),	-- Haromm's Talisman
+										i(112768),	-- Kardris' Toxic Totem
+									})),
+									cr(71515, e(850, {	-- General Nazgrim
+										i(99681, {	-- Gauntlets of the Cursed Conqueror
+											i(99002),	-- Gauntlets of Winged Triumph
+											i(98982),	-- Gloves of Winged Triumph
+											i(99028),	-- Handguards of Winged Triumph
+											i(99019),	-- Gloves of the Ternion Glory
+											i(99023),	-- Handwraps of the Ternion Glory
+											i(99053),	-- Gloves of the Horned Nightmare
+										}),
+										i(99667, {	-- Gauntlets of the Cursed Protector
+											i(99086),	-- Gloves of the Unblinking Vigil
+											i(99064),	-- Gauntlets of Seven Sacred Seals
+											i(99072),	-- Grips of Seven Sacred Seals
+											i(99068),	-- Handwraps of Seven Sacred Seals
+											i(99088),	-- Gloves of Celestial Harmony
+											i(98993),	-- Grips of Celestial Harmony
+											i(98988),	-- Handwraps of Celestial Harmony
+											i(99034),	-- Gauntlets of the Prehistoric Marauder
+											i(99038),	-- Handguards of the Prehistoric Marauder
+										}),
+										i(99680, {	-- Gauntlets of the Cursed Vanquisher
+											i(99067),	-- Gauntlets of Cyclopean Dread
+											i(99048),	-- Handguards of Cyclopean Dread
+											i(98994),	-- Gloves of the Shattered Vale
+											i(99042),	-- Grips of the Shattered Vale
+											i(99000),	-- Handguards of the Shattered Vale
+											i(99012),	-- Handwraps of the Shattered Vale
+											i(99083),	-- Chronomancer Gloves
+											i(99007),	-- Gloves of the Barbed Assassin
+										}),
+										ig(21524),	-- Red Winter Hat
+										i(112785),	-- Gar'tok, Strength of the Faithful
+										i(112787),	-- Arcweaver Spell Sword
+										i(112780),	-- Naz'grim's Gutripper
+										i(112781),	-- Bulwark of the Fallen General
+										i(112789),	-- Crown of Tragic Truth
+										i(112783),	-- Shoulderguards of the Righteous Stand
+										i(112790),	-- Spaulders of Kor'kron Fealty
+										i(112788),	-- Robes of the Warrior's Fall
+										i(112779),	-- Ravager's Pathwalkers
+										i(112782),	-- Sandals of Two Little Bees
+										i(112778),	-- Nazgrim's Burnished Insignia
+									})),
+									
+								},
 							}),
 							ach(8461, {	-- The Underhold
-								cr(71454, e(846, {	-- Malkorok
-									i(112805),	-- Halberd of Inner Shadows
-									i(112804),	-- Malkorok's Skullcleaver
-									i(112806),	-- Kor'kron Hand Cannon
-									i(112818),	-- Visage of the Monstrous
-									i(112813),	-- Hood of Perpetual Implosion
-									i(112803),	-- Malkorok's Tainted Dog Tags
-									i(112816),	-- Black-Blooded Drape
-									i(112821),	-- Ebon Blood Chestguard
-									i(112794),	-- Lazahk's Lost Shadowrap
-									i(112814),	-- Robes of Riven Dreams
-									i(112823),	-- Terrorguard Chestplate
-									i(112793),	-- Blood Rage Bracers
-									i(112820),	-- Bracers of Averted Fatality
-									i(112797),	-- Wristguards of Ruination
-									i(112808),	-- Miasmic Skullbelt
-									i(112807),	-- Legplates of Willful Doom
-									i(112819),	-- Boots of Perilous Infusion
-									i(112796),	-- Malkorok's Giant Stompers
-									i(112795),	-- Ring of Restless Energy
-									i(112817),	-- Seal of Sullen Fury
-									i(112815),	-- Frenzied Crystal of Rage
-									i(112792),	-- Vial of Living Corruption
-								})),
-								cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-									i(112835),	-- Enchanted Shao-Tien Saber
-									i(112841),	-- Immaculately Preserved Wand
-									i(112829),	-- Ancient Mogu Tower Shield
-									i(112832),	-- Helm of the Night Watchman
-									i(112839),	-- Lost Necklace of the Mogu Empress
-									i(112836),	-- Ancient Archer's Chestguard
-									i(112838),	-- Mantid Vizier's Robes
-									i(112837),	-- Avool's Ancestral Bracers
-									i(112845),	-- Bracers of the Pristine Purifier
-									i(112833),	-- Mantid Carapace Augments
-									i(112842),	-- Klaxxi Grips of Rejuvenation
-									i(112831),	-- Arrowflight Girdle
-									i(112844),	-- Chitin-Link Chain Belt
-									i(112846),	-- Plate Belt of the War-Healer
-									i(112834),	-- Untarnishable Greatbelt
-									i(112843),	-- Shado-Pan Reliquary Kilt
-									i(112847),	-- Mogu Mindbender's Greaves
-									i(112826),	-- Ominous Mogu Greatboots
-									i(112827),	-- Pandaren Roofsprinters
-									i(112828),	-- Seal of the Forgotten Kings
-									i(112825),	-- Sigil of Rampage
-								})),
-								cr(71529, e(851, {	-- Thok the Bloodthirsty
-									i(99672, {	-- Helm of the Cursed Conqueror
-										i(99029),	-- Faceguard of Winged Triumph
-										i(98979),	-- Headguard of Winged Triumph
-										i(98985),	-- Helmet of Winged Triumph
-										i(99024),	-- Cowl of the Ternion Glory
-										i(99020),	-- Hood of the Ternion Glory
-										i(99054),	-- Hood of the Horned Nightmare
-									}),
-									i(99673, {	-- Helm of the Cursed Protector
-										i(99080),	-- Headguard of the Unblinking Vigil
-										i(99065),	-- Crown of Seven Sacred Seals
-										i(99073),	-- Headpiece of Seven Sacred Seals
-										i(99069),	-- Helm of Seven Sacred Seals
-										i(99089),	-- Faceguard of Celestial Harmony
-										i(98989),	-- Headpiece of Celestial Harmony
-										i(98983),	-- Helmet of Celestial Harmony
-										i(99032),	-- Faceguard of the Prehistoric Marauder
-										i(99046),	-- Helmet of the Prehistoric Marauder
-									}),
-									i(99671, {	-- Helm of the Cursed Vanquisher
-										i(99049),	-- Faceguard of Cyclopean Dread
-										i(99057),	-- Helmet of Cyclopean Dread
-										i(98995),	-- Cover of the Shattered Vale
-										i(99001),	-- Headguard of the Shattered Vale
-										i(99043),	-- Headpiece of the Shattered Vale
-										i(99013),	-- Helm of the Shattered Vale
-										i(99084),	-- Chronomancer Hood
-										i(99008),	-- Helmet of the Barbed Assassin
-									}),
-									i(112862),	-- Britomart's Jagged Pike
-									i(112853),	-- Hvitserk's Formidable Shanker
-									i(112861),	-- Festering Primordial Globule
-									i(112851),	-- Gleaming Eye of the Devilsaur
-									i(112866),	-- Akolik's Acid-Soaked Robes
-									i(112856),	-- Icy Blood Chestplate
-									i(112854),	-- Montak's Grips of Scorching Breath
-									i(112855),	-- Devilfang Band
-									i(112852),	-- Signet of the Dinomancers
-									i(112849),	-- Thok's Acid-Grooved Tooth
-									i(112850),	-- Thok's Tail Tip
-								})),
+								["crs"] = {
+									80633,	-- Lorewalker Han <Raid Finder Storyteller>
+								},
+								["groups"] = {
+									cr(71454, e(846, {	-- Malkorok
+										i(112805),	-- Halberd of Inner Shadows
+										i(112804),	-- Malkorok's Skullcleaver
+										i(112806),	-- Kor'kron Hand Cannon
+										i(112818),	-- Visage of the Monstrous
+										i(112813),	-- Hood of Perpetual Implosion
+										i(112803),	-- Malkorok's Tainted Dog Tags
+										i(112816),	-- Black-Blooded Drape
+										i(112821),	-- Ebon Blood Chestguard
+										i(112794),	-- Lazahk's Lost Shadowrap
+										i(112814),	-- Robes of Riven Dreams
+										i(112823),	-- Terrorguard Chestplate
+										i(112793),	-- Blood Rage Bracers
+										i(112820),	-- Bracers of Averted Fatality
+										i(112797),	-- Wristguards of Ruination
+										i(112808),	-- Miasmic Skullbelt
+										i(112807),	-- Legplates of Willful Doom
+										i(112819),	-- Boots of Perilous Infusion
+										i(112796),	-- Malkorok's Giant Stompers
+										i(112795),	-- Ring of Restless Energy
+										i(112817),	-- Seal of Sullen Fury
+										i(112815),	-- Frenzied Crystal of Rage
+										i(112792),	-- Vial of Living Corruption
+									})),
+									cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
+										i(112835),	-- Enchanted Shao-Tien Saber
+										i(112841),	-- Immaculately Preserved Wand
+										i(112829),	-- Ancient Mogu Tower Shield
+										i(112832),	-- Helm of the Night Watchman
+										i(112839),	-- Lost Necklace of the Mogu Empress
+										i(112836),	-- Ancient Archer's Chestguard
+										i(112838),	-- Mantid Vizier's Robes
+										i(112837),	-- Avool's Ancestral Bracers
+										i(112845),	-- Bracers of the Pristine Purifier
+										i(112833),	-- Mantid Carapace Augments
+										i(112842),	-- Klaxxi Grips of Rejuvenation
+										i(112831),	-- Arrowflight Girdle
+										i(112844),	-- Chitin-Link Chain Belt
+										i(112846),	-- Plate Belt of the War-Healer
+										i(112834),	-- Untarnishable Greatbelt
+										i(112843),	-- Shado-Pan Reliquary Kilt
+										i(112847),	-- Mogu Mindbender's Greaves
+										i(112826),	-- Ominous Mogu Greatboots
+										i(112827),	-- Pandaren Roofsprinters
+										i(112828),	-- Seal of the Forgotten Kings
+										i(112825),	-- Sigil of Rampage
+									})),
+									cr(71529, e(851, {	-- Thok the Bloodthirsty
+										i(99672, {	-- Helm of the Cursed Conqueror
+											i(99029),	-- Faceguard of Winged Triumph
+											i(98979),	-- Headguard of Winged Triumph
+											i(98985),	-- Helmet of Winged Triumph
+											i(99024),	-- Cowl of the Ternion Glory
+											i(99020),	-- Hood of the Ternion Glory
+											i(99054),	-- Hood of the Horned Nightmare
+										}),
+										i(99673, {	-- Helm of the Cursed Protector
+											i(99080),	-- Headguard of the Unblinking Vigil
+											i(99065),	-- Crown of Seven Sacred Seals
+											i(99073),	-- Headpiece of Seven Sacred Seals
+											i(99069),	-- Helm of Seven Sacred Seals
+											i(99089),	-- Faceguard of Celestial Harmony
+											i(98989),	-- Headpiece of Celestial Harmony
+											i(98983),	-- Helmet of Celestial Harmony
+											i(99032),	-- Faceguard of the Prehistoric Marauder
+											i(99046),	-- Helmet of the Prehistoric Marauder
+										}),
+										i(99671, {	-- Helm of the Cursed Vanquisher
+											i(99049),	-- Faceguard of Cyclopean Dread
+											i(99057),	-- Helmet of Cyclopean Dread
+											i(98995),	-- Cover of the Shattered Vale
+											i(99001),	-- Headguard of the Shattered Vale
+											i(99043),	-- Headpiece of the Shattered Vale
+											i(99013),	-- Helm of the Shattered Vale
+											i(99084),	-- Chronomancer Hood
+											i(99008),	-- Helmet of the Barbed Assassin
+										}),
+										i(112862),	-- Britomart's Jagged Pike
+										i(112853),	-- Hvitserk's Formidable Shanker
+										i(112861),	-- Festering Primordial Globule
+										i(112851),	-- Gleaming Eye of the Devilsaur
+										i(112866),	-- Akolik's Acid-Soaked Robes
+										i(112856),	-- Icy Blood Chestplate
+										i(112854),	-- Montak's Grips of Scorching Breath
+										i(112855),	-- Devilfang Band
+										i(112852),	-- Signet of the Dinomancers
+										i(112849),	-- Thok's Acid-Grooved Tooth
+										i(112850),	-- Thok's Tail Tip
+									})),
+									
+								},
 							}),
 							ach(8462, {	-- Downfall
-								cr(71504, e(865, {	-- Siegecrafter Blackfuse
-									i(104158),	-- Blackfuse Bombling (PET!)
-									i(99669, {	-- Shoulders of the Cursed Conqueror
-										i(99076),	-- Mantle of Winged Triumph
-										i(98987),	-- Pauldrons of Winged Triumph
-										i(99027),	-- Shoulderguards of Winged Triumph
-										i(99018),	-- Mantle of the Ternion Glory
-										i(99005),	-- Shoulderguards of the Ternion Glory
-										i(99045),	-- Mantle of the Horned Nightmare
-									}),
-									i(99670, {	-- Shoulders of the Cursed Protector
-										i(99082),	-- Spaulders of the Unblinking Vigil
-										i(99062),	-- Mantle of Seven Sacred Seals
-										i(99051),	-- Shoulderguards of Seven Sacred Seals
-										i(99075),	-- Spaulders of Seven Sacred Seals
-										i(99091),	-- Mantle of Celestial Harmony
-										i(98991),	-- Shoulderwraps of Celestial Harmony
-										i(98977),	-- Spaulders of Celestial Harmony
-										i(99036),	-- Pauldrons of the Prehistoric Marauder
-										i(99030),	-- Shoulderguards of the Prehistoric Marauder
-									}),
-									i(99668, {	-- Shoulders of the Cursed Vanquisher
-										i(99059),	-- Pauldrons of Cyclopean Dread
-										i(99040),	-- Shoulderguards of Cyclopean Dread
-										i(99016),	-- Mantle of the Shattered Vale
-										i(98978),	-- Shoulderguards of the Shattered Vale
-										i(98998),	-- Shoulderwraps of the Shattered Vale
-										i(99022),	-- Spaulders of the Shattered Vale
-										i(99079),	-- Chronomancer Mantle
-										i(99010),	-- Spaulders of the Barbed Assassin
-									}),
-									i(112892),	-- Lever of the Megantholithic Apparatus
-									i(112897),	-- Siegecrafter's Forge Hammer
-									i(112894),	-- Blackfuse's Blasting Cord
-									i(112896),	-- Bomber's Blackened Wristwatch
-									i(112895),	-- Bracers of Infinite Pipes
-									i(112882),	-- Calixian Bladebreakers
-									i(112898),	-- Fusespark Gloves
-									i(112890),	-- Powder-Stained Totemic Treads
-									i(112883),	-- Asgorathian Blood Seal
-									i(112877),	-- Dysmorphic Samophlange of Discontinuity
-									i(112879),	-- Ticking Ebon Detonator
-								})),
-								cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-									["groups"] = {
-										i(104165),	-- Kovok (PET!)
-										i( 99675, {	-- Leggings of the Cursed Conqueror
-											i(98980),	-- Greaves of Winged Triumph
-											i(99026),	-- Legguards of Winged Triumph
-											i(98986),	-- Legplates of Winged Triumph
-											i(99021),	-- Leggings of the Ternion Glory
-											i(99025),	-- Legwraps of the Ternion Glory
-											i(99055),	-- Leggings of the Horned Nightmare
+								["crs"] = {
+									80633,	-- Lorewalker Han <Raid Finder Storyteller>
+								},
+								["groups"] = {
+									cr(71504, e(865, {	-- Siegecrafter Blackfuse
+										i(104158),	-- Blackfuse Bombling (PET!)
+										i(99669, {	-- Shoulders of the Cursed Conqueror
+											i(99076),	-- Mantle of Winged Triumph
+											i(98987),	-- Pauldrons of Winged Triumph
+											i(99027),	-- Shoulderguards of Winged Triumph
+											i(99018),	-- Mantle of the Ternion Glory
+											i(99005),	-- Shoulderguards of the Ternion Glory
+											i(99045),	-- Mantle of the Horned Nightmare
 										}),
-										i( 99676, {	-- Leggings of the Cursed Protector
-											i(99081),	-- Legguards of the Unblinking Vigil
-											i(99074),	-- Leggings of Seven Sacred Seals
-											i(99050),	-- Legguards of Seven Sacred Seals
-											i(99070),	-- Legwraps of Seven Sacred Seals
-											i(99090),	-- Leggings of Celestial Harmony
-											i(98984),	-- Legguards of Celestial Harmony
-											i(98990),	-- Legwraps of Celestial Harmony
-											i(99033),	-- Legguards of the Prehistoric Marauder
-											i(99035),	-- Legplates of the Prehistoric Marauder
+										i(99670, {	-- Shoulders of the Cursed Protector
+											i(99082),	-- Spaulders of the Unblinking Vigil
+											i(99062),	-- Mantle of Seven Sacred Seals
+											i(99051),	-- Shoulderguards of Seven Sacred Seals
+											i(99075),	-- Spaulders of Seven Sacred Seals
+											i(99091),	-- Mantle of Celestial Harmony
+											i(98991),	-- Shoulderwraps of Celestial Harmony
+											i(98977),	-- Spaulders of Celestial Harmony
+											i(99036),	-- Pauldrons of the Prehistoric Marauder
+											i(99030),	-- Shoulderguards of the Prehistoric Marauder
 										}),
-										i( 99674, {	-- Leggings of the Cursed Vanquisher
-											i(99058),	-- Greaves of Cyclopean Dread
-											i(99039),	-- Legguards of Cyclopean Dread
-											i(98981),	-- Breeches of the Shattered Vale
-											i(98996),	-- Leggings of the Shattered Vale
-											i(99044),	-- Legguards of the Shattered Vale
-											i(99014),	-- Legwraps of the Shattered Vale
-											i(99077),	-- Chronomancer Leggings
-											i(99009),	-- Legguards of the Barbed Assassin
+										i(99668, {	-- Shoulders of the Cursed Vanquisher
+											i(99059),	-- Pauldrons of Cyclopean Dread
+											i(99040),	-- Shoulderguards of Cyclopean Dread
+											i(99016),	-- Mantle of the Shattered Vale
+											i(98978),	-- Shoulderguards of the Shattered Vale
+											i(98998),	-- Shoulderwraps of the Shattered Vale
+											i(99022),	-- Spaulders of the Shattered Vale
+											i(99079),	-- Chronomancer Mantle
+											i(99010),	-- Spaulders of the Barbed Assassin
 										}),
-										i(112921),	-- Kil'ruk's Furious Blade
-										i(112920),	-- Korven's Crimson Crescent
-										i(112922),	-- Rik'kal's Bloody Scalpel
-										i(112918),	-- Hisek's Reserve Longbow
-										i(112923),	-- Amber Parasite Wraps
-										i(112919),	-- Chestguard of Toxic Injections
-										i(112914),	-- Bracers of Sonic Projection
-										i(112915),	-- Gauntlets of Insane Calculations
-										i(112916),	-- Iyyokuk's Hereditary Seal
-										i(112917),	-- Kil'ruk's Band of Ascendancy
-										i(112913),	-- Skeer's Bloodsoaked Talisman
-									},
-								})),
-								cr(71865, e(869, {	-- Garrosh Hellscream
-									i(105861),	-- Essence of the Cursed Conqueror
-									i(105860),	-- Essence of the Cursed Protector
-									i(105862),	-- Essence of the Cursed Vanquisher
-									i(112932),	-- Kor'kron Spire of Supremacy
-									i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
-									i(112939),	-- Horned Mace of the Old Ones
-									i(112940),	-- Revelations of Y'Shaarj
-									i(112943),	-- Cowl of Smoking Dreams
-									i(112937),	-- Ebon Ritual Hood
-									i(112928),	-- Greathelm of the Warchief
-									i(112926),	-- Kor'kron Elite Skullmask
-									i(112930),	-- Penetrating Gaze of Y'Shaarj
-									i(112942),	-- Hopeglow Spaulders
-									i(112945),	-- Mantle of Looming Darkness
-									i(112927),	-- Shoulderguards of Intended Power
-									i(112934),	-- Spaulders of the Fallen Warchief
-									i(112931),	-- Chestguard of Relentless Tyranny
-									i(112944),	-- Chestplate of Fallen Passion
-									i(112936),	-- Belt of the Broken Pact
-									i(112929),	-- Cord of Black Dreams
-									i(112941),	-- Seal of Karmic Return
-									i(112933),	-- Legplates of Unthinking Strife
-									i(112938),	-- Black Blood of Y'Shaarj
-									i(112924),	-- Curse of Hubris
-								})),
+										i(112892),	-- Lever of the Megantholithic Apparatus
+										i(112897),	-- Siegecrafter's Forge Hammer
+										i(112894),	-- Blackfuse's Blasting Cord
+										i(112896),	-- Bomber's Blackened Wristwatch
+										i(112895),	-- Bracers of Infinite Pipes
+										i(112882),	-- Calixian Bladebreakers
+										i(112898),	-- Fusespark Gloves
+										i(112890),	-- Powder-Stained Totemic Treads
+										i(112883),	-- Asgorathian Blood Seal
+										i(112877),	-- Dysmorphic Samophlange of Discontinuity
+										i(112879),	-- Ticking Ebon Detonator
+									})),
+									cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
+										["groups"] = {
+											i(104165),	-- Kovok (PET!)
+											i( 99675, {	-- Leggings of the Cursed Conqueror
+												i(98980),	-- Greaves of Winged Triumph
+												i(99026),	-- Legguards of Winged Triumph
+												i(98986),	-- Legplates of Winged Triumph
+												i(99021),	-- Leggings of the Ternion Glory
+												i(99025),	-- Legwraps of the Ternion Glory
+												i(99055),	-- Leggings of the Horned Nightmare
+											}),
+											i( 99676, {	-- Leggings of the Cursed Protector
+												i(99081),	-- Legguards of the Unblinking Vigil
+												i(99074),	-- Leggings of Seven Sacred Seals
+												i(99050),	-- Legguards of Seven Sacred Seals
+												i(99070),	-- Legwraps of Seven Sacred Seals
+												i(99090),	-- Leggings of Celestial Harmony
+												i(98984),	-- Legguards of Celestial Harmony
+												i(98990),	-- Legwraps of Celestial Harmony
+												i(99033),	-- Legguards of the Prehistoric Marauder
+												i(99035),	-- Legplates of the Prehistoric Marauder
+											}),
+											i( 99674, {	-- Leggings of the Cursed Vanquisher
+												i(99058),	-- Greaves of Cyclopean Dread
+												i(99039),	-- Legguards of Cyclopean Dread
+												i(98981),	-- Breeches of the Shattered Vale
+												i(98996),	-- Leggings of the Shattered Vale
+												i(99044),	-- Legguards of the Shattered Vale
+												i(99014),	-- Legwraps of the Shattered Vale
+												i(99077),	-- Chronomancer Leggings
+												i(99009),	-- Legguards of the Barbed Assassin
+											}),
+											i(112921),	-- Kil'ruk's Furious Blade
+											i(112920),	-- Korven's Crimson Crescent
+											i(112922),	-- Rik'kal's Bloody Scalpel
+											i(112918),	-- Hisek's Reserve Longbow
+											i(112923),	-- Amber Parasite Wraps
+											i(112919),	-- Chestguard of Toxic Injections
+											i(112914),	-- Bracers of Sonic Projection
+											i(112915),	-- Gauntlets of Insane Calculations
+											i(112916),	-- Iyyokuk's Hereditary Seal
+											i(112917),	-- Kil'ruk's Band of Ascendancy
+											i(112913),	-- Skeer's Bloodsoaked Talisman
+										},
+									})),
+									cr(71865, e(869, {	-- Garrosh Hellscream
+										i(105861),	-- Essence of the Cursed Conqueror
+										i(105860),	-- Essence of the Cursed Protector
+										i(105862),	-- Essence of the Cursed Vanquisher
+										i(112932),	-- Kor'kron Spire of Supremacy
+										i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
+										i(112939),	-- Horned Mace of the Old Ones
+										i(112940),	-- Revelations of Y'Shaarj
+										i(112943),	-- Cowl of Smoking Dreams
+										i(112937),	-- Ebon Ritual Hood
+										i(112928),	-- Greathelm of the Warchief
+										i(112926),	-- Kor'kron Elite Skullmask
+										i(112930),	-- Penetrating Gaze of Y'Shaarj
+										i(112942),	-- Hopeglow Spaulders
+										i(112945),	-- Mantle of Looming Darkness
+										i(112927),	-- Shoulderguards of Intended Power
+										i(112934),	-- Spaulders of the Fallen Warchief
+										i(112931),	-- Chestguard of Relentless Tyranny
+										i(112944),	-- Chestplate of Fallen Passion
+										i(112936),	-- Belt of the Broken Pact
+										i(112929),	-- Cord of Black Dreams
+										i(112941),	-- Seal of Karmic Return
+										i(112933),	-- Legplates of Unthinking Strife
+										i(112938),	-- Black Blood of Y'Shaarj
+										i(112924),	-- Curse of Hubris
+									})),
+								},
 							}),	
 						},
 					}),
