@@ -6,7 +6,7 @@ _.Zones =
 	m(101, { 	-- Outland
 		m(107, { 	-- Nagrand (Outland)
 			["groups"] = {
-				n(-4, {		-- Achievements
+				n(-4,   {	-- Achievements
 					ach(939),	-- Hills Like White Elekk
 				}),
 				n(-228, {	-- Flight Master
@@ -17,7 +17,7 @@ _.Zones =
 						["coord"] = { 54.2, 75 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  {	-- Pet Battle
 					p(635), 	-- Adder
 					p(518), 	-- Clefthoof Runt
 					p(386), 	-- Prairie Dog
@@ -26,7 +26,7 @@ _.Zones =
 					p(379), 	-- Squirrel
 					p(420), 	-- Toad
 				}),
-				n(-17, { 	-- Quests
+				n(-17,  {	-- Quests
 --[[	Achievement info for Loremaster related zone quests
 					a(ach(1192, {	-- Nagrand Slam (Alliance)
 						crit(1),		-- The Adventures of Corki
@@ -49,7 +49,88 @@ _.Zones =
 						crit(8),		-- Encountering the Ethereals
 					})),
 ]]--				
---[[				
+					faction(932, {	-- The Aldor
+						["groups"] = {
+							q(10641, {	-- Against the Legion
+								["qg"] = 18417,	-- Altruis the Sufferer
+								["sourceQuests"] = { 
+									10640,	-- Altruis (Aldor)
+									10689,	-- Altruis (Scryer)
+								},
+							}),
+							q(10668, {	-- Against the Illidari
+								["qg"] = 18417,	-- Altruis the Sufferer
+								["sourceQuests"] = { 
+									10640,	-- Altruis (Aldor)
+									10689,	-- Altruis (Scryer)
+								},
+							}),
+							q(10669, {	-- Against All Odds
+								["qg"] = 18417,	-- Altruis the Sufferer
+								["sourceQuests"] = { 
+									10640,	-- Altruis (Aldor)
+									10689,	-- Altruis (Scryer)
+								},
+							}),
+							q(10646, {	-- Illidan's Pupil
+								["qg"] = 18417,	-- Altruis
+								["sourceQuests"] = { 10641, 10668, 10669 },	-- Against the Legion, Against the Illidari, & Against All Odds
+							}),
+							qdg(q(10649, {	-- The Book of Fel Names
+								["qg"] = 18417,	-- Altruis
+								["sourceQuests"] = { 10646 },	-- Illidan's Pupil
+							})),
+							q(10650, {	-- Return to the Aldor
+								["qg"] = 18417,	-- Altruis the Sufferer
+								["sourceQuests"] = { 10649 },	-- The Book of Fel Names
+							}),
+						},
+						["collectible"] = false,
+					}),
+					faction(934,  {	-- The Scryers
+						["g"] = {
+							q(10641, {	-- Against the Legion
+								["qg"] = 18417,	-- Altruis the Sufferer
+								["coord"] = { 27.3, 43.0 },
+								["sourceQuests"] = { 
+									10640,	-- Altruis (Aldor)
+									10689,	-- Altruis (Scryer)
+								},
+							}),
+							q(10668, {	-- Against the Illidari
+								["qg"] = 18417,	-- Altruis the Sufferer
+								["coord"] = { 27.3, 43.0 },
+								["sourceQuests"] = { 
+									10640,	-- Altruis (Aldor)
+									10689,	-- Altruis (Scryer)
+								},
+							}),
+							q(10669, {	-- Against All Odds
+								["qg"] = 18417,	-- Altruis the Sufferer
+								["coord"] = { 27.3, 43.0 },
+								["sourceQuests"] = { 
+									10640,	-- Altruis (Aldor)
+									10689,	-- Altruis (Scryer)
+								},
+							}),
+							q(10646, {	-- Illidan's Pupil
+								["qg"] = 18417,	-- Altruis
+								["coord"] = { 27.3, 43.0 },
+								["sourceQuests"] = {
+									10641,	-- Against the Legion
+									10668,	-- Against the Illidari
+									10669,	-- Against All Odds
+								},
+							}),
+							qdg(q(10649, {	-- The Book of Fel Names
+								["qg"] = 18417,	-- Altruis
+								["coord"] = { 27.3, 43.0 },
+								["sourceQuests"] = { 10646 },	-- Illidan's Pupil
+							})),
+						},
+						["collectible"] = false,
+					}),
+--[[
 					q(9914),	-- A Head Full of Ivory
 					qa(  9792),	-- A Message to Telaar
 					qa( 11042),	-- A Mystifying Vision
@@ -384,38 +465,8 @@ _.Zones =
 						i(25593),	-- Windroc Greaves
 						i(25595),	-- Windroc Shroud
 					}),
-					
-					faction(932, {	-- The Aldor
-						["groups"] = {
-							q(10641, {	-- Against the Legion
-								["qg"] = 18417,	-- Altruis the Sufferer
-								["sourceQuests"] = { 10640 },	-- Altruis
-							}),
-							q(10668, {	-- Against the Illidari
-								["qg"] = 18417,	-- Altruis the Sufferer
-								["sourceQuests"] = { 10640 },	-- Altruis
-							}),
-							q(10669, {	-- Against All Odds
-								["qg"] = 18417,	-- Altruis the Sufferer
-								["sourceQuests"] = { 10640 },	-- Altruis
-							}),
-							q(10646, {	-- Illidan's Pupil
-								["qg"] = 18417,	-- Altruis
-								["sourceQuests"] = { 10641, 10668, 10669 },	-- Against the Legion, Against the Illidari, & Against All Odds
-							}),
-							qdg(q(10649, {	-- The Book of Fel Names
-								["qg"] = 18417,	-- Altruis
-								["sourceQuests"] = { 10646 },	-- Illidan's Pupil
-							})),
-							q(10650, {	-- Return to the Aldor
-								["qg"] = 18417,	-- Altruis the Sufferer
-								["sourceQuests"] = { 10649 },	-- The Book of Fel Names
-							}),
-						},
-						["collectible"] = false,
-					}),
 				}),
-				n(-16, { 	-- Rares	
+				n(-16,  {	-- Rares	
 					n(17144, { -- Goretooth
 						i(31192),	-- Crocolisk Hide Bindings
 						i(31191),	-- Crocolisk Hide Bracers
@@ -435,7 +486,7 @@ _.Zones =
 						i(31199),	-- Voidweave Cilice
 					}), 
 				}),
-				n(-2, {		-- Vendors
+				n(-2,   {	-- Vendors
 					a(n(21485, {	-- Aldraan <Blade Merchant>
 						i(24208),	-- Design: Mystic Dawnstone
 						i(30597),	-- Halaani Claymore
@@ -640,7 +691,7 @@ _.Zones =
 						i(27693),	-- Recipe: Talbuk Steak
 					}),
 				}),
-				n(0, { -- Zone Drop
+				n(0,    {	-- Zone Drop
 					["groups"] = {
 						n(18203, { -- Murkblood Raider
 							["groups"] = {

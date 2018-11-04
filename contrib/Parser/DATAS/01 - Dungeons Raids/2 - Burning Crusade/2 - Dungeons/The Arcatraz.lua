@@ -37,6 +37,15 @@ _.Instances =
 							},
 							["collectible"] = false,
 						}),
+						faction(934, {	-- The Scryers
+							["groups"] = {
+								q(10706, {	-- A Mysterious Portent
+									["qg"] = 21962,	-- Udalo
+									["sourceQuests"] = { 10705 },	-- Seer Udalo
+								}),
+							},
+							["collectible"] = false,
+						}),
 					}),
 					n(  0, {	-- Zone Drop
 						i(22556, {	-- Formula: Enchant 2H Weapon - Major Agility

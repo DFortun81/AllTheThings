@@ -7,16 +7,16 @@ _.Zones =
 		m(104, {	-- Shadowmoon Valley (Outland)
 			["groups"] = {
 				n(-228, {	-- Flight Master
-					fp(140, { -- Altar of Sha'tar, Shadowmoon Valley
+					fp(140, {	-- Altar of Sha'tar, Shadowmoon Valley
 						["coord"] = { 63.2, 30.4 },
 					}),
-					fp(159, { -- Sanctum of the Stars, Shadowmoon Valley
+					fp(159, {	-- Sanctum of the Stars, Shadowmoon Valley
 						["coord"] = { 56.2, 57.8 },
 					}),
-					fp(123, { -- Shadowmoon Village, Shadowmoon Valley
+					fp(123, {	-- Shadowmoon Village, Shadowmoon Valley
 						["coord"] = { 30.2, 29.2 },
 					}),
-					fp(124, { -- Wildhammer Stronghold, Shadowmoon Valley
+					fp(124, {	-- Wildhammer Stronghold, Shadowmoon Valley
 						["coord"] = { 37.6, 55.4 },
 					}),
 				}),
@@ -94,7 +94,10 @@ _.Zones =
 							}),
 							q(10622, {	-- Proof of Allegiance
 								["qg"] = 21826,	-- Sanoru
-								["sourceQuests"] = { 10575 },	-- The Warden's Cage
+								["sourceQuests"] = { 
+									10575,	-- The Warden's Cage (Aldor)
+									10686,	-- The Warden's Cage (Scryer)
+								},
 							}),
 							q(10628, {	-- Akama
 								["qg"] = 21826,	-- Sanoru
@@ -316,11 +319,51 @@ _.Zones =
 								["coord"] = { 56.2, 59.6 },
 								["sourceQuests"] = { 10684 },	-- Oronu the Elder
 							}),
+							q(10686, {	-- The Warden's Cage
+								["qg"] = 21955,	-- Arcanist Thelis
+								["coord"] = { 56.2, 59.6 },
+								["sourceQuests"] = { 10685 },	-- The Ashtongue Corruptors
+							}),
+							q(10622, {	-- Proof of Allegiance
+								["qg"] = 21826,	-- Sanoru
+								["coord"] = { 57.3, 49.5 },
+								["sourceQuests"] = { 
+									10575,	-- The Warden's Cage (Aldor)
+									10686,	-- The Warden's Cage (Scryer)
+								},
+							}),
+							q(10628, {	-- Akama
+								["qg"] = 21826,	-- Sanoru
+								["coord"] = { 57.3, 49.5 },
+								["sourceQuests"] = { 10622 },	-- Proof of Allegiance
+							}),
+							qdg(q(10705, {	-- Seer Udalo
+								["qg"] = 21700,	-- Akama
+								["coord"] = { 58.1, 48.1 },
+								["sourceQuests"] = { 10628 },	-- Akama
+							})),
+							q(10707, {	-- The Ata'mal Terrace -- UNTESTED AS SCRYER
+								["qg"] = 21770,	-- Akama
+								["coord"] = { 58.1, 48.1 },
+								["sourceQuests"] = { 10706 },	-- A Mysterious Portent
+							}),
+							q(10708, {	-- Akama's Promise (awarded "Akama's Promise" criteria) -- UNTESTED AS SCRYER
+								["groups"] = {
+									i(30932),	-- Akama's Sash
+									i(30999),	-- Ashtongue Blade
+									i(31000),	-- Bloodwarder's Rifle
+									i(30943),	-- Verdant Gloves
+									i(30984),	-- Spellbreaker's Buckler
+									i(31417),	-- Staff of the Ashtongue Deathsworn
+								},
+								["qg"] = 21700,	-- Akama
+								["coord"] = { 58.1, 48.1 },	-- NEEDS VERIFICATION
+								["sourceQuests"] = { 10707 },	-- The Ata'mal Terrace
+							}),
 
 
 
 							q(10691),	-- Return to the Scryers
-							q(10686),	-- The Warden's Cage
 							q(10692, {	-- Varedis Must Be Stopped
 								i(31013),	-- Ceremonial Kris
 								i(30933),	-- Hauberk of Karabor
@@ -374,6 +417,13 @@ _.Zones =
 						["sourceQuests"] = { 10514 },	-- I Was a Lot of Things...
 					}),
 					
+
+					q( 10947, {	-- An Artifact From the Past (UNTESTED, NEEDS CONFIRMATION)
+						["qg"] = 21700,	-- Akama
+						["coord"] = { 58.0, 48.2 },
+						["sourceQuests"] = { 10946 },	-- Ruse of the Ashtongue
+					}),
+
 					
 					q( 10527, {	-- Ar'tor, Son of Oronok
 						["qg"] = 21183,	-- Oronok Torn-heart
@@ -524,11 +574,12 @@ _.Zones =
 					}),
 					
 					
-					i( 30579, {	-- Illidari Bane-Shard
-						qh(10623, {	-- Illidari-Bane Shard
-							["qg"] = 21499,	-- Overseer Ripsaw
-						}),
-					}),
+					{			-- Illidari Bane-Shard
+						["qg"] = 21499,	-- Overseer Ripsaw
+						["races"] = HORDE_ONLY,
+						["itemID"] = 30579,	-- Illidari Bane-Shard
+						["questID"] = 10623,	-- Illidari Bane-Shard
+					},
 					
 					
 					q( 10782, {	-- Imbuing the Headpiece
@@ -582,6 +633,13 @@ _.Zones =
 						["sourceQuests"] = { 10481 },	-- Enraged Spirits of Air
 					}),
 					
+
+					q( 10946, {	-- Ruse of the Ashtongue - NEEDS CONFIRMATION
+						["qg"] = 21700,	-- Akama
+						["coord"] = { 58.0, 48.2 },
+						["sourceQuests"] = { 10944 },	-- The Secret Compromised
+					}),
+
 					
 					qh(10597, {	-- Setting Up the Bomb
 						["qg"] = 21359,	-- Blood Guard Gulmok
@@ -740,6 +798,13 @@ _.Zones =
 						["sourceQuests"] = { 10627 },	-- Capture the Weapons
 					}),
 					
+
+					q( 10948, {	-- The Hostage Soul (UNTESTED, NEEDS CONFIRMATION)
+						["qg"] = 21700,	-- Akama
+						["coord"] = { 58.0, 48.2 },
+						["sourceQuests"] = { 10947 },	-- An Artifact From the Past
+					}),
+
 					
 					qh(10750, {	-- The Path of Conquest
 						["qg"] = 21769,	-- Overlord Or'barokh
@@ -751,7 +816,14 @@ _.Zones =
 						["sourceQuests"] = { 10777 },	-- Asghar's Totem
 					}),
 				
-				
+
+					q( 10944, {	-- The Secret Compromised (UNTESTED - qg may only be in SSC, can't test)
+						["qg"] = 22820,	-- Seer Olum
+						["coord"] = { 58.0, 48.2 },	-- NEEDS CONFIRMATION, may only be in SSC
+						["sourceQuests"] = { 10708 },	-- Akama's Promise
+					}),
+
+					
 					q( 10576, {	-- The Shadowmoon Shuffle
 						["qg"] = 21293,	-- Borak, Son of Oronok
 						["sourceQuests"] = { 10570 },	-- To Catch a Thistlehead
@@ -827,7 +899,6 @@ _.Zones =
 						i(32649),	-- Medallion of Karabor
 					}),
 					qa(10642),	-- A Ghost in the Machine
-					q( 10947),	-- An Artifact From the Past
 					qd( q( 11544)),	-- Ata'mal Armaments
 					q(10781, {	-- Battle of the Crimson Watch
 						["groups"] = {
@@ -838,7 +909,7 @@ _.Zones =
 							i(31405),	-- Purple Trophy Tabard of the Illidari
 							i(31383),	-- Spiritualist's Mark of the Sha'tar
 						},
-						["sourceQuests"] = { 10793 }, -- The Journal of Val'zareq: Portends of War
+						["sourceQuests"] = { 10793 },	-- The Journal of Val'zareq: Portends of War
 					}),
 					qa(10562),	-- Besieged!
 					qa(10564, {	-- Blast the Infernals!
@@ -867,7 +938,6 @@ _.Zones =
 						i(31077),	-- Slayer's Mark of the Redemption
 						i(31076),	-- Spellsword's Mark of the Redemption
 					}),
-					q( 10949),	-- Entry Into the Black Temple
 					qa(10754),	-- Entry Into the Citadel
 					q( 10451, {	-- Escape from Coilskar Cistern
 						i(30927),	-- Earthmender's Bracer of Shattering
@@ -897,7 +967,6 @@ _.Zones =
 					q(11053, {	-- Rise, Overseer!
 						i(32694),	-- Overseer's Badge
 					}),
-					q( 10946),	-- Ruse of the Ashtongue
 					q( 10958),	-- Seek Out the Ashtongue
 					q( 11082),	-- Seeker of Truth
 					qa(10572),	-- Setting Up the Bomb
@@ -931,7 +1000,6 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for Enraged Spirits of Fire and Earth
 					}),
 					qa(10662),	-- The Hermit Smith
-					q( 10948),	-- The Hostage Soul
 					i(31345, {	-- The Journal of Val'zareq
 						["groups"] = {
 							q(10793),	-- The Journal of Val'zareq: Portends of War					
@@ -942,7 +1010,6 @@ _.Zones =
 					q( 11075),	-- The Netherwing Mines
 					qa(10772),	-- The Path of Conquest
 					qa(10677),	-- The Second Course...
-					q( 10944),	-- The Secret Compromised
 					qa(10569),	-- The Sketh'lon Wreckage
 					qa(10585),	-- The Summoning Chamber
 					qa(10563),	-- To Legion Hold
@@ -1071,7 +1138,7 @@ _.Zones =
 					})),
 					n(23489, {	-- Drake Dealer Hurlunk
 						["groups"] = {
-							i(32506, { -- Netherwing Egg
+							i(32506, {	-- Netherwing Egg
 								i(32858),	-- Reins of the Azure Netherwing Drake Mount
 								i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
 								i(32857),	-- Reins of the Onyx Netherwing Drake Mount
@@ -1092,39 +1159,39 @@ _.Zones =
 					})),
 					n(19342, {	-- Krek Cragcrush <Blacksmithing Supplies>
 						["groups"] = {
-							i(23596), -- Plans: Adamantite Breastplate
-							i(23594), -- Plans: Adamantite Plate Bracers
-							i(23595), -- Plans: Adamantite Plate Gloves
+							i(23596),	-- Plans: Adamantite Breastplate
+							i(23594),	-- Plans: Adamantite Plate Bracers
+							i(23595),	-- Plans: Adamantite Plate Gloves
 						},
 						["races"] = HORDE_ONLY,
 					}),
-					n(19373, { -- Mari Stonehand
+					n(19373, {	-- Mari Stonehand
 						["groups"] = {
-							un(1, i(25847)), -- Plans: Eternium Rod
-							i(23638), -- Plans: Lesser Ward of Shielding
+							un(1, i(25847)),	-- Plans: Eternium Rod
+							i(23638),	-- Plans: Lesser Ward of Shielding
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 				n(0,    {	-- Zone Drop
 					["groups"] = {
-						n(20878, { -- Deathforge Guardian
-							["groups"] = {
-								i(23609), -- Plans: Khorium Pants
+						i(23609, {	-- Plans: Khorium Pants
+							["crs"] = {
+								20878,	-- Deathforge Guardian
 							},
 						}),
-						i(23613, { -- Plans: Ragesteel Breastplate
+						i(23613, {	-- Plans: Ragesteel Breastplate
 							["crs"] = {
-								21454, -- Ashtongue Warrior
-								23324, -- Crazed Murkblood Miner
+								21454,	-- Ashtongue Warrior
+								23324,	-- Crazed Murkblood Miner
 							},
 						}),
-						i(33174, { -- Plans: Ragesteel Shoulders
+						i(33174, {	-- Plans: Ragesteel Shoulders
 							["crs"] = {
-								21060, -- Enraged Air Spirit
-								21050, -- Enraged Earth Spirit
-								21061, -- Enraged Fire Spirit
-								21059, -- Enraged Water Spirit
+								21060,	-- Enraged Air Spirit
+								21050,	-- Enraged Earth Spirit
+								21061,	-- Enraged Fire Spirit
+								21059,	-- Enraged Water Spirit
 							},
 						}),
 					},

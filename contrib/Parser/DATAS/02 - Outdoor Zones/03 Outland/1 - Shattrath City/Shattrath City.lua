@@ -382,8 +382,9 @@ _.Zones =
 						["qg"] = 115546, -- Lunelli
 						["requireSkill"] = 164, -- Blacksmithing
 					}),
-					q( 10949, {	-- Entry Into the Black Temple
+					q( 10949, {	-- Entry Into the Black Temple (UNTESTED, NEEDS CONFIRMATION)
 						["qg"] = 18481,	-- A'dal
+						["coord"] = { 54.2, 44.4 },
 						["sourceQuests"] = { 10948 },	-- The Hostage Soul *UNTESTED*
 					}),
 					qdg(q(10704, {	-- How to Break Into the Arcatraz
