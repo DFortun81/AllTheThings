@@ -40,6 +40,9 @@ profession(171, { -- Alchemy
 					i(112037),	-- Recipe: Greater Draenic Stamina Flask
 					i(112034),	-- Recipe: Greater Draenic Strength Flask
 					i(112047),	-- Recipe: Transmorphic Tincture
+					i(160662),  -- Recipe: Blackwater Anti-Venom
+					i(160663),  -- Recipe: Healing Tonic
+					i(160661),  -- Recipe: Fire Ammonite Oil
 					desc(i(114028), "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)"),	-- Small Pouch of Coins
 				}),
 			}),
@@ -80,6 +83,9 @@ profession(171, { -- Alchemy
 					i(112037),	-- Recipe: Greater Draenic Stamina Flask
 					i(112034),	-- Recipe: Greater Draenic Strength Flask
 					i(112047),	-- Recipe: Transmorphic Tincture
+					i(160662),  -- Recipe: Blackwater Anti-Venom
+					i(160663),  -- Recipe: Healing Tonic
+					i(160661),  -- Recipe: Fire Ammonite Oil
 					desc(i(114028), "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)"),	-- Small Pouch of Coins
 				}),
 			}),
