@@ -8,7 +8,7 @@ _.Instances =
 		["groups"] = {
 			inst(751, { 	-- The Black Temple
 				["groups"] = {
-					n( 0, {	-- Zone Drop
+					n( 0,  {	-- Zone Drop
 					 -- i(32609),	-- Boots of the Divine Light (Hyjal only)
 					 -- i(32592),	-- Chestguard of Relentless Storms (Hyjal only)
 						i(32606),	-- Girdle of the Lightbearer
@@ -37,7 +37,22 @@ _.Instances =
 					 -- i(32736),	-- Plans: Swiftsteel Bracers (Hyjal ONLY)
 						i(32737),	-- Plans: Swiftsteel Shoulders (BT ONLY)
 					}),
-					n(-2, {	-- Vendors
+					n(-17, {	-- Quests
+						q(10957, {	-- Redemption of the Ashtongue (UNTESTED, NEEDS CONFIRMATION)
+							["qg"] = 23158,	-- Seer Kanai
+							["coord"] = { 62.0, 50.2 },
+							["sourceQuests"] = { 10958 },	-- Seek Out the Ashtongue
+						}),
+						q(10959, {	-- The Fall of the Betrayer (UNTESTED, NEEDS CONFIRMATION)
+							["g"] = {
+								i(32757),	-- 	Blessed Medallion of Karabor
+							},
+							["qg"] = 23158,	-- Seer Kanai
+							["coord"] = { 62.0, 50.2 },
+							["sourceQuests"] = { 10957 },	-- Redemption of the Ashtongue
+						}),
+					}),
+					n(-2,  {	-- Vendors
 						n(23159, {		-- Okuno <Ashtongue Deathsworn Quartermaster>
 							i(32429),	-- Pattern: Boots of Shackled Souls
 							i(32430),	-- Pattern: Bracers of Shackled Souls

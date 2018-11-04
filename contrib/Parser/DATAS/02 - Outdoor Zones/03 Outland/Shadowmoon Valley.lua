@@ -402,6 +402,26 @@ _.Zones =
 						crit(8),		-- The Dark Conclave
 					}),
 ]]--							
+					qa(10985, {	-- A Distraction for Akama (UNTESTED - NEEDS CONFIRMATION)
+						["g"] = {
+							i(32649),	-- Medallion of Karabor
+						},
+						["qg"] = 18528,	-- Xi'ri
+						["coord"] = { 65.2, 44.0 },
+						["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
+					}),
+					
+					
+					qh(13429, {	-- A Distraction for Akama (UNTESTED - NEEDS CONFIRMATION)
+						["g"] = {
+							i(32649),	-- Medallion of Karabor
+						},
+						["qg"] = 18528,	-- Xi'ri
+						["coord"] = { 65.2, 44.0 },
+						["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
+					}),
+					
+					
 					qh(10702, {	-- A Grunt's Work...
 						["qg"] = 21769,	-- Overlord Or'barokh
 					}),
@@ -639,6 +659,16 @@ _.Zones =
 						["coord"] = { 58.0, 48.2 },
 						["sourceQuests"] = { 10944 },	-- The Secret Compromised
 					}),
+
+
+					qr(q(10958, {	-- Seek Out the Ashtongue (UNTESTED, NEEDS CONFIRMATION)
+						["qg"] = 18528,	-- Xi'ri
+						["coord"] = { 65.2, 44.0 },
+						["sourceQuests"] = {
+							10985,	-- A Distraction for Akama (Alliance)
+							13429,	-- A Distraction for Akama (Horde)
+						},
+					})),
 
 					
 					qh(10597, {	-- Setting Up the Bomb
@@ -892,12 +922,7 @@ _.Zones =
 					}),
 				
 
-					qh(13429, {	-- A Distraction for Akama
-						i(32649),	-- Medallion of Karabor
-					}),
-					qa(10985, {	-- A Distraction for Akama
-						i(32649),	-- Medallion of Karabor
-					}),
+					
 					qa(10642),	-- A Ghost in the Machine
 					qd( q( 11544)),	-- Ata'mal Armaments
 					q(10781, {	-- Battle of the Crimson Watch
@@ -967,7 +992,6 @@ _.Zones =
 					q(11053, {	-- Rise, Overseer!
 						i(32694),	-- Overseer's Badge
 					}),
-					q( 10958),	-- Seek Out the Ashtongue
 					q( 11082),	-- Seeker of Truth
 					qa(10572),	-- Setting Up the Bomb
 					qa(10661),	-- Spleendid!
