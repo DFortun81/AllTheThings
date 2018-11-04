@@ -663,6 +663,16 @@ _.Zones =
 						},
 					},
 				}),
+				n(0,    {	-- Zone Drop
+					["groups"] = {
+						i(41819, {  -- Design: Radiant Forest Emerald
+							["crs"] = {
+								29793, -- Frostfeather Witch
+								29792, -- Frostfeather Screecher
+							},
+						}),
+				},
+				}),
 			},
 			["lvl"] = 67,	
 			["achievementID"] = 1269,
