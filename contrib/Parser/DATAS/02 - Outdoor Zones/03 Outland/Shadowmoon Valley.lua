@@ -1269,6 +1269,11 @@ _.Zones =
 								21059,	-- Enraged Water Spirit
 							},
 						}),
+						i(24158, {  -- Design: Khorium Band of Shadows
+							["crs"] = {
+								19826,  -- Dark Conclave Shadowmancer
+								},
+						}),
 					},
 				}),
 			},
