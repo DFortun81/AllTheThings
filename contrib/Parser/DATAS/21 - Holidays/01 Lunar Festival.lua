@@ -389,9 +389,24 @@ _.Holidays =
 						un(17, i(44918)),  -- Schematic: Cluster Launcher
 						un(17, i(44919)),  -- Schematic: Firework Launcher
 						un(17, i(21740, {  -- Small Rocket Recipes
-							un(17, i(21726)), -- Schematic: Small Red Rocket
-							un(17, i(21724)), -- Schematic: Small Blue Rocket
-							un(17, i(21725)), -- Schematic: Small Green Rocket
+							un(17, i(21726)),  -- Schematic: Small Red Rocket
+							un(17, i(21724)),  -- Schematic: Small Blue Rocket
+							un(17, i(21725)),  -- Schematic: Small Green Rocket
+						})),
+						un(17, i(21741, {  -- Cluster Rocket Recipes
+							un(17, i(21732)),  -- Schematic: Red Rocket Cluster
+							un(17, i(21730)),  -- Schematic: Blue Rocket Cluster
+							un(17, i(21731)),  -- Schematic: Green Rocket Cluster
+						})),
+						un(17, i(21742, {  -- Large Rocket Recipes
+							un(17, i(21729)),  -- Schematic: Large Red Rocket
+							un(17, i(21728)),  -- Schematic: Large Green Rocket
+							un(17, i(21727)),  -- Schematic: Large Blue Rocket
+						})),
+						un(17, i(21743, {  -- Large Cluster Rocket Recipes
+							un(17, i(21735)),  -- Schematic: Large Red Rocket Cluster
+							un(17, i(21733)),  -- Schematic: Large Blue Rocket Cluster
+							un(17, i(21734)),  -- Schematic: Large Green Rocket Cluster
 						})),
 						un(17, i(143827)), -- Dragon Head Costume
 						un(17, i(143828)), -- Dragon Body Costume
