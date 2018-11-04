@@ -215,9 +215,13 @@ _.Craftables =
 			i(154138),	-- Coarse Leather Vest
 			i(154144),	-- Coarse Leather Waistguard
 			i(162472),	-- Emblazoned Mistscale Boots
+			i(162481),	-- Emblazoned Mistscale Boots
 			i(162474),	-- Emblazoned Mistscale Leggings
+			i(162482),	-- Emblazoned Mistscale Greaves
 			i(162468),	-- Emblazoned Tempest Boots
+			i(162485),	-- Emblazoned Tempest Boots
 			i(162470),	-- Emblazoned Tempest Leggings
+			i(162486),	-- Emblazoned Tempest Leggings
 			i(161946),	-- Hardened Tempest Boots
 			i(154163),	-- Hardened Tempest Knuckles
 			i(161947),	-- Hardened Tempest Leggings
@@ -233,9 +237,13 @@ _.Craftables =
 			i(159889),	-- Honorable Combatant's Mail Treads
 			i(159892),	-- Honorable Combatant's Mail Waistguard
 			i(162489),	-- Imbued Mistscale Boots
+			i(162471),	-- Imbued Mistscale Boots
 			i(162490),	-- Imbued Mistscale Leggings
+			i(162473),	-- Imbued Mistscale Greeaves
 			i(162493),	-- Imbued Tempest Boots
+			i(162467),	-- Imbued Tempest Boots
 			i(162494),	-- Imbued Tempest Leggings
+			i(162469),	-- Imbued Tempest Leggings
 			i(161961),	-- Mistscale Boots
 			i(154162),	-- Mistscale Knuckles
 			i(161962),	-- Mistscale Leggings
@@ -253,7 +261,9 @@ _.Craftables =
 		n(-190, { -- Tailoring
 			i(154695),	-- Deep Sea Bag
 			i(162478),	-- Emblazoned Deep Sea Breeches
+			i(162480),	-- Emblazoned Deep Sea Breeches
 			i(162476),	-- Emblazoned Deep Sea Gloves
+			i(162479),	-- Emblazoned Deep Sea Gloves
 			i(154696),	-- Embroidered Deep Sea Bag
 			i(161986),	-- Embroidered Deep Sea Breeches
 			i(154700),	-- Embroidered Deep Sea Cloak
@@ -265,7 +275,9 @@ _.Craftables =
 			i(159913),	-- Honorable Combatant's Satin Mittens
 			i(159914),	-- Honorable Combatant's Satin Pants
 			i(162488),	-- Imbued Deep Sea Breeches
+			i(162477),	-- Imbued Deep Sea Breeches
 			i(162487),	-- Imbued Deep Sea Gloves
+			i(162475),	-- Imbued Deep Sea Gloves
 			i(154691),	-- Tidespray Linen Belt
 			i(154692),	-- Tidespray Linen Bracers
 			i(154697),	-- Tidespray Linen Cloak
