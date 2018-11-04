@@ -46,6 +46,11 @@ _.Instances =
 										10398,	-- Thuzadin Shadowcaster
 									},
 								}),
+								i(16052,  {  -- Schematic: Voice Amplification Modulator
+									["crs"] = {
+										10426,  -- Risen Inquisitor
+									},
+								}),
 								i(18743),	-- Gracious Cape
 								i(17061),	-- Juno's Shadow
 								i(18741),	-- Morlune's Bracer

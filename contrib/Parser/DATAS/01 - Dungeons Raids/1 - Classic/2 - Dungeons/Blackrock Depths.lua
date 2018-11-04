@@ -266,6 +266,11 @@ _.Instances =
 								8920,	-- Weapon Technician
 							},
 						}),
+						i(16049, {  -- Schematic: Dark Iron Bomb
+							["crs"] = {
+								8920,   -- Weapon Technician
+							},
+						}),
 						i(12531, {	-- Searing Needle
 							["crs"] = {
 								8892,	-- Anvilrage Footman
@@ -580,6 +585,7 @@ _.Instances =
 							i( 12791), 	-- Barman Shanker
 							i( 12793), 	-- Mixologist's Tunic
 							i(151410),	-- Bottle-Popper Ring
+							i(18653),  -- Schematic: Goblin Jumper Cables XL
 						})),
 						cr(9502, e( 381, {	-- Phalanx
 							["groups"] = {		
