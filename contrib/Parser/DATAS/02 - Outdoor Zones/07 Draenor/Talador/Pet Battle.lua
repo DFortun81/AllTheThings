@@ -10,19 +10,19 @@ _.Zones =
 				["mapID"] = 535,	-- Talador
 				["g"] = {
 					{	-- Pet Battle
-						["npcID"] = -25,	-- Pet Battle
+						["npcID"] = -25,	-- Pet Battles
 						["filterID"] = 101,	-- Battle Pets
 						["g"] = {
 							{	--  Ash Spiderling
-								["npcID"] = 61420,		--  Ash Spiderling
+								["crs"] = { 61420 },	--  Ash Spiderling
 								["speciesID"] = 427,	--  Ash Spiderling
 							},
 							{	--  Brilliant Bloodfeather
-								["npcID"] = 88385,		--  Brilliant Bloodfeather
+								["crs"] = { 88385 },	--  Brilliant Bloodfeather
 								["speciesID"] = 1572,	--  Brilliant Bloodfeather
 							},
 							{	-- Crimsonwing Moth
-								["npcID"] = 88413,		-- Crimsonwing Moth
+								["crs"] = { 88413 },	-- Crimsonwing Moth
 								["speciesID"] = 1589,	-- Crimsonwing Moth
 								["coords"] = {
 									{ 32.4, 63.6 },
@@ -105,40 +105,41 @@ _.Zones =
 									{ 75.0, 17.8 },
 								},
 								["description"] = "Only one is up at a time.  Once captured or kill it immediately respawns.",
-							},							{	--  Flat-Tooth Calf
-								["npcID"] = 88572,		--  Flat-Tooth Calf
+							},
+							{	--  Flat-Tooth Calf
+								["crs"] = { 88572 },	--  Flat-Tooth Calf
 								["speciesID"] = 1595,	--  Flat-Tooth Calf
 							},
 							{	--  Kelp Scuttler
-								["npcID"] = 88465,		--  Kelp Scuttler
+								["crs"] = { 88465 },	--  Kelp Scuttler
 								["speciesID"] = 1583,	--  Kelp Scuttler
 							},
 							{	--  Mud Jumper
-								["npcID"] = 83642,		--  Mud Jumper
+								["crs"] = { 83642 },	--  Mud Jumper
 								["speciesID"] = 1441,	--  Mud Jumper
 							},
 							{	--  Red-Tailed Chipmunk
-								["npcID"] = 61757,		--  Red-Tailed Chipmunk
+								["crs"] = { 61757 },	--  Red-Tailed Chipmunk
 								["speciesID"] = 452,	--  Red-Tailed Chipmunk
 							},
 							{	--  Royal Moth
-								["npcID"] = 88417,		--  Royal Moth
+								["crs"] = { 88417 },	--  Royal Moth
 								["speciesID"] = 1587,	--  Royal Moth
 							},
 							{	--  Sea Gull
-								["npcID"] = 62953,		--  Sea Gull
+								["crs"] = { 62953 },	--  Sea Gull
 								["speciesID"] = 560,	--  Sea Gull
 							},
 							{	--  Shadow Sporebat
-								["npcID"] = 88576,		--  Shadow Sporebat
+								["crs"] = { 88576 },	--  Shadow Sporebat
 								["speciesID"] = 1599,	--  Shadow Sporebat
 							},
 							{	--  Silkbed Snail
-								["npcID"] = 63001,		--  Silkbed Snail
+								["crs"] = { 63001 },	--  Silkbed Snail
 								["speciesID"] = 568,	--  Silkbed Snail
 							},
 							{	--  Waterfly
-								["npcID"] = 88355,		--  Waterfly
+								["crs"] = { 88355 },	--  Waterfly
 								["speciesID"] = 1593,	--  Waterfly
 							},
 						},

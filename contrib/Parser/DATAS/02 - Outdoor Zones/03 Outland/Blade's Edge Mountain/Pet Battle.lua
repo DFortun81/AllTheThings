@@ -14,31 +14,31 @@ _.Zones =
 						["filterID"] = 101,	-- Battle Pets
 						["g"] = {
 							{	-- Cogblade Raptor
-								["npcID"] = 68841,		-- Cogblade Raptor
+								["crs"] = { 68841 },	-- Cogblade Raptor
 								["speciesID"] = 1164,	-- Cogblade Raptor
 							},
 							{	-- Rabbit
-								["npcID"] = 61080,		-- Rabbit
+								["crs"] = { 61080 },	-- Rabbit
 								["speciesID"] = 378,	-- Rabbit
 							},
 							{	-- Rock Viper
-								["npcID"] = 62184,		-- Rock Viper
+								["crs"] = { 62184 },	-- Rock Viper
 								["speciesID"] = 482,	-- Rock Viper
 							},
 							{	-- Scalded Basilisk Hatchling
-								["npcID"] = 62628,		-- Scalded Basilisk Hatchling
+								["crs"] = { 62628 },	-- Scalded Basilisk Hatchling
 								["speciesID"] = 528,	-- Scalded Basilisk Hatchling
 							},
 							{	-- Scorpid
-								["npcID"] = 61326,		-- Scorpid
+								["crs"] = { 61326 },	-- Scorpid
 								["speciesID"] = 414,	-- Scorpid
 							},
 							{	-- Skittering Cavern Crawler
-								["npcID"] = 62638,		-- Skittering Cavern Crawler
+								["crs"] = { 62638 },		-- Skittering Cavern Crawler
 								["speciesID"] = 637,	-- Skittering Cavern Crawler
 							},
 							{	-- Squirrel
-								["npcID"] = 61081,		-- Squirrel
+								["crs"] = { 61081 },	-- Squirrel
 								["speciesID"] = 379,	-- Squirrel
 							},
 						},

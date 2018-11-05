@@ -10,39 +10,39 @@ _.Zones =
 				["mapID"] = 542,	-- Spires of Arak
 				["g"] = {
 					{	-- Pet Battle
-						["npcID"] = -25,	-- Pet Battle
+						["npcID"] = -25,	-- Pet Battles
 						["filterID"] = 101,	-- Battle Pets
 						["g"] = {
 							{	-- Adder
-								["npcID"] = 61325,		-- Adder
+								["crs"] = { 61325 },	-- Adder
 								["speciesID"] = 635,	-- Adder
 							},
 							{	-- Bloodsting Wasp
-								["npcID"] = 85255,		-- Bloodsting Wasp
+								["crs"] = { 85255 },	-- Bloodsting Wasp
 								["speciesID"] = 1462,	-- Bloodsting Wasp
 							},
 							{	-- Forest Spiderling
-								["npcID"] = 61320,		-- Forest Spiderling
+								["crs"] = { 61320 },	-- Forest Spiderling
 								["speciesID"] = 407,	-- Forest Spiderling
 							},
 							{	-- Golden Dawnfeather
-								["npcID"] = 85798,		-- Golden Dawnfeather
+								["crs"] = { 85798 },	-- Golden Dawnfeather
 								["speciesID"] = 1573,	-- Golden Dawnfeather
 							},
 							{	-- Mud Jumper
-								["npcID"] = 83642,		-- Mud Jumper
+								["crs"] = { 83642 },	-- Mud Jumper
 								["speciesID"] = 1441,	-- Mud Jumper
 							},
 							{	-- Rat
-								["npcID"] = 61366,		-- Rat
+								["crs"] = { 61366 },	-- Rat
 								["speciesID"] = 417,	-- Rat
 							},
 							{	-- Royal Moth
-								["npcID"] = 88417,		-- Royal Moth
+								["crs"] = { 88417 },	-- Royal Moth
 								["speciesID"] = 1587,	-- Royal Moth
 							},
 							{	-- Sapphire Firefly
-								["npcID"] = 88356,		-- Sapphire Firefly
+								["crs"] = { 88356 },	-- Sapphire Firefly
 								["speciesID"] = 1592,	-- Sapphire Firefly
 								["coords"] = {
 									{ 37.8, 41.8 },
@@ -59,31 +59,31 @@ _.Zones =
 								["description"] = "Only one is up at a time.  Once captured or kill it immediately respawns.",
 							},
 							{	-- Silkbead Snail
-								["npcID"] = 63001,		-- Silkbead Snail
+								["crs"] = { 63001 },	-- Silkbead Snail
 								["speciesID"] = 568,	-- Silkbead Snail
 							},
 							{	-- Squirrel
-								["npcID"] = 61081,		-- Squirrel
+								["crs"] = { 61081 },	-- Squirrel
 								["speciesID"] = 379,	-- Squirrel
 							},
 							{	-- Strand Crab
-								["npcID"] = 61312,		-- Strand Crab
+								["crs"] = { 61312 },	-- Strand Crab
 								["speciesID"] = 401,	-- Strand Crab
 							},
 							{	-- Swamplighter Firefly
-								["npcID"] = 88359,		-- Swamplighter Firefly
+								["crs"] = { 88359 },	-- Swamplighter Firefly
 								["speciesID"] = 1590,	-- Swamplighter Firefly
 							},
 							{	-- Thicket Skitterer
-								["npcID"] = 85007,		-- Thicket Skitterer
+								["crs"] = { 85007 },	-- Thicket Skitterer
 								["speciesID"] = 1456,	-- Thicket Skitterer
 							},
 							{	-- Waterfly
-								["npcID"] = 88355,		-- Waterfly
+								["crs"] = { 88355 },	-- Waterfly
 								["speciesID"] = 1593,	-- Waterfly
 							},
 							{	-- Zangar Crawler
-								["npcID"] = 88466,		-- Zangar Crawler
+								["crs"] = { 88466 },	-- Zangar Crawler
 								["speciesID"] = 1582,	-- Zangar Crawler
 							},
 						},

@@ -10,14 +10,14 @@ _.Zones =
 				["mapID"] = 100,	-- Hellfire Peninsula
 				["g"] = {
 					{	-- Pet Battle
-						["npcID"] = -25,	-- Pet Battle
+						["npcID"] = -25,	-- Pet Battles
 						["g"] = {
 							{	-- Adder
-								["npcID"] = 61325,		-- Adder
+								["crs"] = { 61325 },	-- Adder
 								["speciesID"] = 635,	-- Adder
 							},
 							{	-- Scorpid
-								["npcID"] = 61326,		-- Scorpid
+								["crs"] = { 61326 },	-- Scorpid
 								["speciesID"] = 414,	-- Scorpid
 							},
 						},

@@ -32,39 +32,39 @@ _.Zones =
 								},
 							},
 							{	--  Bloodbeak
-								["npcID"] = 85388,		--  Bloodbeak
+								["crs"] = { 85388 },	--  Bloodbeak
 								["speciesID"] = 1468,	--  Bloodbeak
 							},
 							{	--  Cerulean Moth
-								["npcID"] = 88422,		--  Cerulean Moth
+								["crs"] = { 88422 },	--  Cerulean Moth
 								["speciesID"] = 1586,	--  Cerulean Moth
 							},
 							{	--  Fel Flame
-								["npcID"] = 62621,		--  Fel Flame
+								["crs"] = { 62621 },	--  Fel Flame
 								["speciesID"] = 519,	--  Fel Flame
 							},
 							{	--  Fen Crab
-								["npcID"] = 88473,		--  Fen Crab
+								["crs"] = { 88473 },	--  Fen Crab
 								["speciesID"] = 1581,	--  Fen Crab
 							},
 							{	--  Horny Toad
-								["npcID"] = 62185,		--  Horny Toad
+								["crs"] = { 62185 },	--  Horny Toad
 								["speciesID"] = 483,	--  Horny Toad
 							},
 							{	--  Rat
-								["npcID"] = 61366,		--  Rat
+								["crs"] = { 61366 },	--  Rat
 								["speciesID"] = 417,	--  Rat
 							},
 							{	--  Tree Python
-								["npcID"] = 61318,		--  Tree Python
+								["crs"] = { 61318 },	--  Tree Python
 								["speciesID"] = 405,	--  Tree Python
 							},
 							{	--  Violet Firefly
-								["npcID"] = 88357,		--  Violet Firefly
+								["crs"] = { 88357 },	--  Violet Firefly
 								["speciesID"] = 1591,	--  Violet Firefly
 							},
 							{	--  Waterfly
-								["npcID"] = 88355,		--  Waterfly
+								["crs"] = { 88355 },	--  Waterfly
 								["speciesID"] = 1593,	--  Waterfly
 							},
 						},
