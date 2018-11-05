@@ -304,6 +304,19 @@ _.Zones =
 								["coord"] = { 55.7, 58.1 },
 								["sourceQuests"] = { 10688 },	-- A Necessary Distraction
 							}),
+							q(10692, {	-- Varedis Must Be Stopped
+								["g"] = {
+									i(31013),	-- Ceremonial Kris
+									i(30933),	-- Hauberk of Karabor
+									i(31010),	-- Slayer's Axe
+									i(31002),	-- Summoner's Blade
+									i(30948),	-- Sunfury Legguards
+									i(31009),	-- Wildcaller
+								},
+								["qg"] = 21954,	-- Larissa Sunstrike
+								["coord"] = { 55.7, 58.1 },
+								["sourceQuests"] = { 10691 },	-- Return to the Scryers
+							}),
 							q(10683, {	-- Tablets of Baa'ri
 								["qg"] = 21955,	-- Arcanist Thelis
 								["coord"] = { 56.2, 59.6 },
@@ -342,12 +355,12 @@ _.Zones =
 								["coord"] = { 58.1, 48.1 },
 								["sourceQuests"] = { 10628 },	-- Akama
 							})),
-							q(10707, {	-- The Ata'mal Terrace -- UNTESTED AS SCRYER
+							q(10707, {	-- The Ata'mal Terrace
 								["qg"] = 21770,	-- Akama
 								["coord"] = { 58.1, 48.1 },
 								["sourceQuests"] = { 10706 },	-- A Mysterious Portent
 							}),
-							q(10708, {	-- Akama's Promise (awarded "Akama's Promise" criteria) -- UNTESTED AS SCRYER
+							q(11052, {	-- Akama's Promise (awarded "Akama's Promise" criteria)
 								["groups"] = {
 									i(30932),	-- Akama's Sash
 									i(30999),	-- Ashtongue Blade
@@ -363,15 +376,7 @@ _.Zones =
 
 
 
-							q(10691),	-- Return to the Scryers
-							q(10692, {	-- Varedis Must Be Stopped
-								i(31013),	-- Ceremonial Kris
-								i(30933),	-- Hauberk of Karabor
-								i(31010),	-- Slayer's Axe
-								i(31002),	-- Summoner's Blade
-								i(30948),	-- Sunfury Legguards
-								i(31009),	-- Wildcaller
-							}),
+							
 							q(10824, {	-- Sunfury Signets
 								["qg"] = 22211,	-- Battlemage Vyara
 								["coord"] = { 56.2, 58.7 },
@@ -463,7 +468,15 @@ _.Zones =
 					
 					q( 10777, {	-- Asghar's Totem
 						["qg"] = 22024,	-- Parshah
-						["sourceQuests"] = { 10761 },	-- Find the Deserter
+						["coords"] = {	-- questgiver pats up and down the road
+							{ 35.4, 37.6 },
+							{ 35.2, 40.4 },
+							{ 35.4, 41.8 },
+						},
+						["sourceQuests"] = { 
+							10759,	-- Find the Deserter (Alliance)
+							10761,	-- Find the Deserter (Horde)
+						},
 					}),
 					
 
@@ -477,6 +490,19 @@ _.Zones =
 					qh(10595, {	-- Besieged!
 						["qg"] = 21359,	-- Blood Guard Gulmok
 						["sourceQuests"] = { 49532 },	-- Warchief's Command: Shadowmoon Valley!
+					}),
+					
+					
+					qa(10564, {	-- Blast the Infernals!
+						["g"] = {
+							i(30986),	-- Bloodforged Guard
+							i(30947),	-- Crimson Mail Hauberk
+							i(30946),	-- Mooncrest Headdress
+							i(30929),	-- Soothsayer's Kilt
+						},
+						["qg"] = 21357,	-- Wing Commander Nuainn
+						["coord"] = { 39.5, 53.7 },
+						["sourceQuests"] = { 10572 },	-- Setting Up the Bomb
 					}),
 					
 					
@@ -618,6 +644,13 @@ _.Zones =
 						["sourceQuests"] = { 10672 },	-- Frankly, It Makes No Sense...
 					}),
 					
+
+					qa(10759, {	-- Find the Deserter
+						["qg"] = 22042,	-- Gryphonrider Kieran
+						["coord"] = { 38.7, 54.2 },
+						["sourceQuests"] = { 10569 },	-- The Sketh'lon Wreckage
+					}),
+
 					
 					qh(10761, {	-- Find the Deserter
 						["qg"] = 22043,	-- Sergeant Kargrul
@@ -736,6 +769,13 @@ _.Zones =
 						},
 					})),
 
+
+					qa(10572, {	-- Setting Up the Bomb
+						["qg"] = 21357,	-- Wing Commander Nuainn
+						["coord"] = { 39.5, 53.7 },
+						["sourceQuests"] = { 10563 },	-- To Legion Hold
+					}),
+
 					
 					qh(10597, {	-- Setting Up the Bomb
 						["qg"] = 21359,	-- Blood Guard Gulmok
@@ -778,6 +818,25 @@ _.Zones =
 					qh(10768, {	-- Tabards of the Illidari
 						["qg"] = 21998,	-- Kor'kron Wind Rider
 						["sourceQuests"] = { 10765 },	-- When Worlds Collide
+					}),
+					
+					
+					qa(10645, {	-- Teron Gorefiend, I am... (awarded "THe First Death Knight" criteria)
+						["g"] = {
+							i(31104),	-- Evoker's Helmet of Second Sight
+							i(31110),	-- Druidic Helmet of Second Sight
+							i(31109),	-- Stealther's Helmet of Second Sight
+							i(31107),	-- Shamanistic Helmet of Second Sight
+							i(31106),	-- Stalker's Helmet of Second Sight
+							i(31105),	-- Overlord's Helmet of Second Sight
+						},
+						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
+						["coord"] = { 58.2, 70.7 },
+						["sourceQuests"] = {
+							10634,	-- Divination: Gorefiend's Armor
+							10635,	-- Divination: Gorefiend's Cloak
+							10636,	-- Divination: Gorefiend's Truncheon
+						},
 					}),
 					
 					
@@ -1078,12 +1137,6 @@ _.Zones =
 						},
 						["sourceQuests"] = { 10793 },	-- The Journal of Val'zareq: Portends of War
 					}),
-					qa(10564, {	-- Blast the Infernals!
-						i(30986),	-- Bloodforged Guard
-						i(30947),	-- Crimson Mail Hauberk
-						i(30946),	-- Mooncrest Headdress
-						i(30929),	-- Soothsayer's Kilt
-					}),
 					q( 11107),	-- Bow to the Highlord
 					qa(10586),	-- Bring Down the Warbringer!
 					qa(11043),	-- Building a Better Gryphon
@@ -1103,7 +1156,6 @@ _.Zones =
 						i(30937),	-- Earthmender's Fists of Undoing
 						i(30968),	-- Earthmender's Plated Boots
 					}),
-					qa(10759),	-- Find the Deserter
 					qa(10589),	-- Gaining Access
 					q( 31920),	-- Grand Master Antari
 					q(11092, {	-- Hail, Commander!
@@ -1124,7 +1176,6 @@ _.Zones =
 						i(32694),	-- Overseer's Badge
 					}),
 					q( 11082),	-- Seeker of Truth
-					qa(10572),	-- Setting Up the Bomb
 					q(11084, {	-- Stand Tall, Captain!
 						i(32695),	-- Captain's Badge
 					}),
@@ -1133,14 +1184,6 @@ _.Zones =
 						i(32869),	-- Illidari Lord's Tunic
 						i(32872),	-- Illidari Rod of Discipline
 						i(32870),	-- Legguards of Contemplation
-					}),
-					qa(10645, {	-- Teron Gorefiend, I am...
-						i(31104),	-- Evoker's Helmet of Second Sight
-						i(31110),	-- Druidic Helmet of Second Sight
-						i(31109),	-- Stealther's Helmet of Second Sight
-						i(31107),	-- Shamanistic Helmet of Second Sight
-						i(31106),	-- Stalker's Helmet of Second Sight
-						i(31105),	-- Overlord's Helmet of Second Sight
 					}),
 					qh(11047),	-- The Apprentice's Request
 					qa(10606),	-- The Art of Fel Reaver Maintenance

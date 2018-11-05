@@ -127,6 +127,11 @@ _.Zones =
 								["coord"] = { 27.3, 43.0 },
 								["sourceQuests"] = { 10646 },	-- Illidan's Pupil
 							})),
+							q(10691, {	-- Return to the Scryers
+								["qg"] = 18417,	-- Altruis
+								["coord"] = { 27.3, 43.0 },
+								["sourceQuests"] = { 10649 },	-- The Book of Fel Names
+							}),
 						},
 						["collectible"] = false,
 					}),
@@ -329,7 +334,6 @@ _.Zones =
 					qh( 10479),	-- Proving Your Strength
 					qh(  9797),	-- Reinforcements for Garadar
 					qh( 10170),	-- Return to the Greatmother
-					q(10691),	-- Return to the Scryers
 					q(9931),	-- Returning the Favor
 					q(9927),	-- Ruthless Cunning
 					q(9849),	-- Shattering the Veil
