@@ -2410,6 +2410,9 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						i(18440),	-- Sergeant's Cape
 					}),
 					a(n(46602, {	-- Shay Pressler <Guild Vendor>
+						["coords"] = {
+							{ 64.14, 77.03 },
+						},
 						["groups"] = {
 							faction(1168, {	-- Your Guild (Faction)
 								["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
