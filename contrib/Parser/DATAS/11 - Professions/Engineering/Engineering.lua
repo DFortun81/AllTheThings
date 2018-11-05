@@ -203,6 +203,15 @@ profession(202, { -- Engineering
 	}),
 	--[[
 	n(-10068, { -- PLACE_HOLDER
+		i(89991, {    -- Pandaria Fireworks
+			["groups"] = {
+				i(89999),    -- Schematic: Serpent's Heart Firework
+				i(89993),    -- Schematic: Grand Celebration Firework
+				i(89994),    -- Schematic: Celestial Firework
+				i(89996),    -- Schematic: Autumn Flower Firework
+				i(89997),    -- Schematic: Jade Blossom Firework
+			},
+		}),
 		i(136700),	-- Schematic: "The Felic"
 		i(13310),	-- Schematic: Accurate Scope
 		i(23799),	-- Schematic: Adamantite Rifle
