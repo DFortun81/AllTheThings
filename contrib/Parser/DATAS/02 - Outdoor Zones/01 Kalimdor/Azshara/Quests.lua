@@ -745,23 +745,27 @@ _.Zones =
 						["questID"] = 24458,
 						["qg"] = 36379,	-- Hobart Grapplehammer
 						["coord"] = { 50.3, 74.4 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14388,	-- Azsharite Experiment Number Two
 					},
 					{	-- Airborne Again
 						["questID"] = 24497,
 						["qg"] = 37142,	-- Gurlorn
 						["coord"] = { 52.9, 49.8 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14392,	-- Farewell, Minnow
 					},
 					{	-- Amberwind's Journal
 						["questID"] = 14428,
 						["qg"] = 36596,	-- Andorel Sunsworn
 						["coord"] = { 42.6, 23.7 },
+						["races"] = HORDE_ONLY,
 					},
 					{	-- A Pale Brew
 						["questID"] = 14432,
 						["qg"] = 8586,	-- Haggrum Bloodfist
 						["coord"] = { 42.4, 23.6 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14431,	-- The Blackmaw Scar
 					},
 					qart(q(46177, {	-- A Portal Away -- possibly legacy now that mage tower is unavailable?
@@ -772,22 +776,26 @@ _.Zones =
 						["questID"] = 14197,
 						["qg"] = 35085,	-- Foreman Fisk
 						["coord"] = { 29.1, 66.3 },
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Bad Science! Bad!
 						["questID"] = 14322,
 						["qg"] = 36146,	-- Twistex Happytongs
 						["coord"] = { 45.0, 75.5 },
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Basilisk Bashin'
 						["questID"] = 14161,
 						["qg"] = 35091,	-- Horzak Zignibble
 						["coord"] = { 29.1, 66.2 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14162,	-- Report to Horzak
 					},
 					{	-- Diplomacy by Another Means
 						["questID"] = 14433,
 						["qg"] = 8586,	-- Haggrum Bloodfist
 						["coord"] = { 42.4, 23.6 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14431,	-- The Blackmaw Scar
 					},
 					{	-- Dozercism
@@ -800,17 +808,20 @@ _.Zones =
 						},
 						["qg"] = 35088,	-- Custer Clubnik
 						["coord"] = { 29.5, 66.8 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14209,	-- Gunk in the Trunk
 					},
 					{	-- First Come, First Served
 						["questID"] = 24437,
 						["qg"] = 36795,	-- Ruckus
 						["coord"] = { 39.1, 51.7 },
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Gunk in the Trunk
 						["questID"] = 14209,
 						["qg"] = 35088,	-- Custer Clubnik
 						["coord"] = { 29.6, 66.8 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14202,	-- Survey the Lakeshore
 					},
 					qart(q(45570, {	-- In Safer Hands -- possibly legacy now that mage tower is unavailable?
@@ -828,6 +839,7 @@ _.Zones =
 									i(53414),	-- Hacker's Leggings
 									i(131358),	-- Leggings of the Hack "Mage"
 								},
+								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 14429,	-- Arcane De-Construction
 							},
 						},
@@ -836,6 +848,7 @@ _.Zones =
 						["questID"] = 14424,
 						["qg"] = 35088,	-- Custer Clubnik
 						["coord"] = { 29.5, 66.8 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14423,	-- Dozercism
 						["isBreadcrumb"] = true,
 					},
@@ -855,6 +868,7 @@ _.Zones =
 						["questID"] = 24463,
 						["qg"] = 36728,	-- Kroum
 						["coord"] = { 14.3, 65.0 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 24439,	-- The Conquest of Azshara
 						["isBreadcrumb"] = true,
 					},
@@ -880,6 +894,7 @@ _.Zones =
 						["questID"] = 14162,
 						["qg"] = 35086,	-- Labor Captain Grabbit
 						["coord"] = { 26.9, 77.0 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14155,	-- Arborcide
 						["isBreadcrumb"] = true,
 					},
@@ -887,17 +902,20 @@ _.Zones =
 						["questID"] = 14128,
 						["qg"] = 8576,	-- Ag'tor Bloodfist
 						["coord"] = { 26.8, 76.9 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14127,	-- Return of the Highborne?
 					},
 					{	-- Scout's Orders
 						["itemID"] = 47039,
 						["questID"] = 14127,	-- Return of the Highborne?
 						["qg"] = 35095,	-- Talrendis Scout
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Survey the Lakeshore
 						["questID"] = 14202,
 						["qg"] = 35088,	-- Custer Clubnik
 						["coord"] = { 29.5, 66.8 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 24453,	-- Private Chat
 					},
 					qart(q(44924, {	-- The Archmage Accosted
@@ -922,6 +940,7 @@ _.Zones =
 						},
 						["qg"] = 8586,	-- Haggrum Bloodfist
 						["coord"] = { 42.4, 23.6 },
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							14432,	-- A Pale Brew
 							14433,	-- Diplomacy by Another Means
@@ -931,11 +950,13 @@ _.Zones =
 						["questID"] = 14431,
 						["qg"] = 8586,	-- Haggrum Bloodfist
 						["coord"] = { 42.4, 23.5 },
+						["races"] = HORDE_ONLY,
 					},
 					{	-- The Eyes of Ashenvale
 						["questID"] = 14117,
 						["qg"] = 8576,	-- Ag'tor Bloodfist
 						["coord"] = { 26.8, 76.9 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(53416),	-- Hill's Eye Wand
 							i(53448),	-- Stolen Talrendis Boots
@@ -946,6 +967,7 @@ _.Zones =
 						["questID"] = 14262,
 						["qg"] = 35657,	-- Torg Twocrush
 						["coord"] = { 50.6, 75.2 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14258,	-- Mortar the Point
 					},
 					{	-- Upper Scrying Stone
@@ -954,6 +976,7 @@ _.Zones =
 						["groups"] = {
 							{	-- Arcane De-Construction
 								["questID"] = 14429,
+								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 14428,	-- Amberwind's Journal
 							},
 						},
@@ -962,6 +985,7 @@ _.Zones =
 						["questID"] = 14118,
 						["qg"] = 8576,	-- Ag'tor Bloodfist
 						["coord"] = { 26.8, 76.9 },
+						["races"] = HORDE_ONLY,
 					},
 				}),
 			},
