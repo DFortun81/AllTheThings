@@ -598,6 +598,9 @@ _.Instances =
 							},
 							["description"]	= "Private Rocknot must be sent into a drunken rage to aggro Phalanx. \nTo do that, feed him 6 dark iron ale mugs, which can be bought from Plugger Spazzring. \nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",
 						})),
+						n(45843, {			-- Yuka Screwspigot <Engineering Supplies>
+								i(10602),   -- Schematic: Deadly Scope
+						}),
 						n(12944, { 			-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 							["groups"] = {
 								i(18628, {	-- Thorium Brotherhood Contract
