@@ -126,6 +126,20 @@ _.Instances =
 						},
 					}),
 					n(  0, {	-- Zone Drop
+							{    -- Red Punch Card
+								["itemID"] = 9281,        -- Red Punch Card
+								["requireSkill"] = 202,    -- Engineering
+								["g"] = {
+									{    -- Security DELTA Data Access Card
+										["itemID"] = 9327,        -- Security DELTA Data Access Card
+										["g"] = {
+											{    -- Schematic: Discombobulator Ray
+											["itemID"] = 4413,    -- Schematic: Discombobulator Ray
+											},
+										},
+									},
+								},
+							},
 						i(9308),	-- Grime-Encrusted Object
 						i(9510, {	-- Caverndeep Trudgers
 							["crs"] = {
