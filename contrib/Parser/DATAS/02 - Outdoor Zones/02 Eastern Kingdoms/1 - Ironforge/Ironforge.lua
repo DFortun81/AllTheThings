@@ -45,11 +45,19 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 ---					qg(6294, qa(38396)),	-- A Curious Oddity			
-					qg(9616, qa( 4513, { -- A Little Slime Goes a Long Way
-						i(12050),	-- Hazecover Boots
-						i(12051),	-- Brazen Gauntlets
-					})),					
---					qg(9616, qa( 4512)),	-- A Little Slime Goes a Long Way
+					qa(4512, {	-- A Little Slime Goes a Long Way
+						["qg"] = 9616,	-- Laris Geardawdle
+						["coord"] = { 75.7, 23.3 },
+					}),
+					qa(4513, {	-- A Little Slime Goes a Long Way
+						["g"] = {
+							i(12050),	-- Hazecover Boots
+							i(12051),	-- Brazen Gauntlets
+						},
+						["qg"] = 9616,	-- Laris Geardawdle
+						["coord"] = { 75.7, 23.3 },
+						["sourceQuests"] = { 4512 },	-- A Little Slime Goes a Long Way
+					}),
 					qg(16817, qa( 9365, {	-- A Thief's Reward
 						i(23323),	-- Crown of the Fire Festival (reportedly transmoggable since 6.2.1)
 					})),
@@ -147,12 +155,17 @@ _.Zones =
 						["races"] = {3,7}, -- Dwarf, Gnome
 					})),
 --]]					
-					qg(42129, qa(26118, { -- Seize the Ambassador
-						i(57583),	-- The Slaghammer
-						i(57584),	-- Battleaxe of the Sober Dwarf
-						i(57585),	-- Ambassador's Duplicitous Dagger
-						i(133692),	-- Ambassador's Deceitful Dagger
-					})),
+					qa(26118, { -- Seize the Ambassador
+						["g"] = {
+							i(57583),	-- The Slaghammer
+							i(57584),	-- Battleaxe of the Sober Dwarf
+							i(57585),	-- Ambassador's Duplicitous Dagger
+							i(133692),	-- Ambassador's Deceitful Dagger
+						},
+						["qg"] = 42129,	-- Moira Thaurissan
+						["coord"] = { 39.7, 57.3 },
+						["sourceQuests"] = { 26112 },	-- Demanding Answers
+					}),
 					qp164(qg(6031, qa( 1578, {	-- Supplying the Front
 						i(33792, {	-- Plans: Heavy Copper Longsword
 							i(33791),	-- Heavy Copper Longsword
