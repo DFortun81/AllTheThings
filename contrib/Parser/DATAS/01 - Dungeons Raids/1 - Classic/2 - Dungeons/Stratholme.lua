@@ -12,6 +12,11 @@ _.Instances =
 					n(-388, {	-- Main Gate
 						["description"] = "Stratholme is divided by several gates that ultimately make for two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 						["groups"] = {
+							ach(1244, {		-- Well Read
+								o(175756, {
+									crit(34),		-- The Scourge of Lordaeron (Stratholme, The Cape of Stranglethorn, Westfall, Ashenvale, Stranglethorn Vale)
+								}),
+							}),
 							n(-17, {	-- Quests
 								{
 									["questID"] = 27185,	-- Cutting the Competition

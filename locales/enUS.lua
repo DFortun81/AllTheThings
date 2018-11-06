@@ -2224,6 +2224,7 @@ AllTheThings.Locales.enUS = {
 		[164957] = "Eastern Crystal Pylon",
 		[169243] = "Chest of The Seven",
 		[173232] = "Blacksmithing Plans",
+		[175756] = "The Scourge of Lordaeron",
 		[176090] = "Human Remains",
 		[176091] = "Deadwood Cauldron",
 		[176392] = "Scourge Cauldron",
