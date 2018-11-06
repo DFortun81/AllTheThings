@@ -3,8 +3,9 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	m(407, { 	-- Darkmoon Island
-		["groups"] = {
+	{	-- Darkmoon Island
+		["mapID"] = 407,	-- Darkmoon Island
+		["g"] = {
 			n(-17, { -- Quests
 				{	-- Cards
 					["categoryID"] = 773,	-- Cards
@@ -1210,8 +1211,5 @@ _.WorldEvents =
 				}),
 			}),
 		},
-		["icon"] = "Interface\\Icons\\INV_DARKMOON_EYE",
-		["maps"] = { 408 },
-		["achievementID"] = 6019,	-- Come One, Come All!
-	}),	
+	},	
 };	

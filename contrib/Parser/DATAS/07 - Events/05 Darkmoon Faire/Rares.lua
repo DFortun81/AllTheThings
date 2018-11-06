@@ -3,7 +3,8 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	m(407, { 	-- Darkmoon Island
+	{	-- Darkmoon Island
+		["mapID"] = 407,	-- Darkmoon Island
 		["g"] = {
 			{	-- Rares
 				["npcID"] = -16,	-- Rares
@@ -88,8 +89,5 @@ _.WorldEvents =
 				},
 			},
 		},
-		["icon"] = "Interface\\Icons\\INV_DARKMOON_EYE",
-		["maps"] = { 408 },
-		["achievementID"] = 6019, -- Come One, Come All!
-	}),	
+	},	
 };	

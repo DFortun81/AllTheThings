@@ -3,8 +3,9 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	m(407, { 	-- Darkmoon Island
-		["groups"] = {
+	{	-- Darkmoon Island
+		["mapID"] = 407,	-- Darkmoon Island
+		["g"] = {
 			n(-25, { -- Pet Battle
 				n(85519, { -- Christoph VonFeasel
 					qd( q(36471, { -- A New Darkmoon Challenger!
@@ -31,8 +32,5 @@ _.WorldEvents =
 				p(1062), -- Darkmoon Glowfly
 			}),	
 		},
-		["icon"] = "Interface\\Icons\\INV_DARKMOON_EYE",
-		["maps"] = { 408 },
-		["achievementID"] = 6019, -- Come One, Come All!
-	}),	
+	},	
 };	

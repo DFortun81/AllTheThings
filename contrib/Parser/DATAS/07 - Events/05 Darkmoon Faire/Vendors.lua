@@ -3,8 +3,9 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	m(407, { 	-- Darkmoon Island
-		["groups"] = {
+	{	-- Darkmoon Island
+		["mapID"] = 407,	-- Darkmoon Island
+		["g"] = {
 			n(-2, {  -- Vendors
 				n(55072, { -- Barum
 					["groups"] = { 
@@ -491,8 +492,5 @@ _.WorldEvents =
 				},
 			}),	
 		},
-		["icon"] = "Interface\\Icons\\INV_DARKMOON_EYE",
-		["maps"] = { 408 },
-		["achievementID"] = 6019, -- Come One, Come All!
-	}),	
+	},	
 };	
