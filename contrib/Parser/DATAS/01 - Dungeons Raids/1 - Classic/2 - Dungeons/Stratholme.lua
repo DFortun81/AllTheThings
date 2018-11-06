@@ -12,11 +12,22 @@ _.Instances =
 					n(-388, {	-- Main Gate
 						["description"] = "Stratholme is divided by several gates that ultimately make for two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 						["groups"] = {
-							ach(1244, {		-- Well Read
-								o(175756, {
-									crit(34),		-- The Scourge of Lordaeron (Stratholme, The Cape of Stranglethorn, Westfall, Ashenvale, Stranglethorn Vale)
-								}),
-							}),
+							{	-- Achievements
+								["npcID"] = -4,	-- Achievements
+								["g"] = {
+									{	-- Well Read
+										["achievementID"] = 1244,	-- Well Read
+										["collectible"] = false,	-- We want to make the meta achievement count as 0 here since we can't complete it in this instance alone.
+										["g"] = {
+											{	-- The Scourge of Lordaeron
+												["objectID"] = 175756,		-- The Scourge of Lordaeron
+												["achievementID"] = 1244,	-- Well Read
+												["criteriaID"] = 34,		-- The Scourge of Lordaeron		Note!! Also in Westfall, Ashenvale, Stranglethorn Vale
+											},
+										},
+									},
+								},
+							},
 							n(-17, {	-- Quests
 								{
 									["questID"] = 27185,	-- Cutting the Competition
