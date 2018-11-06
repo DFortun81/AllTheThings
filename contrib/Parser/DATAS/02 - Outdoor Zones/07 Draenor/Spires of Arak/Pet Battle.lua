@@ -11,7 +11,7 @@ _.Zones =
 				["g"] = {
 					{	-- Pet Battle
 						["npcID"] = -25,	-- Pet Battles
-						["filterID"] = 101,	-- Battle Pets
+						["f"] = 101,	-- Battle Pets
 						["g"] = {
 							{	-- Adder
 								["crs"] = { 61325 },	-- Adder

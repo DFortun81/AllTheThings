@@ -264,7 +264,10 @@ _.WorldDrops =
 					i(15941),	-- High Councillor's Scepter
 					i(15942),	-- Master's Rod
 					i(15944),	-- Ancestral Orb
-					i(15945),	-- Runic Stave
+					{	-- Runic Stave
+						["itemID"] = 15945,	-- Runic Stave
+						["f"] = 28,			-- Staves	Note!! This is needed since Blizzard changed it from OH to Stave and removed it's filter
+					},
 					i(15946),	-- Mystic's Sphere
 					i(15947),	-- Sanguine Star
 					i(15962),	-- Satyr's Rod
