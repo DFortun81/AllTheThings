@@ -9,6 +9,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["questID"] = 33117,
 				["maps"] = { 554 }, -- Timeless Isle
 				["isRaid"] = true,
+				["lvl"] = 80,		-- Confirmed by Lucetia November 5, 2018
 				["groups"] = {
 					ach(8535, {	-- Celestial Challenge
 						{
@@ -293,7 +294,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			cr(69099, e(814, { 	-- Nalak, The Storm Lord
 				["isRaid"] = true,
 				["questID"] = 32518,
-				["maps"] = { 504 }, -- Isle of Thunder
+				["maps"] = { 504 }, 	-- Isle of Thunder
+				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
 				["groups"] = {
 					ach(8028),	-- Praise the Sun!
 					i(95602, {	-- Stormtouched Cache
@@ -567,7 +569,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			cr(69161, e(826, { 	-- Oondasta
 				["isRaid"] = true,
 				["questID"] = 32519,
-				["maps"] = { 507 }, -- Isle of Giants
+				["maps"] = { 507 }, 	-- Isle of Giants
+				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
 				["groups"] = {
 					ach(8123),	-- Millions of Years of Evolution vs. My Fist
 					i(95601, { -- Shiny Pile of Refuse
@@ -646,8 +649,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			cr(72057, e(861, { 	-- Ordos, Fire-God of the Yaungol
 				["questID"] = 33118,
 				["isRaid"] = true,
-				["u"] = 38,	-- Ordos - Legendary Cloak
-				["maps"] = { 554 }, -- Timeless Isle
+				["u"] = 38,				-- Ordos - Legendary Cloak
+				["lvl"] = 80,			-- Confirmed by Lucetia November 5, 2018
+				["maps"] = { 554 }, 	-- Timeless Isle
 				["groups"] = {
 					un(38, ach(8533)),	-- Ordos
 					un(38, i(104273, {	-- Flame-Scarred Cache of Offerings
@@ -714,7 +718,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			cr(62346, e(725, { 	-- Saylis's Warband -- Galleon
 				["isRaid"] = true,
 				["questID"] = 32098,
-				["maps"] = { 376 }, -- Valley of the Four Winds
+				["maps"] = { 376 }, 	-- Valley of the Four Winds
+				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
 				["groups"] = {
 					ach(6517),	-- Extinction Event
 					i(89783),	-- Son of Galleon's Saddle
@@ -837,7 +842,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["achievementID"] = 6480,
 				["isRaid"] = true,
 				["questID"] = 32099,
-				["maps"] = { 379 }, -- Kun-Lai Summit
+				["maps"] = { 379 },		-- Kun-Lai Summit
+				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
 				["groups"] = {
 					{
 						["achievementID"] = 6926,	-- Tranquil Master
@@ -1040,6 +1046,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			})),
 		},
 		["isRaid"] = true,
-		["lvl"] = 85,
+		["lvl"] = 80,
 	}),
 })};
