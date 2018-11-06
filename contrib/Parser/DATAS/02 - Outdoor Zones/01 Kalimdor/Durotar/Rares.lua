@@ -40,6 +40,14 @@ _.Zones =
 							i(6337),	-- Infantry Leggings
 							i(6269),	-- Pioneer Trousers
 						},
+						["coords"] = {
+							{ 34.8, 43.8 },
+							{ 35.6, 46.0 },
+							{ 37.8, 47.8 },
+							{ 39.6, 45.6 },
+							{ 38.6, 44.0 },
+							{ 36.6, 44.4 },
+						},
 					}),
 					n(5822, {	-- Felweaver Scornn
 						["groups"] = {
@@ -69,6 +77,11 @@ _.Zones =
 							i(6269),	-- Pioneer Trousers
 							i(6268),	-- Pioneer Tunic
 						},
+						["coords"] = {
+							{ 51.8, 9.6 },
+							{ 53.2, 7.6 },
+						},
+						["description"] = "Inside the Skull Rock cave.",
 					}),
 					n(5826, {	-- Geolord Mottle -- NO TRANSMOGGABLE LOOT!
 						["coords"] = {
