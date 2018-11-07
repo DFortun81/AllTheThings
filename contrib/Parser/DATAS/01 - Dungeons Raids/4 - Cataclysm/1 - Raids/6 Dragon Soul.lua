@@ -63,12 +63,15 @@ _.Instances =
 										i(78833),	-- Blackfang Battleweave Spaulders
 									}),
 									i(78863, {	-- Chest of the Corrupted Conqueror
-										i(78822),	-- Battleplate of Radiant Glory
-										i(78821),	-- Breastplate of Radiant Glory
-										i(78827),	-- Chestguard of Radiant Glory
-										i(78823),	-- Robes of Dying Light
-										i(78826),	-- Robes of Dying Light
-										i(78825),	-- Robes of the Faceless Shroud
+										["groups"] = {
+											i(78822),	-- Battleplate of Radiant Glory
+											i(78821),	-- Breastplate of Radiant Glory
+											i(78827),	-- Chestguard of Radiant Glory
+											i(78823),	-- Robes of Dying Light
+											i(78826),	-- Robes of Dying Light
+											i(78825),	-- Robes of the Faceless Shroud
+										},
+										["description"] = "Paladin Completionist will want to take this item to the vendor to get the specific item they want.  Right-clicking can award the Holy piece regardless of your spec.",
 									}),
 									i(78864, {	-- Chest of the Corrupted Protector
 										i(78756),	-- Wyrmstalker's Tunic
