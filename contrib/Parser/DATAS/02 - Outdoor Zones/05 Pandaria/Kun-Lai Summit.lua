@@ -39,10 +39,12 @@ _.Zones =
 								dr(18, i(86221)),	-- Wise Sprite Cloak
 								dr(7, i(86224)),	-- Steadfast Sprite Cape
 							},
+							["coord"] = { 74.6, 74.8 },
 							["questID"] = 31412,
 							["model"] = "World\\SkillActivated\\Containers\\TreasureChest04.mdx",
 							["modelScale"] = 1.5,
 							["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
+							["description"] = "Cave entrance is at 73.2, 73.6.",
 						}),
 						o(213842, {	-- Stash of Yaungol Weapons
 							["groups"] = {

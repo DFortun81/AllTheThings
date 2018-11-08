@@ -27,10 +27,12 @@ _.Zones =
 								dr(04.0, i(86120)),	-- Seafaring Sabatons of Meditation
 								dr(00.9, i(86121)),	-- Radiant Seafarer's Boots
 							},
+							["coord"] = { 42.3, 92.0 },
 							["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 							["modelScale"] = 1.5,
 							["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 							["questID"] = 31410,
+							["description"] = "On the bottom level of the ship — you will have to go down two sets of stairs.",
 						}),
 						o(213653, {		-- Pandaren Fishing Spear
 							["groups"] = {
