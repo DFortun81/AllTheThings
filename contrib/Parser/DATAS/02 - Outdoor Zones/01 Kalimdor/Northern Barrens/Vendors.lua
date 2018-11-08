@@ -8,16 +8,20 @@ _.Zones =
 			["groups"] = {
 				n(-2,  {	-- Vendors
 					n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
-						i(4797),	-- Fiery Cloak
-						i(4798),	-- Heavy Runed CLoak
-						i(4820),	-- Guardian Buckler
-						i(4816),	-- Legionnaire's Leggings
-						i(4799),	-- Antiquated Cloak
-						i(4800),	-- Mighty Chain Pants
-						i(4821),	-- Bear Buckler
-						i(4822),	-- Owl's Disk
+						["groups"] = {
+							i(4797),	-- Fiery Cloak
+							i(4798),	-- Heavy Runed CLoak
+							i(4820),	-- Guardian Buckler
+							i(4816),	-- Legionnaire's Leggings
+							i(4799),	-- Antiquated Cloak
+							i(4800),	-- Mighty Chain Pants
+							i(4821),	-- Bear Buckler
+							i(4822),	-- Owl's Disk
+						},
+						["coord"] = { 67.6, 72.8 },
 					}),
-					h(n(3486, {	-- Halija Whitestrider <Clothier>
+					n(3486, {	-- Halija Whitestrider <Clothier>
+						["groups"] = {
 						i(4790),	-- Inferno Cloak
 						i(4793),	-- Sylvan Cloak
 						i(4792),	-- Spirit Cloak
@@ -27,64 +31,114 @@ _.Zones =
 						i(3428),	-- Common Gray Shirt
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
-					})),
-					nh(3490, {	-- Hula'mahi <Reagents, Herbs & Poison Supplies>
-						i(6053),	-- Recipe: Holy Protection Potion
+						},
+						["coord"] = { 50.0, 61.4 },
+						["races"] = HORDE_ONLY,
+					}),
+					n(3490, {	-- Hula'mahi <Reagents, Herbs & Poison Supplies>
+						["groups"] = {
+							i(6053),	-- Recipe: Holy Protection Potion
+						},
+						["coord"] = { 48.6, 58.4 },
+						["races"] = HORDE_ONLY,
 					}),
 					n(3497, {	-- Kilxx <Fisherman>
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6368),	-- Recipe: Rainbow Fin Albacore
+						["groups"] = {
+							i(6330),	-- Recipe: Bristle Whisker Catfish
+							i(6368),	-- Recipe: Rainbow Fin Albacore
+						},
+						["coord"] = { 68.6, 72.6 },
 					}),
 					n(3658, {	-- Lizzarik <Weapon Dealer>
-						i(4778),	-- Heavy Spiked Mace
-						i(4777),	-- Ironwood Maul
-						i(4765),	-- Enamelled Broadsword
-						i(4766),	-- Feral Blade
+						["groups"] = {
+							i(4778),	-- Heavy Spiked Mace
+							i(4777),	-- Ironwood Maul
+							i(4765),	-- Enamelled Broadsword
+							i(4766),	-- Feral Blade
+						},
+						["coords"] = {
+							{ 66.8, 72.6 },
+							{ 50.2, 59.2 },
+						},
+						["description"] = "Travels on the road between Ratchet and The Crossroads.",
 					}),
-					nh(3479, {	-- Nargal Deatheye <Weaponsmith>
-						i(4765),	-- Enamelled Broadsword
-						i(4766),	-- Feral Blade
+					n(3479, {	-- Nargal Deatheye <Weaponsmith>
+						["groups"] = {
+							i(4765),	-- Enamelled Broadsword
+							i(4766),	-- Feral Blade
+						},
+						["coord"] = { 48.2, 56.6 },
+						["races"] = HORDE_ONLY,
 					}),
 					n(3499, {	-- Ranik <Trade Supplies>
-						i(20855),	-- Design: Wicked Moonstone Ring
-						i(6272), 	-- Pattern: Blue Linen Robe
-						i(6275),	-- Pattern: Greater Adept's Robe
-						i(5640),	-- Recipe: Rage Potion
+						["groups"] = {
+							i(20855),	-- Design: Wicked Moonstone Ring
+							i(6272), 	-- Pattern: Blue Linen Robe
+							i(6275),	-- Pattern: Greater Adept's Robe
+							i(5640),	-- Recipe: Rage Potion
+						},
+						["coord"] = { 67.0, 73.4 },
 					}),
-					nh(8307, {	-- Tarban Hearthgrain <Baker>
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+					n(8307, {	-- Tarban Hearthgrain <Baker>
+						["groups"] = {
+							i(21219),	-- Recipe: Sagefish Delight
+							i(21099),	-- Recipe: Smoked Sagefish
+						},
+						["coord"] = { 55.0, 61.6 },
+						["races"] = HORDE_ONLY,
 					}),
-					h(n(3482, {	-- Tari'qa <Trade Supplies>
-						i(5488),	-- Recipe: Crispy Lizard Tail
-						i(5486),	-- Recipe: Strider Stew
-					})),
-					h(n(3488, {	-- Uthrok <Bowyer & Gunsmith>
-						i(11304),	-- Fine Longbow
-					})),
+					n(3482, {	-- Tari'qa <Trade Supplies>
+						["groups"] = {
+							i(5488),	-- Recipe: Crispy Lizard Tail
+							i(5486),	-- Recipe: Strider Stew
+						},
+						["coord"] = { 49.0, 58.2 },
+						["races"] = HORDE_ONLY,
+					}),
+					n(3488, {	-- Uthrok <Bowyer & Gunsmith>
+						["groups"] = {
+							i(11304),	-- Fine Longbow
+						},
+						["coord"] = { 48.0, 56.4 },
+						["races"] = HORDE_ONLY,
+					}),
 					n(3492, {	-- Vexspindle <Cloth & Leather Armor Merchant>
-						i(4794),	-- Wolf Bracers
-						i(4795),	-- Bear Bracers
-						i(4796),	-- Owl Bracers
+						["groups"] = {
+							i(4794),	-- Wolf Bracers
+							i(4795),	-- Bear Bracers
+							i(4796),	-- Owl Bracers
+						},
+						["coord"] = { 67.4, 72.8 },
 					}),
-					h(n(3682, {	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
-						i(4797),	-- Fiery Cloak
-						i(4798),	-- Heavy Runed CLoak
-						i(4816),	-- Legionnaire's Leggings
-						i(4799),	-- Antiquated Cloak
-						i(4800),	-- Mighty Chain Pants
-						i(4778),	-- Heavy Spiked Mace
-						i(4777),	-- Ironwood Maul
-						i(4765),	-- Enamelled Broadsword
-						i(4766),	-- Feral Blade
-					})),
-					h(n(3485, {	-- Wrahk <Tailoring Supplies>
-						i(6272),	-- Pattern: Blue Linen Robe
-						i(6270),	-- Pattern: Blue Linen Vest
-						i(5772),	-- Pattern: Red Woolen Bag
-					})),
-					nh(3489, {	-- Zargh <Butcher>
-						i(3735), 	-- Recipe: Hot Lion Chops
+					n(3682, {	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
+						["groups"] = {
+							i(4797),	-- Fiery Cloak
+							i(4798),	-- Heavy Runed CLoak
+							i(4816),	-- Legionnaire's Leggings
+							i(4799),	-- Antiquated Cloak
+							i(4800),	-- Mighty Chain Pants
+							i(4778),	-- Heavy Spiked Mace
+							i(4777),	-- Ironwood Maul
+							i(4765),	-- Enamelled Broadsword
+							i(4766),	-- Feral Blade
+						},
+						["coord"] = { 35.0, 26.8 },
+						["races"] = HORDE_ONLY,
+					}),
+					n(3485, {	-- Wrahk <Tailoring Supplies>
+						["groups"] = {
+							i(6272),	-- Pattern: Blue Linen Robe
+							i(6270),	-- Pattern: Blue Linen Vest
+							i(5772),	-- Pattern: Red Woolen Bag
+						},
+						["coord"] = { 50.0, 61.0 },
+					}),
+					n(3489, {	-- Zargh <Butcher>
+						["groups"] = {
+							i(3735), 	-- Recipe: Hot Lion Chops
+						},
+						["coord"] = { 50.6, 57.8 },
+						["races"] = HORDE_ONLY,
 					}),
 				}),
 			},
