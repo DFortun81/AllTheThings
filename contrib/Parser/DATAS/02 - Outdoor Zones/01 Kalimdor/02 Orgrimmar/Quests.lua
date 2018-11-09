@@ -25,7 +25,7 @@ _.Zones =
 								},
 							}),
 						},
-						["races"] = 36,	-- Mag'har Orc
+						["races"] = { 36 },	-- Mag'har Orc
 					}),
 					q(53028, {	-- A Dying World
 						["qg"] = 140176, -- Nathanos Blightcaller
