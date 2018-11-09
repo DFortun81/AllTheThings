@@ -158,105 +158,116 @@ _.Instances =
 									55689, -- Hagara the Stormbinder
 									55294, -- Ultraxion
 									56427, -- Warmaster Blackhorn
+									80675,	-- Auridormi <Raid Finder Guardian>
 								},
 							}),
 							ach(6106, {	-- Siege of Wyrmrest Temple
-								cr(55265, e(311, {	-- Morchok
-									i(78379),	-- Hand of Morchok
-									i(78383),	-- Vagaries of Time
-									i(78382),	-- Petrified Fungal Heart
-									i(78378),	-- Brackenshell Shoulderplates
-									i(78381),	-- Mosswrought Shoulderguards
-									i(78375),	-- Underdweller's Spaulders
-									i(78380),	-- Robe of Glowing Stone
-									i(78384),	-- Mycosynth Wristguards
-									i(78377),	-- Rockhide Bracers
-									i(78376),	-- Sporebeard Gauntlets
-									i(78385),	-- Girdle of Shattered Stone
-									i(78386),	-- Pillarfoot Greaves
-								})),
-								cr(55308, e(324, {	-- Warlord Zon'ozz
-									i(78399),	-- Finger of Zon'ozz
-									i(78394),	-- Horrifying Horn Arbalest (not listed on drop table on wowhead)
-									i(78397),	-- Graveheart Bracers
-									i(78400),	-- Grotesquely Writhing Bracers
-									i(78395),	-- Belt of Flayed Skin
-									i(78398),	-- Cord of the Slain Champion
-									i(78396),	-- Treads of Crushed Flesh
-									i(77969),	-- Seal of the Signs [Dropped for Lucetia]
-								})),
-								cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-									i(152979),	-- Puddle of Black Liquid (PET!)
-									i(78409),	-- Experimental Specimen Slicer
-									i(78407),	-- Spire of Coagulated Globules
-									i(78410),	-- Scalpel of Unrelenting Agony (not listed on drop table on wowhead)
-									i(78412),	-- Heartblood Wristplates
-									i(78408),	-- Interrogator's Bloody Footpads
-									i(78411),	-- Mindstrainer Treads
-									i(77971), 	-- Insignia of the Corrupted Mind
-									i(77970),	-- Soulshifter Vortex
-								})),
-								cr(55689, e(317, {	-- Hagara the Stormbinder
-									i(78426),	-- Lightning Rod
-									i(78422),	-- Electrowing Dagger
-									i(78425),	-- Bracers of the Banished
-									i(78428),	-- Girdle of the Grotesque
-									i(78424),	-- Runescriven Demon Collar
-									i(78423),	-- Treads of Dormant Dreams
-									i(78427),	-- Ring of the Raven
-									i(78421),	-- Signet of Grasping Mouths
-								})),
+								["crs"] = {
+									80675,	-- Auridormi <Raid Finder Guardian>
+								},
+								["groups"] = {
+									cr(55265, e(311, {	-- Morchok
+										i(78379),	-- Hand of Morchok
+										i(78383),	-- Vagaries of Time
+										i(78382),	-- Petrified Fungal Heart
+										i(78378),	-- Brackenshell Shoulderplates
+										i(78381),	-- Mosswrought Shoulderguards
+										i(78375),	-- Underdweller's Spaulders
+										i(78380),	-- Robe of Glowing Stone
+										i(78384),	-- Mycosynth Wristguards
+										i(78377),	-- Rockhide Bracers
+										i(78376),	-- Sporebeard Gauntlets
+										i(78385),	-- Girdle of Shattered Stone
+										i(78386),	-- Pillarfoot Greaves
+									})),
+									cr(55308, e(324, {	-- Warlord Zon'ozz
+										i(78399),	-- Finger of Zon'ozz
+										i(78394),	-- Horrifying Horn Arbalest (not listed on drop table on wowhead)
+										i(78397),	-- Graveheart Bracers
+										i(78400),	-- Grotesquely Writhing Bracers
+										i(78395),	-- Belt of Flayed Skin
+										i(78398),	-- Cord of the Slain Champion
+										i(78396),	-- Treads of Crushed Flesh
+										i(77969),	-- Seal of the Signs [Dropped for Lucetia]
+									})),
+									cr(55312, e(325, {	-- Yor'sahj the Unsleeping
+										i(152979),	-- Puddle of Black Liquid (PET!)
+										i(78409),	-- Experimental Specimen Slicer
+										i(78407),	-- Spire of Coagulated Globules
+										i(78410),	-- Scalpel of Unrelenting Agony (not listed on drop table on wowhead)
+										i(78412),	-- Heartblood Wristplates
+										i(78408),	-- Interrogator's Bloody Footpads
+										i(78411),	-- Mindstrainer Treads
+										i(77971), 	-- Insignia of the Corrupted Mind
+										i(77970),	-- Soulshifter Vortex
+									})),
+									cr(55689, e(317, {	-- Hagara the Stormbinder
+										i(78426),	-- Lightning Rod
+										i(78422),	-- Electrowing Dagger
+										i(78425),	-- Bracers of the Banished
+										i(78428),	-- Girdle of the Grotesque
+										i(78424),	-- Runescriven Demon Collar
+										i(78423),	-- Treads of Dormant Dreams
+										i(78427),	-- Ring of the Raven
+										i(78421),	-- Signet of Grasping Mouths
+									})),
+								},
 							}),
 							ach(6107, {	-- Fall of Deathwing	
-								cr(55294, e(331, {	-- Ultraxion
-									i(78437),	-- Morningstar of Heroic Will
-									i(78441),	-- Ledger of Revolting Rituals
-									i(78443),	-- Imperfect Specimens 27 and 28
-									i(78438),	-- Bracers of Looming Darkness
-									i(78444),	-- Dragonfracture Belt
-									i(78439),	-- Stillheart Warboots
-									i(78442),	-- Treads of Sordid Screams
-									i(77972),	-- Creche of the Final Dragon
-									i(78440),	-- Curled Twilight Claw
-								})),
-								cr(56427, e(332, {	-- Warmaster Blackthorn
-									i(78453),	-- Ataraxis, Cudgel of the Warmaster
-									i(78459),	-- Visage of the Destroyer
-									i(78456),	-- Blackhorn's Mighty Bulwark
-									i(78458),	-- Timepiece of the Bronze Flight
-									i(78454),	-- Shadow Wing Armbands
-									i(78455),	-- Belt of the Beloved Companion
-									i(78460),	-- Goriona's Collar
-									i(78457),	-- Janglespur Jackboots
-									i(77973),	-- Starcatcher Compass
-								})),
-								cr(53879, e(318, {	-- Spine of Deathwing
-									i(152980),	-- Elementium Back Plate (PET!)
-									i(78470),	-- Backbreaker Spaulders
-									i(78466),	-- Gloves of Liquid Smoke
-									i(78469),	-- Gauntlets of the Golden Thorn
-									i(78467),	-- Molten Blood Footpads
-									i(78468),	-- Belt of Shattered Elementium
-									i(77977),	-- Eye of Unmaking
-									i(77976),	-- Heart of Unliving
-									i(77978),	-- Resolve of Undying
-									i(77975),	-- Will of Unbinding
-									i(77974),	-- Wrath of Unchaining
-									i(122198),	-- Music Roll: The Shattering [Note: Crieve got on stream]
-								})),
-								cr(56173, e(333, {	-- Madness of Deathwing
-									i(152981),	-- Severed Tentacle (PET!)
-									i(78482),	-- Kiril, Fury of Beasts
-									i(78487),	-- Gurthalak, Voice of the Deeps
-									i(78483),	-- Blade of the Unmaker
-									i(78485),	-- Maw of the Dragonlord
-									i(78481),	-- No'Kaled, the Elements of Death
-									i(78484),	-- Rathrak, the Poisonous Mind
-									i(78488),	-- Souldrinker
-									i(78486),	-- Ti'tahk, the Steps of Time
-									i(78480),	-- Vishanka, Jaws of the Earth
-									i(89810),	-- Bounty of a Sundered Land								
-								})),
+								["crs"] = {
+									80675,	-- Auridormi <Raid Finder Guardian>
+								},
+								["groups"] = {
+									cr(55294, e(331, {	-- Ultraxion
+										i(78437),	-- Morningstar of Heroic Will
+										i(78441),	-- Ledger of Revolting Rituals
+										i(78443),	-- Imperfect Specimens 27 and 28
+										i(78438),	-- Bracers of Looming Darkness
+										i(78444),	-- Dragonfracture Belt
+										i(78439),	-- Stillheart Warboots
+										i(78442),	-- Treads of Sordid Screams
+										i(77972),	-- Creche of the Final Dragon
+										i(78440),	-- Curled Twilight Claw
+									})),
+									cr(56427, e(332, {	-- Warmaster Blackthorn
+										i(78453),	-- Ataraxis, Cudgel of the Warmaster
+										i(78459),	-- Visage of the Destroyer
+										i(78456),	-- Blackhorn's Mighty Bulwark
+										i(78458),	-- Timepiece of the Bronze Flight
+										i(78454),	-- Shadow Wing Armbands
+										i(78455),	-- Belt of the Beloved Companion
+										i(78460),	-- Goriona's Collar
+										i(78457),	-- Janglespur Jackboots
+										i(77973),	-- Starcatcher Compass
+									})),
+									cr(53879, e(318, {	-- Spine of Deathwing
+										i(152980),	-- Elementium Back Plate (PET!)
+										i(78470),	-- Backbreaker Spaulders
+										i(78466),	-- Gloves of Liquid Smoke
+										i(78469),	-- Gauntlets of the Golden Thorn
+										i(78467),	-- Molten Blood Footpads
+										i(78468),	-- Belt of Shattered Elementium
+										i(77977),	-- Eye of Unmaking
+										i(77976),	-- Heart of Unliving
+										i(77978),	-- Resolve of Undying
+										i(77975),	-- Will of Unbinding
+										i(77974),	-- Wrath of Unchaining
+										i(122198),	-- Music Roll: The Shattering [Note: Crieve got on stream]
+									})),
+									cr(56173, e(333, {	-- Madness of Deathwing
+										i(152981),	-- Severed Tentacle (PET!)
+										i(78482),	-- Kiril, Fury of Beasts
+										i(78487),	-- Gurthalak, Voice of the Deeps
+										i(78483),	-- Blade of the Unmaker
+										i(78485),	-- Maw of the Dragonlord
+										i(78481),	-- No'Kaled, the Elements of Death
+										i(78484),	-- Rathrak, the Poisonous Mind
+										i(78488),	-- Souldrinker
+										i(78486),	-- Ti'tahk, the Steps of Time
+										i(78480),	-- Vishanka, Jaws of the Earth
+										i(89810),	-- Bounty of a Sundered Land								
+									})),
+								},
 							}),	
 						},
 					}),
