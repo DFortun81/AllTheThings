@@ -254,7 +254,19 @@ _.Zones =
 									24572,	-- Taking Back Taurajo
 								},
 							},
-							{	-- Parts-is-Parts (aa)
+							{	-- Flightmare
+								["questID"] = 24631,
+								["groups"] = {
+									i(53259),	-- Tomusa's Sword
+									i(53233),	-- Earthbound Leggings
+									i(53234),	-- Flightmare Mantle
+									i(131382),	-- Earthbound Trousers
+								},
+								["qg"] = 37909,	-- Tomusa
+								["coord"] = { 41.0, 70.9 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Parts-is-Parts
 								["questID"] = 24619,
 								["qg"] = 37908,	-- Calder Gray
 								["coord"] = { 42.6, 70.2 },
@@ -392,18 +404,6 @@ _.Zones =
 							},
 						}),
 						crit(7, {	-- Spearhead
-							{	-- Flightmare
-								["questID"] = 24631,
-								["groups"] = {
-									i(53259),	-- Tomusa's Sword
-									i(53233),	-- Earthbound Leggings
-									i(53234),	-- Flightmare Mantle
-									i(131382),	-- Earthbound Trousers
-								},
-								["qg"] = 37909,	-- Tomusa
-								["coord"] = { 41.0, 70.9 },
-								["races"] = HORDE_ONLY,
-							},
 							{	-- Tauren Vengeance
 								["questID"] = 24632,
 								["qg"] = 37909,	-- Tomusa
