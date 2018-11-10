@@ -8553,7 +8553,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		self.initialized = true;
 		
 		-- Define the different window configurations that the mini list will switch to based on context.
-		local raidassistant, lootspecialization, lootmethod, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
+		local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
 		
 		-- Raid Assistant
 		local difficultyLookup = {
@@ -8566,43 +8566,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			group = "Group loot, round-robin for normal items, rolling for special ones.\n\nClick twice to create a group automatically if you're by yourself.",
 			master = "Master looter, designated player distributes loot.\n\nClick twice to create a group automatically if you're by yourself.",
 		};
-		local setLootMethod = function(self, meth)
-			if IsInGroup() then
-				self.data = raidassistant;
-				if meth == "master" then
-					SetLootMethod(meth, UnitName("player"));
-				else
-					SetLootMethod(meth);
-				end
-				self:Update(true);
-			else
-				if not GroupFinderFrame:IsVisible() then
-					PVEFrame_ShowFrame("GroupFinderFrame")
-				end
-				GroupFinderFrameGroupButton4:Click()
-				LFGListCategorySelection_SelectCategory(LFGListFrame.CategorySelection,6,0)
-				LFGListFrame.CategorySelection.StartGroupButton:Click()
-				LFGListFrame.EntryCreation.Name:SetText("ZZZ ATT - Solo Loot Method");
-				LFGListFrame.EntryCreation.ListGroupButton:Click()
-				self.frame = self.frame or CreateFrame("Frame")
-				self.frame:SetScript("OnEvent",function(f)
-					if LFGListFrame.ApplicationViewer.AutoAcceptButton:GetChecked() then
-						LFGListFrame.ApplicationViewer.AutoAcceptButton:Click()
-					end
-					C_Timer.After(0.6, function()
-						self.data = raidassistant;
-						if meth == "master" then
-							SetLootMethod(meth, UnitName("player"));
-						else
-							SetLootMethod(meth);
-						end
-						self:Update(true);
-					end);
-					f:UnregisterEvent("LFG_LIST_ACTIVE_ENTRY_UPDATE")
-				end)
-				self.frame:RegisterEvent("LFG_LIST_ACTIVE_ENTRY_UPDATE")
-			end
-		end
 		local switchDungeonDifficulty = function(row, button)
 			self.data = raidassistant;
 			SetDungeonDifficultyID(row.ref.difficultyID);
@@ -8652,20 +8615,81 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['back'] = 0.5,
 				},
 				{
-					['text'] = "Personal", 
-					['title'] = "Loot Method",
-					["description"] = "The loot method dictates what kind of loot will drop and how much. You must be in a party to utilize Loot Method switching, but ATT will automatically create a group for you if you click any of the options within twice.\n\nClick this row to change it now!",
-					['icon'] = "Interface\\Icons\\Inv_legion_chest_Valajar.blp",
+					['text'] = "Reset Instances",
+					['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
+					['basedescription'] = "Click here to reset your instances.",
 					['visible'] = true,
 					['OnClick'] = function(row, button)
-						self.data = lootmethod;
-						self:Update(true);
+						ResetInstances();
 						return true;
 					end,
 					['OnUpdate'] = function(data)
-						if app.LootMethod then
-							data.text = difficultyLookup[app.LootMethod] or app.LootMethod;
+						local locks = GetTempDataMember("lockouts");
+						if locks then
+							local description = data.basedescription .. "\n\nCurrent Instance Locks:";
+							for name, instance in pairs(locks) do
+								description = description .. "\n  " .. name;
+								if instance.shared then
+									-- shared raid lockout
+									local count, total = 0, 0;
+									for i,encounter in ipairs(instance.shared.encounters) do
+										if encounter.isKilled then count = count + 1; end
+										total = total + 1;
+									end
+									description = description .. " (" .. count .. " / " .. total .. ")";
+								else
+									-- specific difficulties
+									description = description .. "\n";
+									for difficultyID,difficulty in pairs(instance) do
+										description = description .. "    " .. "TODO " .. difficultyID;
+										
+										local count, total = 0, 0;
+										for i,encounter in ipairs(difficulty.encounters) do
+											if encounter.isKilled then count = count + 1; end
+											total = total + 1;
+										end
+										description = description .. " (" .. count .. " / " .. total .. ")";
+									end
+								end
+							end
+							data.description = description;
+							UpdateWindow(self, true);
+						elseif not data.description then
+							data.description = data.basedescription;
+							UpdateWindow(self, true);
 						end
+					end,
+					['back'] = 0.5,
+				},
+				{
+					['text'] = "Delist Group",
+					['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
+					['description'] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						C_LFGList.RemoveListing();
+						if GroupFinderFrame:IsVisible() then
+							PVEFrame_ToggleFrame("GroupFinderFrame")
+						end
+						self.data = raidassistant;
+						UpdateWindow(self, true);
+						return true;
+					end,
+					['back'] = 0.5,
+				},
+				{
+					['text'] = "Leave Group",
+					['icon'] = "Interface\\Icons\\Ability_Vanish",
+					['description'] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						LeaveParty();
+						if GroupFinderFrame:IsVisible() then
+							PVEFrame_ToggleFrame("GroupFinderFrame")
+						end
+						self.data = raidassistant;
+						UpdateWindow(self, true);
+						return true;
 					end,
 					['back'] = 0.5,
 				},
@@ -8783,89 +8807,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			['expanded'] = true,
 			['back'] = 1,
 			['g'] = {},
-		};
-		lootmethod = {
-			['text'] = "Loot Method",
-			['icon'] = "Interface\\Icons\\Inv_legion_chest_Valajar.blp",
-			["description"] = "This setting allows you to customize what kind of loot will drop and how much.\n\nThis only works while in a party - If you're by yourself, you can create a Premade Group (just don't invite anyone) and then change it.\n\nClick this row to go back to the Raid Assistant.",
-			['OnClick'] = function(row, button)
-				self.data = raidassistant;
-				self:Update(true);
-				return true;
-			end,
-			['visible'] = true, 
-			['expanded'] = true,
-			['back'] = 1,
-			['g'] = {
-				{
-					['text'] = difficultyLookup["personalloot"],
-					['icon'] = "Interface\\Icons\\Ability_Stealth",
-					['description'] = difficultyDescriptions["personalloot"],
-					['id'] = "personalloot",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						setLootMethod(self, row.ref.id);
-						return true;
-					end,
-					['back'] = 0.5,
-				},
-				{
-					['text'] = difficultyLookup["group"],
-					['icon'] = "Interface\\Icons\\INV_Misc_GroupNeedMore",
-					['description'] = difficultyDescriptions["group"],
-					['id'] = "group",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						setLootMethod(self, row.ref.id);
-						return true;
-					end,
-					['back'] = 0.5,
-				},
-				{
-					['text'] = difficultyLookup["master"],
-					['icon'] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",
-					['description'] = difficultyDescriptions["master"],
-					['id'] = "master",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						setLootMethod(self, row.ref.id);
-						return true;
-					end,
-					['back'] = 0.5,
-				},
-				{
-					['text'] = "Delist Group",
-					['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
-					['description'] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						C_LFGList.RemoveListing();
-						if GroupFinderFrame:IsVisible() then
-							PVEFrame_ToggleFrame("GroupFinderFrame")
-						end
-						self.data = raidassistant;
-						UpdateWindow(self, true);
-						return true;
-					end,
-					['back'] = 0.5,
-				},
-				{
-					['text'] = "Leave Group",
-					['icon'] = "Interface\\Icons\\Ability_Vanish",
-					['description'] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						LeaveParty();
-						if GroupFinderFrame:IsVisible() then
-							PVEFrame_ToggleFrame("GroupFinderFrame")
-						end
-						self.data = raidassistant;
-						UpdateWindow(self, true);
-						return true;
-					end,
-					['back'] = 0.5,
-				},
-			},
 		};
 		dungeondifficulty = {
 			['text'] = "Dungeon Difficulty",
@@ -8985,7 +8926,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	end
 	
 	-- Update the window and all of its row data
-	app.LootMethod = select(1, GetLootMethod());
 	app.LegacyRaidDifficulty = GetLegacyRaidDifficultyID() or 1;
 	app.DungeonDifficulty = GetDungeonDifficultyID() or 1;
 	app.RaidDifficulty = GetRaidDifficultyID() or 14;
