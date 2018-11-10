@@ -271,10 +271,10 @@ _.Zones =
 									i(111955), -- Skog's Drape
 								},
 							},
-							{	-- Hoarfrost <Tempest of Ice>	**Coords uncofirmed, relied on wowhead**
+							{	-- Hoarfrost <Tempest of Ice>
 								["npcID"] = 87348,	-- Hoarfrost <Tempest of Ice>
 								["questID"] = 37382,
-								["coord"] = { 68.0, 19.8 },
+								["coord"] = { 68.10, 19.88 },
 								["isDaily"] = true,
 								["g"] = {
 									i(119415),	-- Frosted Icequartz Ring

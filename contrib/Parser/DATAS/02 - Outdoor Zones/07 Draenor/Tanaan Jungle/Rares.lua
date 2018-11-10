@@ -13,13 +13,6 @@ _.Zones =
 						["npcID"] = -16,	-- Rares
 						["g"]= {
 							-- Coords have been confirmed on rares except for some noted rares on longer spawn timers.
-							{	-- "Borrowed" Enchanted Spyglass	**Coords uncofirmed, relied on wowhead**
-								["objectID"] = 241664,	-- "Borrowed" Enchanted Spyglass
-								["coord"] = { 25.5, 50.2 }, 
-								["g"] = {
-									i(128222),	-- Smokeglass Lens Spyglass
-								},
-							},
 							{	-- Argosh the Destroyer	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 91871,	-- Argosh the Destroyer
 								["questID"] = 38430,
@@ -58,21 +51,26 @@ _.Zones =
 									i(127307), 	-- Battle-Scuffed Spaulders 
 								},
 							},
-							{	-- Bleeding Hollow Horror	**Coords uncofirmed, relied on wowhead**
+							{	-- Bleeding Hollow Horror
 								["npcID"] = 92657,	-- Bleeding Hollow Horror
 								["questID"] = 38696,
 								["isDaily"] = true,
-								["coord"] = { 51.0, 74.8 },
+								["description"] = "First set of coords are cave entrance, second set are npc.",
+								["coords"] = {
+									{ 44.6, 77.5 },		-- Cave Entrance
+									{ 50.89, 74.26 },	-- Bleeding Hollow Horror	
+								},
 								["g"] = {
 									i(127654), -- Burning Agony
 								},
 							},
-							{	-- Bleeding Hollow Mushroom Stash	**Coords uncofirmed, relied on wowhead**
+							{	-- Bleeding Hollow Mushroom Stash
 								["objectID"] = 241835,	-- Bleeding Hollow Mushroom Stash
 								["questID"] = 38809,
+								["description"] = "First set of coords are cave entrance, second set are item.",
 								["coords"] = {
 									{ 44.6, 77.5 },	-- Cave Entrance
-									{ 49.9, 76.8 }, -- Treasure Location
+									{ 49.96, 76.78 }, -- Treasure Location
 								},
 								["g"] = {
 									i(128223),	-- Bottomless Stygana Mushroom Brew Toy
@@ -96,6 +94,13 @@ _.Zones =
 								["coord"] = { 46.87, 36.65 },
 								["g"] = {
 									i(127347), -- Resonating Tome of Zyzzix
+								},
+							},
+							{	-- Borrowed Enchanted Spyglass	**Coords uncofirmed, relied on wowhead**
+								["objectID"] = 241664,	-- "Borrowed" Enchanted Spyglass
+								["coord"] = { 25.5, 50.2 }, 
+								["g"] = {
+									i(128222),	-- Smokeglass Lens Spyglass
 								},
 							},
 							{	-- Bramblefell	**Coords uncofirmed, relied on wowhead**
@@ -160,11 +165,11 @@ _.Zones =
 									}),
 								},
 							},
-							{	-- Cindral the Wildfire	**Coords uncofirmed, relied on wowhead**
+							{	-- Cindral the Wildfire
 								["npcID"] = 90519,	-- Cindral the Wildfire
 								["questID"] = 37990,
 								["isDaily"] = true,
-								["coord"] = { 44.6, 37.8 },
+								["coord"] = { 44.68, 37.64 },
 								["g"] = {
 									i(127660),	-- Contained Flame
 									i(128255, { -- Equipment Blueprint: Ice Cutter
@@ -172,11 +177,11 @@ _.Zones =
 									}),
 								},
 							},
-							{	-- Commander Krag'goth	**Coords uncofirmed, relied on wowhead**
+							{	-- Commander Krag'goth
 								["npcID"] = 91232,	-- Commander Krag'goth
 								["questID"] = 38746,
 								["isDaily"] = true,
-								["coord"] = { 15.0, 54.2 },
+								["coord"] = { 15.07, 53.96 },
 								["g"] = {
 									i(127319),	-- Krag'goth's Iron Gauntlets
 								},
@@ -193,15 +198,15 @@ _.Zones =
 									i(127313),	-- Org'mok's Riding Chaps 
 								},
 							},
-							{	-- Crystalized Essence of Elements	**Coords uncofirmed, relied on wowhead**
+							{	-- Crystalized Essence of Elements
 								["objectID"] = 241605,	-- Crystalized Essence of Elements
 								["questID"] = 38705,
-								["coord"] = { 48.0, 70.5 },
+								["coord"] = { 47.91, 70.40 },
 								["g"] = {
 									i(127329), -- Element-Infused Knuckles
 								},
 							},
-							{	-- Crystallized Fel Spike	**Coords uncofirmed, relied on wowhead**
+							{	-- Crystallized Fel Spike
 								["objectID"] = 241450,	-- Crystallized Fel Spike
 								["questID"] = 38602,
 								["coord"] = { 62.0, 70.8 },
@@ -231,10 +236,10 @@ _.Zones =
 									i(128315), -- Medallion of thee Legion
 								},
 							},
-							{	-- Discarded Helm	**Coords uncofirmed, relied on wowhead**
+							{	-- Discarded Helm
 								["objectID"] = 241600, -- Discarded Helm
 								["questID"] = 38702,
-								["coord"] = { 49.9, 81.2 },
+								["coord"] = { 49.90, 81.23 },
 								["g"] = {
 									i(127312),	-- Fallen Adventurer's Helm
 								},
@@ -266,11 +271,11 @@ _.Zones =
 									i(127301),	-- Bloody Aberration Strap
 								},
 							},	
-							{	-- Drakum	**Coords uncofirmed, relied on wowhead**
+							{	-- Drakum
 								["npcID"] = 98283,	-- Drakum
 								["questID"] = 40105,
 								["isDaily"] = true,
-								["coord"] = { 83.6, 43.6 },
+								["coord"] = { 83.46, 43.66 },
 								["g"] = {
 									i(108631),	-- Crashin' Thrashin' Roller Controller Toy
 								},
@@ -353,10 +358,10 @@ _.Zones =
 									i(127656),	-- Fel Singed Wraps 
 								},
 							},
-							{	-- Forgotten Champion's Blade	**Coords uncofirmed, relied on wowhead**
+							{	-- Forgotten Champion's Blade
 								["objectID"] = 241533,	-- Forgotten Champion's Blade
 								["questID"] = 38657,
-								["coord"] = { 41.6, 73.5 },
+								["coord"] = { 41.58, 73.28 },
 								["g"] = {
 									i(127339),	-- Forgotten Champion's Blade
 								},
@@ -494,11 +499,15 @@ _.Zones =
 									i(127418), -- Soothing Incense Brazier
 								},
 							},
-							{	-- Kris'kar the Unredeemed	**Coords uncofirmed, relied on wowhead**
+							{	-- Kris'kar the Unredeemed
 								["npcID"] = 93279,	-- Kris'kar the Unredeemed
 								["questID"] = 38825,
 								["isDaily"] = true,
-								["coord"] = { 39.6, 68.2 },
+								["description"] = "First set of coords are cave entrance, second set are npc.",
+								["coords"] = {
+									{ 42.41, 68.77 },	-- Cave Entrance
+									{ 39.59, 68.14 },	-- Kris'kar the Unredeemed
+								},
 								["g"] = {
 									i(127653),	-- Wingblade of Reckoning
 								},
@@ -520,9 +529,9 @@ _.Zones =
 									i(127334),	-- Ravager Hunting Spear 
 								},
 							},
-							{	-- Lok'goron Hashslinger	**Coords uncofirmed, relied on wowhead**
+							{	-- Lok'goron Hashslinger
 								["npcID"] = 96240,	-- Lok'goron Hashslinger
-								["coord"] = { 39.8, 45.6 },
+								["coord"] = { 40.45, 45.88 },
 								["g"] = {
 									i(128501),	-- Recipe: Fel Eggs and Ham
 								},
@@ -538,19 +547,23 @@ _.Zones =
 									}),
 								},
 							},
-							{	-- Looted Mystical Staff	**Coords uncofirmed, relied on wowhead**
+							{	-- Looted Mystical Staff
 								["objectID"] = 241841,	-- Looted Mystical Staff
 								["questID"] = 38814,
-								["coord"] = { 48.6, 75.3 },
+								["description"] = "First set of coords are cave entrance, second set are item.",
+								["coords"] = {
+									{ 44.6, 77.5 },	-- Cave Entrance
+									{ 48.56, 75.20 },	-- Looted Mystical Staff
+								},
 								["g"] = {
 									i(127337),	-- Emanating Staff of Shadow 
 								},
 							},
-							{	-- Magwia	**Coords uncofirmed, relied on wowhead**
+							{	-- Magwia
 								["npcID"] = 93002,	-- Magwia
 								["questID"] = 38726,
 								["isDaily"] = true,
-								["coord"] = { 52.6, 65.0 },
+								["coord"] = { 52.11, 65.19 },
 								["g"] = {
 									i(127332),	-- Riverbeast Molar Club 
 								},
@@ -590,7 +603,7 @@ _.Zones =
 									i(127297),	-- Selora's Crown of Thorns 
 								},
 							},
-							{	-- Podlord Wakkawam	**Coords uncofirmed, relied on wowhead**
+							{	-- Podlord Wakkawam
 								["npcID"] = 91374,	-- Podlord Wakkawam
 								["questID"] = 38282,
 								["isDaily"] = true,	
@@ -614,11 +627,11 @@ _.Zones =
 									i(127657), -- Encroaching Void
 								},
 							},
-							{	-- Rasthe	**Coords uncofirmed, relied on wowhead**
+							{	-- Rasthe
 								["npcID"] = 90782,	-- Rasthe
 								["questID"] = 38034,
 								["isDaily"] = true,	
-								["coord"] = { 17.8, 42.4 },
+								["coord"] = { 17.42, 42.75 },
 								["g"] = {
 									i(127661), -- Fang of Rasthe
 								},
@@ -632,7 +645,7 @@ _.Zones =
 									i(127335),	-- Relgor's Master Glaive 
 								},
 							},
-							{	-- Remnant of the Blood Moon	**Coords uncofirmed, relied on wowhead**
+							{	-- Remnant of the Blood Moon
 								["npcID"] = 91227,	-- Remnant of the Blood Moon
 								["questID"] = 39159,
 								["isDaily"] = true,	
@@ -642,7 +655,7 @@ _.Zones =
 									i(127666),	-- Vial of Red Goo Toy
 								},
 							},
-							{	-- Rendrak	**Coords uncofirmed, relied on wowhead**
+							{	-- Rendrak
 								["npcID"] = 92627,	-- Rendrak
 								["questID"] = 38631,
 								["isDaily"] = true,	
@@ -664,10 +677,10 @@ _.Zones =
 									i(127314),	-- Rogond's Tracking Shoulderguards 
 								},
 							},
-							{	-- Rune Etched Femur	**Coords uncofirmed, relied on wowhead**
+							{	-- Rune Etched Femur
 								["objectID"] = 241566,	-- Rune Etched Femur
 								["questID"] = 38686,
-								["coord"] = { 51.8, 24.3 },		
+								["coord"] = { 51.75, 24.30 },		
 								["g"] = {
 									i(127341),	-- Rune-Etched Femur
 								},
@@ -691,10 +704,10 @@ _.Zones =
 									}),
 								},
 							},
-							{	-- Scout's Belongings	**Coords uncofirmed, relied on wowhead**	
+							{	-- Scout's Belongings	
 								["objectID"] = 241601,	-- Scout's Belongings
 								["questID"] = 38703,
-								["coord"] = { 50.0, 79.7 },
+								["coord"] = { 49.95, 79.62 },
 								["g"] = {
 									i(127354),	-- Scout's Spy Cloak 
 								},
@@ -737,10 +750,10 @@ _.Zones =
 									i(108634),	-- Crashin' Thrashin' Mortar Controller Toy
 								},
 							},
-							{	-- Snake Charmer's Flute	**Coords uncofirmed, relied on wowhead**
+							{	-- Snake Charmer's Flute
 								["objectID"] = 241521,	-- Snake Charmer's Flute
 								["questID"] = 38638,
-								["coord"] = { 40.6, 79.7 },
+								["coord"] = { 40.61, 79.80 },
 								["g"] = {					
 									i(127333),	-- Ogra'mal Snake Charming Flute
 								},
@@ -754,20 +767,20 @@ _.Zones =
 									i(127315),	-- Glowing Felskull Belt 
 								},
 							},
-							{	-- Steelsnout	**Coords uncofirmed, relied on wowhead**
+							{	-- Steelsnout
 								["npcID"] = 92887,	-- Steelsnout
 								["questID"] = 38700,
 								["isDaily"] = true,
-								["coord"] = { 65.6, 36.8 },
+								["coord"] = { 65.64, 36.79 },
 								["g"] = {
 									i(127357),	-- Steelsnout's Steely Hide 
 								},
 							},
-							{	-- Strange Fruit	**Coords uncofirmed, relied on wowhead**
+							{	-- Strange Fruit
 								["objectID"] = 241599,	-- Strange Fruit
 								["questID"] = 38701,
 								["description"] = "Click on Loose Soil to be thrown into tree to grab the strange fruit.",
-								["coord"] = { 64.72, 42.82 },
+								["coord"] = { 64.71, 42.84 },
 								["g"] = {					
 									i(127396,{ 		-- Strange Green Fruit
 										["g"] = {
@@ -786,11 +799,11 @@ _.Zones =
 									i(127397),	-- Splendid Skettis Sapphire
 								},
 							},
-							{	-- Sylissa	**Coords uncofirmed, relied on wowhead**
+							{	-- Sylissa
 								["npcID"] = 92606,	-- Sylissa
 								["questID"] = 38628,
 								["isDaily"] = true,	
-								["coord"] = { 41.4, 78.4 },
+								["coord"] = { 41.07, 78.76 },
 								["g"] = {
 									i(127311),	--  Serpentine Gloves
 								},
@@ -864,22 +877,29 @@ _.Zones =
 									i(127305),	-- Frayed Hunting Cowl 
 								},
 							},
-							{	-- The Iron Houndmaster	**Coords uncofirmed, relied on wowhead**
+							{	-- The Iron Houndmaster
 								["npcID"] = 92977,	-- The Iron Houndmaster
 								["questID"] = 38751,
 								["isDaily"] = true,							
 								["description"] = "Capture Strongpoint (West) to make him spawn.",
-								["coord"] = { 12.6, 56.8 },
+								["coord"] = { 13.10, 57.02 },
 								["g"] = {
 									i(127321),	-- Iron Houndmaster's Pauldrons 
 								},
 							},
-							{	-- The Night Haunter	**Coords uncofirmed, relied on wowhead**
+							{	-- The Night Haunter	**Some coords uncofirmed, probably more spawn points then listed as well**
 								["npcID"] = 92636,	-- The Night Haunter
 								["questID"] = 38632,
 								["isDaily"] = true,						
 								["description"] = "Gain 10 stacks of Marked by the Night Haunter by either finding The Night Haunter or clicking Mutilated Corpses.",
 								["coords"] = {
+									{ 42.44, 77.57 },	-- Confirmed
+									{ 40.59, 72.96 },	-- Confirmed
+									{ 38.26, 72.11 },	-- Confirmed
+									{ 37.51, 67.59 },	-- Confirmed
+									{ 38.85, 75.16 },	-- Confirmed
+									{ 42.83, 74.60 },	-- Confirmed
+									{ 41.28, 68.96 },	-- Confirmed
 									{ 44.0, 67.6 },
 									{ 38.0, 79.0 },
 									{ 44.0, 78.2 },
@@ -891,7 +911,7 @@ _.Zones =
 							{	-- The Perfect Blossom	**Coords uncofirmed, relied on wowhead**
 								["objectID"] = 241522,	-- The Perfect Blossom
 								["questID"] = 38639,
-								["coord"] = { 40.8, 75.5 },		
+								["coord"] = { 40.77, 75.56 },		
 								["g"] = {				
 									i(127766),	-- The Perfect Blossom Toy
 								},
@@ -914,19 +934,19 @@ _.Zones =
 									i(127327),	-- Thromma's Gutslicer 
 								},
 							},
-							{	-- Tome of Secrets	**Coords uncofirmed, relied on wowhead**
+							{	-- Tome of Secrets
 								["objectID"] = 240855,	-- Tome of Secrets
 								["questID"] = 38426,
-								["coord"] = { 32.5, 70.4 },
+								["coord"] = { 32.43, 70.40 },
 								["g"] = {
 									i(127670),	-- Accursed Tome of the Sargerei Toy 	
 								},
 							},
-							{	-- Varyx the Damned	**Coords uncofirmed, relied on wowhead**
+							{	-- Varyx the Damned
 								["npcID"] = 92451,	-- Varyx the Damned
 								["questID"] = 37937,
 								["isDaily"] = true,	
-								["coord"] = { 27.6, 32.6 },
+								["coord"] = { 27.65, 32.74 },
 								["g"] = {
 									i(127351), -- Varyx's Dark Oath Band
 								},
