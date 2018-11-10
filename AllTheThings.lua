@@ -8706,7 +8706,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							data.difficultyID = app.RaidDifficulty;
 							local name, instanceType, instanceDifficulty, difficultyName = GetInstanceInfo();
 							if instanceDifficulty and data.difficultyID ~= instanceDifficulty and instanceType == 'raid' then
-								data.name = GetDifficultyInfo(data.difficultyID) .. " (" .. difficultyName .. ")";
+								data.name = (GetDifficultyInfo(data.difficultyID) or "???") .. " (" .. (difficultyName or "???") .. ")";
 							else
 								data.name = GetDifficultyInfo(data.difficultyID);
 							end
