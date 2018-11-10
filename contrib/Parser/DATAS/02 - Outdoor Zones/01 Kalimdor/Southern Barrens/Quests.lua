@@ -106,6 +106,19 @@ _.Zones =
 								["coord"] = { 44.1, 33.6 },
 								["races"] = HORDE_ONLY,
 							},
+							{	-- When Plants Attack
+								["questID"] = 24539,
+								["qg"] = 37515,	-- Lane Tallgrass
+								["coord"] = { 44.4, 33.2 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- A Curious Bloom
+								["questID"] = 24542,
+								["qg"] = 37515,	-- Lane Tallgrass
+								["coord"] = { 44.3, 33.2 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24539,	-- When Plants Attack
+							},
 							{	-- Speaking Their Language
 								["questID"] = 24534,
 								["groups"] = {
@@ -427,13 +440,6 @@ _.Zones =
 							},
 						}),
 					})),
-					{	-- A Curious Bloom
-						["questID"] = 24542,
-						["qg"] = 37515,	-- Lane Tallgrass
-						["coord"] = { 44.3, 33.2 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 24539,	-- When Plants Attack
-					},
 					qa(25022, {	-- A Failure to Communicate
 						["qg"] = 38871,	-- Corporal Teegan
 					}),
