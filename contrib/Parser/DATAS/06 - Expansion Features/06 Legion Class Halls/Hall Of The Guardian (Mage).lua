@@ -8,60 +8,88 @@ _.ExpansionFeatures =
 			cl(8, { -- Hall of the Guardian -- Mage
 				["groups"] = {
 					spell(118, {	-- Polymorph
-						n(89386, {	-- Cliffwing Hippogryph [Azsuna]
-							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Azsuna Teleportation Nexus.",
-							["questID"] = 43787,
-						}),
-						n(110043, {	-- Heartwood Doe [Suramar]
-							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Suramar Teleportation Nexus.",
-							["questID"] = 43791,
-						}),
-						n(99636, {	-- Highpeak Goat [Highmountain]
-							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Highmountain Teleportation Nexus.",
-							["questID"] = 43788,
-						}),
-						n(107808, {	-- Plains Runehorn Calf [Stormheim]
-							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Stormheim Teleportation Nexus.",
-							["questID"] = 43789,
-						}),
-						n(109819, {	-- Wild Dreamrunner [Val'Sharah]
-							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Val'Sharah Teleportation Nexus.",
-							["questID"] = 43790,
-						}),
-						
-						n(111107, {	-- Volatile Sheep
-							["description"] = "The next step is pure RNG - when you teleport to your class order hall you have (once a day) chance to trigger a spawn of Volatile Sheep. If it does spawn for you, you will see Cote's dialogue box saying 'Success!' - the ship will be standing just next to Dalaran portal, all you have to do is to right-click it couple times to make it explode. After you do you'll get another speech box, this time Extemely Volatile Stormheim Sheep bleating '...' - for some reason you can see someone else's sheep dialogue box, so if you see that one in Hall of the guardian without doing previous mob sheeping, means someone just made their sheep explode in the class hall :) As I said this step is pure luck, so it may take some time until you get your sheep to spawn (for me it was around 3 weeks).",
-							-- ["questID"] = , -- TODO: Get Quest ID for right clicking it. [Volatile Sheep]
-							["sourceQuests"] = { 43828 },	-- Sheep Summon Daily Roll
-							["groups"] = {
-								n(-159, { -- Daily Event Roll
-									["isDaily"] = true,
-									["questID"] = 43828,	-- "Sheep Summon Daily Roll" on WoWHead
-									["description"] = "If this quest has a checkmark next to it and you didn't see Cote's dialogue emote, then that means that you should come back tomorrow.",
-									["icon"] = "Interface\\Icons\\INV_Staff_2h_SheepStick_D_01",
-									["sourceQuests"] = {
-										43787,	-- Cliffwing Hippogryph [Azsuna]
-										43791,	-- Heartwood Doe [Suramar]
-										43788,	-- Highpeak Goat [Highmountain]
-										43789,	-- Plains Runehorn Calf [Stormheim]
-										43790,	-- Wild Dreamrunner [Val'Sharah]
-									},
-								}),
-							},
-						}),
-						n(111691, {	-- Extremely Volatile Stormheim Sheep
-							["description"] = "After that you just need to go to Stormheim in search of Extremely Volatile Stormheim Sheep. This is usually spawning somewhere around Runewood - the best way to find it would be to make /target macro, go to Valdisdall and just run around Runewood spamming macro - it didn't take me even 2 minutes until I got my sheep. Just as the previous one, click it couple times to make it explode, which should result in getting an angry bleat '...' from Enraged Volatile Elwynn Sheep.",
-							-- ["sourceQuests"] = {  },	-- TODO: Get Quest ID for right clicking it. [Volatile Sheep]
-						}),
-						n(111704, {	-- Cote "Shepherd" Metcalf
-							["description"] = "Now you need to go to the Tower of Azora in Elwynn Forest. Once there you will see Cote talking to Theocritus. After a short RP bit, he will become hostile and when you kill him, he drops the item.",
-							-- ["sourceQuests"] = {  },	-- TODO: Get Quest ID for right clicking it. [Extremely Volatile Stormheim Sheep]
-							["groups"] = {
-								i(139558, {	-- The Woolomancer's Charge
-									artifact(846), -- Arcane Mage Hidden Appearance
-								}),
-							}
-						}),
+						["classes"] = { 8 },
+						["lvl"] = 110,
+						["maps"] = {
+							630,	-- Azsuna
+							650,	-- Highmountain
+							634,	-- Stormheim
+							680,	-- Suramar
+							641,	-- Val'Sharah
+							37,		-- Elwynn Forest
+						},
+						["groups"] = {
+							n(89386, {	-- Cliffwing Hippogryph [Azsuna]
+								["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Azsuna Teleportation Nexus.",
+								["questID"] = 43787,
+							}),
+							n(110043, {	-- Heartwood Doe [Suramar]
+								["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Suramar Teleportation Nexus.",
+								["questID"] = 43791,
+							}),
+							n(99636, {	-- Highpeak Goat [Highmountain]
+								["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Highmountain Teleportation Nexus.",
+								["questID"] = 43788,
+							}),
+							n(107808, {	-- Plains Runehorn Calf [Stormheim]
+								["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Stormheim Teleportation Nexus.",
+								["questID"] = 43789,
+							}),
+							n(109819, {	-- Wild Dreamrunner [Val'Sharah]
+								["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Val'Sharah Teleportation Nexus.",
+								["questID"] = 43790,
+							}),
+							n(111107, {	-- Volatile Sheep
+								["description"] = "The next step is pure RNG - when you teleport to your class order hall you have (once a day) chance to trigger a spawn of Volatile Sheep. If it does spawn for you, you will see Cote's dialogue box saying 'Success!' - the sheep will be standing just next to Dalaran portal, all you have to do is to right-click it couple times to make it explode. After you do you'll get another speech box, this time Extemely Volatile Stormheim Sheep bleating '...' - for some reason you can see someone else's sheep dialogue box, so if you see that one in Hall of the guardian without doing previous mob sheeping, means someone just made their sheep explode in the class hall :) As I said this step is pure luck, so it may take some time until you get your sheep to spawn (for me it was around 3 weeks).",
+								["questID"] = 43799,	-- Extremely Volatile Stormheim Sheep: "..." [Volatile Sheep]
+								["sourceQuests"] = { 43828 },	-- Sheep Summon Daily Roll
+								["groups"] = {
+									n(-159, { -- Daily Event Roll
+										["isDaily"] = true,
+										["questID"] = 43828,	-- "Sheep Summon Daily Roll" on WoWHead
+										["description"] = "If this quest has a checkmark next to it and you didn't see Cote's dialogue emote, then that means that you should come back tomorrow.",
+										["icon"] = "Interface\\Icons\\INV_Staff_2h_SheepStick_D_01",
+										["sourceQuests"] = {
+											43787,	-- Cliffwing Hippogryph [Azsuna]
+											43791,	-- Heartwood Doe [Suramar]
+											43788,	-- Highpeak Goat [Highmountain]
+											43789,	-- Plains Runehorn Calf [Stormheim]
+											43790,	-- Wild Dreamrunner [Val'Sharah]
+										},
+									}),
+									n(111704, {	-- Cote "Shepherd" Metcalf
+										["description"] = "If the event roll was successful, you'll see an emote from Cote \"Shepherd\" Metcalf saying \"Success!\".\n\nYou should find a Volatile Sheep on the stairs at the entrance to the class hall. Spam click it.",
+										["questID"] = 43828,	-- Cote "Shepherd" Metcalf says: Success!
+										["sourceQuests"] = { 43828 },	-- Sheep Summon Daily Roll
+									}),
+								},
+							}),
+							n(111691, {	-- Extremely Volatile Stormheim Sheep
+								["description"] = "After that you just need to go to Stormheim in search of Extremely Volatile Stormheim Sheep. This is usually spawning somewhere around Runewood - the best way to find it would be to make /target macro, go to Valdisdall and just run around Runewood spamming macro - it didn't take me even 2 minutes until I got my sheep. Just as the previous one, click it couple times to make it explode, which should result in getting an angry bleat '...' from Enraged Volatile Elwynn Sheep.",
+								["questID"] = 43800,	-- Enraged Volatile Elwynn Sheep says: ...
+								["sourceQuests"] = { 43799 },	-- Volatile Sheep
+								["coords"] = {
+									{ 60.0, 55.0, 634 },
+									{ 64.8, 44.8, 634},
+									{ 70.8, 37.8, 634},
+									{ 66.6, 53.8, 634},
+									{ 72.2, 49.2, 634},
+									{ 70.2, 56.8, 634},
+									{ 76.8, 62.6, 634},
+									{ 79.4, 67.8, 634},
+								},
+							}),
+							n(111704, {	-- Cote "Shepherd" Metcalf
+								["description"] = "Now you need to go to the Tower of Azora in Elwynn Forest. Once there you will see Cote talking to Theocritus. After a short RP bit, he will become hostile and when you kill him, he drops the item.",
+								["sourceQuests"] = { 43800 },	-- Extremely Volatile Stormheim Sheep
+								["questID"] = 43658,	-- Done!
+								["groups"] = {
+									i(139558, {	-- The Woolomancer's Charge
+										artifact(846), -- Arcane Mage Hidden Appearance
+									}),
+								}
+							}),
+						},
 					}),
 					gt(386, {	-- Teleportation Nexus
 						["description"] = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
