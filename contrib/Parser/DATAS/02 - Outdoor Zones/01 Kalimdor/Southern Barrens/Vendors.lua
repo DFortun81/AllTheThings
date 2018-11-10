@@ -7,13 +7,16 @@ _.Zones =
 		m(199, {	-- Southern Barrens
 			["groups"] = {
 				n( -2, {	-- Vendors
-					a(n(44283, {	-- Camran <Mail Armor>
-						i(4797),	-- Fiery Cloak
-						i(4798),	-- Heavy Runed Cloak
-						i(4816),	-- Legionnaire's Leggings
-						i(4799),	-- Antiquated Cloak
-						i(4800),	-- Mighty Chain Pants
-					})),
+					n(44283, {	-- Camran <Mail Armor>
+						["groups"] = {
+							i(4797),	-- Fiery Cloak
+							i(4798),	-- Heavy Runed Cloak
+							i(4816),	-- Legionnaire's Leggings
+							i(4799),	-- Antiquated Cloak
+							i(4800),	-- Mighty Chain Pants
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
 				}),
 			},
 		}),

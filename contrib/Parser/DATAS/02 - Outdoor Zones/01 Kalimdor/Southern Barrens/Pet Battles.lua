@@ -13,9 +13,19 @@ _.Zones =
 					desc(p(475), "Can be found with groups of roaming Dusthoof Giraffe."), -- Giraffe Calf
 					p(386), 	-- Prairie Dog
 					p(419), 	-- Small Frog
-					qh(31918),  -- A Tamer's Homecoming
-					qh(31904),	-- Cassandra Kaboom
-					qg(66422, qh(31918)),	-- A Tamer's Homecoming
+					{  -- A Tamer's Homecoming
+						["questID"] = 31918,
+						["qg"] = 66422,	-- Cassandra Kaboom
+						["coord"] = { 39.5, 79.1 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Cassandra Kaboom
+						["questID"] = 31904,
+						["qg"] = 66422,	-- Cassandra Kaboom
+						["coord"] = { 39.5, 79.1 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 				}),
 			},
 		}),

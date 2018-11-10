@@ -17,26 +17,425 @@ _.Zones =
 						crit(6),		-- Firestone Point
 						crit(7),		-- Fort Triumph
 					})),
-					h(ach(4981, {	-- Southern Barrens Quests (Horde)
-						crit(1),		-- Hunter's Hill
-						crit(2),		-- Camp Una'fe
-						crit(3),		-- Life from the Dream
-						crit(4),		-- Vendetta Point
-						crit(5),		-- Desolation Hold
-						crit(6),		-- Firestone Point
-						crit(7),		-- Spearhead
-					})),
 ]]--				
-					qh(24542, {	-- A Curious Bloom
+					h(ach(4981, {	-- Southern Barrens Quests
+						crit(1, {	-- Hunter's Hill
+							{	-- Clear the High Road
+								["questID"] = 24504,
+								["qg"] = 37135,	-- Nura Pathfinder
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 28549,	-- Warchief's Command: Southern Barrens!
+							},
+							{	-- Eye for an Eye
+								["questID"] = 24513,
+								["qg"] = 37136,	-- Oltarg
+								["coord"] = { 37.1, 13.9 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Feeding the Fear
+								["questID"] = 25284,
+								["qg"] = 37153,	-- Holgom
+								["coord"] = { 37.6, 16.6 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Put the Fear in Them
+								["questID"] = 24517,
+								["qg"] = 37154,	-- Kilrok Gorehammer
+								["coord"] = { 39.6, 19.8 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Raptor Scraps
+								["questID"] = 24514,
+								["groups"] = {
+									i(53241),  -- Steel-Patched Belt
+									i(53258),  -- Terrortooth Hide Bracers
+									i(53248),  -- Raptor Scrap Cloak
+									i(131371),  -- Steel-Patched Armbands
+								},
+								["qg"] = 37138,	-- Onatay
+								["coord"] = { 39.4, 20.3 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Roadway Plans
+								["itemID"] = 49776,
+								["questID"] = 24518,	-- The Low Road
+								["qg"] = 37216,	-- Honor's Stand Officer
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Warriors' Redemption
+								["questID"] = 24512,
+								["groups"] = {
+									i(53239),  -- Holgom's Bracers
+									i(53231),  -- Climbing Straps
+									i(131370),  -- Holgom's Waistcord
+								},
+								["qg"] = 37153,	-- Holgom
+								["coord"] = { 37.6, 16.6 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Holdout at Hunter's Hill
+								["questID"] = 24505,
+								["qg"] = 37137,	-- Tunawa Stillwind
+								["coord"] = { 37.4, 16.7 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24504,	-- Clear the High Road
+							},
+							{	-- Stalling the Survey
+								["questID"] = 24519,
+								["groups"] = {
+									i(53307),  -- Surveying Gloves
+									i(53308),  -- Zykes' Belt
+									i(131372),  -- Surveying Gauntlets
+								},
+								["qg"] = 37154,	-- Kilrok Gorehammer
+								["coord"] = { 39.6, 19.8 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24518,	-- The Low Road
+							},
+						}),
+						crit(2, {	-- Camp Una'fe
+							{	-- Keeping the Dogs at Bay
+								["questID"] = 24525,
+								["qg"] = 11857,	-- Makaba Flathoof
+								["coord"] = { 44.1, 33.6 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Bad to Worse
+								["questID"] = 24529,
+								["qg"] = 11857,	-- Makaba Flathoof
+								["coord"] = { 44.1, 33.6 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Speaking Their Language
+								["questID"] = 24534,
+								["groups"] = {
+									i(53252),	-- Sabersnout's Cloak
+									i(53228),	-- Boarpocalypse Boots
+									i(131374),	-- Bristleback Challenge Treads
+								},
+								["qg"] = 11857,	-- Makaba Flathoof
+								["coord"] = { 44.2, 33.6 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24529,	-- Bad to Worse
+							},
+						}),
+						crit(3, {	-- Life from the Dream
+							{	-- Adder Subtraction
+								["questID"] = 24570,
+								["qg"] = 38314,	-- Muyoh
+								["coord"] = { 50.3, 40.3 },
+							},
+							{	-- Lashvine Seeds
+								["questID"] = 24571,
+								["qg"] = 38314,	-- Muyoh
+								["coord"] = { 50.3, 40.3 },
+							},
+							{	-- Biological Intervention
+								["questID"] = 24565,
+								["qg"] = 37570,	-- Naralex
+								["coord"] = { 50.4, 40.6 },
+							},
+							{	-- To Harvest Chaos
+								["questID"] = 24574,
+								["qg"] = 37570,	-- Naralex
+								["coord"] = { 50.4, 40.6 },
+								["sourceQuest"] = 24565,	-- Biological Intervention
+							},
+							{	-- Sowing a Solution
+								["questID"] = 24566,
+								["qg"] = 38314,	-- Muyoh
+								["coord"] = { 50.3, 40.3 },
+								["sourceQuests"] = {
+									24570,	-- Adder Subtraction
+									24571,	-- Lashvine Seeds
+								},
+							},
+							{	-- The Nightmare Scar
+								["questID"] = 24601,
+								["groups"] = {
+									i(53160),	-- Vest of the Nightmare Rift
+									i(53159),	-- Naralex's Slippers
+									i(131379),	-- Tunic of the Nightmare Rift
+									i(156997),	-- Scepter of Naralex 
+									i(156998),	-- Cudgel of Naralex
+								},
+								["qg"] = 37570,	-- Naralex
+								["coord"] = { 50.4, 40.6 },
+								["sourceQuest"] = 24574,	-- To Harvest Chaos
+							},
+						}),
+						crit(4, {	-- Vendetta Point
+							{	-- A Family Divided
+								["questID"] = 24543,
+								["qg"] = 37516,	-- Tawane
+								["coord"] = { 44.5, 33.5 },
+								["races"] = HORDE_ONLY,
+								["isBreadcrumb"] = true,
+								["sourceQuest"] = 24529,	-- Bad to Worse
+							},
+							{	-- A Line in the Dirt
+								["questID"] = 24546,
+								["groups"] = {
+									i(53254),	-- Sternhorn's Shield
+									i(53257),	-- Taurajo Leggings
+									i(53251),	-- Robes of the Bloody Field
+									i(131375),	-- Taurajo Greaves
+								},
+								["qg"] = 3418,	-- Kirge Sternhorn
+								["coord"] = { 41.6, 46.5 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24543,	-- A Family Divided
+							},
+							{	-- Lion's Pride
+								["questID"] = 24552,
+								["qg"] = 3387,	-- Jorn Skyseer
+								["coord"] = { 41.5, 47.1 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Meet the New Boss
+								["questID"] = 24551,
+								["qg"] = 3433,	-- Tatternack Steelforge
+								["coord"] = { 41.8, 46.7 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Siegebreaker
+								["questID"] = 24569,
+								["groups"] = {
+									i(53227),	-- Bloodhilt Gloves
+									i(53237),	-- Grease-Covered Boots
+									i(53238),	-- Groady Goblin Wand
+									i(53247),	-- Pewter Slab
+									i(131376),	-- Grease-Covered Footguards
+								},
+								["qg"] = 37679,	-- Warlord Bloodhilt
+								["coord"] = { 41.4, 46.8 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									24546,	-- A Line in the Dirt
+									24551,	-- Meet the New Boss
+								},
+							},
+							{	-- Honoring the Dead
+								["questID"] = 24573,
+								["qg"] = 37717,	-- Winnoa Pineforest
+								["coord"] = { 41.5, 46.5 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24569,	-- Siegebreaker
+							},
+							{	-- Taking Back Taurajo
+								["questID"] = 24572,
+								["qg"] = 37679,	-- Warlord Bloodhilt
+								["coord"] = { 41.4, 46.8 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24569,	-- Siegebreaker
+							},
+						}),
+						crit(5, {	-- Desolation Hold
+							{	-- Desolation Hold Inspection
+								["questID"] = 24577,
+								["qg"] = 37679,	-- Warlord Bloodhilt
+								["coord"] = { 41.4, 46.8 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									24573,	-- Honoring the Dead
+									24572,	-- Taking Back Taurajo
+								},
+							},
+							{	-- Parts-is-Parts (aa)
+								["questID"] = 24619,
+								["qg"] = 37908,	-- Calder Gray
+								["coord"] = { 42.6, 70.2 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Silithissues
+								["questID"] = 24654,
+								["qg"] = 37910,	-- Crawgol
+								["coord"] = { 41.6, 69.4 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Changing of the Gar'dul
+								["questID"] = 24591,
+								["groups"] = {
+									i(53235),	-- Gar'dul's Armor
+									i(53236),	-- Gloves of Desolation Hold
+									i(53242),	-- Breeches of Authority
+									i(53243),	-- Loose Cannon
+									i(131377),	-- Gauntlets of Desolation Hold
+								},
+								["coord"] = { 41.6, 69.8 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24577,	-- Desolation Hold Inspection
+							},
+							{	-- Claim the Battle Scar
+								["questID"] = 24618,
+								["qg"] = 37837,	-- Warlord Bloodhilt
+								["coord"] = { 41.6, 69.8 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24591,	-- Changing of the Gar'dul
+							},
+							{	-- Hearts-is-Hearts
+								["questID"] = 24620,
+								["qg"] = 37908,	-- Calder Gray
+								["coord"] = { 42.6, 70.2 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24619,	-- Parts-is-Parts
+							},
+							{	-- Intelligence Warfare
+								["questID"] = 24634,
+								["qg"] = 37837,	-- Warlord Bloodhilt
+								["coord"] = { 41.6, 69.8 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24591,	-- Changing of the Gar'dul
+							},
+							{	-- Smarts-is-Smarts
+								["questID"] = 24621,
+								["groups"] = {
+									i(53229),	-- Brain-Splattered Leggings
+									i(53260),	-- Vest of Abomification
+									i(53246),	-- Neurosurgeon's Tool
+									i(131381),	-- Chestguard of Abomification
+								},
+								["qg"] = 37908,	-- Calder Gray
+								["coord"] = { 42.6, 70.2 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24620,	-- Hearts-is-Hearts
+							},
+							{	-- The Butcher of Taurajo
+								["questID"] = 24637,
+								["groups"] = {
+									i(53226),  -- Battlescar Monnion
+									i(53232),  -- Cloak of Harvested Fear
+									i(53256),  -- Taurajo Butcher's Blade
+									i(131383),  -- Battlescar Amice
+								},
+								["qg"] = 37837,	-- Warlord Bloodhilt
+								["coord"] = { 41.6, 69.8 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									24618,	-- Claim the Battle Scar
+									24634,	-- Intelligence Warfare
+								}
+							},
+						}),
+						crit(6, {	-- Firestone Point -- TODO: some of these apply to the alliance. How to map to alliance achievement criteria as well without duplicating them?
+							{	-- Carved Boar Idol
+								["questID"] = 24606,	-- Blood of the Barrens
+								["itemID"] = 49932,
+								["qgs"] = {
+									37560,	-- Razormane Pathfinder
+									37661,	-- Razormane Seer
+									37660,	-- Razormane Warfrenzy
+								},
+							},
+							{	-- Firestone Point
+								["questID"] = 24667,
+								["qg"] = 37910,	-- Crawgol
+								["coord"] = { 41.6, 69.4 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24654,	-- Silithissues
+							},
+							{	-- Concern for Mankrik
+								["questID"] = 24604,
+								["qg"] = 37812,	-- Mahka
+								["coord"] = { 45.1, 85.4 },
+								["isBreadcrumb"] = true,
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Don't Stop Bereavin'
+								["questID"] = 24603,
+								["qg"] = 37847,	-- Mankrik
+								["coord"] = { 44.5, 88.0 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24604,	-- Concern for Mankrik
+							},
+							{	-- The Disturbed Earth
+								["questID"] = 24824,
+								["qg"] = 37834,	-- Tauna Skychaser
+								["coord"] = { 45.0, 85.3 },
+							},
+							{	-- Echoes of Agamaggan
+								["questID"] = 24653,
+								["qg"] = 37812,	-- Mahka
+								["coord"] = { 45.1, 85.4 },
+								["sourceQuest"] = 24606,	-- Blood of the Barrens
+							},
+							{	-- Mangletooth
+								["questID"] = 24608,
+								["groups"] = {
+									i(53240),	-- Kraul Bracers
+									i(53249),	-- Razormane Staff
+									i(53244),	-- Mangled Tooth
+								},
+								["qg"] = 37847,	-- Mankrik
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24603,	-- Don't Stop Bereavin'
+							},
+							{	-- Mahka's Plea
+								["questID"] = 24633,
+								["qg"] = 37812,	-- Mahka
+								["coord"] = { 45.1, 85.4 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24653,	-- Echoes of Agamaggan
+							},
+						}),
+						crit(7, {	-- Spearhead
+							{	-- Flightmare
+								["questID"] = 24631,
+								["groups"] = {
+									i(53259),	-- Tomusa's Sword
+									i(53233),	-- Earthbound Leggings
+									i(53234),	-- Flightmare Mantle
+									i(131382),	-- Earthbound Trousers
+								},
+								["qg"] = 37909,	-- Tomusa
+								["coord"] = { 41.0, 70.9 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Tauren Vengeance
+								["questID"] = 24632,
+								["qg"] = 37909,	-- Tomusa
+								["coord"] = { 41.1, 70.9 },
+								["races"] = HORDE_ONLY,
+								["isBreadcrumb"] = true,
+								["sourceQuests"] = { 24631 },	-- Flightmare
+							},
+							{	-- A Weezil in the Henhouse
+								["questID"] = 24684,
+								["qg"] = 3341,	-- Gann Stonespire
+								["coord"] = { 49.2, 82.3 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24632,	-- Tauren Vengeance
+							},
+							{	-- Dwarf Fortress
+								["questID"] = 24685,
+								["qg"] = 38140,	-- Weezil Slipshadow
+								["coord"] = { 50.7, 86.8 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24684,	-- A Weezil in the Henhouse
+							},
+							{	-- Sabotage!
+								["questID"] = 24747,
+								["groups"] = {
+									i(53255),	-- Stonespire Shoulders
+									i(53253),	-- Spearhead Helm
+									i(131384),	-- Spearhead Faceguard
+								},
+								["qg"] = 38140,	-- Weezil Slipshadow
+								["coord"] = { 50.7, 86.8 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24685,	-- Dwarf Fortress
+							},
+						}),
+					})),
+					{	-- A Curious Bloom
+						["questID"] = 24542,
 						["qg"] = 37515,	-- Lane Tallgrass
-						["sourceQuests"] = { 24539 },	-- When Plants Attack
-					}),
+						["coord"] = { 44.3, 33.2 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 24539,	-- When Plants Attack
+					},
 					qa(25022, {	-- A Failure to Communicate
 						["qg"] = 38871,	-- Corporal Teegan
-					}),
-					qh(24543, {	-- A Family Divided
-						["qg"] = 37516,	-- Tawane
-						["sourceQuests"] = { 24529 },	-- Bad to Worse
 					}),
 					qa(25045, {	-- A Line in the Dirt
 						["groups"] = {
@@ -47,19 +446,6 @@ _.Zones =
 						},
 						["qg"] = 38323,	-- General Hawthorne
 					}),
-					qh(24546, {	-- A Line in the Dirt
-						["groups"] = {
-							i(53254),	-- Sternhorn's Shield
-							i(53257),	-- Taurajo Leggings
-							i(53251),	-- Robes of the Bloody Field
-							i(131375),	-- Taurajo Greaves
-						},
-						["qg"] = 3418,	-- Kirge Sternhorn
-						["sourceQuests"] = { 24543 },	-- A Family Divided
-					}),
-					q( 24570, {	-- Adder Subtraction
-						["qg"] = 38314,	-- Muyoh
-					}),
 					qa(25084, {	-- A Growing Threat
 						["qg"] = 37835,	-- Dorn Redearth
 					}),
@@ -67,16 +453,9 @@ _.Zones =
 						["qg"] = 39118,	-- General Twinbraid
 						["sourceQuests"] = { 25174 },	-- Twinbraid Needs to Know
 					}),
-					qh(24684, {	-- A Weezil in the Henhouse
-						["qg"] = 3341,	-- Gann Stonespire
-						["sourceQuests"] = { 24632 },	-- Tauren Vengeance
-					}),
 					qa(24944, {	-- Back in the Fight
 						["qg"] = 38804,	-- Tolliver Houndstooth
 						["sourceQuests"] = { 24941 },	-- Langridge Shot
-					}),
-					qh(24529, {	-- Bad to Worse
-						["qg"] = 11857,	-- Makaba Flathoof
 					}),
 					qa(25153, {	-- Bael'dun Rescue
 						["groups"] = {
@@ -99,58 +478,15 @@ _.Zones =
 						["qg"] = 39084,	-- Mizzy Pistonhammer
 						["sourceQuests"] = { 25079 },	-- Powder Play
 					}),
-					q( 24565, {	-- Biological Intervention
-						["qg"] = 37570,	-- Naralex
-					}),
-					i( 49932, {	-- Carved Boar Idol
-						q(24606, {	-- Blood of the Barrens
-							["qg"] = 37560,	-- Razormane Pathfinder
-						}),
-					}),
-					i( 49932, {	-- Carved Boar Idol
-						q(24606, {	-- Blood of the Barrens
-							["qg"] = 37661,	-- Razormane Seer
-						}),
-					}),
-					i( 49932, {	-- Carved Boar Idol
-						q(24606, {	-- Blood of the Barrens
-							["qg"] = 37660,	-- Razormane Warfrenzy
-						}),
-					}),
 					qa(24863, {	-- Breaking the Siege
 						["qg"] = 38378,	-- Commander Walpole
-					}),
-					qh(24591, {	-- Changing of the Gar'dul
-						["groups"] = {
-							i(53235),	-- Gar'dul's Armor
-							i(53236),	-- Gloves of Desolation Hold
-							i(53242),	-- Breeches of Authority
-							i(53243),	-- Loose Cannon
-							i(131377),	-- Gauntlets of Desolation Hold
-						},
-						["sourceQuests"] = { 24577 },	-- Desolation Hold Inspection
 					}),
 					qa(25081, {	-- Claim the Battlescar
 						["qg"] = 39083,	-- Commander Roberts
 					}),
-					qh(24618, {	-- Claim the Battle Scar
-						["qg"] = 37837,	-- Warlord Bloodhilt
-						["sourceQuests"] = { 24591 },	-- Changing of the Gar'dul
-					}),
 					qa(25057, {	-- Clap 'Em In Irons
 						["qg"] = 38323,	-- General Hawthorne
 						["sourceQuests"] = { 25045, 25043 },	-- A Line in the Dirt & Fields of Blood
-					}),
-					qh(24504, {	-- Clear the High Road
-						["qg"] = 37135,	-- Nura Pathfinder
-						["sourceQuests"] = { 28549 },	-- Warchief's Command: Southern Barrens!
-					}),
-					qh(24604, {	-- Concern for Mankrik
-						["qg"] = 37812,	-- Mahka
-					}),
-					qh(24577, {	-- Desolation Hold Inspection
-						["qg"] = 37679,	-- Warlord Bloodhilt
-						["sourceQuests"] = { 24572 },	-- Taking Back Taurajo
 					}),
 					qa(25104, {	-- Digsite Status
 						["qg"] = 39118,	-- General Twinbraid
@@ -163,24 +499,6 @@ _.Zones =
 						},
 						["qg"] = 38986,	-- Ambassador Gaines
 						["sourceQuests"] = { 25022 }	-- A Failure to Communicate
-					}),
-					qh(24603, {	-- Don't Stop Bereavin'
-						["qg"] = 37847,	-- Mankrik
-						["sourceQuests"] = { 24604 },	-- Concern for Mankrik
-					}),
-					qh(24685, {	-- Dwarf Fortress
-						["qg"] = 38140,	-- Weezil Slipshadow
-						["sourceQuests"] = { 24684 },	-- A Weezil in the Henhouse
-					}),
-					q( 24653, {	-- Echoes of Agamaggan
-						["qg"] = 37812,	-- Mahka
-						["sourceQuests"] = { 24606 },	-- Blood of the Barrens
-					}),
-					qh(24513, {	-- Eye for an Eye
-						["qg"] = 37136,	-- Oltarg
-					}),
-					qh(25284, {	-- Feeding the Fear
-						["qg"] = 37153,	-- Holgom
 					}),
 					qa(25108, {	-- Feegly the Exiled
 						["groups"] = {
@@ -195,6 +513,7 @@ _.Zones =
 					qdg(q(26908, {	-- Feeling Thorny
 						["qg"] = 37812,	-- Mahka
 						["lvl"] = 30,
+						["coord"] = { 45.1, 85.4 },
 					})),
 					qa(25043, {	-- Fields of Blood
 						["qg"] = 38323,	-- General Hawthorne
@@ -210,19 +529,6 @@ _.Zones =
 						["qg"] = 39085,	-- Logan Talonstrike
 						["sourceQuests"] = { 25082 },	-- Working the Bugs Out
 					}),
-					qh(24667, {	-- Firestone Point
-						["qg"] = 37910,	-- Crawgol
-						["sourceQuests"] = { 24654 },	-- Silithissues
-					}),
-					qh(24631, {	-- Flightmare
-						["groups"] = {
-							i(53259),	-- Tomusa's Sword
-							i(53233),	-- Earthbound Leggings
-							i(53234),	-- Flightmare Mantle
-							i(131382),	-- Earthbound Trousers
-						},
-						["qg"] = 37909,	-- Tomusa
-					}),
 					qa(25186, {	-- Futile Resistance (awarded "Honor's Stand" criteria)
 						["groups"] = {
 							i(53273),	-- Gloves of Honor's Stand
@@ -236,28 +542,9 @@ _.Zones =
 						["qg"] = 39155,	-- Marley Twinbraid
 						["sourceQuests"] = { 25104 },	-- Digsite Status
 					}),
-					qh(24620, {	-- Hearts-is-Hearts
-						["qg"] = 37908,	-- Calder Gray
-						["sourceQuests"] = { 24619 },	-- Parts-is-Parts
-					}),
 					qa(25151, {	-- He Needs Ale!
 						["qg"] = 39188,	-- Marley Twinbraid
 						["sourceQuests"] = { 25120 },	-- Marley's Final Flight
-					}),
-					qh(24505, {	-- Holdout at Hunter's Hill
-						["qg"] = 37137,	-- Tunawa Stillwind
-						["sourceQuests"] = { 24504 },	-- Clear the High Road
-					}),
-					qh(24573, {	-- Honoring the Dead (awarded "Vendetta Point" criteria)
-						["qg"] = 37717,	-- Winnoa Pineforest
-						["sourceQuests"] = { 24569 },	-- Siegebreaker
-					}),
-					qh(24634, {	-- Intelligence Warfare
-						["qg"] = 37837,	-- Warlord Bloodhilt
-						["sourceQuests"] = { 24591 },	-- Changing of the Gar'dul
-					}),
-					qh(24525, {	-- Keeping the Dogs at Bay
-						["qg"] = 11857,	-- Makaba Flathoof
 					}),
 					qa(25182, {	-- Kill 'em All!
 						["qg"] = 39118,	-- General Twinbraid
@@ -266,22 +553,12 @@ _.Zones =
 					qa(24941, {	-- Langridge Shot
 						["qg"] = 38620,	-- Thomas Paxton
 					}),
-					q( 24571, {	-- Lashvine Seeds
-						["qg"] = 38314,	-- Muyoh
-					}),
 					qa(24948, {	-- Lifting the Siege
 						["qg"] = 38620,	-- Thomas Paxton
 						["sourceQuests"] = { 24943 },	-- Re-Take the Courtyard
 					}),
 					qa(25041, {	-- Lion's Pride
 						["qg"] = 39003,	-- Sam Trawley
-					}),
-					qh(24552, {	-- Lion's Pride
-						["qg"] = 3387,	-- Jorn Skyseer
-					}),
-					qh(24633, {	-- Mahka's Plea
-						["qg"] = 37812,	-- Mahka
-						["sourceQuests"] = { 24653 },	-- Echoes of Agamaggan
 					}),
 					qa(25015, {	-- Make 'em Squeal
 						["qg"] = 38871,	-- Corporal Teegan
@@ -295,15 +572,6 @@ _.Zones =
 						},
 						["qg"] = 37835,	-- Dorn Redearth
 						["sourceQuests"] = { 25084 },	-- A Growing Threat
-					}),
-					qh(24608, {	-- Mangletooth
-						["groups"] = {
-							i(53240),	-- Kraul Bracers
-							i(53249),	-- Razormane Staff
-							i(53244),	-- Mangled Tooth
-						},
-						["qg"] = 37847,	-- Mankrik
-						["sourceQuests"] = { 24603 }	-- Don't Stop Bereavin'
 					}),
 					qa(25042, {	-- Marching On Our Stomachs (awarded "Forward Command" criteria)
 						["groups"] = {
@@ -324,13 +592,14 @@ _.Zones =
 						["qg"] = 38323,	-- General Hawthorne
 						["sourceQuests"] = { 25057 },	-- Clap 'em In Irons
 					}),
-					qh(24551, {	-- Meet the New Boss
-						["qg"] = 3433,	-- Tatternack Steelforge
-					}),
-					qh(25292, {	-- Next of Kin (UNTESTED, was unavailable on 110 and I don't have anything at the minimum level)
+					{	-- Next of Kin
+						["questID"] = 25292,
 						["qg"] = 39697,	-- Nato Raintree
 						["lvl"] = 35,
-					}),
+						["coord"] = { 49.2, 82.1 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 24747,	-- Sabotage!
+					},
 					qa(25102, {	-- No Bull
 						["groups"] = {
 							i(53298),	-- Stonesthrow Sword
@@ -340,27 +609,12 @@ _.Zones =
 						},
 						["qg"] = 39154,	-- Hurlston Stonesthrow
 					}),
-					qh(24619, {	-- Parts-is-Parts
-						["qg"] = 37908,	-- Calder Gray
-					}),
 					qa(25075, {	-- Pick-a-Part
 						["qg"] = 39084,	-- Mizzy Pistonhammer
 					}),
 					qa(25079, {	-- Powder Play
 						["qg"] = 39084,	-- Mizzy Pistonhammer
 						["sourceQuests"] = { 25075 },	-- Pick-a-Part
-					}),
-					qh(24517, {	-- Put the Fear in Them
-						["qg"] = 37154,	-- Kilrok Gorehammer
-					}),
-					qh(24514, {	-- Raptor Scraps
-						["groups"] = {
-							i(53241),  -- Steel-Patched Belt
-							i(53258),  -- Terrortooth Hide Bracers
-							i(53248),  -- Raptor Scrap Cloak
-							i(131371),  -- Steel-Patched Armbands
-						},
-						["qg"] = 37138,	-- Onatay
 					}),
 					qa(24934, {	-- Repel Boarders!
 						["qg"] = 38619,	-- Admiral Aubrey
@@ -402,32 +656,15 @@ _.Zones =
 						["qg"] = 3454,	-- Cannoneer Smythe
 						["sourceQuests"] = { 24938 },	-- The Guns of Northwatch
 					}),
-					qh(24747, {	-- Sabotage! (awarded "Spearhead" criteria)
-						["groups"] = {
-							i(53255),	-- Stonespire Shoulders
-							i(53253),	-- Spearhead Helm
-							i(131384),	-- Spearhead Faceguard
-						},
-						["qg"] = 38140,	-- Weezil Slipshadow
-						["sourceQuests"] = { 24685 },	-- Dwarf Fortress
-					}),
 					qa(25002, {	-- Scavenged
 						["qg"] = 38878,	-- Mangled Body
 					}),
-					qh(24569, {	-- Siegebreaker
-						["groups"] = {
-							i(53227),	-- Bloodhilt Gloves
-							i(53237),	-- Grease-Covered Boots
-							i(53238),	-- Groady Goblin Wand
-							i(53247),	-- Pewter Slab
-							i(131376),	-- Grease-Covered Footguards
-						},
-						["qg"] = 37679,	-- Warlord Bloodhilt
-						["sourceQuests"] = { 24546, 24551 },	-- A Line in the Dirt & Meet the New Boss
-					}),
-					qh(24515, {	-- Signals in the Sky
+					{	-- Signals in the Sky
+						["questID"] = 24515,
 						["qg"] = 37138,	-- Onatay
-					}),
+						["coord"] = { 39.4, 20.3 },
+						["races"] = HORDE_ONLY,
+					},
 					qa(24956, {	-- Silencing Rageroar
 						["groups"] = {
 							i(53266),	-- Boots of the Fallen Brother
@@ -436,51 +673,8 @@ _.Zones =
 						["qg"] = 38804,	-- Tolliver Houndstooth
 						["sourceQuests"] = { 24944 }	-- Back in the Fight
 					}),
-					qh(24654, {	-- Silithissues
-						["qg"] = 37910,	-- Crawgol
-					}),
-					qh(24621, {	-- Smarts-is-Smarts (awarded "Desolation Hold" criteria)
-						["groups"] = {
-							i(53229),	-- Brain-Splattered Leggings
-							i(53260),	-- Vest of Abomification
-							i(53246),	-- Neurosurgeon's Tool
-							i(131381),	-- Chestguard of Abomification
-						},
-						["qg"] = 37908,	-- Calder Gray
-						["sourceQuests"] = { 24620 },	-- Hearts-is-Hearts
-					}),
-					q( 24566, {	-- Sowing a Solution
-						["qg"] = 38314,	-- Muyoh
-						["sourceQuests"] = { 24570, 24571 },	-- Adder Subtraction & Lashvine Seeds
-					}),
-					qh(24534, {	-- Speaking Their Language
-						["groups"] = {
-							i(53252),	-- Sabersnout's Cloak
-							i(53228),	-- Boarpocalypse Boots
-							i(131374),	-- Bristleback Challenge Treads
-						},
-						["qg"] = 11857,	-- Makaba Flathoof
-						["sourceQuests"] = { 24529 }	-- Bad to Worse
-					}),
-					qh(24519, {	-- Stalling the Survey (rewarded "Hunter's Hill" criteria)
-						["groups"] = {
-							i(53307),  -- Surveying Gloves
-							i(53308),  -- Zykes' Belt
-							i(131372),  -- Surveying Gauntlets
-						},
-						["qg"] = 37154,	-- Kilrok Gorehammer
-						["sourceQuests"] = { 24518 }	-- The Low Road
-					}),
 					qa(25191, {	-- Survey the Destruction
 						["qg"] = 38383,	-- Nibb Spindlegear
-					}),
-					qh(24572, {	-- Taking Back Taurajo
-						["qg"] = 37679,	-- Warlord Bloodhilt
-						["sourceQuests"] = { 24569 },	-- Siegebreaker
-					}),
-					qh(24632, {	-- Tauren Vengeance
-						["qg"] = 37909,	-- Tomusa
-						["sourceQuests"] = { 24631 },	-- Flightmare
 					}),
 					qa(25000, {	-- Teegan's People
 						["qg"] = 38621,	-- Jeffrey Long
@@ -499,16 +693,6 @@ _.Zones =
 						["qg"] = 39188,	-- Marley Twinbraid
 						["sourceQuests"] = { 25151 },	-- He Needs Ale!
 					}),
-					qh(24637, {	-- The Butcher of Taurajo
-						["groups"] = {
-							i(53226),  -- Battlescar Monnion
-							i(53232),  -- Cloak of Harvested Fear
-							i(53256),  -- Taurajo Butcher's Blade
-							i(131383),  -- Battlescar Amice
-						},
-						["qg"] = 37837,	-- Warlord Bloodhilt
-						["sourceQuests"] = { 24634 }	-- Intelligence Warfare
-					}),
 					o(202598, {	-- Big Nasty Plunger
 						qa(25185,  {  -- The Deed Is Done (awarded "Fort Triumph" criteria)
 							["groups"] = {
@@ -519,36 +703,13 @@ _.Zones =
 							["sourceQuests"] = { 25183 },	-- ...And Bury the Rest
 						}),
 					}),
-					q( 24824, {	-- The Disturbed Earth (awarded "Firestone Point" criteria)
-						["qg"] = 37834,	-- Tauna Skychaser
-					}),
 					qa(24938, {	-- The Guns of Northwatch
 						["qg"] = 38619,	-- Admiral Aubrey
 						["sourceQuests"] = { 24934 },	-- Repel Boarders!
 					}),
-					i( 49776, {	-- Roadway Plans
-						qh(24518, {	-- The Low Road
-							["qg"] = 37216,	-- Honor's Stand Officer
-						}),
-					}),
-					q( 24601, {	-- The Nightmare Scar (awarded "Life from the Dream" criteria)
-						["groups"] = {
-							i(53160),	-- Vest of the Nightmare Rift
-							i(53159),	-- Naralex's Slippers
-							i(131379),	-- Tunic of the Nightmare Rift
-							i(156997),	-- Scepter of Naralex 
-							i(156998),	-- Cudgel of Naralex
-						},
-						["qg"] = 37570,	-- Naralex
-						["sourceQuests"] = { 24574 }	-- To Harvest Chaos
-					}),
 					qa(25059, {	-- The Taurajo Briefs
 						["qg"] = 38986,	-- Ambassador Gaines
 						["sourceQuests"] = { 25045, 25043 },	-- A Line in the Dirt & Fields of Blood
-					}),
-					q( 24574, {	-- To Harvest Chaos
-						["qg"] = 37570,	-- Naralex
-						["sourceQuests"] = { 24565 },	-- Biological Intervention
 					}),
 					qa(25034, {	-- To the Front!
 						["qg"] = 38871,	-- Corporal Teegan
@@ -563,25 +724,17 @@ _.Zones =
 						["qg"] = 38152,	-- Weezil Slipshadow
 						["sourceQuests"] = { 25163 },	-- Who Did This?
 					}),
-					qh(24512, {	-- Warriors' Redemption
-						["groups"] = {
-							i(53239),  -- Holgom's Bracers
-							i(53231),  -- Climbing Straps
-							i(131370),  -- Holgom's Waistcord
-						},
-						["qg"] = 37153,	-- Holgom
-					}),
-					qh(24539, {	-- When Plants Attack
-						["qg"] = 37515,	-- Lane Tallgrass
-					}),
 					qa(25163, {	-- Who Did This?
 						["qg"] = 39220,	-- Wounded Bael'dun Officer
 						["sourceQuests"] = { 25120 },	-- Marley's Final Flight
 					}),
-					qh(24807, {	-- Winnoa Pineforest
+					{	-- Winnoa Pineforest
+						["questID"] = 24807,
 						["qg"] = 37570,	-- Naralex
-						["sourceQuests"] = { 24601 },	-- The Nightmare Scar
-					}),
+						["coord"] = { 48.1, 38.6 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 24601,	-- The Nightmare Scar
+					},
 					qa(25082, {	-- Working the Bugs Out
 						["qg"] = 39085,	-- Logan Talonstrike
 					}),
