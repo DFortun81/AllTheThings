@@ -179,6 +179,7 @@ _.Instances =
 						i( 13252),	-- Cloudrunner Girdle
 						i(151416),	-- Dark Horde Grunt's Legplates
 						i(151415),	-- Veteran Spearman's Chain Boots
+						i(21955),   -- Design: Black Diamond Crab
 						un(7, i(16680)),	-- Beaststalker's Belt
 						un(7, i(16735)),	-- Bracers of Valor
 						un(7, i(16673)),	-- Cord of Elements

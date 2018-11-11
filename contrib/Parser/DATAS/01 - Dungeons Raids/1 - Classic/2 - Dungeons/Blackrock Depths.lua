@@ -555,6 +555,7 @@ _.Instances =
 							i(11822), 	-- Omnicast Boots
 							i(11669),	-- Naglering
 							i(11819),	-- Second Wind
+							i(21956),   -- Design: Dark Iron Scorpid
 						})),
 						cr(9537, e( 380, {	-- Hurley Blackbreath
 							["groups"] = {
