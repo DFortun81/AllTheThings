@@ -30,7 +30,7 @@ _.Instances =
 					}),
 					d(1, {	-- Normal
 						n(0, {	-- Zone Drop
-							n(56109, {    -- Book of Origination
+							i(56109, {    -- Book of Origination
 							["crs"] = {
 									39803, -- Air Warden
 									40310, -- Blistering Scarab
@@ -158,7 +158,7 @@ _.Instances =
 								ach(5296),	-- Faster Than the Speed of Light
 							}),
 							n(0, {	-- Zone Drop
-								n(56438, {    -- Book of Origination
+								i(56438, {    -- Book of Origination
 								["crs"] = {
 										39803, -- Air Warden
 										40310, -- Blistering Scarab
