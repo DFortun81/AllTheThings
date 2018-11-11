@@ -158,56 +158,26 @@ _.Instances =
 								ach(5296),	-- Faster Than the Speed of Light
 							}),
 							n(0, {	-- Zone Drop
-								n(39803, {	-- Air Warden
-									dr(1.4, i(56109)),	-- Book of Origination
-								}),
-								n(40310, {	-- Blistering Scarab
-									dr(1.1, i(56109)),	-- Book of Origination
-								}),
-								n(40787, {	-- Dustbone Horror
-									dr(1.0, i(56109)),	-- Book of Origination
-								}),
-								n(40311, {	-- Dustbone Tormentor
-									dr(1.1, i(56109)),	-- Book of Origination
-								}),
-								n(39801, {	-- Earth Warden
-									dr(1.3, i(56109)),	-- Book of Origination
-								}),
-								n(39800, {	-- Flame Warden
-									dr(1.1, i(56109)),	-- Book of Origination
-								}),
-								n(40033, {	-- Flux Animator
-									dr(1.2, i(56109)),	-- Book of Origination
-								}),
-								n(40715, {	-- Lifewarden Nymph
-									dr(0.9, i(56109)),	-- Book of Origination
-								}),
-								n(40170, {	-- Spatial Anomaly
-									dr(1.0, i(56109)),	-- Book of Origination
-								}),
-								n(39373, {	-- Sun-Touched Speaker
-									dr(0.7, i(56109)),	-- Book of Origination
-								}),
-								n(39370, {	-- Sun-Touched Spriteling
-									dr(1.4, i(56109)),	-- Book of Origination
-								}),
-								n(48143, {	-- Temple Fireshaper
-									dr(0.9, i(56109)),	-- Book of Origination
-								}),
-								n(48140, {	-- Temple Runecaster
-									dr(1.0, i(56109)),	-- Book of Origination
-								}),
-								n(48141, {	-- Temple Shadowlancer
-									dr(1.0, i(56109)),	-- Book of Origination
-								}),
-								n(48139, {	-- Temple Swiftstalker
-									dr(1.0, i(56109)),	-- Book of Origination
-								}),
-								n(39440, {	-- Venomous Skitterer
-									dr(1.6, i(56109)),	-- Book of Origination
-								}),
-								n(39802, {	-- Water Warden
-									dr(1.2, i(56109)),	-- Book of Origination
+								n(56438, {    -- Book of Origination
+								["crs"] = {
+										39803, -- Air Warden
+										40310, -- Blistering Scarab
+										40787, -- Dustbone Horror
+										40311, -- Dustbone Tormentor
+										39801, -- Earth Warden
+										39800, -- Flame Warden
+										40033, -- Flux Animator
+										40715, -- Lifewarden Nymph
+										40170, -- Spatial Anomaly
+										39373, -- Sun-Touched Speaker
+										39370, -- Sun-Touched Spriteling
+										48143, -- Temple Fireshaper
+										48140, -- Temple Runecaster
+										48141, -- Temple Shadowlancer
+										48139, -- Temple Swiftstalker
+										39440, -- Venomous Skitterer
+										39802, -- Water Warden
+									},
 								}),
 							}),
 							cr(39425, e(124, {	-- Temple Guardian Anhuur
