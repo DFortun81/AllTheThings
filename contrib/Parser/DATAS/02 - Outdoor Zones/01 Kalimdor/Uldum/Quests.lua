@@ -568,6 +568,7 @@ _.Zones =
 							}),
 							q(28497, {	-- Fire From the Sky
 								["groups"] = {
+									ach(5317),	-- Help the Bombardier! I'm the Bombardier!
 									i(65870),	-- Confiscated Dog Tags
 									i(65869),	-- Powderburned Spaulders
 									i(65868),	-- Canopic CHestplate
@@ -712,6 +713,9 @@ _.Zones =
 							["qg"] = 49523,
 							["sourceQuests"] = {28367},
 							["isDaily"] = true,
+							["g"] = {
+								ach(5317),	-- Help the Bombardier! I'm the Bombardier!
+							},
 						}),
 						i(63700, {	-- Myzerian's Head
 							q(28376, {	-- Myzerian's Head
