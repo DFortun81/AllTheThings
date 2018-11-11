@@ -728,6 +728,9 @@ _.Instances = { tier(1, {	-- Classic
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 50,
-		["mapID"] = 232
+		["mapID"] = 232,
+		["crs"] = {
+			14387,	-- Lothos Riftwaker
+		},
 	}),
 })};

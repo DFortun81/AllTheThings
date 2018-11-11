@@ -413,6 +413,7 @@ _.Zones =
 								q(28132, {	-- Efficient Excavations
 									["qg"] = 46993,	-- Schnottz Air Officer
 									["sourceQuests"] = {27669},
+									["isBreadcrumb"] = true,
 								}),
 							}),
 							q(27926, {	-- Eastern Hospitality

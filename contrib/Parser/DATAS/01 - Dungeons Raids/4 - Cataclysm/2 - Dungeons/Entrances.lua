@@ -7,6 +7,18 @@ _.Instances =
 	{ -- Cataclysm
 		["tierID"] = 4,	-- Cataclysm
 		["g"] = {
+			{	-- Blackrock Caverns
+				["instanceID"] = 66,	-- Blackrock Caverns
+				["coords"] = {
+					{ 71.77, 52.98, 34 },	-- Blackrock Caverns, Blackrock Caverns
+				},
+			},
+			{	-- Blackwing Descent
+				["instanceID"] = 73,	-- Blackwing Descent
+				["coords"] = {
+					{ 47.54, 68.93, 13 }	-- Blackwing Descent, Eastern Kingdoms		Note!! This is the metamap it uses, don't change
+				},
+			},
 			{	-- Halls of Origination
 				["instanceID"] = 70,	-- Halls of Origination
 				["coords"] = {

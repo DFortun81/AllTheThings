@@ -52,7 +52,7 @@ _.Instances =
 			{	-- Upper Blackrock Spire
 				["instanceID"] = 559,
 				["coords"] = {
-					{ 78.94, 33.62, 35 },	-- Blackrock Mountain, Eastern Kingdoms
+					{ 78.94, 33.62, 33 },	-- Blackrock Spire, Eastern Kingdoms
 				},
 			},
 		},
