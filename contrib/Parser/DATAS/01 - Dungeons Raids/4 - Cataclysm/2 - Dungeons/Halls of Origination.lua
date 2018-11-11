@@ -158,7 +158,7 @@ _.Instances =
 								ach(5296),	-- Faster Than the Speed of Light
 							}),
 							n(0, {	-- Zone Drop
-								i(56438, {    -- Book of Origination
+								i(56109, {    -- Book of Origination
 								["crs"] = {
 										39803, -- Air Warden
 										40310, -- Blistering Scarab
@@ -178,6 +178,9 @@ _.Instances =
 										39440, -- Venomous Skitterer
 										39802, -- Water Warden
 									},
+								}),
+								nld({     	-- Legacy
+									un(2, i(56438)),	-- Book of Origination									
 								}),
 							}),
 							cr(39425, e(124, {	-- Temple Guardian Anhuur
