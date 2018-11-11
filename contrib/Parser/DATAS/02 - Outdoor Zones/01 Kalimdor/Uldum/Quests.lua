@@ -278,9 +278,11 @@ _.Zones =
 								["isBreadcrumb"] = true,
 								["sourceQuests"] = {28112},
 							}),
-							q(27141, {	-- Premature Explosionation
+							q(27141, {	-- Premature Explosionation*
 								["qg"] = 44860,
-								["sourceQuests"] = {27993},
+								["sourceQuests"] = {
+									27993,	-- Take it to 'Em!
+								},
 							}),
 							o(205266, {	-- Elaborate Disc
 								["groups"] = {
@@ -290,32 +292,43 @@ _.Zones =
 											i(65888),	-- Splinterproof Bracers
 											i(65887),	-- Staffseeker Shoulderplates
 										},
-										["sourceQuests"] = {27141},
+										["sourceQuests"] = {
+											27141,	-- Premature Explosionation
+										},
 									}),
 								},
 								["model"] = "World\\Expansion02\\Doodads\\Generic\\Titan\\ti_disc_01.mdx",
 							}),
 							q(27179, {	-- Field Work
 								["qg"] = 45186,
-								["sourceQuests"] = {27141},
+								["sourceQuests"] = {
+									27141,	-- Premature Explosionation
+								},
 							}),
 							q(27196, {	-- On to Something
 								["qg"] = 45180,
-								["sourceQuests"] = {27176,27179},
+								["sourceQuests"] = {
+									27176,	-- Just the Tip
+									27179,	-- Field Work
+								},
 							}),
 							q(27511, {	-- The Thrill of Discovery
 								["qg"] = 45296,
-								["sourceQuests"] = {27196},
+								["sourceQuests"] = {
+									27196,	-- On to Something
+								},
 							}),
 							o(205540, {	-- Decrepit Skeleton
 								["groups"] = {
-									q(27517, {	-- Be  Prepared
+									q(27517, {	-- Be Prepared
 										["groups"] = {
 											i(65886),	-- Rope-Grip Gloves
 											i(65872),	-- Helm of Broken Bones
 											i(65884),	-- Femurbreak Stompers
 										},
-										["sourceQuests"] = {27196},
+										["sourceQuests"] = {
+											27196,	-- On to Something
+										},
 										["description"] = "This quest can be accepted from a Decrepit Skeleton or from a Piece of Rope, looted from a Tormented Tomb-Robber. This version of the quest can be picked up as soon as you enter the Chamber of the Stars.",
 									}),
 								},
@@ -323,25 +336,36 @@ _.Zones =
 							}),
 							q(27541, {	-- Lessons From the Past
 								["qg"] = 45874,
-								["sourceQuests"] = {27196},
+								["sourceQuests"] = {
+									27196,	-- On to Something
+								},
 							}),
 							q(27549, {	-- By the Light of the Stars
 								["qg"] = 45296,
-								["sourceQuests"] = {27541}
+								["sourceQuests"] = {
+									27541,	-- Lessons From the Past
+									27517,	-- Be Prepared
+									27511,	-- The Thrill of Discovery
+									28602,	-- Be Prepared
+								},
 							}),
-							q(28602, {	-- Be  Prepared
+							q(28602, {	-- Be Prepared
 								["groups"] = {
 									i(65886),	-- Rope-Grip Gloves
 									i(65872),	-- Helm of Broken Bones
 									i(65884),	-- Femurbreak Stompers
 								},
 								["qg"] = 45296,
-								["sourceQuests"] = {27541},
+								["sourceQuests"] = {
+									27196,	-- On to Something
+								},
 								["description"] = "This version of the quest will be offered if you have completed Lessons From the Past.",
 							}),
 							q(27431, {	-- Tipping the Balance
 								["qg"] = 45296,
-								["sourceQuests"] = {27517,27549,28602},
+								["sourceQuests"] = {
+									27549,	-- By the Light of the Stars
+								},
 							}),
 							q(27624, {	-- After the Fall
 								["qg"] = 45296,
@@ -442,7 +466,7 @@ _.Zones =
 								["qg"] = 47670,
 								["sourceQuests"] = {27969},
 							}),
-							q(27990, {	-- Battlezone
+							q(27990, {	-- Battlezone*
 								["groups"] = {
 									i(65854),	-- Substitute Gunner's Leggings
 									i(65853),	-- Tank Director's Treads
@@ -451,15 +475,15 @@ _.Zones =
 								["qg"] = 47159,
 								["sourceQuests"] = {28002},
 							}),
-							q(28187, {	-- Missed Me By Zhat Much!
+							q(28187, {	-- Missed Me By Zhat Much!*
 								["qg"] = 47940,
 								["sourceQuests"] = {27990},
 							}),
-							q(28193, {	-- Lockdown!
+							q(28193, {	-- Lockdown!*
 								["qg"] = 47972,
 								["sourceQuests"] = {28187},
 							}),
-							q(28195, {	-- Sending a Message
+							q(28195, {	-- Sending a Message*
 								["qg"] = 47972,
 								["sourceQuests"] = {28193},
 							}),
@@ -471,9 +495,9 @@ _.Zones =
 									i(65851),	-- Officer's Formal Baton
 								},
 								["qg"] = 47967,
-								["sourceQuests"] = {28187},
+								["sourceQuests"] = {28193},
 							}),
-							q(28267, {	-- Firing Squad
+							q(28267, {	-- Firing Squad*
 								["qg"] = 47972,
 								["sourceQuests"] = {28195,28194},
 							}),
