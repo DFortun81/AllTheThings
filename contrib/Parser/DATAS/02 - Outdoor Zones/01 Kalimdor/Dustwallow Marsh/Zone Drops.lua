@@ -7,7 +7,7 @@ _.Zones =
 		m(70, {	-- Dustwallow Marsh
 			["groups"] = {
 				n(0, {	-- Zone Drop
-					i(10822, {	-- Dark Whelpling (PET!)
+					i(10822, {	-- Dark Whelpling
 						["crs"] = {
 							4323,	-- Searing Hatchling
 							4324,	-- Searing Whelp

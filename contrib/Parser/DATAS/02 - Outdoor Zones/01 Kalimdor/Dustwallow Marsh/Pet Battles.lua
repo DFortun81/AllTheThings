@@ -13,7 +13,12 @@ _.Zones =
 					desc(p(489), "Can be found in the area around Onyxia's Lair in Dustwallow Marsh."),	-- Spawn of Onyxia
 					p(412),	-- Spider
 					p(420),	-- Toad
-					qg(66436, qh(31905)),	-- Grazzle the Great
+					{	-- Grazzle the Great
+						["questID"] = 31905,
+						["qg"] = 66436,	-- Grazzle the Great
+						["coord"] = { 53.8, 74.8 },
+						["isDaily"] = true,
+					},
 				}),
 			},
 		}),
