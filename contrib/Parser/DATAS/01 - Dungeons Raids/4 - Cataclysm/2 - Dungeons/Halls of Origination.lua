@@ -10,6 +10,7 @@ _.Instances =
 				["groups"] = {
 					n(-17, {	-- Quests
 						q(28654, {	-- The Heart of the Matter
+							["sourceQuests"] = { 28633 },	-- The Coffer of Promise
 							["qg"] = 39908,	-- Brann Bronzebeard
 						}),
 						q(28746, {	-- Penetrating Their Defenses
