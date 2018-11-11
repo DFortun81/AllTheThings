@@ -385,7 +385,6 @@ _.NeverImplemented =
 	un(1, i(48924)),	-- Liadrin's Handguards of Conquest
 	un(1, i(48925)),	-- Liadrin's Legguards of Conquest
 	un(1, i(48926)),	-- Liadrin's Shoulderguards of Conquest
-	un(15, i(49278)), -- Goblin Rocket Pack
 	un(1, i(52548)),	-- Initiate's Tunic
 	un(1, i(53879)), 	-- Rugged Work Shirt
 	un(1, i(53880)), 	-- Super Girly Shirt

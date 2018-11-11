@@ -446,6 +446,17 @@ _.Instances =
 							},
 						},
 					}),
+					{	-- Zafod Boombox
+						-- Note!! Putting him here rather than 4 times for an unlearnable shirt
+						["npcID"] = 37184,	-- Zafod Boombox
+						["g"] = {
+							{	-- Goblin Rocket Pack
+								["itemID"] = 49278,			-- Goblin Rocket Pack
+								["u"] = 15,					-- Unlearnable Filter
+								["collectible"] = false,	-- We can't collect it so we don't want it to hurt our numbers
+							},
+						},
+					},
 					n(0, {	-- Zone Drop
 						["groups"] = {
 							i(50444),	-- Rowan's Rifle of Silver Bullets
