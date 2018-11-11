@@ -11,9 +11,9 @@ _.Instances =
 					n(-17, {	-- Quests
 						q(28781, {	-- Targets of Opportunity
 							["groups"] = {
-							i(66905),	-- Clandestine Spaulders
-							i(66906),	-- Bracers of the Lost City
-							i(66907),	-- Captain Hadan's Pauldrons
+								i(66905),	-- Clandestine Spaulders
+								i(66906),	-- Bracers of the Lost City
+								i(66907),	-- Captain Hadan's Pauldrons
 							},
 							["qg"] = 50038,	-- Captain Hadan
 						}),

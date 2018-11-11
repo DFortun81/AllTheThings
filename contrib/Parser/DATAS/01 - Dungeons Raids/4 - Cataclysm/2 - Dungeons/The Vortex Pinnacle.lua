@@ -38,12 +38,27 @@ _.Instances =
 									45922,	-- Empyrean Assassin
 									45928,	-- Executor of the Caliph
 									45477,	-- Gust Soldier
-									45930,	-- Minister of ir
+									45930,	-- Minister of Air
 									45926,	-- Servant of Asaad
 									45935,	-- Temple Adept
 									45924,	-- Turbulent Squall
 									45912,	-- Wild Vortex
 									45919,	-- Young Storm Dragon
+								},
+							}),
+							i(55854, {	-- Rainsong
+								["crs"] = {
+									45912,	-- Wild Vortex
+									45922,	-- Empyrean Assassin
+									45917,	-- Cloud Prince
+									45919,	-- Young Storm Dragon
+									45477,	-- Gust Soldier
+									45924,	-- Turbulent Squall
+									45915,	-- Armored Mistral
+									45935,	-- Temple Adept
+									45926,	-- Servant of Asaad
+									45928,	-- Executor of the Caliph
+									45930,	-- Minister of Air
 								},
 							}),
 						}),
