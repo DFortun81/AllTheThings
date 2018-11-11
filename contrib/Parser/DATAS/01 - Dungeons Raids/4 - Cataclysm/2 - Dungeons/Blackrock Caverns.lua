@@ -31,78 +31,52 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
-						n(40084, {	-- Bellows Slave
-							dr(1.3, i(55789)),	-- Berto's Staff
-							dr(1.3, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(40013, {	-- Buster
-							dr(1.4, i(55789)),	-- Berto's Staff
-							dr(1.1, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(39994, {	-- Conflagration
-							dr(0.9, i(55789)),	-- Berto's Staff
-							dr(1, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(39982, {	-- Crazed Mage
-							dr(0.9, i(55789)),	-- Berto's Staff
-							dr(0.7, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(40023, {	-- Defiled Earth Rager
-							dr(1.1, i(55789)),	-- Berto's Staff
-							dr(0.1, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(39987, {	-- Evolved Twilight Zealot
-							dr(1.4, i(55789)),	-- Berto's Staff
-							dr(1.4, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(40021, {	-- Incendiary Spark
-							dr(1.2, i(55789)),	-- Berto's Staff
-							dr(1.2, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(40008, {	-- Lucky
-							dr(1, i(55789)),	-- Berto's Staff
-							dr(1, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(39985, {	-- Mad Prisoner
-							dr(1, i(55789)),	-- Berto's Staff
-							dr(1.8, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(40004, {	-- Quicksilver
-							dr(1.3, i(55789)),	-- Berto's Staff
-							dr(1.8, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(40015, {	-- Runty
-							dr(0.4, i(55789)),	-- Berto's Staff
-							dr(0.3, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(40017, {	-- Twilight Element Warden
-							dr(1.2, i(55789)),	-- Berto's Staff
-							dr(1.1, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(39708, {	-- Twilight Flame Caller
-							dr(1.2, i(55789)),	-- Berto's Staff
-							dr(1.2, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(40019, {	-- Twilight Obsidian Borer
-							dr(1.2, i(55789)),	-- Berto's Staff
-							dr(1.2, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(39980, {	-- Twilight Sadist
-							dr(1.2, i(55789)),	-- Berto's Staff
-							dr(1.2, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(39978, {	-- Twilight Torturer
-							dr(1.1, i(55789)),	-- Berto's Staff
-							dr(1.1, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(39990, {	-- Twilight Zealot
-							dr(1.5, i(55789)),	-- Berto's Staff
-							dr(1.5, i(55790)),	-- Toxidunk Dagger
-						}),
-						n(50284, {	-- Twilight Zealot
-							dr(0.8, i(55789)),	-- Berto's Staff
-							dr(0.3, i(55790)),	-- Toxidunk Dagger
-						}),
+						{	-- Berto's Staff
+							["itemID"] = 55789,	-- Berto's Staff
+							["crs"] = {
+								40084,	-- Bellows Slave
+								40013,	-- Buster
+								39994,	-- Conflagration
+								39982,	-- Crazed Mage
+								40023,	-- Defiled Earth Rager
+								39987,	-- Evolved Twilight Zealot
+								40021,	-- Incendiary Spark
+								40008,	-- Lucky
+								39985,	-- Mad Prisoner
+								40004,	-- Quicksilver
+								40015,	-- Runty
+								40017,	-- Twilight Element Warden
+								39708,	-- Twilight Flame Caller
+								40019,	-- Twilight Obsidian Borer
+								39980,	-- Twilight Sadist
+								39978,	-- Twilight Torturer
+								39990,	-- Twilight Zealot
+								50284,	-- Twilight Zealot
+							},
+						},
+						{	-- Toxidunk Dagger
+							["itemID"] = 55790,	-- Toxidunk Dagger
+							["crs"] = {
+								40084,	-- Bellows Slave
+								40013,	-- Buster
+								39994,	-- Conflagration
+								39982,	-- Crazed Mage
+								40023,	-- Defiled Earth Rager
+								39987,	-- Evolved Twilight Zealot
+								40021,	-- Incendiary Spark
+								40008,	-- Lucky
+								39985,	-- Mad Prisoner
+								40004,	-- Quicksilver
+								40015,	-- Runty
+								40017,	-- Twilight Element Warden
+								39708,	-- Twilight Flame Caller
+								40019,	-- Twilight Obsidian Borer
+								39980,	-- Twilight Sadist
+								39978,	-- Twilight Torturer
+								39990,	-- Twilight Zealot
+								50284,	-- Twilight Zealot
+							},
+						},
 					}),
 					d(  1, {	-- Normal
 						cr(39665, e(105, { -- Rom'ogg Boncrusher

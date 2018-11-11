@@ -7,42 +7,11 @@ _.Instances = { tier(1, {	-- Classic
 		["groups"] = {
 			n(0, {	-- Zone Drop
 				["groups"] = {
-					n(13996, {	-- Blackwing Technician
-						i(18562),	-- Elementium Ingot
-					}),
-					n(12460, {	-- Death Talon Wyrmguard
-						i(19354),	-- Draconic Avenger
-						i(19439),	-- Interlaced Shadow Jerkin
-						i(19438),	-- Ringo's Blizzard Boots
-					}),
-					i(19362, {	-- Doom's Edge
+					i(19434, {	-- Band of Dark Dominion
 						["crs"] = {
 							12457, -- Blackwing Spellbinder
 							12459, -- Blackwing Warlock
 							12461, -- Death Talon Overseer
-						},
-					}),
-					i(19358, {	-- Draconic Maul
-						["crs"] = {
-							12467, -- Death Talon Captain
-							12463, -- Death Talon Flamescale
-							12464, -- Death Talon Seether
-							12465, -- Death Talon Wyrmkin
-						},
-					}),
-					i(19435, {	-- Essence Gatherer
-						["crs"] = {
-							12457, -- Blackwing Spellbinder
-							12459, -- Blackwing Warlock
-							12461, -- Death Talon Overseer
-						},
-					}),
-					i(19436, {	-- Cloak of Dragonic Might
-						["crs"] = {
-							12467, -- Death Talon Captain
-							12463, -- Death Talon Flamescale
-							12464, -- Death Talon Seether
-							12465, -- Death Talon Wyrmkin
 						},
 					}),
 					i(19437, {	-- Boots of Pure Thought
@@ -53,13 +22,60 @@ _.Instances = { tier(1, {	-- Classic
 							12465, -- Death Talon Wyrmkin
 						},
 					}),
-					i(19434, {	-- Band of Dark Dominion
+					i(19436, {	-- Cloak of Dragonic Might
+						["crs"] = {
+							12467, -- Death Talon Captain
+							12463, -- Death Talon Flamescale
+							12464, -- Death Talon Seether
+							12465, -- Death Talon Wyrmkin
+						},
+					}),
+					i(19362, {	-- Doom's Edge
 						["crs"] = {
 							12457, -- Blackwing Spellbinder
 							12459, -- Blackwing Warlock
 							12461, -- Death Talon Overseer
 						},
 					}),
+					{	-- Draconic Avenger
+						["itemID"] = 19354,	-- Draconic Avenger
+						["crs"] = {
+							12460,	-- Death Talon Wyrmguard
+						},
+					},
+					i(19358, {	-- Draconic Maul
+						["crs"] = {
+							12467, -- Death Talon Captain
+							12463, -- Death Talon Flamescale
+							12464, -- Death Talon Seether
+							12465, -- Death Talon Wyrmkin
+						},
+					}),
+					{	-- Elementium Ingot
+						["itemID"] = 18562,	-- Elementium Ingot
+						["crs"] = {
+							13996,	-- Blackwing Technician
+						},
+					},
+					i(19435, {	-- Essence Gatherer
+						["crs"] = {
+							12457, -- Blackwing Spellbinder
+							12459, -- Blackwing Warlock
+							12461, -- Death Talon Overseer
+						},
+					}),
+					{	-- Interlaced Shadow Jerkin
+						["itemID"] = 19439,	-- Interlaced Shadow Jerkin
+						["crs"] = {
+							12460,	-- Death Talon Wyrmguard
+						},
+					},
+					{	-- Ringo's Blizzard Boots
+						["itemID"] = 19438,	-- Ringo's Blizzard Boots
+						["crs"] = {
+							12460,	-- Death Talon Wyrmguard
+						},
+					},
 				},
 			}),
 			e( 1529, {	-- Razoregore the Untamed
