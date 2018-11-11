@@ -37,6 +37,9 @@ _.Zones =
 							q(28112, {	-- Escape From the Lost City
 								["qg"] = 46872,
 								["sourceQuests"] = {27923,27924,28105},
+								["groups"] = {
+									i(64492),	-- Ramkahen Badge of Valor
+								},
 							}),
 						}),
 						crit(2, {	-- The High Council's Decision

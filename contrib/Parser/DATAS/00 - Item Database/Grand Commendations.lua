@@ -20,6 +20,9 @@ h(i(45722, 81));	-- Thunder Bluff Commendation Badge
 h(i(45723, 68));	-- Undercity Commendation Badge
 
 -- Cataclysm
+-- Uldum
+i(64492, 1173);	-- Ramkahen Badge of Valor
+
 -- Molten Front (Did not automatically apply race requirements... sigh)
 h(i(71088, 1133));	-- Bilgewater Writ of Commendation
 a(i(70145, 69));	-- Darnassus Writ of Commendation
