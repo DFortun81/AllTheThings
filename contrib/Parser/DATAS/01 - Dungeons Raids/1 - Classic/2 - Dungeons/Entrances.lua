@@ -28,7 +28,9 @@ _.Instances =
 			{	-- Dire Maul
 				["instanceID"] = 230,	-- Dire Maul
 				["coords"] = {
-					{ 60.32, 30.17, 69 },	-- Dire Maul, Feralas
+					{ 60.32, 30.17, 69 },	-- Dire Maul [West], Feralas
+					{ 62.48, 24.48, 69 },	-- Dire Maul [North], Feralas
+					{ 64.83, 30.24, 69 },	-- Dire Maul [East], Feralas
 				},
 			},
 			{	-- Lower Blackrock Spire
@@ -46,7 +48,9 @@ _.Instances =
 			{	-- Maraudon
 				["instanceID"] = 232,	-- Maraudon
 				["coords"] = {
-					{ 78.01, 55.68, 67 },	-- Maraudon, The Wicked Grotto
+					{ 78.01, 55.68, 67 },	-- Maraudon [Orange], The Wicked Grotto [Desolace]
+					{ 44.49, 77.14, 68 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
+					{ 51.68, 24.73, 68 },	-- Maraudon [Purple], Foulspore Cavern [Desolace]
 				},
 			},
 			{	-- Ragefire Chasm
@@ -70,13 +74,13 @@ _.Instances =
 			{	-- Scarlet Halls
 				["instanceID"] = 311,	-- Scarlet Halls
 				["coords"] = {
-					{ 69.06, 24.98, 19 },	-- Scarlet Halls, Scarlet Monastery
+					{ 69.06, 24.98, 19 },	-- Scarlet Halls, Scarlet Monastery [Tirisfal Glades]
 				},
 			},
 			{	-- Scarlet Monastery
 				["instanceID"] = 316,	-- Scarlet Monastery
 				["coords"] = {
-					{ 78.36, 58.04, 19 },	-- Scarlet Monastery, Scarlet Monastery
+					{ 78.36, 58.04, 19 },	-- Scarlet Monastery, Scarlet Monastery [Tirisfal Glades]
 				},
 			},
 			{	-- Scholomance
@@ -94,7 +98,8 @@ _.Instances =
 			{	-- Stratholme
 				["instanceID"] = 236,	-- Stratholme
 				["coords"] = {
-					{ 27.66, 11.64, 23 },	-- Stratholme, Eastern Plaguelands
+					{ 27.66, 11.64, 23 },	-- Stratholme [Main Gate], Eastern Plaguelands
+					{ 43.76, 17.52, 23 },	-- Stratholme [Undead Side], Eastern Plaguelands
 				},
 			},
 			{	-- The Stockade
@@ -112,7 +117,8 @@ _.Instances =
 			{	-- Uldaman
 				["instanceID"] = 239,	-- Uldaman
 				["coords"] = {
-					{ 36.63, 29.42, 16 },	-- Uldaman, Uldaman [Badlands]
+					{ 36.63, 29.42, 16 },	-- Uldaman [Front], Uldaman [Badlands]
+					{ 60.68, 37.43, 15 },	-- Uldaman [Side], Badlands
 				},
 			},
 			{	-- Wailing Caverns
