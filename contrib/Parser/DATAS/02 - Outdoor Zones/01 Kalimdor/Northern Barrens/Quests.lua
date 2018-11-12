@@ -512,6 +512,7 @@ _.Zones =
 							["lvl"] = 35,
 							["coord"] = { 68.4, 69 },
 							["races"] = HORDE_ONLY,
+							["isBreadcrumb"] = true,
 							["sourceQuests"] = { 26696 },	-- The Call of Kalimdor
 						}),
 						q(26702, {	-- Flight to Theramore
@@ -519,6 +520,7 @@ _.Zones =
 							["lvl"] = 35,
 							["coord"] = { 68.4, 69 },
 							["races"] = ALLIANCE_ONLY,
+							["isBreadcrumb"] = true,
 							["sourceQuests"] = { 26596 },	-- The Call of Kalimdor
 						}),
 						q(865, {	-- It's Gotta be the Horn

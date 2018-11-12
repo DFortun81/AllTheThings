@@ -420,9 +420,11 @@ _.Zones =
 						sz(4995,1, { -- Booty Bay
 							qa(26596, {	-- The Call of Kalimdor
 								["qg"] = 48808,
+								["isBreadcrumb"] = true,
 							}),
 							qh(26696, {	-- The Call of Kalimdor
 								["qg"] = 48797,
+								["isBreadcrumb"] = true,
 							}),
 							q(26597, { -- Stranglethorn Fever
 								["groups"] = {
