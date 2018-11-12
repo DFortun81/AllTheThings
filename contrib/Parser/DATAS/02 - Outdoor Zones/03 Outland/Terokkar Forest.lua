@@ -54,6 +54,7 @@ _.Zones =
 --]]
 					q( 10664, {	-- Additional Materials
 						["qg"] = 21465,	-- David Wayne
+						["coord"] = { 77.5, 38.7 },
 						["sourceQuests"] = { 10663 },	-- The Hermit Smith
 					}),
 --[[

@@ -564,7 +564,7 @@ _.Zones =
 								i(31717),	-- Shadowcast Tunic
 								i(31719),	-- Stormstrike Vest
 							}),
-							qa( 10763),	-- Dumphry's Request
+--							qa( 10763),	-- Dumphry's Request (removed, old BT key questline)
 							qa( 10396),	-- Enemy of my Enemy...
 							qa( 10754),	-- Entry Into the Citadel
 							qa( 10143),	-- Expedition Point
@@ -587,7 +587,7 @@ _.Zones =
 							qa(  9563),	-- Gaining Mirren's Trust
 							un(40, q(45413)),	-- Gathering Information
 							qa( 10382),	-- Go to the Front
-							qa( 10762),	-- Grand Master Dumphry
+--							qa( 10762),	-- Grand Master Dumphry (removed, old BT key questline)
 							qh(10834,  {  -- Grillok "Darkeye"
 								i(28057),	-- Bonechewer Berserker's Vest
 								i(28055),	-- Gilded Crimson Chestplate
@@ -609,7 +609,7 @@ _.Zones =
 							}),
 							un(21, qa( 11818)),	-- Honor the Flame
 							un(21, qh( 11851)),	-- Honor the Flame
-							qa( 10764),	-- Hotter than Hell
+--							qa( 10764),	-- Hotter than Hell (removed, old BT key questline)
 							q(10161,  {  -- In Case of Emergency...
 								i(25980),	-- Aerodynamic Scaled Vest
 								i(25981),	-- Dirigible Crash Helmet
