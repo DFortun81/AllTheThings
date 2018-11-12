@@ -6318,6 +6318,7 @@ local function CreateMinimapButton()
 	button:Show();
 	return button;
 end
+app.CreateMinimapButton = CreateMinimapButton;
 local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local popout = app:GetWindow((group.parent and group.parent.text or "") .. (group.text or ""));
@@ -10194,7 +10195,7 @@ app.events.VARIABLES_LOADED = function()
 		app.MissingItemVisibilityFilter = app.Filter;
 	end
 	if GetDataMember("ShowMinimapButton", true) then
-		app.Minimap = CreateMinimapButton(); -- NOTE: Create this if they turn it on.
+		app.Minimap = app.CreateMinimapButton(); -- NOTE: Create this if they turn it on.
 		app.Minimap:Show();
 	end
 	if GetDataMember("CompletionistMode", true) then
