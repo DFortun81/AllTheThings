@@ -16,10 +16,23 @@ _.Zones =
 					p(424), 	-- Roach
 					p(412), 	-- Spider
 					desc(p(506), "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders."), -- Venomspitter Hatchling
-					qg(66137, qh(31817, { -- Merda Stronghoof
-						i(89125),	-- Sack of Pet Supplies
-					})),
-					qg(66137, qh(31862)),	-- Zonya the Sadist
+					{	-- Merda Stronghoof
+						["questID"] = 31817,
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+						["qg"] = 66137,	-- Zonya the Sadist
+						["coord"] = { 59.6, 71.6 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
+					{	-- Zonya the Sadist
+						["questID"] = 31862,
+						["qg"] = 66137,	-- Zonya the Sadist
+						["coord"] = { 59.6, 71.6 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 				}),
 			},
 		}),

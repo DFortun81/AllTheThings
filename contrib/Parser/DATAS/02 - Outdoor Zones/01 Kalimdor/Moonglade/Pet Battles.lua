@@ -10,7 +10,13 @@ _.Zones =
 					p(478), -- Forest Moth
 					p(378), -- Rabbit
 					p(379), -- Squirrel
-					qg(66412, qh(31908)),	-- Elena Flutterfly
+					{	-- Elena Flutterfly
+						["questID"] = 31908,
+						["qg"] = 66412,	-- Elena Flutterfly
+						["coord"] = { 46.0, 60.4 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 				}),
 			},
 		}),

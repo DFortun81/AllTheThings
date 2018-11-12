@@ -12,7 +12,13 @@ _.Zones =
 					p(387), 	-- Snake
 					p(379), 	-- Squirrel
 					desc(p(1158), "Can be found near Feral Scar Yetis south of Dire Maul."), -- Stunted Yeti
-					qg(66352, qh(31871)),	-- Traitor Gluk
+					{	-- Traitor Gluk
+						["questID"] = 31871,
+						["qg"] = 66352,	-- Traitor Gluk
+						["coord"] = { 59.6, 49.6 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 				}),
 			},
 		}),

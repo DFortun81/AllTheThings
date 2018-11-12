@@ -17,14 +17,35 @@ _.Zones =
 					p(544), 	-- Oasis Moth
 					p(511), 	-- Sidewinder
 					p(546), 	-- Tol'vir Scarab
-					q(31970, {	-- Grand Master Obalis (non-daily)
-						i(89125),	-- Sack of Pet Supplies
-					}),
-					qr(q(31971, { 	-- Grand Master Obalis (daily version)
-						i(89125),	-- Sack of Pet Supplies
-					})),
-					qg(66824, qa(31985)),	-- The Triumphant Return
-					qg(66824, qh(31986)),	-- The Triumphant Return
+					{	-- Grand Master Obalis
+						["questID"] = 31970,
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+						["qg"] = 66824,	-- Obalis
+						["coord"] = { 56.6, 41.8 },
+					},
+					{	-- Grand Master Obalis
+						["questID"] = 31971,
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+						["qg"] = 66824,	-- Obalis
+						["coord"] = { 56.6, 41.8 },
+						["isDaily"] = true,
+					},
+					{	-- The Triumphant Return
+						["questID"] = 31985,
+						["qg"] = 66824,	-- Obalis
+						["coord"] = { 56.6, 41.8 },
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- The Triumphant Return
+						["questID"] = 31986,
+						["qg"] = 66824,	-- Obalis
+						["coord"] = { 56.6, 41.8 },
+						["races"] = HORDE_ONLY,
+					},
 				}),
 			},
 		}),

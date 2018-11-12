@@ -19,12 +19,22 @@ _.Zones =
 					p(419),	-- Small Frog
 					desc(p(485), "This wild pet can be found in the south eastern area of Desolace. It only spawns at night."),	-- Stone Armadillo
 					p(480),	-- Topaz Shale Hatchling
-					qh(31870, {	-- Cassandra Kaboom
-						i(89125),	-- Sack of Pet Supplies
-					}),	
-					qh(31872, {	-- Merda Stronghoof
+					{	-- Cassandra Kaboom
+						["questID"] = 31870,
 						["qg"] = 66372,	-- Merda Stronghoof
-					}),
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+						["coord"] = { 57.2, 45.8 },
+						["races"] = HORDE_ONLY,
+					},	
+					{	-- Merda Stronghoof
+						["questID"] = 31872,
+						["qg"] = 66372,	-- Merda Stronghoof
+						["coord"] = { 57.2, 45.8 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 				}),
 			},
 		}),

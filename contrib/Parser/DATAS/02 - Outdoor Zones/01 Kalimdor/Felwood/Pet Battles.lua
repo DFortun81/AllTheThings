@@ -12,7 +12,13 @@ _.Zones =
 					p(498), -- Tainted Moth
 					p(499), -- Tainted Rat
 					p(420), -- Toad
-					qg(66442, qh(31907)),	-- Zoltan
+					{	-- Zoltan
+						["questID"] = 31907,
+						["qg"] = 66442,	-- Zoltan
+						["coord"] = { 40.0, 56.6 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 				}),
 			},
 		}),
