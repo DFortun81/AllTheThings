@@ -390,7 +390,7 @@ _.Zones =
 											i(160032),	-- Korthek's Staff
 											i(155417),	-- Keeper's Crescent
 											i(155418),	-- Spireguard's Waraxe
-											i(115544),	-- Sethraliss-Blessed Greatblade
+											i(155444),	-- Sethraliss-Blessed Greatblade
 										},
 										["qg"] = 138411,	-- Vorrik
 										["coord"] = { 51.9, 28.7 },
@@ -1363,4 +1363,3 @@ _.Zones =
 		}),
 	}),
 };
---]]
