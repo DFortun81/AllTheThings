@@ -1580,7 +1580,16 @@ _.Zones =
 					q(24589),	-- Lord Jaraxxus Must Die!
 					q(24590),	-- Lord Marrowgar Must Die!
 					q(8867),	-- Lunar Fireworks
-					q(12853),	-- Luxurious Getaway!
+--]]
+					q(12853, {	-- Luxurious Getaway!
+						["qg"] = 30490,	-- Rin Duoctane
+						["coord"] = { 31.2, 49.6 },
+						["sourceQuests"] = { 
+							49554,	-- Hero's Call: Storm Peaks!
+							49536,	-- Warchief's Command: Storm Peaks!
+						},
+					}),
+--[[
 					qh( 29073),	-- Make Haste to Orgrimmar!
 					qa( 29071),	-- Make Haste to Stormwind!
 					q(24584),	-- Malygos Must Die!

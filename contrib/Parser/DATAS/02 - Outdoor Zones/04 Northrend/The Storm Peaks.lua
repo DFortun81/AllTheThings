@@ -197,7 +197,46 @@ _.Zones =
 						crit(9),		-- Loken
 					}),
 ]]--				
---[[				
+					q(12818, {	-- Clean Up
+						["qg"] = 29431,	-- Jeer Sparksocket
+						["coord"] = { 41.0, 86.4 },
+					}),
+
+
+					q(12844, {	-- Equipment Recovery
+						["qg"] = 29473,	-- Gretchen Fizzlespark
+						["coord"] = { 41.1, 86.1 },
+					}),
+
+
+					q(12836, {	-- Expression of Gratitude
+						["qg"] = 29428,	-- Ricket
+						["coord"] = { 40.9, 85.3 },
+					}),
+					
+					
+					q(12827, {	-- Reclaimed Rations
+						["qg"] = 29428,	-- Ricket
+						["coord"] = { 40.9, 85.3 },
+					}),
+
+
+					q(12843, {	-- They Took Our Men!
+						["qg"] = 29473,	-- Gretchen Fizzlespark
+						["coord"] = { 41.1, 86.1 },
+					}),
+
+
+
+
+
+--[[
+						["qg"] = ,	-- 
+						["coord"] = {  },
+						["sourceQuests"] = {  },
+					}),
+
+
 					q(44767),	-- A Celestial Invitation
 					q(12908),	-- A Certain Prisoner
 					q(12921),	-- A Change of Scenery
@@ -229,7 +268,6 @@ _.Zones =
 					qh( 12920),	-- Catching up with Brann
 					qh( 13055),	-- Cave Medicine
 					qh( 13058),	-- Changing the Wind's Course
-					q(12818),	-- Clean Up
 					q(12856),	-- Cold Hearted
 					qa( 11356),	-- Costumed Orphan Matron
 					qh( 12927),	-- Data Mining
@@ -251,9 +289,7 @@ _.Zones =
 					q(12906),	-- Discipline
 					qh( 13038),	-- Distortions in Time
 					qh( 13000),	-- Emergency Measures
-					q(12844),	-- Equipment Recovery
 					q(12907),	-- Examples to be Made
-					q(12836),	-- Expression of Gratitude
 					q(12978),	-- Facing the Storm
 					q(13015),	-- Fargal the Elder
 					qa( 12986),	-- Fate of the Titans
@@ -311,7 +347,6 @@ _.Zones =
 					qa( 12869),	-- Pushed Too Far
 					q(13001),	-- Raising Hodir's Spear
 					q(12930),	-- Rare Earth
-					q(12827),	-- Reclaimed Rations
 					q(12937),	-- Relief for the Fallen
 					q(12888),	-- SCRAP-E
 					q(13064),	-- Sibling Rivalry
@@ -366,7 +401,6 @@ _.Zones =
 					q(12996),	-- The Warm-Up
 					qh( 13034),	-- The Witness and the Hero
 					qh( 13056),	-- There's Always Time for Revenge
-					q(12843),	-- They Took Our Men!
 					qa( 12876),	-- Unwelcome Guests
 					q(12984),	-- Valduran the Stormborn
 					q(12953),	-- Valkyrion Must Burn
