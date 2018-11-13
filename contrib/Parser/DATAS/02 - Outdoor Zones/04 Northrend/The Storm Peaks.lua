@@ -197,15 +197,58 @@ _.Zones =
 						crit(9),		-- Loken
 					}),
 ]]--				
+					q(12820, {	-- A Delicate Touch
+						["qg"] = 29428,	-- Ricket
+						["coord"] = { 40.9, 85.3 },
+						["sourceQuests"] = { 12826 },	-- Slightly Unstable
+					}),
+
+
+					q(12823, {	-- A Flawless Plan
+						["qg"] = 29432,	-- Gino
+						["coord"] = { 50.0, 81.7 },
+						["sourceQuests"] = { 12821 },	-- Opening the Backdoor
+					}),
+					
+					
+					q(12828, {	-- Ample Inspiration
+						["qg"] = 29428,	-- Ricket
+						["coord"] = { 40.9, 85.3 },
+						["sourceQuests"] = { 12836 },	-- Expression of Gratitude
+					}),
+
+
+					q(12832, {	-- Bitter Departure
+						["qg"] = 29434,	-- Injured Goblin Miner
+						["coords"] = {	-- Can be picked up from the same NPC in multiple locations
+							{ 41.4, 74.8 },
+							{ 42.2, 74.0 },
+							{ 42.4, 74.6 },
+							{ 43.0, 74.4 },
+							{ 43.6, 74.6 },
+							{ 43.4, 75.2 },
+						},
+						["sourceQuests"] = { 12831 },	-- Only Partly Forgotten
+					}),
+					
+
 					q(12818, {	-- Clean Up
 						["qg"] = 29431,	-- Jeer Sparksocket
 						["coord"] = { 41.0, 86.4 },
 					}),
 
 
+					q(12824, {	-- Demolitionist Extraordinaire
+						["qg"] = 29432,	-- Gino
+						["coord"] = { 50.0, 81.7 },
+						["sourceQuests"] = { 12823 },	-- A Flawless Plan
+					}),
+
+
 					q(12844, {	-- Equipment Recovery
 						["qg"] = 29473,	-- Gretchen Fizzlespark
 						["coord"] = { 41.1, 86.1 },
+						-- Not required for "Defending K3" criteria.
 					}),
 
 
@@ -214,6 +257,73 @@ _.Zones =
 						["coord"] = { 40.9, 85.3 },
 					}),
 					
+
+					q(12819, {	-- Just Around the Corner
+						["qg"] = 29431,	-- Jeer Sparksocket
+						["coord"] = { 41.0, 86.4 },
+						["sourceQuests"] = { 12818 },	-- Clean Up
+					}),
+
+
+					q(12822, {	-- Know No Fear (awarded "Defending K3" criteria)
+						["qg"] = 29428,	-- Ricket
+						["coord"] = { 40.9, 85.3 },
+						["sourceQuests"] = { 12821 },	-- Opening the Backdoor
+					}),
+
+
+					q(12846, {	-- Leave No Goblin Behind
+						["qg"] = 29473,	-- Gretchen Fizzlespark
+						["coord"] = { 41.1, 86.1 },
+						["sourceQuests"] = { 12843 },	-- They Took Our Men!
+					}),
+
+					
+					q(12829, {	-- Moving In
+						["qg"] = 29430,	-- Tore Rumblewrench
+						["coord"] = { 41.6, 80.0 },
+						["sourceQuests"] = { 12827 },	-- Reclaimed Rations
+						-- May have additional SQ
+					}),
+
+
+					q(12831, {	-- Only Partly Forgotten
+						["qg"] = 29434,	-- Injured Goblin Miner
+						["coords"] = {	-- Can be picked up from the same NPC in multiple locations
+							{ 41.4, 74.8 },
+							{ 42.2, 74.0 },
+							{ 42.4, 74.6 },
+							{ 43.0, 74.4 },
+							{ 43.6, 74.6 },
+							{ 43.4, 75.2 },
+						},
+						["description"] = "You can pick up this quest from any of the Injured Goblin Miners inside the mine.",
+					}),
+
+
+					q(12821, {	-- Opening the Backdoor
+						["qg"] = 29428,	-- Ricket
+						["coord"] = { 40.9, 85.3 },
+						["sourceQuests"] = { 12832 },	-- Bitter Departure
+						-- May have additional SQ
+					}),
+					
+
+					q(12830, {	-- Ore Repossession
+						["qg"] = 29430,	-- Tore Rumblewrench
+						["coord"] = { 41.6, 80.0 },
+						["sourceQuests"] = { 12827 },	-- Reclaimed Rations
+						-- May have additional SQ
+					}),
+
+
+					q(12833, {	-- Overstock
+						["qg"] = 29428,	-- Ricket
+						["coord"] = { 40.9, 85.3 },
+						["isDaily"] = true,
+						["sourceQuests"] = { 12824 },	-- Demolitionist Extraordinaire
+					}),
+
 					
 					q(12827, {	-- Reclaimed Rations
 						["qg"] = 29428,	-- Ricket
@@ -221,19 +331,32 @@ _.Zones =
 					}),
 
 
+					q(12826, {	-- Slightly Unstable
+						["qg"] = 29431,	-- Jeer Sparksocket
+						["coord"] = { 41.0, 86.4 },
+						["sourceQuests"] = { 12819 },	-- Just Around the Corner
+					}),
+
+					
 					q(12843, {	-- They Took Our Men!
 						["qg"] = 29473,	-- Gretchen Fizzlespark
 						["coord"] = { 41.1, 86.1 },
+						-- Not required for "Defending K3" criteria.
 					}),
 
 
+					qa(12862, {	-- When All Else Fails
+						["qg"] = 29428,	-- Ricket
+						["coord"] = { 40.9, 85.3 },
+						["sourceQuests"] = { 12822 },	-- Know No Fear
+					}),
 
 
 
 --[[
 						["qg"] = ,	-- 
 						["coord"] = {  },
-						["sourceQuests"] = {  },
+						["sourceQuests"] = {  },	-- 
 					}),
 
 
@@ -241,8 +364,6 @@ _.Zones =
 					q(12908),	-- A Certain Prisoner
 					q(12921),	-- A Change of Scenery
 					q(12993),	-- A Colossal Threat
-					q(12820),	-- A Delicate Touch
-					q(12823),	-- A Flawless Plan
 					q(12976),	-- A Monument to the Fallen
 					q(13009),	-- A New Beginning
 					qa( 29074),	-- A Season for Celebration
@@ -250,7 +371,6 @@ _.Zones =
 					q(12956),	-- A Spark of Hope
 					q(12925),	-- Aberrations
 					qa( 12871),	-- Aid from the Explorers' League
-					q(12828),	-- Ample Inspiration
 					qa( 12875),	-- An Experienced Guide
 					qa( 12870),	-- Ancient Relics
 					qh( 12882),	-- Ancient Relics
@@ -258,7 +378,6 @@ _.Zones =
 					qa( 12867),	-- Baby Stealers
 					q(13424),	-- Back to the Pit
 					q(12967),	-- Battling the Elements
-					q(12832),	-- Bitter Departure
 					qh( 11446),	-- Brewfest!
 					qa( 13448),	-- Candy Bucket
 					qh( 13471),	-- Candy Bucket
@@ -274,7 +393,6 @@ _.Zones =
 					qa( 12860),	-- Data Mining
 					q(13063),	-- Deemed Worthy
 					q(13423),	-- Defending Your Title
-					q(12824),	-- Demolitionist Extraordinaire
 					qa( 11580),	-- Desecrate this Fire!
 					qh( 11745),	-- Desecrate this Fire!
 					qh( 11581),	-- Desecrate this Fire!
@@ -311,10 +429,7 @@ _.Zones =
 					q(12997),	-- Into the Pit
 					q(12969),	-- Is That Your Goblin?
 					q(13011),	-- Jormuttar is Soo Fat...
-					q(12819),	-- Just Around the Corner
-					q(12822),	-- Know No Fear
 					q(13010),	-- Krolmir, Hammer of Storms
-					q(12846),	-- Leave No Goblin Behind
 					q(13062),	-- Lok'lira's Parting Gift
 					q(13035),	-- Loken's Lackeys
 					qa( 12865),	-- Loyal Companions
@@ -327,17 +442,12 @@ _.Zones =
 					q(12905),	-- Mildred the Cruel
 					qa( 12864),	-- Missing Scouts
 					q(12987),	-- Mounting Hodir's Helm
-					q(12829),	-- Moving In
 					q(13032),	-- Muraco the Elder
 					qh( 12928),	-- Norgannon's Shell					
 					qa( 12872),	-- Norgannon's Shell
 					q(12942),	-- Off With Their Black Wings
 					qa( 12863),	-- Offering Thanks
 					qa( 12854),	-- On Brann's Trail
-					q(12831),	-- Only Partly Forgotten
-					q(12821),	-- Opening the Backdoor
-					q(12830),	-- Ore Repossession
-					q(12833),	-- Overstock
 					qh( 12926),	-- Pieces of the Puzzle
 					qa( 12858),	-- Pieces to the Puzzle
 					qa( 14022),	-- Pilgrim's Bounty
@@ -352,7 +462,6 @@ _.Zones =
 					q(13064),	-- Sibling Rivalry
 					qa( 12868),	-- Sirana Iceshriek
 					q(12957),	-- Slaves of the Stormforged
-					q(12826),	-- Slightly Unstable
 					qa( 12855),	-- Sniffing Out the Perpetrator
 					qh( 12910),	-- Sniffing Out the Perpetrator
 					qh( 12913),	-- Speak Orcish, Man!
@@ -405,7 +514,6 @@ _.Zones =
 					q(12984),	-- Valduran the Stormborn
 					q(12953),	-- Valkyrion Must Burn
 					q(13050),	-- Veranus
-					qa( 12862),	-- When All Else Fails
 					qh( 13060),	-- When All Else Fails
 					qh( 13048),	-- Where Time Went Wrong
 					qh( 13426),	-- Xarantaur, the Witness
