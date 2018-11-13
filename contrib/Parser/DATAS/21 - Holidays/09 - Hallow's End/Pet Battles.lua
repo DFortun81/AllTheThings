@@ -3,7 +3,7 @@
 --------------------------------------------
 _.Holidays =
 {
-	n(-58, { -- Hallow's End
+	holiday(235462, { -- Hallow's End
 		["groups"] = bubbleDown({["u"] = 26}, {
 			n(-25, { -- Pet Battles
 				["groups"] = {

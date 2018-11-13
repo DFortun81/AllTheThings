@@ -506,6 +506,10 @@ end
 heir = function(id, t)									-- Create an HEIRLOOM Object(NOTE: You should only use this if not an appearance)
 	return struct("itemID", id, t);
 end
+holiday = function(id, t)								-- Create an HOLIDAY Object
+	return struct("holidayID", id, t);
+end
+ho = holiday;											-- Create an HOLIDAY Object (alternative shortcut)
 inst = function(id, t)									-- Create an INSTANCE Object
 	return struct("instanceID", id, t);
 end

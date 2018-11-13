@@ -3,7 +3,7 @@
 --------------------------------------------
 _.Holidays =
 {
-	n(-56, {	-- Brewfest
+	holiday(235442, {	-- Brewfest
 		n(23872, { 	-- Coren Direbrew
 			["groups"] = {
 				un(24, i(149752, {	-- Keg-Shaped Treasure Box [Uncommon Quality]

@@ -3,7 +3,7 @@
 --------------------------------------------
 _.Holidays =
 {
-	n(-56, {	-- Brewfest
+	holiday(235442, {	-- Brewfest
 		["groups"] = bubbleDown({["u"] = 24}, {
 			n(-17, {	-- Quests
 				["groups"] = {

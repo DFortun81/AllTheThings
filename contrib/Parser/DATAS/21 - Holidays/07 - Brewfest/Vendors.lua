@@ -3,7 +3,7 @@
 --------------------------------------------
 _.Holidays =
 {
-	n(-56, {	-- Brewfest
+	holiday(235442, {	-- Brewfest
 		n(-2, {	-- Vendors
 			["groups"] = {
 				n(23604, {	-- Agnes Farwithers

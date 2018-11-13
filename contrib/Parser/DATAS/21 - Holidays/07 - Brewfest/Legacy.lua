@@ -3,7 +3,7 @@
 --------------------------------------------
 _.Holidays =
 {
-	n(-56, {	-- Brewfest
+	holiday(235442, {	-- Brewfest
 		n(-100, {	-- Legacy
 			["groups"] = {
 				n(-17, {	-- Quests

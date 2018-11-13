@@ -3,8 +3,7 @@
 --------------------------------------------
 _.Holidays =
 {
-
-	n(-63, { 	-- Trial of Style
+	holiday(1671631, { 	-- Trial of Style
 		["groups"] = {
 			n(-2, {	-- Vendors
 				n(99867, { -- Warpweaver Tuviss (Neutral / Dalaran)

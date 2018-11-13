@@ -70,6 +70,7 @@ namespace Parser_V2
                 new ObjectData("instanceID", "inst"),
                 new ObjectData("artifactID", "artifact"),//, new List<string>{ "lvl" }),
                 new ObjectData("heirloomID", "heir"),
+                new ObjectData("holidayID", "ho"),
                 new ItemSourceData("s", "s"),//, new List<string>{ "lvl" }),                // Source ID
                 new ObjectData("categoryID", "cat"),
                 new ObjectData("category", "tcat"),
@@ -1181,6 +1182,7 @@ namespace Parser_V2
                     { "gsh", "_.CreateGearSetHeader" },
                     { "gssh", "_.CreateGearSetSubHeader" },
                     { "heir", "_.CreateHeirloom" },
+                    { "ho", "_.CreateHoliday" },
                     { "inst", "_.CreateInstance" },
                     { "ill", "_.CreateIllusion" },
                     { "i", "_.CreateItem" },

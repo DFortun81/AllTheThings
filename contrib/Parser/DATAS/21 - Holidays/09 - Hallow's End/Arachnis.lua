@@ -4,7 +4,8 @@
 _.Holidays =
 {
 	{	-- Hallow's End
-		["npcID"] = -58,	-- Hallow's End
+		["holidayID"] = 235462,	-- Hallow's End
+		["u"] = 26,			-- Hallow's End Filter
 		["g"] = {
 			{	--  Arachnis
 				["npcID"] = 96323,	-- Arachnis

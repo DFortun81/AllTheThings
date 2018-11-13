@@ -1,9 +1,9 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays =
+_.Holidays = bubbleDown({["u"] = 23}, 
 {
-	n(-55, { -- Pirate's Day
+	holiday(235481, { -- Pirate's Day
 		["groups"] = {
 			-- Note!! No bubbleDown needed since this has been fully redone
 			n(-4, { -- Achievements *UCN18
@@ -71,4 +71,4 @@ _.Holidays =
 			210,	-- The Cape of Stranglethorn
 		},
 	}),
-};
+});

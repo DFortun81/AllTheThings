@@ -1,56 +1,54 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays =
+_.Holidays = bubbleDown({["u"] = 24}, 
 {
-	n(-56, {	-- Brewfest
+	holiday(235442, {	-- Brewfest
 		n(-4, {	-- Achievement
 			["groups"] = {
 				un(24, ach(1683, {	-- Brewmaster
-					["groups"] = {
-						un(24, title(101)), -- Brewmaster
-						un(24, ach(2796)),	-- Brew of the Month
-						un(24, ach(295)),	-- Direbrewfest
-						un(24, ach(1936)),	-- Does Your Wolpertinger Linger?
-						un(24, ach(1186)),	-- Down With The Dark Iron
-						un(24, ach(303)),	-- Have Keg, Will Travel
-						un(24, ach(1185, {	-- The Brewfest Diet
-							["groups"] = bubbleDown({["u"] = 24}, {
-								{
-									["itemID"] = 34063,	-- Dried Sausage
-									["criteriaID"] = 1,
-								},
-								{
-									["itemID"] = 33024,	-- Pickled Sausage,
-									["criteriaID"] = 2,
-								},
-								{
-									["itemID"] = 33023,	-- Savory Sausage
-									["criteriaID"] = 3,
-								},
-								{
-									["itemID"] = 34065,	-- Spiced Onion Cheese
-									["criteriaID"] = 4,
-								},
-								{
-									["itemID"] = 33025,	-- Spicy Smoked Sausage
-									["criteriaID"] = 5,
-								},
-								{
-									["itemID"] = 34064,	-- Succulent Sausage
-									["criteriaID"] = 6,
-								},
-								{
-									["itemID"] = 33043,	-- The Essential Brewfest Pretzel,
-									["criteriaID"] = 7,
-								},
-								{
-									["itemID"] = 33026,	-- The Golden Link,
-									["criteriaID"] = 8,
-								},
-							}),
-						})),
-					},
+					un(24, title(101)), -- Brewmaster
+					un(24, ach(2796)),	-- Brew of the Month
+					un(24, ach(295)),	-- Direbrewfest
+					un(24, ach(1936)),	-- Does Your Wolpertinger Linger?
+					un(24, ach(1186)),	-- Down With The Dark Iron
+					un(24, ach(303)),	-- Have Keg, Will Travel
+					un(24, ach(1185, {	-- The Brewfest Diet
+						["groups"] = bubbleDown({["u"] = 24}, {
+							{
+								["itemID"] = 34063,	-- Dried Sausage
+								["criteriaID"] = 1,
+							},
+							{
+								["itemID"] = 33024,	-- Pickled Sausage,
+								["criteriaID"] = 2,
+							},
+							{
+								["itemID"] = 33023,	-- Savory Sausage
+								["criteriaID"] = 3,
+							},
+							{
+								["itemID"] = 34065,	-- Spiced Onion Cheese
+								["criteriaID"] = 4,
+							},
+							{
+								["itemID"] = 33025,	-- Spicy Smoked Sausage
+								["criteriaID"] = 5,
+							},
+							{
+								["itemID"] = 34064,	-- Succulent Sausage
+								["criteriaID"] = 6,
+							},
+							{
+								["itemID"] = 33043,	-- The Essential Brewfest Pretzel,
+								["criteriaID"] = 7,
+							},
+							{
+								["itemID"] = 33026,	-- The Golden Link,
+								["criteriaID"] = 8,
+							},
+						}),
+					})),
 				})),
 				un(24, ach(1260)),	-- Almost Blind Luck
 				un(2, ach(1293, {	-- Blue Brewfest Stein [Removed]
@@ -66,7 +64,7 @@ _.Holidays =
 					["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
 				})),
 				un(24, ach(1183, {	-- Brew of the Year
-					["groups"] = bubbleDown({["u"] = 24}, {
+					["groups"] = {
 						{	-- Binary Brew [September]
 							["itemID"] = 37496,	-- Binary Brew
 							["criteriaID"] = 9,
@@ -115,7 +113,7 @@ _.Holidays =
 							["itemID"] = 37495,
 							["criteriaID"] = 7,
 						},
-					}),
+					},
 					["description"] = "These are listed in the order you receive them.",
 				})),
 				un(24, ach(293)),	-- Disturbing the Peace
@@ -234,4 +232,4 @@ _.Holidays =
 			},
 		}),
 	}),
-};
+});

@@ -4,7 +4,7 @@
 _.Holidays =
 {
 	{	-- Hallow's End
-		["npcID"] = -58,	-- Hallow's End
+		["holidayID"] = 235462,	-- Hallow's End
 		["g"] = {
 			{	-- Vendors
 				["npcID"] = -2,	-- Vendors
