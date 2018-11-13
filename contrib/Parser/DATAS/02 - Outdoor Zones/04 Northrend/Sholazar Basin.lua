@@ -9,6 +9,116 @@ _.Zones =
 				faction(1104, {	-- Frenzyheart Tribe
 					["achievementID"] = 950,	-- Frenzyheart Tribe
 					["groups"] = {
+						n(-17, { 	-- Quests
+							{
+								["questID"] = 12758,	-- A Hero's Headgear [Quest]
+								["qg"] = 29043, 		-- Quest Giver: Rejek
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 961,	-- Honorary Frenzyheart
+										["criteriaID"] = 8,		-- A Hero's Headgear [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12702,	-- Chicken Party! [Quest]
+								["qg"] = 28138, 		-- Quest Giver: Elder Harkek
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 961,	-- Honorary Frenzyheart
+										["criteriaID"] = 1,		-- Chicken Party! [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12582,	-- Frenzyheart Champion
+								["qg"] = 28668,			-- Quest Giver: Zepik the Gorloc Hunter
+								["description"] = "In the battle with Artruis in the quest A Hero's Burden Jaloot must survive if you wish to be allied with the Frenyheart. Thus kill Jaloot. If you wish to be allied with Oracles then kill Zepik in the fight and leave Jaloot alive.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracle\n\nNOTE: You can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Your existing reputations will be reduced to HONORED.",
+								["isDaily"] = true
+							},
+							{
+								["questID"] = 12703,	-- Kartak's Rampage [Quest]
+								["qg"] = 29146, 		-- Quest Giver: Vekgar
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 961,	-- Honorary Frenzyheart
+										["criteriaID"] = 2,		-- Kartak's Rampage [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12734,	-- Rejek: First Blood [Quest]
+								["qg"] = 29043, 		-- Quest Giver: Rejek
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 961,	-- Honorary Frenzyheart
+										["criteriaID"] = 7,		-- Rejek: First Blood [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12692,	-- Return of the Lich Hunter
+								["qg"] = 28668,			-- Quest Giver: Zepik the Gorloc Hunter
+								["sourceQuest"] = 12582,	-- Source Quest: Frenzyheart Champion
+								["isDaily"] = true
+							},
+							{
+								["questID"] = 12760,	-- Secret Strength of the Frenzyheart [Quest]
+								["qg"] = 29146, 		-- Quest Giver: Vekgar
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 961,	-- Honorary Frenzyheart
+										["criteriaID"] = 4,		-- Secret Strength of the Frenzyheart [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12741,	-- Strength of the Tempest [Quest]
+								["qg"] = 29043, 		-- Quest Giver: Rejek
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 961,	-- Honorary Frenzyheart
+										["criteriaID"] = 6,		-- Strength of the Tempest [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12732,	-- The Heartblood's Strength [Quest]
+								["qg"] = 29043, 		-- Quest Giver: Rejek
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 961,	-- Honorary Frenzyheart
+										["criteriaID"] = 5,		-- The Heartblood's Strength [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12759,	-- Tools of War [Quest]
+								["qg"] = 29146, 		-- Quest Giver: Vekgar
+								["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 961,	-- Honorary Frenzyheart
+										["criteriaID"] = 3,		-- Tools of War [Criteria]
+									},
+								},
+							},
+						}),
 						n(31911, {	-- Tanak <Frenzyheart Quartermaster>
 							i(44717, {	-- Disgusting Jar
 								i(44718, {	-- Ripe Disgusting Jar
@@ -25,82 +135,121 @@ _.Zones =
 							i(44122),	-- Scavenged Feathery Leggings
 							i(44073),	-- Frenzyheart Insignia of Fury
 						}),
-						{
-							["questID"] = 12582,	-- Frenzyheart Champion
-							["qg"] = 28668,			-- Quest Giver: Zepik the Gorloc Hunter
-							["description"] = "In the battle with Artruis in the quest A Hero's Burden Jaloot must survive if you wish to be allied with the Frenyheart. Thus kill Jaloot. If you wish to be allied with Oracles then kill Zepik in the fight and leave Jaloot alive.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracle\n\nNOTE: You can repeat this quest as often as you like to switch from one faction to the other.",
-							["isDaily"] = true
-						},
-						{
-							["questID"] = 12692,	-- Return of the Lich Hunter
-							["qg"] = 28668,			-- Quest Giver: Zepik the Gorloc Hunter
-							["sourceQuest"] = 12582,	-- Source Quest: Frenzyheart Champion
-							["isDaily"] = true
-						},
-						ach(961, {	-- Honorary Frenzyheart
-							-- Note!! Commented out questID/qg/sourceQuest/isDaily due to this area tracking the achievement only.  Since they are daily it messes with the counter.
-							{
-								--["questID"] = 12702,	-- Chicken Party! [Quest]
-								["criteriaID"] = 1,		-- Chicken Party! [Criteria]
-								--["qg"] = 28138, 		-- Quest Giver: Elder Harkek
-								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12703,	-- Kartak's Rampage [Quest]
-								["criteriaID"] = 2,		-- Kartak's Rampage [Criteria]
-								--["qg"] = 29146, 		-- Quest Giver: Vekgar
-								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12759,	-- Tools of War [Quest]
-								["criteriaID"] = 3,		-- Tools of War [Criteria]
-								--["qg"] = 29146, 		-- Quest Giver: Vekgar
-								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12760,	-- Secret Strength of the Frenzyheart [Quest]
-								["criteriaID"] = 4,		-- Secret Strength of the Frenzyheart [Criteria]
-								--["qg"] = 29146, 		-- Quest Giver: Vekgar
-								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12732,	-- The Heartblood's Strength [Quest]
-								["criteriaID"] = 5,		-- The Heartblood's Strength [Criteria]
-								--["qg"] = 29043, 		-- Quest Giver: Rejek
-								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12741,	-- Strength of the Tempest [Quest]
-								["criteriaID"] = 6,		-- Strength of the Tempest [Criteria]
-								--["qg"] = 29043, 		-- Quest Giver: Rejek
-								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12734,	-- Rejek: First Blood [Quest]
-								["criteriaID"] = 7,		-- Rejek: First Blood [Criteria]
-								--["qg"] = 29043, 		-- Quest Giver: Rejek
-								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12758,	-- A Hero's Headgear [Quest]
-								["criteriaID"] = 8,		-- A Hero's Headgear [Criteria]
-								--["qg"] = 29043, 		-- Quest Giver: Rejek
-								--["sourceQuest"] = 12692,	-- Source Quest: Return of the Lich Hunter
-								--["isDaily"] = true,
-							},
-						}),
 					},
 				}),
 				faction(1105, {	-- The Oracles
 					["achievementID"] = 951,	-- The Oracles
 					["groups"] = {
+						n(-17, { 	-- Quests
+							{
+								["questID"] = 12735,	-- A Cleansing Song [Quest]
+								["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 962,	-- Savior of the Oracles
+										["criteriaID"] = 7,		-- A Cleansing Song [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12704,	-- Appeasing the Great Rain Stone [Quest]
+								["qg"] = 28027, 		-- Quest Giver: High-Oracle Soo-say
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 962,	-- Savior of the Oracles
+										["criteriaID"] = 1,		-- Appeasing the Great Rain Stone [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12689,	-- Hand of the Oracles
+								["qg"] = 28667,			-- Quest Giver: Jaloot
+								["description"] = "In the battle with Artruis in the quest A Hero's Burden Jaloot must survive if you wish to be allied with the Oracle. Thus kill Zepik. If you wish to be allied with Frenyheart then kill Jaloot in the fight and leave Zepik alive.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracle\n\nNOTE: You can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Your existing reputations will be reduced to HONORED.",
+								["isDaily"] = true
+							},
+							{
+								["questID"] = 12761,	-- Mastery of the Crystals [Quest]
+								["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 962,	-- Savior of the Oracles
+										["criteriaID"] = 3,		-- Mastery of the Crystals [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12762,	-- Power of the Great Ones [Quest]
+								["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 962,	-- Savior of the Oracles
+										["criteriaID"] = 4,		-- Power of the Great Ones [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12695,	-- Return of the Friendly Dryskin
+								["qg"] = 28667,			-- Quest Giver: Jaloot
+								["sourceQuest"] = 12689,	-- Source Quest: Hand of the Oracles
+								["isDaily"] = true
+							},
+							{
+								["questID"] = 12737,	-- Song of Fecundity [Quest]
+								["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 962,	-- Savior of the Oracles
+										["criteriaID"] = 8,		-- Song of Fecundity [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12736,	-- Song of Reflection [Quest]
+								["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 962,	-- Savior of the Oracles
+										["criteriaID"] = 5,		-- Song of Reflection [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12726,	-- Song of Wind and Water [Quest]
+								["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 962,	-- Savior of the Oracles
+										["criteriaID"] = 6,		-- Song of Wind and Water [Criteria]
+									},
+								},
+							},
+							{
+								["questID"] = 12705,	-- Will of the Titans [Quest]
+								["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
+								["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 962,	-- Savior of the Oracles
+										["criteriaID"] = 2,		-- Will of the Titans [Criteria]
+									},
+								},
+							},
+						}),
 						n(31910, {	-- Geen <Oracles Quartermaster>
 							i(39878, {	-- Mysterious Egg
 								i(39883, {	-- Cracked Egg
@@ -122,81 +271,12 @@ _.Zones =
 							i(44106),	-- Glitterscale Wrap
 							i(44074),	-- Oracle Talisman of Ablution
 						}),
-						{
-							["questID"] = 12689,	-- Hand of the Oracles
-							["qg"] = 28667,			-- Quest Giver: Jaloot
-							["description"] = "In the battle with Artruis in the quest A Hero's Burden Jaloot must survive if you wish to be allied with the Oracle. Thus kill Zepik. If you wish to be allied with Frenyheart then kill Jaloot in the fight and leave Zepik alive.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracle\n\nNOTE: You can repeat this quest as often as you like to switch from one faction to the other.",
-							["isDaily"] = true
-						},
-						{
-							["questID"] = 12695,	-- Return of the Friendly Dryskin
-							["qg"] = 28667,			-- Quest Giver: Jaloot
-							["sourceQuest"] = 12689,	-- Source Quest: Hand of the Oracles
-							["isDaily"] = true
-						},
-						ach(962, {	-- Savior of the Oracles
-							-- Note!! Commented out questID/qg/sourceQuest/isDaily due to this area tracking the achievement only.  Since they are daily it messes with the counter.
-							{
-								--["questID"] = 12704,	-- Appeasing the Great Rain Stone [Quest]
-								["criteriaID"] = 1,		-- Appeasing the Great Rain Stone [Criteria]
-								--["qg"] = 28027, 		-- Quest Giver: High-Oracle Soo-say
-								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12705,	-- Will of the Titans [Quest]
-								["criteriaID"] = 2,		-- Will of the Titans [Criteria]
-								--["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
-								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12761,	-- Mastery of the Crystals [Quest]
-								["criteriaID"] = 3,		-- Mastery of the Crystals [Criteria]
-								--["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
-								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12762,	-- Power of the Great Ones [Quest]
-								["criteriaID"] = 4,		-- Power of the Great Ones [Criteria]
-								--["qg"] = 29149, 		-- Quest Giver: Oracle Soo-dow
-								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12736,	-- Song of Reflection [Quest]
-								["criteriaID"] = 5,		-- Song of Reflection [Criteria]
-								--["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
-								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12726,	-- Song of Wind and Water [Quest]
-								["criteriaID"] = 6,		-- Song of Wind and Water [Criteria]
-								--["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
-								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12735,	-- A Cleansing Song [Quest]
-								["criteriaID"] = 7,		-- A Cleansing Song [Criteria]
-								--["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
-								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								--["isDaily"] = true,
-							},
-							{
-								--["questID"] = 12737,	-- Song of Fecundity [Quest]
-								["criteriaID"] = 8,		-- Song of Fecundity [Criteria]
-								--["qg"] = 29006, 		-- Quest Giver: Oracle Soo-nee
-								--["sourceQuest"] = 12695,	-- Source Quest: Return of the Friendly Dryskin
-								--["isDaily"] = true,
-							},
-						}),
 					},
 				}),
 				n(-4, {		-- Achievements
+					ach(961),	-- Honorary Frenzyheart
 					ach(952),	-- Mercenary of Sholazar
+					ach(962),	-- Savior of the Oracles
 					ach(938),	-- The Snows of Northrend
 				}),
 				n(-228, {	-- Flight Points
@@ -565,13 +645,11 @@ _.Zones =
 					}),
 				}),
 				n(0, { 		-- Zone Drop
-					["groups"] = {
-						i(41122, { -- Plans: Reinforced Cobalt Chestpiece
-							["crs"] = {
-								28123, -- Venture Co. Excavator
-							},
-						}),
-					},
+					i(41122, { -- Plans: Reinforced Cobalt Chestpiece
+						["crs"] = {
+							28123, -- Venture Co. Excavator
+						},
+					}),
 				}),
 			},
 			["lvl"] = 66,	
