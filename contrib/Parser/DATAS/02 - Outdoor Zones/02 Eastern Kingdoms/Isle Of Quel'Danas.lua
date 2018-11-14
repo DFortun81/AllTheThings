@@ -368,6 +368,104 @@ _.Zones =
 							i(32060),	-- Merciless Gladiator's Wyrmhide Tunic
 						},
 					}),
+					{	-- Shaani <Jewelcrafting Supplies>
+						["npcID"] = 25950,	-- Shaani
+						["coords"] = {
+							{ 51.53, 32.54 },
+						},
+						["g"] = {
+							{	-- Design: Bold Crimson Spinel
+								["itemID"] = 35244,	-- Design: Bold Crimson Spinel
+							},
+							{	-- Design: Brilliant Crimson Spinel
+								["itemID"] = 35248,	-- Design: Brilliant Crimson Spinel
+							},
+							{	-- Design: Deadly Pyrestone
+								["itemID"] = 35271,	-- Design: Deadly Pyrestone
+							},
+							{	-- Design: Delicate Crimson Spinel
+								["itemID"] = 35246,	-- Design: Delicate Crimson Spinel
+							},
+							{	-- Design: Flashing Crimson Spinel
+								["itemID"] = 35247,	-- Design: Flashing Crimson Spinel
+							},
+							{	-- Design: Forceful Seaspray Emerald
+								["itemID"] = 35769,	-- Design: Forceful Seaspray Emerald
+							},
+							{	-- Design: Forceful Talasite
+								["itemID"] = 35325,	-- Design: Forceful Talasite
+							},
+							{	-- Design: Glinting Shadowsong Amethyst
+								["itemID"] = 35266,	-- Design: Glinting Shadowsong Amethyst
+							},
+							{	-- Design: Inscribed Pyrestone
+								["itemID"] = 35267,	-- Design: Inscribed Pyrestone
+							},
+							{	-- Design: Jagged Seaspray Emerald
+								["itemID"] = 35253,	-- Design: Jagged Seaspray Emerald
+							},
+							{	-- Design: Mystic Lionseye
+								["itemID"] = 35258,	-- Design: Mystic Lionseye
+							},
+							{	-- Design: Potent Pyrestone
+								["itemID"] = 35269,	-- Design: Potent Pyrestone
+							},
+							{	-- Design: Purified Shadowsong Amethyst
+								["itemID"] = 35251,	-- Design: Purified Shadowsong Amethyst
+							},
+							{	-- Design: Quick Dawnstone
+								["itemID"] = 35322,	-- Design: Quick Dawnstone
+							},
+							{	-- Design: Quick Lionseye
+								["itemID"] = 35768,	-- Design: Quick Lionseye
+							},
+							{	-- Design: Radiant Seaspray Emerald
+								["itemID"] = 35254,	-- Design: Radiant Seaspray Emerald
+							},
+							{	-- Design: Reckless Noble Topaz
+								["itemID"] = 35323,	-- Design: Reckless Noble Topaz
+							},
+							{	-- Design: Reckless Pyrestone
+								["itemID"] = 35767,	-- Design: Reckless Pyrestone
+							},
+							{	-- Design: Regal Seaspray Emerald
+								["itemID"] = 35252,	-- Design: Regal Seaspray Emerald
+							},
+							{	-- Design: Rigid Empyrean Sapphire
+								["itemID"] = 35259,	-- Design: Rigid Empyrean Sapphire
+							},
+							{	-- Design: Shifting Shadowsong Amethyst
+								["itemID"] = 35242,	-- Design: Shifting Shadowsong Amethyst
+							},
+							{	-- Design: Smooth Lionseye
+								["itemID"] = 35260,	-- Design: Smooth Lionseye
+							},
+							{	-- Design: Solid Empyrean Sapphire
+								["itemID"] = 35263,	-- Design: Solid Empyrean Sapphire
+							},
+							{	-- Design: Sovereign Shadowsong Amethyst
+								["itemID"] = 35243,	-- Design: Sovereign Shadowsong Amethyst
+							},
+							{	-- Design: Sparkling Empyrean Sapphire
+								["itemID"] = 35264,	-- Design: Sparkling Empyrean Sapphire
+							},
+							{	-- Design: Steady Seaspray Emerald
+								["itemID"] = 35766,	-- Design: Steady Seaspray Emerald
+							},
+							{	-- Design: Stormy Empyrean Sapphire
+								["itemID"] = 35265,	-- Design: Stormy Empyrean Sapphire
+							},
+							{	-- Design: Subtle Lionseye
+								["itemID"] = 35249,	-- Design: Subtle Lionseye
+							},
+							{	-- Design: Timeless Shadowsong Amethyst
+								["itemID"] = 35239,	-- Design: Timeless Shadowsong Amethyst
+							},
+							{	-- Design: Veiled Shadowsong Amethyst
+								["itemID"] = 35270,	-- Design: Veiled Shadowsong Amethyst
+							},
+						},
+					},
 					n(25046, {	-- Smith Hauthaa <Weapons & Armorsmith>
 						["coords"] = {
 							{ 50.58, 40.76 },
