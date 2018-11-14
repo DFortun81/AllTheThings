@@ -3163,7 +3163,7 @@ local function AttachTooltip(self)
 						self:Show();
 					elseif owner.tooltipText == BLIZZARD_STORE then
 						-- Shop
-						local gf = app:GetWindow("Prime").data.g[13];
+						local gf = app:GetWindow("Prime").data.g[14];
 						AttachTooltipRawSearchResults(self, {}, { gf });
 						self:Show();
 					elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
