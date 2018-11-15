@@ -108,15 +108,12 @@ _.Zones =
 								},
 								{	-- Recipe: Guardian's Alchemist Stone
 									["itemID"] = 35752,	-- Recipe: Guardian's Alchemist Stone
-									["u"] = 14,
 								},
 								{	-- Recipe: Redeemer's Alchemist Stone
 									["itemID"] = 35754,	-- Recipe: Redeemer's Alchemist Stone
-									["u"] = 14,
 								},
 								{	-- Recipe: Sorcerer's Alchemist Stone
 									["itemID"] = 35753,	-- Recipe: Sorcerer's Alchemist Stone
-									["u"] = 14,
 								},
 							},
 						},
