@@ -123,7 +123,7 @@ _.Zones =
 								{ 49.69, 40.53 },
 							},
 							["g"] = {
-								{	-- Helm of the Fallen Champion
+								{	-- Helm of the Fallen Champion [Rogue, Shaman, Paladin]
 									["itemID"] = 29760,	-- Helm of the Fallen Champion
 									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
@@ -150,7 +150,7 @@ _.Zones =
 										},
 									},
 								},
-								{	-- Helm of the Fallen Defender
+								{	-- Helm of the Fallen Defender [Priest, Druid, Warrior]
 									["itemID"] = 29761,	-- Helm of the Fallen Defender
 									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
@@ -174,7 +174,7 @@ _.Zones =
 										},
 									},
 								},
-								{	-- Helm of the Fallen Hero
+								{	-- Helm of the Fallen Hero [Mage, Warlock, Hunter]
 									["itemID"] = 29759,	-- Helm of the Fallen Hero
 									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
@@ -192,75 +192,283 @@ _.Zones =
 										},
 									},
 								},
-
-								i(24544),	-- Gladiator's Plate Chestpiece
-								i(24546),	-- Gladiator's Plate Shoulders
-								i(24547),	-- Gladiator's Plate Legguards
-								i(24549),	-- Gladiator's Plate Gauntlets
-								i(24552),	-- Gladiator's Dreadweave Robe								
-								i(24554),	-- Gladiator's Dreadweave Mantle
-								i(24555),	-- Gladiator's Dreadweave Leggings
-								i(24556),	-- Gladiator's Dreadweave Gloves								
-								i(25831),	-- Gladiator's Leather Tunic
-								i(25832),	-- Gladiator's Leather Spaulders
-								i(25833),	-- Gladiator's Leather Legguards
-								i(25834),	-- Gladiator's Leather Gloves
-								i(25854),	-- Gladiator's Silk Amice								
-								i(25856),	-- Gladiator's Silk Raiment
-								i(25857),	-- Gladiator's Silk Handguards
-								i(25858),	-- Gladiator's Silk Trousers
-								i(25997),	-- Gladiator's Linked Armor								
-								i(25999),	-- Gladiator's Linked Spaulders
-								i(26000),	-- Gladiator's Linked Gauntlets
-								i(26001),	-- Gladiator's Linked Leggings
-								i(27469),	-- Gladiator's Mail Armor
-								i(27470),	-- Gladiator's Mail Gauntlets								
-								i(27472),	-- Gladiator's Mail Leggings
-								i(27473),	-- Gladiator's Mail Spaulders
-								i(27702),	-- Gladiator's Lamellar Chestpiece
-								i(27703),	-- Gladiator's Lamellar Gauntlets								
-								i(27705),	-- Gladiator's Lamellar Legguards
-								i(27706),	-- Gladiator's Lamellar Shoulders
-								i(27707),	-- Gladiator's Satin Gloves								
-								i(27709),	-- Gladiator's Satin Leggings
-								i(27710),	-- Gladiator's Satin Mantle
-								i(27711),	-- Gladiator's Satin Robe
-								i(27879),	-- Gladiator's Scaled Chestpiece
-								i(27880),	-- Gladiator's Scaled Gauntlets
-								i(27882),	-- Gladiator's Scaled Legguards
-								i(27883),	-- Gladiator's Scaled Shoulders
-								i(28126),	-- Gladiator's Dragonhide Gloves								
-								i(28128),	-- Gladiator's Dragonhide Legguards
-								i(28129),	-- Gladiator's Dragonhide Spaulders
-								i(28130),	-- Gladiator's Dragonhide Tunic
-								i(28136),	-- Gladiator's Wyrmhide Gloves								
-								i(28138),	-- Gladiator's Wyrmhide Legguards
-								i(28139),	-- Gladiator's Wyrmhide Spaulders
-								i(28140),	-- Gladiator's Wyrmhide Tunic								
-								i(28332),	-- Gladiator's Chain Leggings
-								i(28333),	-- Gladiator's Chain Spaulders
-								i(28334),	-- Gladiator's Chain Armor
-								i(28335),	-- Gladiator's Chain Gauntlets
-								i(30186),	-- Gladiator's Felweave Amice								
-								i(30188),	-- Gladiator's Felweave Handguards
-								i(30200),	-- Gladiator's Felweave Raiment
-								i(30201),	-- Gladiator's Felweave Trousers
-								i(31375),	-- Gladiator's Kodohide Gloves								
-								i(31377),	-- Gladiator's Kodohide Legguards
-								i(31378),	-- Gladiator's Kodohide Spaulders
-								i(31379),	-- Gladiator's Kodohide Tunic
-								i(31396),	-- Gladiator's Ringmail Armor
-								i(31397),	-- Gladiator's Ringmail Gauntlets								
-								i(31406),	-- Gladiator's Ringmail Leggings
-								i(31407),	-- Gladiator's Ringmail Spaulders
-								i(31409),	-- Gladiator's Mooncloth Gloves								
-								i(31411),	-- Gladiator's Mooncloth Leggings
-								i(31412),	-- Gladiator's Mooncloth Mantle
-								i(31413),	-- Gladiator's Mooncloth Robe
-								i(31613),	-- Gladiator's Ornamented Chestguard
-								i(31614),	-- Gladiator's Ornamented Gloves								
-								i(31618),	-- Gladiator's Ornamented Legplates
-								i(31619),	-- Gladiator's Ornamented Spaulders
+								{	-- Pauldrons of the Fallen Champion [Rogue, Shaman, Paladin]
+									["itemID"] = 29763,	-- Pauldrons of the Fallen Champion
+									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
+									["g"] = {
+										{	-- Gladiator's Leather Spaulders
+											["itemID"] = 25832,	-- Gladiator's Leather Spaulders
+										},
+										{	-- Gladiator's Linked Spaulders
+											["itemID"] = 25999,	-- Gladiator's Linked Spaulders
+										},
+										{	-- Gladiator's Mail Spaulders
+											["itemID"] = 27473,	-- Gladiator's Mail Spaulders
+										},
+										{	-- Gladiator's Ringmail Spaulders
+											["itemID"] = 31407,	-- Gladiator's Ringmail Spaulders
+										},
+										{	-- Gladiator's Lamellar Shoulders
+											["itemID"] = 27706,	-- Gladiator's Lamellar Shoulders
+										},
+										{	-- Gladiator's Ornamented Spaulders
+											["itemID"] = 31619,	-- Gladiator's Ornamented Spaulders
+										},
+										{	-- Gladiator's Scaled Shoulders
+											["itemID"] = 27883,	-- Gladiator's Scaled Shoulders
+										},
+									},
+								},
+								{	-- Pauldrons of the Fallen Defender [Priest, Druid, Warrior]
+									["itemID"] = 29764,	-- Pauldrons of the Fallen Defender
+									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
+									["g"] = {
+										{	-- Gladiator's Satin Mantle
+											["itemID"] = 27710,	-- Gladiator's Satin Mantle
+										},
+										{	-- Gladiator's Mooncloth Mantle
+											["itemID"] = 31412,	-- Gladiator's Mooncloth Mantle
+										},
+										{	-- Gladiator's Dragonhide Spaulders
+											["itemID"] = 28129,	-- Gladiator's Dragonhide Spaulders
+										},
+										{	-- Gladiator's Kodohide Spaulders
+											["itemID"] = 31378,	-- Gladiator's Kodohide Spaulders
+										},
+										{	-- Gladiator's Wyrmhide Spaulders
+											["itemID"] = 28139,	-- Gladiator's Wyrmhide Spaulders
+										},
+										{	-- Gladiator's Plate Shoulders
+											["itemID"] = 24546,	-- Gladiator's Plate Shoulders
+										},
+									},
+								},
+								{	-- Pauldrons of the Fallen Hero [Mage, Warlock, Hunter]
+									["itemID"] = 29762,	-- Pauldrons of the Fallen Hero
+									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
+									["g"] = {
+										{	-- Gladiator's Silk Amice
+											["itemID"] = 25854,	-- Gladiator's Silk Amice
+										},
+										{	-- Gladiator's Dreadweave Mantle
+											["itemID"] = 24554,	-- Gladiator's Dreadweave Mantle
+										},
+										{	-- Gladiator's Felweave Amice
+											["itemID"] = 30186,	-- Gladiator's Felweave Amice
+										},
+										{	-- Gladiator's Chain Spaulders
+											["itemID"] = 28333,	-- Gladiator's Chain Spaulders
+										},
+									},
+								},
+								{	-- Chestguard of the Fallen Champion [Rogue, Shaman, Paladin]
+									["itemID"] = 29754,	-- Chestguard of the Fallen Champion
+									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
+									["g"] = {
+										{	-- Gladiator's Leather Tunic
+											["itemID"] = 25831,	-- Gladiator's Leather Tunic
+										},
+										{	-- Gladiator's Linked Armor
+											["itemID"] = 25997,	-- Gladiator's Linked Armor
+										},
+										{	-- Gladiator's Mail Armor
+											["itemID"] = 27469,	-- Gladiator's Mail Armor
+										},
+										{	-- Gladiator's Ringmail Armor
+											["itemID"] = 31396,	-- Gladiator's Ringmail Armor
+										},
+										{	-- Gladiator's Lamellar Chestpiece
+											["itemID"] = 27702,	-- Gladiator's Lamellar Chestpiece
+										},
+										{	-- Gladiator's Ornamented Chestguard
+											["itemID"] = 31613,	-- Gladiator's Ornamented Chestguard
+										},
+										{	-- Gladiator's Scaled Chestpiece
+											["itemID"] = 27879,	-- Gladiator's Scaled Chestpiece
+										},
+									},
+								},
+								{	-- Chestguard of the Fallen Defender [Priest, Druid, Warrior]
+									["itemID"] = 29753,	
+									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
+									["g"] = {
+										{	-- Gladiator's Satin Robe
+											["itemID"] = 27711,	-- Gladiator's Satin Robe
+										},
+										{	-- Gladiator's Mooncloth Robe
+											["itemID"] = 31413,	-- Gladiator's Mooncloth Robe
+										},
+										{	-- Gladiator's Dragonhide Tunic
+											["itemID"] = 28130,	-- Gladiator's Dragonhide Tunic
+										},
+										{	-- Gladiator's Kodohide Tunic
+											["itemID"] = 31379,	-- Gladiator's Kodohide Tunic
+										},
+										{	-- Gladiator's Wyrmhide Tunic
+											["itemID"] = 28140,	-- Gladiator's Wyrmhide Tunic
+										},
+										{	-- Gladiator's Plate Chestpiece
+											["itemID"] = 24544,	-- Gladiator's Plate Chestpiece
+										},
+									},
+								},
+								{	-- Chestguard of the Fallen Hero [Mage, Warlock, Hunter]
+									["itemID"] = 29755,	-- Chestguard of the Fallen Hero
+									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
+									["g"] = {
+										{	-- Gladiator's Silk Raiment
+											["itemID"] = 25856,	-- Gladiator's Silk Raiment
+										},
+										{	-- Gladiator's Dreadweave Robe
+											["itemID"] = 24552,	-- Gladiator's Dreadweave Robe
+										},
+										{	-- Gladiator's Felweave Raiment
+											["itemID"] = 30200,	-- Gladiator's Felweave Raiment
+										},
+										{	-- Gladiator's Chain Armor
+											["itemID"] = 28334,	-- Gladiator's Chain Armor
+										},
+									},
+								},
+								{	-- Gloves of the Fallen Champion [Rogue, Shaman, Paladin]
+									["itemID"] = 29757,	-- Gloves of the Fallen Champion
+									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
+									["g"] = {
+										{	-- Gladiator's Leather Gloves
+											["itemID"] = 25834,	-- Gladiator's Leather Gloves
+										},
+										{	-- Gladiator's Linked Gauntlets
+											["itemID"] = 26000,	-- Gladiator's Linked Gauntlets
+										},
+										{	-- Gladiator's Mail Gauntlets
+											["itemID"] = 27470,	-- Gladiator's Mail Gauntlets
+										},
+										{	-- Gladiator's Ringmail Gauntlets
+											["itemID"] = 31397,	-- Gladiator's Ringmail Gauntlets
+										},
+										{	-- Gladiator's Lamellar Gauntlets
+											["itemID"] = 27703,	-- Gladiator's Lamellar Gauntlets
+										},
+										{	-- Gladiator's Ornamented Gloves
+											["itemID"] = 31614,	-- Gladiator's Ornamented Gloves
+										},
+										{	-- Gladiator's Scaled Gauntlets
+											["itemID"] = 27880,	-- Gladiator's Scaled Gauntlets
+										},
+									},
+								},
+								{	-- Gloves of the Fallen Defender [Priest, Druid, Warrior]
+									["itemID"] = 29758,	-- Gloves of the Fallen Defender
+									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
+									["g"] = {
+										{	-- Gladiator's Satin Gloves
+											["itemID"] = 27707,	-- Gladiator's Satin Gloves
+										},
+										{	-- Gladiator's Mooncloth Gloves
+											["itemID"] = 31409,	-- Gladiator's Mooncloth Gloves
+										},
+										{	-- Gladiator's Dragonhide Gloves
+											["itemID"] = 28126,	-- Gladiator's Dragonhide Gloves
+										},
+										{	-- Gladiator's Kodohide Gloves
+											["itemID"] = 31375,	-- Gladiator's Kodohide Gloves
+										},
+										{	-- Gladiator's Wyrmhide Gloves
+											["itemID"] = 28136,	-- Gladiator's Wyrmhide Gloves
+										},
+										{	-- Gladiator's Plate Gauntlets
+											["itemID"] = 24549,	-- Gladiator's Plate Gauntlets
+										},
+									},
+								},
+								{	-- Gloves of the Fallen Hero [Mage, Warlock, Hunter]
+									["itemID"] = 29756,	-- Gloves of the Fallen Hero
+									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
+									["g"] = {
+										{	-- Gladiator's Silk Handguards
+											["itemID"] = 25857,	-- Gladiator's Silk Handguards
+										},
+										{	-- Gladiator's Felweave Handguards
+											["itemID"] = 30188,	-- Gladiator's Felweave Handguards
+										},
+										{	-- Gladiator's Dreadweave Gloves
+											["itemID"] = 24556,	-- Gladiator's Dreadweave Gloves
+										},
+										{	-- Gladiator's Chain Gauntlets
+											["itemID"] = 28335,	-- Gladiator's Chain Gauntlets
+										},
+									},
+								},
+								{	-- Leggings of the Fallen Champion [Rogue, Shaman, Paladin]
+									["itemID"] = 29766,	-- Leggings of the Fallen Champion
+									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
+									["g"] = {
+										{	-- Gladiator's Leather Legguards
+											["itemID"] = 25833,	-- Gladiator's Leather Legguards
+										},
+										{	-- Gladiator's Linked Leggings
+											["itemID"] = 26001,	-- Gladiator's Linked Leggings
+										},
+										{	-- Gladiator's Mail Leggings
+											["itemID"] = 27472,	-- Gladiator's Mail Leggings
+										},
+										{	-- Gladiator's Ringmail Leggings
+											["itemID"] = 31406,	-- Gladiator's Ringmail Leggings
+										},
+										{	-- Gladiator's Lamellar Legguards
+											["itemID"] = 27705,	-- Gladiator's Lamellar Legguards
+										},
+										{	-- Gladiator's Ornamented Legplates
+											["itemID"] = 31618,	-- Gladiator's Ornamented Legplates
+										},
+										{	-- Gladiator's Scaled Legguards
+											["itemID"] = 27882,	-- Gladiator's Scaled Legguards
+										},
+									},
+								},
+								{	-- Leggings of the Fallen Defender [Priest, Druid, Warrior]
+									["itemID"] = 29767,	-- Leggings of the Fallen Defender
+									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
+									["g"] = {
+										{	-- Gladiator's Satin Leggings
+											["itemID"] = 27709,	-- Gladiator's Satin Leggings
+										},
+										{	-- Gladiator's Mooncloth Leggings
+											["itemID"] = 31411,	-- Gladiator's Mooncloth Leggings
+										},
+										{	-- Gladiator's Dragonhide Legguards
+											["itemID"] = 28128,	-- Gladiator's Dragonhide Legguards
+										},
+										{	-- Gladiator's Kodohide Legguards
+											["itemID"] = 31377,	-- Gladiator's Kodohide Legguards
+										},
+										{	-- Gladiator's Wyrmhide Legguards
+											["itemID"] = 28138,	-- Gladiator's Wyrmhide Legguards
+										},
+										{	-- Gladiator's Plate Legguards
+											["itemID"] = 24547,	-- Gladiator's Plate Legguards
+										},
+									},
+								},
+								{	-- Leggings of the Fallen Hero [Mage, Warlock, Hunter]
+									["itemID"] = 29765,	-- Leggings of the Fallen Hero
+									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
+									["g"] = {
+										{	-- Gladiator's Silk Trousers
+											["itemID"] = 25858,	-- Gladiator's Silk Trousers
+										},
+										{	-- Gladiator's Felweave Trousers
+											["itemID"] = 30201,	-- Gladiator's Felweave Trousers
+										},
+										{	-- Gladiator's Dreadweave Leggings
+											["itemID"] = 24555,	-- Gladiator's Dreadweave Leggings
+										},
+										{	-- Gladiator's Chain Leggings
+											["itemID"] = 28332,	-- Gladiator's Chain Leggings
+										},
+									},
+								},
+								
 							},
 						},
 						n(26089, {	-- Kayri <Exotic Gear Purveyor>
