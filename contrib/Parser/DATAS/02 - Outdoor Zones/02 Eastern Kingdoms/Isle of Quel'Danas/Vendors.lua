@@ -468,7 +468,6 @@ _.Zones =
 										},
 									},
 								},
-								
 							},
 						},
 						n(26089, {	-- Kayri <Exotic Gear Purveyor>
