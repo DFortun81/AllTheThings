@@ -14,15 +14,6 @@ _.Zones =
 							3384,	-- Southsea Privateer
 						},
 					}),
-					n(3444, {	-- Dig Rat
-						{
-							["itemID"] = 78342,	-- Plump Dig Rat
-							["spellID"] = 0,	-- Filter: No Spell ID plox
-							["groups"] = {
-								recipe(6417),	-- Dig Rat Stew
-							},
-						},
-					}),
 					i(97821, {	-- Gahz'rooki's Summoning Stone (PET!)
 						["crs"] = {
 							70997,	-- Hellscream Laborer
