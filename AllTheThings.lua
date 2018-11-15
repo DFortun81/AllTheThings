@@ -8679,13 +8679,64 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		end
 		local switchRaidDifficulty = function(row, button)
 			self.data = raidassistant;
-			SetRaidDifficultyID(row.ref.difficultyID);
+			local myself = self;
+			local difficultyID = row.ref.difficultyID;
+			if not self.running then
+				self.running = true;
+			else
+				self.running = false;
+			end
+			
+			SetRaidDifficultyID(difficultyID);
+			StartCoroutine("RaidDifficulty", function()
+				while InCombatLockdown() do coroutine.yield(); end
+				while myself.running do
+					for i=0,150,1 do
+						if myself.running then
+							coroutine.yield();
+						else
+							break;
+						end
+					end
+					if app.RaidDifficulty == difficultyID then
+						myself.running = false;
+						break;
+					else
+						SetRaidDifficultyID(difficultyID);
+					end
+				end
+			end);
 			self:Update(true);
 			return true;
 		end
 		local switchLegacyRaidDifficulty = function(row, button)
 			self.data = raidassistant;
-			SetLegacyRaidDifficultyID(row.ref.difficultyID);
+			local myself = self;
+			local difficultyID = row.ref.difficultyID;
+			if not self.legacyrunning then
+				self.legacyrunning = true;
+			else
+				self.legacyrunning = false;
+			end
+			SetLegacyRaidDifficultyID(difficultyID);
+			StartCoroutine("LegacyRaidDifficulty", function()
+				while InCombatLockdown() do coroutine.yield(); end
+				while myself.legacyrunning do
+					for i=0,150,1 do
+						if myself.legacyrunning then
+							coroutine.yield();
+						else
+							break;
+						end
+					end
+					if app.LegacyRaidDifficulty == difficultyID then
+						myself.legacyrunning = false;
+						break;
+					else
+						SetLegacyRaidDifficultyID(difficultyID);
+					end
+				end
+			end);
 			self:Update(true);
 			return true;
 		end
