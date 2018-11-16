@@ -4,7 +4,7 @@
 _.Holidays =
 {
 	holiday(235442, {	-- Brewfest
-		n(-100, {	-- Legacy
+		n(-40, {	-- Legacy
 			["groups"] = {
 				n(-17, {	-- Quests
 					o(186881, {	-- Dark Iron Sabotage Plans
@@ -14,6 +14,7 @@ _.Holidays =
 									1, -- Durotar
 									27, -- Dun Morogh
 								},
+								["u"] = 40,
 							}),
 						},
 						["u"] = 40, -- Legacy Quest/Quest Item
@@ -94,6 +95,7 @@ _.Holidays =
 								["groups"] = {},
 								["maps"] = { 1, }, -- Durotar
 								["races"] = HORDE_ONLY,
+								["u"] = 40,
 							}),
 						},
 						["races"] = HORDE_ONLY,
