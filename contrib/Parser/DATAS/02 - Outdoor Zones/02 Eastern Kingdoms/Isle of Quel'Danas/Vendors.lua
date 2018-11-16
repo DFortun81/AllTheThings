@@ -125,7 +125,6 @@ _.Zones =
 							["g"] = {
 								{	-- Helm of the Fallen Champion [Rogue, Shaman, Paladin]
 									["itemID"] = 29760,	-- Helm of the Fallen Champion
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Leather Helm
 											["itemID"] = 25830,	-- Gladiator's Leather Helm
@@ -152,7 +151,6 @@ _.Zones =
 								},
 								{	-- Helm of the Fallen Defender [Priest, Druid, Warrior]
 									["itemID"] = 29761,	-- Helm of the Fallen Defender
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Mooncloth Hood
 											["itemID"] = 31410,	-- Gladiator's Mooncloth Hood
@@ -176,7 +174,6 @@ _.Zones =
 								},
 								{	-- Helm of the Fallen Hero [Mage, Warlock, Hunter]
 									["itemID"] = 29759,	-- Helm of the Fallen Hero
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Silk Cowl
 											["itemID"] = 25855,	-- Gladiator's Silk Cowl
@@ -194,7 +191,6 @@ _.Zones =
 								},
 								{	-- Pauldrons of the Fallen Champion [Rogue, Shaman, Paladin]
 									["itemID"] = 29763,	-- Pauldrons of the Fallen Champion
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Leather Spaulders
 											["itemID"] = 25832,	-- Gladiator's Leather Spaulders
@@ -221,7 +217,6 @@ _.Zones =
 								},
 								{	-- Pauldrons of the Fallen Defender [Priest, Druid, Warrior]
 									["itemID"] = 29764,	-- Pauldrons of the Fallen Defender
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Satin Mantle
 											["itemID"] = 27710,	-- Gladiator's Satin Mantle
@@ -245,7 +240,6 @@ _.Zones =
 								},
 								{	-- Pauldrons of the Fallen Hero [Mage, Warlock, Hunter]
 									["itemID"] = 29762,	-- Pauldrons of the Fallen Hero
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Silk Amice
 											["itemID"] = 25854,	-- Gladiator's Silk Amice
@@ -263,7 +257,6 @@ _.Zones =
 								},
 								{	-- Chestguard of the Fallen Champion [Rogue, Shaman, Paladin]
 									["itemID"] = 29754,	-- Chestguard of the Fallen Champion
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Leather Tunic
 											["itemID"] = 25831,	-- Gladiator's Leather Tunic
@@ -290,7 +283,6 @@ _.Zones =
 								},
 								{	-- Chestguard of the Fallen Defender [Priest, Druid, Warrior]
 									["itemID"] = 29753,	
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Satin Robe
 											["itemID"] = 27711,	-- Gladiator's Satin Robe
@@ -314,7 +306,6 @@ _.Zones =
 								},
 								{	-- Chestguard of the Fallen Hero [Mage, Warlock, Hunter]
 									["itemID"] = 29755,	-- Chestguard of the Fallen Hero
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Silk Raiment
 											["itemID"] = 25856,	-- Gladiator's Silk Raiment
@@ -332,7 +323,6 @@ _.Zones =
 								},
 								{	-- Gloves of the Fallen Champion [Rogue, Shaman, Paladin]
 									["itemID"] = 29757,	-- Gloves of the Fallen Champion
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Leather Gloves
 											["itemID"] = 25834,	-- Gladiator's Leather Gloves
@@ -359,7 +349,6 @@ _.Zones =
 								},
 								{	-- Gloves of the Fallen Defender [Priest, Druid, Warrior]
 									["itemID"] = 29758,	-- Gloves of the Fallen Defender
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Satin Gloves
 											["itemID"] = 27707,	-- Gladiator's Satin Gloves
@@ -383,7 +372,6 @@ _.Zones =
 								},
 								{	-- Gloves of the Fallen Hero [Mage, Warlock, Hunter]
 									["itemID"] = 29756,	-- Gloves of the Fallen Hero
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Silk Handguards
 											["itemID"] = 25857,	-- Gladiator's Silk Handguards
@@ -401,7 +389,6 @@ _.Zones =
 								},
 								{	-- Leggings of the Fallen Champion [Rogue, Shaman, Paladin]
 									["itemID"] = 29766,	-- Leggings of the Fallen Champion
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Leather Legguards
 											["itemID"] = 25833,	-- Gladiator's Leather Legguards
@@ -428,7 +415,6 @@ _.Zones =
 								},
 								{	-- Leggings of the Fallen Defender [Priest, Druid, Warrior]
 									["itemID"] = 29767,	-- Leggings of the Fallen Defender
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Satin Leggings
 											["itemID"] = 27709,	-- Gladiator's Satin Leggings
@@ -452,7 +438,6 @@ _.Zones =
 								},
 								{	-- Leggings of the Fallen Hero [Mage, Warlock, Hunter]
 									["itemID"] = 29765,	-- Leggings of the Fallen Hero
-									["description"] = "You can also take this item to \"Karynna\" on Isle of Quel'Danas and exchange for PvP gear.",
 									["g"] = {
 										{	-- Gladiator's Silk Trousers
 											["itemID"] = 25858,	-- Gladiator's Silk Trousers
