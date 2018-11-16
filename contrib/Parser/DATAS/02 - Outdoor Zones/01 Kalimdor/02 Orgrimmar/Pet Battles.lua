@@ -58,74 +58,107 @@ _.Zones =
 						},
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
-					desc(qg(63086, qh(31585)), "This quest is part of a chain initiated by learning Battle Pet Training."),	-- Learning the Ropes
-					qg(63086, qh(31586)), 	-- On The Mend
-					qg(63086, qh(31828)),	-- Level Up!
-					qg(63086, qh(31587)),	-- Got one!				
-					h(ach(6602, { -- Taming Kalimdor	
-						qh(32009),	-- Varzok
-						qh(31812, {	-- Zunta, The Pet Tamer
-							i(89125),	-- Sack of Pet Supplies
-						}),
-						qh(31813, { -- Dagra the Fierce
-							i(89125),	-- Sack of Pet Supplies
-						}),
-						qh(31814, { -- Analynn
-							i(89125),	-- Sack of Pet Supplies
-						}),
-						qh(31815, { -- Zonya the Sadist
-							i(89125),	-- Sack of Pet Supplies
-						}),
-						qh(31817, { -- Merda Stronghoof
-							i(89125),	-- Sack of Pet Supplies
-						}),
-						qh(31870, { -- Cassandra Kaboom
-							i(89125),	-- Sack of Pet Supplies
-						}),
-						qh(31918),  -- A Tamer's Homecoming
-						qg(63626, qh(31891, { -- Battle Pet Tamers: Kalimdor
-							i(89125),	-- Sack of Pet Supplies
-						})),
-						qh(31909, { -- Grand Master Trixxy
-							i(89125),	-- Sack of Pet Supplies
-						}),	
-					})),
-					qg(63626, qh(31903, { -- Battle Pet Tamers: Eastern Kingdoms
+					{	-- Learning the Ropes
+						["questID"] = 31588,
+						["qg"] = 63626, -- Varzok
+						["coord"] = { 52.4, 59.2 },
+						["races"] = HORDE_ONLY,
+						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+					},
+					{	-- On The Mend
+						["questID"] = 31589,
+						["qg"] = 63626, -- Varzok
+						["coord"] = { 52.4, 59.2 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 31588, -- Learning the Ropes
+					},
+					{	-- Level Up!
+						["questID"] = 31827,
+						["qg"] = 63626, -- Varzok
+						["coord"] = { 52.4, 59.2 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 31589, -- On The Mend
+					},
+					{	-- Got one!
+						["questID"] = 31590,
+						["qg"] = 63626, -- Varzok
+						["coord"] = { 52.4, 59.2 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 31827, -- Level Up!
+					},
+					{	-- Battle Pet Tamers: Kalimdor
+						["questID"] = 31891,
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
-						["description"] = "Account-Wide Quest.|r",
-					})),
-					qg(63626, qh(31921, { -- Battle Pet Tamers: Outland
+						["qg"] = 63626,	-- Varzok
+						["coord"] = { 52.4, 59.6 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Battle Pet Tamers: Eastern Kingdoms
+						["questID"] = 31903,
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
-						["description"] = "Account-Wide Quest.|r",
-					})),
-					qg(63626, qh(31929, { -- Battle Pet Tamers: Northrend
+						["qg"] = 63626,	-- Varzok
+						["coord"] = { 52.4, 59.6 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Battle Pet Tamers: Outland
+						["questID"] = 31921,
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
-						["description"] = "Account-Wide Quest.|r",
-					})),
-					qg(63626, qh(31967, { -- Battle Pet Tamers: Cataclysm
+						["qg"] = 63626,	-- Varzok
+						["coord"] = { 52.4, 59.6 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Battle Pet Tamers: Northrend
+						["questID"] = 31929,
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
-						["description"] = "Account-Wide Quest.|r",
-					})),
-					qg(63626, qh(31952, { -- Battle Pet Tamers: Pandaria
+						["qg"] = 63626,	-- Varzok
+						["coord"] = { 52.4, 59.6 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Battle Pet Tamers: Cataclysm
+						["questID"] = 31967,
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
-						["description"] = "Account-Wide Quest.|r",
-					})),
-					qr(q(32863, { -- What We've Been Training For
+						["qg"] = 63626,	-- Varzok
+						["coord"] = { 52.4, 59.6 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Battle Pet Tamers: Pandaria
+						["questID"] = 31952,
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+						["qg"] = 63626,	-- Varzok
+						["coord"] = { 52.4, 59.6 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- What We've Been Training For
+						["questID"] = 32863,
 						["groups"] = {
 							i(98095),	-- Brawler's Pet Supplies
 						},
-						["description"] = "Account-Wide Weekly Quest.|r",
-					})),
+						["qg"] = 63626,	-- Varzok
+						["coord"] = { 52.4, 59.6 },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+					},
+					{	-- Zunta, The Pet Tramer
+						["questID"] = 31812,
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+						["qg"] = 63626,	-- Varzok
+						["coord"] = { 52.4, 59.6 },
+						["races"] = HORDE_ONLY,
+					},
 				}),
 			},
 		}),

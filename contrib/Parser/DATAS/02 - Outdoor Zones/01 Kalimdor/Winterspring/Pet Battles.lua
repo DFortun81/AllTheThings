@@ -15,12 +15,23 @@ _.Zones =
 					p(472),  	-- Rabid Nut Varmint 5000
 					p(471),  	-- Robo-Chick
 					desc(p(69), "Starts spawning December 21st. Stops spawning March 20th"),	-- Snowy Owl
-					qg(66466, q(31897, {	-- Grand Master Trixxy (NON-DAILY version)
-						i(89125),	-- Sack of Pet Supplies
-					})),
-					qr(qg(66466, q(31909, { 	-- Grand Master Trixxy (DAILY version)
-						i(89125),	-- Sack of Pet Supplies
-					}))),
+					{	-- Grand Master Trixxy
+						["questID"] = 31897,
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+						["qg"] = 66466,	-- Grand Master Trixxy
+						["coord"] = { 65.6, 64.5 },
+					},
+					{ 	-- Grand Master Trixxy
+						["questID"] = 31909,
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+						["qg"] = 66466,	-- Grand Master Trixxy
+						["coord"] = { 65.6, 64.5 },
+						["isDaily"] = true,
+					},
 					qg(66466, qh(31977)),	-- The Returning Champion
 					qg(66466, qa(31975)),	-- The Returning Champion
 				}),

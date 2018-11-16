@@ -56,7 +56,6 @@ _.Zones =
 							q(25128, {	-- Hana'zua
 								["qg"] = 5887, -- Canaga Earthcaller
 								["coord"] = { 41.7, 70.0 },
-								["description"] = "This quest is unavailable if \"|cFFFFD700Sarkoth|r\" is in your quest log or if you've completed it.",
 								["isBreadcrumb"] = true,
 							}),
 							q(25129, {	-- Sarkoth
