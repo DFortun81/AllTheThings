@@ -22,6 +22,7 @@ _.ExpansionFeatures =
 						["qg"] = 120788,	-- Genn Greymane
 						["isBreadcrumb"] = true,
 						["repeatable"] = true,	-- Temporary so it hides if you skip
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The War Cache
 						["questID"] = 52544,	-- The War Cache
@@ -29,6 +30,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = {
 							52654,	-- The War Campaign
 						},
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Time for War
 						["questID"] = 53332,	-- Time for War
@@ -39,6 +41,7 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{69.38, 27.20 }
 						},
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Mission from the King
 						["questID"] = 51714,	-- Missing from the King
@@ -49,6 +52,7 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 70.58, 27.03 },
 						},
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							{	-- Falstad Wildhammer [Follower!!]
 								["followerID"] = 1065,	-- Falstad Wildhammer
@@ -66,6 +70,7 @@ _.ExpansionFeatures =
 							{ 69.48, 26.83 },
 						},
 						["lvl"] = 112, -- When you get the three choices.
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- War of Shadows
 						["questID"] = 51715,	-- War of Shadows
@@ -76,6 +81,7 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 70.58, 27.03 },
 						},
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Adapting Our Tactics
 						["questID"] = 53583,	-- Adapting Our Tactics
@@ -83,6 +89,7 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 70.48, 27.51 }
 						},
+						["races"] = ALLIANCE_ONLY,
 						-- NOTE!! Source Quest is finishing one zone.  Add all at a later date.
 						-- NOTE!! Also grants credit for Horde Equivalent == 53602
 					},
@@ -95,6 +102,7 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 70.58, 27.03 },
 						},
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Foothold: Vol'dun
 						["questID"] = 51572,	-- Foothold: Vol'dun
@@ -106,6 +114,7 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 69.59, 26.93 },
 						},
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Voyage to the West
 						["questID"] = 51283,	-- Voyage to the West
@@ -116,6 +125,7 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 69.48, 26.83 },
 						},
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Foothold: Zuldazar
 						["questID"] = 51570,	-- Foothold: Zuldazar
@@ -127,6 +137,7 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 69.59, 26.93 },
 						},
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Foothold: Nazmir
 						["questID"] = 51571,	-- Foothold: Nazmir
@@ -138,6 +149,7 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 69.59, 26.93 },
 						},
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The Ongoing Campaign
 						["questID"] = 51961,
@@ -145,6 +157,7 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 69.48, 26.83 },
 						},
+						["races"] = ALLIANCE_ONLY,
 						-- NOTE!! Source Quest is finishing one zone.  Add all at a later date.
 					},
 					{	-- The Final Foothold
@@ -153,6 +166,7 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 69.48, 26.83 },
 						},
+						["races"] = ALLIANCE_ONLY,
 						-- NOTE!! Source Quest is finishing two zones.  Add all at a later date.
 					},
 					{	-- Vol'dun Foothold
@@ -174,6 +188,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 32.87, 34.89 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Establish a Beachhead
 								["questID"] = 51229,	-- Establish a Beachhead
@@ -184,6 +199,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 39.63, 35.65 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Honor Bound
 								["questID"] = 51349,	-- Honor Bound
@@ -194,6 +210,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 37.71, 35.85 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Unexpected Aid
 								["questID"] = 51350,	-- Unexpected Aid
@@ -204,6 +221,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 39.01, 42.93 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Poisoned Barbs
 								["questID"] = 51351,	-- Poisoned Barbs
@@ -214,6 +232,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 39.01, 42.93 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Antidote Application
 								["questID"] = 51366,	-- Antidote Application
@@ -225,6 +244,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 39.01, 42.93 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Friends in Strang Places
 								["questID"] = 51369,	-- Friends in Strang Places
@@ -235,6 +255,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 38.91, 42.96 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Defang the Faithless
 								["questID"] = 51391,	-- Defang the Faithless
@@ -245,6 +266,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 27.23, 53.92 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Break the Siege
 								["questID"] = 51394,	-- Break the Siege
@@ -255,6 +277,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 27.23, 53.92 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Breaking Free
 								["questID"] = 51389,	-- Breaking Free
@@ -265,6 +288,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 27.21, 53.92 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- The Keeper's Keys
 								["questID"] = 51395,	-- The Keeper's Keys
@@ -277,6 +301,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 27.59, 52.57 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Reporting In
 								["questID"] = 51402,	-- Reporting In
@@ -287,6 +312,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 27.01, 52.55 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Champion: Magister Umbric
 								["questID"] = 52008,	-- Champion: Magister Umbric
@@ -297,6 +323,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 37.46, 35.81 },
 								},
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									{	-- Magister Umbric
 										["followerID"] = 1072,	-- Magister Umbric
@@ -313,6 +340,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 37.71, 35.76 },
 								},
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									{	--  Vol'dun Foothold
 										["achievementID"] = 12510,	-- Ready for War
@@ -342,6 +370,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 69.59, 26.93 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- The Troll's Tale	[Zuldazar!!]
 								["questID"] = 51201,	-- The Troll's Tale
@@ -352,6 +381,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 77.54, 54.63 },
 								},
+								["races"] = ALLIANCE_ONLY,
 								-- Note!! Hidden quest 51346 procced during this.  Probably indicating cinematic seen.
 							},
 							{	-- Granting a Reprieve [Zuldazar!!]
@@ -363,6 +393,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 77.54, 54.63 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Disarming the Cannons [Zuldazar!!]
 								["questID"] = 51544,	-- Disarming the Cannons
@@ -373,6 +404,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 77.54, 54.63 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Save Them All [Zuldazar!!]
 								["questID"] = 51191,	-- Save Them All
@@ -383,6 +415,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 77.16, 55.49 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- A Lack of Surplus [Zuldazar!!]
 								["questID"] = 51192,	-- A Lack of Surplus
@@ -393,6 +426,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 77.16, 55.53 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- That One's Mine [Zuldazar!!]
 								["questID"] = 51193,	-- That One's Mine
@@ -403,6 +437,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 77.16, 55.53 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Xibala [Zuldazar!!]
 								["questID"] = 51418,	-- Xibala
@@ -417,6 +452,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 77.49, 55.27 },
 								},
+								["races"] = ALLIANCE_ONLY,
 								-- Note!! Hidden quest 53384 procs as Kelsey Steelspark runs up
 							},
 							{	-- Mole Machinations [Zuldazar!!]
@@ -428,6 +464,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 40.71, 70.89 }
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Rocks of Ragnaros [Zuldazar!!]
 								["questID"] = 51309,	-- Rocks of Ragnaros
@@ -438,6 +475,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 40.71, 70.89 }
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Fragment of the Firelands [Zuldazar!!]
 								["questID"] = 51359,	-- Fragment of the Firelands
@@ -449,6 +487,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 40.71, 70.89 }
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Champion: Kelsey Steelspark [Zuldazar!!]
 								["questID"] = 52003,	-- Champion: Kelsey Steelspark
@@ -459,6 +498,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 40.74, 70.71 },
 								},
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									{	-- Kelsey Steelspark
 										["followerID"] = 1068,	-- Kelsey Steelspark
@@ -474,6 +514,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 40.74, 70.71 },
 								},
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									{	-- Zuldazar Foothold
 										["achievementID"] = 12510,	-- Ready for War
@@ -514,6 +555,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 69.59, 26.93 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Dubious Offering
 								["questID"] = 51129,	-- Dubious Offering
@@ -524,6 +566,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 62.03, 41.53 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Blood of Hir'eek
 								["questID"] = 51167,	-- Blood of Hir'eek
@@ -534,6 +577,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 31.18, 46.77 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Honoring the Fallen
 								["questID"] = 51150,	-- Honoring the Fallen
@@ -544,6 +588,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 31.18, 46.77 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Zealots of Zal'mar
 								["questID"] = 51168,	-- Zealots of Zal'mar
@@ -555,6 +600,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 31.18, 46.77 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Flight from the Fall
 								["questID"] = 51169,	-- Flight from the Fall
@@ -562,6 +608,7 @@ _.ExpansionFeatures =
 								["sourceQuests"] = {
 									51168,	-- Zealots of Zal'mar
 								},
+								["races"] = ALLIANCE_ONLY,
 								-- ["coords"] = { },	-- Note!! Not availablle, he moves with you.
 							},
 							{	-- Zul'Nazman
@@ -573,6 +620,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 62.03, 41.53 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Nazmani Cultists
 								["questID"] = 51279,	-- Nazmani Cultists
@@ -583,6 +631,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 50.01, 50.83 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Offerings to G'huun
 								["questID"] = 51280,	-- Offerings to G'huun
@@ -593,6 +642,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 50.01, 50.83 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Captain Conrad
 								["questID"] = 51282,	-- Captain Conrad
@@ -604,6 +654,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 45.71, 57.51 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Lessons of the Damned
 								["questID"] = 51177,	-- Lessons of the Damned
@@ -614,6 +665,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 45.01, 57.23 },
 								},
+								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Champion: John J. Keeshan
 								["questID"] = 52013,	-- Champion: John J. Keeshan
@@ -624,6 +676,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 61.88, 41.37 },
 								},
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									{	-- John J. Keeshan [Follower!!]
 										["followerID"] = 1069,	-- John J. Keeshan
@@ -639,6 +692,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 62.03, 41.53 },
 								},
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									{	--  Nazmir Foothold
 										["achievementID"] = 12510,	-- Ready for War
@@ -655,6 +709,7 @@ _.ExpansionFeatures =
 							52654,	-- The War Campaign
 						},
 						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						-- NOTE!! Also grants credit for Horde Equivalent == 52451 and 51916
 						-- NOTE!! Also grants credit for Alliance Whistle Unlock == 51722
 						-- NOTE!! Also grants credit for Alliance Other Quest (Same Name) == 52450
