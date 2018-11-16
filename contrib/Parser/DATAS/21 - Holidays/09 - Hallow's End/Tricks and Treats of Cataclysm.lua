@@ -12,6 +12,7 @@ _.Holidays =
 					{	-- Tricks and Treats of Cataclysm [Alliance]
 						["achievementID"] = 5837,	-- Tricks and Treats of Cataclysm
 						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
+						["u"] = 26,					-- Hallow's End Filter
 						["g"] = {
 							{	-- Deepholm, Temple of Earth
 								["achievementID"] = 5837,	-- Tricks and Treats of Cataclysm

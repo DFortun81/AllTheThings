@@ -12,6 +12,7 @@ _.Holidays =
 					{	-- Tricks and Treats of Kalimdor [Alliance]
 						["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
 						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
+						["u"] = 26,					-- Hallow's End Filter
 						["g"] = {
 							{	-- Ashenvale, Astranaar
 								["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
@@ -720,6 +721,7 @@ _.Holidays =
 					{	-- Tricks and Treats of Kalimdor [Horde]
 						["achievementID"] = 965,	-- Tricks and Treats of Kalimdor
 						["races"] = HORDE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
+						["u"] = 26,					-- Hallow's End Filter
 						["g"] = {
 							{	-- Ashenvale, Hellscream's Watch
 								["achievementID"] = 965,	-- Tricks and Treats of Kalimdor

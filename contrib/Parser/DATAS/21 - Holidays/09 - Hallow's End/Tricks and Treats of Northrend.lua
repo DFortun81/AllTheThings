@@ -12,6 +12,7 @@ _.Holidays =
 					{	-- Tricks and Treats of Northrend [Alliance]
 						["achievementID"] = 5836,	-- Tricks and Treats of Northrend
 						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
+						["u"] = 26,					-- Hallow's End Filter
 						["g"] = {
 							{	-- Borean Tundra, Fizzcrank Airstrip
 								["achievementID"] = 5836,	-- Tricks and Treats of Northrend
@@ -591,6 +592,7 @@ _.Holidays =
 					{	-- Tricks and Treats of Northrend [Horde]
 						["achievementID"] = 5835,	-- Tricks and Treats of Northrend
 						["races"] = HORDE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
+						["u"] = 26,					-- Hallow's End Filter
 						["g"] = {
 							{	-- Borean Tundra, Bor'gorok Outpost
 								["achievementID"] = 5835,	-- Tricks and Treats of Northrend

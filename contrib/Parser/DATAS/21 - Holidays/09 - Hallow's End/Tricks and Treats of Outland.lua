@@ -12,6 +12,7 @@ _.Holidays =
 					{	-- Tricks and Treats of Outlands [Alliance]
 						["achievementID"] = 969,	-- Tricks and Treats of Outlands
 						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
+						["u"] = 26,					-- Hallow's End Filter
 						["g"] = {
 							{	-- Blade's Edge Mountains, Evergrove
 								["achievementID"] = 969,	-- Tricks and Treats of Outland
@@ -412,6 +413,7 @@ _.Holidays =
 					{	-- Tricks and Treats of Outlands [Horde]
 						["achievementID"] = 968,	-- Tricks and Treats of Outlands
 						["races"] = HORDE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
+						["u"] = 26,					-- Hallow's End Filter
 						["g"] = {
 							{	-- Blade's Edge Mountains, Evergrove
 								["achievementID"] = 968,	-- Tricks and Treats of Outland

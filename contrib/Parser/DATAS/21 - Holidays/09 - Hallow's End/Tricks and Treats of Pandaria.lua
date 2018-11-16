@@ -12,6 +12,7 @@ _.Holidays =
 					{	-- Tricks and Treats of Pandaria [Alliance]
 						["achievementID"] = 7601,	-- Tricks and Treats of Pandaria
 						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
+						["u"] = 26,					-- Hallow's End Filter
 						["g"] = {
 							{	-- Dread Wastes, Klaxxi'vess
 								["achievementID"] = 7601,	-- Tricks and Treats of Pandaria
@@ -590,6 +591,7 @@ _.Holidays =
 					{	-- Tricks and Treats of Cataclysm [Horde]
 						["achievementID"] = 7602,	-- Tricks and Treats of Pandaria
 						["races"] = HORDE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
+						["u"] = 26,					-- Hallow's End Filter
 						["g"] = {
 							{	-- Dread Wastes, Klaxxi'vess
 								["achievementID"] = 7602,	-- Tricks and Treats of Pandaria
