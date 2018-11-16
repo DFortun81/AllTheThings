@@ -73,7 +73,9 @@ _.WorldEvents =
 						["questID"] = 47461,
 						["isDaily"] = true,
 						["maps"] = { 17 },	-- Blasted Lands
-						
+						["coords"] = {
+							{ 32.42, 48.21 ,17 },
+						},
 					}),
 					n(121821, {	-- Lethon			
 						["groups"] = {
@@ -122,6 +124,9 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47463,
 						["isDaily"] = true,
+						["coords"] = {
+							{ 93.8, 40.8, 63 },
+						},
 					}),	
 					n(121912, {	-- Ysondre
 						["groups"] = {
