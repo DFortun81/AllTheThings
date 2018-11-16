@@ -8,6 +8,7 @@ _.WorldEvents =
 		["g"] = {
 			{	-- 9th Anniversary
 				["npcID"] = -5358,	-- 9th Anniversary
+				["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 				["g"] = {
 					{	-- 9th Anniversary
 						["achievementID"] = 7853,	-- 9th Anniversary
