@@ -14,6 +14,7 @@ _.Zones =
 								i(33268),	-- Bone Dirk NOTE: Item is still available from new version of quest
 								i(33264), 	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
 							})),
+							un(40, q(27419)),	-- Army of the Black Dragon
 							un(40, q(1958, {	-- Celestial Power
 								["groups"] = {
 									un(2, i(7515)),	-- Celestial Orb

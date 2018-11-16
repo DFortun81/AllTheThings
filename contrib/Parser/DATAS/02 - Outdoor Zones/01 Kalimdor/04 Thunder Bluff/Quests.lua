@@ -120,16 +120,19 @@ _.Zones =
 					})),
 					qg(3978, qh( 2965)),	-- Portents of Uldum
 --]]					
-					qh(27292, { -- Return to Krog
+					{	-- Return to Krog
+						["questID"] = 27292,
 						["groups"] = {
-							i( 33267),	-- Fleshripper
-							i( 33259),	-- Crimson Barbut
+							i(33267),	-- Fleshripper
+							i(33259),	-- Crimson Barbut
 							i(156977),	-- Serrated Gladius 
 						},
 						["qg"] = 4943,	-- Mosarn
 						["lvl"] = 35,
-						["sourceQuests"] = { 27258 },	-- The Black Shield
-					}),
+						["coord"] = { 54.1, 80.7 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 27258,	-- The Black Shield
+					},
 					{	-- Tal the Wind Rider Master
 						["questID"] = 6363,
 						["qg"] = 8359,	-- Ahanu
