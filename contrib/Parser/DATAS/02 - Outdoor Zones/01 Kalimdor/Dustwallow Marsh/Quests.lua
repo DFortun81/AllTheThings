@@ -36,10 +36,15 @@ _.Zones =
 								["coord"] = { 36.4, 31.8 },
 								["races"] = HORDE_ONLY,
 							},
-							{	-- Wanted Poster
+							{	-- Wanted Poster (Broodqueen)
 								["objectID"] = 205332,
 								["coord"] = { 37.4, 31.5 },
-								["questID"] = 27229,	-- SMASH BROODQUEEN
+								["groups"] = {
+									{
+										["questID"] = 27229,	-- SMASH BROODQUEEN
+										["races"] = HORDE_ONLY,
+									},
+								},
 							},
 						}),
 						crit(2, {	-- Work Left Undone
@@ -74,8 +79,12 @@ _.Zones =
 							{	-- Loose Dirt
 								["objectID"] = 20985,
 								["coord"] = { 55.4, 25.9 },
-								["questID"] = 27244,	-- The Lost Report
-								["races"] = HORDE_ONLY,
+								["groups"] = {
+									{
+										["questID"] = 27244,	-- The Lost Report
+										["races"] = HORDE_ONLY,
+									},
+								},
 							},
 							{	-- The Hermit of Witch Hill
 								["questID"] = 27182,
@@ -172,18 +181,32 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 27255,	-- The Black Shield (#2)
 							},
-							{	-- The Black Shield (#4) (possible sourceQuest for 27293,27294?)
+							{	-- The Black Shield (#4)
 								["questID"] = 27257,
 								["qg"] = 5087,	-- Do'gol
 								["coord"] = { 36.5, 30.7 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 27256,	-- The Black Shield (#3)
 							},
+							{	-- Suspicious Hoofprint
+								["objectID"] = 187273,
+								["coord"] = { 29.6, 47.6 },
+								["groups"] = {
+									{	-- Suspicious Hoofprints
+										["questID"] = 27259,
+										["races"] = HORDE_ONLY,
+									},
+								},
+							},
 							{	-- Theramore Guard Badge
 								["objectID"] = 21042,
 								["coord"] = { 29.8, 48.2 },
-								["questID"] = 27260,	-- Lieutenant Paval Reethe
-								["races"] = HORDE_ONLY,
+								["groups"] = {
+									{
+										["questID"] = 27260,	-- Lieutenant Paval Reethe
+										["races"] = HORDE_ONLY,
+									},
+								},
 							},
 							{	-- Talk to Ogron
 								["questID"] = 27306,
@@ -218,7 +241,7 @@ _.Zones =
 								["qg"] = 4926,	-- Krog
 								["coord"] = { 36.4, 31.8 },
 								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 27292,	-- Return to Krog
+								["sourceQuest"] = 27259,	-- Suspicious Hoofprint
 							},
 							{	-- The Grimtotem Plot
 								["questID"] = 27293,
@@ -304,7 +327,7 @@ _.Zones =
 								["qg"] = 4501,	-- Draz'Zilb
 								["coord"] = { 37.1, 33.0 },
 								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 27417,	-- The Brood of Onyxia (#2)
+								["sourceQuest"] = 27414,	-- The Brood of Onyxia (#1)
 							},
 						}),
 						crit(6, {	-- Challenging the Overlord
@@ -318,6 +341,7 @@ _.Zones =
 									i(156999),	-- Mok'Morokk's Headcracker
 								},
 								["qg"] = 4500,	-- Overlord Mok'Morokk
+								["coord"] = { 36.2, 31.5 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 27415,	-- The Brood of Onyxia (#3)
 							},
@@ -439,6 +463,7 @@ _.Zones =
 					{	-- Delivery for Drazzit
 						["questID"] = 11208,
 						["qg"] = 23797,	-- Moxie Steelgrille
+						["coord"] = { 53.5, 56.9 },
 						["sourceQuests"] = {
 							27347,	-- Corrosion Prevention
 							27348,	-- Secure the Cargo!
@@ -480,7 +505,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 27251,	-- The Call Him Smiling Jim
 					},
-					{	-- Inspecting the Ruins
+					{	-- Inspecting the Ruins (marked as critical on map but not needed for criteria)
 						["questID"] = 27253,
 						["qg"] = 4926,	-- Krog
 						["coord"] = { 36.4, 31.8 },
@@ -523,6 +548,7 @@ _.Zones =
 							i(45858)	-- Nat's Lucky Fishing Pole
 						},
 						["qg"] = 12919,	-- Nat Pagle
+						["coord"] = { 58.6, 60.2 },
 						["requireSkill"] = 129,	-- Fishing
 					}),
 					q(13826, {	-- Nat Pagle, Angler Extreme
@@ -530,6 +556,7 @@ _.Zones =
 							i(45858),	-- Nat's Lucky Fishing Pole
 						},
 						["qg"] = 12919,	-- Nat Pagle
+						["coord"] = { 58.6, 60.2 },
 						["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
 						["requireSkill"] = 129,	-- Fishing
 					}),
@@ -612,6 +639,15 @@ _.Zones =
 						["coord"] = { 46.8, 17.5 },
 						["races"] = HORDE_ONLY,
 					},
+					{	-- Suspicious Hoofprint
+						["objectID"] = 187273,
+						["coord"] = { 29.6, 47.6 },
+						["groups"] = {
+							qa(27262, {	-- Suspicious Hoofprints
+								["sourceQuest"] = 27249,	-- Inspecting the Ruins
+							}),
+						},
+					},
 					qa(27239, {	-- Survey Alcaz Island
 						["groups"] = {
 							i(57851),	-- Swamp Gas Gauntlets
@@ -621,19 +657,6 @@ _.Zones =
 						["qg"] = 4968,	-- Lady Jaina Proudmoore
 						["sourceQuest"] = 27238,	-- Jaina Must Know
 					}),
-					{	-- Suspicious Hoofprint (part of crit(4)?)
-						["objectID"] = 187273,
-						["coord"] = { 29.6, 47.6 },
-						["groups"] = {
-							qa(27262, {	-- Suspicious Hoofprints
-								["sourceQuest"] = 27249,	-- Inspecting the Ruins
-							}),
-							{	-- Suspicious Hoofprints
-								["questID"] = 27259,
-								["races"] = HORDE_ONLY,
-							},
-						},
-					},
 					qa(27428, {	-- Tabetha's Assistance
 						["qg"] = 23568,	-- Captain Darill
 						["sourceQuests"] = {
@@ -762,12 +785,16 @@ _.Zones =
 					{	-- Wanted Poster (Goreclaw)
 						["objectID"] = 186426,
 						["coord"] = { 41.7, 73.1 },
-						["questID"] = 27412,	-- WANTED: Goreclaw the Ravenous
 						["groups"] = {
-							i(33258),	-- Protective Engineer's Leggings
-							i(33263),	-- Raptor Eye Ring
-							i(33242),	-- Raptorhide Legguards
-							i(131671),	-- Raptorhide Chain Leggings
+							{
+								["questID"] = 27412,	-- WANTED: Goreclaw the Ravenous
+								["groups"] = {
+									i(33258),	-- Protective Engineer's Leggings
+									i(33263),	-- Raptor Eye Ring
+									i(33242),	-- Raptorhide Legguards
+									i(131671),	-- Raptorhide Chain Leggings
+								},
+							},
 						},
 					},
 				}),
