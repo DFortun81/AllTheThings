@@ -722,6 +722,10 @@ _.Toys =
 		}),
 		i(134004),		-- Noble's Eternal Elementium Signet
 		i(45014),		-- Orgrimmar Banner (Horde)
+		{	-- Overtuned Corgi Goggles
+			["itemID"] = 158149,	-- Overtuned Corgi Goggles
+			["u"] = 31,				-- WoW Anniversary Filter
+		},
 		i(89869), 		-- Pandaren Scarecrow
 		i(163210),		-- Party Totem
 		i(130158),		-- Path of Elothir

@@ -974,9 +974,6 @@ _.Zones =
 					n(3316, {	-- Handor <Cloth & Leather Armor Merchant>
 						i(12256),	-- Cindercloth Leggings
 					}),
-					n(110035, {	-- Historian Ju'pa <The Timewalkers>
-						i(136925),	-- Corgi Pup Pet
-					}),
 					n(46556, {	-- Jamus'Vaz <Valor Quartermaster>
 						i(78704),	-- Spiritwalker's Legguards
 						i(78666),	-- Spiritwalker's Gloves

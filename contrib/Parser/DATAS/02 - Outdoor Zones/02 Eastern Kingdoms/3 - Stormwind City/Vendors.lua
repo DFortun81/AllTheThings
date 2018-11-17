@@ -792,9 +792,6 @@ _.Zones =
 								i(11306),	-- Sturdy Recurve
 								i(11303),	-- Fine Shortbow
 							}),
-							n(110034, {	-- Historian Llore <The Timewalkers>
-								i(136925),	-- Corgi Pup
-							}),
 							n(1318, {	-- Jessara Cordell <Enchanting Supplies>
 								i(20753),	-- Formula: Lesser Wizard Oil
 								i(20752),	-- Formula: Minor Mana Oil

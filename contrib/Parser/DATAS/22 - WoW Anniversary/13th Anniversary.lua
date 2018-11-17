@@ -6,6 +6,10 @@ _.Anniversary =
 	{	-- WoW Anniversary
 		["npcID"] = -5362, -- WoW Anniversary
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
+		["maps"] = {
+			85,	-- Orgrimmar
+			13, -- Stormwind City
+		},
 		["g"] = {
 			{	-- 13th Anniversary
 				["achievementID"] = 11848,	-- 13th Anniversary
