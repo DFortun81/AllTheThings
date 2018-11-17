@@ -65,6 +65,7 @@ _.Anniversary =
 							{ 36.6, 74.6, 85 },
 						},
 						["races"] = HORDE_ONLY,
+						["u"] = 31,				-- WoW Anniversary Filter
 						--Note!! See Master List of quiz answers at the end in a better format
 						--Was going to list it in description, but too many and terrible looking
 					},
@@ -76,6 +77,7 @@ _.Anniversary =
 							{ 84.61, 25.01, 13 },
 						},
 						["races"] = ALLIANCE_ONLY,
+						["u"] = 31,				-- WoW Anniversary Filter
 						--Note!! See Master List of quiz answers at the end in a better format
 						--Was going to list it in description, but too many and terrible looking
 					},
@@ -86,6 +88,12 @@ _.Anniversary =
 						["coords"] = {
 							{ 36.6, 74.6, 85 },
 						},
+						["sourceQuests"] = {
+							47462,	-- Azuregos
+							47463,	-- Nightmare Dragons
+							47461,	-- Lord Kazzak
+						},
+						--Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
 						["races"] = HORDE_ONLY,
 					},
 					{	-- The Originals [A]
@@ -95,7 +103,14 @@ _.Anniversary =
 						["coords"] = {
 							{ 84.61, 25.01, 13 },
 						},
+						["sourceQuests"] = {
+							47462,	-- Azuregos
+							47463,	-- Nightmare Dragons
+							47461,	-- Lord Kazzak
+						},
+						--Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
 						["races"] = ALLIANCE_ONLY,
+						["u"] = 31,				-- WoW Anniversary Filter
 						--Note!! See Master List of quiz answers at the end in a better format
 						--Was going to list it in description, but too many and terrible looking
 					},

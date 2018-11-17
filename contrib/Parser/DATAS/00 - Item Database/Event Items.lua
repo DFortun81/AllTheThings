@@ -144,11 +144,11 @@ i(147883);	-- Celebration Wand - Quilboar
 i(147882);	-- Celebration Wand - Trogg
 i(128506);	-- Celebration Wand - Gnoll
 i(128505);	-- Celebration Wand - Murloc
-i(71134),	-- Celebration Package
-i(90918),	-- Celebration Package
-i(127987),	-- Celebration Package
-i(139285),	-- Celebration Package
-i(107224),	-- Celebration Package
-i(147877),	-- Celebration Package
-i(162636),	-- Celebration Package
+i(71134);	-- Celebration Package
+i(90918);	-- Celebration Package
+i(127987);	-- Celebration Package
+i(139285);	-- Celebration Package
+i(107224);	-- Celebration Package
+i(147877);	-- Celebration Package
+i(162636);	-- Celebration Package
 
