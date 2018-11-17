@@ -187,6 +187,7 @@ AllTheThings.Locales.enUS = {
 		["Mini World Events"] = GetSpellInfo(57055),
 		["Emissary Quests"] = "Emissary",
 		["World Quests"] = "WQ",
+		["WoW Anniversary"] = "Anniversary",
 		
 	};
 

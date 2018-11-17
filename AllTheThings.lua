@@ -3163,7 +3163,7 @@ local function AttachTooltip(self)
 						self:Show();
 					elseif owner.tooltipText == BLIZZARD_STORE then
 						-- Shop
-						local gf = app:GetWindow("Prime").data.g[14];
+						local gf = app:GetWindow("Prime").data.g[15];
 						AttachTooltipRawSearchResults(self, {}, { gf });
 						self:Show();
 					elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
@@ -7677,6 +7677,16 @@ function app:GetDataCache()
 			db.f = 0;
 			db.expanded = false;
 			db.text = EVENTS_LABEL; -- L("EVENTS");
+			db.collectible = false;
+			table.insert(g, db);
+		end
+		
+		-- Anniversary
+		if app.Categories.Anniversary then
+			db = app.CreateAchievement(12827, app.Categories.Anniversary);
+			db.f = 0;
+			db.expanded = false;
+			db.text = "WoW Anniversary"; -- L("EVENTS");
 			db.collectible = false;
 			table.insert(g, db);
 		end
