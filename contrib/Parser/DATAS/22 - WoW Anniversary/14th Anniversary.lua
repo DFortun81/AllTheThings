@@ -19,35 +19,11 @@ _.Anniversary =
 				["npcID"] = -297,	-- Mailbox
 				["g"] = {
 					{	-- Anniversary Gift
-						["itemID"] = 147876,	-- Anniversary Gift
-						["u"] = 36,				-- WoW Anniversary Filter
+						["itemID"] = 162637,	-- Anniversary Gift
+						["u"] = 31,				-- WoW Anniversary Filter
 						["g"] = {
 							{	-- Celebration Package
-								["itemID"] = 147877,	-- Celebration Package
-								["u"] = 36,				-- WoW Anniversary Filter
-							},
-							{	-- A Slightly More Urgent Letter from the Timewalkers [H]
-								["itemID"] = 147881,	-- A Slightly More Urgent Letter from the Timewalkers
-								["questID"] = 47251,	-- Interesting Things
-								["races"] = HORDE_ONLY,
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- A Slightly More Urgent Letter from the Timewalkers [A]
-								["itemID"] = 147880,	-- A Slightly More Urgent Letter from the Timewalkers
-								["questID"] = 47252,	-- Interesting Things
-								["races"] = ALLIANCE_ONLY,
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Letter from the Timewalker [H]
-								["itemID"] = 139410,	-- Letter from the Timewalker
-								["questID"] = 43472,	-- The Historians
-								["races"] = HORDE_ONLY,
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Letter from the Timewalker [A]
-								["itemID"] = 139409,	-- Letter from the Timewalker
-								["questID"] = 43471,	-- The Historians
-								["races"] = ALLIANCE_ONLY,
+								["itemID"] = 162636,	-- Celebration Package
 								["u"] = 31,				-- WoW Anniversary Filter
 							},
 						},
