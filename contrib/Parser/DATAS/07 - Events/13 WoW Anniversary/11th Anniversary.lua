@@ -24,23 +24,23 @@ _.Anniversary =
 							},
 							{	-- Celebration Wand - Gnoll
 								["itemID"] = 128506,	-- Celebration Wand - Gnoll
-								["u"] = 36,				-- WoW Anniversary Filter
+								["u"] = 31,				-- WoW Anniversary Filter
 							},
 							{	-- Celebration Wand - Murloc
 								["itemID"] = 128505,	-- Celebration Wand - Murloc
-								["u"] = 36,				-- WoW Anniversary Filter
+								["u"] = 31,				-- WoW Anniversary Filter
 							},
 							{	-- Exquisite Costume Set: "Edwin VanCleef"
 								["itemID"] = 128510,	-- Exquisite Costume Set: "Edwin VanCleef"
-								["u"] = 36,				-- WoW Anniversary Filter
+								["u"] = 31,				-- WoW Anniversary Filter
 							},
 							{	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
 								["itemID"] = 128507,	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-								["u"] = 36,				-- WoW Anniversary Filter
+								["u"] = 31,				-- WoW Anniversary Filter
 								["g"] = {
 									{	-- Did Someone Say...?
 										["achievementID"] = 10335,	-- Did Someone Say...?
-										["u"] = 36,					-- WoW Anniversary Filter
+										["u"] = 31,				-- WoW Anniversary Filter
 									},
 								},
 							},
