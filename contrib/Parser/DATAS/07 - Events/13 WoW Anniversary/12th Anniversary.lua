@@ -5,6 +5,7 @@ _.Anniversary =
 {
 	{	-- 12th Anniversary
 		["npcID"] = -5361, -- 12th Anniversary
+		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 		["g"] = {
 			{	-- 12th Anniversary
 				["achievementID"] = 10741,	-- 12th Anniversary
@@ -21,15 +22,17 @@ _.Anniversary =
 								["itemID"] = 139285,	-- Celebration Package
 								["u"] = 36,				-- WoW Anniversary Filter
 							},
-							{	-- Letter from the Timewalker
+							{	-- Letter from the Timewalker [H]
 								["itemID"] = 139410,	-- Letter from the Timewalker
 								["questID"] = 43472,	-- The Historians
 								["races"] = HORDE_ONLY,
+								["u"] = 31,				-- WoW Anniversary Filter
 							},
-							{	-- Letter from the Timewalker
+							{	-- Letter from the Timewalker [A]
 								["itemID"] = 139409,	-- Letter from the Timewalker
 								["questID"] = 43471,	-- The Historians
 								["races"] = ALLIANCE_ONLY,
+								["u"] = 31,				-- WoW Anniversary Filter
 							},
 						},
 					},
@@ -66,8 +69,12 @@ _.Anniversary =
 				["npcID"] = -2,		-- Vendors
 				["g"] = {
 					{	-- Historian Jupa [H]
-						["npcID"] = 110035,	-- Historian Jupa
+						["npcID"] = 110035,		-- Historian Jupa
 						["races"] = HORDE_ONLY,
+						["currencyID"] = 1166,	-- Timewarped Badge
+						["coords"] = {
+							{ 36.6, 74.6, 85 },
+						},
 						["g"] = {
 							{	-- Corgi Pup
 								["itemID"] = 136925,	-- Corgi Pup
@@ -98,8 +105,12 @@ _.Anniversary =
 						},
 					},
 					{	-- Historian Llore [A]
-						["npcID"] = 110034,	-- Historian Llore
+						["npcID"] = 110034,		-- Historian Llore
 						["races"] = ALLIANCE_ONLY,
+						["currencyID"] = 1166,	-- Timewarped Badge
+						["coords"] = {
+							{ 84.61, 25.01, 13 },
+						},
 						["g"] = {
 							{	-- Corgi Pup
 								["itemID"] = 136925,	-- Corgi Pup
