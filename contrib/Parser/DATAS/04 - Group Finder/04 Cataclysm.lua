@@ -31,6 +31,7 @@ _.GroupFinder =
 				   i(113701),	-- Emberspark Plate Bracers
 				   i(113696),	-- Emberspark Plate Headguard
 				   i(113695),	-- Emberspark Plate Helm
+				   i(113707),   -- Emberspark Plate Leggings*
 				   i(113781),	-- Emberspark Plate Sabatons*
 				   i(113702),	-- Emberspark Plate Wristguards
 				},
