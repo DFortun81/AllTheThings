@@ -417,8 +417,8 @@ _.Anniversary =
 							},
 						},
 					},
-					{	-- Taerar [Ashenvale - 1st Rotation]
-						["npcID"] = 121912,	-- Taerar
+					{	-- Taerar [Ashenvale - 1st Rotation] [1st one in 2017]
+						["npcID"] = 121911,	-- Taerar
 						["isRaid"] = true,
 						["questID"] = 47463,
 						["isDaily"] = true,
@@ -491,7 +491,7 @@ _.Anniversary =
 							},
 						},
 					},
-					{	-- Ysondre [Feralas - 
+					{	-- Ysondre [Feralas - 2nd Rotation] [1st one in 2018]
 						["npcID"] = 121912,	-- Ysondre
 						["isRaid"] = true,
 						["questID"] = 47463,
