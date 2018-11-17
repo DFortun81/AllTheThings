@@ -134,18 +134,6 @@ _.Anniversary =
 					},
 				},
 			},
-			
-			
-					n(-2, { -- Vendors
-						a(n(110034, {	-- Historian Llore
-							i(158149), -- Overrtuned Corgi Goggles
-						})),
-						h(n(110035, {	-- Historian Ju'pa
-							i(158149), -- Overrtuned Corgi Goggles
-						})),
-					}),
-				},
-			})),
 		},
 	},
 };
