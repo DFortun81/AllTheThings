@@ -19,13 +19,13 @@ _.Zones =
 								["qg"] = 38243, -- Zen'tabra
 								["coord"] = { 58.0, 54.0 },
 								["classes"]= { 11 }, -- Druid
-								["sourceQuests"] = { 24764 }, -- The Rise of the Darkspear (Druid)
+								["sourceQuest"] = 24764, -- The Rise of the Darkspear (Druid)
 							}),
 							q(24767, { -- A Rough Start (Druid)
 								["qg"] = 38243, -- Zen'tabra
 								["coord"] = { 58.0, 54.0 },
 								["classes"] = { 11 }, -- Druid
-								["sourceQuests"] = { 24765 }, -- The Basics: Hitting Things (Druid)
+								["sourceQuest"] = 24765, -- The Basics: Hitting Things (Druid)
 							}),
 							q(24768, { -- Proving Pit (Druid)
 								["groups"] = {
@@ -34,13 +34,13 @@ _.Zones =
 								["qg"] = 38243, -- Zen'tabra
 								["coord"] = { 58.0, 54.0 },
 								["classes"] = { 11 }, -- Druid
-								["sourceQuests"] = { 24767 }, -- A Rough Start (Druid)
+								["sourceQuest"] = 24767, -- A Rough Start (Druid)
 							}),
 							q(24769, { -- More Than Expected (Druid)
 								["qg"] = 38243, -- Zen'tabra
 								["coord"] = { 58.0, 54.0 },
 								["classes"] = { 11 }, -- Druid
-								["sourceQuests"] = { 24768 }, -- Proving Pit (Druid)
+								["sourceQuest"] = 24768, -- Proving Pit (Druid)
 							}),
 							-- Hunter Quests --
 							q(24776, { -- The Rise of the Darkspear (Hunter)
@@ -52,13 +52,13 @@ _.Zones =
 								["qg"] = 38247, -- Ortezza
 								["coord"] = { 56.4, 50.1 },
 								["classes"] = { 3 }, -- Hunter
-								["sourceQuests"] = { 24776 }, -- The Rise of the Darkspear (Hunter)
+								["sourceQuest"] = 24776, -- The Rise of the Darkspear (Hunter)
 							}),
 							q(24779, { -- A Rough Start (Hunter)
 								["qg"] = 38247, -- Ortezza
 								["coord"] = { 56.4, 50.1 },
 								["classes"] = { 3 }, -- Hunter
-								["sourceQuests"] = { 24777 }, -- The Basics: Hitting Things (Hunter)
+								["sourceQuest"] = 24777, -- The Basics: Hitting Things (Hunter)
 							}),
 							q(24780, { -- Proving Pit (Hunter)
 								["groups"] = {
@@ -67,13 +67,13 @@ _.Zones =
 								["qg"] = 38247, -- Ortezza
 								["coord"] = { 56.4, 50.1 },
 								["classes"] = { 3 }, -- Hunter
-								["sourceQuests"] = { 24779 }, -- A Rough Start (Hunter)
+								["sourceQuest"] = 24779, -- A Rough Start (Hunter)
 							}),
 							q(24781, { -- More Than Expected (Hunter)
 								["qg"] = 38247, -- Ortezza
 								["coord"] = { 56.4, 50.1 },
 								["classes"] = { 3 }, -- Hunter
-								["sourceQuests"] = { 24780 }, -- Proving Pit (Hunter)
+								["sourceQuest"] = 24780, -- Proving Pit (Hunter)
 							}),
 							-- Mage Quests --
 							q(24750, { -- The Rise of the Darkspear (Mage)
@@ -85,13 +85,13 @@ _.Zones =
 								["qg"] = 38246, -- Soratha
 								["coord"] = { 59.7, 52.1 },
 								["classes"] = { 8 }, -- Mage
-								["sourceQuests"] = { 24750 }, -- The Rise of the Darkspear (Mage)
+								["sourceQuest"] = 24750, -- The Rise of the Darkspear (Mage)
 							}),
 							q(24753, { -- A Rough Start (Mage)
 								["qg"] = 38246, -- Soratha
 								["coord"] = { 59.7, 52.1 },
 								["classes"] = { 8 }, -- Mage
-								["sourceQuests"] = { 24751 }, -- The Basics: Hitting Things (Mage)
+								["sourceQuest"] = 24751, -- The Basics: Hitting Things (Mage)
 							}),
 							q(24754, { -- Proving Pit (Mage)
 								["groups"] = {
@@ -100,13 +100,13 @@ _.Zones =
 								["qg"] = 38246, -- Soratha
 								["coord"] = { 59.7, 52.1 },
 								["classes"] = { 8 }, -- Mage
-								["sourceQuests"] = { 24753 }, -- A Rough Start (Mage)
+								["sourceQuest"] = 24753, -- A Rough Start (Mage)
 							}),
 							q(24755, { -- More Than Expected (Mage)
 								["qg"] = 38246, -- Soratha
 								["coord"] = { 59.7, 52.1 },
 								["classes"] = { 8 }, -- Mage
-								["sourceQuests"] = { 24754 }, -- Proving Pit (Mage)
+								["sourceQuest"] = 24754, -- Proving Pit (Mage)
 							}),
 							-- Monk Quests --
 							q(31159, { -- The Rise of the Darkspear (Monk)
@@ -118,13 +118,13 @@ _.Zones =
 								["qg"] = 63310, -- Zabrax
 								["coord"] = { 52.6, 51.8 },
 								["classes"] = { 10 }, -- Monk
-								["sourceQuests"] = { 31159 }, -- The Rise of the Darkspear (Monk)
+								["sourceQuest"] = 31159, -- The Rise of the Darkspear (Monk)
 							}),
 							q(31160, { -- A Rough Start (Monk)
 								["qg"] = 63310, -- Zabrax
 								["coord"] = { 52.6, 51.8 },
 								["classes"] = { 10 }, -- Monk
-								["sourceQuests"] = { 31158 }, -- The Basics: Hitting Things (Monk)
+								["sourceQuest"] = 31158, -- The Basics: Hitting Things (Monk)
 							}),
 							q(31161, { -- Proving Pit (Monk)
 								["groups"] = {
@@ -133,13 +133,13 @@ _.Zones =
 								["qg"] = 63310, -- Zabrax
 								["coord"] = { 52.6, 51.8 },
 								["classes"] = { 10 }, -- Monk
-								["sourceQuests"] = { 31160 }, -- A Rough Start (Monk)
+								["sourceQuest"] = 31160, -- A Rough Start (Monk)
 							}),
 							q(31163, { -- More Than Expected (Monk)
 								["qg"] = 63310, -- Zabrax
 								["coord"] = { 52.6, 51.8 },
 								["classes"] = { 10 }, -- Monk
-								["sourceQuests"] = { 31161 }, -- Proving Pit (Monk)
+								["sourceQuest"] = 31161, -- Proving Pit (Monk)
 							}),
 							-- Priest Quests --
 							q(24782, { -- The Rise of the Darkspear (Priest)
@@ -151,13 +151,13 @@ _.Zones =
 								["qg"] = 38245, -- Tunari
 								["coord"] = { 58.0, 49.3 },
 								["classes"] = { 5 }, -- Priest
-								["sourceQuests"] = { 24782 }, -- The Rise of the Darkspear (Priest)
+								["sourceQuest"] = 24782, -- The Rise of the Darkspear (Priest)
 							}),
 							q(24785, { -- A Rough Start (Priest)
 								["qg"] = 38245, -- Tunari
 								["coord"] = { 58.0, 49.3 },
 								["classes"] = { 5 }, -- Priest
-								["sourceQuests"] = { 24783 }, -- The Basics: Hitting Things (Priest)
+								["sourceQuest"] = 24783, -- The Basics: Hitting Things (Priest)
 							}),
 							q(24786, { -- Proving Pit (Priest)
 								["groups"] = {
@@ -166,13 +166,13 @@ _.Zones =
 								["qg"] = 38245, -- Tunari
 								["coord"] = { 58.0, 49.3 },
 								["classes"] = { 5 }, -- Priest
-								["sourceQuests"] = { 24785 }, -- A Rough Start (Priest)
+								["sourceQuest"] = 24785, -- A Rough Start (Priest)
 							}),
 							q(24787, { -- More Than Expected (Priest)
 								["qg"] = 38245, -- Tunari
 								["coord"] = { 58.0, 49.3 },
 								["classes"] = { 5 }, -- Priest
-								["sourceQuests"] = { 24786 }, -- Proving Pit (Priest)
+								["sourceQuest"] = 24786, -- Proving Pit (Priest)
 							}),
 							-- Rogue Quests --
 							q(24770, { -- The Rise of the Darkspear (Rogue)
@@ -184,13 +184,13 @@ _.Zones =
 								["qg"] = 38244, -- Legati
 								["coord"] = { 52.9, 49.9 },
 								["classes"] = { 4 }, -- Rogue
-								["sourceQuests"] = { 24770 }, -- The Rise of the Darkspear (Rogue)
+								["sourceQuest"] = 24770, -- The Rise of the Darkspear (Rogue)
 							}),
 							q(24773, { -- A Rough Start (Rogue)
 								["qg"] = 38244, -- Legati
 								["coord"] = { 52.9, 49.9 },
 								["classes"] = { 4 }, -- Rogue
-								["sourceQuests"] = { 24770 }, -- The Basics: Hitting Things (Rogue)
+								["sourceQuest"] = 24770, -- The Basics: Hitting Things (Rogue)
 							}),
 							q(24774, { -- Proving Pit (Rogue)
 								["groups"] = {
@@ -199,13 +199,13 @@ _.Zones =
 								["qg"] = 38244, -- Legati
 								["coord"] = { 52.9, 49.9 },
 								["classes"] = { 4 }, -- Rogue
-								["sourceQuests"] = { 24773 }, -- A Rough Start (Rogue)
+								["sourceQuest"] = 24773, -- A Rough Start (Rogue)
 							}),
 							q(24775, { -- More Than Expected (Rogue)
 								["qg"] = 38244, -- Legati
 								["coord"] = { 52.9, 49.9 },
 								["classes"] = { 4 }, -- Rogue
-								["sourceQuests"] = { 24774 }, -- Proving Pit (Rogue)
+								["sourceQuest"] = 24774, -- Proving Pit (Rogue)
 							}),
 							-- Shaman Quests --
 							q(24758, { -- The Rise of the Darkspear (Shaman)
@@ -217,13 +217,13 @@ _.Zones =
 								["qg"] = 38242, -- Nekali
 								["coord"] = { 50.1, 52.8 },
 								["classes"] = { 7 }, -- Shaman
-								["sourceQuests"] = { 24758 }, -- The Rise of the Darkspear (Shaman)
+								["sourceQuest"] = 24758, -- The Rise of the Darkspear (Shaman)
 							}),
 							q(24761, { -- A Rough Start (Shaman)
 								["qg"] = 38242, -- Nekali
 								["coord"] = { 50.1, 52.8 },
 								["classes"] = { 7 }, -- Shaman
-								["sourceQuests"] = { 24759 }, -- The Basics: Hitting Things (Shaman)
+								["sourceQuest"] = 24759, -- The Basics: Hitting Things (Shaman)
 							}),
 							q(24762, { -- Proving Pit (Shaman)
 								["groups"] = {
@@ -232,13 +232,13 @@ _.Zones =
 								["qg"] = 38242, -- Nekali
 								["coord"] = { 50.1, 52.8 },
 								["classes"] = { 7 }, -- Shaman
-								["sourceQuests"] = { 24761 }, -- A Rough Start (Shaman)
+								["sourceQuest"] = 24761, -- A Rough Start (Shaman)
 							}),
 							q(24763, { -- More Than Expected (Shaman)
 								["qg"] = 38242, -- Nekali
 								["coord"] = { 50.1, 52.8 },
 								["classes"] = { 7 }, -- Shaman
-								["sourceQuests"] = { 24762 }, -- Proving Pit (Shaman)
+								["sourceQuest"] = 24762, -- Proving Pit (Shaman)
 							}),
 							-- Warlock Quests --
 							q(26272, { -- The Rise of the Darkspear (Warlock)
@@ -250,13 +250,13 @@ _.Zones =
 								["qg"] = 42618, -- Voldreka
 								["coord"] = { 50.0, 50.0 },
 								["classes"] = { 9 }, -- Warlock
-								["sourceQuests"] = { 26272 }, -- The Rise of the Darkspear (Warlock)
+								["sourceQuest"] = 26272, -- The Rise of the Darkspear (Warlock)
 							}),
 							q(26275, { -- A Rough Start (Warlock)
 								["qg"] = 42618, -- Voldreka
 								["coord"] = { 50.0, 50.0 },
 								["classes"] = { 9 }, -- Warlock
-								["sourceQuests"] = { 26273 }, -- The Basics: Hitting Things (Warlock)
+								["sourceQuest"] = 26273, -- The Basics: Hitting Things (Warlock)
 							}),
 							q(26276, { -- Proving Pit (Warlock)
 								["groups"] = {
@@ -265,13 +265,13 @@ _.Zones =
 								["qg"] = 42618, -- Voldreka
 								["coord"] = { 50.0, 50.0 },
 								["classes"] = { 9 }, -- Warlock
-								["sourceQuests"] = { 26275 }, -- A Rough Start (Warlock)
+								["sourceQuest"] = 26275, -- A Rough Start (Warlock)
 							}),
 							q(26277, { -- More Than Expected (Warlock)
 								["qg"] = 42618, -- Voldreka
 								["coord"] = { 50.0, 50.0 },
 								["classes"] = { 9 }, -- Warlock
-								["sourceQuests"] = { 26276 }, -- Proving Pit (Warlock)
+								["sourceQuest"] = 26276, -- Proving Pit (Warlock)
 							}),
 							-- Warrior Quests --
 							q(24607, { -- The Rise of the Darkspear (Warrior)
@@ -283,13 +283,13 @@ _.Zones =
 								["qg"] = 38037, -- Nortet
 								["coord"] = { 52.5, 53.7 },
 								["classes"] = { 1 }, -- Warrior
-								["sourceQuests"] = { 24607 }, -- The Rise of the Darkspear (Warrior)
+								["sourceQuest"] = 24607, -- The Rise of the Darkspear (Warrior)
 							}),
 							q(24641, { -- A Rough Start (Warrior)
 								["qg"] = 38037, -- Nortet
 								["coord"] = { 52.5, 53.7 },
 								["classes"] = { 1 }, -- Warrior
-								["sourceQuests"] = { 24639 }, -- The Basics: Hitting Things (Warrior)
+								["sourceQuest"] = 24639, -- The Basics: Hitting Things (Warrior)
 							}),
 							q(24642, { -- Proving Pit (Warrior)
 								["groups"] = {
@@ -298,47 +298,124 @@ _.Zones =
 								["qg"] = 38037, -- Nortet
 								["coord"] = { 52.5, 53.7 },
 								["classes"] = { 1 }, -- Warrior
-								["sourceQuests"] = { 24641 }, -- A Rough Start (Warrior)
+								["sourceQuest"] = 24641, -- A Rough Start (Warrior)
 							}),
 							q(24643, { -- More Than Expected (Warrior)
 								["qg"] = 38037, -- Nortet
 								["coord"] = { 52.5, 53.7 },
 								["classes"] = { 1 }, -- Warrior
-								["sourceQuests"] = { 24642 }, -- Proving Pit (Warrior)
+								["sourceQuest"] = 24642, -- Proving Pit (Warrior)
 							}),
 							-- Other Quests --
 							q(25064, { -- Moraya
 								["qg"] = 38966, -- Vol'jin
+								["classes"] = {
+									1,	-- Warrior
+									3,	-- Hunter
+									4,	-- Rogue
+									5,	-- Priest
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+								},
 								["coord"] = { 61.6, 65.9 },
 								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769}, -- More Than Expected (All Classes)
 							}),
 							q(24622, { -- A Troll's Truest Companion
 								["qg"] = 38005, -- Moraya
+								["classes"] = {
+									1,	-- Warrior
+									3,	-- Hunter
+									4,	-- Rogue
+									5,	-- Priest
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+								},
 								["coord"] = { 56.8, 63.7 },
-								["sourceQuests"] = { 25064 }, -- Moraya
+								["sourceQuest"] = 25064, -- Moraya
 							}),
 							q(25037, { -- Crab Fishin'
 								["qg"] = 39007, -- Tora'jin
+								["classes"] = {
+									1,	-- Warrior
+									3,	-- Hunter
+									4,	-- Rogue
+									5,	-- Priest
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+								},
 								["coord"] = { 60.5, 62.9 },
-								["sourceQuests"] = { 25064 }, -- Moraya
+								["sourceQuest"] = 25064, -- Moraya
 							}),
 							q(24625, { -- Consort of the Sea Witch
 								["qg"] = 37987, -- Tegashi
+								["classes"] = {
+									1,	-- Warrior
+									3,	-- Hunter
+									4,	-- Rogue
+									5,	-- Priest
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+								},
 								["coord"] = { 45.7, 85.0 },
-								["sourceQuests"] = { 24622 }, -- A Troll's Truest Companion
+								["sourceQuest"] = 24622, -- A Troll's Truest Companion
 							}),
 							q(24624, { -- Mercy for the Lost
 								["qg"] = 37987, -- Tegashi
+								["classes"] = {
+									1,	-- Warrior
+									3,	-- Hunter
+									4,	-- Rogue
+									5,	-- Priest
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+								},
 								["coord"] = { 45.7, 85.0 },
-								["sourceQuests"] = { 24622 }, -- A Troll's Truest Companion
+								["sourceQuest"] = 24622, -- A Troll's Truest Companion
 							}),
 							q(24623, { -- Saving the Young
 								["qg"] = 37969, -- Kijara
+								["classes"] = {
+									1,	-- Warrior
+									3,	-- Hunter
+									4,	-- Rogue
+									5,	-- Priest
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+								},
 								["coord"] = { 44.6, 85.6 },
-								["sourceQuests"] = { 24622 }, -- A Troll's Truest Companion
+								["sourceQuest"] = 24622, -- A Troll's Truest Companion
 							}),
 							q(24626, { -- Young and Vicious
 								["qg"] = 37969, -- Kijara
+								["classes"] = {
+									1,	-- Warrior
+									3,	-- Hunter
+									4,	-- Rogue
+									5,	-- Priest
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+								},
 								["coord"] = { 45.1, 85.5 },
 								["sourceQuests"] = {
 									24625,	-- Consort of the Sea Witch
@@ -348,21 +425,65 @@ _.Zones =
 							}),
 							q(25035, { -- Breaking the Line
 								["qg"] = 38440, -- Tortunga
+								["classes"] = {
+									1,	-- Warrior
+									3,	-- Hunter
+									4,	-- Rogue
+									5,	-- Priest
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+								},
 								["coord"] = { 59.0, 66.8 },
-								["sourceQuests"] = { 24626 }, -- Young and Vicious
+								["sourceQuest"] = 24626, -- Young and Vicious
 							}),
 							q(24812, { -- No More Mercy
 								["qg"] = 38442, -- Morakki
+								["classes"] = {
+									1,	-- Warrior
+									3,	-- Hunter
+									4,	-- Rogue
+									5,	-- Priest
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+								},
 								["coord"] = { 58.9, 23.1 },
-								["sourceQuests"] = { 25035 }, -- Breaking the Line
+								["sourceQuest"] = 25035, -- Breaking the Line
 							}),
 							q(24813, { -- Territorial Fetish
 								["qg"] = 38442, -- Morakki
+								["classes"] = {
+									1,	-- Warrior
+									3,	-- Hunter
+									4,	-- Rogue
+									5,	-- Priest
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+								},
 								["coord"] = { 58.9, 23.1 },
-								["sourceQuests"] = { 25035 }, -- Breaking the Line
+								["sourceQuest"] = 25035, -- Breaking the Line
 							}),
 							q(24814, { -- An Ancient Enemy
 								["qg"] = 38442, -- Morakki
+								["classes"] = {
+									1,	-- Warrior
+									3,	-- Hunter
+									4,	-- Rogue
+									5,	-- Priest
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+								},
 								["coord"] = { 58.9, 23.1 },
 								["sourceQuests"] = {
 									24812,	-- No More Mercy
@@ -371,8 +492,19 @@ _.Zones =
 							}),
 							q(25073, { -- Sen'jin Village
 								["qg"] = 38966, -- Vol'jin
+								["classes"] = {
+									1,	-- Warrior
+									3,	-- Hunter
+									4,	-- Rogue
+									5,	-- Priest
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+								},
 								["coord"] = { 61.6, 65.9 },
-								["sourceQuests"] = { 24814 }, -- An Ancient Enemy
+								["sourceQuest"] = 24814, -- An Ancient Enemy
 								["isBreadcrumb"] = true,
 							}),
 							-- Pandaren Campaign Quests --
@@ -380,26 +512,26 @@ _.Zones =
 								["qg"] = 68025, -- Thrall
 								["lvl"] = 81,
 								["coord"] = { 38.4, 46.6 },
-								["sourceQuests"] = { 32319 }, -- Find Thrall!
+								["sourceQuest"] = 32319, -- Find Thrall!
 							}),
 							q(32372, { -- De-Subjugation
 								["qg"] = 68025, -- Thrall
 								["lvl"] = 81,
 								["coord"] = { 38.4, 46.6 },
-								["sourceQuests"] = { 32320 }, -- The Horde is Family
+								["sourceQuest"] = 32320, -- The Horde is Family
 							}),
 							-- Battle for Azeroth, Spirit of Vol'Jin questline
 							q(51514, {	-- Broken Bargain
 								["qg"] = 137878,	-- Master Gadrin
 								["lvl"] = 120,
 								["coord"] = { 59.5, 51.5 },
-								["sourceQuests"] = { 51513 },	-- Zalazane Returns
+								["sourceQuest"] = 51513,	-- Zalazane Returns
 							}),
 							q(51533, {	-- The Glaive of Vol'jin
 								["qg"] = 120173,	-- Zen'tarba
 								["lvl"] = 120,
 								["coord"] = { 59.2, 52.0 },
-								["sourceQuests"] = { 51513 },	-- Zalazane Returns
+								["sourceQuest"] = 51513,	-- Zalazane Returns
 							}),
 							q(51515, {	-- Vengeance for Vol'jin
 								["qg"] = 137878,	-- Master Gadrin
@@ -414,7 +546,7 @@ _.Zones =
 								["qg"] = 137878,	-- Master Gadrin
 								["lvl"] = 120,
 								["coord"] = { 59.5, 51.5 },
-								["sourceQuests"] = { 51515 },	-- Vengeance for Vol'jin
+								["sourceQuest"] = 51515,	-- Vengeance for Vol'jin
 							}),
 						},
 						["races"] = HORDE_ONLY,
