@@ -26,6 +26,7 @@ _.GroupFinder =
 				   i(113775),	-- Sparkmail Sabatons
 				   i(113704),	-- Sparkmail Wristguards
 				   i(113711),	-- Sparkmail Legguards*
+				   i(113713),   -- Emberspark Chestplate*
 				   i(113780),	-- Emberspark Plate Boots
 				   i(113701),	-- Emberspark Plate Bracers
 				   i(113696),	-- Emberspark Plate Headguard
