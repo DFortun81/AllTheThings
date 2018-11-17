@@ -291,6 +291,16 @@ _.Instances =
 								8906,	-- Ragereaver Golem
 							},
 						}),
+						i(14552, {	-- Stockade Pauldrons
+							["crs"] = {
+								8903,	-- Anvilrage Captain
+								8908,	-- Molten War Golem
+								8911,	-- Fireguard Destroyer
+								8898,	-- Anvilrage Marshal
+								9097,	-- Scarshield Legionnaire
+								9239,	-- Smolderthorn Mystic
+							},
+						}),
 						i(12551, {	-- Stoneshield Cloak
 							["crs"] = {
 								8899,	-- Doomforge Dragoon
