@@ -186,6 +186,7 @@ Legacy				q( 1436),	-- Alliance Relations
 							i(7979), -- Plans: Barbaric Iron Breastplate
 						},
 						["qg"] = 7790, -- Orokk Omosh
+						["coord"] = { 76.8, 37.7 },
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 164, -- Blacksmithing
 					}),
@@ -194,6 +195,7 @@ Legacy				q( 1436),	-- Alliance Relations
 							i(7978), -- Plans: Barbaric Iron Shoulders
 						},
 						["qg"] = 7790, -- Orokk Omosh
+						["coord"] = { 76.8, 37.7 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 2751, -- Barbaric Battlements
 						["requireSkill"] = 164, -- Blacksmithing
@@ -203,6 +205,7 @@ Legacy				q( 1436),	-- Alliance Relations
 							i(7981), -- Plans: Barbaric Iron Boots
 						},
 						["qg"] = 7790, -- Orokk Omosh
+						["coord"] = { 76.8, 37.7 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 2752, -- On Iron Pauldrons
 						["requireSkill"] = 164, -- Blacksmithing
@@ -212,6 +215,7 @@ Legacy				q( 1436),	-- Alliance Relations
 							i(7980), -- Plans: Barbaric Iron Helm
 						},
 						["qg"] = 7790, -- Orokk Omosh
+						["coord"] = { 76.8, 37.7 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 2753, -- Trampled Under Foot
 						["requireSkill"] = 164, -- Blacksmithing
@@ -221,6 +225,7 @@ Legacy				q( 1436),	-- Alliance Relations
 							i(7982), -- Plans: Barbaric Iron Gloves
 						},
 						["qg"] = 7790, -- Orokk Omosh
+						["coord"] = { 76.8, 37.7 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 2754, -- Horns of Frenzy
 						["requireSkill"] = 164, -- Blacksmithing
