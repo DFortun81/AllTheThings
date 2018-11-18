@@ -102,15 +102,18 @@ _.Zones =
 						}),
 						n(132011, {	-- Shoak
 							["groups"] = {
-								i(163506, {	-- Accursed Hexxer
-									["description"] = "Complete the questline \"An Ancient Curse\" for this item to appear on the vendor.",
+								i(163036, { -- Polished Pet Charm
+								--Note!! Write the item like this on this vendor to prevent the description from being written on the charms.
+									i(163506, {	-- Accursed Hexxer
+										["description"] = "Complete the questline \"An Ancient Curse\" for this item to appear on the vendor.",
+									}),
+									i(163510),	-- Crimson Frog
+									i(163500),	-- Bloodfeaster Larva
+									i(163505),	-- Toad in a Box
 								}),
-								i(163510),	-- Crimson Frog
-								i(163500),	-- Bloodfeaster Larva
-								i(163505),	-- Toad in a Box
 							},
 							["description"] = "You must complete the quests \"Killing Cannibals\", \"Just Say No to Cannibalism\", and \"Shoak's on the Menu\" in order him to show up at Gloom Hollow.",
-							["itemID"] = 163036,	-- Polished Pet Charm
+							--["itemID"] = 163036,	-- Polished Pet Charm
 							["races"] = HORDE_ONLY,
 						}),
 					},
