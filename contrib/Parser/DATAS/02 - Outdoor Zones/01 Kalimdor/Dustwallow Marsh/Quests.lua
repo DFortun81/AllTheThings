@@ -737,6 +737,7 @@ _.Zones =
 						["questID"] = 27346,
 						["qg"] = 23600,	-- Apprentice Morlann
 						["coord"] = { 46.0, 57.4 },
+						["isBreadcrumb"] = true,
 					},
 					{	-- They Call Him Smiling Jim (unavailable if you've picked up "Inspecting the Ruins")
 						["questID"] = 27251,
