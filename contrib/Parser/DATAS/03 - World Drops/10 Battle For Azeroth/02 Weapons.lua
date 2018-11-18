@@ -5,9 +5,6 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			{	-- Mud-Soaked Crossbow
-				["itemID"] = 160934,	-- Mud-Soaked Crossbow
-			},
 			n(-319, {	-- Weapons [Epic -- No adjustments]
 				["groups"] = {
 					i(163969),	-- Ameelton's Shot-Thrower

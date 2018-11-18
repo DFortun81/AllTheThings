@@ -115,5 +115,3 @@ i(153810, 1, 91083);	-- Trailseeker Spaulders
 i(153842, 1, 91113);	-- Mistdancer Spaulders
 i(153839, 1, 91102);	-- Mistandcer Handguards
 i(153842, 1, 91105);	-- Mistdancer Pauldrons
-
-i(160934, 1, 96892);	-- Mud-Soaked Crossbow
