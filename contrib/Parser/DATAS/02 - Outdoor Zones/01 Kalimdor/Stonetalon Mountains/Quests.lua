@@ -75,7 +75,8 @@ _.Zones =
 						["qg"] = 41488,	-- Sentinel Mistress Geleneth
 						["sourceQuests"] = { 25891 },	-- Last Ditch Effort
 					}),
-					qh(25999, {	-- Barrier to Entry
+					{	-- Barrier to Entry
+						["questID"] = 25999,
 						["groups"] = {
 							i(57471),	-- Elf-Killer Breastplate
 							i(57470),	-- Incinerator's Gauntlets
@@ -83,8 +84,10 @@ _.Zones =
 							i(131463),	-- Saurboz's Handwraps
 						},
 						["qg"] = 34341,	-- Saurboz
-						["sourceQuests"] = { 25945 },	-- We're Here to Do One Thing, Maybe Two...
-					}),
+						["coord"] = { 74.3, 47.7 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25945,	-- We're Here to Do One Thing, Maybe Two...
+					},
 					qh(26074, {	-- Beginning of the End
 						["qg"] = 41023,	-- Overlord Krom'gar
 						["sourceQuests"] = { 26073 },	-- All's Quiet on the Southern Front

@@ -274,11 +274,17 @@ Legacy				q( 1436),	-- Alliance Relations
 						["races"] = { 2, 8}, -- Orcs/Trolls
 						["sourceQuests"] = { 6385 }, -- Doras the Wind Rider Master
 					}),
-					qg(14720, q(13842, {	-- Dread Head Redemption
-						i(119325),	-- Bow of Fire
-						i(119326),  -- Ring of Pardons
-						i(119327),	-- Durak's Downfall
-					})),
+					{	-- Dread Head Redemption
+						["questID"] = 13842,
+						["qg"] = 14720,	-- Eitrigg
+						["groups"] = {
+							i(119325),	-- Bow of Fire
+							i(119326),  -- Ring of Pardons
+							i(119327),	-- Durak's Downfall
+						},
+						["coord"] = { 49.2, 72.3 },
+						["sourceQuest"] = 13841,	-- All Apologies
+					},
 --[[					
 					qp755(qg(50482, q(25162))),	-- Elemental Goo
 					qp171(qg(3347, q(29481))),	-- Elixir Master

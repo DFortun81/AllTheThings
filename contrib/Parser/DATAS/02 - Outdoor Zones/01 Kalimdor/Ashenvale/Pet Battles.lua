@@ -21,6 +21,7 @@ _.Zones =
 							i(89125),	-- Sack of Pet Supplies
 						},
 						["qg"] = 66135,	-- Dagra the Fierce
+						["coord"] = { 20.2, 29.5 },
 						["races"] = HORDE_ONLY,
 					},
 					{	-- Zonya the Sadist
@@ -29,6 +30,7 @@ _.Zones =
 							i(89125),	-- Sack of Pet Supplies
 						},
 						["qg"] = 66136,	-- Zonya the Sadist
+						["coord"] = { 20.2, 29.5 },
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					},
