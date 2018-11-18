@@ -7,32 +7,52 @@ _.Zones =
 		m(63, {	-- Ashenvale
 			["groups"] = {
 				n(-2, {	-- Vendor
-					na(3951, {	-- Bhaldaran Ravenshade
-						i(11305),	-- Dense Shortbow
+					n(3951, {	-- Bhaldaran Ravenshade
+						["groups"] = {
+							i(11305),	-- Dense Shortbow
+						},
+						["coord"] = { 34.6, 71.2 },
+						["races"] = ALLIANCE_ONLY,
 					}),
-					nh(34303, {	-- Dagrun Ragehammer
-						i(4778),	-- Heavy Spiked Mace
-						i(4777),	-- Ironwood Maul
+					n(34303, {	-- Dagrun Ragehammer
+						["groups"] = {
+							i(4778),	-- Heavy Spiked Mace
+							i(4777),	-- Ironwood Maul
+						},
+						["coord"] = { 11.6, 35.2 },
+						["races"] = HORDE_ONLY,
 					}),
-					na(3954, {	-- Dalria
-						i(20855),	-- Design: Wicked Moonstone Ring
-						i(11101),	-- Formula: Enchant Bracer - Lesser Strength
-						i(11039),	-- Formula: Enchant Cloak - Minor Agility
+					n(3954, {	-- Dalria
+						["groups"] = {
+							i(20855),	-- Design: Wicked Moonstone Ring
+							i(11101),	-- Formula: Enchant Bracer - Lesser Strength
+							i(11039),	-- Formula: Enchant Cloak - Minor Agility
+						},
+						["coord"] = { 35.0, 52.0 },
+						["races"] = ALLIANCE_ONLY,
 					}),
-					na(34601, {	-- Harlown Darkweave
+					n(34601, {	-- Harlown Darkweave
 						["groups"] = {
 							i(7361),	-- Pattern: Herbalist's Gloves
 						},
+						["coord"] = { 18.2, 60.0 },
+						["races"] = ALLIANCE_ONLY,
 						["description"] = "Vendor will only sell to those who have rescued him. Go to Benjari Edune and pick up the quest 'Three Friends of the Forest' to start the quest chain.",
 					}),
-					na(3958, {	-- Lardan <Leatherworking Supplies>
+					n(3958, {	-- Lardan <Leatherworking Supplies>
 						["groups"] = {
 							i(5973), -- Pattern: Barbaric Leggings
 						},
+						["coord"] = { 34.8, 49.8 },
+						["races"] = ALLIANCE_ONLY,
 					}),
-					nh(12962, {	-- Wik'Tar <Fish Merchant & Supplies>
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
+					n(12962, {	-- Wik'Tar <Fish Merchant & Supplies>
+						["groups"] = {
+							i(17062),	-- Recipe: Mithril Head Trout
+							i(6369),	-- Recipe: Rockscale Cod
+						},
+						["coord"] = { 10.8, 33.8 },
+						["races"] = HORDE_ONLY,
 					}),
 				}),
 			},

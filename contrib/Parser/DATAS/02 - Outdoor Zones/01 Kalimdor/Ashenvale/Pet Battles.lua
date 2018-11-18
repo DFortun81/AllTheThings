@@ -15,19 +15,23 @@ _.Zones =
 					desc(p(496), "Can be found on the beaches of the western coast in Ashenvale."), -- Rusty Snail
 					p(379),	-- Squirrel
 					p(420),	-- Toad
-					qh(31814, {	-- Analynn
+					{	-- Analynn
+						["questID"] = 31814,
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
 						["qg"] = 66135,	-- Dagra the Fierce
-					}),
-					qh(31815, { -- Zonya the Sadist
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Zonya the Sadist
+						["questID"] = 31815,
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
 						["qg"] = 66136,	-- Zonya the Sadist
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
-					}),
+					},
 				}),
 			},
 		}),
