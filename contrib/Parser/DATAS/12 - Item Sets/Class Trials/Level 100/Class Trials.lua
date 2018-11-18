@@ -276,20 +276,48 @@ _.GearSets =
 						i(129679),	-- Sunsoul Shield
 						i(129680),	-- Sunsoul Sword
 						i(129682),	-- Sunsoul Warmaul
+						i(129693);	-- Sunsoul Faceguard
+						i(129668);	-- Sunsoul Headpiece
 						i(129659),	-- Sunsoul Helm
-						--i(),	-- 
+						i(129695);	-- Sunsoul Amulet
+						i(129670);	-- Sunsoul Necklace
+						i(129684);	-- Sunsoul Pendant
 						i(129683),	-- Sunsoul Cloak of Battle
+						i(129690);	-- Sunsoul Cloak of Stoicism
 						i(129665),	-- Sunsoul Cloak of Wisdom
 						i(129661),	-- Sunsoul Pauldrons
+						i(129700);	-- Sunsoul Shoulderguards
+						i(129675);	-- Sunsoul Spaulders
 						i(129656),	-- Sunsoul Battleplate
+						i(129664);	-- Sunsoul Breastplate
+						i(129689);	-- Sunsoul Chestguard
+						i(129702);	-- Sunsoul Armguards
+						i(129677);	-- Sunsoul Armplates
 						i(129663),	-- Sunsoul Vambraces
 						i(129658),	-- Sunsoul Gauntlets
+						i(129667);	-- Sunsoul Gloves
+						i(129692);	-- Sunsoul Handguards
+						i(129676);	-- Sunsoul Belt
 						i(129662),	-- Sunsoul Girdle
+						i(129701);	-- Sunsoul Waistband
+						i(129669);	-- Sunsoul Leggings
+						i(129694);	-- Sunsoul Legguards
+						i(129660);	-- Sunsoul Legplates
+						i(129666);	-- Sunsoul Boots
+						i(129691);	-- Sunsoul Greaves
 						i(129657),	-- Sunsoul Sabatons
-						--i(),	-- 
-						--i(),	-- 
-						--i(),	-- 
-						--i(),	-- 
+						i(129686);	-- Sunsoul Band of Might
+						i(129698);	-- Sunsoul Band of Stoicism
+						i(129673);	-- Sunsoul Band of Wisdom
+						i(129685);	-- Sunsoul Ring of Might
+						i(129697);	-- Sunsoul Ring of Stoicism
+						i(129672);	-- Sunsoul Ring of Wisdom
+						i(129696);	-- Sunsoul Defender Idol
+						i(129699);	-- Sunsoul Defender Stone
+						i(129688);	-- Sunsoul Idol of Battle
+						i(129671);	-- Sunsoul Idol of Wisdom
+						i(129687);	-- Sunsoul Stone of Battle
+						i(129674);	-- Sunsoul Stone of Wisdom
 					},
 					["classes"] = { 2 }
 				}),
