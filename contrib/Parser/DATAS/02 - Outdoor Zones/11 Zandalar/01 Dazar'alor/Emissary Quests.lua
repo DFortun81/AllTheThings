@@ -83,7 +83,7 @@ _.Zones =
 							}),
 							["qg"] = 135447,	-- Ransa Greyfeather
 							["coords"] = {
-								{ 58.0, 62.6 },
+								{ 58.0, 62.6, 1165 },
 							},
 							["isDaily"] = true,
 							["lvl"] = 120,
@@ -173,6 +173,10 @@ _.Zones =
 									},
 									["description"] = "This cache comes from any WQ and any emissary, but will be found in ATT under Zandalari Empire / Proudmore Admiralty.  Honorbound and 7th Legion pieces come strictly from their respective faction's emissaries",
 								}),
+							},
+							["qg"] = 131287,	-- Natal'hakata
+							["coords"] = {
+								{ 67.07, 71.44, 1164 },
 							},
 							["isDaily"] = true,
 							["lvl"] = 120,

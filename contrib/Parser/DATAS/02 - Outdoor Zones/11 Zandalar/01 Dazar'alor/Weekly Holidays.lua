@@ -18,7 +18,7 @@ _.Zones =
 							["isWeekly"] = true,
 							["repeatable"] = true,
 							["coords"] = {
-								{ 56.63, 88.61 },
+								{ 56.63, 88.61, 1165 },
 							},
 							["g"] = {
 								{	-- Cache of Uldir Treasures [Normal Quality]
@@ -295,7 +295,7 @@ _.Zones =
 							["isWeekly"] = true,
 							["repeatable"] = true,
 							["coords"] = {
-								{ 56.63, 88.61 },
+								{ 56.63, 88.61, 1165 },
 							},
 							["g"] = {
 								{	-- Cache of Uldir Treasures [Heroic Quality]
@@ -572,7 +572,7 @@ _.Zones =
 							["isWeekly"] = true,
 							["repeatable"] = true,
 							["coords"] = {
-								{ 56.63, 88.61 },
+								{ 56.63, 88.61, 1165 },
 							},
 							["g"] = {
 								{	-- Brawler's Footlocker
@@ -1116,7 +1116,7 @@ _.Zones =
 							["isWeekly"] = true,
 							["repeatable"] = true,
 							["coords"] = {
-								{ 56.63, 88.61 },
+								{ 56.63, 88.61, 1165 },
 							},
 							["g"] = {
 								{	-- Steel Strongbox
@@ -1130,7 +1130,7 @@ _.Zones =
 							["isWeekly"] = true,
 							["repeatable"] = true,
 							["coords"] = {
-								{ 56.63, 88.61 },
+								{ 56.63, 88.61, 1165 },
 							},
 						},
 						{	-- The World Awaits
@@ -1139,7 +1139,7 @@ _.Zones =
 							["isWeekly"] = true,
 							["repeatable"] = true,
 							["coords"] = {
-								{ 56.63, 88.61 },
+								{ 56.63, 88.61, 1165 },
 							},
 						},
 					},

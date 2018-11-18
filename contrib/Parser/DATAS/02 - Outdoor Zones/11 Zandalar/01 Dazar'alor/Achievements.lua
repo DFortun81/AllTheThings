@@ -17,10 +17,7 @@ _.Zones =
 								{
 									["itemID"] = 163682,	-- Tales of de Loa: Zandalar
 									["coords"] = {
-										{
-											52.23,
-											09.41
-										},
+										{ 	52.23, 09.41, 1165 },
 									},
 									["g"] = {
 										{
@@ -46,7 +43,7 @@ _.Zones =
 									["coords"] = {
 										{
 											35.41,
-											07.81
+											07.81, 1165
 										}
 									},
 									["npcID"] = 126334,	-- Jani
@@ -88,31 +85,31 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["description"] = "The best spot to get this spot is in the \"Council Chambers\" where all six are in one spot.  You must complete the following quests in order to access the buff from each shrine:\n\nBwonsamdi -- \"Soulbound\" in Nazmir\nKrag'wa -- \"Krag'wa the Terrible\" in Nazmir\nPa'ku and Gonk -- Zanchuli Council storyline in Zandalar\nAkunda -- \"Akunda's Blessing\" in Vol'dun\nKimbul -- \"Mark of the Loa\" in Vol'dun.",
 							["coords"] = {
-								44.80, 15.48,	-- Building Entrance
-								43.31, 34.11,	-- Shrines
+								{ 44.80, 15.48, 1165 },	-- Building Entrance
+								{ 43.31, 34.11, 1165 },	-- Shrines
 							},
 						}),
 						ach(13039, {	-- Paku'ai [H]
 							["races"] = HORDE_ONLY,
 							["description"] = "Travel to following coordinates and click the totem for the easiest method to get the achievement.  All of these coordinates are listed in Dazar'alor except for 65.31, 33.97 which is located in Zuldazar.\n\n01. 45.11, 5.28 - Zuldazar\n02. 46.59, 19.99 - Zuldazar\n03. 49.56, 32.82 - Zuldazar\n04. 51.37, 40.96 - Zuldazar\n05. 58.31, 32.62 - Zuldazar\n06. 53.23, 18.94 - Zuldazar\n07. 42.84, 22.97 - Zuldazar\n08. 40.78, 11.08 - Zuldazar\n09. 41.36, 37.85 - Zuldazar\n10. 46.87, 85.53 - Zuldazar\n11. 44.68, 5.9 - Zuldazar\n12. 52.87, 12.41 - Zuldazar\n13. 52.94, 11.31 - Zuldazar\n14. 59.10, 10.64 - Zuldazar\n15. 41.36, 39.00 - Zuldazar\n16. 65.31, 33.97 - Dazar'alor\n17. 40.64, 84.30 - Zuldazar",
 							["coords"] = {
-								45.11, 5.28,
-								46.59, 19.99,
-								49.56, 32.82,
-								51.37, 40.96,
-								58.31, 32.62,
-								53.23, 18.94,
-								42.84, 22.97,
-								40.78, 11.08,
-								41.36, 37.85,
-								46.87, 85.53,
-								44.68, 5.9,
-								52.87, 12.41,
-								52.94, 11.31,
-								59.10, 10.64,
-								41.36, 39.00,
-								65.31, 33.97,
-								40.64, 84.30
+								{ 45.11, 5.28, 1165 },
+								{ 46.59, 19.99, 1165 },
+								{ 49.56, 32.82, 1165 },
+								{ 51.37, 40.96, 1165 },
+								{ 58.31, 32.62, 1165 },
+								{ 53.23, 18.94, 1165 },
+								{ 42.84, 22.97, 1165 },
+								{ 40.78, 11.08, 1165 },
+								{ 41.36, 37.85, 1165 },
+								{ 46.87, 85.53, 1165 },
+								{ 44.68, 5.9, 1165 },
+								{ 52.87, 12.41, 1165 },
+								{ 52.94, 11.31, 1165 },
+								{ 59.10, 10.64, 1165 },
+								{ 41.36, 39.00, 1165 },
+								{ 65.31, 33.97, 862 },
+								{ 40.64, 84.30, 1165 },
 							},
 						}),
 						h(ach(13038)),	-- Raptari Rider [H]

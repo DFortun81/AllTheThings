@@ -15,8 +15,8 @@ _.Zones =
 								{
 									["itemID"] = 161443,	-- A Tiny Voodo Mask
 									["questID"] = 52269,	-- Pepe can be sometimes be summoned with this mask
-									["coord"] = {
-										38.98, 15.80,	-- Pepe Location
+									["coords"] = {
+										{ 38.98, 15.80, 1165 },	-- Pepe Location
 									},
 									["description"] = "Located inside the \"Hot House\" with it's entrance at 37.88, 15.98.",
 								},

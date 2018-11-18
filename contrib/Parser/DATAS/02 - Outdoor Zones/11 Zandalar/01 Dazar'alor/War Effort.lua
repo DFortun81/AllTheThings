@@ -72,23 +72,23 @@ _.Zones =
 									},
 									["sourceQuests"] = { 53212 },	-- Back to Zuldazar
 									["qg"] = 138949,	-- Throk <Recruitment Officer>
-									["coord"] = {
-										52.97, 94.35
+									["coords"] = {
+										{ 52.97, 94.35, 1165 },
 									},
 									["races"] = HORDE_ONLY,
 								}),
 								q(52930, {	-- Wartime Donation: Gold
 									["qg"] = 142157,	-- Paymaster Grintooth
-									["coord"] = {
-										51.71, 95.55
+									["coords"] = {
+										{ 51.71, 95.55, 1165 },
 									},
 									["repeatable"] = true,
 									["isWeekly"] = true,
 								}),
 								q(53335, {	-- Wartime Donation: War Resources
 									["qg"] = 142158,	-- Quartermaster Rauka
-									["coord"] = {
-										51.71, 95.07
+									["coords"] = {
+										{ 51.71, 95.07, 1165 },
 									},
 									["repeatable"] = true,
 									["isWeekly"] = true,
@@ -96,20 +96,20 @@ _.Zones =
 								q(53208, {	-- To The Front
 									["sourceQuests"] = { 138949 },	-- The Warfront Looms
 									["qg"] = 138949,	-- Throk <Recruitment Officer>
-									["coord"] = {
-										52.97, 94.35
+									["coords"] = {
+										{ 52.97, 94.35, 1165 },
 									},
 								}),
 								q(53209, {	-- Warfront Contribution
 									["qg"] = 138949,	-- Throk <Recruitment Officer>
-									["coord"] = {
-										52.97, 94.35
+									["coords"] = {
+										{ 52.97, 94.35, 1165 },
 									},
 								}),
 								q(53207, {	-- The Warfront Looms
 									["qg"] = 138949,	-- Throk <Recruitment Officer>
-									["coord"] = {
-										52.97, 94.35
+									["coords"] = {
+										{ 52.97, 94.35, 1165 },
 									},
 								}),
 							},

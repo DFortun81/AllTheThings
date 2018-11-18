@@ -20,7 +20,7 @@ _.Zones =
 								{	--  Gahz'ralka [CQLA]
 									["npcID"] = 129954,	-- Gahz'ralka
 									["coords"] = {
-										{	64.28, 32.67 },
+										{ 64.28, 32.67, 1165 },
 									},
 									["questID"] = 50439,
 									["g"] = {
@@ -36,7 +36,7 @@ _.Zones =
 								{	-- Kul'krazahn [CQLA]
 									["npcID"] = 120899,	-- Kul'krazahn
 									["coords"] = {
-										{	55.01, 83.61 },
+										{ 55.01, 83.61, 1165 },
 									},
 									["questID"] = 48333,
 									["g"] = {
@@ -63,7 +63,7 @@ _.Zones =
 							["npcID"] = 125816,	-- Sky Queen
 							["questID"] = 53567,
 							["coords"] = {
-								{ 50.01, 84.2 },
+								{ 50.01, 84.2, 1165 },
 							},
 							["races"] = ALLIANCE_ONLY,
 						},
