@@ -1117,8 +1117,17 @@ local function GetCachedSearchResults(search, method, ...)
 						end
 					end
 				end
-				if #group > 0 and group[1].itemID and group[1].u then
-					tinsert(listing, 1, L("UNOBTAINABLE_ITEM_REASONS")[group[1].u][2]);
+				if #group > 0 then
+					if group[1].itemID and group[1].u then
+						tinsert(listing, 1, L("UNOBTAINABLE_ITEM_REASONS")[group[1].u][2]);
+					end
+					if GetDataMember("ShowDescriptions") then
+						for i,j in ipairs(group) do
+							if j.description then
+								tinsert(listing, 1, "|cff66ccff" .. j.description .. "|r");
+							end
+						end
+					end
 				end
 			else
 				cache[2] = nil;
@@ -7175,7 +7184,7 @@ local function RowOnEnter(self)
 		if reference.setID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setID)); end
 		if reference.setHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setHeaderID)); end
 		if reference.setSubHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setSubHeaderID)); end
-		if reference.description and GetDataMember("ShowDescriptions") then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
+		if reference.description and GetDataMember("ShowDescriptions") and not reference.itemID then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
 		if reference.mapID and GetDataMember("ShowMapID") then GameTooltip:AddDoubleLine(L("MAP_ID"), tostring(reference.mapID)); end
 		if reference.coords and app.GetDataMember("ShowCoordinatesInTooltip") then
 			local j = 0;
