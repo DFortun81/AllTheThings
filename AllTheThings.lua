@@ -2974,7 +2974,7 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 				if right then
 					self:AddDoubleLine(left, right);
 				else
-					self:AddLine(left);
+					self:AddLine(left, 1, 1, 1, 1);
 				end
 			end
 		end
