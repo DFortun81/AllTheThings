@@ -13,7 +13,7 @@ _.Zones =
 						{	-- "Black Eye" Zenru [H]
 							["npcID"] = 132153,		-- "Black Eye" Zenru
 							["coords"] = {
-								{ 53.77, 85.97 }
+								{ 53.77, 85.97, 1165 }
 							},
 							["races"] = HORDE_ONLY,
 							["g"] = {
@@ -46,7 +46,7 @@ _.Zones =
 						{	-- Granda Watae [H]
 							["npcID"] = 132130,		-- Granda Watae
 							["coords"] = {
-								{ 42.16, 35.78 }
+								{ 42.16, 35.78, 1165 }
 							},
 							["races"] = HORDE_ONLY,
 							["g"] = {
@@ -77,12 +77,12 @@ _.Zones =
 							},
 							["races"] = HORDE_ONLY,
 							["coords"] = {
-								{ 53.02, 89.93 },	-- Griftah
-								{ 34.77, 11.58 },	-- Much-Too-Hot Pepper
-								{ 37.81, 14.72 },	-- Golden Seeds
-								{ 42.16, 35.78 },	-- Centennial Blossom
-								{ 57.15, 91.47 },	-- Preserved Night Elf Head
-								{ 53.77, 85.97 },	-- Counterfeit Rastakhan Mask
+								{ 53.02, 89.93, 1165 },	-- Griftah
+								{ 34.77, 11.58, 1165 },	-- Much-Too-Hot Pepper
+								{ 37.81, 14.72, 1165 },	-- Golden Seeds
+								{ 42.16, 35.78, 1165 },	-- Centennial Blossom
+								{ 57.15, 91.47, 1165 },	-- Preserved Night Elf Head
+								{ 53.77, 85.97, 1165 },	-- Counterfeit Rastakhan Mask
 							},
 						}),
 						{	-- Happy Holaua [AH]
@@ -206,7 +206,7 @@ _.Zones =
 						{	-- Rakle the Wretched [H]
 							["npcID"] = 126330,		-- Rakle the Wretched
 							["coords"] = {
-								{ 34.77, 11.58 }
+								{ 34.77, 11.58, 1165 }
 							},
 							["races"] = HORDE_ONLY,
 							["g"] = {
@@ -321,7 +321,7 @@ _.Zones =
 						{	-- Trader Haw'li
 							["npcID"] = 129597, 	-- Trader Haw'li
 							["coords"] = {
-								{ 37.81, 14.72 }
+								{ 37.81, 14.72, 1165 }
 							},
 							["races"] = HORDE_ONLY,
 							["g"] = {
@@ -342,7 +342,7 @@ _.Zones =
 						{	-- Trader Nog [H]
 							["npcID"] = 125311,		-- Trader Nog
 							["coords"] = {
-								{ 57.15, 91.47 }
+								{ 57.15, 91.47, 1165 }
 							},
 							["races"] = HORDE_ONLY,
 							["g"] = {
