@@ -171,7 +171,6 @@ _.Zones =
 										i(158060),	-- Shoalbreach Pauldrons
 										i(158054),	-- Shoalbreach Breastplate
 									},
-									["description"] = "This cache comes from any WQ and any emissary, but will be found in ATT under Zandalari Empire or  Proudmore Admiralty.  Honorbound and 7th Legion pieces come strictly from their respective faction's emissaries",
 								}),
 							},
 							["qg"] = 131287,	-- Natal'hakata

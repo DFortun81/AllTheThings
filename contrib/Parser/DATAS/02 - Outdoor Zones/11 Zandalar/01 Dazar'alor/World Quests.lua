@@ -302,7 +302,6 @@ _.Zones =
 								i(159424),	-- Desert Guardian's Breastplate
 								i(159416),	-- Harpooner's Plate Cuirass
 							}),
-							["description"] = "If the tag shows \"Heroic\" on the cache when you look at the World Quest then it will provide a piece of dungeon gear.",
 							--["modID"] = 2,
 							["ilvl"] = 325,
 							["bonusID"] = 4818,

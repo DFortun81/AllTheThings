@@ -26,7 +26,6 @@ _.Zones =
 										i(163405),	-- 7th Legionnaire's Shoulderplates
 										i(163418),	-- 7th Legionnaire's Chestguard
 									},
-									["description"] = "This cache comes from any WQ and any emissary, but will be found in ATT under Zandalari Empire or  Proudmore Admiralty.  Honorbound and 7th Legion pieces come strictly from their respective faction's emissaries",
 								}),
 								i(163891),	-- 7th Legionnaire's Aegis
 								i(163884),	-- 7th Legionnaire's Battle Hammer
@@ -168,7 +167,6 @@ _.Zones =
 										i(158060),	-- Shoalbreach Pauldrons
 										i(158054),	-- Shoalbreach Breastplate
 									},
-									["description"] = "This cache comes from any WQ and any emissary, but will be found in ATT under Zandalari Empire or Proudmore Admiralty.  Honorbound and 7th Legion pieces come strictly from their respective faction's emissaries",
 								}),
 							},
 							["isDaily"] = true,
