@@ -27,7 +27,7 @@ _.Zones =
 										i(163453),	-- Honorbound Centurion's Shoulderplates
 										i(163459),	-- Honorbound Centurion's Breastplate
 									},
-									["description"] = "This cache comes from any WQ and any emissary, but will be found in ATT under Zandalari Empire / Proudmore Admiralty.  Honorbound and 7th Legion pieces come strictly from their respective faction's emissaries",
+									["description"] = "This cache comes from any WQ and any emissary, but will be found in ATT under Zandalari Empire or Proudmore Admiralty.  Honorbound and 7th Legion pieces come strictly from their respective faction's emissaries",
 								}),
 								i(163878),	-- Honorbound Barrier
 								i(163870),	-- Honorbound Bonebreaker
@@ -171,7 +171,7 @@ _.Zones =
 										i(158060),	-- Shoalbreach Pauldrons
 										i(158054),	-- Shoalbreach Breastplate
 									},
-									["description"] = "This cache comes from any WQ and any emissary, but will be found in ATT under Zandalari Empire / Proudmore Admiralty.  Honorbound and 7th Legion pieces come strictly from their respective faction's emissaries",
+									["description"] = "This cache comes from any WQ and any emissary, but will be found in ATT under Zandalari Empire or  Proudmore Admiralty.  Honorbound and 7th Legion pieces come strictly from their respective faction's emissaries",
 								}),
 							},
 							["qg"] = 131287,	-- Natal'hakata
