@@ -35,7 +35,7 @@ _.GroupFinder =
 				   i(113785),	-- Kyparite Girdle
 				   i(113729),	-- Kyparite Headguard
 				   i(113728),	-- Kyparite Helm*
-				   i(113783),	-- Kyparite Stompers
+				   i(113783),	-- Kyparite Stompers*
 				   i(113750),	-- Kyparite Shoulderguards*
 				   i(113735),	-- Drifting Cloud Necklace*
 				   i(113755),	-- Ring of Flowing Water*
