@@ -151,109 +151,57 @@ _.Zones =
 							},
 						}),
 						crit(3, {	-- Splintertree's Demonic Defense
-							{	-- Ashenvale Outrunners
-								["questID"] = 6503,
-								["qg"] = 12867,	-- Kuray'bin
-								["coord"] = { 73.5, 60.8 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Dead Elves Walking
-								["questID"] = 13801,
-								["qg"] = 12724,	-- Pixel
-								["coord"] = { 73.8, 62.4 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13803,	-- Blood of the Weak
-							},
-							{	-- Destroy the Legion
-								["questID"] = 26448,
-								["qg"] = 17355,	-- Valusha
-								["coord"] = { 73.1, 60.1 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Diabolical Planss
-								["itemID"] = 23798,
-								["questID"] = 26447,	-- Diabolical Plans
-								["qgs"] = {
-									11697,	-- Mannoroc Lasher
-									6115,	-- Roaming Felguard
-									6073,	-- Searing Felguard
+							["groups"] = {
+								{	-- Playing with Felfire
+									["questID"] = 13730,
+									["groups"] = {
+										i(56649),	-- Folly's Edge
+										i(56650),	-- Felfire-Tainted Vest
+										i(56651),	-- Legguards of Abandoned Virtue
+										i(131302),	-- Felfire-Scorched Chesteguard
+										i(156958),	-- Scepter of Questionable Decision Making
+									},
+									["qg"] = 33726,	-- Splintertree Demolisher
+									["coord"] = { 73.3, 62.1 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 13803,	-- Blood of the Weak
 								},
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Never Again!
-								["questID"] = 26449,
-								["groups"] = {
-									i(24119),	-- Band of Argus
-									i(24120),	-- Seal of Argus
-									i(24118),	-- Signet of Argus
+								{	-- Tell No One!
+									["questID"] = 13751,
+									["qg"] = 33726,	-- Sprintertree Demolisher
+									["coord"] = { 73.3, 62.1 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 13730,	-- Playing With Felfire
 								},
-								["qg"] = 17355,	-- Valusha
-								["coord"] = { 73.1, 60.1 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 26447,	-- Diabolical Plans
-							},
-							{	-- Satyr Horns
-								["questID"] = 6441,
-								["qg"] = 12724,	-- Pixel
-								["coord"] = { 73.8, 62.4 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 26449,	-- Never Again!
-							},
-							{	-- Demon Duty
-								["questID"] = 13806,
-								["qg"] = 11820,	-- Locke Okarr
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 26449,	-- Never Again!
-							},
-							-- do the entire quest chain below first. Ignore above
-							{	-- Playing with Felfire (first)
-								["questID"] = 13730,
-								["groups"] = {
-									i(56649),	-- Folly's Edge
-									i(56650),	-- Felfire-Tainted Vest
-									i(56651),	-- Legguards of Abandoned Virtue
-									i(131302),	-- Felfire-Scorched Chesteguard
-									i(156958),	-- Scepter of Questionable Decision Making
+								{	-- Dirty Deeds
+									["questID"] = 13797,
+									["qg"] = 33760,	-- Durak
+									["coord"] = { 72.2, 57.6 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 13751,	-- Tell No One!
 								},
-								["qg"] = 33726,	-- Splintertree Demolisher
-								["coord"] = { 73.3, 62.1 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13803,	-- Blood of the Weak
-							},
-							{	-- Tell No One!
-								["questID"] = 13751,
-								["qg"] = 33726,	-- Sprintertree Demolisher
-								["coord"] = { 73.3, 62.1 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13730,	-- Playing With Felfire
-							},
-							{	-- Dirty Deeds
-								["questID"] = 13797,
-								["qg"] = 33760,	-- Durak
-								["coord"] = { 72.2, 57.6 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13751,	-- Tell No One!
-							},
-							{	-- Rain of Destruction
-								["questID"] = 13798,
-								["groups"] = {
-									i(56711),	-- Impish Blade
-									i(56712),	-- Accursed Mace
-									i(56713),	-- Durak's Wand
-									i(56714),	-- Band of Foul Strength
+								{	-- Rain of Destruction
+									["questID"] = 13798,
+									["groups"] = {
+										i(56711),	-- Impish Blade
+										i(56712),	-- Accursed Mace
+										i(56713),	-- Durak's Wand
+										i(56714),	-- Band of Foul Strength
+									},
+									["qg"] = 33760,	-- Durak
+									["coord"] = { 72.2, 57.6 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 13797,	-- Dirty Deeds
 								},
-								["qg"] = 33760,	-- Durak
-								["coord"] = { 72.2, 57.6 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13797,	-- Dirty Deeds
+								{	-- All Apologies
+									["questID"] = 13841,
+									["qg"] = 33726,	-- Splintertree Demolisher
+									["coord"] = { 73.3, 62.1 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 13798,	-- Rain of Destruction
+								},
 							},
-							{	-- All Apologies
-								["questID"] = 13841,
-								["qg"] = 33726,	-- Splintertree Demolisher
-								["coord"] = { 73.3, 62.1 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13798,	-- Rain of Destruction
-							},
+							["description"] = "Final quest is \"Dread Head Redemption\" in Orgrimmar.",
 						}),
 						crit(4, {	-- Zoram'gar Outpost
 							{	-- Keep the Fires Burning
@@ -481,6 +429,12 @@ _.Zones =
 						["qg"] = 34358,	-- Avrus the Redeemed
 						["sourceQuest"] = 13922,	-- In the Hands of the Perverse
 					}),
+					{	-- Ashenvale Outrunners
+						["questID"] = 6503,
+						["qg"] = 12867,	-- Kuray'bin
+						["coord"] = { 73.5, 60.8 },
+						["races"] = HORDE_ONLY,
+					},
 					qa(13646, {	-- Astranaar Bound
 						["qg"] = 33445,	-- Sentinel Avana
 						["sourceQuest"] = 26464,	-- The Lost Gem
@@ -563,6 +517,13 @@ _.Zones =
 						["qg"] = 3691,	-- Raene Wolfrunner
 						["sourceQuest"] = 26479,	-- Return to Raene
 					}),
+					{	-- Dead Elves Walking
+						["questID"] = 13801,
+						["qg"] = 12724,	-- Pixel
+						["coord"] = { 73.8, 62.4 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13803,	-- Blood of the Weak
+					},
 					qa(13935, {	-- Defend the Tree!
 						["groups"] = {
 							i(56670),	-- Raynewood Shield
@@ -577,9 +538,31 @@ _.Zones =
 						["qg"] = 33204,	-- Evenar Stillwhisper
 						["sourceQuest"] = 26473,	-- Bathran's Hair
 					}),
+					{	-- Demon Duty
+						["questID"] = 13806,
+						["qg"] = 11820,	-- Locke Okarr
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 26449,	-- Never Again!
+					},
+					{	-- Destroy the Legion
+						["questID"] = 26448,
+						["qg"] = 17355,	-- Valusha
+						["coord"] = { 73.1, 60.1 },
+						["races"] = HORDE_ONLY,
+					},
 					qa(26444, {	-- Destroy the Legion
 						["qg"] = 17303,	-- Vindicator Vedaar
 					}),
+					{	-- Diabolical Plans
+						["itemID"] = 23798,
+						["questID"] = 26447,	-- Diabolical Plans
+						["qgs"] = {
+							11697,	-- Mannoroc Lasher
+							6115,	-- Roaming Felguard
+							6073,	-- Searing Felguard
+						},
+						["races"] = HORDE_ONLY,
+					},
 					i(23777, {	-- Diabolical Plans
 						qa(26443, {	-- Diabolical Plans
 							["qgs"] = {
@@ -720,6 +703,18 @@ _.Zones =
 					qa(13602, {	-- Naga of the Strand
 						["qg"] = 3845,	-- Shindrell Swiftfire
 					}),
+					{	-- Never Again!
+						["questID"] = 26449,
+						["groups"] = {
+							i(24119),	-- Band of Argus
+							i(24120),	-- Seal of Argus
+							i(24118),	-- Signet of Argus
+						},
+						["qg"] = 17355,	-- Valusha
+						["coord"] = { 73.1, 60.1 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 26447,	-- Diabolical Plans
+					},
 					qa(26445, {	-- Never Again!
 						["groups"] = {
 							i(24119),	-- Band of Argus
@@ -802,6 +797,13 @@ _.Zones =
 						["qg"] = 3846,	-- Talen
 						["sourceQuest"] = 26465,	-- The Ancient Statuettes
 					}),
+					{	-- Satyr Horns
+						["questID"] = 6441,
+						["qg"] = 12724,	-- Pixel
+						["coord"] = { 73.8, 62.4 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 26449,	-- Never Again!
+					},
 					qa(26469, {	-- Satyr Slaying!
 						["qg"] = 3901,	-- Illiyana
 						["sourceQuest"] = 26468,	-- The Branch of Cenarius
