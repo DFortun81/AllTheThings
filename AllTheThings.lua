@@ -1124,7 +1124,10 @@ local function GetCachedSearchResults(search, method, ...)
 					if GetDataMember("ShowDescriptions") then
 						for i,j in ipairs(group) do
 							if j.description then
-								tinsert(listing, 1, "|cff66ccff" .. j.description .. "|r");
+								local d = "|cff66ccff" .. j.description .. "|r";
+								if not contains(listing, d) then
+									tinsert(listing, 1, d);
+								end
 							end
 						end
 					end
