@@ -4879,7 +4879,7 @@ app.BaseNPC = {
 			else
 				return L("NPC_ID_NAMES")[t.npcID];
 			end
-		elseif key == "description" then
+		elseif key == "title" then
 			if t.npcID > 0 then return NPCTitlesFromID[t.npcID]; end
 		elseif key == "link" then
 			return (t.achievementID and GetAchievementLink(t.achievementID));
