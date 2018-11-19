@@ -573,16 +573,21 @@ _.Zones =
 								},
 							},
 						},
-						n(145837, {	-- Violet Shadowmend
+						{	-- Violet Shadowmend
+							["npcID"] = 145837,	-- Violet Shadowmend
 							["coords"] = {
 								{ 51.64, 57.81, 862 },
 							},
-							["groups"] = {
-								i(139775),	-- Alliance Enthusiast
-								i(142379),	-- Dutiful Squire
-							},
 							["races"] = HORDE_ONLY,
-						}),
+							["g"] = {
+								{	-- Dutiful Squire
+									["itemID"] = 142380,	-- Dutiful Squire
+								},
+								{	-- Horde Fanatic
+									["itemID"] = 139776,	-- Horde Fanatic
+								},
+							},
+						},
 					},
 				}),
 			},
