@@ -2973,8 +2973,10 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 				local left, right = strsplit("/", text);
 				if right then
 					self:AddDoubleLine(left, right);
+				elseif string.find(left, " -> ") then
+					self:AddLine(left);
 				else
-					self:AddLine(left, 1, 1, 1, 1);
+					self:AddLine(left, nil, nil, nil, 1);
 				end
 			end
 		end
