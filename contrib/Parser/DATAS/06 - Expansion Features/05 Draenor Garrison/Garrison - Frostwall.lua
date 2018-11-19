@@ -4827,6 +4827,7 @@ _.ExpansionFeatures =
 							i(45022),	-- Argent Gruntling
 						}),
 					}),
+					--[[	Moved to Holidays > Trial of Style with the other vendors
 					n(-115, {	-- Storehouse
 						n(85289, {	-- Warpweaver Farshlah <Transmogrifier>
 						un(22, i(151134, { -- Trial of Style Token
@@ -4952,6 +4953,7 @@ _.ExpansionFeatures =
 						})),
 					}),
 				}),
+				]]--
 	--[[
 					n(-116, { 	 -- Tailoring Emporium
 						nh(79864, { -- 	Warra the Weaver 

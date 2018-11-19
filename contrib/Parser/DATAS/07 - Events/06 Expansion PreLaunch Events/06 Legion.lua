@@ -814,8 +814,16 @@ _.WorldEvents =
 					n(-2, { -- Vendors
 						n(109912, { -- Captive Wyrmtongue <Reluctant 'Quartermaster'>
 							un(7, i(136924)), -- Felbat Pup Pet
-							un(3, i(138188)), -- Demon Commander's Drape
 							un(3, i(141604)), -- Glaive of the Fallen
+							un(1, i(142526)), -- Glaive of the Fallen
+							un(3, i(138160)), -- Infernal Cord
+							un(3, i(139172)), -- Legionnaire's Fel Pendant
+							un(3, i(138188)), -- Demon Commander's Drape
+							un(3, i(138162)), -- Legion Bound Ring
+							un(3, i(139173)), -- Nether Twisted Band
+							un(3, i(138170)), -- Felstalker Spine
+							un(3, i(138171)), -- Inquisitor's Talisman
+							un(3, i(138161)), -- Mo'arg Clan Token
 							un(3, i(139170, { -- Ensemble: Fel-Infused Cloth Armor
 								["groups"] = {
 									un(3, i(138184)), -- Fel-Infused Helm

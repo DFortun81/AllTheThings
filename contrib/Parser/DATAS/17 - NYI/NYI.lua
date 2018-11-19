@@ -139,7 +139,6 @@ _.NeverImplemented =
 	
 	un(1, i(166699)),	-- Desert Rucksack
 	un(1, i(150715)), -- Illidari Warglaive
-	un(1, i(142526)), -- Glaive of the Fallen
 	un(1, i(134110)), -- Hidden Helm
 	un(1, i(134111)), -- Hidden Cloak
 	un(1, i(3738)),	-- Brewing Rod

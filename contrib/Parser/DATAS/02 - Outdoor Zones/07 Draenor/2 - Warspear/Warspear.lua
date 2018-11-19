@@ -1859,6 +1859,7 @@ _.Zones =
 							i(116185),	-- War Mill, Level 2
 						},
 					}),
+					--[[	Moved to Holidays > Trial of Style with the other vendors
 					n(86395, {	-- Warpweaver Jasor <Transmogrifier>
 						un(22, i(151134, { -- Trial of Style Token
 							i(151116), -- Fashionable Undershirt
@@ -1982,6 +1983,7 @@ _.Zones =
 							},
 						})),
 					}),
+					]]--
 				}),
 			},
 			["isRaid"] = true,

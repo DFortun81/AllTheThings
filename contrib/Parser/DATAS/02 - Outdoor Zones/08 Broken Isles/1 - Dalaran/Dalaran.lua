@@ -7785,6 +7785,7 @@ _.Zones =
 					n(97012, { 	-- Wanda Chanter
 						i(47658),	-- Brimstone Igniter
 					}),
+					--[[	Moved to Holidays > Trial of Style with the other vendors
 					n(99867, { 	-- Warpweaver Tuviss (Neutral / Dalaran)
 						i(151116),	-- Fashionable Undershirt
 						{ -- Ensemble: Mana-Etched  Regalia
@@ -7842,6 +7843,7 @@ _.Zones =
 							["itemID"] = 151120
 						},
 					}),
+					]]--
 					n(107109, { -- Xur'ios <Vaultkeeper of the Void>
 						currency(1275, { -- Curious Coin
 							i(136702, { -- Formula: Soul Fibril

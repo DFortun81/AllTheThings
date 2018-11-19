@@ -4886,6 +4886,7 @@ _.ExpansionFeatures =
 							i(66080),	-- Tiny Flamefly
 						}),
 					}),
+					--[[	Moved to Holidays > Trial of Style with the other vendors
 					n(-115, {	-- Storehouse
 						n(85291, {	-- Warpweaver Tuviss <Transmogrifier>
 							un(22, i(151134, { -- Trial of Style Token
@@ -5011,6 +5012,7 @@ _.ExpansionFeatures =
 							})),
 						}),
 					}),
+					]]--
 					--[[
 					n(-116, { 		-- Tailoring Emporium
 						n(77382, { 	-- Christopher Macdonld 

@@ -150,8 +150,8 @@ _.Zones =
 						}),
 						n(92805, {	-- Z'tenga the Walker <Saberstalker Quartermaster>
 							["groups"] = {
+								i(128449),	-- Saberstalkers Tabard **Note this costs gold and not claws**
 								i(124099, { -- Blackfang Claw
-									i(128449),	-- Saberstalkers Tabard
 									i(128481),	-- Bristling Hellboar
 									i(116671),	-- Wild Goretusk
 									i(128477),	-- Savage Cub

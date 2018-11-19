@@ -46,7 +46,7 @@ _.Zones =
 									},
 								},
 							}, 
-							{	-- Bombardier Gu'gok	**Coords uncofirmed, relied on wowhead**
+							{	-- Bombardier Gu'gok
 								["npcID"] = 87597,	-- Bombardier Gu'gok
 								["questID"] = 37339,
 								["isDaily"] = true,
