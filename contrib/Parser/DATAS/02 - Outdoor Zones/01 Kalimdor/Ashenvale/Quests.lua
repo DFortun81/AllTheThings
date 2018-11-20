@@ -632,6 +632,7 @@ _.Zones =
 							i(131309),	-- Faithful Footguards
 						},
 						["qg"] = 34242,	-- Guardian Gurtar
+						["races"] = HORDE_ONLY,
 						["coord"] = { 89.5, 48.6 },
 						["sourceQuest"] = 13873,	-- Sheelah's Last Wish
 					},
