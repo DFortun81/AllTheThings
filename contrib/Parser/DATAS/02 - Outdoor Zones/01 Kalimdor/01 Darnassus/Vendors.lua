@@ -128,19 +128,54 @@ _.Zones =
 						i(8632),	-- Reins of the Spotted Frostsaber
 						i(47100),	-- Reins of the Striped Dawnsaber
 					})),
-					a(n(50307, {	-- Lord Candren <Gilneas Quartermaster>
-						i(64892),	-- Mantle of Gilneas
-						i(64893),	-- Cape of Gilneas
-						i(64894),	-- Shroud of Gilneas
-						i(64882),	-- Gilneas Tabard
-					})),
-					a(n(50305, {	-- Moon Priestess Lasara <Darnassus Quartermaster>
-						i(45579),	-- Darnassus Tabard
-						i(64887),	-- Cape of Darnassus
-						i(64888),	-- Mantle of Darnassus
-						i(64886),	-- Shroud of Darnassus
-						i(67526),	-- Darnassian Satchel
-					})),
+					{	-- Lord Candren <Gilneas Quartermaster>
+						["npcID"] = 50307,	-- Lord Candren <Gilneas Quartermaster>
+						["coords"] = {
+							{ 37.16, 47.44, 89 },	-- Darnassus
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- Gilneas Tabard
+								["itemID"] = 64882,	-- Gilneas Tabard
+							},
+							{	-- Cape of Gilneas
+								["itemID"] = 64893,	-- Cape of Gilneas
+							},
+							{	-- Mantle of Gilneas
+								["itemID"] = 64892,	-- Mantle of Gilneas
+							},
+							{	-- Shroud of Gilneas
+								["itemID"] = 64894,	-- Shroud of Gilneas
+							},
+							{	-- Gilnean Satchel
+								["itemID"] = 67532,	-- Gilnean Satchel
+							},
+						},
+					},
+					{	-- Moon Priestess Lasara <Darnassus Quartermaster>
+						["npcID"] = 50305,	-- Moon Priestess Lasara <Darnassus Quartermaster>
+						["coords"] = {
+							{ 36.17, 48.49, 89 },	-- Darnassus
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- Darnassus Tabard
+								["itemID"] = 45579,	-- Darnassus Tabard
+							},
+							{	-- Cape of Darnassus
+								["itemID"] = 64887,	-- Cape of Darnassus
+							},
+							{	-- Mantle of Darnassus
+								["itemID"] = 64888,	-- Mantle of Darnassus
+							},
+							{	-- Shroud of Darnassus
+								["itemID"] = 64886,	-- Shroud of Darnassus
+							},
+							{	-- Darnassian Satchel
+								["itemID"] = 67526,	-- Darnassian Satchel
+							},
+						},
+					},
 					na(4229, {		-- Mythrin'dir <Trade Supplies>
 						i(20854),	-- Design: Amulet of the Moon
 						i(11223),	-- Formula: Enchant Bracer - Dodge
