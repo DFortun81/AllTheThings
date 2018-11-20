@@ -3,36 +3,67 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor
-		m(63, {	-- Ashenvale
-			["groups"] = {
-				n(-228, {	-- Flight Paths
-					fp(28, {	-- Astranaar, Ashenvale
-						["coord"] = { 34.4, 48 },
-					}),
-					fp(338, {	-- Blackfathom Camp, Ashenvale
-						["coord"] = { 18.2, 20.6 },
-					}),
-					fp(167, {	-- Forest Song, Ashenvale
-						["coord"] = { 85, 43.4 },
-					}),
-					fp(350, {	-- Hellscream's Watch, Ashenvale
-						["coord"] = { 38, 42.2 },
-					}),
-					fp(356, {	-- Silverwind Refuge, Ashenvale
-						["coord"] = { 49.2, 65.2 },
-					}),
-					fp(61, {	-- Splintertree Post, Ashenvale
-						["coord"] = { 73.2, 61.6 },
-					}),
-					fp(351, {	-- Stardust Spire, Ashenvale
-						["coord"] = { 35, 72 },
-					}),
-					fp(58, {	-- Zoram'gar Outpost, Ashenvale
-						["coord"] = { 11.2, 34.4 },
-					}),
-				}),
+	{	-- Kalimdor
+		["mapID"] = 12,	-- Kalimdor
+		["g"] = {
+			{	-- Ashenvale
+				["mapID"] = 63,	-- Ashenvale
+				["g"] = {
+					{	-- Flight Paths
+						["npcID"] = -228,	-- Flight Paths
+						["g"] = {
+							{	-- Astranaar, Ashenvale
+								["flightPathID"] = 28,	-- Astranaar, Ashenvale
+								["coords"] = {
+									{ 34.41, 47.99, 63 },
+								},
+							},
+							{	-- Blackfathom Camp, Ashenvale
+								["flightPathID"] = 338,	-- Blackfathom Camp, Ashenvale
+								["coords"] = {
+									{ 18.14, 20.59, 63 },
+								},
+							},
+							{	-- Forest Song, Ashenvale
+								["flightPathID"] = 167,	-- Forest Song, Ashenvale
+								["coords"] = {
+									{ 85.08, 43.45, 63 },
+								},
+							},
+							{	-- Hellscream's Watch, Ashenvale
+								["flightPathID"] = 350,	-- Hellscream's Watch, Ashenvale
+								["coords"] = {
+									{ 38.07, 42.21, 63 },
+								},
+							},
+							{	-- Silverwind Refuge, Ashenvale
+								["flightPathID"] = 356,	-- Silverwind Refuge, Ashenvale
+								["coords"] = {
+									{ 49.31, 65.25, 63 },
+								},
+							},
+							{	-- Splintertree Post, Ashenvale
+								["flightPathID"] = 61,	-- Splintertree Post, Ashenvale
+								["coords"] = {
+									{ 73.17, 61.59, 63 },
+								},
+							},
+							{	-- Stardust Spire, Ashenvale
+								["flightPathID"] = 351,	-- Stardust Spire, Ashenvale
+								["coords"] = {
+									{ 35.02, 72.07, 63 },
+								},
+							},
+							{	-- Zoram'gar Outpost, Ashenvale
+								["flightPathID"] = 58,	-- Zoram'gar Outpost, Ashenvale
+								["coords"] = {
+									{ 11.17, 34.43, 63 },
+								},
+							},
+						},
+					},
+				},
 			},
-		}),
-	}),
+		},
+	},
 };
