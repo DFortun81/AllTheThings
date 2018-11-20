@@ -4,7 +4,7 @@ profession(773, {	-- Inscription
 			["categoryID"] = 403,	-- Merchant Orders
 			["g"] = {
 				{
-					["recipeID"] = 176513	-- Draenor Merchant Order
+					["recipeID"] = 176513,	-- Draenor Merchant Order
 					["u"] = 15,				-- Profession Training Recipe
 				}
 			}
