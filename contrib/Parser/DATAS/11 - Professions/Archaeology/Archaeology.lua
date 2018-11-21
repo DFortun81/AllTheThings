@@ -8,6 +8,12 @@ profession(794, {	-- Archaeology
 			sp(168331, { i(117382) }),	-- Beakbreaker of Terokk
 		}),
 	}),
+	i(64657, {
+		["groups"] = {
+			i(27538),	-- Recipe: Vial of the Sands
+		},
+		["requireSkill"] = 171,	-- Alchemy,
+	}),
 	currency(1174, {	-- Demonic
 		n(-17, {	-- Quests
 			qw (q(41157, {	-- Corrupted Studies

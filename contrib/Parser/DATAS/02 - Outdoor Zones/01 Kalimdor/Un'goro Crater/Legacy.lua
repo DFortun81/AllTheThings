@@ -23,6 +23,14 @@ _.Zones =
 								un(2, i(11919)),	-- Cragplate Greaves
 								un(2, i(11918)),	-- Grotslab Gloves
 							})),
+							un(40, q(5150, {
+								["groups"] = {
+									un(2, i(15699, {
+										un(2, i(13481)),	-- Recipe: Elixir of Brute Force
+									})),
+								},
+								["repeatable"] = true,
+							})),
 							un(40, q(3962, {	-- It's Dangerous to Go Alone
 								un(2, i(11905)),	-- Linken's Boomerang
 								un(2, i(11902)),	-- Linken's Sword of Mastery

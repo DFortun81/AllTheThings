@@ -1083,6 +1083,11 @@ _.Zones =
 							7035,	-- Firegut Brute
 						},
 					}),
+					un(2, i(13476, {	-- Recipe: Mighty Rage Potion
+						["crs"] = {
+							7027,	-- Blackrock Slayer
+						},
+					})),
 				}),
 				n(-40, {	-- Legacy
 					n(-17, {	-- Quests (Legacy)

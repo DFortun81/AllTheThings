@@ -1327,6 +1327,18 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {
+						n(0, {	-- Zone Drops
+							i(13479, {
+								["crs"] = {
+									9451,	-- Scarlet Archmage
+									9450,	-- Scarlet Curate
+									9452,	-- Scarlet Enchanter
+									9449,	-- Scarlet Cleric
+									15162,	-- Scarlet Inquisitor
+								},
+								["u"] = 2,
+							}),
+						}),
 						n(-17, {	-- Quests (Legacy)
 							un(40, qr(q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
 								un(2, i(22657)),	-- Amulet of the Dawn

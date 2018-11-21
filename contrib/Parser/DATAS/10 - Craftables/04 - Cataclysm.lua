@@ -4,6 +4,32 @@
 _.Craftables =
 {
 	tier(4, { -- Cataclysm
+		n(-180, {	-- Alchemy
+			n(-160, { -- Mounts
+				i(65891), -- Vial of the Sands
+			}),
+			i(58488, {	-- Potion of Treasure Finding
+				["description"] = "Drink this potion if you ever go out to farm Cataclysm mobs/quests. Any mob in those zones can drop a Tiny Treasure Chest, due to the demand for the crafting reagents within, this may make your time quite profitable.",
+				["groups"] = {
+					i(67539, {	-- Tiny Treasure Chest
+						i(53010),	-- Embersilk Cloth
+						i(52183),	-- Pyrite Ore
+						i(52185),	-- Elementium Ore
+						i(52328),	-- Volatile Air
+						i(52327),	-- Volatile Earth
+						i(52326),	-- Volatile Water
+						i(52325),	-- Volatile Fire
+						i(52329),	-- Volatile Life
+					}),
+				},
+			}),
+			filter(53, {	-- Trinkets
+				i(58483),	-- Lifebound Alchemist Stone
+				i(68776),	-- Quicksilver Alchemist Stone
+				i(68777),	-- Vibrant Alchemist Stone
+				i(68775),	-- Volatile Alchemist Stone
+			}),
+		}),
 		n(-181, { -- Blacksmithing
 			n(-319, { 	-- Weapons
 				i(70155),	-- Brainsplinter

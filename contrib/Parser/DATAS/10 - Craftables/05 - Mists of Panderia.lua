@@ -4,6 +4,50 @@
 _.Craftables =
 {
 	tier(5, { -- Mists of Pandaria
+		n(-180, {	-- Alchemy
+--[[	20.Nov.2018 - automation should handle discovery. Leaving this here incase we change our mind later
+			n(-37, {	-- Discovery
+				["description"] = "These recipes can be discovered randomly by crafting Mists of Pandaria potions, elixirs, flasks or transmutations.",
+				["groups"] = {
+					recipe(114774),	-- Darkwater Potion
+					recipe(114761),	-- Desecrated Oil
+					recipe(114763),	-- Elixir of Mirrors
+					recipe(114764),	-- Elixir of Peace
+					recipe(114762),	-- Elixir of Perfection
+					recipe(114756),	-- Elixir of Weaponry
+					recipe(114759),	-- Elixir of the Rapids
+					recipe(114772),	-- Flask of Falling Leaves
+					recipe(114769),	-- Flask of Spring Blossoms
+					recipe(114770),	-- Flask of the Earth
+					recipe(114771),	-- Flask of the Warm Sun
+					recipe(114773),	-- Flask of Winter's Bite
+					recipe(114754),	-- Mad Hozen Elixir
+					recipe(114755),	-- Mantid Elixir
+					recipe(114775),	-- Master Mana Potion
+					recipe(114758),	-- Monk's Elixir
+					recipe(114782),	-- Potion of Focus
+					recipe(114760),	-- Potion of Mogu Power
+					recipe(114779),	-- Potion of Luck
+					recipe(114757),	-- Potion of the Jade Serpent
+					recipe(114753),	-- Potion of the Mountains
+					recipe(130326),	-- Riddle of Steel
+					recipe(114777),	-- Transmute: Imperial Amethyst
+					recipe(114780),	-- Transmute: Living Steel
+					recipe(114781),	-- Transmute: Primal Diamond
+					recipe(114784),	-- Transmute: Primordial Ruby
+					recipe(114766),	-- Transmute: River's Heart
+					recipe(114778),	-- Transmute: Sun's Radiance
+					recipe(114783),	-- Transmute: Trillium Bar
+					recipe(114776),	-- Transmute: Vermilion Onyx
+					recipe(114767),	-- Transmute: Wild Jade
+					recipe(114765),	-- Virmen's Bite
+				},
+			}),
+]]--
+			filter(53, {	-- Trinkets
+				i(75274),	-- Zen Alchemist Stone
+			}),
+		}),
 		n(-181, { -- Blacksmithing
 			n(-319, { -- Weapons
 				i(94587, {	-- Fireguard, Reborn

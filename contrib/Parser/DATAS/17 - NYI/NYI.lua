@@ -41,6 +41,23 @@ _.NeverImplemented =
 	un(1, i(47023)),	-- Design: Deft Ametrine (used version is 47020)
 	un(1, i(2556)),     -- Recipe: Elixir of Tongues
 	un(1, i(5641)),		-- Recipe: Cowardly Flight Potion
+	un(1, i(34481)),	-- Recipe: Mad Alchemist's Potion (Recipe was added to trainers instead of a usable item)
+	un(1, i(71955)),	-- Recipe: Transmute Deepholm Iolite
+	un(1, i(71956)),	-- Recipe: Transmute Elven Peridot
+	un(1, i(71957)),	-- Recipe: Transmute Lightstone
+	un(1, i(71958)),	-- Recipe: Transmute Lava Coral
+	un(1, i(71959)),	-- Recipe: Transmute Shadow Spinel
+	un(1, i(71960)),	-- Recipe: Transmute Queen's Garnet
+	un(1, i(112025)),	-- Recipe: UNUSED
+	un(1, i(112032)),	-- Recipe: UNUSED
+	un(1, i(113625)),	-- Recipe: UNUSED
+	un(1, i(113626)),	-- Recipe: UNUSED
+	un(1, i(112049)),	-- Recipe: Alchemical Catalyst - Fireweed
+	un(1, i(112050)),	-- Recipe: Alchemical Catalyst - Flytrap
+	un(1, i(112051)),	-- Recipe: Alchemical Catalyst - Starflower
+	un(1, i(112052)),	-- Recipe: Alchemical Catalyst - Arrowbloom
+	un(1, i(112053)),	-- Recipe: Alchemical Catalyst - Orchid
+	un(1, i(112054)),	-- Recipe: Alchemical Catalyst - Lotus
 	un(1, i(143752)),	-- Sound Test Mount
 	un(1, i(37598)),	-- Swift Zhevra OLD
 	un(1, i(44557)),	-- Swift Ebonweave Carpet (NOT IN GAME)

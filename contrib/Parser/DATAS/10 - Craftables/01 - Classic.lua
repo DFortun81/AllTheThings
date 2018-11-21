@@ -4,6 +4,11 @@
 _.Craftables =
 {
 	tier(1, { -- Classic
+		n(-180, {	-- Alchemy
+			filter(53, {	-- Trinket
+				i(9149),	-- Philosopher's Stone
+			}),
+		}),
 		n(-181, { -- Blacksmithing
 			n(-319, { 	-- Weapons
 				un(8, i(12776)),	-- Enchanted Battlehammer
@@ -220,6 +225,7 @@ _.Craftables =
 			i(11289),	-- Lesser Mystic Wand
 		}),
 		n(-183, { -- Engineering
+			i(10644),	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
 			i(18282),	-- Core Marksman Rifle
 			i(16004),	-- Dark Iron Rifle
 			i(4369),	-- Deadly Blunderbuss

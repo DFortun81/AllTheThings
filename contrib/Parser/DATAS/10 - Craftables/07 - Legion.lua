@@ -4,6 +4,57 @@
 _.Craftables =
 {
 	tier(7, { -- Legion
+		n(-180, {	-- Alchemy
+--[[	20.Nov.2018 - automation should handle discovery. Leaving this here incase we change our mind later
+			n(-37, {	-- Discovery
+				["description"] = "These recipes can be discovered randomly by using Wild Transmutation.",
+				["groups"] = {
+					recipe(213257),	-- Transmute: Blood of Sargeras
+					recipe(213252),	-- Transmute: Cloth to Herbs
+					recipe(213249),	-- Transmute: Cloth to Skins
+					recipe(213254),	-- Transmute: Fish to Gems
+					recipe(213255),	-- Transmute: Meat to Pants
+					recipe(213256),	-- Transmute: Meat to Pet
+					recipe(213248),	-- Transmute: Ore to Cloth
+					recipe(213251),	-- Transmute: Ore to Herbs
+					recipe(213253),	-- Transmute: Skins to Herbs
+				}
+			}),
+]]--
+			filter(53, {	-- Trinkets
+				i(151607),	-- Astral Alchemist Stone
+				i(127842),	-- Infernal Alchemist Stone
+			}),
+			n(-25, { -- Pet Battles
+				i(137599, { -- Pulsating Sac
+					i(137608, { -- Growling Sac
+						i(44822),	-- Albino Snake
+						i(11023),	-- Ancona Chicken
+						i(10360),	-- Black Kingsnake
+						i(29958),	-- Blue Dragonhawk Hatchling
+						i(70160),	-- Crimson Lasher
+						i(8501),	-- Hawk Owl
+						i(120051),	-- Kaliri Hatchling
+						i(29363),	-- Mana Wyrmling
+						i(129826),	-- Nursery Spider
+						i(48120),	-- Obsidian Hatchling
+						i(29902),	-- Red Moth Egg
+						i(136905),	-- Ridgeback Piglet
+						i(136908),	-- Thaumaturgical Piglet
+						i(139789),	-- Transmutant
+						i(29903),	-- Yellow Moth Egg
+					}),
+				}),
+			}),
+			spell(213255, { -- Transmute: Meat to Pants
+				i(137600, { -- Pile of Pants
+					i(139393), -- Fizzy Fleece Leggings
+					i(139394), -- Parachute Pants
+					i(139392), -- Greaves of Ten Thousand Links
+					i(139395), -- Reverbium-Flecked Legplates
+				}),
+			}),
+		}),
 		n(-181, { -- Blacksmithing
 			i(146667),	-- Rethu's Incessant Courage
 			i(123913),	-- Demonsteel Helm

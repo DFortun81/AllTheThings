@@ -6452,6 +6452,32 @@ _.Zones =
 						i(39493),	-- Heroes' Frostfire Leggings
 						i(39491),	-- Heroes' Frostfire Circlet
 					}),
+					n(92457, {	-- Patricia Egan <Alchemy Supplier>
+						["groups"] = {
+							i(127898),	-- Recipe: Ancient Healing Potion (Rank 1)
+							i(127917),	-- Recipe: Ancient Healing Potion (Rank 2)
+							i(127899),	-- Recipe: Ancient Mana Potion (Rank 1)
+							i(127900),	-- Recipe: Ancient Rejuvenation Potion (Rank 1)
+							i(127903),	-- Recipe: Avalanche Elixir (Rank 1)
+							i(127901),	-- Recipe: Draught of Raw Magic (Rank 1)
+							i(127914),	-- Recipe: Flask of Ten Thousand Scars (Rank 1)
+							i(127913),	-- Recipe: Flask of the Countless Armies (Rank 1)
+							i(127912),	-- Recipe: Flask of the Seventh Demon (Rank 1)
+							i(127911),	-- Recipe: Flask of the Whispered Pact (Rank 1)
+							i(127906),	-- Recipe: Infernal Alchemist Stone (Rank 1)
+							i(127910),	-- Recipe: Leytorrent Potion (Rank 1)
+							i(127907),	-- Recipe: Potion of Deadly Grace (Rank 1)
+							i(127908),	-- Recipe: Potion of the Old War (Rank 1)
+							i(160664),	-- Recipe: Silvery Salve
+							i(127904),	-- Recipe: Skaggldrynk (Rank 1)
+							i(127905),	-- Recipe: Skystep Potion (Rank 1)
+							i(127915),	-- Recipe: Spirit Cauldron (Rank 1)
+							i(127902),	-- Recipe: Sylvan Elixir (Rank 1)
+							i(127909),	-- Recipe: Unbending Potion (Rank 1)
+							i(128209),	-- Recipe: Wild Transmutation (Rank 1)
+						},
+						["coord"] = { 42.2, 32.3 },
+					}),
 					n(96978, { 	-- Rafael Langrom <Leather Armor Merchant>
 						a(i(48102)),	-- Malfurion's Headpiece of Conquest
 						a(i(48129)),	-- Malfurion's Robe of Conquest

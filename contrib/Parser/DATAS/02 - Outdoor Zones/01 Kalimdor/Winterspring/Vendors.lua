@@ -12,6 +12,7 @@ _.Zones =
 					}),
 					n(11188, {		-- Evie Whirlbrew <Alchemy Supplies>
 						i(20013),	-- Recipe: Living Action Potion
+						un(2, i(13480)),	-- Recipe: Major Healing Potion
 					}),
 					n(11187, {		-- Himmik <Food & Drink>
 						i(16110),	-- Recipe: Monster Omelet

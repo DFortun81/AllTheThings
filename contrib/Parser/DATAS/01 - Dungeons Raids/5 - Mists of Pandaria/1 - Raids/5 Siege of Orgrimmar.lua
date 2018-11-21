@@ -8,6 +8,15 @@ _.Instances =
 		["groups"] = {
 			inst(369, { 	-- Siege of Orgrimmar
 				["groups"] = {
+					n(-2, {	-- Vendors
+						n(5643, {
+							["groups"] = {
+								i(5643),	-- Recipe: Great Rage Potion
+								i(5640),	-- Recipe: Rage Potion
+							},
+							["races"] = HORDE_ONLY,
+						}),
+					}),
 					d(17, {	-- LFR
 						["groups"] = {
 							n(-1, {		-- Shared Boss Loot

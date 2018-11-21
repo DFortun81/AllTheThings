@@ -650,6 +650,11 @@ _.Zones =
 				}),
 				n(-40,  {	-- Legacy
 					["groups"] = {
+						n(-2, {
+							n(2481, {	-- Bliztik
+								un(2, i(6068)),	-- Recipe: Shadow Oil
+							}),
+						}),
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(231, {	-- A Daughter's Love
 								un(2, i(2000)),	-- Archeus

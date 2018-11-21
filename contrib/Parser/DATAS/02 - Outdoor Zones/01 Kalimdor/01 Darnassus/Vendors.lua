@@ -278,6 +278,7 @@ _.Zones =
 					na(4226, {		-- Ulthir <Alchemy Supplies>
 						i(5642),	-- Recipe: Free Action Potion
 						i(5643),	-- Recipe: Great Rage Potion
+						un(2, i(13477)),	-- Recipe: Superior Mana Potion
 					}),
 					a(n(4228, {		-- Vaean <Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil

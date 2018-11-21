@@ -187,6 +187,7 @@ _.Zones =
 					}),
 					n(4610, {	-- Algernon <Alchemy Supplies>
 						i(9301),	-- Recipe: Elixir of Shadow Power
+						un(2, i(13477)),	-- Recipe: Superior Mana Potion
 					}),
 					n(4573, {	-- Armand Cromwell <Fishing Trainer>
 						ach(5850, {	-- Fish or Cut Bait: Undercity

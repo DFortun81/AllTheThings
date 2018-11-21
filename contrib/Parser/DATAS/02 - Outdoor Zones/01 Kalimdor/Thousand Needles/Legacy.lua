@@ -8,6 +8,14 @@ _.Zones =
 			["groups"] = {
 				n(-40, {	-- Legacy
 					["groups"] = {
+						n(-2, {	-- Vendors
+							n(4878, {	-- Montarr
+								["groups"] = {
+									un(2, i(6068)),	-- Recipe: Shadow Oil
+								},
+								["races"] = HORDE_ONLY,
+							}),
+						}),
 						n(-17, {	-- Quests (Legacy)
 							un(40, qh(4904, {	-- Free at Last
 								un(2, i(15469)),	-- Windsong Cinch

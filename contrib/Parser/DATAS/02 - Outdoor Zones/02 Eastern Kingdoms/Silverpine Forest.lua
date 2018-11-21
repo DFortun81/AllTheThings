@@ -750,6 +750,9 @@ _.Zones =
 								un(2, i(3457)),	-- Stamped Trousers
 								un(2, i(3458)),	-- Rugged Mail Gloves
 							})),
+							un(40, qh(429, {	-- Wild Hearts
+								un(2, i(4597)),	-- Recipe: Discolored Healing Potion
+							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							nh(3578, { 	-- Ambermill Miner

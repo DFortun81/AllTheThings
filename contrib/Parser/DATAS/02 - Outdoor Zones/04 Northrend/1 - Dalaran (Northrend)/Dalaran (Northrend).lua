@@ -1560,7 +1560,6 @@ _.Zones =
 					qa( 13473),	-- Candy Bucket
 					q(13472),	-- Candy Bucket
 					q(13463),	-- Candy Bucket
-					q(14151),	-- Cardinal Ruby
 					q(13272),	-- Cloth Scavenging
 					q(13834),	-- Dangerously Delicious
 					q(13836),	-- Disarmed!
@@ -1581,6 +1580,15 @@ _.Zones =
 					q(24590),	-- Lord Marrowgar Must Die!
 					q(8867),	-- Lunar Fireworks
 --]]
+					{
+						["questID"] = 14151,	-- Cardinal Ruby
+						["groups"] = {
+							recipe(66659),	-- Transmute: Cardinal Ruby
+						},
+						["qg"] = 28703,	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
+						["coord"] = { 42.4, 32.0 },
+						["description"] = "This quest is currently broken. Ticket a GM and they can autocomplete the quest for you to get you the recipe.\n\nNOTE FOR BLUES: Please fix this so that we stop bugging Customer Support.\n  - Crieve",
+					},
 					q(12853, {	-- Luxurious Getaway!
 						["qg"] = 30490,	-- Rin Duoctane
 						["coord"] = { 31.2, 49.6 },

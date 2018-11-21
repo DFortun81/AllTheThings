@@ -4,6 +4,21 @@
 _.Craftables =
 {
 	tier(6, { -- Warlords of Draneor
+		n(-180, {	-- Alchemy
+			filter(53, {	-- Trinkets
+				i(109262),	-- Draenic Philosopher's Stone
+				i(122601),	-- Stone of Wind
+				i(122602),	-- Stone of the Earth
+				i(122603),	-- Stone of the Waters
+				i(122604),	-- Stone of Fire
+				i(128158, {	-- Wildswater
+					i(128023),	-- Stone of the Wilds
+				}),
+				i(128159, {	-- Elemental Distillate
+					i(128024),	-- Stone of the Elements
+				}),
+			}),
+		}),
 		n(-181, { -- Blacksmithing
 			n(-319, { -- Weapons
 				WOD_CRAFTED_ITEM(116647), -- Steelforged Shield
