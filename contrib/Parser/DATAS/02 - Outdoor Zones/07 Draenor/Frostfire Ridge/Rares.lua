@@ -201,14 +201,20 @@ _.Zones =
 									i(111530),	-- Giantstalker's Guile
 								},
 							},
-							{	-- Gibblette the Cowardly	**Coords uncofirmed, relied on wowhead**
+							{	-- Gibblette the Cowardly
 								["npcID"] = 87352,	-- Gibblette the Cowardly
 								["questID"] = 37380,
-								["coord"] = { 66.6, 25.4 },
+								["coords"] = {
+									{ 66.57, 25.54, 525},
+								},
 								["isDaily"] = true,
-								["g"] = {	
-									i(119349), 	-- Craven Coward's Cloak
-									i(119180), 	-- Goren "Log" Roller Toy
+								["g"] = {
+									{	-- Craven Coward's Cloak
+										["itemID"] = 119349,	-- Craven Coward's Cloak
+									},
+									{	-- Goren "Log" Roller
+										["itemID"] = 119180,	-- Goren "Log" Roller
+									},
 								},
 							},
 							{	-- Gnawed Bone
@@ -233,8 +239,11 @@ _.Zones =
 								["questID"] = 37388,
 								["coord"] = { 38.0, 14.0 },
 								["isDaily"] = true,
-								["g"] = {	
-									i(119358),	-- Voidmesh Cloth Wristwraps
+								["description"] = "You need to be on the quest \"Assault on Stonefury Cliffs\".",
+								["g"] = {
+									{	-- Voidmesh Cloth Wristwraps
+										["itemID"] = 119358,	-- Voidmesh Cloth Wristwraps
+									},
 								},
 							}, 				
 							{	-- Gorok	**Coords uncofirmed, relied on wowhead**
