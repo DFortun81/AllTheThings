@@ -17,6 +17,18 @@ _.Zones =
 							}),
 						}),
 					}),
+					prof(356, {
+						o(202779, {	-- Blackbelly Mudfish School
+							["groups"] = {
+								i(22739),	-- Tome of Polymorph: Turtle
+							},
+						}),
+						o(202780, {	-- Fathom Eel Swarm
+							["groups"] = {
+								i(22739),	-- Tome of Polymorph: Turtle
+							},
+						}),
+					}),
 					prof(186, { -- Mining
 						["groups"] = {
 							i(67282), 	-- Elementium Geode (PET!)

@@ -85,6 +85,18 @@ _.Zones =
 						},
 						["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
 					}),
+					prof(356, {
+						o(208311, {	-- Deepsea Sagefish School
+							["groups"] = {
+								i(22739),	-- Tome of Polymorph: Turtle
+							},
+						}),
+						o(202777, {	-- Highland Guppy School
+							["groups"] = {
+								i(22739),	-- Tome of Polymorph: Turtle
+							},
+						}),
+					}),
 				}),				
 				n(-17, {	-- Quests
 --[[	Achievement info for Loremaster related zone quests

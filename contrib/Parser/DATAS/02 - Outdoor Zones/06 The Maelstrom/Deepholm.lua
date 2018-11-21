@@ -36,6 +36,13 @@ _.Zones =
 						},
 						["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require Cataclysm Mining.|r",
 					}),
+					prof(356, {
+						o(202778, {	-- Albino Cavefish School
+							["groups"] = {
+								i(22739),	-- Tome of Polymorph: Turtle
+							},
+						}),
+					}),
 				}),				
 				n(-17, { -- Quests
 					ach(4871, {	-- Deep into Deepholm

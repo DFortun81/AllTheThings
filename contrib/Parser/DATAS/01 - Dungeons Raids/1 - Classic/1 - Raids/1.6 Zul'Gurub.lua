@@ -731,6 +731,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(19946)),	-- Tigule's Harpoon
 						un(2, i(19945)),	-- Foror's Eyepatch
 						un(2, i(19947)),	-- Nat Pagle's Broken Reel
+						i(22739),	-- Tome of Polymorph: Turtle (still obtainable via fishing)
 					}),
 					n(14515, { -- High Priestess Arlokk
 						un(2, i(19914)),	-- Panther Hide Sack

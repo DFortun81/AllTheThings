@@ -129,6 +129,18 @@ _.ExpansionFeatures =
 					},
 					["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
 				}),
+				prof(356, {
+					o(207724, {	-- Shipwreck Debris
+						["groups"] = {
+							i(22739),	-- Tome of Polymorph: Turtle
+						},
+					}),
+					o(202780, {	-- Fathom Eel Swarm
+						["groups"] = {
+							i(22739),	-- Tome of Polymorph: Turtle
+						},
+					}),
+				}),
 			}),
 --[[				
 			n(-17, { 	-- Quests

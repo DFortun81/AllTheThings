@@ -218,6 +218,8 @@ _.Holidays = bubbleDown({["u"] = 19},
 						un(19, i(44794)),	-- Spring Rabbit's Foot
 						-- Mounts --
 						un(19, i(72145)),	-- Swift Springstrider
+						-- Other --
+						un(19, i(44793)),	-- Tome of Polymorph: Rabbit
 					})),
 				},
 				["races"] = ALLIANCE_ONLY,
@@ -239,6 +241,8 @@ _.Holidays = bubbleDown({["u"] = 19},
 						un(19, i(44794)),	-- Spring Rabbit's Foot
 						-- Mounts --
 						un(19, i(72145)),	-- Swift Springstrider
+						-- Other --
+						un(19, i(44793)),	-- Tome of Polymorph: Rabbit
 					})),
 				},
 				["races"] = HORDE_ONLY,
