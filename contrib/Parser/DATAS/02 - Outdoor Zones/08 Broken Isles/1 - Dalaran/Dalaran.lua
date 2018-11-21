@@ -6898,6 +6898,9 @@ _.Zones =
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 						}),
 					}),
+					n(93543, { -- Sminx Glasseye
+						i(139599),	-- Empowered Ring of the Kirin Tor
+					}),
 					n(108468, { -- The Mad Merchant
 						i(136923),	-- Celestial Calf Pet
 						i(140309),	-- Prismatic Bauble Toy
