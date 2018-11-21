@@ -139,6 +139,9 @@ _.WorldDrops =
 					i(87436),	-- Sollerets of Immovability
 					i(87695),	-- Treads of Edward the Odd
 				}),
+				filter(53, {	-- Trinket
+					i(87496),	-- Daelo's Final Words
+				}),
 			}),
 		},
 		["tierID"] = 5
