@@ -150,6 +150,16 @@ _.Zones =
 									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								q(52396, {	-- Work Order: Contract: Talanji's Expedition
+									["groups"] = {
+										i(162368, {	-- Contract: Talanji's Expedition [Rank 3]
+											["spellID"] = 256289,
+										}),
+									},
+									["requireSkill"] = 773,	-- Inscription
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = HORDE_ONLY,
+								}),
 								{	-- Work Order: Sea Mist Potion
 									["questID"] = 52337,
 									["groups"] = {

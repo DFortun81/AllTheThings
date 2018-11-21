@@ -198,6 +198,9 @@ _.Zones =
 					["groups"] = {
 						n(139968, {	-- Corrupted Tideskipper	
 							["groups"] = {
+								i(162028, {	-- Technique: Glyph of the Tideskipper
+									["spellID"] = 276088,
+								}),
 								i(154183),	-- Boralus-Captain's Chain Boots
 							},
 							["questID"] = 52121,

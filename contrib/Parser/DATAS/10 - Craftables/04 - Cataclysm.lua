@@ -134,11 +134,37 @@ _.Craftables =
 			i(59448),	-- Specialized Bio-Optic Killshades
 		}),
 		n(-185, { -- Inscription
-			i(62236),	-- Battle Tome
-			i(62231),	-- Book of Blood
-			i(62235),	-- Divine Companion
-			i(62234),	-- Dungeoneering Guide
-			i(62233),	-- Lord Rottington's Pressed Wisp Book
+		-- Reviewed and updated as of 11.21.2018 BfA 8.0
+			n(-491, { -- Tarot Cards
+				sp(86615, {	-- Darkmoon Card of Destruction
+					i(62046, {	-- Earthquake Deck
+						i(62048),	-- Darkmoon Card: Earthquake
+					}),
+					i(62045, {	-- Hurricane Deck
+						i(62049),	-- Darkmoon Card: Hurricane
+						i(62051),	-- Darkmoon Card: Hurricane
+					}),
+					i(62044, {	-- Tsunami Deck
+						i(62050),	-- Darkmoon Card: Tsunami
+					}),
+					i(62021, {	-- Volcanic Deck
+						i(62047),	-- Darkmoon Card: Volcano
+					}),
+				}),
+			}),
+			filter(1, {	-- Off-hand
+				i(62236),	-- Battle Tome
+				i(62231),	-- Book of Blood
+				i(62235),	-- Divine Companion
+				i(62234),	-- Dungeoneering Guide
+				i(62233),	-- Lord Rottington's Pressed Wisp Book
+			}),
+			filter(28, {	-- Staves
+				i(87565),	-- Key to the Planes
+				i(87562),	-- Rosethorn Staff
+				i(87566),	-- Runed Staff
+				i(87561),	-- Silver Inlaid Staff
+			}),
 		}),
 		n(-186, { -- Jewelcrafting
 			i(52492),	-- Carnelian Spikes

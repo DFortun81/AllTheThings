@@ -263,21 +263,46 @@ _.Craftables =
 			i(77538),	-- Specialized Retinal Armor
 		}),
 		n(-185, { -- Inscription
-			i(79342, {	-- Ghost Iron Staff
-				i(79343),	-- Inscribed Tiger Staff
+		-- Reviewed and updated as of 11.21.2018 BfA 8.0
+			n(-491, { -- Tarot Cards
+				sp(111830, {	-- Darkmoon Card of Mists
+					i(79325, {	-- Crane Deck
+						i(79330),	-- Relic of Chi-Ji
+					}),
+					i(79324, {	-- Ox Deck
+						i(79329),	-- Relic of Niuzao
+					}),
+					i(79326, {	-- Serpent Deck
+						i(79331),	-- Relic of Yu'lon
+					}),
+					i(79323, {	-- Tiger Deck
+						i(79327),	-- Relic of Xuen
+						i(79328),	-- Relic of Xuen
+					}),
+				}),
 			}),
-			i(79333, {	-- Inscribed Fan
-				i(79334),	-- Inscribed Jade Fan
-				i(79335),	-- Inscribed Red Fan
+			filter(101, {	-- Battle Pets
+				i(89368),	-- Chi-Ji Kite
+				i(89367),	-- Yu'lon Kite
 			}),
-			i(87565),	-- Key to the Planes
-			i(79339, {	-- Rain Poppy Staff
-				i(79340),	-- Inscribed Crane Staff
-				i(79341),	-- Inscribed Serpent Staff
+			filter(53, {	-- Trinkets
+				i(102483),	-- Crafted Malevolent Gladiator's Medallion of Tenacity
 			}),
-			i(87562),	-- Rosethorn Staff
-			i(87566),	-- Runed Staff
-			i(87561),	-- Silver Inlaid Staff
+			filter(1, {	-- Off-hand
+				i(79333, {	-- Inscribed Fan
+					i(79334),	-- Inscribed Jade Fan
+					i(79335),	-- Inscribed Red Fan
+				}),
+			}),
+			filter(28, {	-- Staves
+				i(79342, {	-- Ghost Iron Staff
+					i(79343),	-- Inscribed Tiger Staff
+				}),
+				i(79339, {	-- Rain Poppy Staff
+					i(79340),	-- Inscribed Crane Staff
+					i(79341),	-- Inscribed Serpent Staff
+				}),
+			}),
 		}),
 		n(-187, { -- Leatherworking
 			n(-322, { 	-- Cloak

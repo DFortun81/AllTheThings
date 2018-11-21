@@ -94,6 +94,15 @@ _.Zones =
 							["itemID"] = 163036,	-- Polished Pet Charm
 							["coord"] = { 71.6, 29.4 },
 						}),
+						n(142839, {	-- Old Jen'tay
+							["g"] = {
+								i(162030, {	-- Technique: Glyph of the Humble Flyer
+									["spellID"] = 276121,
+								}),
+							},
+							["description"] = "Requires 150 BfA Inscription to trigger conversation for the recipe.",
+							["coord"] = { 76.2, 39.8 },
+						}),
 					},
 				}),
 			},

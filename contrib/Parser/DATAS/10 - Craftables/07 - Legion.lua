@@ -124,6 +124,35 @@ _.Craftables =
 			i(132501),	-- Tactical Headgun
 			i(144331),	-- Tailored Skullblasters
 		}),
+		n(-185, { -- Inscription
+		-- Reviewed and updated as of 11.21.2018 BfA 8.0
+			n(-491, { -- Tarot Cards
+				sp(191659, {	-- Darkmoon Card of the Legion
+					sp(191654, {	-- Dominion Deck
+						i(128705),	-- Darkmoon Deck: Dominion
+					}),
+					sp(191655, {	-- Hellfire Deck
+						i(128709),	-- Darkmoon Deck: Hellfire
+					}),
+					sp(191657, {	-- Immortality Deck
+						i(128711),	-- Darkmoon Deck: Immortality
+					}),
+					sp(191656, {	-- Promises Deck
+						i(128710),	-- Darkmoon Deck: Promises
+					}),
+				}),
+			}),
+			filter(102, {	-- Toy
+				i(129211),	-- Steamy Romance Novel Kit
+			}),
+			filter(53, {	-- Trinkets
+				i(128978),	-- Prophecy Tarot
+			}),
+			filter(54, {	-- Relics
+				i(136692),	-- Aqual Mark
+				i(136693),	-- Straszan Mark
+			}),
+		}),
 		n(-186, { -- Jewelcrafting
 			i(151587),	-- Empyrial Cosmic Crown
 			i(151588),	-- Empyrial Deep Crown

@@ -256,7 +256,7 @@ AllTheThings.Locales.enUS = {
 
 		-- "Non-Equipment Types"
 		[100] = GetItemSubClassInfo(15,5),						-- Mounts
-		[101] = TOOLTIP_BATTLE_PET,								-- Companion Pets
+		[101] = TOOLTIP_BATTLE_PET,								-- Battle Pets
 		[102] = TOY,											-- Toy
 		[103] = "Illusions",
 		[104] = ITEM_BIND_QUEST, 								-- Quest Items
@@ -276,11 +276,15 @@ AllTheThings.Locales.enUS = {
 		[999] = "Event Item",
 	};
 	["FILTER_ID_ICONS"] = {
+		[1] = "Interface\\Icons\\inv_misc_orb_01",							-- Held in Off-hand
 		[27] = "Interface\\Icons\\inv_wand_02",								-- Wands
+		[28] = "Interface\\Icons\\inv_staff_27",							-- Staves
 		[50] = "Interface\\Icons\\Spell_Misc_Drink",						-- Miscellaneous
 		[51] = "Interface\\Icons\\INV_Jewelry_Necklace_02",					-- Neck
 		[52] = "Interface\\Icons\\INV_Jewelry_Ring_04",						-- Finger
 		[53] = "Interface\\Icons\\INV_Trinket_Naxxramas05",					-- Trinket
+		[54] = "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",			-- Relic
+		[101] = "Interface\\Icons\\Tracking_WildPet", 						-- Battle Pets
 		[102] = "Interface\\Icons\\INV_Misc_Toy_10",						-- Toy
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",						-- Bag
 		[200] = "Interface\\Icons\\inv_scroll_05",							-- Recipes
@@ -520,6 +524,7 @@ AllTheThings.Locales.enUS = {
 		[-387] = "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",				-- Relic
 		[-388] = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",				-- Main Gate (Stratholme)
 		[-389] = "Interface\\Icons\\INV_MISC_KEY_13",							-- Service Entrance (Stratholme)
+		[-491] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",				-- Tarot Cards
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",					-- Miscellaneous
 		[-500] = "Interface\\Icons\\inv_misc_celebrationcake_01",				-- WoW Anniversary
 		[-531] = "Interface\\Icons\\achievement_general",						-- 2008 Spirit of Competition Event

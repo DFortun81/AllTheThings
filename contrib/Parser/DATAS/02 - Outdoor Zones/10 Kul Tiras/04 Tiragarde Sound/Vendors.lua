@@ -8,6 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-2, {	-- Vendors
 					["groups"] = {
+					--[[ Only valid vendor version of Kojo appear to be 134345 (Scaletrader Post - Zuldazar) and 135793 (Seekers Vista - Stormsong Valley), rest seem to be just for the Tortollan WQs and do not sell anything
 						n(144353, {	-- Collector Kojo <Tortollan Seekers Emissary> [NOTE: Will need correct npcID when located]
 							["groups"] = {
 								i(160543),	-- Tabard of the Tortollan Seekers
@@ -73,6 +74,16 @@ _.Zones =
 									["spellID"] = 276059,
 								}),
 							},
+						}),
+					]]--
+						n(142838, {	-- Grumpy Grimble
+							["g"] = {
+								i(162030, {	-- Technique: Glyph of the Humble Flyer
+									["spellID"] = 276121,
+								}),
+							},
+							["description"] = "Requires 150 BfA Inscription to trigger conversation for the recipe.",
+							["coord"] = { 49.8, 36.8 },
 						}),
 					},
 				}),

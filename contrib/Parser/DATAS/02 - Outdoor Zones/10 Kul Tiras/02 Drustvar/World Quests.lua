@@ -149,6 +149,16 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
+								q(52390, {	-- Work Order: Contract: Order of Embers
+									["groups"] = {
+										i(162362, {	-- Contract: Order of Embers [Rank 3]
+											["spellID"] = 256280,
+										}),
+									},
+									["requireSkill"] = 773,	-- Inscription
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+								}),
 								q(52357, {	-- Work Order: Enchant Weapon - Quick Navigation
 									["groups"] = {
 										i(162314, {	-- Formula: Enchant Weapon - Quick Navigation [Rank 3]

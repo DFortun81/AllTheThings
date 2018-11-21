@@ -190,48 +190,29 @@ _.Craftables =
 			i(42550),	-- Weakness Spectralizers
 		}),
 		n(-185, { -- Inscription
+		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
-				["groups"] = {
-					sp(48247, {	-- Mysterious Tarot
-						i(37163, {	-- Rogues Deck
-							i(38318),
-							i(39507),
-							i(39509),
-						}),
+				sp(59504, {	-- Darkmoon Card of the North
+					i(44276, {	-- Chaos Deck
+						i(42989),	-- Darkmoon Card: Berserker!
 					}),
-					sp(59480, {	-- Strange Tarot
-						i(37164, {	-- Swords Deck
-							i(131277),
-							i(39894),
-							i(39895),
-							i(39897),
-						}),
+					i(44326, {	-- Nobles Deck
+						i(42987),	-- Darkmoon Card: Greatness
 					}),
-					sp(59491, {	-- Shadowy Tarot
-						i(44158, {	-- Demons Deck
-							i(44217),
-							i(44218),
-							i(44219)
-						})
+					i(44259, {	-- Prisms Deck
+						i(42988),	-- Darkmoon Card: Illusion
 					}),
-				},
-				["icon"] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",
+					i(44294, {	-- Undeath Deck
+						i(42990),	-- Darkmoon Card: Death
+					}),
+				}),
 			}),
-			i(43667),	-- Book of Clever Tricks
-			i(43661),	-- Book of Stars
-			i(43655),	-- Book of Survival
-			i(44210),	-- Faces of Doom
-			i(43660),	-- Fire Eater's Guide
-			i(43666),	-- Hellfire Tome
-			i(38322),	-- Iron-Bound Tome
-			i(43664),	-- Manual of Clouds
-			i(43515),	-- Mystic Tome
-			i(45854),	-- Rituals of the New Moon
-			i(43657),	-- Royal Guide of Escape Routes
-			i(43663),	-- Stormbound Tome
-			i(43656),	-- Tome of Kings
-			i(43654),	-- Tome of the Dawn
-			i(45849),	-- Twilight Tome
+			filter(1, {	-- Off-hand
+				i(44210),	-- Faces of Doom
+				i(38322),	-- Iron-Bound Tome
+				i(45854),	-- Rituals of the New Moon
+				i(45849),	-- Twilight Tome
+			}),
 		}),
 		n(-187, { -- Leatherworking
 			n(-322, { 	-- Cloak

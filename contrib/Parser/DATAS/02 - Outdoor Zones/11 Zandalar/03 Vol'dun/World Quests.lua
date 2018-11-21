@@ -138,6 +138,16 @@ _.Zones =
 								q(51322, {	-- Wings and Stingers
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								q(52397, {	-- Work Order: Contract: Voldunai
+									["groups"] = {
+										i(162370, {	-- Contract: Voldunai [Rank 3]
+											["spellID"] = 256293,
+										}),
+									},
+									["requireSkill"] = 773,	-- Inscription
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = HORDE_ONLY,
+								}),
 								q(52362, {	-- Work Order: Enchant Weapon - Quick Navigation
 									["groups"] = {
 										i(162314, {	-- Formula: Enchant Weapon - Quick Navigation [Rank 3]

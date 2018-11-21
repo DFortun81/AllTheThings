@@ -72,10 +72,38 @@ _.Craftables =
 			WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades
 		}),
 		n(-185, { -- Inscription
-			WOD_CRAFTED_ITEM(113134),	-- Crystalfire Spellstaff
-			WOD_CRAFTED_ITEM(111526),	-- Etched-Blade Warstaff
-			WOD_CRAFTED_ITEM(113270),	-- Shadowtome
-			WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
+		-- Reviewed and updated as of 11.21.2018 BfA 8.0
+			n(-491, { -- Tarot Cards
+				sp(163294, {	-- Darkmoon Card of Draenor
+					i(112303, {	-- Iron Deck
+						WOD_CRAFTED_ITEM(112319),	-- Knight's Badge
+					}),
+					i(112304, {	-- Moon Deck
+						WOD_CRAFTED_ITEM(112320),	-- Sandman's Pouch
+					}),
+					i(112305, {	-- Visions Deck
+						WOD_CRAFTED_ITEM(112317),	-- Winged Hourglass
+					}),
+					i(112306, {	-- War Deck
+						WOD_CRAFTED_ITEM(112318),	-- Skull of War
+					}),
+				}),
+			}),
+			filter(53, {	-- Trinkets
+				i(118602),	-- Laughing Tarot
+				i(118601),	-- Ocean Tarot
+				i(118603),	-- Savage Tarot
+			}),
+			filter(1, {	-- Off-hand
+				WOD_CRAFTED_ITEM(113270),	-- Shadowtome
+			}),
+			filter(28, {	-- Staves
+				WOD_CRAFTED_ITEM(113134),	-- Crystalfire Spellstaff
+				WOD_CRAFTED_ITEM(111526),	-- Etched-Blade Warstaff
+			}),
+			filter(27, {	-- Wands
+				WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
+			}),
 		}),
 		n(-187, { -- Leatherworking
 			n(-322, { 	-- Cloak

@@ -279,6 +279,65 @@ _.Craftables =
 				i(18639),	-- Ultra-Flash Shadow Reflector
 			}),
 		}),
+		n(-185, { -- Inscription
+		-- Reviewed and updated as of 11.21.2018 BfA 8.0
+			n(-491, { -- Tarot Cards
+				sp(59487, {	-- Arcane Tarot
+					i(44148, {	-- Mages Deck
+						i(44215),	-- Darkmoon Necklace
+						i(44213),	-- Darkmoon Pendant
+					}),
+				}),
+				sp(59502, {	-- Darkmoon Card
+					i(19228, {	-- Beasts Deck
+						i(19288),	--Darkmoon Card: Blue Dragon
+					}),
+					i(19267, {	-- Elementals Deck
+						i(19289),	-- Darkmoon Card: Maelstrom
+					}),
+					i(19277, {	-- Portals Deck
+						i(19290),	--Darkmoon Card: Twisting Nether
+					}),
+					i(19257, {	-- Warlords Deck
+						i(19287),	--Darkmoon Card: Heroism
+					}),
+				}),
+				sp(48247, {	-- Mysterious Tarot
+					i(37163, {	-- Rogues Deck
+						i(39507),	-- Darkmoon Breastplate
+						i(131276),	-- Darkmoon Chainmail
+						i(38318),	-- Darkmoon Robe
+						i(39509),	-- Darkmoon Vest
+					}),
+				}),
+				sp(59480, {	-- Strange Tarot
+					i(37164, {	-- Swords Deck
+						i(39897),	-- Azure Shoulderguards
+						i(39895),	-- Cloaked Shoulderpads
+						i(39894),	-- Darkcloth Shoulders
+						i(131277),	-- Veiled Pauldrons
+					}),
+				}),
+				sp(59491, {	-- Shadowy Tarot
+					i(44158, {	-- Demons Deck
+						i(44217),	-- Darkmoon Dirk
+						i(44218),	-- Darkmoon Executioner
+						i(44219)	-- Darkmoon Magestaff
+					})
+				}),
+			}),
+			filter(1, {	-- Off-hand
+				i(43661),	-- Book of Stars
+				i(43655),	-- Book of Survival
+				i(43660),	-- Fire Eater's Guide
+				i(43664),	-- Manual of Clouds
+				i(43515),	-- Mystic Tome
+				i(43657),	-- Royal Guide of Escape Routes
+				i(43663),	-- Stormbound Tome
+				i(43656),	-- Tome of Kings
+				i(43654),	-- Tome of the Dawn
+			}),
+		}),
 		n(-186, { -- Jewelcrafting
 			filter(51, {	-- Neck
 				i(20830),	-- Amulet of the Moon

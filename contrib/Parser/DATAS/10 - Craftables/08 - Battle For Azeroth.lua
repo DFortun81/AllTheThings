@@ -174,20 +174,29 @@ _.Craftables =
 			i(152837),	-- Precision Attitude Adjuster
 		}),
 		n(-185, { -- Inscription
-			i(153598, {	-- Darkmoon Card of War
-				["groups"] = {
-					i(159125),	-- Darkmoon Deck: Fathoms
-					i(159126),	-- Darkmmon Deck: Squalls
-					i(159127),	-- Darkmoon Deck: Tides
-					i(159128),	-- Darkmoon Deck: Blockades
-				},
-				["description"] = "Create and combine all 8 cards of each set (4 sets available) to create a deck.",
-				["f"] = 53,	-- Tinket [Keeping it consistent with the items it creates so it filters everything out.]
+		-- Reviewed and updated as of 11.21.2018 BfA 8.0
+			n(-491, { -- Tarot Cards
+				sp(278527, {	-- Darkmoon Card of War
+					sp(267087, {	-- Blockades Deck
+						i(159128),	-- Darkmoon Deck: Blockades
+					}),
+					sp(267085, {	-- Fathoms Deck
+						i(159125),	-- Darkmoon Deck: Fathoms
+					}),
+					sp(267083, {	-- Squalls Deck
+						i(159126),	-- Darkmoon Deck: Squalls
+					}),
+					sp(267081, {	-- Tides Deck
+						i(159127),	-- Darkmoon Deck: Tides
+					}),
+				}),
 			}),
-			i(159940),	-- Honorable Combatant's Etched Vessel [H] [Version listed in the UI, you also get credit for the Alliance version]
-			i(161936),	-- Honorable Combatant's Etched Vessel [A] [UI lists the Horde version, you get credit for both when learning either item]
-			i(153643),	-- Inscribed Vessel of Mysticism [H] [Version listed in the UI, you also get credit for the Alliance version]
-			i(161934),	-- Inscribed Vessel of Mysticism [A] [UI lists the Horde version, you get credit for both when learning either item]
+			filter(1, {	-- Off-hand
+				i(161936),	-- Honorable Combatant's Etched Vessel [A] [UI lists the Horde version, you get credit for both when learning either item]
+				i(159940),	-- Honorable Combatant's Etched Vessel [H] [Version listed in the UI, you also get credit for the Alliance version]
+				i(161934),	-- Inscribed Vessel of Mysticism [A] [UI lists the Horde version, you get credit for both when learning either item]
+				i(153643),	-- Inscribed Vessel of Mysticism [H] [Version listed in the UI, you also get credit for the Alliance version]
+			}),
 		}),
 		n(-186, { -- Jewelcrafting
 			i(153686),	-- Amberblaze Loop

@@ -232,6 +232,29 @@ _.Craftables =
 			i(23824),	-- Rocket Boots Xtreme
 			i(35581),	-- Rocket Boots Xtreme Lite
 		}),
+		n(-185, { -- Inscription
+		-- Reviewed and updated as of 11.21.2018 BfA 8.0
+			n(-491, { -- Tarot Cards
+				sp(59503, {	-- Greater Darkmoon Card
+					i(31890, {	-- Blessings Deck
+						i(31856),	-- Darkmoon Card: Crusade
+					}),
+					i(31907, {	-- Furies Deck
+						i(31858),	-- Darkmoon Card: Vengeance
+					}),
+					i(31914, {	-- Lunacy Deck
+						i(31859),	-- Darkmoon Card: Madness
+					}),
+					i(31891, {	-- Storms Deck
+						i(31857),	-- Darkmoon Card: Wrath
+					}),
+				}),
+			}),
+			filter(1, {	-- Off-hand
+				i(43667),	-- Book of Clever Tricks
+				i(43666),	-- Hellfire Tome
+			}),
+		}),
 		n(-186, { -- Jewelcrafting
 			i(24123),	-- Circlet of Arcane Might
 			i(24122),	-- Coronet of Verdant Flame
