@@ -3,15 +3,25 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor	
-		m(88, {	-- Thunder Bluff
-			["groups"] = {
-				n(-228, {	-- Flight Paths
-					fp(22, {	-- Thunder Bluff, Mulgore
-						["coord"] = { 46.8, 49.8 },
-					}),
-				}),
+	{	-- Kalimdor
+		["mapID"] = 12,	-- Kalimdor
+		["g"] = {
+			{	-- Thunder Bluff
+				["mapID"] = 88,
+				["g"] = {
+					{	-- Flight Paths
+						["npcID"] = -228,	-- Flight Paths
+						["g"] = {
+							{	-- Thunder Bluff, Mulgore
+								["flightPathID"] = 22,	-- Thunder Bluff, Mulgore
+								["coords"] = {
+									{ 47.06, 49.59, 88 },
+								},
+							},
+						},
+					},
+				},
 			},
-		}),
-	}),
+		},
+	},
 };
