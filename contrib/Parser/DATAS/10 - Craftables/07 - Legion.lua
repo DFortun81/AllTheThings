@@ -46,6 +46,15 @@ _.Craftables =
 					}),
 				}),
 			}),
+			spell(251646, {	-- Astral Healing Potion (Rank 1)
+				i(152617),	-- Recipe: Astral Healing Potion (Rank 2)
+			}),
+			spell(247620, {	-- Lightblood Elixir (Rank 2)
+				i(151659),	-- Recipe: Lightblood Elixir (Rank 3)
+			}),
+			spell(247690, {	-- Tears of the Naaru (Rank 2)
+				i(151705),	-- Recipe: Tears of the Naaru (Rank 3)
+			}),
 			spell(213255, { -- Transmute: Meat to Pants
 				i(137600, { -- Pile of Pants
 					i(139393), -- Fizzy Fleece Leggings

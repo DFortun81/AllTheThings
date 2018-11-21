@@ -203,6 +203,7 @@ _.Instances =
 								["groups"] = {
 									ach(12502),	-- Mythic: Underrot
 									ach(12499),	-- Sporely Alive
+									i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 									i(160829),	-- Underrot Crawg Harness
 									i(159655),	-- Vile Exasanguinator
 									i(159446),	-- Greathelm of the Putrid Path

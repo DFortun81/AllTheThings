@@ -58,6 +58,9 @@ _.NeverImplemented =
 	un(1, i(112052)),	-- Recipe: Alchemical Catalyst - Arrowbloom
 	un(1, i(112053)),	-- Recipe: Alchemical Catalyst - Orchid
 	un(1, i(112054)),	-- Recipe: Alchemical Catalyst - Lotus
+	un(1, i(152620)),	-- Recipe: Astral Mana Potion (Rank 1)
+	un(1, i(152621)),	-- Recipe: Astral Mana Potion (Rank 2)
+	un(1, i(152622)),	-- Recipe: Astral Mana Potion (Rank 3)
 	un(1, i(143752)),	-- Sound Test Mount
 	un(1, i(37598)),	-- Swift Zhevra OLD
 	un(1, i(44557)),	-- Swift Ebonweave Carpet (NOT IN GAME)

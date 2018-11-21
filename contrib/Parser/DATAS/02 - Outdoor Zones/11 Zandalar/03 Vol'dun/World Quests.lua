@@ -148,6 +148,15 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
+								{	-- Work Order: Potion of Concealment
+									["questID"] = 52338,
+									["groups"] = {
+										i(162260),	-- Recipe: Potion of Concealment (Rank 3)
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+									["requireSkill"] = 171,	-- Alchemy
+								},
 							},
 						}),
 						i(158116),	-- Bonehex Claws

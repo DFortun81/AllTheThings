@@ -150,6 +150,15 @@ _.Zones =
 									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Work Order: Sea Mist Potion
+									["questID"] = 52337,
+									["groups"] = {
+										i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+									["requireSkill"] = 171,	-- Alchemy
+								},
 								{	-- Xu'ba
 									["questID"] = 50489,	-- Xu'ba
 									--

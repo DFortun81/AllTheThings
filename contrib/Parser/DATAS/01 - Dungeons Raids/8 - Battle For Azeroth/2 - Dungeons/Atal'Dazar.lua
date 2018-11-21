@@ -228,6 +228,7 @@ _.Instances =
 								["groups"] = {
 									ach(12273),	-- It's Lit!
 									ach(12826),	-- Mythic: Atal'Dazar
+									i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 									i(158323),	-- Soulrender's Fang
 									i(159358),	-- Coif of the Court Spider
 									i(158315),	-- Secret Spinner's Miter

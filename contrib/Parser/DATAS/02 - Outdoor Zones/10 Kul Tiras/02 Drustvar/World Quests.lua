@@ -163,6 +163,15 @@ _.Zones =
 										37.81, 49.01
 									},
 								}),
+								{	-- Work Order: Sea Mist Potion
+									["questID"] = 52334,
+									["groups"] = {
+										i(162260),	-- Recipe: Potion of Concealment (Rank 3)
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 171,	-- Alchemy
+								},
 							},
 						}),
 						i(158092),	-- Colscale Cudgel

@@ -288,6 +288,7 @@ _.Instances =
 								["groups"] = {
 									ach(12490),	-- Alchemical Romance
 									ach(12488),	-- Mythic: Waycrest Manor
+									i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 									i(159662),	-- Blightreaper
 									i(159279),	-- Soulfuel Headdress
 									i(159398),	-- Soulscarred Headgear

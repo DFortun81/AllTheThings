@@ -906,6 +906,33 @@ _.Zones =
 										},
 									}),
 								}),
+								{	-- Ascending Alchemy
+									["questID"] = 48016,
+									["qg"] = 125346,	-- Alchemist Funen
+									["coord"] = { 56.2, 66.8 },
+									["groups"] = {
+										i(151706),	-- Recipe: Astral Alchemist Stone (Rank 1)
+									},
+									["requireSkill"] = 171,	-- Alchemy
+								},
+								{	-- Limited Supplies
+									["questID"] = 48002,
+									["qg"] = 125346,	-- Alchemist Funen
+									["coord"] = { 56.2, 66.8 },
+									["groups"] = {
+										i(151657),	-- Recipe: Lightblood Elixir (Rank 1)
+									},
+									["requireSkill"] = 171,	-- Alchemy
+								},
+								{	-- Tracking the Trackers
+									["questID"] = 48013,
+									["qg"] = 125346,	-- Alchemist Funen
+									["coord"] = { 56.2, 66.8 },
+									["groups"] = {
+										i(151703),	-- Recipe: Tears of the Naaru (Rank 1)
+									},
+									["requireSkill"] = 171,	-- Alchemy
+								},
 							},
 						}),
 					},
@@ -1114,6 +1141,26 @@ _.Zones =
 				}),
 				n(-34, { -- World Quests
 					["groups"] = {
+						n(-180, {
+							{	-- Work Order: Lightblood Elixirs
+								["questID"] = 48318,
+								["groups"] = {
+									i(151658),	-- Recipe: Lightblood Elixir (Rank 2)
+								},
+								["qg"] = 125346,	-- Alchemist Funen
+								["isWQ"] = 120,
+								["requireSkill"] = 171,	-- Alchemy
+							},
+							{	-- Work Order: Tears of the Naaru
+								["questID"] = 48323,
+								["groups"] = {
+									i(151704),	-- Recipe: Tears of the Naaru (Rank 2)
+								},
+								["qg"] = 125346,	-- Alchemist Funen
+								["isWQ"] = 120,
+								["requireSkill"] = 171,	-- Alchemy
+							},
+						}),
 						n(-322, { -- Cloak
 							i(150988), -- Twisted-Ritualist's Shawl
 						}),

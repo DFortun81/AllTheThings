@@ -214,6 +214,7 @@ _.Instances =
 								["groups"] = {
 									ach(12842),	-- Mythic: Tol Dagor
 									ach(12462),	-- Shot Through the Heart
+									i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 									i(159129),	-- Flamecaster Botefeux
 									i(159658),	-- Cudgel of Correctional Oversight
 									i(159657),	-- Korgus' Blackpowder Rifle

@@ -191,6 +191,15 @@ _.Zones =
 									["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Work Order: Lightfoot Potion
+									["questID"] = 52332,
+									["groups"] = {
+										i(162258),	-- Recipe: Lightfoot Potion (Rank 3)
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 171,	-- Alchemy
+								},
 								q(52346, {	-- Work Order: Sailor's Pie [Rank 3]
 									["groups"] = {
 										i(162295, {	-- Recipe: Sailor's Pie [Rank 3]

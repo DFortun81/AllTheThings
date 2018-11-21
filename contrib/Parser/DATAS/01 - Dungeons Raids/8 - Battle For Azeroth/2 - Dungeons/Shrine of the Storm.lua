@@ -215,6 +215,7 @@ _.Instances =
 								["groups"] = {
 									ach(12838),	-- Mythic: Shrine of the Storm
 									ach(12602),	-- Trust No One
+									i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 									i(159135),	-- Deep Fathom's Bite
 									i(159302),	-- Cowl of Fluid Machiantions
 									i(159430),	-- Helm of Abyssal Malevolence

@@ -119,6 +119,24 @@ _.Zones =
 									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Work Order: Demitri's Draught of Deception
+									["questID"] = 52331,
+									["groups"] = {
+										i(162257),	-- Recipe: Demitri's Draught of Deception (Rank 3)
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 171,	-- Alchemy
+								},
+								{	-- Work Order: Sea Mist Potion
+									["questID"] = 52333,
+									["groups"] = {
+										i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 171,	-- Alchemy
+								},
 							},
 						}),
 						i(158092),	-- Colscale Cudgel

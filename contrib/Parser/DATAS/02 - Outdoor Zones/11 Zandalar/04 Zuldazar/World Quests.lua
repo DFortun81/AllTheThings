@@ -178,6 +178,24 @@ _.Zones =
 								["requireSkill"] = 773,	-- Inscription
 								["isWQ"] = 120,		-- Enables WQ filter for Level 120
 							}),
+							{	-- Work Order: Demitri's Draught of Deception
+								["questID"] = 52335,
+								["groups"] = {
+									i(162257),	-- Recipe: Demitri's Draught of Deception (Rank 3)
+								},
+								["isWQ"] = 120,
+								["races"] = HORDE_ONLY,
+								["requireSkill"] = 171,	-- Alchemy
+							},
+							{	-- Work Order: Lightfoot Potion
+								["questID"] = 52336,
+								["groups"] = {
+									i(162258),	-- Recipe: Lightfoot Potion (Rank 3)
+								},
+								["isWQ"] = 120,
+								["races"] = HORDE_ONLY,
+								["requireSkill"] = 171,	-- Alchemy
+							},
 							q(52349, {	-- Work Order: Loa Loaf
 								["groups"] = {
 									i(162294),	-- Recipe: Loa Loaf [Rank 3]

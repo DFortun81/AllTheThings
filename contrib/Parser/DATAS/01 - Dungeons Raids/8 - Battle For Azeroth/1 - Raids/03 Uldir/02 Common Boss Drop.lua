@@ -29,6 +29,9 @@ _.Instances =
 							{	-- Vantus Rune Technique: Uldir [Rank 3]
 								["itemID"] = 162125,	-- Vantus Rune Technique: Uldir [Rank 3]
 							},
+							{
+								["itemID"] = 162521,	-- Recipe: Mystical Cauldron (Rank 3)
+							},
 						},
 					}),
 				},
