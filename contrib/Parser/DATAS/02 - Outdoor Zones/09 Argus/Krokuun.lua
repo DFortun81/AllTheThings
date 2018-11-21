@@ -1141,26 +1141,28 @@ _.Zones =
 				}),
 				n(-34, { -- World Quests
 					["groups"] = {
-						n(-180, {
-							{	-- Work Order: Lightblood Elixirs
-								["questID"] = 48318,
-								["groups"] = {
-									i(151658),	-- Recipe: Lightblood Elixir (Rank 2)
+						{	-- Work Order: Lightblood Elixirs
+							["questID"] = 48318,	-- Work Order: Lightblood Elixirs
+							["qg"] = 125346,		-- Alchemist Funen
+							["isWQ"] = 110,
+							["requireSkill"] = 171,	-- Alchemy
+							["g"] = {
+								{	-- Recipe: Lightblood Elixir (Rank 2)
+									["itemID"] = 151658,	-- Recipe: Lightblood Elixir (Rank 2)
 								},
-								["qg"] = 125346,	-- Alchemist Funen
-								["isWQ"] = 120,
-								["requireSkill"] = 171,	-- Alchemy
 							},
-							{	-- Work Order: Tears of the Naaru
-								["questID"] = 48323,
-								["groups"] = {
-									i(151704),	-- Recipe: Tears of the Naaru (Rank 2)
+						},
+						{	-- Work Order: Tears of the Naaru
+							["questID"] = 48323,	-- Work Order: Tears of the Naaru
+							["qg"] = 125346,		-- Alchemist Funen
+							["isWQ"] = 110,
+							["requireSkill"] = 171,	-- Alchemy
+							["g"] = {
+								{	-- Recipe: Tears of the Naaru (Rank 2)
+									["itemID"] = 151704,	-- -- Recipe: Tears of the Naaru (Rank 2)
 								},
-								["qg"] = 125346,	-- Alchemist Funen
-								["isWQ"] = 120,
-								["requireSkill"] = 171,	-- Alchemy
 							},
-						}),
+						},
 						n(-322, { -- Cloak
 							i(150988), -- Twisted-Ritualist's Shawl
 						}),
