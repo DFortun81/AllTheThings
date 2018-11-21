@@ -127,6 +127,7 @@ _.Instances =
 							})),
 							cr(95888, e(1470, {	-- Cordana Felsong
 								ach(10802),	-- Heroic: Vault of the Wardens
+								i(127931),	-- Recipe: Flask of the Seventh Demon (Rank 2)
 								i(137522),	-- Bracers of Twisted Revelation
 								i(137514),	-- Chestguard of Insidious Desire
 								i(137531),	-- Cloak of Enthralling Darkness
@@ -198,6 +199,7 @@ _.Instances =
 							cr(95888, e(1470, {	-- Cordana Felsong
 								ach(10803),	-- Mythic: Vault of the Wardens
 								ach(10680),	-- Who's Afraid of the Dark?
+								i(127931),	-- Recipe: Flask of the Seventh Demon (Rank 2)
 								i(137522),	-- Bracers of Twisted Revelation
 								i(137514),	-- Chestguard of Insidious Desire
 								i(137531),	-- Cloak of Enthralling Darkness

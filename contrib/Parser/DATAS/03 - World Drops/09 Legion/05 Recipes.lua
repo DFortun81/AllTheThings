@@ -4,10 +4,11 @@
 _.WorldDrops = 
 {
 	{
-		["groups"] = {	-- Classic
+		["groups"] = {	-- Legion
 			filter(200, {	-- Recipes
 				n(-180, {	-- Alchemy
 					i(142119),	-- Recipe: Potion of Prolonged Power (Rank 1)
+					i(127925),	-- Recipe: Infernal Alchemist Stone (Rank 2)
 				}),
 			}),
 		},

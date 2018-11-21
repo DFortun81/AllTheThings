@@ -106,6 +106,7 @@ _.Instances =
 							})),
 							cr(94923, e(1672, {	-- Lord Kur'talos Ravencrest (Latosius 98970)
 								ach(10805),	-- Heroic: Black Rook Hold
+								i(127930),	-- Recipe: Flask of the Whispered Pact (Rank 2)
 								i(136716),	-- Caged Horror
 								i(136770),	-- Drape of the Raven Lord
 								i(134370),	-- Felbat Leather Leggings
@@ -167,6 +168,7 @@ _.Instances =
 							})),
 							cr(94923, e(1672, {	-- Lord Kur'talos Ravencrest (Latosius 98970)
 								ach(10806),	-- Mythic: Black Rook Hold
+								i(127930),	-- Recipe: Flask of the Whispered Pact (Rank 2)
 								i(136716),	-- Caged Horror
 								i(136770),	-- Drape of the Raven Lord
 								i(134370),	-- Felbat Leather Leggings

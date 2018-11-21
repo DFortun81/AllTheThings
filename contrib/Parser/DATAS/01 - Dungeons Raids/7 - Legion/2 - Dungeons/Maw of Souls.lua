@@ -82,7 +82,8 @@ _.Instances =
 							})),
 							cr(96759, e(1663, {	-- Helya
 								ach(10808),	-- Heroic: Maw of Souls
-								i(137899), -- Recipe: Dreadleather Jerkin (Rank 3)
+								i(137899),	-- Recipe: Dreadleather Jerkin (Rank 3)
+								i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
 								i(136696, { -- Recipe: Terrorspike
 									["description"] = "This recipe should only drop while you're actively on |cFFFFD700Maw of Souls: Hammered By The Storm|r or after you've completed it.",
 									["sourceQuest"] = 38532, -- Maw of Souls: Hammered By The Storm
@@ -144,6 +145,7 @@ _.Instances =
 									},
 									["description"] = "Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.",
 								}),
+								i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
 								i(137331),	-- Belt of Eternal Torment
 								i(134195),	-- Biornskin Gloves
 								i(134221),	-- Bonespeaker Mantle

@@ -139,6 +139,7 @@ _.Instances =
 							})),
 							cr(95676, e(1489, {	-- Odyn
 								ach(10788),	-- Heroic: Halls of Valor
+								i(127933),	-- Recipe: Flask of Ten Thousand Scars (Rank 2)
 								i(134192),	-- Biornskin Bracer
 								i(136776),	-- Bjorn's Hunting Strap
 								i(134217),	-- Bonespeaker Gloves
