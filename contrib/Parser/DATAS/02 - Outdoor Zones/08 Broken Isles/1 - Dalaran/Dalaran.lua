@@ -334,7 +334,7 @@ _.Zones =
 						},
 						["collectible"] = false,
 					}),
-					n(-176, { -- Weekly World Events
+					n(-176, { 	-- Weekly World Events
 						["description"] = "Only one of the following quests is offered in Dalaran each week.",
 						["qg"] = 111246,	-- Archmage Timear
 						["groups"] = {
@@ -528,7 +528,7 @@ _.Zones =
 						},
 						["requireSkill"] = 171,
 					}),
-					n(-181, { -- Blacksmithing
+					n(-181, { 	-- Blacksmithing
 						["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
 							q(38499, { -- Strange New Ores
 								["groups"] = {
@@ -896,6 +896,14 @@ _.Zones =
 					}),
 					n(-185, {	-- Inscription
 						["groups"] = {						
+							i(136909, {	-- Aethrem Crystal
+								["g"] = {
+									q(39942, {	-- Aethrem Crystal
+										recipe(209658),	-- Mass Mill Aethril
+									}),
+								},
+								["description"] = "Chance to create item when milling Aethril.",
+							}),
 							q(39961, {	-- An Embarrassing Revelation
 								["qg"] = 244651,	-- Steamy Romance Novel
 							}),
@@ -914,6 +922,14 @@ _.Zones =
 								["qg"] = 97748,	-- Nicholo Swiftfuse
 								["sourceQuests"] = { 39947 },	-- Not So Complex?
 							}),
+							i(136912, {	-- Bulging Nightmare Pod
+								["g"] = {
+									q(40062, {	-- Bulging Nightmare Pod
+										recipe(209659),	-- Mass Mill Dreamleaf
+									}),
+								},
+								["description"] = "Chance to create item when milling Dreamleaf.",
+							}),
 							q(39957, {	-- Demon Ink
 								["groups"] = {
 									recipe(191659),	-- Darkmoon Card of the Legion (Rank 1)
@@ -921,18 +937,23 @@ _.Zones =
 								["qg"] = 92195,	-- Professor Pallin
 								["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
 							}),
-							--q(39942),	-- Aethrem Crystal -- given by i(136909)
-							--q(40062),	-- Bulging Nightmare Pod -- granted by i(136912)
 							q(39932, {	-- Fish Ink
 								["qg"] = 92195,	-- Professor Pallin
 							}),
-							--q(40065)	-- Fjarnsk -- granted by i(136916)
+							i(136916, {	-- Fjarnsk
+								["g"] = {
+									q(40065, {	-- Fjarnsk
+										recipe(209661),	-- Mass Mill Fjarnskaggl
+									}),
+								},
+								["description"] = "Chance to create item when milling Fjarnskaggl.",
+							}),
 							q(39953, {	-- Halls of Valor: Vision of Valor
 								["qg"] = 92195,	-- Professor Pallin
 							}),
 							q(39954, {	-- Mass Milling Techniques
 								["groups"] = {
-									recipe(210116),	-- Mass mill Yseralline Seeds
+									recipe(210116),	-- Mass Mill Yseralline Seeds
 								},
 								["qg"] = 92195,	-- Professor Pallin
 							}),
@@ -950,8 +971,22 @@ _.Zones =
 							q(39934, {	-- Our New Allies
 								["qg"] = 92195,	-- Professor Pallin
 							}),
-							--q(39951),	-- Roseate Essence -- granted by i(136917)
-							--q(39952)	-- Sallow Essence -- granted by i(136918)
+							i(136917, {	-- Roseate Essence
+								["g"] = {
+									q(39951, {	-- Roseate Essence
+										recipe(209662),	-- Mass Mill Starlight Rose
+									}),
+								},
+								["description"] = "Chance to create item when milling Starlight Rose.",
+							}),
+							i(136918, {	-- Sallow Essence
+								["g"] = {
+									q(39952, {	-- Sallow Essence
+										recipe(209664),	-- Mass Mill Felwort
+									}),
+								},
+								["description"] = "Chance to create item when milling Felwort.",
+							}),
 							q(39847, {	-- Sign This
 								["groups"] = {
 									recipe(195115),	-- Inscription (lvl 800)
@@ -982,22 +1017,6 @@ _.Zones =
 							qa(43726, {	-- Tales of the Broken Isles
 								["qg"] = 97362,	-- Dazzik "Proudmoore"
 							}),
-							q(39943, {	-- The Burdens of Hunting
-								["groups"] = {
-									--recipe(192582),	-- Glyph of Tattered Wings -- removed?
-								},
-								["qgs"] = {
-									97734,	-- Zaria Shadowheart
-									98026,	-- Baric Stormrunner
-								},
-								["sourceQuests"] = {
-									39938,	-- Containing the Demon Within
-									39940,	-- Runes of Power
-									39941,	-- Control is Key
-									40060,	-- Containing the Demon Within
-									40063,	-- Control is Key
-								},
-							}),
 							q(39933, {	-- The Card Shark
 								["groups"] = {
 									recipe(192854),	-- Prophecy Tarot (Rank 1)
@@ -1020,7 +1039,14 @@ _.Zones =
 								},
 								["qg"] = 90417,	-- Archmage Khadgar
 							}),
-							--q(40064),	-- Woody Seed Cluster -- granted by i(136915)
+							i(136915, {	-- Woody Seed Cluster
+								["g"] = {
+									q(40064, {	-- Woody Seed Cluster
+										recipe(209660),	-- Mass Mill Foxflower
+									}),
+								},
+								["description"] = "Chance to create item when milling Foxflower.",
+							}),
 						},
 						["requireSkill"] = 773,
 					}),
@@ -4861,6 +4887,72 @@ _.Zones =
 						i(137803),	-- Design: Twisted Pandemonite Choker
 						i(137806),	-- Design: Vindictive Pandemonite Choker
 					}),
+					{	-- Jang Quillpaw <Inscription Supplies>
+						["npcID"] = 93544,	-- Jang Quillpaw <Inscription Supplies>
+						["coord"] = { 41.44, 36.72 },
+						["g"] = {
+							{	-- Technique: Glyph of Autumnal Bloom*
+								["itemID"] = 141042,	-- Technique: Glyph of Autumnal Bloom
+							},
+							{	-- Technique: Glyph of Blackout*
+								["itemID"] = 137733,	-- Technique: Glyph of Blackout
+							},
+							{	-- Technique: Glyph of Cracked Ice*
+								["itemID"] = 141030,	-- Technique: Glyph of Cracked Ice
+							},
+							{	-- Technique: Glyph of Crackling Crane Lightning*
+								["itemID"] = 137735,	-- Technique: Glyph of Crackling Crane Lightning
+							},
+							{	-- Technique: Glyph of Falling Thunder*
+								["itemID"] = 141900,	-- Technique: Glyph of Falling Thunder
+							},
+							{	-- Technique: Glyph of Fel Imp*
+								["itemID"] = 137731,	-- Technique: Glyph of Fel Imp
+							},
+							{	-- Technique: Glyph of Fel-Enemies*
+								["itemID"] = 141036,	-- Technique: Glyph of Fel-Enemies
+							},
+							{	-- Technique: Glyph of Ghostly Fade*
+								["itemID"] = 137730,	-- Technique: Glyph of Ghostly Fade
+							},
+							{	-- Technique: Glyph of Mana Touched Souls*
+								["itemID"] = 141037,	-- Technique: Glyph of Mana Touched Souls
+							},
+							{	-- Technique: Glyph of Sparkles*
+								["itemID"] = 137732,	-- Technique: Glyph of Sparkles
+							},
+							{	-- Technique: Glyph of Stellar Flare*
+								["itemID"] = 137737,	-- Technique: Glyph of Stellar Flare
+							},
+							{	-- Technique: Glyph of the Blazing Savior*
+								["itemID"] = 141068,	-- Technique: Glyph of the Blazing Savior
+							},
+							{	-- Technique: Glyph of the Crimson Shell*
+								["itemID"] = 141033,	-- Technique: Glyph of the Crimson Shell
+							},
+							{	-- Technique: Glyph of the Dire Stable*
+								["itemID"] = 141046,	-- Technique: Glyph of the Dire Stable
+							},
+							{	-- Technique: Glyph of the Feral Chameleon*
+								["itemID"] = 141040,	-- Technique: Glyph of the Feral Chameleon
+							},
+							{	-- Technique: Glyph of the Inquisitor's Eye*
+								["itemID"] = 141062,	-- Technique: Glyph of the Inquisitor's Eye
+							},
+							{	-- Technique: Glyph of the Queen*
+								["itemID"] = 137738,	-- Technique: Glyph of the Queen
+							},
+							{	-- Technique: Glyph of the Sentinel*
+								["itemID"] = 137734,	-- Technique: Glyph of the Sentinel
+							},
+							{	-- Technique: Glyph of the Spectral Raptor*
+								["itemID"] = 137736,	-- Technique: Glyph of the Spectral Raptor
+							},
+							{	-- Technique: Glyph of Yu'lon's Grace*
+								["itemID" ] = 141055,	-- Technique: Glyph of Yu'lon's Grace
+							},
+						},
+					},
 					n(96483, { 	-- Jepetto Joybuzz <Toymaker>
 						i(54436),	-- Blue Clockwork Rocket Bot Pet
 						i(95621),	-- Warbot Ignition Key Pet
@@ -7955,6 +8047,12 @@ _.Zones =
 								i(139425),	-- Imp-Binding Contract
 							}),
 						}),
+						n(97361, {	-- Oxana Demonslay <Weapons and Secrets>
+							currency(1149, { -- Sightless Eyes
+								i(137831),	-- Design: Vindictive Pandemonite Choker
+								i(141038),	-- Technique: Glyph of Shadow-Enemies
+							}),
+						}),
 						n(107760, { -- Strap Bucklebolt <Belts>
 							currency(1149, { -- Sightless Eyes
 								i(137901, { -- Recipe: Battlebound Girdle Rank 2
@@ -8007,8 +8105,16 @@ _.Zones =
 								}),
 							}),
 						}),
+						n(97366, {	-- The Widow <Tools of Deception>
+							currency(1149, { -- Sightless Eyes
+								i(137829),	-- Design: Subtle Shadowruby Pendant
+								i(137706),	-- Schematic: Gunpowder Charge
+								i(137720),	-- Schematic: Gunpowder Charge
+								i(141057),	-- Technique: Glyph of Flash Bang
+							}),
+						}),
 					}),
-					n(0, { 		-- Zone Drops
+					n(0, { 	-- Zone Drops
 						i(139572, {	-- Lost Codex of the Amani
 							["crs"] = {
 								97380,	-- Splint

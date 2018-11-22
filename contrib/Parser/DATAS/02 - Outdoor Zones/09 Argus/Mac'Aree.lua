@@ -674,7 +674,8 @@ _.Zones =
 				n(-16, { 	-- Rares
 					n(126887, { -- Ataxon
 						["groups"] = {
-							i(153056), -- Grasping Manifestation
+							i(153034),	-- Technique: Glyph of the Voidling
+							i(153056),	-- Grasping Manifestation
 						},
 						["questID"] = 48709
 					}),

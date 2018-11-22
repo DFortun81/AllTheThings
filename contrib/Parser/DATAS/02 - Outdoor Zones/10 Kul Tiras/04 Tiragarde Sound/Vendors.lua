@@ -76,7 +76,8 @@ _.Zones =
 							},
 						}),
 					]]--
-						n(142838, {	-- Grumpy Grimble
+						{	-- Grumpy Grimble
+							["npcID"] = 142838,	-- Grumpy Grimble
 							["g"] = {
 								i(162030, {	-- Technique: Glyph of the Humble Flyer
 									["spellID"] = 276121,
@@ -84,7 +85,41 @@ _.Zones =
 							},
 							["description"] = "Requires 150 BfA Inscription to trigger conversation for the recipe.",
 							["coord"] = { 49.8, 36.8 },
-						}),
+						},
+						{	-- Roko <Wandering Merchant>
+							["npcID"] = 128702,	-- Roko <Wandering Merchant>
+							["coord"] = { 79.6, 81.8 },
+							["g"] = {
+							-- These are all Legion recipes
+								{	-- Technique: Glyph of Autumnal Bloom*
+									["itemID"] = 141042,	-- Technique: Glyph of Autumnal Bloom
+								},
+								{	-- Technique: Glyph of Cracked Ice*
+									["itemID"] = 141030,	-- Technique: Glyph of Cracked Ice
+								},
+								{	-- Technique: Glyph of Mana Touched Souls*
+									["itemID"] = 141037,	-- Technique: Glyph of Mana Touched Souls
+								},
+								{	-- Technique: Glyph of the Blazing Savior*
+									["itemID"] = 141068,	-- Technique: Glyph of the Blazing Savior
+								},
+								{	-- Technique: Glyph of the Crimson Shell*
+									["itemID"] = 141033,	-- Technique: Glyph of the Crimson Shell
+								},
+								{	-- Technique: Glyph of the Dire Stable*
+									["itemID"] = 141046,	-- Technique: Glyph of the Dire Stable
+								},
+								{	-- Technique: Glyph of the Feral Chameleon*
+									["itemID"] = 141040,	-- Technique: Glyph of the Feral Chameleon
+								},
+								{	-- Technique: Glyph of the Inquisitor's Eye*
+									["itemID"] = 141062,	-- Technique: Glyph of the Inquisitor's Eye
+								},
+								{	-- Technique: Glyph of Yu'lon's Grace*
+									["itemID" ] = 141055,	-- Technique: Glyph of Yu'lon's Grace
+								},
+							},
+						},
 					},
 				}),
 			},

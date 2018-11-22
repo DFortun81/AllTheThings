@@ -10,6 +10,12 @@ _.Instances =
 				["groups"] = {
 					d(2, {	-- Heroic
 						["groups"] = {
+							n(111057, {	-- The Rat King
+								["g"] = {
+									i(141053),	-- Technique: Glyph of Polymorphic Proportions
+								},
+								["description"] = "This rare is only available during the WQ The Arcway: Wandering Plague.",
+							}),
 							cr(98203, e(1497, {	-- Ivanyr
 								i(134269),	-- Arcane Defender's Belt
 								i(134501),	-- Crackling Overcharge Chestguard
@@ -76,6 +82,12 @@ _.Instances =
 					}),
 					d(23, {	-- Mythic
 						["groups"] = {
+							n(111057, {	-- The Rat King
+								["g"] = {
+									i(141053),	-- Technique: Glyph of Polymorphic Proportions
+								},
+								["description"] = "This rare is only available during the WQ The Arcway: Wandering Plague.",
+							}),
 							cr(98203, e(1497, {	-- Ivanyr
 								ach(10773),	-- Arcanic Cling
 								i(134269),	-- Arcane Defender's Belt

@@ -630,7 +630,7 @@ _.Zones =
 					}),
 					n(126946, { -- Inquisitor Vethroz
 						["groups"] = {
-							-- i(151543), -- Technique: Glyph of Fel-Touched Shards
+							i(151543), -- Technique: Glyph of Fel-Touched Shards
 						},
 						["questID"] = 48815,
 					}),

@@ -356,7 +356,26 @@ _.ExpansionFeatures =
 							i(140540), -- Dreamgrove Blade
 							i(140542), -- Dreamgrove Spire
 							i(140549), -- Pillar of the Dreamgrove
-							
+							{	-- Tome of the Wilds: Charm Woodland Creature
+								["itemID"] = 136795,	-- Tome of the Wilds: Charm Woodland Creature
+								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
+							},
+							{	-- Tome of the Wilds: Flap
+								["itemID"] = 136794,	-- Tome of the Wilds: Flap
+								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
+							},
+							{	-- Tome of the Wilds: Stag Form
+								["itemID"] = 136789,	-- Tome of the Wilds: Stag Form
+								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
+							},
+							{	-- Tome of the Wilds: Track Beasts
+								["itemID"] = 136790,	-- Tome of the Wilds: Track Beasts
+								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
+							},
+							{	-- Tome of the Wilds: Treant Form
+								["itemID"] = 136787,	-- Tome of the Wilds: Treant Form
+								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
+							},
 						}),
 					}),
 					m(715, { -- Emerald Dreamway

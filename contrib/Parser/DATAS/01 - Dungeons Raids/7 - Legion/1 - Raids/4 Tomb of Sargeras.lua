@@ -240,6 +240,7 @@ _.Instances =
 							}),
 							ach(11790, { 	-- Deceiver's Fall
 								cr(117269, e(1898, {	-- Kil'jaeden
+									i(151539),	-- Technique: Glyph of Ember Shards
 									i(147034),
 									i(146988),
 									i(147048),
@@ -458,6 +459,7 @@ _.Instances =
 								i(147052)
 							})),
 							cr(117269, e(1898, {	-- Kil'jaeden
+								i(151539),	-- Technique: Glyph of Ember Shards
 								i(147072),
 								i(147066),
 								i(147034),
@@ -675,6 +677,7 @@ _.Instances =
 								i(147052)
 							})),
 							cr(117269, e(1898, {	-- Kil'jaeden
+								i(151539),	-- Technique: Glyph of Ember Shards
 								i(147072),
 								i(147066),
 								i(147034),
@@ -892,6 +895,7 @@ _.Instances =
 								i(147052)
 							})),
 							cr(117269, e(1898, {	-- Kil'jaeden
+								i(151539),	-- Technique: Glyph of Ember Shards
 								i(147072),
 								i(147066),
 								i(147034),

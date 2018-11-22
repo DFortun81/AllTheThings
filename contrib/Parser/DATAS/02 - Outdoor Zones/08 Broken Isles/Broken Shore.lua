@@ -1405,6 +1405,14 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\Ability_Racial_PackHobgoblin",	
 				}),				
 				n(-2, { 	-- Vendors
+					{	-- Syaith <Loaner Demon>
+						["npcID"] = 118403,	-- Syaith <Loaner Demon>
+						["g"] = {
+							i(147120),	-- Technique: Glyph of the Shadow Succubus
+						},
+						["description"] = "/kiss her during Where There is a Whip... WQ.",
+						["coord"] = { 49.0, 55.8 },
+					},
 					n(120076, { -- Treasure Master Iks'reeged
 						currency(1226, { -- Nethershard
 							i(142452), -- Lingering Wyrmtongue Essence Toy

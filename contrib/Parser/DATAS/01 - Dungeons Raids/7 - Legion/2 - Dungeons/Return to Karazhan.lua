@@ -20,6 +20,24 @@ _.Instances =
 					}),
 					d(2, {		-- Heroic
 						["groups"] = {
+							n(-1, { -- Common Boss Drop
+								["groups"] = {
+									i(143615),	-- Technique: Glyph of Crackling Ox Lightning
+									i(143616),	-- Technique: Glyph of the Trusted Steed
+								},
+								["crs"] = {
+									114284,	-- Opera Hall: Wikket
+									114261,	-- Opera Hall: Westfall Story
+									114328,	-- Opera Hall: Beautiful Beast
+									113971,	-- Maiden of Virtue
+									114262, -- Attumen the Huntsman
+									114312,	-- Moroes
+									114247,	-- The Curator
+									114350,	-- Shade of Medivh
+									116494, -- Mana Devourer
+									114790, -- Viz'aduum the Watcher
+								},
+							}),
 							cr(114284, e(1820, {	-- Opera Hall: Wikket (Elfyra; Galindre 114251)
 								i(142298),	-- Astonishingly Scarlet Slippers
 								i(142204),	-- Boots of False Promise
@@ -111,7 +129,7 @@ _.Instances =
 					}),
 					d(23, {		-- Mythic
 						["groups"] = {
-							n(-4, {
+							n(-4, {	-- Achievements
 								ach(11433),	-- Burn After Reading
 								ach(11430),	-- One Night in Karazhan
 								ach(11335),	-- Season Tickets

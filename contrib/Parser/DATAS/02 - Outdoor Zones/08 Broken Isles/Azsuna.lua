@@ -1914,8 +1914,55 @@ _.Zones =
 						}),
 						n(-185, { -- Inscription
 							["groups"] = {
-								q(39938), -- Containing the Demon Within
-								q(39941), -- Control is Key
+								q(39938, {	-- Containing the Demon Within
+									["g"] = {
+										i(137743),	-- Technique: Glyph of Fallow Wings
+									},
+									["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
+								}),
+								q(40060, {	-- Containing the Demon Within
+									["g"] = {
+										i(137743),	-- Technique: Glyph of Fallow Wings
+									},
+									["classes"] = { 12 },
+								}),
+								q(39941, {	-- Control is Key
+									["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
+								}),
+								q(40063, {	-- Control is Key
+									["classes"] = { 12 },
+								}),
+								q(39935, {	-- The Price of Power
+									["g"] = {
+										i(137741),	-- Technique: Glyph of Fel Touched Souls
+									},
+									["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
+								}),
+								q(40057, {	-- The Price of Power
+									["g"] = {
+										i(137741),	-- Technique: Glyph of Fel Touched Souls
+									},
+									["classes"] = { 12 },
+								}),
+								q(39940, {	-- Runes of Power
+									i(137742),	-- Technique: Glyph of Crackling Flames
+								}),
+								q(39943, {	-- The Burdens of Hunting
+									["groups"] = {
+										i(137744),	-- Technique: Glyph of Tattered Wings
+									},
+									["qgs"] = {
+										97734,	-- Zaria Shadowheart
+										98026,	-- Baric Stormrunner
+									},
+									["sourceQuests"] = {
+										39938,	-- Containing the Demon Within
+										40060,	-- Containing the Demon Within
+										39940,	-- Runes of Power
+										39941,	-- Control is Key
+										40063,	-- Control is Key
+									},
+								}),
 							},
 							["requireSkill"] = 773,
 						}),
@@ -2020,8 +2067,7 @@ _.Zones =
 					q(42221),	-- Chief Bitterbrine										
 					q(44673),	-- Commander Soraax
 					q(38946),	-- Consult the Locals
-					q(40060),	-- Containing the Demon Within
-					q(40063),	-- Control is Key
+					
 					q(41157),	-- Corrupted Studies
 					q(42420),	-- Court of Farondis
 					q(46020),	-- Crystal Containment
@@ -2103,13 +2149,11 @@ _.Zones =
 					q(41771),	-- Recharging the Blade
 					q(40194),	-- Reclaimed Cargo
 					q(43523),	-- Repaid Debt
-					
 					q(38791),	-- Rethu's Horn
 					q(38792),	-- Rethu's Lesson
 					q(38794),	-- Rethu's Sacrifice
 					q(38803),	-- Rin'thissa
 					q(39905),	-- Ringing True
-					q(39940),	-- Runes of Power
 					q(38947),	-- Runic Catgut
 					q(43527),	-- Saving the Guard
 					q(40207),	-- Scales of the Arcane
@@ -2143,7 +2187,7 @@ _.Zones =
 					q(44875),	-- The Art of Flow
 					q(43373),	-- The Best and Brightest
 					q(37466),	-- The Broken Academy
-					q(39943),	-- The Burdens of Hunting
+					
 					q(39910),	-- The Druid's Debt
 					q(43520),	-- The Emerald Nightmare: In Nightmares
 					q(45028),	-- The Fate of Kanrethad										
@@ -2213,8 +2257,6 @@ _.Zones =
 					q(43505),	-- The Power Within
 					q(43503),	-- The Power Within
 					q(43496),	-- The Power Within
-					q(39935),	-- The Price of Power
-					q(40057),	-- The Price of Power
 					q(41168),	-- The Purple Hills of Mac'Aree
 					q(41170),	-- The Relic Renewed
 					q(41171),	-- The Reliquary Calls
@@ -2672,6 +2714,15 @@ _.Zones =
 				}),	
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(141043),	-- Technique: Glyph of Arachnophobia
+						i(141035),	-- Technique: Glyph of Fel Wings
+						i(141060),	-- Technique: Glyph of Pebbles
+						i(141054),	-- Technique: Glyph of Smolder
+						i(141032),	-- Technique: Glyph of the Chilled Shell
+						i(141039),	-- Technique: Glyph of the Doe
+						i(141049),	-- Technique: Glyph of the Hook
+						i(141064),	-- Technique: Glyph of the Shivarra
+						i(141051),	-- Technique: Glyph of the Trident
 						i(121015, { -- Academy Faculty Pin
 							["groups"] = {
 							},
@@ -2880,6 +2931,7 @@ _.Zones =
 						108340,	-- Ancient Chillwitch
 						108339,	-- Ancient Flamecaller
 						108335,	-- Ancient Flamewraith
+						108337,	-- Ancient Frostwhisperer
 						107657,	-- Arcanist Shal'iman
 						109641,	-- Arcanor Prime
 						88855,	-- Athissa
@@ -2989,6 +3041,7 @@ _.Zones =
 						88888,	-- Sentry Brute
 						111571,	-- Siltshore Crab
 						93513,	-- Skrog Ambassador
+						108343,	-- Smoldering Familiar
 						107362,	-- Soulreaver
 						91431,	-- Spectral Student
 						111456,	-- Spiderling

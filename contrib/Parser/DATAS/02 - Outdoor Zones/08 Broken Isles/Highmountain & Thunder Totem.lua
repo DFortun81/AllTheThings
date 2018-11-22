@@ -1962,11 +1962,28 @@ _.Zones =
 --]]
 				}),
 				n(-2, { 	-- Vendors
-					n(93975, { -- Leyweaver Yaphisteia
+					n(93975, {	-- Leyweaver Yaphisteia
 						i(127027, { -- Pattern: Imbued Silkweave Slippers
 							i(126996), -- Imbued Silkweave Slippers
 						}),
 					}),
+					{	-- Lucas Sigmund <Repairs>
+						["npcID"] = 94100,	-- Lucas Sigmund <Repairs>
+						["coord"] = { 39.98, 52.36 },
+						["g"] = {
+							{	-- Technique: Glyph of Nesingwary's Nemeses
+								["itemID"] = 141044,	-- Technique: Glyph of Nesingwary's Nemeses
+							},
+							{	-- Technique: Glyph of the Headhunter
+								["itemID"] = 141048,	-- Technique: Glyph of the Headhunter
+								["u"] = 2,
+							},
+							{	-- The Art of Concealment
+								["itemID"] = 136783,	-- The Art of Concealment
+								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
+							},
+						},
+					},
 					n(106902, {	-- Ransa Greyfeather <Highmountain Emissary>
 						i(123948, { -- Recipe: Demonsteel Armguards (Rank 3)
 							["groups"] = {
@@ -1999,7 +2016,7 @@ _.Zones =
 						i(139597), -- Mountainforged Chain Hauberk
 						i(140576), -- Tabard of the Hightmountain
 					}),
-					n(99574, { -- Slyhoof the Shameless Shaman <Used Totem Vendor>
+					n(99574, { 	-- Slyhoof the Shameless Shaman <Used Totem Vendor>
 						i(140336), -- Brulfist Idol Toy
 					}),
 					n(115887, { -- Trinket
@@ -2104,6 +2121,15 @@ _.Zones =
 				}),
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(141043),	-- Technique: Glyph of Arachnophobia
+						i(141035),	-- Technique: Glyph of Fel Wings
+						i(141060),	-- Technique: Glyph of Pebbles
+						i(141054),	-- Technique: Glyph of Smolder
+						i(141032),	-- Technique: Glyph of the Chilled Shell
+						i(141039),	-- Technique: Glyph of the Doe
+						i(141049),	-- Technique: Glyph of the Hook
+						i(141064),	-- Technique: Glyph of the Shivarra
+						i(141051),	-- Technique: Glyph of the Trident
 						i(121069, { -- Brulwurm Scale
 							["groups"] = {
 							},

@@ -1885,9 +1885,25 @@ _.Zones =
 						i(44606),	-- Toy Train Set Toy
 						i(45057),	-- Wind-Up Train Wreck Toy
 					}),
-					n(106887, { -- Cravitz Lorent <Shady Book Dealer>
-						i(136927),	-- Scarlet Confessional Book
-					}),
+					{	-- Cravitz Lorent <Shady Book Dealer>
+						["npcID"]= 106887,	-- Cravitz Lorent <Shady Book Dealer>
+						["g"] = {
+							{	-- Technique: Glyph of Burnout
+								["itemID"] = 141056,	-- Technique: Glyph of Burnout
+							},
+							{	-- Scarlet Confessional Book
+								["itemID"] = 136927,	-- Scarlet Confessional Book
+							},
+							{	-- Tome of Hex: Cockroach
+								["itemID"] = 136972,	-- Tome of Hex: Cockroach
+								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
+							},
+							{	-- Tome of the Wilds: Treant Form
+								["itemID"] = 136803,	-- Dirty Tricks, Vol 1: Detection
+								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
+							},
+						},
+					},
 					n(34252, { 	-- Dubin Clay <Plate Armor Merchant>
 						i(45335),	-- Valorous Darkruned Chestguard
 						i(45336),	-- Valorous Darkruned Faceguard
