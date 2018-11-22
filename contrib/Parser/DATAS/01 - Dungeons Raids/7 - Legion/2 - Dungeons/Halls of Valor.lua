@@ -70,6 +70,8 @@ _.Instances =
 							})),
 							cr(95676, e(1489, {	-- Odyn
 								ach(10786),	-- Halls of Valor
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134192),	-- Biornskin Bracer
 								i(136776),	-- Bjorn's Hunting Strap
 								i(134217),	-- Bonespeaker Gloves
@@ -140,6 +142,8 @@ _.Instances =
 							cr(95676, e(1489, {	-- Odyn
 								ach(10788),	-- Heroic: Halls of Valor
 								i(127933),	-- Recipe: Flask of Ten Thousand Scars (Rank 2)
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134192),	-- Biornskin Bracer
 								i(136776),	-- Bjorn's Hunting Strap
 								i(134217),	-- Bonespeaker Gloves
@@ -217,6 +221,8 @@ _.Instances =
 								i(137911),	-- Recipe: Battlebound Grips (Rank 3)
 								i(127933),	-- Recipe: Flask of Ten Thousand Scars (Rank 2)
 								i(137607),	-- Recipe: Leystone Helm (Rank 3)
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134192),	-- Biornskin Bracer
 								i(136776),	-- Bjorn's Hunting Strap
 								i(134217),	-- Bonespeaker Gloves

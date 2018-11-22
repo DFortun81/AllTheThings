@@ -11,6 +11,7 @@ _.Zones =
 						["groups"]  = {
 							i(157828, { -- Kirin Tor Chest
 								["groups"] = {
+									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									i(141349, { -- Strange Humming Crystal
 										q(44412, { -- Enemies Everywhere
 											i(141348),	-- Wondrous Wisdomball
@@ -918,10 +919,6 @@ _.Zones =
 								["qg"] = 92458,	-- Deucus Valdera
 								["sourceQuests"] = { 39327 },	-- There's a Scribe for That
 							}),
-							q(40052, {	-- Ancient Vrykul Mastered
-								["qg"] = 97748,	-- Nicholo Swiftfuse
-								["sourceQuests"] = { 39947 },	-- Not So Complex?
-							}),
 							i(136912, {	-- Bulging Nightmare Pod
 								["g"] = {
 									q(40062, {	-- Bulging Nightmare Pod
@@ -1029,9 +1026,11 @@ _.Zones =
 							}),
 							qh(39959, {	-- The Plot Thickens
 								["qg"] = 92195,	-- Professor Pallin
+								["isBreadcrumb"] = true,
 							}),
 							qa(39955, {	-- The Plot Thickens
 								["qg"] = 92195,	-- Professor Pallin
+								["isBreadcrumb"] = true,
 							}),
 							q(43929, {	-- Vantus Mastery
 								["groups"] = {
@@ -3184,6 +3183,16 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						["description"] = "Item spawns shortly after midnight on Saturday and stays up for 2 hours (during the Saturday to Sunday transition).  To find this chest you go to the upper level of the |cFFFFD700Photonic Playground|r, which is connected to the toy shop (You will know it's the right area if you see|cFFFFD700Shandy Glossgleam|r there with his pool).  You will either want to fly past |cFFFFD700Shandy Glossgleam|r or go up the stairs to reach the area.  Once you walk in you will see the chest in between a white chair and a brown chair."
 					}),
+					{	-- Technique: Tome of the Tranquil Mind
+						["objectID"] = 257999,	-- Technique: Tome of the Tranquil Mind
+						["requireSkill"] = 773,	-- Inscription
+						["coord"] = { 41.34, 36.05 },
+						["g"] = {
+							{	-- Technique: Tome of the Tranquil Mind
+								["itemID"] = 141447,	-- Technique: Tome of the Tranquil Mind
+							},
+						},
+					},
 					o(266851, { -- Wand of Simulated Life
 						["groups"] = {
 							i(143534),	-- Wand of Simulated Life
@@ -6570,6 +6579,15 @@ _.Zones =
 						},
 						["coord"] = { 42.2, 32.3 },
 					}),
+					{	-- Professor Pallin <Inscription Trainer>
+						["npcID"]= 92195,	-- Professor Pallin <Inscription Trainer>
+						["coord"] = { 41.50, 37.31 },
+						["g"] = {
+							{	-- Technique: Songs of Battle
+								["itemID"] = 137787,	-- Technique: Songs of Battle
+							},
+						},
+					},
 					n(96978, { 	-- Rafael Langrom <Leather Armor Merchant>
 						a(i(48102)),	-- Malfurion's Headpiece of Conquest
 						a(i(48129)),	-- Malfurion's Robe of Conquest
@@ -7984,9 +8002,7 @@ _.Zones =
 									["classes"] = 3,	-- Hunter/camp
 								}),
 							}),
-							i(136706, { -- Technique: Straszan Mark
-								i(136693),	-- Straszan Mark
-							}),
+							i(136706), -- Technique: Straszan Mark
 							i(137935, { -- Recipe: Leather Love Seat
 								i(129956),	-- Leather Love Seat Toy
 							}),

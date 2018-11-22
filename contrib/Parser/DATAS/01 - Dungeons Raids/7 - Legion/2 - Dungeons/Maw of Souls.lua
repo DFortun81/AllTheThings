@@ -36,6 +36,8 @@ _.Instances =
 							})),
 							cr(96759, e(1663, {	-- Helya
 								ach(10807),	-- Maw of Souls
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(137331),	-- Belt of Eternal Torment
 								i(134195),	-- Biornskin Gloves
 								i(134221),	-- Bonespeaker Mantle
@@ -89,6 +91,8 @@ _.Instances =
 									["sourceQuest"] = 38532, -- Maw of Souls: Hammered By The Storm
 									["requireSkill"] = 164, -- Blacksmithing
 								}),
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(137331),	-- Belt of Eternal Torment
 								i(134195),	-- Biornskin Gloves
 								i(134221),	-- Bonespeaker Mantle
@@ -146,6 +150,8 @@ _.Instances =
 									["description"] = "Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.",
 								}),
 								i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(137331),	-- Belt of Eternal Torment
 								i(134195),	-- Biornskin Gloves
 								i(134221),	-- Bonespeaker Mantle

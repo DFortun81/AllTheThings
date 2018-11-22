@@ -1,5 +1,6 @@
 profession(773, {	-- Inscription
 	filter(200, {	-- Recipes
+	-- Reviewed and updated as of 11.22.2018 BfA 8.0, leaving all items from _Automation in for easier future updates
 		{	-- Legion Inscription
 			["categoryID"] = 450--[[Legion Inscription]],
 			["g"] = {
@@ -178,7 +179,7 @@ profession(773, {	-- Inscription
 						},
 						{	-- Glyph of the Headhunter
 							-- Removed in 8.0
-							["recipeID"] = 225540,	--[[Glyph of the Headhunter]]
+							["recipeID"] = 225540--[[Glyph of the Headhunter]],
 							["u"] = 2,
 						},
 						{	-- Glyph of the Hook
@@ -244,7 +245,16 @@ profession(773, {	-- Inscription
 							["recipeID"] = 247616--[[Vantus Rune: Antorus, the Burning Throne]]
 						},
 						{	-- Vantus Rune: Cenarius
+							["recipeID"] = 192814--[[Vantus Rune: Cenarius]]
+						},
+						{	-- Vantus Rune: Cenarius
+							["recipeID"] = 192866--[[Vantus Rune: Cenarius]]
+						},
+						{	-- Vantus Rune: Cenarius
 							["recipeID"] = 192897--[[Vantus Rune: Cenarius]]
+						},
+						{	-- Vantus Rune: Chronomatic Anomaly
+							["recipeID"] = 192816--[[Vantus Rune: Chronomatic Anomaly]]
 						},
 						{	-- Vantus Rune: Chronomatic Anomaly
 							["recipeID"] = 192868--[[Vantus Rune: Chronomatic Anomaly]]
@@ -253,10 +263,25 @@ profession(773, {	-- Inscription
 							["recipeID"] = 192899--[[Vantus Rune: Chronomatic Anomaly]]
 						},
 						{	-- Vantus Rune: Dragons of Nightmare
+							["recipeID"] = 192811--[[Vantus Rune: Dragons of Nightmare]]
+						},
+						{	-- Vantus Rune: Dragons of Nightmare
+							["recipeID"] = 192863--[[Vantus Rune: Dragons of Nightmare]]
+						},
+						{	-- Vantus Rune: Dragons of Nightmare
 							["recipeID"] = 192894--[[Vantus Rune: Dragons of Nightmare]]
 						},
 						{	-- Vantus Rune: Elerethe Renferal
+							["recipeID"] = 192813--[[Vantus Rune: Elerethe Renferal]]
+						},
+						{	-- Vantus Rune: Elerethe Renferal
+							["recipeID"] = 192865--[[Vantus Rune: Elerethe Renferal]]
+						},
+						{	-- Vantus Rune: Elerethe Renferal
 							["recipeID"] = 192896--[[Vantus Rune: Elerethe Renferal]]
+						},
+						{	-- Vantus Rune: Grand Magistrix Elisande
+							["recipeID"] = 192823--[[Vantus Rune: Grand Magistrix Elisande]]
 						},
 						{	-- Vantus Rune: Grand Magistrix Elisande
 							["recipeID"] = 192875--[[Vantus Rune: Grand Magistrix Elisande]]
@@ -265,37 +290,79 @@ profession(773, {	-- Inscription
 							["recipeID"] = 192906--[[Vantus Rune: Grand Magistrix Elisande]]
 						},
 						{	-- Vantus Rune: Guarm
+							["recipeID"] = 229178--[[Vantus Rune: Guarm]]
+						},
+						{	-- Vantus Rune: Guarm
+							["recipeID"] = 229181--[[Vantus Rune: Guarm]]
+						},
+						{	-- Vantus Rune: Guarm
 							["recipeID"] = 229184--[[Vantus Rune: Guarm]]
+						},
+						{	-- Vantus Rune: Gul'dan
+							["recipeID"] = 192824--[[Vantus Rune: Gul'dan]]
+						},
+						{	-- Vantus Rune: Gul'dan
+							["recipeID"] = 192876--[[Vantus Rune: Gul'dan]]
 						},
 						{	-- Vantus Rune: Gul'dan
 							["recipeID"] = 192907--[[Vantus Rune: Gul'dan]]
 						},
-						{	-- Vantus Rune: Gul'dan
-							["recipeID"] = 192876--[[Vantus Rune: Gul'dan]]
+						{	-- Vantus Rune: Helya
+							["recipeID"] = 229179--[[Vantus Rune: Helya]]
+						},
+						{	-- Vantus Rune: Helya
+							["recipeID"] = 229182--[[Vantus Rune: Helya]]
 						},
 						{	-- Vantus Rune: Helya
 							["recipeID"] = 229185--[[Vantus Rune: Helya]]
 						},
 						{	-- Vantus Rune: High Botanist Tel'arn
-							["recipeID"] = 192903--[[Vantus Rune: High Botanist Tel'arn]]
+							["recipeID"] = 192820--[[Vantus Rune: High Botanist Tel'arn]]
 						},
 						{	-- Vantus Rune: High Botanist Tel'arn
 							["recipeID"] = 192872--[[Vantus Rune: High Botanist Tel'arn]]
+						},
+						{	-- Vantus Rune: High Botanist Tel'arn
+							["recipeID"] = 192903--[[Vantus Rune: High Botanist Tel'arn]]
+						},
+						{	-- Vantus Rune: Il'gynoth, The Heart of Corruption
+							["recipeID"] = 192810--[[Vantus Rune: Il'gynoth, The Heart of Corruption]]
+						},
+						{	-- Vantus Rune: Il'gynoth, The Heart of Corruption
+							["recipeID"] = 192862--[[Vantus Rune: Il'gynoth, The Heart of Corruption]]
 						},
 						{	-- Vantus Rune: Il'gynoth, The Heart of Corruption
 							["recipeID"] = 192893--[[Vantus Rune: Il'gynoth, The Heart of Corruption]]
 						},
 						{	-- Vantus Rune: Krosus
-							["recipeID"] = 192904--[[Vantus Rune: Krosus]]
+							["recipeID"] = 192821--[[Vantus Rune: Krosus]]
 						},
 						{	-- Vantus Rune: Krosus
 							["recipeID"] = 192873--[[Vantus Rune: Krosus]]
+						},
+						{	-- Vantus Rune: Krosus
+							["recipeID"] = 192904--[[Vantus Rune: Krosus]]
+						},
+						{	-- Vantus Rune: Nythendra
+							["recipeID"] = 192809--[[Vantus Rune: Nythendra]]
+						},
+						{	-- Vantus Rune: Nythendra
+							["recipeID"] = 192861--[[Vantus Rune: Nythendra]]
 						},
 						{	-- Vantus Rune: Nythendra
 							["recipeID"] = 192892--[[Vantus Rune: Nythendra]]
 						},
 						{	-- Vantus Rune: Odyn
+							["recipeID"] = 229177--[[Vantus Rune: Odyn]]
+						},
+						{	-- Vantus Rune: Odyn
+							["recipeID"] = 229180--[[Vantus Rune: Odyn]]
+						},
+						{	-- Vantus Rune: Odyn
 							["recipeID"] = 229183--[[Vantus Rune: Odyn]]
+						},
+						{	-- Vantus Rune: Skorpyron
+							["recipeID"] = 192815--[[Vantus Rune: Skorpyron]]
 						},
 						{	-- Vantus Rune: Skorpyron
 							["recipeID"] = 192867--[[Vantus Rune: Skorpyron]]
@@ -304,133 +371,67 @@ profession(773, {	-- Inscription
 							["recipeID"] = 192898--[[Vantus Rune: Skorpyron]]
 						},
 						{	-- Vantus Rune: Spellblade Aluriel
-							["recipeID"] = 192901--[[Vantus Rune: Spellblade Aluriel]]
+							["recipeID"] = 192818--[[Vantus Rune: Spellblade Aluriel]]
 						},
 						{	-- Vantus Rune: Spellblade Aluriel
 							["recipeID"] = 192870--[[Vantus Rune: Spellblade Aluriel]]
 						},
+						{	-- Vantus Rune: Spellblade Aluriel
+							["recipeID"] = 192901--[[Vantus Rune: Spellblade Aluriel]]
+						},
 						{	-- Vantus Rune: Star Augur Etraeus
-							["recipeID"] = 192905--[[Vantus Rune: Star Augur Etraeus]]
+							["recipeID"] = 192822--[[Vantus Rune: Star Augur Etraeus]]
 						},
 						{	-- Vantus Rune: Star Augur Etraeus
 							["recipeID"] = 192874--[[Vantus Rune: Star Augur Etraeus]]
 						},
+						{	-- Vantus Rune: Star Augur Etraeus
+							["recipeID"] = 192905--[[Vantus Rune: Star Augur Etraeus]]
+						},
 						{	-- Vantus Rune: Tichondrius
-							["recipeID"] = 192902--[[Vantus Rune: Tichondrius]]
+							["recipeID"] = 192819--[[Vantus Rune: Tichondrius]]
 						},
 						{	-- Vantus Rune: Tichondrius
 							["recipeID"] = 192871--[[Vantus Rune: Tichondrius]]
+						},
+						{	-- Vantus Rune: Tichondrius
+							["recipeID"] = 192902--[[Vantus Rune: Tichondrius]]
+						},
+						{	-- Vantus Rune: Tomb of Sargeras
+							["recipeID"] = 238577--[[Vantus Rune: Tomb of Sargeras]]
+						},
+						{	-- Vantus Rune: Tomb of Sargeras
+							["recipeID"] = 238578--[[Vantus Rune: Tomb of Sargeras]]
 						},
 						{	-- Vantus Rune: Tomb of Sargeras
 							["recipeID"] = 238579--[[Vantus Rune: Tomb of Sargeras]]
 						},
 						{	-- Vantus Rune: Trilliax
-							["recipeID"] = 192900--[[Vantus Rune: Trilliax]]
+							["recipeID"] = 192817--[[Vantus Rune: Trilliax]]
 						},
 						{	-- Vantus Rune: Trilliax
 							["recipeID"] = 192869--[[Vantus Rune: Trilliax]]
+						},
+						{	-- Vantus Rune: Trilliax
+							["recipeID"] = 192900--[[Vantus Rune: Trilliax]]
+						},
+						{	-- Vantus Rune: Ursoc
+							["recipeID"] = 192808--[[Vantus Rune: Ursoc]]
+						},
+						{	-- Vantus Rune: Ursoc
+							["recipeID"] = 192860--[[Vantus Rune: Ursoc]]
 						},
 						{	-- Vantus Rune: Ursoc
 							["recipeID"] = 192891--[[Vantus Rune: Ursoc]]
 						},
 						{	-- Vantus Rune: Xavius
-							["recipeID"] = 192895--[[Vantus Rune: Xavius]]
-						},
-						{	-- Vantus Rune: Cenarius
-							["recipeID"] = 192866--[[Vantus Rune: Cenarius]]
-						},
-						{	-- Vantus Rune: Chronomatic Anomaly
-							["recipeID"] = 192816--[[Vantus Rune: Chronomatic Anomaly]]
-						},
-						{	-- Vantus Rune: Dragons of Nightmare
-							["recipeID"] = 192863--[[Vantus Rune: Dragons of Nightmare]]
-						},
-						{	-- Vantus Rune: Elerethe Renferal
-							["recipeID"] = 192865--[[Vantus Rune: Elerethe Renferal]]
-						},
-						{	-- Vantus Rune: Grand Magistrix Elisande
-							["recipeID"] = 192823--[[Vantus Rune: Grand Magistrix Elisande]]
-						},
-						{	-- Vantus Rune: Guarm
-							["recipeID"] = 229181--[[Vantus Rune: Guarm]]
-						},
-						{	-- Vantus Rune: Guarm
-							["recipeID"] = 229178--[[Vantus Rune: Guarm]]
-						},
-						{	-- Vantus Rune: Gul'dan
-							["recipeID"] = 192824--[[Vantus Rune: Gul'dan]]
-						},
-						{	-- Vantus Rune: Helya
-							["recipeID"] = 229182--[[Vantus Rune: Helya]]
-						},
-						{	-- Vantus Rune: Helya
-							["recipeID"] = 229179--[[Vantus Rune: Helya]]
-						},
-						{	-- Vantus Rune: High Botanist Tel'arn
-							["recipeID"] = 192820--[[Vantus Rune: High Botanist Tel'arn]]
-						},
-						{	-- Vantus Rune: Il'gynoth, The Heart of Corruption
-							["recipeID"] = 192862--[[Vantus Rune: Il'gynoth, The Heart of Corruption]]
-						},
-						{	-- Vantus Rune: Krosus
-							["recipeID"] = 192821--[[Vantus Rune: Krosus]]
-						},
-						{	-- Vantus Rune: Nythendra
-							["recipeID"] = 192861--[[Vantus Rune: Nythendra]]
-						},
-						{	-- Vantus Rune: Odyn
-							["recipeID"] = 229180--[[Vantus Rune: Odyn]]
-						},
-						{	-- Vantus Rune: Odyn
-							["recipeID"] = 229177--[[Vantus Rune: Odyn]]
-						},
-						{	-- Vantus Rune: Skorpyron
-							["recipeID"] = 192815--[[Vantus Rune: Skorpyron]]
-						},
-						{	-- Vantus Rune: Spellblade Aluriel
-							["recipeID"] = 192818--[[Vantus Rune: Spellblade Aluriel]]
-						},
-						{	-- Vantus Rune: Star Augur Etraeus
-							["recipeID"] = 192822--[[Vantus Rune: Star Augur Etraeus]]
-						},
-						{	-- Vantus Rune: Tichondrius
-							["recipeID"] = 192819--[[Vantus Rune: Tichondrius]]
-						},
-						{	-- Vantus Rune: Tomb of Sargeras
-							["recipeID"] = 238578--[[Vantus Rune: Tomb of Sargeras]]
-						},
-						{	-- Vantus Rune: Trilliax
-							["recipeID"] = 192817--[[Vantus Rune: Trilliax]]
-						},
-						{	-- Vantus Rune: Ursoc
-							["recipeID"] = 192860--[[Vantus Rune: Ursoc]]
+							["recipeID"] = 192812--[[Vantus Rune: Xavius]]
 						},
 						{	-- Vantus Rune: Xavius
 							["recipeID"] = 192864--[[Vantus Rune: Xavius]]
 						},
-						{	-- Vantus Rune: Cenarius
-							["recipeID"] = 192814--[[Vantus Rune: Cenarius]]
-						},
-						{	-- Vantus Rune: Dragons of Nightmare
-							["recipeID"] = 192811--[[Vantus Rune: Dragons of Nightmare]]
-						},
-						{	-- Vantus Rune: Elerethe Renferal
-							["recipeID"] = 192813--[[Vantus Rune: Elerethe Renferal]]
-						},
-						{	-- Vantus Rune: Il'gynoth, The Heart of Corruption
-							["recipeID"] = 192810--[[Vantus Rune: Il'gynoth, The Heart of Corruption]]
-						},
-						{	-- Vantus Rune: Nythendra
-							["recipeID"] = 192809--[[Vantus Rune: Nythendra]]
-						},
-						{	-- Vantus Rune: Tomb of Sargeras
-							["recipeID"] = 238577--[[Vantus Rune: Tomb of Sargeras]]
-						},
-						{	-- Vantus Rune: Ursoc
-							["recipeID"] = 192808--[[Vantus Rune: Ursoc]]
-						},
 						{	-- Vantus Rune: Xavius
-							["recipeID"] = 192812--[[Vantus Rune: Xavius]]
+							["recipeID"] = 192895--[[Vantus Rune: Xavius]]
 						},
 					},
 				},

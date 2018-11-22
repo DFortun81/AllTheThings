@@ -40,6 +40,7 @@ _.Instances =
 								i(128594),	-- Formula: Enchant Neck - Mark of the Distant Army (Rank 2)
 								i(137929),	-- Recipe: Gravenscale Grips (Rank 3)
 								i(127926),	-- Recipe: Potion of Deadly Grace (Rank 2)
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134432),	-- Amice of the Unfurling Tempest
 								i(134271),	-- Arcane Defender's Pants
@@ -96,6 +97,7 @@ _.Instances =
 								i(128594),	-- Formula: Enchant Neck - Mark of the Distant Army (Rank 2)
 								i(137929),	-- Recipe: Gravenscale Grips (Rank 3)
 								i(127926),	-- Recipe: Potion of Deadly Grace (Rank 2)
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134432),	-- Amice of the Unfurling Tempest
 								i(134271),	-- Arcane Defender's Pants

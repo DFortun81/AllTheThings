@@ -118,6 +118,8 @@ _.Instances =
 							})),
 							cr(114790, e(1838, {	-- Viz'aduum the Watcher
 								ach(11929),	-- Heroic: Return to Karazhan
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(142167),	-- Eye of Command
 								i(142132),	-- Doomstride Footguards
 								i(142151),	-- Leggings of Countless Worlds
@@ -229,6 +231,8 @@ _.Instances =
 							})),
 							cr(114790, e(1838, {	-- Viz'aduum the Watcher
 								ach(11429),	-- Mythic: Return to Karazhan
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(142167),	-- Eye of Command
 								i(142132),	-- Doomstride Footguards
 								i(142151),	-- Leggings of Countless Worlds

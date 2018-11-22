@@ -63,6 +63,7 @@ _.Instances =
 								i(127927),	-- Recipe: Potion of the Old War (Rank 2)
 								i(137712),	-- Schematic: Tactical Headgun (Rank 3)
 								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134267),	-- Arcane Defender's Breastplate
 								i(137416),	-- Chain of Causal Links
 								i(137419),	-- Chrono Shard
@@ -140,6 +141,8 @@ _.Instances =
 								i(137897),	-- Recipe: Dreadleather Gloves (Rank 3)
 								i(127927),	-- Recipe: Potion of the Old War (Rank 2)
 								i(137712),	-- Schematic: Tactical Headgun (Rank 3)
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134267),	-- Arcane Defender's Breastplate
 								i(137416),	-- Chain of Causal Links
 								i(137419),	-- Chrono Shard

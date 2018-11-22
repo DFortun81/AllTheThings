@@ -33,6 +33,7 @@ _.Zones =
 						["groups"] = {
 							i(157824, { -- Valarjar Cache
 								["groups"] = {
+									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									n(-322, { -- Cloak
 										i(134202), -- Stormsky Cloak
 									}),
@@ -1275,6 +1276,20 @@ _.Zones =
 									["qg"] = 106904, -- Valdemar Stormseeker
 								}),
 							}),
+							n(-185, { -- Inscription
+								["groups"] = {
+									q(40052, {	-- Ancient Vrykul Mastered
+										["qg"] = 97748,	-- Nicholo Swiftfuse
+										["sourceQuests"] = { 39947 },	-- Not So Complex?
+										["g"] = {
+											{	-- Technique: Scroll of Forgotten Knowledge
+												["itemID"] = 137728,	-- Technique: Scroll of Forgotten Knowledge
+											},
+										},
+									}),
+								},
+								["requireSkill"] = 773,
+							}),
 						}),
 					}),
 				  
@@ -1288,7 +1303,6 @@ _.Zones =
 					q(40265),	-- A Touch of Magic
 					q(38442),	-- A Worthy Challenger
 					q(39903),	-- An Enchanting Home
-					q(40052),	-- Ancient Vrykul Mastered
 					q(41162),	-- And Into the Fel Fire
 					q(45482),	-- Arcane: Fate of the Tideskorn
 					q(46006),	-- Arkuthaz
@@ -1779,6 +1793,7 @@ _.Zones =
 				}),				
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings
 						i(141060),	-- Technique: Glyph of Pebbles

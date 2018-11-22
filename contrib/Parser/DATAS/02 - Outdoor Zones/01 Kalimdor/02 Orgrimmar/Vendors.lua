@@ -292,7 +292,7 @@ _.Zones =
 					n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
 						i(83080),	-- Huojin Tabard
 					}),
-					n(54657, { -- Doris Volanthius <Vicious Gladiator>
+					n(54657, {	-- Doris Volanthius <Vicious Gladiator>
 						i(146641, { --  Arsenal: Vicious Gladiator's Weapons
 							i(61360),	-- Vicious Gladiator's Barrier
 							i(61351),	-- Vicious Gladiator's Baton of Light
@@ -1322,7 +1322,7 @@ _.Zones =
 						i(78845),	-- Mantle of Dying Light
 						i(78846),	-- Necrotic Boneplate Shoulderguards
 					}),
-					n(3322, { -- Kaja <Bow & Rifle Vendor>
+					n(3322, { 	-- Kaja <Bow & Rifle Vendor>
 						i(11307),	-- Massive Longbow
 						i(11306),	-- Sturdy Recurve
 						i(11303),	-- Fine Shortbow
@@ -1398,7 +1398,16 @@ _.Zones =
 						i(10317),	-- Pattern: Pink Mageweave Shirt
 						i(5772),	-- Pattern: Red Woolen Bag
 					}),
-					n(3362, { -- Ogunaro Wolfrunner <Kennel Master>
+					{	-- Nerog <Inscription Trainer>
+						["npcID"] = 46716,	-- Nerog <Inscription Trainer>
+						["coord"] = { 55.2, 55.8 },
+						["g"] = {
+							{	-- Technique: Songs of the Horde
+								["itemID"] = 140565,	-- Technique: Songs of the Horde
+							},
+						},
+					},
+					n(3362, { 	-- Ogunaro Wolfrunner <Kennel Master>
 						i(18796),	-- Horn of the Swift Brown Wolf
 						i(18797),	-- Horn of the Swift Timber Wolf
 						i(18798),	-- Horn of the Swift Grey Wolf
@@ -2185,7 +2194,7 @@ _.Zones =
 						i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
 						i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
 					}),
-					n(3366, { -- Tamar <Leatherworking Supplies>
+					n(3366, { 	-- Tamar <Leatherworking Supplies>
 						i(67095), -- Pattern: Assassin's Chestplate
 						i(67070), -- Pattern: Belt of Nefarious Whispers
 						i(67084), -- Pattern: Charscale Leg Armor

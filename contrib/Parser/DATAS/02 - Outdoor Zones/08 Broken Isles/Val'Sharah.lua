@@ -11,6 +11,7 @@ _.Zones =
 						["groups"] = {
 							i(157822, { -- Dreamweaver Provisions
 								["groups"] = {
+									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									i(130167), -- Thistleleaf Adventurer
 									n(-322, { -- Cloak
 										i(139074),	-- Dreamwalker's Cloak
@@ -1455,6 +1456,7 @@ _.Zones =
 				}),
 				n(0, {		-- Zone Drops
 					["groups"] = {
+						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings
 						i(141060),	-- Technique: Glyph of Pebbles

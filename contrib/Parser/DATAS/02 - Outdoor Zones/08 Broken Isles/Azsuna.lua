@@ -11,6 +11,7 @@ _.Zones =
 						["groups"] = {
 							i(157825, { -- Farondis Lockbox
 								["groups"] = {
+									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									n(-322, { -- Cloak
 										i(134334), -- Disgraced Court Cloak
 										i(134246), -- Herringbone Drape
@@ -536,6 +537,7 @@ _.Zones =
 						["groups"] = {
 							i(157827, { -- Warden's Field Kit
 								["groups"] = {
+									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									n(-322, { -- Cloak
 										i(134334), -- Disgraced Court Cloak
 										i(134246), -- Herringbone Drape
@@ -2714,6 +2716,7 @@ _.Zones =
 				}),	
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings
 						i(141060),	-- Technique: Glyph of Pebbles

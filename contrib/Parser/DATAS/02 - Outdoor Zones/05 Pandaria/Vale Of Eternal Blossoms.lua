@@ -710,6 +710,15 @@ _.Zones =
 						i(83274),	-- Wasteland Blade
 						i(83275),	-- Wasteland Axe
 					}),
+					{	-- Lorewalker Huynh <Inscription Trainer>
+						["npcID"] = 64691,	-- Lorewalker Huynh <Inscription Trainer>
+						["coord"] = { 82.01, 29.37 },
+						["g"]= {
+							{	-- Technique: Songs of Peace
+								["itemID"] = 137788,	-- Technique: Songs of Peace
+							},
+						},
+					},
 					nh(64001, {	-- Sage Lotusbloom <The August Celestials Quartermaster>
 						i(89799),	-- August Celestials Tabard
 						i(89304),	-- Reins of the Thundering August Cloud Serpent Mount

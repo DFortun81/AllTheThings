@@ -281,6 +281,15 @@ _.Zones =
 									i(16060),	-- Common White Shirt
 								},
 							},
+							{	-- Catarina Stanford <Inscription Trainer>
+								["npcID"] = 30713,	-- Catarina Stanford <Inscription Trainer>
+								["coord"] = { 49.79, 74.60 },
+								["g"] = {
+									{	-- Technique: Songs of the Alliance
+										["itemID"] = 140566,	-- Technique: Songs of the Alliance
+									},
+								},
+							},
 							{	-- Catherine Leland <Fishing Supplies>
 								["npcID"] = 5494,	-- Catherine Leland <Fishing Supplies>
 								["coord"] = { 55.03, 69.54 },

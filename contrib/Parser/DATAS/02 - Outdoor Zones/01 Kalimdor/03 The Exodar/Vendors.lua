@@ -406,6 +406,15 @@ _.Zones =
 						i(29903),	-- Yellow Moth Egg Pet
 						i(29904),	-- White Moth Egg Pet
 					})),
+					{	-- Thoth <Inscription Trainer>
+						["npcID"] = 30716,	-- Thoth <Inscription Trainer>
+						["coord"] = { 39.78, 38.87 },
+						["g"] = {
+							{	-- Technique: Songs of the Legion
+								["itemID"] = 137789,	-- Technique: Songs of the Legion
+							},
+						},
+					},
 					a(n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>
 						i(29745),	-- Great Blue Elekk Mount
 						i(29746),	-- Great Green Elekk Mount

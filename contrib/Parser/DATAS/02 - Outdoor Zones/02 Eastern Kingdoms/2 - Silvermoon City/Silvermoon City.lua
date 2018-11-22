@@ -445,6 +445,15 @@ _.Zones =
 							i(23746)	-- Adamantite Rifle
 						})
 					}),
+					{	-- Zantasia <Inscription Trainer>
+						["npcID"] = 30710,	-- Zantasia <Inscription Trainer>
+						["coord"] = { 69.6, 23.6 },
+						["g"] = {
+							{	-- Technique: Songs of the Legion
+								["itemID"] = 137789,	-- Technique: Songs of the Legion
+							},
+						},
+					},
 					n(16689, {	-- Zaralda <Leatherworking Supplies>
 						i(67095), -- Pattern: Assassin's Chestplate						
 						i(67070), -- Pattern: Belt of Nefarious Whispers

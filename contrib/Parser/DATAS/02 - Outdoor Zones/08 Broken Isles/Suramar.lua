@@ -34,6 +34,7 @@ _.Zones =
 									i(140495, { -- Torn Invitation [Fox Mount Quest]
 										i(137573), -- Reins of the Llothien Prowler
 									}),
+									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									n(-322, { -- Cloak
 										i(121798), -- Moon Guard Drape
 										i(134290), -- Nightborne Noble's Cloak
@@ -1719,6 +1720,7 @@ _.Zones =
 				}),
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings
 						i(141060),	-- Technique: Glyph of Pebbles

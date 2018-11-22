@@ -44,7 +44,6 @@ _.Zones =
 						["qg"] = 6031, -- Tormus Deepforge
 						["races"] = ALLIANCE_ONLY,
 					}),
----					qg(6294, qa(38396)),	-- A Curious Oddity			
 					qa(4512, {	-- A Little Slime Goes a Long Way
 						["qg"] = 9616,	-- Laris Geardawdle
 						["coord"] = { 75.7, 23.3 },
@@ -66,7 +65,37 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for Triage
 						["requireSkill"] = 129,	-- First Aid
 					}),
+					qdg(qg(6826, qa( 2948, {	-- Gnome Improvement
+						["sourceQuests"] = { 2947 },	-- Return of the Ring
+					}))),
+					qa(26118, { -- Seize the Ambassador
+						["g"] = {
+							i(57583),	-- The Slaghammer
+							i(57584),	-- Battleaxe of the Sober Dwarf
+							i(57585),	-- Ambassador's Duplicitous Dagger
+							i(133692),	-- Ambassador's Deceitful Dagger
+						},
+						["qg"] = 42129,	-- Moira Thaurissan
+						["coord"] = { 39.7, 57.3 },
+						["sourceQuests"] = { 26112 },	-- Demanding Answers
+					}),
+					qp164(qg(6031, qa( 1578, {	-- Supplying the Front
+						i(33792, {	-- Plans: Heavy Copper Longsword
+							i(33791),	-- Heavy Copper Longsword
+						}),
+					}))),
+					qa(39956, {	-- The Legacy Passed On
+						["qg"] = 97762,	-- Bill Spearshaker <Author Extrodinaire>
+						["sourceQuests"] = { 39955 },	-- The Plot Thickens
+						["requireSkill"] = 773,	-- Inscription
+						["g"]= {
+							{	-- Steamy Romance Novel Kit
+								["recipeID"]	= 192804,	-- Steamy Romance Novel Kit
+							},
+						},
+					}),
 --[[
+					qg(6294, qa(38396)),	-- A Curious Oddity			
 					qg(23127, qa(27270, {	-- An Audience with the Farseer
 						["classes"] = {7}, -- Shaman
 					})),
@@ -78,11 +107,6 @@ _.Zones =
 					})),
 					qg(6569, qa( 2039)),	-- Find Bingles
 					qg(6031, qa( 1618)),	-- Gearing Redridge
---]]
-					qdg(qg(6826, qa( 2948, {	-- Gnome Improvement
-						["sourceQuests"] = { 2947 },	-- Return of the Ring
-					}))),
---[[
 					qp202(qg(5174, q 29477))),	-- Gnomish Engineering
 					qp202(qg(5174, q 29475))),	-- Goblin Engineering
 					qg(4256, qa( 6388, {	-- Gryth Thurden
@@ -147,38 +171,18 @@ _.Zones =
 						["classes"] = {3}, -- Hunter
 					})),
 					qg(6294, qa(38345)),	-- Numismatics
---					qa( 2963),	-- Portents of Uldum (LEGACY)
+					qa( 2963),	-- Portents of Uldum (LEGACY)
 					qg(1356, qa(  302)),	-- Powder to Ironband
 					qg(5637, qa( 1453)),	-- Reclaimers' Business in Desolace
 					qg(1959, qa(26131)),	-- Reinforcements for Loch Modan
 					qg(1573, qa( 6392, {	-- Return to Gremlock
 						["races"] = {3,7}, -- Dwarf, Gnome
-					})),
---]]					
-					qa(26118, { -- Seize the Ambassador
-						["g"] = {
-							i(57583),	-- The Slaghammer
-							i(57584),	-- Battleaxe of the Sober Dwarf
-							i(57585),	-- Ambassador's Duplicitous Dagger
-							i(133692),	-- Ambassador's Deceitful Dagger
-						},
-						["qg"] = 42129,	-- Moira Thaurissan
-						["coord"] = { 39.7, 57.3 },
-						["sourceQuests"] = { 26112 },	-- Demanding Answers
-					}),
-					qp164(qg(6031, qa( 1578, {	-- Supplying the Front
-						i(33792, {	-- Plans: Heavy Copper Longsword
-							i(33791),	-- Heavy Copper Longsword
-						}),
-					}))),
---[[
 					qg(11406, qa(27274, {	-- The Chief Surgeon
 						["races"] = {7}, -- Gnome
 						["classes"] = {5}, -- Priest
 					})),
---					qh( 8799),	-- The Hero of the Day (LEGACY)
+					qh( 8799),	-- The Hero of the Day (LEGACY)
 					qg(13433, qa( 8763)),	-- The Hero of the Day
-					qp773(qg(97762, qa(39956))),	-- The Legacy Passed On (teaches spell 193542 Recipe: Steamy Romance Novel)
 					qg(92195, qa(39955)),	-- The Plot Thickens
 					qg(6294, qa(38402)),	-- The Same, But Different
 					qg(6179, qa( 1789, {	-- The Symbol of Life

@@ -18,6 +18,17 @@ _.Zones =
 					p(454),		-- Undercity Rat
 				}),
 				n(-17, { 	-- Quests
+					qdg(qg(10181, qh(31037))),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
+					qh(39960, {	-- The Legacy Passed On
+						["qg"] = 97766,	-- Francis Serbacon <Author Extrodinaire>
+						["sourceQuests"] = { 39959 },	-- The Plot Thickens
+						["requireSkill"] = 773,	-- Inscription
+						["g"]= {
+							{	-- Steamy Romance Novel Kit
+								["recipeID"]	= 192804,	-- Steamy Romance Novel Kit
+							},
+						},
+					}),
 --[[
 					q(24635),	-- A Cloudlet of Classy Cologne
 					qh( 38397),	-- A Curious Oddity
@@ -35,7 +46,6 @@ _.Zones =
 					qh( 27334),	-- Dark Cleric Cecille
 					q(8648),	-- Darkcore the Elder
 --]]
-					qdg(qg(10181, qh(31037))),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
 --[[
 					qh(  9812),	-- Envoy to the Horde
 					qh(  9621),	-- Envoy to the Horde
@@ -107,53 +117,6 @@ _.Zones =
 					qh( 29319),	-- Tadpole Terror
 					qh( 29427),	-- The Collector's Agent
 					qh( 14174),	-- The Grateful Dead
-					qh( 39960),	-- The Legacy Passed On
-					qa(  8870),	-- The Lunar Festival
-					qh(  8875),	-- The Lunar Festival
-					qa(  8872),	-- The Lunar Festival
-					qh(  8873),	-- The Lunar Festival
-					qh(  8874),	-- The Lunar Festival
-					qa(  8871),	-- The Lunar Festival
-					qh( 39959),	-- The Plot Thickens
-					qh( 38404),	-- The Same, But Different				
-					qh(  9813),	-- Meeting the Orcs
-					qh(  6322),	-- Michael Garrett
-					qh( 29361),	-- Moat Monster!
-					qg(52319, q(28289, {	-- Moonglade Calls
-						["classes"] = {11},
-					})),
-					qh( 11925),	-- More Torch Catching
-					qh( 11926),	-- More Torch Tossing
-					qh( 38306),	-- Mystery Notebook
-					qh( 38346),	-- Numismatics
-					qh( 14036),	-- Pilgrim's Bounty
-					qh( 11915),	-- Playing with Fire
-					qh( 14040),	-- Pumpkin Pie
-					qh(  6324),	-- Return to Morris
-					qh(  6323),	-- Ride to the Undercity
-					qh( 29334),	-- Roach Coach
-					qh( 28164),	-- Seek Brother Silverhallow
-					qh( 27298),	-- Seek Out Master Pyreanor
-					qh( 27332),	-- Seek the Shadow-Walker
-					qh( 14058),	-- She Says Potato
-					qh( 14047),	-- Slow-roasted Turkey
-					qh( 14037),	-- Spice Bread Stuffing
-					qh( 13483),	-- Spring Gatherers
-					qh(  9332),	-- Stealing Darnassus's Flame
-					qh(  9331),	-- Stealing Ironforge's Flame
-					qh(  9330),	-- Stealing Stormwind's Flame
-					qh( 11933),	-- Stealing the Exodar's Flame
-					qh( 29374),	-- Stink Bombs Away!
-					q(11954),	-- Striking Back
-					q(11917),	-- Striking Back
-					q(11947),	-- Striking Back
-					q(11948),	-- Striking Back
-					q(11952),	-- Striking Back
-					q(11953),	-- Striking Back
-					qh( 29319),	-- Tadpole Terror
-					qh( 29427),	-- The Collector's Agent
-					qh( 14174),	-- The Grateful Dead
-					qh( 39960),	-- The Legacy Passed On
 					qa(  8870),	-- The Lunar Festival
 					qh(  8875),	-- The Lunar Festival
 					qa(  8872),	-- The Lunar Festival

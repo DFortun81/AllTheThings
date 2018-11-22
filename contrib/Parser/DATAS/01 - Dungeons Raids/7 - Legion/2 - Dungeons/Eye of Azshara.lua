@@ -86,6 +86,8 @@ _.Instances =
 								i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 2)
 								i(127929),	-- Recipe: Leytorrent Potion (Rank 2)
 								i(137877),	-- Recipe: Warhide Pants (Rank 3)
+								i(136705),	-- Technique: Aqual Mark
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134532),	-- Band of Fused Coral
 								i(134237),	-- Brinewashed Leather Boots
@@ -155,6 +157,8 @@ _.Instances =
 								i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 2)
 								i(127929),	-- Recipe: Leytorrent Potion (Rank 2)
 								i(137877),	-- Recipe: Warhide Pants (Rank 3)
+								i(136705),	-- Technique: Aqual Mark
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134532),	-- Band of Fused Coral
 								i(134237),	-- Brinewashed Leather Boots
@@ -227,6 +231,8 @@ _.Instances =
 								i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 2)
 								i(127929),	-- Recipe: Leytorrent Potion (Rank 2)
 								i(137877),	-- Recipe: Warhide Pants (Rank 3)
+								i(136705),	-- Technique: Aqual Mark
+								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134532),	-- Band of Fused Coral
 								i(134237),	-- Brinewashed Leather Boots
