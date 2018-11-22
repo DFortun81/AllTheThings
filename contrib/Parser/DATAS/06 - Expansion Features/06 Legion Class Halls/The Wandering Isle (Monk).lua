@@ -398,6 +398,7 @@ _.ExpansionFeatures =
 							i(140543), -- Fist of the Broken Temple
 							i(140551), -- Staff of the Broken Temple
 							i(140564), -- Rod of the Broken Temple
+							i(136800),	-- Meditation Manual: Zen Flight
 						}),
 						n(99154, { -- Mei Chele
 							i(147542), -- Ban-Fu, Cub of Ban-Lu (PET!)
