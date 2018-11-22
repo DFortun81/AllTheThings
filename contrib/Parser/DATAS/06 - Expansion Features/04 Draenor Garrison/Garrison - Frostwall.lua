@@ -440,6 +440,7 @@ _.ExpansionFeatures =
 						["coord"] = { 45.8, 50.2 },
 					}),
 				}),
+				--[[ Too mean
 				garrisonBuilding(206, {	-- Frostwall Shipyard
 					["maps"] = { 
 						525,	-- Frostfire Ridge
@@ -573,6 +574,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
+				--]]
 				garrisonBuilding(35, {	-- Frostwall Tavern
 					follower(342),	-- "Doc" Schweitzer
 					follower(271),	-- Abigail Wilson

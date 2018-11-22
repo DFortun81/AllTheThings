@@ -688,7 +688,7 @@ _.Zones =
 						q(27187, {	-- Do the World a Favor
 							["qg"] = 45202,
 							["sourceQuests"] = {27141},
-							["description"] = "This quest is auto-accepted when you kill a Mangy Hyena after accepting Just the Tip and/or Field Work."
+							["description"] = "This quest is auto-accepted when you kill a Mangy Hyena after accepting Just the Tip or Field Work."
 						}),
 						q(27627, {	-- Just a Fancy Cockroach
 							["qgs"] = {46129,46128,46127,46126},
@@ -698,7 +698,7 @@ _.Zones =
 						q(27940, {	-- Dirty Birds
 							["qg"] = 47202,
 							["sourceQuests"] = {27926},
-							["description"] = "This quest is auto-accepted when you kill a Diseased Vulture after accepting The Desert Fox and/or A Favor for the Furrier."
+							["description"] = "This quest is auto-accepted when you kill a Diseased Vulture after accepting The Desert Fox or A Favor for the Furrier."
 						}),
 						q(28351, {	-- Unlimited Potential
 							["qg"] = 48431,

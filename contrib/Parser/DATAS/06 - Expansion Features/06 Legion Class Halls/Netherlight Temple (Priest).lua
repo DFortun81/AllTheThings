@@ -324,7 +324,7 @@ _.ExpansionFeatures =
 									}),
 									q(44349, {	-- Volume XI
 										["title"] = "|cFFFFFFFFVolume XI|r | Guardian's Library in old Karazhan.",
-										["description"] = "After the Curator jump down to the right, head straight into the first alley / nook. There is a tapestry and 3 bookshelves below. On the left bookshelf socket lies Chapter 11.",
+										["description"] = "After the Curator jump down to the right, head straight into the first alley or nook. There is a tapestry and 3 bookshelves below. On the left bookshelf socket lies Chapter 11.",
 										["qg"] = 15691,	-- The Curator
 										["coord"] = { 48.6, 70.5 },
 									}),

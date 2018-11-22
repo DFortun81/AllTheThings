@@ -10,7 +10,7 @@ _.Instances =
 				["groups"] = {
 					n(-4, {
 						ach(10996, {
-							["description"] = "As soon as you jump into the hole at the start of the dungeon, follow the cliff's path near |cFFFFD700Spiritwalker Ebonhorn|r to a hidden grotto and buy a |cFFFFD700Ketchum Tablet|r from the |cFFFFD700Mushroom Merchant|r.\nSnail Locations:\n|cFFFFD700Scaly|r: After killing Rokmora, use a fish while riding a barrel to knock him off a mushroom.\n|cFFFFD700Sparky|r: Swim under the waterfall into a hidden cave.\n|cFFFFD700Slinky|rFollow the long westward path before |cFFFFD700Ularogg Cragshaper|r to a cave. He is usually along the cave's back wall.\n|cFFFFD700Whipsnap/Turbax/Blaze|r: Racing around a stone pillar after killing |cFFFFD700Ularogg Cragshaper|r.\n|cFFFFD700Sticky|r: On the ceiling of a cave at the back of Scaleback Run. You must damage him slightly to knock him down.",
+							["description"] = "As soon as you jump into the hole at the start of the dungeon, follow the cliff's path near |cFFFFD700Spiritwalker Ebonhorn|r to a hidden grotto and buy a |cFFFFD700Ketchum Tablet|r from the |cFFFFD700Mushroom Merchant|r.\nSnail Locations:\n|cFFFFD700Scaly|r: After killing Rokmora, use a fish while riding a barrel to knock him off a mushroom.\n|cFFFFD700Sparky|r: Swim under the waterfall into a hidden cave.\n|cFFFFD700Slinky|rFollow the long westward path before |cFFFFD700Ularogg Cragshaper|r to a cave. He is usually along the cave's back wall.\n|cFFFFD700Whipsnap, Turbax, or Blaze|r: Racing around a stone pillar after killing |cFFFFD700Ularogg Cragshaper|r.\n|cFFFFD700Sticky|r: On the ceiling of a cave at the back of Scaleback Run. You must damage him slightly to knock him down.",
 						}),
 					}),
 					n(-17, {	-- Quests

@@ -1154,6 +1154,7 @@ _.ExpansionFeatures =
 					follower(369),	-- Zelena Moonbreak
 					follower(389),	-- Zian
 				}),
+				--[[ Too mean
 				garrisonBuilding(206, {	-- Lunarfall Shipyard
 					["maps"] = { 
 						539,	-- Shadowmoon Valley
@@ -1287,6 +1288,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
+				--]] 
 				n(-299, { 	-- Missions
 					["groups"] = {
 						n(84698, { 		-- Command Table

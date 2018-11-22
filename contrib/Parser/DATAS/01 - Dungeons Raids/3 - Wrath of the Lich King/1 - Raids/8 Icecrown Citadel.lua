@@ -287,7 +287,7 @@ _.Instances =
 						},
 					}),
 					n(-10066, {	-- Legendary Questline
-						["description"] = "These quests are only able to be completed on 25 Man Normal/Heroic Difficulty.",
+						["description"] = "These quests are only able to be completed on 25 Man Normal or Heroic Difficulty.",
 						["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
 						["title"] = "Shadowmourne",
 						["icon"] = "Interface\\Icons\\INV_Axe_113",

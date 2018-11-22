@@ -1140,7 +1140,7 @@ _.Zones =
 					}),
 				}),
 				n(-34, { -- World Quests
-					["groups"] = {
+					["g"] = {
 						{	-- Work Order: Lightblood Elixirs
 							["questID"] = 48318,	-- Work Order: Lightblood Elixirs
 							["qg"] = 125346,		-- Alchemist Funen
@@ -1155,7 +1155,7 @@ _.Zones =
 						{	-- Work Order: Tears of the Naaru
 							["questID"] = 48323,	-- Work Order: Tears of the Naaru
 							["qg"] = 125346,		-- Alchemist Funen
-							["isWQ"] = 110,
+							--["isWQ"] = 110,
 							["requireSkill"] = 171,	-- Alchemy
 							["g"] = {
 								{	-- Recipe: Tears of the Naaru (Rank 2)

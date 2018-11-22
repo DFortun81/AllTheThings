@@ -36,12 +36,12 @@ _.Instances =
 							i(24379, {	-- Bogstrok Scale Cloak
 								["groups"] = {
 								},
-								["description"] = "This item currently has no class/spec info attached by Blizzard for Normal and Heroic, and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class/spec until Blizzard corrects this.",
+								["description"] = "This item currently has no class or spec info attached by Blizzard for Normal and Heroic, and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class or spec until Blizzard corrects this.",
 							}),
 							i(27550, {	-- Ironscale War Cloak
 								["groups"] = {
 								},
-								["description"] = "This item currently has no class/spec info attached by Blizzard for Normal and Heroic, and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class/spec until Blizzard corrects this.",
+								["description"] = "This item currently has no class or spec info attached by Blizzard for Normal and Heroic, and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class or spec until Blizzard corrects this.",
 							}),
 							i(27547),	-- Coldwhisper Cord
 							i(27548),	-- Girdle of Many Blessings (NOTE: Timewalking drops from Mennu?)
@@ -98,12 +98,12 @@ _.Instances =
 								i(24379, {	-- Bogstrok Scale Cloak
 									["groups"] = {
 									},
-									["description"] = "This item currently has no class/spec info attached by Blizzard for Normal and Heroic, and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class/spec until Blizzard corrects this.",
+									["description"] = "This item currently has no class or spec info attached by Blizzard for Normal and Heroic, and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class or spec until Blizzard corrects this.",
 								}),
 								i(27550, {	-- Ironscale War Cloak
 									["groups"] = {
 									},
-									["description"] = "This item currently has no class/spec info attached by Blizzard for Normal and Heroic, and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class/spec until Blizzard corrects this.",
+									["description"] = "This item currently has no class or spec info attached by Blizzard for Normal and Heroic, and will show up as 'Not available in personal loot' for everyone.  It looks like it may actually be available to win by any class or spec until Blizzard corrects this.",
 								}),
 								i(27547),	-- Coldwhisper Cord
 								i(27548),	-- Girdle of Many Blessings (NOTE: Timewalking drops from Mennu?)

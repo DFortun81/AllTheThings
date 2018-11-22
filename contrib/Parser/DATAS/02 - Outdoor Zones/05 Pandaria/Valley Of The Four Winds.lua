@@ -851,7 +851,7 @@ _.Zones =
 					}),
 					q(30526, {	-- Lost and Lonely
 						["qg"] = 59533,	-- Lost Dog (42.4,50.2)
-						["description"] = "Requires reputation level of 12,600/21,000 Revered with The Tillers to start",
+						["description"] = "Requires reputation level of 12,600 Revered with The Tillers to start",
 					}),
 					q(31338, {	-- Lost Sheepie
 						["qg"] = 58709,	-- Chee Chee (53,52)
@@ -882,7 +882,7 @@ _.Zones =
 					}),
 					q(31532, {	-- Mission: Predator of the Cliffs
 						["qg"] = 58708,	-- Sho (53,52)
-						["description"] = "Must be at least 4200/8400 into \"Good Friend\" with Sho to start this quest.",
+						["description"] = "Must be at least 4200 into \"Good Friend\" with Sho to start this quest.",
 					}),
 					q(30322, {	-- Money Matters
 						["qg"] = 58706,	-- Gina Mudclaw (53.2,51.8)

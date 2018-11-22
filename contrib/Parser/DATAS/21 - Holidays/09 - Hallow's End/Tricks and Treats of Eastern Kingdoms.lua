@@ -9,7 +9,7 @@ _.Holidays =
 			{	-- Achievements
 				["npcID"] = -4,	-- Achievements
 				["g"] = {
-					{	-- Tricks and Treats of Kalimdor [Alliance]
+					{	-- Tricks and Treats of Eastern Kingdoms [Alliance]
 						["achievementID"] = 966,	-- Tricks and Treats of Eastern Kingdoms
 						["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 						["u"] = 26,					-- Hallow's End Filter
