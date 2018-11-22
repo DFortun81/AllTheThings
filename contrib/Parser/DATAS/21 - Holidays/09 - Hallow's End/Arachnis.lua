@@ -5,8 +5,8 @@ _.Holidays =
 {
 	{	-- Hallow's End
 		["holidayID"] = 235462,	-- Hallow's End
-		["u"] = 26,			-- Hallow's End Filter
-		["g"] = {
+		["u"] = 26,				-- Hallow's End Filter
+		["g"] = bubbleDown({["u"] = 26}, {
 			{	--  Arachnis
 				["npcID"] = 96323,	-- Arachnis
 				["questID"] = 39617,
@@ -30,6 +30,6 @@ _.Holidays =
 						},
 					},
 			},
-		},
+		}),
 	},
 };

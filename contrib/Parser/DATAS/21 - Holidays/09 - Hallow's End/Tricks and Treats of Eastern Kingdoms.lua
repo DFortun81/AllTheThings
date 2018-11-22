@@ -5,7 +5,8 @@ _.Holidays =
 {
 	{	-- Hallow's End
 		["holidayID"] = 235462,	-- Hallow's End
-		["g"] = {
+		["u"] = 26,				-- Hallow's End Filter
+		["g"] = bubbleDown({["u"] = 26}, {
 			{	-- Achievements
 				["npcID"] = -4,	-- Achievements
 				["g"] = {
@@ -695,11 +696,12 @@ _.Holidays =
 					{	-- Tricks and Treats of Kalimdor [Horde]
 						["achievementID"] = 967,	-- Tricks and Treats of Eastern Kingdoms
 						["races"] = HORDE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
+						["u"] = 26,					-- Hallow's End Filter
 						["g"] = {
 						},
 					},
 				},
 			},
-		},
+		}),
 	},
 };

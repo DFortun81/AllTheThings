@@ -5,12 +5,14 @@ _.Holidays =
 {
 	{	-- Hallow's End
 		["holidayID"] = 235462,	-- Hallow's End
-		["g"] = {
+		["u"] = 26,				-- Hallow's End Filter
+		["g"] = bubbleDown({["u"] = 26}, {
 			{	-- Achievements
 				["npcID"] = -4,	-- Achievements
 				["g"] = {
 					{	-- Hallowed Be Thy Name
 						["achievementID"] = 1656,	-- Hallowed Be Thy Name
+						["u"] = 26,					-- Hallow's End Filter
 						["g"] = {
 							{	-- <Name> the Hallowed
 								["titleID"] = 92,	-- %s the Hallowed
@@ -585,6 +587,6 @@ _.Holidays =
 					},
 				},
 			},
-		},
+		}),
 	},
 };

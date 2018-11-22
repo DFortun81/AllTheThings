@@ -5,7 +5,8 @@ _.Holidays =
 {
 	{	-- Hallow's End
 		["holidayID"] = 235462,	-- Hallow's End
-		["g"] = {
+		["u"] = 26,				-- Hallow's End Filter
+		["g"] = bubbleDown({["u"] = 26}, {
 			{	-- Achievements
 				["npcID"] = -4,	-- Achievements
 				["g"] = {
@@ -383,6 +384,7 @@ _.Holidays =
 					{	-- Tricks and Treats of Cataclysm [Horde]
 						["achievementID"] = 5838,	-- Tricks and Treats of Cataclysm
 						["races"] = HORDE_ONLY,		-- Note!! We are marking this as Horde only at the meta level only
+						["u"] = 26,					-- Hallow's End Filter
 						["g"] = {
 							{	-- Deepholm, Temple of Earth
 								["achievementID"] = 5838,	-- Tricks and Treats of Cataclysm
@@ -726,6 +728,6 @@ _.Holidays =
 					},
 				},
 			},
-		},
+		}),
 	},
 };

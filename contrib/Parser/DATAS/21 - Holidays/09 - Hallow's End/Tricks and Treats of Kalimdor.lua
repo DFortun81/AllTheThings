@@ -5,7 +5,8 @@ _.Holidays =
 {
 	{	-- Hallow's End
 		["holidayID"] = 235462,	-- Hallow's End
-		["g"] = {
+		["u"] = 26,				-- Hallow's End Filter
+		["g"] = bubbleDown({["u"] = 26}, {
 			{	-- Achievements
 				["npcID"] = -4,	-- Achievements
 				["g"] = {
@@ -1507,6 +1508,6 @@ _.Holidays =
 					},
 				},
 			},
-		},
+		}),
 	},
 };

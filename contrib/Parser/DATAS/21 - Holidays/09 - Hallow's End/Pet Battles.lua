@@ -4,7 +4,8 @@
 _.Holidays =
 {
 	holiday(235462, { -- Hallow's End
-		["groups"] = {
+		["u"] = 26,				-- Hallow's End Filter
+		["g"] = bubbleDown({["u"] = 26}, {
 			n(-25, { -- Pet Battles
 				["groups"] = {
 					i(128664, { -- Creepy Crawlers
@@ -18,6 +19,6 @@ _.Holidays =
 					}),
 				},
 			}),
-		},
+		}),
 	}),
 };

@@ -5,6 +5,7 @@ _.Holidays =
 {
 	{	-- Hallow's End
 		["holidayID"] = 235462,	-- Hallow's End
+		["u"] = 26,				-- Hallow's End Filter
 		["icon"] = "Interface\\Addons\\AllTheThings\\assets\\hallows_end",
 	},
 };

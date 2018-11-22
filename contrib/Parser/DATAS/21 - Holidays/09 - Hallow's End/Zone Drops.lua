@@ -5,7 +5,8 @@ _.Holidays =
 {
 	{	-- Hallow's End
 		["holidayID"] = 235462,	-- Hallow's End
-		["g"] = {
+		["u"] = 26,				-- Hallow's End Filter
+		["g"] = bubbleDown({["u"] = 26}, {
 			{	--  Zone Drops
 				["npcID"] = 0,	-- Zone Drops
 				["maps"] = {
@@ -25,6 +26,6 @@ _.Holidays =
 					},
 				},
 			},
-		},
+		}),
 	},
 };

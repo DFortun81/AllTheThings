@@ -4,7 +4,7 @@
 _.Holidays = 
 {
 	holiday(235474, { -- Midsummer Fire Festival
-		 ["groups"] = bubbleDown({["u"] = 21}, {
+		["groups"] = bubbleDown({["u"] = 21}, {
 			n(-4, { -- Achievements
 				ach(1038, { -- The Flame Warden
 					["groups"] = {
