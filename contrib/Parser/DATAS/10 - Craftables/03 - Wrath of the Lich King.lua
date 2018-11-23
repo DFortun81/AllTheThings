@@ -362,6 +362,11 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { -- Tailoring
+			n(-160, {	-- Mounts
+				i(44554),	-- Flying Carpet
+				i(54797),	-- Frosty Flying Carpet
+				i(44558),	-- Magnificent Flying Carpet
+			}),
 			i(41546),	-- Duskweave Cowl
 			i(43971),	-- Frostsavage Cowl
 			i(41521),	-- Frostwoven Cowl

@@ -1347,8 +1347,6 @@ _.Zones =
 					q(38670),	-- Goredome 2
 					q(40615),	-- Halls of Valor: Odyn's Blessing
 					q(39904),	-- Halls of Valor: Revenge of the Enchantress
-					q(38974),	-- Halls of Valor: The Right Question
-					q(38974),	-- Halls of Valor: The Right Question
 					q(44721),	-- Helya's Conquest
 					q(42393),	-- Homecoming
 					q(44577),	-- Honor the Flame
@@ -1439,6 +1437,15 @@ _.Zones =
 						["qg"] = 112959, -- Fleet Admiral Tethys
 						["classes"] = { 4 },
 					}),
+					{	-- Halls of Valor: The Right Question
+						["questID"] = 38974,
+						["groups"] = {
+							i(127024),	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
+						},
+						["qg"] = 93977,	-- Leyweaveer Tellumi
+						["coord"] = { 65.6, 56.2 },
+						["requireSkill"] = 197,	-- Tailoring
+					},
 					q(46340, {
 						["qg"] = 93628, -- Eyir
 					}),
@@ -1790,6 +1797,14 @@ _.Zones =
 					n(-387, {	-- Relics
 						i(143685),	-- Strength of the Nazjatar
 					}),
+					{	-- Work Order: Silkweave Bracers
+						["questID"] = 41648,
+						["groups"] = {
+							i(137961),	-- Pattern: Silkweave Bracers (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 197,	-- Tailoring
+					},
 				}),				
 				n(0, { 		-- Zone Drops
 					["groups"] = {

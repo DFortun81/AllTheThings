@@ -310,6 +310,7 @@ _.Instances =
 									i(151981), -- Life-Bearing Footpads									
 								})),
 								cr(124393, e(1985, { -- Portal Keeper Hasabel
+									i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 									i(152001), -- Nexus Conductor's Headgear
 									i(152008), -- Reality-Splitting Wristguards
 									i(151941), -- Aranasi Shadow-Weaver's Gloves
@@ -713,6 +714,7 @@ _.Instances =
 								i(151981), -- Life-Bearing Footpads
 							})),
 							cr(124393, e(1985, { -- Portal Keeper Hasabel
+								i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 								i(152001), -- Nexus Conductor's Headgear
 								i(152008), -- Reality-Splitting Wristguards
 								i(151941), -- Aranasi Shadow-Weaver's Gloves
@@ -1111,6 +1113,7 @@ _.Instances =
 								i(151981), -- Life-Bearing Footpads
 							})),
 							cr(124393, e(1985, { -- Portal Keeper Hasabel
+								i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 								i(152001), -- Nexus Conductor's Headgear
 								i(152008), -- Reality-Splitting Wristguards
 								i(151941), -- Aranasi Shadow-Weaver's Gloves
@@ -1508,6 +1511,7 @@ _.Instances =
 								i(151981), -- Life-Bearing Footpads
 							})),
 							cr(124393, e(1985, { -- Portal Keeper Hasabel
+								i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 								i(152001), -- Nexus Conductor's Headgear
 								i(152008), -- Reality-Splitting Wristguards
 								i(151941), -- Aranasi Shadow-Weaver's Gloves

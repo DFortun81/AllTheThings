@@ -150,6 +150,15 @@ _.Zones =
 									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Work Order: Battle Flag: Phalanx Defense
+									["questID"] = 52426,
+									["groups"] = {
+										i(162444),	-- Pattern: Battle Flag: Phalanx Defense (Rank 3)
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+									["requireSkill"] = 197,	-- Tailoring
+								},
 								q(52396, {	-- Work Order: Contract: Talanji's Expedition
 									["groups"] = {
 										i(162368, {	-- Contract: Talanji's Expedition [Rank 3]

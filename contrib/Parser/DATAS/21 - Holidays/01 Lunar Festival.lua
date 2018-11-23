@@ -412,12 +412,10 @@ _.Holidays = bubbleDown({["u"] = 17},
 					un(17, i(143829)), -- Dragon Tail Costume
 					un(17, i(89999)),	-- Everlasting Alliance Firework
 					un(17, i(90000)),	-- Everlasting Horde Firework
-					un(17, i(44916, {	-- Pattern: Festival Dress
-						un(17, i(151771)), -- Festival Dress
-					})),
-					un(17, i(44917, {	-- Pattern: Festival Suit
-						un(17, i(151772)), -- Festival Suit
-					})),
+					un(7, i(21722)),	-- Pattern: Festival Dress (old version)
+					un(17, i(44916)),	-- Pattern: Festival Dress
+					un(7, i(21723)),	-- Pattern: Festival Suit (old version)
+					un(17, i(44917)),	-- Pattern: Festival Suit
 				})),
 			}),
 			n(15864, { -- Valadar Starsong <Coin of Ancestry Collector>

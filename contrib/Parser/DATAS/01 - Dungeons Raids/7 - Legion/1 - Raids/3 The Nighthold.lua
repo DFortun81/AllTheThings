@@ -189,7 +189,7 @@ _.Instances =
 									["achievementID"] = 10837,	-- Royal Athenaeum
 									["criteriaID"] = 2,			-- Star Augur Etraeus
 								},
-								i(142078),	-- Pattern: Imbued Silkweave Bag
+								i(142078),	-- Pattern: Imbued Silkweave Bag (Rank 3)
 								i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1]
 								i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2]
 								i(140900),	-- Brooch of the Astral Scryer

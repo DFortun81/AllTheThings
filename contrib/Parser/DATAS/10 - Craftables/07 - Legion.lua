@@ -300,6 +300,8 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { -- Tailoring
+			--n(-37, {	-- Discovery
+			--}),
 			i(126998),	-- Imbued Silkweave Hood
 			i(126990),	-- Silkweave Hood
 			i(146666),	-- Celumbra, the Night's Dichotomy

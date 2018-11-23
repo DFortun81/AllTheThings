@@ -138,6 +138,15 @@ _.Zones =
 								q(51322, {	-- Wings and Stingers
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Work Order: Battle Flag: Rallying Swiftness
+									["questID"] = 52427,
+									["groups"] = {
+										i(162445),	-- Pattern: Battle Flag: Rallying Swiftness (Rank 3)
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+									["requireSkill"] = 197,	-- Tailoring
+								},
 								q(52397, {	-- Work Order: Contract: Voldunai
 									["groups"] = {
 										i(162370, {	-- Contract: Voldunai [Rank 3]

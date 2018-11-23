@@ -34,24 +34,28 @@ _.Zones =
 								["qg"] = 15395,	-- Nafien
 								["sourceQuests"] = { 28338, 28366 },	-- Deadwood of the North & Disarming Bears
 							})),
-							q( 6031, {	-- Runecloth
+							{	-- Runecloth
+								["questID"] = 6031,
 								["groups"] = {
 									i(15822),	-- Shadowskin Spaulders
 									i(15823),	-- Bricksteel Gauntlets
 								},
 								["qg"] = 11557,	-- Meilosh
+								["coord"] = { 64.8, 5.2 },
 								["description"] = "You must be Friendly with Timbermaw Hold to pick up this quest.",
-							}),
-							q( 6032, {	-- Sacred Cloth
+							},
+							{	-- Sacred Cloth
+								["questID"] = 6032,
 								["groups"] = {
 									recipe(19435),	-- Mooncloth Boots
 								},
 								["qg"] = 11557,	-- Meilosh
-								["sourceQuests"] = { 6031 },	-- Runecloth
+								["coord"] = { 64.8, 5.2 },
+								["sourceQuest"] = 6031,	-- Runecloth
 								["requireSkill"] = 197,	-- Requires: Tailoring
-							}),
-							{
-								["questID"] = 8481,	-- The Root of All Evil (UNKNOWN PRE-REQS -- REPUTATION, WINTERSPRING QUESTS???)
+							},
+							{	-- The Root of All Evil (UNKNOWN PRE-REQS -- REPUTATION, WINTERSPRING QUESTS???)
+								["questID"] = 8481,
 								["qg"] = 11555,	-- Gorn One Eye
 								["groups"] = {
 									i(21326),	-- Defender of the Timbermaw

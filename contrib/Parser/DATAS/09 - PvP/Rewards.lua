@@ -337,10 +337,12 @@ _.PVP =
 			},	
 			["races"] = HORDE_ONLY,	
 		}),
+		{	-- Pattern: Imbued Silkweave Epaulets (Rank 3)
+			["itemID"] = 137975,	-- Pattern: Imbued Silkweave Epaulets
+			["description"] = "This has a CHANCE to drop from any rated battleground win.",
+			["requireSkill"] = 197,	-- Tailoring
+		},
 		i(123950, { -- Recipe: Demonsteel Pauldrons (Rank 3)
-			["groups"] = {
-				recipe(182984), -- Recipe: Demonsteel Pauldrons (Rank 3)
-			},
 			["description"] = "This has a CHANCE to drop from any rated battleground win.",
 			["requireSkill"] = 164, -- Blacksmithing
 		}),

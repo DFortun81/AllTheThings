@@ -299,6 +299,9 @@ _.Instances =
 									{	-- Edgelords
 										["achievementID"] = 12830,	-- Edgelords
 									},
+									{	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
+										["itemID"] = 162422,	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
+									},
 									{	-- Pursax, the Backborer
 										["itemID"] = 160684,	-- Pursax, the Backborer
 									},

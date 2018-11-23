@@ -268,6 +268,20 @@ _.Craftables =
 			i(154152),	-- Shimmerscale Waistguard
 		}),
 		n(-190, { -- Tailoring
+			n(-37, {	-- Discovery
+				sp(257122, {	-- Embroidered Deep Sea Breeches
+					i(162509),	-- Pattern: Imbued Deep Sea Breeches
+				}),
+				sp(257118, {	-- Embroidered Deep Sea Gloves
+					i(162507),	-- Pattern: Imbued Deep Sea Gloves
+				}),
+				sp(257123, {	-- Imbued Deep Sea Breeches
+					i(162510),	-- Pattern: Emblazoned Deep Sea Breeches
+				}),
+				sp(257120, {	-- Imbued Deep Sea Gloves
+					i(162508),	-- Pattern: Emblazoned Deep Sea Gloves
+				}),
+			}),
 			i(154695),	-- Deep Sea Bag
 			i(162478),	-- Emblazoned Deep Sea Breeches
 			i(162480),	-- Emblazoned Deep Sea Breeches

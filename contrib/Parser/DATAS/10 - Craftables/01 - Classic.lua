@@ -573,7 +573,6 @@ _.Craftables =
 			un(8, i(19684)),	-- Bloodvine Boots
 			un(8, i(19683)),	-- Bloodvine Leggings
 			un(8, i(19682)),	-- Bloodvine Vest
-			un(1, i(7027)),		-- Boots of Darkness
 			un(8, i(18413)),	-- Cloak of Warding
 			un(8, i(18407)),	-- Felcloth Gloves
 			un(8, i(22658)),	-- Glacial Cloak
@@ -633,7 +632,7 @@ _.Craftables =
 			i(7059),	-- Crimson Silk Shoulders
 			i(7058),	-- Crimson Silk Vest
 			i(4333),	-- Dark Silk Shirt
-			i(4314),	-- Double-Stitched Woolen Shoulders
+			i(4314),	-- Double-stitched Woolen Shoulders
 			i(10041),	-- Dreamweave Circlet
 			i(10019),	-- Dreamweave Gloves
 			i(10021),	-- Dreamweave Vest
@@ -684,7 +683,7 @@ _.Craftables =
 			i(4326),	-- Long Silken Cloak
 			i(19050),	-- Mantle of the Timbermaw
 			i(15802),	-- Mooncloth Boots
-			i(14140),	-- Mooncloth Cirlet
+			i(14140),	-- Mooncloth Circlet
 			i(14137),	-- Mooncloth Leggings
 			i(18486),	-- Mooncloth Robe
 			i(14139),	-- Mooncloth Shoulders
@@ -707,7 +706,7 @@ _.Craftables =
 			i(4313),	-- Red Woolen Boots
 			i(2580),	-- Reinforced Linen Cape
 			i(4315),	-- Reinforced Woolen Shoulders
-			i(4335),	-- Rich Purple Shirt
+			i(4335),	-- Rich Purple Silk Shirt
 			i(7054),	-- Robe of Power
 			i(14152),	-- Robe of the Archmage
 			i(13856),	-- Runecloth Belt
@@ -731,7 +730,7 @@ _.Craftables =
 			i(10028),	-- Shadoweave Shoulders
 			i(7050),	-- Silk Headband
 			i(10047),	-- Simple Kilt
-			i(4312),	-- Soft Linen Boots
+			i(4312),	-- Soft-Soled Linen Boots
 			i(4328),	-- Spider Belt
 			i(4321),	-- Spider Silk Slippers
 			i(4320),	-- Spidersilk Boots

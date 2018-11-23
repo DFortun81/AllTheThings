@@ -2713,6 +2713,14 @@ _.Zones =
 					n(-387, {	-- Relics
 						i(141273),	-- Echo of Eons
 					}),
+					{	-- Work Order: Silkweave Epaulets
+						["questID"] = 41645,
+						["groups"] = {
+							i(137963),	-- Pattern: Silkweave Epaulets (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 197,	-- Tailoring
+					},
 				}),	
 				n(0, { 		-- Zone Drops
 					["groups"] = {

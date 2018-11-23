@@ -1487,6 +1487,16 @@ _.Zones =
 							q(38954, {	-- Where's Lyndras?
 								["qg"] = 93542,	-- Tanithria
 							}),
+							n(-34, {	-- World Quests
+								{	-- Work Order: Silkweave Hood
+									["questID"] = 41650,
+									["groups"] = {
+										i(138013),	-- Pattern: Silkweave Hood (Rank 3)
+									},
+									["isWQ"] = 110,
+									["requireSkill"] = 197,	-- Tailoring
+								},
+							}),
 						},
 						["requireSkill"] = 197,
 					}),

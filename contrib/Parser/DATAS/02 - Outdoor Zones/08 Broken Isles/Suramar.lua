@@ -954,7 +954,15 @@ _.Zones =
 					q(44752),	-- Essence Triangulation
 					q(41465),	-- Estate Jewelry: A Braggart's Brooch
 					q(41466),	-- Estate Jewelry: Haute Claw-ture
-					q(38971),	-- Exotic Textiles
+					{
+						["questID"] = 38971,	-- Exotic Textiles
+						["groups"] = {
+							i(127026),	-- Pattern: Imbued Silkweave Gloves (Rank 1)
+						},
+						["qg"] = 93978,	-- Leyweaver Athystro
+						["coord"] = { 26.6, 71.4 },
+						["requireSkill"] = 197,	-- Tailoring
+					},
 					q(45066),	-- Experimental Instability
 					q(41178),	-- Explosive Results
 					q(40154),	-- Eye of Azshara: The Scales of Serpentrix
@@ -1031,7 +1039,15 @@ _.Zones =
 					q(44726),	-- In the Business of Souls
 					qa( 11964),	-- Incense for the Summer Scorchlings
 					q(44569),	-- Inquisitor Volitix
-					q(38975),	-- Inspire Me!
+					{	-- Inspire Me!
+						["questID"] = 38975,
+						["groups"] = {
+							i(127028),	-- Pattern: Imbued Silkwave Robes (Rank 1)
+						},
+						["qg"] = 93976,	-- Leyweaver Mithrogane
+						["coord"] = { 40.2, 69.6 },
+						["requireSkill"] = 197,	-- Tailoring
+					},
 					q(45271),	-- Insurrection
 					q(45278),	-- Insurrection: An Elven Problem
 					q(45285),	-- Insurrection: As Strong As Our Will
@@ -1172,7 +1188,15 @@ _.Zones =
 					q(41469),	-- Return to Irongrove Retreat
 					q(45238),	-- Return to Karazhan: Cubic Cynosure
 					q(40153),	-- Return to Karazhan: Scales of Legend
-					q(44741),	-- Return to Karazhan: The Big Bag Theory
+					{	-- Return to Karazhan: The Big Bag Theory
+						["questID"] = 44741,
+						["groups"] = {
+							i(142076),	-- Pattern: Imbued Silkweave Bag (Rank 1)
+						},
+						["qg"] = 93969,	-- Leyweaver Tytallo
+						["coord"] = { 40.4, 69.4 },
+						["requireSkill"] = 197,	-- Tailoring
+					},
 					q(42838),	-- Reversal
 					q(38803),	-- Rin'thissa
 					q(38800),	-- Rin'thissa's Eye
@@ -1716,6 +1740,14 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 						}),
+						{	-- Work Order: Silkweave Slippers
+							["questID"] = 41649,
+							["groups"] = {
+								i(138014),	-- Pattern: Silkweave Slippers (Rank 3)
+							},
+							["isWQ"] = 110,
+							["requireSkill"] = 197,	-- Tailoring
+						},
 					},
 				}),
 				n(0, { 		-- Zone Drops

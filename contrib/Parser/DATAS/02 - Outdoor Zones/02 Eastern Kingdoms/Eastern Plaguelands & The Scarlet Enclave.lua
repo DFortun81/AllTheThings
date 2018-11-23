@@ -1338,6 +1338,18 @@ _.Zones =
 								},
 								["u"] = 2,
 							}),
+							i(14485, {	-- Pattern: Wizardweave Leggings
+								["crs"] = {
+									8551,	-- Dark Summoner
+								},
+								["u"] = 2,
+							}),
+							i(14500, {	-- Pattern: Wizardweave Robe
+								["crs"] = {
+									8526,	-- Dark Caster
+								},
+								["u"] = 2,
+							}),
 						}),
 						n(-17, {	-- Quests (Legacy)
 							un(40, qr(q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn

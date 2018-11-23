@@ -289,6 +289,9 @@ _.Instances =
 												["achievementID"] = 12522,	-- Crimson Descent
 												["criteriaID"] = 3,			-- Zul, Reborn
 											},
+											{	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
+												["itemID"] = 162422,	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
+											},
 											{	-- Pursax, the Backborer
 												["itemID"] = 160684,	-- Pursax, the Backborer
 											},

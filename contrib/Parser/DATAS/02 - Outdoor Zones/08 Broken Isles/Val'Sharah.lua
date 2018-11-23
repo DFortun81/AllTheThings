@@ -1320,7 +1320,7 @@ _.Zones =
 				}),
 				n(-2, { 	-- Vendors
 					n(93974, { -- Leyweaver Erenyi
-						sp(185927, { i(127001) }), -- Imbued Silkweave Cinch
+						i(127022),	-- Pattern: Imbued Silkweave Cinch (Rank 1)
 					}),
 					n(106901, {	-- Sylvia Hartshorn <Dreamweaver Emissary>
 						i(140652),	-- Seed of Solar Fire - Druid Artifact Skin
@@ -1452,6 +1452,14 @@ _.Zones =
 						n(-387, {	-- Relics
 							i(143682),	-- Viscous Terror
 						}),
+						{	-- Work Order: Silkweave Gloves
+							["questID"] = 41646,
+							["groups"] = {
+								i(138012),	-- Pattern: Silkweave Gloves (Rank 3)
+							},
+							["isWQ"] = 110,
+							["requireSkill"] = 197,	-- Tailoring
+						},
 					},
 				}),
 				n(0, {		-- Zone Drops

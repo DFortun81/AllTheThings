@@ -149,6 +149,15 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
+								{	-- Work Order: Battle Flag: Rallying Swiftness
+									["questID"] = 52424,
+									["groups"] = {
+										i(162445),	-- Pattern: Battle Flag: Rallying Swiftness (Rank 3)
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 197,	-- Tailoring
+								},
 								q(52390, {	-- Work Order: Contract: Order of Embers
 									["groups"] = {
 										i(162362, {	-- Contract: Order of Embers [Rank 3]

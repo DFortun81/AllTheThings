@@ -119,6 +119,15 @@ _.Zones =
 									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Work Order: Battle Flag: Phalanx Defense
+									["questID"] = 52423,
+									["groups"] = {
+										i(162444),	-- Pattern: Battle Flag: Phalanx Defense (Rank 3)
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 197,	-- Tailoring
+								},
 								{	-- Work Order: Demitri's Draught of Deception
 									["questID"] = 52331,
 									["groups"] = {

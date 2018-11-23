@@ -80,6 +80,48 @@ _.NeverImplemented =
 	un(1, i(47012)),	-- Design: Stalwart Ametrine (used version is 47017)
 	un(1, i(47016)),	-- Design: Lucent Ametrine (used version is 47021)
 	un(1, i(47023)),	-- Design: Deft Ametrine (used version is 47020)
+	un(1, i(42196)),	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
+	un(1, i(7093)),		-- Pattern: Boots of Darkness
+	un(1, i(42190)),	-- Pattern: Deathchill Cloak (pattern never went live, but it's learned at the trainer)
+	un(1, i(42180)),	-- Pattern: Ebonweave (pattern never went live, but it's learned at the trainer)
+	un(1, i(42200)),	-- Pattern: Ebonweave Gloves (pattern never went live, but it's learned at the trainer)
+	un(1, i(42199)),	-- Pattern: Ebonweave Robe (pattern never went live, but it's learned at the trainer)
+	un(1, i(162424)),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
+	un(1, i(162770)),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
+	un(1, i(162426)),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
+	un(1, i(162771)),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (horde)
+	un(1, i(162428)),	-- Pattern: Embroidered Deep Sea Gloves (Rank 3)
+	un(1, i(162430)),	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
+	un(1, i(21369)),	-- Pattern: Felcloth Bag
+	un(1, i(42194)),	-- Pattern: Frostmoon Pants (pattern never went live, but it's learned at the trainer)
+	un(1, i(42186)),	-- Pattern: Frostweave Bag (pattern never went live, but it's learned at the trainer)
+	un(1, i(42179)),	-- Pattern: Green Workman's Shirt (pattern never went live, but it's learned at the trainer)
+	un(1, i(42191)),	-- Pattern: Hat of Wintry Doom (pattern never went live, but it's learned at the trainer)
+	un(1, i(30473)),	-- Pattern: Lifeblood Belt
+	un(1, i(30474)),	-- Pattern: Lifeblood Bracers
+	un(1, i(30472)),	-- Pattern: Lifeblood Leggings
+	un(1, i(42195)),	-- Pattern: Light Blessed Mittens (pattern never went live, but it's learned at the trainer)
+	un(1, i(114867)),	-- Pattern: Miniature Flying Carpet - NYI
+	un(1, i(42181)),	-- Pattern: Moonshroud (pattern never went live, but it's learned at the trainer)
+	un(1, i(42198)),	-- Pattern: Moonshroud Gloves (pattern never went live, but it's learned at the trainer)
+	un(1, i(42197)),	-- Pattern: Moonshroud Robe (pattern never went live, but it's learned at the trainer)
+	un(1, i(118098)),	-- Pattern: Murloc Chew Toy
+	un(1, i(30470)),	-- Pattern: Netherflame Belt
+	un(1, i(30471)),	-- Pattern: Netherflame Boots
+	un(1, i(30469)),	-- Pattern: Netherflame Robe
+	un(1, i(137981)),	-- Pattern: Silkweave Cloak
+	un(1, i(42192)),	-- Pattern: Silky Iceshard Boots (pattern never went live, but it's learned at the trainer)
+	un(1, i(42182)),	-- Pattern: Spellweave (pattern never went live, but it's learned at the trainer)
+	un(1, i(42202)),	-- Pattern: Spellweave Gloves (pattern never went live, but it's learned at the trainer)
+	un(1, i(42201)),	-- Pattern: Spellweave Robe (pattern never went live, but it's learned at the trainer)
+	un(1, i(10303)),	-- Pattern: Stormcloth Pants (pattern never went live despite it showing in the appearance tab)
+	un(1, i(10304)),	-- Pattern: Stormcloth Gloves (pattern never went live despite it showing in the appearance tab)
+	un(1, i(10313)),	-- Pattern: Stormcloth Vest (pattern never went live despite it showing in the appearance tab)
+	un(1, i(10319)),	-- Pattern: Stormcloth Headband (pattern never went live despite it showing in the appearance tab)
+	un(1, i(10322)),	-- Pattern: Stormcloth Shoulders (pattern never went live despite it showing in the appearance tab)
+	un(1, i(10324)),	-- Pattern: Stormcloth Boots (pattern never went live despite it showing in the appearance tab)
+	un(1, i(42189)),	-- Pattern: Wispcloak (pattern never went live, but it's learned at the trainer)
+	un(1, i(42174)),	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
 	un(1, i(2556)),     -- Recipe: Elixir of Tongues
 	un(1, i(5641)),		-- Recipe: Cowardly Flight Potion
 	un(1, i(34481)),	-- Recipe: Mad Alchemist's Potion (Recipe was added to trainers instead of a usable item)
@@ -160,6 +202,12 @@ _.NeverImplemented =
 		["mountID"] = 262024,
 	})),
 	
+	un(1, i(86512)),	-- Journeyman Cookbook
+	un(1, i(86550)),	-- Apprentice Cookbook
+	un(1, i(86551)),	-- Expert Cookbook
+	un(1, i(86552)),	-- Artisan Cookbook
+	un(1, i(86553)),	-- Master Cookbook
+	un(1, i(86554)),	-- Grand Master Cookbook
 	
 	un(1, i(129738)), -- Verus
 	un(1, i(147204)), -- Black Apron - TEST
@@ -235,7 +283,7 @@ _.NeverImplemented =
 	un(1, i(115299)),	-- Spectral Scepter
 	un(1, i(4989)),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
 	un(1, i(4990)),	-- Scorched Bands
-	un(1, i(6243)),	-- Green Woolen Robe
+	un(1, i(6273)),	-- Green Woolen Robe
 	un(1, i(6478)),	-- Rat Stompers
 	un(1, i(18316)),	-- Obsidian Bauble
 	un(1, i(19989)),	-- Tome of Devouring Shadows
@@ -287,7 +335,7 @@ _.NeverImplemented =
 	un(1, i(30460)),	-- Netherflame Belt
 	un(1, i(30461)),	-- Netherflame Boots
 	un(1, i(30463)),	-- Lifeblood Belt
-	un(1, i(30463)),	-- Lifeblood Bracers
+	un(1, i(30464)),	-- Lifeblood Bracers
 	un(1, i(30465)),	-- Lifeblood Leggings
 	un(1, i(34107)),	-- Tattered Shoulderpads
 	un(1, i(37210)),	-- Seafarer Cinch (removed in beta)
