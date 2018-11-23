@@ -149,131 +149,66 @@ _.Zones =
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 10,	-- Ancient Defenses
 									["missionID"] = 1907,	-- Ancient Defenses
-									["g"] = {
-										{	-- Ancient Defenses
-											["currencyID"] = 1593,	-- Proudmore Admiralty
-										},
-									},
 								},
 								{	-- Ashenvale Pass
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 4,	-- Ashenvale Pass
 									["missionID"] = 1887,	-- Ashenvale Pass
-									["g"] = {
-										{	-- Ashenvale Pass
-											["currencyID"] = 1553,	-- Azerite
-										},
-									},
 								},
 								{	-- Bilgewater Sabotage
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 1,	-- Bilgewater Sabotage
 									["missionID"] = 1858,	-- Bilgewater Sabotage
-									["g"] = {
-										{	-- Bilgewater Sabotage
-											["currencyID"] = 1553,	-- Azerite
-										},
-									},
 								},
 								{	-- Darkshore Drilling
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 8,	-- Darkshore Drilling
 									["missionID"] = 1901,	-- Darkshore Drilling
-									["g"] = {
-										{	-- Darkshore Drilling
-											["currencyID"] = 1579,	-- Champions of Azeroth Commendation
-										},
-									},
 								},
 								{	-- Deeps Scouting
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 7,	-- Deeps Scouting
 									["missionID"] = 1900,	-- Deeps Scouting
-									["g"] = {
-										{	-- Deeps Scouting
-											["currencyID"] = 1599,	-- 7th Legion Commendation
-										},
-									},
 								},
 								{	-- Out of Our Depth
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 6,	-- Out of Our Depth
 									["missionID"] = 1893,	-- Out of Our Depth
-									["g"] = {
-										{	-- Out of Our Depth
-											["currencyID"] = 1553,	-- Azerite
-										},
-									},
 								},
 								{	-- Posting Reinforcements
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 11,	-- Posting Reinforcements
 									["missionID"] = 1908,	-- Posting Reinforcements
-									["g"] = {
-										{	-- Posting Reinforcements
-											["currencyID"] = 1599,	-- 7th Legion Commendation
-										},
-									},
 								},
 								{	-- Recapture Silverwind Refuge
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 12,	-- Recapture Silverwind Refuge
 									["missionID"] = 1910,	-- Recapture Silverwind Refuge
-									["g"] = {
-										{	-- Recapture Silverwind Refuge
-											["currencyID"] = 1579,	-- Champions of Azeroth
-										},
-									},
 								},
 								{	-- Return to Auberdine
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 13,	-- Return to Auberdine
 									["missionID"] = 1916,	-- Return to Auberdine
-									["g"] = {
-										{	-- Return to Auberdine
-											["currencyID"] = 1553,	-- Azerite
-										},
-									},
 								},
 								{	-- Shreds of Warsong
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 5,	-- Shreds of Warsong
 									["missionID"] = 1892,	-- Shreds of Warsong
-									["g"] = {
-										{	-- Shreds of Warsong
-											["currencyID"] = 1553,	-- Azerite
-										},
-									},
 								},
 								{	-- Siege of Astranaar
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 2,	-- Siege of Astranaar
 									["missionID"] = 1866,	-- Siege of Astranaar
-									["g"] = {
-										{	-- Siege of Astranaar
-											["currencyID"] = 1553,	-- Azerite
-										},
-									},
 								},
 								{	-- Stardust Spire Counterattack
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 9,	-- Stardust Spire Counterattack
 									["missionID"] = 1902,	-- Stardust Spire Counterattack
-									["g"] = {
-										{	-- Stardust Spire Counterattack
-											["currencyID"] = 1594,	-- Storm's Wake Commendation
-										},
-									},
 								},
 								{	-- Teldrassil Evacuation
 									["achievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire
 									["criteriaID"] = 3,	-- Teldrassil Evacuation
 									["missionID"] = 1882,	-- Teldrassil Evacuation
-									["g"] = {
-										{	-- Teldrassil Evacuation
-											["currencyID"] = 1553,	-- Azerite
-										},
-									},
 								},
 							},
 						},
@@ -289,61 +224,31 @@ _.Zones =
 									["achievementID"] = 12896,	-- Azeroth at War: The Barrens	
 									["criteriaID"] = 9,	-- Azerite Weaponry	
 									["missionID"] = 1905,	-- Azerite Weaponry	
-									["g"] = {	
-										{	-- Azerite Weaponry	
-											["currencyID"] = 1553,	-- Azerite	
-										},	
-									},	
 								},
 								{	-- Barren Supplies	
 									["achievementID"] = 12896,	-- Azeroth at War: The Barrens	
 									["criteriaID"] = 13,	-- Barren Supplies	
-									["missionID"] = 1918,	-- Barren Supplies	
-									["g"] = {	
-										{	-- Barren Supplies	
-											["itemID"] = 163036,	-- Polished Pet Charm	
-										},	
-									},	
+									["missionID"] = 1918,	-- Barren Supplies
 								},
 								{	-- Barrens at War	
 									["achievementID"] = 12896,	-- Azeroth at War: The Barrens	
 									["criteriaID"] = 7,	-- Barrens at War	
-									["missionID"] = 1898,	-- Barrens at War	
-									["g"] = {	
-										{	-- Barrens at War	
-											["currencyID"] = 1553,	-- Azerite	
-										},	
-									},	
+									["missionID"] = 1898,	-- Barrens at War
 								},
 								{	-- Echo Isles Navy	
 									["achievementID"] = 12896,	-- Azeroth at War: The Barrens	
 									["criteriaID"] = 11,	-- Echo Isles Navy	
 									["missionID"] = 1913,	-- Echo Isles Navy	
-									["g"] = {	
-										{	-- Echo Isles Navy	
-											["currencyID"] = 1599,	-- 7th Legion Commendation	
-										},	
-									},	
 								},
 								{	-- Great Gate of Mulgore	
 									["achievementID"] = 12896,	-- Azeroth at War: The Barrens	
 									["criteriaID"] = 8,	-- Great Gate of Mulgore	
-									["missionID"] = 1899,	-- Great Gate of Mulgore	
-									["g"] = {	
-										{	-- Great Gate of Mulgore	
-											["itemID"] = 160053,	-- Battle-Scarred Augment Rune	
-										},	
-									},	
+									["missionID"] = 1899,	-- Great Gate of Mulgore
 								},
 								{	-- Investigate Wailing Caverns	
 									["achievementID"] = 12896,	-- Azeroth at War: The Barrens	
 									["criteriaID"] = 12,	-- Investigate Wailing Caverns	
-									["missionID"] = 1917,	-- Investigate Wailing Caverns	
-									["g"] = {	
-										{	-- Investigate Wailing Caverns	
-											["currencyID"] = 1553,	-- Azerite	
-										},	
-									},	
+									["missionID"] = 1917,	-- Investigate Wailing Caverns
 								},
 								{	-- Lingering in Theramore	
 									["achievementID"] = 12896,	-- Azeroth at War: The Barrens	
@@ -353,42 +258,22 @@ _.Zones =
 								{	-- Our Fort Was a Triumph	
 									["achievementID"] = 12896,	-- Azeroth at War: The Barrens	
 									["criteriaID"] = 1,	-- Our Fort Was a Triumph	
-									["missionID"] = 1885,	-- Our Fort Was a Triumph	
-									["g"] = {	
-										{	-- Our Fort Was a Triumph	
-											["currencyID"] = 1599,	-- 7th Legion Commendation	
-										},	
-									},	
+									["missionID"] = 1885,	-- Our Fort Was a Triumph
 								},
 								{	-- Razor Hill Supplies	
 									["achievementID"] = 12896,	-- Azeroth at War: The Barrens	
 									["criteriaID"] = 3,	-- Razor Hill Supplies	
-									["missionID"] = 1890,	-- Razor Hill Supplies	
-									["g"] = {	
-										{	-- Razor Hill Supplies	
-											["currencyID"] = 1599,	-- 7th Legion Commendation	
-										},	
-									},	
+									["missionID"] = 1890,	-- Razor Hill Supplies
 								},
 								{	-- Salvaging Tiragarde	
 									["achievementID"] = 12896,	-- Azeroth at War: The Barrens	
 									["criteriaID"] = 5,	-- Salvaging Tiragarde	
 									["missionID"] = 1896,	-- Salvaging Tiragarde	
-									["g"] = {	
-										{	-- Salvaging Tiragarde	
-											["currencyID"] = 1593,	-- Proudmore Admiralty	
-										},	
-									},	
 								},
 								{	-- Steamwheedle Alliance	
 									["achievementID"] = 12896,	-- Azeroth at War: The Barrens	
 									["criteriaID"] = 10,	-- Steamwheedle Alliance	
-									["missionID"] = 1906,	-- Steamwheedle Alliance	
-									["g"] = {	
-										{	-- Steamwheedle Alliance	
-											["currencyID"] = 1553,	-- Azerite	
-										},	
-									},	
+									["missionID"] = 1906,	-- Steamwheedle Alliance
 								},
 								{	-- The Defense of Northwatch Hold	
 									["achievementID"] = 12896,	-- Azeroth at War: The Barrens	
@@ -398,20 +283,10 @@ _.Zones =
 							},
 						},
 						{	-- Azeroth Bleeds
-							["missionID"] = 2078,	--  Azeroth Bleeds
-							["g"] = {	
-								{	-- Lordamere Lake	
-									["currencyID"] = 1579,	-- Champions of Azeroth Commendation	
-								},	
-							},	
+							["missionID"] = 2078,	--  Azeroth Bleed
 						},
 						{	-- Explore the Roost
 							["missionID"] = 2087,	-- Explore the Roost
-							["g"] = {	
-								{	-- Barren Supplies	
-									["itemID"] = 163036,	-- Polished Pet Charm	
-								},	
-							},	
 						},
 						{	-- The Shadow War
 							["missionID"] = 1877,	-- The Shadow War
