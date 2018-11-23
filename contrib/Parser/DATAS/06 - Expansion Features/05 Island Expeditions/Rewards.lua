@@ -360,11 +360,11 @@ _.ExpansionFeatures =
 					n(-161, {	-- Toys
 						i(164375),	-- Bad Mojo Banana [Un'gol Ruins]
 						i(164373),	-- Enchanted Soup Stone
-						i(164372),	-- Jinyu Light Globe
 						i(164374),	-- Magic Monkey Banana
 						i(163795),	-- Oomgut Ritual Drum
-						i(164377),	-- Regenerating Banana Bunch [Un'gol Ruins]
 						i(163924),	-- Whiskerwax Candle
+						-- i(164372),	-- Jinyu Light Globe [Not added, maybe they fix them some day]
+						-- i(164377),	-- Regenerating Banana Bunch [Un'gol Ruins] [Not added, maybe they fix them some day]
 						-- i(164371),	-- Yaungol Oil Stove [Not in files]
 					}),
 					n(-319, {	-- Weapons
