@@ -3,6 +3,7 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	un(1, i(129139)),	-- Tome of Rapid Pathfinding (WoD PTR only, why Blizz why?)
 	un(1, i(146335)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 	un(1, i(146355)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 	un(1, i(146375)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)

@@ -141,6 +141,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2213, {	-- Doom's Howl [Warfront] [QID]
 				["groups"] = bubbleDown({["modID"] = 3}, {
+					i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed drop by Crieve on stream 11.23.18)
 					i(163828),	-- Toy Siege Tower
 					i(161464),	-- Alliance Bowman's Coif
 					i(161466),	-- Battlemage's Collar
