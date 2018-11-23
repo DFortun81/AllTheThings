@@ -4,7 +4,7 @@
 _.Holidays =
 {
 	holiday(1671631, {	-- Trial of Style
-		["groups"] = {
+		["g"] = bubbleDown({["u"] = 22}, {
 			n(-2, {	-- Vendors
 				n(54473, {	-- Warpweaver Dushar <Transmogrifier> (Horde / Orgrimmar)
 					["races"] = HORDE_ONLY,
@@ -1166,7 +1166,7 @@ _.Holidays =
 					}),
 				}),
 			}),
-		},
+		}),
 		["mapID"] = -777,
 		["u"] = 22,
 	}),
