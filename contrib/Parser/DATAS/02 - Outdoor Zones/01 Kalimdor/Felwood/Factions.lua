@@ -67,7 +67,7 @@ _.Zones =
 								["sourceQuest"] = 6031,	-- Runecloth
 								["requireSkill"] = 197,	-- Requires: Tailoring
 							},
-							{	-- The Root of All Evil (Unconfirmed pre-req. Possibly revered with Timbermaw?)
+							{	-- The Root of All Evil (Unconfirmed pre-req. Possibly revered with Timbermaw? not available at friendly)
 								["questID"] = 8481,
 								["groups"] = {
 									i(21326),	-- Defender of the Timbermaw
