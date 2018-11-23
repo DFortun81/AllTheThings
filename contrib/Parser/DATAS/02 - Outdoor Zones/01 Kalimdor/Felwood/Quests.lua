@@ -349,20 +349,18 @@ _.Zones =
 							}),
 						}),
 						crit(9, {	-- The Timbermaw's Ally
-							qa(28392, {	-- The Timbermaw Tribe
-								["qg"] = 47931,	-- Denmother Ulrica
-								["isBreadcrumb"] = true,	-- for "Deadwood of the North" and "Disarming Bears"
-								["sourceQuests"] = { 28389 },	-- Report to the Denmother
-							}),
-							q( 28338, {	-- Deadwood of the North
+							{	-- Deadwood of the North
+								["questID"] = 28338,
 								["groups"] = {
 									i(21316),	-- Leggings of the Ursa
 									i(21317),	-- Helm of the Pathfinder
 								},
 								["qg"] = 15395,	-- Nafien
-								["sourceQuests"] = { 28392 },	-- The Timbermaw Tribe
-							}),
-							q( 28366, {	-- Disarming Bears
+								["coord"] = { 64.0, 10.3 },
+								["sourceQuest"] = 28392,	-- The Timbermaw Tribe
+							},
+							{	-- Disarming Bears
+								["questID"] = 28366,
 								["groups"] = {
 									i(65343),	-- Timbermaw Breastplate
 									i(65294),	-- Timbermaw Bracers
@@ -370,20 +368,25 @@ _.Zones =
 									i(65332),	-- Timbermaw Boots
 								},
 								["qg"] = 15395,	-- Nafien
-								["sourceQuests"] = { 28392 },	-- The Timbermaw Tribe
-							}),
-							q( 28362, {	-- Stupid Drizle!
+								["coord"] = { 64.0, 10.3 },
+								["sourceQuest"] = 28392,	-- The Timbermaw Tribe
+							},
+							{	-- Stupid Drizle!
+								["questID"] = 28362,
 								["qg"] = 48461,	-- Ferli
-							}),
-							q( 28364, {	-- The Chieftain's Key
+								["coord"] = { 64.1, 10.3 },
+							},
+							{	-- The Chieftain's Key
+								["questID"] = 28364,
 								["groups"] = {
 									i(65293),	-- Leggings of Mischief
 									i(65312),	-- Vest of Sobbing
 									i(65331),	-- Bloodmaw's Belt
 								},
 								["qg"] = 47556,	-- Drizle
-								["sourceQuests"] = { 28362 },	-- Stupid Drizle!
-							}),
+								["coord"] = { 60.5, 9.5 },
+								["sourceQuest"] = 28362,	-- Stupid Drizle!
+							},
 						}),
 					}),			
 					n(-168, { -- Other Quests
@@ -409,37 +412,103 @@ _.Zones =
 
 
 							-- UNSORTED HORDE QUESTS
-							qh(28340, {	-- A Bomb Deal
+							{	-- A Bomb Deal
+								["questID"] = 28340,
 								["qg"] = 48333, -- Foreman Pikwik
-								["sourceQuests"] = { 28380 }, -- Pikwik in Peril
-							}),
+								["coord"] = { 54.6, 18.3 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 28380, -- Pikwik in Peril
+							},
 							qg(48127, qh(28334)),	-- A Flare Fight
 							qg(48469, qh(28372)),	-- Back to Business
-							o(207104, {	-- Master Control Pump
-								qh(28368, {	-- Fire in the Hole!
+							{	-- Master Control Pump
+								["objectID"] = 207104,
+								["coord"] = { 60.4, 22.2 },
+								["questID"] = 28368,	-- Fire in the Hole!
+								["groups"] = {
 									i(65346),   -- Gauntlets of Raw Strength
 									i(65349),   -- Everburning Cloak
 									i(65352),   -- Drilldozer Band
-								}),
-							}),
-							qg(48127, qh(28339)),	-- Is Your Oil Running?					
+								},
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 28335,	-- Turn It Off! Turn It Off!
+							},
+							{	-- Is Your Oil Running?
+								["questID"] = 28339,
+								["qg"] = 48127,	-- Darla Drilldozer
+								["coord"] = { 56.3, 8.1 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									28357,	-- Take it to the Tree
+									28370,	-- Wisp-napping
+								},
+							},
 							qg(48127, qh(28333, {	-- It's Time to Oil Up
 								i(65344),
 								i(65347),
 								i(65350),
 								i(65353),
 							})),
-							qg(48127, qh(28380)),	-- Pikwik in Peril
-							qg(48127, qh(28336, {	-- Slap and Cap
-								i(65345),
-								i(65348),
-								i(65351),
-								i(65354),
-							})),
-							qg(48127, qh(28357)),	-- Take it to the Tree
-							qg(48127, qh(28373)),	-- Timbermaw Hold
-							qg(48333, qh(28335)),	-- Turn It Off! Turn It Off!
-							qg(48127, qh(28370)),	-- Wisp-napping
+							{	-- Pikwik in Peril
+								["questID"] = 28380,
+								["qg"] = 48127,	-- Darla Drilldozer
+								["coord"] = { 56.3, 8.1 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									28339,	-- Is Your Oil Running?
+									28336,	-- Slap and Cap
+								},
+							},
+							{	-- Slap and Cap
+								["questID"] = 28336,
+								["groups"] = {
+									i(65345),	-- Oilfoot Slippers
+									i(65348),	-- Oil Grush Leggings
+									i(65351),	-- Workforce Chestguard
+									i(65354),	-- Cloak of Sleep Deprivation
+								},
+								["qg"] = 48127,	-- Darla Drilldozer
+								["coord"] = { 56.3, 8.1 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									28357,	-- Take it to the Tree
+									28370,	-- Wisp-napping
+								},
+							},
+							{	-- Take it to the Tree
+								["questID"] = 28357,
+								["qg"] = 48127,	-- Darla Drilldozer
+								["coord"] = { 56.3, 8.1 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- The Timbermaw Tribe
+								["questID"] = 28392,
+								["qg"] = 47931,	-- Denmother Ulrica
+								["races"] = ALLIANCE_ONLY,
+								["isBreadcrumb"] = true,
+								["sourceQuest"] = 28389,	-- Report to the Denmother
+							},
+							{	-- Timbermaw Hold
+								["questID"] = 28373,
+								["qg"] = 48127,	-- Darla Drilldozer
+								["coord"] = { 56.3, 8.1 },
+								["races"] = HORDE_ONLY,
+								["isBreadcrumb"] = true,
+								["sourceQuest"] = 28368,	-- Fire in the Hole!
+							},
+							{	-- Turn It Off! Turn It Off!
+								["questID"] = 28335,
+								["qg"] = 48333,	-- Foreman Pikwik
+								["coord"] = { 54.6, 18.3 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 28380,	-- Pikwik in Peril
+							},
+							{	-- Wisp-napping
+								["questID"] = 28370,
+								["qg"] = 48127,	-- Darla Drilldozer
+								["coord"] = { 56.3, 8.1 },
+								["races"] = HORDE_ONLY,
+							},
 				}),
 			},
 		}),

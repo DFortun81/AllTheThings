@@ -11,29 +11,42 @@ _.Zones =
 					["groups"] = {
 						ach(944),	-- They Love Me In That Tunnel
 						n(-17, {	-- Quests
-							qr(q(28396, {	-- Feathers for Grazle
-								["groups"] = {
-								},
+							{	-- Feathers for Grazle
+								["questID"] = 28396,
 								["qg"] = 11554,	-- Grazle
-								["sourceQuests"] = { 27995 },	-- Dance for Ruumbo!
-							})),
-							{
+								["coord"] = { 51.4, 80.4 },
+								["repeatable"] = true,
+								["sourceQuest"] = 27995,	-- Dance for Ruumbo!
+							},
+							{	-- Deadwood Ritual Totem
 								["qgs"] = {
 									7157,	-- Deadwood Avenger
 									7156,	-- Deadwood Den Watcher
 									7158,	-- Deadwood Shaman
 								},
-								["itemID"] = 20741,	-- Deadwood Ritual Totem
+								["itemID"] = 20741,
 								["questID"] = 8470,	-- Deadwood Ritual Totem
 							},
-							q(28521, {	-- Speak to Salfa
+							{	-- Speak to Salfa
+								["questID"] = 28521,
 								["qg"] = 15395,	-- Nafien
-								["sourceQuests"] = { 28338, 28366 },	-- Deadwood of the North & Disarming Bears
-							}),
-							qr(q(28395, {	-- Feathers for Nafien
+								["coord"] = { 64.0, 10.4 },
+								["isBreadcrumb"] = true,
+								["sourceQuests"] = {
+									28338,	-- Deadwood of the North
+									28366,	-- Disarming Bears
+								},
+							},
+							{	-- Feathers for Nafien
+								["questID"] = 28395,
 								["qg"] = 15395,	-- Nafien
-								["sourceQuests"] = { 28338, 28366 },	-- Deadwood of the North & Disarming Bears
-							})),
+								["coord"] = { 64.0, 10.3 },
+								["repeatable"] = true,
+								["sourceQuests"] = {
+									28338,	-- Deadwood of the North
+									28366,	-- Disarming Bears
+								},
+							},
 							{	-- Runecloth
 								["questID"] = 6031,
 								["groups"] = {
@@ -54,32 +67,39 @@ _.Zones =
 								["sourceQuest"] = 6031,	-- Runecloth
 								["requireSkill"] = 197,	-- Requires: Tailoring
 							},
-							{	-- The Root of All Evil (UNKNOWN PRE-REQS -- REPUTATION, WINTERSPRING QUESTS???)
+							{	-- The Root of All Evil (Unconfirmed pre-req. Possibly revered with Timbermaw?)
 								["questID"] = 8481,
-								["qg"] = 11555,	-- Gorn One Eye
 								["groups"] = {
 									i(21326),	-- Defender of the Timbermaw
 								},
+								["qg"] = 11555,	-- Gorn One Eye
+								["coord"] = { 64.4, 5.1 },
 							},
 						}),
 						n( -2, {	-- Vendors
 							n(11555, {	-- Gorn One Eye
-								i(16768),	-- Furbolg Medicine Pouch
-								i(16769),	-- Furbolg Medicine Totem
+								["groups"] = {
+									i(16768),	-- Furbolg Medicine Pouch
+									i(16769),	-- Furbolg Medicine Totem
+								},
+								["coord"] = { 64.4, 5.1 },
 							}),
 							n(11557, {	-- Meilosh
-								i(22392),	-- Formula: Enchant 2H Weapon - Agility
-								i(19445),	-- Formula: Enchant Weapon - Agility
-								i(19218), 	-- Pattern: Mantle of the Timbermaw
-								i(19326), 	-- Pattern: Might of the Timbermaw
-								i(19327),  	-- Pattern: Timbermaw Brawlers
-								i(20253), 	-- Pattern: Warbear Harness
-								i(20254), 	-- Pattern: Warbear Woolies
-								i(19215), 	-- Pattern: Wisdom of the Timbermaw
-								i(19202), 	-- Plans: Heavy Timbermaw Belt
-								i(19204), 	-- Plans: Heavy Timbermaw Boots
-								i(13484),	-- Recipe: Transmute Earth to Water
-								i(66888),	-- Stave of Fur and Claw Toy
+								["groups"] = {
+									i(22392),	-- Formula: Enchant 2H Weapon - Agility
+									i(19445),	-- Formula: Enchant Weapon - Agility
+									i(19218), 	-- Pattern: Mantle of the Timbermaw
+									i(19326), 	-- Pattern: Might of the Timbermaw
+									i(19327),  	-- Pattern: Timbermaw Brawlers
+									i(20253), 	-- Pattern: Warbear Harness
+									i(20254), 	-- Pattern: Warbear Woolies
+									i(19215), 	-- Pattern: Wisdom of the Timbermaw
+									i(19202), 	-- Plans: Heavy Timbermaw Belt
+									i(19204), 	-- Plans: Heavy Timbermaw Boots
+									i(13484),	-- Recipe: Transmute Earth to Water
+									i(66888),	-- Stave of Fur and Claw Toy
+								},
+								["coord"] = { 64.8, 5.2 },
 							}),
 						}),
 					},
