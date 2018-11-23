@@ -88,7 +88,7 @@ _.Zones =
 									currency(416),	-- Mark of the World Tree
 								},
 							},
-							{
+							{	-- Burn Victims
 								["questID"] = 29138,	-- Burn Victims
 								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["qg"] = 53080,	-- Captain Irontree
@@ -98,7 +98,7 @@ _.Zones =
 									currency(416),	-- Mark of the World Tree
 								},
 							},
-							{
+							{	-- Druids of the Talon
 								["questID"] = 29181,	-- Druids of the Talon
 								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["qg"] = 52135,	-- Malfurion Stormrage
@@ -110,7 +110,7 @@ _.Zones =
 									},
 								},
 							},
-							{
+							{	-- Hostile Elements
 								["questID"] = 29179,	-- Hostile Elements
 								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["qg"] = 52824,	-- General Taldris Moonfall
@@ -120,7 +120,14 @@ _.Zones =
 									currency(416),	-- Mark of the World Tree
 								},
 							},
-							{
+							{	-- Some Like It Hot
+								["questID"] = 29299,	-- Some Like It Hot
+								["qg"] = 52489,			-- Avrilla
+								["coords"] = {
+									{ 50.64, 87.31, 338 },
+								},
+							},
+							{	-- The Shadow Wardens
 								["questID"] = 29214,	-- The Shadow Wardens
 								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["qg"] = 52135,	-- Malfurion Stormrage
@@ -132,7 +139,7 @@ _.Zones =
 									},
 								},
 							},
-							{
+							{	-- Traitors Return
 								["questID"] = 29142,	-- Traitors Return
 								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["qg"] = 52824,	-- General Taldris Moonfall
@@ -142,7 +149,7 @@ _.Zones =
 									currency(416),	-- Mark of the World Tree
 								},
 							},
-							{
+							{	-- Wisp Away
 								["questID"] = 29143,	-- Wisp Away
 								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["qg"] = 52467,	-- Rayne Feathersong
@@ -184,7 +191,6 @@ _.Zones =
 							qg(52921, q(29159)),	-- Pyrorachnophobia
 							qg(53259, q(29293)),	-- Singed Wings
 							qg(52494, q(29211)),	-- Solar Core Destruction
-							qg(52489, q(29299)),	-- Some Like It Hot
 							qg(52491, q(29288)),	-- Starting Young
 							qg(52489, q(29257)),	-- Steal Magmolias
 							qg(52495, q(29243)),	-- Strike at the Heart (addtl questgiver 53056)
@@ -225,6 +231,13 @@ _.Zones =
 									i(66976),	-- Spaulders of the Savage Beast
 									i(67071),	-- Staff of Old Woes
 									i(67117),	-- Woundsealer Spaulders								
+								},
+								["coords"] = {
+									{ 34.3, 48.3, 338 },
+									{ 33.9, 53.8, 338 },
+									{ 49.9, 47.2, 338 },
+									{ 65.8, 55.0, 338 },
+									{ 68.5, 64.9, 338 },
 								},
 								["modelScale"] = 1.5,
 								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",

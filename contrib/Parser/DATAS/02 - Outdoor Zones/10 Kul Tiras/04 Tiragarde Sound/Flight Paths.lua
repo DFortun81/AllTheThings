@@ -18,7 +18,9 @@ _.Zones =
 					}),
 					fp(2077, { -- Castaway Point, Tiragarde Sound [N]
 						["description"] = "Castaway Point, Tiragarde Sound",
-						["coord"] = { 86.4, 80.8 },
+						["coords"] = {
+							{ 86.43, 80.81, 895 },
+						},
 					}),
 					fp(2104, { -- Eastpoint Station, Tiragarde Sound (Ferry) [A]
 						["description"] = "Eastpoint Station (Ferry)",
@@ -32,7 +34,9 @@ _.Zones =
 					}),
 					fp(2023, { -- Freehold, Tiragarde Sound [N]
 						["description"] = "Freehold, Tiragarde Sound",
-						["coord"] = { 77.8, 82.8 },
+						["coords"] = {
+							{ 77.04, 82.91, 895 },
+						},
 					}),
 					fp(2060, { -- Hatherford, Tiragarde Sound [A]
 						["description"] = "Hatherford, Tiragarde Sound",
@@ -44,7 +48,9 @@ _.Zones =
 					}),
 					fp(2084, { -- Norwington Estate, Tiragarde Sound [A]
 						["description"] = "Norwington Estate, Tiragarde Sound",
-						["coord"] = { 52.8, 28.8 },
+						["coords"] = {
+							{ 52.91, 28.81, 895 },
+						},
 					}),
 					fp(2053, { -- Old Drust Road, Tiragarde Sound (Ferry) [A]
 						["description"] = "Old Drust Road, Tiragarde Sound (Ferry)",

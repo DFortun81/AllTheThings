@@ -17,14 +17,15 @@ _.Zones =
 						}),
 						n(142065, {	-- Dana Pull
 							["groups"] = {
-								i(163495, {	-- Greatwing Macaw Feather
-									["description"] = "Complete the questline \"Rodrigo's Revenge\" for this item to appear on the vendor.",
-								}),
-								i(163496, {	-- Strange Looking Mechanical Squirrel
-									["description"] = "Complete the questline \"An Explosive Opportunity\" for this item to appear on the vendor.",
+								i(163036, {	-- Polished Pet Charm
+									i(163495, {	-- Greatwing Macaw Feather
+										["description"] = "Complete the questline \"Rodrigo's Revenge\" for this item to appear on the vendor.",
+									}),
+									i(163496, {	-- Strange Looking Mechanical Squirrel
+										["description"] = "Complete the questline \"An Explosive Opportunity\" for this item to appear on the vendor.",
+									}),
 								}),
 							},
-							["itemID"] = 163036,	-- Polished Pet Charm
 							["coord"] = { 50.8, 46.0 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -255,45 +256,19 @@ _.Zones =
 								i(161572),	-- Yardarm Sharpshooter's Boots
 								i(161976),	-- Admiralty Marine's Duffel
 								i(160534),	-- Navy Blue Boat Cloak
-								i(162380, {	-- Design: Tidal Amethyst Loop [Rank 3]
-									["spellID"] = 256519,
-								}), 	
-								i(162304, {	-- Formula: Enchant Ring - Pact of Mastery [Rank 3]
-									["spellID"] = 255100,
-								}), 	
-								i(162317, {	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3]
-									["spellID"] = 268903,
-								}), 	
-								i(162316, {	-- Formula: Enchant Weapon - Siphoning [Rank 3]
-									["spellID"] = 255112,
-								}), 	
-								i(163316, {	-- Recipe: Battle Potion of Intellect [Rank 3]
-									["spellID"] = 279164,
-								}), 
-								i(162254, {	-- Recipe: Coastal Mana Potion [Rank 3]
-									["spellID"] = 252387,
-								}), 	
-								i(162359, {	-- Recipe: Contract: Proudmoore Admiralty [Rank 2]
-									["spellID"] = 256276,
-								}), 	
-								i(162134, {	-- Recipe: Flask of the Vast Horizon [Rank 3]
-									["spellID"] = 252356,
-								}), 	
-								i(162414, {	-- Recipe: Hardened Tempest Knuckles [Rank 3]
-									["spellID"] = 256784,
-								}), 	
-								i(162413, {	-- Recipe: Mistscale Knuckles [Rank 3]
-									["spellID"] = 256781,
-								}), 	
-								i(162130, {	-- Recipe: Potion of Bursting Blood [Rank 3]
-									["spellID"] = 252343,
-								}), 	
-								i(162327, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2]
-									["spellID"] = 272063,
-								}), 	
-								i(162328, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3]
-									["spellID"] = 272064,
-								}), 	
+								i(162380),	-- Design: Tidal Amethyst Loop [Rank 3]
+								i(162304),	-- Formula: Enchant Ring - Pact of Mastery [Rank 3]
+								i(162317),	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3]
+								i(162316),	-- Formula: Enchant Weapon - Siphoning [Rank 3]
+								i(163316),	-- Recipe: Battle Potion of Intellect [Rank 3]
+								i(162254),	-- Recipe: Coastal Mana Potion [Rank 3]
+								i(162359),	-- Recipe: Contract: Proudmoore Admiralty [Rank 2]
+								i(162134),	-- Recipe: Flask of the Vast Horizon [Rank 3]
+								i(162414),	-- Recipe: Hardened Tempest Knuckles [Rank 3]
+								i(162413),	-- Recipe: Mistscale Knuckles [Rank 3]
+								i(162130),	-- Recipe: Potion of Bursting Blood [Rank 3]
+								i(162327),	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2]
+								i(162328),	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3]
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -304,6 +279,9 @@ _.Zones =
 								i(163042), -- Reins of the Mighty Caravan Brutosaur
 							},
 							["races"] = ALLIANCE_ONLY,
+							["coords"] = {
+								{ 56.77, 47.07, 1161 },
+							},
 						}),
 						n(135446, {	-- Vindicator Jaelaana <7th Legion Emissary [NOTE: PvP Factions]
 							["groups"] = {
@@ -391,6 +369,9 @@ _.Zones =
 								}),
 							},
 							["races"] = ALLIANCE_ONLY,
+							["coords"] = {
+								{ 69.32, 24.94, 1161 },
+							},
 						}),
 					},
 				}),

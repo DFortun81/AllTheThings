@@ -9,11 +9,15 @@ _.Zones =
 				n(-228, {	-- Flight Paths
 					fp(2086, { -- Brennadam, Stormsong Valley [A]
 						["description"] = "Brennadam, Stormsong Valley",
-						["coord"] = { 59.6, 70.6 },
+						["coords"] = {
+							{ 59.73, 70.57, 942 },
+						},
 					}),
 					fp(2097, { -- Deadwash, Stormsong Valley [A]
 						["description"] = "Deadwash, Stormsong Valley",
-						["coord"] = { 42.8, 57.4 },
+						["coords"] = {
+							{ 42.72, 57.39, 942 },
+						},
 					}),
 					fp(2092, { -- Diretusk Hollow, Stormsong Valley [H]
 						["description"] = "Diretusk Hollow, Stormsong Valley",
@@ -64,8 +68,10 @@ _.Zones =
 						["coord"] = { 65.6, 48.0 },
 					}),
 					fp(2094, { -- Warfang Hold, Stormsong Valley [H] [NOTE: Verification Required, this may be locked behind the War Campaign quests]
-						["description"] = "Warfang Hold, Stormsong Valley",
-						["coord"] = { 51.4, 33.6 },
+						["description"] = "Warfang Hold, Stormsong Valley\n\nTo unlock this Flight Path you must progress in the War Campaign and set a foothold in Stormsong Valley.",
+						["coords"] = {
+							{ 51.43, 33.74, 942 },
+						},
 						--["races"] = HORDE_ONLY,
 					}),
 					fp(2139, { -- Windfall Cave, Stormsong Valley [H]

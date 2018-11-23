@@ -14,7 +14,9 @@ _.Zones =
 					}),
 					fp(2106, { -- Arom's Stand, Drustvar [A]
 						["description"] = "Arom's Stand, Drustvar",
-						["coord"] = { 38.2, 52.4 },
+						["coords"] = {
+							{ 38.14, 52.53, 896 },
+						},
 					}),
 					fp(2037, { -- Barbthorn Ridge, Drustvar [A]
 						["description"] = "Barbthorn Ridge, Drustvar",
