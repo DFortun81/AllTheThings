@@ -4,6 +4,8 @@
 _.NeverImplemented = 
 {
 	un(1, i(129139)),	-- Tome of Rapid Pathfinding (WoD PTR only, why Blizz why?)
+	un(1, i(164372)),	-- Jinyu Light Globe [Not added, maybe they fix them some day]
+	un(1, i(164377)),	-- Regenerating Banana Bunch [Un'gol Ruins] [Not added, maybe they fix them some day]
 	un(1, i(146335)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 	un(1, i(146355)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 	un(1, i(146375)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
