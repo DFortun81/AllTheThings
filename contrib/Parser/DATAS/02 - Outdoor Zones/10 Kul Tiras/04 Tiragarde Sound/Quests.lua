@@ -510,7 +510,7 @@ _.Zones =
 							["qg"] = 129098, -- Rodrigo <Flight Master>
 							["sourceQuests"] = { 49402 },	-- Flew the Coop [Alliance Only]
 							["groups"] = {
-								i(163036),	-- Polished Pet Charm
+								-- i(163036),	-- Polished Pet Charm [REMOVING THIS FOR NOW BECAUSE BUBBLE DOWN MAKES IT ALLIANCE ONLY.  BAD BUBBLEDOWN!!!!]
 							},
 						})),
 						a(q(49401, {	-- Rodrigo's Roost [Alliance Only]
@@ -561,7 +561,7 @@ _.Zones =
 							["qg"] = 131654, -- Meredith
 							["sourceQuests"] = { 49738 },	-- Hands Off My Booty! [Alliance Only]
 							["groups"] = {
-								i(163036),	-- Polished Pet Charm
+								-- i(163036),	-- Polished Pet Charm [REMOVING THIS FOR NOW BECAUSE BUBBLE DOWN MAKES IT ALLIANCE ONLY.  BAD BUBBLEDOWN!!!!]
 							},
 						})),
 						a(q(49740, {	-- Cease Fire! [Alliance Only]

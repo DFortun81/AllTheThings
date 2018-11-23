@@ -101,7 +101,7 @@ _.Zones =
 						},
 						n(136674, {	-- Madeline Netley <Stable Master> [Alliance]
 							["groups"] = {
-								i(163036, {	-- Polished Pet Charm [Have to do it so it obeys faction filters]
+								i(163036, {	-- Polished Pet Charm
 									["groups"] = {
 										i(163489),	-- Abyssal Eel
 										i(163511),	-- Barnacled Hermit Crab
@@ -119,7 +119,6 @@ _.Zones =
 									},
 								}),
 							},
-							--["itemID"] = 163036,	-- Polished Pet Charm
 							["races"] = ALLIANCE_ONLY,
 						}),
 						{	-- Sanya Wraithschilde <Innkeeper> [Horde]
@@ -153,54 +152,22 @@ _.Zones =
 								i(161580),	-- Stormbreaker Galoshes
 								i(161581),	-- Tidecrest Gauntlets
 								i(160533),	-- Cape of the Divine Depths
-								i(162382, {	-- Design: Laribole Staff of Alacrity [Rank 3]
-									["spellID"] = 256257,
-								}),
-								i(162379, {	-- Design: Owlseye Loop [Rank 3]
-									["spellID"] = 256517,
-								}),
-								i(162385, {	-- Design: Scarlet Diamond Staff of Intuition [Rank 3]
-									["spellID"] = 256260,
-								}),
-								i(162303, {	-- Formula: Enchant Ring - Pact of Haste [Rank 3]
-									["spellID"] = 255099,
-								}),
-								i(162313, {	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3]
-									["spellID"] = 268909,
-								}),
-								i(162312, {	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]
-									["spellID"] = 268915,
-								}),
-								i(163318, {	-- Recipe: Battle Potion of Stamina [Rank 3]
-									["spellID"] = 279167,
-								}),
-								i(162255, {	-- Recipe: Coastal Healing Potion [Rank 3]
-									["spellID"] = 252384,
-								}),
-								i(162363, {	-- Recipe: Contract: Storm's Wake [Rank 2]
-									["spellID"] = 256282,
-								}),
-								i(162133, {	-- Recipe: Flask of Endless Fathoms	[Rank 3]
-									["spellID"] = 252353,
-								}),
-								i(162129, {	-- Recipe: Potion of Replenishment [Rank 3]
-									["spellID"] = 252340,
-								}),
-								i(162325, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]
-									["spellID"] = 272060,
-								}),
-								i(162326, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]
-									["spellID"] = 272061,
-								}),
-								i(162342, {	-- Schematic: Deployable Attire Rearranger [Rank 3]
-									["spellID"] = 256156,
-								}),
-								i(162341, {	-- Schematic: Interdimensional Companion Repository [Rank 3]
-									["spellID"] = 256084,
-								}),
-								i(162337, {	-- Schematic: Organic Discombobulation Grenade [Rank 3]
-									["spellID"] = 255409,
-								}),
+								i(162382),	-- Design: Laribole Staff of Alacrity [Rank 3]
+								i(162379),	-- Design: Owlseye Loop [Rank 3]
+								i(162385),	-- Design: Scarlet Diamond Staff of Intuition [Rank 3]
+								i(162303),	-- Formula: Enchant Ring - Pact of Haste [Rank 3]
+								i(162313),	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3]
+								i(162312),	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]
+								i(163318),	-- Recipe: Battle Potion of Stamina [Rank 3]
+								i(162255),	-- Recipe: Coastal Healing Potion [Rank 3]
+								i(162363),	-- Recipe: Contract: Storm's Wake [Rank 2]
+								i(162133),	-- Recipe: Flask of Endless Fathoms	[Rank 3]
+								i(162129),	-- Recipe: Potion of Replenishment [Rank 3]
+								i(162325),	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]
+								i(162326),	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]
+								i(162342),	-- Schematic: Deployable Attire Rearranger [Rank 3
+								i(162341),	-- Schematic: Interdimensional Companion Repository [Rank 3]
+								i(162337),	-- Schematic: Organic Discombobulation Grenade [Rank 3]
 							},
 							["races"] = ALLIANCE_ONLY,
 							["coords"] = {

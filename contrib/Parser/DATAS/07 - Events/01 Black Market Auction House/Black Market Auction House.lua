@@ -217,14 +217,19 @@ _.WorldEvents =
 			i(50379),	-- Battered Hilt (Alliance)
 			i(50380),	-- Battered Hilt (Horde)
 			i(110678, { -- Darkmoon Ticket Fanny Pack
-				["groups"] = {
-				},
 				["description"] = "Contains 250-500 Darkmoon Faire Tickets",
 			}),
 			i(128312),	-- Elixir of the Rapid Mind
 			un(9, i(45037)),	-- Epic Purple Shirt
 			un(9, i(90176)),	-- Flintlocke's Blasthammer
 			desc(un(1, i(110591)), "Russ Petersen@nite_moogle\nNov 10\n\n@AskMrRobot it won't be available in 6.0. we made an updated version and decided not to use it.\n\nPlease make this item use the same source ID.\n - Crieve"), 	-- Flintlocke's Blasthammer
+			{	-- Grimoire of the Four Winds
+				["itemID"] = 110672,	-- Grimoire of the Four Winds
+				["u"] = 9,				-- Black Market AH Filter
+				["collectible"] = false,
+				["icon"] = "Interface\\Icons\\passive_monk_teachingsofmonastery",
+				--Note!! Drops from container still.  Do not mark removed at all!
+			},
 			un(29, i(118572)), 	-- Illusion: Flame of Ragnaros
 			{	-- Kor'kron Shaman's Treasure
 				["groups"] = {
@@ -471,6 +476,7 @@ _.WorldEvents =
 						["u"] = 9,				-- Black Market AH Filter
 						["collectible"] = false,
 						["icon"] = "Interface\\Icons\\passive_monk_teachingsofmonastery",
+						--Note!! Drops from container still.  Do not mark removed at all!
 					},
 					un(29, i(118572)), 	-- Illusion: Flame of Ragnaros **
 					{	-- Kor'kron Shaman's Treasure
