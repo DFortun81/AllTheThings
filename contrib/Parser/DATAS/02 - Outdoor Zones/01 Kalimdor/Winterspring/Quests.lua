@@ -9,90 +9,78 @@ _.Zones =
 				n(-17, {	-- Quests
 					ach(4940, {	-- Winterspring Quests
 						crit(1, {	-- The Winterfall Furbolg
-							q(28522, {	-- Winterfall Activity
-								["groups"] = {
-									i(21318),	-- Earth Warder's Gloves
-									i(21319),	-- Gloves of the Pathfinder
-									i(21320),	-- Vest of the Den Watcher
-									i(21322),	-- Ursa's Embrace
-								},
-								["qg"] = 11556,	-- Salfa
-							}),
-							q(28464, {	-- Falling to Corruption
+							{	-- Falling to Corruption
+								["questID"] = 28464,
 								["qg"] = 9298,	-- Donova Snowden
-							}),
-							o(207179, {	-- Winterfall Cauldron	
-								q(28467, {	-- Mystery Goo
-									["sourceQuests"] = { 28464 },	-- Falling to Corruption
-								}),
-							}),
-							q(28469, {	-- Winterfall Runners
-								["qg"] = 9298,	-- Donova Snowden
-								["sourceQuests"] = { 28467 },	-- Mystery Goo
-							}),
-							q(28470, {	-- High Chief Winterfall
-								["groups"] = {
-									i(67210),	-- Wand of Sudden Changes
-									i(67159),	-- Furbolg Fur Bracers
-									i(67176),	-- Princess Zoe's Old Hunting Gloves
-									i(67193),	-- Ambush Armguards
-								},
-								["qg"] = 9298,	-- Donova Snowden
-								["sourceQuests"] = { 28469 },	-- Winterfall Runners
-							}),
-							q(28530, {	-- Scalding Signs
-								["qg"] = 9298,	-- Donova Snowden
-								["sourceQuests"] = { 28467 },	-- Mystery Goo
-							}),
-							q(28460, {	-- Threat of the Winterfall
-								["groups"] = {
-									i(67158),	-- Donova's Fuzzy Robe
-									i(67175),	-- Hot Spring Sandals
-									i(67192),	-- Snowden Legwraps
-									i(67209),	-- Winterfall Belt
-								},
-								["qg"] = 9598,	-- Donova Snowden
-								["sourceQuests"] = { 28524, 28544, 28545, 28768 },	-- Delivery for Donova, Hero's Call: Winterspring!, Warchief's Command: Winterspring!, or Winterspring!
-							}),
-							{
-								["qg"] = 10738,	-- High Chief Winterfall
-								["itemID"] = 12842,	-- Crudely-Written Log
-								["questID"] = 28471,	-- The Final Piece
+								["coord"] = { 25.1, 58.4 },
 							},
-							q(28472, {	-- Words of the High Chief (awarded criteria)
+							{	-- Winterfall Cauldron
+								["objectID"] = 207179,
+								["coord"] = { 24.4, 47.6 },
+								["groups"] = {
+									{	-- Mystery Goo
+										["questID"] = 28467,
+										["sourceQuest"] = 28464,	-- Falling to Corruption
+									},
+								},
+							},
+							{	-- Winterfall Runners
+								["questID"] = 28469,
 								["qg"] = 9298,	-- Donova Snowden
-								["isBreadcrumb"] = true,	-- for "The Ruins of Kel'Theril"
-								["sourceQuests"] = { 28471 },	-- The Final Piece
-							}),
+								["coord"] = { 25.1, 58.5 },
+								["sourceQuests"] = 28467,	-- Mystery Goo
+							},
+							{	-- Crudely-Written Log
+								["qg"] = 10738,	-- High Chief Winterfall
+								["itemID"] = 12842,
+								["questID"] = 28471,	-- The Final Piece
+								["coord"] = { 36.9, 55.6 },
+								["sourceQuest"] = 28469,	-- Winterfall Runners
+							},
+							{	-- Words of the High Chief
+								["questID"] = 28472,
+								["qg"] = 9298,	-- Donova Snowden
+								["coord"] = { 25.1, 58.5 },
+								["sourceQuest"] = 28471,	-- The Final Piece
+							},
 						}),
 						crit(2, {	-- Ruins of Kel'theril
-							q(28479, {	-- The Ruins of Kel'Theril
+							{	-- The Ruins of Kel'Theril
+								["questID"] = 28479,
 								["qg"] = 10920,	-- Kelek Skykeeper
-								["description"] = "This quest can be obtained in Felwood with no prerequisite quests.",
-								["sourceQuests"] = { 28472 },	-- Words of the High Chief
-							}),
-							q(28513, {	-- Pride of the Highborne
+								["coord"] = { 46.8, 53.8 },
+							},
+							{	-- Pride of the Highborne
+								["questID"] = 28513,
 								["groups"] = {
 									i(67177),	-- Amulet of the Kaldorei Spirit
 									i(67160),	-- Dagger of Suffering
 									i(67194),	-- Zin-Malor Ring
 								},
 								["qg"] = 48658,	-- Kaldorei Spirit
-								["sourceQuests"] = { 28479 },	-- The Ruins of Kel'Theril
-							}),
-							q(28534, {	-- Descendants of the Highborne
+								["coord"] = { 50.7, 54.8 },
+								["sourceQuest"] = 28479,	-- The Ruins of Kel'Theril
+							},
+							{	-- Descendants of the Highborne
+								["questID"] = 28534,
 								["qg"] = 48658,	-- Kaldorei Spirit
-								["sourceQuests"] = { 28513 },	-- Pride of Highborne
-							}),
-							q(28518, {	-- Legacy of the High Elves
+								["coord"] = { 50.7, 54.8 },
+								["sourceQuest"] = 28513,	-- Pride of Highborne
+							},
+							{	-- Legacy of the High Elves
+								["questID"] = 28518,
 								["qg"] = 48659,	-- Quel'dorei Spirit
-								["sourceQuests"] = { 28534 },	-- Descendants of the Highborne
-							}),
-							q(28535, {	-- Descendants of the High Elves
+								["coord"] = { 50.8, 55.0 },
+								["sourceQuest"] = 28534,	-- Descendants of the Highborne
+							},
+							{	-- Descendants of the High Elves
+								["questID"] = 28535,
 								["qg"] = 48659,	-- Quel'dorei Spirit
-								["sourceQuests"] = { 28518 },	-- Legacy of the High Elves
-							}),
-							q(28519, {	-- Pain of the Blood Elves
+								["coord"] = { 50.7, 55.0 },
+								["sourceQuest"] = 28518,	-- Legacy of the High Elves
+							},
+							{	-- Pain of the Blood Elves
+								["questID"] = 28519,
 								["groups"] = {
 									i(67161),	-- Dagger of Wretched Spectres
 									i(67195),	-- Mace of the Sin'dorei Spirit
@@ -101,38 +89,54 @@ _.Zones =
 									i(67211),	-- Orb of Kel'theril
 								},
 								["qg"] = 48660,	-- Sin'dorei Spirit
-								["sourceQuests"] = { 28535 },	-- Descendants of the High Elves
-							}),
-							q(28536, {	-- The Curse of Zin-Malor
+								["coord"] = { 50.6, 55.0 },
+								["sourceQuest"] = 28535,	-- Descendants of the High Elves
+							},
+							{	-- The Curse of Zin-Malor
+								["questID"] = 28536,
 								["qg"] = 48660,	-- Sin'dorei Spirit
-								["sourceQuests"] = { 28519 },	-- Pain of the Blood Elves
-							}),
-							q(28537, {	-- In Pursuit of Shades
+								["coord"] = { 50.6, 55.0 },
+								["sourceQuest"] = 28519,	-- Pain of the Blood Elves
+							},
+							{	-- In Pursuit of Shades
+								["questID"] = 28537,
 								["qg"] = 10920,	-- Kelek Skykeeper
-								["sourceQuests"] = { 28536 },	-- The Curse of Zin-Malor
-							}),
-							q(28848, {	-- Trailing the Spiritspeaker
+								["coord"] = { 46.8, 53.8 },
+								["sourceQuest"] = 28536,	-- The Curse of Zin-Malor
+							},
+							{	-- Trailing the Spiritspeaker
+								["questID"] = 28848,
 								["qg"] = 10920,	-- Kelek Skykeeper
-								["sourceQuests"] = { 28537 },	-- In Pursuit of Shades
-							}),
+								["coord"] = { 46.8, 53.8 },
+								["sourceQuest"] = 28537,	-- In Pursuit of Shades
+							},
 						}),
 						crit(3, {	-- Superior Weapons
-							q(28609, {	-- Hammer Time
+							{	-- Hammer Time
+								["questID"] = 28609,
 								["qg"] = 11191,	-- Lilith the Lithe
-							}),
-							q(28610, {	-- Rubble Trouble
+								["coord"] = { 59.8, 49.1 },
+							},
+							{	-- Rubble Trouble
+								["questID"] = 28610,
 								["qg"] = 48965,	-- Deez Rocksnitch
-								["sourceQuests"] = { 28609 },	-- Hammer Time
-							}),
-							q(28618, {	-- Boulder Delivery
+								["coord"] = { 59.7, 49.6 },
+								["sourceQuest"] = 28609,	-- Hammer Time
+							},
+							{	-- Boulder Delivery
+								["questID"] = 28618,
 								["qg"] = 48965,	-- Deez Rocksnitch
-								["sourceQuests"] = { 28610 },	-- Rubble Trouble
-							}),
-							q(28624, {	-- Kilram's Boast
+								["coord"] = { 59.7, 49.6 },
+								["sourceQuest"] = 28610,	-- Rubble Trouble
+							},
+							{	-- Kilram's Boast
+								["questID"] = 28624,
 								["qg"] = 11192,	-- Kilram
-								["sourceQuests"] = { 28618 },	-- Boulder Delivery
-							}),
-							q(28625, {	-- Chop Chop
+								["coord"] = { 59.8, 49.1 },
+								["sourceQuest"] = 28618,	-- Boulder Delivery
+							},
+							{	-- Chop Chop
+								["questID"] = 28625,
 								["groups"] = {
 									i(67213),	-- Frostleaf Band
 									i(67163),	-- Chop Chop Boots
@@ -140,21 +144,29 @@ _.Zones =
 									i(67197),	-- Rocksnitch Helmet
 								},
 								["qg"] = 48965,	-- Deez Rocksnitch
-								["sourceQuests"] = { 28624 },	-- Kilram's Boast
-							}),
-							q(28626, {	-- Tree Delivery
+								["coord"] = { 59.7, 49.6 },
+								["sourceQuest"] = 28624,	-- Kilram's Boast
+							},
+							{	-- Tree Delivery
+								["questID"] = 28626,
 								["qg"] = 48965,	-- Deez Rocksnitch
-								["sourceQuests"] = { 28625 },	-- Chop Chop
-							}),
-							q(28627, {	-- Seril's Boast
+								["coord"] = { 59.7, 49.6 },
+								["sourceQuest"] = 28625,	-- Chop Chop
+							},
+							{	-- Seril's Boast
+								["questID"] = 28627,
 								["qg"] = 11193,	-- Seril Scourgebane
-								["sourceQuests"] = { 28626 },	-- Tree Delivery
-							}),
-							q(28632, {	-- Fresh From The Hills
+								["coord"] = { 59.7, 49.2 },
+								["sourceQuest"] = 28626,	-- Tree Delivery
+							},
+							{	-- Fresh From The Hills
+								["questID"] = 28632,
 								["qg"] = 48965,	-- Deez Rocksnitch
-								["sourceQuests"] = { 28627 },	-- Seril's Boast
-							}),
-							q(28628, {	-- Ice Delivery (awarded criteria)
+								["coord"] = { 59.7, 49.6 },
+								["sourceQuest"] = 28627,	-- Seril's Boast
+							},
+							{	-- Ice Delivery
+								["questID"] = 28628,
 								["groups"] = {
 									i(67181),	-- Kilram's Killer
 									i(67164),	-- Lilith the Lithe's Little Hammer
@@ -162,46 +174,46 @@ _.Zones =
 									i(67198),	-- Scourgebane's Sword
 								},
 								["qg"] = 48965,	-- Deez Rocksnitch
-								["sourceQuests"] = { 28632 },	-- Fresh From the Hills
-							}),
+								["coord"] = { 59.7, 49.6 },
+								["sourceQuest"] = 28632,	-- Fresh From the Hills
+							},
 						}),
 						crit(4, {	-- Spray It and Slay It
-							q(28676, {	-- Exterminators at Work
-								["qg"] = 11079,	-- Wynd Nightchaser
-								["sourceQuests"] = { 28674 },	-- Starfall Village
-							}),
-							q(28701, {	-- Out of Harm's Way (may not be required for criteria)
-								["qg"] = 11079,	-- Wynd Nightchaser
-								["sourceQuests"] = { 28674 },	-- Starfall Village
-							}),
-							q(28703, {	-- Step Into My Barrow (may not be required for criteria)
+							{	-- Spray it Forward
+								["questID"] = 28706,
 								["qg"] = 49407,	-- Rinno Curtainfire
-							}),
-							q(28706, {	-- Spray it Forward
-								["qg"] = 49407,	-- Rinno Curtainfire
-							}),
-							q(28707, {	-- Spray it Again
-								["qg"] = 49399,	-- 
-								["sourceQuests"] = { 28706 },	-- Spray it Forward
-							}),
-							q(28710, {	-- Spray it One More Time
+								["coord"] = { 45.7, 41.0 },
+							},
+							{	-- Spray it Again
+								["questID"] = 28707,
+								["qg"] = 49399,	-- Remma Curtainfire
+								["coord"] = { 45.6, 41.5 },
+								["sourceQuest"] = 28706,	-- Spray it Forward
+							},
+							{	-- Spray it One More Time
+								["questID"] = 28710,
 								["groups"] = {
 									i(67205),	-- Ring of Pesticide
 									i(67171),	-- Curtainfire Mantle
 									i(67188),	-- Fumigator's Legguards
 								},
 								["qg"] = 49400,	-- Marcy Curtainfire
-								["sourceQuests"] = { 28707 },	-- Spray it Again
-							}),
+								["coord"] = { 46.2, 42.5 },
+								["sourceQuest"] = 28707,	-- Spray it Again
+							},
 						}),
 						crit(5, {	-- The Hub of Goodgrub's Grub
-							q(28637, {	-- A Taste for Bear
+							{	-- A Taste for Bear
+								["questID"] = 28637,
 								["qg"] = 49436,	-- Francis Morcott
-							}),
-							q(28719, {	-- A Little Gamy
-								["sourceQuests"] = { 28637 },	-- A Taste for Bear
-							}),
-							q(28639, {	-- Ursius
+								["coord"] = { 55.8, 28.2 },
+							},
+							{	-- A Little Gamy (granted automatically. Coords are relative to player position)
+								["questID"] = 28719,
+								["sourceQuest"] = 28637,	-- A Taste for Bear
+							},
+							{	-- Ursius (granted automatically. Coords are relative to player position)
+								["questID"] = 28639,
 								["groups"] = {
 									i(67167),	-- Shardtooth Gloves
 									i(67184),	-- Ursius's Cap
@@ -209,15 +221,19 @@ _.Zones =
 									i(67201),	-- Bear Oiled Chainmail
 									i(67224),	-- Morcott's Bow
 								},
-								["sourceQuests"] = { 28719 },	-- A Little Gamy
-							}),
-							q(28638, {	-- The Owls Have It
+								["sourceQuest"] = 28719,	-- A Little Gamy
+							},
+							{	-- The Owls Have It
+								["questID"] = 28638,
 								["qg"] = 49537,	-- Jeb Guthrie
-							}),
-							q(28745, {	-- Screechy Keen
-								["sourceQuests"] = { 28638 },	-- The Owls Have It
-							}),
-							q(28782, {	-- A Bird of Legend (CHECK QG in game)
+								["coord"] = { 55.9, 28.2 },
+							},
+							{	-- Screechy Keen (granted automatically. Coords are relative to player position)
+								["questID"] = 28745,
+								["sourceQuest"] = 28638,	-- The Owls Have It
+							},
+							{	-- A Bird of Legend (granted automatically. Coords are relative to player position)
+								["questID"] = 28782,
 								["groups"] = {
 									i(67168),	-- Gloves of the Infernal Nocturnal
 									i(67185),	-- Hell-Hoot Mantle
@@ -225,16 +241,20 @@ _.Zones =
 									i(67225),	-- Hoot-Hunter's Leggings
 									i(67218),	-- Legend Eater Boots
 								},
-								["sourceQuests"] = { 28745 },	-- Screechy Keen
-							}),
-							q(28640, {	-- Fresh Frostsabers
+								["sourceQuest"] = 28745,	-- Screechy Keen
+							},
+							{	-- Fresh Frostsabers
+								["questID"] = 28640,
 								["qg"] = 49396,	-- Jez Goodgrub
-								["sourceQuests"] = { 28718 },	-- Where There's Smoke, There's Delicious Meat
-							}),
-							q(28641, {	-- Pride of the Dinner Table
-								["sourceQuests"] = { 28640 },	-- Fresh Frostsabers
-							}),
-							q(28742, {	-- Shy-Rotam
+								["coord"] = { 55.9, 28.1 },
+								["sourceQuest"] = 28718,	-- Where There's Smoke, There's Delicious Meat
+							},
+							{	-- Pride of the Dinner Table (granted automatically. Coords are relative to player position)
+								["questID"] = 28641,
+								["sourceQuest"] = 28640,	-- Fresh Frostsabers
+							},
+							{	-- Shy-Rotam (granted automatically. Coords are relative to player position)
+								["questID"] = 28742,
 								["groups"] = {
 									i(67169),	-- Shy Breastplate
 									i(67186),	-- Shy Shrug
@@ -242,9 +262,10 @@ _.Zones =
 									i(67203),	-- Frostsaber Helm
 									i(67226),	-- Corpse Dragger's Shield
 								},
-								["sourceQuests"] = { 28641 },	-- Pride of the Dinner Table
-							}),
-							q(28828, {	-- You Gotta Have Eggs
+								["sourceQuest"] = 28641,	-- Pride of the Dinner Table
+							},
+							{	-- You Gotta Have Eggs
+								["questID"] = 28828,
 								["groups"] = {
 									i(67220),	-- Goodgrub Cloak
 									i(67170),	-- Gourmand's Sash
@@ -253,22 +274,24 @@ _.Zones =
 									i(67227),	-- Chimaera Heart Pendant
 								},
 								["qg"] = 49396,	-- Jez Goodgrub
-							}),
+								["coord"] = { 55.9, 28.1 },
+							},
 						}),
 						crit(6, {	-- Yeti Surprise!
-							q(28630, {	-- Echo Three
+							{	-- Are We There, Yeti?
+								["questID"] = 28629,
 								["qg"] = 10305,	-- Umi Rumplesnicker
-								["sourceQuests"] = { 28627 },	-- Seril's Boast
-							}),
-							q(28629, {	-- Are We There, Yeti?
+								["coord"] = { 59.3, 49.7 },
+								["sourceQuest"] = 28627,	-- Seril's Boast
+							},
+							{	-- The Perfect Horns
+								["questID"] = 28631,
 								["qg"] = 10305,	-- Umi Rumplesnicker
-								["sourceQuests"] = { 28627 },	-- Seril's Boast
-							}),
-							q(28631, {	-- The Perfect Horns
-								["qg"] = 10305,	-- Umi Rumplesnicker
-								["sourceQuests"] = { 28627 },	-- Seril's Boast
-							}),
-							q(28722, {	-- Yetiphobia
+								["coord"] = { 59.3, 49.7 },
+								["sourceQuest"] = 28627,	-- Seril's Boast
+							},
+							{	-- Yetiphobia
+								["questID"] = 28722,
 								["groups"] = {
 									i(67223),	-- Umi's Masterful Shooter
 									i(67165),	-- Everlook Snow Shoes
@@ -280,18 +303,27 @@ _.Zones =
 									}),
 								},
 								["qg"] = 10305,	-- Umi Rumplesnicker
-								["sourceQuests"] = { 28629, 28630, 28631 },	-- Are We There, Yeti?, Echo Three, & The Perfect Horns
-							}),
+								["coord"] = { 59.3, 49.7 },
+								["sourceQuests"] = {
+									28629,	-- Are We There, Yeti?
+									28631,	-- The Perfect Horns
+								},
+							},
 						}),
 						crit(7, {	-- Jadrag's Fate
-							q(28829, {	-- Razor Beak and Antlers Pointy
+							{	-- Razor Beak and Antlers Pointy
+								["questID"] = 28829,
 								["qg"] = 50263,	-- Jadrag the Slicer
-							}),
-							q(28830, {	-- Chips off the Old Block
+								["coord"] = { 61.8, 74.6 },
+							},
+							{	-- Chips off the Old Block
+								["questID"] = 28830,
 								["qg"] = 50263,	-- Jadrag the Slicer
-								["sourceQuests"] = { 28829 },	-- Razor Beak and Antlers Pointy
-							}),
-							q(28831, {	-- Damn You, Frostilicus
+								["coord"] = { 61.8, 74.6 },
+								["sourceQuests"] = 28829,	-- Razor Beak and Antlers Pointy
+							},
+							{	-- Damn You, Frostilicus
+								["questID"] = 28831,
 								["groups"] = {
 									i(67172),	-- Cowl of Whistling Winds
 									i(67189),	-- Frostilicus's Hide
@@ -299,38 +331,48 @@ _.Zones =
 									i(67221),	-- Breastplate of the Poetic Orc
 								},
 								["qg"] = 50263,	-- Jadrag the Slicer
-								["sourceQuests"] = { 28829 },	-- Razor Beak and Antlers Pointy
-							}),
+								["coord"] = { 61.8, 74.6 },
+								["sourceQuest"] = 28829,	-- Razor Beak and Antlers Pointy
+							},
 						}),
 						crit(8, {	-- Umbranse's Deliverance
-							q(28847, {	-- The Pursuit of Umbranse
+							{	-- The Pursuit of Umbranse
+								["questID"] = 28847,
 								["qg"] = 50366,	-- Nymn
-								["sourceQuests"] = { 28537, 28722 },	-- In Pursuit of Shades & Yetiphobia
-							}),
-							q(28837, {	-- Altered Beasts
+								["coord"] = { 59.6, 50.4 },
+								["sourceQuests"] = {
+									28537,	-- In Pursuit of Shades
+									28722,	-- Yetiphobia
+								},
+							},
+							{	-- Altered Beasts
+								["questID"] = 28837,
 								["qg"] = 10929,	-- Haleh
-								["sourceQuests"] = { 28847 },	-- The Pursuit of Umbranse
-							}),
-							q(28838, {	-- The Owlbeasts' Defense
+								["coord"] = { 58.0, 63.7 },
+								["sourceQuest"] = 28847,	-- The Pursuit of Umbranse
+							},
+							{	-- The Owlbeasts' Defense
+								["questID"] = 28838,
 								["qg"] = 10929,	-- Haleh
-								["sourceQuests"] = { 28837 },	-- Altered Beasts
-							}),
-							q(28839, {	-- Magic Prehistoric
-								["sourceQuests"] = { 28838 },	-- The Owlbeast's Defense
-							}),
-							q(28840, {	-- Winterwater
+								["coord"] = { 58.0, 63.7 },
+								["sourceQuest"] = 28837,	-- Altered Beasts
+							},
+							{	-- Magic Prehistoric
+								["questID"] = 28839,
+								["coord"] = { 57.1, 75.4 },
+								["sourceQuest"] = 28838,	-- The Owlbeast's Defense
+							},
+							{	-- Winterwater
+								["questID"] = 28840,
 								["groups"] = {
 									i(67173),	-- Haleh's Warm Legwraps
 									i(67190),	-- Ice Avatar Legguards
 									i(67207),	-- Winterwater Cloak
 								},
-								["sourceQuests"] = { 28839 },	-- Magic Prehistoric
-							}),
-							q(28841, {	-- The Arcane Storm Within
-								["qg"] = 10929,	-- Haleh
-								["sourceQuests"] = { 28840 },	-- Winterwater
-							}),
-							q(28842, {	-- Umbranse's Deliverance
+								["sourceQuests"] = 28839,	-- Magic Prehistoric
+							},
+							{	-- Umbranse's Deliverance
+								["questID"] = 28842,
 								["groups"] = {
 									i(67222),	-- Umbranse's Staff
 									i(67174),	-- Bracers of Mazthoril
@@ -338,58 +380,141 @@ _.Zones =
 									i(67208),	-- Nam's Gauntlets
 								},
 								["qg"] = 10929,	-- Haleh
-								["sourceQuests"] = { 28840 },	-- Winterwater
-							}),
+								["coord"] = { 58.0, 63.7 },
+								["sourceQuests"] = 28840,	-- Winterwater
+							},
 						}),
 					}),
-					n(-168, {	-- Other Quests
-						q(44952, {	-- Blackrock Depths: Jewel of the Depths
-							["groups"] = {
-								i(142357),	-- Plans: Dawn's Edge
-							},
-							["qg"] = 11184,	-- Wixxrak
-							["requireSkill"] = 2477, -- Classic Blacksmithing
-						}),
-						qa(28857, {	-- Blasted Lands: The Other Side of the World
-							["qg"] = 11118,	-- Innkeeper Vizzie
-							["isBreadcrumb"] = true,	-- for "Minor Distractions"
-						}),
-						qh(28858, {	-- Blasted Lands: The Other Side of the World
-							["qg"] = 11118,	-- Innkeeper Vizzie
-							["isBreadcrumb"] = true,	-- for "Futile Pride"
-						}),
-						q(28524, {	-- Delivery for Donova
-							["qg"] = 11556,	-- Salfa
-							["isBreadcrumb"] = true,	-- for "Threat of the Winterfall"
-						}),
-						q(28540, {	-- Doin' De E'ko Magic
-							["groups"] = {
-								i(67162),	-- E'ko Gatherer's Belt
-								i(67179),	-- Heart Grippers
-								i(67212),	-- Bear Hunter's Belt
-								i(67196),	-- Witch Doctor's Spaulders
-							},
-							["qg"] = 10307,	-- Witch Doctor Mau'ari
-						}),
-						qr(q(9266, {	-- Making Amends (Goblin rep repair quest)
-							["qg"] = 16416,	-- Bronn Fitzwrench
-						})),
-						q(28674, {	-- Starfall Village
-							["qg"] = 48965,	-- Deez Rocksnitch
-							["isBreadcrumb"] = true,	-- for Exterminators at Work & Out of Harm's Way
-							["sourceQuests"] = { 28628, 28722 },	-- Ice Delivery & Yetiphobia
-						}),
-						q(28656),	-- Strange Life Forces
-						q(28856, {	-- The Sands of Silithus
-							["qg"] = 11118,	-- Innkeeper Vizzie
-							["isBreadcrumb"] = true,	-- for "Securing the Supply Lines"
-						}),
-						q(28718, {	-- Where There's Smoke, There's Delicious Meat
-							["qg"] = 49402,	-- Sana Curtainfire
-							["isBreadcrumb"] = true,	-- for "Fresh Frostsabers"
-							["sourceQuests"] = { 28710 },	-- Spray it One More Time
-						}),
-					}),
+					{	-- Blackrock Depths: Jewel of the Depths
+						["questID"] = 44952,
+						["groups"] = {
+							i(142357),	-- Plans: Dawn's Edge
+						},
+						["qg"] = 11184,	-- Wixxrak
+						["coord"] = { 60.2, 50.2 },
+						["requireSkill"] = 2477, -- Classic Blacksmithing
+					},
+					{	-- Blasted Lands: The Other Side of the World
+						["questID"] = 28857,
+						["qg"] = 11118,	-- Innkeeper Vizzie
+						["coord"] = { 59.8, 51.1 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					},
+					{	-- Blasted Lands: The Other Side of the World
+						["questID"] = 28858,
+						["qg"] = 11118,	-- Innkeeper Vizzie
+						["coord"] = { 59.8, 51.1 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					},
+					{	-- Doin' De E'ko Magic
+						["questID"] = 28540,
+						["groups"] = {
+							i(67162),	-- E'ko Gatherer's Belt
+							i(67179),	-- Heart Grippers
+							i(67212),	-- Bear Hunter's Belt
+							i(67196),	-- Witch Doctor's Spaulders
+						},
+						["qg"] = 10307,	-- Witch Doctor Mau'ari
+						["coord"] = { 25.1, 58.4 },
+					},
+					{	-- Echo Three (is this a breadcrumb?)
+						["questID"] = 28630,
+						["qg"] = 10305,	-- Umi Rumplesnicker
+						["coord"] = { 59.3, 49.7 },
+						["sourceQuest"] = 28627,	-- Seril's Boast
+					},
+					{	-- Exterminators at Work
+						["questID"] = 28676,
+						["qg"] = 11079,	-- Wynd Nightchaser
+						["coord"] = { 48.6, 41.0 },
+						["sourceQuest"] = 28674,	-- Starfall Village
+					},
+					{	-- High Chief Winterfall
+						["questID"] = 28470,
+						["groups"] = {
+							i(67210),	-- Wand of Sudden Changes
+							i(67159),	-- Furbolg Fur Bracers
+							i(67176),	-- Princess Zoe's Old Hunting Gloves
+							i(67193),	-- Ambush Armguards
+						},
+						["qg"] = 9298,	-- Donova Snowden
+						["coord"] = { 25.1, 58.5 },
+						["sourceQuest"] = 28469,	-- Winterfall Runners
+					},
+					{	-- Making Amends
+						["questID"] = 9266,
+						["qg"] = 16416,	-- Bronn Fitzwrench
+						["coord"] = { 58.0, 52.2 },
+						["repeatable"] = true,
+					},
+					{	-- Out of Harm's Way
+						["questID"] = 28701,
+						["qg"] = 11079,	-- Wynd Nightchaser
+						["coord"] = { 48.6, 41.0 },
+						["sourceQuest"] = 28674,	-- Starfall Village
+					},
+					{	-- Scalding Signs
+						["questID"] = 28530,
+						["qg"] = 9298,	-- Donova Snowden
+						["coord"] = { 25.1, 58.4 },
+						["sourceQuest"] = 28467,	-- Mystery Goo
+					},
+					{	-- Starfall Village
+						["questID"] = 28674,
+						["qg"] = 48965,	-- Deez Rocksnitch
+						["coord"] = { 59.8, 49.6 },
+						["isBreadcrumb"] = true,
+						["sourceQuests"] = {
+							28628,	-- Ice Delivery
+							28722,	-- Yetiphobia
+						},
+					},
+					{	-- Step Into My Barrow
+						["questID"] = 28703,
+						["qg"] = 49407,	-- Rinno Curtainfire
+						["coord"] = { 45.7, 41.0 },
+					},
+					{	-- Strange Life Forces
+						["questID"] = 28656,
+					},
+					{	-- The Sands of Silithus
+						["questID"] = 28856,
+						["qg"] = 11118,	-- Innkeeper Vizzie
+						["coord"] = { 59.8, 51.1 },
+						["isBreadcrumb"] = true,
+					},
+					{	-- The Arcane Storm Within
+						["questID"] = 28841,
+						["qg"] = 10929,	-- Haleh
+						["coord"] = { 58.0, 63.7 },
+						["sourceQuests"] = 28840,	-- Winterwater
+					},
+					{	-- Threat of the Winterfall
+						["questID"] = 28460,
+						["groups"] = {
+							i(67158),	-- Donova's Fuzzy Robe
+							i(67175),	-- Hot Spring Sandals
+							i(67192),	-- Snowden Legwraps
+							i(67209),	-- Winterfall Belt
+						},
+						["qg"] = 9598,	-- Donova Snowden
+						["coord"] = { 25.1, 58.4 },
+						["sourceQuests"] = {
+							28524,	-- Delivery for Donova
+							28544,	-- Hero's Call: Winterspring!
+							28545,	-- Warchief's Command: Winterspring!
+							28768,	-- Winterspring!
+						},
+					},
+					{	-- Where There's Smoke, There's Delicious Meat
+						["questID"] = 28718,
+						["qg"] = 49402,	-- Sana Curtainfire
+						["coord"] = { 48.0, 40.6 },
+						["isBreadcrumb"] = true,
+						["sourceQuest"] = 28710,	-- Spray it One More Time
+					},
 				}),
 			},
 		}),

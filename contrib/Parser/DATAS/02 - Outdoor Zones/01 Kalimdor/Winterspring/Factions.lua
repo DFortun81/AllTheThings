@@ -8,11 +8,8 @@ _.Zones =
 			["groups"] = {
 				faction(576, {		-- Timbermaw Hold
 					["groups"] = {
-						qr(q(28523, {	-- More Beads for Salfa
-							["qg"] = 11556,	-- Salfa
-							["sourceQuests"] = { 28522 },	-- Winterfall Activity
-						})),
-						q(28614, {	-- Bearzerker
+						{	-- Bearzerker
+							["questID"] = 28614,
 							["groups"] = {
 								i(67216),	-- Firewater Amulet
 								i(67166),	-- Belt of Bloating
@@ -20,10 +17,38 @@ _.Zones =
 								i(67200),	-- Burndl's Bundled Boots
 							},
 							["qg"] = 48722,	-- Burndl
-						}),
-						q(28615, {	-- Turning the Earth
+							["coord"] = { 65.3, 46.1 },
+						},
+						{	-- Delivery for Donova
+							["questID"] = 28524,
+							["qg"] = 11556,	-- Salfa
+							["coord"] = { 21.0, 46.1 },
+							["isBreadcrumb"] = true,
+						},
+						{	-- Turning the Earth
+							["questID"] = 28615,
 							["qg"] = 48723,	-- Tanrir
-						}),
+							["coord"] = { 65.3, 46.2 },
+						},
+						{	-- Winterfall Activity
+							["questID"] = 28522,
+							["groups"] = {
+								i(21318),	-- Earth Warder's Gloves
+								i(21319),	-- Gloves of the Pathfinder
+								i(21320),	-- Vest of the Den Watcher
+								i(21322),	-- Ursa's Embrace
+							},
+							["qg"] = 11556,	-- Salfa
+							["coord"] = { 21.0, 46.1 },
+							["sourceQuest"] = 28521,	-- Speak to Salfa
+						},
+						{	-- More Beads for Salfa
+							["questID"] = 28523,
+							["qg"] = 11556,	-- Salfa
+							["coord"] = { 21.0, 46.1 },
+							["repeatable"] = true,
+							["sourceQuest"] = 28522,	-- Winterfall Activity
+						},
 					},
 					["collectible"] = false,
 				}),
