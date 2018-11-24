@@ -1033,6 +1033,18 @@ _.Zones =
 							}),
 						}),
 						dr(4, i(94229)), 	-- Reins of the Slate Primordial Direhorn
+						{	-- Stolen Celestial Insignia
+							["itemID"] = 94225,	-- Stolen Celestial Insignia
+						},
+						{	-- Stolen Golden Lotus Insignia
+							["itemID"] = 94227,	-- Stolen Golden Lotus Insignia
+						},
+						{	-- Stolen Klaxxi Insignia
+							["itemID"] = 94226,	-- Stolen Klaxxi Insignia
+						},
+						{	-- Stolen Shado-Pan Insignia
+							["itemID"] = 94223,	-- Stolen Shado-Pan Insignia
+						},
 					}),
 					n(69841, {	-- Zandalari Warbringer
 						dr(30, {
@@ -1061,6 +1073,18 @@ _.Zones =
 							}),
 						}),
 						dr(4, i(94230)),	-- Reins of the Amber Primordial Direhorn
+						{	-- Stolen Celestial Insignia
+							["itemID"] = 94225,	-- Stolen Celestial Insignia
+						},
+						{	-- Stolen Golden Lotus Insignia
+							["itemID"] = 94227,	-- Stolen Golden Lotus Insignia
+						},
+						{	-- Stolen Klaxxi Insignia
+							["itemID"] = 94226,	-- Stolen Klaxxi Insignia
+						},
+						{	-- Stolen Shado-Pan Insignia
+							["itemID"] = 94223,	-- Stolen Shado-Pan Insignia
+						},
 					}),
 					n(69842, {	-- Zandalari Warbringer
 						dr(30, {
@@ -1089,6 +1113,18 @@ _.Zones =
 							}),
 						}),
 						dr(4, i(94231)),	-- Reins of the Jade Primordial Direhorn
+						{	-- Stolen Celestial Insignia
+							["itemID"] = 94225,	-- Stolen Celestial Insignia
+						},
+						{	-- Stolen Golden Lotus Insignia
+							["itemID"] = 94227,	-- Stolen Golden Lotus Insignia
+						},
+						{	-- Stolen Klaxxi Insignia
+							["itemID"] = 94226,	-- Stolen Klaxxi Insignia
+						},
+						{	-- Stolen Shado-Pan Insignia
+							["itemID"] = 94223,	-- Stolen Shado-Pan Insignia
+						},
 					}),
 					n(69768, {	-- Zandalari Warscout
 						dr(15, {
@@ -1116,6 +1152,18 @@ _.Zones =
 								}),
 							}),
 						}),
+						{	-- Stolen Celestial Insignia
+							["itemID"] = 94225,	-- Stolen Celestial Insignia
+						},
+						{	-- Stolen Golden Lotus Insignia
+							["itemID"] = 94227,	-- Stolen Golden Lotus Insignia
+						},
+						{	-- Stolen Klaxxi Insignia
+							["itemID"] = 94226,	-- Stolen Klaxxi Insignia
+						},
+						{	-- Stolen Shado-Pan Insignia
+							["itemID"] = 94223,	-- Stolen Shado-Pan Insignia
+						},
 					}),
 				}),
 				n(-2, {		-- Vendors

@@ -59,7 +59,9 @@ _.Zones =
 					}),
 					fp(2087, { -- Outrigger Post, Tiragarde Sound [A]
 						["description"] = "Outrigger Post, Tiragarde Sound",
-						["coord"] = { 35.6, 24.8 },
+						["coords"] = {
+							{ 35.55, 24.9, 895 },
+						},
 					}),
 					fp(2140, { -- Plunder Harbor, Tiragarde Sound [H] [NOTE: Verification Required, this may be locked behind the War Campaign quests]
 						["description"] = "Plunder Harbor, Tiragarde Sound",
