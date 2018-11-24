@@ -144,7 +144,7 @@ _.Zones =
 						},
 					},
 				}),
-				n(-4, {		-- Achievements
+				n(-4,   {	-- Achievements
 					ach(1428),	-- Mine Sweeper
 				}),
 				n(-228, {	-- Flight Paths
@@ -170,7 +170,7 @@ _.Zones =
 						["coord"] = { 44.4, 28.2 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  {	-- Pet Battle
 					p(558), 	-- Arctic Fox Kit
 					p(641), 	-- Arctic Hare
 					p(393), 	-- Cockroach
@@ -183,7 +183,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(-17,  {	-- Quests
 --[[	Achievement info for Loremaster related zone quests
 					ach(38, {		-- The Summit of Storm Peaks
 						crit(1),		-- Defending K3
@@ -218,6 +218,12 @@ _.Zones =
 					}),
 
 
+					qa(12870, {	-- Ancient Relics
+						["qg"] = 29744,	-- Rork Sharpchin
+						["coord"] = { 28.8, 74.0 },
+					}),
+					
+					
 					q(12832, {	-- Bitter Departure
 						["qg"] = 29434,	-- Injured Goblin Miner
 						["coords"] = {	-- Can be picked up from the same NPC in multiple locations
@@ -278,6 +284,20 @@ _.Zones =
 						["sourceQuests"] = { 12843 },	-- They Took Our Men!
 					}),
 
+
+					qa(12865, {	-- Loyal Companions
+						["qg"] = 29732,	-- Fjorlin Frostbrow
+						["coord"] = { 29.8, 75.7 },
+						["sourceQuests"] = { 12863 },	-- Offering Thanks
+					}),
+					
+					
+					qa(12864, {	-- Missing Scouts
+						["qg"] = 29727,	-- Glorthal Stiffbeard
+						["coord"] = { 29.1, 74.9 },
+						["sourceQuests"] = { 12863 },	-- Offering Thanks
+					}),
+
 					
 					q(12829, {	-- Moving In
 						["qg"] = 29430,	-- Tore Rumblewrench
@@ -287,6 +307,18 @@ _.Zones =
 					}),
 
 
+					qa(12863, {	-- Offering Thanks
+						["qg"] = 29743,	-- Lagnus
+						["coord"] = { 29.4, 73.7 },
+					}),
+					
+					
+					qa(12854, {	-- On Brann's Trail
+						["qg"] = 29650,	-- Archaeologist Andorin
+						["coord"] = { 29.6, 74.0 },
+					}),
+
+					
 					q(12831, {	-- Only Partly Forgotten
 						["qg"] = 29434,	-- Injured Goblin Miner
 						["coords"] = {	-- Can be picked up from the same NPC in multiple locations
@@ -337,6 +369,13 @@ _.Zones =
 						["sourceQuests"] = { 12819 },	-- Just Around the Corner
 					}),
 
+
+					qa(12866, {	-- Stemming the Aggressors
+						["qg"] = 29727,	-- Glorthal Stiffbeard
+						["coord"] = { 29.1, 74.9 },
+						["sourceQuests"] = { 12864 },	-- Missing Scouts
+					}),
+
 					
 					q(12843, {	-- They Took Our Men!
 						["qg"] = 29473,	-- Gretchen Fizzlespark
@@ -366,31 +405,30 @@ _.Zones =
 					q(12993),	-- A Colossal Threat
 					q(12976),	-- A Monument to the Fallen
 					q(13009),	-- A New Beginning
-					qa( 29074),	-- A Season for Celebration
-					qh( 29400),	-- A Season for Celebration
+					qa(29074),	-- A Season for Celebration
+					qh(29400),	-- A Season for Celebration
 					q(12956),	-- A Spark of Hope
 					q(12925),	-- Aberrations
-					qa( 12871),	-- Aid from the Explorers' League
-					qa( 12875),	-- An Experienced Guide
-					qa( 12870),	-- Ancient Relics
-					qh( 12882),	-- Ancient Relics
+					qa(12871),	-- Aid from the Explorers' League
+					qa(12875),	-- An Experienced Guide
+					qh(12882),	-- Ancient Relics
 					q(12979),	-- Armor of Darkness
-					qa( 12867),	-- Baby Stealers
+					qa(12867),	-- Baby Stealers
 					q(13424),	-- Back to the Pit
 					q(12967),	-- Battling the Elements
-					qh( 11446),	-- Brewfest!
-					qa( 13448),	-- Candy Bucket
-					qh( 13471),	-- Candy Bucket
+					qh(11446),	-- Brewfest!
+					qa(13448),	-- Candy Bucket
+					qh(13471),	-- Candy Bucket
 					q(13462),	-- Candy Bucket
 					q(13461),	-- Candy Bucket
-					qh( 13548),	-- Candy Bucket
-					qh( 12920),	-- Catching up with Brann
-					qh( 13055),	-- Cave Medicine
-					qh( 13058),	-- Changing the Wind's Course
+					qh(13548),	-- Candy Bucket
+					qh(12920),	-- Catching up with Brann
+					qh(13055),	-- Cave Medicine
+					qh(13058),	-- Changing the Wind's Course
 					q(12856),	-- Cold Hearted
-					qa( 11356),	-- Costumed Orphan Matron
-					qh( 12927),	-- Data Mining
-					qa( 12860),	-- Data Mining
+					qa(11356),	-- Costumed Orphan Matron
+					qh(12927),	-- Data Mining
+					qa(12860),	-- Data Mining
 					q(13063),	-- Deemed Worthy
 					q(13423),	-- Defending Your Title
 					qa( 11580),	-- Desecrate this Fire!
@@ -432,59 +470,54 @@ _.Zones =
 					q(13010),	-- Krolmir, Hammer of Storms
 					q(13062),	-- Lok'lira's Parting Gift
 					q(13035),	-- Loken's Lackeys
-					qa( 12865),	-- Loyal Companions
 					q(12853),	-- Luxurious Getaway!
 					q(13422),	-- Maintaining Discipline
 					q(12900),	-- Making a Harness
-					qh( 11357),	-- Masked Orphan Matron
-					qh( 13037),	-- Memories of Stormhoof
+					qh(11357),	-- Masked Orphan Matron
+					qh(13037),	-- Memories of Stormhoof
 					q(12915),	-- Mending Fences
 					q(12905),	-- Mildred the Cruel
-					qa( 12864),	-- Missing Scouts
 					q(12987),	-- Mounting Hodir's Helm
 					q(13032),	-- Muraco the Elder
-					qh( 12928),	-- Norgannon's Shell					
-					qa( 12872),	-- Norgannon's Shell
+					qh(12928),	-- Norgannon's Shell					
+					qa(12872),	-- Norgannon's Shell
 					q(12942),	-- Off With Their Black Wings
-					qa( 12863),	-- Offering Thanks
-					qa( 12854),	-- On Brann's Trail
-					qh( 12926),	-- Pieces of the Puzzle
-					qa( 12858),	-- Pieces to the Puzzle
-					qa( 14022),	-- Pilgrim's Bounty
-					qh( 14036),	-- Pilgrim's Bounty
-					qa( 11882),	-- Playing with Fire
+					qh(12926),	-- Pieces of the Puzzle
+					qa(12858),	-- Pieces to the Puzzle
+					qa(14022),	-- Pilgrim's Bounty
+					qh(14036),	-- Pilgrim's Bounty
+					qa(11882),	-- Playing with Fire
 					q(13061),	-- Prepare for Glory
-					qa( 12869),	-- Pushed Too Far
+					qa(12869),	-- Pushed Too Far
 					q(13001),	-- Raising Hodir's Spear
 					q(12930),	-- Rare Earth
 					q(12937),	-- Relief for the Fallen
 					q(12888),	-- SCRAP-E
 					q(13064),	-- Sibling Rivalry
-					qa( 12868),	-- Sirana Iceshriek
+					qa(12868),	-- Sirana Iceshriek
 					q(12957),	-- Slaves of the Stormforged
-					qa( 12855),	-- Sniffing Out the Perpetrator
-					qh( 12910),	-- Sniffing Out the Perpetrator
-					qh( 12913),	-- Speak Orcish, Man!
-					qh( 12917),	-- Speaking with the Wind's Voice
-					qa( 13484),	-- Spring Collectors
-					qh( 13483),	-- Spring Gatherers
-					qa( 12866),	-- Stemming the Aggressors
+					qa(12855),	-- Sniffing Out the Perpetrator
+					qh(12910),	-- Sniffing Out the Perpetrator
+					qh(12913),	-- Speak Orcish, Man!
+					qh(12917),	-- Speaking with the Wind's Voice
+					qa(13484),	-- Spring Collectors
+					qh(13483),	-- Spring Gatherers
 					q(13020),	-- Stonebeard the Elder
 					q(29863),	-- Stormherald Eljrrin
 					q(12971),	-- Taking on All Challengers
 					q(13051),	-- Territorial Trespass
 					q(13425),	-- The Aberrations Must Die
 					q(12980),	-- The Armor's Secrets
-					qa( 12973),	-- The Brothers Bronzebeard
+					qa(12973),	-- The Brothers Bronzebeard
 					q(13417),	-- The Brothers Bronzebeard
-					qh( 13274),	-- The Core's Keeper
+					qh(13274),	-- The Core's Keeper
 					q(12841),	-- The Crone's Bargain
 					q(12964),	-- The Dark Ore
 					q(12886),	-- The Drakkensryd
 					q(13005),	-- The Earthen Oath
-					qh( 12929),	-- The Earthen of Ulduar
-					qa( 12885),	-- The Exiles of Ulduar
-					qa( 12873),	-- The Frostborn King
+					qh(12929),	-- The Earthen of Ulduar
+					qa(12885),	-- The Exiles of Ulduar
+					qa(12873),	-- The Frostborn King
 					q(12965),	-- The Gifts of Loken
 					q(12998),	-- The Heart of the Storm
 					qh( 13049),	-- The Hero's Arms
@@ -700,7 +733,7 @@ _.Zones =
 						["description"] = "Reward from one of four random dailies.",	
 					}),
 				}),	
-				n(-16, { 	-- Rares
+				n(-16,  {	-- Rares
 					{
 						["npcID"] = 32500,		-- Dirkee [NPC]
 						["coords"] = {
@@ -754,7 +787,7 @@ _.Zones =
 						},
 					},
 				}),
-				n(-2, {		-- Vendors
+				n(-2,   {	-- Vendors
 					{	-- Olut Alegut
 						["npcID"] = 30472,	-- Olut Alegut
 						["itemID"] = 42780,	-- Relics of Ulduar
