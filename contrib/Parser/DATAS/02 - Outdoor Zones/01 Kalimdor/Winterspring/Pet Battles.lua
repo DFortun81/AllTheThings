@@ -32,8 +32,20 @@ _.Zones =
 						["coord"] = { 65.6, 64.5 },
 						["isDaily"] = true,
 					},
-					qg(66466, qh(31977)),	-- The Returning Champion
-					qg(66466, qa(31975)),	-- The Returning Champion
+					{	-- The Returning Champion
+						["questID"] = 31977,
+						["qg"] = 66466,	-- Stone Cold Trixxy
+						["coord"] = { 65.6, 64.4 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					},
+					{	-- The Returning Champion
+						["questID"] = 31975,
+						["qg"] = 66466,	-- Stone Cold Trixxy
+						["coord"] = { 65.6, 64.4 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					},
 				}),
 			},
 		}),
