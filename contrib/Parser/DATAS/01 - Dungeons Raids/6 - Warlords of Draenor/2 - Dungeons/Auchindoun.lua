@@ -8,6 +8,17 @@ _.Instances =
 		["groups"] = {
 			inst(547, { 	-- Auchindoun
 				["groups"] = {
+					n(-1, { -- Common Boss Drop
+						["crs"] = {
+							75839,	-- Vigilant Kaathar
+							76177,	-- Soulbinder Nyami
+							75927,	-- Azzakel
+							77734,	-- Teron'gor
+						},
+						["groups"] = {
+							i(141643),	-- Technique: Codex of the Clear Mind
+						},
+					}),
 					d(1, {		-- Normal
 						["groups"] = {
 							cr(75839, e(1185, {	-- Vigilant Kaathar

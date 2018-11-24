@@ -60,74 +60,92 @@ profession(773, {	-- Inscription
 							["recipeID"] = 256299--[[Contract: Champions of Azeroth]]
 						},
 						{	-- Contract: Talanji's Expedition
-							["recipeID"] = 256289--[[Contract: Talanji's Expedition]]
+							["recipeID"] = 256289--[[Contract: Talanji's Expedition]],
+							["races"] = HORDE_ONLY,
 						},
 						{	-- Contract: Tortollan Seekers
 							["recipeID"] = 256296--[[Contract: Tortollan Seekers]]
 						},
 						{	-- Contract: Voldunai
-							["recipeID"] = 256293--[[Contract: Voldunai]]
+							["recipeID"] = 256293--[[Contract: Voldunai]],
+							["races"] = HORDE_ONLY,
 						},
 						{	-- Contract: Zandalari Empire
-							["recipeID"] = 256286--[[Contract: Zandalari Empire]]
+							["recipeID"] = 256286--[[Contract: Zandalari Empire]],
+							["races"] = HORDE_ONLY,
 						},
 						{	-- Contract: Champions of Azeroth
 							["recipeID"] = 256298--[[Contract: Champions of Azeroth]]
 						},
 						{	-- Contract: Talanji's Expedition
-							["recipeID"] = 256288--[[Contract: Talanji's Expedition]]
+							["recipeID"] = 256288--[[Contract: Talanji's Expedition]],
+							["races"] = HORDE_ONLY,
 						},
 						{	-- Contract: Tortollan Seekers
 							["recipeID"] = 256295--[[Contract: Tortollan Seekers]]
 						},
 						{	-- Contract: Voldunai
-							["recipeID"] = 256291--[[Contract: Voldunai]]
+							["recipeID"] = 256291--[[Contract: Voldunai]],
+							["races"] = HORDE_ONLY,
 						},
 						{	-- Contract: Zandalari Empire
-							["recipeID"] = 256285--[[Contract: Zandalari Empire]]
+							["recipeID"] = 256285--[[Contract: Zandalari Empire]],
+							["races"] = HORDE_ONLY,
 						},
 						{	-- Contract: Champions of Azeroth
 							["recipeID"] = 256297--[[Contract: Champions of Azeroth]]
 						},
 						{	-- Contract: Talanji's Expedition
-							["recipeID"] = 256287--[[Contract: Talanji's Expedition]]
+							["recipeID"] = 256287--[[Contract: Talanji's Expedition]],
+							["races"] = HORDE_ONLY,
 						},
 						{	-- Contract: Tortollan Seekers
 							["recipeID"] = 256294--[[Contract: Tortollan Seekers]]
 						},
 						{	-- Contract: Voldunai
-							["recipeID"] = 256290--[[Contract: Voldunai]]
+							["recipeID"] = 256290--[[Contract: Voldunai]],
+							["races"] = HORDE_ONLY,
 						},
 						{	-- Contract: Zandalari Empire
-							["recipeID"] = 256284--[[Contract: Zandalari Empire]]
+							["recipeID"] = 256284--[[Contract: Zandalari Empire]],
+							["races"] = HORDE_ONLY,
 						},
 						{	-- Contract: Order of Embers Do Not Remove, missing from _Automation
-							["recipeID"] = 256278--[[Contract: Order of Embers]]
+							["recipeID"] = 256278--[[Contract: Order of Embers]],
+							["races"] = ALLIANCE_ONLY,
 						},
 						{	-- Contract: Order of Embers Do Not Remove, missing from _Automation
-							["recipeID"] = 256279--[[Contract: Order of Embers]]
+							["recipeID"] = 256279--[[Contract: Order of Embers]],
+							["races"] = ALLIANCE_ONLY,
 						},
 						{	-- Contract: Order of Embers Do Not Remove, missing from _Automation
-							["recipeID"] = 256280--[[Contract: Order of Embers]]
+							["recipeID"] = 256280--[[Contract: Order of Embers]],
+							["races"] = ALLIANCE_ONLY,
 						},
 						{	-- Contract: Proudmoore Admiralty Do Not Remove, missing from _Automation
-							["recipeID"] = 256275--[[Contract: Proudmoore Admiralty]]
+							["recipeID"] = 256275--[[Contract: Proudmoore Admiralty]],
+							["races"] = ALLIANCE_ONLY,
 						},
 						{	-- Contract: Proudmoore Admiralty Do Not Remove, missing from _Automation
-							["recipeID"] = 256276--[[Contract: Proudmoore Admiralty]]
+							["recipeID"] = 256276--[[Contract: Proudmoore Admiralty]],
+							["races"] = ALLIANCE_ONLY,
 						},
 						{	-- Contract: Proudmoore Admiralty Do Not Remove, missing from _Automation
-							["recipeID"] = 256277--[[Contract: Proudmoore Admiralty]]
+							["recipeID"] = 256277--[[Contract: Proudmoore Admiralty]],
+							["races"] = ALLIANCE_ONLY,
 						},
 						{	-- Contract: Storm's Wake Do Not Remove, missing from _Automation
-							["recipeID"] = 256281--[[Contract: Storm's Wake]]
+							["recipeID"] = 256281--[[Contract: Storm's Wake]],
+							["races"] = ALLIANCE_ONLY,
 						},
 						{	-- Contract: Storm's Wake Do Not Remove, missing from _Automation
-							["recipeID"] = 256282--[[Contract: Storm's Wake]]
+							["recipeID"] = 256282--[[Contract: Storm's Wake]],
+							["races"] = ALLIANCE_ONLY,
 						},
 						{	-- Contract: Storm's Wake Do Not Remove, missing from _Automation
 							-- NOTE: WQ for Rank 3 recipe has not popped as of 11-20-2018 and will need to be added to Stormsong Valley when it does
-							["recipeID"] = 256283--[[Contract: Storm's Wake]]
+							["recipeID"] = 256283--[[Contract: Storm's Wake]],
+							["races"] = ALLIANCE_ONLY,
 						},
 					},
 				},

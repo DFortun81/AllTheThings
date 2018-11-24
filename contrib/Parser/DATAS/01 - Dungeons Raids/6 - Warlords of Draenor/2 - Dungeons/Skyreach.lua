@@ -8,6 +8,17 @@ _.Instances =
 		["groups"] = {
 			inst(476, {	-- Skyreach
 				["groups"] = {
+					n(-1, { -- Common Boss Drop
+						["crs"] = {
+							75964,	-- Ranjit
+							76141,	-- Araknath
+							76143,	-- Rukhran
+							76266,	-- High Sage Viryx
+						},
+						["groups"] = {
+							i(141643),	-- Technique: Codex of the Clear Mind
+						},
+					}),
 					d(1, {	-- Normal
 						["groups"] = {
 							cr(75964, e(965, {	-- Ranjit

@@ -1000,6 +1000,14 @@ _.Zones =
 								26270, -- Iron Rune-Shaper
 							},
 						}),
+						i(46108, { -- Technique: Rituals of the New Moon
+							["crs"] = {
+								27676, -- Silverbrook Defender
+								27546,	-- Silverbrook Hunter
+								26679,	-- Silverbrook Trapper
+								26708,	-- Silverbrook Villager
+							},
+						}),
 					},
 				}),
 			},

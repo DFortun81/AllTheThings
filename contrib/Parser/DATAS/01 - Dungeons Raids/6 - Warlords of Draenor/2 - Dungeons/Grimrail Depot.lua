@@ -8,6 +8,16 @@ _.Instances =
 		["groups"] = {
 			inst(536, { 	-- Grimrail Depot
 				["groups"] = {
+					n(-1, { -- Common Boss Drop
+						["crs"] = {
+							77803,	-- Railmaster Rocketspark
+							79545,	-- Nitrogg Thundertower
+							80005,	-- Skylord Tovra
+						},
+						["groups"] = {
+							i(141643),	-- Technique: Codex of the Clear Mind
+						},
+					}),
 					d(1, {		-- Normal
 						["groups"] = {
 							n(-17, {	-- Quests 						

@@ -868,6 +868,9 @@ _.Zones =
 						i(65907),	-- Tabard of Therazane
 					}),
 				}),
+				n(0, {	-- Zone Drop
+					i(65650),	-- Technique: Origami Rock
+				}),
 			},
 			["lvl"] = 82,	
 			["achievementID"] = 4864,

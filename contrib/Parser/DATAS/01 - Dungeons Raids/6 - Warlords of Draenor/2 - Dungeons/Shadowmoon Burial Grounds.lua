@@ -8,6 +8,17 @@ _.Instances =
 		["groups"] = {
 			inst(537, {	-- Shadowmoon Burial Grounds
 				["groups"] = {
+					n(-1, { -- Common Boss Drop
+						["crs"] = {
+							75509,	-- Sadana Bloodfury
+							75829,	-- Nhallish
+							75452,	-- Bonemaw
+							76407,	-- Ner'zhul
+						},
+						["groups"] = {
+							i(141643),	-- Technique: Codex of the Clear Mind
+						},
+					}),
 					d(1, {	-- Normal
 						cr(75509, e(1139, {	-- Sadana Bloodfury
 							ig(44731),	-- Bouquet of Ebon Roses

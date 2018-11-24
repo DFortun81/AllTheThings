@@ -8,6 +8,17 @@ _.Instances =
 		["groups"] = {
 			inst(385, {	-- Bloodmaul Slag Mines
 				["groups"] = {
+					n(-1, { -- Common Boss Drop
+						["crs"] = {
+							74787,	-- Slave Watcher Crushto
+							74475,	-- Magmolatus (Forgemaster Gog'duh 74366)
+							75786,	-- Roltall
+							74790,	-- Gug'rokk
+						},
+						["groups"] = {
+							i(141643),	-- Technique: Codex of the Clear Mind
+						},
+					}),
 					d(1, {	-- Normal
 						["modID"] = 17,
 						["groups"] = {

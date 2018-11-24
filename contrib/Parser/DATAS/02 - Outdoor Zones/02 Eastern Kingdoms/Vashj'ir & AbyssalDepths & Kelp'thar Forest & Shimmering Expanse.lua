@@ -214,6 +214,11 @@ _.Zones =
 							}),
 							]]--
 						}),
+						n(0, {	-- Zone Drop
+							{	-- Technique: Origami Slime
+								["itemID"] = 65649,	-- -- Technique: Origami Slime
+							},
+						}),
 --[[						n(-40, {	-- Legacy
 							["groups"] = {
 								n(-17, {	-- Quests (Legacy)
@@ -401,6 +406,11 @@ _.Zones =
 							}),
 						}),
 						]]--
+						n(0, {	-- Zone Drop
+							{	-- Technique: Origami Slime
+								["itemID"] = 65649,	-- -- Technique: Origami Slime
+							},
+						}),
 					},
 					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 					["description"] = "|cff66ccffKelp'thar Forest is the first subzone players reach when questing in Vash'jir. It has tropical underwater life and is closer to the surface than other subzones. Quests introduce the threat of the naga while also reacquainting the player with stranded members of the Zul'Aman exploratory crew.|r",
@@ -783,6 +793,11 @@ _.Zones =
 								i(62356),	-- Helm of Temperance
 								i(65905),	-- Tabard of the Earthen Ring
 							}),
+						}),
+						n(0, {	-- Zone Drop
+							{	-- Technique: Origami Slime
+								["itemID"] = 65649,	-- -- Technique: Origami Slime
+							},
 						}),
 --[[						n(-40, {	-- Legacy
 							["groups"] = {

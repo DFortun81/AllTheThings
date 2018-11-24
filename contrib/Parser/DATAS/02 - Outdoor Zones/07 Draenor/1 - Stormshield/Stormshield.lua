@@ -1387,6 +1387,32 @@ _.Zones =
 						i(115769),	-- Primal Gladiator's Plate Legguards
 						i(115770),	-- Primal Gladiator's Plate Shoulders
 					}),
+					n(87063, { 	-- Joao Calhandro <Inscription Recipes>
+						i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
+							i(120136),		-- Recipe: Secrets of Draenor Inscription
+							recipe(169081),	-- War Paints
+							recipe(167950, {	-- Research: Warbinder's Ink
+								i(113992),	-- Scribe's Research Notes
+							}),
+							recipe(175390),	-- Laughing Tarot
+							recipe(175389),	-- Ocean Tarot
+							recipe(175392),	-- Savage Tarot
+							recipe(166669),	-- Card of Omens
+							recipe(178497),	-- Warbinder's Ink
+						}),
+						i(118605),	-- Technique: Crystalfire Spellstaff
+						i(118606),	-- Technique: Darkmoon Card of Draenor
+						i(120265),	-- Technique: Ensorcelled Tarot
+						i(118607),	-- Technique: Etched-Blade Warstaff
+						i(118613),	-- Technique: Shadowtome
+						i(118614),	-- Technique: Volatile Crystal
+						i(118615),	-- Technique: Warmaster's Firestick
+						i(118610),	-- Technique: Weapon Crystal
+						un(1, i(118608)),	-- Technique: Greater Weapon Crystal
+						un(1, i(120266)),	-- Technique: Greater Ensorcelled Tarot
+						un(1, i(122548)),	-- Technique: Powerful Ensorcelled Tarot
+						un(1, i(122553)),	-- Technique: Powerful Weapon Crystal
+					}),	
 					n(85849, {	-- Kinkade Jakobs <Blueprints Trader>
 						["groups"]	= {
 							i(111929),	-- Alchemy Lab, Level 2

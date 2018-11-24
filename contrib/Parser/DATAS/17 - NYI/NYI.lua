@@ -3,6 +3,8 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	un(1, i(87830)),	-- Recipe: Tigersblood Tincture
+	un(1, i(87829)),	-- Recipe: Incarnadine Ink
 	un(1, i(129139)),	-- Tome of Rapid Pathfinding (WoD PTR only, why Blizz why?)
 	un(1, i(146335)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 	un(1, i(146355)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)

@@ -118,7 +118,8 @@ profession(773, {	-- Inscription
 						},
 						{	-- Glyph of Flickering
 							-- Shaman Only
-							["recipeID"] = 225551--[[Glyph of Flickering]]
+							["recipeID"] = 225551--[[Glyph of Flickering]],
+							["classes"] = { 7 },	-- Shaman
 						},
 						{	-- Glyph of Floating Shards
 							["recipeID"] = 246984--[[Glyph of Floating Shards]]

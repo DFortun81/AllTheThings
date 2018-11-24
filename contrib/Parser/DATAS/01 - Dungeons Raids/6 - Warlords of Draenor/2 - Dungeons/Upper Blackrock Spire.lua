@@ -8,6 +8,18 @@ _.Instances =
 		["groups"] = {
 			inst(559, {	-- Upper Blackrock Spire
 				["groups"] = {
+					n(-1, { -- Common Boss Drop
+						["crs"] = {
+							76413,	-- Orebender Gor'ashan
+							76021,	-- Kyrak
+							79912,	-- Commander Tharbek
+							76585,	-- Ragewing the Untamed
+							77120,	-- Warlord Zaela
+						},
+						["groups"] = {
+							i(141643),	-- Technique: Codex of the Clear Mind
+						},
+					}),
 					d(1, {	-- Normal
 						["groups"] = {
 							cr(76413, e(1226, {	-- Orebender Gor'ashan

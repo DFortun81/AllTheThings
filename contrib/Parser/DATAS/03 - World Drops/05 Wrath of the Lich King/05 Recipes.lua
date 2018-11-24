@@ -6,8 +6,12 @@ _.WorldDrops =
 	{
 		["groups"] = {	-- Wrath of the Lich King
 			filter(200, {	-- Recipes
+				un(2, i(49177)),	-- Tome of Cold Weather Flight
 				n(-180, {	-- Alchemy
 					un(1, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
+				}),
+				n(-185, { -- Inscription
+					i(45912),	-- Book of Glyph Mastery
 				}),
 				n(-190, {	-- Tailoring
 					i(43876),	-- A Guide to Northern Cloth Scavenging

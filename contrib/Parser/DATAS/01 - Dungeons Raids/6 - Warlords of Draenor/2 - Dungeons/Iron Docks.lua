@@ -8,6 +8,17 @@ _.Instances =
 		["groups"] = {
 			inst(558, {	-- Iron Docks
 				["groups"] = {
+					n(-1, { -- Common Boss Drop
+						["crs"] = {
+							81305,	-- Fleshrender Nok'gar
+							80816,	-- Grimrail Enforcers (Ahri'ok Dugru)
+							79852,	-- Oshir
+							83612,	-- Skulloc
+						},
+						["groups"] = {
+							i(141643),	-- Technique: Codex of the Clear Mind
+						},
+					}),
 					d(1, {	-- Normal
 						["modID"] = 18,
 						["groups"] = {

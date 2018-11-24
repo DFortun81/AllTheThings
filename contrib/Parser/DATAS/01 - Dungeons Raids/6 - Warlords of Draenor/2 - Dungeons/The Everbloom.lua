@@ -8,6 +8,18 @@ _.Instances =
 		["groups"] = {
 			inst(556, {	-- The Everbloom
 				["groups"] = {
+					n(-1, { -- Common Boss Drop
+						["crs"] = {
+							81522,	-- Witherbark
+							83894,	-- Ancient Protectors
+							84550,	-- Xeri'tac
+							82682,	-- Archmage Sol
+							83846,	-- Yalnu
+						},
+						["groups"] = {
+							i(141643),	-- Technique: Codex of the Clear Mind
+						},
+					}),
 					d(1, {	-- Normal
 						["groups"] = {
 							n(-17, {	-- Quests 			

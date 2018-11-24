@@ -968,6 +968,12 @@ _.Zones =
 					q(31539, { -- A Thing of Beauty
 						["qg"] = 56065, -- Inkmaster Wei
 						["requireSkill"] = 773,
+						["isWeekly"] = true,
+						["g"] = {
+							{	-- Commissioned Painting
+								["recipeID"] = 127378,	-- Commissioned Painting
+							},
+						},
 					}),
 					q(33250, { -- A Time-Lost Treasure
 						["qg"] = 58564, -- Elder Anli
@@ -976,6 +982,12 @@ _.Zones =
 					q(31544, { -- A Tribute to the Dead
 						["qg"] = 56063, -- Inkmaster Jo Po
 						["requireSkill"] = 773,
+						["isWeekly"] = true,
+						["g"] = {
+							{	-- Inscribed Monument
+								["recipeID"] = 127481,	-- Inscribed Monument
+							},
+						},
 					}),
 					qa(31130, { -- A Visit with Lorewalker Cho
 						["qg"] = 54961, -- Lorewalker Cho
@@ -1293,6 +1305,12 @@ _.Zones =
 					qa(31542, { -- Incarnadine Ink
 						["qg"] = 56064, -- Inkmaster Glenzu
 						["requireSkill"] = 773,
+						["isWeekly"] = true,
+						["g"] = {
+							{	-- Incarnadine Ink
+								["recipeID"] = 127475,	-- Incarnadine Ink
+							},
+						},
 					}),
 					qh(29936, { -- Instant Messaging
 						["qg"] = 56336, -- Chief Kah Kah
@@ -1465,6 +1483,12 @@ _.Zones =
 					q(31543, { -- Portrait of a Lady
 						["qg"] = 56064, -- Inkmaster Glenzu
 						["requireSkill"] = 773,
+						["isWeekly"] = true,
+						["g"] = {
+							{	-- Portrait of Madam Goya
+								["recipeID"] = 128922,	-- Portrait of Madam Goya
+							},
+						},
 					}),
 					qa(29891, { -- Potency
 						["qgs"] = { 56287, 61218 }, -- Lorewalker Cho
@@ -1598,6 +1622,12 @@ _.Zones =
 					qa(31541, { -- Set in Jade
 						["qg"] = 56063, -- Inkmaster Jo Po
 						["requireSkill"] = 773,
+						["isWeekly"] = true,
+						["g"] = {
+							{	-- Engraved Jade Disk
+								["recipeID"] = 127391,	-- Engraved Jade Disk
+							},
+						},
 					}),
 					q(29995, { -- Shrine of the Dawn
 						["qg"] = 56065, -- Inkmaster Wei
