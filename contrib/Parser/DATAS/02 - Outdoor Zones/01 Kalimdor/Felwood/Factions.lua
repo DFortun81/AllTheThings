@@ -67,13 +67,14 @@ _.Zones =
 								["sourceQuest"] = 6031,	-- Runecloth
 								["requireSkill"] = 197,	-- Requires: Tailoring
 							},
-							{	-- The Root of All Evil (Unconfirmed pre-req. Possibly revered with Timbermaw? not available at friendly)
+							{	-- The Root of All Evil
 								["questID"] = 8481,
 								["groups"] = {
 									i(21326),	-- Defender of the Timbermaw
 								},
 								["qg"] = 11555,	-- Gorn One Eye
 								["coord"] = { 64.4, 5.1 },
+								["description"] = "Requires Exalted with Timberbaw Hold.",
 							},
 						}),
 						n( -2, {	-- Vendors
