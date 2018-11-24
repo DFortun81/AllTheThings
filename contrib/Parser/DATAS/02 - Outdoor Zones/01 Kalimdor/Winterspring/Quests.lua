@@ -419,7 +419,7 @@ _.Zones =
 						["qg"] = 10307,	-- Witch Doctor Mau'ari
 						["coord"] = { 25.1, 58.4 },
 					},
-					{	-- Echo Three (is this a breadcrumb?)
+					{	-- Echo Three
 						["questID"] = 28630,
 						["qg"] = 10305,	-- Umi Rumplesnicker
 						["coord"] = { 59.3, 49.7 },
