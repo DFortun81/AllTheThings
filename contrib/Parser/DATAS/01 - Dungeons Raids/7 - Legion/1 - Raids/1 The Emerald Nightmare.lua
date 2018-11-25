@@ -19,7 +19,7 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								i(139484, { -- Cache of Nightmarish Treasures [Raid Finder]
+								un(2,i(139484, { -- Cache of Nightmarish Treasures [Raid Finder]
 									i(139191),	-- Ancient Dreamwoven Mantle
 									i(139219),	-- Black Venom Sabatons
 									i(139199),	-- Boots of Endless Betrayal
@@ -74,30 +74,33 @@ _.Instances =
 									i(139218),	-- Thorny Bramblemail Pauldrons
 									i(139227),	-- Waistplate of Nameless Horror
 									i(139235),	-- Wristclamps of Mad Dreams
-								}),
+								})),
 								{
 									["itemID"] = 139480,	-- Corrupted Egg Fragment [Raid Finder]
 									["questID"] = 43546,	-- The Emerald Nightmare: Il'gynoth [Raid Finder]
 									["repeatable"] = true,
 									["groups"] = {
-										i(139484),	-- Cache of Nightmarish Treasures [Raid Finder]
+										un(2, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 									},
+									["u"] = 40,
 								},
 								{
 									["itemID"] = 140163,	-- Tainted Moonglade Leaf [Raid Finder]
 									["questID"] = 43902,	-- The Emerald Nightmare: Fall of Cenarius [Raid Finder]
 									["repeatable"] = true,
 									["groups"] = {
-										i(139484),	-- Cache of Nightmarish Treasures [Raid Finder]
+										un(2, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 									},
+									["u"] = 40,
 								},
 								{
 									["itemID"] = 140164,	-- Vial of Swirling Shadow [Raid Finder]
 									["questID"] = 43903,	-- The Emerald Nightmare: Xavius [Raid Finder]
 									["repeatable"] = true,
 									["groups"] = {
-										i(139484),	-- Cache of Nightmarish Treasures [Raid Finder]
+										un(2, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 									},
+									["u"] = 40,
 								},
 							},
 						}),
@@ -296,7 +299,7 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								i(139486, { -- Cache of Nightmarish Treasures [Normal]
+								un(2,i(139486, { -- Cache of Nightmarish Treasures [Normal]
 									i(139191),	-- Ancient Dreamwoven Mantle
 									i(139219),	-- Black Venom Sabatons
 									i(139199),	-- Boots of Endless Betrayal
@@ -351,30 +354,33 @@ _.Instances =
 									i(139218),	-- Thorny Bramblemail Pauldrons
 									i(139227),	-- Waistplate of Nameless Horror
 									i(139235),	-- Wristclamps of Mad Dreams
-								}),
+								})),
 								{
 									["itemID"] = 139481,	-- Corrupted Egg Fragment [Normal]
 									["questID"] = 43547,	-- The Emerald Nightmare: Il'gynoth [Normal]
 									["repeatable"] = true,
 									["groups"] = {
-										i(139486),	-- Cache of Nightmarish Treasures [Normal]
+										un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 									},
+									["u"] = 40,
 								},
 								{
 									["itemID"] = 140165,	-- Tainted Moonglade Leaf [Normal]
 									["questID"] = 43904,	-- The Emerald Nightmare: Fall of Cenarius [Normal]
 									["repeatable"] = true,
 									["groups"] = {
-										i(139486),	-- Cache of Nightmarish Treasures [Normal]
+										un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 									},
+									["u"] = 40,
 								},
 								{
 									["itemID"] = 140166,	-- Vial of Swirling Shadow [Normal]
 									["questID"] = 43905,	-- The Emerald Nightmare: Xavius [Normal]
 									["repeatable"] = true,
 									["groups"] = {
-										i(139486),	-- Cache of Nightmarish Treasures [Normal]
+										un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 									},
+									["u"] = 40,
 								},
 								{
 									["questID"] = 44283,	-- The Emerald Nightmare: Piercing the Veil
@@ -595,7 +601,7 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								i(139487, { -- Cache of Nightmarish Treasures [Heroic]
+								un(2, i(139487, { -- Cache of Nightmarish Treasures [Heroic]
 									i(139191),	-- Ancient Dreamwoven Mantle
 									i(139219),	-- Black Venom Sabatons
 									i(139199),	-- Boots of Endless Betrayal
@@ -650,30 +656,33 @@ _.Instances =
 									i(139218),	-- Thorny Bramblemail Pauldrons
 									i(139227),	-- Waistplate of Nameless Horror
 									i(139235),	-- Wristclamps of Mad Dreams
-								}),
+								})),
 								{
 									["itemID"] = 139482,	-- Corrupted Egg Fragment [Heroic]
 									["questID"] = 43548,	-- The Emerald Nightmare: Il'gynoth [Heroic]
 									["repeatable"] = true,
 									["groups"] = {
-										i(139487),	-- Cache of Nightmarish Treasures [Heroic]
+										un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 									},
+									["u"] = 40,
 								},
 								{
 									["itemID"] = 140167,	-- Tainted Moonglade Leaf [Heroic]
 									["questID"] = 43906,	-- The Emerald Nightmare: Fall of Cenarius [Heroic]
 									["repeatable"] = true,
 									["groups"] = {
-										i(139487),	-- Cache of Nightmarish Treasures [Heroic]
+										un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 									},
+									["u"] = 40,
 								},
 								{
 									["itemID"] = 140168,	-- Vial of Swirling Shadow [Heroic]
 									["questID"] = 43907,	-- The Emerald Nightmare: Xavius [Heroic]
 									["repeatable"] = true,
 									["groups"] = {
-										i(139487),	-- Cache of Nightmarish Treasures [Heroic]
+										un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 									},
+									["u"] = 40,
 								},
 								{
 									["questID"] = 44284,	-- The Emerald Nightmare: Piercing the Veil [Heroic]
@@ -899,7 +908,7 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								i(139488, { -- Cache of Nightmarish Treasures [Mythic]
+								un(2, i(139488, { -- Cache of Nightmarish Treasures [Mythic]
 									i(139191),	-- Ancient Dreamwoven Mantle
 									i(139219),	-- Black Venom Sabatons
 									i(139199),	-- Boots of Endless Betrayal
@@ -954,30 +963,33 @@ _.Instances =
 									i(139218),	-- Thorny Bramblemail Pauldrons
 									i(139227),	-- Waistplate of Nameless Horror
 									i(139235),	-- Wristclamps of Mad Dreams
-								}),
+								})),
 								{
 									["itemID"] = 139483,	-- Corrupted Egg Fragment [Mythic]
 									["questID"] = 43549,	-- The Emerald Nightmare: Il'gynoth [Mythic]
 									["repeatable"] = true,
 									["groups"] = {
-										i(139488),	-- Cache of Nightmarish Treasures [Mythic]
+										un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 									},
+									["u"] = 40,
 								},
 								{
 									["itemID"] = 140169,	-- Tainted Moonglade Leaf [Mythic]
 									["questID"] = 43908,	-- The Emerald Nightmare: Fall of Cenarius [Mythic]
 									["repeatable"] = true,
 									["groups"] = {
-										i(139488),	-- Cache of Nightmarish Treasures [Mythic]
+										un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 									},
+									["u"] = 40,
 								},
 								{
 									["itemID"] = 140170,	-- Vial of Swirling Shadow [Mythic]
 									["questID"] = 43909,	-- The Emerald Nightmare: Xavius [Mythic]
 									["repeatable"] = true,
 									["groups"] = {
-										i(139488),	-- Cache of Nightmarish Treasures [Mythic]
+										un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 									},
+									["u"] = 40,
 								},
 								{
 									["questID"] = 44285,	-- The Emerald Nightmare: Piercing the Veil [Mythic]
