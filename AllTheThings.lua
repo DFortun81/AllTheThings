@@ -1105,14 +1105,15 @@ local function GetCachedSearchResults(search, method, ...)
 					end
 					
 					local count = 0;
+					local maximum = app.GetDataMember("Locations");
 					for i,j in ipairs(temp) do
 						if not contains(listing, j) then
 							tinsert(listing, 1, j);
 							count = count + 1;
-							if count >= app.GetDataMember("Locations") then
+							if count >= maximum then
 								count = #temp - count;
 								if count > 1 then
-									tinsert(listing, 1, "And " .. count .. " other sources...");
+									tinsert(listing, maximum + 1, "And " .. count .. " other sources...");
 									break;
 								end
 							end
