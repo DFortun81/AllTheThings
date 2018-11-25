@@ -686,6 +686,7 @@ profession(165, { -- Leatherworking
 				},
 				["qg"] = 93523, -- Namha Moonwater				
 			}),
+		}),
 		n(-2, { -- Vendors
 			i(140637), -- Recipe: Dreadleather Belt (Rank 1)
 			i(137885), -- Recipe: Dreadleather Belt (Rank 2)
@@ -916,5 +917,4 @@ profession(165, { -- Leatherworking
 			i(137870),	-- Recipe: Warhide Shoulderguard		
 		}),
 		--]]
-	}),	
 });
