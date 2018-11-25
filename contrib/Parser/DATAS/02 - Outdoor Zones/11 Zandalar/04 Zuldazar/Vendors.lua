@@ -33,57 +33,23 @@ _.Zones =
 								i(161544),	-- Vambraces of a Thousand Year Toil
 								i(161503),	-- Wristwraps of Scrollbinding
 								i(160538),	-- Cape of the Scroll Keepers*
-								i(163026, {	-- Pattern: Embroidered Deep Sea Bag [Rank 2]
-									["spellID"] = 257129,
-								}),
-								i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]
-									["spellID"] = 255094,
-								}),
-								i(162301, {	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]
-									["spellID"] = 255097,
-								}),
-								i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2]
-									["spellID"] = 259423,
-								}),
-								i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3]
-									["spellID"] = 259422,
-								}),
-								i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3]
-									["spellID"] = 256234,
-								}),
-								i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2]
-									["spellID"] = 256298,
-								}),
-								i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2]
-									["spellID"] = 256295,
-								}),
-								i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3]
-									["spellID"] = 256246,
-								}),
-								i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]
-									["spellID"] = 252363,
-								}),
-								i(162287, {	-- Recipe: Galley Banquet [Rank 3]
-									["spellID"] = 259420,
-								}),
-								i(162292, {	-- Recipe: Grilled Catfish [Rank 3]
-									["spellID"] = 259432,
-								}),
-								i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]
-									["spellID"] = 256249,
-								}),
-								i(162293, {	-- Recipe: Seasoned Loins [Rank 3]
-									["spellID"] = 259435,
-								}),
-								i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3]
-									["spellID"] = 252370,
-								}),
-								i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3]
-									["spellID"] = 256237,
-								}),
-								i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3]
-									["spellID"] = 276059,
-								}),
+								i(163026),	-- Pattern: Embroidered Deep Sea Bag [Rank 2]
+								i(162298),	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]
+								i(162301),	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]
+								i(162288),	-- Recipe: Bountiful Captain's Feast [Rank 2]
+								i(162289),	-- Recipe: Bountiful Captain's Feast [Rank 3]
+								i(162358),	-- Recipe: Codex of the Quiet Mind [Rank 3]
+								i(162373),	-- Recipe: Contract: Champions of Azeroth [Rank 2]
+								i(162371),	-- Recipe: Contract: Tortollan Seekers [Rank 2]
+								i(162377),	-- Recipe: Darkmoon Card of War [Rank 3]
+								i(162136),	-- Recipe: Endless Tincture of Renewed Combat [Rank 3]
+								i(162287),	-- Recipe: Galley Banquet [Rank 3]
+								i(162292),	-- Recipe: Grilled Catfish [Rank 3]
+								i(162352),	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]
+								i(162293),	-- Recipe: Seasoned Loins [Rank 3]
+								i(162137),	-- Recipe: Siren's Alchemist Stone [Rank 3]
+								i(162376),	-- Recipe: Tome of the Quiet Mind [Rank 3]
+								i(162023),	-- Technique: Glyph of the Dolphin [Rank 3]
 							},
 							["coord"] = { 71.4, 30.2 },
 						}),
@@ -94,20 +60,30 @@ _.Zones =
 							["itemID"] = 163036,	-- Polished Pet Charm
 							["coord"] = { 71.6, 29.4 },
 						}),
-						n(135249, {	-- Meatminder Teki
-							["groups"] = {
-								i(157779), -- Infant Dino Kibble
-								i(157780), -- Free-Range Dino Chow
-								i(157781), -- Extra-Chunky Dino Food
+						{	-- Meatminder Teki
+							["npcID"] = 135249,	-- Meatminder Teki
+							["coords"] = {
+								{ 66.82, 41.61, 862 },
 							},
-							["coord"] = { 66.8, 41.6 },
 							["races"] = HORDE_ONLY,
-						}),
+							["g"] = {
+								{	-- Extra-Chunky Dino Food
+									["itemID"] = 157781,	-- Extra-Chunky Dino Food
+									["f"] = 104,
+								},
+								{	-- Free-Range Dino Chow
+									["itemID"] = 157780,	-- Free-Range Dino Chow
+									["f"] = 104,
+								},
+								{	-- Infant Dino Kibble
+									["itemID"] = 157779,	-- Infant Dino Kibble
+									["f"] = 104,
+								},
+							},
+						},
 						n(142839, {	-- Old Jen'tay
 							["g"] = {
-								i(162030, {	-- Technique: Glyph of the Humble Flyer
-									["spellID"] = 276121,
-								}),
+								i(162030),	-- Technique: Glyph of the Humble Flyer
 							},
 							["description"] = "Requires 150 BfA Inscription to trigger conversation for the recipe.",
 							["coord"] = { 76.2, 39.8 },
