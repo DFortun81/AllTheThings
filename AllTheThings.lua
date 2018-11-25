@@ -46,6 +46,7 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local spellRecipeInfo = {};
+local DESCRIPTION_SEPARATOR = "`";
 
 -- Coroutine Helper Functions
 app.refreshing = {};
@@ -838,7 +839,7 @@ local function BuildSourceText(group, l, flag)
 	if group.parent then
 		if l < 1 then
 			if group.dr then
-				return BuildSourceText(group.parent, l + 1, flag) .. "/ |c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r";
+				return BuildSourceText(group.parent, l + 1, flag) .. DESCRIPTION_SEPARATOR .. "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r";
 			else
 				return BuildSourceText(group.parent, l + 1, flag);
 			end
@@ -856,7 +857,7 @@ local function BuildSourceTextForChat(group, l)
 	if group.parent then
 		if l < 1 then
 			if group.dr then
-				return BuildSourceTextForChat(group.parent, l + 1) .. "/ |c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r";
+				return BuildSourceTextForChat(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r";
 			else
 				return BuildSourceTextForChat(group.parent, l + 1);
 			end
@@ -1799,7 +1800,7 @@ local function SearchForItemLink(field, link)
 												else
 													text = "   ";
 												end
-												text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID or "???") .. ")") or "") .. "/" .. GetCollectionIcon(otherATTSource.collected);
+												text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherATTSource.itemID or "???") .. ")") or "") .. DESCRIPTION_SEPARATOR .. GetCollectionIcon(otherATTSource.collected);
 												tinsert(listing, text);
 											end
 										else
@@ -1810,7 +1811,7 @@ local function SearchForItemLink(field, link)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "") .. "/" .. GetCollectionIcon(otherSource.isCollected);
+												text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID) .. ")") or "") .. DESCRIPTION_SEPARATOR .. GetCollectionIcon(otherSource.isCollected);
 												if otherSource.isCollected then
 													SetDataSubMember("CollectedSources", otherSourceID, 1);
 												end
@@ -1868,7 +1869,7 @@ local function SearchForItemLink(field, link)
 											end
 											
 											if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
-											text = text	.. "/" .. GetCollectionIcon(otherATTSource.collected);
+											text = text	.. DESCRIPTION_SEPARATOR .. GetCollectionIcon(otherATTSource.collected);
 											tinsert(listing, text);
 										else
 											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
@@ -1888,8 +1889,8 @@ local function SearchForItemLink(field, link)
 								end
 							end
 							
-							if GetDataMember("ShowVisualID") then tinsert(listing, L("VISUAL_ID") .. "/" .. tostring(sourceInfo.visualID)); end
-							if GetDataMember("ShowSourceID") then tinsert(listing, L("SOURCE_ID") .. "/" .. sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected)); end
+							if GetDataMember("ShowVisualID") then tinsert(listing, L("VISUAL_ID") .. DESCRIPTION_SEPARATOR .. tostring(sourceInfo.visualID)); end
+							if GetDataMember("ShowSourceID") then tinsert(listing, L("SOURCE_ID") .. DESCRIPTION_SEPARATOR .. sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected)); end
 						end
 					end
 				else
@@ -1902,7 +1903,7 @@ local function SearchForItemLink(field, link)
 					end
 				end
 				
-				if GetDataMember("ShowItemID") and itemID > 0 then tinsert(listing, L("ITEM_ID") .. "/" .. itemID); end
+				if GetDataMember("ShowItemID") and itemID > 0 then tinsert(listing, L("ITEM_ID") .. DESCRIPTION_SEPARATOR .. itemID); end
 				if GetDataMember("ShowItemString") then tinsert(listing, itemString); end
 				if group and #group > 0 then
 					if GetDataMember("ShowLootSpecializations", true) then
@@ -1920,12 +1921,12 @@ local function SearchForItemLink(field, link)
 									end
 								end
 								if atleastone then
-									tinsert(listing, " /" .. spec_label);
+									tinsert(listing, " " .. DESCRIPTION_SEPARATOR .. spec_label);
 								else
-									tinsert(listing, " /Not available in Personal Loot.");
+									tinsert(listing, " " .. DESCRIPTION_SEPARATOR .. "Not available in Personal Loot.");
 								end
 							else
-								tinsert(listing, " /Not available in Personal Loot.");
+								tinsert(listing, " " .. DESCRIPTION_SEPARATOR .. "Not available in Personal Loot.");
 							end
 						end
 					end
@@ -2992,7 +2993,7 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 		-- Display the pre-calculated row data.
 		if #listing > 0 and (not paramA or GetDataSubMember("SourceText", paramA, true)) then
 			for i,text in ipairs(listing) do
-				local left, right = strsplit("/", text);
+				local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
 				if right then
 					self:AddDoubleLine(left, right);
 				elseif string.find(left, " -> ") then
@@ -3181,7 +3182,7 @@ local function AttachTooltip(self)
 				elseif owner.lastNumMountsNeedingFanfare then
 					-- Collections
 					local db = app:GetWindow("Prime").data;
-					AttachTooltipRawSearchResults(self, { app.DisplayName .. "/" .. db.title }, { db });
+					AttachTooltipRawSearchResults(self, { app.DisplayName .. DESCRIPTION_SEPARATOR .. db.title }, { db });
 					self:Show();
 				
 				elseif owner.NewAdventureNotice then
@@ -7176,7 +7177,7 @@ local function RowOnEnter(self)
 		
 		local title = reference.title;
 		if title then
-			local left, right = strsplit("/", title);
+			local left, right = strsplit(DESCRIPTION_SEPARATOR, title);
 			if right then
 				GameTooltip:AddDoubleLine(left, right);
 			else
@@ -7639,7 +7640,7 @@ function app:GetDataCache()
 		allData = setmetatable({}, {
 			__index = function(t, key)
 				if key == "title" then
-					return (GetDataMember("CompletionistMode") and "Completionist Mode" or GetDataMember("MainOnly") and "Unique Appearance Mode (Main Only)" or "Unique Appearance Mode") .. "/" .. app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total);
+					return (GetDataMember("CompletionistMode") and "Completionist Mode" or GetDataMember("MainOnly") and "Unique Appearance Mode (Main Only)" or "Unique Appearance Mode") .. DESCRIPTION_SEPARATOR .. app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total);
 				else
 					-- Something that isn't dynamic.
 					return table[key];
