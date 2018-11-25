@@ -94,6 +94,15 @@ _.Zones =
 							["itemID"] = 163036,	-- Polished Pet Charm
 							["coord"] = { 71.6, 29.4 },
 						}),
+						n(135249, {	-- Meatminder Teki
+							["groups"] = {
+								i(157779), -- Infant Dino Kibble
+								i(157780), -- Free-Range Dino Chow
+								i(157781), -- Extra-Chunky Dino Food
+							},
+							["coord"] = { 66.8, 41.6 },
+							["races"] = HORDE_ONLY,
+						}),
 						n(142839, {	-- Old Jen'tay
 							["g"] = {
 								i(162030, {	-- Technique: Glyph of the Humble Flyer
