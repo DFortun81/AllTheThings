@@ -1398,6 +1398,101 @@ _.Zones =
 						i(10317),	-- Pattern: Pink Mageweave Shirt
 						i(5772),	-- Pattern: Red Woolen Bag
 					}),
+					{	-- Marith Lazuria <Jewelcrafting Supplies>
+						["npcID"] = 50482,	-- Marith Lazuria <Jewelcrafting Supplies>
+						["g"] ={
+							currency(361, {	-- Illustrious Jewelcrafter's Token
+								i(52409),	-- Design: Accurate Demonseye
+								i(52419),	-- Design: Adept Ember Topaz
+								i(52421),	-- Design: Artful Ember Topaz
+								i(52437),	-- Design: Austere Shadowspirit Diamond
+								i(52461),	-- Design: Band of Blades
+								i(52381),	-- Design: Bold Chimera's Eye
+								i(52362),	-- Design: Bold Inferno Ruby
+								i(52435),	-- Design: Bracing Shadowspirit Diamond
+								i(52464),	-- Design: Brazen Elementium Medallion
+								i(52449),	-- Design: Brilliant Chimera's Eye
+								i(52387),	-- Design: Brilliant Inferno Ruby
+								i(52434),	-- Design: Chaotic Shadowspirit Diamond
+								i(52413),	-- Design: Deadly Ember Topaz
+								i(52401),	-- Design: Defender's Demonseye
+								i(52416),	-- Design: Deft Ember Topaz
+								i(52447),	-- Design: Delicate Chimera's Eye
+								i(52380),	-- Design: Delicate Inferno Ruby
+								i(52441),	-- Design: Destructive Shadowspirit Diamond
+								i(52438),	-- Design: Effulgent Shadowspirit Diamond
+								i(52460),	-- Design: Elementium Destroyer's Ring
+								i(52467),	-- Design: Elementium Guardian
+								i(52463),	-- Design: Elementium Moebius Band
+								i(52439),	-- Design: Ember Shadowspirit Diamond
+								i(52443),	-- Design: Enigmatic Shadowspirit Diamond
+								i(52465),	-- Design: Entwined Elementium Choker
+								i(52405),	-- Design: Etched Demonseye
+								i(52436),	-- Design: Eternal Shadowspirit Diamond
+								i(52466),	-- Design: Eye of Many Deaths
+								i(52415),	-- Design: Fierce Ember Topaz
+								i(52420),	-- Design: Fine Ember Topaz
+								i(52448),	-- Design: Flashing Chimera's Eye
+								i(52384),	-- Design: Flashing Inferno Ruby
+								i(52433),	-- Design: Fleet Shadowspirit Diamond
+								i(52428),	-- Design: Forceful Dream Emerald
+								i(52445),	-- Design: Forlorn Shadowspirit Diamond
+								i(52398),	-- Design: Fractured Amberjewel
+								i(52459),	-- Design: Fractured Chimera's Eye
+								i(52406),	-- Design: Glinting Demonseye
+								i(52403),	-- Design: Guardian's Demonseye
+								i(52444),	-- Design: Impassive Shadowspirit Diamond
+								i(52412),	-- Design: Inscribed Ember Topaz
+								i(52425),	-- Design: Jagged Dream Emerald
+								i(52422),	-- Design: Keen Ember Topaz
+								i(52429),	-- Design: Lightning Dream Emerald
+								i(68360),	-- Design: Lucent Ember Topaz
+								i(52396),	-- Design: Mystic Amberjewel
+								i(52457),	-- Design: Mystic Chimera's Eye
+								i(52424),	-- Design: Nimble Dream Emerald
+								i(52426),	-- Design: Piercing Dream Emerald
+								i(52410),	-- Design: Polished Ember Topaz
+								i(52414),	-- Design: Potent Ember Topaz
+								i(52442),	-- Design: Powerful Shadowspirit Diamond
+								i(52450),	-- Design: Precise Chimera's Eye
+								i(52389),	-- Design: Precise Inferno Ruby
+								i(52430),	-- Design: Puissant Dream Emerald
+								i(69853),	-- Design: Punisher's Band
+								i(52404),	-- Design: Purified Demonseye
+								i(52397),	-- Design: Quick Amberjewel
+								i(52458),	-- Design: Quick Chimera's Eye
+								i(52417),	-- Design: Reckless Ember Topaz
+								i(52423),	-- Design: Regal Dream Emerald
+								i(52411),	-- Design: Resolute Ember Topaz
+								i(68361),	-- Design: Resplendent Ember Topaz
+								i(52407),	-- Design: Retaliating Demonseye
+								i(52440),	-- Design: Revitalizing Shadowspirit Diamond
+								i(52454),	-- Design: Rigid Chimera's Eye
+								i(52393),	-- Design: Rigid Ocean Sapphire
+								i(52462),	-- Design: Ring of Warring Elements
+								i(52432),	-- Design: Sensei's Dream Emerald
+								i(52400),	-- Design: Shifting Demonseye
+								i(52418),	-- Design: Skillful Ember Topaz
+								i(52395),	-- Design: Smooth Amberjewel
+								i(52456),	-- Design: Smooth Chimera's Eye
+								i(52451),	-- Design: Solid Chimera's Eye
+								i(52390),	-- Design: Solid Ocean Sapphire
+								i(52399),	-- Design: Sovereign Demonseye
+								i(52452),	-- Design: Sparkling Chimera's Eye
+								i(52391),	-- Design: Sparkling Ocean Sapphire
+								i(52427),	-- Design: Steady Dream Emerald
+								i(52453),	-- Design: Stormy Chimera's Eye
+								i(52392),	-- Design: Stormy Ocean Sapphire
+								i(52394),	-- Design: Subtle Amberjewel
+								i(52455),	-- Design: Subtle Chimera's Eye
+								i(52402),	-- Design: Timeless Demonseye
+								i(52408),	-- Design: Veiled Demonseye
+								i(68742),	-- Design: Vivid Dream Emerald
+								i(68359),	-- Design: Willful Ember Topaz
+								i(52431),	-- Design: Zen Dream Emerald
+							}),
+						},
+					},
 					{	-- Nerog <Inscription Trainer>
 						["npcID"] = 46716,	-- Nerog <Inscription Trainer>
 						["coord"] = { 55.2, 55.8 },
@@ -2242,6 +2337,80 @@ _.Zones =
 						i(67085), -- Pattern: Vicious Wyrmhide Legs	
 						i(67074), -- Pattern: Vicious Wyrmhide Shoulders
 					}),
+					{	-- Taryssa Lazuria <Jewelcrafting Supplies>
+						["npcID"] = 57922,	-- Taryssa Lazuria <Jewelcrafting Supplies>
+						["g"] = {
+							currency(361, {	-- Illustrious Jewelcrafter's Token
+								i(71928),	-- Design: Accurate Shadow Spinel
+								i(71917),	-- Design: Adept Lava Coral
+								i(71919),	-- Design: Artful Lava Coral
+								i(71893),	-- Design: Balanced Elven Peridot
+								i(71943),	-- Design: Bold Queen's Garnet
+								i(71941),	-- Design: Brilliant Queen's Garnet
+								i(71912),	-- Design: Champion's Lava Coral
+								i(71906),	-- Design: Crafty Lava Coral
+								i(71905),	-- Design: Deadly Lava Coral
+								i(71937),	-- Design: Defender's Shadow Spinel
+								i(71913),	-- Design: Deft Lava Coral
+								i(71939),	-- Design: Delicate Queen's Garnet
+								i(71898),	-- Design: Energized Elven Peridot
+								i(71931),	-- Design: Etched Shadow Spinel
+								i(71916),	-- Design: Fierce Lava Coral
+								i(71920),	-- Design: Fine Lava Coral
+								i(71942),	-- Design: Flashing Queen's Garnet
+								i(71901),	-- Design: Forceful Elven Peridot
+								i(71947),	-- Design: Fractured Lightstone
+								i(71927),	-- Design: Glinting Shadow Spinel
+								i(71935),	-- Design: Guardian's Shadow Spinel
+								i(71891),	-- Design: Infused Elven Peridot
+								i(71908),	-- Design: Inscribed Lava Coral
+								i(71899),	-- Design: Jagged Elven Peridot
+								i(71918),	-- Design: Keen Lava Coral
+								i(71889),	-- Design: Lightning Elven Peridot
+								i(71922),	-- Design: Lucent Lava Coral
+								i(71887),	-- Design: Misty Elven Peridot
+								i(71932),	-- Design: Mysterious Shadow Spinel
+								i(71948),	-- Design: Mystic Lightstone
+								i(71902),	-- Design: Nimble Elven Peridot
+								i(71888),	-- Design: Piercing Elven Peridot
+								i(71909),	-- Design: Polished Lava Coral
+								i(71907),	-- Design: Potent Lava Coral
+								i(71940),	-- Design: Precise Queen's Garnet
+								i(71903),	-- Design: Puissant Elven Peridot
+								i(71933),	-- Design: Purified Shadow Spinel
+								i(71946),	-- Design: Quick Lightstone
+								i(71896),	-- Design: Radiant Elven Peridot
+								i(71915),	-- Design: Reckless Lava Coral
+								i(71900),	-- Design: Regal Elven Peridot
+								i(71910),	-- Design: Resolute Lava Coral
+								i(71926),	-- Design: Resplendent Lava Coral
+								i(71930),	-- Design: Retaliating Shadow Spinel
+								i(71821),	-- Design: Rigid Deepholm Iolite
+								i(71890),	-- Design: Sensei's Elven Peridot
+								i(71897),	-- Design: Shattered Elven Peridot
+								i(71934),	-- Design: Shifting Shadow Spinel
+								i(71921),	-- Design: Skillful Lava Coral
+								i(71944),	-- Design: Smooth Lightstone
+								i(71886),	-- Design: Solid Deepholm Iolite
+								i(71938),	-- Design: Sovereign Shadow Spinel
+								i(71885),	-- Design: Sparkling Deepholm Iolite
+								i(71925),	-- Design: Splendid Lava Coral
+								i(71911),	-- Design: Stalwart Lava Coral
+								i(71904),	-- Design: Steady Elven Peridot
+								i(71884),	-- Design: Stormy Deepholm Iolite
+								i(71945),	-- Design: Subtle Lightstone
+								i(71923),	-- Design: Tenuous Lava Coral
+								i(71936),	-- Design: Timeless Shadow Spinel
+								i(71895),	-- Design: Turbid Elven Peridot
+								i(71929),	-- Design: Veiled Shadow Spinel
+								i(71894),	-- Design: Vivid Elven Peridot
+								i(71914),	-- Design: Wicked Lava Coral
+								i(71924),	-- Design: Willful Lava Coral
+								i(71892),	-- Design: Zen Elven Peridot
+								i(71949),	-- Tome of Burning Jewels
+							}),
+						},
+					},
 					n(3315, {	-- Tor'phan <Cloth & Leather Armor Merchant>
 						i(12255),	-- Pale Leggings
 					}),
