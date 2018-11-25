@@ -9,11 +9,15 @@ _.Instances =
 			inst(261, { 	-- The Steamvault
 				["groups"] = {
 					n(0, {	-- Zone Drops
-						n(17803, {	-- Coilfang Oracle
-							dr(2, i(22533)),	-- Formula: Enchant Bracer - Fortitude
+						i(24159, {  -- Design: Khorium Band of Frost
+							["crs"] = {
+								17722,	-- Coilfang Sorceress 
+							},
 						}),
-						n(17722, {  -- Coilfang Sorceress 
-							dr(2, i(24159)),  -- Design: Khorium Band of Frost
+						i(22533, {	-- Formula: Enchant Bracer - Fortitude
+							["crs"] = {
+								17803,	-- Coilfang Oracle
+							},
 						}),
 					}),
 					d(1, {	-- Normal

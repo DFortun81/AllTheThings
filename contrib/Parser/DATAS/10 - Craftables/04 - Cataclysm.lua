@@ -30,7 +30,7 @@ _.Craftables =
 				i(68775),	-- Volatile Alchemist Stone
 			}),
 		}),
-		n(-181, { -- Blacksmithing
+		n(-181, { 	-- Blacksmithing
 			n(-319, { 	-- Weapons
 				i(70155),	-- Brainsplinter
 				i(55044),	-- Cold-Forged Shank
@@ -119,7 +119,7 @@ _.Craftables =
 				i(69946),	-- Warboots of Mighty Lords
 			}),
 		}),
-		n(-183, { -- Engineering
+		n(-183, { 	-- Engineering
 			i(71077),	-- Extreme-Impact Hole Puncher
 			i(59598),	-- Finely-Tuned Throat Needler
 			i(59367),	-- Kickback 5000
@@ -133,7 +133,7 @@ _.Craftables =
 			i(59359),	-- Reinforced Bio-Optic Killshades
 			i(59448),	-- Specialized Bio-Optic Killshades
 		}),
-		n(-185, { -- Inscription
+		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
 				sp(86615, {	-- Darkmoon Card of Destruction
@@ -166,7 +166,7 @@ _.Craftables =
 				i(87561),	-- Silver Inlaid Staff
 			}),
 		}),
-		n(-186, { -- Jewelcrafting
+		n(-186, { 	-- Jewelcrafting
 			i(52492),	-- Carnelian Spikes
 			i(52493),	-- The Perforator
 			i(52487,  {	-- Jeweler's Amber Monocle
@@ -182,7 +182,7 @@ _.Craftables =
 				["description"] = "To learn this specific item you will need to buy the Black Market AH version",
 			})),
 		}),
-		n(-187, { -- Leatherworking
+		n(-187, { 	-- Leatherworking
 			n(-322, { 	-- Cloak
 				i(56518),	-- Cloak of Beasts
 				i(56519),	-- Cloak of War
@@ -270,7 +270,7 @@ _.Craftables =
 				i(75116),	-- Vicious Dragonscale Shoulders
 			}),
 		}),
-		n(-190, { -- Tailoring
+		n(-190, { 	-- Tailoring
 			i(54476),	-- Deathsilk Cowl
 			i(54485),	-- Spiritmend Cowl
 			i(75073),	-- Vicious Embersilk Cowl

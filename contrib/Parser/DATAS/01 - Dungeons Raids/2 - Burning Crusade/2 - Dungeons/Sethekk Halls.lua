@@ -24,6 +24,7 @@ _.Instances =
 							}),	
 						}),
 						cr(18472, e(541, {	-- Darkweaver Syth
+							i(24160),	-- Design: Khorium Inferno Band
 							i(27918),	-- Bands of Syth
 							i(27919),	-- Light-Woven Slippers
 							i(27914),	-- Moonstrider Boots
@@ -53,6 +54,7 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(18472, e(541, {	-- Darkweaver Syth
+								i(24160),	-- Design: Khorium Inferno Band
 								i(27918),	-- Bands of Syth
 								i(27919),	-- Light-Woven Slippers
 								i(27914),	-- Moonstrider Boots

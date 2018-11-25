@@ -1,30 +1,30 @@
 profession(755, {	-- Jewelcrafting
 	filter(200, {
-		{
+		{	-- Pandaria Designs
 			["categoryID"] = 809--[[Pandaria Designs]],
 			["g"] = {
-				{
+				{	-- Research
 					["categoryID"] = 831--[[Research]],
 					["g"] = {
-						{
+						{	-- Imperial Amethyst
 							["recipeID"] = 131691--[[Imperial Amethyst]]
 						},
-						{
+						{	-- Primordial Ruby
 							["recipeID"] = 131686--[[Primordial Ruby]]
 						},
-						{
+						{	-- River's Heart
 							["recipeID"] = 131593--[[River's Heart]]
 						},
-						{
+						{	-- Secrets of the Stone
 							["recipeID"] = 131759--[[Secrets of the Stone]]
 						},
-						{
+						{	-- Sun's Radiance
 							["recipeID"] = 131695--[[Sun's Radiance]]
 						},
-						{
+						{	-- Vermilion Onyx
 							["recipeID"] = 131690--[[Vermilion Onyx]]
 						},
-						{
+						{	-- Wild Jade
 							["recipeID"] = 131688--[[Wild Jade]]
 						},
 						{
@@ -32,7 +32,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Blue Gems
 					["categoryID"] = 821--[[Blue Gems]],
 					["g"] = {
 						{
@@ -47,30 +47,30 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 106948--[[Stormy River's Heart]]
 						},
-						{
+						{	-- Rigid Serpent's Eye
 							["recipeID"] = 122681--[[Rigid Serpent's Eye]]
 						},
-						{
+						{	-- Solid Serpent's Eye
 							["recipeID"] = 122678--[[Solid Serpent's Eye]]
 						},
-						{
+						{	-- Sparkling Serpent's Eye
 							["recipeID"] = 122677--[[Sparkling Serpent's Eye]]
 						},
-						{
+						{	-- Rigid Lapis Lazuli
 							["recipeID"] = 107617--[[Rigid Lapis Lazuli]]
 						},
-						{
+						{	-- Solid Lapis Lazuli
 							["recipeID"] = 107619--[[Solid Lapis Lazuli]]
 						},
-						{
+						{	-- Sparkling Lapis Lazuli
 							["recipeID"] = 107620--[[Sparkling Lapis Lazuli]]
 						},
-						{
+						{	-- Stormy Lapis Lazuli
 							["recipeID"] = 107621--[[Stormy Lapis Lazuli]]
 						}
 					}
 				},
-				{
+				{	-- Green Gems
 					["categoryID"] = 822--[[Green Gems]],
 					["g"] = {
 						{
@@ -127,63 +127,63 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 106958--[[Zen Wild Jade]]
 						},
-						{
+						{	-- Balanced Alexandrite
 							["recipeID"] = 107598--[[Balanced Alexandrite]]
 						},
-						{
+						{	-- Effulgent Alexandrite
 							["recipeID"] = 107599--[[Effulgent Alexandrite]]
 						},
-						{
+						{	-- Energized Alexandrite
 							["recipeID"] = 107600--[[Energized Alexandrite]]
 						},
-						{
+						{	-- Forceful Alexandrite
 							["recipeID"] = 107601--[[Forceful Alexandrite]]
 						},
-						{
+						{	-- Jagged Alexandrite
 							["recipeID"] = 107602--[[Jagged Alexandrite]]
 						},
-						{
+						{	-- Lightning Alexandrite
 							["recipeID"] = 107604--[[Lightning Alexandrite]]
 						},
-						{
+						{	-- Misty Alexandrite
 							["recipeID"] = 107605--[[Misty Alexandrite]]
 						},
-						{
+						{	-- Nimble Alexandrite
 							["recipeID"] = 107606--[[Nimble Alexandrite]]
 						},
-						{
+						{	-- Piercing Alexandrite
 							["recipeID"] = 107607--[[Piercing Alexandrite]]
 						},
-						{
+						{	-- Puissant Alexandrite
 							["recipeID"] = 107608--[[Puissant Alexandrite]]
 						},
-						{
+						{	-- Radiant Alexandrite
 							["recipeID"] = 107609--[[Radiant Alexandrite]]
 						},
-						{
+						{	-- Regal Alexandrite
 							["recipeID"] = 107610--[[Regal Alexandrite]]
 						},
-						{
+						{	-- Sensei's Alexandrite
 							["recipeID"] = 107611--[[Sensei's Alexandrite]]
 						},
-						{
+						{	-- Shattered Alexandrite
 							["recipeID"] = 107612--[[Shattered Alexandrite]]
 						},
-						{
+						{	-- Steady Alexandrite
 							["recipeID"] = 107613--[[Steady Alexandrite]]
 						},
-						{
+						{	-- Turbid Alexandrite
 							["recipeID"] = 107614--[[Turbid Alexandrite]]
 						},
-						{
+						{	-- Vivid Alexandrite
 							["recipeID"] = 107615--[[Vivid Alexandrite]]
 						},
-						{
+						{	-- Zen Alexandrite
 							["recipeID"] = 107616--[[Zen Alexandrite]]
 						}
 					}
 				},
-				{
+				{	-- Orange Gems
 					["categoryID"] = 823--[[Orange Gems]],
 					["g"] = {
 						{
@@ -252,84 +252,84 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 107736--[[Willful Vermilion Onyx]]
 						},
-						{
+						{	-- Lucent Serpent's Eye
 							["recipeID"] = 136270--[[Lucent Serpent's Eye]]
 						},
-						{
+						{	-- Resplendent Serpent's Eye
 							["recipeID"] = 136269--[[Resplendent Serpent's Eye]]
 						},
-						{
+						{	-- Willful Serpent's Eye
 							["recipeID"] = 136272--[[Willful Serpent's Eye]]
 						},
-						{
+						{	-- Adept Tiger Opal
 							["recipeID"] = 107645--[[Adept Tiger Opal]]
 						},
-						{
+						{	-- Artful Tiger Opal
 							["recipeID"] = 107646--[[Artful Tiger Opal]]
 						},
-						{
+						{	-- Champion's Tiger Opal
 							["recipeID"] = 107647--[[Champion's Tiger Opal]]
 						},
-						{
+						{	-- Crafty Tiger Opal
 							["recipeID"] = 107648--[[Crafty Tiger Opal]]
 						},
-						{
+						{	-- Deadly Tiger Opal
 							["recipeID"] = 107649--[[Deadly Tiger Opal]]
 						},
-						{
+						{	-- Deft Tiger Opal
 							["recipeID"] = 107650--[[Deft Tiger Opal]]
 						},
-						{
+						{	-- Fierce Tiger Opal
 							["recipeID"] = 107651--[[Fierce Tiger Opal]]
 						},
-						{
+						{	-- Fine Tiger Opal
 							["recipeID"] = 107652--[[Fine Tiger Opal]]
 						},
-						{
+						{	-- Inscribed Tiger Opal
 							["recipeID"] = 107653--[[Inscribed Tiger Opal]]
 						},
-						{
+						{	-- Keen Tiger Opal
 							["recipeID"] = 107654--[[Keen Tiger Opal]]
 						},
-						{
+						{	-- Lucent Tiger Opal
 							["recipeID"] = 107655--[[Lucent Tiger Opal]]
 						},
-						{
+						{	-- Polished Tiger Opal
 							["recipeID"] = 107656--[[Polished Tiger Opal]]
 						},
-						{
+						{	-- Potent Tiger Opal
 							["recipeID"] = 107657--[[Potent Tiger Opal]]
 						},
-						{
+						{	-- Reckless Tiger Opal
 							["recipeID"] = 107658--[[Reckless Tiger Opal]]
 						},
-						{
+						{	-- Resolute Tiger Opal
 							["recipeID"] = 107659--[[Resolute Tiger Opal]]
 						},
-						{
+						{	-- Resplendent Tiger Opal
 							["recipeID"] = 107660--[[Resplendent Tiger Opal]]
 						},
-						{
+						{	-- Skillful Tiger Opal
 							["recipeID"] = 107661--[[Skillful Tiger Opal]]
 						},
-						{
+						{	-- Splendid Tiger Opal
 							["recipeID"] = 107662--[[Splendid Tiger Opal]]
 						},
-						{
+						{	-- Stalwart Tiger Opal
 							["recipeID"] = 107663--[[Stalwart Tiger Opal]]
 						},
-						{
+						{	-- Tenuous Tiger Opal
 							["recipeID"] = 107665--[[Tenuous Tiger Opal]]
 						},
-						{
+						{	-- Wicked Tiger Opal
 							["recipeID"] = 107666--[[Wicked Tiger Opal]]
 						},
-						{
+						{	-- Willful Tiger Opal
 							["recipeID"] = 107667--[[Willful Tiger Opal]]
 						}
 					}
 				},
-				{
+				{	-- Purple Gems
 					["categoryID"] = 824--[[Purple Gems]],
 					["g"] = {
 						{
@@ -374,60 +374,60 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 107704--[[Veiled Imperial Amethyst]]
 						},
-						{
+						{	-- Assassin's Serpent's Eye
 							["recipeID"] = 136274--[[Assassin's Serpent's Eye]]
 						},
-						{
+						{	-- Mysterious Serpent's Eye
 							["recipeID"] = 136275--[[Mysterious Serpent's Eye]]
 						},
-						{
+						{	-- Tense Serpent's Eye
 							["recipeID"] = 136273--[[Tense Serpent's Eye]]
 						},
-						{
+						{	-- Accurate Roguestone
 							["recipeID"] = 107627--[[Accurate Roguestone]]
 						},
-						{
+						{	-- Assassin's Roguestone
 							["recipeID"] = 130656--[[Assassin's Roguestone]]
 						},
-						{
+						{	-- Defender's Roguestone
 							["recipeID"] = 107628--[[Defender's Roguestone]]
 						},
-						{
+						{	-- Etched Roguestone
 							["recipeID"] = 107630--[[Etched Roguestone]]
 						},
-						{
+						{	-- Glinting Roguestone
 							["recipeID"] = 107631--[[Glinting Roguestone]]
 						},
-						{
+						{	-- Guardian's Roguestone
 							["recipeID"] = 107632--[[Guardian's Roguestone]]
 						},
-						{
+						{	-- Mysterious Roguestone
 							["recipeID"] = 107633--[[Mysterious Roguestone]]
 						},
-						{
+						{	-- Purified Roguestone
 							["recipeID"] = 107634--[[Purified Roguestone]]
 						},
-						{
+						{	-- Retaliating Roguestone
 							["recipeID"] = 107635--[[Retaliating Roguestone]]
 						},
-						{
+						{	-- Shifting Roguestone
 							["recipeID"] = 107636--[[Shifting Roguestone]]
 						},
-						{
+						{	-- Sovereign Roguestone
 							["recipeID"] = 107637--[[Sovereign Roguestone]]
 						},
-						{
+						{	-- Tense Roguestone
 							["recipeID"] = 130655--[[Tense Roguestone]]
 						},
-						{
+						{	-- Timeless Roguestone
 							["recipeID"] = 107638--[[Timeless Roguestone]]
 						},
-						{
+						{	-- Veiled Roguestone
 							["recipeID"] = 107639--[[Veiled Roguestone]]
 						}
 					}
 				},
-				{
+				{	-- Red Gems
 					["categoryID"] = 825--[[Red Gems]],
 					["g"] = {
 						{
@@ -445,39 +445,39 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 107709--[[Precise Primordial Ruby]]
 						},
-						{
+						{	-- Bold Serpent's Eye
 							["recipeID"] = 122675--[[Bold Serpent's Eye]]
 						},
-						{
+						{	-- Brilliant Serpent's Eye
 							["recipeID"] = 122676--[[Brilliant Serpent's Eye]]
 						},
-						{
+						{	-- Delicate Serpent's Eye
 							["recipeID"] = 122674--[[Delicate Serpent's Eye]]
 						},
-						{
+						{	-- Flashing Serpent's Eye
 							["recipeID"] = 122685--[[Flashing Serpent's Eye]]
 						},
-						{
+						{	-- Precise Serpent's Eye
 							["recipeID"] = 122683--[[Precise Serpent's Eye]]
 						},
-						{
+						{	-- Bold Pandarian Garnet
 							["recipeID"] = 107622--[[Bold Pandarian Garnet]]
 						},
-						{
+						{	-- Brilliant Pandarian Garnet
 							["recipeID"] = 107623--[[Brilliant Pandarian Garnet]]
 						},
-						{
+						{	-- Delicate Pandarian Garnet
 							["recipeID"] = 107624--[[Delicate Pandarian Garnet]]
 						},
-						{
+						{	-- Flashing Pandarian Garnet
 							["recipeID"] = 107625--[[Flashing Pandarian Garnet]]
 						},
-						{
+						{	-- Precise Pandarian Garnet
 							["recipeID"] = 107626--[[Precise Pandarian Garnet]]
 						}
 					}
 				},
-				{
+				{	-- Yellow Gems
 					["categoryID"] = 833--[[Yellow Gems]],
 					["g"] = {
 						{
@@ -495,36 +495,36 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 107714--[[Subtle Sun's Radiance]]
 						},
-						{
+						{	-- Fractured Serpent's Eye
 							["recipeID"] = 122684--[[Fractured Serpent's Eye]]
 						},
-						{
+						{	-- Quick Serpent's Eye
 							["recipeID"] = 122682--[[Quick Serpent's Eye]]
 						},
-						{
+						{	-- Smooth Serpent's Eye
 							["recipeID"] = 122680--[[Smooth Serpent's Eye]]
 						},
-						{
+						{	-- Subtle Serpent's Eye
 							["recipeID"] = 122679--[[Subtle Serpent's Eye]]
 						},
-						{
+						{	-- Fractured Sunstone
 							["recipeID"] = 107640--[[Fractured Sunstone]]
 						},
-						{
+						{	-- Mystic Sunstone
 							["recipeID"] = 107641--[[Mystic Sunstone]]
 						},
-						{
+						{	-- Quick Sunstone
 							["recipeID"] = 107642--[[Quick Sunstone]]
 						},
-						{
+						{	-- Smooth Sunstone
 							["recipeID"] = 107643--[[Smooth Sunstone]]
 						},
-						{
+						{	-- Subtle Sunstone
 							["recipeID"] = 107644--[[Subtle Sunstone]]
 						}
 					}
 				},
-				{
+				{	-- Meta Gems
 					["categoryID"] = 827--[[Meta Gems]],
 					["g"] = {
 						{
@@ -574,53 +574,53 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Necklaces
 					["categoryID"] = 828--[[Necklaces]],
 					["g"] = {
-						{
+						{	-- Golembreaker Amulet
 							["recipeID"] = 122670--[[Golembreaker Amulet]]
 						},
-						{
+						{	-- Reflection of the Sea
 							["recipeID"] = 122669--[[Reflection of the Sea]]
 						},
-						{
+						{	-- Skymage Circle
 							["recipeID"] = 122672--[[Skymage Circle]]
 						},
-						{
+						{	-- Tiger Opal Pendant
 							["recipeID"] = 122673--[[Tiger Opal Pendant]]
 						},
-						{
+						{	-- Widow Chain
 							["recipeID"] = 122671--[[Widow Chain]]
 						},
-						{
+						{	-- Shadowfire Necklace
 							["recipeID"] = 122662--[[Shadowfire Necklace]]
 						}
 					}
 				},
-				{
+				{	-- Rings
 					["categoryID"] = 829--[[Rings]],
 					["g"] = {
-						{
+						{	-- Band of Blood
 							["recipeID"] = 122668--[[Band of Blood]]
 						},
-						{
+						{	-- Heart of the Earth
 							["recipeID"] = 122664--[[Heart of the Earth]]
 						},
-						{
+						{	-- Lionsfall Ring
 							["recipeID"] = 122667--[[Lionsfall Ring]]
 						},
-						{
+						{	-- Lord's Signet
 							["recipeID"] = 122666--[[Lord's Signet]]
 						},
-						{
+						{	-- Roguestone Shadowband
 							["recipeID"] = 122665--[[Roguestone Shadowband]]
 						},
-						{
+						{	-- Ornate Band
 							["recipeID"] = 122661--[[Ornate Band]]
 						}
 					}
 				},
-				{
+				{	-- Mounts
 					["categoryID"] = 830--[[Mounts]],
 					["g"] = {
 						{
@@ -640,7 +640,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Toys & Pets
 					["categoryID"] = 832--[[Toys & Pets]],
 					["g"] = {
 						{
@@ -649,7 +649,7 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 131898--[[Sapphire Cub]]
 						},
-						{
+						{	-- Scrying Roguestone
 							["recipeID"] = 122663--[[Scrying Roguestone]]
 						}
 					}

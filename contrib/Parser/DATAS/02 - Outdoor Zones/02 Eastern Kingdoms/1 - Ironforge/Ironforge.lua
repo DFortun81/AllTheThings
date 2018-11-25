@@ -254,6 +254,10 @@ _.Zones =
 						i(67085), -- Pattern: Vicious Wyrmhide Legs	
 						i(67074), -- Pattern: Vicious Wyrmhide Shoulders
 					}),
+					n(5163, {	-- Burbik Gearspanner <Trade Supplies>
+						i(21948),	-- Design: Opal Necklace of Impact
+						i(20975),	-- Design: The Jade Eye
+					}),
 					n(50309, {	-- Captain Stonehelm <Ironforge Quartermaster>
 						i(64898),	-- Shroud of Ironforge
 						i(64899),	-- Cape fo Ironforge

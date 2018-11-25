@@ -65,36 +65,42 @@ _.Zones =
 						}),
 						n(17657, {		-- Logistics Officer Ulrike <Honor Hold Quartermaster>
 							["groups"] = {
+								i(23999),	-- Honor Hold Tabard
+								i(24180),	-- Design: Dawnstone Crab
+								i(23142),	-- Design: Regal Deep Peridot
 								i(22531),	-- Formula: Enchant Bracer - Superior Healing
 								i(22547),	-- Formula: Enchant Chest - Exceptional Stats
 								i(33150),	-- Formula: Enchant Cloak - Subtlety
+								i(29719),	-- Pattern: Cobrahide Leg Armor
+								i(29213),	-- Pattern: Felstalker Belt
 								i(29214),	-- Pattern: Felstalker Bracers
 								i(29215),	-- Pattern: Felstalker Breastplate
-								i(29213),	-- Pattern: Felstalker Belt
+								i(29722),	-- Pattern: Nethercobra Leg Armor
 								i(23619),	-- Plans: Felsteel Shield Spike
 								i(22905),	-- Recipe: Elixir of Major Agility
 								i(25870),	-- Recipe: Transmute Skyfire Diamond
-								i(29166),	-- Hellforged Halberd
-								i(35464),	-- Dreadweave Robe
-								i(35465),	-- Evoker's Silk Amice
-								i(35466),	-- Satin Hood
-								i(35467),	-- Mooncloth Vestments
-								i(35468),	-- Opportunist's Leather Gloves
-								i(35469),	-- Dragonhide Robe
-								i(35470),	-- Kodohide Spaulders
-								i(35471),	-- Wyrmhide Gloves
-								i(35472),	-- Seer's Mail Armor
-								i(35473),	-- Seer's Ringmail Gloves
-								i(35474),	-- Seer's Linked Helm
-								i(35475),	-- Stalker's Chain Gauntlets
-								i(35476),	-- Crusader's Ornamented Spaulders
-								i(35477),	-- Crusader's Scaled Gauntlets
-								i(35478),	-- Savage Plate Helm
-								i(29151),	-- Veteran's Musket
 								i(29153),	-- Blade of the Archmage
-								i(29156),	-- Honor's Call
 								i(25825),	-- Footman's Longsword
-								i(23999),	-- Honor Hold Tabard
+								i(29166),	-- Hellforged Halberd
+								i(29156),	-- Honor's Call
+								i(29151),	-- Veteran's Musket
+								i(35466),	-- Satin Hood
+								i(35478),	-- Savage Plate Helm
+								i(35474),	-- Seer's Linked Helm
+								i(35476),	-- Crusader's Ornamented Spaulders
+								i(35465),	-- Evoker's Silk Amice
+								i(35470),	-- Kodohide Spaulders
+								i(35469),	-- Dragonhide Robe
+								i(35464),	-- Dreadweave Robe
+								i(35467),	-- Mooncloth Vestments
+								i(35472),	-- Seer's Mail Armor
+								i(35477),	-- Crusader's Scaled Gauntlets
+								i(35468),	-- Opportunist's Leather Gloves
+								i(35473),	-- Seer's Ringmail Gloves
+								i(35475),	-- Stalker's Chain Gauntlets
+								i(35471),	-- Wyrmhide Gloves
+								i(29169),	-- Ring of Convalescence
+								i(25826),	-- Sage's Band
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -103,36 +109,42 @@ _.Zones =
 						}),
 						n(17585, {		-- Quartermaster Urgronn <Thrallmar Quartermaster>
 							["groups"] = {
+								i(24004),	-- Thrallmar Tabard
+								i(31358),	-- Design: Dawnstone Crab
+								i(31359),	-- Design: Regal Deep Peridot
 								i(24000),	-- Formula: Enchant Bracer - Superior Healing
 								i(24003),	-- Formula: Enchant Chest - Exceptional Stats
 								i(33151),	-- Formula: Enchant Cloak - Subtlety
+								i(31361),	-- Pattern: Cobrahide Leg Armor
+								i(25738),	-- Pattern: Felstalker Belt
 								i(25739),	-- Pattern: Felstalker Bracers
 								i(25740),	-- Pattern: Felstalker Breastplate
-								i(25738),	-- Pattern: Felstalker Belt
+								i(31362),	-- Pattern: Nethercobra Leg Armor
 								i(24002),	-- Plans: Felsteel Shield Spike
 								i(24001),	-- Recipe: Elixir of Major Agility
 								i(29232),	-- Recipe: Transmute Skyfire Diamond
 								i(29167),	-- Blackened Spear
-								i(35332),	-- Dreadweave Robe
-								i(35343),	-- Evoker's Silk Amice
-								i(35339),	-- Satin Hood
-								i(35337),	-- Mooncloth Vestments
-								i(35366),	-- Opportunist's Leather Gloves
-								i(35360),	-- Dragonhide Robe
-								i(35364),	-- Kodohide Spaulders
-								i(35371),	-- Wyrmhide Gloves
-								i(35386),	-- Seer's Mail Armor
-								i(35392),	-- Seer's Ringmail Gloves
-								i(35383),	-- Seer's Linked Helm
-								i(35377),	-- Stalker's Chain Gauntlets
-								i(35406),	-- Crusader's Ornamented Spaulders
-								i(35413),	-- Crusader's Scaled Gauntlets
-								i(35409),	-- Savage Plate Helm
+								i(25823),	-- Grunt's Waraxe
 								i(29152),	-- Marksman's Bow
 								i(29155),	-- Stormcaller
 								i(29165),	-- Warbringer
-								i(25823),	-- Grunt's Waraxe
-								i(24004),	-- Thrallmar Tabard
+								i(35339),	-- Satin Hood
+								i(35409),	-- Savage Plate Helm
+								i(35383),	-- Seer's Linked Helm
+								i(35406),	-- Crusader's Ornamented Spaulders
+								i(35343),	-- Evoker's Silk Amice
+								i(35364),	-- Kodohide Spaulders
+								i(35360),	-- Dragonhide Robe
+								i(35332),	-- Dreadweave Robe
+								i(35337),	-- Mooncloth Vestments
+								i(35386),	-- Seer's Mail Armor
+								i(35413),	-- Crusader's Scaled Gauntlets
+								i(35366),	-- Opportunist's Leather Gloves
+								i(35392),	-- Seer's Ringmail Gloves
+								i(35377),	-- Stalker's Chain Gauntlets
+								i(35371),	-- Wyrmhide Gloves
+								i(29168),	-- Ancestral Band
+								i(25824),	-- Farseer's Band
 							},
 							["races"] = HORDE_ONLY,
 						}),

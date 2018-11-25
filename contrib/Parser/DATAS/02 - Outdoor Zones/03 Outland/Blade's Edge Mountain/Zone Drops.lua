@@ -238,6 +238,77 @@ _.Zones =
 									},
 								},
 							},
+							{	-- Design: Deadly Flame Spessarite
+								["itemID"]  = 31874,	-- Design: Deadly Flame Spessarite
+								["crs"] = {
+									22275,	-- Apexis Guardian
+									23390,	-- Bash'ir's Harbinger
+									23353,	-- Braxxus
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									23333,	-- The Grand Collector
+									23355,	-- Zarcsin
+								},
+							},
+							{	-- Design: Khorium Band of Leaves
+								["itemID"] = 24161, 	-- Design: Khorium Band of Leaves
+								["crs"] = {
+									19984,	-- Vekh'nir Dreadhawk
+								},
+							},
+							{	-- Design: Rigid Azure Moonstone
+								["itemID"] = 31870,	-- Design: Rigid Azure Moonstone
+								["crs"] = {
+									22275,	-- Apexis Guardian
+									23390,	-- Bash'ir's Harbinger
+									23353,	-- Braxxus
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									23333,	-- The Grand Collector
+									23355,	-- Zarcsin
+								},
+							},
+							{	-- Design: Rigid Azure Moonstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["itemID"] = 23151,	-- Design: Rigid Azure Moonstone
+								["crs"] = {
+									22275,	-- Apexis Guardian
+									23390,	-- Bash'ir's Harbinger
+									23353,	-- Braxxus
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									23333,	-- The Grand Collector
+									23355,	-- Zarcsin
+								},
+								["collectible"] = false,
+							},
+							{	-- Design: Veiled Shadow Draenite
+								["itemID"]  = 31873,	-- Design: Veiled Shadow Draenite
+								["crs"] = {
+									22275,	-- Apexis Guardian
+									23390,	-- Bash'ir's Harbinger
+									23353,	-- Braxxus
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									23333,	-- The Grand Collector
+									23355,	-- Zarcsin
+								},
+							},
 							{	-- Formula: Enchant Weapon - Major Spellpower
 								["itemID"]  = 22555,	-- Formula: Enchant Weapon - Major Spellpower
 								["crs"] = {

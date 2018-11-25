@@ -48,7 +48,7 @@ _.Craftables =
 				i(44324),	-- Mighty Alchemist Stone
 			}),
 		}),
-		n(-181, { -- Blacksmithing
+		n(-181, { 	-- Blacksmithing
 			n(-319, { 	-- Weapons
 				un(5, i(41186)),	-- Corroded Saronite Edge
 				un(5, i(41187)),	-- Corroded Saronite Woundbringer
@@ -172,7 +172,7 @@ _.Craftables =
 				i(41355),	-- Vengeance Bindings
 			}),
 		}),
-		n(-183, { -- Engineering
+		n(-183, { 	-- Engineering
 			i(41168),	-- Armor Plated Combat Shotgun
 			i(39688),	-- Mark "S" Boomstick
 			i(44504),	-- Nesingwary 4000
@@ -189,7 +189,7 @@ _.Craftables =
 			i(42553),	-- Visage Liquification Goggles
 			i(42550),	-- Weakness Spectralizers
 		}),
-		n(-185, { -- Inscription
+		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
 				sp(59504, {	-- Darkmoon Card of the North
@@ -214,7 +214,7 @@ _.Craftables =
 				i(45849),	-- Twilight Tome
 			}),
 		}),
-		n(-187, { -- Leatherworking
+		n(-187, { 	-- Leatherworking
 			n(-322, { 	-- Cloak
 				i(38441),	-- Cloak of Harsh Winds
 				i(41238),	-- Cloak of Tormented Skies
@@ -361,7 +361,7 @@ _.Craftables =
 				i(43130),	-- Virulent Spaulders
 			}),
 		}),
-		n(-190, { -- Tailoring
+		n(-190, { 	-- Tailoring
 			n(-160, {	-- Mounts
 				i(44554),	-- Flying Carpet
 				i(54797),	-- Frosty Flying Carpet

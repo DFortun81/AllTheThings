@@ -756,8 +756,14 @@ _.Zones =
 								un(2, i(2913)),	-- Silk Mantle of Gamn
 							})),
 						}),
-						-- n(-16, {	-- Rares (Legacy)
-						-- }),
+						n(-2, {		-- Vendors (Legacy)
+							n(1448, {	-- Neal Allen <Engineering Supplies & General Goods>
+								i(20970, {	-- Design: Pendant of the Agate Shield (Removed in Cata and available through trainer now)
+									["collectible"] = false,
+									["description"] = "Design has been removed but recipe is still available at trainer.",
+								}),
+							}),
+						}),
 						n(  0, {	-- Zone Drop (Legacy)
 							un(43, n(1028, { 	-- Bluegill Muckdweller
 								un(7, i(3022)),	-- Bluegill Breeches

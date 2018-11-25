@@ -1,9 +1,9 @@
 profession(755, {	-- Jewelcrafting
 	filter(200, {
-		{
+		{	-- Cataclysm Designs
 			["categoryID"] = 811--[[Cataclysm Designs]],
 			["g"] = {
-				{
+				{	-- Blue Gems
 					["categoryID"] = 834--[[Blue Gems]],
 					["g"] = {
 						{
@@ -42,13 +42,13 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 73403--[[Stormy Chimera's Eye]]
 						},
-						{
+						{	-- Rigid Zephyrite
 							["recipeID"] = 73230--[[Rigid Zephyrite]]
 						},
-						{
+						{	-- Solid Zephyrite
 							["recipeID"] = 73227--[[Solid Zephyrite]]
 						},
-						{
+						{	-- Sparkling Zephyrite
 							["recipeID"] = 73228--[[Sparkling Zephyrite]]
 						},
 						{
@@ -56,7 +56,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Green Gems
 					["categoryID"] = 835--[[Green Gems]],
 					["g"] = {
 						{
@@ -149,7 +149,7 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 73277--[[Forceful Jasper]]
 						},
-						{
+						{	-- Jagged Jasper
 							["recipeID"] = 73274--[[Jagged Jasper]]
 						},
 						{
@@ -161,13 +161,13 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 73275--[[Piercing Jasper]]
 						},
-						{
+						{	-- Puissant Jasper
 							["recipeID"] = 73279--[[Puissant Jasper]]
 						},
 						{
 							["recipeID"] = 73272--[[Regal Jasper]]
 						},
-						{
+						{	-- Sensei's Jasper
 							["recipeID"] = 73281--[[Sensei's Jasper]]
 						},
 						{
@@ -178,7 +178,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Orange Gems
 					["categoryID"] = 836--[[Orange Gems]],
 					["g"] = {
 						{
@@ -295,10 +295,10 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 95754--[[Willful Ember Topaz]]
 						},
-						{
+						{	-- Adept Hessonite
 							["recipeID"] = 73268--[[Adept Hessonite]]
 						},
-						{
+						{	-- Artful Hessonite
 							["recipeID"] = 73270--[[Artful Hessonite]]
 						},
 						{
@@ -325,18 +325,18 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 73263--[[Potent Hessonite]]
 						},
-						{
+						{	-- Reckless Hessonite
 							["recipeID"] = 73266--[[Reckless Hessonite]]
 						},
 						{
 							["recipeID"] = 73259--[[Resolute Hessonite]]
 						},
-						{
+						{	-- Skillful Hessonite
 							["recipeID"] = 73267--[[Skillful Hessonite]]
 						}
 					}
 				},
-				{
+				{	-- Purple Gems
 					["categoryID"] = 837--[[Purple Gems]],
 					["g"] = {
 						{
@@ -408,16 +408,16 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 73359--[[Veiled Demonseye]]
 						},
-						{
+						{	-- Accurate Nightstone
 							["recipeID"] = 73250--[[Accurate Nightstone]]
 						},
 						{
 							["recipeID"] = 73242--[[Defender's Nightstone]]
 						},
-						{
+						{	-- Etched Nightstone
 							["recipeID"] = 73246--[[Etched Nightstone]]
 						},
-						{
+						{	-- Glinting Nightstone
 							["recipeID"] = 73247--[[Glinting Nightstone]]
 						},
 						{
@@ -429,21 +429,21 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 73248--[[Retaliating Nightstone]]
 						},
-						{
+						{	-- Shifting Nightstone
 							["recipeID"] = 73241--[[Shifting Nightstone]]
 						},
-						{
+						{	-- Sovereign Nightstone
 							["recipeID"] = 73240--[[Sovereign Nightstone]]
 						},
-						{
+						{	-- Timeless Nightstone
 							["recipeID"] = 73243--[[Timeless Nightstone]]
 						},
-						{
+						{	-- Veiled Nightstone
 							["recipeID"] = 73249--[[Veiled Nightstone]]
 						}
 					}
 				},
-				{
+				{	-- Red Gems
 					["categoryID"] = 838--[[Red Gems]],
 					["g"] = {
 						{
@@ -491,24 +491,24 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 73400--[[Precise Chimera's Eye]]
 						},
-						{
+						{	-- Bold Carnelian
 							["recipeID"] = 73222--[[Bold Carnelian]]
 						},
-						{
+						{	-- Brilliant Carnelian
 							["recipeID"] = 73225--[[Brilliant Carnelian]]
 						},
-						{
+						{	-- Delicate Carnelian
 							["recipeID"] = 73223--[[Delicate Carnelian]]
 						},
 						{
 							["recipeID"] = 73224--[[Flashing Carnelian]]
 						},
-						{
+						{	-- Precise Carnelian
 							["recipeID"] = 73226--[[Precise Carnelian]]
 						}
 					}
 				},
-				{
+				{	-- Yellow Gems
 					["categoryID"] = 839--[[Yellow Gems]],
 					["g"] = {
 						{
@@ -556,16 +556,17 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 73405--[[Subtle Chimera's Eye]]
 						},
-						{
+						{	-- Fractured Alicite
 							["recipeID"] = 73239--[[Fractured Alicite]]
 						},
-						{
-							["recipeID"] = 73233--[[Mystic Alicite]]
+						{	-- Mystic Alicite
+							["recipeID"] = 73233--[[Mystic Alicite]],
+							["u"] = 1,
 						},
-						{
+						{	-- Quick Alicite
 							["recipeID"] = 73234--[[Quick Alicite]]
 						},
-						{
+						{	-- Smooth Alicite
 							["recipeID"] = 73232--[[Smooth Alicite]]
 						},
 						{
@@ -573,7 +574,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Meta Gems
 					["categoryID"] = 840--[[Meta Gems]],
 					["g"] = {
 						{
@@ -626,7 +627,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Necklaces
 					["categoryID"] = 841--[[Necklaces]],
 					["g"] = {
 						{
@@ -641,24 +642,24 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 73505--[[Eye of Many Deaths]]
 						},
-						{
+						{	-- Vicious Amberjewel Pendant
 							["recipeID"] = 99543--[[Vicious Amberjewel Pendant]]
 						},
-						{
+						{	-- Vicious Ruby Choker
 							["recipeID"] = 99544--[[Vicious Ruby Choker]]
 						},
-						{
+						{	-- Vicious Sapphire Necklace
 							["recipeID"] = 99542--[[Vicious Sapphire Necklace]]
 						},
-						{
+						{	-- Nightstone Choker
 							["recipeID"] = 73497--[[Nightstone Choker]]
 						},
-						{
+						{	-- Alicite Pendant
 							["recipeID"] = 73496--[[Alicite Pendant]]
 						}
 					}
 				},
-				{
+				{	-- Rings
 					["categoryID"] = 842--[[Rings]],
 					["g"] = {
 						{
@@ -676,24 +677,24 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 73502--[[Ring of Warring Elements]]
 						},
-						{
+						{	-- Vicious Amberjewel Band
 							["recipeID"] = 99540--[[Vicious Amberjewel Band]]
 						},
-						{
+						{	-- Vicious Ruby Signet
 							["recipeID"] = 99541--[[Vicious Ruby Signet]]
 						},
-						{
+						{	-- Vicious Sapphire Ring
 							["recipeID"] = 99539--[[Vicious Sapphire Ring]]
 						},
-						{
+						{	-- Hessonite Band
 							["recipeID"] = 73495--[[Hessonite Band]]
 						},
-						{
+						{	-- Jasper Ring
 							["recipeID"] = 73494--[[Jasper Ring]]
 						}
 					}
 				},
-				{
+				{	-- Crowns
 					["categoryID"] = 843--[[Crowns]],
 					["g"] = {
 						{
@@ -710,24 +711,24 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Fist Weapons
 					["categoryID"] = 844--[[Fist Weapons]],
 					["g"] = {
-						{
+						{	-- The Perforator
 							["recipeID"] = 73621--[[The Perforator]]
 						},
-						{
+						{	-- Carnelian Spikes
 							["recipeID"] = 73620--[[Carnelian Spikes]]
 						}
 					}
 				},
-				{
+				{	-- Toys & Prisms
 					["categoryID"] = 845--[[Toys & Prisms]],
 					["g"] = {
-						{
+						{	-- Fire Prism
 							["recipeID"] = 73478--[[Fire Prism]]
 						},
-						{
+						{	-- Stardust
 							["recipeID"] = 73622--[[Stardust]]
 						}
 					}

@@ -9,7 +9,7 @@ _.Craftables =
 				i(9149),	-- Philosopher's Stone
 			}),
 		}),
-		n(-181, { -- Blacksmithing
+		n(-181, { 	-- Blacksmithing
 			n(-319, { 	-- Weapons
 				un(8, i(12776)),	-- Enchanted Battlehammer
 				un(8, i(12794)),	-- Masterwork Stormhammer
@@ -218,13 +218,13 @@ _.Craftables =
 				i(12633),	-- Whitesoul Helm
 			}),
 		}),
-		n(-182, { -- Enchanting
+		n(-182, { 	-- Enchanting
 			i(11288),	-- Greater Magic Wand
 			i(11290),	-- Greater Mystic Wan
 			i(11287),	-- Lesser Magic Wand
 			i(11289),	-- Lesser Mystic Wand
 		}),
-		n(-183, { -- Engineering
+		n(-183, { 	-- Engineering
 			i(10644),	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
 			i(18282),	-- Core Marksman Rifle
 			i(16004),	-- Dark Iron Rifle
@@ -279,7 +279,7 @@ _.Craftables =
 				i(18639),	-- Ultra-Flash Shadow Reflector
 			}),
 		}),
-		n(-185, { -- Inscription
+		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
 				sp(59487, {	-- Arcane Tarot
@@ -338,7 +338,7 @@ _.Craftables =
 				i(43654),	-- Tome of the Dawn
 			}),
 		}),
-		n(-186, { -- Jewelcrafting
+		n(-186, { 	-- Jewelcrafting
 			filter(51, {	-- Neck
 				i(20830),	-- Amulet of the Moon
 				i(21755),	-- Aquamarine Pendant of the Warrior
@@ -356,9 +356,10 @@ _.Craftables =
 				i(21764),	-- Ruby Pendant of Fire
 				i(21790),	-- Sapphire Pendant of Winter Night
 				i(21933),	-- Thick Bronze Necklace
+				un(1, i(20956)),	-- Silver Rose Pendant
 			}),
 		}),
-		n(-187, { -- Leatherworking
+		n(-187, {	-- Leatherworking
 			n(-322, {	-- Cloak
 				un(8, i(18509)),	-- Chromatic Cloak
 				un(8, i(6466)),		-- Deviate Scale Cloak
@@ -568,7 +569,7 @@ _.Craftables =
 				i(8185),	-- Turtle Scale Leggings
 			}),
 		}),
-		n(-190, { -- Tailoring
+		n(-190, { 	-- Tailoring
 			un(8, i(18405)),	-- Belt of the Archmage		
 			un(8, i(19684)),	-- Bloodvine Boots
 			un(8, i(19683)),	-- Bloodvine Leggings

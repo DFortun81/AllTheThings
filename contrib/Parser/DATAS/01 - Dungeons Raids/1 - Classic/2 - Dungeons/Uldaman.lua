@@ -289,6 +289,7 @@ _.Instances =
 					})),
 					o(141979, {				-- Ancient Treasure (No Localization)
 						["groups"] = {
+							i(20976),	-- Design: Citrine Pendant of Golden Healing
 							dr(4.0, i( 4063)),	-- Imperial Leather Gloves
 							dr(4.0, i( 7475)),	-- Regal Cuffs
 							dr(3.0, i(  866)),	-- Monk's Staff

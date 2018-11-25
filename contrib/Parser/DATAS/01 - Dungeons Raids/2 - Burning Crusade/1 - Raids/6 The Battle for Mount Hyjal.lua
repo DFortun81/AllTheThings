@@ -9,6 +9,61 @@ _.Instances =
 			inst(750, { 	-- The Battle for Mount Hyjal
 				["groups"] = {
 					n(-2, {	-- Vendors
+						n(23437, {	-- Indormi <Keeper of Ancient Gem Lore>
+							i(32274),	-- Design: Bold Crimson Spinel
+							i(32282),	-- Design: Brilliant Crimson Spinel
+							i(32281, {	-- Design: Brilliant Crimson Spinel [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
+							i(32290, {	-- Design: Brilliant Crimson Spinel [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
+							i(32308),	-- Design: Deadly Pyrestone
+							i(32277),	-- Design: Delicate Crimson Spinel
+							i(32283, {	-- Design: Delicate Crimson Spinel [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
+							i(35765),	-- Design: Forceful Seaspray Emerald
+							i(32306),	-- Design: Glinting Shadowsong Amethyst
+							i(32300, {	-- Design: Glinting Shadowsong Amethyst [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
+							i(32312),	-- Design: Jagged Seaspray Emerald
+							i(32304),	-- Design: Potent Pyrestone
+							i(32311),	-- Design: Purified Shadowsong Amethyst
+							i(32302, {	-- Design: Purified Shadowsong Amethyst [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
+							i(35763),	-- Design: Quick Lionseye
+							i(32310),	-- Design: Radiant Seaspray Emerald
+							i(35762),	-- Design: Reckless Pyrestone
+							i(32305, {	-- Design: Reckless Pyrestone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
+							i(32309),	-- Design: Regal Seaspray Emerald
+							i(32292),	-- Design: Rigid Empyrean Sapphire
+							i(32296, {	-- Design: Rigid Empyrean Sapphire [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
+							i(32299, {	-- Design: Shifting Shadowsong Amethyst [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
+							i(32291),	-- Design: Smooth Lionseye
+							i(32293, {	-- Design: Smooth Lionseye [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
+							i(32286),	-- Design: Solid Empyrean Sapphire
+							i(32287),	-- Design: Sparkling Empyrean Sapphire
+							i(32288, {	-- Design: Sparkling Empyrean Sapphire [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
+							i(35764),	-- Design: Steady Seaspray Emerald
+							i(32284),	-- Design: Subtle Lionseye
+							i(32294, {	-- Design: Subtle Lionseye [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
+							i(32301),	-- Design: Timeless Shadowsong Amethyst
+						}),
 						n(23381, {	-- Tydormu
 							-- Tier Gloves
 							i(31092, {	-- Gloves of the Forgotten Conqueror
@@ -131,6 +186,24 @@ _.Instances =
 								i(31028),	-- Slayer's Chestguard
 							}),
 						})
+					}),
+					n(-1, {	-- Common Boss Drops
+						["g"] = {
+							i(32285),	-- Design: Flashing Crimson Spinel
+							i(32303),	-- Design: Inscribed Pyrestone
+							i(32295),	-- Design: Mystic Lionseye
+							i(32298),	-- Design: Shifting Shadowsong Amethyst
+							i(32297),	-- Design: Sovereign Shadowsong Amethyst
+							i(32289),	-- Design: Stormy Empyrean Sapphire
+							i(32307),	-- Design: Veiled Shadowsong Amethyst
+						},
+						["crs"] = {
+							1577,	-- Rage Winterchill
+							1578,	-- Anetheron
+							1579,	-- Kaz'rogal
+							1580,	-- Azgalor
+							1581,	-- Archimonde
+						},
 					}),
 					n( 0, {	-- Zone Drop
 						i(32590),	-- Nethervoid Cloak

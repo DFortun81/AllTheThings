@@ -66,7 +66,7 @@ _.Craftables =
 				i(31080),	-- Mercurial Stone
 			}),
 		}),
-		n(-181, { -- Blacksmithing
+		n(-181, { 	-- Blacksmithing
 			n(-319, { 	-- Weapons
 				un(5, i(28432)),	-- Black Planar Edge
 				un(5, i(28427)),	-- Blazefury
@@ -192,7 +192,7 @@ _.Craftables =
 				i(31367),	-- Wildguard Leggings
 			}),
 		}),
-		n(-183, { -- Engineering
+		n(-183, { 	-- Engineering
 			i(23746),	-- Adamantite Rifle
 			i(23742),	-- Fel Iron Musket
 			i(23747),	-- Felsteel Boomstick
@@ -232,7 +232,7 @@ _.Craftables =
 			i(23824),	-- Rocket Boots Xtreme
 			i(35581),	-- Rocket Boots Xtreme Lite
 		}),
-		n(-185, { -- Inscription
+		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
 				sp(59503, {	-- Greater Darkmoon Card
@@ -255,14 +255,17 @@ _.Craftables =
 				i(43666),	-- Hellfire Tome
 			}),
 		}),
-		n(-186, { -- Jewelcrafting
-			i(24123),	-- Circlet of Arcane Might
-			i(24122),	-- Coronet of Verdant Flame
-			i(32776),	-- Crown of the Sea Witch
-			i(21774),	-- Emerald Crown of Destruction
-			i(20954),	-- Heavy Iron Knuckles
-			i(20832),	-- Moonsoul Crown
-			i(20969),	-- Ruby Crown of Restoration
+		n(-186, { 	-- Jewelcrafting
+			n(-320, {	-- Head
+				i(24123),	-- Circlet of Arcane Might
+				i(24122),	-- Coronet of Verdant Flame
+				i(32776),	-- Crown of the Sea Witch
+				i(21774),	-- Emerald Crown of Destruction
+				i(20954),	-- Heavy Iron Knuckles
+				i(20832),	-- Moonsoul Crown
+				i(20969),	-- Ruby Crown of Restoration
+				un(1, i(21780)),	-- Blood Crown
+			}),
 			filter(51, {	-- Neck
 				i(24114),	-- Braided Eternium Chain
 				i(24121),	-- Chain of the Twilight Owl
@@ -277,9 +280,10 @@ _.Craftables =
 				i(24095),	-- Pendant of Withering
 				i(24077),	-- Thick Adamantite Necklace
 				i(24106),	-- Thick Felsteel Necklace
+				un(1, i(21793)),	-- Arcanite Sword Pendant
 			}),
 		}),
-		n(-187, { -- Leatherworking
+		n(-187, { 	-- Leatherworking
 			n(-322, { 	-- Cloak
 				i(33122),	-- Cloak of Darkness
 			}),
@@ -395,7 +399,7 @@ _.Craftables =
 				i(29509),	-- Windstrike Gloves
 			}),
 		}),
-		n(-190, { -- Tailoring
+		n(-190, { 	-- Tailoring
 			i(24267),	-- Battlecast Hood
 			i(24266),	-- Spellstrike Hood
 			i(24264),	-- Whitemend Hood

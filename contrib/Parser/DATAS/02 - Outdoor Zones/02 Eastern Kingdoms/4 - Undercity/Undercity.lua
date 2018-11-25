@@ -231,6 +231,9 @@ _.Zones =
 						h(i(150744)),	-- Walking Kalimdor with the Earthmother Toy
 						h(i(150745)),	-- The Azeroth Campaign Toy
 					}),
+					n(4775, {	-- Felicia Doan <Trade Supplies>
+						i(20975),	-- Design: The Jade Eye
+					}),
 					n(8403, {	-- Jeremiah Payson <Cockroach Vendor>
 						i(10393)	-- Undercity Cockroach
 					}),

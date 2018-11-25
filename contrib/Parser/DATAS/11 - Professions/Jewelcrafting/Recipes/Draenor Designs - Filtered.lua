@@ -1,9 +1,9 @@
 profession(755, {	-- Jewelcrafting
 	filter(200, {
-		{
+		{	-- Draenor Designs
 			["categoryID"] = 373--[[Draenor Designs]],
 			["g"] = {
-				{
+				{	-- Reagents and Research
 					["categoryID"] = 374--[[Reagents and Research]],
 					["g"] = {
 						{
@@ -12,15 +12,17 @@ profession(755, {	-- Jewelcrafting
 						{
 							["recipeID"] = 176087--[[Secrets of Draenor Jewelcrafting]]
 						},
-						{
+						{	
 							["recipeID"] = 170700--[[Taladite Crystal]]
 						},
-						{
-							["recipeID"] = 170832--[[Taladite Crystal]]
+						{	-- Taladite Crystal
+							["recipeID"] = 170832--[[Taladite Crystal]],
+							["u"] = 15,
+							-- Beleive this is tied to the non-JC users
 						}
 					}
 				},
-				{
+				{	-- Jewelry Enhancers
 					["categoryID"] = 375--[[Jewelry Enhancers]],
 					["g"] = {
 						{
@@ -37,7 +39,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Jewelry
 					["categoryID"] = 376--[[Jewelry]],
 					["g"] = {
 						{
@@ -87,7 +89,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Gems
 					["categoryID"] = 377--[[Gems]],
 					["g"] = {
 						{
@@ -137,7 +139,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Other
 					["categoryID"] = 378--[[Other]],
 					["g"] = {
 						{

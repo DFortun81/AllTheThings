@@ -1275,6 +1275,15 @@ _.Zones =
 					n(29587, {	-- Dread Commander Thalanor
 						i(40775),	-- Winged Steed of the Ebon Blade
 					}),
+					{	-- Jase Farlane <Trade Supplies>
+						["npcID"] = 12941,	-- Jase Farlane <Trade Supplies>
+						["coord"] = { 74.31, 50.95 },
+						["g"] = {
+							{	-- Design: Ring of Bitter Shadows
+								["itemID"] = 21954,	-- Design: Ring of Bitter Shadows
+							},
+						},
+					},
 					n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
 						{
 							["itemID"] = 136801,	-- Divine Tome: Contemplation [Paladin]

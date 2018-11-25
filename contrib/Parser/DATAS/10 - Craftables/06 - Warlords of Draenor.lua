@@ -19,7 +19,7 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-181, { -- Blacksmithing
+		n(-181, { 	-- Blacksmithing
 			n(-319, { -- Weapons
 				WOD_CRAFTED_ITEM(116647), -- Steelforged Shield
 				WOD_CRAFTED_ITEM(120261), -- Steelforged Aegis
@@ -43,7 +43,7 @@ _.Craftables =
 				i(116425), -- Smoldering Greaves
 			}),
 		}),
-		n(-183, { -- Engineering
+		n(-183, { 	-- Engineering
 			n(-494, { -- Miscellaneous
 				n(77789, { -- Blingtron 5000
 					i(113258, { -- Blingtron 5000 Gift Package
@@ -71,7 +71,7 @@ _.Craftables =
 			WOD_CRAFTED_ITEM(109172),	-- Plasma Mechshades
 			WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades
 		}),
-		n(-185, { -- Inscription
+		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
 				sp(163294, {	-- Darkmoon Card of Draenor
@@ -105,7 +105,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
 			}),
 		}),
-		n(-187, { -- Leatherworking
+		n(-187, { 	-- Leatherworking
 			n(-322, { 	-- Cloak
 				WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak
 				WOD_CRAFTED_ITEM(116174),	-- Nimble Burnished Cloak
@@ -138,7 +138,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(116191),	-- Wayfaring Tunic
 			}),
 		}),
-		n(-190, { -- Tailoring
+		n(-190, { 	-- Tailoring
 			n(-322, {	-- Cloak
 				i(128012, { -- Hexweave Essence
 					WOD_CRAFTED_ITEM(114819),	-- Brilliant Hexweave Cloak

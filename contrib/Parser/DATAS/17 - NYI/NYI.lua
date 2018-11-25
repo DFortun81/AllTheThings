@@ -52,8 +52,6 @@ _.NeverImplemented =
 	un(1, i(146799)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 	un(1, i(115371)),	-- [PLACEHOLDER TIER 3 ITEM]
 	un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
-	un(1, i(23143)),	-- Design: Purified Shadow Draenite (used version is 23145)
-	un(1, i(28291)),	-- Design: Smooth Golden Draenite (used version is 23149)
 	un(1, i(41689)),	-- Design: Reckless Monarch Topaz (used version is 41690)
 	un(1, i(41694)),	-- Design: Energized Forest Emerald (used version is 41692)
 	un(1, i(41703)),	-- Design: Regal Forest Emerald (used version is 41697)

@@ -16,6 +16,10 @@ _.Zones =
 						i(12233),	-- Recipe: Mystery Stew
 					}),
 					nh(9636, {	-- Kireena <Trade Goods>
+						i(20973, {	-- Design: Blazing Citrine Ring (Removed in Cata and available through trainer now)
+							["collectible"] = false,
+							["description"] = "Design has been removed but recipe is still available at trainer.",
+						}),
 						i( 7114),	-- Pattern: Azure Silk Gloves
 						i(12232),	-- Recipe: Carrion Surprise
 						i(12240),	-- Recipe: Heavy Kodo Stew

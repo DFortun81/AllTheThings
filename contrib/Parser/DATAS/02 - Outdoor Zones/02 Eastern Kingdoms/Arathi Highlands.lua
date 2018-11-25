@@ -970,6 +970,10 @@ _.Zones =
 					}),
 					nh(2821, {	-- Keena <Trade Goods>
 						i(21942),	-- Design: Ruby Crown of Restoration
+						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge (Removed in Cata and available through trainer now)
+							["collectible"] = false,
+							["description"] = "Design has been removed but recipe is still available at trainer.",
+						}),
 						i(5973),	-- Pattern: Barbaric Leggings
 						i(3682),	-- Recipe: Curiously Tasty Omelet
 						i(12228),	-- Recipe: Roast Raptor

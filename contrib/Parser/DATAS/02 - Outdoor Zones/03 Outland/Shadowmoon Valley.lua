@@ -1277,6 +1277,11 @@ _.Zones =
 				}),
 				n(0,    {	-- Zone Drop
 					["groups"] = {
+						i(34689, {	-- Design: Chaotic Skyfire Diamond
+							["crs"] = {
+								19768,  -- Coilskar Siren
+							},
+						}),
 						i(24158, {  -- Design: Khorium Band of Shadows
 							["crs"] = {
 								19826,  -- Dark Conclave Shadowmancer

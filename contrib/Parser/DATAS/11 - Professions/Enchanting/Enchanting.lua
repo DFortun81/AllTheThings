@@ -38,7 +38,6 @@ profession(333, { -- Enchanting
 		i(11225),	-- Formula: Enchant Bracer - Greater Stamina [Random Drop - Should probably be summarized: https://www.wowhead.com/item=11225/formula-enchant-bracer-greater-stamina]
 		i(11204),	-- Formula: Enchant Bracer - Greater Versatility [Random Drop - Should probably be summarized: https://www.wowhead.com/item=11204/formula-enchant-bracer-greater-versatility]
 		-- i(19447),	-- Formula: Enchant Bracer - Healing Power [From 3 Vendors - Done]
-		un(1, i(11163)),	-- Formula: Enchant Bracer - Lesser Dodge [RFG]
 		-- i(22531),	-- Formula: Enchant Bracer - Superior Healing [From 1 Vendor - Done]
 		-- i(24000),	-- Formula: Enchant Bracer - Superior Healing [From 1 Vendor - Done]
 		i(16251),	-- Formula: Enchant Bracer - Superior Stamina [Random Drop - Should probably be summarized: https://www.wowhead.com/item=16251/formula-enchant-bracer-superior-stamina]

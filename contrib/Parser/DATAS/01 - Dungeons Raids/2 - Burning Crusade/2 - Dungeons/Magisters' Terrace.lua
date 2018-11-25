@@ -61,6 +61,12 @@ _.Instances =
 								ach(661),	-- Magister's Terrace
 								i(35504),	-- Phoenix Hatchling
 								i(35275), 	-- Orb of Sin'dorei
+								i(35305),	-- Design: Brilliant Living Ruby
+								i(24195, {	-- Design: Brilliant Living Ruby [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+									["collectible"] = false,
+								}),
+								i(35307),	-- Design: Rigid Star of Elune
+								i(35304),	-- Design: Solid Star of Elune
 								i(35308),	-- Pattern: Unyielding Bracers
 								i(35309),	-- Pattern: Unyielding Girdle
 								i(35296),	-- Plans: Adamantite Weapon Chain
@@ -152,6 +158,12 @@ _.Instances =
 									}),
 									i(35504),	-- Phoenix Hatchling (PET!)
 									i(35275), 	-- Orb of Sin'dorei (TOY!)
+									i(35305),	-- Design: Brilliant Living Ruby
+									i(24195, {	-- Design: Brilliant Living Ruby [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+										["collectible"] = false,
+									}),
+									i(35307),	-- Design: Rigid Star of Elune
+									i(35304),	-- Design: Solid Star of Elune
 									i(35308),	-- Pattern: Unyielding Bracers
 									i(35309),	-- Pattern: Unyielding Girdle
 									i(35296),	-- Plans: Adamantite Weapon Chain

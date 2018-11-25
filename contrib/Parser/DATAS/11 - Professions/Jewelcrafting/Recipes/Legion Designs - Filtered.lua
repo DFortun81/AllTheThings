@@ -1,9 +1,9 @@
 profession(755, {	-- Jewelcrafting
 	filter(200, {
-		{
+		{	-- Legion Designs
 			["categoryID"] = 464--[[Legion Designs]],
 			["g"] = {
-				{
+				{	-- Rings
 					["categoryID"] = 465--[[Rings]],
 					["g"] = {
 						{
@@ -80,7 +80,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Necklaces
 					["categoryID"] = 507--[[Necklaces]],
 					["g"] = {
 						{
@@ -229,7 +229,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Gems
 					["categoryID"] = 466--[[Gems]],
 					["g"] = {
 						{
@@ -282,7 +282,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Crowns
 					["categoryID"] = 535--[[Crowns]],
 					["g"] = {
 						{
@@ -323,7 +323,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Other
 					["categoryID"] = 467--[[Other]],
 					["g"] = {
 						{
@@ -337,7 +337,7 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				{
+				{	-- Mass Prospecting
 					["categoryID"] = 505--[[Mass Prospecting]],
 					["g"] = {
 						{

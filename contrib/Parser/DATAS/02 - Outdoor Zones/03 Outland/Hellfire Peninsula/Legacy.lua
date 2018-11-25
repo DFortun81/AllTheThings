@@ -51,6 +51,84 @@ _.Zones =
 							un(40, qa( 47022)),	-- Protection: Aid of the Illidari
 							un(40, qa( 46314)),	-- Vengeance: Seeking Kor'vas
 						}),
+						n(-2, {	-- Vendors
+							nh(18751, {	-- Kalaen <Jewelcrafting Trainer>
+								["g"] = {
+									i(23131, {	-- Design: Bold Blood Garnet (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23130, {	-- Design: Brilliant Blood Garnet (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23148, {	-- Design: Brilliant Blood Garnet (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(28596, {	-- Design: Delicate Blood Garnet (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23137, {	-- Design: Glinting Shadow Draenite (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23135, {	-- Design: Inscribed Flame Spessarite (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23141, {	-- Design: Jagged Deep Peridot (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23140, {	-- Design: Radiant Deep Peridot (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23152, {	-- Design: Solid Azure Moonstone (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23147, {	-- Design: Sovereign Shadow Draenite (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23144, {	-- Design: Timeless Shadow Draenite (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+								},
+								["description"] = "This vendor's designs have been removed but recipes are still available at trainer.",
+							}),
+							na(18774, {	-- Tatiana <Jewelcrafting Trainer>
+								["g"] = {
+									i(23131, {	-- Design: Bold Blood Garnet (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23130, {	-- Design: Brilliant Blood Garnet (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23148, {	-- Design: Brilliant Blood Garnet (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(28596, {	-- Design: Delicate Blood Garnet (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23137, {	-- Design: Glinting Shadow Draenite (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23135, {	-- Design: Inscribed Flame Spessarite (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23141, {	-- Design: Jagged Deep Peridot (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23140, {	-- Design: Radiant Deep Peridot (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23152, {	-- Design: Solid Azure Moonstone (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23147, {	-- Design: Sovereign Shadow Draenite (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+									i(23144, {	-- Design: Timeless Shadow Draenite (Removed and available through trainer now)
+										["collectible"] = false,
+									}),
+								},
+								["description"] = "This vendor's designs have been removed but recipes are still available at trainer.",
+							}),
+						}),
 					}),
 				},
 			},
