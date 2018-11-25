@@ -146,7 +146,6 @@ _.Zones =
 											["qg"] = 129907,	-- Zul the Prophet
 											["sourceQuests"] = { 49905 },	-- Plot Twist
 											--["icon"] = "Interface\\Addons\\AllTheThings\\assets\\star",	-- Quest Finale
-											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),
 										q(49491, {	-- Fuel for the Voodoo	
 											["qg"] = 130706,	-- Izita's Spirit
@@ -261,7 +260,6 @@ _.Zones =
 											},
 											["qg"] = 127837,	-- Kaza'jin the Wavebinder
 											["sourceQuests"] = { 49309 },	-- Thunder's Fall
-											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),
 										q(49309, {	-- Thunder's Fall
 											["sourceQuests"] = {
@@ -304,7 +302,6 @@ _.Zones =
 												47963,	-- The Ancient One
 												47522,	-- The Hunter
 											},
-											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),	
 										q(47518, {	-- Raal	
 											["groups"] = {
@@ -369,7 +366,6 @@ _.Zones =
 										q(47740, {	-- House of the King  [Note: Final Quest needed to trigger criteria]
 											["qg"] = 124655,	-- King Rastakhan
 											["sourceQuests"] = { 47737 },	-- The Temple of Rezan
-											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),
 										q(51680, {	-- In Bwonsamdi's Shadow	
 											["qg"] = 124083,	-- Zolani
@@ -455,7 +451,6 @@ _.Zones =
 										q(50963, {	-- Of Dark Deeds and Dark Days [Note: Final Quest needed to trigger criteria]
 											["qg"] = 129757,	-- King Rastakhan
 											["sourceQuests"] = { 49901 },	-- Atal'Dazar: Yazma the Fallen Priestess
-											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),
 										q(49424, {	-- The Full Prophecy	
 											["qg"] = 129561,	-- Wardruid Loti

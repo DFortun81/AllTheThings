@@ -50,7 +50,6 @@ _.Zones =
 									q(47188, {	-- The Aid of the Loa [Note: Final Quest needed to trigger criteria]
 										["qg"] = 121288,	-- Princess Talanji
 										["sourceQuests"] = { 47263 },	-- A Time of Revelation
-										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 									}),	
 								},
 							}),
@@ -143,7 +142,6 @@ _.Zones =
 									q(47250, {	-- We'll Meet Again [Note: Final Quest needed to trigger criteria]
 										["qg"] = 122766,	-- Bwonsamdi
 										["sourceQuests"] = { 47249 },	-- Soulbound
-										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 									}),	
 								},
 							}),
@@ -204,7 +202,6 @@ _.Zones =
 									q(49082, {	-- Upward and Onward	
 										["qg"] = 128276,	-- Jo'chunga
 										["sourceQuests"] = { 49081 },	-- To Kill a Loa
-										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 									}),
 									q(49406, {	-- Zalamar Slaughter
 										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
@@ -293,7 +290,6 @@ _.Zones =
 									q(49160, {	-- Torga's Eternal Return  [Note: Final Quest needed to trigger criteria]
 										["qg"] = 127960,	-- Lashk
 										["sourceQuests"] = { 49136 },	-- Jungo, Herald of G'huun
-										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 									}),	
 									q(51689, {	-- Tortollan Rescue	
 										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
@@ -364,12 +360,10 @@ _.Zones =
 									q(48090, {	-- Krag'wa's Chosen	[Note: One of 3 final Quest needed to trigger criteria]
 										["qg"] = 125317,	-- Shadow Hunter Narez
 										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
-										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 									}),
 									q(48093, {	-- Nagating the Threat [Note: One of 3 final Quest needed to trigger criteria]
 										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
-										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 									}),	
 									q(47525, {	-- Staying Hidden	
 										["qg"] = 122991,	-- Shadow Hunter Mutumba
@@ -398,7 +392,6 @@ _.Zones =
 									q(48092, {	-- Vengeance of the Frogs [Note: One of 3 final Quest needed to trigger criteria]
 										["qg"] = 125317,	-- Shadow Hunter Narez
 										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
-										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 									}),
 									q(52477, {	-- WANTED: Ayame	
 										["qg"] = 131987,	-- Crez
@@ -448,7 +441,6 @@ _.Zones =
 									q(47602, {	-- Ready For Action	[Note: Final Quest needed to trigger criteria]
 										["qg"] = 123878,	-- Patch
 										["sourceQuests"] = { 47601 },	-- Field Evaluation
-										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 									}),	
 									q(47631, {	-- Rendezvous with the Libation	
 										["qg"] = 131213,	-- Rokhan
@@ -507,7 +499,6 @@ _.Zones =
 										},
 										["qg"] = 125024,	-- Kajosh
 										["sourceQuests"] = { 47924 },	-- Profanity Filter
-										["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 									}),	
 
 								},

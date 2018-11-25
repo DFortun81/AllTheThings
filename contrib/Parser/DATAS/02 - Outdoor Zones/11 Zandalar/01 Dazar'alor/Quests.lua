@@ -27,7 +27,6 @@ _.Zones =
 								q(52131, {	-- We Need Each Other
 									["qg"] = 133050,	-- Princess Talanji
 									["sourceQuests"] = { 52139 },	-- To Matters at Hand
-									["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 								}),
 								q(46957, {	-- Welcome to Zuldazar
 									["qg"] = 132332,	-- Princess Talanji
@@ -66,7 +65,6 @@ _.Zones =
 										q(50881, {	-- Royal Report	[Note: Final Quest needed to trigger criteria]
 											["qg"] = 135441,	-- Zolani
 											["sourceQuests"] = { 46927, 46928, },	-- Punishment of Tal'aman, Punishment of Tal'farrak
-											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),
 										q(46926, {	-- Shakedown	
 											["qg"] = 135441,	-- Zolani
@@ -123,7 +121,6 @@ _.Zones =
 										q(47439, {	-- Gonk, Lord of the Pack f[Note: One of two final Quest needed to trigger criteria]
 											["qg"] = 126560,	-- Wardruid Loti
 											["sourceQuests"] = { 47438 },	-- Picking a Side
-											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),
 										q(47433, {	-- Offensively Defensive
 											["groups"] = {
@@ -142,7 +139,6 @@ _.Zones =
 										q(47440, {	-- Pa'ku, Master of Winds [Note: One of two final Quest needed to trigger criteria]
 											["qg"] = 126564,	-- Hexlord Raal
 											["sourceQuests"] = { 47438 },	-- Picking a Side
-											["description"] = "|CFFFF0000Right-clicking this quest will bring up the entire quest chain!",
 										}),	
 										q(47441, {	-- Pests	
 											["qg"] = 127665,	-- Nokano
