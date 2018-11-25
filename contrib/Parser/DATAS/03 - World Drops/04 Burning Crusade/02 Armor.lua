@@ -179,6 +179,7 @@ _.WorldDrops =
 					i(31231),	-- Feathered Sash
 					i(31283),	-- Sash of Sealed Fate
 					i(31293),	-- Girdle of Gale Force
+					i(24886),	-- Skettis Belt
 				}),
 				n(-329, { -- Legs
 					i(30727),	-- Gilded Trousers of Benediction
