@@ -1107,7 +1107,7 @@ local function GetCachedSearchResults(search, method, ...)
 							end
 						end
 					end
-					if #temp < 1 or not GetDataMember("OnlyShowRelevantDatabaseLocations") or GetDataMember("IgnoreAllFilters") then
+					if (#temp < 1 and not isCreature) or (not GetDataMember("OnlyShowRelevantDatabaseLocations") or GetDataMember("IgnoreAllFilters")) then
 						for i,j in ipairs(unfiltered) do
 							tinsert(temp, j);
 						end
