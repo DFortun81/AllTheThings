@@ -3075,14 +3075,12 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 										end
 										
 										-- Insert into the display.
-										local left;
+										local left = "  ";
+										if j.u then left = left .. "|T" .. L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[j.u][1]] .. ":0|t"; end
 										if j.icon then
-											left = "  |T" .. j.icon .. ":0|t ";
+											left = left .. "|T" .. j.icon .. ":0|t ";
 										elseif j.itemID then
 											cache.items = nil;
-											left = "  ";
-										else
-											left = "  ";
 										end
 										if not j.text then cache.items = nil; end
 										tinsert(items, { left .. (j.text or RETRIEVING_DATA), right });
