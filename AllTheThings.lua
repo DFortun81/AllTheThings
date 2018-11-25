@@ -2016,9 +2016,15 @@ app.UpdateSearchResults = function(searchResults)
 end
 
 -- Map Information Lib
-local function AddTomTomWaypoint(group)
+local function AddTomTomWaypoint(group, auto)
 	if TomTom and group.visible then
 		if group.coords or group.coord then
+			local waypointFilters = GetDataMember("WaypointFilters")
+			for headerID, enabled in pairs(waypointFilters) do
+				if auto and (app.RecursiveIsDescendantOfParentWithValue(group, "npcID", headerID) and not enabled) then
+					return
+				end
+			end
 			local opt = {
 				title = group.text or group.link,
 				persistent = nil,
@@ -2046,7 +2052,7 @@ local function AddTomTomWaypoint(group)
 		end
 		if group.g then
 			for i,subgroup in ipairs(group.g) do
-				AddTomTomWaypoint(subgroup);
+				AddTomTomWaypoint(subgroup, auto);
 			end
 		end
 	end
@@ -2267,6 +2273,9 @@ local function OpenMiniList(field, id, label)
 				if header.collectible then
 					if header.collected then header.progress = header.progress + 1; end
 					app.MiniListHeader.total = app.MiniListHeader.total + 1;
+					if GetDataMember("AutomateTomTomWaypoints", true) then
+						AddTomTomWaypoint(header, true);
+					end
 				end
 			end
 			
@@ -5787,6 +5796,7 @@ app.UnobtainableItemFilter = app.NoFilter;
 app.SeasonalFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowIncompleteQuests = app.Filter;
+app.AutomateTomTomWaypoints = app.NoFilter;
 
 -- Recursive Checks
 app.RecursiveClassAndRaceFilter = function(group)
@@ -5800,6 +5810,18 @@ app.RecursiveUnobtainableFilter = function(group)
 	if app.UnobtainableItemFilter(group.u) and app.SeasonalFilter(group.u) then
 		if group.parent then return app.RecursiveUnobtainableFilter(group.parent); end
 		return true;
+	end
+	return false;
+end
+app.RecursiveIsDescendantOfParentWithValue = function(group, field, value)
+	if group then
+		if group[field] and group[field] == value then
+			return true
+		else
+			if group.parent then
+				return app.RecursiveIsDescendantOfParentWithValue(group.parent, field, value)
+			end
+		end
 	end
 	return false;
 end
@@ -6606,7 +6628,7 @@ local function CreateMiniListForGroup(group)
 		UpdateGroups(popout.data, popout.data.g, 1);
 		newItem.visible = true;
 	end
-	AddTomTomWaypoint(popout.data);
+	AddTomTomWaypoint(popout.data, false);
 	if not popout.data.expanded then
 		ExpandGroupsRecursively(popout.data, true, true);
 	end
@@ -10295,6 +10317,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
+	GetDataMember("WaypointFilters", {});
 	
 	-- Cache your character's profession data.
 	local recipes = GetDataMember("CollectedSpellsPerCharacter", {});
@@ -10412,6 +10435,11 @@ app.events.VARIABLES_LOADED = function()
 	else
 	   app.SeasonalFilter = app.NoFilter
 	end
+	if GetDataMember("AutomateTomTomWaypoints", false) then
+		app.AutomateTomTomWaypoints = app.NoFilter
+	else
+		app.AutomateTomTomWaypoints = app.Filter
+	end
 	if GetDataMember("RequireBindingFilter", false) then
 		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
 	else
@@ -10456,6 +10484,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("AutoMiniList", true);
 	GetDataMember("AutoProfessionMiniList", true);
 	GetDataMember("AutoMinimize", true);
+	GetDataMember("AutomateTomTomWaypoints", false);
 	
 	GetDataMember("ShowAchievementID", false);
 	GetDataMember("ShowArtifactID", false);

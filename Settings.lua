@@ -389,7 +389,7 @@ local function createGeneralFrame(parent)
 	addObject(elm,spec)
 	
 	local specFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-specFrame", child, "ThinBorderTemplate");
-	specFrame:SetSize(child:GetWidth(),80)
+	specFrame:SetSize(child:GetWidth(),90)
 	specFrame:SetPoint("TOPLEFT",spec,0,-frameSpacer);
 	specFrame:SetAlpha(0.3);
 	addObject(elm,specFrame)
@@ -547,6 +547,73 @@ local function createGeneralFrame(parent)
 	autoMin:SetPoint("TOPLEFT",autoRaidAssistant,0,-frameSpacer)
 	autoMin.Label:SetWidth(autoMin.Label:GetWidth() * 1.5);
 	addObject(elm,autoMin)
+	
+	-- TomTom Integration
+	local tomtomOptions = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+	tomtomOptions:SetPoint("TOPLEFT", otherFrame, 0, -(otherFrame:GetHeight() + frameSpacer));
+	tomtomOptions:SetText("TomTom Options");
+	addObject(elm,tomtomOptions);
+	
+	local tomtomOptionsFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-tomtomFrame", child, "ThinBorderTemplate");
+	tomtomOptionsFrame:SetSize(child:GetWidth(),130);
+	tomtomOptionsFrame:SetPoint("TOPLEFT",tomtomOptions,0,-frameSpacer);
+	tomtomOptionsFrame:SetAlpha(0.3);
+	addObject(elm,tomtomOptionsFrame);
+	
+	-- TomTom waypoint automation
+	local autoLoadTomTomWaypoints = createCheckBox("Automatically Set TomTom Waypoints", child, function(self)
+			app.SetDataMember("AutomateTomTomWaypoints", self:GetChecked());
+		end,
+		function(self) 
+			self:SetChecked(app.GetDataMember("AutomateTomTomWaypoints", false));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want TomTom waypoints to be automatically added when entering new maps.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	autoLoadTomTomWaypoints:SetPoint("TOPLEFT",tomtomOptions,5,-frameSpacer);
+	addObject(elm,autoLoadTomTomWaypoints);
+	
+	local tomtomSubFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-tomtomSubFrame", child, "ThinBorderTemplate");
+	tomtomSubFrame:SetSize(tomtomOptionsFrame:GetWidth()-20,tomtomOptionsFrame:GetHeight()-50);
+	tomtomSubFrame:SetPoint("TOPLEFT",autoLoadTomTomWaypoints,5,-30);
+	tomtomSubFrame:SetAlpha(0.3);
+	addObject(elm,tomtomSubFrame);
+	
+	-- TomTom waypoint filters
+	local last = tomtomSubFrame;
+	local waypointFilterNames = app.L("NPC_ID_NAMES");
+	local last = tomtomSubFrame;
+	local x = 5;
+	local y = 5
+	local count = 0;
+	for key,value in ipairs({ -228, -17, -16, -2 }) do
+		local filter = createCheckBox(waypointFilterNames[value], child, function(self)
+			local val = app.GetDataMember("WaypointFilters")
+			val[value] = self:GetChecked();
+			app.SetDataMember("WaypointFilters", val);
+		end, 
+		function(self)
+			local val = app.GetDataMember("WaypointFilters");
+			if(val[value] == nil) then
+				val[value] = true
+				app.SetDataMember("WaypointFilters", val);
+			end
+			self:SetChecked(val[value]);
+		end);
+		filter:SetPoint("TOPLEFT",last,x,-y)
+		addObject(elm,filter)
+		last = filter
+		x = 0;
+		y = frameSpacer;
+		count = count + 1;
+		if count == 2 then
+			x = tomtomSubFrame:GetWidth()/2
+			y = 5
+			last = tomtomSubFrame
+		end
+	end
 end
 
 local function createAccountFrame(parent)
@@ -2388,7 +2455,7 @@ function set:profileLoad(str)
 		local itemFilters = app.GetPersonalDataMember("ItemFilters");
 		for name,val in pairs(profile) do
 			itemFilters[name] = val;
-		end		
+		end
 		refreshUI();
 		app:RefreshData();
 	else
