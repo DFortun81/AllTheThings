@@ -778,7 +778,7 @@ _.Zones =
 						i(61124),	-- Bangalash's Claw
 						i(131202),	-- Monnion of the White Tiger
 						un(2, i(17686)),	-- Master Hunter's Bow
-						un(2, i(17687)),	-- Master Hunter's Rifle
+						i(17687),	-- Master Hunter's Rifle
 					})),
 --[[
 					qg(63194, q(31728)),	-- Bill Buckler
