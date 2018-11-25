@@ -27,7 +27,7 @@ profession(755, {	-- Jewelcrafting
 						{	-- Wild Jade
 							["recipeID"] = 131688--[[Wild Jade]]
 						},
-						{
+						{	-- Serpent's Heart
 							["recipeID"] = 140050--[[Serpent's Heart]]
 						}
 					}
@@ -35,16 +35,16 @@ profession(755, {	-- Jewelcrafting
 				{	-- Blue Gems
 					["categoryID"] = 821--[[Blue Gems]],
 					["g"] = {
-						{
+						{	-- Rigid River's Heart
 							["recipeID"] = 106947--[[Rigid River's Heart]]
 						},
-						{
+						{	-- Solid River's Heart
 							["recipeID"] = 106950--[[Solid River's Heart]]
 						},
-						{
+						{	-- Sparkling River's Heart
 							["recipeID"] = 106949--[[Sparkling River's Heart]]
 						},
-						{
+						{	-- Stormy River's Heart
 							["recipeID"] = 106948--[[Stormy River's Heart]]
 						},
 						{	-- Rigid Serpent's Eye
@@ -73,58 +73,58 @@ profession(755, {	-- Jewelcrafting
 				{	-- Green Gems
 					["categoryID"] = 822--[[Green Gems]],
 					["g"] = {
-						{
+						{	-- Balanced Wild Jade
 							["recipeID"] = 106960--[[Balanced Wild Jade]]
 						},
-						{
+						{	-- Effulgent Wild Jade
 							["recipeID"] = 106957--[[Effulgent Wild Jade]]
 						},
-						{
+						{	-- Energized Wild Jade
 							["recipeID"] = 107737--[[Energized Wild Jade]]
 						},
-						{
+						{	-- Forceful Wild Jade
 							["recipeID"] = 107738--[[Forceful Wild Jade]]
 						},
-						{
+						{	-- Jagged Wild Jade
 							["recipeID"] = 107739--[[Jagged Wild Jade]]
 						},
-						{
+						{	-- Lightning Wild Jade
 							["recipeID"] = 106955--[[Lightning Wild Jade]]
 						},
-						{
+						{	-- Misty Wild Jade
 							["recipeID"] = 106953--[[Misty Wild Jade]]
 						},
-						{
+						{	-- Nimble Wild Jade
 							["recipeID"] = 107740--[[Nimble Wild Jade]]
 						},
-						{
+						{	-- Piercing Wild Jade
 							["recipeID"] = 106954--[[Piercing Wild Jade]]
 						},
-						{
+						{	-- Puissant Wild Jade
 							["recipeID"] = 107742--[[Puissant Wild Jade]]
 						},
-						{
+						{	-- Radiant Wild Jade
 							["recipeID"] = 107743--[[Radiant Wild Jade]]
 						},
-						{
+						{	-- Regal Wild Jade
 							["recipeID"] = 107744--[[Regal Wild Jade]]
 						},
-						{
+						{	-- Sensei's Wild Jade
 							["recipeID"] = 106956--[[Sensei's Wild Jade]]
 						},
-						{
+						{	-- Shattered Wild Jade
 							["recipeID"] = 107745--[[Shattered Wild Jade]]
 						},
-						{
+						{	-- Steady Wild Jade
 							["recipeID"] = 107746--[[Steady Wild Jade]]
 						},
-						{
+						{	-- Turbid Wild Jade
 							["recipeID"] = 106962--[[Turbid Wild Jade]]
 						},
-						{
+						{	-- Vivid Wild Jade
 							["recipeID"] = 106961--[[Vivid Wild Jade]]
 						},
-						{
+						{	-- Zen Wild Jade
 							["recipeID"] = 106958--[[Zen Wild Jade]]
 						},
 						{	-- Balanced Alexandrite
@@ -186,70 +186,70 @@ profession(755, {	-- Jewelcrafting
 				{	-- Orange Gems
 					["categoryID"] = 823--[[Orange Gems]],
 					["g"] = {
-						{
+						{	-- Adept Vermilion Onyx
 							["recipeID"] = 107715--[[Adept Vermilion Onyx]]
 						},
-						{
+						{	-- Artful Vermilion Onyx
 							["recipeID"] = 107716--[[Artful Vermilion Onyx]]
 						},
-						{
+						{	-- Champion's Vermilion Onyx
 							["recipeID"] = 107717--[[Champion's Vermilion Onyx]]
 						},
-						{
+						{	-- Crafty Vermilion Onyx
 							["recipeID"] = 107718--[[Crafty Vermilion Onyx]]
 						},
-						{
+						{	-- Deadly Vermilion Onyx
 							["recipeID"] = 107719--[[Deadly Vermilion Onyx]]
 						},
-						{
+						{	-- Deft Vermilion Onyx
 							["recipeID"] = 107720--[[Deft Vermilion Onyx]]
 						},
-						{
+						{	-- Fierce Vermilion Onyx
 							["recipeID"] = 107721--[[Fierce Vermilion Onyx]]
 						},
-						{
+						{	-- Fine Vermilion Onyx
 							["recipeID"] = 107722--[[Fine Vermilion Onyx]]
 						},
-						{
+						{	-- Inscribed Vermilion Onyx
 							["recipeID"] = 107723--[[Inscribed Vermilion Onyx]]
 						},
-						{
+						{	-- Keen Vermilion Onyx
 							["recipeID"] = 107724--[[Keen Vermilion Onyx]]
 						},
-						{
+						{	-- Lucent Vermilion Onyx
 							["recipeID"] = 107725--[[Lucent Vermilion Onyx]]
 						},
-						{
+						{	-- Polished Vermilion Onyx
 							["recipeID"] = 107726--[[Polished Vermilion Onyx]]
 						},
-						{
+						{	-- Potent Vermilion Onyx
 							["recipeID"] = 107727--[[Potent Vermilion Onyx]]
 						},
-						{
+						{	-- Reckless Vermilion Onyx
 							["recipeID"] = 107728--[[Reckless Vermilion Onyx]]
 						},
-						{
+						{	-- Resolute Vermilion Onyx
 							["recipeID"] = 107729--[[Resolute Vermilion Onyx]]
 						},
-						{
+						{	-- Resplendent Vermilion Onyx
 							["recipeID"] = 107730--[[Resplendent Vermilion Onyx]]
 						},
-						{
+						{	-- Skillful Vermilion Onyx
 							["recipeID"] = 107731--[[Skillful Vermilion Onyx]]
 						},
-						{
+						{	-- Splendid Vermilion Onyx
 							["recipeID"] = 107732--[[Splendid Vermilion Onyx]]
 						},
-						{
+						{	-- Stalwart Vermilion Onyx
 							["recipeID"] = 107733--[[Stalwart Vermilion Onyx]]
 						},
-						{
+						{	-- Tenuous Vermilion Onyx
 							["recipeID"] = 107734--[[Tenuous Vermilion Onyx]]
 						},
-						{
+						{	-- Wicked Vermilion Onyx
 							["recipeID"] = 107735--[[Wicked Vermilion Onyx]]
 						},
-						{
+						{	-- Willful Vermilion Onyx
 							["recipeID"] = 107736--[[Willful Vermilion Onyx]]
 						},
 						{	-- Lucent Serpent's Eye
@@ -332,46 +332,46 @@ profession(755, {	-- Jewelcrafting
 				{	-- Purple Gems
 					["categoryID"] = 824--[[Purple Gems]],
 					["g"] = {
-						{
+						{	-- Accurate Imperial Amethyst
 							["recipeID"] = 107693--[[Accurate Imperial Amethyst]]
 						},
-						{
+						{	-- Assassin's Imperial Amethyst
 							["recipeID"] = 130657--[[Assassin's Imperial Amethyst]]
 						},
-						{
+						{	-- Defender's Imperial Amethyst
 							["recipeID"] = 107694--[[Defender's Imperial Amethyst]]
 						},
-						{
+						{	-- Etched Imperial Amethyst
 							["recipeID"] = 107695--[[Etched Imperial Amethyst]]
 						},
-						{
+						{	-- Glinting Imperial Amethyst
 							["recipeID"] = 107696--[[Glinting Imperial Amethyst]]
 						},
-						{
+						{	-- Guardian's Imperial Amethyst
 							["recipeID"] = 107697--[[Guardian's Imperial Amethyst]]
 						},
-						{
+						{	-- Mysterious Imperial Amethyst
 							["recipeID"] = 107698--[[Mysterious Imperial Amethyst]]
 						},
-						{
+						{	-- Purified Imperial Amethyst
 							["recipeID"] = 107699--[[Purified Imperial Amethyst]]
 						},
-						{
+						{	-- Retaliating Imperial Amethyst
 							["recipeID"] = 107700--[[Retaliating Imperial Amethyst]]
 						},
-						{
+						{	-- Shifting Imperial Amethyst
 							["recipeID"] = 107701--[[Shifting Imperial Amethyst]]
 						},
-						{
+						{	-- Sovereign Imperial Amethyst
 							["recipeID"] = 107702--[[Sovereign Imperial Amethyst]]
 						},
-						{
+						{	-- Tense Imperial Amethyst
 							["recipeID"] = 130658--[[Tense Imperial Amethyst]]
 						},
-						{
+						{	-- Timeless Imperial Amethyst
 							["recipeID"] = 107703--[[Timeless Imperial Amethyst]]
 						},
-						{
+						{	-- Veiled Imperial Amethyst
 							["recipeID"] = 107704--[[Veiled Imperial Amethyst]]
 						},
 						{	-- Assassin's Serpent's Eye
@@ -430,19 +430,19 @@ profession(755, {	-- Jewelcrafting
 				{	-- Red Gems
 					["categoryID"] = 825--[[Red Gems]],
 					["g"] = {
-						{
+						{	-- Bold Primordial Ruby
 							["recipeID"] = 107705--[[Bold Primordial Ruby]]
 						},
-						{
+						{	-- Brilliant Primordial Ruby
 							["recipeID"] = 107706--[[Brilliant Primordial Ruby]]
 						},
-						{
+						{	-- Delicate Primordial Ruby
 							["recipeID"] = 107707--[[Delicate Primordial Ruby]]
 						},
-						{
+						{	-- Flashing Primordial Ruby
 							["recipeID"] = 107708--[[Flashing Primordial Ruby]]
 						},
-						{
+						{	-- Precise Primordial Ruby
 							["recipeID"] = 107709--[[Precise Primordial Ruby]]
 						},
 						{	-- Bold Serpent's Eye
@@ -480,19 +480,19 @@ profession(755, {	-- Jewelcrafting
 				{	-- Yellow Gems
 					["categoryID"] = 833--[[Yellow Gems]],
 					["g"] = {
-						{
+						{	-- Fractured Sun's Radiance
 							["recipeID"] = 107710--[[Fractured Sun's Radiance]]
 						},
-						{
+						{	-- Mystic Sun's Radiance
 							["recipeID"] = 107711--[[Mystic Sun's Radiance]]
 						},
-						{
+						{	-- Quick Sun's Radiance
 							["recipeID"] = 107712--[[Quick Sun's Radiance]]
 						},
-						{
+						{	-- Smooth Sun's Radiance
 							["recipeID"] = 107713--[[Smooth Sun's Radiance]]
 						},
-						{
+						{	-- Subtle Sun's Radiance
 							["recipeID"] = 107714--[[Subtle Sun's Radiance]]
 						},
 						{	-- Fractured Serpent's Eye
@@ -527,49 +527,49 @@ profession(755, {	-- Jewelcrafting
 				{	-- Meta Gems
 					["categoryID"] = 827--[[Meta Gems]],
 					["g"] = {
-						{
+						{	-- Agile Primal Diamond
 							["recipeID"] = 107753--[[Agile Primal Diamond]]
 						},
-						{
+						{	-- Austere Primal Diamond
 							["recipeID"] = 107754--[[Austere Primal Diamond]]
 						},
-						{
+						{	-- Burning Primal Diamond
 							["recipeID"] = 107756--[[Burning Primal Diamond]]
 						},
-						{
+						{	-- Destructive Primal Diamond
 							["recipeID"] = 107757--[[Destructive Primal Diamond]]
 						},
-						{
+						{	-- Effulgent Primal Diamond
 							["recipeID"] = 107758--[[Effulgent Primal Diamond]]
 						},
-						{
+						{	-- Ember Primal Diamond
 							["recipeID"] = 107759--[[Ember Primal Diamond]]
 						},
-						{
+						{	-- Enigmatic Primal Diamond
 							["recipeID"] = 107760--[[Enigmatic Primal Diamond]]
 						},
-						{
+						{	-- Eternal Primal Diamond
 							["recipeID"] = 107762--[[Eternal Primal Diamond]]
 						},
-						{
+						{	-- Fleet Primal Diamond
 							["recipeID"] = 107763--[[Fleet Primal Diamond]]
 						},
-						{
+						{	-- Forlorn Primal Diamond
 							["recipeID"] = 107764--[[Forlorn Primal Diamond]]
 						},
-						{
+						{	-- Impassive Primal Diamond
 							["recipeID"] = 107765--[[Impassive Primal Diamond]]
 						},
-						{
+						{	-- Powerful Primal Diamond
 							["recipeID"] = 107766--[[Powerful Primal Diamond]]
 						},
-						{
+						{	-- Primal Diamond
 							["recipeID"] = 140060--[[Primal Diamond]]
 						},
-						{
+						{	-- Reverberating Primal Diamond
 							["recipeID"] = 107767--[[Reverberating Primal Diamond]]
 						},
-						{
+						{	-- Revitalizing Primal Diamond
 							["recipeID"] = 107768--[[Revitalizing Primal Diamond]]
 						}
 					}
@@ -623,19 +623,19 @@ profession(755, {	-- Jewelcrafting
 				{	-- Mounts
 					["categoryID"] = 830--[[Mounts]],
 					["g"] = {
-						{
+						{	-- Jade Panther
 							["recipeID"] = 121844--[[Jade Panther]]
 						},
-						{
+						{	-- Jeweled Onyx Panther
 							["recipeID"] = 120045--[[Jeweled Onyx Panther]]
 						},
-						{
+						{	-- 	Ruby Panther
 							["recipeID"] = 121841--[[Ruby Panther]]
 						},
-						{
+						{	-- Sapphire Panther
 							["recipeID"] = 121842--[[Sapphire Panther]]
 						},
-						{
+						{	-- Sunstone Panther
 							["recipeID"] = 121843--[[Sunstone Panther]]
 						}
 					}
@@ -643,10 +643,10 @@ profession(755, {	-- Jewelcrafting
 				{	-- Toys & Pets
 					["categoryID"] = 832--[[Toys & Pets]],
 					["g"] = {
-						{
+						{	-- Jade Owl
 							["recipeID"] = 131897--[[Jade Owl]]
 						},
-						{
+						{	-- Sapphire Cub
 							["recipeID"] = 131898--[[Sapphire Cub]]
 						},
 						{	-- Scrying Roguestone
