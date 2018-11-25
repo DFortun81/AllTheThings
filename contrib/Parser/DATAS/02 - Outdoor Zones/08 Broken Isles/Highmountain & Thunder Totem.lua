@@ -966,12 +966,6 @@ _.Zones =
 								i(130272),
 							  }),
 							  q(39781), -- Neltharion's Lair: Death to the Underking
-							  q(42454, { -- The Hammer of Khaz'goroth
-								i(141007), -- Earthguard Handwraps
-								i(141009), -- Earthguard Gloves
-								i(141008), -- Earthguard Grips
-								i(141010), -- Earthguard Gauntlets
-							  }),
 							}),
 						}),
 						ach(10877, { -- Pillars of Creation
