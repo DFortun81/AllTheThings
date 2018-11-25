@@ -1100,7 +1100,7 @@ local function GetCachedSearchResults(search, method, ...)
 								if count >= app.GetDataMember("Locations") then
 									count = #group - count;
 									if count > 1 then
-										tinsert(temp, "And " .. count .. " other sources...");
+										tinsert(temp, 1, "And " .. count .. " other sources...");
 										break;
 									end
 								end
