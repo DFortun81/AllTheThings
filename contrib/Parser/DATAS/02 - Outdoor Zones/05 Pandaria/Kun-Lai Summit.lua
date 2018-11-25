@@ -1011,6 +1011,9 @@ _.Zones =
 							{	-- Stolen Shado-Pan Insignia
 								["itemID"] = 94223,	-- Stolen Shado-Pan Insignia
 							},
+							{	-- Small Bag of Zandalari Supplies
+								["itemID"] = 94159,	-- Small Bag of Zandalari Supplies
+							},
 						},
 					},
 					{	-- Zandalari Warbringer
@@ -1094,6 +1097,9 @@ _.Zones =
 							{	-- Stolen Shado-Pan Insignia
 								["itemID"] = 94223,	-- Stolen Shado-Pan Insignia
 							},
+							{	-- Small Bag of Zandalari Supplies
+								["itemID"] = 94159,	-- Small Bag of Zandalari Supplies
+							},
 						},
 					},
 					{	-- Zandalari Warbringer
@@ -1176,6 +1182,9 @@ _.Zones =
 							},
 							{	-- Stolen Shado-Pan Insignia
 								["itemID"] = 94223,	-- Stolen Shado-Pan Insignia
+							},
+							{	-- Small Bag of Zandalari Supplies
+								["itemID"] = 94159,	-- Small Bag of Zandalari Supplies
 							},
 						},
 					},
