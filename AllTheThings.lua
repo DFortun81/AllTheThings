@@ -1079,7 +1079,6 @@ local function GetCachedSearchResults(search, method, ...)
 				if GetDataMember("ShowSources") then
 					local temp = {};
 					local unfiltered = {};
-					local count = 0;
 					local abbrevs = L("ABBREVIATIONS");
 					for i,j in ipairs(group) do
 						if j.parent and not j.parent.hideText and j.parent.parent
@@ -1096,14 +1095,6 @@ local function GetCachedSearchResults(search, method, ...)
 								tinsert(unfiltered, "|T" .. L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[j.u][1]] .. ":0|t" .. text);
 							else
 								tinsert(temp, text);
-								count = count + 1;
-								if count >= app.GetDataMember("Locations") then
-									count = #group - count;
-									if count > 1 then
-										tinsert(temp, 1, "And " .. count .. " other sources...");
-										break;
-									end
-								end
 							end
 						end
 					end
@@ -1112,16 +1103,26 @@ local function GetCachedSearchResults(search, method, ...)
 							tinsert(temp, j);
 						end
 					end
+					
+					local count = 0;
 					for i,j in ipairs(temp) do
 						if not contains(listing, j) then
 							tinsert(listing, 1, j);
+							count = count + 1;
+							if count >= app.GetDataMember("Locations") then
+								count = #temp - count;
+								if count > 1 then
+									tinsert(listing, 1, "And " .. count .. " other sources...");
+									break;
+								end
+							end
 						end
 					end
 				end
 				
 				if GetDataMember("ShowDescriptions") then
 					for i,j in ipairs(group) do
-						if j.parent and not j.parent.hideText and j.parent.parent
+						if (not isCreature or not j.crs) and j.parent and not j.parent.hideText and j.parent.parent
 							and (GetDataMember("ShowCompleteSourceLocations") or not app.IsComplete(j)) then
 							if app.RecursiveClassAndRaceFilter(j.parent) and app.RecursiveUnobtainableFilter(j.parent) then
 								if j.description and j.description ~= "" then
