@@ -156,6 +156,7 @@ _.ExpansionFeatures =
 						n(93550, { -- Quartermaster Ozorg
 							i(40775), -- Winged Steed of the Ebon Blade Mount
 							i(143727), -- Champion's Salute Toy
+							i(136796),	-- Necrophile Tome: Corpse Exploder
 							gs(550, { -- Deathlord's Battleplate
 								i(139676), -- Head
 								i(139678), -- Shoulders
