@@ -38,7 +38,13 @@ _.Zones =
 							i(43155),	-- Tabard of the Ebon Blade
 							i(41562),	-- Design: Deadly Huge Citrine
 							i(41721),	-- Design: Deadly Monarch Topaz
+							i(41794, {	-- Design: Deadly Monarch Topaz [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
 							i(41725),	-- Design: Timeless Twilight Opal
+							i(41795, {	-- Design: Timeless Twilight Opal [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
 							i(42183),	-- Pattern: Abyssal Bag
 							i(44250),	-- Reaper of Dark Souls
 							i(44249),	-- Runeblade of Demonstrable Power

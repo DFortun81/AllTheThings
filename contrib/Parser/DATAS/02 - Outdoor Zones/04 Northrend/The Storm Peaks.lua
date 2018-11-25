@@ -19,6 +19,9 @@ _.Zones =
 								i(44080),	-- Reins of the Ice Mammoth Mount - Horde
 							}),
 							i(41720),	-- Design: Smooth Autumn's Glow
+							i(41817, {	-- Design: Smooth Autumn's Glow [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
 							i(42184),	-- Pattern: Glacial Bag
 							i(44510),	-- Pattern: Mammoth Mining Bag
 							i(44193),	-- Broken Stalactite
@@ -840,13 +843,28 @@ _.Zones =
 				}),
 				n(0,    {	-- Zone Drop
 					["groups"] = {
+						i(41820, {	-- Design: Defender's Twilight Opal
+							["crs"] = {
+								30208,	-- Stormforged Ambusher
+								29376,	-- Stormforged Artificer
+								29370,	-- Stormforged Champion
+								30222,	-- Stormforged Infiltrator
+							},
+						}),
 						i(41819, {  -- Design: Radiant Forest Emerald
 							["crs"] = {
 								29793, -- Frostfeather Witch
 								29792, -- Frostfeather Screecher
 							},
 						}),
-				},
+						i(41736, {  -- Design: Radiant Forest Emerald [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+							["collectible"] = false,
+							["crs"] = {
+								29793, -- Frostfeather Witch
+								29792, -- Frostfeather Screecher
+							},
+						}),
+					},
 				}),
 			},
 			["lvl"] = 67,	

@@ -103,6 +103,7 @@ _.Instances =
 							i(37844),	-- Winged Talisman
 						})),
 						cr(28923, e(600, {	-- Loken
+							i(41799),	-- Design: Eternal Earthsiege Diamond
 							i( 37848),	-- Lightning Giant Staff
 							i( 37852),	-- Colossal Skull-Clad Cleaver
 							i( 36989),	-- Ancient Measuring Rod
@@ -202,10 +203,11 @@ _.Instances =
 								i(37844),	-- Winged Talisman
 							})),
 							cr(28923, e(600, {	-- Loken
-								{
+								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 8,			-- Loken slain
 								},
+								i(41799),	-- Design: Eternal Earthsiege Diamond
 								i( 37848),	-- Lightning Giant Staff
 								i( 37852),	-- Colossal Skull-Clad Cleaver
 								i( 36989),	-- Ancient Measuring Rod

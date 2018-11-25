@@ -131,6 +131,9 @@ _.ExpansionFeatures =
 						i(41743),	-- Design: Forlorn Skyflare Diamond
 						i(41744),	-- Design: Impassive Skyflare Diamond
 						i(41733),	-- Design: Lucent Monarch Topaz
+						i(41732, {	-- Design: Lucent Monarch Topaz [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+							["collectible"] = false,
+						}),
 						i(41740),	-- Design: Mysterious Twilight Opal
 						i(41727),	-- Design: Mystic Autumn's Glow
 						i(41734),	-- Design: Resplendent Monarch Topaz
@@ -138,7 +141,19 @@ _.ExpansionFeatures =
 						i(41738),	-- Design: Steady Forest Emerald
 						i(41728),	-- Design: Stormy Sky Sapphire
 						i(41737),	-- Design: Turbid Forest Emerald
+						i(41739, {	-- Design: Turbid Forest Emerald [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+							["collectible"] = false,
+						}),
 						i(41730),	-- Design: Willful Monarch Topaz
+						i(44081),	-- Enigmatic Starflare Diamond
+						i(44084),	-- Forlorn Starflare Diamond
+						i(44082),	-- Impassive Starflare Diamond
+						i(44066),	-- Kharmaa's Grace
+						i(44087),	-- Persistent Earthshatter Diamond
+						i(44088),	-- Powerful Earthshatter Diamond
+						i(44076),	-- Swift Starflare Diamond
+						i(44078),	-- Tireless Starflare Diamond
+						i(44089),	-- Trenchant Earthshatter Diamond
 						i(44081),	-- Enigmatic Starflare Diamond
 						i(44084),	-- Forlorn Starflare Diamond
 						i(44082),	-- Impassive Starflare Diamond
@@ -259,6 +274,9 @@ _.ExpansionFeatures =
 						i(41743),	-- Design: Forlorn Skyflare Diamond
 						i(41744),	-- Design: Impassive Skyflare Diamond
 						i(41733),	-- Design: Lucent Monarch Topaz
+						i(41732, {	-- Design: Lucent Monarch Topaz [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+							["collectible"] = false,
+						}),
 						i(41740),	-- Design: Mysterious Twilight Opal
 						i(41727),	-- Design: Mystic Autumn's Glow
 						i(41734),	-- Design: Resplendent Monarch Topaz
@@ -266,6 +284,9 @@ _.ExpansionFeatures =
 						i(41738),	-- Design: Steady Forest Emerald
 						i(41728),	-- Design: Stormy Sky Sapphire
 						i(41737),	-- Design: Turbid Forest Emerald
+						i(41739, {	-- Design: Turbid Forest Emerald [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+							["collectible"] = false,
+						}),
 						i(41730),	-- Design: Willful Monarch Topaz
 						i(44081),	-- Enigmatic Starflare Diamond
 						i(44084),	-- Forlorn Starflare Diamond

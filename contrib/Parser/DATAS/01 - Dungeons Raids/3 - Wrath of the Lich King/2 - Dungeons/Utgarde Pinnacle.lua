@@ -86,6 +86,7 @@ _.Instances =
 							i( 37384),	-- Staff of Wayward Principles							
 						})),
 						cr(26861, e(644, {	-- King Ymiron
+							i(41797),	-- Design: Austere Earthsiege Diamond
 							i(37060),	-- Jeweled Coronation Sword
 							i(37401),	-- Red Sword of Courage
 							i(37065),	-- Ymiron's Blade
@@ -143,10 +144,11 @@ _.Instances =
 								i(157560), 	-- Skadi's Scaled Boots
 							})),
 							cr(26861, e(644, {	-- King Ymiron
-								{
+								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 11,		-- King Ymiron slain
 								},
+								i(41797),	-- Design: Austere Earthsiege Diamond
 								i(37060),	-- Jeweled Coronation Sword
 								i(37401),	-- Red Sword of Courage
 								i(37065),	-- Ymiron's Blade

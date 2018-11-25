@@ -10,8 +10,34 @@ _.WorldDrops =
 				n(-180, {	-- Alchemy
 					un(1, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
 				}),
-				n(-185, { -- Inscription
+				n(-185, { 	-- Inscription
 					i(45912),	-- Book of Glyph Mastery
+				}),
+				n(-186, { -- Jewelcrafting
+					i(41818, {	-- Design: Accurate Twilight Opal
+						["crs"] = {
+							28851,	-- Enraged Mammoth
+							29402,	-- Ironwool Mammoth
+							30448,	-- Plains Mammoth
+							28379,	-- Shattertusk Mammoth
+							30260,	-- Stoic Mammoth
+						},
+					}),
+					i(41788),	-- Design: Beaming Earthsiege Diamond
+					i(41780),	-- Design: Champion's Monarch Topaz
+					i(41786),	-- Design: Destructive Skyflare Diamond
+					i(41777),	-- Design: Etched Twilight Opal
+					i(41789),	-- Design: Inscribed Monarch Topaz
+					i(41783),	-- Design: Purified Twilight Opal
+					i(41699, {	-- Design: Purified Twilight Opal [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+						["collectible"] = false,
+					}),
+					i(41701, {	-- Design: Purified Twilight Opal [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+						["collectible"] = false,
+					}),
+					i(41778),	-- Design: Resolute Monarch Topaz
+					i(41784),	-- Design: Sovereign Twilight Opal
+					i(41787),	-- Design: Thundering Skyflare Diamond
 				}),
 				n(-190, {	-- Tailoring
 					i(43876),	-- A Guide to Northern Cloth Scavenging

@@ -111,6 +111,7 @@ _.Instances =
 							i( 37264),	-- Pendulum of Telluric Currents
 						})),
 						cr(27656, e(625, {	-- Ley-Guardian Eregos
+							i(41798),	-- Design: Bracing Earthsiege Diamond
 							i(36975),	-- Malygos' Favor
 							i(37360),	-- Staff of Draconic Combat
 							i(36962),	-- Wyrmclaw Battleaxe
@@ -202,10 +203,11 @@ _.Instances =
 								i( 37264),	-- Pendulum of Telluric Currents
 							})),
 							cr(27656, e(625, {	-- Ley-Guardian Eregos
-								{
+								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 9,			-- Ley-Guardian Eregos slain
 								},
+								i(41798),	-- Design: Bracing Earthsiege Diamond
 								i(36975),	-- Malygos' Favor
 								i(37360),	-- Staff of Draconic Combat
 								i(36962),	-- Wyrmclaw Battleaxe

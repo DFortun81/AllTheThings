@@ -152,10 +152,11 @@ _.Instances =
 								i( 43277),	-- Jedoga's Greatring
 							})),
 							cr(29311, e(584, {	-- Herald Volazj
-								{
+								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 7,			-- Herald Volazj slain
 								},
+								i(41790),	-- Design: Precise Scarlet Ruby
 								i(37617),	-- Staff of Sinister Claws
 								i(37615),	-- Titanium Compound Bow
 								i(37619),	-- Wand of Ahn'kahet

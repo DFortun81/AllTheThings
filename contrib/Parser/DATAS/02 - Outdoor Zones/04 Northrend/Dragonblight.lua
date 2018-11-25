@@ -42,6 +42,9 @@ _.Zones =
 							i(43156),	-- Tabard of the Wyrmrest Accord
 							i(43955),	-- Reins of the Red Drake Mount
 							i(41722),	-- Design: Stalwart Monarch Topaz
+							i(41779, {	-- Design: Stalwart Monarch Topaz [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								["collectible"] = false,
+							}),
 							i(42185),	-- Pattern: Mysterious Bag
 							i(44187),	-- Fang of Truth
 							i(44199),	-- Gavel of the Brewing Storm
