@@ -450,12 +450,6 @@ _.Zones =
 						["qg"] = 22292,	-- Rilak the Redeemed
 						["sourceQuests"] = { 10847 },	-- The Eyes of Skettis *UNTESTED*
 					}),
-					q( 10898, {	-- Skywing
-						i(31766),	-- Skywitch Hat
-						i(31765),	-- Redeemer's Plate
-						i(31764),	-- Stillfire Leggings
-						i(31760),	-- Miniwing (PET!)
-					}),
 					qd( q( 11381, {	-- Soup for the Soul
 						i(33844, {	-- Barrel of Fish
 							i(33869),	-- Recipe: Broiled Bloodfin

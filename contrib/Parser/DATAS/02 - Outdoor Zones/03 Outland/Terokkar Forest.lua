@@ -253,8 +253,18 @@ _.Zones =
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
 					}),	
+					{	-- Skywing
+						["questID"] = 10898,
+						["groups"] = {
+							i(31766),	-- Skywitch Hat
+							i(31765),	-- Redeemer's Plate
+							i(31764),	-- Stillfire Leggings
+							i(31760),	-- Miniwing (PET!)
+						},
+						["qg"] = 22424,	-- Skywing
+						["coord"] = { 53.8, 72.2 },
+					},
 --[[					
-					q( 10898),	-- Skywing
 					qa(10038),	-- Speak with Private Weeks
 					q( 10908),	-- Speak with Rilak the Redeemed
 					qh(10039),	-- Speak with Scout Neftis
