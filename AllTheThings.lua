@@ -1075,6 +1075,7 @@ local function GetCachedSearchResults(search, method, ...)
 			cache[1] = listing;
 			if group then
 				cache[2] = group;
+				local isCreature = string.find(search, "creature");
 				if GetDataMember("ShowSources") then
 					local temp = {};
 					local unfiltered = {};
@@ -1091,6 +1092,8 @@ local function GetCachedSearchResults(search, method, ...)
 								tinsert(unfiltered, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" .. text);
 							elseif not app.RecursiveUnobtainableFilter(j.parent) then
 								tinsert(unfiltered, "|TInterface\\FriendsFrame\\StatusIcon-DnD:0|t" .. text);
+							elseif isCreature and j.u then
+								tinsert(unfiltered, "|T" .. L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[j.u][1]] .. ":0|t" .. text);
 							else
 								tinsert(temp, text);
 								count = count + 1;
@@ -1104,11 +1107,9 @@ local function GetCachedSearchResults(search, method, ...)
 							end
 						end
 					end
-					if #temp < 1 or not GetDataMember("OnlyShowRelevantDatabaseLocations") then
+					if #temp < 1 or not GetDataMember("OnlyShowRelevantDatabaseLocations") or GetDataMember("IgnoreAllFilters") then
 						for i,j in ipairs(unfiltered) do
-							if not contains(listing, j) then
-								tinsert(listing, 1, j);
-							end
+							tinsert(temp, j);
 						end
 					end
 					for i,j in ipairs(temp) do
@@ -1117,18 +1118,28 @@ local function GetCachedSearchResults(search, method, ...)
 						end
 					end
 				end
-				if #group > 0 then
-					if group[1].itemID and group[1].u then
-						tinsert(listing, 1, L("UNOBTAINABLE_ITEM_REASONS")[group[1].u][2]);
-					end
-					if GetDataMember("ShowDescriptions") then
-						for i,j in ipairs(group) do
-							if j.description then
-								local d = "|cff66ccff" .. j.description .. "|r";
-								if not contains(listing, d) then
-									tinsert(listing, 1, d);
+				
+				if GetDataMember("ShowDescriptions") then
+					for i,j in ipairs(group) do
+						if j.parent and not j.parent.hideText and j.parent.parent
+							and (GetDataMember("ShowCompleteSourceLocations") or not app.IsComplete(j)) then
+							if app.RecursiveClassAndRaceFilter(j.parent) and app.RecursiveUnobtainableFilter(j.parent) then
+								if j.description and j.description ~= "" then
+									local d = "|cff66ccff" .. j.description .. "|r";
+									if not contains(listing, d) then
+										tinsert(listing, 1, d);
+									end
 								end
 							end
+						end
+					end
+				end
+				
+				for i,j in ipairs(group) do
+					if j.itemID and j.u and (not isCreature or not j.crs) then
+						local d = L("UNOBTAINABLE_ITEM_REASONS")[j.u][2];
+						if not contains(listing, d) then
+							tinsert(listing, 1, d);
 						end
 					end
 				end
