@@ -593,6 +593,21 @@ un(1, i(105642, { -- Tusks of Mannoroth [Mythic Warforged]
 un(2, i(103785)), -- Tusks of Mannoroth [Heroic]
 
 ------------------------------------------------------------
+--			MOUNTS	  --
+------------------------------------------------------------
+
+
+
+------------------------------------------------------------
+--			WEAPONS	  --
+------------------------------------------------------------
+
+	un(1, i(33475)),	-- Artefact Frostmourne
+	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
+	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
+	un(1, i(32178)),	-- Chancellor's Shanker
+
+------------------------------------------------------------
 --			R E T R I E V I N G 			D A T A 	  --
 ------------------------------------------------------------
 
