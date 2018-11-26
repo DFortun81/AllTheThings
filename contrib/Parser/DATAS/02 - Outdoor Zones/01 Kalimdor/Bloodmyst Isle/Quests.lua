@@ -71,6 +71,7 @@ _.Zones =
 							i(120951),	-- Protective Field Grips
 							i(26022),	-- Researcher's Gloves
 							i(26008),	-- Scholar's Gloves
+							un(32, i(26034)),	-- Thun'grim's Axe
 						},
 						["qg"] = 17434,	-- Morae
 					}),
