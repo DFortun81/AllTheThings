@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays =
+_.Holidays = bubbleDown({["u"] = 24},
 {
 	holiday(235442, {	-- Brewfest
 		n(-40, {	-- Legacy
@@ -106,4 +106,4 @@ _.Holidays =
 			["u"] = 24, -- Brewfest
 		}),
 	}),
-};
+});

@@ -1,10 +1,10 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays =
+_.Holidays = bubbleDown({["u"] = 24},
 {
 	holiday(235442, {	-- Brewfest
-		["groups"] = bubbleDown({["u"] = 24}, {
+		["groups"] =  {
 			n(-17, {	-- Quests
 				["groups"] = {
 					-- ALLIANCE QUESTS --
@@ -136,6 +136,6 @@ _.Holidays =
 				},
 				["u"] = 24, -- Brewfest
 			}),
-		}),
+		},
 	}),
-};
+});
