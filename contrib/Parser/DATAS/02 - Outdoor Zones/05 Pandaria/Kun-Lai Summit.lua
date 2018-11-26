@@ -969,12 +969,9 @@ _.Zones =
 							["g"] = {
 								{	-- Hardened Shell
 									["itemID"] = 86584,	-- Hardened Shell
-									["g"] = {
-										{	-- Hardened Shell
-											["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-											["criteriaID"] = 9,			-- Hardened Shell
-										},
-									},
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+									["criteriaID"] = 9,			-- Hardened Shell
+									
 								},
 								{	-- Yakwasher's Bracers
 									["itemID"] = 87615,	-- Yakwasher's Bracers
