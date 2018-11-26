@@ -2,12 +2,12 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 -- Note!! 33189 Rickety Magic Broom from 34077 Crudely Wrapped Gift un2
-_.Holidays =
+_.Holidays = bubbleDown({["u"] = 26},
 {
 	{	-- Hallow's End
 		["holidayID"] = 235462,	-- Hallow's End
 		["u"] = 26,				-- Hallow's End Filter
-		["g"] = bubbleDown({["u"] = 26}, {
+		["g"] = {
 			{	-- Quests
 				["npcID"] = -17,	-- Quests
 				["g"] = {
@@ -502,6 +502,6 @@ _.Holidays =
 					}),
 				},
 			},
-		}),
+		},
 	},
-};
+});

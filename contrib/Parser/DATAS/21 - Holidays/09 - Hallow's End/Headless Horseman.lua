@@ -1,12 +1,12 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays =
+_.Holidays = bubbleDown({["u"] = 26},
 {
 	{	-- Hallow's End
 		["holidayID"] = 235462,	-- Hallow's End
 		["u"] = 26,				-- Hallow's End Filter
-		["g"] = bubbleDown({["u"] = 26}, {
+		["g"] = {
 			{	-- Headless Horseman
 				["npcID"] = 23682,	-- Headless Horseman
 				["description"] = "|cff66ccffYou can only loot the Loot-Stuffed Filled Pumpkins once per day per toon by completing your first run of the day.|r",
@@ -1068,6 +1068,6 @@ _.Holidays =
 					},
 				},
 			},
-		}),
+		},
 	},
-};
+});

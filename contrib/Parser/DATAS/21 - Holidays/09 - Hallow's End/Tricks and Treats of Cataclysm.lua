@@ -1,12 +1,12 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays =
+_.Holidays = bubbleDown({["u"] = 26},
 {
 	{	-- Hallow's End
 		["holidayID"] = 235462,	-- Hallow's End
 		["u"] = 26,				-- Hallow's End Filter
-		["g"] = bubbleDown({["u"] = 26}, {
+		["g"] = {
 			{	-- Achievements
 				["npcID"] = -4,	-- Achievements
 				["g"] = {
@@ -728,6 +728,6 @@ _.Holidays =
 					},
 				},
 			},
-		}),
+		},
 	},
-};
+});
