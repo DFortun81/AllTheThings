@@ -4371,6 +4371,7 @@ _.ExpansionFeatures =
 						i(127725),	-- Recipe: Mighty Steelforged Essence
 						i(127726),	-- Recipe: Mighty Taladite Amplifier
 						i(127727),	-- Recipe: Mighty Truesteel Essence
+						un(2, i(122551)),	-- Recipe: Powerful Taladite Amplifier
 						i(122714),	-- Recipe: Primal Gemcutting
 						i(122705),	-- Recipe: Riddle of Truesteel
 						i(127743),	-- Recipe: Savage Steelforged Essence
@@ -4808,34 +4809,47 @@ _.ExpansionFeatures =
 							}),
 							i(86596),	-- Nat's Fishing Chair
 						}),	
-					}),
-					--[[						
+					}),						
 					n(-108, { 		-- Gem Boutique
 						n(77356, { 		-- Costan Highwall 
-							i(115539), 			-- Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
-							i(116078),		
-							i(116079),
-							i(116090),
-							i(116091),
-							i(116092),
-							i(116093),
-							i(116094),
-							i(116095),
-							i(116096),
-							i(116097),
-							i(116098),
-							i(116100),
-							i(116101),
-							i(116102),
-							i(116103),
-							i(116104),
-							i(116106),
-							i(116107),
-							i(116108),
-							i(116109),
+							i(115359, {	-- Draenor Jewelcrafting
+								i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
+									i(116087),	-- Recipe: Glowing Blackrock Band
+									i(116081),	-- Recipe: Glowing Iron Band
+									i(116084),	-- Recipe: Glowing Iron Choker
+									i(116088),	-- Recipe: Shifting Blackrock Band
+									i(116082),	-- Recipe: Shifting Iron Band
+									i(116085),	-- Recipe: Shifting Iron Choker
+									i(116089),	-- Recipe: Whispering Blackrock Band
+									i(116083),	-- Recipe: Whispering Iron Band
+									i(116086),	-- Recipe: Whispering Iron Choker
+									recipe(170700),	-- Taladite Crystal
+								}),
+							}),
+							i(118723, {	-- Secret of Draenor Jewelcrafting
+								i(116096),	-- Recipe: Critical Strike Taladite
+								i(116093),	-- Recipe: Glowing Taladite Pendant
+								i(116090),	-- Recipe: Glowing Taladite Ring
+								i(116102),	-- Recipe: Greater Critical Strike Taladite
+								i(116103),	-- Recipe: Greater Haste Taladite
+								i(116104),	-- Recipe: Greater Mastery Taladite
+								i(116107),	-- Recipe: Greater Stamina Taladite
+								i(116106),	-- Recipe: Greater Versatility Taladite
+								i(116097),	-- Recipe: Haste Taladite
+								i(116098),	-- Recipe: Mastery Taladite
+								i(116109),	-- Recipe: Prismatic Focusing Lens
+								i(116108),	-- Recipe: Reflecting Prism
+								i(116094),	-- Recipe: Shifting Taladite Pendant
+								i(116091),	-- Recipe: Shifting Taladite Ring
+								i(116101),	-- Recipe: Stamina Taladite
+								i(116079),	-- Recipe: Taladite Amplifier
+								i(116078),	-- Recipe: Taladite Recrystalizer
+								i(116100),	-- Recipe: Versatility Taladite
+								i(116095),	-- Recipe: Whispering Taladite Pendant
+								i(116092),	-- Recipe: Whispering Taladite Ring
+							}),
 						}),		
-					}),
-					]]--							
+					}),						
 					n(-110, { 	-- Herb Garden
 						n(85344, {	-- Naron Bloomthistle  
 							i(116053, {	-- Draenic Seeds
@@ -4866,7 +4880,7 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),					
-					n(-114, { 		-- Scribe's Quarters
+					n(-114, { 	-- Scribe's Quarters
 						n(77372, { 	-- Eric Broadoak 
 							i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 								i(120136),		-- Recipe: Secrets of Draenor Inscription

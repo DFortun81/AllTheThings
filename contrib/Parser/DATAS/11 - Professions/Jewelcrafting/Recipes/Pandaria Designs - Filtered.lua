@@ -1,5 +1,6 @@
 profession(755, {	-- Jewelcrafting
 	filter(200, {
+	-- Reviewed and updated as of 11.25.2018 BfA 8.0, leaving all items from _Automation in for easier future updates
 		{	-- Pandaria Designs
 			["categoryID"] = 809--[[Pandaria Designs]],
 			["g"] = {
