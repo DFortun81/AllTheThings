@@ -96,7 +96,7 @@ profession(165, { -- Leatherworking
 			i(15732), -- Pattern: Volcanic Leggings
 			i(15775), -- Pattern: Volcanic Shoulders
 			i(2407), -- Pattern: White Leather Jerkin
-			un(8, i(15573)), -- Pattern: Wicked Leather Armor
+			un(8, i(15773)), -- Pattern: Wicked Leather Armor
 			un(8, i(15768)), -- Pattern: Wicked Leather Belt
 			un(8, i(19052)), -- Pattern: Wicked Leather Bracers			
 			un(8, i(15744)), -- Pattern: Wicked Leather Headband
