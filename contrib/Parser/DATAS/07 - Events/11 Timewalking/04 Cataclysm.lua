@@ -47,7 +47,7 @@ _.WorldEvents =
 							},
 							{	-- Commendation of the Wildhammer Clan
 								["itemID"] = 133151,	-- Commendation of the Wildhammer Clan
-								["icon"] = "Interface\\Icons\\trade_archaeology_carved-wildhammer-gryphon-figurine",
+								["icon"] = "Interface\\Icons\\inv_misc_tabard_wildhammerclan",
 								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Commendation of Therazanae

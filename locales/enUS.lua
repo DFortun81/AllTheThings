@@ -1194,6 +1194,7 @@ AllTheThings.Locales.enUS = {
 		
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
+		[-489] = "War Chest",
 		[-490] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth  Season 1
 		[-491] = "Tarot Cards",
 		[-492] = "Illusions",
