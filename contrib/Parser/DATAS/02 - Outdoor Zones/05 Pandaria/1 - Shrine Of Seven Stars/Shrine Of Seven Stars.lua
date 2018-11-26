@@ -10,8 +10,15 @@ _.Zones =
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
 				n(-17, { 	-- Quests	
-					qa(32900, { -- Heroic Deeds
-						["groups"] = {
+					{	-- Heroic Deeds
+						["questID"] = 32900,	-- Heroic Deeds
+						["qg"] = 64101,		-- Taijin the Cyclone
+						["coords"] = {
+							{ 47.23, 49.71, 393 },
+						},
+						["lvl"] = 90,		-- Level it spawns
+						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
+						["g"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
 								i(98209),	-- Druid B,R - Monk M								
 								i(98203),	-- Druid B,R - Monk M
@@ -127,16 +134,25 @@ _.Zones =
 								i(98172),	-- Druid F,G - Hunter - Rogue - Shaman Enh - Monk B,W - DH
 							}),
 						},
-						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
-					}),
-					q(32683, { -- So You Want to Be a Blacksmith...
-						["qg"] = 64085, -- Cullen Hammerbrow
-						["races"] = ALLIANCE_ONLY,
-						["requireSkill"] = 164, -- Blacksmithing
-					}),
+					},
+					{	-- Proving Grounds
+						["questID"] = 33248,	-- Proving Grounds
+						["qg"] = 64101,			-- Taijin the Cyclone
+						["coords"] = {
+							{ 47.23, 49.71, 393 },
+						},
+						["lvl"] = 90,			-- Level it spawns
+					},
+					{	-- So You Want to Be a Blacksmith...
+						["questID"] = 32683,	-- So You Want to Be a Blacksmith...
+						["qg"] = 64085,			-- Cullen Hammerbrow
+						["requireSkill"] = 164,	-- Blacksmithing
+						["coords"] = {
+							{ 71.27, 50.52, 393 },
+						},
+					},
 --[[					
 					qa(31390),	-- The Klaxxi
-					qa(33248),	-- Proving Grounds
 					qa(31386),	-- The Shado-Pan Offensive
 --]]
 				}),
