@@ -1,10 +1,10 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = 
+_.Holidays =  bubbleDown({["u"] = 21},
 {
 	holiday(235474, { -- Midsummer Fire Festival
-		["groups"] = bubbleDown({["u"] = 21}, {
+		["groups"] = {
 			n(-4, { -- Achievements
 				ach(1038, { -- The Flame Warden
 					["groups"] = {
@@ -2063,6 +2063,6 @@ _.Holidays =
 					}),
 				},
 			}),
-		}),
+		},
 	}),
-};
+});
