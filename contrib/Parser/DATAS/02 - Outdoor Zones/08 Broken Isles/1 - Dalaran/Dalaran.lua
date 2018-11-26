@@ -3067,9 +3067,15 @@ _.Zones =
 						["classes"] = { 6 },
 					}),
 					q(43341, {	-- Uniting the Isles
+						["groups"] = {
+							i(141605),	-- Flight Master Whistle
+						},
 						["qg"] = 90417,	-- Archmage Khadgar
 					}),
 					q(45727, {	-- Uniting the Isles
+						["groups"] = {
+							i(141605),	-- Flight Master Whistle
+						},
 						["qg"] = 90417,	-- Archmage Khadgar
 					}),
 					--q(43556),	-- Vault of the Wardens -- granted by mission board
