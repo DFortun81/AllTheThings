@@ -26,28 +26,28 @@ _.Zones =
 									i(131463),	-- Saurboz's Handwraps
 								},
 								["qg"] = 34341,	-- Saurboz
-								["coord"] = { 74.3, 47.7 },
+								["coord"] = { 74.3, 47.7, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 25945,	-- We're Here to Do One Thing, Maybe Two...
 							},
 							{	-- The Missing Blastgineer
 								["questID"] = 26001,
 								["qg"] = 34341,	-- Saurboz
-								["coord"] = { 74.2, 47.7 },
+								["coord"] = { 74.2, 47.7, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 25999,	-- Barrier to Entry
 							},
 							{	-- Alliance Attack Plans
 								["questID"] = 26002,
 								["qg"] = 40901,	-- Blastgineer Fuzzwhistle
-								["coord"] = { 73.2, 56.6 },
+								["coord"] = { 73.2, 56.6, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26001,	-- The Missing Blastgineer
 							},
 							{	-- Krom'gar Fortress
 								["questID"] = 26004,
 								["qg"] = 34341,	-- Saurboz
-								["coord"] = { 74.2, 47.7 },
+								["coord"] = { 74.2, 47.7, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26002,	-- Alliance Attack Plans
 							},
@@ -59,7 +59,7 @@ _.Zones =
 									i(131464),	-- Tunic of Ashes
 								},
 								["qg"] = 41023,	-- Overlord Krom'gar
-								["coord"] = { 66.0, 63.7 },
+								["coord"] = { 66.0, 63.7, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26004,	-- Krom'gar Fortress
 							},
@@ -68,35 +68,35 @@ _.Zones =
 							{	-- Report to Bombgutz
 								["questID"] = 26020,
 								["qg"] = 41023,	-- Overlord Krom'gar
-								["coord"] = { 66.2, 63.6 },
+								["coord"] = { 66.2, 63.6, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26010,	-- Ashes to Ashes
 							},
 							{	-- Where Are the Parts?
 								["questID"] = 26044,
 								["qg"] = 40902,	-- Chief Blastgineer Bombgutz
-								["coord"] = { 66.2, 62.9 },
+								["coord"] = { 66.2, 62.9, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26020,	-- Report to Bombgutz
 							},
 							{	-- And That's Why They Call Them Peons...
 								["questID"] = 26047,
 								["qg"] = 41992,	-- Blastgineer Igore
-								["coord"] = { 67.2, 64.5 },
+								["coord"] = { 67.2, 64.5, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26044,	-- Where Are the Parts?
 							},
 							{	-- Between a Rock and a Hard Place
 								["questID"] = 26046,
 								["qg"] = 41990,	-- Scout Utvoch
-								["coord"] = { 67.0, 64.5 },
+								["coord"] = { 67.0, 64.5, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26044,	-- Where Are the Parts?
 							},
 							{	-- I Got Your Parts Right Here...
 								["questID"] = 26045,
 								["qg"] = 41991,	-- Sergeant Dontrag
-								["coord"] = { 67.1, 64.5 },
+								["coord"] = { 67.1, 64.5, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26044,	-- Where Are the Parts?
 							},
@@ -108,7 +108,7 @@ _.Zones =
 									i(131472),	-- Blastgineer's Waistband
 								},
 								["qg"] = 41991,	-- Sergeant Dontrag
-								["coord"] = { 67.1, 64.5 },
+								["coord"] = { 67.1, 64.5, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = {
 									26047,	-- And That's Why They Call Them Peons...
@@ -119,7 +119,7 @@ _.Zones =
 							{	-- In Defense of Krom'gar Fortress
 								["questID"] = 26058,
 								["qg"] = 40902,	-- Chief Blastgineer Bombguts
-								["coord"] = { 66.2, 62.9 },
+								["coord"] = { 66.2, 62.9, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26048,	-- Spare Parts Up in Here!
 							},
@@ -128,28 +128,28 @@ _.Zones =
 							{	-- Eyes and Ears: Malaka'jin
 								["questID"] = 26059,
 								["qg"] = 41023,	-- Overlord Krom'gar
-								["coord"] = { 66.1, 63.6 },
+								["coord"] = { 66.1, 63.6, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress
 							},
 							{	-- Da Voodoo: Ram Horns
 								["questID"] = 26061,
 								["qg"] = 3995,	-- Witch Doctor Jin'Zil
-								["coord"] = { 71.1, 91.2 },
+								["coord"] = { 71.1, 91.2, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 							},
 							{	-- Da Voodoo: Stormer Heart
 								["questID"] = 26060,
 								["qg"] = 3995,	-- Witch Doctor Jin'Zil
-								["coord"] = { 71.1, 91.2 },
+								["coord"] = { 71.1, 91.2, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 							},
 							{	-- Da Voodoo: Resonite Crystal
 								["questID"] = 26062,
 								["qg"] = 3995,	-- Witch Doctor Jin'Zil
-								["coord"] = { 71.1, 91.2 },
+								["coord"] = { 71.1, 91.2, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = {
 									26061,	-- Da Voodoo: Ram Horns
@@ -159,7 +159,7 @@ _.Zones =
 							{	-- Reinforcements...
 								["questID"] = 26066,
 								["qg"] = 42023,	-- Subjugator Devo
-								["coord"] = { 71.1, 91.1 },
+								["coord"] = { 71.1, 91.1, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = {
 									26061,	-- Da Voodoo: Ram Horns
@@ -169,7 +169,7 @@ _.Zones =
 							{	-- Jin'Zil's Blessingmn
 								["questID"] = 26067,
 								["qg"] = 3995,	-- Witch Doctor Jin'Zil
-								["coord"] = { 71.1, 91.2 },
+								["coord"] = { 71.1, 91.2, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26062,	-- Da Voodoo: Resonite Crystal
 							},
@@ -190,7 +190,7 @@ _.Zones =
 							{	-- All's Quiet on the Southern Front
 								["questID"] = 26073,
 								["qg"] = 3995,	-- Witch Doctor Jin'Zil
-								["coord"] = { 71.1, 91.2 },
+								["coord"] = { 71.1, 91.2, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = {
 									26067,	-- Jin'Zil's Blessing
@@ -200,14 +200,14 @@ _.Zones =
 							{	-- Beginning of the End
 								["questID"] = 26074,
 								["qg"] = 41023,	-- Overlord Krom'gar
-								["coord"] = { 66.1, 63.7 },
+								["coord"] = { 66.1, 63.7, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front
 							},
 							{	-- The Turd Problem
 								["questID"] = 26075,
 								["qg"] = 42033,	-- Jibbly Rakit
-								["coord"] = { 52.9, 39.1 },
+								["coord"] = { 52.9, 39.1, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26074,	-- Beginning of the End
 							},
@@ -218,14 +218,14 @@ _.Zones =
 									i(57498),	-- Bow of Invisible Aim
 								},
 								["qg"] = 42033,	-- Jibbly Rakit
-								["coord"] = { 52.9, 39.1 },
+								["coord"] = { 52.9, 39.1, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26075,	-- The Turd Problem
 							},
 							{	-- Final Delivery
 								["questID"] = 26077,
 								["qg"] = 42033,	-- Jibbly Rakit
-								["coord"] = { 52.9, 39.1 },
+								["coord"] = { 52.9, 39.1, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26076,	-- Spy Infestation
 							},
@@ -238,42 +238,42 @@ _.Zones =
 									i(57494),	-- Rampaging Staff
 								},
 								["qg"] = 42050,	-- General Grebo
-								["coord"] = { 45.1, 32.7 },
+								["coord"] = { 45.1, 32.7, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26077,	-- Final Delivery
 							},
 							{	-- Proof of Lies
 								["questID"] = 26097,
 								["qg"] = 42039,	-- High Chieftain Cliffwalker
-								["coord"] = { 45.0, 32.7 },
+								["coord"] = { 45.0, 32.7, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26082,	-- To Battlescar!
 							},
 							{	-- Betrayal at the Grove
 								["questID"] = 26098,
 								["qg"] = 42091,	-- Orthus Cliffwalker
-								["coord"] = { 39.6, 46.4 },
+								["coord"] = { 39.6, 46.4, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26097,	-- Proof of Lies
 							},
 							{	-- Is This Justice?
 								["questID"] = 26099,
 								["qg"] = 42039,	-- High Chieftain Cliffwalker
-								["coord"] = { 45.0, 32.7 },
+								["coord"] = { 45.0, 32.7, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26098,	-- Betrayal at the Grove
 							},
 							{	-- The General is Dead
 								["questID"] = 26100,
 								["qg"] = 42047,	-- Masha Cliffwalker
-								["coord"] = { 45.1, 32.7 },
+								["coord"] = { 45.1, 32.7, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26099,	-- Is This Justice?
 							},
 							{	-- Might Makes Right
 								["questID"] = 26101,
 								["qg"] = 41023,	-- Overlord Krom'gar
-								["coord"] = { 66.1, 63.7 },
+								["coord"] = { 66.1, 63.7, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26100,	-- The General is Dead
 							},
@@ -286,7 +286,7 @@ _.Zones =
 									i(131486),	-- Cinch of the Grieving Father
 								},
 								["qg"] = 42106,	-- Overlord Krom'gar
-								["coord"] = { 45.6, 34.1 },
+								["coord"] = { 45.6, 34.1, 65 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 26101,	-- Might Makes Right
 							},
@@ -345,7 +345,7 @@ _.Zones =
 					},
 					{	-- STAY OUT!
 						["objectID"] = 203186,
-						["coord"] = { 65.0, 49.4 },
+						["coord"] = { 65.0, 49.4, 65 },
 						["groups"] = {
 							{
 								["questID"] = 25730,	-- BEWARE OF CRAGJAW!
@@ -459,14 +459,14 @@ _.Zones =
 					{	-- Dream of a Better Tomorrow
 						["questID"] = 26026,
 						["qg"] = 40907,	-- Clarissa
-						["coord"] = { 66.0, 64.1 },
+						["coord"] = { 66.0, 64.1, 65 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26004,	-- Krom'gar Fortress
 					},
 					{	-- Enemy of the Horde: Marshal Paltrow
 						["questID"] = 26011,
 						["qg"] = 40903,	-- Spy-Mistress Anara
-						["coord"] = { 65.7, 63.2 },
+						["coord"] = { 65.7, 63.2, 65 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26004,	-- Krom'gar Fortress
 					},
@@ -482,7 +482,7 @@ _.Zones =
 					{	-- Fight On Their Stomachs
 						["questID"] = 26064,
 						["qg"] = 3411,	-- Denni'ka
-						["coord"] = { 72.0, 91.2 },
+						["coord"] = { 72.0, 91.2, 65 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 					},
@@ -578,14 +578,14 @@ _.Zones =
 					{	-- Lessons from the Lost Isles
 						["questID"] = 26003,
 						["qg"] = 40926,	-- Kilag Gorefang
-						["coord"] = { 74.4, 47.6 },
+						["coord"] = { 74.4, 47.6, 65 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25999,	-- Barrier to Entry
 					},
 					{	-- Might of the Krom'gar
 						["questID"] = 28084,
 						["qg"] = 42028,	-- Krom'gar Quartermaster
-						["coord"] = { 65.9, 64.1 },
+						["coord"] = { 65.9, 64.1, 65 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26004,	-- Krom'gar Fortress
 					},
@@ -598,7 +598,7 @@ _.Zones =
 					{	-- Mr. D's Wild Ride
 						["questID"] = 26028,
 						["qg"] = 40907,	-- Clarissa
-						["coord"] = { 66.1, 64.2 },
+						["coord"] = { 66.1, 64.2, 65 },
 						["races"] = HORDE_ONLY,
 						["description"] = "Warning: If you complete |cFFFFD700To Be Horde...|r, this quest cannot be completed.",
 						["sourceQuest"] = 26026,	-- Dream of a Better Tomorrow
@@ -612,7 +612,7 @@ _.Zones =
 					{	-- Nothing Left for You Here
 						["questID"] = 26134,
 						["qg"] = 42039,	-- High Chieftain Cliffwalker
-						["coord"] = { 45.5, 33.7 },
+						["coord"] = { 45.5, 33.7, 65 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 26115,	-- To Be Horde...
@@ -632,7 +632,7 @@ _.Zones =
 					{	-- Nura Pathfinder
 						["questID"] = 26069,
 						["qg"] = 3995,	-- Witch Doctor Jin'Zil
-						["coord"] = { 71.0, 91.2 },
+						["coord"] = { 71.0, 91.2, 65 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
@@ -716,7 +716,7 @@ _.Zones =
 					{	-- Seek and Destroy
 						["questID"] = 26009,
 						["qg"] = 41023,	-- Overlord Krom'gar
-						["coord"] = { 66.1, 63.7 },
+						["coord"] = { 66.1, 63.7, 65 },
 						["races"] = HORDE_ONLY,
 						["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Orgrimmar, or after finishing the Stonetalon Mountains questline.",
 						["sourceQuest"] = 26004,	-- Krom'gar Fortress
@@ -786,7 +786,7 @@ _.Zones =
 							i(57492),	-- Talongrip Dagger
 						},
 						["qg"] = 11821,	-- Darn Talongrip
-						["coord"] = { 64.9, 82.5 },
+						["coord"] = { 64.9, 82.5, 65 },
 						["races"] = HORDE_ONLY,
 					},
 					{	-- The Unrelenting Horde

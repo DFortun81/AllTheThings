@@ -269,6 +269,9 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["maps"] = { 89, }, -- Darnassus
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
+					["coords"] = {
+						{ 61.89, 46.21, 89 },
+					},
 				}),
 				q(14055, { -- She Says Potato (Alliance)
 					["groups"] = {
