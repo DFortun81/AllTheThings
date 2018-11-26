@@ -3,6 +3,19 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
+	un(1, i(132474)),	-- Unknown - was under Legion>Staves
+	un(1, i(132475)),	-- Unknown - was under Legion>Staves
+	un(1, i(132476)),	-- Unknown - was under Legion>Staves
+	un(1, i(132477)),	-- Unknown - was under Legion>Staves
+	un(1, i(132478)),	-- Unknown - was under Legion>Staves
+	un(1, i(132479)),	-- Unknown - was under Legion>Staves
+	un(1, i(132480)),	-- Unknown - was under Legion>Staves
+	un(1, i(132481)),	-- Unknown - was under Legion>Staves
+	un(1, i(132482)),	-- Unknown - was under Legion>Staves
+	un(1, i(132483)),	-- Unknown - was under Legion>Staves
+	un(1, i(134066)),	-- Unknown - was under Legion>Staves
+	un(1, i(134068)),	-- Unknown - was under Legion>Staves
+	un(1, i(141606)),   -- Fel Hacker, unused Version
 	un(1, i(87830)),	-- Recipe: Tigersblood Tincture
 	un(1, i(87829)),	-- Recipe: Incarnadine Ink
 	un(1, i(129139)),	-- Tome of Rapid Pathfinding (WoD PTR only, why Blizz why?)
