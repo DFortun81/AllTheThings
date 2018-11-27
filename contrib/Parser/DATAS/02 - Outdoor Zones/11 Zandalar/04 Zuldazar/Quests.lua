@@ -472,6 +472,11 @@ _.Zones =
 							},
 							["races"] = HORDE_ONLY,
 						})),
+						qh(50841, {	-- SKREEEEE!
+							["qg"] = 135502,	-- Kua'fon
+							["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
+							["isDaily"] = true,
+						}),	
 						qh(52113, {	-- Vol'jin, Son of Sen'jin
 							["qg"] = 137878,	-- Master Gadrin
 							["coord"] = { 45.5, 35.8 },
