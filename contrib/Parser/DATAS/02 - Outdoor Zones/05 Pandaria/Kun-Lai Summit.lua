@@ -853,6 +853,7 @@ _.Zones =
 							["npcID"] = 50354,	-- Havak
 							["coords"] = {
 								{ 59.37, 73.76, 379 },
+								{ 57.53, 74.77, 379 },
 							},
 							["g"] = {
 								{	-- Shard of Archstone

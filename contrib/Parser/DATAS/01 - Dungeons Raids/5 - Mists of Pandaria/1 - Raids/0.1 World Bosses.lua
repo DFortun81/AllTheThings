@@ -431,7 +431,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(38, i(105755)),
 				},
 			})),
-			cr(62346, e(725, { 	-- Saylis's Warband -- Galleon
+			cr(62346, e(725, { 	-- Saylis's Warband [Galleon]
 				["isRaid"] = true,
 				["questID"] = 32098,
 				["maps"] = { 376 }, 	-- Valley of the Four Winds

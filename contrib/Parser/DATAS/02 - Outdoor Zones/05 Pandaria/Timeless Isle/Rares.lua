@@ -8,16 +8,13 @@ _.Zones =
 		["g"] = {
 			{	-- Timeless Isle
 				["mapID"] = 554,	-- Timeless Isle
-				["lvl"] = 85,	
-				["icon"] = "Interface\\Icons\\inv_pet_scorchedstone",
-				["description"] = "|cff66ccffA true enigma, the Timeless Isle has drifted in and out of Pandaria's mists for thousands of years. Here, time has no meaning, and the sun neither rises nor sets. Its unique characteristics have brought the Isle under the scrutiny of the bronze dragonflight, pandaren explorers, and the black dragon Wrathion.|r",				
 				["g"] = {
 					n(-16, {	-- Rares
 						n(72766, {	-- Ancient Spineclaw
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 32,		-- Scuttler's Shell [Criteria]
-								["itemID"] = 104293,	-- Scuttler's Shell [Item]
+								["itemID"] = 104293,		-- Scuttler's Shell [Item]
 								["dr"] = 10,
 							},
 						}),
@@ -27,24 +24,40 @@ _.Zones =
 								71824,	-- Angry Sprite
 								71826,	-- Scary Sprite
 							},
-							["isDaily"] = true,	
+							["isDaily"] = true,
 							["description"] = "Click on Neverending Spritewood (Purple Crystal) to transform and be able to attack the sprites. The more you AOE and kill them, the longer they will continue to spawn.",
 							["groups"] = {
 								{
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 53,		-- Dandelion Frolicker [Criteria]
-									["itemID"] = 104160,	-- Dandelion Frolicker [Item]
+									["itemID"] = 104160,		-- Dandelion Frolicker [Item]
 									["dr"] = 1,
 								},
 							},
 						},
-						n(73174, {	-- Archiereus of Flame
+						{	-- Archiereus of Flame
+							["npcID"] = 73174,	-- Archiereus of Flame
 							["questID"] = 33312,
 							["isDaily"] = true,
-							["groups"] = {
-								dr(7, i(103982)),	-- Burden of Eternity
+							["coords"] = {
+								{ 58.12, 25.04, 554 },
+								{ 56.62, 35.91, 554 },
+								{ 48.49, 33.34, 554 },
 							},
-						}),
+							["g"] = {
+								{	-- Archiereus of Flame
+									["achievementID"] = 8714,	-- Timeless Champion
+									["criteriaID"] = 31,		-- Archiereus of Flame
+								},
+								{	-- Burden of Eternity
+									["itemID"] = 03982,	-- Burden of Eternity
+								},
+								{	-- Elixir of Ancient Knowledge
+									["itemID"] = 86574,	-- Elxir of Ancient Knowledge
+									["u"] = 2,			-- Removed around Legion Pre-Patch
+								},
+							},
+						},
 						i(103684, {	-- Scroll of Challenge
 							n(73666, {	-- Archiereus of Flame
 								["description"] = "This is the summonable version of this rare. It drops more things.",
@@ -90,18 +103,28 @@ _.Zones =
 								["dr"] = 8,
 							},
 						}),
-						n(72775, { 	-- Bufo
-							["groups"] = {
-								{
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-									["criteriaID"] = 47,		-- Gulp Froglet [Criteria]
-									["itemID"] = 104169,	-- Gulp Froglet [Item]
-									["dr"] = 3,
+						{	-- Bufo
+							["npcID"] = 72775,	-- Bufo
+							["questID"] = 33301,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 66.81, 67.21 },
+								{ 65.62, 69.82 },
+								{ 63.63, 72.63 },
+							},
+							["g"] = {
+								{	-- Bufo
+									["achievementID"] = 8714,	-- Timeless Champion
+									["criteriaID"] = 14,		-- Bufo
+								},
+								{	-- Gulp Froglet
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+									["criteriaID"] = 47,		-- Gulp Froglet
+									["itemID"] = 104169,		-- Gulp Froglet
+									--Note!! It's marked like this instead of branching off because you have to loot it to gain credit.
 								},
 							},
-							["questID"] = 33301,
-							["isDaily"] = true,	
-						}), 
+						},
 						n(72895, { 	-- Burning Berserker
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
@@ -116,41 +139,108 @@ _.Zones =
 								["dr"] = 1.0,
 							},
 						}),
-						n(73171, { 	-- Champion of the Black Flame
-							["groups"] = {
-								{
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-									["criteriaID"] = 7,		-- Big Bag of Herbs [Criteria]
-									["itemID"] = 106130,	-- Big Bag of Herbs [Item]
-									["dr"] = 4.0,
-								},
-								{
-									["itemID"] = 87219,	-- Huge Bag of Herbs [Item]
-									["dr"] = 1.6,
-								},
-								{
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-									["criteriaID"] = 26,		-- Blackflame Daggers [Criteria]
-									["itemID"] = 104302,	-- Blackflame Daggers [Item]
-									["dr"] = 1.1,
-								},
-							},
+						{	-- Champion of the Black Flame	
+							["npcID"] = 73171,	-- Champion of the Black Flame
 							["questID"] = 33299,
-							["isDaily"] = true,							
-						}), 
-						n(72045, { 	-- Chelon
-							["groups"] = {
-								{
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-									["criteriaID"] = 9,		-- Hardened Shell [Criteria]
-									["itemID"] = 86584,		-- Hardened Shell [Item]
-									["dr"] = 1.5,
+							["isDaily"] = true,
+							["coords"] = {	
+								{ 60.01, 51.01, 554 },
+								{ 60.61, 48.41, 554 },
+								{ 61.01, 47.21, 554 },
+								{ 61.21, 46.41, 554 },
+								{ 61.41, 45.41, 554 },
+								{ 61.61, 45.41, 554 },
+								{ 61.61, 45.61, 554 },
+								{ 62.41, 42.81, 554 },
+								{ 62.41, 44.21, 554 },
+								{ 62.61, 44.61, 554 },
+								{ 62.81, 43.61, 554 },
+								{ 63.41, 43.21, 554 },
+								{ 63.61, 42.61, 554 },
+								{ 64.41, 42.41, 554 },
+								{ 64.41, 43.61, 554 },
+								{ 65.41, 42.41, 554 },
+								{ 65.41, 42.61, 554 },
+								{ 65.81, 42.41, 554 },
+								{ 66.01, 42.61, 554 },
+								{ 66.81, 42.41, 554 },
+								{ 67.21, 43.01, 554 },
+								{ 67.21, 57.61, 554 },
+								{ 67.61, 42.41, 554 },
+								{ 68.01, 57.41, 554 },
+								{ 68.41, 42.81, 554 },
+								{ 68.61, 56.61, 554 },
+								{ 68.81, 43.21, 554 },
+								{ 68.81, 43.61, 554 },
+								{ 68.81, 58.81, 554 },
+								{ 69.01, 56.01, 554 },
+								{ 69.41, 54.41, 554 },
+								{ 69.41, 54.61, 554 },
+								{ 69.81, 43.41, 554 },
+								{ 69.81, 53.81, 554 },
+								{ 70.21, 45.01, 554 },
+								{ 70.21, 53.01, 554 },
+								{ 70.41, 44.41, 554 },
+								{ 70.41, 45.61, 554 },
+								{ 70.41, 52.41, 554 },
+								{ 70.61, 46.21, 554 },
+								{ 70.61, 48.61, 554 },
+								{ 70.61, 51.41, 554 },
+								{ 70.61, 52.21, 554 },
+								{ 70.81, 47.21, 554 },
+								{ 70.81, 47.61, 554 },
+								{ 70.81, 50.41, 554 },
+							},	
+							["g"] = {
+								{	-- Champion of the Black Flame	
+									["achievementID"] = 8714,	-- Timeless Champion
+									["criteriaID"] = 13,		-- Champion of the Black Flame	
+								},
+								{	-- Big Bag of Herbs
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+									["criteriaID"] = 7,			-- Big Bag of Herbs
+									["itemID"] = 106130,		-- Big Bag of Herbs
+								},
+								{	-- Blackflame Daggers
+									["itemID"] = 104302,		-- Blackflame Daggers [Item]
+									["g"] = {
+										{	-- Blackflame Daggers
+											["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+											["criteriaID"] = 26,		-- Blackflame Daggers
+											--Note!! This grants the achievement since it's a toy and trackable.
+										},
+									},
+								},
+								{	-- Huge Bag of Herbs
+									["itemID"] = 87219,			-- Huge Bag of Herbs
 								},
 							},
+						},
+						{	-- Chelon	
+							["npcID"] = 72045,	-- Chelon
 							["questID"] = 32966,
-							["isDaily"] = true,	
-							["description"] = "|cff66ccffClick on Conspicuously Empty Shell to cause the boss to become attackable.|r",
-						}),
+							["isDaily"] = true,
+							["coords"] = {	
+								{ 25.23, 35.83, 554 },
+							},	
+							["description"] = "Click on Conspicuously Empty Shell to cause the boss to become attackable.",
+							["g"] = {
+								{	-- Chelon	
+									["achievementID"] = 8714,	-- Timeless Champion
+									["criteriaID"] = 8,			-- Chelon	
+								},
+								{	-- Hardened Shell
+									["itemID"] = 86584,	-- Hardened Shell
+									["g"] = {
+										{	-- Hardened Shell
+											["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+											["criteriaID"] = 9,			-- Hardened Shell
+											--Note!! This grants the achievement since it's a toy and trackable.
+										},
+									},
+								},
+							},
+						},
 						n(73175, {	-- Cinderfall
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
@@ -187,7 +277,7 @@ _.Zones =
 							},
 							["model"] = "World\\Expansion01\\Doodads\\Generic\\Arakkoa\\Nest\\AK_NestDebris01.mdx",
 							["modelScale"] = 2.3,
-							["icon"] = "Interface\\Icons\\INV_Egg_07",					
+							["icon"] = "Interface\\Icons\\INV_Egg_07",
 						}),
 						n(72876, {	-- Crimsonscale Firestorm
 							{
@@ -240,7 +330,7 @@ _.Zones =
 								},
 							},
 							["questID"] = 33314,
-							["isDaily"] = true,	
+							["isDaily"] = true,
 							["description"] = "|cff66ccffNeed to have Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active. |r",
 						}),
 						n(73158, {	-- Emerald Gander
@@ -321,8 +411,8 @@ _.Zones =
 								},
 							},
 							["questID"] = 33300,
-							["isDaily"] = true,						
-						}), 
+							["isDaily"] = true,
+						}),
 						n(72970, { 	-- Golganarr
 							["groups"] = {
 								{
@@ -339,8 +429,8 @@ _.Zones =
 								},
 							},
 							["questID"] = 33315,
-							["isDaily"] = true,	
-						}), 
+							["isDaily"] = true,
+						}),
 						n(73161, { 	-- Great Turtle Furyshell
 							["groups"] = {
 								{
@@ -351,8 +441,8 @@ _.Zones =
 								},
 							},
 							["questID"] = 33297,
-							["isDaily"] = true,							
-						}), 
+							["isDaily"] = true,
+						}),
 						n(72909, { 	-- Gu'chi the Swarmbringer
 							["groups"] = {
 								{
@@ -369,8 +459,8 @@ _.Zones =
 								},
 							},
 							["questID"] = 33294,
-							["isDaily"] = true,	
-						}), 
+							["isDaily"] = true,
+						}),
 						n(72898, { 	-- High Priest of Ordos
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
@@ -396,7 +486,7 @@ _.Zones =
 							},
 							["questID"] = 33311,
 							["isDaily"] = true,
-						}), 
+						}),
 						n(73163, { 	-- Imperial Python
 							["groups"] = {
 								{
@@ -414,7 +504,7 @@ _.Zones =
 							},
 							["questID"] = 33303,
 							["isDaily"] = true,
-						}), 
+						}),
 						n(73160, { 	-- Ironfur Steelhorn
 							["questID"] = 33296,
 							["isDaily"] = true,
@@ -422,7 +512,7 @@ _.Zones =
 								i(89770),	-- Tuft of Yak Fur
 							},
 						}),
-						n(72767, { 		-- Jademist Dancer
+						n(72767, { 	-- Jademist Dancer
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 37,		-- Condensed Jademist [Criteria]
@@ -457,8 +547,8 @@ _.Zones =
 								},
 							},
 							["questID"] = 33306,
-							["isDaily"] = true,						
-						}), 
+							["isDaily"] = true,
+						}),
 						n(72193, {	-- Karkanos
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
@@ -483,8 +573,8 @@ _.Zones =
 								},
 							},
 							["questID"] = 33298,
-							["isDaily"] = true,						
-						}), 
+							["isDaily"] = true,
+						}),
 						n(72007, { 	-- Master Kukuru
 							["groups"] = {
 								i(101538, {	-- Kukuru's Cache Key
@@ -496,7 +586,7 @@ _.Zones =
 									},
 								}),
 							},
-							["description"] = "|cff66ccffBuy Kukuru's Cache Key and open chests for chance at pet.|r",	
+							["description"] = "|cff66ccffBuy Kukuru's Cache Key and open chests for chance at pet.|r",
 						}),
 						n(72888, { 	-- Molten Guardian
 							{
@@ -507,7 +597,7 @@ _.Zones =
 							},
 						}),
 						n(73166, { 	-- Monstrous Spineclaw
-							["groups"] = {	
+							["groups"] = {
 								{
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 32,		-- Scuttler's Shell [Criteria]
@@ -522,7 +612,7 @@ _.Zones =
 								},
 							},
 							["questID"] = 33302,
-							["isDaily"] = true,						
+							["isDaily"] = true,
 						}),
 						n(72875, {	-- Ordon Candlekeeper
 							{
@@ -640,7 +730,7 @@ _.Zones =
 								dr(0.8, i(104227)),	-- Technique: Glyph of Pillar of Light
 							},
 							["questID"] = 33293,
-							["isDaily"] = true,						
+							["isDaily"] = true,
 						}),
 						n(72908, {	-- Spotted Swarmer
 							{
@@ -657,7 +747,7 @@ _.Zones =
 								i(103982),	-- Burden of Eternity
 							},
 						}),
-						n(72808, {	-- Tsavo'ka <Ghost in the Darkness>
+						n(72808, {	-- Tsavo'ka
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 41,		-- Pristine Stalker Hide [Criteria]
@@ -715,11 +805,11 @@ _.Zones =
 							},
 							["questID"] = 32959,
 							["isDaily"] = true,
-							["description"] = "|cff66ccffKill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when event is active.|r",		
+							["description"] = "|cff66ccffKill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when event is active.|r",
 						}),
 					}),
 				},
 			},
-		},	
+		},
 	},
 };
