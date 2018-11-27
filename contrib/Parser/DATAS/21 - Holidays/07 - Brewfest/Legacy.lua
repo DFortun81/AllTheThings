@@ -14,6 +14,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 									1, -- Durotar
 									27, -- Dun Morogh
 								},
+								["groups"] = {
+									i(34140, {	-- Dark Iron Tankard
+										["u"] = 32, -- Reworked Rewards
+									}),
+								},
 								["u"] = 40,
 							}),
 						},
