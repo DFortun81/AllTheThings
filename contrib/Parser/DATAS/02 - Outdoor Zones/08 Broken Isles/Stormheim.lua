@@ -1290,6 +1290,14 @@ _.Zones =
 								},
 								["requireSkill"] = 773,
 							}),
+							{	-- Mysteries of Nature
+								["questID"] = 40546,
+								["requireSkill"] = 755,	-- Jewelcrafting
+								["qg"] = 100499,	-- Jabrul <Jewelcrafting Master>
+								["groups"] = {
+									recipe(195883),	-- Chatterstone
+								},
+							},
 						}),
 					}),
 				  
@@ -1365,7 +1373,6 @@ _.Zones =
 					q(42735),	-- Malace in Vrykul Land
 					q(40613),	-- Maw of Souls: Retrieving the Svalnguard
 					q(40147),	-- Mother's Prized Knife
-					q(40546),	-- Mysteries of Nature
 					q(39944),	-- Mysterious Messages
 					q(44116),	-- Mystery at Citrine Bay
 					q(40672),	-- Neltharion's Lair: Presentation is Key
@@ -1797,6 +1804,14 @@ _.Zones =
 					n(-387, {	-- Relics
 						i(143685),	-- Strength of the Nazjatar
 					}),
+					{	-- Work Order: Queen's Opal Loop
+						["questID"] = 41652,
+						["groups"] = {
+							i(137865),	-- Design: Queen's Opal Loop (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 755,	-- Jewelcrafting
+					},
 					{	-- Work Order: Silkweave Bracers
 						["questID"] = 41648,
 						["groups"] = {

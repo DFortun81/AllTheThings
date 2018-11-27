@@ -585,6 +585,7 @@ _.Zones =
 								["creatureID"] = 120459
 							}),
 						}),
+						i(137845),	-- Design: Maelstrom Band (Rank 3)
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -806,6 +807,9 @@ _.Zones =
 								i(140786),	-- Ley Spider Eggs
 								i(141301),	-- Unstable Powder Box
 								i(141306),	-- Wisp in a Bottle
+							}),
+							n(109497, {	-- Small Treasure Chest
+								i(137823),	-- Design: Prophetic Band (Rank 2)
 							}),
 						}),
 --[[						
@@ -1740,6 +1744,14 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 						}),
+						{	-- Work Order: Queen's Opal Pendant
+							["questID"] = 41655,
+							["groups"] = {
+								i(137866),	-- Design: Queen's Opal Pendant (Rank 3)
+							},
+							["isWQ"] = 110,
+							["requireSkill"] = 755,	-- Jewelcrafting
+						},
 						{	-- Work Order: Silkweave Slippers
 							["questID"] = 41649,
 							["groups"] = {
@@ -1752,6 +1764,7 @@ _.Zones =
 				}),
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(137841),	-- Design: Deep Amber Pendant (Rank 3)
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings

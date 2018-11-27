@@ -657,10 +657,26 @@ _.Zones =
 					}),
 				}),
 				n(-17, { -- Quests
-					q(48075, { -- A Colorful Key
+					{	-- A Colorful Key
+						["questID"] = 48075,	-- A Colorful Key
+						["qg"] = 125343,		-- Vorel
 						["requireSkill"] = 755, -- Jewelcrafting
 						["sourceQuests"] = { 46941 }, -- The Path Forward
-					}),
+						["g"] = {
+							{	-- Design: Deadly Deep Chemirine
+								["itemID"] = 151736,	-- Design: Deadly Deep Chemirine
+							},
+							{	-- Design: Masterful Argulite
+								["itemID"] = 151738,	-- Design: Masterful Argulite
+							},
+							{	-- Design: Quick Lightsphene
+								["itemID"] = 151737,	-- Design: Quick Lightsphene
+							},
+							{	-- Design: Versatile Labradorite
+								["itemID"] = 151739,	-- Design: Versatile Labradorite
+							},
+						},
+					},
 					{	-- A Crowning Achievement
 						["questID"] = 48076,	--  A Crowning Achievment
 						["qg"] = 125343,		-- Vorel
@@ -672,17 +688,17 @@ _.Zones =
 							{ 44.45, 73.35 },
 						},
 						["g"] = {
-							{	-- Empyrial Cosmic Crowns
-								["recipeID"] = 247751	-- Empyrial Cosmic Crown
+							{	-- Design: Empyrial Cosmic Crown (Rank 1)
+								["itemID"] = 151724,	-- Design: Empyrial Cosmic Crown (Rank 1)
 							},
-							{	-- Empyrial Deep Crown
-								["recipeID"] = 247756	-- Empyrial Deep Crown
+							{	-- Design: Empyrial Deep Crown (Rank 1)
+								["itemID"] = 151727	-- Design: Empyrial Deep Crown (Rank 1)
 							},
-							{	-- Empyrial Elemental Crown
-								["recipeID"] = 247762	-- Empyrial Elemental Crown
+							{	-- Design: Empyrial Elemental Crown (Rank 1)
+								["itemID"] = 151730	-- Design: Empyrial Elemental Crown (Rank 1)
 							},
-							{	-- Empyrial Titan Crown
-								["recipeID"] = 247766	-- Empyrial Titan Crown
+							{	-- Design: Empyrial Titan Crown (Rank 1)
+								["itemID"] = 151733	-- Design: Empyrial Titan Crown (Rank 1)
 							},
 						},
 					},

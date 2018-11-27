@@ -69,7 +69,7 @@ _.Instances =
 							})),
 						},
 					}),
-					d(2, {		-- Heroic
+					d(2, {	-- Heroic
 						["lvl"] = 110,
 						["groups"] = {
 							cr(98542, e(1518, {	-- Amalgam of Souls
@@ -108,6 +108,7 @@ _.Instances =
 							})),
 							cr(94923, e(1672, {	-- Lord Kur'talos Ravencrest (Latosius 98970)
 								ach(10805),	-- Heroic: Black Rook Hold
+								i(137858),	-- Design: Grim Furystone Gorget (Rank 3)
 								i(127930),	-- Recipe: Flask of the Whispered Pact (Rank 2)
 								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
@@ -129,7 +130,7 @@ _.Instances =
 							}))
 						}
 					}),
-					d(23, {		-- Mythic
+					d(23, {	-- Mythic
 						["lvl"] = 110,
 						["groups"] = {
 							cr(98542, e(1518, {	-- Amalgam of Souls
@@ -172,6 +173,7 @@ _.Instances =
 							})),
 							cr(94923, e(1672, {	-- Lord Kur'talos Ravencrest (Latosius 98970)
 								ach(10806),	-- Mythic: Black Rook Hold
+								i(137858),	-- Design: Grim Furystone Gorget (Rank 3)
 								i(127930),	-- Recipe: Flask of the Whispered Pact (Rank 2)
 								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)

@@ -1,6 +1,7 @@
 
 profession(755, {	-- Jewelcrafting
 	filter(200, {
+	-- Reviewed and updated as of 11.26.2018 BfA 8.0, leaving all items from _Automation in for easier future updates
 		{	-- Kul Tiran / Zandalari Designs
 			["categoryID"] = 805--[[Zandalari Designs]],
 			["g"] = {
@@ -31,7 +32,7 @@ profession(755, {	-- Jewelcrafting
 						{	-- Deadly Solstone
 							["recipeID"] = 256689--[[Deadly Solstone]]
 						},
-						{
+						{	-- Insightful Rubellite
 							["recipeID"] = 256693--[[Insightful Rubellite]]
 						},
 						{	-- Masterful Kubiline
@@ -40,7 +41,7 @@ profession(755, {	-- Jewelcrafting
 						{	-- Quick Golden Beryl
 							["recipeID"] = 256694--[[Quick Golden Beryl]]
 						},
-						{
+						{	-- Straddling Viridium
 							["recipeID"] = 256691--[[Straddling Viridium]]
 						},
 						{	-- Versatile Kyanite
@@ -51,13 +52,13 @@ profession(755, {	-- Jewelcrafting
 				{	-- Rings
 					["categoryID"] = 819--[[Rings]],
 					["g"] = {
-						{
+						{	-- Amberblaze Loop (Rank 3)
 							["recipeID"] = 256515--[[Amberblaze Loop]]
 						},
 						{	-- Amberblaze Loop (Rank 2)
 							["recipeID"] = 256514--[[Amberblaze Loop]]
 						},
-						{
+						{	-- Owlseye Loop (Rank 3)
 							["recipeID"] = 256517--[[Owlseye Loop]]
 						},
 						{	-- Owlseye Loop (Rank 2)
@@ -66,13 +67,13 @@ profession(755, {	-- Jewelcrafting
 						{	-- Royal Quartz Loop (Rank 2)
 							["recipeID"] = 256520--[[Royal Quartz Loop]]
 						},
-						{
+						{	-- Royal Quartz Loop (Rank 3)
 							["recipeID"] = 256521--[[Royal Quartz Loop]]
 						},
 						{	-- Tidal Amethyst Loop (Rank 2)
 							["recipeID"] = 256518--[[Tidal Amethyst Loop]]
 						},
-						{
+						{	-- Tidal Amethyst Loop (Rank 3)
 							["recipeID"] = 256519--[[Tidal Amethyst Loop]]
 						},
 						{	-- Amberblaze Loop (Rank 1)
@@ -104,16 +105,16 @@ profession(755, {	-- Jewelcrafting
 				{	-- Weapons
 					["categoryID"] = 820--[[Weapons]],
 					["g"] = {
-						{
+						{	-- Honorable Combatant's Staff of Intuition (Rank 3)
 							["recipeID"] = 269736--[[Honorable Combatant's Staff of Intuition]]
 						},
-						{
+						{	-- Laribole Staff of Alacrity (Rank 3)
 							["recipeID"] = 256257--[[Laribole Staff of Alacrity]]
 						},
-						{
+						{	-- Scarlet Diamond Staff of Intuition (Rank 3)
 							["recipeID"] = 256260--[[Scarlet Diamond Staff of Intuition]]
 						},
-						{
+						{	-- Honorable Combatant's Staff of Intuition (Rank 2)
 							["recipeID"] = 269735--[[Honorable Combatant's Staff of Intuition]]
 						},
 						{	-- Laribole Staff of Alacrity (Rank 2)

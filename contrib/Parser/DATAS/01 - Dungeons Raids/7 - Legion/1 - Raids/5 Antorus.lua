@@ -29,7 +29,6 @@ _.Instances =
 						},
 					}),
 					d(17, {-- Looking For Raid
-						
 						["groups"] = {
 							n(-17, { 	-- Quests
 								["crs"] = CLASS_HALL_MISSION_TABLES,
@@ -431,7 +430,6 @@ _.Instances =
 						},
 					}),
 					d(14, {-- Normal
-						
 						["groups"] = {
 							n(-17, { 	-- Quests
 								["crs"] = CLASS_HALL_MISSION_TABLES,
@@ -660,15 +658,19 @@ _.Instances =
 								i(152009), -- Doomwalker Warboots
 							})),
 							cr(126916, e(1987, { -- Felhounds of Sargeras
-								i(152816), -- Antoran Charhound (MOUNT!)
-								i(152000), -- Shadowfused Chain Coif
-								i(152004), -- Pauldrons of the Soulburner
-								i(151949), -- Soul-Siphon Mantle
-								i(151980), -- Harness of Oppressing Dark
-								i(151947), -- Vestments of Enflamed Blight
-								i(152012), -- Molten Bite Handguards
-								i(152021), -- Flamelicked Girdle
-								i(151983), -- Vicious Flamepaws
+								i(152816),	-- Antoran Charhound (MOUNT!)
+								i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
+								i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
+								i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
+								i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
+								i(152000), 	-- Shadowfused Chain Coif
+								i(152004), 	-- Pauldrons of the Soulburner
+								i(151949), 	-- Soul-Siphon Mantle
+								i(151980), 	-- Harness of Oppressing Dark
+								i(151947), 	-- Vestments of Enflamed Blight
+								i(152012), 	-- Molten Bite Handguards
+								i(152021), 	-- Flamelicked Girdle
+								i(151983), 	-- Vicious Flamepaws
 							})),
 							cr(122367, e(1997, { -- Antoran High Command
 								i(151742), -- Recipe: Fiendish Shoulderguards (Rank 3)
@@ -830,7 +832,6 @@ _.Instances =
 						},
 					}),
 					d(15, {-- Heroic
-						
 						["groups"] = {
 							n(-17, { 	-- Quests
 								["crs"] = CLASS_HALL_MISSION_TABLES,
@@ -1060,6 +1061,10 @@ _.Instances =
 							})),
 							cr(126916, e(1987, { -- Felhounds of Sargeras
 								i(152816), -- Antoran Charhound (MOUNT!)
+								i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
+								i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
+								i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
+								i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
 								i(152000), -- Shadowfused Chain Coif
 								i(152004), -- Pauldrons of the Soulburner
 								i(151949), -- Soul-Siphon Mantle
@@ -1234,7 +1239,6 @@ _.Instances =
 						},
 					}),
 					d(16, {-- Mythic
-						
 						["groups"] = {
 							n(-17, { 	-- Quests
 								["crs"] = CLASS_HALL_MISSION_TABLES,
@@ -1458,6 +1462,10 @@ _.Instances =
 							})),
 							cr(126916, e(1987, { -- Felhounds of Sargeras
 								i(152816), -- Antoran Charhound (MOUNT!)
+								i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
+								i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
+								i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
+								i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
 								i(152000), -- Shadowfused Chain Coif
 								i(152004), -- Pauldrons of the Soulburner
 								i(151949), -- Soul-Siphon Mantle

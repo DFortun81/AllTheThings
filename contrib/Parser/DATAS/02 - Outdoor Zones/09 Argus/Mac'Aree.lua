@@ -522,8 +522,8 @@ _.Zones =
 						p(2128), 	-- Warpstalker Runt
 					},
 				}),
---[[
 				n(-17, { 	-- Quests						
+--[[
 					n(-34, {	-- World Quests
 						q(48729),	-- Ataxon
 						q(48701),	-- Baruut the Bloodthirsty
@@ -573,10 +573,52 @@ _.Zones =
 						q(48094),	-- Void Clot
 						q(48696),	-- Wrangler Kravos
 						q(48738),	-- Zul'tan the Numerous					
-					}),					
+					}),
+--]]
+					{	-- A Colorful Key
+						["questID"] = 48075,	-- A Colorful Key
+						["qg"] = 125343,		-- Vorel
+						["requireSkill"] = 755, -- Jewelcrafting
+						["sourceQuests"] = { 46941 }, -- The Path Forward
+						["g"] = {
+							{	-- Design: Deadly Deep Chemirine
+								["itemID"] = 151736,	-- Design: Deadly Deep Chemirine
+							},
+							{	-- Design: Masterful Argulite
+								["itemID"] = 151738,	-- Design: Masterful Argulite
+							},
+							{	-- Design: Quick Lightsphene
+								["itemID"] = 151737,	-- Design: Quick Lightsphene
+							},
+							{	-- Design: Versatile Labradorite
+								["itemID"] = 151739,	-- Design: Versatile Labradorite
+							},
+						},
+					},
+					{	-- A Crowning Achievement
+						["questID"] = 48076,	--  A Crowning Achievment
+						["qg"] = 125343,		-- Vorel
+						["requireSkill"] = 755, -- Jewelcrafting
+						["sourceQuests"] = {
+							48075,	-- A Colorful Key
+						},
+						["g"] = {
+							{	-- Design: Empyrial Cosmic Crown (Rank 1)
+								["itemID"] = 151724,	-- Design: Empyrial Cosmic Crown (Rank 1)
+							},
+							{	-- Design: Empyrial Deep Crown (Rank 1)
+								["itemID"] = 151727	-- Design: Empyrial Deep Crown (Rank 1)
+							},
+							{	-- Design: Empyrial Elemental Crown (Rank 1)
+								["itemID"] = 151730	-- Design: Empyrial Elemental Crown (Rank 1)
+							},
+							{	-- Design: Empyrial Titan Crown (Rank 1)
+								["itemID"] = 151733	-- Design: Empyrial Titan Crown (Rank 1)
+							},
+						},
+					},
+--[[					
 					q(47220),	-- A Beacon in the Dark
-					q(48075),	-- A Colorful Key
-					q(48076),	-- A Crowning Achievement
 					q(48081),	-- A Floating Ruin
 					q(48041),	-- A Larger Cut
 					q(47691),	-- A Non-Prophet Organization
@@ -669,8 +711,8 @@ _.Zones =
 					q(48461),	-- Where They Least Expect It
 					q(40761),	-- Whispers from Oronaar
 					q(47854),	-- Wrath of the High Exarch
-				}),	
 --]]					
+				}),	
 				n(-16, { 	-- Rares
 					n(126887, { -- Ataxon
 						["groups"] = {

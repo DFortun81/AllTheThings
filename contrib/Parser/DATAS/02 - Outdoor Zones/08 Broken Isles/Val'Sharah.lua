@@ -1131,6 +1131,22 @@ _.Zones =
 								i(128354), -- Grumpy
 							}),
 						}),
+						{	-- Bruls Before Jewels
+							["questID"] = 40536,	-- Bruls Before Jewels
+							["qg"] = 100776,	-- Jabrul <Jewelcrafting Master>
+							["requireSkill"] = 755,	-- Jewelcrafting
+							["g"] = {
+								{	-- Design: Azsunite Pendant
+									["itemID"] = 132469,	-- Design: Azsunite Pendant
+								},
+								{	-- Design: Deep Amber Pendant
+									["itemID"] = 132468,	-- Design: Deep Amber Pendant
+								},
+								{	-- Design: Skystone Pendant
+									["itemID"] = 132467,	-- Design: Skystone Pendant
+								},
+							},
+						},
 						sz(10666,6, { -- Grove of Cenarius
 							q(39354, {	-- Wisp in the Willows
 								i(130127),	-- Syndrelle's Favorite Ring

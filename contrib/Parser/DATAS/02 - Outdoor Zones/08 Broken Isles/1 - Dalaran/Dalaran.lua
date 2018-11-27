@@ -82,6 +82,24 @@ _.Zones =
 					["description"] = "In order to see this battle pet you must first obtain the buff |cFFFFD700Spring Cleaning|r, which is a 15 minute buff..  Multiple people can click the rug.  If there are none present you can realm hop until you find one. You obtain this buff by clicking on a |cFFFFD700Dusty Rug|r.  The rug can spawn in one of five locations:\n\n|cFFFFFFFFBarber Shop|r - Upper Level (|cFFFFFFFF52.52, 30.31|r),\n\n|cFFFFFFFFBreanni's Shop|r - Behind the counter (|cFFFFFFFF58.9, 38.3|r),\n\n|cFFFFFFFFFilthy  Animal [Horde]|r - Outside the building on top of the sewer gate to the right before you enter. (|cFFFFFFFF64.15, 37.9|r)\n\n|cFFFFFFFFGreyfang Enclave [Alliance]|r - Behind the Paladin Portal\n\n|cFFFFFFFFLegerdemain Lounge|r - Top Floor",
 				}),
 				n(-38, { 	-- Profession
+					{	-- Felslate
+						["itemID"] = 123919,	-- Felslate
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["g"] = {
+							{	-- Design: Mass Prospect Felslate
+								["itemID"] = 141312,	-- Design: Mass Prospect Felslate
+							},
+						},
+					},
+					{	-- Leystone Ore
+						["itemID"] = 123918,	-- Leystone Ore
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["g"] = {
+							{	-- Design: Mass Prospect Leystone
+								["itemID"] = 141311,	-- Design: Mass Prospect Leystone
+							},
+						},
+					},
 					prof(356, { -- Fishing
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
@@ -1063,7 +1081,7 @@ _.Zones =
 							}),
 							q(40559, {	-- Black Rook Hold: The Raven's Wisdom
 								["groups"] = {
-									recipe(195864),	-- Dawnlight Band (Rank 1)
+									i(137800),	-- Dawnlight Band (Rank 1)
 								},
 								["qg"] = 93527,	-- Timothy Jones
 							}),
@@ -1078,7 +1096,7 @@ _.Zones =
 							}),
 							q(40561, {	-- Halls of Valor: Jewel of the Heavens
 								["groups"] = {
-									recipe(195863),	-- Maelstrom Band (Rank 1)
+									i(137799),	-- Maelstrom Band (Rank 1)
 								},
 								["qg"] = 93527,	-- Timothy Jones
 							}),
@@ -1114,7 +1132,7 @@ _.Zones =
 							}),
 							q(40560, {	-- Maw of Souls: Spiriting Away
 								["groups"] = {
-									recipe(195862),	-- Prophetic Band (Rank 1)
+									i(137798),	-- Prophetic Band (Rank 1)
 								},
 								["qg"] = 93527,	-- Timothy Jones
 							}),
@@ -1138,6 +1156,12 @@ _.Zones =
 								},
 								["qg"] = 93526,	-- Tiffany Cartier
 								["sourceQuests"] = { 40523 },	-- Facet-nating Friends
+							}),
+							q(41656, {	-- Work Order: Azsunite Loop
+								["g"] = {
+									i(137840),	-- Design: Azsunite Loop (Rank 3)
+								},
+								["isWQ"] = 110,
 							}),
 						},
 						["requireSkill"] = 755,
@@ -4880,37 +4904,40 @@ _.Zones =
 						i(140634),	-- Formula: Ley Shatter
 					}),
 					n(100500, { -- Jabrul <Jewelcrafting Master>
-						i(137809),	-- Design: Ancient Maelstrom Amulet
-						i(137794),	-- Design: Azsunite Loop
-						i(137797),	-- Design: Azsunite Pendant
-						i(137802),	-- Design: Blessed Dawnlight Medallion
-						i(138451),	-- Design: Deadly Deep Amber
-						i(138454),	-- Design: Deadly Eye of Prophecy
-						i(137792),	-- Design: Deep Amber Loop
-						i(137795),	-- Design: Deep Amber Pendant
-						i(137812),	-- Design: Grim Furystone Gorget
-						i(137808),	-- Design: Intrepid Necklace of Prophecy
-						i(138453),	-- Design: Masterful Queen's Opal
-						i(138456),	-- Design: Masterful Shadowruby
-						i(137859),	-- Design: Queen's Opal Loop
-						i(137860),	-- Design: Queen's Opal Pendant
-						i(138452),	-- Design: Quick Azsunite
-						i(138455),	-- Design: Quick Dawnlight
-						i(137811),	-- Design: Raging Furystone Gorget
-						i(137810),	-- Design: Righteous Dawnlight Medallion
-						i(137813),	-- Design: Saber's Eye
-						i(137815),	-- Design: Saber's Eye of Agility
-						i(137816),	-- Design: Saber's Eye of Intellect
-						i(137814),	-- Design: Saber's Eye of Strength
-						i(137861),	-- Design: Shadowruby Band
-						i(137793),	-- Design: Skystone Loop
-						i(137796),	-- Design: Skystone Pendant
-						i(137801),	-- Design: Sorcerous Shadowruby Pendant
-						i(137804),	-- Design: Subtle Shadowruby Pendant
-						i(137807),	-- Design: Sylvan Maelstrom Amulet
-						i(137805),	-- Design: Tranquil Necklace of Prophecy
-						i(137803),	-- Design: Twisted Pandemonite Choker
-						i(137806),	-- Design: Vindictive Pandemonite Choker
+						["coord"] = { 39.60, 34.56 },
+						["g"] = {
+							i(137809),	-- Design: Ancient Maelstrom Amulet (Rank 1)
+							i(137794),	-- Design: Azsunite Loop (Rank 1)
+							i(137797),	-- Design: Azsunite Pendant (Rank 1)
+							i(137802),	-- Design: Blessed Dawnlight Medallion (Rank 1)
+							i(138451),	-- Design: Deadly Deep Amber
+							i(138454),	-- Design: Deadly Eye of Prophecy
+							i(137792),	-- Design: Deep Amber Loop (Rank 1)
+							i(137795),	-- Design: Deep Amber Pendant (Rank 1)
+							i(137812),	-- Design: Grim Furystone Gorget (Rank 1)
+							i(137808),	-- Design: Intrepid Necklace of Prophecy (Rank 1)
+							i(138453),	-- Design: Masterful Queen's Opal
+							i(138456),	-- Design: Masterful Shadowruby
+							i(137859),	-- Design: Queen's Opal Loop (Rank 1)
+							i(137860),	-- Design: Queen's Opal Pendant (Rank 1)
+							i(138452),	-- Design: Quick Azsunite
+							i(138455),	-- Design: Quick Dawnlight
+							i(137811),	-- Design: Raging Furystone Gorget (Rank 1)
+							i(137810),	-- Design: Righteous Dawnlight Medallion (Rank 1)
+							i(137813),	-- Design: Saber's Eye
+							i(137815),	-- Design: Saber's Eye of Agility
+							i(137816),	-- Design: Saber's Eye of Intellect
+							i(137814),	-- Design: Saber's Eye of Strength
+							i(137861),	-- Design: Shadowruby Band (Rank 1)
+							i(137793),	-- Design: Skystone Loop (Rank 1)
+							i(137796),	-- Design: Skystone Pendant (Rank 1)
+							i(137801),	-- Design: Sorcerous Shadowruby Pendant (Rank 1)
+							i(137804),	-- Design: Subtle Shadowruby Pendant (Rank 1)
+							i(137807),	-- Design: Sylvan Maelstrom Amulet (Rank 1)
+							i(137805),	-- Design: Tranquil Necklace of Prophecy (Rank 1)
+							i(137803),	-- Design: Twisted Pandemonite Choker (Rank 1)
+							i(137806),	-- Design: Vindictive Pandemonite Choker (Rank 1)
+						},
 					}),
 					{	-- Jang Quillpaw <Inscription Supplies>
 						["npcID"] = 93544,	-- Jang Quillpaw <Inscription Supplies>
@@ -7024,7 +7051,7 @@ _.Zones =
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 						}),
 					}),
-					n(93543, { -- Sminx Glasseye
+					n(93543, { 	-- Sminx Glasseye
 						i(139599),	-- Empowered Ring of the Kirin Tor
 					}),
 					n(108468, { -- The Mad Merchant
@@ -7032,26 +7059,25 @@ _.Zones =
 						i(140309),	-- Prismatic Bauble Toy
 						i(137570),	-- Blood Fang Cocoon
 					}),
-					n(93526, { -- Tiffany Cartier <Jewelcrafting Supplies>
-						["groups"] = {
-							i(137834),	-- Design: Ancient Maelstrom Amulet
-							i(137819),	-- Design: Azsunite Loop
-							i(137834),	-- Design: Ancient Maelstrom Amulet
-							i(137819),	-- Design: Azsunite Loop
-							i(137822),	-- Design: Azsunite Pendant
-							i(137827),	-- Design: Blessed Dawnlight Medallion
-							i(137817),	-- Design: Deep Amber Loop
-							i(137820),	-- Design: Deep Amber Pendant
-							i(137837),	-- Design: Grim Furystone Gorget
-							i(137833),	-- Design: Intrepid Necklace of Prophecy
-							i(137862),	-- Design: Queen's Opal Loop
-							i(137863),	-- Design: Queen's Opal Pendant
-							i(137836),	-- Design: Raging Furystone Gorget
-							i(137835),	-- Design: Righteous Dawnlight Medallion
-							i(137818),	-- Design: Skystone Loop
-							i(137821),	-- Design: Skystone Pendant
-							i(137832),	-- Design: Sylvan Maelstrom Amulet
-							i(137830),	-- Design: Tranquil Necklace of Prophecy
+					n(93526, { 	-- Tiffany Cartier <Jewelcrafting Supplies>
+						["coord"] = { 39.86, 34.77 },
+						["g"] = {
+							i(137834),	-- Design: Ancient Maelstrom Amulet (Rank 2)
+							i(137819),	-- Design: Azsunite Loop (Rank 2)
+							i(137822),	-- Design: Azsunite Pendant (Rank 2)
+							i(137827),	-- Design: Blessed Dawnlight Medallion (Rank 2)
+							i(137817),	-- Design: Deep Amber Loop (Rank 2)
+							i(137820),	-- Design: Deep Amber Pendant (Rank 2)
+							i(137837),	-- Design: Grim Furystone Gorget (Rank 2)
+							i(137833),	-- Design: Intrepid Necklace of Prophecy (Rank 2)
+							i(137862),	-- Design: Queen's Opal Loop (Rank 2)
+							i(137863),	-- Design: Queen's Opal Pendant (Rank 2)
+							i(137836),	-- Design: Raging Furystone Gorget (Rank 2)
+							i(137835),	-- Design: Righteous Dawnlight Medallion (Rank 2)
+							i(137818),	-- Design: Skystone Loop (Rank 2)
+							i(137821),	-- Design: Skystone Pendant (Rank 2)
+							i(137832),	-- Design: Sylvan Maelstrom Amulet (Rank 2)
+							i(137830),	-- Design: Tranquil Necklace of Prophecy (Rank 2)
 						},
 					}),
 					na(98723, { -- Tiffy Trapspring <Exotic Pets and Accessories>
@@ -8073,7 +8099,7 @@ _.Zones =
 						}),
 						n(97360, {	-- Matthew Rabis <Feral Warlock>
 							currency(1149, { -- Sightless Eyes
-								i(137828),	-- Design: Twisted Pandemonite Choker
+								i(137828),	-- Design: Twisted Pandemonite Choker (Rank 2)
 								i(139896),	-- Skinning Technique: Legion Gutting
 								i(141066),	-- Technique: Glyph of the Voidlord
 								i(139425),	-- Imp-Binding Contract
@@ -8081,7 +8107,7 @@ _.Zones =
 						}),
 						n(97361, {	-- Oxana Demonslay <Weapons and Secrets>
 							currency(1149, { -- Sightless Eyes
-								i(137831),	-- Design: Vindictive Pandemonite Choker
+								i(137831),	-- Design: Vindictive Pandemonite Choker (Rank 2)
 								i(141038),	-- Technique: Glyph of Shadow-Enemies
 							}),
 						}),
@@ -8139,7 +8165,7 @@ _.Zones =
 						}),
 						n(97366, {	-- The Widow <Tools of Deception>
 							currency(1149, { -- Sightless Eyes
-								i(137829),	-- Design: Subtle Shadowruby Pendant
+								i(137829),	-- Design: Subtle Shadowruby Pendant (Rank 2)
 								i(137706),	-- Schematic: Gunpowder Charge
 								i(137720),	-- Schematic: Gunpowder Charge
 								i(141057),	-- Technique: Glyph of Flash Bang

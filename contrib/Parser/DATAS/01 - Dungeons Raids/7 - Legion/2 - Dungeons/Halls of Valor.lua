@@ -141,6 +141,7 @@ _.Instances =
 							})),
 							cr(95676, e(1489, {	-- Odyn
 								ach(10788),	-- Heroic: Halls of Valor
+								i(137857),	-- Design: Raging Furystone Gorget (Rank 3)
 								i(127933),	-- Recipe: Flask of Ten Thousand Scars (Rank 2)
 								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
@@ -218,6 +219,7 @@ _.Instances =
 							cr(95676, e(1489, {	-- Odyn
 								ach(10789),	-- Mythic: Halls of Valor
 								ach(10543),	-- Surge Protector
+								i(137857),	-- Design: Raging Furystone Gorget (Rank 3)
 								i(137911),	-- Recipe: Battlebound Grips (Rank 3)
 								i(127933),	-- Recipe: Flask of Ten Thousand Scars (Rank 2)
 								i(137607),	-- Recipe: Leystone Helm (Rank 3)

@@ -84,6 +84,7 @@ _.Instances =
 							})),
 							cr(96759, e(1663, {	-- Helya
 								ach(10808),	-- Heroic: Maw of Souls
+								i(137848),	-- Design: Blessed Dawnlight Medallion (Rank 3)
 								i(137899),	-- Recipe: Dreadleather Jerkin (Rank 3)
 								i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
 								i(136696, { -- Recipe: Terrorspike
@@ -149,6 +150,7 @@ _.Instances =
 									},
 									["description"] = "Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.",
 								}),
+								i(137848),	-- Design: Blessed Dawnlight Medallion (Rank 3)
 								i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
 								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)

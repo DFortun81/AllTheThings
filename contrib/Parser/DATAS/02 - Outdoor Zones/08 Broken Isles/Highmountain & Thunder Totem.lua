@@ -586,6 +586,9 @@ _.Zones =
 				n(-38, { 	-- Profession
 					--Note!! We don't need the names of the profession as a header because we can filter it out based on profession
 					--Using profession as a header just bloats the tooltip.
+					prof(794, {	-- Archaeology
+						i(137867),	-- Design: Shadowruby Band (Rank 3)
+					}),
 					prof(185, { -- Cooking
 						desc(i(133820), "Can drop from any Drogbar."), 	-- Recipe: Drogbar-Style Salmon
 					}),
@@ -1980,36 +1983,48 @@ _.Zones =
 						},
 					},
 					n(106902, {	-- Ransa Greyfeather <Highmountain Emissary>
-						i(123948, { -- Recipe: Demonsteel Armguards (Rank 3)
-							["groups"] = {
-								recipe(182982), -- Recipe: Demonsteel Armguards (Rank 3)
-							},
-							["requireSkill"] = 164, -- Blacksmithing
-						}),
-						i(123955, { -- Recipe: Demonsteel Breastplate (Rank 3)
-							["groups"] = {
-								recipe(182989), -- Recipe: Demonsteel Breastplate (Rank 3)
-							},
-							["requireSkill"] = 164, -- Blacksmithing
-						}),
-						i(123953, { -- Recipe: Demonsteel Gauntlets (Rank 3)
-							["groups"] = {
-								recipe(182987), -- Recipe: Demonsteel Gauntlets (Rank 3)
-							},
-							["requireSkill"] = 164, -- Blacksmithing
-						}),
-						i(136697, { -- Recipe: Gleaming Iron Spike
-							["groups"] = {
-								recipe(209497), -- Recipe: Gleaming Iron Spike
-							},
-							["requireSkill"] = 164, -- Blacksmithing
-						}),
-						i(136919), -- Baby Elderhorn
-						i(131812), -- Darkshard Fragment
-						i(131814), -- Whitewater Carp
-						i(139601), -- Harpy-Hunter's Gloves
-						i(139597), -- Mountainforged Chain Hauberk
-						i(140576), -- Tabard of the Hightmountain
+						["coord"] = { 38.39, 45.80 },
+						["g"] = {
+							i(137855),	-- Design: Ancient Maelstrom Amulet (Rank 3)*
+							i(137846),	-- Design: Dawnlight Band (Rank 3)*
+							i(137844),	-- Design: Prophetic Band (Rank 3)*
+							i(137839),	-- Design: Skystone Loop (Rank 3)*
+							i(123948, { -- Recipe: Demonsteel Armguards (Rank 3)*
+								["groups"] = {
+									recipe(182982), -- Recipe: Demonsteel Armguards (Rank 3)
+								},
+								["requireSkill"] = 164, -- Blacksmithing
+							}),
+							i(123955, { -- Recipe: Demonsteel Breastplate (Rank 3)*
+								["groups"] = {
+									recipe(182989), -- Recipe: Demonsteel Breastplate (Rank 3)
+								},
+								["requireSkill"] = 164, -- Blacksmithing
+							}),
+							i(123953, { -- Recipe: Demonsteel Gauntlets (Rank 3)*
+								["groups"] = {
+									recipe(182987), -- Recipe: Demonsteel Gauntlets (Rank 3)
+								},
+								["requireSkill"] = 164, -- Blacksmithing
+							}),
+							i(142408),	-- Recipe: Drums of the Mountain (Rank 2)*
+							i(142409),	-- Recipe: Drums of the Mountain (Rank 3)*
+							i(136697, { -- Recipe: Gleaming Iron Spike*
+								["groups"] = {
+									recipe(209497), -- Recipe: Gleaming Iron Spike
+								},
+								["requireSkill"] = 164, -- Blacksmithing
+							}),
+							i(136919), -- Baby Elderhorn*
+							i(131812), -- Darkshard Fragment*
+							i(131814), -- Whitewater Carp*
+							i(139601), -- Harpy-Hunter's Gloves*
+							i(139597), -- Mountainforged Chain Hauberk*
+							i(140576), -- Tabard of the Hightmountain*
+							i(140731, {	-- Treasure Map: Highmountain
+								["f"] = 55, -- Consumable
+							}),
+						},
 					}),
 					n(99574, { 	-- Slyhoof the Shameless Shaman <Used Totem Vendor>
 						i(140336), -- Brulfist Idol Toy
@@ -2019,6 +2034,14 @@ _.Zones =
 					}),
 				}),
 				n(-34, { 	-- World Quests
+					{	-- Work Order: Skystone Pendant
+						["questID"] = 41653,
+						["groups"] = {
+							i(137842),	-- Design: Skystone Pendant (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 755,	-- Jewelcrafting
+					},
 					n(-322, { -- Cloak
 						i(134158), -- Trembling Mightstone Drape
 						i(139112), -- Tribal Unification Cloak

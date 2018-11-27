@@ -121,6 +121,7 @@ _.Instances =
 							})),
 							cr(99192, e(1657, {	-- Shade of Xavius
 								ach(10784),	-- Heroic: Darkheart Thicket
+								i(137853),	-- Design: Sylvan Maelstrom Amulet (Rank 3)
 								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134448),	-- Ashen Satyr Leggings
@@ -185,6 +186,7 @@ _.Instances =
 							cr(99192, e(1657, {	-- Shade of Xavius
 								ach(10769),	-- Burning Down the House
 								ach(10785),	-- Mythic: Darkheart Thicket
+								i(137853),	-- Design: Sylvan Maelstrom Amulet (Rank 3)
 								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134448),	-- Ashen Satyr Leggings

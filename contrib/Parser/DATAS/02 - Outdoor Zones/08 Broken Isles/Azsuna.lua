@@ -2557,7 +2557,7 @@ _.Zones =
 						i(127023),	-- Pattern: Imbued Silkweave Epaulets [Rank 1]
 					}),
 					n(107379, {	-- Marin Bladewing <Wardens Emissary>
-						i(137849),	-- Design: Twisted Pandemonite Choker
+						i(137849),	-- Design: Twisted Pandemonite Choker (Rank 3)
 						i(142333),	-- Recipe: Feathered Luffa
 						i(142331),	-- Recipe: Spiced Falcosaur Omelet
 						i(137713),	-- Schematic: Bolt-Action Headgun (Rank 3)
@@ -2713,6 +2713,22 @@ _.Zones =
 					n(-387, {	-- Relics
 						i(141273),	-- Echo of Eons
 					}),
+					{	-- Work Order: Azsunite Pendant
+						["questID"] = 41651,
+						["groups"] = {
+							i(137843),	-- Design: Azsunite Pendant (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 755,	-- Jewelcrafting
+					},
+					{	-- Work Order: Deep Amber Loop
+						["questID"] = 41652,
+						["groups"] = {
+							i(137838),	-- Design: Deep Amber Loop (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 755,	-- Jewelcrafting
+					},
 					{	-- Work Order: Silkweave Epaulets
 						["questID"] = 41645,
 						["groups"] = {

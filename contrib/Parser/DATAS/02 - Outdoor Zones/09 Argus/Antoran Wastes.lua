@@ -458,8 +458,8 @@ _.Zones =
 						p(2126), 	-- Antoran Bilescourge
 					},
 				}),
---[[
 				n(-17, { 	-- Quests						
+--[[
 					n(-34, {	-- World Quests
 						q(48832),	-- Admiral Rel'var
 						q(48837),	-- All-Seer Xanarian
@@ -504,9 +504,51 @@ _.Zones =
 						q(48373),	-- Work Order: Lightweave Cloth
 						q(48834),	-- Worldsplitter Skuul
 						q(48829),	-- Wrath-Lord Yarez
-					}),						
-					q(48075),	-- A Colorful Key
-					q(48076),	-- A Crowning Achievement
+					}),
+--]]
+					{	-- A Colorful Key
+						["questID"] = 48075,	-- A Colorful Key
+						["qg"] = 125343,		-- Vorel
+						["requireSkill"] = 755, -- Jewelcrafting
+						["sourceQuests"] = { 46941 }, -- The Path Forward
+						["g"] = {
+							{	-- Design: Deadly Deep Chemirine
+								["itemID"] = 151736,	-- Design: Deadly Deep Chemirine
+							},
+							{	-- Design: Masterful Argulite
+								["itemID"] = 151738,	-- Design: Masterful Argulite
+							},
+							{	-- Design: Quick Lightsphene
+								["itemID"] = 151737,	-- Design: Quick Lightsphene
+							},
+							{	-- Design: Versatile Labradorite
+								["itemID"] = 151739,	-- Design: Versatile Labradorite
+							},
+						},
+					},
+					{	-- A Crowning Achievement
+						["questID"] = 48076,	--  A Crowning Achievment
+						["qg"] = 125343,		-- Vorel
+						["requireSkill"] = 755, -- Jewelcrafting
+						["sourceQuests"] = {
+							48075,	-- A Colorful Key
+						},
+						["g"] = {
+							{	-- Design: Empyrial Cosmic Crown (Rank 1)
+								["itemID"] = 151724,	-- Design: Empyrial Cosmic Crown (Rank 1)
+							},
+							{	-- Design: Empyrial Deep Crown (Rank 1)
+								["itemID"] = 151727	-- Design: Empyrial Deep Crown (Rank 1)
+							},
+							{	-- Design: Empyrial Elemental Crown (Rank 1)
+								["itemID"] = 151730	-- Design: Empyrial Elemental Crown (Rank 1)
+							},
+							{	-- Design: Empyrial Titan Crown (Rank 1)
+								["itemID"] = 151733	-- Design: Empyrial Titan Crown (Rank 1)
+							},
+						},
+					},
+--[[
 					q(48041),	-- A Larger Cut
 					q(48035),	-- Angling For a Better Strike
 					q(48642),	-- Argussian Reach
@@ -566,8 +608,8 @@ _.Zones =
 					q(48344),	-- We Have a Problem
 					q(48461),	-- Where They Least Expect It
 					q(49200),	-- Yet More Intact Demon Eyes
-				}),
 --]]					
+				}),
 				n(-16, { 	-- Rares
 					n(127090, { -- Admiral Rel'var
 						["groups"] = {
@@ -900,7 +942,7 @@ _.Zones =
 						["description"] = "This npc is in a cave under the bridge at |cFFFFFFFF59.54, 44.98|r.  In order to loot the demon eyes you must obtain the buff by clicking on an |cFFFFD700All-Seer's Focus|r.  This can spawn randomly in one of three locations:\n\n|cFFFFD700Ven'orn's Lair|r inside a cave at |cFFFFFFFF67.34, 48.11|r.\n\n|cFFFFD700Defiled Path|r inside a cave at |cFFFFFFFF64.41, 21.03|r.\n\n|cFFFFD700Felfire Armory|r is located at |cFFFFFFFF58.01, 66.96|r.\n\nThe focus is not consumed and visible after you click it. Everyone can click it multiple times until it despawns.  This focus will provide you with a 1 hour buff where you are able to collect demon eyes.  Walking into a hub will have the guards attack you.  Once you collected the eyes you return to this npc and are able to buy the items.  You can purchase an elixir for 25 eyes so you no longer need to find the focus."
 					}),
 				}),
-				n(-34, { -- World Quests
+				n(-34, { 	-- World Quests
 					["groups"] = {
 						n(-322, { -- Cloak
 							i(150988), -- Twisted-Ritualist's Shawl
@@ -1057,7 +1099,6 @@ _.Zones =
 							i(152912), -- Pond Nettle [Note: Fishing]
 						}),
 					},
-					
 					["description"] = "|cFFFFD700Pond Nettle|r can be fished up from the fel waters of Argus.\n\n|cFFFFD700Unsullied tokens|r can drop off any mob, rare or treasure chest in the zone.\n\nTreasure items can drop from treasure chests only.",
 				}),
 				n(-74, { 	-- Zone Wide

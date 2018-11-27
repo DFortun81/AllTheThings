@@ -122,6 +122,7 @@ _.Instances =
 							cr(91007, e(1687, {	-- Dargrul
 								ach(10796),	-- Heroic: Neltharion's Lair
 								i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
+								i(137854),	-- Design: Intrepid Necklace of Prophecy (Rank 3)
 								i(137864),	-- Design: Shadowruby Band (Rank 2)
 								i(127928),	-- Recipe: Unbending Potion (Rank 2)
 								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
@@ -184,6 +185,7 @@ _.Instances =
 								ach(10797),	-- Mythic: Neltharion's Lair
 								i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
 								i(137912),	-- Recipe: Battlebound Treads (Rank 3)
+								i(137854),	-- Design: Intrepid Necklace of Prophecy (Rank 3)
 								i(137864),	-- Design: Shadowruby Band (Rank 2)
 								i(127928),	-- Recipe: Unbending Potion (Rank 2)
 								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
