@@ -412,6 +412,26 @@ _.Zones =
 						i(5771),	-- Pattern: Red Linen Bag
 					}),
 				}),
+				n(-40, {	-- Legacy
+					["groups"] = {
+						n(-17, {	-- Quests (Legacy)
+							un(40, qh(10372, {	-- A Discreet Inquiry
+								["classes"] = { 4 },
+							})),
+							un(40, qh(9491, {	-- Greed
+								un(2, i(23921)),	-- Bulging Sack of Silver
+								["classes"] = { 4 },
+							})),
+							un(40, q(10548, {	-- The Sad Truth
+								un(2, i(30504)),	-- Leafblade-dagger
+								un(2, i(30505)),	-- Ghostclaw Tunic
+								["classes"] = { 4 },
+							})),
+						}),
+						--n(  0, {	-- Zone Drop (Legacy)
+						--}),
+					},
+				}),
 			},
 			["lvl"] = 10,
 			["achievementID"] = 858,

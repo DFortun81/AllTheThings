@@ -2,14 +2,47 @@
 --         N E V E R       I M P L E M E N T E D       M O D U L E       --
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
-{
+{   ---------------
 	---- ARMOR ----
+	---------------
 	---- MAIL  ----
 	un(1, i(12615)),	    -- Savage Mail Tunic (never added to live)
 	un(1, i(12616)),	    -- Savage Boots (never added to live)
 	un(1, i(12617)),	    -- Savage Pauldrons (never added to live)
 	un(1, i(18304)),	    -- Greenroot Mail (never added to live)
-	---- MAIL (SHAMAN ONLY)
+	---- MAIL (SHAMAN ONLY) ----
+	
+	---- MISC ----
+	un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
+	un(1, i(146800)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
+	un(1, i(146799)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
+	un(1, i(115371)),	-- [PLACEHOLDER TIER 3 ITEM]
+	un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
+	
+	----------------------
+	----	MOUNTS	  ----
+	----------------------
+	un(1, i(156884, {	-- Black Gladiator's Proto-Drake
+		["mountID"] = 262027,
+	})),
+	un(1, i(156880, {	-- Blue Gladiator's Proto-Drake
+		["mountID"] = 262023,
+	})),
+	un(1, i(156885, {	-- Gold Gladiator's Proto-Drake
+		["mountID"] = 262028,
+	})),
+	un(1, i(156883, {	-- Green Gladiator's Proto-Drake
+		["mountID"] = 262026,
+	})),
+	un(1, i(156882, {	-- Pale Gladiator's Proto-Drake
+		["mountID"] = 262025,
+	})),
+	un(1, i(156881, {	-- Purple Gladiator's Proto-Drake
+		["mountID"] = 262024,
+	})),
+	---------------------
+	---- PROFESSIONS ----
+	---------------------
 	
 	---- INSCRIPTION ----
 	un(1, i(87830)),	-- Recipe: Tigersblood Tincture
@@ -56,12 +89,7 @@ _.NeverImplemented =
 	un(1, i(146383)),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
 	un(1, i(141061)),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
 	un(1, i(141065)),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
-	---- MISC ----
-	un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
-	un(1, i(146800)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
-	un(1, i(146799)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
-	un(1, i(115371)),	-- [PLACEHOLDER TIER 3 ITEM]
-	un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
+	
 	---- TAILORING ----
 	un(1, i(42196)),	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
 	un(1, i(7093)),		-- Pattern: Boots of Darkness
@@ -105,9 +133,39 @@ _.NeverImplemented =
 	un(1, i(10324)),	-- Pattern: Stormcloth Boots (pattern never went live despite it showing in the appearance tab)
 	un(1, i(42189)),	-- Pattern: Wispcloak (pattern never went live, but it's learned at the trainer)
 	un(1, i(42174)),	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
+	
+	-----------------
 	---- WEAPONS ----
-	---- AXES    ----
+	-----------------
+	un(1, i(33475)),	-- Artefact Frostmourne
+	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
+	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
+	un(1, i(32178)),	-- Chancellor's Shanker
+	un(1, i(141611)), -- Fel Barbed Spear [This version wasn't added]
+	un(1, i(129899)), -- The Eagle Spear
+	un(1, i(119408)), -- Foereaver Polearm [This version wasn't added]
+	un(1, i(115297)), -- Spectral Polearm
+	un(1, i(32184)), -- Chancellor's Painsaw
+	un(1, i(7188)), --  Stormwind Guard Shield [This is used by NPC's]
+	un(1, i(18303)), -- Nimble Buckler
+	un(1, i(18342)), -- Quel'dorei Guard [NPC Shield I believe]
+	un(1, i(20502)), -- Ironbark Shield [NPC Shield]
+	
+	----  AXES    ----
 	un(1, i(141606)),   -- Fel Hacker, unused Version
+	un(1, i(32174)),    -- Chancellor's Cleaver
+	un(1, i(32182)),    -- Chancellor's Decapitator
+	
+	---- CROSSBOWS ----
+	un(1, i(32187)),    -- Chancellor's Heavy Crossbow
+	
+	---- DAGGERS  ----
+	un(1, i(32179)),    -- Chancellor's Shiv
+	
+	---- FIST WEAPONS ----
+	un(1, i(32188)),    -- Chancellor's Fleshslicer
+	un(1, i(32189)),    -- Chancellor's Ripper
+	
 	---- STAVES  ----
 	un(1, i(132474)),	-- Unknown - was under Legion>Staves
 	un(1, i(132475)),	-- Unknown - was under Legion>Staves
@@ -121,6 +179,12 @@ _.NeverImplemented =
 	un(1, i(132483)),	-- Unknown - was under Legion>Staves
 	un(1, i(134066)),	-- Unknown - was under Legion>Staves
 	un(1, i(134068)),	-- Unknown - was under Legion>Staves
+	un(1, i(32185)),    -- Chancellor's War Staff
+	
+	---- SWORDS  ----
+	un(1, i(32177)),    -- Chancellor's Quickblade
+	un(1, i(32180)),    -- Chancellor's Slicer
+	
 	un(1, i(2556)),     -- Recipe: Elixir of Tongues
 	un(1, i(5641)),		-- Recipe: Cowardly Flight Potion
 	un(1, i(34481)),	-- Recipe: Mad Alchemist's Potion (Recipe was added to trainers instead of a usable item)
@@ -182,24 +246,6 @@ _.NeverImplemented =
 	un(1, i(84695)),	-- Dreadful Gladiator's Spellblade (blue)
 	un(1, i(84708)),	-- Dreadful Gladiator's Shanker (blue)
 	un(1, i(84698)),	-- Dreadful Gladiator's Slasher
-	un(1, i(156884, {	-- Black Gladiator's Proto-Drake
-		["mountID"] = 262027,
-	})),
-	un(1, i(156880, {	-- Blue Gladiator's Proto-Drake
-		["mountID"] = 262023,
-	})),
-	un(1, i(156885, {	-- Gold Gladiator's Proto-Drake
-		["mountID"] = 262028,
-	})),
-	un(1, i(156883, {	-- Green Gladiator's Proto-Drake
-		["mountID"] = 262026,
-	})),
-	un(1, i(156882, {	-- Pale Gladiator's Proto-Drake
-		["mountID"] = 262025,
-	})),
-	un(1, i(156881, {	-- Purple Gladiator's Proto-Drake
-		["mountID"] = 262024,
-	})),
 	
 	un(1, i(86512)),	-- Journeyman Cookbook
 	un(1, i(86550)),	-- Apprentice Cookbook
@@ -215,16 +261,6 @@ _.NeverImplemented =
 	un(1, i(157650)), -- Tracker's Spear
 	un(1, i(157648)), -- Oakenstaff Protector
 	un(1, i(157620)), -- Halberd of Ferocity
-	
-	un(1, i(141611)), -- Fel Barbed Spear [This version wasn't added]
-	un(1, i(129899)), -- The Eagle Spear
-	un(1, i(119408)), -- Foereaver Polearm [This version wasn't added]
-	un(1, i(115297)), -- Spectral Polearm
-	un(1, i(32184)), -- Chancellor's Painsaw
-	un(1, i(7188)), --  Stormwind Guard Shield [This is used by NPC's]
-	un(1, i(18303)), -- Nimble Buckler
-	un(1, i(18342)), -- Quel'dorei Guard [NPC Shield I believe]
-	un(1, i(20502)), -- Ironbark Shield [NPC Shield]
 	
 	un(1, i(151377)), -- Arne Test Heirloom - Bloodied Arcanite Reaper
 	un(1, i(157751)), -- Drape of New Beginnings
@@ -618,21 +654,6 @@ un(1, i(105642, { -- Tusks of Mannoroth [Mythic Warforged]
 	["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
 })),
 un(2, i(103785)), -- Tusks of Mannoroth [Heroic]
-
-------------------------------------------------------------
---			MOUNTS	  --
-------------------------------------------------------------
-
-
-
-------------------------------------------------------------
---			WEAPONS	  --
-------------------------------------------------------------
-
-	un(1, i(33475)),	-- Artefact Frostmourne
-	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
-	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
-	un(1, i(32178)),	-- Chancellor's Shanker
 
 ------------------------------------------------------------
 --			R E T R I E V I N G 			D A T A 	  --
