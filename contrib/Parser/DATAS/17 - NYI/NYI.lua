@@ -3,19 +3,15 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {
-	un(1, i(132474)),	-- Unknown - was under Legion>Staves
-	un(1, i(132475)),	-- Unknown - was under Legion>Staves
-	un(1, i(132476)),	-- Unknown - was under Legion>Staves
-	un(1, i(132477)),	-- Unknown - was under Legion>Staves
-	un(1, i(132478)),	-- Unknown - was under Legion>Staves
-	un(1, i(132479)),	-- Unknown - was under Legion>Staves
-	un(1, i(132480)),	-- Unknown - was under Legion>Staves
-	un(1, i(132481)),	-- Unknown - was under Legion>Staves
-	un(1, i(132482)),	-- Unknown - was under Legion>Staves
-	un(1, i(132483)),	-- Unknown - was under Legion>Staves
-	un(1, i(134066)),	-- Unknown - was under Legion>Staves
-	un(1, i(134068)),	-- Unknown - was under Legion>Staves
-	un(1, i(141606)),   -- Fel Hacker, unused Version
+	---- ARMOR ----
+	---- MAIL  ----
+	un(1, i(12615)),	    -- Savage Mail Tunic (never added to live)
+	un(1, i(12616)),	    -- Savage Boots (never added to live)
+	un(1, i(12617)),	    -- Savage Pauldrons (never added to live)
+	un(1, i(18304)),	    -- Greenroot Mail (never added to live)
+	---- MAIL (SHAMAN ONLY)
+	
+	---- INSCRIPTION ----
 	un(1, i(87830)),	-- Recipe: Tigersblood Tincture
 	un(1, i(87829)),	-- Recipe: Incarnadine Ink
 	un(1, i(129139)),	-- Tome of Rapid Pathfinding (WoD PTR only, why Blizz why?)
@@ -60,11 +56,13 @@ _.NeverImplemented =
 	un(1, i(146383)),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
 	un(1, i(141061)),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
 	un(1, i(141065)),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
+	---- MISC ----
 	un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 	un(1, i(146800)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 	un(1, i(146799)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 	un(1, i(115371)),	-- [PLACEHOLDER TIER 3 ITEM]
 	un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
+	---- TAILORING ----
 	un(1, i(42196)),	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
 	un(1, i(7093)),		-- Pattern: Boots of Darkness
 	un(1, i(42190)),	-- Pattern: Deathchill Cloak (pattern never went live, but it's learned at the trainer)
@@ -107,6 +105,22 @@ _.NeverImplemented =
 	un(1, i(10324)),	-- Pattern: Stormcloth Boots (pattern never went live despite it showing in the appearance tab)
 	un(1, i(42189)),	-- Pattern: Wispcloak (pattern never went live, but it's learned at the trainer)
 	un(1, i(42174)),	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
+	---- WEAPONS ----
+	---- AXES    ----
+	un(1, i(141606)),   -- Fel Hacker, unused Version
+	---- STAVES  ----
+	un(1, i(132474)),	-- Unknown - was under Legion>Staves
+	un(1, i(132475)),	-- Unknown - was under Legion>Staves
+	un(1, i(132476)),	-- Unknown - was under Legion>Staves
+	un(1, i(132477)),	-- Unknown - was under Legion>Staves
+	un(1, i(132478)),	-- Unknown - was under Legion>Staves
+	un(1, i(132479)),	-- Unknown - was under Legion>Staves
+	un(1, i(132480)),	-- Unknown - was under Legion>Staves
+	un(1, i(132481)),	-- Unknown - was under Legion>Staves
+	un(1, i(132482)),	-- Unknown - was under Legion>Staves
+	un(1, i(132483)),	-- Unknown - was under Legion>Staves
+	un(1, i(134066)),	-- Unknown - was under Legion>Staves
+	un(1, i(134068)),	-- Unknown - was under Legion>Staves
 	un(1, i(2556)),     -- Recipe: Elixir of Tongues
 	un(1, i(5641)),		-- Recipe: Cowardly Flight Potion
 	un(1, i(34481)),	-- Recipe: Mad Alchemist's Potion (Recipe was added to trainers instead of a usable item)
