@@ -2035,7 +2035,12 @@ local function AddTomTomWaypoint(group, auto)
 		if group.coords or group.coord then
 			local waypointFilters = GetDataMember("WaypointFilters")
 			for headerID, enabled in pairs(waypointFilters) do
-				if auto and (app.RecursiveIsDescendantOfParentWithValue(group, "npcID", headerID) and not enabled) then
+				if auto 
+				   and (
+				   (UnitOnTaxi("player") and not GetDataMember("EnableTomTomWaypointsOnTaxi"))
+				   or (app.RecursiveIsDescendantOfParentWithValue(group, "npcID", headerID) and not enabled)
+				   )
+				   then
 					return
 				end
 			end

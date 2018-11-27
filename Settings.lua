@@ -555,7 +555,7 @@ local function createGeneralFrame(parent)
 	addObject(elm,tomtomOptions);
 	
 	local tomtomOptionsFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-tomtomFrame", child, "ThinBorderTemplate");
-	tomtomOptionsFrame:SetSize(child:GetWidth(),130);
+	tomtomOptionsFrame:SetSize(child:GetWidth(),110);
 	tomtomOptionsFrame:SetPoint("TOPLEFT",tomtomOptions,0,-frameSpacer);
 	tomtomOptionsFrame:SetAlpha(0.3);
 	addObject(elm,tomtomOptionsFrame);
@@ -575,9 +575,24 @@ local function createGeneralFrame(parent)
 	autoLoadTomTomWaypoints:SetPoint("TOPLEFT",tomtomOptions,5,-frameSpacer);
 	addObject(elm,autoLoadTomTomWaypoints);
 	
+	local setTomTomWaypointsOnTaxi = createCheckBox("Enable TomTom Waypoints While on Flightpath", child, function(self)
+			app.SetDataMember("EnableTomTomWaypointsOnTaxi", self:GetChecked());
+		end,
+		function(self) 
+			self:SetChecked(app.GetDataMember("EnableTomTomWaypointsOnTaxi", false));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want TomTom waypoints to be automatically added while using a taxi or flightpath.", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	setTomTomWaypointsOnTaxi:SetPoint("TOPLEFT",autoLoadTomTomWaypoints,0,-frameSpacer);
+	setTomTomWaypointsOnTaxi.Label:SetWidth(setTomTomWaypointsOnTaxi.Label:GetWidth() * 1.5);
+	addObject(elm,setTomTomWaypointsOnTaxi);
+	
 	local tomtomSubFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-tomtomSubFrame", child, "ThinBorderTemplate");
-	tomtomSubFrame:SetSize(tomtomOptionsFrame:GetWidth()-20,tomtomOptionsFrame:GetHeight()-50);
-	tomtomSubFrame:SetPoint("TOPLEFT",autoLoadTomTomWaypoints,5,-30);
+	tomtomSubFrame:SetSize(tomtomOptionsFrame:GetWidth()-20,tomtomOptionsFrame:GetHeight()-55);
+	tomtomSubFrame:SetPoint("TOPLEFT",setTomTomWaypointsOnTaxi,5,-30);
 	tomtomSubFrame:SetAlpha(0.3);
 	addObject(elm,tomtomSubFrame);
 	
