@@ -108,9 +108,9 @@ _.Zones =
 							["questID"] = 33301,
 							["isDaily"] = true,
 							["coords"] = {
-								{ 66.81, 67.21 },
-								{ 65.62, 69.82 },
-								{ 63.63, 72.63 },
+								{ 66.81, 67.21, 554 },
+								{ 65.62, 69.82, 554  },
+								{ 63.63, 72.63, 554  },
 							},
 							["g"] = {
 								{	-- Bufo
@@ -194,7 +194,7 @@ _.Zones =
 							["g"] = {
 								{	-- Champion of the Black Flame	
 									["achievementID"] = 8714,	-- Timeless Champion
-									["criteriaID"] = 13,		-- Champion of the Black Flame	
+									["criteriaID"] = 23,		-- Champion of the Black Flame	
 								},
 								{	-- Big Bag of Herbs
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
