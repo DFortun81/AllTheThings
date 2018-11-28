@@ -424,7 +424,7 @@ _.Zones =
 								},
 								["classes"] = { 4 },
 							})),
-							un(40, q(10548, {	-- The Sad Truth
+							un(40, qh(10548, {	-- The Sad Truth
 								["g"] = {
 									un(2, i(30504)),	-- Leafblade-dagger
 									un(2, i(30505)),	-- Ghostclaw Tunic
