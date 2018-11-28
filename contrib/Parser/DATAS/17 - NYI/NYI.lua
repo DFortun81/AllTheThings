@@ -10,7 +10,28 @@ _.NeverImplemented =
 	un(1, i(12616)),	    -- Savage Boots (never added to live)
 	un(1, i(12617)),	    -- Savage Pauldrons (never added to live)
 	un(1, i(18304)),	    -- Greenroot Mail (never added to live)
+	---- MAIL (HUNTER ONLY) ----
+	un(1, i(32133)),	    -- Chancellor's Chain Armor
+	un(1, i(32134)),	    -- Chancellor's Chain Gauntlets
+	un(1, i(32135)),	    -- Chancellor's Chain Helm
+	un(1, i(32136)),	    -- Chancellor's Chain Leggings
+	un(1, i(32137)),	    -- Chancellor's Chain Spaulders
 	---- MAIL (SHAMAN ONLY) ----
+	un(1, i(32138)),	    -- Chancellor's Linked Armor
+	un(1, i(32139)),	    -- Chancellor's Linked Gauntlets
+	un(1, i(32140)),	    -- Chancellor's Linked Helm
+	un(1, i(32141)),	    -- Chancellor's Linked Leggings
+	un(1, i(32142)),	    -- Chancellor's Linked Spaulders
+	un(1, i(32143)),	    -- Chancellor's Mail Armor
+	un(1, i(32144)),	    -- Chancellor's Mail Gauntlets
+	un(1, i(32145)),	    -- Chancellor's Mail Helm
+	un(1, i(32146)),	    -- Chancellor's Mail Leggings
+	un(1, i(32147)),	    -- Chancellor's Mail Sppaulders
+	un(1, i(32148)),	    -- Chancellor's Ringmail Chestguard
+	un(1, i(32149)),	    -- Chancellor's Ringmail Gloves
+	un(1, i(32150)),	    -- Chancellor's Ringmail Headpiece
+	un(1, i(32151)),	    -- Chancellor's Ringmail Legguards
+	un(1, i(32152)),	    -- Chancellor's Ringmail Shoulders
 	
 	---- MISC ----
 	un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
@@ -22,6 +43,17 @@ _.NeverImplemented =
 	----------------------
 	----	MOUNTS	  ----
 	----------------------
+	un(1, i(8627)),	-- Reins of the Nightsaber								(Never added in Game)
+	un(1, a(model(6447, i(8628)))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
+	un(1, a(model(6443, i(8630, {		-- Reins of the Bengal Tiger 			(Never added in Game)
+		{ ["mountID"]= 10790 }	
+	})))),							
+	un(1, a(model(4805, i(8633, {		-- Reins of the Leopard 				(Never added in Game)
+		{ ["mountID"]= 10788 }	
+	})))),							
+	un(1, a(model(4805, i(12325)))),	-- Reins of the Primal Leopard 			(Never added in Game)
+	un(1, a(model(6442, i(12326)))),	-- Reins of the Tawny Sabercat 			(Never added in Game)
+	un(1, a(model(9714, i(12327)))),	-- Reins of the Golden Sabercat 		(Never added in Game)
 	un(1, i(156884, {	-- Black Gladiator's Proto-Drake
 		["mountID"] = 262027,
 	})),
@@ -150,6 +182,7 @@ _.NeverImplemented =
 	un(1, i(18303)), -- Nimble Buckler
 	un(1, i(18342)), -- Quel'dorei Guard [NPC Shield I believe]
 	un(1, i(20502)), -- Ironbark Shield [NPC Shield]
+	un(1, i(32181)),	    -- Chancellor's Bonegrinder
 	
 	----  AXES    ----
 	un(1, i(141606)),   -- Fel Hacker, unused Version
@@ -415,17 +448,6 @@ _.NeverImplemented =
 	un(1, i(2664)),	-- Spinner Fang
 	un(1, i(8195)),	-- Nightscape Cloak										(Pattern never actually went live)
 	un(1, i(8388)),	-- Pattern: Nightscape Cloak							(Never added in Game)	
-	un(1, i(8627)),	-- Reins of the Nightsaber								(Never added in Game)
-	un(1, a(model(6447, i(8628)))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
-	un(1, a(model(6443, i(8630, {		-- Reins of the Bengal Tiger 			(Never added in Game)
-		{ ["mountID"]= 10790 }	
-	})))),							
-	un(1, a(model(4805, i(8633, {		-- Reins of the Leopard 				(Never added in Game)
-		{ ["mountID"]= 10788 }	
-	})))),							
-	un(1, a(model(4805, i(12325)))),	-- Reins of the Primal Leopard 			(Never added in Game)
-	un(1, a(model(6442, i(12326)))),	-- Reins of the Tawny Sabercat 			(Never added in Game)
-	un(1, a(model(9714, i(12327)))),	-- Reins of the Golden Sabercat 		(Never added in Game)
 	un(1, i(12772)),	-- Inlaid Thorium Hammer								(Never added in Game)
 	un(1, i(12764)),	-- Thorium Greatsword									(Never added in Game)
 	un(1, i(12779)),	-- Rune Edge											(Never added in Game)
